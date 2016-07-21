@@ -15,5 +15,6 @@
 ・財前 美彬ルートシナリオ：(c) ◆I9IhvvVdPo 2016
 ・黒田 将貴ルートシナリオ：(c) ◆jsYiJcqRkk 2015
 
-スクリプトは「MITライセンス」です
 ◆スクリプト：(c) ◆jsYiJcqRkk 2015
+スクリプトはティラノスクリプト(c) ShikemokuMK 2012 http://tyrano.jp/
+「MITライセンス https://opensource.org/licenses/mit-license.php」です
