@@ -40,11 +40,11 @@ https://fumibako.github.io/script/
 ・M+ FONTS 様 http://mplus-fonts.osdn.jp/index.html  
 
 ##制作スタッフ
-・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様
-・キャラクターグラフィック：	かいこ(112 ◆UdslvZE52Q)
-・シナリオ：	◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo、◆ftAc29dlL.、◆jsYiJcqRkk
-・スクリプト：	◆8EASfQr/2Q(吉里吉里Ver.システム原案)、◆jsYiJcqRkk(ティラノスクリプトVer.)
-・その他(現まとめ役等)：	◆jsYiJcqRkk
+・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様  
+・キャラクターグラフィック：	かいこ(112 ◆UdslvZE52Q)  
+・シナリオ：	◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo、◆ftAc29dlL.、◆jsYiJcqRkk  
+・スクリプト：	◆8EASfQr/2Q(吉里吉里Ver.システム原案)、◆jsYiJcqRkk(ティラノスクリプトVer.)  
+・その他(現まとめ役等)：	◆jsYiJcqRkk  
   
   
   
