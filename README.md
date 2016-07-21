@@ -39,7 +39,7 @@ https://fumibako.github.io/script/
 ・衡山毛筆フォント-青二書道教室 様 http://www7a.biglobe.ne.jp/~kouzan/  
 ・M+ FONTS 様 http://mplus-fonts.osdn.jp/index.html  
 
-###制作スタッフ
+##制作スタッフ
 ・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様
 ・キャラクターグラフィック：	かいこ(112 ◆UdslvZE52Q)
 ・シナリオ：	◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo、◆ftAc29dlL.、◆jsYiJcqRkk
