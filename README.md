@@ -6,14 +6,14 @@ https://fumibako.github.io/script/
 
 ##利用規約
 音声、画像、テキスト素材を抜き出して再配布、再使用、改変することを禁止します  
-スクリプトは「MITライセンス」です  
+スクリプトはティラノスクリプト(c)ShikemokuMK 2012「MITライセンス」です  
 ライセンスについてはルートフォルダのlicense.txtをご参照ください  
 
 ##スクリプト・素材サイト様 クレジット
 制作にあたり、大変お世話になっています。ありがとうございます  
 
 ###スクリプトエンジン
-・ティラノスクリプト 様 http://tyrano.jp/ (c) Copyright ShikemokuMK All Rights Reserved.  
+・ティラノスクリプト 様 (c)ShikemokuMK 2012 http://tyrano.jp/  
 　MITライセンス(https://opensource.org/licenses/mit-license.php )に基づき使用しています
  
 ###スクリプト関係
