@@ -3,8 +3,7 @@
 
 ◆グラフィック
 ◇キャラクターグラフィック：(c) かいこ 2013
-
-◇背景グラフィック(写真・手描き)
+◇背景グラフィック：
 ・data/fgimage/bg/B4nFWraU42内の画像：(c) ＠名無しさん１ 2016
 ・data/fgimage/bg/I9IhvvVdPo内の画像：(c) ◆I9IhvvVdPo 2016
 
