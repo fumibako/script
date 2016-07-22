@@ -13,8 +13,14 @@
 ・葛城宮 晴仁ルートシナリオ：(c) ◆I9IhvvVdPo 2016
 ・藤枝　肇ルートシナリオ：(c) ◆I9IhvvVdPo 2016
 ・財前 美彬ルートシナリオ：(c) ◆I9IhvvVdPo 2016
-・黒田 将貴ルートシナリオ：(c) ◆jsYiJcqRkk 2015
+・黒田 将貴ルートシナリオ9月1週後半の一部：(c) ◆ftAc29dlL. 2014
+・黒田 将貴ルートシナリオその他：(c) ◆jsYiJcqRkk 2015
+・共通ルートシナリオ プロローグとオープニング：(c) ◆8EASfQr/2Q 2013
+・共通ルートシナリオ 9月1週：(c) ◆ftAc29dlL. 2014
+・共通ルートシナリオ その他：(c) ◆jsYiJcqRkk 2015
 
-◆スクリプト：(c) ◆jsYiJcqRkk 2015
+◆スクリプト
+◇システム原案：(c) ◆8EASfQr/2Q  2013
+◇スクリプト本文：(c) ◆jsYiJcqRkk 2015
 スクリプトはティラノスクリプト(c) ShikemokuMK 2012 http://tyrano.jp/
 「MITライセンス https://opensource.org/licenses/mit-license.php」です
