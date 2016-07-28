@@ -1,0 +1,164 @@
+;/////////////////////////////////
+;△迎えバージョンイベント7とセットに
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
+[主人公目パチ1回]
+[wait time=10]
+
+;[whosay name="磯野" color="dimgray"] お嬢様、四条華織さまがお迎えに来られました
+;[whosay name=&sf.girl_namae color="#cf5a7f"] わかったわ。すぐ参りますとお伝え下さい
+;[whosay name="磯野" color="dimgray"] はい、それでは
+;[whosay name=&sf.girl_namae color="#cf5a7f"] 待って、磯野
+;[whosay name="磯野" color="dimgray"] はい
+;[whosay name=&sf.girl_namae color="#cf5a7f"] 帯留めや髪飾りの位置は大丈夫でしょうか？
+;[whosay name="磯野" color="dimgray"] はい
+;[whosay name="磯野" color="dimgray"] ですが、お嬢様
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+な、何ですか？
+;[whosay name="磯野" color="dimgray"]
+もう、そのようなことを気にする関係でもないのではないでしょうか？
+;△健全ですよ！
+;[whosay name=&sf.girl_namae color="#cf5a7f"] ……[主人公照れ]か[主人公汗]
+;[whosay name="磯野" color="dimgray"] お嬢様、行ってらしゃいませ
+;[whosay name="磯野" color="dimgray"](少し、寂しくなりますね)
+;¥¥¥¥¥¥¥¥イベント7¥¥¥¥¥¥¥¥
+;○解決の知らせ→料亭などで落ち合うことに。
+;☆フィナーレ（結末。主人公の勝利）
+;○悩み(真実)についての独白とその後の悩みの変化が語られ主人公に感謝する。四条には主人公しかいない等と言って改めて告白
+;[料亭]
+[whosay name="華織" color="olivedrab"]
+お義さんには許可をもらって来ましたか？
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+はい。
+『もう一緒になるのだから好きにしなさい』といってました。
+[whosay name="華織" color="olivedrab"]
+一緒か
+;○華織、しみじみと振り返るか笑顔で
+[whosay name="華織" color="olivedrab"]
+そうだね……[名前]と出逢えてよかったと思う
+[whosay name="華織" color="olivedrab"]
+僕は[名前]と再会する前は、ずっと妹のような箱入り娘だと思っていたよ。
+[whosay name="華織" color="olivedrab"]
+それに (華衣に悪いと思って)返事も素っ気なかったよね
+;[whosay name="華織" color="olivedrab"]
+;([名前]への態度も、きっと失ったものへの代替だったかもしれない)
+[whosay name="華織" color="olivedrab"]
+今、思っても[名前]には失礼なことをしていたと反省している
+;△主人公の反応は、いる？
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;(いえ、その後のお手紙は沢山頂きましたので楽しかったです)
+[whosay name="華織" color="olivedrab"]
+もちろん、今では、貴方のことを芯の強さ持った素敵な女性だと思っている
+[whosay name="華織" color="olivedrab"]
+時折、みせてくれる素の可愛らしい部分も含めて[p]
+;○必要に応じて[p]ではなくてウェイト[er]？
+[whosay name="華織" color="olivedrab"]
+僕は[名前]のことが好きなんだ[p]
+[whosay name="華織" color="olivedrab"]
+[名前]に先を越されてしまいましたが改めて言わせて下さい[p]
+;○(親の言われるままに婚約したので告白の言葉は送っていなかった)
+[whosay name="華織" color="olivedrab"]
+愛しています。[名前]さんと共に歩みたい[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+……はい[p]
+;○2人手をとって、共に歩むことを決意する
+[whosay name="華織" color="olivedrab"]
+「よかった」[p]
+;[華織笑顔]
+[whosay name="華織" color="olivedrab"]
+「そうだ。せっかく、お義父さまのお許しを得たのだから、お出かけをしましょうか」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい！」[p]
+[whosay name="華織" color="olivedrab"]
+「これからは記念日ごとに帯留めを買おう」[p]
+;○華織は、妹のことを思い出し。これから、戦争や病気などで別れあるかもしれないと思って。
+;冬のしんとした寒さの中、2つの暖かな吐息がほんわりと並び、次の季節に思いを馳せる。
+;[whosay name="華織" color="olivedrab"](あの人に負けないほどの恋を)[p]
+;[whosay name="華織" color="olivedrab"]([名前]さんと綴っていけたらいいな)[p]
+
+;△ノーマルエンドと分けるならここで切ってみるのは如何でしょうか？
+;¥¥¥¥¥¥¥¥イベント7おわり¥¥¥¥¥¥¥¥
+;@jump storage="event.ks" target=*event_owari
+
+
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]

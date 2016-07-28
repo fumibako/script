@@ -1,0 +1,147 @@
+body {
+  background-color: #aaaaff;
+  background: url("./play/data/fgimage/bg/logo.png"),url("./play/data/fgimage/bg/bg_web_blue2.jpg");
+  background-repeat: no-repeat,repeat-y;
+  background-position: right top,left top;
+  background-size : auto,contain;
+  margin-left: 12%;
+  margin-right: 10%;
+  font-family : "HG–¾’©E","‚l‚r ‚o–¾’©","MS PMincho","ƒqƒ‰ƒMƒm–¾’© Pro","Hiragino Mincho Pro";
+  font-size : 16px;
+  color : #aa6161;
+  line-height: 120%;
+}
+ 
+nav {
+  margin : 30px auto;
+  width  : 600px;
+}
+ 
+h1 {
+  display : block;
+  font-size : 32px;
+}
+
+h2 {
+ margin-left: -2em;
+ background: url("./play/data/image/h2.png") no-repeat left center;
+ padding-left: 50px;
+ padding-top: 2px;
+ font-size: 18px;
+ font-style: bold;
+ color : #222233;
+ height: 20px;
+}
+
+h3 {
+ margin-left: -1.3em;
+ background: url("./play/data/image/h3.png") no-repeat left center;
+ padding-left: 45px;
+ font-size: 17px;
+ font-style: bold;
+ color : #665555;
+ height: 17px;
+}
+
+menu {
+  border-radius : 3px;
+}
+ 
+menu:after , menu:before {
+  display : block;
+  content : ' ';
+}
+ 
+menu:after {
+  clear : both;
+}
+ 
+li {
+  list-style-type : none;
+  background      : linear-gradient(rgba(220,220,255,0.4) 85%, rgba(255,255,255,0.5) 100%);
+  float   : left;
+  cursor  : pointer;
+  padding : 10px 20px;
+  border-top    : 2px solid rgba(200,200,255,0.5);
+  border-bottom : 2px solid rgba(150,150,150,0.4);
+}
+ 
+li:first-child {
+  border-radius : 5px 0 0 5px;
+}
+ 
+li:last-child {
+  border-radius : 0 5px 5px 0;
+}
+ 
+a {
+  font-family : "HG–¾’©E","‚l‚r ‚o–¾’©","MS PMincho","ƒqƒ‰ƒMƒm–¾’© Pro","Hiragino Mincho Pro";
+  text-decoration : none;
+  position        : relative;
+  top   : 0;
+  color : #8a9aca;         
+  transition : all .4s;
+}
+ 
+li:hover a {
+  top   : -5px;
+  color : #aa0000;
+  background-color: #fff;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+ 
+li a:after {
+  display  : block;
+  content  : '';
+  position : absolute;
+  top  : 100%;
+  left : 42%;
+  border-style : solid;
+  border-color : transparent;
+  border-width : 5px 5px 0 5px;
+  transition   : all .4s;
+}
+ 
+li:hover a:after {
+  border-color : white transparent transparent transparent;
+  transition   : all .4s;
+}
+
+dl#table {
+	border: 1px solid rgba(200,200,255,0);
+	border-top: none;
+	width: 100%;
+}
+
+dl#table dt {
+	border-top: 1px solid rgba(200,200,255,0);
+	position: absolute; /* â‘Î”z’uw’è */
+	width: 215px;
+}
+
+dl#table dd {
+	border-left: 1px solid rgba(200,200,255,0);
+	border-top: 1px solid rgba(200,200,255,0);
+	height: 260px; /* min-height ”ñ‘Î‰‚Ì IE —p */
+	margin-left: 215px;
+}
+
+body dl#table dd {
+	min-height: 260px; /* ‚‚³‚ÌÅ¬’l(‰æ‘œ‚Ì‚‚³{sŠÔH’l) */
+}
+
+dl#table dd.last { /* ÅŒã‚Ì dd ‚É‚ÍsŠÔH‚Í•K—v‚È‚¢‚½‚ß */
+	height: 260px; /* min-height ”ñ‘Î‰‚Ì IE —p */
+}
+
+body > dl#table dd.last {
+	min-height: 260px; /* ‚‚³‚ÌÅ¬’l(‰æ‘œ‚Ì‚‚³) */
+}
+
+th {
+        font-weight: normal;
+        text-align: left;
+}
+
+

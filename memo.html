@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>恋綴り-めも</title>
+    <link rel="stylesheet" href="navi.css"　type="text/css">
+  </head>
+  <body>
+
+    <div align="center">
+
+<nav class="menu">
+  <menu>
+<h1>
+    <li><a href="index.html">入口</a></li>
+    <li><a href="story.html">物語</a></li>
+    <li><a href="hito.html">人物</a></li>
+    <li><a href="about.html">概要</a></li>
+    <li><a href="play/index.html">遊ぶ</a></li>
+</h1>
+  </menu>
+</nav>
+    </div>
+
+
+        <br><br>
+スクリプト担当者による個人的制作メモです。バグを見つけて下さった方や、他の制作者様の参考になるかもと仮公開してみます<br>
+<br>
+        問題点は「ゲームの動作を最低限行う妨げになるか」を判断基準に、優先度をつけて可能な範囲で対応予定です。スクリプト担当者はこのゲーム制作を機に初めてスクリプトに触れた為、対応可能な範囲は少なめですが、できるだけ試行錯誤したいと思います<br>
+<br>
+ご報告いただいたバグや問題点が「重要度低」に分類されたり、制作者のスキル範囲を超えた問題の場合は対応保留となることもありますが、自分で気づける範囲は少ないため、ご報告はひとつひとつとてもありがたいです<br>
+        <br>
+        <br>
+	<h2>現状判明している問題点<br></h2>
+        <h3>重要度高<br></h3>
+・16/1/11～　ゲームプレイ中のフリーズを改善したい。スクリプト上のレイヤー数、変数や処理が多いのが原因かもしれません。優先度高めに可能な範囲で整理予定<br>
+<br>
+・16/1/11～　後半、黒田ルートに入った後のゲーム性が低い　→　対策を検討します(時間がかかります)<br>
+<br>
+・15/12～　セーブスロットを増やしたい<br>
+　↓<br>
+　今後攻略対象を増やす可能性があるため、できればセーブスロットを複数ページ(難しければスクロール)で計50スロットくらいに増やしたい<br>
+<br>
+・15/09/12～　iPhoneのSafariからプレイすると動作が遅い<br>
+　↓<br>
+　特にBGM再生時に動作が遅延または止まるため、ティラノスクリプトの音関係のプリロードの対応を待って(公式掲示板よりVer3.41では未対応のようです)対策したいと思います。<br>
+　<br>
+        <h3>重要度中<br></h3>
+
+・16/1/11～　ゲームを少し進行した段階で全員の好感度が低いなら、こちらから手紙を書いてはと助言を入れるよう追加予定<br>
+<br>
+・16/1/11～　全体的にSE音量をもう少しだけ下げる方がゲームに集中しやすいのでは　→　調整し、できればプレイヤーさんが音量をある程度調整できる機能を入れたいと考えます<br>
+<br>
+・16/1/11～　手紙を書く際の必要体力・気力は初めて文箱を開いた時か稽古説明時に教えてほしいかも　→　機能追加したいです<br>
+<br>
+
+        <h3>重要度低<br></h3>
+・16/1/11～　自分が出した手紙の種類・話題などの履歴もできれば見たい　→　余裕ができれば機能追加したいです<br>
+<br>
+・16/1/11～　散策が特定の時期以外の意義を失っている(もっと小ネタ会話など見たい)　→　対策を検討したいですが、難しいかもです<br>
+<br>
+・16/1/11～　話題の返事が一度だけだが、掘り下げたり色々あると楽しいのでは　→　現状私がシナリオを追記することは(スクリプトの修正・調整を優先したいことや、文章がなかなか思い浮かばないなどの理由で)難しいです。余裕ができれば検討したいです<br>
+<br>
+・16/1/11～　話題の選択で悩ましい　→　(「情報」機能で好感度を見ながら)色々と試してみるのはいかがでしょうか。ゲーム中にヒントなどある方が親切かもと思いますので、検討します<br>
+<br>
+・15/03/05～　ブラウザにより表示が崩れる<br>
+　↓<br>
+　スクリプト以外の知識が必要なので時間がかかりそうです<br>
+<br>
+・13/11/20～　ptextのfaceで明朝を指定してもゴシック体表示になってしまう。Config.tjsにてデフォルトのフォント名を<br>
+;userFace = "ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝"; // deffont タグの face 属性に相当<br>
+　と指定してもptext（メッセージ窓のキャラ名表示部）はゴシック体表示のままである<br>
+　↓<br>
+　試行錯誤するも解決法不明。ゲーム動作には支障ないので、気になるものの保留<br>
+<br>
+<br>
+<h2>解決済・検討済のもの<br></h2>
+
+<h3>16/1/11～　テストプレイでご報告いただいた内容について(～1/17修正・検討分まとめ)</h3>
+・麦の穂を主人公が送る際の画像は何も無い黒背景の方が演出が活きるのでは　→　16/1/17　この場面ではプレイヤーさんに「おや？なんだろう」と感じて欲しいため、少し目を止めてもらえるような画面とSEはやはり入れたいです。加減が難しいところですが、黒背景にほんのり光ってキラキラする程度の画像に修正しました<br>
+<br>
+・麦の穂の画像のキラキラをもっと自然にし、SEも小さめにする方が雰囲気に合うのでは　→　16/1/17　修正しました<br>
+<br>
+・手紙作成の際に便箋の柄に背景がなるといいのでは　→　16/1/16　現状では難しいです。すみません(必要な作業時間と作業結果で得られるプレイヤーさんの楽しさ(やストレス軽減)を主な基準に各作業を 行うかどうかや優先順位を決めています。便箋の柄は現状27種あり、もしグラフィックをつけるならか なりの作業時間が必要になってしまうのです)<br>
+<br>
+・一月四週の手紙返信の便せん選択をやり直した場合などに、二月二週の黒田イベントで複数の便せんに対応する反応が続けて表示される　→　16/1/17　修正しました<br>
+<br>
+・お稽古パートでロードすると、ロード前後の音楽が重複再生される　→　16/1/12　修正しました<br>
+<br>
+・四月一週のお稽古画面直前に、暗転後文章が一瞬表示されて消える　→　16/1/12　修正しました<br>
+<br>
+・「麦の穂」入手難易度が高くBadENDになりやすい　→　16/1/12　難易度を下げました<br>
+<br>
+・こちらから「手紙を書く」機能に気づきにくい　→　16/1/12　お稽古パート最初の磯野の説明に追記しました<br>
+<br>
+・手紙が届かなくなりやすい　→　16/1/12　全体的な手紙が届く条件の難易度を下げました<br>
+<br>
+・モブの名前色を薄めに、そして主人公、黒田の名前色も彩度低めの方が雰囲気に合うのでは　→　16/1/12　修正しました<br>
+<br>
+・十二月三週、黒田視点の地の文が田中の名前でセリフと共に表示されている箇所がある　→　16/1/12　修正しました<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+
+<h3>16/1/10～　メッセージウィンドウを消すと画面が写真素材ほぼそのものになってしまう場合(立ち絵の無い場面など)がある</h3>
+「写真素材そのものの再配布禁止」に該当する可能性がある。<br>
+　↓<br>
+16/01/10～作業中　メッセージウィンドウ消去機能使用中はクレジット表記を行うように機能追加した。<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+
+<h3>15/12～　メッセージウィンドウを消すボタンを付けたい</h3>
+主人公顔グラフィック表示の関係でメッセージウィンドウを[chara_mod～]タグで切り替えているためティラノスクリプト標準のメッセージウィンドウ消すボタンは利用できない。メッセージウィンドウを消す必要がある際は[chara_mod name="message_bg" storage="toumei.gif" time=1]としている。<br>
+　↓<br>
+16/01/10～作業中　[chara_mod name="message_bg" storage="toumei.gif" time=1]を利用したメッセージウィンドウ消去ラベルを作り、fixボタンでシナリオを進めながらウィンドウ消去できるボタンを付けた。(顔グラや選択肢など連動して消去する必要がある部分はif文で処理)ボタンを使用するとシナリオが一つ進んでしまうが、支障は少ないと考える。<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+
+<h3>15/09/25～　オープニングの途中で既読スキップを利用していると画面がフリーズすることに気付きました<br></h3>
+　↓<br>
+15/09/27　既読スキップ開始タグを下記のように変更すると解決しました(スキップ中に[skipstart]するとフリーズするみたい？v.3.41)<br>
+変更前：
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;"><pre><code>[if exp="sf.KSKIP=='ON'"]
+	[skipstart]
+[endif]
+</code></pre></div>
+↓<br>
+変更後：
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;"><pre><code>[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+	[skipstart]
+[endif]
+</code></pre></div>
+<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+
+<h3>15/09/12～　iPhoneのSafariからプレイすると動作が遅い<br></h3>
+　↓<br>
+15/09/14　(一部だけ解決)テストの結果、主に音関係(SEや特にBGM再生時)の部分やグラフィックプリロード時、大き目のグラフィック表示時に動作に遅延が生じているとわかったため、スクリプトを見直しました。具体的には大き目のグラフィックや瞬時に表示されてほしいグラフィックはプリロードするようにし、そのプリロードも分割してプレイヤーのクリック待ち時に行うように変更してみました<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+
+<h3>15/03/05～　iPhoneのSafariからプレイすると音(oggファイル)が再生されない<br></h3>
+　↓<br>
+15/9/9　ティラノスクリプトを最新版(ver3.40)にし、oggファイルと併せて同名でaac形式(m4a)ファイルも配置したところ、iphoneのSafariからも音が再生できるようになりました<br>
+ティラノスクリプト 製作テクニックwiki様を見て気づき、公式リファレンスを参照して修正できました。ありがとうございます
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>既読スキップ機能を実装したい<br></h3>
+　↓<br>
+　15/9/9　不完全※ですが、下記方法である程度動作できました<br>
+　(最初から通しプレイ時のみ自動でスキップ状態になるものの、ロード機能を使うと既読箇所でもスキップ状態が解除される。スキップボタンを押せば既読部分はスキップ状態になる)<br><br>
+１．Config.tjsの◆ラベル記録を";autoRecordPageShowing = true;"にする<br><br>
+２．既読スキップON/OFFボタンをタイトル画面やコンフィグ画面などにつけて、sf.KSKIP=='ON'などシステム変数にON/OFF情報を入れる<br>
+↓既読スキップON/OFFボタンをつけるスクリプト(アオイサクラ様作「簡易コンフィグ画面プラグイン」の方法を参考にしています。ありがとうございます)
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;"><pre><code>[if exp="sf.KSKIP=='OFF'"]
+[locate x=535 y=480]
+[button name="button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on" ]
+[else]
+[eval exp="sf.KSKIP='ON'"]
+[locate x=535 y=480]
+[button name="button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off" ]
+[endif]
+
+;----------既読スキップ有が選択された時
+*kskip_on
+;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
+[eval exp="sf.KSKIP='ON'"]
+[anim name="button_kskip_to_on" opacity=0 time=1]
+[locate x=535 y=480]
+[button name="button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off" ]
+[s]
+
+;----------既読スキップ無が選択された時
+*kskip_off
+;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
+[eval exp="sf.KSKIP='OFF'"]
+[anim name="button_kskip_to_off" opacity=0 time=1]
+[locate x=535 y=480]
+[button name="button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on" ]
+[s]</code></pre></div>
+<br>
+３．シナリオの既読判定をしたい箇所にラベルを付け、それぞれラベル直前※に下記タグを追記する<br>
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
+[if exp="sf.KSKIP=='ON' && sf.trail_シナリオファイル名_ラベル名==undefined"]<br>
+	[skipstop]<br>
+[endif]<br>
+</div>
+<br>
+※　sf.trail_シナリオファイル名_ラベル名…例えば"prologue.ks"の"*scene1"ラベルの場合"sf.trail_prologue_scene1"です<br>
+※　ラベルの後だと、初見でもsf.trail_シナリオファイル名_ラベル名に1が入る場合がある為。Config.tjsの説明ではラベルの最後まで実行しないと加算されないとありますが、現状はラベル直後でも1加算されることがあるようです。(環境にもよるのかも…)<br>
+<br>
+４．各イベントシナリオ冒頭など(既読スキップ開始したい場所)に下記を追記する(9/27修正済)
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
+[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]<br>
+	[skipstart]<br>
+[endif]<br>
+</div>
+
+個人的には既読箇所でのロード時に自動でスキップ状態になってほしいものの、そのやり方は要研究です<br>
+make.ksに↑を追記するだけでは、反映されませんでした<br>
+
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>15/03/05～　タイトル画面の「つづきから」でロード画面に移動した後、「戻」ボタンを押すと真っ黒の画面になったままフリーズする<br></h3>
+　↓<br>
+　15/9/8　タイトル画面からロード画面に移動する際のスクリプトの書き方に問題がありました(画面クリアしてから移動していた)。画面クリアせずに移動するように訂正したところ、解決しました。<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>14/4/13　スキップの動作が不安定なのを解決したい<br></h3>
+スキップ中にクリックしてもすぐ停止しない場合がある。スキップ停止後マウスクリックしてもシナリオが進行せず、機能ボタンも動作しなくなることがある<br>
+　↓<br>
+　15/9/8　ティラノスクリプトを最新(ver3.40)にし、skip中はブーストモードをOFFにするような式を追加すると安定しました<br>
+　具体的にはboost_mode.jsの30行目と98行目(// boost_modeが効いてる時は1文字ずつ表示ではなくテキスト全てを一気に表示させる)行の手前に↓を追加<br>
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
+if (that.kag.stat.is_skip == true) sutdioOverdrive.tyrano.kag.stat.is_boost_mode = false;<br>
+</div>
+これだけだとskipから復帰した時にブーストモードが解除されっぱなしなので……<br>
+kag.layer.jsの22行目～(ver.3.40)<br>
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
+            if (that.kag.stat.is_skip == true) that.kag.stat.is_skip =<br>
+                false;<br>
+</div>
+↓
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
+            if (that.kag.stat.is_skip == true) {<br>
+            	that.kag.stat.is_skip = false;<br>
+            	if (tyrano.plugin.kag.variable.sf.BOOST=='ON') sutdioOverdrive.tyrano.kag.stat.is_boost_mode = true;<br>
+            }<br>
+</div>
+に変更すると、skipから復帰した時にブーストモードも自動でONになりました<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>お稽古パートのセーブデータに「○月○週目」と追記したい<br></h3>
+(ゲーム上どの進行段階のデータか判別するために)<br>
+　↓<br>
+　16/1/30 更新　kag.menu.jsの83行目～(ver.4.00rc4)を下記のように書き換えたところ、できました<br>
+変更前：<br>
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;overflow: auto;"><pre><code>        if (this.snap == null) this.snapSave(this.kag.stat.current_message_str, function() {
+            data = that.snap;
+            data.save_date = $.getNowDate() + "\u3000" + $.getNowTime();
+            array_save.data[num] = data;
+            $.setStorage(that.kag.config.projectID + "_tyrano_data", array_save, that.kag.config.configSave)
+        })
+</code></pre></div>
+↓
+変更後：
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;overflow: auto;"><pre><code>        if (this.snap == null){
+			if (this.kag.stat.f.okeiko_month!=0){
+        		this.kag.stat.current_message_str = this.kag.stat.f.okeiko_month + "月" +this.kag.stat.f.okeiko_week + "週 :　" +  this.kag.stat.current_message_str;
+			}else{this.kag.stat.current_message_str = "プロローグ :　" +this.kag.stat.current_message_str;}
+			this.snapSave(this.kag.stat.current_message_str, 
+				function() {
+            		data = that.snap;
+            		data.save_date = $.getNowDate() + "\u3000" + $.getNowTime();
+            		array_save.data[num] = data;
+            		$.setStorage(that.kag.config.projectID + "_tyrano_data", array_save, that.kag.config.configSave)
+            	}
+            );
+        }</code></pre></div>
+　<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>オートセーブを導入したい<br></h3>
+　↓<br>
+　15/9/6　title.ksのロードボタンから*loadに飛ぶようにして下記を追記及び[autosave]タグをシナリオ複数個所(オートセーブしたい位置)に書くことで導入できました<br>
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;overflow: auto;"><pre><code>;--------ロードが押された時の処理
+*load
+;autosaveされたデータが存在する場合、sf.system.autosave に trueが入ります
+[if exp="sf.system.autosave ==true"]
+[cm]
+;標準のメッセージレイヤを表示
+@layopt layer="message0" visible = true
+[position width=960 height=550 top=120 left=100 page=fore opacity=0]
+自動的に保存されたデータが存在します。ロードしますか？[r]
+[font size=41]
+[r]
+[r]
+[r]
+[link target=*select1]　　　　　　はい[endlink][r]
+[r]
+[r]
+[r]
+[link target=*select2]　　　　　　いいえ[endlink][r]
+[r]
+[resetfont]
+[s]
+
+*select1
+;ロードを実行します
+[autoload]
+
+*select2
+@jump target=*noload
+[endif]
+
+*noload
+[showload]
+[s]</code></pre></div>
+
+　<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/11/20～　ptextのcolor指定が一部反映されない<br></h3>
+（redなどの指定方法はok、0xff0000方式が反映されない）<br>
+　↓<br>
+　できれば0xff0000方式で細かい色指定をしたいが、ゲーム動作には支障ないので気になるものの保留<br>
+　↓<br>
+　15/9/6　ティラノスクリプトを最新(ver3.40)にしたところ、反映されるようになりました<br>
+　<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/11/20～　キャラにより名前表示を色変して見やすくしたい<br></h3>
+ミクPodを参考に試行錯誤するも、解決法不明
+　↓<br>
+　ゲーム動作には支障ないので気になるものの保留<br>
+　↓<br>
+　15/9/6　ティラノスクリプト公式サンプルゲーム「ミクpod」のやり方でできました。ありがとうございます。バックログにキャラ名を表示するようにも改造しました<br>
+<br>
+具体的には：<br>
+１．↓名前表示用マクロをtitle.ksなど必ずゲーム起動時に読み込むファイルに記述する<br>
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;overflow: auto;"><pre><code>;名前表示用のマクロ
+[macro name="whosay"]
+;入力された名前によって色を変更
+[iscript]
+if(mp.name=="文矢"){
+    mp.color = "Teal";
+}else if(mp.name==sf.girl_namae){
+    mp.color = "mediumvioletred";
+}else if(mp.name=="磯野"){
+    mp.color = "dimgray";
+}else if(mp.name=="黒田 将貴"){
+    mp.color = "blueviolet";
+}else if(mp.name=="三宮　時子"){
+    mp.color = "firebrick";
+}else if(mp.name=="お茶屋の娘"){
+    mp.color = "olivedrab";
+}else{
+    mp.color = "black";
+}
+//名前領域の一旦削除
+$(".chara_name_area").remove();
+//名前をバックログに追加
+tf.name_for_log = "&lt;font color = '" + mp.color + "'&gt;" + mp.name + "&lt;/font&gt;";
+if (mp.name!="") {
+	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
+}
+[endscript]
+
+[ptext name="chara_name_area" layer=message0 text=&mp.name color=%color face="ＭＳ Ｐ明朝" size=26 x=270 y=407 bold="bold"]
+[endmacro]</code></pre></div>
+<br>
+２．シナリオファイルの名前表示部分("#三宮　時子"などの代わり)に"[whosay name='三宮　時子' color='firebrick']"<br>
+"[whosay name=&sf.girl_namae color='mediumvioletred']"（主人公名）など記述する<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/12/8　ロードするとセーブした箇所からではなく次の台詞や文から始まる。台詞でセーブしてロードすると、次が別キャラの台詞の場合、名前が切り替わらない<br></h3>
+　↓<br>
+　両方の現象を確認しました。ロード後に次の台詞や文から始まるのは、現状では仕様のようです（公式のサンプルゲームでも同様挙動）<br>
+　しかし違和感があるため（特に名前が切り替わらない点）、何とかできるならしたいところ…。セーブやロードの仕組みを理解できたら対応に取り組みたいですが、かなり時間がかかると思います。ひとまずブラウザ動作情報欄に、注記しました<br>
+　↓<br>
+　14/4/13　「台詞でセーブしてロードすると、次が別キャラの台詞の場合、名前が切り替わらない」問題については、ティラノスクリプトをVer3.0.1にアップデートすると修正されていました。シケモクMK様、ありがとうございます<br>
+　↓<br>
+　15/9/6　ティラノスクリプトを最新(ver3.40)にし、make.ksのブーストモード関連部分を削除すると解決しました<br>
+　<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>マウスホイール操作でバックログやシナリオ進行をしたい<br></h3>
+　↓<br>
+　15/9/6　ティラノスクリプト公式掲示板「質問用スレッド part2」305シケモクMK様投稿の方法でできました。ありがとうございます<br>
+　具体的には、下記スクリプトをtitle.ks(ゲーム起動時に必ず通るファイル)に追記しました<br>
+　<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;overflow: auto;"><pre><code>[iscript]
+var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';    
+$(document).on(mousewheelevent,function(e){
+e.preventDefault();
+var delta = e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
+if (delta < 0){
+// マウスホイールを下にスクロールしたときの処理を記載
+$(".layer_event_click").trigger("click");
+} else {
+// マウスホイールを上にスクロールしたときの処理を記載
+TG.menu.displayLog();
+}
+});
+[endscript]
+</code></pre></div>
+　<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>15/3/14　シナリオの選択肢でセーブ＆ロードをした際に、自動的に最初の選択肢が選ばれてフリーズしてしまう<br></h3>
+　↓<br>
+　15/3/21　選択肢のスクリプトの[s]下に
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
+[cm]<br>
+@jump target=*sentakusi1<br>
+[s]<br>
+</div>
+など、シナリオが進んでも選択肢画面に戻るようにスクリプトを追加して応急処置的に解決しました<br>
+本当はもっと根本的な解決（セーブ/ロード時にシナリオが進まないように）ができると良いのだけれど、セーブ/ロードの仕組みをもっと勉強しないと難しそうです<br>
+
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/11/20～　立ち絵の目パチについて、GIFアニメーション以外の方法が不明。名付け画面でGIFアニメ化したものを使ってみたものの、画質劣化が気になるのでPNGで目パチする方法を模索したい<br></h3>
+　↓<br>
+　調べたところ、JavaScriptを使えばできるかもしれない？JavaScriptについては一から勉強になるため、まずは静止PNG画像メインでゲーム制作しつつ、気長に試行錯誤予定<br>
+　↓<br>
+　15/03　[chara_mod～]タグにより目のパーツのみ連続切り替えでアニメーションさせ、目パチっぽく見えるようなマクロを作成、シナリオのところどころに挟むことで見た目上解決<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>15/2/28　久しぶりにティラノスクリプトをバージョンアップし、以前制作した部分のテキスト表示、SEなどを一部変更したところ、フリーズが頻繁に起きるようになった<br></h3>
+　↓<br>
+　15/03/3　立ち絵表示マクロ読み込み時にフリーズが頻繁に起きていたため、立ち絵表示方法を軽くなるように改善（人物全体の立ち絵画像で切り替えていたのを、人物ベース画像と目など表情画像を分けて表情部分のみ切り替えるように変更）してWaitを挟むなどマクロを作り直したところ、少しカクつく部分があるもののフリーズは起きなくなった<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>14/4/13　バックログボタンクリックでバックログを表示すると、シナリオが一つ進んでしまう。バックログ画面から「戻」ボタンクリックでゲーム画面に戻る際にもシナリオが一つ進んでしまう<br></h3>
+　↓<br>
+　15/03/2　toribrainさんのブログ記事を参考に下記の変更をしたところ、対策できました。ありがとうございました<br>
+　kag.tag.js（ティラノスクリプトVer3.14において)1060行～：<br>
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
+                        case "backlog":<br>
+                        that.kag.ftag.startTag("showlog", {});<br>
+</div>
+　　↓この部分を下記に変更する<br>
+<div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
+                        case "backlog":<br>
+                        that.kag.menu.displayLog();<br>
+</div>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>14/4/13　ティラノスクリプト瞬間表示プラグインを導入したものの、バックログが表示されない<br></h3>
+　↓<br>
+　14/04/16　アオイサクラ様に助言いただき｢boost_mode.js｣のtext表示部に「this.kag.pushBackLog(message_str);」と追記することにより、解決（詳細下記）。アオイサクラ様、ありがとうございました<br>
+tyrano.plugin.kag.tag.text.showMessage = function (message_str) {<br>
+var that = this;<br>
+//以下の一行を追加<br>
+this.kag.pushBackLog(message_str);<br>
+<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/12/6　コンフィグ画面カスタム目的で設定方法を試行錯誤。Config.tjsファイル内には設定場所が見つけられない<br></h3>
+\tyrano\plugins\kag\kag.menu.jsのJavaScriptが関係していそうだけど、どこをどうすればボタン表示サイズ変更や横並びシグザグ配置に変更できるのだろう<br>
+　↓<br>
+　アオイサクラ様のコンフィグ画面Plug-inを見て目からウロコ。新たにksファイルでコンフィグ画面を作って飛ばすという方法があるのですね。ありがとうございます。時間ができ次第、対応予定<br>
+　↓<br>
+　14/04/11　アオイサクラ様のコンフィグ画面Plug-inの方法により、音関係の設定ボタンをタイトル画面に作成。アオイサクラ様、ありがとうございます<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/12/7　CGモードでCGサムネイルをクリックしても、CGが表示されない<br></h3>
+　↓<br>
+　動作軽量化の為に行った変更（背景画像を\bgimageではなく\fgimage\bgに置いてchara_modにより表示）が影響していると考えますが、動作軽量化も優先度が高い為、CG表示と軽量化の両立にむけて試行錯誤中です<br>
+CGモードにおける表示の仕組みを理解次第、対応予定<br>
+　↓<br>
+　14/04/05　「novel_booster.ks」とシナリオ実行部分を"../fgimage/bg/title.jpg"と相対パスにすること＆CGモード画面の背景をchara_modで表示せずに本来の背景表示方法にすることで、遠回りながら解決<br>
+　↓<br>
+　14/04/11　アオイサクラ様に教えていただいた「cg.ks」内のフォルダー指定による方法で修正。スッキリと動作できるようになりました。アオイサクラ様、ありがとうございました<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>mp3のライセンス問題について<br></h3>
+・14/03/29　http://mp3licensing.jp/royalty/games.html、http://mp3licensing.jp/help/developers.htmlの9)より、mp3をゲームで使用し、販売数量5,000コピー以上の場合にはライセンスUS$2,500.00/タイトル毎が必要とのこと<br>
+　↓<br>
+　14/04/01　「販売」と表記されているので、フリーゲームだと要らないのでしょうか。当初mp3をSEやBGMに使おうと準備やテストを進めていましたが、念のためmp3は全て止め、oggに切り替えました<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>タイトル画面から各メニューに移動すると、BGMがダブッて再生されてしまう<br></h3>
+・14/3/29　現在、ローカル環境にて音関係作業中（Webではまだ未実装です）<br>
+　↓<br>
+　14/04/01　BGM停止コマンドを各メニュー読み込みのタイミングで入れて解決<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/12/7　ロード後に、一部シナリオファイルの@jumpタグのあたりでフリーズする<br></h3>
+　↓<br>
+　できるだけ最優先で対策したいものの、フリーズする条件探しの段階で数時間経過。試行錯誤しても解決法が分からなければ、ティラノスクリプト掲示板で質問予定<br>
+　↓<br>
+　13/12/16　chara_show関係のlayer位置を整理していたところ、あるlayerに2つのchara情報を重複させてしまっていたと気付き修正した。その後キャッシュクリア→最初から通してシナリオを読み進みつつセーブ・ロードしたところフリーズは解消した。今後は重複ミスを減らすために、macroにlayer位置をコメントアウトして、新しいchara情報を扱うたびに確認することとした<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/12/6　回想モードで一部の回想シーンがフリーズしてしまう事がある<br></h3>
+　↓<br>
+　13/12/7　再プレイで直り、現在は問題を再現できない状態。再プレイについて回想モードページに記載しました<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/12/1　顔グラフィックをメッセージレイヤより手前に表示したい<br></h3>
+　↓<br>
+　下の案件と同様に、メッセージ窓画像をメッセージレイヤではなく前景レイヤとしてchara_new、chara_modで扱い、顔グラフィック表示レイヤより後方にメッセージ窓画像を表示させることにより、見た目上解決<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/12/1　positionタグでmarginrが反映されない。<br></h3>
+・掲示板に記載されていたpositionタグの順番入れ替えでも反映されないままである<br>
+　問題発生時はmessageレイヤを4枚使用しており、3枚目のmessageレイヤでの挙動<br>
+　↓<br>
+　ともやん様のティラノスクリプト講座を参考に、メッセージ窓画像をメッセージレイヤではなく前景レイヤとしてchara_new、chara_modで扱い、メッセージレイヤは文字表示範囲制御にのみ使うことにより、見た目上解決。また、講座を見てゲーム全編で画像表示を可能な限りchara_modに書き換えたところ、動作も軽快になり嬉しいです。ありがとうございます<br>
+　↓<br>
+　ティラノスクリプト掲示板・質問用スレッド390keito様の回答より、positionタグをmarginr含め1行に全部まとめて指定する解決法もあるようです<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/11/30　回想モードにて、戻るボタン画像(PNG)が回想ｼｰﾝ画像上に重なった時の、戻るボタン画像(PNG)透過度について100%、0%は反映されるが20%、80%など中間の透過度は反映されない<br></h3>
+　↓<br>
+　戻るボタン画像(PNG)が回想ｼｰﾝ画像上に重ならないよう配置することで見た目上解決<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/11/20頃　名前入力場面で、姓と名を別々に表示＆管理する方法が分からない。また、フォーム内にデフォルト名を入力済にする方法も不明<br></h3>
+　↓<br>
+　数日間試行錯誤した末に、ティラノスクリプト掲示板・質問用スレッド324keito様のスクリプトにより解決。ありがとうございます<br>
+　
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/11/中旬　どのスクリプトを学ぶかで迷った。<br></h3>
+・前任者は吉里吉里で制作されたそうなので、吉里吉里が良いかと思ったものの、自分が主にゲームをするのはスマホである。スマホで動く吉里吉里的スクリプトは無いか探したところ、ティラノスクリプトに出会った<br>
+吉里吉里互換なので、前任者が戻られた際にも再引継ぎ可能であれば心強い<br>
+　公式サイトのゲームをスマホ（ブラウザ）からやってみて、動く！と感動。ティラノスクリプトを学んで制作しようと決めました。スクリプトの開発や公開を、ありがとうございます<br>
+<br>
+        <br>
+	<h2>ひとこと<br></h2>
+バグ報告・ご連絡は、下記へどうぞ<br>
+        個別の返信はありませんが、制作の参考にさせていただきます<br>
+      </div>
+    </div>
+
+<!--ninja_style_mailform-->
+<script type="text/javascript" src="http://mf1.shinobi.jp/call/1dcf0581b1b39c7866d6079478443346/mailform.js" charset="utf-8"></script>
+<!--ninja_style_mailform-->
+  </body>
+
+</html>
