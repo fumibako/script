@@ -1,147 +1,226 @@
 ;=============================================
-;�C�x���g3��ځy�莆���͂����̂R�z�U�����Ղ̂��m�Â��Q��ȏ�
+;イベント3回目【手紙が届くその３】６月お琴のお稽古を２回以上
 ;=============================================
-;�y�w�i�z���m�Õ���
+;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[��l���ʏ�]
-[��l�����ڃp�`1��]
-;�y�����G�z��l���@���ߑ�
-�i�ȒP�ȋȂ͒e����悤�ɂȂ��������
-���Ղ̂��m�Â̂�肷���Ŏw�̔炪�؂�Ă��܂��B
-����ɉ������̎肪�ɂ��Ȃ��Ęr���ɂ���
-����ς�؂�Ă��܂��ƏW���ł��Ȃ��j
 
-;�ySE�z���������������i�t�F�[�h�C���j
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
+[主人公閉伏目パチ1回]
+;【立ち絵】主人公　ため息
+（簡単な曲は弾けるようになったけれど
+お琴のお稽古のやりすぎで指の皮が切れてしまう。
+それに押さえの手が痛くなって腕も痛いわ
+やっぱり切れてしまうと集中できない）
+
+;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
 
-[whosay name=��� color="dimgray"]
-�u����l�A���������������܂����v[p]
+[whosay name=磯野 color="dimgray"]
+「お嬢様、お茶をお持ちしました」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u���肪�Ƃ��A�����Ă������v[p]
+「ありがとう、入っていいわよ」[p]
 
-;�ySE�z�����J����i�������j
+;【SE】襖を開ける（ゆっくり）
 
 [playse storage=fusuma-open.ogg loop=false ]
 [stopbgm]
-;�yBGM�z�݂�сi���e�[�}�j
+;【BGM】みやび（磯野テーマ）
 [playbgm storage="isono_miyabi.ogg" loop=true]
 
-[whosay name=��� color="dimgray"]
-�u���炵�܂��v [p]
+[whosay name=磯野 color="dimgray"]
+「失礼します」 [p]
 
 #
-���͐S�z�����ɐq�˂��B[p]
+磯野は心配そうに尋ねた。[p]
 
-[whosay name=��� color="dimgray"]
-�u����l�A���΂ɂ��Ղ̌m�Â͂��߂��ł͂Ȃ��ł��傤���H�@[r]
-�ŋ߂͒x���܂ł��m�ÂȂ���ĂĒU�ߗl���S�z����Ă��܂��v [p]
+[whosay name=磯野 color="dimgray"]
+「お嬢様、流石にお琴の稽古はやり過ぎではないでしょうか？　[r]
+最近は遅くまでお稽古なされてて旦那様も心配されています」 [p]
 
-;�ySE�z���݂̂�u���i�R�g���j
+;【SE】湯のみを置く（コトリ）
 
 [playse storage=tya_yunomi_oku.ogg loop=false ]
-�����̍���ɂق��Ƃ���B[r]
+お茶の香りにほっとする。[r]
 
-[��l���ڃp�`1��]
+[主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l�� �ڕ���
-�u�S�z�����Đ\����Ȃ��Ǝv���Ă����[r]
-[sp]�ł��n�ݒ��x�łȂ� �����Ə��ɂȂ肽���́v[p]
+;【立ち絵】主人公 目伏せ
+「心配かけて申し訳ないと思っているわ[r]
+[sp]でも嗜み程度でなく もっと上手になりたいの」[p]
 
-[whosay name=��� color="dimgray"]
-�u���͔M�S�ɂ����̂͂������Ǝv���܂��̂�[r]
-���΂��܂��񂪂قǂقǂɂ��Ȃ��܂����[r]
-�܊p���Y��Ȏw�������炯�ł��v [p]
+[whosay name=磯野 color="dimgray"]
+「私は熱心にされるのはいい事と思いますので[r]
+反対しませんがほどほどにさないませんと[r]
+折角の綺麗な指が傷だらけです」 [p]
 
-;�y�����G�z��l�� �ʏ�
-�u�����A�����͂����܂ł�[r]
-[sp]���̂��m�ÂɎ��|�����[p]
+;【立ち絵】主人公 通常
+「ええ、今日はここまでで[r]
+[sp]他のお稽古に取り掛かるわ[p]
 
-[whosay name=��� color="dimgray"]
-�u�����A���ꂪ�����Ƒ����܂�[r]
-�ł͎��炵�܂��v [p]
+[whosay name=磯野 color="dimgray"]
+「ええ、それがいいと存じます[r]
+では失礼します」 [p]
 [stopbgm]
 
-;�ySE�z�����J����i�������j
+;【SE】襖を開ける（ゆっくり）
 
-����삪��������o�Ă�������[r]
-���ߑ�������
+＃磯野が部屋から出ていき私は[r]
+ため息をついた
 
-;�ySE�z���̖���
+;【SE】鳩の鳴き声
 
-;�y�����G�z��l�� ��
-�u������I�v[p]
+;【立ち絵】主人公 驚
+「鳩さん！」[p]
 
-��
-�ŋߏ����Ȃ��Ă����̂ł��m�Õ�����[r]
-��q���J�����܂܂ɂ��Ă���B[r]
-���͖������ƂȂ����Ղ̏�ɂƂ܂����B[p]
+＃
+最近暑くなってきたのでお稽古部屋の[r]
+障子も開けたままにしている。[r]
+鳩は迷うことなくお琴の上にとまった。[p]
 
-;�y�����G�z��l�� �ڕ���
-�u���肪�Ƃ��B[r]
-�ł��ŋ߂͎v���悤�ȉ��t���o���Ă��Ȃ���v[p]
+;【立ち絵】主人公 目伏せ
+「ありがとう。[r]
+でも最近は思うような演奏が出来ていないわ」[p]
 
-;�ySE�z���̖���
+;【SE】鳩の鳴き声
 
-;�y�����G�z��l�� �ʏ�
-�u�҂��ĂˁB�v[p]
+;【立ち絵】主人公 通常
+「待ってね。」[p]
 
-���͋��鋰�鎆�Ɏ��L�΂���[r]
-���܂��e����Ȃ�����[r]
-�����ƕ���Ă��邩����H�@[p]
+私は恐る恐る紙に手を伸ばした[r]
+うまく弾けれないから[r]
+きっと呆れているかしら？　[p]
 
-;�ySE�z���̉��i�J�T�b�j
-;�ySE�z���ɐG���i�p�����j
+;【SE】紙の音（カサッ）
+;【SE】紙に触れる（パラリ）
 
-[�莆]
+[手紙]
 
 
-�Ղ̑t�җl��[l][r]
+琴の奏者様へ[l][r]
 [r]
-[sp]?�J�ɖG���΂������Y�킹��G�߁B[r]
+[sp]?雨に萌ゆる緑が風情を漂わせる季節。[r]
 [r]
-[sp]�M���l�ɂ�����܂��Ă͉�������ꂽ�̂ł��傤���H[r]
-[sp]�Ղ̉��F���ƂĂ��ɁX����[r]
-�������J�ɂܒe���������u�����������܂��B[r]
+[sp]貴方様におかれましては何かあられたのでしょうか？[r]
+[sp]琴の音色がとても痛々しく[r]
+いつも丁寧につま弾く響きもブレが感じられます。[r]
 [r]
-[sp]�����A�ꐶ�����Ɏ��g�܂�Ă���̂�[r]
-�`����ė���̂ł��c�c�B[r]
+[sp]いえ、一生懸命に取り組まれているのは[r]
+伝わって来るのです……。[r]
 [r]
-[sp]�c�c���������Ďw�̔炪�؂��قǂ�[r]
-���K���Ă���������̂ł����H[r]
+[sp]……もしかして指の皮が切れるほどに[r]
+練習していらっしゃるのですか？[r]
 [r]
-[sp]������B��������������܂��B[r]
-[sp] �l�����鎞�͂����Ŋy���[r]
-���������e�����Ƃ�����܂����B[r]
+[sp]早く上達したい時もあります。[r]
+[sp] 僕もある時はそうで楽器を[r]
+睡眠を削り弾くこともありました。[r]
 [r]
-[sp]�ł������܂�M�S�ɗ��K���Ă�[r]
-���q�������������܂��B[r]
+[sp]ですがあまり熱心に練習しても[r]
+調子を崩す時もあります。[r]
 [r]
-[sp] ������ǂ��l�߂Ă������Ƃ͕K������[r]
-�������ʂ����ނƂ͌���܂���[r]
-�m�C���[�[�ɂȂ�l������ƕ����܂��B[r]
+[sp] 自分を追い詰めていくことは必ずしも[r]
+いい結果をうむとは限りません[r]
+ノイローゼになる人も居ると聞きます。[r]
 [r]
-[sp]���R�ɐG�ꂽ�肵�Ĉ�x���_��ς��ė]�T�������Ă��������B[r]
+[sp]自然に触れたりして一度視点を変えて余裕を持ってください。[r]
 [r]
-[sp]�ł炸�Ƃ��M���l�͖��ӎ��Œ��J�ɂ��Ղ�[r]
-�����ݗD�����e���Ă��܂����B[r]
-[sp]�K����B�ł�������Ǝv���܂��B[r]
+[sp]焦らずとも貴方様は無意識で丁寧にお琴を[r]
+慈しみ優しく弾けていました。[r]
+[sp]必ず上達できる方だと思います。[r]
 [r]
-[sp]���S��Y�ꂸ��������B���Ă����܂��傤�B[r]
+[sp]初心を忘れずゆっくり上達していきましょう。[r]
 [resetfont]
-;�ySE�z���ɐG���i�p�����j
+;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-;�y�w�i�z���m�Õ���
+;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[��l���ʏ�]
-[��l���ڃp�`1��]
-;�y�����G�z��l���@���΂�
-�u������@���Ă����Ȃ�Ă����ƗD�������Ȃ̂ˁv[p]
+[主人公通常]
+[主人公目パチ1回]
+;【立ち絵】主人公　微笑み
+「音から察してくれるなんてきっと優しい方なのね」[p]
 
-;�ySE�z���ɐG���i�p�����j
-;�y�����G�z��l���@�ʏ�@�ڃp�`
-�u�������莆��Ԃ���Ƃ����̂�����ǁv[p]
+;【SE】紙に触れる（パラリ）
+;【立ち絵】主人公　通常　目パチ
+「私もお手紙を返せるといいのだけれど」[p]
 
+;@jump storage="event.ks" target=*event_owari
+
+[イベントシーン終了]
+@jump storage="test_katuragi.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]

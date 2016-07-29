@@ -1,67 +1,145 @@
-ƒCƒxƒ“ƒg3‰ñ–Ú
-ˆê’è‚Ìi—“xAŠ‹é‹{ˆê’è‚ÌDŠ´“x
-[”wŒi_’ë]
-[ålŒöƒ|[ƒY’Êí]
-[ålŒö’Êí]
-[ålŒö–Úƒpƒ`1‰ñ]
-;ySEz†‚ÉG‚ê‚éiƒXƒbj
+;ã‚¤ãƒ™ãƒ³ãƒˆ3å›ç›®
+;ä¸€å®šã®æ·‘å¥³åº¦ã€è‘›åŸå®®ä¸€å®šã®å¥½æ„Ÿåº¦
+[èƒŒæ™¯_åº­]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[ã‚¤ãƒ™ãƒ³ãƒˆã‚·ãƒ¼ãƒ³æ§‹ç¯‰]
+
+[ä¸»äººå…¬ãƒãƒ¼ã‚ºé€šå¸¸]
+[ä¸»äººå…¬é€šå¸¸]
+[ä¸»äººå…¬ç›®ãƒ‘ãƒ1å›]
+;ã€SEã€‘ç´™ã«è§¦ã‚Œã‚‹ï¼ˆã‚¹ãƒƒï¼‰
 [playse storage=paper_su.ogg loop=false ]
 
 #
-c@—l‚Ì‚¨ˆó“ü‚è‚Ì[r]
-ŠÈ’P‚Èˆ¥A‚Æ“ú‚Ì‘‚¢‚Ä‚ ‚é[r]
-‚¨’ƒ–‚Ìµ‘Òó‚Æ[r]
-Š‹é‹{“a‰º‚Ìè†‚É–Ú‚ğ’Ê‚·[p]
+çš‡åæ§˜ã®ãŠå°å…¥ã‚Šã®[r]
+ç°¡å˜ãªæŒ¨æ‹¶ã¨æ—¥æ™‚ã®æ›¸ã„ã¦ã‚ã‚‹[r]
+ãŠèŒ¶äº‹ã®æ‹›å¾…çŠ¶ã¨[r]
+è‘›åŸå®®æ®¿ä¸‹ã®æ‰‹ç´™ã«ç›®ã‚’é€šã™[p]
 
-[è†]
+[æ‰‹ç´™]
 
 [font color=navy size=21]
-[–¼š]@[–¼‘O]“a‚Ö[l][r]
+[åå­—]ã€€[åå‰]æ®¿ã¸[l][r]
 [r]
-”q’æ@‚Æ‚«‚É‚à‚¤c@•Ã‰º‚©‚ç‚Ì‚¨’ƒ–‚Ìµ‘Òó‚Í[r]
-‚à‚¤“Í‚¢‚½‚Å‚ ‚ë‚¤‚©H@[r]
+æ‹å‘ˆã€€ã¨ãã«ã‚‚ã†çš‡åé™›ä¸‹ã‹ã‚‰ã®ãŠèŒ¶äº‹ã®æ‹›å¾…çŠ¶ã¯[r]
+ã‚‚ã†å±Šã„ãŸã§ã‚ã‚ã†ã‹ï¼Ÿã€€[r]
 [r]
-[sp]c‹Œµ‚µ‚«ÜA¡ãAc@—¼•Ã‰º‚É[r]
-ŒN‚ğ¥–ñÒŒó•â‚Æ‚µ‚Ä”F‚ß‚Ä‚à‚ç‚¤‚æ‚¤‚ÉŒğÂ‚ğs‚Á‚½B[r]
+[sp]æ®‹æš‘å³ã—ãæŠ˜ã€ä»Šä¸Šã€çš‡åä¸¡é™›ä¸‹ã«[r]
+å›ã‚’å©šç´„è€…å€™è£œã¨ã—ã¦èªã‚ã¦ã‚‚ã‚‰ã†ã‚ˆã†ã«äº¤æ¸‰ã‚’è¡Œã£ãŸã€‚[r]
 [r]
-[sp] ‚»‚ÌŒ‹‰Êc@•Ã‰º©‚çŒN‚ğ–¢—ˆ‚Ìe‰¤”Ü‚Æ‚µ‚Ä[r]
-‚Ó‚³‚í‚µ‚¢‚©Šm‚©‚ß‚é‚ÆŒ¾‚í‚êA
-’¼Ú‰ï‚í‚ê‚é‚Æ‚¢‚¤ ‰^‚Ñ‚Æ‚È‚Á‚½B[r]
+[sp] ãã®çµæœçš‡åé™›ä¸‹è‡ªã‚‰å›ã‚’æœªæ¥ã®è¦ªç‹å¦ƒã¨ã—ã¦[r]
+ãµã•ã‚ã—ã„ã‹ç¢ºã‹ã‚ã‚‹ã¨è¨€ã‚ã‚Œã€
+ç›´æ¥ä¼šã‚ã‚Œã‚‹ã¨ã„ã† é‹ã³ã¨ãªã£ãŸã€‚[r]
 [r]
-[sp]­X‘å–‚É‚È‚Á‚Ä‚µ‚Ü‚Á‚½‚Æ”½È‚µ‚Ä‚¢‚éB[r]
-[sp]‚¾‚ªc@•Ã‰º‚Í’N‚É‚Å‚à•ª‚¯Šu‚Ä‚È‚­Ú‚·‚é•û‚Å[r]
-ƒˆ‚ÉŒN‚É‹»–¡‚ğ‚½‚ê‚½‚æ‚¤‚¾B[r]
+[sp]å°‘ã€…å¤§äº‹ã«ãªã£ã¦ã—ã¾ã£ãŸã¨åçœã—ã¦ã„ã‚‹ã€‚[r]
+[sp]ã ãŒçš‡åé™›ä¸‹ã¯èª°ã«ã§ã‚‚åˆ†ã‘éš”ã¦ãªãæ¥ã™ã‚‹æ–¹ã§[r]
+ç´”ç²‹ã«å›ã«èˆˆå‘³ã‚’æŒãŸã‚ŒãŸã‚ˆã†ã ã€‚[r]
  [r]
-[sp]‚à‚µŒN‚ª„‚Æ‚ÌŒ‹¥‚ğl‚¦‚ç‚ê‚È‚¢‚È‚ç’f‚Á‚Ä\‚í‚È‚¢[r]
-[sp]‚¾‚ª‚½‚¾„‚Ì¥–ñÒŒó•â‚Æ‹“‚°‚ç‚ê‚é‚Ì‚ªŒ™‚Å‚È‚¯‚ê‚Î[r]
-ó‚¯‚Ä—~‚µ‚¢[r]
+[sp]ã‚‚ã—å›ãŒç§ã¨ã®çµå©šã‚’è€ƒãˆã‚‰ã‚Œãªã„ãªã‚‰æ–­ã£ã¦æ§‹ã‚ãªã„[r]
+[sp]ã ãŒãŸã ç§ã®å©šç´„è€…å€™è£œã¨æŒ™ã’ã‚‰ã‚Œã‚‹ã®ãŒå«Œã§ãªã‘ã‚Œã°[r]
+å—ã‘ã¦æ¬²ã—ã„[r]
 [r]
-[sp] cc‚¢‚âS‚©‚çŒN‚ªó‚¯‚Ä‚­‚ê‚é‚Ì‚ğ–]‚ñ‚Å‚¢‚é‚Ì‚¾[r]
+[sp] â€¦â€¦ã„ã‚„å¿ƒã‹ã‚‰å›ãŒå—ã‘ã¦ãã‚Œã‚‹ã®ã‚’æœ›ã‚“ã§ã„ã‚‹ã®ã [r]
 [r]
-‹ŞŒ¾
-[sp]@@@@@@@@@@@@@@@@@@@@@@@@@Š‹é‹{@°m[p]
+è¬¹è¨€
+[sp]ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€è‘›åŸå®®ã€€æ™´ä»[p]
 [resetfont]
-;ySEz†‚ÉG‚ê‚éiƒpƒ‰ƒŠj
+;ã€SEã€‘ç´™ã«è§¦ã‚Œã‚‹ï¼ˆãƒ‘ãƒ©ãƒªï¼‰
 [playse storage=paper_open.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-uccv
-[ålŒö•Â•š–Úƒpƒ`1‰ñ]
+ã€Œâ€¦â€¦ã€
+[ä¸»äººå…¬é–‰ä¼ç›®ãƒ‘ãƒ1å›]
 
-[whosay name=ˆé–ì color="dimgray"]
-u‚¨ì‚³‚Ü‚Ç‚¤‚³‚ê‚Ü‚·‚©Hv[p]
+[whosay name=ç£¯é‡ color="dimgray"]
+ã€ŒãŠå¬¢ã•ã¾ã©ã†ã•ã‚Œã¾ã™ã‹ï¼Ÿã€[p]
 
-”S”z‚»‚¤‚Éˆé–ì‚ª–â‚¢Š|‚¯‚Ä‚¢‚é[p]
+ï¼ƒå¿ƒé…ãã†ã«ç£¯é‡ãŒå•ã„æ›ã‘ã¦ã„ã‚‹[p]
 
-;y—§‚¿ŠGzålŒö¢‚è–Ú•Â‚¶
-uµ‘Ò‚ğó‚¯‚Ü‚·‚íBv[p]
+;ã€ç«‹ã¡çµµã€‘ä¸»äººå…¬å›°ã‚Šç›®é–‰ã˜
+ã€Œæ‹›å¾…ã‚’å—ã‘ã¾ã™ã‚ã€‚ã€[p]
 
-;y—§‚¿ŠGzålŒö ^Œ•
-u“a‰º‚ª‚Ç‚ñ‚È‚É‹ê˜J‚µ‚Ä„‚ğ[r]
-[sp] ¥–ñÒŒó•â‚Ì’†‚É“ü‚ê‚æ‚¤‚Æ[r]
-[sp] ‚µ‚Ä‰º‚³‚Á‚Ä‚¢‚é–‚ª‚É‚í‚©‚è‚Ü‚·[r]
-[sp] “a‰º‚ÌŠú‘Ò‚ğ— Ø‚é‚Â‚à‚è‚Í‚ ‚è‚Ü‚¹‚ñv[p]
+;ã€ç«‹ã¡çµµã€‘ä¸»äººå…¬ çœŸå‰£
+ã€Œæ®¿ä¸‹ãŒã©ã‚“ãªã«è‹¦åŠ´ã—ã¦ç§ã‚’[r]
+[sp] å©šç´„è€…å€™è£œã®ä¸­ã«å…¥ã‚Œã‚ˆã†ã¨[r]
+[sp] ã—ã¦ä¸‹ã•ã£ã¦ã„ã‚‹äº‹ãŒã«ã‚ã‹ã‚Šã¾ã™[r]
+[sp] æ®¿ä¸‹ã®æœŸå¾…ã‚’è£åˆ‡ã‚‹ã¤ã‚‚ã‚Šã¯ã‚ã‚Šã¾ã›ã‚“ã€[p]
 
-[whosay name=ˆé–ì color="dimgray"]
-u‚¨ì—l‚È‚ç‘åä•v‚Å‚·‚¨ŒmŒÃ‚Å‚Ì‚¨’ƒ—§‚Ä‚à‚¨ì–@‚à[r]
-[sp] g‚É‚Â‚¢‚Ä‚¨‚ç‚ê‚Ü‚·‚©‚çv[p]
+[whosay name=ç£¯é‡ color="dimgray"]
+ã€ŒãŠå¬¢æ§˜ãªã‚‰å¤§ä¸ˆå¤«ã§ã™ãŠç¨½å¤ã§ã®ãŠèŒ¶ç«‹ã¦ã‚‚ãŠä½œæ³•ã‚‚[r]
+[sp] èº«ã«ã¤ã„ã¦ãŠã‚‰ã‚Œã¾ã™ã‹ã‚‰ã€[p]
+;@jump storage="event.ks" target=*event_owari
+
+[ã‚¤ãƒ™ãƒ³ãƒˆã‚·ãƒ¼ãƒ³çµ‚äº†]
+@jump storage="test_katuragi.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;ä¼šè©±ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦æ¶ˆå»
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;æ©Ÿèƒ½ãƒœã‚¿ãƒ³æ¶ˆå»
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã‚’éè¡¨ç¤º
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;ä¼šè©±ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦è¡¨ç¤º
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;æ©Ÿèƒ½ãƒœã‚¿ãƒ³è¡¨ç¤º
+;ã‚»ãƒ¼ãƒ–ç­‰ãƒœã‚¿ãƒ³é…ç½®
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã‚’è¡¨ç¤º
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]

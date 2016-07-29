@@ -1,354 +1,432 @@
 ;=============================================
-;�C�x���g�P�T��ځy�w�؂�G���h�z3��4�T�A
+;イベント１５回目【指切りエンド】3月4週、
 ;=============================================
-[�w�i����]
-[��l���|�[�Y�ʏ�]
+[背景公園]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+
+[主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[��l���ʏ�]
-[��l���ڃp�`1��]
-�u�Z�����Ԃ������Ē����Ă��肪�Ƃ��������܂�[r]
-[sp] ����ɂ��Ă��܂��ǂ����Ă��̏ꏊ�ɁH�v[p]
+[主人公通常]
+[主人公目パチ1回]
+「忙し時間を割いて頂いてありがとうございます[r]
+[sp] それにしてもまたどうしてこの場所に？」[p]
 
 #
-�ؘR����͒g�����A���������炫�n�߂Ă���
-�����͂����l�Ƃ���l�������ɘA��čs���Ă��ꂽ
+木漏れ日は暖かく、もう桜も咲き始めている
+今日はお父様とお母様が公園に連れて行ってくれた
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-�u��������[���O]�̂��莆�̑���ɋ������������̂łȁB�v[p]
+「私たちも[名前]のお手紙の相手に興味をもったのでな。」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�ʏ�
-�u�܂��c�c�I�@����͊��������ł���v[p]
+;【立ち絵】主人公：通常
+「まあ……！　それは嬉しい事ですわ」[p]
 
-��
-�����Ă��̌㌾�t���������Ȃ��Ȃ�
-�܂���t�̕��̖؂̉��ɓ��}�l�������Ă���
-������ɋC�Â��Ĕނ͎��ɏ_�炩�����΂�
-�����Ĕނ����l�ɗ�����Ă�����
+＃
+そしてその後言葉を告げられなくなる
+まだ若葉の楓の木の下に藤枝様が立っていた
+こちらに気づいて彼は私に柔らかく微笑む
+そして彼お父様に礼をしていった
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z���}�F�^��
-�u[����]�l���̓x�͋@��𒸂����肪�Ƃ��������܂��I�@�v[p]
+;【立ち絵】藤枝：真剣
+「[名字]様この度は機会を頂きありがとうございます！　」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-�u�V�����w���ɂȂ�A
-[sp] ���y�w�Z�ւ̕ғ��������D�G�Ȑ��т������ƕ�����
-[sp] �N�͓w�͉Ƃ̂悤���ȁB�v[p]
+「新聞奨学生になり、
+[sp] 音楽学校への編入試験も優秀な成績だったと聞いた
+[sp] 君は努力家のようだな。」[p]
 
-;�y�����G�z���}�F���΂�
-�u�����̖��Ɨ��ׂ̈ł�����
-[sp] �ǂ�ȓw�͂�ɂ��ނ���͂���܂���v[p]
-
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-�u�ǂ��ڂ����Ă����
-[sp] [���O]�Ƃ̒��𐳎��ɔF�߂�̂͑�����[r]
-[sp] �N�̓w�͂��K����������Ƃ͌���Ȃ�[r]
-[sp] �����N�����͂œ����J�����Ƃ��͌N��F�߂悤�v[p]
-
-;�y�����G�z���}�F���΂�
-�u���͖l�ɂƂ��ď\���Ȃ����t�ł�[r]
-[sp] �l�͖��S�����w�͂��A�ޏ��ɂӂ��킵���Ȃ�܂��v[p]
+;【立ち絵】藤枝：微笑み
+「自分の夢と恋の為ですから
+[sp] どんな努力を惜しむつもりはありません」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-�u[���O]�ɋ�J���������͂Ȃ�[r]
-[sp] �N����l�O�ɂȂ�܂ł͂ǂꂮ�炢���낤�ȁH�@�v[p]
+「良い目をしているな
+[sp] [名前]との仲を正式に認めるのは早いし[r]
+[sp] 君の努力が必ずしも報われとは限らない[r]
+[sp] だが君が自力で道を開けたときは君を認めよう」[p]
 
-;�y�����G�z���}�F�^��
-�u���ƈ�N������w�Z�͑��Ƃł����A���N�͗��w���܂�[r]
-�ł������w���I�����Ƃ��ɂ͈�l�O�ɂȂ��Ă���悤��[r]
-�F�X�ȃR���N�[���ɏo�����ł�����R��Ȃ��܂��v[p]
-
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-�u���ď����͉��y�̃��x���������ƕ������c�c�v[p]
-
-;�y�����G�z���}�F�^��
-�u�����A
-�ł��l�����������͂���܂���v[p]
-
-��
-���}�l�̓��͋����P���Ă���
-���߂ĉ���������������Ɛ����������Ă���
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F���΂�
-�u�����l�A���}�l�Ȃ炫���Ƃ�萋���܂���[r]
-[sp] ���v�ł��I�@�v[p]
+;【立ち絵】藤枝：微笑み
+「今は僕にとって十分なお言葉です[r]
+[sp] 僕は慢心ぜず努力し、彼女にふさわしくなります」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-�u�������v
+「[名前]に苦労させるつもりはない[r]
+[sp] 君が一人前になるまではどれぐらいだろうな？　」[p]
 
-;�y�����G�z���}�F�ڕ����Ƃ�
-�u�M���̎���[���O]����Ƃ��Ăт��Ă������ł����H�@�v[p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F���΂�
-�u�͂��A�ܘ_�ł�
-�������Ȃ��𔣂��܂Ƃ��Ăт��Ă��\���܂��񂩁H�v[p]
-
-;�y�����G�z���}�F���΂ݏƂ�
-�u�͂��I�@���肪�Ƃ��������܂��v[p]
+;【立ち絵】藤枝：真剣
+「あと一年したら学校は卒業ですが、数年は留学します[r]
+ですが留学を終えたときには一人前になっているように[r]
+色々なコンクールに出場つもりですし沢山作曲します」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-�u�S���A���B�����邱�Ƃ�Y��Ă���񂶂�Ȃ��̂��H[r]
-�܂���l����ŉ�킹�����͂Ȃ��A[r]
-���}�N���Z�����Ȃ����Ă�������̂ł��܂莞�Ԃ͂Ȃ��v[p]
+「欧米諸国は音楽のレベルが高いと聞くが……」[p]
+
+;【立ち絵】藤枝：真剣
+「ええ、
+でも僕も負けるつもりはありません」[p]
+
+＃
+藤枝様の瞳は強く輝いていた
+初めて会った時よりもずっと生き生きしている
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F��������
-�u�����ł��́c�c�v[p]
+;【立ち絵】主人公：微笑み
+「お父様、藤枝様ならきっとやり遂げますわ[r]
+[sp] 大丈夫です！　」[p]
 
-;�y�����G�z��l���F�^��
-�u���l�A�񑩂����Ē����܂��񂩁H�@�v[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「そうか」
 
-;�y�����G�z���}�F����
-�u���̖񑩂ł����H�@�v[p]
-
-;�y�����G�z��l���F�^��
-�u���͂����Ɣ��l�ɂ��莆�����������܂�
-[sp] �����ǉ����Ƃ���ŗ���΂Ȃ�ɂȂ�͕̂s���ł�
-[sp] �K�������}���ɗ��Ă����Ɩ񑩂��Ă��������v[p]
-
-��
-���͏��w�𗧂ĂĎ��������
+;【立ち絵】藤枝：目伏せ照れ
+「貴方の事を[名前]さんとお呼びしてもいいですか？　」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�^��
-�u�w�؂�����Ă��������܂��񂩁H�v[p]
+;【立ち絵】主人公：微笑み
+「はい、勿論です
+私もあなたを肇さまとお呼びしても構いませんか？」[p]
 
-;�y�����G�z���}�F���΂�
-�u�����A�񑩂�K�����܂��v[p]
+;【立ち絵】藤枝：微笑み照れ
+「はい！　ありがとうございます」[p]
 
-�w�؂�CG
-
-��
-�u�w�؂肰��܂�R������j��{�ۂ܂��v[r]
-[sp] �������͓����ɐ������킹�Ďw�؂������[r]
-�i����Ă��M����z���܂��[�������݂��ɐ����������j[p]
-
-�m�[�}�������܂�
-
-�G�s���[�O
-��
-���ꂪ�V�����������̎n�܂�
-�������͉�Ȃ�����R���莆��������
-�s���Ȃ��v�������ӂ�
-���莆�͓r�₦�邱�Ƃ͂Ȃ�����
-
-�[�S�N��@�^��
-[�w�i_��]
-[��l���|�[�Y�ʏ�]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[��l���ʏ�]
-[��l���ڃp�`1��]
-�u�c�c�v
-�i������������j[p]
-
-[whosay name=��� color="dimgray"]
-�u����l�A�������ǂ���
-[sp] �����͗��������܂���Ɓv[p]
-
-;�ySE�z�R�g��
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「全く、私達がいることを忘れているんじゃないのか？[r]
+まだ二人きりで会わせるつもりはない、[r]
+藤枝君も忙しいなか来てもらったのであまり時間はない」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F���΂�
-�u�����A���莆�ɏ����Ă���܂�����[r]
-[sp] ���l���ƈ킩��A���Ă�����\��̌��ł�[r]
-[sp] ������������D���x��邩���m��Ȃ��Ƃ�[r]
-[sp] �����Ă���܂���������ƂȂ̂ł��v[p]
+;【立ち絵】主人公：落ち込み
+「そうですの……」[p]
 
-[whosay name=��� color="dimgray"]
-�u�����ł��ˁc�c
-[sp] ����l���ƂĂ����Y��ɂȂ��܂����v[p]
+;【立ち絵】主人公：真剣
+「肇様、約束をして頂けませんか？　」[p]
 
-��
-���S�[����삪���������Ǝ����݂�
+;【立ち絵】藤枝：驚き
+「何の約束ですか？　」[p]
 
-������
-�u����l�A���}�l�Ƃ������������������ł��v[p]
+;【立ち絵】主人公：真剣
+「私はずっと肇様にお手紙を書き続けます
+[sp] だけど遠いところで離ればなれになるのは不安です
+[sp] 必ず私を迎えに来てくれると約束してください」[p]
+
+＃
+私は小指を立てて手を挙げる
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F����
-�u���ʂ����ĉ������I�@�v[r]
-�i���l�H�@�ł�����Ȃɑ������͂����c�c[r]
-[sp] �ł����}�l�Ƃ������͔��l�ȊO�ɒm��Ȃ���j[p]
+;【立ち絵】主人公：真剣
+「指切りをしてくださいませんか？」[p]
 
-;�ySE�z���������������i�t�F�[�h�C���j
+;【立ち絵】藤枝：微笑み
+「ええ、約束を必ず守ります」[p]
+
+指切りCG
+
+＃
+「指切りげんまん嘘ついたら針千本呑ます」[r]
+[sp] 私たちは同時に声を合わせて指切りをした[r]
+（離れても貴方を想いますーそうお互いに誓い合った）[p]
+
+ノーマルここまで
+
+エピローグ
+＃
+これが新しい私たちの始まり
+私たちは会えない分沢山お手紙を書いた
+尽きない思いがあふれ
+お手紙は途絶えることはなかった
+
+ー４年後　某月
+[背景_庭]
+[主人公ポーズ通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
+[主人公目パチ1回]
+「……」
+（もうすぐだわ）[p]
+
+[whosay name=磯野 color="dimgray"]
+「お嬢様、お茶をどうぞ
+[sp] 少しは落ち着きませんと」[p]
+
+;【SE】コトリ
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：微笑み
+「ええ、お手紙に書いてありましたが[r]
+[sp] 肇様が独逸から帰ってこられる予定の月です[r]
+[sp] もしかしたら船が遅れるかも知れないとは[r]
+[sp] 書いてありましたがやっとなのです」[p]
+
+[whosay name=磯野 color="dimgray"]
+「そうですね……
+[sp] お嬢様もとてもお綺麗になられました」[p]
+
+＃
+感慨深く磯野がしけしげと私をみる
+
+＃女中
+「お嬢様、藤枝様とおっしゃる方がお見えです」[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：驚き
+「お通しして下さい！　」[r]
+（肇様？　でもこんなに早くつくはずが……[r]
+[sp] でも藤枝様という方は肇様以外に知らないわ）[p]
+
+;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
 
-;�y�����G�z���}�F�ʏ�
-�u�����Ă������ł��傤���H�@�v[p]
+;【立ち絵】藤枝：通常
+「入ってもいいでしょうか？　」[p]
 
-��
-���͊m���ɔ��l�̂��̂�
-���͊������ė܂����ڂꂽ
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�ڕ�
-�u�c�c�ǂ����A�����肭�������v[p]
-
-;�ySE�z�����J����i�������j
-
-��
-���l�͋������\��Ŏ������߂�
-
-�����}
-�u�ǂ����ċ����Ă����ł����H�@�v[p]
-
-;�y�����G�z��l���F���΂�
-�u����������ł���v[r]
-�i�����΂��ɂȂ��Ă��܂��c�c[r]
-[sp] ���l�͔w���L�тĊ������l�тāA���͋C��[r]
-[sp] �����鏭�N���炫����Ƃ����N�ɕς�����j[p]
-
-��
-�����z���Ď������͂܂�����̂���
-���̎��𔣗l�̑�l�т��p���݂Ď�������
-���l�͔��΂ނS�N�O�ƕς��Ȃ��_�炩�Ȕ��΂�
-���̔��΂݂����������Ď��͂܂��܂����ڂꂽ
-
-�����}
-�u�l���������ł��v[p]
-
-��
-���l�͎��̗܂������̎��
-���̗܂�@����
-
-;�y�����G�z��l���F����
-�u���l�I�@�v
-
-��
-���l�̓n�b�Ƃ����悤��
-����������߂ďƂꂽ�悤�Ɍ�����
-
-�u���݂܂���I�@�Y�킾�����[r]
-[sp] �G��Ă��܂��܂���[r]
-[sp] �c�c�M���͂��Y��ɂȂ�܂����ˁv[p]
+＃
+声は確かに肇様のもので
+私は嬉しくて涙がこぼれた
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�ڕ����Ƃ�
-�u���l�̕������ƂĂ��j�炵���Ȃ�܂����I�@�v[p]
+;【立ち絵】主人公：目閉じ
+「……どうぞ、お入りください」[p]
 
-[whosay name=��� color="dimgray"]
-�u�R�z���v[p]
+;【SE】襖を開ける（ゆっくり）
 
-��
-��삪�킴�Ƃ炵���P��������
-�������͉�ɕԂ���͗����オ��
+＃
+肇様は驚いた表情で私を見つめる
 
-[whosay name=��� color="dimgray"]
-�u���͒U�ߗl�ɗ��K�����m�点���ɍs���܂��A[r]
-[sp] ���}�l�A�M���͂��̍��ł̃s�A�m�̌��������肵�A[r]
-[sp] ���y�w�Z�̖��_���������肵�Ă���Ƃ͂���[r]
-[sp] �܂�����l�ƍ��񂪐������킯�ł͂Ȃ��ł���v[p]
+＃藤枝
+「どうして泣いているんですか？　」[p]
+
+;【立ち絵】主人公：微笑み
+「嬉しいからですわ」[r]
+（泣き笑いになってしまう……[r]
+[sp] 肇様は背も伸びて顔つきも大人びて、雰囲気も[r]
+[sp] 夢見る少年からきりっとした青年に変わった）[p]
+
+＃
+時を越えて私たちはまた会えたのだわ
+その事を肇様の大人びた姿をみて実感する
+肇様は微笑む４年前と変わらない柔らかな微笑み
+その微笑みが懐かしくて私はまた涙がこぼれた
+
+＃藤枝
+「僕も嬉しいです」[p]
+
+＃
+肇様は私の涙を自分の手で
+私の涙を拭った
+
+;【立ち絵】主人公：驚き
+「肇様！　」
+
+＃
+肇様はハッとしたように
+手を引っ込めて照れたように言った
+
+「すみません！　綺麗だからつい[r]
+[sp] 触れてしまいました[r]
+[sp] ……貴方はお綺麗になりましたね」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�ʏ�
-�u����ł������l�͔F�߂Ē�����͂��ł��I�@�v[p]
+;【立ち絵】主人公：目伏せ照れ
+「肇様の方こそとても男らしくなりました！　」[p]
 
-�����}
-�u�\���ɂ��莆�͌��킵�܂���[r]
-[sp] ������[����]�l�̗����𓾂ɂ��܂���[r]
-[sp] �ǂ������掟����낵�����肵�܂��B�v[p]
+[whosay name=磯野 color="dimgray"]
+「コホン」[p]
 
-[whosay name=��� color="dimgray"]
-�u���͋M������������Ǝv���Ă܂���ł������A[r]
-[sp] ����l���K���Ȃ炻��ō\���܂���[r]
-[sp] �U�ߗl�ɂ��掟�����Ă��܂��v[p]
+＃
+磯野がわざとらしく咳払いする
+私たちは我に返り磯野は立ち上がる
 
-;�ySE�z����߂�i�������j
-
-���l�͍Ăю��ɏ_�炩�����΂�
-
-�����}
-�u�����[���O]����ɂ���ł��܂���[r]
-[sp] ���x�������������ɂȂ�܂�����[r]
-[sp] �S�N�Ԃ����ƋM���̂��莆��A[r]
-[sp] �v���o�Ɏx�����܂����v[p]
+[whosay name=磯野 color="dimgray"]
+「私は旦那様に来訪をお知らせしに行きます、[r]
+[sp] 藤枝様、貴方はこの国でのピアノの公演も決定し、[r]
+[sp] 音楽学校の名誉教授が内定しているとはいえ[r]
+[sp] まだお嬢様と婚約が成ったわけではないですよ」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�A�ڕ������΂�
-�u���������Ɣ��l�ɂ�������������ł�[r]
-[sp] �c�c�����Ƃ��炢���Ă���܂����B�v[r]
-�i���ԂȂ�Ė��ł͂Ȃ�����[r]
-[sp] ���ł����͔����܂ɗ������Ă���j[p]
+;【立ち絵】主人公：通常
+「それでもお父様は認めて頂けるはずです！　」[p]
 
-;�y�����G�z��l���F�^��
-�u���͂����Ɣ��l��M���Ă��܂���[r]
-[sp] ���l�͎����v���Ă���ȏ�ɋ����l�ł��v[p]
+＃藤枝
+「十分にお手紙は交わしました[r]
+[sp] 今日は[名字]様の了承を得にきました[r]
+[sp] どうぞお取次ぎよろしくお願します。」[p]
 
-�����}
-�u����Ȏ�����܂����A�ł�[r]
-[sp] �M�����ׂ̈�������l�͂ǂ�Ȃɂ������Ȃ��[r]
-[sp] �����Ă��܂�[���O]����v[p]
+[whosay name=磯野 color="dimgray"]
+「私は貴方が成功すると思ってませんでしたが、[r]
+[sp] お嬢様が幸せならそれで構いません[r]
+[sp] 旦那様にお取次ぎしてきます」[p]
 
-��
-�D����������ꂳ���
-���̌ۓ��͂���ɍ���
+;【SE】襖を閉める（ゆっくり）
 
-;�ySE�z���������������i�t�F�[�h�C���j
+肇様は再び私に柔らかく微笑む
+
+＃藤枝
+「やっと[名前]さんにお会いできました[r]
+[sp] 何度もくじけそうになりましたが[r]
+[sp] ４年間ずっと貴方のお手紙や、[r]
+[sp] 思い出に支えられました」[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：、目伏せ微笑み
+「私もずっと肇様にお会いしたかったです[r]
+[sp] ……ずっとお慕いしておりました。」[r]
+（時間なんて問題ではなかった[r]
+[sp] 今でも私は肇さまに恋をしている）[p]
+
+;【立ち絵】主人公：真剣
+「私はずっと肇様を信じていました[r]
+[sp] 肇様は私が思っている以上に強い人です」[p]
+
+＃藤枝
+「そんな事ありませんよ、でも[r]
+[sp] 貴方もの為だったら僕はどんなにも強くなれる[r]
+[sp] 愛しています[名前]さん」[p]
+
+＃
+優しく告げられさらに
+私の鼓動はさらに高鳴る
+
+;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
 
-�u[���O]�A���}�N�������ˁH�@�v[p]
+「[名前]、藤枝君いいかね？　」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�n�b�Ƃ���
-�u�͂��A�����l�I�@�v[p]
+;【立ち絵】主人公：ハッとする
+「はい、お父様！　」[p]
 
-;�ySE�z�����J����i�������j
-
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-�u�ז����������낤���H[r]
-[sp] �S�N�U�肩[r]
-[sp] �c�c���h�ɂȂ����˓��}�N�v[p]
-
-�����}
-�u[����]�l�A���v���Ԃ�ł��A
-[sp] ���肪�Ƃ��������܂����ꂩ������i���܂��v[p]
+;【SE】襖を開ける（ゆっくり）
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-�u�ς���ĂȂ��悤�ň��S�����v[p]
+「邪魔をしただろうか？[r]
+[sp] ４年振りか[r]
+[sp] ……立派になったね藤枝君」[p]
 
-��
-�����l�͂��Ȃ���
-�����l�̔��l������ڂ͂����������A
-�����Ɣ��l�̓w�͂Ɛ�����F�߂Ă���Ă���
+＃藤枝
+「[名字]様、お久しぶりです、
+[sp] ありがとうございますこれからも精進します」[p]
 
-�����}
-�u[���O]����Ƃ̍���𐳎��ɔF�߂Ē����ׂɖK�₵�܂���[r]
-[sp] �ǂ������A����������Ă��������܂��񂩁H�@�v[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「変わってないようで安心した」[p]
+
+＃
+お父様はうなずく
+お父様の肇様を見る目はあたたかい、
+きっと肇様の努力と成功を認めてくれている
+
+＃藤枝
+「[名前]さんとの婚約を正式に認めて頂く為に訪問しました[r]
+[sp] どうか今、婚約を許してくださいませんか？　」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�^��
-�i�܂������Ƃ����邩����H�@[r]
-[sp] ���l�������Ƒ҂��Ƃ������ĉ�����������ǁj[p]
+;【立ち絵】主人公：真剣
+（まだ早いといわれるかしら？　[r]
+[sp] 肇様をずっと待つことを許して下さったけれど）[p]
 
-��
-���l�͂������̉����b�̃R���N�[���ɓ��܂��A
-���̏܋��ŉƂ̎؋���ԍς��I���A
-���l�̂����l�͊y��̍H�[�𗧂��グ�Ă���
-�y��̕]���͂ƂĂ��ǂ��A�����ɒǂ��t���Ȃ��قǂ���
+＃
+肇様はいくつもの欧羅巴のコンクールに入賞し、
+その賞金で家の借金を返済を終え、
+肇様のお父様は楽器の工房を立ち上げている
+楽器の評判はとても良く、発注に追い付かないほどだと
 
-��
-�����čH���V�������b���o�Ă���Ƃ���
-�����Ə\�N���\�N��ɂ͂����Ƒ傫���Ȃ��
-���l�����y�����̍��ɍL�ߐ���ɂ���ƍl���Ă���
+＃
+そして工場を新しく作る話も出ているという
+きっと十年後二十年後にはもっと大きくなるわ
+肇様も音楽をこの国に広め盛んにすると考えている
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-�u�N��[���O]�̌�����F�߂悤�v[p]
+「君と[名前]の結婚を認めよう」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F���΂�
-�u�����l�I�@�v[p]
+;【立ち絵】主人公：微笑み
+「お父様！　」[p]
 
-�����}
-�u���肪�Ƃ��������܂��v[p]
+＃藤枝
+「ありがとうございます」[p]
 
-��
-�����Ď��Ɣ��l�͔��΂ݍ������B
-�K���ȋC�����ł����ς��ŋ����l�܂�
-�������l�̂悤�ɑ�R�w�͂��悤���B���K���ɂȂ�ׂ�
+＃
+そして私と肇様は微笑み合った。
+幸福な気持ちでいっぱいで胸が詰まる
+私も肇様のように沢山努力しよう私達が幸せになる為に
 
-�[�����Ĕ��l�ƐV��������a���ł���
+ーそして肇様と新し明日を紡いでいく
 
-�I
+終
 
+;@jump storage="event.ks" target=*event_owari
+
+[イベントシーン終了]
+@jump storage="test_katuragi.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]

@@ -187,3 +187,8 @@
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp] 葛城宮　晴仁[p]
 
 
+;@jump storage="event.ks" target=*event_owari
+
+[イベントシーン終了]
+@jump storage="test_katuragi.ks"
+[s]

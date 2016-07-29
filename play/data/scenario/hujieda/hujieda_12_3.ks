@@ -1,188 +1,266 @@
 ;=============================================
-;�C�x���g�P�Q��ځy���q����K��z�P�Q��3�T�A
+;イベント１２回目【時子さん訪問】１２月3週、
 ;=============================================
-[�w�i_��]
-[��l���|�[�Y�ʏ�]
+[背景_庭]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+
+[主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[��l����������]
-[��l���ڃp�`1��]
-�u�c�c�v[p]
+[主人公落ち込み]
+[主人公目パチ1回]
+「……」[p]
 
-[whosay name=��� color="dimgray"]
-�u����l�A���܂ł��ӂ�������ł��Ă��d������܂���v[p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�ڕ���
-�u�킩���Ă��܂��A����ł����͉�����ɒ����Ȃ��̂ł��v[p]
-
-;�y�����G�z��l���F�߂���
-�i���Ղ����͂܂������Ă��邯�ǉ��ɂ��C�͂��킩�Ȃ�[r]
-[sp] �F�N�₩�Ȑ��E���甒���̐��E�ɕ����߂�ꂽ�݂�������[r]
-[sp] ���}�l���ƈ�ɍs���ꂽ�����������邱�Ƃ��Ȃ��c�c�j[p]
-
-������
-�u����l�A���l�A���q�l�ł��v
-
-[whosay name=��� color="dimgray"]
-�u�ǂ��炳�܂ł��傤���H�@�v[p]
-
-������
-�u�O�{�Ƃ̎��q�l�ł�
-[sp] ����l�ɂ���������Ƃ������ł�����[r]
-[sp] ���������܂��傤���H�v[p]
+[whosay name=磯野 color="dimgray"]
+「お嬢様、いつまでもふさぎ込んでいても仕方ありません」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�ʏ�
-�u������܂�
-[sp] ���q��������ʂ����Ă��������v[r]
-[sp] �i��������I�@���q����ɂȂ瑊�k�ł���j[p]
+;【立ち絵】主人公：目伏せ
+「わかっています、それでも今は何も手に着かないのです」[p]
 
-[whosay name=��� color="dimgray"]
-�u���}�l�̎��͓����Ɂc�c�v[p]
+;【立ち絵】主人公：悲しみ
+（お琴だけはまだ続けているけど何にも気力がわかない[r]
+[sp] 色鮮やかな世界から白黒の世界に閉じ込められたみたいだわ[r]
+[sp] 藤枝様が独逸に行かれたらもうお会いすることもない……）[p]
+
+＃女中
+「お嬢様、磯野様、お客様です」
+
+[whosay name=磯野 color="dimgray"]
+「どちらさまでしょうか？　」[p]
+
+＃女中
+「三宮家の時子様です
+[sp] お嬢様にお会いしたいという事でしたが[r]
+[sp] いかがしましょうか？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�^��
-�u���q����͐M�p�ł�����ł���[r]
-[sp] �����m������肨�b���������̂ł�[r]
-[sp] �����F���������Ă��Ă��������I�@�v[p]
+;【立ち絵】主人公：通常
+「お会いします
+[sp] 時子さんをお通ししてください」[r]
+[sp] （そうだわ！　時子さんになら相談できる）[p]
 
-[whosay name=��� color="dimgray"]
-�u�킩��܂����c�c[r]
-[sp] ���̑��肢���̂���l�ɖ߂��Ă��������v[p]
+[whosay name=磯野 color="dimgray"]
+「藤枝様の事は内密に……」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F���΂�
-�u���肪�Ƃ����[r]
-[sp] �S�z�����Ă��܂��Ĉ����Ǝv���Ă��܂��v[p]
+;【立ち絵】主人公：真剣
+「時子さんは信用できる方ですわ[r]
+[sp] 女同士ゆっくりお話ししたいのです[r]
+[sp] 磯野も皆も下がっていてください！　」[p]
 
-��
-���Ə������������Ă���
-�����ŋߓ��}�l�����Ȃ��Ȃ�Ƃ����₵����
-������������Ă͋C���x�܂�Ȃ�����
+[whosay name=磯野 color="dimgray"]
+「わかりました……[r]
+[sp] その代わりいつものお嬢様に戻ってください」[p]
 
-;�ySE�z���������������i�t�F�[�h�C���j
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：微笑み
+「ありがとう磯野[r]
+[sp] 心配かけてしまって悪いと思っています」[p]
+
+＃
+磯野と女中が下がっていく
+ここ最近藤枝様がいなくなるという寂しさと
+見張りをつけられては気が休まらなかった
+
+;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
 
-[whosay name="�O�{�@���q" color="#c25232"]
-�u[���O]��������Ă���������H�v[p]
+[whosay name="三宮　時子" color="#c25232"]
+「[名前]さん入っていいかしら？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�J����
-�u�����A�����Ă��Ă��������v[p]
+;【立ち絵】主人公：憂い顔
+「ええ、入ってきてください」[p]
 
-;�ySE�z�����J����i�������j
+;【SE】襖を開ける（ゆっくり）
 
-��
-�c�c��͂�e�F�Ƃ������݂͓��ʂȂ̂�����
-���̂�肫��Ȃ��߂��݂ł����ς��ɂȂ�
+＃
+……やはり親友という存在は特別なのかしら
+今のやりきれない悲しみでいっぱいになる
 
-[whosay name="�O�{�@���q" color="#c25232"]
-�u�c�c���������Ƃ��͍\�킸�ɋ����Ƃ�낵���̂�[r]
-[sp] �܂��~�߂Ă͒ɂ݂����܂���v[p]
+[whosay name="三宮　時子" color="#c25232"]
+「……泣きたいときは構わずに泣くとよろしいのよ[r]
+[sp] 涙を止めては痛みも取れません」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�߂���
-�u���q����I�v[p]
+;【立ち絵】主人公：悲しみ
+「時子さん！」[p]
 
-��
-�D���������Ă킽���ܑ̗B�͈�C�Ɋɂ�
-�܂��ۂ��ۂ��Ƃ��ڂ�Ă���
-���q����̓n���J�`��n���Ă���Ă�����
+＃
+優しく言われてわたしの涙腺は一気に緩む
+涙がぽたぽたとこぼれていく
+時子さんはハンカチを渡してくれていった
 
-[whosay name="�O�{�@���q" color="#c25232"]
-�u��l�ŕ������ނ��Ƃ��o���Ȃ�����[r]
-[sp] �������܂Ȃ��ł����̂�v[p]
+[whosay name="三宮　時子" color="#c25232"]
+「一人で抱え込むことが出来ない時は[r]
+[sp] 抱え込まないでいいのよ」[p]
 
-��
-���ꂩ�炵�΂炭���͍��܂ł́A
-�߂��݂�f���o�����̂��悤��
-�����Ă��������Ă���Ƃق��Ƃ���
+＃
+それからしばらく私は今までの、
+悲しみを吐き出すかのうように
+泣いていたそしてやっとほっとした
 
-�I����
-���q����ɓ��}�̎���b��
-�b���Ȃ���bad
+選択肢
+時子さんに藤枝の事を話す
+話さない→bad
 
 bad
-�Ó]
-��
-����ł����͎��q����ɂ����������Ȃ������B
-���̌㓡�}�l�͓ƈ�ɗ��w��
-����ɂ͓n�Ă��A��ȉƁA�s�A�j�X�g�Ƃ��Ė���y����
-���̍��֖߂��Ă����̂͏\�N�ゾ����
-�m�w�i�m�ٓ����n
-��
-�\�ܔN��
-���܂��ܕt�������a�I����s�A�m�ƋՂ̍��t�Ȃ����������B
-�ƂĂ��Y��Ő؂Ȃ��ȂŃs�A�m�ƋՂ̍��t�ȂȂ�Ē�����
-�Ǝv���Ȃ��畷���Ă���Ɣނ̐�����������
+暗転
+＃
+それでも私は時子さんにも何も言えなかった。
+その後藤枝様は独逸に留学し
+さらには渡米し、作曲家、ピアニストとして名を馳せる
+この国へ戻ってきたのは十年後だった
+［背景洋館内装］
+＃
+十五年後
+たまたま付けたラヂオからピアノと琴の合奏曲が聴こえた。
+とても綺麗で切ない曲でピアノと琴の合奏曲なんて珍しい
+と思いながら聞いていると彼の声が聞こえた
 
-�����}
-�u����͓��{�ɖ߂��ď��߂ɍ�Ȃ���
-�����̐l��z���č�����Ȃł�
-�ǂ������ޏ����K���ł���܂��悤�ɂƁc�c
-�ޏ��Ɖ�������Ƃ͐�����قǂł������̂悤�ȗ��ł����v
+＃藤枝
+「これは日本に戻って初めに作曲した
+初恋の人を想って作った曲です
+どうか今彼女が幸せでありますようにと……
+彼女と会ったことは数えるほどでしが夢のような恋でした」
 
-��
-�ƂĂ��������������������C���������ݏグ�Ď��͗܂����ڂꂽ
-�v���o�������Ȃ����߂ɂ���������Ǝv��Ȃ��B
-���}���܂̒��ł͂������Y��Ȃ܂܂̎��ł���������B
-�[���͂����߂�Ȃ��ߋ�����Ȃ����������c�c�������ꂾ��
+＃
+とても懐かしくも愛おしい気持ちがこみ上げて私は涙がこぼれた
+思い出を汚さないためにももう会おうと思わない。
+藤枝さまの中ではずっと綺麗なままの私でいたいから。
+ー私はもう戻れない過去叶わない恋をした……ただそれだけ
 
 
-���q����ɓ��}�̎���b��
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�߂���
-�u���}�l���������狏�Ȃ��Ȃ��Ă��܂���[r]
-[sp] ���͂��ꂪ���܂�Ȃ��߂��������̂ł��v[p]
-
-[whosay name="�O�{�@���q" color="#c25232"]
-�u[���O]����������ꂽ�̂ł��ˁv[p]
+時子さんに藤枝の事を話す
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F�߂���
-�u�����A���̊Ԃɂ��D���ɂȂ��Ă��܂��܂���[r]
-[sp] �ł����̑z���͓��}���܂ɂƂ��Ă�[r]
-[sp] �����l����B�ɂƂ��Ă��ǂ��Ȃ����̂ł��v[p]
+;【立ち絵】主人公：悲しみ
+「藤枝様がここから居なくなってしまうの[r]
+[sp] 私はそれがたまらなく悲しかったのです」[p]
 
-[whosay name="�O�{�@���q" color="#c25232"]
-�u����������H�@�ǂ��Ȃ����̂��Ȃ�Ă킩��Ȃ����̂�v�@[p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F����
-�u����͂ǂ������Ӗ��ł����H�@�v[p]
-
-[whosay name="�O�{�@���q" color="#c25232"]
-�u�M���̑z���͈������֓����Ȃ�Č���Ȃ���[r]
-[sp] ����ɓ��}�l�͏����L�]�ȓa���ł�[r]
-[sp] ���܂ł�[���O]����̂����l��Ɨ߂�[r]
-[sp] ���莆��������Ȃ��n�ʂɂ���Ƃ͎v���܂���v[p]
+[whosay name="三宮　時子" color="#c25232"]
+「[名前]さん恋をされたのですね」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F����
-�u����́I�@�v[p]
+;【立ち絵】主人公：悲しみ
+「ええ、いつの間にか好きになってしまいました[r]
+[sp] でも私の想いは藤枝さまにとっても[r]
+[sp] お父様や磯野達にとっても良くないものです」[p]
 
-[whosay name="�O�{�@���q" color="#c25232"]
-�u���������􂪂��邩������܂���B[r]
-[sp] �������}�l�Ɋւ��Ē��ׂĂ����܂���[r]
-[sp] �܂��͏�񂩂�ł��@�v[p]
-
-��
-���q����͎������C�Â���悤�ɔ��΂�
-���͂��Ȃ�����
+[whosay name="三宮　時子" color="#c25232"]
+「そうかしら？　良くないものかなんてわからないものよ」　[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F���΂�
-�u�����ł��ˁA[r]
-[sp] �߂���ł��Ă��d������܂���[r]
-[sp] ���������������Ă��Ă݂܂��B�v[p]
+;【立ち絵】主人公：驚き
+「それはどういう意味ですか？　」[p]
 
-[whosay name="�O�{�@���q" color="#c25232"]
-�u�������C�ɂȂ����悤�ł悩������v[p]
+[whosay name="三宮　時子" color="#c25232"]
+「貴方の想いは悪い方へ働くなんて限らないわ[r]
+[sp] それに藤枝様は将来有望な殿方です[r]
+[sp] いつまでも[名前]さんのお父様や家令が[r]
+[sp] お手紙を許されない地位にいるとは思いません」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;�y�����G�z��l���F���΂�
-�u����͎��q����̂������ł�[r]
-[sp] ��͎��������ł��Ȃ����撣��܂��I�@�v[p]
+;【立ち絵】主人公：驚き
+「それは！　」[p]
+
+[whosay name="三宮　時子" color="#c25232"]
+「何か解決策があるかもしれません。[r]
+[sp] 私も藤枝様に関して調べておきますわ[r]
+[sp] まずは情報からです　」[p]
+
+＃
+時子さんは私を元気づけるように微笑み
+私はうなずいた
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：微笑み
+「そうですね、[r]
+[sp] 悲しんでいても仕方ありません[r]
+[sp] 私も少しもがいていてみます。」[p]
+
+[whosay name="三宮　時子" color="#c25232"]
+「少し元気になったようでよかったわ」[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：微笑み
+「それは時子さんのおかげです[r]
+[sp] 後は私も何かできないか頑張ります！　」[p]
 
 
+;@jump storage="event.ks" target=*event_owari
+
+[イベントシーン終了]
+@jump storage="test_katuragi.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]

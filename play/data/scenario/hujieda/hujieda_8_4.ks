@@ -1,152 +1,230 @@
 ;=============================================
-;�C�x���g�T��ځy�莆�̂��Ԏ��z�W���Q��ȏエ�Ղ̌m�Â�����
+;イベント５回目【手紙のお返事】８月２回以上お琴の稽古をする
 ;=============================================
-;�y�w�i�z���m�Õ���
+;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[��l���ʏ�]
-[��l���ڃp�`1��]
-��
-�Z�i�̒��ׂ̂S�i�܂Œe����悤�ɂȂ����B[r]
-���Ղ������炵�Ȃ��玄�͂悭�����̌N��[r]
-�����l���Ă���B[p]
+[主人公通常]
+[主人公目パチ1回]
+＃
+六段の調べの４段まで弾けるようになった。[r]
+お琴をかき鳴らしながら私はよく鳥文の君の[r]
+事を考えている。[p]
 
-;�y�����G�z��l���@�ڕ����@�s������
-�i�����ꌎ���o���ǒ����̌N��[r]
-[sp] ���̎莆�͓͂��Ă��邩����c�c�B[r]
-[sp] ������͂��܂ɗ��邯��ǎ莆��[r]
-[sp] ����t���ĂȂ���j[p]
+;【立ち絵】主人公　目伏せ　不安そう
+（もう一月も経つけど鳥文の君へ[r]
+[sp] 私の手紙は届いているかしら……。[r]
+[sp] 鳩さんはたまに来るけれど手紙は[r]
+[sp] 括り付いてないわ）[p]
 
 
-�i�c�c�����Ȃ���W�����Ȃ��ƁB[r]
-[sp] �Ȃ�e���Ƃ��͖��S�ŁI�@[r]
-[sp] �搶�����x�͂ǂ����S�ɂ��炸�˂�[r]
-[sp] ���ӂ��ꂽ�΂���Ȃ̂Ɂj[p]
+（……いけないわ集中しないと。[r]
+[sp] 曲を弾くときは無心で！　[r]
+[sp] 先生も今度はどこか心にあらずねと[r]
+[sp] 注意されたばかりなのに）[p]
 
-��
-���͂Ȃ�Ƃ��Ȃ�e���I�����ꑧ���B
+＃
+私はなんとか曲を弾き終えた一息つく。
 
-;�ySE�z���̖���
+;【SE】鳩の鳴き声
 
-�u������I�@�v
+「鳩さん！　」
 
-��
-���͍�����莆�͎莆�͗��邾�낤����[r]
-���҂��Č��グ���B[p]
+＃
+私は今回も手紙は手紙は来るだろうかと[r]
+期待して見上げた。[p]
 
-;�y�����G�z��l���@���΂�
-�u�莆������t���Ă����I�@�v[p]
+;【立ち絵】主人公　微笑み
+「手紙が括り付けてあるわ！　」[p]
 
-;�ySE�z���̖���
+;【SE】鳩の鳴き声
 
-��
-�͂��C�����ɒ��n�������̑���[r]
-�莆�������Ɖ����B[p]
+＃
+はやる気持ちに着地した鳩の足の[r]
+手紙をさっと解く。[p]
 
-;�ySE�z���̉��i�J�T�b�j
-[�莆]
-[����]�@[���O]�l�� [l][r]
+;【SE】紙の音（カサッ）
+[手紙]
+[名字]　[名前]様へ [l][r]
 [r]
-[sp] �~��悤�Ȑ䂵����B[r]
+[sp] 降るような蝉しぐれ。[r]
 [r]
-[sp]�l�̎��͂��\���Ȃ��ƍŏ��̎莆�ɏ����Ȃ���[r]
-�l�͂��̂܂ɂ��M���l�ɐ[��������Ă��܂����悤�ł��B[r]
+[sp]僕の事はお構いなくと最初の手紙に書きながら[r]
+僕はいつのまにか貴方様に深入りをしてしまったようです。[r]
 [r]
-[sp] ���̂Ђƌ������Ƃǂ����Ԏ����悤���ƔY��ł܂����B[r]
+[sp] このひと月ずっとどうお返事しようかと悩んでました。[r]
 [r]
-[sp]�l�����Ȃ��炸�M���l�ɍD�ӂ������Ă��܂����悤�ł��B[r]
+[sp]僕も少なからず貴方様に好意を持ってしまったようです。[r]
 [r]
-[sp]�����ɓ`���܂��傤�B[r]
-[sp] �l�͂����̗X�֔z�B���ł��B[r]
-�M���l���C�ɂ����悤�Ȑg���̂��̂ł�����܂���B[r]
+[sp]正直に伝えましょう。[r]
+[sp] 僕はただの郵便配達員です。[r]
+貴方様が気にされるような身分のものでもありません。[r]
 [r]
-[sp] �l�������̗X�֔z�B���ƒm���ċM���l��[r]
-�ǂ�Ȕ��������̂��|���ł��B[r]
+[sp] 僕がただの郵便配達員と知って貴方様が[r]
+どんな反応されるのか怖いです。[r]
 [r]
-[sp]�܂����̂܂܂��邸��Ɩl�Ǝ莆��[r]
-���킷�̂͋M���l�ׂ̈ɂ͂Ȃ�Ȃ��ł��傤�B[r]
+[sp]またこのままずるずると僕と手紙を[r]
+交わすのは貴方様の為にはならないでしょう。[r]
 [r]
-[sp] ����Ŗl�������͍̂Ō�̎莆�Ƃ��܂��B[r]
-���Ղ𕷂����Ă��������Ă��肪�Ƃ��������܂����B[r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp] ���}�@�� [p]
+[sp] これで僕が書くのは最後の手紙とします。[r]
+お琴を聞かせていただいてありがとうございました。[r]
+[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp] 藤枝　肇 [p]
 
 [resetfont]
 
-;�y�����G�z��l���@�ڕ����@�߂���
-�u����ȁI�@�Ō�̎莆�H�@�v[r]
-�i�ł��m���Ɉ��₨���l�ɘb������[r]
-�����Ǝ莆�����킷���𔽑΂���Ă��܂�[r]
-�ǂ������炢���́H�j[p]
+;【立ち絵】主人公　目伏せ　悲しみ
+「そんな！　最後の手紙？　」[r]
+（でも確かに磯野やお父様に話したら[r]
+きっと手紙を交わす事を反対されてしまう[r]
+どうしたらいいの？）[p]
 
-[�w�i_��]
-[��l���|�[�Y�ʏ�]
-[��l���^��]
-[��l���ڃp�`1��]
-;�ySE�z�y�������i�t�F�[�h�C���j
+[背景_庭]
+[主人公ポーズ通常]
+[主人公真剣]
+[主人公目パチ1回]
+;【SE】軽い足音（フェードイン）
 [playse storage=girl_in_run.ogg loop=false ]
-;�ySE�z�����J����i�����悭�j
+;【SE】襖を開ける（勢いよく）
 [playse storage=fusuma-open_fast.ogg loop=false ]
 [stopbgm]
 
-;�y�����G�z��l���@�^��
-�u�˂��I�@���[r]
-[sp] �X�։�����͂����������炢�ɂ���̂�����H�v[p]
+;【立ち絵】主人公　真剣
+「ねえ！　磯野[r]
+[sp] 郵便屋さんはいつも何時ぐらいにくるのかしら？」[p]
 
-[whosay name=��� color="dimgray"]
-�u����l�I�@�ŋ߂͐����Əi���炵���Ȃ�܂����̂�[r]
-�L���𑖂�Ȃǁc�c�v[p]
+[whosay name=磯野 color="dimgray"]
+「お嬢様！　最近は随分と淑女らしくなりましたのに[r]
+廊下を走るなど……」[p]
 
-;�y�����G�z��l���@�^��
-�u���߂�Ȃ����c�c����ŗX�ւ͉������ɓ͂����̂Ȃ́H�@�v[p]
+;【立ち絵】主人公　真剣
+「ごめんなさい……それで郵便は何時頃に届くものなの？　」[p]
 
-[whosay name=��� color="dimgray"]
-�u�����P�O�������炢�ł��傤���c�c[r]
-[sp] �ǂ����Ă���Ȃ��Ƃ��H�v
+[whosay name=磯野 color="dimgray"]
+「いつも１０時頃ぐらいでしょうか……[r]
+[sp] どうしてそんなことを？」
 
-;�y�����G�z��l���@�Q�Ă�
-�u�����c�c�莆�����킵�Ă������[r]
-[sp] �莆���C�ɂȂ��āc�c�v
+;【立ち絵】主人公　慌てる
+「いえ……手紙を交わしている方の[r]
+[sp] 手紙が気になって……」
 
-[whosay name=��� color="dimgray"]
-�u�܂��A�����ł������܂����A[r]
-[sp] �ǂȂ�����̂��莆�ł��傤���H�@�v[p]
+[whosay name=磯野 color="dimgray"]
+「まあ、そうでございますか、[r]
+[sp] どなたからのお手紙でしょうか？　」[p]
 
-;�y�����G�z��l���@�Q�Ă�
-�u�����c�c�閧�ł��v[r]
-�i���ژb���Ă͎莆�����킵������[r]
-[sp] �����Ă��܂���B�j
+;【立ち絵】主人公　慌てる
+「いえ……秘密です」[r]
+（直接話しては手紙を交わした事が[r]
+[sp] 分ってしまうわ。）
 
-����
-�w�i����
-�P�O���O
+翌日
+背景玄関
+１０時前
 
-��
-��������q�����邾���Ȃ炢�����ˁB[r]
-���]�Ԃ̉����������������������I�@[p]
+＃
+こっそり拝見するだけならいいわよね。[r]
+自転車の音が聞こえるもうすぐだわ！　[p]
 
-;�y�����G�z ���}�@�ʏ�
-�u�X�ւł��I�@�v[p]
+;【立ち絵】 藤枝　通常
+「郵便です！　」[p]
 
-������
-�u�����l�ł��B�v[p]
+＃女中
+「お疲れ様です。」[p]
 
-;�y�����G�z ���}�@�ʏ�
-�u���肪�Ƃ��������܂��I�@�ł͎��炵�܂��I�@�v
+;【立ち絵】 藤枝　通常
+「ありがとうございます！　では失礼します！　」
 
-;�y�����G�z��l���@����
-�i���Ɠ������炢�̍΂�����B[r]
-[sp] ���邭�đu�₩�����ȕ�����[r]
-[sp] �������炢�̍΂Ȃ̂ɓ����Ă���̂ˁc�c�j[p]
+;【立ち絵】主人公　驚き
+（私と同じぐらいの歳かしら。[r]
+[sp] 明るくて爽やかそうな方だわ[r]
+[sp] 同じぐらいの歳なのに働いているのね……）[p]
 
-;�y�����G�z��l���@�ڕ���
-�i�����o�čs�����炫���ƊF�ɒm���Ă��܂�[r]
-[sp] ���}�l�ɂ����f�������邵[r]
-[sp] �c�c���������o���Ȃ�������j[p]
+;【立ち絵】主人公　目伏せ
+（私が出て行ったらきっと皆に知られてしまう[r]
+[sp] 藤枝様にも迷惑がかかるし[r]
+[sp] ……何か何か出来ないかしら）[p]
 
-;�y�����G�z��l���@�n�b�Ƃ���
-�i��������X�ւ����邱�̎��ԑт�[r]
-[sp] ���Ղ𐸈�t�e���܂��傤[r]
-[sp] �������瓡�}�l�����ŉ����邩������Ȃ���j[p]
+;【立ち絵】主人公　ハッとする
+（そうだわ郵便が来るこの時間帯に[r]
+[sp] お琴を精一杯弾きましょう[r]
+[sp] そしたら藤枝様も喜んで下さるかもしれないわ）[p]
 
+;@jump storage="event.ks" target=*event_owari
+
+[イベントシーン終了]
+@jump storage="test_katuragi.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
 
 
