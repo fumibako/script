@@ -9,9 +9,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公通常]
 [主人公目パチ1回]
 ;【立ち絵】主人公：通常
 「そろそろお手紙のお返事来ないかしら」[r]
@@ -47,20 +48,20 @@
 [whosay name=磯野 color="dimgray"]
 「鳩が……足が紙が括り付けてありますけど」[p]
 
-＃
+#
 磯野が鳩さんに近づく
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：慌て
 「あ、待って下さい！　」[p]
 
-＃
+#
 私の言葉はむなしく、磯野は素早く
 鳩さんの足に括り付けてあった手紙をほどいて開ける
 
 ;【SE】紙の音（カサッ）
 
-＃
+#
 私は茫然と立ち尽くした。
 磯野は無言で手紙に目を通し
 彼の顔は次第に顔が厳しくなっていく。
@@ -109,7 +110,7 @@
 [sp] 絶対に言いません！大切な手紙なのです[r]
 [sp] そのお手紙も返してください……　」[p]
 
-＃
+#
 磯野は批難めいた視線をむけ
 私はかぶりを振り切実な視線を向けた
 そして先に目を離したのは磯野だった
@@ -128,7 +129,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_katuragi.ks"
+@jump storage="test_hujieda.ks"
 [s]
 
 *window_close

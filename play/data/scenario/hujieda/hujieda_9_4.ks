@@ -120,7 +120,7 @@
 [stopbgm]
 ;背景: [レトロな喫茶店]
 
-＃
+#
 ２駅先の駅前に着くとピアノの音がしたので
 その音を頼りに歩いたら
 ミルクホール月ノ光の看板が目に入った
@@ -135,7 +135,7 @@
 [sp] ピアノの音の響きの奔流に圧倒されてしまう。[r]
 [sp] それになんて綺麗で繊細な音を奏でてるのかしら）[p]
 
-＃
+#
 一曲が終わって盛大な拍手が送られ[r]
 遠目のガラス越しに花が渡されるのが見える[p]
 
@@ -150,7 +150,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_katuragi.ks"
+@jump storage="test_hujieda.ks"
 [s]
 
 *window_close

@@ -1,9 +1,15 @@
+;背景：薔薇園のまま
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
 
 ;・バットエンド（泣く）
 ;【立ち絵】葛城宮　通常
@@ -14,7 +20,7 @@
 
 ;【立ち絵】主人公 驚き
 「！」
-＃
+#
 [sp] 私の手を取り手の甲へ接吻を落とし、[r]
 殿下は私を一度も振り返ることなく[r]
 薔薇園を後にしました。

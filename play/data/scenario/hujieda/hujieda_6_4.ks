@@ -12,6 +12,7 @@
 [イベントシーン構築]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ポーズ通常]
 [主人公通常]
 [主人公閉伏目パチ1回]
 ;【立ち絵】主人公　ため息
@@ -73,7 +74,7 @@
 
 ;【SE】襖を開ける（ゆっくり）
 
-＃磯野が部屋から出ていき私は[r]
+#磯野が部屋から出ていき私は[r]
 ため息をついた
 
 ;【SE】鳩の鳴き声
@@ -81,7 +82,7 @@
 ;【立ち絵】主人公 驚
 「鳩さん！」[p]
 
-＃
+#
 最近暑くなってきたのでお稽古部屋の[r]
 障子も開けたままにしている。[r]
 鳩は迷うことなくお琴の上にとまった。[p]
@@ -156,7 +157,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_katuragi.ks"
+@jump storage="test_hujieda.ks"
 [s]
 
 *window_close

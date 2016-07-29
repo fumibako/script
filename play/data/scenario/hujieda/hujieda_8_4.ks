@@ -9,11 +9,12 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+[主人公ポーズ通常]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公目パチ1回]
-＃
+#
 六段の調べの４段まで弾けるようになった。[r]
 お琴をかき鳴らしながら私はよく鳥文の君の[r]
 事を考えている。[p]
@@ -30,14 +31,14 @@
 [sp] 先生も今度はどこか心にあらずねと[r]
 [sp] 注意されたばかりなのに）[p]
 
-＃
+#
 私はなんとか曲を弾き終えた一息つく。
 
 ;【SE】鳩の鳴き声
 
 「鳩さん！　」
 
-＃
+#
 私は今回も手紙は手紙は来るだろうかと[r]
 期待して見上げた。[p]
 
@@ -46,7 +47,7 @@
 
 ;【SE】鳩の鳴き声
 
-＃
+#
 はやる気持ちに着地した鳩の足の[r]
 手紙をさっと解く。[p]
 
@@ -127,14 +128,14 @@
 背景玄関
 １０時前
 
-＃
+#
 こっそり拝見するだけならいいわよね。[r]
 自転車の音が聞こえるもうすぐだわ！　[p]
 
 ;【立ち絵】 藤枝　通常
 「郵便です！　」[p]
 
-＃女中
+#女中
 「お疲れ様です。」[p]
 
 ;【立ち絵】 藤枝　通常
@@ -158,7 +159,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_katuragi.ks"
+@jump storage="test_hujieda.ks"
 [s]
 
 *window_close

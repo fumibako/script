@@ -28,8 +28,8 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [layopt layer=26 visible=true]
 [wait time=10]
 [ptext text="四条 華織ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
-[ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=40 color=darkslateblue]
-[ptext text="作業中＝9月4週　それ以降はほぼいただいたファイルそのままの状態です" layer=26 size=17 x=100 y=60 color=darkslateblue]
+[ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
+[ptext text="作業中＝9月4週　それより後はほぼいただいたファイルそのままの状態です" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
 
 [glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
@@ -40,12 +40,13 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test10_3b" text="10月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 
-[glink target="test11_1" text="11月1～3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="test1_1" text="1月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="test1_3" text="1月3週(normalED)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test3_4" text="3月4週goodED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test_sansaku" text="散策" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test11_1" text="11月1～3週:1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="test11_1b" text="11月1～3週:2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="test1_1" text="1月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="test1_3" text="1月3週(normalED)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test3_4" text="3月4週goodED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test_sansaku" text="散策" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=450 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
@@ -107,6 +108,11 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 @jump storage="sijyou/sijyou_11_1.ks"
 [s]
 
+*test11_1b
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_11_1b.ks"
+[s]
 
 *test1_1
 [cm]

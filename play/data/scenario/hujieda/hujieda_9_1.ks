@@ -8,6 +8,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 
 ;【立ち絵】主人公：目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -101,7 +103,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_katuragi.ks"
+@jump storage="test_hujieda.ks"
 [s]
 
 *window_close

@@ -9,6 +9,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
@@ -18,7 +20,7 @@
 [sp] でも今はだた藤枝様を想って弾きたい[r]
 [sp] 私は藤枝様の事そんなに知っているわけでもないけれど）[p]
 
-＃
+#
 そっとお琴に手を伸ばしお琴を弾いてみる
 その音は空気に響き溶けていく
 
@@ -30,7 +32,7 @@
 
 「鳩さん！　」
 
-＃
+#
 私は目を見開いて鳩さんを見た手紙が括りつけてあったから
 鳩さんは手元の琴の端に止まり私は手紙をほどいた。
 
@@ -84,13 +86,13 @@
 [sp] もう迷惑になると手紙を出せずにいた[r]
 [sp] これから手紙を沢山出すわ……）[p]
 
-＃
+#
 私は手紙をそっと抱きしめた
 
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_katuragi.ks"
+@jump storage="test_hujieda.ks"
 [s]
 
 *window_close

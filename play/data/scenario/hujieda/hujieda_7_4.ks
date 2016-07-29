@@ -9,6 +9,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 微笑み
@@ -57,7 +59,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公目パチ1回]
-＃
+#
 わたしは琴に向かい、
 琴を弾くしばらく弾き続けた
 ふわっと琴の端に上に鳩が止まる
@@ -74,7 +76,7 @@
 ;【SE】紙の音（カサッ）
 ;【SE】紙の音（カサッ）
 
-＃
+#
 私は鳩の足に括り付けてある手紙をほどき
 自分の手紙を同じように足に括り付けた
 
@@ -83,7 +85,7 @@
 
 ;【SE】鳩の鳴き声
 
-＃
+#
 鳩が飛び立つのを
 見送って私は手紙を開いた。
 
@@ -134,7 +136,7 @@
 私も同じ気持ちだわ」[r]
 （いつも優しい言葉で励ましてくれる）[p]
 
-＃
+#
 私は鳩の飛び立った空を見上げた
 
 [主人公通常]
@@ -146,7 +148,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_katuragi.ks"
+@jump storage="test_hujieda.ks"
 [s]
 
 *window_close

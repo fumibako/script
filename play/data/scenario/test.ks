@@ -25,6 +25,11 @@
 
 [glink target="test2" text="葛城宮テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=170 color=white]
 
+[glink target="test3" text="藤枝テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=240 color=white]
+
+;[glink target="test4" text="財前テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=310 color=white]
+
+
 ;[glink target="haikei" text="背景テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=400 color=white]
 
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="500" x=100 y=500 color=white]
@@ -36,6 +41,14 @@
 
 *test2
 @jump storage="test_katuragi.ks"
+[s]
+
+*test3
+@jump storage="test_hujieda.ks"
+[s]
+
+*test4
+@jump storage="test_zaizen.ks"
 [s]
 
 *haikei
