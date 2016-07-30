@@ -3,6 +3,7 @@
 下記にてゲームをプレビューすることができます  
 https://fumibako.github.io/script/play/  
 ※ 再配布が禁止されている素材を除いた状態でアップロードしているため、一部の画像や音声が再現されずエラーが表示される場合があります  
+　(具体的には主人公邸関連背景、町背景などいくつかの背景、クリック待ちグリフ画像と効果音の全てが再現されません)  
 
 ##スタッフ作業用リンク  
 ・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  
