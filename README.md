@@ -5,11 +5,12 @@ https://fumibako.github.io/script/play/
 ※ 再配布が禁止されている素材を除いた状態でアップロードしているため、一部の画像や音声が再現されずエラーが表示される場合があります  
 　(具体的には主人公邸関連背景、町背景などいくつかの背景、クリック待ちグリフ画像と効果音の全てが再現されません)  
 
-##スタッフ作業用リンク  
+##スタッフ作業用リンク(完成後このリンクは消す予定です)  
 ・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  
 ・葛城宮シナリオ：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/katuraginomiya  
 ・藤枝シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/hujieda  
 ・財前シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/zaizen  
+・シナリオやスクリプト全般　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario  
   
 ##利用規約
 音声、画像、テキスト素材を抜き出して再配布、再使用、改変することを禁止します  
