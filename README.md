@@ -4,6 +4,12 @@
 https://fumibako.github.io/script/play/  
 ※ 再配布が禁止されている素材を除いた状態でアップロードしているため、一部の画像や音声が再現されずエラーが表示される場合があります  
 
+##スタッフ作業用リンク  
+・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  
+・葛城宮シナリオ：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/katuraginomiya  
+・藤枝シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/hujieda  
+・財前シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/zaizen  
+  
 ##利用規約
 音声、画像、テキスト素材を抜き出して再配布、再使用、改変することを禁止します  
 スクリプトは「MITライセンス」です  
