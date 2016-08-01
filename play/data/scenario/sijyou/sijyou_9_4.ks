@@ -4,34 +4,58 @@
 ;○歌舞伎座で音頭恋寝刃を鑑賞、伏線とキャラ紹介
 ;歌舞伎 大正座。
 ;[歌舞伎小屋中]
-[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[テキスト全画面白文字]
+;スクリプト担：↓お稽古パートから歌舞伎見物シーンへ自然につながるような地の文を入れたいのですが、こんな感じで大丈夫でしょうか？
+――お芝居見物に誘われ[r]
+[r]
+歌舞伎『大正座』を訪れることになった。[p]
+
+[resetfont]
+[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 
-
 [whosay name="華織" color="olivedrab"]
 「本日の演目は『音頭恋寝刃』……」[p]
+
+[主人公目パチ1回]
 #
 桟敷き席に座っていた[名前]は隣に座る華織の様子をみた。[p]
 [whosay name="華織" color="olivedrab"]
 「わからないことがあったら聞いて」[p]
+
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「親戚の婚約者の邸宅で行われた『天覧芝居』を観にいったときから、芝居は好きなんだ」[p]
+
+[主人公目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「名役者 菊次郎 がでているみたいだ」[p]
 [whosay name="華織" color="olivedrab"]
 「ここに出てくる『波ヶ浦』は実際にある地名なんだよ」[p]
+
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お元気そう)[p]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+
 ;演目中は立ち絵表示無し？
 ;[BGMみちくさ] ほんのりギャグテイスト？
 ;http://otowabi.com/page/3/?cftsearch%5Bgenre%5D%5B0%5D%5B0%5D=%E5%92%8C%E9%A2%A8&cftsearch_submit=1&_pjax=%23main
@@ -41,13 +65,16 @@
 #
 ;演目の内容は、貢という男性が操られ大勢の人を殺してしまったと悔やみ、自害をしようとする。それを喜助という者が押し留め、貢の持っている刀こそ、貢が探していた「青江下坂」なのだという。お家の重宝「青江下坂」とその他の両方を取り戻すことができ、大喜びする貢であった……という人物交差もの。
 ;[SE拍手]
+
 ;○開演後のホールでは、奥さま方の熱狂的な交流が行われている。 外にでる2人
 ;[歌舞伎小屋前]
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「堪能いたしました」[p]
 ;[主人公まばたき]
+[主人公閉目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「それは、よかった」[p]
 [whosay name="華織" color="olivedrab"]
@@ -75,7 +102,7 @@
 [whosay name="華織" color="olivedrab"]
 「内容は覚えているからいいよ」[p]
 [whosay name="華織" color="olivedrab"]
-「それよりも、[名前]と長く一緒にいれる時間が大事だよ」[p]
+「それよりも、[名前]と長く一緒にいられる時間が大事だよ」[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]、このままデパートに行ってみないかい？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
