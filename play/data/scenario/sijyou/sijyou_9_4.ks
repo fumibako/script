@@ -16,9 +16,10 @@
 歌舞伎『大正座』を訪れることになった。[p]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
-;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;スクリプト担：BGM、SEの間隔をすこし長めに取りたかったので指定箇所から移動しています。違和感のある場合は再移動をお願いします
+;【BGM】みちくさ
+[playbgm storage="michikusa.ogg" loop=true]
+[eval exp="f.bgm_storage='michikusa.ogg'"]
 [endif]
 
 [resetfont]
@@ -61,12 +62,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お元気そう)[p]
-[if exp="sf.BGM=='ON'"]
-[stopbgm]
-;【BGM】みちくさ
-[playbgm storage="michikusa.ogg" loop=true]
-[eval exp="f.bgm_storage='michikusa.ogg'"]
-[endif]
+;[太鼓SE]ドンドンドン…
+[playse storage=taiko.ogg loop=false ]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -77,11 +74,15 @@
 ;http://otowabi.com/page/3/?cftsearch%5Bgenre%5D%5B0%5D%5B0%5D=%E5%92%8C%E9%A2%A8&cftsearch_submit=1&_pjax=%23main
 [whosay name="役者 その壱" color=black]
 「これが名高い『波ヶ浦』でございまするぅ～」[p]
-;[太鼓SE]ドンドンドン…
+[if exp="sf.BGM=='ON'"]
+[fadeoutbgm time=3000]
+[endif]
+[wait time=1000]
 #
 ;演目の内容は、貢という男性が操られ大勢の人を殺してしまったと悔やみ、自害をしようとする。それを喜助という者が押し留め、貢の持っている刀こそ、貢が探していた「青江下坂」なのだという。お家の重宝「青江下坂」とその他の両方を取り戻すことができ、大喜びする貢であった……という人物交差もの。
 ;スクリプト担：↑地の文でしょうか？ひとまずコメントアウトのままにしています。後への伏線としては地の文としてある程度表示してもいいのかも？コメントアウトのままでもスッキリと違和感は無いし…など考え中です
 ;[SE拍手]
+[playse storage=hakushu.ogg loop=false ]
 
 ;○開演後のホールでは、奥さま方の熱狂的な交流が行われている。 外にでる2人
 ;[歌舞伎小屋前]
@@ -223,7 +224,7 @@
 [wait time=10]
 #
 ;スクリプト担：[商店背景] 帯留めを選ぶシーンは店内の方が合うでしょうか？ 地の文とはすこし違う背景しかすぐには見つかりませんでしたが、外のままよりは自然かと入れてみました
-[chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg" time=1000]
+[chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg" time=1500]
 [eval exp="f.haikei_credit=''"]
 
 [whosay name="華織" color="olivedrab"]
@@ -255,6 +256,9 @@
 (私も華織さまに喜んでほしい)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (いつか華織さまのお役に立てるようになりたいです)[p]
+[if exp="sf.BGM=='ON'"]
+[fadeoutbgm time=3000]
+[endif]
 
 ;////////☆事件の予感 迫り来る悪い奴ら//////
 ;場面転換
@@ -270,6 +274,14 @@
 「今日は楽しく過ごせました。ありがとうございます」[p]
 [whosay name="華織" color="olivedrab"]
 「こちらこそ。また会いたいですね」[p]
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;【BGM】「一閃」
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+;【SE】ガサガサッ
+[playse storage=shigemi_gasagasa_short.ogg loop=false ]
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -292,11 +304,22 @@
 ;×修正点
 [whosay name="？？？" color=%mp.color]
 「アンタは人の大事な人を奪ったくせに！」[p]
+[if exp="sf.BGM=='ON'"]
+[fadeoutbgm time=3000]
+[endif]
 [主人公ポーズ通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [whosay name="？？？" color=%mp.color]
 「アンタだけ幸せになろうなんて、ズルい」[p]
+;【SE】走り去る(屋外)
+[playse storage=run_soto.ogg loop=false ]
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 ;走って退場
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
