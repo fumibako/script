@@ -55,8 +55,6 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「ここに出てくる『波ヶ浦』は実際にある地名なんだよ」[p]
-;[太鼓SE]ドンドンドン…
-[playse storage=taiko.ogg loop=false ]
 
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
@@ -64,6 +62,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お元気そう)[p]
+;[太鼓SE]ドンドンドン…
+[playse storage=taiko.ogg loop=false ]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -74,6 +74,8 @@
 ;http://otowabi.com/page/3/?cftsearch%5Bgenre%5D%5B0%5D%5B0%5D=%E5%92%8C%E9%A2%A8&cftsearch_submit=1&_pjax=%23main
 [whosay name="役者 その壱" color=black]
 「これが名高い『波ヶ浦』でございまするぅ～」[p]
+;[SE拍手]
+[playse storage=hakushu.ogg loop=false ]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -81,8 +83,6 @@
 #
 ;演目の内容は、貢という男性が操られ大勢の人を殺してしまったと悔やみ、自害をしようとする。それを喜助という者が押し留め、貢の持っている刀こそ、貢が探していた「青江下坂」なのだという。お家の重宝「青江下坂」とその他の両方を取り戻すことができ、大喜びする貢であった……という人物交差もの。
 ;スクリプト担：↑シナリオ相談時の説明用かと思いつつ、もしかして地の文候補でしょうか？ひとまずコメントアウトのままにしています。後への伏線としては地の文としてある程度表示してもいいのかも？コメントアウトのままでもスッキリと違和感は無いし…など考え中です
-;[SE拍手]
-[playse storage=hakushu.ogg loop=false ]
 
 ;○開演後のホールでは、奥さま方の熱狂的な交流が行われている。 外にでる2人
 ;[歌舞伎小屋前]
