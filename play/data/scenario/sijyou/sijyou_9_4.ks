@@ -103,6 +103,8 @@
 「それは、よかった」[p]
 [whosay name="華織" color="olivedrab"]
 「あんな風に両方を取り戻せたらいいよね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=500]
 
