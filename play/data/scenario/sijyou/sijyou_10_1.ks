@@ -21,9 +21,9 @@
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(最近、お手紙の内容の繋がりが、おかしいと思っていたら)
+(最近、お手紙の内容の繋がりが、おかしいと思っていたら)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ついにお手紙が、来なくなってしまいました)
+(ついにお手紙が、来なくなってしまいました)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、今日のお手紙に四条家からの手紙はありまして？」[p]
 [whosay name="磯野" color="dimgray"]
