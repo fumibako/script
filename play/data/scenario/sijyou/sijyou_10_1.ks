@@ -15,7 +15,11 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[主人公伏目パチ1回]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (最近、お手紙の内容の繋がりが、おかしいと思っていたら)
 [whosay name=&sf.girl_namae color="#cf5a7f"]
