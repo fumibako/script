@@ -1,6 +1,6 @@
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 ;//////☆障害のはじまり 心の暗闇//////
-:○手紙が帰ってこなくなる
+;○手紙が帰ってこなくなる
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -19,7 +19,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (最近、お手紙の内容の繋がりが、おかしいと思っていたら)
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(来なくなってしまいました)
+(ついにお手紙が、来なくなってしまいました)
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、今日のお手紙に四条家からの手紙はありまして？」[p]
 [whosay name="磯野" color="dimgray"]
@@ -38,7 +38,7 @@
 「四条家とは旧知の仲」[p]
 [whosay name="磯野" color="dimgray"]
 「なんの連絡も無しに婚約を破棄することは、ないと思われます」[p]
-
+;一旦主人公を表示なしにする
 ;[暗転]
 ;○四条の苦悩シーン
 [whosay name="四条母" color="#9B608B"]
