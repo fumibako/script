@@ -1,6 +1,6 @@
 ;¥¥¥¥¥¥¥¥イベントバッド¥¥¥¥¥¥¥¥
 ;イベント5.5手紙イベントバット
-○数日後手紙がかえってくる
+;○数日後手紙がかえってくる
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -11,6 +11,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 
+#
+数日後、兄『文矢』からの手紙がかえってきた[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -26,7 +28,7 @@
 どうやらご兄妹のうちのひとりが、失踪して不幸があったようです。[r]
 家の立場上、婚姻関係は破棄はしないと思いますが、今はそっとしてあげて下さい。[p]
 ;驚きと悲しみ
-[chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
+[主人公困り]
 [wait time=10]
 ;控えめに口をあけて
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
@@ -34,7 +36,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな……」
 [主人公退場]
-#;ナレーター
+#
+;ナレーター
 文矢の言う通り、その後、四条家と[苗字]家の結納は、確かに執り行われた。[p]
 しかし、その2人の間には拭いきれない影を落としていたのであった……。[p]
 [主人公ポーズ通常]
@@ -46,7 +49,7 @@
 [主人公目閉じ]
 [wait time=10]
 状況は変わっていたのでしょうか？」[p]
-
+[wait time=100]
 ;badED処理追記予定
 ;@jump storage="event.ks" target=*event_owari
 
