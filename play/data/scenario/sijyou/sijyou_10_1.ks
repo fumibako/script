@@ -77,11 +77,11 @@
 「華衣！どこ行くの？！」[p]
 
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公困り]
 [主人公目閉じ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 (どうしましょう)[p]
 [whosay name="磯野" color="dimgray"]
 「文矢さまにお手紙を書いてはいかがでしょうか？」[p]
@@ -93,12 +93,10 @@
 ;△文矢さまと四条さまのお二人は、仲がよろしいのですよね→変更
 [p]
 [主人公伏目パチ1回]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね……」[p]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お兄さまに恋の相談なんて、気恥ずかしいですが……)[p]
