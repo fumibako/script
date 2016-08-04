@@ -286,6 +286,7 @@
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
 [主人公目パチ1回]
+「！？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name="？？？" color=%mp.color]
