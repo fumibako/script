@@ -48,8 +48,10 @@
 「四条家とは旧知の仲」[p]
 [whosay name="磯野" color="dimgray"]
 「なんの連絡も無しに婚約を破棄することは、ないと思われます」[p]
-;一旦主人公を表示なしにする visivle=falseにしたい
+;一旦主人公を表示なしにする
+[主人公退場]
 ;[暗転]
+一方、そのころ四条邸では[p]
 ;○四条の苦悩シーン
 [whosay name="四条母" color="#9B608B"]
 「華衣！ 勝手に手紙を捨てるはやめて頂戴！」[p]
@@ -74,23 +76,31 @@
 「華衣！どこ行くの？！」[p]
 
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
+[主人公ポーズ通常]
+[wait time=10]
+[主人公困り]
+[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (どうしましょう)[p]
 [whosay name="磯野" color="dimgray"]
 「文矢さまにお手紙を書いてはいかがでしょうか？」[p]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ」[p]
 [whosay name="磯野" color="dimgray"]
 「文矢さまから、四条さまのことで何かあれば相談するようにと言いつかっておりまして」
 ;△文矢さまと四条さまのお二人は、仲がよろしいのですよね→変更
 [p]
+[主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね……」[p]
+[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お兄さまに恋の相談なんて、気恥ずかしいですが……)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今はそんなことを考えている場合では、ないですよね)[p]
 ;○四条家の日常をみてプレイヤーが同調する形
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。さっそくお手紙を書いてみます」
 
