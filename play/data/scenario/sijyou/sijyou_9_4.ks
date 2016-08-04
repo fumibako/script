@@ -288,6 +288,7 @@
 [playbgm storage="kinpaku_issen.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 「！？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
