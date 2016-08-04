@@ -204,7 +204,10 @@
 [主人公目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「僕達も手を繋ごうか？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
+……[p]
+;(どうしましょう……)
 ;△好感度で変更しても？？
 ;[四条微笑み]
 ;*【２】
