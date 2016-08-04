@@ -30,6 +30,8 @@
 ;[glink target="test4" text="財前テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=310 color=white]
 
 
+[glink target="test5" text="表情テスト：主人公" graphic="select_waku_x500.png" size=20 width="500" x=100 y=380 color=white]
+
 ;[glink target="haikei" text="背景テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=400 color=white]
 
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="500" x=100 y=500 color=white]
@@ -49,6 +51,10 @@
 
 *test4
 @jump storage="test_zaizen.ks"
+[s]
+
+*test5
+@jump storage="test_girl.ks"
 [s]
 
 *haikei
