@@ -37,8 +37,9 @@
 「磯野、お父さまから何かきいているかしら？」[p]
 [whosay name="磯野" color="dimgray"]
 「とくには」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
 ;目を閉じて悩み考える表情へ
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ……[p]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、」[p]
@@ -47,7 +48,7 @@
 「四条家とは旧知の仲」[p]
 [whosay name="磯野" color="dimgray"]
 「なんの連絡も無しに婚約を破棄することは、ないと思われます」[p]
-;一旦主人公を表示なしにする
+;一旦主人公を表示なしにする visivle=falseにしたい
 ;[暗転]
 ;○四条の苦悩シーン
 [whosay name="四条母" color="#9B608B"]
