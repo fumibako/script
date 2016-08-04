@@ -20,7 +20,7 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。下がって頂戴」[p]
-ここまで共通
+;ここまで共通
 ;○文矢バット手紙
 [名前]へ
 華織を呼び出そうとしました。[r]
@@ -34,7 +34,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そんな……」
+「そんな……」[p]
 [主人公退場]
 #
 ;ナレーター
