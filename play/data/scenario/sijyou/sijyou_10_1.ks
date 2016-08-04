@@ -50,6 +50,7 @@
 「なんの連絡も無しに婚約を破棄することは、ないと思われます」[p]
 ;一旦主人公を表示なしにする
 [主人公退場]
+;場面転換早すぎですが、背景変更でウエイトがあれば、違和感ないかもしれません
 ;[暗転]
 一方、そのころ四条邸では[p]
 ;○四条の苦悩シーン
@@ -92,8 +93,12 @@
 ;△文矢さまと四条さまのお二人は、仲がよろしいのですよね→変更
 [p]
 [主人公伏目パチ1回]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね……」[p]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お兄さまに恋の相談なんて、気恥ずかしいですが……)[p]
