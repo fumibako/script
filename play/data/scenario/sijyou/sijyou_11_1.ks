@@ -37,13 +37,14 @@
 「とても心配しました」[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]、心配かけてごめん」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「お気になさらずに私は華織さまと共に歩もうと、あの時に決めたのですから」[p]
-;このままだと主人公が強気になってしまうので、やや微笑んで自身の言葉に照れる感じ
 [主人公口ほほえみ]
 [wait time=10]
 [主人公頬染め]
 [wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「お気になさらずに私は華織さまと共に歩もうと、あの時に決めたのですから」[p]
+;このままだと主人公が強気になってしまうので、やや微笑んで自身の言葉に照れる感じ
+;表情変更タイミングが掴めてない
 [whosay name="華織" color="olivedrab"]
 「[名前]？」[p]
 ;△↑セリフが思いつきません いいのかな
@@ -60,15 +61,18 @@
 ;主人公笑うか通常で。あまり強気な性格ではない。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私と華織さまは夫[ruby text="め"]婦[ruby text="おと"]となる方です」
+;口は閉じたほほえみ
 [主人公ほほえみ]
 [wait time=10]
 [p]
 ;☆キャラの気づき 四条が主人公が頑張っていることに気づく
 ;主人公通常の表情
+[whosay name="華織" color="olivedrab"]
+「[名前]、
 [主人公通常]
 [wait time=10]
-[whosay name="華織" color="olivedrab"]
-「[名前]、貴方は本当に僕が思っている以上のお人のようだ」[p]
+;名前を呼ばれてから変更した方がいいかも？
+貴方は本当に僕が思っている以上のお人のようだ」[p]
 [whosay name="華織" color="olivedrab"]
 「僕の話を聞いてくれますか？」[p]
 ;賢い感じの笑顔
@@ -79,6 +83,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 ;[暗転]→[料亭]
+#
+・・・[p]
+;仮でつけてます↑
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -107,10 +114,19 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。どこまでもご一緒に」[p]
-;△以下の文は、つけてたほうが自然？
-;[whosay name=文矢 color="#538a8a"] 「[名前]はウチに来たことにしておくよ。それでウチの家令をつけておく」[p]
-;「それからキミ(華織)と僕が頼んだ料理は食べておくね」
-;[whosay name=&sf.girl_namae color="#cf5a7f"] (お兄さま……)[p]
+;△以下の文は、つけてたほうが自然？ i息抜きを兼ねてつけてみます。
+[whosay name=文矢 color="#538a8a"] 
+「[名前]はウチに来たことにしておくよ。それでウチの家令をつけておく」[p]
+「それからキミ(華織)と僕が頼んだ料理は食べておくね」
+;一度はプレイヤーの驚きと同調して困った表情をする主人公（あはは……；）といった感じ？
+[主人公困りほほえみ]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"] (お兄さま……)[p]
+;けど兄妹なので言いたいことはわかっている。素直に真摯に笑顔になる主人公
+[主人公眉通常]
+[wait time=10]
+[主人公ほほえみ]
+[wait time=10]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"](ありがとうございます)[p]
 
 ;○急いで！のイメージ
