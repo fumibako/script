@@ -25,7 +25,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織さまは、やっぱり私のことを妹みたいなもので……
 ;疑心暗鬼の表情
-[主人公強気眉]
+[主人公真剣]
 [wait time=10]
 [主人公口ふぅ]
 [wait time=10]
