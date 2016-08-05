@@ -26,9 +26,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま」[p]
 [whosay name="華織" color="olivedrab"]
-[名前]！
+！[p]
+;二回も名前を呼ぶと、次のセリフがよくわからないのでナシに。
 [whosay name="華織" color="olivedrab"]
-「……[名前]」[p]
+「……[名前]、」[p]
+;華織。謝りたいが言葉が出ず、気を遣って先に主人公が話す
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま、私は怒ってはいません」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -37,25 +39,48 @@
 「[名前]、心配かけてごめん」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お気になさらずに私は華織さまと共に歩もうと、あの時に決めたのですから」[p]
+;このままだと主人公が強気になってしまうので、やや微笑んで自身の言葉に照れる感じ
+[主人公口ほほえみ]
+[wait time=10]
+[主人公頬染め]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「[名前]？」[p]
 ;△↑セリフが思いつきません いいのかな
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「何度かお出かけする内、何気ないたくさんの御文」[p]
+;目を閉じて回想する主人公
+[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さまの優しさが感じとられ、私も華織さまの優しさになりたいと思いました」[p]
+;主人公優しい表情
+[主人公目を開く]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうか1人で考えこまないで下さい」[p]
+;主人公笑うか通常で。あまり強気な性格ではない。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「私と華織さまは夫[ruby text="め"]婦[ruby text="おと"]となる方です」[p]
+「私と華織さまは夫[ruby text="め"]婦[ruby text="おと"]となる方です」
+[主人公ほほえみ]
+[wait time=10]
+[p]
 ;☆キャラの気づき 四条が主人公が頑張っていることに気づく
+;主人公通常の表情
+[主人公通常]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「[名前]、貴方は本当に僕が思っている以上のお人のようだ」[p]
 [whosay name="華織" color="olivedrab"]
 「僕の話を聞いてくれますか？」[p]
+;賢い感じの笑顔
+[主人公頬染め]
+[wait time=10]
+[主人公口笑顔]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 ;[暗転]→[料亭]
+[主人公通常]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「それで、華衣さまは
 まだ帰って来られてないのですね」[p]
@@ -76,6 +101,10 @@
 「……の家に行ってみるべきか」[p]
 [whosay name="華織" color="olivedrab"]
 「遠い場所だけど一緒に付いてきてくれるかい？」[p]
+[主人公頬染め]
+[wait time=10]
+[主人公口笑顔]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。どこまでもご一緒に」[p]
 ;△以下の文は、つけてたほうが自然？
