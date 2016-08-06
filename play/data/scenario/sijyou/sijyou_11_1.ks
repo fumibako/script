@@ -310,7 +310,7 @@
 [whosay name="華織" color="olivedrab"]
 「何か見つけたのかい？」[p]
 ;有効なものかわからず、やや自信なさげな表情でもあり。急に呼ばれて驚いて。
-[主人公驚き]
+[主人公驚]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい」[p]
@@ -337,7 +337,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あっ！」[p]
-#;ナレーター
+#
+;ナレーター
 手記を開いた途端、四角く折られた青紫紙が落ちた。[p]
 [whosay name="華織" color="olivedrab"]
 「なにか落ちたようだ」[p]
