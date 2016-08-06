@@ -18,8 +18,9 @@
 
 [whosay name="？？？" color=%mp.color]
 「四条家の華織は遊び人だ、お見合いはやめておくんだな」[p]
+[主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「えっ？！ 」[p]
+「えっ？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (いってしまいまわれました)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
