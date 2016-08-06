@@ -11,6 +11,9 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
