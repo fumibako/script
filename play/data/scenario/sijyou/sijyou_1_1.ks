@@ -13,12 +13,17 @@
 [chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
 [whosay name="磯野" color="dimgray"]
 「[名前]さま、;お嬢様、
 『四条華織』さまからお手紙が届いております。」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ありがとう。[p]
+
+[主人公退場]
 #
 ;○四条手紙 正月はがき？
 お健やかに新年をお迎えのこととお慶び申し上げます。[r]
