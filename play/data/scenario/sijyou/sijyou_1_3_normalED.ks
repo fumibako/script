@@ -17,50 +17,80 @@
 [主人公目パチ1回]
 [wait time=10]
 
-;[whosay name="磯野" color="dimgray"] お嬢様、四条華織さまがお迎えに来られました
-;[whosay name=&sf.girl_namae color="#cf5a7f"] わかったわ。すぐ参りますとお伝え下さい
-;[whosay name="磯野" color="dimgray"] はい、それでは
-;[whosay name=&sf.girl_namae color="#cf5a7f"] 待って、磯野
-;[whosay name="磯野" color="dimgray"] はい
-;[whosay name=&sf.girl_namae color="#cf5a7f"] 帯留めや髪飾りの位置は大丈夫でしょうか？
-;[whosay name="磯野" color="dimgray"] はい
-;[whosay name="磯野" color="dimgray"] ですが、お嬢様
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-な、何ですか？
+[whosay name="磯野" color="dimgray"] 
+;お嬢様
+[名前]様、四条華織さまがお迎えに来られました。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+わかったわ。すぐ参りますとお伝え下さい。[p]
+[whosay name="磯野" color="dimgray"] 
+はい、それでは[p]
+[主人公真剣]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+待って、磯野[p]
+[whosay name="磯野" color="dimgray"] 
+はい[p]
+[主人公困り]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+帯留めや髪飾りの位置は大丈夫かしら？[p]
+[whosay name="磯野" color="dimgray"] 
+はい。大丈夫でございます。お綺麗ですよ。[p]
+[whosay name="磯野" color="dimgray"] 
+ですが、お嬢様[p]
+[主人公口開]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+な、何ですか？[p]
 ;[whosay name="磯野" color="dimgray"]
-もう、そのようなことを気にする関係でもないのではないでしょうか？
+もう、そのようなことを気にする関係でもないのではないでしょうか？[p]
 ;△健全ですよ！
-;[whosay name=&sf.girl_namae color="#cf5a7f"] ……[主人公照れ]か[主人公汗]
-;[whosay name="磯野" color="dimgray"] お嬢様、行ってらしゃいませ
-;[whosay name="磯野" color="dimgray"](少し、寂しくなりますね)
+[主人公照れ]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+……[p]
+[whosay name="磯野" color="dimgray"] 
+お嬢様、行ってらしゃいませ。[p]
+;しっかりした大人になっていく感じ主人公の表情
+[主人公通常]
+[主人公口笑顔]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+行ってきます[p]
+[主人公退場]
+[whosay name="磯野" color="dimgray"]
+(少し、寂しくなりますね)[p]
+
+
 ;¥¥¥¥¥¥¥¥イベント7¥¥¥¥¥¥¥¥
 ;○解決の知らせ→料亭などで落ち合うことに。
 ;☆フィナーレ（結末。主人公の勝利）
 ;○悩み(真実)についての独白とその後の悩みの変化が語られ主人公に感謝する。四条には主人公しかいない等と言って改めて告白
 ;[料亭]
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
+[主人公目パチ1回]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 お義さんには許可をもらって来ましたか？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-はい。
-『もう一緒になるのだから好きにしなさい』といってました。
+はい。[r]
+『もう一緒になるのだから好きにしなさい』といってました。[p]
 [whosay name="華織" color="olivedrab"]
-一緒か
+一緒か[p]
 ;○華織、しみじみと振り返るか笑顔で
 [whosay name="華織" color="olivedrab"]
-そうだね……[名前]と出逢えてよかったと思う
+そうだね……[名前]と出逢えてよかったと思う[p]
 [whosay name="華織" color="olivedrab"]
-僕は[名前]と再会する前は、ずっと妹のような箱入り娘だと思っていたよ。
+僕は[名前]と再会する前は、ずっと妹のような箱入り娘だと思っていたよ[p]
 [whosay name="華織" color="olivedrab"]
-それに (華衣に悪いと思って)返事も素っ気なかったよね
+それに (華衣に悪いと思って)返事も素っ気なかったよね[p]
 ;[whosay name="華織" color="olivedrab"]
-;([名前]への態度も、きっと失ったものへの代替だったかもしれない)
+;([名前]への態度も、きっと失ったものへの代替だったかもしれない)[p]
 [whosay name="華織" color="olivedrab"]
-今、思っても[名前]には失礼なことをしていたと反省している
+今、思っても[名前]には失礼なことをしていたと反省している[p]
 ;△主人公の反応は、いる？
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;(いえ、その後のお手紙は沢山頂きましたので楽しかったです)
+;(いえ、その後のお手紙は沢山頂きましたので楽しかったです)[p]
 [whosay name="華織" color="olivedrab"]
-もちろん、今では、貴方のことを芯の強さ持った素敵な女性だと思っている
+もちろん、今では、貴方のことを芯の強さ持った素敵な女性だと思っている[p]
 [whosay name="華織" color="olivedrab"]
 時折、みせてくれる素の可愛らしい部分も含めて[p]
 ;○必要に応じて[p]ではなくてウェイト[er]？
@@ -68,25 +98,30 @@
 僕は[名前]のことが好きなんだ[p]
 [whosay name="華織" color="olivedrab"]
 [名前]に先を越されてしまいましたが改めて言わせて下さい[p]
-;○(親の言われるままに婚約したので告白の言葉は送っていなかった)
+;○親の言われるままに婚約したので告白の言葉は送っていなかった
 [whosay name="華織" color="olivedrab"]
 愛しています。[名前]さんと共に歩みたい[p]
+[主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ……はい[p]
 ;○2人手をとって、共に歩むことを決意する
 [whosay name="華織" color="olivedrab"]
 「よかった」[p]
+[主人公照れ目普通]
 ;[華織笑顔]
 [whosay name="華織" color="olivedrab"]
 「そうだ。せっかく、お義父さまのお許しを得たのだから、お出かけをしましょうか」[p]
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
 [whosay name="華織" color="olivedrab"]
 「これからは記念日ごとに帯留めを買おう」[p]
 ;○華織は、妹のことを思い出し。これから、戦争や病気などで別れあるかもしれないと思って。
 ;冬のしんとした寒さの中、2つの暖かな吐息がほんわりと並び、次の季節に思いを馳せる。
-;[whosay name="華織" color="olivedrab"](あの人に負けないほどの恋を)[p]
-;[whosay name="華織" color="olivedrab"]([名前]さんと綴っていけたらいいな)[p]
+[whosay name="華織" color="olivedrab"]
+(あの人に負けないほどの恋を)[p]
+[whosay name="華織" color="olivedrab"]
+([名前]さんと綴っていけたらいいな)[p]
 
 ;△ノーマルエンドと分けるならここで切ってみるのは如何でしょうか？
 ;¥¥¥¥¥¥¥¥イベント7おわり¥¥¥¥¥¥¥¥
