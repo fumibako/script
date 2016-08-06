@@ -4,8 +4,16 @@
 ;×日程の調整によって変更してもokです。
 ;手紙はなくても？
 ;△手紙バージョン
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
 [chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
+
 [whosay name="磯野" color="dimgray"]
 「[名前]さま、;お嬢様、
 『四条華織』さまからお手紙が届いております。」[p]
