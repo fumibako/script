@@ -10,7 +10,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-
+;考える、迷う→暗闇→夜になってますが夜に家令が入ってきてもいいのかな
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
@@ -65,6 +65,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。下がって頂戴」[p]
 ;/////手紙///
+
+[手紙四条 fumi_number=]
 [名前]へ[r]
 華織は、いつも笑顔で、自身のことは語りたがりませんだから『人に対して遊んでる』と思われがちです。[r]
 ですが、とても人に親切な方です。[r]
@@ -73,6 +75,8 @@
 華織は傷つけられることはあっても、誰かを傷つけることはしないと思うんだ。[r]
 [名前]は華織のことをどう思う？[r]
 どうしたい？[p]
+[手紙四条読了 fumi_number=]
+
 [主人公目閉じ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
