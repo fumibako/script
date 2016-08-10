@@ -10,17 +10,27 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+#
 
 [主人公ポーズ通常]
 [主人公通常]
 
-#
 行き交う足音、[r]
 子供たちの明るく元気な声が響く。[p]
+;【SE】子供たち
+[playse storage=kodomotachi.ogg loop=false ]
+
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;【BGM】筍の訪れ(町
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
+
 [主人公目パチ1回]
 
 ;【BGM】筍の訪れ(町
-#子供たち
+[whosay name="子供たち" color=%mp.color]
 「かごめかごめ籠の中の鳥は……」[p]
 
 ;【立ち絵】主人公 驚
@@ -43,10 +53,12 @@
 ;【立ち絵】葛城宮 通常
 「皆すまない、私はそろそろ抜けるが、[r]
 [sp]みんなで仲良く遊んでるんだぞ！」[p]
+;【SE】子供たち
+[playse storage=kodomotachi.ogg loop=false ]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-#子供たち
+[whosay name="子供たち" color=%mp.color]
 「えー！ お兄ちゃんもっと遊んで！」[p]
 
 [主人公目パチ1回]
@@ -56,7 +68,7 @@
 [sp]私は用事があるのでな。[r]
 [sp]君たちは皆で仲良く遊べるだろう？」[p]
 
-#子供たち
+[whosay name="子供たち" color=%mp.color]
 「わかった。[r]
 [sp]今度また遊びを教えてちょうだいね。」[p]
 
@@ -145,13 +157,15 @@
 [sp]私との手紙のやり取りについて[r]
 [sp]どう思っているのだ？」[p]
 
-[主人公目パチ1回]
-;【立ち絵】主人公 通常
-[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「恐れ多いことだと……」[p]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+;【立ち絵】主人公 通常
+[主人公目を開く]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -182,6 +196,8 @@
 [sp]色々なことを考えておられて[r]
 [sp]素晴らしい方だと思っております」[p]
 
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -192,6 +208,8 @@
 [sp]だが私はまだ何もできていない。[r]
 [sp]自分も国も変えたい、そう思い貴族院に入った。[r]
 [sp]この国は四民平等をうたいながら不平等だ」[p]
+;【SE】子供たち
+[playse storage=kodomotachi_warai.ogg loop=false ]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -212,7 +230,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、きっと殿下ほどの強い意志の方なら[r]
 [sp]きっとやり遂げられるでしょう」[p]
-[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 （やはり殿下は私には遠いお方なのだわ）[p]
 
@@ -243,7 +261,14 @@
 「この国をそんな風におっしゃる方は初めてです。[r]
 [sp]そのように思われたのはどうしてですか？」[p]
 
-[主人公通常]
+[if exp="sf.BGM=='ON'"]
+[fadeoutbgm time=3000]
+[endif]
+
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……それは君の父君を通して正式に交際してから話そう。[r]
