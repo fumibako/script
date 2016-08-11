@@ -74,6 +74,10 @@
 ;http://otowabi.com/page/3/?cftsearch%5Bgenre%5D%5B0%5D%5B0%5D=%E5%92%8C%E9%A2%A8&cftsearch_submit=1&_pjax=%23main
 [whosay name="役者 その壱" color=black]
 「これが名高い『波ヶ浦』でございまするぅ～」[p]
+#
+舞台のあらすじは、主家より名刀といわれる刀を求めて献上するようにとの命を受けていたが、若いゆえの過ちを犯し、
+せっかく見つけた刀を、うっかり無くしてしまう。[p]
+それでも、珍道中に巻き込まれながらも、縁あって刀を取り戻す……といった一御家騒動、人情のお話であった。[p]
 ;[SE拍手]
 [playse storage=hakushu.ogg loop=false ]
 [if exp="sf.BGM=='ON'"]
