@@ -52,9 +52,9 @@
 [playse storage=paper_open.ogg loop=false ]
 
 [背景_庭]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公伏目]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「……」
 
 [whosay name=磯野 color="dimgray"]
@@ -190,7 +190,7 @@
 「私などに勿体ないお言葉でございます」[p]
 ;【立ち絵】主人公 目閉じ
 [主人公目閉じ]
-[主人公口閉]
+[主人公口通常]
 純粋にうれしさがこみ上げる[p]
 
 [背景_庭]
