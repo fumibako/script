@@ -67,6 +67,9 @@
 「申し訳ないが、[r]
 [sp]私は用事があるのでな。[r]
 [sp]君たちは皆で仲良く遊べるだろう？」[p]
+[if exp="sf.BGM=='ON'"]
+[fadeoutbgm time=3000]
+[endif]
 
 [whosay name="子供たち" color=%mp.color]
 「わかった。[r]
@@ -76,6 +79,13 @@
 ;【立ち絵】主人公 驚
 [主人公驚]
 「殿下は子供たちとお知り合いなのですか？」[p]
+
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;【BGM】「きずな」
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 [主人公通常]
 ;【立ち絵】葛城宮 通常
@@ -163,11 +173,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「恐れ多いことだと……」[p]
-;【立ち絵】主人公 通常
-[主人公目を開く]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+;【立ち絵】主人公 伏目
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 「けれどお父様も家令も[r]
 [sp]私の意思を尊重して[r]
@@ -183,18 +190,22 @@
 「……君自身は私をどう思っている？」[p]
 [主人公伏目パチ1回]
 
-;【立ち絵】主人公 困り顔
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
-[wait time=10]
+;【立ち絵】主人公 主人公ポーズ両手、驚き、主人公頬染 
+[主人公ポーズ両手]
+[主人公驚]
+[主人公頬染め]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「え！ ……まだわかりませんわ！[l][r]
+[主人公ポーズ通常]
+[主人公照れ目普通]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「まだわかりませんが、[r]
-[sp]お手紙を拝見するたびに[r]
+
+[sp]ですがお手紙を拝見するたびに[r]
 [sp]色々なことを考えておられて[r]
 [sp]素晴らしい方だと思っております」[p]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
