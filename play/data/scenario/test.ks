@@ -27,7 +27,7 @@
 
 [glink target="test3" text="藤枝テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=240 color=white]
 
-;[glink target="test4" text="財前テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=310 color=white]
+[glink target="test4" text="財前テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=310 color=white]
 
 
 [glink target="test5" text="表情テスト：主人公" graphic="select_waku_x500.png" size=20 width="500" x=100 y=380 color=white]
