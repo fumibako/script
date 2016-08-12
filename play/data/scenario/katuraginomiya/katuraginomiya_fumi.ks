@@ -28,9 +28,11 @@
 [sp]君も和歌は好きだろうか？　
 [sp]それから君の趣味も知りたいと思っている。
 [r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]敬具[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
+;[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]敬具[r]
 [r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+;[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]葛城宮　晴仁[p]
 [手紙葛城宮読了 fumi_number=]
 ;=============================================
 ;◆話題への返事◆
