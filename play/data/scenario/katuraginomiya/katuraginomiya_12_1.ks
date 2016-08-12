@@ -61,7 +61,9 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-;【立ち絵】主人公 真剣
+;【立ち絵】主人公 困り
+[主人公困り]
+[主人公口開]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下にお手紙を書きます[r]
 [sp]さすがにこの結果は[r]
