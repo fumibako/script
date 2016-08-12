@@ -25,7 +25,8 @@
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[手紙]
+
+[手紙葛城宮 fumi_number=]
 [font color=navy size=21]
 [名字]　[名前]殿へ [l][r]
 [r]
@@ -46,7 +47,8 @@
 君も体には気をつけて[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[手紙葛城宮読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
