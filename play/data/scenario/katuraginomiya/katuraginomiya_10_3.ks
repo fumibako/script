@@ -10,6 +10,7 @@
 
 [whosay name=磯野 color="dimgray"]
 「葛城宮殿下からの手紙でございます」
+
 ＃
 磯野は憂いた表情で私に手紙を差し出す
 磯野も贈賄事件を重く受け止めている
@@ -19,9 +20,10 @@
 [主人公口開]
 [主人公目パチ1回]
 「ええ、ありがとう」
-[主人公退場]
+
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
+
 [手紙]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
