@@ -12,7 +12,8 @@
 [主人公目パチ1回]
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[手紙]
+
+[手紙葛城宮 fumi_number=]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -33,6 +34,7 @@
 [r]
 謹言
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[手紙葛城宮 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
@@ -78,6 +80,7 @@
 [sp]それでは旦那様にお伝えしに参ります」[p]
 
 数刻後
+
 #浩文
 「話があると聞いた[r]
 [sp]話してごらんなさい。」[p]
@@ -127,7 +130,7 @@
 [sp]忠告も心に留めておきます」[p]
 
 #
-お父様はただ優しく笑ってくれた[p]
+そしてお父様は優しく笑ってくれた[p]
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
