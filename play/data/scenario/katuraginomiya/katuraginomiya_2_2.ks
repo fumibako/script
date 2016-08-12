@@ -54,6 +54,12 @@
 [playse storage=paper_open.ogg loop=false ]
 ;@jump storage="event.ks" target=*event_owari
 
+;【立ち絵】主人公 目閉じ
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
+「・・・・殿下」[p]
+（本当に良かった）[p]
+
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
