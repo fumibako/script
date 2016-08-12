@@ -34,7 +34,7 @@
 [r]
 謹言
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-[手紙葛城宮 fumi_number=]
+[手紙葛城宮読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
