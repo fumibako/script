@@ -1,7 +1,16 @@
 ;=============================================
 ;イベント1回目【財前を選択】9月1週、
 ;=============================================
-[背景_庭]
+;【背景】[背景_庭]
+;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+
 ;【立ち絵】主人公：目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お手紙を交わしている相手の中で[r]
@@ -126,3 +135,5 @@
 [sp] 笑顔でお話できるように）[p]
 
 ;個別ルート前夜終了
+
+;[イベントシーン終了]
