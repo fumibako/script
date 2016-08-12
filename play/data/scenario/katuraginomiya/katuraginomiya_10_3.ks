@@ -8,9 +8,17 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 
+[whosay name=磯野 color="dimgray"]
+「葛城宮殿下からの手紙でございます」
+＃
+磯野は憂いた表情で私に手紙を差し出す
+磯野も贈賄事件を重く受け止めている
+
 [主人公ポーズ通常]
-[主人公通常]
+[主人公憂い]
+[主人公口開]
 [主人公目パチ1回]
+「ええ、ありがとう」
 [主人公退場]
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
@@ -50,7 +58,10 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-
+[背景_庭]
+[主人公ポーズ通常]
+[主人公困り]
+[主人公目パチ1回]
 ;【立ち絵】主人公　困り
 [主人公困り]
 「殿下にお会いして私に何か[r]
