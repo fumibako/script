@@ -52,7 +52,7 @@
 [sp]お手紙心よりお待ちしています。
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp かしこ　　　　　　　　　　　　　　　　　　　　　　　　　
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][名字]　[名前] [p]
-[手紙終了]
+[手紙主人公終了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
