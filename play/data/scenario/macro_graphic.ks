@@ -69,8 +69,24 @@
 [resetfont]
 [endmacro]
 
-;[手紙皇室赤葡萄色]
-[macro name="皇室赤葡萄色"]
+;[手紙華衣婚約者]
+[macro name="手紙華衣婚約者"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_konyakusha.jpg" time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[resetfont]
+[endmacro]
+
+;[手紙皇后さま]
+[macro name="手紙皇后さま"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 
@@ -85,8 +101,8 @@
 [resetfont]
 [endmacro]
 
-;[手紙皇室曙色]
-[macro name="手紙皇室曙色"]
+;[手紙葛城宮妃殿下]
+[macro name="手紙葛城宮妃殿下"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 
