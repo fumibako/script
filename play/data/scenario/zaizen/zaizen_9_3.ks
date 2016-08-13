@@ -303,7 +303,7 @@
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-＃
+#
 庭に着くとまだ緑の美しい日本庭園が広がり[r]
 財前様が自分の隣に招く[p]
 
