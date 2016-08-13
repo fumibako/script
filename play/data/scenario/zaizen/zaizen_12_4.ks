@@ -12,7 +12,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-;[主人公ポーズ通常]
+[主人公ポーズ通常]
+[主人公通常]
 
 ;【立ち絵】財前：真剣
 「今更前大蔵大臣の[r]
