@@ -2,8 +2,8 @@
 ;イベント８回目【新聞に投稿】１月３週
 ;=============================================
 ;【背景】[背景_庭]
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -19,17 +19,19 @@
 「磯野、今日も新聞を[r]
 [sp] 読みたいのだけれどいいかしら？」[p]
 
-＃磯野
+[whosay name="磯野" color="dimgray"]
 「はい、お嬢様、[r]
 [sp] ……銀行も大変なようです」[p]
 
 ;【立ち絵】主人公：憂い
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、そうね」[p]
 
 ;【SE】紙に触れる（パラリ）
 
-[新聞]
+;【新聞】
+[テキスト全画面白文字無背景]
 [sp]現在取り付け騒ぎは全国に広まり、[r]
 また銀行の遅れた体質を浮き彫りにした。[r]
 [sp] 好景気により資産が豊富になった銀行は[r]
@@ -42,15 +44,22 @@
 ３週間の猶予期間を設け、またその他細々とした[r]
 勅令を出し銀行の信頼回復に着手している[p]
 [resetfont]
+
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-[背景_庭]
+;[背景_庭]
 ;【立ち絵】主人公：不安
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……これで落ち着くといいのだけど）[p]
 
-＃細々とした勅令をみても適格なものだ[p]
+#
+細々とした勅令をみても適格なものだ[p]
 
 ;【立ち絵】主人公：不安
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -58,26 +67,30 @@
 [sp] 多分すごく疲れていらっしゃらないかしら）[p]
 
 ;【立ち絵】主人公：目閉じ
+[主人公目閉じ]
 （今すぐ会いたい）[p]
 
 ;【立ち絵】主人公：真剣
+[主人公通常]
 （財前様の銀行も対応に追われている[r]
 [sp] 私に出来ることはないのかしら？[r]
 [sp] 新聞の文章からも事態を重く見て[r]
 [sp] 事態にを収拾しようと書かれている）[p]
 
 ;【立ち絵】主人公：ハッとする
+[主人公驚]
 （採用されるかわらないけれど[r]
 [sp] 私からも読者欄に[r]
 [sp] 投稿してみましょう！）[p]
 
 ;【立ち絵】主人公：真剣
+[主人公通常]
 「磯野、出来るだけ沢山の新聞社の[r]
 [sp] 新聞を集めてもらえるかしら？」[r]
 （一社だけではなく沢山の新聞に出して[r]
 [sp] 国民に落ち着くように訴えてるわ！）[p]
 
-＃磯野
+[whosay name="磯野" color="dimgray"]
 「どうされるのですか？」[p]
 
 ;【立ち絵】主人公：真剣
@@ -85,11 +98,12 @@
 「採用されるかはわかりませんが[r]
 [sp] 読者欄に投稿します」[p]
 
-＃磯野
+[whosay name="磯野" color="dimgray"]
 「新聞社へのお手紙は旦那様と[r]
 [sp] よくご相談の上にになさってください」[p]
 
 ;【立ち絵】主人公：目閉じ
+[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ」[p]
 
