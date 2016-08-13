@@ -53,8 +53,8 @@
 [resetfont]
 [endmacro]
 
-;[手紙茶色びんせん]
-[macro name="手紙茶色びんせん"]
+;[手紙文矢]
+[macro name="手紙文矢"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 
