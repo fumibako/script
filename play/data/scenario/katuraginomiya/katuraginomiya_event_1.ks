@@ -7,22 +7,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-[手紙葛城宮 fumi_number=1]
-
-[font color=navy size=21]
-
-[名字]　[名前]殿へ[l][r]
-[r]
-拝呈　先日は色々と失礼したが[名字]殿が気を[r]
-
-[r]
-[r]
-
-[sp]　　　　　　　　　　　　　　　　　　　　　　　謹言[r]
-[sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-[resetfont]
-[手紙葛城宮読了 fumi_number=1]
-
 #
 [主人公ポーズ通常]
 [主人公通常]
