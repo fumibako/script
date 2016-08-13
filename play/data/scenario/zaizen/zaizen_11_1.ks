@@ -10,7 +10,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-;[主人公ポーズ通常]変更してください～
+[主人公ポーズ通常] 
+[主人公通常]
 
 
 ;【立ち絵】主人公：目閉じ
