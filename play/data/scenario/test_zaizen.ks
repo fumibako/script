@@ -210,9 +210,9 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *test3_4nomal
 [cm]
 [freeimage layer = 26]
-@jump storage="zaizen/zaizen_3_4_nomal.ks"
+@jump storage="zaizen/zaizen_3_4_normal.ks"
 [s]
-;zaizen_3_4_nomal.ks
+;zaizen_3_4_normal.ks
 
 *test_sansaku
 [cm]
