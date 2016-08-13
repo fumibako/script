@@ -61,7 +61,67 @@
 @layopt layer=message0 page=fore visible=true
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
+[resetfont]
+[endmacro]
 
+
+;◆[イベントシーン構築枠茶色]
+[macro name="イベントシーン構築枠茶色"]
+;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+[chara_new name="girl_base" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=15 name="girl_base" time=0]
+[wait time=10]
+[chara_new name="girl_mayu" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=16 name="girl_mayu" time=0]
+[wait time=10]
+[chara_new name="girl_me" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=17 name="girl_me" time=0]
+[wait time=10]
+[chara_new name="girl_kuti" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=18 name="girl_kuti" time=0]
+[wait time=10]
+[chara_new name="girl_emo" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=19 name="girl_emo" time=0]
+[wait time=10]
+[chara_new name="girl_te" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=20 name="girl_te" time=0]
+[wait time=10]
+
+;メッセージ窓画像の仮表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
+[freeimage layer = 14]
+[chara_new name="message_bg" storage="toumei.gif"]
+[chara_show left=1 top=391 layer=14 name="message_bg"]
+
+;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
+[eval exp="f.message_storage='message_bg/frame_brown.png'"]
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png"  storage="macro_etc.ks" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 page=fore visible=true
+[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
+[chara_config ptext="chara_name_area"]
+[resetfont]
 [endmacro]
 
 ;◆[イベントシーン終了]
@@ -84,7 +144,6 @@
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
-
 [endmacro]
 
 
@@ -103,6 +162,20 @@
 [macro name="テキスト全画面白文字"]
 ;背景変更:黒茶・和紙風
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+
+;テキスト全画面
+[font color=white size=27]
+;#
+
+[endmacro]
+
+;◆[テキスト全画面白文字暗]
+[macro name="テキスト全画面白文字暗"]
+;背景変更:黒茶・和紙風(暗)
+[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
