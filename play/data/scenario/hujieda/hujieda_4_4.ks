@@ -85,7 +85,7 @@
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公驚き]
+[主人公驚]
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
