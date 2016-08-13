@@ -2,16 +2,16 @@
 ;イベント1回目【財前を選択】9月1週、
 ;=============================================
 ;【背景】[背景_庭]
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-
-;【立ち絵】主人公：目閉じ
+[主人公ポーズ通常]
+;【立ち絵】主人公：目閉じ[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お手紙を交わしている相手の中で[r]
 一番興味を惹かれるのは財前様だわ）[p]
@@ -73,7 +73,7 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「それは何よりだなぁ。近ごろの[名前]は、活き活きとお稽古しているね」[p]
 
-;【立ち絵】主人公：笑顔頬染め
+;【立ち絵】主人公：笑顔頬染め[主人公頬染め]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。色々と学んで、財前様のお力になれたら……[r]
 [sp]なんてつい、思ってしまうのです。[r]
@@ -83,7 +83,7 @@
 「そうか。では、早速見合いの準備を進めよう……[r]
 [sp] [名前]。美彬君に決めて、本当に良いのだね？」[p]
 
-;【立ち絵】主人公：目閉じ思案
+;【立ち絵】主人公：目閉じ思案[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （正直今の気持ちだけでは不安だわ。[r]
 [sp]けれど一番知りたいと思ったのは財前様……）[p]
@@ -121,7 +121,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そうだ、他の方にも手紙を送らなければ）[p]
 
-;【立ち絵】主人公：目閉じ困り眉
+;【立ち絵】主人公：目閉じ困り眉[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （せっかく長い間楽しい時間を
 [sp] 過ごさせて頂いたのに心苦しいけれど、
@@ -136,7 +136,7 @@
 
 ;個別ルート前夜終了
 
-;;@jump storage="event.ks" target=*event_owari
+;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
 @jump storage="test_zaizen.ks"
