@@ -38,6 +38,7 @@
 「……！　そうか、美彬君か」[p]
 
 ;【立ち絵】主人公：通常
+[whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]にとって、美彬君はどんな人物なのかね？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -55,12 +56,14 @@
 「それは良いことだな」[p]
 
 ;以下共通セリフに戻る
+[whosay name=&sf.father_name color="DarkSlateBlue"]
 「美彬君は真面目で冷静沈着と聞くなぁ。[r]
 [sp] [名前]に良い影響を与えてくれるのだね」[p]
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+
 ;【立ち絵】主人公：通常
 [主人公通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 
 「お父様。私は財前様とお手紙を交わすようになって自分についても[r]
@@ -87,7 +90,6 @@
 [sp]なんてつい、思ってしまうのです。[r]
 [sp]お手紙だけではなく、実際にお会いしてみたいです」[p]
 
-
 [主人公通常]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -104,6 +106,7 @@
 [主人公効果消]
 
 ;【立ち絵】主人公：決意
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。財前様に、決めます」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -111,6 +114,8 @@
 [sp]この事はすぐに先方に伝えよう。文奈からも手紙を送っておくといい」[p]
 
 ;【立ち絵】主人公：通常
+[主人公通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい、わかりました」[p]
 #
 話が終わり、お父様を見送るために立ち上がる。[p]
