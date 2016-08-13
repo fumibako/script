@@ -20,9 +20,13 @@
 ;【BGM】古都に咲く花（プロローグ等）
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 
-;【立ち絵】主人公：横目頬染め、片手を上げている　[主人公頬染め]
+;【立ち絵】主人公：横目頬染め、片手を上げている　
+[主人公頬染め]
+[wait time=10]
 [主人公横目パチ1回]
+[wait time=10]
 [主人公ポーズ指]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……）[p]
 
@@ -34,6 +38,9 @@
 
 ;【立ち絵】主人公：目閉じ頬染め、両手を頬に
 [主人公ポーズ両手]
+[wait time=10]
+[主人公目閉じ]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……まあ！　」[p]
 
@@ -44,6 +51,7 @@
 
 ;【立ち絵】主人公：あせり頬染め
 [主人公ポーズ通常]
+[wait time=10]
 [主人公驚]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -59,7 +67,10 @@
 [preload storage="data/fgimage/kuroda/base_haori_hohosome.png"]
 [wait time=200]
 ;【立ち絵】主人公：通常頬染め
+[主人公ポーズ通常]
 [主人公通常]
+[wait time=10]
+[主人公頬染め]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ほう、[名前]。なかなかの淑女に見えるぞ」[p]
