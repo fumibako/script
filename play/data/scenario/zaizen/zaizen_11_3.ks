@@ -20,10 +20,9 @@
 
 ;【SE】紙に触れる（パラリ）
 ;[テキスト全画面白文字]
-;#
-;[手紙財前 fumi_number=]
+;[手紙]
 
-[手紙]
+[手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
 [sp]拝啓　初霜の候、貴方にはいよいよご清栄の由と存じます[r]
 [r]
@@ -45,7 +44,7 @@
 [r]
 [sp] それでは取り急ぎ失礼します[r]
 [r]
-[sp]敬具[r]
+[sp]　　　　　　　　　　　　　　　　　敬具[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　 財前　美彬[r]
 [sp] 追伸　これから仕事が忙しくなりそうなので[r]
@@ -57,11 +56,15 @@
 [playse storage=paper_open.ogg loop=false ]
 
 ;[背景_庭]
+;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【立ち絵】主人公：眉ひそめ
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （忙しくなる……[r]
 [sp] なんだか胸騒ぎがするわ[r]
 [sp] 良くないことが起こっているのかしら？）[p]
+
 ;【立ち絵】主人公：不安
 （景気が悪くなりつつあるというだけではないの？）[p]
 
