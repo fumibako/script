@@ -37,6 +37,99 @@
 [endmacro]
 
 
+;[手紙主人公]
+[macro name="手紙主人公"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_blue.jpg" time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[resetfont]
+[endmacro]
+
+;[手紙茶色びんせん]
+[macro name="手紙茶色びんせん"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_jiyuuwaku2.jpg" time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[resetfont]
+[endmacro]
+
+;[手紙皇室赤葡萄色]
+[macro name="皇室赤葡萄色"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[resetfont]
+[endmacro]
+
+;[手紙皇室曙色]
+[macro name="手紙皇室曙色"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akebono.jpg" time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[resetfont]
+[endmacro]
+
+;[手紙読了]主人公、茶色便せん、その他共通
+[macro name="手紙読了"]
+[freeimage layer = 29 time=500]
+[if exp="sf.FButton!='OFF'"]
+;機能ボタン表示
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+[endif]
+
+;画面切り替え、手紙画面→通常会話パート
+;【テキスト枠】会話パート用 下部横長
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[resetfont]
+[endmacro]
+
 ;[手紙財前]%fumi_title、%fumi_number指定のこと
 [macro name="手紙財前"]
 ;【SE】パラリ(手紙を開く)
