@@ -52,10 +52,12 @@
 [sp]お手紙心よりお待ちしています。
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp かしこ　　　　　　　　　　　　　　　　　　　　　　　　　
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][名字]　[名前] [p]
-[手紙主人公終了]
+[手紙読了]
 [resetfont]
+
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
+
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -63,9 +65,9 @@
 [主人公目パチ1回]
 
 #
-わたしは琴に向かい、
-琴を弾くしばらく弾き続けた
-ふわっと琴の端に上に鳩が止まる
+わたしは琴に向かい、[r]
+琴を弾くしばらく弾き続けた[r]
+ふわっと琴の端に上に鳩が止まる[p]
 
 ;【SE】鳩の鳴き声
 
