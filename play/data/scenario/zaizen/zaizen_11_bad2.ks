@@ -7,7 +7,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-;[主人公ポーズ通常]
+[主人公ポーズ通常]
+[主人公通常]
 
 ;【立ち絵】主人公：目伏せ悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
