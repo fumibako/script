@@ -11,8 +11,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-
 [主人公ポーズ通常]
+[主人公通常]
+
+[主人公憂い]
 [主人公ため息]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 #
@@ -30,7 +32,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「まあ時子さん！　」[p]
 
-＃
+#
 気づけは時子さんは私の目の前にいた[p]
 
 [whosay name="三宮　時子" color="#c25232"]
