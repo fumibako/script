@@ -1,6 +1,6 @@
-;【背景】～指定なし～
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;【背景】～指定なし　仮で変更してます！～
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -9,31 +9,36 @@
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
-
+[主人公憂い]
 財前様は私の手を解いて言った[p]
 
 ;【立ち絵】財前：冷ややか
+[whosay name="財前美彬" color="#7a65b2"]
 「[名前]さん、礼を言いましょう[r]
 [sp] この件については[r]
 [sp] すっきりしました[r]
 [sp] だが、貴方との婚約は破棄します」[p]
 
 ;【立ち絵】主人公：驚き
+[主人公驚き]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！[r]
 [sp] なぜですか？」[p]
 
 ;【立ち絵】財前：眉ひそめ
+[whosay name="財前美彬" color="#7a65b2"]
 「貴方は私の触れて欲しくない部分に[r]
 [sp] 容赦なく立ち入った[r]
 [sp] 私の妻は私の事に[r]
 [sp] 口出ししない方と決めています」[p]
 
 ;【立ち絵】主人公：落ち込み
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「それは……」[p]
 
 ;【立ち絵】財前：冷ややか
+[whosay name="財前美彬" color="#7a65b2"]
 「もちろん体面を傷つける事無く[r]
 [sp] 婚約を破棄しますのでご安心して下さい」[p]
 
@@ -42,6 +47,7 @@
 [sp] それはひどいわ」[p]
 
 ;【立ち絵】財前：通常
+[whosay name="財前美彬" color="#7a65b2"]
 「私の問題です」[p]
 
 ;暗転?
@@ -69,6 +75,7 @@
 誕生日パーティに呼ばれた[p]
 
 ;【立ち絵】主人公：微笑み
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「本日はお招き頂きありがとうございます」[p]
 
@@ -79,6 +86,7 @@
 [sp] アルベルトの事を引きずっているの？」[p]
 
 ;【立ち絵】主人公：苦笑い
+[主人公困りほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「さあ……ただ何となくかしら？」[p]
 
@@ -89,6 +97,8 @@
 [sp] いるのだけれど変わらないわ」[p]
 
 ;【立ち絵】主人公：困り
+[主人公効果消し]
+[主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですか、[r]
 [sp] 今日も財前様はいらっしゃるのですか？」[p]
@@ -97,6 +107,8 @@
 「いえ、忙しいと断られました」[p]
 
 ;【立ち絵】主人公：ホッとする
+[主人公通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですか。」[r]
 （かち合わなくて良かったわ）[p]
 
@@ -107,6 +119,7 @@
 [sp] 思い切り楽しむといいわ」[p]
 
 ;【立ち絵】主人公：目伏せ微笑み
+[主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとうございます」[p]
 
@@ -116,6 +129,8 @@
 [sp] [名前]さんはこんなに綺麗で心優しいのに」[p]
 
 ;【立ち絵】主人公：目伏せ微笑み
+[主人公困り]
+[主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私の事はいいのです」[p]
 
