@@ -29,7 +29,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [wait time=10]
 [ptext text="財前 美彬ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
 [ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
-[ptext text="作業中＝9月4週　それより後はほぼいただいたファイルそのままの状態です" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext text="作業中＝9月1週　それより後はほぼいただいたファイルそのままの状態です" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
 
 
