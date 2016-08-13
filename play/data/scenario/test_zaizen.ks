@@ -38,7 +38,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test10_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test11_1_bad" text="11月1週bad" graphic="select_waku_x500.png" size=20 width="250"x=100 y=350 color=white]
+[glink target="test11_1_bad" text="11月1週bad" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test11_1_2" text="11月1週_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="test11_bad2" text="11月bad2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 [glink target="test11_1_3" text="11月1週_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
