@@ -43,7 +43,7 @@
 [sp]それでは用件のみですが失礼いたします[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [resetfont]
 [手紙財前読了 fumi_number=]
 
@@ -53,7 +53,7 @@
 ;[背景_庭]
 ;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（そろそろ時間ね）
+（そろそろ時間ね）[p]
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様、財前様がお見えになりました」[p]
@@ -77,7 +77,7 @@
 
 ;【立ち絵】財前：通常
 「今日は少し風が冷たい[r]
-[sp] 寒くありませんか？」
+[sp] 寒くありませんか？」[p]
 
 ;【立ち絵】主人公：目閉じ思案
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -200,7 +200,7 @@
 [sp] 同伴する約束をしたので出席して頂きます」[p]
 
 ;【立ち絵】主人公：驚き
-[主人公驚き]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！」[r]
 （まさかこんな早くに[r]
