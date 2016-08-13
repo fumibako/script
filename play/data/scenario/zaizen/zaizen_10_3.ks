@@ -251,7 +251,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_zaimae.ks"
+@jump storage="test_zaizen.ks"
 [s]
 
 *window_close
