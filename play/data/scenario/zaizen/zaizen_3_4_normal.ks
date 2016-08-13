@@ -10,14 +10,16 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-;[主人公ポーズ通常]
+[主人公ポーズ通常]
+[主人公通常]
 
+[主人公ほほえみ]
 ;【立ち絵】主人公：微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様の手紙の描き方が柔らかくなったわ）[p]
 ;【SE】紙に触れる（カサ）
 
-[手紙]
+[手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
 [sp]拝啓　春草萌えいづる季節を迎え[r]
 貴方にはいかがお過ごしですか？[r]
@@ -36,11 +38,13 @@
 [r]
 [sp]それでは返信をお待ちしております。[r]
 [sp] 浅春の折、穏やかにお過ごし下さい
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp] [sp][sp] 敬具[r]
+[sp]敬具[r]
 [r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]財前　美彬[p]
-[sp]?
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]
 [resetfont]
+[手紙財前読了 fumi_number=]
+
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
