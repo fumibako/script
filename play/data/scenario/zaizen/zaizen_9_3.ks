@@ -2,8 +2,8 @@
 ;イベント２回目【両家顔合わせ】9月3週、
 ;=============================================
 ;【背景】主人公邸_庭
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -20,7 +20,7 @@
 ;【BGM】古都に咲く花（プロローグ等）
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 
-;【立ち絵】主人公：横目頬染め、片手を上げている
+;【立ち絵】主人公：横目頬染め、片手を上げている　[主人公頬染め]
 [主人公横目パチ1回]
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -34,7 +34,7 @@
 
 ;【立ち絵】主人公：目閉じ頬染め、両手を頬に
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「……まあ！　」
+「……まあ！　」[p]
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様、ご準備はよろしいですか？」[p]
