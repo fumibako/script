@@ -30,7 +30,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……）[p]
 
-?[whosay name="ばあや" color="#916565"]
+[whosay name="ばあや" color="#916565"]
 
 「そんなに鏡を何度も確かめなくとも[r]
 [sp] お嬢様はどこもおかしくありません、[r]
