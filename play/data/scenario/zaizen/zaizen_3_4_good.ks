@@ -198,7 +198,7 @@ CG差分（財前目閉じ、主人公目閉じ）
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_zaimae.ks"
+@jump storage="test_zaizen.ks"
 [s]
 
 *window_close
