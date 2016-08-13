@@ -2,8 +2,8 @@
 ;イベント5.5回目【財前からの手紙】11月３週、
 ;=============================================
 ;【背景】[背景_庭]
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -45,19 +45,18 @@
 [r]
 [sp] それでは取り急ぎ失礼します[r]
 [r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp] [sp][sp] 敬具[r]
+[sp]敬具[r]
 [r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]財前　美彬[r]
+[sp]　　　　　　　　　　　　　　　　　　　 財前　美彬[r]
 [sp] 追伸　これから仕事が忙しくなりそうなので[r]
 お手紙のお返事は暫く返せなくなるかもしれません[p]
 [resetfont]
-
-;[手紙財前読了 fumi_number=]
+[手紙財前読了 fumi_number=]
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-[背景_庭]
+;[背景_庭]
 ;【立ち絵】主人公：眉ひそめ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （忙しくなる……[r]
