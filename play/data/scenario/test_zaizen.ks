@@ -50,6 +50,22 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 
 [glink target="test1_3_1" text="1月3週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test1_3_2" text="1月3週_2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="page2" text="２ページ目" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=pink]
+;色は変えてください・・・
+
+@jump target=*common
+;１ページ目の表示を共通部分をみせて終わらせます
+
+;２ぺージ目の表示
+*page2
+[glink target="test2_1" text="2月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test3_4good" text="3月4週good" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test3_4nomal" text="3月4週nomal" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="test" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=pink]
+@jump target=*common
+;２ページ目の表示を共通部分をみせて終わらせます
+
+*common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=450 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [s]
@@ -176,14 +192,14 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;zaizen_1_3_2.ks
 
 
-*2_1
+*test2_1
 [cm]
 [freeimage layer = 26]
 @jump storage="zaizen/zaizen_2_1.ks"
 [s]
 ;zaizen_2_1.ks
 
-*3_4_good
+*test3_4good
 [cm]
 [freeimage layer = 26]
 @jump storage="zaizen/zaizen_3_4_good.ks"
@@ -191,7 +207,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;zaizen_3_4_good.ks
 
 
-*3_4_nomal
+*test3_4nomal
 [cm]
 [freeimage layer = 26]
 @jump storage="zaizen/zaizen_3_4_nomal.ks"
@@ -210,6 +226,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 @jump storage="sijyou/sijyou_fumi.ks"
 ;見当たらず未
 [s]
+
 
 
 
