@@ -149,6 +149,27 @@
 
 ;◆[テキスト全画面白文字無背景]
 [macro name="テキスト全画面白文字無背景"]
+;名前欄消去
+[whosay name=""]
+;主人公顔グラ消去
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+;攻略対象立ち絵消去
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 13]
+;会話ウィンドウ消去
+[freeimage layer = 14]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 
@@ -160,6 +181,27 @@
 
 ;◆[テキスト全画面白文字]
 [macro name="テキスト全画面白文字"]
+;名前欄消去
+[whosay name=""]
+;主人公顔グラ消去
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+;攻略対象立ち絵消去
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 13]
+;会話ウィンドウ消去
+[freeimage layer = 14]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [wait time=10]
@@ -174,6 +216,27 @@
 
 ;◆[テキスト全画面白文字暗]
 [macro name="テキスト全画面白文字暗"]
+;名前欄消去
+[whosay name=""]
+;主人公顔グラ消去
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+;攻略対象立ち絵消去
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 13]
+;会話ウィンドウ消去
+[freeimage layer = 14]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風(暗)
 [chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
 [wait time=10]
