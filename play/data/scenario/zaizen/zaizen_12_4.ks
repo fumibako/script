@@ -147,9 +147,9 @@
 忙しい中ですが財前様もどうかご自愛ください。[r]
 貴方の事を心から想っています。[r]
 [r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp] [sp][sp]敬具 [r]
+敬具 [r]
 [r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][名字][名前] [p]
+[sp]　　　　　　　　　　　　　　　　　　　　[名字][名前] [p]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
@@ -163,7 +163,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-@jump storage="test_zaimae.ks"
+@jump storage="test_zaizen.ks"
 [s]
 
 *window_close
