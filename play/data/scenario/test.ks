@@ -32,6 +32,8 @@
 
 [glink target="test5" text="表情テスト：主人公" graphic="select_waku_x500.png" size=20 width="500" x=100 y=380 color=white]
 
+[glink target="fumi" text="手紙テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=450 color=white]
+
 ;[glink target="haikei" text="背景テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=400 color=white]
 
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="500" x=100 y=500 color=white]
@@ -59,6 +61,9 @@
 
 *haikei
 @jump storage="test_haikei.ks"
+
+*fumi
+@jump storage="fumi_kuroda.ks"
 
 [s]
 
