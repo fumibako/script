@@ -98,7 +98,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *test11_1_bad
 [cm]
 [freeimage layer = 26]
-@jump storage="zaizen/zaizen_11_1_bad.ks"
+@jump storage="zaizen/zaizen_11_1_bad1.ks"
 [s]
 ;zaizen_11_1_bad.ks
 
