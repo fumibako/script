@@ -62,9 +62,15 @@ if(mp.name=="文矢"){
 }else if(mp.name=="田中　岩男"){
     mp.color = "#775545";
 }else if(mp.name=="財前 美彬"){
-    mp.color = "#4169c1";
+    mp.color = "#929055";
+}else if(mp.name=="財前　美彬"){
+    mp.color = "#929055";
+}else if(mp.name=="財前美彬"){
+    mp.color = "#929055";
 }else if(mp.name=="財前・アルベルト・美彬"){
-    mp.color = "#4169c1";
+    mp.color = "#929055";
+}else if(mp.name=="財前母"){
+    mp.color = "#c2b077";
 }else if(mp.name=="四条"){
     mp.color = "olivedrab";
 }else if(mp.name=="四条 華織"){
@@ -95,7 +101,25 @@ if(mp.name=="文矢"){
     mp.color = "#414180";
 }else if(mp.name=="葛城宮晴仁"){
     mp.color = "#414180";
+}else if(mp.name=="藤枝　肇"){
+    mp.color = "#c0b0f0";
+}else if(mp.name=="藤枝 肇"){
+    mp.color = "#c0b0f0";
+}else if(mp.name=="藤枝肇"){
+    mp.color = "#c0b0f0";
+}else if(mp.name=="郵便屋"){
+    mp.color = "#c0b0f0";
+}else if(mp.name=="藤枝　晶子"){
+    mp.color = "#dda0ff";
+}else if(mp.name=="藤枝 晶子"){
+    mp.color = "#dda0ff";
+}else if(mp.name=="藤枝晶子"){
+    mp.color = "#dda0ff";
 }else if(mp.name=="三宮　時子"){
+    mp.color = "#c25232";
+}else if(mp.name=="三宮 時子"){
+    mp.color = "#c25232";
+}else if(mp.name=="三宮時子"){
     mp.color = "#c25232";
 }else if(mp.name=="お茶屋の娘"){
     mp.color = "#5b7e23";
