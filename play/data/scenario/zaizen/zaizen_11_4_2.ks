@@ -17,7 +17,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、今日の新聞は届いているかしら？」[p]
 
-#磯野
+[whosay name="磯野" color="dimgray"]
 「はい、もうお聞き及びと存じますが[r]
 [sp] 町では多くの銀行が[r]
 [sp] 倒産するという噂で持ち切りです[r]
