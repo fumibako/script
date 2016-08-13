@@ -1,6 +1,6 @@
-;【背景】～指定ありません～
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;【背景】～指定ありません　一時的に書いてます。変更してください～
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -11,35 +11,36 @@
 [主人公通常]
 
 ;【立ち絵】主人公：目伏せ悲しみ
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……はい。そういたします」[r]
 （お母様が心配だけれど財前様の為に[r]
 [sp] はそっとしておくべきなのだわ）[p]
 
-＃
+#
 私は財前様に連れられ[r]
 会場を後にしました[p]
 
 
-暗転
-＃
+;暗転
+#
 私と財前様は交際期間を終えた後[r]
 華燭の典を挙げ財前様は[r]
 私の夫となりました[p]
 
-＃
+#
 夫は仕事を次々に成功させ[r]
 銀行を大きくし、[r]
 私は社交界で夫を支える良き妻だと[r]
 評判になり全てが順調でした[p]
 
-＃
+#
 けれど私は満たされない[r]
 想いを抱えるようになり[r]
 胸の内に寂しさを感じるように[r]
 なりました[p]
 
-ー数年後
+ー数年後[p]
 ;洋館居間
 ;【立ち絵】主人公：目伏せ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -54,6 +55,7 @@
 [sp] 役に立つだけの人形なのだわ。）[p]
 
 ;【立ち絵】財前：通常
+[whosay name="財前美彬" color="#7a65b2"]
 「どうした？少し不満そうだが？」[p]
 
 ;【立ち絵】主人公：目伏せ憂い微笑み
@@ -63,15 +65,17 @@
 [sp]お気おつけていってらっしゃいませ」[p]
 
 ;【立ち絵】財前：通常
+[whosay name="財前美彬" color="#7a65b2"]
 「ああ、行ってくる」[p]
 
-＃
+#
 彼は立ち上がり居間を後にする[r]
 私はそつなく仕事が全てな[r]
 夫の邪魔にならないように[r]
 適度にいたわり、振る舞う[p]
 
 ;【立ち絵】主人公：目閉じ
+[主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （寂しいといえば鬱陶しがられるだろう[r]
 [sp] 夫は割り切った関係を望んでいる[r]
@@ -83,7 +87,7 @@
 [sp] 夫が望む器量の良い[r]
 [sp] 貞淑な妻の役目を果たそう）[p]
 
-bad2終わり
+;bad2終わり
 
 
 ;@jump storage="event.ks" target=*event_owari
