@@ -2,8 +2,8 @@
 ;イベント４回目【薔薇園でのデート】10月3週、
 ;=============================================
 ;【背景】[背景_庭]
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -24,7 +24,7 @@
 
 ;[テキスト全画面白文字]
 ;#
-;[手紙財前 fumi_number=]
+[手紙財前 fumi_number=]
 [手紙]
 [名字]　[名前]様へ[l][r]
 [sp]拝啓　秋麗の候、貴方様には一段とご清栄の由と存じます。[r]
@@ -45,12 +45,12 @@
 [r]
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]財前　美彬[p]
 [resetfont]
-;[手紙財前読了 fumi_number=]
+[手紙財前読了 fumi_number=]
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-[背景_庭]
+;[背景_庭]
 ;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そろそろ時間ね）
@@ -69,7 +69,7 @@
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 
-＃薔薇の花々は咲き誇り[r]
+#薔薇の花々は咲き誇り[r]
 色とりどりの美しさをみせていた[r]
 私たちはゆっくりと歩き[r]
 財前様は私に気を遣うように話しかける[p]
@@ -229,7 +229,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ」[p]
 
-＃
+#
 お見合いでは財前様の後ろを歩いたけれど[r]
 今は隣を歩いている[r]
 財前様をチラッと見ても[r]
@@ -241,7 +241,7 @@
 [sp] そう思ったら胸がちくちくした[r]
 [sp] ……この気持ちは何？）[p]
 
-＃
+#
 風が吹いて薔薇の花びらが舞う[r]
 美しいけど愛おしく切ない風景だわ[r]
 こんな風に感じるのは[r]
