@@ -50,7 +50,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 
 [glink target="test1_3_1" text="1月3週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test1_3_2" text="1月3週_2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="page2" text="２ページ目" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=pink]
+[glink target="page2" text="2ページ目" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
 ;色は変えてください・・・
 
 @jump target=*common
