@@ -49,8 +49,8 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test11_4_2" text="11月4週_2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="test12_4" text="12月4週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 
-[glink target="test1_3_1" text="1月3週_1" graphic="select_waku_x500.png" size=20 width="250"  x=400 y=350　color=white]
-[glink target="test1_3_2" text="1月3週_2" graphic="select_waku_x500.png" size=20 width="250"  x=400 y=400　color=white]
+[glink target="test1_3_1" text="1月3週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test1_3_2" text="1月3週_2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=450 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [s]
