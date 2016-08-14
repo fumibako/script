@@ -2,7 +2,7 @@
 ;イベント1回目【財前を選択】9月1週、
 ;=============================================
 ;【背景】[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
