@@ -3,7 +3,7 @@
 ;=============================================
 ;【背景】[背景洋館居間]
 ;変更してください↓
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
