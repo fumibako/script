@@ -133,7 +133,7 @@
 「……ええ」[p]
 
 ;［背景パーティ会場］
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 #
@@ -235,7 +235,7 @@
 #パーティ客男性
 「貴方のような方が壁の花とは[r]
 [sp] 放っておく男の気が知れません[r]
-[sp] さあ、パーティを楽しみましょう」
+[sp] さあ、パーティを楽しみましょう」[p]
 
 ;【立ち絵】主人公：困り
  [主人公伏目パチ1回]
