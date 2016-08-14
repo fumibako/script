@@ -1,5 +1,5 @@
 ;【背景】～指定なし　仮で変更してます！～
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -68,7 +68,8 @@
 
 ;[背景洋館]
 独逸大使邸[p]
-
+[chara_mod name="bg" storage="bg/test_zaizen_youkan.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 私は財前様のお母様と[r]
 手紙のやりとりをしていて[r]
@@ -97,7 +98,7 @@
 [sp] いるのだけれど変わらないわ」[p]
 
 ;【立ち絵】主人公：困り
-[主人公効果消し]
+[主人公効果消]
 [主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですか、[r]
@@ -148,6 +149,8 @@
 だけどまだそんな気持ちにはなれないのだ[r]
 きっといつかは私も結婚するのだろうけど[p]
 
+[chara_mod name="bg" storage="bg/test_sora.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 私は空を見上げる[r]
 この広い空の下で[r]
