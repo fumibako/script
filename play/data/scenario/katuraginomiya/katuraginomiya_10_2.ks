@@ -27,7 +27,7 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-[新聞]
+[テキスト全画面白文字]
 
 [font color=navy size=21]
 
@@ -48,6 +48,11 @@
 現内閣への国民の反発は大きくなるだろう[p]
 [r]
 [resetfont]
+[イベントシーン構築]
+[背景_庭]
+[主人公ポーズ通常]
+[主人公憂い]
+[主人公目パチ1回]
 
 [whosay name=磯野 color="dimgray"]
 「葛城宮殿下も海軍大佐です[r]
