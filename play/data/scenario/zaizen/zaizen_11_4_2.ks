@@ -31,8 +31,11 @@
 
 
 ;【SE】紙に触れる（スッ）
+[playse storage=paper_open.ogg loop=false ]
 [テキスト全画面白文字無背景]
 ;[新聞]
+[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [sp]実際にはまだ倒産してなかったのに大蔵大臣の[r]
 「志井銀行がとうとう倒産したという発言は波紋を呼び[r]
 海軍高官の贈賄事件から持ち直しかけていた現内閣を[r]
@@ -54,8 +57,8 @@
 [playse storage=paper_open.ogg loop=false ]
 
 ;[背景_庭]
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 ;メッセージをもどします
 #
@@ -79,7 +82,9 @@
 [sp] ますます状況は悪くなる）[p]
 
 ;【SE】ペンで書く
+;[playse storage=paper_open.ogg loop=false ]
 ;【SE】ペンで書く
+;[playse storage=paper_open.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公　通常
