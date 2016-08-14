@@ -2,7 +2,7 @@
 ;イベント２回目【両家顔合わせ】9月3週、
 ;=============================================
 ;【背景】主人公邸_庭
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jp"]
+[chara_mod name="bg" storage="bg/room_niwa.jp"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
