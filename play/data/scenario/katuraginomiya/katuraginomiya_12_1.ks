@@ -37,7 +37,8 @@
 [sp]それはどういう意味かしら？」[p]
 
 [whosay name=磯野 color="dimgray"]
-「これをご覧ください」
+「これをご覧ください」[p]
+
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 [新聞]
@@ -60,6 +61,7 @@
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
+[イベントシーン構築]
 [背景_庭]
 [主人公ポーズ通常]
 [主人公困り]
