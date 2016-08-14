@@ -36,6 +36,8 @@
 [playse storage=paper_open.ogg loop=false ]
 
 ;[新聞]
+[chara_mod name="bg" storage="bg/test_  bg_sinbun_ima.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [テキスト全画面白文字無背景]
 [sp]国の根底を揺るがすこの銀行の取り付け騒ぎについて[r]
 多くの方が、恐慌状態となり、暴動直前までいく騒動となり[r]
@@ -61,6 +63,11 @@
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
+
+;【背景】[背景洋館居間]
+;変更してください↓
+[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [イベントシーン構築枠茶色]
 ;【立ち絵】財前：驚
