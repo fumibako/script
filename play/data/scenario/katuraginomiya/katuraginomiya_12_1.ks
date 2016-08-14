@@ -41,7 +41,7 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 [新聞]
-
+[テキスト全画面白文字]
 [font color=navy size=21]
 [r]
 [sp]内閣不信任決議案が可決し内閣総辞職に！[r]
@@ -60,6 +60,10 @@
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
+[背景_庭]
+[主人公ポーズ通常]
+[主人公困り]
+[主人公目パチ1回]
 
 ;【立ち絵】主人公 困り
 [主人公困り]
