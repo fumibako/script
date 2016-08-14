@@ -1,6 +1,7 @@
-;【背景】[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;【背景】[背景_庭]　
+;［背景パーティ会場］の庭でしょうか
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -17,17 +18,15 @@
 [sp] お母様は私を助けて下さったのです[r]
 [sp]私、心配ですので上の控室に行きます！」[p]
 
+;【背景】暗転黒背景、会話ウィンドウは残る
+[chara_mod name="bg" storage="toumei.gif" time=500]
 #
 財前様をおいて彼女の消えていった方へ[r]
 向かい階段を上がり、人に聞いて[r]
 彼女のいる部屋に向かった[p]
 
-; 背景パーティ会場控室
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
-
 ;【SE】ドアのノックの音
+;[playse storage=paper_open.ogg loop=false ]
 
 ;【立ち絵】主人公：憂い
 [主人公憂い]
@@ -40,6 +39,11 @@
 [sp] ……どうぞ」[p]
 
 ;【SE】カチャ
+;[playse storage=paper_open.ogg loop=false ]
+
+; 背景パーティ会場控室　
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 #
 財前様のお母様は泣いていたようで[r]
