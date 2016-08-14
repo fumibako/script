@@ -142,7 +142,7 @@
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 ;【背景】料亭風の屋内（昼）
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 ;【立ち絵】財前：通常
@@ -170,7 +170,7 @@
 [sp] お父様からちらりとお母様が独逸の方だと聞いたけれど[r]
 [sp] 異国の血が流れているのね）[p]
 
-[財前目パチ1回]
+;[財前目パチ1回]
 [whosay name="財前美彬" color="#7a65b2"]
 「[名字]様、お久しぶりです[r]
 [sp] この度はご息女との縁談の機会を与えて頂き[r]
@@ -320,7 +320,7 @@
 ;【SE】足音複数廊下
 ;[playse storage=""]
 ;［背景庭］
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 #
@@ -414,7 +414,7 @@
 財前様に私は悲しみを覚えた[p]
 
 ;【背景】料亭風の屋内（昼）
-;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=1000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 個室に戻るとお父様と[r]
