@@ -56,8 +56,8 @@
 [r]
 [sp][r]
 [r]
-敬白
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
+[sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 [手紙葛城宮読了 fumi_number=]
  
 [resetfont]
