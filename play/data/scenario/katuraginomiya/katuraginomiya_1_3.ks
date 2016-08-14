@@ -60,7 +60,7 @@
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[主人公手紙]
+[手紙主人公]
 [font color=navy size=21]
 葛城宮　晴仁様へ[l][r]
 [r]
