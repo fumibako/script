@@ -57,7 +57,7 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-;背景_庭
+[背景_庭]
 [主人公ポーズ通常]
 [主人公伏目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -220,8 +220,7 @@
 #数日後
 [resetfont]
 
-[手紙]
-
+[手紙皇后さま]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -242,6 +241,7 @@
 [r]
 敬白
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　皇后　薫子[p]
+[手紙読了]
 [resetfont]
 ;@jump storage="event.ks" target=*event_owari
 
