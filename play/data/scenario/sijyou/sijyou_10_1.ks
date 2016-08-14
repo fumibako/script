@@ -51,8 +51,12 @@
 ;一旦主人公を表示なしにする
 [主人公退場]
 ;場面転換早すぎですが、背景変更でウエイトがあれば、違和感ないかもしれません
-;[暗転]
+;ナレーター
+[テキスト全画面白文字]
 一方、そのころ四条邸では[p]
+[イベントシーン構築枠茶色]
+[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;○四条の苦悩シーン
 [whosay name="四条母" color="#9B608B"]
 「華衣！ 勝手に手紙を捨てるはやめて頂戴！」[p]
@@ -77,10 +81,16 @@
 「華衣！どこ行くの？！」[p]
 
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[イベントシーン構築]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
+[主人公通常]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [wait time=10]
 [主人公困り]
+[wait time=10]
 [主人公目閉じ]
 (どうしましょう)[p]
 [whosay name="磯野" color="dimgray"]
