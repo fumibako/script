@@ -32,6 +32,7 @@
 
 ;【新聞】
 [テキスト全画面白文字無背景]
+[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg" time=50]
 [sp]現在取り付け騒ぎは全国に広まり、[r]
 また銀行の遅れた体質を浮き彫りにした。[r]
 [sp] 好景気により資産が豊富になった銀行は[r]
@@ -45,13 +46,14 @@
 勅令を出し銀行の信頼回復に着手している[p]
 [resetfont]
 
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
+;【背景】[背景_庭]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
-
-;【SE】紙に触れる（パラリ）
-[playse storage=paper_open.ogg loop=false ]
-
 ;[背景_庭]
 ;【立ち絵】主人公：不安
 [主人公憂い]
