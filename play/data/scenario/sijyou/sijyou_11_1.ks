@@ -265,6 +265,8 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「わかりました……お元気で」[p]
+;夕焼け空？
+[chara_mod name="bg" storage="bg/test_sora.jpg"]
 #
 ;ナレーター
 荒れ果てた地の槇の葉に、霧が立ちのぼっていく。[p]
@@ -380,7 +382,7 @@
 ;○華織、主人公に惚れ直し
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「きっと、この中に手がかり(ヒント)があります[」p]
+「きっと、この中に手がかり(ヒント)があります」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 『頭は恋をし寝る。波の音を聞きながら刀を探す。』[p]
 『……その壺には恋を詰めておく。』[p]
