@@ -74,7 +74,7 @@
 [sp]少しの間だけいいです……我ながら女々しいと思うのですが[r]
 貴方様からのお返事を待っています。[r]
 [r]
-[sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]藤枝　肇 [p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 
