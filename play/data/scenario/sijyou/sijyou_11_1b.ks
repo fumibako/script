@@ -179,6 +179,7 @@
 ;○回想シーン
 ;○婚約者さんが四条に妹の好きな花は何？ときいてくる。
 ;[四条家玄関ホール]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=100]
 [whosay name="華織" color="olivedrab"]
 『急にどうしたのですか？ 華衣の好きな花なんてきいて』[p]
 [whosay name="華織" color="olivedrab"]
@@ -191,7 +192,8 @@
 『……君、体調の悪そうだけど大丈夫ですか？』[p]
 [whosay name="華織" color="olivedrab"]
 『待って下さい！ そんな顔色で……せめて明日』[p]
-;[暗点]
+;[暗点]か空
+[chara_mod name="bg" storage="bg/B4nFWraU42/test_sora.jpg" time=100]
 #
 『華衣との婚約解消されたら嫌だった。[r]
 急がないといけない、この想いを綴るには種もほしい』[p]
