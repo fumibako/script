@@ -3,7 +3,7 @@
 ;町で噂を聞く
 ;=============================================
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[chara_mod name="bg" storage="bg/test_machi_sinbunsya.jpg" time=50]
 ;[eval exp="f.haikei_credit='----　by　----　------------ '"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
