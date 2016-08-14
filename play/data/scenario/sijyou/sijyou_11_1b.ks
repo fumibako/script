@@ -200,6 +200,8 @@
 ;ネリネの写真かイメージ,だんだん忘れられて枯れていくといいですね（無理
 #
 ;△病院に運ばれて妹が来たときには時すでに遅し！
+;病院
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_byouin.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
 『もう少ししたら傷も治るよね。そうしたら、ずっと』[p]
 …………[wait time=1500][er]
@@ -223,6 +225,8 @@
 ;結果、妹に恨まれてしまったんだろうなぁとプレイヤーが想像する形
 
 ;回想シーンおわり
+;花園もどる
+[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=100]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公憂い]
