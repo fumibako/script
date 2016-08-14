@@ -118,8 +118,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 
-;背景洋館 全画面文字のみ表示
+;背景洋館 全画面文字のみ表示　まだないので黒背景
 [テキスト全画面白文字無背景]
+[chara_mod name="bg" storage="toumei.gif" time=500]
 [sp] 私の父はこの国の独逸大使でしてね。[r]
 私は蝶よ花よと何不自由なく育てられました。[r]
 [sp] 父は私を自分の部下と結婚することを[r]
@@ -165,6 +166,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 ; 背景パーティ会場控室
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [whosay name="財前母"]
 「そして私達は駆け落ちすることにしたのです。」[p]
 
@@ -179,7 +181,7 @@
 
 ; 港町的な背景　全画面文字のみ表示
 [テキスト全画面白文字無背景]
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="toumei.gif" time=500]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [sp] 樹は森に隠せというように[r]
@@ -199,8 +201,8 @@
 [主人公ポーズ通常]
 [主人公通常]
 
-; 背景パーティ会場控室
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+; 背景パーティ会場控室 まだないので会場と同じものを設置
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [whosay name="財前母"]
@@ -211,7 +213,7 @@
 
 [テキスト全画面白文字無背景]
 ; 呉服屋的な背景 　全画面文字のみ表示
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="toumei.gif" time=500]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [sp] 会社の本社もこちらに移し[r]
@@ -238,7 +240,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 ;［背景控室］
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [whosay name="財前母"]
