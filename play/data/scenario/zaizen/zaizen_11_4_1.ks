@@ -3,7 +3,7 @@
 ;町で噂を聞く
 ;=============================================
 ;背景:町並み
-[chara_mod name="bg" storage="bg/test_machi_sinbunsya.jpg" time=50]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 ;[eval exp="f.haikei_credit='----　by　----　------------ '"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -47,7 +47,9 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_open.ogg loop=false ]
 ;[新聞]
+[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg" time=50]
 [テキスト全画面白文字無背景]
+
 [sp]衆議院予算委員会での大蔵大臣の[r]
 「志井銀行がとうとう倒産した」[r]
 という発言が波紋を呼び今金融不安が表面化している。[p]
@@ -58,7 +60,8 @@
 [r]
 [sp]また首都を中心に取り付け騒ぎに及ぶ所もあり……[p]
 [resetfont]
-
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+;[eval exp="f.haikei_credit='----　by　----　------------ '"]
 ;メッセージをもどします
 [イベントシーン構築]
 #
