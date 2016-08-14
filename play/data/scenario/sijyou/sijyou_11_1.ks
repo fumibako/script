@@ -136,6 +136,7 @@
 ;☆キャラの決意 四条の決意
 ;○京の端町、質素な邸宅がある
 ;[質素な邸宅]和の家
+[chara_mod name="bg" storage="bg/test_mon.jpg"]
 [主人公通常]
 [wait time=10]
 #質屋
@@ -152,6 +153,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「行きましょう」[p]
 ;[暗点]
+[chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [主人公通常]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
@@ -212,6 +214,7 @@
 「はい、」[p]
 ;[暗点]
 ;[土蔵]
+[chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 [主人公通常]
 [wait time=10]
 #華衣の婚約者の母
@@ -229,6 +232,7 @@
 ;場面転換
 ;[暗点]
 ;[寂れた邸宅]
+[chara_mod name="bg" storage="bg/test_mon.jpg"]
 [主人公通常]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
@@ -269,6 +273,7 @@
 
 ;場面転換
 ;[暗点][料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [主人公通常]
 [wait time=10]
 ;○ 道具をひろげて確認 妹はまだ見つかってないか確認
