@@ -1,5 +1,5 @@
 ;【背景】～指定ありません　一時的に変更してます～
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -91,7 +91,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「何でもありませんわ」[p]
 
-#財前母
+[whosay name="財前母"]
 「まだパーティは続いています[r]
 [sp] 貴方達も一曲踊ってはどうかしら？」[p]
 
@@ -99,7 +99,7 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「またどうしてそんなことを？」[p]
 
-#財前母
+[whosay name="財前母"]
 「アルベルト、たまにはパーティに華を[r]
 [sp] 添えるのもいいでしょう？[r]
 [sp] 立ち話ばかりも何だし[r]
@@ -110,7 +110,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私は踊ったことありません」[p]
 
-#財前母
+[whosay name="財前母"]
 「アルベルトのリードは上手よ[r]
 [sp] [名前]さんも簡単なステップぐらいなら[r]
 [sp] すぐ覚えれるでしょう」[p]
@@ -119,7 +119,7 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「……よくご存じで」[p]
 
-#財前母
+[whosay name="財前母"]
 「社交界は広いようで狭いわ[r]
 [sp] いつも貴方の事を気にかけてました」[p]
 
@@ -130,7 +130,7 @@
 「私は貴方に対してわだかまりが[r]
 [sp] 完全に消えた訳ではありません」[p]
 
-#財前母
+[whosay name="財前母"]
 「ええ、でもこれからは[r]
 [sp] わだかまりが消えるように[r]
 [sp] 努力するつもりよ」[p]
