@@ -61,7 +61,8 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test2_1" text="2月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test3_4good" text="3月4週good" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test3_4nomal" text="3月4週nomal" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=pink]
+[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=pink]
 @jump target=*common
 ;２ページ目の表示を共通部分をみせて終わらせます
 
@@ -223,7 +224,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *test_fumi
 [cm]
 [freeimage layer = 26]
-@jump storage="sijyou/sijyou_fumi.ks"
+@jump storage="zaizen/zaizen_fumi.ks"
 ;見当たらず未
 [s]
 
