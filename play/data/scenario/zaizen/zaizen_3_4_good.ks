@@ -86,7 +86,7 @@
 お祖母様も私を気にって下さった[p]
 
 ;背景洋館居間
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 ;[主人公通常]
