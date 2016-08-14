@@ -36,7 +36,7 @@
 [playse storage=paper_open.ogg loop=false ]
 
 ;[新聞]
-[chara_mod name="bg" storage="bg/test_  bg_sinbun_ima.jpg"]
+[chara_mod name="bg" storage="bg/test_bg_sinbun_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [テキスト全画面白文字無背景]
 [sp]国の根底を揺るがすこの銀行の取り付け騒ぎについて[r]
