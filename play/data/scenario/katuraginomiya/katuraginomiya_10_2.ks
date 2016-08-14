@@ -1,12 +1,12 @@
 ;６回目イベント
-[背景_庭]
+
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-
+[背景_庭]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
@@ -62,7 +62,11 @@
 [sp]…… 心配だわ」[p]
 [主人公退場]
 
-;背景会議室
+;【テキスト全画面】黒茶・和紙風背景(暗)に白文字
+[テキスト全画面白文字暗]
+ 同時刻
+ 与党会議室
+[イベントシーン構築枠茶色]
 ;【立ち絵】葛城宮　怒り
 「どういうことですか今原中将！」[p]
 
