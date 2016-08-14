@@ -168,7 +168,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　[名字][名前] [p]
 [resetfont]
-[手紙主人公読了 fumi_number=]
+[手紙読了]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
