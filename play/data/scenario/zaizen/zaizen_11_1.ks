@@ -95,6 +95,8 @@
 「ええ」[p]
 
 ;［背景玄関］
+[chara_mod name="bg" storage="bg/test_mon.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【立ち絵】財前：ハッとする
 [whosay name="財前美彬" color="#7a65b2"]
 「……」[p]
