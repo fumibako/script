@@ -65,7 +65,7 @@
 [whosay name="四条祖父" color="#888898"]
 「お前さんには、もっと良い相手を見繕ってくる！」[p]
 [whosay name="四条祖父" color="#888898"]
-「だから[苗字]家の手紙を返すんだ！」[p]
+「だから[名字]家の手紙を返すんだ！」[p]
 [whosay name="四条 華衣" color=%mp.color]
 「いやだっ！」[p]
 [whosay name="四条祖父" color="#888898"]
@@ -79,7 +79,7 @@
 ;[SE足音]
 [whosay name="四条母" color="#9B608B"]
 「華衣！どこ行くの？！」[p]
-
+#
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
 [イベントシーン構築]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
