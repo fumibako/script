@@ -72,7 +72,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「つらいです、」[p]
-[主人公伏し目パチ1回]
+[主人公伏目パチ1回]
 [wait time=10]
 ;×筆者に女性的価値観が足りず思い浮かばずこんな形に
 [whosay name=&sf.girl_namae color="#cf5a7f"]
