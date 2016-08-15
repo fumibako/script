@@ -145,8 +145,6 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"] (お兄さま……)[p]
 ;けど兄妹なので言いたいことはわかっている。素直に真摯に笑顔になる主人公
-[主人公眉通常]
-[wait time=10]
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
