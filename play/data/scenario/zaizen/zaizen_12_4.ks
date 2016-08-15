@@ -141,7 +141,7 @@
 （それにしても……）[p]
 
 ;【SE】紙に触れる（スッ）
-[playse storage=paper_open.ogg loop=false ]
+[playse storage=paper_su.ogg loop=false ]
 ;最大６-７行
 [手紙主人公 fumi_number=]
 財前美彬様へ[l][r]
