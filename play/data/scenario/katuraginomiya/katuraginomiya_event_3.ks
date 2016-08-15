@@ -152,12 +152,7 @@
 ;【立ち絵】葛城宮 困り顔
 「表情がいつもより硬いな[r]
 [sp]緊張しているのだな？」[p]
-[stopbgm]
-[if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
-[endif]
+
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り ほほえみ
@@ -171,6 +166,13 @@
 [sp]今回の茶会の参加者は[r]
 [sp]君を客観的に判断できると判断した[r]
 [sp]皇后陛下の人選だ」[p]
+
+[stopbgm]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 #
 安心させるような葛城宮殿下の[r]
