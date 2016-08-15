@@ -200,7 +200,11 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
-;【テキスト全画面】黒茶・和紙風背景に白文字
+
+
+;【テキスト全画面】
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / tyasitu.jpg " time=500]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
  [テキスト全画面白文字]
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
 母である葛城宮妃殿下、次客に内親王縁子様、[r]
