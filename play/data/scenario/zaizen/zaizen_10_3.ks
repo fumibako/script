@@ -27,7 +27,7 @@
 [endif]
 
 ;【SE】紙に触れる（スッ）
-[playse storage=paper_open.ogg loop=false ]
+[playse storage=paper_su.ogg loop=false ]
 
 ;[テキスト全画面白文字]
 ;#
