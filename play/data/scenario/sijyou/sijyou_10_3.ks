@@ -95,6 +95,10 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 [手紙読了]
 
+;【SE】鈴虫の音
+[playse storage=mushi_suzumushi.ogg loop=false ]
+
+
 [主人公目閉じ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
