@@ -112,6 +112,7 @@
 「お迎えの車が到着しました。[r]
 支度は整っておられるようですね」[p]
 
+[stopbgm]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】五色（重いムードに
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
@@ -138,6 +139,9 @@
 「いつもの調子でされば心配はございません。[r]
 [sp]平常心ですよお嬢様」[p]
 
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / gosyo.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+ 
 
 #侍従
 「こちらで少しお待ちください。」[p]
@@ -148,7 +152,7 @@
 ;【立ち絵】葛城宮 困り顔
 「表情がいつもより硬いな[r]
 [sp]緊張しているのだな？」[p]
-
+[stopbgm]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
@@ -187,7 +191,7 @@
 葛城宮さまは力強くうなずく。[r]
 その言葉が私を緊張を[r]
 解き放つようにふわっと軽くした。[p]
-
+[stopbgm]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -220,6 +224,8 @@
 茶事が終わり追って沙汰を報せると伝えられた。[p]
 [resetfont]
 
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / gosyo.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [イベントシーン構築]
 [主人公ポーズ通常]
@@ -285,6 +291,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　皇后　薫子[p]
 [手紙読了]
 [resetfont]
+[stopbgm]
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
