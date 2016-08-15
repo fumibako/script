@@ -69,6 +69,9 @@
 ;☆フィナーレ（結末。主人公の勝利）
 ;○悩み(真実)についての独白とその後の悩みの変化が語られ主人公に感謝する。四条には主人公しかいない等と言って改めて告白
 ;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+#
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -141,17 +144,52 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
+
+[主人公退場]
+#
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築枠茶色]
+#
+僕達は、賑わう町を並んで歩いていく。[p]
+
+#
+人々は新しい季節と出会いにむけて、ショーウィンドウの前で何やら楽しそうに話をしている[p]
+
 [whosay name="華織" color="olivedrab"]
-「これからは記念日ごとに帯留めを買おう」[p]
-;○華織は、妹のことを思い出し。これから、戦争や病気などで別れあるかもしれないと思って。
+(あぁ、もっと[名前]さんに何かをしてあげたいな )[p]
+
+#
+彼女に対して　返すべきもの、ほしいもの　で僕の心は、今まで以上に貪欲になっていた[p]
+
+#
+--だからかもしれない。　僕は、ふと考えた。[p]
+
+[whosay name="華織" color="olivedrab"]
+([名前]さんと、離れずにもっと早く同じ季節を過ごしていれば……）[p]
+
+[whosay name="華織" color="olivedrab"]
+(なんて今考えてしまうのも、[名前]さんのおかげなんでしょうね)[p]
+
+
+#
+--となりに並んでくれる彼女をみつめる。[p]
+
+[whosay name="華織" color="olivedrab"]
+「これからは記念日ごとに帯留めを買おうか」[p]
+;○華織は、弟のことを思い出し。これから、戦争や病気などで別れあるかもしれないと思って。
+
+[whosay name="華織" color="olivedrab"]
+(年上の癖に、今はまだこんなことしか、思いつかないけど)
+
+[whosay name="華織" color="olivedrab"]
+(悔いがないように。　あの人に負けないほどの恋を)[p]
+[whosay name="華織" color="olivedrab"]
+([名前]さんと綴っていけたらいいな)[p]
 
 #
 冬のしんとした寒さの中、2つの暖かな吐息がほんわりと並び、次の季節に思いを馳せる。[p]
 
-[whosay name="華織" color="olivedrab"]
-(あの人に負けないほどの恋を)[p]
-[whosay name="華織" color="olivedrab"]
-([名前]さんと綴っていけたらいいな)[p]
 #
 その後、結納の日取りも三月末と決まり[r]
 何気ない日常が目に鮮やかに映るようになった。[p]
