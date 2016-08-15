@@ -24,9 +24,9 @@
 ありがとう。[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】めでたく候（お正月などめでたいシーンに
-[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
-[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
 #
