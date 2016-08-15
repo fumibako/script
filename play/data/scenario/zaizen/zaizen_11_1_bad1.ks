@@ -50,7 +50,14 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「私の問題です」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 ;暗転?
+[テキスト全画面白文字]
 #
 私はただ茫然とし、[r]
 あくまで冷静な財前様に[r]
@@ -60,7 +67,8 @@
 その夜私は沢山泣いて実感した[r]
 私は財前様に惹かれていたという事を[p]
 
-ー３年後
+[テキスト全画面白文字暗]
+ー３年後[p]
 #
 その後財前様は私との婚約を破談、[r]
 別の方と結婚し、[r]
@@ -68,8 +76,11 @@
 
 ;[背景洋館]
 独逸大使邸[p]
-[chara_mod name="bg" storage="bg/test_zaizen_youkan.jpg"]
+[chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 #
 私は財前様のお母様と[r]
 手紙のやりとりをしていて[r]
