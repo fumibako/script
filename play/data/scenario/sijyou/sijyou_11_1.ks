@@ -11,7 +11,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-兄のはからいで料亭にやってきた[名前]は、会うべき"とある人物"を待っていた。[p]
+兄のはからいで料亭にやってきた[名前]は、会うべき[r]
+"とある人物"を待っていた。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -88,6 +89,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 ;[暗転]
+[主人公通常]
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公目閉じ]
 #
@@ -298,7 +300,6 @@
 [wait time=10]
 ;○後ろから呼びかけて
 [whosay name="華織" color="olivedrab"]
-？
 #華衣の婚約者の母
 「華衣さまに、お伝え下さいぇ[r]
 もうしばらくしたら、この地を離れますと」[p]
@@ -321,7 +322,11 @@
 ;[暗点][料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-;華織が説明してるから地の文が
+
+
+[主人公通常]
+[wait time=10]
+;華織が説明してるので地の文があまり思いつかない
 #
 『料亭』に戻ってきた私達[p]
 [if exp="sf.BGM=='ON'"]
@@ -329,23 +334,41 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-[主人公通常]
+
 [wait time=10]
 ;○ 道具をひろげて確認 妹はまだ見つかってないか確認
 [whosay name="華織" color="olivedrab"]
 家に電話をしてみたけど、まだ帰ってきてないみたいだ[p]
+
+[主人公憂い]
+[wait time=10]
+
 ;○まずは道具の確認　何をするのかプレイヤーに説明
 [whosay name="華織" color="olivedrab"]
 「華衣を見つけて説得する為にも、
 まずは、頂いたものを確認しよう」[p]
+
+[主人公通常]
+[wait time=10]
+[主人公ポーズ片手]
+[wait time=10]
+;ワトソンくんも考えてますよといポーズ
+
+
 [whosay name="華織" color="olivedrab"]
 「あの方がいってらしゃったように、書物と壺 があるね」[p]
+
+[主人公目パチ1回]
+
 ;○まずは壺を確認
 [whosay name="華織" color="olivedrab"]
 「壺には富士と波が描かれている普通の壺」[p]
 「しいていうなら、この壺は、花を生けるにはむいていない絵図柄だね。」[p]
 [whosay name="華織" color="olivedrab"]
 「関係性は無さそうだね。少し気が引けますが、やはり書物を拝見しようか……」[p]
+
+[主人公ポーズ通常]
+
 ;○そして書物を確認
 #
 ;ナレーター
@@ -379,9 +402,14 @@
 [whosay name="華織" color="olivedrab"]
 「ずいぶんと可愛らしい装飾の書物ですね」[p]
 ;○書物から暗号を発見答え『音頭恋寝刃』
+
+『手記』には不思議な言葉が記されていた。[r]
+-- 頭は恋をし寝る。波の音を聞きながら刀を探す。[p]
+
 [whosay name="華織" color="olivedrab"]
 『頭は恋をし寝る。波の音を聞きながら刀を探す。
-……その壺には恋を詰めておく。』[p]
+……その壺には恋を詰めておく。』・・・？[p]
+
 [whosay name="華織" color="olivedrab"]
 「何かの暗号っぽいね」[p]
 [主人公目パチ1回]
@@ -402,7 +430,7 @@
 「あっ！」[p]
 #
 ;ナレーター
-手記を開いた途端、四角く折られた青紫紙が落ちた。[p]
+『手記』を開いた途端、四角く折られた青紫紙が落ちた。[p]
 [whosay name="華織" color="olivedrab"]
 「なにか落ちたようだ」[p]
 ;○主人公または華織は これは絶対渡さないと思う 中身はまだ語られない
@@ -423,6 +451,10 @@
 これは絶対、華衣さまにお渡ししないといけませんね」[p]
 [whosay name="華織" color="olivedrab"]
 「あぁ、そうだね」[p]
+
+『手記』の中に挟まっていた青紫の紙に書かれていた内容をみた
+私達は、決意を改めた。[p]
+
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
 「問題は、華衣が放蕩する場所だな」[p]
