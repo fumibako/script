@@ -350,9 +350,9 @@
 
 [主人公通常]
 [wait time=10]
-[主人公ポーズ片手]
+[主人公ポーズ指]
 [wait time=10]
-;ワトソンくんも考えてますよといポーズ
+;ワトソンくんも考えてますよ!というポーズ
 
 
 [whosay name="華織" color="olivedrab"]
@@ -382,7 +382,8 @@
 [whosay name="華織" color="olivedrab"]
 「そうだね。
 明らかに関係性のないものは優先順位を下げておこう」[p]
-;数分後……
+
+数分後……[p]
 ;○主人公が可愛い織柄の表紙の手記を見つける
 [主人公目パチ1回]
 [wait time=10]
@@ -402,7 +403,7 @@
 [whosay name="華織" color="olivedrab"]
 「ずいぶんと可愛らしい装飾の書物ですね」[p]
 ;○書物から暗号を発見答え『音頭恋寝刃』
-
+#
 『手記』には不思議な言葉が記されていた。[r]
 -- 頭は恋をし寝る。波の音を聞きながら刀を探す。[p]
 
@@ -451,9 +452,9 @@
 これは絶対、華衣さまにお渡ししないといけませんね」[p]
 [whosay name="華織" color="olivedrab"]
 「あぁ、そうだね」[p]
-
-『手記』の中に挟まっていた青紫の紙に書かれていた内容をみた
-私達は、決意を改めた。[p]
+#
+『手記』の中に挟まっていた青紫の紙に書かれていた内容をみた私達は[r]
+決意を改めた。[p]
 
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
@@ -492,6 +493,10 @@
 ;[華織憂い]
 [whosay name="華織" color="olivedrab"]
 「頭恋寝……刀を探して？」[p]
+;主人公笑う？
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+
 [whosay name="華織" color="olivedrab"]
 ! 『音頭恋寝刃』[p]
 ;○事件解決に向かって走り出す[BGM一閃]？
@@ -500,12 +505,24 @@
 [whosay name="華織" color="olivedrab"]
 「華衣もあの人も『展覧芝居』を一緒になって
 見ていた！」[p]
+
+[chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「その壺には恋を詰めておく……というのは」[p]
+
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+#
+私達は富士と波が描かれたの壷をジッと見つめた。[p]
+[whosay name="華織" color="olivedrab"]
+「……！」[p]
 [whosay name="華織" color="olivedrab"]
 「富士と波……『波ヶ浦』かもしれない！」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いってみましょう！」[p]
+
+
 ;△ ○壺の柄と暗号を照らし合わせ、妹の場所を発見する
 ;↓実装時は後半へ飛ぶ
 ;@jump storage="sijyou/sijyou_11_1b.ks"
