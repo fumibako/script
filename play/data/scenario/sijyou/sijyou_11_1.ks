@@ -196,29 +196,29 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「ごめん下さい」[p]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「！ あら……アナタは四条家の！？」[p]
 [whosay name="華織" color="olivedrab"]
 「急に尋ねてしまい申し訳ありません」[p]
 [whosay name="華織" color="olivedrab"]
 「華衣はこちらに来てませんでしたか？」[p]
 ;○↓片田舎の京の人というイメージ
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「いえ、とんと。手紙を送ってこられますがねぇ」[p]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「ここは、来るには少々荒けた場所ですえ」[p]
 [主人公憂い]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「そうでしたか[r]
 お父さまは、いらしゃられますか？」[p]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「父はもう年ゆえに他界してまして」[p]
-#質屋
+[whosay name="質屋"]
 「すみませーん、こちらも持っていきますよー」[p]
 [主人公通常]
 [wait time=10]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「あらぁ、ごめんなさいぇ……今、ちょっと立て込んでましてねぇ」[p]
 ;○体面的にとても恥ずかしいので見られたくない？
 [whosay name="華織" color="olivedrab"]
@@ -236,7 +236,7 @@
 
 [fadeoutbgm time=3000]
 
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「四条とは縁が切れたもの、その様なお慰めは止して下さいぇ」[p]
 [主人公真剣]
 [wait time=10]
@@ -253,24 +253,26 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「……なにかご入用のものがありまして？」[p]
 [主人公ほほえみ]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「はい、」[p]
+
+
 ;[暗点]
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 [主人公通常]
 [wait time=10]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「息子の物はここにある書物と壺くらいです」[p]
 #華衣の婚約者の母
 「とくに華衣さまに喜んでもらえるものがあるとは……」[p]
 [whosay name="華織" color="olivedrab"]
 「少し見させてもらっていいですか？ 」[p]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「人を待たせてるので早めにお願いしますね」[p]
 [主人公真剣]
 [wait time=10]
@@ -287,24 +289,24 @@
 [主人公憂い]
 [wait time=10]
 ;通常でもよい
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「いえ、そんなお情けは……」[p]
 [whosay name="華織" color="olivedrab"]
 「勝手に来て、物色までしたのです。[r]
 それくらいはさせてください」[p]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「そこまで仰るなら」[p]
 [whosay name="華織" color="olivedrab"]
 「ご迷惑おかけしました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「失礼しました」[p]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「華織さま」[p]
 [主人公通常]
 [wait time=10]
 ;○後ろから呼びかけて
 [whosay name="華織" color="olivedrab"]
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「華衣さまに、お伝え下さいぇ[r]
 もうしばらくしたら、この地を離れますと」[p]
 
@@ -368,10 +370,12 @@
 [whosay name="華織" color="olivedrab"]
 「壺には富士と波が描かれている普通の壺」[p]
 「しいていうなら、この壺は、花を生けるにはむいていない絵図柄だね。」[p]
+
+[主人公ポーズ通常]
+
 [whosay name="華織" color="olivedrab"]
 「関係性は無さそうだね。少し気が引けますが、やはり書物を拝見しようか……」[p]
 
-[主人公ポーズ通常]
 
 ;○そして書物を確認
 #
@@ -413,7 +417,7 @@
 -- その壺には恋を詰めておく。[p]
 
 [whosay name="華織" color="olivedrab"]
-『頭は恋をし寝る。波の音を聞きながら刀を探す。
+『頭は恋をし寝る。波の音を聞きながら刀を探す。[r]
 ……その壺には恋を詰めておく。』・・・？[p]
 
 [whosay name="華織" color="olivedrab"]
@@ -466,8 +470,8 @@
 「問題は、華衣が放蕩する場所だな」[p]
 ;[四条憂い]
 [whosay name="華織" color="olivedrab"]
-「我が兄妹ながら、その様な場所を
-皆目検討つかないなんて、文矢を見習わないとね」[p]
+「我が兄弟ながら、その様な場所を皆目検討つかないなんて、[r]
+文矢を見習わないとね」[p]
 ;△文のつながりがおかしいが分からず
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
