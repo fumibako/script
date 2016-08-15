@@ -225,6 +225,9 @@
 [sp] この愛しさも安らぎも[r]
 [sp] 君が教えてくれたものだ」[p]
 
+chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 #
 ーきっと私はあなたと巡り合い[r]
 [sp] 愛するために生まれてきたー[p]
