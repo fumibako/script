@@ -11,11 +11,17 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-;兄のはからいで料亭にやってきた[名前]は、会うべき"とある人物"を待っていた。
+兄のはからいで料亭にやってきた[名前]は、会うべき"とある人物"を待っていた。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 [whosay name="華織" color="olivedrab"]
 「文矢、相談したいことってなんだい？」[p]
@@ -132,11 +138,18 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ありがとうございます)[p]
 
+[fadeoutbgm time=3000]
+
+[テキスト全画面白文字]
+[名前]と華織達は、杳々たる山深き『華衣の婚約者』の生家へと足を運んだ。[p]
+
 ;○急いで！のイメージ
 ;☆キャラの決意 四条の決意
 ;○京の端町、質素な邸宅がある
 ;[質素な邸宅]和の家
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
+[主人公ポーズ通常]
+[wait time=10]
 [主人公通常]
 [wait time=10]
 #質屋
@@ -146,12 +159,20 @@
 [whosay name="華織" color="olivedrab"]
 「資産の差し押さえだね [r]
 華衣の婚約者は小さな公家の出なんだ」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】一閃（緊迫シーンに
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+[endif]
+
 [whosay name="華織" color="olivedrab"]
 「！まずいな 早くここの主人と話をしないと！」[p]
 [主人公真剣]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「行きましょう」[p]
+
 ;[暗点]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [主人公通常]
@@ -195,6 +216,9 @@
 [whosay name="華織" color="olivedrab"]
 「気に入ったものもありましたので、」[p]
 ;○体面を気にしてると思うので理由付けしている
+
+[fadeoutbgm time=3000]
+
 #華衣の婚約者の母
 「四条とは縁が切れたもの、その様なお慰めは止して下さいぇ」[p]
 [主人公真剣]
