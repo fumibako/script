@@ -290,7 +290,7 @@
 こんな風に感じるのは[r]
 なぜなのかしら……[p]
 
-薔薇園デート編終了
+;薔薇園デート編終了
 
 ;@jump storage="event.ks" target=*event_owari
 
