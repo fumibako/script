@@ -2,7 +2,6 @@
 ;¥¥¥¥¥¥¥¥イベント6.5¥¥¥¥¥¥¥¥
 ;☆結果の知らせ (黒田ルートと同じお正月なイメージ)
 ;×日程の調整によって変更してもokです。
-;手紙はなくても？
 ;△手紙バージョン
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -24,7 +23,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ありがとう。[p]
 
-[主人公退場]
+[if exp="sf.BGM=='ON'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
+[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+[endif]
+
 #
 [手紙四条 fumi_number=]
 ;○四条手紙 正月はがき？
@@ -44,7 +48,8 @@
 澄んだ空気の空にまばゆい日が昇る。[r]
 [主人公ほほえみ]
 [wait time=10]
-[名前]は筆を取ると、今までの事を噛みしめながら新しい門出について文をしたためた。[p]
+[名前]は筆を取ると、今までの事を噛みしめながら[r]
+新しい門出について文をしたためた。[p]
 [wait time=100]
 [主人公退場]
 
