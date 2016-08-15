@@ -123,7 +123,7 @@
 
 ;【SE】紙に触れる（スッ）　どちらでもおｋ
 ;[playse storage=paper_su.ogg loop=false ]
-【SE】衣擦れ（スッ）
+;【SE】衣擦れ（スッ）
 [playse storage=kinuzure.ogg loop=false ]
 
 ;裏テーマ華綴り
@@ -144,8 +144,8 @@
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 
-;【SE】紙に触れる（パラリ）
-;[playse storage=paper_open.ogg loop=false ]
+;【SE】紙に触れる（パラリ）古い紙だからパラリ？
+[playse storage=paper_open.ogg loop=false ]
 
 [手紙華衣婚約者 fumi_number=]
 華衣へ[r]
