@@ -54,14 +54,15 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「ここに出てくる『波ヶ浦』は実際にある地名なんだよ」[p]
+「ここに出てくる『波ヶ浦』は実際にある地名なんだよ、[r]
+　富士がみえる美しい浜辺で……」[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(お元気そう)[p]
+(華織さま、お元気そう)[p]
 ;[太鼓SE]ドンドンドン…
 [playse storage=taiko.ogg loop=false ]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
