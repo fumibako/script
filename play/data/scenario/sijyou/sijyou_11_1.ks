@@ -514,7 +514,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 #
-私達は富士と波が描かれたの壷をジッと見つめた。[p]
+私達は、『富士と波が描かれた壷』をジッと見つめた。[p]
 [whosay name="華織" color="olivedrab"]
 「……！」[p]
 [whosay name="華織" color="olivedrab"]
