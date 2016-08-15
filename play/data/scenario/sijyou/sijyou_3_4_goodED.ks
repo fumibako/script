@@ -26,6 +26,10 @@
 #
 [whosay name="文矢の奥様" color=%mp.color]
 「おめでとうございます」[p]
+
+;[SE拍手]
+[playse storage=hakushu.ogg loop=false ]
+
 [whosay name=文矢 color="#538a8a"]
 「[名前]、華織おめでとう」[p]
 
