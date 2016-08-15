@@ -159,6 +159,8 @@
 ……心から幸せだわ[p]
 
 ;背景フウセンカズラ
+[chara_mod name="bg" storage="bg/zaizen_fusenkazura.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 ;【立ち絵】主人公：微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -225,7 +227,7 @@
 [sp] この愛しさも安らぎも[r]
 [sp] 君が教えてくれたものだ」[p]
 
-chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
+[chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 #
