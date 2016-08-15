@@ -17,7 +17,15 @@
 ;【立ち絵】主人公：微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様の手紙の描き方が柔らかくなったわ）[p]
+
 ;【SE】紙に触れる（カサ）
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 
 [手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
@@ -311,7 +319,7 @@
 [主人公退場]
 
 ;白い花の咲く雪柳の下?
-[chara_mod name="bg" storage="bg/test_sora.jpg"]
+[chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
 #
 私は思わず逃げたしていた[r]
 広い庭でこっそり[r]
@@ -331,6 +339,8 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「やっと見つけましたよ[r]
 [sp] 一体どうしたというのです」[p]
+
+[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg"]
 
 ;【立ち絵】主人公：目伏せ悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -370,7 +380,7 @@
 精一杯の勇気を振り絞って言った[r]
 声も震えている[r]
 財前様は私に近づく[p]
-
+[chara_mod name="bg" storage="bg/zaizen_CGnomal.jpg"]
 額にキスCG（財前目閉じ主人公驚き）[p]
 
 [主人公驚]
@@ -388,7 +398,7 @@
 そう耳に囁かれて私は真っ赤になった[p]
 
 ;CG終わり
-:normalここまで
+;normalここまで
 
 
 
