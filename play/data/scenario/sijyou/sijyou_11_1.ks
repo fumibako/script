@@ -499,7 +499,7 @@
 [wait time=10]
 
 [whosay name="華織" color="olivedrab"]
-! 『音頭恋寝刃』[p]
+「 ! 『音頭恋寝刃』 」[p]
 ;○事件解決に向かって走り出す[BGM一閃]？
 [whosay name="華織" color="olivedrab"]
 「歌舞伎の演目名だ」[p]
