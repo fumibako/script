@@ -47,13 +47,17 @@
 [主人公ほほえみ]
 読むたびに、私も自分を高めようと思いました」[p]
 
+;黒田シナリオからお借りしました
 ;【このセリフのみ分岐】淑女度一定値以上の場合
+[if exp="f.para_shujinkou_shukujodo >= 40"]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「それで最近お稽古に励んでいたのか」[p]
-
+[endif]
+[if exp="f.para_shujinkou_shukujodo < 40"]
 ;【このセリフのみ分岐】淑女度一定値未満の場合
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「それは良いことだな」[p]
+[endif]
 
 ;以下共通セリフに戻る
 [whosay name=&sf.father_name color="DarkSlateBlue"]
