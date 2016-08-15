@@ -31,7 +31,7 @@
 
 
 ;【SE】紙に触れる（スッ）
-[playse storage=paper_open.ogg loop=false ]
+[playse storage=paper_su.ogg loop=false ]
 [テキスト全画面白文字無背景]
 ;[新聞]
 [chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
