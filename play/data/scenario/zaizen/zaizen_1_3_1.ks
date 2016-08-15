@@ -29,6 +29,7 @@
 「ええ、そうね」[p]
 
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
 ;【新聞】
 [テキスト全画面白文字無背景]
