@@ -87,11 +87,17 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-[主人公通常]
-;[暗転]→[料亭]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[主人公目閉じ]
 #
-・・・[p]
-;仮でつけてます↑
+・・・・・・[p]
+
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+
+[主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「それで、華衣さまは
@@ -140,13 +146,17 @@
 
 [fadeoutbgm time=3000]
 
+;適当につけましたので変えてもよいです。遠いぞーってことがわかればよし
 [テキスト全画面白文字]
-[名前]と華織達は、杳々たる山深き『華衣の婚約者』の生家へと足を運んだ。[p]
+[名前]と華織達は、杳々たる山深き『華衣の婚約者』の[r]
+生家へと足を運んだ。[p]
 
 ;○急いで！のイメージ
 ;☆キャラの決意 四条の決意
 ;○京の端町、質素な邸宅がある
 ;[質素な邸宅]和の家
+[イベントシーン構築]
+『華衣の婚約者の生家前』[p]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
 [主人公ポーズ通常]
 [wait time=10]
@@ -161,10 +171,11 @@
 華衣の婚約者は小さな公家の出なんだ」[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】一閃（緊迫シーンに
-[playbgm storage="kinpaku_issen.ogg" loop=true]
-[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
+
 
 [whosay name="華織" color="olivedrab"]
 「！まずいな 早くここの主人と話をしないと！」[p]
@@ -225,11 +236,17 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「ちがうのです。必要なのです」[p]
-;×修正点 華衣にした
 [主人公通常]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「私達と、華衣の為にも」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 #華衣の婚約者の母
 「……なにかご入用のものがありまして？」[p]
 [主人公ほほえみ]
@@ -285,27 +302,39 @@
 #華衣の婚約者の母
 「華衣さまに、お伝え下さいぇ[r]
 もうしばらくしたら、この地を離れますと」[p]
+
+[fadeoutbgm time=3000]
+
 [主人公憂い]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「わかりました……お元気で」[p]
-;夕焼け空？
+;夕空
 [chara_mod name="bg" storage="bg/test_sora.jpg"]
 #
 ;ナレーター
 荒れ果てた地の槇の葉に、霧が立ちのぼっていく。[p]
-秋すぎさる夕日に物悲しさを感じ、
+秋すぎさる夕日に物悲しさを感じ、[r]
 華織と[名前]は、手を繋ぎながら来た道を帰っていった。[p]
 
 ;場面転換
 ;[暗点][料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+;華織が説明してるから地の文が
+#
+『料亭』に戻ってきた私達[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [主人公通常]
 [wait time=10]
 ;○ 道具をひろげて確認 妹はまだ見つかってないか確認
 [whosay name="華織" color="olivedrab"]
 家に電話をしてみたけど、まだ帰ってきてないみたいだ[p]
-;○まずは道具の確認
+;○まずは道具の確認　何をするのかプレイヤーに説明
 [whosay name="華織" color="olivedrab"]
 「華衣を見つけて説得する為にも、
 まずは、頂いたものを確認しよう」[p]
@@ -320,7 +349,7 @@
 ;○そして書物を確認
 #
 ;ナレーター
-数十冊の書物には、華族としての趣味や生き方や、社会的な研究が記されている。[p]
+数十冊の書物には、華族としての趣味や生き方、社会的な研究が記されている。[p]
 [whosay name="華織" color="olivedrab"]
 「これを、全部読むのは時間がかかりそうだな」[p]
 [主人公目パチ1回]
@@ -361,6 +390,9 @@
 「そうですね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (1ページ目にわざわざかいてあるようですし……)[p]
+
+[fadeoutbgm time=3000]
+
 ;○その書物には手紙が挟まっていて発見する
 [主人公ポーズ片手]
 [wait time=10]
@@ -376,6 +408,12 @@
 ;○主人公または華織は これは絶対渡さないと思う 中身はまだ語られない
 [whosay name="華織" color="olivedrab"]
 「これは……」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】一閃（緊迫シーンに
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+[endif]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公真剣]
