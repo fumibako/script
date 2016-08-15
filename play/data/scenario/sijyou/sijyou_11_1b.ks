@@ -120,6 +120,12 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華衣さん、お手紙をどうぞ。想いが綴られてます」[p]
+
+;【SE】紙に触れる（スッ）　どちらでもおｋ
+;[playse storage=paper_su.ogg loop=false ]
+【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
+
 ;裏テーマ華綴り
 ;○攻略相手を応援…ではない方法の手紙の掲示
 ;◎「また会う日を楽しみに」「幸せな思い出」「忍耐」※ネリネ
@@ -130,6 +136,7 @@
 華衣は、[名前]から折紙で挟まれた手紙を受け取ると、破れないように[r]
 そっと開いた。[p]
 [wait time=10]
+;たまに止まるのです
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
@@ -137,6 +144,8 @@
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 
+;【SE】紙に触れる（パラリ）
+;[playse storage=paper_open.ogg loop=false ]
 
 [手紙華衣婚約者 fumi_number=]
 華衣へ[r]
