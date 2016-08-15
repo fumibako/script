@@ -203,7 +203,7 @@
 
 
 ;【テキスト全画面】
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / tyasitu.jpg " time=500]
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / tyasitu.jpg "]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
  [テキスト全画面白文字]
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
@@ -293,8 +293,8 @@
 [sp]貴方の為にも貴方と晴仁親王は今後も節度をもって[r]
 手紙を交わすようにお願いしますわ。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　皇后　薫子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　皇后　薫子[p]
 [手紙読了]
 [resetfont]
 [stopbgm]
