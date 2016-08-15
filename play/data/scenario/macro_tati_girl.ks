@@ -91,6 +91,8 @@ if(mp.name=="文矢"){
     mp.color = "#22ae91";
 }else if(mp.name=="四条　華衣"){
     mp.color = "#22ae91";
+}else if(mp.name=="四条華衣"){
+    mp.color = "#22ae91";
 }else if(mp.name=="華衣"){
     mp.color = "#22ae91";
 }else if(mp.name=="？？？"){
@@ -102,13 +104,13 @@ if(mp.name=="文矢"){
 }else if(mp.name=="葛城宮晴仁"){
     mp.color = "#414180";
 }else if(mp.name=="藤枝　肇"){
-    mp.color = "#c0b0f0";
+    mp.color = "#a090d0";
 }else if(mp.name=="藤枝 肇"){
-    mp.color = "#c0b0f0";
+    mp.color = "#a090d0";
 }else if(mp.name=="藤枝肇"){
-    mp.color = "#c0b0f0";
+    mp.color = "#a090d0";
 }else if(mp.name=="郵便屋"){
-    mp.color = "#c0b0f0";
+    mp.color = "#a090d0";
 }else if(mp.name=="藤枝　晶子"){
     mp.color = "#dda0ff";
 }else if(mp.name=="藤枝 晶子"){
