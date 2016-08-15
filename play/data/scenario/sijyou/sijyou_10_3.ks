@@ -11,7 +11,14 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 ;考える、迷う→暗闇→夜になってますが夜に家令が入ってきてもいいのかな
+#
+手紙が来なくなって数日。[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -51,6 +58,9 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (つらいです……)[p]
+
+[fadeoutbgm time=3000]
+
 [whosay name="磯野" color="dimgray"]
 「[名前]さま、」[p]
 [主人公通常]
@@ -63,6 +73,14 @@
 ;○数日後手紙がかえってくる
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。下がって頂戴」[p]
+
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;/////手紙///
 
 [手紙文矢 fumi_number=]
@@ -101,8 +119,8 @@
 ;○回想おわり
 ;回想シーンタグとかはシナリオ中に使うと延々ループの危険ぽいです？
 ;○決意の表情 セリフはプレイヤーに想像　お好きな方で
-;[主人公真剣]　自身を強く持とうとしている
-;[主人公通常] 相手を優しく思って考えている
+
+; 相手を優しく思って考えている
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
