@@ -28,12 +28,21 @@
 「文矢、相談したいことってなんだい？」[p]
 [whosay name=文矢 color="#538a8a"]
 「うん。けど、ちょっと……僕は席を外すよ」[p]
+
+;【SE】衣擦れ（スッ）文矢が障子の影にかくれるイメージ
+[playse storage=kinuzure.ogg loop=false ]
+
 [whosay name="華織" color="olivedrab"]
 「まったく君って奴は急にやって来て引っ張り出すものだから……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま」[p]
 [whosay name="華織" color="olivedrab"]
 ！[p]
+
+;ザッってすると引かれているかんじかも
+;【SE】衣擦れ（ザッ）
+;[playse storage=za_kinuzure.ogg loop=false ]
+
 ;二回も名前を呼ぶと、次のセリフがよくわからないのでナシに。
 [whosay name="華織" color="olivedrab"]
 「……[名前]、」[p]
@@ -134,7 +143,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。どこまでもご一緒に」[p]
-;△以下の文は、つけてたほうが自然？ i息抜きを兼ねてつけてみます。
+;△以下の文は、つけてたほうが自然？ i息兼ねてつけてみます。
 [主人公通常]
 [wait time=10]
 [whosay name=文矢 color="#538a8a"] 
@@ -170,6 +179,10 @@
 [wait time=10]
 #質屋
 「その刀は世襲財産ですね。差し押さえできないので他のものを回収します」[p]
+
+;【SE】茶器に触れる、又は乾杯（大きめにカチャッ）　茶器とか回収？
+[playse storage=tya_katya.ogg loop=false ]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あれは何をなさっているのでしょうか？」[p]
 [whosay name="華織" color="olivedrab"]
@@ -216,6 +229,8 @@
 「父はもう年ゆえに他界してまして」[p]
 [whosay name="質屋"]
 「すみませーん、こちらも持っていきますよー」[p]
+;遠いところからよびかけ↑
+
 [主人公通常]
 [wait time=10]
 [whosay name="華衣の婚約者の母"]
@@ -370,8 +385,11 @@
 [whosay name="華織" color="olivedrab"]
 「壺には富士と波が描かれている普通の壺」[p]
 「しいていうなら、この壺は、花を生けるにはむいていない絵図柄だね。」[p]
-
+;荘厳派手すぎてむいてない　赤に金の唐風の壷？
 [主人公ポーズ通常]
+
+;【SE】湯のみを置く（コトリ）　壷おいておく音
+[playse storage=tya_yunomi_oku.ogg loop=false ]
 
 [whosay name="華織" color="olivedrab"]
 「関係性は無さそうだね。少し気が引けますが、やはり書物を拝見しようか……」[p]
@@ -396,6 +414,10 @@
 ;○主人公が可愛い織柄の表紙の手記を見つける
 [主人公目パチ1回]
 [wait time=10]
+
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (？ この書物だけ可愛らしい織柄)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -431,6 +453,9 @@
 (1ページ目にわざわざかいてあるようですし……)[p]
 
 [fadeoutbgm time=3000]
+
+;【SE】紙に触れる（パラリ）　紙がおちる
+[playse storage=paper_open.ogg loop=false ]
 
 ;○その書物には手紙が挟まっていて発見する
 [主人公ポーズ片手]
