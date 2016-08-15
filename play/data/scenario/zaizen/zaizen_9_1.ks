@@ -9,6 +9,9 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[p]
+;【SE】鈴虫の音
+;[playse storage=mushi_suzumushi.ogg loop=false ]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
