@@ -1,6 +1,6 @@
 ;【背景】～指定ありません　一時的に書いてます。変更してください～
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -21,8 +21,14 @@
 私は財前様に連れられ[r]
 会場を後にしました[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 ;暗転
+[テキスト全画面白文字]
 #
 私と財前様は交際期間を終えた後[r]
 華燭の典を挙げ財前様は[r]
@@ -41,7 +47,15 @@
 なりました[p]
 
 ー数年後[p]
+
 ;洋館居間
+[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+
 ;【立ち絵】主人公：目伏せ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私は傍からみても幸せだわ[r]
