@@ -19,6 +19,10 @@
 （なんだか最近財前様のお手紙の感じが変わったわ）[p]
 
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
+;【SE】紙に触れる（スッ）
+;[playse storage=paper_su.ogg loop=false ]
+
 ;[テキスト全画面白文字]
 ;[手紙]
 
