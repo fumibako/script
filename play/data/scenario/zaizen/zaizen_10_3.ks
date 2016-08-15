@@ -20,6 +20,12 @@
 [sp] 先日お手紙を頂いたけれど[r]
 [sp] やはり忙しいかたね）[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_open.ogg loop=false ]
 
@@ -86,6 +92,8 @@
 「いいえ、[r]
 [sp] ……それよりお話しがあります」[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】財前：眉ひそめ
 「一体何の話でしょうか？」[p]
 
@@ -106,6 +114,12 @@
 [sp] 家族になるんですもの[r]
 [sp] 貴方のお母様に[r]
 [sp] 関係あることなのですか？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 ;【立ち絵】財前：驚き
 [whosay name="財前美彬" color="#7a65b2"]
@@ -195,11 +209,13 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「賢明な回答です」[p]
 
+
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
 「ああ、ところで急ですが[r]
 [sp] １１月の初めの日曜日ですが予定を[r]
 [sp] 開けてくれませんか？」[p]
+
 
 ;【立ち絵】主人公：通常
 [主人公通常]
