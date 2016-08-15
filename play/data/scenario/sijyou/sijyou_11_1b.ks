@@ -248,7 +248,7 @@
 [whosay name="華織" color="olivedrab"]
 『待って下さい！ そんな顔色で……せめて明日』[p]
 ;[暗点]か空
-[chara_mod name="bg" storage="bg/test_sora.jpg" time=100]
+[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=100]
 #
 『華衣との婚約解消されたら嫌だった。[r]
 急がないといけない、この想いを綴るには種もほしい』[p]
