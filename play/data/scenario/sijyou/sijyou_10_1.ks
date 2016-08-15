@@ -91,6 +91,8 @@
 「華衣を、叱らないであげて下さい、[r]
 僕が悪いのですから」[p]
 ;[SE足音]
+[playse storage=girl_out_walk.ogg loop=false ]
+
 [whosay name="四条母" color="#9B608B"]
 「華衣！どこ行くの？！」[p]
 #
