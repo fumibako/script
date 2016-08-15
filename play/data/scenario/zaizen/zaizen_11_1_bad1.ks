@@ -160,7 +160,7 @@
 だけどまだそんな気持ちにはなれないのだ[r]
 きっといつかは私も結婚するのだろうけど[p]
 
-[chara_mod name="bg" storage="bg/test_sora.jpg"]
+[chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [主人公通常]
