@@ -7,6 +7,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true]
@@ -122,7 +123,8 @@
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-[stopbgm]
+
+[fadeoutbgm time=3000]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
@@ -266,7 +268,7 @@
 彼女は締めくくった[r]
 私は彼女の手を取った[p]
 
-[stopbgm]
+[fadeoutbgm time=3000]
 
 ;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
