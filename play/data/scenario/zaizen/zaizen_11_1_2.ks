@@ -7,6 +7,11 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
@@ -42,7 +47,7 @@
 ;[playse storage=paper_open.ogg loop=false ]
 
 ; 背景パーティ会場控室　
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 #
@@ -117,10 +122,18 @@
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+[stopbgm]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
+
 
 ;背景洋館 全画面文字のみ表示　まだないので黒背景
 [テキスト全画面白文字無背景]
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[chara_mod name="bg" storage="bg/zaizen_youkan.jpg" time=500]
 [sp] 私の父はこの国の独逸大使でしてね。[r]
 私は蝶よ花よと何不自由なく育てられました。[r]
 [sp] 父は私を自分の部下と結婚することを[r]
@@ -128,7 +141,7 @@
 何の疑問も抱いていませんでしたわ。[p]
 
 ;呉服屋的な背景 　全画面文字のみ表示
-;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/zaizen_gofuku.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 ;最大6~7行
@@ -166,7 +179,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 ; 背景パーティ会場控室
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
 [whosay name="財前母"]
 「そして私達は駆け落ちすることにしたのです。」[p]
 
@@ -181,7 +194,7 @@
 
 ; 港町的な背景　全画面文字のみ表示
 [テキスト全画面白文字無背景]
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[chara_mod name="bg" storage="bg/zaizen_minato.jpg" time=500]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [sp] 樹は森に隠せというように[r]
@@ -201,8 +214,8 @@
 [主人公ポーズ通常]
 [主人公通常]
 
-; 背景パーティ会場控室 まだないので会場と同じものを設置
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+; 背景パーティ会場控室
+[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [whosay name="財前母"]
@@ -213,7 +226,7 @@
 
 [テキスト全画面白文字無背景]
 ; 呉服屋的な背景 　全画面文字のみ表示
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[chara_mod name="bg" storage="bg/zaizen_gofuku.jpg" time=500]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [sp] 会社の本社もこちらに移し[r]
@@ -240,7 +253,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 ;［背景控室］
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [whosay name="財前母"]
@@ -253,12 +266,20 @@
 彼女は締めくくった[r]
 私は彼女の手を取った[p]
 
+[stopbgm]
+
 ;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「過ぎてしまったことを[r]
 [sp] 悔やんでも仕方ありませんわ[r]
 [sp] 今は財前様と分かり合えるように[r]
 [sp] なる事を考えましょう」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 [whosay name="財前母"]
 「アルベルトと分かり合う？」[p]
