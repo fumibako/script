@@ -15,7 +15,15 @@
 [イベントシーン構築]
 
 #
-四条家を[苗字]家の結納の儀式がつつがなく終わり、親戚一同から祝福の声がかかる。[p]
+四条家を[名字]家の結納の儀式がつつがなく終わり、親戚一同から祝福の声がかかる。[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
+
+
 #文矢の奥様
 「おめでとうございます」[p]
 [whosay name=文矢 color="#538a8a"]
@@ -32,7 +40,10 @@
 「きっと貴方にも巡り会えますよ 華衣さんにも大事な人が 」[p]
 ;兄のセリフをいう
 #華衣
-「！　あなたは、」[p]
+「！　」[p]
+#華衣
+「あなたは、」[p]
+
 ;ここでイメージ画像
 # 
 ;ナレーターモノローグ
