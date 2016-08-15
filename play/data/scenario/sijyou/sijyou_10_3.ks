@@ -75,12 +75,6 @@
 「磯野、ありがとう。下がって頂戴」[p]
 
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
-
 ;/////手紙///
 
 [手紙文矢 fumi_number=]
@@ -114,6 +108,7 @@
 ;[歌舞伎座前]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 『大事なものではないのですか？』[p]
+
 [whosay name="華織" color="olivedrab"]
 『内容は覚えているからいいよ』[p]
 ;○回想おわり
