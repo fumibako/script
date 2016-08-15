@@ -212,8 +212,8 @@
 
 [主人公退場]
 
-; 背景洋館応接室 ないので仮
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+; 背景洋館応接室
+[chara_mod name="bg" storage="bg/zaizen_ousetu.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
@@ -363,6 +363,14 @@
 胸をよぎる[r]
 ー勇気をだしてごらんなさい[r]
 私は意を決して立ち上がっていった[p]
+
+[fadeoutbgm time=3000]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
