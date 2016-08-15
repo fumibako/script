@@ -194,7 +194,7 @@
 「秘密です」[p]
 
 ;【立ち絵】財前：ため息
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[whosay name="財前美彬" color="#7a65b2"]
 「そうですか……[r]
 [sp] まあ構いません[r]
 [sp] 母上は今お手すきのようだし[r]
@@ -213,7 +213,7 @@
 [主人公退場]
 
 ; 背景洋館応接室
-[chara_mod name="bg" storage="bg/zaizen_ousetu.jpg"]
+[chara_mod name="bg" storage="bg/zaizen_paty_ousetu.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
