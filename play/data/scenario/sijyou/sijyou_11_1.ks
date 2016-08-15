@@ -317,7 +317,7 @@
 [whosay name="華織" color="olivedrab"]
 「わかりました……お元気で」[p]
 ;夕空
-[chara_mod name="bg" storage="bg/test_sora.jpg"]
+[chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
 #
 ;ナレーター
 荒れ果てた地の槇の葉に、霧が立ちのぼっていく。[p]
