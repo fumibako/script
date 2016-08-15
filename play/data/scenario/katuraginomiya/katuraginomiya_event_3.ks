@@ -11,14 +11,23 @@
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
-;【SE】紙に触れる（スッ）
-[playse storage=paper_su.ogg loop=false ]
+
 
 #
 皇后様のお印入りの[r]
 簡単な挨拶と日時の書いてある[r]
 お茶事の招待状と[r]
 葛城宮殿下の手紙に目を通す[p]
+
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[stopbgm]
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 
 
@@ -103,6 +112,12 @@
 「お迎えの車が到着しました。[r]
 支度は整っておられるようですね」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+
 ;【立ち絵】主人公 憂い
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -123,7 +138,6 @@
 「いつもの調子でされば心配はございません。[r]
 [sp]平常心ですよお嬢様」[p]
 
-;背景御所
 
 #侍従
 「こちらで少しお待ちください。」[p]
@@ -134,6 +148,12 @@
 ;【立ち絵】葛城宮 困り顔
 「表情がいつもより硬いな[r]
 [sp]緊張しているのだな？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り ほほえみ
@@ -168,6 +188,12 @@
 その言葉が私を緊張を[r]
 解き放つようにふわっと軽くした。[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;【テキスト全画面】黒茶・和紙風背景に白文字
  [テキスト全画面白文字]
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
@@ -194,7 +220,7 @@
 茶事が終わり追って沙汰を報せると伝えられた。[p]
 [resetfont]
 
-;背景御所
+
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
