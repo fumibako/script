@@ -13,12 +13,17 @@
 [主人公ポーズ通常] 
 [主人公通常]
 
-
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私はもっと財前様に[r]
 [sp] 認めてもらいたい）[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 #
 ばあやに髪を梳いてもらい、[r]
@@ -133,6 +138,9 @@
 ;【立ち絵】主人公：通常　[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ええ」[p]
+
+
+[fadeoutbgm time=3000]
 
 ;［背景パーティ会場］
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
