@@ -70,8 +70,8 @@
 「はい、今行きます！」[p]
 
 
-;背景:薔薇園 テスト用背景を用意中
-[chara_mod name="bg" storage="bg/zazen_bara.jpg" time=50]
+;【背景】薔薇園
+[chara_mod name="bg" storage="bg/zaizen_bara.jpg" time=50]
 [主人公ポーズ通常]
 [主人公通常]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
