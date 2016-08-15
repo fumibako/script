@@ -9,15 +9,15 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
 
+[テキスト全画面白文字]
+外に出て車夫をみつけると、華衣がいると思われる『波ケ浦』へと向かった。[p]
+
+[イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
-#
-外に出て車夫をみつけると華衣がいると思われる『波ケ浦』へと向かった。[p]
 
 ;場面転換
 ;[波ヶ浦]
@@ -38,16 +38,25 @@
 一生この気持ちがわからない」[p]
 [whosay name="華衣" color=%mp.color]
 「あの人は何の才能もなかった私に勇気と希望を与えてくれた、」[p]
-;△ここで華衣の半生を語っても？好みで追加
 ;テーマに反する言葉をいう…セリフ難しい
 ;幸せは信じれば巡ってくる それは案外気づかない近い場所にあるかもしれません
+;テーマ部なんで音楽流しておくか～
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
+
 [whosay name="華衣" color=%mp.color]
 「あの日の『幸せ』は、もう……どこにもない」[p]
 [whosay name="華衣" color=%mp.color]
 「遠いところにいって何処にもない」[p]
 [whosay name="華衣" color=%mp.color]
 「それなのに『幸せ』を見せられて、
-押し付けられるくらいなら」[p]
+押し付けられるくらいなら！」[p]
+
 [whosay name="華織" color="olivedrab"]
 「華衣、僕がこんなこというのは、おこがましいけれど」[p]
 [whosay name="華織" color="olivedrab"]
@@ -91,6 +100,9 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「届かなかっただけで、はっきりとここに残っているんです」[p]
+
+[fadeoutbgm time=3000]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華衣さんの『大事な人の手紙』を見つけてきました」[p]
 ;手渡す
@@ -114,6 +126,13 @@
 #
 ;ナレーター
 華衣は、[名前]から折紙で挟まれた手紙を受け取ると、破れないようにそっと開いた[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 
 [手紙華衣婚約者 fumi_number=]
 華衣へ[r]
