@@ -163,6 +163,7 @@
 [chara_mod name="bg" storage="bg/test_sora.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
+[主人公眉通常]
 [主人公目大]
 #
 私は空を見上げる[r]
