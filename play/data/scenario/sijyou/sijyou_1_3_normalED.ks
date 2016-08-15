@@ -20,6 +20,13 @@
 [whosay name="磯野" color="dimgray"] 
 ;お嬢様
 [名前]様、四条華織さまがお迎えに来られました。[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 わかったわ。すぐ参りますとお伝え下さい。[p]
 [whosay name="磯野" color="dimgray"] 
@@ -91,13 +98,26 @@
 ;△主人公の反応は、いる？
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;(いえ、その後のお手紙は沢山頂きましたので楽しかったです)[p]
+
+[fadeoutbgm time=2000]
+
 [whosay name="華織" color="olivedrab"]
 もちろん、今では、貴方のことを芯の強さ持った素敵な女性だと思っている[p]
 [whosay name="華織" color="olivedrab"]
 時折、みせてくれる素の可愛らしい部分も含めて[p]
+
+[stopbgm]
+
 ;○必要に応じて[p]ではなくてウェイト[er]？
 [whosay name="華織" color="olivedrab"]
 僕は[名前]のことが好きなんだ[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
+
 [主人公照れ目普通]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
@@ -124,7 +144,10 @@
 [whosay name="華織" color="olivedrab"]
 「これからは記念日ごとに帯留めを買おう」[p]
 ;○華織は、妹のことを思い出し。これから、戦争や病気などで別れあるかもしれないと思って。
-;冬のしんとした寒さの中、2つの暖かな吐息がほんわりと並び、次の季節に思いを馳せる。
+
+#
+冬のしんとした寒さの中、2つの暖かな吐息がほんわりと並び、次の季節に思いを馳せる。[p]
+
 [whosay name="華織" color="olivedrab"]
 (あの人に負けないほどの恋を)[p]
 [whosay name="華織" color="olivedrab"]
