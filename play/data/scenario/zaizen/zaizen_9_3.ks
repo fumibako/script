@@ -1,24 +1,27 @@
 ;=============================================
 ;イベント２回目【両家顔合わせ】9月3週、
 ;=============================================
-;【背景】主人公邸_庭
-[chara_mod name="bg" storage="bg/room_niwa.jp"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+
+;【背景】主人公邸_庭
+;[chara_mod name="bg" storage="bg/room_niwa.jp"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 [イベントシーン構築]
-
-
 [主人公ポーズ通常]
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 #
 ――ついに、顔合せ当日となった。[p]
+[if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：横目頬染め、片手を上げている　
 [主人公頬染め]
@@ -142,8 +145,9 @@
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 ;【背景】料亭風の屋内（昼）
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
+[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+
 
 ;【立ち絵】財前：通常
 ;[財前通常]
@@ -320,8 +324,9 @@
 ;【SE】足音複数廊下
 ;[playse storage=""]
 ;［背景庭］
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;【背景】庭園　料亭の庭だと思いますので変更
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
 
 #
 庭に着くとまだ緑の美しい日本庭園が広がり[r]
@@ -350,6 +355,8 @@
 「言っておきたいことがあります[r]
 [sp] 私との縁談に恋愛などを期待はしないで頂きたい」[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公：驚き
 [主人公驚]
 [主人公眉困り]
@@ -368,6 +375,13 @@
 [sp] ですが私は妻となる方は華族である地位、[r]
 [sp] 器量、貞淑さしか求めてません[r]
 [sp] それ以外の好意もわずらわしい」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 
 ;【立ち絵】主人公：傷つき
 [whosay name=&sf.girl_namae color="#cf5a7f"]
