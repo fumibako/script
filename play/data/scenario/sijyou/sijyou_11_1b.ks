@@ -3,12 +3,12 @@
 ;△ ○壺の柄と暗号を照らし合わせ、妹の場所を発見する
 ;背景：黒っぽい和紙風。暗転でもいいかも？
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
-
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
 
 [テキスト全画面白文字]
 外に出て車夫をみつけると、華衣がいると思われる『波ケ浦』へと向かった。[p]
@@ -159,12 +159,22 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「一緒に行きましょう」[p]
 ;○主人公追う
+[主人公退場]
 
+[テキスト全画面白文字]
 ;場面転換 ネリネの庭がどういったものか地の文が必要。絵によって変更
 # 
 ;ナレーター
 華衣を追った[名前]達は、以前、華織に尋ねた温室へとたどり着く。[p]
 温室の中は、ガラスとネリネに囲われた小さな箱庭であった。[p]
+
+[イベントシーン構築]
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
+
+
 ;[婚約者の花園] ネリネ？の庭…背景がないなら私が描いてボカすか青空か夕空の背景…もう少し上手く描きたいところ
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=100]
 
@@ -194,10 +204,12 @@
 [whosay name="華衣" color=%mp.color]
 「……こんな近くに探し物はあったのですね」[p]
 
+[主人公憂い]
+[wait time=10]
 #
 ネリネの花言葉には、もうひとつの言葉があった。[r]
-『忍耐』 [p]
-けれど、それは十分だと思い、私は胸の内にしまっておいた。[r]
+それは、『忍耐』 [p]
+けれど、それは十分だと思い、私は胸の内にしまっておいた。[p]
 ほんの少しですが、想うゆえに耐え忍ぶ気持ちが、[r]
 私にもわかったから--[p]
 
@@ -286,10 +298,19 @@
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-華織さま[p]
+「華織さま　」[p]
+[whosay name="華織" color="olivedrab"]
+……[p]
 #
 華織は[名前]の手を強く握った。[r]
 [名前]も華織の表情を見て、強く握り返す。[p]
+
+『また会う日を楽しみに』　『幸せな思い出』 [p]
+『忍耐』[p]
+
+思い出を重ねて、どんなことがあっても共に歩んでいきたい [p]
+
+
 ;¥¥¥¥¥¥¥¥イベント6おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
