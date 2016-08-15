@@ -48,6 +48,9 @@
 
 ;イベントスチル
 ;幼い頃の2人と文矢　を背景に　二人の結納姿
+[chara_mod name="bg" storage="bg/sijyou_CGnomal.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 # 
 ;ナレーターモノローグ
 『幸せは信じれば巡ってくる
@@ -96,6 +99,9 @@
 ;[名前]は、華織に微笑み返すと縁側でネリネの花を見つめた。[p]
 ;[whosay name="華織" color="olivedrab"]
 ;(手紙の代わりに、華で想いを綴っていくと決めたのだから、もっと精進しなくては)[p]
+;ないとおもうけど財前シナリオに習ってはみた
+;[chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;主人公をみながら作業再開
 ;#
 ;その後、華道家として祖母以上に認められ華織は、四条御流として更に名が知れ渡るほどに国の文化に貢献することとなった。[p]
