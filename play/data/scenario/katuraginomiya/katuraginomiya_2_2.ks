@@ -16,9 +16,9 @@
 [sp]やっと来ましたね」[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】夕涼み
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 
 #
