@@ -108,13 +108,14 @@ CGここまで
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「この指輪は？」[p]
 
-[fadeoutbgm time=3000]
 
 ;【立ち絵】葛城宮真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「エンゲージメントリングという[r]
 [sp]西洋では婚約する時こうして指輪を贈るんだ[r]
 [sp]もう一度君に結婚を申し込もう」[p]
+
+[fadeoutbgm time=3000]
 
 ;【立ち絵】主人公 微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
