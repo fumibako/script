@@ -15,6 +15,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 [whosay name=磯野 color="dimgray"]
 「お嬢様そんなんなに[r]
 [sp]ラヂオの前でじっと待たれてても[r]
@@ -50,10 +56,11 @@
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう」[p]
+[主人公退場]
 
-
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / housoukyoku.jpg "]
 ;ラジオ放送局
-背景放送局
+[イベントシーン構築枠茶色]
 ;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……」[p]
@@ -123,6 +130,7 @@
 周りに調和しながら指導力を付けたい）[p]
 
 [テキスト全画面白文字]
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / enzetu.jpg  "]
 [sp]「ラジオをお聞きの国民の皆様方[r]
 此度の海軍高官の不祥事を私は誠に申し訳なく[r]
 情けなく思っている
