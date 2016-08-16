@@ -89,6 +89,8 @@
 [テキスト全画面白文字暗]
  同時刻
  与党会議室[p]
+ 
+ [chara_mod name="bg" storage="bg / I9IhvvVdPo / kaigisitu.jpg"]
 [イベントシーン構築枠茶色]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　怒り
