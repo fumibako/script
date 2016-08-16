@@ -19,17 +19,23 @@
 #
 磯野はゆっくりと沈鬱に新聞を差し出した[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 ;【立ち絵】主人公 驚き
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「これは！」[p]
 
-;【SE】紙に触れる（パラリ）
-[playse storage=paper_open.ogg loop=false ]
 
-[テキスト全画面白文字]
-
-[font color=navy size=21]
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
+[テキスト全画面白文字無背景]
+;[新聞]
+[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [sp]内閣解散か！？
 [sp]過去最大の海軍の汚職事件 [r]
@@ -48,6 +54,15 @@
 現内閣への国民の反発は大きくなるだろう[p]
 [r]
 [resetfont]
+[playse storage=paper_open.ogg loop=false ]
+
+;[背景_庭]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
+;メッセージをもどします
+#
+[cm]
 [イベントシーン構築]
 [背景_庭]
 [主人公ポーズ通常]
@@ -57,6 +72,9 @@
 [whosay name=磯野 color="dimgray"]
 「葛城宮殿下も海軍大佐です[r]
 少なからず影響があるやもしれません」[p]
+
+
+[fadeoutbgm time=3000]
 
 ;【立ち絵】主人公　困り
 [主人公憂い]
@@ -75,6 +93,12 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　怒り
 「どういうことですか今原中将！」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】一閃（緊迫シーンに
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+[endif]
 
 #今原中将
 「貴殿には関係のないことだ[r]
@@ -107,7 +131,7 @@
 「欧羅巴は諸国は産業革命と[r]
 [sp]植民地を手に入れることで[r]
 [sp]豊かになったのだよ！ 　違うか？」[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】葛城宮　怒り
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「開き直るな！[r]
@@ -124,6 +148,11 @@
 (侮蔑するような視線に言葉が詰まる[r]
 私がこの党に入れたのは国の制度
 に保守的な叔父宮の一派に対抗する為だ）[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
 
 ;【立ち絵】葛城宮　目閉じ眉困り
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -137,6 +166,7 @@
 [sp]だが明らかになった以上[r]
 [sp]対策を立てねばならない[r]
 [sp]今後は……」[p]
+[stopbgm]
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
