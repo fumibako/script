@@ -62,6 +62,11 @@
 [sp]私も殿下や殿下の母宮様の[r]
 [sp]お役にたてられるといいのだけど」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [whosay name=磯野 color="dimgray"]
 「きっとお役にたてますよ
 [sp]お稽古に加え新聞や[r]
@@ -82,7 +87,7 @@
 [主人公ポーズ通常]
 [主人公伏目]
 [主人公目パチ1回]
-背景庭園
+背景仲人庭園
 
 #葛城宮妃
 「振袖がとても似合っておられて[r]
@@ -244,6 +249,13 @@
 「人それぞれなので[r]
 [sp]比較はよくありませんわ。」[p]
 
+[stopbgm]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 ;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああそうだなそれよりなにから話そうか[r]
@@ -269,6 +281,8 @@
 [r]
 [sp]時間が許すまで私は殿下の話を聞いた[p]
 [resetfont]
+背景仲人庭園
+
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公伏目]
@@ -283,6 +297,8 @@
 ;【立ち絵】主人公　微笑み[p]
 [主人公ほほえみ]
 「ええ楽しみにしておりますわ」[p]
+[stopbgm]
+
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
