@@ -34,12 +34,23 @@
 [sp]お手紙は来ないかも[r]
 [sp]知れないですね」[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公 通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 [主人公口通常]
 「？　[r]
 [sp]それはどういう意味かしら？」[p]
+
+#
+磯野は困ったように新聞を差し出す[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 [whosay name=磯野 color="dimgray"]
 「これをご覧ください」[p]
