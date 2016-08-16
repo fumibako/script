@@ -1,5 +1,6 @@
 ;7回目イベント
-;薔薇園
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
+
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -10,6 +11,12 @@
 ;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「待たせたかな？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
 
 [主人公ポーズ通常]
 [主人公困り]
@@ -25,6 +32,8 @@
 
 [whosay name=磯野 color="dimgray"]
 「はい、御前を失礼いたします」[p]
+
+[fadeoutbgm time=3000] 
 
 ;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -43,6 +52,12 @@
 [主人公口開]
 「私では苦しいときを[r]
 [sp]分かち合えないのですか？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】哀しげな曲
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
 
 ;【立ち絵】葛城宮 目閉じ
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -69,7 +84,7 @@
 [sp]見て好意を持った[r]
 [sp]手紙を交わし、いつのまにか[r]
 [sp]私にとってなくてはならない人となった[p]
-
+[fadeoutbgm time=3000] 
 ;【立ち絵】葛城宮 真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
 君には幸せになって欲しい[r]
@@ -91,6 +106,12 @@
 [sp]私も犠牲を払います[r]
 [sp]それが私の自由であろうと[r]
 [sp]心であろうと構いませんわ」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 ;【立ち絵】葛城宮 真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
