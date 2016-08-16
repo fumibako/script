@@ -266,8 +266,8 @@
 [sp]幼いころから私は彼の話を聞いた[r]
 [sp]目まぐるしく変わったフランス情勢に…… 」[p]
 
-;ヨーロッパ町並背景全画面表示
-[chara_mod name="bg" storage="bg/zaizen_gofuku.jpg"]
+;呉服屋的な背景 全画面文字のみ表示
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / yo-roppa.jpg"]
 [sp]殿下は１２歳でイギリスに留学し、[r]
 イギリス国王から立憲君主について学ばれ、[r]
 [r]
@@ -283,7 +283,10 @@
 感じられる私も沢山勉強しようと思った[r]
 [r]
 [sp]時間が許すまで私は殿下の話を聞いた[p]
-[resetfont]
+;メッセージをもどします↓
+[cm]
+ 
+
 
 ;背景仲人庭園
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / nakoudoteiniwa.jpg"]
