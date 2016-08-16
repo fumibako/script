@@ -15,6 +15,12 @@
 [sp]手紙を送るといわれたのですよね？[r]
 [sp]もうあれからひと月ですが」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 ;【立ち絵】主人公 目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
@@ -40,10 +46,11 @@
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[新聞]
-[テキスト全画面白文字]
-[font color=navy size=21]
-[r]
+[テキスト全画面白文字無背景]
+;[新聞]
+[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 [sp]内閣不信任決議案が可決し内閣総辞職に！[r]
 [r]
 [sp]海軍汚職の全貌が明らかになり[r]
