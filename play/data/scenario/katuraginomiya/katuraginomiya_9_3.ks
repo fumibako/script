@@ -87,7 +87,10 @@
 [主人公ポーズ通常]
 [主人公伏目]
 [主人公目パチ1回]
-背景仲人庭園
+
+;背景仲人庭園
+ [chara_mod name="bg" storage="bg / I9IhvvVdPo / nakoudoteiniwa.jpg"]
+ 
 
 #葛城宮妃
 「振袖がとても似合っておられて[r]
@@ -264,7 +267,7 @@
 [sp]目まぐるしく変わったフランス情勢に…… 」[p]
 
 ;ヨーロッパ町並背景全画面表示
- [テキスト全画面白文字]
+[chara_mod name="bg" storage="bg/zaizen_gofuku.jpg"]
 [sp]殿下は１２歳でイギリスに留学し、[r]
 イギリス国王から立憲君主について学ばれ、[r]
 [r]
@@ -281,8 +284,9 @@
 [r]
 [sp]時間が許すまで私は殿下の話を聞いた[p]
 [resetfont]
-背景仲人庭園
 
+;背景仲人庭園
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / nakoudoteiniwa.jpg"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公伏目]
