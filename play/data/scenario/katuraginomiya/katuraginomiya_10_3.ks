@@ -12,6 +12,12 @@
 「お嬢様、[r]
 葛城宮殿下からの手紙でございます」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 #
 磯野は憂いた表情で私に手紙を差し出す[r]
 磯野も贈賄事件を重く受け止めている[p]
