@@ -47,6 +47,12 @@
 「磯野、お父様に[r]
 [sp]今日時間があるときにお話しがしたいと伝えて」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 [whosay name=磯野 color="dimgray"]
 「かしこまりました[r]
 [sp]お話しとはやはり葛城宮殿下の事で[r]
@@ -142,6 +148,7 @@
 
 #
 そしてお父様は優しく笑ってくれた[p]
+[stopbgm]
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
