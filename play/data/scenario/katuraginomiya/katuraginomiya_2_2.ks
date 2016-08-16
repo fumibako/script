@@ -15,6 +15,12 @@
 「葛城宮様からのお手紙です[r]
 [sp]やっと来ましたね」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
+
 #
 磯野も明るい表情をしている
 
