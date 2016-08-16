@@ -1,4 +1,6 @@
 ;背景：薔薇園のまま
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
+
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -16,6 +18,8 @@
 #
 涙がとめどなく頬を伝い、[r]
 悲しみで胸がいっぱいにった[p]
+
+;【BGM】いにしえより続く街、大宰府
 
 ;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -35,6 +39,11 @@
 殿下は私を一度も振り返ることなく[r]
 薔薇園を後にしました。[p]
 
+[chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+ 
+[イベントシーン構築]
+[主人公ポーズ通常]
 ;【立ち絵】主人公 憂い
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
