@@ -1,5 +1,6 @@
 ;9回目イベント
-;背景森林公園
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / kouenn.jpg"]
+
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -14,6 +15,12 @@
 [whosay name=磯野 color="dimgray"]
 「ああ……殿下が来られましたね[r]
 [sp]では私は呼ばれるまで暫く失礼します」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 
 ;【立ち絵】主人公 微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -100,6 +107,8 @@ CGここまで
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「この指輪は？」[p]
+
+[fadeoutbgm time=3000]
 
 ;【立ち絵】葛城宮真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
