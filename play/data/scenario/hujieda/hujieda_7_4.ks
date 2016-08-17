@@ -2,7 +2,10 @@
 ;イベント４回目【手紙を出す】７月２回以上お琴のお稽古
 ;=============================================
 ;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+;【背景】主人公邸 お稽古部屋
+ [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -17,8 +20,15 @@
 [主人公ほほえみ]
 「お手紙書けたわ！」[r]
 （私からの手紙も喜んでくれるかしら？） [p]
-;【SE】紙の音（カサッ）
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
 [手紙主人公]
 
@@ -52,15 +62,14 @@
 [sp]お手紙心よりお待ちしています。
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp かしこ　　　　　　　　　　　　　　　　　　　　　　　　　
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][名字]　[名前] [p]
+[fadeoutbgm time=3000]
 [手紙読了]
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公通常]
 [主人公目パチ1回]
 
@@ -68,6 +77,12 @@
 わたしは琴に向かい、[r]
 琴を弾くしばらく弾き続けた[r]
 ふわっと琴の端に上に鳩が止まる[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 ;【SE】鳩の鳴き声
 
@@ -79,8 +94,11 @@
 ……ありがとう。[r]
 今日は私も返事をかいたの待ってね」[p]
 
-;【SE】紙の音（カサッ）
-;【SE】紙の音（カサッ）
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
+
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
 
 #
 私は鳩の足に括り付けてある手紙をほどき[r]
@@ -96,8 +114,8 @@
 鳩が飛び立つのを見送って[r]
 私は手紙を開いた。[p]
 
-;【SE】紙の音（カサッ）
-;【SE】紙に触れる（パラリ）
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
 
 [手紙藤枝 fumi_number=]
 琴の奏者様へ[l][r]
@@ -138,6 +156,8 @@
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
+
 [主人公通常]
 [主人公目パチ1回]
 ;【立ち絵】主人公　目伏せ頬染
@@ -150,6 +170,7 @@
 #
 私は鳩の飛び立った空を見上げた[p]
 
+[fadeoutbgm time=3000]
 [主人公通常]
 [主人公目パチ1回]
 ;【立ち絵】主人公　目閉じ
