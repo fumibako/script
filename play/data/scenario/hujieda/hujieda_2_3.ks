@@ -363,6 +363,7 @@
  [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
+[主人公ポーズ通常]
 [whosay name="三宮　時子" color="#c25232"]
 「[名前]さん説得頑張ってくださいね」[p]
 
@@ -407,6 +408,7 @@
  [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
+[主人公ポーズ通常]
 ;【立ち絵】主人公：目閉じ
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
