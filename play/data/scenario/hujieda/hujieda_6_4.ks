@@ -1,8 +1,9 @@
 ;=============================================
 ;イベント3回目【手紙が届くその３】６月お琴のお稽古を２回以上
 ;=============================================
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+;【背景】主人公邸 お稽古部屋
+ [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -22,6 +23,12 @@
 それに押さえの手が痛くなって腕も痛いわ[r]
 やっぱり切れてしまうと集中できない）[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 ;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
 
@@ -33,11 +40,7 @@
 「ありがとう、入っていいわよ」[p]
 
 ;【SE】襖を開ける（ゆっくり）
-
 [playse storage=fusuma-open.ogg loop=false ]
-[stopbgm]
-;【BGM】みやび（磯野テーマ）
-[playbgm storage="isono_miyabi.ogg" loop=true]
 
 [whosay name=磯野 color="dimgray"]
 「失礼します」 [p]
@@ -79,7 +82,8 @@
 では失礼します」[p]
 [stopbgm]
 
-;【SE】襖を開ける（ゆっくり）
+;【SE】襖を閉める（ゆっくり）
+[playse storage=fusuma-close.ogg loop=false ]
 
 #
 磯野が部屋から出ていき、[r]
@@ -113,8 +117,12 @@
 うまく弾けれないから[r]
 きっと呆れているかしら？　[p]
 
-;【SE】紙の音（カサッ）
+[fadeoutbgm time=3000]
+
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
 [手紙藤枝 fumi_number=]
 
@@ -155,20 +163,26 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
 [主人公照れ目普通]
 （音から察してくれるなんてきっと優しい方なのね）[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+;【SE】紙を折る（丁寧）
+[playse storage=paper_oru.ogg loop=false ]
 
-;【SE】紙に触れる（パラリ）
 
 ;【立ち絵】主人公　ほほえみ
 [主人公ほほえみ]
 「私もお手紙を返せるといいのだけれど」[p]
+[fadeoutbgm time=3000]
 
 ;@jump storage="event.ks" target=*event_owari
 
