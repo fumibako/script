@@ -112,16 +112,14 @@
 [sp] 貴方のピアノが効きたくて、[r]
 [sp] お兄様に連れてきていただいたのです」[r]
 [sp] （藤枝様はどう思われるのかしら）[p]
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 ;【立ち絵】藤枝：驚き
 [whosay name="藤枝 肇" color=%mp.color] 
 「ああ貴方が！　……っと」[p]
-
-[if exp="sf.BGM=='ON'"]
-;【BGM】星降る夜に（思い出/夢見るシーンに
-[playbgm storage="yumemiru_hoshi.ogg" loop=true]
-[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
-[endif]
 
 #
 藤枝様はコリウスを落としそうになった[r]
