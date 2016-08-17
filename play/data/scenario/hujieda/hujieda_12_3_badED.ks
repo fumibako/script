@@ -27,9 +27,9 @@
 この国へ戻ってきたのは十年後だった[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】夕涼み
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
 
 ;【テキスト全画面】黒茶・和紙風背景(暗)に白文字
