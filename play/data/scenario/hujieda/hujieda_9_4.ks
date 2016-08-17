@@ -18,8 +18,12 @@
 町は一層にぎやかだ[p]
 
 [stopbgm]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 
-;【BGM】筍の訪れ(町
 [whosay name="三宮　時子" color="#c25232"]
 「まあ[名前]さんお久しぶりね！　[r]
 [sp]今日も散策されてるの？」[p]
@@ -109,13 +113,19 @@
 [whosay name="三宮　時子" color="#c25232"]
 「そうですの、[r]
 [sp]でも深入りは良くないと思いますわ」[p]
-
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ思案
 [主人公目閉じ]
 [主人公口通常]
 「良くないですか。[r]
 [sp]……それでも知りたいと思うときがあるのです」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 [whosay name="三宮　時子" color="#c25232"]
 「[名前] さんまさかとは思いますが[r]
@@ -137,8 +147,10 @@
 「時子さんありがとうございます！　[r]
 [sp]それでは時子さんごきげんよう」[p]
 
-[stopbgm]
-;背景: [レトロな喫茶店]
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / mirukutest.jpg " time=50]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 
 #
 ２駅先の駅前に着くとピアノの音がしたので[r]
@@ -166,6 +178,8 @@
 ;【立ち絵】主人公：目伏せ思案
 [主人公伏目]
 「私も藤枝様にお花とお手紙を渡せたらいいのに」[p]
+
+[fadeoutbgm time=3000]
 
 ;【立ち絵】主人公：ハッとする
 [主人公驚]
