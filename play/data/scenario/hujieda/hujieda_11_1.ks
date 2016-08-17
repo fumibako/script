@@ -31,12 +31,12 @@
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様、お茶をお持ちしました」[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】主人公：通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「ありがとう、入っていいわよ」[p]
-[fadeoutbgm time=3000]
+
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 
