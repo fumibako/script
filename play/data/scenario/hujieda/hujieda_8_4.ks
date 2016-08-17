@@ -2,7 +2,9 @@
 ;イベント５回目【手紙のお返事】８月２回以上お琴の稽古をする
 ;=============================================
 ;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+;【背景】主人公邸 お稽古部屋
+ [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -18,6 +20,12 @@
 六段の調べの４段まで弾けるようになった。[r]
 お琴をかき鳴らしながら私はよく鳥文の君の[r]
 事を考えている。[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 ;【立ち絵】主人公　目伏せ　不安そう
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -58,7 +66,12 @@
 はやる気持ちに着地した鳩の足の[r]
 手紙をさっと解く。[p]
 
-;【SE】紙の音（カサッ）
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
+
+
 [手紙藤枝 fumi_number=]
 [名字]　[名前]様へ [l][r]
 [r]
@@ -84,8 +97,12 @@
 [sp]これで僕が書くのは最後の手紙とします。[r]
 お琴を聞かせていただいてありがとうございました。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
+[fadeoutbgm time=3000]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
+
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
 ;【立ち絵】主人公　目伏せ　悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -95,7 +112,11 @@
 きっと手紙を交わす事を反対されてしまう[r]
 どうしたらいいの？）[p]
 
-[背景_庭]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 [主人公ポーズ通常]
 [主人公真剣]
 [主人公目パチ1回]
@@ -146,14 +167,24 @@
 「いえ……秘密です」[r]
 （直接話しては手紙を交わした事が[r]
 [sp]分ってしまうわ。）[p]
+[fadeoutbgm time=3000]
 [主人公効果消]
 
 ;【テキスト全画面】黒茶・和紙風背景に白文字
  [テキスト全画面白文字]
 翌日[r]
 ー１０時前　[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
+;【背景】主人公邸 玄関
+ [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
-[背景_玄関]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
@@ -183,9 +214,10 @@
 [主人公目閉じ]
 （私が出て行ったらきっと皆に知られてしまう[r]
 [sp]藤枝様にも迷惑がかかるし[r]
-[sp]……何か何か出来ないかしら）[p]
+[sp]……何か何か出来ないかしら）
 
-;【立ち絵】主人公　ハッとする
+[fadeoutbgm time=3000]
+;【立ち絵】主人公　ハッとする[p]
 [主人公眉通常]
 [主人公目大]
 （そうだわ郵便が来るこの時間帯に[r]
