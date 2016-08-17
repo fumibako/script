@@ -84,20 +84,20 @@
 [whosay name="華織" color="olivedrab"]
 (そのうち、訪ねてくるような仲になれるだろうか？)[p]
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「私達も、負けていられませんね」[p]
 [主人公口笑顔]
 [wait time=10]
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「私達も、負けていられませんね」[p]
 [whosay name="華織" color="olivedrab"]
 「！ そうですね。 休憩はこのあたりにしておきましょうか」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「いいのですか？」[p]
 
 [主人公通常]
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「いいのですか？」[p]
 
 [whosay name="華織" color="olivedrab"]
 「ちょうど[名前]さんの愛らしい顔をみたら、いい構図を思いつきましたから」[p]
@@ -105,11 +105,12 @@
 [主人公ほほえみ]
 [wait time=10]
 ;止まるの回避
-;お母さん度回避案↓
-[イベントシーン構築枠茶色]　
+;お母さん度回避案↓ いきなり変わると違和感あるかも
+;[イベントシーン構築枠茶色]　
 #
 [名前]は華織に微笑み返すと、縁側で揺れるネリネの花を見つめた。[p]
 ;主語が決まってません↑
+#
 [whosay name="華織" color="olivedrab"]
 (手紙の代わりに、華で想いを綴っていくと決めたのだから、もっと精進しなくては)[p]
 [wait time=10]
