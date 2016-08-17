@@ -65,7 +65,7 @@
 #
 はやる気持ちに着地した鳩の足の[r]
 手紙をさっと解く。[p]
-
+[fadeoutbgm time=3000]
 ;【SE】衣擦れ（スッ）
 [playse storage=kinuzure.ogg loop=false ]
 ;【SE】紙に触れる（スッ）
@@ -97,7 +97,13 @@
 [sp]これで僕が書くのは最後の手紙とします。[r]
 お琴を聞かせていただいてありがとうございました。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
-[fadeoutbgm time=3000]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 
@@ -112,11 +118,7 @@
 きっと手紙を交わす事を反対されてしまう[r]
 どうしたらいいの？）[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
-[endif]
+
 
 ;【背景】主人公邸 庭の見える部屋：昼
  [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
@@ -129,7 +131,6 @@
 [playse storage=girl_in_run.ogg loop=false ]
 ;【SE】襖を開ける（勢いよく）
 [playse storage=fusuma-open_fast.ogg loop=false ]
-[stopbgm]
 
 ;【立ち絵】主人公 通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
