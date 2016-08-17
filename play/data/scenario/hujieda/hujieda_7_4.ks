@@ -22,10 +22,11 @@
 （私からの手紙も喜んでくれるかしら？） [p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+[if exp="sf.BGM=='ON'"]
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
@@ -62,7 +63,6 @@
 [sp]お手紙心よりお待ちしています。
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp かしこ　　　　　　　　　　　　　　　　　　　　　　　　　
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][名字]　[名前] [p]
-[fadeoutbgm time=3000]
 [手紙読了]
 [resetfont]
 
@@ -78,11 +78,7 @@
 琴を弾くしばらく弾き続けた[r]
 ふわっと琴の端に上に鳩が止まる[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
+
 
 ;【SE】鳩の鳴き声
 
