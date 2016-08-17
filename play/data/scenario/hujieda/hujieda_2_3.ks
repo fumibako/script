@@ -1,7 +1,6 @@
 ;=============================================
 ;イベント１４回目【藤枝の留学辞退】2月3週、
 ;=============================================
-[背景音楽学校ピアノ練習室]
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / ongakurensyuusitu.jpg " time=1000]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -91,7 +90,8 @@
 
 ;【テキスト全画面】黒茶・和紙風背景に白文字
  [テキスト全画面白文字]
-#数日後[p]
+数日後[p]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
