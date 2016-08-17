@@ -80,7 +80,6 @@
 [whosay name=磯野 color="dimgray"]
 「ええ、それがいいと存じます[r]
 では失礼します」[p]
-[stopbgm]
 
 ;【SE】襖を閉める（ゆっくり）
 [playse storage=fusuma-close.ogg loop=false ]
