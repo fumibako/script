@@ -1,8 +1,9 @@
 ;=============================================
 ;イベント２回目【手紙が届くその２】5月お琴のお稽古を２回以上
 ;=============================================
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+;【背景】主人公邸 お稽古部屋
+ [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -21,13 +22,20 @@
 [sp]それにしても簡単な曲だけ[r]
 [sp]でも弾けると嬉しいものね）[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;【SE】鳩の鳴き声
 
 ;【立ち絵】主人公 驚
 [主人公驚]
 「もしかして！」[p]
 
-;【SE】襖を開ける
+;【SE】襖を開ける（ゆっくり）
+[playse storage=fusuma-open.ogg loop=false ]
 
 ;【SE】鳩の鳴き声
 
@@ -43,8 +51,9 @@
 [主人公ほほえみ]
 「待ってね。」[p]
 
-;【SE】紙の音（カサッ）
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
+
 
 [手紙藤枝 fumi_number=]
 
@@ -80,9 +89,6 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
