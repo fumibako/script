@@ -117,6 +117,11 @@
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
 [endif]
+
+;【背景】主人公邸 庭の見える部屋：昼
+ [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
 [主人公ポーズ通常]
 [主人公真剣]
 [主人公目パチ1回]
@@ -214,10 +219,10 @@
 [主人公目閉じ]
 （私が出て行ったらきっと皆に知られてしまう[r]
 [sp]藤枝様にも迷惑がかかるし[r]
-[sp]……何か何か出来ないかしら）
+[sp]……何か何か出来ないかしら）[p]
 
 [fadeoutbgm time=3000]
-;【立ち絵】主人公　ハッとする[p]
+;【立ち絵】主人公　ハッとする
 [主人公眉通常]
 [主人公目大]
 （そうだわ郵便が来るこの時間帯に[r]
