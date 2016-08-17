@@ -14,6 +14,7 @@
 [主人公目パチ1回]
 
 #磯野は手紙を差し出していった[p]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
