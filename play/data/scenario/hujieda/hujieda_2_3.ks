@@ -2,18 +2,24 @@
 ;イベント１４回目【藤枝の留学辞退】2月3週、
 ;=============================================
 [背景音楽学校ピアノ練習室]
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / ongakurensyuusitu.jpg " time=1000]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
-;背景音楽練習室
+[イベントシーン構築枠茶色]
 
 ;【立ち絵】藤枝：ため息
+[whosay name="藤枝 肇" color=%mp.color] 
 「この短期間でこの難曲を弾きこなすのは難しいな。[r]
 [sp]あと数日後だというのに……」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 ;【立ち絵】藤枝：落ち込み
 （課題曲はパガニーニ超絶技巧練習曲集[r]
@@ -22,7 +28,8 @@
 [sp]……自分の思う音色にはほど遠い）[p]
 
 
-;【SE】紙の音（カサッ）
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
 
 [手紙主人公]
 藤枝 肇 様へ[l][r]
@@ -71,19 +78,30 @@
 [手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
 #
 この手紙を読み返し励まされながら[r]
 わずか一か月のわずかな練習時間でこの難曲を[r]
 諦めずに取り組みここまで弾けるようになった。[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】藤枝：目閉じ
+[whosay name="藤枝 肇" color=%mp.color] 
 （僕も最後まで自分の演奏を諦めない……）[p]
 
+;【テキスト全画面】黒茶・和紙風背景に白文字
+ [テキスト全画面白文字]
+#数日後[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
-#数日後
-[背景_庭]
-[主人公ポーズ通常]
+;【背景】主人公邸 庭の見える部屋：昼
+ [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公目パチ1回]
@@ -130,7 +148,9 @@
 [whosay name=磯野 color="dimgray"]
 「わかりました。お嬢様、お気をつけて」[p]
 
-;背景玄関
+;【背景】主人公邸 玄関
+ [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name="三宮　時子" color="#c25232"]
 「さ、[名前]さんお車にお乗りになって！」[p]
 
@@ -143,7 +163,11 @@
 [whosay name="三宮　時子" color="#c25232"]
 「それは秘密ですわ」[p]
 
-[背景レトロな建物]
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / ensoukaijyou.jpg " time=1000]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+[主人公目パチ1回]
 #
 大きな建物の前に車が止まり[r]
 私達は車を降りた[r]
@@ -173,26 +197,40 @@
 [sp]３人は課題の「ラ・カンパネッラ」[r]
 [sp]それから自自由曲の２曲を弾くのですって[r]
 [sp]藤枝さまの演奏は最後だそうよ」[p]
+[fadeoutbgm time=3000]
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / situnaiongaku.jpg " time=1000]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+[主人公目パチ1回]
 
 #
 ２人の演奏が終わり[r]
 舞台の裾から藤枝様が姿を現し、[r]
 その姿を見ただけで私は泣きそうになった。[r]
 彼は客席に一礼しながら私と視線が合い驚いた顔になる[p]
-
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
 [主人公照れ目普通]
 （一目会えただけでこんなにも嬉しい）[p]
 
 ;【立ち絵】藤枝：微笑み
+[whosay name="藤枝 肇" color=%mp.color] 
 （……見守って下さるのですね）[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 #
 私たちは視線で会話するように見つめあい、[r]
 私はうなずき藤枝様はピアノの椅子に座る。[p]
 
 ;【立ち絵】藤枝：目閉じ
+[whosay name="藤枝 肇" color=%mp.color] 
 （貴方が来てくれた、[r]
 [sp]それなら僕は何も恐れることはない）[p]
 
@@ -214,6 +252,7 @@
 盛大な拍手が沸き上り藤枝様は一礼する[p]
 
 ;【立ち絵】藤枝：通常
+[whosay name="藤枝 肇" color=%mp.color] 
 「演奏を聴いて下さりありがとうございました。[r]
 [sp]この場にいられることも僕は誇りに思います[r]
 [sp]ですが僕は独逸留学を辞退します」[p]
@@ -230,6 +269,7 @@
 「静粛に！藤枝君それはどうしてかね？」[p]
 
 ;【立ち絵】藤枝：真剣
+[whosay name="藤枝 肇" color=%mp.color] 
 「僕は今大切にしたい人がいます」[p]
 
 ;【立ち絵】藤枝：目閉じ
@@ -241,6 +281,7 @@
 「まて！　藤枝お前は全てを棒に振る気か？」[p]
 
 ;【立ち絵】藤枝：目伏せ
+[whosay name="藤枝 肇" color=%mp.color] 
 「原……僕はね、ずっと色々なものを諦めてきた。[r]
 [sp]家の為だとか周囲に押し流されてきた[r]
 [sp]努力はしてもいつも諦めてきたんだ」[p]
@@ -255,6 +296,7 @@
 「君はそれで後悔しないのかね？」[p]
 
 ;【立ち絵】藤枝：微笑み
+[whosay name="藤枝 肇" color=%mp.color] 
 「はい！」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -268,6 +310,7 @@
 [sp]自由曲も弾いていくといい」[p]
 
 ;【立ち絵】藤枝：微笑み
+[whosay name="藤枝 肇" color=%mp.color] 
 「ありがとうございます。[r]
 [sp]僕の自由曲はショパンの別れの曲でしたが、[r]
 [sp]別の曲に変えていいですか？」[p]
@@ -276,12 +319,14 @@
 「構わない。どの曲かね？」[p]
 
 ;【立ち絵】藤枝：通常
+[whosay name="藤枝 肇" color=%mp.color] 
 「リストの愛の夢三番おお、愛しうる限り愛せを」[p]
 
 #原
 「お前甘い曲は苦手じゃなかったか？　」[p]
 
 ;【立ち絵】藤枝：微笑み
+[whosay name="藤枝 肇" color=%mp.color] 
 「そうだったけど今、すごく弾きたいから」[p]
 
 #音楽留学関係者
@@ -303,6 +348,7 @@
 そして私の方を向いた[p]
 
 ;【立ち絵】藤枝：真剣
+[whosay name="藤枝 肇" color=%mp.color] 
 （……貴方が好きだ、もう諦めない）[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -311,8 +357,11 @@
 （藤枝様は覚悟をみせてくれた[r]
 [sp]今度は私がお父様を説得する番ね[r]
 [sp]私も藤枝様を諦めないわ）[p]
-
-;背景玄関
+[fadeoutbgm time=3000]
+;【背景】主人公邸 玄関
+ [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
 [whosay name="三宮　時子" color="#c25232"]
 「[名前]さん説得頑張ってくださいね」[p]
 
@@ -324,7 +373,16 @@
 [whosay name="三宮　時子" color="#c25232"]
 「ええ、恋が叶うといいですね」[p]
 
-[背景_庭]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
+;【背景】主人公邸 庭の見える部屋：昼
+ [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
 [主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
@@ -341,10 +399,13 @@
 「お父様にお話があります[r]
 [sp]また時間を空けて欲しいと[r]
 お伝えしてください」[p]
-
-;数刻後
-
-[背景_庭]
+;【テキスト全画面】黒茶・和紙風背景に白文字
+ [テキスト全画面白文字]
+数刻後[p]
+;【背景】主人公邸 庭の見える部屋：夜
+ [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
 ;【立ち絵】主人公：目閉じ
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -451,7 +512,7 @@
 「家の体面以前にも[r]
 [sp]私たちは第一にお前の幸せを願っている[r]
 [sp]その事は覚えて置きなさい」[p]
-
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：照れ目普通
 [主人公照れ目普通]
