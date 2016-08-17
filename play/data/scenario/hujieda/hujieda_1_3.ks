@@ -14,6 +14,11 @@
 [主人公目パチ1回]
 
 #磯野は手紙を差し出していった[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 [whosay name=磯野 color="dimgray"]
 「三宮様からの手紙です[r]
@@ -43,12 +48,18 @@
 「それでは……」[p]
 
 ;【SE】襖を閉める（ゆっくり）
+[playse storage=fusuma-close.ogg loop=false ]
+
+;【SE】落ち着いた足音（フェードアウト）
+[playse storage=isono_out.ogg loop=false ]
 
 #
 磯野の足音が遠ざかるのを確認し[r]
 手紙の封を切り時子さんからの手紙を読む[p]
 
-;【SE】紙の音（カサッ）
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
+
 [手紙]
 [名字]　[名前]様へ [l][r]
 [r]
@@ -83,9 +94,8 @@
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
-[背景_庭]
-[主人公ポーズ通常]
 ;【立ち絵】主人公：驚き
 [主人公驚]
 （藤枝様の留学が無くなる……）[p]
@@ -98,7 +108,12 @@
 [sp]だから悲しくとも応援したい)[p]
 
 ;【SE】ペンで書く
+[playse storage=pen_write.ogg loop=false ]
 ;【SE】ペンで書く
+[playse storage=pen_write.ogg loop=false ]
+
+;【SE】ペンのキャップを閉める
+[playse storage=pen_katya.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公　通常
@@ -117,7 +132,7 @@
 [主人公伏目]
 （時子さんへと中に藤枝様への手紙が入ってある[r]
 [sp]……どうか藤枝様へ辿り着きますように）[p]
-
+fadeoutbgm time=3000
 #
 最後に私が藤枝様の背中を押すのだわ[r]
 藤枝様が自由に飛び立てるように[p]
