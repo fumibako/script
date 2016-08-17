@@ -63,6 +63,7 @@
 [sp]お手紙心よりお待ちしています。
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp かしこ　　　　　　　　　　　　　　　　　　　　　　　　　
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][sp][名字]　[名前] [p]
+[fadeoutbgm time=3000]
 [手紙読了]
 [resetfont]
 
@@ -78,6 +79,11 @@
 琴を弾くしばらく弾き続けた[r]
 ふわっと琴の端に上に鳩が止まる[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 
 ;【SE】鳩の鳴き声
