@@ -22,10 +22,11 @@
 [sp]でも今はだた藤枝様を想って弾きたい[r]
 [sp]私は藤枝様の事を[r]
 そんなに知っているわけでもないけれど）[p]
+
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
 #
@@ -46,6 +47,7 @@
 #
 鳩さんは手元の琴の端に止まり私は手紙をほどいた。[p]
 
+[fadeoutbgm time=3000]
 ;【SE】衣擦れ（スッ）
 [playse storage=kinuzure.ogg loop=false ]
 
@@ -85,6 +87,11 @@
 貴方様からのお返事を待っています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 
@@ -102,6 +109,7 @@
 [sp]もう迷惑になると手紙を出せずにいた[r]
 [主人公目閉じ]
 [sp]これから手紙を沢山出すわ……）[p]
+
 [fadeoutbgm time=3000]
 #
 私は手紙をそっと抱きしめた[p]
