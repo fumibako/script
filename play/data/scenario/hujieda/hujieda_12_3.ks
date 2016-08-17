@@ -16,6 +16,12 @@
 [主人公目パチ1回]
 「……」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 [whosay name=磯野 color="dimgray"]
 「お嬢様、いつまでもふさぎ込んでいても仕方ありません」[p]
 
@@ -145,7 +151,7 @@
 
 [whosay name="三宮　時子" color="#c25232"]
 「そうかしら？　良くないものかなんてわからないものよ」　[p]
-
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：驚き
 [主人公目大]
@@ -157,6 +163,11 @@
 [sp]それに藤枝様は将来有望な殿方です[r]
 [sp]いつまでも[名前]さんのお父様や家令が[r]
 [sp]お手紙を許されない地位にいるとは思いません」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：驚き
@@ -181,7 +192,7 @@
 
 [whosay name="三宮　時子" color="#c25232"]
 「少し元気になったようでよかったわ」[p]
-
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
