@@ -25,21 +25,22 @@
 [イベントシーン構築]
 ;↓四条のモノローグ多いのでこっち？主人公の存在感がなくなってきた
 ;[イベントシーン構築枠茶色]　
-[主人公ポーズ通常]
-[主人公通常]
-[wait time=10]
-[主人公目パチ1回]
-[wait time=10]
+
 ;【背景】[背景_庭]　和室かな？　昔の華族の家は和と洋が隣接しているので？
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [whosay name="華織" color="olivedrab"]
 「ふぅ……なかなか決まりませんね」[p]
-[主人公口ほほえみ]
+[主人公ポーズ通常]
+[主人公通常]
+[wait time=10]
+[主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうされましたか？ 」[p]
+[主人公口ほほえみ]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「華道祭で玄関先に飾る御所花車の構図が決まらなくて……」[p]
 
