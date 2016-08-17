@@ -1,7 +1,10 @@
 ;=============================================
 ;イベント6回目【藤枝の事を考える】9月1週、誰も選ばないを選択
 ;=============================================
-[背景_庭]
+;【背景】主人公邸 庭の見える部屋：夜
+ [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+ 
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -16,6 +19,12 @@
 [主人公憂い]
 （藤枝様の事が気になるわ。[r]
 こんな気持ちでは誰ともお会いできない）[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：決意
 [主人公目閉じ]
@@ -114,7 +123,7 @@
 （せっかく長い間楽しい時間を過ごさせて[r]
 頂いたのに心苦しいけれど、[r]
 こればっかりは仕方ないわね）[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】主人公：通常
 [主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
