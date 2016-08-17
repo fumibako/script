@@ -23,9 +23,9 @@
 [sp]でも弾けると嬉しいものね）[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
 ;【SE】鳩の鳴き声
@@ -50,6 +50,9 @@
 ;【立ち絵】主人公 通常
 [主人公ほほえみ]
 「待ってね。」[p]
+
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
