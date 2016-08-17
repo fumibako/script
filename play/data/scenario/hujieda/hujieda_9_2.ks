@@ -1,8 +1,9 @@
 ;=============================================
 ;イベント７回目【再び手紙が届く】9月2週、お琴のお稽古
 ;=============================================
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+;【背景】主人公邸 お稽古部屋
+ [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -21,6 +22,11 @@
 [sp]でも今はだた藤枝様を想って弾きたい[r]
 [sp]私は藤枝様の事を[r]
 そんなに知っているわけでもないけれど）[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 #
 そっとお琴に手を伸ばしお琴を弾いてみる[r]
@@ -40,7 +46,11 @@
 #
 鳩さんは手元の琴の端に止まり私は手紙をほどいた。[p]
 
-;【SE】紙の音（カサッ）
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
+
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
 
 [手紙藤枝 fumi_number=]
 [名字][名前] 様へ[l][r]
@@ -79,11 +89,8 @@
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公通常]
 
 ;【立ち絵】主人公：微笑み
 [主人公目閉じ]
@@ -95,7 +102,7 @@
 [sp]もう迷惑になると手紙を出せずにいた[r]
 [主人公目閉じ]
 [sp]これから手紙を沢山出すわ……）[p]
-
+[fadeoutbgm time=3000]
 #
 私は手紙をそっと抱きしめた[p]
 
