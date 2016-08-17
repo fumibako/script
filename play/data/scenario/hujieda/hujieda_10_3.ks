@@ -97,6 +97,8 @@
 #
 藤枝様はコリウスと手紙を受け取って言った[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】藤枝：微笑み
 [whosay name="藤枝 肇" color=%mp.color] 
 「ありがとうございます。[r]
@@ -114,6 +116,12 @@
 ;【立ち絵】藤枝：驚き
 [whosay name="藤枝 肇" color=%mp.color] 
 「ああ貴方が！　……っと」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 
 #
 藤枝様はコリウスを落としそうになった[r]
@@ -308,6 +316,8 @@
 「ありがとうございます。」[p]
 ;【立ち絵】藤枝：思案
 「でも少し考えさせてください。」[p]
+
+[fadeoutbgm time=3000]
 
 #音楽学校教授
 「君にも都合はある[r]
