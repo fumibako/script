@@ -1,7 +1,6 @@
 ;=============================================
 ;イベント９回目【花と手紙を渡す】１０月３週、
 ;=============================================
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -242,12 +241,19 @@
 [r]
 [r]敬具
 [sp]                                                      [名字]　[名前] [p]
+[fadeoutbgm time=3000]
 [手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [イベントシーン構築枠茶色]
 #音楽学校教授
 「ファンレターかい？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 ;【立ち絵】藤枝：驚き
 [whosay name="藤枝 肇" color=%mp.color] 
