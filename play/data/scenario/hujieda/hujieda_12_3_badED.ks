@@ -27,10 +27,7 @@
 この国へ戻ってきたのは十年後だった[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
-[playbgm storage="kanasige_yukisugara.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
-[endif]
+;【BGM】いにしえより続く街、大宰府
 
 ;【テキスト全画面】黒茶・和紙風背景(暗)に白文字
  [テキスト全画面白文字暗]
