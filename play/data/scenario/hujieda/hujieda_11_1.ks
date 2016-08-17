@@ -20,6 +20,12 @@
 [sp]（鳩が入ってこれるように[r]
 [sp]少しふすまを開けているけれども）[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
 
@@ -30,11 +36,10 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「ありがとう、入っていいわよ」[p]
-
+[fadeoutbgm time=3000]
 ;【SE】襖を開ける（ゆっくり）
-
 [playse storage=fusuma-open.ogg loop=false ]
-[stopbgm]
+
 ;【BGM】みやび（磯野テーマ）
 [playbgm storage="isono_miyabi.ogg" loop=true]
 
@@ -75,11 +80,17 @@
 私は茫然と立ち尽くした。[r]
 磯野は無言で手紙に目を通し[r]
 彼の顔は次第に厳しくなっていく。[p]
-
+[fadeoutbgm time=3000]
 [whosay name=磯野 color="dimgray"]
 「お嬢様！　この手紙は一体何ですか？[r]
 [sp]この藤枝肇という方は[r]
 どういった身分の方なのです？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：落ち込み
@@ -142,7 +153,7 @@
 「この手紙は没収しますが、わかりました[r]
 [sp]今後お嬢様がお稽古す場合でも女中を傍に控えさせ[r]
 [sp]今後手紙を出されるのは禁止させていただきます」[p]
-
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：真剣落ち込み
 [主人公目閉じ]
