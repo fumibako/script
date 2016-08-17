@@ -95,10 +95,7 @@
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-;【背景】主人公邸 お稽古部屋
- [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+
 [主人公驚]
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
