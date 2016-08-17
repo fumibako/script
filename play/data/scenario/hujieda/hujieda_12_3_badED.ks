@@ -1,7 +1,10 @@
 ;=============================================
 ;イベント１２回目【時子さん訪問】１２月3週、
 ;=============================================
-[背景_庭]
+;【背景】主人公邸 庭の見える部屋：昼
+ [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+ 
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -22,11 +25,19 @@
 その後藤枝様は独逸に留学し[r]
 さらには渡米し、作曲家、ピアニストとして名を馳せる[r]
 この国へ戻ってきたのは十年後だった[p]
-[主人公退場]
 
-ー１５年後
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
+;【テキスト全画面】黒茶・和紙風背景(暗)に白文字
+ [テキスト全画面白文字暗]
+ー１５年後[p]
+[イベントシーン構築]
 ;背景洋館内装
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / youkannaisou.jpg" time=1000]
 #
 たまたま付けたラヂオから[r]
 ピアノと琴の合奏曲が聴こえた。[r]
@@ -44,7 +55,7 @@
 こみ上げて私は涙がこぼれた[r]
 思い出を汚さないためにも[r]
 もう会おうと思わない。[p]
-
+[fadeoutbgm time=3000]
 #
 藤枝さまの中では[r]
 ずっと綺麗なままの私でいたいから。[r]
