@@ -8,7 +8,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-#
+
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
