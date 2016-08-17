@@ -126,7 +126,7 @@
 藤枝様の姿が見えた[p]
 
 ;【立ち絵】藤枝：驚き
-whosay name="藤枝 肇" color=%mp.color] 
+[whosay name="藤枝 肇" color=%mp.color] 
 「！」[p]
 ;【立ち絵】藤枝：目伏せ憂い
 「お返事が来ないと思っていたのですが[r]
@@ -144,7 +144,7 @@ whosay name="藤枝 肇" color=%mp.color]
 [主人公口通常]
 
 ;【立ち絵】藤枝：驚き
-whosay name="藤枝 肇" color=%mp.color] 
+[whosay name="藤枝 肇" color=%mp.color] 
 「その話を御存じなのですね！」[p]
 ;【立ち絵】藤枝：目伏せ
 「迷ってましたが皆僕の背中を押してくれています[r]
@@ -182,7 +182,7 @@ whosay name="藤枝 肇" color=%mp.color]
 [sp]藤枝様……お元気で！」[p]
 
 ;【立ち絵】藤枝：悲しみ
-whosay name="藤枝 肇" color=%mp.color] 
+[whosay name="藤枝 肇" color=%mp.color] 
 「貴方を苦しめて申し訳ありませんでした[r]
 [sp]貴方もどうかお元気で……」[p]
 [fadeoutbgm time=3000]
