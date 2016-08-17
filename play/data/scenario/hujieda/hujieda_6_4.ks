@@ -157,6 +157,13 @@
 [sp]必ず上達できる方だと思います。[r]
 [r]
 [sp]初心を忘れずゆっくり上達していきましょう。[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
@@ -169,11 +176,7 @@
 ;【立ち絵】主人公　微笑み
 [主人公照れ目普通]
 （音から察してくれるなんてきっと優しい方なのね）[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
-[endif]
+
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
 
