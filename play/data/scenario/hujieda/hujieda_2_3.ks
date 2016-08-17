@@ -102,6 +102,7 @@
  [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
+[主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公目パチ1回]
@@ -153,7 +154,7 @@
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name="三宮　時子" color="#c25232"]
 「さ、[名前]さんお車にお乗りになって！」[p]
-
+[主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
 [主人公照れ目普通]
