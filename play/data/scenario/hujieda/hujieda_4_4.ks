@@ -1,8 +1,11 @@
 ;=============================================
 ;イベント１回目【手紙が届くその１】4月お琴のお稽古を２回以上
 ;=============================================
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+
+;【背景】主人公邸 お稽古部屋
+ [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -17,6 +20,12 @@
 [主人公困り]
 （お稽古やっぱり難しいわ、
 始めたばかりなのにくじけそう……）[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 ;【SE】鳩の鳴き声
 
@@ -40,19 +49,24 @@
 [主人公口ほほえみ]
 「待ってね」[p]
 
-;【SE】紙の音（カサッ）
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
 
 ;【立ち絵】主人公 驚き
 [主人公驚]
 「これは、手紙？」[p]
-;【SE】鳩の鳴き声
+
+;【SE】小鳥羽ばたき
+[playse storage=tori_habataki_kosagi.ogg loop=false ]
+
 
 ;【立ち絵】主人公 困り
 [主人公困り]
 「あ……行ってしまったわ」[p]
 
 [stopbgm]
-;【SE】紙に触れる（パラリ）
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
 
 [手紙藤枝 fumi_number=]
 
@@ -81,10 +95,10 @@
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+;【背景】主人公邸 お稽古部屋
+ [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
 [主人公驚]
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
@@ -92,8 +106,8 @@
 [主人公ほほえみ]
 「こんな風に応援してくれる方もいらっしゃるのね[r]
 [sp]お琴うまくなれるかしら[r]
-[sp]いえ……精一杯お稽古がんばりましょう！」 [r]
-
+[sp]いえ……精一杯お稽古がんばりましょう！」[p] 
+[fadeoutbgm time=3000]
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
