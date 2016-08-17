@@ -1,7 +1,10 @@
 ;=============================================
 ;イベント１１回目【父と磯野への説得】１１月3週、
 ;=============================================
-[背景_庭]
+;【背景】主人公邸 庭の見える部屋：夜
+ [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+ 
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -20,6 +23,12 @@
 「磯野から聞いているし没収した手紙も読んだ[r]
 [sp]藤枝肇君の素性も調べてある[r]
 [sp]その上で何か言いたいことはあるかね？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ落ち込み
@@ -89,9 +98,13 @@
 「仕方がない、何も起きないように[r]
 [sp]磯野、君は[名前] に立ち会いなさい」[p]
 
+;【テキスト全画面】黒茶・和紙風背景に白文字
+ [テキスト全画面白文字]
 #翌日１０時前
-
-背景主人公邸玄関
+[イベントシーン構築]
+;【背景】主人公邸 玄関
+ [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+ [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
@@ -113,6 +126,7 @@
 藤枝様の姿が見えた[p]
 
 ;【立ち絵】藤枝：驚き
+whosay name="藤枝 肇" color=%mp.color] 
 「！」[p]
 ;【立ち絵】藤枝：目伏せ憂い
 「お返事が来ないと思っていたのですが[r]
@@ -130,6 +144,7 @@
 [主人公口通常]
 
 ;【立ち絵】藤枝：驚き
+whosay name="藤枝 肇" color=%mp.color] 
 「その話を御存じなのですね！」[p]
 ;【立ち絵】藤枝：目伏せ
 「迷ってましたが皆僕の背中を押してくれています[r]
@@ -140,6 +155,7 @@
 ;【立ち絵】主人公：落ち込み
 [主人公目閉じ]
 [主人公口通常]
+[主人公ポーズ片手]
 「それなら私が止める事は出来ません。[r]
 [sp]私も藤枝様の夢が叶うことを……っ[p]
 
@@ -166,9 +182,10 @@
 [sp]藤枝様……お元気で！」[p]
 
 ;【立ち絵】藤枝：悲しみ
+whosay name="藤枝 肇" color=%mp.color] 
 「貴方を苦しめて申し訳ありませんでした[r]
 [sp]貴方もどうかお元気で……」[p]
-
+[fadeoutbgm time=3000]
 #
 そして藤枝様は持っていた手紙を[r]
 磯野に渡し、自転車に乗って行きました[p]
