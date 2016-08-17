@@ -74,8 +74,9 @@
 [if exp="f.gra_girl_part=='mayu'"]
 [glink target="mayu_01" text="[主人公眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
 [glink target="mayu_02" text="[主人公眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="mayu_03" text="[主人公眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="mayu_04" text="[主人公眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink target="mayu_05" text="[主人公眉下げ下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+[glink target="mayu_03" text="[主人公眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink target="mayu_04" text="[主人公眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
 [endif]
 
 [if exp="f.gra_girl_part=='me'"]
@@ -83,19 +84,22 @@
 [glink target="me_02" text="[主人公目大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
 [glink target="me_03" text="[主人公目にこ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
 [glink target="me_04" text="[主人公目伏]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="me_05" text="[主人公目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="me_06" text="[主人公横目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="me_07" text="[主人公横伏目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink target="me_08" text="[主人公目伏柔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+[glink target="me_05" text="[主人公目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink target="me_06" text="[主人公横目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink target="me_07" text="[主人公横伏目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
 [endif]
 
 [if exp="f.gra_girl_part=='kuti'"]
 [glink target="kuti_01" text="[主人公口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
 [glink target="kuti_02" text="[主人公口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
 [glink target="kuti_03" text="[主人公口ほほえみ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="kuti_04" text="[主人公口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="kuti_05" text="[主人公口ふぅ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="kuti_06" text="[主人公口大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="kuti_07" text="[主人公口えー]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink target="kuti_08" text="[主人公口笑顔小]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink target="kuti_04" text="[主人公口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+[glink target="kuti_05" text="[主人公口ふぅ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink target="kuti_06" text="[主人公口大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink target="kuti_07" text="[主人公口えー]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+[glink target="kuti_09" text="[主人公口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
 [endif]
@@ -104,6 +108,10 @@
 [glink target="emo_01" text="[主人公効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
 [glink target="emo_02" text="[主人公頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
 [glink target="emo_03" text="[主人公汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+[glink target="emo_04" text="[主人公涙]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink target="emo_05" text="[主人公涙_目閉用]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+[glink target="emo_06" text="[主人公涙流]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink target="emo_07" text="[主人公涙流_目閉用]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [endif]
 
 [glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=290 color=white]
@@ -254,6 +262,11 @@
 [eval exp="f.gra_girl_face='眉：[主人公眉強気]'"]
 @jump target=text
 
+*mayu_05
+[主人公眉下げ下]
+[eval exp="f.gra_girl_face='眉：[主人公眉下げ下]'"]
+@jump target=text
+
 
 *me_01
 [主人公目通常]
@@ -273,6 +286,11 @@
 *me_04
 [主人公目伏]
 [eval exp="f.gra_girl_face='目：[主人公目伏]'"]
+@jump target=text
+
+*me_08
+[主人公目伏柔]
+[eval exp="f.gra_girl_face='目：[主人公目伏柔]'"]
 @jump target=text
 
 *me_05
@@ -326,6 +344,16 @@
 [eval exp="f.gra_girl_face='口：[主人公口えー]'"]
 @jump target=text
 
+*kuti_08
+[主人公口笑顔小]
+[eval exp="f.gra_girl_face='口：[主人公口笑顔小]'"]
+@jump target=text
+
+*kuti_09
+[主人公口ムッ]
+[eval exp="f.gra_girl_face='口：[主人公口ムッ]'"]
+@jump target=text
+
 
 *emo_01
 [主人公効果消]
@@ -340,6 +368,26 @@
 *emo_03
 [主人公汗]
 [eval exp="f.gra_girl_face='効果：[主人公汗]'"]
+@jump target=text
+
+*emo_04
+[主人公涙]
+[eval exp="f.gra_girl_face='効果：[主人公涙]'"]
+@jump target=text
+
+*emo_05
+[主人公涙_目閉用]
+[eval exp="f.gra_girl_face='効果：[主人公涙_目閉用]'"]
+@jump target=text
+
+*emo_06
+[主人公涙流]
+[eval exp="f.gra_girl_face='効果：[主人公涙流]'"]
+@jump target=text
+
+*emo_07
+[主人公涙流_目閉用]
+[eval exp="f.gra_girl_face='効果：[主人公涙流_目閉用]'"]
 @jump target=text
 
 *back_test

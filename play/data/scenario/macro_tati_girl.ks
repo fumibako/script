@@ -70,7 +70,7 @@ if(mp.name=="文矢"){
 }else if(mp.name=="財前・アルベルト・美彬"){
     mp.color = "#929055";
 }else if(mp.name=="財前母"){
-    mp.color = "#c2b077";
+    mp.color = "#b2a077";
 }else if(mp.name=="四条"){
     mp.color = "olivedrab";
 }else if(mp.name=="四条 華織"){
@@ -127,8 +127,7 @@ if(mp.name=="文矢"){
     mp.color = "#5b7e23";
 }else{
     mp.color = "#807070";
-}
-//名前領域の一旦削除
+}//名前領域の一旦削除
 $(".chara_name_area").remove();
 
 //名前をバックログに追加
@@ -151,6 +150,8 @@ if (mp.name!="") {
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
@@ -165,6 +166,8 @@ if (mp.name!="") {
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi2.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
@@ -185,9 +188,13 @@ if (mp.name!="") {
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau.png" time=0]
 [wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
+[wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ee.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
 ;エモ
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -382,6 +389,12 @@ if (mp.name!="") {
 [wait time=10]
 [endmacro]
 
+;立ち絵表示[主人公眉下げ下]
+[macro name="主人公眉下げ下"]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
+[endmacro]
+
 ;立ち絵表示[主人公眉困り]
 [macro name="主人公眉困り"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -412,6 +425,12 @@ if (mp.name!="") {
 [wait time=10]
 [endmacro]
 
+;立ち絵表示[主人公口笑顔小]
+[macro name="主人公口笑顔小"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
+[wait time=10]
+[endmacro]
+
 ;立ち絵表示[主人公口えー]
 [macro name="主人公口えー"]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ee.png" time=0]
@@ -436,6 +455,13 @@ if (mp.name!="") {
 [wait time=10]
 [endmacro]
 
+;立ち絵表示[主人公口ムッ]
+[macro name="主人公口ムッ"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
+[endmacro]
+
+
 ;立ち絵表示[主人公目通常]
 [macro name="主人公目通常"]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -451,6 +477,12 @@ if (mp.name!="") {
 ;立ち絵表示[主人公目にこ]
 [macro name="主人公目にこ"]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[主人公目伏柔]
+[macro name="主人公目伏柔"]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -487,6 +519,36 @@ if (mp.name!="") {
 ;立ち絵表示[主人公頬染め]
 [macro name="主人公頬染め"]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[主人公涙]
+[macro name="主人公涙"]
+[chara_mod name="girl_emo" storage="girl/S/emo_namida.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[主人公涙_目閉用]
+[macro name="主人公涙_目閉用"]
+[chara_mod name="girl_emo" storage="girl/S/emo_namida_toji.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[主人公涙流]
+[macro name="主人公涙流"]
+[chara_mod name="girl_emo" storage="girl/S/emo_namida_nagare.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[主人公涙流_目閉用]
+[macro name="主人公涙流_目閉用"]
+[chara_mod name="girl_emo" storage="girl/S/emo_namida_nagare_toji.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[主人公汗]
+[macro name="主人公汗"]
+[chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
 [wait time=10]
 [endmacro]
 
