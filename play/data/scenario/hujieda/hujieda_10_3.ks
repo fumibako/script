@@ -9,6 +9,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 
 ;背景: [レトロな喫茶店]
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / mirukugenkan.jpg " time=50]
+
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公照れ目普通]
@@ -17,6 +19,11 @@
 #
 予約した５分前にミルクホール月ノ光に着く[r]
 ピアノの音が聞こえドキドキしながら順番を待つ[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 # 店員
 「予約の鷹司様ですね。お席に案内します」[p]
@@ -54,7 +61,10 @@
 
 #店員
 「こちらのお席になります」[p]
-
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / mirukutennai.jpg  " time=50]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 #
 広い店内の奥にピアノが置かれその椅子に座り[r]
 ピアノを奏でている方の横顔が[r]
