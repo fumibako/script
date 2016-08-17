@@ -10,7 +10,7 @@
 *ep
 [テキスト全画面白文字]
 
---その数年後、
+[sp]ーその数年後、
 [sp]秋の薄紫の花達が風になびくころ。[p]
 
 ;タイトルの曲のほうがいいかも20090303yukidoke
@@ -27,7 +27,9 @@
 ;[イベントシーン構築枠茶色]　
 [主人公ポーズ通常]
 [主人公通常]
-
+[wait time=10]
+[主人公目パチ1回]
+[wait time=10]
 ;【背景】[背景_庭]　和室かな？　昔の華族の家は和と洋が隣接しているので？
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -35,16 +37,19 @@
 [whosay name="華織" color="olivedrab"]
 「ふぅ……なかなか決まりませんね」[p]
 [主人公口ほほえみ]
-
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうされましたか？ 」[p]
 [whosay name="華織" color="olivedrab"]
 「華道祭で玄関先に飾る御所花車の構図が決まらなくて……」[p]
 
 [主人公通常]
-
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「少し、休まれませんか？ 華衣さんからのお手紙も来たので」[p]
+
+[主人公目パチ1回]
+[wait time=10]
 
 ;【SE】湯のみを置く（コトリ）
 [playse storage=tya_yunomi_oku.ogg loop=false ]
@@ -53,7 +58,10 @@
 「華衣から手紙ですか！ なかなか手紙さえ返してくれなかったのに。[r]
 一体、何をしてるのでしょうか……」[p]
 
+[主人公目パチ1回]
+[wait time=10]
 [主人公ポーズ指]
+[wait time=10]
 ;なにかしらと読み
 
 ;【SE】紙に触れる（パラリ）
@@ -64,6 +72,7 @@
 華衣さんは結納式の後に出会った方と四条家の鉱山事業を生かした
 発電事業をはじめ……」[p]
 [主人公目パチ1回]
+[wait time=10]
 「事故の少ない交通機関の発展にも貢献しているそうですよ」[p]
 
 [主人公ポーズ通常]
@@ -76,24 +85,33 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私達も、負けていられませんね」[p]
+[主人公口笑顔]
+[wait time=10]
+
 [whosay name="華織" color="olivedrab"]
 「！ そうですね。 休憩はこのあたりにしておきましょうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいのですか？」[p]
+
+[主人公通常]
+[wait time=10]
+[主人公目パチ1回]
+[wait time=10]
+
 [whosay name="華織" color="olivedrab"]
 「ちょうど[名前]さんの愛らしい顔をみたら、いい構図を思いつきましたから」[p]
 
 [主人公ほほえみ]
-
+[wait time=10]
+;止まるの回避
 ;お母さん度回避案↓
 [イベントシーン構築枠茶色]　
 #
-[名前]は、華織に微笑み返すと縁側で揺れるネリネの花を見つめた。[p]
-; [名前]は けして主人公モノローグにしたら、主人公おかぁさん度があがってきた×
-
+[名前]は華織に微笑み返すと、縁側で揺れるネリネの花を見つめた。[p]
+;主語が決まってません↑
 [whosay name="華織" color="olivedrab"]
 (手紙の代わりに、華で想いを綴っていくと決めたのだから、もっと精進しなくては)[p]
-
+[wait time=10]
 [chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;主人公をみながら作業再開
@@ -102,7 +120,10 @@
 その後、華道家として祖母以上に認められ華織は、[r]
 四条御流として更に名が知れ渡るほどに国の文化に貢献することとなった。[p]
 その陰には四条を支える[名前]の姿があったという。[p]
-想いを繋げて綴っていく手紙は、いつしか恋を綴り、人々を幸せにする愛に変わっていく。その手紙は--- [p]
+;仮でおいてみる
+[font color="000000"]
+[chara_mod name="bg" storage="sijyou_ed_tegami0.jpg" time=1000]
+想いを繋げて綴っていく手紙は、いつしか恋を綴り、人々を幸せにする愛に変わっていく。その手紙は－－[p]
 ;恋綴りのタイトルに戻るイメージ
 ;手紙によって大きく変わった四条兄弟が人々に貢献する・・・にもつながる？
 
