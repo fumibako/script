@@ -142,9 +142,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ええ」[p]
 
-
-[fadeoutbgm time=3000]
-
 ;［背景パーティ会場］
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -170,8 +167,16 @@
 [whosay name="パーティ客女性"]
 「まあ大事にされているのですね」[p]
 
+[fadeoutbgm time=3000]
+
 #
 そして会食が終わり余興の時間になる頃だった[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 [whosay name="財閥総帥秘書"]
 「財前さま、[r]
@@ -256,7 +261,8 @@
  [主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「手を放して！」[p]
- 
+
+ [fadeoutbgm time=3000]
 #
 私が嫌がっているのに構わず[r]
 パーティ客男性は[r]
@@ -272,6 +278,12 @@
 #パーティ客男性
 「こ……これは独逸大使婦人[r]
 [sp] 失礼します」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 [whosay name="独逸大使夫人"]
 「お連れの方はいらっしゃらないの？[r]
@@ -318,6 +330,8 @@
 [sp] お連れの方が戻るまで[r]
 [sp] 私がついていましょうか？」[p]
 
+ [fadeoutbgm time=3000]
+ 
 ;【立ち絵】財前：不快
 [whosay name="財前美彬" color="#7a65b2"]
 「私の婚約者に何かご用ですか？」[p]
@@ -325,6 +339,11 @@
 
 [whosay name="独逸大使夫人"]
 「アルベルト！」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 #
 彼女は目を見開いて[r]
@@ -379,6 +398,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「財前様！あんまりです」[p]
 [主人公口通常]
+
+[fadeoutbgm time=3000]
 
 ;【立ち絵】財前：不快
 [whosay name="財前美彬" color="#7a65b2"]
