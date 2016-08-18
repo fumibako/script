@@ -12,6 +12,12 @@
 [主人公憂い]
 財前様は私の手を解いて言った[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 ;【立ち絵】財前：冷ややか
 [whosay name="財前美彬" color="#7a65b2"]
 「[名前]さん、礼を言いましょう[r]
@@ -50,11 +56,7 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「私の問題です」[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
-[endif]
+
 
 ;暗転?
 [テキスト全画面白文字]
@@ -74,6 +76,8 @@
 別の方と結婚し、[r]
 私はまだ誰とも結婚せずにいた[p]
 
+[fadeoutbgm time=3000]
+
 ;[背景洋館]
 独逸大使邸[p]
 [chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
@@ -85,6 +89,12 @@
 私は財前様のお母様と[r]
 手紙のやりとりをしていて[r]
 誕生日パーティに呼ばれた[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
@@ -161,8 +171,8 @@
 きっといつかは私も結婚するのだろうけど[p]
 
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"][p]
+[fadeoutbgm time=3000]
 [主人公通常]
 #
 私は空を見上げる[r]
