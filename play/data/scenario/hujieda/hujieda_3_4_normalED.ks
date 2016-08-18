@@ -16,6 +16,11 @@
 「忙し時間を割いて頂いてありがとうございます[r]
 [sp]それにしてもまたどうしてこの場所に？」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 #
 木漏れ日は暖かく、もう桜も咲き始めている[r]
 今日はお父様とお母様が公園に連れて行ってくれた[p]
@@ -68,6 +73,8 @@
 ですが留学を終えたときには一人前になっているように[r]
 色々なコンクールに出場つもりですし沢山作曲します」[p]
 
+[fadeoutbgm time=3000]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「欧米諸国は音楽のレベルが高いと聞くが……」[p]
 
@@ -87,6 +94,12 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「そうか」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 
 ;【立ち絵】藤枝：目伏せ照れ
 「貴方の事を[r]
@@ -133,6 +146,8 @@
 [主人公照れ目普通]
 「指切りをしてくださいませんか？」[p]
 
+
+
 ;【立ち絵】藤枝：微笑み
 「ええ、約束を必ず守ります」[p]
 
@@ -144,7 +159,7 @@
 #
 私たちは同時に声を合わせて指切りをした[r]
 （離れても貴方を想いますーそうお互いに誓い合った）[p]
-
+[fadeoutbgm time=3000]
 ノーマルここまで
 
 エピローグ
@@ -163,6 +178,12 @@
 [主人公目パチ1回]
 「……」[r]
 （もうすぐだわ）[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様、お茶をどうぞ[r]
@@ -183,6 +204,7 @@
 「そうですね……[r]
 [sp]お嬢様もとてもお綺麗になられました」[p]
 
+[fadeoutbgm time=3000]
 #
 感慨深く磯野がしけしげと私をみる[p]
 
@@ -201,6 +223,12 @@
 
 ;【立ち絵】藤枝：通常
 「入ってもいいでしょうか？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 
 [主人公目閉じ]
 [主人公口通常]
@@ -385,6 +413,8 @@
 そして私と肇様は微笑み合った。[r]
 幸福な気持ちでいっぱいで胸が詰まる[r]
 私も肇様のように沢山努力しよう私達が幸せになる為に[p]
+
+[fadeoutbgm time=3000]
 
 #
 ーそして肇様と新し明日を紡いでいく[p]
