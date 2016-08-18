@@ -96,8 +96,6 @@
 「いいえ、[r]
 [sp] ……それよりお話しがあります」[p]
 
-[fadeoutbgm time=3000]
-
 ;【立ち絵】財前：眉ひそめ
 「一体何の話でしょうか？」[p]
 
@@ -122,12 +120,6 @@
 [sp] 貴方のお母様に[r]
 [sp] 関係あることなのですか？」[p]
 [主人公口通常]
-
-[if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
-[endif]
 
 ;【立ち絵】財前：驚き
 [whosay name="財前美彬" color="#7a65b2"]
@@ -296,6 +288,8 @@
 [sp] きっと、女性のエスコートに慣れてるのね[r]
 [sp] そう思ったら胸がちくちくした[r]
 [sp] ……この気持ちは何？）[p]
+
+[fadeoutbgm time=3000]
 
 #
 風が吹いて薔薇の花びらが舞う[r]
