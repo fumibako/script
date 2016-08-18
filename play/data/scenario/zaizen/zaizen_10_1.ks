@@ -13,9 +13,9 @@
 [イベントシーン構築]
 [p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】筍の訪れ（町散策時に
-[playbgm storage="machi_takenoko.ogg" loop=true]
-[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+;【BGM】冬支度
+[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
 [endif]
 
 [主人公ポーズ通常]
@@ -24,10 +24,6 @@
 #
 町の賑やかさも[r]
 今の私の心を慰めてくれない[p]
-
-[stopbgm]
-
-;【BGM】冬支度
 
 [whosay name="三宮　時子" color="#c25232"]
 「[名前]さん 、ため息などついてどうしたのですか？」[p]
@@ -138,6 +134,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんなことありません。[r]
 [sp] 取り付く島もありませんでした」[p]
+[fadeoutbgm time=3000]
 [主人公効果消]
 [whosay name="三宮　時子" color="#c25232"]
 「いいえ、財前様は律儀な方でしょう？[r]
@@ -145,13 +142,19 @@
 [sp] [名前]さんと会って縁談を進めようとしている[r]
 [sp] 自信をもっていいのではないかしら？　」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 ;【立ち絵】主人公：思案
 [主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……確かに律儀な方ですわ」[r]
 （それに縁談はまとまりかけている[r]
 [sp] ……それなら）[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】主人公：目伏せ微笑み
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
