@@ -221,10 +221,7 @@
 （……見守って下さるのですね）[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
-[endif]
+;【BGM】まだ見ぬ明日へ出会うとき
 
 #
 私たちは視線で会話するように見つめあい、[r]
@@ -273,6 +270,8 @@
 [whosay name="藤枝 肇" color=%mp.color] 
 「僕は今大切にしたい人がいます」[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】藤枝：目閉じ
 「留学は次の機会にします[r]
 [sp]僕は今留学したら逆に叶わなくなる事があると[r]
@@ -280,6 +279,12 @@
 
 #原
 「まて！　藤枝お前は全てを棒に振る気か？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 ;【立ち絵】藤枝：目伏せ
 [whosay name="藤枝 肇" color=%mp.color] 
