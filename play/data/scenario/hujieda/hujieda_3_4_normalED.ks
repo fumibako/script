@@ -1,7 +1,8 @@
 ;=============================================
 ;イベント１５回目【指切りエンド】3月4週、
 ;=============================================
-[背景公園]
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / kouenn.jpg"]
+
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
