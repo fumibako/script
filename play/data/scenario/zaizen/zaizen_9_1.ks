@@ -22,6 +22,12 @@
 （お手紙を交わしている相手の中で[r]
 一番興味を惹かれるのは財前様だわ）[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;【立ち絵】主人公：目閉じ思案
 （私を試すようなお手紙が多いけれどそれでも、[r]
 [sp] それは率直に真剣に結婚相手を探しているから[r]
@@ -164,6 +170,8 @@
 （せっかく長い間楽しい時間を[r]
 [sp] 過ごさせて頂いたのに心苦しいけれど、[r]
 [sp] こればっかりは仕方ないわね）[p]
+
+[fadeoutbgm time=3000]
 
 ;【立ち絵】主人公：通常
 [主人公通常]
