@@ -42,6 +42,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ」[p]
 ;【立ち絵】主人公　伏目
+[主人公眉下げ下]
 [主人公伏目]
 [主人公口ほほえみ]
 「でも手紙が来なくても[r]
@@ -106,7 +107,7 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 [イベントシーン構築枠茶色]
-#侍従
+[whosay name="侍従" color=%mp.color]
 「何を読まれているんですか？　[r]
 [sp]演説用のメモには見えませんが」[p]
 
@@ -183,7 +184,7 @@
 [主人公通常]
 [主人公目パチ1回]
 ;【立ち絵】主人公 微笑み
-[主人公困りほほえみ]
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下はもうきっと[r]
 大丈夫ね」[p]
