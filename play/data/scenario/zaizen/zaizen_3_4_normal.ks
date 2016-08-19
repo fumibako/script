@@ -222,6 +222,8 @@
 「[名前]さん が私に相談なんて嬉しいわ！[r]
 [sp] どんな相談なのかしら？」[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公：真剣
 [主人公目閉じ]
 [主人公眉困り]
@@ -230,6 +232,12 @@
 [sp] 私財前様に鬱陶しがられるのは嫌なのですが[r]
 [sp] 嫉妬したり苦しくなったり[r]
 [sp] 自分が分らないんです！」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 [whosay name="財前母"]
 「貴方はアルベルトに恋している[r]
@@ -363,6 +371,8 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「……どうしたといういのですか？」[p]
 
+[fadeoutbgm time=3000]
+
 [主人公ポーズ通常]
 #
 財前様のお母様の声が[r]
@@ -370,7 +380,6 @@
 ー勇気をだしてごらんなさい[r]
 私は意を決して立ち上がっていった[p]
 
-[fadeoutbgm time=3000]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜（normal/goodED用
