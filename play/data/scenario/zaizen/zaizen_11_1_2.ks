@@ -62,6 +62,8 @@
 ……あんなひどい事を言う[r]
 財前様初めてです」[p]
 
+[fadeoutbgm time=3000]
+
 [whosay name="財前母"]
 「それは私が悪いので仕方ないのですよ」[p]
 
@@ -76,6 +78,12 @@
 [whosay name="財前母"]
 「いえ仕方なのですよ[r]
 [sp] 貴方はアルベルトの婚約者でしたのね」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：通常
 [主人公通常]
@@ -125,15 +133,6 @@
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-
-[fadeoutbgm time=3000]
-
-[if exp="sf.BGM=='ON'"]
-;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
-[playbgm storage="kanasige_yukisugara.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
-[endif]
-
 
 ;背景洋館 全画面文字のみ表示　まだないので黒背景
 [テキスト全画面白文字無背景]
@@ -211,7 +210,7 @@
 会社を数年で大きくしました。[p]
 [sp] ……とても苦労したけれど[r]
 お互いを支え合って乗り越えました。[p]
-
+[fadeoutbgm time=3000]
 ;メッセージをもどします↓
 [cm]
 [イベントシーン構築]
@@ -227,6 +226,12 @@
 [sp] その数年後です[r]
 [sp] 私達は話し合った結果[r]
 [sp] 財前の実家を頼る事にしました 」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 [テキスト全画面白文字無背景]
 ; 呉服屋的な背景 　全画面文字のみ表示
@@ -317,11 +322,16 @@
 [sp] だから貴方は財前様の事を[r]
 [sp] 叱っていいと思います[r]
 [sp] その方が財前様も吹っ切れると思います」[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】財前：眉ひそめ
 [whosay name="財前美彬" color="#7a65b2"]
 「全く貴方はお節介な人ですね」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】一閃（緊迫シーンに
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+[endif]
 [主人公通常]
 #
 振り向くと財前様が[r]
@@ -382,11 +392,18 @@
 [sp] 私の外見は貴方の血も色濃く受け継いでいる[r]
 [sp] どんなに負担になっているか考えた事はありますか？」[p]
 
+[fadeoutbgm time=3000]
 [主人公憂い]
 #
 声を荒げて言う財前様は[r]
 怖かったけれど[r]
 それ以上に痛々しく想えた[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 #
 私は思わず財前様の手を取った[r]
@@ -441,6 +458,8 @@
 「ありがとう。[r]
 [sp] [名字]さんも、[r]
 [sp] いえ[名前]さんと呼んでもいいかしら？」[p]
+
+[fadeoutbgm time=3000]
 
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
