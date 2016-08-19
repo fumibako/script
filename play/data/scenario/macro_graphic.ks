@@ -44,7 +44,6 @@
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
@@ -60,7 +59,6 @@
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
@@ -76,7 +74,6 @@
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
@@ -92,7 +89,6 @@
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
@@ -108,7 +104,6 @@
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
@@ -174,7 +169,6 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
@@ -242,7 +236,6 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + 4;
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
@@ -310,7 +303,6 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 4;
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
@@ -382,7 +374,6 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + 4;
 
 ;機能ボタン消去
 [clearfix]
-[eval exp="sf.FButton='OFF'"]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙仮画像(藤枝イメージカラーなどを相談後に作成予定です)
