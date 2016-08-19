@@ -1,6 +1,8 @@
 ;５回目イベント　
 ;両家顔合わせ
-[背景_庭]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -49,8 +51,7 @@
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-[イベントシーン構築]
-[背景_庭]
+
 [主人公ポーズ通常]
 [主人公伏目]
 [主人公目パチ1回]
@@ -104,7 +105,7 @@
 [sp]とてもうれしく思っております[r]
 [sp]葛城宮妃殿下」[p]
 
-#葛城宮妃
+[whosay name="葛城宮妃"color=%mp.color]
 「喜んでくれて嬉しいわ[r]
 けれど、つつましいことは好ましいけれど[r]
 [sp]他人行儀なのは少し寂しいわ」[p]
@@ -114,7 +115,7 @@
 [主人公ほほえみ]
 「妃殿下」[p]
 
-[whosay name="葛城宮妃"]
+[whosay name="葛城宮妃"color=%mp.color]
 「少しずつ家族になっていきましょう[r]
 [sp]…… ああこの話じゃなく[r]
 [sp]息子の話をしようと思っていたの[r]
@@ -122,19 +123,20 @@
 
 ;【立ち絵】主人公　通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公通常]
+[主人公目伏]
 [主人公口通常]
+[主人公眉下げ下]
 [主人公伏目パチ1回]
 「どうされましたか？」[p]
 
-[whosay name="葛城宮妃"]
+[whosay name="葛城宮妃"color=%mp.color]
 「もう話す前に息子がそこに」[p]
 
 #
 妃殿下は微笑み、[r]
 振り向くと軍服姿の殿下がいた[p]
 
-；【立ち絵】葛城宮 通常
+;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……」[p]
 
@@ -149,13 +151,14 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あのでもお話しは……」[p]
 
-[whosay name="葛城宮妃"]
+[whosay name="葛城宮妃"color=%mp.color]
 「きっとあの子からあなたに話すでしょう」[p]
 
 ;【立ち絵】主人公　瞬き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公口通常]
+[主人公眉下げ下]
 [主人公伏目パチ1回]
 「？　……はい」[p]
 [主人公目閉じ]
@@ -165,14 +168,14 @@
 私は葛城宮妃に一礼し[r]
 葛城宮の元に歩いた[p]
 
-；【立ち絵】 葛城宮 ため息
+;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「母宮のいいそうなことは想像がつく[r]
 [sp]手に負えない息子である私を頼みますとか[r]
 [sp]そんな内容だったのではないか？[r]
 [sp]結婚をして私が丸くなるのを期待してるのだろう」[p]
 
-；【立ち絵】主人公 困りほほえみ
+;【立ち絵】主人公　困り
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困りほほえみ]
 「何か仰る前に殿下が来られたので[r]
@@ -188,7 +191,7 @@
 ;【立ち絵】主人公 ほほえみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
-「いえ負担ではありませんわ」[r]
+「いえ負担ではありませんわ」[p]
 [主人公憂い]
 「それにしても私のお父様やお母さまも[r]
 [sp]わたしの事を大切に思って下さるのですが[r]
@@ -228,6 +231,7 @@
 ;【立ち絵】主人公　目伏照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公伏目]
+[主人公眉下げ下]
 [主人公頬染め]
 「ええ、夢を語ってくださる[r]
 [sp]殿下はとてもキラキラして[r]
@@ -304,6 +308,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公　微笑み[p]
 [主人公ほほえみ]
+[主人公頬染め]
 「ええ楽しみにしておりますわ」[p]
 [stopbgm]
 
