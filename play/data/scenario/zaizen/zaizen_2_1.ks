@@ -21,6 +21,12 @@
 行きかう人の姿の表情は落ち着いている[r]
 私は見知った姿を見かけて声を掛ける[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
+
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -77,12 +83,20 @@
 「[名前]さん、行ってよろしいわよ[r]
 ずっと財前様の事が心配だったのでしょう？」[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、行ってきます。[r]
 [sp] 時子さんにも久しぶりに会えて[r]
 [sp] 嬉しかったです」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 #
 そういって財前様の方に向かう[r]
@@ -179,6 +193,8 @@
 「まさかとは思いますが[r]
 [sp] 彼女に嫉妬でもしたのですか？」[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公　驚き
 [主人公驚]
 「な、何をおっしゃるんですか！」[r]
@@ -188,6 +204,12 @@
 [主人公困り]
 （でもそういわれれば納得しまう[r]
 [sp] でも嫉妬なんで財前様は嫌がるわ）[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 ;【立ち絵】財前　微笑み
 [whosay name="財前美彬" color="#7a65b2"]
@@ -220,6 +242,8 @@
 [主人公伏目パチ1回]
 #
 財前様の優しい微笑みを見て安心する[p]
+
+[fadeoutbgm time=3000]
 
 [主人公困り]
 けれど、やはりまだ財前様は恋愛を厭っているのかしら？[r]
