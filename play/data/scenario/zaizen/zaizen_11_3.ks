@@ -18,6 +18,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なんだか最近財前様のお手紙の感じが変わったわ）[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 ;【SE】紙に触れる（スッ）
@@ -68,7 +74,7 @@
 （忙しくなる……[r]
 [sp] なんだか胸騒ぎがするわ[r]
 [sp] 良くないことが起こっているのかしら？）[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】主人公：不安
 （景気が悪くなりつつあるというだけではないの？）[p]
 
