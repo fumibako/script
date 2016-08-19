@@ -22,6 +22,12 @@
 [sp] 大蔵大臣の金融不安を露呈した発言！[r]
 [sp] さあ新聞を買った買った！」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+
 #
 人々は足を止めて新聞を買い、[r]
 不安そうな顔つきでざわざわと[r]
@@ -106,11 +112,18 @@
 「営業妨害ですって？[r]
 [sp] こんな記事こそ銀行にとっては[r]
 [sp] 風評被害です！」[p]
+[fadeoutbgm time=3000]
 [主人公口通常]
 
 ;【立ち絵】財前：驚
 [whosay name="財前美彬" color="#7a65b2"]
 「[名前]さん！」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 #
 見知った声に驚いて[r]
@@ -148,6 +161,9 @@
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「まあ！」[p]
+
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公：目伏せ頬染　、両手を頬に
 [主人公困り]
 （見られていたのね……恥ずかしい[r]
@@ -159,6 +175,12 @@
 
 #
 そして財前様はと新聞社の方の間に入った[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】一閃（緊迫シーンに
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+[endif]
 
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
@@ -176,6 +198,7 @@
 「私は大正国際銀行頭取、[r]
 [sp] 財前美彬だ、記事の差し止めの事は[r]
 [sp] 亀蔵財閥総帥とも話し合い済みです」[p]
+[fadeoutbgm time=3000]
 
 #
 すっと新聞社員が青ざめて立ち去った[p]
@@ -184,6 +207,12 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「まったく記事が売れると思って[r]
 [sp] 人の不安を煽る記事を書くなんて最低です」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
@@ -275,7 +304,7 @@
 
 #運転手
 「はい！」[p]
-
+[fadeoutbgm time=3000]
 #
 そういって財前様は新聞社の中に入っていった[p]
 
