@@ -1,5 +1,7 @@
 ;4回目イベント　葛城宮の好感度が一番高い、一定の淑女度　
-[背景_庭]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -94,12 +96,16 @@
 数刻後[p]
 [resetfont]
 
+
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
-[背景_庭]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
-#浩文
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「話があると聞いた[r]
 [sp]話してごらんなさい。」[p]
 
