@@ -232,6 +232,8 @@
 [sp] お話ししましょう」[p]
 
 ;背景車の中
+[chara_mod name="bg" storage="bg/zaizen_kuruma.jpg" time=50]
+;[eval exp="f.haikei_credit='----　by　----　------------ '"]
 #
 私は止まってあった財前様の車に乗り[r]
 運転手さんが車を走らせる[p]
