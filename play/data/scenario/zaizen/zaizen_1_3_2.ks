@@ -27,6 +27,12 @@
 主要な各新聞社の記事をチェックする為[r]
 朝一番に新聞を読む習慣となっている[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;【立ち絵】財前：驚
 [whosay name="財前美彬" color="#7a65b2"]
 
@@ -92,6 +98,7 @@
 [sp] ……今すぐ彼女に会いに行きたい[r]
 [sp] この沸き上がる熱い気持ちは何だろうか）[p]
 
+[fadeoutbgm time=3000]
 
 #
 ーこの日を境に取り付け騒ぎが[r]
