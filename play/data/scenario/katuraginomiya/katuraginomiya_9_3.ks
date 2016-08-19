@@ -93,7 +93,7 @@
  [chara_mod name="bg" storage="bg / I9IhvvVdPo / nakoudoteiniwa.jpg"]
  
 
-#葛城宮妃
+[whosay name="葛城宮妃" color=%mp.color]
 「振袖がとても似合っておられて[r]
 [sp]仕立てたかいがありましたわ」[p]
 
@@ -105,7 +105,7 @@
 [sp]とてもうれしく思っております[r]
 [sp]葛城宮妃殿下」[p]
 
-[whosay name="葛城宮妃"color=%mp.color]
+[whosay name="葛城宮妃" color=%mp.color]
 「喜んでくれて嬉しいわ[r]
 けれど、つつましいことは好ましいけれど[r]
 [sp]他人行儀なのは少し寂しいわ」[p]
@@ -115,7 +115,7 @@
 [主人公ほほえみ]
 「妃殿下」[p]
 
-[whosay name="葛城宮妃"color=%mp.color]
+[whosay name="葛城宮妃" color=%mp.color]
 「少しずつ家族になっていきましょう[r]
 [sp]…… ああこの話じゃなく[r]
 [sp]息子の話をしようと思っていたの[r]
@@ -129,7 +129,7 @@
 [主人公伏目パチ1回]
 「どうされましたか？」[p]
 
-[whosay name="葛城宮妃"color=%mp.color]
+ [whosay name="葛城宮妃" color=%mp.color]
 「もう話す前に息子がそこに」[p]
 
 #
@@ -140,7 +140,7 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……」[p]
 
-#葛城宮妃
+[whosay name="葛城宮妃" color=%mp.color]
 「クスッ
 [sp]よほどあの子は貴方のことが大切なのね[r]
 [sp]いいわ…… 息子のこと頼みます[r]
@@ -151,7 +151,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あのでもお話しは……」[p]
 
-[whosay name="葛城宮妃"color=%mp.color]
+[whosay name="葛城宮妃" color=%mp.color]
 「きっとあの子からあなたに話すでしょう」[p]
 
 ;【立ち絵】主人公　瞬き
