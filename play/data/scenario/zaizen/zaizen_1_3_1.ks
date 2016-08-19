@@ -19,6 +19,12 @@
 「磯野、今日も新聞を[r]
 [sp] 読みたいのだけれどいいかしら？」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
+
 [whosay name="磯野" color="dimgray"]
 「はい、お嬢様、[r]
 [sp] ……銀行も大変なようです」[p]
@@ -73,12 +79,20 @@
 [主人公目閉じ]
 （今すぐ会いたい）[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公：真剣
 [主人公通常]
 （財前様の銀行も対応に追われている[r]
 [sp] 私に出来ることはないのかしら？[r]
 [sp] 新聞の文章からも事態を重く見て[r]
 [sp] 事態にを収拾しようと書かれている）[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪解け
+[playbgm storage="title_yukidoke.ogg" loop=true click=true]
+[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：ハッとする
 [主人公驚]
@@ -104,7 +118,7 @@
 [whosay name="磯野" color="dimgray"]
 「新聞社へのお手紙は旦那様と[r]
 [sp] よくご相談の上にになさってください」[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
