@@ -20,7 +20,7 @@
 [eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
 [endif]
 
-#浩文
+[whosay name=&sf.father_name color="DarkSlateBlue"]
 「体には気を付けて[r]
 [sp]殿下によくお仕えしなさい」[p]
 
@@ -50,7 +50,7 @@
 そういいながら私の目から涙がこぼれる[r]
 ・・・・もうここは私の家でなくなる[p]
 
-#文矢
+[whosay name="文矢" color="#538a8a"] 
 「[名前]、お前こそ私たちの誇りだ」[p]
 
 ;【立ち絵】主人公 困り微笑み
