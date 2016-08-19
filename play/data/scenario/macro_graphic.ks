@@ -41,7 +41,8 @@
 [macro name="手紙主人公"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 ;機能ボタン消去
 [clearfix]
 [freeimage layer = 29]
@@ -56,7 +57,8 @@
 [macro name="手紙文矢"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 ;機能ボタン消去
 [clearfix]
 [freeimage layer = 29]
@@ -67,11 +69,28 @@
 [resetfont]
 [endmacro]
 
+;[手紙時子]
+[macro name="手紙時子"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+;名前表示消去
+[cm]
+;機能ボタン消去
+[clearfix]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_tokiko.jpg" time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[resetfont]
+[endmacro]
+
 ;[手紙華衣婚約者]
 [macro name="手紙華衣婚約者"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 ;機能ボタン消去
 [clearfix]
 [freeimage layer = 29]
@@ -86,7 +105,8 @@
 [macro name="手紙皇后さま"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 ;機能ボタン消去
 [clearfix]
 [freeimage layer = 29]
@@ -101,7 +121,8 @@
 [macro name="手紙葛城宮妃殿下"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 ;機能ボタン消去
 [clearfix]
 [freeimage layer = 29]
@@ -145,7 +166,8 @@
 [macro name="手紙財前"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 [iscript]	
 /*
 f.fumi_all_title_new=f.okeiko_month_kansuuji+%fumi_title+"財前 美彬";
@@ -212,7 +234,8 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 [macro name="手紙四条"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 [iscript]	
 /*
 f.fumi_all_title_new=f.okeiko_month_kansuuji+%fumi_title+"四条 華織";
@@ -279,7 +302,8 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + 4;
 [macro name="手紙葛城宮"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 [iscript]	
 /*
 f.fumi_all_title_new=f.okeiko_month_kansuuji+%fumi_title+"葛城宮　晴仁";
@@ -350,7 +374,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 4;
 [macro name="手紙藤枝"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
-
+;名前表示消去
+[cm]
 [iscript]	
 /*
 f.fumi_all_title_new=f.okeiko_month_kansuuji+%fumi_title+"藤枝　肇";
