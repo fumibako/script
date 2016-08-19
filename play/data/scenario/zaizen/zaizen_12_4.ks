@@ -22,6 +22,12 @@
 [sp] 失言に言及する気はございません[r]
 [sp] ただ早急に対応して頂きたいと存じます！」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】一閃（緊迫シーンに
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+[endif]
+
 ;【立ち絵】財前：真剣
 [whosay name="財前美彬" color="#7a65b2"]
 「日銀が緊急に動いて貸し付けを[r]
@@ -128,7 +134,7 @@
 #
 大蔵大臣は席をたち会議室を出ていく[p]
 
-
+[fadeoutbgm time=3000]
 
 ;【立ち絵】財前：ため息
 [whosay name="財前美彬" color="#7a65b2"]
@@ -139,6 +145,12 @@
 
 ;【立ち絵】財前：通常
 （それにしても……）[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
@@ -178,6 +190,7 @@
 [sp] 癒されると感じている[r]
 [sp] ……自分が不思議だな）[p]
 
+[fadeoutbgm time=3000]
 
 ;@jump storage="event.ks" target=*event_owari
 
