@@ -42,6 +42,7 @@
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 ;機能ボタン消去
 [clearfix]
