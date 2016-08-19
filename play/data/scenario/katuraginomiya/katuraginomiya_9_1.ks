@@ -60,7 +60,9 @@
 
 ;【立ち絵】主人公 主人公照れ目普通
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公照れ目普通]
+[主人公目伏]
+[主人公口ほほえみ]
+[主人公頬染め]
 「ええ」[p]
 
 [whosay name=磯野 color="dimgray"]
