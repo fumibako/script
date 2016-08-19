@@ -89,10 +89,11 @@
 [sp] 事態にを収拾しようと書かれている）[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】雪解け
-[playbgm storage="title_yukidoke.ogg" loop=true click=true]
-[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+
 
 ;【立ち絵】主人公：ハッとする
 [主人公驚]
