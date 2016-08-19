@@ -14,6 +14,12 @@
 #
 財前様は私の手を解いて言った[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 ;【立ち絵】財前：冷ややか
 [whosay name="財前美彬" color="#7a65b2"]
 「[名前]さん、[r]
@@ -51,7 +57,7 @@
 [sp] けれど財前様がお母様を[r]
 [sp] 許せて良かったです」[p]
 ;【立ち絵】主人公：真剣
-[主人公目閉じ]
+[主人公通常]
 「私との縁談を破棄しますか？」[p]
 
 #
@@ -59,7 +65,7 @@
 暫く黙っていた[r]
 私は黙って財前様を見つめ[r]
 次の言葉を待っていた[p]
-
+[fadeoutbgm time=3000]
 ;【立ち絵】財前：ため息
 [whosay name="財前美彬" color="#7a65b2"]
 「まあ今回は大目に見まましょう」[p]
@@ -68,6 +74,12 @@
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……！」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 ;【立ち絵】財前：微笑み
 [whosay name="財前美彬" color="#7a65b2"]
@@ -201,10 +213,19 @@
 （財前様がこんなに近い……[r]
 [sp] 高鳴る私の胸の音が聞こえないか心配だわ）[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】財前：微笑み
 [whosay name="財前美彬" color="#7a65b2"]
 「そう緊張することはないですよ[r]
 [sp] 初めてにしては上出来です」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 
 ;【立ち絵】主人公：目伏せ困り頬染
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -213,6 +234,8 @@
 ;【立ち絵】主人公 : 目閉じ[r]
 [主人公目閉じ]
 [sp] 今度は胸がズキズキする……なぜなの？）[p]
+
+[fadeoutbgm time=3000]
 
 #
 自分の気持ちに戸惑いながら[r]
