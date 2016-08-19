@@ -108,7 +108,7 @@
 [sp]お許し頂けますか？」[p]
 [主人公口通常]
 
-#浩文
+[whosay name=&sf.father_name color="DarkSlateBlue"]
 「お前は我が家の誉だ[r]
 [sp]恐れ多くも親王様の婚約者候補に[r]
 [sp]なれるとは思っていなかった。」[p]
@@ -119,7 +119,7 @@
 [主人公目パチ1回]
 「お父さまそれでは！」[p]
 
-#浩文
+[whosay name=&sf.father_name color="DarkSlateBlue"]
 「だが葛城宮殿下の身分は[r]
 [sp]高く身分の違いは[r]
 [sp]お前を不幸にするかもしれない[r]
@@ -133,7 +133,7 @@
 [sp]帰れなくなることも承知の上です。[r]
 [sp]殿下のもとに嫁ぐともう心に決めました」[p]
 
-#浩文
+[whosay name=&sf.father_name color="DarkSlateBlue"]
 「そうか……それでは反対すまい[r]
 [sp]葛城宮殿下は同じく貴族院に入っている[r]
 [sp]叔父宮と度々衝突していると聞く[r]
