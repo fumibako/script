@@ -11,7 +11,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [eval exp="sf.FButton='OFF'"]
 *test
-[buttan target="*test"]
+[button target="*test"]
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
