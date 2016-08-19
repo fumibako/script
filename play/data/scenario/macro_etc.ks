@@ -150,7 +150,8 @@
 ;◆[テキスト全画面白文字無背景]
 [macro name="テキスト全画面白文字無背景"]
 ;名前欄消去
-[whosay name=""]
+;[whosay name=""]
+[cm]
 ;主人公顔グラ消去
 [freeimage layer = 15]
 [freeimage layer = 16]
@@ -182,7 +183,8 @@
 ;◆[テキスト全画面白文字]
 [macro name="テキスト全画面白文字"]
 ;名前欄消去
-[whosay name=""]
+;[whosay name=""]
+[cm]
 ;主人公顔グラ消去
 [freeimage layer = 15]
 [freeimage layer = 16]
@@ -217,7 +219,8 @@
 ;◆[テキスト全画面白文字暗]
 [macro name="テキスト全画面白文字暗"]
 ;名前欄消去
-[whosay name=""]
+;[whosay name=""]
+[cm]
 ;主人公顔グラ消去
 [freeimage layer = 15]
 [freeimage layer = 16]
