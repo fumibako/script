@@ -7,8 +7,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [eval exp="sf.FButton='OFF'"]
-[wait time=100]
-;戻ったあと文字がみれないのでためしに
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
