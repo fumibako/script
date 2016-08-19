@@ -19,9 +19,9 @@
 （なんだか最近財前様のお手紙の感じが変わったわ）[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
 ;【SE】紙に触れる（パラリ）
