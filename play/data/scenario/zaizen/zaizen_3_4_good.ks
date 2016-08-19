@@ -1,6 +1,5 @@
-;【背景】～指定ありません～
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg"]
+
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -16,6 +15,12 @@
 [sp] 金融恐慌の際に[r]
 [sp] 多くの新聞社にお手紙を送ったのは[r]
 [sp] [名前]さんですね？」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：驚
 [主人公驚]
@@ -76,21 +81,19 @@
 ;CG差分（財前目閉じ、主人公目閉じ）
 [主人公退場]
 ;暗転
-
+;【テキスト全画面】黒茶・和紙風背景に白文字
+[テキスト全画面白文字]
 -3年後[p]
-
+[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 #
 私たちは晴れて夫婦となり[r]
 忙しくも満ち足りた幸せな毎日を送っている[r]
 唯一気がかりだった[r]
 お祖母様も私を気にって下さった[p]
-
-;背景洋館居間
-[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[主人公ポーズ通常]
-;[主人公通常]
-
 
 ;【立ち絵】主人公：目伏せ頬染
 [主人公照れ目普通]
@@ -226,7 +229,7 @@
 「そうだな、私も共に歩もう[r]
 [sp] この愛しさも安らぎも[r]
 [sp] 君が教えてくれたものだ」[p]
-
+[fadeoutbgm time=3000]
 [chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
