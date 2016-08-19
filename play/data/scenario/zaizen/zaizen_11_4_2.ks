@@ -17,6 +17,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、今日の新聞は届いているかしら？」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 [whosay name="磯野" color="dimgray"]
 「はい、もうお聞き及びと存じますが[r]
 [sp] 町では多くの銀行が[r]
@@ -103,6 +109,9 @@
 ;【立ち絵】主人公：困り
 [主人公憂い]
 （これは大きな問題だわ）[p]
+
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公：真剣
 [主人公目閉じ]
 「でもきっと財前様なら[r]
