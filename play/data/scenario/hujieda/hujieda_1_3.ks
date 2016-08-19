@@ -122,7 +122,7 @@
 [主人公通常]
 「この手紙を出してくれますか？」[p]
 
-#女中
+[whosay name="女中"]
 「かしこまりました……三宮様へですね」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
