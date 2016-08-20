@@ -59,6 +59,7 @@
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 ;機能ボタン消去
 [clearfix]
@@ -75,6 +76,7 @@
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 ;機能ボタン消去
 [clearfix]
@@ -91,6 +93,7 @@
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 ;機能ボタン消去
 [clearfix]
@@ -107,6 +110,7 @@
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 ;機能ボタン消去
 [clearfix]
@@ -123,6 +127,7 @@
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 ;機能ボタン消去
 [clearfix]
@@ -168,6 +173,7 @@
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 [iscript]	
 /*
@@ -236,6 +242,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 [iscript]	
 /*
@@ -304,6 +311,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + 4;
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 [iscript]	
 /*
@@ -376,6 +384,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 4;
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
+[whosay name=""]
 [cm]
 [iscript]	
 /*
