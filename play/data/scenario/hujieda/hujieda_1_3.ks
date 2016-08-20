@@ -62,7 +62,7 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
-[手紙]
+[手紙時子]
 [名字]　[名前]様へ [l][r]
 [r]
 [sp]啓白　星も凍るような寒い夜[r]
@@ -92,7 +92,7 @@
 [r]
 かしこ[r]
 [sp][sp][sp][sp][sp][sp][sp][sp][sp][sp]三宮　時子[p]
-
+[手紙読了]
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
