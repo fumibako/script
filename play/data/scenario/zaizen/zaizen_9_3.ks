@@ -8,7 +8,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 
 ;【背景】主人公邸_庭
-[chara_mod name="bg" storage="bg/room_niwa.jp"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [イベントシーン構築]
