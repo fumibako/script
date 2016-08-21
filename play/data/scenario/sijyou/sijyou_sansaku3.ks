@@ -5,7 +5,19 @@
 ;四条祖母と出会い、
 ;花材を沢山持っていて主人公が手伝う
 ;理由があれば近所のお兄さんの家の前ならok?
-
+;幼馴染なので、わりと近所設定
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
 
 #
 今日も町は、切れ目のない雑踏で賑わっている[p]
