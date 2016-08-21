@@ -23,7 +23,7 @@
 [endif]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢様[r]、
+「お嬢様、[r]
 いつまでもふさぎ込んでいても仕方ありません」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -155,7 +155,8 @@
 [sp]お父様や磯野達にとっても良くないものです」[p]
 
 [whosay name="三宮　時子" color="#c25232"]
-「そうかしら？　良くないものかなんてわからないものよ」　[p]
+「そうかしら？[r]
+良くないものかなんてわからないものよ」　[p]
 [fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：驚き
