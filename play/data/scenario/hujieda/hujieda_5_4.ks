@@ -88,7 +88,6 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-[主人公通常]
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]
