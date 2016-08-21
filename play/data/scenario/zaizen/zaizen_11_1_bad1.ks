@@ -58,8 +58,7 @@
 
 
 
-;暗転?
-[テキスト全画面白文字]
+;暗転
 #
 私はただ茫然とし、[r]
 あくまで冷静な財前様に[r]
@@ -75,15 +74,15 @@
 その後財前様は私との婚約を破談、[r]
 別の方と結婚し、[r]
 私はまだ誰とも結婚せずにいた[p]
-
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 [fadeoutbgm time=3000]
 
 ;[背景洋館]
 独逸大使邸[p]
 [chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
-[主人公ポーズ通常]
 [主人公通常]
 #
 私は財前様のお母様と[r]
@@ -129,7 +128,8 @@
 「いえ、忙しいと断られました」[p]
 
 ;【立ち絵】主人公：ホッとする
-[主人公通常]
+[主人公目閉じ]
+[主人公眉下げ下]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですか。」[r]
 （かち合わなくて良かったわ）[p]
@@ -173,7 +173,8 @@
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"][p]
 [fadeoutbgm time=3000]
-[主人公通常]
+[主人公目伏柔]
+[主人公眉下げ下]
 #
 私は空を見上げる[r]
 この広い空の下で[r]
