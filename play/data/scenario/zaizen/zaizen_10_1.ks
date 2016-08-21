@@ -161,7 +161,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「自信はありませんがもう一度[r]
 [sp] 財前様とゆっくりお話ししようと思います」[p]
-[主人公通常]
 
 
 ;@jump storage="event.ks" target=*event_owari
