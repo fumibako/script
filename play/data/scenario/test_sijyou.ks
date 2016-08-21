@@ -48,6 +48,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="test_sansaku" text="散策" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test_sansaku2" text="散策2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test_sansaku3" text="散策3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
@@ -151,6 +152,12 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [cm]
 [freeimage layer = 26]
 @jump storage="sijyou/sijyou_sansaku2.ks"
+[s]
+
+*test_sansaku3
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_sansaku3.ks"
 [s]
 
 *test_fumi
