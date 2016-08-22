@@ -94,8 +94,8 @@
 ;【主人公】ほほえみ
 [主人公ほほえみ]
 [wait time=20]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+はい[p]
 
 #
 ;[苗字]家がない？？
