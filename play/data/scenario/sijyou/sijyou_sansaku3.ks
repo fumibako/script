@@ -147,10 +147,12 @@
 「どうか、ウチの華織のことをよろしくお願いします」[p]
 
 ;【主人公】素直そう
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公笑顔]
 [wait time=10]
 「はい、こちらこそ」[p]
 ;【主人公】爽やかな感じに
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目通常]
 [wait time=10]
 [主人公口ほほえみ]
