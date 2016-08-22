@@ -97,6 +97,7 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公　通常
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「この手紙を出してくれますか？」[p]
 
@@ -105,11 +106,12 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 真剣
+[主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、よろしくお願いしますわ」[p]
 
 ;【立ち絵】主人公：困り
-[主人公憂い]
+  [主人公憂い]
 （これは大きな問題だわ）[p]
 
 [fadeoutbgm time=3000]
