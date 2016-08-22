@@ -27,7 +27,7 @@
 [eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
 [endif]
 
-;暗転
+;背景暗転
 [主人公伏目]
 [主人公眉下げ下]
 #
