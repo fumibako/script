@@ -69,6 +69,10 @@ if(mp.name=="文矢"){
     mp.color = "#929055";
 }else if(mp.name=="財前・アルベルト・美彬"){
     mp.color = "#929055";
+}else if(mp.name=="？？"){
+    mp.color = "#b2a077";
+}else if(mp.name=="独逸大使夫人"){
+    mp.color = "#b2a077";
 }else if(mp.name=="財前母"){
     mp.color = "#b2a077";
 }else if(mp.name=="四条"){
