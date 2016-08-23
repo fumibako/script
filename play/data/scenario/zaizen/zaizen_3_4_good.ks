@@ -79,6 +79,8 @@
 [p]
 すると額に柔らかく温かいものが触れる[r]
 ー私を慈しむようかのようだわ[p]
+[chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 ;CG差分（財前目閉じ、主人公目閉じ）
 [主人公退場]
