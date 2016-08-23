@@ -7,7 +7,9 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
-[主人公通常]
+[主人公伏目]
+[主人公眉下げ下]
+[主人公頬染]
 
 ;【立ち絵】財前：微笑み
 [whosay name="財前美彬" color="#7a65b2"]
@@ -234,8 +236,6 @@
 [sp] この愛しさも安らぎも[r]
 [sp] 君が教えてくれたものだ」[p]
 [fadeoutbgm time=3000]
-[chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 #
 ーきっと私はあなたと巡り合い[r]
