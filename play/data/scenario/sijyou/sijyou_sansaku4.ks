@@ -342,7 +342,7 @@ _ さてどうしましょうか？」[p]
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
-
+;普通に鳴る
 
 [whosay name="華織" color="olivedrab"]
 「僕が探しに行ったしても、[華衣]はここで待ってるなんて出来ないでしょう」 [p]
@@ -451,7 +451,7 @@ _ さてどうしましょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もしかしたら、時折、お兄さまも、その様なことをお考えになられているのでしょうか)[p]
 
-[fadeoutbgm time=3000]
+;[fadeoutbgm time=3000]
 
 #子供・壱
 「ねぇ！おにーちゃんは飴2本も食べるのー？」[p]
@@ -470,11 +470,11 @@ _ さてどうしましょうか？」[p]
 息も絶え絶えの[華衣]が帰ってきた。[p]
 
 
-;[if exp="sf.BGM=='ON'"]
+[if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
-;[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
-;[endif]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 
 [whosay name="華衣" color=%mp.color]
 「おい！姉貴を見つけてきたぞ！！」[p]
