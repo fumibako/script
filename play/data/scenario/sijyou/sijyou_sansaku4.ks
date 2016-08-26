@@ -140,7 +140,7 @@
 
 [whosay name="華衣" color=%mp.color]
 「……迷惑、かけた」[p]
-[主人公通常目]
+[主人公目通常]
 [wait time=10]
 [主人公口ほほえみ]
 [wait time=10]
