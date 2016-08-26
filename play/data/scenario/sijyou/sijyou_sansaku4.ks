@@ -464,15 +464,17 @@ _ さてどうしましょうか？」[p]
 [主人公口ほほえみ]
 [wait time=10]
 
+
+;◎子供nのを発見する
+まもなくして、[r]
+息も絶え絶えの[華衣]が帰ってきた。[p]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 
-;◎子供nのを発見する
-まもなくして、[r]
-息も絶え絶えの[華衣]が帰ってきた。[p]
 [whosay name="華衣" color=%mp.color]
 「おい！姉貴を見つけてきたぞ！！」[p]
 [whosay name="子供たち"]
