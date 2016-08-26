@@ -27,7 +27,7 @@
 ;場面転換
 ;[波ヶ浦]
 [chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
-;主人公通常でもいいかも
+;主人公通常でもいいかも　お好きに！
 [主人公真剣]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
@@ -163,10 +163,10 @@
 楽しみにしています。」[p]
 [手紙読了] 
 [whosay name="華衣" color=%mp.color]
-あの庭……！[p]
+「あの庭……！」[p]
 ;[華衣]、走って家に帰る！四条家は運動力がある？
 [whosay name="華織" color="olivedrab"]
-[華衣]！[p]
+「[華衣]！」[p]
 ;○お互い見合って 比翼の2人の感じ
 [whosay name="華織" color="olivedrab"]
 「[名前]、」[p]
@@ -192,6 +192,7 @@
 
 
 ;[婚約者の花園] ネリネ？の庭…背景がないなら私が描いてボカすか青空か夕空の背景…もう少し上手く描きたいところ
+;写真の花だけでもいいかもね
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=100]
 
 [whosay name="華衣" color=%mp.color]
@@ -213,12 +214,12 @@
 ;×[主人公泣き]あえて「忍耐」言わない方がいいかな
 
 [whosay name="華衣" color=%mp.color]
-！[p]
+「！」[p]
 
 [主人公通常]
 [wait time=10]
 [whosay name="華衣" color=%mp.color]
-「……こんな近くに探し物はあったのですね」[p]
+「……こんな近くに探し物はあったのか」[p]
 
 [主人公憂い]
 [wait time=10]
