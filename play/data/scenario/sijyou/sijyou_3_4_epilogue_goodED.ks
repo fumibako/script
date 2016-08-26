@@ -6,6 +6,9 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+[macro name=華衣]
+[ruby text="か"]華[ruby text="い"]衣
+[endmacro]
 ;テストは一時的にイベントシーン構築つけてます
 *ep
 [テキスト全画面白文字]
@@ -47,7 +50,7 @@
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「少し、休まれませんか？ 華衣さんからのお手紙も来たので」[p]
+「少し、休まれませんか？ [華衣]さんからのお手紙も来たので」[p]
 
 [主人公目パチ1回]
 [wait time=10]
@@ -56,7 +59,7 @@
 [playse storage=tya_yunomi_oku.ogg loop=false ]
 
 [whosay name="華織" color="olivedrab"]
-「華衣から手紙ですか！ なかなか手紙さえ返してくれなかったのに。[r]
+「[華衣]から手紙ですか！ なかなか手紙さえ返してくれなかったのに。[r]
 一体、何をしてるのでしょうか……」[p]
 
 [主人公目パチ1回]
@@ -70,7 +73,7 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「手紙によりますと……
-華衣さんは結納式の後に出会った方と四条家の鉱山事業を生かした
+[華衣]さんは結納式の後に出会った方と四条家の鉱山事業を生かした
 発電事業をはじめ……」[p]
 [主人公目パチ1回]
 [wait time=10]
