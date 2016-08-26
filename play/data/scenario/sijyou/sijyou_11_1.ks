@@ -11,6 +11,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+[macro name=華衣]
+[ruby text="か"]華[ruby text="い"]衣
+[endmacro]
+
 兄のはからいで料亭にやってきた[名前]は、会うべき[r]
 "とある人物"を待っていた。[p]
 [主人公ポーズ通常]
@@ -117,17 +121,17 @@
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「それで、華衣さまは
+「それで、[華衣]さまは
 まだ帰って来られてないのですね」[p]
 [whosay name="華織" color="olivedrab"]
 「そうなんだ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華衣さまの
+「[華衣]さまの
 ご婚約さまは何か残していらっしゃらないでしょうか？」[p]
 [whosay name="華織" color="olivedrab"]
 「その人に頼まれて世話をしてる花なら」[p]
 [whosay name="華織" color="olivedrab"]
-「けど華衣は話も聞こうともしないし信じようともしない」[p]
+「けど[華衣]は話も聞こうともしないし信じようともしない」[p]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうでしたか……もっと他に何かないでしょうか」[p]
@@ -163,7 +167,7 @@
 
 ;適当につけましたので変えてもよいです。遠いぞーってことがわかればよし
 [テキスト全画面白文字]
-[名前]と華織達は、杳々たる山深き『華衣の婚約者』の[r]
+[名前]と華織達は、杳々たる山深き『[華衣]の婚約者』の[r]
 生家へと足を運んだ。[p]
 
 ;○急いで！のイメージ
@@ -171,7 +175,7 @@
 ;○京の端町、質素な邸宅がある
 ;[質素な邸宅]和の家
 [イベントシーン構築]
-『華衣の婚約者の生家前』[p]
+『[華衣]の婚約者の生家前』[p]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
 [主人公ポーズ通常]
 [wait time=10]
@@ -187,7 +191,7 @@
 「あれは何をなさっているのでしょうか？」[p]
 [whosay name="華織" color="olivedrab"]
 「資産の差し押さえだね [r]
-華衣の婚約者は小さな公家の出なんだ」[p]
+[華衣]の婚約者は小さな公家の出なんだ」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
@@ -214,11 +218,11 @@
 [whosay name="華織" color="olivedrab"]
 「急に尋ねてしまい申し訳ありません」[p]
 [whosay name="華織" color="olivedrab"]
-「華衣はこちらに来てませんでしたか？」[p]
+「[華衣]はこちらに来てませんでしたか？」[p]
 ;○↓片田舎の京の人というイメージ
 [whosay name="華衣の婚約者の母"]
 「いえ、とんと。手紙を送ってこられますがねぇ」[p]
-[whosay name="華衣の婚約者の母"]
+[whosay name="[華衣]の婚約者の母"]
 「ここは、来るには少々荒けた場所ですえ」[p]
 [主人公憂い]
 [wait time=10]
@@ -242,7 +246,7 @@
 [主人公困りほほえみ]
 [wait time=10]
 ;仮↑プレイヤーの驚きの表情なのか、彼のやることを信頼しているからの表情なのかテストちゅう
-#華衣の婚約者の母
+[whosay name="華衣の婚約者の母"]
 「えぇっ？」[p]
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
@@ -260,7 +264,7 @@
 [主人公通常]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「私達と、華衣の為にも」[p]
+「私達と、[華衣]の為にも」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -283,8 +287,8 @@
 [wait time=10]
 [whosay name="華衣の婚約者の母"]
 「息子の物はここにある書物と壺くらいです」[p]
-#華衣の婚約者の母
-「とくに華衣さまに喜んでもらえるものがあるとは……」[p]
+[whosay name="華衣の婚約者の母"]
+「とくに[華衣]さまに喜んでもらえるものがあるとは……」[p]
 [whosay name="華織" color="olivedrab"]
 「少し見させてもらっていいですか？ 」[p]
 [whosay name="華衣の婚約者の母"]
@@ -322,7 +326,7 @@
 ;○後ろから呼びかけて
 [whosay name="華織" color="olivedrab"]
 [whosay name="華衣の婚約者の母"]
-「華衣さまに、お伝え下さいぇ[r]
+「[華衣]さまに、お伝え下さいぇ[r]
 もうしばらくしたら、この地を離れますと」[p]
 
 [fadeoutbgm time=3000]
@@ -366,7 +370,7 @@
 
 ;○まずは道具の確認　何をするのかプレイヤーに説明
 [whosay name="華織" color="olivedrab"]
-「華衣を見つけて説得する為にも、
+「[華衣]を見つけて説得する為にも、
 まずは、頂いたものを確認しよう」[p]
 
 [主人公通常]
@@ -484,7 +488,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま。
-これは絶対、華衣さまにお渡ししないといけませんね」[p]
+これは絶対、[華衣]さまにお渡ししないといけませんね」[p]
 [whosay name="華織" color="olivedrab"]
 「あぁ、そうだね」[p]
 #
@@ -493,7 +497,7 @@
 
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
-「問題は、華衣が放蕩する場所だな」[p]
+「問題は、[華衣]が放蕩する場所だな」[p]
 ;[四条憂い]
 [whosay name="華織" color="olivedrab"]
 「我が兄弟ながら、その様な場所を皆目検討つかないなんて、[r]
@@ -538,7 +542,7 @@
 [whosay name="華織" color="olivedrab"]
 「歌舞伎の演目名だ」[p]
 [whosay name="華織" color="olivedrab"]
-「華衣もあの人も『展覧芝居』を一緒になって
+「[華衣]もあの人も『展覧芝居』を一緒になって
 見ていた！」[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
