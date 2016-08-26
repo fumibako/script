@@ -11,8 +11,12 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 
-;まだ深刻ではない
+;あとで変更したいときに一括変更するため
+[macro name=華衣]
+[ruby text="か"]華[ruby text="い"]衣
+[endmacro]
 
+;まだ深刻ではない
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -69,7 +73,7 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;○四条の苦悩シーン
 [whosay name="四条母" color="#9B608B"]
-「華衣！ 勝手に手紙を捨てるはやめて頂戴！」[p]
+「[華衣]！ 勝手に手紙を捨てるはやめて頂戴！」[p]
 [whosay name="四条 華衣" color=%mp.color]
 「うるさい！ 華織のせいであの人が死んだんだ！」[p]
 [whosay name="四条祖父" color="#888898"]
@@ -88,13 +92,13 @@
 [fadeoutbgm time=3000]
 
 [whosay name="華織" color="olivedrab"]
-「華衣を、叱らないであげて下さい、[r]
+「[華衣]を、叱らないであげて下さい、[r]
 僕が悪いのですから」[p]
 ;[SE足音]
 [playse storage=girl_out_walk.ogg loop=false ]
 
 [whosay name="四条母" color="#9B608B"]
-「華衣！どこ行くの？！」[p]
+「[華衣]！どこ行くの？！」[p]
 #
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
 [イベントシーン構築]
