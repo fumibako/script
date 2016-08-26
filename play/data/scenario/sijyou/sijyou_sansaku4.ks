@@ -454,7 +454,7 @@ _ さてどうしましょうか？」[p]
 [fadeoutbgm time=3000]
 
 #子供・壱
-「ねぇ！おにーちゃんは飴2本も食べるのー？[p]
+「ねぇ！おにーちゃんは飴2本も食べるのー？」[p]
 [whosay name="華織" color="olivedrab"]
 「これは、帰ってきた方達のお土産用です」[p]
 ;主人公 ほほえみ？
@@ -469,11 +469,12 @@ _ さてどうしましょうか？」[p]
 まもなくして、[r]
 息も絶え絶えの[華衣]が帰ってきた。[p]
 
-[if exp="sf.BGM=='ON'"]
+
+;[if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
-[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
-[endif]
+;[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+;[endif]
 
 [whosay name="華衣" color=%mp.color]
 「おい！姉貴を見つけてきたぞ！！」[p]
