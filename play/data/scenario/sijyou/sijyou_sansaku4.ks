@@ -21,6 +21,12 @@
 
 木の葉はすっかり落ち、次の新緑の為に息を潜める季節。[r]
 冷たい空気が背筋を伸ばしてくれる。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日は、どこを見て回りましょうか)[p]
 #
@@ -324,6 +330,12 @@ _ さてどうしましょうか？」[p]
 ;何で探してあげないのですか？
 
 ;◎華織、華衣に対しての想いを語る
+[if exp="sf.BGM=='ON'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
+
 
 [whosay name="華織" color="olivedrab"]
 「僕が探しに行ったしても、[華衣]はここで待ってるなんて出来ないでしょう」 [p]
@@ -433,6 +445,12 @@ _ さてどうしましょうか？」[p]
 ;主人公 ほほえみ？
 [主人公口ほほえみ]
 [wait time=10]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 
 ;◎子供nのを発見する
 まもなくして、[r]
