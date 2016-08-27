@@ -59,29 +59,37 @@ if(mp.name=="文矢"){
 }else if(mp.name=="黒田　将貴"){
     mp.name = "黒田　<ruby><rb>将貴</rb><rt>まさたか</rt><ruby>";
     mp.color = "#7a65b2";
+    sf.message_name_y=400;
 }else if(mp.name=="黒田 将貴"){
     mp.name = "黒田 <ruby><rb>将貴</rb><rt>まさたか</rt><ruby>";
     mp.color = "#7a65b2";
+    sf.message_name_y=400;
 }else if(mp.name=="黒田将貴"){
     mp.name = "黒田<ruby><rb>将貴</rb><rt>まさたか</rt><ruby>";
     mp.color = "#7a65b2";
+    sf.message_name_y=400;
 }else if(mp.name=="田中　岩男"){
     mp.color = "#775545";
 }else if(mp.name=="財前 美彬"){
     mp.name = "財前 <ruby><rb>美彬</rb><rt>よしあきら</rt><ruby>";
     mp.color = "#929055";
+    sf.message_name_y=400;
 }else if(mp.name=="財前　美彬"){
     mp.name = "財前　<ruby><rb>美彬</rb><rt>よしあきら</rt><ruby>";
     mp.color = "#929055";
+    sf.message_name_y=400;
 }else if(mp.name=="財前美彬"){
     mp.name = "財前<ruby><rb>美彬</rb><rt>よしあきら</rt><ruby>";
     mp.color = "#929055";
+    sf.message_name_y=400;
 }else if(mp.name=="財前・アルベルト・美彬"){
     mp.name = "財前・アルベルト・<ruby><rb>美彬</rb><rt>よしあきら</rt><ruby>";
     mp.color = "#929055";
+    sf.message_name_y=400;
 }else if(mp.name=="独逸大使夫人"){
     mp.name = "<ruby><rb>独逸</rb><rt>ドイツ</rt><ruby>大使夫人";
     mp.color = "#b2a077";
+    sf.message_name_y=400;
 }else if(mp.name=="財前母"){
     mp.color = "#b2a077";
 }else if(mp.name=="四条"){
@@ -119,21 +127,27 @@ if(mp.name=="文矢"){
 }else if(mp.name=="葛城宮 晴仁"){
     mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt><ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt><ruby>";
     mp.color = "#414180";
+    sf.message_name_y=400;
 }else if(mp.name=="葛城宮　晴仁"){
     mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt><ruby>　<ruby><rb>晴仁</rb><rt>はるひと</rt><ruby>";
     mp.color = "#414180";
+    sf.message_name_y=400;
 }else if(mp.name=="葛城宮晴仁"){
     mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt><ruby><ruby><rb>晴仁</rb><rt>はるひと</rt><ruby>";
     mp.color = "#414180";
+    sf.message_name_y=400;
 }else if(mp.name=="藤枝　肇"){
     mp.name = "藤枝　<ruby><rb>肇</rb><rt>はじめ</rt><ruby>";
     mp.color = "#8280ff";
+    sf.message_name_y=400;
 }else if(mp.name=="藤枝 肇"){
     mp.name = "藤枝 <ruby><rb>肇</rb><rt>はじめ</rt><ruby>";
     mp.color = "#8280ff";
+    sf.message_name_y=400;
 }else if(mp.name=="藤枝肇"){
     mp.name = "藤枝<ruby><rb>肇</rb><rt>はじめ</rt><ruby>";
     mp.color = "#8280ff";
+    sf.message_name_y=400;
 }else if(mp.name=="郵便屋"){
     mp.color = "#8280ff";
 }else if(mp.name=="藤枝　晶子"){
