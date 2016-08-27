@@ -469,16 +469,17 @@ _ さてどうしましょうか？」[p]
 [wait time=10]
 
 ;◎子供nのを発見する
+#
 まもなくして、[r]
 息も絶え絶えの[華衣]が帰ってきた。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
-;[playbgm storage="machi_takenoko.ogg" loop=true]
-;[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 ;【BGM】夕涼み（お稽古パートなど
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+;[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+:[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
 [whosay name="華衣" color=%mp.color]
