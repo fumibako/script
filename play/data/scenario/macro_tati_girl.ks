@@ -43,6 +43,7 @@
 ;名前表示用のマクロ(ティラノ公式サンプルゲーム『MikuPod』を参考にしています)
 [macro name="whosay"]
 [eval exp="sf.father_name='浩文'"]
+[eval exp="sf.message_name_y=407"]
 ;入力された名前によって色を変更
 [iscript]
 if(mp.name=="文矢"){
@@ -55,21 +56,31 @@ if(mp.name=="文矢"){
     mp.color = "#916565";
 }else if(mp.name==sf.father_name){
     mp.color = "DarkSlateBlue";
+}else if(mp.name=="黒田　将貴"){
+    mp.name = "黒田　<ruby><rb>将貴</rb><rt>まさたか</rt><ruby>";
+    mp.color = "#7a65b2";
 }else if(mp.name=="黒田 将貴"){
+    mp.name = "黒田 <ruby><rb>将貴</rb><rt>まさたか</rt><ruby>";
     mp.color = "#7a65b2";
 }else if(mp.name=="黒田将貴"){
+    mp.name = "黒田<ruby><rb>将貴</rb><rt>まさたか</rt><ruby>";
     mp.color = "#7a65b2";
 }else if(mp.name=="田中　岩男"){
     mp.color = "#775545";
 }else if(mp.name=="財前 美彬"){
+    mp.name = "財前 <ruby><rb>美彬</rb><rt>よしあきら</rt><ruby>";
     mp.color = "#929055";
 }else if(mp.name=="財前　美彬"){
+    mp.name = "財前　<ruby><rb>美彬</rb><rt>よしあきら</rt><ruby>";
     mp.color = "#929055";
 }else if(mp.name=="財前美彬"){
+    mp.name = "財前<ruby><rb>美彬</rb><rt>よしあきら</rt><ruby>";
     mp.color = "#929055";
 }else if(mp.name=="財前・アルベルト・美彬"){
+    mp.name = "財前・アルベルト・<ruby><rb>美彬</rb><rt>よしあきら</rt><ruby>";
     mp.color = "#929055";
 }else if(mp.name=="独逸大使夫人"){
+    mp.name = "<ruby><rb>独逸</rb><rt>ドイツ</rt><ruby>大使夫人";
     mp.color = "#b2a077";
 }else if(mp.name=="財前母"){
     mp.color = "#b2a077";
@@ -92,26 +103,36 @@ if(mp.name=="文矢"){
 }else if(mp.name=="四条 華衣"){
     mp.name = "四条 <ruby><rb>華衣</rb><rt>かい</rt><ruby>";
     mp.color = "#22ae91";
+    sf.message_name_y=400;
 }else if(mp.name=="四条　華衣"){
     mp.name = "四条　<ruby><rb>華衣</rb><rt>かい</rt><ruby>";
     mp.color = "#22ae91";
+    sf.message_name_y=400;
 }else if(mp.name=="四条華衣"){
     mp.name = "四条<ruby><rb>華衣</rb><rt>かい</rt><ruby>";
     mp.color = "#22ae91";
+    sf.message_name_y=400;
 }else if(mp.name=="華衣"){
     mp.name = "<ruby><rb>華衣</rb><rt>かい</rt><ruby>";
     mp.color = "#22ae91";
+    sf.message_name_y=400;
 }else if(mp.name=="葛城宮 晴仁"){
+    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt><ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt><ruby>";
     mp.color = "#414180";
 }else if(mp.name=="葛城宮　晴仁"){
+    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt><ruby>　<ruby><rb>晴仁</rb><rt>はるひと</rt><ruby>";
     mp.color = "#414180";
 }else if(mp.name=="葛城宮晴仁"){
+    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt><ruby><ruby><rb>晴仁</rb><rt>はるひと</rt><ruby>";
     mp.color = "#414180";
 }else if(mp.name=="藤枝　肇"){
+    mp.name = "藤枝　<ruby><rb>肇</rb><rt>はじめ</rt><ruby>";
     mp.color = "#8280ff";
 }else if(mp.name=="藤枝 肇"){
+    mp.name = "藤枝 <ruby><rb>肇</rb><rt>はじめ</rt><ruby>";
     mp.color = "#8280ff";
 }else if(mp.name=="藤枝肇"){
+    mp.name = "藤枝<ruby><rb>肇</rb><rt>はじめ</rt><ruby>";
     mp.color = "#8280ff";
 }else if(mp.name=="郵便屋"){
     mp.color = "#8280ff";
@@ -140,7 +161,7 @@ if (mp.name!="") {
 	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
 }
 [endscript]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=260 y=407 bold="bold"]
+[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=260 y=&sf.message_name_y bold="bold"]
 ;[ptext name="chara_name_area" layer=message0 text=%name color=%color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
 [endmacro]
 
