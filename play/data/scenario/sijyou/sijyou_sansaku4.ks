@@ -474,8 +474,11 @@ _ さてどうしましょうか？」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
-[playbgm storage="machi_takenoko.ogg" loop=true]
-[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+;[playbgm storage="machi_takenoko.ogg" loop=true]
+;[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
 [whosay name="華衣" color=%mp.color]
