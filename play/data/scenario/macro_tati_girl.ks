@@ -90,12 +90,16 @@ if(mp.name=="文矢"){
 }else if(mp.name=="四条祖母"){
     mp.color = "#916565";
 }else if(mp.name=="四条 華衣"){
+    mp.name = "四条 <ruby><rb>華衣</rb><rt>かい</rt><ruby>";
     mp.color = "#22ae91";
 }else if(mp.name=="四条　華衣"){
+    mp.name = "四条　<ruby><rb>華衣</rb><rt>かい</rt><ruby>";
     mp.color = "#22ae91";
 }else if(mp.name=="四条華衣"){
+    mp.name = "四条<ruby><rb>華衣</rb><rt>かい</rt><ruby>";
     mp.color = "#22ae91";
 }else if(mp.name=="華衣"){
+    mp.name = "<ruby><rb>華衣</rb><rt>かい</rt><ruby>";
     mp.color = "#22ae91";
 }else if(mp.name=="葛城宮 晴仁"){
     mp.color = "#414180";
@@ -136,7 +140,7 @@ if (mp.name!="") {
 	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
 }
 [endscript]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
+[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=260 y=407 bold="bold"]
 ;[ptext name="chara_name_area" layer=message0 text=%name color=%color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
 [endmacro]
 
