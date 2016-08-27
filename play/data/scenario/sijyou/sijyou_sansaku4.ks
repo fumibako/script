@@ -479,7 +479,7 @@ _ さてどうしましょうか？」[p]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 ;【BGM】夕涼み（お稽古パートなど
 ;[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-:[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+;[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
 [whosay name="華衣" color=%mp.color]
