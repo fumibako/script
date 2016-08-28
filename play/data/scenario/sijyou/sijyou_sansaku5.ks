@@ -67,7 +67,7 @@
 「あぁ、またお義父様に怒られてしまうわ。早く落ち着いてもらわないと……」
 [p]
 ;四条祖父のこと
-
+#
 ;セリフは適当。時期でセリフの変更
 [whosay name=&sf.girl_namae color="[whosay name="cf5a7f"]
 ;[if exp=]
