@@ -29,7 +29,8 @@
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公 驚
 [主人公驚]
@@ -39,7 +40,8 @@
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公　微笑み
 [主人公笑顔]
@@ -47,7 +49,8 @@
 [sp]（……また琴の上にとまって[r]
 [sp]そこがお気に入りなの？）[p]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公 通常
 [主人公ほほえみ]
