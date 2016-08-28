@@ -54,7 +54,9 @@
 [主人公目閉じ]
 「ええ、精進するわ」[p]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
+
 [主人公困り]
 
 [whosay name=磯野 color="dimgray"]
@@ -76,7 +78,8 @@
 鳩さんの足に括り付けてあった[r]
 手紙をほどいて開ける[p]
 
-;【SE】紙の音（カサッ）
+;【SE】紙に触れる（早・軽）
+[playse storage=paper_open_fast.ogg loop=false ]
 
 #
 私は茫然と立ち尽くした。[r]
