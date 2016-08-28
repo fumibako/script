@@ -27,7 +27,8 @@
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公 驚
 [主人公驚]
@@ -42,7 +43,8 @@
 「足に紙が括り付けてあるわ」[r]
 （取った方がいいのかしら？）[p]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公 伏目
 [主人公口ほほえみ]
@@ -55,8 +57,8 @@
 [主人公驚]
 「これは、手紙？」[p]
 
-;【SE】小鳥羽ばたき
-[playse storage=tori_habataki_kosagi.ogg loop=false ]
+;【SE】鳩の羽ばたき（バサバサッ）
+[playse storage=tori_habataki_hato.ogg loop=false ]
 
 
 ;【立ち絵】主人公 困り
