@@ -88,7 +88,8 @@
 磯野が部屋から出ていき、[r]
 私はため息をついた[p]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公 驚
 [主人公驚]
@@ -104,7 +105,8 @@
 「ありがとう。[r]
 でも最近は思うような演奏が出来ていないわ」[p]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公 困り
 [主人公困り]
