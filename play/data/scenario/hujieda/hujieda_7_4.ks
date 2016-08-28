@@ -87,7 +87,8 @@
 [endif]
 
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 [主人公通常]
 [主人公目パチ1回]
@@ -112,11 +113,15 @@
 [主人公口笑顔小]
 「鳥文の君へよろしくね」[p]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 #
 鳩が飛び立つのを見送って[r]
 私は手紙を開いた。[p]
+
+;【SE】鳩の羽ばたき（バサバサッ）
+[playse storage=tori_habataki_hato.ogg loop=false ]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
