@@ -46,7 +46,8 @@
 #
 私はなんとか曲を弾き終えた一息つく。[p]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公　驚
 [主人公驚]
@@ -61,7 +62,8 @@
 [主人公ほほえみ]
 「手紙が括り付けてあるわ！」[p]
 
-;【SE】鳩の鳴き声
+;【SE】鳩（クルルポー）
+[playse storage=tori_hato.ogg loop=false ]
 
 #
 はやる気持ちに着地した鳩の足の[r]
