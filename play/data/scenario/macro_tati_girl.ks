@@ -177,7 +177,7 @@ if (mp.name!="") {
 	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
 }
 [endscript]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=26 x=260 y=&sf.message_name_y]
+[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=26 x=260 y=&sf.message_name_y bold="bold"]
 ;[ptext name="chara_name_area" layer=message0 text=%name color=%color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
 [endmacro]
 
