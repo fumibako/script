@@ -111,31 +111,31 @@ if(mp.name=="文矢"){
 }else if(mp.name=="四条祖母"){
     mp.color = "#916565";
 }else if(mp.name=="四条 華衣"){
-    mp.name = "四条 <ruby><rb>華衣</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かい</font></rt></ruby>";
+    mp.name = "四条 <ruby><rb>華衣</rb><rt>かい</rt></ruby>";
     mp.color = "#22ae91";
     sf.message_name_y=400;
 }else if(mp.name=="四条　華衣"){
-    mp.name = "四条　<ruby><rb>華衣</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かい</font></rt></ruby>";
+    mp.name = "四条　<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
     mp.color = "#22ae91";
     sf.message_name_y=400;
 }else if(mp.name=="四条華衣"){
-    mp.name = "四条<ruby><rb>華衣</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かい</font></rt></ruby>";
+    mp.name = "四条<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
     mp.color = "#22ae91";
     sf.message_name_y=400;
 }else if(mp.name=="華衣"){
-    mp.name = "<ruby><rb>華衣</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かい</font></rt></ruby>";
+    mp.name = "<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
     mp.color = "#22ae91";
     sf.message_name_y=400;
 }else if(mp.name=="葛城宮 晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かつらぎのみや</font></rt></ruby> <ruby><rb>晴仁</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">はるひと</font></rt></ruby>";
+    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
     mp.color = "#414180";
     sf.message_name_y=400;
 }else if(mp.name=="葛城宮　晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かつらぎのみや</font></rt></ruby> <ruby><rb>晴仁</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">はるひと</font></rt></ruby>";
+    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
     mp.color = "#414180";
     sf.message_name_y=400;
 }else if(mp.name=="葛城宮晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かつらぎのみや</font></rt></ruby> <ruby><rb>晴仁</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">はるひと</font></rt></ruby>";
+    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
     mp.color = "#414180";
     sf.message_name_y=400;
 }else if(mp.name=="藤枝　肇"){
