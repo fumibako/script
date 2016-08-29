@@ -111,31 +111,31 @@ if(mp.name=="文矢"){
 }else if(mp.name=="四条祖母"){
     mp.color = "#916565";
 }else if(mp.name=="四条 華衣"){
-    mp.name = "四条 <ruby><rb>華衣</rb><rt>かい</rt></ruby>";
+    mp.name = "四条 <ruby><rb>華衣</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かい</font></rt></ruby>";
     mp.color = "#22ae91";
     sf.message_name_y=400;
 }else if(mp.name=="四条　華衣"){
-    mp.name = "四条　<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
+    mp.name = "四条　<ruby><rb>華衣</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かい</font></rt></ruby>";
     mp.color = "#22ae91";
     sf.message_name_y=400;
 }else if(mp.name=="四条華衣"){
-    mp.name = "四条<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
+    mp.name = "四条<ruby><rb>華衣</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かい</font></rt></ruby>";
     mp.color = "#22ae91";
     sf.message_name_y=400;
 }else if(mp.name=="華衣"){
-    mp.name = "<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
+    mp.name = "<ruby><rb>華衣</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かい</font></rt></ruby>";
     mp.color = "#22ae91";
     sf.message_name_y=400;
 }else if(mp.name=="葛城宮 晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
+    mp.name = "<ruby><rb>葛城宮</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かつらぎのみや</font></rt></ruby> <ruby><rb>晴仁</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">はるひと</font></rt></ruby>";
     mp.color = "#414180";
     sf.message_name_y=400;
 }else if(mp.name=="葛城宮　晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby>　<ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
+    mp.name = "<ruby><rb>葛城宮</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かつらぎのみや</font></rt></ruby> <ruby><rb>晴仁</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">はるひと</font></rt></ruby>";
     mp.color = "#414180";
     sf.message_name_y=400;
 }else if(mp.name=="葛城宮晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby><ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
+    mp.name = "<ruby><rb>葛城宮</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">かつらぎのみや</font></rt></ruby> <ruby><rb>晴仁</rb><rt><font face="ＭＳ Ｐ明朝,平成明朝">はるひと</font></rt></ruby>";
     mp.color = "#414180";
     sf.message_name_y=400;
 }else if(mp.name=="藤枝　肇"){
@@ -177,7 +177,7 @@ if (mp.name!="") {
 	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
 }
 [endscript]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=260 y=&sf.message_name_y bold="bold"]
+[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=26 x=260 y=&sf.message_name_y]
 ;[ptext name="chara_name_area" layer=message0 text=%name color=%color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
 [endmacro]
 
