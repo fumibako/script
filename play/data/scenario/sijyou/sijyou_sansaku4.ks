@@ -10,9 +10,6 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[macro name=華衣]
-[ruby text="か"]華[ruby text="い"]衣
-[endmacro]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
@@ -26,36 +23,46 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-
+[主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日は、どこを見て回りましょうか)[p]
 #
 全てが落ち付きを取り戻したからこそ、余裕をもって町をみて回ることもできる。[p]
 #
 「「おねえちゃんーーー！！、おねえちゃんーーー！！」」[p]
+[主人公驚]
+[主人公眉下げ下]
 #
 ふと、見ると飴屋の前で泣き叫んでる小さな子供が２人、手を繋ぎながらも、泣き崩れていた。[p]
 
 ;※思いつかないので画像つけてるだけです。実際は町のみ。
 [whosay name="飴屋の主人"]
 「まいったなぁ……ここから離れるわけにいかないし」[p]
-
+[主人公憂い]
+[主人公ポーズ指]
 #
 飴屋の主人は、店から離れられない様子で、誰かが救いの手を出してくれないかと、流れ行く人をオロオロと見つめている。[p]
-
+[主人公ポーズ通常]
+[主人公目パチ1回]
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……)[p]
 私はそれを見て思わず足が動き、女の子に近寄っていた。[p]
+[主人公眉下げ下]
+[主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「大丈夫？ お姉ちゃんとはぐれたの？」[p]
 #
 子供達の視点に合わせ、比較的、子供に伝わりやすい口調で尋ねてみた。[p]
+[主人公目パチ1回]
 [whosay name="子供達・壱"]
 「……おねえちゃん……どこにも……さがしてもいなくて……」[p]
 [whosay name="子供たち"]
 「えんちゃんが、飴屋に行こうなんて、言わなければよかったのに……」[p]
+[主人公口開]
 [whosay name="子供達・壱"]
 「かんちゃんも行くっ……言ったじゃん……！！」[p]
+[主人公汗]
 #
 子供達は、喧嘩を始めると、また降り出しに戻って泣き叫んでしまった。[p]
 [whosay name="飴屋の主人"]
