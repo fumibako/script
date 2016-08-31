@@ -1,7 +1,6 @@
 ;///////散策案 花火///////
 ;ネリネの花→花火、火は鎮魂
-;期間 夏
-;夕前(イメージ15時〜16時くらい？)
+;期間 夏　夕前(イメージ15時〜16時くらい？)
 ;どんなイベント？ 散策しようとして思い出に浸る
 ;☆このイベントの目的、フラグを回収、キャラの良さ
 ;登場人物 四条華織 父　磯野
@@ -18,7 +17,6 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
 
 [whosay name="磯野"]
 「お嬢様、今日は"人通りが多い"と思います。散策に出られるのは、お控えした方がよろしいかと」[p]
@@ -75,10 +73,13 @@
 ;bgm 海風と沈む太陽
 ;http://otowabi.com/music/20160827umikaze/
 ;[if exp="sf.BGM=='ON'"]
-;【BGM】夕涼み（お稽古パートなど
+;【BGM】海風と沈む太陽
 ;[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
 ;[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 ;[endif]
+
+[chara_mod name="bg" storage="bg/sijyou_engawa.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -112,9 +113,9 @@
 [wait time=30]
 
 [主人公退場]
-;背景 主人公部屋 夕方か夜 時間がたつ。
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;背景 縁側　夕方か夜 時間がたつ。
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 
 #
@@ -214,7 +215,10 @@
 #
 私は、兄と華織さまに挟まれ、縁側で線香花火に興じたことを思い出した。[p]
 
-[テキスト全画面白文字暗]
+[テキスト全画面白文字無背景]
+;背景 線香花火
+[chara_mod name="bg" storage="bg/sijyou_hanabi1.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 ……[p]
 ;黒い背景に全面文字？ よい感じにならんかえ
@@ -230,23 +234,26 @@ _             ーー綺麗だね。[r]
 [r]
 と呟く。[p]
 ;初めに半角バーを置くとスペースができる
-;もう少し印象的にならないか
 #
 [r]
 私は、その言葉に目を向けると、[r]
 [r]
 微かに華織お兄さまの横顔を照らして、[r]
+;背景 線香花火落ちた ただの暗闇?
+[chara_mod name="bg" storage="bg/sijyou_hanabi3.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [r]
 玉火は、ポトリと落ちた。[p]
 ;メッセージ戻る？タイミングは適☆当
 #
 ーー今でも覚えています。あの日見た、花火の儚さ。[p]
 はじめて間近で見た貴方の横顔は、忘れない。[p]
+
 [イベントシーン構築]
 
 ;背景 主人公部屋 夕方か夜。
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -330,6 +337,9 @@ _             ーー綺麗だね。[r]
 ;このモノローグはフラグ回収
 [主人公目伏柔]
 [wait time=10]
+;背景花火
+[chara_mod name="bg" storage="bg/sijyou_hanabi2.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 花火が華開き、儚く落ちていく。[p]
 ;今が思い出になっていく時間の儚さ(と華織)
