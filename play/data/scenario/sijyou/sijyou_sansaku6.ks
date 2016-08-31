@@ -68,6 +68,8 @@
 ……[p]
 ;移動中、なくてもいいけど
 [主人公退場]
+[chara_mod name="bg" storage="bg/sijyou_engawa.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。その相手は[p]
 ;bgm 海風と沈む太陽
@@ -78,8 +80,7 @@
 ;[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 ;[endif]
 
-[chara_mod name="bg" storage="bg/sijyou_engawa.jpg" time=1000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 
 [主人公ポーズ通常]
 [wait time=10]
