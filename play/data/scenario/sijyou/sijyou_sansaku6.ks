@@ -221,7 +221,8 @@
 [chara_mod name="bg" storage="bg/sijyou_hanabi1.jpg" time=1000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
-……[p]
+;……[p]
+;いらないかも↑
 ;黒い背景に全面文字？ よい感じにならんかえ
 #
 ――闇に落ちいく火華は、松葉のように開き、[r]
