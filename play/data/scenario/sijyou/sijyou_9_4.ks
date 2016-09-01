@@ -235,6 +235,9 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 #
+憧れの人と繋ぐことに 私は緊張してしまって言葉もままならなかった。
+[p]
+#
 ;スクリプト担：[商店背景] 帯留めを選ぶシーンは店内の方が合うでしょうか？ 地の文とはすこし違う背景しかすぐには見つかりませんでしたが、外のままよりは自然かと入れてみました
 [chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg" time=1500]
 [eval exp="f.haikei_credit=''"]
