@@ -159,10 +159,16 @@ if(mp.name=="文矢"){
 }else if(mp.name=="藤枝晶子"){
     mp.color = "#dda0ff";
 }else if(mp.name=="三宮　時子"){
+    mp.name = "<ruby><rb>三宮</rb><rt>さんのみや</rt></ruby>　<ruby><rb>時子</rb><rt>ときこ</rt></ruby>";
+    sf.message_name_y=400;
     mp.color = "#c25232";
 }else if(mp.name=="三宮 時子"){
+    mp.name = "<ruby><rb>三宮</rb><rt>さんのみや</rt></ruby> <ruby><rb>時子</rb><rt>ときこ</rt></ruby>";
+    sf.message_name_y=400;
     mp.color = "#c25232";
 }else if(mp.name=="三宮時子"){
+    mp.name = "<ruby><rb>三宮</rb><rt>さんのみや</rt></ruby><ruby><rb>時子</rb><rt>ときこ</rt></ruby>";
+    sf.message_name_y=400;
     mp.color = "#c25232";
 }else if(mp.name=="お茶屋の娘"){
     mp.color = "#5b7e23";
