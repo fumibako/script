@@ -19,13 +19,14 @@
 [wait time=10]
 #
 今日も町は、切れ目のない雑踏で賑わっている[p]
-[主人公目パチ1回]
-[wait time=10]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
+
+[主人公目パチ1回]
+[wait time=10]
 
 [whosay name="？？？"]
 よいっしょ……っと[p]
