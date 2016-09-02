@@ -13,6 +13,9 @@
 [主人公ポーズ通常]
 [主人公通常]
 
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
 ;○四条、主人公の父親を敬う態度で礼容な挨拶を交わす。（四条の公私を分けた態度を表現.主人公には私的な形）
 [whosay name="四条父" color="darkolivegreen"]
 「『[名字][名前]』嬢と息子の『華織』との縁談をご承諾くださいまして感謝申し上げます」[p]
@@ -32,6 +35,7 @@
 「さすが[名字]浩文さま、お人柄しのばれますことと[r]
 [sp]みなで納得いたしております」[p]
 
+[四条目閉じ]
 [whosay name="四条 華織" color="olivedrab"]
 「至らぬ点もございますがこれからもどうぞよろしくお願い申し上げます」 [p]
 [主人公目パチ1回]
@@ -39,7 +43,7 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織君は将来有望な好青年で、娘は実にいい人と巡り合えたものだと、うれしい限りです」[p]
 「こちらこそ至らない点が多いかと思いますが、よろしくお願いします」[p]
-
+[四条微笑み]
 #
 ;ナレーターモノローグ
 四条家と[名字]家の格式ばった挨拶が[ruby text="つつが"]恙[ruby text="な"]無く執り行われる。[p]
@@ -86,9 +90,11 @@
 [主人公目を開く]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
+
+
 ;○四条、気を利かせて話題をふる
 [whosay name="四条 華織" color="olivedrab"]
-;[四条デフォルト]
+[四条通常]
 「久しぶりだね。[名前]ちゃん」[p]
 
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -96,7 +102,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「昔、会ったときよりも、随分と
-;[四条笑顔]
+[四条笑顔]
 美しくなったね」[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
@@ -121,6 +127,9 @@
 [playbgm storage="yumemiru_hoshi.ogg" loop=true]
 [eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
 [endif]
+
+;回想シーンのため【退場】四条
+[四条退場]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -174,6 +183,8 @@
 ;○四条、主人公の落ち着いた振る舞いに少し驚く
 ;△思い浮かばず 追加して頂けると助かります
 ;[お見合いの場]
+
+
 [主人公ポーズ通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -191,8 +202,14 @@
 #
 四条さまのお声でふと我に返った――[p]
 
+;【登場】四条
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
+[四条口開]
 [whosay name="四条 華織" color="olivedrab"]
 「僕の後ろをついて回っていた可愛らしい君は、いつの間にか可憐な淑女になってしまわれたようだね」[p]
+
 
 ;○主人公についての説明はキャラ担当
 ;○謙遜を言葉にすると失礼になるので表情で表す。主人公、四条に大人として認めてほしい感じ
@@ -200,12 +217,15 @@
 [主人公照れ]
 [wait time=500]
 
+[四条微笑み]
 ;○主人公の父親、煮えきれず。2人で話すよう、それとなくつつく。（しかしながら華族なので遠くでは見守っています）
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「お前さん達、こんなところで見合ってても仕方あるまい。家令をつれて庭を見て回ってらっしゃい」[p]
 
 [主人公目を開く]
 [主人公通常]
+
+[四条困り微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「お父様も、あぁいっていらっしゃることですし、庭園に行ってみようか？」[p]
 
@@ -216,9 +236,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 
+;【退場】四条
+[四条退場]
+
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-;[お見合いの庭]
+
 ;【背景】庭園
 [chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
@@ -226,6 +249,10 @@
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 
+;【登場】四条
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
 ;○四条の主人公の緊張をほぐすため共通の会話を探す 主人公との回想を思い出して
 [whosay name="四条 華織" color="olivedrab"]
 「見てご覧、白萩の花が咲いているね。[r]
@@ -236,7 +263,7 @@
 「はい……」[p]
 
 ;○四条、まだ緊張している主人公を気遣って兄の結婚前の話にかえる
-;[四条微笑み]
+[四条笑顔]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]ちゃん、文矢の結婚の件、よかったね」[p]
 
@@ -250,6 +277,8 @@
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+
+[四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「今の文矢は君に先輩風を吹かしているだろうけど」[p]
 「文通の際は昼夜問わずに相談にのってほしいって[r]
@@ -273,6 +302,8 @@
 
 [主人公ポーズ通常]
 ;○主人公。驚いた表情のまま。恥ずかしくもあり。
+
+[四条笑顔]
 [whosay name="四条 華織" color="olivedrab"]
 「ふふ、いつもの[名前]ちゃんになったね」[p]
 
@@ -282,6 +313,10 @@
 [whosay name="四条 華織" color="olivedrab"]
 「僕のことは文矢のように思ってもらえばいいよ[r]
 [sp]次はあちらを見て回ろうか」[p]
+
+;【退場】四条
+[四条退場]
+
 
 ;【背景】庭園
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
@@ -303,6 +338,12 @@
 四条は袂をよせると花を掬うようにして[名前]に手を差し伸べる。[p]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
+
+;【登場】四条
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
+
 [whosay name="四条 華織" color="olivedrab"]
 「飛び石に気をつけて」[p]
 
@@ -312,7 +353,7 @@
 ;ナレーター
 [名前]はその手をとって導かれていく。[r]
 四条は、[名前]をしっかりと支え、気遣いをしてくれているが、その背はどこか遠くに感じる。[p]
-;感じざるを得ない？
+;感じざる得ない？
 
 ;○四条が気を使っていることに気づく主人公
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -357,14 +398,16 @@
 [主人公ポーズ通常]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 ;○主人公の決意
+
+[四条驚き]
 [whosay name="四条 華織" color="olivedrab"]
-;[四条驚き]
 ;○四条は気遣いできるくらいに勘は良いかも
+
+[四条憂い]
 [whosay name="四条 華織" color="olivedrab"]
 「気を使わなくてもいいよ」[p]
-;[四条憂い]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;[主人公デフォルト]または
 [主人公照れ目普通]
@@ -373,17 +416,24 @@
 「四条さまは、兄にご相談されますのでしょうか？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+
+[四条驚き]
 [whosay name="四条 華織" color="olivedrab"]
-;[四条驚き]
 「！」[p]
 [fadeoutbgm time=3000]
 [主人公目パチ1回]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
+
 [whosay name="四条 華織" color="olivedrab"]
-;[四条デフォルト]から[四条微笑み]へ
-「ふふ、そうしないよう気をつけるよ」[p]
+[四条微笑み]
+「ふふ、
+[四条笑顔]
+そうしないよう気をつけるよ」[p]
 ;○四条、一時的に迷いから解消される
+
+;【退場】四条
+[四条退場]
 [stopbgm]
 ;¥¥¥¥¥¥¥¥イベント2ここまで¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
