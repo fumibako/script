@@ -5,10 +5,9 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
-[macro name=華衣]
-[ruby text="か"]華[ruby text="い"]衣
-[endmacro]
+
 ;テストは一時的にイベントシーン構築つけてます
 *ep
 [テキスト全画面白文字]
