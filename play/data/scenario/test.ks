@@ -34,6 +34,8 @@
 
 [glink target="test5" text="表情テスト：主人公" graphic="select_waku_x500.png" size=20 width="500" x=100 y=380 color=white]
 
+[glink target="test10" text="表情テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=410 color=white]
+
 ;[glink target="haikei" text="背景テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=400 color=white]
 
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="500" x=100 y=500 color=white]
@@ -57,6 +59,10 @@
 
 *test5
 @jump storage="test_girl.ks"
+[s]
+
+*test10
+@jump storage="kuroda_9_1.ks"
 [s]
 
 *test_sijyou_hyoujou
