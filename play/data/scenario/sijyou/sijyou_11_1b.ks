@@ -273,7 +273,7 @@
 #
 ;△病院に運ばれて妹が来たときには時すでに遅し！
 ;病院
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_byouin.jpg" time=100]
+[chara_mod name="bg" storage="bg/sijyou_byouin.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
 『もう少ししたら傷も治るよね。そうしたら、ずっと』[p]
 …………[wait time=1500][er]
