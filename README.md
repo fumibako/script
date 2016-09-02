@@ -50,7 +50,10 @@ https://fumibako.github.io/script/play/
 ・衡山毛筆フォント-青二書道教室 様 http://www7a.biglobe.ne.jp/~kouzan/  
 ・M+ FONTS 様 http://mplus-fonts.osdn.jp/index.html  
 
-  
+##制作にご協力くださった方々  
+　＊　Special Thanks　＊  
+　　エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、テストプレイヤーの皆様、淑女の皆様  
+
 ##制作スタッフ
 ・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様  
 ・キャラクターグラフィック：	かいこ(112 ◆UdslvZE52Q)  
