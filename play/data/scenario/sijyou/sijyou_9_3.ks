@@ -144,8 +144,12 @@
 [whosay name="四条親戚" color="#807070"]
 「これは良いご縁。ウチもあやかりたいな」[p]
 
+
 [whosay name="四条 華織" color="olivedrab"]
 「本日はお越しいただきありがとうございます」[p]
+
+;【SE】人々のざわめき（ザワザワ…屋外）
+;[playse storage=zawa_out.ogg loop=false ]
 
 [主人公目パチ1回]
 [whosay name="四条祖父" color="#888898"]
@@ -174,11 +178,24 @@
 ;○はりきってる四条祖母 姑？
 [whosay name="四条祖母" color="#916565"]
 「それからですね……」[p]
-
 [主人公目パチ1回]
 ;○小さな親戚の子は鬼ごっこやかくれんぼをしている ぶつかりそうになると四条がかばってくれる 賑やかな雰囲気
+
+;【登場】四条
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
+
 [whosay name="四条 華織" color="olivedrab"]
 「少し、疲れたかい？」[p]
+
+[whosay name="四条 華織" color="olivedrab"]
+「ごめんね。[r]
+[sp]どうも、我が家は、家同士の繋がりや[ruby text=し]仕[ruby text=きた]来りが強くて」[p]
+;謝るなよーって思うが他にセリフ思いつかない
+
+[whosay name="四条 華織" color="olivedrab"]
+「けど、みんな、久しぶりに[名前]が来てくれたものだから、構いたくて仕方ないんだ」[p]
 
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
@@ -193,8 +210,14 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
+[四条口開]
 [whosay name="四条 華織" color="olivedrab"]
 「むこうで休もうか」[p]
+
+;【退場】四条
+[四条退場]
+
+
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】「五色」
@@ -202,22 +225,51 @@
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
 
+
 ;[暗転]より場面転換でしょうか
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
 
+;【登場】四条
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
+
+[whosay name="四条 華織" color="olivedrab"]
+「昔は、兄も弟も海外に留学に出掛けていて、僕だけが家の留守を[r]
+[sp]任されていたんだ。[r]
+[sp]だから文矢と[名前]が遊びにきてくれた時は、とても嬉しかったよ」[p]
+
+[主人公目パチ1回]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(そうなのですね)[p]
+
+
+#
+－－はじめは、兄に連れられ訪ねた四条家。[r]
+花咲く庭で、いつもひとりで居た彼と出会って、[r]
+いつしか、ここは、私にとっての憧れと夢の場所となった。[p]
+
+#
+私は、思い出の場所が変わりないかと、庭を眺めた。[p]
+
+;がさがさ
+
 ;○そこはかとなく大人の雰囲気
 ;○伏線 無くてもどちらでも
 #
 ;ナレーターモノローグ
-四条の後ろの木陰の下に人影が見え、その人物は、こちらを見つめている。[p]
+四条の後ろの木陰の下に人影が見え、その人物は、こちらを見つめていた。[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
 
 [whosay name="？？？" color=%mp.color]
 「……なんで……だけ」[p]
+
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
@@ -236,6 +288,12 @@
 （？）[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
+
+;#
+;こちらが気づいた途端、それは何も無かったかのように影へと消えていった。[p]
+
+;【SE】子供たち(楽しげな笑い声)
+[playse storage=kodomotachi_warai.ogg loop=false ]
 
 [whosay name="親戚の子 その壱" color="#807070"]
 「どこにお隠れ遊ばして！? 」[p]
