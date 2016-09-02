@@ -34,7 +34,7 @@
 
 [glink target="test5" text="表情テスト：主人公" graphic="select_waku_x500.png" size=20 width="500" x=100 y=380 color=white]
 
-[glink target="test10" text="表情テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=410 color=white]
+;[glink target="test10" text="表情テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=450 color=white]
 
 ;[glink target="haikei" text="背景テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=400 color=white]
 
