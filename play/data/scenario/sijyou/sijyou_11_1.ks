@@ -11,9 +11,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-[macro name=華衣]
-[ruby text="か"]華[ruby text="い"]衣
-[endmacro]
+
 
 兄のはからいで料亭にやってきた[名前]は、会うべき[r]
 "とある人物"を待っていた。[p]
