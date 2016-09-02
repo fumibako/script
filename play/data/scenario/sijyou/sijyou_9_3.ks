@@ -132,6 +132,7 @@
 [whosay name="四条祖母" color="#916565"]
 「この回遊庭園は、大名屋敷の折に造られたものを活かしており、外交の為にも一定の場所から洋風にしているんですの……」[p]
 
+;○主人公真摯に聞いている
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -140,7 +141,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
-;○[主人公デフォルト]真摯に聞いている
+
 [whosay name="四条親戚" color="#807070"]
 「これは良いご縁。ウチもあやかりたいな」[p]
 
@@ -194,6 +195,7 @@
 [sp]どうも、我が家は、家同士の繋がりや[ruby text=し]仕[ruby text=きた]来りが強くて」[p]
 ;謝るなよーって思うが他にセリフ思いつかない
 
+[四条困り微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「けど、みんな、久しぶりに[名前]が来てくれたものだから、構いたくて仕方ないんだ」[p]
 
@@ -209,7 +211,7 @@
 「いえ、とても親切な方ばかりでいらっしゃるので楽しかったです」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
+[四条微笑み]
 [四条口開]
 [whosay name="四条 華織" color="olivedrab"]
 「むこうで休もうか」[p]
@@ -217,13 +219,6 @@
 ;【退場】四条
 [四条退場]
 
-
-[if exp="sf.BGM=='ON'"]
-[stopbgm]
-;【BGM】「五色」
-[playbgm storage="heavymood_goshiki.ogg" loop=true]
-[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
-[endif]
 
 
 ;[暗転]より場面転換でしょうか
@@ -247,28 +242,40 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そうなのですね)[p]
 
-
+[主人公目閉じ]
 #
 －－はじめは、兄に連れられ訪ねた四条家。[r]
 花咲く庭で、いつもひとりで居た彼と出会って、[r]
 いつしか、ここは、私にとっての憧れと夢の場所となった。[p]
 
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
 #
 私は、思い出の場所が変わりないかと、庭を眺めた。[p]
 
 ;がさがさ
 
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;【BGM】「五色」
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+
 ;○そこはかとなく大人の雰囲気
 ;○伏線 無くてもどちらでも
 #
 ;ナレーターモノローグ
-四条の後ろの木陰の下に人影が見え、その人物は、こちらを見つめていた。[p]
+ふと、気づくと、四条の後ろの木陰の下に人影が見え、その人物は、こちらを見つめている。[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
 
 [whosay name="？？？" color=%mp.color]
 「……なんで……だけ」[p]
+
+#
+こちらが気づいた途端、それは何も無かったかのように影へと消えていった。[p]
 
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
@@ -289,8 +296,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 
-;#
-;こちらが気づいた途端、それは何も無かったかのように影へと消えていった。[p]
+
 
 ;【SE】子供たち(楽しげな笑い声)
 [playse storage=kodomotachi_warai.ogg loop=false ]
