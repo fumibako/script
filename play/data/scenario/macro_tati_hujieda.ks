@@ -209,6 +209,18 @@
 [wait time=10]
 [endmacro]
 
+;立ち絵表示[藤枝眉平行]
+[macro name="藤枝眉平行"]
+[chara_mod name="hujieda_mayu" storage="hujieda/mayu_heikou.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[藤枝眉下げ下]
+[macro name="藤枝眉下げ下"]
+[chara_mod name="hujieda_mayu" storage="hujieda/mayu_sage_sita.png" time=0]
+[wait time=10]
+[endmacro]
+
 ;立ち絵表示[藤枝口通常]
 [macro name="藤枝口通常"]
 [chara_mod name="hujieda_kuti" storage="hujieda/kuti_futuu.png" time=0]
@@ -236,6 +248,12 @@
 ;立ち絵表示[藤枝口開]
 [macro name="藤枝口開"]
 [chara_mod name="hujieda_kuti" storage="hujieda/kuti_ake.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[藤枝口大開]
+[macro name="藤枝口大開"]
+[chara_mod name="hujieda_kuti" storage="hujieda/kuti_ooake.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -267,12 +285,6 @@
 ;立ち絵表示[藤枝目にこ]
 [macro name="藤枝目にこ"]
 [chara_mod name="hujieda_me" storage="hujieda/me_niko.png" time=0]
-[wait time=10]
-[endmacro]
-
-;立ち絵表示[藤枝目伏柔]
-[macro name="藤枝目伏柔"]
-[chara_mod name="hujieda_me" storage="hujieda/me_fusi.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -309,12 +321,6 @@
 ;立ち絵表示[藤枝頬染め]
 [macro name="藤枝頬染め"]
 [chara_mod name="hujieda_emo" storage="hujieda/emo_hohosome.png" time=0]
-[wait time=10]
-[endmacro]
-
-;立ち絵表示[藤枝ビンタ]
-[macro name="藤枝ビンタ"]
-[chara_mod name="hujieda_emo" storage="hujieda/emo_binta.png" time=0]
 [wait time=10]
 [endmacro]
 

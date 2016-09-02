@@ -270,12 +270,6 @@
 [wait time=10]
 [endmacro]
 
-;立ち絵表示[四条目伏柔]
-[macro name="四条目伏柔"]
-[chara_mod name="sijyou_me" storage="sijyou/me_fusi.png" time=0]
-[wait time=10]
-[endmacro]
-
 ;立ち絵表示[四条目伏]
 [macro name="四条目伏"]
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]

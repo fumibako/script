@@ -70,11 +70,11 @@
 
 [if exp="f.gra_sijyou_part=='mayu'"]
 [glink target="mayu_01" text="[四条眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
-[glink target="mayu_05" text="[四条眉通常下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="mayu_02" text="[四条眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="mayu_03" text="[四条眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="mayu_04" text="[四条眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="mayu_06" text="[四条眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink target="mayu_02" text="[四条眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+[glink target="mayu_03" text="[四条眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+[glink target="mayu_04" text="[四条眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink target="mayu_06" text="[四条眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+;[glink target="mayu_05" text="[四条眉通常下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
 [endif]
 
 [if exp="f.gra_sijyou_part=='me'"]
