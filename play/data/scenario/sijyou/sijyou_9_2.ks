@@ -76,7 +76,7 @@
 「それに文矢の件では、何かと世話になったそうじゃないか」[p]
 [主人公目パチ1回]
 
-[四条目伏]
+;[四条目伏]
 [whosay name="四条 華織" color="olivedrab"]
 「浩文さまもお変わりなく……
 [四条口開]
@@ -89,7 +89,7 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「娘はそそっかしいもので失敗も多いかと思いますが、どうかよろしくお願いいたします」[p]
 ;○謙遜しつつも2人がうまくやっていけるか父心ながら心配をする 黒田とほぼ同じ文章でもよい。
-
+#
 ;お父さんの言葉にとりあえず笑っておく四条
 [四条笑顔]
 
@@ -104,7 +104,7 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 
-
+#
 ;○四条、気を利かせて話題をふる
 [whosay name="四条 華織" color="olivedrab"]
 [四条微笑み]
