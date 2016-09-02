@@ -607,6 +607,10 @@
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 
+
+;【退場】四条
+[四条退場]
+
 ;○2人でボートに
 ;場面転換
 [主人公ポーズ通常]
@@ -673,6 +677,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織さま、どうしたのでしょうか？)[p]
 [stopse]
+
 
 ;¥¥¥¥¥¥¥¥イベント3ここまで¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
