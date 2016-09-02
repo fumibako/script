@@ -10,9 +10,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 ;ないとキャラが消せないと怒られるので
-[macro name=華衣]
-[ruby text="か"]華[ruby text="い"]衣
-[endmacro]
+
 
 [テキスト全画面白文字]
 外に出て車夫をみつけると、[華衣]がいると思われる[r]
