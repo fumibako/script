@@ -22,8 +22,8 @@
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg"]
 [イベントシーン構築]
 
-[藤枝ベース着物]
-[eval exp="f.gra_hujieda_pose='[藤枝ベース着物]'"]
+[藤枝ベース郵便屋]
+[eval exp="f.gra_hujieda_pose='[藤枝ベース郵便屋]'"]
 [藤枝通常]
 [eval exp="f.gra_hujieda_face='[藤枝通常]'"]
 [eval exp="f.gra_hujieda_part='mayu'"]
@@ -70,11 +70,13 @@
 
 [if exp="f.gra_hujieda_part=='mayu'"]
 [glink target="mayu_01" text="[藤枝眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
-[glink target="mayu_05" text="[藤枝眉通常下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="mayu_02" text="[藤枝眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="mayu_03" text="[藤枝眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="mayu_04" text="[藤枝眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="mayu_06" text="[藤枝眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink target="mayu_02" text="[藤枝眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+[glink target="mayu_03" text="[藤枝眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+[glink target="mayu_04" text="[藤枝眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink target="mayu_06" text="[藤枝眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+[glink target="mayu_07" text="[藤枝眉平行]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+;[glink target="mayu_05" text="[藤枝眉通常下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+;[glink target="mayu_08" text="[藤枝眉下げ下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 [endif]
 
 [if exp="f.gra_hujieda_part=='me'"]
@@ -96,7 +98,7 @@
 [glink target="kuti_05" text="[藤枝口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
 [glink target="kuti_06" text="[藤枝口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 [glink target="kuti_09" text="[藤枝口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-;[glink target="kuti_07" text="[藤枝口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+;[glink target="kuti_07" text="[藤枝口大開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
 ;[glink target="kuti_06" text="[藤枝口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
@@ -106,7 +108,7 @@
 [glink target="emo_01" text="[藤枝効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
 [glink target="emo_02" text="[藤枝頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
 [glink target="emo_03" text="[藤枝汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="emo_04" text="[藤枝ビンタ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+;[glink target="emo_04" text="[藤枝ビンタ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 ;[glink target="emo_05" text="[藤枝]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
 ;[glink target="emo_06" text="[藤枝]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 ;[glink target="emo_07" text="[藤枝]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
@@ -270,6 +272,16 @@
 [eval exp="f.gra_hujieda_face='眉：[藤枝眉驚き]'"]
 @jump target=text
 
+*mayu_07
+[藤枝眉平行]
+[eval exp="f.gra_hujieda_face='眉：[藤枝眉平行]'"]
+@jump target=text
+
+*mayu_08
+[藤枝眉下げ下]
+[eval exp="f.gra_hujieda_face='眉：[藤枝眉下げ下]'"]
+@jump target=text
+
 
 *me_01
 [藤枝目通常]
@@ -343,8 +355,8 @@
 @jump target=text
 
 *kuti_07
-[藤枝口]
-[eval exp="f.gra_hujieda_face='口：[藤枝口]'"]
+[藤枝口大開]
+[eval exp="f.gra_hujieda_face='口：[藤枝口大開]'"]
 @jump target=text
 
 *kuti_08
