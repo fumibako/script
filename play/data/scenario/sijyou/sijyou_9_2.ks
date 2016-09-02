@@ -55,6 +55,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織お兄さまとお呼びしたいところですが、この様な場所では華織さま…？）[p]
 
+[四条目パチ1回]
+
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （いきなり下のお名前でお呼びしたら驚かれてしまうでしょうか）[p]
@@ -70,16 +72,24 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織君、私が日本から離れていた間に男らしくなったね [r][sp]健康で何より」[p]
 「それに文矢の件では、何かと世話になったそうじゃないか」[p]
-
 [主人公目パチ1回]
+
+[四条目伏せ]
 [whosay name="四条 華織" color="olivedrab"]
-「浩文さまもお変わりなく……文矢君にはよくしてもらってます」[p]
+「浩文さまもお変わりなく……
+[四条口開]
+文矢君にはよくしてもらってます」[p]
+[四条目通常]
+[四条口微笑み]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織くんは しっかりしているので頼りにしているよ」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「華織くん。娘はそそっかしいもので失敗も多いかと思いますが、どうかよろしくお願いいたします」[p]
+「娘はそそっかしいもので失敗も多いかと思いますが、どうかよろしくお願いいたします」[p]
 ;○謙遜しつつも2人がうまくやっていけるか父心ながら心配をする 黒田とほぼ同じ文章でもよい。
+
+;お父さんの言葉にとりあえず笑っておく四条
+[四条笑顔]
 
 ;○主人公 父心には気づかず困った表情をする。
 [主人公照れ]
@@ -122,6 +132,14 @@
 [wait time=10]
 [sp]四条さまのおめがねにかないましたこと、わたくし何よりの誇りでございます」[p]
 
+[四条驚き]
+
+[四条微笑み]
+[wait time=30]
+
+;回想シーンのため【退場】四条
+[四条退場]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】星降る夜に
 [stopbgm]
@@ -129,8 +147,6 @@
 [eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
 [endif]
 
-;回想シーンのため【退場】四条
-[四条退場]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -259,6 +275,8 @@
 「見てご覧、白萩の花が咲いているね。[r]
 [sp]綺麗だね」[p]
 
+[四条目パチ1回]
+
 [主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい……」[p]
@@ -283,12 +301,16 @@
 [whosay name="四条 華織" color="olivedrab"]
 「今の文矢は君に先輩風を吹かしているだろうけど」[p]
 「文通の際は昼夜問わずに相談にのってほしいって[r]
-[sp]僕のところに尋ねてきたこともあったんだよ」[p]
+[sp]僕のところに尋ねてきたこともあったん
+[四条口開]
+だよ」[p]
 
 [主人公驚]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そ、そうなんですか ？」[p]
+[四条口微笑み]
+[四条目パチ1回]
 
 ;○主人公 淑女さを忘れて[主人公驚き]の表情
 [主人公目パチ1回]
@@ -384,6 +406,8 @@
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
+
+[四条目パチ1回]
 [whosay name="四条 華織" color="olivedrab"]
 「？」[p]
 ;[四条デフォルト]四条まだ気づけず
