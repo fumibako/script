@@ -11,10 +11,6 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 
-;あとで変更したいときに一括変更するため
-[macro name=華衣]
-[ruby text="か"]華[ruby text="い"]衣
-[endmacro]
 
 ;まだ深刻ではない
 [主人公ポーズ通常]
