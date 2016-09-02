@@ -1,14 +1,13 @@
 ;¥¥¥¥¥¥¥¥イベント4¥¥¥¥¥¥¥¥
 ;/////☆デート2 ミッド・ポイント//////
-;[歌舞伎小屋前]
 ;○歌舞伎座で音頭恋寝刃を鑑賞、伏線とキャラ紹介
 ;歌舞伎 大正座。
-;[歌舞伎小屋中]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
 [テキスト全画面白文字]
 ;スクリプト担：↓お稽古パートから歌舞伎見物シーンへ自然につながるような地の文を入れたいのですが、こんな感じで大丈夫でしょうか？
 ――お芝居見物に誘われ[r]
