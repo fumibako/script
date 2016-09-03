@@ -84,8 +84,12 @@
 「この分からず屋が！！」[p]
 ;【SE】ビンタ（バチン）
 [playse storage=binta.ogg loop=false ]
-[quake count=1 time=250 hmax=10 vmax=10]
+;わずかに揺れるくらいでいい
+[quake count=1 time=100 hmax=5 vmax=5]
 [wait time=10]
+[whosay name="四条祖父" color="#888898"]
+「！？」[p]
+
 ;【登場】四条
 [四条ベース着物]
 [四条通常]
