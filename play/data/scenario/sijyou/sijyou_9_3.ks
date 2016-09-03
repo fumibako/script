@@ -249,7 +249,7 @@
 －－はじめは、兄に連れられ訪ねた四条家。[r]
 花咲く庭で、いつもひとりで居た彼と出会って、[r]
 いつしか、ここは、私にとっての憧れと夢の場所となった。[p]
-
+;ピュー◎ランド？
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 #
@@ -315,18 +315,15 @@
 
 ;【SE】ザッ(衣擦れ)
 [playse storage=za_kinuzure.ogg loop=false ]
+[四条驚き]
 [quake count=3 time=250 hmax=10 vmax=10]
 [主人公ポーズ両手]
 [主人公驚]
-
-[四条驚き]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「きゃっ」[p]
 [主人公ポーズ片手]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 [whosay name="四条 華織" color="olivedrab"]
 「おっと」[p]
 ;【SE】ザッ(衣擦れ)
