@@ -31,12 +31,6 @@
 [主人公通常]
 [wait time=10]
 
-;【登場】四条
-;[四条ベース着物]　公式の場なので羽織？
-[四条ベース羽織]
-[四条微笑み]
-[wait time=10]
-
 [whosay name="華織" color="olivedrab"]
 「本日の演目は『音頭恋寝刃』……」[p]
 
@@ -61,8 +55,6 @@
 [whosay name="華織" color="olivedrab"]
 「ここに出てくる『波ヶ浦』は実際にある地名なんだよ、[r]
 　富士がみえる美しい海岸で……」[p]
-
-[四条笑顔]
 
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
@@ -106,6 +98,13 @@
 ;[歌舞伎小屋前]
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+
+;【登場】四条
+;[四条ベース着物]
+[wait time=10]
+[四条ベース羽織]
+[wait time=1]
+[四条微笑み]
 
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
