@@ -31,6 +31,12 @@
 [主人公通常]
 [wait time=10]
 
+;【登場】四条
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
+[wait time=10]
+
 [whosay name="華織" color="olivedrab"]
 「本日の演目は『音頭恋寝刃』……」[p]
 
@@ -55,6 +61,8 @@
 [whosay name="華織" color="olivedrab"]
 「ここに出てくる『波ヶ浦』は実際にある地名なんだよ、[r]
 　富士がみえる美しい海岸で……」[p]
+
+[四条笑顔]
 
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
@@ -103,11 +111,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「堪能いたしました」[p]
 
-[wait time=10]
-;[四条ベース着物]　外なので羽織？
-[四条ベース羽織]
-[四条微笑み]
-[wait time=10]
+
 
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
