@@ -28,7 +28,8 @@
 [endif]
 
 [whosay name="華織" color="olivedrab"]
-「文矢、相談したいことってなんだい？」[p]
+「文矢、相談したいことってなんだい？　僕は今は、あまり……」[p]
+;兄が呼ぶのはokなの？（イラ）感があるので修正
 [whosay name=文矢 color="#538a8a"]
 「うん。けど、ちょっと……僕は席を外すよ」[p]
 
@@ -105,18 +106,18 @@
 ;ドキリとしてる感じ？やりすぎかも？　多いので直書きで。
 ;[四条目大]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+[wait time=10]
 ;[四条口通常]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
 [wait time=10]
 ;[四条眉驚き]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_odoroki.png" time=0]
 [wait time=10]
-[wait time=10]
 ;[四条頬染め]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
-[wait time=10]
-
-
+[wait time=100]
+;[whosay name="華織" color="olivedrab"]
+;「!」[p] セリフ思いつかない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あらためて再会して気づきました。幸せって身近なところにあったのですね」[p]
 ;どっちかが言わないと最後に違和感
@@ -133,8 +134,8 @@
 [主人公通常]
 [wait time=10]
 ;名前を呼ばれてから変更した方がいいかも？
-[四条口開]
 貴方は本当に僕が思っている以上のお人のようだ」[p]
+;笑ってると腹がたつので[四条口開]はなしに
 
 [四条困り]
 [四条口微笑み]
@@ -161,7 +162,7 @@
 
 ;[四条ベース着物]
 [四条ベース羽織]
-[四条通常]
+[四条真剣]
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -174,9 +175,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[華衣]さまの
 ご婚約さまは何か残していらっしゃらないでしょうか？」[p]
+
+[四条憂い]
 [whosay name="華織" color="olivedrab"]
 「その人に頼まれて世話をしてる花なら」[p]
-[四条憂い]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「けど[華衣]は話も聞こうともしないし信じようともしない」[p]
 [主人公目パチ1回]
@@ -188,6 +191,7 @@
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
 「……の家に行ってみるべきか」[p]
+[四条目通常]
 [whosay name="華織" color="olivedrab"]
 「遠い場所だけど一緒に付いてきて
 [四条口開]
