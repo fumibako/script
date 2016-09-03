@@ -141,12 +141,12 @@
 [四条口微笑み]
 もっと精進しなくては)[p]
 [wait time=10]
-[chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;主人公をみながら作業再開
 
 ;【退場】四条
 [四条退場]
+[chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 [テキスト全画面白文字]
 その後、華道家として祖母以上に認められ華織は、[r]
 四条御流として更に名が知れ渡るほどに国の文化に貢献することとなった。[p]
