@@ -31,9 +31,19 @@
 ;【背景】[背景_庭]　和室かな？　昔の華族の家は和と洋が隣接しているので？
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
+;【登場】四条
+[四条ベース着物]
+[四条通常]
+;[四条口驚き]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_odoroki.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
-「ふぅ……なかなか決まりませんね」[p]
+「ふぅ……
+;[四条口ムッ]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
+[wait time=10]
+なかなか決まりませんね」[p]
+
 [主人公ポーズ通常]
 [主人公通常]
 [wait time=10]
@@ -43,6 +53,13 @@
 「どうされましたか？ 」[p]
 [主人公口ほほえみ]
 [wait time=10]
+
+;[四条目閉じ]
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
+;[四条効果消]
+[chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「華道祭で玄関先に飾る御所花車の構図が決まらなくて……」[p]
 
@@ -50,15 +67,14 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「少し、休まれませんか？ [華衣]さんからのお手紙も来たので」[p]
-
 [主人公目パチ1回]
 [wait time=10]
-
 ;【SE】湯のみを置く（コトリ）
 [playse storage=tya_yunomi_oku.ogg loop=false ]
-
+[四条驚き]
 [whosay name="華織" color="olivedrab"]
 「[華衣]から手紙ですか！ なかなか手紙さえ返してくれなかったのに。[r]
+[四条困り微笑み]
 一体、何をしてるのでしょうか……」[p]
 
 [主人公目パチ1回]
@@ -77,12 +93,15 @@
 [主人公目パチ1回]
 [wait time=10]
 「事故の少ない交通機関の発展にも貢献しているそうですよ」[p]
-
 [主人公ポーズ通常]
 
+;[四条効果消]
+[chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「そうですか、風の噂で少なからず聞いてましたが、元気にやっているようですね」[p]
-
+[四条憂い]
 [whosay name="華織" color="olivedrab"]
 (そのうち、訪ねてくるような仲になれるだろうか？)[p]
 
@@ -90,8 +109,12 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私達も、負けていられませんね」[p]
+[四条通常]
 [whosay name="華織" color="olivedrab"]
-「！ そうですね。 休憩はこのあたりにしておきましょうか」[p]
+「！ [r]
+;[四条微笑み]
+[四条困り微笑み]
+[sp]そうですね。 休憩はこのあたりにしておきましょうか」[p]
 
 [主人公通常]
 [wait time=10]
@@ -100,26 +123,31 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいのですか？」[p]
-
+[四条笑顔]
 [whosay name="華織" color="olivedrab"]
 「ちょうど[名前]さんの愛らしい顔をみたら、いい構図を思いつきましたから」[p]
 
 [主人公ほほえみ]
 [wait time=10]
 ;止まるの回避
-;お母さん度回避案↓ いきなり変わると違和感あるかも
-;[イベントシーン構築枠茶色]　
 #
 [名前]は華織に微笑み返すと、縁側で揺れるネリネの花を見つめた。[p]
 ;主語が決まってません↑
+
 #
+[イベントシーン構築枠茶色]　
+[四条真剣]
 [whosay name="華織" color="olivedrab"]
-(手紙の代わりに、華で想いを綴っていくと決めたのだから、もっと精進しなくては)[p]
+(手紙の代わりに、華で想いを綴っていくと決めたのだから、
+[四条口微笑み]
+もっと精進しなくては)[p]
 [wait time=10]
 [chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;主人公をみながら作業再開
 
+;【退場】四条
+[四条退場]
 [テキスト全画面白文字]
 その後、華道家として祖母以上に認められ華織は、[r]
 四条御流として更に名が知れ渡るほどに国の文化に貢献することとなった。[p]
@@ -127,8 +155,11 @@
 ;仮でおいてみる
 [font color="000000"]
 [chara_mod name="bg" storage="bg/sijyou_ed_tegami0.jpg" time=1000]
-想いを繋げて綴っていく手紙は、いつしか恋を綴り、[r]
-人々を幸せにする愛に変わっていく。その手紙は－－[p]
+想いを繋げて綴っていく手紙は、[r]
+いつしか恋を綴り、[r]
+[r]
+人々を幸せにする愛に変わっていく。[r]
+その手紙は－－[p]
 ;恋綴りのタイトルに戻るイメージ
 ;手紙によって大きく変わった四条兄弟が人々に貢献する・・・にもつながる？
 
