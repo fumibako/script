@@ -130,7 +130,8 @@
 「乾杯」[p]
 ;○親戚に挨拶をする主人公と四条。
 [whosay name="四条祖母" color="#916565"]
-「この回遊庭園は、大名屋敷の折に造られたものを活かしており、外交の為にも一定の場所から洋風にしているんですの……」[p]
+「この回遊庭園は、大名屋敷の折に造られたものを活かしており、[r]
+[sp]外交の為にも一定の場所から洋風にしているんですの……」[p]
 
 ;○主人公真摯に聞いている
 [主人公目パチ1回]
@@ -197,7 +198,8 @@
 
 [四条困り微笑み]
 [whosay name="四条 華織" color="olivedrab"]
-「けど、みんな、久しぶりに[名前]が来てくれたものだから、構いたくて仕方ないんだ」[p]
+「けど、みんな、久しぶりに[名前]が来てくれたものだから、[r]
+[sp]構いたくて仕方ないんだ」[p]
 
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
@@ -219,31 +221,24 @@
 ;【退場】四条
 [四条退場]
 
-
-
-;[暗転]より場面転換でしょうか
+;地の文などをいれたため、明るいシーン→暗いシーン（華衣）→戻る明るい
 ;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
+[chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
-
 ;【登場】四条
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
-
 [whosay name="四条 華織" color="olivedrab"]
 「昔は、兄も弟も海外に留学に出掛けていて、僕だけが家の留守を[r]
 [sp]任されていたんだ。[r]
 [sp]だから文矢と[名前]が遊びにきてくれた時は、とても嬉しかったよ」[p]
-
 [主人公目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そうなのですね)[p]
-
 [主人公目閉じ]
-
 [四条目パチ1回]
 #
 －－はじめは、兄に連れられ訪ねた四条家。[r]
@@ -254,7 +249,9 @@
 [wait time=10]
 #
 私は、思い出の場所が変わりないかと、庭を眺めた。[p]
-
+;【背景】[洋館庭]
+[chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
+[eval exp="f.haikei_credit=''"]
 ;がさがさ
 
 [if exp="sf.BGM=='ON'"]
@@ -263,7 +260,6 @@
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
-
 ;○そこはかとなく大人の雰囲気
 ;○伏線 無くてもどちらでも
 #
@@ -272,12 +268,9 @@
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
-
 [四条目パチ1回]
-
 [whosay name="？？？" color=%mp.color]
 「……なんで……だけ」[p]
-
 #
 こちらが気づいた途端、それは何も無かったかのように影へと消えていった。[p]
 
@@ -287,11 +280,9 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
-
 [主人公目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -300,14 +291,10 @@
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 
-
-
 ;【SE】子供たち(楽しげな笑い声)
 [playse storage=kodomotachi_warai.ogg loop=false ]
-
 [whosay name="親戚の子 その壱" color="#807070"]
 「どこにお隠れ遊ばして！? 」[p]
-
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="親戚の子 その弐" color="#807070"]
@@ -330,7 +317,6 @@
 [playse storage=za_kinuzure.ogg loop=false ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 [主人公ポーズ通常]
 [quake count=3 time=250 hmax=10 vmax=10]
 [主人公驚]
@@ -345,11 +331,9 @@
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
-
 [主人公照れ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-
 [主人公ポーズ指]
 [主人公目を開く]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -359,7 +343,6 @@
 [whosay name="四条 華織" color="olivedrab"]
 「ここは走りやすい場所だからね。[r]
 [sp][名前]がよければ、また隠れ鬼でもするけど」[p]
-
 [四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「もう、そんな必要はないようだね」[p]
@@ -391,7 +374,8 @@
 [whosay name="四条 華織" color="olivedrab"]
 「ここには、小さな種類の薔薇が植えてあるんだ」[p]
 #
-四条は[名前]の隣にたって、薔薇の名について話しながら、出会った頃のように[名前]の髪を撫でる。[p]
+四条は[名前]の隣にたって、薔薇の名について話しながら、[r]
+出会った頃のように[名前]の髪を撫でる。[p]
 
 [四条目パチ1回]
 
