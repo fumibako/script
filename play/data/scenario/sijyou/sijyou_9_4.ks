@@ -93,6 +93,11 @@
 ;[歌舞伎小屋前]
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+
+;[四条ベース着物]　外なので羽織？
+[四条ベース羽織]
+[四条微笑み]
+
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「堪能いたしました」[p]
@@ -102,10 +107,12 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-;[主人公まばたき]
+[四条口開]
 [主人公閉目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「それは、よかった」[p]
+
+[四条憂い]
 [whosay name="華織" color="olivedrab"]
 「あんな風に両方を取り戻せたらいいよね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -113,6 +120,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=500]
 
+[四条微笑み]
 ;○親切な華織さんの表現と伏線
 [whosay name="おじさん" color=black]
 「キミ！ そこの！」[p]
@@ -124,6 +132,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？」[p]
+
+[四条目パチ1回]
 
 [主人公ポーズ片手]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -138,6 +148,8 @@
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;[主人公驚]
 [主人公目パチ1回]
+
+[四条笑顔]
 [whosay name="華織" color="olivedrab"]
 「もう一周あるみたいですよ」[p]
 [主人公ポーズ通常]
@@ -150,6 +162,9 @@
 [wait time=10]
 [whosay name="おじさん" color=black]
 「そいじゃ、おじさんも逢[ruby text="でぇ"]引[ruby text="と"]があるんで！」[p]
+
+[四条微笑み]
+
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -159,14 +174,19 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[四条口開]
 [whosay name="華織" color="olivedrab"]
 「内容は覚えているからいいよ」[p]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
+
+[四条笑顔]
 [whosay name="華織" color="olivedrab"]
 「それよりも、[名前]と長く一緒にいられる時間が大事だよ」[p]
 
 [主人公目パチ1回]
+
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「[名前]、このままデパートに行ってみないかい？」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -182,6 +202,9 @@
 ;http://www.matsuzakaya.co.jp/corporate/history/honshi/1907.shtml
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+
+[四条目パチ1回]
+
 [whosay name="華織" color="olivedrab"]
 「はじめてで緊張する？ 」[p]
 ;[主人公照れ]
@@ -191,6 +214,9 @@
 「はい、少し」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+
+[四条目パチ1回]
+
 #
 淑女ひとりで出かけることはないデパート。[r]
 行き交う人たちは、周りをはばからず親しげに寄り添っている[p]
@@ -200,6 +226,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (周りの方達は『お付き合い』をされてる方達なのでしょうか？ )[p]
+
+[四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「手を繋いでいるね」 [p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -207,12 +235,14 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね」[p]
 [主人公目パチ1回]
+
+[四条口開]
 [whosay name="華織" color="olivedrab"]
 「僕達も手を繋ごうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
 （……）[p]
-;[四条微笑み]
+[四条笑顔]
 [if exp="f.para_sijyou_koukando >= 50"]
 [whosay name="華織" color="olivedrab"]
 「[名前]の手は小さいね」[p]
@@ -229,15 +259,26 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[四条微笑み]
+[wait time=10]
 #
 ;私は、憧れの人と、並んでいることに 緊張してしまって、言葉も、ままならなかった。[p]
 私は、憧れの人の傍らで並んでいることに 緊張してしまい、[r]言葉も、ままならなかった。[p]
 ;憧れですよっと伝わって切り替えが唐突でなれば何でもいいです
 ;冬のシーンでは普通に並んで歩いているので対照的になるかも？
+
+;【退場】四条
+[四条退場]
+
 #
-;スクリプト担：[商店背景] 帯留めを選ぶシーンは店内の方が合うでしょうか？ 地の文とはすこし違う背景しかすぐには見つかりませんでしたが、外のままよりは自然かと入れてみました
+;【商店店内】
 [chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg" time=1500]
 [eval exp="f.haikei_credit=''"]
+
+;【登場】四条
+;[四条ベース着物]　外なので羽織？
+[四条ベース羽織]
+[四条微笑み]
 
 [whosay name="華織" color="olivedrab"]
 「[名前]、前を向いて」[p]
@@ -256,7 +297,7 @@
 [主人公ポーズ通常]
 [主人公ほほえみ]
 ;○主人公の笑顔をみて笑顔になる四条
-;[四条笑顔]
+[四条笑顔]
 ;[主人公照れ]か何か反応する
 [whosay name="華織" color="olivedrab"]
 「結納の記念として、[名前]に贈りたいな」[p]
@@ -272,12 +313,19 @@
 [fadeoutbgm time=3000]
 [endif]
 
+;【退場】四条
+[四条退場]
+
 ;////////☆事件の予感 迫り来る悪い奴ら//////
 ;場面転換
 ;[主人公の家の前]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [主人公通常]
-
+#
+;【登場】四条
+;[四条ベース着物]
+[四条ベース羽織]
+[四条微笑み]
 ;○デートの終わりに事件が起きる
 ;○妹(弟)が登場する
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
@@ -299,6 +347,7 @@
 [wait time=10]
 [whosay name="？？？" color=%mp.color]
 「華織！」[p]
+[四条驚き]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -308,6 +357,7 @@
 [主人公ポーズ片手]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
+[四条困り]
 [whosay name="？？？" color=%mp.color]
 「よくもまぁ、ぬけぬけと笑っていられるな」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -339,6 +389,8 @@
 [wait time=10]
 #
 謎の人物は、不穏な言葉を残すと去っていった。[p]
+[四条口開]
+[四条汗]
 [whosay name="華織" color="olivedrab"]
 「華衣！」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
@@ -348,6 +400,8 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
+[四条効果消]
+[四条憂い]
 [whosay name="華織" color="olivedrab"]
 「弟なんだ」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -355,6 +409,8 @@
 [whosay name="華織" color="olivedrab"]
 「嫌われてるんだよね」[p]
 [主人公目パチ1回]
+
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「嫌な思いさせてごめん」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
