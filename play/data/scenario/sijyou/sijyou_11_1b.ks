@@ -89,8 +89,10 @@
 「これ以上、なにを見せられる？」[p]
 [whosay name="華衣" color=%mp.color]
 「[名前]って言ったっけ」[p]
+[四条目パチ1回]
 [whosay name="華衣" color=%mp.color]
 「アンタだって大事な人がいなくなったら辛いでしょ？」[p]
+[四条目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織さまが、居なくなったら？ )[p]
 ;○主人公が説得して窮地を逃れる...もし華織がいなくなったらと考える
@@ -103,10 +105,14 @@
 [主人公伏目パチ1回]
 [wait time=10]
 ;×筆者に女性的価値観が足りず思い浮かばずこんな形に
+[四条困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「急に居なくなって、お手紙をもらえなくなったら」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「心配で心が張り裂けそうでした」[p]
+;四条眉強気
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_tuyoki.png" time=0]
+[wait time=10]
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「[名前]……」[p]
@@ -117,7 +123,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「でも[華衣]さんには、その人からのが手紙が残ってます」[p]
 
-;[四条目通常]
+;四条目通常
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
 [wait time=10]
 
@@ -133,10 +139,12 @@
 ;手渡す
 [whosay name="華衣" color=%mp.color]
 「うそ」[p]
+[四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「行ってきたんだ。嘘かどうかは読めばわかる」[p]
 [whosay name="華衣" color=%mp.color]
 「な、なんで……そんなことまで……」[p]
+[四条目パチ1回]
 ;どうしてかは烏滸がましいから話さない
 ;慈愛の表情　思いつかず仮
 [主人公口ほほえみ]
@@ -179,7 +187,8 @@
 私の無茶なお願いをきいてくれたのだのだから。[r]
 [r]
 最後に[華衣]にみてほしいものがあります。[r]
-もし私の頼みをお兄さんが忘れていなければきっと[華衣]の家の庭に咲いている思います。[r]
+もし私の頼みをお兄さんが忘れていなければきっと[華衣]の家の庭に[r]
+咲いている思います。[r]
 [r]
 [r]
 どうか悲しまないでほしい　私は[華衣]に　幸せな思い出が訪れる日を[r]
@@ -194,11 +203,20 @@
 ;[華衣]、走って家に帰る！四条家は運動力がある？
 ;強気の驚き
 [四条真剣]
-[四条口驚き]
+;四条口驚き
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_odoroki.png" time=0]
+[wait time=10]
+;四条汗
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「[華衣]！」[p]
 ;○お互い見合って 比翼の2人の感じ
 [四条口ムッ]
+
+;四条効果消
+[chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、」[p]
 ;[名前]さん、か[名前]、焦ってるから呼び捨て？
@@ -265,7 +283,7 @@
 
 #
 ;ナレーター
-ネリネの庭で1人、咽び泣く[r]
+1人、ネリネの庭で咽び泣く[r]
 世界でたった1つの想いを綴った手紙に[p]
 #手紙
 『私が、消えてしまう前に、咲いて誇る華を綴ります』[p]
