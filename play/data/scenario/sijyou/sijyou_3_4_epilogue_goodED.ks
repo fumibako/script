@@ -30,6 +30,9 @@
 ;【登場】四条
 [四条ベース着物]
 [四条通常]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
 ;[四条口驚き]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_odoroki.png" time=0]
 [wait time=10]
