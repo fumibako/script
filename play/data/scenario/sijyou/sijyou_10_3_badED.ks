@@ -59,10 +59,10 @@
 [主人公困り]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「もし、あの時、華織さまのことを『想って』いたら、
+「もし、あの時、華織さまのことを『想って』いたら、[r]
 [主人公目閉じ]
 [wait time=10]
-状況は変わっていたのでしょうか？」[p]
+[sp]状況は変わっていたのでしょうか？」[p]
 [wait time=100]
 ;badED処理追記予定
 ;@jump storage="event.ks" target=*event_owari
