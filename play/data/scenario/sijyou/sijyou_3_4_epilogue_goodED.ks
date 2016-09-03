@@ -5,7 +5,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_sijyou.ks"]
+
 [イベントシーン構築]
 
 ;テストは一時的にイベントシーン構築つけてます
@@ -17,17 +17,13 @@
 
 ;タイトルの曲のほうがいいかも20090303yukidoke
 
+[call target=*start storage="macro_tati_sijyou.ks"]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
-
 [イベントシーン構築]
-;↓四条のモノローグ多いのでこっち？主人公の存在感がなくなってきた
-;[イベントシーン構築枠茶色]　
-
 ;【背景】[背景_庭]　和室かな？　昔の華族の家は和と洋が隣接しているので？
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
