@@ -72,6 +72,9 @@
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+;【登場】四条
+[四条ベース着物]
+[四条微笑み]
 #
 [主人公ポーズ通常]
 [wait time=10]
@@ -83,18 +86,20 @@
 お義さんには許可をもらって来ましたか？[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。[r]
-『もう一緒になるのだから好きにしなさい』といってました」[p]
+[sp]『もう一緒になるのだから好きにしなさい』といってました」[p]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「一緒か……」[p]
 ;○華織、しみじみと振り返るか笑顔で
 [whosay name="華織" color="olivedrab"]
 「そうだね……[名前]と出逢えてよかったと思う」[p]
+[四条真剣]
 [whosay name="華織" color="olivedrab"]
 「僕は[名前]と再会する前は、ずっと 妹のような箱入り娘 だと思っていたよ」[p]
+[四条困り]
 [whosay name="華織" color="olivedrab"]
-「それに (華衣に悪いと思って)返事も素っ気なかったよね」[p]
-;[whosay name="華織" color="olivedrab"]
-;([名前]への態度も、きっと失ったものへの代替だったかもしれない)[p]
+「それに (華衣に悪いと思って)返事も素っ気なかった時もあったよね」[p]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「今、思っても[名前]には失礼なことをしていたと反省している」[p]
 [主人公目パチ1回]
@@ -104,29 +109,43 @@
 ;(いえ、その後のお手紙は沢山頂きましたので楽しかったです)[p]
 
 [fadeoutbgm time=2000]
-
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「もちろん、今では、貴方のことを芯の強さ持った素敵な女性だと思っている」[p]
+
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「時折、みせてくれる素の可愛らしい部分も含めて」[p]
 
 [stopbgm]
-
+[四条真剣]
 ;○必要に応じて[p]ではなくてウェイト[er]？
 [whosay name="華織" color="olivedrab"]
 「　僕は、[名前]のことが好きなんだ　」[p]
+;[四条効果消]
+[chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
+[wait time=10]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】星降る夜に（思い出/夢見るシーンに
 [playbgm storage="yumemiru_hoshi.ogg" loop=true]
 [eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
 [endif]
-
 [主人公照れ目普通]
+[wait time=10]
+[四条目パチ1回]
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「[名前]に先を越されてしまいましたが、改めて言わせて下さい」[p]
 ;○親の言われるままに婚約したので告白の言葉は送っていなかった
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「愛しています。　[名前]さんと共に歩みたい　」[p]
 [主人公笑顔]
@@ -134,19 +153,28 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……はい」[p]
 ;○2人手をとって、共に歩むことを決意する
+;あんなこと付き合わせたのでok貰えてホッとする四条であった
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「よかった」[p]
 [主人公照れ目普通]
 [wait time=10]
-;[華織笑顔]
+;[四条頬染め]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
+[wait time=10]
+[四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「そうだ。せっかく、お義父さまのお許しを得たのだから、お出かけをしましょうか」[p]
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
-
 [主人公退場]
+;【退場】四条
+[四条退場]
 #
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
