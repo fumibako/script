@@ -208,6 +208,10 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+
+;【退場】四条
+[四条退場]
+
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;場面転換 四条と主人公のデート
@@ -215,9 +219,13 @@
 ;http://www.matsuzakaya.co.jp/corporate/history/honshi/1907.shtml
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-
+#
+目の前に広がる都会的な街並みに思わず息を呑む。[p]
 [四条目パチ1回]
-
+;【登場】四条
+;[四条ベース着物]
+[四条ベース羽織]
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「はじめてで緊張する？ 」[p]
 ;[主人公照れ]
@@ -274,6 +282,9 @@
 [wait time=10]
 [四条微笑み]
 [wait time=10]
+[主人公目閉じ]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 #
 ;私は、憧れの人と、並んでいることに 緊張してしまって、言葉も、ままならなかった。[p]
 私は、憧れの人の傍らで並んでいることに 緊張してしまい、[r]言葉も、ままならなかった。[p]
@@ -287,7 +298,9 @@
 ;【商店店内】
 [chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg" time=1500]
 [eval exp="f.haikei_credit=''"]
-
+[主人公目開]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
 ;【登場】四条
 ;[四条ベース着物]　外なので羽織？
 [四条ベース羽織]
@@ -314,6 +327,7 @@
 ;[主人公照れ]か何か反応する
 [whosay name="華織" color="olivedrab"]
 「結納の記念として、[名前]に贈りたいな」[p]
+;なだと子供っぽいな
 [主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織さまは、色々とお気遣いされて、余裕があって……)[p]
@@ -351,16 +365,21 @@
 「こちらこそ。また会いたいですね」[p]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
-;【BGM】「一閃」
-[playbgm storage="kinpaku_issen.ogg" loop=true]
-[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
-[endif]
+
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name="？？？" color=%mp.color]
 「華織！」[p]
-[四条驚き]
+
+;【BGM】「一閃」
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+
+;強気の驚き
+[四条真剣]
+[四条口驚き]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -402,7 +421,9 @@
 [wait time=10]
 #
 謎の人物は、不穏な言葉を残すと去っていった。[p]
-[四条口開]
+;強気の驚き
+[四条真剣]
+[四条口驚き]
 [四条汗]
 [whosay name="華織" color="olivedrab"]
 「華衣！」[p]
@@ -428,6 +449,9 @@
 「嫌な思いさせてごめん」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、」[p]
+
+;【退場】四条
+[四条退場]
 ;¥¥¥¥¥¥¥¥イベント4おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
