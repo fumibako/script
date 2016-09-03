@@ -86,7 +86,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さまの優しさが感じとられ、私も華織さまの優しさになりたいと思いました」[p]
 
-[四条目パチ1回]
+;四条話を真剣にきく
+[四条目閉じ]
 
 ;主人公優しい表情
 [主人公目を開く]
@@ -101,14 +102,31 @@
 [wait time=10]
 [p]
 
-[四条驚き]
+;ドキリとしてる感じ？やりすぎかも？　多いので直書きで。
+;[四条目大]
+[chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+;[四条口通常]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
+[wait time=10]
+;[四条眉驚き]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_odoroki.png" time=0]
+[wait time=10]
+[wait time=10]
+;[四条頬染め]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
+[wait time=10]
+
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あらためて再会して気づきました。幸せって身近なところにあったのですね」[p]
 ;どっちかが言わないと最後に違和感
+;強気の驚き
+[四条真剣]
+[四条口驚き]
 
 ;☆キャラの気づき 四条が主人公が頑張っていることに気づく
-;主人公通常の表情
+;照れてるままだと軽くみえるのでエモ消し
+[四条効果消]
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
 「[名前]、
