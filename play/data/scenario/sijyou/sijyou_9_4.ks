@@ -221,11 +221,12 @@
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 目の前に広がる都会的な街並みに思わず息を呑む。[p]
-[四条目パチ1回]
+
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条微笑み]
+[四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「はじめてで緊張する？ 」[p]
 ;[主人公照れ]
@@ -256,10 +257,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね」[p]
 [主人公目パチ1回]
-
+[四条目パチ1回]
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「僕達も手を繋ごうか？」[p]
+[四条目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
 （……）[p]
@@ -298,13 +300,16 @@
 ;【商店店内】
 [chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg" time=1500]
 [eval exp="f.haikei_credit=''"]
-[主人公目開]
+
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 ;【登場】四条
 ;[四条ベース着物]　外なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
 
 [whosay name="華織" color="olivedrab"]
 「[名前]、前を向いて」[p]
@@ -452,6 +457,10 @@
 
 ;【退場】四条
 [四条退場]
+#
+私は、少し不安な気持ちを抱えつつも
+;華織さまと別れた。
+部屋へと戻ることにした。[p]
 ;¥¥¥¥¥¥¥¥イベント4おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
