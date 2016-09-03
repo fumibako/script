@@ -38,13 +38,18 @@
 「まったく君って奴は急にやって来て引っ張り出すものだから……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま」[p]
+
+;【登場】四条
+;[四条ベース着物]
+[四条ベース羽織]
+[四条驚き]
 [whosay name="華織" color="olivedrab"]
 ！[p]
 
 ;ザッってすると引かれているかんじかも
 ;【SE】衣擦れ（ザッ）
 ;[playse storage=za_kinuzure.ogg loop=false ]
-
+[四条困り]
 ;二回も名前を呼ぶと、次のセリフがよくわからないのでナシに。
 [whosay name="華織" color="olivedrab"]
 「……[名前]、」[p]
@@ -54,7 +59,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「とても心配しました」[p]
 [whosay name="華織" color="olivedrab"]
-「[名前]、心配かけてごめん」[p]
+「[名前]、心配かけて
+[四条目閉じ]
+ごめん」[p]
 [主人公口ほほえみ]
 [wait time=10]
 [主人公頬染め]
@@ -62,15 +69,21 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お気になさらずに私は華織さまと共に歩もうと、あの時に決めたのですから」[p]
 ;このままだと主人公が強気になってしまうので、やや微笑んで自身の言葉に照れる感じ
+
+[四条驚き]
 [whosay name="華織" color="olivedrab"]
 「[名前]？」[p]
 ;△↑セリフが思いつきません いいのかな
+[四条通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「何度かお出かけする内、何気ないたくさんの御文」[p]
 ;目を閉じて回想する主人公
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さまの優しさが感じとられ、私も華織さまの優しさになりたいと思いました」[p]
+
+[四条目パチ1回]
+
 ;主人公優しい表情
 [主人公目を開く]
 ;[主人公目通常]
@@ -83,17 +96,23 @@
 [主人公ほほえみ]
 [wait time=10]
 [p]
+
+[四条驚き]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あらためて再会して気づきました。幸せって身近なところにあったのですね」[p]
 ;どっちかが言わないと最後に違和感
 
 ;☆キャラの気づき 四条が主人公が頑張っていることに気づく
 ;主人公通常の表情
+[四条困り]
 [whosay name="華織" color="olivedrab"]
 「[名前]、
 [主人公通常]
 [wait time=10]
 ;名前を呼ばれてから変更した方がいいかも？
+;[四条真剣]
+[四条口微笑み]
 貴方は本当に僕が思っている以上のお人のようだ」[p]
 
 [whosay name="華織" color="olivedrab"]
@@ -105,6 +124,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+[四条退場]
 ;[暗転]
 [主人公通常]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -116,11 +136,16 @@
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 
+;[四条ベース着物]
+[四条ベース羽織]
+[四条通常]
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「それで、[華衣]さまは
 まだ帰って来られてないのですね」[p]
+
+[四条困り]
 [whosay name="華織" color="olivedrab"]
 「そうなんだ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -128,38 +153,51 @@
 ご婚約さまは何か残していらっしゃらないでしょうか？」[p]
 [whosay name="華織" color="olivedrab"]
 「その人に頼まれて世話をしてる花なら」[p]
+[四条憂い]
 [whosay name="華織" color="olivedrab"]
 「けど[華衣]は話も聞こうともしないし信じようともしない」[p]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうでしたか……もっと他に何かないでしょうか」[p]
+[四条通常]
 [whosay name="華織" color="olivedrab"]
 「……もっと他に」[p]
+[四条真剣]
 [whosay name="華織" color="olivedrab"]
 「……の家に行ってみるべきか」[p]
 [whosay name="華織" color="olivedrab"]
-「遠い場所だけど一緒に付いてきてくれるかい？」[p]
+「遠い場所だけど一緒に付いてきて
+[四条口開]
+くれるかい？」[p]
 [主人公頬染め]
 [wait time=10]
 [主人公口笑顔]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。どこまでもご一緒に」[p]
+[四条口微笑み]
 ;△以下の文は、つけてたほうが自然？ i息兼ねてつけてみます。
 [主人公通常]
 [wait time=10]
 [whosay name=文矢 color="#538a8a"] 
-「[名前]はウチに来たことにしておくよ。それでウチの家令をつけておく」[p]
+「[名前]はウチに来たことにしておくよ。
+[四条驚き]
+それでウチの家令をつけておく」[p]
 「それからキミ(華織)と僕が頼んだ料理は食べておくね」[p]
+[四条笑顔]
 ;一度はプレイヤーの驚きと同調して困った表情をする主人公（あはは……；）といった感じ？
 [主人公困りほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"] (お兄さま……)[p]
 ;けど兄妹なので言いたいことはわかっている。素直に真摯に笑顔になる主人公
 [主人公ほほえみ]
+[四条微笑み]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ありがとうございます)[p]
+
+;【退場】四条
+[四条退場]
 
 [fadeoutbgm time=3000]
 
