@@ -218,6 +218,7 @@
 ;○京の端町、質素な邸宅がある
 ;[質素な邸宅]和の家
 [イベントシーン構築]
+[call target=*start storage="macro_tati_sijyou.ks"]
 [wait time=10]
 
 『[華衣]の婚約者の生家前』[p]
