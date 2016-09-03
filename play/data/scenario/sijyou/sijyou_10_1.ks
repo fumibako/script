@@ -9,6 +9,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
 
 
@@ -66,7 +67,8 @@
 
 [イベントシーン構築枠茶色]
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[call target=*start storage="macro_tati_sijyou.ks"]
 ;○四条の苦悩シーン
 [whosay name="四条母" color="#9B608B"]
 「[華衣]！ 勝手に手紙を捨てるはやめて頂戴！」[p]
@@ -80,21 +82,33 @@
 「いやだっ！」[p]
 [whosay name="四条祖父" color="#888898"]
 「この分からず屋が！！」[p]
-;[SEビンタ]
+;【SE】ビンタ（バチン）
+[playse storage=binta.ogg loop=false ]
+[quake count=1 time=250 hmax=10 vmax=10]
+[wait time=10]
+;【登場】四条
+[四条ベース着物]
+[四条通常]
+[四条ビンタ]
+;ビンタエモありがとうございます。疲れてるとマゾのコメントにみえる！
+
 #四条父
 「華織……なんで」[p]
 
 ;【音楽フェード停止】
 [fadeoutbgm time=3000]
-
+[四条憂い]
 [whosay name="華織" color="olivedrab"]
 「[華衣]を、叱らないであげて下さい、[r]
+;【SE】衣擦れ（スッ）体勢を立て直している？
+[playse storage=kinuzure.ogg loop=false ]
 僕が悪いのですから」[p]
-;[SE足音]
+;【SE】足音
 [playse storage=girl_out_walk.ogg loop=false ]
-
 [whosay name="四条母" color="#9B608B"]
 「[華衣]！どこ行くの？！」[p]
+;【退場】四条
+[四条退場]
 #
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
 [イベントシーン構築]
