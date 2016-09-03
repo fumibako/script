@@ -99,9 +99,11 @@
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 
+[wait time=10]
 ;[四条ベース着物]　外なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+[wait time=10]
 
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
