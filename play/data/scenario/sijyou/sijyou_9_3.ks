@@ -316,10 +316,11 @@
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「きゃっ」[p]
-
 [主人公ポーズ片手]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+
+[四条驚き]
 [whosay name="四条 華織" color="olivedrab"]
 「おっと」[p]
 ;【SE】ザッ(衣擦れ)
@@ -335,6 +336,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
+[四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]、大丈夫かい？」[p]
 [if exp="sf.BGM=='ON'"]
@@ -349,6 +351,20 @@
 [主人公目を開く]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (急に腕を引かれて驚いてしまいました)[p]
+
+[四条困り微笑み]
+[whosay name="四条 華織" color="olivedrab"]
+「ここは走りやすい場所だからね。[r]
+[sp][名前]がよければ、また隠れ鬼でもするけど」[p]
+
+[四条微笑み]
+[whosay name="四条 華織" color="olivedrab"]
+「そんな必要はないようだね。」[p]
+;まだ妹扱い
+
+[whosay name="四条 華織" color="olivedrab"]
+「そうだ。　新しい庭が出来たんだ、一緒に見に行こうか」[p]
+
 ;△↑無くても？
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
@@ -463,10 +479,12 @@
 [wait time=10]
 
 [主人公目パチ1回]
-;[四条微笑み]
+[四条驚き]
 [whosay name="四条 華織" color="olivedrab"]
 「！[r]
-[sp]再会したときから気になっていたけど、そんなことで悩んでいたのかい？」[p]
+[sp]再会したときから気になっていたけど、
+[四条笑顔]
+そんなことで悩んでいたのかい？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;[主人公怒り]または[主人公照れ]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -474,17 +492,21 @@
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 
+[四条口微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]は可愛らしい方ですね」[p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
+
+[四条笑顔大]
 [whosay name="四条 華織" color="olivedrab"]
 「これからはどの様に呼んでいただいても構いませんよ」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 
+[四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「なんでしたら、『華織お兄さま』でもいいですよ」[p]
 ;○四条 意地悪にからかって
@@ -503,12 +525,15 @@
 [主人公伏目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
+
+[四条口開]
 [whosay name="華織" color="olivedrab"]
 「[名前]。久しぶりに来た、我が家を見て回ろうか」[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
 
+[四条口開]
 [whosay name="華織" color="olivedrab"]
 「いずれ、君の家になる場所だから[r]
 [sp]迷子にならないように覚えておこう」[p]
@@ -534,7 +559,7 @@
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
 ;ナレーター
-思い出の場を語り合いながら、四条は[名前]を温室へと誘った。[p]
+思い出の場を語り合いながら、"華織"は[名前]を温室へと誘った。[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -575,6 +600,9 @@
 [whosay name="華織" color="olivedrab"]
 「[名前]、薔薇園を見に行こうか」[p]
 
+;【退場】四条
+[四条退場]
+
 ;○薔薇園で麗しさ表現
 ;場面転換
 ;【背景】[薔薇庭]
@@ -592,8 +620,15 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
+;綺麗な場所か見せてから登場
+
+;【登場】四条
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「[名前]の名前をつけた薔薇を育ててみようかな」[p]
+[四条口開]
 
 ;○狂気 主人公の対応は？
 [主人公ポーズ片手]
@@ -645,6 +680,7 @@
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 「ここまで来ると2人だけだね」[p]
+;多分からかっている
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ][p]
@@ -678,6 +714,9 @@
 (華織さま、どうしたのでしょうか？)[p]
 [stopse]
 
+
+;【退場】四条
+;[四条退場]
 
 ;¥¥¥¥¥¥¥¥イベント3ここまで¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
