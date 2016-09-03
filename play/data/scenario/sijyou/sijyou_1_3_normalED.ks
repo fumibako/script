@@ -124,9 +124,14 @@
 
 [stopbgm]
 [四条真剣]
+;焦っている感じの口を開くがないのでこのまま・・・
 ;○必要に応じて[p]ではなくてウェイト[er]？
 [whosay name="華織" color="olivedrab"]
-「　僕は、[名前]のことが好きなんだ　」[p]
+「　僕は、[名前]のこと
+;[四条口驚き]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_odoroki.png" time=0]
+[wait time=10]
+が好きなんだ　」[p]
 ;[四条効果消]
 [chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
 [wait time=10]
