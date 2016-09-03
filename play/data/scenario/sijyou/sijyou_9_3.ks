@@ -482,7 +482,8 @@
 「！[r]
 [sp]再会したときから気になっていたけど、
 [四条笑顔]
-そんなことで悩んでいたのかい？」[p]
+そんなことで悩んでいた[r]
+[sp]のかい？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;[主人公怒り]または[主人公照れ]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -492,7 +493,7 @@
 
 [四条口微笑み]
 [whosay name="四条 華織" color="olivedrab"]
-「[名前]は可愛らしい方ですね」[p]
+「[名前]は、可愛らしい方ですね」[p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
