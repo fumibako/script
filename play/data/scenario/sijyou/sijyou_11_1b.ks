@@ -12,25 +12,30 @@
 [イベントシーン構築]
 ;ないとキャラが消せないと怒られるので
 
-
 [テキスト全画面白文字]
 外に出て車夫をみつけると、[華衣]がいると思われる[r]
 『波ケ浦』へと向かった。[p]
-
+[call target=*start storage="macro_tati_sijyou.ks"]
+;場面転換
+;【波ヶ浦】
+[chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
-;場面転換
-;[波ヶ浦]
-[chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
 ;主人公通常でもいいかも　お好きに！
 [主人公真剣]
 [wait time=10]
+
+;【登場】四条
+[四条ベース羽織]
+;強気の驚き
+[四条真剣]
+[四条口驚き]
 [whosay name="華織" color="olivedrab"]
 「[華衣]！ ここに居たんだな」[p]
+[四条口ムッ]
 [whosay name="華織" color="olivedrab"]
 「大事な話があるんだ、きいてほしい」[p]
 [whosay name="華衣" color=%mp.color]
@@ -40,12 +45,13 @@
 [whosay name="華衣" color=%mp.color]
 「勉学も運動も、笑って何でも出来るアンタには、
 一生この気持ちがわからない」[p]
+[四条口驚き]
 [whosay name="華衣" color=%mp.color]
 「あの人は何の才能もなかった俺に勇気と希望を与えてくれた、」[p]
 ;テーマに反する言葉をいう…セリフ難しい
 ;幸せは信じれば巡ってくる それは案外気づかない近い場所にあるかもしれません
 ;テーマ部なんで音楽流しておくか～
-
+[四条憂い]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true]
@@ -60,16 +66,23 @@
 [whosay name="華衣" color=%mp.color]
 「それなのに『幸せ』を見せられて、
 押し付けられるくらいなら！」[p]
-
+[四条真剣]
 [whosay name="華織" color="olivedrab"]
 「華衣、僕がこんなこというのは、おこがましいけれど」[p]
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「もっと周りをよくみて考えてほしい」[p]
 ;○プレイヤーのイライラを解消
 [主人公通常]
 [wait time=10]
+;[四条目閉じ]
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 (幸せや大事なものは気づかないくらいに近いところにあるんだ)[p]
+[四条真剣]
 [whosay name="華織" color="olivedrab"]
 「これ以上、なにを見せられる？」[p]
 [whosay name="華衣" color=%mp.color]
@@ -92,6 +105,7 @@
 「急に居なくなって、お手紙をもらえなくなったら」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「心配で心が張り裂けそうでした」[p]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「[名前]……」[p]
 ;○華織 主人公を愛しく思うも懺悔
@@ -100,6 +114,11 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「でも[華衣]さんには、その人からのが手紙が残ってます」[p]
+
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+
 [主人公憂い]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -140,6 +159,9 @@
 [wait time=10]
 ;たまに止まるのです
 
+;【退場】四条
+[四条退場]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
@@ -161,28 +183,40 @@
 どうか悲しまないでほしい　私は[華衣]に　幸せな思い出が訪れる日を[r]
 楽しみにしています。」[p]
 [手紙読了] 
+;【登場】四条
+[四条ベース羽織]
+[四条憂い]
+
 [whosay name="華衣" color=%mp.color]
 「あの庭……！」[p]
 ;[華衣]、走って家に帰る！四条家は運動力がある？
+;強気の驚き
+[四条真剣]
+[四条口驚き]
 [whosay name="華織" color="olivedrab"]
 「[華衣]！」[p]
 ;○お互い見合って 比翼の2人の感じ
+[四条口微笑み]
 [whosay name="華織" color="olivedrab"]
-「[名前]、」[p]
+「[名前]さん、」[p]
+;[名前]さん、か[名前]、焦ってるから呼び捨て？
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「一緒に行きましょう」[p]
 ;○主人公追う
 [主人公退場]
-
+;【退場】四条
+[四条退場]
 [テキスト全画面白文字]
-;場面転換 ネリネの庭がどういったものか地の文が必要。絵によって変更
+;場面転換 ネリネの庭がどういったものか絵によって変更
 # 
 ;ナレーター
-[華衣]を追った[名前]達は、以前、華織に尋ねた温室へとたどり着く。[p]
-温室の中は、ガラスとネリネに囲われた小さな箱庭であった。[p]
-
+[華衣]を追った[名前]達は、[r]
+以前、華織に尋ねた温室へとたどり着く。[p]
+温室の中は、ガラスとネリネに囲われた[r]
+小さな箱庭であった。[p]
+[call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
@@ -190,10 +224,8 @@
 [wait time=10]
 
 
-;[婚約者の花園] ネリネ？の庭…背景がないなら私が描いてボカすか青空か夕空の背景…もう少し上手く描きたいところ
-;写真の花だけでもいいかもね
+;[婚約者の花園] ネリネ？の庭…背景がないなら写真の花だけでもいいかも
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=100]
-
 [whosay name="華衣" color=%mp.color]
 「ここって兄さんが言ってた場所」[p]
 ;○主人公が花言葉を教えてくれる
@@ -299,6 +331,10 @@
 
 ;回想シーンおわり
 ;花園もどる
+;【登場】四条
+[四条ベース羽織]
+[四条憂い]
+
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=100]
 [主人公ポーズ通常]
 [wait time=10]
@@ -306,12 +342,15 @@
 [wait time=10]
 [whosay name="華衣" color=%mp.color]
 「こんな、手紙、どうして早く来てくれなかった？」[p]
-
+[四条困り]
 [whosay name="華織" color="olivedrab"]
 「……」[p]
-[whosay name="華織" color="olivedrab"]
-(今は平和だけど、この時代、何が起こるかわからない)[p]
+
+; 唐突にみえるしやめてみた
+;[whosay name="華織" color="olivedrab"]
+;(今は平和だけど、この時代、何が起こるかわからない)[p]
 ;華族の中にも華族制度が終わることを予感していた人もいた
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 (こんなこと考えたくないけれど、いつか別れがきたときに)[p]
 [whosay name="華織" color="olivedrab"]
@@ -320,8 +359,9 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま　」[p]
+[四条真剣]
 [whosay name="華織" color="olivedrab"]
-……[p]
+「……」[p]
 #
 華織は[名前]の手を強く握った。[r]
 [名前]も華織の表情を見て、強く握り返す。[p]
@@ -329,8 +369,6 @@
 『また会う日を楽しみに』　『幸せな思い出』 [p]
 『忍耐』[p]
 
-;思い出を重ねて、どんなことがあっても共に歩んでいきたい [p]
-;なくてもいいかも　プレイヤーが想像したほうがいいかな
 
 ;¥¥¥¥¥¥¥¥イベント6おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
