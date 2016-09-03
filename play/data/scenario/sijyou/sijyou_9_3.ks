@@ -243,6 +243,8 @@
 (そうなのですね)[p]
 
 [主人公目閉じ]
+
+[四条目パチ1回]
 #
 －－はじめは、兄に連れられ訪ねた四条家。[r]
 花咲く庭で、いつもひとりで居た彼と出会って、[r]
@@ -270,6 +272,8 @@
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
+
+[四条目パチ1回]
 
 [whosay name="？？？" color=%mp.color]
 「……なんで……だけ」[p]
@@ -314,13 +318,15 @@
 [quake count=3 time=250 hmax=10 vmax=10]
 [主人公ポーズ両手]
 [主人公驚]
+
+[四条驚き]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「きゃっ」[p]
 [主人公ポーズ片手]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
-[四条驚き]
 [whosay name="四条 華織" color="olivedrab"]
 「おっと」[p]
 ;【SE】ザッ(衣擦れ)
@@ -359,7 +365,7 @@
 
 [四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
-「そんな必要はないようだね。」[p]
+「もう、そんな必要はないようだね」[p]
 ;まだ妹扱い
 
 [whosay name="四条 華織" color="olivedrab"]
@@ -390,16 +396,22 @@
 #
 四条は[名前]の隣にたって、薔薇の名について話しながら、出会った頃のように[名前]の髪を撫でる。[p]
 
+[四条目パチ1回]
+
 [主人公目パチ1回]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (やっぱり、まだ四条さまにとって、妹扱いなのでしょうか？)[p]
 
+[四条目パチ1回]
+
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そうだわ。私、四条さまに言わないといけないことがありましたわ)[p]
+
+[四条目パチ1回]
 
 ;この部分↓は、あっても無くても。
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
@@ -407,12 +419,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もっと四条さま、いえ、華織さまと仲を深めたい)[p]
 
-[主人公目パチ1回]
-;お手数ですが、上記分、追加お願いできたらお願いいたします。
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「四条さま」[p]
+
+[四条目パチ1回]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -422,6 +434,9 @@
 [wait time=10]
 [whosay name="四条父" color="darkolivegreen"]
 「２人はやはり仲が良いな！ 」[p]
+
+[whosay name="四条 華織" color="olivedrab"]
+「 ？ 」[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
@@ -462,6 +477,8 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[四条目パチ1回]
+
 [whosay name="四条 華織" color="olivedrab"]
 「なんだい[名前]？ 」[p]
 
@@ -561,6 +578,8 @@
 ;ナレーター
 思い出の場を語り合いながら、"華織"は[名前]を温室へと誘った。[p]
 
+[四条目パチ1回]
+
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -581,10 +600,13 @@
 「ペヨーテといって、サボテンの一種だよ[r]
 [sp][名前]は好きではないかもしれないね」[p]
 
+[四条口微笑み]
+
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「色んな種類の花々があるのですね」[p]
 
+[四条憂い]
 [whosay name="華織" color="olivedrab"]
 「そうだね。いざという時の為にね」[p]
 
@@ -597,8 +619,13 @@
 ;○過去のくだり、家のことも(手紙で追記あり)あってこの時点で主人公はあまり気にせず。 
 
 [主人公ポーズ通常]
+
+[四条微笑み]
+
 [whosay name="華織" color="olivedrab"]
-「[名前]、薔薇園を見に行こうか」[p]
+「[名前]、
+[四条口開]
+薔薇園を見に行こうか」[p]
 
 ;【退場】四条
 [四条退場]
@@ -632,11 +659,16 @@
 
 ;○狂気 主人公の対応は？
 [主人公ポーズ片手]
+
+[四条微笑み]
+
 [主人公驚]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇ?」[p]
+
+
 ;【SE】水音
 [playse storage=mizu_ike.ogg loop=false ]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -704,7 +736,8 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「そうだね。でも、僕のものではないから」[p]
-
+#
+どうしてか、華織さまは、憂いを帯びた表情をみせた。[p]
 ;[四条憂い]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
