@@ -223,6 +223,10 @@
 ;◎華織に出会う まだ華衣とはやや険悪
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、 [華衣]？ どうかされたのですか？」[p]
+;【登場】四条
+[四条ベース羽織]
+[四条驚き]
+
 
 [主人公驚]
 [wait time=10]
@@ -232,7 +236,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま！」[p]
 
-
+;やや呆れている
+[四条通常]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「祖母に『[華衣]に買い出しを頼んだのにまだ帰ってこない』と言われ来てみたら」[p]
 ;険悪なのにどうなの？このセリフ、あと買い出しってどうなの？→罰だと思いねぇ
@@ -246,6 +254,10 @@
 
 #
 [華衣]は、バツの悪そうに腕組みをすると、華織から目を背けた。[p]
+;[四条効果消]
+[chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[四条憂い]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -254,12 +266,21 @@
 _ いつかは仲良くなってほしいですが)[p]
 #
 そんな[華衣]を見た華織は、僅かに憂いを見せたが、直ぐに柔和な表情を繕ってみせた。[p]
+[四条笑顔]
 [whosay name="華織" color="olivedrab"]
 「あぁ、エンさんとカンさんですよね。お久しぶりです」[p]
 [whosay name="子供たち"]
 「「うう ……おねえちゃん……どこにも……さがしてもいなくて…… ！！」」[p]
+
+[四条通常]
+;[四条眉下げ]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「そうですか。不安ですよね」[p]
+;[四条目閉じ]
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
 #
 華織は、一言、子供達に同情すると、立ち上がる[p]
 
@@ -270,6 +291,10 @@ _ いつかは仲良くなってほしいですが)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ( ？ )[p]
 
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+[四条口開]
 ;◎華織の機転で迷子をなんとかする？;まだ決まってない
 [whosay name="華織" color="olivedrab"]
 「腹が空いて…とは言いますし、ひとまず、みんなで、飴でも食べませんか？ 」[p]
