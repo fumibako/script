@@ -15,7 +15,7 @@
 [テキスト全画面白文字]
 外に出て車夫をみつけると、[華衣]がいると思われる[r]
 『波ケ浦』へと向かった。[p]
-[call target=*start storage="macro_tati_sijyou.ks"]
+
 ;場面転換
 ;【波ヶ浦】
 [chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
@@ -28,6 +28,7 @@
 [主人公真剣]
 [wait time=10]
 
+[call target=*start storage="macro_tati_sijyou.ks"]
 ;【登場】四条
 [四条ベース羽織]
 ;強気の驚き
