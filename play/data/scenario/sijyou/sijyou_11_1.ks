@@ -168,8 +168,8 @@
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「それで、[華衣]さまは
-まだ帰って来られてないのですね」[p]
+「それで、[華衣]さまは[r]
+[sp]まだ帰って来られてないのですね」[p]
 ;さま？？さん？？　いきなりサンはないかな
 
 [四条困り]
@@ -217,7 +217,11 @@
 [sp]安心して行っておいで。　[名前]はウチに来たことにしておくよ。」[p]
 [whosay name=文矢 color="#538a8a"]
 「けど心配だから、ウチの家令をつけておく」[p]
-[四条目パチ1回]
+;目パチの代わり
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
+[chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+[wait time=10]
 [whosay name=文矢 color="#538a8a"]
 「それからキミ(華織)と僕が頼んだ料理は、食べておくね」[p]
 [四条笑顔]
@@ -601,6 +605,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (結構な量ですね）[p]
 
+[四条口微笑み]
 [whosay name="華織" color="olivedrab"]
 「これを、全部読むのは時間がかかりそうだな」[p]
 
@@ -609,8 +614,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「表紙から見て分類整理をいたしましょうか？」[p]
 [whosay name="華織" color="olivedrab"]
-「そうだね。
-明らかに関係性のないものは優先順位を下げておこう」[p]
+「そうだね。[r]
+[sp]明らかに関係性のないものは優先順位を下げておこう」[p]
 
 ;【退場】四条
 [四条退場]
@@ -656,7 +661,7 @@
 [whosay name="華織" color="olivedrab"]
 「　『頭は恋をし寝る。波の音を聞きながら刀を探す。[r]
 [四条目閉じ]
-……その壺には恋を詰めておく』 ？ 」[p]
+[sp]……その壺には恋を詰めておく』 ？ 」[p]
 
 ;完全思考中顔1　顎に手ポーズのイメージ
 [四条横伏目]
@@ -752,6 +757,7 @@
 「きっと、この中に手がかり(ヒント)があります」[p]
 [四条効果消]
 [四条目パチ1回]
+[四条口通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 『頭は恋をし寝る。波の音を聞きながら刀を探す。』[p]
 『……その壺には恋を詰めておく。』[p]
@@ -795,7 +801,7 @@
 「歌舞伎の演目名だ」[p]
 [四条口微笑み]
 [whosay name="華織" color="olivedrab"]
-「[華衣]もあの人も『展覧芝居』を一緒になって
+「[華衣]も、あの人も『展覧芝居』を一緒になって
 見ていた！」[p]
 [四条口開]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
