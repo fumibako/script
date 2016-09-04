@@ -152,13 +152,13 @@
 [テキスト全画面白文字]
 ;一時的に行間多く
 [iscript]
-tyrano.plugin.kag.config.defaultLineSpacing = '9';
+tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [endscript]
 その後、華道家として祖母以上に認められ華織は、[r]
 四条御流として更に名が知れ渡るほどに国の文化に[r]
 貢献することとなった。[p]
-その陰には四条を支える[名前]の姿があったという。[p]
-;仮でおいてみる
+その陰には、彼を支える[名前]の姿があったという。[p]
+;背景仮でおいてみる　いつもの手紙の背景に和花でも？？
 [font color="000000"]
 [chara_mod name="bg" storage="bg/sijyou_ed_tegami0.jpg" time=1000]
 想いを繋げて綴っていく手紙は、[r]
