@@ -48,7 +48,7 @@
 [四条口驚き]
 ;ここでは、男らしい感じで驚いてほしい
 [whosay name="華織" color="olivedrab"]
-！[p]
+「！」[p]
 ;ザッってすると引かれているかんじかも
 ;【SE】衣擦れ（ザッ）
 ;[playse storage=za_kinuzure.ogg loop=false ]
@@ -299,7 +299,7 @@
 [四条汗]
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
-「！まずいな 早くここの主人と話をしないと！」[p]
+「！　まずいな 早くここの主人と話をしないと！」[p]
 [主人公真剣]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
