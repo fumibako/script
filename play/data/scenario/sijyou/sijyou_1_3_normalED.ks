@@ -95,7 +95,8 @@
 「そうだね……[名前]と出逢えてよかったと思う」[p]
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
-「僕は[名前]と再会する前は、ずっと 妹のような箱入り娘 だと思っていたよ」[p]
+「僕は[名前]と再会する前は、ずっと 妹のような箱入り娘 だと[r]
+[sp]思っていたよ」[p]
 [四条困り]
 [whosay name="華織" color="olivedrab"]
 「それに (華衣に悪いと思って)返事も素っ気なかった時もあったよね」[p]
@@ -159,7 +160,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……はい」[p]
 ;○2人手をとって、共に歩むことを決意する
-;あんなこと付き合わせたのでok貰えてホッとする四条であった
+;あんなこと付き合わせたのでok貰えてホッとする四条
 ;[四条汗]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
 [wait time=10]
@@ -173,7 +174,8 @@
 [wait time=10]
 [四条笑顔大]
 [whosay name="華織" color="olivedrab"]
-「そうだ。せっかく、お義父さまのお許しを得たのだから、お出かけをしましょうか」[p]
+「そうだ。[r]
+[so]せっかく、お義父さまのお許しを得たのだから、お出かけをしましょうか」[p]
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
