@@ -175,7 +175,7 @@
 [四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「そうだ。[r]
-[so]せっかく、お義父さまのお許しを得たのだから、お出かけをしましょうか」[p]
+[sp]せっかく、お義父さまのお許しを得たのだから、お出かけをしましょうか」[p]
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
