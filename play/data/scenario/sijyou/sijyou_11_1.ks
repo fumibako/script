@@ -714,12 +714,13 @@
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
 「これは……」[p]
-[四条口驚き]
+;スマホで音がなっていないので位置修正
 [if exp="sf.BGM=='ON'"]
 ;【BGM】一閃（緊迫シーンに
 [playbgm storage="kinpaku_issen.ogg" loop=true]
 [eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
 [endif]
+[四条口驚き]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公真剣]
