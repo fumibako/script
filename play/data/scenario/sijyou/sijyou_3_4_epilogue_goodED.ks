@@ -150,8 +150,13 @@
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [テキスト全画面白文字]
+;一時的に行間多く
+[iscript]
+tyrano.plugin.kag.config.defaultLineSpacing = '9';
+[endscript]
 その後、華道家として祖母以上に認められ華織は、[r]
-四条御流として更に名が知れ渡るほどに国の文化に貢献することとなった。[p]
+四条御流として更に名が知れ渡るほどに国の文化に[r]
+貢献することとなった。[p]
 その陰には四条を支える[名前]の姿があったという。[p]
 ;仮でおいてみる
 [font color="000000"]
@@ -161,6 +166,9 @@
 [r]
 人々を幸せにする愛に変わっていく。[r]
 その手紙は－－[p]
+[iscript]
+tyrano.plugin.kag.config.defaultLineSpacing = '6';
+[endscript]
 ;恋綴りのタイトルに戻るイメージ
 ;手紙によって大きく変わった四条兄弟が人々に貢献する・・・にもつながる？
 
