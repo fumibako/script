@@ -1,12 +1,12 @@
 ;=============================================
 ;イベント５回目【手紙のお返事】８月２回以上お琴の稽古をする
 ;=============================================
-[call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】お稽古部屋
 ;【背景】主人公邸 お稽古部屋
  [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
+[call target=*start storage="macro_tati_hujieda.ks"]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
