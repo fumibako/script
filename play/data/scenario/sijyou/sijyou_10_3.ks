@@ -123,6 +123,12 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;回想シーンタグとかはシナリオ中に使うと延々ループの危険ぽいです？
 ;○決意の表情 セリフはプレイヤーに想像　お好きな方で
 ;【背景】ヒロインの部屋
+;背景ない内はこれで
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
@@ -187,7 +193,12 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 歳の意味もわからず、[r]
 幼い頃の私は、ただ呆然と、白く消えていく華織お兄さまを[r]
 見送ってしまった。[p]
-
+;背景ない内はこれで
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
 #
 ;あの時の憧れのままでいてほしいから、追いかけなかった。[r]
 ;華織お兄さまは、優しいから、守ってくれるから、大丈夫だと思って。[p]
