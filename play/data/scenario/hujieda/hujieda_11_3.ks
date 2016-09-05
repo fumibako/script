@@ -10,6 +10,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_hujieda.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
@@ -126,14 +127,18 @@
 藤枝様の姿が見えた[p]
 
 ;【立ち絵】藤枝：驚き
+[藤枝ベース郵便屋]
+[藤枝驚き]
 [whosay name="藤枝 肇" color=%mp.color] 
 「！」[p]
 ;【立ち絵】藤枝：目伏せ憂い
+[藤枝憂い]
+[藤枝口開]
 「お返事が来ないと思っていたのですが[r]
 [sp]知られてしまったのですね[r]
 [sp]いずれこうなるとわかっていながら[r]
 [sp]僕の我儘で、すみません」[p]
-
+[藤枝口通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：憂い
 [主人公憂い]
@@ -144,9 +149,11 @@
 [主人公口通常]
 
 ;【立ち絵】藤枝：驚き
+[藤枝驚き]
 [whosay name="藤枝 肇" color=%mp.color] 
 「その話を御存じなのですね！」[p]
 ;【立ち絵】藤枝：目伏せ
+[藤枝憂い]
 「迷ってましたが皆僕の背中を押してくれています[r]
 [sp]それに留学の話をと聞いた学校在学中の時から[r]
 [sp]ずっと行きたいと思っていました」[p]
@@ -185,6 +192,7 @@
 [sp]藤枝様……お元気で！」[p]
 
 ;【立ち絵】藤枝：悲しみ
+[藤枝目閉じ]
 [whosay name="藤枝 肇" color=%mp.color] 
 「貴方を苦しめて申し訳ありませんでした[r]
 [sp]貴方もどうかお元気で……」[p]
