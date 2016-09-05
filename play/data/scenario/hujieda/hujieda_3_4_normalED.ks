@@ -8,6 +8,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_hujieda.ks"]
 [イベントシーン構築]
 
 [主人公ポーズ通常]
@@ -42,6 +43,8 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】藤枝：真剣
+[藤枝ベース私服]
+[藤枝真剣]
 [whosay name="藤枝 肇" color=%mp.color]
 「[名字]様この度は機会を頂き[r]
 ありがとうございます！」[p]
@@ -54,6 +57,7 @@
 [sp]君は努力家のようだな。」[p]
 
 ;【立ち絵】藤枝：微笑み
+[藤枝微笑み]
 [whosay name="藤枝 肇" color=%mp.color]
 「自分の夢と恋の為ですから[r]
 [sp]どんな努力を惜しむつもりはありません」[p]
@@ -65,6 +69,7 @@
 [sp]だが君が自力で道を開けたときは君を認めよう」[p]
 
 ;【立ち絵】藤枝：微笑み
+[藤枝笑顔大]
 [whosay name="藤枝 肇" color=%mp.color]
 「今は僕にとって十分なお言葉です[r]
 [sp]僕は慢心ぜず努力し、彼女にふさわしくなります」[p]
@@ -74,6 +79,7 @@
 [sp]君が一人前になるまではどれぐらいだろうな？　」[p]
 
 ;【立ち絵】藤枝：真剣
+[藤枝通常]
 [whosay name="藤枝 肇" color=%mp.color]
 「あと一年したら学校は卒業ですが、数年は留学します[r]
 ですが留学を終えたときには一人前になっているように[r]
@@ -85,6 +91,7 @@
 「欧米諸国は音楽のレベルが高いと聞くが……」[p]
 
 ;【立ち絵】藤枝：真剣
+[藤枝目閉じ]
 [whosay name="藤枝 肇" color=%mp.color]
 「ええ、[r]
 でも僕も負けるつもりはありません」[p]
@@ -109,6 +116,7 @@
 [endif]
 
 ;【立ち絵】藤枝：目伏せ照れ
+[藤枝目伏せ照れ]
 [whosay name="藤枝 肇" color=%mp.color]
 「貴方の事を[r]
 [名前]さんとお呼びしてもいいですか？　」[p]
@@ -121,6 +129,7 @@
 お呼びしても構いませんか？」[p]
 
 ;【立ち絵】藤枝：微笑み照れ
+[藤枝微笑み照れ]
 [whosay name="藤枝 肇" color=%mp.color]
 「はい！　ありがとうございます」[p]
 
@@ -138,6 +147,8 @@
 「肇様、約束をして頂けませんか？　」[p]
 
 ;【立ち絵】藤枝：驚き
+[藤枝効果消]
+[藤枝驚き]
 [whosay name="藤枝 肇" color=%mp.color]
 「何の約束ですか？　」[p]
 
@@ -159,6 +170,7 @@
 
 
 ;【立ち絵】藤枝：微笑み
+[藤枝笑顔大]
 [whosay name="藤枝 肇" color=%mp.color]
 「ええ、約束を必ず守ります」[p]
 
