@@ -66,7 +66,7 @@
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-！ [p]
+「！ 」[p]
 「どうぞ、入って頂戴」[p]
 [whosay name="磯野" color="dimgray"]
 「文矢さまからお手紙が届きました」[p]
@@ -74,6 +74,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。下がって頂戴」[p]
 
+;【SE】鈴虫の音
+[playse storage=mushi_suzumushi.ogg loop=false ]
 
 ;/////手紙///
 
@@ -94,9 +96,6 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 [手紙読了]
-
-;【SE】鈴虫の音
-[playse storage=mushi_suzumushi.ogg loop=false ]
 
 
 [主人公目閉じ]
@@ -122,12 +121,12 @@
 #
 北風が障子の影を抜けて吹き抜けていく。[p]
 #
-――あと少しで冷たい冬がくる。[r]
+――あと少しで、冷たい冬がくる。[r]
 [sp] 私は"あの時"を思い出した。[p]
 [主人公退場]
 
 [whosay name="文矢" color="#538a8a"]
-「[名前]、華織が来たよ。外にでてきて」[p]
+「[名前]、華織が来たよ。 外にでてきて」[p]
 #
 白く光る襖から、お兄さまの影と華織お兄さまの影が映る。[p]
 #
@@ -141,7 +140,7 @@
 #
 汚れのない憧れの華織お兄さまの白い指先が、[r]
 うっすらと真っ赤になっていたことに気づいて私は驚きを隠せなかった。[p]
-#華織お兄さま" color="olivedrab"]
+[whosay name="華織お兄さま" color="olivedrab"]
 「急に来て驚かせたよね　ごめんね」[p]
 [whosay name="幼い頃の私" color="#cf5a7f"]
 「いえ……けど、急にどうしてですの？」[p]
@@ -149,7 +148,7 @@
 華織お兄さまとお兄さまは、互いに見合って悲しそうに微笑む。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「お誕生日の日に来れなくてごめんね」[p]
-[whosay name="華織お兄さま color="olivedrab"]
+[whosay name="華織お兄さま" color="olivedrab"]
 「本当は、[名前]ちゃんにお花を贈ろうと思ったけれど、[r]
 [sp]僕は、まだ修練中の身だから、」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -159,8 +158,9 @@
 冷たい指先が、私の指先に触れる。[r]
 今まで、ずっとお傍にいたのに初めて触れた指先。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「[名前]ちゃんが大人になる為……[r]
-[sp]ううん、[名前]ちゃんが幸せになる為の」[p]
+「[名前]ちゃんが大人になる為の[r]
+[sp]ううん、[名前]ちゃんが幸せになる為の贈り物」[p]
+;うーん位置が違うだけで気持ち悪い感じになったな
 [whosay name="幼い頃の私" color="#cf5a7f"]
 「華織お兄さま……？」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -178,7 +178,7 @@
 [whosay name="文矢(手紙)" color="#538a8a"]
 『[名前]は華織のことをどう思う？[r]
 [sp] どうしたい？』[p]
-
+#
 ; 相手を優しく思って考えている
 [主人公ポーズ通常]
 [wait time=10]
