@@ -126,14 +126,13 @@
 ――あと少しで、冷たい冬がくる。[r]
 [sp] 私は"あの時"を思い出した。[p]
 [主人公退場]
+[whosay name="文矢" color="#538a8a"]
+「[名前]、華織が来たよ。 外にでてきて」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】星降る夜に（思い出/夢見るシーンに
 [playbgm storage="yumemiru_hoshi.ogg" loop=true]
 [eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
 [endif]
-
-[whosay name="文矢" color="#538a8a"]
-「[名前]、華織が来たよ。 外にでてきて」[p]
 #
 白く光る襖から、お兄さまの影と華織お兄さまの影が映る。[p]
 #
