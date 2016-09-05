@@ -7,9 +7,12 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_hujieda.ks"]
 [イベントシーン構築枠茶色]
 
 ;【立ち絵】藤枝：ため息
+[藤枝ベース私服]
+[藤枝困り]
 [whosay name="藤枝 肇" color=%mp.color] 
 「この短期間でこの難曲を弾きこなすのは難しいな。[r]
 [sp]あと数日後だというのに……」[p]
@@ -21,6 +24,7 @@
 [endif]
 
 ;【立ち絵】藤枝：落ち込み
+[藤枝憂い]
 （課題曲はパガニーニ超絶技巧練習曲集[r]
 [sp]第三番「ラ・カンパネッラ」、学校の練習室を[r]
 [sp]早朝に数時間借りて練習し譜面通り弾ける様になったけど[r]
@@ -89,6 +93,7 @@
 諦めずに取り組みここまで弾けるようになった。[p]
 [fadeoutbgm time=3000]
 ;【立ち絵】藤枝：目閉じ
+[藤枝真剣]
 [whosay name="藤枝 肇" color=%mp.color] 
 （僕も最後まで自分の演奏を諦めない……）[p]
 
@@ -224,6 +229,7 @@
 （一目会えただけでこんなにも嬉しい）[p]
 
 ;【立ち絵】藤枝：微笑み
+[藤枝微笑み]
 [whosay name="藤枝 肇" color=%mp.color] 
 （……見守って下さるのですね）[p]
 
@@ -235,6 +241,7 @@
 私はうなずき藤枝様はピアノの椅子に座る。[p]
 
 ;【立ち絵】藤枝：目閉じ
+[藤枝目閉じ]
 [whosay name="藤枝 肇" color=%mp.color] 
 （貴方が来てくれた、[r]
 [sp]それなら僕は何も恐れることはない）[p]
