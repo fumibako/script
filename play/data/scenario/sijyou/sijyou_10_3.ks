@@ -109,6 +109,11 @@
 ;[歌舞伎座前]
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 『大事なものではないのですか？』[p]
 
@@ -132,7 +137,7 @@
 ;背景ない内はこれで
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer_fore");
+var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
 [whosay name="文矢" color="#538a8a"]
