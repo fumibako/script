@@ -72,7 +72,7 @@
 「文矢さまからお手紙が届きました」[p]
 ;○数日後手紙がかえってくる
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「磯野、ありがとう。下がって頂戴」[p]
+「磯野、ありがとう」[p]
 
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false ]
@@ -158,9 +158,7 @@
 冷たい指先が、私の指先に触れる。[r]
 今まで、ずっとお傍にいたのに初めて触れた指先。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「[名前]ちゃんが大人になる為の[r]
-[sp]ううん、[名前]ちゃんが幸せになる為の贈り物」[p]
-;うーん位置が違うだけで気持ち悪い感じになったな
+「淑女になる[名前]ちゃんが今後とも幸せになりますように」[p]
 [whosay name="幼い頃の私" color="#cf5a7f"]
 「華織お兄さま……？」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
