@@ -10,7 +10,6 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_hujieda.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 
@@ -196,6 +195,7 @@
  [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
+[call target=*start storage="macro_tati_hujieda.ks"]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
