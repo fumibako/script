@@ -126,6 +126,15 @@
 ――あと少しで、冷たい冬がくる。[r]
 [sp] 私は"あの時"を思い出した。[p]
 [主人公退場]
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;背景ない内はこれで
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
 [whosay name="文矢" color="#538a8a"]
 「[名前]、華織が来たよ。 外にでてきて」[p]
 [if exp="sf.BGM=='ON'"]
@@ -164,7 +173,7 @@
 冷たい指先が、私の指先に触れる。[r]
 今まで、ずっとお傍にいたのに初めて触れた指先。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「淑女になる[名前]ちゃんが今後とも幸せになりますように」[p]
+「淑女になる[名前]ちゃんが、今後とも幸せになりますように」[p]
 [whosay name="幼い頃の私" color="#cf5a7f"]
 「華織お兄さま……？」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -177,6 +186,9 @@
 #
 ;あの時の憧れのままでいてほしいから、追いかけなかった。[r]
 ;華織お兄さまは、優しいから、守ってくれるから、大丈夫だと思って。[p]
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [whosay name="文矢(手紙)" color="#538a8a"]
 『[名前]は華織のことをどう思う？[r]
