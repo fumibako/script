@@ -211,6 +211,7 @@
 [fadeoutbgm time=3000]
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / situnaiongaku.jpg " time=1000]
 [イベントシーン構築]
+[call target=*start storage="macro_tati_hujieda.ks"]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
@@ -374,7 +375,7 @@
 [主人公口ほほえみ]
 [主人公頬染め]
 （ピアノの優しくて甘い旋律がこの場の雰囲気を[r]
-[sp]支配している……本当になんて綺麗な音なのかしら）[p]
+[sp]包んでいる……本当になんて綺麗な音なのかしら）[p]
 
 #
 曲が終わると藤枝様は皆に礼をした[r]
@@ -393,6 +394,7 @@
 [sp]今度は私がお父様を説得する番ね[r]
 [sp]私も藤枝様を諦めないわ）[p]
 [fadeoutbgm time=3000]
+[藤枝退場]
 ;【背景】主人公邸 玄関
  [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
