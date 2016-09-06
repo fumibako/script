@@ -236,7 +236,10 @@
 （……見守って下さるのですね）[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】まだ見ぬ明日へ出会うとき
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
 
 #
 私たちは視線で会話するように見つめあい、[r]
