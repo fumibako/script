@@ -375,6 +375,7 @@
 [whosay name="藤枝 肇" color=%mp.color] 
 「はい、先生ありがとうございました」[p]
 
+[藤枝退場]
 [イベントシーン終了]
 @jump storage="test_hujieda.ks"
 [s]
