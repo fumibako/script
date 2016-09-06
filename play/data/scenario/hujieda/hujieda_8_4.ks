@@ -217,7 +217,7 @@
 [藤枝笑顔]
 [whosay name="藤枝 肇" color=%mp.color] 
 「ありがとうございます！　では失礼します！」[p]
-
+[藤枝退場]
 ;【立ち絵】主人公　驚き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
