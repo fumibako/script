@@ -13,6 +13,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+;前半はBGM無しでいい、同系統の音楽だと切り替えに違和感あると感じた
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -22,14 +23,6 @@
 「お嬢様、今日は"人通りが多い"と思います。散策に出られるのは、[r]
 [sp]お控えした方がよろしいかと」[p]
 ;して頂いたほうが？　どっちが正しいのやら？
-;BGM 夕涼みのまま？
-[wait time=10]
-[if exp="sf.BGM=='ON'"]
-;【BGM】夕涼み（お稽古パートなど
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
-[endif]
-
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -52,16 +45,15 @@
 #
 家に入ってからというものの、ついに忘れてしまったのかと、[r]
 時の流れに想いを馳せる。[p]
-;◎磯野の言葉に従って外には出なかったが
 [主人公目閉じ]
 [whosay name="磯野"]
 「よろしければ、中庭の縁側にて花火をご覧になられては、[r]
 [sp]如何でしょうか？」[p]
-
 [主人公通常]
 [wait time=10]
 #
 どうしてか磯野は、仄かに微笑んだ。[p]
+;もちろん？
 #
 無論。悪い気は、しなかった為、[r]
 私は裾を直して立ち上がると中庭へと向かうことにした[p]
@@ -75,16 +67,11 @@
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。その相手は[p]
-;bgm 海風と沈む太陽
-;http://otowabi.com/music/20160827umikaze/
-;[if exp="sf.BGM=='ON'"]
-;【BGM】海風と沈む太陽
-;[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-;[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
-;[endif]
-
-
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -93,10 +80,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お父さま！」[p]
-
 [主人公目パチ1回]
 [wait time=10]
-
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]。丁度、帰ってきて休んでいたところだ。[r]
 [sp]お前も、隣に座って夕涼みをしようじゃないか」[p]
@@ -114,7 +99,7 @@
 #
 私は、磯野の微笑みが、このことか。と、[r]
 合点がつき、微笑って父の隣にすわってみせた。[p]
-[fadeoutbgm time=3000]
+
 [主人公ほほえみ]
 [wait time=30]
 
@@ -126,11 +111,7 @@
 
 #
 黄昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
-[playbgm storage="sittori_umikaze.ogg" loop=true]
-[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
-[endif]
+
 
 [主人公ポーズ通常]
 [wait time=10]
