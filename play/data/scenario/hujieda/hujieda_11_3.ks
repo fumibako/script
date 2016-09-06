@@ -103,6 +103,7 @@
  [テキスト全画面白文字]
 翌日１０時前[p]
 [イベントシーン構築]
+[call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】主人公邸 玄関
  [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -197,6 +198,7 @@
 「貴方を苦しめて申し訳ありませんでした[r]
 [sp]貴方もどうかお元気で……」[p]
 [fadeoutbgm time=3000]
+[藤枝退場]
 #
 そして藤枝様は持っていた手紙を[r]
 磯野に渡し、自転車に乗って行きました[p]
