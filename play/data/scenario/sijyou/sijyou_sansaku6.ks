@@ -114,6 +114,7 @@
 #
 私は、磯野の微笑みが、このことか。と、[r]
 合点がつき、微笑って父の隣にすわってみせた。[p]
+[fadeoutbgm time=3000]
 [主人公ほほえみ]
 [wait time=30]
 
@@ -125,6 +126,12 @@
 
 #
 黄昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
+
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
