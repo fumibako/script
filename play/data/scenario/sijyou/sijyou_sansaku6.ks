@@ -23,6 +23,13 @@
 「お嬢様、今日は"人通りが多い"と思います。散策に出られるのは、[r]
 [sp]お控えした方がよろしいかと」[p]
 ;して頂いたほうが？　どっちが正しいのやら？
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
+
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -67,11 +74,7 @@
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。その相手は[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
-[playbgm storage="sittori_umikaze.ogg" loop=true]
-[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
-[endif]
+
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
