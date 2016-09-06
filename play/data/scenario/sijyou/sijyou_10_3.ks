@@ -106,22 +106,20 @@
 ;☆主人公の決意
 ;○今までの四条を振り返ってキャラのよさを確認する　気遣いができるひとである
 ;場面転換
-;[歌舞伎座前]
-[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
+;[歌舞伎座前]
+[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 『大事なものではないのですか？』[p]
-
 [whosay name="華織" color="olivedrab"]
 『内容は覚えているからいいよ』[p]
-;○回想おわり
-;回想シーンタグとかはシナリオ中に使うと延々ループの危険ぽいです？
-;○決意の表情 セリフはプレイヤーに想像　お好きな方で
+;○回想1おわり
 ;【背景】ヒロインの部屋
 ;背景ない内はこれで
 [iscript]
@@ -138,21 +136,22 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [sp] 私は"あの時"を思い出した。[p]
 [主人公退場]
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;背景ない内はこれで
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;背景ない内はこれで
 [whosay name="文矢" color="#538a8a"]
 「[名前]、華織が来たよ。 外にでてきて」[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】星降る夜に（思い出/夢見るシーンに
-[playbgm storage="yumemiru_hoshi.ogg" loop=true]
-[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
+
 #
 白く光る襖から、お兄さまの影と華織お兄さまの影が映る。[p]
 #
@@ -219,6 +218,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……」[p]
+[主人公通常]
+[wait time=10]
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
