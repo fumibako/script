@@ -29,8 +29,22 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [wait time=10]
 [ptext text="葛城宮 晴仁ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
 [ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
-[ptext text="作業終了＝散策イベント1　それより後はほぼいただいたファイルそのままの状態です" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext text="作業終了＝散策イベント2。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
+*button_BGM
+[if exp="sf.BGM=='OFF'"]
+;ロード時点で再生していたBGMを停止します。
+[stopbgm]
+[locate x=800 y=480]
+[button name="button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on" ]
+[else]
+[eval exp="sf.BGM='ON'"]
+[locate x=800 y=480]
+[button name="button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off" ]
+;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[playbgm storage="title_yukidoke.ogg" click=true loop=true]
+[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+[endif]
 
 [glink target="test_event_1" text="散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test_event_2" text="散策イベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
@@ -169,4 +183,27 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [freeimage layer = 26]
 ;------タイトルへ戻る
 @jump storage="title.ks"
+[s]
+
+;----------BGM onが選択された時
+*bgm_on
+;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[playbgm storage="title_yukidoke.ogg" loop=true]
+[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
+[eval exp="sf.BGM='ON'"]
+[anim name="button_bgm_to_on" opacity=0 time=1]
+[locate x=800 y=480]
+[button name="button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off" ]
+[s]
+
+;----------BGM offが選択された時
+*bgm_off
+[stopbgm]
+[fadeoutbgm time=1000]
+;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
+[eval exp="sf.BGM='OFF'"]
+[anim name="button_bgm_to_off" opacity=0 time=1]
+[locate x=800 y=480]
+[button name="button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on" ]
 [s]
