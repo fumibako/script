@@ -237,8 +237,7 @@
 [r]
 微かに華織お兄さまの横顔を照らして、[r]
 ;背景 線香花火落ちた ただの暗闇?
-[chara_mod name="bg" storage="bg/sijyou_hanabi3.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　heniha　https://www.flickr.com/photos/heniha/'"]
+[chara_mod name="bg" storage="toumei.gif" time=1000]
 [r]
 玉火は、ポトリと落ちた。[p]
 ;メッセージ戻る？タイミングは適☆当
