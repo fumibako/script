@@ -47,7 +47,8 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「親戚の婚約者の邸宅で行われた『天覧芝居』を観にいったときから、芝居は好きなんだ」[p]
+「親戚の婚約者の邸宅で行われた『天覧芝居』を観にいったときから、
+[sp]芝居は好きなんだ」[p]
 
 [主人公目パチ1回]
 [whosay name="華織" color="olivedrab"]
@@ -241,7 +242,7 @@
 
 #
 淑女ひとりで出かけることはないデパート。[r]
-行き交う人たちは、周りをはばからず親しげに寄り添っている[p]
+行き交う人たちは、周りをはばからず親しげに寄り添っている。[p]
 
 [主人公目パチ1回]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
