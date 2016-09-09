@@ -47,7 +47,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「親戚の婚約者の邸宅で行われた『天覧芝居』を観にいったときから、
+「親戚の婚約者の邸宅で行われた『天覧芝居』を観にいったときから、[r]
 [sp]芝居は好きなんだ」[p]
 
 [主人公目パチ1回]
