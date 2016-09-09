@@ -241,7 +241,7 @@
 [主人公目閉じ]
 [四条目パチ1回]
 #
-－－はじめは、兄に連れられ訪ねた四条家。[r]
+――はじめは、兄に連れられ訪ねた四条家。[r]
 花咲く庭で、いつもひとりで居た彼と出会って、[r]
 いつしか、ここは、私にとっての憧れと夢の場所となった。[p]
 ;ピュー◎ランド？
@@ -255,8 +255,8 @@
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
-;がさがさ【SE】茂み（ガサガサ）
-[playse storage=shigemi_gasagasa.ogg loop=false ]
+;がさがさ【SE】茂み (短めガサガサッ)
+[playse storage=shigemi_gasagasa_short.ogg loop=false ]
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
