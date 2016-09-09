@@ -43,8 +43,8 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [locate x=800 y=480]
 [button name="button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off" ]
 ;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="title_yukidoke.ogg" click=true loop=true]
-[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+;[playbgm storage="title_yukidoke.ogg" click=true loop=true]
+;[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
 
 [glink target="test4_4" text="4月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
