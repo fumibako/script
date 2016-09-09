@@ -12,6 +12,7 @@
 
 ;◆[イベントシーン構築]
 [macro name="イベントシーン構築"]
+[clearfix]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 15]
 [freeimage layer = 16]
@@ -72,6 +73,7 @@
 
 ;◆[イベントシーン構築枠茶色]
 [macro name="イベントシーン構築枠茶色"]
+[clearfix]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 15]
 [freeimage layer = 16]
