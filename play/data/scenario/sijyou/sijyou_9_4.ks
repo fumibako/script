@@ -14,7 +14,6 @@
 ――お芝居見物に誘われ[r]
 [r]
 歌舞伎『大正座』を訪れることになった。[p]
-[call target=*start storage="macro_tati_sijyou.ks"]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;スクリプト担：BGM、SEの間隔をすこし長めに取りたかったので指定箇所から移動しています。違和感のある場合は再移動をお願いします
@@ -22,6 +21,7 @@
 [playbgm storage="michikusa.ogg" loop=true]
 [eval exp="f.bgm_storage='michikusa.ogg'"]
 [endif]
+[call target=*start storage="macro_tati_sijyou.ks"]
 
 [resetfont]
 [chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
