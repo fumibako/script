@@ -255,8 +255,8 @@
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
-;がさがさ【SE】茂み (短めガサガサッ)
-[playse storage=shigemi_gasagasa_short.ogg loop=false ]
+;がさがさ【SE】茂み (遠くでガサガサッ)
+[playse storage=shigemi_gasagasa_s.ogg loop=false ]
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
