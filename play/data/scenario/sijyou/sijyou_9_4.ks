@@ -56,7 +56,7 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「ここに出てくる『波ヶ浦』は実際にある地名なんだよ、[r]
-　富士がみえる美しい海岸で……」[p]
+[sp]富士がみえる美しい海岸で……」[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
