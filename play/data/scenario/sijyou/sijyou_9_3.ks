@@ -79,7 +79,7 @@
 
 ;○四条邸宅の庭
 ;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/B4nFWraU42/youkan_rose.jpg"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [主人公通常]
 ;テキスト全画面
