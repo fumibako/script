@@ -86,6 +86,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *test9_1
 [cm]
 [freeimage layer = 26]
+[stopbgm]
 @jump storage="sijyou/sijyou_9_1.ks"
 [s]
 
@@ -93,6 +94,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *test9_2
 [cm]
 [freeimage layer = 26]
+[stopbgm]
 @jump storage="sijyou/sijyou_9_2.ks"
 [s]
 
