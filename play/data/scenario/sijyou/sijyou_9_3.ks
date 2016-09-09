@@ -17,7 +17,7 @@
 [wait time=10]
 
 [whosay name="磯野" color="dimgray"]
-「お嬢さま、四条様からお手紙が届いております」[p]
+「お嬢様、四条様からお手紙が届いております」[p]
 
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
