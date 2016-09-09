@@ -260,6 +260,7 @@ if (mp.name!="") {
 [wait time=10]
 [chara_mod name="girl_te" storage="toumei.gif" time=0]
 [wait time=10]
+[eval exp="f.kaogura='on'"]
 [endmacro]
 
 ;立ち絵表示[主人公ポーズ指]
@@ -268,6 +269,7 @@ if (mp.name!="") {
 [wait time=10]
 [chara_mod name="girl_te" storage="girl/S/yubi.png" time=0]
 [wait time=10]
+[eval exp="f.kaogura='on'"]
 [endmacro]
 
 ;立ち絵表示[主人公ポーズ片手]
@@ -276,6 +278,7 @@ if (mp.name!="") {
 [wait time=10]
 [chara_mod name="girl_te" storage="girl/S/katate.png" time=0]
 [wait time=10]
+[eval exp="f.kaogura='on'"]
 [endmacro]
 
 ;立ち絵表示[主人公ポーズ両手]
@@ -284,6 +287,7 @@ if (mp.name!="") {
 [wait time=10]
 [chara_mod name="girl_te" storage="girl/S/ryoute.png" time=0]
 [wait time=10]
+[eval exp="f.kaogura='on'"]
 [endmacro]
 
 ;立ち絵表示[主人公通常]
@@ -742,6 +746,7 @@ if (mp.name!="") {
 [chara_new name="girl_te" storage="toumei.gif"]
 [chara_show left=1 top=381 layer=20 name="girl_te" time=0]
 [wait time=10]
+[eval exp="f.kaogura='off'"]
 [endmacro]
 
 

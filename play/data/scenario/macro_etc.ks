@@ -75,6 +75,7 @@
 [macro name="イベントシーン構築枠茶色"]
 [clearfix]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
+[eval exp="f.kaogura='off'"]
 [freeimage layer = 15]
 [freeimage layer = 16]
 [freeimage layer = 17]
