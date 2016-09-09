@@ -249,17 +249,18 @@
 [wait time=10]
 #
 私は、思い出の場所が変わりないかと、庭を眺めた。[p]
-;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
-[eval exp="f.haikei_credit=''"]
-;がさがさ
-
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】「五色」
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
+;がさがさ【SE】茂み（ガサガサ）
+[playse storage=shigemi_gasagasa.ogg loop=false ]
+;【背景】[洋館庭]
+[chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
+[eval exp="f.haikei_credit=''"]
+
 ;○そこはかとなく大人の雰囲気
 ;○伏線 無くてもどちらでも
 #
