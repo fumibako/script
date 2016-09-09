@@ -168,7 +168,7 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「わかった。[r]
-[sp]この事はすぐに先方に伝えよう。文奈からも手紙を送っておくといい」
+[sp]この事はすぐに先方に伝えよう。[名前]からも手紙を送っておくといい」
 [autosave]
 [p]
 
