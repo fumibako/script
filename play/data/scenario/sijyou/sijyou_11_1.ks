@@ -223,11 +223,12 @@
 [wait time=10]
 
 [四条驚き]
+;海外に住んでるのにウチってどこだろう？ってツッコミが芽生えた
 [whosay name=文矢 color="#538a8a"] 
 「話は終わったようだね。　[r]
-[sp]安心して行っておいで。　[名前]はウチに来たことにしておくよ」[p]
+[sp]安心して行っておいで。　[名前]は[ruby text=ウ]別[ruby text=チ]荘に来たことにしておくよ」[p]
 [whosay name=文矢 color="#538a8a"]
-「けど心配だから、ウチの家令をつけておく」[p]
+「けど心配だから、僕の家令をつけておく」[p]
 ;目パチの代わり
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
