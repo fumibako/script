@@ -211,7 +211,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「いえ負担ではありませんわ[r]
-振袖も優しく話して頂いて感謝しております」[p]
+[sp]優しく話して頂いて感謝しております」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
@@ -333,8 +333,8 @@
 [主人公ほほえみ]
 [主人公頬染め]
 「ええ、お会いしましょう[r]
-今日は沢山話して頂いてありがとうございました[r]
-私もとても楽しかったです」[p]
+[sp]今日は沢山話して頂いてありがとうございました[r]
+[sp]私もとても楽しかったです」[p]
 [stopbgm]
 
 ;@jump storage="event.ks" target=*event_owari
