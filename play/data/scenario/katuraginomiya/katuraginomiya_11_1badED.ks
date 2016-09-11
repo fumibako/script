@@ -20,7 +20,11 @@
 涙がとめどなく頬を伝い、[r]
 悲しみで胸がいっぱいにった[p]
 
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
 
 ;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -62,6 +66,8 @@
 私もその後誰とも結婚せず[r]
 男女平等をうたった運動に[r]
 参加するようになりました。[p]
+
+[fadeoutbgm time=3000]
 
 ;【立ち絵】主人公 目閉じ
 [主人公目閉じ]
