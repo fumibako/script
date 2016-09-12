@@ -54,7 +54,7 @@
 [手紙四条読了 fumi_number=51]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(私も四条さまのことを知りたいです)[p]
+(私も四条様のことを知りたいです)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
@@ -384,14 +384,14 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(やっぱり、まだ四条さまにとって、妹扱いなのでしょうか？)[p]
+(やっぱり、まだ四条様にとって、妹扱いなのでしょうか？)[p]
 
 [四条目パチ1回]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そうだわ。私、四条さまに言わないといけないことがありましたわ)[p]
+(そうだわ。私、四条様に言わないといけないことがありましたわ)[p]
 
 [四条目パチ1回]
 
@@ -399,12 +399,12 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(もっと四条さま、いえ、華織さまと仲を深めたい)[p]
+(もっと四条様、いえ、華織様と仲を深めたい)[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「四条さま」[p]
+「四条様」[p]
 
 [四条目パチ1回]
 
@@ -453,7 +453,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「あの……四条さま」[p]
+「あの……四条様」[p]
 
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -508,7 +508,7 @@
 
 [四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
-「なんでしたら、『華織お兄さま』でもいいですよ」[p]
+「なんでしたら、『華織お兄様』でもいいですよ」[p]
 ;○四条 意地悪にからかって
 
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -518,7 +518,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いえ、『華織さま』とだけお呼びさせてください」[p]
+「いえ、『華織様』とだけお呼びさせてください」[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -540,7 +540,7 @@
 
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい、華織さま」[p]
+「はい、華織様」[p]
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
@@ -597,7 +597,7 @@
 [主人公ポーズ指]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(？ ……華織さまのお祖母様は、華道家でいらしゃいましたから、[r]
+(？ ……華織様のお祖母様は、華道家でいらしゃいましたから、[r]
 [sp]その為でしょうか？)[p] 
 ;○過去のくだり、家のことも(手紙で追記あり)あってこの時点で主人公はあまり気にせず。 
 
@@ -682,7 +682,7 @@
 ;[主人公驚き] 嫌ではない感じの驚き顔
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織さま、意外とお力も強いのですね)[p]
+(華織様、意外とお力も強いのですね)[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -720,14 +720,14 @@
 [whosay name="華織" color="olivedrab"]
 「そうだね。でも、僕のものではないから」[p]
 #
-どうしてか、華織さまは、憂いを帯びた表情をみせた。[p]
+どうしてか、華織様は、憂いを帯びた表情をみせた。[p]
 ;[四条憂い]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織さま、どうしたのでしょうか？)[p]
+(華織様、どうしたのでしょうか？)[p]
 [stopse]
 
 
