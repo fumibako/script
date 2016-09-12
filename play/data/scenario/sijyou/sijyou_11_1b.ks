@@ -94,7 +94,7 @@
 「アンタだって大事な人がいなくなったら辛いでしょ？」[p]
 [四条目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織さまが、居なくなったら？ )[p]
+(華織様が、居なくなったら？ )[p]
 ;○主人公が説得して窮地を逃れる...もし華織がいなくなったらと考える
 [主人公困り]
 [wait time=10]
@@ -380,7 +380,7 @@
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織さま　」[p]
+「華織様　」[p]
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
 「……」[p]
