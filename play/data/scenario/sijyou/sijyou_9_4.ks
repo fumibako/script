@@ -64,7 +64,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織さま、お元気そう)[p]
+(華織様、お元気そう)[p]
 ;[太鼓SE]ドンドンドン…
 [playse storage=taiko.ogg loop=false ]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -96,7 +96,7 @@
 ;【筆者】地の文の候補でもありました。具体的すぎると本場？の歌舞伎ファンの方に怒られたり突っ込まれるので、
 ;どうしたものかと悩んだため没になってしまいました(苦）
 
-;○開演後のホールでは、奥さま方の熱狂的な交流が行われている。 (ホールのシーンは意味がないのでカット～)
+;○開演後のホールでは、奥様方の熱狂的な交流が行われている。 (ホールのシーンは意味がないのでカット～)
 ;外にでる2人
 ;[歌舞伎小屋前]
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
@@ -336,12 +336,12 @@
 ;なだと子供っぽいな
 [主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織さまは、色々とお気遣いされて、余裕があって……)[p]
+(華織様は、色々とお気遣いされて、余裕があって……)[p]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(私も華織さまに喜んでほしい)[p]
+(私も華織様に喜んでほしい)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(いつか華織さまのお役に立てるようになりたいです)[p]
+(いつか華織様のお役に立てるようになりたいです)[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -460,7 +460,7 @@
 [四条退場]
 #
 私は、少し不安な気持ちを抱えつつも
-;華織さまと別れた。
+;華織様と別れた。
 部屋へと戻ることにした。[p]
 ;¥¥¥¥¥¥¥¥イベント4おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
