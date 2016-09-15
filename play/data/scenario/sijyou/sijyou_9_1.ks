@@ -52,8 +52,6 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
-;下記は自由に追加してください。【保留】
 #
 華織お兄様に頂いたお手紙は、どうしてか素っ気ない。[r]
 私はそのことが気がかりであった。[p]
@@ -114,21 +112,54 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ、これでもう後戻りはできないわ）[p]
 
-;下記は自由に追加してください。【保留】
-;四条華織への好感度が高い場合とか？
-;期待するプレイヤーの気持ちと同調
-;（久しぶりに会う華織お兄様。 今はどの様なお姿をされてるのでしょうか？）[p]
-;恥ずかしいことも知られているので余計に緊張する主人公
-;――私のことをよく知ってくれている[l][r]
-;横目汗
-;[sp]……お転婆な頃の私のことも。[p]
-;(どうしよう。今から緊張してきたわ）[p]
-
-;共通
-（私、きちんと華織お兄様の前で淑女として振る舞えるかしら？)[p]
-
-;個別↓？
+;【保留】四条華織への好感度が高い場合　配列計算？
+;【期待するプレイヤーの気持ちと同調】
+;[if exp=""]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;↓眉：下がり眉 [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（久しぶりに会う華織お兄様。 今はどの様なお姿をされてるのでしょうか？）[p]
+#
+――あの頃は、お兄様と華織お兄様に囲われて楽しく過ごしていて……[p]
+;【プロローグ抜粋】
+#文矢
+『[名前]、僕はまだ磯野に用事があるから、先に行って華織をもてなしておいてくれるかい？』[p]
+#幼い頃の私
+『はい、わかりましたお兄様！』[p]
+;【SE】軽い足音（すぐ止まる）
+[playse storage=girl_out_run_stop.ogg loop=false ]
+#文矢
+『こら！ 廊下は走らない！』[p]
+;【恥ずかしいことも知られているので余計に緊張する主人公 片手ポーズ恥じ横目】
+;【主人公口ムッ】
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
+;【主人公眉困り】
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;【主人公頬染め　汗は一緒にできないしやりすぎなのでこちらかな】
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+;【主人公ポーズ片手】
+[主人公ポーズ片手]
+;【主人公横目】
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+("少しばかり"……お転婆でした……)
+[主人公憂い]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(どうしよう。今から緊張してきたわ)[p]
+;共通?　個別でもいい
+(私、きちんと華織お兄さまの前で淑女として振る舞えるかしら？)[p]
+;[主人公真剣]　つなげている状態でも見れなくはないようにコメント化、なくてもいいかな
 ;(と、とにかく明日の為に早く寝ないと！？)[p]
+;@jump target="*end_rute"
+;[else]
 
 ;【分岐】他攻略対象の好感度が高い場合
 ;【立ち絵】主人公：通常
@@ -152,9 +183,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （せめて、今まで以上に心を込めて別れの手紙を書こう。もしどこかでお会いすることがあっても笑顔でお話できるように）[p]
 
-
+*end_rute
 [stopbgm]
-
+;[endif]
 ;個別ルート前夜終了
 
 [eval exp="f.sijyou_au=1"]
