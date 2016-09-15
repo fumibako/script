@@ -150,10 +150,11 @@
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-("少しばかり"……お転婆でした……)
+("少しばかり"……お転婆でした……)[p]
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (どうしよう。今から緊張してきたわ)[p]
+[主人公ポーズ通常]
 ;共通?　個別でもいい
 (私、きちんと華織お兄さまの前で淑女として振る舞えるかしら？)[p]
 ;[主人公真剣]　つなげている状態でも見れなくはないようにコメント化、なくてもいいかな
