@@ -128,9 +128,8 @@
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
-//var lay1=document.getElementsByClassName("layer 1_fore");
-$(1_fore).css("filter","sepia(100%)");
-//lay1[0].style.webkitFilter = "sepia(100%)";
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
 ;【プロローグ抜粋】
 #文矢
@@ -145,7 +144,6 @@ $(1_fore).css("filter","sepia(100%)");
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
 var lay1=document.getElementsByClassName("layer 1_fore");
-//$(1_fore).css("filter","sepia(0%)");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
 ;【恥ずかしいことも知られているので余計に緊張する主人公 片手ポーズ恥じ横目】
