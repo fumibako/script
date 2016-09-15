@@ -125,6 +125,13 @@
 （久しぶりに会う華織お兄様。 今はどの様なお姿をされてるのでしょうか？）[p]
 #
 ――あの頃は、お兄様と華織お兄様に囲われて楽しく過ごしていて……[p]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+//レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
+//var lay1=document.getElementsByClassName("layer 1_fore");
+$(1_fore).css("filter","sepia(100%)");
+//lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
 ;【プロローグ抜粋】
 #文矢
 『[名前]、僕はまだ磯野に用事があるから、先に行って華織をもてなしておいてくれるかい？』[p]
@@ -134,6 +141,13 @@
 [playse storage=girl_out_run_stop.ogg loop=false ]
 #文矢
 『こら！ 廊下は走らない！』[p]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+//レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
+var lay1=document.getElementsByClassName("layer 1_fore");
+//$(1_fore).css("filter","sepia(0%)");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
 ;【恥ずかしいことも知られているので余計に緊張する主人公 片手ポーズ恥じ横目】
 ;【主人公口ムッ】
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
