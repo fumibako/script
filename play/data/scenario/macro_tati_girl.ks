@@ -102,6 +102,8 @@ if(mp.name=="文矢"){
     mp.color = "olivedrab";
 }else if(mp.name=="華織"){
     mp.color = "olivedrab";
+}else if(mp.name=="華織お兄さま"){
+    mp.color = "olivedrab";
 }else if(mp.name=="四条父"){
     mp.color = "darkolivegreen";
 }else if(mp.name=="四条母"){
