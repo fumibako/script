@@ -101,7 +101,7 @@
 「はい」[p]
 
 「お父様。私は黒田様と文通をはじめてから、お庭の植物や色々な物事が[r]
-これまでと違ったように見えるようになりました」
+[sp]これまでと違ったように見えるようになりました」
 [autosave]
 [p]
 ;【立ち絵】主人公：笑顔
@@ -119,7 +119,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。黒田様が色々な物事を興味深く語ってくださるので……[r]
-お稽古ごとにしても、もっと知りたくなって、
+[sp]お稽古ごとにしても、もっと知りたくなって、
 ;【立ち絵】主人公：ほほえみ
 楽しくなりました」[p]
 
@@ -140,7 +140,7 @@
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「そうか。では、早速見合いの準備を進めよう……[r]
-[名前]。将貴君に決めて、本当に良いのだね？」
+[sp][名前]。将貴君に決めて、本当に良いのだね？」
 [autosave]
 [p]
 
@@ -210,8 +210,22 @@
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;（そういえば、お父様は黒田様のお家のことは、何もおっしゃらなかった……）[p]
 
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[主人公目を開く]
+（黒田様……いよいよお会いできるのですね）[p]
+[主人公眉困り]
+[主人公頬染め]
+[wait time=10]
+（きちんと振る舞えるか、心配だわ。[r]
+[sp]今まで以上にお稽古を頑張ろう）[p]
+
 ;【分岐】他攻略対象の好感度が高い場合
+[if exp="f.para_sijyou_koukando > 15 || f.para_katuraginomiya_koukando > 15 || f.para_hujieda_koukando > 15 || f.para_zaizen_koukando > 15"]
 ;【立ち絵】主人公：通常
+[主人公効果消]
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -223,15 +237,19 @@
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（せっかく長い間楽しい時間を過ごさせて頂いたのに心苦しいけれど、こればっかりは仕方ないわね）[p]
+（せっかく長い間楽しい時間を過ごさせて頂いたのに心苦しいけれど
+[sp]こればっかりは仕方ないわね）[p]
 
 ;【立ち絵】主人公：通常
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（せめて、今まで以上に心を込めて別れの手紙を書こう。もしどこかでお会いすることがあっても笑顔でお話できるように）[p]
+（せめて、今まで以上に心を込めて別れの手紙を書こう。
+[sp]もしどこかでお会いすることがあっても笑顔でお話できるように）[p]
+[endif]
 
 ;個別ルート前夜終了
+
 
 [eval exp="f.kuroda_au=1"]
 @jump storage="event.ks" target=*event_owari
