@@ -50,6 +50,8 @@ if(mp.name=="文矢"){
     mp.color = "#538a8a";
 }else if(mp.name==sf.girl_namae){
     mp.color = "#cf5a7f";
+}else if(mp.name=="幼い頃の私"){
+    mp.color = "#cf5a7f";
 }else if(mp.name=="磯野"){
     mp.color = "dimgray";
 }else if(mp.name=="ばあや"){
