@@ -56,7 +56,7 @@
 華織お兄様に頂いたお手紙は、どうしてか素っ気ない。[r]
 私はそのことが気がかりであった。[p]
 ――もう一度、お会いして確かめたい。[r]
-[sp]あの時の憧れの華織お兄様のことを。[p]
+あの時の憧れの華織お兄様のことを。[p]
 一度、離れた人と再会するのは、とても勇気がいる。[p]
 ――けれども[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -114,7 +114,6 @@
 
 ;【保留】四条華織への好感度が高い場合　配列計算？
 ;【期待するプレイヤーの気持ちと同調】
-;[if exp=""]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -123,14 +122,17 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （久しぶりに会う華織お兄様。 今はどの様なお姿をされてるのでしょうか？）[p]
+[if exp="f.para_sijyou_koukando > 40"]
+;スクリプト担：↑数値は仮です。好感度がそれほど高くなくても合いそうな文章はifの外に出してみました。参考：四条がお見合い候補になる好感度=31以上
 #
-――あの頃は、お兄様と華織お兄様に囲われて楽しく過ごしていて……[p]
+――あの頃は、お兄様と華織お兄様に囲まれて楽しく過ごしていて……[p]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
+;スクリプト担：↑cssフィルター関連の記事へのリンクもありがとうございます。勉強になります
 ;【プロローグ抜粋】
 #文矢
 『[名前]、僕はまだ磯野に用事があるから、先に行って華織をもてなしておいてくれるかい？』[p]
@@ -164,6 +166,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ("少しばかり"……お転婆でした……)[p]
 [主人公憂い]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (どうしよう。今から緊張してきたわ)[p]
 [主人公ポーズ通常]
@@ -171,10 +174,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 (私、きちんと華織お兄さまの前で淑女として振る舞えるかしら？)[p]
 ;[主人公真剣]　つなげている状態でも見れなくはないようにコメント化、なくてもいいかな
 ;(と、とにかく明日の為に早く寝ないと！？)[p]
-;@jump target="*end_rute"
-;[else]
+;↑スクリプト担：可愛い感じで入れたいとも思うのですが、四条と他攻略対象とどちらも好感度が高い場合には、他の方にも手紙を送る方が自然かとも思いますので、この部分と"*end_rute"へのjumpはコメント化のままにしてみます;@jump target="*end_rute"
+
 
 ;【分岐】他攻略対象の好感度が高い場合
+[if exp="f.para_kuroda_koukando > 15 || f.para_katuraginomiya_koukando > 15 || f.para_hujieda_koukando > 15 || f.para_zaizen_koukando > 15"]
 ;【立ち絵】主人公：通常
 [主人公通常]
 [wait time=10]
@@ -194,7 +198,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（せめて、今まで以上に心を込めて別れの手紙を書こう。もしどこかでお会いすることがあっても笑顔でお話できるように）[p]
+（せめて、今まで以上に心を込めて別れの手紙を書こう。[r]
+[sp]もしどこかでお会いすることがあっても笑顔でお話できるように）[p]
+[endif]
 
 *end_rute
 [stopbgm]
