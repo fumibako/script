@@ -18,7 +18,7 @@
 [wait time=10]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「決めました。私、華織お兄様とお会いします」[p]
+「決めました。私、華織お兄さまとお会いします」[p]
 ;あとは黒田と同じ文章で
 
 [if exp="sf.BGM=='ON'"]
@@ -53,14 +53,14 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 #
-華織お兄様に頂いたお手紙は、どうしてか素っ気ない。[r]
+華織お兄さまに頂いたお手紙は、どうしてか素っ気ない。[r]
 私はそのことが気がかりであった。[p]
 ――もう一度、お会いして確かめたい。[r]
-あの時の憧れの華織お兄様のことを。[p]
+あの時の憧れの華織お兄さまのことを。[p]
 一度、離れた人と再会するのは、とても勇気がいる。[p]
 ――けれども[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(私のことをよく知ってくれているのは、やっぱり華織お兄様だと思う)[p]
+(私のことをよく知ってくれているのは、やっぱり華織お兄さまだと思う)[p]
 ;【立ち絵】主人公：決意
 [主人公目を開く]
 [wait time=10]
@@ -70,7 +70,7 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
-「はい。華織お兄様に、決めます」[p]
+「はい。華織お兄さまに、決めます」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
@@ -121,11 +121,11 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（久しぶりに会う華織お兄様。 今はどの様なお姿をされてるのでしょうか？）[p]
+（久しぶりに会う華織お兄さま。 今はどの様なお姿をされてるのでしょうか？）[p]
 [if exp="f.para_sijyou_koukando > 40"]
 ;スクリプト担：↑数値は仮です。好感度がそれほど高くなくても合いそうな文章はifの外に出してみました。参考：四条がお見合い候補になる好感度=31以上
 #
-――あの頃は、お兄様と華織お兄様に囲まれて楽しく過ごしていて……[p]
+――あの頃は、お兄さまと華織お兄さまに囲まれて楽しく過ごしていて……[p]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
@@ -137,7 +137,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 #文矢
 『[名前]、僕はまだ磯野に用事があるから、先に行って華織をもてなしておいてくれるかい？』[p]
 #幼い頃の私
-『はい、わかりましたお兄様！』[p]
+『はい、わかりましたお兄さま！』[p]
 ;【SE】軽い足音（すぐ止まる）
 [playse storage=girl_out_run_stop.ogg loop=false ]
 #文矢
@@ -165,8 +165,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ("少しばかり"……お転婆でした……)[p]
-[主人公憂い]
 [endif]
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (どうしよう。今から緊張してきたわ)[p]
 [主人公ポーズ通常]
