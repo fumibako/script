@@ -545,8 +545,8 @@ if (mp.name!="") {
 [wait time=10]
 [endmacro]
 
-;立ち絵表示[主人公目閉じ]
-[macro name="主人公目閉じ"]
+;立ち絵表示[主人公目閉]
+[macro name="主人公目閉"]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [endmacro]
