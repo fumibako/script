@@ -237,7 +237,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（せっかく長い間楽しい時間を過ごさせて頂いたのに心苦しいけれど
+（せっかく長い間楽しい時間を過ごさせて頂いたのに心苦しいけれど[r]
 [sp]こればっかりは仕方ないわね）[p]
 
 ;【立ち絵】主人公：通常
