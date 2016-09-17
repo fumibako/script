@@ -1,3 +1,5 @@
+;テスト中お借りします・・・
+[eval exp=f.para_sijyou_koukando=40] 
 ;¥¥¥¥¥¥¥¥イベント1お見合い決定 9月1週¥¥¥¥¥¥¥¥
 ;☆主人公 選択肢からお見合い相手を決定 決意する主人公 ミッドポイントのはじまり//////////////////
 ;【背景】ヒロインの部屋
@@ -9,7 +11,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
-
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -112,7 +113,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ、これでもう後戻りはできないわ）[p]
 
-;【保留】四条華織への好感度が高い場合　配列計算？
+;四条華織への好感度が高い場合
 [if exp="f.para_sijyou_koukando > 40"]
 ;スクリプト担：↑数値は仮です。好感度がそれほど高くなくても合いそうな文章はifの外に出してみました。参考：四条がお見合い候補になる好感度=31以上
 ;【期待するプレイヤーの気持ちと同調】
@@ -127,21 +128,25 @@
 #
 ――あの頃は、お兄さまと華織お兄さまに囲まれて楽しく過ごしていて……[p]
 [iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
 ;スクリプト担：↑cssフィルター関連の記事へのリンクもありがとうございます。勉強になります
 ;【プロローグ抜粋】
-#文矢
-『[名前]、僕はまだ磯野に用事があるから、先に行って華織をもてなしておいてくれるかい？』[p]
-#幼い頃の私
+[whosay name=文矢 color="#538a8a"]
+『[名前]、僕はまだ磯野に用事があるから、先に行って華織をもてなしておいてくれる[r]
+[sp]かい？』[p]
+;スマホで見切れ改行するため修正
+[whosay name="幼い頃の私" color="#cf5a7f"]
 『はい、わかりましたお兄さま！』[p]
 ;【SE】軽い足音（すぐ止まる）
 [playse storage=girl_out_run_stop.ogg loop=false ]
-#文矢
+[whosay name=文矢 color="#538a8a"]
 『こら！ 廊下は走らない！』[p]
+;情景がわかりにくい為↓追加
+[whosay name="華織お兄さま" color="olivedrab"]
+『今日も[名前]ちゃんは、元気だね』[p]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
