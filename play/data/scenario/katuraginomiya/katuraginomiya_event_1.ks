@@ -54,10 +54,7 @@
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そうかしら？　自分ではよくわからないのだけど、[r]
-[sp]お稽古の先生方も同じようにほめてくださいました」[r]
-（お手紙交わす事になりお稽古を頑張ってきたし、[r]
-[sp]少しは淑女らしくなったのかしら）[p]
+「そうかしら？　ありがとうございます」[p]
 [主人公伏目]
 [主人公眉下げ下]
 [主人公頬染め]
@@ -107,7 +104,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （異性の方からの視線を[r]
 [sp]まともに受けたことがなかったけど[r]
-[sp]胸が高鳴るものなのかしら）[p]
+[sp]こんなに胸が高鳴るものなのかしら）[p]
 
 
 ;【立ち絵】葛城宮 驚き
