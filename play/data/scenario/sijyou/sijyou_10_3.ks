@@ -216,6 +216,10 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 「華織お兄さま……？」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「また、いつか」[p]
+;歳の意味：男女の性差的意味や、歳が離れている関係上の考慮、女性としての歳になった意味ってとこの表現をなんていえばいいでしょう
+;慣用句みますね
+;他のシナリオに影響しないように鈍感的な感じへ　
+;このシナリオ上の現在時系列では理解している
 #
 その意味もわからず、[r]
 幼い頃の私は、ただ呆然と、白く消えていく華織お兄さまを[r]
@@ -227,8 +231,6 @@ var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
 #
-;あの時の憧れのままでいてほしいから、追いかけなかった。[r]
-;華織お兄さまは、優しいから、守ってくれるから、大丈夫だと思って。[p]
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -244,6 +246,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [主人公目閉じ]
 [wait time=10]
+;決意の表情を一瞬
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……」[p]
 [主人公通常]
