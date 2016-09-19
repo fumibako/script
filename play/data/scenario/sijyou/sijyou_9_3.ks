@@ -165,7 +165,7 @@
 
 [whosay name="四条母" color="#9B608B"]
 「は、はい。その様に私も計らっております。[r]
-[sp]何分、『あの事』があってから部屋からあまり出てこないもので」[p]
+[sp]何分、"あの事"があってから部屋からあまり出てこないもので」[p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -355,7 +355,6 @@
 [whosay name="四条 華織" color="olivedrab"]
 「そうだ。　新しい庭が出来たんだ、一緒に見に行こうか」[p]
 
-;△↑無くても？
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】「きずな」
@@ -511,7 +510,7 @@
 
 [四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
-「なんでしたら、『華織お兄様』でもいいですよ」[p]
+「なんでしたら、"華織お兄様" でもいいですよ」[p]
 ;○四条 意地悪にからかって
 
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -521,7 +520,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いえ、『華織様』とだけお呼びさせてください」[p]
+「いえ、 "華織様" とだけお呼びさせてください」[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
