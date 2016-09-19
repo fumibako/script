@@ -99,6 +99,7 @@
 [font color="0xFFFFCC" size=27][名字]家
 [resetfont][font color=white size=27]の婚約は[resetfont]
 [r]
+[font color=white size=27]
 誰もが予想し、望まれていた。[l][r]
 [r]
 それだけに、親戚ぐるみで園遊会が行われることとなった。[p]
