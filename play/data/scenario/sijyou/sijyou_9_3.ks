@@ -90,7 +90,7 @@
 四条家と[名字]家は家柄も近く[r]
 [font color="0xFFFFCC" size=27][名前][resetfont]
 [font color=white size=27]の兄の[resetfont]
-[font color="0xFFFFCC"]文矢[resetfont]
+[font color="0xFFFFCC" size=27]文矢[resetfont]
 [font color=white size=27]の付き合いもあり[r]
 ;不評な『』の代替案を模索
 
