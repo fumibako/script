@@ -1,10 +1,9 @@
-=============================================
-葛城宮ルート2月2週から3月４週の間に散策イベント１
-=============================================
-;【背景】主人公邸 庭の見える部屋：夜
- [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
- 
+;=============================================
+;葛城宮ルート2月2週から3月４週の間に散策イベント１
+;=============================================
+ ;背景:町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -51,7 +50,7 @@
 [sp] お会いになりましたか？」[p]
 
 ;【立ち絵】主人公通常
-[主人通常]
+[主人公通常]
 「ええ、お会いしましたけれど[r]
 [sp] どうかしましたか？」[p]
 
@@ -100,7 +99,7 @@
 [sp] まだ私は縁談を受ける気はありませんの」[p]
 
 ;【立ち絵】主人公驚
-[主人公驚]
+[主人公通常]
 「でも家格は私より時子さんの方が上ですし[r]
 [sp] 時子さんの家族の方は[r]
 [sp] 了承して下さらないんじゃ……」[p]
@@ -144,9 +143,7 @@
 [sp] ではごきげんよう」[p]
 
 【立ち絵】主人公目伏せ
-[主人公目伏柔]
-[主人公眉下げ下]
-[主人公口ほほえみ]
+[主人公ほほえみ]
 「ええごきげんよう」[r]
 （次の機会に聞けるかしら）[p]
 ;@jump storage="event.ks" target=*event_owari
