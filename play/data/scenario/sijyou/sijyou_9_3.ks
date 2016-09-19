@@ -88,10 +88,17 @@
 ――数日後、四条邸宅の庭。[l][r]
 [r]
 四条家と[名字]家は家柄も近く[r]
-[font color="0xFFFFCC"][名前][resetfont]の兄の[font color="0xFFFFCC"]文矢[resetfont]の付き合いもあり[r]
+[font color="0xFFFFCC" size=27][名前][resetfont]
+[font color=white size=27]の兄の[resetfont]
+[font color="0xFFFFCC"]文矢[resetfont]
+[font color=white size=27]の付き合いもあり[r]
 ;不評な『』の代替案を模索
 
-四条家と[名字]家の婚約は[r]い模索ｃ
+[font color="0xFFFFCC" size=27]四条家[resetfont]
+[font color=white size=27]と[resetfont]
+[font color="0xFFFFCC" size=27][名字]家
+[resetfont][font color=white size=27]の婚約は[resetfont]
+[r]
 誰もが予想し、望まれていた。[l][r]
 [r]
 それだけに、親戚ぐるみで園遊会が行われることとなった。[p]
