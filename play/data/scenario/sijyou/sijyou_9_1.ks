@@ -85,15 +85,33 @@
 「はい、分かりました」[p]
 #
 話が終わり、お父様を見送るために立ち上がる。[p]
-
+;昼バージョン
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「お休み、[名前]」[p]
-
-;【立ち絵】主人公：ほほえみ
+「[名前]」[p]
+#
+お父様は、背を向けたまま立ち止まると、私に話しかける。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「？」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「昔、身近にいた者が見合い相手になって[r]
+[sp]複雑な気持ちになったかね？」[p]
+;【立ち絵】主人公：ほほえみあ
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「おやすみなさい」[p]
+「大丈夫ですわ。お父様」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「そうか。では、また見合いの日取りが決まったら話し合おう」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい」[p]
+;夜バージョン
+;[whosay name=&sf.father_name color="DarkSlateBlue"]
+;「お休み、[名前]」[p]
+;【立ち絵】主人公：ほほえみ
+;[主人公ほほえみ]
+;[wait time=10]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;「おやすみなさい」[p]
 
 ;【SE】襖を閉じる（ゆっくり）
 [playse storage=fusuma-close.ogg loop=false ]
