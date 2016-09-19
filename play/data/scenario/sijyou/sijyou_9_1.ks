@@ -2,8 +2,8 @@
 ;[eval exp="f.para_sijyou_koukando=50"] 
 ;¥¥¥¥¥¥¥¥イベント1お見合い決定 9月1週¥¥¥¥¥¥¥¥
 ;☆主人公 選択肢からお見合い相手を決定 決意する主人公 ミッドポイントのはじまり//////////////////
-;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -151,6 +151,9 @@ var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
 ;スクリプト担：↑cssフィルター関連の記事へのリンクもありがとうございます。勉強になります
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【プロローグ抜粋】
 [whosay name=文矢 color="#538a8a"]
 『[名前]、僕はまだ磯野に用事があるから、先に行って華織をもてなして[r]
@@ -165,6 +168,8 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;情景がわかりにくい為↓追加
 [whosay name="華織お兄さま" color="olivedrab"]
 『今日も[名前]ちゃんは、元気だね』[p]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=0]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
