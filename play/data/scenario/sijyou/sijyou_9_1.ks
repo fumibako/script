@@ -85,17 +85,21 @@
 「はい、分かりました」[p]
 #
 話が終わり、お父様を見送るために立ち上がる。[p]
-;昼バージョン
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]」[p]
 #
 お父様は、背を向けたまま立ち止まると、私に話しかける。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？」[p]
+;ここは、もう少し右にひろげて伸ばしてもいいかも
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「昔、身近にいた者が見合い相手になって[r]
+「昔、身近にいた者が見合い相手になって、[名前]は、[r]
 [sp]複雑な気持ちになったかね？」[p]
-;【立ち絵】主人公：ほほえみあ
+;#
+;お父様は、私が家に入ったことで華織お兄様と一度、[ruby text="あ"]離[ruby text="の"]れ[ruby text="時の"]た事、
+;を気にしているようであった。[p]
+;【筆者コメント】↑フラグを立てておこうと思ったけど言い回しが硬い
+;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -104,15 +108,14 @@
 「そうか。では、また見合いの日取りが決まったら話し合おう」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-;夜バージョン
-;[whosay name=&sf.father_name color="DarkSlateBlue"]
-;「お休み、[名前]」[p]
+;夜背景なら、むしろこちらでも
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「お休み、[名前]」[p]
 ;【立ち絵】主人公：ほほえみ
 ;[主人公ほほえみ]
 ;[wait time=10]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「おやすみなさい」[p]
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「おやすみなさい」[p]
 ;【SE】襖を閉じる（ゆっくり）
 [playse storage=fusuma-close.ogg loop=false ]
 ;【SE】落ち着いた足音（フェードアウト）
