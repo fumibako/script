@@ -142,7 +142,8 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（久しぶりに会う華織お兄さま。 今はどの様なお姿をされてるのでしょうか？）[p]
+（久しぶりに会う華織お兄さま。[r]
+[sp]今はどの様なお姿をされてるのでしょうか？）[p]
 #
 ――あの頃は、お兄さまと華織お兄さまに囲まれて楽しく過ごしていて……[p]
 ;暗転
@@ -171,6 +172,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;情景がわかりにくい為↓追加
 [whosay name="華織お兄さま" color="olivedrab"]
 『今日も[名前]ちゃんは、元気だね』[p]
+#
 ;暗転
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [wait time=10]
