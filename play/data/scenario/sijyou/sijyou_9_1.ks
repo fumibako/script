@@ -3,7 +3,7 @@
 ;¥¥¥¥¥¥¥¥イベント1お見合い決定 9月1週¥¥¥¥¥¥¥¥
 ;☆主人公 選択肢からお見合い相手を決定 決意する主人公 ミッドポイントのはじまり//////////////////
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -56,7 +56,7 @@
 ――もう一度、お会いして確かめたい。[r]
 あの時の憧れの華織お兄さまのことを。[p]
 一度、離れた人と再会するのは、とても勇気がいる。[p]
-――けれども[p]
+――けれども。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私のことをよく知ってくれているのは、やっぱり華織お兄さまだと思う)[p]
 ;【立ち絵】主人公：決意
@@ -145,6 +145,9 @@
 （久しぶりに会う華織お兄さま。 今はどの様なお姿をされてるのでしょうか？）[p]
 #
 ――あの頃は、お兄さまと華織お兄さまに囲まれて楽しく過ごしていて……[p]
+;暗転
+[chara_mod name="bg" storage="toumei.gif" time=1500]
+[wait time=10]
 [iscript]
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
 var lay1=document.getElementsByClassName("layer 1_fore");
@@ -152,7 +155,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
 ;スクリプト担：↑cssフィルター関連の記事へのリンクもありがとうございます。勉強になります
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1500]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【プロローグ抜粋】
 [whosay name=文矢 color="#538a8a"]
@@ -168,14 +171,16 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;情景がわかりにくい為↓追加
 [whosay name="華織お兄さま" color="olivedrab"]
 『今日も[名前]ちゃんは、元気だね』[p]
-;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=0]
-[iscript]
+;暗転
+[chara_mod name="bg" storage="toumei.gif" time=1500]
+[wait time=10]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=0]
 ;【恥ずかしいことも知られているので余計に緊張する主人公 片手ポーズ恥じ横目】
 ;【主人公口ムッ】
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
