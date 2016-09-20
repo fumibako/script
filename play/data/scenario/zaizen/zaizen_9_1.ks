@@ -1,8 +1,8 @@
 ;=============================================
 ;イベント1回目【財前を選択】9月1週、
 ;=============================================
-;【背景】[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -151,14 +151,18 @@
 ;【SE】襖を閉じる（ゆっくり）
 ;【SE】落ち着いた足音（フェードアウト）
 
+;↓【仮】テストプレイヤーさんに見ていただくには、長いバージョンが良いかな？と仮に入れてみます
+[eval exp="f.para_kuroda_koukando = 20"]
+;↑【仮】ここまで。実装時には除きます
+;【分岐】他攻略対象の好感度が高い場合
+[if exp="f.para_kuroda_koukando > 15 || f.para_katuraginomiya_koukando > 15 || f.para_hujieda_koukando > 15 || f.para_sijyou_koukando > 15"]
+
 *scene4
 ;【立ち絵】主人公：ふぅ
 [主人公ふぅ閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ、これでもう後戻りはできないわ）[p]
 
-
-;【分岐】他攻略対象の好感度が高い場合
 ;【立ち絵】主人公：通常
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -183,6 +187,7 @@
 [sp] 今まで以上に心を込めて別れの手紙を書こう。[r]
 [sp] もしどこかでお会いすることがあっても[r]
 [sp] 笑顔でお話できるように）[p]
+[endif]
 
 ;個別ルート前夜終了
 
