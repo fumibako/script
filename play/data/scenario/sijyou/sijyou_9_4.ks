@@ -248,7 +248,7 @@
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(周りの方達は『お付き合い』をされてる方達なのでしょうか？ )[p]
+(周りの方達は、"お付き合い"をされてる方達なのでしょうか？ )[p]
 
 [四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
