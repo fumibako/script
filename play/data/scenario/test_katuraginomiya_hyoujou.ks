@@ -1,7 +1,7 @@
 ﻿﻿[setreplay name="opening2"]
 *opening2
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-[preload storage="data/fgimage/katuraginomiya/base_yuubin.png"]
+[preload storage="data/fgimage/katuraginomiya/base_gunpuku.png"]
 [preload storage="data/fgimage/katuraginomiya/base_sifuku.png"]
 [preload storage="data/fgimage/katuraginomiya/mayu_futuu.png"]
 [preload storage="data/fgimage/katuraginomiya/me_futuu.png"]
