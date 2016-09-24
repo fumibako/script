@@ -19,7 +19,7 @@
 
 [cm]
 ;背景変更
-[chara_mod name="bg" storage="bg/plane_mizuiro.jpg"]
+[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
 [イベントシーン構築]
 
 [葛城宮ベース軍服]
