@@ -1,5 +1,3 @@
-﻿[setreplay name="opening2"]
-*opening2
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [preload storage="data/fgimage/hujieda/base_yuubin.png"]
 [preload storage="data/fgimage/hujieda/base_sifuku.png"]
@@ -19,7 +17,7 @@
 
 [cm]
 ;背景変更
-[chara_mod name="bg" storage="bg/plane_mizuiro.jpg"]
+[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
 [イベントシーン構築]
 
 [藤枝ベース郵便屋]
