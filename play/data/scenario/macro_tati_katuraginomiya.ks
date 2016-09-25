@@ -390,6 +390,18 @@
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [endmacro]
 
+;立ち絵表示[葛城宮目を閉じる]
+[macro name="葛城宮目を閉じる"]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
+[wait time=30]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_fusi1.png" time=0]
+[wait time=30]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_fusi2.png" time=0]
+[wait time=30]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
+[wait time=10]
+[endmacro]
+
 ;立ち絵表示[葛城宮退場]
 [macro name="葛城宮退場"]
 [chara_mod name="katuraginomiya_base" storage="toumei.gif" time=0]
