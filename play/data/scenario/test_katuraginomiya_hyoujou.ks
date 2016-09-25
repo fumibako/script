@@ -56,7 +56,7 @@
 
 [glink target="face_22" text="[葛城宮伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 color=white]
 
-[glink target="face_23" text="[葛城宮目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
+[glink target="face_23" text="[葛城宮目を閉じる]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
 
 [glink target="face_24" text="[葛城宮目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 color=white]
 
@@ -230,8 +230,8 @@
 @jump target=text
 
 *face_23
-[葛城宮目閉じ]
-[eval exp="f.gra_katuraginomiya_face='[葛城宮目閉じ](アニメーション)'"]
+[葛城宮目を閉じる]
+[eval exp="f.gra_katuraginomiya_face='[葛城宮目を閉じる](アニメーション)'"]
 @jump target=text
 
 *face_24
