@@ -83,6 +83,13 @@
 「はい、分かりました」[p]
 #
 話が終わり、お父様を見送るために立ち上がる。[p]
+;↓【仮】テストプレイヤーさんに見ていただくには、一番長いバージョンが良いかな？と仮に入れてみます
+[eval exp="f.para_sijyou_koukando = 50"]
+[eval exp="f.para_kuroda_koukando = 20"]
+;↑【仮】ここまで。実装時には除きます
+;四条華織への好感度が高い場合
+[if exp="f.para_sijyou_koukando > 40"]
+;スクリプト担：↑数値は仮です。好感度がそれほど高くなくても合いそうな文章はifの外に出してみました。参考：四条がお見合い候補になる好感度=31以上
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]」[p]
 #
@@ -106,6 +113,8 @@
 「そうか。では、また見合いの日取りが決まったら話し合おう」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+[endif]
+
 ;夜背景なら、むしろこちらでも
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「お休み、[名前]」[p]
@@ -128,10 +137,6 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ、これでもう後戻りはできないわ）[p]
-;↓【仮】テストプレイヤーさんに見ていただくには、一番長いバージョンが良いかな？と仮に入れてみます
-[eval exp="f.para_sijyou_koukando = 50"]
-[eval exp="f.para_kuroda_koukando = 20"]
-;↑【仮】ここまで。実装時には除きます
 ;四条華織への好感度が高い場合
 [if exp="f.para_sijyou_koukando > 40"]
 ;スクリプト担：↑数値は仮です。好感度がそれほど高くなくても合いそうな文章はifの外に出してみました。参考：四条がお見合い候補になる好感度=31以上
