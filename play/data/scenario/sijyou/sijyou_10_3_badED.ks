@@ -20,7 +20,6 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。下がって頂戴」[p]
-#
 ;ここまで共通
 ;○文矢バット手紙
 [手紙文矢 fumi_number=]
@@ -60,7 +59,7 @@
 [主人公困り]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「もし、あの時、華織様のことを『想って』いたら、[r]
+「もし、あの時、華織様のことを"想って"いたら、[r]
 [主人公目閉じ]
 [wait time=10]
 [sp]状況は変わっていたのでしょうか？」[p]
@@ -74,9 +73,9 @@
 
 [wait time=100]
 [layopt layer=29 visible=true]
-[image layer=29 x=0 y=0 width=960 height=640 storage="bg/black.png" time=1000]
+[image layer=29 x=1 y=1 width=960 height=640 storage="bg/black.png" time=1000]
 [テキスト全画面白文字暗]
-[image layer=29 x=0 y=0 width=960 height=640 storage="toumei.gif" time=1500]
+[image layer=29 x=1 y=1 width=960 height=640 storage="toumei.gif" time=1500]
 [freeimage layer = 29]
 
 ;画面中央に
