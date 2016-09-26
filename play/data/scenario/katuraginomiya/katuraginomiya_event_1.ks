@@ -6,6 +6,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 #
 [主人公ポーズ通常]
@@ -70,7 +71,7 @@
 「いえ、数ヶ月では [r]
 [sp]まだ心がきまらなくて」[p]
 
-;【立ち絵】主人公 通常
+;【立ち][葛城宮微笑み][絵】主人公 通常
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？」[p]
@@ -82,6 +83,9 @@
 #
 ふと視線を感じて思わず振返ると[r]
 気品があり、華やかで男らしい青年と視線が絡まった。[p]
+
+[葛城宮ベース私服]
+[葛城宮通常]
 
 [主人公ポーズ片手]
 [主人公驚]
@@ -104,9 +108,10 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （異性の方からの視線を[r]
 [sp]まともに受けたことがなかったけど[r]
-[sp]こんなに胸が高鳴るものなのかしら）[p]
+[sp]こんなにも胸が高鳴るものなのかしら）[p]
 
-
+[葛城宮驚き]
+[葛城宮微笑み]
 ;【立ち絵】葛城宮 驚き
 ;【立ち絵】葛城宮 微笑み
 [主人公ポーズ通常]
@@ -118,6 +123,7 @@
 
 [主人公目パチ1回]
 ;【立ち絵】葛城宮 通常
+[葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……君は確か三宮の家の御令嬢だったな？」[p]
 
@@ -131,6 +137,7 @@
 [sp]私は町の様子を見るのが好きなのでな」[p]
 
 ;【立ち絵】葛城宮 微笑み
+[葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「私は葛城宮晴仁という。[r]
 [sp]君の名は？」[p]
@@ -150,26 +157,29 @@
 一つを得れば一つを失うそれが少し寂しい。[p]
 
 ;【立ち絵】葛城宮 照れ
+[葛城宮微笑み照れ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「[名字][名前]殿か……良き名だな」[p]
 
 [主人公目パチ1回]
 [whosay name="侍従" color=%mp.color]
 「殿下、そろそろお時間です」[p]
-
+[葛城宮効果消]
 ;[if exp="sf.BGM=='ON'"]
 ;[fadeoutbgm time=3000]
 ;[endif]
 
 ;【立ち絵】葛城宮 ため息
+[葛城宮横目]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「もうこんな時間か名残惜しい」[p]
 
 ;【立ち絵】葛城宮 微笑み
+[葛城宮笑顔]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「君にはまたお目にかかろう」[p]
 
-
+[葛城宮退場]
 ;[if exp="sf.BGM=='ON'"]
 ;[stopbgm]
 ;【BGM】筍の訪れ(町
