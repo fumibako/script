@@ -85,7 +85,7 @@
 ;【立ち絵】主人公 驚
 [主人公驚]
 「殿下は子供たちとお知り合いなのですか？」[p]
-[葛城宮通常]
+[葛城宮微笑み]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】「きずな」
@@ -108,7 +108,7 @@
 
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-[葛城宮目伏せ]
+[葛城宮目伏]
 ;【立ち絵】葛城宮 ため息
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「何かというならいつものことだ。[r]
@@ -146,7 +146,7 @@
 （手紙をいただきはじめてから、ずっと気になっていたこと）[p]
 
 ;【立ち絵】葛城宮 ため息
-[葛城宮目伏せ]
+[葛城宮目伏]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「反対されていないといえば嘘になるな。[r]
 [sp]君も知っているかもしれないが、[r]
@@ -275,7 +275,7 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-[効果消し]
+[葛城宮効果消し]
 [葛城宮真剣]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
