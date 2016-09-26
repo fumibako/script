@@ -12,7 +12,7 @@
 [イベントシーン構築]
 
 #
-数日後、兄[sp]『文矢』からの手紙がかえってきた[p]
+数日後、兄[sp]"文矢"からの手紙がかえってきた。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -48,8 +48,8 @@
 [テキスト全画面白文字暗]
 文矢の言う通り、その後、四条家と[名字]家の[r]
 結納は、たしかに執り行われた。[p]
-しかし、その2人の間には拭いきれない影を[r]
-落としていたのであった……。[p]
+しかし、その2人の間には拭いきれない影が[r]
+落とされていたのであった……。[p]
 [イベントシーン構築]
 [wait time=10]
 [主人公ポーズ通常]
@@ -63,7 +63,32 @@
 [主人公目閉じ]
 [wait time=10]
 [sp]状況は変わっていたのでしょうか？」[p]
+#
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+
 [wait time=100]
+[layopt layer=29 visible=true]
+[image layer=29 x=0 y=0 width=960 height=640 storage="bg/black.png" time=1000]
+[テキスト全画面白文字暗]
+[image layer=29 x=0 y=0 width=960 height=640 storage="toumei.gif" time=1500]
+[freeimage layer = 29]
+
+;画面中央に
+[font color=white size=35]
+[r]
+[r]
+[r]
+[r]
+[sp]　　　　　　　　完[p]
+[stopbgm]
+[chara_mod name="bg" storage="toumei.gif" time=500]
+[wait time=10]
+
 ;badED処理追記予定
 ;@jump storage="event.ks" target=*event_owari
 
