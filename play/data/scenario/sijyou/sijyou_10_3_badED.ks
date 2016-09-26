@@ -20,6 +20,7 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。下がって頂戴」[p]
+#
 ;ここまで共通
 ;○文矢バット手紙
 [手紙文矢 fumi_number=]
