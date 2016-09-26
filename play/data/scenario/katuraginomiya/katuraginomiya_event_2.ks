@@ -86,13 +86,12 @@
 [主人公驚]
 「殿下は子供たちとお知り合いなのですか？」[p]
 [葛城宮微笑み]
+
 [if exp="sf.BGM=='ON'"]
-[stopbgm]
-;【BGM】「きずな」
+;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
-
 [主人公通常]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -275,7 +274,7 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-[葛城宮効果消し]
+[葛城宮効果消]
 [葛城宮真剣]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
