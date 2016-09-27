@@ -175,6 +175,7 @@
 [sp]だが明らかになった以上[r]
 [sp]対策を立てねばならない[r]
 [sp]今後は……」[p]
+[葛城宮退場]
 [stopbgm]
 ;@jump storage="event.ks" target=*event_owari
 
