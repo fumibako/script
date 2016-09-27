@@ -6,9 +6,11 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
-
+[葛城宮ベース私服]
 ;【立ち絵】葛城宮　通常
+[葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「待たせたかな？」[p]
 
@@ -35,6 +37,7 @@
 [fadeoutbgm time=3000] 
 
 ;【立ち絵】葛城宮　通常
+[葛城宮目を閉じる]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「君にこんな無様な姿を[r]
 [sp]見せたくなかった[r]
@@ -66,6 +69,7 @@
 [endif]
 
 ;【立ち絵】葛城宮 目閉じ
+[葛城宮憂い]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ、そうだ」[p]
 
@@ -82,6 +86,7 @@
 「なぜですか？」[p]
 
 ;【立ち絵】葛城宮 真剣
+[葛城宮真剣]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……今回の件で気づいたのだ[r]
 [sp]私は夢の為に多くの事を犠牲にして叶えるだろう[r]
@@ -89,6 +94,7 @@
 [sp]君に窮屈な生活を強いるだけではないのだ」[p]
 
 ;【立ち絵】葛城宮 目閉じ
+[葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「最初は君の楚々とした佇まいを[r]
 [sp]見て好意を持った[r]
@@ -96,6 +102,7 @@
 [sp]私にとってなくてはならない人となった[p]
 [fadeoutbgm time=3000] 
 ;【立ち絵】葛城宮 真剣
+[葛城宮憂い]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「君には幸せになって欲しい[r]
 [sp]私は君を訳もなく[r]
@@ -126,6 +133,7 @@
 [endif]
 
 ;【立ち絵】葛城宮 真剣
+[葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「そのような事、[r]
 [sp]軽々しくいってはいけない[r]
@@ -154,6 +162,7 @@
 [sp]私を認めてください」[p]
 
 ;【立ち絵】葛城宮　驚き
+[葛城宮驚き]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……私は君が泣くと思っていた[r]
 [sp]君を誤解していたようだ[r]
@@ -174,6 +183,7 @@
 [sp]殿下、そろそろ時間でございます」[p]
 
 ;【立ち絵】葛城宮　通常
+[葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「[名前]殿すまないな[r]
 [sp]今は少し忙しくしている[r]
@@ -189,6 +199,7 @@
 [sp]お待ちしておりますわ」[r]
 （どんなにお手紙が遅くなっても[r]
 [sp]家族から反対されてもきっと私は殿下を信じている[p]
+[葛城宮退場]
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
