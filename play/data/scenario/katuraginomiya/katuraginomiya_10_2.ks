@@ -37,7 +37,7 @@
 [chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-[sp]内閣総辞職か！？
+[sp]内閣総辞職か！？[r]
 [sp]過去最大の海軍の汚職事件 [r]
 [r]
 [sp]海軍高官が川氏物産を経由して[r]
@@ -91,9 +91,11 @@
  与党会議室[p]
  
  [chara_mod name="bg" storage="bg / I9IhvvVdPo / kaigisitu.jpg"]
+ [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築枠茶色]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　怒り
+[葛城宮怒り]
 「どういうことですか今原中将！」[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -108,9 +110,12 @@
 [sp]貴殿は若い黙っておられるとよい」[p]
 
 ;【立ち絵】葛城宮　眉強気目閉じ
+[葛城宮目伏]
+[葛城宮口ムッ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「関係は大いにあります、各報道メディアも全て明らかにするだろう[r]
 ;【立ち絵】葛城宮　怒り
+[葛城宮怒り]
 [sp]内閣総辞職になるのは目に見えている[r]
 [sp]その前にあなたが責任を取って[r]
 [sp]全てを明らかにした上辞職して責任を取るべきだ」[p]
@@ -144,6 +149,7 @@
 [sp]お前は何にもなしに国を豊かにできるのか？」[p]
 
 ;【立ち絵】葛城宮　怒り
+[葛城宮憂い]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「っ……」[r]
 (侮蔑するような視線に言葉が詰まる[r]
@@ -156,6 +162,7 @@
 [endif]
 
 ;【立ち絵】葛城宮　目閉じ眉困り
+[葛城困り]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 （また、皇族は国民からの人気を集めやすく[r]
 党の支持率は上がりやすいという理由もある[r]
