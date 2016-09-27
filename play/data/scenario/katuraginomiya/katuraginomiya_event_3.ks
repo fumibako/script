@@ -113,6 +113,7 @@
  [テキスト全画面白文字]
 十日後[p]
 [resetfont]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 [背景_庭]
 [主人公ポーズ通常]
