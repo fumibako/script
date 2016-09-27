@@ -6,12 +6,14 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
-
+[葛城宮ベース私服]
+[葛城宮通常]
 [whosay name=磯野 color="dimgray"]
 「ああ……殿下が来られましたね[r]
 [sp]では私は呼ばれるまで暫く失礼します」[p]
@@ -28,9 +30,11 @@
 「ええ」[p]
 
 ;【立ち絵】葛城宮　微笑み
+[葛城宮笑顔大]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「[名前]殿、やっと会えたな！」[p]
 ;【立ち絵】葛城宮 真剣
+[葛城宮目伏せ照れ]
 「……抱きしめていいだろうか？」[p]
 
 ;【立ち絵】主人公 照れ
@@ -62,7 +66,8 @@
 「はい」[p]
 #
 私は殿下の背にそっと手をまわしました[p]
-
+[葛城宮効果消]
+[葛城宮目閉じ]
 ;【立ち絵】葛城宮 真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「やっと落ち着いた[r]
@@ -82,6 +87,7 @@
 [sp]ずっとお会いしたく思っていました」[p]
 
 ;【立ち絵】葛城宮 微笑み
+[葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「私もずっと君に会いたかった[r]
 [sp]左手を出してくれるか？」[p]
@@ -97,6 +103,7 @@ CGここまで
  [主人公口通常]
 「？　ええ」[p]
 
+[葛城宮微笑み照れ]
 ;【立ち絵】葛城宮照れ
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……」[p]
@@ -109,7 +116,8 @@ CGここまで
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「この指輪は？」[p]
 
-
+[葛城宮効果消し]
+[葛城宮真剣]
 ;【立ち絵】葛城宮真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「エンゲージメントリングという[r]
@@ -127,7 +135,7 @@ CGここまで
 [sp]貴方とともに喜びも悲しみも[r]
 [sp]共にすると誓います」[p]
 
-
+[葛城宮退場]
 
 ;@jump storage="event.ks" target=*event_owari
 
