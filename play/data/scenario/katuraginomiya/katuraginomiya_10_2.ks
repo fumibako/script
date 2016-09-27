@@ -5,6 +5,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 [背景_庭]
 [主人公ポーズ通常]
@@ -37,8 +38,7 @@
 [chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-[sp]内閣総辞職か！？[r]
-[sp]過去最大の海軍の汚職事件 [r]
+[sp]内閣総辞職か！？[sp]過去最大の海軍の汚職事件 [r]
 [r]
 [sp]海軍高官が川氏物産を経由して[r]
 ドイツ兵器会社から兵器を[r]
@@ -95,6 +95,7 @@
 [イベントシーン構築枠茶色]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　怒り
+[葛城宮ベース軍服]
 [葛城宮怒り]
 「どういうことですか今原中将！」[p]
 
@@ -162,7 +163,7 @@
 [endif]
 
 ;【立ち絵】葛城宮　目閉じ眉困り
-[葛城困り]
+[葛城宮困り]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 （また、皇族は国民からの人気を集めやすく[r]
 党の支持率は上がりやすいという理由もある[r]
