@@ -2,11 +2,13 @@
 ;［背景玄関］
 [chara_mod name="bg" storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
@@ -74,10 +76,12 @@
 
 
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / ekken.jpg "]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
-
+[葛城宮ベース軍服]
+[葛城宮微笑み]
 ;【立ち絵】葛城宮 微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「お久しぶりにございます陛下[r]
@@ -141,8 +145,10 @@
 [sp]強靭な精神も民を想う心も」[p]
 
 ;【立ち絵】葛城宮　驚き
+[葛城宮驚き]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「先帝に！……身に余る光栄です！　[r]
+[葛城宮真剣]
 [sp]先帝は諸外国から一目置かれる[r]
 [sp]一大国家に成した我が国の要であり[r]
 [sp]その象徴ともいえる存在でした」[p]
@@ -155,7 +161,7 @@
 「ああ、[r]
 [sp]よろしく頼む」[p]
 
-暗幕
+[chara_mod name="bg" storage="toumei.gif" time=1500]
 ;【立ち絵】主人公目閉じ
 [主人公効果消]
 [主人公目閉じ]
@@ -168,6 +174,7 @@
 ;【テキスト全画面】黒茶・和紙風背景に白文字
  [テキスト全画面白文字]
 ー10年後[p]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
@@ -189,6 +196,7 @@
 [sp]忙しくされているのは分りますが[r]
 [sp]体をいたわりませんと」[p]
 
+[葛城宮通常]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ、[r]
@@ -197,7 +205,7 @@
 ;【SE】湯のみを置く（コトリ）
 [playse storage=tya_yunomi_oku.ogg loop=false ]
 
-;【立ち絵】主人公 怒り
+;【立ち絵】主人公
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 [主人公眉下げ下]
@@ -206,6 +214,7 @@
 [sp]……この国も随分変わりました」[p]
 
 ;【立ち絵】葛城宮 通常
+[葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「だがまだ課題は多い[r]
 [sp]次から次へと問題というのは起こるものだ」[p]
@@ -218,6 +227,7 @@
 [sp]きっとこれからも大丈夫ですわ」[p]
 
 ;【立ち絵】葛城宮 ため息
+[葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ありがとう」[p]
 
@@ -232,6 +242,7 @@
 諦めなければきっと未来は開ける[p]
 
 ;【立ち絵】葛城宮 
+[葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ、そうだな[r]
 [sp]君がいてくれて良かった[r]
@@ -255,7 +266,7 @@
 #
 ーきっとこれからも[r]
 あなたとともに時を紡いでいく紡いでいく[p]
-
+[葛城宮退場]
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
