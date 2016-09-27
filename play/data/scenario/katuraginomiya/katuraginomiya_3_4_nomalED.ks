@@ -1,6 +1,6 @@
 ;9回目イベント
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / kouenn.jpg"]
-
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -116,7 +116,7 @@ CGここまで
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「この指輪は？」[p]
 
-[葛城宮効果消し]
+[葛城宮効果消]
 [葛城宮真剣]
 ;【立ち絵】葛城宮真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
