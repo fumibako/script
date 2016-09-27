@@ -1,13 +1,15 @@
 ;背景：薔薇園のまま
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
-
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
-
+[葛城宮ベース私服]
+[葛城宮憂い]
 [主人公ポーズ片手]
 [wait time=10]
 [主人公憂い]
@@ -27,6 +29,7 @@
 [endif]
 
 ;【立ち絵】葛城宮　通常
+[葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「君は私の夢を聞いてくれた[r]
 [sp]いつまでも私の心は君のものだ[r]
@@ -37,7 +40,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 「！」[p]
-
+[葛城宮退場]
 ;【立ち絵】主人公 目閉じ
 [主人公目閉じ]
 [主人公涙流_目閉用]
