@@ -6,6 +6,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 
 [主人公ポーズ通常]
@@ -31,7 +32,6 @@
 
 
 
-[テキスト全画面白文字]
  
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
@@ -79,7 +79,7 @@
 [sp]それがとても嬉しい）[p]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢さまどうされますか？」[p]
+「お嬢様どうされますか？」[p]
 
 #
 心配そうに磯野が問い掛け、[r]
@@ -158,7 +158,7 @@
 
 [主人公憂い]
 #
-２人の侍従に案内されて御所の広い敷地に入り[r]
+２人の侍従に案内されて離宮の広い敷地に入り[r]
 緊張で足が少しすくむ[r]
 ……宮中の方は私の事をどう思われいるのかしら[p]
 
@@ -179,8 +179,13 @@
 [sp]笑みが浮かべられない）[p]
 
 ;【立ち絵】葛城宮 微笑み
+[葛城宮ベース軍服]
+[葛城宮微笑み]
+[葛城宮口笑顔]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「よく来てくれた」[p]
+[葛城宮眉困り]
+[葛城宮口通常]
 ;【立ち絵】葛城宮 困り顔
 「……表情がいつもより硬い。[r]
 [sp]緊張しているのだな？」[p]
@@ -192,7 +197,9 @@
 「ええ・・・・殿下
 少し緊張しておりますわ」[p]
 
+
 ;【立ち絵】葛城宮 微笑み
+[葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「君はいつもの様に微笑んでいれば問題はない、[r]
 [sp]今回の茶会の参加者は[r]
@@ -220,6 +227,7 @@
 [sp]殿下、ありがとうございます」[p]
 
 ;【立ち絵】葛城宮 真剣
+[葛城宮真剣]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……ああ君なら大丈夫だ[r]
 [sp]いつもの笑顔が見れて、[r]
@@ -241,7 +249,7 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
+[葛城宮退場]
 
 
 ;【テキスト全画面】
@@ -249,8 +257,7 @@
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
  [テキスト全画面白文字]
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
-母である葛城宮妃殿下、次客に内親王縁子様、[r]
-三客に私、末客結子女王様[r]
+母である葛城宮妃殿下、次客に内親王縁子様、三客に私、[r]
 半東にに皇后様の侍従である桂伯爵夫人。[p]
 [r]
 [sp]今まで習って身につけた作法と流派の違いは[r]
