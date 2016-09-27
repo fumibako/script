@@ -5,6 +5,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 
 [主人公ポーズ通常]
@@ -73,8 +74,11 @@
 [主人公退場]
 
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / housoukyoku.jpg "]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;ラジオ放送局
 [イベントシーン構築枠茶色]
+[葛城宮ベース軍服]
+[葛城宮微笑み]
 ;【立ち絵】葛城宮　ほほえみ
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……」[r]
@@ -115,18 +119,19 @@
 [r]
 [sp]心から殿下のことを祈っております。[r]
  [r]
- [sp]　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
+ [sp]　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　[名字][名前][p]
+[sp]　　　　　　　　　　　　　　　　　[名字][名前][p]
 [手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-[イベントシーン構築枠茶色]
+
 [whosay name="侍従" color=%mp.color]
 「何を読まれているんですか？　[r]
 [sp]演説用のメモには見えませんが」[p]
 
+[葛城宮目閉じ]
 ;【立ち絵】葛城宮　微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「演説の内容はもう頭に入っている[r]
@@ -134,18 +139,18 @@
 （あなたのためなら強くなれる……か）[p]
 
 ;【立ち絵】葛城宮　伏目
+[葛城宮真剣]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-（薔薇園での彼女を見て[r]
-私が守りたいだけの女性[r]
-ではないと気付いた。[r]
-彼女のためにもっと私も強くなろう）[p]
+（薔薇園での彼女を見て私が守りたいだけの女性ではないと気付いた。[r]
+[sp]彼女のためにもっと私も強くなろう）[p]
 
 ;【立ち絵】葛城宮　目閉じ
+[葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 （ただ反発を繰り返し[r]
-意見を述べるのではなく、[r]
-周りに調和しながら指導力を付けたい）[p]
-
+[sp]意見を述べるのではなく、[r]
+[sp]りに調和しながら指導力を付けたい）[p]
+[葛城宮退場]
 [テキスト全画面白文字]
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / enzetu.jpg  "]
 [sp]「ラジオをお聞きの国民の皆様方[r]
@@ -203,7 +208,7 @@
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「力強い演説だったわ[r]
-殿下はもうきっと大丈夫ね」[p]
+[sp]殿下はもうきっと大丈夫ね」[p]
 
 [whosay name=磯野 color="dimgray"]
 「ええ、そうでございますね」[p]
