@@ -20,6 +20,7 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。下がって頂戴」[p]
+#
 ;ここまで共通
 ;○文矢バット手紙
 [手紙文矢 fumi_number=]
@@ -48,8 +49,8 @@
 [テキスト全画面白文字暗]
 文矢の言う通り、その後、四条家と[名字]家の[r]
 結納は、たしかに執り行われた。[p]
-しかし、その2人の間には拭いきれない影が[r]
-落とされていたのであった……。[p]
+しかし、その2人の間に拭いきれない影を[r] 
+落としていた。[p] 
 [イベントシーン構築]
 [wait time=10]
 [主人公ポーズ通常]
@@ -70,21 +71,20 @@
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
+[主人公退場]
 
-[wait time=100]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 width=960 height=640 storage="bg/black.png" time=1000]
+[chara_mod name="bg" storage="toumei.gif" time=500]
+[wait time=10]
+[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=1000]
+[wait time=10]
+
+;画面中央に「完」
 [テキスト全画面白文字暗]
-[image layer=29 x=1 y=1 width=960 height=640 storage="toumei.gif" time=1500]
-[freeimage layer = 29]
-
-;画面中央に
-[font color=white size=35]
-[r]
-[r]
-[r]
-[r]
-[sp]　　　　　　　　完[p]
+[wait time=10]
+[layopt layer=28 visible=true]
+[ptext text="完" x=460 y=300 size=35 color="white" layer=28 time=1000]
+[p]
+[freeimage layer = 28]
 [stopbgm]
 [chara_mod name="bg" storage="toumei.gif" time=500]
 [wait time=10]
