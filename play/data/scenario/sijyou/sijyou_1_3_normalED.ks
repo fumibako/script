@@ -188,7 +188,7 @@
 [iscript]
 $('.0_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
 [endscript]
-[image storage="sijyou_machi_yuki.png" layer=1]
+[image storage="sijyou_machi_yuki.png" layer=1 zindex=2]
 [イベントシーン構築枠茶色]
 #
 僕達は、賑わう町を並んで歩いていく。[p]
