@@ -54,9 +54,10 @@
 ;位置変更
 [iscript]
 //layer 1_fore
-function bright() {
+bright=function() {
 $('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
 };
+$('.1_fore').animate(bright,'slow');
 [endscript]
 澄んだ空気の空にまばゆい日が昇る。[p]
 [主人公ほほえみ]
