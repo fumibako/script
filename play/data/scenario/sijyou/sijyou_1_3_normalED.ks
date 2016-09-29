@@ -188,7 +188,7 @@
 [iscript]
 $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
 [endscript]
-[image storage="bg/sijyou_machi_yuki.png" layer=1 zindex=2]
+[image name="yuki" storage="bg/sijyou_machi_yuki.png" layer=1 zindex=2]
 [イベントシーン構築枠茶色]
 #
 僕達は、賑わう町を並んで歩いていく。[p]
@@ -229,7 +229,9 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 
 [iscript]
 $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
+//$('.yuki').remove();
 [endscript]
+[free layer=1 name="yuki"]
 ;¥¥¥¥¥¥¥¥イベント7おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
