@@ -229,9 +229,8 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 
 [iscript]
 $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
-//$('.yuki').remove();
+$('.yuki').remove();
 [endscript]
-[free layer=1 name="yuki"]
 ;¥¥¥¥¥¥¥¥イベント7おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
