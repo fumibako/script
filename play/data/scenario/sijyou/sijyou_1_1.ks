@@ -53,7 +53,7 @@
 [wait time=10]
 [iscript]
 //layer 1_fore
-$(.1_fore).css({'filter' : 'brightness(1.5)','-webkit-filter' : 'brightness(1.5)','-moz-filter' : 'brightness(1.5)','-ms-filter' : 'brightness(1.5)'});
+$('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
 [endscript]
 澄んだ空気の空にまばゆい日が昇る。[p]
 [主人公ほほえみ]
