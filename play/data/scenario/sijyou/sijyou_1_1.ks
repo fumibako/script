@@ -45,20 +45,18 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　四条華織[p]
 [手紙四条読了 fumi_number=]
-
+;位置変更
+[iscript]
+//layer 1_fore
+//bright=function(){
+$('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
+//};
+[endscript]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 #
 [wait time=10]
-;位置変更
-[iscript]
-//layer 1_fore
-bright=function() {
-$('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
-};
-$('.1_fore').animate(bright,'slow');
-[endscript]
 澄んだ空気の空にまばゆい日が昇る。[p]
 [主人公ほほえみ]
 [wait time=10]
