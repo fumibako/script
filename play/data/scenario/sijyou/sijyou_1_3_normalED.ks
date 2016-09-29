@@ -3,10 +3,6 @@
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[iscript]
-$('.0_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
-[endscript]
-[image storage="sijyou_machi_yuki.png" layer=1]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -189,6 +185,10 @@ $('.0_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 #
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[iscript]
+$('.0_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
+[endscript]
+[image storage="sijyou_machi_yuki.png" layer=1]
 [イベントシーン構築枠茶色]
 #
 僕達は、賑わう町を並んで歩いていく。[p]
