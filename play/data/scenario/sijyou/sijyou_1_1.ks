@@ -51,9 +51,12 @@
 [主人公通常]
 #
 [wait time=10]
+;位置変更
 [iscript]
 //layer 1_fore
+function bright() {
 $('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
+};
 [endscript]
 澄んだ空気の空にまばゆい日が昇る。[p]
 [主人公ほほえみ]
@@ -62,6 +65,10 @@ $('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)',
 新しい門出について文をしたためた。[p]
 [wait time=100]
 [主人公退場]
+[iscript]
+//layer 1_fore
+$('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
+[endscript]
 
 
 
