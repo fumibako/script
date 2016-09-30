@@ -278,9 +278,8 @@
 #質屋
 「その刀は世襲財産ですね。[r]
 [sp]差し押さえできないので他のものを回収します」[p]
-;【SE】茶器に触れる、又は乾杯（大きめにカチャッ）　茶器とか回収？
-;[playse storage=tya_katya.ogg loop=false ]
-;物を置くＳＥ
+;【SE】箱を閉めたり置く(パタン)
+[playse storage=box_close_oku.ogg loop=false ]
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
