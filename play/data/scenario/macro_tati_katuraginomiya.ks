@@ -183,11 +183,11 @@
 
 ;立ち絵表示[葛城宮怒り]
 [macro name="葛城宮怒り"]
-[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_tuyoki.png" time=0]
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_okori.png" time=0]
 [wait time=10]
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_ake.png" time=0]
 [wait time=10]
-[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_ooake.png" time=0]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_okori.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -226,6 +226,12 @@
 ;立ち絵表示[葛城宮眉強気]
 [macro name="葛城宮眉強気"]
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_tuyoki.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[葛城宮眉怒り]
+[macro name="葛城宮眉怒り"]
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_okori.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -274,6 +280,12 @@
 ;立ち絵表示[葛城宮口ムッ]
 [macro name="葛城宮口ムッ"]
 [chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_mu.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[葛城宮口怒り]
+[macro name="葛城宮口怒り"]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_okori.png" time=0]
 [wait time=10]
 [endmacro]
 

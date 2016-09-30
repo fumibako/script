@@ -1,3 +1,5 @@
+﻿﻿[setreplay name="opening2"]
+*opening2
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [preload storage="data/fgimage/katuraginomiya/base_gunpuku.png"]
 [preload storage="data/fgimage/katuraginomiya/base_sifuku.png"]
@@ -43,12 +45,12 @@
 [glink target="face_09" text="[葛城宮笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 color=white]
 [glink target="face_10" text="[葛城宮笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 color=white]
 [glink target="face_08" text="[葛城宮微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 color=white]
-[glink target="face_03" text="[葛城宮驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 color=white]
-[glink target="face_05" text="[葛城宮ため息]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 color=white]
+[glink target="face_05" text="[葛城宮困り微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 color=white]
+[glink target="face_03" text="[葛城宮驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 color=white]
 [glink target="face_11" text="[葛城宮憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 color=white]
 [glink target="face_04" text="[葛城宮困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 color=white]
-[glink target="face_12" text="[葛城宮真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 color=white]
-[glink target="face_02" text="[葛城宮怒り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 color=white]
+[glink target="face_02" text="[葛城宮伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 color=white]
+[glink target="face_12" text="[葛城宮真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 color=white]
 [glink target="face_06" text="[葛城宮目伏せ照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 color=white]
 [glink target="face_07" text="[葛城宮微笑み照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 color=white]
 
@@ -56,7 +58,7 @@
 
 [glink target="face_22" text="[葛城宮伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 color=white]
 
-[glink target="face_23" text="[葛城宮目を閉じる]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
+[glink target="face_23" text="[葛城宮目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
 
 [glink target="face_24" text="[葛城宮目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 color=white]
 
@@ -72,7 +74,7 @@
 [glink target="mayu_03" text="[葛城宮眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
 [glink target="mayu_04" text="[葛城宮眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 [glink target="mayu_06" text="[葛城宮眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-;[glink target="mayu_07" text="[葛城宮眉平行]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink target="mayu_07" text="[葛城宮眉怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 ;[glink target="mayu_05" text="[葛城宮眉通常下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
 ;[glink target="mayu_08" text="[葛城宮眉下げ下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 [endif]
@@ -91,13 +93,12 @@
 [if exp="f.gra_katuraginomiya_part=='kuti'"]
 [glink target="kuti_01" text="[葛城宮口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
 [glink target="kuti_02" text="[葛城宮口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="kuti_07" text="[葛城宮口大開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="kuti_03" text="[葛城宮口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="kuti_04" text="[葛城宮口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="kuti_05" text="[葛城宮口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="kuti_06" text="[葛城宮口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-[glink target="kuti_09" text="[葛城宮口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
-;[glink target="kuti_07" text="[葛城宮口大開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
+[glink target="kuti_03" text="[葛城宮口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+[glink target="kuti_04" text="[葛城宮口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink target="kuti_05" text="[葛城宮口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+[glink target="kuti_06" text="[葛城宮口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink target="kuti_09" text="[葛城宮口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink target="kuti_07" text="[葛城宮口怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
 ;[glink target="kuti_06" text="[葛城宮口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
@@ -165,8 +166,8 @@
 @jump target=text
 
 *face_02
-[葛城宮怒り]
-[eval exp="f.gra_katuraginomiya_face='[葛城宮怒り]'"]
+[葛城宮伏目]
+[eval exp="f.gra_katuraginomiya_face='[葛城宮伏目]'"]
 @jump target=text
 
 *face_03
@@ -180,8 +181,8 @@
 @jump target=text
 
 *face_05
-[葛城宮ため息]
-[eval exp="f.gra_katuraginomiya_face='[葛城宮ため息]'"]
+[葛城宮困り微笑み]
+[eval exp="f.gra_katuraginomiya_face='[葛城宮困り微笑み]'"]
 @jump target=text
 
 *face_06
@@ -230,8 +231,8 @@
 @jump target=text
 
 *face_23
-[葛城宮目を閉じる]
-[eval exp="f.gra_katuraginomiya_face='[葛城宮目を閉じる](アニメーション)'"]
+[葛城宮目閉じ]
+[eval exp="f.gra_katuraginomiya_face='[葛城宮目閉じ](アニメーション)'"]
 @jump target=text
 
 *face_24
@@ -272,8 +273,8 @@
 @jump target=text
 
 *mayu_07
-[葛城宮眉平行]
-[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉平行]'"]
+[葛城宮眉怒り]
+[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉怒り]'"]
 @jump target=text
 
 *mayu_08
@@ -354,8 +355,8 @@
 @jump target=text
 
 *kuti_07
-[葛城宮口大開]
-[eval exp="f.gra_katuraginomiya_face='口：[葛城宮口大開]'"]
+[葛城宮口怒り]
+[eval exp="f.gra_katuraginomiya_face='口：[葛城宮口怒り]'"]
 @jump target=text
 
 *kuti_08
