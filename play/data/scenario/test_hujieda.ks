@@ -65,10 +65,11 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="test2_3" text="2月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="sansaku1" text="散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
 
-[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=450 color=white]
-[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
+[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 [s]
 
 
@@ -187,6 +188,11 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 @jump storage="hujieda/hujieda_3_4_goodED.ks"
 [s]
 
+*sansaku1
+[cm]
+[freeimage layer = 26]
+@jump storage="hujieda/hujieda_sansaku1.ks"
+[s]
 
 *test_fumi
 [cm]
