@@ -157,11 +157,11 @@ if(mp.name=="文矢"){
 }else if(mp.name=="郵便屋"){
     mp.color = "#8280ff";
 }else if(mp.name=="藤枝　晶子"){
-    mp.color = "#cd90ef";
+    mp.color = "#ad70cf";
 }else if(mp.name=="藤枝 晶子"){
-    mp.color = "#cda0ef";
+    mp.color = "#ad70cf";
 }else if(mp.name=="藤枝晶子"){
-    mp.color = "#cd90ef";
+    mp.color = "#ad70cf";
 }else if(mp.name=="三宮　時子"){
     mp.name = "<ruby><rb>三宮</rb><rt>さんのみや</rt></ruby>　<ruby><rb>時子</rb><rt>ときこ</rt></ruby>";
     sf.message_name_y=400;
