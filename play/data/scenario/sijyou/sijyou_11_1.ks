@@ -267,6 +267,8 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 [wait time=10]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+
 『[華衣]の婚約者の生家前』[p]
 
 [主人公ポーズ通常]
@@ -275,7 +277,7 @@
 [wait time=10]
 #  
 ;ここで二十に名前が表示されるようなので消したりウェイトしてみる
-#質屋
+[whosay name="質屋"]
 「その刀は世襲財産ですね。[r]
 [sp]差し押さえできないので他のものを回収します」[p]
 ;【SE】箱を閉めたり置く(パタン)
@@ -310,6 +312,8 @@
 
 ;[暗点]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
@@ -415,6 +419,7 @@
 ;[暗点]
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 
 ;【登場】四条
 ;[四条ベース着物]
@@ -455,6 +460,8 @@
 ;場面転換
 ;[暗点]
 [chara_mod name="bg" storage="toumei.gif"]
+[eval exp="f.haikei_credit=''"]
+
 #
 ・・・・・・
 [wait time=1000]
@@ -462,6 +469,7 @@
 
 ;[寂れた邸宅]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [er]
 ;【登場】四条
 ;[四条ベース着物]
@@ -522,6 +530,7 @@
 
 ;夕空
 [chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
+[eval exp="f.haikei_credit=''"]
 #
 ;ナレーター
 荒れ果てた地の槇の葉に、霧が立ちのぼっていく。[p]
