@@ -1,6 +1,7 @@
 ;イベント3回目
 ;一定の淑女度、葛城宮一定の好感度
 [背景_庭]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -12,7 +13,6 @@
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
-
 
 #
 皇后様のお印入りの簡単な[r]
@@ -151,8 +151,8 @@
 「いつもの調子でされば心配はございません。[r]
 [sp]平常心ですよお嬢様」[p]
 
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / gosyo.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/gosyo.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
  
 ;【SE】足音3人石畳（フェードインアウト）
 [playse storage=asioto_isidatami_3nin.ogg loop=false ]
@@ -163,9 +163,14 @@
 緊張で足が少しすくむ[r]
 ……宮中の方は私の事をどう思われいるのかしら[p]
 
+[chara_mod name="bg" storage="toumei.gif" time=1500]
+[eval exp="f.haikei_credit=''"]
 #侍従
 「[名字]様に事前にお会いしたいとのことで[r]
 こちらに晴仁親王様がいらっしゃいます」[p]
+
+[chara_mod name="bg" storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=1500]
+[eval exp="f.haikei_credit=''"]
 
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
@@ -255,8 +260,8 @@
 
 ;【テキスト全画面】
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / tyasitu.jpg "]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
- [テキスト全画面白文字]
+[eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo'"]
+[テキスト全画面白文字無背景]
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
 母である葛城宮妃殿下、次客に内親王縁子様、三客に私、[r]
 半東にに皇后様の侍従である桂伯爵夫人。[p]
@@ -280,8 +285,8 @@
 そして茶事が終わり追って沙汰を報せると伝えられる。[p]
 [resetfont]
 
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / gosyo.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg /B4nFWraU42/ gosyo.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 
 [イベントシーン構築]
 [主人公ポーズ通常]
