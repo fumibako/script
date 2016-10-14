@@ -172,6 +172,7 @@
 [link target="*common"]【２】静かに話を聞いた。(スキップ)[endlink]
 [s]
 *華衣について
+[er]
 【１】[華衣]について尋ねた。[p]
 ;全画面
 ;【テキスト全画面】黒茶・和紙風背景(暗)に白文字
@@ -198,7 +199,7 @@
 ;設定からほしい説明を入れてください　季節の手紙にあり。
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
-;[chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="toumei.gif"]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目閉じ]
