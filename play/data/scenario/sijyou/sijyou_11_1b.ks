@@ -9,16 +9,17 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[イベントシーン構築]
+;[イベントシーン構築]
 ;ないとキャラが消せないと怒られるので
-
+;スクリプト担：こちらの環境ではエラーが出なかったので、一旦コメントアウトしてみています
 [テキスト全画面白文字]
 外に出て車夫をみつけると、[華衣]がいると思われる[r]
 『波ケ浦』へと向かった。[p]
 
 ;場面転換
-;【波ヶ浦】
+;【波ヶ浦】荒波
 [chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
@@ -58,7 +59,9 @@
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
 [endif]
-
+;【波ヶ浦】夫婦岩：BGMに合わせ落ち着いた感じの背景に変更してみています
+[chara_mod name="bg" storage="bg/sijyou_namigaura.jpg" time=1000]
+[eval exp="f.haikei_credit=''"]
 
 [whosay name="華衣" color=%mp.color]
 「あの日の『幸せ』は、もう……どこにもない」[p]
@@ -133,7 +136,6 @@
 「届かなかっただけで、はっきりとここに残っているんです」[p]
 
 [fadeoutbgm time=3000]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[華衣]さんの『大事な人の手紙』を見つけてきました」[p]
 ;手渡す
@@ -297,9 +299,15 @@
 ;○回想シーン
 ;○婚約者さんが四条に妹の好きな花は何？ときいてくる。
 ;[四条家玄関ホール]
-
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(50%)";
+[endscript]
+;↑(◆B4nFWraU42さん作)回想シーン用セピア化スクリプトを使用させていただきました。ありがとうございます
+;sepia(100%)だと四条邸壁や空の青さが飛んでしまうため50%に。さらに調整入れるかもです
 [イベントシーン構築枠茶色]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=100]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 [whosay name="華織" color="olivedrab"]
 『急にどうしたのですか？ [華衣]の好きな花なんてきいて』[p]
 [whosay name="華織" color="olivedrab"]
@@ -357,6 +365,12 @@
 [whosay name="華衣" color=%mp.color]
 「アンタが言わなければ、こんなことには！！　」[p]
 ;結果、妹に恨まれてしまったんだろうなぁとプレイヤーが想像する形
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
+;↑(◆B4nFWraU42さん作)回想シーン用セピア化スクリプト：セピア終了
 
 ;回想シーンおわり
 ;花園もどる
