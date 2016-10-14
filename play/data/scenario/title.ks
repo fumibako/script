@@ -233,7 +233,7 @@ if(e.keyCode === 39 || e.keyCode === 32) {
 *noload
 [position layer=message0 width=960 height=500 top=640 left=960 page=fore opacity=0]
 [showload]
-
+;loadをキャンセル×したときのジャンプ先があるといいと思います
 [s]
 
 ;----------CGモードが選択された時
