@@ -176,8 +176,6 @@ if(e.keyCode === 39 || e.keyCode === 32) {
 [endscript]
 
 
-
-
 [s]
 
 ;-------ボタンが押されたときの処理
@@ -234,6 +232,8 @@ if(e.keyCode === 39 || e.keyCode === 32) {
 [position layer=message0 width=960 height=500 top=640 left=960 page=fore opacity=0]
 [showload]
 ;loadをキャンセル×したときのジャンプ先があるといいと思います
+;ありがとうございます！ システム面まで見てくださって心強いです
+@jump target=*title
 [s]
 
 ;----------CGモードが選択された時
