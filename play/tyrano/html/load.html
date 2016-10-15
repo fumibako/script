@@ -1,6 +1,6 @@
 <!--↓以下はスクロール対策用に追記-->
 <style>
-.save_list {
+.save_gamen {
 - webkit- overflow - scrolling: touch;
 scrolling: touch;
 overflow-scrolling:touch;
@@ -21,7 +21,7 @@ background:#435295;
 <!--セーブ件数は50件に変更済です。そしてセーブロード画面にもスクロール機能をつけてみたいのですが、すぐには難しいようです。
 もしよろしければ、試みていただけるとありがたいです。余裕ができてから自分でも再トライ予定です(スクリプト担)-->
 
-<div>	
+<div class='save_gamen' style="overflow-y:scroll;">	
 	<ul class='save_list'>
 		{{for array_save}}
 			<li class='save_display_area save_list_item' data-num='{{:num}}'>
