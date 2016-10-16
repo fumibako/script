@@ -2,21 +2,22 @@
 <style>
 .save_gamen {
 height:640px;
+/*高さを指定しないと領域オーバーか認識しない為指定*/
 - webkit- overflow - scrolling: touch;
 scrolling: touch;
 overflow-scrolling:touch;
 }
 </style>
 <style>
-/* スクロールバーのデザインをつけることができます。ただしwebkitブラウザのみです。他ブラウザはjqueryプラグインで
+/* スクロールバーのデザインをつけることができます。ただしwebkitブラウザのみです。他ブラウザはjqueryプラグインで*/
 ::-webkit-scrollbar{
 width:5px;
-background:#9aadfc;
+background:#f09199;
 	}
 ::-webkit-scrollbar-thumb{
-background:#435295;
+background:#ee827c;
 	}
-*/
+/*スマートフォンですとスクロールバーの領域を表示しないと難しい*/
 </style>
 <!--↑ここまでスクロール対策用に追記-->
 <!--セーブ件数は50件に変更済です。そしてセーブロード画面にもスクロール機能をつけてみたいのですが、すぐには難しいようです。
