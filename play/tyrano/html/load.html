@@ -11,13 +11,13 @@ overflow-scrolling:touch;
 <style>
 /* スクロールバーのデザインをつけることができます。ただしwebkitブラウザのみです。他ブラウザはjqueryプラグインで*/
 ::-webkit-scrollbar{
-width:5px;
+width:20px;
 background:#f09199;
 	}
 ::-webkit-scrollbar-thumb{
 background:#ee827c;
 	}
-/*スマートフォンですとスクロールバーの領域を表示しないと難しい*/
+/*スマートフォンですとスクロールバーの領域を表示しないと難しい　セーブリストをクリックしてしまう*/
 </style>
 <!--↑ここまでスクロール対策用に追記-->
 <!--セーブ件数は50件に変更済です。そしてセーブロード画面にもスクロール機能をつけてみたいのですが、すぐには難しいようです。
@@ -46,12 +46,4 @@ background:#ee827c;
 	<img src='tyrano/images/kag/{{:novel("file_load_bg")}}' style='z-index:-1;left:0;top:0;width:100%;height:100%;position:absolute;' />
 
 </div>
-<script>
-$(function() {
-  $(".save_gamen").on('click touchstart', function () {
-    $('html,body').animate({ scrollTop: 0 }, 'swing');
-      return false;
-    });
-});	
-	
-</script>
+
