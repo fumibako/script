@@ -1,6 +1,6 @@
 <!--↓以下はスクロール対策用に追記-->
 <style>
-.save_gamen {
+.save_list {
 height:100%;
 - webkit- overflow - scrolling: touch;
 scrolling: touch;
@@ -47,7 +47,7 @@ background:#435295;
 </div>
 <script>
 $(function() {
-  $(".save_gamen").on('click touchstart', function () {
+  $(".save_list").on('click touchstart', function () {
     $('html,body').animate({ scrollTop: 0 }, 'swing');
       return false;
     });
