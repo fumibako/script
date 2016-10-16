@@ -19,8 +19,6 @@ background:#ee827c;
 	}
 /*スマートフォンですとスクロールバーの領域を表示しないと難しい　セーブリストをクリックしてしまう*/
 </style>
-<script src="jquery.nicescroll.min.js"></script>
-
 <!--↑ここまでスクロール対策用に追記-->
 <!--セーブ件数は50件に変更済です。そしてセーブロード画面にもスクロール機能をつけてみたいのですが、すぐには難しいようです。
 もしよろしければ、試みていただけるとありがたいです。余裕ができてから自分でも再トライ予定です(スクリプト担)-->
@@ -48,10 +46,3 @@ background:#ee827c;
 	<img src='tyrano/images/kag/{{:novel("file_load_bg")}}' style='z-index:-1;left:0;top:0;width:100%;height:100%;position:absolute;' />
 
 </div>
-<script>
-$(document).ready(
-  function() {  
-    $(".save_gamen").niceScroll();
-  }
-);
-</script>
