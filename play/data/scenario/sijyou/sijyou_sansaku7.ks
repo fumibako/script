@@ -111,7 +111,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「で、ですが」[p]
 [whosay name="華織" color="olivedrab"]
-「もう、気にしなくていいと思うよ。　行こう！」 [p]
+「もう、気にしなくていいと思いますよ。　行きましょう！」 [p]
 ;手をつないで　(昔みたいに)
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
