@@ -140,6 +140,12 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 @jump storage="sijyou/sijyou_11_1.ks"
 [s]
 
+*test11_1_kai
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_11_1_kai.ks" target=*start
+[s]
+
 *test11_1b
 [cm]
 [freeimage layer = 26]
