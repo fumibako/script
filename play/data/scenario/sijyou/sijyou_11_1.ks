@@ -168,46 +168,41 @@
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公目閉じ]
 ;選択肢
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
 [link target="*華衣について"]【１】[華衣]について尋ねた。[endlink][r]
-[link target="*common"]【２】静かに話を聞いた。(スキップ)[endlink]
+[r][r][r]
+[link target="*skp_cmon"]【２】静かに話を聞いた。(スキップ)[endlink]
 [s]
+;共通はラベルcommonへ　どこに飛ぶかわかるように一部はここに書く
 *華衣について
+[resetfont]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
 [er]
 【１】[華衣]について尋ねた。[p]
-;全画面
-;【テキスト全画面】黒茶・和紙風背景(暗)に白文字
-[テキスト全画面白文字暗]
-四条家は、長男 一華 、次男の華織、三男の華衣、[r]
-四女 美華の四兄弟。[r]
-[r]
-財政に優れた長男の一華、華道に才を見出された次男の華織の下、[r]
-末弟の[華衣]は、兄達に比べてしまえば……であるが、抜きん出た才能も開花しなかった。[p]
-;coment このシーンは町へのシーンで語られる
-そうして、あまり将来に期待されず、華衣は乳母や母親に甘やかされ、乳母日傘で育つ。[p]
-結果、彼は、じゃじゃ馬のような性格となってしまった。[p]
-四条華衣の将来を憂いた祖父は、早いところ落ち着いてほしいと考え、若干早めの見合い話を持ってくることにした。[r]
-[r]
-急遽、見合い話を収集したのもあって、良縁と呼べる子女は集まらなかったが、過去それなりの高位を得た家柄を呼ぶことができた。[r]
-;急きょ説明を要求されて困惑よ
-[r]
-そして、その中から華衣が気に入ったのが、遠縁の公家の子女であった。[p]
-;このシーンは後々回想シーンがある
-祖父からしては華衣が選んだ婚約者は「お情けで決めた相手」であり「片田舎」で貧乏の相手だった。[r]
-候補の中には、もっと条件の良い子女がいたが、彼女との手紙のやり取りや、彼のじゃじゃ馬らしい逢引を重ねて気に入ってしまったのだ。[p]
-そんな中、とある事件が起きる。[r]
-その事件によって華衣の婚約者は亡くなり、華衣と華織の間に亀裂が生じてしまったのだった。[p]
-;設定からほしい説明を入れてください　季節の手紙にあり。
-[call target=*start storage="macro_tati_sijyou.ks"]
-[イベントシーン構築]
+;別ファイルにジャンプ
+@jump storage="sijyou_11_1_kai.ks"target=*first
+
+
+*skp_cmon
+[cm]
+[resetfont]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目閉じ]
 [wait time=10]
-[cm]
-@jump target=*common
+[current layer="message0"]
 【２】静かに話を聞いた。[p]
-*common
 #
 ・・・・・・[p]
 ;[料亭]
@@ -223,13 +218,13 @@
 「それで、[華衣]様は[r]
 [sp]まだ帰って来られてないのですね」[p]
 ;様？？さん？？　いきなりサンはないかな
-
 [四条困り]
 [whosay name="華織" color="olivedrab"]
 「そうなんだ」[p]
+;共通
+*common
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[華衣]様のご婚約様は、何か残していらっしゃらないでしょうか？」[p]
-
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
 「その人に頼まれて世話をしてる花なら」[p]
