@@ -208,8 +208,9 @@
 「いえいえ！　こちらこそ、 お世話になっています」 [p]
 
 [whosay name="調香店主" color=%mp.color]
-「なんたって、華道の名士の”四条綾花様”に店内に華を添えて頂いているおかげで、[r]
-[sp]こんな偏屈な店でも、閑古鳥が鳴くこともなく、素敵なお客様達が来て頂けるのですから！」[p]
+「なんたって、華道の名士の”四条綾花様”に店内に華を添えて[r]
+[sp]頂いているおかげで、こんな偏屈な店でも、閑古鳥が鳴くこともなく、[r]
+[sp]素敵なお客様達が来て頂けるのですから！」[p]
 ;ふたりを見てお世辞をいう店主　まぁまぁ儲かってはいるようだ
 [whosay name="華織" color="olivedrab"]
 「ふふ、お元気そうで何よりです。[r]
@@ -266,6 +267,10 @@
 
 *kag
 [resetfont]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[cm]
 ;セリフは適当 もっとお上品にしてください
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （恥ずかしい……けれど、もう気にしなくても……いいかしら？）[p]
@@ -285,6 +290,10 @@
 @jump target=*common
 *not_kag
 [resetfont]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[cm]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わ、私は、こちらの香りで大丈夫です！」 [p]
 
@@ -337,6 +346,10 @@
 
 *noto_tukete
 [resetfont]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[cm]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　私、自分で出来ますので！」[p]
 
@@ -353,7 +366,6 @@
 （そういえば……華織様との香りが混ざっても、いい香りだわ）[p]
 ;うるさいかも↓
 [whosay name="調香店主" color=%mp.color]
-
 「香水というものは、一歩間違えると嫌味な匂いになってしまいますからね[r]
 特にまだ海外製品が多いので体にあっているものが少ないんです]
 [whosay name="華織" color="olivedrab"]
@@ -361,14 +373,13 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」 [p]
 
-転
+;転
 ;仲良くしていると 調香店の店主は四条祖母、綾花と祖父、源次郎の若いころの思い出を語る
 [whosay name="調香店主" color=%mp.color]
 「綾花様が気にされていたとおり、本当に仲がよろしいのですね」 [p]
 [whosay name="華織" color="olivedrab"]
 「祖母は、なにかとおしゃべりな人で……また何か話していましたか？」[p]
 [whosay name="調香店主" color=%mp.color]
-
 「お二人を見ていると、昔の自分たちを思い出すとおっしゃっていましたよ」[p]
 ;困り笑顔
 [whosay name="華織" color="olivedrab"]
@@ -379,7 +390,6 @@
 （華織様のお祖母様の綾花様は、明るい方なのですね……）  [p]
 [whosay name="調香店主" color=%mp.color]
 「いえ、私もそう思いますよ！　今日お二人にお会いして、しみじみと思いましたよ」[p]
-
 [whosay name="調香店主" color=%mp.color]
 「綾花様は、私が店を始めだした時からのお客様でね、[r]
 [sp]華道の修業も兼ねてですが、この店の窓際に花を活けてもらっていたんです」[p]
@@ -391,7 +401,6 @@
 「その"浮かない顔をした"お客様は、 今でいう、華織様のお祖父様、四条源次郎様でした」
 調香店の主は、遠い目をして過去を振り返る[p]
 [whosay name="調香店主" color=%mp.color]
-
 「源次郎様は四条家のひとり息子であらされましたが、色々と苦労をされていた様子でしたね。[r]
 [sp]ええ、彼は努力家ではありましたが、どうも語学にはからっきしダメなようで、[r]
 [sp]貿易必須の鉱山業で、源次郎様は、お父様に怒られていたそうです」[p]
@@ -405,7 +414,6 @@
 [whosay name="調香店主" color=%mp.color]
 「おっと、話がそれてしまいましたね。　その浮かない源次郎様が、なんだっていいますとね」[p]
 ;そんなとき、店の前を通りがかった源次郎は、従妹の綾花と偶然再会し、花で励まされたという
-
 [whosay name="調香店主" color=%mp.color]
 「　『この花は、君が活けているのか？ 』と真剣に尋ねてくるのですよ。
 [sp]あまりに神妙な顔で聞いてくるものだから、私、本当のことを教えてしまって」[p]
@@ -413,75 +421,78 @@
 「どうやら、毎回、ここの花を見て励まされているみたいで、[r]
 [sp]店の前で綾花様を一目でも見ようと寒空の下、待っていたんですよ。　そうしたらね……」[p]
 [whosay name="調香店主" color=%mp.color]
-
 「そうしたら、なんと！[r]
 [sp]綾花様と、お祖父様、四条源次郎様の[ruby text=い]従[ruby text=とこ]妹で、婚約者候補だったってワケですよ」 [p]
 [whosay name="調香店主" color=%mp.color]
-
 「驚いちゃいましたよ。　とても素敵な縁を感じましたよ～～」[p]
 [whosay name="華織" color="olivedrab"]
 「そうですね。　僕もそう思います。　"再会した"ってところにも、とても感慨深い縁を感じますね」[p]
 華織様は私の顔をみると微笑んだ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 （華織様……）[p]
+[whosay name="調香店主" color=%mp.color]
+「それ以来、記念日になると源次郎様はこっそりと手紙をもってここにやってきますね。[r]
+[r]店外に出ると恥ずかしいのか離れちゃいますが……とても仲の良い夫婦ですね……」[p]
 [whosay name="華織" color="olivedrab"]
-「僕たちの幸せは、色々な人の想いによって繋がっているのかもしれないね」[p]
+「ねぇ、[名前]さん」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「？　はい」[p]
+[whosay name="華織" color="olivedrab"]
+「あれから時々考えるようになったんだけど、人の幸せは、色々な人の想いによって繋がっているのかもしれないね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね……華織様のお祖母様とお祖父様が結ばれて、[ruby text=お]義 [ruby text=とう] 父様と [ruby text=お] 義 [ruby text=かぁ] 母様が出会って……華織様に出会えて」[p]
 ;その中には兄もいるけど省略
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 「そんな風に考えると、とても素敵で長い年月の縁に思いを馳せてしまいますね」[p]
 [whosay name="華織" color="olivedrab"]
-「ふふ、結婚ってすごいことだね」[p]
+「ふふ、つまり結婚ってすごいことなんだね」[p]
 ;主人公微笑んでうなづく
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇ……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そういえば、私のお父様とお母様は、どの様にしてお近づきになられたのでしょう？）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
-( お父様が帰ってきたら聞いてみようかしら）[p]
-それがもしも、些細な出会いであっても、私は結納の時は、深い感謝の念を抱くと思う[p]
+(お父様が帰ってきたら聞いてみようかしら）[p]
+#
+それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う[p]
 ;結
-；背景、主人公家の前
+;背景、主人公家の前
+;【背景】主人公邸 玄関
+[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name="華織" color="olivedrab"]
-「今日は、急な誘いについて来てくれてありがとう。　おかげで素敵な話を聞くことができたよ」
+「今日は、急な誘いについて来てくれてありがとう。　おかげで素敵な話を聞くことができたよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「こちらこそ。素敵な時間をありがとうございます」[p]
 [whosay name="華織" color="olivedrab"]
-「その、名前さんが嫌でなければ、ですが……手を出してもらっていいですか？　」
+「その、名前さんが嫌でなければ、ですが……手を出してもらっていいですか？　」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「手ですか？　」
 華織様は、 手をとって口づけをする。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！！」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 「指輪は、また次の機会に、」[p]
 [whosay name="華織" color="olivedrab"]
 「ふふ、[名前]さん、いい香りだね」 [p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;淑女度で変更
 [if exp="f.para_shujinkou_shukujodo >= 200"]
-
 「華織様……」 [p]
 [else]
 「か、華織様こそ！」 [p]
 [endif]
 [whosay name="華織" color="olivedrab"]
-
-「今度は正式に会いましょう　その時までにこの香りを覚えておくよ」
+「今度は正式に会いましょう　その時までにこの香りを覚えておくよ」[p]
 華織様は、手をとって門前まで送ると、会釈をして帰っていった。[r]
 まだ首筋には、ほんのりと香りが残して……[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （このまま帰ったら、勘のいい磯野は、なんていうかしら……？）[p]
-
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;おまけに飛ぶ？
 [whosay name="華織" color="olivedrab"]
-（帰ったら未来の君がために頑張らないと……）[p]
+（帰ったら未来の君のために頑張らないと……）[p]
 
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
