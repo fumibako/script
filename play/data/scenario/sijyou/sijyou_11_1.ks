@@ -168,6 +168,7 @@
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公目閉じ]
 ;///////////////////////選択肢///////////////
+;背景が暗転なので仰々しいかもしれない
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
@@ -185,10 +186,10 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[er]
+[cm]
 【１】[華衣]について尋ねた。[p]
 ;別ファイルにジャンプ
-@jump storage="sijyou_11_1_kai.ks"target=*first
+@jump storage="sijyou/sijyou_11_1_kai.ks"target=*first
 ;///////////////スキップした場合のシーン/////////////
 *skp_cmon
 [cm]
