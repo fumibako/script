@@ -14,6 +14,11 @@
 「今日は、やけに二階が騒がしいな」[p]
 [whosay name="四条母" color="#9B608B"]
 「聞いてよ！華織と[華衣]だけで、部屋の荷物の入れ替えをしてるみたいなの！」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪解け（タイトル画面等）
+[playbgm storage="title_yukidoke.ogg" loop=true click=true]
+[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+[endif]
 「あぁ、せめて私も手伝ってあげたいのだけど、アナタからもちょっと言って！」[p]
 [whosay name="四条父" color="%mp.color"]
 「[ruby text=メイ]女[ruby text=ド]中にやらせれば、いいじゃないか？」[p]
@@ -48,6 +53,11 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 #
 一方、二階では。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
+[playbgm storage="michikusa.ogg" loop=true]
+[eval exp="f.bgm_storage='michikusa.ogg'"]
+[endif]
 [whosay name="四条 華衣" color=%mp.color]
 「お、重い！！ なんで俺だけ！？　手伝えよ！！」[p]
 [whosay name="華織" color="olivedrab"]
@@ -71,6 +81,7 @@
 [sp]いってくれ」[p]
 [whosay name="四条 華衣" color=%mp.color]
 「へい、へい」[p]
+[fadeoutbgm time=3000]
 [whosay name="華織" color="olivedrab"]
 「返事は一回でいいよ、じゃぁ頑張って下さい」[p]
 ;足音去っていく
@@ -89,6 +100,11 @@ whosay name="華織" color="olivedrab"]
 [whosay name="四条 華衣" color=%mp.color]
 「アイツ、いつも金に困ってたから、金を渡そうとしたら怒ってきて……
 それで代わりに出店で見つけた壺を買ってきたんだっけ……」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
 [whosay name="四条 華衣" color=%mp.color]
 「『売っぱらえよ』って言ったのに、まだ持ってたのか……」[p]
 ;お約束
