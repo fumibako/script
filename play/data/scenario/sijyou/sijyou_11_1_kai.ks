@@ -44,7 +44,7 @@
 ;背景四条家
 [イベントシーン構築枠茶色]
 #
-[ruby text=""]四条家は、長男 [ruby text="いち"]一[ruby text="か"]華 、次男の[ruby text="か"]華[ruby text="おり"]織、
+[ruby text="　"]四条家は、長男 [ruby text="いち"]一[ruby text="か"]華 、次男の[ruby text="か"]華[ruby text="おり"]織、
 三男の[華衣]、四女 [ruby text="み"]美[ruby text="か"]華の四兄弟。[p]
 ;名前を出す必要は・・・ディティール？
 財政に優れた一華、華道の才を見出された華織。[ruby text="まっ"]末[ruby text="てい"]弟、[華衣]は、[r]
