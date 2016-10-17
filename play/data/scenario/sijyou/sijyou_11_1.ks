@@ -189,7 +189,7 @@
 [cm]
 【１】[華衣]について尋ねた。[p]
 ;別ファイルにジャンプ
-@jump storage="sijyou/sijyou_11_1_kai.ks"target=*first
+@jump storage="sijyou/sijyou_11_1_kai.ks" target=*first
 ;///////////////スキップした場合のシーン/////////////
 *skp_cmon
 [cm]
