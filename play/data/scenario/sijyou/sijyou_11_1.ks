@@ -167,7 +167,7 @@
 [主人公通常]
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公目閉じ]
-;選択肢
+;///////////////////////選択肢///////////////
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
@@ -177,6 +177,7 @@
 [r][r][r]
 [link target="*skp_cmon"]【２】静かに話を聞いた。(スキップ)[endlink]
 [s]
+;///////////////説明を選択した場合のシーンへ飛ばす準備/////////////
 ;共通はラベルcommonへ　どこに飛ぶかわかるように一部はここに書く
 *華衣について
 [resetfont]
@@ -188,8 +189,7 @@
 【１】[華衣]について尋ねた。[p]
 ;別ファイルにジャンプ
 @jump storage="sijyou_11_1_kai.ks"target=*first
-
-
+;///////////////スキップした場合のシーン/////////////
 *skp_cmon
 [cm]
 [resetfont]
@@ -208,7 +208,6 @@
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条真剣]
@@ -221,7 +220,7 @@
 [四条困り]
 [whosay name="華織" color="olivedrab"]
 「そうなんだ」[p]
-;共通
+;//////////////シーン共通//////////////////
 *common
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[華衣]様のご婚約様は、何か残していらっしゃらないでしょうか？」[p]
@@ -246,6 +245,10 @@
 [whosay name="華織" color="olivedrab"]
 「遠い場所だけど一緒に付いてきて
 くれるかい？」[p]
+;説明から戻ってくるとき表情が変わっていまうため眉指定
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
 [主人公頬染め]
 [wait time=10]
 [主人公口笑顔]
