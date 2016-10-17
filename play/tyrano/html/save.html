@@ -1,4 +1,32 @@
-<div>
+<!--↓以下はスクロール対策用に追記-->
+<!--scroll scripts and codes by ＠名無しさん１ ◆B4nFWraU42-->
+<style>
+.save_gamen {
+height:640px;
+/*高さを指定しないと領域オーバーか認識しない為指定*/
+- webkit- overflow - scrolling: touch;
+scrolling: touch;
+overflow-scrolling:touch;
+}
+.save_list{
+width:70%;
+	}
+/*セーブリストをクリックしてしまうのを回避*/
+</style>
+<style>
+/* スクロールバーのデザインをつけることができます。ただしwebkitブラウザのみです。他ブラウザはjqueryプラグインで*/
+::-webkit-scrollbar{
+width:10px;
+background:#dad1c1;
+	}
+::-webkit-scrollbar-thumb{
+background:#8e82ec;
+	}
+/*スマートフォンですとスクロールバーの領域を表示しないと難しい　セーブリストをクリックしてしまう*/
+</style>
+<!--↑ここまでスクロール対策用に追記-->
+
+<div class='save_gamen' style="overflow-y:scroll;">
 
 <ul class='save_list'>
 	{{for array_save}}
