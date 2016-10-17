@@ -57,16 +57,16 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 
 ;背景四条家
 [イベントシーン構築枠茶色]
-[stopbgm]
+
+#
+[ruby text="し"]四[ruby text="じょう"]条家は、長男 [ruby text="いち"]一[ruby text="か"]華 、次男の[ruby text="か"]華[ruby text="おり"]織、
+三男の[華衣]、四女 [ruby text="み"]美[ruby text="か"]華の四兄弟。[p]
+;名前を出す必要は・・・ディティール？
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
-#
-[ruby text="し"]四[ruby text="じょう"]条家は、長男 [ruby text="いち"]一[ruby text="か"]華 、次男の[ruby text="か"]華[ruby text="おり"]織、
-三男の[華衣]、四女 [ruby text="み"]美[ruby text="か"]華の四兄弟。[p]
-;名前を出す必要は・・・ディティール？
 財政に優れた[ruby text="いち"]一[ruby text="か"]華、華道の才を見出された[ruby text="か"]華[ruby text="おり"]織。[ruby text="まっ"]末[ruby text="てい"]弟、[華衣]は、[r]
 比べてしまえばであるが、特に抜きん出た才能も開花しなかった。[p]
 ;なぜ？開花しなかったの？
