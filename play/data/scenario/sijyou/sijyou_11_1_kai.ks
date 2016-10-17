@@ -47,7 +47,7 @@
 [ruby text="し"]四[ruby text="じょう"]条家は、長男 [ruby text="いち"]一[ruby text="か"]華 、次男の[ruby text="か"]華[ruby text="おり"]織、
 三男の[華衣]、四女 [ruby text="み"]美[ruby text="か"]華の四兄弟。[p]
 ;名前を出す必要は・・・ディティール？
-財政に優れた一華、華道の才を見出された華織。[ruby text="まっ"]末[ruby text="てい"]弟、[華衣]は、[r]
+財政に優れた[ruby text="いち"]一[ruby text="か"]華、華道の才を見出された[ruby text="か"]華[ruby text="おり"]織。[ruby text="まっ"]末[ruby text="てい"]弟、[華衣]は、[r]
 比べてしまえばであるが、特に抜きん出た才能も開花しなかった。[p]
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=3000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
