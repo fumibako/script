@@ -1,157 +1,157 @@
-;�U��̘b
-[whosay name="�ؐD" color="olivedrab"]
-�u�؈߂�4�l���傤�����̖����q�łˁB
-������P�ň�Ă��Ă��Ⴖ��n�Ɉ���Ă��܂����񂾁v[p]
-[whosay name="�ؐD" color="olivedrab"]
-�u�Ƃ͂����Ă��A�����Ƃ���������񂾂�B
-�l�͔ނ���������A�����͂ɂȂ�Ȃ����Ƃ����v���Ĉꏏ�ɕ�炵�Ă����񂾁v[p]
-;���� ����A�ߋ���U��Ԃ�
-[whosay name="�ؐD" color="olivedrab"]
-�u�؈߂̕��͂��������Ă��Ȃ������݂���������ǂˁc�c�v[p]
-[�l��ޏ�]
+;散策の話
+[whosay name="華織" color="olivedrab"]
+「華衣は4人きょうだいの末っ子でね。
+乳母日傘で育てられてじゃじゃ馬に育ってしまったんだ」[p]
+[whosay name="華織" color="olivedrab"]
+「とはいっても、いいところも多いんだよ。
+僕は彼が困ったら、何か力になれないかとそう思って一緒に暮らしてきたんだ」[p]
+;感情 後悔、過去を振り返る
+[whosay name="華織" color="olivedrab"]
+「華衣の方はそう感じていなかったみたいだけれどね……」[p]
+[四条退場]
 
 
-;���X�ɉ�z�V�[����
-;[�Ó]]
-;�w�i�Ó]
-;�j���m���[�O���b�Z�[�W�E�B���h�E 
-;�Z���t�݂̂ł͉؈߂̑P��[���ł��Ȃ��ׂ̈Ƀg��������
+;徐々に回想シーンへ
+;[暗転]
+;背景暗転
+;男モノローグメッセージウィンドウ 
+;セリフのみでは華衣の善を納得できないの為にト書き説明
 
-;�w�i�l����
+;背景四条家
 #
-�l���Ƃ́A���j ��� �A���j�̉ؐD�A�O�j�̉؈߁A�l�� ���؂̎l�Z��B[p]
-�����ɗD�ꂽ��؁A�ؓ��̍˂����o���ꂽ�ؐD�B����(�܂��Ă�)[�؈�]�́A��ׂĂ��܂��΂ł��邪�A���ɔ�����o���˔\���J�Ԃ��Ȃ������B[p]
+四条家は、長男 一華 、次男の華織、三男の華衣、四女 美華の四兄弟。[p]
+財政に優れた一華、華道の才を見出された華織。末弟(まってい)[華衣]は、比べてしまえばであるが、特に抜きん出た才能も開花しなかった。[p]
 
-;�w�i �l���ƌ��փz�[��(�\���^�C�~���O�͕ύX���� wait���Ȃ��ł�������time�H)
-;�Z���t�ɂ���Ɖ�z�V�[���̐؂�ւ��ɂȂ�Ȃ��ׁA�g������
+;背景 四条家玄関ホール(表示タイミングは変更する waitしないでゆっくりとtime？)
+;セリフにすると回想シーンの切り替えにならない為、ト書きへ
 
-[whosay name="�ؐD" color="olivedrab"]
-�\�\�@�l���Ƃ̐Ӗ���˂𔭊����Ȃ��؈߂̏�����J�����c���́A�����Ƃ��뗎�������Ăق����ƍl���A�኱���߂̌������b�������Ă����B[p]
-;�ؑ��͍��ɍv�����邱�ƁB�x�⍑���ȊO�ł́A�����Ȃǂōv������
-;�w�i �l���ƌ��փz�[��
-;��z�V�[�� ���ʃZ�s�A
-�l��c��
-�u�ӂ�c�c�}篁A�������b�����W���������ŁA�ǉ��ƌĂׂȂ����A�ߋ�����Ȃ�̍��ʂ𓾂��ƕ��̎q�����ȁv[p]
-�؈�
-�u���̒�����A�I�ׂ��Ă����́H�v[p]
-[whosay name="�ؐD" color="olivedrab"]
-�u����A����Ȃ��ƌ���Ȃ��B[r]
-�؈߂̂��Ƃ�z���Ă����l������̂�����v[p]
-�؈�
-�u�Ӂ[��c�c�v[p]
-;�Ȃ��Ă��H��
-[whosay name="�ؐD" color="olivedrab"]
-(�l������������A[���O]�����Ɏ莆���o����悤�ɂȂ�΂����ȁc�c�ӂ��A���X�A�I�΂�錩���݂͂Ȃ������ł����c�c)[p]
-�l��c��
-�u���������؈߁A�莆�������Ȃ��� �v[p]
-�؈�
-�u�ʔ����������A����Ă݂��v[p]
-[whosay name="�ؐD" color="olivedrab"]
-�u�؈߁A�S�����߂ď����񂾂�v[p]
-;���߉�
+[whosay name="華織" color="olivedrab"]
+――　四条家の責務や才を発揮しない華衣の将来を憂いた祖父は、早いところ落ち着いてほしいと考え、若干早めの見合い話を持ってきた。[p]
+;華族は国に貢献すること。富や国交以外では、文化などで貢献する
+;背景 四条家玄関ホール
+;回想シーン 効果セピア
+四条祖父
+「ふん……急遽、見合い話を収集したせいで、良縁と呼べないが、過去それなりの高位を得た家柄の子女だな」[p]
+華衣
+「この中から、選べっていうの？」[p]
+[whosay name="華織" color="olivedrab"]
+「こら、そんなこと言わない。[r]
+華衣のことを想ってくれる人がいるのだから」[p]
+華衣
+「ふーん……」[p]
+;なくても？↓
+[whosay name="華織" color="olivedrab"]
+(僕も時が来たら、[名前]ちゃんに手紙を出せるようになればいいな……ふぅ、今更、選ばれる見込みはなさそうですが……)[p]
+四条祖父
+「さっそく華衣、手紙を書きなさい 」[p]
+華衣
+「面白そうだし、やってみるよ」[p]
+[whosay name="華織" color="olivedrab"]
+「華衣、心を込めて書くんだよ」[p]
+;お節介
 
-;���X�Ɍ����Ԃ�
-;�w�i �l���l�̉Ԃ�C���[�W�摜
-[whosay name="�ؐD" color="olivedrab"]
-�\�\�����āA���̒�����؈߂��C�ɓ������̂��A�����̌��Ƃ̎q���A���ꂪ�؈߂̍���҂ƂȂ����B[p]
-[whosay name="�ؐD" color="olivedrab"]
-�u�ޏ��́A�a�ゾ��������ǁA���̕��A�ƂĂ����������Ă��āA�؈߂̈����Ƃ�����ǂ��Ƃ�����󂯎~�߂Ă����v[p]
-;���v�����̃C���[�W�摜��(����΁c)
-[whosay name="�ؐD" color="olivedrab"]
-�u�؈߂��ޏ��̐[���D�����Ɉ�����A�������葊�v�����̒��ɂȂ��Ă�����v[p]
+;徐々に現時間へ
+;背景 ネリネの花やイメージ画像
+[whosay name="華織" color="olivedrab"]
+――そして、その中から華衣が気に入ったのが、遠縁の公家の子女、それが華衣の婚約者となった。[p]
+[whosay name="華織" color="olivedrab"]
+「彼女は、病弱だったけれど、その分、とても落ち着いていて、華衣の悪いところも良いところも受け止めていた」[p]
+;相思相愛のイメージ画像が(あれば…)
+[whosay name="華織" color="olivedrab"]
+「華衣も彼女の深い優しさに引かれ、すっかり相思相愛の仲になっていたよ」[p]
 
 
-;�V�[�����S�Ɍ����Ԃɖ߂�
-;���b�Z�[�W�ʏ�
-;�w�i ���� ��l���\��
-;���� �߂��������
-[whosay name="�ؐD" color="olivedrab"]
-�u�؈߂́A�ޏ��Əo����Ă���́A�������������Ă����c�c����ǁc�c�v[p]
+;シーン完全に現時間に戻る
+;メッセージ通常
+;背景 料亭 主人公表示
+;感情 悲しい悔やむ
+[whosay name="華織" color="olivedrab"]
+「華衣は、彼女と出会ってからは、少し落ち着いてきた……けれど……」[p]
 #
-�ؐD�l�́A�����܂Řb���Ƙ낢���܂ܖق��Ă��܂����B[p]
-;�v���C���[���� �ǂ������́H
+華織様は、そこまで話すと俯いたまま黙ってしまった。[p]
+;プレイヤー感情 どうしたの？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u�ؐD�l�H �v[p]
-;�ォ������V�[���ׂ̈ɕ����Ă���
-[whosay name="�ؐD" color="olivedrab"]
-�u���߂�B���͏ڂ����͘b���Ȃ�����ǁA�l�̂����ŁA�ޏ��Ɖ؈߂͕ʂ�Ă��܂����񂾁v[p]
-;�v���C���[���� ���� �ؐD�ɋ^��������
+「華織様？ 」[p]
+;後から語られるシーンの為に伏せておく
+[whosay name="華織" color="olivedrab"]
+「ごめん。今は詳しくは話せないけれど、僕のせいで、彼女と華衣は別れてしまったんだ」[p]
+;プレイヤー感情 驚く 華織に疑いをもつ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u�I �v[p]
-;�ؐD�A�S�O�����b��
-[whosay name="�ؐD" color="olivedrab"]
-�u�c�c�ӂ���́A��x�Ɖ���Ƃ��ł��Ȃ��v
+「！ 」[p]
+;華織、躊躇うが話す
+[whosay name="華織" color="olivedrab"]
+「……ふたりは、二度と会うこともできない」
 [p]
-;�v���C���[�̂��Ƃ���� �ؐD�̐��`��
-[whosay name="�ؐD" color="olivedrab"]
-�u�؈߂́A���̂��ƂŁA�����Ɩl������ł���B �N����̎莆���̂ĂĂ��܂��قǂɁc�c�v[p]
-;�v���C���[�A�ؐD�ɑ΂��ċ^���͂����A�ǂނ��Ƃɂ���đ����̏���
-[whosay name="�ؐD" color="olivedrab"]
-�u�{���͉؈߂̎����v���Ȃ�A��l�炵���A�����Ɖ���������N�Ƃ̌��������f��ׂ��������v[p]
-[whosay name="�ؐD" color="olivedrab"]
-�u�ł��A[���O]�A�N�ƍĉ�āA�������d�˂ĕ������Ă��܂����񂾁v[p]
-[whosay name="�ؐD" color="olivedrab"]
-�u���肾�ƌ����Ă��A[���O]�Ɨ���邱�Ƃ͌��Ȃ񂾁v[p]
-;�v���C���[�̋C�����Ȃ̂ŃZ���t�͞B����
+;プレイヤーのことを語る 華織の正義側
+[whosay name="華織" color="olivedrab"]
+「華衣は、そのことで、ずっと僕を恨んでいる。 君からの手紙を捨ててしまうほどに……」[p]
+;プレイヤー、華織に対して疑いはもつが、読むことによって多少の消化
+[whosay name="華織" color="olivedrab"]
+「本当は華衣の事を思うなら、大人らしく、ずっと会いたかった君との見合いも断るべきだった」[p]
+[whosay name="華織" color="olivedrab"]
+「でも、[名前]、君と再会して、逢瀬を重ねて分かってしまったんだ」[p]
+[whosay name="華織" color="olivedrab"]
+「勝手だと言われても、[名前]と離れることは嫌なんだ」[p]
+;プレイヤーの気持ちなのでセリフは曖昧に
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(�ؐD�l�c�c�����c�c)[p]
-;�b�̌q��������
+(華織様……私も……)[p]
+;話の繋がりを説明
 #
-���̐�̓��ɉؐD�l�Ɨ���A�莆�����Ȃ��Ȃ��������v���o�����B[p]
-�\�\[�؈�]�l�̐S��ɔ�ׂ���A�����Ȃ��ƁB[r]
-����ł��A����邱�ƁA�������Ƃ͂ƂĂ��h�������B[p]
-;(�v���C���[���l��)��䍂���ؐD
-[whosay name="�ؐD" color="olivedrab"]
-�u�������炱���A�킩��v[p]
-;�ړI�����
-[whosay name="�ؐD" color="olivedrab"]
-�u�����炱���A�o�čs�����؈߂ɑ΂��āc�c�l�͜��������Ȃ��Ƃ����Ȃ����A���������Ęb���������񂾁v[p]
-;�ړI�ɂ��Đq�˂� ����������
+あの雪の日に華織様と離れ、手紙が来なくなった時を思い出した。[p]
+――[華衣]様の心情に比べたら、小さなこと。[r]
+それでも、離れること、失うことはとても辛かった。[p]
+;(プレイヤー同様に)反芻する華織
+[whosay name="華織" color="olivedrab"]
+「今だからこそ、わかる」[p]
+;目的を語る
+[whosay name="華織" color="olivedrab"]
+「だからこそ、出て行った華衣に対して……僕は懺悔をしないといけないし、向き合って話をしたいんだ」[p]
+;目的について尋ねる 遠慮がちに
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u�c�c[�؈�]�l��[r]
-[sp]�܂��A���ė����ĂȂ��̂ł��ˁv[p]
-;������1 �Y�݂Ȃ��瓚����
-[whosay name="�ؐD" color="olivedrab"]
-�u���������ƁA�Ƒ����o�ŉ؈߂̑{���ɂ������Ă邯��ǌ�����Ȃ��c�c�v[p]
-;�v���C���[���� �c�O ��]���݂��Ȃ�
+「……[華衣]様は[r]
+[sp]まだ帰って来られてないのですね」[p]
+;答える1 悩みながら答える
+[whosay name="華織" color="olivedrab"]
+「ここずっと、家族総出で華衣の捜索にあたってるけれど見つからない……」[p]
+;プレイヤー感情 残念 希望がみえない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u�����Ȃ̂ł����c�c�v[p]
-;���Ɖ�������A����w���m��
-;�b�Z���t�ɂ���ƉG�����܂������o���̂œ��ʂŁB
-;��l���A�Ă��l����
+「そうなのですか……」[p]
+;問題と解決策を、より一層明確に
+;話セリフにすると烏滸がましさが出たので内面で。
+;主人公、案を考える
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(�������������́A[�؈�]�l�̂��S������������ꏊ��������΁A������C�����܂���)[p]
-;�ؐD�������A�X�g�[���[�̐i�s
+(こういった時は、[華衣]様のお心が落ち着ける場所が分かれば、見つかる気がしますが)[p]
+;華織をせつく、ストーリーの進行
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u�ؐD�l�́A[�؈�]�l���s�����悤�ȏꏊ�ɂ��S������͂���܂��񂩁H �v[p]
+「華織様は、[華衣]様が行かれるような場所にお心あたりはありませんか？ 」[p]
 #
-�ؐD�l�͂������Ǝ�����ɐU���ĕԎ��������B[p]
-[whosay name="�ؐD" color="olivedrab"]
-�u������B��l�ɂ��������Ƃ͂ł��A[�؈�]�̍���҂̌��ł������Ȃ���������v[p]
+華織様はゆっくりと首を横に振って返事をした。[p]
+[whosay name="華織" color="olivedrab"]
+「いいや。一人にさせたことはでも、[華衣]の婚約者の件でしたかなかったから」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u�����ł������c�c�v[p]
+「そうでしたか……」[p]
 #
-;�ؐD�A�����������A�ڂ��҂�
-[whosay name="�ؐD" color="olivedrab"]
-�u���������Ă��l�̌��t���󂯓���Ă���邩�c�c�v[p]
-[whosay name="�ؐD" color="olivedrab"]
-�u���߂�A�N���̌N�ɂ���Ȃ��Ƃ�b���āc�c����ς�A����Ȏ��́A�����ŉ������Ȃ��Ƃ����Ȃ�����c�c�v[p]
-;�ؐD�A�o�čs�����Ƃ���B�G���Ă邭�炢
+;華織、頭をかかえ、目を瞑る
+[whosay name="華織" color="olivedrab"]
+「もし見つけても僕の言葉を受け入れてくれるか……」[p]
+[whosay name="華織" color="olivedrab"]
+「ごめん、年下の君にこんなことを話して……やっぱり、こんな事は、自分で解決しないといけないから……」[p]
+;華織、出て行こうとする。膝立てるくらい
 
-;��l���A�ؐD�������~�߂�B�΂͊֌W�Ȃ��ƌ����B���݂��ɍ΂̍��◧���ʒu���C�ɂ��Ă�������m��
+;主人公、華織を引き止める。歳は関係ないと言う。お互いに歳の差や立ち位置を気にしていた事を知る
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u�ؐD�l�B�����A���̗l�Ȃ��ƂŋC�ɂȂ炳���ł��������B�c�c�ꏏ�ɍl���܂��傤�v[p]
+「華織様。もう、その様なことで気にならさいでください。……一緒に考えましょう」[p]
 
-;��l���A�����������ƃf�[�g���̌��ӂ�����݂�ƁA���m�Ɏ��s����
+;主人公、お見合い時とデート時の決意をしんみりと、明確に実行する
 
-;��̎莆�����Ȃ��������ɂ��Ă̐S���
+;後の手紙が来なかった件についての心情伏線
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(����[�؈�]�l�̂��S�ɓ͂����@������΂����̂ł����c�c�莆�ȂǂȂ��̂ł��傤���H)[p]
-;�ړI2�𖾊m�ɂ���
+(何か[華衣]様のお心に届く方法があればいいのですが……手紙などないのでしょうか？)[p]
+;目的2を明確にする
 
-���ʂ�
+共通へ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-�u[�؈�]���܂̂����񂳂܂́A�����c���Ă���������Ȃ��ł��傤���H�v[p]
+「[華衣]さまのご婚約さまは、何か残していらっしゃらないでしょうか？」[p]
 
 
 
