@@ -1,4 +1,4 @@
-；あらすじ
+；あらすじ　期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
 ；華織とたまたま出会う主人公。両家に認められた二人は公然とデートすることとなる、そこで華織に連れられた場所は小さな調香店だった。
 ;華織と香水をつけあい仲良くしていると 調香店の店主は四条祖母、綾花と祖父、源次郎の若いころの思い出を語る
 ;源次郎は四条家のひとり息子であったが色々と苦労をしていた。努力家ではあったが、どうも語学にはからっきしダメで、貿易必須の四条家で、源次郎はお父様に怒られていたそうだ
@@ -6,14 +6,25 @@
 ;それ以来、記念日になると源次郎様はこっそりと手紙をもってここにやってくるだとか
 ;二人は色々と考えながらも、より一層仲を深めたいと思う
 ;華織は家まで送ると、君がくるためにも、帰ってやることがあるといって別れる
-
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
 ; 起 　散策　家が近いのでたまたま出会う。事件もおわって親の許可も得ているので
 ;場所　いつもの町中
 ;季節描写　春
 はろやかな光が、町に植えられた桜の合間を縫って花びらと共に降り注ぐ[p]
 ;がやがやSE
 春の陽気につられてた人々は、それぞれ気に入った商店に向かって賑わっていた。[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日は、人通りが多いみたいだわ）[p]
 ;がやがやSE
@@ -23,10 +34,43 @@
 人込みを避けて大通りをぬけていこうとしたときだった――[r]
 大量の花弁を持ち上げて春の嵐が吹き抜けていく[p]
 ;春風がふくSE
+[主人公驚]
+[主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（！　すごい風）[p]
+（！　すごい風……）[p]
+[主人公ポーズ通常]
 ;目を閉じずにはいられない
+;↓効果：汗 [主人公汗]
+[chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
+[wait time=10]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+;↓口：通常 [主人公口通常]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+・・・・・[p]
+[主人公横節目]
+[主人公ポーズ片手]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（ふぅ。　急に強く吹いてくるものだから驚いていまったわ）[p]
 うち靡く、黒髪と 春嵐の中、特徴的なすらりとした背中が目に入る[p]
+;どきりと期待して驚く主人公
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+;↓目：横目 [主人公横目]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
+;[主人公口開]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あれは……」[p]
 その人は、どんな人込みの中でも見間違うことがなかった。[r]
@@ -37,56 +81,96 @@
 ;困り笑顔
 [sp]といっても、家が近いから運命と呼べるには気が早いかな」[p]
 ;恥ずかしい　戸惑い
+[主人公ポーズ通常]
+;↓口：控え目な笑顔 [主人公口笑顔小]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そ、そうですね」 [p]
-
+[主人公ふぅ閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしましょう…… せっかく会えたのに正式に会う手順を踏んでいないわ）[p]
+[主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「……またお会いする時、ご連絡ください」 [p]
+「華織様……またお会いする時、ご連絡ください」 [p]
 ;切ない　残念
 #
 [whosay name="華織" color="olivedrab"]
 「待って！[名前]さん」[p]
+;[主人公口開]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「で、ですが」[p]
 [whosay name="華織" color="olivedrab"]
 「もう、気にしなくていいと思うよ。　(昔みたいに)行こう！」 [p]
 ;手をつないで
+[主人公退場]
+#
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ；背景銀座
+[chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+;磯野に罪悪感　どきどき　楽しい
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （はじめて、磯野にも言わずで遠くまで来てしまったわ）[p]
+[主人公横眼]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、手だって……）[p]
 私は、多くの公衆の面前だというのに自然と華織と手を繋いでいたことに気づいてしまった。[p]
 ;暫定ト書き
 小さな町中では、こっそりと手を繋ぐことができても、こういった男女が多い場所で人目を憚らず繋ぐのは、
 はじめてで、意識してしまうと、とても恥ずかしい。[p]
+[主人公目伏せ柔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、これからは、ずっと繋いで歩けるのでしょうか） [p]
 昔、見た恋絵巻を見てるような出来事が、さも普通に訪れていることに驚きを隠せなかった。[p]
 [whosay name="華織" color="olivedrab"]
 「 これからは、ずっと繋いで歩いて行けたらいいね」 [p]
-
 ;にこりと笑って
-
+[主人公ほほえみ]
 [whosay name="華織" color="olivedrab"]
 「そうだ、今日はいいところに行こうか」[p]
-;怪しい」ところ？とドキドキする
+;怪しいところ？とドキドキする
+[主人公目大]
+;[主人公口開]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいところ……ですか？」[p]
+[if exp="f.para_shujinkou_shukujodo < 200"]
 ;華織、焦って
 [whosay name="華織" color="olivedrab"]
 「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心して！」[p]
 ;華織様は手を振って、不思議なことを話しかけた[p]
+[主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「え？　」[p]
 [whosay name="華織" color="olivedrab"]
 「……なんでもないよ」[p]
+[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (蕎麦屋の二階に何があるのでしょう？　後で磯野に聞いてみようかしら？）[p]
-;ちなみに調べたら、そば屋の２階がラブ＊代わりで始まりが大正時代だったそうな
+;ちなみに調べてはダメだ
+[endif]
 
+[主人公退場]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;華織、香りつながりで化粧品店、調香店に 行く
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ここは……？）[p]
@@ -381,3 +465,72 @@
 ;おまけに飛ぶ？
 [whosay name="華織" color="olivedrab"]
 （帰ったら未来の君がために頑張らないと……）[p]
+
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
