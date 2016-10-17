@@ -49,7 +49,7 @@
 ;名前を出す必要は・・・ディティール？
 財政に優れた[ruby text="いち"]一[ruby text="か"]華、華道の才を見出された[ruby text="か"]華[ruby text="おり"]織。[ruby text="まっ"]末[ruby text="てい"]弟、[華衣]は、[r]
 比べてしまえばであるが、特に抜きん出た才能も開花しなかった。[p]
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=3000 wait=false]
+[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=5000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;背景 四条家玄関ホール(表示タイミングは変更する waitしないでゆっくりとtime？)
 ;セリフにすると回想シーンの切り替えにならない為、ト書きへ
@@ -59,6 +59,11 @@
 ;華族は国に貢献すること。富や国交以外では、文化などで貢献する
 ;背景 四条家玄関ホール
 ;回想シーン 効果セピア
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
 [whosay name="四条祖父" color="#888898"]
 「ふん……急遽、見合い話を収集したせいで、良縁と呼べないが、過去それなりの高位を得た家柄の子女だな」[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -81,6 +86,13 @@
 「華衣、心を込めて書くんだよ」[p]
 ;シーン徐々に現時間へ
 ;背景 ネリネの花やイメージ画像
+;ないので[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
 [whosay name="華織" color="olivedrab"]
 ――そして、その中から華衣が気に入ったのが、遠縁の公家の子女、それが華衣の婚約者となった。[p]
 [whosay name="華織" color="olivedrab"]
@@ -91,15 +103,17 @@
 #
 ;////////////////////////シーン完全に現時間に戻る////////////////////
 ;メッセージ通常
+;ないので[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [イベントシーン構築]
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 ;背景 料亭 主人公表示
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [四条ベース羽織]
 [四条憂い]
 ;感情 悲しい悔やむ
