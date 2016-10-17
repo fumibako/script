@@ -12,6 +12,12 @@
 [主人公通常]
 [wait time=10]
 ;テスト用イベントシーン構築ここまで
+テストページからはじめます[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 *first
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
@@ -34,6 +40,7 @@
 [whosay name="華織" color="olivedrab"]
 「華衣の方はそう感じていなかったみたいだけれどね……」[p]
 [四条退場]
+[fadeoutbgm time=3000]
 #
 ;///////////////////徐々に回想シーンへ/////////////////////
 ;[暗転]
@@ -50,6 +57,12 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 
 ;背景四条家
 [イベントシーン構築枠茶色]
+[stopbgm]
+[if exp="sf.BGM=='ON'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
 #
 [ruby text="し"]四[ruby text="じょう"]条家は、長男 [ruby text="いち"]一[ruby text="か"]華 、次男の[ruby text="か"]華[ruby text="おり"]織、
 三男の[華衣]、四女 [ruby text="み"]美[ruby text="か"]華の四兄弟。[p]
@@ -275,11 +288,17 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 ;「そうだね。歳の差や立ち位置を気にするのはやめるよ」[p]
 「そうだね。お互いに歳の差や立ち位置を気にするのはやめるようか」[p]
+[fadeoutbgm time=3000]
 ;主人公、お見合い時とデート時の決意をしんみりと、明確に実行する
 ;後の手紙が来なかった件についての心情伏線
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (何か[華衣]様のお心に届く方法があればいいのですが……手紙など[r]
 [sp]ないのでしょうか？)[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 ;目的2を明確にする
 @jump storage="sijyou/sijyou_11_1.ks" target=*common
 共通へ
