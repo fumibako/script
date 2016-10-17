@@ -27,7 +27,8 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「とはいっても、いいところも多いんだよ。[r]
-[sp]僕は彼が困ったら、何か力になれないかとそう思って一緒に暮らしてきたんだ」[p]
+[sp]僕は彼が困ったら、何か力になれないかとそう思って一緒に暮らして[r]
+[so]きたんだ」[p]
 ;感情 後悔、過去を振り返る
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
@@ -101,7 +102,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「彼女は、病弱だったけれど、その分、とても落ち着いていて、華衣の悪いところも良いところも受け止めていた」[p]
 ;相思相愛のイメージ画像が(あれば…)
 [whosay name="華織" color="olivedrab"]
-「華衣も彼女の深い優しさに引かれ、すっかり相思相愛の仲になっていたよ」[p]
+「[華衣]も、彼女の深い優しさに引かれ、相思相愛の仲になっていたよ」[p]
 #
 ;////////////////////////シーン完全に現時間に戻る////////////////////
 ;メッセージ通常
@@ -134,7 +135,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「ごめん。今は詳しくは話せないけれど、
 [四条憂い]
-僕のせいで、彼女と華衣は別れてしまったんだ」[p]
+僕のせいで、彼女と華衣は[r]
+[sp]別れてしまったんだ」[p]
 ;プレイヤー感情 驚く 華織に疑いをもつ　主人公：急なことに表情等が固まる　
 ;[主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -188,8 +190,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「今だからこそ、わかる」[p]
 ;目的を語る
 [whosay name="華織" color="olivedrab"]
-「だからこそ、出て行った華衣に対して……僕は懺悔をしないといけないし、[r]
-[sp]向き合って話をしたいんだ」[p]
+「だからこそ、出て行った華衣に対して……僕は懺悔をしないと[r]
+[sp]いけないし、向き合って話をしたいんだ」[p]
 ;目的について尋ねる 遠慮がちに
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -198,7 +200,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;答える1 悩みながら答える
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
-「ここずっと、家族総出で華衣の捜索にあたってるけれど見つからない……」[p]
+「ここずっと、家族総出で華衣の捜索にあたってるけれど見つから[r]
+[sp]ない……」[p]
 ;プレイヤー感情 残念 希望がみえない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうなのですか……」[p]
@@ -233,7 +236,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様。[r]
 ;[四条通常]
-[sp]もう、その様なことで気にならさいでください。……一緒に考えましょう」[p]
+[sp]もう、その様なことで気にならさいでください。[r]
+[sp]……一緒に考えましょう」[p]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
