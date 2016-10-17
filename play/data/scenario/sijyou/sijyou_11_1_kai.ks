@@ -231,7 +231,7 @@
 (何か[華衣]様のお心に届く方法があればいいのですが……手紙など[r]
 [sp]ないのでしょうか？)[p]
 ;目的2を明確にする
-@jump storage="sijyou_11_1.ks" target=*common
+@jump storage="sijyou/sijyou_11_1.ks" target=*common
 共通へ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[華衣]さまのご婚約さまは、何か残していらっしゃらないでしょうか？」[p]
