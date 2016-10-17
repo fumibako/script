@@ -61,7 +61,9 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_sansaku4" text="散策4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test_sansaku5" text="散策5" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="test_sansaku6" text="散策6" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test_sansaku7" text="散策7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test_sansaku8" text="散策8" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 
 [glink target="test_page1" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 *common
@@ -211,6 +213,18 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [cm]
 [freeimage layer = 26]
 @jump storage="sijyou/sijyou_sansaku6.ks"
+[s]
+
+*test_sansaku7
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_omake_kai.ks"
+[s]
+
+*test_sansaku8
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/ssijyou_omake_kai.ks"
 [s]
 
 *test_fumi
