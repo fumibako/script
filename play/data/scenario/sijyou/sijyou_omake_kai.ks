@@ -15,9 +15,9 @@
 [whosay name="四条母" color="#9B608B"]
 「聞いてよ！華織と[華衣]だけで、部屋の荷物の入れ替えをしてるみたいなの！」[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】雪解け（タイトル画面等）
-[playbgm storage="title_yukidoke.ogg" loop=true click=true]
-[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 「あぁ、せめて私も手伝ってあげたいのだけど、アナタからもちょっと言って！」[p]
 [whosay name="四条父" color="%mp.color"]
@@ -47,6 +47,7 @@
 「ほおっておきなさい、それよりも私達には、他にやることがありますわ」[p]
 [whosay name="四条母" color="#9B608B"]
 「は、はい……」[p]
+[fadeoutbgm time=3000]
 [whosay name="四条祖父" color="#888898"]
 (騒動の引き金になってしまった、ワシは何も言うまい)[p]
 #
