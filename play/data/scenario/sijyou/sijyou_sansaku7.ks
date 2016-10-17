@@ -1,5 +1,5 @@
-；あらすじ　期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
-；華織とたまたま出会う主人公。両家に認められた二人は公然とデートすることとなる、そこで華織に連れられた場所は小さな調香店だった。
+;あらすじ　期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
+;華織とたまたま出会う主人公。両家に認められた二人は公然とデートすることとなる、そこで華織に連れられた場所は小さな調香店だった。
 ;華織と香水をつけあい仲良くしていると 調香店の店主は四条祖母、綾花と祖父、源次郎の若いころの思い出を語る
 ;源次郎は四条家のひとり息子であったが色々と苦労をしていた。努力家ではあったが、どうも語学にはからっきしダメで、貿易必須の四条家で、源次郎はお父様に怒られていたそうだ
 ;そんなとき、店の前を通りがかった源次郎は、従妹の綾花と偶然再会し、花で励まされたという
@@ -24,10 +24,15 @@
 ;季節描写　春
 はろやかな光が、町に植えられた桜の合間を縫って花びらと共に降り注ぐ[p]
 ;がやがやSE
+;【SE】人々のざわめき（ザワザワ…屋外）
+[playse storage=zawa_out.ogg loop=false ]
 春の陽気につられてた人々は、それぞれ気に入った商店に向かって賑わっていた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日は、人通りが多いみたいだわ）[p]
 ;がやがやSE
+;【SE】人々のざわめき（ザワザワ…屋外）
+[playse storage=zawa_out.ogg loop=false ]
+[主人公ふぅ閉]
 ;帰ろうとするが・・・　セリフは適当
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （こんなに人通りが多くては、気分転換にならないかも……少ししたら帰りましょう）[p]
@@ -53,7 +58,7 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 ・・・・・[p]
-[主人公横節目]
+[主人公横伏目]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ。　急に強く吹いてくるものだから驚いていまったわ）[p]
@@ -106,13 +111,16 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「で、ですが」[p]
 [whosay name="華織" color="olivedrab"]
-「もう、気にしなくていいと思うよ。　(昔みたいに)行こう！」 [p]
-;手をつないで
+「もう、気にしなくていいと思うよ。　行こう！」 [p]
+;手をつないで　(昔みたいに)
+[主人公驚]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様！？」[p]
 [主人公退場]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-；背景銀座
+;背景銀座
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;磯野に罪悪感　どきどき　楽しい
@@ -128,14 +136,14 @@
 [wait time=
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （はじめて、磯野にも言わずで遠くまで来てしまったわ）[p]
-[主人公横眼]
+[主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、手だって……）[p]
 私は、多くの公衆の面前だというのに自然と華織と手を繋いでいたことに気づいてしまった。[p]
 ;暫定ト書き
 小さな町中では、こっそりと手を繋ぐことができても、こういった男女が多い場所で人目を憚らず繋ぐのは、
 はじめてで、意識してしまうと、とても恥ずかしい。[p]
-[主人公目伏せ柔]
+[主人公目伏柔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、これからは、ずっと繋いで歩けるのでしょうか） [p]
 昔、見た恋絵巻を見てるような出来事が、さも普通に訪れていることに驚きを隠せなかった。[p]
@@ -175,7 +183,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ここは……？）[p]
 [whosay name="華織" color="olivedrab"]
-「ここは、祖母の知人が営んでいる 調香店だよ」
+「ここは、祖母の知人が営んでいる 調香店だよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇと、香水の専門店でしょうか……？」[p]
 ;ふたりで香水を選ぶ
@@ -187,7 +195,8 @@
 「は、はい……」[p]
 
 ;背景説明　背景ないので未
-
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;説明・四条綾花・・・祖母　散策をみてね
 [whosay name="調香店主" color=%mp.color]
 「いらっしゃいませ～！[r]
@@ -199,16 +208,15 @@
 「いえいえ！　こちらこそ、 お世話になっています」 [p]
 
 [whosay name="調香店主" color=%mp.color]
-
-「なんたって、華道の名士の”四条綾花様”に店内に華を添えて頂いているおかげで、
-こんな偏屈な店でも、閑古鳥が鳴くこともなく、素敵なお客様達が来て頂けるのですから！」[p]
+「なんたって、華道の名士の”四条綾花様”に店内に華を添えて頂いているおかげで、[r]
+[sp]こんな偏屈な店でも、閑古鳥が鳴くこともなく、素敵なお客様達が来て頂けるのですから！」[p]
 ;ふたりを見てお世辞をいう店主　まぁまぁ儲かってはいるようだ
 [whosay name="華織" color="olivedrab"]
 「ふふ、お元気そうで何よりです。[r]
 [sp]今日はお客として来ましたので、選ばせてもらってもいいでしょうか？」 [p]
 [whosay name="調香店主" color=%mp.color]
 「ええ、もちろん！」[p]
-
+#
 調香店の主は、いくつか持ち出してくると、ふたりの前に小瓶を並べる。[r]
 その小瓶の中には僅かにだけ、香水が入っており、薄い木の棒が漬けられていた。[p]
 
@@ -225,10 +233,9 @@
 
 （華織様と一緒にいると、新しい発見ができる気がします……）[p]
 ;ラブ波に耐えられない
-
 ;説明する　カタカナ使ってもいい？
 [whosay name="調香店主" color=%mp.color]
-「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に愛に効く香りとして重宝されてますよ」
+「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に"愛に効く香り"として重宝されてますよ」[p]
 [whosay name="華織" color="olivedrab"]
 「そ、そうなんですか？　」 [p]
 [whosay name="調香店主" color=%mp.color]
@@ -240,18 +247,25 @@
 「さぁ、まずは、華織様。　どうぞお試しください」[p]
 [whosay name="華織" color="olivedrab"]
 「ありがとう」[p]
-華織様に手渡す小瓶から、微かな香りが、鼻をくすぐる。[p]
+#
+店主が華織様に手渡す小瓶から、微かな香りが流れ、鼻をくすぐる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（いい香りがするわ……優しい花の香りから、爽やかな香りに変わっていくのですね）[p]
+（いい香りがするわ……優しい花の香りから、爽やかな香りに変わって[r]
+[sp]いくのですね）[p]
 [whosay name="調香店主" color=%mp.color]
-
 「よろしければ、華織様に近づいてご確認くださいね。　人がつけると香りも変わりますので……」[p]
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
 ;低度なダジャレ多発
 [link target=*kag]華織様の香りをかぐ[endlink][r]
 [r][r][r]
 [link target=*not_kag] 小瓶の香りを確かめる[endlink]
 [s]
+
 *kag
+[resetfont]
 ;セリフは適当 もっとお上品にしてください
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （恥ずかしい……けれど、もう気にしなくても……いいかしら？）[p]
@@ -270,6 +284,7 @@
 
 @jump target=*common
 *not_kag
+[resetfont]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わ、私は、こちらの香りで大丈夫です！」 [p]
 
@@ -299,7 +314,8 @@
 [r][r][r]
 [link target=*not_tukete] 自分でつける [endlink]
 [s]
-
+*tukete
+[resetfont]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様、私、よくわからないので、ぜひお願いします」[p]
 [whosay name="華織" color="olivedrab"]
@@ -320,6 +336,7 @@
 ;だめだわ、ラブ波に耐えられない
 
 *noto_tukete
+[resetfont]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　私、自分で出来ますので！」[p]
 
