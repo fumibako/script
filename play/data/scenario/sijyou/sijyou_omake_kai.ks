@@ -1,16 +1,25 @@
 ;おまけシナリオ
-四条家にて。
+[chara_mod name="bg" storage="toumei.gif" time=1000]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築枠茶色]
+[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;ガタゴト
-四条父
+[whosay name="四条父" color="%mp.color"]
 「今日は、やけに二階が騒がしいな」[p]
 [whosay name="四条母" color="#9B608B"]
 「聞いてよ！[whosay name="華織" color="olivedrab"]と[華衣]だけで、部屋の荷物の入れ替えをしてるみたいなの！
 あぁ、せめて私も手伝ってあげたいのだけど、アナタからもちょっと言って！」[p]
-四条父
-「メイドにやらせれば、いいじゃないか？」[p]
+[whosay name="四条父" color="%mp.color"]
+「[ruby=メイ]女[ruby text=ド]中にやらせれば、いいじゃないか？」[p]
 [whosay name="四条母" color="#9B608B"]
 「それが[華衣]の部屋に入れ替えてるらしくて！[whosay name="華織" color="olivedrab"]にダメって言われてしまってのよ……！」[p]
-四条父
+[whosay name="四条父" color="%mp.color"]
 「ほぉ？ またそれは珍しいことを」[p]
 [whosay name="四条母" color="#9B608B"]
 「珍しいでしょ？ あの子が私達に ダメ。なんて！ はぁ……」[p]
@@ -18,31 +27,31 @@
 「何でか聞いてるのかい？」[p]
 [whosay name="四条母" color="#9B608B"]
 「大事なものだから、ダメ。としか聞いてないのよ」[p]
-四条父
+[whosay name="四条父" color="%mp.color"]
 「そうか。まぁ、鷹司家のお嬢さんを迎えるにあたって[華衣]にお古でもあげているのだろうよ」[p]
 [whosay name="四条母" color="#9B608B"]
 「それなら新しい部屋は用意してあるわよ？」[p]
-四条父
+[whosay name="四条父" color="%mp.color"]
 「……華織]のおかげで、[華衣]が帰ってきたんだ。そっとしておこうじゃないか」[p]
 [whosay name="四条母" color="#9B608B"]
 「もう、アナタは新聞の続きが読みたいだけでしょ？」[p]
-四条祖母
+[whosay name="四条祖母" color="%mp.color"]
 「ほおっておきなさい、それよりも私達には、他にやることがありますわ」[p]
 [whosay name="四条母" color="#9B608B"]
 「は、はい……」[p]
 [whosay name="四条祖父" color="#888898"]
 (騒動の引き金になってしまった、ワシは何も言うまい)[p]
-
-一方、二階では。[p]
-
-[whosay name="四条 華衣" color=%mp.color]
-「お、重い！！ なんで俺だけ！？」[p]
-[whosay name="華織" color="olivedrab"]
-「ウッカリ僕が運んで壊しても文句は言わないのかい？」[p]
+[chara_mod name="bg" storage="toumei.gif" time=1000]
 #
-[whosay name="華織" color="olivedrab"]の部屋に留めておいた華衣の元婚約者の引き取り荷物を運んでいたのだった。[p]
+一方、二階では。[p]
 [whosay name="四条 華衣" color=%mp.color]
-「それなら、メイドをよこせよっ アイツらならヘマもしないだろ！？」[p]
+「お、重い！！ なんで俺だけ！？　手伝えよ！！」[p]
+[whosay name="華織" color="olivedrab"]
+「ウッカリ僕が運んで、君の大事なものを壊しても文句は言わないのかい？」[p]
+#
+華衣は、華織の部屋に留めておいた"華衣の婚約者"の荷物を運んでいたのだった。[p]
+[whosay name="四条 華衣" color=%mp.color]
+「それなら、[ruby=メイ]女[ruby text=ド]中をよこせよっ アイツらならヘマもしないだろ！？」[p]
 [whosay name="華織" color="olivedrab"]
 「大切な人の荷物も運べずして、何ができる？華衣は、いまいち行動に重さがないね」[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -58,9 +67,12 @@
 [whosay name="華織" color="olivedrab"]
 「返事は一回でいいよ、じゃぁ頑張って下さい」[p]
 ;足音去っていく
+[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 (ふぅ……兄とは、かくも大変なものですね。文也)[p]
 ；サボっていたツケを考える
+[chara_mod name="bg" storage="toumei.gif" time=1000]
 [whosay name="四条 華衣" color=%mp.color]
 「……なんだよ、昔は『華衣、忘れ物はないかい？ きちんと歯は磨いたかい？』って煩かったのに」[p]
 ;ガサゴソSE
@@ -96,7 +108,7 @@
 #日誌
 『無は有を産むべきもの。[r]
 自身の定めしもの見つけるべし。[r]
-ー－決して悲観されがたし。皆、初めは無であった』[p]
+―― 決して悲観されがたし。皆、初めは無であった』[p]
 [whosay name="四条 華衣" color=%mp.color]
 「初めは無……」[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -104,19 +116,92 @@
 [whosay name="四条 華衣" color=%mp.color]
 「はぁ。 ちょっと思いついちまったことが、俺ひとりじゃまだ出来そうになさそうだからさ」[p]
 ・・・・・・[p]
+[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 (さて、そろそろ手伝おうかな)[p]
+[chara_mod name="bg" storage="toumei.gif" time=1000]
 [whosay name="華織" color="olivedrab"]
-「[whosay name="四条 華衣" color=%mp.color]、大変だったら……」[p]
+「華衣、大変だったら……」[p]
 [whosay name="華織" color="olivedrab"]
-「[whosay name="四条 華衣" color=%mp.color]？」[p]
+「華衣？」[p]
 [whosay name="華織" color="olivedrab"]
-(あぁ、寝てるじゃないか……)
+(あぁ、寝てるじゃないか……)[p]
 [whosay name="華織" color="olivedrab"]
 「僕が生けた花をそのまま壺に突っ込んじゃって……せめて花の向きは揃えて……」[p]
 [whosay name="華織" color="olivedrab"]
 (いいや、そのままにしておくべきだ……そっとしておこう)[p]
 派手な壺に不揃いな花が並ぶ。[r]
 時が経てば凛と前を向く花が並ぶのだろうか。[p]
+[chara_mod name="bg" storage="bg/B4nFWraU42/nerine_img.jpg" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 その花は、また誰かに幸せを与え、新しい花を咲かすことを願っている。[p]
+;@jump storage="event.ks" target=*event_owari
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
 
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
