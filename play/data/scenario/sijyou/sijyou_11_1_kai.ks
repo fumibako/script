@@ -93,6 +93,8 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
+[chara_mod name="bg" storage="bg/B4nFWraU42/nerine_img.jpg" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 ――そして、その中から華衣が気に入ったのが、遠縁の公家の子女、それが華衣の婚約者となった。[p]
 [whosay name="華織" color="olivedrab"]
