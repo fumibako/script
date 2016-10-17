@@ -6,16 +6,19 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
+*first
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-
-*first
 ;散策の話
+[四条ベース羽織]
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
 「華衣は4人きょうだいの末っ子でね。[r]
 [sp]乳母日傘で育てられてじゃじゃ馬に育ってしまったんだ」[p]
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「とはいっても、いいところも多いんだよ。[r]
 [sp]僕は彼が困ったら、何か力になれないかとそう思って一緒に暮らしてきたんだ」[p]
