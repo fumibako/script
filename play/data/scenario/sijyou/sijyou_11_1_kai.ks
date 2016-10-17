@@ -1,11 +1,26 @@
+*start
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築]
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+
+*first
 ;散策の話
+[四条憂い]
 [whosay name="華織" color="olivedrab"]
-「華衣は4人きょうだいの末っ子でね。
-乳母日傘で育てられてじゃじゃ馬に育ってしまったんだ」[p]
+「華衣は4人きょうだいの末っ子でね。[r]
+[sp]乳母日傘で育てられてじゃじゃ馬に育ってしまったんだ」[p]
 [whosay name="華織" color="olivedrab"]
-「とはいっても、いいところも多いんだよ。
-僕は彼が困ったら、何か力になれないかとそう思って一緒に暮らしてきたんだ」[p]
+「とはいっても、いいところも多いんだよ。[r]
+[sp]僕は彼が困ったら、何か力になれないかとそう思って一緒に暮らしてきたんだ」[p]
 ;感情 後悔、過去を振り返る
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「華衣の方はそう感じていなかったみたいだけれどね……」[p]
 [四条退場]
@@ -13,6 +28,7 @@
 
 ;徐々に回想シーンへ
 ;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;背景暗転
 ;男モノローグメッセージウィンドウ 
 ;セリフのみでは華衣の善を納得できないの為にト書き説明
