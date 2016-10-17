@@ -325,6 +325,10 @@
 [s]
 *tukete
 [resetfont]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[cm]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様、私、よくわからないので、ぜひお願いします」[p]
 [whosay name="華織" color="olivedrab"]
