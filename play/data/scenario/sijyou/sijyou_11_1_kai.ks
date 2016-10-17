@@ -28,7 +28,7 @@
 [whosay name="華織" color="olivedrab"]
 「とはいっても、いいところも多いんだよ。[r]
 [sp]僕は彼が困ったら、何か力になれないかとそう思って一緒に暮らして[r]
-[so]きたんだ」[p]
+[sp]きたんだ」[p]
 ;感情 後悔、過去を振り返る
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
@@ -41,6 +41,12 @@
 ;背景暗転
 ;男モノローグメッセージウィンドウ 
 ;セリフのみでは華衣の善を納得できない方の為にト書き説明
+;回想シーン 効果セピア
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
 
 ;背景四条家
 [イベントシーン構築枠茶色]
@@ -50,21 +56,40 @@
 ;名前を出す必要は・・・ディティール？
 財政に優れた[ruby text="いち"]一[ruby text="か"]華、華道の才を見出された[ruby text="か"]華[ruby text="おり"]織。[ruby text="まっ"]末[ruby text="てい"]弟、[華衣]は、[r]
 比べてしまえばであるが、特に抜きん出た才能も開花しなかった。[p]
+;なぜ？開花しなかったの？
+;甘やかされたからもあるが努力もしなかった自然的なもの、過保護に何もできないと言われていたから　兄達の存在が大きく末子は期待されていなかった。[p]
+#
+それは、兄達の存在も大きかった故に周囲が[華衣]に対して期待せず、過保護に接してしまっていたからであった。[p]
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=5000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;背景 四条家玄関ホール(表示タイミングは変更する waitしないでゆっくりとtime？)
+;華織自身も周囲に（兄には）多少コンプレックスはある
+[whosay name="女中・その壱" color=%mp.color]
+「あら！[ruby text="いち"]一[ruby text="か"]華様のことが新聞に載ってるわ。[r]
+[sp]四条鉱山の経営も上手くいってるようだし、これで私たちのお給金も上がるといいわね」[p]
+[whosay name="女中・その弐" color=%mp.color]
+「もう、そんなこと言って！　それよりも来週からは、[ruby text="いち"]一[ruby text="か"]様が、[r]
+本格的に外交官として活躍したら有名になってしまったらお見掛けうることもできなくなってしまうわ」[p]
+[whosay name="女中・その壱" color=%mp.color]
+「あら！　あなた[ruby text="いち"]一[ruby text="か"]華様のことと。[ruby text="か"]華[ruby text="おり"]織様のこと[r]
+[sp]どちらも気にしてたの？」[p]
+[whosay name="女中・その弐" color=%mp.color]
+「それはソレ。これはコレ。[r]
+[sp]はぁ、来週からは奥様と[華衣]様が留学から帰ってくるらしいから大変だわ」[p]
+[whosay name="女中・その壱" color=%mp.color]
+「奥様は、本当に[華衣]様にご執心ですものね。　留学先では、結局、別荘にこもって遊んでいたらしいわ」[p]
+[whosay name="女中・その弐" color=%mp.color]
+「!! ちょっと！」[p]
+[whosay name="四条祖父" color="#888898"]
+「……」[p]
+[whosay name="女中・その壱・弐" color=%mp.color]
+「「！　し、失礼しました！！」」[p]
+;散開するメイド達
 ;セリフにすると回想シーンの切り替えにならない為、ト書きへ
 [whosay name="華織" color="olivedrab"]
 ――　四条家の責務や才を発揮しない華衣の将来を憂いた祖父は、[r]
 早いところ落ち着いてほしいと考え、若干早めの見合い話を持ってきた。[p]
 ;華族は国に貢献すること。富や国交以外では、文化などで貢献する
-;背景 四条家玄関ホール
-;回想シーン 効果セピア
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(100%)";
-[endscript]
 [whosay name="四条祖父" color="#888898"]
 「ふん……急遽、見合い話を収集したせいで、良縁と呼べないが、過去それなりの高位を得た家柄の子女だな」[p]
 [whosay name="四条 華衣" color=%mp.color]
