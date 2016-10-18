@@ -164,10 +164,13 @@
 「はい」[p]
 [四条退場]
 ;[暗転]
+
 [whosay name="華織" color="olivedrab"]
 「歌舞伎座の帰りに会った僕の弟、[華衣]を覚えてる……？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい……」
+[主人公通常]
+[chara_mod name="bg" storage="toumei.gif"]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (たしか、あの時、華織様との別れ際に現れた方でしたね)
