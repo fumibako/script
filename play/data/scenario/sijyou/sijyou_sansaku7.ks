@@ -304,6 +304,7 @@
 ;～～～驚きつつ困惑照れ～～～
 [whosay name="華織" color="olivedrab"]
 「そ、そうなんですか？　」 [p]
+[主人公眉通常]
 [whosay name="調香店主" color=%mp.color]
 「あぁ、そういえば！[r]
 [sp]丁度、そちらの香りに合うに会う香水を入荷しましたので、[r]
@@ -311,6 +312,7 @@
 #
 調香店の店主は選んだ香水を受け取ると、持ってきた小さな小瓶に混ぜて香りを確かめる。[p]
 ;マドラー的なものでかき混ぜる音
+;↓目：[主人公目通常]
 [whosay name="調香店主" color=%mp.color]
 「さぁ、まずは、華織様。　どうぞお試しください」[p]
 [whosay name="華織" color="olivedrab"]
@@ -422,11 +424,13 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公ポーズ片手]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わ、私は、こちらの香りで大丈夫です！」 [p]
 [主人公ポーズ通常]
 
 *common
+[主人公通常]
 ;共通
 ;いたずらに笑ってみている店主
 [whosay name="調香店主" color=%mp.color]
@@ -530,7 +534,7 @@
 （～！　）[p]
 [whosay name="華織" color="olivedrab"]
 「だ、大丈夫でしょうか？」[p]
-[主人公驚き]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　少しくすぐったかっただけですから！」[p]
 @jump target=*common2
@@ -545,9 +549,26 @@
 [chara_mod name="bg" storage="toumei.gif"]
 #
 自分でつける[p]
+[主人公驚]
+[主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　私、自分で出来ますので！」[p]
+[主人公ポーズ通常]
 *common2
+;～～～驚きつつ困惑照れ～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
 [whosay name="調香店主" color=%mp.color]
 「いかかでしょうか？」[p]
 華織様がそっと肩に近づく。[p]
