@@ -321,6 +321,17 @@
 [whosay name="調香店主" color=%mp.color]
 「よろしければ、華織様に近づいてご確認くださいね。[r]
 [sp]人がつけると香りも変わりますので……」[p]
+;～～～驚きつつ困惑照れ～～～
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
 ;選択肢
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしようかしら）
@@ -351,12 +362,19 @@
 華織様に近づいて首筋から温かく溢れる香りを確かめる。 [p]
 [whosay name="華織" color="olivedrab"]
 （ [名前] さんが……） [p]
+;[主人公横伏目]
+[chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様が……）[p]
 [whosay name=ふたり color="%mp.color"]
 ((　近い　)) [p]
 ;お互いに目があって離れる？
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
 さっきまでの爽やかに変わっていった香りが、華やかで印象深い香りへと変わっていく。[p]
+[主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (この香り、華織様の印象に合っていて……まるで華織様に抱きしめられているみたいだわ……）[p]
 ;書くの辛い・・・
@@ -405,6 +423,17 @@
 「 華織様、そこは、つけて差し上げては如何でしょうか？　」[p]
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
+;～～～驚きつつ困惑照れ～～～
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
 ;選択肢
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしようかしら）
@@ -478,8 +507,10 @@
 特にまだ海外製品が多いので体にあっているものが少ないんです][p]
 [whosay name="華織" color="olivedrab"]
 「ふたりで調和する香りなんだね。　いいね。　これにしようか」[p]
+[主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」 [p]
+[主人公ほほえみ]
 [whosay name="調香店主" color=%mp.color]
 「よろしければ、この香水に名前をつけてあげてくださいね[r]
 [sp]そうしますと、愛着も増してつける具合も変わってきますから……」[p]
@@ -487,12 +518,14 @@
 [if exp="f.para_shujinkou_shukujodo < 200"]
 [whosay name="華織" color="olivedrab"]
 「そうですね　どんな名前にしようかな」[p]
+[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華やかだけど調和する香り……[r]
 [sp]そこに華やかに佇んでいても、周囲を和ませてくれる香りだから）[p]
 ;思いつかない 華はな和わけ？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織……なんて。[r]
+[主人公ほほえみ]
 [sp]……華織様なんというでしょうか）[p]
 [else]
 [whosay name="華織" color="olivedrab"]
@@ -505,20 +538,34 @@
 ;仲良くしていると 調香店の店主は四条祖母、綾花と祖父、源次郎の若いころの思い出を語る
 [whosay name="調香店主" color=%mp.color]
 「綾花様が気にされていたとおり、本当に仲がよろしいのですね」 [p]
+;～～～驚きつつ困惑照れ～～～
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
 [whosay name="華織" color="olivedrab"]
 「祖母は、なにかとおしゃべりな人で……また何か話していましたか？」[p]
 [whosay name="調香店主" color=%mp.color]
 「お二人を見ていると、昔の自分たちを思い出すとおっしゃっていましたよ」[p]
 ;困り笑顔
+[主人公照れ]
 [whosay name="華織" color="olivedrab"]
 「また、その話をしていたのですね……[r]
 こちらとしては、嬉しいのですが気恥ずかしくもありますよ」[p]
 ;主人公照れ
+[主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様のお祖母様の綾花様は、明るい方なのですね……）  [p]
 [fadeoutbgm time=3000]
 [whosay name="調香店主" color=%mp.color]
 「いえ、私もそう思いますよ！　今日お二人にお会いして、しみじみと思いましたよ」[p]
+[主人公通常]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
 [playbgm storage="sittori_umikaze.ogg" loop=true]
