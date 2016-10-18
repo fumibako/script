@@ -51,7 +51,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （！　すごい風……）[p]
 [主人公ポーズ通常]
-;目を閉じずにはいられない
+;~~強い風に目を閉じずにはいられない主人公~~
 ;↓効果：汗 [主人公汗]
 [chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
 [wait time=10]
@@ -64,13 +64,16 @@
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
+;~~強い風に目を閉じずにはいられない主人公~~
 ・・・・・・[p]
 [主人公横伏目]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ。　急に強く吹いてくるものだから驚いていまったわ）[p]
-うち靡く、黒髪と 春嵐の中、特徴的なすらりとした背中が目に入る[p]
-;どきりと期待して驚く主人公
+;桜吹雪の合間に
+――うち靡く、花弁が、開幕のように過ぎていき[r]
+桜吹雪の合間に特徴的なすらりとした背中が目に入る[p]
+;～～～どきりと期待して驚く主人公～～
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -83,6 +86,7 @@
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
+;～～～どきりと期待して驚く主人公～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あれは……」[p]
 [if exp="sf.BGM=='ON'"]
@@ -147,7 +151,7 @@
 [wait time=10]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
-[wait time=
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （はじめて、磯野にも言わずで遠くまで来てしまったわ）[p]
 [主人公横目]
@@ -218,6 +222,8 @@
 ;場面転換のお知らせなのだけどセリフが不自然かも
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい……」[p]
+[主人公通常]
+[wait time=10]
 [主人公目閉じ]
 ;主人公退場でもいい
 ;背景説明　背景ないので未
@@ -225,6 +231,8 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 ;説明・四条綾花・・・祖母　散策をみてね
+[主人公通常]
+[wait time=10]
 [whosay name="調香店主" color=%mp.color]
 「いらっしゃいませ～！[r]
 [sp]あらまぁ！ 四条綾花様のところに華織様じゃないですか」[p]
@@ -240,6 +248,10 @@
 #
 店主は、口早にお世辞を言うと楽し気に私たちを迎えれた。[p]
 ;ふたりを見てお世辞をいう店主　まぁまぁ儲かってはいるようだ
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+[主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (とても溌剌とした方ですのね。華織様はたまに来られるのでしょうか？)[p]
 [whosay name="華織" color="olivedrab"]
@@ -248,23 +260,44 @@
 [sp]もらってもいいでしょうか？」 [p]
 [whosay name="調香店主" color=%mp.color]
 「ええ、もちろん！」[p]
+[主人公通常]
+[wait time=10]
 #
 調香店の主は、いくつか持ち出してくると、ふたりの前に小瓶を並べる。[r]
 その小瓶の中には僅かにだけ、香水が入っており、手に取りやすい大きさの木箆が漬けられていた。[p]
-
 ;ふたりで選ぶ
 [whosay name="華織" color="olivedrab"]
 「気になった香り名があったら、これを取り出して、仰いでみて」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なるほど、こうやって選ぶのですね……）[p]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様と一緒にいると、新しい発見ができる気がします……）[p]
+[主人公目通常]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「こっちは、優しい香りみたいだね」 [p]
 ;説明する　カタカナ使ってもいい？
 [whosay name="調香店主" color=%mp.color]
 「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に"愛に効く香り"として[r]
 [sp]重宝されてますよ」[p]
+;～～～驚きつつ困惑照れ～～～
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
+
 [whosay name="華織" color="olivedrab"]
 「そ、そうなんですか？　」 [p]
 [whosay name="調香店主" color=%mp.color]
@@ -286,6 +319,9 @@
 [whosay name="調香店主" color=%mp.color]
 「よろしければ、華織様に近づいてご確認くださいね。[r]
 [sp]人がつけると香りも変わりますので……」[p]
+
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
@@ -302,6 +338,8 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;セリフは適当 もっとお上品にしてください
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （恥ずかしい……けれど、もう気にしなくても……いいかしら？）[p]
@@ -340,6 +378,8 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わ、私は、こちらの香りで大丈夫です！」 [p]
 
@@ -358,7 +398,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ええと……こうかしら？）[p]
 [whosay name="調香店主" color=%mp.color]
-「 華織様、そこは、つけて差し上げては如何でしょうか？　」
+「 華織様、そこは、つけて差し上げては如何でしょうか？　」[p]
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
 ;選択肢
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしようかしら）[p]
@@ -366,7 +408,6 @@
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
-
 [link target=*tukete]つけてもらう[endlink][r]
 [r][r][r]
 [link target=*not_tukete] 自分でつける [endlink]
@@ -377,6 +418,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
+[chara_mod name="bg" storage="toumei.gif"]
 #
 つけてもらう[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -409,6 +451,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
+[chara_mod name="bg" storage="toumei.gif"]
 #
 自分でつける[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
