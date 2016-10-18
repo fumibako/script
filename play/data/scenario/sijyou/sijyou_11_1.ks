@@ -104,7 +104,6 @@
 [主人公ほほえみ]
 [wait time=10]
 [p]
-
 ;ドキリとしてる感じ？やりすぎかも？　多いので直書きで。
 ;[四条目大]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
@@ -134,15 +133,11 @@
 ――想うゆえに苦しい気持ちも、[r]
 [sp] 私の大切な幸せのひとつ。[p]
 ;地の文で足掻いてみる
-
 [四条真剣]
 [四条効果消]
 [wait time=100]
-
 ;☆キャラの気づき 四条が主人公が頑張っていることに気づく
 ;照れてるままだと軽くみえるのでエモ消し
-
-
 [whosay name="華織" color="olivedrab"]
 「[名前]、
 [主人公通常]
@@ -150,7 +145,6 @@
 ;名前を呼ばれてから変更した方がいいかも？
 貴方は本当に僕が思っている以上のお人のようだ」[p]
 ;笑ってると腹がたつので[四条口開]はなしに
-
 [四条困り]
 [四条口微笑み]
 [whosay name="華織" color="olivedrab"]
@@ -162,29 +156,31 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-[四条退場]
-;[暗転]
 
+;////////////////////////////シーン追加分///////////////////////////
+[主人公通常]
 [whosay name="華織" color="olivedrab"]
 「歌舞伎座の帰りに会った僕の弟、[華衣]を覚えてる……？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい……」
-[主人公通常]
+「はい……」[p]
+[四条退場]
+;退場するのは静かに話をきいたにつなげるため
+;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(たしか、あの時、華織様との別れ際に現れた方でしたね)
+(たしか、あの時、華織様との別れ際に現れた方でしたね)[p]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(少し……怖そうな方でした)
+(少し……怖そうな方でした)[p]
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (でも、本当のところ[華衣]様とはどんな方でしょう……？)
-;///////////////////////選択肢///////////////
+;///////////////////////選択肢//////////////////////////
 ;背景が暗転なので仰々しいかもしれない
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
