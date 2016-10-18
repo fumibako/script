@@ -94,7 +94,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [sp]はぁ、来週からは奥様と[華衣]様が留学から帰ってくるらしいから大変[r]
 [sp]だわ」[p]
 [whosay name="女中・その壱" color=%mp.color]
-「奥様は、本当に[華衣]様にご執心ですものね。留学先では、結局、[r]
+「奥様は、本当に[華衣]様に ご執心ですものね。　留学先では、結局、[r]
 [sp]別荘にこもって遊んでいたらしいわ」[p]
 [whosay name="女中・その弐" color=%mp.color]
 「!! ちょっと！」[p]
@@ -131,6 +131,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [whosay name="華織" color="olivedrab"]
 「華衣、心を込めて書くんだよ」[p]
 ;シーン徐々に現時間へ
+#
 ;背景 ネリネの花やイメージ画像
 ;ないので[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -212,12 +213,14 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「本当は華衣の事を思うなら、大人らしく、ずっと会いたかった[r]
 [sp]君との見合いも断るべきだった」[p]
 [whosay name="華織" color="olivedrab"]
-「でも、[名前]、君と再会して、逢瀬を重ねて分かってしまったんだ」[p]
+「でも、[名前]、君と再会して、何度も会う中で[r]
+[sp]分かってしまったんだ」[p]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「勝手だと言われても、[名前]と離れることは嫌なんだ」[p]
+;さんづけは確定してからだったっけ(´・ω・`)知らんがな
 ;プレイヤーの気持ちなのでセリフは曖昧に
 ;胸に手を当てるポーズのイメージ
 ;[主人公口ムッ]
