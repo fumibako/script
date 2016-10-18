@@ -99,11 +99,15 @@
 [endif]
 その人は、どんな人込みの中でも見間違うことがなかった。[r]
 むこうもこちらに気づいて歩み寄る[p]
-;喜び全開
+;四条喜び全開
+[四条ポーズ着物]
+[四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「！　[名前]さん！　奇遇だね　こんなところで会えるなんて。[r]
 ;困り笑顔
+[四条困り微笑み]
 [sp]といっても、家が近いから運命と呼べるには気が早いかな」[p]
+[四条微笑み]
 ;恥ずかしい　戸惑い
 [主人公ポーズ通常]
 ;↓口：控え目な笑顔 [主人公口笑顔小]
@@ -118,10 +122,13 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしましょう…… せっかく会えたのに正式に会う手順を踏んでいないわ）[p]
 [主人公困り]
+;四条なにか気づくイメージ
+[四条目大]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様……またお会いする時、ご連絡ください」 [p]
 ;切ない　残念
 #
+[四条真剣]
 [whosay name="華織" color="olivedrab"]
 「待って！[名前]さん」[p]
 ;[主人公口開]
@@ -132,13 +139,18 @@
 ;↓口：通常 [主人公口通常]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
-「もう、気にしなくていいと思いますよ。　行きましょう！」 [p]
+「もう、気にしなくていいと思いますよ。　
+[四条笑顔]
+[四条頬染め]
+行きましょう！」 [p]
 ;手をつないで　(昔みたいに)
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様！？」[p]
 [主人公退場]
+[四条退場]
 ;【SE】うぐいす（ケキョケキョ）
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
 #
@@ -171,6 +183,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、これからは、ずっと繋いで歩けるのでしょうか） [p]
 昔、見た恋絵巻を見てるような出来事が、さも普通に訪れていることに驚きを隠せなかった。[p]
+[四条ポーズ着物]
+[四条笑顔]
+[四条頬染め]
 [whosay name="華織" color="olivedrab"]
 「 これからは、ずっと繋いで歩いて行けたらいいね」 [p]
 ;にこりと笑って
@@ -189,15 +204,20 @@
 [if exp="f.para_shujinkou_shukujodo < 200"]
 [fadeoutbgm time=3000]
 ;華織、焦って
+[四条驚き]
+[四条頬染め]
+[四条眉強気]
 [whosay name="華織" color="olivedrab"]
-「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心して！[r]
-[sp][名前]さんのことは、大事だから！　」[p]
+「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心してください！[r]
+[sp][名前]さんのことは、大事ですから！　」[p]
 ;華織様は手を振って、不思議なことを話しかけた[p]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「え？　」[p]
 ;【SE】うぐいす（ケキョケキョ）
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
+[四条眉困り]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「……なんでもないよ」[p]
 [主人公目閉じ]
@@ -207,9 +227,11 @@
 [endif]
 [fadeoutbgm time=3000]
 [主人公退場]
+[四条退場]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+;背景：店外
 ;華織、香りつながりで化粧品店、調香店に 行く
 [主人公ポーズ通常]
 [wait time=10]
@@ -222,6 +244,8 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
+[四条ポーズ着物]
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「ここは、祖母の知人が営んでいる 調香店だよ」[p]
 [主人公口ほほえみ]
@@ -229,6 +253,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇと、香水の専門店でしょうか……？」[p]
 ;ふたりで香水を選ぶ
+[四条口開]
 [whosay name="華織" color="olivedrab"]
 「そうだね。ただ、ここは海外の香水店を見習って調香できる店なんだ。[r]
 [sp]入ってみよう」[p]
@@ -239,11 +264,16 @@
 [主人公通常]
 [wait time=10]
 [主人公目閉じ]
+[四条退場]
 ;主人公退場でもいい
 ;背景説明　背景ないので未
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[四条登場]
+[四条通常]
 ;説明・四条綾花・・・祖母　散策をみてね
 [主人公通常]
 [wait time=10]
@@ -384,6 +414,8 @@
 [cm]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;セリフは適当 もっとお上品にしてください
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -446,6 +478,8 @@
 [cm]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [主人公ポーズ片手]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -524,6 +558,8 @@
 [current layer="message0"]
 [cm]
 [chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
 つけてもらう[p]
 [主人公真剣]
@@ -570,7 +606,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（～！　）[p]
+（！　）[p]
 [whosay name="華織" color="olivedrab"]
 「だ、大丈夫でしょうか？」[p]
 [主人公驚]
@@ -586,6 +622,8 @@
 [current layer="message0"]
 [cm]
 [chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
 自分でつける[p]
 [主人公驚]
@@ -673,7 +711,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なんという名前にしようかしら……）[p]
 [endif]
-
 ;転
 ;仲良くしていると 調香店の店主は四条祖母、綾花と祖父、源次郎の若いころの思い出を語る
 ;↓目：通常 [主人公目通常]
@@ -717,6 +754,7 @@
 [playbgm storage="sittori_umikaze.ogg" loop=true]
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
+;店外　効果セピア
 [whosay name="調香店主" color=%mp.color]
 「綾花様は、私が店を始めだした時からのお客様でね、[r]
 [sp]華道の修業も兼ねてですが、この店の窓際に花を活けてもらっていたんです」[p]
