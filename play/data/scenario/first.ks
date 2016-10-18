@@ -67,7 +67,18 @@ f.preload_images2 = ["data/fgimage/message_bg/frame_red.png","data/fgimage/messa
 [cm]
 [font color=white]
 ・・・読込中・・・[r]
-100%
+100%[r]
+[r]
+・click・[r]
+[r]
+設定によっては音が鳴ります[r]
+（タイトル画面右下で設定してください）[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪解け（タイトル画面等）click=trueは一部ブラウザでクリック待ち的な動作をすることがあるため除いて運用中
+[playbgm storage="title_yukidoke.ogg" loop=true]
+[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+[endif]
+
 
 [resetfont]
 [cm]
