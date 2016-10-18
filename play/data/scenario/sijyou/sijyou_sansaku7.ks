@@ -430,6 +430,8 @@
 （恥ずかしい……けれど、もう気にしなくても……いいかしら？）[p]
 #
 華織様に近づいて首筋から温かく溢れる香りを確かめる。 [p]
+[四条頬染]
+[四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 （ [名前] さんが……） [p]
 ;[主人公横伏目]
@@ -439,8 +441,11 @@
 （華織様が……）[p]
 [whosay name=ふたり color="%mp.color"]
 ((　近い　)) [p]
+;イライラする
 ;お互いに目があって離れる？
 ;↓目：柔和な伏目 [主人公目伏柔]
+#
+[四条目閉じ]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
 さっきまでの爽やかに変わっていった香りが、華やかで印象深い香りへと変わっていく。[p]
@@ -450,6 +455,9 @@
 (この香り、華織様の印象に合っていて……まるで華織様に抱きしめられているみたいだわ……）[p]
 ;書くの辛い・・・
 ふと、私は今の状態がどんな態勢であるか気になってしまった。[p]
+;四条耐える　戸惑い
+[四条微笑み]
+[四条汗]
 [whosay name="華織" color="olivedrab"]
 「[名前] さん……」 [p]
 [主人公目通常]
@@ -463,8 +471,23 @@
 ;↓口：通常 [主人公口通常]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[四条笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「い、いいですよ、僕が頼んだみたいのものですから」[p]
+;~~~~~四条安堵~~~~~
+;[四条頬染め]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
+[wait time=10]
+;[四条眉通常]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
+[wait time=10]
+;[四条目閉じ]
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
+;[四条口ムッ]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
+[wait time=10]
+;~~~~~四条安堵~~~~~
 [whosay name="調香店主" color=%mp.color]
 「あらま。お二人とも照れちゃって！[r]
 [sp]あながち間違いではないでしょう？」[p]
@@ -475,6 +498,8 @@
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+[四条汗]
+[四条困り微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「か、からかわないで下さいよ」[p]
 @jump target=*common
@@ -500,6 +525,7 @@
 *common
 [主人公目通常]
 [主人公眉通常]
+[四条微笑み]
 ;共通
 ;いたずらに笑ってみている店主
 [whosay name="調香店主" color=%mp.color]
@@ -612,6 +638,7 @@
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+[四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 「くすぐったかったらごめんね」[p]
 ;セリフは適当。お上品にしてください
@@ -622,11 +649,36 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （！　）[p]
+;~~~~~~~四条控えめな驚き~~~~~~~
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+;[四条口開]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_ake.png" time=0]
+[wait time=10]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
+;~~~~~~~四条控えめな驚き~~~~~~~
 [whosay name="華織" color="olivedrab"]
 「だ、大丈夫でしょうか？」[p]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　少しくすぐったかっただけですから！」[p]
+;~~~~~四条安堵~~~~~
+;[四条頬染め]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
+[wait time=10]
+;[四条眉通常]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
+[wait time=10]
+;[四条目閉じ]
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
+;[四条口ムッ]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
+[wait time=10]
+;~~~~~四条安堵~~~~~
 @jump target=*common2
 ;だめだわ、ラブ波に耐えられないイライラする
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
@@ -650,6 +702,7 @@
 [主人公ポーズ通常]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *common2
+[四条微笑み]
 ;～～～驚きつつ困惑照れ～～～
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -670,6 +723,8 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
 [wait time=10]
 華織様がそっと肩に近づく。[p]
+;[四条頬染め]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
 [whosay name="華織" color="olivedrab"]
 「うん、いい香りだね」[p]
 ;↓目：柔和な伏目 [主人公目伏柔]
@@ -695,7 +750,8 @@
 ;うるさいかも↓
 [whosay name="調香店主" color=%mp.color]
 「香水というものは、一歩間違えると嫌味な匂いになってしまいますからね[r]
-特にまだ海外製品が多いので体にあっているものが少ないんです][p]
+[sp]特にまだ海外製品が多いので体にあっているものが少ないんです][p]
+;ハーフは入ってませんよ！
 [whosay name="華織" color="olivedrab"]
 「ふたりで調和する香りなんだね。　いいね。　[r]
 [sp]これを二人の思い出の品の ひとつにしようか」[p]
@@ -787,8 +843,9 @@
 [whosay name="調香店主" color=%mp.color]
 「源次郎様は四条家のひとり息子であらされましたが、色々と苦労をされていた様子でしたね」[p]
 [whosay name="調香店主" color=%mp.color]
-「ええ、彼は努力家ではありましたが、どうも語学にはからっきしダメなようで、[r]
-[sp]海外貿易必須の鉱山業で、源次郎様は、お父様によく怒られていたそうです」[p]
+「ええ、彼は努力家ではありましたが、どうも語学にはからっきしダメな[r]
+[sp]ようで、海外貿易必須の鉱山業で、源次郎様は、お父様によく怒られ[r]
+[sp]ていたそうです」[p]
 [whosay name="華織" color="olivedrab"]
 「 あの厳格な祖父がですか……？」[p]
 ;↓効果：頬染め [主人公頬染め]
@@ -814,19 +871,20 @@
 [sp]なんだっていいますとね」[p]
 ;そんなとき、店の前を通りがかった源次郎は、従妹の綾花と偶然再会し、花で励まされたという
 [whosay name="調香店主" color=%mp.color]
-「　『この花は、君が活けているのか？ 』 と、真剣に尋ねてくるのですよ。[r]
-[sp]あまりに神妙な顔で聞いてくるものだから、私、本当のことを教えてしまって」[p]
+「　『この花は、君が活けているのか？ 』 と、真剣に尋ねてくるのですよ」[p]
 [whosay name="調香店主" color=%mp.color]
-「どうやら、毎回、ここの花を見て励まされているみたいで、[r]
-[sp]店の前で綾花様を一目でも見ようと寒空の下、待っていたんですよ。[r]
-[sp]そうしたらね……」[p]
+「あまりに神妙な顔で聞いてくるものだから、私、本当のことを教えてしまって」[p]
+[whosay name="調香店主" color=%mp.color]
+「どうやら、源次郎様あ、毎回、ここの生け花を見て励まされて[r]
+[sp]いるみたいで、店の前で綾花様を一目でも見ようと寒空の
+[sp]下、待っていたんですよ。 そうしたらね……」[p]
 [主人公目パチ1回]
 [whosay name="調香店主" color=%mp.color]
 「そうしたら、なんと！[r]
 [sp]綾花様と、お祖父様、四条源次郎様の[ruby text=い]従[ruby text=とこ]妹で、"婚約者候補"だったって[r]
 [sp]ワケですよ」 [p]
 [whosay name="調香店主" color=%mp.color]
-「驚いちゃいましたよ。　とても素敵な縁を感じましたよ～～」[p]
+「驚いちゃいましたよ。　とても素敵な縁を感じましたね」[p]
 [whosay name="華織" color="olivedrab"]
 「そうですね。　僕もそう思います。　"再会した"ってところにも、[r]
 [sp]とても深い縁を感じますね」[p]
@@ -990,8 +1048,8 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 ;おまけに飛ぶ？
-[whosay name="華織" color="olivedrab"]
-（帰ったら未来の君のために頑張らないと……）[p]
+;[whosay name="華織" color="olivedrab"]
+;（帰ったら未来の君のために頑張らないと……）[p]
 #
 ;@jump storage="sijyou/sijyou_omake_kai.ks"
 [イベントシーン終了]
