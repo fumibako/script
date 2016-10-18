@@ -18,13 +18,13 @@
 
 @layopt layer=message0 page=fore visible=true
 [font color=white]
-_　　・・・読込中・・・[r]
+_　　　　・・・読込中・・・[r]
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
 f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/toumei.gif"];
 [endscript]
 [preload storage=&f.preload_images_title1 wait=true]
-_　　　　20%
+_　　　　　　　  20%
 
 [iscript]
 f.preload_images_title2 = ["data/image/button_title_start.png","data/image/button_title_load.png","data/image/button_title_cg.png","data/image/button_title_replay.png","data/image/button_title_credit.png"];
@@ -32,8 +32,8 @@ f.preload_images_title2 = ["data/image/button_title_start.png","data/image/butto
 [preload storage=&f.preload_images_title2 wait=true]
 [cm]
 [font color=white]
-_　　・・・読込中・・・[r]
-_　　　　40%
+_　　　　・・・読込中・・・[r]
+_　　　　　　　  40%
 
 [iscript]
 f.preload_images_title3 = ["data/image/toumei.gif","data/image/button_bgm_off.png","data/image/button_bgm_on.png","data/image/button_se_off.png","data/image/button_se_on.png","data/image/button_kskip_off.png","data/image/button_kskip_on.png","data/image/button_boost_off.png"];
@@ -41,8 +41,8 @@ f.preload_images_title3 = ["data/image/toumei.gif","data/image/button_bgm_off.pn
 [preload storage=&f.preload_images_title3 wait=true]
 [cm]
 [font color=white]
-_　　・・・読込中・・・[r]
-_　　　　60%
+_　　　　・・・読込中・・・[r]
+_　　　　　　　  60%
 
 
 
@@ -55,8 +55,8 @@ f.preload_images1 = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_ka
 [preload storage=&f.preload_images1 wait=true]
 [cm]
 [font color=white]
-_　　・・・読込中・・・[r]
-_　　　　80%
+_　　　　・・・読込中・・・[r]
+_　　　　　　　  80%
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
@@ -66,7 +66,7 @@ f.preload_images2 = ["data/fgimage/message_bg/frame_red.png","data/fgimage/messa
 [preload storage=&f.preload_images2 wait=true]
 [cm]
 [font color=white]
-_　　・・・読込中・・・[r]
+_　　　　・・・読込中・・・[r]
 _　　　　　　　 100%[r]
 [r][r][font size=32]
 _　　　　・　click　・[r]
