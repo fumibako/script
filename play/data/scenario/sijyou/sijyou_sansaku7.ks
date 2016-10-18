@@ -42,6 +42,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （こんなに人通りが多くては、ぶつかりそうで、散策するのも[r]
 [sp]気が楽ではないわ。……少ししたら帰りましょう）[p]
+;↓口：通常 [主人公口通常]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 [fadeoutbgm time=3000]
 人込みを避けて大通りをぬけていこうとしたときだった――[r]
 　大量の花弁を持ち上げて春の嵐が吹き抜けていく。[p]
@@ -126,6 +129,9 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「で、ですが」[p]
+;↓口：通常 [主人公口通常]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「もう、気にしなくていいと思いますよ。　行きましょう！」 [p]
 ;手をつないで　(昔みたいに)
@@ -184,7 +190,8 @@
 [fadeoutbgm time=3000]
 ;華織、焦って
 [whosay name="華織" color="olivedrab"]
-「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心して！」[p]
+「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心して！[r]
+[sp][名前]さんのことは、大事だから！　」[p]
 ;華織様は手を振って、不思議なことを話しかけた[p]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -832,6 +839,8 @@
 [whosay name="華織" color="olivedrab"]
 「ふふ、つまり結婚ってすごいことなんだね」[p]
 ;主人公微笑んでうなづく
+[主人公ポーズ通常]
+[wait time=10]
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇ……」[p]
@@ -882,6 +891,9 @@
 [wait time=10]
 #
 華織様は、 手をとって口づけをする。[p]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「指輪は、また次の機会に、」[p]
 ;～～～驚きつつ困惑照れ～～～
@@ -922,7 +934,7 @@
 [whosay name="華織" color="olivedrab"]
 （帰ったら未来の君のために頑張らないと……）[p]
 #
-@jump storage="sijyou/sijyou_omake_kai.ks"
+;@jump storage="sijyou/sijyou_omake_kai.ks"
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
