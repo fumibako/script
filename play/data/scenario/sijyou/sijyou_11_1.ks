@@ -162,12 +162,25 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-;ここで「～華衣を覚えているかい？」だと;静かに話をきいたに繋がりが悪い
 [四条退場]
 ;[暗転]
-[主人公通常]
-[chara_mod name="bg" storage="toumei.gif"]
+[whosay name="華織" color="olivedrab"]
+「歌舞伎座の帰りに会った僕の弟、[華衣]を覚えてる……？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい……」
 [主人公目閉じ]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(たしか、あの時、華織様との別れ際に現れた方でしたね)
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(少し……怖そうな方でした)
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(でも、本当のところ[華衣]様とはどんな方でしょう……？)
 ;///////////////////////選択肢///////////////
 ;背景が暗転なので仰々しいかもしれない
 ;選択肢用レイヤーを追加
