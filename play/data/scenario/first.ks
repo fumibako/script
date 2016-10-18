@@ -16,6 +16,11 @@
 ;タイトルの設定
 [title name="恋綴り"]
 
+[if exp="sf.BGM=='OFF'"]
+;BGM設定がOFFの場合はロード時点で再生していたBGMを停止します。
+[stopbgm]
+[endif]
+
 @layopt layer=message0 page=fore visible=true
 [font color=white]
 _　　　　　　・・・読込中・・・[r]
@@ -43,9 +48,6 @@ f.preload_images_title3 = ["data/image/toumei.gif","data/image/button_bgm_off.pn
 [font color=white]
 _　　　　　　・・・読込中・・・[r]
 _　　　　　　　　  60%
-
-
-
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
