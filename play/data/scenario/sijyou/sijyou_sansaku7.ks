@@ -100,7 +100,7 @@
 その人は、どんな人込みの中でも見間違うことがなかった。[r]
 むこうもこちらに気づいて歩み寄る[p]
 ;四条喜び全開
-[四条ポーズ着物]
+[四条ベース着物]
 [四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「！　[名前]さん！　奇遇だね　こんなところで会えるなんて。[r]
@@ -154,6 +154,7 @@
 ;【SE】うぐいす（ケキョケキョ）
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
 #
+;//////////////////~~シーン銀座~~////////////////////////////
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 ;背景銀座
@@ -183,7 +184,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、これからは、ずっと繋いで歩けるのでしょうか） [p]
 昔、見た恋絵巻を見てるような出来事が、さも普通に訪れていることに驚きを隠せなかった。[p]
-[四条ポーズ着物]
+[四条ベース着物]
 [四条笑顔]
 [四条頬染め]
 [whosay name="華織" color="olivedrab"]
@@ -201,6 +202,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいところ……ですか？」[p]
+;淑女度低い場合
 [if exp="f.para_shujinkou_shukujodo < 200"]
 [fadeoutbgm time=3000]
 ;華織、焦って
@@ -228,6 +230,7 @@
 [fadeoutbgm time=3000]
 [主人公退場]
 [四条退場]
+;////////////////////~~シーン香水店前~~~///////////////////////////
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -244,7 +247,7 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-[四条ポーズ着物]
+[四条ベース着物]
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「ここは、祖母の知人が営んでいる 調香店だよ」[p]
@@ -266,13 +269,14 @@
 [主人公目閉じ]
 [四条退場]
 ;主人公退場でもいい
-;背景説明　背景ないので未
+;////////////////////~~シーン香水店内~~~///////////////////////////
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[四条登場]
+;背景説明　背景ないので未
+[四条ベース着物]
 [四条通常]
 ;説明・四条綾花・・・祖母　散策をみてね
 [主人公通常]
@@ -391,7 +395,8 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 ;～～～驚きつつ困惑照れ～～～
-;選択肢
+;～～～～～～～～選択肢～～～～～～～～～～～～～
+[四条退場]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしようかしら）
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
@@ -405,7 +410,7 @@
 [r][r][r]
 [link target=*not_kag] 小瓶の香りを確かめる[endlink]
 [s]
-
+;～～～～～～～～選択肢～～～～～～～～～～～～～
 *kag
 [resetfont]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -416,6 +421,7 @@
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[四条ベース着物]
 ;セリフは適当 もっとお上品にしてください
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -470,6 +476,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「か、からかわないで下さいよ」[p]
 @jump target=*common
+;～～～～～～～～選択肢～～～～～～～～～～～～～
 *not_kag
 [resetfont]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -480,12 +487,13 @@
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[四条ベース着物]
 [主人公ポーズ片手]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わ、私は、こちらの香りで大丈夫です！」 [p]
 [主人公ポーズ通常]
-
+;～～～～～～～～選択肢～～～～～～～～～～～～～
 *common
 [主人公目通常]
 [主人公眉通常]
@@ -540,7 +548,8 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 ;～～～驚きつつ困惑照れ～～～
-;選択肢
+;～～～～～～～～選択肢～～～～～～～～～～～～～
+[四条退場]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしようかしら）
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -551,6 +560,7 @@
 [r][r][r]
 [link target=*not_tukete] 自分でつける [endlink]
 [s]
+;～～～～～～～～選択肢～～～～～～～～～～～～～
 *tukete
 [resetfont]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -560,6 +570,7 @@
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[四条ベース着物]
 #
 つけてもらう[p]
 [主人公真剣]
@@ -613,8 +624,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　少しくすぐったかっただけですから！」[p]
 @jump target=*common2
-;だめだわ、ラブ波に耐えられない
-
+;だめだわ、ラブ波に耐えられないイライラする
+;～～～～～～～～選択肢～～～～～～～～～～～～～
 *not_tukete
 [resetfont]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -624,6 +635,7 @@
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[四条ベース着物]
 #
 自分でつける[p]
 [主人公驚]
@@ -631,6 +643,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　私、自分で出来ますので！」[p]
 [主人公ポーズ通常]
+;～～～～～～～～選択肢～～～～～～～～～～～～～
 *common2
 ;～～～驚きつつ困惑照れ～～～
 ;↓効果：頬染め [主人公頬染め]
@@ -882,6 +895,7 @@
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇ……」[p]
+[四条退場]
 [主人公目通常]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -899,6 +913,7 @@
 ;【背景】主人公邸 玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[四条ベース着物]
 [主人公ポーズ通常]
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
@@ -959,6 +974,7 @@
 [endif]
 [whosay name="華織" color="olivedrab"]
 「今度は正式に会いましょう　その時までにこの香りを覚えておくよ」[p]
+[四条退場]
 #
 華織様は、手をとって門前まで送ると、会釈をして帰っていった。[r]
 まだ首筋には、ほんのりと香りが残して……[p]
