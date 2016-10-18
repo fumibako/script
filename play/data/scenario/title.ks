@@ -1,6 +1,4 @@
-﻿
 @clearstack
-[stopbgm]
 
 ;==============================
 ; タイトル画面
@@ -101,17 +99,12 @@ TG.stat.play_se = true;
 [endif]
 
 [if exp="sf.BGM=='OFF'"]
-;ロード時点で再生していたBGMを停止します。
-[stopbgm]
 [locate x=665 y=480]
 [button name="button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on" ]
 [else]
 [eval exp="sf.BGM='ON'"]
 [locate x=665 y=480]
 [button name="button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off" ]
-;【BGM】雪解け（タイトル画面等）click=trueは一部ブラウザでクリック待ち的な動作をすることがあるため除いて運用中
-[playbgm storage="title_yukidoke.ogg" loop=true]
-[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
 
 ;-----設定タグここまで-----
@@ -312,11 +305,6 @@ TG.stat.play_se = false;
 [locate x=795 y=480]
 [button name="button_se_to_on" graphic="button_se_off.png" target="*se_on" ]
 [s]
-
-
-
-
-
 
 
 ;----------既読スキップ有が選択された時
