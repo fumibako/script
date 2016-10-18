@@ -187,6 +187,8 @@
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「え？　」[p]
+;【SE】うぐいす（ケキョケキョ）
+[playse storage=tori_uguisu_pikyo.ogg loop=false ]
 [whosay name="華織" color="olivedrab"]
 「……なんでもないよ」[p]
 [主人公目閉じ]
@@ -319,7 +321,9 @@
 [whosay name="調香店主" color=%mp.color]
 「よろしければ、華織様に近づいてご確認くださいね。[r]
 [sp]人がつけると香りも変わりますので……」[p]
-
+;選択肢
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（どうしようかしら）
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -403,7 +407,7 @@
 [eval exp="f.haikei_credit=''"]
 ;選択肢
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（どうしようかしら）[p]
+（どうしようかしら）
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
