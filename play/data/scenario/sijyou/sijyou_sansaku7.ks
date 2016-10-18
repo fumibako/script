@@ -289,6 +289,9 @@
 「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に"愛に効く香り"として[r]
 [sp]重宝されてますよ」[p]
 ;～～～驚きつつ困惑照れ～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 ;↓目：[主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -299,7 +302,6 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 ;～～～驚きつつ困惑照れ～～～
-
 [whosay name="華織" color="olivedrab"]
 「そ、そうなんですか？　」 [p]
 [whosay name="調香店主" color=%mp.color]
@@ -315,6 +317,10 @@
 「ありがとう」[p]
 #
 店主が華織様に手渡す小瓶から、微かな香りが流れ、鼻をくすぐる。[p]
+[主人公眉通常]
+[主人公目閉じ]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （いい香りがするわ……優しい花の香りから、爽やかな香りに変わって[r]
 [sp]いくのですね）[p]
@@ -322,6 +328,9 @@
 「よろしければ、華織様に近づいてご確認くださいね。[r]
 [sp]人がつけると香りも変わりますので……」[p]
 ;～～～驚きつつ困惑照れ～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 ;↓目：[主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -381,9 +390,12 @@
 ふと、私は今の状態がどんな態勢であるか気になってしまった。[p]
 [whosay name="華織" color="olivedrab"]
 「[名前] さん……」 [p]
+[主人公目通常]
 ――　目と目が合う[p]
+[主人公驚]
 香りにつられたのか、華織様との距離あ、いつもより、とても近い場所に私はいた。[p]
 それこそ抱きしめているかのような距離。[p]
+[主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「! ご、ごめんなさい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -391,6 +403,13 @@
 [whosay name="調香店主" color=%mp.color]
 「あらま。お二人とも照れちゃって！[r]
 [sp]あながち間違いではないでしょう？」[p]
+[主人公ポーズ通常]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「か、からかわないで下さいよ」[p]
 @jump target=*common
@@ -402,8 +421,10 @@
 [cm]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わ、私は、こちらの香りで大丈夫です！」 [p]
+[主人公ポーズ通常]
 
 *common
 ;共通
@@ -413,10 +434,24 @@
 ;マドラー的なものでかき混ぜる
 [whosay name="調香店主" color=%mp.color]
 「はい、どうぞ」[p]
+;～～～驚きつつ困惑照れ２～～～
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：小さく開けた状態。
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ２～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい！」[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]さんも、首の後ろにつけてごらん」[p]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ええと……こうかしら？）[p]
 [whosay name="調香店主" color=%mp.color]
@@ -424,6 +459,9 @@
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 ;～～～驚きつつ困惑照れ～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 ;↓目：[主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -454,6 +492,8 @@
 [chara_mod name="bg" storage="toumei.gif"]
 #
 つけてもらう[p]
+[主人公真剣]
+;↑のほうが爽やか？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様、私、よくわからないので、ぜひお願いします」[p]
 [whosay name="華織" color="olivedrab"]
@@ -462,6 +502,20 @@
 華織様は、小瓶から木箆をとると、余分な香水を落として[名前]の目の前に差し出した。[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、悪いけど髪をあげてくれますか？　」[p]
+;～～～驚きつつ困惑照れ２～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：小さく開けた状態。
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ２～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 [whosay name="華織" color="olivedrab"]
@@ -469,10 +523,14 @@
 ;セリフは適当。お上品にしてください
 #
 冷たい香りの露が首筋を撫でる。[p]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （～！　）[p]
 [whosay name="華織" color="olivedrab"]
 「だ、大丈夫でしょうか？」[p]
+[主人公驚き]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　少しくすぐったかっただけですから！」[p]
 @jump target=*common2
@@ -626,6 +684,7 @@
 [sp]本当は、とても仲の良い夫婦ですね……」[p]
 [whosay name="華織" color="olivedrab"]
 「ねぇ、[名前]さん」[p]
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？　はい」[p]
 [whosay name="華織" color="olivedrab"]
@@ -634,46 +693,81 @@
 ;あの時て何?の説明
 #
 私は、この長い時の流れによる人の繋がりと共に、あの時にみたネリネの花と手紙に綴られた幸せな願いについて思い出した。[p]
+[主人公目閉]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （幸せの訪れる日……)[p]
+[主人公目伏柔]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね……感慨深いですね[r]
 [sp]華織様のお祖母様とお祖父様が結ばれて、[ruby text=お]義[ruby text=とう]父様と [ruby text=お]義[ruby text=かぁ]母様が
 出会って[r]
 [sp]……華織様に出会えて」[p]
 ;その中には兄もいるけど省略
+[主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな風に考えると、とても素敵で長い年月の縁に思いを馳せてしまいますね」[p]
 [whosay name="華織" color="olivedrab"]
 「ふふ、つまり結婚ってすごいことなんだね」[p]
 ;主人公微笑んでうなづく
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇ……」[p]
+[主人公目通常]
+[主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そういえば、私のお父様とお母様は、どの様にしてお近づきになられたのでしょう？）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お父様が帰ってきたら聞いてみようかしら）[p]
+[主人公ポーズ通常]
+[主人公目閉]
 #
-それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う[p]
+――それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う[p]
+[主人公退場]
 ;結
+#
 ;背景、主人公家の前
 ;【背景】主人公邸 玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[主人公ポーズ通常]
+[主人公通常]
 [whosay name="華織" color="olivedrab"]
 「今日は、急な誘いについて来てくれてありがとう。　おかげで素敵な話を聞くことができたよ」[p]
+[主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「こちらこそ。素敵な時間をありがとうございます」[p]
 [whosay name="華織" color="olivedrab"]
 「その、名前さんが嫌でなければ、ですが……手を出してもらっていいですか？　」[p]
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「手ですか？　」
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！！」[p]
 #
 華織様は、 手をとって口づけをする。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「指輪は、また次の機会に、」[p]
+;～～～驚きつつ困惑照れ～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
 [whosay name="華織" color="olivedrab"]
 「ふふ、[名前]さん、いい香りだね」 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
