@@ -210,8 +210,8 @@
 [四条頬染め]
 [四条眉強気]
 [whosay name="華織" color="olivedrab"]
-「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心してください！[r]
-[sp][名前]さんのことは、大事ですから！　」[p]
+「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心して[r]
+[sp]ください！ [名前]さんのことは、大事ですから！　」[p]
 ;華織様は手を振って、不思議なことを話しかけた[p]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -226,6 +226,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (蕎麦屋の二階に何があるのでしょう？　後で磯野に聞いてみようかしら？）[p]
 ;ちなみに調べてはダメだ
+;以上大人と子供でした
 [endif]
 [fadeoutbgm time=3000]
 [主人公退場]
@@ -273,7 +274,7 @@
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;背景説明　背景ないので未
 [四条ベース着物]
@@ -419,9 +420,10 @@
 [cm]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
+[四条微笑み]
 ;セリフは適当 もっとお上品にしてください
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -485,9 +487,10 @@
 [cm]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
+[四条微笑み]
 [主人公ポーズ片手]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -568,9 +571,10 @@
 [current layer="message0"]
 [cm]
 [chara_mod name="bg" storage="toumei.gif"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
+[四条微笑み]
 #
 つけてもらう[p]
 [主人公真剣]
@@ -633,9 +637,10 @@
 [current layer="message0"]
 [cm]
 [chara_mod name="bg" storage="toumei.gif"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi" time=2000 wait=false]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
+[四条微笑み]
 #
 自分でつける[p]
 [主人公驚]
@@ -907,13 +912,13 @@
 #
 ――それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う[p]
 [主人公退場]
-;結
 #
-;背景、主人公家の前
+;~~~~~~~~~~~~~~~~~~~~~~~~~~シーン主人公家の前~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;【背景】主人公邸 玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [四条ベース着物]
+[四条微笑み]
 [主人公ポーズ通常]
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
