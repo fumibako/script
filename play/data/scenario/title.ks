@@ -109,8 +109,8 @@ TG.stat.play_se = true;
 [eval exp="sf.BGM='ON'"]
 [locate x=665 y=480]
 [button name="button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off" ]
-;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="title_yukidoke.ogg" click=true loop=true]
+;【BGM】雪解け（タイトル画面等）click=trueは一部ブラウザでクリック待ち的な動作をすることがあるため除いて運用中
+[playbgm storage="title_yukidoke.ogg" loop=true]
 [eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
 
@@ -266,7 +266,7 @@ if(e.keyCode === 39 || e.keyCode === 32) {
 
 ;----------BGM onが選択された時
 *bgm_on
-;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+;【BGM】雪解け（タイトル画面等）click=trueは一部ブラウザでクリック待ち的な動作をすることがあるため除いて運用中
 [playbgm storage="title_yukidoke.ogg" loop=true]
 [eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
