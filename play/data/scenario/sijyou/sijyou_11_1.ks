@@ -181,7 +181,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (でも、本当のところ[華衣]様とはどんな方でしょう……？)
 ;///////////////////////選択肢//////////////////////////
-;背景が暗転なので仰々しいかもしれない
+;背景変更:和紙風 水色
+[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
