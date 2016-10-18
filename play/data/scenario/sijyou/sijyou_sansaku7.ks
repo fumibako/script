@@ -205,35 +205,34 @@
 「いつも　祖母がお世話になっています」 [p]
 ;店内の花のディスプレイをしてもらっている
 [whosay name="調香店主" color=%mp.color]
-「いえいえ！　こちらこそ、 お世話になっています」 [p]
-
+「いえいえ！　こちらこそ、 お世話になっています!」 [p]
 [whosay name="調香店主" color=%mp.color]
 「なんたって、華道の名士の”四条綾花様”に店内に華を添えて[r]
 [sp]頂いているおかげで、こんな偏屈な店でも、閑古鳥が鳴くこともなく、[r]
 [sp]素敵なお客様達が来て頂けるのですから！」[p]
+店主は、口早にお世辞を言うと楽し気に私たちを迎えれた。[p]
 ;ふたりを見てお世辞をいう店主　まぁまぁ儲かってはいるようだ
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(とても溌剌とした方ですのね。華織様はたまに来られるのでしょうか？)[p]
 [whosay name="華織" color="olivedrab"]
-「ふふ、お元気そうで何よりです。[r]
-[sp]今日はお客として来ましたので、選ばせてもらってもいいでしょうか？」 [p]
+「ふふ、  お元気そうで何よりです。[r]
+[sp]今日は祖母の付き人ではなく、お客として来ましたので、選ばせて[r]
+[sp]もらってもいいでしょうか？」 [p]
 [whosay name="調香店主" color=%mp.color]
 「ええ、もちろん！」[p]
 #
 調香店の主は、いくつか持ち出してくると、ふたりの前に小瓶を並べる。[r]
-その小瓶の中には僅かにだけ、香水が入っており、薄い木の棒が漬けられていた。[p]
+その小瓶の中には僅かにだけ、香水が入っており、手に取りやすい大きさの木箆が漬けられていた。[p]
 
 ;ふたりで選ぶ
-
 [whosay name="華織" color="olivedrab"]
 「気になった香り名があったら、これを取り出して、仰いでみて」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なるほど、こうやって選ぶのですね……）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織様と一緒にいると、新しい発見ができる気がします……）[p]
 [whosay name="華織" color="olivedrab"]
 「こっちは、優しい香りみたいだね」 [p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-
-（華織様と一緒にいると、新しい発見ができる気がします……）[p]
-;ラブ波に耐えられない
 ;説明する　カタカナ使ってもいい？
 [whosay name="調香店主" color=%mp.color]
 「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に"愛に効く香り"として重宝されてますよ」[p]
@@ -276,17 +275,32 @@
 （恥ずかしい……けれど、もう気にしなくても……いいかしら？）[p]
 #
 華織様に近づいて首筋から温かく溢れる香りを確かめる。 [p]
-
 [whosay name="華織" color="olivedrab"]
 （ [名前] さんが……） [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様が……）[p]
 [whosay name=ふたり color="%mp.color"]
-((近い)) [p]
+((　近い　)) [p]
 ;お互いに目があって離れる？
-
-;ラブ波に耐えられない
-
+さっきまでの爽やかに変わっていった香りが、華やかで印象深い香りへと変わっていく。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(この香り、華織様の印象に合っていて……まるで華織様に抱きしめられているみたいだわ……）[p]
+;書くの辛い・・・
+ふと、私は今の状態がどんな態勢であるか気になってしまった。[p]
+[whosay name="華織" color="olivedrab"]
+「[名前] さん……」 [p]
+――　目と目が合う[p]
+香りにつられたのか、華織様との距離あ、いつもより、とても近い場所に私はいた。[p]
+それこそ抱きしめているかのような距離。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「! ご、ごめんなさい」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「い、いいですよ、僕が頼んだみたいのものですから」[p]
+[whosay name="調香店主" color=%mp.color]
+「あらま。お二人とも照れちゃって！[r]
+[sp]あながち間違いではないでしょう？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「か、からかわないで下さいよ」[p]
 @jump target=*common
 *not_kag
 [resetfont]
@@ -344,7 +358,10 @@
 冷たい香りの露が首筋を撫でる[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （～！　）[p]
-
+[whosay name="華織" color="olivedrab"]
+「だ、大丈夫でしょうか？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「だ、大丈夫です！　少しくすぐったかっただけですから！」[p]
 @jump target=*common2
 ;だめだわ、ラブ波に耐えられない
 
@@ -376,6 +393,26 @@
 「ふたりで調和する香りなんだね。　いいね。　これにしようか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」 [p]
+[whosay name="調香店主" color=%mp.color]
+「よろしければ、この香水に名前をつけてあげてくださいね[r]
+[r]そうしますと、愛着も増してつける具合も変わってきますから……」[p]
+;淑女度で変更
+[if exp="f.para_shujinkou_shukujodo < 200"]
+[whosay name="華織" color="olivedrab"]
+「そうですね　どんな名前にしようかな」[r]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華やかだけど調和する香り……[r]
+[sp]そこに華やかに佇んでいても、周囲を和ませてくれる香りだから）[p]
+;思いつかない 華はな和わけ？
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織……なんて。[r]
+[sp]……華織様なんというでしょうか）[p]
+[else]
+[whosay name="華織" color="olivedrab"]
+「そうですね　よく考えておきます」[r]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（なんという名前にしようかしら……）[p]
+[endif]
 
 ;転
 ;仲良くしていると 調香店の店主は四条祖母、綾花と祖父、源次郎の若いころの思い出を語る
@@ -414,19 +451,20 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （思わず、聞き及んでしまいますね）[p]
 [whosay name="調香店主" color=%mp.color]
-「ええ、彼は生真面目なんですよ。　苦労していた分にね。　人にも努力を求めてしまう、たまにいる教師みたいな人ですね～」
+「ええ、彼は生真面目なんですよ。　苦労していた分にね。[r]
+[sp]人にも努力を求めてしまう、たまにいる教師みたいな人ですね～」[p]
 [whosay name="調香店主" color=%mp.color]
 「おっと、話がそれてしまいましたね。　その浮かない源次郎様が、なんだっていいますとね」[p]
 ;そんなとき、店の前を通りがかった源次郎は、従妹の綾花と偶然再会し、花で励まされたという
 [whosay name="調香店主" color=%mp.color]
-「　『この花は、君が活けているのか？ 』と真剣に尋ねてくるのですよ。
+「　『この花は、君が活けているのか？ 』と真剣に尋ねてくるのですよ。[r]
 [sp]あまりに神妙な顔で聞いてくるものだから、私、本当のことを教えてしまって」[p]
 [whosay name="調香店主" color=%mp.color]
 「どうやら、毎回、ここの花を見て励まされているみたいで、[r]
 [sp]店の前で綾花様を一目でも見ようと寒空の下、待っていたんですよ。　そうしたらね……」[p]
 [whosay name="調香店主" color=%mp.color]
 「そうしたら、なんと！[r]
-[sp]綾花様と、お祖父様、四条源次郎様の[ruby text=い]従[ruby text=とこ]妹で、婚約者候補だったってワケですよ」 [p]
+[sp]綾花様と、お祖父様、四条源次郎様の[ruby text=い]従[ruby text=とこ]妹で、"婚約者候補"だったってワケですよ」 [p]
 [whosay name="調香店主" color=%mp.color]
 「驚いちゃいましたよ。　とても素敵な縁を感じましたよ～～」[p]
 [whosay name="華織" color="olivedrab"]
@@ -436,15 +474,22 @@
 （華織様……）[p]
 [whosay name="調香店主" color=%mp.color]
 「それ以来、記念日になると源次郎様はこっそりと手紙をもってここにやってきますね。[r]
-[r]店外に出ると恥ずかしいのか離れちゃいますが……とても仲の良い夫婦ですね……」[p]
+[sp]店外から出ると恥ずかしいのか、すぐ離れちゃいますけど……とても仲の良い夫婦ですね……」[p]
 [whosay name="華織" color="olivedrab"]
 「ねぇ、[名前]さん」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？　はい」[p]
 [whosay name="華織" color="olivedrab"]
 「あれから時々考えるようになったんだけど、人の幸せは、色々な人の想いによって繋がっているのかもしれないね」[p]
+;あの時て何?の説明
+#
+私は、この長い時の流れによる人の繋がりと共に、あの時にみたネリネの花と手紙に綴られた幸せな願いについて思い出した。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そうですね……華織様のお祖母様とお祖父様が結ばれて、[ruby text=お]義 [ruby text=とう] 父様と [ruby text=お] 義 [ruby text=かぁ] 母様が出会って……華織様に出会えて」[p]
+（幸せの訪れる日……)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「そうですね……感慨深いですね[r]
+[sp]華織様のお祖母様とお祖父様が結ばれて、[ruby text=お]義[ruby text=とう]父様と [ruby text=お]義[ruby text=かぁ]母様が
+出会って……華織様に出会えて」[p]
 ;その中には兄もいるけど省略
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな風に考えると、とても素敵で長い年月の縁に思いを馳せてしまいますね」[p]
