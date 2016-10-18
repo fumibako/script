@@ -23,6 +23,11 @@
 ;場所　いつもの町中
 ;季節描写　春
 はろやかな光が、町に植えられた桜の合間を縫って花びらと共に降り注ぐ[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 ;がやがやSE
 ;【SE】人々のざわめき（ザワザワ…屋外）
 [playse storage=zawa_out.ogg loop=false ]
@@ -34,10 +39,12 @@
 [playse storage=zawa_out.ogg loop=false ]
 [主人公ふぅ閉]
 ;帰ろうとするが・・・　セリフは適当
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （こんなに人通りが多くては、気分転換にならないかも……少ししたら帰りましょう）[p]
+[fadeoutbgm time=3000]
 人込みを避けて大通りをぬけていこうとしたときだった――[r]
-大量の花弁を持ち上げて春の嵐が吹き抜けていく[p]
+　大量の花弁を持ち上げて春の嵐が吹き抜けていく。[p]
 ;春風がふくSE
 [主人公驚]
 [主人公ポーズ指]
@@ -57,7 +64,7 @@
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-・・・・・[p]
+・・・・・・[p]
 [主人公横伏目]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -78,6 +85,11 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あれは……」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 その人は、どんな人込みの中でも見間違うことがなかった。[r]
 むこうもこちらに気づいて歩み寄る[p]
 ;喜び全開
@@ -117,6 +129,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様！？」[p]
 [主人公退場]
+;【SE】うぐいす（ケキョケキョ）
+[playse storage=tori_uguisu_pikyo.ogg loop=false ]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -161,6 +175,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいところ……ですか？」[p]
 [if exp="f.para_shujinkou_shukujodo < 200"]
+[fadeoutbgm time=3000]
 ;華織、焦って
 [whosay name="華織" color="olivedrab"]
 「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心して！」[p]
@@ -175,13 +190,18 @@
 (蕎麦屋の二階に何があるのでしょう？　後で磯野に聞いてみようかしら？）[p]
 ;ちなみに調べてはダメだ
 [endif]
-
+[fadeoutbgm time=3000]
 [主人公退場]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 ;華織、香りつながりで化粧品店、調香店に 行く
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ここは……？）[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 [whosay name="華織" color="olivedrab"]
 「ここは、祖母の知人が営んでいる 調香店だよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -429,8 +449,14 @@
 ;主人公照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様のお祖母様の綾花様は、明るい方なのですね……）  [p]
+[fadeoutbgm time=3000]
 [whosay name="調香店主" color=%mp.color]
 「いえ、私もそう思いますよ！　今日お二人にお会いして、しみじみと思いましたよ」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
 [whosay name="調香店主" color=%mp.color]
 「綾花様は、私が店を始めだした時からのお客様でね、[r]
 [sp]華道の修業も兼ねてですが、この店の窓際に花を活けてもらっていたんです」[p]
