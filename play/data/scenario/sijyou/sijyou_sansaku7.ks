@@ -235,8 +235,12 @@
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
 ;背景：店外
 ;華織、香りつながりで化粧品店、調香店に 行く
+華織様に付いていくと、ビルヂングの下に収まった店が目に留まった。[p]
+ショーウィンドウには、花が活けられ、中の照明と共に商品を引き立ていた。[p]
+;適当↑
 [主人公ポーズ通常]
 [wait time=10]
 [主人公驚]
@@ -843,10 +847,21 @@
 [playbgm storage="sittori_umikaze.ogg" loop=true]
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
-;店外　効果セピア
 [whosay name="調香店主" color=%mp.color]
 「綾花様は、私が店を始めだした時からのお客様でね、[r]
 [sp]華道の修業も兼ねてですが、この店の窓際に花を活けてもらっていたんです」[p]
+[四条退場]
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回送~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;店外　効果セピア
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+;回想シーン 効果セピア
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
 [whosay name="調香店主" color=%mp.color]
 「しばらくしたら、浮かない顔をしたお客様が来られて……あ、これは内緒にしてくださいね」[p]
 [whosay name="華織" color="olivedrab"]
@@ -898,11 +913,24 @@
 「そうしたら、なんと！[r]
 [sp]綾花様と、お祖父様、四条源次郎様の[ruby text=い]従[ruby text=とこ]妹で、"婚約者候補"だったって[r]
 [sp]ワケですよ」 [p]
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回送おわり~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[chara_mod name="bg" storage="toumei.gif"]
+;回想シーン 効果セピア消す
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[四条ベース着物]
+[四条微笑み]
 [whosay name="調香店主" color=%mp.color]
 「驚いちゃいましたよ。　とても素敵な縁を感じましたね」[p]
 [whosay name="華織" color="olivedrab"]
 「そうですね。　僕もそう思います。　"再会した"ってところにも、[r]
 [sp]とても深い縁を感じますね」[p]
+[四条笑顔]
 #
 華織様は私の顔をみると微笑んだ。[p]
 ;～～～～～～主人公柔微笑み～～～～～～～～
@@ -924,6 +952,7 @@
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
+[四条微笑み]
 [whosay name="調香店主" color=%mp.color]
 「それ以来、記念日になると源次郎様はこっそりと手紙をもってここにやってきますよ」[p]
 [whosay name="調香店主" color=%mp.color]
