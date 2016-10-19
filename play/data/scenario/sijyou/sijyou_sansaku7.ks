@@ -968,7 +968,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「えぇ……」[p]
 [四条退場]
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif" time=20000]
+[chara_mod name="bg" storage="toumei.gif" time=20000 wait=false]
 [主人公目通常]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
