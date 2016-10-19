@@ -1,4 +1,4 @@
-﻿﻿[setreplay name="test"]
+[setreplay name="test"]
 *test
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -23,7 +23,8 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;test
 ;=============================================
 [chara_mod name="bg" storage="bg/title.jpg"]
-
+;test中フラグ　一時変数手紙で利用します
+[eval exp=tf.test_sijyou=true]
 [cm]
 [layopt layer=26 visible=true]
 [wait time=10]
