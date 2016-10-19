@@ -64,7 +64,7 @@
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
 ;------------keyframe の定義
 [keyframe name="animation1"]
-[frame p=100% x="1200" scale="0.5"]
+[frame p=100% x="3000" scale="2"]
 [endkeyframe]
 ;アニメーション実行
 [kanim name="saku1" keyframe="animation1" time="4000" ]
