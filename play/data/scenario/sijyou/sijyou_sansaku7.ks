@@ -228,9 +228,9 @@
 「え？　」[p]
 ;【SE】うぐいす（ケキョケキョ）
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
+[四条口微笑み]
 [四条眉困り]
 [四条目閉じ]
-[四条口微笑み]
 [whosay name="華織" color="olivedrab"]
 「……なんでもないよ」[p]
 [主人公目閉じ]
@@ -263,6 +263,7 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
+[wait time=1]
 [四条ベース着物]
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
@@ -275,7 +276,7 @@
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「そうだね。ただ、ここは海外の香水店を見習って調香できる店なんだ。[r]
-[sp]入ってみよう」[p]
+[sp]入ろうか」[p]
 ;場面転換のお知らせなのだけどセリフが不自然かも
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい……」[p]
@@ -301,9 +302,12 @@
 [whosay name="調香店主" color=%mp.color]
 「いらっしゃいませ～！[r]
 [sp]あらまぁ！ 四条綾花様のところに華織様じゃないですか」[p]
+[四条目閉じ]
+[四条口微笑み]
 [whosay name="華織" color="olivedrab"]
 「いつも　祖母がお世話になっています」 [p]
 ;店内の花のディスプレイをしてもらっている
+[四条目通常]
 [whosay name="調香店主" color=%mp.color]
 「いえいえ！　こちらこそ、 お世話になっています!」 [p]
 [whosay name="調香店主" color=%mp.color]
@@ -355,14 +359,24 @@
 「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に"愛に効く香り"として[r]
 [sp]重宝されてますよ」[p]
 [主人公困り照れ]
+;～～四条照れ驚き小～～
+[四条眉通常]
+[四条目大]
+[四条頬染め]
+[四条口驚き]
+;～～四条照れ驚き小～
 [whosay name="華織" color="olivedrab"]
 「そ、そうなんですか？　」 [p]
 [主人公眉通常]
 [主人公目通常]
+;四条照れの間
+[四条困り微笑み]
 [whosay name="調香店主" color=%mp.color]
 「あぁ、そういえば！[r]
 [sp]丁度、そちらの香りに合うに会う香水を入荷しましたので、[r]
 [sp]お持ちしますね！」[p]
+[四条効果消]
+[四条微笑み]
 #
 調香店の店主は選んだ香水を受け取ると、持ってきた小さな小瓶に混ぜて香りを確かめる。[p]
 ;マドラー的なものでかき混ぜる音
