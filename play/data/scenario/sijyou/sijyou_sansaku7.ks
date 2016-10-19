@@ -1,6 +1,6 @@
 ;期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -26,6 +26,9 @@
 [wait time=10]
 ;～～～驚きつつ困惑照れ～～～
 [endmacro]
+;////////////////シーンここから////////////////
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
@@ -197,6 +200,7 @@ $('.saku1').remove();
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （はじめて、磯野にも言わずで遠くまで来てしまったわ）[p]
 [主人公横目]
