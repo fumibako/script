@@ -15,7 +15,6 @@
 ;詳細案
 ;お見合い前に返事をもらう→そっけない手紙の提示→お見合い前その話題手紙フラグ終わり。(お見合い後の手紙は生きている)
 ;もしも、お見合い後に手紙を出した→お見合い後に返事をもらう→いい感じの手紙を提示→お見合い後その話題手紙フラグ終わり。(お見合い前の手紙は生きているが特に意味がないのでフラグを閉じておく？)
-
 ;//////特殊手紙挨拶テンプレ/////
 ;(お見合い前)
 ;手紙ありがとう。(話題)についてだね。それなら
@@ -28,10 +27,56 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [eval exp="sf.FButton='OFF'"]
+;テスト以外はコメはずす
+@jump target=*fumi_cmmon
+
+*test_page1
+[glink target="*sijyou_syumi_1" text="趣味について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="*sijyou_syumi_2" text="趣味について(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="*sijyou_kazoku_1|" text="家族について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="sijyou_kazoku_2" text="家族(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="sijyou_kazoku_2_1" text="家族・祖父母両親(お見合い後・事件解決後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="sijyou_kazoku_2_2" text="家族兄次男(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="sijyou_kazoku_2_3" text="家族(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="sijyou_kazoku_3" text="家族・主人公と(イベント6後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="sijyou_yujin_1" text="友人(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=w
+
+[glink target="sijyou_yujin_2" text="友人(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="1" text="春(1)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="2" text="春(2)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="3" text="春3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="4" text="春4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="5" text="夏5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="6" text="夏6" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
+;ページ停止に地点にジャンプ
+@jump target="*common"
+[s]
+*test_page2
+[glink target="7" text="夏7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="8" text="夏8_0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="8_1" text="夏8_1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="8_2" text="夏8_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="8_3" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="9" text="秋9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="10" text="秋10" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="11" text="秋11" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="12" text="冬12" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+
+[glink target="13" text="冬1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="14" text="冬2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="15" text="冬(3)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="*16_end" text="結納前" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target=";*17_ex" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="*18_ex" text="華織の道" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="*19_ex" text="兄から" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
+*common
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
+[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+[s]
 
 
-
-
+*fumi_cmmon
 ;////☆特殊手紙のやりとり///////////
 ;△趣味について
 *sijyou_syumi_1|(お見合い前)
