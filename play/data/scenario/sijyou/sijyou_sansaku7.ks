@@ -1016,6 +1016,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+[四条目閉じ]
+;退場したほうがいいかも？
 #
 華織様は、 手をとって口づけをする。[p]
 ;↓目：閉じた状態 [主人公目閉]
