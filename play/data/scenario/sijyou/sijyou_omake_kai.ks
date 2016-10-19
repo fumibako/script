@@ -1,4 +1,4 @@
-;おまけシナリオ
+;おまけシナリオ 香水イベントの続きでもいい
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -9,7 +9,7 @@
 [イベントシーン構築枠茶色]
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-;ガタゴト
+;ガタゴト　音人　物音02（ガタン・バタン）×2回
 [whosay name="四条父" color="%mp.color"]
 「今日は、やけに二階が騒がしいな」[p]
 [whosay name="四条母" color="#9B608B"]
@@ -54,6 +54,8 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 #
 一方、二階では。[p]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
 [playbgm storage="michikusa.ogg" loop=true]
@@ -61,6 +63,8 @@
 [endif]
 [whosay name="四条 華衣" color=%mp.color]
 「お、重い！！ なんで俺だけ！？　手伝えよ！！」[p]
+;【SE】箱を閉めたり置く(パタン)
+[playse storage=box_close_oku.ogg loop=false ]
 [whosay name="華織" color="olivedrab"]
 「ウッカリ僕が運んで、君の大事なものを壊しても文句は言わないのかい？」[p]
 #
@@ -86,19 +90,26 @@
 [whosay name="華織" color="olivedrab"]
 「返事は一回でいいよ、じゃぁ頑張って下さい」[p]
 ;足音去っていく
+;【SE】落ち着いた足音（フェードアウト）
+[playse storage=isono_out.ogg loop=false ]
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[stopse]
 [whosay name="華織" color="olivedrab"]
 (ふぅ……兄とは、かくも大変なものですね。文也)[p]
 [whosay name="華織" color="olivedrab"]
 (これも、本来の兄としての義務をサボっていたツケでしょうか……）[p]
 #
 [chara_mod name="bg" storage="toumei.gif" time=1000]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="四条 華衣" color=%mp.color]
 「……なんだよ、昔は『華衣、忘れ物はないかい？ きちんと歯は磨いたかい？』って煩かったのに」[p]
 ;ガサゴソSE
 [whosay name="四条 華衣" color=%mp.color]
 「あ……これ……俺がアイツにあげた壺だ」[p]
+;【SE】壺を置く（コトリ）
+[playse storage=tya_yunomi_oku.ogg loop=false ]
 [whosay name="四条 華衣" color=%mp.color]
 「アイツ、いつも金に困ってたから、金を渡そうとしたら怒ってきて……[r]
 [sp]それで代わりに出店で見つけた壺を買ってきたんだっけ……」[p]
@@ -109,13 +120,17 @@
 [endif]
 [whosay name="四条 華衣" color=%mp.color]
 「『売っぱらえよ』って言ったのに、まだ持ってたのか……」[p]
+[stopse]
 ;お約束
 [whosay name="四条 華衣" color=%mp.color]
 「後で花でも生けておくか」[p]
 [whosay name="四条 華衣" color=%mp.color]
 「こっちは日誌か。　男子すなるものってやつをよくもこうも書いたものだな」[p]
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 [whosay name="四条 華衣" color=%mp.color]
 「………音頭寝刀の合言葉だ、ジジイに内緒で会いに行ったな………」[p]
+[stopse]
 [whosay name="四条 華衣" color=%mp.color]
 「…………………」[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -125,12 +140,16 @@
 [whosay name="四条 華衣" color=%mp.color]
 「なぁ、俺に何ができるかな？ 華道もダメ、勉強もダメ。[r]
 [sp]そんな俺に出来ることって何がある？」[p]
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 #
 [華衣]は、尋ねるように日誌を眺める。[p]
 #日誌
 『……華族、動じず前をむくべし。趣味はお国のために貢献すべし』[p]
 [whosay name="四条 華衣" color=%mp.color]
 「国は無理だけど、お前の役に立つことは探さないとな……何も出来ないけどさ」[p]
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 #日誌
 『無は有を産むべきもの。[r]
 自身の定めしもの見つけるべし。[r]
