@@ -34,8 +34,8 @@
 [whosay name="四条母" color="#9B608B"]
 「大事なものだから、ダメ。としか聞いてないのよ」[p]
 [whosay name="四条父" color="%mp.color"]
-「そうか。まぁ、鷹司家のお嬢さんを迎えるにあたって[華衣]にお古でもあげて[r]
-[sp]いるのだろうよ」[p]
+「そうか。まぁ、鷹司家のお嬢さんを迎えるにあたって[華衣]にお古でもあげ[r]
+[sp]ているのだろうよ」[p]
 [whosay name="四条母" color="#9B608B"]
 「それなら新しい部屋は用意してあるわよ？」[p]
 [whosay name="四条父" color="%mp.color"]
@@ -56,17 +56,18 @@
 一方、二階では。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[whosay name="四条 華衣" color=%mp.color]
+「お、重い！！ なんで俺だけ！？　手伝えよ！！」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
 [playbgm storage="michikusa.ogg" loop=true]
 [eval exp="f.bgm_storage='michikusa.ogg'"]
 [endif]
-[whosay name="四条 華衣" color=%mp.color]
-「お、重い！！ なんで俺だけ！？　手伝えよ！！」[p]
 ;【SE】箱を閉めたり置く(パタン)
 [playse storage=box_close_oku.ogg loop=false ]
 [whosay name="華織" color="olivedrab"]
-「ウッカリ僕が運んで、君の大事なものを壊しても文句は言わないのかい？」[p]
+「ウッカリ僕が運んで、君の大事なものを壊しても文句は言わないの[r]
+[sp]かい？」[p]
 #
 華衣は、華織の部屋に留めておいた"華衣の婚約者"の荷物を運んでいたのだった。[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -144,13 +145,13 @@
 [playse storage=paper_open.ogg loop=false ]
 #
 [華衣]は、尋ねるように日誌を眺める。[p]
-#日誌
+[whosay name="日誌" color="%mp.color"]
 『……華族、動じず前をむくべし。趣味はお国のために貢献すべし』[p]
 [whosay name="四条 華衣" color=%mp.color]
 「国は無理だけど、お前の役に立つことは探さないとな……何も出来ないけどさ」[p]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-#日誌
+[whosay name="日誌" color="%mp.color"]
 『無は有を産むべきもの。[r]
 自身の定めしもの見つけるべし。[r]
 ―― 決して悲観されがたし。皆、初めは無であった』[p]
