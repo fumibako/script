@@ -374,6 +374,7 @@ $('.saku1').remove();
 [whosay name="調香店主" color=%mp.color]
 「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に"愛に効く香り"として[r]
 [sp]重宝されてますよ」[p]
+[whosay name="華織" color="olivedrab"]
 [主人公困り照れ]
 ;～～四条照れ驚き小～～
 [四条眉通常]
@@ -381,7 +382,6 @@ $('.saku1').remove();
 [四条頬染め]
 [四条口驚き]
 ;～～四条照れ驚き小～
-[whosay name="華織" color="olivedrab"]
 「そ、そうなんですか？　」 [p]
 [主人公眉通常]
 [主人公目通常]
@@ -500,6 +500,7 @@ $('.saku1').remove();
 ;↓口：通常 [主人公口通常]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[whosay name="華織" color="olivedrab"]
 [四条笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「い、いいですよ、僕が頼んだみたいのものですから」[p]
@@ -527,10 +528,11 @@ $('.saku1').remove();
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+[whosay name="華織" color="olivedrab"]
 [四条汗]
 [四条困り微笑み]
-[whosay name="華織" color="olivedrab"]
 「か、からかわないで下さいよ」[p]
+#
 @jump target=*common
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *not_kag
@@ -630,13 +632,13 @@ $('.saku1').remove();
 「華織様、私、よくわからないので、ぜひお願いします」[p]
 [whosay name="華織" color="olivedrab"]
 「わかりました、待ってくださいね」[p]
+#
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 ;↓目：通常 [主人公目横目]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-#
 華織様は、小瓶から木箆をとると、余分な香水を落として[名前]の目の前に差し出した。[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、悪いけど髪をあげてくれますか？　」[p]
@@ -686,6 +688,7 @@ $('.saku1').remove();
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「だ、大丈夫です！　少しくすぐったかっただけですから！」[p]
+#
 ;~~~~~四条安堵~~~~~
 ;[四条頬染め]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
@@ -744,24 +747,23 @@ $('.saku1').remove();
 （……）[p]
 ;↓目：[主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
-[wait time=1
+[wait time=10]
 [whosay name="調香店主" color=%mp.color]
 「この香水、お二人が並ぶと調和する香りなんですよ」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：横目 [主人公横目]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 [主人公ポーズ指]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば……華織様との香りが混ざっても、いい香りだわ）[p]
 [主人公ポーズ通常]
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-;うるさいかも↓
+;もやもやしたので変更↓
 [whosay name="調香店主" color=%mp.color]
 「香水というものは、一歩間違えると嫌味な匂いになってしまいますからね[r]
-[sp]特にまだ海外製品が多いので体にあっているものが少ないんです][p]
-;ハーフは入ってませんよ！
+[sp]こちらは、お二人の相性が良からいい香りになりましたね][p]
 [whosay name="華織" color="olivedrab"]
 「ふたりで調和する香りなんだね。　いいね。　[r]
 [sp]これを二人の思い出の品の ひとつにしようか」[p]
@@ -779,8 +781,8 @@ $('.saku1').remove();
 [if exp="f.para_shujinkou_shukujodo < 200"]
 [whosay name="華織" color="olivedrab"]
 「そうですね　どんな名前にしようかな」[p]
-[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
 （華やかだけど調和する香り……[r]
 [sp]そこに華やかに佇んでいても、周囲を和ませてくれる香りだから）[p]
 ;思いつかない 華はな和わけ？
@@ -791,8 +793,8 @@ $('.saku1').remove();
 [else]
 [whosay name="華織" color="olivedrab"]
 「そうですね　よく考えておきます」[p]
-[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 （なんという名前にしようかしら……）[p]
 [endif]
 ;転
