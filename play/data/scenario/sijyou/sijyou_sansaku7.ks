@@ -1,11 +1,4 @@
-;あらすじ　期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
-;華織とたまたま出会う主人公。両家に認められた二人は公然とデートすることとなる、そこで華織に連れられた場所は小さな調香店だった。
-;華織と香水をつけあい仲良くしていると 調香店の店主は四条祖母、綾花と祖父、源次郎の若いころの思い出を語る
-;源次郎は四条家のひとり息子であったが色々と苦労をしていた。努力家ではあったが、どうも語学にはからっきしダメで、貿易必須の四条家で、源次郎はお父様に怒られていたそうだ
-;そんなとき、店の前を通りがかった源次郎は、従妹の綾花と偶然再会し、花で励まされたという
-;それ以来、記念日になると源次郎様はこっそりと手紙をもってここにやってくるだとか
-;二人は色々と考えながらも、より一層仲を深めたいと思う
-;華織は家まで送ると、君がくるためにも、帰ってやることがあるといって別れる
+;期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
@@ -14,6 +7,23 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;同じ表情を３回使うので登録
+[macro name=主人公困り照れ]
+;～～～驚きつつ困惑照れ～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
+[endmacro]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
@@ -48,7 +58,7 @@
 [fadeoutbgm time=3000]
 人込みを避けて大通りをぬけていこうとしたときだった――[r]
 　大量の花弁を持ち上げて春の嵐が吹き抜けていく。[p]
-;春風がふくSE
+;春風がふくSE　天候・風04（草原02）短め
 [主人公驚]
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -103,7 +113,7 @@
 [四条ベース着物]
 [四条笑顔大]
 [whosay name="華織" color="olivedrab"]
-「！　[名前]さん！　奇遇だね　こんなところで会えるなんて。[r]
+「[名前]さん！　こんなところで会えるなんて奇遇だね。[r]
 ;困り笑顔
 [四条困り微笑み]
 [sp]といっても、家が近いから運命と呼べるには気が早いかな」[p]
@@ -165,7 +175,7 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
-;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+;↓眉： [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 ;↓効果：頬染め [主人公頬染め]
@@ -220,6 +230,7 @@
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
 [四条眉困り]
 [四条目閉じ]
+[四条口微笑み]
 [whosay name="華織" color="olivedrab"]
 「……なんでもないよ」[p]
 [主人公目閉じ]
@@ -286,6 +297,7 @@
 ;説明・四条綾花・・・祖母　散策をみてね
 [主人公通常]
 [wait time=10]
+;SEドアベル音　音人鈴付きドア・閉める
 [whosay name="調香店主" color=%mp.color]
 「いらっしゃいませ～！[r]
 [sp]あらまぁ！ 四条綾花様のところに華織様じゃないですか」[p]
@@ -342,20 +354,7 @@
 [whosay name="調香店主" color=%mp.color]
 「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に"愛に効く香り"として[r]
 [sp]重宝されてますよ」[p]
-;～～～驚きつつ困惑照れ～～～
-;↓効果：頬染め [主人公頬染め]
-[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
-[wait time=10]
-;↓目：[主人公目大]
-[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
-[wait time=10]
-;↓眉：困り [主人公眉困り]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
-;↓口：ほほえみ [主人公口ほほえみ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-;～～～驚きつつ困惑照れ～～～
+[主人公困り照れ]
 [whosay name="華織" color="olivedrab"]
 「そ、そうなんですか？　」 [p]
 [主人公眉通常]
@@ -393,20 +392,7 @@
 [whosay name="調香店主" color=%mp.color]
 「よろしければ、華織様に近づいてご確認くださいね。[r]
 [sp]人がつけると香りも変わりますので……」[p]
-;～～～驚きつつ困惑照れ～～～
-;↓効果：頬染め [主人公頬染め]
-[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
-[wait time=10]
-;↓目：[主人公目大]
-[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
-[wait time=10]
-;↓眉：困り [主人公眉困り]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
-;↓口：ほほえみ [主人公口ほほえみ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-;～～～驚きつつ困惑照れ～～～
+[主人公困り照れ]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 [四条退場]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -577,20 +563,7 @@
 「 華織様、そこは、つけて差し上げては如何でしょうか？　」[p]
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-;～～～驚きつつ困惑照れ～～～
-;↓効果：頬染め [主人公頬染め]
-[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
-[wait time=10]
-;↓目：[主人公目大]
-[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
-[wait time=10]
-;↓眉：困り [主人公眉困り]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
-;↓口：ほほえみ [主人公口ほほえみ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-;～～～驚きつつ困惑照れ～～～
+[主人公困り照れ]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 [四条退場]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -717,20 +690,7 @@
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *common2
 [四条微笑み]
-;～～～驚きつつ困惑照れ～～～
-;↓効果：頬染め [主人公頬染め]
-[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
-[wait time=10]
-;↓目：[主人公目大]
-[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
-[wait time=10]
-;↓眉：困り [主人公眉困り]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
-;↓口：ほほえみ [主人公口ほほえみ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-;～～～驚きつつ困惑照れ～～～
+[主人公困り照れ]
 [whosay name="調香店主" color=%mp.color]
 「いかかでしょうか？」[p]
 ;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
@@ -806,17 +766,7 @@
 [wait time=10]
 [whosay name="調香店主" color=%mp.color]
 「綾花様が気にされていたとおり、本当に仲がよろしいのですね」 [p]
-;～～～驚きつつ困惑照れ～～～
-;↓目：[主人公目大]
-[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
-[wait time=10]
-;↓眉：困り [主人公眉困り]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
-;↓口：ほほえみ [主人公口ほほえみ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-;～～～驚きつつ困惑照れ～～～
+[主人公困り照れ]
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 「祖母は、なにかとおしゃべりな人で……また何か話していましたか？」[p]
@@ -1029,6 +979,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「こちらこそ。 素敵な時間をありがとうございます」[p]
+
 [whosay name="華織" color="olivedrab"]
 「その、名前さんが嫌でなければ、ですが……手を出してもらっていいですか？　」[p]
 [主人公通常]
@@ -1054,24 +1005,14 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
+[四条目にこ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「指輪は、また次の機会に、」[p]
-;～～～驚きつつ困惑照れ～～～
-;↓効果：頬染め [主人公頬染め]
-[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
-[wait time=10]
-;↓目：[主人公目大]
-[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
-[wait time=10]
-;↓眉：困り [主人公眉困り]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
-;↓口：ほほえみ [主人公口ほほえみ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-;～～～驚きつつ困惑照れ～～～
+[主人公困り照れ]
+[四条口笑顔]
 [whosay name="華織" color="olivedrab"]
 「ふふ、[名前]さん、いい香りだね」 [p]
+[四条口微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;淑女度で変更
 [if exp="f.para_shujinkou_shukujodo >= 200"]
@@ -1079,6 +1020,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [else]
 「か、華織様こそ！」 [p]
 [endif]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「今度は正式に会いましょう　その時までにこの香りを覚えておくよ」[p]
 [四条退場]
@@ -1087,6 +1029,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 まだ首筋には、ほんのりと香りが残して……[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （このまま帰ったら、勘のいい磯野は、なんていうかしら……？）[p]
+;【SE】うぐいす（ケキョケキョ）
+[playse storage=tori_uguisu_pikyo.ogg loop=false ]
 [主人公退場]
 #
 ;[暗転]
