@@ -29,16 +29,16 @@
 [eval exp="sf.FButton='OFF'"]
 ;テスト以外はコメはずす
 ;@jump target=*fumi_cmmon
-
+[if exp=tf.test_sijyou==true]
 *test_page1
 [glink target="*sijyou_syumi_1" text="趣味について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="*sijyou_syumi_2" text="趣味について(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="*sijyou_kazoku_1|" text="家族について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="sijyou_kazoku_2" text="家族(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="sijyou_kazoku_2_1" text="家族・祖父母両親(お見合い後・事件解決後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="sijyou_kazoku_2_2" text="家族兄次男(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="sijyou_kazoku_2_3" text="家族(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="sijyou_kazoku_3" text="家族・主人公と(イベント6後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="sijyou_kazoku_2_1" text="家族・祖父母両親(お見合い後・事件解決後)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=300 color=white]
+[glink target="sijyou_kazoku_2_2" text="家族兄次男(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=350 color=white]
+[glink target="sijyou_kazoku_2_3" text="家族(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=400 color=white]
+[glink target="sijyou_kazoku_3" text="家族・主人公と(イベント6後)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=450 color=white]
 [glink target="sijyou_yujin_1" text="友人(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=w
 
 [glink target="sijyou_yujin_2" text="友人(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
@@ -74,7 +74,7 @@
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 [s]
-
+[endif]
 
 *fumi_cmmon
 ;////☆特殊手紙のやりとり///////////
