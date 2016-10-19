@@ -90,6 +90,7 @@
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ。　急に強く吹いてくるものだから驚いていまったわ）[p]
+#
 [iscript]
 $('.saku1').remove();
 [endscript]
@@ -112,13 +113,15 @@ $('.saku1').remove();
 ;～～～どきりと期待して驚く主人公～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あれは……」[p]
+#
 [if exp="sf.BGM=='ON'"]
 ;【BGM】星降る夜に（思い出/夢見るシーンに
 [playbgm storage="yumemiru_hoshi.ogg" loop=true]
 [eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
 [endif]
-その人は、どんな人込みの中でも見間違うことがなかった。[r]
+その人は、どんな[ruby text=ひと]人[ruby text=ご]込みの中でも見間違うことがなかった。[r]
 むこうもこちらに気づいて歩み寄る[p]
+;ひとこみ？と思う悲しい人へ
 ;四条喜び全開
 [四条ベース着物]
 [四条笑顔大]
@@ -140,7 +143,8 @@ $('.saku1').remove();
 「そ、そうですね」 [p]
 [主人公ふぅ閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（どうしましょう…… せっかく会えたのに正式に会う手順を踏んでいないわ）[p]
+（どうしましょう…… せっかく会えたのに正式に会う手順を踏んで[r]
+[sp]いないわ）[p]
 [主人公困り]
 ;四条なにか気づくイメージ
 [四条目大]
@@ -203,15 +207,16 @@ $('.saku1').remove();
 [主人公目伏柔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、これからは、ずっと繋いで歩けるのでしょうか） [p]
-昔、見た恋絵巻を見てるような出来事が、さも普通に訪れていることに驚きを隠せなかった。[p]
+昔、見た恋絵巻を見てるような出来事が、さも普通に訪れていることに[r]
+驚きを隠せなかった。[p]
+[whosay name="華織" color="olivedrab"]
 [四条ベース着物]
 [四条笑顔]
 [四条頬染め]
-[whosay name="華織" color="olivedrab"]
 「 これからは、ずっと繋いで歩いて行けたらいいね」 [p]
 ;にこりと笑って
-[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 「はい」 [p]
 [whosay name="華織" color="olivedrab"]
 「そうだ、今日はいいところに行こうか」[p]
@@ -225,11 +230,12 @@ $('.saku1').remove();
 ;淑女度低い場合
 [if exp="f.para_shujinkou_shukujodo < 200"]
 [fadeoutbgm time=3000]
+;消さなくてもいいなら消しても大丈夫です↑
 ;華織、焦って
+[whosay name="華織" color="olivedrab"]
 [四条驚き]
 [四条頬染め]
 [四条眉強気]
-[whosay name="華織" color="olivedrab"]
 「あ、蕎麦は食べないし、 そば屋の２階には行かないから安心して[r]
 [sp]ください！ [名前]さんのことは、大事ですから！　」[p]
 ;華織様は手を振って、不思議なことを話しかけた[p]
@@ -416,6 +422,7 @@ $('.saku1').remove();
 [whosay name="調香店主" color=%mp.color]
 「よろしければ、華織様に近づいてご確認くださいね。[r]
 [sp]人がつけると香りも変わりますので……」[p]
+#
 [主人公困り照れ]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 [四条退場]
@@ -439,6 +446,7 @@ $('.saku1').remove();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
+#
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
@@ -480,11 +488,11 @@ $('.saku1').remove();
 [四条微笑み]
 [四条汗]
 [whosay name="華織" color="olivedrab"]
-「[名前] さん……」 [p]
+「[名前] さん……？」 [p]
 [主人公目通常]
 ――　目と目が合う[p]
 [主人公驚]
-香りにつられたのか、華織様との距離あ、いつもより、とても近い場所に私はいた。[p]
+私は、香りにつられたのか、華織様との距離が、いつもより、とても近い場所にいた。[p]
 それこそ抱きしめているかのような距離。[p]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -584,12 +592,13 @@ $('.saku1').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ええと……こうかしら？）[p]
 [whosay name="調香店主" color=%mp.color]
-「 華織様、そこは、つけて差し上げては如何でしょうか？　」[p]
+「 華織様。　そこは、つけて差し上げては如何でしょうか？　」[p]
+#
+[四条退場]
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [主人公困り照れ]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
-[四条退場]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしようかしら）
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -602,6 +611,7 @@ $('.saku1').remove();
 [s]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *tukete
+#
 [resetfont]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -694,6 +704,7 @@ $('.saku1').remove();
 ;だめだわ、ラブ波に耐えられないイライラする
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *not_tukete
+#
 [resetfont]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -819,17 +830,17 @@ $('.saku1').remove();
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
+[whosay name="調香店主" color=%mp.color]
+「綾花様は、私が店を始めだした時からのお客様でね、[r]
+[sp]華道の修業も兼ねてですが、この店の窓際に花を活けてもらっていた[r]
+[sp]んです」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
 [playbgm storage="sittori_umikaze.ogg" loop=true]
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
-[whosay name="調香店主" color=%mp.color]
-「綾花様は、私が店を始めだした時からのお客様でね、[r]
-[sp]華道の修業も兼ねてですが、この店の窓際に花を活けてもらっていた[r]
-[sp]んです」[p]
-[四条退場]
 #
+[四条退場]
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回送~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;店外　効果セピア
 ;[暗転]
@@ -993,15 +1004,16 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公目通常]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そういえば、私のお父様とお母様は、どの様にしてお近づきになられたのでしょう？）[p]
+(そういえば、私のお父様とお母様は、どの様にしてお近づきになられた[r]
+[sp]のでしょう？）[p]
 #
-[四条退場]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif" time=2000 wait=false]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お父様が帰ってきたら聞いてみようかしら）[p]
 [主人公ポーズ通常]
 [主人公目閉]
+[四条退場]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif" time=2000 wait=false]
 #
 ――それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う[p]
 [主人公退場]
@@ -1049,12 +1061,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-[四条目にこ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[四条目にこ]
 「指輪は、また次の機会に」[p]
 [主人公困り照れ]
-[四条口笑顔]
 [whosay name="華織" color="olivedrab"]
+[四条口笑顔]
 「ふふ、[名前]さん、いい香りだね」 [p]
 [四条口微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
