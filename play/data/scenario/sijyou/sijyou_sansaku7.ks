@@ -7,6 +7,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;桜の表示が遅いと見えない為プリロード
+[preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 ;同じ表情を３回使うので登録
 [macro name=主人公困り照れ]
 ;～～～驚きつつ困惑照れ～～～
@@ -67,7 +69,7 @@
 [frame p=100% x="3000" scale="4"]
 [endkeyframe]
 ;アニメーション実行
-[kanim name="saku1" keyframe="animation1" time="4000" ]
+[kanim name="saku1" keyframe="animation1" time="5000" ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （！　すごい風……）[p]
 [主人公ポーズ通常]
