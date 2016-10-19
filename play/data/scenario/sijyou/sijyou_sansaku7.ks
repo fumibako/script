@@ -61,7 +61,7 @@
 ;春風がふくSE　天候・風04（草原02）短め
 [主人公驚]
 [主人公ポーズ指]
-[image name="saku1" storage="bg/img_sakura_sijyou.png" layer=1 zindex=2]
+[image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （！　すごい風……）[p]
 [keyframe name="animation_sakura2"]
