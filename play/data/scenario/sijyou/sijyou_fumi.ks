@@ -28,7 +28,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [eval exp="sf.FButton='OFF'"]
 ;テスト以外はコメはずす
-@jump target=*fumi_cmmon
+;@jump target=*fumi_cmmon
 
 *test_page1
 [glink target="*sijyou_syumi_1" text="趣味について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
