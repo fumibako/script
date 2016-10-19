@@ -62,14 +62,15 @@
 [主人公驚]
 [主人公ポーズ指]
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-（！　すごい風……）[p]
 ;------------keyframe の定義
 [keyframe name="animation1"]
-[frame p=100% x="1000"]
+[frame p=100% x="1200"]
 [endkeyframe]
 ;アニメーション実行
-[kanim name="saku1" keyframe="animation1" time="5000" ]
+[kanim name="saku1" keyframe="animation1" time="4000" ]
+[wa]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（！　すごい風……）[p]
 [主人公ポーズ通常]
 ;~~強い風に目を閉じずにはいられない主人公~~
 ;↓効果：汗 [主人公汗]
