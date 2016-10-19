@@ -181,8 +181,8 @@
 [whosay name="華織" color="olivedrab"]
 「僕が生けた花をそのまま壺に突っ込んじゃって……[r]
 [sp]せめて花の向きは揃えて……」[p]
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;暗転
+[chara_mod name="bg" storage="toumei.gif" time=1000]
 [whosay name="華織" color="olivedrab"]
 (いいや、そのままにしておくべきだ……そっとしておこう)[p]
 #
