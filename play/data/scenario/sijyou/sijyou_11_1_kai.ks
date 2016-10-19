@@ -145,7 +145,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 ――そして、その中から華衣が気に入ったのが、遠縁の公家の子女、それが華衣の婚約者となった。[p]
 [whosay name="華織" color="olivedrab"]
-「彼女は、病弱だったけれど、その分、とても落ち着いていて、華衣の悪いところも良いところも受け止めていた」[p]
+「彼女は、病弱だったけれど、その分、とても落ち着いていて、華衣の悪い[r]
+[sp]ところも良いところも受け止めていた」[p]
 ;相思相愛のイメージ画像が(あれば…)
 [whosay name="華織" color="olivedrab"]
 「[華衣]も、彼女の深い優しさに引かれ、相思相愛の仲になっていたよ」[p]
@@ -184,13 +185,13 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 僕のせいで、彼女と華衣は[r]
 [sp]別れてしまったんだ」[p]
 ;プレイヤー感情 驚く 華織に疑いをもつ　主人公：急なことに表情等が固まる　
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;[主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 ;↓口： [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「！ 」[p]
 ;華織、躊躇うが話す
 ;[四条目閉じ]
@@ -232,7 +233,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 あの雪の日に華織様と離れ、手紙が来なくなった時を思い出した。[p]
 ――[華衣]様の心情に比べたら、小さなこと。[r]
-それでも、離れること、失うことはとても辛かった。[p]
+_　それでも、離れること、失うことはとても辛かった。[p]
 ;(プレイヤー同様に)反芻する華織
 [whosay name="華織" color="olivedrab"]
 「今だからこそ、わかる」[p]
@@ -257,7 +258,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;話セリフにすると烏滸がましさが出たので内面で。
 ;主人公、案を考える
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(こういった時は、[華衣]様の心が落ち着ける場所が分かれば、見つかる気がしますが)[p]
+(こういった時は、[華衣]様の心が落ち着ける場所が分かれば、見つかる気が[r]
+[sp]しますが)[p]
 ;の心だと適当感がある、お心だと平仮名続きで読みにくい　御心だと神様っぽい
 ;華織をせつく、ストーリーの進行
 [whosay name=&sf.girl_namae color="#cf5a7f"]
