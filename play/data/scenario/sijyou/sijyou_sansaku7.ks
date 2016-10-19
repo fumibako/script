@@ -521,7 +521,7 @@ $('.saku1').remove();
 [wait time=10]
 [四条汗]
 [四条困り微笑み]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[whosay name="華織" color="olivedrab"]
 「か、からかわないで下さいよ」[p]
 @jump target=*common
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
@@ -1053,7 +1053,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「今度は正式に会いましょう　その時までにこの香りを覚えておくよ」[p]
 [四条退場]
 #
-華織様は、手をとって門前まで送ると、会釈をして帰っていった。[r]
+華織様は、手をとって門前まで送ると、会釈をして帰っていった。[p]
 まだ首筋には、ほんのりと香りが残して……[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （このまま帰ったら、勘のいい磯野は、なんていうかしら……？）[p]
