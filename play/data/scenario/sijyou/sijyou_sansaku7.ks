@@ -138,14 +138,14 @@ $('.saku1').remove();
 ;ひとこみ？と思う悲しい人へ
 ;四条喜び全開
 ;透明化して裏で変更
-[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="opcy" time="1"]
-[wa]
+;[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="opcy" time="1"]
+;[wa]
 [四条ベース着物]
 [四条笑顔大]
-;表示
-[kanim name="sijyou_base" keyframe="not_opcy" time="0"]
-[kanim name="sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="2"]
-[wa]
+;表示 同時表示不可、表情から表示されてしまう
+;[kanim name="sijyou_base" keyframe="not_opcy" time="0"]
+;[kanim name="sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="2"]
+;[wa]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん！　こんなところで会えるなんて奇遇だね。[r]
 ;困り笑顔
