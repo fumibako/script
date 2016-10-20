@@ -26,6 +26,7 @@
 [wait time=10]
 ;～～～驚きつつ困惑照れ～～～
 [endmacro]
+;同時に表示したくてテストしましたが軽い画像表情から表示されてしまう
 ;透明化
 [keyframe name="opcy"]
 [frame p=100%  opacity="0"]
@@ -34,7 +35,6 @@
 [keyframe name="not_opcy"]
 [frame p=100%  opacity="1"]
 [endkeyframe]
-
 ;////////////////シーンここから////////////////
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -141,7 +141,8 @@ $('.saku1').remove();
 [wa]
 [四条ベース着物]
 [四条笑顔大]
-[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="1"]
+[kanim name="sijyou_base" keyframe="not_opcy" time="0"]
+[kanim name="sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="1"]
 [wa]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん！　こんなところで会えるなんて奇遇だね。[r]
