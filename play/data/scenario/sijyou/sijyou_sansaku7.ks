@@ -26,6 +26,15 @@
 [wait time=10]
 ;～～～驚きつつ困惑照れ～～～
 [endmacro]
+;透明化
+[keyframe name="opcy"]
+[frame p=100%  opacity="0"]
+[endkeyframe]
+;透明無効か
+[keyframe name="not_opcy"]
+[frame p=100%  opacity="1"]
+[endkeyframe]
+
 ;////////////////シーンここから////////////////
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -38,6 +47,8 @@
 ;場所　いつもの町中
 ;季節描写　春
 はろやかな光が、町に植えられた桜の合間を縫って花びらと共に降り注ぐ[p]
+[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="opcy" time="1"]
+[wa]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
@@ -128,8 +139,11 @@ $('.saku1').remove();
 むこうもこちらに気づいて歩み寄る[p]
 ;ひとこみ？と思う悲しい人へ
 ;四条喜び全開
+
 [四条ベース着物]
 [四条笑顔大]
+[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="noopcy" time="1"]
+[wa]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん！　こんなところで会えるなんて奇遇だね。[r]
 ;困り笑顔
