@@ -30,7 +30,7 @@
 [keyframe name="opcy"]
 [frame p=100%  opacity="0"]
 [endkeyframe]
-;透明無効か
+;透明無効化
 [keyframe name="not_opcy"]
 [frame p=100%  opacity="1"]
 [endkeyframe]
@@ -47,9 +47,6 @@
 ;場所　いつもの町中
 ;季節描写　春
 はろやかな光が、町に植えられた桜の合間を縫って花びらと共に降り注ぐ[p]
-[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="opcy" time="1"]
-[wa]
-[四条ベース着物]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
@@ -140,10 +137,11 @@ $('.saku1').remove();
 むこうもこちらに気づいて歩み寄る[p]
 ;ひとこみ？と思う悲しい人へ
 ;四条喜び全開
-
-
+[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="opcy" time="1"]
+[wa]
+[四条ベース着物]
 [四条笑顔大]
-[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="1"]
+[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="1000"]
 [wa]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん！　こんなところで会えるなんて奇遇だね。[r]
