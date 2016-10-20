@@ -184,8 +184,8 @@
 ;背景変更:和紙風 水色
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+;選択肢用レイヤーを追加(ルビ込みの高さ等に対応するため大きさをすこし調整しました)
+[position layer=message1 height=200 top=100 left=280 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
