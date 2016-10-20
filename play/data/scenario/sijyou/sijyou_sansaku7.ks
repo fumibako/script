@@ -441,7 +441,7 @@ $('.saku1').remove();
 [current layer="message1"]
 [font size=32]
 ;低度なダジャレ多発
-[link target=*kag]華織様の香りをかぐ[endlink][r]
+[link target=*kag]華織様の香りを確かめる[endlink][r]
 [r][r][r]
 [link target=*not_kag] 小瓶の香りを確かめる[endlink]
 [s]
@@ -455,6 +455,7 @@ $('.saku1').remove();
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+華織様の香りを確かめる[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
@@ -549,6 +550,7 @@ $('.saku1').remove();
 [cm]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+小瓶の香りを確かめる[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
@@ -626,12 +628,12 @@ $('.saku1').remove();
 [current layer="message0"]
 [cm]
 [chara_mod name="bg" storage="toumei.gif"]
+#
+つけてもらう[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
 [四条微笑み]
-#
-つけてもらう[p]
 [主人公真剣]
 ;↑のほうが爽やか？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -720,12 +722,12 @@ $('.saku1').remove();
 [current layer="message0"]
 [cm]
 [chara_mod name="bg" storage="toumei.gif"]
+#
+自分でつける[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
 [四条微笑み]
-#
-自分でつける[p]
 [主人公驚]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -849,7 +851,7 @@ $('.saku1').remove();
 [endif]
 #
 [四条退場]
-;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回送~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回想~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;店外　効果セピア
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -888,7 +890,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [主人公ポーズ指]
 ;セリフは適当↓
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（思わず、聞き及んでしまいますね）[p]
+（思わず、聞き入ってしまいますね）[p]
 [主人公ポーズ通常]
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
