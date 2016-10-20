@@ -66,7 +66,7 @@
 [chara_mod name="bg" storage="toumei.gif"]
 ;ちゅんちゅんSE
 [if exp="f.para_shujinkou_shukujodo >= 200"]
-;淑女度高い
+;～～～～～～～淑女度高い～～～～～
 ;すぐに起きて返事をする
 [whosay name="磯野" color="dimgray"]
 「お嬢様？」[p]
@@ -77,23 +77,107 @@
 [whosay name="磯野" color="dimgray"]
 「お嬢様、今はお休みでしたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「磯野、起きています。　入って頂戴」
+「磯野、起きています。　入って頂戴」[p]
 私は素早く身だしなみを整えると、いつも通りに整然と筆をとった姿勢で磯野を迎えいれた。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「磯野、丁度、あなたにお願いしたいことが……」[p]
+;共通２にジャンプ
 [else]
 ;磯野が四条の手紙をもってきて、返事がなく、
-;淑女度ひくい
+;～～～～～～～～淑女度ひくい～～～～～～～～
 ;心配して部屋をみるとそこには机に突っ伏して寝てしまった主人公がいた
 [whosay name="？？？" color="dimgray"]
 「お…様？」[p]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name="磯野" color="dimgray"]
-「お嬢様！ 」[p]
+「お嬢様！ 大丈夫えすか？！」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「あら磯野、丁度、あなたにお願いしたいことが……」
+「うーん……あら、磯野……？][p]
+[whosay name="磯野" color="dimgray"]
+「お嬢様、心配して部屋をみてみたら机の上で寝てしまったのですね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「ちょっと、眠ってただけですわ。[r]
+[sp]そ、それより丁度、あなたにお願いしたいことが……」[p]
 [endif]
 
+;共通２
+*common2
+;言うまでもなく磯野は手紙をもってきていた
+;四条の手紙には華道展の切符が。　
+;自身は早朝から会場の設営で身動きできず、迎えにいけませんが……[名前]さんが、よろしければ、御家族もご一緒に是非見に来てください　
+;～後日～　という流れで主人公達は出かける。文也もくる？
 
-四条の手紙には華道展の切符が。　
-自身は早朝から会場の設営で身動きできず、迎えにいけませんが……[名前]さんが、よろしければ、御家族もご一緒に是非見に来てください　
-～後日～　という流れで主人公達は出かける。文也もくる
+
+;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
+;@jump storage="event.ks" target=*event_owari
+
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
