@@ -141,7 +141,7 @@ $('.saku1').remove();
 [wa]
 [四条ベース着物]
 [四条笑顔大]
-[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="1000"]
+[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="1"]
 [wa]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん！　こんなところで会えるなんて奇遇だね。[r]
