@@ -71,8 +71,12 @@
 [wait time=10]
 [fadeoutbgm time=3000]
 人込みを避けて大通りをぬけていこうとしたときだった――[r]
+[stopse]
+[wait time=10]
 　大量の花弁を持ち上げて春の嵐が吹き抜けていく。[p]
 ;春風がふくSE　天候・風04（草原02）短め
+;【SE】春風
+[playse storage=harukaze.ogg loop=false ]
 [主人公驚]
 [主人公ポーズ指]
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
@@ -318,6 +322,11 @@ $('.saku1').remove();
 ;場面転換のお知らせなのだけどセリフが不自然かも
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい……」[p]
+;SEドアベル音　音人鈴付きドア・閉める
+;ちょうど入店時に鳴る感じにSE位置を移動してみました(スクリプト担
+;【SE】ドアベル音
+[playse storage=door_suzu.ogg loop=false ]
+[wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
 [wait time=10]
@@ -336,7 +345,6 @@ $('.saku1').remove();
 ;説明・四条綾花・・・祖母　散策をみてね
 [主人公通常]
 [wait time=10]
-;SEドアベル音　音人鈴付きドア・閉める
 [whosay name="調香店主" color=%mp.color]
 「いらっしゃいませ～！[r]
 [sp]あらまぁ！ 四条綾花様のところに華織様じゃないですか」[p]
@@ -452,7 +460,7 @@ $('.saku1').remove();
 （どうしようかしら）
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=160 top=100 left=280 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
