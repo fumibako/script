@@ -654,7 +654,7 @@ $('.saku1').remove();
 [cm]
 #
 [chara_mod name="bg" storage="toumei.gif"]
-私は華織様にお願いして、つけてもらうことにした。[p]
+私は、華織様にお願いして、つけてもらうことにした。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
