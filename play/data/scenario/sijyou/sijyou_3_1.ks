@@ -72,7 +72,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 ;共通1へ
-@jump target=*common1
+@jump target=common1
 ～～～～～～～～～～選択２～～～～～～～～～～～～～～
 *not_fumi
 #
@@ -200,7 +200,7 @@
 私が冗談めいて、勘のいい磯野をせっつくと、[r]
 磯野も同じように冗談を交えながらも、私に手紙とチケットを手渡した。[p]
 ;共通３へ飛ぶ
-@jump target=*common3
+@jump target=common3
 [else]
 ;～～～～～～～淑女度高い～～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
