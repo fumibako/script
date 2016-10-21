@@ -465,9 +465,9 @@ $('.saku1').remove();
 [current layer="message1"]
 [font size=32]
 ;低度なダジャレ多発
-[link target=*kag]華織様の香りを確かめる[endlink][r]
+[link target=*kag]華織様の香りを確かめる。[endlink][r]
 [r][r][r]
-[link target=*not_kag] 小瓶の香りを確かめる[endlink]
+[link target=*not_kag]小瓶の香りを確かめる。[endlink]
 [s]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *kag
@@ -479,7 +479,7 @@ $('.saku1').remove();
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-華織様の香りを確かめる[p]
+――　華織様の香りを確かめる。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
@@ -572,9 +572,10 @@ $('.saku1').remove();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
+#
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-小瓶の香りを確かめる[p]
+私は、恥ずかしくなって、小瓶の香りを確かめることにした。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
@@ -639,9 +640,9 @@ $('.saku1').remove();
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
-[link target=*tukete]つけてもらう[endlink][r]
+[link target=*tukete]つけてもらうことにした。[endlink][r]
 [r][r][r]
-[link target=*not_tukete] 自分でつける [endlink]
+[link target=*not_tukete] 自分でつけることにした。[endlink]
 [s]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *tukete
@@ -651,9 +652,9 @@ $('.saku1').remove();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
-[chara_mod name="bg" storage="toumei.gif"]
 #
-つけてもらう[p]
+[chara_mod name="bg" storage="toumei.gif"]
+私は華織様にお願いして、つけてもらうことにした。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
@@ -736,7 +737,6 @@ $('.saku1').remove();
 [wait time=10]
 ;~~~~~四条安堵~~~~~
 @jump target=*common2
-;だめだわ、ラブ波に耐えられないイライラする
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *not_tukete
 #
@@ -745,9 +745,9 @@ $('.saku1').remove();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
-[chara_mod name="bg" storage="toumei.gif"]
 #
-自分でつける[p]
+[chara_mod name="bg" storage="toumei.gif"]
+私は、恥ずかしくなって、自分でつけることにした。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条ベース着物]
