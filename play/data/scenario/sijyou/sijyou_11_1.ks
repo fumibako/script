@@ -191,7 +191,7 @@
 [font size=32]
 [link target="*華衣について"][華衣]について尋ねた。[endlink][r]
 [r][r][r]
-[link target="*skp_cmon"]静かに話を聞いた。(スキップ)[endlink]
+[link target="*skp_cmon"]華織様の話を静かに聞いた。(スキップ)[endlink]
 [s]
 ;///////////////説明を選択した場合のシーンへ飛ばす準備/////////////
 ;共通はラベルcommonへ　どこに飛ぶかわかるように一部はここに書く
@@ -202,7 +202,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
-[華衣]について尋ねた。[p]
+私は、[華衣]について尋ねた。[p]
 ;別ファイルにジャンプ
 @jump storage="sijyou/sijyou_11_1_kai.ks" target=*first
 ;///////////////スキップした場合のシーン/////////////
@@ -218,7 +218,7 @@
 [主人公目閉じ]
 [wait time=10]
 [current layer="message0"]
-静かに話を聞いた。[p]
+私は、華織様の話を静かに聞いた。[p]
 #
 ・・・・・・[p]
 ;[料亭]
