@@ -22,12 +22,27 @@
 #
 私は手紙をもう一度、開いた。[p]
 ;～～～～～～選択肢～～～～～
-[link target=*see_fumi]よく見る[endlink]
-[link target=*not_fumi]さらりと眺めた。(スキップ)[endlink]
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[position layer=message1 height=160 top=100 left=280 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+[link target=*see_fumi]手紙をじっくり読み返した。[endlink]
+[link target=*not_fumi]手紙を眺める。(スキップ)[endlink]
+[resetfont]
 [s]
-;～～～～～～選択肢～～～～～
-
+;～～～～～～選択肢おわり～～～～～
 *see_fumi
+#
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[cm]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+私は、手紙をじっくり読み返した。[p]
+
 [手紙四条 fumi_number=]
 [名前]へ[r]
 [r]
@@ -45,11 +60,26 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
+;共通1へ
+@jump target=*common1
+～～～～～～～～～～選択２～～～～～～～～～～～～～～
 *not_fumi
-;共通
+#
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[cm]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+;横においてさらりと眺める
+私は、机に置いてある、手紙を眺めた。[p]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;共通1
+*common1
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ……お兄様から、華織様は家業上、冬から春にかけて、お忙しいとお聞きしていますが……）[p]
-;春はどうだろう。冬は忙しいはず。クリスマスと正月だけで花屋は忙しい
+;春はどうだろう。冬は忙しいはず。クリスマスと正月は花屋は忙しい
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (やっぱり、こういう時はお傍について、喜びを共にしたいです）[p]
 ;主人公横目　ポーズ指
@@ -67,48 +97,88 @@
 ;ちゅんちゅんSE
 [if exp="f.para_shujinkou_shukujodo >= 200"]
 ;～～～～～～～淑女度高い～～～～～
-;すぐに起きて返事をする
+;磯野が四条の手紙をもってきて、返事がなく、心配して呼びかけると、すぐに起きて返事をする主人公
 [whosay name="磯野" color="dimgray"]
 「お嬢様？」[p]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（……磯野の声だわ……私、こんな場所で寝てしまったのね）
+（!……磯野の声だわ。　
+;主人公ふぅ　主人公頬染
+私、こんな場所で寝てしまったのね）[p]
+;SE布音
 [whosay name="磯野" color="dimgray"]
 「お嬢様、今はお休みでしたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;通常顔でおすまし
 「磯野、起きています。　入って頂戴」[p]
 私は素早く身だしなみを整えると、いつも通りに整然と筆をとった姿勢で磯野を迎えいれた。[p]
+[whosay name="磯野" color="dimgray"]
+「失礼します」[p]
+;SE襖
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、丁度、あなたにお願いしたいことが……」[p]
 ;共通２にジャンプ
 [else]
-;磯野が四条の手紙をもってきて、返事がなく、
 ;～～～～～～～～淑女度ひくい～～～～～～～～
-;心配して部屋をみるとそこには机に突っ伏して寝てしまった主人公がいた
+;磯野が四条の手紙をもってきて、返事がなく、心配して部屋をみるとそこには机に突っ伏して寝てしまった主人公がいた
 [whosay name="？？？" color="dimgray"]
-「お…様？」[p]
+「お……様……？」[p]
+[whosay name="磯野" color="dimgray"]
+「お嬢様！ 大丈夫ですか？！」[p]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[whosay name="磯野" color="dimgray"]
-「お嬢様！ 大丈夫えすか？！」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「うーん……あら、磯野……？][p]
+「？　う……ん……
+;SE布音
+あら、磯野……？][p]
 [whosay name="磯野" color="dimgray"]
-「お嬢様、心配して部屋をみてみたら机の上で寝てしまったのですね」[p]
+「あぁ、机の上で寝てしまったのですね……勝手に入って申し訳ございません」[p]
+[whosay name="磯野" color="dimgray"]
+「返事がなく、心配して部屋の様子を見てしまいましたら、[r]
+机の上に倒れているお嬢様を見つけていまい、慌てていましました……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ちょっと、眠ってただけですわ。[r]
-[sp]そ、それより丁度、あなたにお願いしたいことが……」[p]
+「もう！　大丈夫よ！　ちょっと、眠ってただけですわ」
+[whosay name="磯野" color="dimgray"]
+「お嬢様。お言葉ですが、四条様との結納前の大事な時期です、[r]
+[sp]お風邪を召されませんようにお気をつけくださいませ」[p]
+#
+安堵の表情を浮かべた磯野は、私の丈夫な様子をみるなり、お説教を始めだした。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「そ、それより、丁度、あなたにお願いしたいことが……」[p]
 [endif]
 
 ;共通２
 *common2
 ;言うまでもなく磯野は手紙をもってきていた
-;四条の手紙には華道展の切符が。　
+;四条の手紙には華道展の切符（チケット）が。　
 ;自身は早朝から会場の設営で身動きできず、迎えにいけませんが……[名前]さんが、よろしければ、御家族もご一緒に是非見に来てください　
-;～後日～　という流れで主人公達は出かける。文也もくる？
-
-
+;～後日～　という流れで主人公達は出かけようとすると玄関先には文也も待っていた。
+;父は知っていた様子。驚く主人公、結納が終わるまでの少しの間、有能な家令に任せてお休みをいただいたようだ
+;家族総出で四条華道展にいく。色とりどりの生け花に目を見張る主人公
+;華道のパラが高いと　私も出してみようかしらと思う
+;華織の演説をきいてほっとする主人公　
+;華織、壇上での演説後、祖父母とともに鷹司家に挨拶し、先日は文乃さんのお陰で助かりましたという
+;父「華織君、君は年末にわざわざ私に会いにきてくれて話をしてくれたね]
+;お正月の手紙のことを思い出す主人公
+;;父「私は、そんな君のとても正直で清廉な君に感銘を受けている。やはり、昔から付き添っていただけある。
+;娘を任せる人は君しかないようだ」とほめる
+;華織が用意した食事の場で、その後、四条家と鷹司家で食事する
+;再度,ご迷惑をおかけしたことを詫びる四条家
+;これからもよろしくお願いできるかきいてくる 
+;父は主人公に華織くんのことを尋ねた後、もちろんといって乾杯する。
+;文也もよかったねという
+;四条兄弟との顔合わせで華織はひやひやする　兄は顔もよくお世辞がうまい　弟はぶっきらぼう（まだいい）　妹は小心で夢見がち
+;結
+;食事の後。二人になる　夕方
+;個性的な兄弟の話をして、心配する華織。主人公は兄弟を好意的に評する
+;まだまだ未熟な華道と、賑やかな家族、それが僕の持っているすべて。
+;こんな僕の傍にいてくれてありがとう、君のおかげでもう一歩先に進める　という
+;いい感じになって見つめ合う二人。
+;華妹が華衣と喧嘩しだしたので戻るふたり　爽やか！
+;文矢が華織に話しかけ、これからも妹のことをよろしく。もう泣かしたらダメだよというと、華織は決意して了承し、
+;文也に会わせてくれてありがとう、君という友人がいて本当に幸せだ　という
+;テーマをいっておしまい
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
