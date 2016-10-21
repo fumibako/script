@@ -13,12 +13,15 @@
 [主人公通常]
 ;華織様のことを思う主人公。
 ;地の文案2
-棚引く雲の中、眩い月の光と影が揺れる。[r]
+;棚引く雲の中、眩い月の光と影が揺れる。[r]
 ;地の文案1
-棚引く雲の中から、満ち足りた月の輝きが現れる。
-
+棚引く雲の中から、満ち足りた月の輝きが現れる。[r]
 今日ほど、春の夜を一番美しいと感じた日はないかもしれない。[p]
-;季節は変えておけばいいです
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 [主人公目閉じ]
 ;【SE】ペンで書く
 [playse storage=pen_write.ogg loop=false ]
