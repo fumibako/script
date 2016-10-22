@@ -77,8 +77,9 @@
 [r]
 [sp]　四条 華織[r]
 [link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　2/2[endlink][r]
-[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　(閉)[endlink][r]
+[link target=fumi_in3][sp]　　　　　　　　　　　　　　　　　　　　　　　　(閉)[endlink][r]
 [s]
+*fumi_in3
 [手紙四条読了 fumi_number=]
 ;共通1へ
 @jump target=common1
