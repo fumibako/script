@@ -567,7 +567,6 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 #
 銀色の髪を着物に合わせて上品に結った老婦人が現れた途端、[r]
 失礼な華道家の弟子達は、足早に去って行ってしまった。[p]
-[p]
 ;～～～～～～～～～～～～共通５ここまで～～～～～～～～～～～
 ;祖母のイベントをやっていない人が、何故祖母と、わかったのか説明する
 ～～～祖母イベントをやってる場合～～～[p]
@@ -710,7 +709,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 「[名字]様、先日は、文也さんと名前さんのお陰で助かりました。[r]
-[sp]ご子息、子女に、ご迷惑をおかけして申し訳ありませんでした」
+[sp]ご子息、子女に、ご迷惑をおかけして申し訳ありませんでした」[p]
 [whosay name=文矢 color="#538a8a"]
 「僕はちょっとだけ手を貸しただけだよ」[p]
 [whosay name="華織" color="olivedrab"]
@@ -727,10 +726,14 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=文矢 color="#538a8a"]
 「いや、それでいいんだ。それでこそ僕の友人だよ」[p]
 ;お正月の手紙のことを思い出す主人公
+[主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そういえば、お正月のお手紙には、『君のお父様と会いました』と書いてありましたが)[p]
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そうですわよね。 自由にお出掛けを許してもらう事だけでは、ないですわよね……)[p]
+(そうですわよね。
+自由にお出掛けを許してもらう事だけでは、ないですわよね……)[p]
+[主人公通常]
 #
 私は、お父様と共に華織様の透き通る瞳を見つめた。[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -744,26 +747,33 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「今日、見せてもらった作品も、華やかさと調和を兼ねていて、[r]
 [sp]他に類を見ない素晴らしさだった」[p]
+[主人公笑顔]
 「華織君。娘を任せる人は、君しかいないようだ」[p]
 [whosay name="華織" color="olivedrab"]
 「……ありがとうございます」[p]
 華織様の透き通る瞳が、うっすらと滲む。[r]
 その瞳の奥には、短期間で賞をとるほどの努力の滲みが見えていた。[p]
 ;細かな描写がないので全然泣けない
-
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま……」[p]
 [whosay name=文矢 color="#538a8a"]
-「華織、泣くには早すぎるよ。結納までにとっておきなよ」[p]
+「華織、泣くには早すぎるよ。
+[主人公驚き]
+結納までにとっておきなよ」[p]
+[主人公照れ目普通]
 [whosay name="華織" color="olivedrab"]
-「泣いてないよ。 文也こそ、結納の時に名前さんの事が寂しくなって泣かないように」[p]
+「泣いてないよ。 [r]
+[sp]文也こそ、結納の時に名前さんの事が寂しくなって泣かないように」[p]
 [whosay name=文矢 color="#538a8a"]
 「ふふ。華織……変わったね」[p]
+[主人公照れ目普通]
 #
 昔のように。[r]
 けれども、少し変化が訪れた友情の間に幸せな笑い声が溢れる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もう。お兄様ったら……)[p]
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ですが、本当にさり気なく気を遣って頂いてくださる……[r]
 [sp]私は、そんなお兄様のことを誇らしくも尊敬しております)[p]
