@@ -482,26 +482,29 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公ポーズ通常]
 [主人公通常]
-;【SE】人々のざわめき（ザワザワ…屋内）
-[playse storage=zawa_room.ogg loop=false ]
-白を基調とした展示会場には、美しい花々が趣向ごとに展示されており、[r]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+#
+見事な作品達が、白亜の台座に美を競い合いながらも、固有の世界感を表現している[p]
+;白を基調とした展示会場には、美しい花々が趣向ごとに展示されており、[r]
 来場者は皆、ゆったりと、華の世界に浸っていた。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
 [playbgm storage="sittori_umikaze.ogg" loop=true]
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
+;【SE】人々のざわめき（ザワザワ…屋内）
+[playse storage=zawa_room.ogg loop=false ]
 ;賑わう会場の表現
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (結構な人達がいるわ。華織様の作品を見るためにこれだけの方達が[r]
 [sp]来て下さっているのね……)[p]
-#
-見事な作品達が、白亜の四角柱の台座に美を競い合いながらも、固有の世界感を表現していた[p]
 [主人公口ほほえみ]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ほぉ。これはなかなか……生けた花とは、よく言ったものだ」[p]
 [whosay name=文矢 color="#538a8a"]
 「あったよ。[名前]。　これが、華織が受賞した作品だね」[p]
+#
 お兄様が金屏風の前に飾られた受賞作品を見つける。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （美しいわ……いえ、それだけでは、言葉が足りないわ）[p]
@@ -516,8 +519,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「ふふ。[名前]は、どうやら華織の為に華道に詳しくなったようだね」[p]
 [主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そ、そうかしら？[r]
-[sp]これくらい、淑女として当然です」[p]
+「そ、そうかしら？[sp]これくらい、淑女として当然です」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公ポーズ片手]
@@ -584,13 +586,16 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 それ以外の場合[r]
 ;[if exp="f.para_shujinkou_j_kadou >= 100"]
 ～～～華道パラが高い場合～～[p]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (あの方は、華道の名士の四条綾女様だわ)[p]
 華道の教本でも、お顔を何度か拝見しており、園遊会でも、四条家について、詳しくお話をされた方。[p]
 ;[else]
 ～～～華道パラがそれ以外の場合～～～[p]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！あの方は、園遊会でもお会いした華織様の祖母様だわ」[p]
+[主人公笑顔]
 ;[endif]
 ;～～～～～～～～～～～共通6ここから～～～～～～～
 *common6
@@ -615,13 +620,17 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「はい」[p]
 [whosay name=四条祖母 color=%mp.color]
 「ありがとうございます。また後でお会いしましょう」[p]
-
+[主人公退場]
 ;～～～～～～シーン壇上。イベントの趣旨、プレイヤーの勝利～～～～～～～～～
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 #
 しばらく、展示作品に愉しんでいると、華織様が他の華道家壇上に現れた。[p]
 ;室内ざわざわSE
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[主人公ポーズ通常]
+[主人公ほほえみ]
 [whosay name="華織" color="olivedrab"]
 「今日は、四条華道展に来てくださってありがとうございます。[r]
 [sp]初日は昼過ぎまでの展示ですが、皆様の目を楽しませることが出来たら幸いです」[p]
@@ -630,6 +639,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;このイベントの趣旨1をプレイヤーに説明
 [whosay name="先生方"]
 「華織君については、華道会の名士、四条綾花さんのお孫さんだけあって、僕達も陰ながら応援していました」[p]
+[主人公通常]
 [whosay name="先生方"]
 「ですが、僕達は、芸の道の者として、決して依怙贔屓などしておりません」[p]
 [whosay name="華道家の弟子達"]
@@ -637,6 +647,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name="先生方"]
 「綾花様のお孫さんだからこそ、厳しい目で審査し、今まで彼に賞を与えることを見送っていました」[p]
 ;今までのイベントについての説明
+#
 壇上の華道家達の厳しい言葉を聞いて、私は華織様の境遇を改めて知った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
@@ -651,6 +662,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「ありがとうございます」[p]
 [whosay name="先生方"]
 「これまでは、表現に苦労されていた様ですが、賞をとった心境をお聞かせ下さい」[p]
+[主人公憂い]
 [whosay name="華織" color="olivedrab"]
 「そうですね。僕自身、何をやってみても、心に響くものがなくて悩んでいました」[p]
 [whosay name="華織" color="olivedrab"]
@@ -659,18 +671,25 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name="華織" color="olivedrab"]
 「ですが、今は、あるお方のおかげで、強さを掴み取ることができました」[p]
 ;華衣のせいにしない演説な感じで。
+[主人公照れ目普通]
 [whosay name="先生方"]
 「ほほう？ つまり、それは最近、綾花様からお聞かせ頂いた御婚約者のことでしょうか」
 [whosay name="華織" color="olivedrab"]
 「はい……」[p]
+#
 華織様の視線が、私のことを密やかに射抜く[p]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ( 華織さま？！)[p]
+#
 数人の勘の良い来場者は、チラリと私を見つめた。[p]
+[主人公照れ目普通]
 [whosay name=文矢 color="#538a8a"]
 「華織の奴、随分と大胆な告白だね」[p]
+[主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……)[p]
+[主人公照れ目普通]
 [whosay name="華織" color="olivedrab"]
 「……と言いたいところですが、彼女に迷惑が、かかるかもしれないので、[r]
 [sp]どうかこの話は、流して下さい」[p]
@@ -679,6 +698,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 会場からは、ワッと笑い声が咲く。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様ったら。一時は、恥ずかしさでどうなるかと思いましたわ)[p]
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、華織様は、これからは、きっと大丈夫ですね)[p]
 ;暗転
@@ -686,6 +706,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;別にしてもいいような
 ;転
 壇上での演説後、華織様は、祖母様と祖父様とともに挨拶に来られた。[p]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 「[名字]様、先日は、文也さんと名前さんのお陰で助かりました。[r]
 [sp]ご子息、子女に、ご迷惑をおかけして申し訳ありませんでした」
@@ -709,6 +731,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 (そういえば、お正月のお手紙には、『君のお父様と会いました』と書いてありましたが)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そうですわよね。 自由にお出掛けを許してもらう事だけでは、ないですわよね……)[p]
+#
 私は、お父様と共に華織様の透き通る瞳を見つめた。[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「私は、そんな君のとても清廉なところに感服した。[r]
@@ -717,16 +740,17 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「私こそ、決まりとはいえ、[名前]と引き離してすまない」[p]
 [whosay name="華織" color="olivedrab"]
 「いえ、[名字]様。[r]
-[sp]それもあってこそ、名前さんを強く想う今の自分があるのだと思います……」[p]
+[sp]それもあってこそ、[名前]さんを強く想う今の自分があるのだと思います……」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「今日、見せてもらった作品も、華やかさと調和を兼ねていて、[r]
-他に類を見ない素晴らしさだった」[p]
+[sp]他に類を見ない素晴らしさだった」[p]
 「華織君。娘を任せる人は、君しかいないようだ」[p]
 [whosay name="華織" color="olivedrab"]
 「……ありがとうございます」[p]
 華織様の透き通る瞳が、うっすらと滲む。[r]
 その瞳の奥には、短期間で賞をとるほどの努力の滲みが見えていた。[p]
 ;細かな描写がないので全然泣けない
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま……」[p]
 [whosay name=文矢 color="#538a8a"]
