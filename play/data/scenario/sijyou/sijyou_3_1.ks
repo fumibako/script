@@ -76,9 +76,8 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r]
-[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink]・
-[link target=fumi_in3]【閉】[endlink][r]
-[s]
+[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
+[link target=fumi_in3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
 *fumi_in3
 [er]
 [手紙四条読了 fumi_number=]
