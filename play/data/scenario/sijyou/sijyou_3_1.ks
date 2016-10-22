@@ -435,12 +435,18 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [endif]
 ;～～～～～～～～～～共通４～～～～～～～～～～～～～～
 *common4
+[fadeoutbgm time=3000]
 ;～～～～～～主人公宅玄関～～～～～～～～～～～～～～
 ;[主人公の家の前]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [主人公驚]
 #
 父の後ろをついて、玄関先まで出てみると、兄、文也が待っていた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
+[playbgm storage="isono_miyabi.ogg" loop=true]
+[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
+[endif]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「待たせたな、文也」[p]
 [whosay name=文矢 color="#538a8a"]
@@ -468,7 +474,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公困りほほえみ]
 久しぶりに一家団欒に戸惑いつつも、私達は、顔をほこらばせた。[p]
 ;母親の設定はわからないから書けない、性格違ってたら教えて下さい くれくれマン
-
+[fadeoutbgm time=3000]
 ;～～～～～～～～～～～～～シーン主人公準備おわり～～～～～～～～～～～～～～～～
 [主人公退場]
 ;～～～～～～～～～～～～～シーン華道展はじまり～～～～～～～～～～～～～～～～
@@ -480,6 +486,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [playse storage=zawa_room.ogg loop=false ]
 白を基調とした展示会場には、美しい花々が趣向ごとに展示されており、[r]
 来場者は皆、ゆったりと、華の世界に浸っていた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
 ;賑わう会場の表現
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (結構な人達がいるわ。華織様の作品を見るためにこれだけの方達が[r]
