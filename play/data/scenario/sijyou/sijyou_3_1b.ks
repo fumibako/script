@@ -209,8 +209,8 @@
 ;エピローグの回収↑
 ;いい感じになって見つめ合う二人。
 ;沈丁花
-[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
-[eval exp="f.haikei_credit=''"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様……」[p]
 [whosay name="華織" color="olivedrab"]
