@@ -28,9 +28,9 @@
 私は、彼の人を想い、筆をとる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織さま……手紙、読ませていただきました。[r]
-[sp]華道競合会にて大賞受賞されて、私も嬉しくおもいます）[r]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-（今は、どのようにご活躍して、いらっしゃるのでしょうか？）[p]
+[sp]華道競合会にて大賞受賞されて、私も嬉しくおもいます。[r]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+[sp]今は、どのようにご活躍して、いらっしゃるのでしょうか？）[p]
 #
 私は手紙をもう一度、開いた。[p]
 ;～～～～～～選択肢～～～～～
@@ -68,12 +68,13 @@
 場所が場所だけに七光りと思われがちですが、[r]
 祖父にも、来ていただいた方にも心にくる華だと褒めていただき[r]
 ました。[r]
-[sp]                                      [font size=5]1/2[resetfont][r]
+[link target=fumi_in2][sp]　　　　　　　　　　　　　　　　　　　　　　　　1/2[endlink][s]
+*fumi_in2
 もう、何も迷うこともない。[r]
 だから今、全力で自分を使って色々な場所で活躍していきます。[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　四条 華織[r]
 [link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　[font size=5]2/2[resetfont]
 [endlink][r]
 [link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　[font size=5](閉)[resetfont]
