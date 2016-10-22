@@ -179,192 +179,100 @@
 ;磯野が四条の手紙をもってきて、返事がなく、心配して部屋をみるとそこには机に突っ伏して寝てしまった主人公がいた
 [whosay name="？？？" color="dimgray"]
 「お……様……？」[p]
-
 ;【SE】襖を開ける（ゆっくり）
-
 [playse storage=fusuma-open.ogg loop=false ]
-
 [whosay name="磯野" color="dimgray"]
-
 「お嬢様！ 大丈夫ですか？！」[p]
-
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 [主人公伏目]
-
 「？　う……ん……
-
-;SE布音
-
 ;【SE】衣擦れ（スッ）
-
 [playse storage=kinuzure.ogg loop=false ]
-
 [主人公ポーズ片手]
-
 [主人公通常]
-
 あら、磯野……？][p]
-
 [whosay name="磯野" color="dimgray"]
-
 「あぁ、机の上で寝てしまったのですね……勝手に入って申し訳ございません」[p]
 ;机の上でっていうのが、本当に机の上で？と読む人がいるかもしれない？
-
 [whosay name="磯野" color="dimgray"]
-
 「返事がなく、心配して部屋の様子を見てしまいましたら、[r]
-
 [sp]筆を枕にして、倒れているお嬢様を見つけていまい、慌ててしまい[r]
-
 [sp]ました……」[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 [主人公照れ目普通]
-
 「もう！　大丈夫よ！　ちょっと、眠ってただけですわ」[p]
-
 [主人公ポーズ通常]
-
 [whosay name="磯野" color="dimgray"]
-
 「お嬢様。お言葉ですが、四条華織様との結納前。とても大事な時期です、[r]
-
 [sp]お風邪を召されませんようにお気をつけくださりませ」[p]
-
 #
-
 安堵の表情を浮かべた磯野は、私の丈夫な様子をみるなり、お説教を始めだした。[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公横目]
 「そ、それより、丁度、あなたにお願いしたいことが……」[p]
-
 [endif]
-
 ;～～～～～～～共通２～～～～～～～
-
 *common2
-
 ;説明：言うまでもなく磯野は手紙をもってきていた...四条の手紙には華道展の切符（チケット）が。
-
 ;説明：自身は早朝から会場の設営で身動きできず、迎えにいけませんが[名前]さんが、よろしければ、御家族もご一緒に是非見に来てください
-
 [whosay name="磯野" color="dimgray"]
-
 「お嬢様のお願いは、こちらのことでしょうか？」[p]
-
 #
-
 磯野は私が全てを伝えるまでもなく、彼の人の手紙をもってきていた。[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 [主人公ポーズ片手]
-
 (華織様の手紙だわ！)[p]
-
 #
-
 その手紙の上には、品の良い押し花と和紙で作られた華道展のチケットが、[r]
-
 添えられいた。[p]
-
 ;～～～～～～～～淑女度ひくい～～～～～～～～
-
 [if exp="f.para_shujinkou_shukujodo<200"]
-
 [whosay name="磯野" color="dimgray"]
-
 「お嬢様のお目覚めには、適された文でしょうか？」[p]
-
+#
 磯野は、明るい私を見守るように微笑む。[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 [主人公ポーズ両手]
-
 「もう、磯野って、たまに、いぢわるね！ 」[p]
-
 #
-
 勘が良い磯野に感づかれ、恥ずかしくなった私は、冗談で返事をした。[p]
-
 ;なんで？って思う層に説明↑
-
 ;年寄の磯野の楽しみだと冗談をいう
-
 [whosay name="磯野" color="dimgray"]
-
 「申し訳ありません、お嬢様。[r]
-
 [sp]この老僕、磯野、 お嬢様の喜ぶお顔を見させていただくことが、[r]
-
 [sp]唯一の生きる励みでございまして」[p]
-
 #
-
 私が冗談めいて、勘のいい磯野をせっつくと、[r]
-
 磯野も同じように冗談を交えながらも、私に手紙とチケットを手渡した。[p]
-
 ;共通３へ飛ぶ
-
 @jump target=common3
-
 [else]
-
 ;～～～～～～～淑女度高い～～～～～
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 [主人公ポーズ通常]
-
 「ありがとう、磯野。こちらは、いつ届いたのかしら？」[p]
-
 [whosay name="磯野" color="dimgray"]
-
 「昨晩、旦那様宛に届き、その中にお嬢様宛の手紙が含まれおりました」[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 [主人公ポーズ片手]
-
-「え？ そうなのですか？」[p]
-
+「？ そうなのですか？」[p]
 ;説明：プレイヤー同調と説明
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 [主人公ポーズ指]
-
 (お父様宛に？ どうしてかしら？ )[p]
-
 [主人公ポーズ通常]
-
 ;説明：後の話の伏線１↑↓説明
-
 [whosay name="磯野" color="dimgray"]
-
 「すぐにお届けせず、申し訳ありません。[r]
-
 [sp]奥方となられる方のお部屋に夜分遅く訪ねるわけにもいかず、[r]
-
 [sp]この不肖、磯野、今お持ちした次第でございます」[p]
-
 ;説明：現在の状況説明と糖度の平均化↓↑
-
 [主人公照れ目普通]
-
 [主人公ポーズ片手]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 (奥方となられる方……そうだわ……私、華織様と、もうすぐ……)[p]
 #
 私は、先ほどの疑問も忘れ、その言葉に顔を赤らめてしまった。[p]
@@ -523,6 +431,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;～～～～～～～～～～共通４～～～～～～～～～～～～～～
 *common4
 ;～～～～～～主人公宅玄関～～～～～～～～～～～～～～
+;[主人公の家の前]
+[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 #
 父の後ろをついて、玄関先まで出てみると、兄、文也が待っていた。[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -717,7 +627,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……)[p]
 [whosay name="華織" color="olivedrab"]
-「……と言いたいところですが、彼女に迷惑が、かかるかもしれないので、どうかこの話は、流して下さい」[p]
+「……と言いたいところですが、彼女に迷惑が、かかるかもしれないので、[r]
+[sp]どうかこの話は、流して下さい」[p]
 [whosay name="華織" color="olivedrab"]
 「まったく祖母は、どこに行っても彼女の話をするのですから」[p]
 会場からは、ワッと笑い声が咲く。[p]
@@ -739,54 +650,40 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「文也、ありがとう」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織君、君は年末にわざわざ私に会いにきてくれて話をしてくれたね][p]
-
 [whosay name="華織" color="olivedrab"]
 「はい。事をお知らせする義務がございます」[p]
-
 ;話したら怒られるでしょう・・・のフォロー
 [whosay name=文矢 color="#538a8a"]
 「お陰で僕はちょっぴり怒られてしまったけどね」[p]
-
 [whosay name="華織" color="olivedrab"]
 「文也、ごめん」[p]
-
 [whosay name=文矢 color="#538a8a"]
 「いや、それでいいんだ。それでこそ僕の友人だよ」[p]
-
 ;お正月の手紙のことを思い出す主人公
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そういえば、お正月のお手紙には、『君のお父様と会いました』と書いてありましたが)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そうですわよね。 自由にお出掛けを許してもらう事だけでは、ないですわよね……)[p]
-
 私は、お父様と共に華織様の透き通る瞳を見つめた。[p]
-
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「私は、そんな君のとても清廉なところに感服した。[r]
 [sp]やはり、娘と昔から付き添っていただけある」[p]
-
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「私こそ、決まりとはいえ、[名前]と引き離してすまない」[p]
-
 [whosay name="華織" color="olivedrab"]
 「いえ、[名字]様。[r]
 [sp]それもあってこそ、名前さんを強く想う今の自分があるのだと思います……」[p]
-
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「今日、見せてもらった作品も、華やかさと調和を兼ねていて、他に類を見ない素晴らしさだった。
-華織君、娘を任せる人は君しかないようだ」[p]
-
+「今日、見せてもらった作品も、華やかさと調和を兼ねていて、[r]
+他に類を見ない素晴らしさだった」[p]
+「華織君。娘を任せる人は、君しかいないようだ」[p]
 [whosay name="華織" color="olivedrab"]
-「……ありがとうございます」
-
-華織様の透き通る瞳が、うっすらと滲む。[p]
-
+「……ありがとうございます」[p]
+華織様の透き通る瞳が、うっすらと滲む。[r]
+その瞳の奥には、短期間で賞をとるほどの努力の滲みが見えていた。[p]
 ;細かな描写がないので全然泣けない
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま……」[p]
-
 [whosay name=文矢 color="#538a8a"]
 「華織、泣くには早すぎるよ。結納までにとっておきなよ」[p]
 [whosay name="華織" color="olivedrab"]
@@ -804,7 +701,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お兄様が華織様の友人で、お兄様が私の兄で、本当に良かった)[p]
 ;長いので分けます
-@jump storage=sijyou/sijyou_3_1b.ks
+;@jump storage=sijyou/sijyou_3_1b.ks
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
