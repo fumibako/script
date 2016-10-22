@@ -1,3 +1,16 @@
+*test
+@jump target=first
+;[暗転]
+;テストページからはじめます。変数を代入します[p]
+;[chara_mod name="bg" storage="toumei.gif"]
+;[if exp=tf.sijyou_test==true]
+;元パラを一時変数に退避
+;[eval exp="tf.shukujodo=f.para_shujinkou_shukujodo"] 
+;一時敵に変数に代入
+;[eval exp="f.para_shujinkou_shukujodo=200"]
+;[endif]
+;[endif]
+*first
 ;条件:華織の迷いのイベントを一つでも見ている　【全力】の手紙をよんだ後日 夜
 ;主人公庭夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
@@ -41,6 +54,7 @@
 [current layer="message1"]
 [font size=32]
 [link target=*see_fumi]手紙をじっくり読み返した。[endlink][r]
+[r]
 [link target=*not_fumi]手紙を眺める。(スキップ)[endlink]
 [resetfont]
 [s]
@@ -100,7 +114,7 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 #
-―― 華織様から頂いた手紙からは、霧が晴れたような明るい気持ちが[r]
+―― 華織様に頂いた手紙からは、霧が晴れたような明るい気持ちが[r]
 [sp]伝わってくる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
@@ -151,7 +165,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「磯野、起きています。　入って頂戴」[p]
-私は素早く身だしなみを整えると、いつも通りに整然と筆をとった姿勢で磯野を迎えいれた。[p]
+私は、素早く身だしなみを整えると、いつも通りに整然と筆をとった姿勢で磯野を迎えいれた。[p]
 ;SE襖
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
@@ -165,312 +179,728 @@
 ;磯野が四条の手紙をもってきて、返事がなく、心配して部屋をみるとそこには机に突っ伏して寝てしまった主人公がいた
 [whosay name="？？？" color="dimgray"]
 「お……様……？」[p]
+
 ;【SE】襖を開ける（ゆっくり）
+
 [playse storage=fusuma-open.ogg loop=false ]
+
 [whosay name="磯野" color="dimgray"]
+
 「お嬢様！ 大丈夫ですか？！」[p]
+
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公伏目]
+
 「？　う……ん……
+
 ;SE布音
+
 ;【SE】衣擦れ（スッ）
+
 [playse storage=kinuzure.ogg loop=false ]
+
 [主人公ポーズ片手]
+
 [主人公通常]
+
 あら、磯野……？][p]
+
 [whosay name="磯野" color="dimgray"]
+
 「あぁ、机の上で寝てしまったのですね……勝手に入って申し訳ございません」[p]
+;机の上でっていうのが、本当に机の上で？と読む人がいるかもしれない？
+
 [whosay name="磯野" color="dimgray"]
+
 「返事がなく、心配して部屋の様子を見てしまいましたら、[r]
-[sp]机の上に倒れているお嬢様を見つけていまい、慌ててしまい[r]
+
+[sp]筆を枕にして、倒れているお嬢様を見つけていまい、慌ててしまい[r]
+
 [sp]ました……」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公照れ目普通]
+
 「もう！　大丈夫よ！　ちょっと、眠ってただけですわ」[p]
+
 [主人公ポーズ通常]
+
 [whosay name="磯野" color="dimgray"]
+
 「お嬢様。お言葉ですが、四条華織様との結納前。とても大事な時期です、[r]
+
 [sp]お風邪を召されませんようにお気をつけくださりませ」[p]
+
 #
+
 安堵の表情を浮かべた磯野は、私の丈夫な様子をみるなり、お説教を始めだした。[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公横目]
 「そ、それより、丁度、あなたにお願いしたいことが……」[p]
+
 [endif]
 
 ;～～～～～～～共通２～～～～～～～
+
 *common2
+
 ;説明：言うまでもなく磯野は手紙をもってきていた...四条の手紙には華道展の切符（チケット）が。
+
 ;説明：自身は早朝から会場の設営で身動きできず、迎えにいけませんが[名前]さんが、よろしければ、御家族もご一緒に是非見に来てください
+
 [whosay name="磯野" color="dimgray"]
+
 「お嬢様のお願いは、こちらのことでしょうか？」[p]
+
 #
+
 磯野は私が全てを伝えるまでもなく、彼の人の手紙をもってきていた。[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公ポーズ片手]
+
 (華織様の手紙だわ！)[p]
+
 #
+
 その手紙の上には、品の良い押し花と和紙で作られた華道展のチケットが、[r]
+
 添えられいた。[p]
+
 ;～～～～～～～～淑女度ひくい～～～～～～～～
+
 [if exp="f.para_shujinkou_shukujodo<200"]
+
 [whosay name="磯野" color="dimgray"]
+
 「お嬢様のお目覚めには、適された文でしょうか？」[p]
+
 磯野は、明るい私を見守るように微笑む。[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公ポーズ両手]
+
 「もう、磯野って、たまに、いぢわるね！ 」[p]
+
 #
+
 勘が良い磯野に感づかれ、恥ずかしくなった私は、冗談で返事をした。[p]
+
 ;なんで？って思う層に説明↑
+
 ;年寄の磯野の楽しみだと冗談をいう
+
 [whosay name="磯野" color="dimgray"]
+
 「申し訳ありません、お嬢様。[r]
+
 [sp]この老僕、磯野、 お嬢様の喜ぶお顔を見させていただくことが、[r]
+
 [sp]唯一の生きる励みでございまして」[p]
+
 #
+
 私が冗談めいて、勘のいい磯野をせっつくと、[r]
+
 磯野も同じように冗談を交えながらも、私に手紙とチケットを手渡した。[p]
+
 ;共通３へ飛ぶ
+
 @jump target=common3
+
 [else]
+
 ;～～～～～～～淑女度高い～～～～～
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公ポーズ通常]
+
 「ありがとう、磯野。こちらは、いつ届いたのかしら？」[p]
+
 [whosay name="磯野" color="dimgray"]
+
 「昨晩、旦那様宛に届き、その中にお嬢様宛の手紙が含まれおりました」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公ポーズ片手]
+
 「え？ そうなのですか？」[p]
+
 ;説明：プレイヤー同調と説明
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公ポーズ指]
+
 (お父様宛に？ どうしてかしら？ )[p]
+
 [主人公ポーズ通常]
+
 ;説明：後の話の伏線１↑↓説明
+
 [whosay name="磯野" color="dimgray"]
+
 「すぐにお届けせず、申し訳ありません。[r]
+
 [sp]奥方となられる方のお部屋に夜分遅く訪ねるわけにもいかず、[r]
+
 [sp]この不肖、磯野、今お持ちした次第でございます」[p]
+
 ;説明：現在の状況説明と糖度の平均化↓↑
+
 [主人公照れ目普通]
+
 [主人公ポーズ片手]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 (奥方となられる方……そうだわ……私、華織様と、もうすぐ……)[p]
+
 #
+
 私は、先ほどの疑問も忘れ、その言葉に顔を赤らめてしまった。[p]
+[主人公頬染]
+[主人公横目]
 [主人公ポーズ通常]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「そ、そうなのですね。配慮をありがとう。[r]
+[主人公目閉]
 [sp]早速、 読ませて頂くわ」[p]
+
 [whosay name="磯野" color="dimgray"]
+
 「はい。 では、下がらせていただきます。[r]
+
 [sp]失礼しました」[p]
+
 [endif]
+
 ;～～～～～～～共通3～～～～～～～
+
 *common3
+
 [主人公ポーズ通常]
+
 [主人公ほほえみ]
+
 ;【SE】襖を閉じる（ゆっくり）
+
 [playse storage=fusuma-close.ogg loop=false ]
+
 [wait time=2]
+
 #
-部屋から下がる磯野は、何となく微笑んでいるような気がしたが、[r]
-;が→けれど？
+部屋から下がる磯野は、何となく微笑んでいるような気がしたけれど、[r]
 それより華織様の手紙のことが気になって、寛容にも見逃してしまった。[p]
+;サウンドノベルくさい
 
 ;～～～～～～～～～～手紙2～～～～～～～～～～～～～～
+
 ;【SE】紙に触れる（パラリ）
+
 [playse storage=paper_open.ogg loop=false ]
+
 [手紙四条 fumi_number=]
+
 *fumi_in1_1
+
 [er]
+
 [名前]さんへ[r]
+
 [r]
+
 お変わりなく、お元気でしょうか[r]
+
 ;挨拶わからん
+
 気持ちの高まりのまま、名前さんからの返事も待たず、[r]
+
 矢継ぎ早に手紙を出して申し訳ありません。[r]
+
 [r]
+
 先日の手紙にお伝えした通り、華道競合展で大賞を[r]
+
 果たしました。[r]
+
 そのおかげで、他の先生方からの勧めもあり、来週に『四条華道展』を[r]
+
 行う運びとなりました。[r]
+
 もちろん、華道競合展で、大賞を得た作品も出す予定です。[r]
+
 [link target=fumi_in2_2][sp]　　　　　　　　　　　　　　　　　　　　　　　　【壱/弐】[endlink][s]
+
 *fumi_in2_2
+
 [er]
+
 [r]
+
 [名前]さんとお義父様が、よろしければ、迎えの者を向わせ[r]
+
 ますので、御家族も、ご一緒に来場ください。[r]
+
 その際に改めて、四条家と[名字]家と会食を設けようと考えております。[r]
+
 [r]
+
 [r]
+
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
+
 [link target=fumi_in1_1][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
+
 [link target=fumi_in3_3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
+
 *fumi_in3_3
+
 [er]
+
 [手紙四条読了 fumi_number=]
+
 ;～～～～～～～～～～手紙2おわり～～～～～～～～～～～～～～
-;一方的だなぁ〜感じの良いBGM鳴っていれば気にならない？
+
+;一方的だなぁ～感じの良いBGM鳴っていれば気にならない？
+
 華織様のいつもの美しい細い筆跡は、慌てて書かれたような、墨跡が残されている。[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 (華織様、お忙しい中、いそいでお誘いしてくれたのですね)[p]
+
 #
+
 [主人公目閉]
+
 華織様は、私のために兄のような大人らしい立ち振る舞いをして下さる。[r]
+
 なのに、時折、素の素朴な想いが見え隠れする。[p]
-;セリフを挟む
+
+;セリフを挟む 主人公のセリフ苦手
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公ほほえみ]
+
 （そんなに慌てなくても、大丈夫ですわ。　[r]
+
 [sp]家族まで誘って下さって、ありがとうございます）[p]
+
 #
+
 私は、お付き合いを重ねてみえてくる、また違った華織様の温かい人柄に心が和んだ。[p]
+
 [主人公目閉]
+
 心に咲き誇る恋夢にうたた寝をすると、庭木の上でメジロが愛らしく鳴いた。[p]
-;暖かい陽気で、まだ少し眠いよ！ということでもあり。あやしうほどものぐるおしけれ、みたいな。
+
+;暖かい陽気で、まだ少し眠いよ！ということでもあり。
+
 ;～～～～～～～～～～～～～～～～～～前章シーンおわり～～～～～～～～～～～～～～～～
+
 ;テキスト全面表示
+
 [テキスト全画面白文字]
+
 ;一時的に行間多く
+
 [iscript]
+
 tyrano.plugin.kag.config.defaultLineSpacing = '15';
+
 [endscript]
+
 [sp]――後日。[r]
-[sp]庭の沈丁花が香る昼過ぎ。
+
+[sp]庭の沈丁花が香る昼過ぎ。[r]
+
 [sp]父と私は、華織様にお誘いを頂いた四条華道展に向かう為の準備をしていた。[p]
+
 ;ジンチョウゲ。花言葉は栄光、不滅、永遠。香水として使われる
+
 [iscript]
+
 tyrano.plugin.kag.config.defaultLineSpacing = '6';
+
 [endscript]
+
 [イベントシーン構築]
+
 ;～～～～～～～～～～～～～～～シーン主人公準備はじめ～～～～～～～～～～～～～～～～
+
 ;主人公部屋
+
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+
 「[名前]、そろそろ準備はできたかね？」[p]
+
 ;～～～～～～～～淑女度低い～～～～～～～～
+
 [if exp="f.para_shujinkou_shukujodo<200"]
+
 [主人公ポーズ通常]
+
 [主人公通常]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「はい。大丈夫です！」[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+
 「うむ。今日も元気そうで何より」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「お父様、早く、行きましょう！」[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+
 「急かなくても大丈夫。[r]
+
 [sp][名前]も、好きな人のこととなると、せっかちになるのだな」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公照れ目普通]
+
 [主人公ポーズ片手]
+
 「まぁ、お父様。 私を誰と、お比べなのですか？」[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+
 「こっちに来くれば、わかるだろう」[p]
+
 ;[暗転]
+
 [chara_mod name="bg" storage="toumei.gif"]
+
 [主人公ポーズ通常]
+
 [主人公目閉]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 (どなたかお待ちなのかしら？ [r]
+
 華織様は会場にいらっしゃると思いますし……誰かしら？)[p]
+
 ;ここが違う↓
+
 #
+
 はやる気持ちのまま、父の後ろをついて歩いた。[p]
+
 ;～～～～～～～～淑女度高い～～～～～～～～～～
+
 [else]
+
 [主人公ポーズ通常]
+
 [主人公目閉]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「はい。準備は整えたつもりです」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公通常]
-「いかがでしょうか？ 失礼はない様に少し控えめな着物にしましたが……」[p]
+
+「いかがでしょうか？ 失礼がない様に少し控えめな着物にしましたが……」[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+
 「うむ。婚姻前の晴れ着としては、もう少し華やかでも構わない[r]
+
 [sp]気もするが、今日は華道展であったな……その見立ては間違いない[r]
+
 [sp]であろう」[p]
+;花より目立ってはいけないし
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公ほほえみ]
+
 「ありがとうございます」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+
 「では、向かおうか。先に待っている者がいるからな」[p]
+
 ;[暗転]
+
 [chara_mod name="bg" storage="toumei.gif"]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 (どなたかお待ちなのかしら？ [r]
+
 華織様は会場にいらっしゃると思いますし……？)[p]
+
 ;ここが違う↓
+
 #
+
 はやる気持ちを抑え、父の後ろをついて歩いた。[p]
+
 [endif]
+
 ;～～～～～～～～～～共通４～～～～～～～～～～～～～～
+
 *common4
+
 ;～～～～～～主人公宅玄関～～～～～～～～～～～～～～
+#
 父の後ろをついて、玄関先まで出てみると、兄、文也が待っていた。[p]
-父は知っていた様子。驚く主人公、[r]
-結納が終わるまでの少しの間、有能な家令に任せてお休みをいただいたようだ[p]
-家族総出で四条華道展にいく。色とりどりの生け花に目を見張る主人公[p]
-華道のパラが高いと　私も出してみようかしらと思う[p]
-華織の演説をきいてほっとする主人公[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「待たせたな、文也」
+[whosay name=文矢 color="#538a8a"]
+「お父様、[名前]。待ちかねたよ」[p]
+;文也から父への呼び方を知らない…
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
+「お兄様！ 来て下さったのですね」
+[whosay name=文矢 color="#538a8a"]
+「まぁね。[名前]と華織の結納が終わるまでの間くらいは、一緒に過ごしたいからね」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「文也の家にも、代わりに仕事を任せられる安心有能な家令がいるようだな」[p]
+[whosay name=文矢 color="#538a8a"]
+「ええ。[r]
+[sp]けど、どんな、じゃじゃ馬娘も、こんな淑女に変えてしまう磯野には勝てませんけどね」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「はは、それもそうだな」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「お兄様！」[p]
+久しぶりに一家団欒に戸惑いつつも、私達は、顔をほこらばせた。[p]
+;母親の設定はわからないから書けない、性格違ってたら教えて下さい くれくれマン
+
 ;～～～～～～～～～～～～～シーン主人公準備おわり～～～～～～～～～～～～～～～～
+
 ;～～～～～～～～～～～～～シーン華道展はじまり～～～～～～～～～～～～～～～～
+
 ;[暗転]
+
 [chara_mod name="bg" storage="toumei.gif"]
+;SE室内ざわざわ
+白を基調とした展示会場には、美しい花々が趣向ごとに展示されており、来場者は皆、ゆったりと、華の世界に浸っていた。[p]
+;賑わう会場の表現
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(結構な人達がいるわ。華織様の作品を見るためにこれだけの方達が来て下さっているのね……)[p]
+
+白亜の四角柱の台座には見事な作品達が、美を競い合いながらも、固有の世界感を表現していた[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「ほぉ。これはなかなか……生けた花とは、よく言ったものだ」[p]
+[whosay name=文矢 color="#538a8a"]
+「こっちの金屏風の前に飾られた花は、山岳のような気迫を感じるね」[p]
+
+～～華道パラがかなり高い場合～～[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「えぇ、松の木とロトウサクラを大胆に使用された迫力ある作品ですわね」[p]
+;なんでこんな文
+[whosay name=文矢 color="#538a8a"]
+「ふふ。[名前]は、どうやら華織の為に華道に詳しくなったようだね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「そ、そうかしら？[r]
+[sp]これくらい、淑女として当然です」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(それにしても、こちらの作品は、自然の風景をそのまま切り取ったような情緒あふれる生け方をされているわ)[p]
+;主人公ふぅ
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(こういった表現は、基本ではあるけれど、とても技術や表現力が必要なのよね)[p]
+;華道オタクさを半減↓
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(私も、華織様を支えれるように精進しなくては……!)[p]
+～～華道パラ普通の場合～～[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(どれも、素敵な作品だわ)[p]
+私は、色とりどりの生け花に目を奪われてしまった。[p]
+
+;四条綾花の登場
+[whosay name=四条祖母 color=%mp.color]
+「こんにちは、[名字]様」[p]
+;四条祖母の風貌説明
+
+;祖母のイベントをやっていない人が、何故祖母と、わかったのか説明する
+～～～祖母イベントをやってる場合～～～[p]
+華織様のお祖母様がゆったりと挨拶をした。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「こんにちは、四条綾女様」[p]
+[whosay name=四条祖母 color=%mp.color]
+「こんにちは、[名前]さん、ご挨拶が遅れまして申し訳ありません」[p]
+四条綾女様は、老成した穏やかな微笑みをこちらに向けた。[p]
+;共通5にジャンプ 華道パラスルー
+
+それ以外の場合[r]
+～～～華道パラが高い場合～～[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(あの方は、華道の名士の四条綾女様だわ)[p]
+華道の教本でも、お顔を何度か拝見しており、園遊会でも、四条家について、詳しくお話をされた方。[p]
+～～～華道パラがそれ以外の場合～～～[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「！あの方は、園遊会でもお会いした華織様の祖母様だわ」[p]
+
+;共通5
+*common5
+[whosay name=四条祖母 color=%mp.color]
+「園遊会時にも、お世話になりましたわ」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「四条様。今日はお誘い頂きありがとうございます」[p]
+[whosay name=四条祖母 color=%mp.color]
+「こちらこそ、ご足労頂きありがとうございます。どうか、四条家の華の世界をお楽しみ下さい」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「うむ。楽しませてもらおう」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(華織様は、どこにいらっしゃるのかしら？)[p]
+[whosay name=四条祖母 color=%mp.color]
+「[名前]さん。華織は、先生方に頼まれて、演説の準備をしていますので、もう少しお待ち頂けないでしょうか？」[p]
+;主人公気付かれて恥ずかしい、戸惑い
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい」[p]
+[whosay name=四条祖母 color=%mp.color]
+「ありがとうございます。また後でお会いしましょう」[p]
+
+しばらく、展示作品に愉しんでいると、壇上に華織様が現れた。[p]
+;室内ざわざわSE
 [whosay name="華織" color="olivedrab"]
 「今日は、四条華道展に来てくださってありがとうございます。[r]
-[sp]初日は昼までの展示ですが、皆様の目を楽しませることが出来たら幸いです」[p]
+[sp]初日は昼過ぎまでの展示ですが、皆様の目を楽しませることが出来たら幸いです」[p]
 #
 壇上の華織様は、瑞々しい花々のように生き生きしていた。[p]
+;このイベントの趣旨1をプレイヤーに説明
+[whosay name="先生方"]
+「華織君については、華道会の名士、四条綾花さんのお孫さんだけあって、僕達も陰ながら応援していました」[p]
+[whosay name="先生方"]
+「ですが、僕達は、芸の道の者として、決して依怙贔屓などしておりません」[p]
+[whosay name="先生方"]
+「綾花様のお孫さんだからこそ、厳しい目で審査し、今まで彼に賞を与えるとことを見送っていました」[p]
+;今までのイベントについての説明
+壇上の華道家達の厳しい言葉を聞いて、私は華織様の境遇を改めて知った。[p]
+;主人公憂い
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(華織様……今まで[華衣]様のことも背負ってらしゃったのに家業のことも、ずっと悩まれていたのですね)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(それなのに、おひとりで立ち向かわれて……努力されて……)[p]
+[whosay name="先生方"]
+「……それだけに、この受賞展は、僕達も感極まる者があります」[p]
+[whosay name="華織" color="olivedrab"]
+「ありがとうございます」[p]
+[whosay name="先生方"]
+「これまでは、表現に苦労されていた様ですが、賞をとった心境をお聞かせ下さい」[p]
+[whosay name="華織" color="olivedrab"]
+「そうですね。僕自身、何をやってみても、心に響くものがなくて悩んでいました」[p]
+[whosay name="華織" color="olivedrab"]
+「それは、僕の中に弱い部分があったのからだと思います」[p]
+;プレイヤー、主人公のことを褒める
+[whosay name="華織" color="olivedrab"]
+「ですが、今は、あるお方のおかげで、強さを掴み取ることができました」[p]
+;華衣のせいにしない演説な感じで。
+[whosay name="先生方"]
+「ほほう？ つまり、それは最近、綾花様からお聞かせ頂いた御婚約者のことでしょうか」
+[whosay name="華織" color="olivedrab"]
+「はい……」[p]
+華織様の視線が、私のことを密やかに射抜く[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+( 華織さま？！)[p]
+数人の勘の良い来場者は、チラリと私を見つめた。[p]
+[whosay name=文矢 color="#538a8a"]
+「華織の奴、随分と大胆な告白だね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(……)[p]
+[whosay name="華織" color="olivedrab"]
+「……と言いたいところですが、彼女に迷惑が、かかるかもしれないので、どうかこの話は、流して下さい」[p]
+[whosay name="華織" color="olivedrab"]
+「まったく祖母は、どこに行っても彼女の話をするのですから」[p]
+会場からは、ワッと笑い声が咲く。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(華織様ったら。一時は、恥ずかしさでどうなるかと思いましたわ)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(けど、華織様は、これからは、きっと大丈夫ですね)[p]
+
+;暗転
+;別にしてもいいような
 ;転
-華織、壇上での演説後、祖父母とともに鷹司家に挨拶[p]
+壇上での演説後、華織様は、祖母様と祖父様とともに挨拶に来られた。[p]
+
 [whosay name="華織" color="olivedrab"]
 「[名字]様、先日は、文也さんと名前さんのお陰で助かりました。[r]
 [sp]ご子息、子女に、ご迷惑をおかけして申し訳ありませんでした」
+
 [whosay name=文矢 color="#538a8a"]
 「僕はちょっとだけ手を貸しただけだよ」[p]
+
 [whosay name="華織" color="olivedrab"]
 「文也、ありがとう」[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織君、君は年末にわざわざ私に会いにきてくれて話をしてくれたね][p]
+
 [whosay name="華織" color="olivedrab"]
 「はい。事をお知らせする義務がございます」[p]
+
 ;話したら怒られるでしょう・・・のフォロー
 [whosay name=文矢 color="#538a8a"]
 「お陰で僕はちょっぴり怒られてしまったけどね」[p]
+
 [whosay name="華織" color="olivedrab"]
 「文也、ごめん」[p]
+
 [whosay name=文矢 color="#538a8a"]
 「いや、それでいいんだ。それでこそ僕の友人だよ」[p]
+
 ;お正月の手紙のことを思い出す主人公
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そういえば、お正月のお手紙には、『君のお父様と会いました』と書いてありましたが)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そうですわよね。 自由にお出掛けを許してもらう事だけでは、ないですわよね……)[p]
+
 私は、お父様と共に華織様の透き通る瞳を見つめた。[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「私は、そんな君のとても清廉なところに感服した。[r]
 [sp]やはり、娘と昔から付き添っていただけある」[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「私こそ、決まりとはいえ、[名前]と引き離してすまない」[p]
+
 [whosay name="華織" color="olivedrab"]
 「いえ、[名字]様。[r]
 [sp]それもあってこそ、名前さんを強く想う今の自分があるのだと思います……」[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「今日、見せてもらった作品も、華やかさと調和を兼ねていて、他に類を見ない素晴らしさだった。
 華織君、娘を任せる人は君しかないようだ」[p]
+
 [whosay name="華織" color="olivedrab"]
 「……ありがとうございます」
+
 華織様の透き通る瞳が、うっすらと滲む。[p]
+
 ;細かな描写がないので全然泣けない
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま……」[p]
+
 [whosay name=文矢 color="#538a8a"]
 「華織、泣くには早すぎるよ。結納までにとっておきなよ」[p]
 [whosay name="華織" color="olivedrab"]
@@ -478,6 +908,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=文矢 color="#538a8a"]
 「ふふ。華織……変わったね」[p]
 #
+
 昔のように。[r]
 けれども、少し変化が訪れた友情の間に幸せな笑い声が溢れる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -485,235 +916,451 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ですが、本当にさり気なく気を遣って頂いてくださる……[r]
 [sp]私は、そんなお兄様のことを誇らしくも尊敬しております)[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お兄様が華織様の友人で、お兄様が私の兄で、本当に良かった)[p]
+
 ;～～～～～～～～～～～～～シーン料亭～～～～～～～～～～～～～～～～～
+
 ;華道展から食事の流れ思いつかない　終わりまで家族を待たせるわけにもいかないし
+
 ;[料亭]
+
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+
 #
+
 華織が用意した食事の場で、その後、四条家と鷹司家で食事することとなった。[p]
 
 再度,ご迷惑をおかけしたことを詫びる四条家[p]
+
 [whosay name="四条祖父" color="#888898"]
+
 「」[p]
+
 [whosay name="四条祖母" color="#888898"]
+
 「」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「」[p]
+
 [whosay name="四条父" color="#9B608B"]
+
 「どうか[emb exp="sf.father_name"]さん。これからも、華織と娘さんとの[r]
+
 [sp]お付き合いをお願いできないだろうか……」[p]
+
 ;お付き合いをお願いできないだろうかきいてくる
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+
 「[名前]、聞くまでもないが、華織くんのことを選んで良かったかね？」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「もう、お父様ったら……」[p]
+
 私は、自然と華織様と見つめ合った[p]
+
 [whosay name="華織" color="olivedrab"]
+
 （[名前]さん）[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公目閉じ]
+
 「……はい。華織を選んで、良かったと思います」[p]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+
 「娘がこう言うのだ。嫁ぐ娘を例え寂しくなったとしても、
+
 "勿論"と言わねば、父親として廃る。さぁ、未来の夫婦に祝杯を上げようではないか！」[p]
+
 #
+
 父の口上を起点に、晴れやかな空気が流れる。[p]
+
 私はもう一度、華織様と見つめ合った。[p]
+
 [whosay name=文矢 color="#538a8a"]
+
 「[名前]、よかったね」[p]
+
 #
+
 乾杯の音頭も終えたころ、華織が改めて、兄弟を紹介する。[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「文也、[名前]さん。[r]
+
 [sp]渡仏(とふつ)やら留学中で紹介できてなかった兄弟を改めて、紹介するね……」[p]
+
 [whosay name=文矢 color="#538a8a"]
+
 「？ 華織、何か疲れてないかい？」[p]
+
 #
+
 四条兄弟との顔合わせで華織はひやひやする[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「こちらが、僕の兄の一華」[p]
+
 [whosay name="四条一華" color=%mp.color]
+
 「長男の四条一華です。外交官をしており、普段は仏蘭西にいます。[r]
+
 [sp]それにしても、君のような美しい方が義妹になって嬉しいよ」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「は、はい、よろしくお願いします」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 (一華様は、やはり、ひとつ上の兄だけに華織様によく似ていらっしゃるわ）[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 (ただ、雰囲気そのものは、華織様の素朴さを抜いたのような……）[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「こう見えて、根は厳しい人だからね……？」[p]
+
 [whosay name=文矢 color="#538a8a"]
+
 (あぁ、この方が華織の言っていた、お兄さんか)[p]
+
 [whosay name="四条一華" color=%mp.color]
+
 「華織。もしかして妬いたかい？」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「兄さんは、好きなお酒でも飲んでて下さい」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「ほら、[華衣]も挨拶して」[p]
+
 #
+
 華織様の横で、挨拶を始めたのは、[華衣]さんだった。[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 （[華衣]さん……)[p]
+
 慣れない場と、ばつの悪さで顔を下げていると言った様子であった。[p]
+
 [whosay name="四条 華衣" color=%mp.color]
+
 「こんにちは、また会ったな……」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「こんにちは、元気にされてましたか？」[p]
+
 [whosay name="四条 華衣" color=%mp.color]
+
 「まぁ。元気にしてた……[r]
+
 [sp]お前が、義姉になるなら悪くないと思う……よろしく」[p]
+
 うなづくように顔を下げると、兄に向き直し、驚くほど丁寧に挨拶を交わす。[p]
+
 [whosay name="四条 華衣" color=%mp.color]
-「お義兄さん、華衣と申します。よろしくお願いします。[r] 
+
+「お義兄さん、華衣と申します。よろしくお願いします。[r]
+
 [sp]先日は[名前]さんにご迷惑おかけして申し訳ありませんでした」[p]
+
 [whosay name=文矢 color="#538a8a"]
+
 「いえいえ。華織、素直で可愛い弟じゃないか」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「全く、不詳で……自慢の弟だよ」[p]
+
 [whosay name="四条 華衣" color=%mp.color]
+
 「……」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「そうやって、すぐに顔にでるとこ、とかね」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 (？　そうなのかしら？)[p]
+
 [whosay name="四条 華衣" color=%mp.color]
+
 「うるさい……」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「ほら、美華も挨拶なさい」[p]
+
 #
+
 [華衣]さんと距離をとっていた少女が華織の隣に現れる[p]
+
 [whosay name="四条 美華" color=%mp.color]
+
 「こ、こんにちは……末妹の美華と申します。[r]
+
 [sp]ふ、普段は、聖白百合の寄宿舎にいます……華織お兄様からお手紙で聞いて、[r]
+
 是非、[名前]様にお会いしたかったです」[p]
+
 #
+
 華織様のような、ほんのりとウェーブがかかった長い髪の少女[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「はい、宜しくお願い致します」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「美華、緊張するからって、僕の後ろに隠れないで」[p]
+
 [whosay name="四条 美華" color=%mp.color]
+
 「こ、今後とも、よろしくお願いします」[p]
 
 [whosay name="華織" color="olivedrab"]
+
 「……箱入り娘で、ごめんね」[p]
+
 ;疲れた、難しい
+
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
+
 ;【背景】庭園
+
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
+
 [eval exp="f.haikei_credit=''"]
+
 ;結
+
 ;食事の後。二人になる　夕方[p]
+
 ;個性的な兄弟の話をして、心配する華織。主人公は兄弟を好意的に評する
+
 お兄様に言われた私達は二人で庭へと出る。[p]
+
 後ろの室内からは、賑やかな声がする。[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「ふぅ……」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「お疲れさまです」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「名前さん、ありがとう。
+
 僕が言うのも、なんだけど、個性的な兄弟で、君も疲れたましたよね」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「いえ、兄弟が沢山いらっしゃって、驚きました」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「ふぅ。久しぶりに皆がそろったのは良かったのですが、
+
 かく次男とは、中間管理職のようなものなのか、ひしひしと感じましたよ」[p]
-〜〜〜〜淑女度低め〜〜〜〜[p]
+
+～～～～淑女度低め～～～～[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「面白い方達ですね」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「別宅に住むから、そこは安心してください……」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「ふふ。ですけど、華やかなお兄様方に囲まれて美華様は幸せでしょうね」[p]
 
-〜〜〜〜〜〜淑女度高め〜〜〜〜[p]
+～～～～～～淑女度高め～～～～[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「華織様が、華織様であらせることに納得がいきました」[p]
-[whosay name="華織" color="olivedrab"]
-「そうですか？ 」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええ、一華様は、社交界の花形のような華やかさ持っていて、[r]
-[sp]華織様はそんなお兄様に惹かれて、優しい華やかさをお持ち[r]
-[sp]なられたのでしょう」[p]
-[whosay name="華織" color="olivedrab"]
-「確かに。僕は、有能な兄の事を尊敬してます。同時に乗り越えたい人でもありますね……」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「そんな華織様の弟様にあたる、華衣様は、華織様の素朴さをそのままに引き継がれたのですね」
-[whosay name="華織" color="olivedrab"]
-「……華衣は、僕の悪いところを見破っていたのかもしれませんね……」[p]
-[whosay name="華織" color="olivedrab"]
-「今迄は、必要以上に甘やしすぎてたから、つかず離れず見守っていきたい……」
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「華やかなお兄様方に囲まれて美華様は、幸せでしょうね」
-〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 
 [whosay name="華織" color="olivedrab"]
+
+「そうですか？ 」[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+
+「ええ、一華様は、社交界の花形のような華やかさ持っていて、[r]
+
+[sp]華織様はそんなお兄様に惹かれて、優しい華やかさをお持ち[r]
+
+[sp]なられたのでしょう」[p]
+
+[whosay name="華織" color="olivedrab"]
+
+「確かに。僕は、有能な兄の事を尊敬してます。同時に乗り越えたい人でもありますね……」[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+
+「そんな華織様の弟様にあたる、華衣様は、華織様の素朴さをそのままに引き継がれたのですね」
+
+[whosay name="華織" color="olivedrab"]
+
+「……華衣は、僕の悪いところを見破っていたのかもしれませんね……」[p]
+
+[whosay name="華織" color="olivedrab"]
+
+「今迄は、必要以上に甘やしすぎてたから、つかず離れず見守っていきたい……」
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+
+「華やかなお兄様方に囲まれて美華様は、幸せでしょうね」
+
+～～～～～～～～～～～～～～～～
+
+[whosay name="華織" color="olivedrab"]
+
 「名前さん。君って人は、
+
 時々、僕より大人びて見えますね……」[p]
+
 「そ、そうでしょうか？」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「ええ。まだ僕が、知り得てない君をもっと知りたい」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"][p]
+
 「そんな……私は今のままでも充分に、華織様に知って頂いてますわ[r]
+
 [sp]ですから、華織様のことをもっと私に教えてください」[p]
+
 ;しんどい
+
 [whosay name="華織" color="olivedrab"]
+
 「僕のすべては、これからは、いつだって君の前にある」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「？ 華織様？」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「賑やかな家族、まだまだ未熟だけど、目指す道の華道。[名前]さんへの愛。
+
 それが僕の持っているすべて……」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「[名前]さん。こんな僕の傍にいてくれてありがとう。[r]
+
 [名前]さんのおかげで、もう一歩先に進めます」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「これからは、僕の全てをもってして、君に恋を綴ります」[p]
+
 ;エピローグの回収↑
+
 ;いい感じになって見つめ合う二人。
+
 ;沈丁花
+
 [chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
+
 [eval exp="f.haikei_credit=''"]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「華織様……」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「[名前]さん……」[p]
+
 ;華妹が華衣と喧嘩しだしたので戻るふたり　爽やか！
+
 [whosay name="四条 美華" color=%mp.color]
+
 「華織お兄様～～！　[華衣]が私のこと、ぶった～～～！！」
+
 [whosay name="ふたり" color=%mp.color]
+
 「「！！」」[p]
+
 [whosay name="四条 華衣" color=%mp.color]
+
 「どんくさいから、ちょっと小突いただけだろ！」
+
 [whosay name="華織" color="olivedrab"]
+
 「……帰りましょうか」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「はい」[p]
+
 #
+
 文矢が華織に話しかけた。[p]
+
 [whosay name=文矢 color="#538a8a"]
+
 「これからも妹のことをよろしく。もう泣かしたらダメだよ」[p]
+
 華織は深くうなづく。[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「文也、[名前]さんに会わせてくれてありがとう、君という友人がいて本当に幸せだ」[p]
+
 ;幸せな悩み？
+
 [whosay name=文矢 color="#538a8a"]
+
 「さて。これから訪れる、幸せな悩みについて、相談に乗ろうか？」[p]
+
 [whosay name="華織" color="olivedrab"]
+
 「そうだね。けど、まずは君がまた悩んでいることがあったら、僕が助けるよ」[p]
+
 [whosay name=文矢 color="#538a8a"]
+
 「そうだなぁ……」[p]
+
 暗転
+
 新しく訪れる幸せな悩みについて、ふたりの話は、夜も更けていった。[p]
+
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
-
 *window_close
 [cm]
 [chara_mod name="girl_base" storage="toumei.gif" time=0]
@@ -741,7 +1388,6 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 [l]
-
 ;会話ウィンドウ表示
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
@@ -774,9 +1420,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [wait time=10]
 [endif]
 @layopt layer=message0 page=fore visible=true
-[current layer="message0"]
+[current layer="message0"
 [freeimage layer = 27]
 [wait time=10]
-
 [return]
-
