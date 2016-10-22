@@ -222,6 +222,7 @@
 #
 磯野は私が全てを伝えるまでもなく、彼の人の手紙をもってきていた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目大]
 [主人公ポーズ片手]
 (華織様の手紙だわ！)[p]
 #
@@ -313,8 +314,8 @@
 [r]
 先日の手紙にお伝えした通り、華道競合展で大賞を[r]
 果たしました。[r]
-そのおかげで、他の先生方からの勧めもあり、来週に『四条華道展』を[r]
-行う運びとなりました。[r]
+そのおかげで、他の先生方からの勧めもあり、来週に[r]
+『四条華道展』を行う運びとなりました。[r]
 もちろん、華道競合展で、大賞を得た作品も出す予定です。[r]
 [link target=fumi_in2_2][sp]　　　　　　　　　　　　　　　　　　　　　　　　【壱/弐】[endlink][s]
 *fumi_in2_2
@@ -359,7 +360,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [endscript]
 [sp]――後日。[r]
 [sp]庭の沈丁花が香る昼過ぎ。[r]
-[sp]父と私は、華織様にお誘いを頂いた四条華道展に向かう為の準備をしていた。[p]
+[sp]父と私は、華織様にお誘いを頂いた『四条華道展』に向かう為の[r]
+[sp]準備をしていた。[p]
 ;ジンチョウゲ。花言葉は栄光、不滅、永遠。香水として使われる
 [iscript]
 tyrano.plugin.kag.config.defaultLineSpacing = '6';
@@ -367,7 +369,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [イベントシーン構築]
 ;～～～～～～～～～～～～～～～シーン主人公準備はじめ～～～～～～～～～～～～～～～～
 ;主人公部屋
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、そろそろ準備はできたかね？」[p]
@@ -376,10 +378,12 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公ポーズ通常]
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公口ほほえみ]
 「はい。大丈夫です！」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「うむ。今日も元気そうで何より」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 「お父様、早く、行きましょう！」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「急かなくても大丈夫。[r]
@@ -436,13 +440,13 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 #
 父の後ろをついて、玄関先まで出てみると、兄、文也が待っていた。[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「待たせたな、文也」
+「待たせたな、文也」[p]
+[主人公驚]
 [whosay name=文矢 color="#538a8a"]
 「お父様、[名前]。待ちかねたよ」[p]
 ;文也から父への呼び方を知らない…
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公驚]
-「お兄様！ 来て下さったのですね」
+「お兄様！ 来て下さったのですね」[p]
 [whosay name=文矢 color="#538a8a"]
 「まぁね。[名前]と華織の結納が終わるまでの間くらいは、一緒に過ごしたいからね」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -450,18 +454,22 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=文矢 color="#538a8a"]
 「ええ。[r]
 [sp]けど、どんな、じゃじゃ馬娘も、こんな淑女に変えてしまう磯野には勝てませんけどね」[p]
+[主人公口ムッ]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「はは、それもそうだな」[p]
+[主人公真剣]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お兄様！」[p]
 久しぶりに一家団欒に戸惑いつつも、私達は、顔をほこらばせた。[p]
 ;母親の設定はわからないから書けない、性格違ってたら教えて下さい くれくれマン
 
 ;～～～～～～～～～～～～～シーン主人公準備おわり～～～～～～～～～～～～～～～～
-
+[主人公退場]
 ;～～～～～～～～～～～～～シーン華道展はじまり～～～～～～～～～～～～～～～～
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[主人公ポーズ通常]
+[主人公通常]
 ;【SE】人々のざわめき（ザワザワ…屋内）
 [playse storage=zawa_room.ogg loop=false ]
 白を基調とした展示会場には、美しい花々が趣向ごとに展示されており、来場者は皆、ゆったりと、華の世界に浸っていた。[p]
