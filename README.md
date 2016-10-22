@@ -14,7 +14,7 @@ https://fumibako.github.io/script/play/
 ・背景◆B4nFWraU42さん：https://github.com/fumibako/script/tree/gh-pages/play/data/fgimage/bg/B4nFWraU42  
 ・背景◆I9IhvvVdPoさん：https://github.com/fumibako/script/tree/gh-pages/play/data/fgimage/bg/I9IhvvVdPo  
 ・背景全般：https://github.com/fumibako/script/tree/gh-pages/play/data/fgimage/bg  
-・全般　：https://github.com/fumibako/script/tree/gh-pages/  
+・全般　：https://github.com/fumibako/script/tree/gh-pages/play/  
   
 ##利用規約
 音声、画像、テキスト素材を抜き出して再配布、再使用、改変することを禁止します  
