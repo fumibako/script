@@ -46,8 +46,8 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test11_1b" text="11月1～3週:2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test1_1" text="1月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test2_1" text="2月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test3_1" text="3月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test3_1" text="3月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test3_1b" text="3月1週b" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test3_4" text="3月4週normalEND" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
@@ -57,14 +57,14 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 
 *test_page2
-[glink target="test_sansaku" text="散策" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test_sansaku2" text="散策2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test_sansaku3" text="散策3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test_sansaku4" text="散策4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test_sansaku5" text="散策5" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test_sansaku6" text="散策6" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test_sansaku7" text="散策7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test_sansaku8" text="散策8" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test_sansaku" text="散策" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="test_sansaku2" text="散策2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="test_sansaku3" text="散策3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="test_sansaku4" text="散策4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test_sansaku5" text="散策5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test_sansaku6" text="散策6" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test_sansaku7" text="散策7" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="test_sansaku8" text="散策8" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 
 [glink target="test_page1" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
@@ -169,16 +169,16 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 @jump storage="sijyou/sijyou_1_3_normalED.ks"
 [s]
 
-*test2_1
+*test3_1
 [cm]
 [freeimage layer = 26]
 @jump storage="sijyou/sijyou_3_1.ks"
 [s]
 
-*test3_1
+*test3_1b
 [cm]
 [freeimage layer = 26]
-@jump storage="sijyou/sijyou_3_1.ks"
+@jump storage="sijyou/sijyou_3_1b.ks"
 [s]
 
 *test3_4
