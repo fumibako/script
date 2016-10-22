@@ -70,15 +70,14 @@
 ました。[r]
 [link target=fumi_in2][sp]　　　　　　　　　　　　　　　　　　　　　　　　1/2[endlink][s]
 *fumi_in2
+[er]
 もう、何も迷うこともない。[r]
 だから今、全力で自分を使って色々な場所で活躍していきます。[r]
 [r]
 [r]
 [sp]　四条 華織[r]
-[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　[font size=5]2/2[resetfont]
-[endlink][r]
-[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　[font size=5](閉)[resetfont]
-[endlink][r]
+[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　2/2[endlink][r]
+[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　(閉)[endlink][r]
 [s]
 [手紙四条読了 fumi_number=]
 ;共通1へ
