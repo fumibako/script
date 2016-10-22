@@ -57,6 +57,7 @@
 ;～～～～～～～～～～手紙１～～～～～～～～～～～～～～
 [手紙四条 fumi_number=]
 *fumi_in1
+[er]
 [名前]さんへ[r]
 [r]
 メジロが庭の桜の蜜をあつめており、心穏やかにさせてくれます。[r]
@@ -73,7 +74,9 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　2/2[endlink]
+[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　2/2[endlink][r]
+[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　(閉)[endlink]
+[s]
 [手紙四条読了 fumi_number=]
 ;共通1へ
 @jump target=common1
