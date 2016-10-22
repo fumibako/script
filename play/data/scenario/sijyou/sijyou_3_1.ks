@@ -56,6 +56,7 @@
 私は、手紙をじっくり読み返した。[p]
 ;～～～～～～～～～～手紙１～～～～～～～～～～～～～～
 [手紙四条 fumi_number=]
+*fumi_in1
 [名前]さんへ[r]
 [r]
 メジロが庭の桜の蜜をあつめており、心穏やかにさせてくれます。[r]
@@ -65,12 +66,14 @@
 祖母の開いた華道競合会にて大賞受賞を果たしました。[r]
 場所が場所だけに七光りと思われがちですが、[r]
 祖父にも、来ていただいた方にも心にくる華だと褒めていただき[r]
-ました。[p]
+ました。[r]
+[sp]                                      1/2
 もう、何も迷うこともない。[r]
 だから今、全力で自分を使って色々な場所で活躍していきます。[r]
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　2/2[endlink]
 [手紙四条読了 fumi_number=]
 ;共通1へ
 @jump target=common1
@@ -127,6 +130,7 @@
 「お嬢様？」[p]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[主人公伏目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （!……磯野の声だわ。
 ;↓効果：頬染め [主人公頬染め]
@@ -135,15 +139,19 @@
 [主人公ふぅ閉]
 私、こんな場所で寝てしまったのね）[p]
 ;SE布音
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、今はお休みでしたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「磯野、起きています。　入って頂戴」[p]
 私は素早く身だしなみを整えると、いつも通りに整然と筆をとった姿勢で磯野を迎えいれた。[p]
+;SE襖
+;【SE】襖を開ける（ゆっくり）
+[playse storage=fusuma-open.ogg loop=false ]
 [whosay name="磯野" color="dimgray"]
 「失礼します」[p]
-;SE襖
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、丁度、あなたにお願いしたいことが……」[p]
 ;共通２にジャンプ
@@ -152,13 +160,20 @@
 ;磯野が四条の手紙をもってきて、返事がなく、心配して部屋をみるとそこには机に突っ伏して寝てしまった主人公がいた
 [whosay name="？？？" color="dimgray"]
 「お……様……？」[p]
+;【SE】襖を開ける（ゆっくり）
+[playse storage=fusuma-open.ogg loop=false ]
 [whosay name="磯野" color="dimgray"]
 「お嬢様！ 大丈夫ですか？！」[p]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公伏目]
 「？　う……ん……
 ;SE布音
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
+[主人公ポーズ片手]
+[主人公通常]
 あら、磯野……？][p]
 [whosay name="磯野" color="dimgray"]
 「あぁ、机の上で寝てしまったのですね……勝手に入って申し訳ございません」[p]
@@ -166,6 +181,7 @@
 「返事がなく、心配して部屋の様子を見てしまいましたら、[r]
 机の上に倒れているお嬢様を見つけていまい、慌てていましました……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公照れ目普通]
 「もう！　大丈夫よ！　ちょっと、眠ってただけですわ」[p]
 [whosay name="磯野" color="dimgray"]
 「お嬢様。お言葉ですが、四条華織様との結納前。とても大事な時期です、[r]
@@ -234,7 +250,8 @@
 「そ、そうなのですね。配慮をありがとう。[r]
 [sp]早速、 読ませて頂くわ」[p]
 [whosay name="磯野" color="dimgray"]
-「はい。 では、下がらせていただきます。失礼しました」[p]
+「はい。 では、下がらせていただきます。[r]
+[sp]失礼しました」[p]
 [endif]
 ;～～～～～～～共通3～～～～～～～
 *common3
@@ -244,7 +261,7 @@
 #
 部屋から下がる磯野は、何となく微笑んでいるような気がしたが、[r]
 ;が→けれど？
-それより私は華織様の手紙のことが気になり、その事は寛容にも見逃してしまった。[p]
+それより華織様の手紙のことが気になって、寛容にも見逃してしまった。[p]
 
 ;～～～～～～～～～～手紙2～～～～～～～～～～～～～～
 ;【SE】紙に触れる（パラリ）
@@ -287,10 +304,18 @@
 ;～～～～～～～～～～～～～～～～～～前章シーンおわり～～～～～～～～～～～～～～～～
 ;テキスト全面表示
 [テキスト全画面白文字]
+;一時的に行間多く
+[iscript]
+tyrano.plugin.kag.config.defaultLineSpacing = '15';
+[endscript]
 [sp]――後日。[r]
 [sp]庭の沈丁花が香る昼過ぎ。
 [sp]父と私は、華織様にお誘いを頂いた四条華道展に向かう為の準備をしていた。[p]
 ;ジンチョウゲ。花言葉は栄光、不滅、永遠。香水として使われる
+[iscript]
+tyrano.plugin.kag.config.defaultLineSpacing = '6';
+[endscript]
+[イベントシーン構築]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、そろそろ準備はできたかね？」[p]
 ;～～～～～～～～淑女度低い～～～～～～～～
