@@ -44,14 +44,16 @@
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[主人公ポーズ通常]
+[主人公通常]
 #
-再度,ご迷惑をおかけしたことを詫びる四条家[p]
-[whosay name="四条祖父" color="#888898"]
-「」[p]
-[whosay name="四条祖母" color="#888898"]
-「」[p]
-[whosay name="華織" color="olivedrab"]
-「」[p]
+;再度,ご迷惑をおかけしたことを詫びる四条家[p]
+;[whosay name="四条祖父" color="#888898"]
+;「」[p]
+;[whosay name="四条祖母" color="#888898"]
+;「」[p]
+;[whosay name="華織" color="olivedrab"]
+;「」[p]
 [whosay name="四条父" color="#9B608B"]
 「どうか[emb exp="sf.father_name"]さん。これからも、華織と娘さんとの[r]
 [sp]お付き合いをお願いできないだろうか……」[p]
@@ -76,8 +78,13 @@
 私は、もう一度、華織様と見つめ合った。[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]、よかったね」[p]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 #
 乾杯の音頭も終えたころ、華織が改めて、兄弟を紹介する。[p]
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [whosay name="華織" color="olivedrab"]
 「文也、[名前]さん。[r]
 [sp]渡仏(とふつ)やら留学中で紹介できてなかった兄弟を改めて、紹介するね……」[p]
@@ -118,6 +125,7 @@
 [whosay name="四条 華衣" color=%mp.color]
 「まぁ。元気にしてた……[r]
 [sp]お前が、義姉になるなら悪くないと思う……よろしく」[p]
+#
 うなづくように顔を下げると、兄に向き直し、驚くほど丁寧に挨拶を交わす。[p]
 [whosay name="四条 華衣" color=%mp.color]
 「お義兄さん、華衣と申します。よろしくお願いします。[r]
@@ -158,13 +166,16 @@
 ;疲れた、難しい
 
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
+#
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+お兄様に言われた私達は二人で庭へと出る。[p]
 ;【背景】庭園
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 ;結
 ;食事の後。二人になる　夕方[p]
 ;個性的な兄弟の話をして、心配する華織。主人公は兄弟を好意的に評する
-お兄様に言われた私達は二人で庭へと出る。[p]
 後ろの室内からは、賑やかな声がする。[p]
 [whosay name="華織" color="olivedrab"]
 「ふぅ……」[p]
@@ -176,16 +187,18 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、兄弟が沢山いらっしゃって、驚きました」[p]
 [whosay name="華織" color="olivedrab"]
-「ふぅ。久しぶりに皆がそろったのは良かったのですが、
-かく次男とは、中間管理職のようなものなのか、ひしひしと感じましたよ」[p]
-～～～～淑女度低め～～～～[p]
+「久しぶりに皆がそろったのは良かったのですが、[r]
+[sp]かく次男とは、中間管理職のようなものなのかと考えてしまいましたよ」[p]
+;～～～～～～～～淑女度低い～～～～～～～～
+[if exp="f.para_shujinkou_shukujodo<200"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「面白い方達ですね」[p]
 [whosay name="華織" color="olivedrab"]
 「別宅に住むから、そこは安心してください……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ふふ。ですけど、華やかなお兄様方に囲まれて美華様は幸せでしょうね」[p]
-～～～～～～淑女度高め～～～～[p]
+[else]
+;～～～～～～淑女度高め～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様が、華織様であらせることに納得がいきました」[p]
 [whosay name="華織" color="olivedrab"]
@@ -203,7 +216,8 @@
 [whosay name="華織" color="olivedrab"]
 「今迄は、必要以上に甘やしすぎてたから、つかず離れず見守っていきたい……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華やかなお兄様方に囲まれて美華様は、幸せでしょうね」
+「華やかなお兄様方に囲まれて美華様は、幸せでしょうね」[p]
+[else]
 ;～～～～～～～～～～～～～～～～
 *common7
 [whosay name="華織" color="olivedrab"]
