@@ -5,6 +5,13 @@
 ;☆このイベントの目的、フラグを回収、キャラの良さ
 ;登場人物 四条華織 父　磯野
 ;背景主人公の部屋 昼か夕方
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[preload storage="data/fgimage/bg/sijyou_engawa2_1.png"]
+[keyframe name="opcy"]
+[frame p=100%  opacity="0"]
+[endkeyframe]
+
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
@@ -84,6 +91,7 @@
 「お父様！」[p]
 [主人公目パチ1回]
 [wait time=10]
+
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]。丁度、帰ってきて休んでいたところだ。[r]
 [sp]お前も、隣に座って夕涼みをしようじゃないか」[p]
@@ -109,17 +117,17 @@
 ;背景 縁側　夕方か夜 時間がたつ。
 [chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[image name="hababi" storage="bg/sijyou_engawa2_1.png" layer=1 zindex=2 left=0 time=2000]
 
 
 #
 黄昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
-
-
+;アニメーション実行
+[kanim name="hababi" keyframe="opcy" time="5000" ]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
 [主人公目パチ1回]
 [wait time=10]
 
@@ -127,7 +135,9 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、知ってるか？ 『かぎや』と言うのはだな、[r]
 [sp]代表的な花火師の屋号なんだぞ」[p]
-
+[iscript]
+$('.hababi').remove();
+[endscript]
 [主人公口ほほえみ]
 [wait time=10]
 [主人公ポーズ片手]
