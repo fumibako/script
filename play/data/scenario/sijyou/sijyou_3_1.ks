@@ -8,10 +8,11 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 [if exp=tf.test_sijyou==true]
-【！】テストページからはじめます。変数を代入しますか？[r]
+【！】テストページからはじめます。変数を代入しますか？[p]
 [link target=first]【１】代入しない[endlink][r]
 [r]
-[link target=test_str]【２】淑女度高め(終了後にもどします)[endlink][s]
+[link target=test_str]【２】淑女度高め(終了後にもどします)[endlink][r][r]
+[link target=test_str2]【３】緊急用：淑女度を１(戻しません)[endlink][s]
 *test_str
 [er]
 元パラを一時変数に退避します[p]
@@ -19,6 +20,13 @@
 元パラは[emb exp="tf.shukujodo"][r]
 ;一時敵に変数に代入
 [eval exp="f.para_shujinkou_shukujodo=200"]
+現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
+@jump target=first
+[s]
+*test_str2
+こちらは途中で回線がきれた場合の緊急用リセットです。[r]
+元パラは[emb exp="f.para_shujinkou_shukujodo"]です[p]
+[eval exp="f.para_shujinkou_shukujodo=1"]
 現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
 [endif]
 
