@@ -48,6 +48,11 @@
 [主人公通常]
 #
 ;再度,ご迷惑をおかけしたことを詫びる四条家[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
+[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+[endif]
 ;[whosay name="四条祖父" color="#888898"]
 ;「」[p]
 ;[whosay name="四条祖母" color="#888898"]
@@ -61,9 +66,24 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、聞くまでもないが、華織くんのことを選んで良かったかね？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「もう、お父様ったら……」[p]
+;～～～驚きつつ困惑照れ～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
+「お父様……」[p]
 #
 私は、自然と華織様と見つめ合った[p]
+[主人公照れ目普通]
 [whosay name="華織" color="olivedrab"]
 （[名前]さん）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -78,10 +98,16 @@
 私は、もう一度、華織様と見つめ合った。[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]、よかったね」[p]
+[fadeoutbgm time=3000]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 #
 乾杯の音頭も終えたころ、華織が改めて、兄弟を紹介する。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
+[playbgm storage="michikusa.ogg" loop=true]
+[eval exp="f.bgm_storage='michikusa.ogg'"]
+[endif]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
@@ -163,6 +189,7 @@
 「こ、今後とも、よろしくお願いします」[p]
 [whosay name="華織" color="olivedrab"]
 「……箱入り娘で、ごめんね」[p]
+[fadeoutbgm time=3000]
 ;疲れた、難しい
 
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
@@ -170,6 +197,11 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 お兄様に言われた私達は二人で庭へと出る。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 ;【背景】庭園
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
@@ -254,7 +286,7 @@
 「[名前]さん……」[p]
 ;華妹が華衣と喧嘩しだしたので戻るふたり　爽やか！
 [whosay name="四条 美華" color=%mp.color]
-「華織お兄様～～！　[華衣]が私のこと、ぶった～～～！！」
+「華織お兄様～～！　[華衣]が私のこと、ぶった～～～！！」[p]
 [whosay name="ふたり" color=%mp.color]
 「「！！」」[p]
 [whosay name="四条 華衣" color=%mp.color]
