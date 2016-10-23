@@ -308,7 +308,7 @@ $('.hababi').remove();
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？はい。 ありがとうございます」[p]
-
+[image name="hababi" storage="bg/sijyou_engawa2_1.png" layer=1 zindex=2 left=0 time=2000]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「たまには家には帰ってくるんだぞ」[p]
 
@@ -323,6 +323,7 @@ $('.hababi').remove();
 #
 そんなことを口早に言って、[r]
 お父様は、少しばかり寂しい気な表情を浮かべた。[p]
+[kanim name="hababi" keyframe="opcy" time="6000" ]
 
 ;◎主人公は大丈夫だからと窘めた。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -340,7 +341,9 @@ $('.hababi').remove();
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;(本格的に決まるのはまだ先だと言うのに)
 ;このセリフがないと、決まったの？と思うかも？でも、あると繋がりはよくない
-
+[iscript]
+$('.hababi').remove();
+[endscript]
 ;ほほえみ
 [主人公ほほえみ]
 [wait time=10]
