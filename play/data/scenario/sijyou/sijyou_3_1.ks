@@ -8,10 +8,10 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 [if exp=tf.test_sijyou==true]
-テストページからはじめます。変数を代入しますか？[r]
-[link target=first]しない[endlink][r]
+【！】テストページからはじめます。変数を代入しますか？[r]
+[link target=first]【１】代入しない[endlink][r]
 [r]
-[link target=test_str]淑女度高め(終了後にもどします)[endlink][s]
+[link target=test_str]【２】淑女度高め(終了後にもどします)[endlink][s]
 *test_str
 [er]
 元パラを一時変数に退避します[p]
@@ -174,6 +174,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「磯野、起きています。　入って頂戴」[p]
+#
 私は、素早く身だしなみを整えると、いつも通りに整然と筆をとった姿勢で磯野を迎えいれた。[p]
 ;SE襖
 ;【SE】襖を開ける（ゆっくり）
@@ -181,6 +182,7 @@
 [whosay name="磯野" color="dimgray"]
 「失礼します」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目パチ1回]
 「磯野、丁度、あなたにお願いしたいことが……」[p]
 ;共通２にジャンプ
 [else]
@@ -265,6 +267,7 @@
 ;～～～～～～～淑女度高い～～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
+[主人公口ほほえみ]
 「ありがとう、磯野。こちらは、いつ届いたのかしら？」[p]
 [whosay name="磯野" color="dimgray"]
 「昨晩、旦那様宛に届き、その中にお嬢様宛の手紙が含まれおりました」[p]
@@ -288,7 +291,6 @@
 (奥方となられる方……そうだわ……私、華織様と、もうすぐ……)[p]
 #
 私は、先ほどの疑問も忘れ、その言葉に顔を赤らめてしまった。[p]
-[主人公頬染]
 [主人公横目]
 [主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -298,6 +300,7 @@
 [whosay name="磯野" color="dimgray"]
 「はい。 では、下がらせていただきます。[r]
 [sp]失礼しました」[p]
+#
 [endif]
 ;～～～～～～～共通3～～～～～～～
 *common3
@@ -424,6 +427,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [else]
 [主人公ポーズ通常]
 [主人公目閉]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。準備は整えたつもりです」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -440,13 +447,14 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「では、向かおうか。先に待っている者がいるからな」[p]
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
 [主人公ポーズ通常]
 [主人公目閉]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (どなたかお待ちなのかしら？ [r]
 華織様は会場にいらっしゃると思いますし……？)[p]
+#
 ;ここが違う↓
 #
 はやる気持ちを抑え、父の後ろをついて歩いた。[p]
@@ -525,8 +533,9 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「ほぉ。これはなかなか……生けた花とは、よく言ったものだ」[p]
 [whosay name=文矢 color="#538a8a"]
 「あったよ。[名前]。　これが、華織が受賞した作品だね」[p]
+;～～～～～～～～～～～～～シーン華織の作品みる～～～～～～～～～～～～～～～～
 #
-;背景を変えてみる・・・
+;背景を変えてみる・・・松の枝、ロトウサクラのイメージを被せる必要あり
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 お兄様が金屏風の前に飾られた受賞作品を見つける。[p]
@@ -567,6 +576,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 #
 私は、華織様が作り出す華道の世界に目を奪われてしまった。[p]
 [endif]
+;～～～～～～～～～～～～～シーン華織の作品みるおわり～～～～～～～～～～～～～～～～
 ;～～～～～～～～～～～～共通５～～～～～～～～～～～
 *common5
 [主人公目閉じ]
