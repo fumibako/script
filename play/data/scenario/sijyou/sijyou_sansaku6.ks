@@ -338,6 +338,7 @@
 [wait time=10]
 ;背景花火
 [chara_mod name="bg" storage="bg/sijyou_hanabi2.jpg" time=1000]
+[chara_mod name="bg" storage="bg/sijyou_hanabi2_1.jpg" time=2000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 花火が華開き、儚く落ちていく。[p]
