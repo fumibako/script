@@ -1,27 +1,50 @@
 *test
-@jump target=first
 ;[暗転]
-;テストページからはじめます。変数を代入します[p]
-;[chara_mod name="bg" storage="toumei.gif"]
-;[if exp=tf.sijyou_test==true]
-;元パラを一時変数に退避
-;[eval exp="tf.shukujodo=f.para_shujinkou_shukujodo"] 
-;一時敵に変数に代入
-;[eval exp="f.para_shujinkou_shukujodo=200"]
-;[endif]
+[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+[if exp=tf.test_sijyou==true]
+【！】テストページからはじめます。変数を代入しますか？[p]
+[link target=first]【１】代入しない[endlink][r]
+[r]
+[link target=test_str]【２】淑女度高め(終了後にもどします)[endlink][r][r]
+[link target=test_str2]【３】緊急用：淑女度を１(戻しません)[endlink][s]
+*test_str
+[er]
+元パラを一時変数に退避します[p]
+[eval exp="tf.shukujodo=f.para_shujinkou_shukujodo"] 
+元パラは[emb exp="tf.shukujodo"][r]
+;一時敵に変数に代入
+[eval exp="f.para_shujinkou_shukujodo=200"]
+現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
+@jump target=first
+[s]
+*test_str2
+こちらは途中で回線がきれた場合の緊急用リセットです。[r]
+元パラは[emb exp="f.para_shujinkou_shukujodo"]です[p]
+[eval exp="f.para_shujinkou_shukujodo=1"]
+現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
+[endif]
+
 *first
+[er]
 ;～～～～～～～～～～～～～シーン料亭～～～～～～～～～～～～～～～～～
+;【テキスト全画面】黒茶・和紙風背景に白文字
+[テキスト全画面白文字]
+;華道展を終わらせ(昼過ぎまで)
+華織が用意した食事の場で、その後、四条家と鷹司家で食事することとなった。[p]
 ;華道展から食事の流れ思いつかない　終わりまで家族を待たせるわけにもいかないし
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[イベントシーン構築]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 #
-華織が用意した食事の場で、その後、四条家と鷹司家で食事することとなった。[p]
 再度,ご迷惑をおかけしたことを詫びる四条家[p]
 [whosay name="四条祖父" color="#888898"]
 「」[p]
@@ -229,11 +252,19 @@
 「……帰りましょうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[イベントシーン構築枠茶色]
 ;料亭廊下
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 #
 文矢が華織に話しかけた。[p]
 [whosay name=文矢 color="#538a8a"]
 「これからも妹のことをよろしく。もう泣かしたらダメだよ」[p]
+#
 華織は深くうなづく。[p]
 [whosay name="華織" color="olivedrab"]
 「文也、[名前]さんに会わせてくれてありがとう、君という友人がいて本当に幸せだ」[p]
@@ -244,9 +275,16 @@
 「そうだね。けど、まずは君がまた悩んでいることがあったら、僕が助けるよ」[p]
 [whosay name=文矢 color="#538a8a"]
 「そうだなぁ……」[p]
-;暗転
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 新しく訪れる幸せな悩みについて、ふたりの話は、夜も更けていった。[p]
 [イベントシーン終了]
+
+[if exp=tf.test_sijyou==true]
+;元パラを一時変数からもどす
+[eval exp="f.para_shujinkou_shukujodo=tf.shukujodo"] 
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 *window_close
