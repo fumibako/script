@@ -1,26 +1,31 @@
 *test
-@jump target=first
 ;[暗転]
-;テストページからはじめます。変数を代入します[p]
-;[chara_mod name="bg" storage="toumei.gif"]
-;[if exp=tf.sijyou_test==true]
-;元パラを一時変数に退避
-;[eval exp="tf.shukujodo=f.para_shujinkou_shukujodo"] 
-;一時敵に変数に代入
-;[eval exp="f.para_shujinkou_shukujodo=200"]
-;[endif]
-;[endif]
-*first
-;条件:華織の迷いのイベントを一つでも見ている　【全力】の手紙をよんだ後日 夜
-;主人公庭夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
+[if exp=tf.test_sijyou==true]
+テストページからはじめます。変数を代入しますか？[r]
+[link target=first]しない[endlink][r]
+[link target=test_str]淑女度高め(終了後にもどします)[endlink][s]
+*test_str
+元パラを一時変数に退避します[p]
+[eval exp="tf.shukujodo=f.para_shujinkou_shukujodo"] 
+元パラは[emb exp="tf.shukujodo"][r]
+;一時敵に変数に代入
+[eval exp="f.para_shujinkou_shukujodo=200"]
+現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
+[endif]
+
+*first
+;条件:華織の迷いのイベントを一つでも見ている　【全力】の手紙をよんだ後日 夜
+;主人公庭夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[stopbgm]
 ;～～～～～～～～～～～～～～～～～～前章シーンここから～～～～～～～～～～～～～～～～
 [主人公ポーズ通常]
 [主人公通常]
@@ -89,9 +94,9 @@
 だから今、全力で自分を使って色々な場所で活躍していきます。[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
-[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
-[link target=fumi_in3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
+[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
+[link target=fumi_in3][sp]　　　　　　　　　　　　　　　　　　　　　　 　【閉】[endlink][s]
 *fumi_in3
 [er]
 [手紙四条読了 fumi_number=]
@@ -129,7 +134,8 @@
 [主人公横目]
 （磯野に頼んで行ってみようかしら？）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（ですが、お仕事が忙しい時に会いに行ったら、迷惑では、ないでしょうか？）[p]
+（ですが、お仕事が忙しい時に会いに行ったら、迷惑では、ないでしょう[r]
+[sp]か？）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公目閉じ]
@@ -328,7 +334,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
-[link target=fumi_in1_1][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
+[link target=fumi_in1_1][sp]　　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
 [link target=fumi_in3_3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
 *fumi_in3_3
 [er]
@@ -352,6 +358,9 @@
 [主人公目閉]
 心に咲き誇る恋夢にうたた寝をすると、庭木の上でメジロが愛らしく鳴いた。[p]
 ;暖かい陽気で、まだ少し眠いよ！ということでもあり。
+;【SE】メジロ（ピィピュイ）
+[playse storage=tori_mejiro.ogg loop=false ]
+[chara_mod name="bg" storage="toumei.gif" time=10]
 ;～～～～～～～～～～～～～～～～～～前章シーンおわり～～～～～～～～～～～～～～～～
 ;テキスト全面表示
 [テキスト全画面白文字]
@@ -395,11 +404,12 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「まぁ、お父様。 私を誰と、お比べなのですか？」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「こっちに来くれば、わかるだろう」[p]
+#
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公目閉]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 (どなたかお待ちなのかしら？ [r]
 華織様は会場にいらっしゃると思いますし……誰かしら？)[p]
 ;ここが違う↓
@@ -424,9 +434,12 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「ありがとうございます」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「では、向かおうか。先に待っている者がいるからな」[p]
+#
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ポーズ通常]
+[主人公目閉]
 (どなたかお待ちなのかしら？ [r]
 華織様は会場にいらっしゃると思いますし……？)[p]
 ;ここが違う↓
@@ -505,13 +518,16 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=文矢 color="#538a8a"]
 「あったよ。[名前]。　これが、華織が受賞した作品だね」[p]
 #
+;背景を変えてみる・・・
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 お兄様が金屏風の前に飾られた受賞作品を見つける。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （美しいわ……いえ、それだけでは、言葉が足りないわ）[p]
 [whosay name=文矢 color="#538a8a"]
 「山岳のような気迫を感じるね」[p]
 ～～華道パラがかなり高い場合～～[p]
-;[if exp="f.para_shujinkou_j_kadou >= 100"]
+[if exp="f.para_shujinkou_j_kadou >= 100"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇ、松と、ロトウサクラを大胆に使用された迫力ある作品ですわね」[p]
 ;なんでこんな文
@@ -535,20 +551,26 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公真剣]
 (私も、華織様を支えれるように精進しなくては……!)[p]
 ～～華道パラ普通の場合～～[p]
-;[else]
+[else]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公ほほえみ]
-(どれも、素敵な作品だわ)[p]
+(本当に、どれも素敵な作品だわ)[p]
 #
 私は、色とりどりの生け花に目を奪われてしまった。[p]
-;[endif]
+[endif]
 ;～～～～～～～～～～～～共通５～～～～～～～～～～～
 *common5
+[主人公目閉じ]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[主人公通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(こちらは、複数の生け花で、夏の[ruby text=かわず]蛙の跳ねる姿を表現されているのですね……)[p]
 ;【SE】人々のざわめき（ザワザワ…屋内）
 [playse storage=zawa_room.ogg loop=false ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(こちらは、複数の生け花で夏の[ruby text=かわず]蛙の跳ねる姿を表現されているのですね……)[p]
 ;～引き立て悪役の登場～
 [whosay name="華道家の弟子達"]
 「ふーん…まぁまぁだな」[p]
@@ -562,15 +584,17 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公驚]
 [whosay name="華道家の弟子達"]
 「！」[p]
-[主人公ふぅ閉]
 ;四条祖母の風貌説明
 #
 銀色の髪を着物に合わせて上品に結った老婦人が現れた途端、[r]
 失礼な華道家の弟子達は、足早に去って行ってしまった。[p]
+;[主人公ふぅ閉]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;（何だったのでしょうか……)[p]
 ;～～～～～～～～～～～～共通５ここまで～～～～～～～～～～～
 ;祖母のイベントをやっていない人が、何故祖母と、わかったのか説明する
 ～～～祖母イベントをやってる場合～～～[p]
-[主人公驚]
+;[主人公驚]
 #
 華織様のお祖母様がゆったりと挨拶をした。[p]
 [主人公口ほほえみ]
@@ -585,21 +609,21 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;共通6にジャンプ 華道パラスルー
 ;@jump target=*common6
 #
-それ以外の場合[r]
-;[if exp="f.para_shujinkou_j_kadou >= 100"]
-～～～華道パラが高い場合～～[p]
+それ以外の場合は華道パラ[p]
+[if exp="f.para_shujinkou_j_kadou >= 100"]
+;～～～華道パラが高い場合～～[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 (あの方は、華道の名士の四条綾女様だわ)[p]
 #
 華道の教本でも、お顔を何度か拝見しており、[r]
 園遊会でも、四条家について、詳しくお話をされた方。[p]
-;[else]
-～～～華道パラがそれ以外の場合～～～[p]
+[else]
+;～～～華道パラがそれ以外の場合～～～[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 「！あの方は、園遊会でもお会いした華織様の祖母様だわ」[p]
-;[endif]
+[endif]
 ;～～～～～～～～～～～共通6ここから～～～～～～～
 *common6
 [主人公通常]
@@ -697,9 +721,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ( 華織さま？！)[p]
 #
 数人の勘の良い来場者は、チラリと私を見つめた。[p]
+[主人公眉困り]
 [主人公照れ目普通]
 [whosay name=文矢 color="#538a8a"]
 「華織の奴、随分と大胆な告白だね」[p]
+[主人公眉下げ]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……)[p]
@@ -731,7 +757,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「[名字]様、先日は、文也さんと名前さんのお陰で助かりました。[r]
 [sp]ご子息、子女に、ご迷惑をおかけして申し訳ありませんでした」[p]
 ;いきなり文也の会話からだと違和感あり
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
 「いや、そのことは文也に”も”、話したことだから[r]
 [sp]華織君は、もう気にしなくていい」[p]
 [whosay name=文矢 color="#538a8a"]
@@ -745,6 +771,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name="華織" color="olivedrab"]
 「はい。事をお知らせする義務がございます」[p]
 ;話したら怒られるでしょう・・・のフォロー
+[主人公眉困り]
 [主人公横目]
 [主人公口ふぅ]
 [whosay name=文矢 color="#538a8a"]
@@ -775,7 +802,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「私こそ、決まりとはいえ、[名前]と引き離してすまない」[p]
 [whosay name="華織" color="olivedrab"]
 「いえ、[名字]様。[r]
-[sp]それもあってこそ、[名前]さんを強く想う今の自分があるのだと思います……」[p]
+[sp]それもあってこそ、[名前]さんを強く想う今の自分があるのだと思い[r]
+[sp]ます……」[p]
 ;主人公柔和ほほえみ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -797,9 +825,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
+#
 華織様の透き通る瞳が、うっすらと滲む。[r]
 その瞳の奥には、短期間で賞をとるほどの努力の滲みが見えていた。[p]
-;細かな描写がないので全然泣けない
+;細かな描写がないので全然泣けない　苦労の滲みだと嫌々感
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織さま……」[p]
@@ -826,6 +855,12 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お兄様が華織様の友人で、お兄様が私の兄で、本当に良かった)[p]
 ;長いので分けます
+
+[if exp=tf.test_sijyou==true]
+;元パラを一時変数にからもどす退避
+[eval exp="f.para_shujinkou_shukujodo=tf.shukujodo"] 
+[endif]
+
 ;@jump storage=sijyou/sijyou_3_1b.ks
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
