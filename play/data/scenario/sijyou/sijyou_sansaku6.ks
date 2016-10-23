@@ -8,8 +8,13 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [preload storage="data/fgimage/bg/sijyou_engawa2_1.png"]
+;透明化
 [keyframe name="opcy"]
 [frame p=100%  opacity="0"]
+[endkeyframe]
+;透明無効化
+[keyframe name="not_opcy"]
+[frame p=100%  opacity="1"]
 [endkeyframe]
 
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
@@ -135,9 +140,6 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、知ってるか？ 『かぎや』と言うのはだな、[r]
 [sp]代表的な花火師の屋号なんだぞ」[p]
-[iscript]
-$('.hababi').remove();
-[endscript]
 [主人公口ほほえみ]
 [wait time=10]
 [主人公ポーズ片手]
@@ -145,22 +147,23 @@ $('.hababi').remove();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうなのですか？」[p]
-
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「たまや も、同じく」[p]
 ;磯野二人の為に一口に切り分けたスイカと水羊羹を持ってくる。
+;アニメーション実行　可視化
+[kanim name="hababi" keyframe="not_opcy" time="5000" ]
 [whosay name="？？？"]
 「旦那様、お嬢様。」[p]
-
 [主人公ポーズ通常]
 [wait time=10]
 [主人公横目]
 [wait time=10]
 [主人公口開]
 [wait time=10]
-
+;アニメーション実行
+[kanim name="hababi" keyframe="opcy" time="5000" ]
 #
 後ろから聞き覚えのある声がして振り向くと、お盆を手にした磯野が佇んでいた。[p]
 
@@ -173,7 +176,8 @@ $('.hababi').remove();
 
 すると、小さく切り分けられたスイカと、瑞々しい水羊羹をのせた小皿を私達の傍に置いて後ろへと下がる。[p]
 ;長いからきってみた
-
+;アニメーション実行　可視化
+[kanim name="hababi" keyframe="not_opcy" time="5000" ]
 #
 磯野の細やかな動きには、いつも目を見張るものがある。[r]
 ただ、淑女の躾としては、それを大っぴらに褒めることは許されない。[p]
@@ -185,6 +189,8 @@ $('.hababi').remove();
 私は、出来うる限りの素直さで、いつも感謝を述べるのだ[p]
 ;のだ！って使っていいのかな
 ;◎父、華織と上手くいっているか気になり話かけたが、
+;アニメーション実行
+[kanim name="hababi" keyframe="opcy" time="6000" ]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ところで、[名前]よ。華織くんとは、上手くいってるのかね？」[p]
@@ -203,6 +209,9 @@ $('.hababi').remove();
 [wait time=10]
 #
 とは言っても、憧れだった華織お兄様とのお付き合い。[p]
+[iscript]
+$('.hababi').remove();
+[endscript]
 [主人公ふぅ閉]
 [wait time=10]
 #
