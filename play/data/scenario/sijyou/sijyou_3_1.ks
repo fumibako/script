@@ -645,7 +645,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=四条祖母 color=%mp.color]
 「こんにちは、[名前]さん、ご挨拶が遅れまして申し訳ありません」[p]
 #
-四条綾花様は、[ruby text=ろう]老[ruby texy=せい]成した穏やかな微笑みをこちらに向けた。[p]
+四条綾花様は、[ruby text=ろう]老[ruby text=せい]成した穏やかな微笑みをこちらに向けた。[p]
 ;速読で読みにくいため修正↑
 [主人公ほほえみ]
 ;共通6にジャンプ 華道パラスルー
