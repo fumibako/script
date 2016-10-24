@@ -11,6 +11,7 @@
 ;透明化オンオフ　一緒にしましょう
 [keyframe name="opcy"]
 [frame p=0% opacity="0"]
+[frame p=50% opacity="0.5"]
 [frame p=100% opacity="1"]
 [endkeyframe]
 ;消えるときに必要だった
