@@ -8,11 +8,11 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [preload storage="data/fgimage/bg/sijyou_engawa2_1.png"]
-;透明化オンオフ　一緒にしましょう
+;透明化オンオフ　一緒にしましょう　拡大縮小つけたほうがいい。けど周囲の透過色が目立つ
 [keyframe name="opcy"]
-[frame p=0% opacity="0"]
-[frame p=50% opacity="0.5"]
-[frame p=100% opacity="1"]
+[frame p=0% opacity="0" scale=0.8]
+[frame p=50% opacity="0.5" scale=0.9]
+[frame p=100% opacity="1"scale=1]
 [endkeyframe]
 ;消えるときに必要だった
 [keyframe name="not_opcy"]
@@ -346,7 +346,8 @@ $('.hababi').remove();
 [wait time=10]
 ;背景花火
 [chara_mod name="bg" storage="bg/sijyou_hanabi2.jpg" time=1000]
-[chara_mod name="bg" storage="bg/sijyou_hanabi2_1.jpg" time=5000]
+;ウェイト入ると止まる他ないのでイメージで重ねる
+[image name="hababi_2" storage="bg/sijyou_hanabi2_1.jpg" layer=1 zindex=2 left=0 time=5000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 花火が華開き、儚く落ちていく。[p]
@@ -357,7 +358,9 @@ $('.hababi').remove();
 [主人公目閉じ]
 [wait time=10]
 燁が夏を織りなす、幸せな思い出[p]
-
+[iscript]
+$('.hababi_2').remove();
+[endscript]
 ;@jump storage="event.ks" target=*event_owari
 
 
