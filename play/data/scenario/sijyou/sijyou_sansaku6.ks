@@ -10,8 +10,8 @@
 [preload storage="data/fgimage/bg/sijyou_engawa2_1.png"]
 ;透明化オンオフ　一緒にしましょう
 [keyframe name="opcy"]
-[frame p=0% opacity="0" scale=0.5]
-[frame p=100% opacity="1" scale=1]
+[frame p=0% opacity="0"]
+[frame p=100% opacity="1"]
 [endkeyframe]
 ;消えるときに必要だった
 [keyframe name="not_opcy"]
@@ -121,14 +121,14 @@
 #
 黄昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
 ;アニメーション実行
-[kanim name="hababi" keyframe="opcy" time="5000" count=6]
+[kanim name="hababi" keyframe="opcy" time="6000" count=infinite]
+
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
-
 ;黄昏って夏は19時らしい
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、知ってるか？ 『かぎや』と言うのはだな、[r]
@@ -137,7 +137,6 @@
 [wait time=10]
 [主人公ポーズ片手]
 [wait time=10]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうなのですか？」[p]
 [主人公目パチ1回]
@@ -145,8 +144,6 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「たまや も、同じく」[p]
 ;磯野二人の為に一口に切り分けたスイカと水羊羹を持ってくる。
-;アニメーション実行　可視化
-[kanim name="hababi" keyframe="not_opcy" time="5000" ]
 [whosay name="？？？"]
 「旦那様、お嬢様。」[p]
 [主人公ポーズ通常]
@@ -191,8 +188,10 @@
 [sp]えぇ、お手紙も頂いてますし、」[p]
 [主人公通常]
 [wait time=10]
-[kanim name="hababi" cunt=0]
-[kanim name="not_opcy" time=5000]
+;アニメーション停止
+[kanim keyframe="opcy" name="hababi" cunt=0]
+;透明化
+[kanim keyframe="not_opcy" name="hababi" time=5000]
 #
 とは言っても、憧れだった華織お兄様とのお付き合い。[p]
 [iscript]
