@@ -916,8 +916,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [sp]私は、そんなお兄様のことを誇らしくも尊敬しております)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お兄様が華織様の友人で、お兄様が私の兄で、本当に良かった)[p]
-;長いので分けます
-
+#
+強さを秘めた幸せは、周囲の人を幸せにするのかもしれない。[r]
+私は、お二人の笑顔を見ながらひっそりと考えた。[p]
+;長いので分けます　
+;これだけでもイベントになるように絞め言葉を。適当。
 [if exp=tf.test_sijyou==true]
 ;元パラを一時変数にからもどす退避
 [eval exp="f.para_shujinkou_shukujodo=tf.shukujodo"] 
