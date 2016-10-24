@@ -8,15 +8,15 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [preload storage="data/fgimage/bg/sijyou_engawa2_1.png"]
-;透明化
+;透明化オンオフ　一緒にしましょう
 [keyframe name="opcy"]
-[frame p=100%  opacity="0"]
+[frame p=0% opacity="0" scale=0.5]
+[frame p=100% opacity="1" scale=1]
 [endkeyframe]
-;透明無効化
+;消えるときに必要だった
 [keyframe name="not_opcy"]
-[frame p=100%  opacity="1"]
+[frame p=100% opacity="0"]
 [endkeyframe]
-
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
@@ -101,34 +101,27 @@
 「[名前]。丁度、帰ってきて休んでいたところだ。[r]
 [sp]お前も、隣に座って夕涼みをしようじゃないか」[p]
 ;お前呼びだっけ？ しようではないか？どっちだろう
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そう、
-
 [主人公口ほほえみ]
 [wait time=10]
 [主人公目通常]
 [wait time=10]
-
 ですね」[p]
 #
 私は、磯野の微笑みが、このことか。と、[r]
 合点がつき、微笑って父の隣にすわってみせた。[p]
-
 [主人公ほほえみ]
 [wait time=30]
-
 [主人公退場]
 ;背景 縁側　夕方か夜 時間がたつ。
 [chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [image name="hababi" storage="bg/sijyou_engawa2_1.png" layer=1 zindex=2 left=0 time=2000]
-
-
 #
 黄昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
 ;アニメーション実行
-[kanim name="hababi" keyframe="opcy" time="5000" ]
+[kanim name="hababi" keyframe="opcy" time="5000" count=6]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -162,8 +155,6 @@
 [wait time=10]
 [主人公口開]
 [wait time=10]
-;アニメーション実行
-[kanim name="hababi" keyframe="opcy" time="5000" ]
 #
 後ろから聞き覚えのある声がして振り向くと、お盆を手にした磯野が佇んでいた。[p]
 
@@ -176,8 +167,7 @@
 
 すると、小さく切り分けられたスイカと、瑞々しい水羊羹をのせた小皿を私達の傍に置いて後ろへと下がる。[p]
 ;長いからきってみた
-;アニメーション実行　可視化
-[kanim name="hababi" keyframe="not_opcy" time="5000" ]
+
 #
 磯野の細やかな動きには、いつも目を見張るものがある。[r]
 ただ、淑女の躾としては、それを大っぴらに褒めることは許されない。[p]
@@ -189,24 +179,20 @@
 私は、出来うる限りの素直さで、いつも感謝を述べるのだ[p]
 ;のだ！って使っていいのかな
 ;◎父、華織と上手くいっているか気になり話かけたが、
-;アニメーション実行
-[kanim name="hababi" keyframe="opcy" time="6000" ]
-
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ところで、[名前]よ。華織くんとは、上手くいってるのかね？」[p]
-
 [主人公驚]
 [wait time=10]
 ;◎主人公、華織との思い出にひたる。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様、ですか？ 
-
 [主人公ポーズ片手]
 [wait time=10]
-
 [sp]えぇ、お手紙も頂いてますし、」[p]
 [主人公通常]
 [wait time=10]
+[kanim name="hababi" cunt=0]
+[kanim name="not_opcy" time=5000]
 #
 とは言っても、憧れだった華織お兄様とのお付き合い。[p]
 [iscript]
@@ -360,7 +346,7 @@ $('.hababi').remove();
 [wait time=10]
 ;背景花火
 [chara_mod name="bg" storage="bg/sijyou_hanabi2.jpg" time=1000]
-[chara_mod name="bg" storage="bg/sijyou_hanabi2_1.jpg" time=2000]
+[chara_mod name="bg" storage="bg/sijyou_hanabi2_1.jpg" time=5000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 花火が華開き、儚く落ちていく。[p]
