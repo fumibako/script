@@ -232,7 +232,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (きっと、こういう時でないとお兄様は、ゆっくりと、ご自分のことお話しされないと思う)[p]
 #
-@jump storage=sijyou_3_1b_fumiya.ks
+@jump storage=sijyou_3_1b_fumiya.ks target=first
 ;四条 華織と文矢
 *modoru
 [whosay name=文矢 color="#538a8a"]
