@@ -51,11 +51,12 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="test_event_3" text="イベント3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test10_2" text="10月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-[glink target="test11_1b" text="11月1週badED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
-[glink target="test12_1" text="12月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
+[glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test10_2" text="10月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="test11_1b" text="11月1週badED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
+[glink target="test12_1" text="12月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=600 color=white]
 
 [glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test2_2" text="2月2週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -101,6 +102,12 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [cm]
 [freeimage layer = 26]
 @jump storage="katuraginomiya/katuraginomiya_9_3.ks"
+[s]
+
+*test9_4
+[cm]
+[freeimage layer = 26]
+@jump storage="katuraginomiya/katuraginomiya_9_4.ks"
 [s]
 
 
