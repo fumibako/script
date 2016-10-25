@@ -103,6 +103,9 @@
 [主人公通常]
 父の口上を起点に、晴れやかな空気が流れる。[p]
 ;～～～～～～～～～～シーン晴れやか～～～～～～～～～～～～～～～～～～～～
+;宴会または料亭席全体
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
 [playbgm storage="isono_miyabi.ogg" loop=true]
@@ -129,6 +132,7 @@
 ;BGMがすぐ切り替わるとおかしいので中間的な曲で続けてみる
 *common1
 ;「～ね」が続いておかしい
+[主人公通常]
 #
 [whosay name=文矢 color="#538a8a"]
 「[名前]と華織との結納まで、もうすぐなんだね……」[p]
@@ -144,6 +148,9 @@
 [sp]本当のことを言うと、少し寂しくなる」[p]
 [主人公驚]
 ;～～～～～～～～～～シーン切ない～～～～～～～～～～～～～～～～～～～～
+;背景・酒盛き（未定）
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [fadeoutbgm time=3000]
 #
 花咲く宴会がはじまる中、お兄様は、さかづきを揺らし、波間を見つめる。[p]
@@ -223,6 +230,9 @@
 ;～～～～～～～～～～シーン選択肢へ～～～～～～～～～～～～～～～～～～～～
 *common2
 [fadeoutbgm time=3000]
+;背景　宴会会場　または料亭
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 #
 お兄様は、安堵したかのように微笑むと華織様をみつめた。[p]
 ;～～～～～～選択肢～～～～～～～～～
@@ -318,6 +328,7 @@
 [current layer="message0"]
 #
 私も華織様を見つめた。[p]
+;宴会または料亭席全体
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
@@ -364,6 +375,12 @@
 [whosay name="華織" color="olivedrab"]
 「文矢、[名前]さん。[r]
 [sp]渡仏(とふつ)やら留学中で紹介できてなかった兄弟を改めて、紹介するね……」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
+[playbgm storage="michikusa.ogg" loop=true]
+[eval exp="f.bgm_storage='michikusa.ogg'"]
+[endif]
+
 [whosay name=文矢 color="#538a8a"]
 「？ 華織、何か疲れてないかい？」[p]
 #
