@@ -187,7 +187,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *test3_1b_f
 [cm]
 [freeimage layer = 26]
-@jump storage="sijyou/sijyou_3_1b_fumiya"
+@jump storage="sijyou/sijyou_3_1b_fumiya.ks"
 [s]
 
 *test3_4
