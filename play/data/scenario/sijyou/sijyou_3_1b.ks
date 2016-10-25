@@ -56,11 +56,12 @@
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[四条ポーズ通常]
+[四条微笑み]
 [主人公ポーズ通常]
 [主人公通常]
 #
 ;再度,ご迷惑をおかけしたことを詫びる四条家[p]
-
 [whosay name="四条父" color="#9B608B"]
 「どうか[emb exp="sf.father_name"]さん。これからも、華織と娘さんとの[r]
 [sp]お付き合いをお願いできないだろうか……」[p]
@@ -106,10 +107,10 @@
 [playbgm storage="isono_miyabi.ogg" loop=true]
 [eval exp="f.bgm_storage='isono_miyabi.ogg'"]
 [endif]
-
 私は、もう一度、華織様と見つめ合った。[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]、よかったね」[p]
+[四条退場]
 ;～～淑女度低い場合～～
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;主人公笑顔
@@ -124,6 +125,7 @@
 「はい」[p]
 [endif]
 *common1
+[fadeoutbgm time=3000]
 ;「～ね」が続いておかしい
 #
 [whosay name=文矢 color="#538a8a"]
@@ -138,7 +140,7 @@
 [whosay name=文矢 color="#538a8a"]
 「僕の方が先に出て行ったから、まだいいんだろうけどさ……[r]
 [sp]本当のことを言うと、少し寂しくなる」[p]
-[主人公驚き]
+[主人公驚]
 #
 花咲く宴会がはじまる中、お兄様は、さかづきを揺らし、波間を見つめる。[p]
 [主人公柔和ほほえみ１]
@@ -298,6 +300,12 @@
 [current layer="message0"]
 #
 私も華織様を見つめた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
+[playbgm storage="isono_miyabi.ogg" loop=true]
+[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
+[endif]
+
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
@@ -502,12 +510,11 @@
 
 ;BGM切り替え
 [fadeoutbgm time=3000]
-
 華織様は、晴れやかな席で私に不安を打ち明ける妹に対して、戸惑った様子で肩を叩いた。[p]
 ;止めるべきだと思うが悩ましいところ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(美華さんも、昔の私に似ているかもしれない。
-お兄様しか知らなかった頃の私に)[p]
+(美華さんも、昔の私に似ているかもしれない。[r]
+[sp]お兄様しか知らなかった頃の私に)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私も初めは不安でした」[p]
 [if exp="sf.BGM=='ON'"]
@@ -523,17 +530,17 @@
 「これからの美華さんの姉として送ります」[p]
 ;言祝ぎを送るじゃおかしいからこんなんでいいか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「美華さんにも、それに華衣さんにもくるかもしれません。
-それぞれのお二人の事を一番大切にしてくれて[r]
-お二人も、その方を大切に思える人からの手紙が」[p]
+「美華さんにも、それに華衣さんにもくるかもしれません。 それぞれのお二人の事を[r]
+[sp]一番大切にしてくれて[r]
+[sp]お二人も、その方を大切に思える人からの手紙が」[p]
 [whosay name="四条 美華" color=%mp.color]
 「一番、大切に……」[p]
 [主人公目閉じ].
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「その時のはじまりは、うまくいかないかもしれません。
-ですけど、信じて乗り越えたおかげで、
+「その時のはじまりは、うまくいかないかもしれません。[r]
+[sp]ですけど、信じて乗り越えたおかげで」[p]
 [主人公ほほえみ]
-こんな幸せな出会いがたくさん待っていたのですから！」[p]
+「こんな幸せな出会いがたくさん待っていたのですから！」[p]
 [whosay name="華織" color="olivedrab"]
 「名前さん」[p]
 [whosay name="四条 美華" color=%mp.color]
@@ -613,12 +620,14 @@
 (陰ながら私も応援していますわ)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様のような、華やかで素敵なお兄様方に囲まれて美華様は、幸せでしょうね」[p]
-[else]
-;～～～～～～～～～～～～～～～～
+[endif]
+
+;～～～～～～～～共通～～～～～～～～
 *common7
 [whosay name="華織" color="olivedrab"]
 「名前さん。君って人は、[r]
 [sp]時々、僕より大人びて見えますね……」[p]
+;微妙だな↑
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そ、そうでしょうか？」[p]
 [whosay name="華織" color="olivedrab"]
