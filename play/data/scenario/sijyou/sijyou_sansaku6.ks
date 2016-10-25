@@ -83,7 +83,7 @@
 ;移動中、なくてもいいけど
 [主人公退場]
 [chara_mod name="bg" storage="bg/sijyou_engawa.jpg" time=1000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。その相手は[p]
 
@@ -117,7 +117,7 @@
 [主人公退場]
 ;背景 縁側　夕方か夜 時間がたつ。
 [chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [image name="hababi" storage="bg/sijyou_engawa2_1.png" layer=1 zindex=2 left=0 time=2000]
 #
 黄昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
@@ -219,7 +219,7 @@ $('.hababi').remove();
 [テキスト全画面白文字無背景]
 ;背景 線香花火
 [chara_mod name="bg" storage="bg/sijyou_hanabi1.jpg" time=1000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit=''"]
 #
 ;……[p]
 ;いらないかも↑
@@ -254,7 +254,7 @@ $('.hababi').remove();
 
 ;背景 主人公部屋 夕方か夜。
 [chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -348,7 +348,7 @@ $('.hababi').remove();
 [chara_mod name="bg" storage="bg/sijyou_hanabi2.jpg" time=1000]
 ;ウェイト入ると止まる他ないのでイメージで重ねる
 [image name="hababi_2" storage="bg/sijyou_hanabi2_1.jpg" layer=1 zindex=2 left=0 time=5000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　YUKI　http://photo.v-colors.com/329.html'"]
 #
 花火が華開き、儚く落ちていく。[p]
 ;今が思い出になっていく時間の儚さ(と華織)
