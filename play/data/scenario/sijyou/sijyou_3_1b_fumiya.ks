@@ -1,7 +1,5 @@
 *test
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
 ;テスト用イベントシーン構築
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -9,6 +7,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [イベントシーン構築]
 [主人公通常ポーズ]
 [主人公通常]
