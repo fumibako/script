@@ -148,7 +148,7 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ××05年の冬がせまってきた頃合い。[p]
-僕のとある決意は、迫る寒さと反比例して静かに闘志を燃やしていた。[p]
+僕のとある決意は、せまる寒さと反比例して静かに闘志を燃やしていた。[p]
 [whosay name=文矢 color="#538a8a"]
 「華織、いつ手紙のやりとりをしてもいいように、僕も、父みたいな立派な外交官になろうと思うんだ」[p]
 #
@@ -185,8 +185,10 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 「うん……そうだね」[p]
 [whosay name=文矢 color="#538a8a"]
 (わかってるのかなぁ)[p]
+
+#
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
-#.
+#
 会いに来てもいいといったが、華織は一向に来ることはなかった。[p]
 ;遠慮して会わなくなった華織
 [whosay name=文矢 color="#538a8a"]
@@ -235,16 +237,17 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 ;足音SE
 [whosay name="四条悠次郎" color="#9B608B"]
 (？ ……今、華織がいたような？)[p]
-
-磯野
+#
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[whosay name="磯野" color="dimgray"]
 「文矢様、今、よろしいでしょうか？」[p]
 [whosay name=文矢 color="#538a8a"]
 「あぁ、いいよ。 磯野、丁度お茶がほしいところなんだ」[p]
-磯野
+[whosay name="磯野" color="dimgray"]
 「はい。お二人にお持ちします」[p]
 [whosay name=文矢 color="#538a8a"]
 「ふたり？」[p]
-磯野
+[whosay name="磯野" color="dimgray"]
 「申し遅れましたが、華織様がお見えになられました」[p]
 [whosay name=文矢 color="#538a8a"]
 「わかった、通しておくれ」[p]
@@ -287,6 +290,11 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
  諦めないよ。もっと頑張ってみるよ」[p]
 [whosay name=文矢 color="#538a8a"]
 (ずっと心配して気を使ってくれてたんだね)[p]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
 @jump storage=sijyou_3_1b.ks target=*modoru
 ;四条 華織と文矢
 @jump storage="test_sijyou.ks"
