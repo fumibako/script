@@ -262,8 +262,8 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
  諦めないよ。もっと頑張ってみるよ」[p]
 [whosay name=文矢 color="#538a8a"]
 (ずっと心配して気を使ってくれてたんだね)[p]
-
-
+@jump storage=sijyou_3_1b.ks target=*modoru
+;四条 華織と文矢
 @jump storage="test_sijyou.ks"
 [s]
 *window_close
