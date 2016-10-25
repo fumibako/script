@@ -368,7 +368,7 @@
 「お父様……」[p]
 #
 功を奏でるように女将達は三味線を鳴らし、宵を迎える。[p]
-[fadeoutbgm time=2000]
+
 #
 乾杯の音頭も終えたころ、華織が改めて、兄弟を紹介する。[p]
 
@@ -378,11 +378,7 @@
 [whosay name="華織" color="olivedrab"]
 「文矢、[名前]さん。[r]
 [sp]渡仏(とふつ)やら留学中で紹介できてなかった兄弟を改めて、紹介するね……」[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
-[playbgm storage="michikusa.ogg" loop=true]
-[eval exp="f.bgm_storage='michikusa.ogg'"]
-[endif]
+
 
 [whosay name=文矢 color="#538a8a"]
 「？ 華織、何か疲れてないかい？」[p]
