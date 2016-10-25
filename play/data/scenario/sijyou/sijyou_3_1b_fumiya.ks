@@ -1,23 +1,35 @@
-#
-あれは、僕が14歳くらいの出来事だった。
+*test
+;テスト用イベントシーン構築
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築]
 
+;テスト用イベントシーン構築ここまで
+テストページからはじめます[p]
+*first
+;○四条邸宅の庭
+;【背景】[洋館庭]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+#
+あれは、僕が14歳くらいの出来事だった。[p]
 [whosay name=文矢 color="#538a8a"]
 (なんて広い屋敷なんだ…)[p]
-
 #
 父、[emb exp="sf.father_name"]に連れられてやってきた屋敷は、
 目まぐるしいほどに草花に囲まれた洋館であった。[p]
 #
 父は外交官をしており、仏蘭西での交渉の際、鉱山取引の知識が必要になったのだ。[p]
-
 #
 その時に、ちょうど耳にした外交取引で成功をおさめている四条鉱山[p]
 もとい、四条鉱山の実質的な主、四条悠次郎に相談し、交流は、今に至る。[p]
-
 #
 そんな父[emb exp="sf.father_name"]と四条悠次郎は、[r]
 互いに家は近くと聞いて、話が弾みだしてしまい、僕は暇を持たされてしまったのだ。[p]
-
 [whosay name=文矢 color="#538a8a"]
 「お父様は、話が長すぎるよ。
 それにしてもこの屋敷と庭…」[p]
