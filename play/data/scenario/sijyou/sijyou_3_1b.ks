@@ -101,7 +101,7 @@
 #
 [主人公通常]
 父の口上を起点に、晴れやかな空気が流れる。[p]
-;激しくなる音楽では中盤がだめだし
+;～～～～～～～～～～シーン晴れやか～～～～～～～～～～～～～～～～～～～～
 [if exp="sf.BGM=='ON'"]
 ;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
 [playbgm storage="isono_miyabi.ogg" loop=true]
@@ -124,8 +124,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 [endif]
+;～～～～～～～～～～シーン晴れやかの中、切ない～～～～～～～～～～～～～～～～～～～～
+;BGMがすぐ切り替わるとおかしいので中間的な曲で続けてみる
 *common1
-[fadeoutbgm time=3000]
 ;「～ね」が続いておかしい
 #
 [whosay name=文矢 color="#538a8a"]
@@ -141,8 +142,16 @@
 「僕の方が先に出て行ったから、まだいいんだろうけどさ……[r]
 [sp]本当のことを言うと、少し寂しくなる」[p]
 [主人公驚]
+;～～～～～～～～～～シーン切ない～～～～～～～～～～～～～～～～～～～～
+[fadeoutbgm time=3000]
 #
 花咲く宴会がはじまる中、お兄様は、さかづきを揺らし、波間を見つめる。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 [主人公柔和ほほえみ１]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……お兄様も、お父様と同じことを思うのですね」[p]
@@ -176,11 +185,14 @@
 「お兄様、急にどうかされました……？」[p]
 [endif]
 *commo1
+[fadeoutbgm time=3000]
 ;～～～～～共通～～～～
 [whosay name=文矢 color="#538a8a"]
 「……今日は、集まったからかな。
 [主人公憂い]
 だから、本当に[名前]が、華織の家に嫁いでしまうって感じているのかも」[p]
+;～～～～～～～～～～シーン　やさしい主人公～～～～～～～～～～～～～～～～～～～～
+;BGMきずな　で繋げてみる
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;～～～淑女度低い場合～～～
 [主人公ほほえみ]
@@ -208,7 +220,9 @@
 「ありがとう。[名前]」[p]
 [主人公ほほえみ]
 [endif]
+;～～～～～～～～～～シーン選択肢へ～～～～～～～～～～～～～～～～～～～～
 *common2
+[fadeoutbgm time=3000]
 #
 お兄様は、安堵したかのように微笑むと華織様をみつめた。[p]
 ;～～～～～～選択肢～～～～～～～～～
@@ -225,13 +239,19 @@
 [link target=*not_fumiya]私も華織様を見つめた。[endlink][r]
 [resetfont]
 [s]
+;～～～～～～～～～～～選択肢おわり～～～～～～～～～～～～～～～～
 
+;～～～～～回想イベントへ～～～～～～～～～～
 *deai
+;BGM続行　きずな
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 [cm]
-
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-;～～～～～回想イベントへ～～～～～～～～～～
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -262,13 +282,11 @@
 ;～～淑女度低い場合～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい、磯野からは、なんとなくですが、聞かされております。[r]
-[sp]昔から、華織様のお父様と仲が良く、[r]
-[sp]『二人を結婚させたい』とおっしゃっていたそうですが……」[p]
+[sp]昔から、華織様のお父様と仲が良かったそうですが……」[p]
 [else]
 ;～～淑女度高い場合～～
 「はい、磯野からは、少しばかり聞かされております。[r]
-[sp]昔から、華織様のお父様と仲が良く、[r]
-[sp]『二人を結婚させたい』と聞かされておりました」[p]
+[sp]昔から、華織様のお父様と仲が良いと聞かされておりました」[p]
 [emdif]
 [whosay name=文矢 color="#538a8a"]
 「なんのことはないさ[r]
@@ -300,12 +318,6 @@
 [current layer="message0"]
 #
 私も華織様を見つめた。[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
-[playbgm storage="isono_miyabi.ogg" loop=true]
-[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
-[endif]
-
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
@@ -313,6 +325,11 @@
 「……[名前]。 この事は、今忙しくしてる奴には、言わないように」[p]
 ;～～～～～～～～～～共通～～～～～～～～～～～～～
 *common3
+[if exp="sf.BGM=='ON'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
+[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+[endif]
 [whosay name="四条父" color="#9B608B"]
 「お前達も、来てくれたか！」[p]
 [whosay name="四条一華" color=%mp.color]
