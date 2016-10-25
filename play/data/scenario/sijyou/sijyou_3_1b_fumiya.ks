@@ -44,6 +44,7 @@
 しかし、よくよくみてみると庭は大名時代の回廊式の名残があり、武家の歴史を垣間見ることができる。[p]
 [whosay name=文矢 color="#538a8a"]
 (ふぅ。 こんなところで待たされたら、誰だって探検をしたくなっても仕方ない)[p]
+[chara_mod name="bg" storage="toumei.gif"]
 ・・・・・[p]
 [whosay name=文矢 color="#538a8a"]
 (弱ったな。広すぎて迷ってしまったようだ。
@@ -51,7 +52,8 @@
 [whosay name=文矢 color="#538a8a"]
 (奥に行く程に花、花ばかりで[r]
 [sp]これでは本当に秘密の花園にでも迷い込んでしまったみたいだ)[p]
-
+[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 「！？ お祖母様？」[p]
 #
@@ -112,11 +114,9 @@ _ ……これでは、まともな図案も思いつきやしないよ」[p]
 「そういえば、名乗ってなかったね。[r]
 [sp]僕の名前は文矢。 [名字]文矢だ。[r]
 [sp]君は？」[p]
-
 [whosay name="華織" color="olivedrab"]
 「華織。四条華織。[r]
 _ 女みたいな名前って思うだろう？」[p]
-
 [whosay name=文矢 color="#538a8a"]
 「そんなことはないよ。[r]
 [sp]花に縁がある者として、立派な名前だと思う」[p]
@@ -135,15 +135,18 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 #
 これが華織と僕の出会いだった。[r]
 後で聞くと華織の兄弟は皆、仏蘭西に留学していて、祖母と二人だけで暮らしていたらしい。[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「昔の華織様は、どこか儚げでしたわね」[p]
-[whosay name=文矢 color="#538a8a"]
-「そうだね。今にしてみたら、華織は変わったよ」[p]
-[whosay name=文矢 color="#538a8a"]
-「でも、華織の雄志は、変わってなくて安心したよ」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様の雄志？」[p]
-
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;「昔の華織様は、どこか儚げでしたわね」[p]
+;[whosay name=文矢 color="#538a8a"]
+;「そうだね。今にしてみたら、華織は変わったよ」[p]
+;[whosay name=文矢 color="#538a8a"]
+;「でも、華織の雄志は、変わってなくて安心したよ」[p]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;「華織様の雄志？」[p]
+;○四条邸宅の庭
+;【背景】[洋館庭]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ××05年の冬がせまってきた頃合い。[p]
 僕のとある決意は、迫る寒さと反比例して静かに闘志を燃やしていた。[p]
 [whosay name=文矢 color="#538a8a"]
@@ -182,10 +185,9 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 「うん……そうだね」[p]
 [whosay name=文矢 color="#538a8a"]
 (わかってるのかなぁ)[p]
-
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 #.
 会いに来てもいいといったが、華織は一向に来ることはなかった。[p]
-
 ;遠慮して会わなくなった華織
 [whosay name=文矢 color="#538a8a"]
 「華織の奴、こっちが会わなくなった途端、本当に会わなくなったな……」[p]
@@ -193,12 +195,14 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 (どうでもいいのかもしれないな……それより、勉学の続きをしないと……どうしようか)[p]
 [whosay name=文矢 color="#538a8a"]
 「仏蘭西語って、何でこんなに難しいんだ……」[p]
-
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 (文矢、頑張っているな……)[p]
-
 #
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 一方その頃の華織は。[p]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 「文矢、頑張っているだろうか」[p]
 [whosay name="華織" color="olivedrab"]
@@ -209,7 +213,11 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 「早く僕も、本当に実力ある華道家になりたいな」[p]
 [whosay name="華織" color="olivedrab"]
 (ちょっと、気晴らしに廊下を散歩してみよう)[p]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ・・・・・・[p]
+[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 (ふぅ……大抵、こんなことしても、良いことを思いつかないっていうのは百も承知なんだけどね)[p]
 
