@@ -186,7 +186,6 @@
 「お兄様、急にどうかされました……？」[p]
 [endif]
 *commo1
-[fadeoutbgm time=3000]
 ;～～～～～共通～～～～
 [whosay name=文矢 color="#538a8a"]
 「……今日は、集まったからかな。
@@ -204,7 +203,7 @@
 「ありがとう。[名前]」[p]
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「今までお兄様が、私を寂しくさせていた分、お兄様も驚くほどの良妻になってみせますね」
+「今までお兄様が、私を寂しくさせていた分、お兄様も驚くほどの良妻になってみせますね」[p]
 [whosay name=文矢 color="#538a8a"]
 「弱ったな、痛いところをつくね」[p]
 [else]
@@ -327,9 +326,9 @@
 ;～～～～～～～～～～共通～～～～～～～～～～～～～
 *common3
 [if exp="sf.BGM=='ON'"]
-;【BGM】めでたく候（お正月などめでたいシーンに
-[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
-[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
+[playbgm storage="michikusa.ogg" loop=true]
+[eval exp="f.bgm_storage='michikusa.ogg'"]
 [endif]
 [whosay name="四条父" color="#9B608B"]
 「お前達も、来てくれたか！」[p]
@@ -358,11 +357,7 @@
 [fadeoutbgm time=2000]
 #
 乾杯の音頭も終えたころ、華織が改めて、兄弟を紹介する。[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
-[playbgm storage="michikusa.ogg" loop=true]
-[eval exp="f.bgm_storage='michikusa.ogg'"]
-[endif]
+
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
@@ -375,7 +370,7 @@
 華織は、すこしやつれた様子で兄弟達の紹介をはじめた。[p]
 ;さきほどの四条兄弟との顔合わせで華織はひやひやする
 [whosay name="華織" color="olivedrab"]
-「こちらが、僕の兄の [ruby text=いち]一[ruby text=か] 華」[p]
+「こちらが、僕の兄の [ruby text=いち]一[ruby text=か]華」[p]
 [whosay name="四条一華" color=%mp.color]
 「長男の四条 [ruby text= いち]一[ruby text=か]華です。
 外交官をしており、普段は[ruby text=フ]仏[ruby text=ラン]蘭[ruby text=ス]西にいます。[r]
