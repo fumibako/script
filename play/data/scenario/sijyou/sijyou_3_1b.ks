@@ -6,6 +6,17 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+
+[macro name=主人公柔和ほほえみ１]
+;主人公柔和ほほえみ
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[endmacro]
+
 [イベントシーン構築]
 [if exp=tf.test_sijyou==true]
 【！】テストページからはじめます。変数を代入しますか？[p]
@@ -89,6 +100,7 @@
 [sp]"勿論"と言わねば、父親として廃る。[r]
 [sp]さぁ、未来の夫婦に祝杯を上げようではないか！」[p]
 #
+[主人公通常]
 父の口上を起点に、晴れやかな空気が流れる。[p]
 私は、もう一度、華織様と見つめ合った。[p]
 [whosay name=文矢 color="#538a8a"]
@@ -96,23 +108,35 @@
 ;～～淑女度低い場合～～
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;主人公笑顔
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
 [else]
 ;～～淑女度高い場合～～
 ;主人公柔微笑み
+[主人公柔和ほほえみ１]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 [endif]
 *common1
+;「～ね」が続いておかしい
+#
 [whosay name=文矢 color="#538a8a"]
-「[名前]。すっかり、大人になってしまったね」[p]
+「[名前]と華織との結納まで、もうすぐなんだね……」[p]
+お兄様は、ぼんやりと宴を眺めた。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「どうかされましたの？」[p]
+[whosay name=文矢 color="#538a8a"]
+「[名前]が、すっかり大人になって月日というものが早く感じてしまうよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あら、お兄様は、私が、じゃじゃ馬のままでいて欲しかったのですか？」[p]
 [whosay name=文矢 color="#538a8a"]
 「僕の方が先に出て行ったから、まだいいんだろうけどさ……[r]
 [sp]本当のことを言うと、少し寂しくなる」[p]
-花咲く宴会がはじまる中、お兄様は、さかづきを揺らし、波間を見つめた。[p]
+[主人公驚き]
+#
+花咲く宴会がはじまる中、お兄様は、さかづきを揺らし、波間を見つめる。[p]
+[主人公柔和ほほえみ１]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……お兄様も、お父様と同じことを思うのですね」[p]
 [whosay name=文矢 color="#538a8a"]
@@ -124,16 +148,23 @@
 ;～～～淑女度低い場合～～～
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;主人公困り照れ
+;主人公困り照れ
+[主人公眉困り]
+[主人公目大]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お兄様。　私、もうその様な子供ではありませんわ」[p]
 ;主人公照れ怒り
+[主人公眉強気]
+[主人公目大]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「急にどうかされまして？　お兄様」[p]
 [else]
 ;～～～淑女度高い場合～～～
 #
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （今日のお兄様は、どこか寂しそうだわ……）[p]
+[主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お兄様、急にどうかされました……？」[p]
 [endif]
@@ -141,7 +172,7 @@
 ;～～～～～共通～～～～
 [whosay name=文矢 color="#538a8a"]
 「……今日は、集まったからかな。
-;主人公憂い
+[主人公憂い]
 だから、本当に[名前]が、華織の家に嫁いでしまうって感じているのかも」[p]
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;～～～淑女度低い場合～～～
@@ -158,6 +189,7 @@
 「弱ったな、痛いところをつくね」[p]
 [else]
 ;～～～淑女度高い場合～～～
+[主人公柔和ほほえみ１]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「安心して下さい。兄妹というものは、切っても切れないものです」[p]
 [主人公目閉じ]
@@ -188,6 +220,10 @@
 [s]
 
 *deai
+[cm]
+
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;～～～～～回想イベントへ～～～～～～～～～～
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -196,6 +232,9 @@
 #
 [主人公通常ポーズ]
 お兄様と華織様の出会いが気になった。[p]
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [主人公横目]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -238,23 +277,27 @@
 [whosay name=文矢 color="#538a8a"]
 「以来、僕は、華織のことをほおっておけない大事な友人の一人と思っている」[p]
 [whosay name=文矢 color="#538a8a"]
-「あぁ、[名前]？  この事は、今忙しくしてる奴には、言わないように」
-[p]
+「あぁ、[名前]？  この事は、今忙しくしてる奴には、言わないように」[p]
 #
 文矢は、忙しく席を整える華織を見つめた。[p]
 @jump target=common3
 [s]
 ;～～～～～～シーンスキップ～～～～～～～～～
 *not_fumiya
+[cm]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 #
 私も華織様を見つめた。[p]
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [whosay name=文矢 color="#538a8a"]
-「……[名前]。 この事は、今忙しくしてる奴には、言わないように」
-[p]
+「……[名前]。 この事は、今忙しくしてる奴には、言わないように」[p]
 ;～～～～～～～～～～共通～～～～～～～～～～～～～
 *common3
 [whosay name="四条父" color="#9B608B"]
@@ -301,9 +344,10 @@
 華織は、すこしやつれた様子で兄弟達の紹介をはじめた。[p]
 ;さきほどの四条兄弟との顔合わせで華織はひやひやする
 [whosay name="華織" color="olivedrab"]
-「こちらが、僕の兄の [ruby text=いち] 一 [ruby text=か] 華」[p]
+「こちらが、僕の兄の [ruby text=いち]一[ruby text=か] 華」[p]
 [whosay name="四条一華" color=%mp.color]
-「長男の四条 [ruby text= いち ] 一 [ruby text= か ]華です。外交官をしており、普段は[ruby text=フ]仏[ruby text=ラン]蘭[ruby text=ス]西にいます。[r]
+「長男の四条 [ruby text= いち]一[ruby text=か]華です。
+外交官をしており、普段は[ruby text=フ]仏[ruby text=ラン]蘭[ruby text=ス]西にいます。[r]
 [sp]それにしても、君のような美しい方が [ruby text=い] 義 [ruby text=もうと] 妹になって嬉しいよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい、よろしくお願いします」[p]
@@ -356,7 +400,7 @@
 [華衣]さんと、距離をとっていた少女が華織の隣に現れた。[p]
 ;まつまい・ばつまい　日常会話だと　すえのいもうと　らしい
 [whosay name="四条 美華" color=%mp.color]
-「こ、こんにちは……[ruby text= すえの ]末 [ruby text= いもうと ] 妹の美華と申します。[r]
+「こ、こんにちは……[ruby text=すえの]末[ruby text= いもうと] 妹の美華と申します。[r]
 [sp]ふ、普段は、聖白百合の寄宿舎にいます……華織お兄様からお手紙で聞いて、[r]
 是非、[名前]様にお会いしたかったです」[p]
 ;学校名は適当ユリっぽくない学校名を　華衣と折り合いが悪いので寄宿舎に入っている（手紙にて）
@@ -374,16 +418,18 @@
 「こ、今後とも、よろしくお願いします」[p]
 [whosay name="華織" color="olivedrab"]
 「……箱入り娘で、ごめんね」[p]
-～～～淑女度低い場合～～～[p]
+;～～淑女度低い場合～～
+[if exp="f.para_shujinkou_shukujodo<200"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公汗
 「いえ、 可愛らしい 妹様ですね」[p]
-～～～淑女度高い場合～～～[p]
+[else]
+;～～～淑女度高い場合～～～[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公ほほえみ
 「いえ、可愛らしい妹様ですね」[p]
+[endif]
 ;文通について尋ねる美華。美華、億劫に思う
-
 ;主人公の言葉に立て直す美華。 あくまで盛り上げ役でなければ登場させる意味がない
 ;いくつになるの繋がりが思いつかない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -393,25 +439,35 @@
 #
 華織の柔らかい印象をそのまま引き継いだ少女は、2〜3歳ほど幼い印象を受けた。[p]
 [whosay name="華織" color="olivedrab"]
-
 「美華は、今年で14だね」[p]
 [whosay name="四条 美華" color=%mp.color]
-「は、はい。[名前]様、私、今年で14となります！
-それで、[名前]様に 常々 お聞きしたいことがありました」[p]
-
+「は、はい。[名前]様、私、今年で14となります！[r]
+[sp]それで、[名前]様に 常々 お聞きしたいことがありました」[p]
+#
 美華さんは、私と向き直すと、しっかりした口調で尋ねた。[p]
-[whosay name="四条 美華" color=%mp.color]
-「[名前]様は、何故、華織お兄様に決められたのでしょうか？」
+;楽しいシーンから戸惑いへ　BGM難しい　美華の重責感的に五色かな
+[fadeoutbgm time=3000]
 
-淑女度低い場合
+[whosay name="四条 美華" color=%mp.color]
+「[名前]様は、何故、華織お兄様に決められたのでしょうか？」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+[主人公驚き]
+;～～淑女度低い場合～～
+[if exp="f.para_shujinkou_shukujodo<200"]
+;～～～～淑女度低い場合～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (えぇと……[r]
-(あの時は、なんとなく……もありましたけれど)[p]
+[sp]あの時は、なんとなく……もありましたけれど)[p]
 (昔から知っていたのは華織様という理由で選んでしまいました……)[p]
-淑女度高い場合
-照れ
+[else]
+;～～～淑女度高い場合～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (えっ……どうしましょう)[p]
+[endif]
 #
 私は、美華さんの急な質問に戸惑いを隠せなかった。[p]
 [whosay name="華織" color="olivedrab"]
@@ -438,6 +494,10 @@
 私、知らない殿方と文通をするのがとても怖い……」[p]
 [whosay name="華織" color="olivedrab"]
 「美華」[p]
+
+;BGM切り替え
+[fadeoutbgm time=3000]
+
 華織様は、晴れやかな席で私に不安を打ち明ける妹に対して、戸惑った様子で肩を叩いた。[p]
 ;止めるべきだと思うが悩ましいところ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -445,6 +505,11 @@
 お兄様しか知らなかった頃の私に)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私も初めは不安でした」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ですけど、その時は、私の大切なお兄様のお言葉を思い出しました」[p]
 [whosay name="四条 美華" color=%mp.color]
@@ -473,13 +538,13 @@
 ;学びとうとございます？
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。ありがとう」[p]
+[fadeoutbgm time=3000]
 
 [whosay name="華織" color="olivedrab"]
 (やっぱり、文矢には敵わないな)[p]
-
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、庭にでてみませんか？」
-[fadeoutbgm time=3000]
+
 ;疲れた、難しい
 
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
@@ -611,8 +676,7 @@
 [chara_mod name="bg" storage="toumei.gif"]
 [イベントシーン構築枠茶色]
 ;料亭廊下
-
-http://sunset77light.rdy.jp/material/index.html
+;http://sunset77light.rdy.jp/material/index.html
 ;料亭の廊下
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
