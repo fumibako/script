@@ -312,17 +312,11 @@
 「華織、皆の席を整えてやってくれ」[p]
 [whosay name="華織" color="olivedrab"]
 「！ はい」[p]
-[fadeoutbgm time=3000]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [whosay name=文矢 color="#538a8a"]
 (まったく君って奴は、主役の1人だっていうのに気を使ってさ)[p]
 #
-[if exp="sf.BGM=='ON'"]
-;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
-[playbgm storage="michikusa.ogg" loop=true]
-[eval exp="f.bgm_storage='michikusa.ogg'"]
-[endif]
 [whosay name="華織" color="olivedrab"]
 「あぁ、美華は、こっちの席に！」[p]
 ;お父さん、すこしやけ酒でもあり
@@ -334,8 +328,14 @@
 「お父様……」[p]
 #
 功を奏でるように女将達は三味線を鳴らし、宵を迎える。[p]
+[fadeoutbgm time=2000]
 #
 乾杯の音頭も終えたころ、華織が改めて、兄弟を紹介する。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
+[playbgm storage="michikusa.ogg" loop=true]
+[eval exp="f.bgm_storage='michikusa.ogg'"]
+[endif]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
