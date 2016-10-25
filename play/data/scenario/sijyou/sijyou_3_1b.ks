@@ -6,7 +6,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-
+[call target=*start storage="macro_tati_sijyou.ks"]
 [macro name=主人公柔和ほほえみ１]
 ;主人公柔和ほほえみ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -50,14 +50,15 @@
 ;イベント別にしてもいいかも？
 その後、華織様が用意された食事の場で、四条家と鷹司家で食事することとなった。[p]
 ;華道展から食事の流れ思いつかない　終わりまで家族を待たせるわけにもいかないし
+[call target=*start storage="macro_tati_sijyou.ks"]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [イベントシーン構築]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-[四条ポーズ通常]
-[四条微笑み]
+[四条ベース着物]
+[四条通常]
 [主人公ポーズ通常]
 [主人公通常]
 #
