@@ -10,6 +10,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
+[主人公通常ポーズ]
+[主人公通常]
 ;テスト用イベントシーン構築ここまで
 テストページからはじめます[p]
 *first
