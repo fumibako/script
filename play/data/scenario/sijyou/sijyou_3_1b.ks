@@ -100,10 +100,11 @@
 #
 [主人公通常]
 父の口上を起点に、晴れやかな空気が流れる。[p]
+;激しくなる音楽では中盤がだめだし
 [if exp="sf.BGM=='ON'"]
-;【BGM】めでたく候（お正月などめでたいシーンに
-[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
-[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
+[playbgm storage="isono_miyabi.ogg" loop=true]
+[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
 [endif]
 
 私は、もう一度、華織様と見つめ合った。[p]
