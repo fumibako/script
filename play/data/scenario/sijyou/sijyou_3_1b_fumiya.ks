@@ -1,4 +1,7 @@
 *test
+#
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;テスト用イベントシーン構築
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -7,14 +10,15 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
-
 ;テスト用イベントシーン構築ここまで
 テストページからはじめます[p]
 *first
+#
 ;○四条邸宅の庭
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[イベントシーン構築枠茶色]
 #
 あれは、僕が14歳くらいの出来事だった。[p]
 [whosay name=文矢 color="#538a8a"]
