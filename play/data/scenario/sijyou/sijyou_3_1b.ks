@@ -102,6 +102,10 @@
 #
 [主人公通常]
 父の口上を起点に、晴れやかな空気が流れる。[p]
+[四条微笑み]
+#
+私は、もう一度、華織様と見つめ合った。[p]
+[四条退場]
 ;～～～～～～～～～～シーン晴れやか～～～～～～～～～～～～～～～～～～～～
 ;宴会または料亭席全体
 ;[暗転]
@@ -111,10 +115,9 @@
 [playbgm storage="isono_miyabi.ogg" loop=true]
 [eval exp="f.bgm_storage='isono_miyabi.ogg'"]
 [endif]
-私は、もう一度、華織様と見つめ合った。[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]、よかったね」[p]
-[四条退場]
+
 ;～～淑女度低い場合～～
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;主人公笑顔
