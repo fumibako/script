@@ -234,6 +234,14 @@
 #
 @jump storage=sijyou_3_1b_fumiya.ks
 ;四条 華織と文矢
+*modoru
+[whosay name=文矢 color="#538a8a"]
+「以来、僕は、華織のことをほおっておけない大事な友人の一人と思っている」[p]
+[whosay name=文矢 color="#538a8a"]
+「あぁ、[名前]？  この事は、今忙しくしてる奴には、言わないように」
+[p]
+#
+文矢は、忙しく席を整える華織を見つめた。[p]
 @jump target=common3
 [s]
 ;～～～～～～シーンスキップ～～～～～～～～～
