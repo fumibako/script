@@ -498,7 +498,7 @@
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
-[主人公驚き]
+[主人公驚]
 ;～～淑女度低い場合～～
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;～～～～淑女度低い場合～～～～
@@ -511,22 +511,29 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (えっ……どうしましょう)[p]
 [endif]
+;ほんと、このシーン美華にイライラする、どうしよう！？
 #
 私は、美華さんの急な質問に戸惑いを隠せなかった。[p]
 [whosay name="華織" color="olivedrab"]
 「美華、いきなりそんな質問をして失礼でしょう」[p]
 [whosay name="四条 美華" color=%mp.color]
 「私も、あと二年で勉学を諦め、寄宿舎でて、殿方と手紙のやりとりをしなければなりません」[p]
+[主人公通常]
 [whosay name="四条 美華" color=%mp.color]
 「たしかに華織お兄様は、どんな殿方よりも、お優しい人かもしれません」[p]
 [whosay name="四条 美華" color=%mp.color]
-「ですけど、経済界に出でる一華兄様や他の社交界の花形と比べると殿方としての頼り甲斐や魅力があるとは思えません」[p]
+「ですけど、経済界に出でる一華兄様や他の社交界の花形と比べると[r]
+[sp]殿方としての頼り甲斐や魅力があるとは思えません」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公口ムッ]
 「そんなことはないですわ[r]
-華織様は、お会いする時、いつも私をエスコートしてくれます」[p]
+[sp]華織様は、お会いする時、いつも私をエスコートしてくれます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「それに、現にこうやって夢を実現し、許しを得る為に私の親に会い、会食の席まで用意してくれました」[p]
+[主人公口ほほえみ]
+「それに、現にこうやって夢を実現し、[r]
+[sp]許しを得る為に私の親に会い、会食の席まで用意してくれました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉]
 「これだけ誠実な人は、私のお兄様以外で見たことがありません」[p]
 [whosay name="四条 美華" color=%mp.color]
 「私も……私も、そうなのです……他の殿方を信じることができません」[p]
@@ -534,10 +541,9 @@
 「えっ……？」[p]
 [whosay name="四条 美華" color=%mp.color]
 「華衣お兄様は粗暴ですし、一華兄様は、猫かぶりで見合いに失敗しております。
-私、知らない殿方と文通をするのがとても怖い……」[p]
+ 私、知らない殿方と文通をするのがとても怖い……」[p]
 [whosay name="華織" color="olivedrab"]
 「美華」[p]
-
 ;BGM切り替え
 [fadeoutbgm time=3000]
 華織様は、晴れやかな席で私に不安を打ち明ける妹に対して、戸惑った様子で肩を叩いた。[p]
@@ -560,9 +566,10 @@
 「これからの美華さんの姉として送ります」[p]
 ;言祝ぎを送るじゃおかしいからこんなんでいいか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「美華さんにも、それに華衣さんにもくるかもしれません。 それぞれのお二人の事を[r]
-[sp]一番大切にしてくれて[r]
-[sp]お二人も、その方を大切に思える人からの手紙が」[p]
+「美華さんにも、それに華衣さんにもくるかもしれません。 [r]
+[sp]それぞれのお二人の事を一番大切にしてくれて」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「お二人も、その方を大切に思える人からの手紙が」[p]
 [whosay name="四条 美華" color=%mp.color]
 「一番、大切に……」[p]
 [主人公目閉じ].
@@ -695,7 +702,6 @@
 永遠と不滅の花言葉をもつ沈丁花が、風に乗って甘く香る[p]
 ;華織の香水は沈丁花かもしれない
 [whosay name="華織" color="olivedrab"]
-
 「[名前]さん……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様……」[p]
@@ -747,7 +753,7 @@
 [whosay name="華織" color="olivedrab"]
 (君って奴は、本当に懐の深い男だよ)[p]
 #
-敵わない[ruby text=あ]義[ruby=に]兄兼、友人に僕は、深くうなづいた。[p]
+敵わない[ruby text=あ]義[ruby text=に]兄兼、友人に僕は、深くうなづいた。[p]
 [whosay name="華織" color="olivedrab"]
 「それなら百も承知だ」[p]
 [whosay name="華織" color="olivedrab"]
