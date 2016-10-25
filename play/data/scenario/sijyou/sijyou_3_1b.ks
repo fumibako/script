@@ -60,11 +60,7 @@
 [主人公通常]
 #
 ;再度,ご迷惑をおかけしたことを詫びる四条家[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】めでたく候（お正月などめでたいシーンに
-[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
-[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
-[endif]
+
 [whosay name="四条父" color="#9B608B"]
 「どうか[emb exp="sf.father_name"]さん。これからも、華織と娘さんとの[r]
 [sp]お付き合いをお願いできないだろうか……」[p]
@@ -89,7 +85,9 @@
 「お父様……」[p]
 #
 私は、自然と華織様と見つめ合った[p]
+[fadeoutbgm time=3000]
 [主人公照れ目普通]
+;ほほえみ？
 [whosay name="華織" color="olivedrab"]
 （[名前]さん）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -102,6 +100,12 @@
 #
 [主人公通常]
 父の口上を起点に、晴れやかな空気が流れる。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
+[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+[endif]
+
 私は、もう一度、華織様と見つめ合った。[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]、よかったね」[p]
@@ -140,7 +144,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……お兄様も、お父様と同じことを思うのですね」[p]
 [whosay name=文矢 color="#538a8a"]
-「当たり前だよ。　僕の後ろをついていた[名前]が、僕の友人に取られちゃうんだから」
+「当たり前だよ。　僕の後ろをついていた[名前]が、僕の友人に取られちゃうんだから」[p]
 ;じゃじゃ馬言い過ぎなので訂正
 [whosay name=文矢 color="#538a8a"]
 「けど、[名前]は、昔から、華織をみると走り寄っていったから、[r]
