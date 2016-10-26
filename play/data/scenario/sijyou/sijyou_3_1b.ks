@@ -92,9 +92,9 @@
 「お父様……」[p]
 #
 私は、自然と華織様と見つめ合った[p]
-[fadeoutbgm time=3000]
 [主人公照れ目普通]
 ;ほほえみ？
+[四条真剣]
 [whosay name="華織" color="olivedrab"]
 （[名前]さん）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
