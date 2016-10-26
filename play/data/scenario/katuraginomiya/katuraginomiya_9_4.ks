@@ -143,7 +143,7 @@
 [whosay name=磯野 color="dimgray"]
 「お嬢様、このぐらいで落ち込まれては[r]
 [sp]身が持ちませんよ」[p]
-
+[fadeoutbgm time=3000]
 [主人公眉困り]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -163,10 +163,11 @@
 [sp]折り合っていくのは難しいわ）[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】冬支度
-[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
-[endif]　　
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
+　
 
 ;【SE】足音（靴
 [playse storage=walk_kutsu.ogg loop=false ]
@@ -284,7 +285,9 @@
 [whosay name=葛城宮晴仁" ]
 「いや……[r]
 [sp]私の従妹宮が君の醜聞を作るように仕向けたのだ」[p]
+[fadeoutbgm time=3000]
 
+[主人公涙_目閉用]
 #
 その言葉に私はあの時の恐怖を思い出して体が震える[r]
 すると殿下に抱きしめられた[p]
@@ -294,16 +297,28 @@
 「怖かっただろう……もう大丈夫だ[r]
 [sp] もうこんな事を起こさせない」[p]
 
+[主人公涙流_目閉用]
 #
 私は殿下に縋り付いて泣いた[r]
 ……怖かった感情があふれだしその痛みが取れていく[r]
 そして泣きやむと磯野が咳払いして私は我に返った[p]
 
+[主人公通常]
+[主人公涙]
 
 [whosay name=浩文"]
 「殿下、娘との婚約はもう一度考えさせて頂きたい。[r]
 [sp] やはり身分の差というのは問題があります」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
+[主人公効果消]
+[主人公眉下げ下]
+[主人公目伏]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私はなんともなかったのです。それに殿下は来てくださいました[r]
@@ -319,7 +334,8 @@
 [whosay name=浩文"]
 「[名前]……」[p]
 
-
+[主人公頬染め]
+[主人公目閉じ]
 #
 殿下と私は見つめ合った[r]
 殿下といると胸が熱くなる。[r]
@@ -330,6 +346,7 @@
 「……私といることでまた君は嫌な想いをするかもしれない[r]
 [sp] それでもいいだろうか？」[p]
 
+[主人公効果消]
 [主人公眉下げ下]
 [主人公目伏柔]
 [主人公口ほほえみ]
