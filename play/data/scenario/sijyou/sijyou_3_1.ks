@@ -6,6 +6,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
 [if exp=tf.test_sijyou==true]
 【！】テストページからはじめます。変数を代入しますか？[p]
@@ -816,6 +817,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [四条退場]
 ;～～～～～～～～～～シーン・旦那になるものとしての男、四条華織と父の会話～～～～～～～～～～～～
 #
+[er]
 ;暗転
 [chara_mod name="bg" storage="toumei.gif"]
 ;転
