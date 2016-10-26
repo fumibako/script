@@ -16,7 +16,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [endmacro]
-[macro name=暗転]
+[macro name="暗転"]
 [chara_mod name="bg" storage="toumei.gif"]
 [endmacro]
 [イベントシーン構築]
