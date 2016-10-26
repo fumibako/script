@@ -121,6 +121,8 @@
 [image name="hababi" storage="bg/sijyou_engawa2_1.png" layer=1 zindex=2 left=0 time=2000]
 #
 黄昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
+;【SE】花火(打ち上げ：中)
+[playse storage=hanabi_utiage_m.ogg loop=false ]
 ;アニメーション実行
 [kanim name="hababi" keyframe="opcy" time="6000" count=infinite]
 
@@ -140,6 +142,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうなのですか？」[p]
+;【SE】花火(打ち上げ：小)
+[playse storage=hanabi_utiage_s.ogg loop=false ]
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -155,6 +159,8 @@
 [wait time=10]
 #
 後ろから聞き覚えのある声がして振り向くと、お盆を手にした磯野が佇んでいた。[p]
+;【SE】花火(打ち上げ：小)
+[playse storage=hanabi_utiage_s.ogg loop=false ]
 
 [主人公口ほほえみ]
 [wait time=10]
@@ -179,6 +185,8 @@
 ;◎父、華織と上手くいっているか気になり話かけたが、
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ところで、[名前]よ。華織くんとは、上手くいってるのかね？」[p]
+;【SE】花火(打ち上げ：小)
+[playse storage=hanabi_utiage_s.ogg loop=false ]
 [主人公驚]
 [wait time=10]
 ;◎主人公、華織との思い出にひたる。
@@ -215,6 +223,8 @@ $('.hababi').remove();
 ;候補？？
 #
 私は、兄と華織様に挟まれ、縁側で線香花火に興じたことを思い出した。[p]
+;【SE】花火(線香花火)
+[playse storage=hanabi_senkou.ogg loop=false ]
 
 [テキスト全画面白文字無背景]
 ;背景 線香花火
@@ -245,6 +255,7 @@ $('.hababi').remove();
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [r]
 玉火は、ポトリと落ちた。[p]
+[stopse]
 ;メッセージ戻る？タイミングは適☆当
 #
 ――今でも覚えています。あの日見た、花火の儚さ。[p]
@@ -309,6 +320,8 @@ $('.hababi').remove();
 #
 そんなことを口早に言って、[r]
 お父様は、少しばかり寂しい気な表情を浮かべた。[p]
+;【SE】花火(打ち上げ：小)
+[playse storage=hanabi_utiage_s.ogg loop=false ]
 [kanim name="hababi" keyframe="opcy" time="6000" ]
 
 ;◎主人公は大丈夫だからと窘めた。
@@ -341,6 +354,8 @@ $('.hababi').remove();
 [wait time=10]
 #
 私は、身近にある幸せを大切にしようと思う。[p]
+;【SE】花火(打ち上げ：大)
+[playse storage=hanabi_utiage_big.ogg loop=false ]
 ;このモノローグはフラグ回収
 [主人公目伏柔]
 [wait time=10]
