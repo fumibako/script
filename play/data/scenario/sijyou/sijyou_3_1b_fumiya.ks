@@ -291,7 +291,7 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 [whosay name=文矢 color="#538a8a"]
 (ずっと心配して気を使ってくれてたんだね)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「お兄様、どうかされたのですか？」
+「お兄様、どうかされたのですか？」[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]!」[p]
 [whosay name="華織" color="olivedrab"]
@@ -317,14 +317,14 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 「あ、華織……！　僕の分もお願いね」[p]
 [whosay name="華織" color="olivedrab"]
 「うん」[p]
-
+#
 [fadeoutbgm time=3000]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
-@jump storage=sijyou_3_1b.ks target=*modoru
+@jump storage="sijyou/sijyou_3_1b.ks" target=*modoru
 ;四条 華織と文矢
 @jump storage="test_sijyou.ks"
 [s]
