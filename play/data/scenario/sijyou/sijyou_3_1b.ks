@@ -386,8 +386,6 @@
 「！ はい」[p]
 [主人公困りほほえみ]
 [主人公ポーズ指]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
 [whosay name=文矢 color="#538a8a"]
 (まったく君って奴は、主役の1人だっていうのに気を使ってさ)[p]
 #
@@ -402,6 +400,8 @@
 [主人公困りほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お父様……」[p]
+[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 #
 功を奏でるように女将達は三味線を鳴らし、宵を迎える。[p]
 [主人公通常]
