@@ -149,7 +149,7 @@
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-[主人公ふぅ]
+[主人公ふぅ閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ふぅ……お父様ったら、まだ気の早いことを華織様に聞いていらっしゃるわ……)[p]
 [whosay name=文矢 color="#538a8a"]
@@ -173,7 +173,7 @@
 ;背景・酒盛き（未定）
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-[fadeoutbgm time=3000]
+
 #
 お兄様は、さかづきを揺らし、波間を見つめる。[p]
 [主人公柔和ほほえみ１]
