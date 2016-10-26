@@ -10,12 +10,9 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 
-[主人公ポーズ通常]
-[主人公伏目]
-[主人公目パチ1回]
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-
+;自動改頁されてしまうためにいくつか改頁を挿入させていただきました。お好みの位置にご調整ください(スクリプト担)
 [手紙葛城宮妃殿下]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
@@ -29,7 +26,7 @@
 [r]
 [sp]息子は意思が強くときに激しくすら感じる時があります。[r]
 [sp]その息子が気に入った方だから不安に思っていたのですが[r]
-まるで淑女の鏡のような方で安心しました。[r]
+まるで淑女の鏡のような方で安心しました。[p]
 [r]
 [sp]少々の身分のことは気にされなくても大丈夫です。[r]
 [sp]正直に申し上げるのは気が引けますが[r]
@@ -91,8 +88,8 @@
 [主人公目パチ1回]
 
 ;背景仲人庭園
- [chara_mod name="bg" storage="bg / I9IhvvVdPo / nakoudoteiniwa.jpg"]
- 
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / nakoudoteiniwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 
 [whosay name="葛城宮妃" color=%mp.color]
 「振袖がとても似合っておられて[r]
@@ -144,6 +141,9 @@
 #
 妃殿下は嬉しそうに微笑み、[r]
 振り向くと軍服姿の殿下がいた[p]
+;背景仲人庭園(道)振り向くという言葉に合わせて背景も変化させてみました。この後語りながら歩くのに良さそうな道の見える池に(スクリプト担
+[chara_mod name="bg" storage="bg / I9IhvvVdPo /nakoudoteiniwa_michi1.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [葛城宮ベース軍服]
 ;【立ち絵】葛城宮　通常
 [葛城宮通常]
@@ -239,6 +239,9 @@
 [主人公頬染め]
 [主人公口ほほえみ]
 「ええ私もです」[p]
+;背景仲人庭園(道2)話の変化に合わせて背景も変化させてみます(スクリプト担
+[chara_mod name="bg" storage="bg / I9IhvvVdPo /nakoudoteiniwa_michi2.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;【立ち絵】主人公　主人公照れ目普通
 [主人公照れ目普通]
 「特に殿下の夢を聞きたいと思っていました。[r]
@@ -309,6 +312,7 @@
 ;呉服屋的な背景 全画面文字のみ表示
 [テキスト全画面白文字無背景]
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / yo-roppa.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [sp]殿下は１２歳でイギリスに留学し、[r]
 イギリス国王から立憲君主について学ばれ、[r]
 [r]
@@ -329,8 +333,9 @@
  
 
 
-;背景仲人庭園
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / nakoudoteiniwa.jpg"]
+;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
