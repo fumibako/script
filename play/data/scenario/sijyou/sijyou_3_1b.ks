@@ -132,7 +132,9 @@
 ;～～～～～～～～～～シーン晴れやかの中、切ない～～～～～～～～～～～～～～～～～～～～
 
 *common1
-[chara_mod name="bg" storage="toumei.gif"]
+;宴会または料亭席全体;宴会会場全体
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;「～ね」が続いておかしい
 [主人公通常]
 #
@@ -177,7 +179,7 @@
 ;～～～～～～～～～～シーン切ない～～～～～～～～～～～～～～～～～～～～
 ;背景・酒盛き（未定）
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+;[chara_mod name="bg" storage="toumei.gif"]
 #
 お兄様は、さかづきを揺らし、波間を見つめる。[p]
 [主人公柔和ほほえみ１]
@@ -253,6 +255,9 @@
 ;背景　宴会会場　または料亭
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+;宴会または料亭席全体;宴会会場全体
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
 お兄様は、安堵したかのように微笑むと華織様をみつめた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -346,14 +351,13 @@
 [current layer="message0"]
 [主人公ポーズ通常]
 [主人公ほほえみ]
-
 #
 私も華織様を見つめた。[p]
 [fadeoutbgm time=3000]
 ;宴会または料亭席全体;宴会会場全体
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+
 「……[名前]。 この事は、今忙しくしてる奴には、言わないように」[p]
 ;～～～～～～～～～～共通～～～～～～～～～～～～～
 *common3
