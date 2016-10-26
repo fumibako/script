@@ -76,16 +76,17 @@
 #
 無論。悪い気は、しなかった為、[r]
 私は裾を直して立ち上がると中庭へと向かうことにした[p]
+;【SE】ヒグラシ（カナカナカナ）
+[playse storage=semi_higurasi.ogg loop=false ]
+;せっかくなのでセミSEにしてみました。ヒグラシは夏の終わりですが夕方感が出るかと選択。他のセミに変えてくださっても大丈夫です(スクリプト担
 ;◎縁側でたまたま居合わせた父と花火を見ながら夕涼みする。
 [主人公目閉じ]
-;【SE】スズムシ（リーンリーン）
-[playse storage=mushi_suzumushi.ogg loop=false ]
 #
 ……[p]
 ;移動中、なくてもいいけど
 [主人公退場]
 [chara_mod name="bg" storage="bg/sijyou_engawa.jpg" time=1000]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
 中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。その相手は[p]
 
