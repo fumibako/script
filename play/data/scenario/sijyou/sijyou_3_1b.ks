@@ -297,8 +297,6 @@
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私は、お兄様が華織様を連れてこられて出会った気がしますが……）[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(私は、お兄様に連れられて、華織様と出会いましたが……）[p]
 ;兄、主人公の視線に気づく
 [whosay name=文矢 color="#538a8a"]
 「なんだい？　[名前]」[p]
@@ -310,6 +308,7 @@
 ;兄、華織と出会う話をする
 [whosay name=文矢 color="#538a8a"]
 「お父様と華織のお父様が知り合いなのは、[名前]も知っているだろう？」[p]
+[主人公口ほほえみ]
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;～～淑女度低い場合～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -319,18 +318,21 @@
 ;～～淑女度高い場合～～
 「はい、磯野からは、少しばかり聞かされております。[r]
 [sp]昔から、華織様のお父様と仲が良いと聞かされておりました」[p]
-[emdif]
+[endif]
 [whosay name=文矢 color="#538a8a"]
 「なんのことはないさ[r]
 それでも、知りたいのかい？」[p]
+[主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (きっとお兄様は、こういった時でないと、ゆっくりと、[r]
 [sp]ご自分のことお話しされないと思うわ)[p]
+[fadeoutbgm time=3000]
 #
-@jump storage=sijyou_3_1b_fumiya.ks target=first
+@jump storage="sijyou/sijyou_3_1b_fumiya.ks" target=first
 ;四条 華織と文矢
+[s]
 *modoru
 [whosay name=文矢 color="#538a8a"]
 「以来、僕は、華織のことをほおっておけない大事な友人の一人と思っている」[p]
