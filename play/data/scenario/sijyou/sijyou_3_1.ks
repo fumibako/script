@@ -1,5 +1,4 @@
 *test
-#
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
@@ -16,6 +15,7 @@
 [link target=sijyou_1]【４】四条登場シーンまでスキップ[endlink]
 [s]
 *test_str
+#
 [er]
 元パラを一時変数に退避します[p]
 [eval exp="tf.shukujodo=f.para_shujinkou_shukujodo"] 
