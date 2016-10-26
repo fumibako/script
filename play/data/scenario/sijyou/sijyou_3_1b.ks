@@ -16,7 +16,9 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [endmacro]
-
+[macro name=暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[endmacro]
 [イベントシーン構築]
 [if exp=tf.test_sijyou==true]
 【！】テストページからはじめます。変数を代入しますか？[p]
@@ -356,13 +358,13 @@
 #
 私も華織様を見つめた。[p]
 [fadeoutbgm time=3000]
-;宴会または料亭席全体;宴会会場全体
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 
 「……[名前]。 この事は、今忙しくしてる奴には、言わないように」[p]
 ;～～～～～～～～～～共通～～～～～～～～～～～～～
 *common3
+;宴会または料亭席全体;宴会会場全体
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織君も、もう少し飲んだらどうかな」[p]
 [if exp="sf.BGM=='ON'"]
