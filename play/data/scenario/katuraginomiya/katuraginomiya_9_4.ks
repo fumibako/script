@@ -124,7 +124,7 @@
 ;【テキスト全画面】黒茶・和紙風背景(暗)に白文字
 [テキスト全画面白文字暗]
 一週間後[p]
-
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築]
 ;背景:庭
 [主人公ポーズ通常]
@@ -149,7 +149,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ。そうね」[p]
 
-[背景町]
+;背景:町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[stopbgm]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公憂い]
@@ -218,6 +223,7 @@
 （殿下……！）[p]
 
 [chara_mod name="bg" storage="toumei.gif" time=1500]
+
 [whosay name=葛城宮晴仁]
 「[名前]殿！」[p]
 
@@ -228,6 +234,8 @@
 【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
 [eval exp="f.haikei_credit='photo　by　ゆうあかり
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公目閉じ]
@@ -254,7 +262,8 @@
 
 [葛城宮驚き]
 [whosay name=葛城宮晴仁" ]
-「[名前]殿！[r]
+「[名前]殿！」[p]
+
 [葛城宮目伏せ]
 [sp] こんな目に合わせてすまなかった」[p]
 
@@ -268,7 +277,7 @@
 [葛城宮憂い]
 [whosay name=葛城宮晴仁" ]
 「いや……[r]
-「私の従妹宮が君の醜聞を作るように仕向けたのだ」[p]
+[sp]私の従妹宮が君の醜聞を作るように仕向けたのだ」[p]
 
 #
 その言葉に私はあの時の恐怖を思い出して体が震える[r]
