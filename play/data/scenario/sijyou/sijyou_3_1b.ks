@@ -145,23 +145,27 @@
 「いや、控えておくよ。どうやら今の華織はお父様のお相手をしてる[r]
 [sp]ようだ」[p]
 #
-お兄様の視線を辿ると、将来の夫婦のあり方について質問責めにあっている華織様を見つけてしまった。[p]
+お兄様の視線を辿ると、"将来の夫婦のあり方"について、[r]
+質問責めにあっている華織様を見つけてしまった。[p]
 ;質問内容は、ぼかしておく
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [主人公ふぅ閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ふぅ……お父様ったら、まだ気の早いことを華織様に聞いていらっしゃるわ……)[p]
+(ふぅ……お父様ったら、まだ気の早いことを華織様に聞いていらっしゃる[r]
+[sp]わ……)[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]と華織との結納まで、もうすぐなんだね……」[p]
 #
 [主人公通常]
 お兄様は、ぼんやりと宴を眺めた。[p]
+[主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうかされましたの？」[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]が、すっかり大人になって月日というものが早く感じてしまうよ」[p]
+[主人公ポーズ通常]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あら、お兄様は、私が、じゃじゃ馬のままでいて欲しかったのですか？」[p]
@@ -174,7 +178,6 @@
 ;背景・酒盛き（未定）
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-
 #
 お兄様は、さかづきを揺らし、波間を見つめる。[p]
 [主人公柔和ほほえみ１]
@@ -217,7 +220,6 @@
 [主人公憂い]
 [sp]だから、本当に[名前]が、華織の家に嫁いでしまうって感じているのかも」[p]
 ;～～～～～～～～～～シーン　やさしい主人公～～～～～～～～～～～～～～～～～～～～
-;BGMきずな　で繋げてみる
 [if exp="f.para_shujinkou_shukujodo<200"]
 ;～～～淑女度低い場合～～～
 [主人公ほほえみ]
@@ -275,12 +277,6 @@
 
 ;～～～～～回想イベントへ～～～～～～～～～～
 *deai
-;BGM続行　きずな
-[if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
-[endif]
 [cm]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -289,7 +285,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 #
-[主人公通常ポーズ]
+[主人公ポーズ通常]
 お兄様と華織様の出会いが気になった。[p]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
@@ -343,16 +339,17 @@
 *not_fumiya
 [cm]
 ;[暗転]
-[fadeoutbgm time=3000]
 [chara_mod name="bg" storage="toumei.gif"]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[主人公ほほえみ]
 [主人公ポーズ通常]
+[主人公ほほえみ]
+
 #
 私も華織様を見つめた。[p]
+[fadeoutbgm time=3000]
 ;宴会または料亭席全体
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
@@ -361,13 +358,13 @@
 「……[名前]。 この事は、今忙しくしてる奴には、言わないように」[p]
 ;～～～～～～～～～～共通～～～～～～～～～～～～～
 *common3
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「華織君も、もう少し飲んだらどうかな」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
 [playbgm storage="michikusa.ogg" loop=true]
 [eval exp="f.bgm_storage='michikusa.ogg'"]
 [endif]
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-「華織君も、もう少し飲んだらどうかな」[p]
 [whosay name="華織" color="olivedrab"]
 「ありがとうございます。僕も充分に頂いております」[p]
 [主人公驚]
@@ -375,6 +372,7 @@
 [whosay name="四条父" color="#9B608B"]
 「お前達も、来てくれたか！」[p]
 [主人公横目]
+[主人公口通常]
 [whosay name="四条一華" color=%mp.color]
 「遅くなってすまない」[p]
 [whosay name="四条父" color="#9B608B"]
@@ -556,11 +554,11 @@
 [主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい、宜しくお願い致します」[p]
+[主人公口ほほえみ]
 [whosay name="四条 美華" color=%mp.color]
 「は、はいっ!」[p]
 #
 [主人公横目]
-[主人公口ほほえみ]
 ;プレイヤーに嫌われそうなので修正
 [whosay name="華織" color="olivedrab"]
 「[ruby text=み]美[ruby text=はな]華、緊張するからって、顔を下げたままにしないで」[p]
@@ -664,6 +662,9 @@
 ;↓効果：無し(通常) [主人公効果消]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 ;[四条口驚き]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_odoroki.png" time=0]
@@ -676,6 +677,9 @@
 [whosay name="四条 美華" color=%mp.color]
 「私も、あと二年で勉学を諦め、寄宿舎でて、殿方と手紙のやりとりを[r]
 [sp]しなければなりません」[p]
+;[四条効果消]
+[chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
+[wait time=10]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -691,8 +695,9 @@
 [wait time=10]
 [主人公口ムッ]
 「そんなことはないですわ[r]
-[sp]華織様は、お会いする時、いつも私をエスコートしてくれます」[p]
 [四条驚き]
+[sp]華織様は、お会いする時、いつも私をエスコートしてくれます」[p]
+[四条真剣]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
 「それに、現にこうやって夢を実現し、[r]
@@ -701,11 +706,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]
 「これだけ誠実な殿方は、私のお兄様以外で見たことがありません」[p]
-#
-[四条真剣]
-;[四条汗]
-[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
-[wait time=10]
+
 [whosay name="四条 美華" color=%mp.color]
 「私も……私も、そうなのです……他の殿方を信じることができません」[p]
 ;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
@@ -716,12 +717,15 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ……？」[p]
+[四条憂い]
 [whosay name="四条 美華" color=%mp.color]
 「華衣お兄様は粗暴ですし、一華兄様は、猫かぶりで見合いに失敗しており[r]
 [sp]ます。 私、知らない殿方と文通をするのがとても怖い……」[p]
 [主人公憂い]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
-[四条憂い]
 「[ruby text=み]美[ruby text=はな]華」[p]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
@@ -743,10 +747,10 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-[四条目通常]
 ;[四条効果消]
 [chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
 [wait time=10]
+[四条目通常]
 [主人公目通常]
 ;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
@@ -812,7 +816,7 @@
 
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
 #
-[主人公目閉]
+
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 華織様に誘われた私は、庭へと赴いた。[p]
@@ -826,6 +830,7 @@
 [四条ベース羽織]
 [四条微笑み]
 [主人公ポーズ通常]
+[主人公目閉]
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
 「ふぅ……空気がすっかり春の香りになりましたね」[p]
@@ -879,7 +884,8 @@
 [if exp="f.para_shujinkou_shukujodo<200"]
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「面白い方達ですね」[p]
+「皆さん、面白い方達ですね」[p]
+#
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
@@ -975,12 +981,9 @@
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
-;[四条目伏]
-[chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
-[wait time=10]
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。こんな僕の傍にいてくれてありがとう。[r]
-[四条微笑み]
 [名前]さんのおかげで、もう一歩先に進めます」[p]
 [主人公柔和ほほえみ１]
 [whosay name="華織" color="olivedrab"]
@@ -989,6 +992,7 @@
 ;いい感じになって見つめ合う二人。
 ;沈丁花
 [四条退場]
+#
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif" time=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=2000 wait=false]
@@ -1023,7 +1027,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 #
-;〜〜〜シーン真の兄というもの〜〜
+;～～～～～～～～～～～〜〜〜シーン真の兄というもの〜〜～～～～～～～～～～～～～～～～～～～
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [イベントシーン構築枠茶色]
@@ -1039,35 +1043,64 @@
 #
 まるで気を効かせて待っていたかのような態度で、文矢が話しかけてきた。[p]
 [whosay name="華織" color="olivedrab"]
-「そうだね。 でも、幸せな悩みごとさ」[p]
+「そうだね。 
+;[四条口笑顔]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_warau_s.png" time=0]
+[wait time=10]
+でも、幸せな悩みごとさ」[p]
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name=文矢 color="#538a8a"]
 「そうなんだ。 あぁ、言い忘れたけどさ」[p]
+[四条通常]
 #
 文也はニコリと笑って腕組みして隠れていた手を取り出す。[p]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「……なんだい？」[p]
 #
-僕は、 文矢 の懐の見えない仕草に思わず身構えてしまった。[p]
+僕は、文矢の懐の見えない仕草に思わず身構えてしまった。[p]
+[四条驚き]
 [whosay name=文矢 color="#538a8a"]
 「これからも妹のことをよろしく。もう泣かしたらダメだよ」[p]
+[四条口微笑み]
 #
 どこで覚えたのか、文也は、外国的なジェスチャーで『よろしく』と明るく答えた。[p]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 (君って奴は、本当に懐の深い男だよ)[p]
+;[四条効果消]
+[chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
+[wait time=10]
+;[四条眉強気]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_tuyoki.png" time=0]
+[wait time=10]
+[四条口微笑み]
 #
 敵わない[ruby text=あ]義[ruby text=に]兄兼、友人に僕は、深くうなづいた。[p]
+;[四条目にこ]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+[四条口笑顔]
 [whosay name="華織" color="olivedrab"]
 「それなら百も承知だ」[p]
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「なぁ、文也」[p]
 [whosay name=文矢 color="#538a8a"]
 「なんだい？」[p]
+[四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「[名前]さんに会わせてくれてありがとう、君という友人がいて本当に[r]
 [sp]幸せだ」[p]
+[四条微笑み]
 [whosay name=文矢 color="#538a8a"]
 「そうだろうとも。[r]
 [sp]なんたって僕の可愛い妹を君に渡すのだから幸せでなくてはね」[p]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「あぁ、君には敵わないな」[p]
 ;幸せな悩み？
@@ -1075,10 +1108,13 @@
 「さて。これから訪れる、幸せな悩みについて、相談に乗ろうか？」[p]
 [whosay name="華織" color="olivedrab"]
 「そうだね。[r]
+[四条笑顔]
 [sp]けど、まずは、君がまた悩んでいることがあったら僕が助けるよ」[p]
+[四条微笑み]
 [whosay name=文矢 color="#538a8a"]
 「そうだなぁ……」[p]
 ;子供が何人がいいとか、奥さんのプレゼントとか？
+[四条退場]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
