@@ -27,6 +27,11 @@
 #
 父、[emb exp="sf.father_name"]に連れられてやってきた屋敷は、
 目まぐるしいほどに草花に囲まれた洋館であった。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
 #
 父は外交官をしており、[ruby text=フ]仏[ruby text=ラン]蘭[ruby text=ス]西での交渉の際、鉱山取引の知識が必要になったのだ。[p]
 #
@@ -281,10 +286,39 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 [whosay name=文矢 color="#538a8a"]
 (華織、君って奴は、なんて……)[p]
 [whosay name=文矢 color="#538a8a"]
-「ありがとう。大丈夫だ、華織。
- 諦めないよ。もっと頑張ってみるよ」[p]
+「ありがとう。大丈夫だ、華織。[r]
+[sp] 諦めないよ。もっと頑張ってみるよ」[p]
 [whosay name=文矢 color="#538a8a"]
 (ずっと心配して気を使ってくれてたんだね)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「お兄様、どうかされたのですか？」
+[whosay name=文矢 color="#538a8a"]
+「[名前]!」[p]
+[whosay name="華織" color="olivedrab"]
+「この子は……文矢の妹さんかい？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「最近、[名前]と遊んでくれなくて寂しいです」[p]
+[whosay name=文矢 color="#538a8a"]
+「そうなんだ。　[名前]、ごめんね」[p]
+[whosay name="華織" color="olivedrab"]
+「そうだ！　僕が文矢の代わりに君のお相手しようか」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「？　こちらのお兄さまは、誰？」[p]
+[whosay name="華織" color="olivedrab"]
+「僕は、華織って言うんだ。[名前]ちゃんは、お花は好きかな？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「うん。　お花すきです」[p]
+[whosay name="華織" color="olivedrab"]
+「そっか。それなら、お花にまつわるお話をしようか[r]
+[sp]それから、[名前]ちゃんが、好きな飴を買いに行こうか？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「わーい」[p]
+[whosay name=文矢 color="#538a8a"]
+「あ、華織……！　僕の分もお願いね」[p]
+[whosay name="華織" color="olivedrab"]
+「うん」[p]
+
+[fadeoutbgm time=3000]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [イベントシーン構築]
@@ -353,7 +387,7 @@ _ できれば、将棋があるといいな。かけっこする歳でもない
 [wait time=10]
 [endif]
 @layopt layer=message0 page=fore visible=true
-[current layer="message0"
+[current layer="message0"]
 [freeimage layer = 27]
 [wait time=10]
 [return]
