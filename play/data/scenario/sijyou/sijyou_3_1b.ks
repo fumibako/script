@@ -142,7 +142,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お兄様も華織様とお話されは如何ですか？」[p]
 [whosay name=文矢 color="#538a8a"]
-「いや、控えておくよ。どうやら今の華織はお父様のお相手をしてるようだ」[p]
+「いや、控えておくよ。どうやら今の華織はお父様のお相手をしてる[r]
+[sp]ようだ」[p]
 #
 お兄様の視線を辿ると、将来の夫婦のあり方について質問責めにあっている華織様を見つけてしまった。[p]
 ;質問内容は、ぼかしておく
@@ -155,8 +156,8 @@
 [whosay name=文矢 color="#538a8a"]
 「[名前]と華織との結納まで、もうすぐなんだね……」[p]
 #
-お兄様は、ぼんやりと宴を眺めた。[p]
 [主人公通常]
+お兄様は、ぼんやりと宴を眺めた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうかされましたの？」[p]
 [whosay name=文矢 color="#538a8a"]
@@ -227,7 +228,8 @@
 「ありがとう。[名前]」[p]
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「今までお兄様が、私を寂しくさせていた分、お兄様も驚くほどの良妻になってみせますね」[p]
+「今までお兄様が、私を寂しくさせていた分、お兄様も驚くほどの良妻に[r]
+[sp]なってみせますね」[p]
 [whosay name=文矢 color="#538a8a"]
 「弱ったな、痛いところをつくね」[p]
 [else]
@@ -246,7 +248,6 @@
 [endif]
 ;～～～～～～～～～～シーン選択肢へ～～～～～～～～～～～～～～～～～～～～
 *common2
-[fadeoutbgm time=3000]
 ;背景　宴会会場　または料亭
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -342,6 +343,7 @@
 *not_fumiya
 [cm]
 ;[暗転]
+[fadeoutbgm time=3000]
 [chara_mod name="bg" storage="toumei.gif"]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -368,14 +370,19 @@
 「華織君も、もう少し飲んだらどうかな」[p]
 [whosay name="華織" color="olivedrab"]
 「ありがとうございます。僕も充分に頂いております」[p]
+[主人公驚き]
+[主人公ポーズ片手]
 [whosay name="四条父" color="#9B608B"]
 「お前達も、来てくれたか！」[p]
+[主人公横目]
 [whosay name="四条一華" color=%mp.color]
 「遅くなってすまない」[p]
 [whosay name="四条父" color="#9B608B"]
 「華織、皆の席を整えてやってくれ」[p]
 [whosay name="華織" color="olivedrab"]
 「！ はい」[p]
+[主人公困りほほえみ]
+[主人公ポーズ指]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [whosay name=文矢 color="#538a8a"]
@@ -388,16 +395,19 @@
 「なんだい 華織くん 、芸姑さんも呼びんでくれたのか。[r]
 [sp]華織くんは、気が利くね」[p]
 ;主人公ふぅ
+[主人公ポーズ通常]
 [主人公困りほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お父様……」[p]
 #
 功を奏でるように女将達は三味線を鳴らし、宵を迎える。[p]
+[主人公通常]
+[主人公目閉じ]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [whosay name="華織" color="olivedrab"]
-そうして、華織様のおかげで席は埋まり、本来の四条家と[名字家]の家族が集まった。[p]
+そうして、華織様のおかげで席は埋まり、本来の四条家と[名字]家の家族が集まった。[p]
 ;家族についての手紙を読んでいる
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
