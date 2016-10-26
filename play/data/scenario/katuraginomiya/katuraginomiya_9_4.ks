@@ -95,7 +95,6 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-
 [手紙読了]
 
 ;【立ち絵】主人公憂い
@@ -103,7 +102,7 @@
 （……異例な事）[p]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢様、何と書かれてありましたか？」
+「お嬢様、何と書かれてありましたか？」[p]
 
 ;【立ち絵】主人公目伏
 [主人公目閉じ]
@@ -118,6 +117,7 @@
 
 ;【立ち絵】主人公憂い
 [主人公憂い]
+[主人公口ほほえみ]
 「……誠意をもってお返事を書きます[r]
 [sp] 伝わるといいのだけれど」[p]
 
@@ -161,11 +161,17 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （わかっていたけどやんごとなきお方と[r]
 [sp]折り合っていくのは難しいわ）[p]
-　　
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】冬支度
+[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
+[endif]　　
+
 ;【SE】足音（靴
 [playse storage=walk_kutsu.ogg loop=false ]
 
-[主人公驚き]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （さっきから私の後ろでずっと同じ足音が聞こえているわ）[p]
 
@@ -230,8 +236,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （最後に殿下の声がしたけれど恐怖がいっぱいで私は気を保てなかった）[p]
 
-;背景:庭
-【背景】主人公邸 庭の見える部屋：昼
+;背景:庭【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
 [eval exp="f.haikei_credit='photo　by　ゆうあかり
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
@@ -239,6 +244,7 @@
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公目閉じ]
+[主人公口通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……）[p]
 
@@ -257,14 +263,14 @@
 「貴方の所為ではないです……私が浅はかだったのですわ」[p]
 
 #
-声出すけど私の声はかすれて弱弱しかった。[r]
+思わず言葉がでたけれど私の声はかすれて弱弱しかった。[r]
 これでは皆に心配をかけるだけなのに。[p]
 
 [葛城宮驚き]
 [whosay name=葛城宮晴仁" ]
 「[名前]殿！」[p]
 
-[葛城宮目伏せ]
+[葛城宮憂い]
 [sp] こんな目に合わせてすまなかった」[p]
 
 #
@@ -303,19 +309,20 @@
 「私はなんともなかったのです。それに殿下は来てくださいました[r]
 [sp] 私は殿下の事をお慕いしているのですどうかお許しください」[p]
 
+[葛城宮驚き]
+[whosay name=葛城宮晴仁" ]
+「[名前]殿！」[p]
+
 [whosay name=磯野 color="dimgray"]
 「お嬢様……」[p]
 
 [whosay name=浩文"]
 「[名前]……」[p]
 
-[葛城宮驚き]
-[whosay name=葛城宮晴仁" ]
-「[名前]殿！」[p]
 
 #
-私達は見つめ合った[r]
-殿下といると胸が高鳴る。[r]
+殿下と私は見つめ合った[r]
+殿下といると胸が熱くなる。[r]
 私はもう恋に落ちてしまったのだわ[p]
 
 [葛城宮真剣]
@@ -339,11 +346,13 @@
 
 #
 そして殿下はお父様に一礼し退出した。[p]
+[葛城宮退場]
 
 ;【SE】襖を閉じる（ゆっくり）
 [playse storage=fusuma-close.ogg loop=false ]
 
 [主人公目閉じ]
+[主人公眉下げ下]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お父様、磯野、私は強くなります[r]
 [sp] だから心配しないで下さい」[p]
