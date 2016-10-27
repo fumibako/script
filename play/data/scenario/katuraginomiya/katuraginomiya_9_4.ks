@@ -60,7 +60,7 @@
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[手紙 fumi_number=]
+[手紙従妹宮]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
