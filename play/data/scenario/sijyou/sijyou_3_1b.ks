@@ -1039,7 +1039,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [whosay name="四条 華衣" color=%mp.color]
 「どんくさいから、ちょっと小突いただけだろ！」[p]
 #
-;【背景】庭園
+;【背景】庭園 夕方か夜でお願いします。
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 [四条ベース羽織]
@@ -1059,7 +1059,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [イベントシーン構築枠茶色]
 ;料亭廊下
 ;http://sunset77light.rdy.jp/material/index.html
-;料亭の廊下
+;料亭の廊下　ゆうあかりさんの　主人公庭で使用したの隣５３を薄暗く　または、https://www.pakutaso.com/20150232044post-5173.htmlお願いします。
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [whosay name="華織" color="olivedrab"]
