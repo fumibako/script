@@ -139,6 +139,23 @@
 [resetfont]
 [endmacro]
 
+;[手紙従妹宮]
+[macro name="手紙従妹宮"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+;名前表示消去
+[whosay name=""]
+[cm]
+;機能ボタン消去
+[clearfix]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_itokomiya.jpg" time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[resetfont]
+[endmacro]
+
 ;[手紙読了]主人公、茶色便せん、その他共通
 [macro name="手紙読了"]
 [freeimage layer = 29 time=500]
@@ -412,7 +429,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + 4;
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙仮画像(藤枝イメージカラーなどを相談後に作成予定です)
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_jiyuuwaku1.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_hujieda.jpg" time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 
