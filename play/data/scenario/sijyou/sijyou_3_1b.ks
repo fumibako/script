@@ -293,16 +293,17 @@
 [current layer="message0"]
 #
 [主人公ポーズ通常]
+[主人公通常]
 お兄様と華織様の出会いが気になった。[p]
-;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+;背景　宴会会場　または料亭
+;宴会または料亭席全体;宴会会場全体
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私は、お兄様が華織様を連れてこられて出会った気がしますが……）[p]
 ;兄、主人公の視線に気づく
 [whosay name=文矢 color="#538a8a"]
 「なんだい？　[名前]」[p]
-[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、[r]
 [sp]そういえば、お兄様は、どのようにして華織様と出会ったのでしょうかと[r]
@@ -323,7 +324,7 @@
 [endif]
 [whosay name=文矢 color="#538a8a"]
 「なんのことはないさ[r]
-それでも、知りたいのかい？」[p]
+[sp]それでも、知りたいのかい？」[p]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
@@ -337,7 +338,8 @@
 [s]
 *modoru
 [whosay name=文矢 color="#538a8a"]
-「以来、僕は、華織のことをほおっておけない大事な友人の一人と思っている」[p]
+「以来、僕は、華織のことをほおっておけない大事な友人の一人と思って[r]
+[sp]いる」[p]
 [whosay name=文矢 color="#538a8a"]
 「あぁ、[名前]？  この事は、今忙しくしてる奴には、言わないように」[p]
 #
@@ -438,7 +440,7 @@
 ;～～～～～～～～～～～～～～～シーン個性的な兄弟～～～～～～～～～～～
 [whosay name="華織" color="olivedrab"]
 「文矢、[名前]さん。[r]
-[sp]渡仏(とふつ)やら留学中で紹介できてなかった兄弟を改めて、[r]
+[sp][ruby text=と]渡[ruby text=ふつ]仏やら留学中で紹介できてなかった兄弟を改めて、[r]
 [sp]紹介するね……」[p]
 #
 華織は、すこしやつれた様子で兄弟達の紹介をはじめた。[p]
@@ -926,7 +928,8 @@
 [sp]華織様はそんなお兄様に惹かれて、優しい華やかさをお持ち[r]
 [sp]なられたのでしょう」[p]
 [whosay name="華織" color="olivedrab"]
-「確かに。僕は、有能な兄の事を尊敬してます。同時に乗り越えたい人でもありますね……」[p]
+「確かに。僕は、有能な兄の事を尊敬してます。同時に乗り越えたい人でも[r]
+[sp]ありますね……」[p]
 [主人公柔和ほほえみ１]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな華織様の弟様にあたる、華衣様は、[r]
@@ -935,11 +938,13 @@
 [whosay name="華織" color="olivedrab"]
 「……華衣は、僕の悪いところを見破っていたのかもしれませんね……」[p]
 [whosay name="華織" color="olivedrab"]
-「今迄は、必要以上に甘やしすぎてたから、つかず離れず見守っていきたい……」[p]
+「今迄は、必要以上に甘やしすぎてたから、つかず離れず見守って[r]
+[sp]いきたい……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (陰ながら私も応援していますわ)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様のような、華やかで素敵なお兄様方に囲まれて[ruby text=み]美[ruby text=はな]華様は、幸せでしょうね」[p]
+「華織様のような、華やかで素敵なお兄様方に囲まれて[ruby text=み]美[ruby text=はな]華様は、[r]
+[sp]幸せでしょうね」[p]
 [endif]
 
 ;～～～～～～～～共通～～～～～～～～
@@ -947,7 +952,7 @@
 ;BGM切り替え案２
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
-「名前さん。君って人は、[r]
+「[名前]さん。君って人は、[r]
 [sp]時々、僕より大人びて見えますね……」[p]
 ;微妙だな↑
 [主人公照れ目普通]
@@ -958,7 +963,9 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「えぇ。 美華に文矢の言葉を送る君の姿は、慈愛の女神のような[r]
+[wait time=1]
 [sp]美しさを感じました」[p]
+;フリーズポイント
 ;褒めておかないと割に合わないので褒める
 [whosay name="華織" color="olivedrab"]
 「[名前]さんと接する度に、僕の心の早鐘を鳴らす素敵な表情を見つけて[r]
