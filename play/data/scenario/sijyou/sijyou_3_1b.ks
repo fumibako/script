@@ -1215,7 +1215,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [wait time=10]
 [endif]
 @layopt layer=message0 page=fore visible=true
-[current layer="message0"
+[current layer="message0"]
 [freeimage layer = 27]
 [wait time=10]
 [return]
