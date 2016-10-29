@@ -790,7 +790,7 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
 [link target=18_ex_fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
 [link target=18_ex_fumi_in3][sp]　　　　　　　　　　　　　　　　　　　　　　 　【閉】[endlink][s]
-*fumi_in3
+*18_ex_fumi_in3
 [er]　　　　　　　　　　　　　　　　　　　　　　
 [手紙四条読了 fumi_number=]
 ;///////アイデンティな手紙おわり///////
