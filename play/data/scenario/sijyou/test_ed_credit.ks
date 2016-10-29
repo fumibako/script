@@ -250,10 +250,16 @@ $('.omoide1').css('-webkit-box-shadow','inset -60px 0px 200px　#fff');
 [mtext text="テストプレイヤーの皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=flase]
 [mtext text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y4 color=&tf.fc wait=true]
 
+;画像の周囲をぼかしを消去
+[iscript]
+$('.omoide1').css('-webkit-box-shadow','inset 0px 0px 0px　#fff');
+[endscript]
+
 ;フェードアウトして消します
 [iscript]
 $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [endscript]
+
 
 [stopbgm]
 @jump storage="test_sijyou.ks"
