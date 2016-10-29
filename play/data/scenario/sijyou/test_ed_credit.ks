@@ -100,8 +100,11 @@
 
 [mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 ;フェードアウトして消します
+;透明化
+[kanim keyframe="not_opcy" name="omoide1" time=5000]
+;フェードアウトして消します
 [iscript]
-$('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
+$('.omoide1').remove();
 [endscript]
 
 [mtext text="スクリプト関係" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
