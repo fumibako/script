@@ -83,15 +83,16 @@
 [endif]
 [endif]
 ;音楽はなんでも
-;画像の周囲をぼかします
 
 
 ;if exp="tf.end==sijyou"　などで変更してください
 [image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+;画像の周囲をぼかします
 [iscript]
-$('.omoide1').css('-webkit-box-shadow','80px 0px 200px','#fff');
+$('.omoide1').css('-webkit-box-shadow','-80px 0px -100px #fff');
 [endscript]
 ;http://webrocketsmagazine.com/entry/20120224/css3-image-effects.html
+;http://stackoverflow.com/questions/14294721/css-box-shadow-in-jquery-css
 
 [mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 ;フェードアウトして消します
@@ -116,6 +117,11 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 
 ;if exp="tf.end==sijyou"　などで変更してください
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+;画像の周囲をぼかします
+[iscript]
+$('.omoide1').css('-webkit-box-shadow','-80px 0px -100px #fff');
+[endscript]
+
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 [mtext text="flickr : Liquid 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
@@ -151,6 +157,11 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [wait time=400]
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+;画像の周囲をぼかします
+[iscript]
+$('.omoide1').css('-webkit-box-shadow','-80px 0px -100px #fff');
+[endscript]
+
 
 ;四条で使った背景素材メモ
 
@@ -161,9 +172,9 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 ;PHOTO STOCKER 花火大
 [mtext text="flickr :Jeremy Hal 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
 ;銀座反物お店
-[mtext text="flickr :Ryosuke Yagi" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext text="flickr :Ryosuke Yagi 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
 ;Ryosuke Yagi　波ケ浦
-[mtext text="flickr :syasara" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
+[mtext text="flickr :syasara 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
 ;syasara　波ケ浦(激)
 ;最後wait=true
 
@@ -200,6 +211,10 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
 [image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+;画像の周囲をぼかします
+[iscript]
+$('.omoide1').css('-webkit-box-shadow','-80px 0px -100px #fff');
+[endscript]
 
 ;ここで位置を決定
 ;縦Y位置変更
@@ -210,7 +225,7 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [mtext text="原案・企画" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
 　
-
+;ここではキャラ画像ないと背景画像と勘違いされそうですね
 [mtext text="キャラクターグラフィック" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
 
