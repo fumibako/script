@@ -35,7 +35,7 @@
 [endkeyframe]
 [keyframe name="animation3"]
 [frame p=0% y="0" x="0" opacity="1"]
-[frame p=100% y="400" opacity="0"]
+[frame p=100% y="400" x=200 opacity="0"]
 [endkeyframe]
 ;アニメーション実行
 [kanim name="saku1" keyframe="animation1" delay="0.5s" time="10000" count="infinite"]
