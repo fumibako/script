@@ -83,9 +83,9 @@
 [endif]
 [endif]
 ;音楽はなんでも
-
+;画像の周囲をぼかします
 [iscript]
-$('.omoide1').css('-webkit-box-shadow','inset','80px 0 200px','#fff;')
+$('.omoide1').css('-webkit-box-shadow','80px 0 200px','#fff');
 [endscript]
 ;http://webrocketsmagazine.com/entry/20120224/css3-image-effects.html
 
