@@ -51,6 +51,11 @@
 ;ここで位置を決定
 ;横X位置
 [eval exp="tf.left_x=300"]
+;ティラノ表示↓
+[eval exp="tf.left_x0=500"]
+;縦Y位置
+;ティラノ表示↓
+[eval exp="tf.top_y0=300"]
 ;縦Y位置
 [eval exp="tf.top_y1=200"]
 [eval exp="tf.top_y2=250"]
@@ -69,7 +74,7 @@
 [eval exp="tf.fc='#5b4513'"]
 
 [if exp="tf.test_sijyou==true"]
-[mtext text="テストです。クリックしてください" layer=27 size=18 x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext text="テストです。クリックしてください" layer=27 size=18 x="&tf.left_x0" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 [l]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜（normal/goodED用)
@@ -82,7 +87,7 @@
 ;if exp="tf.end==sijyou"　などで変更してください
 [image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 
-[mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 ;フェードアウトして消します
 [iscript]
 $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
