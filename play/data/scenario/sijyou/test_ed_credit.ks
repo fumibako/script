@@ -3,7 +3,7 @@
 ;[暗転]
 [stopbgm]
 ;if exp="tf.end==sijyou"　などで呼び出しor変更してください
-[chara_mod name="bg" storage="bg_tegami_konyakusha.jpg"]
+[chara_mod name="bg" storage="bg/bg_tegami_konyakusha.jpg"]
 @jump target=test
 [endif]
 *start
@@ -62,7 +62,7 @@
 [eval exp="tf.top_y7=550"]
 ;文字サイズ　font_size &fs
 [eval exp="tf.fs=20"]
-[eval exp="tf.fs1=14"]
+[eval exp="tf.fs1=13"]
 [eval exp="tf.fs2=18"]
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
@@ -153,17 +153,19 @@
 
 [mtext text="シナリオ" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 ;サイズ14
-[mtext text="◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
-[mtext text="◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
+[mtext text="◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext text="◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
 ;全シナリオのクレジット？　テストですが
 
 
 [mtext text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext text="◆8EASfQr/2Q(吉里吉里Ver.システム原案)、◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
+[mtext text="◆8EASfQr/2Q(吉里吉里Ver.システム原案)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext text="◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
 
 
 [mtext text="＊　Special Thanks　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext text="エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、テストプレイヤーの皆様、淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc wait=true ]
+[mtext text="エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、テストプレイヤーの皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=true]
 
 [stopbgm]
 @jump storage="test_sijyou.ks"
