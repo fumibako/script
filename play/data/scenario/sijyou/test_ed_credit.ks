@@ -85,7 +85,7 @@
 ;音楽はなんでも
 
 [iscript]
-$('.omoide1:after').css('-webkit-box-shadow','inset','-60px','0','200px','#fff;')
+$('.omoide1').css('-webkit-box-shadow','inset','80px 0 200px','#fff;')
 [endscript]
 ;http://webrocketsmagazine.com/entry/20120224/css3-image-effects.html
 
