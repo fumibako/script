@@ -52,10 +52,10 @@
 ;横X位置
 [eval exp="tf.left_x=300"]
 ;ティラノ表示↓
-[eval exp="tf.left_x0=500"]
+[eval exp="tf.left_x0=600"]
 ;縦Y位置
 ;ティラノ表示↓
-[eval exp="tf.top_y0=300"]
+[eval exp="tf.top_y0=500"]
 ;縦Y位置
 [eval exp="tf.top_y1=200"]
 [eval exp="tf.top_y2=250"]
