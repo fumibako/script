@@ -79,18 +79,20 @@
 [endif]
 ;音楽はなんでも
 
-[image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=300 height=190 time=2000 x=200 y=100]
+;if exp="tf.end==sijyou"　などで変更してください
+[image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 
 [mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+;フェードアウトして消します
 [iscript]
 $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [endscript]
+
 [mtext text="スクリプト関係" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 
 [mtext text="keito-works 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
 [mtext text="アオイサクラ 様： 簡易コンフィグ画面プラグイン" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext text="ティラノスクリプト 製作テクニックwiki 様" layer=&tf.fs size=18 x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  in_effect="fadeIn" out_effect="fadeOut" wait=true]
-
 
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -101,6 +103,8 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [mtext text="flickr : Eddy BERTHIER 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc wait=true]
 ;最後wait=true
 
+;if exp="tf.end==sijyou"　などで変更してください
+[image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 [mtext text="flickr : Liquid 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
@@ -109,6 +113,11 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [mtext text="sunnywinds* 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc  wait=false]
 [mtext text="Omar + Kazumi Ovalle 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc  wait=true]
 ;最後wait=true
+
+;フェードアウトして消します
+[iscript]
+$('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
+[endscript]
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 [mtext text="flickr : djNIV 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc time=500 wait=false] 
@@ -129,6 +138,9 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 ;最後wait=true
 
 [wait time=400]
+;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
+[image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+
 ;四条で使った背景素材メモ
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -143,6 +155,12 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [mtext text="flickr :syasara" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
 ;syasara　波ケ浦(激)
 ;最後wait=true
+
+;フェードアウトして消します
+[iscript]
+$('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
+[endscript]
+
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 [mtext text="flickr :Furbychan" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
@@ -169,7 +187,8 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [mtext text="cssスクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="coliss 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 
-
+;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
+[image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 
 [mtext text="原案・企画" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
@@ -198,6 +217,10 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [mtext text="エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc wait=false]
 [mtext text="テストプレイヤーの皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=flase]
 [mtext text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y4 color=&tf.fc wait=true]
+
+[iscript]
+$('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
+[endscript]
 
 [stopbgm]
 @jump storage="test_sijyou.ks"
