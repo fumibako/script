@@ -62,10 +62,10 @@
 「[名前]、華織おめでとう」[p]
 
 [whosay name="華織" color="olivedrab"]
-「[名前]と、あの時再会して、本当によかった」[p]
+「[名前]さんと、あの時再会して、本当によかった」[p]
 ;△お見合いのことです
 [whosay name="華織" color="olivedrab"]
-「[名前]、大切にします」[p]
+「[名前]さん、大切にします」[p]
 ;場所変更？
 [kanim name="saku1" keyframe="animation1" time="10000" count="0"]
 [kanim name="saku2" keyframe="animation2" time="9000" count="0"]
@@ -79,7 +79,6 @@ $('.saku3').remove();
 「自分にも、いつかそのような方と出会えるのかな……」[p]
 [whosay name="四条親戚" color="#807070"]
 「きっと貴方にも巡り会えますよ 華衣さんにも大事な人が 」[p]
-;兄のセリフをいう
 [whosay name="華衣" color=%mp.color]
 「！　」[p]
 [whosay name="華衣" color=%mp.color]
