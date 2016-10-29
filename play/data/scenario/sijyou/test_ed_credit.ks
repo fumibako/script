@@ -41,10 +41,11 @@
 *test
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 [wait time=5]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=5]
+;[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;[wait time=5]
 ;////////////ウインドウ等を非表示//////////
 ;どこかにcreditをtf配列にして＆で呼び出してもいいかも
 
@@ -72,6 +73,14 @@
 [eval exp="tf.fs2=18"]
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
+;////////////ｊsでフェードアウトするとほかのものに線が入るようなのでキーフレームに/////////
+[keyframe name="not_opcy"]
+[frame p=100% opacity="0"]
+[endkeyframe]
+[keyframe name="opcy"]
+[frame p=100% opacity="1"]
+[endkeyframe]
+
 
 [if exp="tf.test_sijyou==true"]
 [mtext text="テストです。クリックしてください" layer=27 size=18 x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
@@ -112,7 +121,8 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 
 ;if exp="tf.end==sijyou"　などで変更してください
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-
+;表示
+[kanim keyframe="opcy" name="omoide1" time=2000]
 
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -122,10 +132,11 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [mtext text="sunnywinds* 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc  wait=false]
 [mtext text="Omar + Kazumi Ovalle 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc  wait=true]
 ;最後wait=true
-
+;透明化
+[kanim keyframe="not_opcy" name="omoide1" time=5000]
 ;フェードアウトして消します
 [iscript]
-$('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
+$('.omoide1').remove();
 [endscript]
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -165,10 +176,13 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 ;syasara　波ケ浦(激)
 ;最後wait=true
 
+;透明化
+[kanim keyframe="not_opcy" name="omoide1" time=5000]
 ;フェードアウトして消します
 [iscript]
-$('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
+$('.omoide1').remove();
 [endscript]
+
 
 [wait time=10]
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -197,7 +211,8 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
 [image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-
+;表示
+[kanim keyframe="opcy" name="omoide1" time=2000]
 
 ;ここで位置を決定
 ;縦Y位置変更
@@ -234,12 +249,15 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [mtext text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y4 color=&tf.fc wait=true]
 
 
+;透明化
+[kanim keyframe="not_opcy" name="omoide1" time=5000]
 ;フェードアウトして消します
 [iscript]
-$('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
+$('.omoide1').remove();
 [endscript]
 
 
+[freeimage layer=27]
 [stopbgm]
 @jump storage="test_sijyou.ks"
 [s]
