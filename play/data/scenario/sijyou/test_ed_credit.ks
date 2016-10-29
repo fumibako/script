@@ -50,7 +50,7 @@
 
 ;ここで位置を決定
 ;横X位置
-[eval exp="tf.left_x=100"]
+[eval exp="tf.left_x=300"]
 ;縦Y位置
 [eval exp="tf.top_y1=210"]
 [eval exp="tf.top_y2=300"]
