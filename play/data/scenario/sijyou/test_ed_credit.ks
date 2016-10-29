@@ -1,5 +1,5 @@
 *first
-[if exp=tf.test_sijyou==true]
+[if exp="tf.test_sijyou==true"]
 ;[暗転]
 [stopbgm]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -64,15 +64,15 @@
 [eval exp="tf.fs1=14"]
 [eval exp="tf.fs2=18"]
 
-[if exp=tf.test_sijyou==true]
+[if exp="tf.test_sijyou==true"]
 [mtext text="テストです。クリックしてください" layer=27 size=18 x="&tf.left_x" y=210 color=snow in_effect="fadeIn" out_effect="fadeOut"]
 [l]
+[endif]
 ;音楽はなんでも
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜（normal/goodED用)
 [playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
 [eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
-[endif]
 [endif]
 
 [mtext text="ティラノスクリプト様" layer=27 size=&fs x="&tf.left_x" y=210 color=snow in_effect="fadeIn" out_effect="fadeOut"]
