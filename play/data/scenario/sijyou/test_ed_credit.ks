@@ -98,7 +98,7 @@
 
 
 [mtext text="背景2" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext text="flickr : minoir 様" layer=27 size=&&tf.fs x="&tf.left_x" y=&tf.top_y2 color=snow  wait=false]
+[mtext text="flickr : minoir 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=snow  wait=false]
 [mtext text="sunnywinds* 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=snow  wait=false]
 [mtext text="Omar + Kazumi Ovalle 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=snow  wait=false]
 ;サイズ14
