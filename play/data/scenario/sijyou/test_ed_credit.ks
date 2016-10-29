@@ -52,10 +52,10 @@
 ;横X位置
 [eval exp="tf.left_x=300"]
 ;ティラノ表示↓
-[eval exp="tf.left_x0=600"]
+[eval exp="tf.left_x0=650"]
 ;縦Y位置
 ;ティラノ表示↓
-[eval exp="tf.top_y0=500"]
+[eval exp="tf.top_y0=400"]
 ;縦Y位置
 [eval exp="tf.top_y1=200"]
 [eval exp="tf.top_y2=250"]
@@ -74,7 +74,7 @@
 [eval exp="tf.fc='#5b4513'"]
 
 [if exp="tf.test_sijyou==true"]
-[mtext text="テストです。クリックしてください" layer=27 size=18 x="&tf.left_x0" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext text="テストです。クリックしてください" layer=27 size=18 x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 [l]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜（normal/goodED用)
