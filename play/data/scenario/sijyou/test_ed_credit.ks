@@ -192,9 +192,9 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 
 ;ここで位置を決定
 ;縦Y位置変更
-[eval exp="tf.top_y1=+100"]
-[eval exp="tf.top_y2=+100"]
-[eval exp="tf.top_y3=+100"]
+[eval exp="tf.top_y1=tf.top_y1+200"]
+[eval exp="tf.top_y2=tf.top_y2+200"]
+[eval exp="tf.top_y3=tf.top_y3+200"]
 
 [mtext text="原案・企画" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
