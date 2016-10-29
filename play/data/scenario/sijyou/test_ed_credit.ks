@@ -52,14 +52,14 @@
 ;横X位置
 [eval exp="tf.left_x=300"]
 ;縦Y位置
-[eval exp="tf.top_y1=210"]
-[eval exp="tf.top_y2=300"]
-[eval exp="tf.top_y3=350"]
+[eval exp="tf.top_y1=200"]
+[eval exp="tf.top_y2=250"]
+[eval exp="tf.top_y3=300"]
 ;タグ側で加算＆tf.top_y3＋変数？→変更する際の労力が同じになるのでやめました
-[eval exp="tf.top_y4=400"]
-[eval exp="tf.top_y5=450"]
-[eval exp="tf.top_y6=500"]
-[eval exp="tf.top_y7=550"]
+[eval exp="tf.top_y4=350"]
+[eval exp="tf.top_y5=400"]
+[eval exp="tf.top_y6=450"]
+[eval exp="tf.top_y7=500"]
 ;文字サイズ　font_size &fs
 [eval exp="tf.fs=20"]
 [eval exp="tf.fs1=13"]
@@ -113,7 +113,7 @@
 [mtext text="背景3" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="deviantart-gimei 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
 [mtext text="素材工房まさん房 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
-;サイズ15
+;サイズ
 [mtext text="pixiv : mit81 様, アスカ 様, ポテ子 様" layer=27 size=&tf.fs2 x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=true]
 
 
