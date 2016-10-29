@@ -133,8 +133,8 @@
 
 [mtext text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="効果音ラボ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc  wait=false]
-[mtext text="フリー効果音　On-Jin ～音人～ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color="snow" wait=false]
-[mtext text="効果ON 様" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y3 color="snow" wait=true]
+[mtext text="フリー効果音　On-Jin ～音人～ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y3 color="snow" wait=false]
+[mtext text="効果ON 様" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y4 color="snow" wait=true]
 
 
 
