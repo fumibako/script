@@ -14,6 +14,35 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
+[image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=20 y=-600]
+[image name="saku2" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=60 y=-600 ]
+[image name="saku3" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=80 y=-600]
+;一部桜は縮小
+[keyframe name="animation"]
+[frame p=100% scale=-0.7]
+[endkeyframe]
+;縮小実行
+[kanim name="saku1" keyframe="animation" time="0"]
+[wa]
+;アニメーション
+[keyframe name="animation1"]
+[frame p=0% y="0" x="0" opacity="1"]
+[frame p=100% y="590" opacity="0"]
+[endkeyframe]
+[keyframe name="animation2"]
+[frame p=0% y="0" x="0" opacity="1"]
+[frame p=100% y="500" opacity="0"]
+[endkeyframe]
+[keyframe name="animation3"]
+[frame p=0% y="0" x="0" opacity="1"]
+[frame p=100% y="400" opacity="0"]
+[endkeyframe]
+;アニメーション実行
+[kanim name="saku1" keyframe="animation1" delay="0.5s" time="10000" count="infinite"]
+[kanim name="saku2" keyframe="animation2" delay="1.0s" time="9000" count="infinite"]
+[kanim name="saku3" keyframe="animation3" delay="0.5s" time="8000"  count="infinite"]
+[wa]
+
 
 #
 四条家 と、[名字]家 の結納儀式がつつがなく終わり、親戚一同から祝福の声がかかる。[p]
@@ -40,7 +69,14 @@
 [whosay name="華織" color="olivedrab"]
 「[名前]、大切にします」[p]
 ;場所変更？
-
+[kanim name="saku1" keyframe="animation1" time="10000" count="0"]
+[kanim name="saku2" keyframe="animation2" time="9000" count="0"]
+[kanim name="saku3" keyframe="animation3" time="8000"  count="0"]
+[iscript]
+$('.saku1').remove();
+$('.saku2').remove();
+$('.saku3').remove();
+[endscript]
 [whosay name="華衣" color=%mp.color]
 「自分にも、いつかそのような方と出会えるのかな……」[p]
 [whosay name="四条親戚" color="#807070"]
@@ -72,48 +108,7 @@
 @jump storage="test_sijyou.ks"
 [s]
 
-;/////////////////エピローグ追加分（good_end差分です)///////////
-;#
-;--その数年後、
-;[sp]秋の薄紫の花達が風になびくころ。[p]
-;[whosay name="華織" color="olivedrab"]
-;「ふぅ……なかなか決まりませんね」[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「どうされましたか？ 」[p]
-;[whosay name="華織" color="olivedrab"]
-;「華道祭で玄関先に飾る御所花車の構図が決まらなくて……」[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「少し、休まれませんか？ 華衣さんからのお手紙も来たので」[p]
-;[whosay name="華織" color="olivedrab"]
-;「華衣から手紙ですか！ なかなか手紙を返してくれなかったのに。一体、何をしてるのでしょうか……」[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「手紙によりますと……
-華衣さんは結納式の後に出会った方と四条家の鉱山事業を生かした発電事業をはじめ、事故の少ない交通機関の発展にも貢献しているそうですよ」[p]
-;[whosay name="華織" color="olivedrab"]
-;「そうですか、風の噂で少なからず聞いてましたが、元気にやっているようですね」[p]
-;[whosay name="華織" color="olivedrab"]
-;(そのうち、訪ねてくるような仲になれるだろうか？)[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「私達も、負けていられませんね」[p]
-;[whosay name="華織" color="olivedrab"]
-;「！ そうですね。 休憩はこのあたりにしておきましょうか」[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「いいのですか？」
-;[whosay name="華織" color="olivedrab"]
-;「ちょうど[名前]さんの愛らしい顔をみたら、いい構図を思いつきましたから」[p]
-;[名前]は、華織に微笑み返すと縁側でネリネの花を見つめた。[p]
-;[whosay name="華織" color="olivedrab"]
-;(手紙の代わりに、華で想いを綴っていくと決めたのだから、もっと精進しなくては)[p]
-;ないとおもうけど財前シナリオに習ってはみた
-;[chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;主人公をみながら作業再開
-;#
-;その後、華道家として祖母以上に認められ華織は、四条御流として更に名が知れ渡るほどに国の文化に貢献することとなった。[p]
-;その陰には四条を支える主人公の姿があった。[p]
-;想いを繋げて綴っていく手紙は、いつしか恋を綴り、人々を幸せにする愛に変わっていく。その手紙は--- [p]
-;恋綴りのタイトルに戻るイメージ
-;手紙によって大きく変わった四条兄弟が人々に貢献する・・・にもつながる？
+
 
 *window_close
 [cm]
