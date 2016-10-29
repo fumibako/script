@@ -1,3 +1,12 @@
+*first
+[if exp=tf.test_sijyou==true]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+@jump target=test
+[endif]
+*start
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;if exp="tf.end==sijyou"　などで呼び出しor変更してください
 [chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
@@ -6,8 +15,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
 ;////////////ウインドウ等を非表示//////////
 *window_close
 [cm]
@@ -29,6 +36,7 @@
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
+*test
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
 [layopt layer=27 visible=true]
