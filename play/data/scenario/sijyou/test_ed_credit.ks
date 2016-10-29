@@ -261,6 +261,8 @@ $('.omoide1').remove();
 
 
 [freeimage layer=27]
+;表示
+[kanim keyframe="opcy" name="omoide1" time=10]
 [stopbgm]
 @jump storage="test_sijyou.ks"
 [s]
