@@ -87,12 +87,7 @@
 
 ;if exp="tf.end==sijyou"　などで変更してください
 [image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-;画像の周囲をぼかします
-[iscript]
-$('.omoide1').css('-webkit-box-shadow','inset -60px 0px 200px　#fff');
-[endscript]
-;http://webrocketsmagazine.com/entry/20120224/css3-image-effects.html
-;http://stackoverflow.com/questions/14294721/css-box-shadow-in-jquery-css
+
 
 [mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 ;フェードアウトして消します
@@ -117,10 +112,7 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 
 ;if exp="tf.end==sijyou"　などで変更してください
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-;画像の周囲をぼかします
-[iscript]
-$('.omoide1').css('-webkit-box-shadow','inset -60px 0px 200px　#fff');
-[endscript]
+
 
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -157,11 +149,6 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [wait time=400]
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-;画像の周囲をぼかします
-[iscript]
-$('.omoide1').css('-webkit-box-shadow','-80px 0px -100px #fff');
-[endscript]
-
 
 ;四条で使った背景素材メモ
 
@@ -183,15 +170,14 @@ $('.omoide1').css('-webkit-box-shadow','-80px 0px -100px #fff');
 $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 [endscript]
 
-
+[wait time=10]
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext text="flickr :Furbychan" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
+[mtext text="flickr :Furbychan 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
 ;Furbychan　夕焼け
-[mtext text="flickr :heniha" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=true]
+[mtext text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=true]
 ;heniha　線香花火
 ;最後wait=true
 ;[wait time=400]
-
 
 
 [mtext text="フォント" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -211,10 +197,7 @@ $('.omoide1').fadeOut('slow').queue(function(){this.remove(); });
 
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
 [image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-;画像の周囲をぼかします
-[iscript]
-$('.omoide1').css('-webkit-box-shadow','inset -60px 0px 200px　#fff');
-[endscript]
+
 
 ;ここで位置を決定
 ;縦Y位置変更
@@ -250,10 +233,6 @@ $('.omoide1').css('-webkit-box-shadow','inset -60px 0px 200px　#fff');
 [mtext text="テストプレイヤーの皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=flase]
 [mtext text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y4 color=&tf.fc wait=true]
 
-;画像の周囲をぼかしを消去
-[iscript]
-$('.omoide1').css('-webkit-box-shadow','inset 0px 0px 0px　#fff');
-[endscript]
 
 ;フェードアウトして消します
 [iscript]
