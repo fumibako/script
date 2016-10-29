@@ -59,6 +59,13 @@
 [eval exp="tf.top_y6=500"]
 [eval exp="tf.top_y7=550"]
 
+[l]
+;音楽はなんでも
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 
 [mtext text="ティラノスクリプト様" layer=27 size=18 x="&tf.left_x" y=210 color=snow in_effect="fadeIn" out_effect="fadeOut"]
 
@@ -145,4 +152,6 @@
 [mtext text="＊　Special Thanks　＊" layer=27 size=18 x="&tf.left_x" y=&tf.top_y1 color=snow in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、テストプレイヤーの皆様、淑女の皆様" layer=27 size=18 x="&tf.left_x" y=&tf.top_y2 color=snow wait=true ]
 
-
+[stopbgm]
+@jump storage="test_sijyou.ks"
+[s]
