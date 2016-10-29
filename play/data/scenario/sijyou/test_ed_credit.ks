@@ -102,7 +102,7 @@
 [mtext text="sunnywinds* 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=snow  wait=false]
 [mtext text="Omar + Kazumi Ovalle 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=snow  wait=false]
 ;サイズ14
-[mtext text="flickr : djNIV 様, Farrukh 様, Mike Linksvayer 様, 田中十洋 様, Barn Images 様, Mike Petrucci 様" layer=27 size=&fs1 x="&tf.left_x" y=&tf.top_y5 color=snow time=500 wait=false]
+[mtext text="flickr : djNIV 様, Farrukh 様, Mike Linksvayer 様, 田中十洋 様, Barn Images 様, Mike Petrucci 様" layer=27 size=&tf.fs1 x="&tf.left_x" y=&tf.top_y5 color=snow time=500 wait=false]
 [mtext text="ビバ！江戸 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=snow  wait=false]
 [mtext text="フリー素材*ヒバナ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color=snow  wait=true]
 
@@ -116,13 +116,13 @@
 
 
 [mtext text="フォント" layer=27 size=&fs x="&tf.left_x" y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext text="衡山毛筆フォント-青二書道教室 様" layer=27 size=&fs x="&tf.left_x" y=&tf.top_y2 color="snow" wait=false]
+[mtext text="衡山毛筆フォント-青二書道教室 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="snow" wait=false]
 [mtext text="M+ FONTS 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="snow" wait=true]
 
 　
 
 
-[mtext text="BGM" layer=27 size=&fs x="&tf.left_x" y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext text="BGM" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="おとわび 様" layer=27 size=&fs x="&tf.left_x" y=&tf.top_y2 color="snow" wait=true]
 
 
