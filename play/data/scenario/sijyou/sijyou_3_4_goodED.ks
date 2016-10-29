@@ -5,6 +5,8 @@
 ;[青空]桜のエフェクト？
 ;兄とその奥さんに見守られて結納(文字のみ)
 ;【背景】青空に桜
+;桜の表示が遅いと見えない,処理不能の為プリロード
+[preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 [stopbgm]
@@ -17,6 +19,7 @@
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=20 y=-600]
 [image name="saku2" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=60 y=-600 ]
 [image name="saku3" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=80 y=-600]
+[wait time=1]
 ;一部桜は縮小
 [keyframe name="animation"]
 [frame p=100% scale=-0.7]
