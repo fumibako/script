@@ -107,7 +107,7 @@
 [mtext text="フリー素材*ヒバナ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color=snow  wait=true]
 
 
-[mtext text="背景3" layer=27 size=&fs x="&tf.left_x" y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext text="背景3" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="deviantart-gimei 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="snow" wait=false]
 [mtext text="素材工房まさん房 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="snow" wait=false]
 ;サイズ15
@@ -123,13 +123,13 @@
 
 
 [mtext text="BGM" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext text="おとわび 様" layer=27 size=&fs x="&tf.left_x" y=&tf.top_y2 color="snow" wait=true]
+[mtext text="おとわび 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="snow" wait=true]
 
 
 
 
-[mtext text="効果音" layer=27 size=18 x=&tf.left_x y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext text="効果音ラボ 様" layer=27 size=18 x=&tf.left_x y=&tf.top_y2 color=snow  wait=false]
+[mtext text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color="snow" in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext text="効果音ラボ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color=snow  wait=false]
 [mtext text="フリー効果音"　On-Jin ～音人～ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color="snow" wait=false]
 [mtext text="効果ON 様" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y3 color="snow" wait=true]
 
@@ -145,17 +145,17 @@
 　
 
 [mtext text="キャラクターグラフィック" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=snow in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext text="かいこ" layer=27 size=18 x="&tf.left_x" y=&tf.top_y2 color=snow wait=true ]
+[mtext text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=snow wait=true ]
 
 
 [mtext text="シナリオ" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=snow in_effect="fadeIn" out_effect="fadeOut" wait=false]
 ;サイズ14
-[mtext text="◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo、◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs1 x="&tf.left_x" y=&tf.top_y2 color=snow wait=true ]
+[mtext text="◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo、◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs1 x="&tf.left_x" y=&tf.top_y2 color=snow wait=true]
 ;全シナリオのクレジット？　テストですが
 
 
 [mtext text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=snow in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext text="◆8EASfQr/2Q(吉里吉里Ver.システム原案)、◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=snow wait=true ]
+[mtext text="◆8EASfQr/2Q(吉里吉里Ver.システム原案)、◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=snow wait=true]
 
 
 [mtext text="＊　Special Thanks　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=snow in_effect="fadeIn" out_effect="fadeOut" wait=false]
