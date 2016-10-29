@@ -26,7 +26,7 @@
 [endkeyframe]
 ;縮小実行
 [kanim name="saku1" keyframe="animation" time="0"]
-[wa]
+;[wa]とまるので×
 ;アニメーション
 [keyframe name="animation1"]
 [frame p=0% y="0" x="0" opacity="1"]
