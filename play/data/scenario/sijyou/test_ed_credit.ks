@@ -79,9 +79,11 @@
 [endif]
 ;音楽はなんでも
 
+[image name=omoide storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=460 height=290 time=1000 x=200 y=100]
 
 [mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 
+$('.omoide1').remove(500);
 
 [mtext text="スクリプト関係" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 
@@ -118,36 +120,51 @@
 
 [mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 [mtext text="flickr :Mike Petrucci 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
-[mtext text="ビバ！江戸 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc"  wait=false]
-[mtext text="フリー素材*ヒバナ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc"  wait=false]
+[mtext text="ビバ！江戸 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext text="フリー素材*ヒバナ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
 [mtext text="deviantart-gimei 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
 [mtext text="素材工房まさん房 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
 ;サイズ
 [mtext text="pixiv : mit81 様, アスカ 様, ポテ子 様" layer=27 size=&tf.fs2 x="&tf.left_x" y=&tf.top_y7 color=&tf.fc wait=true]
 ;最後wait=true
 
-[wait time=500]
+[wait time=400]
+;四条で使った背景素材メモ
+
+[mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext text="meiji_photo 明治村画像庫 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+;meiji_photo 明治村画像庫　病院ほか
+[mtext text="PHOTO STOCKER" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+;PHOTO STOCKER 花火大
+[mtext text="flickr :Jeremy Hal 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+;銀座反物お店
+[mtext text="flickr :Ryosuke Yagi" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+;Ryosuke Yagi　波ケ浦
+[mtext text="flickr :syasara" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
+;syasara　波ケ浦(激)
+;最後wait=true
+
+[mtext text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext text="flickr :Furbychan" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
+;Furbychan　夕焼け
+[mtext text="flickr :heniha" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=true]
+;heniha　線香花火
+;最後wait=true
+;[wait time=400]
+
 
 
 [mtext text="フォント" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="衡山毛筆フォント-青二書道教室 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
 [mtext text="M+ FONTS 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
 
-　
-
-
 [mtext text="BGM" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="おとわび 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
-
-
-
 
 [mtext text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="効果音ラボ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc  wait=false]
 [mtext text="フリー効果音　On-Jin ～音人～ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext text="効果ON 様" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=true]
-
-
 
 [mtext text="cssスクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext text="coliss 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
