@@ -89,7 +89,7 @@
 [image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 ;画像の周囲をぼかします
 [iscript]
-$('.omoide1').css('-webkit-box-shadow','inset -60px 0px 100px','#fff');
+$('.omoide1').css('-webkit-box-shadow','inset -60px 0px 200px','#fff');
 [endscript]
 ;http://webrocketsmagazine.com/entry/20120224/css3-image-effects.html
 ;http://stackoverflow.com/questions/14294721/css-box-shadow-in-jquery-css
