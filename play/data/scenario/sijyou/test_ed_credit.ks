@@ -84,13 +84,14 @@
 [endif]
 ;音楽はなんでも
 ;画像の周囲をぼかします
-[iscript]
-$('.omoide1').css('-webkit-box-shadow','80px 0 200px','#fff');
-[endscript]
-;http://webrocketsmagazine.com/entry/20120224/css3-image-effects.html
+
 
 ;if exp="tf.end==sijyou"　などで変更してください
 [image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[iscript]
+$('.omoide1').css('-webkit-box-shadow','80px 0px 200px','#fff');
+[endscript]
+;http://webrocketsmagazine.com/entry/20120224/css3-image-effects.html
 
 [mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 ;フェードアウトして消します
