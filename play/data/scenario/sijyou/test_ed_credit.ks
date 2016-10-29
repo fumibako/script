@@ -79,12 +79,12 @@
 [endif]
 ;音楽はなんでも
 
-[image name=omoide storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=460 height=290 time=1000 x=200 y=100]
+[image name=omoide storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=360 height=190 time=1000 x=200 y=300]
 
 [mtext text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-
-$('.omoide1').remove(500);
-
+[iscript]
+$('.omoide1').remove(1500);
+[endscript]
 [mtext text="スクリプト関係" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 
 [mtext text="keito-works 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
