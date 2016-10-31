@@ -40,11 +40,11 @@
 ;アニメーション
 [keyframe name="animation1"]
 [frame p=0% y="0" x="0" opacity="1"]
-[frame p=100% y="590" x=-200 opacity="0"]
+[frame p=100% y="600" x=-200 opacity="0"]
 [endkeyframe]
 [keyframe name="animation2"]
 [frame p=0% y="0" x="0" opacity="1"]
-[frame p=100% y="500" rotateY=300　opacity="0"]
+[frame p=100% y="500" rotateY="360deg"　opacity="0"]
 [endkeyframe]
 [keyframe name="animation3"]
 [frame p=0% y="0" x="0" opacity="1"]
