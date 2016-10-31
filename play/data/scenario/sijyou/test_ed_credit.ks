@@ -122,7 +122,7 @@ $('.omoide1').remove();
 ;}
 ;[endscript]
 
-[freeimage layer=27 time=1000]
+[freeimage layer=27 time=5]
 [layopt layer=27 visible=true]
 
 
@@ -134,7 +134,7 @@ $('.omoide1').remove();
 [wait time=1]
 
 ;スキップ時にwikiだけ残るのを防止
-[freeimage layer=27 time=1000]
+[freeimage layer=27 time=10]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -146,7 +146,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27 time=5]
 [layopt layer=27 visible=true]
 
 ;if exp="tf.end==sijyou"　などで変更してください
@@ -198,7 +198,7 @@ $('.omoide1').remove();
 [wait time=400]
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=1000]
+[freeimage layer=27 time=10]
 [layopt layer=27 visible=true]
 
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
@@ -258,7 +258,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=1000]
+[freeimage layer=27 time=10]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -347,7 +347,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時にwikiだけ残るのを防止
-[freeimage layer=27 time=1000]
+[freeimage layer=27 time=10]
 [layopt layer=27 visible=true]
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
@@ -366,6 +366,7 @@ $('.omoide1').remove();
 
 [freeimage layer=27 time=1000]
 ;表示
+[chara_mod name="bg" storage="bg/bg_tegami_konyakusha.jpg"]
 [kanim keyframe="opcy" name="omoide1" time=10]
 
 @jump storage="test_sijyou.ks"
