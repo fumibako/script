@@ -86,7 +86,8 @@
 
 [if exp="tf.test_sijyou==true"]
 [mtext text="テストです。クリックしてください" layer=27 size=18 x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-[l]
+[p]
+;通常はここで鳴らさずEDから続けてください　スマホでクリック待ちしなければいけないので
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜（normal/goodED用)
 [playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
@@ -367,8 +368,9 @@ $('.omoide1').remove();
 [fadeoutbgm time=3000]
 
 [freeimage layer=27]
+;白暗転がいいとはおもう　とりあえず暗転
+[chara_mod name="bg" storage="toumei.gif"]
 ;表示
-[chara_mod name="bg" storage="bg/bg_tegami_konyakusha.jpg"]
 [kanim keyframe="opcy" name="omoide1" time=10]
 
 @jump storage="test_sijyou.ks"
