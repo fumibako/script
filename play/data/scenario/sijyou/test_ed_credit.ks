@@ -101,19 +101,8 @@
 
 
 [mtext name=cc text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-;最後wait=true
-
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+[freeimage layer=27 time=1000]
+[layopt layer=27 visible=true]
 
 ;フェードアウトして消します
 ;透明化
