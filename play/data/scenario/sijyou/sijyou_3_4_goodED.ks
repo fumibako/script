@@ -53,7 +53,7 @@
 ;アニメーション実行
 [kanim name="saku1" keyframe="animation1" delay="0.5s" time="10000" count="infinite"]
 [kanim name="saku2" keyframe="animation2" delay="1.0s" time="9000" count="infinite"]
-[kanim name="saku3" keyframe="animation3" delay="0.5s" time="8000"  count="infinite"]
+[kanim name="saku3" keyframe="animation3" delay="0.4s" time="8000"  count="infinite"]
 
 #
 四条家 と、[名字]家 の結納儀式がつつがなく終わり、親戚一同から祝福の声がかかる。[p]
