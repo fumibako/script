@@ -28,52 +28,73 @@
 ;主人公　お稽古中の部屋
 
 *start
-[主人公通常]
 [主人公ポーズ通常]
+[主人公通常]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
 [whosay name=華道の先生 color=%mp.color]
 「[名前]さん。 自由花の造形表現も充分に習得なされたようですね」[p]
 ;【背景】主人公邸 お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
 ;堂に入ったようですね？
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとうございます」[p]
 ;(照れる主人公)謙遜すると失礼になるかな
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;[主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;[主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+「ありがとうございます」[p]
 ;これも先生のおかげです。と言いたいが先生の呼び方が…有名な華道漫画でも読んでサラッと調べてみる
+[主人公目閉]
 [whosay name=華道の先生 color=%mp.color]
 「華道とは、心を磨くもの。[r]
 [sp][名前]さんが、上達したのも、きっと、どなたかに捧げたい思いがあるので[r]
 [sp]しょう」[p]
 ;盛り上げ役。
 ;(照れる主人公) セリフはなくていいかな
+[主人公照れ目普通]
 [whosay name=華道の先生 color=%mp.color]
-「[名前]さんは、聡明で、乾いた土が水を吸うように覚えが早く、私が教える[r]こと
-[sp]が少なくなってきたように感じます」[p]
+「[名前]さんは、聡明で、乾いた土が水を吸うように覚えが早く、私が教える[r]
+[sp]ことが少なくなってきたように感じます」[p]
 ;華道の先生なんで詩的かな
+[主人公通常]
 [whosay name=華道の先生 color=%mp.color]
 「そこで、[名前]さんに新しい学習の場として、私と共に実地演習に出てみま[r]
 [sp]せんか？」[p]
 ;(主人公、やや驚く)
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「！」[p]
+「！」
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[p]
 ;(主人公、身構えて尋ねる)
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……どのようなことをなさるのですか？」[p]
 ;【３】に決定します。ありがとうございます
 [whosay name=華道の先生 color=%mp.color]
 「難しいことではありません。[r]
 [sp]私と共に近所の華道教室で指導役を務めてほしいのです」[p]
+[主人公通常]
 [whosay name=華道の先生 color=%mp.color]
 「淑女を目指す小さな子女が集まる教室ですので、[名前]さんも親しみやすい[r]
 [sp]かと思います。 如何でしょうか？」[p]
 ;(主人公、了承する)
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わかりました。 お父様に了承を得た上でお手伝いしようかと思います」[p]
+[主人公目閉]
 ;他に良い言い回しは？
 ;〜〜シーン イベントのはじまりおわり〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
-
+[主人公退場]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 
@@ -82,22 +103,36 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[主人公ポーズ通常]
+[主人公目閉]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 #
 雲をすり抜ける、月影さやけき夜。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お父様からも了承を得られましたし、はりきって先生にも連絡してしまいまし[r]
 [sp]たが……)[p]
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (当日は著名な先生も来られます と、おっしゃってましたわ。[r]
 [sp]そんな方と私がご一緒に教えることなんて出来るのでしょうか？)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (こういう時は……やはり、華織様に相談しようかしら？)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ふぅ閉]
 (でも、届くまで時間がかかりますわよね)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公憂い]
 (誰かにお願いして、直接渡してもらいましょうか？)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ふぅ閉]
 (ダメですわ。急な手紙で、驚かせてしまうかもしれないわ)[p]
+;月背景
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……華織様にお会いしたい)[p]
 ;夢みるシーンで
@@ -105,6 +140,7 @@
 私の心に華織様の笑顔が浮かんだ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もし、私が助けてほしいと言ったら……あの方は……)[p]
+[主人公真剣]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ダメですわ、しっかりしなくては)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -125,15 +161,26 @@
 [chara_mod name="bg" storage="toumei.gif"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
-;横目恥じらい
+;主人公横目 頬染め
+[主人公ポーズ通常]
+[主人公横目]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ですが……)[p]
-;主人公横目 頬染め
+
 [whosay name=華道の先生 color=%mp.color]
 「はい、皆さん。今日は、素敵な先生と私の信愛なる教え子を紹介します」[p]
 ;子供がやがやSE
+[主人公目大]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(どうしましょう！ どうしてこうなったのかしら！？)[p]
+(どうしましょう！ 
+[主人公目閉]
+[主人公口ふぅ]
+どうしてこうなったのかしら！？)[p]
 ;目を閉じて恥ずかしく耐える？
 #
 私は、自身が大勢の人の前で挨拶をすることよりも、[r]
@@ -141,39 +188,66 @@
 [whosay name="華織" color="olivedrab"]
 「四条華織と申します。今日は一緒に楽しく学びましょう」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「[名字]……[名前]と申します。よろしくお願いします！」[p]
+[主人公驚]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+「[名字]……[名前]と申します。
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+よろしくお願いします！」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[主人公目閉じ]
 （どういったことでしょうか……）[p]
 #
-
 お会いする約束もしていないのに私は、華織様の隣に並んでいた。[p]
 ;主人公混乱
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
+[wait time=10]
 (そういえば、先生は、近所の……とおっしゃってましたし、[r]
 [sp]そう考えますと、そうなるのも……？？)[p]
 ;理由を考える主人公。伏線回収
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、頑張りましょうね」[p]
+[主人公驚]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様と一緒に……嬉しいわ……でも、緊張もしてしまいます)[p]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[主人公目閉じ]
+(華織様と一緒に……嬉しいわ……
+[主人公横伏目]
+でも、こんなところで一緒なんて[r]
+[sp]緊張してしまいますわ)[p]
 [whosay name=乙女子達 color=%mp.color]
 「あら……先生方、見つめ合って、もしかして、お手紙のお相手同士かしら？」[p]
 [whosay name=乙女子達 color=%mp.color]
+[主人公目閉じ]
+[主人公口ムッ]
 「ふふ、なんてお似合いなのでしょう！」[p]
-;褒めておく
 [whosay name=華道の先生 color=%mp.color]
+[主人公目大]
+[主人公口通常]
 「…… 皆さん、静粛に」[p]
 ;咳払い
 ;(主人公我に返る)
 [whosay name=華道の先生 color=%mp.color]
 「皆様、華道とは心を磨くものです。[r]
+[主人公眉下げ下]
+[主人公目伏]
 [sp]花の前でこそ、淑女として[ruby text=きん]謹[ruby text=げん]厳な態度でのぞみましょう」[p]
 [whosay name=華道の先生 color=%mp.color]
 「さて、今日は華道を始めるにあたって……」[p]
+[主人公通常]
 ;背景　和室　床の間のみ　つづき
-;〜〜シーン 先生の退場と主人公とキャラの立ち位置説明〜〜〜〜〜〜
+;〜〜シーン 先生の退場と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～ここまで
 ;女中？
 [whosay name=教室のお手伝い color=%mp.color]
 「先生！ 大変です！！」[p]
