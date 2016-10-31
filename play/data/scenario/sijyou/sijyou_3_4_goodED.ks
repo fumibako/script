@@ -4,22 +4,23 @@
 ;○四条家の挨拶
 ;[青空]桜のエフェクト？
 ;兄とその奥さんに見守られて結納(文字のみ)
-;【背景】青空に桜
+[chara_mod name="bg" storage="toumei.gif" time=100]
 ;桜の表示が遅いと見えない,処理不能の為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
-[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
-[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;【背景】青空に桜
+[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 [イベントシーン構築]
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=20 y=-600]
 [image name="saku2" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=60 y=-600 ]
 [image name="saku3" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=80 y=-600]
-[wait time=1]
+[wait time=10]
 ;桜は縮小 大きさをそれぞれ違うものに
 [keyframe name="ani1"]
 [frame p=100% scale=-0.4]
@@ -34,6 +35,7 @@
 [kanim name="saku1" keyframe="ani1" time="0"]
 [kanim name="saku2" keyframe="ani2" time="0"]
 [kanim name="saku3" keyframe="ani3" time="0"]
+[wait time=1]
 ;[wa]とまるので×
 ;アニメーション
 [keyframe name="animation1"]
