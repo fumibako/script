@@ -163,6 +163,7 @@
 [イベントシーン構築]
 ;主人公横目 頬染め
 [主人公ポーズ通常]
+[主人公通常]
 [主人公横目]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
