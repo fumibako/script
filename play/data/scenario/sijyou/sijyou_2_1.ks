@@ -1,3 +1,13 @@
+*test
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築]
 ;【華道習いイベント】
 ; 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
 ;子女で少女 乙女子
@@ -16,7 +26,10 @@
 ;キーワード１　自然な姿のままで　そのままで　個性　いびつ　昔とは違う恋人という関係
 ;キーワード２　誰かを喜ばせたい　初心に帰って
 ;主人公　お稽古中の部屋
-;〜〜シーン イベントのはじまり〜〜〜
+
+*start
+
+;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
 [whosay name=華道の先生 color=%mp.color]
 「[名前]さん。 自由花の造形表現も充分に習得なされたようですね」[p]
 ;堂に入ったようですね？
@@ -52,12 +65,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わかりました。お父様に了承を得た上でお手伝いしようかと思います」[p]
 ;他に良い言い回しは？
-;〜〜シーン イベントのはじまりおわり〜〜〜
+;〜〜シーン イベントのはじまりおわり〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 
 ;暗転
 
 ;夜、主人公部屋　考える
-;〜〜〜シーン 急降下心情 楽しみの前の降下〜〜〜〜
+;〜〜〜シーン 急降下心情 楽しみの前の降下〜〜〜〜〜〜〜〜〜〜〜〜〜
 #
 雲をすり抜ける、月影さやけき夜。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -88,7 +101,7 @@
 ;暗点
 
 ;背景　和室　床の間のみ
-;〜〜〜 シーン急上昇する心情〜〜〜
+;〜〜〜〜〜〜〜〜シーン急上昇する心情〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 ーー 後日。
 淑女を目指す乙女子(おとめご)達が、母親や家令達に連れられ華道教室にやってきた。
 そんな中、私は先生とともに淑女を目指す乙女達の指導を勤めることとなった。[p]
@@ -140,7 +153,7 @@
 
 ;背景　和室　床の間のみ　つづき
 
-;〜〜シーン 先生の退場と主人公とキャラの立ち位置説明 (テンション →↑)〜〜〜
+;〜〜シーン 先生の退場と主人公とキャラの立ち位置説明〜〜〜〜〜〜
 ;女中？
 [whosay name=教室のお手伝いさん color=%mp.color]
 「先生！大変です！！」[p]
@@ -549,3 +562,70 @@
 ;キャラ説明
 
 ；なかなか磯野とお父様の会話をしてくれない二人
+;@jump storage=sijyou/sijyou_2_1b.ks
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+[return]
