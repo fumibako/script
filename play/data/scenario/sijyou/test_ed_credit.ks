@@ -101,6 +101,20 @@
 
 
 [mtext name=cc text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+;最後wait=true
+
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
+[iscript]
+if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
+//alert("テスト！スキップ中です");
+tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
+//$('.cc').empty();
+//[freeimage layer=27]
+tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
+//[layopt layer=27 visible=true]
+}
+[endscript]
+
 ;フェードアウトして消します
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
@@ -109,7 +123,7 @@
 $('.omoide1').remove();
 [endscript]
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -128,7 +142,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="アオイサクラ 様： 簡易コンフィグ画面プラグイン" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext name=cc text="ティラノスクリプト 製作テクニックwiki 様" layer=&tf.fs size=18 x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  in_effect="fadeIn" out_effect="fadeOut" wait=true]
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -148,7 +162,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="flickr : Eddy BERTHIER 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -174,7 +188,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="Omar + Kazumi Ovalle 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc  wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -201,7 +215,7 @@ $('.omoide1').remove();
 [mtext name=cc text="flickr :Barn Images 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc time=500 wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -224,7 +238,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 ;最後wait=true
 [wait time=400]
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -283,7 +297,7 @@ $('.omoide1').remove();
 ;最後wait=true
 ;[wait time=400]
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -300,7 +314,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="M+ FONTS 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -316,7 +330,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="おとわび 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -334,7 +348,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="効果ON 様" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -350,7 +364,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="coliss 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -377,7 +391,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -394,7 +408,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -410,7 +424,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -427,7 +441,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 ;全シナリオのクレジット？　テストですが
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -443,7 +457,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="◆8EASfQr/2Q(吉里吉里Ver.システム原案)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -459,7 +473,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -477,7 +491,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y4 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
+;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
 //alert("テスト！スキップ中です");
@@ -498,10 +512,12 @@ $('.omoide1').remove();
 
 ;終了用の画像が必要です　終了言葉は適当です　変更してください
 [mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[wait time=500]
+[wait time=1000]
+[fadeoutbgm time=3000]
+
 [freeimage layer=27]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
-[stopbgm]
+
 @jump storage="test_sijyou.ks"
 [s]
