@@ -101,8 +101,6 @@
 
 
 [mtext name=cc text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-[freeimage layer=27 time=1000]
-[layopt layer=27 visible=true]
 
 ;フェードアウトして消します
 ;透明化
@@ -113,16 +111,19 @@ $('.omoide1').remove();
 [endscript]
 
 ;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+ ;[iscript]
+;if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
+;//alert("テスト！スキップ中です");
+;tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
+;//$('.cc').empty();
+;//[freeimage layer=27]
+;tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
+;//[layopt layer=27 visible=true]
+;}
+;[endscript]
+
+[freeimage layer=27 time=1000]
+[layopt layer=27 visible=true]
 
 
 [mtext text="スクリプト関係" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -131,18 +132,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="アオイサクラ 様： 簡易コンフィグ画面プラグイン" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext name="cc,cc1" text="ティラノスクリプト 製作テクニックwiki 様" layer=&tf.fs size=18 x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [wait time=1]
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-$('.cc1').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+
 ;スキップ時にwikiだけ残るのを防止
 [freeimage layer=27 time=1000]
 [layopt layer=27 visible=true]
@@ -155,17 +145,9 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="flickr : Eddy BERTHIER 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 ;if exp="tf.end==sijyou"　などで変更してください
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -181,17 +163,9 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="Omar + Kazumi Ovalle 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc  wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
@@ -208,17 +182,9 @@ $('.omoide1').remove();
 [mtext name=cc text="flickr :Barn Images 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc time=500 wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 [mtext name=cc text="flickr :Mike Petrucci 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
@@ -231,17 +197,9 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 ;最後wait=true
 [wait time=400]
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=1000]
+[layopt layer=27 visible=true]
 
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -261,17 +219,9 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 ;syasara　波ケ浦(激)
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
@@ -290,50 +240,26 @@ $('.omoide1').remove();
 ;最後wait=true
 ;[wait time=400]
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="フォント" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="衡山毛筆フォント-青二書道教室 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
 [mtext name=cc text="M+ FONTS 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="BGM" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="おとわび 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=1000]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="効果音ラボ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc  wait=false]
@@ -341,33 +267,17 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="効果ON 様" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="cssスクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="coliss 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
 [image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -384,99 +294,51 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 ;ここではキャラ画像ないと背景画像と勘違いされそうですね
 [mtext name=cc text="キャラクターグラフィック" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]]
 
 [mtext name=cc text="シナリオ" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="シナリオ" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;全シナリオのクレジット？　テストですが
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="◆8EASfQr/2Q(吉里吉里Ver.システム原案)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
+;スキップ時に残るのを防止
+[freeimage layer=27 time=10]
+[layopt layer=27 visible=true]
 
 [mtext name=cc text="＊　Special Thanks　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc wait=false]
@@ -484,17 +346,6 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y4 color=&tf.fc wait=true]
 ;最後wait=true
 
-;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
-[iscript]
-if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
-//alert("テスト！スキップ中です");
-tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
-//$('.cc').empty();
-//[freeimage layer=27]
-tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
-//[layopt layer=27 visible=true]
-}
-[endscript]
 ;スキップ時にwikiだけ残るのを防止
 [freeimage layer=27 time=1000]
 [layopt layer=27 visible=true]
@@ -505,12 +356,15 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 $('.omoide1').remove();
 [endscript]
 
+;処理落ち防止
+[skipstop]
+
 ;終了用の画像が必要です　終了言葉は適当です　変更してください
 [mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
-[wait time=1000]
+[wait time=2000]
 [fadeoutbgm time=3000]
 
-[freeimage layer=27]
+[freeimage layer=27 time=1000]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
 
