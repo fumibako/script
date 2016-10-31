@@ -112,6 +112,7 @@ $('.omoide1').remove();
 ;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理ああれば追加
 [iscript]
 if(this.kag.stat.is_skip==true){
+alert("テスト！スキップ中です");
 tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
 //$('.cc').empty();
 //[freeimage layer=27]
