@@ -238,31 +238,7 @@
 ;なんとかCDを研究した結果がコレです
 [whosay name="華織" color="olivedrab"]
 「結納前に名前さん以外の女性(ヒト)と一緒に何かをするなんて、不誠実な気がして……」[p]
-;[暗転]
-#
-[chara_mod name="bg" storage="toumei.gif"]
-;///////////////////////////////////////////////////////
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
-;背景変更:和紙風 桜色
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
-[eval exp="f.haikei_credit=''"]
-[link target=*正規ルート]華織様の言葉に嬉しくなってしまった。[endlink][r][r][r][r]
-[link target*嬉しい]華織様の言葉に慌ててしまった。[endlink][s]
-;///////////////////////////////////////////////////////
-
-*正規ルート
-[cm]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-;メッセージレイヤサイズを会話窓用に戻す
-[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 visible=true
-[current layer="message0"]
-#
-私は華織様の言葉に慌ててしまった。[p]
+;私は華織様の言葉に慌ててしまった。[p]
 ;主人公驚
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そ、そんなことないです！ 気になさらないで下さい」[p]
@@ -276,37 +252,20 @@
 (ですけど……私が断った場合を考えてしまうと……)[p]
 ;主人公ふぅ閉
 #
-ほぼ手紙でしか会えない分、華織様の隣で笑っている同い年の淑女を想像した途端、胸に嫌な気持ちが過ぎてしまった。[p]
+ほぼ手紙でしか会えない分、華織様の隣で笑っている同い年の淑女を想像した途端、
+胸に嫌な気持ちが過ぎてしまった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (人を好きになるって、自身の気持ちさえも、思い通りにいかなくて大変……)[p]
 ;ちょっと前半聞いてなかった主人公↓
 [whosay name="華織" color="olivedrab"]
-「……せっかくの機会だったから、名前さんと一緒に生け花をしてみたかったのです」[p]
+「さすがに考えすぎですよね。[r]
+[sp]けど、せっかくの機会だったから、名前さんと一緒に生け花をしてみたかったのです」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「え……？」[p]
 ;照れ困り微笑み
 [whosay name="華織" color="olivedrab"]
 「いえ。『今日だけの特別』と言っただけです」[p]
 ;華織、ちゃんと仕事やってくれるわけ？のお言葉対策
-@jump target=共通1
-
-*嬉しい
-[cm]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-;メッセージレイヤサイズを会話窓用に戻す
-[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 visible=true
-[current layer="message0"]
-#
-私は、華織様の言葉に嬉しくなってしまった。[p]
-[whosay name="華織" color="olivedrab"]
-「さすがに考えすぎですよね。
-けど、せっかくの機会だったから、名前さんと一緒に生け花をしてみたかったのです」[p]
-;(喜び照れる主人公)
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様……)[p]
-;どちらの気持ちにも対応？
 ;〜〜シーン 先生の退場と主人公の立ち位置説明おわり〜〜〜
 
 *共通1
