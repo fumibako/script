@@ -130,7 +130,7 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 [mtext name=cc text="keito-works 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
 [mtext name=cc text="アオイサクラ 様： 簡易コンフィグ画面プラグイン" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext name=cc text="ティラノスクリプト 製作テクニックwiki 様" layer=&tf.fs size=18 x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  in_effect="fadeIn" out_effect="fadeOut" wait=true]
-
+[wait time=1]
 ;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
 [iscript]
 if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
@@ -491,7 +491,9 @@ tyrano.plugin.kag.ftag.startTag("layopt", {layer:"27",visible:"true"});
 //[layopt layer=27 visible=true]
 }
 [endscript]
-
+;スキップ時にwikiだけ残るのを防止
+[freeimage layer=27 time=1000]
+[layopt layer=27 visible=true]
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
 ;フェードアウトして消します
@@ -500,7 +502,7 @@ $('.omoide1').remove();
 [endscript]
 
 ;終了用の画像が必要です　終了言葉は適当です　変更してください
-[mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [wait time=1000]
 [fadeoutbgm time=3000]
 
