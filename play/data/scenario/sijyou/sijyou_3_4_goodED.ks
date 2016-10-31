@@ -20,12 +20,20 @@
 [image name="saku2" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=60 y=-600 ]
 [image name="saku3" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=80 y=-600]
 [wait time=1]
-;一部桜は縮小
-[keyframe name="animation"]
+;桜は縮小 大きさをそれぞれ違うものに
+[keyframe name="ani1"]
+[frame p=100% scale=-0.4]
+[endkeyframe]
+[keyframe name="ani2"]
 [frame p=100% scale=-0.7]
 [endkeyframe]
+[keyframe name="ani3"]
+[frame p=100% scale=-0.8]
+[endkeyframe]
 ;縮小実行
-[kanim name="saku1" keyframe="animation" time="0"]
+[kanim name="saku1" keyframe="ani1" time="0"]
+[kanim name="saku2" keyframe="ani2" time="0"]
+[kanim name="saku3" keyframe="ani3" time="0"]
 ;[wa]とまるので×
 ;アニメーション
 [keyframe name="animation1"]
