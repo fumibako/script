@@ -29,9 +29,14 @@
 
 *start
 [主人公通常]
+[主人公ポーズ通常]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
 [whosay name=華道の先生 color=%mp.color]
 「[名前]さん。 自由花の造形表現も充分に習得なされたようですね」[p]
+;【背景】主人公邸 お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
 ;堂に入ったようですね？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとうございます」[p]
@@ -69,10 +74,15 @@
 ;他に良い言い回しは？
 ;〜〜シーン イベントのはじまりおわり〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 
-;暗転
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 
 ;夜、主人公部屋　考える
 ;〜〜〜シーン 急降下心情 楽しみの前の降下〜〜〜〜〜〜〜〜〜〜〜〜〜
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[主人公憂い]
 #
 雲をすり抜ける、月影さやけき夜。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -102,6 +112,7 @@
 (こういう時こそ、華織様の為に淑女として尽力しなければ)[p]
 
 ;暗点
+[chara_mod name="bg" storage="toumei.gif"]
 
 ;背景　和室　床の間のみ
 ;〜〜〜〜〜〜〜〜シーン急上昇する心情〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
