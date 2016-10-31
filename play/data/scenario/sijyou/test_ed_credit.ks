@@ -122,7 +122,7 @@ $('.omoide1').remove();
 ;}
 ;[endscript]
 
-[freeimage layer=27 time=1]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 
@@ -358,8 +358,8 @@ $('.omoide1').remove();
 
 ;処理落ち防止
 [skipstop]
-;終了文字の位置を変更
-[eval exp="tf.top_y1=tf.left_yx1+200"]
+;終了文字のx位置を変更
+[eval exp="tf.left_x=tf.left_x+200"]
 
 ;終了用の画像が必要です　終了言葉は適当です　変更してください
 [mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
