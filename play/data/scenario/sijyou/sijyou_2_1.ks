@@ -101,7 +101,7 @@
 ;夜、主人公部屋　考える
 ;〜〜〜シーン 急降下心情 楽しみの前の降下〜〜〜〜〜〜〜〜〜〜〜〜〜
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公目閉]
@@ -164,6 +164,8 @@
 ;主人公横目 頬染め
 [主人公ポーズ通常]
 [主人公通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
 [主人公横目]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -172,7 +174,9 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ですが……)[p]
-
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 [whosay name=華道の先生 color=%mp.color]
 「はい、皆さん。今日は、素敵な先生と私の信愛なる教え子を紹介します」[p]
 ;子供がやがやSE
