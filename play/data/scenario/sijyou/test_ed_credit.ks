@@ -122,7 +122,7 @@ $('.omoide1').remove();
 ;}
 ;[endscript]
 
-[freeimage layer=27 time=5]
+[freeimage layer=27 time=1]
 [layopt layer=27 visible=true]
 
 
@@ -134,7 +134,7 @@ $('.omoide1').remove();
 [wait time=1]
 
 ;スキップ時にwikiだけ残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -146,7 +146,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=5]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 ;if exp="tf.end==sijyou"　などで変更してください
@@ -164,7 +164,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 ;透明化
@@ -183,7 +183,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
@@ -198,7 +198,7 @@ $('.omoide1').remove();
 [wait time=400]
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
@@ -220,7 +220,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 ;透明化
@@ -241,7 +241,7 @@ $('.omoide1').remove();
 ;[wait time=400]
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="フォント" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -250,7 +250,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="BGM" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -258,7 +258,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -268,7 +268,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="cssスクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -276,7 +276,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 ;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
@@ -295,7 +295,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 ;ここではキャラ画像ないと背景画像と勘違いされそうですね
@@ -304,7 +304,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]]
 
 [mtext name=cc text="シナリオ" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -312,7 +312,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="シナリオ" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -321,7 +321,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -329,7 +329,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -337,7 +337,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時に残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="＊　Special Thanks　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
@@ -347,7 +347,7 @@ $('.omoide1').remove();
 ;最後wait=true
 
 ;スキップ時にwikiだけ残るのを防止
-[freeimage layer=27 time=10]
+[freeimage layer=27]
 [layopt layer=27 visible=true]
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
@@ -358,13 +358,15 @@ $('.omoide1').remove();
 
 ;処理落ち防止
 [skipstop]
+;終了文字の位置を変更
+[eval exp="tf.top_y1=tf.left_yx1+200"]
 
 ;終了用の画像が必要です　終了言葉は適当です　変更してください
 [mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [wait time=2000]
 [fadeoutbgm time=3000]
 
-[freeimage layer=27 time=1000]
+[freeimage layer=27]
 ;表示
 [chara_mod name="bg" storage="bg/bg_tegami_konyakusha.jpg"]
 [kanim keyframe="opcy" name="omoide1" time=10]
