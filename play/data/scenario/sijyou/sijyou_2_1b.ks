@@ -9,6 +9,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
+テストページからはじめます[p]
 [endif]
 
 *start
