@@ -46,8 +46,8 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test11_1b" text="11月1～3週:2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test1_1" text="1月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test1_3" text="2月華道習い(未)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-
+[glink target="test2_1" text="2月1週華道習" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test2_1b" text="2月1週華道習" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
@@ -69,7 +69,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_sansaku7" text="散策7" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="test_sansaku8" text="散策8" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
 
-[glink target="test_credit" text="仮credit" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test_credit" text="仮credit" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=pink]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 
 [glink target="test_page1" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
@@ -172,6 +172,18 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [cm]
 [freeimage layer = 26]
 @jump storage="sijyou/sijyou_1_3_normalED.ks"
+[s]
+
+*test2_1
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_2_1.ks"
+[s]
+
+*test2_1b
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_2_1b.ks"
 [s]
 
 *test3_1
