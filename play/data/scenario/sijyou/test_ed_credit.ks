@@ -107,6 +107,14 @@
 $('.omoide1').remove();
 [endscript]
 
+;キーを押したときだけスキップ処理に対してfreeimage layer=27
+[if exp="TG.kag.stat.is_skip == true"]
+;tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"})
+[freeimage layer=27]
+[layopt layer=27 visible=true]
+[endif]
+;とりまシンプルに
+
 [mtext text="スクリプト関係" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 
 [mtext text="keito-works 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
