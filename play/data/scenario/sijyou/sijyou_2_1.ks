@@ -13,7 +13,11 @@
 [link target=start]【１】しない[endlink][r]
 [r]
 [link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink]
+[link target=sijyou_b]【３】お手伝いさん登場[endlink]
 [s]
+*sijyou_b
+[四条ベース羽織]
+@jump target=sijyou_1_1
 [endif]
 ;【華道習いイベント】
 ; 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
@@ -268,6 +272,7 @@
 「さて、今日は華道を始めるにあたって……」[p]
 [主人公通常]
 ;〜〜シーン 先生の退場と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～ここまで
+*sijyou_1_1
 ;女中？
 [whosay name=教室のお手伝い color=%mp.color]
 [四条通常]
@@ -291,6 +296,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 （どうしたのかしら……？）[p]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 [whosay name=教室のお手伝い color=%mp.color]
 「申し訳ございません。[r]
 [sp]今日の丸美屋お嬢様のお稽古の担当は別の方でとお願いしたのですが……」[p]
@@ -298,9 +306,6 @@
 「わかりました。[r]
 [sp]やはり、あの家の方々は、予定を聞き受けてくれないのですね……」[p]
 ;今日は一緒に来ていただける方を頼んでおいてよかったわ」[p]
-;[四条眉困り]
-[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
-[wait time=10]
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「どうかされましたか？」[p]
