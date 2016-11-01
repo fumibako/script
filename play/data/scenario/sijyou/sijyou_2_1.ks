@@ -11,9 +11,9 @@
 [if exp="tf.test_sijyou==true"]
 【！】テストページからはじめます。シーンスキップをしますか[p]
 [link target=start]【１】しない[endlink][r]
-[r]
-[link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink]
-[link target=sijyou_b]【３】お手伝いさん登場[endlink]
+[link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink][r]
+[link target=sijyou_b]【３】お手伝いさん登場[endlink][r]
+[link target=sijyou_2]【４】授業再開[endlink]
 [s]
 *sijyou_b
 [cm]
@@ -391,6 +391,7 @@
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そ、そんなことないです！ 気になさらないで下さい。[r]
+[主人公口ほほえみ]
 [sp]私も、ご一緒できて嬉しいです」[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん？」[p]
@@ -420,13 +421,14 @@
 (人を好きになるって、自身の気持ちさえも、思い通りにいかなくて……)[p]
 ;ラストにつながる言葉
 [主人公退場]
+
+
 ;〜〜シーン 先生の退場と主人公の立ち位置説明おわり〜〜〜
 *sijyou_2
-
 ;〜〜シーン キャラと造作1 (軽度)後に繋ぐもの(テンション↓)〜〜〜
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
-[主人公通常ポース]
+[主人公ポーズ通常]
 [主人公通常]
 [四条ベース羽織]
 [四条通常]
