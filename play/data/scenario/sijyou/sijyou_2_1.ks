@@ -351,6 +351,8 @@
 [主人公憂い]
 [whosay name=華道の先生 color=%mp.color]
 「くれぐれも四条様のお顔を汚さないようにお願いします」[p]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
 「は、はい……！」[p]
