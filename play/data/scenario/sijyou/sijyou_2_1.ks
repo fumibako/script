@@ -2,14 +2,22 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
+;【華道習いイベント】
+; 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
+;子女で少女 乙女子(小さな少女)　士女で淑女
+;その他登場人物 華道の先生 乙女子 その壱 (丸美屋) 乙女子 その弐 湖池屋男爵令嬢
+;あらすじ
+;華道の熟練があがり新しいことを始める主人公。そこで嬉しい人物「華織」と出逢う。
+;外に出て家族以外の人物と華織との交流や、花に対する真摯な華織をみて、主人公は、懐かしい感情と新しい感情を抱く。
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;透過→拡大→表示します
 [keyframe name="scale1"]
 [frame p=0% opacity=0]
-[frame p=50% scale="1.3"]
+[frame p=50% scale="1.2"]
 [frame p=100% opacity=1]
 [endkeyframe]
 [keyframe name="no_scale1"]
@@ -24,31 +32,21 @@
 [link target=start]【１】しない[endlink][r]
 [link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink][r]
 [link target=sijyou_b]【３】シーン廊下[endlink][r]
-[link target=sijyou_2]【４】授業再開[endlink]
-[link target=sijyou_3]【４】授業再開２[endlink]
+[link target=sijyou_2]【４】授業再開[endlink][r]
+[link target=sijyou_3]【５】授業再開２[endlink]　[link target=*p]次へ[endlink]
+[s]
+*p
+[er]
+[link target=sijyou_4]【６】休憩１[endlink]
+[link target=sijyou_5]【７】授業再開２[endlink]
 [s]
 *sijyou_b
 [cm]
 [四条ベース羽織]
 @jump target=sijyou_1_1
 [endif]
-;【華道習いイベント】
-; 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
-;子女で少女 乙女子(小さな少女)
-;士女で淑女
-;登場人物
-;[whosay name= 華道の先生  color=%mp.color]
-;[whosay name=乙女子　その壱 color=%mp.color](丸美屋)
-;[whosay name=乙女子　その弐 color=%mp.color]
-;[whosay name=湖池屋男爵令嬢 color=%mp.color]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;[whosay name="華織" color="olivedrab"]
-;あらすじ
-;華道の熟練があがり新しいことを始める主人公。そこで嬉しい人物「華織」と出逢う。
-;外に出て家族以外の人物と華織との交流や、花に対する真摯な華織をみて
-;主人公は、懐かしい感情と新しい感情を抱く。
-;キーワード１　自然な姿のままで　そのままで　個性　いびつ　昔とは違う恋人という関係
-;キーワード２　誰かを喜ばせたい　初心に帰って
+
+
 
 *start
 [cm]
@@ -443,6 +441,7 @@
 
 ;〜〜シーン 先生の退場と主人公の立ち位置説明おわり〜〜〜
 *sijyou_2
+[er]
 ;〜〜シーン キャラと造作1 (軽度)後に繋ぐもの(テンション↓)〜〜〜
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
@@ -576,6 +575,8 @@
 ;主人公微笑み 指 か 主人公横目 口微笑み 指
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そういえば、私も昔は、お兄様や華織様に褒められて嬉しかったですわね)[p]
+[主人公退場]
+
 ;戻す
 #
 [四条退場]
@@ -587,14 +588,22 @@
 [kanim keyframe="no_scale1" name="sijyou_kuti" time=0]
 [kanim keyframe="no_scale1" name="sijyou_emo" time=2000]
 [wa]
+;昼休みにしよう・・・
+*sijyou_4
+[er]
+#
+[主人公ポーズ通常]
+[主人公通常]
+私は、華織様と、なんとか午前中をしのぎきって、お昼休みを頂くこととなった。[p]
+;しのぎ・・・・
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 ;戻す
-
-[四条ベース羽織]
+[四条]
+[四条ベース着物]
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
-「……すみません、[名前]さん、急に出てあんな事を言ってしまって……」[p]
+「……すみません、[名前]さん。急に出てあんな事を言ってしまって……」[p]
 ;一応、謝っておこうか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ！  私も、励ましのお言葉に困っていたので助かりましたわ」[p]
@@ -619,44 +628,105 @@
 ;C会話へ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (昔の私……)[p]
-
+[四条退場]
+[主人公退場]
+[chara_mod name="bg" storage="toumei.gif"]
+;効果セピア
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
 ;背景　主人公部屋セピア
-;回想 困ったら回想シーン C会話
-;初めて作った生け花を兄と四条に見せたこと
-
+;～～～～～～～～回想 困ったら回想シーン C会話～～～～～～～～～
+#
+私は、初めて作った生け花を兄と華織お兄様に見せたこと思い出した。[p]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=幼い頃の私 color=%mp.color]
 「華織お兄さま！[r]
 [sp]せっかくの華道のはじめてが、こんな葉っぱでは面白くないですわ」[p]
-[whosay name="華織" color="olivedrab"]
+[whosay name="華織お兄様" color="olivedrab"]
 「[名前]ちゃん、このハランの葉をよく見てごらん。[r]
 [sp]なびきや形が美しいと思わないかい？」[p]
 ; ハランとは、スズラン亜科ハラン属の常緑多年草で、巨大な葉を地表に立てる植物である。
-[whosay name="華織" color="olivedrab"]
+[whosay name="華織お兄様" color="olivedrab"]
 「青々して、今を精一杯生きようとして、彼なりの個性もあるよ」[p]
 [whosay name=幼い頃の私 color=%mp.color]
 「個性？  華織お兄様、面白いこと言うのね」[p]
 ;小さい頃の主人公の性格が、あまりわからない
-[whosay name="華織" color="olivedrab"]
+[whosay name="華織お兄様" color="olivedrab"]
 「そ、そうかな？」[p]
 ;(文矢にも、よく言われるけれど……[名前]ちゃんにも言われしまうとは)なくてもいいか
 [whosay name=幼い頃の私 color=%mp.color]
 「でも、華織お兄様に言われてみたら、
 この葉っぱも可愛くみえてきたわ！
 それに緑の移り変わりが綺麗！」[p]
-[whosay name="華織" color="olivedrab"]
+[whosay name="華織お兄様" color="olivedrab"]
 「ありがとう。  うまく出来たら、文矢に見せに行こうね」[p]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+;効果セピア消し
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
+;背景　床の間のみ表示
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[四条ベース着物]
+[四条通常]
+[四条目閉じ]
+;四条考えてる
+[主人公ポーズ通常]
+[主人公通常]
+[主人公眉困り]
 ;思い出し→恥ずかしい 反省
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (あの頃は……)[p]
+[四条目大]
+[主人公ふぅ閉じ]
 (華織様に対して、少しばかり、無邪気でしたわ)[p]
+[四条微笑み]
+[whosay name="華織" color="olivedrab"]
+「お昼休みが終わったら、こちらの教本の 六頁から、はじめますね」[p]
+[主人公驚き]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい！」[p]
+[四条困り微笑み]
+;冷たいかも
+[whosay name="華織" color="olivedrab"]
+「すみません、授業に使用する花材が届く時間ですので、僕は先に失礼しますが、[r]
+[四条微笑み]
+[sp]名前さんは、ゆっくりしていてくださいね」[p]
+;「頼んでた花材が届く時間ですので、僕は先に失礼します」[p]
+[四条目閉じ]
+[四条退場]
+[主人公眉困り]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(華織様、お昼休みでも、授業のこと考えられてるのね。[r]
+[主人公真剣]
+[sp]私も集中しないと)[p]
+;(集中しないと)[p]
+;華族が働いている感じるな～
+[主人公退場]
 
+*sijyou_5
+[er]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;シーン急上昇まで流れ。楽しい時間を得る
 ;主人公、考え中に完成 それに気づくイメージ
 ;完成に喜ぶ児童達。
 [whosay name=乙女子 その弐 color=%mp.color]
 「できましたわ！」[p]
-[主人公驚]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[主人公ポーズ通常]
+[主人公通常]
+[四条ベース羽織]
+[四条通常]
 [whosay name=乙女子 その壱 color=%mp.color]
 「……私も出来ましたわ！」[p]
 [主人公ほほえみ]
