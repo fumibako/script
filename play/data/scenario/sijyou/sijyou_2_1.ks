@@ -861,23 +861,33 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;さばいた花は他のところに場所をあたえて生かしてみましょう　教本より
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+[主人公退場]
+[四条退場]
 
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+
+
+*sijyou_6
 ;[暗転] 暗転かつづくでもいい
 [chara_mod name="bg" storage="toumei.gif"]
 ;効果セピア
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "hue-rotate(120deg)";
+lay1[0].style.webkitFilter = "hue-rotate(-50deg)";
 [endscript]
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 #
 茜色をさす教室の中、華織様のうつろいゆく影を目で追う。[r]
-;言いたいだけや
 花を丁寧に扱う、その様は、憧れの人の印象のままであった。[p]
 ; 花を丁寧に扱う、その様は、憧れの人の印象、そのままであった。[p]
+
 ; 華織 を見つめる主人公
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(今日、一日、一緒にお手伝いさせて頂きましたが[r]
+[sp]……華織様は、ご自分の家業に対して、責任を持って挑んで[r]
+[sp]いらっしゃっるのね)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様は、花のどういったところが、お好きなのでしょうか？）[p]
 [whosay name="華織" color="olivedrab"]
