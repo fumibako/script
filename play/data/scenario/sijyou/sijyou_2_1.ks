@@ -8,6 +8,13 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
+[if exp="tf.test_sijyou==true"]
+【！】テストページからはじめます。シーンスキップをしますか[p]
+[link target=start]【１】しない[endlink][r]
+[r]
+[link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink]
+[s]
+[endif]
 ;【華道習いイベント】
 ; 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
 ;子女で少女 乙女子
@@ -61,8 +68,8 @@
 ;華道の先生なんで詩的かな
 [主人公通常]
 [whosay name=華道の先生 color=%mp.color]
-「そこで、[名前]さんに新しい学習の場として、私と共に実地演習に出てみま[r]
-[sp]せんか？」[p]
+「そこで、新しい学習の場として、私と共に実地演習に出てみま[r]
+[sp]せんか？ 丁度、[名前]さんにそういった話が挙がっておりまして」[p]
 ;(主人公、やや驚く)
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -148,6 +155,7 @@
 ;暗点
 [chara_mod name="bg" storage="toumei.gif"]
 
+*sijyou_1
 ;背景　和室　床の間のみ
 ;〜〜〜〜〜〜〜〜シーン急上昇する心情〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 [テキスト全画面白文字]
@@ -238,13 +246,13 @@
 [whosay name=乙女子達 color=%mp.color]
 「あら……先生方、見つめ合って、もしかして、お手紙のお相手同士かしら？」[p]
 [whosay name=乙女子達 color=%mp.color]
-「社交界に出られないので、気になってましたけれど、四条華織様って[r]
-[sp]本当に綺麗な人なのね」[p]
-;湖池屋令嬢へのフラグ↑
-[whosay name=乙女子達 color=%mp.color]
 [主人公目閉じ]
 [主人公口ムッ]
 「ふふ、なんてお似合いなのでしょう！」[p]
+[whosay name=乙女子達 color=%mp.color]
+「社交界に出られないので、気になってましたけれど、四条華織様って[r]
+[sp]本当に綺麗な人なのね」[p]
+;湖池屋令嬢へのフラグ↑
 [whosay name=華道の先生 color=%mp.color]
 [主人公目大]
 [主人公口通常]
@@ -266,8 +274,10 @@
 [主人公横目]
 [主人公眉下げ下]
 [主人公ポーズ指]
+[四条驚き]
 [whosay name=華道の先生 color=%mp.color]
 「なんですか、今はお稽古の時間ですよ」[p]
+[主人公ポーズ通常]
 #
 使い込まれた桃色の割烹着をきた壮年の女性が、慌てた様子で教室の入り口に現れた。[p]
 [whosay name=教室のお手伝い color=%mp.color]
