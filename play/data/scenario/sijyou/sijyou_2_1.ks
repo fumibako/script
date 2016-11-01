@@ -782,19 +782,19 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(お付き合いして華織様と呼ぶようになりましたが……)[p]
+(私も昔は、あの様に華織お兄様に見守られて、いましたね[r]
+[sp]お付き合いして華織様と呼ぶようになりましたが……)[p]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
 [wait time=10]
-
 [四条アップ]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん？ どうかされましたか？」[p]
 #
-華織さまは、生徒に聞こえないようにソッとささやいた[p]
+華織さまは、生徒に聞こえないようにソッとささやいた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
 「華織様が……」[p]
 #
@@ -805,6 +805,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [sp]言ったら、なんて思われるのでしょう……)[p]
 #
 想い人を 今更、"華織お兄様"と呼ぶには、些か躊躇う年頃と立ち位置になってしまっていた。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(今あ、ひとりの淑女として、もっとしっかりしないと)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
 「その、私も昔のことを思い出したのです」[p]
@@ -870,12 +872,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *sijyou_6
 ;[暗転] 暗転かつづくでもいい
 [chara_mod name="bg" storage="toumei.gif"]
-;効果セピア
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "hue-rotate(-50deg)";
-[endscript]
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 #
@@ -884,6 +880,7 @@ lay1[0].style.webkitFilter = "hue-rotate(-50deg)";
 ; 花を丁寧に扱う、その様は、憧れの人の印象、そのままであった。[p]
 
 ; 華織 を見つめる主人公
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日、一日、一緒にお手伝いさせて頂きましたが[r]
 [sp]……華織様は、ご自分の家業に対して、責任を持って挑んで[r]
