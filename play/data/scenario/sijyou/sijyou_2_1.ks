@@ -112,8 +112,8 @@
 #
 雲をすり抜ける、月影さやけき夜。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(お父様からも了承を得られましたし、はりきって先生にも連絡してしまいまし[r]
-[sp]たが……)[p]
+(お父様からも了承を得られましたし、はりきって先生にも連絡してしまい[r]
+[sp]ましたが……)[p]
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (当日は著名な先生も来られます と、おっしゃってましたわ。[r]
@@ -158,13 +158,15 @@
 [r]
 そんな中、私は先生とともに淑女を目指す乙女達の指導を勤めることとなった。[p]
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+;[chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
 ;主人公横目 頬染め
 [主人公ポーズ通常]
 [主人公通常]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [主人公横目]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -174,9 +176,6 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ですが……)[p]
-;↓眉：困り [主人公眉困り]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
 [whosay name=華道の先生 color=%mp.color]
 「はい、皆さん。今日は、素敵な先生と私の信愛なる教え子を紹介します」[p]
 ;子供がやがやSE
@@ -194,6 +193,9 @@
 「四条華織と申します。今日は一緒に楽しく学びましょう」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 「[名字]……[名前]と申します。
@@ -218,7 +220,8 @@
 ;理由を考える主人公。伏線回収
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、頑張りましょうね」[p]
-[主人公驚]
+;表情調整中です
+[主人公目大]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -259,10 +262,13 @@
 ;姉さん事件です お約束です
 [whosay name=華道の先生 color=%mp.color]
 「なんですか、今はお稽古の時間ですよ」[p]
+#
+使い込まれた桃色の割烹着をきた壮年の女性が、慌てた様子で教室の入り口に現れた。[p]
 [whosay name=教室のお手伝い color=%mp.color]
 「それが、その丸美屋の男爵様から……」[p]
 ;ごにょごにょ
-;適当な地の文追加
+#
+先生は、さざめき立つ生徒達すら気にせず、彼女の側に寄って、内輪話を始めた。[p]
 [whosay name=華道の先生 color=%mp.color]
 「……なんですって？ 丸美屋男爵様が？」[p]
 ;先生用事ができて出ていく。我儘な男爵(の子女)に呼ばれ
@@ -278,16 +284,19 @@
 ;なくてもいい？
 [whosay name="華織" color="olivedrab"]
 「どうかされましたか？」[p]
+#
+先生は、様子を訝しむ生徒達に一言謝ると私達を廊下に連れ出した。[p]
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
+;[whosay name=華道の先生 color=%mp.color]
+;「お二人とも、こちらに来て下さい」
+;[whosay name=華道の先生 color=%mp.color]
+;「実は……少々込み入った用事ができてしまいまして」[p]
 [whosay name=華道の先生 color=%mp.color]
 「四条様、申し訳ございません。[r]
 [sp]私、急な呼び出しで、出ないといけなくなりまして」[p]
 [whosay name="華織" color="olivedrab"]
-「お気になさらないで下さい。[r]
-;【１】そのような事は、よくある事です」
-;【２】急な呼び出しがあるなど、僕も存じております。
-;【３】
-そのような事がよくあるなど、僕も存じております」[p]
-;【４】その他
+「お気になさらないで下さい。　そのような事は、よくある事です」[p]
 ;華織も苦労してるよっていうさり気ないシーン
 ;敬語難
 
@@ -310,13 +319,15 @@
 「名前さん。今日は四条様とご一緒にできる淑女として、[r]
 [sp]いくつかの士女を提案したところ、ご家族揃って貴方をご指名されました」[p]
 ;主人公への特別感 お約束
-
-;(主人公驚 表情のみ)
+[主人公驚]
 [whosay name=華道の先生 color=%mp.color]
 「ですので、私が不在の間、きっちり指導役をなさって下さいね」[p]
 ;嫌な先生かもかも
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい」[p]
+#
+責務を残して、走り去っていく先生を見送りながら、私は頭を抱えてしまった。[p]
+;緊張感に苛まれてしまった。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (どうしましょう。　緊張してきたわ……)[p]
 ;緊張する主人公
@@ -344,7 +355,7 @@
 #
 先生の言葉が脳裏を掠めた[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ですけど……私が断った場合を考えてしまうと……)[p]
+(……私が断った場合を考えてしまうと……)[p]
 ;主人公ふぅ閉
 #
 ほぼ手紙でしか会えない分、華織様の隣で笑っている同い年の淑女を想像した途端、
@@ -367,8 +378,9 @@
 
 *共通1
 ;〜〜シーン キャラと造作1 (軽度)後に繋ぐもの(テンション↓)〜〜〜
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 #
-気持ちも落ち着いた華ところで、私は、織様と共に初級者向けの授業を始めた。[p]
+生徒達を落ち着かせたところで、私と華織様は、初級者向けの授業を始めた。[p][p]
 [whosay name="華織" color="olivedrab"]
 「いけばな とは『師の背中を見て学ぶ』と言われてきました」[p]
 [whosay name="華織" color="olivedrab"]
@@ -388,8 +400,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (心の中で描く花……)[p]
 [whosay name="華織" color="olivedrab"]
-「その為にも、ご自身の想いを表現できるよう、今日はしっかりと基礎を学び[r]
-[sp]ましょう」[p]
+「その為にも、ご自身の想いを表現できるよう、今日はしっかりと基礎を[r]
+[sp]学びましょう」[p]
 ;〜〜シーン キャラの造作1 軽度〜〜〜
 
 ;[暗転]
@@ -445,7 +457,7 @@
 ;子女、もじもじ
 ;他に言い回し
 [whosay name="華織" color="olivedrab"]
-「 丸美屋 様。帰って生けたら、お父様がお喜びになられるのでしょうね」[p]
+「丸美屋様。帰っていけたら、お父様がお喜びになられるのでしょうね」[p]
 [whosay name="乙女子 その壱" color=%mp.color]
 「ありがとうございます。[r]
 [sp]私、出来そうな気がしてきましたわ」[p]
