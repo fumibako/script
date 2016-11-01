@@ -323,6 +323,7 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 先生は、様子を訝しむ生徒達に一言謝ると私達を廊下に連れ出した。[p]
+[chara_mod name="bg"　storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
 [四条ベース羽織]
 [四条通常]
 [whosay name=華道の先生 color=%mp.color]
