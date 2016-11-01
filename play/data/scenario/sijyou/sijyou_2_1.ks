@@ -539,11 +539,16 @@
 ; 昔、思い通りにならなくて投げ出したくなってしまう事がありました……」[p]
 ;【～～せいにして投げ出す　逃げる】華織、華道展への意気込みフラグへ
 [whosay name="華織" color="olivedrab"]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
 (……)[p]
 [主人公眉下げ下]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ですが、粘り強く、花への愛情や興味を持って眺めて下さい……[r]
 [sp]四条様が仰ったように自身の心の中で見極めるのです」[p]
+[四条微笑み]
 ;華織
 [whosay name="乙女子 その壱" color=%mp.color]
 「粘り強く、花への愛情や興味を……？」[p]
@@ -577,7 +582,8 @@
 「ありがとうございます。[r]
 [sp]私、出来そうな気がしてきましたわ」[p]
 [whosay name="華織" color="olivedrab"]
-「もし、どうしても気になるようでしたら、こちらの枝は、この向きで挿してみてはいかがでしょうか？」[p]
+「もし、どうしても気になるようでしたら、こちらの枝は、この向きで挿して[r]
+[sp]みてはいかがでしょうか？」[p]
 [whosay name="乙女子 その壱" color=%mp.color]
 「そうですわね……それなら思った通りになりそうですわ！」[p]
 ;ほっ 目閉じ ため息 または 喜び
@@ -586,7 +592,8 @@
 (よかった……)[p]
 ;主人公微笑み 指 か 主人公横目 口微笑み 指
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そういえば、私も昔は、お兄様や華織様に褒められて嬉しかったですわね)[p]
+(そういえば、私も昔は、お兄様や華織様に褒められて嬉しかった[r]
+[sp]ですわね)[p]
 [主人公退場]
 
 ;戻す
@@ -624,16 +631,21 @@
 ;Ｂ会話
 [whosay name="華織" color="olivedrab"]
 「[名前]さんのおかげ、僕も改めて昔の想いを思い出しました。[r]
- 何かのせいにしていては弱いままですよね」[p]
+[sp] 何かのせいにしていては弱いままですよね」[p]
 ;華道展のフラグ回収
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様？」[p]
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
-「いえ！何でもないです！……あの子達を見ていたら、昔の[名前]さんを思い出して、
-いてもたってもいられなくなったと言いますか……」[p]
+「いえ！何でもないです！[r]
+[sp]……あの子達を見ていたら、昔の[名前]さんを思い出して、[r]
+[sp]いてもたってもいられなくなったと言いますか……」[p]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_ake.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「懐かしいですよね！」[p]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
+[wait time=10]
 ;C会話へ
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -656,7 +668,8 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=幼い頃の私 color=%mp.color]
 「華織お兄さま！[r]
-[sp]せっかくの華道のはじめてが、こんな葉っぱでは面白くないですわ」[p]
+[sp]せっかくの華道のはじめてが、こんな葉っぱでは面白くない[r]
+[sp]ですわ」[p]
 [whosay name="華織お兄様" color="olivedrab"]
 「[名前]ちゃん、このハランの葉をよく見てごらん。[r]
 [sp]なびきや形が美しいと思わないかい？」[p]
@@ -670,11 +683,11 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 「そ、そうかな？」[p]
 ;(文矢にも、よく言われるけれど……[名前]ちゃんにも言われしまうとは)なくてもいいか
 [whosay name=幼い頃の私 color=%mp.color]
-「でも、華織お兄様に言われてみたら、
-この葉っぱも可愛くみえてきたわ！
+「でも、華織お兄様に言われてみたら、この葉っぱも可愛くみえてきたわ！
 それに緑の移り変わりが綺麗！」[p]
 [whosay name="華織お兄様" color="olivedrab"]
 「ありがとう。  うまく出来たら、文矢に見せに行こうね」[p]
+#
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 ;効果セピア消し
@@ -709,16 +722,17 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条困り微笑み]
 ;冷たいかも
 [whosay name="華織" color="olivedrab"]
-「すみません、授業に使用する花材が届く時間ですので、僕は先に失礼しますが、[r]
+「すみません、授業に使用する花材が届く時間ですので、僕は先に失礼[r]
+[sp]しますが、
 [主人公口ほほえみ]
 [主人公目大]
 [四条微笑み]
-[sp]名前さんは、ゆっくりしていてくださいね」[p]
+名前さんは、ゆっくりしていてくださいね」[p]
 ;「頼んでた花材が届く時間ですので、僕は先に失礼します」[p]
 [四条目閉じ]
 [四条退場]
-[主人公眉困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公眉困り]
 (華織様、お昼休み中でも、授業のこと考えられてるのね。[r]
 [主人公真剣]
 [sp]私も集中しないと)[p]
@@ -762,48 +776,60 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 それは、まるであの日みた"華織お兄様"の優しい表情、そのままであった。[p]
 ;顕現 現出 内在・・・
 ;今さっき、変ったこともあるけど、志的には根は変ってないってこと
-； 四条は考え事をしている主人公に気づく。
+;四条は考え事をしている主人公に気づく。
 [主人公目閉]
 ;↓効果：無し(通常) [主人公効果消]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お付き合いして華織様と呼ぶようになりましたが……)[p]
-#
-華織さまは、生徒に聞こえないようにソッとささやいた[p]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
 [wait time=10]
+
 [四条アップ]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん？ どうかされましたか？」[p]
+#
+華織さまは、生徒に聞こえないようにソッとささやいた[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
 「華織様が……」[p]
-[四条眉困り]
 #
 私は、そこで口を噤(つぐ)んだ。[p]
 [主人公眉困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様のことを、いまさら昔の華織お兄様のようにみえたなんて言ったら、[r]
-[sp]なんて思われるのでしょう……)[p]
+(華織様のことを、いまさら昔の華織お兄様のようにみえたなんて[r]
+[sp]言ったら、なんて思われるのでしょう……)[p]
 #
 想い人を 今更、"華織お兄様"と呼ぶには、些か躊躇う年頃と立ち位置になってしまっていた。[p]
-[主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公困り]
 「その、私も昔のことを思い出したのです」[p]
 ;その代わりに別の気持ちを打ち明ける
 ;主人公の話をきく四条。
-[四条眉困り]
+;[四条眉下げ]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「そうなんですね。 懐かしいですよね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+; [主人公横伏目]
+[chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
+[wait time=10]
 (嘘ではないわ)[p]
 ;お互いにいろいろ考えている
 ;四条は主人公に 生け花をしようと誘う。
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
 「そうだ。[名前]さん」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目大]
+[四条微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？ 」[p]
 [whosay name="華織" color="olivedrab"]
@@ -820,9 +846,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;〜〜〜 〜〜〜 シーン急上昇(期待値高め)〜〜〜 〜〜〜
 ;～～～～シーン片付ける～～～～～
 ;楽しく片付ける2人 主人公が絶好調になる
+#
 生徒たちが笑顔で帰ったあと、私たちは、教室の後片付けを始めた。[p]
 ; 生徒たちが笑顔で帰ったあと、私たちは、約束の前に教室の後片付けを始めた。[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「結構、さばいた後のお花がでましたね」[p]
 ;さばく。花・葉・枝がつきすぎていて見た目がすっきりしない場合に、全体を見ながら適当に省略し、いけたい草木を強調し、美しい姿にします。
@@ -833,14 +859,20 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「そうですね。　片付けが終わりましたら、この花達に新しい居場所を作りましょうか」[p]
 ;さばいた花は他のところに場所をあたえて生かしてみましょう　教本より
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 
 ;[暗転] 暗転かつづくでもいい
-
+[chara_mod name="bg" storage="toumei.gif"]
+;効果セピア
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "hue-rotate(120deg)";
+[endscript]
+;背景　床の間のみ表示
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 #
-
 茜色をさす教室の中、華織様のうつろいゆく影を目で追う。[r]
 ;言いたいだけや
 花を丁寧に扱う、その様は、憧れの人の印象のままであった。[p]
@@ -858,7 +890,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「そうですか。
 [四条微笑み]
 では、こちらの花と僕が見本で持ってきた牡丹籠で、いけてみましょうか」[p]
-
 ;華織に質問される主人公
 [whosay name="華織" color="olivedrab"]
 「[名前]さんは、どんな人のために花をいけていますか?」[p]
