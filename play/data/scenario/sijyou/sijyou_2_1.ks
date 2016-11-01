@@ -14,10 +14,8 @@
 [endkeyframe]
 [keyframe name="no_scale1"]
 [frame p=0% opacity=0]
-[frame p=100% scale="1"]
-[endkeyframe]
-[keyframe name="opcity1"]
-[frame p=100% opacity=0]
+[frame p=50% scale="1"]
+[frame p=100% opacity=1]
 [endkeyframe]
 
 [イベントシーン構築]
@@ -481,6 +479,8 @@
 [主人公目閉]
 [四条退場]
 *sijyou_3
+[er]
+#
 ;〜〜シーン キャラの造作1 軽度〜〜〜
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -502,6 +502,7 @@
 [主人公通常]
 [whosay name="乙女子 その壱" color=%mp.color]
 「ダメですわ！ この枝では、うまくできないですわ！」[p]
+[主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「諦めずに繰り返し、生けることが大事ですわ」[p]
 [四条微笑み]
@@ -509,7 +510,6 @@
 「そう言われましても、頂いた図案よりも、枝自体の流れが少し違うのですもの……
 [ruby text=た]撓めても、ここの部分なんて少し曲がってますわ」[p]
 ;撓 ためる 草木の性質を見極めて曲げること…ため には種類がある
-[主人公ポーズ通常]
 [主人公眉下げ下]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね、ひとつひとつ違った個性の花々は教本通りの姿にはなって[r]
@@ -540,11 +540,11 @@
 ;同じ流れなので変える
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もっと、他に華道の楽しみを伝えれるようなお言葉があれば……)[p]
-;四条アップ　うまくいく気がしない
-[kanim keyframe="scale1" name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" time=0]
+;四条アップ　うまくいきました
+[kanim keyframe="scale1" name="sijyou_base" time=0]
 [kanim keyframe="scale1" name="sijyou_me" time=0]
-[kanim keyframe="scale1" name="sijyou_mayu,sijyou_emo" time=0]
-[kanim keyframe="scale1" name="sijyou_kuti,sijyou_emo" time=0]
+[kanim keyframe="scale1" name="sijyou_mayu" time=0]
+[kanim keyframe="scale1" name="sijyou_kuti" time=0]
 [kanim keyframe="scale1" name="sijyou_emo" time=2000]
 [wa]
 [whosay name="華織" color="olivedrab"]
@@ -570,18 +570,27 @@
 [whosay name="乙女子 その壱" color=%mp.color]
 「そうですわね……それなら思った通りになりそうですわ！」[p]
 ;ほっ 目閉じ ため息 または 喜び
+[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (よかった……)[p]
 ;主人公微笑み 指 か 主人公横目 口微笑み 指
-[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そういえば、私も昔は、お兄様や華織様に褒められて嬉しかったですわね)[p]
-[kanim keyframe="not_scale1" name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" time=1000]
+;戻す
+#
 [四条退場]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[kanim keyframe="no_scale1" name="sijyou_base" time=0]
+[kanim keyframe="no_scale1" name="sijyou_me" time=0]
+[kanim keyframe="no_scale1" name="sijyou_mayu" time=0]
+[kanim keyframe="no_scale1" name="sijyou_kuti" time=0]
+[kanim keyframe="no_scale1" name="sijyou_emo" time=2000]
+[wa]
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+;戻す
+
 [四条ベース羽織]
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
