@@ -541,7 +541,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もっと、他に華道の楽しみを伝えれるようなお言葉があれば……)[p]
 ;四条アップ　うまくいく気がしない
-[kanim keyframe="scale1" name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" time=2000]
+[kanim keyframe="scale1" name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" time=0]
+[kanim keyframe="scale1" name="sijyou_me" time=0]
+[kanim keyframe="scale1" name="sijyou_mayu,sijyou_emo" time=0]
+[kanim keyframe="scale1" name="sijyou_kuti,sijyou_emo" time=0]
+[kanim keyframe="scale1" name="sijyou_emo" time=2000]
 [wa]
 [whosay name="華織" color="olivedrab"]
 「丸美屋様。 『上手くなりましたね』と褒められたときを想像なさって下さい」[p]
