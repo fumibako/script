@@ -263,7 +263,9 @@
 ;女中？
 [whosay name=教室のお手伝い color=%mp.color]
 「先生！ 大変です！！」[p]
-;姉さん事件です お約束です
+[主人公横目]
+[主人公眉下げ下]
+[主人公ポーズ指]
 [whosay name=華道の先生 color=%mp.color]
 「なんですか、今はお稽古の時間ですよ」[p]
 #
@@ -276,6 +278,7 @@
 「……なんですって？ 丸美屋男爵様が？」[p]
 ;先生用事ができて出ていく。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公憂い]
 （どうしたのかしら……？）[p]
 [whosay name=教室のお手伝い color=%mp.color]
 「申し訳ございません。[r]
