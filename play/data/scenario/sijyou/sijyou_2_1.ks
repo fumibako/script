@@ -16,6 +16,7 @@
 [link target=sijyou_b]【３】お手伝いさん登場[endlink]
 [s]
 *sijyou_b
+[cm]
 [四条ベース羽織]
 @jump target=sijyou_1_1
 [endif]
@@ -39,6 +40,7 @@
 ;主人公　お稽古中の部屋
 
 *start
+[cm]
 [主人公ポーズ通常]
 [主人公通常]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
