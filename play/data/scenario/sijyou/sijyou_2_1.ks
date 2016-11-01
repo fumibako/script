@@ -25,6 +25,23 @@
 [frame p=50% scale="1"]
 [frame p=100% opacity=1]
 [endkeyframe]
+[macro name="四条アップ"]
+[kanim keyframe="scale1" name="sijyou_base" time=0]
+[kanim keyframe="scale1" name="sijyou_me" time=0]
+[kanim keyframe="scale1" name="sijyou_mayu" time=0]
+[kanim keyframe="scale1" name="sijyou_kuti" time=0]
+[kanim keyframe="scale1" name="sijyou_emo" time=2000]
+[wa]
+[endmacro]
+[macro name="四条サイズ通常"]
+[kanim keyframe="no_scale1" name="sijyou_base" time=0]
+[kanim keyframe="no_scale1" name="sijyou_me" time=0]
+[kanim keyframe="no_scale1" name="sijyou_mayu" time=0]
+[kanim keyframe="no_scale1" name="sijyou_kuti" time=0]
+[kanim keyframe="no_scale1" name="sijyou_emo" time=2000]
+[wa]
+[endmacro]
+
 
 [イベントシーン構築]
 [if exp="tf.test_sijyou==true"]
@@ -540,12 +557,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もっと、他に華道の楽しみを伝えれるようなお言葉があれば……)[p]
 ;四条アップ　うまくいきました
-[kanim keyframe="scale1" name="sijyou_base" time=0]
-[kanim keyframe="scale1" name="sijyou_me" time=0]
-[kanim keyframe="scale1" name="sijyou_mayu" time=0]
-[kanim keyframe="scale1" name="sijyou_kuti" time=0]
-[kanim keyframe="scale1" name="sijyou_emo" time=2000]
-[wa]
+[四条アップ]
 [whosay name="華織" color="olivedrab"]
 「丸美屋様。 『上手くなりましたね』と褒められたときを想像なさって下さい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -582,12 +594,7 @@
 [四条退場]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-[kanim keyframe="no_scale1" name="sijyou_base" time=0]
-[kanim keyframe="no_scale1" name="sijyou_me" time=0]
-[kanim keyframe="no_scale1" name="sijyou_mayu" time=0]
-[kanim keyframe="no_scale1" name="sijyou_kuti" time=0]
-[kanim keyframe="no_scale1" name="sijyou_emo" time=2000]
-[wa]
+[四条サイズ通常]
 ;昼休みにしよう・・・
 *sijyou_4
 [er]
@@ -599,7 +606,6 @@
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 ;戻す
-[四条]
 [四条ベース着物]
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
@@ -609,8 +615,10 @@
 「いえ！  私も、励ましのお言葉に困っていたので助かりましたわ」[p]
 ;会話によって華織の行動が明確に
 ;ここからＢ会話に持っていきたいだけの間
+[四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「僕は、[名前]さんのおかげで励まされましたよ」[p]
+[四条目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？ そうでしょうか」[p]
 ;Ｂ会話
@@ -620,12 +628,14 @@
 ;華道展のフラグ回収
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様？」[p]
+[四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 「いえ！何でもないです！……あの子達を見ていたら、昔の[名前]さんを思い出して、
 いてもたってもいられなくなったと言いますか……」[p]
 [whosay name="華織" color="olivedrab"]
 「懐かしいですよね！」[p]
 ;C会話へ
+[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (昔の私……)[p]
 [四条退場]
@@ -673,6 +683,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
+;～～～～～～～～回想 困ったら回想シーン C会話おわり～～～～～～～～～
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [四条ベース着物]
@@ -686,18 +697,21 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (あの頃は……)[p]
 [四条目大]
-[主人公ふぅ閉じ]
+[主人公ふぅ閉]
 (華織様に対して、少しばかり、無邪気でしたわ)[p]
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
-「お昼休みが終わったら、こちらの教本の 六頁から、はじめますね」[p]
-[主人公驚き]
+「お昼休みが終わったら、こちらの教本の 六頁から始めますね」[p]
+[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
+[主人公ふぅ閉]
 [四条困り微笑み]
 ;冷たいかも
 [whosay name="華織" color="olivedrab"]
 「すみません、授業に使用する花材が届く時間ですので、僕は先に失礼しますが、[r]
+[主人公口ほほえみ]
+[主人公目大]
 [四条微笑み]
 [sp]名前さんは、ゆっくりしていてくださいね」[p]
 ;「頼んでた花材が届く時間ですので、僕は先に失礼します」[p]
@@ -705,7 +719,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 [主人公眉困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様、お昼休みでも、授業のこと考えられてるのね。[r]
+(華織様、お昼休み中でも、授業のこと考えられてるのね。[r]
 [主人公真剣]
 [sp]私も集中しないと)[p]
 ;(集中しないと)[p]
@@ -718,48 +732,67 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="bg" storage="toumei.gif"]
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;シーン急上昇まで流れ。楽しい時間を得る
-;主人公、考え中に完成 それに気づくイメージ
 ;完成に喜ぶ児童達。
-[whosay name=乙女子 その弐 color=%mp.color]
+[whosay name=乙女子その弐 color=%mp.color]
 「できましたわ！」[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [主人公ポーズ通常]
 [主人公通常]
 [四条ベース羽織]
 [四条通常]
-[whosay name=乙女子 その壱 color=%mp.color]
+[四条微笑み]
+[whosay name=乙女子その壱 color=%mp.color]
 「……私も出来ましたわ！」[p]
 [主人公ほほえみ]
 #
 少女達は、完成した作品を見合って喜び合う。[p]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
-「皆様、よく頑張りました。帰ったら家の人にも見せてあげて下さいね」[p]
-;ウチの人？ 言い回しがわからない
+「皆様、よく頑張りました。帰ったら、おうちの人にも見せてあげて下さいね」[p]
 ;ワイワイSE
+[主人公目伏柔]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 #
 小さな少女達を笑顔で見守る華織様。[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(お付き合いして華織様と呼ぶようになりましたが……)[p]
 #
-それは、まるであの日みた"華織お兄様"が現れたかのようであった。[p]
+それは、まるであの日みた"華織お兄様"の優しい表情、そのままであった。[p]
 ;顕現 現出 内在・・・
 ;今さっき、変ったこともあるけど、志的には根は変ってないってこと
 ； 四条は考え事をしている主人公に気づく。
+[主人公目閉]
+;↓効果：無し(通常) [主人公効果消]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(お付き合いして華織様と呼ぶようになりましたが……)[p]
+#
+華織さまは、生徒に聞こえないようにソッとささやいた[p]
+[chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+[wait time=10]
+[四条アップ]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん？ どうかされましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様が……」[p]
+[四条眉困り]
 #
 私は、そこで口を噤(つぐ)んだ。[p]
+[主人公眉困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様のことを、いまさら昔の華織お兄様のようなんて言ったら、なんて思われるのでしょう……)[p]
+(華織様のことを、いまさら昔の華織お兄様のようにみえたなんて言ったら、[r]
+[sp]なんて思われるのでしょう……)[p]
 #
 想い人を 今更、"華織お兄様"と呼ぶには、些か躊躇う年頃と立ち位置になってしまっていた。[p]
+[主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「その、私も昔のことを思い出したのです」[p]
 ;その代わりに別の気持ちを打ち明ける
 ;主人公の話をきく四条。
-
+[四条眉困り]
 [whosay name="華織" color="olivedrab"]
 「そうなんですね。 懐かしいですよね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -768,13 +801,20 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;四条は主人公に 生け花をしようと誘う。
 [whosay name="華織" color="olivedrab"]
 「そうだ。[名前]さん」[p]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[主人公目大]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？ 」[p]
 [whosay name="華織" color="olivedrab"]
 「教室が終わりましたら、また一緒にいけてみませんか？」[p]
 ;終わったら一緒にいけることを約束する
+[主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
+[主人公退場]
+[四条退場]
+[四条サイズ通常]
 
 ;背景　和室広め　赤っぽく
 ;〜〜〜 〜〜〜 シーン急上昇(期待値高め)〜〜〜 〜〜〜
