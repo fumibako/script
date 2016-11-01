@@ -27,6 +27,7 @@
 [link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink][r]
 [link target=sijyou_b]【３】シーン廊下[endlink][r]
 [link target=sijyou_2]【４】授業再開[endlink]
+[link target=sijyou_3]【４】授業再開２[endlink]
 [s]
 *sijyou_b
 [cm]
@@ -328,8 +329,10 @@
 「お二人とも、こちらに来て下さい」[p]
 [四条退場]
 
+
 ;〜〜シーン廊下 先生の退場と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～
 *sijyou_1_1
+[主人公ポーズ通常]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -495,6 +498,7 @@
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [四条ベース羽織]
 [四条通常]
+[主人公ポーズ片手]
 [主人公通常]
 [whosay name="乙女子 その壱" color=%mp.color]
 「ダメですわ！ この枝では、うまくできないですわ！」[p]
