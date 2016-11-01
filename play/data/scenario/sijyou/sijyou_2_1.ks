@@ -284,6 +284,7 @@
 「それが、その丸美屋の男爵様から……」[p]
 #
 先生は、さざめき立つ生徒達すら気にせず、彼女の側に寄って、内輪話を始めた。[p]
+[四条目パチ1回]
 [whosay name=華道の先生 color=%mp.color]
 「……なんですって？ 丸美屋男爵様が？」[p]
 ;先生用事ができて出ていく。
@@ -297,10 +298,14 @@
 「わかりました。[r]
 [sp]やはり、あの家の方々は、予定を聞き受けてくれないのですね……」[p]
 ;今日は一緒に来ていただける方を頼んでおいてよかったわ」[p]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「どうかされましたか？」[p]
-[四条憂い]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 [whosay name=華道の先生 color=%mp.color]
 「お二人とも、こちらに来て下さい」[p]
 [四条退場]
