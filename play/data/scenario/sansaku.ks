@@ -154,9 +154,9 @@ TG.stat.play_se = true;
 	@jump target=*sansaku_machi_common_02
 [endif]
 
-;◆黒田イベント1判定【さつき】5月3週～6月2週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
-[if exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_kuroda[1]==0 && f.para_kuroda_koukando > 5"]
-	@jump target=*sansaku_machi_kuroda_01
+;◆共通イベント3判定【さつき】5月3週～6月2週、期間中に町へ行くと1度だけ発生(旧：黒田イベント1から共通3に変更f.event_machi_kuroda[1]は欠番とします)
+[if exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_common[3]==0"]
+@jump target=*sansaku_machi_common_03
 [endif]
 
 ;◆黒田イベント3判定【黒田家のうわさ１】7月1週～4週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
@@ -477,6 +477,10 @@ f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,1,2,-1,1,"a","","",3,"");
 [endscript]
+;話題配列の内訳："話題名",黒田好感度上下値,財前好感度上下値,四条好感度上下値,自由枠1好感度上下値,自由枠2好感度上下値,"話題の距離感をabc表記
+;(a：初期で話題に出してok、b:各キャラ好感度がb値に達して以降話題に出しても好感度が減らなくなる、c:各キャラ好感度がc値に達して以降話題に出しても好感度が減らなくなる)",その話題を特に好むキャラを配列数値で表示,その話題を特に好むキャラを配列数値で表示,その話題を特に苦手なキャラを配列数値で表示,その話題を特に苦手なキャラを配列数値で表示
+;キャラ配列数値：1=黒田、2=財前、3=四条、4=自由枠1、5=自由枠2
+;話題配列の各数値は黒田ルート作成時に仮でテスト入力したものです。今後各シナリオをゲーム本編に組み込む際に調整します
 
 [layopt layer=26 visible=true]
 [wait time=10]
@@ -729,9 +733,9 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1
 @jump target=*sansaku_machi_seika
 
 ;=============================================
-;◆町_黒田イベント01「さつき」
-;イベント発生条件：5月3週～6月2週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
-*sansaku_machi_kuroda_01
+;◆町_共通イベント03「さつき」
+;イベント発生条件：5月3週～6月2週、期間中に町へ行くと1度だけ発生
+*sansaku_machi_common_03
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -740,7 +744,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1
 [if exp="sf.KSKIP=='ON' && sf.trail_sansaku_machi_kuroda_01==undefined"]
 	[skipstop]
 [endif]
-*machi_kuroda_01
+*machi_common_03
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -835,11 +839,11 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お花も鮮やかで、色々なさつきを見られて眼福だったわ」[p]
 [freeimage layer = 26]
-[eval exp="f.event_machi_kuroda[1]=1"]
+[eval exp="f.event_machi_common[3]=1"]
 @jump target=*sansaku_machi_seika
 
 ;=============================================
-;◆町_黒田イベント02「麦」
+;◆町_黒田イベント02「麦」（黒田イベント01は欠番のため02から開始します）
 ;イベント発生条件：6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
 *sansaku_machi_kuroda_02
 ;◆既読スキップ開始
