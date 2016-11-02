@@ -55,19 +55,7 @@
 【！】テストページからはじめます。シーンスキップをしますか[p]
 [link target=start]【１】しない[endlink][r]
 [link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink][r]
-[link target=sijyou_b]【３】シーン廊下[endlink][r]
-[link target=sijyou_2]【４】授業再開[endlink][r]
-[link target=sijyou_3]【５】授業再開２[endlink]　[link target=*p]次へ[endlink]
 [s]
-*p
-[er]
-[link target=sijyou_4]【６】休憩１[endlink]
-[link target=sijyou_5]【７】授業再開２[endlink]
-[s]
-*sijyou_b
-[cm]
-[四条ベース羽織]
-@jump target=sijyou_1_1
 [endif]
 
 
@@ -724,7 +712,7 @@ _　お仕事をされているのですよね……)[p]
 「……すみません、[名前]さん。急に出てあんな事を言ってしまって……」[p]
 ;きずなにしてみる　シーンがころころ変わるから音楽の一貫性がないかんじ
 [if exp="sf.BGM=='ON'"]
-【BGM】きずな（想いを込めるシーンに
+;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
