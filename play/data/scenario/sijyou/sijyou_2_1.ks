@@ -26,19 +26,21 @@
 [frame p=100% opacity=1]
 [endkeyframe]
 [macro name="四条アップ"]
-[kanim keyframe="scale1" name="sijyou_base" time=0]
-[kanim keyframe="scale1" name="sijyou_me" time=0]
-[kanim keyframe="scale1" name="sijyou_mayu" time=0]
-[kanim keyframe="scale1" name="sijyou_kuti" time=0]
+[kanim keyframe="scale1" name="sijyou_base" time=10]
+[kanim keyframe="scale1" name="sijyou_me" time=10]
+[kanim keyframe="scale1" name="sijyou_mayu" time=10]
+[kanim keyframe="scale1" name="sijyou_kuti" time=10]
 [kanim keyframe="scale1" name="sijyou_emo" time=2000]
+;スマホフリーズ対策time=10 waだと思うが
 [wa]
 [endmacro]
 [macro name="四条サイズ通常"]
-[kanim keyframe="no_scale1" name="sijyou_base" time=0]
-[kanim keyframe="no_scale1" name="sijyou_me" time=0]
-[kanim keyframe="no_scale1" name="sijyou_mayu" time=0]
-[kanim keyframe="no_scale1" name="sijyou_kuti" time=0]
+[kanim keyframe="no_scale1" name="sijyou_base" time=10]
+[kanim keyframe="no_scale1" name="sijyou_me" time=10]
+[kanim keyframe="no_scale1" name="sijyou_mayu" time=10]
+[kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
 [kanim keyframe="no_scale1" name="sijyou_emo" time=2000]
+;スマホフリーズ対策time=10 waだと思うが
 [wa]
 [endmacro]
 
@@ -313,12 +315,13 @@
 #
 使い込まれた桃色の割烹着をきた壮年の女性が、慌てた様子で教室の入り口に現れた。[p]
 [whosay name=教室のお手伝い color=%mp.color]
-「それが、その丸美屋の男爵様から……」[p]
+「それが、その湖池屋の男爵様から……」[p]
+;忘れてました　ありがとうございます
 #
 先生は、さざめき立つ生徒達すら気にせず、彼女の側に寄って、内輪話を始めた。[p]
 [四条目パチ1回]
 [whosay name="華道の先生" color=%mp.color]
-「……なんですって？ 丸美屋男爵様が？」[p]
+「……なんですって？ 湖池屋男爵様が？」[p]
 ;先生用事ができて出ていく。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
@@ -328,7 +331,7 @@
 [wait time=10]
 [whosay name="教室のお手伝い" color=%mp.color]
 「申し訳ございません。[r]
-[sp]今日の丸美屋お嬢様のお稽古の担当は別の方でとお願いしたのですが……」[p]
+[sp]今日の湖池屋お嬢様のお稽古の担当は別の方でとお願いしたのですが……」[p]
 [whosay name="華道の先生" color=%mp.color]
 「わかりました。[r]
 [sp]やはり、あの家の方々は、予定を聞き受けてくれないのですね……」[p]
@@ -591,9 +594,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (よかった……)[p]
 ;主人公微笑み 指 か 主人公横目 口微笑み 指
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(そういえば、私も昔は、お兄様や華織様に褒められて嬉しかった[r]
-[sp]ですわね)[p]
 [主人公退場]
 
 ;戻す
@@ -609,7 +609,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 私は、華織様と、なんとか午前中をしのぎきって、お昼休みを頂くこととなった。[p]
-;しのぎ・・・・
+;しのぎ・・・・乗り切って？
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 ;戻す
@@ -646,6 +646,14 @@
 「懐かしいですよね！」[p]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
 [wait time=10]
+[主人公目閉]
+;過去を思い出すシーンはシーンをまとめないとモヤモヤするので移動
+#
+ふと、私は、生徒を笑顔で見つめる華織様を思い返した。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公口ほほえみ]
+(そういえば、私も昔は、お兄様や華織様に褒められて嬉しかった[r]
+[sp]ですわね)[p]
 ;C会話へ
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -670,7 +678,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 「華織お兄さま！[r]
 [sp]せっかくの華道のはじめてが、こんな葉っぱでは面白くない[r]
 [sp]ですわ」[p]
-[whosay name="華織お兄様" color="olivedrab"]
+[whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん、このハランの葉をよく見てごらん。[r]
 [sp]なびきや形が美しいと思わないかい？」[p]
 ; ハランとは、スズラン亜科ハラン属の常緑多年草で、巨大な葉を地表に立てる植物である。
@@ -679,13 +687,13 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [whosay name=幼い頃の私 color=%mp.color]
 「個性？  華織お兄様、面白いこと言うのね」[p]
 ;小さい頃の主人公の性格が、あまりわからない
-[whosay name="華織お兄様" color="olivedrab"]
+[whosay name="華織お兄さま" color="olivedrab"]
 「そ、そうかな？」[p]
 ;(文矢にも、よく言われるけれど……[名前]ちゃんにも言われしまうとは)なくてもいいか
 [whosay name=幼い頃の私 color=%mp.color]
 「でも、華織お兄様に言われてみたら、この葉っぱも可愛くみえてきたわ！
 それに緑の移り変わりが綺麗！」[p]
-[whosay name="華織お兄様" color="olivedrab"]
+[whosay name="華織お兄さま" color="olivedrab"]
 「ありがとう。  うまく出来たら、文矢に見せに行こうね」[p]
 #
 ;[暗転]
