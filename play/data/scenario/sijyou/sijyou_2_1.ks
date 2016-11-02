@@ -174,18 +174,19 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 (ダメですわ。急な手紙で、驚かせてしまうかもしれないわ)[p]
+[暗転]
 ;月背景
-[chara_mod name="bg" storage="bg/sijyou_engawa3.jpg" time=1000]
+[image name="bg1" storage="bg/sijyou_engawa3.jpg" time=1000 top=304]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……華織様にお会いしたい)[p]
-[anim name="bg" top="-302" time=3000]
+[anim name="bg1" top="-302" time=3000]
 [wa]
-;anim中セーブ禁止
+;anim中セーブ禁止　背景を動かすのは危険なのでimg
 #
 私の心に華織様の笑顔が浮かんだ。[p]
-[stopanim]
+[stopanim name="bg1"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もし、私が助けてほしいと言ったら……あの方は……)[p]
 [主人公真剣]
@@ -194,6 +195,10 @@
 [sp]こういう時こそ、華織様の為に淑女として尽力しなければ)[p]
 ;ラストのそのままで　の逆テーマ↑
 ;〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜シーン 庭の見える部屋：夜 ここまで〜〜〜〜〜〜〜〜〜〜〜〜〜
+#
+[iscript]
+$('.bg1').remove();
+[endscript]
 [暗点]
 [fadeoutbgm time=3000]
 
