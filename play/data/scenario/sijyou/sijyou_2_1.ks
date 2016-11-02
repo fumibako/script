@@ -134,10 +134,9 @@
 ;他に良い言い回しは？
 ;〜〜シーン イベントのはじまりおわり〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 [主人公退場]
+#
 [fadeoutbgm time=3000]
 [暗転]
-
-
 ;夜、主人公部屋　考える
 ;〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜シーン 庭の見える部屋：夜 楽しみの前の降下〜〜〜〜〜〜〜〜〜〜〜〜〜
 ;【背景】主人公邸 庭の見える部屋：夜
@@ -319,7 +318,7 @@
 「さて、今日は華道を始めるにあたって……」[p]
 [主人公通常]
 ;〜〜〜〜〜〜〜〜シーン 先生と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～ここまで
-
+#
 ;〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜シーン 庭の見える部屋：夜 楽しみの前の降下〜〜〜〜〜〜〜〜〜〜〜〜〜
 [fadeoutbgm time=3000]
 [whosay name=教室のお手伝い color=%mp.color]
@@ -506,7 +505,7 @@ _　お仕事をされているのですよね……)[p]
 [主人公退場]
 ;この時まだ大変さが軽い
 [fadeoutbgm time=3000]
-
+#
 ;〜〜シーン 先生の退場と主人公の立ち位置説明おわり〜〜〜
 *sijyou_2
 [er]
@@ -690,7 +689,7 @@ _　お仕事をされているのですよね……)[p]
 [主人公退場]
 [fadeoutbgm time=3000]
 ;戻す
-
+#
 [四条退場]
 [暗転]
 
@@ -796,13 +795,14 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+;～～～～～～～～回想 困ったら回想シーン C会話おわり～～～～～～～～～
 ;効果セピア消し
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
-;～～～～～～～～回想 困ったら回想シーン C会話おわり～～～～～～～～～
+
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [四条ベース着物]
@@ -845,7 +845,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;(集中しないと)[p]
 ;華族が働いている感じるな～
 [主人公退場]
-
+#
 
 *sijyou_5
 [er]
