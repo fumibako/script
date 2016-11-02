@@ -1091,6 +1091,14 @@ _　いらっしゃるのでしょうか？)[p]
 
 
 ;@jump storage=sijyou/sijyou_2_1b.ks
+
+[if exp="tf.test_sijyou==true"]
+[四条退場]
+[暗転]
+[四条サイズ通常]
+;↓ifで飛んでるのでセーブデータの肥大化防止
+[clearstack]
+[endif]
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
