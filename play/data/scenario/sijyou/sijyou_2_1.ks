@@ -177,12 +177,12 @@
 (ダメですわ。急な手紙で、驚かせてしまうかもしれないわ)[p]
 [暗転]
 ;月背景
-[image name="bg1" layer=1 storage="bg/sijyou_engawa3.jpg" time=1000 top=304]
+[image name="bg1" layer=1 storage="bg/sijyou_engawa3.jpg" time=1000 top=-304]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……華織様にお会いしたい)[p]
-[anim name="bg1" top="-302" time=3000]
+[anim name="bg1" top="302" time=3000]
 [wa]
 ;anim中セーブ禁止　背景を動かすのは危険なのでimg
 #
