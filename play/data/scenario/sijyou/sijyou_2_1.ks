@@ -200,7 +200,7 @@
 [iscript]
 $('.bg1').remove();
 [endscript]
-[暗点]
+
 [fadeoutbgm time=3000]
 
 *sijyou_1
