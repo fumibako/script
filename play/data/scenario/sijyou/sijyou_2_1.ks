@@ -79,6 +79,11 @@
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
 [whosay name=華道の先生 color=%mp.color]
 「[名前]さん。 自由花の造形表現も充分に習得なされたようですね」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 ;【背景】主人公邸 お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -141,6 +146,7 @@
 ;他に良い言い回しは？
 ;〜〜シーン イベントのはじまりおわり〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 [主人公退場]
+[fadeoutbgm time=3000]
 [暗転]
 
 
@@ -424,7 +430,7 @@
 [whosay name=華道の先生 color=%mp.color]
 「今日は四条様とご一緒にできる淑女として、[r]
 [sp]いくつかの士女を提案したところ、ご家族揃って貴方をご指名されま[r]
-[sp]した。 それだけに貴方の腕を見込んでいるのでしょう。」[p]
+[sp]した。 それだけに貴方の腕を見込んでいるのでしょう」[p]
 [主人公憂い]
 「ですので、私が不在の間、きっちり指導役をなさって下さいね」[p]
 ;主人公への特別感 お約束
@@ -755,7 +761,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 「[名前]ちゃん、このハランの葉をよく見てごらん。[r]
 [sp]なびきや形が美しいと思わないかい？」[p]
 ; ハランとは、スズラン亜科ハラン属の常緑多年草で、巨大な葉を地表に立てる植物である。
-[whosay name="華織お兄様" color="olivedrab"]
+[whosay name="華織お兄さま" color="olivedrab"]
 「青々して、今を精一杯生きようとして、彼なりの個性もあるよ」[p]
 [whosay name=幼い頃の私 color=%mp.color]
 「個性？  華織お兄様、面白いこと言うのね」[p]
@@ -855,7 +861,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 小さな少女達を笑顔で見守る華織様。[p]
 #
-それは、まるであの日みた"華織お兄様"の優しい表情、そのままであった。[p]
+それは、まるであの日みた"華織お兄さま"の優しい表情、そのままであった。[p]
 ;四条は考え事をしている主人公に気づく。
 [主人公眉困り]
 [主人公目閉]
@@ -863,7 +869,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(私も昔は、あの様に華織お兄様に見守られて、いましたね[r]
+(私も昔は、あの様に華織お兄さまに見守られて、いましたね[r]
 ;[主人公眉下げ下]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
 [wait time=10]
@@ -874,6 +880,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
+[wait time=2]
 [四条アップ]
 「[名前]さん？ どうかされましたか？」[p]
 #
@@ -887,7 +894,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;心配そうにみている
 [四条伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公憂い];困りと憂いのちがいは何でしょう　わかりやすい
+[主人公憂い]
+;困りと憂いのちがいは何でしょう　わかりやすい
 (華織様のことを、いまさら昔の華織お兄様のようにみえたなんて[r]
 [sp]言ったら、なんて思われるのでしょう……)[p]
 #
@@ -895,7 +903,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今は、ひとりの淑女として、もっとしっかりしないと)[p]
 #
-自身では、名状しがたい感情を押し隠すと、笑って
+自身では、名状しがたい感情を笑って押し隠すと、別の話題へとすり替えた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ]
 「その、私も昔のことを思い出したのです」[p]
@@ -918,6 +926,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
+[主人公通常]
 「そうだ。[名前]さん」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -931,6 +940,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公笑顔]
 「はい！」[p]
+;いいですね！
 [主人公退場]
 [四条退場]
 [暗転]
@@ -954,7 +964,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 花の姿を整える際に鋏で切り落とされた花を集めてみると、手一杯になりそうな量であった。[p]
 ;貧乏くさいと思う人もいそうなので回避
 [whosay name="華織" color="olivedrab"]
-「そうですね。　片付けが終わりましたら、この花達に新しい居場所を作りましょうか」[p]
+「そうですね。　片付けが終わりましたら、この花達に新しい居場所を[r]
+[sp]作りましょうか」[p]
 ;さばいた花は他のところに場所をあたえて生かしてみましょう　教本より
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
@@ -995,6 +1006,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条通常]
 [四条目大]
 [whosay name="華織" color="olivedrab"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
 「[名前]さん、大変だったらそっちも手伝おうか？[r]
 僕は片付けも終わりましたから」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1006,14 +1021,22 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「そうですか。[r]
 [四条微笑み]
-[sp]では、こちらの花と僕が見本で持ってきた[ruby text=ぼ]牡[ruby text=たん]丹[ruby text=かご]籠で、いけて[r]
+[sp]では、こちらの花と、僕が見本で持ってきた[ruby text=ぼ]牡[ruby text=たん]丹[ruby text=かご]籠で、いけて[r]
 [sp]みましょうか」[p]
 #
+[wait time=2]
 [四条アップ]
+[wait time=1]
+;近づいて驚く
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+
 [四条目閉じ]
+[主人公通常]
 華織様は、藤でできた壺状の籠を手にすると、短くなってしまった花々を[r]
 手に取り、細く長い指で丁寧にしごく。[p]
-、
 #
 さきほどまで、直立だった花々は、みるみるうちに自然の中に生える姿へと変わっていく。[p]
 ;華織様の手によって
@@ -1028,6 +1051,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 （……生き生きと風情のある姿になっていくわ)[p]
 ;　【３】直立だった花々は、みるみるうちに自然の中に生える姿へと変わっていった。[p]
 ;【１】主人公の会話のみにする　【２】地の文のみにする　【３】地の文を最後にする
+#
 [主人公通常]
 その手は、よくよく見ると、[ruby text=つき]突[ruby text=ぬき]抜[ruby text=にん]忍[ruby text=どう]冬ののような、かすり傷が咲いていた。[p]
 ;わかりにくいから、スイカズラ？
@@ -1042,16 +1066,18 @@ _　いらっしゃるのでしょうか？)[p]
 「[名前]さんは、どんな人のために花をいけていますか?」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
-[主人公ポーズ片手]
+[主人公ポーズ指]
 「それは……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ポーズ片手]
 [主人公ふぅ閉]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 (華織様の為になんて……言えないわ）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ポーズ通常]
 [主人公照れ]
+[主人公ポーズ通常]
+
 「華織様は、誰かの為にいけているのですか？」[p]
 ;～～～ほほえみ小～～～～
 ;眉下げ
