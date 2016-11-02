@@ -266,7 +266,7 @@
 [sp]そう考えますと、そうなるのも……？？)[p]
 ;理由を考える主人公。伏線回収
 [whosay name="華織" color="olivedrab"]
-「[名前]さん、頑張りましょうね」[p]
+「[名字]さん、頑張りましょうね」[p]
 ;表情調整中です
 [主人公目大]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -898,7 +898,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;退場のあとのほうが安定しているかも
 [四条サイズ通常]
 
-
 ;背景　和室広め　赤っぽく
 ;〜〜〜 〜〜〜 シーン急上昇(期待値高め)〜〜〜 〜〜〜
 ;～～～～シーン片付ける～～～～～
@@ -906,6 +905,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 生徒たちが笑顔で帰ったあと、私たちは、教室の後片付けを始めた。[p]
 ; 生徒たちが笑顔で帰ったあと、私たちは、約束の前に教室の後片付けを始めた。[p]
+[主人公ポーズ通常]
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「結構、さばいた後のお花がでましたね」[p]
 ;さばく。花・葉・枝がつきすぎていて見た目がすっきりしない場合に、全体を見ながら適当に省略し、いけたい草木を強調し、美しい姿にします。
@@ -917,16 +918,15 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「そうですね。　片付けが終わりましたら、この花達に新しい居場所を作りましょうか」[p]
 ;さばいた花は他のところに場所をあたえて生かしてみましょう　教本より
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公口ほほえみ]
 「はい」[p]
-;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+;～～～～～～～～とりあえず　ここまで背景あったら描写書くかも～～～～～～～～～～～～～～～～～～～
 
 *sijyou_6
 ;[暗転] 暗転かつづくでもいい
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;背景　床の間のみ表示　夕方バージョン
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
-[主人公ポーズ通常]
-[主人公通常]
 [主人公横目]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
@@ -1024,29 +1024,36 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 私は、少し期待しながらも、華織様に尋ねた。[p]
 [whosay name="華織" color="olivedrab"]
-「そうですね。 やはり僕は、見に来て頂いた皆さんに喜んで[r]
+「そうですね。 
+[四条目閉じ]
+やはり僕は、見に来て頂いた皆さんに喜んで[r]
 [sp]もらうように いけてます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困りほほえみ]
 「そうなのですね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公困り]
+[主人公照れ目普通]
 (さすが華織様だわ。 少し期待してしまった私が恥ずかしい)[p]
-
 #
 私は、華織様の[ruby text=きん]謹[ruby text=げん]厳なる、お言葉に身を縮こませてしまった。[p]
 ;私は、華織様の四条家の由緒ある伝統を背負ったお言葉に身を縮こませてしまった。[p]
+[主人公憂い]
 [whosay name="華織" color="olivedrab"]
 「でも、なかなか皆さんを喜ばすことは難しいですね……[r]
-[sp]感動を与えるというものは、心に余裕をもって伝えなければ、見に来る人には、
-簡単に見透かされしまいます」[p]
+[sp]感動を与えるというものは、心に余裕をもって伝えなければ、
+[四条困り微笑み]
+見に来る人には、簡単に見透かされしまいます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉]
 （華織様……)[p]
+;セリフ思いつかない↑
 [whosay name="華織" color="olivedrab"]
+[四条微笑み]
 「でも、さっきの[名前]さんの言葉で、決意も改めることもできましたし、[r]
-[sp]もう一度、頑張ってみようと思います」[p]
+[sp]諦めず、もう一度、頑張ってみようと思います」[p]
 ;[名前]さんのおかげ、僕も改めて昔の想いを思い出しました。 何かのせいにしていては弱いままですよね
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
 「？　そうですか？」[p]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;(私、なにか言いましたかしら？）なくていいかも
@@ -1054,13 +1061,18 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「きちんと 、自分の目標が達成されたら、[r]
 [sp]一人前の華道家として[名前]さんの為に花をいけますね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公憂い]
 (私のためにいけてほしい。 なんて考えてしまいますが）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
 (華織様の花に対する思いは、[r]
 [sp]並大抵のものではない想いを持っていらっしゃるのですね)[p]
 ;キャラ説明
 
-；なかなか磯野とお父様の会話をしてくれない二人
+
 ;@jump storage=sijyou/sijyou_2_1b.ks
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
