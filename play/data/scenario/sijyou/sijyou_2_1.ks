@@ -163,6 +163,12 @@
 [wait time=10]
 #
 雲をすり抜ける、月影さやけき夜。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お父様からも了承を得られましたし、はりきって先生にも連絡してしまい[r]
 [sp]ましたが……)[p]
@@ -199,13 +205,13 @@
 ;ラストのそのままで　の逆テーマ↑
 ;〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜シーン 庭の見える部屋：夜 ここまで〜〜〜〜〜〜〜〜〜〜〜〜〜
 [暗点]
-
+[fadeoutbgm time=3000]
 
 *sijyou_1
 ;背景　和室　床の間のみ
 ;〜〜〜〜〜〜〜〜シーン急上昇する心情　キャラ紹介〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 [テキスト全画面白文字]
-―― 後日。
+―― 後日。[r]
 淑女を目指す[ruby text=おと]乙[ruby text=め]女[ruby text=ご]子達が、母親や[r]
 家令達に連れられ華道教室にやってきた。[r]
 [r]
@@ -229,6 +235,12 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ですが……)[p]
+;緊張と笑い
+[if exp="sf.BGM=='ON'"]
+;【BGM】冬支度
+[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
+[endif]
 [whosay name=華道の先生 color=%mp.color]
 「はい、皆さん。今日は、素敵な先生と私の信愛なる教え子を紹介します」[p]
 ;子供がやがやSE
@@ -321,6 +333,7 @@
 ;〜〜〜〜〜〜〜〜シーン 先生と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～ここまで
 
 ;〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜シーン 庭の見える部屋：夜 楽しみの前の降下〜〜〜〜〜〜〜〜〜〜〜〜〜
+[fadeoutbgm time=3000]
 [whosay name=教室のお手伝い color=%mp.color]
 [四条通常]
 [四条目大]
@@ -343,6 +356,12 @@
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
 先生は、さざめき立つ生徒達すら気にせず、彼女の側に寄って、内輪話を始めた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+
 [四条目パチ1回]
 [whosay name="華道の先生" color=%mp.color]
 「……なんですって？ 湖池屋男爵様が？」[p]
@@ -498,6 +517,7 @@ _　お仕事をされているのですよね……)[p]
 ;ラストにつながる言葉　つらい、大変　だと微妙だけど　続きはないと違和感
 [主人公退場]
 ;この時まだ大変さが軽い
+[fadeoutbgm time=3000]
 
 ;〜〜シーン 先生の退場と主人公の立ち位置説明おわり〜〜〜
 *sijyou_2
@@ -511,6 +531,12 @@ _　お仕事をされているのですよね……)[p]
 [四条通常]
 #
 生徒達を落ち着かせたところで、私と華織様は、初級者向けの授業を始めた。[p]
+;冬支度と迷う
+[if exp="sf.BGM=='ON'"]
+;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
+[playbgm storage="isono_miyabi.ogg" loop=true]
+[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
+[endif]
 [whosay name="華織" color="olivedrab"]
 「いけばな とは『師の背中を見て学ぶ』と言われてきました」[p]
 [四条目パチ1回]
@@ -674,7 +700,7 @@ _　お仕事をされているのですよね……)[p]
 (よかった……)[p]
 ;主人公微笑み 指 か 主人公横目 口微笑み 指
 [主人公退場]
-
+[fadeoutbgm time=3000]
 ;戻す
 
 [四条退場]
@@ -687,7 +713,7 @@ _　お仕事をされているのですよね……)[p]
 #
 [主人公ポーズ通常]
 [主人公通常]
-私は、華織様と、なんとか午前中をしのぎきって、お昼休みを頂くこととなった。[p]
+私は、華織様と、なんとか午前中を[ruby text=しの]凌ぎきり、お昼休みを頂くこととなった。[p]
 ;しのぎ・・・・乗り切って？
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
@@ -696,7 +722,17 @@ _　お仕事をされているのですよね……)[p]
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 「……すみません、[名前]さん。急に出てあんな事を言ってしまって……」[p]
-;一応、謝っておこうか
+;きずなと迷うとこ
+;[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+;[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+;[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+;[endif]
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ！  私も、励ましのお言葉に困っていたので助かりましたわ」[p]
 ;会話によって華織の行動が明確に
@@ -826,6 +862,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;(集中しないと)[p]
 ;華族が働いている感じるな～
 [主人公退場]
+
 
 *sijyou_5
 [er]
@@ -1149,6 +1186,7 @@ _　いらっしゃるのでしょうか？)[p]
 [四条サイズ通常]
 ;↓ifで飛んでるのでセーブデータの肥大化防止
 [clearstack]
+[fadeoutbgm time=3000]
 [endif]
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
