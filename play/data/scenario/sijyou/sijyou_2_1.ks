@@ -182,7 +182,7 @@
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……華織様にお会いしたい)[p]
-[anim name="bg1" top="202" time=3000]
+[anim name="bg1" top="102" time=3000]
 [wa]
 ;anim中セーブ禁止　背景を動かすのは危険なのでimg
 #
