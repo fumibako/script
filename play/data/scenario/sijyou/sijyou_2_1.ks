@@ -722,16 +722,11 @@ _　お仕事をされているのですよね……)[p]
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 「……すみません、[名前]さん。急に出てあんな事を言ってしまって……」[p]
-;きずなと迷うとこ
-;[if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-;[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-;[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
-;[endif]
+;きずなにしてみる　シーンがころころ変わるから音楽の一貫性がないかんじ
 [if exp="sf.BGM=='ON'"]
-;【BGM】星降る夜に（思い出/夢見るシーンに
-[playbgm storage="yumemiru_hoshi.ogg" loop=true]
-[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ！  私も、励ましのお言葉に困っていたので助かりましたわ」[p]
