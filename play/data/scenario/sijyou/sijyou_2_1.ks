@@ -175,14 +175,17 @@
 [主人公ふぅ閉]
 (ダメですわ。急な手紙で、驚かせてしまうかもしれないわ)[p]
 ;月背景
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[chara_mod name="bg" storage="bg/sijyou_engawa3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……華織様にお会いしたい)[p]
-;夢みるシーンで
+[anim name="bg" top="-302" time=3000]
+[wa]
+;anim中セーブ禁止
 #
 私の心に華織様の笑顔が浮かんだ。[p]
+[stopanim]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もし、私が助けてほしいと言ったら……あの方は……)[p]
 [主人公真剣]
