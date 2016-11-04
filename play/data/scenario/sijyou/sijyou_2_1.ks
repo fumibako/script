@@ -20,23 +20,31 @@
 #
 [chara_mod name="bg" storage="toumei.gif"]
 [endmacro]
-;透過→拡大→表示します
+;////////////////////////////
+;透過→下→拡大→表示します
 [keyframe name="scale1"]
 [frame p=0% opacity=0]
+[frame p=10% y=100]
 [frame p=50% scale="1.2"]
 [frame p=100% opacity=1]
 [endkeyframe]
+;透過→縮小→上位置
 [keyframe name="no_scale1"]
 [frame p=0% opacity=0]
-[frame p=50% scale="1"]
+[frame p=10% scale="1"]
+[frame p=100% y=-100]
+[endkeyframe]
+[keyframe name="no_opcity"]
+[frame p=0% opacity=0]
 [frame p=100% opacity=1]
 [endkeyframe]
+
 [macro name="四条アップ"]
 [kanim keyframe="scale1" name="sijyou_base" time=10]
 [kanim keyframe="scale1" name="sijyou_me" time=10]
 [kanim keyframe="scale1" name="sijyou_mayu" time=10]
 [kanim keyframe="scale1" name="sijyou_kuti" time=10]
-[kanim keyframe="scale1" name="sijyou_emo" time=2000]
+[kanim keyframe="scale1" name="sijyou_emo" time=1000]
 ;スマホフリーズ対策time=10 →おｋ
 [wa]
 [endmacro]
@@ -45,8 +53,14 @@
 [kanim keyframe="no_scale1" name="sijyou_me" time=10]
 [kanim keyframe="no_scale1" name="sijyou_mayu" time=10]
 [kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
-[kanim keyframe="no_scale1" name="sijyou_emo" time=2000]
+[kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
 ;スマホフリーズ対策time=10 →おｋ
+[wa]
+[kanim keyframe="no_opcity" name="sijyou_base" time=10]
+[kanim keyframe="no_opcity" name="sijyou_me" time=10]
+[kanim keyframe="no_opcity" name="sijyou_mayu" time=10]
+[kanim keyframe="no_opcity" name="sijyou_kuti" time=10]
+[kanim keyframe="no_opcity" name="sijyou_emo" time=1000]
 [wa]
 [endmacro]
 
@@ -1172,9 +1186,18 @@ _　いらっしゃるのでしょうか？)[p]
 (華織様の花に対する思いは、[r]
 [sp][ruby text=なみ]並[ruby text=たい]大[ruby text=てい]抵のものではない想いを持っていらっしゃるのですね)[p]
 ;キャラ説明
+
+[主人公目閉]
+(花を扱っていらっしゃる華織様は、とても輝いていらっしゃる……[r]
+[sp] そんな華織様のことが私は、憧れで、好きなのに)[p]
+[主人公憂い]
+;微妙
+(なのに何故でしょうか。 とても近い場所にいるのに……届かない気がして……)[p]
 #
-澄んだ月のような清らかな心をもった華織様の御心に[r]
-私は、畏敬の念を[ruby text=いだい]抱いた。[p]
+私は、あの晩に見た、届かない月に如く清らかなる華織様の御心に対して[p]
+切なさと畏敬の念を同時に[ruby text=いだい]抱いてしまった。[p]
+;澄んだ月のような清らかな心をもった華織様の御心に[r]
+;私は、畏敬の念を[ruby text=いだい]抱いた。[p]
 ;雲心月性 opに回帰　僅かに臆してしまった。　
 ;なんかいい言葉で。
 
