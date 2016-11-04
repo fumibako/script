@@ -20,7 +20,7 @@
 #
 [chara_mod name="bg" storage="toumei.gif"]
 [endmacro]
-;////////////////////////////
+;/////////////ロードすると以下が効かないのでサブルーチンに移動したいです//////////////
 ;透過→下→拡大→表示します
 [keyframe name="scale1"]
 [frame p=0% opacity=0]
