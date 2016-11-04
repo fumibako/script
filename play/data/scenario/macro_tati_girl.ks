@@ -134,6 +134,8 @@ if(mp.name=="文矢"){
     mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
     mp.color = "#414180";
     sf.message_name_y=400;
+}else if(mp.name=="四条悠次郎"||mp.name=="四条　悠次郎"||mp.name=="四条 悠次郎"){
+    mp.color = "darkolivegreen";
 }else if(mp.name=="葛城宮　晴仁"){
     mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
     mp.color = "#414180";
