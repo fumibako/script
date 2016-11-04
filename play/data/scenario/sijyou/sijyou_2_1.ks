@@ -56,11 +56,11 @@
 [kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
 ;スマホフリーズ対策time=10 →おｋ
 [wa]
-[kanim keyframe="no_opcity" name="sijyou_base" time=10]
-[kanim keyframe="no_opcity" name="sijyou_me" time=10]
-[kanim keyframe="no_opcity" name="sijyou_mayu" time=10]
-[kanim keyframe="no_opcity" name="sijyou_kuti" time=10]
-[kanim keyframe="no_opcity" name="sijyou_emo" time=1000]
+[kanim keyframe="no_opcity" name="sijyou_base" time=1000]
+[kanim keyframe="no_opcity" name="sijyou_me" time=1000]
+[kanim keyframe="no_opcity" name="sijyou_mayu" time=1000]
+[kanim keyframe="no_opcity" name="sijyou_kuti" time=1000]
+[kanim keyframe="no_opcity" name="sijyou_emo" time=3000]
 [wa]
 [endmacro]
 
