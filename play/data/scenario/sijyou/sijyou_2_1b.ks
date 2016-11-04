@@ -10,12 +10,13 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
 テストページからはじめます[p]
+[主人公ポーズ通常]
 [endif]
-
 *start
 ;〜〜〜シーン 急降下〜〜〜
 ;敵の登場 邪魔がはいる 先生が湖池屋さんのお嬢様を連れてくる
 ;エスコート・・・介助？
+[主人公ポーズ通常]
 [whosay name="華織" color="olivedrab"]
 「もし、分からないことがあったら仰ってください、こちら側からお手伝いしますので」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -210,7 +211,7 @@
 [whosay name="華織" color="olivedrab"]
 「はい……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様、[ruby text=わ]微[ruby text=ら]笑ruby text=わ]まないで下さい……)[p]
+(華織様、[ruby text=わ]微[ruby text=ら]笑[ruby text=わ]まないで下さい……)[p]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
 「私、今年で18となります。[sp]中々の歳でしょう？」[p]
 ;いきなり歳をきくなら名乗ってみたら？
