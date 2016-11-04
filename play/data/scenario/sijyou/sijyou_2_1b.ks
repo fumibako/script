@@ -48,11 +48,17 @@
 [sp]まだ婚約"だけ"している身の[名前]さんを四条家の名誉の為に[r]
 [sp]呼び出して良い道理なんて、僕には」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「?! そんなことは！」[p]
+「そんなことは……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そんな風に仰らないで下さい……四条家に嫁ぐ"淑女として"、これくらいの緊張は……)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (緊張……？ 違うわ……私、緊張していた事よりも……もっと違う何かが)[p]
+;[whosay name="華織" color="olivedrab"]
+;「僕という本性は、[名前]さんと文矢に出会うまで、華道という[r]
+;[sp]相手しか接しておらず……酷く心が無く、人の心を見誤って[r]
+;[sp]しまう、無情な人間性なのです……」[p]
+;「だから、知らぬうちに、人を、[名前]さんを不快にさせてしまっている……」[p]
+;(未だに大賞１つもとらず)
 [whosay name="華織" color="olivedrab"]
 「ご迷惑をかけてしまって申し訳ありません」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -60,46 +66,43 @@
 [sp]……一人で抱え込まないで下さい……)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私……今の気持ちを華織様に伝えたいのに……)[p]
-[whosay name="華織" color="olivedrab"]
-「僕という本性は、[名前]さんと文矢に出会うまで、華道という[r]
-[sp]相手しか接しておらず……酷く心が無く、人の心を見誤って[r]
-[sp]しまう、無情な人間性なのです……」[p]
-「だから、知らぬうちに、人を、[名前]さんを不快にさせてしまっている……」[p]
-;(未だに大賞１つもとらず)
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「?! そんなことは！」[p]
+「待ってください！」[p]
+
 ;四条目大
 #
 私は、初めて華織様の声を遮って、自身の声を荒げてしまった。[p]
 ;四条伏せ目
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……そうではないのです……」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様は、華衣様の事を思い悩んだり、私の事を気遣って下さる……)[p]
-(心が無いなんて思うほどに人のことを考えようとしていらっしゃる[r]
-[sp]清廉な方だと思います)[p]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;(華織様は、華衣様の事を思い悩んだり、私の事を気遣って下さる……)[p]
+;(心が無いなんて思うほどに人のことを考えようとしていらっしゃる[r]
+;[sp]清廉な方だと思います)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (なのに……華織様、ごめんなさい。[r]
 [sp]私、今抱いている、この気持ちを伝えないといけないのに……)[p]
 (自分の気持ちがわからないのです)[p]
 
---足音SE[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-（？　足音？）[p]
+#
+急いで伝えようと考えを巡らす。[r]
+――その時だった[p]
+#
 [whosay name=華道の先生 color=%mp.color]
 「湖池屋お嬢様、待ってください、今日の教室は……」[p]
 #
-落ちた空気の中に慌ただしい声がこだます。[p]
+;音の欠如
+;静粛な空気の中に慌ただしい声がこだます。[p]
+閑寂な二人の境界線に慌ただしい声が震え響く。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （何でしょうか……？）[p]
 #
-ーー私は、声がした先を振り返る。[p]
-;った。
+私は、声がした先を振り返った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （？　どうかされたのかしら？）[p]
 #
 教室の入り口から焦ったような高い声がして、私たちは、振り返った[p]
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「こんにちは お二方」[p]
 #
 そこには、流行りの洋服を嫌味なく纏う、都会的な淑女が佇んでいた[p]
@@ -111,7 +114,7 @@
 名状しがたい胸のざわめきが、身体を強張らせた[p]
 ;言葉にならない 胸のざわめきが、身体を強張らせた[p]
 
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「ごきんげんよう お二方さま」[p]
 #
 そこには、流行りの洋服を嫌味なく纏う、都会的な淑女が佇んでいた[p]
@@ -138,14 +141,14 @@
 ;主人公、割って入られ嫌な気持ちになる
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……)[p]
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「先生……いえ、……廊下で子女たちの話し声が耳に入りましたの」[p]
 ;説明すぎるけど、イベントしてないと困るなぁ
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「国の文化貢献を担う華道家、四条綾花様の弟子であり、[r]
 [sp]孫であらせる、美しい華道家がいらっしゃるとお聞きして……」[p]
 ;短くてもいいならカットする
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「私、好奇心のあまり、いてもたってもいられませんでしたの」[p]
 #
 ふわりと笑顔を見せる湖池屋様。[p]
@@ -153,13 +156,13 @@
 ;性格が淑女かわからないけど
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……)[p]
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「申し遅れましたわ。[r]
 私、湖池屋 矢須子です」[p]
 ;スコーンスコーンから命名 ツボありがとうございます
 ;長いので切ろう
 
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「父が、こちらの教室を借しながら、私自身も淑女見習いとして、[r]
 [sp]こちらの先生と綾花様に華道の教えを頂いているんですの」[p]
 [whosay name=湖池屋男爵令嬢color=%mp.color]
@@ -193,11 +196,11 @@
 家の名誉の為に代々、華道を行っているとお兄様にも聞かされている[p]
 ;兄か、お見合い前に磯野が説明した方がいいかもしれない
 
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「私、花と絵画が好きなんですの[r]
 今日のお稽古は、華織様も、ご一緒にして下さったら、とても心強いわ」[p]
 ;理由2として、どうでしょう？
-;華織(今はちょっと文奈さんと話してるからなぁ、ちょっと面倒だな……でもお祖母様のお客様の様ですし、どう断ろうかな)
+;華織(今はちょっと文奈さんと話してるからな、ちょっと面倒だな……でもお祖母様のお客様の様ですし、どう断ろうかな)
 [whosay name="華織" color="olivedrab"]
 「……今日は、難しいですが、また今度、機会がありましたら祖母と共に参りますね」[p]
 ;華織(…無難なところで)
@@ -208,14 +211,14 @@
 (いえ……こちらは、お祖母様のお付き合いされている家だから……だから私は……)[p]
 
 ;湖池屋、察し。
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「……そうですか。
 こちらのお教室は、湖池屋家の敷地でもありますから、いつでも構いませんわ」[p]
 [whosay name="華織" color="olivedrab"]
 「はい……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様、微笑ないで下さい……)[p]
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「私、今年で18となります。中々の歳でしょう？」[p]
 ;いきなり歳をきくなら名乗ってみたら？
 [whosay name="華織" color="olivedrab"]
@@ -278,7 +281,7 @@
 [sp]したかったのかも……しれません……)[p]
 [whosay name=華道の先生 color=%mp.color]
 「湖池屋様、今日の教室は隣です」[p]
-[whosay name=湖池屋男爵令嬢color=%mp.color]
+[whosay name=湖池屋男爵令嬢 color=%mp.color]
 「えぇ、そうでしたわね。今日は、特別授業をお願いしていたのよね。 [r]
 [sp]送り迎えご苦労様。では、参りましょうか[r]
 [sp]それでは、お二方、失礼しますわ！ 」[p]
@@ -402,13 +405,10 @@
 「……」[p]
 #
 華織様の素朴な、お答えに私の心の奥底にたまっていた靄が晴れていく。[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (やっぱり、華織様は、こんなにも近くにいらっしゃったのね……)[p]
-
 [whosay name="華織" color="olivedrab"]
 「こんな"歳になってしまいました"が、[名前]さんの夫として」[p]
-
 [whosay name="華織" color="olivedrab"]
 「[名前]さんに心配をおかけしない男となるまで、愛情や興味を持って眺めてやって下さい」[p]
 #
@@ -441,7 +441,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お父様や磯野に？)[p]
 ;話カッコでもいい お好きな方で
-
 #
 教室の窓から梅に宿るメジロの声が聞こえ、季節に思いを馳せる。[r]
 季節は、二月。　結納の日取りまで、あと一月程であった。[p]
