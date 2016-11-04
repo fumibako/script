@@ -32,7 +32,7 @@
 [keyframe name="no_scale1"]
 [frame p=0% opacity=0]
 [frame p=10% scale="1"]
-[frame p=100% y=-100 opacity=1]
+[frame p=100% y=-30 opacity=1]
 [endkeyframe]
 
 [macro name="四条アップ"]
