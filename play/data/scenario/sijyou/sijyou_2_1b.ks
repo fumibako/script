@@ -614,7 +614,7 @@
 [p]
 ;なんかこの辺でイチャコラすればいいのか？
 [whosay name="華織" color="olivedrab"]
-「[名前]さん。[ruby text=我君を]花が[ruby text=愛]綺[ruby text=す]麗[ruby text=]ですね」[p]
+「[名前]さん。[ruby text=我君]花[ruby text=を]が[ruby text=愛]綺[ruby text=す]麗ですね」[p]
 ;そういえば、先ほどの話は
 #
 華織様が私をみて微笑む。[p]
