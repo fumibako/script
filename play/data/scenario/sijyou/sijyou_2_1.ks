@@ -24,7 +24,7 @@
 ;透過→下→拡大→表示します
 [keyframe name="scale1"]
 [frame p=0% opacity=0]
-[frame p=10% y=100]
+[frame p=10% y=30]
 [frame p=50% scale="1.2"]
 [frame p=100% opacity=1]
 [endkeyframe]
@@ -32,11 +32,7 @@
 [keyframe name="no_scale1"]
 [frame p=0% opacity=0]
 [frame p=10% scale="1"]
-[frame p=100% y=-100]
-[endkeyframe]
-[keyframe name="no_opcity"]
-[frame p=0% opacity=0]
-[frame p=100% opacity=1]
+[frame p=100% y=-100 opacity=1]
 [endkeyframe]
 
 [macro name="四条アップ"]
@@ -55,12 +51,6 @@
 [kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
 [kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
 ;スマホフリーズ対策time=10 →おｋ
-[wa]
-[kanim keyframe="no_opcity" name="sijyou_base" time=1000]
-[kanim keyframe="no_opcity" name="sijyou_me" time=1000]
-[kanim keyframe="no_opcity" name="sijyou_mayu" time=1000]
-[kanim keyframe="no_opcity" name="sijyou_kuti" time=1000]
-[kanim keyframe="no_opcity" name="sijyou_emo" time=3000]
 [wa]
 [endmacro]
 
