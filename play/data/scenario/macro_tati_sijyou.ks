@@ -30,6 +30,21 @@
 [chara_show left=1 top=1 layer=12 name="sijyou_emo" time=0]
 [wait time=10]
 
+;◆四条立ち絵アップ、通常サイズ時のkeyframe設定
+;透過→下→拡大→表示します
+[keyframe name="scale1"]
+[frame p=0% opacity=0]
+[frame p=10% y=30]
+[frame p=50% scale="1.2"]
+[frame p=100% opacity=1]
+[endkeyframe]
+;透過→縮小→上位置
+[keyframe name="no_scale1"]
+[frame p=0% opacity=0]
+[frame p=10% scale="1"]
+[frame p=100% y=0 opacity=1]
+[endkeyframe]
+
 [macro name="四条アップ"]
 [kanim keyframe="scale1" name="sijyou_base" time=10]
 [kanim keyframe="scale1" name="sijyou_me" time=10]
