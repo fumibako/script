@@ -15,11 +15,14 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [preload storage="data/fgimage/bg/sijyou_engawa3.jpg"]
-[macro name="暗転"]
+;マクロ作成ありがとうございます(スクリプト担
+;マクロからの呼び出しで動作するか確認のため、一旦こちらのマクロをコメントアウト化
+;[macro name="暗転"]
 ;結構つかいますのでマクロに
-#
-[chara_mod name="bg" storage="toumei.gif"]
-[endmacro]
+;#
+;[chara_mod name="bg" storage="toumei.gif"]
+;[endmacro]
+;↓四条シナリオ冒頭に以下を置くかたちで大丈夫でしょうか？
 ;/////////////ロードすると以下が効かないのでサブルーチンに移動したいです//////////////
 ;透過→下→拡大→表示します
 [keyframe name="scale1"]
@@ -35,24 +38,24 @@
 [frame p=100% y=0 opacity=1]
 [endkeyframe]
 
-[macro name="四条アップ"]
-[kanim keyframe="scale1" name="sijyou_base" time=10]
-[kanim keyframe="scale1" name="sijyou_me" time=10]
-[kanim keyframe="scale1" name="sijyou_mayu" time=10]
-[kanim keyframe="scale1" name="sijyou_kuti" time=10]
-[kanim keyframe="scale1" name="sijyou_emo" time=1000]
+;[macro name="四条アップ"]
+;[kanim keyframe="scale1" name="sijyou_base" time=10]
+;[kanim keyframe="scale1" name="sijyou_me" time=10]
+;[kanim keyframe="scale1" name="sijyou_mayu" time=10]
+;[kanim keyframe="scale1" name="sijyou_kuti" time=10]
+;[kanim keyframe="scale1" name="sijyou_emo" time=1000]
 ;スマホフリーズ対策time=10 →おｋ
-[wa]
-[endmacro]
-[macro name="四条サイズ通常"]
-[kanim keyframe="no_scale1" name="sijyou_base" time=10]
-[kanim keyframe="no_scale1" name="sijyou_me" time=10]
-[kanim keyframe="no_scale1" name="sijyou_mayu" time=10]
-[kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
-[kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
+;[wa]
+;[endmacro]
+;[macro name="四条サイズ通常"]
+;[kanim keyframe="no_scale1" name="sijyou_base" time=10]
+;[kanim keyframe="no_scale1" name="sijyou_me" time=10]
+;[kanim keyframe="no_scale1" name="sijyou_mayu" time=10]
+;[kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
+;[kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
 ;スマホフリーズ対策time=10 →おｋ
-[wa]
-[endmacro]
+;[wa]
+;[endmacro]
 
 
 [イベントシーン構築]
