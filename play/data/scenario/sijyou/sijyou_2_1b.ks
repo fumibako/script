@@ -47,7 +47,9 @@
 ;次に全体の構成、花材の取り合わせ、花器、花台までをよく拝見し、花を生けた人へ感謝の一礼をしましょう。
 #
 [主人公目閉]
-私は、華織様を前にして、花を手に取り、剣山に挿していく。[p]
+私は、華織様を前にして、花を手に取り、器にいけていく。[p]
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉困り]
 (何でしょうか……今日は纏まりが良くないわ)[p]
@@ -65,6 +67,8 @@
 [四条微笑み]
 #
 私が困惑していると、華織様が優美な微笑みで私の手を取った。[p]
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公頬染め]
 [主人公目大]
@@ -72,6 +76,8 @@
 「！」[p]
 [whosay name="華織" color="olivedrab"]
 「葉を少なくしてみては如何でしょうか？」[p]
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 #
 華織様の冷たい指先に鼓動が高まる。[p]
 ;水触ってるからとか前のイベントの印象を持ってくる
@@ -123,7 +129,6 @@
 [主人公目大]
 「えっ……？！」[p]
 [主人公口通常]
-
 ;今日来た理由を話す
 [whosay name="華織" color="olivedrab"]
 [主人公目伏]
@@ -160,6 +165,7 @@
 (私……今の気持ちを華織様に伝えたいのに……)[p]
 [whosay name="華織" color="olivedrab"]
 「次からは、」[p]
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目大]
 [主人公口開]
@@ -173,6 +179,8 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
  「……」[p]
+ ;【SE】時計（広間カチコチ）
+[playse storage=tokei_hiroma.ogg loop=true ]
 ;会話文いれないとぶつ切り間半端ない
 #
 華織様の驚かれた顔が、遠く感じる。[p]
@@ -193,6 +201,7 @@
 ;[暗転]
 
 ;~~~~~~~~~~~~~~敵の登場シーン~~~~~~~~~~~~~~~~~~~~~
+[stopse]
 ――その時だった[p]
 #
 [whosay name=華道の先生 color=%mp.color]
@@ -209,14 +218,19 @@
 （何でしょうか……？）[p]
 #
 私は、声がした先を振り返った。[p]
-
 #
 そこには、流行りの洋服を嫌味なく纏う、都会的な淑女が佇んでいた。[p]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
 [主人公目伏]
 「あの方が四条綾花様の……」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
 #
 "湖池屋様"と呼ばれた令嬢は、 一点の曇りもない瞳で私の後ろにいた華織様を見つめていた。[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どちらのご令嬢でしょう……)[p]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
