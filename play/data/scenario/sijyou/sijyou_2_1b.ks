@@ -15,6 +15,11 @@
 [イベントシーン構築]
 [四条アップ]
 テストページからはじめます[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公憂い]
@@ -86,6 +91,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい……」[p]
 [whosay name="華織" color="olivedrab"]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条目伏]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
+[wait time=10]
 「……」[p]
 ;~~~~~~~~~~~~~~エスコ-トシーンここまで~~~~~~~~~~~~~~~~~~~~~
 
@@ -93,13 +104,20 @@
 #
 ふと、華織様のしなやかに動いていた手が止まり、華織様の瞳が不安気に私の目を捕えた。[p]
 ;華織様の目が不安気に私の目を捕えた。その瞳が[p]
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;[主人公憂い]
 [主人公口開]
 「どうかされましたか？」[p]
 [主人公口通常]
 [whosay name="華織" color="olivedrab"]
+[四条目閉じ]
  「[名前]さん。やはり不快にさせてしまったでしょうか？」[p]
+ [if exp="sf.BGM=='ON'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口開]
 [主人公目大]
@@ -114,10 +132,10 @@
 [whosay name="華織" color="olivedrab"]
 「何の考えもなく、[名前]さんを呼び出してしまった形です」[p]
 [whosay name="華織" color="olivedrab"]
+[四条口ムッ]
 「……ご迷惑でしたよね[r]
 [sp]まだ婚約"だけ"している身の[名前]さんを四条家の名誉の為に[r]
 [sp]呼び出して良い道理なんて、僕には」[p]
-;二人の時だからこそこれは許せるか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 [主人公目大]
@@ -150,7 +168,9 @@
 #
 [主人公口通常]
 私は、初めて華織様の声を遮って、自身の声を荒げてしまった。[p]
-;四条伏せ目
+;[四条目伏]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
+[wait time=10]
 [whosay name="華織" color="olivedrab"]
  「……」[p]
 ;会話文いれないとぶつ切り間半端ない
@@ -178,8 +198,8 @@
 [whosay name=華道の先生 color=%mp.color]
 [主人公目伏]
 「湖池屋お嬢様、待ってください、今日の教室は……」[p]
-
 #
+[四条通常]
 ;音の欠如
 ;静粛な空気の中に慌ただしい声がこだます。[p]
 閑寂な二人の境界線に慌ただしい声が響き渡った。[p]
