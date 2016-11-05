@@ -5,6 +5,13 @@
 ; その他マクロ設定
 ;==============================
 
+;◆[暗転]
+[macro name="暗転"]
+#
+[chara_mod name="bg" storage="toumei.gif"]
+[endmacro]
+
+
 ;◆[華衣]
 [macro name=華衣]
 [ruby text="か"]華[ruby text="い"]衣
