@@ -64,7 +64,9 @@
 [主人公退場]
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1500]
+;雪がふっていた的な・・・
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -142,7 +144,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;○回想1おわり
 ;【背景】ヒロインの部屋
 ;背景ない内はこれで
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
