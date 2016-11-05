@@ -30,6 +30,24 @@
 [chara_show left=1 top=1 layer=12 name="sijyou_emo" time=0]
 [wait time=10]
 
+[macro name="四条アップ"]
+[kanim keyframe="scale1" name="sijyou_base" time=10]
+[kanim keyframe="scale1" name="sijyou_me" time=10]
+[kanim keyframe="scale1" name="sijyou_mayu" time=10]
+[kanim keyframe="scale1" name="sijyou_kuti" time=10]
+[kanim keyframe="scale1" name="sijyou_emo" time=1000]
+;スマホフリーズ対策time=10 →おｋ
+[wa]
+[endmacro]
+[macro name="四条サイズ通常"]
+[kanim keyframe="no_scale1" name="sijyou_base" time=10]
+[kanim keyframe="no_scale1" name="sijyou_me" time=10]
+[kanim keyframe="no_scale1" name="sijyou_mayu" time=10]
+[kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
+[kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
+;スマホフリーズ対策time=10 →おｋ
+[wa]
+[endmacro]
 
 ;立ち絵表示[四条ベース着物]
 [macro name="四条ベース着物"]
