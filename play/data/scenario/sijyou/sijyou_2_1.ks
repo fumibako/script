@@ -16,48 +16,10 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 [preload storage="data/fgimage/bg/sijyou_engawa3.jpg"]
 ;マクロ作成ありがとうございます(スクリプト担
-;マクロからの呼び出しで動作するか確認のため、一旦こちらのマクロをコメントアウト化
-;[macro name="暗転"]
-;結構つかいますのでマクロに
-;#
-;[chara_mod name="bg" storage="toumei.gif"]
-;[endmacro]
-;↓立ち絵マクロファイルのサブルーチンエリアに移動と解釈しましたが、大丈夫でしょうか。設定を立ち絵マクロksに移動し、コメントアウト化
-;/////////////ロードすると以下が効かないのでサブルーチンに移動したいです//////////////
-;透過→下→拡大→表示します
-;[keyframe name="scale1"]
-;[frame p=0% opacity=0]
-;[frame p=10% y=30]
-;[frame p=50% scale="1.2"]
-;[frame p=100% opacity=1]
-;[endkeyframe]
-;透過→縮小→上位置
-;[keyframe name="no_scale1"]
-;[frame p=0% opacity=0]
-;[frame p=10% scale="1"]
-;[frame p=100% y=0 opacity=1]
-;[endkeyframe]
-
-;[macro name="四条アップ"]
-;[kanim keyframe="scale1" name="sijyou_base" time=10]
-;[kanim keyframe="scale1" name="sijyou_me" time=10]
-;[kanim keyframe="scale1" name="sijyou_mayu" time=10]
-;[kanim keyframe="scale1" name="sijyou_kuti" time=10]
-;[kanim keyframe="scale1" name="sijyou_emo" time=1000]
-;スマホフリーズ対策time=10 →おｋ
-;[wa]
-;[endmacro]
-;[macro name="四条サイズ通常"]
-;[kanim keyframe="no_scale1" name="sijyou_base" time=10]
-;[kanim keyframe="no_scale1" name="sijyou_me" time=10]
-;[kanim keyframe="no_scale1" name="sijyou_mayu" time=10]
-;[kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
-;[kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
-;スマホフリーズ対策time=10 →おｋ
-;[wa]
-;[endmacro]
-
-
+;macro_etc.ksに[暗転]マクロを移動
+;macro_tati_sijyou.ksにkeyframe設定及び[四条アップ][四条サイズ通常]マクロを移動し
+;問題無く動作することを確認(WindowsVistaSP2+Chrome 49.0.2623.112 m, iPhone6S+Safari)しました
+;(ちなみに古いPCよりスマホの方が動作が軽かったです…動作の軽さはPCかスマホかの違いよりも、性能によるのかもと思いました)
 [イベントシーン構築]
 [if exp="tf.test_sijyou==true"]
 【！】テストページからはじめます。シーンスキップをしますか[p]
