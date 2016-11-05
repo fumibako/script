@@ -138,6 +138,8 @@
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;「～ね」が続いておかしい
+;【SE】人々のざわめき（ザワザワ…宴会）
+[playse storage=zawa_enkai.ogg loop=false ]
 [主人公通常]
 #
 宴が半ばに入る頃、
@@ -260,6 +262,8 @@
 ;宴会または料亭席全体;宴会会場全体
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;【SE】人々のざわめき（ザワザワ…宴会）
+[playse storage=zawa_enkai.ogg loop=false ]
 #
 お兄様は、安堵したかのように微笑むと華織様をみつめた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -380,6 +384,8 @@
 [主人公ポーズ片手]
 [whosay name="四条父" color="#9B608B"]
 「お前達も、来てくれたか！」[p]
+;【SE】人々のざわめき（ザワザワ…宴会）
+[playse storage=zawa_enkai.ogg loop=false ]
 [主人公横目]
 [主人公口通常]
 [whosay name="四条一華" color=%mp.color]
