@@ -1039,7 +1039,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 細く長い指で丁寧にしごく。[p]
 ;しごく　華道用語です
 #
-さきほどまで、直立だった花々は、みるみるうちに自然の中に生える姿へと変わっていく。[p]
+切り捨てられていた花々は、みるみるうちに自然の中に生える美しい姿へと変わっていく。[p]
 ;華織様の手によって
 ;柔和ほほえみ(見とれる・夢見がち)　または　驚き小ほほえみ（感心）
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1050,7 +1050,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 （……生き生きと風情のある姿になっていくわ)[p]
-;　【３】直立だった花々は、みるみるうちに自然の中に生える姿へと変わっていった。[p]
 ;【１】主人公の会話のみにする　【２】地の文のみにする　【３】地の文を最後にする
 #
 [主人公通常]
@@ -1157,7 +1156,8 @@ _　いらっしゃるのでしょうか？)[p]
 ;なんかいい言葉で。
 
 ;引用元：～～はじめての　池坊いけばな入門～～
-;@jump storage=sijyou/sijyou_2_1b.ks
+[eval exp="tf.test_sijyou=false"]
+@jump storage="sijyou/sijyou_2_1b.ks"
 
 [if exp="tf.test_sijyou==true"]
 [四条退場]
