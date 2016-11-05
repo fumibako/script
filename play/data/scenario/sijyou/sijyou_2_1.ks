@@ -315,7 +315,10 @@ $('.bg1').remove();
 使い込まれた桃色の割烹着をきた壮年の女性が、慌てた様子で教室の入り口に現れた。[p]
 [whosay name=教室のお手伝い color=%mp.color]
 「それが、その湖池屋の男爵様から……」[p]
-;忘れてました　ありがとうございます
+;【SE】人々のざわめき（ザワザワ…暗くせわしない感じの効果音含む）
+[playse storage=zawa_dark.ogg loop=false ]
+;【SE】人々のざわめき（ザワザワ…屋内）
+;[playse storage=zawa_room.ogg loop=false ]
 #
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
