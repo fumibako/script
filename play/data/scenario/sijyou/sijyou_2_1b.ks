@@ -170,10 +170,7 @@
 [主人公目大]
 [主人公口開]
 「待ってください！」[p]
-;四条目大
-#
 [主人公口通常]
-私は、初めて華織様の声を遮って、自身の声を荒げてしまった。[p]
 [四条通常]
 [whosay name="華織" color="olivedrab"]
  「！」[p]
@@ -181,7 +178,13 @@
 [playse storage=tokei_hiroma.ogg loop=true ]
 ;会話文いれないとぶつ切り間半端ない
 #
+私は、初めて華織様の声を遮って、自身の声を荒げてしまった。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（…………)[p]
 華織様の驚かれた顔が、遠く感じる。[p]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 ;[四条目伏]
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
 [wait time=10]
