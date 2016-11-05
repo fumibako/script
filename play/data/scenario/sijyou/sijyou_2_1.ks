@@ -22,21 +22,21 @@
 ;#
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;[endmacro]
-;↓四条シナリオ冒頭に以下を置くかたちで大丈夫でしょうか？
+;↓立ち絵マクロファイルのサブルーチンエリアに移動と解釈しましたが、大丈夫でしょうか。設定を立ち絵マクロksに移動し、コメントアウト化
 ;/////////////ロードすると以下が効かないのでサブルーチンに移動したいです//////////////
 ;透過→下→拡大→表示します
-[keyframe name="scale1"]
-[frame p=0% opacity=0]
-[frame p=10% y=30]
-[frame p=50% scale="1.2"]
-[frame p=100% opacity=1]
-[endkeyframe]
+;[keyframe name="scale1"]
+;[frame p=0% opacity=0]
+;[frame p=10% y=30]
+;[frame p=50% scale="1.2"]
+;[frame p=100% opacity=1]
+;[endkeyframe]
 ;透過→縮小→上位置
-[keyframe name="no_scale1"]
-[frame p=0% opacity=0]
-[frame p=10% scale="1"]
-[frame p=100% y=0 opacity=1]
-[endkeyframe]
+;[keyframe name="no_scale1"]
+;[frame p=0% opacity=0]
+;[frame p=10% scale="1"]
+;[frame p=100% y=0 opacity=1]
+;[endkeyframe]
 
 ;[macro name="四条アップ"]
 ;[kanim keyframe="scale1" name="sijyou_base" time=10]
