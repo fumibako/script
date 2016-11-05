@@ -31,6 +31,7 @@
 [whosay name="華織" color="olivedrab"]
 「もし、分からないことがあったら仰ってください、こちら側からお手伝い[r]
 [sp]しますので」[p]
+[四条目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 「は、はい……」[p]
