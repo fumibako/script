@@ -169,8 +169,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;背景ない内はこれで
 [whosay name="文矢" color="#538a8a"]
 「[名前]、華織が来たよ。 外にでてきて」[p]
@@ -182,6 +180,8 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 
 #
 白く光る障子から、お兄さまの影と華織お兄さまの影が映る。[p]
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 開けてみると視界に広がる一面の白。[r]
 そして、縁側にひとつ。[r]
