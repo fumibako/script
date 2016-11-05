@@ -8,6 +8,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;背景　床の間のみ表示　夕方バージョン
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [イベントシーン構築]
 テストページからはじめます[p]
 [主人公ポーズ通常]
@@ -51,6 +53,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
  [主人公横伏目]
 (何でしょう、昔はそんなことなかったですのに)[p]
+[四条微笑み]
 #
 私が困惑していると、華織様が優美な微笑みで私の手を取った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -178,17 +181,15 @@
 （何でしょうか……？）[p]
 #
 私は、声がした先を振り返った。[p]
+#
+そこには、流行りの洋服を嫌味なく纏う、都会的な淑女が佇んでいた。[p]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
 [主人公目伏]
 「あの方が四条綾花様の……」[p]
 #
-そこには、流行りの洋服を嫌味なく纏う、都会的な淑女が佇んでいた[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-（どちらのご令嬢でしょうか……)[p]
-#
-[主人公目大]
 "湖池屋様"と呼ばれた令嬢は、 一点の曇りもない瞳で私の後ろにいた華織様を見つめていた。[p]
-[whosay name=湖池屋男爵令嬢 color=%mp.color]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（どちらのご令嬢でしょう……)[p]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
 「ごきんげんよう お二方さま」[p]
 ;ゴメンあそばせ？
