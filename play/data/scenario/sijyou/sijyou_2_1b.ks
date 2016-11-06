@@ -206,6 +206,8 @@
 ;~~~~~~~~~~~~~~敵の登場シーン~~~~~~~~~~~~~~~~~~~~~
 [stopse]
 ――その時だった[p]
+;【SE】軽い足音（小走りフェードアウト）
+[playse storage=girl_out_run.ogg loop=false ]
 #
 [whosay name=華道の先生 color=%mp.color]
 [主人公目伏]
@@ -221,6 +223,9 @@
 （何でしょうか……？）[p]
 #
 私は、声がした先を振り返った。[p]
+;SEは想像なので・・・変更しても大丈夫です
+;【SE】襖を開ける（ゆっくり）
+[playse storage=fusuma-open.ogg loop=false ]
 #
 そこには、流行りの洋服を嫌味なく纏う、都会的な淑女が佇んでいた。[p]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
@@ -499,7 +504,8 @@
 「？ えぇ」[p]
 ;華織(この方は、なんでしょうか？)
 [主人公目伏]
-
+;【SE】襖を閉じる（ゆっくり）
+[playse storage=fusuma-close.ogg loop=false ]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
 [四条目閉じ]
 「それでは、ごきげんよう。その時は、夫人としてお会いしましょう」[p]
@@ -509,6 +515,8 @@
 [fadeoutbgm time=3000]
 ;読みにくい
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 「ごきげんよう」[p]
 ;お相手が素敵な方で羨ましいですわね
 ;~~~~~~~~~~~~~~退場へのシーン~~~~~~~~~~~~~~~~~~~~~
@@ -932,6 +940,7 @@
 [主人公伏目]
 ;[主人公目伏柔]
 決して真っ直ぐにならない花の姿を大切にしながら、私は大切な誰かのために花を生けた[p]
+[主人公退場]
 [四条退場]
 [四条サイズ通常]
 [暗転]
