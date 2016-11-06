@@ -70,6 +70,8 @@
 [glink target=";*17_ex" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="*18_ex" text="華織の道" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="*19_ex" text="兄から" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
+[glink target="*sincya" text="新茶" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="*satuki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 *common
 ;[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 ;[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
@@ -834,6 +836,45 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [手紙読了]
 ;///////兄の手紙///////
 
+*sincya
+[テキスト全画面白文字]
+新茶の話題[p]
+;///////新茶の話題///////
+[手紙四条 fumi_number=]
+[名前]、手紙をありがとう。[r]
+もう、新茶の季節なのですね。[r]
+僕も、あの場所をよく通りますが、[名前]の季節を[r]
+感じ取る感性には目を見張るものがありますね。[r]
+[r]
+なんだか、[名前]の手紙を読んでいたら、お茶のいい香りがしてきました。[p]
+[r]
+追記[r]
+お茶を飲みながら、季節の花を眺める時間が
+とても落ち着く時間です。[r]
+[名前]さんは、どんな時にお茶をいただきますか？[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+*satuki
+[テキスト全画面白文字]
+さつきの話題[p]
+;///////さつきの話題///////
+[手紙四条 fumi_number=]
+[名前]。手紙をありがとう。[r]
+百年の月日の経つ、さつきとは見事な[r]
+ものでしょうね……。[r]
+[p]
+盆栽は、小さな箱庭のように思えて、[r]
+生花とは、違った面白さがあるよね[r]
+あの小さな世界の中の大きな木の下で、[r]
+のんびりと過ごしてみたい。なんて思うのは、[r]
+僕だけでしょうか？[p]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
 
 ;実装時に各手紙に読了処理等を追記予定
 ;fumi_numberがうまく動作していないので実装時に試行錯誤予定。マクロじゃなく各所にベタ打ちした方が早いやも
