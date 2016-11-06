@@ -478,7 +478,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [主人公驚]
 #
-父の後ろをついて、玄関先まで出てみると、兄、文也が待っていた。[p]
+父の後ろをついて、玄関先まで出てみると、兄、文矢が待っていた。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
 [playbgm storage="isono_miyabi.ogg" loop=true]
@@ -524,7 +524,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公ポーズ通常]
 [主人公通常]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 見事な作品達が、白亜の台座に美を競い合いながらも、固有の世界感を表現している[p]
 ;白を基調とした展示会場には、美しい花々が趣向ごとに展示されており、[r]
@@ -549,7 +549,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 #
 ;背景を変えてみる・・・松の枝、沈丁花のイメージを被せる必要あり
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 お兄様が金屏風の前に飾られた受賞作品を見つける。[p]
 [if exp="f.para_shujinkou_j_gogaku>=100"]
 ;語学の能力が高い
@@ -605,7 +605,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (こちらは、複数の生け花で、夏の[ruby text=かわず]蛙の跳ねる姿を表現されているの[r]
@@ -699,14 +699,18 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公退場]
 *sijyou_1
 ;～～～～～～シーン壇上。イベントの趣旨、プレイヤーの勝利～～～～～～～～～
+;↓［全画面～］タグの関係か華織立ち絵の表示が不安定なため再度マクロをコールしてみます(スクリプト担
+[call target=*start storage="macro_tati_sijyou.ks"]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 #
 しばらく、展示作品に愉しんでいると、華織様が他の華道名士達と[r]
 共に壇上に現れた。[p]
 ;室内ざわざわSE
+;【SE】人々のざわめき（ザワザワ…屋内）
+[playse storage=zawa_room.ogg loop=false ]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公ポーズ通常]
 [主人公ほほえみ]
 [whosay name="華織" color="olivedrab"]
@@ -823,7 +827,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;転
 壇上での演説後、華織様は、祖母様と祖父様とともに挨拶に来られた。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース羽織]
 [四条真剣]
 [主人公ポーズ通常]
