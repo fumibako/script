@@ -69,9 +69,12 @@
 [glink target="*16_end" text="結納前" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target=";*17_ex" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="*18_ex" text="華織の道" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="*19_ex" text="兄から" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
-[glink target="*sincya" text="新茶" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="*satuki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
+[glink target="*19_ex" text="兄から" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
+;ページ停止に地点にジャンプ
+@jump target="*common"
+[s]
+[glink target="*sincya" text="新茶" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="*satuki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 *common
 ;[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 ;[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
@@ -325,6 +328,25 @@
 将来は四条家で誇れるものを見つけたいな。[r]
 祖父にお前は、『平均的に何でもこなすが特出したものがない』[r]
 って言われるから。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+
+[手紙四条読了 fumi_number=]
+
+*sijyou_syourai2_1|(お見合い後)
+[テキスト全画面白文字]
+『将来について』(お見合い後,その後)
+[p]
+;#
+[手紙四条 fumi_number=]
+[r][r][r]
+[名前]さんへ[r]
+[r]
+いつも手紙をありがとう。[r]
+子供のころの夢は、お祖母様にも、引けを取らない[r]
+華道家になることだったね。[r]
+[名前]さんの昔の夢は、なんでしたか？[r]
+文矢のお嫁さんだった記憶があるのだけど……[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
@@ -857,7 +879,41 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+*sincya_2
+[テキスト全画面白文字]
+新茶の話題[p]
+;///////新茶の話題///////
+[手紙四条 fumi_number=]
+[名前]さん、手紙をありがとう。[r]
+[r]
+この前、見晴らしの良い山通りを散策していたら[r]
+山岳の合間に小さな茶畑を見つめました。[r]
+茶畑の上で、風車が回っているのは、何か意味が[r]
+あるのでしょうか？[p]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+*sincya_3
+[テキスト全画面白文字]
+新茶の話題[p]
+;///////新茶の話題///////
+[手紙四条 fumi_number=]
+[名前]さん、手紙をありがとう。[r]
+[r]
+あの風車は扇風機っていうらしいです。[r]
+暖かい空気の層を各藩する事で、霜の被害を防ごいで[r]
+いるんだそう。[r]
+そういった努力によってより美味しいお茶が出来てい[r]
+ると思うと、ありがたいですよね[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+
 *satuki
+[wait time=10]
 [テキスト全画面白文字]
 さつきの話題[p]
 ;///////さつきの話題///////
@@ -875,6 +931,96 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
+
+
+*sisyu
+[wait time=10]
+[テキスト全画面白文字]
+詩集[p]
+;///////さつきの話題///////
+[手紙四条 fumi_number=]
+[名前]。手紙をありがとう。[r]
+素敵な詩集を見つけたんだね[r]
+[r]
+菖蒲の美しさは、高く競い合う葉の中に[r]
+咲く薄紫の上品の花。[p]
+凛とした姿は貴婦人のよう。[r]
+[r]
+僕も詩人になれるでしょうか？[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+*kiki_jyouzu
+[wait time=10]
+[テキスト全画面白文字]
+聞き上手と話し上手[p]
+;///////聞き上手と話し上手の話題///////
+[手紙四条 fumi_number=]
+[名前]。手紙をありがとう。[r]
+そんなことがあったんだね[r]
+よく話す方って話題が尽きないですね[r]
+僕は、文矢の前以外では、聞く側かも？[r]
+[p]
+今の[名前]さんは、どちらかと言えば[r]
+話を聞く方ですか？[r]
+それとも、話をする方ですか？[p]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+*kiki_jyouzu_2
+
+[テキスト全画面白文字]
+[wait time=10]
+聞き上手と話し上手[p]
+;///////聞き上手と話し上手の話題2///////
+[手紙四条 fumi_number=]
+[名前]さん。手紙をありがとう。[r]
+[r]
+[名前]さんが楽しく話をしてくれる姿を[r]
+思い描くと心が穏やかになります。[r]
+[p]
+今日あったこと、気づいたこと[r]
+何気ないことを教えて下さると嬉しいです[p]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+*syokuji
+[テキスト全画面白文字]
+[wait time=10]
+『食事』[p]
+[p]
+;///////聞き上手と話し上手の話題2///////
+[手紙四条 fumi_number=]
+[名前]。手紙をありがとう。[r]
+[r]
+暖かいハムボーグ、ステーキは、[r]
+とても美味しいですよ。[p]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+
+*syokuji_2
+[テキスト全画面白文字]
+[wait time=10]
+『食事』[p]
+[p]
+;///////聞き上手と話し上手の話題2///////
+[手紙四条 fumi_number=]
+[名前]さん。手紙をありがとう。[r]
+お父様のお許しを得てからになってしまいますが[r]
+ウチで食事会を行いたいですね[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+
 
 ;実装時に各手紙に読了処理等を追記予定
 ;fumi_numberがうまく動作していないので実装時に試行錯誤予定。マクロじゃなく各所にベタ打ちした方が早いやも
