@@ -184,6 +184,7 @@ $('.bg1').remove();
 ;[暗転]
 ;[chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
 ;主人公横目 頬染め
@@ -294,6 +295,8 @@ $('.bg1').remove();
 [sp]花の前でこそ、淑女として[ruby text=きん]謹[ruby text=げん]厳な態度でのぞみましょう」[p]
 [whosay name=華道の先生 color=%mp.color]
 「さて、今日は華道を始めるにあたって……」[p]
+;【SE】軽い足音（小走りフェードイン）
+[playse storage=girl_in_run.ogg loop=false ]
 [主人公通常]
 ;〜〜〜〜〜〜〜〜シーン 先生と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～ここまで
 #
@@ -367,6 +370,7 @@ $('.bg1').remove();
 [主人公憂い]
 先生は、様子を訝しむ生徒達に一言謝ると私達を廊下に連れ出した。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース羽織]
 [四条通常]
 ;[四条眉下げ]
@@ -493,6 +497,7 @@ _　お仕事をされているのですよね……)[p]
 ;〜〜シーン キャラと造作1 (軽度)後に繋ぐもの(テンション↓)〜〜〜
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公ポーズ通常]
 [主人公通常]
 [四条ベース羽織]
@@ -553,6 +558,7 @@ _　お仕事をされているのですよね……)[p]
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース羽織]
 [四条通常]
 [主人公ポーズ指]
@@ -685,6 +691,7 @@ _　お仕事をされているのですよね……)[p]
 ;しのぎ・・・・乗り切って？
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;戻す
 [四条ベース着物]
 [四条困り微笑み]
@@ -787,6 +794,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース着物]
 [四条通常]
 [四条目閉じ]
@@ -839,6 +847,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=乙女子その弐 color=%mp.color]
 「できましたわ！」[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公ポーズ通常]
 [主人公通常]
 [四条ベース羽織]
@@ -979,7 +988,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[暗転] 暗転かつづくでもいい
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;背景　床の間のみ表示　夕方バージョン
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公横目]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
