@@ -49,7 +49,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_blue.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 [endmacro]
@@ -100,7 +100,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_konyakusha.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 [endmacro]
@@ -218,7 +218,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_zaizen.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 
@@ -428,8 +428,8 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + 4;
 [clearfix]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-;背景変更:手紙仮画像(藤枝イメージカラーなどを相談後に作成予定です)
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_hujieda.jpg" time=500]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg" time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 
