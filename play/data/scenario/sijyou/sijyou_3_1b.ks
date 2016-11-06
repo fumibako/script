@@ -136,7 +136,7 @@
 *common1
 ;宴会または料亭席全体;宴会会場全体
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;「～ね」が続いておかしい
 ;【SE】人々のざわめき（ザワザワ…宴会）
 [playse storage=zawa_enkai.ogg loop=false ]
@@ -261,7 +261,7 @@
 [chara_mod name="bg" storage="toumei.gif"]
 ;宴会または料亭席全体;宴会会場全体
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;【SE】人々のざわめき（ザワザワ…宴会）
 [playse storage=zawa_enkai.ogg loop=false ]
 #
@@ -275,7 +275,7 @@
 [chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=160 top=100 left=230 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
@@ -302,7 +302,7 @@
 ;背景　宴会会場　または料亭
 ;宴会または料亭席全体;宴会会場全体
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私は、お兄様が華織様を連れてこられて出会った気がしますが……）[p]
 ;兄、主人公の視線に気づく
@@ -370,7 +370,7 @@
 *common3
 ;宴会または料亭席全体;宴会会場全体
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織君も、もう少し飲んだらどうかな」[p]
 [if exp="sf.BGM=='ON'"]
@@ -417,7 +417,7 @@
 [主人公通常]
 [主人公目閉じ]
 ;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[chara_mod name="bg" storage="bg/bg_ryouotei_yuu.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 #
 そうして、華織様のおかげで席は埋まり、本来の四条家と[名字]家の家族が集まった。[p]
@@ -838,7 +838,7 @@
 [chara_mod name="bg" storage="toumei.gif"]
 華織様に誘われた私は、庭へと赴いた。[p]
 ;【背景】庭園
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yuu.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 ;結
 ;食事の後。二人になる　夕方[p]
@@ -1027,7 +1027,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif" time=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 華織様の言葉とともに[r]
 永遠と不滅の花言葉をもつ沈丁花が、風に乗って甘く香る[p]
@@ -1048,7 +1048,9 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 「どんくさいから、ちょっと小突いただけだろ！」[p]
 #
 ;【背景】庭園 夕方か夜でお願いします。
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
+;宵の口からもうすこし経った頃合いを目指してみました
+;月が明るめで足元は手持ちの行灯か提灯で照らされている(手前に温かみのある光源)イメージです(スクリプト担
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yoru.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 [四条ベース羽織]
 [四条困り微笑み]
@@ -1068,8 +1070,9 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 ;料亭廊下
 ;http://sunset77light.rdy.jp/material/index.html
 ;料亭の廊下　ゆうあかりさんの　主人公庭で使用したの隣５３を薄暗く　または、https://www.pakutaso.com/20150232044post-5173.htmlお願いします。
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+;背景素材を探してくださってありがとうございます。ゆうあかりさんの53を夜っぽくしてみました(スクリプト担
+[chara_mod name="bg" storage="bg/bg_enkaijou_rouka.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name="華織" color="olivedrab"]
 (まったく、こういう時は気を効かせてほしいな)[p]
 [whosay name=文矢 color="#538a8a"]
