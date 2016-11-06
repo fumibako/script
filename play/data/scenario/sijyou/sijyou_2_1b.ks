@@ -11,7 +11,8 @@
 ;背景　床の間のみ表示　夕方バージョン
 [四条ベース羽織]
 [四条微笑み]
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [イベントシーン構築]
 [四条アップ]
 テストページからはじめます[p]
@@ -705,6 +706,10 @@
 #
 心に暖かな灯火を感じてしまう。[r]
 そんな私の心は、ようやく１つの答えを導き出した。[p]
+;主人公の心の動きや時間経過に合わせて背景に変化が欲しく、夕方2バージョン目を追記してみます(スクリプト担
+;加工具合や背景の変化位置などご希望がありましたら教えてください
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目大]
 (！ そうだわ、私、華織様にお近づきしたかったのですわ……)
