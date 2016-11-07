@@ -346,7 +346,7 @@ $('.bg1').remove();
 [sp]ですが……」[p]
 [whosay name="華道の先生" color=%mp.color]
 「わかりました。[r]
-[sp]やはり、あの家の方々は、予定を聞き受けてくれないのですね……」[p]
+[sp]立場上、行かないわけにはいきませんね……」[p]
 ;今日は一緒に来ていただける方を頼んでおいてよかったわ」[p]
 ;[四条眉困り]
 ;[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
