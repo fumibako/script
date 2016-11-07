@@ -37,9 +37,15 @@
 
 ;[glink target="test10" text="表情テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=450 color=white]
 
+[glink target="sansaku1" text="テスト：◆B4nFWraU42" graphic="select_waku_x500.png" size=20 width="240" x=100 y=450 color=white]
+
+[glink target="sansaku2" text="テスト：◆I9IhvvVdPo" graphic="select_waku_x500.png" size=20 width="240" x=360 y=450 color=white]
+
+[glink target="test6" text="テスト：◆jsYiJcqRkk" graphic="select_waku_x500.png" size=20 width="240" x=620 y=450 color=white]
+
 ;[glink target="haikei" text="背景テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=400 color=white]
 
-[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="500" x=100 y=500 color=white]
+[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="760" x=100 y=520 color=white]
 [s]
 
 *test1
