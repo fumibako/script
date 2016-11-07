@@ -32,9 +32,9 @@
 [frame p=100% scale=-0.8]
 [endkeyframe]
 ;縮小実行
-[kanim name="saku1" keyframe="ani1" time="0"]
-[kanim name="saku2" keyframe="ani2" time="0"]
-[kanim name="saku3" keyframe="ani3" time="0"]
+[kanim name="saku1" keyframe="ani1" time="5"]
+[kanim name="saku2" keyframe="ani2" time="5"]
+[kanim name="saku3" keyframe="ani3" time="5"]
 [wait time=1]
 ;[wa]とまるので×
 ;アニメーション
