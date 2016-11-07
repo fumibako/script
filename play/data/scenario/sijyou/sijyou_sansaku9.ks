@@ -1,7 +1,7 @@
-[暗転]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
+[暗転]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
@@ -18,7 +18,7 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-;[暗転]
+
 #
 『見返り橋』にやってきた。[r]
 橋の下をみると、子供達が遊んでいる。[p]
