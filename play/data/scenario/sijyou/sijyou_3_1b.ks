@@ -413,7 +413,7 @@
 [暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 #
-功を奏でるように女将達は三味線を鳴らし、宵を迎える。[p]
+功を奏でるように女将達は三味線を鳴らなか、空が薄っすらと茜色に染まる。[p]
 [主人公通常]
 [主人公目閉じ]
 ;[料亭]
@@ -1062,21 +1062,42 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+;////////暫定//////////
+;[主人公退場]
+;////////暫定//////////
 #
 ;～～～～～～～～～～～〜〜〜シーン真の兄というもの〜〜～～～～～～～～～～～～～～～～～～～
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-[イベントシーン構築枠茶色]
+
 ;料亭廊下
 ;http://sunset77light.rdy.jp/material/index.html
 ;料亭の廊下　ゆうあかりさんの　主人公庭で使用したの隣５３を薄暗く　または、https://www.pakutaso.com/20150232044post-5173.htmlお願いします。
 ;背景素材を探してくださってありがとうございます。ゆうあかりさんの53を夜っぽくしてみました(スクリプト担
+;ありがとうございます。
 [chara_mod name="bg" storage="bg/bg_enkaijou_rouka.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;////////暫定//////////
+;[主人公ポーズ通常]
+;[主人公通常]
 [whosay name="華織" color="olivedrab"]
 (まったく、こういう時は気を効かせてほしいな)[p]
+;[whosay name="華織" color="olivedrab"]
+;「あぁ、[名前]さん。先に戻っててくれますか？」
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;「はい？」[p]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;(どうしたのかしら)[p]
+#
+;////////暫定////////////
+[イベントシーン構築枠茶色]
+;[四条目閉じ]
+[名前]さんが賑やかな部屋に戻っていく中、[r]
+僕は、薄暗闇に気配を感じ、足をとめる。
+;ライバル、兄　かはたれに
 [whosay name=文矢 color="#538a8a"]
 「お帰り。……そんな顔して、また悩みごとかい？」[p]
+;[四条困り微笑み]
 #
 まるで気を効かせて待っていたかのような態度で、文矢が話しかけてきた。[p]
 [whosay name="華織" color="olivedrab"]
@@ -1155,7 +1176,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-新しく訪れる幸せな悩みについて、ふたりの話は、夜も更けていった。[p]
+新しく訪れる幸せな悩みについて、ふたりの話は、尽きることなく夜も更けていった。[p]
 [イベントシーン終了]
 
 [if exp=tf.test_sijyou==true]
