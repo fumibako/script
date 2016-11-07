@@ -96,7 +96,7 @@ $('.saku3').remove();
 「！　」[p]
 [whosay name="華衣" color=%mp.color]
 「あなたは、」[p]
-
+#
 ;イベントスチル
 ;幼い頃の2人と文矢　を背景に　二人の結納姿
 [chara_mod name="bg" storage="bg/sijyou_CGnomal.jpg" time=1000]
