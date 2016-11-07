@@ -92,9 +92,19 @@
 
 *haikei
 @jump storage="test_haikei.ks"
-
 [s]
 
+*sansaku1
+@jump storage="01_B4nFWraU42_test.ks"
+[s]
+
+*sansaku2
+@jump storage="01_I9IhvvVdPo_test.ks"
+[s]
+
+*test6
+@jump storage="01_jsYiJcqRkk_test.ks"
+[s]
 
 
 *title
