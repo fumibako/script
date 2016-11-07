@@ -1,3 +1,22 @@
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+;[chara_mod name="bg" storage="bg/bg_fumibako.jpg" time=1000]
+
+
+*start
+[cm]
+*test_page1
+[glink target="*9_3 " text="9月『久しぶりに会って』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="*10_3 " text="10月『文矢からの手助け』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="*10_3_bad " text="10月『ダメだったよ』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="*11_b " text="11月『華衣婚約者の手紙』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="*1_1 " text="1月『お正月』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*end_p " text="閉じる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[s]
+
 *9_3
 [手紙四条 fumi_number=51]
 [r][r][r]
@@ -11,7 +30,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
 [手紙四条読了 fumi_number=51]
-
+@jump target=*start
 
 *10_3
 [手紙文矢 fumi_number=]
@@ -35,6 +54,8 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 [sp]
+@jump target=*start
+
 
 *10_3_bad
 [手紙文矢 fumi_number=]
@@ -49,6 +70,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 [手紙読了]
+@jump target=*start
 
 *11_b
 [手紙華衣婚約者 fumi_number=]
@@ -65,7 +87,7 @@
 [sp]どうか悲しまないでほしい[r]　
 [sp]私は[華衣]に　幸せな思い出が訪れる日を楽しみにしています。」[p]
 [手紙読了]
- 　　　　　　　　　　　　　　　　　　　　　　　
+@jump target=*start 　　　　　　　　　　　　　　　　　　　　　　　
  　　　　　　　　　　　　　　　　　　　　　　　
  　　　　　　　　　　　　　　　　　　　　　　　
  　　　　　　　　　　　　　　　　　　　　　　　
@@ -85,5 +107,77 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　四条華織[p]
 [手紙四条読了 fumi_number=]
-
 ;3_1は元ある手紙なので書かなくてよし
+@jump target=*start
+
+
+;[イベントシーン終了]
+*end_p
+
+@jump storage="test_sijyou.ks"
+[s]
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
