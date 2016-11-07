@@ -3,7 +3,7 @@
 ;[暗転]
 [stopbgm]
 ;if exp="tf.end==sijyou"　などで呼び出しor変更してください
-[chara_mod name="bg" storage="bg/bg_tegami_konyakusha.jpg"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg"]
 @jump target=test
 [endif]
 *start
