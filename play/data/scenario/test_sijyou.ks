@@ -69,7 +69,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_sansaku5" text="散策5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test_sansaku6" text="散策6" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test_sansaku7" text="散策7" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test_sansaku8" text="散策8(華衣)" graphic="select_waku_x500.png" size=20 width="250" x=450 y=250 color=white]
+[glink target="test_sansaku8" text="散策8(華衣)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="test_sansaku9" text="散策9" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 
 
