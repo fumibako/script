@@ -17,12 +17,16 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-
+[主人公目閉]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[主人公目通常]
 #
 『見返り橋』にやってきた。[r]
 橋の下をみると、子供達が遊んでいる。[p]
 [whosay name=子供・その壱]
 「えんちゃーん、獲れたー？」[p]
+#
 子供たちは、古いどびんに石油を入れた"カンテラ"とバケツを持ち、どじょうを捕まえようとしている。[p]
 [whosay name=子供・その弐]
 「かんちゃん、静かにしてて！」[p]
