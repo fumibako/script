@@ -4,17 +4,24 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg" time=1000]
-
-
+;ボタンはじまり上位置
+[eval exp="tf.btn_y=100"]
 *start
 [cm]
 *test_page1
-[glink target="*9_3 " text="9月『久しぶりに会って』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="*10_3 " text="10月『文矢からの手助け』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*10_3_bad " text="10月『ダメだったよ』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="*11_b " text="11月『華衣婚約者の手紙』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*1_1 " text="1月『お正月』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="*end_p " text="閉じる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*9_3 " text="9月『久しぶりに会って』" graphic="select_waku_x500.png" size=20 width="250" x=100 y="&tf.btn_y" color=white]
+[eval exp="tf.btn_y=tf.btn_y+50"]
+[if exp="f.sijyou_bad!=true"]
+[glink target="*10_3 " text="10月『文矢からの手助け』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[else]
+[glink target="*10_3_bad " text="10月『ダメだったよ』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[endif]
+[eval exp="tf.btn_y=tf.btn_y+50"]
+[glink target="*11_b " text="11月『華衣婚約者の手紙』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[eval exp="tf.btn_y=tf.btn_y+50"]
+[glink target="*1_1 " text="1月『お正月』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[eval exp="tf.btn_y=tf.btn_y+50"]
+[glink target="*end_p " text="閉じる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
 [s]
 
 *9_3
