@@ -18,8 +18,8 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 [主人公目閉]
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[chara_mod name="bg" storage="bg/bg_machi_hasi.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [主人公目通常]
 #
 『見返り橋』にやってきた。[r]
