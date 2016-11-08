@@ -173,13 +173,13 @@
 [四条通常]
 [whosay name="華織" color="olivedrab"]
  「！」[p]
- ;【SE】時計（広間カチコチ）
-[playse storage=tokei_hiroma.ogg loop=true ]
 ;会話文いれないとぶつ切り間半端ない
 #
 私は、初めて華織様の声を遮って、自身の声を荒げてしまった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （…………)[p]
+;【SE】時計（控え目カチコチ）
+[playse storage=tokei_hikaeme.ogg loop=true]
 華織様の驚かれた顔が、遠く感じる。[p]
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
