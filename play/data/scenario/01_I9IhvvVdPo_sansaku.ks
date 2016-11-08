@@ -77,7 +77,7 @@
 
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
-
+[cm]
 [主人公照れ目普通]
 [主人公ポーズ指]
 「あの方はスポーツがお好きかしら？」[p]
@@ -268,7 +268,7 @@
 皆さまどうぞ足を御運び下さい！！[p]
 [resetfont]
 [playse storage=paper_open.ogg loop=false ]
-
+[cm]
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
 
@@ -332,7 +332,7 @@
 [主人公ほほえみみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「詩集を探しているのですが。
-どなたの詩集が良いでしょうか？」
+[sp]どなたの詩集が良いでしょうか？」
 (語学を学んでいくうちに詩に興味を惹かれたわ)[p]
 
 [whosay name=書店店員" ]
@@ -346,8 +346,8 @@
 [whosay name=書店店員" ]
 「こちらです。」[p]
 #
-差し出された和綴じの本には花菖蒲の表紙で
-私はパラパラとめくる。
+差し出された和綴じの本には花菖蒲の表紙で[r]
+私はパラパラとめくる。[p]
 
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -358,7 +358,6 @@
 「お買い上げありがとございます！」
 
 [主人公通常]
-［主人公ポーズ指］
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あの方は[r]
 [sp]どんなな御本を読まれるのかしか？」[p]
@@ -400,7 +399,7 @@
 
 [whosay name=？？？" ]
 「お嬢さん、僕は浪漫写真倶楽部、[r]
-川島潤といいます。」[p]
+[sp]川島潤といいます。」[p]
 
 [主人公驚]
 [主人公ポーズ片手]
@@ -434,7 +433,6 @@
 （お写真はお兄様の結婚式の記念以来かしら）[p]
 
 [主人公照れ目普通]
-［主人公ポーズ指］
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私もいつか[r]
 [sp]お手紙の方と写真を撮るのかしら」[p]
