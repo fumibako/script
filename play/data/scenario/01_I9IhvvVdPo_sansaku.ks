@@ -42,7 +42,7 @@
 [sp] 知人の息子が慶徳の野球選手で……」[p]
 
 #
-人々が新聞を受け取っていく。
+人々が新聞を受け取っていく。[p]
 
 [whosay name=新聞社員" ]
 「君もどうぞ！　無料だよ。」[p]
@@ -77,7 +77,13 @@
 
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
-[cm]
+;背景:町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+
+[イベントシーン構築]
+[主人公ポーズ通常]
+[wait time=10]
 [主人公照れ目普通]
 [主人公ポーズ指]
 「あの方はスポーツがお好きかしら？」[p]
@@ -271,7 +277,14 @@
 [cm]
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
+;背景:町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+[wait time=10]
 
 [whosay name=町人男性" ]
 「嫁さんといってみようか[r]
@@ -337,7 +350,7 @@
 
 [whosay name=書店店員" ]
 「それなら今流行りの石垣菊乃の[r]
-初夏の詩集なんてどうですか？[p]
+[sp]初夏の詩集なんてどうですか？[p]
 
 [主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -345,6 +358,7 @@
 
 [whosay name=書店店員" ]
 「こちらです。」[p]
+
 #
 差し出された和綴じの本には花菖蒲の表紙で[r]
 私はパラパラとめくる。[p]
@@ -355,7 +369,7 @@
 [sp] この本に致します。」[p]
 
 [whosay name=書店店員" ]
-「お買い上げありがとございます！」
+「お買い上げありがとございます！」[p]
 
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
