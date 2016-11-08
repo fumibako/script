@@ -51,9 +51,13 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、ありがとうございます。」[p]
 
+
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[新聞]
+[テキスト全画面白文字無背景]
+;[新聞]
+[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 『全国野球大会　慶徳中学校優勝！！』
 [r]
 [sp] 今年二度目を迎える全国野球は勝ち抜き戦で行われ、[r]
@@ -68,7 +72,9 @@
 [sp]また冬には最長の駅伝リレーが行われることとなった。[r]
 [r]
 [sp]我が国のスポーツは盛んになっていくだろう。[p]
-[新聞読了]
+[resetfont]
+[playse storage=paper_open.ogg loop=false ]
+
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
 
@@ -113,7 +119,7 @@
 [endif]
 
 [whosay name=大衆食堂店員" ]
-「すぐそこの角に大衆食堂が開店！！
+「すぐそこの角に大衆食堂が開店！！[r]
 [sp] お品書きはこちらだよ。」[p]
 
 [whosay name=町人男性 " ]
@@ -125,7 +131,7 @@
 [sp] ビフテキもあるかしら」[p]
 
 #
-人々が広告を受け取っていく。
+人々が広告を受け取っていく。[p]
 
 [whosay name=大衆食堂店員" ]
 「お嬢さんもどうだい？」[p]
@@ -144,6 +150,7 @@
 「あら、[名前]さん何を見ていらっしゃるの？」[p]
 
 [主人公ポーズ通常]
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「大衆食堂のお品書きだそうです。」[p]
 
@@ -246,7 +253,9 @@
 #
 ビラを差し出され思わず私は受け取った。[p]
 
-[ビラ]
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
+[テキスト全画面白文字無背景]
 『劇団虹　初公演！！』[r]
 [r]
 ドイツに演劇を学んだ小倉和正が駅近くに[r]
@@ -257,7 +266,12 @@
 『ロミオとジュリエット』、『桜の園』、『リア王』[r]
 [r]
 皆さまどうぞ足を御運び下さい！！[p]
-[ビラ読了]
+[resetfont]
+[playse storage=paper_open.ogg loop=false ]
+
+;【SE】紙を折る（丁寧）
+[playse storage=paper_oru.ogg loop=false ]
+
 
 [whosay name=町人男性" ]
 「嫁さんといってみようか[r]
@@ -272,7 +286,7 @@
 「私もいってみたいわ[r]
 [sp] やはりデエトでしょうか？」[p]
 
-[主人公照れほほえみ]
+[主人公照れ目普通]
 （お手紙で観劇について尋ねてみましょう）[p]
 
 
@@ -312,7 +326,7 @@
 [endif]
 
 [whosay name=書店店員" ]
-「いらっしゃいませ
+「いらっしゃいませ[r]
 [sp] どんな御本をお探しでしょうか？」[p]
 
 [主人公ほほえみみ]
@@ -347,7 +361,7 @@
 ［主人公ポーズ指］
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あの方は[r]
-どんなな御本を読まれるのかしか？」[p]
+[sp]どんなな御本を読まれるのかしか？」[p]
 
 [イベントシーン終了]
 @jump storage="01_I9IhvvVdPo_test.ks"
@@ -393,13 +407,13 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ！！」[r]
 （浪漫写真倶楽部……聞いたことがあるわ[r]
-昨年浪漫展という写真の展覧会が盛況だったとか[r]
-今は写真が流行ね）[p]
+[sp]昨年浪漫展という写真の展覧会が盛況だったとか[r]
+[sp]今は写真が流行ね）[p]
 
 [whosay name=川島潤" ]
 「お嬢さんのように[r]
-品のあるお嬢さんを探していたんです！[r]
-写真のモデルになって頂けないでしょうか？」[p]
+[sp]品のあるお嬢さんを探していたんです！[r]
+[sp]写真のモデルになって頂けないでしょうか？」[p]
 
 [主人公ポーズ通常]
 [主人公憂い]
@@ -423,7 +437,7 @@
 ［主人公ポーズ指］
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私もいつか[r]
-お手紙の方と写真を撮るのかしら」[p]
+[sp]お手紙の方と写真を撮るのかしら」[p]
 
 散策イベント◆I9IhvvVdPoさんご担当その5です。[p]
 
