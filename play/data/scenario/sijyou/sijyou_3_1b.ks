@@ -1065,9 +1065,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-;////////暫定//////////
-;[主人公退場]
-;////////暫定//////////
+[主人公退場]
 #
 ;～～～～～～～～～～～〜〜〜シーン真の兄というもの〜〜～～～～～～～～～～～～～～～～～～～
 ;[暗転]
@@ -1080,23 +1078,25 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 ;ありがとうございます。
 [chara_mod name="bg" storage="bg/bg_enkaijou_rouka.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;////////暫定//////////
-;[主人公ポーズ通常]
-;[主人公通常]
+[イベントシーン構築枠茶色]
 [whosay name="華織" color="olivedrab"]
 (まったく、こういう時は気を効かせてほしいな)[p]
-;[whosay name="華織" color="olivedrab"]
-;「あぁ、[名前]さん。先に戻っててくれますか？」
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「はい？」[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;(どうしたのかしら)[p]
+[whosay name="華織" color="olivedrab"]
+[四条通常]
+「！」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「どうかされましたか？」[p]
+[四条微笑み]
+[whosay name="華織" color="olivedrab"]
+「[名前]さん。申し訳ありませんが、僕は用事が出来ました。[r]
+[sp]身体を冷やすといけないから先に部屋に戻っててくれますか？」
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「？　はい」[p]
 #
-;////////暫定////////////
-[イベントシーン構築枠茶色]
 [四条目閉じ]
 [名前]さんが賑やかな部屋に戻っていく中、僕は[r]
-薄暗闇に気配を感じ、足をとめる。[p]
+薄暗闇に気配を感じ、足をとめた。[p]
+;薄暗闇に潜む人物のために
 ;ライバル、兄　かはたれに
 [whosay name=文矢 color="#538a8a"]
 「お帰り。……そんな顔して、また悩みごとかい？」[p]
