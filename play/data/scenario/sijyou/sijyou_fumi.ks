@@ -84,9 +84,17 @@
 [glink target="1_3" text="春(1_3)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="5_1" text="夏(5_1)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="5_2" text="夏(5_2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+
+[glink target="sijyou_sigoto" text="仕事について" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="sijyou_sigoto2" text="仕事について2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="sijyou_sigoto3" text="仕事について3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="sijyou_sigoto4" text="仕事について4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+
+
 *common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+[glink target="test_page1" text="始めのページ" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=pink]
 [s]
 [endif]
 
@@ -395,6 +403,120 @@
 [clearstack]
 @jump target="*test"
 [endif]
+
+
+;////////////////////////仕事について///////////////////////////////
+
+*sijyou_sigoto1|(お見合い前)
+[テキスト全画面白文字]
+『仕事について』(お見合い前)
+[p]
+;#
+[手紙四条 fumi_number=]
+[r][r][r]
+[名前]へ[r]
+[r]
+四条家では、資本は基礎で[r]
+名誉は国の為に第一に古式由来の思想を持っているんだ。[r]
+鉱山業を基礎とし、[r]
+家の名誉の為に代々、華道を行っているよ。[p]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*sijyou_sigoto2|(お見合い後)
+[テキスト全画面白文字]
+『仕事について』(お見合い後)
+[p]
+;#
+[手紙四条 fumi_number=]
+[r][r][r]
+[名前]さんへ[r]
+[r]
+四条家では、資本は基礎で[r]
+名誉は国の為に第一に考える古式由来の思想を持っています。[r]
+鉱山業を基礎とし、[r]
+家の名誉の為に代々、華道を行っています。[p]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*sijyou_sigoto2_1|(お見合い後2)
+[テキスト全画面白文字]
+『仕事について』(お見合い後2)
+[p]
+[手紙四条 fumi_number=]
+[r][r][r]
+[名前]へ[r]
+[r]
+四条家では鉱山業を基礎とし、[r]
+家の名誉の為に代々、華道を行っています。[r]
+その中で、僕は四条家の名誉の為に祖母について[r]
+華道の修行に取り組んでいます。[r]
+未だに賞はとれていないので、もっと精進します[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*sijyou_sigoto3|(お見合い後3)
+[テキスト全画面白文字]
+『仕事について』(お見合い後2)
+[p]
+[手紙四条 fumi_number=]
+[r][r][r]
+[名前]さんへ[r]
+[r]
+四条家では家の名誉の為に代々、華道を行っています。[r]
+僕は四条家の名誉の為にも、これからの未来の為にも[r]
+華道の道を見極めていきたいです。[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+;何かのせい＝華衣のせいって読解力ない人に説明せなあかんけど、どうしましょう
+
+*sijyou_sigoto4|(お見合い後4)
+[テキスト全画面白文字]
+『仕事について』(お見合い後2)
+[p]
+[手紙四条 fumi_number=]
+[r][r][r]
+[名前]さんへ[r]
+[r]
+実をいうと、[r]
+僕は四条家の名誉の為にも、華道の極めなければ、[r]
+って思っていたけれど、[華衣]とのことが気になって[r]
+まったく前に進めなかったのです。[r]
+でも、何かのせいにして、ずっと逃げていたいたこと[r]
+には、変わらない。[r]
+どんな時でも、芸というものは、見る人に感動を与える[r]
+崇高な行いですからね。[r]
+心に強さを持って前に進んでいきます。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
 
 ;/////////////////////////////////////特殊話題について終わり/////////////////////////////////////
 
