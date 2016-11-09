@@ -12,7 +12,8 @@
 [preload storage="data/fgimage/sijyou/me_futuu.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/mayu_komari.png"]
-
+[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [macro name=主人公柔和ほほえみ１]
 ;主人公柔和ほほえみ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -49,8 +50,6 @@
 
 *first
 [er]
-[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 ;～～～～～～～～～～～～～シーン料亭～～～～～～～～～～～～～～～～～
 ;【テキスト全画面】黒茶・和紙風背景に白文字
 [テキスト全画面白文字]
