@@ -26,9 +26,11 @@
 [glink target="*neko3" text=猫3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="*neko4" text=猫4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="*kiki_jyouzu1" text=聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="*kiki_jyouzu2" text=聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*kiki_jyouzu2" text=聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-
+[glink target="*kiki_jyouzu_2" text=聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="*kiki_jyouzu_3" text=聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*syokuji" text=食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*syokuji_2" text=食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*syokuji_3" text=食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 *common
 ;[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 ;[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=white]
@@ -37,7 +39,7 @@
 
 *fumi_cmmon
 
-
+;//////////////////////////////新茶の話題/////////////////////////////
 *sincya
 [テキスト全画面白文字]
 新茶の話題[p]
@@ -110,11 +112,12 @@
 @jump target="*test"
 [endif]
 
+;//////////////////////////////さつきの話題/////////////////////////////
+
 *satuki
 [wait time=10]
 [テキスト全画面白文字]
 さつきの話題[p]
-;///////さつきの話題///////
 [手紙四条 fumi_number=]
 [名前]。手紙をありがとう。[r]
 [e]
@@ -134,6 +137,8 @@
 [clearstack]
 @jump target="*test"
 [endif]
+
+;//////////////////////////////詩集の話題/////////////////////////////
 
 *sisyu
 [wait time=10]
@@ -157,12 +162,12 @@
 @jump target="*test"
 [endif]
 
-
+;/////////////////////////////聞き上手と話し上手の話題////////////////////////////
 *kiki_jyouzu
 [wait time=10]
 [テキスト全画面白文字]
 聞き上手と話し上手[p]
-;///////聞き上手と話し上手の話題///////
+
 [手紙四条 fumi_number=]
 [名前]へ　手紙をありがとう。[r]
 [r]
@@ -246,12 +251,11 @@
 [clearstack]
 @jump target="*test"
 [endif]
-
+;//////////////////////////////食事の話題/////////////////////////////
 *syokuji
 [テキスト全画面白文字]
 [wait time=10]
 『食事』[p]
-;///////聞き上手と話し上手の話題2///////
 [手紙四条 fumi_number=]
 [名前]。手紙をありがとう。[r]
 [r]
@@ -269,8 +273,21 @@
 *syokuji_2
 [テキスト全画面白文字]
 [wait time=10]
+『食事 凡庸』[p]
+[手紙四条 fumi_number=]
+[名前]さん。手紙をありがとう。[r]
+[r]
+お父様のお許しを得てからになってしまいますが[r]
+ウチで食事会を行いたいですね[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+*syokuji_3
+[テキスト全画面白文字]
+[wait time=10]
 『食事』[p]
-;///////聞き上手と話し上手の話題2///////
 [手紙四条 fumi_number=]
 [名前]さん。手紙をありがとう。[r]
 [r]
@@ -286,6 +303,7 @@
 @jump target="*test"
 [endif]
 
+;//////////////////////////////緑の石の話題/////////////////////////////
 *midori
 [テキスト全画面白文字]
 [wait time=10]
@@ -311,12 +329,27 @@
 *midori2
 [テキスト全画面白文字]
 [wait time=10]
-『緑の石』[p]
+『緑の石　凡庸』[p]
 [手紙四条 fumi_number=]
 [名前]。手紙をありがとう。[r]
 [r]
 もう少し待ってくれると助かるよ。[r]
 楽しみにしていてください。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+
+*midori2_1
+[テキスト全画面白文字]
+[wait time=10]
+『緑の石　凡庸』[p]
+[手紙四条 fumi_number=]
+[名前]さん。手紙をありがとう。[r]
+[r]
+もう少し待ってくださると助かります。[r]
+お時間取らせて申し訳ありません。[r]
+ですが、楽しみにしていてください。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
