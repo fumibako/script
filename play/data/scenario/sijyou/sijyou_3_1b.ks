@@ -7,6 +7,12 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[preloadstorage="data/fgimage/sijyou/me_toji.png"]
+[preload storage="data/fgimage/sijyou/base_haori.png"]
+[preload storage="data/sijyou/me_futuu.png"]
+[preload storage="data/fgimage/sijyou/base_haori.png"]
+[preload storage="data/sijyou/mayu_komari.png"]
+
 [macro name=主人公柔和ほほえみ１]
 ;主人公柔和ほほえみ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -16,9 +22,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [endmacro]
-[macro name="暗転"]
-[chara_mod name="bg" storage="toumei.gif"]
-[endmacro]
+
 [イベントシーン構築]
 [if exp=tf.test_sijyou==true]
 【！】テストページからはじめます。変数を代入しますか？[p]
@@ -45,6 +49,8 @@
 
 *first
 [er]
+[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 ;～～～～～～～～～～～～～シーン料亭～～～～～～～～～～～～～～～～～
 ;【テキスト全画面】黒茶・和紙風背景に白文字
 [テキスト全画面白文字]
@@ -126,7 +132,12 @@
 [else]
 ;～～淑女度高い場合～～
 ;主人公柔微笑み
-[主人公柔和ほほえみ１]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 [endif]
@@ -242,7 +253,12 @@
 「弱ったな、痛いところをつくね」[p]
 [else]
 ;～～～淑女度高い場合～～～
-[主人公柔和ほほえみ１]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「安心して下さい。兄妹というものは、切っても切れないものです」[p]
 [主人公目閉じ]
@@ -418,9 +434,6 @@
 [主人公目閉じ]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryouotei_yuu.jpg"]
-[preload storage="data/sijyou/me_futuu.png"]
-[preload storage="data/fgimage/sijyou/base_haori.png"]
-[preload storage="data/sijyou/mayu_komari.png"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 #
 そうして、華織様のおかげで席は埋まり、本来の四条家と[名字]家の家族が集まった。[p]
@@ -925,7 +938,12 @@
 [else]
 ;～～～～～～淑女度高め～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公柔和ほほえみ１]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 「華織様が、華織様であらせられることに納得がいきました」[p]
 ;適当な日本語↑
 [四条微笑み]
@@ -1029,8 +1047,6 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif" time=0]
-[preloadstorage="data/sijyou/me_toji.png"]
-[preload storage="data/fgimage/sijyou/base_haori.png"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 
