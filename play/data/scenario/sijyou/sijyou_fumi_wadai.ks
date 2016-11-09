@@ -1,16 +1,22 @@
 ;友人に会う
 ;書き終わりましたら元の場所に写します
 ;間を埋める為の凡庸用の返信を追加　口調は見合い前か悩む　両方書いておこうかな
-;大衆食堂お品書き	食事の話題	
-;小劇場開場	観劇の話題	
-;猫	猫の話題	
-;聞き上手と話し上手	聞き上手と話し上手の話題	
-;緑の石	緑の石の話題	
-;淑女度２０以上	写真	写真の話題
-;1日のはじまり	1日のはじまりの話題	
-;お気に入りの曲	お気に入りの曲の話題	
-;道案内	道の話題	
-;変化と永遠
+;テストボタン追加済b(-)　仮シナリオ全追加済・凡庸含むs(-) 全然思いついてない(！！)
+;友人b(-)s(-)
+;新茶　b(-)s()
+;さつき　b(-)s()
+;詩集を買う　b(-)s()
+;スポーツの話題 b(-)s(!!)
+;小劇場開場	観劇の話題	b(-)　s(!!)
+;淑女度２０以上	写真	写真の話題 b(-)　s()
+;大衆食堂お品書き	食事の話題	b(-)　s()
+;聞き上手と話し上手	聞き上手と話し上手の話題b(-)　s()
+;猫	猫の話題	b(-)　s(-)
+;緑の石	緑の石の話題	b(-)　s(-)
+;1日のはじまり	1日のはじまりの話題	b(-)　s(-)
+;お気に入りの曲	お気に入りの曲の話題 b	(-)　s()
+;道案内	道の話題	b(-)s()
+;変化と永遠 b()s()
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -34,14 +40,41 @@
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 *page2
-[glink target="*neko3" text=猫3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="*neko4" text=猫4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*kiki_jyouzu1" text=聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="*kiki_jyouzu_2" text=聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*kiki_jyouzu_3" text=聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="*syokuji" text=食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="*syokuji_2" text=食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="*syokuji_3" text=食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*neko3" text="猫3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="*neko4" text="猫4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="*kiki_jyouzu1" text="聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="*kiki_jyouzu_2" text="聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="*kiki_jyouzu_3" text=2聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*syokuji_3" text="食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*michi" text="道" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="*michi2" text="道2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="*michi3" text="道3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+
+[glink target="*kyoku" text="お気に入りの曲" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="*kyoku3" text="お気に入りの曲3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="*henka1" text="変化と永遠" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="*henka2" text="変化と永遠2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+
+;ページ停止に地点にジャンプ
+@jump target="*common"
+
+*page3
+[glink target="*sincya" text="新茶" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="*sincya2" text="新茶２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="*sincya3" text="新茶３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="*sijyou_yujin_1" text="友人1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="*sijyou_yujin_2" text="友人2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*syoki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*satuki2" text="さつき2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="*sisyu" text="詩集" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+
+
+[glink target="*sps" text="スポーツの話題" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="*kangeki" text="観劇" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="*syasin" text="写真" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+
 *common
 ;[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 ;[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=white]
@@ -289,7 +322,6 @@
 [テキスト全画面白文字]
 [wait time=10]
 聞き上手と話し上手　凡庸[p]
-;///////聞き上手と話し上手の話題2///////
 [手紙四条 fumi_number=]
 [名前]さん。手紙をありがとう。[r]
 [r]
@@ -642,7 +674,7 @@
 [endif]
 
 ;//////////////////////////////道の話題/////////////////////////////
-
+*michi
 [テキスト全画面白文字]
 [wait time=10]
 『道』[p]
@@ -683,9 +715,10 @@
 
 ;//////////////////////////////好きな曲の話題/////////////////////////////
 
+*kuoku1
 [テキスト全画面白文字]
 [wait time=10]
-『好きな曲』[p]
+『お気に入りの曲』[p]
 [手紙四条 fumi_number=]
 [名前]へ。手紙ありがとう。[r]
 [r]
@@ -706,9 +739,10 @@
 @jump target="*test"
 [endif]
 
+*kyoku2
 [テキスト全画面白文字]
 [wait time=10]
-『好きな曲２』[p]
+『お気に入りの曲２』[p]
 [手紙四条 fumi_number=]
 [名前]へ。手紙ありがとう。[r]
 [r]
@@ -782,6 +816,31 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙 四条読了 fumi_number=]
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+;/////////////////スポーツ//////////////////////
+*sps
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+;/////////////////観劇//////////////////////
+*kangeki
+
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+;/////////////////写真//////////////////////
+*syasin
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
