@@ -44,7 +44,7 @@
 [glink target="neko4" text="猫4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="kiki_jyouzu1" text="聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="kiki_jyouzu_2" text="聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="kiki_jyouzu_3" text=2聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="kiki_jyouzu_3" text="聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="syokuji_3" text="食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
