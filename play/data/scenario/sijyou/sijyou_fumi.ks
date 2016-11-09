@@ -29,7 +29,9 @@
 [eval exp="sf.FButton='OFF'"]
 ;テスト以外はコメはずす
 ;@jump target=*fumi_cmmon
+*test
 [if exp=tf.test_sijyou==true]
+[chara_mod name="bg" storage="bg/title.jpg"]
 *test_page1
 [glink target="*sijyou_syumi_1" text="趣味について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="*sijyou_syumi_2" text="趣味について(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
@@ -98,8 +100,11 @@
 庭で花を愛でることだよ。家も華道をやっているからね。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *sijyou_syumi_2|(お見合い後)
 [テキスト全画面白文字]
@@ -116,9 +121,11 @@
 けど、祖母だけは華道の材料に使ってるところを僕は見てるんだよね。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=]
-
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 ;///////////△家族について///////////
 ;これについて手紙を出すと
@@ -136,8 +143,11 @@
 両親と他兄妹が多いよ。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *sijyou_kazoku_2|(お見合い後)
 [テキスト全画面白文字]
@@ -280,6 +290,10 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *sijyou_kazoku_3|(イベント6後)
 [テキスト全画面白文字]
@@ -296,8 +310,11 @@
 [名前]さんに苦労はかけないよう努力します。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 ;///////////△将来について///////////
 *sijyou_syourai1|(お見合い前)
@@ -351,6 +368,7 @@
 
 [手紙四条読了 fumi_number=]
 
+
 *sijyou_syourai2_1|(お見合い後)
 [テキスト全画面白文字]
 『将来について』(お見合い後,その後)
@@ -367,8 +385,11 @@
 文矢のお嫁さんだった記憶があるのだけど……[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 ;///////////////特殊話題について終わり///////////////
 
@@ -451,6 +472,10 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=1_3]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *2
 [テキスト全画面白文字]
@@ -469,6 +494,10 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=2]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *3
 [テキスト全画面白文字]
@@ -489,8 +518,11 @@
 ;今みたら暗示的なものに見える
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=3]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *4
 [テキスト全画面白文字]
@@ -509,8 +541,11 @@
 [名前]と食事ができれば、毎日筍ご飯でも楽しいのですがね[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=4]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 ;/////////////夏の手紙のやりとり///////////
 ;見合い前なのでは？
@@ -530,6 +565,10 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=5]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *5_1
 [テキスト全画面白文字]
@@ -548,6 +587,10 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=5_1]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *5_2
 [テキスト全画面白文字]
@@ -567,7 +610,15 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=5_2]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *6
 [テキスト全画面白文字]
@@ -585,6 +636,15 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
 [手紙四条読了 fumi_number=6]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *7
 [テキスト全画面白文字]
@@ -602,8 +662,16 @@
 ;そういえば、昔、文矢と[名前]で川に涼みにいきましたね。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=7]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *8_1
 [テキスト全画面白文字]
@@ -619,8 +687,11 @@
 よい夢が覚めてしまいます。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=8_1]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *8_2
 [テキスト全画面白文字]
@@ -636,9 +707,11 @@
 織姫と彦星も文通してるのでしょうか[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=8_2]
-
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *8_3
 [テキスト全画面白文字]
@@ -654,8 +727,11 @@
 ネリネの花言葉を知っていますか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=8_3]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 ;////////////秋の手紙のやりとり////////////
 *9
@@ -673,8 +749,11 @@
 ものがなしいものを感じます[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=9]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *10
 [テキスト全画面白文字]
@@ -690,8 +769,11 @@
 時折、背中を押すような強い風が吹いています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=10]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *11
 [テキスト全画面白文字]
@@ -708,8 +790,16 @@
 縁側で[名前]と読書をしてみたいですね。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=11]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 ;/////////////////////冬の手紙のやりとり////////////
 ;旅行中かも？？ およそ、ひと段落してるので愛情的な文面
@@ -727,8 +817,12 @@
 早く[名前]に会いたいです。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=12]
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *13
 [テキスト全画面白文字]
@@ -745,8 +839,12 @@
 2人でいるとまた違って見えるのでしょうか[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=13]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
 
 *14
 [テキスト全画面白文字]
@@ -764,8 +862,11 @@
 [名前]は、如何お過ごしでしょうか？
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=14]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 
 *15
@@ -783,9 +884,13 @@
 熱い指では手渡すこともできません。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
 [手紙四条読了 fumi_number=15]
 ;////////季節の手紙内容おわり////////
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
 
 ;///////エンド前への手紙///////
 ;*16_end
@@ -808,8 +913,13 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 ;///////エンド前への手紙おわり///////
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
-;///////疎遠になったワケへの手紙///////
+
+;///////未来へ///////
 ;思いつかない～　文矢さんて海外にいるのかな？
 ;*17_ex
 [テキスト全画面白文字]
@@ -843,6 +953,11 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 ;追伸は、他の手紙の整合あわせなのですよ・・・
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
 
 ;///////一歩進んでいるよとの手紙///////
 ;このままだと努力の実体性がない男なので付け足す。
@@ -877,6 +992,12 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [er]　　　　　　　　　　　　　　　　　　　　　　
 [手紙四条読了 fumi_number=]
 ;///////アイデンティな手紙おわり///////
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+
 *19_ex
 ;///////兄の手紙///////
 ;◎お見合い決定後に文矢から手紙がないとおかしいのでは？
@@ -916,6 +1037,10 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 [手紙読了]
 ;///////兄の手紙///////
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *avuridasi
 [テキスト全画面白文字]
@@ -933,6 +1058,10 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 *avuridasi_2
 [テキスト全画面白文字]
@@ -951,8 +1080,12 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
-
+;///////////////話題はこちらに追加していく//////////////////
 
 ;///////////△友人について///////////
 *sijyou_yujin_1|(お見合い前)
@@ -970,8 +1103,12 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
 [手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
-;///////////////話題はこちらに追加していく//////////////////
+
 *sijyou_yujin_2|(お見合い後)
 [テキスト全画面白文字]
 『友人について』(お見合い後)
@@ -989,12 +1126,21 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
 [手紙四条読了 fumi_number=]
-
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 ;実装時に各手紙に読了処理等を追記予定
 ;fumi_numberがうまく動作していないので実装時に試行錯誤予定。マクロじゃなく各所にベタ打ちした方が早いやも
 
+;/////////////////ここからは戻り処理//////////////////////
+*back_test
 [イベントシーン終了]
+[chara_mod name="bg" storage="bg/title.jpg"]
 @jump storage="test_sijyou.ks"
+[s]
+*title
+@jump storage="title.ks"
 [s]
 
