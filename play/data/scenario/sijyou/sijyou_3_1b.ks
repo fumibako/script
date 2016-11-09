@@ -12,7 +12,7 @@
 [preload storage="data/fgimage/sijyou/me_futuu.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/mayu_komari.png"]
-[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
+;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [macro name=主人公柔和ほほえみ１]
 ;主人公柔和ほほえみ
