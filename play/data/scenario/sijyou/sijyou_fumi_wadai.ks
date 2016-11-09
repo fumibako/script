@@ -783,7 +783,7 @@
 [名前]さんには、そういったものはありますか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-[手紙 四条読了 fumi_number=]
+[手紙四条読了 fumi_number=]
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
@@ -800,7 +800,7 @@
 [名前]さんには、そういったものはありますか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-[手紙 四条読了 fumi_number=]
+[手紙四条読了 fumi_number=]
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
@@ -816,7 +816,7 @@
 [名前]さんには、そういったものはありますか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-[手紙 四条読了 fumi_number=]
+[手紙四条読了 fumi_number=]
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
@@ -833,7 +833,7 @@
 まだ書いてないんだ、まってね
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-[手紙 四条読了 fumi_number=]
+[手紙四条読了 fumi_number=]
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
