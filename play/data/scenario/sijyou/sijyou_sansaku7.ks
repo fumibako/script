@@ -9,6 +9,7 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;桜の表示が遅いと見えない為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
+[preload storage="data/fgimage/bg/plane_sakura.jpg"]
 ;同じ表情を３回使うので登録
 [macro name=主人公困り照れ]
 ;～～～驚きつつ困惑照れ～～～
