@@ -7,11 +7,11 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[preloadstorage="data/fgimage/sijyou/me_toji.png"]
+[preload storage="data/fgimage/sijyou/me_toji.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
-[preload storage="data/sijyou/me_futuu.png"]
+[preload storage="data/fgimage/sijyou/me_futuu.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
-[preload storage="data/sijyou/mayu_komari.png"]
+[preload storage="data/fgimage/sijyou/mayu_komari.png"]
 
 [macro name=主人公柔和ほほえみ１]
 ;主人公柔和ほほえみ
