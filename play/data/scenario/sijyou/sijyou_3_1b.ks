@@ -418,6 +418,9 @@
 [主人公目閉じ]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryouotei_yuu.jpg"]
+[preload storage="data/sijyou/me_futuu.png"]
+[preload storage="data/fgimage/sijyou/base_haori.png"]
+[preload storage="data/sijyou/mayu_komari.png"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 #
 そうして、華織様のおかげで席は埋まり、本来の四条家と[名字]家の家族が集まった。[p]
@@ -1026,8 +1029,11 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif" time=0]
+[preloadstorage="data/sijyou/me_toji.png"]
+[preload storage="data/fgimage/sijyou/base_haori.png"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+
 #
 華織様の言葉とともに[r]
 永遠と不滅の花言葉をもつ沈丁花が、風に乗って甘く香る[p]
