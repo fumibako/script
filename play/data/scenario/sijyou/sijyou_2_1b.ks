@@ -8,6 +8,13 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[preload storage="data/fgimage/sijyou/base_kimono.png"]
+[preload storage="data/fgimage/sijyou/base_haori.png"]
+[preload storage="data/fgimage/sijyou/mayu_futuu.png"]
+[preload storage="data/fgimage/sijyou/me_futuu.png"]
+[preload storage="data/fgimage/sijyou/kuti_futuu.png"]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg"]
 ;背景　床の間のみ表示　夕方バージョン
 [四条ベース羽織]
 [四条微笑み]
@@ -30,7 +37,6 @@
 ;〜〜〜シーン 急降下へ　メモ〜〜〜
 ;あらすじ。敵の登場 邪魔がはいる 先生が湖池屋さんのお嬢様を連れてくる 途中で路線を決定したのでまだ飛び飛びな部分があります
 ;シーンをわけて整理いましょう
-
 ;~~~~~~~~~~~~~~エスコ-トシーン~~~~~~~~~~~~~~~~~~~~~
 [whosay name="華織" color="olivedrab"]
 「もし、分からないことがあったら仰ってください、こちら側からお手伝い[r]
