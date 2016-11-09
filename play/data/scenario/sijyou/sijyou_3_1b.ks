@@ -19,15 +19,7 @@
 ;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 ;///////////////////////////////
-[macro name=主人公柔和ほほえみ１]
-;主人公柔和ほほえみ
-[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-[endmacro]
+;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。各ファイルプリロード追記もありがとうございます（スクリプト担
 
 [イベントシーン構築]
 [if exp=tf.test_sijyou==true]
