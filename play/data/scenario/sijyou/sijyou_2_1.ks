@@ -14,7 +14,17 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;//////////////準備//////////////
+[preload storage="data/fgimage/sijyou/base_kimono.png"]
+[preload storage="data/fgimage/sijyou/base_haori.png"]
+[preload storage="data/fgimage/sijyou/mayu_futuu.png"]
+[preload storage="data/fgimage/sijyou/me_futuu.png"]
+[preload storage="data/fgimage/sijyou/kuti_futuu.png"]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg"]
 [preload storage="data/fgimage/bg/sijyou_engawa3.jpg"]
+;//////////////準備//////////////
 ;マクロ作成ありがとうございます(スクリプト担
 ;macro_etc.ksに[暗転]マクロを移動
 ;macro_tati_sijyou.ksにkeyframe設定及び[四条アップ][四条サイズ通常]マクロを移動し
