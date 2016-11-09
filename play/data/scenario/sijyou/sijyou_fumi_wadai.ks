@@ -27,6 +27,7 @@
 ;@jump target=*fumi_cmmon
 *test
 [if exp=tf.test_sijyou==true]
+[chara_mod name="bg" storage="bg/title.jpg"]
 *test_page1
 [glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="midori2" text="緑の石２回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
@@ -874,6 +875,7 @@
 ;/////////////////ここからは戻り処理//////////////////////
 *back_test
 [イベントシーン終了]
+[chara_mod name="bg" storage="bg/title.jpg"]
 @jump storage="test_sijyou.ks"
 [s]
 *title
