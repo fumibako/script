@@ -45,8 +45,8 @@
 [glink target="pose_03" text="[主人公ポーズ両手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
 [glink target="pose_04" text="[主人公ポーズ指]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
 
-[glink target="face_13" text="[主人公柔和ほほえみ１]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
-[glink target="face_14" text="[主人公困り照れ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
+[glink target="face_13" text="[主人公柔和ほほえみ１]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 color=white]
+[glink target="face_14" text="[主人公困り照れ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
 
 [glink target="face_01" text="[主人公通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 color=white]
 [glink target="face_02" text="[主人公伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 color=white]
