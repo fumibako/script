@@ -35,6 +35,7 @@
 [cm]
 [layopt layer=24 visible=true]
 [ptext text="マクロ：ポーズ" layer=24 size=18 x=30 y=10 color=black bold=bold]
+[ptext text="表　情" layer=24 size=18 x=30 y=180 color=black bold=bold]
 [ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 [ptext text="アニメーション" layer=24 size=18 x=430 y=10 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
@@ -43,6 +44,9 @@
 [glink target="pose_02" text="[主人公ポーズ片手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
 [glink target="pose_03" text="[主人公ポーズ両手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
 [glink target="pose_04" text="[主人公ポーズ指]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
+
+[glink target="face_13" text="[主人公柔和ほほえみ１]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
+[glink target="face_14" text="[主人公困り照れ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
 
 [glink target="face_01" text="[主人公通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 color=white]
 [glink target="face_02" text="[主人公伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 color=white]
@@ -218,6 +222,16 @@
 *face_12
 [主人公真剣]
 [eval exp="f.gra_girl_face='[主人公真剣]'"]
+@jump target=text
+
+*face_13
+[主人公柔和ほほえみ１]
+[eval exp="f.gra_girl_face='[主人公柔和ほほえみ１]'"]
+@jump target=text
+
+*face_14
+[主人公困り照れ]
+[eval exp="f.gra_girl_face='[主人公困り照れ]'"]
 @jump target=text
 
 *face_21
