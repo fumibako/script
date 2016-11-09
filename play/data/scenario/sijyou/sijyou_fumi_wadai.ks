@@ -1,28 +1,72 @@
 ;書き終わりましたら元の場所に写します
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[eval exp="sf.FButton='OFF'"]
+;テスト以外はコメはずす
+;@jump target=*fumi_cmmon
+[if exp=tf.test_sijyou==true]
+*test_page1
+[glink target="*midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="*midori2" text="緑の石２回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="*midori2" text="緑の石３回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="*ichi_nichi" text="一日のはじまり" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="*ichi_nichi2" text="一日のはじまり２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*ichi_nichi3" text="一日のはじまり３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*neko" text="猫" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="*neko" text="猫2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="*page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+;ページ停止に地点にジャンプ
+@jump target="*common"
+*page2
+[glink target="*neko3" text=猫3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="*neko4" text=猫4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+*common
+[s]
+[endif]
+
+*fumi_cmmon
 
 *midori
 [テキスト全画面白文字]
 [wait time=10]
 『緑の石』[p]
 [手紙四条 fumi_number=]
-[名前]さん。手紙をありがとう。[r]
+[名前]。手紙をありがとう。[r]
 [r]
-調べてみたら、翡翠の天然石のようですね[r]
+調べてみたら、翡翠の天然石のようだね[r]
 僕も、この前、宝石商の知人から、[r]
-天然石の話をしました。[r]
+天然石の話をしたところ、[r]
 腕の良い職人を雇ってるそうです[r]
 この石の持ち味をそのままに加工してくれる、[r]
-良いお店を見つけたら、[名前]に贈りますね[r]
+そうなので、また、[名前]に贈りますね[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+
 *midori2
+[テキスト全画面白文字]
+[wait time=10]
+『緑の石』[p]
+[手紙四条 fumi_number=]
+[名前]。手紙をありがとう。[r]
+[r]
+もう少し待ってくれると助かるよ。[r]
+楽しみにしていてください。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+
+*midori3
 [テキスト全画面白文字]
 [wait time=10]
 『緑の石』２[p]
 [手紙四条 fumi_number=]
-[名前]さん。この前の手紙の件です。[r]
+[名前]。この前の手紙の件です。[r]
 [r]
 どうでしょうか？　[r]
 台座下には透かしが入っているため、[r]
@@ -48,10 +92,22 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
-*ichi_nichi2
+*ichi_nichi_2
 [テキスト全画面白文字]
 [wait time=10]
-『一日のはじまり』[p]
+『一日のはじまり２凡庸』[p]
+[手紙四条 fumi_number=]
+[名前]へ。手紙をありがとう。[r]
+[r]
+今日は、よいことがありましたか？[r]
+[名前]も楽しい一日が過ごせますように[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+*ichi_nichi3
+[テキスト全画面白文字]
+[wait time=10]
+『一日のはじまり３変化』[p]
 [手紙四条 fumi_number=]
 [名前]さんへ。手紙をありがとうございます。[r]
 [r]
@@ -78,6 +134,18 @@
 *neko2
 [テキスト全画面白文字]
 [wait time=10]
+『猫 凡庸』[p]
+[手紙四条 fumi_number=]
+[名前]。いつも手紙をありがとう。[r]
+[r]
+今日は、猫を見かけましたか？[r]
+[名前]は、猫が好きなんだね[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+*neko3
+[テキスト全画面白文字]
+[wait time=10]
 『猫２』[p]
 [手紙四条 fumi_number=]
 [名前]さん。いつも手紙をありがとう。[r]
@@ -99,7 +167,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
-*neko3
+*neko4
 [テキスト全画面白文字]
 [wait time=10]
 『猫２』[p]
