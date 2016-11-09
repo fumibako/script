@@ -50,7 +50,7 @@
 *first
 [er]
 [preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 ;～～～～～～～～～～～～～シーン料亭～～～～～～～～～～～～～～～～～
 ;【テキスト全画面】黒茶・和紙風背景に白文字
 [テキスト全画面白文字]
