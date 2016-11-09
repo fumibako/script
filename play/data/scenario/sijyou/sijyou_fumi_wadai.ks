@@ -28,35 +28,35 @@
 *test
 [if exp=tf.test_sijyou==true]
 *test_page1
-[glink target="*midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="*midori2" text="緑の石２回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*midori2" text="緑の石３回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="*ichi_nichi" text="一日のはじまり" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*ichi_nichi2" text="一日のはじまり２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="*ichi_nichi3" text="一日のはじまり３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="*neko" text="猫" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="*neko" text="猫2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-[glink target="*page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="midori2" text="緑の石２回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="midori2" text="緑の石３回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="ichi_nichi" text="一日のはじまり" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="ichi_nichi2" text="一日のはじまり２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="ichi_nichi3" text="一日のはじまり３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="neko" text="猫" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="neko2" text="猫2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 *page2
-[glink target="*neko3" text="猫3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="*neko4" text="猫4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*kiki_jyouzu1" text="聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="*kiki_jyouzu_2" text="聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*kiki_jyouzu_3" text=2聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="*syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="*syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="*syokuji_3" text="食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="*michi" text="道" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="*michi2" text="道2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="*michi3" text="道3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="neko3" text="猫3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="neko4" text="猫4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="kiki_jyouzu1" text="聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="kiki_jyouzu_2" text="聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="kiki_jyouzu_3" text=2聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="syokuji_3" text="食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="michi" text="道" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="michi2" text="道2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="michi3" text="道3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 
 [glink target="*kyoku" text="お気に入りの曲" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="*kyoku3" text="お気に入りの曲3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="*henka1" text="変化と永遠" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="*henka2" text="変化と永遠2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-
+[glink target="page3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 
@@ -136,7 +136,7 @@
 [手紙四条読了 fumi_number=]
 
 ;凡庸難しい
-*sijyou_yujin_b|(凡庸)
+*sijyou_yujin_b2|(凡庸)
 [テキスト全画面白文字]
 『友人について凡庸』(お見合い後)
 [p]
@@ -630,7 +630,7 @@
 @jump target="*test"
 [endif]
 
-*neko4
+*neko4b
 [テキスト全画面白文字]
 [wait time=10]
 『猫３』[p]
