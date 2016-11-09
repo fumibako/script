@@ -10,23 +10,7 @@
 ;桜の表示が遅いと見えない為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [preload storage="data/fgimage/bg/plane_sakura.jpg"]
-;同じ表情を３回使うので登録
-[macro name=主人公困り照れ]
-;～～～驚きつつ困惑照れ～～～
-;↓効果：頬染め [主人公頬染め]
-[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
-[wait time=10]
-;↓目：[主人公目大]
-[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
-[wait time=10]
-;↓眉：困り [主人公眉困り]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
-[wait time=10]
-;↓口：ほほえみ [主人公口ほほえみ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-;～～～驚きつつ困惑照れ～～～
-[endmacro]
+;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。↓同時に表示の試みもありがとうございます（スクリプト担
 ;同時に表示したくてテストしましたが軽い画像表情から表示されてしまう
 ;透明化
 [keyframe name="opcy"]
