@@ -308,6 +308,25 @@ if (mp.name!="") {
 [wait time=10]
 [endmacro]
 
+;マクロ作成ありがとうございます（スクリプト担
+;立ち絵表示[主人公困り照れ]
+[macro name="主人公困り照れ"]
+;～～～驚きつつ困惑照れ～～～
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;～～～驚きつつ困惑照れ～～～
+[endmacro]
+
 ;立ち絵表示[主人公柔和ほほえみ１]
 [macro name="主人公柔和ほほえみ１"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
