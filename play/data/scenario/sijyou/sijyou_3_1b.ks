@@ -7,13 +7,18 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;////////////テスト用表示準備　四条/////////
 [preload storage="data/fgimage/sijyou/me_toji.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/me_futuu.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/mayu_komari.png"]
+;////////////表示準備/////////
+;選択画像の表示遅れ防止
+[preload storage="data/fgimage/bg/plane_sepia.jpg"]
 ;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+;///////////////////////////////
 [macro name=主人公柔和ほほえみ１]
 ;主人公柔和ほほえみ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
