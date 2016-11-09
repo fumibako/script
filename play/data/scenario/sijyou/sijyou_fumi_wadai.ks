@@ -30,6 +30,8 @@
 [glink target="*kiki_jyouzu2" text=聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 
 *common
+;[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+;[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=white]
 [s]
 [endif]
 
@@ -188,16 +190,35 @@
 聞き上手と話し上手　凡庸[p]
 ;///////聞き上手と話し上手の話題2///////
 [手紙四条 fumi_number=]
+[名前]。手紙をありがとう。[r]
+[r]
+今日は、どんな話をしたかな？[r]
+[r]
+時には、相手の話をゆっくり聞くことも[r]
+大事だね。　でも話したくなったら僕に[r]
+話してね。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+
+*kiki_jyouzu_2_1
+[テキスト全画面白文字]
+[wait time=10]
+聞き上手と話し上手　凡庸[p]
+;///////聞き上手と話し上手の話題2///////
+[手紙四条 fumi_number=]
 [名前]さん。手紙をありがとう。[r]
 [r]
 今日は、どんな話をされましたか？[r]
 [r]
 時には、相手の話をゆっくり聞くことも[r]
 大事ですね。　でも話したくなったら僕に[r]
-話してください。[r]
+お話してください。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
+
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
@@ -640,3 +661,12 @@
 [clearstack]
 @jump target="*test"
 [endif]
+
+;/////////////////ここからは戻り処理//////////////////////
+*back_test
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+*title
+@jump storage="title.ks"
+[s]
