@@ -18,7 +18,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 ;[ptext text="" layer=26 size=17 x=100 y=65 color=darkslateblue]
 ;[ptext text="作業中＝　" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
-;[glink target="test01" text="共通散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test01" text="チラシ新聞マクロテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 ;[glink target="test02" text="共通散策イベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 ;[glink target="test03" text="共通散策イベント3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 ;[glink target="test04" text="共通散策イベント4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
@@ -50,7 +50,15 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 *test01
 [cm]
 [freeimage layer = 26]
-@jump storage="" target=""
+[イベントシーン構築]
+はじまりはじまり。[p]
+[新聞]
+新聞テストです。[p]
+[resetfont]
+[チラシ]
+チラシテストです。[p]
+[イベントシーン終了]
+@jump target="test"
 [s]
 
 *test02
