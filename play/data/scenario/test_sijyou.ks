@@ -71,7 +71,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_sansaku8" text="散策8(華衣)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test_sansaku9" text="散策9" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="test_sansaku10" text="散策10" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-
+[glink target="test_sansaku11" text="散策11" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="test_page1" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
 [glink target="test_page3" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
@@ -297,6 +297,12 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [freeimage layer = 26]
 @jump storage="sijyou/sijyou_sansaku10.ks"
 [s]
+*test_sansaku11
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_sansaku11.ks"
+[s]
+
 *test_ibent_fumi
 [cm]
 [freeimage layer = 26]
