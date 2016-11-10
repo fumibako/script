@@ -129,8 +129,8 @@ $('.saku1').remove();
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (夢……?)[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(ふぅ。なんだったのかしら……不思議な夢を見た気がするわ）[p]
+[主人公ふぅ閉]
+(ふぅ。 なんだったのかしら……不思議な夢を見た気がするわ）[p]
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
