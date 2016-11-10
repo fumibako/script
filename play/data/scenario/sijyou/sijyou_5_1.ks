@@ -1,3 +1,16 @@
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ふぅ……)[p]
 #
