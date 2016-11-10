@@ -52,6 +52,8 @@
 [sp]いい付かっております」[p]
 
 *select
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+相談しようかしら？
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢用の背景：(和紙風桜色はオープニングで使用)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -66,7 +68,6 @@
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
-相談しようかしら？
 ;【分岐】
 [link target=*sijyou]相談する[endlink][r][r][r]
 [link target=*no]大丈夫[endlink][r]
