@@ -78,7 +78,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 @jump target="*common"
 [s]
 *test_page3
-;[glink target="test5_1" text="5月1週(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test5_1" text="5月1週(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="test_fumi2" text="手紙（話題）" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
@@ -108,7 +108,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *test5_1
 [cm]
 [freeimage layer = 26]
-@jump storage="sijyou/sijyou_9_1.ks"
+@jump storage="sijyou/sijyou_5_1.ks"
 [s]
 *test6_1
 [cm]
