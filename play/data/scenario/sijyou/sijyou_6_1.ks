@@ -57,6 +57,7 @@
 「さぁ、[名前]ちゃん。君に好きな花をあげよう。そしてワルツを踊ろうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ？！」[p]
+#
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 #
 華織お兄様は、私の髪飾りに花を添えると、夢のような足取りでワルツを舞う[p]
@@ -86,7 +87,7 @@
 「[名前]ちゃん、僕は、もうそろそろ行かないと」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうしてですか？！」[p]
-[whosay name="華織お兄様" color="olivedrab"]
+[whosay name="華織お兄さま" color="olivedrab"]
 「僕は、今のままでは[名前]ちゃんを楽しませてあげれないからね」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「せめて兄弟のことを守れるくらい、強くならないといけない。[r]
@@ -118,8 +119,8 @@ $('.saku1').remove();
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 ;【SE】すずめ（チュンチュン）
 [playse storage=tori_suzume.ogg loop=false ]
-;【背景】主人公邸 庭の見える部屋：昼(光が射す)　ゆっくり
-[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=2000]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 目が覚めると自分の部屋であった。[p]
