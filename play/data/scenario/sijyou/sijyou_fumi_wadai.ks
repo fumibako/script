@@ -34,6 +34,7 @@
 [if exp=tf.test_sijyou==true]
 [chara_mod name="bg" storage="bg/title.jpg"]
 *test_page1
+*page1
 [glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="midori2" text="緑の石２回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="midori2" text="緑の石３回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
@@ -84,8 +85,9 @@
 [glink target="*sincya3_2" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="*sincya3_3" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="*sincya3_4" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-*common
 [glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+*common
+
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=white]
 [s]
@@ -584,7 +586,7 @@
 @jump target="*test"
 [endif]
 
-*ichi_nichi_2
+*ichi_nichi2
 [テキスト全画面白文字]
 [wait time=10]
 『一日のはじまり２凡庸』[p]
