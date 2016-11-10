@@ -49,16 +49,7 @@
 [whosay name=磯野 color="dimgray"]
 「お嬢様。よろしければ、この磯野に御相談くださりませ。[r]
 [sp]旦那様からお手紙のやりとりについてお嬢様の手伝いになるよう[r]
-いい付かっております」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「わかりましたわ……」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「今後、お会いする方に失礼がないようにするには、どのように[r]
-[sp]振舞えばいいのでしょう？[r]
-[sp]……そう考えてしまうと余計に筆が進まなくて」[p]
-[whosay name=磯野 color="dimgray"]
-「お相手のことを考えられるのは良いことです[r]
-[sp]どなたについてお悩みでしょうか？」[p]
+[sp]いい付かっております」[p]
 
 *select
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -67,6 +58,14 @@
 ;背景変更:和紙風 桜色
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;[link]タグでの選択肢例
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
 相談しようかしら？
 ;【分岐】
 [link target=*sijyou]相談する[endlink][r][r][r]
@@ -82,25 +81,30 @@
 [current layer="message0"]
 [er]
 #
-私は、相談することにした。
-#
 私は、思い切って磯野に相談することにした。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「わかりましたわ……」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「今後、お会いする方に失礼がないようにするには、どのように[r]
+[sp]振舞えばいいのでしょう？[r]
+[sp]……そう考えてしまうと余計に筆が進まなくて」[p]
+[whosay name=磯野 color="dimgray"]
+「お相手のことを考えられるのは良いことです[r]
+[sp]どなたについてお悩みでしょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄様のことを聞いていいかしら」[p]
 [whosay name=磯野 color="dimgray"]
 「はい 四条華織様　のことですね 」[p]
 [whosay name=磯野 color="dimgray"]
-
 「四条華織様は、華道の名家の出自でもございます。[r]
-お久しぶりにやりとりなさって四条様も、難しくお考えかもしれませんが根気よく返事をお出しください」[p]
+[sp]お久しぶりにやりとりなさって四条様も、難しくお考えかもしれ[r]
+[sp]ませんが、根気よく返事をお出しください」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そうですね。　少し素っ気ない気がしますけれど、もう少し頑張ってみようかしら？）[p]
 [whosay name=磯野 color="dimgray"]
-
 「四条様は、お花がお好きなようですから、[r]
 [sp]お手紙のやりとりについては、『季節の話題』を送ってみては如何でしょうか？」[p]
 [whosay name=磯野 color="dimgray"]
-
 「また、お話があうように『華道のお稽古』も、ほどほどに重ねておくとよいでしょう[r]
 [sp]お稽古だけではお嬢様も滅入ってしまうと思います。　気分転換に『散策』もお勧めします[r]
 『秋』の色合いを眺められますと『華道』のお稽古の手助けにもなるかもしれませんね」[p]
@@ -109,11 +113,9 @@
 [sp]磯野のおかげで、お返事を書く勇気が沸いてきたみたい」[p]
 [whosay name=磯野 color="dimgray"]
 「私もお嬢様の笑顔が励みでございます」[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （『季節の話題』、『華道のお稽古』、『秋の散策』ね)[p]
 @jump target=* end_Q
-
 *no
 #
 私は、自分の力で解決することにした。[p]
@@ -122,7 +124,6 @@
 [whosay name=磯野 color="dimgray"]
 「また気になるようなことがありましたらお申し付けください」[p]
 @jump target=*end_Q
-
 *okeiko
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -132,10 +133,12 @@
 #
 それよりお稽古のことが気になった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いえ、それよりお稽古のことが知りたいわ[r][sp]最近、張り合いがなくて……」[p]
+「いえ、それよりお稽古のことが知りたいわ[r]
+[sp]最近、張り合いがなくて……」[p]
 [whosay name=磯野 color="dimgray"]
-「お稽古をしますと淑女としての品格が身についていきます。 もしかしたら何処かでお嬢様の頑張りを見てくださる方がいるかもしれません[r]
-[sp]陰ながら磯野も応援させていただきます」[p]
+「お稽古をしますと淑女としての品格が身についていきます。 [r]
+[sp]もしかしたら何処かでお嬢様の頑張りを見てくださる方がいるかも[r]
+しれません。　陰ながら磯野も応援させていただきます」[p]
 [whosay name=磯野 color="dimgray"]
 「お手紙のお相手になられた方については、よろしいですか？」[p]
 ;よろしゅうございましたか？
@@ -143,6 +146,7 @@
 ;選択肢に戻る
 
 *end_Q
+
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
