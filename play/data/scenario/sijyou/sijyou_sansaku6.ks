@@ -18,7 +18,8 @@
 [keyframe name="not_opcy"]
 [frame p=100% opacity="0"]
 [endkeyframe]
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+;【背景】主人公邸 庭の見える部屋：夏
+[chara_mod name="bg" storage="bg/room_niwa_natu.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -31,12 +32,12 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
+#
+昼過ぎ、暑さも落ち着く頃合い。私は、散策に出かけようとした。[p]
 [whosay name="磯野"]
 「お嬢様、今日は"人通りが多い"と思います。散策に出られるのは、[r]
 [sp]お控えした方がよろしいかと」[p]
 ;して頂いたほうが？　どっちが正しいのやら？
-
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
