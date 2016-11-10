@@ -54,13 +54,12 @@
 ;背景変更:和紙風 桜色
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-
-
-#
 相談しようかしら？
 ;【分岐】
-[glink target=*sijyou text="相談する" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
+[link target=*sijyou]相談する[endlink][r][r][r]
+[link target=*no]大丈夫[endlink][r]
+;[r][r][link target=*okeiko]それよりお稽古のことが気になった。[endlink]
+[resetfont]
 [s]
 
 *sijyou
@@ -70,7 +69,7 @@
 [current layer="message0"]
 [er]
 #
-相談することにした。
+私は、相談することにした。
 #
 私は、思い切って磯野に相談することにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -118,20 +117,87 @@
 [current layer="message0"]
 [er]
 #
-それよりお稽古のことが気になった。
+それよりお稽古のことが気になった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、それよりお稽古のことが知りたいわ[r][sp]最近、張り合いがなくて……」[p]
-
 [whosay name=磯野 color="dimgray"]
 「お稽古をしますと淑女としての品格が身についていきます。 もしかしたら何処かでお嬢様の頑張りを見てくださる方がいるかもしれません[r]
 [sp]陰ながら磯野も応援させていただきます」[p]
 [whosay name=磯野 color="dimgray"]
-
 「お手紙のお相手になられた方については、よろしいですか？」[p]
 ;よろしゅうございましたか？
 @jump target=select
 ;選択肢に戻る
 
 *end_Q
+;@jump storage="event.ks" target=*event_owari
 
-イベント終了
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
