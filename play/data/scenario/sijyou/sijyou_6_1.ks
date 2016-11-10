@@ -93,17 +93,18 @@
 [sp]それに僕はまだ一人前の華道家になってもなっていない、[r]
 [sp]本当の僕に会うその日まで……」[p]
 ;一応、ストーリーの前振りをしておいて受け入れ準備をしてもらう
+;【SE】春風
+[playse storage=harukaze.ogg loop=false ]
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
 ;------------keyframe の定義
 [keyframe name="animation1"]
 [frame p=100% x="3000" scale="4"]
 [endkeyframe]
 ;アニメーション実行
-[kanim name="saku1" keyframe="animation1" time="5000" ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[kanim name="saku1" keyframe="animation1" time="7000" ]
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 #
 花吹雪に包まれ声は遠ざかっていく[p]
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 [iscript]
 $('.saku1').remove();
 [endscript]
