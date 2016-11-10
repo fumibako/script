@@ -1,3 +1,14 @@
+[chara_mod name="bg" storage="toumei.gif" time=1500]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築]
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+;bg_kinari.jpg	
+;bg_kinari_sakura.jpg
 #
 ――夢を見た。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -8,7 +19,7 @@
 #
 その途端、見たことも大きな温室が目の前に現れた。[p]
 ;キラキラSEとか
-test_sijyou_hanazono.jpg
+[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (なんて広い温室なのかしら！ それに色々な花もが咲き乱れて綺麗だわ)[p]
 [whosay name=”？？？”]
