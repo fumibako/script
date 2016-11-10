@@ -1,6 +1,10 @@
 ;おまけシナリオ 香水イベントの続きでもいい
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [stopbgm]
+;/////////準備/////////
+;表示遅れによるエラー修正
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_rouka.jpg"]
+;//////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
@@ -13,13 +17,15 @@
 [whosay name="四条父" color="%mp.color"]
 「今日は、やけに二階が騒がしいな」[p]
 [whosay name="四条母" color="#9B608B"]
-「聞いてよ！華織と[華衣]だけで、部屋の荷物の入れ替えをしてるみたいなの！」[p]
+「聞いてよ！華織と[華衣]だけで、部屋の荷物の入れ替えをしてるみたい[r]
+[sp]なの！」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-「あぁ、せめて私も手伝ってあげたいのだけど、アナタからもちょっと言って！」[p]
+「あぁ、せめて私も手伝ってあげたいのだけど、アナタからもちょっと[r]
+[sp]言って！」[p]
 [whosay name="四条父" color="%mp.color"]
 「[ruby text=メイ]女[ruby text=ド]中にやらせれば、いいじゃないか？」[p]
 [whosay name="四条母" color="#9B608B"]
