@@ -30,7 +30,7 @@
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (なんて広い温室なのかしら！ それに色々な花が咲き乱れて綺麗だわ)[p]
-[whosay name=”？？？”]
+[whosay name="？？？"]
 「[名前]……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (誰かしら？……顔は見えないけれど声はするわ[r]
@@ -93,6 +93,7 @@
 [sp]それに僕はまだ一人前の華道家になってもなっていない、[r]
 [sp]本当の僕に会うその日まで……」[p]
 ;一応、ストーリーの前振りをしておいて受け入れ準備をしてもらう
+#
 ;【SE】春風
 [playse storage=harukaze.ogg loop=false ]
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
@@ -112,6 +113,8 @@ $('.saku1').remove();
 「 [名前]ちゃん 、頑張ってね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄様！　待ってください！」 [p]
+[fadeoutbgm time=4000]
+#
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 ;【SE】すずめ（チュンチュン）
 [playse storage=tori_suzume.ogg loop=false ]
