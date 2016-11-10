@@ -76,7 +76,9 @@
 華織お兄様は、静かに呟くと私の頬にご自身の頬をあてて抱きしめる。[p]
 ;キスはないからなー
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織お兄様、懐かしくて優しい気持ちになるわ……)[p]
+(華織お兄様、懐かしくて優しい気持ちになるわ……[r]
+[sp]私の幸せは、やっぱり、一番近くにいた華織お兄さまなのだわ……)[p]
+;一応　伏線はっておくか
 #
 恋夢に満ち足りていると、どこかで鐘が鳴りだした。[p]
 ;広間時計 ボーンボーンボーン…
@@ -86,7 +88,7 @@
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん、僕は、もうそろそろ行かないと」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「どうしてですか？！」[p]
+「どうしてですか？！　私、もう子供じゃないのに！」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「僕は、今のままでは[名前]ちゃんを楽しませてあげれないからね」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -111,7 +113,7 @@
 $('.saku1').remove();
 [endscript]
 [whosay name="華織お兄さま" color="olivedrab"]
-「 [名前]ちゃん 、頑張ってね」[p]
+「[名前]ちゃん 、頑張ってね……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄様！　待ってください！」 [p]
 [fadeoutbgm time=4000]
