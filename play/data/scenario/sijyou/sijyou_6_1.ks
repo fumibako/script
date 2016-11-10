@@ -1,4 +1,6 @@
 [chara_mod name="bg" storage="toumei.gif" time=1500]
+;桜の表示が遅いと見えない為プリロード
+[preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -6,11 +8,17 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
+;ゆっくり表示
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 ;bg_kinari.jpg	
 ;bg_kinari_sakura.jpg
 #
 ――夢を見た。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ここは、どこでしょうか？）[p]
 #
@@ -25,9 +33,9 @@
 [whosay name=”？？？”]
 「[名前]……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(誰かしら？……顔は見えないけれど声はするわ[r]優しくて懐かしいような声……)[p]
+(誰かしら？……顔は見えないけれど声はするわ[r]
+[sp]優しくて懐かしいような声……)[p]
 ;キャライメージ
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (あの方は！)[p]
 [whosay name="華織お兄様" color="olivedrab"]
@@ -56,11 +64,13 @@
 「どうしてかしら？私、踊れてしまってるわ」[p]
 [whosay name="華織お兄様" color="olivedrab"]
 「[名前]ちゃん、とても上手だね。[r]
-[sp]けど、これからは、もっと色々な事を教えてあげたいな」[p]
+[sp]そんな君には、これからは、もっと色々な事を教えてあげたいな」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい……」[p]
 [whosay name="華織お兄様" color="olivedrab"]
 「さぁ、目を閉じて」[p]
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 #
 華織お兄様は、静かに呟くと私の頬にご自身の頬をあてて抱きしめる。[p]
 ;キスはないからなー
@@ -83,9 +93,20 @@
 [sp]それに僕はまだ一人前の華道家になってもなっていない、[r]
 [sp]本当の僕に会うその日まで……」[p]
 ;一応、ストーリーの前振りをしておいて受け入れ準備をしてもらう
+[image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
+;------------keyframe の定義
+[keyframe name="animation1"]
+[frame p=100% x="3000" scale="4"]
+[endkeyframe]
+;アニメーション実行
+[kanim name="saku1" keyframe="animation1" time="5000" ]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 #
 花吹雪に包まれ声は遠ざかっていく[p]
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+[iscript]
+$('.saku1').remove();
+[endscript]
 [whosay name="華織お兄様" color="olivedrab"]
 「 [名前]ちゃん 、頑張ってね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -93,15 +114,19 @@
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 ;【SE】すずめ（チュンチュン）
 [playse storage=tori_suzume.ogg loop=false ]
-;【背景】主人公邸 庭の見える部屋：昼(光が射す)
-[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
+;【背景】主人公邸 庭の見える部屋：昼(光が射す)　ゆっくり
+[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 目が覚めると自分の部屋であった。[p]
 ;ちゅんちゅんSE
+[主人公ポーズ指]
+[主人公通常]
+[主人公憂い]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(夢……?)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ふぅ。なんだったのかしら……不思議な夢を見た気がするわ）[p]
-
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
