@@ -248,7 +248,7 @@
 
 
 ;[婚約者の花園] ネリネ？の庭…背景がないなら写真の花だけでもいいかも
-[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=100]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
 「ここって兄さんが言ってた場所」[p]
 ;○主人公が花言葉を教えてくれる
@@ -374,7 +374,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 
 ;回想シーンおわり
 ;花園もどる
-[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=100]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公憂い]
