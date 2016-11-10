@@ -166,7 +166,7 @@
 @jump target="*test"
 [endif]
 
-*sijyou_kazoku_2|(お見合い後)
+*sijyou_kazoku_2
 [テキスト全画面白文字]
 『家族について』(お見合い後)
 [p]
@@ -183,9 +183,9 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
-*sijyou_kazoku_2_1|(お見合い後・事件解決後)
+*sijyou_kazoku_2_1
 [テキスト全画面白文字]
-『家族について 祖父母両親』(お見合い後)
+『家族について 祖父母両親』(お見合い後・事件解決後)
 [p]
 ;#
 [手紙四条 fumi_number=]
