@@ -5,22 +5,23 @@
 ;友人に会う
 ;書き終わりましたら元の場所に写します
 ;間を埋める為の凡庸用の返信を追加　口調は見合い前か悩む　両方書いておこうかな
-;テストボタン追加済b(-)　仮シナリオ全追加済・凡庸含むs(-) 全然思いついてない(！！)
+;テストボタン追加済b(-)　仮シナリオ全追加済・凡庸含むs(-) 全然思いついてない(+)凡庸思いつかない(！)
 ;友人b(-)s(-)
-;新茶　b(-)s()
-;さつき　b(-)s()
-;詩集を買う　b(-)s()
-;スポーツの話題 b(-)s(!!)
-;小劇場開場	観劇の話題	b(-)　s(!!)
-;淑女度２０以上	写真	写真の話題 b(-)　s()
-;大衆食堂お品書き	食事の話題	b(-)　s()
-;聞き上手と話し上手	聞き上手と話し上手の話題b(-)　s()
+;新茶　b(-)s(-)
+;さつき　b(-)s(!)
+;詩集を買う　b(-)s(!)
+;大衆食堂お品書き	食事の話題	b(-)　s(!)
+;聞き上手と話し上手	聞き上手と話し上手の話題b(-)　s(!)
 ;猫	猫の話題	b(-)　s(-)
 ;緑の石	緑の石の話題	b(-)　s(-)
 ;1日のはじまり	1日のはじまりの話題	b(-)　s(-)
-;お気に入りの曲	お気に入りの曲の話題 b	(-)　s()
-;道案内	道の話題	b(-)s()
-;変化と永遠 b()s()
+;お気に入りの曲	お気に入りの曲の話題 b	(-)　s(!)
+;道案内	道の話題	b(-)s(!)
+;変化と永遠 b(-)s(!)
+;スポーツの話題 b(-)s(+)
+;小劇場開場	観劇の話題	b(-)　s(+)
+;淑女度２０以上	写真	写真の話題 b(-)　s(+)
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -79,8 +80,12 @@
 [glink target="*sps" text="スポーツの話題" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="*kangeki" text="観劇" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="*syasin" text="写真" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-
+[glink target="*sincya3_1" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="*sincya3_2" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*sincya3_3" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="*sincya3_4" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 *common
+[glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=white]
 [s]
@@ -159,7 +164,7 @@
 ;//////////////////////////////新茶の話題/////////////////////////////
 *sincya
 [テキスト全画面白文字]
-新茶の話題[p]
+新茶の話題（事件前）[[p]
 [手紙四条 fumi_number=]
 [名前]、手紙をありがとう。[r]
 [r]
@@ -187,7 +192,7 @@
 
 *sincya_2
 [テキスト全画面白文字]
-新茶の話題[p]
+新茶の話題（事件前）[[p]
 ;///////新茶の話題///////
 [手紙四条 fumi_number=]
 [名前]、手紙をありがとう。[r]
@@ -208,7 +213,7 @@
 
 *sincya_3
 [テキスト全画面白文字]
-新茶の話題[p]
+新茶の話題（事件後）[[p]
 ;///////新茶の話題///////
 [手紙四条 fumi_number=]
 [名前]さん、手紙をありがとう。[r]
@@ -222,11 +227,79 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
-
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
 [endif]
+
+
+*sincya_3_1
+[テキスト全画面白文字]
+新茶の話題　凡庸（事件前）[p]
+;///////新茶の話題///////
+[手紙四条 fumi_number=]
+[名前]、手紙をありがとう。[r]
+この前、自分でお茶を[ruby text=い]淹れたら量を間違えて[r]
+苦くなってしまったよ。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*sincya_3_2
+[テキスト全画面白文字]
+新茶の話題　凡庸（事件前）[p]
+;///////新茶の話題///////
+[手紙四条 fumi_number=]
+[名前]、手紙をありがとう。[r]
+この前、自分でお茶をいれたら[r]
+美味しく[ruby text=い]淹れることができました。[r]
+お茶を飲むと落ち着きますね[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*sincya_3_3
+[テキスト全画面白文字]
+新茶の話題　凡庸（事件後）[p]
+;///////新茶の話題///////
+[手紙四条 fumi_number=]
+[名前]さん、手紙をありがとう。[r]
+この前、自分でお茶をいれたら量を間違えて[r]
+苦くなってしまいました。[r]
+[名前]さんが[ruby text=い]淹れたお茶を飲んでみたい[r]
+ですね[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*sincya_3_4
+[テキスト全画面白文字]
+新茶の話題　凡庸（事件後）[p]
+;///////新茶の話題///////
+[手紙四条 fumi_number=]
+[名前]、手紙をありがとう。[r]
+この前、自分でお茶をいれたら[r]
+美味しく[ruby text=い]淹れることができました。[r]
+[名前]さんと一緒にお茶を飲みたいですね[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
 
 ;//////////////////////////////さつきの話題/////////////////////////////
 
@@ -248,7 +321,6 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
-
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
