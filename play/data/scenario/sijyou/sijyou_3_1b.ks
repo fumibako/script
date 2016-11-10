@@ -7,12 +7,17 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築]
+#
+準備中・・・
 ;////////////テスト用表示準備　四条/////////
 [preload storage="data/fgimage/sijyou/me_toji.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/me_futuu.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/mayu_komari.png"]
+[er]
+準備中・・
 ;////////////表示準備/////////
 ;選択画像の表示遅れ防止
 [preload storage="data/fgimage/bg/plane_sepia.jpg"]
@@ -20,8 +25,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 ;///////////////////////////////
 ;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。各ファイルプリロード追記もありがとうございます（スクリプト担
-
-[イベントシーン構築]
+[er]
 [if exp=tf.test_sijyou==true]
 【！】テストページからはじめます。変数を代入しますか？[p]
 [link target=first]【１】代入しない[endlink][r]
