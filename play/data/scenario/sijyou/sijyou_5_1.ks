@@ -1,8 +1,5 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [preload storage="data/fgimage/bg/plane_sakura.jpg"]
-;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -10,19 +7,24 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ふぅ閉]
 (ふぅ……)[p]
 #
-白い手紙に目を落とす。[p]
+書きかけの手紙に目を落とす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……華織お兄様への返事が決まらないわ)[p]
 #
 気になれば、気になるほど、これからどうして良いのかわからなくなって
 きてしまう[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公憂い]
 （手紙だけじゃないわ。[r]
 [sp]お会いしてからだってどうしたらいいか少し不安だわ）[p]
 #
@@ -30,32 +32,42 @@
 ;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
 [whosay name=磯野 color="dimgray"]
+[主人公通常]
 「お嬢様、お茶をお持ちしました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとう。入っていいわよ」[p]
+[主人公眉下げ下]
+「ありがとう。入っていいわ」[p]
 [whosay name=磯野 color="dimgray"]
 「失礼します」[p]
 #
+[主人公目閉]
+[主人公口ほほえみ]
 フワリと新緑の芳醇な香りが漂い、心を和ませる[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （あの時よりも書けるようになったと思っていたのに）[p]
 #
+[主人公ふぅ閉]
 緑光を映すお茶を口にすると、もうひとつ溜息をついた。[p]
 [whosay name=磯野 color="dimgray"]
 「お嬢様？　どうかされましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公横目]
+[主人公ポーズ通常]
 「いえ、少し」[p]
 #
 私は、磯野に相談しようかと目を合わせてみたが、[r]
 お相手に対して、気持ちが芽生えてきた分に少し恥ずかしくなってしまった。[p]
 [whosay name=磯野 color="dimgray"]
+[主人公通常]
 「お嬢様。よろしければ、この磯野に御相談くださりませ。[r]
 [sp]旦那様からお手紙のやりとりについてお嬢様の手伝いになるよう[r]
 [sp]いい付かっております」[p]
 
 *select
+[主人公横目]
+[主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-相談しようかしら？
+(相談しようかしら？)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢用の背景：(和紙風桜色はオープニングで使用)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -89,7 +101,9 @@
 私は、思い切って磯野に相談することにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
-「わかりましたわ……」[p]
+「わかりましたわ……」
+[主人公口ほほえみ]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「今後、お会いする方に失礼がないようにするには、どのように[r]
@@ -135,6 +149,7 @@
 @jump target=* end_Q
 *no
 #
+[主人公通常]
 私は、自分の力で解決することにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
@@ -151,6 +166,7 @@
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
+[主人公通常]
 それよりお稽古のことが気になった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、それよりお稽古のことが知りたいわ[r]
