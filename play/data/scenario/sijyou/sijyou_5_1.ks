@@ -29,7 +29,6 @@
 #
 気になれば、気になるほど、これからどうして良いのかわからなくなって
 きてしまう[p]
-[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 （手紙だけじゃないわ。[r]
