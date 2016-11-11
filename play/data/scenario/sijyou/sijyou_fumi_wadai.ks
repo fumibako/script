@@ -101,8 +101,8 @@
 [glink target="*sisyu" text="詩集" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="*kangeki" text="観劇(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="*kangeki2" text="観劇(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 *common
 
@@ -1287,10 +1287,13 @@
 ;昔はエロ写真に美人をコラしていた
 [r]
 あぁ、お説教くさくなって申し訳ありません。[r]
+[r]
 話は、変わりますが、写真といえば[r]
-[名前]の結納時の写真の段取りが決まってなかったですね[r]
-お父様とお会いした時にもお話しますが、名前さんの要望が[r]
-あったら教えてくださいね[r]
+[名前]さんとの結納時の写真の段取りが決まってなかったですね[r]
+お父様とお会いした時にもお話しますが、[名前]さんの要望が[r]
+あったら教えてください。[r]
+その時の[名前]さんは、とても美しいのでしょうね。[]
+;説教くささ半減↑
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
