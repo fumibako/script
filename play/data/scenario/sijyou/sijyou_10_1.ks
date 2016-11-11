@@ -1,19 +1,19 @@
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
+;[暗転]
 ;使用背景メモ
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
 ;//////☆障害のはじまり 心の暗闇//////
 ;○手紙が帰ってこなくなる
-;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
-
 ;まだ深刻ではない
 [主人公ポーズ通常]
 [wait time=10]
