@@ -17,7 +17,7 @@
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
-
+;////////////先に登場させておく////////////
 [四条ベース羽織]
 [四条微笑み]
 ;テキスト全画面
@@ -146,7 +146,7 @@ _　ございます」[p]
 [四条口微笑み]
 [wait time=50]
 
-;～～～～～～～～～ここから準備中～～～～～～～～～
+;～～～～～～～～～～～～～～～～～～ここから準備中～～～～～～～～～
 ;消えている瞬間を隠してみる・・・
 [layopt layer=29 visible=true]
 [image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
@@ -174,7 +174,7 @@ _　ございます」[p]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-;～～～～～～～～～ここまで準備中～～～～～～～～～
+;～～～～～～～～～～～～～～～～～～ここまで準備中～～～～～～～～～～～～～～～～～～
 [freeimage layer = 29 time=500]
 #
 ;ナレーターモノローグ
@@ -214,18 +214,25 @@ _　ございます」[p]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+;～～～～～～～～～ここから準備中～～～～～～～～～
+;消えている瞬間を隠してみる・・・
+[layopt layer=29 visible=true]
+[image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
+;その間に登場
+;【登場】四条
+;[四条ベース着物]　公式の場なので羽織？
+[四条ベース羽織]
+[四条微笑み]
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+;～～～～～～～～～ここまで準備中～～～～～～～～～
+[freeimage layer = 29 time=500]
 [主人公目を開く]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 #
 四条様のお声でふと我に返った――[p]
-;【登場】四条
-;[四条ベース着物]　公式の場なので羽織？
-[四条ベース羽織]
-[四条微笑み]
 [四条口開]
 [whosay name="四条 華織" color="olivedrab"]
 「僕の後ろをついて回っていた可愛らしい君は、いつの間にか可憐な[r]
