@@ -17,6 +17,9 @@
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+
+[四条ベース羽織]
+[四条微笑み]
 ;テキスト全画面
 [font color=white size=27]
 ――白萩そよぐ、料亭にて。[l][r]
@@ -29,8 +32,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 ;[四条ベース着物]　公式の場なので羽織？
-[四条ベース羽織]
-[四条微笑み]
+
 ;○四条、主人公の父親を敬う態度で礼容な挨拶を交わす。（四条の公私を分けた態度を表現.主人公には私的な形）
 [whosay name="四条父" color="darkolivegreen"]
 「"[名字][名前]"嬢と、息子の"華織"との縁談をご承諾くださり[r]
