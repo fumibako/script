@@ -2,18 +2,22 @@
 ;¥¥¥¥¥¥¥¥イベント6 兄につれてこられた四条と会うから事件解決のネリネの庭まで 11月1週〜日付調整11月3週？¥¥¥¥¥¥¥
 ;スクリプトの作業しやすさの関係から2ファイルに分けていますが、実際は連続再生される予定です
 ;☆主人公の行動
-;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-[stopbgm]
+;///使用背景メモ　ここでは表示遅れはないですが必要時に開放//////
+;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
+;[preload storage="data/fgimage/bg/test_mon.jpg"]
+;[preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg"]
+;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+;///////////////////////////////////////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[stopbgm]
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
-
-
 兄のはからいで料亭にやってきた[名前]は、会うべき[r]
 "とある人物"を待っていた。[p]
 [主人公ポーズ通常]
@@ -275,7 +279,6 @@
 ;△以下の文は、つけてたほうが自然？ i息兼ねてつけてみます。
 [主人公通常]
 [wait time=10]
-
 [四条驚き]
 ;海外に住んでるのにウチってどこだろう？ってツッコミが芽生えた
 [whosay name=文矢 color="#538a8a"] 
@@ -302,17 +305,13 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ありがとうございます)[p]
-
 ;【退場】四条
 [四条退場]
-
 [fadeoutbgm time=3000]
-
 ;適当につけましたので変えてもよいです。遠いぞーってことがわかればよし
 [テキスト全画面白文字]
 [名前]と華織達は、杳々たる山深き[r]
 『[華衣]の婚約者』の生家へと足を運んだ。[p]
-
 ;○急いで！のイメージ
 ;☆キャラの決意 四条の決意
 ;○京の端町、質素な邸宅がある
@@ -322,9 +321,7 @@
 [wait time=10]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-
 『[華衣]の婚約者の生家前』[p]
-
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -346,7 +343,6 @@
 [whosay name="華織" color="olivedrab"]
 「資産の差し押さえだね [r]
 [sp][華衣]の婚約者は小さな公家の出なんだ」[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
@@ -360,10 +356,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「行きましょう」[p]
-
 ;【退場】四条
 [四条退場]
-
 ;[暗点]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -515,12 +509,10 @@
 ;[暗点]
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="f.haikei_credit=''"]
-
 #
 ・・・・・・
 [wait time=1000]
 ;私達は、埃に塗れながら大切な荷物をまとめた。
-
 ;[寂れた邸宅]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
