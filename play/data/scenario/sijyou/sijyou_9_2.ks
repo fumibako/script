@@ -266,6 +266,9 @@ _　ございます」[p]
 ;【退場】四条
 [四条退場]
 ;///////////////////////シーン庭園＿白萩/////////////////////////////////////////////////
+[layopt layer=14 visible=true]
+[image name="toujyou_mae"  layer=14 x=1 y=1 storage=""bg/bg_flower_hagi.jpg" time=500]
+[wait time=50]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;【背景】庭園
@@ -282,6 +285,9 @@ _　ございます」[p]
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+[freeimage layer=14]
+[wait time=50]
+
 [主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい……」[p]
