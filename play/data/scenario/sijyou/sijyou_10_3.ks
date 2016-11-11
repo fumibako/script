@@ -1,6 +1,10 @@
 ;¥¥¥¥¥¥¥¥イベント5.5手紙イベント¥¥¥¥¥¥¥¥
-;[主人公部屋]
-;表情がころころ変わる主人公を追加 カットしても？？
+;使用背景メモ　ここでは表示遅れはないですが必要時に開放
+;[preload storage="data/fgimage/bg/room_niwa.jpg"]
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg"]
+;[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
+;[preload storage="data/fgimage/bg/room_niwa_yuki.jpg"]
+
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -142,8 +146,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 『内容は覚えているからいいよ』[p]
 #
 ;○回想1おわり
-;【背景】ヒロインの部屋
-;背景ない内はこれで
+;【背景】ヒロインの部屋雪
 [chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [iscript]
