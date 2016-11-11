@@ -46,13 +46,13 @@
 [endif]
 ;//////////////////////////////ここまでテスト用///////////////////////////////////
 *first
+[er]
 ;////////////表示準備/////////
 ;文矢との選択肢表示↓　選択肢での表示遅れ防止
 [preload storage="data/fgimage/bg/plane_sepia.jpg"]
 ;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 ;///////////////////////////////
-[er]
 ;～～～～～～～～～～～～～シーン料亭～～～～～～～～～～～～～～～～～
 ;【テキスト全画面】黒茶・和紙風背景に白文字
 [wait time=50]
