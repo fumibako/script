@@ -1,3 +1,4 @@
+#
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 ;桜の表示が遅いと見えない為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
@@ -41,26 +42,28 @@
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん。　こっちだよ」[p]
 #
-その優しい声の主は、華織お兄様であった[p]
+その優しい声の主は、華織お兄さまであった[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄様！」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん会いたかったよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「私もです、華織お兄様！」 [p]
+「私もです、華織お兄さま！」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「あの雪の日に君を置いていってしまってごめんね[r]
+「あの雪の日に君を置いて去っていってしまってごめんね[r]
 [sp]とても後悔してる」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな！ だって……大人になる為の決まりですもの」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「さぁ、[名前]ちゃん。君に好きな花をあげよう。そしてワルツを踊ろうか」[p]
+「さぁ、[名前]ちゃん。君に好きな花をあげよう。そしてワルツを踊[r]
+[sp]ろうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ？！」[p]
 #
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 #
-華織お兄様は、私の髪飾りに花を添えると、夢のような足取りでワルツを舞う[p]
+華織お兄さまは、私の髪飾りに花を添えると、夢のような足取りでワルツを[r]
+舞う。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうしてかしら？私、踊れてしまってるわ」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -115,7 +118,7 @@ $('.saku1').remove();
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん 、頑張ってね……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織お兄様！　待ってください！」 [p]
+「華織お兄さま！　待ってください！」 [p]
 [fadeoutbgm time=4000]
 #
 [chara_mod name="bg" storage="toumei.gif" time=1500]
@@ -126,12 +129,12 @@ $('.saku1').remove();
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 目が覚めると自分の部屋であった。[p]
-;ちゅんちゅんSE
 [主人公ポーズ指]
 [主人公通常]
-[主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(夢……?)[p]
+(夢……?)
+[主人公憂い]
+[p]
 [主人公ふぅ閉]
 (ふぅ。 なんだったのかしら……不思議な夢を見た気がするわ）[p]
 [イベントシーン終了]
