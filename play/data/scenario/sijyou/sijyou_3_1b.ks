@@ -1,6 +1,8 @@
 *test
+;/////////////////////////ここからテスト用の準備///////////////////////////////
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+;暗転ではなくてローディング用の画面があるといいかもしれません　ここはテスト用です
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -18,12 +20,6 @@
 [preload storage="data/fgimage/sijyou/mayu_komari.png"]
 [er]
 準備中・・
-;////////////表示準備/////////
-;選択画像の表示遅れ防止
-[preload storage="data/fgimage/bg/plane_sepia.jpg"]
-;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-;///////////////////////////////
 ;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。各ファイルプリロード追記もありがとうございます（スクリプト担
 [er]
 [if exp=tf.test_sijyou==true]
@@ -48,12 +44,20 @@
 [eval exp="f.para_shujinkou_shukujodo=1"]
 現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
 [endif]
-
+;//////////////////////////////ここまでテスト用///////////////////////////////////
 *first
+;////////////表示準備/////////
+;文矢との選択肢表示↓　選択肢での表示遅れ防止
+[preload storage="data/fgimage/bg/plane_sepia.jpg"]
+;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+;///////////////////////////////
 [er]
 ;～～～～～～～～～～～～～シーン料亭～～～～～～～～～～～～～～～～～
 ;【テキスト全画面】黒茶・和紙風背景に白文字
+[wait time=50]
 [テキスト全画面白文字]
+[wait time=50]
 ;華道展を終わらせ(昼過ぎまで)祖父母にまかせた？
 ;イベント別にしてもいいかも？
 その後、華織様が用意された食事の場で、四条家と鷹司家で食事することとなった。[p]
