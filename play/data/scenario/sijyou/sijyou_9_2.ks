@@ -145,8 +145,12 @@ _　ございます」[p]
 [wait time=50]
 [四条口微笑み]
 [wait time=50]
+;消えている瞬間を隠してみる・・・
+[layopt layer=29 visible=true]
+[image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
 ;回想シーンのため【退場】四条
 [四条退場]
+[freeimage layer = 29 time=500]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】星降る夜に
 [stopbgm]
