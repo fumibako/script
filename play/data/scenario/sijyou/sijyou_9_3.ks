@@ -1,16 +1,29 @@
 ;¥¥¥¥¥¥¥¥イベント2.5お見合い感想手紙¥¥¥¥¥¥¥¥
 ;☆四条からお見合いについての手紙がやってくる。久しぶりに会って見違えたことなど
-;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;暗転
+;[chara_mod name="bg" storage="toumei.gif" time=1500]
+[stopbgm]
+;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
+;[preload storage="data/fgimage/bg/room_niwa.jpg"]
+;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
+;[preload storage="data/fgimage/bg/bg_garden_isu.jpg"]
+;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg]
+;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg]
+;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg]
+;///////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
-
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -18,24 +31,20 @@
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様、四条様からお手紙が届いております」[p]
-
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 [主人公目パチ1回]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！　ありがとう 返事を書いたら呼びます。下がって頂戴」[p]
-
 [whosay name="磯野" color="dimgray"]
 「はい」[p]
-
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目閉じ]
@@ -120,13 +129,10 @@
 [eval exp="sf.FButton='ON'"]
 ;¥¥¥¥¥¥¥¥イベント3¥¥¥¥¥¥¥¥
 ;☆デート1 ミッド・ポイント//////////////////
-
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-
 [whosay name="四条父" color="darkolivegreen"]
 「この国の未来と、四条家と[名字]家との婚約を祝って乾杯」[p]
-
 ;【SE】乾杯
 [playse storage=tya_katya.ogg loop=false ]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -135,7 +141,6 @@
 [whosay name="四条祖母" color="#916565"]
 「この回遊庭園は、大名屋敷の折に造られたものを活かしており、[r]
 [sp]外交の為にも一定の場所から洋風にしているんですの……」[p]
-
 ;○主人公真摯に聞いている
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
@@ -144,70 +149,57 @@
 「そうなんですか」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
-
 [whosay name="四条親戚" color="#807070"]
 「これは良いご縁。ウチもあやかりたいな」[p]
-
-
 [whosay name="四条 華織" color="olivedrab"]
 「本日はお越しいただきありがとうございます」[p]
-
 ;【SE】人々のざわめき（ザワザワ…屋外）
 ;[playse storage=zawa_out.ogg loop=false ]
-
 [主人公目パチ1回]
 [whosay name="四条祖父" color="#888898"]
 「あの子の『新しい文通相手』は、[名字]家のような武家がいいのぉ」[p]
-
 [whosay name="四条祖父" color="#888898"]
 「手筈は整っておるだろうな？ 」[p]
-
 [whosay name="四条母" color="#9B608B"]
 「は、はい。その様に私も計らっております。[r]
 [sp]何分、"あの事"があってから部屋からあまり出てこないもので」[p]
-
+;[whosay name="四条祖父" color="#888898"]
+;「それにしても、こういう時くらい他の兄弟も帰ってうればいいものを」[p]
+;[whosay name="四条母" color="#9B608B"]
+;「申し訳ございません」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (なんとなく見覚えがあるような方もいらっしゃいますね)[p]
-
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (これからは、ここの『しきたり』を勉強しなくては！ )[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
-
 ;○はりきってる四条祖母 姑？
 [whosay name="四条祖母" color="#916565"]
 「それからですね……」[p]
 [主人公目パチ1回]
 ;○小さな親戚の子は鬼ごっこやかくれんぼをしている ぶつかりそうになると四条がかばってくれる 賑やかな雰囲気
-
 ;【登場】四条
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
-
 [whosay name="四条 華織" color="olivedrab"]
 「少し、疲れたかい？」[p]
-
 [whosay name="四条 華織" color="olivedrab"]
 「ごめんね。[r]
 [sp]どうも、我が家は、家同士の繋がりや[ruby text=し]仕[ruby text=きた]来りが強くて」[p]
 ;謝るなよーって思うが他にセリフ思いつかない
-
 [四条困り微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「けど、みんな、久しぶりに[名前]が来てくれたものだから、[r]
 [sp]構いたくて仕方ないんだ」[p]
-
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
-
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
@@ -220,10 +212,8 @@
 [四条口開]
 [whosay name="四条 華織" color="olivedrab"]
 「むこうで休もうか」[p]
-
 ;【退場】四条
 [四条退場]
-
 ;地の文などをいれたため、明るいシーン→暗いシーン（華衣）→戻る明るい
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
@@ -263,7 +253,6 @@
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
-
 ;○そこはかとなく大人の雰囲気
 ;○伏線 無くてもどちらでも
 #
@@ -277,7 +266,6 @@
 「……なんで……だけ」[p]
 #
 こちらが気づいた途端、それは何も無かったかのように影へと消えていった。[p]
-
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
@@ -294,7 +282,6 @@
 （？）[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-
 ;【SE】子供たち(楽しげな笑い声)
 [playse storage=kodomotachi_warai.ogg loop=false ]
 [whosay name="親戚の子 その壱" color="#807070"]
@@ -303,7 +290,6 @@
 [wait time=10]
 [whosay name="親戚の子 その弐" color="#807070"]
 「こっちだよー！ 」[p]
-
 ;【SE】ザッ(衣擦れ)
 [playse storage=za_kinuzure.ogg loop=false ]
 [四条驚き]
@@ -342,7 +328,6 @@
 [主人公目を開く]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (急に腕を引かれて驚いてしまいました)[p]
-
 [四条困り微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「ここは走りやすい場所だからね。[r]
@@ -351,10 +336,8 @@
 [whosay name="四条 華織" color="olivedrab"]
 「もう、そんな必要はないようだね」[p]
 ;まだ妹扱い
-
 [whosay name="四条 華織" color="olivedrab"]
 「そうだ。　新しい庭が出来たんだ、一緒に見に行こうか」[p]
-
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】「きずな」
@@ -362,16 +345,13 @@
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 [主人公ポーズ通常]
-
 [主人公通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
-
 ;[暗転]より場面転換でしょうか
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-
 ;追記分
 ;◎家族ぐるみの付き合いになってきたので四条のことを名前で呼んでいいかきく
 [whosay name="四条 華織" color="olivedrab"]
@@ -379,24 +359,18 @@
 #
 四条は[名前]の隣にたって、薔薇の名について話しながら、[r]
 出会った頃のように[名前]の髪を撫でる。[p]
-
 [四条目パチ1回]
-
 [主人公目パチ1回]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (やっぱり、まだ四条様にとって、妹扱いなのでしょうか？)[p]
-
 [四条目パチ1回]
-
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そうだわ。私、四条様に言わないといけないことがありましたわ)[p]
-
 [四条目パチ1回]
-
 ;この部分↓は、あっても無くても。
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
@@ -407,9 +381,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「四条様」[p]
-
 [四条目パチ1回]
-
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -418,20 +390,15 @@
 [wait time=10]
 [whosay name="四条父" color="darkolivegreen"]
 「２人はやはり仲が良いな！ 」[p]
-
 [whosay name="四条 華織" color="olivedrab"]
 「 ？ 」[p]
-
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 [whosay name="四条母" color="#9B608B"]
 「アナタ、邪魔をなさらないように」[p]
-
 [主人公横目パチ1回]
-
 [whosay name="四条父" color="darkolivegreen"]
 「そうだな！ 」[p]
-
 [主人公ポーズ指]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
@@ -443,7 +410,6 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……」[p]
-
 ;○出だしを折られて[主人公汗]
 [主人公ポーズ通常]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -456,16 +422,13 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あの……四条様」[p]
-
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [四条目パチ1回]
-
 [whosay name="四条 華織" color="olivedrab"]
 「なんだい[名前]？ 」[p]
-
 [主人公通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
@@ -478,7 +441,6 @@
 [sp]下のお名前でお呼びしてよろしいでしょうか？ 」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 [主人公目パチ1回]
 [四条驚き]
 [whosay name="四条 華織" color="olivedrab"]
@@ -493,7 +455,6 @@
 [wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-
 [四条口微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]は、可愛らしい方ですね」[p]
@@ -501,18 +462,15 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
-
 [四条笑顔大]
 [whosay name="四条 華織" color="olivedrab"]
 「これからはどの様に呼んでいただいても構いませんよ」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
-
 [四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「なんでしたら、"華織お兄様" でもいいですよ」[p]
 ;○四条 意地悪にからかって
-
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -521,25 +479,21 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、 "華織様" とだけお呼びさせてください」[p]
-
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公伏目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「[名前]。久しぶりに来た、我が家を見て回ろうか」[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
-
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「いずれ、君の家になる場所だから[r]
 [sp]迷子にならないように覚えておこう」[p]
-
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい、華織様」[p]
@@ -670,38 +624,31 @@
 ;【背景】[湖畔]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1500]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-
 #
 湖畔。暖かな日差しが水面を輝かせ、2人を乗せたボートをゆらゆらと照らす。[p]
 ;[SE水を跳ねる音]？
 [whosay name="華織" color="olivedrab"]
 「結構、遠くまで漕いでしまったね」[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね」[p]
 [主人公目パチ1回]
-
 ;[主人公驚き] 嫌ではない感じの驚き顔
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様、意外とお力も強いのですね)[p]
-
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 (息切れもされていないですし)[p]
-
-
 [主人公通常]
 ;【背景】[湖畔]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike_long.jpg" time=1500]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;ここでアップを使ってもいいかも
 [whosay name="華織" color="olivedrab"]
 「ここまで来ると2人だけだね」[p]
 ;多分からかっている
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ][p]
-
 [主人公目を開く]
 [wait time=30]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
@@ -712,7 +659,6 @@
 「あ、あちらにも温室がありますね」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
-
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
