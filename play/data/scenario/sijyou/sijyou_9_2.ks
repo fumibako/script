@@ -11,7 +11,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=500]
-[wait time=10]
+[wait time=50]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
@@ -146,7 +146,20 @@ _　ございます」[p]
 [wait time=50]
 [四条口微笑み]
 [wait time=50]
-
+;【背景】思い出（花
+[chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+#
+;ナレーターモノローグ
+あの頃を思い出す――[p]
 ;～～～～～～～～～～～～～～～～～～ここから準備中～～～～～～～～～
 ;消えている瞬間を隠してみる・・・
 [layopt layer=29 visible=true]
@@ -164,22 +177,9 @@ _　ございます」[p]
 ;○主人公、冷静さを装って大人に見られようと頑張る
 ;○主人公、四条について感想を述べる（四条についての紹介をする）
 ;/////////////////////////////////回想シーンはじまり//////////////////
-;【背景】思い出（花
-[chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
-[eval exp="f.haikei_credit=''"]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
+
 ;～～～～～～～～～～～～～～～～～～ここまで準備中～～～～～～～～～～～～～～～～～～
 [freeimage layer = 29 time=500]
-#
-;ナレーターモノローグ
-あの頃を思い出す――[p]
 [主人公退場]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （久しぶりに再会した華織お兄様。[r]
