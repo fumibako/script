@@ -7,8 +7,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-#
 [イベントシーン構築]
+#
 ;ゆっくり表示
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 ;bg_kinari.jpg	
