@@ -357,8 +357,8 @@
 [whosay name="四条 華織" color="olivedrab"]
 「ここには、小さな種類の薔薇が植えてあるんだ」[p]
 #
-四条は[名前]の隣にたって、薔薇の名について話しながら、[r]
-出会った頃のように[名前]の髪を撫でる。[p]
+四条様は私の隣にたって、薔薇の名について話しながら、[r]
+出会った頃のように私の髪を撫でる。[p]
 [四条目パチ1回]
 [主人公目パチ1回]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -504,8 +504,6 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 [主人公目を開く]
-
-
 ;○温室をみてまわる 各国の珍しい草木(サボテンなども有り)を見て回る
 ;場面転換
 [主人公通常]
@@ -515,32 +513,25 @@
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
 ;ナレーター
-思い出の場を語り合いながら、"華織"は[名前]を温室へと誘った。[p]
-
+思い出の場を語り合いながら、"華織様"は[名前]を温室へと誘った。[p]
 [四条目パチ1回]
-
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「珍しい草木や花々が咲いてますね」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 [主人公目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「気に入ったものがあったら、また差し上げますよ」[p]
-
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「この不思議な形をした植物は何でしょうか？」[p]
-
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
 「ペヨーテといって、サボテンの一種だよ[r]
 [sp][名前]は好きではないかもしれないね」[p]
-
 [四条口微笑み]
-
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「色んな種類の花々があるのですね」[p]
