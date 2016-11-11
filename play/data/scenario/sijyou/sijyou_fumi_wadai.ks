@@ -59,7 +59,7 @@
 *page2
 [glink target="*sijyou_yujin_1" text="友人1(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="*sijyou_yujin_2" text="友人1(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*sijyou_yujin_b"　text="友人2(前・凡庸)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="*sijyou_yujin_b" text="友人2(前・凡庸)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="*sijyou_yujin_b2" text="友人2(後・凡庸)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
