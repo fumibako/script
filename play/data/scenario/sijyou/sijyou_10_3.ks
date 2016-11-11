@@ -1,4 +1,7 @@
 ;¥¥¥¥¥¥¥¥イベント5.5手紙イベント¥¥¥¥¥¥¥¥
+;暗転
+;[chara_mod name="bg" storage="toumei.gif" time=1500]
+[stopbgm]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
 ;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg"]
@@ -9,7 +12,6 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[stopbgm]
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
