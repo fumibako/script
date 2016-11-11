@@ -19,8 +19,8 @@
 ;お気に入りの曲	お気に入りの曲の話題 b	(-)　s(!)
 ;道案内	道の話題	b(-)s(!)
 ;変化と永遠 b(-)s(!)
-;スポーツの話題 b(-)s(+)
-;小劇場開場	観劇の話題	b(-)　s(+)
+;スポーツの話題 b(-)s(!)
+;小劇場開場	観劇の話題	b(-)　s(!)
 ;淑女度２０以上	写真	写真の話題 b(-)　s(+)
 *start
 [stopbgm]
@@ -99,8 +99,10 @@
 
 *page4
 [glink target="*sisyu" text="詩集" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="*kangeki" text="観劇" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="*syasin" text="写真" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="*kangeki" text="観劇(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="*kangeki2" text="観劇(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 *common
 
@@ -1201,14 +1203,16 @@
 @jump target="*test"
 [endif]
 
-;/////////////////観劇//////////////////////
+;///////////////////////////////////////観劇////////////////////////////////////////////
 *kangeki
 [テキスト全画面白文字]
-『ごめんご。まだない』
+『観劇の話題　事件前』
 [手紙四条 fumi_number=]
-[名前]さんへ　手紙をありがとう。[r]
-[r]
-[r]
+[名前]へ　手紙をありがとう。[r]
+最近できたようだね。[r]
+しばらくは、込み合いそうだから、落ち着いたら[r]
+見に行こうか[r]
+観劇といえば、今度、歌舞伎を見にいってみようか？[r]
 [r]
 まだ書いてないんだ、まってね
 [r]
@@ -1220,15 +1224,19 @@
 @jump target="*test"
 [endif]
 
-;/////////////////写真//////////////////////
-*syasin
+*kangeki2
 [テキスト全画面白文字]
-『ごめんご。まだない』
-
+『観劇の話題　事件後』
 [手紙四条 fumi_number=]
-[名前]さんへ　手紙をありがとう。[r]
-まだ書いてないんだ、まってね[r]
-[名前]は手紙を書くのがはやいね
+[名前]さんへ　手紙をありがとうございます。[r]
+[r]
+観劇について調べていたら、僕が好きな作曲家の曲を使用いた[r]
+オペラをやっているそうです。[r]
+しかしながら、今はやりたいこと、やらなければいけないこと[r]
+が多くて行けそうにないです…[r]
+[r]
+いつか[名前]さんとオペラを見に行きたいですね[r]
+[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
@@ -1237,6 +1245,61 @@
 [clearstack]
 @jump target="*test"
 [endif]
+
+
+;///////////////////////////////////////写真////////////////////////////////////////////
+*syasin
+[テキスト全画面白文字]
+『写真の話題（事件前）』
+[手紙四条 fumi_number=]
+[名前]へ　手紙をありがとう。[r]
+[r]
+声をかけられるということは、[名前]が、とても[r]
+綺麗なのだろうけど、僕は心配だな[r]
+[r]
+写真といえば[r]
+文矢の結納写真、幸せそうに写っていたね。[r]
+そういえば、[名前]は、やっぱり白無垢がいいのかな[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*syasin2
+[テキスト全画面白文字]
+『写真の話題（事件後）』
+[手紙四条 fumi_number=]
+[名前]さんへ　手紙をありがとう。[r]
+[r]
+声をかけられるということは、[名前]さんが、[r]
+美しいなのだろうけど、僕は心配のあまり、[r]
+居ても立っても居られない気持ちになってしまいます。[r]
+[r]
+[名前]さん、僕以外の男性に声をかけられても、ついて[r]
+いかなように。[r]
+たとえ、その写真が素晴らしい写真であっても、世に[r]
+出回ってしまうと悪い人に悪用されてしまうことがある[r]
+のです。[p]
+;昔はエロ写真に美人をコラしていた
+[r]
+あぁ、お説教くさくなって申し訳ありません。[r]
+話は、変わりますが、写真といえば[r]
+[名前]の結納時の写真の段取りが決まってなかったですね[r]
+お父様とお会いした時にもお話しますが、名前さんの要望が[r]
+あったら教えてくださいね[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
 
 ;/////////////////ここからは戻り処理//////////////////////
 *back_test
