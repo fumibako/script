@@ -161,6 +161,8 @@ _　ございます」[p]
 ;～～～～～～～～～～～～～～～～～～ここから準備中～～～～～～～～～
 ;消えている瞬間を隠してみる・・・
 [layopt layer=29 visible=true]
+;ボタンを非表示
+[layopt layer=fix visible=false]
 [image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
 ;回想シーンのため【退場】四条
 [四条退場]
@@ -181,6 +183,8 @@ _　ございます」[p]
 ;/////////////////////////////////回想シーンはじまり//////////////////
 ;～～～～～～～～～～～～～～～～～～ここまで準備中～～～～～～～～～～～～～～～～～～
 [freeimage layer = 29 time=500]
+;ボタンを表示
+[layopt layer=fix visible=true]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （久しぶりに再会した華織お兄様。[r]
 [sp]幼きあの頃も、麗しい佇まいをなさってました）[p]
@@ -268,8 +272,8 @@ _　ございます」[p]
 ;【退場】四条
 [四条退場]
 ;///////////////////////シーン庭園＿白萩/////////////////////////////////////////////////
+;//////////////lay13//ここから準備_キャラmodでもいいかもしれない////////////
 [layopt layer=13 visible=true]
-[layopt layer=fix visible=false]
 [image name="toujyou_mae" layer=13 x=1 y=1 storage="bg/bg_flower_hagi.jpg" time=500]
 [wait time=50]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -288,9 +292,10 @@ _　ございます」[p]
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+[freeimage layer=13 time=500]
+;使ったら戻しておく
+[layopt layer=13 visible=true]
 ;///////////////////////ここまで準備////////////////////////////////
-[freeimage layer=13]
-[layopt layer=fix visible=true]
 [wait time=50]
 [主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -359,6 +364,10 @@ _　ございます」[p]
 ;【退場】四条
 [四条退場]
 ;/////////////////////////シーン庭園/////////////////////////////////////////
+;//////////////lay13//ここから準備_キャラmodでもいいかもしれない////////////
+[layopt layer=13 visible=true]
+[image name="toujyou_mae" layer=13 x=1 y=1 storage="bg/bg_teien_ishidatami.jpg" time=500]
+[wait time=50]
 ;【背景】庭園
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
@@ -381,6 +390,10 @@ _　ございます」[p]
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+[freeimage layer=13 time=500]
+;使ったら戻しておく
+[layopt layer=13 visible=true]
+;///////////////////////ここまで準備////////////////////////////////
 [whosay name="四条 華織" color="olivedrab"]
 「飛び石に気をつけて」[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
