@@ -221,6 +221,7 @@ _　ございます」[p]
 ;～～～～～～～～～ここから準備中～～～～～～～～～
 ;消えている瞬間を隠してみる・・・
 [layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
 ;イメージ思い出
 [image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
 ;その間に登場
@@ -233,6 +234,7 @@ _　ございます」[p]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 ;～～～～～～～～～ここまで準備中～～～～～～～～～
 [freeimage layer = 29 time=500]
+[layopt layer=fix visible=true]
 [主人公目を開く]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -267,7 +269,8 @@ _　ございます」[p]
 [四条退場]
 ;///////////////////////シーン庭園＿白萩/////////////////////////////////////////////////
 [layopt layer=14 visible=true]
-[image name="toujyou_mae"  layer=14 x=1 y=1 storage=""bg/bg_flower_hagi.jpg" time=500]
+[layopt layer=fix visible=false]
+[image name="toujyou_mae" layer=14 x=1 y=1 storage="bg/bg_flower_hagi.jpg" time=500]
 [wait time=50]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -285,9 +288,10 @@ _　ございます」[p]
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+;///////////////////////ここまで準備////////////////////////////////
 [freeimage layer=14]
+[layopt layer=fix visible=true]
 [wait time=50]
-
 [主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい……」[p]
