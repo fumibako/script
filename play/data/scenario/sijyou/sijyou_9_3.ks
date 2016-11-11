@@ -548,33 +548,27 @@
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
 「そうだね。いざという時の為にね」[p]
-
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [主人公ポーズ指]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(？ ……華織様のお祖母様は、華道家でいらしゃいましたから、[r]
-[sp]その為でしょうか？)[p] 
+(？ ……華織様のお祖母様も、華道家でいらしゃいましたから、[r]
+[sp]その為でしょうか？)[p]
+;……華織様のお祖母様は
 ;○過去のくだり、家のことも(手紙で追記あり)あってこの時点で主人公はあまり気にせず。 
-
 [主人公ポーズ通常]
-
 [四条微笑み]
-
 [whosay name="華織" color="olivedrab"]
 「[名前]、
 [四条口開]
 薔薇園を見に行こうか」[p]
-
 ;【退場】四条
 [四条退場]
-
 ;○薔薇園で麗しさ表現
 ;場面転換
 ;【背景】[薔薇庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_rose_funsui.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -585,9 +579,7 @@
 「綺麗……」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 ;綺麗な場所か見せてから登場
-
 ;【登場】四条
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
@@ -595,28 +587,22 @@
 [whosay name="華織" color="olivedrab"]
 「[名前]の名前をつけた薔薇を育ててみようかな」[p]
 [四条口開]
-
 ;○狂気 主人公の対応は？
 [主人公ポーズ片手]
-
 [四条微笑み]
-
 [主人公驚]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇ?」[p]
-
-
+;[whosay name="華織" color="olivedrab"]
+:「冗談だよ。　次は二人でボートに乗ってみようか」[p]
 ;【SE】水音
 [playse storage=mizu_ike.ogg loop=false ]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
-
-
 ;【退場】四条
 [四条退場]
-
 ;○2人でボートに
 ;場面転換
 [主人公ポーズ通常]
@@ -648,7 +634,8 @@
 「ここまで来ると2人だけだね」[p]
 ;多分からかっている
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公照れ][p]
+[主人公照れ]
+[wait time=50]
 [主人公目を開く]
 [wait time=30]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
@@ -681,7 +668,6 @@
 
 ;【退場】四条
 ;[四条退場]
-
 ;¥¥¥¥¥¥¥¥イベント3ここまで¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
