@@ -1,5 +1,8 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
+;////////////表示準備/////////
+;選択肢背景＿表示遅れ防止
 [preload storage="data/fgimage/bg/plane_sakura.jpg"]
+;//////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
