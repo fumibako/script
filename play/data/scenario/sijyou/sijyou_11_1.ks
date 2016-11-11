@@ -1,7 +1,10 @@
-;6.5もあり
-;¥¥¥¥¥¥¥¥イベント6 兄につれてこられた四条と会うから事件解決のネリネの庭まで 11月1週〜日付調整11月3週？¥¥¥¥¥¥¥
+;¥¥¥¥¥¥¥¥;6.5もあり＿イベント6 兄につれてこられた四条と会うから事件解決のネリネの庭まで 11月1週〜日付調整11月3週？¥¥¥¥¥¥¥
 ;スクリプトの作業しやすさの関係から2ファイルに分けていますが、実際は連続再生される予定です
 ;☆主人公の行動
+*start
+;暗転
+;[chara_mod name="bg" storage="toumei.gif" time=1500]
+[stopbgm]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放//////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
 ;[preload storage="data/fgimage/bg/test_mon.jpg"]
@@ -13,7 +16,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[stopbgm]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
