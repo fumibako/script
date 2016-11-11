@@ -1,13 +1,17 @@
 *test
 ;テスト用イベントシーン構築
+;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
+;////////////使用背景メモ　ここでは表示遅れはないですが必要時解放/////////
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg"]
+;////////////表示準備/////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
