@@ -1,19 +1,19 @@
-
 ;¥¥¥¥¥¥¥¥イベント6.5¥¥¥¥¥¥¥¥
-;☆結果の知らせ (黒田ルートと同じお正月なイメージ)
+;☆結果の知らせ (黒田ルートと同じお正月なイメージ)手紙がくる
 ;×日程の調整によって変更してもokです。
-;△手紙バージョン
-[stopbgm]
+;////////////使用背景メモ////////
+;[preload storage="data/fgimage/bg/oom_niwa_akarui.jpg"]
+;////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[stopbgm]
 [イベントシーン構築]
 ;[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
 ;【背景】主人公邸 庭の見える部屋：冬
 [chara_mod name="bg" storage="bg/room_niwa_fuyu.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -24,13 +24,11 @@
 『四条華織』さまからお手紙が届いております。」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ありがとう。[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 #
 [手紙四条 fumi_number=]
 ;○四条手紙 正月はがき？
@@ -70,9 +68,6 @@ $('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)',
 //layer 1_fore
 $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
 [endscript]
-
-
-
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
