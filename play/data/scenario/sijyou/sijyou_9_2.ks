@@ -19,13 +19,13 @@
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 ;テキスト全画面
 [font color=white size=27]
-#
 ――白萩そよぐ、料亭にて。[l][r]
 [r]
 四条家と[名字]家の見合いが執り行われた。[p]
 [resetfont]
 [freeimage layer = 29 time=500]
 [イベントシーン構築]
+#
 [主人公ポーズ通常]
 [主人公通常]
 ;[四条ベース着物]　公式の場なので羽織？
