@@ -1,6 +1,9 @@
 ;¥¥¥¥¥¥¥¥イベント6後半 波ケ浦～ネリネの庭まで 11月1週〜日付調整11月3週？¥¥¥¥¥¥¥
 ;△ ○壺の柄と暗号を照らし合わせ、弟の場所を発見する
 *start
+;暗転
+;[chara_mod name="bg" storage="toumei.gif" time=1500]
+[stopbgm]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
 ;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
 ;[preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg"]
@@ -12,8 +15,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[stopbgm]
-
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 ;[イベントシーン構築]
 ;ないとキャラが消せないと怒られるので
