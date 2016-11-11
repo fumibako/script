@@ -1,16 +1,17 @@
 ;¥¥¥¥¥¥¥¥イベント2お見合い9月2週¥¥¥¥¥¥¥¥
 ;☆お見合い。親しい感じで出会う2人 主人公は淑女らしく遠慮がちに 年上の四条に尊敬の意を込める形で//////////////////
-;[お見合いの場]
-;【背景】料亭風の屋内（昼）
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
-[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+;暗転
+;[chara_mod name="bg" storage="toumei.gif" time=1500]
+[stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;【背景】料亭風の屋内（昼）
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
+[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
-
 [主人公ポーズ通常]
 [主人公通常]
 
