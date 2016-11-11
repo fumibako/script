@@ -331,12 +331,16 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *back_test
 [cm]
 [freeimage layer = 26]
+;test中フラグ　一時変数手紙で利用します
+[eval exp="tf.test_sijyou=false"]
 @jump storage="test.ks"
 [s]
 
 *title
 [cm]
 [freeimage layer = 26]
+;test中フラグ　一時変数手紙で利用します
+[eval exp="tf.test_sijyou=false"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
