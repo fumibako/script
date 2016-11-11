@@ -1,11 +1,16 @@
 *start
 ;テスト用イベントシーン構築
-[stopbgm]
+;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
+;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
+;[preload storage="data/fgimage/bg/bg_prologue_dark.jpg"]
+;[preload storage="data/fgimage/bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+;//////////////////////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[stopbgm]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
