@@ -1,6 +1,7 @@
 ;////////////表示準備/////////
 ;表示遅れ防止
-[preload storage="data/fgimage/bg/bg_prologue_dark.jpg"]
+;[preload storage="data/fgimage/bg/bg_prologue_dark.jpg"]
+[preload storage="data/fgimage/bg/bg_prologue.jpg.jpg"]
 ;////////////表示準備/////////
 ;友人に会う
 ;書き終わりましたら元の場所に写します
