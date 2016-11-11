@@ -1,6 +1,13 @@
 *test
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
+;[preload storage="data/fgimage/bg/room_niwa.jpg"]
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg"]
+;[preload storage="data/fgimage/bg/bg_genkan.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+;/////////////////////////////////////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
