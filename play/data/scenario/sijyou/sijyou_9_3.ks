@@ -587,8 +587,10 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇ?」[p]
-;[whosay name="華織" color="olivedrab"]
-:「冗談だよ。　次は二人でボートに乗ってみようか」[p]
+[whosay name="華織" color="olivedrab"]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+「ふふ、冗談だよ。　次は二人でボートに乗ってみようか」[p]
 ;【SE】水音
 [playse storage=mizu_ike.ogg loop=false ]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
