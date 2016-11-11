@@ -1,13 +1,14 @@
 ;¥¥¥¥¥¥¥¥イベント2.5お見合い感想手紙¥¥¥¥¥¥¥¥
 ;☆四条からお見合いについての手紙がやってくる。久しぶりに会って見違えたことなど
 ;暗転
-;[chara_mod name="bg" storage="toumei.gif" time=1500]
+[chara_mod name="bg" storage="toumei.gif" time=1500]
 [stopbgm]
-;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
+;///使用背景メモ　必要時に解放///////
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
 ;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+;四条が先に表示されてしまったため解放
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
-;[preload storage="data/fgimage/bg/bg_garden_isu.jpg"]
+[preload storage="data/fgimage/bg/bg_garden_isu.jpg"]
 ;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg]
