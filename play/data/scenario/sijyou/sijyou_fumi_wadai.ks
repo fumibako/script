@@ -44,19 +44,24 @@
 [glink target="ichi_nichi3" text="一日のはじまり３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="neko" text="猫" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="neko2" text="猫2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+
+[glink target="neko3" text="猫3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="neko4" text="猫4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="neko5" text="猫5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="kiki_jyouzu1" text="聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="kiki_jyouzu_2" text="聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="kiki_jyouzu_3" text="聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+
 [glink target="page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 *page2
-[glink target="neko3" text="猫3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="neko4" text="猫4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="kiki_jyouzu1" text="聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="kiki_jyouzu_2" text="聞き上手２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="kiki_jyouzu_3" text="聞き上手３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="syokuji_3" text="食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="michi" text="道" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="*sijyou_yujin_1" text="友人1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="*sijyou_yujin_2" text="友人2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="syokuji_3" text="食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="michi" text="道" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="michi2" text="道2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="michi3" text="道3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 
@@ -64,6 +69,8 @@
 [glink target="*kyoku3" text="お気に入りの曲3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="*henka1" text="変化と永遠" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="*henka2" text="変化と永遠2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="*syoki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="*satuki2" text="さつき2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="page3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
@@ -72,20 +79,16 @@
 [glink target="*sincya" text="新茶" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="*sincya2" text="新茶２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="*sincya3" text="新茶３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="*sijyou_yujin_1" text="友人1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*sijyou_yujin_2" text="友人2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="*syoki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="*satuki2" text="さつき2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="*sisyu" text="詩集" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-
-
-[glink target="*sps" text="スポーツの話題" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="*kangeki" text="観劇" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="*syasin" text="写真" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="*sincya3_1" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="*sincya3_2" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="*sincya3_3" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="*sincya3_4" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+
+
+[glink target="*sisyu" text="詩集" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="*sps" text="スポーツの話題" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="*kangeki" text="観劇" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="*syasin" text="写真" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 *common
 
@@ -99,6 +102,7 @@
 ;///////////////////////////////////////△友人について （これは元ファイルにも残してあります)/////////////////////////////////////////
 *sijyou_yujin_1|(お見合い前)
 [テキスト全画面白文字]
+[wait time=50]
 『友人について』(お見合い前)
 [p]
 ;#
@@ -118,6 +122,7 @@
 
 *sijyou_yujin_2|(お見合い後)
 [テキスト全画面白文字]
+[wait time=50]
 『友人について』(お見合い後)
 [p]
 ;#
@@ -137,6 +142,7 @@
 ;/////////////////////友人について 凡庸/////////////////////////////////////////
 *sijyou_yujin_b|(凡庸)
 [テキスト全画面白文字]
+[wait time=50]
 『友人について』(お見合い前)
 [p]
 ;#
@@ -156,6 +162,7 @@
 ;凡庸難しい
 *sijyou_yujin_b2|(凡庸)
 [テキスト全画面白文字]
+[wait time=50]
 『友人について凡庸』(お見合い後)
 [p]
 ;#
@@ -172,6 +179,7 @@
 ;//////////////////////////////新茶の話題/////////////////////////////
 *sincya
 [テキスト全画面白文字]
+[wait time=50]
 新茶の話題（事件前）[[p]
 [手紙四条 fumi_number=]
 [名前]、手紙をありがとう。[r]
@@ -200,6 +208,7 @@
 
 *sincya_2
 [テキスト全画面白文字]
+[wait time=50]
 新茶の話題（事件前）[[p]
 ;///////新茶の話題///////
 [手紙四条 fumi_number=]
@@ -221,6 +230,7 @@
 
 *sincya_3
 [テキスト全画面白文字]
+[wait time=50]
 新茶の話題（事件後）[[p]
 ;///////新茶の話題///////
 [手紙四条 fumi_number=]
@@ -243,6 +253,7 @@
 
 *sincya_3_1
 [テキスト全画面白文字]
+[wait time=50]
 新茶の話題　凡庸（事件前）[p]
 ;///////新茶の話題///////
 [手紙四条 fumi_number=]
@@ -262,6 +273,7 @@
 
 *sincya_3_2
 [テキスト全画面白文字]
+[wait time=50]
 新茶の話題　凡庸（事件前）[p]
 ;///////新茶の話題///////
 [手紙四条 fumi_number=]
@@ -282,6 +294,7 @@
 
 *sincya_3_3
 [テキスト全画面白文字]
+[wait time=50]
 新茶の話題　凡庸（事件後）[p]
 ;///////新茶の話題///////
 [手紙四条 fumi_number=]
@@ -302,6 +315,7 @@
 
 *sincya_3_4
 [テキスト全画面白文字]
+[wait time=50]
 新茶の話題　凡庸（事件後）[p]
 ;///////新茶の話題///////
 [手紙四条 fumi_number=]
@@ -326,6 +340,7 @@
 *satuki
 [wait time=10]
 [テキスト全画面白文字]
+[wait time=50]
 さつきの話題[p]
 [手紙四条 fumi_number=]
 [名前]。手紙をありがとう。[r]
@@ -351,6 +366,7 @@
 *sisyu
 [wait time=10]
 [テキスト全画面白文字]
+[wait time=50]
 詩集[p]
 ;///////さつきの話題///////
 [手紙四条 fumi_number=]
@@ -374,6 +390,7 @@
 *kiki_jyouzu
 [wait time=10]
 [テキスト全画面白文字]
+[wait time=50]
 聞き上手と話し上手[p]
 
 [手紙四条 fumi_number=]
@@ -399,7 +416,7 @@
 
 *kiki_jyouzu_2
 [テキスト全画面白文字]
-[wait time=10]
+[wait time=50]
 聞き上手と話し上手　凡庸[p]
 ;///////聞き上手と話し上手の話題2///////
 [手紙四条 fumi_number=]
@@ -415,9 +432,10 @@
 [手紙四条読了 fumi_number=]
 
 
+
 *kiki_jyouzu_2_1
 [テキスト全画面白文字]
-[wait time=10]
+[wait time=50]
 聞き上手と話し上手　凡庸[p]
 [手紙四条 fumi_number=]
 [名前]さん。手紙をありがとう。[r]
@@ -441,7 +459,6 @@
 [テキスト全画面白文字]
 [wait time=10]
 聞き上手と話し上手[p]
-;///////聞き上手と話し上手の話題2///////
 [手紙四条 fumi_number=]
 [名前]さん。手紙をありがとう。[r]
 [r]
@@ -581,7 +598,7 @@
 *midori3
 [テキスト全画面白文字]
 [wait time=10]
-『緑の石』２[p]
+『緑の石』３[p]
 [手紙四条 fumi_number=]
 [名前]。この前の手紙の件です。[r]
 [r]
@@ -593,6 +610,27 @@
 ると幸いです。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
+
+
+[テキスト全画面白文字]
+[wait time=10]
+『緑の石』３[p]
+[手紙四条 fumi_number=]
+[名前]さんへ。この前の手紙の件です。[r]
+[r]
+どうでしょうか？　[r]
+台座下には透かしが入っているため、[r]
+光が入って側面からの見た時のデザインも
+美しいかと思います。[r]
+お送り致しました帯どめをお喜びいただけ[r]
+ると幸いです。[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 
 ;//////////////////////////////一日のはじまりの話題/////////////////////////////
 
@@ -631,6 +669,19 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+[テキスト全画面白文字]
+[wait time=10]
+『一日のはじまり２＿２凡庸』[p]
+[手紙四条 fumi_number=]
+[名前]さんへ。手紙をありがとうございます。[r]
+[r]
+[r]
+[r]
+今日は、よいことがありましたか？[r]
+[名前]さんも楽しい一日が過ごせますように[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
@@ -639,7 +690,7 @@
 *ichi_nichi3
 [テキスト全画面白文字]
 [wait time=10]
-『一日のはじまり３変化』[p]
+『一日のはじまり３』[p]
 [手紙四条 fumi_number=]
 [名前]さんへ。手紙をありがとうございます。[r]
 [r]
@@ -686,8 +737,25 @@
 [r]
 [r]
 [r]
-今日は、猫を見かけましたか？[r]
+今日は、猫を見かけたかな？[r]
 [名前]は、猫が好きなんだね[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+
+
+[テキスト全画面白文字]
+[wait time=10]
+『猫 凡庸2』[p]
+[手紙四条 fumi_number=]
+[名前]さん。いつも手紙をありがとうございます。[r]
+[r]
+[r]
+[r]
+今日は、猫を見かけましたか？[r]
+[名前]さんは、猫がお好きなのですね[r]
+そんな[名前]さんを僕は可愛らしいと感じています。[r]
+[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
@@ -699,7 +767,7 @@
 *neko3
 [テキスト全画面白文字]
 [wait time=10]
-『猫２』[p]
+『猫３　事件解決後』[p]
 [手紙四条 fumi_number=]
 [名前]さん。いつも手紙をありがとう。[r]
 [r]
@@ -709,14 +777,15 @@
 家で猫を飼えないから捨てないと[r]
 いけないらしくって……[r]
 ウチで飼うことになったんだ。[p]
+[r]
 といっても、ウチには猫アレルギーの[r]
 祖父がいるから貰い手が見つかるまで[r]
 の間になってしまうのだけど……[r]
 [r]
 既に愛着が湧きそうだよ[r]
 [r]
-また機会があったら、[名前]さんに[r]
-近況を報告するよ[r]
+また機会があったら、[名前]さんに近況を報告するよ[r]
+[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
@@ -728,7 +797,7 @@
 *neko4
 [テキスト全画面白文字]
 [wait time=10]
-『猫２』[p]
+『猫４　事件解決後』[p]
 [手紙四条 fumi_number=]
 [名前]さん。いつも手紙をありがとう。[r]
 [r]
@@ -750,7 +819,7 @@
 *neko4b
 [テキスト全画面白文字]
 [wait time=10]
-『猫３』[p]
+『猫５　事件解決後』[p]
 [手紙四条 fumi_number=]
 [名前]さん。いつも手紙をありがとう。[r]
 [r]
@@ -772,7 +841,7 @@
 *neko5
 [テキスト全画面白文字]
 [wait time=10]
-『猫３』[p]
+『猫６　事件解決後』[p]
 [手紙四条 fumi_number=]
 [名前]さん。いつも手紙をありがとう。[r]
 [r]
@@ -782,7 +851,7 @@
 体重もみるみる多くなってとても天真爛漫で健康な[r]
 子でした。[r]
 家に残った猫じゃらしを見ると切なくなります。[r]
-どうか、幸せでありますように。[r]
+どうか、彼が幸せでありますように。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
