@@ -1,4 +1,7 @@
 *start
+;暗転
+;[chara_mod name="bg" storage="toumei.gif" time=1500]
+[stopbgm]
 ;テスト用イベントシーン構築
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
