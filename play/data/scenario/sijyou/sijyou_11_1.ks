@@ -20,25 +20,22 @@
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
-兄のはからいで料亭にやってきた[名前]は、会うべき[r]
-"とある人物"を待っていた。[p]
+兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
+;兄のはからいで料亭にやってきた私は、会うべき"とある人物"を待っていた。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 [whosay name="華織" color="olivedrab"]
 「文矢、相談したいことってなんだい？　僕は、今、あまり……」[p]
 ;兄が呼ぶのはokなの？（イラ）感があるので修正
 [whosay name=文矢 color="#538a8a"]
 「うん。けど、ちょっと……僕は席を外すよ」[p]
-
 ;【SE】衣擦れ（スッ）文矢が障子の影にかくれるイメージ
 [playse storage=kinuzure.ogg loop=false ]
 
@@ -46,7 +43,6 @@
 「まったく君って奴は急にやって来たと思ったら引っ張り出して……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様」[p]
-
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
@@ -79,7 +75,6 @@
 「お気になさらずに私は華織様と共に歩もうと、[r]
 [sp]あの時に決めたのですから」[p]
 ;このままだと主人公が強気になってしまうので、やや微笑んで自身の言葉に照れる感じ
-
 [四条真剣]
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
@@ -94,10 +89,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様の優しさが感じとられ、私も華織様の優しさになりたいと[r]
 [sp]思いました」[p]
-
 ;四条話を真剣にきく
 [四条目閉じ]
-
 ;主人公優しい表情
 [主人公目を開く]
 ;[主人公目通常]
@@ -162,7 +155,6 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
-
 ;////////////////////////////シーン追加分///////////////////////////
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
@@ -363,7 +355,6 @@
 ;[暗点]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
@@ -382,7 +373,6 @@
 [四条目通常]
 [whosay name="華織" color="olivedrab"]
 「[華衣]はこちらに来てませんでしたか？」[p]
-
 ;○↓片田舎の京の人というイメージ
 [whosay name="華衣の婚約者の母"]
 「いえ、とんと。手紙を送ってこられますがねぇ」[p]
@@ -391,7 +381,6 @@
 「ここは、来るには少々荒けた場所ですのでねぇ」[p]
 
 ;///////////この辺り四条の表情変化がうるさいので修正////////////////
-
 [主人公憂い]
 [wait time=10]
 [四条真剣]
@@ -405,7 +394,6 @@
 [whosay name="質屋"]
 「すみませーん、こちらも持っていきますよー」[p]
 ;遠いところからよびかけ↑
-
 [主人公通常]
 [wait time=10]
 [whosay name="華衣の婚約者の母"]
@@ -423,7 +411,6 @@
 [whosay name="華衣の婚約者の母"]
 「えぇっ？」[p]
 [主人公通常]
-
 ;/////////////////↑この辺りまで、四条の表情変化が激しいので修正//////////////
 
 ;[四条通常]
@@ -431,7 +418,6 @@
 [whosay name="華織" color="olivedrab"]
 「気に入ったものもありましたので、」[p]
 ;○体面を気にしてると思うので理由付けしている
-
 [fadeoutbgm time=3000]
 [whosay name="華衣の婚約者の母"]
 「四条とは縁が切れたもの、その様なお慰めは止して下さぇ」[p]
@@ -446,13 +432,11 @@
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「私達と、[華衣]の為にも」[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 [whosay name="華衣の婚約者の母"]
 「……なにかご入用のものがありまして？」[p]
 [主人公ほほえみ]
@@ -460,38 +444,31 @@
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「はい、」[p]
-
 ;【退場】主人公
 [主人公退場]
 ;【退場】四条
 [四条退場]
-
 ;[暗点]
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
 ;[四条通常]
 [四条真剣]
-
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
 #
 案内された先には、小さな土蔵が、ひっそりと佇んでいた。[p]
 ;写真によって変更↑
-
 [whosay name="華衣の婚約者の母"]
 「娘の物はここにある書物と壺くらいです」[p]
 [四条目パチ1回]
 [whosay name="華衣の婚約者の母"]
 「とくに[華衣]様に喜んでもらえるものがあるとは……」[p]
-
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「少し見させてもらっていいですか？ 」[p]
@@ -506,7 +483,6 @@
 [主人公退場]
 ;【退場】四条
 [四条退場]
-
 ;場面転換
 ;[暗点]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -524,12 +500,10 @@
 [四条ベース羽織]
 ;[四条通常]
 [四条真剣]
-
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
 [whosay name="華織" color="olivedrab"]
 「少ないですが受け取って下さい」[p]
 [主人公憂い]
@@ -552,7 +526,6 @@
 「華織様」[p]
 [主人公通常]
 [wait time=10]
-
 ;強気の驚き
 [四条真剣]
 [四条口驚き]
@@ -564,18 +537,15 @@
 [四条口通常]
 ;[四条困り]
 [fadeoutbgm time=3000]
-
 [主人公憂い]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「わかりました……お元気で」[p]
 [四条目閉じ]
-
 ;【退場】主人公
 [主人公退場]
 ;【退場】四条
 [四条退場]
-
 ;夕空
 [chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
 [eval exp="f.haikei_credit=''"]
@@ -583,11 +553,10 @@
 ;ナレーター
 荒れ果てた地の槇の葉に、霧が立ちのぼっていく。[p]
 秋すぎさる夕日に物悲しさを感じ、[r]
-華織と[名前]は、手を繋ぎながら来た道を帰っていった。[p]
+二人は、手を繋ぎながら来た道を帰っていった。[p]
 ;私達は手を繋ぎながら来た道を帰っていった。[p]
-;ここは、俯瞰の方がいいなとは思う
-
-;場面転換
+;ここは、俯瞰の方がいいなとは思う（中間をとる）
+;//////////////////////////場面転換//////////////////////////////////////////////////
 ;[暗点][料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
@@ -602,40 +571,30 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 [wait time=10]
 ;○ 道具をひろげて確認 弟はまだ見つかってないか確認
-
 ;【登場】四条　疲れて羽織を脱ぐはず？
 [四条ベース着物]
 [四条困り]
 [whosay name="華織" color="olivedrab"]
 「家に電話をしてみたけど、まだ帰ってきてないみたいだ」[p]
-
-
 [主人公憂い]
 [wait time=10]
-
 ;○まずは道具の確認　何をするのかプレイヤーに説明
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
-「[華衣]を見つけて説得する為にも、
-まずは、頂いたものを確認しよう」[p]
-
+「[華衣]を見つけて説得する為にも、まずは、頂いたものを確認しよう」[p]
 [主人公通常]
 [wait time=10]
 [主人公ポーズ指]
 [wait time=10]
 ;ワトソンくんも考えてますよ!というポーズ
-
 ;やや真剣な顔　思考中
 [四条通常]
 [四条口ムッ]
 [whosay name="華織" color="olivedrab"]
 「あの方がいってらしゃったように、書物と壺 があるね」[p]
-
 [主人公目パチ1回]
-
 ;○まずは壺を確認
 [whosay name="華織" color="olivedrab"]
 「壺には富士と波が描かれている普通の壺」[p]
@@ -643,41 +602,32 @@
 「しいていうなら、この壺は、花を生けるにはむいていない絵図柄だね。」[p]
 ;荘厳派手すぎてむいてない　赤に金の唐風の壷？
 [主人公ポーズ通常]
-
 ;【SE】湯のみを置く（コトリ）　壷おいておく音
 [playse storage=tya_yunomi_oku.ogg loop=false ]
-
 [四条口通常]
 [whosay name="華織" color="olivedrab"]
 「関係性は無さそうだね。[r]
 [四条眉下げ]
 [sp]少し気が引けますが、やはり書物を拝見しようか……」[p]
-
 ;//////////////////チラチラしすぎでは？//////////////////
-
 ;【退場】四条
 [四条退場]
-
 ;○そして書物を確認中・・・
 #
 ;ナレーター
 私達は、頂いてきた書物をみることにした。[r]
 その数十冊の書物には、華族としての趣味や生き方、社会的な[r]
 研究が記されているようだった。[p]
-
 ;【登場】四条
 [四条ベース着物]
 [四条通常]
 [四条汗]
-
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (結構な量ですね）[p]
-
 [四条口微笑み]
 [whosay name="華織" color="olivedrab"]
 「これを、全部読むのは時間がかかりそうだな」[p]
-
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -685,28 +635,22 @@
 [whosay name="華織" color="olivedrab"]
 「そうだね。[r]
 [sp]明らかに関係性のないものは優先順位を下げておこう」[p]
-
 ;【退場】四条
 [四条退場]
-
 #
 数分後……[p]
 ;○主人公が可愛い織柄の表紙の手記を見つける
 [主人公目パチ1回]
 [wait time=10]
-
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (？ この書物だけ可愛らしい織柄)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (このような装飾なら日記も楽しくなりそうですね……もしかしたら？)[p]
-
 ;【登場】四条
 [四条ベース着物]
 [四条通常]
-
 [四条眉下げ]
 [whosay name="華織" color="olivedrab"]
 「何か見つけたのかい？」[p]
@@ -716,7 +660,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい」[p]
 [主人公通常]
-
 [四条口微笑み]
 [whosay name="華織" color="olivedrab"]
 「ずいぶんと可愛らしい装飾の書物ですね」[p]
@@ -731,7 +674,6 @@
 「　『頭は恋をし寝る。波の音を聞きながら刀を探す。[r]
 [四条目閉じ]
 [sp]……その壺には恋を詰めておく』 ？ 」[p]
-
 ;完全思考中顔1　顎に手ポーズのイメージ
 [四条横伏目]
 [四条眉強気]
@@ -746,12 +688,9 @@
 [四条目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (1ページ目にわざわざかいてあるようですし……)[p]
-
 [fadeoutbgm time=3000]
-
 ;【SE】紙に触れる（パラリ）　紙がおちる
 [playse storage=paper_open.ogg loop=false ]
-
 ;○その書物には手紙が挟まっていて発見する
 [主人公ポーズ片手]
 [wait time=10]
@@ -785,7 +724,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様。[r]
 [sp]これは絶対、[華衣]様にお渡ししないといけませんね」[p]
-
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
 「あぁ、そうだね」[p]
@@ -793,9 +731,7 @@
 #
 『手記』の中に挟まっていた緋色の紙に書かれていた内容をみた私達は[r]
 [sp]決意を改めた。[p]
-
 [主人公通常]
-
 ;思考中顔2　顎に手ポーズのイメージ
 [四条横伏目]
 ;[四条眉強気]
@@ -814,7 +750,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様、きっと大丈夫です」[p]
 [四条通常]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私たち２人なら、信じて乗り越えられます」[p]
 [四条口微笑み]
@@ -850,11 +785,9 @@
 [chara_mod name="sijyou_me" storage="sijyou/me_yokofusi1.png" time=0]
 [wait time=10]
 [四条眉強気]
-
 ;○華織 顎に指をあて考える
 [whosay name="華織" color="olivedrab"]
 (……既視感を覚える単語だな)[p]
-
 [四条目パチ1回]
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
@@ -881,7 +814,6 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「その壺には恋を詰めておく……というのは」[p]
-
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;一緒になって見ている
@@ -890,7 +822,6 @@
 [四条口ムッ]
 [四条眉強気]
 [四条横伏目]
-
 #
 私達は、『富士と波が描かれた壷』をジッと見つめた。[p]
 [四条真剣]
@@ -908,10 +839,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いってみましょう！」[p]
 [四条口通常]
-
 ;【退場】四条
 [四条退場]
-
 ;△ ○壺の柄と暗号を照らし合わせ、妹の場所を発見する
 ;↓実装時は後半へ飛ぶ
 ;@jump storage="sijyou/sijyou_11_1b.ks"
