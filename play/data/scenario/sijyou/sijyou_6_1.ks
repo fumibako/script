@@ -1,4 +1,3 @@
-#
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 ;桜の表示が遅いと見えない為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
@@ -8,6 +7,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+#
 [イベントシーン構築]
 ;ゆっくり表示
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
