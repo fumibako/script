@@ -1,21 +1,27 @@
-;6.5もあり
 ;¥¥¥¥¥¥¥¥イベント6後半 波ケ浦～ネリネの庭まで 11月1週〜日付調整11月3週？¥¥¥¥¥¥¥
-;△ ○壺の柄と暗号を照らし合わせ、妹の場所を発見する
-;背景：黒っぽい和紙風。暗転でもいいかも？
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
-[stopbgm]
+;△ ○壺の柄と暗号を照らし合わせ、弟の場所を発見する
+*start
+;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
+;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+;[preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg"]
+;[preload storage="data/fgimage/bg/sijyou_namigaura.jpg"]
+;[preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg"]
+;///////////////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[stopbgm]
+
+[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 ;[イベントシーン構築]
 ;ないとキャラが消せないと怒られるので
 ;スクリプト担：こちらの環境ではエラーが出なかったので、一旦コメントアウトしてみています
+*first
 [テキスト全画面白文字]
 外に出て車夫をみつけると、[華衣]がいると思われる[r]
 『波ケ浦』へと向かった。[p]
-
 ;場面転換
 ;【波ヶ浦】荒波
 [chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
@@ -28,7 +34,6 @@
 ;主人公通常でもいいかも　お好きに！
 [主人公真剣]
 [wait time=10]
-
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;【登場】四条
 [四条ベース羽織]
@@ -62,7 +67,6 @@
 ;【波ヶ浦】夫婦岩：BGMに合わせ落ち着いた感じの背景に変更してみています
 [chara_mod name="bg" storage="bg/sijyou_namigaura.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
-
 [whosay name="華衣" color=%mp.color]
 「あの日の『幸せ』は、もう……どこにもない」[p]
 [whosay name="華衣" color=%mp.color]
@@ -125,16 +129,13 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「でも[華衣]さんには、その人からのが手紙が残ってます」[p]
-
 ;四条目通常
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
 [wait time=10]
-
 [主人公憂い]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「届かなかっただけで、はっきりとここに残っているんです」[p]
-
 [fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[華衣]さんの『大事な人の手紙』を見つけてきました」[p]
@@ -153,12 +154,10 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[華衣]さん、お手紙をどうぞ。想いが綴られてます」[p]
-
 ;【SE】紙に触れる（スッ）　どちらでもおｋ
 ;[playse storage=paper_su.ogg loop=false ]
 ;【SE】衣擦れ（スッ）
 [playse storage=kinuzure.ogg loop=false ]
-
 ;裏テーマ華綴り
 ;○攻略相手を応援…ではない方法の手紙の掲示
 ;◎「また会う日を楽しみに」「幸せな思い出」「忍耐」※ネリネ
@@ -170,19 +169,15 @@
 そっと開いた。[p]
 [wait time=10]
 ;たまに止まるのです
-
 ;【退場】四条
 [四条退場]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
-
 ;【SE】紙に触れる（パラリ）古い紙だからパラリ？
 [playse storage=paper_open.ogg loop=false ]
-
 [手紙華衣婚約者 fumi_number=]
 [華衣]へ[r]
 「もともと私の身体は長くなかったようです。[r]
@@ -200,7 +195,6 @@
 ;【登場】四条
 [四条ベース羽織]
 [四条憂い]
-
 [whosay name="華衣" color=%mp.color]
 「あの庭……！」[p]
 ;[華衣]、走って家に帰る！四条家は運動力がある？
@@ -216,7 +210,6 @@
 「[華衣]！」[p]
 ;○お互い見合って 比翼の2人の感じ
 [四条口ムッ]
-
 ;四条効果消
 [chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -245,8 +238,6 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
-
 ;[婚約者の花園] ネリネ？の庭…背景がないなら写真の花だけでもいいかも
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
