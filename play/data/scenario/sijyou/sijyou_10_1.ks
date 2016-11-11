@@ -1,10 +1,11 @@
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
-;[暗転]
+;暗転
+;[chara_mod name="bg" storage="toumei.gif" time=1500]
+[stopbgm]
 ;使用背景メモ
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
 ;//////☆障害のはじまり 心の暗闇//////
 ;○手紙が帰ってこなくなる
-[stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
