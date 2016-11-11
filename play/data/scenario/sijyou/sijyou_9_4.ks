@@ -1,7 +1,13 @@
 ;¥¥¥¥¥¥¥¥イベント4¥¥¥¥¥¥¥¥
 ;/////☆デート2 ターニングポイント/////
 ;○歌舞伎座で音頭恋寝刃を鑑賞、伏線とキャラ紹介
-;歌舞伎 大正座。
+[chara_mod name="bg" storage="toumei.gif" time=1500]
+;///使用背景メモ///
+[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+;どうしても全画面で文字が表示されない時がある
+;[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
+;[preload storage="data/fgimage/bg/bg_genkan.jpg"]
+;///////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
