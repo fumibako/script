@@ -1,16 +1,18 @@
 ;¥¥¥¥¥¥¥¥イベントバッド¥¥¥¥¥¥¥¥
 ;イベント5.5手紙イベントバット
 ;○数日後手紙がかえってくる
-;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[stopbgm]
+;///使用背景メモ必要時に開放///
+;[preload storage="data/fgimage/bg/room_niwa.jpg"]
+;///////////////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[stopbgm]
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
-
 #
 数日後、兄[sp]"文矢"からの手紙がかえってきた。[p]
 [主人公ポーズ通常]
