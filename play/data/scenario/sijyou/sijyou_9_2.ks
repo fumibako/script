@@ -447,8 +447,7 @@ _　ございます」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;○主人公の決意
-[四条眉通常]
-[四条目通常]
+[四条眉困り]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]ちゃん」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -500,6 +499,7 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 そうしないよう気をつけるよ」[p]
 ;○四条、一時的に迷いから解消される　ここで呼び捨て呼び捨てに？
 ;そうしないよう気をつけるよ [名前]」[p]
+[主人公ほほえみ]
 ;【退場】四条
 [四条退場]
 [暗転]
