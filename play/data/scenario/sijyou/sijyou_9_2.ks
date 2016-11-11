@@ -8,9 +8,23 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[layopt layer=29 visible=true]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=500]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+;テキスト全画面
+[font color=white size=27]
+#
+――白萩そよぐ、料亭にて。[l][r]
+[r]
+四条家と[名字]家の見合いが執り行われた。[p]
+[resetfont]
+[freeimage layer = 29 time=500]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
