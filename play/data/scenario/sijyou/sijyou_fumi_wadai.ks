@@ -69,7 +69,8 @@
 [glink target="michi2" text="道2(事件解決後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="*henka1" text="変化と永遠" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="*henka2" text="変化と永遠2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="*syoki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="*henka3" text="変化と永遠3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="*satuki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="*satuki2" text="さつき2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 
 [glink target="page3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
@@ -930,6 +931,11 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
 *michi2
 [テキスト全画面白文字]
 [wait time=10]
@@ -940,10 +946,10 @@
 向かってる先が合っているか不安になる[r]
 こともあった。[r]
 そんな時に優しい[名前]がいてくれて[r]
-僕、どんなに安心したのだろう。[r]
-ありがとう。
+僕は、どんなに安心したのだろうか。[r]
+ありがとう。[r]
 道は人の出会いそのものでもあるの[r]
-かもしれない[r]
+かもしれないね[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
@@ -1016,8 +1022,10 @@
 変わらないでいてほしいものって何だろう。[r]
 [r]
 あえて、いうなら今使っている 花鋏 でしょうか[r]
-そこそこ切れ味もよく、耐久性もあり研ぎやすいので重宝しています。[r]
-これ一本で、花も枝も、紙もリボンも切れますので、ありがた花鋏 です[r]
+そこそこ切れ味もよく、耐久性もあり研ぎやすいので[r]
+重宝しています。[r]
+これ一本で、花も枝も、紙もリボンも切れますので、[r]
+ありがた花鋏です。[r]
 [名前]さんには、そういったものはありますか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
