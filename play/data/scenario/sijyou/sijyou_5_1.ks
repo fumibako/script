@@ -16,6 +16,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 (ふぅ……)[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 #
 書きかけの手紙に目を落とす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -23,6 +28,7 @@
 #
 気になれば、気になるほど、これからどうして良いのかわからなくなって
 きてしまう[p]
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 （手紙だけじゃないわ。[r]
@@ -34,6 +40,11 @@
 [whosay name=磯野 color="dimgray"]
 [主人公通常]
 「お嬢様、お茶をお持ちしました」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
+[playbgm storage="isono_miyabi.ogg" loop=true]
+[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 「ありがとう。入っていいわ」[p]
@@ -52,6 +63,7 @@
 「お嬢様？　どうかされましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公横目]
+[主人公口通常]
 [主人公ポーズ通常]
 「いえ、少し」[p]
 #
@@ -83,8 +95,8 @@
 [current layer="message1"]
 [font size=32]
 ;【分岐】
-[link target=*sijyou]相談する[endlink][r][r][r]
-[link target=*no]大丈夫[endlink][r]
+[link target=*sijyou]相談する。[endlink][r][r][r]
+[link target=*no]相談しない。[endlink][r]
 ;[r][r][link target=*okeiko]それよりお稽古のことが気になった。[endlink]
 [resetfont]
 [s]
@@ -137,8 +149,9 @@
 「また、お話があうように『華道のお稽古』も、ほどほどに重ねておくと[r]
 [sp]よいでしょう」[p]
 [whosay name=磯野 color="dimgray"]
-「お稽古だけでは、お嬢様も滅入ってしまうと思います。[r]
-[sp]気分転換に『散策』もお勧めします[r]
+「お稽古だけでは、お嬢様も滅入ってしまうと思います」[p]
+;読みにくいので切って
+「気分転換に『散策』もお勧めします。[r]
 [sp]『秋』の色合いを眺められますと『華道』のお稽古の手助けにもなる[r]
 [sp]かもしれませんね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -156,7 +169,7 @@
 *no
 #
 [主人公通常]
-私は、自分の力で解決することにした。[p]
+私は、磯野に相談せず、自分の力で解決することにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「大丈夫。 ありがとう磯野。　私、もう少し頑張ってみるわ」[p]
@@ -188,9 +201,7 @@
 ;選択肢に戻る
 
 *end_Q
-
 ;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
