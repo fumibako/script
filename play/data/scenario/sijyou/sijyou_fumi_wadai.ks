@@ -177,6 +177,11 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
 ;凡庸難しい
 *sijyou_yujin_b2|(凡庸)
 [テキスト全画面白文字]
@@ -195,6 +200,10 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
 ;//////////////////////////////新茶の話題/////////////////////////////
 *sincya
 [テキスト全画面白文字]
