@@ -21,6 +21,7 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+;音楽はどちらかひとつでいいです
 #
 書きかけの手紙に目を落とす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -40,11 +41,12 @@
 [whosay name=磯野 color="dimgray"]
 [主人公通常]
 「お嬢様、お茶をお持ちしました」[p]
-[if exp="sf.BGM=='ON'"]
+;[if exp="sf.BGM=='ON'"]
 ;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
-[playbgm storage="isono_miyabi.ogg" loop=true]
-[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
-[endif]
+;[playbgm storage="isono_miyabi.ogg" loop=true]
+;[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
+;[endif]
+;音楽はどちらかひとつでいいです
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 「ありがとう。入っていいわ」[p]
@@ -167,6 +169,13 @@
 （『季節の話題』、『華道のお稽古』、『秋の散策』ね)[p]
 @jump target=*end_Q
 *no
+[cm]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 [主人公通常]
 私は、磯野に相談せず、自分の力で解決することにした。[p]
