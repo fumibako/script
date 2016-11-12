@@ -23,11 +23,17 @@
 ;飛鳥 紗代子さん
 [whosay name="既婚の友人"]
 「ごきげんよう [名前]さん」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 #
 少しふっくらとした友人の指には、赤いルビーの指輪が光る。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
-「ごきげんよう。[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さん　お元気になされてましたか？」[p]
+「ごきげんよう。[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さん　お元気になされてまし[r]
+[sp]たか？」[p]
 [whosay name="飛鳥紗代子"]
 [主人公眉困り]
 「ふぅ、新しい生活に慣れるのも、時間がかかって、[r]
@@ -71,8 +77,20 @@
 [主人公通常]
 [wait time=10]
 #
-;散策イベント◆B4nFWraU42さんご担当その2です。[p]
+;散策イベント◆B4nFWraU42さんご担当その2です。[p] 変更してもいいなら飛鳥さんでいいです
+#
+今日の町は、気持ちの良い快晴。 [r]
+空を仰ぐと、澄み切った青の中に真珠色の日の光が差し込んでくる。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
+（天気の良い日は気軽に町を散策すると気持ちがさっぱりするわ）[p]
 [whosay name="三宮　時子" color="#c25232"]
+[主人公目大]
 「あら！　[名前]さん、いいところに！　ちょっと私の話をきいてくれない？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
@@ -112,8 +130,17 @@
 [wait time=10]
 #
 ;散策イベント◆B4nFWraU42さんご担当その3です。[p]
+街道を拠点として広がる町なみ。　誰もが、目的地へと向かっていく。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（今日はどこに向かいましょうか？）[p]
 [whosay name="紳士的なおじ様"]
-「失礼。帝都大図書館へは、どちらに向かって進めばよろしいでしょうか？」[p]
+「失礼。帝都大図書館へは、どちらに向かって進めばよろしいでしょ[r]
+[sp]うか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「それなら、あちらの大通りに出てから左に曲がると直ぐですわ」[p]
@@ -121,6 +148,11 @@
 「ありがとう。素敵なお嬢さん」[p]
 #
 おじ様は、素敵な微笑みを浮かべると目的地に向かって歩いて行った。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉]
+（あの方も、今、どこかに向かっているのでしょうか？)[p]
+;#
+;長い道のりに行き交う人々を目にしながら、ふと思ってしまった。[p]
 『道』についての話題を手に入れました。[p]
 [イベントシーン終了]
 @jump storage="01_B4nFWraU42_test.ks"
@@ -149,6 +181,11 @@
 散策イベント◆B4nFWraU42さんご担当その4です。[p]
 [whosay name="既婚の友人"]
 「[名前]さん！　お久しぶりですわ」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 #
 少しふっくらとした友人の指には、赤いルビーの指輪が光る。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -215,6 +252,11 @@
 ;散策イベント◆B4nFWraU42さんご担当その5です。[p]
 #
 カフヱの前を通りかかると素敵な曲が流れていた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]
 [主人公口ほほえみ]
@@ -252,6 +294,11 @@
 ;散策イベント◆B4nFWraU42さんご担当その6です。[p]
 #
 お茶屋から、呼び込みの声が聞こえる。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 [whosay name="お茶の屋の店主"]
 「いらしゃいませ。今日は、甘ーい和菓子に合うお茶がそろっておりますよ～」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -319,6 +366,11 @@
 ;散策イベント◆B4nFWraU42さんご担当その7です。[p]
 [whosay name="既婚の友人"]
 「ごきげんよう [名前]さん」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 #
 少しふっくらとした友人の指には、赤いルビーの指輪が光る。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -327,13 +379,13 @@
 [whosay name="飛鳥紗代子"]
 「[名前]さん、聞いてくださる？[r]
 [sp]この前、旦那様と思い出のカフヱにいってみたの」[p]
-[whosay name="既婚の友人"]
+[whosay name="飛鳥紗代子"]
 [主人公眉困り]
 「そうしたら、移店されていたらしくって……私、寂しくなってしまったわ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 「それは、残念ですね……」[p]
-[whosay name="既婚の友人"]
+[whosay name="飛鳥紗代子"]
 [主人公眉下げ下]
 [主人公目通常]
 「ふぅ。永遠に変わらないものなんてないのかしらね？[r]
