@@ -45,8 +45,12 @@
 [wait time=10]
 [主人公口ふぅ]
 [wait time=10]
+[主人公ポーズ指]
+[wait time=10]
 遊び？)[p]
 [主人公困り]
+[wait time=10]
+[主人公ポーズ通常]
 [wait time=10]
 ;主人公疲れた表情でため息
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -58,14 +62,14 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私のお傍に居たくなくなってしまったのでしょうか？)[p]
 [主人公憂い]
-[wait time=10]
+[wait time=20]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そんなこと、考えてばかりで)[p]
 [主人公目閉じ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (つらいです……)[p]
-
+#
 [fadeoutbgm time=3000]
 [主人公退場]
 [chara_mod name="bg" storage="toumei.gif" time=1500]
@@ -80,9 +84,9 @@
 [wait time=10]
 [主人公口通常]
 [wait time=10]
-
 [whosay name="磯野" color="dimgray"]
 「お嬢様、」[p]
+#
 [主人公ポーズ通常]
 [主人公通常]
 [wait time=10]
@@ -102,7 +106,6 @@
 #
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false ]
-
 ;/////手紙///
 
 [手紙文矢 fumi_number=]
@@ -168,7 +171,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公目を開く]
 #
 ――あと少しで、冷たい冬がくる。[r]
-私は"あの時"を思い出した。[p]
+私は"あの雪の日"を思い出した。[p]
 [主人公退場]
 ;【背景】ヒロインの部屋
 [iscript]
@@ -184,7 +187,6 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [playbgm storage="sittori_umikaze.ogg" loop=true]
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
-
 #
 白く光る障子から、お兄さまの影と華織お兄さまの影が映る。[p]
 [chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
@@ -231,8 +233,8 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;歳月人を待たず
 ;スクリプト担：「歳」はやはりそういう意図で書かれていたのですね。「その」に変更したのは、より広い意味合いを含んで汲んでもらえるようにという意図でした
 ;このままでも個人的には伝わると思うのですがさらに良い表現があれば変えてください
-その意味もわからず、[r]
-幼い頃の私は、ただ呆然と、白く消えていく華織お兄さまを[r]
+幼い頃の私は、その言葉の意味もわからず、[r]
+ただ呆然と、白く消えていく華織お兄さまを[r]
 見送ってしまった。[p]
 ;背景ない内はこれで
 [iscript]
