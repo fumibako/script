@@ -177,8 +177,8 @@
 [whosay name="おじさん" color=black]
 「そいじゃ、おじさんも[ruby text="ランデ"]逢[ruby text="ヴー"]引があるんで！」[p]
 ;このときの今時な言葉は、ランデヴーっていうらしいです。やっぱりデートは気になる
+#
 [四条微笑み]
-
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -206,13 +206,13 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+#
 ;【退場】四条
 [四条退場]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;場面転換 四条と主人公のデート
 ;[商店背景] 銀座とか松坂屋とかでしょうか
-;http://www.matsuzakaya.co.jp/corporate/history/honshi/1907.shtml
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
