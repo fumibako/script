@@ -16,23 +16,19 @@
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
-
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
-
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織さまがお迎えに来られました」[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「わかったわ。すぐ参りますとお伝え下さい。」[p]
 [whosay name="磯野" color="dimgray"] 
@@ -52,8 +48,8 @@
 [主人公口開]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「な、何ですか？　」[p]
-;[whosay name="磯野" color="dimgray"]
-「もう、そのようなことを気になさる関柄ではないのでしょうか？」[p]
+[whosay name="磯野" color="dimgray"]
+「もう、そのようなことを気になさる関柄ではないのでしょう？」[p]
 ;日本語がおかしいような、あと読みにくい保留
 [主人公照れ]
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
@@ -65,12 +61,12 @@
 [主人公口笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「行ってきます」[p]
+#
 [主人公退場]
 [whosay name="磯野" color="dimgray"]
 (少し、寂しくなりますね)[p]
-
-
-;¥¥¥¥¥¥¥¥イベント7¥¥¥¥¥¥¥¥
+#
+;¥¥¥¥¥¥¥¥イベント7¥¥¥¥¥¥¥¥ここの中盤で　さん　呼びなのね　もう忘れてたよ・・・
 ;○解決の知らせ→料亭などで落ち合うことに。
 ;☆フィナーレ（結末。主人公の勝利）
 ;○悩み(真実)についての独白とその後の悩みの変化が語られ主人公に感謝する。四条には主人公しかいない等と言って改めて告白
@@ -180,10 +176,12 @@
 [四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「そうだ。[r]
-[sp]せっかく、お義父さまのお許しを得たのだから、お出かけをしましょうか」[p]
+[sp]せっかく、お義父さまのお許しを得たのだから、お出かけをしましょう[r]
+[sp]か」[p]
+#
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
 [主人公退場]
 ;【退場】四条
@@ -200,9 +198,8 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 僕達は、賑わう町を並んで歩いていく。[p]
 
 #
-人々は新しい季節と出会いにむけて、ショーウィンドウの前で何やら楽しそうに話をしている。[r]
+人々は新しい季節と出会いにむけて、ショーウィンドウの前で何やら楽しそうに話をしている。[p]
 －－きっと誰かに新年の贈り物をするのだろう[p]
-
 [whosay name="華織" color="olivedrab"]
 (あぁ、もっと[名前]さんに何かをしてあげたいな )[p]
 #
@@ -217,9 +214,8 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 #
 －－となりに並んでくれる彼女をみつめる。[p]
 [whosay name="華織" color="olivedrab"]
-「これからは記念日ごとに帯留めを買おうか」[p]
+「これからは記念日ごとに思い出の品を買おうか」[p]
 ;○華織は、弟のことを思い出し。これから、戦争や病気などで別れあるかもしれないと思って。
-
 [whosay name="華織" color="olivedrab"]
 (年上の癖に、今はまだこんなことしか、思いつかないけど)[p]
 [whosay name="華織" color="olivedrab"]
@@ -232,7 +228,7 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 #
 －－その後、結納の日取りも三月末と決まり[r]
 [sp]何気ない日常が目に鮮やかに映るようになった。[p]
-
+;[暗転]
 [iscript]
 $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
 $('.yuki').remove();
