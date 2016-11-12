@@ -50,7 +50,9 @@
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……)[p]
-私はそれを見て思わず足が動き、女の子に近寄っていた。[p]
+#
+私は、思わず足が動き、子供達に近寄っていた。[p]
+;男の子っぽいし
 [主人公眉下げ下]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -60,7 +62,7 @@
 [主人公目パチ1回]
 [whosay name="子供達・壱"]
 「……おねえちゃん……どこにも……さがしてもいなくて……」[p]
-[whosay name="子供たち"]
+[whosay name="子供達・弐"]
 「えんちゃんが、飴屋に行こうなんて、言わなければよかったのに……」[p]
 [主人公口開]
 [whosay name="子供達・壱"]
@@ -71,24 +73,23 @@
 [whosay name="飴屋の主人"]
 「はぁ。さっきから、この調子なんだよ……」[p]
 ;◎戸惑う主人公　憂いではないと思うよ　あせり
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 [wait time=10]
 [主人公ポーズ片手]
 [wait time=10]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 (どうしましょう)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(もう一度、
 [主人公ポーズ通常]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(もう一度、この子達が言っている、『おねちゃん』について聞いてみましょうか)[p]
+この子達が言っている、『おねちゃん』について聞いてみましょうか)[p]
 #
 その時だった。[p]
 [whosay name="？？？"]
 「何してんの？」[p]
 #
-頭上から華織に似た声がして、ハッとして見上げた[p]
-
+頭上から華織様に似た声がして、ハッとして見上げた[p]
 [主人公驚]
 [wait time=10]
 [主人公ポーズ片手]
@@ -96,12 +97,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！ [華衣]さん！」[p]
 #
-見上げた先には、華織の弟、[華衣]が立っていた。[p]
+見上げた先には、華織様の弟、[華衣]さんが、立っていた。[p]
+;一人称ェ～～
 #
 ;雄雄しい　幼い？　激しい性格↓
-華織の弟だけあって、やはり似ているが、[r]
-[華衣]の方が鋭い目付きをしており、立ち振る舞いも雄々しい。[p]
-
+華織様の御兄弟だけあって、やはり似ているけれど、[r]
+[華衣]さんの方が鋭い目付きをしており、立ち振る舞いも雄々しく感じる。[p]
 [主人公通常]
 [wait time=10]
 [主人公ポーズ通常]
@@ -109,20 +110,18 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「こんにちは」[p]
 #
-楚々と立ち上がると礼をしてみせる[p]
-
+[ruby text=そ]楚[ruby text=そ]々と立ち上がると礼をしてみせる[p]
 [whosay name="華衣" color=%mp.color]
 「ていうか、"そいつら"……」[p]
 [whosay name="子供たち"]
-「[華衣]ニーチャン！」[p]
-
+「「[華衣]ニーチャン！」」[p]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 [wait time=10]
 [主人公ポーズ片手]
 [wait time=10]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(え……？)[p]
+;(……！？)[p]
+;あら？ なくてもいいやも
 [whosay name="華衣" color=%mp.color]
 「何で、こんなとこに来てるワケ？」[p]
 #
@@ -133,23 +132,21 @@
 「親戚の子」[p]
 [whosay name="子供たち"]
 「「いつも、遊んでくれるのー」」[p]
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [wait time=10]
+「そうなのですね」
 [主人公ポーズ通常]
 [wait time=10]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「そうなのですね」[p]
+[p]
 #
-運良く、親族の者が現れた為、私は、ほっと胸を撫で下ろした[p]
-
+運良く、親族の者が現れた為、私は、ほっと胸を撫で下ろした。
 ;ふぅとひといき
 [主人公ふぅ閉]
 [wait time=10]
 [主人公伏目]
 [wait time=20]
-
+[p]
 [whosay name="華衣" color=%mp.color]
 「……迷惑、かけた」[p]
 [主人公目通常]
@@ -158,41 +155,35 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？ 」[p]
-
 [whosay name="華衣" color=%mp.color]
 「迷惑かけたって言ったの！ 悪かったって思ってる」[p]
 ;主人公 控えめに微笑み　これかな
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目伏柔]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ」[p]
-
 [whosay name="華衣" color=%mp.color]
 「コイツらのことは、まかしといて」[p]
-
 [主人公驚]
 [wait time=10]
 [主人公ポーズ片手]
 [wait time=10]
-
 #
 [華衣]は、しゃがみ込むと、先程、私がしたように子供達に質問をした。[p]
 [whosay name="華衣" color=%mp.color]
-「お前ら、今日は誰と来たんだ？ 後藤のおばちゃんか？ それとも姉貴か？」[p]
-
+「お前ら、今日は誰と来たんだ？ 後藤のおばちゃんか？ [r]
+[sp]それとも姉貴か？」[p]
+#
 [主人公通常]
 [wait time=10]
 [主人公ポーズ指]
 [wait time=10]
-
 [whosay name="子供達・壱"]
 「おねーちゃん……」[p]
 [whosay name="華衣" color=%mp.color]
 「姉貴のほうか。で？ どこではぐれた？」[p]
 [whosay name="子供達・弐"]
 「わかんない……」[p]
-
 [主人公ポーズ通常]
 [wait time=10]
 
@@ -222,29 +213,25 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……どうしましょう)[p]
 
-
 ;◎華織に出会う まだ華衣とはやや険悪
 [whosay name="華織" color="olivedrab"]
-「[名前]さん、 [華衣]？ どうかされたのですか？」[p]
+「[名前]さん、 [華衣]？ どうされたのですか？」[p]
+;どうかされたのですか？
 ;【登場】四条
 [四条ベース羽織]
 [四条驚き]
-
-
 [主人公驚]
 [wait time=10]
 [主人公ポーズ片手]
 [wait time=10]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様！」[p]
-
 ;やや呆れている
+[whosay name="華織" color="olivedrab"]
 [四条通常]
 ;[四条汗]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
 [wait time=10]
-[whosay name="華織" color="olivedrab"]
 「祖母に『[華衣]に買い出しを頼んだのにまだ帰ってこない』と言われ[r]
 [sp]来てみたら」[p]
 ;険悪なのにどうなの？このセリフ、あと買い出しってどうなの？→罰だと思いねぇ
@@ -267,16 +254,15 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (やっぱり、すぐには……無理ですよね[r]
-_ いつかは仲良くなってほしいですが)[p]
+_　いつかは仲良くなってほしいですが)[p]
 #
-そんな[華衣]を見た華織は、僅かに憂いを見せたが、直ぐに柔和な表情を繕ってみせた。[p]
+そんな[華衣]を見た華織は、僅かに憂いを見せたが、直ぐに柔和な表情を[r]繕ってみせた。[p]
 [四条笑顔]
 [whosay name="華織" color="olivedrab"]
 「あぁ、エンさんとカンさんですよね。お久しぶりです」[p]
 [whosay name="子供たち"]
 「「うう ……おねえちゃん……どこにも……さがしてもいなくて……[r]
 [sp]！！」」[p]
-
 [四条通常]
 ;[四条眉下げ]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
@@ -287,8 +273,7 @@ _ いつかは仲良くなってほしいですが)[p]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
 #
-華織は、一言、子供達に同情すると、立ち上がる[p]
-
+華織は、一言、子供達に同情すると、立ち上がる。[p]
 [主人公口開]
 [wait time=10]
 [主人公ポーズ指]
@@ -302,16 +287,15 @@ _ いつかは仲良くなってほしいですが)[p]
 [四条口開]
 ;◎華織の機転で迷子をなんとかする？
 [whosay name="華織" color="olivedrab"]
-「腹が空いて…とは言いますし、[r]
+「腹が減っては戦ができぬ……と言いますし、[r]
 [sp]ひとまず、みんなで、飴でも食べませんか？ 」[p]
 [whosay name="華衣" color=%mp.color]
 「はぁ ？」[p]
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ片手]
 [wait time=10]
 [主人公驚]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ？」[p]
 [whosay name="華織" color="olivedrab"]
 「懐かしいですよね。 子供の頃は……あ、5人分でお勧めを下さい」[p]
@@ -327,25 +311,22 @@ _ いつかは仲良くなってほしいですが)[p]
 「エンは、鶴がいいなー」[p]
 [whosay name="子供・弐"]
 「カンは、金魚がいいなー」[p]
+;円環のことわりに導かれてうんぬん
 [四条笑顔]
 [whosay name="華織" color="olivedrab"]
 「はい。どうぞ」[p]
 [四条口微笑み]
 #
 子供達は、すっかり不安な気持ちを忘れ、落ち着きを取り戻した。[p]
-;◎流れで４人でわいわいする？
-
 [whosay name="華織" color="olivedrab"]
 [四条微笑み]
 「[名前]さんには、兎の飴細工なんて如何ですか？」[p]
 [四条口開]
 ;鳥獣戯画的な飴 蛙は手紙を思い出すかと。亀でもいいかも？
-
 [wait time=10]
 #
 華織は、兎と蛙が並んで踊る飴細工から、兎を[名前]に手渡した。[p]
 ;食べているように"も"みえるように片手ポーズ
-
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -353,13 +334,11 @@ _ いつかは仲良くなってほしいですが)[p]
 [whosay name="華衣" color=%mp.color]
 「そんなことより、さっさと探した方がいいと思う」[p]
 ;主人公 ハッとする？
-
 [主人公驚]
 [wait time=10]
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「エンさんとカンさんは、今日は何をなさりに来たのでしょうか？」[p]
-
 [主人公ポーズ通常]
 [主人公憂い]
 [wait time=10]
@@ -385,19 +364,21 @@ _　さてどうしましょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「よろしいのですか？」[p]
 ;何で探してあげないのですか？
-
 ;◎華織、華衣に対しての想いを語る
+;普通に鳴る
+[whosay name="華織" color="olivedrab"]
+[四条通常]
+「僕が探しに行ったしても、[華衣]はここで待ってるなんて出来ない[r]
+[sp]でしょう」
+;[四条眉強気]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_tuyoki.png" time=0]
+[wait time=10]
+[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
-;普通に鳴る
-
-[whosay name="華織" color="olivedrab"]
-[四条真剣]
-「僕が探しに行ったしても、[華衣]はここで待ってるなんて出来ない[r]
-[sp]でしょう」 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私のことなら、お気になさらずとも」[p]
 [四条目パチ1回]
@@ -430,17 +411,16 @@ _　さてどうしましょうか？」[p]
 [whosay name="華織" color="olivedrab"]
 「[華衣]には、まだ色々なことを頑張ってほしい」[p]
 [whosay name="華織" color="olivedrab"]
-「僕は次男で、それなりに四条家と跡取り候補として教育を受けて[r]
+「僕は次男で、それなりに四条家の跡取り候補として教育を受けて[r]
 [sp]きましたが、[華衣]は、末っ子で役割も与えられず、[r]
 [sp][ruby text="おん"]乳[ruby text="ば"]母[ruby text="ひ"]日[ruby text="がさ"]傘のように
 育てられていました」[p]
 [whosay name="華織" color="olivedrab"]
-「今思うと、僕も、[華衣]に対して、過保護に[r]
+「今思うと、僕も[華衣]に対して、過保護に[r]
 [sp]何でも解決してあげようといたのが良くなかったのかもしれない」[p]
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口開]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうして、その様なことを」[p]
 [四条伏目パチ1回]
 [whosay name="華織" color="olivedrab"]
@@ -448,9 +428,8 @@ _　さてどうしましょうか？」[p]
 [主人公口通常]
 [wait time=10]
 #
-－－勉学も運動も、笑って何でも出来るアンタには、[r]
+―― 勉学も運動も、笑って何でも出来るアンタには、[r]
 [sp] 一生この気持ちがわからない [p]
-
 [主人公ポーズ片手]
 [wait time=10]
 [主人公口開]
@@ -473,7 +452,6 @@ _　さてどうしましょうか？」[p]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「ましては、そのせいで[華衣]に迷惑を被ったのですから」[p]
-
 [主人公憂い]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -485,7 +463,6 @@ _　さてどうしましょうか？」[p]
 [四条困り]
 [whosay name="華織" color="olivedrab"]
 「余計な御世話でしょうか……」[p]
-
 [主人公目閉じ]
 [wait time=10]
 #
@@ -500,7 +477,6 @@ _　さてどうしましょうか？」[p]
 「……華織様の良きお考えがあるなら、私は何も言いません」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今、私が感じている、それ以上に華織様は、お辛いはず)[p]
-
 [主人公口通常]
 [wait time=10]
 [四条困り]
@@ -520,24 +496,20 @@ _　さてどうしましょうか？」[p]
 [四条微笑み]
 [whosay name="子供・壱"]
 「ねぇ！おにーちゃんは飴2本も食べるのー？」[p]
-
 [fadeoutbgm time=3000]
 ;音楽停止位置
 [四条笑顔]
 [whosay name="華織" color="olivedrab"]
 「これは、帰ってきた方達のお土産用です」[p]
-
 ;主人公 ほほえみ？
 [主人公通常]
 [wait time=10]
 [主人公口ほほえみ]
 [wait time=10]
 [四条目閉じ]
-;◎子供nのを発見する
 #
 まもなくして、[r]
 息も絶え絶えの[華衣]が帰ってきた。[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
@@ -571,7 +543,7 @@ _　さてどうしましょうか？」[p]
 [sp]いいじゃないか」[p]
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
-「犯人は必ず、現場に戻ってくると、本に読んだことがありましたから、[r]
+「犯人は必ず、現場に戻ってくると、本で読んだことがありましたから、[r]
 [sp]念のために待ってました」[p]
 [主人公通常]
 [wait time=10]
@@ -585,10 +557,8 @@ _　さてどうしましょうか？」[p]
 [主人公照れ]
 [wait time=10]
 ;主人公 冗談にくすりと笑う？
-
 [whosay name="華衣" color=%mp.color]
 「ほぼ、座ってただけじゃん」[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;淑女度にしよう。値は適当
 [主人公通常]
@@ -609,13 +579,10 @@ _　さてどうしましょうか？」[p]
 [whosay name="華織" color="olivedrab"]
 その子達は、貴方の友人なのだから」
 [endif]
-
-
 [主人公通常]
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
-
 [p]
 [四条微笑み]
 [四条目パチ1回]
@@ -655,8 +622,9 @@ _　さてどうしましょうか？」[p]
 [wait time=10]
 [主人公退場]
 [whosay name="華織" color="olivedrab"]
-（今は、まだ意地の悪い兄でいよう。[r]
-_ いつか、またそのときが来るまで） [p]
+（今は、まだ意地の悪い兄でいよう。 いつか、またそのときが[r]
+[sp]来るまで） [p]
+#
 ;【退場】四条
 [四条退場]
 ;機能ボタン表示
