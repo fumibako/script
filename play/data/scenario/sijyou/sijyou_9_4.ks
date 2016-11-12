@@ -29,7 +29,6 @@
 [eval exp="f.bgm_storage='michikusa.ogg'"]
 [endif]
 [call target=*start storage="macro_tati_sijyou.ks"]
-
 [resetfont]
 [chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
@@ -131,11 +130,12 @@
 [whosay name="華織" color="olivedrab"]
 「あんな風に両方を取り戻せたらいいよね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「？」[p]
+「華織様？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=500]
-
 [四条微笑み]
+#
+;私が華織様の表情を伺ったときだった――
 ;○親切な華織さんの表現と伏線
 [whosay name="おじさん" color=black]
 「キミ！ そこの！」[p]
@@ -175,8 +175,8 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="おじさん" color=black]
-「そいじゃ、おじさんも[ruby text="でぇ"]逢[ruby text="と"]引があるんで！」[p]
-;このときの今時な言葉は、ランデヴーっていうらしいです。わかりづらいからナシかな
+「そいじゃ、おじさんも[ruby text="ランデ"]逢[ruby text="ヴー"]引があるんで！」[p]
+;このときの今時な言葉は、ランデヴーっていうらしいです。やっぱりデートは気になる
 [四条微笑み]
 
 [主人公目パチ1回]
@@ -313,6 +313,7 @@
 ;[主人公デフォルト]か[主人公微笑み]
 [主人公ポーズ通常]
 [主人公ほほえみ]
+#
 ;○主人公の笑顔をみて笑顔になる四条
 [四条笑顔]
 ;[主人公照れ]か何か反応する
@@ -334,6 +335,7 @@
 [四条退場]
 ;////////☆事件の予感 迫り来る悪い奴ら//////
 ;場面転換
+#
 ;[主人公の家の前]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [主人公通常]
@@ -354,6 +356,7 @@
 「こちらこそ。また会いたいですね」[p]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
+#
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -367,13 +370,14 @@
 ;強気の驚き
 [四条真剣]
 [四条口驚き]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ポーズ片手]
+;今見たら驚いてない感じだったのでこちらに
 「！？」[p]
 [whosay name="華織" color="olivedrab"]
 「……！」[p]
-[主人公ポーズ片手]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 ;[四条眉困り]
@@ -406,10 +410,11 @@
 [playse storage=run_soto.ogg loop=false ]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
-;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
+;希望に満ちているような？
 ;走って退場
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
