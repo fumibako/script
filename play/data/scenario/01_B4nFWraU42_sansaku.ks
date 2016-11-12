@@ -397,12 +397,25 @@
 [イベントシーン終了]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
-*sansaku_machi_common_B4nFWraU42_07
+*sansaku_machi_common_B4nFWraU42_08
 ;=======================================================================================
 ;◆町_共通イベント 08
 ;『手紙』(散策のみで話題は得ない)
 ;イベント発生条件：6月週～月週、期間中に町へ行くと1度だけ発生
 ;=======================================================================================
+;背景:町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
 #
 梅雨の特有の湿気を帯びた土の香りがする[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -441,7 +454,9 @@
 [主人公眉下げ下]
 [主人公目伏]
 (……今日は帰りましょうか)[p]
-
+[イベントシーン終了]
+@jump storage="01_B4nFWraU42_test.ks"
+[s]
 ;=======================================================================================
 ;以下はメッセージウィンドウを閉じた時のクレジット表記スクリプトです
 ;=======================================================================================
