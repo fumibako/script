@@ -75,3 +75,33 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;[手紙飛鳥読了 fumi_number=]
+
+;世界観うんぬん　予備対策 使わないと思う
+
+;大正ポスターより　二文字しかないし
+;[手紙チラシ fumi_number=]
+;光榮に輝く毛織の袷　
+;[font size=50]ウールライン[resetfont]
+;WOOL LINE
+;[手紙チラシ読了 fumi_number=]
+
+;大正ポスターより　文字サイズは適当 大中小な比較だけ
+;[手紙チラシ fumi_number=]
+;色白な幺る[r]
+;[font size=50]ハータ[resetfont][r]
+;[font size=25]過酸化[resetfont][font size=30]石鹸[resetfont][r]
+;[sp][font size=10]THE [resetfont][r]
+;[sp][font size=20]HATA[resetfont][r]
+;[sp][font size=10]PEPOXIDE[resetfont][r]
+;[font size=20]SOAP[resetfont][r]
+;發賣元　京東室町[r]
+;泰昌製藥株式会社
+;[sp][手紙チラシ読了 fumi_number=]
+
+;昭和ポスターより
+;[手紙チラシ fumi_number=]
+;[font size=30 bold=true]口薫と増健剤[resetfont]
+;[font size=50 bold=true]ローズ仁丹[resetfont]
+;貴方のクチビルに
+;御家族用は四十銭
+;[手紙チラシ読了 fumi_number=]
