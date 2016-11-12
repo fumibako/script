@@ -98,11 +98,12 @@
 「どうか1人で考えこまないで下さい」[p]
 ;主人公笑うか通常で。あまり強気な性格ではない。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「私と華織様は夫[ruby text="め"]婦[ruby text="おと"]となる方です」
+「私と華織様は[ruby text="め"]夫[ruby text="おと"]婦となる方です」
 ;口は閉じたほほえみ
 [主人公ほほえみ]
 [wait time=10]
 [p]
+#
 ;ドキリとしてる感じ？やりすぎかも？　多いので直書きで。
 ;[四条目大]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
@@ -123,6 +124,7 @@
 [sp]私の幸せって身近なところにあったのですね」[p]
 ;どっちかが言わないと最後に違和感
 [主人公目閉じ]
+;（）のほうがいいのかは不明
 #
 ずっと昔から側にいてくれた華織お兄様。[p]
 それなのに私は、貴方を選んだことは間違いだったかと[r]
@@ -156,16 +158,26 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 ;////////////////////////////シーン追加分///////////////////////////
-[主人公通常]
+[主人公口ほほえみ]
+;いきなり真顔はダメよー
 [whosay name="華織" color="olivedrab"]
 「歌舞伎座の帰りに会った僕の弟、[華衣]を覚えてる……？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公口通常]
 「はい……」[p]
 [四条退場]
 ;退場するのは静かに話をきいたにつなげるため
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(80%)";
+[endscript]
 [主人公目閉じ]
+;あのときって？？ということで一度表示
+;[主人公の家の前]
+[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (たしか、あの時、華織様との別れ際に現れた方でしたね)[p]
 ;↓眉：困り [主人公眉困り]
@@ -173,6 +185,13 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (少し……怖そうな方でした)[p]
+;[暗転]　もどす
+[chara_mod name="bg" storage="toumei.gif"]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -271,14 +290,24 @@
 「はい。どこまでもご一緒に」[p]
 [四条口微笑み]
 ;△以下の文は、つけてたほうが自然？ i息兼ねてつけてみます。
-[主人公通常]
+[主人公口通常]
 [wait time=10]
 [四条驚き]
+[wait time=10]
+
 ;海外に住んでるのにウチってどこだろう？ってツッコミが芽生えた
 [whosay name=文矢 color="#538a8a"] 
 「話は終わったようだね。　[r]
+[主人公横目]
+[wait time=10]
+[主人公ポーズ指]
+[wait time=10]
 [sp]安心して行っておいで。　[名前]は[ruby text=ウ]別[ruby text=チ]荘に来たことにしておくよ」[p]
 [whosay name=文矢 color="#538a8a"]
+[主人公目通常]
+[wait time=10]
+[主人公ポーズ通常]
+[wait time=10]
 「けど心配だから、僕の家令をつけておく」[p]
 ;目パチの代わり
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
@@ -302,7 +331,7 @@
 ;【退場】四条
 [四条退場]
 [fadeoutbgm time=3000]
-;適当につけましたので変えてもよいです。遠いぞーってことがわかればよし
+;適当につけましたので変えてもよいです。遠いぞーってことがわかればよし　ここは三人称しか思いつかない
 [テキスト全画面白文字]
 [名前]と華織達は、杳々たる山深き[r]
 『[華衣]の婚約者』の生家へと足を運んだ。[p]
@@ -379,6 +408,8 @@
 [四条困り]
 [whosay name="華衣の婚約者の母"]
 「ここは、来るには少々荒けた場所ですのでねぇ」[p]
+;[r]
+;[sp]それに[華衣]様も、私には会いづらいと思いますぇ」[p]
 
 ;///////////この辺り四条の表情変化がうるさいので修正////////////////
 [主人公憂い]
@@ -448,7 +479,7 @@
 [主人公退場]
 ;【退場】四条
 [四条退場]
-;[暗点]
+#
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -484,10 +515,10 @@
 ;【退場】四条
 [四条退場]
 ;場面転換
+#
 ;[暗点]
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="f.haikei_credit=''"]
-#
 ・・・・・・
 [wait time=1000]
 ;私達は、埃に塗れながら大切な荷物をまとめた。
@@ -513,8 +544,8 @@
 「いえ、そんなお情けは……」[p]
 [四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
-「勝手に来て、物色までしたのです。[r]
-[sp]それくらいはさせてください」[p]
+「勝手に来て、物色までしたのです。　それくらいは[r]
+[sp]させてください」[p]
 [whosay name="華衣の婚約者の母"]
 「そこまで仰るなら」[p]
 [四条目閉じ]
@@ -524,6 +555,7 @@
 「失礼しました」[p]
 [whosay name="華衣の婚約者の母"]
 「華織様」[p]
+#
 [主人公通常]
 [wait time=10]
 ;強気の驚き
@@ -534,6 +566,7 @@
 [whosay name="華衣の婚約者の母"]
 「[華衣]様に、お伝え下さいぇ[r]
 [sp]もうしばらくしたら、この地を離れますと」[p]
+#
 [四条口通常]
 ;[四条困り]
 [fadeoutbgm time=3000]
@@ -542,6 +575,7 @@
 [whosay name="華織" color="olivedrab"]
 「わかりました……お元気で」[p]
 [四条目閉じ]
+#
 ;【退場】主人公
 [主人公退場]
 ;【退場】四条
@@ -553,9 +587,8 @@
 ;ナレーター
 荒れ果てた地の槇の葉に、霧が立ちのぼっていく。[p]
 秋すぎさる夕日に物悲しさを感じ、[r]
-二人は、手を繋ぎながら来た道を帰っていった。[p]
-;私達は手を繋ぎながら来た道を帰っていった。[p]
-;ここは、俯瞰の方がいいなとは思う（中間をとる）
+私達は、手を繋ぎながら来た道を帰っていった。[p]
+;一人称にした！！
 ;//////////////////////////場面転換//////////////////////////////////////////////////
 ;[暗点][料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
@@ -759,7 +792,8 @@
 ;○華織、主人公に惚れ直し
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「きっと、この中に手がかり(ヒント)があります」[p]
+「きっと、この中に手がかりがあります」[p]
+;ここだけかっこなのは違和感あるかも　わかりやすいのですが　(ヒント)
 [四条効果消]
 [四条目パチ1回]
 [四条口通常]
@@ -814,6 +848,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「その壺には恋を詰めておく……というのは」[p]
+#
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;一緒になって見ている
