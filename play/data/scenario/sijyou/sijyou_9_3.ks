@@ -165,7 +165,8 @@
 「は、はい。その様に私も計らっております。[r]
 [sp]何分、"あの事"があってから部屋からあまり出てこないもので」[p]
 [whosay name="四条祖父" color="#888898"]
-「それにしても、こういう時くらい、他の兄弟達も帰ってこればいいものを」[p]
+「それにしても、こういう時くらい、他の兄弟達も帰ってこればいい[r]
+[sp]ものを」[p]
 [whosay name="四条母" color="#9B608B"]
 「申し訳ございません……」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -286,7 +287,7 @@
 ;【SE】子供たち(楽しげな笑い声)
 [playse storage=kodomotachi_warai.ogg loop=false ]
 [whosay name="親戚の子 その壱" color="#807070"]
-「どこにお隠れ遊ばして！? 」[p]
+「どこに隠れたのー！？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="親戚の子 その弐" color="#807070"]
@@ -315,7 +316,6 @@
 「あ、ごめんなさーい！」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 [四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]、大丈夫かい？」[p]
@@ -377,7 +377,6 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もっと四条様、いえ、華織様と仲を深めたい)[p]
-
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -459,12 +458,15 @@
 [四条口微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]は、可愛らしい方ですね[r]
-[sp]僕も、[名前]をひとりの女性として、態度を改めようと思います」[p]
+[sp]僕も、[名前]をひとりの女性として、態度を改めたいと思います」[p]
+;大事にしたいと思います　態度を改ましょうか
+;わかりやすいセリフ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;「？！」
+;私が望んでいたことがすんなりと目の前に舞い込んできてしまい、
 ;思いもよらない返しに私は
 ;目を白黒とさせてしまった。
 ;胸が高鳴った？？？ないな
@@ -472,24 +474,23 @@
 [whosay name="四条 華織" color="olivedrab"]
 「ただ、昔の名前ちゃんが、可愛らしいと記憶しているので、[r]
 [sp]少し時間がかかってしまうかもしれません。[r]
-[sp]ですが、お互いに新しい気持ちで歩みよっていきたいと思います」
-[四条笑顔大]
+[sp]ですが、お互いに新しい気持ちで歩みよっていきたいですね」
+[四条笑顔]
 [p]
 #
 四条様は、淑女として敬いつつも、私をからかうようにして微笑んだ。[p]
 ;なんかいい感じの情景文
 ;私と四条様の間に新しい風が吹いていく。[p]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;（どうしてからしら？　私が望んでいた関係ですのに少し緊張してしまいます)[p]
-;（そうだわ。　四条様にお近づきにあたって、私も淑女として成長しないといけないのだわ)
-;これからの未来に身構えていると、四条様は私の手をとって優しい眼差しをむけられた。
+;（どうしてからしら？　私が望んでいたことなのに少し緊張してしまうのは)[p]
+;（そうだわ。　四条様にお近づきにあたって、私も淑女として成長しないといけないのだわ)[p]
+;これからの未来に身構えていると、四条様は私の手をとって優しい眼差しをむけられた。[p]
 ;フォロー
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10][p]
 [whosay name="四条 華織" color="olivedrab"]
-「これからはどの様に呼んでいただいても構いませんよ」[p]
-[四条微笑み]
-;華織と呼んでもいいですよ？　もしくはカットね
+「これからはどの様に呼んでいただいても構いませんよ」
+[四条微笑み][p]
 [whosay name="四条 華織" color="olivedrab"]
 「なんでしたら、"華織" でもいいですよ」[p]
 ;○四条 意地悪にからかって
