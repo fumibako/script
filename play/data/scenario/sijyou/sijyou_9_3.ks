@@ -31,8 +31,9 @@
 [wait time=10]
 ;//////////////テスト用ジャンプ　いちからみてられっかー/////////////////
 [if exp=tf.test_sijyou==true]
-[link target=test_jmp]シーン変更地点からテスト・ミニバラ[endlink][r]
-[link target=*first_seen]はじめから[endlink][s]
+テストフラグえ表示されてます。ジャンプしますか？[r]
+[link target=test_jmp]【１】シーン変更地点からテスト・ミニバラ[endlink][r]
+[link target=*first_seen]【２】はじめからみる[endlink][s]
 [endif]
 *test_jmp
 [clearstack]
@@ -436,13 +437,13 @@
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
-[wait time=10]
 [whosay name="四条 華織" color="olivedrab"]
 「なんだい[名前]？ 」
 [四条目パチ1回]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 「あの……四条様」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -463,13 +464,11 @@
 [主人公目パチ1回]
 [四条驚き]
 [whosay name="四条 華織" color="olivedrab"]
-「！[r]
-[sp]再会したときから気になっていたけど、
+「！[sp]再会したときから気になっていたけど、
 [四条笑顔]
 そんなことで悩んでいた[r]
 [sp]のかい？」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「！大切なことですわ」[p]
+;何も言わない方がいい
 ;[主人公怒り]または[主人公照れ]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -492,7 +491,7 @@
 [whosay name="四条 華織" color="olivedrab"]
 「ただ、昔の名前ちゃんが、可愛らしいと記憶しているので、[r]
 [sp]少し時間がかかってしまうかもしれません。[r]
-[sp]ですが、お互いに新しい気持ちで歩みよっていきたいですね」
+[sp]ですが、お互いに新しい気持ちで歩みよっていきたいです」
 [四条笑顔]
 [p]
 #
@@ -509,7 +508,7 @@
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
-[link target=*yes]私は緊張してしまった。[endlink][r]
+[link target=*select_1]私は緊張してしまった。[endlink][r]
 [r][r][r]
 [link target=*select_2] 私は胸が高鳴った。[endlink][r]
 [resetfont]
@@ -589,7 +588,7 @@ _　成長しないといけないのだわ)[p]
 #
 私と四条様の間に新しい風が吹いていく。[p]
 これからは、恋仲のように呼び合える。[r]
-ただ、それだけのことが、私の胸の奥を熱くさせた。[p]
+ただ、それだけのことが、私の胸の奥をほんのりと熱くさせた。[p]
 
 *common_0
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
