@@ -29,7 +29,21 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
+;//////////////テスト用ジャンプ　いちからみてられっかー/////////////////
+[if exp=tf.test_sijyou==true]
+[link target=test_jmp]シーン変更地点からテスト・ミニバラ[endlink][r]
+[link target=*first_seen]はじめから[endlink][s]
+[endif]
+*test_jmp
+[clearstack]
+[四条ベース羽織]
+[wait time=10]
+[四条微笑み]
+[wait time=10]
+@jump target=mini_bara
+;///////////////////////////////
+*first_seen
+[er]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、四条様からお手紙が届いております」[p]
 [if exp="sf.BGM=='ON'"]
@@ -108,7 +122,7 @@
 誰もが予想し、望まれていた。[l][r]
 [r]
 それだけに、親戚ぐるみで園遊会が行われることとなった。[p]
-ｋ[resetfont]
+[resetfont]
 [freeimage layer = 29 time=500]
 
 ;機能ボタン表示
@@ -349,6 +363,10 @@
 [主人公通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
+
+
+*mini_bara
+[er]
 ;[暗転]より場面転換でしょうか
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
@@ -420,15 +438,16 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
+[whosay name="四条 華織" color="olivedrab"]
+「なんだい[名前]？ 」
+[四条目パチ1回]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あの……四条様」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-[四条目パチ1回]
-[whosay name="四条 華織" color="olivedrab"]
-「なんだい[名前]？ 」[p]
 [主人公通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
@@ -450,6 +469,7 @@
 そんなことで悩んでいた[r]
 [sp]のかい？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+「！大切なことですわ」[p]
 ;[主人公怒り]または[主人公照れ]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -477,21 +497,84 @@
 [p]
 #
 四条様は、淑女として敬いつつも、私をからかうようにして微笑んだ。[p]
-;なんかいい感じの情景文
-;私と四条様の間に新しい風が吹いていく。[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;（どうしてからしら？　私が望んでいたことなのに少し緊張してしまうのは)[p]
-;（そうだわ。　四条様にお近づきにあたって、私も淑女として成長しないといけないのだわ)[p]
-;これからの未来に身構えていると、四条様は私の手をとって優しい眼差しをむけられた。[p]
+@jump target=*select_2
+
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;[link]タグでの選択肢例
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;選択肢用レイヤーを追加
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織様……)
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+[link target=*yes]私は緊張してしまった。[endlink][r]
+[r][r][r]
+[link target=*select_2] 私は胸が高鳴った。[endlink][r]
+[resetfont]
+[s]
+*select_1
+;//////////////私は緊張してしまった。////////////////////////////
+;違和感ある人はこっちの流れ　好感度上げればいいのかも？
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+;【背景をもどす】[洋館庭]
+[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公眉下げ下]
+（どうしてからしら？[r]
+[主人公伏目]
+_　私が、望んでいたことなのに少し緊張してしまうのは)[p]
+（そうだわ。　四条様にお近づきにあたって、私も淑女として[r]
+_　成長しないといけないのだわ)[p]
+#
+これからの未来に身構えていると、四条様は私の手をとって優しい眼差しをむけられた。[p]
 ;フォロー
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10][p]
+[wait time=10]
 [whosay name="四条 華織" color="olivedrab"]
 「これからはどの様に呼んでいただいても構いませんよ」
 [四条微笑み][p]
 [whosay name="四条 華織" color="olivedrab"]
 「なんでしたら、"華織" でもいいですよ」[p]
-;○四条 意地悪にからかって
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
+「いえ、 "華織様" とお呼びさせてください」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公困り照れ]
+(もしかして、また、気を使われていまったかしら？)[p]
+@jump target=common_0
+
+
+;//////////////胸が高鳴った//////////////
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+;【背景をもどす】[洋館庭]
+[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;テスト中・・・
+*select_2
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[whosay name="四条 華織" color="olivedrab"]
+「これからはどの様に呼んでいただいても構いませんよ」
+[四条微笑み][p]
+[whosay name="四条 華織" color="olivedrab"]
+「なんでしたら、"華織" でもいいですよ」[p]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -500,15 +583,21 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、 "華織様" とお呼びさせてください」[p]
-;また、気を使われていまったのかしら？
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公伏目パチ1回]
+#
+私と四条様の間に新しい風が吹いていく。[p]
+これからは、恋仲のように呼び合える。[r]
+ただ、それだけのことが、私の胸の奥を熱くさせた。[p]
+
+*common_0
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-[四条口開]
 [whosay name="華織" color="olivedrab"]
-「[名前]。久しぶりに来た、我が家を見て回ろうか」[p]
+「[名前]。
+[四条口開]
+久しぶりに来た、我が家を見て回ろうか」[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -535,7 +624,8 @@
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
 ;ナレーター
-思い出の場を語り合いながら、"華織様"は[名前]を温室へと誘った。[p]
+"華織様"は私に思い出の場を語り合いながら、[ruby text=あたた]暖かな温室へと誘った。[p]
+;連れ誘った
 [四条目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
