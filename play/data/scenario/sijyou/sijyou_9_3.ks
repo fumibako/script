@@ -459,16 +459,28 @@
 [四条口微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]は、可愛らしい方ですね」[p]
-
+;僕も、名前をひとりの女性として、態度を改めようと思います」[p]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;えっ
+;思いもよらない返しに私は
+;目を白黒とさせてしまった。
+;胸が高鳴った？？？
+;戸惑ってしまった。
+;ただ、昔の名前ちゃんが、可愛らしいと記憶しているので、
+;少し時間がかかってしまうかもしれません。
+;ですが、お互いに新しい気持ちで歩みよっていきたいです
+;四条様は、淑女として敬いつつも、私をからかうようにして微笑んだ。
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
 [四条笑顔大]
+;ああそうだ
 [whosay name="四条 華織" color="olivedrab"]
 「これからはどの様に呼んでいただいても構いませんよ」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [四条微笑み]
+;華織と呼んでもいいですよ？　もしくはカットね
 [whosay name="四条 華織" color="olivedrab"]
 「なんでしたら、"華織お兄様" でもいいですよ」[p]
 ;○四条 意地悪にからかって
