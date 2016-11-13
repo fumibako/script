@@ -458,31 +458,40 @@
 [wait time=10]
 [四条口微笑み]
 [whosay name="四条 華織" color="olivedrab"]
-「[名前]は、可愛らしい方ですね」[p]
-;僕も、名前をひとりの女性として、態度を改めようと思います」[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;えっ
-;思いもよらない返しに私は
-;目を白黒とさせてしまった。
-;胸が高鳴った？？？
-;戸惑ってしまった。
-;ただ、昔の名前ちゃんが、可愛らしいと記憶しているので、
-;少し時間がかかってしまうかもしれません。
-;ですが、お互いに新しい気持ちで歩みよっていきたいです
-;四条様は、淑女として敬いつつも、私をからかうようにして微笑んだ。
+「[名前]は、可愛らしい方ですね[r]
+[sp]僕も、[名前]をひとりの女性として、態度を改めようと思います」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;「？！」
+;思いもよらない返しに私は
+;目を白黒とさせてしまった。
+;胸が高鳴った？？？ないな
+;戸惑ってしまった。
+[whosay name="四条 華織" color="olivedrab"]
+「ただ、昔の名前ちゃんが、可愛らしいと記憶しているので、[r]
+[sp]少し時間がかかってしまうかもしれません。[r]
+[sp]ですが、お互いに新しい気持ちで歩みよっていきたいと思います」
 [四条笑顔大]
-;ああそうだ
+[p]
+#
+四条様は、淑女として敬いつつも、私をからかうようにして微笑んだ。[p]
+;なんかいい感じの情景文
+;私と四条様の間に新しい風が吹いていく。[p]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;（どうしてからしら？　私が望んでいた関係ですのに少し緊張してしまいます)[p]
+;（そうだわ。　四条様にお近づきにあたって、私も淑女として成長しないといけないのだわ)
+;これからの未来に身構えていると、四条様は私の手をとって優しい眼差しをむけられた。
+;フォロー
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10][p]
 [whosay name="四条 華織" color="olivedrab"]
 「これからはどの様に呼んでいただいても構いませんよ」[p]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
 [四条微笑み]
 ;華織と呼んでもいいですよ？　もしくはカットね
 [whosay name="四条 華織" color="olivedrab"]
-「なんでしたら、"華織お兄様" でもいいですよ」[p]
+「なんでしたら、"華織" でもいいですよ」[p]
 ;○四条 意地悪にからかって
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -491,7 +500,8 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いえ、 "華織様" とだけお呼びさせてください」[p]
+「いえ、 "華織様" とお呼びさせてください」[p]
+;また、気を使われていまったのかしら？
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公伏目パチ1回]
