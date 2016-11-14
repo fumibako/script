@@ -13,13 +13,13 @@
 ;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。↓同時に表示の試みもありがとうございます（スクリプト担
 ;同時に表示したくてテストしましたが軽い画像表情から表示されてしまう
 ;透明化
-[keyframe name="opcy"]
-[frame p=100%  opacity="0"]
-[endkeyframe]
+;[keyframe name="opcy"]
+;[frame p=100%  opacity="0"]
+;[endkeyframe]
 ;透明無効化
-[keyframe name="not_opcy"]
-[frame p=100%  opacity="1"]
-[endkeyframe]
+;[keyframe name="not_opcy"]
+;[frame p=100%  opacity="1"]
+;[endkeyframe]
 ;////////////////シーンここから////////////////
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -531,6 +531,7 @@ $('.saku1').remove();
 [四条汗]
 [whosay name="華織" color="olivedrab"]
 「[名前] さん……？」 [p]
+#
 [主人公目通常]
 ――　目と目が合う[p]
 [主人公驚]
