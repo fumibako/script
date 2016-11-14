@@ -13,7 +13,7 @@
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
 [preload storage="data/fgimage/bg/bg_garden_isu.jpg" wait=true]
 ;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg" wait=true]]
+[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg]
