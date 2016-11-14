@@ -10,6 +10,8 @@
 ;桜の表示が遅いと見えない為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [preload storage="data/fgimage/bg/plane_sakura.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
 ;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。↓同時に表示の試みもありがとうございます（スクリプト担
 ;同時に表示したくてテストしましたが軽い画像表情から表示されてしまう
 ;透明化
@@ -40,7 +42,8 @@
 ;がやがやSE
 ;【SE】人々のざわめき（ザワザワ…屋外）
 [playse storage=zawa_out.ogg loop=false ]
-春の陽気につられてた人々は、それぞれ気に入った商店に向かって賑わっていた。[p]
+春の陽気につられてた人々は、それぞれ気に入った商店に向かって
+賑わっていた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日は、人通りが多いみたいだわ）[p]
 ;がやがやSE
@@ -55,6 +58,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [fadeoutbgm time=3000]
+#
 人込みを避けて大通りをぬけていこうとしたときだった――[r]
 [stopse]
 [wait time=10]
@@ -98,8 +102,9 @@
 $('.saku1').remove();
 [endscript]
 ;桜吹雪の合間に
-――うち靡く、花弁が、開幕のように過ぎていき[r]
-桜吹雪の合間に特徴的なすらりとした背中が目に入る[p]
+#
+――うち[ruby text=なびく]靡く、花弁が、開幕のように過ぎていき[r]
+桜吹雪の合間に特徴的なすらりとした背中が目に入る。[p]
 ;～～～どきりと期待して驚く主人公～～
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
@@ -123,7 +128,7 @@ $('.saku1').remove();
 [eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
 [endif]
 その人は、どんな[ruby text=ひと]人[ruby text=ご]込みの中でも見間違うことがなかった。[r]
-むこうもこちらに気づいて歩み寄る[p]
+むこうもこちらに気づいて歩み寄る。[p]
 ;ひとこみ？と思う悲しい人へ
 ;四条喜び全開
 ;透明化して裏で変更
@@ -186,7 +191,7 @@ $('.saku1').remove();
 [主人公退場]
 [四条退場]
 ;【SE】うぐいす（ケキョケキョ）
-[playse storage=tori_uguisu_pikyo.ogg loop=false ]
+;[playse storage=tori_uguisu_pikyo.ogg loop=false ]
 #
 ;//////////////////~~シーン銀座~~////////////////////////////
 ;[暗転]
@@ -211,13 +216,17 @@ $('.saku1').remove();
 [主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、手だって……）[p]
-私は、多くの公衆の面前だというのに自然と華織と手を繋いでいたことに気づいてしまった。[p]
+#
+私は、多くの公衆の面前だというのに自然と華織と手を繋いでいたことに[r]
+気づいてしまった。[p]
 ;暫定ト書き
-小さな町中では、こっそりと手を繋ぐことができても、こういった男女が多い場所で人目を憚らず繋ぐのは、
-はじめてで、意識してしまうと、とても恥ずかしい。[p]
+小さな町中では、こっそりと手を繋ぐことができても、こういった男女が[r]
+多い場所で人目を憚らず繋ぐのは、はじめてのこと。[r]
+意識してしまうと、とても恥ずかしい。[p]
 [主人公目伏柔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、これからは、ずっと繋いで歩けるのでしょうか） [p]
+#
 昔、見た恋絵巻を見てるような出来事が、さも普通に訪れていることに[r]
 驚きを隠せなかった。[p]
 [whosay name="華織" color="olivedrab"]
@@ -277,7 +286,8 @@ $('.saku1').remove();
 ;背景：店外
 ;華織、香りつながりで化粧品店、調香店に 行く
 華織様に付いていくと、ビルヂングの下に収まった店が目に留まった。[p]
-ショーウィンドウには、花が活けられ、中の照明と共に商品を引き立ていた。[p]
+ショーウィンドウには、花が活けられ、中の照明と共に商品を引き立てて[r]
+いた。[p]
 ;適当↑
 [主人公ポーズ通常]
 [wait time=10]
@@ -343,7 +353,7 @@ $('.saku1').remove();
 「いえいえ！　こちらこそ、 お世話になっています!」 [p]
 [whosay name="調香店主" color=%mp.color]
 「なんたって、華道の名士の”四条綾花様”に店内に華を添えて[r]
-[sp]頂いているおかげで、こんな偏屈な店でも、閑古鳥が鳴くこともなく、[r]
+[sp]頂いているおかげで、こんな偏屈な店でも、[ruby text=かん]閑[ruby text=こ]古[ruby text=どり]鳥が鳴くこともなく、[r]
 [sp]素敵なお客様達が来て頂けるのですから！」[p]
 #
 店主は、口早にお世辞を言うと楽し気に私たちを迎えれた。[p]
@@ -353,7 +363,7 @@ $('.saku1').remove();
 [wait time=10]
 [主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(とても溌剌とした方ですのね。華織様はたまに来られるのでしょうか？)[p]
+(とても[ruby text=はつ]溌[ruby text=らつ]剌とした方ですのね。華織様は、たまに来られるのでしょうか？)[p]
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「ふふ、  お元気そうで何よりです。[r]
@@ -365,7 +375,7 @@ $('.saku1').remove();
 [wait time=10]
 #
 調香店の主は、いくつか持ち出してくると、ふたりの前に小瓶を並べる。[r]
-その小瓶の中には僅かにだけ、香水が入っており、手に取りやすい大きさの木箆が漬けられていた。[p]
+その小瓶の中には僅かにだけ、香水が入っており、手に取りやすい大きさの[ruby text=き]木[ruby text=べら]箆が漬けられていた。[p]
 ;ふたりで選ぶ
 [whosay name="華織" color="olivedrab"]
 「気になった香り名があったら、これを取り出して、仰いでみて」[p]
@@ -697,7 +707,8 @@ $('.saku1').remove();
 ;↓目：通常 [主人公目横目]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-華織様は、小瓶から木箆をとると、余分な香水を落として[名前]の目の前に差し出した。[p]
+華織様は、小瓶から[ruby text=き]木[ruby text=べら]箆をとると、余分な香水を落として[名前]の[r]
+目の前に差し出した。[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、悪いけど髪をあげてくれますか？　」[p]
 ;～～～驚きつつ困惑照れ２～～～
