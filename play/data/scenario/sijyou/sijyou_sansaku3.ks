@@ -89,12 +89,16 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 (さすがに四条家の中に入ることは、淑女として許されないけれど、[r]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 _　お[ruby text=ば]祖[ruby text=ぁ]母様と緒なら、お家の前までならいいですわよね？）[p]
 #
 [主人公目閉]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 お父様に対する言い訳を考えながらも、私は、少しばかり浮き足が立ってしまった。[p]
 ;さすがに四条家の中に入ることは、淑女として許されないけれど、[r]
 ;四条家祖母と一緒ならば、家の前まで訪ねることも許されるでだろう。[p]
@@ -111,7 +115,7 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と緒なら、お家の前まで�
 「はい」[p]
 #
 [名字]家を通り過ぎ、四条家に繋がる路地を歩く。[p]
- [主人公目閉じ]
+ [主人公目閉]
 幼い頃は、よく兄に連れられながらも、この道のりに心躍らせたものだった。[p]
 [主人公目通常]
 #
