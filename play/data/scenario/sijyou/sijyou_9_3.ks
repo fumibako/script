@@ -115,7 +115,7 @@ $('.loding_pic').remove();
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;○四条邸宅の庭
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
@@ -778,6 +778,7 @@ _　成長しないといけないのだわ)[p]
 ;【SE】水音
 ;///////////////////////準備///////////////////
 [playse storage=mizu_ike.ogg loop=false ]
+[layopt layer=29 visible=true]
 [image layer=29 name="kakusi" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1500]
 ;[四条アップ]は登場いてるときしか使ったことないのでここで準備
 ;【背景】[湖畔]
