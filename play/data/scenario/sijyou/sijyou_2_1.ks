@@ -11,6 +11,7 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;//////////////準備//////////////
 [preload storage="data/image/frame_red.png" wait=true]
+[preload storage="data/fgimage/girl/S/me_futuu.png"]
 [preload storage="data/fgimage/sijyou/base_kimono.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/mayu_futuu.png"]
@@ -1022,7 +1023,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公憂い]
 (今日、一日、一緒にお手伝いさせて頂きましたが[r]
 [sp]……華織様は、ご自分の家業に対して、責任を持って挑んで[r]
-[sp]いらっしゃっるのね)[p]
+[sp]いらっしゃるのね)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 （ふぅ。　今日の私、華織様の お役に立ってたでしょうか）[p]
