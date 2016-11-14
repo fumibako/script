@@ -1,20 +1,16 @@
 *test
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+;//////////////準備//////////////
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
+[image name="loding_pic" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [stopbgm]
-;【華道習いイベント】
-; 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
-;子女で少女 乙女子(小さな少女)　士女で淑女
-;その他登場人物 華道の先生 乙女子 その壱 (丸美屋) 乙女子 その弐 湖池屋男爵令嬢
-;あらすじ
-;華道の熟練があがり新しいことを始める主人公。そこで嬉しい人物「華織」と出逢う。
-;外に出て家族以外の人物と華織との交流や、花に対する真摯な華織をみて、主人公は、懐かしい感情と新しい感情を抱く。
+;【華道習いイベント】 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;//////////////準備//////////////
+[preload storage="data/image/frame_red.png" wait=true]
 [preload storage="data/fgimage/sijyou/base_kimono.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/mayu_futuu.png"]
@@ -23,7 +19,11 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
 [preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg"]
-[preload storage="data/fgimage/bg/sijyou_engawa3.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
+[preload storage="data/fgimage/bg/sijyou_engawa3.jpg" wait=true]
+[iscript]
+$('.loding_pic').remove();
+[endscript]
 ;//////////////準備//////////////
 ;マクロ作成ありがとうございます(スクリプト担
 ;macro_etc.ksに[暗転]マクロを移動
