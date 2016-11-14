@@ -491,10 +491,10 @@ $('.loding_pic').remove();
 [wait time=10]
 [p]
 [whosay name="四条 華織" color="olivedrab"]
-「[名前]は、可愛らしい方ですね[r]
+「[名前]は、可愛らしい方ですね。[r]
 [四条口微笑み]
 [sp]そうですね。 僕も、[名前]をひとりの女性としてお付き合いを[r]
-させていただきましょうか」[p]
+[sp]させていただきましょうか」[p]
 ;態度を改ましょうか　敬愛
 ;わかりやすいセリフ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
