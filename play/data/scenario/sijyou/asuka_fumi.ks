@@ -1,5 +1,17 @@
+*start
+
+;=============================================
+;手紙　飛鳥
+;=============================================
+
+;[macro name="手紙飛鳥"]
+[layopt layer=29 visible=true]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_tokiko.jpg"]
+[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+；[endmacro]
 *1
 ;[手紙飛鳥 fumi_number=]
+
 [名前]さんへ。[r][r]
 秋の気配が次第に濃くなってきましたわね。[r]
 [r]
@@ -16,6 +28,28 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;[手紙飛鳥読了 fumi_number=]
+
+*1_sijyo
+;[手紙飛鳥 fumi_number=]
+[名前]さんへ。[r][r]
+冬は、もうすぐそこまで来ているようですわね[r]
+[名前]さんはお元気でしたかしら？[r]
+[r]
+ところで、[名前]さんは、小説を読んだりするかしら？[r]
+私、最近、探偵ものの小説にはまりだしたの。[r]
+スズメの巣のようなぼさぼさの蓬髪をしているのだけど、[r]
+人懐っこい笑顔がとっても素敵な探偵さんが主人公でね[r]
+少しでもヒントになる暗号をみつけたらパパッと[r]
+解いてしまいますの。私はそういったことが苦手だから憧れてしまうわ。[r]
+丁度、読み終わったところだし、[名前]さんも読んでみて！[r]
+真実は、いつもひとり！[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
+;[手紙飛鳥読了 fumi_number=]
+
+
 
 *2
 ;[手紙飛鳥 fumi_number=]
@@ -35,6 +69,10 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;[手紙飛鳥読了 fumi_number=]
+
+
+
+
 
 *3
 ;[手紙飛鳥 fumi_number=]
@@ -76,6 +114,23 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;[手紙飛鳥読了 fumi_number=]
 
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+
+;/////////////////ここからは戻り処理//////////////////////
+*back_test
+[イベントシーン終了]
+[chara_mod name="bg" storage="bg/title.jpg"]
+@jump storage="test_sijyou.ks"
+[s]
+*title
+@jump storage="title.ks"
+[s]
+
+
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;世界観うんぬん　予備対策 使わないと思う
 
 ;大正ポスターより　二文字しかないし
