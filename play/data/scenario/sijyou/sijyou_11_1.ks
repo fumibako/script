@@ -119,7 +119,6 @@
 ;[四条頬染め]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=1000]
-*seen2
 ;[whosay name="華織" color="olivedrab"]
 ;「!」[p] セリフ思いつかない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
