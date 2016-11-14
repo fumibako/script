@@ -35,10 +35,9 @@
 【！】テストページからはじめます。シーンスキップをしますか[p]
 [link target=start]【１】しない[endlink][r]
 [link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink][r]
+[link target=kyousitu_zentai]【３】背景追加シーンまでスキップ[endlink][r]
 [s]
 [endif]
-
-
 
 *start
 [cm]
@@ -969,8 +968,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [暗転]
 ;退場のあとのほうが安定しているかも
 [四条サイズ通常]
-
-;背景　和室広め　赤っぽく
+;=============================================================================_
+*kyousitu_zentai
+[er]
+;【背景】　和室広め　赤っぽく
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
 ;〜〜〜 〜〜〜 シーン急上昇(期待値高め)〜〜〜 〜〜〜
 ;～～～～シーン片付ける～～～～～
 ;楽しく片付ける2人 主人公が絶好調になる
