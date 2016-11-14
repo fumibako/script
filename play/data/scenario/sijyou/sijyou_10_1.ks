@@ -11,6 +11,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+*seen0
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -53,6 +54,7 @@
 「四条家とは旧知の仲」[p]
 [whosay name="磯野" color="dimgray"]
 「なんの連絡も無しに婚約を破棄することは、ないと思われます」[p]
+*seen1
 #
 ;一旦主人公を表示なしにする
 [主人公退場]
@@ -100,7 +102,7 @@
 [wait time=10]
 [whosay name="四条祖父" color="#888898"]
 「！？」[p]
-
+*seen3
 ;【登場】四条
 [四条ベース着物]
 [四条通常]
@@ -131,7 +133,7 @@
 ;機能ボタン消去
 [clearfix]
 [chara_mod name="bg" storage="toumei.gif" time=1000]
-
+*seen4
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
 [イベントシーン構築]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=2000]
@@ -176,6 +178,7 @@
 (今はそんなことを考えている場合では、ないですよね)[p]
 ;○四条家の日常をみてプレイヤーが同調する形
 [主人公通常]
+*seen5
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。さっそくお手紙を書いてみます」[p]
 
