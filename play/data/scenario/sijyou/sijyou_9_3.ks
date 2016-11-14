@@ -681,7 +681,6 @@ _　成長しないといけないのだわ)[p]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「色んな種類の花々があるのですね」[p]
-
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
 「そうだね。いざという時の為にね」[p]
@@ -735,15 +734,48 @@ _　成長しないといけないのだわ)[p]
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
-「ふふ、冗談だよ。　次は二人でボートに乗ってみようか」[p]
-;【SE】水音
-[playse storage=mizu_ike.ogg loop=false ]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+「ふふ、冗談だよ[r]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[sp]今日は良い天気だから、バラも綺麗に咲いているね。[r]
+[sp][名前]にひとつあげよう」[p]
+;ここに連れてきたのはなんなの？？　適当に甘いシーン作ってください！！
+;手折る・・比喩的に、女を自分のものにする。
+#
+[四条目閉じ]
+華織様は、まだ咲ききれていない純白のばらを一つ[ruby text=た]手[ruby text=お]折ると、
+私の
+[if exp="f.para_shujinkou_shukujodo > 30"]
+髪飾りへと挿した。[p]
+[else]
+帯に挿した。[p]
+[endif]
+;どんどん軽薄なゲームに・・・
+[whosay name="華織" color="olivedrab"]
+[四条微笑み]
+「綺麗だね。　よく似合っているよ」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公照れ]
+「ありがとうございます……」
+[主人公伏目パチ1回]
+[p]
+[whosay name="華織" color="olivedrab"]
+「[名前]も歩き回って疲れただろう？　そろそろ休もうか」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「は、はい」[p]
+[whosay name="華織" color="olivedrab"]
+「近くに池があるんだ。　
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+ボートに乗りながらお茶でもしましょう」[p]
 ;【退場】四条
 [四条退場]
 ;○2人でボートに
 ;場面転換
+;【SE】水音
+[playse storage=mizu_ike.ogg loop=false ]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
 ;【背景】[湖畔]
@@ -752,6 +784,7 @@ _　成長しないといけないのだわ)[p]
 #
 湖畔。暖かな日差しが水面を輝かせ、2人を乗せたボートをゆらゆらと照らす。[p]
 ;[SE水を跳ねる音]？
+;[四条アップ]は登場いてるときしか使ったことない
 [whosay name="華織" color="olivedrab"]
 「結構、遠くまで漕いでしまったね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -803,8 +836,9 @@ _　成長しないといけないのだわ)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様、どうしたのでしょうか？)[p]
 [stopse]
-
-
+#
+私は、理由を聞くこともできす、華織様の漕ぐボートに身を委ねた。[p]
+;適当　怠惰にすごしたかんじ
 ;【退場】四条
 ;[四条退場]
 ;¥¥¥¥¥¥¥¥イベント3ここまで¥¥¥¥¥¥¥¥
