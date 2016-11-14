@@ -1,6 +1,7 @@
 ;期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+;///////////////準備////////////////
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
+[image name="loding_pic" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -10,18 +11,15 @@
 ;桜の表示が遅いと見えない為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [preload storage="data/fgimage/bg/plane_sakura.jpg"]
+[preload storage="data/image/frame_red.png" wait=true]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
 ;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。↓同時に表示の試みもありがとうございます（スクリプト担
-;同時に表示したくてテストしましたが軽い画像表情から表示されてしまう
-;透明化
-;[keyframe name="opcy"]
-;[frame p=100%  opacity="0"]
-;[endkeyframe]
-;透明無効化
-;[keyframe name="not_opcy"]
-;[frame p=100%  opacity="1"]
-;[endkeyframe]
+;///////////////準備////////////////
+[iscript]
+$('.loding_pic').remove();
+[endscript]
+;///////////////////////////////
 ;////////////////シーンここから////////////////
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
