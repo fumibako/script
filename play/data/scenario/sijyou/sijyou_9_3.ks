@@ -1,12 +1,14 @@
 ;¥¥¥¥¥¥¥¥イベント2.5お見合い感想手紙¥¥¥¥¥¥¥¥
 ;☆四条からお見合いについての手紙がやってくる。久しぶりに会って見違えたことなど
-;暗転　試しにローディング画面を作ってみる”実際は変更してください”　上に背景おくと解決する問題もある
+;暗転　試しにローディング画面を作ってみました。”実際は変更してください”　上に背景おくと解決する問題もある
+[if exp=tf.test_sijyou==true]
+[stopbgm]
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
 [image name="loding_pic" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[stopbgm]
 ;///使用背景メモ　必要時に解放///////
 ;メッセージ表示を早くしたい
 [preload storage="data/image/frame_red.png" wait=true]
+[preload storage="data/fgimage/bg/plane_sakura.jpg" wait=true]
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
 ;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
 ;四条が先に表示されてしまったため解放
@@ -17,6 +19,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg]
+[endif]
 ;///////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -479,38 +482,40 @@ $('.loding_pic').remove();
 [四条笑顔]
 そんなことで悩んでいた[r]
 [sp]のかい？」[p]
-;何も言わない方がいい
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「お付き合いをするのに……華織お兄様なんて……もう呼べませんわ」
 ;[主人公怒り]または[主人公照れ]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-[四条口微笑み]
+[p]
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]は、可愛らしい方ですね[r]
-[sp]そうですね。 僕も、[名前]をひとりの女性として大切にしていきたい[r]
-[sp]と思います」[p]
+[四条口微笑み]
+[sp]そうですね。 僕も、[名前]をひとりの女性として[r]
+[sp]お付き合いをさせていただきましょうか」[p]
 ;態度を改ましょうか　敬愛
 ;わかりやすいセリフ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「……本当ですか？」
 [wait time=10]
 [主人公目パチ1回]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「！」
-;私が望んでいたことがすんなりと目の前に舞い込んできてしまい、
-;思いもよらない返しに私は目を白黒とさせてしまった。
-;思いもよらない返しに私は戸惑ってしまった。
-[whosay name="四条 華織" color="olivedrab"]
-[四条目閉じ]
-「ただ、昔の[名前]ちゃんが、可愛らしいと記憶しているので、[r]
-[sp]少し時間がかかってしまうかもしれません。[r]
-[四条笑顔]
-[sp]ですが、これからは、新しい気持ちでお付き合いをしましょうか」
-;関係を深めていきたいですね
-;記者会見みたいで、見てて胃が痛くなる 迷走してるわ
 [p]
 #
-四条様は、淑女として敬いつつも、私をからかうようにして微笑んだ。[p]
+四条様は、私が想像していたことよりも、遥かに快く了承してしまったので[r]
+思わず聞き返してしまった。[p]
+[whosay name="四条 華織" color="olivedrab"]
+[四条目閉じ]
+「えぇ。[r]
+[sp]ただ、昔の[名前]ちゃんが、可愛らしいと記憶しているので、[r]
+[sp]少し時間がかかってしまうかもしれません」[p]
+[whosay name="四条 華織" color="olivedrab"]
+「ですが、少しずつ[名前]さんとの関係を深めていきましょうか」
+[四条笑顔]
+[p]
+;記者会見風回避
 @jump target=*select_2
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -519,6 +524,9 @@ $('.loding_pic').remove();
 ;選択肢用レイヤーを追加
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様……)
+;背景変更:和紙風 桜色
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
