@@ -39,7 +39,7 @@
 [主人公目パチ1回]
 [wait time=10]
 
-whosay name="白髪の女性"]
+[whosay name="白髪の女性"]
 「他の用事に出させているのでね[r]
 [sp]けど、こればっかりは、私の目でみておきたいですの」
 [p]
@@ -55,7 +55,7 @@ whosay name="白髪の女性"]
 [wait time=10]
 ;ポーズは適当。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（あの方は、たしか華織様のお祖母様だわ）[p]
+（あの方は、たしか華織様のお[ruby text=ば]祖[ruby text=ぁ]母だわ）[p]
 [whosay name="花屋の店主"]
 「四条様、さすがにこれ以上持って帰るのは難しいと思いますよ！」[p]
 [whosay name="四条祖母" color="#888898"]
@@ -82,12 +82,26 @@ whosay name="白髪の女性"]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あの……四条家前でしたらお手伝いします」[p]
+;#
+;四条家は、ここから近い場所にある。[r]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
+(華織様の家でしたらここから近いですし）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+(さすがに四条家の中に入ることは、淑女として許されないけれど、[r]
+_　お[ruby text=ば]祖[ruby text=ぁ]母様と緒なら、お家の前までならいいです[r]
+わよね？）[p]
 #
-四条家はここから近い。[r]
-さすがに四条家の中に入ることは、淑女として許されないけれど、[r]
-四条家祖母と一緒ならば、家の前まで訪ねることも許されるであろう。[p]
-;言い回しが硬い
+お父様に言い訳を考えながらも、少しばかり浮き足が立ってしまった。[p]
+;さすがに四条家の中に入ることは、淑女として許されないけれど、[r]
+;四条家祖母と一緒ならば、家の前まで訪ねることも許されるでだろう。[p]
+;言い回しが硬い と思う
+
 [whosay name="四条祖母" color="#888898"]
+[主人公照れ目普通]
 「そうね お願いしてよろしくて？」[p]
 ;あんまり遠慮がない人かな　フレンドリー姑
 ;【主人公】ほほえみ
