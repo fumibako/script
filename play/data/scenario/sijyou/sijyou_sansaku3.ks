@@ -85,17 +85,16 @@
 ;#
 ;四条家は、ここから近い場所にある。[r]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
-[wait time=10]
 (華織様の家でしたらここから近いですし）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 (さすがに四条家の中に入ることは、淑女として許されないけれど、[r]
-_　お[ruby text=ば]祖[ruby text=ぁ]母様と緒なら、お家の前までならいいです[r]
-わよね？）[p]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
+_　お[ruby text=ば]祖[ruby text=ぁ]母様と緒なら、お家の前までならいいですわよね？）[p]
 #
-お父様に言い訳を考えながらも、少しばかり浮き足が立ってしまった。[p]
+お父様に対する言い訳を考えながらも、私は、少しばかり浮き足が立ってしまった。[p]
 ;さすがに四条家の中に入ることは、淑女として許されないけれど、[r]
 ;四条家祖母と一緒ならば、家の前まで訪ねることも許されるでだろう。[p]
 ;言い回しが硬い と思う
@@ -140,7 +139,7 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と緒なら、お家の前まで�
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんなことがあったんですか」[p]
 #
-時折、華織の自慢を挟まれながらも、兄の学生時代の話も聞けて話は弾む。[p]
+時折、華織様の自慢を挟まれながらも、兄の学生時代の話も聞けて話は弾む。[p]
 [whosay name="四条祖母" color="#888898"]
 「えぇ、華織は、何でも卒なくこなす子なんですの」[p]
 [whosay name="四条祖母" color="#888898"]
@@ -172,7 +171,7 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と緒なら、お家の前まで�
 (華織様、また今度お会いしましょう)[p]
 [主人公目閉じ]
 #
-四条邸に並ぶ窓を少し眺めた後、来た道を引き返した。[p]
+四条邸に並ぶ窓を少し眺めた後、私は、来た道を引き返した。[p]
 ;爽やかな感じになると良い
 ;現状、去り際かっこいい感じな表情
 ;てにをは～が足りてない
