@@ -506,6 +506,7 @@ $('.loding_pic').remove();
 #
 四条様は、私が想像していたことよりも、遥かに快く了承してしまったので[r]
 思わず聞き返してしまった。[p]
+;もっと簡単な言い方は？
 [whosay name="四条 華織" color="olivedrab"]
 [四条目閉じ]
 「えぇ。[r]
@@ -515,7 +516,7 @@ $('.loding_pic').remove();
 「ですが、少しずつ[名前]さんとの関係を深めていきましょうか」
 [四条笑顔]
 [p]
-;記者会見風回避
+;記者会見風回避できたかな
 @jump target=*select_2
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -531,9 +532,9 @@ $('.loding_pic').remove();
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
-[link target=*select_1]私は緊張してしまった。[endlink][r]
+[link target=*select_1]私は、緊張してしまった。[endlink][r]
 [r][r][r]
-[link target=*select_2] 私は胸が高鳴った。[endlink][r]
+[link target=*select_2] 私は、ほっとした。[endlink][r]
 [resetfont]
 [s]
 *select_1
@@ -546,7 +547,9 @@ $('.loding_pic').remove();
 ;【背景をもどす】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-
+[er]
+#
+私は緊張してしまった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 （どうしてからしら？[r]
@@ -588,8 +591,11 @@ _　成長しないといけないのだわ)[p]
 ;【背景をもどす】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-;テスト中・・・
+#
+私は、ほっとした。[p]
 *select_2
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(よかった。これからは……)[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [whosay name="四条 華織" color="olivedrab"]
@@ -605,14 +611,19 @@ _　成長しないといけないのだわ)[p]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、 "華織様" とお呼びさせてください」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉]
+(華織様ったら……ですが、ようやく私たちは……)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公伏目パチ1回]
 #
 ――　私と四条様の間に新しい風が吹いていく。[p]
-;[sp]出会いを振り返れば、とても長い月日。[p]
+出会いを振り返れば、とても長い月日。[p]
+;理由をかいて↑　つまりどうなった？↓
 恋仲のように呼び合える。[r]
 ただ、それだけのことが、私の胸の奥をほんのりと熱くさせた。[p]
+;難しい
 
 *common_0
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
