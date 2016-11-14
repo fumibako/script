@@ -119,7 +119,8 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 早いところ落ち着いてほしいと考え、若干早めの見合い話を持ってきた。[p]
 ;華族は国に貢献すること。富や国交以外では、文化などで貢献する
 [whosay name="四条祖父" color="#888898"]
-「ふん……急遽、見合い話を収集したせいで、良縁と呼べないが、過去それなりの高位を得た家柄の子女だな」[p]
+「ふん……急遽、見合い話を収集したせいで、良縁と呼べないが、[r]
+[sp]過去それなりの高位を得た家柄の子女だな」[p]
 [whosay name="四条 華衣" color=%mp.color]
 「この中から、選べっていうの？」[p]
 [whosay name="華織" color="olivedrab"]
@@ -151,7 +152,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="bg" storage="bg/B4nFWraU42/nerine_img.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
-――そして、その中から華衣が気に入ったのが、遠縁の公家の子女、それが華衣の婚約者となった。[p]
+――そして、その中から華衣が気に入ったのが、遠縁の公家の子女だった。[p]
+;、[sp]それが華衣の婚約者となった。[p]
 [whosay name="華織" color="olivedrab"]
 「彼女は、病弱だったけれど、その分、とても落ち着いていて、華衣の悪い[r]
 [sp]ところも良いところも受け止めていた」[p]
@@ -190,7 +192,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「ごめん。今は詳しくは話せないけれど、
 [四条憂い]
-僕のせいで、彼女と華衣は[r]
+僕のせいで、彼女と[華衣]は[r]
 [sp]別れてしまったんだ」[p]
 ;プレイヤー感情 驚く 華織に疑いをもつ　主人公：急なことに表情等が固まる　
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -210,7 +212,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公憂い]
 ;プレイヤーのことを語る 華織の正義側
 [whosay name="華織" color="olivedrab"]
-「華衣は、そのことで、ずっと僕を恨んでいる。[r]
+「[華衣]は、そのことで、ずっと僕を恨んでいる。[r]
 [sp]君からの手紙を捨ててしまうほどに……」[p]
 ;プレイヤー、華織に対して疑いはもつが、読むことによって多少の消化
 ;主人公　話を聞くのが辛いが耐えている
@@ -219,11 +221,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
-「本当は華衣の事を思うなら、大人らしく、ずっと会いたかった[r]
-[sp]君との見合いも断るべきだった」[p]
+「本当は[華衣]の事を思うなら、ずっと会いたかった君との[r]
+[sp]見合いも断るべきだった」[p]
 [whosay name="華織" color="olivedrab"]
-「でも、[名前]、君と再会して、何度も会う中で[r]
-[sp]分かってしまったんだ」[p]
+「でも、[名前]、君と再会して、[r]
+[sp]何度も会う中で、分かってしまったんだ」[p]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
@@ -267,7 +269,7 @@ _　それでも、離れること、失うことはとても辛かった。[p]
 ;主人公、案を考える
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (こういった時は、[華衣]様の心が落ち着ける場所が分かれば、見つかる気が[r]
-[sp]しますが)[p]
+_　しますが)[p]
 ;の心だと適当感がある、お心だと平仮名続きで読みにくい　御心だと神様っぽい
 ;華織をせつく、ストーリーの進行
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -304,13 +306,14 @@ _　それでも、離れること、失うことはとても辛かった。[p]
 ;何を気にしているか説明
 [whosay name="華織" color="olivedrab"]
 ;「そうだね。歳の差や立ち位置を気にするのはやめるよ」[p]
-「そうだね。お互いに歳の差や立ち位置を気にするのはやめるようか」[p]
+「……そうだね。[r]
+[sp]お互いに歳の差や立ち位置を気にするのはやめるようか」[p]
 [fadeoutbgm time=3000]
 ;主人公、お見合い時とデート時の決意をしんみりと、明確に実行する
 ;後の手紙が来なかった件についての心情伏線
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (何か[華衣]様のお心に届く方法があればいいのですが……手紙など[r]
-[sp]ないのでしょうか？)[p]
+_　ないのでしょうか？)[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
