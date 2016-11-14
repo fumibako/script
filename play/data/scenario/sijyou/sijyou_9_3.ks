@@ -783,7 +783,7 @@ _　成長しないといけないのだわ)[p]
 [image layer=29 name="kakusi" x=1 y=1 storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
 ;[四条アップ]は登場いてるときしか使ったことないのでここで準備
 ;【背景】[湖畔]
-[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
+[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -794,11 +794,10 @@ _　成長しないといけないのだわ)[p]
 [四条ベース羽織]
 [wait time=10]
 [四条通常]
-[wait time=10]
 [四条微笑み]
 [wait time=10]
 [四条アップ]
-[freeimage layer=29 time=1500]
+[freeimage layer=29 time=1200]
 ;///////////////////////準備///////////////////
 [layopt layer=fix visible=true]
 #
@@ -865,6 +864,7 @@ _　成長しないといけないのだわ)[p]
 ;適当　怠惰にすごしたかんじ
 ;【退場】四条
 [四条退場]
+[四条サイズ通常]
 ;¥¥¥¥¥¥¥¥イベント3ここまで¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
