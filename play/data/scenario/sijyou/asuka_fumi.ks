@@ -1,5 +1,9 @@
 *start
-
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
 ;=============================================
 ;手紙　飛鳥
 ;=============================================
@@ -7,6 +11,7 @@
 ;[macro name="手紙飛鳥"]
 [layopt layer=29 visible=true]
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_tokiko.jpg"]
+@layopt layer=message1 visible=true
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 ；[endmacro]
 *1
