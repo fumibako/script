@@ -1,7 +1,8 @@
 ;¥¥¥¥¥¥¥¥イベント2.5お見合い感想手紙¥¥¥¥¥¥¥¥
 ;☆四条からお見合いについての手紙がやってくる。久しぶりに会って見違えたことなど
-;暗転
-[chara_mod name="bg" storage="toumei.gif" time=1500]
+;暗転　試しにローディング画面を作ってみる実際は変更してください
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
+[image name="loding_pic" layer=1 left=860 top=600 storage=junbi_cyu.gif]
 [stopbgm]
 ;///使用背景メモ　必要時に解放///////
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
@@ -10,8 +11,8 @@
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
 [preload storage="data/fgimage/bg/bg_garden_isu.jpg"]
 ;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg]
+[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg]
 ;///////////////////////////////
@@ -21,6 +22,11 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;///////////////////////////////
+[iscript]
+$('.loding_pic').remove();
+[endscript]
+;///////////////////////////////
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
