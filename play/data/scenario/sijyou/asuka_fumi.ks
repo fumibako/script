@@ -13,10 +13,9 @@
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_tokiko.jpg"]
 @layopt layer=message1 visible=true
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-；[endmacro]
+;[endmacro]
 *1
 ;[手紙飛鳥 fumi_number=]
-
 [名前]さんへ。[r][r]
 秋の気配が次第に濃くなってきましたわね。[r]
 [r]
@@ -165,3 +164,4 @@
 ;貴方のクチビルに
 ;御家族用は四十銭
 ;[手紙チラシ読了 fumi_number=]
+
