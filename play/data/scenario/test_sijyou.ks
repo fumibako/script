@@ -83,7 +83,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="test_fumi2" text="手紙（話題）" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="*test_ibent_fumi" text="イベント用の手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test_fumi2" text="飛鳥紗代子からの手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test_fumi3" text="飛鳥紗代子からの手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test_page2" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
 *common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
