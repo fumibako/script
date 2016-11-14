@@ -31,13 +31,14 @@
 [wait time=10]
 ;//////////////テスト用ジャンプ　いちからみてられっかー/////////////////
 [if exp=tf.test_sijyou==true]
-テストフラグえ表示されてます。ジャンプしますか？[r]
+テストフラグで表示されてます。ジャンプしますか？[r]
 [link target=test_jmp]【１】シーン変更地点からテスト・ミニバラ[endlink][r]
 [link target=*first_seen]【２】はじめからみる[endlink][s]
 [endif]
 *test_jmp
 [clearstack]
 [if exp=tf.test_sijyou==true]
+[er]
 [四条ベース羽織]
 [wait time=10]
 [四条微笑み]
