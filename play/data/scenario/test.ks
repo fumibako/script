@@ -30,7 +30,8 @@
 [glink target="test3" text="藤枝テスト" graphic="select_waku_x500.png" size=20 width="300" x=100 y=240 color=white]
 [glink target="test_hujieda_hyoujou" text="藤枝表情テスト" graphic="select_waku_x500.png" size=20 width="200" x=450 y=240 color=blue]
 
-[glink target="test4" text="財前テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=310 color=white]
+[glink target="test4" text="財前テスト" graphic="select_waku_x500.png" size=20 width="300" x=100 y=310 color=white]
+[glink target="test_zaizen_hyoujou" text="財前表情テスト" graphic="select_waku_x500.png" size=20 width="200" x=450 y=310 color=blue]
 
 
 [glink target="test5" text="表情テスト：主人公" graphic="select_waku_x500.png" size=20 width="500" x=100 y=380 color=white]
@@ -88,6 +89,12 @@
 [cm]
 [freeimage layer = 26]
 @jump storage="test_katuraginomiya_hyoujou.ks"
+[s]
+
+*test_zaizen_hyoujou
+[cm]
+[freeimage layer = 26]
+@jump storage="test_zaizen_hyoujou.ks"
 [s]
 
 *haikei
