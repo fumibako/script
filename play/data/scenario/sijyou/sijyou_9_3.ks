@@ -2,7 +2,7 @@
 ;☆四条からお見合いについての手紙がやってくる。久しぶりに会って見違えたことなど
 ;暗転　試しにローディング画面を作ってみる実際は変更してください
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
-[image name="loding_pic" layer=1 left=860 top=600 storage=junbi_cyu.gif]
+[image name="loding_pic" layer=1 left=860 top=600 storage=image/junbi_cyu.gif]
 [stopbgm]
 ;///使用背景メモ　必要時に解放///////
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
