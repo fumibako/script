@@ -770,25 +770,39 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
 ボートに乗りながらお茶でもしましょう」[p]
+[主人公退場]
 ;【退場】四条
 [四条退場]
 ;○2人でボートに
 ;場面転換
 ;【SE】水音
+;///////////////////////準備///////////////////
 [playse storage=mizu_ike.ogg loop=false ]
+[image layer=29 name="kakusi" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1500]
+;[四条アップ]は登場いてるときしか使ったことないのでここで準備
+;【背景】[湖畔]
+[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [主人公ポーズ通常]
+[wait time=10]
 [主人公通常]
-;【背景】[湖畔]
-[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1500]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[wait time=10]
+[四条ベース羽織]
+[wait time=10]
+[四条通常]
+[wait time=10]
+[四条微笑み]
+[wait time=10]
+[四条アップ]
+[freeimage layer=29 time=1500]
+;///////////////////////準備///////////////////
 #
 湖畔。暖かな日差しが水面を輝かせ、2人を乗せたボートをゆらゆらと照らす。[p]
 ;[SE水を跳ねる音]？
-;[四条アップ]は登場いてるときしか使ったことない
 [whosay name="華織" color="olivedrab"]
-「結構、遠くまで漕いでしまったね」[p]
+「結構、遠くまで漕いでしまったね」[四条目閉じ][p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね」[p]
 [主人公目パチ1回]
@@ -803,8 +817,10 @@ _　成長しないといけないのだわ)[p]
 ;【背景】[湖畔]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike_long.jpg" time=1500]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-;ここでアップを使ってもいいかも
 [whosay name="華織" color="olivedrab"]
+;[四条目にこ]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
 「ここまで来ると2人だけだね」[p]
 ;多分からかっている
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -827,10 +843,12 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
+[四条困り眉]
 「そうだね。でも、僕のものではないから」[p]
+[四条憂い]
 #
 どうしてか、華織様は、憂いを帯びた表情をみせた。[p]
-;[四条憂い]
+
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
