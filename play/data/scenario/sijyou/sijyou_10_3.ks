@@ -20,7 +20,7 @@
 ;スクリプト担：たしかに夜に入ってくるのはちょっと違和感がありますね。一旦暗転→昼背景に変更で、悩んだまま夜が更け、朝に手紙が届く感じの演出を加えてみましたが、いかがでしょうか？
 #
 手紙が来なくなって数日。[p]
-
+*seen0
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true]
@@ -52,6 +52,7 @@
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
+*seen1
 ;主人公疲れた表情でため息
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (こんなに焼きもきさせて……どういうつもりでしょうか？)[p]
@@ -73,7 +74,7 @@
 [fadeoutbgm time=3000]
 [主人公退場]
 [chara_mod name="bg" storage="toumei.gif" time=1500]
-
+*seen2
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -106,6 +107,7 @@
 #
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false ]
+*seen3
 ;/////手紙///
 
 [手紙文矢 fumi_number=]
@@ -130,6 +132,7 @@
 [sp]
 [主人公退場]　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 ;場面転換
+
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
@@ -166,6 +169,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [主人公口通常]
 [wait time=10]
+*seen4
 #
 北風が障子の影を抜けて吹き抜けていく。[p]
 [主人公目を開く]
@@ -206,6 +210,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 「急に来て驚かせたよね。ごめんね」[p]
 [whosay name="幼い頃の私" color="#cf5a7f"]
 「いえ……けど、急にどうしてですの？」[p]
+*seen5
 #
 華織お兄さまとお兄さまは、互いに見合って悲しそうに微笑む。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -242,6 +247,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
+*seen6
 #
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
@@ -263,6 +269,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「……」[p]
 [主人公通常]
 [wait time=10]
+*seen7
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
