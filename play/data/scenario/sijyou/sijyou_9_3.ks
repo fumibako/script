@@ -777,9 +777,10 @@ _　成長しないといけないのだわ)[p]
 ;場面転換
 ;【SE】水音
 ;///////////////////////準備///////////////////
+[layopt layer=fix visible=false]
 [playse storage=mizu_ike.ogg loop=false ]
 [layopt layer=29 visible=true]
-[image layer=29 name="kakusi" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1500]
+[image layer=29 name="kakusi" x=1 y=1 storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
 ;[四条アップ]は登場いてるときしか使ったことないのでここで準備
 ;【背景】[湖畔]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
@@ -799,6 +800,7 @@ _　成長しないといけないのだわ)[p]
 [四条アップ]
 [freeimage layer=29 time=1500]
 ;///////////////////////準備///////////////////
+[layopt layer=fix visible=true]
 #
 湖畔。暖かな日差しが水面を輝かせ、2人を乗せたボートをゆらゆらと照らす。[p]
 ;[SE水を跳ねる音]？
@@ -844,7 +846,8 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-[四条困り眉]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 「そうだね。でも、僕のものではないから」[p]
 [四条憂い]
 #
@@ -861,7 +864,7 @@ _　成長しないといけないのだわ)[p]
 私は、理由を聞くこともできす、華織様の漕ぐボートに身を[ruby text=ゆだ]委ねた。[p]
 ;適当　怠惰にすごしたかんじ
 ;【退場】四条
-;[四条退場]
+[四条退場]
 ;¥¥¥¥¥¥¥¥イベント3ここまで¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
