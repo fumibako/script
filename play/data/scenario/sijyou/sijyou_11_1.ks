@@ -20,6 +20,7 @@
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
+*seen0
 兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
 ;兄のはからいで料亭にやってきた私は、会うべき"とある人物"を待っていた。[p]
 [主人公ポーズ通常]
@@ -71,6 +72,7 @@
 [wait time=10]
 [主人公頬染め]
 [wait time=10]
+*seen1
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お気になさらずに私は華織様と共に歩もうと、[r]
 [sp]あの時に決めたのですから」[p]
@@ -117,6 +119,7 @@
 ;[四条頬染め]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=1000]
+*seen2
 ;[whosay name="華織" color="olivedrab"]
 ;「!」[p] セリフ思いつかない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -157,6 +160,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+*seen2
 ;////////////////////////////シーン追加分///////////////////////////
 [主人公口ほほえみ]
 ;いきなり真顔はダメよー
@@ -197,6 +201,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (でも、本当のところ[華衣]様とはどんな方でしょう……？)
+*seen3
 ;///////////////////////選択肢//////////////////////////
 ;背景変更:和紙風 水色
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
@@ -294,7 +299,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [四条驚き]
 [wait time=10]
-
+*seen4
 ;海外に住んでるのにウチってどこだろう？ってツッコミが芽生えた
 [whosay name=文矢 color="#538a8a"] 
 「話は終わったようだね。　[r]
@@ -331,6 +336,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【退場】四条
 [四条退場]
 [fadeoutbgm time=3000]
+;================================================================================
+*seen5
 ;適当につけましたので変えてもよいです。遠いぞーってことがわかればよし　ここは三人称しか思いつかない
 [テキスト全画面白文字]
 [名前]と華織達は、杳々たる山深き[r]
@@ -381,6 +388,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「行きましょう」[p]
 ;【退場】四条
 [四条退場]
+;=================================================================================
+*seen6
 ;[暗点]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -479,6 +488,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公退場]
 ;【退場】四条
 [四条退場]
+;=================================================================
+*seen7
 #
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
@@ -515,6 +526,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【退場】四条
 [四条退場]
 ;場面転換
+;=================================================================================_
+*seen8
 #
 ;[暗点]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -580,6 +593,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公退場]
 ;【退場】四条
 [四条退場]
+;=================================================================================_
+*seen9
 ;夕空
 [chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
 [eval exp="f.haikei_credit=''"]
@@ -589,6 +604,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 秋すぎさる夕日に物悲しさを感じ、[r]
 私達は、手を繋ぎながら来た道を帰っていった。[p]
 ;一人称にした！！
+;=================================================================================_
+*seen10
 ;//////////////////////////場面転換//////////////////////////////////////////////////
 ;[暗点][料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
@@ -645,6 +662,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;//////////////////チラチラしすぎでは？//////////////////
 ;【退場】四条
 [四条退場]
+;=================================================================================_
+*seen11
 ;○そして書物を確認中・・・
 #
 ;ナレーター
@@ -731,6 +750,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あっ！」[p]
+;=================================================================================_
+*seen12
 #
 ;ナレーター
 『手記』を開いた途端、四角く折られた緋色の紙が落ちた。[p]
@@ -789,6 +810,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条頬染め]
 [whosay name="華織" color="olivedrab"]
 「[名前]……」[p]
+;=================================================================================_
+*seen13
 ;○華織、主人公に惚れ直し
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -826,6 +849,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
 「頭恋寝……刀を探して？」[p]
+;=================================================================================_
+*seen14
 ;主人公笑う？
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -877,6 +902,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【退場】四条
 [四条退場]
 ;△ ○壺の柄と暗号を照らし合わせ、妹の場所を発見する
+;=================================================================================_
+*seen15
 ;↓実装時は後半へ飛ぶ
 ;@jump storage="sijyou/sijyou_11_1b.ks"
 
