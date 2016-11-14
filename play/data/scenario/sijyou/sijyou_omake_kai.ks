@@ -1,15 +1,20 @@
 ;おまけシナリオ 香水イベントの続きでもいい
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
+[image name="loding_pic" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [stopbgm]
 ;/////////準備/////////
 ;表示遅れによるエラー修正
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_rouka.jpg"]
-;//////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;/////////準備おわり/////////
+[iscript]
+$('.loding_pic').remove();
+[endscript]
+;//////////////////
 [イベントシーン構築枠茶色]
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -103,7 +108,7 @@
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [stopse]
 [whosay name="華織" color="olivedrab"]
-(ふぅ……兄とは、かくも大変なものですね。文也)[p]
+(ふぅ……兄とは、かくも大変なものですね。文矢)[p]
 [whosay name="華織" color="olivedrab"]
 (これも、本来の兄としての義務をサボっていたツケでしょうか……）[p]
 #
@@ -111,7 +116,8 @@
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="四条 華衣" color=%mp.color]
-「……なんだよ、昔は『華衣、忘れ物はないかい？ きちんと歯は磨いたかい？』って煩かったのに」[p]
+「……なんだよ、昔は『華衣、忘れ物はないかい？ きちんと歯は磨いた[r]
+[sp]かい？』って[ruby text=うるさ]煩かったのに」[p]
 ;ガサゴソSE
 [whosay name="四条 華衣" color=%mp.color]
 「あ……これ……俺がアイツにあげた壺だ」[p]
@@ -155,7 +161,8 @@
 [whosay name="日誌" color="%mp.color"]
 『……華族、動じず前をむくべし。趣味はお国のために貢献すべし』[p]
 [whosay name="四条 華衣" color=%mp.color]
-「国は無理だけど、お前の役に立つことは探さないとな……何も出来ないけどさ」[p]
+「国は無理だけど、お前の役に立つことは探さないとな……何も出来ない[r]
+[sp]けどさ」[p]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 [whosay name="日誌" color="%mp.color"]
