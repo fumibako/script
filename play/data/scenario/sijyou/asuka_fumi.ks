@@ -12,7 +12,8 @@
 [layopt layer=29 visible=true]
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_tokiko.jpg"]
 @layopt layer=message1 visible=true
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[position layer=message1 width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[current layer="message1"]
 ;[endmacro]
 *1
 ;[手紙飛鳥 fumi_number=]
