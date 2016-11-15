@@ -60,6 +60,7 @@ $('.loding_pic').remove();
 [endif]
 ;///////////////////////////////
 *first_seen
+[autosave]
 [er]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、四条様からお手紙が届いております」[p]
@@ -119,6 +120,7 @@ $('.loding_pic').remove();
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;=================================================================================_
 *seen1
+[autosave]
 ;○四条邸宅の庭
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
@@ -163,6 +165,7 @@ $('.loding_pic').remove();
 ;¥¥¥¥¥¥¥¥イベント3¥¥¥¥¥¥¥¥
 ;=================================================================================_
 *seen2
+[autosave]
 ;☆デート1 ミッド・ポイント//////////////////
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -252,6 +255,7 @@ $('.loding_pic').remove();
 「むこうで休もうか」[p]
 ;=================================================================================_
 *seen4
+[autosave]
 ;【退場】四条
 [四条退場]
 ;地の文などをいれたため、明るいシーン→暗いシーン（華衣）→戻る明るい
@@ -390,6 +394,7 @@ $('.loding_pic').remove();
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 *mini_bara
+[autosave]
 [er]
 ;[暗転]より場面転換でしょうか
 ;【背景】[洋館庭]
@@ -528,6 +533,7 @@ $('.loding_pic').remove();
 ;記者会見風回避できたかな
 @jump target=*select_2
 
+[autosave]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;[link]タグでの選択肢
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -635,6 +641,7 @@ _　成長しないといけないのだわ)[p]
 ;難しい
 
 *common_0
+[autosave]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
@@ -652,6 +659,7 @@ _　成長しないといけないのだわ)[p]
 「はい、華織様」[p]
 ;=================================================================================_
 *seen5
+[autosave]
 #
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -713,6 +721,7 @@ _　成長しないといけないのだわ)[p]
 [四条退場]
 ;=================================================================================_
 *seen6
+[autosave]
 ;○薔薇園で麗しさ表現
 ;場面転換
 ;【背景】[薔薇庭]
@@ -790,16 +799,20 @@ _　成長しないといけないのだわ)[p]
 ;場面転換
 ;=================================================================================_
 *seen7
+[autosave]
 ;【SE】水音
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;///////////////////////準備///////////////////
 [layopt layer=fix visible=false]
 [playse storage=mizu_ike.ogg loop=false ]
 [layopt layer=29 visible=true]
 [image layer=29 name="kakusi" x=1 y=1 storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
 ;[四条アップ]は登場いてるときしか使ったことないのでここで準備
 ;【背景】[湖畔]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=100]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [主人公ポーズ通常]
@@ -850,7 +863,7 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「あ、あちらにも温室がありますね」[p]
+「あ、あちらにも、おおきな温室がありますね」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
@@ -866,7 +879,7 @@ _　成長しないといけないのだわ)[p]
 [四条憂い]
 #
 どうしてか、華織様は、憂いを帯びた表情をみせた。[p]
-
+[autosave]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
