@@ -29,6 +29,8 @@
 ;【SE】時計（控え目カチコチ）
 [playse storage=tokei_hikaeme.ogg loop=false ]
 #
+[主人公目伏]
+[主人公口通常]
 白い便せんに目を落とす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……お返事が決まらないわ）[p]
@@ -39,11 +41,12 @@
 [endif]
 #
 お手紙を交わして一か月。[r]
-気になれば、気になるほど、これからどうして良いのかわからなくなってきてしまう。[p]
+気になれば、気になるほど、これからどうして良いのかわからなく[r]
+なってきてしまう。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（お手紙だけじゃないわ。　お会いしてからだってどうしたらいいか少し不安だわ）[p]
-#
-再び溜息をつくと、廊下から落ち着いた足音が聞こえた。[p]
+[主人公目閉]
+（お手紙だけじゃないわ。　お会いしてからだってどうしたらいいか[r]
+[sp]少し不安だわ）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 (ふぅ……)[p]
@@ -86,7 +89,8 @@
 「いえ、少し」[p]
 #
 私は、磯野に相談しようかと目を合わせてみたが、[r]
-お相手に対して、気持ちが芽生えてきた分に少し恥ずかしくなってしまった。[p]
+お相手に対して、気持ちが芽生えてきた分に少し恥ずかしくなって[r]
+しまった。[p]
 [whosay name=磯野 color="dimgray"]
 [主人公通常]
 「お嬢様。よろしければ、この磯野に御相談くださりませ。[r]
@@ -129,10 +133,10 @@
 [font size=32]
 ;【分岐】
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
-[glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=300 color=white]
-[glink target=*okeiko text="それよりお稽古のことが気になった" fontcolor=gray size=23 width="200" x=200 y=400 color=white]
-[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=200 y=500 color=white]
+[glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=150 color=white]
+[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+[glink target=*okeiko text="それよりお稽古のことが気になった" fontcolor=gray size=22 width="400" x=400 y=150 color=white]
+[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=400 y=200 color=white]
 [s]
 
 ==============================================================================================================
