@@ -25,6 +25,7 @@
 「[名前]さま、
 ;お嬢様、
 『四条華織』さまからお手紙が届いております。」[p]
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ありがとう。[p]
 [if exp="sf.BGM=='ON'"]
@@ -60,6 +61,7 @@ $('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)',
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
+[autosave]
 #
 [wait time=10]
 澄んだ空気の空にまばゆい日が昇る。[p]
