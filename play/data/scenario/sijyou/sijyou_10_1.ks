@@ -24,6 +24,7 @@
 ;信じようと悩み無理をしている表情
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
+[autosave]
 [主人公伏目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
@@ -181,7 +182,7 @@
 *seen5
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。さっそくお手紙を書いてみます」[p]
-
+[autosave]
 ;ここでイベントは区切り バッドが必要であれば、文矢から「話をしてみたけどダメだったよ」という返事に。イベントバッドへ追記
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
