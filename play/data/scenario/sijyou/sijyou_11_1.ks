@@ -32,6 +32,7 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+[autosave]
 [whosay name="華織" color="olivedrab"]
 「文矢、相談したいことってなんだい？　僕は、今、あまり……」[p]
 ;兄が呼ぶのはokなの？（イラ）感があるので修正
@@ -160,6 +161,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 *seen2
+[autosave]
 ;////////////////////////////シーン追加分///////////////////////////
 [主人公口ほほえみ]
 ;いきなり真顔はダメよー
@@ -201,6 +203,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (でも、本当のところ[華衣]様とはどんな方でしょう……？)
 *seen3
+[autosave]
 ;///////////////////////選択肢//////////////////////////
 ;背景変更:和紙風 水色
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
@@ -337,6 +340,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [fadeoutbgm time=3000]
 ;================================================================================
 *seen5
+[autosave]
 ;適当につけましたので変えてもよいです。遠いぞーってことがわかればよし　ここは三人称しか思いつかない
 [テキスト全画面白文字]
 [名前]と華織達は、杳々たる山深き[r]
@@ -389,6 +393,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;=================================================================================
 *seen6
+[autosave]
 ;[暗点]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -489,6 +494,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;=================================================================
 *seen7
+[autosave]
 #
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
@@ -594,6 +600,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;=================================================================================_
 *seen9
+[autosave]
 ;夕空
 [chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
 [eval exp="f.haikei_credit=''"]
@@ -605,6 +612,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;一人称にした！！
 ;=================================================================================_
 *seen10
+[autosave]
 ;//////////////////////////場面転換//////////////////////////////////////////////////
 ;[暗点][料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
@@ -751,6 +759,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「あっ！」[p]
 ;=================================================================================_
 *seen12
+[autosave]
 #
 ;ナレーター
 『手記』を開いた途端、四角く折られた緋色の紙が落ちた。[p]
@@ -850,6 +859,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「頭恋寝……刀を探して？」[p]
 ;=================================================================================_
 *seen14
+[autosave]
 ;主人公笑う？
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
