@@ -127,7 +127,7 @@ _　しょうか)[p]
 [whosay name="華衣" color=%mp.color]
 「何で、こんなとこに来てるワケ？」[p]
 #
-[華衣]は、子供達に話しかけた。[p]
+[華衣]さんは、子供達に話しかけた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お知り合いですか？」[p]
 [whosay name="華衣" color=%mp.color]
