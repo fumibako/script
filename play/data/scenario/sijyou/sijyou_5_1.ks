@@ -17,48 +17,61 @@
 [主人公ポーズ通常]
 [主人公通常]
 
+;調整中のため、文章を変更する可能性があります（スクリプト担
+;=======================================================================================
+;◆共通イベント『磯野に相談』
+;イベント発生条件：5月1週に1度だけ発生（パラメーター条件は無くプレイヤー全員に発生。余裕があれば周回プレイ時はカット可の選択肢を付けて実装したい）
+;=======================================================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ふぅ閉]
-(ふぅ……)[p]
+（ふぅ……）[p]
+;【SE】時計（控え目カチコチ）
+[playse storage=tokei_hikaeme.ogg loop=false ]
+
+#
+白い便せんに目を落とす。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（……お返事が決まらないわ）[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-;音楽はどちらかひとつでいいです
 #
-書きかけの手紙に目を落とす。[p]
+お手紙を交わして一か月。[r]
+気になれば、気になるほど、これからどうして良いのかわからなくなってきてしまう。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(……華織お兄様への返事が決まらないわ)[p]
+（お手紙だけじゃないわ。　お会いしてからだってどうしたらいいか少し不安だわ）[p]
 #
-気になれば、気になるほど、これからどうして良いのかわからなくなって
-きてしまう[p]
+再び溜息をつくと、廊下から落ち着いた足音が聞こえた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公憂い]
-（手紙だけじゃないわ。[r]
-[sp]お会いしてからだってどうしたらいいか少し不安だわ）[p]
+[主人公ふぅ閉]
+(ふぅ……)[p]
 #
 再び溜息をつくと、廊下から落ち着いた足音が聞こえた。[p]
 ;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
+【SE】落ち着いた足音（フェードイン）
+[playse storage=isono_in.ogg loop=false ]
 [whosay name=磯野 color="dimgray"]
-[主人公通常]
 「お嬢様、お茶をお持ちしました」[p]
 ;[if exp="sf.BGM=='ON'"]
 ;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
 ;[playbgm storage="isono_miyabi.ogg" loop=true]
 ;[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
 ;[endif]
-;音楽はどちらかひとつでいいです
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
-「ありがとう。入っていいわ」[p]
+「ありがとう。入っていいわよ」[p]
+;音楽はどちらかひとつでいいです
 [whosay name=磯野 color="dimgray"]
 「失礼します」[p]
 #
 [主人公目閉]
 [主人公口ほほえみ]
-フワリと新緑の芳醇な香りが漂い、心を和ませる[p]
+#
+フワリ。と新緑の芳醇な香りが漂い、心を和ませる。[p]
+;【SE】湯のみを置く（コトリ）
+[playse storage=tya_yunomi_oku.ogg loop=false ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （あの時よりも書けるようになったと思っていたのに）[p]
 #
@@ -79,12 +92,27 @@
 「お嬢様。よろしければ、この磯野に御相談くださりませ。[r]
 [sp]旦那様からお手紙のやりとりについてお嬢様の手伝いになるよう[r]
 [sp]いい付かっております」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ふぅ閉]
+「わかりましたわ……」
+[主人公口ほほえみ]
+[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
+「今後、お会いする方に失礼がないようにするには、どのように[r]
+[sp]振舞えばいいのでしょう？[r]
+[主人公眉下げ下]
+[sp]……そう考えてしまうと余計に筆が進まなくて」[p]
+[whosay name=磯野 color="dimgray"]
+「お相手のことを考えられるのは良いことです[r]
+[sp]どなたについてお悩みでしょうか？」[p]
 
 *select
 [主人公横目]
 [主人公ポーズ通常]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-(相談しようかしら？)
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+#
+どなたについて相談しようかしら？
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢用の背景：(和紙風桜色はオープニングで使用)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -100,12 +128,14 @@
 [current layer="message1"]
 [font size=32]
 ;【分岐】
-[link target=*sijyou]相談する。[endlink][r][r][r]
-[link target=*no]相談しない。[endlink][r]
-;[r][r][link target=*okeiko]それよりお稽古のことが気になった。[endlink]
-[resetfont]
+[glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+[glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+[glink target=*okeiko text="それよりお稽古のことが気になった" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
 [s]
 
+==============================================================================================================
 *sijyou
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
@@ -114,22 +144,6 @@
 [current layer="message0"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-#
-私は、思い切って磯野に相談することにした。[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ふぅ閉]
-「わかりましたわ……」
-[主人公口ほほえみ]
-[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公通常]
-「今後、お会いする方に失礼がないようにするには、どのように[r]
-[sp]振舞えばいいのでしょう？[r]
-[主人公眉下げ下]
-[sp]……そう考えてしまうと余計に筆が進まなくて」[p]
-[whosay name=磯野 color="dimgray"]
-「お相手のことを考えられるのは良いことです[r]
-[sp]どなたについてお悩みでしょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「華織お兄様のことを聞いていいかしら」[p]
@@ -171,7 +185,10 @@
 [主人公目閉]
 （『季節の話題』、『華道のお稽古』、『秋の散策』ね)[p]
 @jump target=*end_Q
-*no
+
+；==============================================================================================================
+
+*zaizen
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -179,15 +196,54 @@
 [current layer="message0"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-#
-[主人公通常]
-私は、磯野に相談せず、自分の力で解決することにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ほほえみ]
-「大丈夫。 ありがとう磯野。　私、もう少し頑張ってみるわ」[p]
+[主人公通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「財前様のことを聞いていいかしら？」[p]
 [whosay name=磯野 color="dimgray"]
-「また気になるようなことがありましたらお申し付けください」[p]
+「財前美彬様のことですね 」[p]
+
+[whosay name=磯野 color="dimgray"]
+「財前美彬様は、やり手の銀行家でざいます。[r]
+[sp] 財前様の銀行の投資は我が国でも、 一歩先を行っていると[r]
+[sp]いわれ、お手本にする方もいらっしゃいます。[p]
+[主人公驚]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（凄い方なのね……）[p]
+[whosay name=磯野 color="dimgray"]
+「ドイツ人とのハーフで、偏見など苦労されてます。 [r]
+[sp]礼儀を重んじる方とか。」[p]
+[whosay name=磯野 color="dimgray"]
+[主人公通常]
+「『礼法のお稽古をほどほどに重ねておくとよいでしょう[r]
+[sp]お稽古だけではお嬢様も滅入ってしまうと思います。　気分転換に[r]
+[sp]『散策』もお勧めします」[p]
+[主人公ほほえみ]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「ありがとう磯野。　財前様の事を聞いて[r]
+[sp]お手紙を書きたくなりました。」[p]
+[whosay name=磯野 color="dimgray"]
+「私もお嬢様の笑顔が励みでございます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（『季節の話題』、『礼法のお稽古』、『散策』ね)[p]
+
 @jump target=*end_Q
+
+；==============================================================================================================
+*hoka
+[cm]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+
+
+
+
+；==============================================================================================================
 *okeiko
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
@@ -203,20 +259,48 @@
 「いえ、それよりお稽古のことが知りたいわ[r]
 [sp]最近、張り合いがなくて……」[p]
 [whosay name=磯野 color="dimgray"]
-「お稽古をしますと淑女としての品格が身についていきます。 [r]
-[sp]もしかしたら何処かでお嬢様の頑張りを見てくださる方がいるかも[r]
-しれません。　陰ながら磯野も応援させていただきます」[p]
-[whosay name=磯野 color="dimgray"]
-「お手紙のお相手になられた方については、よろしいですか？」[p]
-;よろしゅうございましたか？
-@jump target=select
-;選択肢に戻る
+「お稽古をしますと淑女としての品格が身についていきます」[p]
+「淑女の聞こえが高くなれば、いつか高貴な方にもお目にかかることもあるかもしれません」[p]
 
+「また、お稽古に打ち込めば、もしかしたら何処かでお嬢様の頑張りを見てくださる方が[r]
+[sp]いらっしゃるかもしれませんね。陰ながら磯野も応援させていただきます」[p]
+
+[whosay name=磯野 color="dimgray"]
+「お手紙のお相手については、よろしいですか？」[p]
+;よろしゅうございましたか？
+@jump target=*select
+;現在の現在の好感度の高い相手について相談するかの選択肢に戻ります
+
+
+
+；==============================================================================================================
+*no
+[cm]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+#
+[主人公通常]
+私は、磯野に相談せず、自分の力で解決することにした。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
+「大丈夫。 ありがとう磯野。私、もう少し頑張ってみるわ」[p]
+[whosay name=磯野 color="dimgray"]
+「また気になるようなことがありましたらお申し付けください」[p]
+@jump target=*end_Q
+
+
+；==============================================================================================================
 *end_Q
+#
 ;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
+；==============================================================================================================
 
 *window_close
 [cm]
