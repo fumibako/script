@@ -128,11 +128,11 @@
 [current layer="message1"]
 [font size=32]
 ;【分岐】
-[glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+[glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink target=*okeiko text="それよりお稽古のことが気になった" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
+[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=300 color=white]
+[glink target=*okeiko text="それよりお稽古のことが気になった" fontcolor=gray size=23 width="200" x=200 y=400 color=white]
+[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=200 y=500 color=white]
 [s]
 
 ==============================================================================================================
