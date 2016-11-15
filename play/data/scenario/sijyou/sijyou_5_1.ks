@@ -135,8 +135,8 @@
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=150 color=white]
 [glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink target=*okeiko text="それよりお稽古のことが気になった" fontcolor=gray size=22 width="400" x=400 y=150 color=white]
-[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=400 y=200 color=white]
+[glink target=*okeiko text="それよりお稽古のことが気になった" fontcolor=gray size=22 width="400" x=250 y=150 color=white]
+[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=450 y=200 color=white]
 [s]
 
 ==============================================================================================================
