@@ -38,6 +38,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織さまは、私のことを嫌いになったのでしょうか？)[p]
 ;セリフ途中＿不安から→疑心暗鬼の表情へ　[主人公強気眉][主人公伏目目パチ1回][主人公口ふぅ]
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織さまは、やっぱり私のことを妹みたいなもので……
 ;疑心暗鬼の表情　もうすこしお上品でもいいのよ・・・
@@ -170,6 +171,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公口通常]
 [wait time=10]
 *seen4
+[autosave]
 #
 北風が障子の影を抜けて吹き抜けていく。[p]
 [主人公目を開く]
@@ -211,6 +213,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [whosay name="幼い頃の私" color="#cf5a7f"]
 「いえ……けど、急にどうしてですの？」[p]
 *seen5
+[autosave]
 #
 華織お兄さまとお兄さまは、互いに見合って悲しそうに微笑む。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -248,11 +251,12 @@ var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
 *seen6
+[autosave]
 #
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
+[autosave]
 [whosay name="文矢(手紙)" color="#538a8a"]
 『[名前]は華織のことをどう思う？[r]
 [sp]どうしたい？』[p]
