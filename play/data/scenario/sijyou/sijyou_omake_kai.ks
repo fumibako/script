@@ -18,6 +18,8 @@ $('.loding_pic').remove();
 [endscript]
 ;//////////////////
 [イベントシーン構築枠茶色]
+;=================================================================================_
+*seen0
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;ガタゴト　音人　物音02（ガタン・バタン）×2回
@@ -63,6 +65,8 @@ $('.loding_pic').remove();
 [fadeoutbgm time=3000]
 [whosay name="四条祖父" color="#888898"]
 (騒動の引き金になってしまった、ワシは何も言うまい)[p]
+;=================================================================================_
+*seen1
 #
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 #
@@ -103,6 +107,8 @@ $('.loding_pic').remove();
 [fadeoutbgm time=3000]
 [whosay name="華織" color="olivedrab"]
 「返事は一回でいいよ、じゃぁ頑張って下さい」[p]
+;=================================================================================_
+*seen1
 ;足音去っていく
 ;【SE】落ち着いた足音（フェードアウト）
 [playse storage=isono_out.ogg loop=false ]
@@ -178,6 +184,8 @@ $('.loding_pic').remove();
 [whosay name="四条 華衣" color=%mp.color]
 「はぁ。 ちょっと思いついちまったことが、俺ひとりじゃまだ出来そうに[r]
 [sp]なさそうだからさ」[p]
+;=================================================================================_
+*seen2
 #
 ・・・・・・[p]
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
@@ -208,6 +216,8 @@ $('.loding_pic').remove();
 [chara_mod name="bg" storage="bg/B4nFWraU42/nerine_img.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 その花は、また誰かに幸せを与え、新しい花を咲かすことを願っている。[p]
+;=================================================================================_
+*seen3
 ;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
