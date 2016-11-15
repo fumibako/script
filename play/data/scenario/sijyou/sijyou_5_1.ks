@@ -148,7 +148,7 @@
 [主人公通常]
 「華織お兄様のことを聞いていいかしら」[p]
 [whosay name=磯野 color="dimgray"]
-「はい 四条華織様　のことですね」[p]
+「はい [ruby text=し]四[ruby text=じょう]条[ruby text=かお]華[ruby text=り]織様　のことですね」[p]
 [whosay name=磯野 color="dimgray"]
 「四条華織様は、華道の名家の出自でもございます。[r]
 [主人公目パチ1回]
@@ -196,13 +196,11 @@
 [current layer="message0"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「財前様のことを聞いていいかしら？」[p]
 [whosay name=磯野 color="dimgray"]
-「財前美彬様のことですね 」[p]
-
+「[ruby text=ざい]財[ruby text=ぜん]前[ruby text=よし]美[ruby text=あきら]彬様のことですね 」[p]
 [whosay name=磯野 color="dimgray"]
 「財前美彬様は、やり手の銀行家でざいます。[r]
 [sp] 財前様の銀行の投資は我が国でも、 一歩先を行っていると[r]
@@ -226,11 +224,9 @@
 「私もお嬢様の笑顔が励みでございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （『季節の話題』、『礼法のお稽古』、『散策』ね)[p]
-
 @jump target=*end_Q
-
 ；==============================================================================================================
-*hoka
+*kuroda
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -238,11 +234,56 @@
 [current layer="message0"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
-
-
-
+「黒田様のことを聞いていいかしら？」[p]
+[whosay name=磯野 color="dimgray"]
+「[ruby text=くろ]黒[ruby text=だ]田[ruby text=まさ]将[ruby text=たか]貴様のことですね」[p]
+[whosay name=磯野 color="dimgray"]
+「黒田様は地方に沢山の土地をもつ[r]
+[sp]古くから続く伝統ある御家柄とお聞きしています」[p]
+[主人公目パチ1回]
+[wait time=10]
+[主人公口通常]
+[wait time=10]
+[whosay name=磯野 color="dimgray"]
+「黒田様は幼い頃から学業に才能を示され[r]
+[sp]大学でも優秀な成績を修めておられるそうですよ。[r]
+[sp]次の春にはご卒業予定とお聞きしております」[p]
+[whosay name=磯野 color="dimgray"]
+「旦那様がおっしゃるには、努力家で優しいお人柄だそうです。[r]
+[主人公目パチ1回]
+[wait time=10]
+[sp]机上の学問だけではなく、野山など自然にも親しまれているそうです」[p]
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~変更してください~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[whosay name=磯野 color="dimgray"]
+[主人公ポーズ通常]
+「黒田様は、自然に関わるお話にお好きなようですから、[r]
+[sp]お手紙のやりとりについては、『季節の話題』を送ってみては如何で[r]
+[sp]しょうか？」[p]
+[whosay name=磯野 color="dimgray"]
+[主人公目パチ1回]
+「また、人との繋がりを大切にされる方でいらっしゃるので[r]
+[sp]おもてなしできるように『茶道のお稽古』も、ほどほどになされる[r]
+[sp]と良いでしょう」[p]
+[whosay name=磯野 color="dimgray"]
+「お稽古だけでは、お嬢様も滅入ってしまうと思います」[p]
+;読みにくいので切って
+「気分転換に『散策』もお勧めします。[r]
+[sp]『秋』の色合いを眺められますとお手紙の話題への切っ掛けにもなる[r]
+[sp]かもしれませんね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公眉下げ下]
+[主人公口ほほえみ]
+「わかったわ。　ありがとう磯野。　[r]
+[主人公ほほえみ]
+[sp]磯野のおかげで、お返事を書く勇気が沸いてきたみたい」[p]
+[whosay name=磯野 color="dimgray"]
+「私もお嬢様の笑顔が励みでございます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉]
+（『季節の話題』、『茶道のお稽古』、『秋の散策』ね)[p]
+@jump target=*end_Q
 ；==============================================================================================================
 *okeiko
 [cm]
