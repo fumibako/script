@@ -7,6 +7,7 @@
 ;[preload storage="data/fgimage/bg/bg_genkan.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu2.jpg"]
 ;/////////////////////////////////////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -20,7 +21,7 @@
 [link target=first]【１】代入しない[endlink][r]
 [link target=test_str]【２】淑女度高め(終了後にもどします)[endlink][r]
 [link target=test_str2]【３】緊急用：淑女度を１(戻しません)[endlink][r]
-[link target=sijyou_1]【４】四条登場シーンまでスキップ[endlink]
+[link target=*kaori_sakuhin]【４】背景追加シーンまでスキップ[endlink]
 [s]
 *test_str
 #
@@ -566,10 +567,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=文矢 color="#538a8a"]
 「あったよ。[名前]。　これが、華織が受賞した作品だね」[p]
 ;～～～～～～～～～～～～～シーン華織の作品みる～～～～～～～～～～～～～～～～
+*kaori_sakuhin
 [autosave]
 #
-;背景を変えてみる・・・松の枝、沈丁花のイメージを被せる必要あり
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+;背景を変えてみる・・・松の枝、沈丁花のイメージを被せる必要あり 松は描いたのでいいかな
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu2.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 お兄様が金屏風の前に飾られた受賞作品を見つける。[p]
 [if exp="f.para_shujinkou_j_gogaku>=100"]
