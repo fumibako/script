@@ -20,7 +20,14 @@
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
+[if exp=tf,sijyou_test==true]
+テストフラグで表示されています。[r]
+[link target=seen0]はじめから[endlink][r]
+[link target=seen7]シーン追加から[endlink]
+[s]
+[endif]
 *seen0
+[er]
 #
 兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
 ;兄のはからいで料亭にやってきた私は、会うべき"とある人物"を待っていた。[p]
@@ -398,7 +405,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;=================================================================================
 *seen6
-[autosave]
 ;[暗点]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -411,6 +417,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
 「ごめん下さい」[p]
+[autosave]
 [whosay name="華衣の婚約者の母"]
 「！ あら……アナタは四条家の！？」[p]
 [四条口通常]
@@ -438,7 +445,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[四条口開]
 [sp]お父様は、いらしゃられますか？」[p]
 [whosay name="華衣の婚約者の母"]
-「父はもう年ゆえに他界してまして」[p]
+「[ruby text=あの]旦[ruby text=ひと]那も、もう歳ゆえに他界してまして……」[p]
 [四条困り]
 [whosay name="質屋"]
 「すみませーん、こちらも持っていきますよー」[p]
@@ -499,6 +506,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;=================================================================
 *seen7
+[er]
 #
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
@@ -538,13 +546,44 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;場面転換
 ;=================================================================================_
 *seen8
+;[if exp=f.sijyou_sobo==true| | "f.para_shujinkou_j_kadou >= 80"]
+;華道パラが高いまたは、四条綾花f.sijyou_sobo==trueと会っていると表示される。それ以外は無し。
+;なぜかというと華道展イベントが表示されない可能性が高いからです。
 #
+私達は、埃に塗れながら大切な荷物を[ruby text=まと]纏めた。[p]
+[whosay name="華織" color="olivedrab"]
+「ふぅ。　思わず、気を使って、あんな事を言ってしまったけれど、[r]
+[sp]先に、ここの事を尋ねれば良かったのでしょうですね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「ですけど、分かっていただいてよかったです」[p]
+[whosay name="華織" color="olivedrab"]
+「これも、[名前]が、いてくれたおかげですよ[r]
+[sp]きっと、僕ひとりが尋ねたところで、あの状況では、嫌味にしか[r]
+[sp]思われなかっただろう」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「いえ……」[p]
+[whosay name="華織" color="olivedrab"]
+「ありがとう、[名前]。[r]
+[sp]さぁ、頑張って荷物を[ruby text=まと]纏めようか。[r]
+[sp]もちろん、重いものは、僕に任せてくれ。こう見えても、力は[r]
+[sp]ありますから」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい！」[p]
+[whosay name="華織" color="olivedrab"]
+（世襲財産までの差し押さえか……よっぽどのことなのだろうか？)[p]
+(けど、華族が、いつまでも栄華を極めていられるか、そんなことは[r]
+[sp]誰にも決められないことだろう……）[p]
+[whosay name="華織" color="olivedrab"]
+（最後まで、大切な人を守れるような明確な強さを持って[r]
+いなれば生き抜く事もままならない時代が、いつかくるだろう)[p]
+(そのとき……僕には、何ができるだろうか)[p]
+;[endif]
+*common
 ;[暗点]
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="f.haikei_credit=''"]
 ・・・・・・
 [wait time=1000]
-;私達は、埃に塗れながら大切な荷物をまとめた。
 ;[寂れた邸宅]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
