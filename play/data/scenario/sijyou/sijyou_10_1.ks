@@ -1,22 +1,23 @@
-;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
+;¥¥¥¥¥¥¥¥イベント☆障害のはじまり 心の暗闇 手紙が帰ってこなくなる¥¥¥¥¥¥¥¥
 ;暗転
 ;[chara_mod name="bg" storage="toumei.gif" time=1500]
 [stopbgm]
-;使用背景メモ
+;//////使用背景メモ///////////////////////////////////
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-;//////☆障害のはじまり 心の暗闇//////
-;○手紙が帰ってこなくなる
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+;//////////////////////////////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-
+[layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [image layer=27 storage="bg/room_niwa.jpg"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
+;/////////////////////////////////////////////////////
 [イベントシーン構築]
 ;まだ深刻ではない
 [主人公ポーズ通常]
