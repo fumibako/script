@@ -345,7 +345,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;[暗点]か空
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=100]
 #
-『[華衣]との婚約解消されたら嫌だった。[r]
+『私の[ruby text=やまい]病のことで、[華衣]との婚約解消されたら嫌だった。[r]
 [sp]急がないといけない、この想いを綴るには種もほしい』[p]
 #
 ;[SE馬の鳴き声]
@@ -367,7 +367,10 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 『わかった、だから[華衣]がくるまでもう少し持ちこたえてくれ！　』[p]
 …………[wait time=1500][er]
 [whosay name="華衣の婚約者の母"]
-『……のものは持って行きますね 今までお世話になりました』[p]
+『……のものは持って行きますね 今までお世話になりました。[r]
+[sp]申し訳ありませんが、しばらくは、私どもの事は、[r]
+[sp]そっとして頂けますか……これからの事も考えなければ[r]
+[sp]いけませんので』[p]
 #
 …………[wait time=1500][er]
 ;○もともとお情けの婚約者候補(家の付き合いで候補にいれただけ)だったので最期の話もできず、祖父との回想シーンなどで反対される
@@ -418,14 +421,13 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様　」[p]
+「華織様」[p]
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
 「……」[p]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
-
 [autosave]
 #
 華織様は私の手を強く握られた。[r]
