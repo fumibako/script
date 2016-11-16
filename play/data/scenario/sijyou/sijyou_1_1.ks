@@ -24,10 +24,10 @@
 [whosay name="磯野" color="dimgray"]
 「[名前]さま、
 ;お嬢様、
-『四条華織』さまからお手紙が届いております。」[p]
+『四条華織』さまからお手紙が届いております」[p]
 [autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-ありがとう。[p]
+「ありがとう」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
