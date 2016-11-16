@@ -670,7 +670,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 ;華織が説明してるので地の文があまり思いつかない
 #
-『料亭』に戻ってきた私達[p]
+『料亭』に戻ってきた私達。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -704,7 +704,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「壺には富士と波が描かれている普通の壺」[p]
 [四条口驚き]
-「しいていうなら、この壺は、花を生けるにはむいていない絵図柄だね。」[p]
+「しいていうなら、この壺は、花を生けるにはむいていない絵図柄だね」[p]
 ;荘厳派手すぎてむいてない　赤に金の唐風の壷？
 [主人公ポーズ通常]
 ;【SE】湯のみを置く（コトリ）　壷おいておく音
