@@ -11,12 +11,14 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;[macro name=主人公部屋表示準備]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [image layer=29 storage="bg/room_niwa.jpg"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
+;[endmacro]
 ;/////////////////////////////////////////////////////
 [イベントシーン構築]
 ;まだ深刻ではない
@@ -31,9 +33,10 @@
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[macro name=主人公部屋・主人公表示]
 [freeimage layer=29 time=1000]
 [layopt layer=fix visible=true]
-
+;[endmacro]
 [主人公伏目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
@@ -70,9 +73,6 @@
 ;一旦主人公を表示なしにする
 [主人公退場]
 [eval exp="f.kaogura!='off'"]
-
-;場面転換早すぎですが、背景変更でウエイトがあれば、違和感ないかもしれません
-;ナレーター
 ;会話ウィンドウ消去
 [freeimage layer = 14]
 ;機能ボタン消去
@@ -149,17 +149,27 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 *seen4
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
+
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[image layer=29 storage="bg/room_niwa.jpg"]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+
 [イベントシーン構築]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
 [eval exp="f.kaogura!='on'"]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [wait time=10]
 [主人公困り]
+[freeimage layer=29 time=1000]
+[layopt layer=fix visible=true]
 [wait time=10]
+
 [主人公目閉じ]
 (どうしましょう)[p]
 [whosay name="磯野" color="dimgray"]
