@@ -21,6 +21,7 @@
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
 *seen0
+#
 兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
 ;兄のはからいで料亭にやってきた私は、会うべき"とある人物"を待っていた。[p]
 [主人公ポーズ通常]
