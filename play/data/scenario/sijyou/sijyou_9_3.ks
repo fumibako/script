@@ -792,6 +792,7 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
 ボートに乗りながらお茶でもしましょう」[p]
+#
 [主人公退場]
 ;【退場】四条
 [四条退場]
