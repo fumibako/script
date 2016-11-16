@@ -19,9 +19,16 @@
 ;=================================================================================_
 *first
 [テキスト全画面白文字]
-私たちは、外に出て車夫をみつけると、[華衣]様が[r]
+私達は、外に出て車夫をみつけると、[華衣]様が[r]
 向かわれたと思われる『波ケ浦』へと急いだ。[p]
 ;場面転換
+;SE波の音
+;=============================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image layer=29 storage="bg/bg/test_sijyou_namigauara.jpg" time=100]
+[wait time=10]
+;=============================
 ;【波ヶ浦】荒波
 [chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
@@ -39,6 +46,11 @@
 ;強気の驚き
 [四条真剣]
 [四条口驚き]
+;=============================
+[freeimage layer=29 time=1000]
+[layopt layer=fix visible=true]
+;=============================
+[layopt layer=fix visible=true]
 [whosay name="華織" color="olivedrab"]
 「[華衣]！ ここに居たんだな」[p]
 [四条口ムッ]
@@ -236,16 +248,31 @@
 ;ナレーター
 [華衣]様を追った私達は、[r]
 以前、華織様に尋ねた温室へとたどり着く。[p]
-その温室の中には、巨大なガラスにと生い茂る緑に守られるかの[r]
-ようにして、色とりどりのネリネが生育されていた。[p]
+その温室の中には、巨大なガラスにと生い茂る緑に[r]
+守られるかのようにして、色とりどりのネリネが[r]
+生育されていた。[p]
+;=============================
+;SEキラキラ？間
+[playse storage=shine.ogg loop=false ]
+[eval exp="f.haikei_credit='photo　by　＠名無し１'"]
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image layer=29 storage="bg/bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+;=============================
 [call target=*start storage="macro_tati_sijyou.ks"]
-[イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 ;[婚約者の花園] ネリネ？の庭…背景がないなら写真の花だけでもいいかも
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[イベントシーン構築]
+;=============================
+[freeimage layer=29 time=1000]
+[layopt layer=fix visible=true]
+;=============================
 [whosay name="華衣" color=%mp.color]
 「ここって兄さんが言ってた場所」[p]
 ;○主人公が花言葉を教えてくれる
