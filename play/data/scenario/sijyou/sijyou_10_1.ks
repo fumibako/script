@@ -14,7 +14,7 @@
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[image layer=27 storage="bg/room_niwa.jpg"]
+[image layer=29 storage="bg/room_niwa.jpg"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;/////////////////////////////////////////////////////
