@@ -93,7 +93,7 @@
 [主人公目パチ1回]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-お義さんには許可をもらって来ましたか？[p]
+「お[ruby text=と]父[ruby text=う]義様には、許可をもらって来られましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。[r]
 [sp]『もう一緒になるのだから好きにしなさい』といってました」[p]
