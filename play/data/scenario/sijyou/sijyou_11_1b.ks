@@ -26,7 +26,7 @@
 ;=============================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image layer=29 storage="bg/bg/test_sijyou_namigauara.jpg" time=100]
+[image layer=29 storage="bg/test_sijyou_namigauara.jpg" time=100]
 [wait time=10]
 ;=============================
 ;【波ヶ浦】荒波
@@ -257,7 +257,7 @@
 [eval exp="f.haikei_credit='photo　by　＠名無し１'"]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image layer=29 storage="bg/bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[image layer=29 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;=============================
