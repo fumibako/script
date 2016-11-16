@@ -1065,7 +1065,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [sp]いらっしゃるのね)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
-（ふぅ。　今日の私、華織様の お役に立てたでしょうか）[p]
+（ふぅ。　今日の私、華織様のお役に立てたでしょうか）[p]
 [四条ベース着物]
 [四条通常]
 [四条目大]
@@ -1096,7 +1096,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-
 [四条目閉じ]
 [主人公通常]
 華織様は、藤でできた壺状の籠を手にすると、短くなってしまった花々を[r]
@@ -1105,7 +1104,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 切り捨てられていた花々は、みるみるうちに自然の中に生える美しい姿へと変わっていく。[p]
 ;華織様の手によって
-;柔和ほほえみ(見とれる・夢見がち)　または　驚き小ほほえみ（感心）
+;柔和ほほえみ(見とれる・夢見がち)　または　驚き小ほほえみ（感心）心配
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
 [wait time=10]
