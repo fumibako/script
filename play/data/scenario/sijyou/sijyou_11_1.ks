@@ -20,7 +20,7 @@
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
-[if exp=tf,sijyou_test==true]
+[if exp=tf.test_sijyou==true]
 テストフラグで表示されています。[r]
 [link target=seen0]はじめから[endlink][r]
 [link target=seen7]シーン追加から[endlink]
