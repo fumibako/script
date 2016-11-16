@@ -243,6 +243,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公目閉じ]
 [wait time=10]
 [current layer="message0"]
+#
 私は、華織様の話を静かに聞いた。[p]
 #
 ・・・・・・[p]
@@ -336,6 +337,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ありがとうございます)[p]
+#
 ;【退場】四条
 [四条退場]
 [fadeoutbgm time=3000]
@@ -355,11 +357,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-『[華衣]の婚約者の生家前』[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+#
+『[華衣]の婚約者の生家前』[p]
 #  
 ;ここで二十に名前が表示されるようなので消したりウェイトしてみる
 [whosay name="質屋"]
@@ -799,7 +802,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条横伏目]
 ;[四条眉強気]
 [whosay name="華織" color="olivedrab"]
-「問題は、[華衣]が放蕩する場所だな」[p]
+「問題は、[華衣]が[ruby text=ほう]放[ruby text=とう]蕩する場所だな」[p]
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
 「我が弟ながら、その様な場所を[ruby text=かい]皆[ruby text=もく]目[ruby text=けん]検[ruby text=とう]討つかないなんて、[r]
