@@ -214,7 +214,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
-[link target="*華衣について"][華衣]について尋ねた。[endlink][r]
+[link target="*華衣について"][華衣]様について尋ねた。[endlink][r]
 [r][r][r]
 [link target="*skp_cmon"]華織様の話を静かに聞いた。(スキップ)[endlink]
 [s]
@@ -227,7 +227,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
-私は、[華衣]について尋ねた。[p]
+#
+私は、[華衣]様について尋ねた。[p]
 ;別ファイルにジャンプ
 @jump storage="sijyou/sijyou_11_1_kai.ks" target=*first
 ;///////////////スキップした場合のシーン/////////////
@@ -498,7 +499,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;=================================================================
 *seen7
-[autosave]
 #
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
@@ -514,6 +514,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 #
 案内された先には、小さな土蔵が、ひっそりと佇んでいた。[p]
+[autosave]
 ;写真によって変更↑
 [whosay name="華衣の婚約者の母"]
 「娘の物はここにある書物と壺くらいです」[p]
@@ -559,6 +560,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「少ないですが受け取って下さい」[p]
+[autosave]
 [主人公憂い]
 [wait time=10]
 ;通常でもよい
@@ -604,7 +606,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;=================================================================================_
 *seen9
-[autosave]
+
 ;夕空
 [chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
 [eval exp="f.haikei_credit=''"]
@@ -613,6 +615,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 荒れ果てた地の槇の葉に、霧が立ちのぼっていく。[p]
 秋すぎさる夕日に物悲しさを感じ、[r]
 私達は、手を繋ぎながら来た道を帰っていった。[p]
+[autosave]
 ;一人称にした！！
 ;=================================================================================_
 *seen10
