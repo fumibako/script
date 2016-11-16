@@ -11,32 +11,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[keyframe name="opasity"]
-[frame p=0% opacity=0]
-[frame p=100% opacity=1]
-[endkeyframe]
-[keyframe name="not_opasity"]
-[frame p=0% opacity=1]
-[frame p=100% opacity=0]
-[endkeyframe]
-[macro name="四条表示"]
-[kanim keyframe="opasity" name="sijyou_base" time=10]
-[kanim keyframe="opasity" name="sijyou_me" time=10]
-[kanim keyframe="opasity" name="sijyou_mayu" time=10]
-[kanim keyframe="opasity" name="sijyou_kuti" time=10]
-[kanim keyframe="opasity" name="sijyou_emo" time=1000]
-;スマホフリーズ対策time=10
-[wa]
-[endmacro]
-[macro name="四条表示準備"]
-[kanim keyframe="opasity" name="sijyou_base" time=10]
-[kanim keyframe="opasity" name="sijyou_me" time=10]
-[kanim keyframe="opasity" name="sijyou_mayu" time=10]
-[kanim keyframe="opasity" name="sijyou_kuti" time=10]
-[kanim keyframe="opasity" name="sijyou_emo" time=50]
-;スマホフリーズ対策time=10
-[wa]
-[endmacro]
 
 *seen0
 ;【背景】ヒロインの部屋
@@ -120,7 +94,6 @@
 「だから[名字]家の手紙を返すんだ！」[p]
 [whosay name="四条 華衣" color=%mp.color]
 「いやだっ！」[p]
-[四条表示準備]
 [whosay name="四条祖父" color="#888898"]
 「この分からず屋が！！」[p]
 ;【SE】ビンタ（バチン）
@@ -129,6 +102,8 @@
 ;わずかに揺れるくらいでいい
 [quake count=1 time=100 hmax=5 vmax=5]
 [wait time=10]
+@layopt layer=13 visivle=true
+[image layer=13 name=jyunbi storage="bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=10]
 [whosay name="四条祖父" color="#888898"]
 「！？」[p]
 *seen3
@@ -138,7 +113,8 @@
 ;[四条口ムッ]
 [四条ビンタ]
 ;ビンタエモありがとうございます。疲れてるとマゾのコメントにみえる！
-[四条表示]
+[freeimage layer=13 time=1000]
+@layopt layer=13 visivle=true
 [whosay name="四条祖父" color="#888898"]
 「華織……なんで」[p]
 
