@@ -150,7 +150,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 （ふぅ。[r]
-[sp]お兄様から、華織様は[]ruby text=ご]御家業上、初冬から春にかけて、[r]
+[sp]お兄様から、華織様は[ruby text=ご]御家業上、初冬から春にかけて、[r]
 [sp]お忙しいとお聞きしておりますが……）[p]
 ;春はどうだろう開店祝いとか。冬は忙しいはず。クリスマスと正月は花屋は忙しい
 ;胸に手を当てるポーズがあったらいいな
@@ -334,7 +334,6 @@
 ;～～～～～～～共通3～～～～～～～
 ;=================================================================================_
 *common3
-[autosave]
 [主人公ポーズ通常]
 [主人公ほほえみ]
 ;【SE】襖を閉じる（ゆっくり）
@@ -343,6 +342,7 @@
 #
 部屋から下がる磯野は、何となく微笑んでいるような気がしたけれど、[r]
 それより華織様の手紙のことが気になって、寛容にも見逃してしまった。[p]
+[autosave]
 ;サウンドノベルくさい
 ;～～～～～～～～～～手紙2～～～～～～～～～～～～～～
 ;【SE】紙に触れる（パラリ）
@@ -354,7 +354,7 @@
 [r]
 お変わりなく、お元気でしょうか[r]
 ;挨拶わからん
-気持ちの高まりのまま、名前さんからの返事も待たず、[r]
+気持ちの高まりのまま、[名前]さんからの返事も待たず、[r]
 矢継ぎ早に手紙を出して申し訳ありません。[r]
 [r]
 先日の手紙にお伝えした通り、華道競合展で大賞を[r]
@@ -374,6 +374,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
 [link target=fumi_in1_1][sp]　　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
+[r]
 [link target=fumi_in3_3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
 *fumi_in3_3
 [er]
@@ -659,7 +660,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 
 ;～～～～～～～～～～～～共通５ここまで～～～～～～～～～～～
 ;祖母のイベントをやっていない人が、何故祖母と、わかったのか説明する
-～～～祖母イベントをやってる場合～～～[p]
+;～～～祖母イベントをやってる場合～～～[p]
+[if exp="f.sijyou_sobo==true"]
 [主人公ふぅ閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （何だったのでしょうか……)[p]
@@ -669,7 +671,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「こんにちは、四条綾花様」[p]
- ;綾女じゃないよ綾花だよ　変数にいれて＆で呼び方変えてもいいものか
+;綾女じゃないよ綾花だよ　変数にいれて＆で呼び方変えてもいいものか
 [whosay name=四条祖母 color=%mp.color]
 「こんにちは、[名前]さん、ご挨拶が遅れまして申し訳ありません」[p]
 #
@@ -677,7 +679,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;速読で読みにくいため修正↑
 [主人公ほほえみ]
 ;共通6にジャンプ 華道パラスルー
-;@jump target=*common6
+@jump target=*common6
+[endif]
 #
 それ以外の場合は華道パラ[p]
 [if exp="f.para_shujinkou_j_kadou >= 100"]
@@ -696,10 +699,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [endif]
 ;～～～～～～～～～～～共通6ここから～～～～～～～
 *common6
-[autosave]
 [主人公通常]
 [whosay name=四条祖母 color=%mp.color]
 「園遊会の時にも、お世話になりましたわ」[p]
+[autosave]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「四条様。今日はお誘い頂きありがとうございます」[p]
 [whosay name=四条祖母 color=%mp.color]
@@ -772,7 +775,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 (華織様……今まで[華衣]様のことも背負っていらしゃったのに[r]
-[sp]御家業のことも、ずっと悩まれていたのですね)[p]
+[sp][ruby text=ご]御家業のことも、ずっと悩まれていたのですね)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]
 (それなのに、おひとりで立ち向かわれて……努力されて……)[p]
