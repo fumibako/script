@@ -262,13 +262,13 @@
 [wait time=10]
 ;=============================
 [call target=*start storage="macro_tati_sijyou.ks"]
+;[婚約者の花園] ネリネ？の庭…背景がないなら写真の花だけでもいいかも
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-;[婚約者の花園] ネリネ？の庭…背景がないなら写真の花だけでもいいかも
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
-[イベントシーン構築]
 ;=============================
 [freeimage layer=29 time=1000]
 [layopt layer=fix visible=true]
