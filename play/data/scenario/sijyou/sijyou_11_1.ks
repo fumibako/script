@@ -579,7 +579,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 いなれば生き抜く事もままならない時代が、いつかくるだろう)[p]
 (そのとき……僕には、何ができるだろうか)[p]
 ;[endif]
-*common
+*common_2
 ;[暗点]
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="f.haikei_credit=''"]
