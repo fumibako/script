@@ -114,11 +114,11 @@
 「……はい。華織を選んで、良かったと思います」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「娘がこう言うのだ。 嫁ぐ娘を寂しく思ったとしても、[r]
-[sp]"勿論"と言わねば、父親として廃る。[r]
+[sp]"勿論"と言わねば、父親として[ruby text=すた]廃る。[r]
 [sp]さぁ、未来の夫婦に祝杯を上げようではないか！」[p]
 #
 [主人公通常]
-父の口上を起点に、晴れやかな空気が流れる。[p]
+父の[ruby text=こう]口[ruby text=じょう]上を起点に、晴れやかな空気が流れる。[p]
 [四条微笑み]
 #
 私は、もう一度、華織様と見つめ合った。[p]
@@ -433,7 +433,7 @@
 「あぁ、美華は、こっちの席に！」[p]
 ;お父さん、すこしやけ酒でもあり
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「なんだい 華織くん 、芸姑さんも呼びんでくれたのか。[r]
+「なんだい？華織くん、芸姑さんも呼びんでくれたのか。[r]
 [sp]華織くんは、気が利くね」[p]
 ;主人公ふぅ
 [主人公ポーズ通常]
@@ -447,7 +447,7 @@
 [暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 #
-功を奏でるように女将達は三味線を鳴らなか、空が薄っすらと茜色に染まる。[p]
+功を奏でるように女将達は三味線を鳴らなか、空が薄っすらと茜色に[r]染まる。[p]
 [主人公通常]
 [主人公目閉じ]
 ;[料亭]
@@ -552,7 +552,8 @@
 *seen4
 [autosave]
 #
-うなづくように顔を下げると、兄に向き直し、驚くほど丁寧に挨拶を交わす。[p]
+うなづくように顔を下げると、兄に向き直し、驚くほど丁寧に挨拶を[r]
+交わす。[p]
 [主人公横目]
 [主人公ポーズ指]
 [whosay name="四条 華衣" color=%mp.color]
@@ -581,7 +582,7 @@
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_warau_s.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「ほら、美華も挨拶なさい」[p]
+「ほら、[ruby text=み]美[ruby text=はな]華も挨拶なさい」[p]
 [四条通常]
 [主人公ポーズ通常]
 [主人公目通常]
@@ -645,7 +646,7 @@
 [主人公横目]
 (いくつになるのでしょうか？ )[p]
 #
-華織の柔らかい印象をそのまま引き継いだ少女は、2〜3歳ほど幼い印象を受けた。[p]
+華織の柔らかい印象をそのまま引き継いだ少女は、二・三歳ほど幼い印象を受けた。[p]
 [主人公ポーズ通常]
 [主人公通常]
 #
@@ -653,13 +654,13 @@
 ;[四条口開]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_ake.png" time=0]
 [wait time=10]
-「[ruby text=み]美[ruby text=はな]華は、今年で14だね」[p]
+「[ruby text=み]美[ruby text=はな]華は、今年で[ruby text=じゅう]十[ruby text=よん]四だね」[p]
 ;[四条口通常]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name="四条 美華" color=%mp.color]
-「は、はい。[名前]様、私、今年で14となります！[r]
-[sp]それで、[名前]様に 常々 お聞きしたいことがありました」[p]
+「は、はい。[名前]様、私、今年で[ruby text=じゅう]十[ruby text=よん]四となります！[r]
+[sp]それで、[名前]様に常々、お聞きしたいことがありました」[p]
 #
 [ruby text=み]美[ruby text=はな]華さんは、私と向き直すと、しっかりした口調で尋ねた。[p]
 ;楽しいシーンから戸惑いへ　BGM難しい　美華の重責感的に五色かな
@@ -667,6 +668,7 @@
 [whosay name="四条 美華" color=%mp.color]
 「[名前]様は、華織お兄様のどの様なところが、お好きなられたのでしょう[r]
 [sp]か？」[p]
+;どういったところで選ばれたのでしょうか？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 「え……！」[p]
@@ -741,7 +743,7 @@
 [whosay name="四条 美華" color=%mp.color]
 「たしかに華織お兄様は、どんな殿方よりも、お優しい人かもしれません」[p]
 [whosay name="四条 美華" color=%mp.color]
-「ですけど、経済界に出でる一華兄様や他の社交界の花形と比べると[r]
+「ですけど、経済界に出でる[ruby text=いち]一[ruby text=か]華兄様や他の社交界の花形と比べると[r]
 [sp]殿方としての頼り甲斐や魅力があるとは思えません」[p]
 [四条憂い]
 ;=================================================================================_
@@ -797,7 +799,7 @@
 ;止めるべきだと思うが悩ましいところ
 [主人公目通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(美華さんも、昔の私に似ているかもしれない。[r]
+([ruby text=み]美[ruby text=はな]華さんも、昔の私に似ているかもしれない。[r]
 [sp]お兄様しか知らなかった頃の私に)[p]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -830,7 +832,7 @@
 [主人公口ほほえみ]
 ;言祝ぎを送るじゃおかしいからこんなんでいいか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「[ruby text=み]美[ruby text=はな]華さんにも、それに華衣さんにもくるかもしれません。 [r]
+「[ruby text=み]美[ruby text=はな]華さんにも、それに[華衣]さんにもくるかもしれません。 [r]
 [sp]それぞれのお二人の事を一番大切にしてくれて」[p]
 [四条口微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -854,7 +856,7 @@
 [whosay name="四条 美華" color=%mp.color]
 ;お姉様と呼んだ方いいのかなー？と
 「お姉様……！ ありがとうございます。[r]
-[sp]私、それまでに精一杯、淑女として研鑽しようと思います」[p]
+[sp]私、それまでに精一杯、淑女として[ruby text=けん]研[ruby text=さん]鑽しようと思います」[p]
 ;学びとうとございます？
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。ありがとう」[p]
@@ -880,7 +882,6 @@
 [autosave]
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
 #
-
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 華織様に誘われた私は、庭へと赴いた。[p]
@@ -927,7 +928,7 @@
 [whosay name="華織" color="olivedrab"]
 「そう言って頂けると助かります。[r]
 [sp][名前]さんのおかげで、久しぶりに兄弟全員がそろったのは良かったのです[r]
-[sp]が、纏めるのに苦労してしまいましたよ」[p]
+[sp]が、[ruby text=まと]纏めるのに苦労してしまいましたよ」[p]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
@@ -940,7 +941,7 @@
 [wait time=10]
 [主人公口ムッ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(もしかして、華衣さんのことで、ご兄弟方は離れていたのでしょうか？)[p]
+(もしかして、[華衣]さんのことで、ご兄弟方は離れていたのでしょうか？)[p]
 ;[四条目にこ]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
@@ -984,7 +985,7 @@
 [四条目通常]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええ、一華様は、社交界の花形のような華やかさ持っていて、[r]
+「ええ、[ruby text=いち]一[ruby text=か]華様は、社交界の花形のような華やかさ持っていて、[r]
 [sp]華織様はそんなお兄様に惹かれて、優しい華やかさをお持ち[r]
 [sp]なられたのでしょう」[p]
 [whosay name="華織" color="olivedrab"]
@@ -992,11 +993,11 @@
 [sp]ありますね……」[p]
 [主人公柔和ほほえみ１]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そんな華織様の弟様にあたる、華衣様は、[r]
+「そんな華織様の弟様にあたる、[華衣]様は、[r]
 [sp]華織様の素朴さをそのままに引き継がれたのですね」[p]
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
-「……華衣は、僕の悪いところを見破っていたのかもしれませんね……」[p]
+「……[華衣]は、僕の悪いところを見破っていたのかもしれませんね……」[p]
 [whosay name="華織" color="olivedrab"]
 「今迄は、必要以上に甘やしすぎてたから、つかず離れず見守って[r]
 [sp]いきたい……」[p]
@@ -1023,7 +1024,7 @@
 [chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「えぇ。 美華に文矢の言葉を送る君の姿は、慈愛の女神のような[r]
+「えぇ。[ruby text=み]美[ruby text=はな]華に文矢の言葉を送る君の姿は、慈愛の女神のような[r]
 [wait time=1]
 [sp]美しさを感じました」[p]
 ;フリーズポイント
@@ -1042,7 +1043,7 @@
 「まだ僕が、知り得てない君をもっと知りたい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
-「そんな……私は今のままでも充分に、華織様に知って頂いてますわ[r]
+「そんな……私は今のままでも充分に、華織様に知って頂いてますわ。[r]
 [sp]ですから、華織様のことをもっと私に教えてください」[p]
 ;しんどい
 [whosay name="華織" color="olivedrab"]
@@ -1146,7 +1147,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。申し訳ありませんが、僕は用事が出来ました。[r]
-[sp]身体を冷やすといけないから先に部屋に戻っててくれますか？」[p]
+[sp]身体を冷やすといけないので先に部屋に戻っててくれますか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？　はい」[p]
 #
