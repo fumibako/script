@@ -102,8 +102,8 @@
 ;わずかに揺れるくらいでいい
 [quake count=1 time=100 hmax=5 vmax=5]
 [wait time=10]
-@layopt layer=13 visivle=true
-[image layer=13 name=jyunbi storage="bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=10]
+@layopt layer=13 visible=true
+[image layer=13 name="jyunbi" storage="bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=10]
 [whosay name="四条祖父" color="#888898"]
 「！？」[p]
 *seen3
@@ -114,7 +114,7 @@
 [四条ビンタ]
 ;ビンタエモありがとうございます。疲れてるとマゾのコメントにみえる！
 [freeimage layer=13 time=1000]
-@layopt layer=13 visivle=true
+@layopt layer=13 visible=true
 [whosay name="四条祖父" color="#888898"]
 「華織……なんで」[p]
 
