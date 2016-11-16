@@ -79,12 +79,16 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 *test_page3
 [glink target="test_sansaku12" text="散策12" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test5_1" text="5月1週(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
-[glink target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test_fumi2" text="手紙（話題）" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="*test_ibent_fumi" text="イベント用の手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test_fumi3" text="飛鳥紗代子からの手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test_sansaku13" text="散策13" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test5_1" text="5月1週(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
+[glink target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+
+
+[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="test_fumi2" text="手紙（話題）" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="*test_ibent_fumi" text="イベント用の手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test_fumi3" text="飛鳥紗代子からの手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+
 [glink target="test_page2" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 *common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
@@ -308,6 +312,11 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [cm]
 [freeimage layer = 26]
 @jump storage="sijyou/sijyou_sansaku12.ks"
+[s]
+*test_sansaku13
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_sansaku13.ks"
 [s]
 
 *test_ibent_fumi
