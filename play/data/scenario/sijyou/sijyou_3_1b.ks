@@ -501,6 +501,31 @@
 「長男の四条 [ruby text=いち]一[ruby text=か]華です。
 外交官をしており、普段は[ruby text=フ]仏[ruby text=ラン]蘭[ruby text=ス]西にいます。[r]
 [sp]それにしても、君のような美しい方が [ruby text=い]義[ruby text=もうと]妹になって嬉しいよ」[p]
+;=================================================================================_
+[if exp="f.sijyou_ani==true"]
+[主人公照れ]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「は、はい、よろしくお願いします。[r]
+[sp]あの、こちらこの前に、お借りたしたものです」[p]
+[whosay name="四条一華" color=%mp.color]
+「わざわざ、ありがとう。　お互い、また会えて嬉しいね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
+（えぇ……と？）[p]
+[whosay name="華織" color="olivedrab"]
+[四条通常]
+「へぇ、後で話を聞こうかな……？」
+[主人公目通常]
+[p]
+[whosay name="四条一華" color=%mp.color]
+「華織。もしかして妬いたかい？」[p]
+[whosay name="華織" color="olivedrab"]
+「兄さんは、好きなお酒でも飲んでて下さい」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
+（後で華織様に[ruby text=いち]一[ruby text=か]華と会った時の事、お話しましょう）[p]
+;=================================================================================_
+[else]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい、よろしくお願いします」[p]
@@ -527,6 +552,9 @@
 [四条通常]
 [whosay name="華織" color="olivedrab"]
 「兄さんは、好きなお酒でも飲んでて下さい」[p]
+[endif]
+;=================================================================================_
+
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 「ほら、[華衣]も挨拶して」[p]
