@@ -70,7 +70,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_credit" text="仮credit" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=blue]
 
 [glink target="test_page1" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
-[glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
+[glink target="test_page3" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 [s]
