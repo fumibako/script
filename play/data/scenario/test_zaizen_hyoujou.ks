@@ -103,7 +103,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 [glink target="kuti_05" text="[財前口笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 [glink target="kuti_06" text="[財前口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [glink target="kuti_09" text="[財前口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
-[glink target="kuti_08" text="[財前口怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
+[glink target="kuti_08" text="[財前口大開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
 [endif]
@@ -382,8 +382,8 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 @jump target=text
 
 *kuti_08
-[財前口怒り]
-[eval exp="f.gra_zaizen_face='口：[財前口怒り]'"]
+[財前口大開]
+[eval exp="f.gra_zaizen_face='口：[財前口大開]'"]
 @jump target=text
 
 *kuti_09
