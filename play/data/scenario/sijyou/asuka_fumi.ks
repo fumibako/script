@@ -7,17 +7,16 @@
 ;=============================================
 ;手紙　飛鳥
 ;=============================================
-
-;[macro name="手紙飛鳥"]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_tokiko.jpg"]
-@layopt layer=message1 visible=true
-[position layer=message1 width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-[current layer="message1"]
-;[endmacro]
+[macro name=手紙飛鳥読了]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[freeimage layer=29]
+[endmacro]
 
 *0
-;[手紙飛鳥 fumi_number=]
+[手紙飛鳥 fumi_number=]
 [名前]さんへ。[r][r]
 若葉の緑が目にも鮮やかなこの頃。[r]
 [r]
@@ -41,12 +40,12 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
-;[手紙飛鳥読了 fumi_number=]
+[手紙飛鳥読了 fumi_number=]
 
 ;どうぶつの森っぽい
 
 *1
-;[手紙飛鳥 fumi_number=]
+[手紙飛鳥 fumi_number=]
 [名前]さんへ。[r][r]
 秋の気配が次第に濃くなってきましたわね。[r]
 [r]
@@ -64,7 +63,7 @@
 ;[手紙飛鳥読了 fumi_number=]
 
 *1_sijyo
-;[手紙飛鳥 fumi_number=]
+[手紙飛鳥 fumi_number=]
 [名前]さんへ。[r][r]
 冬は、もうすぐそこまで来ているようですわね[r]
 [名前]さんはお元気でしたかしら？[r]
@@ -88,12 +87,12 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
-;[手紙飛鳥読了 fumi_number=]
+[手紙飛鳥読了 fumi_number=]
 
 
 
 *2
-;[手紙飛鳥 fumi_number=]
+[手紙飛鳥 fumi_number=]
 [名前]さんへ。[r][r]
 菊薫る今日このごろ[r]
 [名前]さんはお元気でしたかしら？[r]
@@ -113,14 +112,14 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
-;[手紙飛鳥読了 fumi_number=]
+[手紙飛鳥読了 fumi_number=]
 
 
 
 
 
 *3
-;[手紙飛鳥 fumi_number=]
+[手紙飛鳥 fumi_number=]
 [名前]さんへ[r][r]
 桃の蕾もふくらむ頃、楽しい季節が[r]
 巡ってきたかしら？[r]
@@ -134,12 +133,12 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
-;[手紙飛鳥読了 fumi_number=]
+[手紙飛鳥読了 fumi_number=]
 
 
 ;藤枝さんのときだけ２月にこちらにお願いします
 *fuji
-;[手紙飛鳥 fumi_number=]
+[手紙飛鳥 fumi_number=]
 [名前]さんへ[r][r]
 桃の蕾もふくらむ頃、[名前]さんはいかが[r]
 おすごしかしら？[r]
@@ -158,14 +157,9 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
-;[手紙飛鳥読了 fumi_number=]
+[手紙飛鳥読了 fumi_number=]
 
-;メッセージレイヤサイズを会話窓用に戻す
-[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 visible=true
-[current layer="message0"]
 
-[freeimage layer=29]
 ;/////////////////ここからは戻り処理//////////////////////
 *back_test
 [chara_mod name="bg" storage="bg/title.jpg"]
