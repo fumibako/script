@@ -11,16 +11,12 @@
 ;全画面表示
 正月を過ぎる頃。 [r]
 [r]
-;【背景】主人公邸 お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 私は磯野に四条家に関する行儀作法について、刻々と学習を進めていた。[p]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
-[主人公通常]
-[主人公ポーズ通常]
 [イベントシーン構築]
-
+[主人公ポーズ通常]
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「四条家に入るにあたって、お言葉など気をつけることは、他にあるかしら？」[p]
 *seen0
