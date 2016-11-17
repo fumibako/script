@@ -383,8 +383,8 @@
 [wait time=10]
 [endmacro]
 
-;立ち絵表示[財前口怒り]
-[macro name="財前口怒り"]
+;立ち絵表示[財前口大開]
+[macro name="財前口大開"]
 [chara_mod name="zaizen_kuti" storage="zaizen/kuti_okori.png" time=0]
 [wait time=10]
 [endmacro]
