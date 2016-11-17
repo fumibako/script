@@ -9,13 +9,13 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-；==============================================================================================================
+;==============================================================================================================
 ;七月一週に休憩を押した場合
-；==============================================================================================================
+;==============================================================================================================
 [イベントシーン構築]
 #
-;【背景】ヒロインの部屋　夜
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
@@ -25,8 +25,8 @@
 [p]
 ;【SE】時計（控え目カチコチ）
 [playse storage=tokei_hikaeme.ogg loop=false ]
-[主人公目伏]
-[主人公口通常]
+[主人公目通常]
+[主人公口ほほえみ]
 書き終わった手紙に目を落とす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お返事が楽しみだわ)[p]
@@ -34,8 +34,6 @@
 顔の見えない彼の人を想い、空を見上げた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あ、流れ星だわ！」[p]
-
-
 *select
 [主人公目閉じ]
 [主人公ポーズ通常]
@@ -58,12 +56,12 @@
 [current layer="message1"]
 [font size=32]
 ;【分岐】
-[glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
-[glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=150 color=white]
-[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink target=*okeiko text="それよりお稽古のこと" fontcolor=gray size=22 width="400" x=200 y=250 color=white]
-[glink target=*syukujyo text="それより淑女らしく" fontcolor=gray size=22 width="400" x=200 y=300 color=white]
-[glink target=*no text="見逃してしまった" fontcolor=gray size=22 width="400" x=200 y=350 color=white]
+[glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
+[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
+[glink target=*okeiko text="それよりお稽古のこと" fontcolor=gray size=22 width="400" x=200 y=230 color=white]
+[glink target=*syukujyo text="それより淑女らしく" fontcolor=gray size=22 width="400" x=200 y=280 color=white]
+[glink target=*no text="見逃してしまった" fontcolor=gray size=22 width="400" x=200 y=330 color=white]
 [s]
 
 ==============================================================================================================
@@ -78,15 +76,15 @@
 [current layer="message0"]
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （華織お兄様と親しくできますように）[p]
-
-
+#
+私は星に願った。[p]
 @jump target=*end_Q
 
-；==============================================================================================================
+;==============================================================================================================
 ;wikiのシナリオ基準によって鍵括弧前の句点をとってあります
 *zaizen
 [cm]
@@ -100,9 +98,10 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （財前様と親しくできますように）[p]
-
+#
+私は星に願った。[p]
 @jump target=*end_Q
-；==============================================================================================================
+;==============================================================================================================
 *kuroda
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
@@ -114,10 +113,11 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公目閉じ]
 （黒田様と親しくできますように）[p]
-
+#
+私は星に願った。[p]
 
 @jump target=*end_Q
-；==============================================================================================================
+;==============================================================================================================
 *okeiko
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
@@ -131,10 +131,10 @@
 #
 [主人公目閉じ]
 （今、気になるお稽古が上手になりますように）[p]
-
-
+#
+私は星に願った。[p]
 @jump target=*end_Q
-；==============================================================================================================
+;==============================================================================================================
 *syukujy
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
@@ -150,9 +150,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （淑女らしくなれますように……）[p]
+#
+私は星に願った。[p]
 @jump target=*end_Q
 
-；==============================================================================================================
+;==============================================================================================================
 *no
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
@@ -165,11 +167,12 @@
 #
 見逃してしまった。[p]
 [主人公通常]
-（自分の力で頑張りましょうか）[p
+（自分の力で頑張りましょうか）[p]
+#
+私は星を眺めた。[p]
 @jump target=*end_Q
 
-
-；==============================================================================================================
+;==============================================================================================================
 *end_Q
 #
 ;@jump storage="event.ks" target=*event_owari
