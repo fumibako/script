@@ -178,9 +178,9 @@
 [macro name="財前怒り"]
 [chara_mod name="zaizen_mayu" storage="zaizen/mayu_tuyoki.png" time=0]
 [wait time=10]
-[chara_mod name="zaizen_me" storage="zaizen/me_ake.png" time=0]
+[chara_mod name="zaizen_me" storage="zaizen/me_okori.png" time=0]
 [wait time=10]
-[chara_mod name="zaizen_kuti" storage="zaizen/kuti_ake.png" time=0]
+[chara_mod name="zaizen_kuti" storage="zaizen/kuti_okori.png" time=0]
 [wait time=10]
 [chara_mod name="zaizen_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -383,9 +383,9 @@
 [wait time=10]
 [endmacro]
 
-;立ち絵表示[財前口大開]
-[macro name="財前口大開"]
-[chara_mod name="zaizen_kuti" storage="zaizen/kuti_ooake.png" time=0]
+;立ち絵表示[財前口怒り]
+[macro name="財前口怒り"]
+[chara_mod name="zaizen_kuti" storage="zaizen/kuti_okori.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -447,6 +447,12 @@
 ;立ち絵表示[財前横伏目]
 [macro name="財前横伏目"]
 [chara_mod name="zaizen_me" storage="zaizen/me_yokofusi1.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[財前目怒り]
+[macro name="財前目怒り"]
+[chara_mod name="zaizen_me" storage="zaizen/me_okori.png" time=0]
 [wait time=10]
 [endmacro]
 
