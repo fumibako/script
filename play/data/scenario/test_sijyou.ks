@@ -78,20 +78,19 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *test_page3
 [glink target="test_sansaku" text="散策" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test_sansaku2" text="散策2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test_sansaku3" text="散策3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test_sansaku4" text="散策4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test_sansaku5" text="散策5" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test_sansaku6" text="散策6" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test_sansaku7" text="散策7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test_sansaku8" text="散策8(華衣)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-
-[glink target="test_sansaku9" text="散策9" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="test_sansaku10" text="散策10" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="test_sansaku11" text="散策11" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test_sansaku12" text="散策12" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test_sansaku13" text="散策13" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test_sansaku3" text="散策3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test_sansaku4" text="散策4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="test_sansaku5" text="散策5" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test_sansaku6" text="散策6" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test_sansaku7" text="散策7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 
 
+[glink target="test_sansaku8" text="散策8(華衣)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="test_sansaku9" text="散策9" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="test_sansaku10" text="散策10" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test_sansaku11" text="散策11" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test_sansaku12" text="散策12" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test_sansaku13" text="散策13" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="test_page2" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
 [glink target="test_page4" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
