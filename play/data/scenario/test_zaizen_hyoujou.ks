@@ -53,7 +53,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 [glink target="face_12" text="[財前真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 color=white]
 [glink target="face_04" text="[財前困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 color=white]
 [glink target="face_10" text="[財前笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 color=white]
-;[glink target="face_08" text="[財前怒り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 color=white]
+[glink target="face_08" text="[財前怒り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 color=white]
 ;[glink target="face_11" text="[財前憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 color=white]
 ;[glink target="face_02" text="[財前伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 color=white]
 
