@@ -1,6 +1,6 @@
 ﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
-f.preload_images_tati = ["data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zaizen/kuti_hiyayaka.png","data/fgimage/zaizen/me_yokofusi1.png","data/fgimage/zaizen/me_yoko.png","data/fgimage/zaizen/me_toji.png","data/fgimage/zaizen/me_niko.png","data/fgimage/zaizen/me_fusi2.png","data/fgimage/zaizen/me_fusi1.png","data/fgimage/zaizen/me_ake.png","data/fgimage/zaizen/mayu_tuyoki.png","data/fgimage/zaizen/mayu_sage.png","data/fgimage/zaizen/mayu_odoroki.png","data/fgimage/zaizen/mayu_komari_soft.png","data/fgimage/zaizen/mayu_hisome.png","data/fgimage/zaizen/kuti_warau.png","data/fgimage/zaizen/kuti_odoroki.png","data/fgimage/zaizen/kuti_mu.png","data/fgimage/zaizen/kuti_hohoemi_soft.png","data/fgimage/zaizen/kuti_hohoemi.png","data/fgimage/zaizen/kuti_ake.png","data/fgimage/zaizen/emo_hohosome.png","data/fgimage/zaizen/emo_ase.png","data/fgimage/zaizen/kuti_futuu.png","data/fgimage/zaizen/me_futuu.png","data/fgimage/zaizen/mayu_futuu.png","data/fgimage/zaizen/base_suit.png","data/fgimage/zaizen/base_enbifuku.png"];
+f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaizen/me_okori.png","data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zaizen/kuti_hiyayaka.png","data/fgimage/zaizen/me_yokofusi1.png","data/fgimage/zaizen/me_yoko.png","data/fgimage/zaizen/me_toji.png","data/fgimage/zaizen/me_niko.png","data/fgimage/zaizen/me_fusi2.png","data/fgimage/zaizen/me_fusi1.png","data/fgimage/zaizen/me_ake.png","data/fgimage/zaizen/mayu_tuyoki.png","data/fgimage/zaizen/mayu_sage.png","data/fgimage/zaizen/mayu_odoroki.png","data/fgimage/zaizen/mayu_komari_soft.png","data/fgimage/zaizen/mayu_hisome.png","data/fgimage/zaizen/kuti_warau.png","data/fgimage/zaizen/kuti_odoroki.png","data/fgimage/zaizen/kuti_mu.png","data/fgimage/zaizen/kuti_hohoemi_soft.png","data/fgimage/zaizen/kuti_hohoemi.png","data/fgimage/zaizen/kuti_ake.png","data/fgimage/zaizen/emo_hohosome.png","data/fgimage/zaizen/emo_ase.png","data/fgimage/zaizen/kuti_futuu.png","data/fgimage/zaizen/me_futuu.png","data/fgimage/zaizen/mayu_futuu.png","data/fgimage/zaizen/base_suit.png","data/fgimage/zaizen/base_enbifuku.png"];
 [endscript]
 [preload storage=&f.preload_images_tati wait=true]
 
@@ -91,6 +91,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zai
 [glink target="me_06" text="[財前横目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 [glink target="me_07" text="[財前横伏目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [glink target="me_08" text="[財前目冷ややか]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+[glink target="me_09" text="[財前目怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 [endif]
 
 [if exp="f.gra_zaizen_part=='kuti'"]
@@ -102,7 +103,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zai
 [glink target="kuti_05" text="[財前口笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 [glink target="kuti_06" text="[財前口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [glink target="kuti_09" text="[財前口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
-;[glink target="kuti_06" text="[財前口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
+[glink target="kuti_08" text="[財前口怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
 [endif]
@@ -341,8 +342,8 @@ f.preload_images_tati = ["data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zai
 @jump target=text
 
 *me_09
-[財前目伏柔]
-[eval exp="f.gra_zaizen_face='目：[財前目伏柔]'"]
+[財前目怒り]
+[eval exp="f.gra_zaizen_face='目：[財前目怒り]'"]
 @jump target=text
 
 *kuti_01
@@ -381,8 +382,8 @@ f.preload_images_tati = ["data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zai
 @jump target=text
 
 *kuti_08
-[財前口微笑み小]
-[eval exp="f.gra_zaizen_face='口：[財前口微笑み小]'"]
+[財前口怒り]
+[eval exp="f.gra_zaizen_face='口：[財前口怒り]'"]
 @jump target=text
 
 *kuti_09
