@@ -72,7 +72,7 @@
 ;セリフは適当。時期でセリフの変更
 [whosay name=&sf.girl_namae color="[whosay name="cf5a7f"]
 ;[if exp=]
-(華衣さん、少し変わられましたね)
+([華衣]さん、少し変わられましたね)
 ;[else]
 (何だったのでしょうか？)
 ;[endif]
