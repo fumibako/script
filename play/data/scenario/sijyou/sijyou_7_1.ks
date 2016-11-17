@@ -31,8 +31,16 @@
 [主人公口ほほえみ]
 書き終わった手紙に目を落とす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（お返事が楽しみだわ)[p]
+（お返事が楽しみだわ)
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
+[p]
+
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
+[主人公目通常]
 顔の見えない彼の人を想い、空を見上げた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あ、流れ星だわ！」[p]
@@ -79,9 +87,8 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （華織お兄様と親しくできますように）[p]
@@ -97,9 +104,8 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （財前様と親しくできますように）[p]
@@ -113,9 +119,8 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公目閉じ]
 （黒田様と親しくできますように）[p]
 #
@@ -129,8 +134,8 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 それよりお稽古のことをお願いした。[p]
 #
@@ -146,9 +151,8 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 それより淑女らしくなれるようにお願いした。[p]
 
@@ -166,10 +170,8 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-#
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]#
 見逃してしまった。[p]
 [主人公通常]
 （自分の力で頑張りましょうか）[p]
