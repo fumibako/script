@@ -511,6 +511,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 (ストール、またお会いしたときに返しましょうか……)[p]
+[eval exp="f.sijyou_ani=true"]
 ;==============================================================================================================
 #
 ;@jump storage="event.ks" target=*event_owari
