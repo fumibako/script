@@ -431,7 +431,7 @@
 (まったく君って奴は、主役の1人だっていうのに気を使ってさ)[p]
 #
 [whosay name="華織" color="olivedrab"]
-「あぁ、美華は、こっちの席に！」[p]
+「あぁ、[ruby text=み]美[ruby text=はな]華は、こっちの席に！」[p]
 ;お父さん、すこしやけ酒でもあり
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「なんだい？華織くん、芸姑さんも呼びんでくれたのか。[r]
