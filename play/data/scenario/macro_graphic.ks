@@ -71,6 +71,23 @@
 [resetfont]
 [endmacro]
 
+;[手紙飛鳥]
+[macro name="手紙飛鳥"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+;名前表示消去
+[whosay name=""]
+[cm]
+;機能ボタン消去
+[clearfix]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_asuka.jpg" time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[resetfont]
+[endmacro]
+
 ;[手紙時子]
 [macro name="手紙時子"]
 ;【SE】パラリ(手紙を開く)
