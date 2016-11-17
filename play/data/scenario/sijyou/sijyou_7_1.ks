@@ -21,7 +21,9 @@
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ……）
-[主人公ふぅ閉]
+;↓口：おちょぼ口 [主人公口ふぅ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
+[wait time=10]
 [p]
 ;【SE】時計（控え目カチコチ）
 [playse storage=tokei_hikaeme.ogg loop=false ]
@@ -36,7 +38,10 @@
 「あ、流れ星だわ！」[p]
 *select
 [主人公目閉じ]
-[主人公ポーズ通常]
+;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
+
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 #
 どなたについてお願いしようかしら？
