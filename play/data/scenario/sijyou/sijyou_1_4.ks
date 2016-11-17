@@ -13,6 +13,12 @@
 [r]
 私は磯野に四条家に関する行儀作法について、[r]
 刻々と学習を進めていた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
+
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
@@ -73,6 +79,7 @@
 「お帰り遊ばしましたら、また半刻ほどは、お勉強の時間にさせて [r]
 [sp]いただきたいと考えております。[r]
 [sp]……よろしいでしょうか？」[p]
+[fadeoutbgm time=3000]
 #
 [主人公通常]
 磯野は、古茶の含みのような微笑みで、私をニコリと見つめた。[p]
@@ -92,6 +99,11 @@
 #
 町に出た。[r]
 町は、新しい年を迎え、楽しげに歩く人々で賑わっている。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 そんな店の前には、個性を得た門松達が、行儀よく並んでいた。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
