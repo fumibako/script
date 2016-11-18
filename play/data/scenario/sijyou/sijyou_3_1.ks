@@ -1,39 +1,13 @@
 *test
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+;暗転プリロードサブルーチン
+[call target=*9_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[イベントシーン構築]
-[if exp=tf.test_sijyou==true]
-【！】テストページからはじめます。変数を代入しますか？[p]
-[link target=first]【１】代入しない[endlink][r]
-[link target=test_str]【２】淑女度高め(終了後にもどします)[endlink][r]
-[link target=test_str2]【３】緊急用：淑女度を１(戻しません)[endlink][r]
-[link target=*kaori_sakuhin]【４】背景追加シーンまでスキップ[endlink]
-[s]
-*test_str
-#
-[er]
-元パラを一時変数に退避します[p]
-[eval exp="tf.shukujodo=f.para_shujinkou_shukujodo"] 
-元パラは[emb exp="tf.shukujodo"][r]
-;一時敵に変数に代入
-[eval exp="f.para_shujinkou_shukujodo=200"]
-現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
-@jump target=first
-[s]
-*test_str2
-こちらは途中で回線がきれた場合の緊急用リセットです。[r]
-元パラは[emb exp="f.para_shujinkou_shukujodo"]です[p]
-[eval exp="f.para_shujinkou_shukujodo=1"]
-現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
-[endif]
 ;=================================================================================_
-*seen0
 *first
 [er]
 ;条件:華織の迷いのイベントを一つでも見ている　【全力】の手紙をよんだ後日 夜
@@ -42,8 +16,12 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 ;～～～～～～～～～～～～～～～～～～前章シーンここから～～～～～～～～～～～～～～～～
+[イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+;=================================================================================_
+*seen0
 ;華織様のことを思う主人公。
 ;地の文案2
 ;棚引く雲の中、眩い月の光と影が揺れる。[r]
@@ -1019,10 +997,6 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 私は、お二人の笑顔を見ながらひっそりと考えた。[p]
 ;長いので分けます　
 ;これだけでもイベントになるように絞め言葉を。適当。
-[if exp=tf.test_sijyou==true]
-;元パラを一時変数にからもどす退避
-[eval exp="f.para_shujinkou_shukujodo=tf.shukujodo"] 
-[endif]
 [主人公退場]
 [四条退場]
 ;@jump storage=sijyou/sijyou_3_1b.ks
