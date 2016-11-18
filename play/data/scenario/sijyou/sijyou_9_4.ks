@@ -15,6 +15,7 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[font color=white size=27]
 [プリロード画面消去]
 ;背景変更
 [chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
@@ -25,13 +26,6 @@
 ――お芝居見物に誘われ[r]
 [r]
 歌舞伎『大正座』を訪れることになった。[p]
-[if exp="sf.BGM=='ON'"]
-[stopbgm]
-;スクリプト担：BGM、SEの間隔をすこし長めに取りたかったので指定箇所から移動しています。違和感のある場合は再移動をお願いします
-;【BGM】みちくさ
-[playbgm storage="michikusa.ogg" loop=true]
-[eval exp="f.bgm_storage='michikusa.ogg'"]
-[endif]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [resetfont]
 [wait time=10]
@@ -41,10 +35,17 @@
 [主人公通常]
 [wait time=10]
 [freeimage layer=29 time=0]
-
 [whosay name="華織" color="olivedrab"]
 「本日の演目は『音頭恋寝刃』……」[p]
 [autosave]
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;スクリプト担：BGM、SEの間隔をすこし長めに取りたかったので指定箇所から移動しています。違和感のある場合は再移動をお願いします
+;【BGM】みちくさ
+[playbgm storage="michikusa.ogg" loop=true]
+[eval exp="f.bgm_storage='michikusa.ogg'"]
+[endif]
+
 [主人公目パチ1回]
 #
 桟敷き席に座っていた[名前]は隣に座る華織の様子をみた。[p]
