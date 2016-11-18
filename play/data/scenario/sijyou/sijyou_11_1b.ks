@@ -4,12 +4,6 @@
 ;暗転
 ;[chara_mod name="bg" storage="toumei.gif" time=1500]
 [stopbgm]
-;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
-;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
-;[preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg"]
-;[preload storage="data/fgimage/bg/sijyou_namigaura.jpg"]
-;[preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg"]
-;///////////////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
