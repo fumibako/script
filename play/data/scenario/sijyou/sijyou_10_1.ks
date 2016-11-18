@@ -2,10 +2,6 @@
 ;暗転
 ;[chara_mod name="bg" storage="toumei.gif" time=1500]
 [stopbgm]
-;//////使用背景メモ///////////////////////////////////
-;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
-;//////////////////////////////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
