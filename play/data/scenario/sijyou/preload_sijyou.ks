@@ -11,9 +11,11 @@ $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
 [layopt layer=fix visible=true]
+;ボタンの表示
 [endmacro]
 [return]
-;消去のタイミングは各シナリオで違うのでマクロに。通常は上から呼び出しでサブルーチンファイルを実行等
+;消去のタイミングは各シナリオで違うのでマクロに↑。
+;通常は上から呼び出しで下のサブルーチンファイルを実行等
 ;==================================================
 ;主人公プリロード
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
@@ -86,19 +88,21 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/sijyou/emo_binta.png"]
 [return]
 ;以降は、無駄な読み込みはしない
-=======================================================================================
+;=======================================================================================
+;シナリオから呼び出し共通
+;=======================================================================================
+*commom
 ;//////////////表示準備用プリロード共通//////////////
 ;今は下記ないので個別にtarget呼び出し
 ;[preload storage="data/image/frame_red.png" wait=true]
 ;[layopt layer=29 visible=true]
 ;[layopt layer=fix visible=false]
-;[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 ;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;[wait time=50]
 ;======================================================================================
 ;日付フラグでジャンプ処理。必要なものだけプリロード_字幕のなどの表示があれば下へ
-;今はないので個別にシナリオにて　ここからtarget呼び出してます。
-
+;今はないので個別にシナリオにてtargetで呼び出してます。
 
 ;======================================================================================
 *9_1
@@ -121,6 +125,7 @@ $('.loding_pic1').remove();
 ;///使用背景メモ　必要時に解放///////
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 [return]
+;以降は、無駄な読み込みはしない
 ;======================================================================================
 *9_2
 [macro name="プリロード画面消去"]
@@ -140,6 +145,7 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/bg/bg_omoide.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_flower_hagi.jpg"]
 [return]
+;以降は、無駄な読み込みはしない
 ;======================================================================================
 *9_3
 [macro name="プリロード画面消去"]
@@ -166,6 +172,7 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg]
 [return]
+;以降は、無駄な読み込みはしない
 ;======================================================================================
 *9_4
 [macro name="プリロード画面消去"]
@@ -183,9 +190,10 @@ $('.loding_pic1').remove();
 ;//////////////////使用背景メモ//////////////////
 [preload storage="data/fgimage/bg/bg_prologue.jpg"]
 ;どうしても全画面で文字が表示されない時がある
-;[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
-;[preload storage="data/fgimage/bg/bg_genkan.jpg"]
+[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
+[preload storage="data/fgimage/bg/bg_genkan.jpg"]
 [return]
+;以降は、無駄な読み込みはしない
 ;======================================================================================
 *10_1
 [macro name="プリロード画面消去"]
@@ -202,8 +210,9 @@ $('.loding_pic1').remove();
 [wait time=50]
 ;//////使用背景メモ///////////////////////////////////
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [return]
+;以降は、無駄な読み込みはしない
 ;======================================================================================
 *10_3
 [macro name="プリロード画面消去"]
@@ -224,6 +233,7 @@ $('.loding_pic1').remove();
 ;[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
 ;[preload storage="data/fgimage/bg/room_niwa_yuki.jpg"]
 [return]
+;以降は、無駄な読み込みはしない
 ;==========================================================================
 *11_1
 [macro name="プリロード画面消去"]
@@ -244,7 +254,7 @@ $('.loding_pic1').remove();
 ;[preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg"]
 ;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
 [return]
-;///////////////////////////////////////////////////////
+;以降は、無駄な読み込みはしない
 ;======================================================================================
 *11_2
 [macro name="プリロード画面消去"]
@@ -265,6 +275,7 @@ $('.loding_pic1').remove();
 ;[preload storage="data/fgimage/bg/sijyou_namigaura.jpg"]
 ;[preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg"]
 [return]
+;以降は、無駄な読み込みはしない
 ;==================================================
 *2_1
 [macro name="プリロード画面消去"]
@@ -286,6 +297,7 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
 [preload storage="data/fgimage/bg/sijyou_engawa3.jpg" wait=true]
 [return]
+;以降は、無駄な読み込みはしない
 ;==========================================================================
 *2_1b
 ;//////使用背景メモ　上が実行されればいらない//////////////////////////////
@@ -309,13 +321,14 @@ $('.loding_pic1').remove();
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
 ;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg"]
-;[preload storage="data/fgimage/bg/bg_genkan.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu2.jpg"]
+[preload storage="data/fgimage/bg/bg_genkan.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu2.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg"]
 [return]
+;以降は、無駄な読み込みはしない
 ;==========================================================================
 *3_4
 [macro name="プリロード画面消去"]
@@ -334,15 +347,16 @@ $('.loding_pic1').remove();
 ;桜の表示が遅いと見えない,処理不能の為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [preload storage="data/fgimage/"bg/bg_sakura.jpg"]
+;以降は、無駄な読み込みはしない
 ;==========================================================================
 *3_4_1
 ;グットエンドエピローグ
 
-
+;まだないです
 
 [return]
 ;==========================================================================
-]
+
 
 
 
