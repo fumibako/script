@@ -109,7 +109,7 @@
 ;[歌舞伎小屋前]
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [layopt layer=13 visible=true]
-[image layer=13 name="jyunbi" storage="bg/bg_kabuki_out.jpg" time=100]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_kabuki_out.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [wait time=10]
 ;【登場】四条
@@ -215,9 +215,13 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+
 #
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_kabuki_out.jpg" time=100]
 ;【退場】四条
 [四条退場]
+[freeimage layer=13 time=100]
+[layopt layer=13 visible=true]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;=================================================================================_
@@ -225,9 +229,10 @@
 [autosave]
 ;場面転換 四条と主人公のデート
 ;[商店背景] 銀座とか松坂屋とかでしょうか
+
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[image layer=13 name="jyunbi" storage="bg/B4nFWraU42/ginza3.jpg" time=100]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/ginza3.jpg" time=100]
 #
 目の前に広がる都会的な街並みに思わず息を呑む。[p]
 ;【登場】四条
@@ -308,6 +313,7 @@
 #
 ;【商店店内】
 [chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg" time=1500]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_shop_wazakka.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -315,6 +321,8 @@
 ;[四条ベース着物]　外なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+[freeimage layer=13 time=100]
+[layopt layer=13 visible=true]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
@@ -351,8 +359,11 @@
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_shop_wazakka.jpg" time=1000]
 ;【退場】四条
 [四条退場]
+[freeimage layer=13 time=100]
+[layopt layer=13 visible=true]
 ;////////☆事件の予感 迫り来る悪い奴ら//////
 ;=================================================================================_
 *seen4
@@ -361,12 +372,15 @@
 #
 ;[主人公の家の前]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_genkan.jpg" time=100]
 [主人公通常]
 #
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条微笑み]
+[freeimage layer=13 time=100]
+[layopt layer=13 visible=true]
 ;○デートの終わりに事件が起きる
 ;○妹(弟)が登場する
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
@@ -470,8 +484,11 @@
 「嫌な思いさせてごめん」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、」[p]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_genkan.jpg" time=1000]
 ;【退場】四条
 [四条退場]
+[freeimage layer=13 time=100]
+[layopt layer=13 visible=true]
 ;=================================================================================_
 *seen5
 [autosave]
