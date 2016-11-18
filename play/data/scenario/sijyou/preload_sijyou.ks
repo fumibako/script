@@ -1,3 +1,4 @@
+*start
 *first
 [macro name="プリロード画面消去"]
 [iscript]
@@ -6,6 +7,7 @@ $('.loding_pic1').remove();
 [endscript]
 [endmacro]
 [return]
+;消去のタイミングは各シナリオで違うのでマクロに通常は上から呼び出し等
 ;==================================================
 ;主人公プリロード
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
@@ -84,10 +86,17 @@ $('.loding_pic1').remove();
 ;[preload storage="data/image/frame_red.png" wait=true]
 ;======================================================================================
 ;日付・ジャンプ処理で必要なものだけプリロード_字幕のなどの表示があれば下へ
-;今はないので個別にシナリオにてtarget呼び出し
+;今はないので個別にシナリオにて　ここからtarget呼び出してます。
+
 
 ;======================================================================================
 *9_1
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -98,6 +107,12 @@ $('.loding_pic1').remove();
 [return]
 ;======================================================================================
 *9_2
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -110,6 +125,12 @@ $('.loding_pic1').remove();
 [return]
 ;======================================================================================
 *9_3
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -129,6 +150,12 @@ $('.loding_pic1').remove();
 [return]
 ;======================================================================================
 *9_4
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -142,6 +169,12 @@ $('.loding_pic1').remove();
 [return]
 ;======================================================================================
 *10_1
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -153,6 +186,12 @@ $('.loding_pic1').remove();
 [return]
 ;======================================================================================
 *10_3
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -166,6 +205,12 @@ $('.loding_pic1').remove();
 [return]
 ;==========================================================================
 *11_1
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -180,6 +225,12 @@ $('.loding_pic1').remove();
 ;///////////////////////////////////////////////////////
 ;======================================================================================
 *11_2
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -193,6 +244,12 @@ $('.loding_pic1').remove();
 [return]
 ;==================================================
 *2_1
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -213,6 +270,12 @@ $('.loding_pic1').remove();
 [return]
 ;==========================================================================
 *3_1
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
@@ -230,6 +293,12 @@ $('.loding_pic1').remove();
 [return]
 ;==========================================================================
 *3_4
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
