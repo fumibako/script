@@ -8,12 +8,13 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[プリロード画面消去]
 ;=================================================================================_
 *seen0
 [layopt layer=29 visible=true]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=500]
+[wait time=50]
+[プリロード画面消去]
 [wait time=50]
 ;５０がいいみたい？
 ;メッセージレイヤを全画面用に設定変更
@@ -25,6 +26,7 @@
 ;////////////先に登場させておく////////////
 [四条ベース羽織]
 [四条微笑み]
+[イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
 ;テキスト全画面
@@ -35,7 +37,7 @@
 [resetfont]
 ;////////////先に登場させておく////////////
 [freeimage layer = 29 time=500]
-[イベントシーン構築]
+
 
 #
 ;○四条、主人公の父親を敬う態度で礼容な挨拶を交わす。（四条の公私を分けた態度を表現.主人公には私的な形）
