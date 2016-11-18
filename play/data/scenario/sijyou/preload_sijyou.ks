@@ -1,6 +1,7 @@
 ;==================================================
 ;本当は四条立ち絵を個別に入った時点で読み込みキャッシュ化しておいて
 ;あとは日付で内部ジャンプがしたかったのです
+;今は立ち絵をプリロードしてません
 ;==================================================
 *start
 *first
@@ -95,7 +96,7 @@ $('.loding_pic1').remove();
 ;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;[wait time=50]
 ;======================================================================================
-;日付・ジャンプ処理で必要なものだけプリロード_字幕のなどの表示があれば下へ
+;日付フラグでジャンプ処理。必要なものだけプリロード_字幕のなどの表示があれば下へ
 ;今はないので個別にシナリオにて　ここからtarget呼び出してます。
 
 
@@ -137,7 +138,7 @@ $('.loding_pic1').remove();
 ;///使用背景メモ　必要時に解放///////
 [preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_omoide.jpg" wait=true]
-[preload storage="data/fgimage/bg/B4nFWraU42bg/bg_flower_hagi.jpg"]
+[preload storage="data/fgimage/bg/bg_flower_hagi.jpg"]
 [return]
 ;======================================================================================
 *9_3
