@@ -1,25 +1,5 @@
 ;¥¥¥¥¥¥¥¥イベント2.5お見合い感想手紙¥¥¥¥¥¥¥¥
 ;☆四条からお見合いについての手紙がやってくる。久しぶりに会って見違えたことなど
-;暗転　試しにローディング画面を作ってみました。”実際は変更してください”　上に背景おくと解決する問題もある
-[if exp=tf.test_sijyou==true]
-[stopbgm]
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
-[image name="loding_pic" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-;///使用背景メモ　必要時に解放///////
-;メッセージ表示を早くしたい
-[preload storage="data/image/frame_red.png" wait=true]
-[preload storage="data/fgimage/bg/plane_sakura.jpg" wait=true]
-;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
-;四条が先に表示されてしまったため解放
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
-[preload storage="data/fgimage/bg/bg_garden_isu.jpg" wait=true]
-;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg" wait=true]
-[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg]
-;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg]
-;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg]
-[endif]
 ;///////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -27,11 +7,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;///////////////////////////////
-[iscript]
-$('.loding_pic').remove();
-[endscript]
-;///////////////////////////////
 ;=================================================================================_
 *seen0
 ;【背景】ヒロインの部屋
