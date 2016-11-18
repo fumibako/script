@@ -1,3 +1,7 @@
+;==================================================
+;本当は四条立ち絵を個別に入った時点で読み込みキャッシュ化しておいて
+;あとは日付で内部ジャンプがしたかったのです
+;==================================================
 *start
 *first
 [macro name="プリロード画面消去"]
@@ -85,6 +89,11 @@ $('.loding_pic1').remove();
 ;//////////////表示準備用プリロード共通//////////////
 ;今は下記ないので個別にtarget呼び出し
 ;[preload storage="data/image/frame_red.png" wait=true]
+;[layopt layer=29 visible=true]
+;[layopt layer=fix visible=false]
+;[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+;[wait time=50]
 ;======================================================================================
 ;日付・ジャンプ処理で必要なものだけプリロード_字幕のなどの表示があれば下へ
 ;今はないので個別にシナリオにて　ここからtarget呼び出してます。
@@ -101,9 +110,10 @@ $('.loding_pic1').remove();
 [endscript]
 [layopt layer=fix visible=true]
 [endmacro]
+
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
@@ -120,7 +130,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
@@ -139,7 +149,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
@@ -165,7 +175,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////使用背景メモ//////////////////
@@ -185,7 +195,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////使用背景メモ///////////////////////////////////
@@ -203,7 +213,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
@@ -223,7 +233,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放//////
@@ -244,7 +254,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　///////////////////////////////
@@ -264,7 +274,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ;///////////////////////////////
@@ -291,7 +301,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
@@ -315,7 +325,7 @@ $('.loding_pic1').remove();
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic"layer=29 x=1 y=1 storage=bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic"layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;グットエンド
