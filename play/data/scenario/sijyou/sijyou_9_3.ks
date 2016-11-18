@@ -3,6 +3,8 @@
 ;///////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+;暗転プリロードサブルーチン
+[call target=*9_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -17,6 +19,7 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
 ;//////////////テスト用ジャンプ　いちからみてられっかー/////////////////
 [if exp=tf.test_sijyou==true]
 テストフラグで表示されてます。ジャンプしますか？[r]
