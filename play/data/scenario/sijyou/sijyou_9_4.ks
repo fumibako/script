@@ -1,9 +1,9 @@
 ;¥¥¥¥¥¥¥¥イベント4¥¥¥¥¥¥¥¥
-;/////☆デート2 ターニングポイント/////
-;○歌舞伎座で音頭恋寝刃を鑑賞、伏線とキャラ紹介
-[chara_mod name="bg" storage="toumei.gif" time=1500]
-[stopbgm]
+;/////☆デート2 ターニングポイント○歌舞伎座で音頭恋寝刃を鑑賞、伏線とキャラ紹介/////
 [call target=*start storage="tyrano.ks"]
+;暗転プリロードサブルーチン
+[call target=*9_3 storage="sijyou/preload_sijyou.ks"]
+[stopbgm]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -11,13 +11,18 @@
 ;=================================================================================_
 *seen0
 [wait time=50]
+[プリロード画面消去]
 [テキスト全画面白文字]
+[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+
 ;スクリプト担：↓お稽古パートから歌舞伎見物シーンへ自然につながるような地の文を入れたいのですが、こんな感じで大丈夫でしょうか？
 ;okです
 [sp][r]
 ――お芝居見物に誘われ[r]
 [r]
 歌舞伎『大正座』を訪れることになった。[p]
+
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;スクリプト担：BGM、SEの間隔をすこし長めに取りたかったので指定箇所から移動しています。違和感のある場合は再移動をお願いします
@@ -27,18 +32,18 @@
 [endif]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [resetfont]
-[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
-
+[image layer=29 x=1 y=1 storage="bg/prologue.jpg" time=50]
+[wait time=10]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-[autosave]
+[freeimage layer=29]
+
 [whosay name="華織" color="olivedrab"]
 「本日の演目は『音頭恋寝刃』……」[p]
-
+[autosave]
 [主人公目パチ1回]
 #
 桟敷き席に座っていた[名前]は隣に座る華織の様子をみた。[p]
