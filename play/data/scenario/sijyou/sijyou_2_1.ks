@@ -1,7 +1,4 @@
 *test
-;//////////////準備//////////////
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
-[image name="loding_pic" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [stopbgm]
 ;【華道習いイベント】 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
 [call target=*start storage="tyrano.ks"]
@@ -9,23 +6,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;//////////////準備//////////////
-[preload storage="data/image/frame_red.png" wait=true]
-[preload storage="data/fgimage/girl/S/me_futuu.png"]
-[preload storage="data/fgimage/sijyou/base_kimono.png"]
-[preload storage="data/fgimage/sijyou/base_haori.png"]
-[preload storage="data/fgimage/sijyou/mayu_futuu.png"]
-[preload storage="data/fgimage/sijyou/me_futuu.png"]
-[preload storage="data/fgimage/sijyou/kuti_futuu.png"]
-[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
-[preload storage="data/fgimage/bg/sijyou_engawa3.jpg" wait=true]
-[iscript]
-$('.loding_pic').remove();
-[endscript]
-;//////////////準備//////////////
+
 ;マクロ作成ありがとうございます(スクリプト担
 ;macro_etc.ksに[暗転]マクロを移動
 ;macro_tati_sijyou.ksにkeyframe設定及び[四条アップ][四条サイズ通常]マクロを移動し
