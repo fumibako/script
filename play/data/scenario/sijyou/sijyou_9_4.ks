@@ -108,6 +108,7 @@
 ;外にでる2人
 ;[歌舞伎小屋前]
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
+[layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" storage="bg/bg_kabuki_out.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [wait time=10]
