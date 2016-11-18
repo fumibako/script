@@ -12,8 +12,6 @@
 *seen0
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=500]
 [wait time=50]
@@ -36,28 +34,10 @@
 四条家と[名字]家の見合いが執り行われた。[p]
 [resetfont]
 ;////////////先に登場させておく////////////
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer = 29 time=0]
-;機能ボタン表示
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
 [layopt layer=fix visible=true]
 #
 ;○四条、主人公の父親を敬う態度で礼容な挨拶を交わす。（四条の公私を分けた態度を表現.主人公には私的な形）
