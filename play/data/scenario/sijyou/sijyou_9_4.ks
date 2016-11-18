@@ -81,10 +81,6 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
-;演目中は立ち絵表示無し？
-;[BGMみちくさ] ほんのりギャグテイスト？
-;http://otowabi.com/page/3/?cftsearch%5Bgenre%5D%5B0%5D%5B0%5D=%E5%92%8C%E9%A2%A8&cftsearch_submit=1&_pjax=%23main
 [whosay name="役者 その壱" color=black]
 「これが名高い『波ヶ浦』でございまするぅ～」[p]
 #
@@ -112,6 +108,7 @@
 ;外にでる2人
 ;[歌舞伎小屋前]
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
+[image layer=13 name="jyunbi" storage="bg/bg_kabuki_out.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [wait time=10]
 ;【登場】四条
@@ -119,6 +116,11 @@
 [四条ベース羽織]
 [四条微笑み]
 [wait time=1]
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「堪能いたしました」[p]
@@ -224,12 +226,17 @@
 ;[商店背景] 銀座とか松坂屋とかでしょうか
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[image layer=13 name="jyunbi" storage="bg/B4nFWraU42/ginza3.jpg" time=100]
 #
 目の前に広がる都会的な街並みに思わず息を呑む。[p]
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条微笑み]
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
 [四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「はじめてで緊張する？ 」[p]
