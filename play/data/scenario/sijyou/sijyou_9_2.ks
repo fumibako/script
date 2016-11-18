@@ -1,13 +1,14 @@
 ;¥¥¥¥¥¥¥¥イベント2お見合い9月2週¥¥¥¥¥¥¥¥
 ;☆お見合い。親しい感じで出会う2人 主人公は淑女らしく遠慮がちに 年上の四条に尊敬の意を込める形で//////////////////
-;暗転
-;[chara_mod name="bg" storage="toumei.gif" time=1500]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+;暗転
+[call target=*9_2 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[プリロード画面消去]
 ;=================================================================================_
 *seen0
 [layopt layer=29 visible=true]
