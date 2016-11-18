@@ -2,15 +2,7 @@
 ;スクリプトの作業しやすさの関係から2ファイルに分けていますが、実際は連続再生される予定です
 ;☆主人公の行動
 *start
-;暗転
-;[chara_mod name="bg" storage="toumei.gif" time=1500]
 [stopbgm]
-;///使用背景メモ　ここでは表示遅れはないですが必要時に開放//////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
-;[preload storage="data/fgimage/bg/test_mon.jpg"]
-;[preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg"]
-;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
-;///////////////////////////////////////////////////////
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
