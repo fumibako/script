@@ -1,15 +1,15 @@
 ;¥¥¥¥¥¥¥¥イベント1お見合い決定 9月1週¥¥¥¥¥¥¥¥
 ;☆主人公 選択肢からお見合い相手を決定 決意する主人公 ミッドポイントのはじまり//////////////////
-;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*9_1 storage="sijyou/sijyou/preload_sijyou.ks"]
+[call target=*9_1 storage="sijyou/preload_sijyou.ks"]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
