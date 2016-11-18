@@ -5,9 +5,10 @@
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [return]
-;消去のタイミングは各シナリオで違うのでマクロに通常は上から呼び出し等
+;消去のタイミングは各シナリオで違うのでマクロに。通常は上から呼び出しでサブルーチンファイルを実行等
 ;==================================================
 ;主人公プリロード
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
@@ -91,11 +92,14 @@ $('.loding_pic1').remove();
 
 ;======================================================================================
 *9_1
+;個別に呼び出してますのでいちいちマクロを書いてます。
+;幕の役割なので、消すタイミングはシナリオで決定します　
 [macro name="プリロード画面消去"]
 [iscript]
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -112,6 +116,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -130,6 +135,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -155,6 +161,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -174,6 +181,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -191,6 +199,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -210,6 +219,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -230,6 +240,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -249,6 +260,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -275,6 +287,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -298,6 +311,7 @@ $('.loding_pic1').remove();
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
