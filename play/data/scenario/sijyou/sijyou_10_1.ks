@@ -7,14 +7,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;[macro name=主人公部屋表示準備]
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[image layer=29 storage="bg/room_niwa.jpg"]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-;[endmacro]
 ;/////////////////////////////////////////////////////
 [イベントシーン構築]
 ;まだ深刻ではない
