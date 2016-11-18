@@ -10,16 +10,6 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
-#
-準備中・・・
-;////////////テスト用表示準備　四条/////////
-[preload storage="data/fgimage/sijyou/me_toji.png"]
-[preload storage="data/fgimage/sijyou/base_haori.png"]
-[preload storage="data/fgimage/sijyou/me_futuu.png"]
-[preload storage="data/fgimage/sijyou/base_haori.png"]
-[preload storage="data/fgimage/sijyou/mayu_komari.png"]
-[er]
-準備中・・
 ;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。各ファイルプリロード追記もありがとうございます（スクリプト担
 [er]
 [if exp=tf.test_sijyou==true]
