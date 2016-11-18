@@ -20,28 +20,12 @@
 [主人公通常]
 [wait time=10]
 [プリロード画面消去]
-;//////////////テスト用ジャンプ　いちからみてられっかー/////////////////
-[if exp=tf.test_sijyou==true]
-テストフラグで表示されてます。ジャンプしますか？[r]
-[link target=test_jmp]【１】シーン変更地点からテスト・ミニバラ[endlink][r]
-[link target=*first_seen]【２】はじめからみる[endlink][s]
-[endif]
-*test_jmp
-[clearstack]
-[if exp=tf.test_sijyou==true]
-[er]
-[四条ベース羽織]
-[wait time=10]
-[四条微笑み]
-[wait time=10]
-@jump target=mini_bara
-[endif]
 ;///////////////////////////////
 *first_seen
-[autosave]
 [er]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、四条様からお手紙が届いております」[p]
+[autosave]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
@@ -102,6 +86,7 @@
 ;○四条邸宅の庭
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyouke.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [主人公通常]
 ;テキスト全画面
@@ -202,10 +187,16 @@
 *seen3
 [主人公目パチ1回]
 ;○小さな親戚の子は鬼ごっこやかくれんぼをしている ぶつかりそうになると四条がかばってくれる 賑やかな雰囲気
+;=======================
 ;【登場】四条
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;=======================
 [whosay name="四条 華織" color="olivedrab"]
 「少し、疲れたかい？」[p]
 [whosay name="四条 華織" color="olivedrab"]
@@ -231,23 +222,33 @@
 [四条口開]
 [whosay name="四条 華織" color="olivedrab"]
 「むこうで休もうか」[p]
-;=================================================================================_
-*seen4
-[autosave]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyouke.jpg" time=100]
 ;【退場】四条
 [四条退場]
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;=================================================================================_
+*seen4
 ;地の文などをいれたため、明るいシーン→暗いシーン（華衣）→戻る明るい
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_garden_isu.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
+===================
 ;【登場】四条
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+===================
+
 [whosay name="四条 華織" color="olivedrab"]
 「昔は、兄も弟も海外に留学に出掛けていて、僕だけが家の留守を[r]
 [sp]任されていたんだ。[r]
 [sp]だから文矢と[名前]が遊びにきてくれた時は、とても嬉しかったよ」[p]
+[autosave]
+
 [主人公目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -369,12 +370,9 @@
 [主人公通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
-
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 *mini_bara
-[autosave]
 [er]
-;[暗転]より場面転換でしょうか
 ;【背景】[洋館庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -382,6 +380,7 @@
 ;◎家族ぐるみの付き合いになってきたので四条のことを名前で呼んでいいかきく
 [whosay name="四条 華織" color="olivedrab"]
 「ここには、小さな種類の薔薇が植えてあるんだ」[p]
+[autosave]
 #
 四条様は私の隣にたって、薔薇の名について話しながら、[r]
 出会った頃のように私の髪を撫でる。[p]
@@ -504,14 +503,13 @@
 「えぇ。[r]
 [sp]ただ、昔の[名前]ちゃんが、可愛らしいと記憶しているので、[r]
 [sp]少し時間がかかってしまうかもしれません」[p]
+[autosave]
 [whosay name="四条 華織" color="olivedrab"]
 「ですが、少しずつ[名前]との関係を深めていきましょうか」
 [四条笑顔]
 [p]
 ;記者会見風回避できたかな
 @jump target=*select_2
-
-[autosave]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;[link]タグでの選択肢
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -704,6 +702,7 @@ _　成長しないといけないのだわ)[p]
 ;場面転換
 ;【背景】[薔薇庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_rose_funsui.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/niwa_rose_funsui.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -717,9 +716,13 @@ _　成長しないといけないのだわ)[p]
 [wait time=10]
 ;綺麗な場所か見せてから登場
 ;【登場】四条
-;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+
 [whosay name="華織" color="olivedrab"]
 「[名前]の名前をつけた薔薇を育ててみようかな」[p]
 [四条口開]
@@ -770,6 +773,7 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
 ボートに乗りながらお茶でもしましょう」[p]
+[autosave]
 #
 [主人公退場]
 ;【退場】四条
@@ -778,7 +782,6 @@ _　成長しないといけないのだわ)[p]
 ;場面転換
 ;=================================================================================_
 *seen7
-[autosave]
 ;【SE】水音
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;///////////////////////準備///////////////////
@@ -791,7 +794,6 @@ _　成長しないといけないのだわ)[p]
 ;[四条アップ]は登場いてるときしか使ったことないのでここで準備
 ;【背景】[湖畔]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=100]
-
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [主人公ポーズ通常]
