@@ -326,11 +326,14 @@ $('.loding_pic1').remove();
 [wait time=50]
 [image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
-;///使用背景メモ　必要時に解放///////
-[preload storage="data/fgimage/bg/sijyou_engawa2.png"]
+;/////////////////使用背景メモ　必要時に解放//////////////
+;テスト画像はありません
+;[preload storage="data/fgimage/bg/room_niwa_natu.jpg]
+[preload storage="data/fgimage/bg/sijyou_engawa.jpg"]
+[preload storage="data/fgimage/bg/sijyou_engawa2.jpg"]
+[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;花火画像
 [preload storage="data/fgimage/bg/sijyou_engawa2_1.png" wait=true]
-[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;透明化オンオフ　一緒にしましょう　拡大縮小つけたほうがいい。けど周囲の透過色が目立つ
 [keyframe name="opcy"]
 [frame p=0% opacity="0" scale=0.8]
@@ -341,7 +344,7 @@ $('.loding_pic1').remove();
 [keyframe name="not_opcy"]
 [frame p=100% opacity="0"]
 [endkeyframe]
-
+;/////////////////使用背景メモ　必要時に解放//////////////
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
