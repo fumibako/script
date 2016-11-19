@@ -2,7 +2,7 @@
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 ;暗転プリロードサブルーチン
-[call target=*9_3 storage="sijyou/preload_sijyou.ks"]
+[call target=*3_1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -282,7 +282,7 @@
 [whosay name="磯野" color="dimgray"]
 「すぐにお届けせず、申し訳ありません。[r]
 [sp]奥方となられる方のお部屋に夜分遅く訪ねるわけにもいかず、[r]
-[sp]この不肖、磯野、今お持ちした次第でございます」[p]
+[sp]この[ruby text=ふ]不[ruby text=しょう]肖、磯野、今お持ちした次第でございます」[p]
 ;説明：現在の状況説明と糖度の平均化↓↑
 [主人公照れ目普通]
 [主人公ポーズ片手]
@@ -710,12 +710,18 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;【SE】人々のざわめき（ザワザワ…屋内）
 [playse storage=zawa_room.ogg loop=false ]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+[layopt layer=13 visible=true]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公ポーズ通常]
 [主人公ほほえみ]
 [whosay name="華織" color="olivedrab"]
 [四条ベース羽織]
 [四条微笑み]
+;===四条登場===
+[freeimage layer=13 time=500]
+[layopt layer=13 visible=true]
+;===四条登場===
 「今日は、四条華道展に来てくださってありがとうございます。[r]
 [sp]初日は昼過ぎまでの展示ですが、皆様の目を楽しませることが[r]
 [sp]出来たら幸いです」[p]
@@ -830,9 +836,14 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;転
 壇上での演説後、華織様は、祖母様と祖父様とともに挨拶に来られた。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース羽織]
 [四条真剣]
+;===四条登場===
+[freeimage layer=13 time=500]
+[layopt layer=13 visible=true]
+;===四条登場===
 [主人公ポーズ通常]
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
