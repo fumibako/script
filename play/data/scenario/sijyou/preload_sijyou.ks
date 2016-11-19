@@ -253,7 +253,8 @@ $('.loding_pic1').remove();
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ////////
-[preload storage="data/fgimage/bg/oom_niwa_akarui.jpg"]
+;雪庭使っているからテストではプリロードできない
+[preload storage="data/fgimage/bg/room_niwa_yuki.jpg"]
 ;==================================================
 *2_1
 [layopt layer=29 visible=true]
