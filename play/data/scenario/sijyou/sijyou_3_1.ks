@@ -395,6 +395,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [iscript]
 tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [endscript]
+[resetfont]
 ;～～～～～～～～～～～～～～～シーン主人公準備はじめ～～～～～～～～～～～～～～～～
 ;主人公部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
@@ -403,6 +404,9 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公目閉]
 [wait time=10]
 [freeimage layer=29 time=0]
+;[四条イベントシーン構築]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [layopt layer=fix visible=false]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、そろそろ準備はできたかね？」[p]
