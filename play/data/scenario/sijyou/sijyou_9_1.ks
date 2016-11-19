@@ -10,13 +10,14 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 ;=================================準備============================================
 [プリロード画面消去]
+[四条ボタン表示]
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
