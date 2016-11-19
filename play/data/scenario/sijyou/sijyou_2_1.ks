@@ -15,6 +15,9 @@
 ;(ちなみに古いPCよりスマホの方が動作が軽かったです…動作の軽さはPCかスマホかの違いよりも、性能によるのかもと思いました)
 *start
 [cm]
+;【背景】主人公邸 お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
@@ -31,9 +34,6 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-;【背景】主人公邸 お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;堂に入ったようですね？
 ;(照れる主人公)謙遜すると失礼になるかな
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -104,7 +104,6 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -142,9 +141,11 @@
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……華織様にお会いしたい)[p]
+[layopt layer=fix visible=false]
 [anim name="bg1" top="0" time=3000]
 [wa]
-;anim中セーブ禁止　背景を動かすのは危険なのでimg
+;anim中セーブ禁止
+[layopt layer=fix visible=true]
 #
 私の心に華織様の笑顔が浮かんだ。[p]
 [stopanim name="bg1"]
@@ -154,15 +155,14 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ダメですわ、しっかりしなくては![r]
 [sp]こういう時こそ、華織様の為に淑女として尽力しなければ)[p]
+[layopt layer=fix visible=false]
 ;ラストのそのままで　の逆テーマ↑
 ;〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜シーン 庭の見える部屋：夜 ここまで〜〜〜〜〜〜〜〜〜〜〜〜〜
 #
 [iscript]
 $('.bg1').remove();
 [endscript]
-
 [fadeoutbgm time=3000]
-
 ;〜〜〜〜〜〜〜〜シーン急上昇する心情　キャラ紹介〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 *sijyou_1
 ;背景　和室　床の間のみ
@@ -200,6 +200,7 @@ $('.bg1').remove();
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [freeimage layer=29 time=0]
+[layopt layer=fix visible=true]
 [四条ボタン表示]
 ;=================表示準備おわり========================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -594,9 +595,14 @@ $('.bg1').remove();
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース羽織]
 [四条通常]
+;~===四条登場=====
+[freeimage layer=13 time=800]
+[layopt layer=13 visible=true]
+;====四条登場=====
 [主人公ポーズ指]
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
