@@ -2,6 +2,7 @@
 ;==========================================================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+;個別ルート前の個別イベントなので四条プリロード画面表示
 [call target=*sansaku6 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
