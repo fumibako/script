@@ -249,10 +249,10 @@ $('.loding_pic1').remove();
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放//////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
-;[preload storage="data/fgimage/bg/test_mon.jpg"]
-;[preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg"]
-;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
+[preload storage="data/fgimage/bg/test_mon.jpg"]
+[preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg" wait=true]
 [return]
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
