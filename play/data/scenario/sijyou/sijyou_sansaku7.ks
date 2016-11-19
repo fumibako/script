@@ -1,33 +1,22 @@
 ;期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
-;///////////////準備////////////////
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1500]
-[image name="loding_pic" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+;特別イベントなので四条プリロード画面表示
+[call target=*sansaku7 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;桜の表示が遅いと見えない為プリロード
-[preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
-[preload storage="data/fgimage/bg/plane_sakura.jpg"]
-[preload storage="data/image/frame_red.png" wait=true]
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
-;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。↓同時に表示の試みもありがとうございます（スクリプト担
-;///////////////準備////////////////
-[iscript]
-$('.loding_pic').remove();
-[endscript]
-;///////////////////////////////
 ;////////////////シーンここから////////////////
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[イベントシーン構築]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[四条ボタン表示]
 ; 起 　散策　家が近いのでたまたま出会う。事件もおわって親の許可も得ているので
 ;場所　いつもの町中
 ;季節描写　春
