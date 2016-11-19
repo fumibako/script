@@ -625,13 +625,14 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=1000]
 ;[寂れた邸宅]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_mon.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [er]
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
-;[四条通常]
 [四条真剣]
+[wait time=10]
 ;==================
 ;四条登場
 [freeimage layer=13 time=1000]
