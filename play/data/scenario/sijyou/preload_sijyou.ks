@@ -96,7 +96,6 @@
 [preload storage="data/fgimage/sijyou/emo_hohosome.png"]
 ;[四条ビンタ]
 [preload storage="data/fgimage/sijyou/emo_binta.png"]
-[return]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
