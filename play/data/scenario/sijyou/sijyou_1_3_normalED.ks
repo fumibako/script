@@ -73,6 +73,7 @@
 ;¥¥¥¥¥¥¥¥イベント7¥¥¥¥¥¥¥¥ここの中盤で　さん　呼びなのね　もう忘れてたよ・・・
 ;=================================================================================_
 *seen2
+[layopt layer=fix visible=false]
 ;【SE】鳥たち（複数の鳥の声）　適当なSEで合間を誤魔化す
 [playse storage=tori_yatyou.ogg loop=false ]
 [image layer=29 x=1 y=1 storage="bg/bg_ryoutei.jpg" time=500]
@@ -94,6 +95,7 @@
 [主人公目パチ1回]
 [wait time=10]
 [freeimage layer=29 time=500]
+[layopt layer=fix visible=true]
 ;==========表示準備完了==============
 [whosay name="華織" color="olivedrab"]
 「お[ruby text=と]父[ruby text=う]義様には、許可をもらって来られましたか？」[p]
