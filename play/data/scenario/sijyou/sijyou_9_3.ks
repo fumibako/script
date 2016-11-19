@@ -9,6 +9,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[layopt layer=13 visible=true]
 ;=================================================================================_
 *seen0
 ;【背景】ヒロインの部屋
