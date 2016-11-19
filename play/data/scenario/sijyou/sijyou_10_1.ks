@@ -1,8 +1,8 @@
 ;¥¥¥¥¥¥¥¥イベント☆障害のはじまり 心の暗闇 手紙が帰ってこなくなる¥¥¥¥¥¥¥¥
-;暗転
-;[chara_mod name="bg" storage="toumei.gif" time=1500]
-[stopbgm]
 [call target=*start storage="tyrano.ks"]
+[stopbgm]
+;暗転プリロードサブルーチン
+[call target=*10_1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -14,6 +14,7 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
 ;信じようと悩み無理をしている表情
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
