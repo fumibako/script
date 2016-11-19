@@ -272,6 +272,19 @@ $('.loding_pic1').remove();
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;==================================================
+*1_4
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
+;[preload storage="data/fgimage/bg/room_niwa.jpg"]
+;[preload storage="data/fgimage/bg/bg_machi.jpg"]
+@jump target=end_sub
+;[return]へGO
+;以降は、無駄な読み込みはしない
+;==================================================
 *2_1
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
