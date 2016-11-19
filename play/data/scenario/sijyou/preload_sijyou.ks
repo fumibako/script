@@ -1,13 +1,12 @@
 ;==================================================
-;本当は四条立ち絵を個別に入った時点で読み込みキャッシュ化しておいて
-;あとは日付で内部ジャンプがしたかったのです
-;今は立ち絵をプリロードしてません
-;==================================================
 *start
+;◇プリロードサブルーチン 主人公表示までの幕の役割
+;targetで呼び出し方法
+;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;==================================================
 *first
 ;==================================================
-;主人公プリロード
+;主人公プリロード　未使用です
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 ;==================================================
 *p_syujinkou
@@ -20,15 +19,65 @@
 [preload storage="data/fgimage/girl/S/me_fusi1.png"]
 [preload storage="data/fgimage/girl/S/kuti_futuu.png"]
 ;[return]
-;==================================================
+;=======================================================================================
+;・・・・・・・シナリオから呼び出し共通　;あとは日付で内部ジャンプがしたかったのです
+;=======================================================================================
+*commom
+;//////////////表示準備用プリロード共通//////////////
+;今は下記ないので個別にtarget呼び出し
+;[preload storage="data/image/frame_red.png" wait=true]
+;[layopt layer=29 visible=true]
+;機能ボタン消去
+;[clearfix]すると再構築に影響あると怖いのでしてません
+;[layopt layer=fix visible=false]
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+;[wait time=50]
+;======================================================================================
+;日付フラグでジャンプ処理。必要なものだけプリロード_mtextなど字幕のなどの表示があれば下へ
+;今はないので個別にシナリオにてtargetで呼び出してます。※１　スタックたまるので、このままでいいかも？
+
+
+
+
+;◇プリロードサブルーチン　targetで呼び出し方法
+;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
+;======================================================================================
+*9_1
+;個別に呼び出してますのでいちいちマクロを書いてます。※１
+;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します　
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 zindex=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[wait time=50]
+[image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///使用背景メモ　必要時に解放///////
+[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
+@jump target=end_sub
+;[return]へGO
+;以降は、無駄な読み込みはしない
+;======================================================================================
+*9_2
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///使用背景メモ　必要時に解放///////
+[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_omoide.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_flower_hagi.jpg"]
+;@jump target=end_sub
+;=========================================================================================
+;四条立ち絵を個別に入った時点で読み込みキャッシュ化しておく? 他で読み込みされる場合はjumpを実行
 ;四条プリロード
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-;==================================================
+;=========================================================================================
 *sijyou
 [preload storage="data/fgimage/sijyou/base_kimono.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
-;=====================================================
-*sijyou2
 ;[四条眉通常]
 [preload storage="data/fgimage/sijyou/mayu_futuu.png"]
 ;[四条眉下げ]
@@ -77,54 +126,6 @@
 ;[四条ビンタ]
 [preload storage="data/fgimage/sijyou/emo_binta.png"]
 [return]
-;以降は、無駄な読み込みはしない
-;=======================================================================================
-;・・・・・・・シナリオから呼び出し共通
-;=======================================================================================
-*commom
-;//////////////表示準備用プリロード共通//////////////
-;今は下記ないので個別にtarget呼び出し
-;[preload storage="data/image/frame_red.png" wait=true]
-;[layopt layer=29 visible=true]
-;機能ボタン消去
-;[clearfix]すると再構築に影響あると怖いのでしてません
-;[layopt layer=fix visible=false]
-;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-;[wait time=50]
-;======================================================================================
-;日付フラグでジャンプ処理。必要なものだけプリロード_mtextなど字幕のなどの表示があれば下へ
-;今はないので個別にシナリオにてtargetで呼び出してます。※１　スタックたまるので、このままでいいかも？
-
-;◇プリロードサブルーチン　targetで呼び出し方法
-;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
-;======================================================================================
-*9_1
-;個別に呼び出してますのでいちいちマクロを書いてます。※１
-;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します　
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 zindex=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[wait time=50]
-[image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;///使用背景メモ　必要時に解放///////
-[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
-@jump target=end_sub
-;[return]へGO
-;以降は、無駄な読み込みはしない
-;======================================================================================
-*9_2
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;///使用背景メモ　必要時に解放///////
-[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-[preload storage="data/fgimage/bg/bg_omoide.jpg" wait=true]
-[preload storage="data/fgimage/bg/bg_flower_hagi.jpg"]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
