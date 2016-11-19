@@ -29,12 +29,14 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 [resetfont]
 [wait time=10]
-[イベントシーン構築]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [freeimage layer=29 time=0]
+;==========================================================================
+[四条ボタン表示]
 [whosay name="華織" color="olivedrab"]
 「本日の演目は『音頭恋寝刃』……」[p]
 [autosave]
@@ -45,7 +47,6 @@
 [playbgm storage="michikusa.ogg" loop=true]
 [eval exp="f.bgm_storage='michikusa.ogg'"]
 [endif]
-
 [主人公目パチ1回]
 #
 桟敷き席に座っていた[名前]は隣に座る華織の様子をみた。[p]
