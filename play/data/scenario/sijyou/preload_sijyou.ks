@@ -5,9 +5,15 @@
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;==================================================
 *first
+;どこかで先に読見込んでいただけると助かります
 ;プリロード画面自体のプリロード
 [preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
 [preload storage="data/fgimage/bg_kinari_sakura.jpg" wait=true]
+[preload storage="data/fgimage/bg_kinari_sakura.jpg" wait=true]
+;バックログ・セーブロード画面のためのプリロード
+[preload storage="data/fgimage/bg/plane_mizuiro.jpg" wait=true]
+[preload storage="data/fgimage/bg/plane_sakura.jpg" wait=true]
+[preload storage="data/fgimage/bg/plane_wakakusa.jpg" wait=true]
 [return]
 ;以降は、無駄な読み込みはしない
 ;=======================================================================================
