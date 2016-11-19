@@ -718,7 +718,7 @@ $('.bg1').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (よかった……)[p]
 ;主人公微笑み 指 か 主人公横目 口微笑み 指
-[主人公退場]
+[主人公目閉]
 [fadeoutbgm time=3000]
 ;戻す
 #
@@ -796,7 +796,6 @@ $('.bg1').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (昔の私……)[p]
 [四条退場]
-[主人公退場]
 [chara_mod name="bg" storage="toumei.gif"]
 ;効果セピア
 [iscript]
@@ -848,7 +847,6 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
-
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
@@ -896,9 +894,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [sp]私も集中しないと)[p]
 ;(集中しないと)[p]
 ;華族が働いている感じるな～
-[主人公退場]
+[主人公目閉]
 #
-
 *sijyou_5
 [autosave]
 [er]
@@ -912,7 +909,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[主人公ポーズ通常]
 [主人公通常]
 [四条ベース羽織]
 [四条通常]
@@ -1024,14 +1020,13 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公笑顔]
 「はい！」[p]
 ;いいですね！
-[主人公退場]
+[主人公目閉]
 [四条退場]
 [暗転]
 ;退場のあとのほうが安定しているかも
 [四条サイズ通常]
 ;=============================================================================_
 *kyousitu_zentai
-
 [er]
 ;【背景】　和室広め　赤っぽく
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
@@ -1062,7 +1057,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;～～～～～～～～とりあえず　ここまで背景あったら描写書くかも～～～～～～～～～～～～～～～～～～～
 #
 *sijyou_6
-[autosave]
 ;[暗転] 暗転かつづくでもいい
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;背景　床の間のみ表示　夕方バージョン
@@ -1082,6 +1076,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 花を丁寧に扱う、その様は……[r]
 やはり"憧れの人"といった印象、そのままであった。[p]
+[autosave]
 ;花を丁寧に扱う、その様は、憧れの人の印象、そのままであった。[p]
 ;自身だけ、釣り合っていない取り残された感
 [whosay name=&sf.girl_namae color="#cf5a7f"]
