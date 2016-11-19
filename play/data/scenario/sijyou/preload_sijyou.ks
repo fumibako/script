@@ -219,18 +219,23 @@ $('.loding_pic1').remove();
 [iscript]
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
+[機能ボタン表示]
 [endscript]
 [layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
+;機能ボタン消去
 [layopt layer=fix visible=false]
+[機能ボタン消]
+;機能ボタン消去
+[eval exp="sf.FButton='OFF'"]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
-;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg"]
-;[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
+[preload storage="data/fgimage/bg/room_niwa.jpg"]
+[preload storage="data/fgimage/bg/room_niwa_yoru.jpg"]
+[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
 ;[preload storage="data/fgimage/bg/room_niwa_yuki.jpg"]
 [return]
 ;以降は、無駄な読み込みはしない
