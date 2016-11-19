@@ -478,7 +478,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[四条口開]
 [sp]お父様は、いらしゃられますか？」[p]
 [whosay name="華衣の婚約者の母"]
-「[ruby text=あの]旦[ruby text=ひと]那も、もう歳ゆえに他界してまして……」[p]
+「[ruby text=あの]旦[ruby text=ひと]那も、[ruby text=とし]歳ゆえに他界してまして……」[p]
 [四条困り]
 [whosay name="質屋"]
 「すみませーん、こちらも持っていきますよー」[p]
@@ -619,6 +619,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [endif]
 *common_2
 ;[暗点]
+#
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="f.haikei_credit=''"]
 ・・・・・・
