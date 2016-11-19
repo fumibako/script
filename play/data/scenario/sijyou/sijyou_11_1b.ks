@@ -387,10 +387,10 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 [whosay name="四条家祖父"]
 『あんな片田舎に行かせるものか！　』[p]
 [whosay name="四条家祖父"]
-『もともとは、お情けの婚約者候補だ』[p]
-#
-…………[wait time=1500][er]
-
+『もともとは、お情けの婚約者候補だ。[r]
+[sp]華織、いくらお前の頼みでもそれはできない。　……それに相手側にも[r]
+[sp]お情けと噂されて、[ruby text=ご]御迷惑が掛かる』[p]
+;実は華織と話していた～という改変
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;【登場】四条
 [四条ベース羽織]
