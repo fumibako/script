@@ -93,9 +93,11 @@
 ;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;[wait time=50]
 ;======================================================================================
-;日付フラグでジャンプ処理。必要なものだけプリロード_字幕のなどの表示があれば下へ
+;日付フラグでジャンプ処理。必要なものだけプリロード_mtextなど字幕のなどの表示があれば下へ
 ;今はないので個別にシナリオにてtargetで呼び出してます。※１　スタックたまるので、このままでいいかも？
 
+;◇プリロードサブルーチン　targetで呼び出し方法
+;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;======================================================================================
 *9_1
 ;個別に呼び出してますのでいちいちマクロを書いてます。※１
@@ -244,14 +246,16 @@ $('.loding_pic1').remove();
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;==================================================
+*1_1
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;////////////使用背景メモ////////
+[preload storage="data/fgimage/bg/oom_niwa_akarui.jpg"]
+;==================================================
 *2_1
-[macro name="プリロード画面消去"]
-[iscript]
-$('.loding_pic').remove();
-$('.loding_pic1').remove();
-[endscript]
-[layopt layer=fix visible=true]
-[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
