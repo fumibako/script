@@ -25,7 +25,7 @@
 [sp][r]
 ――お芝居見物に誘われ[r]
 [r]
-歌舞伎『大正座』を訪れることになった。[p]
+歌舞伎『大正座』を訪れることになった。
 [call target=*start storage="macro_tati_sijyou.ks"]
 [resetfont]
 [wait time=10]
@@ -34,6 +34,7 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[p]
 [freeimage layer=29 time=0]
 ;==========================================================================
 [四条ボタン表示]
