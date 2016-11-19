@@ -379,14 +379,11 @@ $('.bg1').remove();
 「お二人とも、こちらに来て下さい」[p]
 #
 [四条退場]
-[主人公退場]
+[主人公目閉]
 
 ;〜〜シーン廊下 先生の退場と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～
 *sijyou_1_1
-[autosave]
 [暗転]
-[主人公ポーズ通常]
-[主人公通常]
 [主人公憂い]
 先生は、様子を[ruby text=いぶか]訝しむ生徒達に[ruby text=ひと]一[ruby text=こと]言、謝ると私達を廊下に連れ出した。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
@@ -404,6 +401,7 @@ $('.bg1').remove();
 [whosay name=華道の先生 color=%mp.color]
 「四条様、申し訳ございません。[r]
 [sp]私、急な呼び出しで、出ないといけなくなりまして」[p]
+[autosave]
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 「お気になさらないで下さい。 そのような事は、よくある事です」[p]
@@ -795,6 +793,7 @@ $('.bg1').remove();
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (昔の私……)[p]
+[主人公目閉]
 [四条退場]
 [chara_mod name="bg" storage="toumei.gif"]
 ;効果セピア
@@ -1021,6 +1020,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「はい！」[p]
 ;いいですね！
 [主人公目閉]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [四条退場]
 [暗転]
 ;退場のあとのほうが安定しているかも
@@ -1061,7 +1062,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;背景　床の間のみ表示　夕方バージョン
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_kyousitu1_yuu.jpg" time=1000]
+[layopt layer=13 visible=true]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_kyousitu1_yuu.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公横目]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
