@@ -4,6 +4,8 @@
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+;暗転プリロードサブルーチン
+[call target=*9_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -12,20 +14,16 @@
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
-[if exp=tf.test_sijyou==true]
-テストフラグで表示されています。[r]
-[link target=seen0]はじめから[endlink][r]
-[link target=seen7]シーン追加から[endlink]
-[s]
-[endif]
-*seen0
-[er]
-#
-兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
-;兄のはからいで料亭にやってきた私は、会うべき"とある人物"を待っていた。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
+[主人公目閉]
+*seen0
+[er]
+[プリロード画面消去]
+#
+兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
+;兄のはからいで料亭にやってきた私は、会うべき"とある人物"を待っていた。[p]
 [wait time=10]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -34,6 +32,7 @@
 [endif]
 [autosave]
 [whosay name="華織" color="olivedrab"]
+[主人公目通常]
 「文矢、相談したいことってなんだい？　僕は、今、あまり……」[p]
 ;兄が呼ぶのはokなの？（イラ）感があるので修正
 [whosay name=文矢 color="#538a8a"]
