@@ -1,9 +1,9 @@
 ﻿*test
-;顔グラフィック等プリロード
-[iscript]
-f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/mayu_futuu.png","data/fgimage/girl/S/mayu_komari.png","data/fgimage/girl/S/me_fusi1.png","data/fgimage/girl/S/me_futuu.png","data/fgimage/girl/S/kuti_futuu.png","data/fgimage/message_bg/frame_red.png","data/fgimage/bg/room_niwa.jpg"];
-[endscript]
-[preload storage=&f.preload_images_test wait=true]
+;顔グラフィック等プリロード→first.ksに追加したためこちらはコメントアウト
+;[iscript]
+;f.preload_images_test = [];
+;[endscript]
+;[preload storage=&f.preload_images_test wait=true]
 
 ;=============================================
 ;test
@@ -15,7 +15,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [wait time=10]
 [ptext text="複数ルートシナリオを含む共通イベント用テスト画面です" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
 [ptext text="ご自由に編集してお使いください" layer=26 size=17 x=100 y=45 color=darkslateblue]
-;[ptext text="" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext text="また、複数ルートに関わらない共通イベントは各ライターさんのテストファイルにご記載ください" layer=26 size=17 x=100 y=65 color=darkslateblue]
 ;[ptext text="作業中＝　" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
 [glink target="test01" text="5月1週「磯野に相談」" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
