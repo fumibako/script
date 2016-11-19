@@ -1,8 +1,5 @@
 *test
 ;/////////////////////////ここからテスト用の準備///////////////////////////////
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-;暗転ではなくてローディング用の画面があるといいかもしれません　ここはテスト用です
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
