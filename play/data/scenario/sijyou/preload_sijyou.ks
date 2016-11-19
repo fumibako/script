@@ -219,8 +219,8 @@ $('.loding_pic1').remove();
 [iscript]
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
-[機能ボタン表示]
 [endscript]
+[機能ボタン表示]
 [layopt layer=fix visible=true]
 [endmacro]
 [layopt layer=29 visible=true]
