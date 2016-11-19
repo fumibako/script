@@ -1,15 +1,24 @@
 ;¥¥¥¥¥¥¥¥イベント5.5手紙イベント¥¥¥¥¥¥¥¥
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+;暗転プリロードサブルーチン
+[call target=*10_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+;===========================================================
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
-;考える、迷う→暗闇→夜になってますが夜に家令が入ってきてもいいのかな
-;スクリプト担：たしかに夜に入ってくるのはちょっと違和感がありますね。一旦暗転→昼背景に変更で、悩んだまま夜が更け、朝に手紙が届く感じの演出を加えてみましたが、いかがでしょうか？
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
+[主人公困り]
+[wait time=10]
+[プリロード画面消去]
+;===========================================================
 #
 手紙が来なくなって数日。[p]
 *seen0
@@ -18,13 +27,6 @@
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
 [endif]
-
-[主人公ポーズ通常]
-[wait time=10]
-[主人公通常]
-[wait time=10]
-[主人公困り]
-[wait time=10]
 [主人公伏目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
