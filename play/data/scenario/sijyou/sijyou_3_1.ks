@@ -376,12 +376,17 @@
 [playse storage=tori_mejiro.ogg loop=false ]
 [chara_mod name="bg" storage="toumei.gif" time=10]
 ;～～～～～～～～～～～～～～～～～～前章シーンおわり～～～～～～～～～～～～～～～～
+[layopt layer=fix visible=false]
 ;テキスト全面表示
-[テキスト全画面白文字]
 ;一時的に行間多く
 [iscript]
 tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [endscript]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[font color=white size=27]
 [sp]――後日。[r]
 [sp]庭の沈丁花が香る、暖かな昼どき。[r]
 [sp]父と私は、華織様にお誘いを頂いた『四条華道展』に[r]
@@ -394,13 +399,16 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;主人公部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公目閉]
+[wait time=10]
+[freeimage layer=29 time=0]
+[layopt layer=fix visible=false]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、そろそろ準備はできたかね？」[p]
 ;～～～～～～～～淑女度低い～～～～～～～～
 [if exp="f.para_shujinkou_shukujodo<200"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ポーズ通常]
 [主人公通常]
 [主人公口ほほえみ]
 「はい。大丈夫です！」[p]
@@ -512,11 +520,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [fadeoutbgm time=3000]
 #
 ;～～～～～～～～～～～～～シーン主人公準備おわり～～～～～～～～～～～～～～～～
-[主人公退場]
+[主人公目閉]
 ;～～～～～～～～～～～～～シーン華道展はじまり～～～～～～～～～～～～～～～～
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-[主人公ポーズ通常]
 [主人公通常]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
@@ -653,7 +660,6 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 @jump target=*common6
 [endif]
 #
-それ以外の場合は華道パラ[p]
 [if exp="f.para_shujinkou_j_kadou >= 100"]
 ;～～～華道パラが高い場合～～[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -697,13 +703,14 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=四条祖母 color=%mp.color]
 「ありがとうございます。また後でお会いしましょう」[p]
 #
-[主人公退場]
+[主人公目閉じ]
 *sijyou_1
 ;～～～～～～シーン壇上。イベントの趣旨、プレイヤーの勝利～～～～～～～～～
 ;↓［全画面～］タグの関係か華織立ち絵の表示が不安定なため再度マクロをコールしてみます(スクリプト担
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[主人公通常]
 #
 しばらく、展示作品に愉しんでいると、華織様が他の華道名士達と[r]
 共に壇上に現れた。[p]
@@ -714,7 +721,6 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[主人公ポーズ通常]
 [主人公ほほえみ]
 [whosay name="華織" color="olivedrab"]
 [四条ベース羽織]
@@ -824,7 +830,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [四条微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、華織様は、これからは、きっと大丈夫ですね)[p]
-[主人公退場]
+[主人公目閉]
 [四条退場]
 ;～～～～～～～～～～シーン・旦那になるものとしての男、四条華織と父の会話～～～～～～～～～～～～
 ;=================================================================================_
@@ -839,14 +845,13 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[主人公通常]
 [四条ベース羽織]
 [四条真剣]
 ;===四条登場===
 [freeimage layer=13 time=500]
 [layopt layer=13 visible=true]
 ;===四条登場===
-[主人公ポーズ通常]
-[主人公通常]
 [whosay name="華織" color="olivedrab"]
 「[名字]様、先日は、文矢さんと[名前]さんのお陰で助かりました。[r]
 [sp]ご子息、子女に、ご迷惑をおかけして申し訳ありませんでした」[p]
