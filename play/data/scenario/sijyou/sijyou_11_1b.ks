@@ -27,7 +27,6 @@
 ;【SE】荒波（海）
 [playse storage=mizu_umi_aranami.ogg loop=true]
 ;こちらはループSEになります。SEフェードアウトやSE停止タグとセットでお使いください
-
 [chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [四条イベントシーン構築]
@@ -45,7 +44,7 @@
 [四条真剣]
 [四条口驚き]
 ;=============================
-[freeimage layer=29 time=1000]
+[freeimage layer=29 time=800]
 [layopt layer=fix visible=true]
 ;=============================
 [layopt layer=fix visible=true]
@@ -90,7 +89,7 @@
 押し付けられるくらいなら！」[p]
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
-「華衣、僕がこんなこというのは、おこがましいけれど」[p]
+「[華衣]、僕がこんなこというのは、おこがましいけれど」[p]
 ;おこがましいですが、眉間に皺よってる感じの表情がほしいです。
 ;四条目通常
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
@@ -158,7 +157,7 @@
 「うそ」[p]
 [四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
-「行ってきたんだ。嘘かどうかは読めばわかる」[p]
+「行ってきたんだ。[sp]嘘かどうかは読めばわかる」[p]
 [whosay name="華衣" color=%mp.color]
 「な、なんで……そんなことまで……」[p]
 ;=================================================================================_
@@ -169,7 +168,7 @@
 [主人公口ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「[華衣]さん、お手紙をどうぞ。想いが綴られてます」[p]
+「[華衣]さん、お手紙をどうぞ。[sp]想いが綴られてます」[p]
 ;【SE】紙に触れる（スッ）　どちらでもおｋ
 ;[playse storage=paper_su.ogg loop=false ]
 ;【SE】衣擦れ（スッ）
@@ -208,7 +207,9 @@
 [sp]どうか悲しまないでほしい[r]　
 [sp]私は[華衣]に　幸せな思い出が訪れる日を楽しみにしています。」[p]
 [手紙読了] 
+
 ;======四条表示======
+[layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_namigaura.jpg" time=100]
 ;【登場】四条
 [四条ベース羽織]
