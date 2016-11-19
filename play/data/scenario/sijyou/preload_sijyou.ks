@@ -357,6 +357,24 @@ $('.loding_pic1').remove();
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
+*sansaku7
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[wait time=50]
+[image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;/////////////////使用背景メモ　必要時に解放//////////////
+;桜の表示が遅いと見えない為プリロード
+[preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
+[preload storage="data/fgimage/bg/plane_sakura.jpg"]
+[preload storage="data/image/frame_red.png" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
+@jump target=end_sub
+;[return]へGO
+;以降は、無駄な読み込みはしない
+;======================================================================================
 *end_sub
 ;全てはここにGoします
 ;==========================================================================
