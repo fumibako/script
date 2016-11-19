@@ -2,65 +2,39 @@
 ;/////////////////////////ここからテスト用の準備///////////////////////////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+;暗転プリロードサブルーチン
+[call target=*3_1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[イベントシーン構築]
-;マクロ作成ありがとうございました。macro_tati_girl.ksへ移動しました。各ファイルプリロード追記もありがとうございます（スクリプト担
-[er]
-[if exp=tf.test_sijyou==true]
-【！】テストページからはじめます。変数を代入しますか？[p]
-[link target=first]【１】代入しない[endlink][r]
-[r]
-[link target=test_str]【２】淑女度高め(終了後にもどします)[endlink][r][r]
-[link target=test_str2]【３】緊急用：淑女度を１(戻しません)[endlink][s]
-*test_str
-[er]
-元パラを一時変数に退避します[p]
-[eval exp="tf.shukujodo=f.para_shujinkou_shukujodo"]
-元パラは[emb exp="tf.shukujodo"][r]
-;一時敵に変数に代入
-[eval exp="f.para_shujinkou_shukujodo=200"]
-現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
-@jump target=first
-[s]
-*test_str2
-こちらは途中で回線がきれた場合の緊急用リセットです。[r]
-元パラは[emb exp="f.para_shujinkou_shukujodo"]です[p]
-[eval exp="f.para_shujinkou_shukujodo=1"]
-現在の淑女度は[emb exp="f.para_shujinkou_shukujodo"]です[p]
-[endif]
+[プリロード画面消去]
 ;//////////////////////////////ここまでテスト用///////////////////////////////////
 *first
-[er]
-;////////////表示準備/////////
-;文矢との選択肢表示↓　選択肢での表示遅れ防止
-[preload storage="data/fgimage/bg/plane_sepia.jpg"]
-;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-;///////////////////////////////
-;～～～～～～～～～～～～～シーン料亭～～～～～～～～～～～～～～～～～
-;【テキスト全画面】黒茶・和紙風背景に白文字
+;～～～～～～～～～～～～～シーン料亭　表示準備～～～～～～～～～～～～～～～～～
+;【テキスト全画面】茶・和紙風背景に白文字
 [wait time=50]
-[テキスト全画面白文字]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-;華道展を終わらせ(昼過ぎまで)祖父母にまかせた？
-;イベント別にしてもいいかも？
+[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+;料亭
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[font color=white size=27]
 その後、華織様が用意された食事の場で、[r]
 四条家と[名字]家で食事することとなった。[p]
 ;華道展から食事の流れ思いつかない　終わりまで家族を待たせるわけにもいかないし
 [call target=*start storage="macro_tati_sijyou.ks"]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-[イベントシーン構築]
-;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[四条イベントシーン構築]
 [四条ベース着物]
 [四条通常]
 [主人公ポーズ通常]
 [主人公通常]
+[wait time=10]
+[freeimage layer=29 time=0]
+[四条ボタン表示]
+;==========================================================================
 #
 ;再度,ご迷惑をおかけしたことを詫びる四条家[p]
 [whosay name="四条父" color="#9B608B"]
@@ -440,6 +414,8 @@
 [主人公目閉じ]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryouotei_yuu.jpg"]
+[layopt layer=13 visible=true]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryouotei_yuu.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 #
 そうして、華織様のおかげで席は埋まり、本来の四条家と[名字]家の家族が[r]
@@ -466,6 +442,10 @@
 ;[四条汗]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
 [wait time=10]
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
 ;～～～～～～～～～～～～～～～シーン個性的な兄弟～～～～～～～～～～～
 [whosay name="華織" color="olivedrab"]
 「文矢、[名前]さん。[r]
@@ -896,16 +876,15 @@
 「はい」[p]
 [主人公退場]
 [四条退場]
-;疲れた、難しい
 ;=================================================================================_
 *seen8
-[autosave]
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 華織様に誘われた私は、庭へと赴いた。[p]
 ;【背景】庭園
+[image layer=29 name="jyunbi" left=1 top=1 storage="bg/bg_teien_ishidatami_yuu.jpg" time=100]
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami_yuu.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 ;結
@@ -917,6 +896,8 @@
 [主人公ポーズ通常]
 [主人公目閉]
 [主人公通常]
+[freeimage layer=29 time=700]
+;表示準備
 [whosay name="華織" color="olivedrab"]
 「ふぅ……空気がすっかり春の香りになりましたね」[p]
 ;労うのはプレイヤーではなく攻略キャラであるので修正
@@ -925,9 +906,9 @@
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね。 暖かな空気に花の香りが混じっている気がします」[p]
+[autosave]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。[ruby text=み]美[ruby text=はな]華に助言をしてくれて、ありがとう」[p]
 [主人公目閉じ]
@@ -1262,10 +1243,6 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 *seen10
 [イベントシーン終了]
 
-[if exp=tf.test_sijyou==true]
-;元パラを一時変数からもどす
-[eval exp="f.para_shujinkou_shukujodo=tf.shukujodo"] 
-[endif]
 
 @jump storage="test_sijyou.ks"
 [s]
