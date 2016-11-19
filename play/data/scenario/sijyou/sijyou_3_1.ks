@@ -407,7 +407,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;[四条イベントシーン構築]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[layopt layer=fix visible=false]
+[layopt layer=fix visible=true]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]、そろそろ準備はできたかね？」[p]
 ;～～～～～～～～淑女度低い～～～～～～～～
