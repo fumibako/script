@@ -22,10 +22,7 @@
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;[macro name=主人公部屋・主人公表示]
-[freeimage layer=29 time=1000]
 [layopt layer=fix visible=true]
-;[endmacro]
 [主人公伏目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
