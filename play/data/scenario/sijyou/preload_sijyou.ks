@@ -109,12 +109,12 @@
 ;[preload storage="data/fgimage/bg/bg_prologue.jpg" wait=true]
 ;四条が先に表示されてしまったため解放
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg" wait=true]
-[preload storage="data/fgimage/bg/bg_garden_isu.jpg" wait=true wait=true]
+[preload storage="data/fgimage/bg/bg_garden_isu.jpg" wait=true]
 ;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg" wait=true]
-[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg wait=true]
-[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg wait=true]
-;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg" wait=true]
+;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
