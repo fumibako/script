@@ -332,6 +332,9 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/bg/sijyou_engawa.jpg"]
 [preload storage="data/fgimage/bg/sijyou_engawa2.jpg"]
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+[preload storage="data/fgimage/bg/sijyou_hanabi1.jpg" wait=true]
+[preload storage="data/fgimage/bg/sijyou_hanabi2.jpg" wait=true]
+[preload storage="data/fgimage/bg/sijyou_hanabi2_1.jpg" wait=true]
 ;花火画像
 [preload storage="data/fgimage/bg/sijyou_engawa2_1.png" wait=true]
 ;透明化オンオフ　一緒にしましょう　拡大縮小つけたほうがいい。けど周囲の透過色が目立つ
