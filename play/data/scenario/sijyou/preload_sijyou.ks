@@ -425,7 +425,7 @@ $('.loding_pic1').remove();
 [eval exp="sf.FButton='ON'"]
 [endmacro]
 ;==================================================
-;主人公プリロード　未使用です タイトル前にした方がいいかも
+;主人公プリロード　タイトル前にした方がいいかも
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 ;==================================================
 *p_syujinkou
@@ -434,6 +434,8 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/girl/S/base_yubi.png"]
 [preload storage="data/fgimage/girl/S/base_katate.png"]
 [preload storage="data/fgimage/girl/S/base_ryoute.png"]
+[preload storage="data/fgimage/girl/S/me_toji.png"]
+[preload storage="data/fgimage/"girl/S/me_futuu.png"]
 [preload storage="data/fgimage/girl/S/mayu_yowa.png"]
 [preload storage="data/fgimage/girl/S/me_fusi1.png"]
 [preload storage="data/fgimage/girl/S/kuti_futuu.png"]
