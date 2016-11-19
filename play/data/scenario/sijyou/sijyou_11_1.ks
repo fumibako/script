@@ -157,8 +157,8 @@
 [四条効果消]
 [wait time=100]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「たとえ、華織様をお救いできる力はなくても、[r]
-[sp]華織様の傍にいて、お話をききたい、支えたいのです」[p]
+「たとえ、華織様を[ruby text=お]御[ruby text=すく]救いできる力はなくても、[r]
+[sp]華織様の[ruby text=そば]傍にいて、お話をききたい、[ruby text=ささ]支えたいのです」[p]
 ;☆キャラの気づき 四条が主人公が頑張っていることに気づく
 ;照れてるままだと軽くみえるのでエモ消し
 [whosay name="華織" color="olivedrab"]
