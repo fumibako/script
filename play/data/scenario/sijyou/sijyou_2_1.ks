@@ -1,36 +1,31 @@
+;【華道習いイベント】 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
 *test
 [stopbgm]
-;【華道習いイベント】 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
 [call target=*start storage="tyrano.ks"]
+;暗転プリロードサブルーチン
+[call target=*2_1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-
 ;マクロ作成ありがとうございます(スクリプト担
 ;macro_etc.ksに[暗転]マクロを移動
 ;macro_tati_sijyou.ksにkeyframe設定及び[四条アップ][四条サイズ通常]マクロを移動し
 ;問題無く動作することを確認(WindowsVistaSP2+Chrome 49.0.2623.112 m, iPhone6S+Safari)しました
 ;(ちなみに古いPCよりスマホの方が動作が軽かったです…動作の軽さはPCかスマホかの違いよりも、性能によるのかもと思いました)
-[イベントシーン構築]
-[if exp="tf.test_sijyou==true"]
-【！】テストページからはじめます。シーンスキップをしますか[p]
-[link target=start]【１】しない[endlink][r]
-[link target=sijyou_1]【２】四条登場シーンまでスキップ[endlink][r]
-[link target=kyousitu_zentai]【３】背景追加シーンまでスキップ[endlink][r]
-[s]
-[endif]
-
 *start
 [cm]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[四条ボタン表示]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
 ;=================================================================================_
 *seen0
-[autosave]
 [whosay name=華道の先生 color=%mp.color]
 「[名前]さん。 自由花の造形表現も充分に習得なされたようですね」[p]
+[autosave]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -94,10 +89,10 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わかりました。 お父様に了承を得た上でお手伝いしようかと思います」[p]
+;おそれいります。父に訊いてご返事を
 [主人公目閉]
 ;他に良い言い回しは？
 ;〜〜シーン イベントのはじまりおわり〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
-[主人公退場]
 #
 [fadeoutbgm time=3000]
 [暗転]
@@ -109,8 +104,7 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[主人公ポーズ通常]
-[主人公目閉]
+]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -171,21 +165,28 @@ $('.bg1').remove();
 
 ;〜〜〜〜〜〜〜〜シーン急上昇する心情　キャラ紹介〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 *sijyou_1
-[autosave]
 ;背景　和室　床の間のみ
-[テキスト全画面白文字]
+;=========================================
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[layopt layer=13 visible=true]
+[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[font color=white size=27]
 ―― 後日。[r]
 淑女を目指す[ruby text=おと]乙[ruby text=め]女[ruby text=ご]子達が、母親や[r]
 家令達に連れられ華道教室にやってきた。[r]
 [r]
 そんな中、私は先生とともに淑女を目指す乙女達の[r]
-指導を勤めることとなった。[p]
-;[暗転]
-;[chara_mod name="bg" storage="toumei.gif"]
+指導を勤めることとなった。
+;=================表示準備========================
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[イベントシーン構築]
+[p]
+[四条イベントシーン構築]
 ;主人公横目 頬染め
 [主人公ポーズ通常]
 [主人公通常]
@@ -198,8 +199,12 @@ $('.bg1').remove();
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
+[freeimage layer=29 time=0]
+[四条ボタン表示]
+;=================表示準備おわり========================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ですが……)[p]
+(ですが……)
+[p]
 ;緊張と笑い
 [if exp="sf.BGM=='ON'"]
 ;【BGM】冬支度
@@ -208,6 +213,8 @@ $('.bg1').remove();
 [endif]
 [whosay name=華道の先生 color=%mp.color]
 「はい、皆さん。今日は、素敵な先生と私の信愛なる教え子を紹介します」[p]
+[autosave]
+
 ;子供がやがやSE
 [主人公目大]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -221,6 +228,10 @@ $('.bg1').remove();
 もっと驚くべき事に出逢ってしまった。[p]
  [四条ベース羽織]
  [四条微笑み]
+;~===四条登場=====
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;====四条登場=====
 [whosay name="華織" color="olivedrab"]
 「四条華織と申します。今日は一緒に楽しく学びましょう」[p]
 ;[whosay name=華道の先生 color=%mp.color]
@@ -378,9 +389,14 @@ $('.bg1').remove();
 [主人公憂い]
 先生は、様子を[ruby text=いぶか]訝しむ生徒達に[ruby text=ひと]一[ruby text=こと]言、謝ると私達を廊下に連れ出した。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース羽織]
 [四条通常]
+;~===四条登場=====
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;====四条登場=====
 ;[四条眉下げ]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
 [wait time=10]
@@ -497,25 +513,30 @@ $('.bg1').remove();
 (人を好きになるって、自身の気持ちさえも、思い通りにいかなくて[r]
 [sp]……大変)[p]
 ;ラストにつながる言葉　つらい、大変　だと微妙だけど　続きはないと違和感
-[主人公退場]
+[主人公目閉]
+[主人公口通常]
 ;この時まだ大変さが軽い
 [fadeoutbgm time=3000]
 #
 ;〜〜シーン 先生の退場と主人公の立ち位置説明おわり〜〜〜
 *sijyou_2
-[autosave]
 [er]
 ;〜〜シーン キャラと造作1 (軽度)後に繋ぐもの(テンション↓)〜〜〜
 ;背景　床の間のみ表示
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[主人公ポーズ通常]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [主人公通常]
 [四条ベース羽織]
 [四条通常]
+;~===四条登場=====
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;====四条登場=====
 #
 生徒達を落ち着かせたところで、私と華織様は、初級者向けの授業を[r]
 始めた。[p]
+[autosave]
 ;冬支度と迷う
 [if exp="sf.BGM=='ON'"]
 ;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
@@ -711,10 +732,15 @@ $('.bg1').remove();
 ;しのぎ・・・・乗り切って？
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;戻す
 [四条ベース着物]
 [四条困り微笑み]
+;===四条登場=====
+[freeimage layer=13 time=800]
+[layopt layer=13 visible=true]
+;====四条登場=====
 [whosay name="華織" color="olivedrab"]
 「……すみません、[名前]さん。急に出てあんな事を言ってしまって……」[p]
 ;きずなにしてみる　シーンがころころ変わるから音楽の一貫性がないかんじ
@@ -819,11 +845,16 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 
 ;背景　床の間のみ表示
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース着物]
 [四条通常]
 [四条目閉じ]
 ;四条考えてる
+;===四条登場=====
+[freeimage layer=13 time=800]
+[layopt layer=13 visible=true]
+;====四条登場=====
 [主人公ポーズ通常]
 [主人公通常]
 [主人公眉困り]
@@ -873,11 +904,16 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=乙女子その弐 color=%mp.color]
 「できましたわ！」[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公ポーズ通常]
 [主人公通常]
 [四条ベース羽織]
 [四条通常]
+;===四条登場=====
+[freeimage layer=13 time=800]
+[layopt layer=13 visible=true]
+;====四条登場=====
 [四条微笑み]
 [whosay name=乙女子その壱 color=%mp.color]
 「……私も出来ましたわ！」[p]
@@ -1025,6 +1061,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;背景　床の間のみ表示　夕方バージョン
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_kyousitu1_yuu.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公横目]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -1052,6 +1089,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条ベース着物]
 [四条通常]
 [四条目大]
+;===四条登場=====
+[freeimage layer=13 time=800]
+[layopt layer=13 visible=true]
+;====四条登場=====
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
