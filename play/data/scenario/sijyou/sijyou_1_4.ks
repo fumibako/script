@@ -1,14 +1,21 @@
-;///////////////////////////////
+*first
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*1_4 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;///////////////////////////////
+*start
 ;=================================================================================_
-[テキスト全画面白文字]
-;全画面表示
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[font color=white size=27]
+[プリロード画面消去]
 正月を過ぎる頃。 [r]
 [r]
 私は磯野に四条家に関する行儀作法について、[r]
@@ -18,16 +25,20 @@
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
-
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
+[freeimage layer=29 time=0]
+[四条ボタン表示]
+;==========================================================================
+*seen0
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ片手]
 「四条家に入るにあたって、[r]
 [sp]お言葉など気をつけることは、他にあるかしら？」[p]
+;あたり？
 *seen0
 [whosay name=磯野 color="dimgray"]
 [主人公ポーズ通常]
