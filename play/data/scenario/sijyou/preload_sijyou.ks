@@ -94,7 +94,7 @@
 ;[wait time=50]
 ;======================================================================================
 ;日付フラグでジャンプ処理。必要なものだけプリロード_字幕のなどの表示があれば下へ
-;今はないので個別にシナリオにてtargetで呼び出してます。※１
+;今はないので個別にシナリオにてtargetで呼び出してます。※１　スタックたまるので、このままでいいかも？
 
 ;======================================================================================
 *9_1
@@ -217,19 +217,18 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/bg/bg_prologue.jpg"]
 [preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
 [preload storage="data/fgimage/bg/test_mon.jpg" wait=true]
+;=====11_2========
+[preload storage="data/fgimage/bg/bg_bluesky.jpg" time=100]
 [preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg" wait=true]
+[preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg"]
+[preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg"]
+[preload storage="data/fgimage/bg/sijyou_byouin.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
 *11_2
-[macro name="プリロード画面消去"]
-[iscript]
-$('.loding_pic').remove();
-$('.loding_pic1').remove();
-[endscript]
-[layopt layer=fix visible=true]
-[endmacro]
+;上でプリロード。　分割が必要な時は解放
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
@@ -238,6 +237,7 @@ $('.loding_pic1').remove();
 ;///使用背景メモ　///////////////////////////////
 [preload storage="data/fgimage/bg/bg_prologue.jpg"]
 ;[preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg"]
+;[preload storage="data/fgimage/bg/sijyou_byouin.jpg" wait=true]
 ;[preload storage="data/fgimage/bg/sijyou_namigaura.jpg"]
 ;[preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg"]
 @jump target=end_sub
