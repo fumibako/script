@@ -58,24 +58,20 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
 [手紙四条読了 fumi_number=51]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私も四条様のことを知りたいです)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 [主人公目を開く]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(……今後ともいろいろとお教えいただければ幸いです)[p]
-
+(……今後ともいろいろとお教えいただければ幸いです)
+[主人公口ほほえみ]
+[p]
 #
-;○あくまで年上として尊敬する主人公
 ;¥¥¥¥¥¥¥¥¥¥手紙イベント¥¥¥¥¥¥
 ;機能ボタン消去
-;[layopt layer=fix visivle=false]てつやでつづりおもいだせない
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
-
 [layopt layer=29 visible=true]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=500]
@@ -106,7 +102,8 @@
 四条家と[名字]家の婚約は[r]
 誰もが予想し、望まれていた。[l][r]
 [r]
-それだけに、親戚ぐるみで園遊会が行われることとなった。[p]
+それだけに、親戚ぐるみで園遊会が行われることと[r]
+なった。[p]
 [resetfont]
 [freeimage layer = 29 time=500]
 
@@ -149,7 +146,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そうなんですか」[p]
+「そうなのですか」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name="四条親戚" color="#807070"]
@@ -223,7 +220,13 @@
 [四条微笑み]
 [四条口開]
 [whosay name="四条 華織" color="olivedrab"]
-「むこうで休もうか」[p]
+「ありがとう。　そう言ってもらえると助かるよ。[r]
+[sp]むこうで休もうか」
+[主人公ほほえみ]
+[p]
+#
+;気遣い言葉をスルーしてた　くれると？
+[主人公目閉]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyouke.jpg" time=100]
 ;【退場】四条
 [四条退場]
@@ -244,7 +247,7 @@
 [freeimage layer=13 time=1000]
 [layopt layer=13 visible=true]
 ;===================
-
+[主人公通常]
 [whosay name="四条 華織" color="olivedrab"]
 「昔は、兄も弟も海外に留学に出掛けていて、僕だけが家の留守を[r]
 [sp]任されていたんだ。[r]
@@ -282,7 +285,8 @@
 ;○伏線 無くてもどちらでも
 #
 ;ナレーターモノローグ
-ふと、気づくと、四条の後ろの木陰の下に人影が見え、その人物は、こちらを見つめている。[p]
+ふと、気づくと、四条の後ろの木陰の下に人影が見え、その人物は、こちらを[r]
+見つめている。[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -362,6 +366,8 @@
 ;まだ妹扱い
 [whosay name="四条 華織" color="olivedrab"]
 「そうだ。　新しい庭が出来たんだ、一緒に見に行こうか」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい」[p]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】「きずな」
@@ -369,7 +375,8 @@
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 [主人公ポーズ通常]
-[主人公通常]
+[wait time=10]
+[主人公目閉]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -381,6 +388,8 @@
 ;追記分
 ;◎家族ぐるみの付き合いになってきたので四条のことを名前で呼んでいいかきく
 [whosay name="四条 華織" color="olivedrab"]
+[主人公通常]
+[wait time=10]
 「ここには、小さな種類の薔薇が植えてあるんだ」[p]
 [autosave]
 #
@@ -699,12 +708,11 @@ _　成長しないといけないのだわ)[p]
 「[名前]、
 [四条口開]
 薔薇園を見に行こうか」[p]
+#
 ;【退場】四条
 [四条退場]
 ;=================================================================================_
 *seen6
-[autosave]
-;○薔薇園で麗しさ表現
 ;場面転換
 ;【背景】[薔薇庭]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_rose_funsui.jpg"]
@@ -718,6 +726,8 @@ _　成長しないといけないのだわ)[p]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「綺麗……」[p]
+#
+[autosave]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;綺麗な場所か見せてから登場
@@ -765,6 +775,7 @@ _　成長しないといけないのだわ)[p]
 [whosay name="華織" color="olivedrab"]
 [四条微笑み]
 「綺麗だね。　よく似合っているよ」[p]
+;[sp]昔を思い出すよ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ]
 「ありがとうございます……」
@@ -819,7 +830,8 @@ _　成長しないといけないのだわ)[p]
 [四条微笑み]
 [wait time=10]
 #
-湖畔。暖かな日差しが水面を輝かせ、2人を乗せたボートをゆらゆらと照らす。[p]
+湖畔。暖かな日差しが水面を輝かせ、2人を乗せたボートをゆらゆらと[r]
+照らす。[p]
 ;[SE水を跳ねる音]？
 [whosay name="華織" color="olivedrab"]
 「結構、遠くまで漕いでしまったね」[四条目閉じ][p]
