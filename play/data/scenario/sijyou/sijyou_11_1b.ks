@@ -26,7 +26,7 @@
 ;【波ヶ浦】荒波
 [chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-[イベントシーン構築]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -45,6 +45,7 @@
 [layopt layer=fix visible=true]
 ;=============================
 [layopt layer=fix visible=true]
+[四条ボタン表示]
 [whosay name="華織" color="olivedrab"]
 「[華衣]！ ここに居たんだな」[p]
 [四条口ムッ]
@@ -201,9 +202,14 @@
 [sp]どうか悲しまないでほしい[r]　
 [sp]私は[華衣]に　幸せな思い出が訪れる日を楽しみにしています。」[p]
 [手紙読了] 
+;======四条表示======
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_namigaura.jpg" time=100]
 ;【登場】四条
 [四条ベース羽織]
 [四条憂い]
+[freeimage layer=13 time=500]
+[layopt layer=13 visible=true]
+;======四条表示======
 [whosay name="華衣" color=%mp.color]
 「あの庭……！」[p]
 ;[華衣]、走って家に帰る！四条家は運動力がある？
@@ -256,9 +262,9 @@
 [wait time=10]
 ;=============================
 [call target=*start storage="macro_tati_sijyou.ks"]
-;[婚約者の花園] ネリネ？の庭…背景がないなら写真の花だけでもいいかも
+;婚約者の花園
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
-[イベントシーン構築]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -267,6 +273,7 @@
 [freeimage layer=29 time=1000]
 [layopt layer=fix visible=true]
 ;=============================
+[四条ボタン表示]
 [whosay name="華衣" color=%mp.color]
 「ここって兄さんが言ってた場所」[p]
 ;○主人公が花言葉を教えてくれる
@@ -336,6 +343,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 『……君、体調の悪そうだけど大丈夫ですか？』[p]
 [whosay name="華織" color="olivedrab"]
 『待って下さい！ そんな顔色で……せめて明日』[p]
+;==========================================
 ;[暗点]か空
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=100]
 #
@@ -351,9 +359,11 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;ネリネの写真かイメージ,だんだん忘れられて枯れていくといいですね（無理
 #
 [stopse]
-;△病院に運ばれて妹が来たときには時すでに遅し！
-;病院
+;==========================================
+;病院 四条表示準備してます
 [chara_mod name="bg" storage="bg/sijyou_byouin.jpg" time=100]
+[layopt layer=13 visible=true]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_byouin.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
 『もう少ししたら傷も治るよね。そうしたら、ずっと』[p]
 …………[wait time=1500][er]
@@ -379,6 +389,10 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;【登場】四条
 [四条ベース羽織]
 [四条憂い]
+;======四条登場======
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;;======四条登場======
 [whosay name="華衣" color=%mp.color]
 「アンタが言わなければ、こんなことには！！　」[p]
 ;結果、妹に恨まれてしまったんだろうなぁとプレイヤーが想像する形
@@ -391,7 +405,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;回想シーンおわり
 ;=================================================================================_
 *seen5
-[autosave]
 ;花園もどる
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [主人公ポーズ通常]
@@ -400,6 +413,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name="華衣" color=%mp.color]
 「こんな、手紙、どうして早く来てくれなかった？」[p]
+[autosave]
 [四条困り]
 [whosay name="華織" color="olivedrab"]
 「……」[p]
