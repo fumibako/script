@@ -33,7 +33,8 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="作業中＝10月3週badED。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
 *test_page1
-[glink target="test5_1" text="5月1週(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+;[glink target="test5_1" text="5月1週(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+;↑スクリプト化をありがとうございました。ボタン及びシナリオを「共通イベントテスト」に移動させていただきました(スクリプト担
 [glink target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test7_1" text="7月1週(未定)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 ;[glink target="test6_1" text="8月1週(ない)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
