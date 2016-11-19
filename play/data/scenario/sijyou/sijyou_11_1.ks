@@ -10,8 +10,11 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[layopt layer=13 visible=true]
+;=========================================================================================
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築]
 [主人公ポーズ通常]
@@ -21,6 +24,7 @@
 *seen0
 [er]
 [プリロード画面消去]
+;=========================================================================================
 #
 兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
 ;兄のはからいで料亭にやってきた私は、会うべき"とある人物"を待っていた。[p]
@@ -48,6 +52,10 @@
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条真剣]
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
 [四条口驚き]
 ;ここでは、男らしい感じで驚いてほしい
 [whosay name="華織" color="olivedrab"]
@@ -248,10 +256,17 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ・・・・・・[p]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条真剣]
+;==================
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;==================
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -355,6 +370,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [call target=*start storage="macro_tati_sijyou.ks"]
 [wait time=10]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_mon.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [主人公ポーズ通常]
 [wait time=10]
@@ -373,6 +389,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条通常]
+;==================
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;==================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あれは何をなさっているのでしょうか？」[p]
 [四条真剣]
@@ -398,11 +420,18 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *seen6
 ;[暗点]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_konyaku_jikka2.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条通常]
+;==================
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;==================
 [主人公通常]
 [wait time=10]
 [四条口驚き]
@@ -501,6 +530,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_sijyou_dozou.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;【登場】四条
 ;[四条ベース着物]
@@ -537,7 +567,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;場面転換
 ;=====================シーン・パラメータ============================================================_
 *seen8
-;[if exp=f.sijyou_sobo==true| | "f.para_shujinkou_j_kadou >= 80"]
+[if exp=f.sijyou_sobo==true | | "f.para_shujinkou_j_kadou >= 80"]
 ;華道パラが高いまたは、四条綾花f.sijyou_sobo==trueと会っていると表示される。それ以外は無し。
 ;なぜかというと華道展イベントが表示されない可能性が高いからです。
 #
@@ -570,7 +600,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [sp]いなれば生き抜く事もままならない時代が、いつかくるだろう)[p]
 (そのとき……僕には、何ができるだろうか)[p]
 #
-;[endif]
+[endif]
 *common_2
 ;[暗点]
 [chara_mod name="bg" storage="toumei.gif"]
@@ -586,6 +616,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条ベース羽織]
 ;[四条通常]
 [四条真剣]
+;==================
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;================
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -655,6 +691,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;//////////////////////////場面転換//////////////////////////////////////////////////
 ;[暗点][料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryoutei.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [主人公ポーズ通常]
 [主人公通常]
@@ -672,6 +709,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【登場】四条　疲れて羽織を脱ぐはず？
 [四条ベース着物]
 [四条困り]
+;==================
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;================
 [whosay name="華織" color="olivedrab"]
 「家に電話をしてみたけど、まだ帰ってきてないみたいだ」[p]
 [主人公憂い]
@@ -707,6 +750,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [sp]少し気が引けますが、やはり書物を拝見しようか……」[p]
 ;//////////////////チラチラしすぎでは？//////////////////
 ;【退場】四条
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryoutei.jpg" time=1000]
 [四条退場]
 ;=================================================================================_
 *seen11
@@ -721,6 +765,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条通常]
 [四条汗]
 [wait time=10]
+;==================
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (結構な量ですね）[p]
 [四条口微笑み]
@@ -733,6 +783,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「そうだね。[r]
 [sp]明らかに関係性のないものは優先順位を下げておこう」[p]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryoutei.jpg" time=800]
 ;【退場】四条
 [四条退場]
 #
@@ -750,6 +801,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条ベース着物]
 [四条通常]
 [四条眉下げ]
+;==================
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;================
 [whosay name="華織" color="olivedrab"]
 「何か見つけたのかい？」[p]
 ;有効なものかわからず、やや自信なさげな表情でもあり。急に呼ばれて驚いて。
@@ -798,10 +855,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「あっ！」[p]
 ;=================================================================================_
 *seen12
-[autosave]
+
 #
 ;ナレーター
 『手記』を開いた途端、四角く折られた緋色の紙が落ちた。[p]
+[autosave]
 ;控えめに驚き
 [四条通常]
 [四条口驚き]
