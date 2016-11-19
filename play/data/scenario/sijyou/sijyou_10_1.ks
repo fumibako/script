@@ -137,15 +137,13 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 *seen4
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
-
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [image layer=29 storage="bg/room_niwa.jpg"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
-
-[イベントシーン構築]
+[四条イベントシーン構築]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
@@ -157,7 +155,7 @@
 [freeimage layer=29 time=1000]
 [layopt layer=fix visible=true]
 [wait time=10]
-
+[四条ボタン表示]
 [主人公目閉じ]
 (どうしましょう)[p]
 [whosay name="磯野" color="dimgray"]
