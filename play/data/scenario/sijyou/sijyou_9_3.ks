@@ -235,14 +235,14 @@
 [chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_garden_isu.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-===================
+;===================
 ;【登場】四条
 ;[四条ベース着物]　公式の場なので羽織？
 [四条ベース羽織]
 [四条微笑み]
 [freeimage layer=13 time=1000]
 [layopt layer=13 visible=true]
-===================
+;===================
 
 [whosay name="四条 華織" color="olivedrab"]
 「昔は、兄も弟も海外に留学に出掛けていて、僕だけが家の留守を[r]
@@ -622,15 +622,18 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「[名前]。
+「[名前]。[sp]
 [四条口開]
 久しぶりに来た、我が家を見て回ろうか」[p]
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
 [whosay name="華織" color="olivedrab"]
 「いずれ、君の家になる場所だから、迷子にならないように[r]
-[sp]覚えておこうか」[p]
+[sp]覚えておこう」[p]
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい、華織様」[p]
@@ -665,6 +668,7 @@ _　成長しないといけないのだわ)[p]
 [wait time=10]
 [主人公目パチ1回]
 [whosay name="華織" color="olivedrab"]
+[四条口開]
 「気に入ったものがあったら、また差し上げますよ」[p]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
