@@ -127,6 +127,7 @@ o一歩一歩、緊張が高まってゆく。[l][r]
 「――これは[名字]様、いらっしゃいませ。[r]
 [sp]財前様はこちらのお座敷で、お待ちでございますよ」[p]
 
+
 ;【SE】足音複数廊下
 [playse storage=asioto_rouka_3nin.ogg loop=false ]
 ;テキスト、褪せた灰青色
@@ -144,7 +145,7 @@ o一歩一歩、緊張が高まってゆく。[l][r]
 [cm]
 [イベントシーン構築]
 [主人公ポーズ通常]
-h[主人公通常]
+[主人公通常]
 [主人公眉下げ下]
 [主人公伏目]
 ;【SE】襖を開ける（ゆっくり）
@@ -154,7 +155,8 @@ h[主人公通常]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 
-;【立ち絵】財前：通常[財前ベーススーツ]
+;【立ち絵】財前：通常
+[財前ベーススーツ]
 [財前サイズ通常]
 [財前通常]
 [whosay name="財前美彬" color="#7a65b2"]
