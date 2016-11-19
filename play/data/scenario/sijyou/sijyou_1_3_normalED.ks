@@ -1,35 +1,32 @@
-*first
-;/////////////////////////////////
-;暗転
-;[chara_mod name="bg" storage="toumei.gif" time=1500]
+*start
 [stopbgm]
-;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
-;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
-;//////////////////////////////////////
 [call target=*start storage="tyrano.ks"]
+;暗転プリロードサブルーチン
+[call target=*9_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [stopbgm]
 ;=================================================================================_
-*start
+*first
 *seen1
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
-[autosave]
-
 [wait time=10]
+[プリロード画面消去]
+[四条ボタン表示]
+;=================================================================================_
+[whosay name="磯野" color="dimgray"] 
+「お嬢様、四条華織さまがお迎えに来られました」
 [主人公目パチ1回]
 [wait time=10]
-[whosay name="磯野" color="dimgray"] 
-「お嬢様、四条華織さまがお迎えに来られました」[p]
+[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -37,6 +34,7 @@
 [endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「わかったわ。すぐ参りますとお伝え下さい」[p]
+[autosave]
 [whosay name="磯野" color="dimgray"] 
 「はい、それでは」[p]
 [主人公真剣]
@@ -75,7 +73,11 @@
 ;¥¥¥¥¥¥¥¥イベント7¥¥¥¥¥¥¥¥ここの中盤で　さん　呼びなのね　もう忘れてたよ・・・
 ;=================================================================================_
 *seen2
-[autosave]
+;【SE】鳥たち（複数の鳥の声）　適当なSEで合間を誤魔化す
+[playse storage=tori_yatyou.ogg loop=false ]
+[image layer=29 x=1 y=1 storage="bg/bg_ryoutei.jpg" time=500]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
 ;○解決の知らせ→料亭などで落ち合うことに。
 ;☆フィナーレ（結末。主人公の勝利）
 ;○悩み(真実)についての独白とその後の悩みの変化が語られ主人公に感謝する。四条には主人公しかいない等と言って改めて告白
@@ -85,15 +87,17 @@
 ;【登場】四条
 [四条ベース着物]
 [四条微笑み]
-#
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
+[freeimage layer=29 time=500]
+;==========表示準備完了==============
 [whosay name="華織" color="olivedrab"]
 「お[ruby text=と]父[ruby text=う]義様には、許可をもらって来られましたか？」[p]
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。[r]
 [sp]『もう一緒になるのだから好きにしなさい』といってました」[p]
