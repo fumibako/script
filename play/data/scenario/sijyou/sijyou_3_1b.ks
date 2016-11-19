@@ -883,6 +883,7 @@
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 華織様に誘われた私は、庭へと赴いた。[p]
+[layopt layer=fix visible=false]
 ;【背景】庭園
 [image layer=29 name="jyunbi" left=1 top=1 storage="bg/bg_teien_ishidatami_yuu.jpg" time=100]
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami_yuu.jpg" time=500]
@@ -896,6 +897,7 @@
 [主人公ポーズ通常]
 [主人公目閉]
 [主人公通常]
+[layopt layer=fix visible=true]
 [freeimage layer=29 time=700]
 ;表示準備
 [whosay name="華織" color="olivedrab"]
@@ -1105,10 +1107,13 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 ;[主人公照れ]
 [whosay name="四条 華衣" color=%mp.color]
 「どんくさいから、ちょっと小突いただけだろ！」[p]
+;＝＝＝＝＝＝＝表示準備＝＝＝＝＝＝＝
+[layopt layer=fix visible=false]
 #
 ;【背景】庭園 夕方か夜でお願いします。
 ;宵の口からもうすこし経った頃合いを目指してみました
 ;月が明るめで足元は手持ちの行灯か提灯で照らされている(手前に温かみのある光源)イメージです(スクリプト担
+[image layer=29 name="jyunbi" left=1 top=1 storage="bg/bg_teien_ishidatami_yoru.jpg" time=100]
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami_yoru.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 [四条ベース羽織]
@@ -1116,6 +1121,9 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公照れ]
+[layopt layer=fix visible=true]
+[freeimage layer=29 time=800]
+;＝＝＝＝＝＝＝表示準備＝＝＝＝＝＝＝
 [whosay name="華織" color="olivedrab"]
 「……帰りましょうか」[p]
 [主人公笑顔]
@@ -1129,10 +1137,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [autosave]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-
 ;料亭廊下
-;http://sunset77light.rdy.jp/material/index.html
-;料亭の廊下　ゆうあかりさんの　主人公庭で使用したの隣５３を薄暗く　または、https://www.pakutaso.com/20150232044post-5173.htmlお願いします。
 ;背景素材を探してくださってありがとうございます。ゆうあかりさんの53を夜っぽくしてみました(スクリプト担
 ;ありがとうございます。
 [chara_mod name="bg" storage="bg/bg_enkaijou_rouka.jpg"]
