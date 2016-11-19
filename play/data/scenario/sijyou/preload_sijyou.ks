@@ -327,7 +327,9 @@ $('.loding_pic1').remove();
 [image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
-[preload storage="data/fgimage/bg/sijyou_engawa2_1.png"]
+[preload storage="data/fgimage/bg/sijyou_engawa2.png"]
+;花火画像
+[preload storage="data/fgimage/bg/sijyou_engawa2_1.png" wait=true]
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;透明化オンオフ　一緒にしましょう　拡大縮小つけたほうがいい。けど周囲の透過色が目立つ
 [keyframe name="opcy"]
