@@ -10,7 +10,7 @@
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -18,6 +18,7 @@
 [主人公困り]
 [wait time=10]
 [プリロード画面消去]
+[四条ボタン表示]
 ;===========================================================
 #
 手紙が来なくなって数日。[p]
