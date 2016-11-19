@@ -108,9 +108,9 @@
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;[preload storage="data/fgimage/bg/bg_prologue.jpg" wait=true]
 ;四条が先に表示されてしまったため解放
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_garden_isu.jpg" wait=true]
-;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg" wait=true]
