@@ -1,37 +1,24 @@
-;///////散策案 花火///////
-;ネリネの花→花火、火は鎮魂
-;期間 夏　夕前(イメージ15時〜16時くらい？)
-;どんなイベント？ 散策しようとして思い出に浸る
-;☆このイベントの目的、フラグを回収、キャラの良さ
-;登場人物 四条華織 父　磯野
-;背景主人公の部屋 昼か夕方
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-[preload storage="data/fgimage/bg/sijyou_engawa2_1.png"]
-;透明化オンオフ　一緒にしましょう　拡大縮小つけたほうがいい。けど周囲の透過色が目立つ
-[keyframe name="opcy"]
-[frame p=0% opacity="0" scale=0.8]
-[frame p=50% opacity="0.5" scale=0.9]
-[frame p=100% opacity="1"scale=1]
-[endkeyframe]
-;消えるときに必要だった
-[keyframe name="not_opcy"]
-[frame p=100% opacity="0"]
-[endkeyframe]
-;【背景】主人公邸 庭の見える部屋：夏
-[chara_mod name="bg" storage="bg/room_niwa_natu.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;///////散策案 花火 どんなイベント？ 散策しようとして思い出に浸る 期間 夏　夕前(イメージ15時〜16時くらい？)///////
+;==========================================================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*sansaku6 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+;==========================================================================
+;【背景】主人公邸 庭の見える部屋：夏
+[chara_mod name="bg" storage="bg/room_niwa_natu.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[四条イベントシーン構築]
 ;前半はBGM無しでいい、同系統の音楽だと切り替えに違和感あると感じた
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[四条ボタン表示]
+;==========================================================================
 #
 昼過ぎ、暑さも落ち着く頃合い。私は、散策に出かけようとした。[p]
 [whosay name="磯野"]
