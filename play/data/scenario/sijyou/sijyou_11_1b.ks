@@ -24,6 +24,10 @@
 [wait time=10]
 ;=============================
 ;【波ヶ浦】荒波
+;【SE】荒波（海）
+[playse storage=mizu_umi_aranami.ogg loop=true]
+;こちらはループSEになります。SEフェードアウトやSE停止タグとセットでお使いください
+
 [chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [四条イベントシーン構築]
@@ -48,6 +52,8 @@
 [四条ボタン表示]
 [whosay name="華織" color="olivedrab"]
 「[華衣]！ ここに居たんだな」[p]
+[fadeoutse time=1000]
+[stopse]
 [四条口ムッ]
 [whosay name="華織" color="olivedrab"]
 「大事な話があるんだ、きいてほしい」[p]
