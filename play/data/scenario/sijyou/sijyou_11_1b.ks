@@ -297,7 +297,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「『また会う日を楽しみに』　『幸せな思い出』　」[p]
 ;×[主人公泣き]あえて「忍耐」言わない方がいいかな
-
 [whosay name="華衣" color=%mp.color]
 「！」[p]
 [主人公通常]
