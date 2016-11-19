@@ -5,46 +5,12 @@
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;==================================================
 *first
-;==================================================
-;主人公プリロード　未使用です
-;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-;==================================================
-*p_syujinkou
-;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-[preload storage="data/fgimage/girl/S/base.png"]
-[preload storage="data/fgimage/girl/S/base_yubi.png"]
-[preload storage="data/fgimage/girl/S/base_katate.png"]
-[preload storage="data/fgimage/girl/S/base_ryoute.png"]
-[preload storage="data/fgimage/girl/S/mayu_yowa.png"]
-[preload storage="data/fgimage/girl/S/me_fusi1.png"]
-[preload storage="data/fgimage/girl/S/kuti_futuu.png"]
-;[return]
 ;=======================================================================================
-;・・・・・・・シナリオから呼び出し共通　;あとは日付で内部ジャンプがしたかったのです
-;=======================================================================================
-*commom
-;//////////////表示準備用プリロード共通//////////////
-;今は下記ないので個別にtarget呼び出し
-;[preload storage="data/image/frame_red.png" wait=true]
-;[layopt layer=29 visible=true]
-;機能ボタン消去
-;[clearfix]すると再構築に影響あると怖いのでしてません
-;[layopt layer=fix visible=false]
-;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-;[wait time=50]
-;======================================================================================
-;日付フラグでジャンプ処理。必要なものだけプリロード_mtextなど字幕のなどの表示があれば下へ
-;今はないので個別にシナリオにてtargetで呼び出してます。※１　スタックたまるので、このままでいいかも？
-
-
-
-
-;◇プリロードサブルーチン　targetで呼び出し方法
+;◇プリロードサブルーチン　targetで呼び出し方法　シナリオで呼び出し設定してます。
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;======================================================================================
 *9_1
-;個別に呼び出してますのでいちいちマクロを書いてます。※１
+;個別に呼び出してますのでいちいち書いてます。
 ;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します　
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -68,13 +34,13 @@
 ;///使用背景メモ　必要時に解放///////
 [preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_omoide.jpg" wait=true]
-[preload storage="data/fgimage/bg/bg_flower_hagi.jpg"]
+[preload storage="data/fgimage/bg/bg_flower_hagi.jpg" wait=true]
 ;@jump target=end_sub
-;=========================================================================================
-;四条立ち絵を個別に入った時点で読み込みキャッシュ化しておく? 他で読み込みされる場合はjumpを実行
+;=========================================================================================================
+;四条立ち絵を個別に入った時点で読み込みキャッシュ化しておく? 他で読み込みされる場合はjumpを実行で無効化してください。
 ;四条プリロード
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-;=========================================================================================
+;=========================================================================================================
 *sijyou
 [preload storage="data/fgimage/sijyou/base_kimono.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
@@ -346,10 +312,11 @@ $('.loding_pic1').remove();
 ;グットエンドエピローグ
 
 ;まだないです
-
 [return]
 ;==========================================================================
 *end_sub
+;全てはここにGoします
+;==========================================================================
 ;◆[プリロード画面消去]
 [macro name="プリロード画面消去"]
 [iscript]
@@ -358,6 +325,7 @@ $('.loding_pic1').remove();
 [endscript]
 [layopt layer=fix visible=true]
 [endmacro]
+;==================================================
 ;◆[四条イベントシーン構築]
 [macro name="四条イベントシーン構築"]
 [clearfix]
@@ -400,7 +368,8 @@ $('.loding_pic1').remove();
 [chara_config ptext="chara_name_area"]
 [resetfont]
 [endmacro]
-
+;==================================================
+;◆[四条ボタン表示]
 [macro name=四条ボタン表示]
 ;セーブ等ボタン配置
 [locate x=530 y=357]
@@ -416,7 +385,20 @@ $('.loding_pic1').remove();
 [wait time=10]
 [eval exp="sf.FButton='ON'"]
 [endmacro]
-
+;==================================================
+;主人公プリロード　未使用です タイトル前にした方がいいかも
+;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+;==================================================
+*p_syujinkou
+;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+[preload storage="data/fgimage/girl/S/base.png"]
+[preload storage="data/fgimage/girl/S/base_yubi.png"]
+[preload storage="data/fgimage/girl/S/base_katate.png"]
+[preload storage="data/fgimage/girl/S/base_ryoute.png"]
+[preload storage="data/fgimage/girl/S/mayu_yowa.png"]
+[preload storage="data/fgimage/girl/S/me_fusi1.png"]
+[preload storage="data/fgimage/girl/S/kuti_futuu.png"]
+;==============================================================
 ;全てはここにGoします
 [return]
 
