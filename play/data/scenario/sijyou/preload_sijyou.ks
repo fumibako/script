@@ -5,6 +5,11 @@
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;==================================================
 *first
+;プリロード画面自体のプリロード
+[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
+[preload storage="data/fgimage/bg_kinari_sakura.jpg" wait=true]
+[return]
+;以降は、無駄な読み込みはしない
 ;=======================================================================================
 ;◇プリロードサブルーチン　targetで呼び出し方法　シナリオで呼び出し設定してます。
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
@@ -28,7 +33,7 @@
 *9_2
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
