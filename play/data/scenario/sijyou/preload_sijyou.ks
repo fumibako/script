@@ -47,55 +47,55 @@
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 ;=========================================================================================================
 *sijyou
-[preload storage="data/fgimage/sijyou/base_kimono.png"]
-[preload storage="data/fgimage/sijyou/base_haori.png"]
+[preload storage="data/fgimage/sijyou/base_kimono.png" wait=true]
+[preload storage="data/fgimage/sijyou/base_haori.png" wait=true]
 ;[四条眉通常]
-[preload storage="data/fgimage/sijyou/mayu_futuu.png"]
+[preload storage="data/fgimage/sijyou/mayu_futuu.png" wait=true]
 ;[四条眉下げ]
-[preload storage="data/fgimage/sijyou/mayu_sage.png"]
+[preload storage="data/fgimage/sijyou/mayu_sage.png" wait=true]
 ;[四条眉驚き]
-[preload storage="data/fgimage/sijyou/mayu_odoroki.png"]
+[preload storage="data/fgimage/sijyou/mayu_odoroki.png" wait=true]
 ;[四条眉困り]
-[preload storage="data/fgimage/sijyou/mayu_komari.png"]
+[preload storage="data/fgimage/sijyou/mayu_komari.png" wait=true]
 ;[四条眉強気]
-[preload storage="data/fgimage/sijyou/mayu_tuyoki.png"]
+[preload storage="data/fgimage/sijyou/mayu_tuyoki.png" wait=true]
 ;目
 ;[四条目通常]
-[preload storage="data/fgimage/sijyou/me_futuu.png"]
+[preload storage="data/fgimage/sijyou/me_futuu.png" wait=true]
 ;[四条目大]
-[preload storage="data/fgimage/sijyou/me_ake.png"]
+[preload storage="data/fgimage/sijyou/me_ake.png" wait=true]
 ;[四条目にこ]
-[preload storage="data/fgimage/sijyou/me_niko.png"]
+[preload storage="data/fgimage/sijyou/me_niko.png" wait=true]
 ;[四条目伏]
-[preload storage="data/fgimage/sijyou/me_fusi1.png"]
+[preload storage="data/fgimage/sijyou/me_fusi1.png" wait=true]
 ;[四条目閉じ]
-[preload storage="data/fgimage/sijyou/me_toji.png"]
+[preload storage="data/fgimage/sijyou/me_toji.png" wait=true]
 ;[四条横目]
-[preload storage="data/fgimage/sijyou/me_yoko.png"]
+[preload storage="data/fgimage/sijyou/me_yoko.png" wait=true]
 ;[四条横伏目]
-[preload storage="data/fgimage/sijyou/me_yokofusi1.png"]
+[preload storage="data/fgimage/sijyou/me_yokofusi1.png" wait=true]
 ;口
 ;[四条口通常]
-[preload storage="data/fgimage/sijyou/kuti_futuu.png"]
+[preload storage="data/fgimage/sijyou/kuti_futuu.png" wait=true]
 ;[四条口微笑み]
-[preload storage="data/fgimage/sijyou/kuti_hohoemi.png"]
+[preload storage="data/fgimage/sijyou/kuti_hohoemi.png" wait=true]
 ;[四条口笑顔]
-[preload storage="data/fgimage/sijyou/kuti_warau_s.png"]
+[preload storage="data/fgimage/sijyou/kuti_warau_s.png" wait=true]
 ;[四条口笑顔大]
-[preload storage="data/fgimage/sijyou/kuti_warau.png"]
+[preload storage="data/fgimage/sijyou/kuti_warau.png" wait=true]
 ;[四条口開]
-[preload storage="data/fgimage/sijyou/kuti_ake.png"]
+[preload storage="data/fgimage/sijyou/kuti_ake.png" wait=true]
 ;[四条口驚き]
-[preload storage="data/fgimage/sijyou/kuti_odoroki.png"]
+[preload storage="data/fgimage/sijyou/kuti_odoroki.png" wait=true]
 ;[四条口ムッ]
-[preload storage="data/fgimage/sijyou/kuti_mu.png"]
+[preload storage="data/fgimage/sijyou/kuti_mu.png" wait=true]
 ;効果
 ;[四条汗]
-[preload storage="data/fgimage/sijyou/emo_ase.png"]
+[preload storage="data/fgimage/sijyou/emo_ase.png" wait=true]
 ;[四条頬染め]
-[preload storage="data/fgimage/sijyou/emo_hohosome.png"]
+[preload storage="data/fgimage/sijyou/emo_hohosome.png" wait=true]
 ;[四条ビンタ]
-[preload storage="data/fgimage/sijyou/emo_binta.png"]
+[preload storage="data/fgimage/sijyou/emo_binta.png" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -107,16 +107,16 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
-;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;[preload storage="data/fgimage/bg/bg_prologue.jpg" wait=true]
 ;四条が先に表示されてしまったため解放
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
-[preload storage="data/fgimage/bg/bg_garden_isu.jpg" wait=true]
-;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg"]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_garden_isu.jpg" wait=true wait=true]
+;[preload storage="data/fgimage/bg/bg_garden_isu_dark.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg" wait=true]
-[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg]
-[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg]
-;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg]
+[preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg wait=true]
+;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -128,10 +128,10 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////使用背景メモ//////////////////
-[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+[preload storage="data/fgimage/bg/bg_prologue.jpg" wait=true]
 ;どうしても全画面で文字が表示されない時がある
-[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
-[preload storage="data/fgimage/bg/bg_genkan.jpg"]
+[preload storage="data/fgimage/bg/bg_kabuki_out.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -143,8 +143,8 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////使用背景メモ///////////////////////////////////
-;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -165,10 +165,10 @@ $('.loding_pic1').remove();
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
-[preload storage="data/fgimage/bg/room_niwa.jpg"]
-[preload storage="data/fgimage/bg/room_niwa_yoru.jpg"]
+[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true wait=true]
 [preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
-;[preload storage="data/fgimage/bg/room_niwa_yuki.jpg"]
+;[preload storage="data/fgimage/bg/room_niwa_yuki.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -191,10 +191,10 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
 [preload storage="data/fgimage/bg/test_mon.jpg" wait=true]
 ;=====11_2========
-[preload storage="data/fgimage/bg/bg_bluesky.jpg" time=100]
+[preload storage="data/fgimage/bg/bg_bluesky.jpg" time=100 wait=true]
 [preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg" wait=true]
-[preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg"]
-[preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg"]
+[preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg" wait=true]
+[preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" wait=true]
 [preload storage="data/fgimage/bg/sijyou_byouin.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
@@ -263,10 +263,10 @@ $('.loding_pic1').remove();
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ;///////////////////////////////
-[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg" wait=true]
 [preload storage="data/fgimage/bg/sijyou_engawa3.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
@@ -288,9 +288,9 @@ $('.loding_pic1').remove();
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
 ;[preload storage="data/fgimage/bg/room_niwa.jpg"]
 ;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg"]
-[preload storage="data/fgimage/bg/bg_genkan.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
-[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+[preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_tenrankai.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu2.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg"]
