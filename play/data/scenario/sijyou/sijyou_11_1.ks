@@ -414,6 +414,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「行きましょう」[p]
+#
 ;【退場】四条
 [四条退場]
 ;=================================================================================
@@ -428,7 +429,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条通常]
 ;==================
 ;四条登場
-[freeimage layer=13 time=1000]
+[freeimage layer=13 time=800]
 [layopt layer=13 visible=true]
 ;四条登場
 ;==================
@@ -520,8 +521,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条口開]
 [whosay name="華織" color="olivedrab"]
 「はい、」[p]
-;【退場】主人公
-[主人公退場]
+[主人公目閉]
 ;【退場】四条
 [四条退場]
 ;=================================================================
@@ -537,8 +537,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条ベース羽織]
 ;[四条通常]
 [四条真剣]
-[主人公ポーズ通常]
-[wait time=10]
+;==================
+;四条登場
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;四条登場
+;================
 [主人公通常]
 [wait time=10]
 #
@@ -783,6 +787,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「そうだね。[r]
 [sp]明らかに関係性のないものは優先順位を下げておこう」[p]
+#
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryoutei.jpg" time=800]
 ;【退場】四条
 [四条退場]
@@ -803,7 +808,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条眉下げ]
 ;==================
 ;四条登場
-[freeimage layer=13 time=1000]
+[freeimage layer=13 time=800]
 [layopt layer=13 visible=true]
 ;四条登場
 ;================
