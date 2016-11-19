@@ -2,7 +2,7 @@
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 ;暗転プリロードサブルーチン
-[call target=*9_3 storage="sijyou/preload_sijyou.ks"]
+[call target=*1_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
