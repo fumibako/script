@@ -114,7 +114,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/rose_onsitsu.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike.jpg" wait=true]
-;[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/niwa_large_ike_long.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
