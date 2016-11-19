@@ -14,7 +14,6 @@
 ;◇プリロードサブルーチン　targetで呼び出し方法　シナリオで呼び出し設定してます。
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;======================================================================================
-*9_1
 ;個別に呼び出してますのでいちいち書いてます。
 ;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します　
 [layopt layer=29 visible=true]
@@ -318,6 +317,34 @@ $('.loding_pic1').remove();
 ;まだないです
 [return]
 ;==========================================================================
+*sansaku6
+;個別に呼び出してますのでいちいち書いてます。
+;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します　
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[wait time=50]
+[image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///使用背景メモ　必要時に解放///////
+[preload storage="data/fgimage/bg/sijyou_engawa2_1.png"]
+[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+;透明化オンオフ　一緒にしましょう　拡大縮小つけたほうがいい。けど周囲の透過色が目立つ
+[keyframe name="opcy"]
+[frame p=0% opacity="0" scale=0.8]
+[frame p=50% opacity="0.5" scale=0.9]
+[frame p=100% opacity="1"scale=1]
+[endkeyframe]
+;消えるときに必要だった
+[keyframe name="not_opcy"]
+[frame p=100% opacity="0"]
+[endkeyframe]
+
+@jump target=end_sub
+;[return]へGO
+;以降は、無駄な読み込みはしない
+;======================================================================================
+*9_1
 *end_sub
 ;全てはここにGoします
 ;==========================================================================
