@@ -292,6 +292,12 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu2.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyouke.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/rose_shigemi.jpg"]
+;////////////表示準備/////////
+;文矢との選択肢表示↓　選択肢での表示遅れ防止
+[preload storage="data/fgimage/bg/plane_sepia.jpg"]
+;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+;///////////////////////////////
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
