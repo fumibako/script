@@ -223,8 +223,51 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、そのことで、ずっと僕を恨んでいる。[r]
 [sp]君からの手紙を捨ててしまうほどに……」[p]
+;==============どんな風に恨んでいるの？？　今までどう行動してたの？====================
+;背景四条家
+[イベントシーン構築枠茶色]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[whosay name="華織" color="olivedrab"]
+「待ってくれ[華衣]、[r]
+[sp]信じてほしい、彼女が残したものが、ここにはあるんだ」[p]
+[whosay name="四条 華衣" color=%mp.color]
+「そんなの嘘だ！[sp]どうせ兄さんの趣味か、家業の延長だろ？」[p]
+[whosay name="四条 華衣" color=%mp.color]
+「何もできないからって馬鹿にして！[sp]こんな手紙、[r]
+[sp]全部ぜんぶ捨ててやる！」[p]
+;びりびり～♪
+;【SE】走り去る(屋外)
+[playse storage=run_soto.ogg loop=false ]
+[whosay name="四条 華衣" color=%mp.color]
+「！[sp][華衣]……」[p]
+[stopse]
+[whosay name="四条 華衣" color=%mp.color]
+（あの雪の日のように[r]
+[sp]また僕は、[名前]さんのことも諦めないといけないのか)[p]
+[whosay name="四条 華衣" color=%mp.color]
+（それで、[華衣]は、納得してくれるのだろうか）[p]
+[whosay name="四条 華衣" color=%mp.color]
+（でも、それでは、ただの甘えだ）[p]
+[whosay name="四条 華衣" color=%mp.color]
+（あの人の想いを伝えないと。　僕と[華衣]のためにも)[p]
+;=============================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image layer=29 storage="bg/test_sijyou_namigauara.jpg" time=100]
+[wait time=10]
+;[料亭]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[四条イベントシーン構築]
+[主人公ポーズ通常]
 ;プレイヤー、華織に対して疑いはもつが、読むことによって多少の消化
 ;主人公　話を聞くのが辛いが耐えている
+;=============================
+[freeimage layer=29 time=800]
+[layopt layer=fix visible=true]
+;=============================
+[四条ボタン表示]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
