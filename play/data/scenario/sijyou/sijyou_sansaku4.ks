@@ -1,21 +1,20 @@
-;///////散策案4 キャラの良さ、フラグ回収///////
-;期間 終わったあと
-;元散策3案
-;☆このイベントの目的、フラグを回収、キャラの良さ
-;登場人物 四条親戚 四条華織 華衣
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;///////散策案4 キャラの良さ、フラグ回収;期間 終わったあと;元散策3案;登場人物 四条親戚 四条華織 華衣///////
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*bonyou2 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_sijyou.ks"]
-[イベントシーン構築]
+;[call target=*start storage="macro_tati_sijyou.ks"]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
-[wait time=10]
 [主人公通常]
-[wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 木の葉はすっかり落ち、次の新緑の為に息を潜める季節。[r]
 冷たい空気が背筋を伸ばしてくれる。[p]
