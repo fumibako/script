@@ -11,7 +11,6 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -19,7 +18,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=========================================================================
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
 [主人公目パチ1回]
 「……」[p]
