@@ -55,7 +55,7 @@
 ;立ち絵表示[藤枝ベース]
 [preload storage="data/fgimage/hujieda/base_sifuku.png" wait=true]
 ;立ち絵表示[藤枝郵便局員服]
-[preload storage="data/fgimage/hujiedan/base_yuubin.png" wait=true]
+[preload storage="data/fgimage/hujieda/base_yuubin.png" wait=true]
 ;[藤枝眉通常]
 [preload storage="data/fgimage/hujieda/mayu_futuu.png" wait=true]
 ;[藤枝眉下げ]
