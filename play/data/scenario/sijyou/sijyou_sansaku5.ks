@@ -7,31 +7,29 @@
 ;何故、華織より先に結婚できたのか？→イベント11回想より、華衣の婚約者についてのセリフ、祖父「お情けの相手」から分かるようにする、母親の気持ちを分かるようにする
 ;母親 期待していない,言葉遣いを改めてほしい,お稽古も放り出さないで、新しい相手とお見合いしてほしい
 ;華衣 (やる事はやったので)１人になりたい
-;//////////////////////////////////////////
-;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
+[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+;[call target=*start storage="macro_tati_sijyou.ks"]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
-[wait time=10]
 [主人公通常]
-[wait time=10]
-
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 #
 どこかの御令息と、その方を囲むご婦人方が、落ち着きなく街を歩いている。[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-
 
 ;時期でセリフの変更
 [whosay name="四条母"]
