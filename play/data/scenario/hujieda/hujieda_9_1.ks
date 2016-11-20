@@ -1,9 +1,9 @@
-;=============================================
+;=========================================================================
 ;イベント6回目【藤枝の事を考える】9月1週、誰も選ばないを選択
-;=======================お芝居の準備中です===================================
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*9_3 storage="hujieda/preload_hujieda.ks]
+[call target=*9_1 storage="hujieda/preload_hujieda.ks]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -14,7 +14,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 [プリロード画面消去]
-;=====================ここからお芝居の幕引きです========================
+;=====================ここからお芝居の幕引きです===============================
 
 ;【立ち絵】主人公：困り
 [whosay name=&sf.girl_namae color="#cf5a7f"]
