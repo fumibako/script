@@ -585,17 +585,23 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *seen8
 #
 私達は、埃に塗れながら大切な荷物を[ruby text=まと]纏めた。[p]
+;なんか陰口みたいのでうーん
 [whosay name="華織" color="olivedrab"]
 「……思わず、気を使って、あんな事を言ってしまったけれど、[r]
-[sp]先に、ここの事を尋ねれば良かったのでしょうね」[p]
+[sp]先に、ここの事を[ruby text=たず]尋ねれば、良かったですね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ですけど、分かっていただいて良かったです」[p]
 [whosay name="華織" color="olivedrab"]
 「これも、[名前]が、一緒にいてくれたおかげです[r]
-[sp]きっと、僕ひとりが尋ねたところで、あの状況では、嫌味にしか[r]
-[sp]思われなかったでしょうね……」[p]
+[sp]きっと、僕ひとりが[ruby text=たず]訪ねたところで、あの状況では、嫌味にしか[r]
+[sp]思われなかったでしょう……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いえ……」[p]
+「華織様……ここの方は、どこかに行かれるのでしょうか？」[p]
+[whosay name="華織" color="olivedrab"]
+「そうだろう……ね」[p]
+;皇室の藩屏たるもの一定以上の生活を保たなればならない
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様？」[p]
 [whosay name="華織" color="olivedrab"]
 「ありがとう、[名前]。[r]
 [sp]さぁ、頑張って荷物を[ruby text=まと]纏めようか。[r]
