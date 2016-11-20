@@ -319,8 +319,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「勝手だと言われても、[名前]と離れることは嫌なんだ」[p]
 ;さんづけは確定してからだったっけ→事件解決後
-;プレイヤーの気持ちなのでセリフは曖昧に
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 ;胸に手を当てるポーズのイメージ
+;↓目：伏目 [主人公目伏]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 ;[主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
@@ -329,6 +333,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;=================================================================================_
 *seen5
 ;話の繋がりを説明
+[主人公目閉]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
 #
 あの雪の日に華織様と離れ、手紙が来なくなった時を思い出した。[p]
 [autosave]
@@ -348,6 +355,7 @@ _　それでも、離れること、失うことはとても辛かった。[p]
 [sp]まだ帰って来られてないのですね」[p]
 ;答える1 悩みながら答える
 [四条憂い]
+
 [whosay name="華織" color="olivedrab"]
 「ここずっと、家族総出で[華衣]の捜索にあたってるけれど見つから[r]
 [sp]ない……」[p]
