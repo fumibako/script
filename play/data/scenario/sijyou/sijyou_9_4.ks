@@ -498,7 +498,7 @@
 ;華織様と別れた。
 部屋へと戻ることにした。[p]
 ;長いので好感度で表示するかスルーでいい
-@jump storage="sijyou_9_4b.ks" target=*start
+@jump storage="sijyou/sijyou_9_4b.ks" target=*start
 ;¥¥¥¥¥¥¥¥イベント4おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
