@@ -89,6 +89,8 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 閉じたままサイズ変更[p]
 [財前目を開く]
 目を開く[p]
+[財前退場]
+退場[r]
 テスト終了[p]
 [イベントシーン終了]
 @jump target="test"
