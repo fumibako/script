@@ -2,7 +2,7 @@
 *start
 ;◇プリロードサブルーチン 主人公表示までの幕の役割
 ;targetで呼び出し方法
-;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
+;◆【call target=*9_3 storage="sijyou/preload_hujieda.ks"】
 ;=====================================================================================
 *first
 ;make.ksで使用する際、ここに共通の読み込みを書きます。今はないのでここは書いてません。
