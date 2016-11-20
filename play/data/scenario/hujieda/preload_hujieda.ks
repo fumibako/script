@@ -43,8 +43,6 @@
 ;///////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】お稽古部屋
 ;[preload storage="data/fgimage/bg/bg_okeiko.jp" wait=true]
-
-
 ;======================================================================================
 *11_3
 ;*イベント名のラベルを追加していきます。イベント１１回目【父と磯野への説得】１１月3週、
@@ -111,11 +109,13 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
+;【背景】主人公邸 庭の見える部屋：昼
+;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】公園
+[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg"]
 ;======================================================================================
 *3_4_normalED
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。;イベント１５回目【指切りエンド】3月4週、
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -123,84 +123,121 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
+;【背景】主人公邸 庭の見える部屋：昼
+;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】公園
+[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg"]
 ;======================================================================================
 *4_4
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。イベント１回目【手紙が届くその１】4月お琴のお稽古を２回以上
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_okeiko.jpg" time=500]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[mtext name="loding_pic1" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;[wait time=10]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
+;【背景】主人公邸 お稽古部屋
+;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;======================================================================================
 *5_4
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。;イベント２回目【手紙が届くその２】5月お琴のお稽古を２回以上
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_okeiko.jpg" time=500]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[mtext name="loding_pic1" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;[wait time=10]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
+;【背景】主人公邸 お稽古部屋
+;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;======================================================================================
 *6_4
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。;イベント3回目【手紙が届くその３】６月お琴のお稽古を２回以上
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_okeiko.jpg" time=500]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[mtext name="loding_pic1" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;[wait time=10]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
+;【背景】主人公邸 お稽古部屋
+;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;======================================================================================
 *7_4
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。;イベント４回目【手紙を出す】７月２回以上お琴のお稽古
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_okeiko.jpg" time=500]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[mtext name="loding_pic1" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;[wait time=10]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
+;【背景】主人公邸 お稽古部屋
+;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;======================================================================================
 *8_4
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。;イベント５回目【手紙のお返事】８月２回以上お琴の稽古をする
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_okeiko.jpg" time=500]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[mtext name="loding_pic1" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;[wait time=10]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
+;【背景】主人公邸 お稽古部屋
+;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;======================================================================================
 *9_1
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。;イベント6回目【藤枝の事を考える】9月1週、誰も選ばないを選択
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_okeiko.jpg" time=500]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[mtext name="loding_pic1" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;[wait time=10]
+;＝＝＝ここではお稽古からの流れだと思うのでお稽古画像？ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
 ;======================================================================================
 *9_2
 ;ルート決定
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。;イベント７回目【再び手紙が届く】9月2週、お琴のお稽古
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -233,15 +270,16 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
+;【背景】:町並み
 [preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
-
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
 *10_3
-;*イベント名のラベルを追加していきます。10_3に藤枝が表示されるためキャラロードします。
+;*イベント名のラベルを追加していきます。
+;◆__◆__◆10_3に藤枝が表示されるためキャラロードします。◆__◆__◆
 ;できれば、専用背景をお願い致します。
 ;======================================================================================
 [layopt layer=29 visible=true]
@@ -251,11 +289,12 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
+;【背景】: レトロな喫茶店
+[preload storage="data/fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+;◆__◆__◆10_3に藤枝が表示されるためキャラロードします◆__◆__◆
+;@jump target=end_sub
 ;[return]へGO　ここは、消さないでください
-;以降は、無駄な読み込みはしない
 ;========================================================================================
 ;藤枝立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
 ;藤枝プリロード
@@ -319,10 +358,11 @@
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
+;◆__◆__◆10_3に藤枝が表示されるためキャラロード終了◆__◆__◆
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
 ;*
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。予備
 ;=======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -331,8 +371,6 @@
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
 
 ;====================================================================================
 @jump target=end_sub
@@ -340,7 +378,7 @@
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
 ;*
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。予備
 ;=======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -349,8 +387,6 @@
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
 
 ;====================================================================================
 @jump target=end_sub
@@ -358,7 +394,7 @@
 ;以降は、無駄な読み込みはしない
 ;===================================================================================
 ;*
-;*イベント名のラベルを追加していきます。
+;*イベント名のラベルを追加していきます。予備&テンプレ
 ;=======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -367,322 +403,12 @@
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
+;ここに追加
 ;====================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-;*
-;*イベント名のラベルを追加していきます。
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-;====================================================================================
-@jump target=end_sub
-;[return]へGO　ここは、消さないでください　
-;以降は、無駄な読み込みはしない
-;===================================================================================
-
-
 
 
 
