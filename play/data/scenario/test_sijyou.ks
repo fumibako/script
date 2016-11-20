@@ -34,7 +34,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 
 *test_page1
 ;[glink target="test5_1" text="5月1週(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
-;↑スクリプト化をありがとうございました。ボタン及びシナリオを「共通イベントテスト」に移動させていただきました(スクリプト担
+;↑スクリプト化をありがとうございました。ボタン及びシナリオを「共通イベントテスト」に移動させていただきました(スクリプト担　了解です
 [glink target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test7_1" text="7月1週(未定)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 ;[glink target="test6_1" text="8月1週(ない)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
@@ -42,7 +42,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test9_2" text="9月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-
+[glink target="test9_4b" text="9月4週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -172,6 +172,13 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [cm]
 [freeimage layer = 26]
 @jump storage="sijyou/sijyou_9_4.ks"
+[s]
+
+
+*test9_4b
+[cm]
+[freeimage layer = 26]
+@jump storage="sijyou/sijyou_9_4b.ks"
 [s]
 
 
