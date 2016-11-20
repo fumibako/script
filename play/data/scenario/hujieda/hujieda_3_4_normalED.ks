@@ -3,7 +3,7 @@
 ;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*3_4 storage="hujieda/preload_hujieda.ks"]
+[call target=*3_4_normalED storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
