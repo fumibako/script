@@ -26,7 +26,7 @@
 ;背景とメッセージ枠を手紙青仕様に
 [macro name="手紙青"]
 ;背景変更:手紙青
-[chara_mod name="bg" storage="bg/bg_tegami_blue.jpg" time=100]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=100]
 
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
