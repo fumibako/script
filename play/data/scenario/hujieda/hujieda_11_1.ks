@@ -1,16 +1,21 @@
-;=============================================
+;=========================================================================
 ;イベント１０回目【手紙を交わしていることが発覚】１１月１週、
-;=============================================
-;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_1 storage="hujieda/preload_hujieda.ks]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+;【背景】主人公邸 お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
