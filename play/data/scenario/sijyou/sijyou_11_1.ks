@@ -605,8 +605,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「ありがとう、[名前]。[r]
 [sp]さぁ、頑張って荷物を[ruby text=まと]纏めようか。[r]
-[sp]もちろん、重いものは、僕に任せてくれ。こう見えても、力は[r]
-[sp]ありますから」[p]
+[sp]もちろん、重いものは、僕に任せてくれ。こう見えても、[r]
+[sp]力は、ありますから」[p]
 ;あるほうですから
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
