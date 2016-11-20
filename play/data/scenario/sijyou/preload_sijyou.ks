@@ -7,13 +7,26 @@
 *first
 ;↓プリロード作成をありがとうございます。first.ksでのプリロードに移動と動作確認ができましたので、こちらのプリロード処理を消去します
 ;四条用プリロード画面はどこで読み込むか思案中です。okeiko.ksにif分岐で読込を考えてみましたが、okeiko.ksはほぼループ動作なので…何度も読み込むとメモリを圧迫したりするだろうかと懸念したりです(スクリプト担
-;プリロード画面自体のプリロード
+;プリロード画面自体のプリロード 9_1で読むことにします。ありがとうございます！
 ;[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
 ;以降は、無駄な読み込みはしない
 @jump target=end_sub0
 ;=======================================================================================
 ;◇プリロードサブルーチン　targetで呼び出し方法　シナリオで呼び出し設定してます。
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
+;======================================================================================
+*6_1
+;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します　
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///使用背景メモ　必要時に解放///////
+[preload storage="data/fgimage/bg/test_sijyou_hanazono.jpg" time=1500]
+@jump target=end_sub
+;[return]へGO
+;以降は、無駄な読み込みはしない
 ;======================================================================================
 *9_1
 ;個別に呼び出してますのでいちいち書いてます。
