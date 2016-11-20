@@ -8,14 +8,8 @@
 ;どこかで先に読見込んでいただけると助かります
 ;プリロード画面自体のプリロード
 [preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
-;↓プリロード作成をありがとうございます。first.ksでのプリロードに追加してみましたのでこちらをコメントアウトします
+;↓プリロード作成をありがとうございます。first.ksでのプリロードに移動と動作確認ができましたので、こちらのプリロード処理を消去します
 ;四条用プリロード画面はどこで読み込むか思案中です。okeiko.ksにif分岐で読込を考えてみましたが、okeiko.ksはほぼループ動作なので…何度も読み込むとメモリを圧迫したりするだろうかと懸念したりです(スクリプト担
-;[preload storage="data/fgimage/bg_kinari_sakura.jpg" wait=true]
-;[preload storage="data/fgimage/bg_kinari_sakura.jpg" wait=true]
-;バックログ・セーブロード画面のためのプリロード
-;[preload storage="data/fgimage/bg/plane_mizuiro.jpg" wait=true]
-;[preload storage="data/fgimage/bg/plane_sakura.jpg" wait=true]
-;[preload storage="data/fgimage/bg/plane_wakakusa.jpg" wait=true]
 [return]
 ;以降は、無駄な読み込みはしない
 ;=======================================================================================
