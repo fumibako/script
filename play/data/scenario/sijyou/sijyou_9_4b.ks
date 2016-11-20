@@ -11,6 +11,7 @@
 テストページからはじめます。[p]
 ;/////////////////////////////////////////////////////
 *start
+[fadeoutbgm time=3000]
 [eval exp="f.kaogura!='off'"]
 ;会話ウィンドウ消去
 [freeimage layer = 14]
@@ -20,15 +21,15 @@
 ;==========================================================================
 [イベントシーン構築枠茶色]
 #
+[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[whosay name="華織" color="olivedrab"]
+「[華衣]は、部屋にいますか？」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[whosay name="華織" color="olivedrab"]
-「[華衣]は、部屋にいますか？」[p]
 [whosay name="女中"]
 「は、はい。[sp]先ほどお帰り遊ばされました」[p]
 #
