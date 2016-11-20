@@ -176,10 +176,14 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 ;////////////////////////シーン完全に現時間に戻る////////////////////
 *seen4
-;メッセージ通常
-;ないので[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-[イベントシーン構築]
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[image layer=29 storage="bg/bg_ryoutei.jpg" time=100]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[四条イベントシーン構築]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
@@ -190,6 +194,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [四条ベース羽織]
 [四条憂い]
+[wait time=10]
+;=============================
+[freeimage layer=29 time=800]
+[layopt layer=fix visible=true]
+;=============================
+[四条ボタン表示]
 ;感情 悲しい悔やむ
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、彼女と出会ってからは、少し落ち着いてきた……けれど……」[p]
@@ -228,6 +238,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、そのことで、ずっと僕を恨んでいる。[r]
 [sp]君からの手紙を捨ててしまうほどに……」[p]
+[cm]
 ;==============どんな風に恨んでいるの？？　今までどう行動してたの？====================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -255,10 +266,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【SE】走り去る(屋外)
 [playse storage=run_soto.ogg loop=false ]
 [四条目大]
-[whosay name="四条 華衣" color=%mp.color]
+[whosay name="華織" color="olivedrab"]
 「！[sp][華衣]……」[p]
 [stopse]
-[whosay name="四条 華衣" color=%mp.color]
+[whosay name="華織" color="olivedrab"]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
 （あの雪の日のように[r]
@@ -269,6 +280,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 （でも、それでは、ただの甘えだ。　あの人と約束したから）[p]
 [whosay name="四条 華衣" color=%mp.color]
 （あの人の想いを伝えないと。　僕と[華衣]のためにも)[p]
+[cm]
 ;=============================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
