@@ -26,13 +26,13 @@
 _　　　　　　・・・読込中・・・[r]
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
-f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/toumei.gif","data/image/button_title_start.png","data/image/button_title_load.png","data/image/button_title_cg.png","data/image/button_title_replay.png","data/image/button_title_credit.png"];
+f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/toumei.gif","data/image/button_title_start.png","data/image/button_title_load.png","data/image/button_title_cg.png","data/image/button_title_replay.png","data/image/button_title_credit.png","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/button/frame_lesson.png","tyrano/images/kag/nextpage.gif","data/fgimage/button/kira_button.png","data/fgimage/button/menu_button_close.png"];
 [endscript]
 [preload storage=&f.preload_images_title1 wait=true]
 _　　　　　　　　  20%
 
 [iscript]
-f.preload_images_title2 = ["data/image/toumei.gif","data/image/button_bgm_off.png","data/image/button_bgm_on.png","data/image/button_se_off.png","data/image/button_se_on.png","data/image/button_kskip_off.png","data/image/button_kskip_on.png","data/image/button_boost_off.png","data/fgimage/bg/bg_kinari_sakura.jpg","data/fgimage/bg/plane_mizuiro.jpg","data/fgimage/bg/plane_sakura.jpg","data/fgimage/bg/plane_wakakusa.jpg"];
+f.preload_images_title2 = ["data/image/toumei.gif","data/image/button_bgm_off.png","data/image/button_bgm_on.png","data/image/button_se_off.png","data/image/button_se_on.png","data/image/button_kskip_off.png","data/image/button_kskip_on.png","data/image/button_boost_off.png","data/fgimage/bg/bg_kinari_sakura.jpg","data/fgimage/bg/plane_mizuiro.jpg","data/fgimage/bg/plane_sakura.jpg","data/fgimage/bg/plane_wakakusa.jpg","tyrano/images/kag/menu_load_bg.jpg","tyrano/images/kag/menu_save_bg.jpg","tyrano/images/kag/menu_bg.jpg","data/image/button_fumi.png","data/image/button_sansaku.png","data/image/button_info.png","data/image/button_message_load.png","data/image/button_message_log.png","data/image/button_message_save.png","data/image/button_message_skip.png","data/image/x_50x50.png"];
 [endscript]
 [preload storage=&f.preload_images_title2 wait=true]
 [cm]
