@@ -128,7 +128,7 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 ;==========================================================================
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[image layer=29 name="jyunbi" storage=""bg/room_niwa_yoru.jpg" time=10]
+[image layer=29 name="jyunbi" storage="bg/room_niwa_yoru.jpg" time=10]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：夜
@@ -148,14 +148,13 @@
 (そうだわ。 手紙を書きましょう！[r]
 [主人公目閉]
 [sp]華織様、どうか元気を出してください……)[p]
-
+[fadeoutbgm time=3000]
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
-
+[stopbgm]
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
-
 *window_close
 [cm]
 [chara_mod name="girl_base" storage="toumei.gif" time=0]
