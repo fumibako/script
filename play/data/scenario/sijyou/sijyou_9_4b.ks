@@ -5,9 +5,12 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+テストページからはじめます。[p]
 ;/////////////////////////////////////////////////////
 *start
-#
 [eval exp="f.kaogura!='off'"]
 ;会話ウィンドウ消去
 [freeimage layer = 14]
@@ -16,6 +19,7 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 ;==========================================================================
 [イベントシーン構築枠茶色]
+#
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
