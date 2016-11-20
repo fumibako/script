@@ -1,8 +1,31 @@
+*test
+[call target=*start storage="tyrano.ks"]
+[stopbgm]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+;/////////////////////////////////////////////////////
+*start
+[eval exp="f.kaogura!='off'"]
+;会話ウィンドウ消去
+[freeimage layer = 14]
+;機能ボタン消去
+[clearfix]
+[chara_mod name="bg" storage="toumei.gif" time=1000]
+[イベントシーン構築枠茶色]
+[if exp="sf.BGM=='ON'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
+[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、部屋にいますか？」[p]
 
-#女中
+[whosay name="女中"]
 は、はい。先ほどお帰り遊ばされました」[p]
 
 シーン廊下
@@ -109,10 +132,95 @@
 「逃げていては、何にもならないぞ」[p]
 
 
+;機能ボタン消去
+[clearfix]
+[chara_mod name="bg" storage="toumei.gif" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[image layer=29 name="jyunbi" storage=""bg/room_niwa_yoru.jpg" time=10]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[eval exp="f.kaogura!='on'"]
+[四条イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+[freeimage layer=29]
 
-#主人公
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様ならきっと大丈夫よね)[p]
-#主人公
+[主人公憂い]
 (だって、昔から私のことを考えてくれて、いつも傍にいてくれたもの)[p]
-#主人公
+[主人公通常]
 (そうだわ。 手紙を書きましょう！)[p]
+
+;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
+;@jump storage="event.ks" target=*event_owari
+
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
