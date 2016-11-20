@@ -1,22 +1,24 @@
-;=============================================
+;========================================================
 ;イベント8回目【散策イベント1】9月4週、
-;=============================================
-;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+;========================================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*9_4 storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+;【背景】:町並み
+;背景は、サブルーチンを読んでから(callの後)だと安全
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
-
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;========================ここからお芝居の幕が開きます================================
 #
 日曜日である今日は[r]
 町は一層にぎやかだ[p]
-
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
@@ -27,7 +29,6 @@
 [whosay name="三宮　時子" color="#c25232"]
 「まあ[名前]さんお久しぶりね！　[r]
 [sp]今日も散策されてるの？」[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
