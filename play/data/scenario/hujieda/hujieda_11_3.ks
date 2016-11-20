@@ -1,25 +1,28 @@
-;=============================================
+;========================================================================
 ;イベント１１回目【父と磯野への説得】１１月3週、
-;=============================================
-;【背景】主人公邸 庭の見える部屋：夜
- [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
- 
+;=======================お芝居の準備中です=================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_3 storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[イベントシーン構築]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
+#
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=========================================================================
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
 [主人公目パチ1回]
 「……」[p]
-
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「磯野から聞いているし没収した手紙も読んだ[r]
 [sp]藤枝肇君の素性も調べてある[r]
