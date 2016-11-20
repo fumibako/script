@@ -1,19 +1,24 @@
-;=============================================
+;========================================================================
 ;イベント１５回目【指切りエンド】3月4週、
-;=============================================
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / kouenn.jpg"]
-
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*7_4 storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_hujieda.ks"]
-[イベントシーン構築]
-
+;【背景】公園
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
+[eval exp="f.haikei_credit=''"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
+#
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=========================================================================
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 「忙し時間を割いて頂いてありがとうございます[r]
 [sp]それにしてもまたどうしてこの場所に？」[p]
