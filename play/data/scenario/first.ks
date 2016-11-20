@@ -32,7 +32,7 @@ f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/toumei.gif"
 _　　　　　　　　  20%
 
 [iscript]
-f.preload_images_title2 = ["data/image/toumei.gif","data/image/button_bgm_off.png","data/image/button_bgm_on.png","data/image/button_se_off.png","data/image/button_se_on.png","data/image/button_kskip_off.png","data/image/button_kskip_on.png","data/image/button_boost_off.png","data/fgimage/bg_kinari_sakura.jpg","data/fgimage/bg/plane_mizuiro.jpg","data/fgimage/bg/plane_sakura.jpg","data/fgimage/bg/plane_wakakusa.jpg"];
+f.preload_images_title2 = ["data/image/toumei.gif","data/image/button_bgm_off.png","data/image/button_bgm_on.png","data/image/button_se_off.png","data/image/button_se_on.png","data/image/button_kskip_off.png","data/image/button_kskip_on.png","data/image/button_boost_off.png","data/fgimage/bg/bg_kinari_sakura.jpg","data/fgimage/bg/plane_mizuiro.jpg","data/fgimage/bg/plane_sakura.jpg","data/fgimage/bg/plane_wakakusa.jpg"];
 [endscript]
 [preload storage=&f.preload_images_title2 wait=true]
 [cm]
