@@ -179,7 +179,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-[image layer=29 storage="bg/bg_ryoutei.jpg" time=100]
+[image layer=29 storage="bg/bg_ryoutei.jpg" time=50]
 [wait time=10]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
@@ -238,6 +238,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、そのことで、ずっと僕を恨んでいる。[r]
 [sp]君からの手紙を捨ててしまうほどに……」[p]
+#
 [cm]
 ;==============どんな風に恨んでいるの？？　今までどう行動してたの？====================
 [layopt layer=29 visible=true]
@@ -274,12 +275,13 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 （あの雪の日のように[r]
 [sp]また僕は、[名前]のことも諦めないといけないのか)[p]
-[whosay name="四条 華衣" color=%mp.color]
+[whosay name="華織" color="olivedrab"]
 （それで、[華衣]は、納得してくれるのだろうか）[p]
-[whosay name="四条 華衣" color=%mp.color]
+[whosay name="華織" color="olivedrab"]
 （でも、それでは、ただの甘えだ。　あの人と約束したから）[p]
-[whosay name="四条 華衣" color=%mp.color]
+[whosay name="華織" color="olivedrab"]
 （あの人の想いを伝えないと。　僕と[華衣]のためにも)[p]
+#
 [cm]
 ;=============================
 [layopt layer=29 visible=true]
