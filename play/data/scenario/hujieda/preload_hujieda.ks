@@ -224,7 +224,7 @@
 ;【背景】主人公邸 お稽古部屋
 ;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;【背景】主人公手紙
-[preload storage="data/fgimage/I9IhvvVdPo/bg_tegami_blue.jpg" wait=true]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
