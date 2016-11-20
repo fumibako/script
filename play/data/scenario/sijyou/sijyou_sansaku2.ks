@@ -1,21 +1,26 @@
 ;◎四条のことを知るイベントがなく説得力にかける
 ;平均的に何でもこなすが特出したものがない。というイベントがない。
 ;主人公・・・子供の頃から知り合いのお兄さんなので、他の攻略対象に比べると、あまり淑女度はないかも
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-[主人公ポーズ通常]
-[wait time=10]
-[主人公通常]
-[wait time=10]
-;表情も適当。優雅さに欠けていたら直してください
-[主人公口ほほえみ]
+;[call target=*start storage="macro_tati_sijyou.ks"]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
 #
+[主人公ポーズ通常]
+[主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
+;表情も適当。優雅さに欠けていたら直してください
+
+[主人公口ほほえみ]
 残暑も和らぎ、爽秋の風が吹く町。[r]
 人々は、冬支度に悩みながらも心地よい陽気に足取りも軽くなる。[p]
 [if exp="sf.BGM=='ON'"]
