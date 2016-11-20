@@ -17,6 +17,175 @@
 ;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します
 ;◆画面消去　[プリロード画面消去]
 ;======================================================================================
+;///////////////////////////////この下から//////////////////////////////////////////////
+;======================================================================================
+*10_3
+;*イベント名のラベルを追加していきます。;イベント９回目【花と手紙を渡す】１０月３週、
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;背景: [レトロな喫茶店]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" wait=true]
+
+;======================================================================================
+*11_1
+;*イベント名のラベルを追加していきます。;イベント１０回目【手紙を交わしていることが発覚】１１月１週、
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;【背景】お稽古部屋
+;[preload storage="data/fgimage/bg/bg_okeiko.jp" wait=true]
+
+
+;======================================================================================
+*11_3
+;*イベント名のラベルを追加していきます。イベント１１回目【父と磯野への説得】１１月3週、
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;【背景】主人公邸 庭の見える部屋：夜
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+;【背景】主人公邸 玄関
+;[preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true]
+;======================================================================================
+*12_3
+;*イベント名のラベルを追加していきます。;イベント１２回目【時子さん訪問】１２月3週、
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;【背景】主人公邸 庭の見える部屋：昼
+;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+
+;======================================================================================
+*1_3
+;*イベント名のラベルを追加していきます。イベント１3回目【時子さんからの手紙】１月3週、
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+
+;======================================================================================
+*2_3
+;*イベント名のラベルを追加していきます。イベント１４回目【藤枝の留学辞退】2月3週、
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;【背景】藤枝＿音楽練習室
+[preload storage="data/fgimage/bg/I9IhvvVdPo/ongakurensyuusitu.jpg" wait=true]
+;【背景】主人公邸 庭の見える部屋：昼
+;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】主人公邸 玄関
+;[preload storage="data/fgimage/bg/bg_genkan.jpg" time=1000]
+
+;======================================================================================
+*3_4_goodED
+;*イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
+;======================================================================================
+*3_4_normalED
+;*イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
+;======================================================================================
+*4_4
+;*イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
+;======================================================================================
+*5_4
+;*イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
+;======================================================================================
+*6_4
+;*イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
+;======================================================================================
+*7_4
+;*イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
+;======================================================================================
+*8_4
+;*イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+;[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
+;======================================================================================
 *9_1
 ;*イベント名のラベルを追加していきます。
 ;======================================================================================
