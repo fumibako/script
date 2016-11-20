@@ -1,22 +1,21 @@
 ;//////散策案3//////////
-;このままだと能力が低いだけな気がしてモヤっとする
-;散策で、四条綾花さんを登場してみては？
-;期間・・・四条家でのデートのあとならいつでも？
-;四条祖母と出会い、花材を沢山持っていて主人公が手伝う。テンプレ。
-;理由があれば近所のお兄さんの家の前ならok?
-;幼馴染なので、わりと近所設定
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;期間・・・四条家でのデートのあとならいつでも？;四条祖母と出会い、花材を沢山持っていて主人公が手伝う。テンプレ。
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+;[call target=*start storage="macro_tati_sijyou.ks"]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
-[wait time=10]
 [主人公通常]
-[wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 #
 今日も町は、切れ目のない雑踏で賑わっている[p]
 [if exp="sf.BGM=='ON'"]
