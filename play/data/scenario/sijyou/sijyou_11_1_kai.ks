@@ -29,10 +29,15 @@
 *first
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[layopt layer=13 visible=true]
+[image name="jyunbi" x=1 y=1 layer=13 storage="bg/bg_ryoutei.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-;散策の話
 [四条ベース羽織]
 [四条憂い]
+;=============================
+[freeimage layer=13 time=800]
+[layopt layer=13 visible=true]
+;=============================
 [主人公通常]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
@@ -224,10 +229,20 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「[華衣]は、そのことで、ずっと僕を恨んでいる。[r]
 [sp]君からの手紙を捨ててしまうほどに……」[p]
 ;==============どんな風に恨んでいるの？？　今までどう行動してたの？====================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image layer=29 storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
 ;背景四条家
 [イベントシーン構築枠茶色]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;=============================
+[freeimage layer=29 time=800]
+[layopt layer=fix visible=true]
+;=============================
 [whosay name="華織" color="olivedrab"]
 「待ってくれ[華衣]、[r]
 [sp]信じてほしい、彼女が残したものが、ここにはあるんだ」[p]
@@ -239,26 +254,31 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;びりびり～♪
 ;【SE】走り去る(屋外)
 [playse storage=run_soto.ogg loop=false ]
+[四条目大]
 [whosay name="四条 華衣" color=%mp.color]
 「！[sp][華衣]……」[p]
 [stopse]
 [whosay name="四条 華衣" color=%mp.color]
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
 （あの雪の日のように[r]
-[sp]また僕は、[名前]さんのことも諦めないといけないのか)[p]
+[sp]また僕は、[名前]のことも諦めないといけないのか)[p]
 [whosay name="四条 華衣" color=%mp.color]
 （それで、[華衣]は、納得してくれるのだろうか）[p]
 [whosay name="四条 華衣" color=%mp.color]
-（でも、それでは、ただの甘えだ）[p]
+（でも、それでは、ただの甘えだ。　あの人と約束したから）[p]
 [whosay name="四条 華衣" color=%mp.color]
 （あの人の想いを伝えないと。　僕と[華衣]のためにも)[p]
 ;=============================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image layer=29 storage="bg/test_sijyou_namigauara.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[image layer=29 storage="bg/bg_ryoutei.jpg" time=100]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;[料亭]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 ;プレイヤー、華織に対して疑いはもつが、読むことによって多少の消化
