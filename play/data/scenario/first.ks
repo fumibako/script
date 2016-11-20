@@ -26,7 +26,7 @@
 _　　　　　　・・・読込中・・・[r]
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
-f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/toumei.gif","data/image/button_title_start.png","data/image/button_title_load.png","data/image/button_title_cg.png","data/image/button_title_replay.png","data/image/button_title_credit.png","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/button/frame_lesson.png","tyrano/images/kag/nextpage.gif","data/fgimage/button/kira_button.png","data/fgimage/button/menu_button_close.png"];
+f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/toumei.gif","data/image/button_title_start.png","data/image/button_title_load.png","data/image/button_title_cg.png","data/image/button_title_replay.png","data/image/button_title_credit.png","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/button/frame_lesson.png","data/fgimage/button/kira_button.png","data/fgimage/button/menu_button_close.png"];
 [endscript]
 [preload storage=&f.preload_images_title1 wait=true]
 _　　　　　　　　  20%
