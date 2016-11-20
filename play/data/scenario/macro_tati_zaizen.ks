@@ -1,4 +1,4 @@
-﻿﻿;==============================
+﻿﻿﻿;==============================
 ;layer8：他キャラbase（のっぺらぼう）
 ;layer9:他キャラ口
 ;layer10:他キャラ目
@@ -274,11 +274,21 @@
 
 ;立ち絵表示[財前笑み]
 [macro name="財前笑み"]
-[chara_mod name="zaizen_mayu" storage="zaizen/mayu_sage.png" time=0]
+[chara_mod name="zaizen_mayu" storage="zaizen/mayu_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="zaizen_me" storage="zaizen/me_fusi1.png" time=0]
 [wait time=10]
 [chara_mod name="zaizen_kuti" storage="zaizen/kuti_warau.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[財前笑み柔和]
+[macro name="財前笑み柔和"]
+[chara_mod name="zaizen_mayu" storage="zaizen/mayu_sage.png" time=0]
+[wait time=10]
+[chara_mod name="zaizen_me" storage="zaizen/me_niko.png" time=0]
+[wait time=10]
+[chara_mod name="zaizen_kuti" storage="zaizen/kuti_warau_soft.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -368,6 +378,12 @@
 ;立ち絵表示[財前口笑み]
 [macro name="財前口笑み"]
 [chara_mod name="zaizen_kuti" storage="zaizen/kuti_warau.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[財前口笑み柔和]
+[macro name="財前口笑み柔和"]
+[chara_mod name="zaizen_kuti" storage="zaizen/kuti_warau_soft.png" time=0]
 [wait time=10]
 [endmacro]
 

@@ -1,4 +1,4 @@
-﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+﻿﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
 f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaizen/me_okori.png","data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zaizen/kuti_hiyayaka.png","data/fgimage/zaizen/me_yokofusi1.png","data/fgimage/zaizen/me_yoko.png","data/fgimage/zaizen/me_toji.png","data/fgimage/zaizen/me_niko.png","data/fgimage/zaizen/me_fusi2.png","data/fgimage/zaizen/me_fusi1.png","data/fgimage/zaizen/me_ake.png","data/fgimage/zaizen/mayu_tuyoki.png","data/fgimage/zaizen/mayu_sage.png","data/fgimage/zaizen/mayu_odoroki.png","data/fgimage/zaizen/mayu_komari_soft.png","data/fgimage/zaizen/mayu_hisome.png","data/fgimage/zaizen/kuti_warau.png","data/fgimage/zaizen/kuti_odoroki.png","data/fgimage/zaizen/kuti_mu.png","data/fgimage/zaizen/kuti_hohoemi_soft.png","data/fgimage/zaizen/kuti_hohoemi.png","data/fgimage/zaizen/kuti_ake.png","data/fgimage/zaizen/emo_hohosome.png","data/fgimage/zaizen/emo_ase.png","data/fgimage/zaizen/kuti_futuu.png","data/fgimage/zaizen/me_futuu.png","data/fgimage/zaizen/mayu_futuu.png","data/fgimage/zaizen/base_suit.png","data/fgimage/zaizen/base_enbifuku.png"];
 [endscript]
@@ -53,8 +53,8 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 [glink target="face_12" text="[財前真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 color=white]
 [glink target="face_04" text="[財前困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 color=white]
 [glink target="face_10" text="[財前笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 color=white]
-[glink target="face_08" text="[財前怒り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 color=white]
-;[glink target="face_11" text="[財前憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 color=white]
+[glink target="face_11" text="[財前笑み柔和]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 color=white]
+[glink target="face_08" text="[財前怒り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 color=white]
 ;[glink target="face_02" text="[財前伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 color=white]
 
 [glink target="face_21" text="[財前目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
@@ -101,9 +101,10 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 [glink target="kuti_04" text="[財前口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 [glink target="kuti_07" text="[財前口微笑み柔和]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
 [glink target="kuti_05" text="[財前口笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="kuti_06" text="[財前口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-[glink target="kuti_09" text="[財前口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
-[glink target="kuti_08" text="[財前口大開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
+[glink target="kuti_10" text="[財前口笑み柔和]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink target="kuti_06" text="[財前口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+[glink target="kuti_09" text="[財前口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
+[glink target="kuti_08" text="[財前口大開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=330 color=white]
 
 
 [endif]
@@ -229,8 +230,8 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 @jump target=text
 
 *face_11
-[財前憂い]
-[eval exp="f.gra_zaizen_face='[財前憂い]'"]
+[財前笑み柔和]
+[eval exp="f.gra_zaizen_face='[財前笑み柔和]'"]
 @jump target=text
 
 *face_12
@@ -389,6 +390,11 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 *kuti_09
 [財前口ムッ]
 [eval exp="f.gra_zaizen_face='口：[財前口ムッ]'"]
+@jump target=text
+
+*kuti_10
+[財前口笑み柔和]
+[eval exp="f.gra_zaizen_face='口：[財前口笑み柔和]'"]
 @jump target=text
 
 
