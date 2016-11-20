@@ -583,20 +583,17 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;場面転換
 ;=====================シーン・パラメータ============================================================_
 *seen8
-[if exp=f.sijyou_sobo==true | | "f.para_shujinkou_j_kadou >= 80"]
-;華道パラが高いまたは、四条綾花f.sijyou_sobo==trueと会っていると表示される。それ以外は無し。
-;なぜかというと華道展イベントが表示されない可能性が高いからです。
 #
 私達は、埃に塗れながら大切な荷物を[ruby text=まと]纏めた。[p]
 [whosay name="華織" color="olivedrab"]
-「ふぅ。　思わず、気を使って、あんな事を言ってしまったけれど、[r]
+「……思わず、気を使って、あんな事を言ってしまったけれど、[r]
 [sp]先に、ここの事を尋ねれば良かったのでしょうね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ですけど、分かっていただいて良かったです」[p]
 [whosay name="華織" color="olivedrab"]
-「これも、[名前]が、一緒にいてくれたおかげですよ[r]
+「これも、[名前]が、一緒にいてくれたおかげです[r]
 [sp]きっと、僕ひとりが尋ねたところで、あの状況では、嫌味にしか[r]
-[sp]思われなかっただろう」[p]
+[sp]思われなかったでしょうね……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ……」[p]
 [whosay name="華織" color="olivedrab"]
@@ -607,6 +604,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;あるほうですから
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
+[if exp=f.sijyou_sobo==true | | "f.para_shujinkou_j_kadou >= 80"]
+;華道パラが高いまたは、四条綾花f.sijyou_sobo==trueと会っていると表示される。それ以外は無し。
+;なぜかというと華道展イベントが表示されない可能性が高いからです。
 [whosay name="華織" color="olivedrab"]
 （世襲財産までの差し押さえか……よっぽどのことなのだろうか？)[p]
 （けど、華族が、いつまでも栄華を極めていられるかなんて、[r]
