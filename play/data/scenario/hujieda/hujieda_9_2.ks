@@ -1,17 +1,21 @@
-;=============================================
+;============================================================================
 ;イベント７回目【再び手紙が届く】9月2週、お琴のお稽古
-;=============================================
-;【背景】主人公邸 お稽古部屋
- [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;============================ここからお芝居の幕================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*9_2 storage="sijyou/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+;【背景】主人公邸 お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;============================ここからお芝居の幕開け================================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
