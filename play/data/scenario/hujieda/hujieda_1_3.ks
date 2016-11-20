@@ -1,18 +1,25 @@
-;=============================================
+;=========================================================================
 ;イベント１3回目【時子さんからの手紙】１月3週、
-;=============================================
-[背景_庭]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*1_3 storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+[call target=*start storage="macro_tati_hujieda.ks"]
+;【背景】主人公邸 部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
-[主人公目パチ1回]
+#
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=========================================================================
 
+[主人公目パチ1回]
 #
 磯野は手紙を差し出していった[p]
 
