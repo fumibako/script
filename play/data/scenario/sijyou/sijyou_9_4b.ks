@@ -129,6 +129,8 @@
 ;==========================================================================
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [image layer=29 name="jyunbi" storage=""bg/room_niwa_yoru.jpg" time=10]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.kaogura!='on'"]
