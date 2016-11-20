@@ -47,49 +47,61 @@
 ;藤枝プリロード
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 ;=========================================================================================
-*zaizen
-;立ち絵表示[財前ベース]
-[preload storage="data/fgimage/zaizen/base_suit.png" wait=true]
-;立ち絵表示[財前ベース燕尾服]
-[preload storage="data/fgimage/zaizen/base_enbifuku.png" wait=true]
-;財前眉普通
-[preload storage="data/fgimage/zaizen/mayu_futuu.png" wait=true]
-;財前眉ひそめ
-[preload storage="data/fgimage/zaizen/mayu_hisome.png" wait=true]
-;財前眉強気
-[preload storage="data/fgimage/zaizen/mayu_tuyoki.png" wait=true]
-;財前眉下げ
-[preload storage="data/fgimage/zaizen/mayu_sage.png" wait=true]
-;財前眉冷ややか
-[preload storage="data/fgimage/zaizen/mayu_hiyayaka.png" wait=true]
-;財前眉驚き
-[preload storage="data/fgimage/zaizen/mayu_odoroki.png" wait=true]
-;財前眉やわらか
-[preload storage="data/fgimage/zaizen/mayu_komari_soft.png" wait=true]
-;財前目
-[preload storage="data/fgimage/zaizen/me_hiyayaka.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_niko.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_toji.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_yokofusi1.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_fusi1.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_okori.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_fusi2.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_ake.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_yoko.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_futuu.png" wait=true]
-;財前口
-[preload storage="data/fgimage/zaizen/kuti_futuu.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_hohoemi.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_ake.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_mu.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_okori.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_odoroki.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_warau.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_warau_soft.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_hiyayaka.png" wait=true]
-;財前エモ
-[preload storage="data/fgimage/zaizen/emo_ase.png" wait=true]
-[preload storage="data/fgimage/zaizen/emo_hohosome.png" wait=true]
+*hujieda
+;立ち絵表示[藤枝ベース]
+[preload storage="data/fgimage/hujieda/base_sifuku.png" wait=true]
+;立ち絵表示[藤枝郵便局員服]
+[preload storage="data/fgimage/hujiedan/base_yuubin.png" wait=true]
+;[藤枝眉通常]
+[preload storage="data/fgimage/hujieda/mayu_futuu.png" wait=true]
+;[藤枝眉下げ]
+[preload storage="data/fgimage/hujieda/mayu_sage.png" wait=true]
+;[藤枝眉驚き]
+[preload storage="data/fgimage/hujieda/mayu_odoroki.png" wait=true]
+;[藤枝眉困り]
+[preload storage="data/fgimage/hujieda/mayu_komari.png" wait=true]
+;[藤枝眉強気]
+[preload storage="data/fgimage/hujieda/mayu_tuyoki.png" wait=true]
+;[藤枝眉平行]
+[preload storage="data/fgimage/hujieda/mayu_heikou.png" wait=true]
+;藤枝目
+;[藤枝目通常]
+[preload storage="data/fgimage/hujieda/me_futuu.png" wait=true]
+;[藤枝目大]
+[preload storage="data/fgimage/hujieda/me_ake.png" wait=true]
+;[藤枝目にこ]
+[preload storage="data/fgimage/hujieda/me_niko.png" wait=true]
+;[藤枝目伏]
+[preload storage="data/fgimage/hujieda/me_fusi1.png" wait=true]
+;[藤枝目閉じ]
+[preload storage="data/fgimage/hujieda/me_toji.png" wait=true]
+;[藤枝横目]
+[preload storage="data/fgimage/hujieda/me_yoko.png" wait=true]
+;[藤枝横伏目]
+
+;藤枝口
+[preload storage="data/fgimage/hujieda/me_yokofusi1.png" wait=true]
+;[藤枝口通常]
+[preload storage="data/fgimage/hujieda/kuti_futuu.png" time=0]
+;[藤枝口微笑み]
+[preload storage="data/fgimage/hujieda/kuti_hohoemi.png" time=0]
+;[藤枝口笑顔]
+[preload storage="data/fgimage/hujieda/kuti_warau_s.png" time=0]
+;[藤枝口笑顔大]
+[preload storage="data/fgimage/hujieda/kuti_warau.png" time=0]
+;[藤枝口開]
+[preload storage="data/fgimage/hujieda/kuti_ake.png" time=0]
+;[藤枝口大開]
+[preload storage="data/fgimage/hujieda/kuti_ooake.png" time=0]
+;[藤枝口驚き]
+[preload storage="data/fgimage/hujieda/kuti_odoroki.png" time=0]
+;[藤枝口ムッ]
+[preload storage="data/fgimage/hujieda/kuti_mu.png" time=0]
+;[藤枝汗]
+[preload storage="data/fgimage/hujieda/emo_ase.png" time=0]
+;[藤枝頬染め]
+[preload storage="data/fgimage/hujieda/emo_hohosome.png" time=0]
+
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
