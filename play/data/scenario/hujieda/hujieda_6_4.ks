@@ -1,20 +1,24 @@
 ;=============================================
 ;イベント3回目【手紙が届くその３】６月お琴のお稽古を２回以上
-;=============================================
-;【背景】主人公邸 お稽古部屋
- [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*6_4 storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+;【背景】主人公邸 お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
+#
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=========================================================================
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公閉伏目パチ1回]
 ;【立ち絵】主人公　困り
 [主人公困り]
