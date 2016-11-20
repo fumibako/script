@@ -243,6 +243,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;==============どんな風に恨んでいるの？？　今までどう行動してたの？====================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [image layer=29 storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 [wait time=10]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -250,7 +251,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;背景四条家
 [イベントシーン構築枠茶色]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;=============================
 [freeimage layer=29 time=800]
 [layopt layer=fix visible=true]
