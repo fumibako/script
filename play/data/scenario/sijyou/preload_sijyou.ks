@@ -132,8 +132,12 @@
 ;//////////////////使用背景メモ//////////////////
 [preload storage="data/fgimage/bg/bg_prologue.jpg" wait=true]
 ;どうしても全画面で文字が表示されない時がある
+[preload storage="data/fgimage/bg/bg_kabuki_in.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_kabuki_out.jpg" wait=true]
-[preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/ginza3.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" wait=true]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_rouka.jpg" wait=true
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -146,7 +150,7 @@
 [wait time=50]
 ;//////使用背景メモ///////////////////////////////////
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
-[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" wait=true]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -161,7 +165,7 @@
 ;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true wait=true]
-[preload storage="data/fgimage/bg/bg_kabuki_out.jpg"]
+[preload storage="data/fgimage/bg/bg_kabuki_out.jpg" wait=true]
 ;[preload storage="data/fgimage/bg/room_niwa_yuki.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
