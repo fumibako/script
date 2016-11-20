@@ -5,13 +5,12 @@
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;==================================================
 *first
-;どこかで先に読見込んでいただけると助かります
-;プリロード画面自体のプリロード
-[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
 ;↓プリロード作成をありがとうございます。first.ksでのプリロードに移動と動作確認ができましたので、こちらのプリロード処理を消去します
 ;四条用プリロード画面はどこで読み込むか思案中です。okeiko.ksにif分岐で読込を考えてみましたが、okeiko.ksはほぼループ動作なので…何度も読み込むとメモリを圧迫したりするだろうかと懸念したりです(スクリプト担
-[return]
+;プリロード画面自体のプリロード
+;[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
 ;以降は、無駄な読み込みはしない
+@jump target=end_sub0
 ;=======================================================================================
 ;◇プリロードサブルーチン　targetで呼び出し方法　シナリオで呼び出し設定してます。
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
@@ -26,6 +25,9 @@
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+;ここで読みましょう！？
+;プリロード画面自体のプリロード
+[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -150,15 +152,7 @@
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
 *10_3
-[macro name="プリロード画面消去"]
-[iscript]
-$('.loding_pic').remove();
-$('.loding_pic1').remove();
-[endscript]
-[layopt layer=fix visible=true]
-[endmacro]
 [layopt layer=29 visible=true]
-;機能ボタン消去の方法はとっていない
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
@@ -174,13 +168,6 @@ $('.loding_pic1').remove();
 ;以降は、無駄な読み込みはしない
 ;==========================================================================
 *11_1
-[macro name="プリロード画面消去"]
-[iscript]
-$('.loding_pic').remove();
-$('.loding_pic1').remove();
-[endscript]
-[layopt layer=fix visible=true]
-[endmacro]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
@@ -195,6 +182,7 @@ $('.loding_pic1').remove();
 [preload storage="data/fgimage/bg/bg_bluesky.jpg" time=100 wait=true]
 [preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg" wait=true]
 [preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg" wait=true]
+[preload storage="data/fgimage/bg/sijyou_namigaura.jpg" wait=true]
 [preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" wait=true]
 [preload storage="data/fgimage/bg/sijyou_byouin.jpg" wait=true]
 @jump target=end_sub
@@ -361,6 +349,7 @@ $('.loding_pic1').remove();
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
 *sansaku7
+;香水店デート　プリロード画面表示は未定
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
@@ -382,6 +371,7 @@ $('.loding_pic1').remove();
 ;全てはここにGoします
 [cm]
 ;==========================================================================
+*end_sub0
 ;◆[プリロード画面消去]
 [macro name="プリロード画面消去"]
 [iscript]
