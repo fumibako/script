@@ -130,7 +130,7 @@ $('.saku1').remove();
 [playse storage=tori_suzume.ogg loop=false ]
 ;【背景】主人公邸 庭の見える部屋：昼
 [layopt layer=fix visible=false]
-[image name="junbi" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=100]
+[image name="junbi" layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=100]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=50]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
