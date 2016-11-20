@@ -11,7 +11,7 @@
 テストページからはじめます。[p]
 ;/////////////////////////////////////////////////////
 *start
-[fadeoutbgm time=3000]
+
 [eval exp="f.kaogura!='off'"]
 ;会話ウィンドウ消去
 [freeimage layer = 14]
