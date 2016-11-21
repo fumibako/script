@@ -259,25 +259,26 @@
 守られるかのようにして、色とりどりのネリネが[r]
 生育されていた。[p]
 ;=============================
+[call target=*start storage="macro_tati_sijyou.ks"]
 ;SEキラキラ？間
+;[cancelskip] スキップ停止にしないとgitではフリーズするかも
 [playse storage=shine.ogg loop=false ]
 [eval exp="f.haikei_credit='photo　by　＠名無し１'"]
-[layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image layer=29 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[image layer=29 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50 visible=true]
+[wait time=5]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;=============================
-[call target=*start storage="macro_tati_sijyou.ks"]
 ;婚約者の花園
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 ;=============================
-[freeimage layer=29 time=1000]
+[freeimage layer=29 time=800]
 [layopt layer=fix visible=true]
 ;=============================
 [四条ボタン表示]
@@ -396,7 +397,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 [四条ベース羽織]
 [四条憂い]
 ;======四条登場======
-[freeimage layer=13 time=1000]
+[freeimage layer=13 time=500]
 [layopt layer=13 visible=true]
 ;;======四条登場======
 [whosay name="華衣" color=%mp.color]
