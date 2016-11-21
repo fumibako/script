@@ -1200,7 +1200,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「今度は正式に会いましょう　その時までにこの香りを覚えておくよ」[p]
-[四条退場 storage=""bg/bg_genkan.jpg" layer=13 time=500]
+[四条退場準備 storage="bg/bg_genkan.jpg" layer=13 time=500]
 #
 華織様は、手をとって門前まで送ると、会釈をして帰っていった。[p]
 首筋に、ほんのりと香りを残して……[p]
