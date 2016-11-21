@@ -425,7 +425,7 @@ $('.loding_pic1').remove();
 ;こちらも問題がなければ↓移動してください　フルで書くよりはマシな程度です
 ;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
 [macro name=表示準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 visible=true]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 zindex=1 visible=true]
 [wait time=50]
 [endmacro]
 
