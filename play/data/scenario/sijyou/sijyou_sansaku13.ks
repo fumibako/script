@@ -7,7 +7,13 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
+;四条表示準備実験
+[macro name=四条表示準備]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 visible=true]
+[wait time=50]
+[endmacro]
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[四条表示準備 storage="bg/bg_machi.jpg]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
