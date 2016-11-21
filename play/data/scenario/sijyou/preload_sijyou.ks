@@ -432,7 +432,7 @@ $('.loding_pic1').remove();
 [macro name=退場準備]
 [image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
 [wait time=50]
-[endmacro
+[endmacro]
 
 ;こんな感じでmp分岐してもいいですが重くなるかもしれないですし、全部まとめるの無理だった　
 ;[表示準備　seen=町]　[表示準備　storage=bg/bg_machi.jpg]
