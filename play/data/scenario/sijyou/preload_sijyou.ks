@@ -428,9 +428,12 @@ $('.loding_pic1').remove();
 [image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
 [wait time=50]
 [endmacro]
-;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
-[macro name=退場準備]
+;◆[四条退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
+[macro name=四条退場準備]
 [image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[四条退場]
+[freeimage time=50]
 [wait time=50]
 [endmacro]
 
