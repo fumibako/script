@@ -17,6 +17,51 @@
 [ruby text="か"]華[ruby text="い"]衣
 [endmacro]
 
+
+;◆[イベントシーン構築ボタン無し版枠茶色]
+[macro name="イベントシーン構築ボタン無し版枠茶色"]
+[clearfix]
+;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+[chara_new name="girl_base" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=15 name="girl_base" time=0]
+[wait time=10]
+[chara_new name="girl_mayu" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=16 name="girl_mayu" time=0]
+[wait time=10]
+[chara_new name="girl_me" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=17 name="girl_me" time=0]
+[wait time=10]
+[chara_new name="girl_kuti" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=18 name="girl_kuti" time=0]
+[wait time=10]
+[chara_new name="girl_emo" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=19 name="girl_emo" time=0]
+[wait time=10]
+[chara_new name="girl_te" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=20 name="girl_te" time=0]
+[wait time=10]
+;メッセージ窓画像の仮表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
+[freeimage layer = 14]
+[chara_new name="message_bg" storage="toumei.gif"]
+[chara_show left=1 top=391 layer=14 name="message_bg"]
+;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
+[eval exp="f.message_storage='message_bg/frame_brown.png'"]
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 page=fore visible=true
+[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
+[chara_config ptext="chara_name_area"]
+[resetfont]
+[endmacro]
+
+;==================================================
 ;◆[イベントシーン構築ボタン無し版]
 [macro name="イベントシーン構築ボタン無し版"]
 [clearfix]
