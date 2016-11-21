@@ -423,19 +423,25 @@ $('.loding_pic1').remove();
 [endmacro]
 ;==========================================================================
 ;こちらも問題がなければ↓移動してください　フルで書くよりはマシな程度です
-;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
+;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。主人公部屋には攻略対象こないので
 [macro name=表示準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 zindex=1 visible=true]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
 [wait time=50]
 [endmacro]
+;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
+[macro name=退場準備]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[endmacro
 
-;こんな感じでmp分岐してもいいですが重くなるかもしれないです[表示準備　seen=町]　[表示準備　storage=bg/bg_machi.jpg]
+;こんな感じでmp分岐してもいいですが重くなるかもしれないですし、全部まとめるの無理だった　
+;[表示準備　seen=町]　[表示準備　storage=bg/bg_machi.jpg]
 ;[macro name="表示準備"]
 ;[if exp="mp.seen==町"]
 ;[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 visible=true]
 ;[endif]
 ;[if exp="mp.seen==主人公部屋"]
-;[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 visible=true]
+;[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 visible=true]
 ;[endif]
 ;[endmacro]
 
