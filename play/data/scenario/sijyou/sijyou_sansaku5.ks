@@ -71,11 +71,11 @@
 #
 ;セリフは適当。時期でセリフの変更
 [whosay name=&sf.girl_namae color="[whosay name="cf5a7f"]
-;[if exp=]
+[if exp=f.sysgra_okeiko_month > 12]
 ([華衣]さん、少し変わられましたね)
-;[else]
+[else]
 (何だったのでしょうか？)
-;[endif]
+[endif]
 [p]
 
 ;間違えてコピーしたかも？↓
