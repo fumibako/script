@@ -9,6 +9,7 @@
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[表示準備]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -222,6 +223,7 @@ _　しょうか)[p]
 ;【登場】四条
 [四条ベース羽織]
 [四条驚き]
+[freeimage layer=13 time=300]
 [主人公驚]
 [wait time=10]
 [主人公ポーズ片手]
@@ -630,7 +632,10 @@ _　さてどうしましょうか？」[p]
 [sp]来るまで） [p]
 #
 ;【退場】四条
-[四条退場]
+[四条退場準備 time=500]
+
+;============================下は触らない？==============================
+
 ;機能ボタン表示
 [locate x=530 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
@@ -665,11 +670,6 @@ _　さてどうしましょうか？」[p]
 ;[主人公ポーズ通常]
 
 
-;@jump storage="event.ks" target=*event_owari
-
-[イベントシーン終了]
-@jump storage="test_sijyou.ks"
-[s]
 
 *window_close
 [cm]
