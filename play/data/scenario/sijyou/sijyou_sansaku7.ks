@@ -57,7 +57,7 @@
 [playse storage=harukaze.ogg loop=false ]
 [主人公驚]
 [主人公ポーズ指]
-[image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
+[image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=13 zindex=2 left=-200]
 ;------------keyframe の定義
 [keyframe name="animation1"]
 [frame p=100% x="3000" scale="4"]
