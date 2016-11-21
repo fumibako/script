@@ -39,8 +39,8 @@
 [主人公通常]
 [主人公口開]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「お父様、私はまだ学ぶべきことが沢山あります。[sp]私には[r]
-[sp]まだ結婚は考えられません」[p]
+「お父様、私はまだ学ぶべきことが沢山あります。[r]
+[sp]私には、まだ結婚は考えられません」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]にはまだ早かったか……。[r]
@@ -54,7 +54,7 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「それは良いことだな。[r]
-[sp]お稽古を頑張るなら、また良縁も来るだろう。[sp]精進しなさい」[p]
+[sp]お稽古を頑張るなら、また良縁も来るだろう。 精進しなさい」[p]
 
 ;【立ち絵】主人公：笑顔
 [whosay name=&sf.girl_namae color="#cf5a7f"]
