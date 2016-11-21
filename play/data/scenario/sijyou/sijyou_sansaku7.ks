@@ -181,24 +181,27 @@ $('.saku1').remove();
 [chara_mod name="bg" storage="toumei.gif"]
 ;背景銀座
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
+[表示準備 storage="bg/B4nFWraU42/ginza3.jpg" layer=29]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;磯野に罪悪感　どきどき　楽しい
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[freeimage layer=29 time=500]
 ;↓眉： [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （はじめて、磯野にも言わずで遠くまで来てしまったわ）[p]
 [主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、手だって……）[p]
+
+[表示準備 storage="bg/B4nFWraU42/ginza3.jpg"]
 #
 私は、多くの公衆の面前だというのに自然と華織と手を繋いでいたことに[r]
 気づいてしまった。[p]
@@ -216,6 +219,7 @@ $('.saku1').remove();
 [四条ベース着物]
 [四条笑顔]
 [四条頬染め]
+[freeimage layer=13 time=500]
 「 これからは、ずっと繋いで歩いて行けたらいいね」 [p]
 ;にこりと笑って
 [whosay name=&sf.girl_namae color="#cf5a7f"]
