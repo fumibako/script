@@ -21,30 +21,27 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り
 [主人公困り]
-（お稽古やっぱり難しいわ、
-始めたばかりなのにくじけそう……）[p]
-
+（お稽古って、やっぱり難しいわ。[sp]始めたばかりなのに[ruby text=くじ]挫けそう……）[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】夕涼み（お稽古パートなど
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
-
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】主人公 驚
 [主人公驚]
 「まあ！かわいい鳩ね。[r]
-あ・・・お琴の上にのってはダメよ」[r]
-（近づいても逃げない！）[p]
+[sp]あ・・・お琴の上にのってはダメよ」[p]
+
+（あら、近づいても逃げない！）[p]
 
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]
 「随分人に慣れた鳩なのね。」 [p]
 [主人公目パチ1回]
-「足に紙が括り付けてあるわ」[r]
-（取った方がいいのかしら？）[p]
+「足に紙が括り付けてあるわ。　取った方がいいのかしら？」[p]
 
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
@@ -62,7 +59,6 @@
 
 ;【SE】鳩の羽ばたき（バサバサッ）
 [playse storage=tori_habataki_hato.ogg loop=false ]
-
 
 ;【立ち絵】主人公 困り
 [主人公困り]
@@ -102,9 +98,11 @@
 ;【立ち絵】主人公　微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
-「こんな風に応援してくれる方もいらっしゃるのね[r]
-[sp]お琴うまくなれるかしら[r]
-[sp]いえ……精一杯お稽古がんばりましょう！」[p] 
+「こんな風に応援してくれる方もいらっしゃるのね」[p]
+[主人公目閉]
+「お琴うまくなれるかしら……」[p]
+[主人公ほほえみ]
+「いえ……精一杯お稽古がんばりましょう！」[p] 
 [fadeoutbgm time=3000]
 ;@jump storage="event.ks" target=*event_owari
 
