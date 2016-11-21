@@ -182,7 +182,7 @@ $('.saku1').remove();
 ;背景銀座
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-============================================================
+;============================================================
 [表示準備 storage="bg/B4nFWraU42/ginza3.jpg" layer=29]
 [主人公ポーズ通常]
 [wait time=10]
@@ -190,7 +190,7 @@ $('.saku1').remove();
 [wait time=10]
 [freeimage layer=29 time=500]
 [layopt layer=fix visible=true]
-============================================================
+;============================================================
 ;↓眉： [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -221,7 +221,7 @@ $('.saku1').remove();
 [四条ベース着物]
 [四条笑顔]
 [四条頬染め]
-[freeimage layer=13 time=500]
+[freeimage layer=13 time=400]
 「 これからは、ずっと繋いで歩いて行けたらいいね」 [p]
 ;にこりと笑って
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -268,18 +268,24 @@ $('.saku1').remove();
 [主人公退場]
 [四条退場]
 ;////////////////////~~シーン香水店前~~~///////////////////////////
+;華織、香りつながりで化粧品店、調香店に 行く
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
+;=====================表示準備==============================
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;背景：店外
-;華織、香りつながりで化粧品店、調香店に 行く
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=29]
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[freeimage layer=29 time=500]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=13]
+;===================================================
 華織様に付いていくと、ビルヂングの下に収まった店が目に留まった。[p]
 ショーウィンドウには、花が活けられ、中の照明と共に商品を引き立てて[r]
 いた。[p]
-;適当↑
-[主人公ポーズ通常]
-[wait time=10]
 [主人公驚]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -289,9 +295,11 @@ $('.saku1').remove();
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-[wait time=1]
+[wait time=10]
 [四条ベース着物]
+[wait time=10]
 [四条微笑み]
+[freeimage layer=13 time=500]
 [whosay name="華織" color="olivedrab"]
 「ここは、祖母の知人が営んでいる 調香店だよ」[p]
 [主人公口ほほえみ]
@@ -316,16 +324,18 @@ $('.saku1').remove();
 [wait time=10]
 [主人公目閉じ]
 [四条退場]
-;主人公退場でもいい
+;主人公退場でもいい→やだ！めんどう！
 ;////////////////////~~シーン香水店内~~~///////////////////////////
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;背景説明　背景ないので未
 [四条ベース着物]
 [四条通常]
+[freeimage layer=13 time=500]
 ;説明・四条綾花・・・祖母　散策をみてね
 [主人公通常]
 [wait time=10]
@@ -491,9 +501,12 @@ $('.saku1').remove();
 [chara_mod name="bg" storage="toumei.gif"]
 ――　華織様の香りを確かめる。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
+[freeimage layer=13 time=500]
+
 ;セリフは適当 もっとお上品にしてください
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -589,8 +602,10 @@ $('.saku1').remove();
 私は、恥ずかしくなって、小瓶の香りを確かめることにした。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
+[freeimage layer=13 time=500]
 [主人公ポーズ片手]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -681,8 +696,10 @@ $('.saku1').remove();
 私は、華織様にお願いして、つけてもらうことにした。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
+[freeimage layer=13 time=500]
 [主人公真剣]
 ;↑のほうが爽やか？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -775,8 +792,10 @@ $('.saku1').remove();
 私は、恥ずかしくなって、自分でつけることにした。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
+[freeimage layer=13 time=500]
 [主人公驚]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1004,8 +1023,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
+[freeimage layer=13 time=500]
 ;(　´_ゝ｀)ﾌｰﾝって内容でもある
 [whosay name="調香店主" color=%mp.color]
 「驚いちゃいましたよ。　とても素敵な縁を感じましたね」[p]
@@ -1107,8 +1128,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【背景】主人公邸 玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[表示準備 storage=""bg/bg_genkan.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
+[freeimage layer=13 time=500]
 [主人公ポーズ通常]
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
@@ -1177,7 +1200,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「今度は正式に会いましょう　その時までにこの香りを覚えておくよ」[p]
-[四条退場]
+[四条退場 storage=""bg/bg_genkan.jpg" layer=13 time=500]
 #
 華織様は、手をとって門前まで送ると、会釈をして帰っていった。[p]
 首筋に、ほんのりと香りを残して……[p]
