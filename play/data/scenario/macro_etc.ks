@@ -17,6 +17,51 @@
 [ruby text="か"]華[ruby text="い"]衣
 [endmacro]
 
+;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。主人公部屋には攻略対象こないので
+[macro name=表示準備]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[endmacro]
+
+;◆[四条退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
+[macro name=四条退場準備]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[四条退場]
+[freeimage layer=13 time=50]
+[wait time=50]
+[endmacro]
+
+;◆[藤枝退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
+[macro name=藤枝退場準備]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[藤枝退場]
+[freeimage layer=13 time=50]
+[wait time=50]
+[endmacro]
+
+;◆[葛城宮退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
+[macro name=葛城宮退場準備]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[葛城宮退場]
+[freeimage layer=13 time=50]
+[wait time=50]
+[endmacro]
+
+;◆[財前退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
+[macro name=財前退場準備]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[財前退場]
+[freeimage layer=13 time=50]
+[wait time=50]
+[endmacro]
+
+[macro name="淑女称号表示"]
+[emb exp="f.shougou"]
+[endmacro]
 
 ;◆[イベントシーン構築ボタン無し版枠茶色]
 [macro name="イベントシーン構築ボタン無し版枠茶色"]
