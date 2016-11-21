@@ -421,6 +421,24 @@ $('.loding_pic1').remove();
 [endscript]
 [layopt layer=fix visible=true]
 [endmacro]
+;==========================================================================
+;こちらも問題がなければ↓移動してください　フルで書くよりはマシな程度です
+;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
+[macro name=表示準備]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 visible=true]
+[wait time=50]
+[endmacro]
+
+;こんな感じでmp分岐してもいいですが重くなるかもしれないです[表示準備　seen=町]　[表示準備　storage=bg/bg_machi.jpg]
+;[macro name="表示準備"]
+;[if exp="mp.seen==町"]
+;[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 visible=true]
+;[endif]
+;[if exp="mp.seen==主人公部屋"]
+;[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 visible=true]
+;[endif]
+;[endmacro]
+
 ;==================================================
 ;テストプレイで画面遷移時の自然さに見入ってしまいました。立ち絵が背景と共にふわっと溶け込むように切り替わる自然さが素晴らしいと思います
 ;↓macro_etc.ksに[四条イベントシーン構築][四条ボタン表示]を追加と動作確認をしましたので、こちらは消去させていただきます
