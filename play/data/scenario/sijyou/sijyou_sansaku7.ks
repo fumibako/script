@@ -173,22 +173,24 @@ $('.saku1').remove();
 「華織様！？」[p]
 [主人公退場]
 [四条退場]
-;【SE】うぐいす（ケキョケキョ）
-;[playse storage=tori_uguisu_pikyo.ogg loop=false ]
 #
 ;//////////////////~~シーン銀座~~////////////////////////////
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;【SE】人々のざわめき（ザワザワ…屋外）
+[playse storage=zawa_out.ogg loop=false]
+[layopt layer=fix visible=false]
 ;背景銀座
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
-[表示準備 storage="bg/B4nFWraU42/ginza3.jpg" layer=29]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-;磯野に罪悪感　どきどき　楽しい
+============================================================
+[表示準備 storage="bg/B4nFWraU42/ginza3.jpg" layer=29]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [freeimage layer=29 time=500]
+[layopt layer=fix visible=true]
+============================================================
 ;↓眉： [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
