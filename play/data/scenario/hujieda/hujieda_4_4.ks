@@ -21,7 +21,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り
 [主人公困り]
-（お稽古って、やっぱり難しいわ。[sp]始めたばかりなのに[ruby text=くじ]挫けそう……）[p]
+（お稽古って、やっぱり難しいわ。[r]
+[sp]始めたばかりなのに[ruby text=くじ]挫けそう……）[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】夕涼み（お稽古パートなど
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
@@ -30,16 +31,22 @@
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 驚
 [主人公驚]
 「まあ！かわいい鳩ね。[r]
 [sp]あ・・・お琴の上にのってはダメよ」[p]
-
-（あら、近づいても逃げない！）[p]
+#
+;どんなハトがどの場所に・・・
+;[主人公口通常]
+;愛らしいハトが慣れた様子で、琴の柏葉に留まった。[r]
+;その様子は、まるで何かを待っているような落ち着きぶりであった。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（あら、近づいても逃げないのね？）[p]
 
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]
-「随分人に慣れた鳩なのね。」 [p]
+「随分人に慣れた鳩なのね」 [p]
 [主人公目パチ1回]
 「足に紙が括り付けてあるわ。　取った方がいいのかしら？」[p]
 
