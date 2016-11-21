@@ -33,7 +33,7 @@
 
 ;時期でセリフの変更
 [whosay name="四条母"]
-[if exp=f.sysgra_okeiko_month > 12]
+[if exp="f.sysgra_okeiko_month" > 12]
 「華衣、ダメよ！勝手に何処かに行っては！」
 ;お稽古は終わっているが過保護
 [else]
@@ -53,7 +53,7 @@
 
 ;時期でセリフの変更
 [whosay name="四条 華衣"]
-[if exp=f.sysgra_okeiko_month > 12]
+[if exp="f.sysgra_okeiko_month" > 12]
 「うるさい、俺はひとりになりたいの！」
 [else]
 「うるさい、俺は自分で何とかしたいの！」
@@ -71,7 +71,7 @@
 #
 ;セリフは適当。時期でセリフの変更
 [whosay name=&sf.girl_namae color="[whosay name="cf5a7f"]
-[if exp=f.sysgra_okeiko_month > 12]
+[if exp="f.sysgra_okeiko_month" > 12]
 ([華衣]さん、少し変わられましたね)
 [else]
 (何だったのでしょうか？)
