@@ -1,4 +1,5 @@
 ;期間　春　イベント発生条件　全てのイベントを見ている場合、または華道のレベルなど差別化で甘さ回避
+;==========================================================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 ;特別イベントなので四条プリロード画面表示
@@ -7,8 +8,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;////////////////シーンここから////////////////
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[表示準備]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
@@ -16,6 +17,7 @@
 [主人公通常]
 [wait time=10]
 [プリロード画面消去]
+;==========================================================================
 [四条ボタン表示]
 ; 起 　散策　家が近いのでたまたま出会う。事件もおわって親の許可も得ているので
 ;場所　いつもの町中
@@ -118,15 +120,9 @@ $('.saku1').remove();
 むこうもこちらに気づいて歩み寄る。[p]
 ;ひとこみ？と思う悲しい人へ
 ;四条喜び全開
-;透明化して裏で変更
-;[kanim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="opcy" time="1"]
-;[wa]
 [四条ベース着物]
 [四条笑顔大]
-;表示 同時表示不可、表情から表示されてしまう
-;[kanim name="sijyou_base" keyframe="not_opcy" time="0"]
-;[kanim name="sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" keyframe="not_opcy" time="2"]
-;[wa]
+[freeimage layer=13 time=800]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん！　こんなところで会えるなんて奇遇だね。[r]
 ;困り笑顔
