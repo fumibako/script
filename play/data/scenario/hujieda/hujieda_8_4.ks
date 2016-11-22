@@ -69,8 +69,8 @@
 
 #
 はやる気持ちに着地した鳩の足の手紙をさっと解く。[p]
+[fadeoutbgm time=2000]
 
-[fadeoutbgm time=3000]
 ;【SE】衣擦れ（スッ）
 [playse storage=kinuzure.ogg loop=false ]
 ;【SE】紙に触れる（スッ）
@@ -176,6 +176,7 @@
 
 [主人公目閉]
 （直接話しては手紙を交わした事が分ってしまうわ）[p]
+#
 [fadeoutbgm time=3000]
 [主人公効果消]
 
@@ -191,13 +192,17 @@
 [endif]
 
 ;【背景】主人公邸 玄関
- [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
- [表示準備 storage="bg/bg_genkan.jpg"]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[表示準備 storage="bg/bg_genkan.jpg" layer=29]
+[表示準備 storage="bg/bg_genkan.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[イベントシーン構築ボタン]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
+[freeimage layer=29 time=500]
+;=========表示================
+[メッセージウィンドウ上ボタン表示]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （こっそり拝見するだけならいいわよね）[p]
@@ -213,7 +218,7 @@
 [藤枝ベース郵便屋]
 [藤枝通常]
 [藤枝口微笑み]
-[freeimage layer=13 time=500]
+[freeimage layer=13 time=300]
 ;=========================
 [whosay name="藤枝 肇" color=%mp.color] 
 「郵便です！」
@@ -256,7 +261,7 @@
 [主人公頬染め]
 [主人公口ほほえみ]
 （そうしたら、藤枝様も喜んで下さるかもしれないわ）[p]
-
+#
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
