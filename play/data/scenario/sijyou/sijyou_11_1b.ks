@@ -344,11 +344,13 @@
 ;メッセージレイヤを全画面用に設定変更
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[eval exp="f.message_storage='toumei.gif'"]
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
-[wait time=50]
 [image layer=29 x=1 y=1 zindex=3 storage="bg/bg_prologue.jpg" time=50 visible=true]
+[wait time=50]
+;[eval exp="f.message_storage='toumei.gif'"]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
+;四条家玄関
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [font color=white size=27]
 ―― 華で綴られる想いが私たちの目の前に広がる。[r]
@@ -380,7 +382,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;sepia(100%)だと四条邸壁や空の青さが飛んでしまうため50%に。さらに調整入れるかもです
 ;=================================================================================_
 ;四条家玄関
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 ;画面復帰
 [freeimage layer=29 time=500]
 [メッセージウィンドウ上ボタン表示]
@@ -471,13 +473,19 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;=================================================================================_
 *seen5
 ;花園もどる
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=1000]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[wait time=10]
+;病院背景に表示されないようにwait
 ;主人公の目閉じの合体pngがほしいです！
 [主人公ポーズ通常]
 [wait time=10]
-[主人公目閉じ]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 ;主人公の目閉じの合体pngがほしいです！
 ;表示されるまでの間上に被せたい
