@@ -8,7 +8,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=30]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -17,7 +17,7 @@
 [メッセージウィンドウ上ボタン表示]
 ;最大全角３１文字×４行
 ;=====================ここからお芝居の幕引きです===============================
-
+*scene1
 ;【立ち絵】主人公：困り
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
@@ -45,7 +45,7 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]にはまだ早かったか……。[r]
 [sp]そういえば最近はお琴のお稽古に熱心なようだね」[p]
-
+*scene2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
 [主人公通常]
@@ -116,7 +116,6 @@
 [主人公口ふぅ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ、これでもう後戻りはできないわ）[p]
-
 
 ;【分岐】他攻略対象の好感度が高い場合
 ;【立ち絵】主人公：通常
