@@ -31,7 +31,7 @@
      
 ;=========================================================================
 [cm]
-@layopt layer=mesasge0 visible=false
+@layopt layer=message0 visible=false
 [call target=*start storage="macro_tati_hujieda.ks"]
 @layopt layer=fix visible=false
 [表示準備 storage="bg/room_niwa.jpg" layer=29]
@@ -40,7 +40,7 @@
 [イベントシーン構築ボタン無し版]
 [主人公通常]
 [主人公ポーズ通常]
-@layopt layer=mesasge0 visible=true
+@layopt layer=message0 visible=true
 [freeimage layer=29]
 [メッセージウィンドウ上ボタン表示]
 ;=========================================================================
