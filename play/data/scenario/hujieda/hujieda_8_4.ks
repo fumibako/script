@@ -123,13 +123,11 @@
 [sp]反対されてしまうわ）[p]
 [主人公憂い]
 （どうしたらいいの？）[p]
-
-
-
+[主人公退場]
+[暗転]
 ;【背景】主人公邸 庭の見える部屋：昼
  [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
