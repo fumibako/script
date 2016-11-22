@@ -209,10 +209,13 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （こっそり拝見するだけならいいわよね）[p]
 ;SE自転車ベル
+;【SE】自転車のベル（チリンチリン）
+[playse storage=jitensha_tirin.ogg loop=false]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ片手]
-(自転車の音が聞こえるもうすぐだわ！)[p]
+（自転車の音が聞こえるわ。 もうすぐだわ！)[p]
+[stopse]
 #
 ;=========表示================
 ;【立ち絵】 藤枝　通常
