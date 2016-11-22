@@ -390,6 +390,8 @@
 ;////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】:町並み
 [preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
+;【背景】:ミルクホール
+[preload storage="data/fgimage/bg/I9IhvvVdPo/mirukutest.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
