@@ -9,6 +9,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;背景: [レトロな喫茶店]
+[eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 #
@@ -236,12 +237,23 @@
 （もっと聴いていたかったわ）[p]
 [主人公退場]
 
+
 ;【テキスト全画面】
-;背景:レトロな喫茶店　
+
 閉店後[p]
+
+
+;背景:レトロな喫茶店============表示準備============================================
+[eval exp="f.haikei_credit='まだないです'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg" time=50]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[表示準備 storage="bg/I9IhvvVdPo/mirukugenkan.jpg" layer=29]
 [イベントシーン構築枠茶色]
 [藤枝ベース私服]
 [藤枝通常]
+[freeimage layer=29 time=500]
+;================================================================================
+
 [whosay name="店長"]
 「今日もお疲れ様だな。[r]
 [sp] お前さんのおかげで日曜日は大繁盛だ。[r]
@@ -389,7 +401,7 @@
 [whosay name="藤枝 肇" color=%mp.color] 
 「はい、先生ありがとうございました」[p]
 [fadeoutbgm time=3000]
-[藤枝退場]
+[藤枝退場準備 storage="bg/I9IhvvVdPo/mirukugenkan.jpg"]
 #
 ;次のイベントにでてしまう名前残りを消去
 [イベントシーン終了]
