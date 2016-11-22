@@ -1,6 +1,8 @@
 ;==================================================
 *start
-;◇プリロードサブルーチン 主人公表示までの幕の役割
+;◇プリロードサブルーチン 主人公表示までの幕の役割　
+;◆特別なイベント　読み込み多いとき　bg_preload_zaizen.jpg
+;◇本編を作者が作業中なので　未実装。　必要背景も調べていない
 ;targetで呼び出し方法
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;==================================================
@@ -42,12 +44,11 @@
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 ;個別のプリロード画面が今はないのです
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
 
 ;========================================================================================
 ;財前立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
