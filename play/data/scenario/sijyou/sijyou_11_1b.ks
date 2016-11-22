@@ -455,7 +455,8 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 [layopt layer=13 visible=true]
 ;;======四条登場======
 [whosay name="華衣" color=%mp.color]
-「アンタが言わなければ、こんなことには！！　」[p]
+「アンタが言わなければ、こんなことには！！　」[p
+[四条退場]
 ;結果、妹に恨まれてしまったんだろうなぁとプレイヤーが想像する形
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
@@ -468,10 +469,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *seen5
 ;花園もどる
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+[表示準備 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg]
 ;主人公の目閉じの合体pngがほしいです！
 [主人公ポーズ通常]
 [wait time=10]
-[主人公憂い]
+[主人公目閉]
 [wait time=10]
 ;主人公の目閉じの合体pngがほしいです！
 ;表示されるまでの間上に被せたい
@@ -483,17 +485,23 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 ダイヤモンドを散りばめたような、ネリネの花びらは、 [r]
 落ちた陽の光を浴びて、キラキラと輝きを強める。[p]
+[主人公憂い]
 私は、輝きを放つネリネの達の[ruby text=げん]眩[ruby text=よう]耀に、ふと我に返った。――[p]
 ;うーん
 [whosay name="華衣" color=%mp.color]
 「こんな、手紙、どうして早く来てくれなかった？[r]
 [sp]そうしたら　僕は、この場所にきて君を……」[p]
-[autosave]
+;======四条登場======
+[freeimage layer=13 time=500]
+[layopt layer=13 visible=true]
+;【登場】四条
+[四条ベース羽織]
 [四条困り]
+;======四条登場======
 [whosay name="華織" color="olivedrab"]
 「[華衣]、今まで、うまく伝えれなくてごめん。[r]
 [sp]けど、ずっと、ここにあったんだ……」[p]
-;超利己的な性格なので修正・人に死ぬほど深い懺悔ってしたことないからわからない
+[autosave]
 [whosay name="華衣" color=%mp.color]
 「！　……兄さんの話を信じていれば！！」[p]
 [whosay name="華織" color="olivedrab"]
