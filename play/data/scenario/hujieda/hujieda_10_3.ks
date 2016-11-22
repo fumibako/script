@@ -390,6 +390,8 @@
 「はい、先生ありがとうございました」[p]
 [fadeoutbgm time=3000]
 [藤枝退場]
+#
+;次のイベントにでてしまう名前残りを消去
 [イベントシーン終了]
 @jump storage="test_hujieda.ks"
 [s]
