@@ -35,7 +35,7 @@
 [call target=*start storage="macro_tati_hujieda.ks"]
 @layopt layer=fix visible=false
 [表示準備 storage="bg/room_niwa.jpg" layer=29]
-【背景】主人公邸 庭の見える部屋：昼
+;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 [主人公通常]
@@ -60,7 +60,8 @@
 [whosay name=磯野 color="dimgray"]
 「お嬢様、お茶をどうぞ。　少しは落ち着きませんと」[p]
 
-;【SE】コトリ
+;【SE】湯のみを置く（コトリ）
+[playse storage=tya_yunomi_oku.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
