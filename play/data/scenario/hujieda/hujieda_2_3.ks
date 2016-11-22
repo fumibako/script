@@ -1,18 +1,23 @@
 ;=============================================
 ;イベント１４回目【藤枝の留学辞退】2月3週、
-;=============================================
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / ongakurensyuusitu.jpg " time=1000]
+;=======================お芝居の準備中です=================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_3 storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[イベントシーン構築枠茶色]
-
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/ongakurensyuusitu.jpg" time=30]
+[イベントシーン構築ボタン無し版枠茶色]
+#
 ;【立ち絵】藤枝：ため息
 [藤枝ベース私服]
 [藤枝困り]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
+
 [whosay name="藤枝 肇" color=%mp.color] 
 「この短期間でこの難曲を弾きこなすのは難しいな。[r]
 [sp]あと数日後だというのに……」[p]
@@ -25,8 +30,9 @@
 
 ;【立ち絵】藤枝：落ち込み
 [藤枝憂い]
-（課題曲はパガニーニ超絶技巧練習曲集[r]
-[sp]第三番「ラ・カンパネッラ」、学校の練習室を[r]
+（課題曲はパガニーニ超絶技巧練習曲集)[p]
+
+(第三番「ラ・カンパネッラ」、学校の練習室を[r]
 [sp]早朝に数時間借りて練習し譜面通り弾ける様になったけど[r]
 [sp]……自分の思う音色にはほど遠い）[p]
 
@@ -84,8 +90,9 @@
 
 #
 この手紙を読み返し励まされながら[r]
-わずか一か月のわずかな練習時間でこの難曲を[r]
-諦めずに取り組みここまで弾けるようになった。[p]
+わずか一か月のわずかな練習時間で、この難曲を諦めずに取り組み[r]
+ここまで弾けるようになった。[p]
+
 [fadeoutbgm time=3000]
 ;【立ち絵】藤枝：目閉じ
 [藤枝真剣]
@@ -120,8 +127,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：ため息
 [主人公憂い]
-「もう藤枝様と[r]
-お別れの挨拶をしてから３か月も経ちました[r]
+「もう藤枝様と、お別れの挨拶をしてから３か月も経ちました。[r]
 [sp]もう時子さんとも約束しているのです」[p]
 
 [whosay name=磯野 color="dimgray"]
@@ -130,16 +136,16 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
 [主人公通常]
-「さあ、時子さんのお兄様が[r]
-[sp]とある舞台に連れて行って下さるとか」[r]
-[sp]（きっと気晴らしになる場所なのだわ）[p]
+「さあ、時子さんのお兄様が、とある舞台に連れて行って下さるとか」[p]
+
+（きっと気晴らしになる場所なのだわ）[p]
 
 [whosay name=磯野 color="dimgray"]
-「最近お稽古も熱心に取り組んで[r]
-[sp]おられますし仕方ないですね」[p]
+「最近お稽古も熱心に取り組んで、おられますし仕方ないですね」[p]
+
 [主人公憂い]
 #
-磯野に藤枝様の話はあれからしていない[r]
+磯野に藤枝様の話はあれからしていない。[r]
 話をするだけで磯野は悲しそうな顔をするから[p]
 
 [whosay name="女中"]
@@ -154,8 +160,8 @@
 「わかりました。お嬢様、お気をつけて」[p]
 
 ;【背景】主人公邸 玄関
- [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name="三宮　時子" color="#c25232"]
 「さ、[名前]さんお車にお乗りになって！」[p]
 [主人公ポーズ通常]
@@ -168,18 +174,21 @@
 [whosay name="三宮　時子" color="#c25232"]
 「それは秘密ですわ」[p]
 
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / ensoukaijyou.jpg " time=1000]
-[イベントシーン構築]
-[主人公ポーズ通常]
-[主人公通常]
+[暗転]
+;============================================================================================
+[eval exp="f.haikei_credit='まだないです'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[表示準備 storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" layer=29]
+[freeimage layer=29 time=500]
+;============================================================================================
 [主人公目パチ1回]
 #
-大きな建物の前に車が止まり[r]
-私達は車を降りた[r]
+大きな建物の前に車が止まり、私達は車を降りた。[r]
 丁度ホールに人が集まる所のようだった[p]
 
 [whosay name="三宮　時子" color="#c25232"]
-「藤枝様達の演奏会は一般公開されると聞いて[r]
+「藤枝様達の演奏会は一般公開されると聞いて、[r]
 [sp]お父様のコネを使いました[r]
 [sp]私達も入れる様に口をきいてもらっています」[p]
 
@@ -204,19 +213,24 @@
 [sp]それから自自由曲の２曲を弾くのですって[r]
 [sp]藤枝さまの演奏は最後だそうよ」[p]
 [fadeoutbgm time=3000]
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / situnaiongaku.jpg " time=1000]
-[イベントシーン構築]
-[call target=*start storage="macro_tati_hujieda.ks"]
-[主人公ポーズ通常]
+#
+[暗転]
+;============================================================================================
+[eval exp="f.haikei_credit='まだないです'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1000]
+;メッセージ消すと再構築を隠さなければならないのです。↓ 演出が表示が重いのです。視点＋時間移動あ、背景変更のみではだめでしょうか？
+[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" layer=29]
+;藤枝さん用構築かくし↓
+[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" layer=13]
 [主人公通常]
-[主人公目パチ1回]
-
+[freeimage layer=29 time=500]
+;============================================================================================
 #
 ２人の演奏が終わり[r]
 舞台の裾から藤枝様が姿を現し、[r]
 その姿を見ただけで私は泣きそうになった。[r]
 彼は客席に一礼しながら私と視線が合い驚いた顔になる[p]
-[fadeoutbgm time=3000]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
 [主人公目伏柔]
@@ -224,9 +238,12 @@
 [主人公頬染め]
 （一目会えただけでこんなにも嬉しい）[p]
 
+;==========
 ;【立ち絵】藤枝：微笑み
 [藤枝ベース私服]
 [藤枝微笑み]
+[freeimage layer=13 time=500]
+;==========
 [whosay name="藤枝 肇" color=%mp.color] 
 （……見守って下さるのですね）[p]
 
@@ -389,15 +406,20 @@
 [主人公目伏]
 [主人公眉下げ下]
 （藤枝様は覚悟をみせてくれた[r]
-[sp]今度は私がお父様を説得する番ね[r]
+[sp]今度は私がお父様を説得する番ね。[r]
 [sp]私も藤枝様を諦めないわ）[p]
 [fadeoutbgm time=3000]
-[藤枝退場]
+#
+[藤枝退場準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
+
+;============================================================================================
 ;【背景】主人公邸 玄関
  [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築]
 [主人公ポーズ通常]
+;============================================================================================
+
 [whosay name="三宮　時子" color="#c25232"]
 「[名前]さん説得頑張ってくださいね」[p]
 
