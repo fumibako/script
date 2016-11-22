@@ -1,25 +1,30 @@
 *start
-;暗転
-;[chara_mod name="bg" storage="toumei.gif" time=1500]
-[stopbgm]
-;テスト用イベントシーン構築
-;///使用背景メモ　ここでは表示遅れはないですが必要時に開放///
+;===============================テスト用イテスト用イベントシーン構築==============================
+;///使用背景メモ　ここはテスト用です必要時に開放///
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
 ;[preload storage="data/fgimage/bg/bg_prologue_dark.jpg"]
 ;[preload storage="data/fgimage/bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
-;//////////////////////////////////////
+;///////////////////////////////////////////////////////////
+[stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[stopbgm]
+;==============================================================================================
 [イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-;テスト用イベントシーン構築ここまで
+[if exp="tf.test_sijyou==true"]
+[四条ベース着物]
+[四条憂い]
+[四条目閉じ]
+テストモードです。追加シーンテスト　SEありがとうございます。[p]
+@jump target=kaisou_kai
+[endif]
+;===============================テスト用イベントシーン構築ここまで===============================
 テストページからはじめます[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -235,12 +240,14 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「……ふたりは、二度と会うこともできない」[p]
 [主人公憂い]
 ;プレイヤーのことを語る 華織の正義側
+*kaisou_kai
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、そのことで、ずっと僕を恨んでいる。[r]
 [sp]君からの手紙を捨ててしまうほどに……」[p]
 #
+;華織様は、目を伏せると先日のことを語った　手紙のやり取りが出来なくなった時のことを？？？？？だめだああ
 [cm]
-;==============どんな風に恨んでいるの？？　今までどう行動してたの？====================
+;==============◆◆◆どんな風に恨んでいるの？？　今までどう行動してたの？◆◆◆◆====================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -264,12 +271,15 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「何もできないからって馬鹿にして！[sp]こんな手紙、[r]
 ;びりびり～♪
 [sp]全部ぜんぶ捨ててやる！」[p]
-;【SE】走り去る(屋外)
-[playse storage=run_soto.ogg loop=false ]
+;【SE】紙を破く（ビリビリたくさん破き捨てる）
+[playse storage=paper_biribiri.ogg loop=false]
 [四条目大]
 [whosay name="華織" color="olivedrab"]
 「！[sp][華衣]……」[p]
 [stopse]
+;SEの位置は適当
+;【SE】走り去る(屋外)
+[playse storage=run_soto.ogg loop=false ]
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
@@ -281,9 +291,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 （でも、それでは、ただの甘えだ。　あの人と約束したから）[p]
 [whosay name="華織" color="olivedrab"]
 （あの人の想いを伝えないと。　僕と[華衣]のためにも)[p]
+;==============◆◆◆どんな風に恨んでいるの？？　今までどう行動してたの？おわり◆◆◆◆====================
 #
 [cm]
-;=============================
+;=========================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
