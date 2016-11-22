@@ -195,6 +195,7 @@
  [表示準備 storage="bg/bg_genkan.jpg"]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [call target=*start storage="macro_tati_hujieda.ks"]
+[イベントシーン構築ボタン]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
