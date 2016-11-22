@@ -234,11 +234,12 @@
 [fadeoutbgm time=3000]
 
 ;============================================================================================
+#
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='まだないです'"]
+[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" layer=29]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1000]
-[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" layer=29]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
 [主人公通常]
@@ -437,10 +438,10 @@
 [layopt layer=fix visible=false]
 ;【背景】主人公邸 玄関 
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[表示準備 storage="bg/bg_genkan.jpg" layer=29 time=300]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;場所移動なのでわかります。
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
-[表示準備 storage="bg/bg_genkan.jpg" layer=29]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -495,10 +496,11 @@
 ;============================================================================================
 ;【背景】主人公邸 庭の見える部屋：夜
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[表示準備 storage="bg/room_niwa_yoru.jpg" layer=29]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;場所移動なのでわかります。
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[表示準備 storage="bg/room_niwa_yoru.jpg" layer=29]
+
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
