@@ -11,6 +11,20 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 ;=================================================================================_
+[if exp="tf.test_sijyou==true"]
+;婚約者の花園
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50]
+[イベントシーン構築]
+「テストモードで表示されています。　追加シーンにとびます」
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
+[主人公憂い]
+[wait time=10]
+@jump target=*seen4
+[endif]
+;=================================================================================_
 *first
 [テキスト全画面白文字]
 私達は、外に出て車夫をみつけると、[華衣]様が[r]
@@ -321,14 +335,29 @@
 世界でたった1つの想いを綴った手紙に[p]
 #手紙
 『私が、消えてしまう前に、咲いて誇る華を綴ります』[p]
-
-;○妹の回想 ところどころ三人目視点
+;弟の回想 ところどころ三人目視点
 [主人公退場]
+;=================================================================================_
+*seen4_1
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[font color=white size=27]
+ここにしーんをいれます
+[p]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[resetfont]
+[wait time=10]
+
+;裏で画面構成
+[イベントシーン構築ボタン無し版枠茶色]
+;=================================================================================_
 #
 ;○概要案 好きな花について婚約者に話しをしたら、(妹の婚約者は)買い付けに出て、出先で事故(公家の出で、もともと身体が弱かった？)にあってしまう、
 ;○回想シーン
 ;○婚約者さんが四条に妹の好きな花は何？ときいてくる。
-;[四条家玄関ホール]
+;四条家玄関ホール
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
@@ -336,8 +365,12 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 [endscript]
 ;↑(◆B4nFWraU42さん作)回想シーン用セピア化スクリプトを使用させていただきました。ありがとうございます
 ;sepia(100%)だと四条邸壁や空の青さが飛んでしまうため50%に。さらに調整入れるかもです
-[イベントシーン構築枠茶色]
+;=================================================================================_
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+[メッセージウィンドウ上ボタン表示]
+[freeimage layer=29 time=400]
+;画面復帰
+;=================================================================================_
 [whosay name="華織" color="olivedrab"]
 『急にどうしたのですか？ [華衣]の好きな花なんてきいて』[p]
 [whosay name="華織" color="olivedrab"]
