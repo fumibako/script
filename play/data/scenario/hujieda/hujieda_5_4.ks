@@ -8,7 +8,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;【背景】主人公邸 お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=30]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -20,8 +20,8 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 照れ目普通
-[主人公照れ目普通]
 [主人公眉通常]
+[主人公照れ目普通]
 （あの手紙が嬉しくて、最近お琴を中心に練習しているけれど、[r]
 [sp]また聞いてくれくれたりするのかしら？)[p]
 [主人公目伏柔]
@@ -100,13 +100,11 @@
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]
 「ふふ……もっとお琴を練習しましょう」[p]
 [fadeoutbgm time=3000]
-[主人公目パチ1回]
 ;【立ち絵】主人公　笑顔
 [主人公笑顔]
 「また上手になったらお手紙頂けるかしら？」[p]
