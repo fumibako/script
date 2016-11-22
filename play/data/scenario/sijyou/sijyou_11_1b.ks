@@ -458,6 +458,8 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 「アンタが言わなければ、こんなことには！！　」[p]
 [四条退場準備 storage="bg/sijyou_byouin.jpg" time=300]
 ;ふわっと消えてください
+;名前残り消去
+#
 ;結果、弟！に恨まれてしまったんだろうなぁとプレイヤーが想像する形
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
@@ -470,11 +472,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *seen5
 ;花園もどる
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
-[表示準備 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg]
+[layopt layer=13 visible=true]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 ;主人公の目閉じの合体pngがほしいです！
 [主人公ポーズ通常]
 [wait time=10]
-[主人公目閉]
+[主人公目閉じ]
 [wait time=10]
 ;主人公の目閉じの合体pngがほしいです！
 ;表示されるまでの間上に被せたい
@@ -493,11 +496,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「こんな、手紙、どうして早く来てくれなかった？[r]
 [sp]そうしたら　僕は、この場所にきて君を……」[p]
 ;======四条登場======
-[freeimage layer=13 time=500]
-[layopt layer=13 visible=true]
 ;【登場】四条
 [四条ベース羽織]
 [四条困り]
+[freeimage layer=13 time=500]
+[layopt layer=13 visible=true]
 ;======四条登場======
 [whosay name="華織" color="olivedrab"]
 「[華衣]、今まで、うまく伝えれなくてごめん。[r]
@@ -532,6 +535,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 『忍耐』[p]
 ;【退場】四条
 [四条退場]
+#
 ;=================================================================================_
 *seen6
 ;¥¥¥¥¥¥¥¥イベント6おわり¥¥¥¥¥¥¥¥
