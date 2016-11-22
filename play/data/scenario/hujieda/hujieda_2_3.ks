@@ -108,14 +108,23 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
+#
+;=======================お芝居の準備中です=================================
 ;【背景】主人公邸 庭の見える部屋：昼
- [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;場所移動なのでわかります。
+ [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[表示準備 storage="bg/room_niwa.jpg" layer=29]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
+[主人公ポーズ通常]
+[freeimage layer=29 time=500]
+[メッセージウィンドウ上ボタン表示]
+;========================ここからお芝居の幕引きです===============================================
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 「今日は時子さんが来られるの、[r]
 [sp]一緒に外出していいかしら？」[p]
@@ -155,13 +164,17 @@
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 「出かけて参ります」[p]
-
 [whosay name=磯野 color="dimgray"]
 「わかりました。お嬢様、お気をつけて」[p]
 
-;【背景】主人公邸 玄関
+#
+;============================================================================================
+[主人公目閉]
+;【背景】主人公邸 玄関　ここはメッセージは消さないのですね　助かります・・
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[主人公ほほえみ]
+;============================================================================================
 [whosay name="三宮　時子" color="#c25232"]
 「さ、[名前]さんお車にお乗りになって！」[p]
 [主人公ポーズ通常]
