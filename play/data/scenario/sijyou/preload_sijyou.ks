@@ -422,35 +422,7 @@ $('.loding_pic1').remove();
 [layopt layer=fix visible=true]
 [endmacro]
 ;==========================================================================
-;こちらも問題がなければ↓移動してください　フルで書くよりはマシな程度です
-;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。主人公部屋には攻略対象こないので
-[macro name=表示準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
-[wait time=50]
-[endmacro]
-;◆[四条退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
-[macro name=四条退場準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
-[wait time=50]
-[四条退場]
-[freeimage layer=13 time=50]
-[wait time=50]
-[endmacro]
-
-;こんな感じでmp分岐してもいいですが重くなるかもしれないですし、全部まとめるの無理だった　
-;[表示準備　seen=町]　[表示準備　storage=bg/bg_machi.jpg]
-;[macro name="表示準備"]
-;[if exp="mp.seen==町"]
-;[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=13 visible=true]
-;[endif]
-;[if exp="mp.seen==主人公部屋"]
-;[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 visible=true]
-;[endif]
-;[endmacro]
-;こちらも問題がなければ↓移動してください　
-[macro name="淑女称号表示"]
-[emb exp="f.shougou"]
-[endmacro]
+;ここはマクロ案部です。さすがに本体にかかわるマクロには書くけませんので、もしなにかあればこちらで検証&試作して見せます
 
 ;==================================================
 ;テストプレイで画面遷移時の自然さに見入ってしまいました。立ち絵が背景と共にふわっと溶け込むように切り替わる自然さが素晴らしいと思います
