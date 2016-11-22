@@ -129,6 +129,8 @@
 #
 私は手紙をそっと抱きしめた[p]
 
+#
+;次のイベントにでてしまう名前残りを消去
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
