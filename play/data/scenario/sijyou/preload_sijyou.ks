@@ -423,16 +423,18 @@ $('.loding_pic1').remove();
 [endmacro]
 ;==========================================================================
 ;ここはマクロ案部です。さすがに本体にかかわるマクロには書くけませんので、もしなにかあればこちらで検証&試作して見せます
-;パッとでるタイプ　実験
+;パッとでるタイプ　実験　楽をしないで普通にやる どこに出そう
 ;立ち絵表示[主人公ポーズ通常２]
 [macro name="主人公ポーズ通常２"]
-[chara_mod name="girl_base" storage="girl/S/girl_all_me_toji_mayu_futuu.png" time=0]
+[image name="girl_base2" layer=%layer|message0 left=1 top=381 layer=15　storage="%|girl/S/girl_all_me_toji_mayu_futuu.png" time=%time|30 zindex=1006]
 [wait time=10]
-[chara_mod name="girl_te" storage="toumei.gif" time=0]
-[wait time=10]
-[eval exp="f.kaogura='on'"]
 [endmacro]
-
+;ネーミングセンスがないから後で変えていただけると助かります ◆I9IhvvVdPoさんもつかえるように
+;◆[表示準備完了 time=500] 
+;(必ず[表示準備 storage="bg/bg_machi.jpg"]を使用後、 立ち絵ベースと表情マクロの後に使用。)
+[macro name="表示準備完了"]
+[freeimage layer=%layer|13 time=%time|200]
+[endmacro]
 ;==================================================
 ;テストプレイで画面遷移時の自然さに見入ってしまいました。立ち絵が背景と共にふわっと溶け込むように切り替わる自然さが素晴らしいと思います
 ;↓macro_etc.ksに[四条イベントシーン構築][四条ボタン表示]を追加と動作確認をしましたので、こちらは消去させていただきます
