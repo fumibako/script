@@ -2,6 +2,8 @@
 *start
 ;◇プリロードサブルーチン 主人公表示までの幕の役割
 ;targetで呼び出し方法
+;◆特別な時は bg_preload_katuraginomiya.jpg
+;◇まだ全然やっていない　明後日くらいに
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;======================================================================================
 *first
