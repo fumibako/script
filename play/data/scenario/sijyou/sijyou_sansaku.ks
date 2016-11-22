@@ -4,7 +4,8 @@
 ;=======================お芝居の準備中です==========================================================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*bonyou2 storage="sijyou/preload_sijyou.ks"]
+;[call target=*bonyou2 storage="sijyou/preload_sijyou.ks"]
+[call target=*end_sub storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -12,9 +13,9 @@
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
-[主人公ポーズ通常]
-[主人公通常]
-[プリロード画面消去]
+[主人公ポーズ通常２]
+[主人公憂い]
+;[プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです==================================================================
 #
