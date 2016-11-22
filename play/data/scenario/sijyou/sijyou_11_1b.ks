@@ -379,8 +379,9 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;↑(◆B4nFWraU42さん作)回想シーン用セピア化スクリプトを使用させていただきました。ありがとうございます
 ;sepia(100%)だと四条邸壁や空の青さが飛んでしまうため50%に。さらに調整入れるかもです
 ;=================================================================================_
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 ;四条家玄関
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+;画面復帰
 [freeimage layer=29 time=400]
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -467,10 +468,23 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *seen5
 ;花園もどる
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
+;主人公の目閉じの合体pngがほしいです！
 [主人公ポーズ通常]
 [wait time=10]
 [主人公憂い]
 [wait time=10]
+;主人公の目閉じの合体pngがほしいです！
+;表示されるまでの間上に被せたい
+;=============================================
+;ネリネの花言葉のひとつ、輝きにしようかな♪　考えれーねーのにな。どうしよ
+;ダイヤモンドリリーの特徴 光沢のある花びら　ラメ
+;ダイヤモンドリリーといわれる由縁、その光沢を持った花びら
+;暫定
+#
+ダイヤモンドを散りばめたような、ネリネの花びらは、 [r]
+落ちた陽の光を浴びて、キラキラと輝きを強める。[p]
+私は、輝きを放つネリネの達の[ruby text=げん]眩[ruby text=よう]耀に、ふと我に返った。――[p]
+;うーん
 [whosay name="華衣" color=%mp.color]
 「こんな、手紙、どうして早く来てくれなかった？[r]
 [sp]そうしたら　僕は、この場所にきて君を……」[p]
