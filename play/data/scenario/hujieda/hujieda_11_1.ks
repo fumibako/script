@@ -23,13 +23,15 @@
 [主人公伏目]
 [主人公眉下げ下]
 「そろそろお手紙のお返事来ないかしら」[p]
-（鳩が入ってこれるように、少しふすまを開けているけれども）[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+
+（鳩が入ってこれるように、少しふすまを開けているけれども）[p]
+
+
 
 ;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
@@ -163,7 +165,8 @@
 ;【立ち絵】主人公：真剣落ち込み
 [主人公目閉じ]
 [主人公口通常]
-「……」[r]
+「……」[p]
+
 （皆に知られたら止められると思っていた。[r]
 [sp]わかっていたけれど……とてもつらいものね）[p]
 
