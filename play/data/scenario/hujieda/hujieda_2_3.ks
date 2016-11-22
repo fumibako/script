@@ -65,7 +65,8 @@
 慈しみ優しく弾けていました。[r]
 [sp]必ず上達できる方だと思います。[r]
 [sp]初心を忘れずゆっくり上達していきましょう。[r]
-と書いてくださいました。[p]
+[sp][sp]と書いてくださいました。[p]
+;アイコンにかかります
 [sp]私もその言葉をお返ししましょう[r]
 藤枝様は音楽とピアノを慈しんでおられます。[r]
 今の藤枝様に時間はありませんがきっと
@@ -186,10 +187,11 @@
 
 [whosay name="三宮　時子" color="#c25232"]
 「それは秘密ですわ」[p]
-[主人公退場]
+
+;============================================================================================
+[layopt layer=fix visible=false]
 #
 [暗転]
-;============================================================================================
 [eval exp="f.haikei_credit='まだないです'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -197,6 +199,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer=29 time=1000]
+[layopt layer=fix visible=true]
 ;============================================================================================
 [主人公目パチ1回]
 #
@@ -229,18 +232,17 @@
 [sp]それから自自由曲の２曲を弾くのですって[r]
 [sp]藤枝さまの演奏は最後だそうよ」[p]
 [fadeoutbgm time=3000]
-[主人公退場]
-#
-[暗転]
+
 ;============================================================================================
+[layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='まだないです'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1000]
 [表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" layer=29]
 ;藤枝さん用構築かくし↓
-[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" layer=13]
-[主人公ポーズ通常]
+[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
 [主人公通常]
+[layopt layer=fix visible=true]
 [freeimage layer=29 time=600]
 ;============================================================================================
 #
@@ -432,6 +434,7 @@
 ;ふんわり退場→　[藤枝退場準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
 [主人公退場]
 ;============================================================================================
+[layopt layer=fix visible=false]
 ;【背景】主人公邸 玄関 
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -444,6 +447,7 @@
 [主人公ポーズ通常]
 [freeimage layer=29 time=500]
 [メッセージウィンドウ上ボタン表示]
+[layopt layer=fix visible=true]
 ;============================================================================================
 
 [whosay name="三宮　時子" color="#c25232"]
