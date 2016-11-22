@@ -382,10 +382,10 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;四条家玄関
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 ;画面復帰
-[freeimage layer=29 time=400]
+[freeimage layer=29 time=500]
+[メッセージウィンドウ上ボタン表示]
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
-[メッセージウィンドウ上ボタン表示]
 ;画面復帰
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;=================================================================================_
@@ -455,9 +455,10 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 [layopt layer=13 visible=true]
 ;;======四条登場======
 [whosay name="華衣" color=%mp.color]
-「アンタが言わなければ、こんなことには！！　」[p
-[四条退場]
-;結果、妹に恨まれてしまったんだろうなぁとプレイヤーが想像する形
+「アンタが言わなければ、こんなことには！！　」[p]
+[四条退場準備 storage="bg/sijyou_byouin.jpg" time=300]
+;ふわっと消えてください
+;結果、弟！に恨まれてしまったんだろうなぁとプレイヤーが想像する形
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
@@ -478,7 +479,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;主人公の目閉じの合体pngがほしいです！
 ;表示されるまでの間上に被せたい
 ;=============================================
-;ネリネの花言葉のひとつ、輝きにしようかな♪　考えれーねーのにな。どうしよ
+;ネリネの花言葉のひとつ、輝きに~~
 ;ダイヤモンドリリーの特徴 光沢のある花びら　ラメ
 ;ダイヤモンドリリーといわれる由縁、その光沢を持った花びら
 ;暫定
