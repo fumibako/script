@@ -80,7 +80,7 @@
 #
 [主人公目閉]
 ;時間経過　少し暗めのお稽古部屋　いまは暗転
-[暗転]
+;[暗転]
 [chara_mod name="bg" storage="bg/bg_okeiko_anten.jpg" time=1000]
 わたしは琴に向かい、琴を弾くしばらく弾き続けた。[p]
 
