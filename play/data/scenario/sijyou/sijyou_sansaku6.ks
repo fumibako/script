@@ -438,5 +438,4 @@ $('.hababi_2').remove();
 [current layer="message0"]
 [freeimage layer = 27]
 [wait time=10]
-
 [return]
