@@ -85,7 +85,7 @@
 [sp]僕の事はお構いなくと最初の手紙に書きながら[r]
 僕はいつのまにか貴方様に深入りをしてしまったようです。[r]
 [r]
-[sp]このひと月ずっとどうお返事しようかと悩んでました。[r]
+[sp]このひと月ずっと、どうお返事しようかと悩んでました。[r]
 [sp]僕も少なからず貴方様に好意を持ってしまったようです。[r]
 [r]
 [sp]正直に伝えましょう。[r]
@@ -123,6 +123,7 @@
 [sp]きっと手紙を交わす事を反対されてしまうわ）[p]
 [主人公憂い]
 （どうしたらいいの？）[p]
+#
 [主人公退場]
 [暗転]
 ;【背景】主人公邸 庭の見える部屋：昼
@@ -192,15 +193,16 @@
 [endif]
 
 ;【背景】主人公邸 玄関
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [表示準備 storage="bg/bg_genkan.jpg" layer=29]
 [表示準備 storage="bg/bg_genkan.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [call target=*start storage="macro_tati_hujieda.ks"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
-[freeimage layer=29 time=500]
+[freeimage layer=29 time=400]
 ;=========表示================
 [メッセージウィンドウ上ボタン表示]
 [主人公目パチ1回]
@@ -211,7 +213,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ片手]
 (自転車の音が聞こえるもうすぐだわ！)[p]
-
+#
 ;=========表示================
 ;【立ち絵】 藤枝　通常
 [藤枝ベース郵便屋]
@@ -230,6 +232,7 @@
 [whosay name="藤枝 肇" color=%mp.color] 
 [主人公目パチ1回]
 「ありがとうございます！　では失礼します！」[p]
+#
 [藤枝退場準備 storage="bg/bg_genkan.jpg" time=300]
 ;【立ち絵】主人公　驚き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
