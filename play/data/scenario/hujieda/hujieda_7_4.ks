@@ -189,6 +189,8 @@
 [fadeoutbgm time=3000]
 ;@jump storage="event.ks" target=*event_owari
 
+#
+;次のイベントにでてしまう名前残りを消去
 [イベントシーン終了]
 @jump storage="test_hujieda.ks"
 [s]
