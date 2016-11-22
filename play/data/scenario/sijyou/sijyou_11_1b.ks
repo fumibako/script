@@ -342,10 +342,14 @@
 ;=================================================================================_
 *seen4_1
 ;メッセージレイヤを全画面用に設定変更
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+[eval exp="f.message_storage='toumei.gif'"]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[image layer=29 x=1 y=1 zindex=1 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=1 y=1 zindex=3 storage="bg/bg_prologue.jpg" time=50 visible=true]
+[wait time=50]
 [font color=white size=27]
 ―― 華で綴られる想いが私たちの目の前に広がる。[r]
 [r]
@@ -358,6 +362,7 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 [resetfont]
 [wait time=10]
+
 ;裏で画面構成
 [イベントシーン構築ボタン無し版枠茶色]
 ;=================================================================================_
@@ -375,6 +380,8 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;=================================================================================_
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 ;四条家玄関
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
 [メッセージウィンドウ上ボタン表示]
 [freeimage layer=29 time=400]
 ;画面復帰
