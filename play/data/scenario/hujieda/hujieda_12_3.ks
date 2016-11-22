@@ -247,6 +247,14 @@
 ;=========================================================================
 *no
 ;badに飛びます　スクリプト担当者以外は消さないでください
+;メッセージレイヤサイズを会話窓用に戻す
+[cm]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+;【背景】ヒロインの部屋　背景をもどしてください
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [jump storage="hujieda/hujieda_12_3_badED.ks" target=no_seen]
 ;=========================================================================
 [s]
