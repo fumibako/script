@@ -424,9 +424,9 @@ $('.loding_pic1').remove();
 ;==========================================================================
 ;ここはマクロ案部です。さすがに本体にかかわるマクロには書くけませんので、もしなにかあればこちらで検証&試作して見せます
 ;パッとでるタイプ　実験　楽をしないで普通にやる どこに出そう
-;立ち絵表示[主人公ポーズ通常２]
+;立ち絵表示[主人公ポーズ通常２] メッセージにいたらダメだね　消すとき大変なことに
 [macro name="主人公ポーズ通常２"]
-[image name="girl_base2" layer=%layer|message0 left=1 top=381 layer=15 storage=%|girl/S/girl_all_me_toji_mayu_futuu.png time=%time|30 zindex=1006]
+[image name="girl_base2" layer=%layer|21 left=1 top=381 layer=15 storage=%|girl/S/girl_all_me_toji_mayu_futuu.png time=%time|30]
 [wait time=10]
 [endmacro]
 
