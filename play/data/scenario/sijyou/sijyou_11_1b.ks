@@ -323,6 +323,7 @@
 [wait time=10]
 ;=================================================================================_
 *seen4
+[er]
 #
 ネリネの花言葉には、もうひとつの言葉があった。[r]
 それは、『忍耐』 [p]
@@ -341,9 +342,10 @@
 ;=================================================================================_
 *seen4_1
 ;メッセージレイヤを全画面用に設定変更
+[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=1 y=1 zindex=1 storage="bg/bg_prologue.jpg" time=50]
 [font color=white size=27]
 ―― 華で綴られる想いが私たちの目の前に広がる。[r]
 [r]
