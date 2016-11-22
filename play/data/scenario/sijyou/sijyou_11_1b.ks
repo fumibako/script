@@ -349,7 +349,7 @@
 ;[eval exp="f.message_storage='toumei.gif'"]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 ;四条家玄関
-;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [font color=white size=27]
