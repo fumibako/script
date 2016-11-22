@@ -10,6 +10,7 @@
 [call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
+[表示準備 storage="bg/I9IhvvVdPo/kouenn.jpg" layer=13]
 [eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -18,7 +19,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=========================================================================
-
+*seen_1
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 「忙し時間を割いて頂いてありがとうございます[r]
@@ -47,10 +48,12 @@
 こちらに気づいて彼は私に柔らかく微笑む[r]
 そして彼お父様に礼をしていった[p]
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+;==========================
 ;【立ち絵】藤枝：真剣
 [藤枝ベース私服]
 [藤枝真剣]
+[freeimage layer=13 time=300]
+;==========================
 [whosay name="藤枝 肇" color=%mp.color]
 「[名字]様この度は機会を頂き[r]
 ありがとうございます！」[p]
@@ -79,7 +82,7 @@
 [whosay name="藤枝 肇" color=%mp.color]
 「今は僕にとって十分なお言葉です[r]
 [sp]僕は慢心ぜず努力し、彼女にふさわしくなります」[p]
-
+*seen_1
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]に苦労させるつもりはない[r]
 [sp]君が一人前になるまではどれぐらいだろうな？　」[p]
@@ -100,7 +103,7 @@
 [藤枝目閉じ]
 [whosay name="藤枝 肇" color=%mp.color]
 「ええ、[r]
-でも僕も負けるつもりはありません」[p]
+[sp]でも僕も負けるつもりはありません」[p]
 
 #
 藤枝様の瞳は強く輝いていた[r]
@@ -125,14 +128,13 @@
 [藤枝目伏せ照れ]
 [whosay name="藤枝 肇" color=%mp.color]
 「貴方の事を[r]
-[名前]さんとお呼びしてもいいですか？　」[p]
+[sp][名前]さんとお呼びしてもいいですか？　」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
-「はい、勿論です[r]
-私もあなたを肇さまと[r]
-お呼びしても構いませんか？」[p]
+「はい、勿論です。[r]
+[sp]私もあなたを肇さまと、お呼びしても構いませんか？」[p]
 
 ;【立ち絵】藤枝：微笑み照れ
 [藤枝微笑み照れ]
@@ -141,8 +143,8 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「全く、私達がいることを忘れているんじゃないのか？[r]
-まだ二人きりで会わせるつもりはない、[r]
-藤枝君も忙しいなか来てもらったのであまり時間はない」[p]
+[sp]まだ二人きりで会わせるつもりはない、[r]
+[sp]藤枝君も忙しいなか来てもらったのであまり時間はない」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：落ち込み
@@ -173,8 +175,6 @@
 [主人公照れ目普通]
 「指切りをしてくださいませんか？」[p]
 
-
-
 ;【立ち絵】藤枝：微笑み
 [藤枝笑顔大]
 [whosay name="藤枝 肇" color=%mp.color]
@@ -191,7 +191,6 @@
 [fadeoutbgm time=3000]
 [藤枝退場]
 ;ノーマルここまで
-
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
