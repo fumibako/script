@@ -263,6 +263,70 @@
 ;///////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】主人公邸 お稽古部屋
 ;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
+;========================================================================================
+;◆__◆__◆8_4に藤枝が表示されるためキャラロードします◆__◆__◆
+;@jump target=end_sub
+;[return]へGO　ここは、消さないでください
+;========================================================================================
+;藤枝立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
+;藤枝プリロード
+;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+;=========================================================================================
+*hujieda
+;立ち絵表示[藤枝ベース]
+[preload storage="data/fgimage/hujieda/base_sifuku.png" wait=true]
+;立ち絵表示[藤枝郵便局員服]
+[preload storage="data/fgimage/hujieda/base_yuubin.png" wait=true]
+;[藤枝眉通常]
+[preload storage="data/fgimage/hujieda/mayu_futuu.png" wait=true]
+;[藤枝眉下げ]
+[preload storage="data/fgimage/hujieda/mayu_sage.png" wait=true]
+;[藤枝眉驚き]
+[preload storage="data/fgimage/hujieda/mayu_odoroki.png" wait=true]
+;[藤枝眉困り]
+[preload storage="data/fgimage/hujieda/mayu_komari.png" wait=true]
+;[藤枝眉強気]
+[preload storage="data/fgimage/hujieda/mayu_tuyoki.png" wait=true]
+;[藤枝眉平行]
+[preload storage="data/fgimage/hujieda/mayu_heikou.png" wait=true]
+;藤枝目
+;[藤枝目通常]
+[preload storage="data/fgimage/hujieda/me_futuu.png" wait=true]
+;[藤枝目大]
+[preload storage="data/fgimage/hujieda/me_ake.png" wait=true]
+;[藤枝目にこ]
+[preload storage="data/fgimage/hujieda/me_niko.png" wait=true]
+;[藤枝目伏]
+[preload storage="data/fgimage/hujieda/me_fusi1.png" wait=true]
+;[藤枝目閉じ]
+[preload storage="data/fgimage/hujieda/me_toji.png" wait=true]
+;[藤枝横目]
+[preload storage="data/fgimage/hujieda/me_yoko.png" wait=true]
+;[藤枝横伏目]
+
+;藤枝口
+[preload storage="data/fgimage/hujieda/me_yokofusi1.png" wait=true]
+;[藤枝口通常]
+[preload storage="data/fgimage/hujieda/kuti_futuu.png" time=0]
+;[藤枝口微笑み]
+[preload storage="data/fgimage/hujieda/kuti_hohoemi.png" time=0]
+;[藤枝口笑顔]
+[preload storage="data/fgimage/hujieda/kuti_warau_s.png" time=0]
+;[藤枝口笑顔大]
+[preload storage="data/fgimage/hujieda/kuti_warau.png" time=0]
+;[藤枝口開]
+[preload storage="data/fgimage/hujieda/kuti_ake.png" time=0]
+;[藤枝口大開]
+[preload storage="data/fgimage/hujieda/kuti_ooake.png" time=0]
+;[藤枝口驚き]
+[preload storage="data/fgimage/hujieda/kuti_odoroki.png" time=0]
+;[藤枝口ムッ]
+[preload storage="data/fgimage/hujieda/kuti_mu.png" time=0]
+;[藤枝汗]
+[preload storage="data/fgimage/hujieda/emo_ase.png" time=0]
+;[藤枝頬染め]
+[preload storage="data/fgimage/hujieda/emo_hohosome.png" time=0]
+
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
@@ -345,70 +409,6 @@
 ;////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】: レトロな喫茶店
 [preload storage="data/fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" wait=true]
-;======================================================================================
-;◆__◆__◆10_3に藤枝が表示されるためキャラロードします◆__◆__◆
-;@jump target=end_sub
-;[return]へGO　ここは、消さないでください
-;========================================================================================
-;藤枝立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
-;藤枝プリロード
-;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-;=========================================================================================
-*hujieda
-;立ち絵表示[藤枝ベース]
-[preload storage="data/fgimage/hujieda/base_sifuku.png" wait=true]
-;立ち絵表示[藤枝郵便局員服]
-[preload storage="data/fgimage/hujieda/base_yuubin.png" wait=true]
-;[藤枝眉通常]
-[preload storage="data/fgimage/hujieda/mayu_futuu.png" wait=true]
-;[藤枝眉下げ]
-[preload storage="data/fgimage/hujieda/mayu_sage.png" wait=true]
-;[藤枝眉驚き]
-[preload storage="data/fgimage/hujieda/mayu_odoroki.png" wait=true]
-;[藤枝眉困り]
-[preload storage="data/fgimage/hujieda/mayu_komari.png" wait=true]
-;[藤枝眉強気]
-[preload storage="data/fgimage/hujieda/mayu_tuyoki.png" wait=true]
-;[藤枝眉平行]
-[preload storage="data/fgimage/hujieda/mayu_heikou.png" wait=true]
-;藤枝目
-;[藤枝目通常]
-[preload storage="data/fgimage/hujieda/me_futuu.png" wait=true]
-;[藤枝目大]
-[preload storage="data/fgimage/hujieda/me_ake.png" wait=true]
-;[藤枝目にこ]
-[preload storage="data/fgimage/hujieda/me_niko.png" wait=true]
-;[藤枝目伏]
-[preload storage="data/fgimage/hujieda/me_fusi1.png" wait=true]
-;[藤枝目閉じ]
-[preload storage="data/fgimage/hujieda/me_toji.png" wait=true]
-;[藤枝横目]
-[preload storage="data/fgimage/hujieda/me_yoko.png" wait=true]
-;[藤枝横伏目]
-
-;藤枝口
-[preload storage="data/fgimage/hujieda/me_yokofusi1.png" wait=true]
-;[藤枝口通常]
-[preload storage="data/fgimage/hujieda/kuti_futuu.png" time=0]
-;[藤枝口微笑み]
-[preload storage="data/fgimage/hujieda/kuti_hohoemi.png" time=0]
-;[藤枝口笑顔]
-[preload storage="data/fgimage/hujieda/kuti_warau_s.png" time=0]
-;[藤枝口笑顔大]
-[preload storage="data/fgimage/hujieda/kuti_warau.png" time=0]
-;[藤枝口開]
-[preload storage="data/fgimage/hujieda/kuti_ake.png" time=0]
-;[藤枝口大開]
-[preload storage="data/fgimage/hujieda/kuti_ooake.png" time=0]
-;[藤枝口驚き]
-[preload storage="data/fgimage/hujieda/kuti_odoroki.png" time=0]
-;[藤枝口ムッ]
-[preload storage="data/fgimage/hujieda/kuti_mu.png" time=0]
-;[藤枝汗]
-[preload storage="data/fgimage/hujieda/emo_ase.png" time=0]
-;[藤枝頬染め]
-[preload storage="data/fgimage/hujieda/emo_hohosome.png" time=0]
-
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
