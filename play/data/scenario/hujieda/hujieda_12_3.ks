@@ -30,13 +30,13 @@
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様、[r]
-いつまでもふさぎ込んでいても仕方ありません」[p]
+[sp]いつまでもふさぎ込んでいても仕方ありません」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ
 [主人公目閉じ]
 「わかっています、[r]
-それでも今は何も手に着かないのです」[p]
+[sp]それでも、今は何も手に着かないのです」[p]
 
 ;【立ち絵】主人公：悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -45,13 +45,13 @@
 [sp]色鮮やかな世界から白黒の世界に閉じ込められたみたいだわ[r]
 [sp]藤枝様が独逸に行かれたらもうお会いすることもない……）[p]
 
-[whosay name=女中 ]
+[whosay name="女中"]
 「お嬢様、磯野様、お客様です」[p]
 
 [whosay name=磯野 color="dimgray"]
 「どちらさまでしょうか？」[p]
 
-#女中
+[whosay name="女中"]
 「三宮家の時子様です[r]
 [sp]お嬢様にお会いしたいという事でしたが[r]
 [sp]いかがしましょうか？」[p]
@@ -61,9 +61,10 @@
 [主人公目大]
 [主人公口開]
 [主人公眉通常]
-「お会いします[r]
-[sp]時子さんをお通ししてください」[r]
-[sp]（そうだわ！　時子さんになら相談できる）[p]
+「お会いします。[r]
+[sp]時子さんをお通ししてください」[p]
+
+（そうだわ！　時子さんになら相談できる）[p]
 
 [whosay name=磯野 color="dimgray"]
 「藤枝様の事は内密に……」[p]
@@ -132,22 +133,48 @@
 
 [主人公涙流_目閉用]
 #
-それからしばらく私は今までの、[r]
-悲しみを吐き出すかのうように[r]
-泣いていたそしてやっとほっとした[p]
+それから、しばらく私は、今までの悲しみを吐き出すかのように[r]
+泣いていた。[p]
+
+そして、やっとほっとした[p]
 [主人公効果消]
-;選択肢
-時子さんに藤枝の事を話す
-話さない→bad
-
-
-
-;時子さんに藤枝の事を話す
-
+#
+私は
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;背景変更:和紙風 セピア色
+[chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;[link]タグでの選択肢例
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+[link target=*yes]時子さんに藤枝の事を話す。[endlink][r]
+[r][r][r]
+[link target=*no]話さない。[endlink][r]
+[resetfont]
+[s]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+*yes
+[cm]
+;時子さんに藤枝の事を話すことにした。
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+#
+時子さんに藤枝の事を話すことにした。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：悲しみ
 [主人公憂い]
-「藤枝様がここから居なくなってしまうの[r]
+「藤枝様がここから居なくなってしまうの。[r]
 [sp]私はそれがたまらなく悲しかったのです」[p]
 
 [whosay name="三宮　時子" color="#c25232"]
@@ -212,13 +239,17 @@
 「それは時子さんのおかげです[r]
 [sp]後は私も何かできないか頑張ります！」[p]
 
-
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
 @jump storage="test_hujieda.ks"
 [s]
-
+;=========================================================================
+*no
+;badに飛びます　スクリプト担当者以外は消さないでください
+[jump storage="hujieda/hujieda_12_3_badED.ks" target=no_seen]
+;=========================================================================
+[s]
 *window_close
 [cm]
 [chara_mod name="girl_base" storage="toumei.gif" time=0]
