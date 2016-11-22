@@ -192,24 +192,31 @@
 
 ;【背景】主人公邸 玄関
  [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+ [表示準備 storage="bg/bg_genkan.jpg"]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
 [call target=*start storage="macro_tati_hujieda.ks"]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
-#
-こっそり拝見するだけならいいわよね。[r]
-自転車の音が聞こえるもうすぐだわ！　[p]
-;(こっそり拝見するだけならいいわよね)の方がいいと思いますが如何でしょうか
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（こっそり拝見するだけならいいわよね）[p]
 
+;SE自転車ベル
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ポーズ片手]
+(自転車の音が聞こえるもうすぐだわ！)[p]
+
+;=========表示================
 ;【立ち絵】 藤枝　通常
 [藤枝ベース郵便屋]
 [藤枝通常]
 [藤枝口微笑み]
+[freeimage layer=13 time=500]
+;=========================
 [whosay name="藤枝 肇" color=%mp.color] 
-「郵便です！」[p]
-
+「郵便です！」
+[主人公ポーズ通常][p]
 [whosay name="女中" color=%mp.color] 
 「お疲れ様です。」[p]
 
