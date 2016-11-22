@@ -217,6 +217,7 @@
 [暗転]
 ;============================================================================================
 [eval exp="f.haikei_credit='まだないです'"]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1000]
 ;メッセージ消すと再構築を隠さなければならないのです。↓ 演出が表示が重いのです。視点＋時間移動あ、背景変更のみではだめでしょうか？
 [表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" layer=29]
@@ -410,14 +411,22 @@
 [sp]私も藤枝様を諦めないわ）[p]
 [fadeoutbgm time=3000]
 #
-[藤枝退場準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
-
+[藤枝退場]
+;ふんわり退場→　[藤枝退場準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
+[主人公退場]
 ;============================================================================================
-;【背景】主人公邸 玄関
- [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+;【背景】主人公邸 玄関 
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;場所移動なのでわかります。
+[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[表示準備 storage="bg/bg_genkan.jpg" layer=29]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
+[主人公通常]
+[主人公ポーズ通常]
+[freeimage layer=29 time=500]
+[メッセージウィンドウ上ボタン表示]
 ;============================================================================================
 
 [whosay name="三宮　時子" color="#c25232"]
@@ -456,14 +465,27 @@
 「お父様にお話があります[r]
 [sp]また時間を空けて欲しいと[r]
 [sp]お伝えしてください」[p]
+
+;==============================================
 ;【テキスト全画面】黒茶・和紙風背景に白文字
  [テキスト全画面白文字]
 数刻後[p]
+;==============================================
+;============================================================================================
 ;【背景】主人公邸 庭の見える部屋：夜
- [chara_mod name="bg" storage="bg/room_niwa_yoru.jp" time=1000]
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;場所移動なのでわかります。
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[表示準備 storage="bg/room_niwa_yoru.jpg" layer=29]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
+[主人公通常]
+[主人公ポーズ通常]
+[freeimage layer=29 time=500]
+[メッセージウィンドウ上ボタン表示]
+;============================================================================================
+
 ;【立ち絵】主人公：目閉じ
 [主人公眉下げ下]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
