@@ -9,7 +9,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;【背景】:町並み
 ;背景は、サブルーチンを読んでから(callの後)だと安全
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=30]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -49,6 +49,7 @@
 「その２軒のピアニストについて、御存じないでしょうか？」[p]
 
 [whosay name="三宮　時子" color="#c25232"]
+[主人公口通常]
 「なぜですの？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -60,10 +61,12 @@
 [sp]素敵なピアノを聴きたいと思いまして！」[p]
 
 [whosay name="三宮　時子" color="#c25232"]
+[主人公口通常]
 「[名前]さん、何か隠されてませんか？　[r]
 [sp]秘め事の１つや２つある方が魅力的ですけどね。[r]
 [sp]お手紙止められてお稽古に熱心にしているという噂を[r]
 [sp]お聞きしたけれど芸術にでも目覚められたの？」[p]
+;けどね。で区切って会話を挟んだ方が自然だと思います
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：困り
@@ -114,8 +117,8 @@
 [fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ思案
-[主人公目閉じ]
 [主人公口通常]
+[主人公目閉じ]
 [主人公眉下げ下]
 「良くないですか。[r]
 [sp]……それでも知りたいと思うときがあるのです」[p]
@@ -138,19 +141,25 @@
 [sp]藤枝様の事を考えると心が温かくなるのです」[p]
 
 [whosay name="三宮　時子" color="#c25232"]
-「何か相談があればのりますわ[r]
-[sp]私は[名前] さんの親友です」[p]
+「何か相談があればのりますわ。[r]
+[sp]私は[名前]さんの親友です」[p]
 
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
 「時子さんありがとうございます！　[r]
 [sp]それでは時子さん、ごきげんよう」[p]
 
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / mirukutest.jpg " time=50]
-[イベントシーン構築]
+;==============================================================================
+[eval exp="f.haikei_credit='I9IhvvVdPo'"]
+[表示準備 storage="bg/I9IhvvVdPo/mirukutest.jpg" layer=29]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;storage=以降の空白はバグになる恐れがありますので詰めます
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutest.jpg" time=50]
 [主人公ポーズ通常]
 [主人公通常]
-
+[freeimage layer=29 time=200]
+;ふわっと表示依頼
+;==============================================================================
 #
 ２駅先の駅前に着くとピアノの音がしたので[r]
 その音を頼りに歩いたら、ミルクホール月ノ光の看板が目に入った。[p]
@@ -177,7 +186,6 @@
 [主人公伏目]
 [主人公眉下げ下]
 「私も藤枝様にお花とお手紙を渡せたらいいのに」[p]
-
 [fadeoutbgm time=3000]
 
 ;【立ち絵】主人公：ハッとする
