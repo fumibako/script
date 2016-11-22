@@ -69,7 +69,7 @@
 ;アイコンにかかります
 [sp]私もその言葉をお返ししましょう[r]
 藤枝様は音楽とピアノを慈しんでおられます。[r]
-今の藤枝様に時間はありませんがきっと
+今の藤枝様に時間はありませんがきっと[r]
 素晴らしいピアノの演奏をされるでしょう。[r]
 [sp]私がもう藤枝様に会うことも[r]
 藤枝様のピアノを聴くこともなくても[r]
@@ -193,9 +193,9 @@
 #
 [暗転]
 [eval exp="f.haikei_credit='まだないです'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [表示準備 storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" layer=29]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer=29 time=1000]
@@ -234,6 +234,7 @@
 [fadeoutbgm time=3000]
 
 ;============================================================================================
+[call target=*start storage="macro_tati_hujieda.ks"]
 #
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='まだないです'"]
