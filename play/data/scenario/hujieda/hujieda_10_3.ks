@@ -248,6 +248,9 @@
 閉店後[p]
 
 ;背景:レトロな喫茶店============表示準備============================================
+[cm]
+[call target=*start storage="macro_tati_hujieda.ks"]
+[layopt layer=message0 visible=false]
 [layopt layer=fix visible=false]
 [cm]
 [eval exp="f.haikei_credit='まだないです'"]
@@ -259,6 +262,7 @@
 [藤枝通常]
 [メッセージウィンドウ上ボタン表示]
 [freeimage layer=29 time=500]
+[layopt layer=message0 visible=true]
 [layopt layer=fix visible=true]
 ;================================================================================
 
