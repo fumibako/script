@@ -204,7 +204,7 @@
 [主人公頬染め]
 [主人公眉下げ下]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい。」[p]
+「はい」[p]
 #
 ;ずっと立っている状態になってしまいますので退場します
 [藤枝退場準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg"]
