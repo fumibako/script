@@ -361,8 +361,7 @@
 ;さった？
 ;
 [sp][r][r]
-[sp][sp]       私はその物語に引きこまれた。[p]
-[p]
+[sp]       私はその物語に引きこまれた。[p]
 [resetfont]
 [wait time=10]
 ;裏で画面構成
@@ -382,10 +381,10 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;=================================================================================_
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 ;四条家玄関
+[freeimage layer=29 time=400]
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
 [メッセージウィンドウ上ボタン表示]
-[freeimage layer=29 time=400]
 ;画面復帰
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;=================================================================================_
