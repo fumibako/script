@@ -146,16 +146,17 @@
 
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「時子さんありがとうございます！　[r]
 [sp]それでは時子さん、ごきげんよう」[p]
-
+#
+[er]
 ;==============================================================================
 [eval exp="f.haikei_credit='I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/mirukutest.jpg" layer=29]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;storage=以降の空白はバグになる恐れがありますので詰めます
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutest.jpg" time=50]
-[主人公ポーズ通常]
 [主人公通常]
 [freeimage layer=29 time=200]
 ;ふわっと表示依頼
