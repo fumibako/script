@@ -19,9 +19,11 @@
 ;[endmacro]
 ;[主人公ポーズ通常２ layer=29]
 
-[image layer=29 left=1 top=381 layer=15 storage="girl/S/girl_all_me_toji_mayu_futuu.png" time=300 visible=true]
+[image name="jg1" layer=29 layer=15 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
-[freeimage layer=29 time=300]
+[iscript]
+$('.jg1').remove();
+[endscript]
 [wait time=10]
 [主人公ポーズ通常]
 [主人公憂い]
