@@ -19,8 +19,8 @@
 ;[endmacro]
 ;[主人公ポーズ通常２ layer=29]
 
-[image name="girl_base2" layer=29 left=1 top=381 layer=15 storage="girl/S/girl_all_me_toji_mayu_futuu.png" time=300 visible=true]
-[freeimage layer=29 time=200]
+[image layer=29 left=1 top=381 layer=15 storage="girl/S/girl_all_me_toji_mayu_futuu.png" time=300 visible=true]
+[freeimage layer=29 time=300]
 [主人公ポーズ通常]
 [主人公憂い]
 ;[プリロード画面消去]
