@@ -426,10 +426,7 @@ $('.loding_pic1').remove();
 ;パッとでるタイプ　実験　楽をしないで普通にやる どこに出そう
 
 ;立ち絵表示[主人公ポーズ通常２] メッセージにいたらダメだね　消すとき大変なことに
-[macro name="主人公ポーズ通常２"]
-[image name="girl_base2" layer=%layer|29 zindex=1007 left=1 top=381 layer=15 storage=%|girl/S/girl_all_me_toji_mayu_futuu.png time=%time|30]
-[wait time=10]
-[endmacro]
+
 
 ;ネーミングセンスがないから後で変えていただけると助かります ◆I9IhvvVdPoさんもつかえるように
 ;◆[表示準備完了 time=500] 
