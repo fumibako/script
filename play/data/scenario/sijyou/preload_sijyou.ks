@@ -435,7 +435,7 @@ $('.loding_pic1').remove();
 ;◆[表示準備完了 time=500] 
 ;(必ず[表示準備 storage="bg/bg_machi.jpg"]を使用後、 立ち絵ベースと表情マクロの後に使用。)
 [macro name="表示準備完了"]
-[freeimage layer=%layer|13 time=%time|200]
+[freeimage layer=%layer|29 time=%time|200]
 [endmacro]
 ;==================================================
 ;テストプレイで画面遷移時の自然さに見入ってしまいました。立ち絵が背景と共にふわっと溶け込むように切り替わる自然さが素晴らしいと思います
