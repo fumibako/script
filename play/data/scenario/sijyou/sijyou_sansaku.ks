@@ -21,12 +21,14 @@
 
 [image name="jg1" layer=29 layer=15 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
-[iscript]
-$('.jg1').remove();
-[endscript]
-[wait time=10]
 [主人公ポーズ通常]
 [主人公憂い]
+;[iscript]
+;$('.jg1').remove();
+;[endscript]
+;問題ない↑
+[freeimage layer=29]
+[wait time=10]
 ;[プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです==================================================================
