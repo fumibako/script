@@ -13,7 +13,7 @@
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
-[主人公ポーズ通常２　layer=29]
+[主人公ポーズ通常２ layer=29]
 [主人公憂い]
 [主人公ポーズ通常]
 [表示準備完了 layer=29 time=500]
