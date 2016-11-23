@@ -22,9 +22,9 @@
 [wait time=10]
 [主人公ポーズ通常]
 [主人公憂い]
-;[iscript]
-;$('.jg1').remove();
-;[endscript]
+[iscript]
+$('.jg1').remove();
+[endscript]
 ;問題ない↑
 
 [wait time=10]
