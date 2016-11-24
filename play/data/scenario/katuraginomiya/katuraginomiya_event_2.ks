@@ -100,14 +100,19 @@
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「子供たちが喧嘩をしているので仲裁をしたら遊びに[r]
-[sp]誘われてな……。[sp]楽しいものだった。[r]
-[sp]無邪気な笑顔というのも、心が癒される」[p]
+[sp]誘われてな……」[p]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_yoko.png" time=0]
+[wait time=10]
+「楽しいものだった。[r]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
+[wait time=10]
+[sp]無邪気な笑顔というのも、心が癒される」
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り顔
 [主人公困り]
-「心が癒される、ですか。[r]
-[sp]何かございましたか？」[p]
+「心が癒される、ですか。[sp]何かございましたか？」[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
@@ -129,8 +134,7 @@
 [葛城宮真剣]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「構わない。[r]
-[sp]君に対しては誠実でいたい」[p]
+「構わない。[sp]君に対しては誠実でいたい」[p]
 
 ;【立ち絵】主人公 真剣
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -149,10 +153,11 @@
 ;【立ち絵】葛城宮 ため息
 [葛城宮目伏]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「反対されていないといえば嘘になるな。[r]
-[sp]君も知っているかもしれないが、[r]
+「反対されていないといえば嘘になるな」[p]
+[葛城宮伏目パチ1回]
+「君も知っているかもしれないが、[r]
 [sp]『皇族の婚嫁は同族又は勅旨に由りを特に認許せられた[r]
-[sp]華族に限る』と決められている」[p]
+[sp] 華族に限る』と決められている」[p]
 
 ;【立ち絵】主人公 困り顔
 [主人公困り]
@@ -186,7 +191,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 「けれど、お父様も家令も私の意思を尊重して見守って[r]
-[spくださっています」[p]
+[sp]くださっています」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
@@ -194,7 +199,7 @@
 ;【立ち絵】葛城宮 微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「それは何よりだな」[p]
-
+[葛城宮目パチ1回]
 [葛城宮微笑み]
 ;【立ち絵】葛城宮 真剣
 「……君自身は私をどう思っている？」[p]
@@ -227,8 +232,12 @@
 ;【立ち絵】葛城宮 困り顔
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……素晴らしいか。[r]
-[sp]だが私はまだ何もできていない。[r]
-[sp]自分も国も変えたい、そう思い貴族院に入った。[r]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
+[wait time=10]
+[sp]だが私はまだ何もできていない。」[p]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_fusi1.png" time=0]
+[wait time=10]
+「自分も国も変えたい、そう思い貴族院に入った。[r]
 [sp]この国は四民平等をうたいながら不平等だ」[p]
 ;【SE】子供たち
 [playse storage=kodomotachi_warai.ogg loop=false ]
@@ -236,8 +245,7 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 #
-憐れむような眼差しで[r]
-殿下は子供たちに視線を向けた。[p]
+憐れむような眼差しで、殿下は子供たちに視線を向けた。[p]
 
 ;【立ち絵】葛城宮 真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -277,7 +285,8 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ。[r]
 [sp]私の周りにいる女性は身分が高すぎるせいか、差別意識が強い」[p]
-「周囲の者たちもほとんど私がいうことを青臭い理想だと思っている。[r]
+「周囲の者たちもほとんど私がいうことを[r]
+[sp]青臭い理想だと思っている。[r]
 [sp]だが私はこの国を豊かで平等で平和な国に変えたい」[p]
 
 ;【立ち絵】主人公 驚き
