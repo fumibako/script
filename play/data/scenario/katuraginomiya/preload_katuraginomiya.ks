@@ -76,7 +76,7 @@
 [preload storage="data/fgimage/katuraginomiya/me_yokofusi1.png" wait=true]
 ;============
 ;葛城宮口通常
-[preload storage="katuraginomiya/kuti_futuu.png" wait=true]
+[preload storage="data/fgimage/katuraginomiya/kuti_futuu.png" wait=true]
 ;葛城宮口開
 [preload storage="data/fgimage/katuraginomiya/kuti_ake.png" wait=true]
 ;葛城宮口大開
