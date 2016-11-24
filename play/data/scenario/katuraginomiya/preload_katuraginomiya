@@ -37,68 +37,83 @@
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
-*9_3
-;見合い
+*event_1
+;出会い
 ;*イベント名のラベルを追加していきます。
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 ;個別のプリロード画面が今はないのです
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_katuraginomiya.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
+;町で出会うので背景は必要なし？
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
+[preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
 ;========================================================================================
 ;財前立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
-;財前プリロード
+;葛城宮プリロード
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 ;=========================================================================================
-*zaizen
-;立ち絵表示[財前ベース]
-[preload storage="data/fgimage/zaizen/base_suit.png" wait=true]
-;立ち絵表示[財前ベース燕尾服]
-[preload storage="data/fgimage/zaizen/base_enbifuku.png" wait=true]
-;財前眉普通
-[preload storage="data/fgimage/zaizen/mayu_futuu.png" wait=true]
-;財前眉ひそめ
-[preload storage="data/fgimage/zaizen/mayu_hisome.png" wait=true]
-;財前眉強気
-[preload storage="data/fgimage/zaizen/mayu_tuyoki.png" wait=true]
-;財前眉下げ
-[preload storage="data/fgimage/zaizen/mayu_sage.png" wait=true]
-;財前眉冷ややか
-[preload storage="data/fgimage/zaizen/mayu_hiyayaka.png" wait=true]
-;財前眉驚き
-[preload storage="data/fgimage/zaizen/mayu_odoroki.png" wait=true]
-;財前眉やわらか
-[preload storage="data/fgimage/zaizen/mayu_komari_soft.png" wait=true]
-;財前目
-[preload storage="data/fgimage/zaizen/me_hiyayaka.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_niko.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_toji.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_yokofusi1.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_fusi1.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_okori.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_fusi2.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_ake.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_yoko.png" wait=true]
-[preload storage="data/fgimage/zaizen/me_futuu.png" wait=true]
-;財前口
-[preload storage="data/fgimage/zaizen/kuti_futuu.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_hohoemi.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_ake.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_mu.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_okori.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_odoroki.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_warau.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_warau_soft.png" wait=true]
-[preload storage="data/fgimage/zaizen/kuti_hiyayaka.png" wait=true]
-;財前エモ
-[preload storage="data/fgimage/zaizen/emo_ase.png" wait=true]
-[preload storage="data/fgimage/zaizen/emo_hohosome.png" wait=true]
+*katuraginomiya
+
+;立ち絵表示[葛城宮ベース軍服]
+[preload storage="data/fgimage/katuraginomiya/base_gunpuku.png" wait=true]
+;立ち絵表示[葛城宮ベース私服]
+[preload storage="data/fgimage/katuraginomiya/base_sifuku.png" wait=true]
+;============
+;葛城宮眉
+;葛城宮眉通常
+[preload storage="data/fgimage/katuraginomiya/mayu_futuu.png" wait=true]
+;葛城宮眉下げ
+[preload storage="data/fgimage/katuraginomiya/mayu_sage.png" wait=true]
+;葛城宮眉困り
+[preload storage="data/fgimage/katuraginomiya/mayu_komari.png" wait=true]
+;葛城宮眉強気
+[preload storage="data/fgimage/katuraginomiya/mayu_tuyoki.png" wait=true]
+;葛城宮眉驚き
+[preload storage="data/fgimage/katuraginomiya/mayu_odoroki.png" wait=true]
+;葛城宮眉怒り
+[preload storage="data/fgimage/katuraginomiya/mayu_okori.png" wait=true]
+;============
+;葛城宮目
+[preload storage="data/fgimage/katuraginomiya/me_futuu.png" wait=true]
+;葛城宮目大
+[preload storage="data/fgimage/katuraginomiya/me_ake.png" wait=true]
+;葛城宮目にこ
+[preload storage="data/fgimage/katuraginomiya/me_niko.png" wait=true]
+;葛城宮目伏
+[preload storage="data/fgimage/katuraginomiya/me_fusi1.png" wait=true]
+;葛城宮目閉じ
+[preload storage="data/fgimage/katuraginomiya/me_toji.png" wait=true]
+;葛城宮横目
+[preload storage="data/fgimage/katuraginomiya/me_yoko.png" wait=true]
+;葛城宮横伏目
+[preload storage="data/fgimage/katuraginomiya/me_yokofusi1.png" wait=true]
+;============
+;葛城宮口通常
+[preload storage="katuraginomiya/kuti_futuu.png" wait=true]
+;葛城宮口開
+[preload storage="data/fgimage/katuraginomiya/kuti_ake.png" wait=true]
+;葛城宮口大開
+[preload storage="data/fgimage/katuraginomiya/kuti_ooake.png" wait=true]
+;[葛城宮口微笑み
+[preload storage="data/fgimage/katuraginomiya/kuti_hohoemi.png" wait=true]
+;[葛城宮口笑顔
+[preload storage="data/fgimage/katuraginomiya/kuti_warau_s.png" wait=true]
+;[葛城宮口笑顔大
+[preload storage="data/fgimage/katuraginomiya/kuti_warau.png" wait=true]
+;[葛城宮口驚き
+[preload storage="data/fgimage/katuraginomiya/kuti_odoroki.png" wait=true]
+;葛城宮口ムッ
+[preload storage="data/fgimage/katuraginomiya/kuti_mu.png" wait=true]
+;葛城宮口怒り
+[preload storage="data/fgimage/katuraginomiya/kuti_okori.png" wait=true]
+;[葛城宮汗]
+[preload storage="data/fgimage/katuraginomiya/emo_ase.png" wait=true]
+;[葛城宮頬染め]
+[preload storage="data/fgimage/katuraginomiya/emo_hohosome.png" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
