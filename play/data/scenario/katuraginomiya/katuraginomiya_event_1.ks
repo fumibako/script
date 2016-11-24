@@ -1,7 +1,7 @@
 ;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*11_1 storage="katuraginomiya/preload_katuraginomiya.ks]
+[call target=*event_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
@@ -16,6 +16,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
+*seen_1
 #
 今日も町は人が行き交い[r]
 賑やかで明るい活気にあふれている。[p]
@@ -81,7 +82,7 @@
 ;[if exp="sf.BGM=='ON'"]
 ;[fadeoutbgm time=3000]
 ;[endif]
-
+*seen_2
 #
 ふと視線を感じて思わず振返ると、[r]
 気品があり、華やかで男らしい青年と視線が絡まった。[p]
@@ -114,7 +115,7 @@
 [主人公ポーズ通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「これはぶしつけに失礼した」[p]
-
+*seen_3
 [whosay name="三宮　時子" color="#c25232"]
 「葛城宮殿下！」[p]
 
@@ -166,7 +167,7 @@
 ;[if exp="sf.BGM=='ON'"]
 ;[fadeoutbgm time=3000]
 ;[endif]
-
+*seen_4
 ;【立ち絵】葛城宮 ため息
 [葛城宮横目]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -224,6 +225,7 @@
 [fadeoutbgm time=3000]
 [endif]
 
+*seen_5
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -240,30 +242,30 @@
 [endif]
 #
 
-
+;==========================スクリプト・全画面表示の間に設定===============================
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
-
 [layopt layer=29 visible=true]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
 ;テキスト全画面
 [font color=white size=27]
+;==========================スクリプトここまで=========================================================
+
 #
 ――その翌日。[p]
 
+;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
-
 ;機能ボタン表示
 [locate x=530 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
@@ -284,9 +286,10 @@
 
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-;--------------------------------------------------------------------
-;1.5回目イベント翌日手紙が届く
+;==========================スクリプト・全画面表示からの復帰==========================================
 
+;1.5回目イベント翌日手紙が届く
+*seen_6
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 通常
 （今日はお稽古がよく進んだわ……明日の予習も……）[p]
@@ -328,17 +331,21 @@
 [endif]
 #
 [主人公退場]
-
-;背景:町並み
+;==========================================================================================================================
+;【背景】:町並み　回想シーン・セピア用
 [chara_mod name="bg" storage="bg/bg_machi_omoide.jpg" time=1500]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;===========================================================================================================================
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 　　『またお目にかかろう』[p]
+  
+;====================================================================
 #
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;====================================================================
 
 ;【立ち絵】主人公 眉強気
 [主人公ポーズ通常]
@@ -448,7 +455,7 @@
 [sp]私も誠実にお返事を書きます」[p]
 
 
-
+;====================================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
