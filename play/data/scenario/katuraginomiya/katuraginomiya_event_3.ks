@@ -409,10 +409,8 @@ $('.junbi_girl').remove();
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-
-;【背景】お稽古部屋
-;[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;一瞬手紙の後ろがみえるので　手紙皇后さま
+[chara_mod name="bg" storage="bg/bg_tegami_kousitsu_akebono.jpg"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -421,8 +419,8 @@ $('.junbi_girl').remove();
 
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
-[暗転]
 [freeimage layer = 29 time=1000]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akebono.jpg" time=500]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 ;メッセージレイヤを会話窓用に設定変更
@@ -452,6 +450,12 @@ $('.junbi_girl').remove();
 [手紙読了]
 [resetfont]
 [stopbgm]
+
+;=========================スクリプトここまで=======================================
+;【背景】お稽古部屋
+;[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;=========================スクリプトここまで=======================================
 #
 ;@jump storage="event.ks" target=*event_owari
 
