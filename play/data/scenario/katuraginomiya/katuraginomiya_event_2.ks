@@ -1,20 +1,24 @@
 ;イベント2回目
 ;散策イベント2
-
-;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*event_2 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
-
-
+[表示準備]
+;【背景】町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 #
 行き交う足音、[r]
 子供たちの明るく元気な声が響く。[p]
@@ -40,15 +44,16 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！」[p]
 （殿下が子供たちと遊んでいらっしゃるわ！）[p]
+#
 [葛城宮ベース私服]
 [葛城宮笑顔大]
+[表示開始 time=400]
 
 [主人公目パチ1回]
 [主人公通常]
 [主人公ポーズ通常]
 #
-ふと私の視線に気づいたように[r]
-殿下の瞳が私を捉える。[p]
+ふと私の視線に気づいたように殿下の瞳が私を[ruby text=とら]捉える。[p]
 [葛城宮横目]
 [葛城宮驚き]
 ;【立ち絵】葛城宮 驚き
@@ -56,8 +61,8 @@
 「鷹司殿！」[p]
 [葛城宮微笑み]
 ;【立ち絵】葛城宮 通常
-「皆すまない、私はそろそろ抜けるが、[r]
-[sp]みんなで仲良く遊んでるんだぞ！」[p]
+「皆すまない、[r]
+[sp]私は、そろそろ抜けるが、みんなで仲良く遊んでるんだぞ！」[p]
 ;【SE】子供たち
 [playse storage=kodomotachi.ogg loop=false ]
 
@@ -70,8 +75,7 @@
 ;【立ち絵】葛城宮 微笑み
 [葛城宮笑顔]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「申し訳ないが、[r]
-[sp]私は用事があるのでな。[r]
+「申し訳ないが、私は用事があるのでな。[r]
 [sp]君たちは皆で仲良く遊べるだろう？」[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
@@ -79,7 +83,7 @@
 
 [whosay name="子供たち" color=%mp.color]
 「わかった。[r]
-[sp]今度また遊びを教えてちょうだいね。」[p]
+[sp]今度また遊びを教えてちょうだいね」[p]
 [葛城宮微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 驚
@@ -95,9 +99,9 @@
 [主人公通常]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「子供たちが喧嘩をしているので仲裁をしたら[r]
-[sp]遊びに誘われてな……楽しいものだった。[r]
-[sp]無邪気な笑顔というのも心が癒される」[p]
+「子供たちが喧嘩をしているので仲裁をしたら遊びに誘われてな……[r]
+[sp]楽しいものだった。[r]
+[sp]無邪気な笑顔というのも、心が癒される」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り顔
@@ -111,8 +115,7 @@
 ;【立ち絵】葛城宮 ため息
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「何かというならいつものことだ。[r]
-[sp]皆私の為といいながら[r]
-[sp]決まり事に私を縛ろうとする」[p]
+[sp]皆私の為といいながら、決まり事に私を縛ろうとする」[p]
  
 ;【立ち絵】主人公 困り顔
 [主人公伏目パチ1回]
@@ -137,8 +140,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「私に手紙を出していることを[r]
-[sp]周囲の方から反対されませんか？」[p]
+「私に手紙を出していることを周囲の方から反対されませんか？」[p]
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -156,8 +158,7 @@
 [主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、知っています。[r]
-[sp]お手紙をいただいたときより[r]
-[sp]法律関係や諸外国について学ぶ[r]
+[sp]お手紙をいただいたときより、法律関係や諸外国について学ぶ[r]
 [sp]機会をいただきましたから」[p]
 
 [主人公伏目パチ1回]
@@ -167,14 +168,12 @@
 ;【立ち絵】葛城宮 ため息
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「そうか。[r]
-[sp]まあ私の場合は周囲の者たちも[r]
-[sp]いつもの事の一つだと[r]
+[sp]まあ私の場合は周囲の者たちも、いつもの事の一つだと[r]
 [sp]さほど気にしていない」[p]
 
 ;【立ち絵】葛城宮 通常
 [葛城宮真剣]
-「だが君の周囲の者こそ[r]
-[sp]私との手紙のやり取りについて[r]
+「だが君の周囲の者こそ、私との手紙のやり取りについて[r]
 [sp]どう思っているのだ？」[p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -186,8 +185,7 @@
 ;【立ち絵】主人公 伏目
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-「けれどお父様も家令も[r]
-[sp]私の意思を尊重して[r]
+「けれどお父様も家令も私の意思を尊重して[r]
 [sp]見守ってくださっています」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -213,8 +211,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 
-[sp]ですがお手紙を拝見するたびに[r]
-[sp]色々なことを考えておられて[r]
+[sp]ですが、お手紙を拝見するたびに色々なことを考えておられて[r]
 [sp]素晴らしい方だと思っております」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -253,7 +250,7 @@
 [wait time=10]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええ、きっと殿下ほどの強い意志の方なら[r]
+「ええ、きっと殿下ほどの強い意志の方なら、[r]
 [sp]きっとやり遂げられるでしょう」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
@@ -278,8 +275,8 @@
 [葛城宮真剣]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「ああ。私の周りにいる女性は[r]
-[sp]身分が高すぎるせいか差別意識が強い」[p]
+「ああ。私の周りにいる女性は身分が高すぎるせいか[r]
+[sp]差別意識が強い」[p]
 「周囲の者たちもほとんど私がいうことを青臭い理想だと思っている。[r]
 [sp]だが私はこの国を豊かで平等で平和な国に変えたい」[p]
 
@@ -302,6 +299,8 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……それは君の父君を通して正式に交際してから話そう。[r]
 [sp]そろそろ戻らないと騒ぎになる」[p]
+
+;[葛城宮退場準備 time=100]イベントおわりなのでフェードアウトは無し
 [葛城宮退場]
 ;@jump storage="event.ks" target=*event_owari
 
