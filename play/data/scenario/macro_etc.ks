@@ -5,17 +5,32 @@
 ; その他マクロ設定
 ;==============================
 
+;◆[表示開始]
+[macro name="表示開始"]
+[freeimage layer=%layer|13 time=%time|50]
+[endmacro]
+
+;◆[プリロード画面消去]
+[macro name="プリロード画面消去"]
+[iscript]
+$('.loding_pic').remove();
+$('.loding_pic1').remove();
+[endscript]
+[layopt layer=fix visible=true]
+[endmacro]
+
 ;◆[暗転]
 [macro name="暗転"]
 #
 [chara_mod name="bg" storage="toumei.gif"]
 [endmacro]
 
-
 ;◆[華衣]
 [macro name=華衣]
 [ruby text="か"]華[ruby text="い"]衣
 [endmacro]
+
+
 
 ;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。主人公部屋には攻略対象こないので
 [macro name=表示準備]
