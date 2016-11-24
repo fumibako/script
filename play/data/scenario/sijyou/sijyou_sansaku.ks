@@ -9,26 +9,14 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-;[call target=*start storage="macro_tati_sijyou.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
-;[macro name="主人公ポーズ通常２"]
-;[image name="girl_base2" layer=%layer|29 left=1 top=381 layer=15 storage=%|girl/S/girl_all_me_toji_mayu_futuu.png time=%time|30]
-;[wait time=10]
-;[endmacro]
-;[主人公ポーズ通常２ layer=29]
-[image name="jg1" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
 [主人公ポーズ通常]
-[主人公憂い]
-[iscript]
-$('.jg1').remove();
-[endscript]
-;問題ない↑
-
 [wait time=10]
-;[プリロード画面消去]
+[主人公通常]
+[プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです==================================================================
 #
