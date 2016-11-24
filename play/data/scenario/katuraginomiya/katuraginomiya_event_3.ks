@@ -169,7 +169,7 @@
 [whosay name=磯野 color="dimgray"]
 「いつもの調子でされば心配はございません。[r]
 [sp]平常心ですよ、お嬢様」[p]
-
+#
 ;==============================================================================
 [主人公退場]
 [chara_mod name="bg" storage="toumei.gif" time=1000]
@@ -204,7 +204,7 @@ $('.junbi_girl').remove();
 [主人公目伏]
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 [eval exp="f.haikei_credit=''"]
-#侍従
+[whosay name="侍従"]
 「[名字]様に事前にお会いしたいとのことで[r]
 [sp]こちらに晴仁親王様がいらっしゃいます」[p]
 [主人公目閉]
@@ -292,20 +292,17 @@ $('.junbi_girl').remove();
 [主人公目閉じ]
 （私はいつもの様に私らしく、[r]
 [sp]殿下が好意を寄せて下さった私に自信を持つのだわ）[p]
-[stopbgm]
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
 [葛城宮退場]
 ;[葛城宮退場準備 storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=100]
+[fadeoutbgm time=2000]
+;ここがすぐ切り替わってしますので地の文ない間は暗転で間をとります
+[暗転]
 #
 ;==============================================================================
 ;【テキスト全画面】　茶室 [テキスト全画面白文字無背景]　裏で画面構成
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/tyasitu.jpg" time=1000 visible=true]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/tyasitu.jpg" time=1200 visible=true]
 [eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo'"]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -314,6 +311,11 @@ $('.junbi_girl').remove();
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
 母である葛城宮妃殿下、次客に内親王縁子様、三客に私、[r]
 半東にに皇后様の侍従である桂伯爵夫人。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [r]
 [sp]今まで習って身につけた作法と流派の違いは[r]
 周りの見よう見まねで同じように動作をして[r]
@@ -372,7 +374,9 @@ $('.junbi_girl').remove();
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10] 
 [主人公ポーズ通常]
-[主人公目閉じ]
+[主人公口通常]
+[主人公眉通常]
+[主人公目閉]
 ;===================
 ;主人公復帰表情消去
 [iscript]
@@ -458,7 +462,7 @@ $('.junbi_girl').remove();
 ;=========================スクリプトここまで=======================================
 [layopt layer=fix visible=true]
 ;枠消ししておわりたい
-;一瞬見えるメッセージ枠を消したいので上で変更いている
+;一瞬見えるメッセージ枠を消したいので上で変更しています
 ;[chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;=========================スクリプトここまで=======================================
 #
