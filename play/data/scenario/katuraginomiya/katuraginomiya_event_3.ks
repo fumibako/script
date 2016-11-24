@@ -20,8 +20,8 @@
 ;=====================ここからお芝居の幕引きです===============================
 [主人公目パチ1回]
 #
-皇后様のお印入りの簡単な挨拶と日時の書いてある。[r]
-私は、お茶事の招待状に目を通し、葛城宮殿下の手紙を丁寧に開いた[p]
+皇后様のお印入りの簡単な挨拶と日時の書いてある、[r]
+お茶事の招待状に目を通し、葛城宮殿下の手紙を丁寧に開いた[p]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
@@ -90,24 +90,25 @@
 
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「招待を受けますわ。」[p]
+「招待を受けますわ」[p]
 
 ;【立ち絵】主人公 照れ目普通
 [主人公目伏柔]
 [主人公眉下げ下]
 [主人公頬染め]
 「殿下がどんなに苦労して私を婚約者候補の一人に[r]
-[sp]しようとして下さっているか分りますわ。[r]
+[sp]しようとして下さっているか分ります。[r]
 [sp]私も期待に応えたいと思います」[p]
 
 #
 私の微笑んだ様子に、磯野も安心したように微笑む。[p]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢様なら大丈夫です[r]
+「お嬢様なら大丈夫です。[r]
 [sp]お稽古でのお茶立てもお作法も、身についておられますから」[p]
 
 ;==========================スクリプト・全画面表示の間に設定===============================
+#
 ;【テキスト全画面】黒茶・和紙風背景に白文字 [テキスト全画面白文字]裏で画面構成
 ;機能ボタン消去
 [layopt layer=fix visible=false]
@@ -162,36 +163,56 @@
 ;【立ち絵】主人公 困り
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
-「そう・・・・直前になると緊張するわ。[r]
-[sp]なかなか落ち着かなくて、[r]
+「そう……直前になると緊張するわ。[sp]なかなか落ち着かなくて……[r]
 [sp]粗相をしてしまわないといいのだけれど」[p]
 
 [whosay name=磯野 color="dimgray"]
 「いつもの調子でされば心配はございません。[r]
-[sp]平常心ですよお嬢様」[p]
+[sp]平常心ですよ、お嬢様」[p]
 
+;==============================================================================
+[主人公退場]
+[chara_mod name="bg" storage="toumei.gif" time=1000]
+[eval exp="f.haikei_credit=''"]
+#
+;なにか地の文お願いします
+;張り詰めた気持ちのまま、迎えの車に乗り込むと皇后陛下様が待つ離宮へと向かった。[p]
+;==============================================================================
 [chara_mod name="bg" storage="bg/B4nFWraU42/gosyo.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
- 
+;主人公復帰表情
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10] 
+ ;==============================================================================
 ;【SE】足音3人石畳（フェードインアウト）
 [playse storage=asioto_isidatami_3nin.ogg loop=false ]
 
 [主人公憂い]
+;===================
+;主人公復帰表情消去
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;===================
+
 #
 ２人の侍従に案内されて離宮の広い敷地に入り[r]
-緊張で足が少しすくむ[r]
-……宮中の方は私の事をどう思われいるのかしら[p]
-
+緊張で足が少しすくむ。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉]
+（……宮中の方は私の事をどう思われいるのかしら）[p]
+[主人公目伏]
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 [eval exp="f.haikei_credit=''"]
 #侍従
 「[名字]様に事前にお会いしたいとのことで[r]
-こちらに晴仁親王様がいらっしゃいます」[p]
+[sp]こちらに晴仁親王様がいらっしゃいます」[p]
+[主人公目閉]
 ;==============================================================================
 [chara_mod name="bg" storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=1500]
 [eval exp="f.haikei_credit=''"]
+[主人公目伏]
 ;==============================================================================
-
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 
@@ -238,9 +259,12 @@
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 
+;困ったままで地の文が流れてしまうので変更
 #
+[主人公目伏柔]
 安心させるような葛城宮殿下のとても優しい微笑みにつられて[r]
-自然に笑みがこぼれ、緊張がほぐれていく[p]
+自然に笑みがこぼれ、緊張がほぐれていく。
+[主人公口ほほえみ][p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 微笑み[r]
@@ -270,12 +294,16 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 [葛城宮退場]
-
+#
 ;==============================================================================
 ;【テキスト全画面】　茶室 [テキスト全画面白文字無背景]　裏で画面構成
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/tyasitu.jpg" time=1000 visible=true]
 [eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
 ;==============================================================================
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
 母である葛城宮妃殿下、次客に内親王縁子様、三客に私、[r]
