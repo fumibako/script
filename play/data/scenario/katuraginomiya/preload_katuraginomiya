@@ -32,6 +32,8 @@
 [preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
 ;【背景】お稽古部屋
 [preload storage="data/fgimage/bg/bg_okeiko.jpg"]
+;【背景】町　回想シーン用
+[preload storage="data/fgimage/bg/bg_machi_omoide.jpg" wait=true]
 ;================================================================================================
 ;葛城宮立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
 ;立ち絵だけ読み込みたい場合はキャラ名で呼びだしてください
