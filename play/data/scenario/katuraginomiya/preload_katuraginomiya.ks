@@ -128,6 +128,7 @@
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+
 [wait time=50]
 ;////////////////////////使用背景メモ////////////////////////////
 ;【背景】主人公部屋昼
@@ -138,6 +139,8 @@
 [preload storage="data/fgimage/bg/bg_katuraginomiya_gosyo_in.jpg wait=true]
 ;【背景】茶室
 [preload storage="data/fgimage/bg/I9IhvvVdPo/tyasitu.jpg" wait=true]
+;【背景】皇室手紙
+[preload storage="data/fgimage/bg/bg_tegami_kousitsu_akabudou.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
