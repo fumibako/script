@@ -101,12 +101,12 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「子供たちが喧嘩をしているので仲裁をしたら遊びに[r]
 [sp]誘われてな……」[p]
-[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_yoko.png" time=0]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
 [wait time=10]
 「楽しいものだった。[r]
+[sp]無邪気な笑顔というのも、心が癒される」
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [wait time=10]
-[sp]無邪気な笑顔というのも、心が癒される」
 [p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
