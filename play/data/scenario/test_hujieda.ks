@@ -46,7 +46,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 ;[playbgm storage="title_yukidoke.ogg" click=true loop=true]
 ;[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
-
+*page_1
 [glink target="test4_4" text="4月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test5_4" text="5月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test6_4" text="6月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
@@ -70,6 +70,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+[glink target="auto" text="オートモード" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 [s]
 
 
@@ -200,7 +201,10 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 @jump storage="hujieda/hujieda_fumi.ks"
 [s]
 
-
+*auto
+[autostart]
+@jump target=page_1
+[s]
 
 *back_test
 [cm]
