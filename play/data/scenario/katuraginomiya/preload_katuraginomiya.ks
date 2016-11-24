@@ -177,7 +177,7 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】主人公邸 庭の見える部屋：夜
-[preload storage="data/fgimage/bg/room_niwa_yoru.jp" wait=true]
+[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
