@@ -45,7 +45,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 ;[playbgm storage="title_yukidoke.ogg" click=true loop=true]
 ;[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
-
+*page_1
 [glink target="test_event_1" text="イベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test_event_2" text="イベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test_event_3" text="イベント3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
@@ -68,6 +68,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=450 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
+[glink target="auto" text="オートモード" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 [s]
 
 
@@ -191,7 +192,10 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 @jump storage="katuraginomiya/katuraginomiya_fumi.ks"
 [s]
 
-
+*auto
+[autostart]
+@jump target=page1
+[s]
 
 *back_test
 [cm]
@@ -205,6 +209,8 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
+
+
 
 ;----------BGM onが選択された時
 *bgm_on
