@@ -21,8 +21,7 @@
 *seen_1
 
 #
-今日も町は人が行き交い[r]
-賑やかで明るい活気にあふれている。[p]
+今日も町は人が行き交い、賑やかで明るい活気にあふれている。[p]
 
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
@@ -34,8 +33,7 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [whosay name="三宮　時子" color="#c25232"]
-「まあ、見違えましたわ！　[r]
-[sp][名前]さん、ごきげんよう」[p]
+「まあ、見違えましたわ！[sp][名前]さん、ごきげんよう」[p]
 
 [主人公目パチ1回]
 #
@@ -73,8 +71,7 @@
 ;【立ち絵】主人公：苦笑 （困り眉）
 [主人公苦笑]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いえ、数ヶ月では [r]
-[sp]まだ心がきまらなくて」[p]
+「いえ、数ヶ月では……[sp]まだ心がきまらなくて」[p]
 
 ;【立ち][葛城宮微笑み][絵】主人公 通常
 [主人公通常]
@@ -97,9 +94,9 @@
 [主人公ポーズ片手]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「！」[r]
-;改ページ地の文か、（！　意思の強そうな眼差しに～～しそうだわ）が自然に感じます
-（意思の強そうな眼差しに一瞬思考が停止する）[p]
+「！」[p]
+#
+意思の強そうな眼差しに一瞬思考が停止する。[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 #
@@ -143,8 +140,7 @@
 ;【立ち絵】葛城宮 微笑み
 [葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「私は葛城宮晴仁という。[r]
-[sp]君の名は？」[p]
+「私は、葛城宮晴仁 という。[sp]君の名は？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （殿下……ということは皇族の方！？　失礼のないようにしないと！）[p]
@@ -199,7 +195,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 通常
-「時子さんあの方はもしかして……」[p]
+「時子さん、あの方はもしかして……」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
@@ -221,8 +217,8 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name="三宮　時子" color="#c25232"]
-「いいえ。社交辞令は言われない方だから、あなたが[r]
-[sp]入ったのだわ。[r]
+「いいえ。社交辞令は言われない方だから、あなたが気に入った[r]
+[sp]のだわ。[r]
 [sp]きっと、あなたに手紙を送るつもりなのよ」[p]
 
 ;【立ち絵】主人公 驚
