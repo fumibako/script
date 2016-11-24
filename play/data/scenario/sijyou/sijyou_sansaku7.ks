@@ -24,7 +24,7 @@
 ;季節描写　春
 #
 町に出た。[r]
-はろやかな光が、町に植えられた桜の合間を縫って花びらと共に降り注ぐ[p]
+はろやかな光が、桜の花びらと共に降り注ぐ。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
