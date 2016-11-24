@@ -468,11 +468,12 @@ $('.loding_pic1').remove();
 [freeimage layer=%layer|13 time=%time|50] 
 [endmacro]
 
-[macro name="主人公復帰表情消去"]
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
-[endmacro]
+;まだ使ってません↓
+;[macro name="主人公復帰表情消去"]
+;[iscript]
+;$('.junbi_girl').remove();
+;[endscript]
+;[endmacro]
 ;====================================================================================
 ;全てはここにGoします。ここは、消さないでください
 [return]
