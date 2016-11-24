@@ -410,7 +410,9 @@ $('.junbi_girl').remove();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;一瞬手紙の後ろがみえるので　手紙皇后さま
-[chara_mod name="bg" storage="bg/bg_tegami_kousitsu_akebono.jpg"]
+[chara_mod name="bg" storage="bg/bg_tegami_kousitsu_akabudou.jpg"]
+;一瞬見えるメッセージ枠を消したい
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -421,9 +423,10 @@ $('.junbi_girl').remove();
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
 [freeimage layer = 29 time=1000]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akebono.jpg" time=500]
+;一瞬手紙の後ろがみえるので　手紙皇后さま
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=500]
 ;機能ボタン表示
-[layopt layer=fix visible=true]
+[layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;=========================スクリプトここまで=======================================
@@ -453,9 +456,10 @@ $('.junbi_girl').remove();
 [stopbgm]
 
 ;=========================スクリプトここまで=======================================
-;【背景】お稽古部屋
-;[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[layopt layer=fix visible=true]
+;枠消ししておわりたい
+;一瞬見えるメッセージ枠を消したいので上で変更いている
+;[chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;=========================スクリプトここまで=======================================
 #
 ;@jump storage="event.ks" target=*event_owari
