@@ -30,7 +30,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="財前 美彬ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
 [ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
 [ptext text="四条、葛城宮、藤枝ルートスクリプト化完了後に作業予定です。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
-
+*page1
 [glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
@@ -67,6 +67,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=450 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
+[glink target="auto" text="オートモード" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 
 *button_BGM
 [if exp="sf.BGM=='OFF'"]
@@ -242,7 +243,9 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;見当たらず未
 [s]
 
-
+*auto
+[autostart]
+@jump target=page1
 
 
 *back_test
