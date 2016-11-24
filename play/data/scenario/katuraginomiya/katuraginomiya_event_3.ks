@@ -1,19 +1,24 @@
 ;イベント3回目
 ;一定の淑女度、葛城宮一定の好感度
-[背景_庭]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*event_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
-
+;【背景】主人公部屋昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
+[イベントシーン構築ボタン無し版]
+#
+プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 [主人公目パチ1回]
-
 #
 皇后様のお印入りの簡単な[r]
 挨拶と日時の書いてある[r]
@@ -29,8 +34,6 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
-
 
  
 [手紙葛城宮 fumi_number=]
@@ -66,9 +69,9 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-[イベントシーン構築]
-[背景_庭]
-[主人公ポーズ通常]
+;[イベントシーン構築]
+;[背景_庭]
+;[主人公ポーズ通常]
 [主人公伏目]
 [主人公眉下げ下]
 [主人公口ほほえみ]
@@ -99,27 +102,44 @@
 [sp]私も期待に応えたいと思います」[p]
 
 #
-私の微笑んだ様子に磯野も[r]
-安心したように微笑む[p]
+私の微笑んだ様子に、磯野も安心したように微笑む[p]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様なら大丈夫です[r]
-[sp]お稽古でのお茶立てもお作法も[r]
-[sp]身についておられますから」[p]
+[sp]お稽古でのお茶立てもお作法も、身についておられますから」[p]
 
-;--------------------------------------------------------
+;==========================スクリプト・全画面表示の間に設定===============================
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】お稽古部屋
+;[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[主人公憂い]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 ;3.5回目イベント
-;【テキスト全画面】黒茶・和紙風背景に白文字
- [テキスト全画面白文字]
+;【テキスト全画面】黒茶・和紙風背景に白文字 [テキスト全画面白文字]
+
 十日後[p]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
+[freeimage layer = 29 time=1000]
+;機能ボタン表示
+[layopt layer=fix visible=false]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
-[背景_庭]
-[主人公ポーズ通常]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+
 [主人公憂い]
 [主人公目パチ1回]
-
 [whosay name=磯野 color="dimgray"]
 「お迎えの車が到着しました。[r]
 [sp]支度は整っておられるようですね」[p]
@@ -168,9 +188,10 @@
 #侍従
 「[名字]様に事前にお会いしたいとのことで[r]
 こちらに晴仁親王様がいらっしゃいます」[p]
-
+;==============================================================================
 [chara_mod name="bg" storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=1500]
 [eval exp="f.haikei_credit=''"]
+;==============================================================================
 
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
@@ -179,10 +200,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
 [主人公口ほほえみ]
-「……殿下」[r]
-（殿下の姿が見えて嬉しいけれど[r]
-[sp]緊張で顔がこわばって[r]
-[sp]笑みが浮かべられない）[p]
+「……殿下」[p]
+[主人公目閉]
+（殿下の姿が見えて嬉しいけれど、緊張で顔がこわばって[r]
+[sp]笑みが浮かべられないわ）[p]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 
 ;【立ち絵】葛城宮 微笑み
 [葛城宮ベース軍服]
@@ -193,24 +216,21 @@
 [葛城宮眉困り]
 [葛城宮口通常]
 ;【立ち絵】葛城宮 困り顔
-「……表情がいつもより硬い。[r]
-[sp]緊張しているのだな？」[p]
-
+「……表情がいつもより硬い。[sp]緊張しているのだな？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り 
 [主人公目閉じ]
-「ええ・・・・殿下
-少し緊張しておりますわ」[p]
+「ええ……殿下。[r]
+[sp]少し緊張しておりますわ」[p]
 
 
 ;【立ち絵】葛城宮 微笑み
 [葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「君はいつもの様に微笑んでいれば問題はない、[r]
-[sp]今回の茶会の参加者は[r]
-[sp]君を客観的に判断できると判断した[r]
-[sp]皇后陛下の人選だ」[p]
+「君はいつもの様に微笑んでいれば問題はない。[r]
+[sp]今回の茶会の参加者は、君を客観的に判断できると[r]
+[sp]判断した皇后陛下の人選だ」[p]
 
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -220,10 +240,8 @@
 [endif]
 
 #
-安心させるような葛城宮殿下の[r]
-とても優しいほほ笑みにつられて[r]
-自然に笑みがこぼれ[r]
-ー緊張がほぐれていく[p]
+安心させるような葛城宮殿下のとても優しい微笑みにつられて[r]
+自然に笑みがこぼれ、緊張がほぐれていく[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 微笑み[r]
@@ -236,19 +254,16 @@
 [葛城宮真剣]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……ああ君なら大丈夫だ[r]
-[sp]いつもの笑顔が見れて、[r]
-[sp]私も安心した」[p]
+[sp]いつもの笑顔が見れて、私も安心した」[p]
 
 #
-殿下は力強くうなずき、[r]
-私は応えるように微笑む[p]
+殿下は力強くうなずき、私は応えるように微笑む[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 微笑み[r]
 [主人公目閉じ]
 （私はいつもの様に私らしく、[r]
-[sp]殿下が好意を寄せて下さった[r]
-[sp]私に自信を持つのだわ）[p]
+[sp]殿下が好意を寄せて下さった私に自信を持つのだわ）[p]
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）
@@ -257,11 +272,12 @@
 [endif]
 [葛城宮退場]
 
-
-;【テキスト全画面】
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / tyasitu.jpg "]
+;==============================================================================
+;【テキスト全画面】　茶室 [テキスト全画面白文字無背景]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/tyasitu.jpg" time=1000 visible=true]
 [eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo'"]
-[テキスト全画面白文字無背景]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;==============================================================================
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
 母である葛城宮妃殿下、次客に内親王縁子様、三客に私、[r]
 半東にに皇后様の侍従である桂伯爵夫人。[p]
@@ -283,13 +299,21 @@
 私もその雰囲気に合わせていった。[r]
 [r]
 そして茶事が終わり追って沙汰を報せると伝えられる。[p]
-[resetfont]
 
+;===================スクリプト・全画面表示からの復帰準備=================================
+[resetfont]
 [chara_mod name="bg" storage="bg /B4nFWraU42/ gosyo.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[freeimage layer = 29 time=1000]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;[イベントシーン構築]
+;[主人公ポーズ通常]
+;==============================================================================
 
-[イベントシーン構築]
-[主人公ポーズ通常]
 [主人公伏目]
 [主人公眉下げ下]
 [主人公伏目パチ1回]
