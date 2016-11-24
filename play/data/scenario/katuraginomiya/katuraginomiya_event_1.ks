@@ -1,21 +1,24 @@
-;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_1 storage="katuraginomiya/preload_katuraginomiya.ks]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
+[call target=*start storage="macro_tati_girl.ks"]
+;【背景】町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
 [主人公通常]
-
-
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
+#
 今日も町は人が行き交い[r]
 賑やかで明るい活気にあふれている。[p]
-
 
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
@@ -28,14 +31,13 @@
 [wait time=10]
 [whosay name="三宮　時子" color="#c25232"]
 「まあ、見違えましたわ！　[r]
-[sp][名前]さんごきげんよう」[p]
+[sp][名前]さん、ごきげんよう」[p]
 
 [主人公目パチ1回]
 #
 時子さんは少し驚いたように目を見開いている。[r]
-時子さんと会うのはとても久しぶり、[r]
+時子さんと会うのは、とても久しぶり、[r]
 私は微笑んで挨拶を返した[p]
-
 
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -43,7 +45,7 @@
 [sp]お久しぶりですね」[p]
 
 [whosay name="三宮　時子" color="#c25232"]
-「[名前]さん本当に雰囲気が変わられたわ、 [r]
+「[名前]さん、本当に雰囲気が変わられたわ。[r]
 [sp]所作が洗練されて見とれてしまうほどよ」[p]
 
 ;【立ち絵】主人公：苦笑（頬染め）
@@ -81,7 +83,7 @@
 ;[endif]
 
 #
-ふと視線を感じて思わず振返ると[r]
+ふと視線を感じて思わず振返ると、[r]
 気品があり、華やかで男らしい青年と視線が絡まった。[p]
 
 [葛城宮ベース私服]
@@ -91,23 +93,18 @@
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！」[r]
-（意思の強そうな眼差しに[r]
-[sp]一瞬思考が停止する）[p]
-
+（意思の強そうな眼差しに一瞬思考が停止する）[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
 #
-その方と私は数秒見つめ合い、[r]
-私ははっとしてうつむいた[p]
+その方と私は数秒見つめ合い、私は、はっとしてうつむいた[p]
 
 [主人公伏目]
 [主人公眉下げ下]
 [主人公頬染め]
 [主人公口通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（異性の方からの視線を[r]
-[sp]まともに受けたことがなかったけど[r]
+（異性の方からの視線をまともに受けたことがなかったけど[r]
 [sp]こんなにも胸が高鳴るものなのかしら）[p]
 
 [葛城宮驚き]
