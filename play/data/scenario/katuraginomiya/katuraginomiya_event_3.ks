@@ -137,6 +137,7 @@
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
+[layopt layer=fix visible=true]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 *seen1
 [主人公憂い]
@@ -172,6 +173,7 @@
 #
 ;==============================================================================
 [主人公退場]
+[layopt layer=fix visible=false]
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [eval exp="f.haikei_credit=''"]
 #
@@ -183,6 +185,7 @@
 ;主人公復帰表情
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10] 
+[layopt layer=fix visible=true]
  ;==============================================================================
 ;【SE】足音3人石畳（フェードインアウト）
 [playse storage=asioto_isidatami_3nin.ogg loop=false ]
@@ -292,14 +295,22 @@ $('.junbi_girl').remove();
 [主人公目閉じ]
 （私はいつもの様に私らしく、[r]
 [sp]殿下が好意を寄せて下さった私に自信を持つのだわ）[p]
+;[fadeoutbgm time=2000]
+[stopbgm]
 [葛城宮退場]
 ;[葛城宮退場準備 storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=100]
-[fadeoutbgm time=2000]
-;ここがすぐ切り替わってしますので地の文ない間は暗転で間をとります
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+;ここがすぐ切り替わってしますので地の文ない間は暗転で間をとります aあるとBGMの切り替えが綺麗になります
 [暗転]
 #
 ;==============================================================================
 ;【テキスト全画面】　茶室 [テキスト全画面白文字無背景]　裏で画面構成
+[layopt layer=fix visible=false]
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/tyasitu.jpg" time=1200 visible=true]
 [eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo'"]
 ;[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -311,11 +322,6 @@ $('.junbi_girl').remove();
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
 母である葛城宮妃殿下、次客に内親王縁子様、三客に私、[r]
 半東にに皇后様の侍従である桂伯爵夫人。[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
 [r]
 [sp]今まで習って身につけた作法と流派の違いは[r]
 周りの見よう見まねで同じように動作をして[r]
@@ -363,8 +369,8 @@ $('.junbi_girl').remove();
 [主人公口通常]
 [主人公目閉じ]
 （良かったわ、嬉しい……）[p]
+#
 [主人公退場]
-
 ;==============================================================================
 [暗転]
 ;【背景】主人公邸 庭の見える部屋：昼
@@ -374,9 +380,7 @@ $('.junbi_girl').remove();
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10] 
 [主人公ポーズ通常]
-[主人公口通常]
-[主人公眉通常]
-[主人公目閉]
+[主人公通常]
 ;===================
 ;主人公復帰表情消去
 [iscript]
