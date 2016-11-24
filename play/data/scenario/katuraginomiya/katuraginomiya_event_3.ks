@@ -227,19 +227,22 @@ $('.junbi_girl').remove();
 [主人公口ほほえみ]
 「……殿下」[p]
 [主人公目閉]
-（殿下の姿が見えて嬉しいけれど、緊張で顔がこわばって[r]
-[sp]笑みが浮かべられないわ）[p]
-[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
-[wait time=10]
 #
+;見えてないので位置変更します
 ;====================
 ;【立ち絵】葛城宮 微笑み
 [葛城宮ベース軍服]
 [葛城宮微笑み]
 [表示開始 time=300]
 ;====================
-[葛城宮口笑顔]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（殿下の姿が見えて嬉しいけれど、緊張で顔がこわばって[r]
+[sp]笑みが浮かべられないわ）[p]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
+#
 [whosay name="葛城宮　晴仁" color=%mp.color]
+[葛城宮口笑顔]
 「よく来てくれた」[p]
 [葛城宮眉困り]
 [葛城宮口通常]
@@ -321,7 +324,8 @@ $('.junbi_girl').remove();
 [font color=white size=27]
 ;==============================================================================
 [sp]茶事は亭主に、皇后さま、正客に晴仁殿下の[r]
-母である葛城宮妃殿下、次客に内親王縁子様、三客に私、[r]
+母である葛城宮妃殿下、次客に内親王縁子様、[r]
+三客に私、[r]
 半東にに皇后様の侍従である桂伯爵夫人。[p]
 [r]
 [sp]今まで習って身につけた作法と流派の違いは[r]
@@ -340,8 +344,9 @@ $('.junbi_girl').remove();
 興味深く場を和ませるもので[r]
 私もその雰囲気に合わせていった。[r]
 [r]
-そして茶事が終わり追って沙汰を報せると伝えられる。[p]
-
+そして茶事が終わり追って沙汰を報せると[r]
+伝えられる。[p]
+;はみだし修正
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
 [chara_mod name="bg" storage="bg /B4nFWraU42/ gosyo.jpg"]
@@ -419,7 +424,7 @@ $('.junbi_girl').remove();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;一瞬手紙の後ろがみえるので　手紙皇后さま
-[chara_mod name="bg" storage="bg/bg_tegami_kousitsu_akabudou.jpg"]
+[chara_mod name="bg" storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=50]
 ;一瞬見えるメッセージ枠を消したい
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;テキスト全画面
@@ -433,7 +438,7 @@ $('.junbi_girl').remove();
 [resetfont]
 [freeimage layer = 29 time=1000]
 ;一瞬手紙の後ろがみえるので　手紙皇后さま
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=50]
 ;機能ボタン表示
 [layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更
