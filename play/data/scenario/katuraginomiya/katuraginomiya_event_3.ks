@@ -359,13 +359,28 @@ $('.junbi_girl').remove();
 [主人公口開]
 「私などに勿体ないお言葉でございます」[p]
 ;【立ち絵】主人公 目閉じ
-[主人公目閉じ]
 [主人公口通常]
+[主人公目閉じ]
 （良かったわ、嬉しい……）[p]
+[主人公退場]
 
+;==============================================================================
+[暗転]
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;主人公復帰表情
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10] 
+[主人公目閉じ]
+;===================
+;主人公復帰表情消去
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;===================
+;==============================================================================
+
 [whosay name=磯野 color="dimgray"]
 「お嬢様お疲れ様でした。[sp]いかがだったでしょうか？」[p]
 
@@ -382,8 +397,8 @@ $('.junbi_girl').remove();
 [sp]不思議ね……きっと、いつのまにか葛城宮さまの存在が、[r]
 [sp]私の中で大きくなっているのだわ）[p]
 
-
-==========================スクリプト・全画面表示の間に設定===============================
+[主人公退場]
+;==========================スクリプト・全画面表示の間に設定===============================
 ;【テキスト全画面】黒茶・和紙風背景に白文字 [テキスト全画面白文字] 裏で画面構成
 ;機能ボタン消去
 #
@@ -394,10 +409,10 @@ $('.junbi_girl').remove();
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
+
 ;【背景】お稽古部屋
 ;[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[主人公憂い]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -406,16 +421,13 @@ $('.junbi_girl').remove();
 
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
-[chara_mod name="bg" storage="bg /B4nFWraU42/ gosyo.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[暗転]
 [freeimage layer = 29 time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;=========================スクリプトここまで=======================================
-
 [手紙皇后さま]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
@@ -440,7 +452,6 @@ $('.junbi_girl').remove();
 [手紙読了]
 [resetfont]
 [stopbgm]
-
 #
 ;@jump storage="event.ks" target=*event_owari
 
