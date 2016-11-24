@@ -24,6 +24,8 @@
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
 [preload storage="data/fgimage/bg/test_sijyou_hanazono.jpg" time=1500]
+;プリロード画面自体のプリロード
+[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -38,9 +40,8 @@
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-;ここで読みましょう！？
-;プリロード画面自体のプリロード
-[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
+;ここで読みます＿手紙など
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_tegami_sijyou.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -200,6 +201,8 @@
 [preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg" wait=true]
 [preload storage="data/fgimage/bg/test_sijyou_namigauara.jpg" wait=true]
 [preload storage="data/fgimage/bg/sijyou_namigaura.jpg" wait=true]
+;婚約者手紙
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_tegami_konyakusha.jpg" wait=true]
 [preload storage="data/fgimage/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" wait=true]
 [preload storage="data/fgimage/bg/sijyou_byouin.jpg" wait=true]
 @jump target=end_sub
