@@ -6,6 +6,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
+[表示準備]
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -87,6 +88,7 @@
 ふと視線を感じて思わず振返ると、[r]
 気品があり、華やかで男らしい青年と視線が絡まった。[p]
 
+[freeimage layer=13 time=300]
 [葛城宮ベース私服]
 [葛城宮通常]
 
@@ -178,7 +180,9 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「君にはまたお目にかかろう」[p]
 
-[葛城宮退場]
+#
+[葛城宮退場準備]
+;[葛城宮退場]time=50
 ;[if exp="sf.BGM=='ON'"]
 ;[stopbgm]
 ;【BGM】筍の訪れ(町
@@ -342,6 +346,9 @@
   
 ;====================================================================
 #
+;主人公復帰表情
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10] 
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -355,6 +362,12 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
+;===================
+;主人公復帰表情消去
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;===================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、そのお手紙は？」[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -436,11 +449,10 @@
 [主人公ふぅ閉]
 [主人公汗]
 
-「……でもきっと殿下は[r]
-[sp]少し私に興味を持たれただけだわ。[r]
-[sp]求婚といっても冷静になって考えてみると[r]
-[sp]周囲の方々が反対されます」[p]
-
+「……でも、きっと殿下は、少し私に興味を持たれただけだわ。[r]
+[sp]求婚といっても冷静になって考えてみると、周囲の方々が[r]
+[sp]反対されます」[p]
+#
 [主人公目を開く]
 [主人公通常]
 [whosay name=磯野 color="dimgray"]
