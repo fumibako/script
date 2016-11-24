@@ -295,19 +295,20 @@ $('.junbi_girl').remove();
 [主人公目閉じ]
 （私はいつもの様に私らしく、[r]
 [sp]殿下が好意を寄せて下さった私に自信を持つのだわ）[p]
-;[fadeoutbgm time=2000]
-[stopbgm]
-[葛城宮退場]
-;[葛城宮退場準備 storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=100]
-
+[fadeoutbgm time=3000]
+;[葛城宮退場]
+[葛城宮退場準備 storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=300]
+;ここがすぐ切り替わってしますので地の文ない間は暗転で間をとります あるとBGMの切り替えが綺麗になります　
+;と放置していたら[stopbgm]のあとでｐがないからスマホで音がならない事に気づきました。仮で追加 
+;全画面表示で鳴らす事も試しましたが半分のシーンでならない寂しい形になってました…
+[暗転]
+#
+殿下の優しさを胸に抱き、私は茶室へと向かった。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-;ここがすぐ切り替わってしますので地の文ない間は暗転で間をとります aあるとBGMの切り替えが綺麗になります
-[暗転]
-#
 ;==============================================================================
 ;【テキスト全画面】　茶室 [テキスト全画面白文字無背景]　裏で画面構成
 [layopt layer=fix visible=false]
