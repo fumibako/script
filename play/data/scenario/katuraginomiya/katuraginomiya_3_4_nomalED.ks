@@ -1,4 +1,5 @@
 ;9回目イベント
+;【背景】公園
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / kouenn.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [stopbgm]
