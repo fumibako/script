@@ -3,8 +3,8 @@
 ;◇プリロードサブルーチン 主人公表示までの幕の役割
 ;◇作業中
 ;◆targetで呼び出し方法
-;◇【[call target=*event_1 storage="sijyou/preload_katuraginomiya.ks"]】
-;◇【[call target=*9_1 storage="sijyou/preload_katuraginomiya.ks"]】
+;◇【[call target=*event_1 storage="katuraginomiya/preload_katuraginomiya.ks"]】
+;◇【[call target=*9_1 storage="katuraginomiya/preload_katuraginomiya.ks"]】
 ;======================================================================================
 *first
 ;make.ksで使用する際、ここに共通の読み込みを書きます。今はないのでここは書いてません。
@@ -34,6 +34,8 @@
 [preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;【背景】町　回想シーン用
 [preload storage="data/fgimage/bg/bg_machi_omoide.jpg" wait=true]
+;【背景】手紙
+;[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg" wait=true]
 ;================================================================================================
 ;葛城宮立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
 ;立ち絵だけ読み込みたい場合はキャラ名で呼びだしてください
@@ -116,6 +118,8 @@
 ;////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】町
 ;[preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
+;【背景】皇室手紙
+[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_tegami_kousitsu_akabudou.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
@@ -128,7 +132,6 @@
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-
 [wait time=50]
 ;////////////////////////使用背景メモ////////////////////////////
 ;【背景】主人公部屋昼
@@ -139,8 +142,6 @@
 [preload storage="data/fgimage/bg/bg_katuraginomiya_gosyo_in.jpg wait=true]
 ;【背景】茶室
 [preload storage="data/fgimage/bg/I9IhvvVdPo/tyasitu.jpg" wait=true]
-;【背景】皇室手紙
-[preload storage="data/fgimage/bg/bg_tegami_kousitsu_akabudou.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
