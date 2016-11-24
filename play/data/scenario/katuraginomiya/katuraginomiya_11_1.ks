@@ -1,4 +1,5 @@
 ;7回目イベント
+;【背景】バラ園
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [stopbgm]
