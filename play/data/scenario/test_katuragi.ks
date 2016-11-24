@@ -194,7 +194,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 
 *auto
 [autostart]
-@jump target=page1
+@jump target=page_1
 [s]
 
 *back_test
