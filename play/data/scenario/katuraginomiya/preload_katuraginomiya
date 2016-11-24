@@ -151,8 +151,10 @@
 [wait time=50]
 ;//////////////////使用背景メモ//////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
+;【背景】主人公邸 庭の見える部屋：昼
+[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】主人公邸 庭の見える部屋：夜
+[preload storage="data/fgimage/bg/room_niwa_yoru.jp" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
@@ -168,7 +170,14 @@
 [wait time=50]
 ;///////////////////////////使用背景メモ///////////////////////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
+;【背景】主人公邸 庭の見える部屋：昼
+;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】仲人庭園
+[preload storage="data/fgimage/bg/I9IhvvVdPo/nakoudoteiniwa.jpg" wait=true]
+;【背景】仲人庭園(道2)
+[preload storage="data/fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg" wait=true]
+;【背景】仲人庭園 庭園の門 夕方
+[preload storage="data/fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
