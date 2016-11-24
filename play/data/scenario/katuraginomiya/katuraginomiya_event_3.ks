@@ -71,7 +71,7 @@
 ;[主人公ポーズ通常]
 ;手紙スクリプトに含まれている
 ;==============================================================================
-
+*seen0
 [主人公伏目]
 [主人公眉下げ下]
 [主人公口ほほえみ]
@@ -138,7 +138,7 @@
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
-
+*seen1
 [主人公憂い]
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
@@ -214,6 +214,7 @@ $('.junbi_girl').remove();
 [eval exp="f.haikei_credit=''"]
 [主人公目伏]
 ;==============================================================================
+*seen2
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 
@@ -342,10 +343,8 @@ $('.junbi_girl').remove();
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-;[イベントシーン構築]
-;[主人公ポーズ通常]
 ;======================スクリプトここまで=========================================
-
+*seen3
 [主人公伏目]
 [主人公眉下げ下]
 [主人公伏目パチ1回]
@@ -372,6 +371,7 @@ $('.junbi_girl').remove();
 ;主人公復帰表情
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10] 
+[主人公ポーズ通常]
 [主人公目閉じ]
 ;===================
 ;主人公復帰表情消去
@@ -380,7 +380,7 @@ $('.junbi_girl').remove();
 [endscript]
 ;===================
 ;==============================================================================
-
+*seen4
 [whosay name=磯野 color="dimgray"]
 「お嬢様お疲れ様でした。[sp]いかがだったでしょうか？」[p]
 
@@ -414,6 +414,7 @@ $('.junbi_girl').remove();
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
+
 
 数日後[p]
 
