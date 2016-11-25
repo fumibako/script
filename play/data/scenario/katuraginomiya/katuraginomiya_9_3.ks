@@ -20,7 +20,13 @@
 ;=====================ここからお芝居の幕引きです==============================
 #
 数日後、私の元に葛城宮妃殿下から手紙が届いた。[p]
-;SE音がならないのでご一考のほどお願いします↑仮でつけてあります
+;音がならないのでご一考のほどお願いします↑仮でつけてあります　
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 ;自動改頁されてしまうためにいくつか改頁を挿入させていただきました。お好みの位置にご調整ください(スクリプト担)
@@ -68,11 +74,6 @@
 「殿下の事を心配されているのね。[r]
 [sp]私も、殿下や殿下の母宮様のお役にたてられるといいのだけど」[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
 
 [whosay name=磯野 color="dimgray"]
 「きっとお役にたてますよ[r]
@@ -129,8 +130,8 @@
 
 [whosay name="葛城宮妃" color=%mp.color]
 「喜んでくれて嬉しいわ。[r]
-[sp]けれど、つつましいことは好ましいけれど[r]
-[sp]他人行儀なのは、少し寂しいわ」[p]
+[sp]けれど、つつましいことは好ましいけれど、他人行儀なのは[r]
+[sp]少し寂しいわ」[p]
 #
 ;【立ち絵】主人公 微笑み 　　　・・・切り替えまで遅いのでmodで
 ;↓口：ほほえみ [主人公口ほほえみ]
@@ -258,10 +259,12 @@
 [sp]私の事を大切に思って下さるのですが、離れて暮らしているせいか[r]
 [sp]意思の疎通が、あまり出来てないので少し羨ましく思います」[p]
 
+;主人公を気遣った会話を挟むとよいですお礼
+
 ;【立ち絵】葛城宮　通常
 [葛城宮目伏せ照れ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「……そうか[r]
+「……そうか。[r]
 [sp]それより私も君とゆっくり話したかった」[p]
 
 ;【立ち絵】主人公　目閉じ頬染
@@ -358,16 +361,16 @@
 感じられる私も沢山勉強しようと思った[r]
 [r]
 [sp]時間が許すまで私は殿下の話を聞いた[p]
-;メッセージをもどします↓
 [cm]
 ;=========================================================================================
-[layopt layer=fix visible=false]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg"]
+;メッセージをもどします↓
+[イベントシーン構築ボタン無し版]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
 ;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=100 visible=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公伏目]
@@ -377,6 +380,7 @@
 [freeimage layer=29 time=300]
 ;キャラをセットして表示します
 [layopt layer=fix visible=true]
+[メッセージウィンドウ上ボタン表示]
 ;=========================================================================================
 [主人公目パチ1回]
 [whosay name="葛城宮　晴仁" color=%mp.color]
