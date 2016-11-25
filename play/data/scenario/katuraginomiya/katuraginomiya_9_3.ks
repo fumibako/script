@@ -156,16 +156,16 @@
 [sp]……ああこの話じゃなく、息子の話をしようと思っていたの[r]
 [sp]あらもう……」[p]
 
-;【立ち絵】主人公　通常
+;【立ち絵】主人公　通常　発言までが遅いのが難
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口開]
 [主人公効果消]
+「どうされ
 [主人公目伏]
 [主人公眉下げ下]
 [主人公伏目パチ1回]
-「どうされましたか？」[p]
+ましたか？」[p]
 [主人公口通常]
-
  [whosay name="葛城宮妃" color=%mp.color]
 「もう話す前に息子がそこに」[p]
 
@@ -363,14 +363,14 @@
 [sp]時間が許すまで私は殿下の話を聞いた[p]
 [cm]
 ;=========================================================================================
-;メッセージをもどします↓
-[イベントシーン構築ボタン無し版]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
-;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=100 visible=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+;メッセージをもどします↓
+[イベントシーン構築ボタン無し版]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-;[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
+;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [主人公ポーズ通常]
 [主人公通常]
 [主人公伏目]
