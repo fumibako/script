@@ -364,10 +364,15 @@
 [sp]時間が許すまで私は殿下の話を聞いた[p]
 [cm]
 ;=========================================================================================
+;背景切り替わってないときにメッセージ表示防止・次画像↓
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
+[freeimage layer=29]
+;背景切り替わりで表示セーブ等はさせない
 ;メッセージをもどします↓
 [イベントシーン構築ボタン無し版]
-[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
 [表示準備 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg"]
 ;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
@@ -386,7 +391,7 @@ $('.junbi_girl').remove();
 ;【立ち絵】葛城宮 微笑み
 [葛城宮ベース軍服]
 [葛城宮笑顔大]
-[表示開始 time=300]
+[表示開始 time=200]
 ;====================
 [主人公目パチ1回]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -397,11 +402,12 @@ $('.junbi_girl').remove();
 [主人公頬染め]
 「ええ、お会いしましょう[r]
 [葛城宮口微笑み]
+;主人公の返事をきいて葛城宮さんも微変更
 [sp]今日は沢山話して頂いてありがとうございました[r]
 [sp]私もとても楽しかったです」[p]
 [fadeoutbgm time=3000]
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
-[葛城宮口退場]
+[葛城宮退場]
 [freeimage layer=29]
 [wait time=20]
 [stopbgm]
