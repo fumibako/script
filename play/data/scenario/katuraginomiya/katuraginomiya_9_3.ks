@@ -67,13 +67,19 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 *seen0
+;【立ち絵】主人公困り　困り眉までの表示がおそいので修正
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 [主人公伏目パチ1回]
-;【立ち絵】主人公困り
+;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公困り]
 「殿下の事を心配されているのね。[r]
 [sp]私も、殿下や殿下の母宮様のお役にたてられるといいのだけど」[p]
 
+;全画面表示の幕間に主人公伏目になってます
 
 [whosay name=磯野 color="dimgray"]
 「きっとお役にたてますよ[r]
@@ -155,16 +161,14 @@
 「少しずつ家族になっていきましょう。[r]
 [sp]……ああこの話じゃなく、息子の話をしようと思っていたの[r]
 [sp]あらもう……」[p]
-
-;【立ち絵】主人公　通常　発言までが遅いのが難
+[主人公効果消]
+;【立ち絵】主人公　通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口開]
-[主人公効果消]
-「どうされ
-[主人公目伏]
 [主人公眉下げ下]
+「どうされましたか？」
 [主人公伏目パチ1回]
-ましたか？」[p]
+[p]
 [主人公口通常]
  [whosay name="葛城宮妃" color=%mp.color]
 「もう話す前に息子がそこに」[p]
@@ -208,7 +212,6 @@
 
 ;【立ち絵】主人公　瞬き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公通常]
 [主人公口ほほえみ]
 [主人公眉下げ下]
 [主人公伏目パチ1回]
@@ -217,7 +220,7 @@
 「それでは御前を失礼いたします」[p]
 
 #
-私は葛城宮妃に一礼し、葛城宮の元に歩いた[p]
+私は葛城宮妃に一礼し、葛城宮の元に歩いた。[p]
 
 ;【立ち絵】葛城宮　通常
 [葛城宮口ムッ]
@@ -232,7 +235,7 @@
 
 [葛城宮効果消]
 #
-殿下はため息をついて、妃殿下の去った方に視線を送る[p]
+殿下はため息をついて、妃殿下の去った方に視線を送る。[p]
 
 ;【立ち絵】主人公　困り
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -274,7 +277,8 @@
 [主人公口ほほえみ]
 「ええ、私もです」[p]
 ;=========================================================================================
-;[主人公退場]話の続きだから退場できない。けれど移動しているのでしょうか？→表情変化で対応
+[葛城宮微笑み]
+;[主人公退場]話の続きだから退場できない。けれど移動しているのでしょうか？→表情変化で数分変化に対応
 ;【背景】仲人庭園(道2)話の変化に合わせて背景も変化させてみます(スクリプト担
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
@@ -283,7 +287,6 @@
 ;【立ち絵】主人公　主人公照れ目普通
 [主人公照れ目普通]
 ;=========================================================================================
-[葛城宮微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「特に殿下の夢を聞きたいと思っていました。[r]
 [sp]殿下のことをお話ししてくださいませんか？」[p]
@@ -363,25 +366,30 @@
 [sp]時間が許すまで私は殿下の話を聞いた[p]
 [cm]
 ;=========================================================================================
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=100 visible=true]
-[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;メッセージをもどします↓
 [イベントシーン構築ボタン無し版]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
+[表示準備 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg"]
 ;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
+;退場からの復帰主人公表示
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
-[主人公通常]
 [主人公伏目]
+;表情設定後・復帰主人公表示消す
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;同時表示をやってみましたがSE入れないと遅いだけになってしまったので順番に表示へ
+[メッセージウィンドウ上ボタン表示]
+;=========================================================================================
 ;【立ち絵】葛城宮 微笑み
 [葛城宮ベース軍服]
 [葛城宮笑顔大]
-[freeimage layer=29 time=300]
-;キャラをセットして表示します
-[layopt layer=fix visible=true]
-[メッセージウィンドウ上ボタン表示]
-;=========================================================================================
+[表示開始 time=300]
+;====================
 [主人公目パチ1回]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「今日は楽しかった。また近いうちに会おう」[p]
