@@ -67,13 +67,14 @@
 [手紙読了]
 
 [whosay name=磯野 color="dimgray"]
-「文矢様は、お元気にされていましたか？」[p]
+「文矢様は、お元気にされていますか？」[p]
+;お元気にされていらっしゃいますか？
 #
 磯野は懐かしそうに微笑んだ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、元気に過ごしていると書かれているわ。[r]
 [sp]それにしても内容はここ数日悩んでいる事でした」[p]
-
+;[主人公伏目パチ1回]
 （……皆、心配してくれているのね）[p]
 
 #
@@ -127,7 +128,7 @@
 ;[link]タグでの選択肢
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;文字が先に表示されるの防止
-[wait time=10]
+[wait time=50]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
@@ -190,13 +191,14 @@
 「かしこまりました。[r]
 [sp]お話しとは、やはり葛城宮殿下の事でございますか？」[p]
 
-;【立ち絵】主人公 主人公照れ目普通
+;【立ち絵】主人公 主人公照れ目普通 セリフ表示までの間がある
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+「ええ、
 [主人公目伏]
 [主人公眉下げ下]
 [主人公口ほほえみ]
 [主人公頬染め]
-「ええ、心が決まりました。[r]
+心が決まりました。[r]
 [sp]皆、そして私の意思を尊重してくれる事も、感謝しています」[p]
 ;大事なセリフはわけて
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -253,6 +255,8 @@
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
+;裏で表情リセット
+[主人公通常]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：夜
@@ -273,8 +277,7 @@
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [layopt layer=fix visible=true]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
-[主人公ポーズ通常]
-[主人公通常]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「話があると聞いた。
 [主人公目パチ1回]
@@ -286,13 +289,13 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お父様、私は葛城宮殿下と、正式に婚約したく思っています。[r]
 [sp]お許し頂けますか？」[p]
-[主人公眉通常]
-[主人公目パチ1回]
+[主人公眉下げ]
+[主人公目伏]
 （きっと許してもらえるけれど、反対されるかも知れない）[p]
 #
 期待と不安が入り混じった、私の眼差しを受けて、[r]
 お父様は、思案するように目を閉じた。
-[主人公目パチ1回][p]
+[主人公通常][p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「お前は、我が家の[ruby text=ほまれ]誉だ。[r]
 [sp]恐れ多くも、親王様の婚約者候補になれるとは思っていなかった」[p]
@@ -303,13 +306,13 @@
 ;【立ち絵】主人公 驚き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ]
-[主人公目大]
 [主人公頬染め]
 「お父さまそれでは！」[p]
 
 #
 [主人公効果消]
 [主人公眉通常]
+[主人公目通常]
 お父様は、寂しそうで不安な表情になった[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「だが葛城宮殿下の身分は高く、[r]
