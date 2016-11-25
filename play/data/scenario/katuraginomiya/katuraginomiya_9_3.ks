@@ -367,7 +367,7 @@
 ;背景切り替わってないときにメッセージ表示防止・次画像↓
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[mtext name=".junbi_girl" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
 [freeimage layer=29]
 ;背景切り替わりで表示セーブ等はさせない
@@ -408,13 +408,13 @@ $('.junbi_girl').remove();
 [fadeoutbgm time=3000]
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
 [葛城宮退場]
-[freeimage layer=29]
 [wait time=20]
 [stopbgm]
 #
+[イベントシーン終了]
+[freeimage layer=29 time=10]
 ;@jump storage="event.ks" target=*event_owari
 
-[イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
 
