@@ -87,10 +87,12 @@
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
+[主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】仲人庭園 （裏で画面構成）
-[chara_mod name="bg" storage="bg /I9IhvvVdPo/nakoudoteiniwa.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg" time=50]
+[表示準備 storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -114,10 +116,9 @@
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 *seen1
-[主人公伏目]
 [主人公目パチ1回]
 [whosay name="葛城宮妃" color=%mp.color]
-「振袖がとても似合っておられて、仕立てたかいがありましたわ」[p]
+「振袖が、とても似合っておられて、仕立てたかいがありましたわ」[p]
 
 ;【立ち絵】主人公照れ目普通
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -174,9 +175,14 @@
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi1.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;=========================================================================================
-[葛城宮ベース軍服]
+
+;====================
 ;【立ち絵】葛城宮　通常
+[葛城宮ベース軍服]
 [葛城宮通常]
+[表示開始 time=300]
+;====================
+
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……」[p]
 
@@ -236,9 +242,9 @@
 ;【立ち絵】葛城宮通常
 [葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「母宮は世話好きでな[r]
-[sp]あれこれ余計な事まで手をだそうとする。[sp]君の負担に[r]
-[sp]ならないといいのだが」[p]
+「母宮は世話好きでな。[r]
+[sp]あれこれ余計な事まで手をだそうとする。[r]
+[sp]君の負担にならないといいのだが」[p]
 
 ;【立ち絵】主人公 ほほえみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -248,8 +254,8 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
-「それにしても私のお父様やお母さまも、わたしの事を大切に思って[r]
-[sp]下さるのですが、離れて暮らしているせいか[r]
+「それにしても私のお父様やお母さまも、わたしの事を[r]
+[sp]大切に思って下さるのですが、離れて暮らしているせいか[r]
 [sp]意思の疎通が、あまり出来てないので少し羨ましく思います」[p]
 
 ;【立ち絵】葛城宮　通常
@@ -265,12 +271,16 @@
 [主人公口ほほえみ]
 「ええ、私もです」[p]
 ;=========================================================================================
-;背景仲人庭園(道2)話の変化に合わせて背景も変化させてみます(スクリプト担
-[chara_mod name="bg" storage="bg / I9IhvvVdPo /nakoudoteiniwa_michi2.jpg"]
+;[主人公退場]話の続きだから退場できない。けれど移動しているのでしょうか？
+;【背景】仲人庭園(道2)話の変化に合わせて背景も変化させてみます(スクリプト担
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
-;=========================================================================================
+;[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[主人公ポーズ通常]
 ;【立ち絵】主人公　主人公照れ目普通
 [主人公照れ目普通]
+;=========================================================================================
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「特に殿下の夢を聞きたいと思っていました。[r]
 [sp]殿下のことをお話ししてくださいませんか？」[p]
 ;【立ち絵】主人公　主人公照れ目普通
@@ -306,16 +316,15 @@
 [葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　微笑み
-「本当に君は私の欲しい言葉をくれる[r]
-[sp]他の華族令嬢達は、私の話に興味を示さずに[r]
-[sp]退屈そうにしていたのに」[p]
+「本当に君は私の欲しい言葉をくれる。[r]
+[sp]他の華族令嬢達は、私の話に興味を示さずに退屈そうにしていたのに」[p]
 [fadeoutbgm time=2000]
 ;【立ち絵】主人公　通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公効果消]
 「人それぞれなので、比較はよくありませんわ。」[p]
-
+;いいシーンですぐに鳴るBGM！
 [if exp="sf.BGM=='ON'"]
 ;【BGM】星降る夜に
 [playbgm storage="yumemiru_hoshi.ogg" loop=true]
@@ -328,7 +337,7 @@
 「私の侍従の一人に元フランス外交官がいる[r]
 [sp]幼いころから私は彼の話を聞いた、目まぐるしく変わった[r]
 [sp]フランス情勢に…… 」[p]
-
+;=========================================================================================
 ;呉服屋的な背景 全画面文字のみ表示
 [テキスト全画面白文字無背景]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/yo-roppa.jpg"]
@@ -350,22 +359,25 @@
 [sp]時間が許すまで私は殿下の話を聞いた[p]
 ;メッセージをもどします↓
 [cm]
- 
-
-
-;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
+;=========================================================================================
+[layopt layer=fix visible=false]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg"]
+;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=100 visible=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
 [主人公ポーズ通常]
+[主人公通常]
 [主人公伏目]
-[主人公目パチ1回]
-
-
 ;【立ち絵】葛城宮 微笑み
 [葛城宮ベース軍服]
 [葛城宮笑顔大]
+[freeimagelayer=time time=500]
+;キャラをセットして表示します
+[layopt layer=fix visible=true]
+;=========================================================================================
+[主人公目パチ1回]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「今日は楽しかった。また近いうちに会おう」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -377,7 +389,7 @@
 [sp]私もとても楽しかったです」[p]
 [stopbgm]
 [葛城宮退場]
-
+#
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
