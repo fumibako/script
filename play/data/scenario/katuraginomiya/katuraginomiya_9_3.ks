@@ -72,9 +72,6 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [主人公伏目パチ1回]
-;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
-[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下の事を心配されているのね。[r]
 [sp]私も、殿下や殿下の母宮様のお役にたてられるといいのだけど」[p]
@@ -318,8 +315,9 @@
 [主人公頬染め]
 「その…… 魅力的に感じました」[p]
 
-;【立ち絵】葛城宮　驚き
+;【立ち絵】葛城宮　驚き 微々間をおいて微笑む
 [葛城宮驚き]
+[wait time=20]
 [葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　微笑み
@@ -398,10 +396,15 @@ $('.junbi_girl').remove();
 [主人公ほほえみ]
 [主人公頬染め]
 「ええ、お会いしましょう[r]
+[葛城宮口微笑み]
 [sp]今日は沢山話して頂いてありがとうございました[r]
 [sp]私もとても楽しかったです」[p]
+[fadeoutbgm time=3000]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
+[葛城宮口退場]
+[freeimage layer=29]
+[wait time=20]
 [stopbgm]
-[葛城宮退場]
 #
 ;@jump storage="event.ks" target=*event_owari
 
