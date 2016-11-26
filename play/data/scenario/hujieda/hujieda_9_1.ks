@@ -44,7 +44,7 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]にはまだ早かったか……。[r]
-[sp]そういえば最近はお琴のお稽古に熱心なようだね」[p]
+[sp]そういえば最近はお[ruby text=こと]箏のお稽古に熱心なようだね」[p]
 *scene2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
@@ -76,12 +76,6 @@
 「お稽古が楽しいのはいい事だ今を大切にしなさい。[r]
 [sp]だが今、[ruby text=か]交わしている方の都合もあるので、今交わしている、[r]
 [sp]お手紙の相手とはもう縁はないが[名前]は、それでもいいのかね？」[p]
-
-;今交わしているが二回入っているので
-;「お稽古が楽しいのは良い事だ今を大切にしなさい。[r]
-;[sp]だが今、お手紙を[ruby text=か]交わしている方々の都合もある。[r]
-;[sp]その方との縁(ご縁)は、もうなくなってしまうが[名前]は、[r]
-;[sp]それでもいいのかね？」[p]
 
 ;【立ち絵】主人公：目閉じ思案
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -118,6 +112,7 @@
 （ふぅ、これでもう後戻りはできないわ）[p]
 
 ;【分岐】他攻略対象の好感度が高い場合
+[if exp="f.para_kuroda_koukando > 15 || f.para_katuraginomiya_koukando > 15 || f.para_hujieda_koukando > 15 || f.para_zaizen_koukando > 15"]
 ;【立ち絵】主人公：通常
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -138,8 +133,13 @@
 （せめて、今まで以上に心を込めて別れの手紙を書こう。[r]
 [sp]もしどこかでお会いすることがあっても笑顔でお話できるように）[p]
 
+*end_rute
+[stopbgm]
+;[endif]
 ;個別ルート前夜終了
 
+;[eval exp="f.fujieda_au=1"]
+;@jump storage="event.ks" target=*event_owari
 #
 ;次のイベントにでてしまう名前残りを消去
 ;@jump storage="event.ks" target=*event_owari
