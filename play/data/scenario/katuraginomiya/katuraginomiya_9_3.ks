@@ -183,6 +183,7 @@
 [葛城宮ベース軍服]
 [葛城宮通常]
 [表示開始 time=300]
+;パッとふりむいて表示・準備は幕間にて済
 ;====================
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -363,6 +364,9 @@
 [r]
 [sp]時間が許すまで私は殿下の話を聞いた。[p]
 [cm]
+;切り替えまで時間がかかるのでSEをお願いします
+;【SE】スズムシ（リーンリーン）
+;[playse storage=mushi_suzumushi.ogg loop=false ]
 ;=========================================================================================
 ;背景切り替わってないときにメッセージ表示防止・次画像↓
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
