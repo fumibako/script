@@ -51,7 +51,7 @@
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 #
 たまたま付けたラヂオから、ピアノと琴の合奏曲が聴こえた。[p]
-とても綺麗で切ない曲でピアノと琴の合奏曲なんて珍しい[r]
+とても綺麗で切ない曲で、ピアノと[ruby text=こと]箏の合奏曲なんて珍しい[r]
 と思いながら聞いていると彼の声が聞こえた[p]
 
 [whosay name="藤枝 肇" color=%mp.color] 
