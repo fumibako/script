@@ -15,12 +15,12 @@
 #
 [主人公ポーズ通常]
 [主人公通常]
+[主人公困り]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=========================================================================
 *seen_1
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公困り]
 [主人公目パチ1回]
 「……」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -49,7 +49,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：真剣
 [主人公目閉じ]
-「お父様……私はもう一度だけでもいいです[r]
+「お父様……私は、もう一度だけでもいいです[r]
 [sp]藤枝様にお会いしたいです」[p]
 [主人公口通常]
 
@@ -107,7 +107,7 @@
 「仕方がない。　何も起きないように、[r]
 [sp]磯野、君は[名前]に立ち会いなさい」[p]
 *seen_2
-==========================スクリプト・全画面表示の間に設定===============================
+;==========================スクリプト・全画面表示の間に設定===============================
 #
 ;【テキスト全画面】黒茶・和紙風背景(暗)に白文字  [テキスト全画面白文字暗]裏で画面構成bg_prologue_dark.jpg
 ;機能ボタン消去
@@ -138,10 +138,9 @@
 [layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_hujieda.ks"]
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[call target=*start storage="macro_tati_hujieda.ks"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 *seen_3_1
 
