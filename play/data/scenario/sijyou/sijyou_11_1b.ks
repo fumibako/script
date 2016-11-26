@@ -11,19 +11,7 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 ;=================================================================================_
-[if exp="tf.test_sijyou==true"]
-;婚約者の花園
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50]
-[イベントシーン構築]
-「テストモードで表示されています。　追加シーンにとびます」
-[主人公ポーズ通常]
-[wait time=10]
-[主人公通常]
-[wait time=10]
-[主人公憂い]
-[wait time=10]
-@jump target=*seen4
-[endif]
+;テストモード削除
 ;=================================================================================_
 *first
 [テキスト全画面白文字]
