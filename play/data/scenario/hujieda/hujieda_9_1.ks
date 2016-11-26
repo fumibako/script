@@ -112,7 +112,7 @@
 （ふぅ、これでもう後戻りはできないわ）[p]
 
 ;【分岐】他攻略対象の好感度が高い場合
-[if exp="f.para_kuroda_koukando > 15 || f.para_katuraginomiya_koukando > 15 || f.para_hujieda_koukando > 15 || f.para_zaizen_koukando > 15"]
+;[if exp="f.para_kuroda_koukando > 15 || f.para_katuraginomiya_koukando > 15 || f.para_hujieda_koukando > 15 || f.para_zaizen_koukando > 15"]
 ;【立ち絵】主人公：通常
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -137,9 +137,8 @@
 [stopbgm]
 ;[endif]
 ;個別ルート前夜終了
-
 ;[eval exp="f.fujieda_au=1"]
-;@jump storage="event.ks" target=*event_owari
+
 #
 ;次のイベントにでてしまう名前残りを消去
 ;@jump storage="event.ks" target=*event_owari
