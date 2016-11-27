@@ -227,6 +227,7 @@
 「２人ともその辺で[r]
 [sp]だが明らかになった以上、対策を立てねばならない。[r]
 [sp]今後は……」[p]
+#
 [layopt layer=fix visible=false]
 [image layer=29 x=1 y=1 storage="bg/anten.jpg" time=2000 visible=true]
 [葛城宮退場]
