@@ -196,7 +196,7 @@
 [sp]それになんて綺麗で繊細な音を奏でてるのかしら）[p]
 ;==============================================================================
 ;窓から見た白っぽいミルクホール_ピアノ
-[chara_mod name="bg" storage="bg/bg_fujieda_piano_0.jpg" time=1000]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
 ;jｓYiJｃｑRkkさんのピアノ画像、立ち絵表示あり
 [表示準備 storage="bg/bg_fujieda_piano_0.jpg"]
 ;==============================================================================
