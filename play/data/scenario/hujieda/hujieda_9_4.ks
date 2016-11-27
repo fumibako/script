@@ -155,10 +155,10 @@
 ;==============================================================================
 [layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='I9IhvvVdPo'"]
-[表示準備 storage="bg/I9IhvvVdPo/mirukutest.jpg" layer=29]
+[表示準備 storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg" layer=29]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;storage=以降の空白はバグになる恐れがありますので詰めます
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutest.jpg" time=50]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg" time=50]
 [主人公通常]
 [freeimage layer=29 time=200]
 ;ふわっと表示依頼
@@ -168,6 +168,7 @@
 #
 ２駅先の駅前に着くとピアノの音がしたので[r]
 その音を頼りに歩いたら、ミルクホール月ノ光の看板が目に入った。[p]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg" time=50]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ
 [主人公伏目]
