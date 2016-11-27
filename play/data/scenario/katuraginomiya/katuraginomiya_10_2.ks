@@ -110,6 +110,13 @@
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
+;表示
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;!!!幕間に設定!!!!
+;【立ち絵】葛城宮　怒り
+[葛城宮ベース軍服]
+[葛城宮怒り]
+
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】仲人庭園 （裏で画面構成）
