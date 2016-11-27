@@ -397,14 +397,31 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
-
-
-;=======================断るでイベント終了。断ったときのジャンプ先を後で設定================================================
-*no_end
-;ちなみに「謹んで拝辞(はいじ)仕(つか)ります」と代わりのものに言わせたらしいです。ある華族の昭和史 page_no１７８３
+;機能ボタン表示
+[layopt layer=fix visible=false]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[layopt layer=fix visible=true]
 [stopbgm]
-;@jump storage="event.ks" target=*event_owari
+[イベントシーン終了]
+@jump target=*common_end
+;=======================断るイベント================================================
+*no_end
+;=============
 
+;断るイベント
+
+
+
+
+
+;断るイベント
+
+;====================================================================================================================
+[stopbgm]
+*common_end
+;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
