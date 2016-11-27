@@ -170,10 +170,9 @@
 
 ;【立ち絵】葛城宮　怒り
 ;==========
-;止まってるので目パチ
-[葛城宮目閉じ]
-[葛城宮目伏]
-[葛城宮目大]
+;キャラが止まってるので目パチ（目大）
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_ake.png" time=0]
 ;==========
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「それが本音か！[r]
