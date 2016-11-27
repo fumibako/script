@@ -355,6 +355,7 @@ $('.junbi_girl').remove();
 [sp]きっともう大丈夫）[p]
 
 ;==========================スクリプト===============================
+#
 [主人公退場]
 [葛城宮退場]
 ;背景:庭【背景】主人公邸 庭の見える部屋：昼
@@ -364,6 +365,7 @@ $('.junbi_girl').remove();
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
+[主人公ポーズ通常]
 [主人公眉通常]
 [主人公目閉]
 [主人公口通常]
@@ -399,7 +401,8 @@ $('.junbi_girl').remove();
 
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「貴方の[ruby text=せ]所[ruby text=い]為ではないです……私が[ruby text=あさ]浅はかだったのですわ」[p]
+「貴方の[ruby text=せ]所[ruby text=い]為ではないです……[r]
+[sp]私が[ruby text=あさ]浅はかだったのですわ」[p]
 
 #
 思わず言葉がでたけれど私の声はかすれて弱弱しかった。[r]
@@ -418,8 +421,8 @@ $('.junbi_girl').remove();
 
 [主人公口開]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いいえ！　そんなことはありませんわ」[p]
-[主人公口ムッ]
+「いいえ！　そんなことはありませんわ」[主人公口ムッ][p]
+
 
 [葛城宮憂い]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -451,7 +454,7 @@ $('.junbi_girl').remove();
 [主人公目伏]
 
 [whosay name=浩文"]
-「殿下、娘との婚約はもう一度考えさせて頂きたい。[r]
+「殿下、娘との婚約は、もう一度考えさせて頂きたい。[r]
 [sp]やはり身分の差というのは問題があります」[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -466,7 +469,7 @@ $('.junbi_girl').remove();
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私は、なんともなかったのです。[r]
-[sp]それに殿下は来てくださいました[r]
+[sp]それに殿下は来てくださいました。[r]
 [sp]私は殿下の事をお慕いしているのですどうかお許しください」[p]
 
 [葛城宮驚き]
