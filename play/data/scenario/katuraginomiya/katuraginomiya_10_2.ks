@@ -1,19 +1,27 @@
 ;６回目イベント
-
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*10_2 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
-[背景_庭]
+;【背景】主人公部屋昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
-[主人公目パチ1回]
+#
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
+[主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
 「お嬢様……この記事をお読みください」[p]
+
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
@@ -29,14 +37,24 @@
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「これは！」[p]
-
-
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[テキスト全画面白文字無背景]
-;[新聞]
-[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】;[新聞] 裏で画面構成 test_bg_sinbun.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/test_bg_sinbun.jpg" time=1000 visible=true]
+[wait time=10]
+[主人公伏目]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 
 [sp]内閣総辞職か！？[sp]過去最大の海軍の汚職事件 [r]
 [r]
@@ -52,53 +70,77 @@
 現首相も海軍出身である。[r]
 [r]
 現内閣への国民の反発は大きくなるだろう[p]
-[r]
-[resetfont]
-[playse storage=paper_open.ogg loop=false ]
-
-;[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
+;==========================スクリプト・全画面表示からの復帰準備========================================
 ;メッセージをもどします
-#
+;復帰を別にすればいのよ!ひらめき
+[playse storage=paper_open.ogg loop=false ]
+[resetfont]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [cm]
-[イベントシーン構築]
-[背景_庭]
-[主人公ポーズ通常]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+#
 [主人公憂い]
 [主人公目パチ1回]
-
 [whosay name=磯野 color="dimgray"]
 「葛城宮殿下も海軍大佐です[r]
 [sp]少なからず影響があるやもしれません」[p]
-
-
 [fadeoutbgm time=3000]
 
-;【立ち絵】主人公　困り
-[主人公憂い]
+;【立ち絵】主人公　困り 
+;[主人公憂い]同じ表情なので表示高速化のためにコメントへ（スクリプト担当_2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええ、それに殿下は[r]
-[sp]現内閣の与党である党の一員よ[r]
-[sp]巻き込まれないといいのだけれど[r]
-[sp]…… 心配だわ」[p]
+「ええ、それに殿下は、]現内閣の与党である党の一員よ[r]
+[sp]巻き込まれないといいのだけれど…… 心配だわ」[p]
 [主人公退場]
 
-;【テキスト全画面】黒茶・和紙風背景(暗)に白文字
-[テキスト全画面白文字暗]
- 同時刻
+
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】黒茶・和紙風背景(暗)に白文字[テキスト全画面白文字暗]裏で画面構成bg_prologue_dark.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】仲人庭園 （裏で画面構成）
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
+[表示準備 storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+同時刻[r]
  与党会議室[p]
- 
- [chara_mod name="bg" storage="bg / I9IhvvVdPo / kaigisitu.jpg"]
- [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築枠茶色]
-[whosay name="葛城宮　晴仁" color=%mp.color]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更　ボタンなしで
+[イベントシーン構築ボタン無し版枠茶色]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;!!!幕間に設定!!!!
 ;【立ち絵】葛城宮　怒り
 [葛城宮ベース軍服]
 [葛城宮怒り]
-「どういうことですか今原中将！」[p]
+;表示
+[freeimage layer = 29 time=1000]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 
+[whosay name="葛城宮　晴仁" color=%mp.color]
+;【立ち絵】葛城宮　怒り　幕間に設定済
+「どういうことですか今原中将！」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】一閃（緊迫シーンに
 [playbgm storage="kinpaku_issen.ogg" loop=true]
@@ -106,44 +148,42 @@
 [endif]
 
 [whosay name="今原中将" color=%mp.color]
-「貴殿には関係のないことだ[r]
-[sp]高貴な血がながれているとはいえ[r]
-[sp]貴殿は若い黙っておられるとよい」[p]
+「貴殿には関係のないことだ。[r]
+[sp]高貴な血がながれているとはいえ、貴殿は若い。[r]
+[sp]黙っておられるとよい」[p]
 
 ;【立ち絵】葛城宮　眉強気目閉じ
 [葛城宮目伏]
 [葛城宮口ムッ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「関係は大いにあります、各報道メディアも全て明らかにするだろう[r]
+「関係は大いにあります、各報道メディアも全て明らかにするだろう」[p]
 ;【立ち絵】葛城宮　怒り
 [葛城宮怒り]
-[sp]内閣総辞職になるのは目に見えている[r]
-[sp]その前にあなたが責任を取って[r]
-[sp]全てを明らかにした上辞職して責任を取るべきだ」[p]
+「内閣総辞職になるのは目に見えている。[r]
+[sp]その前にあなたが責任を取って、全てを明らかにした上、[r]
+[sp]辞職して責任を取るべきだ」[p]
 
 [whosay name="今原中将" color=%mp.color]
-「苦労知らずの青二才が！[r]
-[sp]私は貴殿と違い、苦労してこの地位を手に入れた！[r]
+「苦労知らずの青二才が！」[p]
+「私は貴殿と違い、苦労してこの地位を手に入れた！[r]
 [sp]国を守るためにもにも金や裏の繋がりが必要なんだ[r]
 [sp]そんなことも分らないのか！」[p]
 
 ;【立ち絵】葛城宮　怒り
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「それが本音か！[r]
-[sp]軍の拡張はこれ以上は必要ない[r]
+[sp]軍の拡張はこれ以上は必要ない」[p]
 [sp]軍は自国を守るためにあればいい[r]
-[sp]他国を侵略して得る豊かさは後で痛い爪痕を残す！」[p]
+[sp]他国を侵略して得る豊かさは、後で痛い爪痕を残す！」[p]
 
 [whosay name="今原中将" color=%mp.color]
-「欧羅巴は諸国は産業革命と[r]
-[sp]植民地を手に入れることで[r]
-[sp]豊かになったのだよ！ 　違うか？」[p]
+「欧羅巴は諸国は産業革命と植民地を手に入れることで[r]
+[sp]豊かになったのだよ！　違うか？」[p]
 [fadeoutbgm time=3000]
 ;【立ち絵】葛城宮　怒り
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「開き直るな！[r]
-[sp]植民地を手に入れずとも[r]
-[sp]物質的に豊かになることはできる」[p]
+[sp]植民地を手に入れずとも、物質的に豊かになることはできる」[p]
 
 [whosay name="今原中将" color=%mp.color]
 「で？　なんだ？[r]
@@ -152,10 +192,14 @@
 ;【立ち絵】葛城宮　怒り
 [葛城宮憂い]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「っ……」[r]
-(侮蔑するような視線に言葉が詰まる[r]
-私がこの党に入れたのは国の制度[r]
-に保守的な叔父宮の一派に対抗する為だ）[p]
+「っ……」[p]
+#
+侮蔑するような視線に言葉が詰まる。[p]
+
+[whosay name="葛城宮　晴仁" color=%mp.color]
+(私がこの党に入れたのは、国の制度に保守的な叔父宮の[r]
+[sp]一派に対抗する為だ）[p]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
@@ -165,15 +209,16 @@
 ;【立ち絵】葛城宮　目閉じ眉困り
 [葛城宮困り]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-（また、皇族は国民からの人気を集めやすく[r]
-党の支持率は上がりやすいという理由もある[r]
-ある程度の発言か許されているもの私が皇族であるからだ[r]
-私にまだ実績がなく皇族である事以外私に存在意義はない）[p]
+（また、皇族は国民からの人気を集めやすく、[r]
+[sp]党の支持率は上がりやすいという理由もある)[p]
+[葛城宮目閉じ]
+(ある程度の発言か許されているもの私が皇族であるからだ。[r]
+[sp]私にまだ実績がなく皇族である事以外私に存在意義はない）[p]
+[葛城宮目伏]
 
 [whosay name="首相" color=%mp.color]
 「２人ともその辺で[r]
-[sp]だが明らかになった以上[r]
-[sp]対策を立てねばならない[r]
+[sp]だが明らかになった以上、対策を立てねばならない。[r]
 [sp]今後は……」[p]
 [葛城宮退場]
 [stopbgm]
