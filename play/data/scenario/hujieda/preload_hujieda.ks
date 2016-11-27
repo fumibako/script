@@ -397,7 +397,7 @@
 ;【背景】:ミルクホール窓
 [preload storage="data/fgimage/bg/I9IhvvVdPo/mirukuho_ru4.jpg" wait=true]
 ;【背景】:ミルクホール窓際　ピアノ
-[preload storage="data/fgimage/bg/bg_fujieda_piano_0.jpg" wait=true]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
