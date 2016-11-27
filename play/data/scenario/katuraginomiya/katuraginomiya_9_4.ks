@@ -168,13 +168,13 @@
 「ええ。[sp]まだ志津子女王様からお返事が返ってきません」[p]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢様、このぐらいで落ち込まれては、身が持ちませんよ」[p]
+「お嬢様。　このぐらいで落ち込まれては身が持ちませんよ」[p]
 [fadeoutbgm time=3000]
 [主人公眉困り]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ。 そうね」[p]
-
+#
 ;=====================================スクリプトシーン切りかえ==========================================================
 [主人公退場]
 [暗転]
@@ -195,8 +195,8 @@ $('.junbi_girl').remove();
 
 ;[主人公憂い]幕間に設定済
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（わかっていたけど、やんごとなきお方と折り合っていくのは[r]
-[sp]難しいわ）[p]
+（わかっていたけど、[r]
+[sp]やんごとなきお方と折り合っていくのは、難しいわ）[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
@@ -224,7 +224,7 @@ $('.junbi_girl').remove();
 
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええ。」[p]
+「ええ」[p]
 [主人公目閉]
 （人目もあるし、もう大丈夫だわ）[p]
 
@@ -266,15 +266,17 @@ $('.junbi_girl').remove();
 「！　姫宮様とはまさか志津子女王様の事ですか？」[p]
 
 [whosay name=下品な男" ]
-「さあな……俺はお前の醜聞を[ruby text=でっ]捏ち[ruby text=あ]上げるように頼まれただけだ」[p]
+「さあな……[r]
+[sp]俺は、お前の醜聞を[ruby text=でっ]捏ち[ruby text=あ]上げるように頼まれただけだ」[p]
 ;平仮名つづきなので一時的にテスト
 
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どのようにでっちあげるのですか？」[p]
-[主人公伏目パチ1回]
-（大きな悪意を感じてめまいがするわ。[sp]でもここで負けてはいけない）[p]
-
+[主人公目閉]
+（大きな悪意を感じてめまいがするわ。[r]
+[sp]でもここで負けてはいけない）[p]
+[主人公目伏]
 [whosay name=下品な男" ]
 「ネタをあかしたりしないさ」[p]
 
@@ -294,9 +296,8 @@ $('.junbi_girl').remove();
 [葛城宮ベース私服]
 [葛城宮真剣]
 [表示開始 time=300]
-;パッとふりむいて表示・準備は幕間にて済
+;準備は幕間にて済
 ;====================
-
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「[名前]殿！」[p]
 
@@ -311,7 +312,7 @@ $('.junbi_girl').remove();
 
 [葛城宮怒り]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「貴様の顔には見覚えがある[r]
+「貴様の顔には見覚えがある。[r]
 [sp]よくもこんな汚い真似に加担したな！」[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -329,11 +330,10 @@ $('.junbi_girl').remove();
 
 [whosay name=下品な男" ]
 「ご、御前を失礼します！」[p]
-
+;[葛城宮口ムッ]
 [fadeoutbgm time=3000]
-
 #
-男が逃げるように店を出て行った[r]
+男が逃げるように店を出て行った。[r]
 殿下は私に向き直って言った[p]
 
 [葛城宮真剣]
@@ -343,42 +343,55 @@ $('.junbi_girl').remove();
 [主人公目閉じ]
 [主人公口通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「えぇ……」[r]
+「えぇ……」[p]
+
 （緊迫した雰囲気がなくなり、[r]
 [sp]殿下の姿と優しい眼差しにほっとして気が遠くなっていく）[p]
 
-
 [chara_mod name="bg" storage="toumei.gif" time=1500]
-
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （怖かった。けれど殿下が来てくださったわ[r]
 [sp]きっともう大丈夫）[p]
 
+;==========================スクリプト===============================
+[主人公退場]
+[葛城宮退場]
 ;背景:庭【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
+[表示準備 storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-
-[イベントシーン構築]
-[主人公ポーズ通常]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公眉通常]
-[主人公目閉じ]
+[主人公目閉]
 [主人公口通常]
+;=====主人公復帰表情消去====
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;====主人公復帰表情消去====
+;==========================スクリプト=============================================
+;背景:庭【背景】主人公邸 庭の見える部屋：昼 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……）[p]
+
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
-
+;表示準備上記で設定済
+;====================
 ;【立ち絵】葛城宮　目伏せ
 [葛城宮ベース私服]
 [葛城宮憂い]
+[表示開始 time=300]
+;====================
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「この度の事件は私の責任だ。どれだけお詫びしても足りない」[p]
+「この度の事件は私の責任だ。　どれだけお詫びしても足りない」[p]
 
 #
 後悔の念が伝わっててくる声に私は目を開けると[r]
@@ -386,7 +399,7 @@ $('.junbi_girl').remove();
 
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「貴方の所為ではないです……私が浅はかだったのですわ」[p]
+「貴方の[ruby text=せ]所[ruby text=い]為ではないです……私が[ruby text=あさ]浅はかだったのですわ」[p]
 
 #
 思わず言葉がでたけれど私の声はかすれて弱弱しかった。[r]
@@ -399,12 +412,14 @@ $('.junbi_girl').remove();
 [葛城宮憂い]
 「こんな目に合わせてすまなかった」[p]
 
+[主人公目閉じ]
 #
 私は首を振る[p]
 
-[主人公目閉じ]
+[主人公口開]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいえ！　そんなことはありませんわ」[p]
+[主人公口ムッ]
 
 [葛城宮憂い]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -415,7 +430,8 @@ $('.junbi_girl').remove();
 [主人公涙_目閉用]
 [主人公ポーズ片手]
 #
-その言葉に私はあの時の恐怖を思い出して体が震える[r]
+その言葉に私は、あの時の恐怖を思い出して体が震える。[r]
+;アップしていいですか
 すると殿下に抱きしめられた[p]
 
 [葛城宮目閉じ]
@@ -492,7 +508,9 @@ $('.junbi_girl').remove();
 
 #
 そして殿下はお父様に一礼し退出した。[p]
-[葛城宮退場]
+
+;[葛城宮退場] ふわっと退場
+[葛城宮退場準備 storage="bg/bg_room_niwa.jpg"time=300]
 
 ;【SE】襖を閉じる（ゆっくり）
 [playse storage=fusuma-close.ogg loop=false ]
@@ -501,7 +519,7 @@ $('.junbi_girl').remove();
 [主人公眉下げ下]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お父様、磯野、私は強くなります。[r]
-[sp] だから心配しないで下さい」[p]
+[sp]だから心配しないで下さい」[p]
 
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
