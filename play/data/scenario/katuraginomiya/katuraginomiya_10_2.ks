@@ -119,9 +119,8 @@
 
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-;【背景】仲人庭園 （裏で画面構成）
+;【背景】会議室（裏で画面構成）
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
-[表示準備 storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;テキスト全画面
 [font color=white size=27]
