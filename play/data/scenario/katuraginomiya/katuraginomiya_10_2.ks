@@ -89,7 +89,7 @@
 [主人公憂い]
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「葛城宮殿下も海軍大佐です[r]
+「葛城宮殿下も海軍大佐です。[r]
 [sp]少なからず影響があるやもしれません」[p]
 [fadeoutbgm time=3000]
 
@@ -126,7 +126,7 @@
 [イベントシーン構築ボタン無し版枠茶色]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;!!!幕間に設定!!!!
-【立ち絵】葛城宮　怒り
+;【立ち絵】葛城宮　怒り
 [葛城宮ベース軍服]
 [葛城宮怒り]
 ;表示
@@ -169,7 +169,12 @@
 [sp]そんなことも分らないのか！」[p]
 
 ;【立ち絵】葛城宮　怒り
+;==========
+;止まってるので目パチ
+[葛城宮目閉じ]
+[葛城宮目伏]
 [葛城宮目大]
+;==========
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「それが本音か！[r]
 [sp]軍の拡張はこれ以上は必要ない」[p]
@@ -224,13 +229,13 @@
 [sp]だが明らかになった以上、対策を立てねばならない。[r]
 [sp]今後は……」[p]
 [layopt layer=fix visible=false]
-[image layer=29 x=1 y=1 storage=""bg/I9IhvvVdPo/kaigisitu.jpg" time=1500 visible=true]
+[image layer=29 x=1 y=1 storage=""bg/I9IhvvVdPo/kaigisitu.jpg" time=2000 visible=true]
 [葛城宮退場]
 [wait time=10]
 ;メッセージ消去
 [イベントシーン終了]
 [stopbgm]
-;暗く全体消えていく演出・黒画像ないのでこれで！
+;暗く全体消えていく演出・黒画像ないのでこれで！まだはやい
 [freeimage layer=29]
 
 ;@jump storage="event.ks" target=*event_owari
