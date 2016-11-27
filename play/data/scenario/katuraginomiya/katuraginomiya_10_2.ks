@@ -179,7 +179,8 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「それが本音か！[r]
 [sp]軍の拡張はこれ以上は必要ない」[p]
-[sp]軍は自国を守るためにあればいい[r]
+[葛城宮口ムッ]
+[sp]「軍は自国を守るためにあればいい[r]
 [sp]他国を侵略して得る豊かさは、後で痛い爪痕を残す！」[p]
 
 [whosay name="今原中将" color=%mp.color]
@@ -226,11 +227,16 @@
 「２人ともその辺で[r]
 [sp]だが明らかになった以上、対策を立てねばならない。[r]
 [sp]今後は……」[p]
+;メッセージ消去
+[イベントシーン終了]
+[image layer=29 x=1 y=1 storage="toumei.gif" time=1500 visible=true]
 [葛城宮退場]
 [stopbgm]
+;暗く全体消えていく演出
+[freeimage layer=29]
+
 ;@jump storage="event.ks" target=*event_owari
 
-[イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
 
