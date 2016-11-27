@@ -68,7 +68,6 @@
 
 [whosay name=磯野 color="dimgray"]
 「文矢様は、お元気にされていらっしゃいますか？」[p]
-;お元気にされていらっしゃいますか？
 #
 磯野は懐かしそうに微笑んだ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -122,8 +121,6 @@
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
-;背景変更:和紙風 水色
-;[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;[link]タグでの選択肢
@@ -176,9 +173,9 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]　
-;フラグBのときは違うシナリオにジャンプします。フラグAの時は無視して下のシナリオに行きます。
+;フラグBのときは違うシナリオにジャンプします。フラグAの時は無視して下のシナリオにno_endに飛びます。
 [if exp="f.katuraginomiya_konyaku==false"]
-;まだ次のシナリオを把握してないので、次に追加します
+;no_endに飛びます
 @jump target=*no_end
 [endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -278,12 +275,12 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
-;機能ボタン表示
-[layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
 [layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -375,8 +372,8 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]　
+;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]　
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -394,38 +391,59 @@
 殿下らの婚約をお受けして下さった。[r]
 そしてここから殿下と私の物語はまた新たに始まる[r]
 [p]
-;==========================スクリプト・全画面表示からの復帰準備========================================
-[resetfont]
-[freeimage layer = 29 time=1000]
-;機能ボタン表示
+;===================================================================================
+;スクリプト・全画面表示からの復帰準備へ飛ぶ 初期化
+@jump target=*common_end
+;===================================断るイベント_ジャンプ位置=======================================
+*no_end
+;==========================スクリプト・全画面表示の間に設定==============================
+#
+;【テキスト全画面】黒茶・和紙風背景に白文字  [テキスト全画面白文字]裏で画面構成
+;機能ボタン消去
 [layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風　 bg_prologue_dark.jpgなど fgimageフォルダを参照
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+;裏で表情リセット
+[主人公通常]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】主人公邸 庭の見える部屋：昼
+;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]　
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+;断るイベント
+
+
+
+
+
+
+;断るイベント
+;==========================スクリプト・全画面表示からの復帰準備_初期化==================================
+*common_end
+;終了はすべてここにきます
+[resetfont]
+[主人公退場]
+;背景の変更。イメージ画像などの背景を表示したい場合は[暗転]を背景変更に。
+[暗転]
+;上に載っている画像が消えます。それまでに設定
+[freeimage layer = 29 time=1000]
+;念のため初期化します_スクリプト担当さまにおまかせします
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
 [layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
 [stopbgm]
-[イベントシーン終了]
-@jump target=*common_end
-;=======================断るイベント================================================
-*no_end
-;=============
-
-;断るイベント
-
-
-
-
-
-;断るイベント
-
-;====================================================================================================================
-[stopbgm]
-*common_end
+;================================以降スクリプト担当====================================================
 ;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
-
 *window_close
 [cm]
 [chara_mod name="girl_base" storage="toumei.gif" time=0]
