@@ -296,17 +296,22 @@
 
 （どんなにお手紙が遅くなっても[r]
 [sp]家族から反対されてもきっと私は殿下を信じている）[p]
+
+;＝＝＝＝＝＝＝＝＝＝;いいシーンなのにパッパッと順番にきえるのを防止＝＝＝＝＝＝＝＝＝
 #
+[layopt layer=fix visible=false]
 [image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bara_image.jpg" time=1500 visible=true]
 [葛城宮退場]
 [wait time=10]
-;いいシーンなのにパッパッと順番にきえるのを防止
-[イベントシーン終了]
+[主人公退場]
+[wait time=10]
+[暗転]
+[layopt layer=fix visible=true]
 [freeimage layer=29 time=600]
 [wait time=10]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝スクリプト担当＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;@jump storage="event.ks" target=*event_owari
-
+[イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
 
