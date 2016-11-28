@@ -423,6 +423,8 @@
 [preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
 ;【効果】キラキラ
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_kirakira.png" wait=true]
+;【効果】ピアノ
+[preload storage="data/fgimage/storage="bg/B4nFWraU42/piano_base.png" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
