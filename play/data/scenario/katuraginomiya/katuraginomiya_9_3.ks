@@ -371,7 +371,7 @@
 ;背景切り替わりでセーブ等はさせない
 [layopt layer=fix visible=false]
 ;背景切り替わってないときにメッセージ表示防止・次画像↓
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=500 visible=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext name=".junbi_girl" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
@@ -385,7 +385,7 @@
 ;【立ち絵】葛城宮 微笑み
 [葛城宮ベース軍服]
 [葛城宮笑顔大]
-[freeimage layer=29]
+[freeimage layer=29 time=500]
 ;ボタン表示
 [layopt layer=fix visible=true]
 [メッセージウィンドウ上ボタン表示]
