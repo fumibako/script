@@ -251,7 +251,7 @@ $('.29_fore').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)'
 [resetfont]
 ;戻す
 [iscript]
-$('.29_fore').css({'filter':'brightness(0.0)','-webkit-filter':'brightness(0.0)','-moz-filter':'brightness(0.0)','-ms-filter':'brightness(0.5)'});
+$('.29_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
 [endscript]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50" opacity=0]
