@@ -17,14 +17,19 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-;【SE】紙に触れる（スッ）
-[playse storage=paper_su.ogg loop=false ]
 
 #
 皇后様のお印入りの簡単な挨拶と日時の書いてある、[r]
 お茶事の招待状と葛城宮殿下の手紙に目を通す[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
@@ -49,7 +54,7 @@
 [r]
 [sp]……いや心から君が受けてくれるのを望んでいるのだ[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　謹言
+[sp]　　　　　　　　　　　　　　　　　　　　　謹言[r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 [手紙葛城宮読了 fumi_number=]
 [resetfont]
