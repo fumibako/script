@@ -193,7 +193,8 @@
 ;==============================================================================
 ;音の奔流アニメ
 [layopt layer=fix visible=false]
-[anim name=oto left="+=600" time=10000 effect=easeInCirc opacity=0]
+[anim name=oto left="+=600" time=5000 effect=easeInCirc opacity=0]
+[wa]
 [layopt layer=fix visible=true]
 ;==============================================================================
 ;【立ち絵】主人公：驚き
