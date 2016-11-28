@@ -208,20 +208,23 @@
 [stopanim name=oto]
 ;セーブボタン解除
 [layopt layer=fix visible=true]
-;透過画像消去
-[freeimage layer=1 time=50]
 ;窓から見た白っぽいミルクホール_ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
 ;jｓYiJｃｑRkkさんのピアノ画像、立ち絵表示あり
-[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" layer=13]
+[image storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" layer=13]
+テスト1[p]
 ;==============================================================================
 
 ;========ふわっと表示============
 ;【立ち絵】藤枝 微笑み
 [藤枝ベース私服]
 [藤枝微笑み]
+テスト2[p]
 [freeimage layer=13 time=300]
+テスト3[p]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
+;透過画像消去
+[freeimage layer=1 time=50]
 ;================================
 
 #
