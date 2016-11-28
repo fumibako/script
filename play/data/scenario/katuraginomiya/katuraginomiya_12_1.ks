@@ -34,13 +34,12 @@
 [主人公目伏]
 「忙しくされてるのよ[r]
 [sp]責任感の強いお方だから、水面下で動いて安定させようとして[r]
-いるのだわ」[p]
+[sp]いるのだわ」[p]
 [主人公目閉じ]
 「私は、殿下を信じています」[p]
 
 [whosay name=磯野 color="dimgray"]
-「では暫く、お手紙は来ないかも[r]
-[sp]知れないですね」[p]
+「では暫く、お手紙は来ないかも、知れないですね」[p]
 
 [fadeoutbgm time=3000]
 
@@ -52,7 +51,8 @@
 [sp]それはどういう意味かしら？」[p]
 
 #
-磯野は困ったように新聞を差し出す[p]
+磯野は困ったように新聞を差し出す。[p]
+;した
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲
@@ -74,13 +74,6 @@
 ;背景変更:新聞
 [image layer=29 x=1 y=1 storage="bg/test_bg_sinbun.jpg" time=1000 visible=true]
 [wait time=10]
-[主人公憂い]
-[主人公ポーズ通常]
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
-;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
-[eval exp="f.haikei_credit='photo　by　ゆうあかり'"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -100,10 +93,17 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　[p]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
-[freeimage layer = 29 time=1000]
+[主人公憂い]
+
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
+[eval exp="f.haikei_credit='photo　by　ゆうあかり'"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[主人公困り]
+[freeimage layer = 29 time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -112,26 +112,23 @@
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-[主人公ポーズ通常]
-[主人公困り]
-[主人公伏目パチ1回]
 
 ;【立ち絵】主人公 困り
-[主人公眉困り]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（事態が好転すると勝手に信じていたわ[r]
-[sp]現実はそうではないのね[r]
-[sp]けれど諦めなければまた道は開けるかしら[p]
+（事態が好転すると勝手に信じていたわ。[r]
+[sp]現実はそうではないのね)[p]
+[主人公伏目パチ1回]
+（けれど諦めなければまた道は開けるかしら[p]
 
 ;【立ち絵】主人公 困り
 [主人公困り]
 [主人公口開]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「殿下にお手紙を書きます[r]
-[sp]さすがにこの結果は落ち込まれていると思いますもの。[r]
-[主人公目閉じ]
+「殿下にお手紙を書きます」[p]
 [主人公口通常]
+[主人公目閉じ]
+「さすがにこの結果は落ち込まれていると思いますもの。[r]
 [sp]私は殿下は克服されると信じています」[p]
 
 
