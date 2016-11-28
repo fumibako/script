@@ -185,7 +185,7 @@
 ;【背景】窓
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho_ru4.jpg" time=1000]
 ;【アニメイメージ】キラキラ透過素材 layer=1
-[image name=oto storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1000 left=-300 visible=true]
+[image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1000 left=-300 visible=true]
 ;==============================================================================
 ;背景窓　
 #
@@ -194,7 +194,7 @@
 ;アニメ中にセーブさせない
 [layopt layer=fix visible=false]
 ;【アニメ】音の奔流アニメ 右に移動left　速さtime 消える
-[anim name=oto left="+=800" time=7000 opacity=0]
+[anim name="oto" left="+=800" time=7000 opacity=0]
 ;==============================================================================
 ;【立ち絵】主人公：驚き
 [主人公驚]
@@ -206,12 +206,15 @@
 [wa]
 ;念のためにアニメ消去
 [stopanim name=oto]
+[iscript]
+$('.oto').remove();
+[endscript]
 ;セーブボタン解除
 [layopt layer=fix visible=true]
 ;窓から見た白っぽいミルクホール_ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
 ;jｓYiJｃｑRkkさんのピアノ画像、立ち絵表示あり
-[image storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" layer=13]
+[image storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" layer=13 visible=true]
 テスト1[p]
 ;==============================================================================
 
@@ -219,12 +222,8 @@
 ;【立ち絵】藤枝 微笑み
 [藤枝ベース私服]
 [藤枝微笑み]
-テスト2[p]
 [freeimage layer=13 time=300]
-テスト3[p]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
-;透過画像消去
-[freeimage layer=1 time=50]
 ;================================
 
 #
