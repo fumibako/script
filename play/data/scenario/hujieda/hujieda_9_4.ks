@@ -214,7 +214,7 @@ $('.oto').remove();
 ;窓から見た白っぽいミルクホール_ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
 ;jｓYiJｃｑRkkさんのピアノ画像、立ち絵表示あり
-[image storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" layer=13 visible=true]
+[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" layer=13]
 テスト1[p]
 ;==============================================================================
 
@@ -223,7 +223,6 @@ $('.oto').remove();
 [藤枝ベース私服]
 [藤枝微笑み]
 [freeimage layer=13 time=300]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
 ;================================
 
 #
@@ -259,11 +258,11 @@ $('.oto').remove();
 沈んでいく。[p]
 
 ;[whosay name=時子]
-――　深入りは良くないと思いますわ[p]
+;――　深入りは良くないと思いますわ[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目大]
-(胸が苦しい、少しでもいいの)［p］
+(胸が苦しい、少しでもいいの)[p]
 [主人公目閉]
 (――1度きりでいい、 お会いしたい)[p]
 
