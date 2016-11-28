@@ -71,15 +71,18 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう」[p]
 ;==================================幕間==================================================
+#
 ;機能ボタン非表示
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/housoukyoku.jpg" time=1500 visible=true]
 [主人公退場]
+;【背景】放送局
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/housoukyoku.jpg" time=50]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;ラジオ放送局
 [イベントシーン構築ボタン無し版枠茶色]
+[freeimage layer=29 time=300]
 ;機能ボタン表示
 [layopt layer=message0 visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -111,8 +114,6 @@
 [sp]日々新聞に目を通し[r]
 沢山の洋書を読みながら[r]
 私は殿下のことを想っておりました。[p]
-
-
 [sp]現首相はデモクラシーという[r]
 民主化運動を推進し[r]
 普通選挙制度や男女平等、[r]
@@ -122,7 +123,6 @@
 [r]
 [sp]ですが殿下はここで折られる方でありません[r]
 [sp]私は殿下を信じております。[p]
-
 [sp]どうか信じた道を突き進んでください。[r]
 [r]
 [sp]またどうかお体を大切になさってくださいね[r]
@@ -156,8 +156,9 @@
 ;【立ち絵】葛城宮　伏目
 [葛城宮真剣]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-（薔薇園での彼女を見て私が守りたいだけの女性ではないと気付いた。[r]
-[sp]彼女のためにもっと私も強くなろう）[p]
+（薔薇園での彼女を見て、私が守りたいだけの女性ではないと気付いた）[p]
+
+（彼女のためにもっと私も強くなろう）[p]
 
 ;【立ち絵】葛城宮　目閉じ
 [葛城宮目閉じ]
