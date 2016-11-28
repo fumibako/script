@@ -80,7 +80,7 @@
 #
 広い店内の奥にはピアノが置かれおり、[r]
 私は椅子に座ると、ピアノを奏でている方の横顔を見つめた。[p]
-;==============================================================================
+;=============================ピアノを弾くシーン=================================================
 [layopt layer=fix visible=false]
 ;横顔をみている＞＞ピアノ表示する_タイムは調整中
 ;準備中の上にのせて
@@ -88,7 +88,7 @@
 ;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
 ;ピアノベース表示 まぎらわしいのでimage
-[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true]
+[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true width=960 height=680]
 [藤枝ベース私服]
 [藤枝微笑み]
 ;[藤枝アップ]を確認中
@@ -114,6 +114,7 @@
 ;SE拍手長め
 ;ピアノ画像消去
 [freeimage layer=13 time=50]
+[藤枝退場]
 [freeimage layer=29 time=50]
 ;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの
 [暗転]
@@ -131,6 +132,7 @@
 ;==============================================================================
 ;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
+[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg"]
 ;==============================================================================
 ;【立ち絵】主人公：微笑み頬染
 [主人公ほほえみ]
@@ -145,7 +147,6 @@
 
 ;====================ふわっと===========================
 ;【立ち絵】藤枝：微笑み
-[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg"]
 [藤枝ベース私服]
 [藤枝笑顔大]
 [freeimage layer=13 time=400]
@@ -235,11 +236,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 #
+;==============================================================================
 ;ずっと立っている状態になってしまいますので退場します
 [藤枝退場準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg"]
-
-;ここに藤枝アップでピアノをおきたくのはいかがでしょうか
-
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
+;==============================================================================
 [whosay name="文矢" color="#538a8a"]
 「……なんだか親しそうだったけど[r]
 [sp]本当は、知り合いなんじゃないのかい？」[p]
@@ -252,10 +253,35 @@
 「そ、そんな事より曲を聴きましょう」[p]
 [主人公頬染め]
 
+;===============================ピアノを弾くシーン===============================================
+[layopt layer=fix visible=false]
+;横顔をみている＞＞ピアノ表示する_タイムは調整中
+;準備中の上にのせて
+[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
+;【背景】ミルクホール店内ピアノ
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
+;ピアノベース表示 まぎらわしいのでimage
+[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true width=960 height=680]
+[藤枝ベース私服]
+[藤枝微笑み]
+;[藤枝アップ]を確認中
+[freeimage layer=29 time=600]
+[藤枝目閉じ]
+[layopt layer=fix visible=true]
+;==============================================================================
 #
 藤枝様の弾くエリーゼのためには、今まで聴いたことがある[r]
 どのピアノの音色よりも、ずっと柔らかく滑らかで[r]
 美しく切ない響きだった。[p]
+;==============================================================================
+[表示準備 storage="bg/anten.jpg" layer=29 time=1300]
+;ピアノ画像消去
+[freeimage layer=13 time=50]
+[藤枝退場]
+;【背景】客席
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
+[freeimage layer=29 time=50]
+;==============================================================================
 
 [whosay name="店員"]
 「もうお飲み物はのまれましたね。[r]
