@@ -119,7 +119,7 @@
 ;【背景】町
 ;[preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
 ;【背景】皇室手紙
-[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_tegami_kousitsu_akabudou.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_tegami_kousitsu_akabudou.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
