@@ -185,7 +185,7 @@
 ;【背景】窓
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho_ru4.jpg" time=1000]
 ;【アニメイメージ】キラキラ透過素材 layer=1
-[image name=oto storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=300 left=-300 visible=true]
+[image name=oto storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=600 left=-300 visible=true]
 ;==============================================================================
 ;背景窓　
 #
@@ -193,9 +193,7 @@
 ;==============================================================================
 ;音の奔流アニメ
 [layopt layer=fix visible=false]
-[anim name=oto left="+=600" time=5000 effect=easeInCirc opacity=0]
-[wa]
-[layopt layer=fix visible=true]
+[anim name=oto left="+=700" time=4000 effect=easeInCirc opacity=0]
 ;==============================================================================
 ;【立ち絵】主人公：驚き
 [主人公驚]
@@ -204,6 +202,8 @@
 ;～圧倒されてしまいそう　～しまうわ　　または地の文
 [sp]それになんて綺麗で繊細な音を奏でてるのかしら）[p]
 ;==============================================================================
+[wa]
+[layopt layer=fix visible=true]
 [freeimage layer=1 time=50]
 ;窓から見た白っぽいミルクホール_ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
