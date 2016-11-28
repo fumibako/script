@@ -75,7 +75,10 @@
 ;機能ボタン非表示
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
+[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/housoukyoku.jpg" time=1500 visible=true]
+;クレジット表示
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [主人公退場]
 ;【背景】放送局
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/housoukyoku.jpg" time=50]
@@ -174,16 +177,26 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:演説画像
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/enzetu.jpg" time=1000 visible=true]
+;再配布状態になるのでクレジットを表示
+[mtext name=ct text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 [葛城宮退場]
-;裏で表情リセット
-;メッセージレイヤを全画面用に設定変更!!!!opacity=240!!!
-[position left=200 width=700 height=530 top=110 page=fore margint="50" opacity=240]
+;裏で退場
+[iscript]
+$('.ct').remove();
+[endscript]
+;クレジットのみ消去
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50" opacity=0]
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]　
 ;テキスト全画面
 [font color=white size=27]
+;暗くする
+[iscript]
+$('.29_fore').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)','-moz-filter':'brightness(0.5)','-ms-filter':'brightness(0.5)'});
+[endscript]
 ;==========================スクリプトここまで=========================================================
 [sp]「ラジオをお聞きの国民の皆様方[r]
 此度の海軍高官の不祥事を私は誠に申し訳なく[r]
@@ -236,7 +249,11 @@
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
-;メッセージレイヤを会話窓用に設定変更 !!!!opacity=0
+;戻す
+[iscript]
+$('.29_fore').css({'filter':'brightness(0.0)','-webkit-filter':'brightness(0.0)','-moz-filter':'brightness(0.0)','-ms-filter':'brightness(0.5)'});
+[endscript]
+;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50" opacity=0]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築ボタン無し版]
