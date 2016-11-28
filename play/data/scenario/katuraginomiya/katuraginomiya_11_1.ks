@@ -295,8 +295,10 @@
 
 （どんなにお手紙が遅くなっても[r]
 [sp]家族から反対されてもきっと私は殿下を信じている）[p]
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bara_image.jpg" time=1500 visible=true]
 [葛城宮退場]
-
+;いいシーンなのにパッパッと順番にきえるのを防止
+[freeimage layer=29 tim3=50]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝スクリプト担当＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;@jump storage="event.ks" target=*event_owari
