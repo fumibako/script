@@ -83,7 +83,7 @@
 ;=============================ピアノを弾くシーン　１シーンのみ==========================================
 [主人公退場]
 [layopt layer=fix visible=false]
-;会話ウィンドウ消去 メッセージあると何の画像かわからない　できれば合体画像があればいいです。
+;会話ウィンドウ消去 メッセージあると何の画像かわからない　できれば合体画像があればいいです。わがままです。
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
 ;メッセージレイヤを非表示
@@ -270,7 +270,7 @@ $('.oto').remove();
 [表示準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg" layer=29 time=1300]
 [藤枝退場]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
-[freeimage time=500]
+[freeimage layer=29 time=500]
 ;==============================================================================
 [whosay name="文矢" color="#538a8a"]
 「……なんだか親しそうだったけど[r]
