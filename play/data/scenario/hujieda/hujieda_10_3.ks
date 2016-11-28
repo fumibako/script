@@ -102,10 +102,26 @@
 [freeimage layer=29 time=600]
 [藤枝目閉じ]
 [wait time=100]
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;ピアノ消去する_タイムは調整中
+[表示準備 storage="bg/I9IhvvVdPo/bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1500]
+;SE拍手長め
+;ピアノ画像消去
+[freeimage layer=13 time=50]
+[藤枝退場]
+[freeimage layer=29 time=50]
+;=============================ピアノを弾くシーンおわり=================================================
+
+;=======================;会話ウィンドウ表示============================================================
+[chara_mod name="message_bg" storage=&f.message_storage time=300]
+;主人公復帰表情目閉じ　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
+[主人公目閉じ]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 [layopt layer=fix visible=true]
 @layopt layer=message0 page=fore visible=true
 ;==============================================================================
@@ -113,24 +129,16 @@
 その横顔は、以前、郵便が来る時間にこっそりと拝見した横顔と重なった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目閉じ
-[主人公目閉じ]
 [主人公眉通常]
 [主人公頬染め]
 （藤枝様……なのだわ）[p]
-
 #
 注文を終え、待っている間、お兄様と私はピアノを聴き、[r]
 周囲のお客様の方々も静かに曲を聴いている。[r]
 ピアノの響きが静謐な雰囲気を醸し出していた。[p]
 ;==============================================================================
-[表示準備 storage="bg/I9IhvvVdPo/bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
-;SE拍手長め
-;ピアノ画像消去
-[freeimage layer=13 time=50]
-[藤枝退場]
-[freeimage layer=29 time=50]
 ;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの
-[暗転]
+[chara_mod name="bg" storage="toumei.gif" time=1300]
 ;==============================================================================
 ;[SE拍手]長めがいいかもしれない
 [playse storage=hakushu.ogg loop=false ]
@@ -265,20 +273,10 @@
 「そ、そんな事より曲を聴きましょう」[p]
 [主人公頬染め]
 
-;===============================ピアノを弾くシーン===============================================
-[layopt layer=fix visible=false]
+;===============================ピアノを弾くシーン２===============================================
 ;横顔をみている＞＞ピアノ表示する_タイムは調整中
-;準備中の上にのせて
-[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
 ;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
-;ピアノベース表示 まぎらわしいのでimage
-[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true]
-[藤枝ベース私服]
-[藤枝微笑み]
-;[藤枝アップ]を確認中
-[freeimage layer=29 time=600]
-[藤枝目閉じ]
 ;【アニメイメージ】キラキラ透過素材 layer=1
 [image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1000 left=-300 visible=true]
 ;アニメ中にセーブさせない
@@ -300,14 +298,10 @@ $('.oto').remove();
 ;セーブボタン解除
 [layopt layer=fix visible=true]
 [表示準備 storage="bg/anten.jpg" layer=29 time=1300]
-;ピアノ画像消去
-[freeimage layer=13 time=50]
-[藤枝退場]
 ;【背景】客席
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
 [freeimage layer=29 time=50]
 ;==============================================================================
-
 [whosay name="店員"]
 「もうお飲み物はのまれましたね。[r]
 [sp]そろそろお時間ですので」[p]
