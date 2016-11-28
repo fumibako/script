@@ -1,16 +1,29 @@
 ;7回目イベント
-;【背景】バラ園
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
+;【背景】バラ園
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
+[イベントシーン構築ボタン無し版]
+;登場人物の設定
+[主人公ポーズ通常]
+[主人公通常]
+[主人公目閉]
 [葛城宮ベース私服]
 ;【立ち絵】葛城宮　通常
+[葛城宮通常]
+#
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
+
+;[葛城宮ベース私服]
+;【立ち絵】葛城宮　通常　
 [葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「待たせたかな？」[p]
@@ -25,7 +38,8 @@
 [主人公困り]
 ;【立ち絵】主人公　心配そう
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いいえ、さほどまっておりませんわ」[r]
+「いいえ、さほどまっておりませんわ」[p]
+
 （葛城宮さま少しおやつれになった？）[p]
 ;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -49,10 +63,10 @@
 ;【立ち絵】葛城宮　通常
 [葛城宮目を閉じる]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「君にこんな無様な姿を[r]
-[sp]見せたくなかった[r]
-[sp]私もけじめをつけようと思う[r]
-[sp]君との婚約を解消する」[p]
+「君にこんな無様な姿を見せたくなかった。[r]
+[sp]……私もけじめをつけようと思う」[p]
+
+「君との婚約を解消する」[p]
 
 ;【立ち絵】主人公 驚き
 [主人公驚]
@@ -60,17 +74,16 @@
 「！？」[p]
 
 #
-頭が真っ白になって言葉につまる[r]
+頭が真っ白になって言葉につまる。[p]
+[主人公口通常]
 言葉を理解し、拒絶されたとわかるまで[r]
 数秒かかった。[p]
 
 ;【立ち絵】主人公 悲しみ
 [主人公憂い]
 [主人公口開]
-「私はこんな時こそ殿下を[r]
-[sp]お支えしたいと思っていました[r]
-[sp]けれど私では苦しいときを[r]
-[sp]分かち合えないのですか？」[p]
+「私はこんな時こそ殿下をお支えしたいと思っていました。[r]
+[sp]けれど私では、苦しいときを分かち合えないのですか？」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲
