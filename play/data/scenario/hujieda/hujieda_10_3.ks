@@ -131,7 +131,7 @@ $('.junbi_girl').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目閉じ
 [主人公眉通常]
-[主人公目閉じ]
+[主人公目閉]
 （藤枝様……なのだわ）
 [p]
 #
@@ -185,7 +185,7 @@ $('.oto').remove();
 「ありがとうございます。[r]
 [sp]手紙まで頂けるなんて……光栄です。[r]
 [sp]常連の方ではないようですが、どこかでお会いしましたか？」[p]
-
+#
 ;【立ち絵】主人公：目伏せ頬染
 [主人公伏目]
 [主人公眉下げ下]
@@ -211,7 +211,9 @@ $('.oto').remove();
 ;【立ち絵】藤枝：驚き瞬き１回
 [藤枝伏目パチ1回]
 
+
 #
+[藤枝口通常]
 ３秒ぐらいの間だったかもしれないけれど[r]
 大きく目を開けて藤枝様は私を見つめた後、穏やかだけれど[r]
 切なげに目を細めた。[p]
@@ -254,6 +256,7 @@ $('.oto').remove();
 [藤枝憂い]
 [藤枝口笑顔]
 「貴方も席へどうぞ」[p]
+#
 [藤枝効果消]
 [藤枝通常]
 [藤枝目閉じ]
@@ -306,53 +309,65 @@ $('.oto').remove();
 [iscript]
 $('.oto').remove();
 [endscript]
-;セーブボタン解除
-[layopt layer=fix visible=true]
 [表示準備 storage="bg/anten.jpg" layer=29 time=1300]
 ;【背景】客席
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
 [freeimage layer=29 time=50]
+;セーブボタン解除
+[layopt layer=fix visible=true]
 ;==============================================================================
 [whosay name="店員"]
-「もうお飲み物はのまれましたね。[r]
+「もうお飲み物は、のまれましたね。[r]
 [sp]そろそろお時間ですので」[p]
 
 [whosay name="文矢" color="#538a8a"]
 「[名前]、行こう」[p]
-
+#
 ;【立ち絵】主人公：目伏せ
 [主人公目閉じ]
 [主人公眉下げ下]
 [主人公頬染め]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ええ」[p]
-
 （もっと聴いていたかったわ）[p]
 [主人公退場]
 #
-;【テキスト全画面】
-[テキスト全画面白文字]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】黒茶・和紙風背景に白文字  [テキスト全画面白文字暗]裏で画面構成bg_prologue_dark.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】背景:レトロな喫茶店（玄関）
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg" time=50]
+[eval exp="f.haikei_credit='まだないです'"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+;【テキスト全画面】[テキスト全画面白文字]
+
 閉店後[p]
 
-;背景:レトロな喫茶店============表示準備============================================
-[cm]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[layopt layer=message0 visible=false]
-[layopt layer=fix visible=false]
-[cm]
-[eval exp="f.haikei_credit='まだないです'"]
-[表示準備 storage="bg/I9IhvvVdPo/mirukugenkan.jpg" layer=29]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg" time=50]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[イベントシーン構築ボタン無し版枠茶色]
 [藤枝ベース私服]
 [藤枝通常]
-[メッセージウィンドウ上ボタン表示]
-[freeimage layer=29 time=500]
-[layopt layer=message0 visible=true]
+[freeimage layer = 29 time=1000]
+;機能ボタン表示
 [layopt layer=fix visible=true]
-;================================================================================
-
+[layopt layer=message0 visible=true]
+[eval exp="sf.FButton='ON'"]
+[イベントシーン構築ボタン無し版枠茶色]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプト・全画面表示からの復帰準備完了========================================
 [whosay name="店長"]
 「今日もお疲れ様だな。[r]
 [sp] お前さんのおかげで日曜日は大繁盛だ。[r]
