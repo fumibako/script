@@ -61,13 +61,18 @@
 私の手を取り手の甲へ接吻を落とし、[r]
 殿下は私を一度も振り返ることなく、薔薇園を後にしました。[p]
 
+;=================================================================
+;ボタン非表示
+[layopt layer=fix visible=false]
 ;すべて消えていく暗転
 [表示準備 storage="bg/anten.jpg" layer=29 time=1500]
 ;裏で背景変更
 [chara_mod name="bg" storage="toumei.gif" time=50]
 [主人公憂い]
-[freeimae layer=29 time=500]
-
+[freeimage layer=29 time=500]
+;ボタン表示
+[layopt layer=fix visible=true]
+;=================================================================
 ;【立ち絵】主人公 憂い
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 #
