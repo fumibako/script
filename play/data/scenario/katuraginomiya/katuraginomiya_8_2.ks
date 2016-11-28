@@ -1,27 +1,31 @@
 ;イベント3回目
 ;一定の淑女度、葛城宮一定の好感度
-[背景_庭]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*8_2 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
-[主人公目パチ1回]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
 #
-皇后様のお印入りの[r]
-簡単な挨拶と日時の書いてある[r]
-お茶事の招待状と[r]
-葛城宮殿下の手紙に目を通す[p]
+皇后様のお印入りの簡単な挨拶と日時の書いてある、[r]
+お茶事の招待状と葛城宮殿下の手紙に目を通す[p]
 
-[手紙]
 
+[手紙葛城宮 fumi_number=]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -47,30 +51,41 @@
 [r]
 謹言
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[手紙葛城宮読了 fumi_number=]
 [resetfont]
+
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「……」
-[主人公閉伏目パチ1回]
+「……」[p]
+[主人公伏目パチ1回]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢さまどうされますか？」[p]
 
-#心配そうに磯野が問い掛けている[p]
+#
+心配そうに磯野が問い掛けてきた。[p]
 
 ;【立ち絵】主人公困り目閉じ
-「招待を受けますわ。」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公眉困り]
+[主人公目伏]
+「招待を受けますわ」
+[主人公目閉]
+[p]
 
 ;【立ち絵】主人公 真剣
-「殿下がどんなに苦労して私を[r]
-[sp]婚約者候補の中に入れようと[r]
-[sp]して下さっている事がにわかります[r]
-[sp]殿下の期待を裏切るつもりはありません」[p]
+[主人公目伏]
+[主人公眉下げ下]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「殿下が、どんなに苦労して私を婚約者候補の中に[r]
+[sp]入れようとして下さっている事がにわかります」[p]
+[主人公目閉]
+「殿下の期待を裏切るつもりはありません」[p]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢様なら大丈夫ですお稽古でのお茶立てもお作法も[r]
+「お嬢様なら大丈夫です。 お稽古でのお茶立てもお作法も[r]
 [sp]身についておられますから」[p]
 ;@jump storage="event.ks" target=*event_owari
 
