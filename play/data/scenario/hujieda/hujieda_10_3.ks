@@ -291,21 +291,12 @@ $('.oto').remove();
 ;横顔をみている＞＞ピアノ表示する_タイムは調整中
 ;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=1300]
-;【アニメイメージ】キラキラ透過素材 layer=1
-[image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1500 left=-300 visible=true]
-;アニメ中にセーブさせない
-[layopt layer=fix visible=false]
-;【アニメ】音の奔流アニメ 右に移動left　速さtime 消える
-[anim name="oto" left="+=800" time=7000 opacity=0]
 ;==============================================================================
 #
 藤枝様の弾くエリーゼのためには、今まで聴いたことがある[r]
 どのピアノの音色よりも、ずっと柔らかく滑らかで[r]
 美しく切ない響きだった。[p]
 ;==============================================================================
-[wa]
-;念のためにアニメ消去
-[stopanim name=oto]
 [iscript]
 $('.oto').remove();
 [endscript]
