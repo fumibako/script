@@ -87,7 +87,7 @@
 ;背景変更
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
 ;ピアノベース表示
-[image storage="bg/B4nFWraU42/piano_base.png" layer=13　time=50]
+[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50]
 ;[藤枝ベース私服]
 ;[藤枝微笑み]
 ;[藤枝アップ]を確認中
