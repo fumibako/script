@@ -1,14 +1,29 @@
 ;背景：薔薇園のまま
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_1bad storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+;【背景】薔薇園 
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
+#
+[主人公ポーズ通常]
+[主人公通常]
+[主人公憂い]
 [葛城宮ベース私服]
+[プリロード画面消去]
+[葛城宮憂い]
+[メッセージウィンドウ上ボタン表示]
+;ここまでテスト用です
+;=====================ここからお芝居の幕引きです・テスト用です===============================
+*no_end
+;選択肢からここに飛んできます スクリプト担当以外消さないでください
+;・バットエンド（泣く）
+;=================================================================
 [葛城宮憂い]
 [主人公ポーズ片手]
 [wait time=10]
@@ -16,11 +31,8 @@
 [主人公涙]
 [wait time=10]
 
-;・バットエンド（泣く）
-
 #
-涙がとめどなく頬を伝い、[r]
-悲しみで胸がいっぱいにった[p]
+涙がとめどなく頬を伝い、悲しみで胸がいっぱいになった。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
@@ -31,9 +43,10 @@
 ;【立ち絵】葛城宮　通常
 [葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「君は私の夢を聞いてくれた[r]
-[sp]いつまでも私の心は君のものだ[r]
-[sp]ありがとう、[r]
+「君は私の夢を聞いてくれた。[r]
+[sp]いつまでも私の心は君のものだ」[p]
+
+「ありがとう、[r]
 [sp]――そしてさよなら[名前]殿」[p]
 
 ;【立ち絵】主人公 驚き
@@ -44,9 +57,9 @@
 ;【立ち絵】主人公 目閉じ
 [主人公目閉じ]
 [主人公涙流_目閉用]
+#
 私の手を取り手の甲へ接吻を落とし、[r]
-殿下は私を一度も振り返ることなく[r]
-薔薇園を後にしました。[p]
+殿下は私を一度も振り返ることなく、薔薇園を後にしました。[p]
 
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 
@@ -54,11 +67,10 @@
 [主人公ポーズ通常]
 ;【立ち絵】主人公 憂い
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+#
 [主人公憂い]
-私はいつまでも殿下の消えた背中を[r]
-追うことしかできませんでした[r]
-私にもっと強さがあれば[r]
-殿下は私を受け入れてくれたのでしょうか？[p]　
+私はいつまでも殿下の消えた背中を追うことしかできませんでした。[r]
+私にもっと強さがあれば、殿下は私を受け入れてくれたのでしょうか？[p]　
 
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -66,17 +78,15 @@
  [主人公目伏]
  [主人公眉下げ下]
 その後殿下は誰とも結婚せずに夢を現実にし、[r]
-私もその後誰とも結婚せず[r]
-男女平等をうたった運動に[r]
+私もその後誰とも結婚せず、男女平等をうたった運動に[r]
 参加するようになりました。[p]
 
 [fadeoutbgm time=3000]
 
 ;【立ち絵】主人公 目閉じ
 [主人公目閉じ]
-殿下と過ごした想い出は[r]
-心の中の宝石のように[r]
-キラキラといつまでも輝き続け[r]
+殿下と過ごした想い出は、[r]
+心の中の宝石のようにキラキラといつまでも輝き続け[r]
 私を支えてくれています[p]
 ;@jump storage="event.ks" target=*event_owari
 
