@@ -54,9 +54,10 @@
 ;【立ち絵】葛城宮　通常
 [葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「無事な顔を見れて嬉しい。[r]
+「無事な顔を見れて嬉しい」[p]
+
 [葛城宮真剣]
-[sp]あの従妹宮の事件以来ずっと心配していた[r]
+「あの従妹宮の事件以来、ずっと心配していた[r]
 [sp]しかし、今後あのような事件に二度と巻き込みたくない。[r]
 [sp]……社会の情勢も悪くなっている」[p]
 
@@ -96,6 +97,7 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ、そうだ」[p]
 
+[葛城宮退場]
 #
 胸がズキズキと痛んだ。[r]
 私は……
@@ -131,11 +133,19 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 ;【背景】バラ園
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
 [eval exp="f.haikei_credit='I9IhvvVdPo'"]
+[表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
 ;＝＝＝システムメッセージ。変更してください＝＝＝＝＝
 #
 泣いてしまった。[p]
+;＝＝＝システムメッセージ。変更してください＝＝＝＝＝
+
+;【立ち絵】葛城宮　
+[葛城宮ベース私服]
+[葛城宮憂い]
+[表示開始 time=300]
+
 ;no_endに飛びます
 @jump storage="katuraginomiya/katuraginomiya_11_1badED.ks" target=no_end
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -149,11 +159,17 @@
 ;【背景】バラ園
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
 [eval exp="f.haikei_credit='I9IhvvVdPo'"]
+[表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
 ;＝＝＝システムメッセージ。変更してください・・・＝＝＝＝＝
 #
 葛城宮様を問うことにした。[p]
-;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;＝＝＝システムメッセージ。変更してください＝＝＝＝＝
+;【立ち絵】葛城宮　
+[葛城宮ベース私服]
+[葛城宮真剣]
+[表示開始 time=300]
 
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 
 ;【立ち絵】主人公 悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -165,7 +181,7 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……今回の件で気づいたのだ[r]
 [sp]私は夢の為に多くの事を犠牲にして叶えるだろう」[p]
-
+[葛城宮伏目パチ1回]
 「…私と道を共にする事は君にとって茨の道で、[r]
 [sp]君に窮屈な生活を強いるだけではないのだ」[p]
 
@@ -173,7 +189,7 @@
 [葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「最初は君の楚々とした佇まいを見て好意を持った」[p]
-
+[葛城宮眉下げ]
 「手紙を交わし、いつのまにか[r]
 [sp]私にとってなくてはならない人となった」[p]
 [fadeoutbgm time=3000] 
