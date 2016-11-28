@@ -97,13 +97,15 @@
 ;ピアノベース表示 まぎらわしいのでimage
 [image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true]
 [藤枝ベース私服]
+[wait time=10]
 [藤枝微笑み]
 ;[藤枝アップ]を確認中
+[wait time=10]
 [freeimage layer=29 time=600]
 [藤枝目閉じ]
 [wait time=100]
 ;ピアノ消去する_タイムは調整中
-[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1500]
+[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=2000]
 ;SE拍手長め
 ;ピアノ画像消去
 [freeimage layer=13 time=50]
