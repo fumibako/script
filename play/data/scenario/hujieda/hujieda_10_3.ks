@@ -73,7 +73,7 @@
 ;クレジット[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
 [主人公通常]
-[freeimage layer=29 time=300]
+[freeimage layer=29 time=400]
 [layopt layer=fix visible=true]
 ;ふわっと表示依頼
 ;==============================================================================
@@ -81,18 +81,20 @@
 広い店内の奥にはピアノが置かれおり、[r]
 私は椅子に座ると、ピアノを奏でている方の横顔を見つめた。[p]
 ;==============================================================================
+[layopt layer=fix visible=false]
 ;横顔をみている＞＞ピアノ表示する_タイムは調整中
 ;準備中の上にのせて
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
-;背景変更
+;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
-;ピアノベース表示
-[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50]
-;[藤枝ベース私服]
-;[藤枝微笑み]
+;ピアノベース表示 まぎらわしいのでimage
+[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true]
+[藤枝ベース私服]
+[藤枝微笑み]
 ;[藤枝アップ]を確認中
-[freeimage layer=29 time=500]
+[freeimage layer=29 time=600]
 ;[藤枝目閉じ]
+[layopt layer=fix visible=true]
 ;==============================================================================
 #
 その横顔は、以前、郵便が来る時間にこっそりと拝見した横顔と重なった。[p]
@@ -113,12 +115,22 @@
 ;ピアノ画像消去
 [freeimage layer=13 time=50]
 [freeimage layer=29 time=50]
+;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの
+[暗転]
 ;==============================================================================
+;[SE拍手]長めがいいかもしれない
+[playse storage=hakushu.ogg loop=false ]
 #
 曲が終わると拍手が沸き上がる。[p]
+
+;==============================================================================
+[fadeoutse time=1000]
 #
 私は立ち上がり、笑顔で礼をする[r]
 藤枝様に花屋で買ったコリウスと手紙をそっと差し出した。[p]
+;==============================================================================
+;【背景】ミルクホール店内ピアノ
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
 ;==============================================================================
 ;【立ち絵】主人公：微笑み頬染
 [主人公ほほえみ]
