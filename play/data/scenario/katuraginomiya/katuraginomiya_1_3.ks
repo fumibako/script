@@ -243,6 +243,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer = 29 time=1000]
+[メッセージウィンドウ上ボタン表示]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
