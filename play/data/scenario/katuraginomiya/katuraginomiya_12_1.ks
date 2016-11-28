@@ -75,6 +75,8 @@
 [image layer=29 x=1 y=1 storage="bg/test_bg_sinbun.jpg" time=1000 visible=true]
 [wait time=10]
 ;テキスト全画面
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
 
@@ -94,9 +96,6 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [主人公憂い]
-
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
 [eval exp="f.haikei_credit='photo　by　ゆうあかり'"]
