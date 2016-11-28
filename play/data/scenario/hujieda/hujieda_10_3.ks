@@ -81,10 +81,15 @@
 広い店内の奥にはピアノが置かれおり、[r]
 私は椅子に座ると、ピアノを奏でている方の横顔を見つめた。[p]
 ;=============================ピアノを弾くシーン=================================================
+[主人公退場]
 [layopt layer=fix visible=false]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
-;横顔をみている＞＞ピアノ表示する_タイムは調整中
+;==========================
+;ピアノ表示する_タイムは調整中
 ;準備中の上にのせて
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
 ;【背景】ミルクホール店内ピアノ
@@ -97,6 +102,10 @@
 [freeimage layer=29 time=600]
 [藤枝目閉じ]
 [wait time=100]
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+[主人公ポーズ通常]
+[主人公通常]
 [layopt layer=fix visible=true]
 @layopt layer=message0 page=fore visible=true
 ;==============================================================================
