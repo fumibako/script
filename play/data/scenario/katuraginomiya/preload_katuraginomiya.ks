@@ -329,6 +329,8 @@
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true] 
 ;【背景】放送局
 [preload storage="data/fgimage/bg/I9IhvvVdPo/housoukyoku.jpg" wait=true] 
+;【背景】演説
+[preload storage="data/fgimage/bg/I9IhvvVdPo/enzetu.jpg" wait=true] 
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
