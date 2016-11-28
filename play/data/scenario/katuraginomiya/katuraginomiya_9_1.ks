@@ -414,10 +414,21 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]　
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+
 ;断るイベント
 whosay name=&sf.girl_namae color="#cf5a7f"] 
 「皆、私の意思を尊重してくれることに、感謝しています
