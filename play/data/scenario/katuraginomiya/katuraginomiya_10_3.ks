@@ -1,13 +1,23 @@
 ;6.5回目イベント　
 ;葛城宮から手紙
-[背景_庭]
+;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*10_3 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;【背景】主人公部屋昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+[主人公ポーズ通常]
+[主人公通常]
+#
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 [whosay name=磯野 color="dimgray"]
 「お嬢様、[r]
 [sp]葛城宮殿下からの手紙でございます」[p]
@@ -19,18 +29,20 @@
 [endif]
 
 #
-磯野は憂いた表情で私に手紙を差し出す[r]
-磯野も贈賄事件を重く受け止めている[p]
+磯野は憂いた表情で私に手紙を差し出す。[r]
+磯野も贈賄事件を重く受け止めている。[p]
+;ようだった。地の文の変化では…暫定
 
 [主人公ポーズ通常]
 [主人公憂い]
 [主人公口ほほえみ]
-[主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええ、ありがとう」[r]
-（多分良くないことが書かれてある[r]
-何が書いてあっても現実を受け入れるわ[r]
-殿下をお支えしたいと思ったもの）[p]
+「ええ、ありがとう」[p]
+[主人公伏目パチ1回]
+（多分良くないことが書かれてある)[p]
+[主人公目閉]
+(何が書いてあっても現実を受け入れるわ[r]
+[sp]殿下をお支えしたいと思ったもの）[p]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
@@ -65,23 +77,23 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 [手紙葛城宮読了 fumi_number=]
- 
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-[背景_庭]
-[主人公ポーズ通常]
+
 [主人公困り]
 [主人公目パチ1回]
 ;【立ち絵】主人公　困り
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
-「議員辞職！」[r]
-（やはり落ち込んでいられるのね[r]
+「議員辞職！」[p]
+
+（やはり落ち込んでいられるのね。[r]
+[sp]こんな時こそ傍にいてお支えしたい)[p]
 [主人公目閉じ]
-[sp]こんな時こそ傍にいてお支えしたい[r]
-[sp]殿下が自信を取り戻せるように……」[p]
+(殿下が自信を取り戻せるように……)[p]
+
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
