@@ -417,13 +417,16 @@
 ;////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】: レトロな喫茶店
 [preload storage="data/fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" wait=true]
+;【背景】:ミルクホール 立ち絵用　ピアノ
+[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;◆__◆__◆10_3に藤枝が表示されるためキャラロード終了◆__◆__◆
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
-;*
+*hujieda_bazaar_1
+*hujieda_bazaar_2
 ;*イベント名のラベルを追加していきます。予備
 ;=======================================================================================
 [layopt layer=29 visible=true]
@@ -432,8 +435,9 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
+;【背景】:ミルクホール 立ち絵用　ピアノ
+[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
+;まだない
 ;====================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
