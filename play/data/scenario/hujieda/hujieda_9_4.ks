@@ -215,7 +215,6 @@ $('.oto').remove();
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
 ;jｓYiJｃｑRkkさんのピアノ画像、立ち絵表示あり
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" layer=13]
-テスト1[p]
 ;==============================================================================
 
 ;========ふわっと表示============
