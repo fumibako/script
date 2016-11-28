@@ -276,6 +276,8 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】バラ園
 [preload storage="data/fgimage/bg/I9IhvvVdPo/baraen.jpg" wait=true]
+;【イメージ】バラ
+[preload storage="data/fgimage/bg/B4nFWraU42/bara_image.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
