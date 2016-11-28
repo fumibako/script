@@ -213,6 +213,11 @@
 [主人公眉困り]
 「私はあなたの夢の為なら、私も犠牲を払います。[r]
 [sp]殿下と苦しみを分かち合いたいのです」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 [主人公目伏]
 [主人公口開]
@@ -220,11 +225,7 @@
 [主人公口ムッ]
 [p]
 [主人公目閉じ]
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
+
 
 ;【立ち絵】葛城宮 真剣
 [葛城宮目閉じ]
@@ -295,14 +296,17 @@
 
 （どんなにお手紙が遅くなっても[r]
 [sp]家族から反対されてもきっと私は殿下を信じている）[p]
+#
 [image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bara_image.jpg" time=1500 visible=true]
 [葛城宮退場]
+[wait time=10]
 ;いいシーンなのにパッパッと順番にきえるのを防止
-[freeimage layer=29 tim3=50]
-
+[イベントシーン終了]
+[freeimage layer=29 time=600]
+[wait time=10]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝スクリプト担当＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;@jump storage="event.ks" target=*event_owari
-[イベントシーン終了]
+
 @jump storage="test_katuragi.ks"
 [s]
 
