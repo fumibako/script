@@ -94,13 +94,10 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　[p]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
-[主人公憂い]
-;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
-[eval exp="f.haikei_credit='photo　by　ゆうあかり'"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[主人公困り]
+[wait time=10]
+[主人公憂い]
 [freeimage layer = 29 time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
