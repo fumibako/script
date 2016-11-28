@@ -1,18 +1,26 @@
 ;8.5回目イベント
 ;葛城宮からの手紙
-[背景_庭]
+=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*2_2 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
+
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「葛城宮様からのお手紙です[r]
+「葛城宮様からのお手紙です。[r]
 [sp]やっと来ましたね」[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -22,7 +30,7 @@
 [endif]
 
 #
-磯野も明るい表情をしている[p]
+磯野も、明るい表情をしている。[p]
 
 ;【立ち絵】主人公 微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -64,7 +72,7 @@
 ;【立ち絵】主人公 目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
-「・・・・殿下」[r]
+「……殿下」[r]
 （本当に良かった）[p]
 
 [イベントシーン終了]
