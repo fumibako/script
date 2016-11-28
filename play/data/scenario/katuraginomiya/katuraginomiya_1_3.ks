@@ -177,8 +177,8 @@
 [wait time=10]
 [葛城宮退場]
 ;裏で表情リセット
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;メッセージレイヤを全画面用に設定変更!!!!opacity=240!!!
+[position left=200 width=700 height=530 top=110 page=fore margint="50" opacity=240]
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]　
@@ -236,8 +236,8 @@
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;メッセージレイヤを会話窓用に設定変更 !!!!opacity=0
+[position left=240 width=700 height=170 top=415 page=fore margint="50" opacity=0]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
