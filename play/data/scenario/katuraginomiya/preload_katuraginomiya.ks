@@ -327,6 +327,8 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true] 
+;【背景】放送局
+[preload storage="data/fgimage/bg/I9IhvvVdPo/housoukyoku.jpg" wait=true] 
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
