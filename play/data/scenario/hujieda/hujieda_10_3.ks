@@ -82,13 +82,15 @@
 私は椅子に座ると、ピアノを奏でている方の横顔を見つめた。[p]
 ;=============================ピアノを弾くシーン=================================================
 [layopt layer=fix visible=false]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
 ;横顔をみている＞＞ピアノ表示する_タイムは調整中
 ;準備中の上にのせて
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
 ;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
 ;ピアノベース表示 まぎらわしいのでimage
-[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true width=960 height=680]
+[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true width=1000 height=720]
 [藤枝ベース私服]
 [藤枝微笑み]
 ;[藤枝アップ]を確認中
@@ -96,6 +98,7 @@
 [藤枝目閉じ]
 [wait time=100]
 [layopt layer=fix visible=true]
+@layopt layer=message0 page=fore visible=true
 ;==============================================================================
 #
 その横顔は、以前、郵便が来る時間にこっそりと拝見した横顔と重なった。[p]
@@ -135,24 +138,23 @@
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg"]
 ;==============================================================================
+
+;======ふわっと==========
+;【立ち絵】藤枝：微笑み
+[藤枝ベース私服]
+[藤枝微笑み]
+[freeimage layer=13 time=400]
+;===========================
 ;【立ち絵】主人公：微笑み頬染
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「素敵な演奏でしたわ」[p]
 
 （すごく胸が高鳴っている）[p]
-
 #
 藤枝様はコリウスと手紙を受け取って言った。[p]
 [fadeoutbgm time=3000]
-
-;====================ふわっと===========================
-;【立ち絵】藤枝：微笑み
-[藤枝ベース私服]
 [藤枝笑顔大]
-[freeimage layer=13 time=400]
-;===============================================
-
 [whosay name="藤枝 肇" color=%mp.color] 
 「ありがとうございます。[r]
 [sp]手紙まで頂けるなんて……光栄です。[r]
