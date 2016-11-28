@@ -49,7 +49,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="test_event_1" text="イベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test_event_2" text="イベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test_event_3" text="イベント3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test8_2 text="8月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test8_2" text="8月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
