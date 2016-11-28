@@ -82,15 +82,15 @@
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;ラジオ放送局
 [イベントシーン構築ボタン無し版枠茶色]
+[葛城宮ベース軍服]
+[葛城宮微笑み]
 [freeimage layer=29 time=300]
 ;機能ボタン表示
 [layopt layer=message0 visible=true]
 [eval exp="sf.FButton='ON'"]
 [メッセージウィンドウ上ボタン表示]
-[葛城宮ベース軍服]
-[葛城宮微笑み]
 ;================================幕間おわり====================================================
-
+;幕間に設定済
 ;【立ち絵】葛城宮　ほほえみ
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……」[p]
@@ -148,7 +148,6 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「演説の内容はもう頭に入っている。[r]
 [sp]これは我が婚約者殿からの手紙だ」[p]
-
 [葛城宮眉下げ]
 [葛城宮目伏]
 （あなたのためなら強くなれる……か）[p]
@@ -157,14 +156,13 @@
 [葛城宮真剣]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 （薔薇園での彼女を見て、私が守りたいだけの女性ではないと気付いた）[p]
-
+[葛城宮目伏]
 （彼女のためにもっと私も強くなろう）[p]
 
 ;【立ち絵】葛城宮　目閉じ
 [葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-（ただ反発を繰り返し[r]
-[sp]意見を述べるのではなく、[r]
+（ただ反発を繰り返し、意見を述べるのではなく、[r]
 [sp]りに調和しながら指導力を付けたい）[p]
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
@@ -173,7 +171,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:演説画像
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo /enzetu.jpg"" time=1000 visible=true]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/enzetu.jpg" time=1000 visible=true]
 [wait time=10]
 [葛城宮退場]
 ;裏で表情リセット
