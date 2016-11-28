@@ -8,6 +8,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;【背景】バラ園
+[eval exp="f.haikei_credit='I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
 [イベントシーン構築ボタン無し版]
 ;登場人物の設定
@@ -21,8 +22,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-
-;[葛城宮ベース私服]
+;[葛城宮ベース私服]　幕間で設定
 ;【立ち絵】葛城宮　通常　
 [葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -97,11 +97,63 @@
 「ああ、そうだ」[p]
 
 #
-胸がズキズキと痛んだ
+胸がズキズキと痛んだ。[r]
 私は……
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;選択肢用の背景：(和紙風桜色はオープニングで使用) 
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;背景変更:和紙風 セピア色　こちらがよければコメントアウトを外して使用
+;[chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
+;[eval exp="f.haikei_credit=''"]
+;背景変更:和紙風 水色　上がよければコメントアウトをしてください
+[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;[link]タグでの選択肢例
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+[link target=*yes]問う。[endlink][r]
+[r][r][r]
+[link target=*no] 泣く。[endlink][r]
+;バットエンド
+[resetfont]
+[s]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+*no
+;画面を戻した後バットエンドに
+[cm]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+;【背景】バラ園
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
+[eval exp="f.haikei_credit='I9IhvvVdPo'"]
+;＝＝＝システムメッセージ。変更してください＝＝＝＝＝
+#
+泣いてしまった。[p]
+;no_endに飛びます
+@jump storage="katuraginomiya/katuraginomiya_11_1badED.ks" target=no_end
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+*yes
+;画面を戻した後下のシナリオい
+[cm]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+;【背景】バラ園
+[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
+[eval exp="f.haikei_credit='I9IhvvVdPo'"]
+;＝＝＝システムメッセージ。変更してください・・・＝＝＝＝＝
+#
+葛城宮様を問うことにした。[p]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 
-選択肢　・問う
-　　　　・泣く→バットエンド
 
 ;【立ち絵】主人公 悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -112,42 +164,41 @@
 [葛城宮真剣]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……今回の件で気づいたのだ[r]
-[sp]私は夢の為に多くの事を犠牲にして叶えるだろう[r]
-[sp]私と道を共にする事は君にとって茨の道で、[r]
+[sp]私は夢の為に多くの事を犠牲にして叶えるだろう」[p]
+
+「…私と道を共にする事は君にとって茨の道で、[r]
 [sp]君に窮屈な生活を強いるだけではないのだ」[p]
 
 ;【立ち絵】葛城宮 目閉じ
 [葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「最初は君の楚々とした佇まいを[r]
-[sp]見て好意を持った[r]
-[sp]手紙を交わし、いつのまにか[r]
-[sp]私にとってなくてはならない人となった[p]
+「最初は君の楚々とした佇まいを見て好意を持った」[p]
+
+「手紙を交わし、いつのまにか[r]
+[sp]私にとってなくてはならない人となった」[p]
 [fadeoutbgm time=3000] 
 ;【立ち絵】葛城宮 真剣
 [葛城宮憂い]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「君には幸せになって欲しい[r]
-[sp]私は君を訳もなく[r]
-[sp]幸せにできると思っていた……[r]
+[sp]私は君を訳もなく、幸せにできると思っていた……[r]
 [sp]恐れ知らずなただの子供だな」[p]
 
 ;【立ち絵】主人公 悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
-「私の幸せの為にと[r]
-[sp]おっしゃるのですか？」[r]
-（殿下は私が嫌いになったのではなく[r]
-[sp]やはり自信を失っているのだわ）[p]
+「私の幸せの為にとおっしゃるのですか？」[p]
+
+（殿下は私が嫌いになったのではなく、やはり自信を失っているのだわ）[p]
 
 ;【立ち絵】主人公 目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 [主人公眉困り]
-「私はあなたの夢の為なら[r]
-[sp]私も犠牲を払います[r]
-[sp]殿下と苦しみを分かち合いたいのです[r]
-[sp]私も強くなります！ですから！」[p]
+「私はあなたの夢の為なら、私も犠牲を払います。
+[sp]殿下と苦しみを分かち合いたいのです」[p]
+
+「私も強くなります！ですから！」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
@@ -158,10 +209,8 @@
 ;【立ち絵】葛城宮 真剣
 [葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「そのような事、[r]
-[sp]軽々しくいってはいけない[r]
-[sp]君は政界の闇も[r]
-[sp]宮中の厳しさも知らない」[p]
+「そのような事、軽々しくいってはいけない[r]
+[sp]君は政界の闇も、宮中の厳しさも知らない」[p]
 
 ;【立ち絵】主人公 通常口開け
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -179,38 +228,37 @@
 [主人公伏目]
 [主人公眉下げ下]
 [主人公口ほほえみ]
-「今の私は殿下が想っているほど[r]
-[sp]弱くもありません[r]
+「今の私は殿下が想っているほど、弱くもありません[r]
 [sp]……私が殿下をお慕いする気持ちはもう変わりませんわ[r]
 [sp]私を認めてください」[p]
 
 ;【立ち絵】葛城宮　驚き
 [葛城宮驚き]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「……私は君が泣くと思っていた[r]
-[sp]君を誤解していたようだ[r]
-[sp]君は芯が強のだな」[p]
+「……私は君が泣くと思っていた。[r]
+[sp]君を誤解していたようだ」[p]
+
+「君は芯が強いのだな」[p]
 
 ;【立ち絵】主人公　伏せ目口開け
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目伏柔]
 [主人公口ほほえみ]
 「ええ！　[r]
-[sp]私は貴方のように[r]
-[sp]強くなりたいと思いました[r]
+[sp]私は貴方のように強くなりたいと思いました。[r]
 [sp]だから泣いてられませんわ」[p]
 
 [whosay name="侍従"]
-「お取込みのところ[r]
-[sp]申し訳ございません[r]
+「お取込みのところ、申し訳ございません[r]
 [sp]殿下、そろそろ時間でございます」[p]
 
 ;【立ち絵】葛城宮　通常
 [葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「[名前]殿すまないな[r]
-[sp]今は少し忙しくしている[r]
-[sp]今は時間が取れないが[r]
+「[名前]殿すまないな。[r]
+[sp]今は少し忙しくしている」[p]
+
+「今は時間が取れないが、[r]
 [sp]また手紙を送るのでそれまで待ってほしい」[p]
 
 ;【立ち絵】主人公 微笑み
@@ -223,8 +271,10 @@
 （どんなにお手紙が遅くなっても[r]
 [sp]家族から反対されてもきっと私は殿下を信じている）[p]
 [葛城宮退場]
-;@jump storage="event.ks" target=*event_owari
 
+
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝スクリプト担当＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
