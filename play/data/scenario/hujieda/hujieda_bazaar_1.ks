@@ -1,144 +1,254 @@
 ;=============================================
 ;◆チャリティーバザー◆２月4週から３月3週まで琴パラが高い藤枝ルート
 ;これもイベントの中に組み込む方がよいかも？
-;============================================
-背景ミルクホール
-[イベントシーン構築枠茶色]
-
+;=======================お芝居の準備中です 男性モノローグ版=================================
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*11_3 storage="hujieda/preload_hujieda.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_hujieda.ks"]
+;【背景】背景ミルクホール
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版枠茶色]
+#
 [藤枝ベース私服]
 [藤枝通常]
-
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=========================================================================
+;早朝
 #
-開店前のミルクホールで
-ピアノを弾いていたら声をかけられた。
+開店前のミルクホールで、ピアノを弾いていたら声をかけられた。[p]
 
 [whosay name=財前美彬]
-「藤枝君、
-久しぶりと言うべきところでしょうか
-一段とピアノが上達しましたね」
+「藤枝君、久しぶりと言うべきところでしょうか[r]
+[sp]一段とピアノが上達しましたね」
+
+;フラグで地の文を変更。財前endクリアまたはセーブデータ上で財前の指定イベントをしている
+;フラグ名はスクリプト担当さまが変更お願いします。
+[if exp="f.zaimae_flag==true"]
+#
+声をかけてきたのは、僕の姉の元婚約者、財前さんであった。[p]
+[else]
+#
+;声をかけてきたのは、僕の姉の知人、財前さんであった。[p] 
+;設定していないので表示されません…設定される場合は変更をお願いします
+[endif]
 
 [藤枝困り]
-「財前さん……お久しぶりです
-またどうしてこのお店に？」
+「財前さん……お久しぶりです。[r]
+[sp]またどうしてこのお店に？」
 
 
 [whosay name=財前美彬]
-「ああ……過去の事は気にしていません。
-君に頼みたい事があります。
-今年もチャリティーバザーが開催するのを知ってますか？」
+「ああ……過去の事は気にしていません。[r]
+[sp]君に頼みたい事があります。
+[sp]今年もチャリティーバザーが開催するのを知ってますか？」
 
 [藤枝驚き]
-「いえ、今年は経済的に色々あって
-開催を危ぶまれいると聞きましたが
-開催されるんですか！」
-
+「いえ、今年は経済的に色々あって、開催を危ぶまれいると聞きましたが[r]
+[sp]開催されるんですか！」
 
 [whosay name=財前美彬]
-「その事で私も尽力しています。
-用というのはチャリティーバザー会場で
-ピアノを弾いて頂きたいのです」
+「その事で私も尽力しています。[r]
+[sp]用というのはチャリティーバザー会場で、ピアノを弾いて頂きたいのです」[p]
 
 [藤枝憂い]
-「チャリティーバザーは母がよく参加していましたし、
-協力したいですが、仕事があります」
+「チャリティーバザーは母がよく参加していましたし、[r]
+[sp]協力したいですが、仕事があります」
 
 [whosay name=財前美彬]
-「その事は私が話をつけましょう。」
+「その事は私が話をつけましょう」[r]
 
 [藤枝微笑み]
-「そこまでしてくださるなら
-喜んで協力しましょう」
+「そこまでしてくださるなら、喜んで協力しましょう」[p]
 
 [whosay name=財前美彬]
-「主催者の奥方達やバザー参加者でも
-２年前の演奏は語り草になり、
-もう一度聞きたいと仰る方もいます」
+「主催者の奥方達やバザー参加者でも、２年前の演奏は語り草になり、[r]
+[sp]もう一度聞きたいと仰る方もいます」[p]
 
 [藤枝困り]
-「けれど筝のを弾いた母が居ません。
+「けれど筝のを弾いた母が居ません。[r]
 [藤枝伏目]
-ああ……でも……」
+[sp]ああ……でも……」[p]
 
 [whosay name=財前美彬]
-「なんですか？」
+「なんですか？」[p]
 
 [藤枝目伏せ照れ]
-「弾いてくださる方に心当たりがあります」
+「弾いてくださる方に心当たりがあります」[p]
 
 [whosay name=財前美彬]
-「どちらの方ですか？」
+「どちらの方ですか？」[p]
 
 [藤枝通常]
-「[名前]様のご息女で、
-……財前さんもご存じの方ではないでしょうか」
+「[名前]様のご息女です、[r]
+[sp]……財前さんもご存じの方ではないでしょうか」[p]
 
 [whosay name=財前美彬]
-「彼女と知りいですか？ 」
+「彼女と知りいですか？ 」[p]
 
 [藤枝真剣]
-「今、
-彼女とお手紙を交わしています」
+「今、[r]
+[sp]彼女とお手紙を交わしています」[p]
 
 [whosay name=財前美彬]
-「そうですか。
-人の馴れ初めには興味ありませんが
-彼女のお父上は手紙を許しているのですか？」
+「そうですか。[r]
+[sp]人の馴れ初めには興味ありませんが、彼女のお父上は[r]
+[sp]手紙を許しているのですか？」[p]
 
 [藤枝憂い]
 「会う事は許されずお手紙を交わす事だけ
-許して頂いてます。」
+[sp]許して頂いてます。」[p]
 
 [whosay name=財前美彬]
-「……なるほど自由恋愛など
-はしたないとされていますからね」
+「……なるほど[r]
+[sp]自由恋愛など、はしたないとされていますからね」[p]
 
 #
-財前さんは少し思案していたが
-すぐに提案した。
+財前さんは少し思案していたが、すぐに提案した。[p]
 
 [whosay name=財前美彬]
-「彼女も筝の上達が早く得意だと聞いてます。
-私が計らいましょうか？」
+「彼女も筝の上達が早く得意だと聞いてます。[r]
+[sp]私が計らいましょうか？」[p]
 
 [藤枝驚き]
 「それは！」
 
 [whosay name=財前美彬]
-「チャリティーバザーを盛り上げるためです
-ですが自由恋愛に眉をひそめる方もいますので
-会場では親しそうにしないで下さい」
+「チャリティーバザーを盛り上げるためです。[r]
+[sp]ですが自由恋愛に眉をひそめる方もいますので、会場では[r]
+[sp]親しそうにしないで下さい」[p]
 
 [藤枝笑顔大]
-「はい！」
+「はい！」[p]
 
-;【テキスト全画面】黒茶・和紙風背景に白文字
-[テキスト全画面白文字]
-＃
-数日後
-
-背景庭
-[イベントシーン構築]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】黒茶・和紙風背景に白文字  [テキスト全画面白文字]裏で画面構成
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+[イベントシーン構築ボタン無し版]
+;裏で表情リセット
 [主人公ポーズ通常]
 [主人公通常]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+数日後[p]
 
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 [whosay name=磯野]
 「旦那様を通して財前様から
 お嬢様にチャリティーバザーに
-参加の有無の問い合わせがありました」
+参加の有無の問い合わせがありました」[p]
 
 [主人公ほほえみ]
 「ええ、昨日藤枝様から
 その事でお手紙と楽譜を頂いています。
-財前様からの紹介という形になるのですね」
+財前様からの紹介という形になるのですね」[p]
 
 [whosay name=磯野]
 「……当家の醜聞になるやもしれませんし
 旦那様の完全に藤枝様を認めた訳でもありません
-女中を控えさせて頂きます」
+女中を控えさせて頂きます」[p]
 
 [主人公目閉じ]
 [主人公眉下げ下]
 「ええ」
 (……けれどまた近く藤枝様に会える
-それに合奏がとても楽しみだわ)
+それに合奏がとても楽しみだわ)[p]
 
+;@jump storage="event.ks" target=*event_owari
+
+[イベントシーン終了]
+@jump storage="test_hujieda.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
