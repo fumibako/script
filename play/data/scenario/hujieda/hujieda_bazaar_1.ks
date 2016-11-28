@@ -1,10 +1,10 @@
-;=============================================
+;=======================================================================================
 ;◆チャリティーバザー◆２月4週から３月3週まで琴パラが高い藤枝ルート
 ;これもイベントの中に組み込む方がよいかも？
 ;=======================お芝居の準備中です 男性モノローグ版=================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*11_3 storage="hujieda/preload_hujieda.ks"]
+[call target=*hujieda_bazaar_1 storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -40,17 +40,17 @@
 
 [藤枝困り]
 「財前さん……お久しぶりです。[r]
-[sp]またどうしてこのお店に？」
+[sp]またどうしてこのお店に？」[p]
 
 
 [whosay name=財前美彬]
 「ああ……過去の事は気にしていません。[r]
 [sp]君に頼みたい事があります。
-[sp]今年もチャリティーバザーが開催するのを知ってますか？」
+[sp]今年もチャリティーバザーが開催するのを知ってますか？」[p]
 
 [藤枝驚き]
 「いえ、今年は経済的に色々あって、開催を危ぶまれいると聞きましたが[r]
-[sp]開催されるんですか！」
+[sp]開催されるんですか！」[p]
 
 [whosay name=財前美彬]
 「その事で私も尽力しています。[r]
@@ -154,7 +154,7 @@
 [freeimage layer = 29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[call target=*start storage="macro_tati_hujieda.ks"]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
