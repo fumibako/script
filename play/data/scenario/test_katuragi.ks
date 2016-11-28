@@ -74,6 +74,8 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="bazaar" text="バザーイベント" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+;[glink target="page_3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="page_1" text="前に戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 @jump target=common_page
 [s]
 
