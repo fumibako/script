@@ -1,18 +1,26 @@
 ;7.5回目イベント
-[背景_庭]
+=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*12_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
+[主人公ポーズ通常]
+[主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「葛城宮殿下は[r]
-[sp]手紙を送るといわれたのですよね？[r]
+「葛城宮殿下は、手紙を送るといわれたのですよね？[r]
 [sp]もうあれからひと月ですが」[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -23,15 +31,15 @@
 
 ;【立ち絵】主人公 目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公目閉じ]
+[主人公目伏]
 「忙しくされてるのよ[r]
-[sp]責任感の強いお方だから[r]
-[sp]水面下で動いて安定させようとしているのだわ[r]
-[sp]殿下を信じていますわ」[p]
+[sp]責任感の強いお方だから、水面下で動いて安定させようとして[r]
+いるのだわ」[p]
+[主人公目閉じ]
+「私は、殿下を信じています」[p]
 
 [whosay name=磯野 color="dimgray"]
-「では暫く[r]
-[sp]お手紙は来ないかも[r]
+「では暫く、お手紙は来ないかも[r]
 [sp]知れないですね」[p]
 
 [fadeoutbgm time=3000]
@@ -57,10 +65,25 @@
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[テキスト全画面白文字無背景]
-;[新聞]
-[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】新聞　bg/test_bg_sinbun.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:新聞
+[image layer=29 x=1 y=1 storage="bg/test_bg_sinbun.jpg" time=1000 visible=true]
+[wait time=10]
+[主人公憂い]
+[主人公ポーズ通常]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
+[eval exp="f.haikei_credit='photo　by　ゆうあかり'"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 
 [sp]内閣不信任決議案が可決し内閣総辞職に！[r]
 [r]
@@ -75,11 +98,20 @@
 内閣は総辞職に追い込まれた。[r]
  
 [sp]　　　　　　　　　　　　　　　　　　　　　　　[p]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;==========================スクリプト・全画面表示からの復帰準備完了========================================
+
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-[イベントシーン構築]
-[背景_庭]
 [主人公ポーズ通常]
 [主人公困り]
 [主人公伏目パチ1回]
