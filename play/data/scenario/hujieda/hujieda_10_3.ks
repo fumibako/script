@@ -139,7 +139,7 @@ $('.junbi_girl').remove();
 周囲のお客様の方々も静かに曲を聴いている。[p]
 ;==============================================================================
 ;【イメージ】キラキラ透過素材 layer=1
-[image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1300 left=1 visible=true]
+[image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=2000 left=1 visible=true]
 ;==============================================================================
 [主人公目閉じ]
 ピアノの響きが静謐な雰囲気を醸し出していた。[p]
@@ -147,7 +147,7 @@ $('.junbi_girl').remove();
 ;==============================================================================
 [iscript]
 $('.oto').remove();
-[endscript
+[endscript]
 ;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの
 [chara_mod name="bg" storage="toumei.gif" time=1300]
 ;==============================================================================
