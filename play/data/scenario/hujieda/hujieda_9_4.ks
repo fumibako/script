@@ -185,7 +185,7 @@
 ;【背景】窓
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho_ru4.jpg" time=1000]
 ;【アニメイメージ】キラキラ透過素材 layer=1
-[image name=oto storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=600 left=-300 visible=true]
+[image name=oto storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1000 left=-300 visible=true]
 ;==============================================================================
 ;背景窓　
 #
@@ -193,8 +193,8 @@
 ;==============================================================================
 ;アニメ中にセーブさせない
 [layopt layer=fix visible=false]
-;音の奔流アニメ
-[anim name=oto left="+=1000" time=4000 opacity=0]
+;【アニメ】音の奔流アニメ 右に移動left　速さtime 消える
+[anim name=oto left="+=800" time=4000 opacity=0]
 ;==============================================================================
 ;【立ち絵】主人公：驚き
 [主人公驚]
@@ -236,7 +236,7 @@
 [主人公眉下げ下]
 「私も藤枝様にお花とお手紙を渡せたらいいのに」[p]
 
-[藤枝退場準備 storage="bg/bg_fujieda_piano_0.jpg" time=300]
+[藤枝退場準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=300]
 [wait time=10]
 ;==============================================================================
 ;窓
