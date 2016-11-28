@@ -301,6 +301,7 @@
 #
 [layopt layer=fix visible=false]
 [image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bara_image.jpg" time=1500 visible=true]
+[wait time=10]
 [葛城宮退場]
 [wait time=10]
 [主人公退場]
