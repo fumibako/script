@@ -1,4 +1,4 @@
-;６回目イベント
+;６回目イベント　
 ;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -238,6 +238,7 @@
 [stopbgm]
 ;暗く全体消えていく演出
 [freeimage layer=29]
+[layopt layer=fix visible=true]
 
 ;@jump storage="event.ks" target=*event_owari
 
