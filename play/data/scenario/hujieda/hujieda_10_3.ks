@@ -80,10 +80,10 @@
 #
 広い店内の奥にはピアノが置かれおり、[r]
 私は椅子に座ると、ピアノを奏でている方の横顔を見つめた。[p]
-;=============================ピアノを弾くシーン=================================================
+;=============================ピアノを弾くシーン　１シーンのみ==========================================
 [主人公退場]
 [layopt layer=fix visible=false]
-;会話ウィンドウ消去
+;会話ウィンドウ消去 メッセージあると何の画像かわからない　できれば合体画像があればいいです。
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
 ;メッセージレイヤを非表示
@@ -119,8 +119,7 @@
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 [主人公ポーズ通常]
-[主人公通常]
-[主人公目閉じ]
+[主人公柔和ほほえみ１]
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
@@ -133,8 +132,8 @@ $('.junbi_girl').remove();
 ;【立ち絵】主人公：目閉じ
 [主人公眉通常]
 [主人公頬染め]
+[主人公目閉じ]
 （藤枝様……なのだわ）
-[主人公目伏柔]
 [p]
 #
 注文を終え、待っている間、お兄様と私はピアノを聴き、[r]
@@ -235,9 +234,9 @@ $('.oto').remove();
 ;【立ち絵】主人公：微笑み
 [主人公照れ目普通]
 [主人公口開]
-「ではエリーゼのためにを……[r]
-[sp] お恥ずかしながら、ピアノの曲はそんなに詳しくないのです[r]
-[sp] あ、もしかて貴方には簡単すぎる曲ですか？」[p]
+「では、"エリーゼのために"を……[r]
+[sp]お恥ずかしながら、ピアノの曲はそんなに詳しくないのです[r]
+[sp]あ、もしかて貴方には簡単すぎる曲ですか？」[p]
 [主人公口ほほえみ]
 
 ;【立ち絵】藤枝：微笑み
@@ -270,9 +269,11 @@ $('.oto').remove();
 「はい」[p]
 #
 ;==============================================================================
-;ずっと立っている状態になってしまいますので退場します
-[藤枝退場準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg"]
+;ずっと立っている状態になってしまいますので退場します 裏で退場＿大
+[表示準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg" layer=29 time=1300]
+[藤枝退場]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
+[freeimage time=500]
 ;==============================================================================
 [whosay name="文矢" color="#538a8a"]
 「……なんだか親しそうだったけど[r]
@@ -289,9 +290,9 @@ $('.oto').remove();
 ;===============================ピアノを弾くシーン２===============================================
 ;横顔をみている＞＞ピアノ表示する_タイムは調整中
 ;【背景】ミルクホール店内ピアノ
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=1300]
 ;【アニメイメージ】キラキラ透過素材 layer=1
-[image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1000 left=-300 visible=true]
+[image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1500 left=-300 visible=true]
 ;アニメ中にセーブさせない
 [layopt layer=fix visible=false]
 ;【アニメ】音の奔流アニメ 右に移動left　速さtime 消える
