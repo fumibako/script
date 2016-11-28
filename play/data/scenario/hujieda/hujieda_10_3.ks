@@ -288,9 +288,9 @@ $('.oto').remove();
 [主人公頬染め]
 
 ;===============================ピアノを弾くシーン２===============================================
-;横顔をみている＞＞ピアノ表示する_タイムは調整中
 ;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=1300]
+[image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=2000 left=1 visible=true]
 ;==============================================================================
 #
 藤枝様の弾くエリーゼのためには、今まで聴いたことがある[r]
@@ -300,6 +300,8 @@ $('.oto').remove();
 [iscript]
 $('.oto').remove();
 [endscript]
+;ボタン非表示
+[layopt layer=fix visible=false]
 [表示準備 storage="bg/anten.jpg" layer=29 time=1300]
 ;【背景】客席
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
@@ -351,12 +353,12 @@ $('.oto').remove();
 [call target=*start storage="macro_tati_hujieda.ks"]
 [藤枝ベース私服]
 [藤枝通常]
+[イベントシーン構築ボタン無し版枠茶色]
 [freeimage layer = 29 time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [layopt layer=message0 visible=true]
 [eval exp="sf.FButton='ON'"]
-[イベントシーン構築ボタン無し版枠茶色]
 [メッセージウィンドウ上ボタン表示]
 ;==========================スクリプト・全画面表示からの復帰準備完了========================================
 [whosay name="店長"]
