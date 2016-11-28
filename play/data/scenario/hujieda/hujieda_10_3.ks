@@ -110,7 +110,7 @@
 周囲のお客様の方々も静かに曲を聴いている。[r]
 ピアノの響きが静謐な雰囲気を醸し出していた。[p]
 ;==============================================================================
-[表示準備 storage="bg/I9IhvvVdPo/bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29　time=1300]
+[表示準備 storage="bg/I9IhvvVdPo/bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
 ;SE拍手長め
 ;ピアノ画像消去
 [freeimage layer=13 time=50]
