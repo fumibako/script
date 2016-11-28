@@ -53,26 +53,28 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 「！」[p]
-[葛城宮退場]
 ;【立ち絵】主人公 目閉じ
 [主人公目閉じ]
 [主人公涙流_目閉用]
+[葛城宮退場準備 storage="bg/I9IhvvVdPo/baraen.jpg" time=500]
 #
 私の手を取り手の甲へ接吻を落とし、[r]
 殿下は私を一度も振り返ることなく、薔薇園を後にしました。[p]
 
-[chara_mod name="bg" storage="toumei.gif" time=1500]
+;すべて消えていく暗転
+[表示準備 storage="bg/anten.jpg" layer=29 time=1500]
+;裏で背景変更
+[chara_mod name="bg" storage="toumei.gif" time=50]
+[主人公憂い]
+[freeimae layer=29 time=500]
 
-[イベントシーン構築]
-[主人公ポーズ通常]
 ;【立ち絵】主人公 憂い
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 #
-[主人公憂い]
 私はいつまでも殿下の消えた背中を追うことしかできませんでした。[r]
 私にもっと強さがあれば、殿下は私を受け入れてくれたのでしょうか？[p]　
 
-[chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
+[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【立ち絵】主人公 通常
  [主人公目伏]
