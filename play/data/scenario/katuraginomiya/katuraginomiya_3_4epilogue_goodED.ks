@@ -1,18 +1,22 @@
 ;goodエンドエピローグ
-;［背景玄関］
-[chara_mod name="bg" storage="bg/bg_genkan.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*3_4_nomal storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
+;【背景】玄関
+[chara_mod name="bg" storage="bg/bg_genkan.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
-
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 [whosay name=磯野 color="dimgray"]
 「お嬢様お元気で！」[p]
 
@@ -23,14 +27,14 @@
 [endif]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「体には気を付けて[r]
+「体には気を付けて。[r]
 [sp]殿下によくお仕えしなさい」[p]
 
 [主人公憂い]
 #
-今日お妃教育の為に宮中に入る事になった[r]
-[sp]今まで育った家を離れる[r]
-[sp]……寂しいという気持ちがあふれる[r]
+今日お妃教育の為に宮中に入る事になった。[p]
+[sp]今まで育った家を離れる。[r]
+[sp]……寂しいという気持ちがあふれる。[r]
 [sp]またお妃教育が終わったら結婚の儀までは帰るけれど[p]
 
 ;【立ち絵】主人公 目閉じ
@@ -38,22 +42,25 @@
 [主人公目閉じ]
 [主人公眉下げ下]
 「お父様、お母様、お兄様、お義姉様、磯野[r]
-[sp]今までありがとうございました[r]
-[sp]皆、私の誇りです！　[r]
+[sp]今までありがとうございました」[p]
+
+「皆、私の誇りです！　[r]
 [sp]皆、悲しそうにそうにしないで下さい」[p]
 
 ;【立ち絵】主人公 微笑み
 [主人公憂い]
 [主人公口開]
 [主人公涙]
-「私の新しい門出なのです[r]
-[sp]また会えることもあります[r]
-[sp]お妃教育が終わったら結婚の儀までは戻ってきます[r]
-[sp]沢山手紙を書きますだから皆祝福してください」[p]
+「私の新しい門出なのです。[r]
+[sp]また会えることもあります。[r]
+[sp]お妃教育が終わったら結婚の儀までは戻ってきます」[p]
+
+「沢山手紙を書きます。 だから皆、祝福してください」[p]
 
 #
-そういいながら私の目から涙がこぼれる[r]
-・・・・もうここは私の家でなくなる[p]
+そういいながら私の目から涙がこぼれる。[p]
+
+……もうここは私の家でなくなる[p]
 
 [whosay name="文矢" color="#538a8a"] 
 「[名前]、お前こそ私たちの誇りだ」[p]
@@ -68,20 +75,31 @@
 [主人公涙]
 [主人公目伏柔]
 [主人公口ほほえみ]
-[sp]頑張りますわ！[r]
-[sp]では行ってまいります！」[p]
+[sp]頑張りますわ！」[p]
+
+「では行ってまいります！」[p]
 
 #
-私は精一杯の笑顔でそう言って迎えの車に乗り込んだ[p]
-
-
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / ekken.jpg "]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
-[イベントシーン構築]
+私は精一杯の笑顔でそう言って、迎えの車に乗り込んだ。[p]
+;===============================================================
+[主人公退場]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg" time=1300]
+[表示準備 storage="bg/I9IhvvVdPo/ekken.jpg"]
+;主人公復帰表情目閉じ　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
+;主人公復帰表情消去"
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;====================
 [葛城宮ベース軍服]
 [葛城宮微笑み]
+[表示開始 time=300]
+;===============================================================
+
 ;【立ち絵】葛城宮 微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「お久しぶりにございます陛下[r]
