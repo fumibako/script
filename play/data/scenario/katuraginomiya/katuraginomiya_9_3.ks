@@ -368,35 +368,28 @@
 ;【SE】スズムシ（リーンリーン）
 ;[playse storage=mushi_suzumushi.ogg loop=false ]
 ;=========================================================================================
+;背景切り替わりでセーブ等はさせない
+[layopt layer=fix visible=false]
 ;背景切り替わってないときにメッセージ表示防止・次画像↓
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext name=".junbi_girl" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
-[freeimage layer=29]
-;背景切り替わりで表示セーブ等はさせない
 ;メッセージをもどします↓
 [イベントシーン構築ボタン無し版]
-[表示準備 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg"]
 ;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-;退場からの復帰主人公表示
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
 [主人公ポーズ通常]
+[wait time=10]
 [主人公伏目]
-;表情設定後・復帰主人公表示消す
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
-;同時表示をやってみましたがSE入れないと遅いだけになってしまったので順番に表示へ
-[メッセージウィンドウ上ボタン表示]
-;=========================================================================================
 ;【立ち絵】葛城宮 微笑み
 [葛城宮ベース軍服]
 [葛城宮笑顔大]
-[表示開始 time=200]
-;====================
+[freeimage layer=29]
+;ボタン表示
+[layopt layer=fix visible=true]
+[メッセージウィンドウ上ボタン表示]
+;=========================================================================================
 [主人公目パチ1回]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「今日は楽しかった。また近いうちに会おう」[p]
