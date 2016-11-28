@@ -62,7 +62,7 @@
 ;=============================================================
 ・主人公と葛城宮抱擁CG[p]
 ;【背景】主人公と葛城宮抱擁 まだない
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
 ;=============================================================
 ;【立ち絵】主人公 照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -111,9 +111,9 @@
 
 
 ;=============================================================
-・CGここまで　背景森林公園[p]
-;【背景】背景森林公園 まだない
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
+;CGここまで　背景森林公園[p]
+;【背景】背景森林公園 仮背景
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
 ;=============================================================
 
 [主人公ポーズ通常]
@@ -162,6 +162,7 @@
 
 [葛城宮退場]
 
+;=============================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
