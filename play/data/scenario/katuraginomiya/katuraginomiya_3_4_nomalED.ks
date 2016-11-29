@@ -10,7 +10,7 @@
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [表示準備 storage="bg/I9IhvvVdPo/kouenn.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -65,6 +65,7 @@
 ;主人公と葛城宮抱擁CG[p]
 ;【背景】主人公と葛城宮抱擁 仮
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
+;[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
 ;=============================================================
 ;【立ち絵】主人公 照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -117,6 +118,7 @@
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
+[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/kouenn.jpg"]
 ;=============================================================
 [葛城宮ベース私服]
