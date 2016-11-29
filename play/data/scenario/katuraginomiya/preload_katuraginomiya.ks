@@ -383,6 +383,11 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】公園
 [preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg" wait=true]
+;【背景】森林公園
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
+;[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg" wait=true]
+;【背景】CG
+[preload storage="data/fgimage/bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
@@ -399,6 +404,13 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】玄関
 [preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true]
+;【背景】謁見室
+[preload storage="data/fgimage/bg/I9IhvvVdPo/ekken.jpg" wait=true]
+;【背景】執務室
+;[preload storage="data/fgimage/bg/I9IhvvVdPo/situmusitu.jpg" wait=true]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/situmu.jpg" wait=true]
+;【背景】桜
+[preload storage="data/fgimage/bg/bg_sakura.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
