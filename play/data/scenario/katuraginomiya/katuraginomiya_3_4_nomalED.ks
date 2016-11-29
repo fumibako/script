@@ -60,9 +60,11 @@
 殿下は私を引き寄せ、ぎゅっと力強く抱きしめました[p]
 
 ;=============================================================
-・主人公と葛城宮抱擁CG[p]
-;【背景】主人公と葛城宮抱擁 まだない
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
+[葛城宮退場]
+;退場しないとＣＧ見れない
+;主人公と葛城宮抱擁CG[p]
+;【背景】主人公と葛城宮抱擁 仮
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
 ;=============================================================
 ;【立ち絵】主人公 照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -83,8 +85,8 @@
 「はい」[p]
 #
 私は殿下の背にそっと手をまわしました[p]
-[葛城宮効果消]
-[葛城宮目閉じ]
+;[葛城宮効果消]
+;[葛城宮目閉じ]
 ;【立ち絵】葛城宮 真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「やっと落ち着いた[r]
@@ -104,18 +106,23 @@
 [sp]ずっとお会いしたく思っていました」[p]
 
 ;【立ち絵】葛城宮 微笑み
-[葛城宮微笑み]
+;[葛城宮微笑み]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「私もずっと君に会いたかった。[r]
 [sp]左手を出してくれるか？」[p]
 
-
 ;=============================================================
-;CGここまで　背景森林公園[p]
-;【背景】背景森林公園 仮背景
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
+;CGここまで　背景森林公園[p]・・・だと立ち絵あるとみえないのでコメントアウト
+;【背景】背景森林公園 仮背景??
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
+;【背景】公園
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
+[表示準備 storage="bg/I9IhvvVdPo/kouenn.jpg"]
 ;=============================================================
-
+[葛城宮ベース私服]
+[葛城宮微笑み]
+[表示開始 time=300]
+;====================
 [主人公ポーズ通常]
 [主人公通常]
 [主人公目パチ1回]
