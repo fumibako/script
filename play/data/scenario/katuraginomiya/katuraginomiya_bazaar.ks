@@ -127,6 +127,7 @@
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 
 [主人公目パチ1回]
