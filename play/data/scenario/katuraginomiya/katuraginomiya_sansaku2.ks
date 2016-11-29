@@ -92,7 +92,7 @@
 ;【立ち絵】主人公驚
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
-（東帝國大学はこの国でも、 [ruby text=いち]一、[ruby text=に]二を争う名門大学のご出身で、[r]
+（東帝國大学はこの国でも、 [ruby text=いち]一、[ruby text=に]二を争う名門大学！[r]
 [sp]すごく頭のいい優秀な人なんだわ）[p]
 
 [whosay name="伊能洋匡" ]
