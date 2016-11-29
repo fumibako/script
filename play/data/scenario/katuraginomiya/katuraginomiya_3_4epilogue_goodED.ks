@@ -176,10 +176,10 @@ $('.junbi_girl').remove();
 
 [whosay name="今上帝"]
 「ああ、よろしく頼む」[p]
-[葛城宮退場]
 #
 ;===============================================================
-[chara_mod name="bg" storage="toumei.gif" time=1500]
+[葛城宮退場準備 storage="bg/anten.jpg" time=1500]
+[chara_mod name="bg" storage="toumei.gif" time=100]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 ;【立ち絵】主人公目閉じ
@@ -205,7 +205,7 @@ $('.junbi_girl').remove();
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[font color="#8d64492"]
+[font color="0x996600"]
 #
 国民の生活は豊かになった。[r]
 世界でもトップクラスの技術を開発し、[r]
@@ -214,12 +214,14 @@ $('.junbi_girl').remove();
 期待を買われ内閣総理大臣となった[p]
 [resetfont]
 ;===============================================================
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmusitu.jpg "]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmusitu.jpg"]
+[表示準備 storage="bg/I9IhvvVdPo/situmusitu.jpg" time=1500]
 [イベントシーン構築]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 ;【立ち絵】主人公目閉じ
 [主人公ポーズ通常]
+[主人公通常]
 [主人公目閉じ]
 ;主人公復帰表情消去"
 [iscript]
