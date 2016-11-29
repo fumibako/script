@@ -178,12 +178,19 @@ $('.junbi_girl').remove();
 「ああ、よろしく頼む」[p]
 #
 ;===============================================================
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
 [image name="anten" layer=29 storage="bg/anten.jpg" time=1500]
 [葛城宮退場]
+;指定　暗転
 [chara_mod name="bg" storage="toumei.gif" time=100]
 [iscript]
 $('.anten').remove();
 [endscript]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 ;【立ち絵】主人公目閉じ
@@ -308,11 +315,17 @@ $('.junbi_girl').remove();
 [r]
 あなたとともに時を紡いでいく紡いでいく[p]
 ;===============================================================
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
 [image name="anten" layer=29 storage="bg/bg_sakura.jpg" time=1500]
 [葛城宮退場]
 [主人公退場]
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [freeimage layer=29 time=100]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
 ;===============================================================
 
 
