@@ -216,7 +216,7 @@ $('.junbi_girl').remove();
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[font color="0x996600"]
+[font color="0x663300"]
 #
 国民の生活は豊かになった。[r]
 世界でもトップクラスの技術を開発し、[r]
@@ -244,9 +244,12 @@ $('.junbi_girl').remove();
 [主人公ほほえみ]
 [主人公眉下げ下]
 「お茶をお持ちしました。[r]
-[sp]忙しくされているのは分りますが、体をいたわりませんと」[p]
 [葛城宮ベース私服]
 [葛城宮通常]
+[表示開始 time=300]
+
+[sp]忙しくされているのは分りますが、体をいたわりませんと」[p]
+
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ、お茶を飲もう」[p]
