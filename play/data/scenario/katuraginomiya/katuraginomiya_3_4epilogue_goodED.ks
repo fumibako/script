@@ -225,8 +225,8 @@ $('.junbi_girl').remove();
 期待を買われ内閣総理大臣となった[p]
 [resetfont]
 ;===============================================================
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmusitu.jpg"]
-[表示準備 storage="bg/I9IhvvVdPo/situmusitu.jpg" time=1500]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
+[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg" time=1500]
 [イベントシーン構築]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
