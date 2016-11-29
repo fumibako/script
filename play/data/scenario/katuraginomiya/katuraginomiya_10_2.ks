@@ -114,7 +114,7 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】会議室（裏で画面構成）
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
-[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -164,6 +164,7 @@
 
 [whosay name="今原中将" color=%mp.color]
 「苦労知らずの青二才が！」[p]
+;机ドンSE
 「私は貴殿と違い、苦労してこの地位を手に入れた！[r]
 [sp]国を守るためにもにも金や裏の繋がりが必要なんだ[r]
 [sp]そんなことも分らないのか！」[p]
