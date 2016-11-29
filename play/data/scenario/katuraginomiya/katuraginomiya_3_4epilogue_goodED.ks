@@ -270,12 +270,11 @@ $('.junbi_girl').remove();
 [主人公憂い]
 #
 この十年間も激動の十年だった。[r]
-大地震は起こり、首都は壊滅的になった[r]
+大地震は起こり、首都は壊滅的になった。[r]
 [主人公目伏柔]
 [主人公眉下げ下]
 [主人公口ほほえみ]
-でも、[ruby text=ひと]人は、前に進む力を持ち、[r]
-諦めなければきっと未来は開ける。[p]
+でも、[ruby text=ひと]人は、前に進む力を持ち、諦めなければきっと未来は開ける。[p]
 
 ;【立ち絵】葛城宮 
 [葛城宮目閉じ]
@@ -304,7 +303,11 @@ $('.junbi_girl').remove();
 ―― きっとこれからも,
 [r]
 あなたとともに時を紡いでいく紡いでいく[p]
-[葛城宮退場]
+[葛城宮退場準備 storage="bg/bg_sakura.jpg" time=1500]
+[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+;完[p]
+[wait time=100]
+
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
