@@ -85,6 +85,7 @@
 ;===============================================================
 [主人公退場]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg" time=1300]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
 [表示準備 storage="bg/I9IhvvVdPo/ekken.jpg"]
 ;主人公復帰表情目閉じ　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
@@ -226,6 +227,7 @@ $('.junbi_girl').remove();
 [resetfont]
 ;===============================================================
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
 [表示準備 storage="bg/I9IhvvVdPo/situmu.jpg" time=1500]
 [イベントシーン構築]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
