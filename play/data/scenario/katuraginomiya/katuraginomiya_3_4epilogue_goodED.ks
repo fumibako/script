@@ -118,7 +118,7 @@ $('.junbi_girl').remove();
 [whosay name="今上帝"]
 「女性を避けていた、晴仁親王が結婚するから[r]
 [sp]どんな女性かと楽しみにしていたが[r]
-[sp]なるほど、納得した。　これほどの[ruby text=か]佳[ruby text=じん]人と思わなかった」[p]
+[sp]なるほど、納得した。 これほどの[ruby text=か]佳[ruby text=じん]人と思わなかった」[p]
 
 [whosay name="皇后"]
 「見かけによらず、芯の強いところもおありで、[r]
@@ -177,40 +177,55 @@ $('.junbi_girl').remove();
 [whosay name="今上帝"]
 「ああ、よろしく頼む」[p]
 [葛城宮退場]
-
+#
 ;===============================================================
 [chara_mod name="bg" storage="toumei.gif" time=1500]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
+;【立ち絵】主人公目閉じ
+[主人公ポーズ通常]
+[主人公目閉じ]
+;主人公復帰表情消去"
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;====================
 
 ;===============================================================
 ;【立ち絵】主人公目閉じ
-[主人公効果消]
-[主人公目閉じ]
 #
 それから月日は流れた。[p]
-
-
 私たちは無事に結婚し、殿下は衆議院や貴族院議員に[r]
 働きかけ制度を改革していく ――[p]
 
 ;【テキスト全画面】黒茶・和紙風背景に白文字
  [テキスト全画面白文字]
-ー10年後[p]
-
+―― 10年後[p]
+;===============================================================
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[font color="#8d64492]
+[font color="#8d64492"]
 #
 国民の生活は豊かになった。[r]
 世界でもトップクラスの技術を開発し、[r]
-発展した国となり、辞退しようとしたものの、殿下はその指導力と[r]
-国民からの人気と期待を買われ内閣総理大臣となった[p]
+発展した国となり、辞退しようとしたものの、[r]
+殿下はその指導力と国民からの人気と[r]
+期待を買われ内閣総理大臣となった[p]
 [resetfont]
+;===============================================================
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmusitu.jpg "]
 [イベントシーン構築]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
+;【立ち絵】主人公目閉じ
 [主人公ポーズ通常]
-[主人公通常]
-
+[主人公目閉じ]
+;主人公復帰表情消去"
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;===============================================================
 ;【立ち絵】主人公 困り顔
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
