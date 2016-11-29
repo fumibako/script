@@ -178,8 +178,12 @@ $('.junbi_girl').remove();
 「ああ、よろしく頼む」[p]
 #
 ;===============================================================
-[葛城宮退場準備 storage="bg/anten.jpg" time=1500]
+[image name="anten" layer=29 storage="bg/anten.jpg" time=1500]
+[葛城宮退場]
 [chara_mod name="bg" storage="toumei.gif" time=100]
+[iscript]
+$('.anten').remove();
+[endscript]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 ;【立ち絵】主人公目閉じ
@@ -303,11 +307,16 @@ $('.junbi_girl').remove();
 ―― きっとこれからも,
 [r]
 あなたとともに時を紡いでいく紡いでいく[p]
-[葛城宮退場準備 storage="bg/bg_sakura.jpg" time=1500]
+;===============================================================
+[image name="anten" layer=29 storage="bg/bg_sakura.jpg" time=1500]
+[葛城宮退場]
+[主人公退場]
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
-;完[p]
-[wait time=100]
+[freeimage layer=29 time=100]
+;===============================================================
 
+
+;===============================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
