@@ -466,16 +466,18 @@
 ;[chara_mod name="bg" storage="bg_preload_katuraginomiya.jpg" time=50]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;念のため初期化します_スクリプト担当さまにおまかせします
+;初期化と機能ボタンについて、ご配慮をありがとうございます。初期化は無しで大丈夫ですのでコメントアウトします(スクリプト担当
 ;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;[position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;会話ウィンドウ消去(透明画像に変更)
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
+;[chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;上に載っている画像が消えます。それまでに設定
 [freeimage layer = 29 time=1000]
 ;================================以降スクリプト担当====================================================
 ;機能ボタン表示_スクリプト担当さまにおまかせします
-[layopt layer=fix visible=true]
-[eval exp="sf.FButton='ON'"]
+;テストプレイで最後にチラッと機能ボタンが表示されるのが気になるためコメントアウトします。ここでは消して大丈夫です(スクリプト担当
+;[layopt layer=fix visible=true]
+;[eval exp="sf.FButton='ON'"]
 ;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
