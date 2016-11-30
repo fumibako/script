@@ -328,7 +328,6 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
 ;【背景】洋館居間[背景洋館居間]
 ;[chara_mod name="bg" storage="bg/room_zaizen_ima.jpg"]
 [preload storage="data/fgimage/bg/test_room_zaizen_ima.jpg" wait=true]
@@ -366,10 +365,8 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
+;【背景】町並み
+;[preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
