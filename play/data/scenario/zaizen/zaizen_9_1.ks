@@ -20,11 +20,7 @@
 [p]　
 ;簡単な地の文
 ;【SE】鈴虫の音
-;[playse storage=mushi_suzumushi.ogg loop=false ]
-[イベントシーン構築]
-[主人公ポーズ通常]
-[主人公通常]
-
+[playse storage=mushi_suzumushi.ogg loop=false ]
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
