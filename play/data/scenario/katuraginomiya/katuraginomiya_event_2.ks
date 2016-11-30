@@ -316,7 +316,7 @@
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
 [表示準備 storage="bg/I9IhvvVdPo/situmu.jpg" time=1500]
-[イベントシーン構築茶色枠]
+[イベントシーン構築枠茶色]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 ;===============================================================
@@ -347,7 +347,7 @@
 
 [葛城宮眉怒り]
 [葛城宮目伏]
-[葛城宮口開け]
+[葛城宮口開]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「柏木元大将は戦争の準備を始めるつもりだろう。[r]
 [sp]……火消の対応ばかりに追われても仕方ない[r]
@@ -356,7 +356,8 @@
 [whosay name="秘書" color=%mp.color]
 「難しいですが、働きかけてみましょう」[p]
 
-[葛城宮怒り]
+[葛城宮目閉じ]
+[葛城宮口ムッ]
 「ああ、頼んだ」[p]
 [葛城宮退場]
 
