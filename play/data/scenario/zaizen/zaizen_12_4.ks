@@ -1,20 +1,24 @@
-;=============================================
+;==============================================================================
 ;イベント7回目【財前の交渉】１２月４週
-;=============================================
-; 背景会議室
-;【背景】背景会議室
-;変更してください
-[chara_mod name="bg" storage="toumei.gif" time=500]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;=======================お芝居の準備中です=======================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_1bad2 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-;[主人公ポーズ通常][主人公通常]いりません
-;メッセージを男性モノローグに変更します　途中からだとおかしかった・・
-[イベントシーン構築枠茶色]
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】背景会議室　;変更してください
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版枠茶色]
+#
+;【立ち絵】財前：真剣　;変更してください
+[財前サイズ通常]
+[財前通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 ;【立ち絵】財前：真剣
 [whosay name="財前美彬" color="#7a65b2"]
@@ -190,12 +194,13 @@
 
 [イベントシーン構築枠茶色]
 ;【立ち絵】財前：微笑み
-（この手紙一つで心が[r]
-[sp] 癒されると感じている[r]
+（この手紙一つで心が癒されると感じている[r]
 [sp] ……自分が不思議だな）[p]
 
 [fadeoutbgm time=3000]
+[財前退場]
 
+;=============================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
