@@ -314,22 +314,44 @@
 ;[葛城宮退場準備 time=100]イベントおわりなのでフェードアウトは無し
 [葛城宮退場]
 [主人公退場]
-;===============================================================
+
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】黒茶・和紙風背景(暗)に白文字[テキスト全画面白文字暗]裏で画面構成bg_prologue_dark.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】執務室（裏で画面構成）
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
-[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg" time=1500]
-[イベントシーン構築枠茶色]
-[主人公退場]
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
-;===============================================================
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+数刻後[p]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更　ボタンなしで
+[イベントシーン構築ボタン無し版枠茶色]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[freeimage layer = 29 time=1000]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+
 [葛城宮ベース私服]
 [葛城宮通常]
-[表示開始 time=300]
+
 #
 今日は彼女にまた偶然出会えて私は上機嫌だったが、[r]
-悪い知らせを聞くことになる[r]
-ドアをノックして入れ、というと秘書の姿が見えた[p]
+悪い知らせを聞くことになる。[r]
+ドアをノックして入れ、というと秘書の姿が見えた。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】五色（重いムードに
