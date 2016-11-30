@@ -1,20 +1,24 @@
-;=============================================
+;================================================================================
 ;イベント6回目【散策イベント２】1１月４週
 ;町で噂を聞く
-;=============================================
-;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-;[eval exp="f.haikei_credit='----　by　----　------------ '"]
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_4_1 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 [whosay name="新聞社社員"]
 「号外！　号外！[r]
@@ -29,8 +33,7 @@
 [endif]
 
 #
-人々は足を止めて新聞を買い、[r]
-不安そうな顔つきでざわざわと[r]
+人々は足を止めて新聞を買い、不安そうな顔つきでざわざわと[r]
 話し合っている[p]
 
 [whosay name="町人女性"]
@@ -66,10 +69,16 @@
 [r]
 [sp]また首都を中心に取り付け騒ぎに及ぶ所もあり……[p]
 [resetfont]
+
+
+;====================================================================================
+;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-;[eval exp="f.haikei_credit='----　by　----　------------ '"]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 ;メッセージをもどします
 [イベントシーン構築]
+;====================================================================================
+
 #
 [cm]
 [主人公ポーズ通常]
@@ -231,9 +240,11 @@
 [sp] 機密はありますがそれ以外の事情なら[r]
 [sp] お話ししましょう」[p]
 
-;背景車の中
+;====================================================================================
+;【背景】車の中
 [chara_mod name="bg" storage="bg/zaizen_kuruma.jpg" time=50]
 ;[eval exp="f.haikei_credit='----　by　----　------------ '"]
+;====================================================================================
 #
 私は止まってあった財前様の車に乗り[r]
 運転手さんが車を走らせる[p]
@@ -317,6 +328,7 @@
 この騒ぎを収めるのは大変な事だわ）[p]
 
 
+;====================================================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
