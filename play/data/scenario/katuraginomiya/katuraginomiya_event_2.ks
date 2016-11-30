@@ -89,13 +89,15 @@
 ;【立ち絵】主人公 驚
 [主人公驚]
 「殿下は子供たちとお知り合いなのですか？」[p]
-[葛城宮微笑み]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
+
+[葛城宮微笑み]
+
 [主人公通常]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -328,6 +330,12 @@
 今日は彼女にまた偶然出会えて私は上機嫌だったが、[r]
 悪い知らせを聞くことになる[r]
 ドアをノックして入れ、というと秘書の姿が見えた[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
 
 ;【SE】ドアが開く
 [playse storage=door_open.ogg loop=false ]
