@@ -1,29 +1,32 @@
 ;=============================================
 ;イベント３回目【散策イベント１】10月1週、
 ;時子さんより財前の噂を聞く
-;=============================================
-;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*10_1 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-[p]
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
+#
+[主人公ポーズ通常]
+[主人公通常]
+[主人公憂い]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
+#
+町の賑やかさも、今の私の心を慰めてくれない[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】冬支度
 [playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
 [endif]
-
-[主人公ポーズ通常]
-[主人公憂い]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-#
-町の賑やかさも[r]
-今の私の心を慰めてくれない[p]
 
 [whosay name="三宮　時子" color="#c25232"]
 「[名前]さん 、ため息などついてどうしたのですか？」[p]
@@ -162,7 +165,7 @@
 「自信はありませんがもう一度[r]
 [sp] 財前様とゆっくりお話ししようと思います」[p]
 
-
+;=====================================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
