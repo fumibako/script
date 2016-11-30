@@ -1,24 +1,29 @@
 ;=============================================
-;イベント４回目【薔薇園でのデート】10月3週、
-;=============================================
-;【背景】[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;イベント４回目【薔薇園でのデート】10月3週、zaizen_bara.jpg
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*10_3 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 ;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（今日は財前様と[r]
-[sp] ゆっくりお話しできるわ……[r]
-[sp] 先日お手紙を頂いたけれど[r]
-[sp] やはり忙しいかたね）[p]
+（今日は財前様と、 ゆっくりお話しできるわ……[r]
+;[p]表情変更
+[sp] 先日お手紙を頂いたけれど、 やはり忙しいかたね）[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -29,10 +34,7 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
-;[テキスト全画面白文字]
-;#
 [手紙財前 fumi_number=]
-;[手紙]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]拝啓　秋麗の候、貴方様には一段とご清栄の由と存じます。[r]
@@ -59,7 +61,6 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-;[背景_庭]
 ;【立ち絵】主人公：真剣
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -75,17 +76,19 @@
 「はい、今行きます！」[p]
  [主人公口通常]
 
+[主人公目閉]
+;=========================================================================================================
 ;【背景】薔薇園
 [chara_mod name="bg" storage="bg/zaizen_bara.jpg" time=50]
+;クレジット
+;=========================================================================================================
 [主人公ポーズ通常]
 [主人公通常]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
+
 
 #
-薔薇の花々は咲き誇り[r]
-色とりどりの美しさをみせていた[r]
-私たちはゆっくりと歩き[r]
-財前様は私に気を遣うように話しかける[p]
+薔薇の花々は咲き誇り、色とりどりの美しさをみせていた。[r]
+私たちはゆっくりと歩き、財前様は私に気を遣うように話しかける[p]
 
 [財前サイズ隣に並ぶ]
 [財前ベーススーツ]
@@ -326,6 +329,7 @@
 [財前退場]
 ;薔薇園デート編終了
 
+;=========================================================================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
