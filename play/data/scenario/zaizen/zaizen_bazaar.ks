@@ -1,15 +1,27 @@
 ;=============================================
 ;◆チャリティーバザー◆２月１週から３月４週まで礼法が高い　財前ルート
-;=============================================
-;背景:町並み
+;=======================お芝居の準備中です==========================================
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*sansaku storage="zaizen/preload_zaizen.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 #
-日差しは少し暖かいけれど[r]
-まだ風は冷たい。[r]
-ほんのり花の匂いがする[p]
+日差しは少し暖かいけれど、まだ風は冷たい。[r]
+ほんのりと花の匂いがする。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
