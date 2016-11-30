@@ -88,6 +88,89 @@
 [主人公目閉じ]
 (殿下が自信を取り戻せるように……)[p]
 
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】黒茶・和紙風背景(暗)に白文字[テキスト全画面白文字暗]裏で画面構成bg_prologue_dark.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;【背景】会議室（裏で画面構成）
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+与党会議室[p]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更　ボタンなしで
+[イベントシーン構築ボタン無し版枠茶色]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;!!!幕間に設定!!!!
+;【立ち絵】葛城宮　
+［葛城宮ベース軍服］
+［葛城宮通常］
+;表示
+[freeimage layer = 29 time=1000]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+
+#
+汚職事件を理由に今原中将をはじめ、[r]
+軍国主義の者は除名処分が検討された。[p]
+
+［葛城宮目を閉じる］
+[whosay name="葛城宮　晴仁" color=%mp.color]
+「彼らは、汚職事件で墓穴を掘りました。[r]
+[sp]早急に対応したこともあって[r]
+[sp]内閣は総辞職の危機も回避されつつあります」[p]
+
+[whosay name="首相" color=%mp.color]
+「貴殿まで辞職することはありません。[r]
+[sp]なぜ辞職願を提出を？」[p]
+
+［葛城宮ため息］
+[whosay name="葛城宮　晴仁" color=%mp.color]
+「私も軍人で政治に関わるべきではないのです」[p]
+
+[whosay name="首相" color=%mp.color]
+「しかし、貴殿も[r]
+[sp]政治家として法を変え国を安定させたいと願い、[r]
+[sp]多くの法案を制定しようとしていました」[p]
+
+［葛城宮憂い］
+[whosay name="葛城宮　晴仁" color=%mp.color]
+「ですが、それは私の役目ではありません」[p]
+
+[whosay name="首相" color=%mp.color]
+「貴殿を見込んでいました。[r]
+[sp]貴殿は指導者としての才能があります。[r]
+[sp]辞職願はまだ受理は保留します」[p]
+
+［葛城宮驚き］
+[whosay name="葛城宮　晴仁" color=%mp.color]
+「首相！[p]
+［葛城宮微笑み］
+[sp]お気持ちは嬉しいですが今は、[r]
+[sp]軍国主義に走る者たちを変えたいと思っています。」[p]
+
+[whosay name="首相" color=%mp.color]
+「健闘を祈っています」[p]
+
+［葛城宮目を閉じる］
+#
+夢を持っていた。　今志半ばで終わろうとしている[r]
+悔いはあるそれでも自分が決めた事だから潔く身を引こう[r]
+……そして彼女もこんな私に付き合う必要はない[p]
+
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
