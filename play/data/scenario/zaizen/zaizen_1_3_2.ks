@@ -1,18 +1,26 @@
 ;=============================================
 ;イベント８、８回目【新聞の記事に載る】１月３週　数日後　財前視点
-;=============================================
-;【背景】[背景洋館居間]
+;=======================お芝居の準備中です=======================================
+[stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】洋館居間
 ;変更してください↓
 ;[chara_mod name="bg" storage="bg/room_zaizen_ima.jpg"]
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築枠茶色]
-;[主人公ポーズ通常][主人公通常]
+[イベントシーン構築ボタン無し版枠茶色]
+#
+;【立ち絵】財前：真剣　;変更してください
+[財前サイズ通常]
+[財前通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 [whosay name="女中"]
 「美彬様、新聞をどうぞ」[p]
@@ -41,10 +49,13 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
+;===============================================================
 ;[新聞]
 [chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [テキスト全画面白文字無背景]
+;===============================================================
+
 [sp]国の根底を揺るがす[r]
 この銀行の取り付け騒ぎについて[r]
 多くの方が、恐慌状態となり、[r]
@@ -81,13 +92,18 @@
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-
-;【背景】[背景洋館居間]
-;変更してください↓
+;===============================================================
+;【背景】 洋館居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版枠茶色]
+#
+;【立ち絵】財前：驚　;変更してください
+[財前サイズ通常]
+[財前通常]
+[メッセージウィンドウ上ボタン表示]
+;===============================================================
 
-[イベントシーン構築枠茶色]
 ;【立ち絵】財前：驚
 [whosay name="財前美彬" color="#7a65b2"]
 （大切な方が銀行の頭取、[r]
@@ -116,7 +132,7 @@
 ーこの日を境に取り付け騒ぎが[r]
 沈静化していく[p]
 
-
+;===============================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
