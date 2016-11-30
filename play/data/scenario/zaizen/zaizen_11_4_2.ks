@@ -1,17 +1,22 @@
-;=============================================
+;================================================================================
 ;イベント6.6回目【財前への手紙】11月４週イベント６回目翌日
-;=============================================
-;【背景】[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_4storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-[主人公ポーズ通常] 
+;【背景】主人公邸_庭_昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
+[主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 ;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -35,13 +40,14 @@
 「今の所は大丈夫だそうです」[r]
 （けれど何があるかわからないわ）[p]
 
-
+;================================================================================
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 [テキスト全画面白文字無背景]
 ;[新聞]
 [chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;================================================================================
 [sp]実際にはまだ倒産してなかったが、大蔵大臣の[r]
 「志井銀行がとうとう倒産した」[r]
 という発言は波紋を呼び[r]
@@ -66,16 +72,18 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
-;[背景_庭]
+;================================================================================
+;【背景】主人公邸_庭_昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
 ;メッセージをもどします
 #
 [cm]
 [イベントシーン構築]
 [主人公ポーズ通常] 
 [主人公通常]
+;================================================================================
+
 
 ;【立ち絵】主人公：不安
 [主人公憂い]
@@ -124,7 +132,7 @@
 「でもきっと財前様なら[r]
 [sp] きっと道を切り開かれるわ」[p]
 
-
+;======================================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
