@@ -1,17 +1,23 @@
 ;=============================================
 ;イベント5.5回目【財前からの手紙】11月３週、
-;=============================================
-;【背景】[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_3 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-[主人公ポーズ通常] 
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】[背景_庭]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
+[主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 ;【立ち絵】主人公：微笑み
 [主人公目伏柔]
@@ -79,7 +85,7 @@
 ;【立ち絵】主人公：不安
 （景気が悪くなりつつあるというだけではないの？）[p]
 
-
+;=====================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
