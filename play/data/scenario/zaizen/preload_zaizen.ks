@@ -152,7 +152,7 @@
 ;【背景】玄関
 [preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true]
 ;【背景】パーティー会場
-[preload storage="data/fgimage/bgtest_zaizen_paty1.jpg" wait=true]
+[preload storage="data/fgimage/bg/test_zaizen_paty1.jpg" wait=true]
 ;【背景】洋館 
 [preload storage="data/fgimage/bg/zaizen_youkan.jpg" wait=true]
 ;【背景】パーティ会場の庭
