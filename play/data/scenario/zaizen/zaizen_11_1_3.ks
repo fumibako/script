@@ -1,18 +1,24 @@
-;【背景】～指定ありません　一時的に変更してます～
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_1_3 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+;【背景】パーティ会場の庭[背景_庭]　
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 ;好感度一定以上
 #
-財前様は私の手を解いて言った[p]
+財前様は私の手を解いて言った。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水
@@ -23,8 +29,7 @@
 ;【立ち絵】財前：冷ややか
 [whosay name="財前美彬" color="#7a65b2"]
 「[名前]さん、[r]
-[sp] 私の言いたいことは[r]
-[sp] 分ってますか？」[p]
+[sp] 私の言いたいことは分ってますか？」[p]
 
 ;【立ち絵】主人公：目伏せ落ち込み
 [主人公憂い]
@@ -172,6 +177,11 @@
 （手を繋ぎ隣に立っているのが[r]
 [sp] こんなにも嬉しい……）[p]
 
+;====================================================================================
+;【背景】パーティー会場
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;====================================================================================
 #
 階段を下り、パーティ会場に戻る[r]
 まだ余興の時間は[r]
@@ -202,15 +212,22 @@
 [主人公頬染め]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ……ではよろしくお願いします」[p]
-
-; 背景ホール
+;====================================================================================
+;【背景】シャンデリアで地の文
+;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;====================================================================================
 #
-財前様のリードは完璧だった[r]
-私はぎこちないながらも[r]
-足を動かし姿勢を整え[r]
-なんとかついていった[p]
+財前様のリードは完璧だった。[r]
+私はぎこちないながらも、足を動かし姿勢を整え[r]
+なんとかついていった。[p]
 
 [fadeoutbgm time=3000]
+;====================================================================================
+;【背景】ホール
+;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;====================================================================================
 
 ;【立ち絵】主人公：目伏せ頬染
 [主人公憂い]
@@ -247,7 +264,7 @@
 パーティは閉会の時間を迎え[r]
 私は財前様に送られ家に帰った[p]
 
-
+;====================================================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
