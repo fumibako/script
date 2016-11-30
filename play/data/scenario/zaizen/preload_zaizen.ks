@@ -28,10 +28,6 @@
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
-
-
-
-
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
@@ -48,7 +44,14 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
+[preload storage="data/fgimage/kuroda/base_haori.png"] 
+[preload storage="data/fgimage/kuroda/base_haori_hohosome.png"]
+
+;【背景】庭を明るめ加工（ふすまが開いて廊下の光が入る演出的な）
+[preload storage="data/fgimage/bg/room_niwa_akarui.jpg" wait=true]
+;【背景】庭園　料亭の庭２
+[preload storage="data/fgimage/bg/bg_teien_ishidatami.jpg" wait=true]
 
 ;========================================================================================
 ;財前立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
@@ -147,12 +150,10 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////////////////使用背景メモ///////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
-
-
-
-
-
+;【背景】主人公邸 庭の見える部屋：昼
+[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】バラ園
+[preload storage="data/fgimage/bg/zaizen_bara.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
