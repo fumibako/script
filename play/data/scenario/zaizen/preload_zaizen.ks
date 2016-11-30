@@ -349,8 +349,6 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
 
-
-
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
@@ -373,7 +371,7 @@
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
 *3_4_good 
-;*イベント名のラベルを追加していきます。
+;イベント名のラベルを追加していきます。
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -395,9 +393,27 @@
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
+*3_4_normal
+;イベント10回目【財前母の誕生日パーティ】3月4週、
+;================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;//////////////////////////使用背景メモ///////////////////////////////////////////
+;【背景】主人公邸 庭の見える部屋：昼
+[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】CGnomal
+[preload storage="data/fgimage/bg/zaizen_CGnomal.jpg" wait=true]
+;【背景】パーティー会場
+[preload storage="data/fgimage/bgtest_zaizen_paty1.jpg" wait=true]
 
-
-
+;=============================================================================
+@jump target=end_sub
+;[return]へGO　ここは、消さないでください　
+;以降は、無駄な読み込みはしない
+;=============================================================================
 
 
 
