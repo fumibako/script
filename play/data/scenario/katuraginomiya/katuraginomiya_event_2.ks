@@ -317,6 +317,7 @@
 [eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
 [表示準備 storage="bg/I9IhvvVdPo/situmu.jpg" time=1500]
 [イベントシーン構築枠茶色]
+[主人公退場]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 ;===============================================================
