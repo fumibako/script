@@ -3,7 +3,7 @@
 ;=======================お芝居の準備中です=======================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*11_1bad2 storage="zaizen/preload_zaizen.ks"]
+[call target=*12_4 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
