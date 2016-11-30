@@ -1,19 +1,26 @@
-;【背景】～指定ありません　一時的に書いてます。変更してください～
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_1bad2 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】パーティ会場の庭[背景_庭]　
+[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 ;【立ち絵】主人公：目伏せ悲しみ
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「……はい。そういたします」[r]
+「……はい。そういたします」[p]
 （お母様が心配だけれど財前様の為に[r]
 [sp] はそっとしておくべきなのだわ）[p]
 
@@ -50,11 +57,11 @@
 
 [テキスト全画面白文字]
 ー数年後[p]
-
-;洋館居間
+;====================================================
+;【背景】洋館居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
+;====================================================
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公憂い]
@@ -109,7 +116,7 @@
 
 ;bad2終わり
 
-
+;====================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
