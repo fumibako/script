@@ -165,6 +165,21 @@
 [preload storage="data/fgimage/bg/zaizen_paty_hikae.jpg" wait=true]
 ;【背景】シャンデリア
 ;【背景】ホール
+;【背景】洋館居間
+[preload storage="data/fgimage/bg/test_room_zaizen_ima.jpg" wait=true]
+;【背景】空
+[preload storage="data/fgimage/bg/bg_bluesky.jpg" wait=true]
+;==========================================================================
+@jump target=end_sub
+;[return]へGO　ここは、消さないでください
+;以降は、無駄な読み込みはしない
+;=========================================================================
+*11_1bad2
+;これは続きなのでテスト用ですね
+;==========================================================================
+;【背景】洋館居間
+[preload storage="data/fgimage/bg/test_room_zaizen_ima.jpg" wait=true]
+
 ;==========================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
@@ -187,6 +202,19 @@
 [preload storage="data/fgimage/bg/zaizen_gofuku.jpg" wait=true]
 ;【背景】港町的な背景
 [preload storage="data/fgimage/bg/zaizen_minato.jpg" wait=true]
+;======================================================================================
+@jump target=end_sub
+;[return]へGO　ここは、消さないでください
+;以降は、無駄な読み込みはしない
+;======================================================================================
+*11_1_bad1
+;これは続きなのでテスト用ですね
+;======================================================================================
+;【背景】パーティ会場の庭
+[preload storage="data/fgimage/bg/test_zaizen_paty1.jpg" wait=true]
+;【背景】空
+[preload storage="data/fgimage/bg/bg_bluesky.jpg" wait=true]
+
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
