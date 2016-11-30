@@ -311,6 +311,55 @@
 
 ;[葛城宮退場準備 time=100]イベントおわりなのでフェードアウトは無し
 [葛城宮退場]
+[主人公退場]
+;===============================================================
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
+[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg" time=1500]
+[イベントシーン構築茶色枠]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
+;===============================================================
+[葛城宮ベース私服]
+[葛城宮通常]
+[表示開始 time=300]
+#
+今日は彼女にまた偶然出会えて私は上機嫌だったが、[r]
+悪い知らせを聞くことになる[r]
+ドアをノックして入れ、というと秘書の姿が見えた[p]
+
+;【SE】ドアが開く
+[playse storage=door_open.ogg loop=false ]
+
+[whosay name="秘書" color=%mp.color]
+「殿下、柏木元大将が今原海相に接触したと、[r]
+[sp]報告がありました」[p]
+
+;【立ち絵】葛城宮 通常
+[葛城宮ため息]
+[whosay name="葛城宮　晴仁" color=%mp.color]
+「柏木元大将は戦争が自国に益をもたらすと勘違いしている。[r]
+[sp]しかも質の悪い事に退役した今でも彼の支持者は多く、[r]
+[sp]富国強兵の考えを持つものは少なくない」[p]
+
+[whosay name="秘書" color=%mp.color]
+「今原海相もこのままでは取り込まれるでしょう」[p]
+
+[葛城宮眉怒り]
+[葛城宮目伏]
+[葛城宮口開け]
+[whosay name="葛城宮　晴仁" color=%mp.color]
+「柏木元大将は戦争の準備を始めるつもりだろう。[r]
+[sp]……火消の対応ばかりに追われても仕方ない[r]
+[sp]直接柏木元大将に接触できないだろうか」[p]
+
+[whosay name="秘書" color=%mp.color]
+「難しいですが、働きかけてみましょう」[p]
+
+[葛城宮怒り]
+「ああ、頼んだ」[p]
+[葛城宮退場]
+
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
