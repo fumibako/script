@@ -145,7 +145,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////////////使用背景メモ///////////////////////////////////
@@ -159,6 +159,10 @@
 [preload storage="data/fgimage/bg/test_zaizen_paty1.jpg" wait=true]
 ;【背景】呉服屋的な背景 
 [preload storage="data/fgimage/bg/zaizen_gofuku.jpg" wait=true]
+;【背景】港町的な背景
+[preload storage="data/fgimage/bg/zaizen_minato.jpg" wait=true]
+;【背景】パーティ会場控室
+[preload storage="data/fgimage/bg/zaizen_paty_hikae.jpg" wait=true]
 ;==========================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
@@ -177,7 +181,10 @@
 [preload storage="data/fgimage/bg/test_zaizen_paty1.jpg" wait=true]
 ;【背景】洋館 
 [preload storage="data/fgimage/bg/zaizen_youkan.jpg" wait=true]
-
+;【背景】呉服屋的な背景 
+[preload storage="data/fgimage/bg/zaizen_gofuku.jpg" wait=true]
+;【背景】港町的な背景
+[preload storage="data/fgimage/bg/zaizen_minato.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
