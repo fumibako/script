@@ -1,17 +1,23 @@
 ;=============================================
 ;イベント5回目【財閥総帥主催のパーティ】11月1週、
-;=============================================
-;【背景】[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*11_1 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-[主人公ポーズ通常] 
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
+#
+[主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
@@ -99,9 +105,12 @@
 [主人公通常]
 「ええ」[p]
 
-;［背景玄関］
+;====================================================================================
+;【背景】玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;====================================================================================
+
 ;【立ち絵】財前：ハッとする
 [whosay name="財前美彬" color="#7a65b2"]
 「……」[p]
@@ -143,9 +152,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ええ」[p]
 
-;［背景パーティ会場］
+;====================================================================================
+;【背景】パーティー会場
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;====================================================================================
 
 #
 開宴の挨拶、財閥総帥の挨拶が終わり[r]
@@ -410,7 +421,7 @@
 [sp] ……帰りましょう」[p]
 
 
-
+;====================================================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
