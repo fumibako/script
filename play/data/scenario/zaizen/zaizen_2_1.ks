@@ -1,25 +1,28 @@
 ;=============================================
 ;イベント9回目【散策イベント３落ち着きを取り戻した町】２月１週
-;=============================================
-
-;【背景】町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-;[eval exp="f.haikei_credit='－－－－　by　ーーーー　ーーーー'"]
+;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*2_1 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
-
+[call target=*start storage="macro_tati_zaizen.ks"]
+;【背景】町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 
 #
 町は明るい活気を取り戻し、[r]
-行きかう人の姿の表情は落ち着いている[r]
-私は見知った姿を見かけて声を掛ける[p]
+行きかう人の姿の表情は落ち着いている。[r]
+私は見知った姿を見かけて声を掛けた。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
@@ -258,7 +261,7 @@
 どう変わるのか怖い……[p]
 
 
-
+;====================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
