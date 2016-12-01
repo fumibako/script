@@ -164,6 +164,7 @@
 ;【背景】パーティ会場控室
 [preload storage="data/fgimage/bg/zaizen_paty_hikae.jpg" wait=true]
 ;【背景】シャンデリア
+[preload storage="data/fgimage/bg/bg_syanderia.jpg" wait=true]
 ;【背景】ホール
 ;【背景】洋館居間
 [preload storage="data/fgimage/bg/test_room_zaizen_ima.jpg" wait=true]
