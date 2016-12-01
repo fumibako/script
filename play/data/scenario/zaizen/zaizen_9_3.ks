@@ -176,7 +176,7 @@
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 ;【立ち絵】財前：通常
-[財前サイズ通常]
+;[財前サイズ通常]
 [財前ベーススーツ]
 [財前通常]
 [er]
