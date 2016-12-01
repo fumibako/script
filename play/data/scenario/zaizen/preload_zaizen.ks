@@ -134,7 +134,9 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】バラ園
-[preload storage="data/fgimage/bg/zaizen_bara.jpg" wait=true]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/baraen.jpg" wait=true]
+;【背景】バラ園２
+[preload storage="data/fgimage/bg/B4nFWraU42/zaizen_bara.jpg" wait=true]
 ;桜の表示が遅いと見えない,処理不能の為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 ;======================================================================================
