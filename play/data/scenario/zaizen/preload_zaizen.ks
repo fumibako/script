@@ -314,7 +314,7 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
 ;【背景】背景会議室
-
+[preload storage="data/fgimage/bg/test_zaizen_kaigi.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
