@@ -113,9 +113,7 @@
 [sp]左手を出してくれるか？」[p]
 
 ;=============================================================
-;CGここまで　背景森林公園[p]・・・だと立ち絵あるとみえないのでコメントアウト
-;【背景】背景森林公園 仮背景??
-;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
+;CGここまで
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
