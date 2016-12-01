@@ -250,7 +250,7 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「美彬君、それに財前、お久しぶりですなぁ。[r]
-[sp]美彬君、祖父君や祖母君もお元気ですかな？」[p]
+[sp]美彬君の祖父君や祖母君もお元気ですかな？」[p]
 
 [主人公口通常]
 
