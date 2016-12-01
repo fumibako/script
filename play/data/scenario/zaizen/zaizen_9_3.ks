@@ -132,6 +132,8 @@
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 [call target=*start storage="macro_tati_zaizen.ks"]
+;【立ち絵】の設定
+[主人公眉下げ下]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -163,62 +165,61 @@
 [r]
 （この奥に、財前様がいらっしゃるのね）[p]
 [r]
-胸がドキドキと高鳴った――[p]
+胸がドキドキと高鳴った――[]
 
 
-[resetfont]
 [fadeoutse]
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [cm]
 ;メッセージをもどします
-[playse storage=paper_open.ogg loop=false ]
 [resetfont]
-;【立ち絵】の設定
-[主人公眉下げ下]
-[主人公伏目]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_zaizen.ks"]
 ;【立ち絵】財前：通常
 [財前サイズ通常]
 [財前ベーススーツ]
 [財前通常]
-[freeimage layer = 29 time=1000]
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[freeimage layer = 29 time=1300]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
-;==========================スクリプト・全画面表示からの復帰準備========================================
-
 [whosay name="財前美彬" color="#7a65b2"]
 「……」[p]
 
 ;【立ち絵】主人公：伏目
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 #
-襖を開けるとお二方の男性が座っている[r]
-一人は財前のお父様でもう一人は[r]
-お手紙を交わしている財前様だわ[r]
+襖を開けるとお二方の男性が座っていた。[p]
+
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+#
+一人は、財前のお父様で[r]
+[so]もう一人は、お手紙を交わしている財前様。[p]
+
+#
+[主人公頬染め]
 私は恥ずかしさに父の背に隠れながら、チラリと財前様を見た。[p]
 
 ;【立ち絵】主人公：通常頬染め
 [主人公通常]
-[主人公頬染め]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （この方が、財前様……）[p]
 
 （彫の深い顔立ちに、なんて綺麗な碧い瞳！　[r]
-[sp] ちらりとお母様が独逸の方だと聞いたけれど[r]
-[sp] 異国の血が流れているのね）[p]
+[sp]ちらりとお母様が独逸の方だと聞いたけれど[r]
+[sp]異国の血が流れているのね）[p]
 
 [財前目パチ1回]
 [財前口笑み]
 [whosay name="財前美彬" color="#7a65b2"]
 「[名字]様、お久しぶりです[r]
-[sp] この度はご息女との縁談の機会を与えて頂き[r]
-[sp] 深くお礼を申し上げます」 [p]
+[sp]この度はご息女との縁談の機会を与えて頂き[r]
+[sp]深くお礼を申し上げます」 [p]
 
 [財前口通常]
 [主人公目閉じ]
