@@ -8,6 +8,18 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
+
+[macro name=暗転２]
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=1300 visible=true]
+[wait time=10]
+[endmacro]
+[macro name=暗転２終了]
+[freeimage layer = 29 time=1000]
+[layopt layer=fix visible=true]
+[endmacro]
+
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
@@ -251,7 +263,7 @@
 
 #
 財前様が頭を下げ、そして私に視線を向ける[r]
-ー視線が合った……けれど碧い瞳はどこか醒めていた[p]
+―― 視線が合った……けれど碧い瞳はどこか醒めていた[p]
 
 [財前横目]
 
@@ -277,7 +289,6 @@
 「[名前]でございます」[p]
 #
 私は、精一杯、礼儀正しく答え、頭を下げた。[r]
-[r]
 [主人公憂い]
 [主人公通常]
 [sp]財前様のやや冷ややかな視線で、浮かれた気持ちが沈んでいく[p]
@@ -508,13 +519,12 @@
 
 ;=================================================================================================
 ;背景変更:暗転
-[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=1300 visible=true]
-[wait time=10]
+
 [主人公憂い]
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
-[freeimage layer = 29 time=1000]
+
 ;=================================================================================================
 #
 個室に戻るとお父様と[r]
@@ -563,6 +573,7 @@
 
 ;=================================================================================================
 ;背景変更:暗転
+[layopt layer=fix visible=true]
 [image layer=29 x=1 y=1 storage="bg/anten.jpg" time=1300 visible=true]
 [wait time=10]
 ;見合い編終了
