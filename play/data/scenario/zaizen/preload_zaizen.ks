@@ -274,7 +274,7 @@
 ;【背景】町並み
 ;[preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
 ;【背景】車の中
-[preload storage="data/fgimage/bgzaizen_kuruma.jpg" wait=true]
+[preload storage="data/fgimage/bg/zaizen_kuruma.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
