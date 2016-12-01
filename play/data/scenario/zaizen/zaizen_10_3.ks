@@ -82,9 +82,9 @@
 ;=========================================================================================================
 [暗転２]
 ;【背景】薔薇園
-[chara_mod name="bg" storage="bg/zaizen_bara.jpg" time=50]
-[表示準備 storage="bg/zaizen_bara.jpg"]
-;クレジット[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg" time=50]
+[表示準備 storage="bg/I9IhvvVdPo/baraen.jpg.jpg"]
+;クレジット[eval exp="f.haikei_credit='photo by I9IhvvVdPo'"]
 [主人公通常]
 [暗転２終了]
 ;=========================================================================================================
@@ -298,16 +298,15 @@
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ」[p]
-[主人公憂い]
+[主人公目閉]
 ;==========================歩いているので背景変更===========================================================
-;[暗転２]
-;【背景】薔薇園　またはバライメージ
-;[chara_mod name="bg" storage="bg/zaizen_bara.jpg" time=50]
-;[表示準備 storage="bg/zaizen_bara.jpg"]
-;クレジット[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
-;[主人公通常]
-;[暗転２終了]
+[暗転２]
+;【背景】薔薇園２　またはバライメージ
+[chara_mod name="bg" storage="bg/zaizen_bara.jpg" time=50]
+;クレジット[eval exp="f.haikei_credit='名無しさん＠１'"]
+[暗転２終了]
 ;=========================================================================================================
+[主人公憂い]
 #
 お見合いでは、財前様の後ろを歩いたけれど、今は、隣を歩いている。[p]
 
