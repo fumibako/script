@@ -37,11 +37,11 @@
 （……）[p]
 
 [whosay name="ばあや" color="#916565"]
-
-「そんなに鏡を何度も確かめなくとも[r]
-[sp] お嬢様はどこもおかしくありません、[r]
-[sp] まるで[淑女称号表示]のようです」[p]
+「そんなに鏡を何度も確かめなくとも、お嬢様はどこもおかしく[r]
+[sp]ありません、[r]
+[sp]まるで[淑女称号表示]のようです」[p]
 ;初期値を設定してないと英字がでますがテスト中は、スルーしてください
+
 ;【立ち絵】主人公：目閉じ頬染め、両手を頬に
 [主人公ポーズ両手]
 [wait time=10]
@@ -49,7 +49,7 @@
 [wait time=10]
 [主人公口開]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「……まあ！　」[p]
+「……まあ！」[p]
 [主人公口通常]
 [主人公照れ目普通]
 [whosay name="磯野" color="dimgray"]
@@ -65,9 +65,8 @@
 [主人公頬染め]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「あっ、お父様たち……[r]
-[sp]いま、参ります」[p]
-
+「あっ、お父様……いま、参ります」[p]
+[主人公口通常]
 [stopse]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
@@ -84,7 +83,7 @@
 [主人公頬染め]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「ほう、[名前]。なかなかの淑女に見えるぞ」[p]
+「ほう、[名前]。 なかなかの淑女に見えるぞ」[p]
 
 ;【立ち絵】主人公：目閉じ頬染め
 [主人公目閉じ]
@@ -102,28 +101,52 @@
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……はい」[p]
-
+[主人公目閉]
 ;=================================================================================================
 ;【背景】暗転黒背景、会話ウィンドウは残る
 [chara_mod name="bg" storage="toumei.gif" time=500]
 ;=================================================================================================
+[主人公口通常]
+[主人公目伏]
+#
+はやる気持ちを抑えて深呼吸する。[p]
 ;【立ち絵】主人公：下がり眉伏目（不安）
 [主人公困り]
-（はやる気持ちを抑えて深呼吸する[r]
-[sp] いよいよ財前様にお会いするのだわ[r]
-[sp] 粗相をしてしまわないかしら……不安だわ）[p]
+（いよいよ財前様にお会いするのだわ.
+[r]
+[sp]粗相をしてしまわないかしら……不安だわ）[p]
 
 ;【SE】足音3人石畳（フェードインアウト）
 [playse storage=asioto_isidatami_3nin.ogg loop=false ]
-[テキスト全画面白文字無背景]
+
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】;[テキスト全画面白文字無背景] 裏で画面構成 
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:暗転
+[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=50 visible=true]
+[wait time=10]
+;【背景】料亭風の屋内（昼）
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
+[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+[call target=*start storage="macro_tati_zaizen.ks"]
+[主人公伏目]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 [font color=lightcyan size=27]
 料亭の門をくぐり、石畳を歩むうちに[r]
-o一歩一歩、緊張が高まってゆく。[l][r]
+一歩一歩、緊張が高まってゆく。[l][r]
 [r]
 周囲の景色はまるで目に入らない。[r]
 私はひたすら父の背中を見つめて、足を進めた。[p]
 [autosave]
-[p]
+
+
 [fadeoutse]
 ;テキスト褪せたベージュ色文字（レトロな暖か味）or 明るめ抹茶色文字（料亭イメージ）
 [font color=palegoldenrod size=27]
@@ -145,26 +168,31 @@ o一歩一歩、緊張が高まってゆく。[l][r]
 
 [resetfont]
 [fadeoutse]
-;メッセージの位置をもどします
-[cm]
-[イベントシーン構築]
-[主人公ポーズ通常]
-[主人公通常]
+
+;==========================スクリプト・全画面表示からの復帰準備========================================
+;メッセージをもどします
+[playse storage=paper_open.ogg loop=false ]
+[resetfont]
+;【立ち絵】の設定
 [主人公眉下げ下]
 [主人公伏目]
-
-;=================================================================================================
+;【立ち絵】財前：通常
+[財前サイズ通常]
+[財前ベーススーツ]
+[財前通常]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[call target=*start storage="macro_tati_zaizen.ks"]
+[cm]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
-;【背景】料亭風の屋内（昼）
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
-[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
-[call target=*start storage="macro_tati_zaizen.ks"]
-;=================================================================================================
-;【立ち絵】財前：通常
-[財前ベーススーツ]
-[財前サイズ通常]
-[財前通常]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+
 [whosay name="財前美彬" color="#7a65b2"]
 「……」[p]
 
