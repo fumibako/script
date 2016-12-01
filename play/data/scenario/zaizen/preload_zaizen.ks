@@ -135,6 +135,8 @@
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】バラ園
 [preload storage="data/fgimage/bg/zaizen_bara.jpg" wait=true]
+;桜の表示が遅いと見えない,処理不能の為プリロード
+[preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
