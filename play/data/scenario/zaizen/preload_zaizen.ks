@@ -425,6 +425,20 @@
 ;ほかにマクロがあればここに記述↓
 ;=====================================================================================
 
+[macro name=暗転２]
+#
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=%time|1300 visible=true]
+[wait time=10]
+[endmacro]
+[macro name=暗転２終了]
+[freeimage layer = 29 time=%time|1300]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[endmacro]
+
 
 ;====================================================================================
 ;全てはここにGoします。ここは、消さないでください
