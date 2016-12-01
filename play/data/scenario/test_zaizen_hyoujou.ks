@@ -19,7 +19,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
 [イベントシーン構築]
 
-[財前サイズ通常]
+;[財前サイズ通常]
 [財前ベーススーツ]
 [eval exp="f.gra_zaizen_pose='[財前ベーススーツ]'"]
 [財前通常]
@@ -29,15 +29,16 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 *text
 [cm]
 [layopt layer=24 visible=true]
-[ptext text="マクロ：サイズ" layer=24 size=18 x=30 y=10 color=black bold=bold]
+[ptext text="マクロ：サイズは不具合調査中です" layer=24 size=12 x=30 y=10 color=#gray bold=bold]
 [ptext text="マクロ：衣装" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 [ptext text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
-[glink target="size_01" text="[財前サイズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
-[glink target="size_02" text="[財前サイズ隣に並ぶ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
-[glink target="size_03" text="[財前サイズ顔寄せ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
+;↓不具合が解消されるまでコメントアウトします。不具合調査にはお時間をいただきます(スクリプト担
+;[glink target="size_01" text="[財前サイズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
+;[glink target="size_02" text="[財前サイズ隣に並ぶ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
+;[glink target="size_03" text="[財前サイズ顔寄せ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
 
 [glink target="pose_01" text="[財前ベーススーツ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 color=white]
 [glink target="pose_02" text="[財前ベース燕尾服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 color=white]
