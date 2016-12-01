@@ -12,12 +12,14 @@
 [macro name=暗転２]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=1300 visible=true]
+[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=%time|1300 visible=true]
 [wait time=10]
 [endmacro]
 [macro name=暗転２終了]
-[freeimage layer = 29 time=1000]
+[freeimage layer = 29 time=%time|1300]
+;機能ボタン表示
 [layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
 [endmacro]
 
 ;【背景】主人公邸 庭の見える部屋：昼
@@ -137,9 +139,7 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;背景変更:暗転
-[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=1000 visible=true]
-[wait time=10]
+[暗転２]
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
@@ -197,10 +197,8 @@
 [p]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
-[freeimage layer = 29 time=1300]
-;機能ボタン表示
-[layopt layer=fix visible=true]
-[eval exp="sf.FButton='ON'"]
+[暗転２終了]
+
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [whosay name="財前美彬" color="#7a65b2"]
 「……」[p]
@@ -400,15 +398,13 @@
 （やはり悪い方ではないわ）[p]
 
 ;=================================================================================================
-;背景変更:暗転 使いやすい
-[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=1300 visible=true]
-[wait time=10]
+[暗転２]
 ;［背景庭］
 ;【背景】庭園　料亭の庭だと思いますので変更
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 [call target=*start storage="macro_tati_zaizen.ks"]
-[freeimage layer = 29 time=1000]
+[暗転２終了]
 ;=================================================================================================
 #
 庭に着くとまだ緑の美しい日本庭園が広がり[r]
@@ -519,12 +515,12 @@
 
 ;=================================================================================================
 ;背景変更:暗転
-
+[暗転２]
 [主人公憂い]
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
-
+[暗転２終了]
 ;=================================================================================================
 #
 個室に戻るとお父様と[r]
@@ -572,9 +568,9 @@
 （憧れていたデエトができるのに、こんな気持ちになるなんて）[p]
 
 ;=================================================================================================
-;背景変更:暗転
-[layopt layer=fix visible=true]
-[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=1300 visible=true]
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=%time|1300 visible=true]
 [wait time=10]
 ;見合い編終了
 [財前退場]
