@@ -417,8 +417,10 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
-;【背景】: レトロな喫茶店
+;【背景】:ミルクホール玄関中夜
 [preload storage="data/fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" wait=true]
+;【背景】:ミルクホール玄関中昼
+[preload storage="data/fgimage/bg/I9IhvvVdPo/miruku_genkan2.jpg" wait=true]
 ;【背景】:ミルクホール 立ち絵用　ピアノ
 [preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
 ;【効果】キラキラ
