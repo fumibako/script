@@ -450,8 +450,8 @@
 ;演出の繋がりを知りたいので
 [er]
 テストフラグで表示されています。[r]
-[link storage="zaizen_11_1_2.ks" target="*seen_1"]つづきをみる[endlink][r][r]
-[link storage="zaizen_11_bad2.ks" target="*seen_1"]バッド１をみる[endlink][r]
+[link storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"]つづきをみる[endlink][r][r]
+[link storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"]バッド１をみる[endlink][r]
 [link target="end"]テストをおわる[endlink]
 [s]
 *end
