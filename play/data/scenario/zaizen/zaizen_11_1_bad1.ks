@@ -7,7 +7,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
-;【背景】パーティ会場の庭[背景_庭]　ここは庭？
+;【背景】パーティ会場 の庭ではない？
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
@@ -20,7 +20,7 @@
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
 *seen_1
-
+[er]
 ;本編ではここ↓に飛んできます。そのためのスクリプト
 ;============================================================
 
