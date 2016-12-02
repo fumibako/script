@@ -6,7 +6,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
-;【背景】パーティ会場の庭[背景_庭]　
+;【背景】パーティ会場
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
@@ -555,7 +555,19 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
 
-;===============================================================
+
+;================================テストメニューを抜けた時点で表示されませんが後で削除します===============================
+[if exp="tf.test_zaizen==true"]
+;演出の繋がりを知りたいので
+[er]
+テストフラグで表示されています。[r]
+[link storage="zaizen_11_1_3.ks" target="seen_1"]つづきをみる[endlink][r]
+[link storage="zaizen_11_1_bad1.ks" target="seen_1"]bad1をみる[r]
+[link target="end_test"]テストをおわる[endlink][r]
+[s]
+*end_test
+[endif]
+;=====================================================================================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
