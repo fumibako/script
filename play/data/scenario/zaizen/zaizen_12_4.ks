@@ -9,7 +9,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 ;【背景】背景会議室　;変更してください
-[chara_mod name="bg" storage="bg/test_zaizen_kaigi.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/test_zaizen_kaigi.jpg"]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
