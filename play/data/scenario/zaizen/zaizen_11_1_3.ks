@@ -6,6 +6,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_zaizen.ks"]
 ;【背景】パーティ会場の控室
 [chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -13,6 +14,8 @@
 #
 [主人公ポーズ通常]
 [主人公通常]
+[財前ベース燕尾服]
+[財前通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
