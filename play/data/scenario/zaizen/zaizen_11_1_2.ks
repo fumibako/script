@@ -501,7 +501,7 @@
 [sp]いっそ惨めな気分ですやめてください」[p]
 
 #
-そういったけれどまだ手は解かれてない。[r]
+そういったけれどまだ手は解かれてない。[p]
 
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -521,7 +521,7 @@
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 
-
+[財前通常]
 #
 財前様は私の手をぎゅっと握った。[r]
 そして苦悩するように目を閉じた。[p]
@@ -530,6 +530,7 @@
 お母様に向かって言った[p]
 
 ;【立ち絵】財前：目閉じ
+[財前目閉じ]
 [whosay name="財前美彬" color="#7a65b2"]
 「ええ、私もいつまでも子供ではないです。[r]
 [sp]私も意固地に貴方を避けたり傷つけるのも、これまでにします[r]
@@ -545,8 +546,7 @@
 それから泣いた……嬉し涙だわ[p]
 
 [whosay name="財前母"]
-「ありがとう。[r]
-[sp][名字]さんも、[r]
+「ありがとう。 [名字]さんも、[r]
 [sp]いえ[名前]さんと呼んでもいいかしら？」[p]
 
 [fadeoutbgm time=3000]
@@ -559,11 +559,12 @@
 
 ;================================テストメニューを抜けた時点で表示されませんが後で削除します===============================
 [if exp="tf.test_zaizen==true"]
+#
 ;演出の繋がりを知りたいので
 [er]
 テストフラグで表示されています。[r]
-[link storage="zaizen_11_1_3.ks" target="seen_1"]つづきをみる[endlink][r]
-[link storage="zaizen_11_1_bad1.ks" target="seen_1"]bad1をみる[r]
+[link storage="zaizen/zaizen_11_1_3.ks" target="seen_1"]つづきをみる[endlink][r]
+[link storage="zaizen/zaizen_11_1_bad1.ks" target="seen_1"]bad1をみる[r]
 [link target="end_test"]テストをおわる[endlink][r]
 [s]
 *end_test
