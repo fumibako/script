@@ -441,10 +441,12 @@
 ;演出の繋がりを知りたいので
 [er]
 テストフラグで表示されています。[r]
-[link storage="zaizen_11_1_3.ks" target="seen_1"]好感度が一定以上【11_1_3】[endlink][r][r]
-[linka storage="zaizen_11_1_bad1.ks" target="seen_1"]好感度が低い【11_1_bad1】[endlink][r]
+[link storage="zaizen_11_1_2.ks" target="seen_1"]つづきをみる[endlink][r][r]
+[link target="end"]テストをおわる[endlink]
 [s]
+*end
 [endif]
+
 ;============================================================================================================
 ;@jump storage="event.ks" target=*event_owari
 
