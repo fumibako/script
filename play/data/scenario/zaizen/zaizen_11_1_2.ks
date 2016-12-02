@@ -476,17 +476,12 @@
 [sp]私の外見は貴方の血も色濃く受け継いでいる。[r]
 [sp]どんなに負担になっているか考えた事はありますか？」[p]
 
+
 [fadeoutbgm time=3000]
 [主人公憂い]
 #
 声を荒げて言う財前様は、怖かったけれど[r]
 それ以上に痛々しく想えた。[p]
-
-[if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
-[endif]
 
 #
 私は思わず財前様の手を取った。[r]
@@ -513,9 +508,17 @@
 ;【立ち絵】主人公 : 悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「財前様……」[p]
+
 ;【立ち絵】主人公 :訴えるような表情
 [主人公目閉じ]
 「それでも」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 
 #
 財前様は私の手をぎゅっと握った。[r]
