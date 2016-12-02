@@ -10,7 +10,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;背景: [レトロな喫茶店]
 [eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg" time=50]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
