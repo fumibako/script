@@ -7,7 +7,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
-;【背景】パーティ会場の庭[背景_庭]　
+;【背景】パーティ会場の庭[背景_庭]　ここは庭？
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
@@ -94,12 +94,17 @@
 #
 私は財前様のお母様と手紙のやりとりをしていて[r]
 誕生日パーティに呼ばれた。[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】夕涼み（お稽古パートなど
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
+[主人公目閉]
+;================================================================================================
+;【背景】独逸大使館パーティ会場
+[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;================================================================================================
 
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
