@@ -1,5 +1,8 @@
 ;=============================================
 ;イベント5回目【財閥総帥主催のパーティ】11月1週、
+;ラスト好感度分岐
+;zaizen_11_1_2.ks" target="seen_1" good　つづきをみる
+:zaizen_11_bad2.ks" target="seen_1" バッド１　財前の言う通りにする
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -441,7 +444,8 @@
 ;演出の繋がりを知りたいので
 [er]
 テストフラグで表示されています。[r]
-[link storage="zaizen_11_1_2.ks" target="seen_1"]つづきをみる[endlink][r][r]
+[link storage="zaizen_11_1_2.ks" target="seen_1"]つづきをみる[endlink][r]
+[link storage="zaizen_11_bad2.ks" target="seen_1"]バッド１をみる[endlink][r]
 [link target="end"]テストをおわる[endlink]
 [s]
 *end
