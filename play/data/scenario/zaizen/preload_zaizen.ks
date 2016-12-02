@@ -408,7 +408,7 @@
 ;【背景】CGnomal
 [preload storage="data/fgimage/bg/zaizen_CGnomal.jpg" wait=true]
 ;【背景】パーティー会場
-[preload storage="data/fgimage/bgtest_zaizen_paty1.jpg" wait=true]
+[preload storage="data/fgimage/bg/test_zaizen_paty1.jpg" wait=true]
 
 ;=============================================================================
 @jump target=end_sub
