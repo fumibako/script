@@ -23,7 +23,9 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;test
 ;=============================================
 [chara_mod name="bg" storage="bg/title.jpg"]
-
+;test中フラグ　一時変数 利用します
+[eval exp="tf.test_zaizen=true"]
+*page_0
 [cm]
 [layopt layer=26 visible=true]
 [wait time=10]
@@ -61,7 +63,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test3_4nomal" text="3月4週nomal" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="zaizen_bazaar" text="財前バザー" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=pink]
+[glink target="page_1" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=pink]
 @jump target=*common
 ;２ページ目の表示を共通部分をみせて終わらせます
 
@@ -257,12 +259,16 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 *back_test
 [cm]
 [freeimage layer = 26]
+;test中フラグ　一時変数
+[eval exp="tf.test_zaizen=false"]
 @jump storage="test.ks"
 [s]
 
 *title
 [cm]
 [freeimage layer = 26]
+;test中フラグ　一時変数
+[eval exp="tf.test_zaizen=false"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
