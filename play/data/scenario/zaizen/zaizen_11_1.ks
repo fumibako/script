@@ -44,9 +44,11 @@
 [whosay name="ばあや" color="#916565"]
 「さ、お嬢様、出来ましたよ。」[p]
 
+
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
 [主人公通常]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、今日もありがとう」[p]
 
 #
@@ -73,12 +75,12 @@
 「お嬢様、財前様がお見えになりました。[r]
 [sp]入ってもよろしいでしょうか？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
-[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、今出来た所です」[p]
 [主人公眉下げ下]
-（支度に時間が、[ruby text=か]掛かって、もうこんな時間だわ）[p]
+（支度に時間が[ruby text=か]掛かって、もうこんな時間だわ）[p]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 [主人公眉通常]
@@ -89,9 +91,9 @@
 「……お嬢様。 今日は一段と綺麗に仕上がっていますね。[r]
 [sp]財前様も喜ばれるでしょう」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ憂い
 [主人公憂い]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「……どうかしら？[r]
 [sp]あの方のお考えなんて私には分らないわ」[p]
 [主人公目閉]
@@ -117,9 +119,10 @@
 [暗転２終了]
 ;====================================================================================
 
-[財前目大]
+
 ;【立ち絵】財前：ハッとする
 [whosay name="財前美彬" color="#7a65b2"]
+[財前目大]
 「……」[p]
 [主人公目通常]
 ;【立ち絵】財前：通常
@@ -190,12 +193,14 @@
 
 ;【立ち絵】財前：微笑み
 [whosay name="財前美彬" color="#7a65b2"]
+[財前微笑み]
 「ええ、今日が社交デビューのようなものですから[r]
 [sp]彼女には、お手柔らかにお願いします」[p]
 
 [主人公伏目パチ1回]
 [whosay name="パーティ客女性"]
-「まあ大事にされているのですね」[p]
+「まあ！大事にされているのですね」[p]
+;激しい感じではないけれどまぁまぁを回避
 
 [fadeoutbgm time=3000]
 
@@ -209,6 +214,7 @@
 
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
+[財前通常]
 「ええ、婚約者も同伴させてもよろしいですか？[r]
 [sp]彼女はこういった場は初めてなので、 一人にするのは[r]
 [sp]忍びないのですが……」[p]
@@ -221,11 +227,11 @@
 [財前困り]
 「しかし……」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常　困り
 [主人公眉困り]
 [主人公目伏]
 [主人公口ほほえみ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「私なら大丈夫ですわ。 行ってきてくださいませ」[p]
 
 [whosay name="財閥総帥秘書"]
@@ -263,9 +269,9 @@
 「あちらでは社交ダンスを行ってます[r]
 [sp]貴方も一曲どうですか？ 良ければ僕と踊りませんか」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：困り
 [主人公困り]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいえ。 連れが、もうじき戻ってきますので遠慮します」[p]
 
 [whosay name="パーティ客男性"]
@@ -273,10 +279,10 @@
 #
 パーティ客男性は強引に私の手を引く[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：困り
 [主人公汗]
 [主人公口開]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「ちょ……手を放してください、 困ります！」[p]
 
 [whosay name="パーティ客男性"]
@@ -392,9 +398,9 @@
 「私を恨んでいるの？」[p]
 
 ;【立ち絵】財前：不快
-[財前伏目パチ1回]
 [whosay name="財前美彬" color="#7a65b2"]
 「ただ貴方が母という事が、恥ずかしいだけですよ、[r]
+[財前伏目パチ1回]
 [sp]貴方は私の汚点です」[p]
 
 ;【立ち絵】主人公：驚き
@@ -444,7 +450,7 @@
 ;演出の繋がりを知りたいので
 [er]
 テストフラグで表示されています。[r]
-[link storage="zaizen_11_1_2.ks" target="seen_1"]つづきをみる[endlink][r]
+[link storage="zaizen_11_1_2.ks" target="seen_1"]つづきをみる[endlink][r][r]
 [link storage="zaizen_11_bad2.ks" target="seen_1"]バッド１をみる[endlink][r]
 [link target="end"]テストをおわる[endlink]
 [s]
