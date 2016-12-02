@@ -104,16 +104,17 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「今日は少し風が冷たい。 寒くありませんか？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目閉じ思案
 [主人公目閉じ]
 [主人公眉下げ下]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいえ、……それよりお話しがあります」[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 [財前目通常]
 [財前眉ひそめ]
 ;【立ち絵】財前：眉ひそめ
-[whosay name="財前美彬" color="#7a65b2"]
+
 「一体、何の話でしょうか？」[p]
 
 ;【立ち絵】主人公：真剣
@@ -128,48 +129,53 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「貴方が知らなくてもいい事ですよ」[p]
 
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：真剣
 [主人公憂い]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「私が知りたいのです。 家族になるんですもの。[r]
 [sp]貴方のお母様に関係あることなのですか？」[p]
 [主人公口通常]
 
+[whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：驚き
 [財前驚き]
-[whosay name="財前美彬" color="#7a65b2"]
 「……お父上から何かお聞きになりましたか？」[p]
 
-;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：真剣
+
 「いえ、お父様からではありません。[r]
 [sp]少し噂を聞いた程度です。[r]
 [sp]ですが、貴方の口からききたいのです」[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：目伏せ
 [財前不快]
-[whosay name="財前美彬" color="#7a65b2"]
+
 「母は父と恋愛し私を産んだにも関わらず[r]
 [sp]結局は、独逸に帰る事を望み、私と父を捨てて故国に[r]
 [sp]帰った……それだけです」[p]
 
 「私は恋の絆などなんの意味もないと知っている」[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：冷ややか
 [財前冷ややか]
-[whosay name="財前美彬" color="#7a65b2"]
+
 「貴方が恋愛を望むなら、私との縁談を今から断っても構わない[r]
 [sp]今なら体面を傷つける事もなく無効にできます」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：悲しみ
 [主人公目閉じ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+
 「……どうしてそのような事を簡単に言えるのですか？」[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：目伏せ
 [財前目閉じ]
 [財前口開]
-[whosay name="財前美彬" color="#7a65b2"]
 「さあ？　私を冷たいと感じますか？[r]
 [sp]私は感情的に走る事を好みません」[p]
 
@@ -178,86 +184,93 @@
 [財前目伏]
 「感情的になると人は余裕がなくなり、とても見苦しい」[p]
 
-;【立ち絵】主人公：悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：悲しみ
+
 [主人公憂い]
 「財前様……」[p]
 
+
+[whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：通常
 [財前冷ややか]
-[whosay name="財前美彬" color="#7a65b2"]
+
 「ああ、生い立ちについての同情は不要です。[r]
 [sp]母の事は恥ですが、今は何とも思っていないですから」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：悲しみ
 [主人公目閉じ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+
 （あくまで冷静な様子から、何も伺えないけど[r]
 [sp]財前様は、沢山傷ついてきたのでは、ないのかしら？）[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 [財前不快]
 ;【立ち絵】財前：ため息
-[whosay name="財前美彬" color="#7a65b2"]
+
 「同情は不要だといっているでしょう。[r]
 [sp][名前]さんは顔に出やすい人ですね」[p]
 [財前伏目パチ1回]
 「ですが素直で物怖じしない所は気に入っています。[r]
 [sp]将来、化けるかもしれませんのでね」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ思案
 [主人公目伏]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 （なんとか財前様と、分かり合えないのかしら？）[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 [財前ため息]
 ;【立ち絵】財前：ため息
-[whosay name="財前美彬" color="#7a65b2"]
 「全く、人の弱みに付け込む気ですか？」[p]
 [財前通常]
 「私は人を愛する気が全くありません。[r]
 [sp]母の事を話すのは今日限り……[r]
 [sp]今後その話題を出すようなら婚約を破棄します」[p]
 
-;【立ち絵】主人公：目伏せ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;【立ち絵】主人公：目伏せ
+
 「はい、今後この話題には触れませんわ。[r]
 [sp]お約束します」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]
 （財前様の一番触れてはいけない部分なのだわ）[p]
 [主人公目伏]
 
+[whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：冷ややかな微笑み
 [財前冷ややかな微笑み]
-[whosay name="財前美彬" color="#7a65b2"]
 「賢明な回答です」[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 [財前通常]
 ;【立ち絵】財前：通常
-[whosay name="財前美彬" color="#7a65b2"]
 「ああ、ところで急ですが[r]
 [sp][ruby text=じゅう]十[ruby text=いち]一月の初めの日曜日ですが予定を開けてくれませんか？」[p]
 
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
 [主人公通常]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、何かありますの？」[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 [財前通常]
 ;【立ち絵】財前：通常
-[whosay name="財前美彬" color="#7a65b2"]
 「懇意にしている財閥の総帥の会社の祝賀パーティがあります。[r]
 [sp]貴方のお父上から、そういった機会に同伴する約束を[r]
 [sp]したので出席して頂きます」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：驚き
 [主人公驚]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「！」[p]
 （まさかこんな早くにパーティの機会があるなんて）[p]
 
 [主人公口通常]
+[whosay name="財前美彬" color="#7a65b2"]
 [財前冷ややかな微笑み]
 ;【立ち絵】財前：冷ややか
 [whosay name="財前美彬" color="#7a65b2"]
@@ -271,12 +284,14 @@
 「いいえ、出席いたします、[r]
 [sp]私は、貴方のお役に立ちたいと思います」[p]
 
+[whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：通常
 [財前横目]
 [whosay name="財前美彬" color="#7a65b2"]
 「貴方には表面上、私の理想の妻になってもらいます[r]
 [sp]ただそれだけですよ」[p]
 #
+
 ;【立ち絵】主人公：目伏せ微笑み
 [主人公目伏柔]
 [主人公眉下げ下]
