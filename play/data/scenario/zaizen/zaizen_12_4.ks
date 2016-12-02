@@ -26,9 +26,9 @@
 [sp]ただ早急に対応して頂きたいと存じます！」[p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】一閃（緊迫シーンに
-[playbgm storage="kinpaku_issen.ogg" loop=true]
-[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
 
 ;【立ち絵】財前：真剣
@@ -38,8 +38,8 @@
 [sp] 日銀の紙幣も底を尽きると聞きました」[p]
 
 [whosay name="新大蔵大臣"]
-「だが君たちの案は書面で読んだが[r]
-[sp] 少し強引すぎるのではないかね？」[p]
+「だが君たちの案は書面で読んだが、少し強引すぎるのでは[r]
+[sp]ないかね？」[p]
 
 ;【立ち絵】財前：真剣
 [whosay name="財前美彬" color="#7a65b2"]
