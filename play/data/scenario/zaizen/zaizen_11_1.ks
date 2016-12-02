@@ -199,13 +199,6 @@
 #
 そして会食が終わり余興の時間になる頃だった[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】夕涼み（お稽古パートなど
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
-[endif]
-
-
 [whosay name="財閥総帥秘書"]
 「財前さま、[r]
 [主人公通常]
@@ -247,6 +240,11 @@
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 [主人公憂い]
 ;====================================================================================
 [暗転２]
