@@ -24,6 +24,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……はい。そういたします」[p]
 
+[財前退場準備 storage="bg/test_zaizen_paty1.jpg"]
+
 [主人公目閉]
 （お母様が心配だけれど財前様の為には、そっとしておくべきなのだわ）[p]
 
@@ -45,7 +47,7 @@
 ;===========================================================================
 
 #
-私と財前様は交際期間を終えた後[r]
+私と財前様は交際期間を終えた後、[r]
 華燭の典を挙げ財前様は、私の夫となりました[p]
 
 #
@@ -56,19 +58,37 @@
 #
 けれど私は満たされない想いを抱えるようになり[r]
 胸の内に寂しさを感じるようになりました[p]
-
-[テキスト全画面白文字]
-――　数年後[p]
-;====================================================
-[暗転２]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】黒茶・和紙風背景に白文字  [テキスト全画面白文字]裏で画面構成
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
 ;【背景】洋館居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+
+――　数年後[p]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
 [表示準備 storage="bg/test_room_zaizen_ima.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築ボタン無し版]
-[暗転２終了]
-[イベントシーン構築ボタン無し版]
-;====================================================
+[eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+
 ;【立ち絵】主人公：目伏せ
 [主人公眉下げ下]
 [主人公目伏]
