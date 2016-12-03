@@ -330,9 +330,6 @@ $('.junbi_girl').remove();
 [主人公退場]
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [freeimage layer=29 time=100]
-;機能ボタン表示
-[layopt layer=fix visible=true]
-[eval exp="sf.FButton='ON'"]
 ;===============================================================
 
 
