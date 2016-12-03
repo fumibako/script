@@ -215,9 +215,11 @@ $('.junbi_girl').remove();
 ―― 10年後[p]
 ;===============================================================
 ;【背景】青空に桜
-[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+;[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[font color="0x663300"]
+;[font color="0x663300"]
+[font color=white size=27]
 #
 国民の生活は豊かになった。[r]
 世界でもトップクラスの技術を開発し、[r]
