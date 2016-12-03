@@ -101,8 +101,24 @@
 [whosay name="藤枝 肇" color=%mp.color] 
 （僕も最後まで自分の演奏を諦めない……）[p]
 
-;【テキスト全画面】黒茶・和紙風背景に白文字
- [テキスト全画面白文字]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】;[新聞] 裏で画面構成 test_bg_sinbun.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+[藤枝退場]
+;【背景】主人公邸 庭の見える部屋：昼
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 数日後[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -111,19 +127,21 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 #
-;=======================お芝居の準備中です=================================
-;【背景】主人公邸 庭の見える部屋：昼
- [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
- [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-[表示準備 storage="bg/room_niwa.jpg" layer=29]
-[イベントシーン構築ボタン無し版]
-[主人公ポーズ通常]
-[主人公通常]
-[主人公ポーズ通常]
-[freeimage layer=29 time=500]
-[メッセージウィンドウ上ボタン表示]
-;========================ここからお芝居の幕引きです===============================================
+
+;==========================スクリプト・全画面表示からの復帰準備========================================
+;メッセージをもどします
+;[playse storage=paper_open.ogg loop=false ]
+[resetfont]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[call target=*start storage="macro_tati_zaizen.ks"]
+[cm]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
