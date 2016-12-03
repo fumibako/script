@@ -83,7 +83,7 @@
 
 ;=========================================================================
 
-[font color="#250d00" size=27]
+;[font color="#250d00" size=27]
 ;【背景】　ラジオ
 [image layer=29 x=1 y=1 storage="bg/hujieda_rajio.jpg" time=1000 visible=true]
 [chara_mod name="bg" storage="bg/hujieda_rajio.jpg" time=1200]
