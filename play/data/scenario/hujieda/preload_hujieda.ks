@@ -417,6 +417,8 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
+;【背景】:ミルクホール玄関外昼
+[preload storage="data/fgimage/bg/I9IhvvVdPo/mirukutest.jpg" wait=true]
 ;【背景】:ミルクホール玄関中夜
 [preload storage="data/fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" wait=true]
 ;【背景】:ミルクホール玄関中昼
