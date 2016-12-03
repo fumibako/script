@@ -136,7 +136,6 @@
 [freeimage layer = 29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
