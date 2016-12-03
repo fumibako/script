@@ -215,11 +215,12 @@
 心から想ってくれているのが感じられる[r]
 ……心から幸せだわ[p]
 ;====================================================================================
-;【背景】フウセンカズラの花　まだないので実です・・・
-[暗転２] storage="bg/zaizen_fusenkazura.jpg"]
-;【背景】 フウセンカズラの花　まだないので実です
-[chara_mod name="bg" storage="bg/zaizen_fusenkazura.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;【背景】フウセンカズラの花
+[暗転２ storage="bg/zaizen_fusenkazura2.jpg"]
+[財前退場]
+;【背景】 フウセンカズラの花
+[chara_mod name="bg" storage="zaizen_fusenkazura2.jpg"]
+[eval exp="f.haikei_credit=' '"]
 [暗転２終了]
 ;====================================================================================
 
@@ -292,7 +293,7 @@
 [sp] 愛するために生まれてきた ――[p]
 ;====================================================================================
 [暗転２] storage="bg/zaizen_fusenkazura.jpg"]
-[財前退場]
+;[財前退場]
 [主人公退場]
 ;【背景】 フウセンカズラの実
 [chara_mod name="bg" storage="bg/zaizen_fusenkazura.jpg"]
