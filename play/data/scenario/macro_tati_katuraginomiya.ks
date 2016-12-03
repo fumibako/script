@@ -233,8 +233,8 @@
 [wait time=10]
 [endmacro]
 
-;立ち絵表示[葛城宮眉怒り眉間にシワ]
-[macro name="葛城宮眉通怒り眉間にシワ"]
+;立ち絵表示[葛城宮眉怒り皺]
+[macro name="葛城宮眉怒り皺"]
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_okori_siwa.png" time=0]
 [wait time=10]
 [endmacro]
