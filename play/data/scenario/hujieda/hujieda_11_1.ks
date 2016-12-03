@@ -62,6 +62,12 @@
 #
 磯野が鳩さんに近づく。[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：慌て
 [主人公困り]
@@ -85,11 +91,6 @@
 「お嬢様！　この手紙は一体何ですか？[r]
 [sp]この藤枝肇という方は、どういった身分の方なのです？」[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
-[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：落ち込み
