@@ -80,6 +80,8 @@ $('.loding_pic1').remove();
 
 ;◆[イベントシーン構築ボタン無し版枠茶色]
 [macro name="イベントシーン構築ボタン無し版枠茶色"]
+;↓メッセージ枠名前残り消去
+[whosay name=""]
 [clearfix]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 15]
@@ -124,6 +126,8 @@ $('.loding_pic1').remove();
 ;==================================================
 ;◆[イベントシーン構築ボタン無し版]
 [macro name="イベントシーン構築ボタン無し版"]
+;↓メッセージ枠名前残り消去
+[whosay name=""]
 [clearfix]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 15]
@@ -185,6 +189,8 @@ $('.loding_pic1').remove();
 
 ;◆[四条イベントシーン構築]
 [macro name="四条イベントシーン構築"]
+;↓メッセージ枠名前残り消去
+[whosay name=""]
 [clearfix]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 15]
@@ -309,6 +315,8 @@ $('.loding_pic1').remove();
 
 ;◆[イベントシーン構築枠茶色]
 [macro name="イベントシーン構築枠茶色"]
+;↓メッセージ枠名前残り消去
+[whosay name=""]
 [clearfix]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [eval exp="f.kaogura='off'"]
