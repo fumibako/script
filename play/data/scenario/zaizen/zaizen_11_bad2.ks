@@ -27,7 +27,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……はい。そういたします」[p]
 
-[財前退場準備 storage="bg/test_zaizen_paty1.jpg"]
+[財前退場準備 storage="bg/test_zaizen_paty1.jpg" time=500]
 
 [主人公目閉]
 （お母様が心配だけれど財前様の為には、そっとしておくべきなのだわ）[p]
@@ -129,7 +129,7 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「ああ、行ってくる」[p]
 ;====================
-[財前退場準備 storage="bg/test_room_zaizen_ima.jpg"　time=300]
+[財前退場準備 storage="bg/test_room_zaizen_ima.jpg"　time=500]
 ;====================
 #
 彼は立ち上がり居間を後にする。[r]
