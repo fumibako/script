@@ -78,8 +78,8 @@
 [glink target="mayu_04" text="[葛城宮眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 [glink target="mayu_06" text="[葛城宮眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
 [glink target="mayu_07" text="[葛城宮眉怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-;[glink target="mayu_05" text="[葛城宮眉通常下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-;[glink target="mayu_08" text="[葛城宮眉下げ下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink target="mayu_05" text="[葛城宮眉怒り眉間にシワ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink target="mayu_08" text="[葛城宮眉悩み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
 [endif]
 
 [if exp="f.gra_katuraginomiya_part=='me'"]
@@ -266,8 +266,8 @@
 @jump target=text
 
 *mayu_05
-[葛城宮眉通常下]
-[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉通常下]'"]
+[葛城宮眉怒り眉間にシワ]
+[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉怒り眉間にシワ]'"]
 @jump target=text
 
 *mayu_06
@@ -281,8 +281,8 @@
 @jump target=text
 
 *mayu_08
-[葛城宮眉下げ下]
-[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉下げ下]'"]
+[葛城宮眉悩み]
+[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉悩み]'"]
 @jump target=text
 
 
