@@ -8,9 +8,9 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-;背景: [レトロな喫茶店]
+;【背景】 ミルクホール玄関外
 [eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg" time=50]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutest.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -21,19 +21,36 @@
 
 [主人公照れ目普通]
 #
-予約した５分前にミルクホール月ノ光に着く。[r]
-ピアノの音が聞こえドキドキしながら順番を待つ。[p]
+私は、お兄様とともに、『ミルクホール 月ノ光』にやってきた。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+;====================================================================================
+;背景: [レトロな喫茶店]
+[eval exp="f.haikei_credit=''"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg" time=50]
+;===============================================================
+[whosay name="文矢" color="#538a8a"] 
+「まだ早かったようだね」[p]
+#
+ふとお兄様の声に待合室の時計を見ると、[r]
+予約した時間より五分ほど、早く着いてしまったようだ。[p]
 
+[主人公目閉]
+待合室には、客席からのピアノの音が聞こえ、[r]
+私はドキドキしながら、長い五分間を待った……。[p]
+
+;背景がないで暗転だ
+[暗転]
+
+[主人公照れ目普通]
 [whosay name="店員"]
 「予約の[名字]様ですね。お席に案内します」[p]
 
 #
-歩きながらお兄様は私に尋ねた[p]
+歩きながらお兄様は私に尋ねる。[p]
 
 [whosay name="文矢" color="#538a8a"] 
 「普段わがままを言わない[名前]の頼みなら仕方ないと思ったけど[r]
