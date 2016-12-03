@@ -233,12 +233,12 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 ;zaizen_3_4_normal.ks
 
+*zaizen_bazaar
 [cm]
 [freeimage layer = 26]
 @jump storage="zaizen/zaizen_bazaar.ks"
 [s]
-;zaizen_bazaar.ks
-
+;zaizen/zaizen_bazaar.ks
 *test_sansaku
 [cm]
 [freeimage layer = 26]
