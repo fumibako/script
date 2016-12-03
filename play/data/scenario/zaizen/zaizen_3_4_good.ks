@@ -306,7 +306,9 @@
 [chara_mod name="bg" storage="bg/zaizen_fusenkazura.jpg"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[暗転２終了]
+;↓最後に機能ボタンがチラッと見えるのが気になるためコメントアウトと[freeimage]に変更させていただきました
+;[暗転２終了]
+[freeimage layer = 29 time=%time|1300]
 [fadeoutbgm time=3000]
 [wait time=100]
 ;====================================================================================
