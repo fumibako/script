@@ -30,7 +30,7 @@
 ;====================================================================================
 ;背景: [レトロな喫茶店]
 [eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg" time=50]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg" time=1000]
 ;===============================================================
 [whosay name="文矢" color="#538a8a"] 
 「まだ早かったようだね」[p]
@@ -86,7 +86,7 @@
 ;==============================================================================
 ;[eval exp="f.haikei_credit='クレジット'"]
 [layopt layer=fix visible=false]
-[表示準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg" layer=29]
+[表示準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg" layer=29 time=1300]
 ;クレジット[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
 [主人公通常]
