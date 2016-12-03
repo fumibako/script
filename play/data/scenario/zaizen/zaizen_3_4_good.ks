@@ -286,7 +286,6 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「そうだな、私も共に歩もう。[r]
 [sp]この愛しさも安らぎも、君が教えてくれたものだ」[p]
-[fadeoutbgm time=3000]
 
 ;====================================================================================
 [暗転２ storage="bg/zaizen_fusenkazura.jpg"]
@@ -308,6 +307,8 @@
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [暗転２終了]
+[fadeoutbgm time=3000]
+[wait time=100]
 ;====================================================================================
 ;終わり
 ;@jump storage="event.ks" target=*event_owari
