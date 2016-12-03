@@ -54,8 +54,8 @@
 [主人公退場]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1000]
 [wait time=10]
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[テキスト全画面白文字無背景]
+;メッセージレイヤを全画面用に設定変更[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
