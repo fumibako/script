@@ -24,11 +24,6 @@
 「そろそろお手紙のお返事来ないかしら」
 [主人公目パチ1回][p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
 
 （鳩が入ってこれるように、少しふすまを開けているけれども）[p]
 
