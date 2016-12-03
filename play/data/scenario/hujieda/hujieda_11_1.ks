@@ -13,32 +13,31 @@
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
+[主人公伏目]
+[主人公眉下げ下]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公目パチ1回]
 ;【立ち絵】主人公：伏目
-[主人公伏目]
-[主人公眉下げ下]
-「そろそろお手紙のお返事来ないかしら」[p]
+「そろそろお手紙のお返事来ないかしら」
+[主人公目パチ1回][p]
+
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
 （鳩が入ってこれるように、少しふすまを開けているけれども）[p]
 
-
-
 ;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様、お茶をお持ちしました」[p]
-[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公：通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
@@ -47,12 +46,10 @@
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 
-;【BGM】みやび（磯野テーマ）
-[playbgm storage="isono_miyabi.ogg" loop=true]
-
 [whosay name=磯野 color="dimgray"]
 「失礼します。[r]
 [sp]最近では教養も着きお嬢様も淑女らしくなって感心しております」[p]
+
 
 ;【立ち絵】主人公：目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -68,7 +65,7 @@
 「鳩が……足が紙が括り付けてありますけど」[p]
 
 #
-磯野が鳩さんに近づく[p]
+磯野が鳩さんに近づく。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：慌て
@@ -78,20 +75,21 @@
 「あ、待って下さい！」[p]
 
 #
-私の言葉はむなしく、磯野は素早く鳩さんの足に括り付けてあった[r]
-手紙をほどいて開ける[p]
+私の言葉はむなしく、磯野は素早く鳩さんの足に括り付けてあった、[r]
+手紙をほどいて開ける。[p]
 
 ;【SE】紙に触れる（早・軽）
 [playse storage=paper_open_fast.ogg loop=false ]
 #
 私は茫然と立ち尽くした。[r]
+[主人公効果消]
 磯野は無言で手紙に目を通し、彼の顔は次第に厳しくなっていく。[p]
 [fadeoutbgm time=3000]
+
 [whosay name=磯野 color="dimgray"]
 「お嬢様！　この手紙は一体何ですか？[r]
 [sp]この藤枝肇という方は、どういった身分の方なのです？」[p]
 
-[主人公効果消]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true]
@@ -102,7 +100,7 @@
 ;【立ち絵】主人公：落ち込み
 [主人公目閉じ]
 「藤枝様はお稽古を励ましてくださった良い方です[r]
-[sp]身分も以前は華族の一員でした　」[p]
+[sp]身分も以前は華族の一員でした」[p]
 
 [whosay name=磯野 color="dimgray"]
 「とりあえずこの事は旦那様に報告させて頂きます」[p]
@@ -151,13 +149,13 @@
 [sp]そのお手紙も返してください……」[p]
 
 #
-磯野は批難めいた視線をむけ、私はかぶりを振り切実な視線を向けた[p]
+磯野は批難めいた視線をむけ、私はかぶりを振り切実な視線を向けた。[p]
 #
-そして、先に目を離したのは磯野だった。[r]
+そして、先に目を離したのは磯野だった。[p]
 ため息をついて磯野は言った。[p]
 
 [whosay name=磯野 color="dimgray"]
-「この手紙は没収しますが、わかりました[r]
+「この手紙は没収しますが、わかりました。[r]
 [sp]今後お嬢様がお稽古す場合でも女中を傍に控えさせ[r]
 [sp]今後手紙を出されるのは禁止させていただきます」[p]
 [fadeoutbgm time=3000]
