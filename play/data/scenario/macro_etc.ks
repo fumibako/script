@@ -246,6 +246,8 @@ $('.loding_pic1').remove();
 
 ;◆[イベントシーン構築]
 [macro name="イベントシーン構築"]
+;↓メッセージ枠名前残り消去
+[whosay name=""]
 [clearfix]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 15]
