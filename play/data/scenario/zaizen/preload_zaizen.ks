@@ -392,9 +392,10 @@
 [preload storage="data/fgimage/bg/zaizen_paty_niwa.jpg" wait=true]
 ;【背景】洋館居間
 [preload storage="data/fgimage/bg/test_room_zaizen_ima.jpg" wait=true]
-;【背景】 フウセンカズラ
+;【背景】 フウセンカズラの実
 [preload storage="data/fgimage/bg/zaizen_fusenkazura.jpg" wait=true]
-
+;【背景】 フウセンカズラの花
+[preload storage="data/fgimage/bg/zaizen_fusenkazura2.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
