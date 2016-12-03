@@ -85,7 +85,7 @@
 
 ;[font color="#250d00" size=27]
 ;【背景】　ラジオ
-[image layer=29 x=1 y=1 storage="bg/hujieda_rajio.jpg" time=1000 visible=true]
+;[image layer=29 x=1 y=1 storage="bg/hujieda_rajio.jpg" time=1000 visible=true]
 [chara_mod name="bg" storage="bg/hujieda_rajio.jpg" time=1200]
 ;=========================================================================
 【藤枝 肇】[r]
@@ -94,7 +94,7 @@
 [sp]夢のような恋でした」[p]
 
 ;=======================
-[freeimage layer=29]
+;[freeimage layer=29]
 ;=======================
 #
 ―― 懐かしくも愛おしい気持ちが、[r]
@@ -110,6 +110,7 @@
 [font color=white size=27]
 ;【背景】洋館内装　夕空がないけどこのままでいいのかもしれません
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 [暗転]
 ;=========================================================================
 #
@@ -121,7 +122,7 @@
 
 [fadeoutbgm time=3000]
 
-[wait time=500]
+[wait time=2000]
 ;スマホで音楽がぶちときれるのはどうしようもない 
 
 ;=======================
