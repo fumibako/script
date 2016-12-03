@@ -50,8 +50,9 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-;[image layer=29 x=1 y=1 storage="bg/bg/bg_prologue.jpg" time=1000 visible=true]
-[chara_mod name="bg" storage="bg/bg/bg_prologue.jpg" time=1000]
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[主人公退場]
+[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1000]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -63,6 +64,7 @@
 ;[イベントシーン構築]
 ;=========================================================================
 ;【背景】洋館内装
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 ;=========================================================================
 #
@@ -70,44 +72,55 @@
 とても綺麗で切ない曲で、[r]
 "ピアノと[ruby text=こと]箏の合奏曲なんて珍しい"と思いながら[r]
 聞いていると、彼の声が聞こえた。[p]
-
-
+;=======================
+[freeimage layer=29]
+;=======================
 [whosay name="藤枝 肇" color=%mp.color] 
 「これは、日本に戻って初めに作曲した、初恋の人を想って[r]
 [sp]作った曲です。[r]
 [sp]どうか今彼女が幸せでありますようにと……」[p]
 
 ;=========================================================================
+
 [font color="#250d00" size=27]
 ;【背景】　ラジオ
+[image layer=29 x=1 y=1 storage="bg/hujieda_rajio.jpg" time=1000 visible=true]
 [chara_mod name="bg" storage="bg/hujieda_rajio.jpg" time=1200]
 ;=========================================================================
 
 「彼女と会ったことは、数えるほどでしたが、夢のような恋でした」[p]
 
+;=======================
+[freeimage layer=29]
+;=======================
 #
 ―― 懐かしくも愛おしい気持ちが、こみ上げて私は涙がこぼれた。[r]
+[r]
+[r]
 [sp]思い出を汚さないためにも、もう会おうと思わない。[p]
 
 ;=========================================================================
 [font color=white size=27]
-;【背景】洋館内装　夕空がない
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
+;【背景】洋館内装　夕空がないけどこのままでいいのかもしれません
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
+[暗転]
 ;=========================================================================
 #
 藤枝さまの中では、ずっと綺麗なままの私でいたいから。[p]
 ―― 私はもう戻れない過去叶わない恋をした。[r]
 [sp]……ただそれだけ[p]
 
-[暗転]
 
 [fadeoutbgm time=3000]
 
 [wait time=500]
-;スマホで音楽がぶちときれるのはどうしようもない
+;スマホで音楽がぶちときれるのはどうしようもない 
+
+;=======================
+[freeimage layer=29]
+;=======================
 
 ;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
 @jump storage="test_hujieda.ks"
 [s]
