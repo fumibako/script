@@ -341,10 +341,13 @@
 ;====================================================================================
 ;再構築に時間がかかるで退場しない
 ;明るいシーンになっていくので暗転ではなく背景で
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[暗転２ storage="bg/test_zaizen_paty1.jpg" clegit=true]
-;【背景】パーティー会場
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+[eval exp="f.haikei_credit='photo　by　名無しさん１＠'"]
+;[暗転２ storage="bg/test_zaizen_paty1.jpg" clegit=true]
+[暗転２ storage="bg/zaizen_doitutaisikan.jpg" clegit=true]
+;【背景】洋館パーティ会場
+;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg" time=50]
+;【背景】独逸大使館パーティ会場
+[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
 ;[主人公通常]
 ;心情の表情設定↑　その後驚きで
 [暗転２終了]
