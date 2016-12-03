@@ -414,9 +414,12 @@
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】CGnomal
 [preload storage="data/fgimage/bg/zaizen_CGnomal.jpg" wait=true]
-;【背景】パーティー会場
-[preload storage="data/fgimage/bg/test_zaizen_paty1.jpg" wait=true]
-
+;【背景】雪柳
+[preload storage="data/fgimage/bg/zaizen_yukiyanagi.jpg" wait=true]
+;【背景】パーティー会場庭
+[preload storage="data/fgimage/bg/zaizen_paty_niwa.jpg" wait=true]
+;【背景】独逸大使館パーティ会場
+[preload storage="data/fgimage/bg/zaizen_doitutaisikan.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
