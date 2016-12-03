@@ -29,22 +29,25 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公口ほほえみ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「これは梅の香りだわ。」[p]
 
 [whosay?name=財前母]
 「[名前]さん。こんにちは。」[p]
 
-[主人公驚]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
 「財前様のお母様！」[p]
 
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公口ほほえみ]
 [主人公眉下げ下]
 [主人公目閉じ]
-[主人公口ほほえみ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「お久しぶりです」[p]
 
 [主人公目伏]
@@ -58,16 +61,17 @@
 ＃
 優しくどこか悲し気に財前のお母様は微笑む。[p]
 
-[主人公眉困り]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公眉困り]
 「……まだお会いしてないのですが[r]
 [sp] 気に入って頂けるようにいたします」[p]
 
 [whosay?name=財前母]
 「貴方ならきっと大丈夫ですよ。」[p]
 
-[主人公眉下げ下]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公眉下げ下]
 「ありがとうございます。[r]
 [sp] ところでどうして町に？」[p]
 
@@ -76,12 +80,14 @@
 [sp]止めてもらったのです。 [r]
 [sp]アルベルトの事、感謝しているのよ[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「ええ。」[p]
 
 [whosay?name=財前母]
 「ああ。そうだわ！今お暇かしら？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「ええ……時間はありますわ。」[p]
 
@@ -89,24 +95,29 @@
 「これからチャリティーバザーに出かけるの[r]
 [sp] ご一緒しませんか？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 [主人公ポーズ片手]
-「チャリティバザー！」[r]
+「チャリティバザー！」[p]
 （チャリティーと呼ばれる慈善活動は[r]
 [sp] 皇室や財閥を中心に行っているというわ）[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公口通常]
 [主人公ポーズ通常]
 [主人公眉下げ下]
 [主人公目伏]
-[主人公口通常]
 「私がいってもいいのでしょうか？」[r]
 （財前様もチャリティー活動を行っているのかしら）[p]
 
 [whosay?name=財前母]
 「勿論よ、貴方にとって今後の為にもいいと思います」[p]
 
-
-[背景バザー出店描けるといいんですが（汗]
+;=================================================================
+;背景バザー出店描けるといいんですが（汗
+[暗転]
+バザー出店会場[p]
+;=================================================================
 
 #
 チャリティーバザー会場は多くの人で賑わっていた。[p]
@@ -116,6 +127,7 @@
 [sp] 開催を危ぶまれたけれど[r]
 [sp]お祭りはやはり皆の楽しみですものね」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
 「皆楽しそうですね。」[p]
 
@@ -123,22 +135,30 @@
 「ええ。盛況なようで良かったわ[r]
 [sp]アルベルトも開催に尽力したとか」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 「……そうですか財前様も参加されているのですね」[p]
 
 #
-ふと見知った姿を見かけて[r]
-驚いて立ち止まってしまう[p]
+ふと見知った姿を見かけて、驚いて立ち止まってしまう[p]
 
+;背景ないのでそのままパッと出します
+;================
+[財前ベーススーツ]
+;[財前ベース燕尾服]
+[財前通常]
+;================
 [主人公驚き]
 「財前様！」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前驚き]
 「[名前]さん、それに貴方まで……」[p]
 
 [whosay?name=財前母]
 「ふふ。噂をすればなんとやらかしら」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
 「あなたが[名前]さんを連れてきたのですか？[r]
 [sp] 仕事中に迷惑です」[p]
@@ -148,21 +168,20 @@
 [sp] [名前]さんは貴方と結婚するのでしょう？[r]
 [sp] いい勉強になるのではないかしら？」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前眉ひそめ]
-「……あの時からか随分と[r]
-[sp] 馴れ馴れしい物言いですね[r]
+「……あの時からか随分と、馴れ馴れしい物言いですね[r]
 [sp] 貴方への怒りは完全に消えてません。」[p]
 
 [whosay?name=財前母]
-「アルベルト、でも私は[r]
-[sp] もう貴方に変に気を使ったりするのを[r]
-[sp] 止める事にしたのです[r]
+「アルベルト、でも私は、もう貴方に変に気を使ったりするのを[r]
+[sp]止める事にしたのです。[r]
 [sp] だって貴方は私の大切な息子です」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前目閉じ]
 「過去を蒸し返す気はありません。[r]
-[sp] 私も貴方を許すと決めましたが[r]
-[sp] まだ気安く話されると虫唾が走ります」[p]
+[sp]私も貴方を許すと決めましたが、まだ気安く話されると虫唾が走ります」[p]
 
 [主人公憂い]
 「財前様！」[p]
@@ -172,6 +191,7 @@
 [sp] 気長に努力するつもりです。[r]
 [sp] それより[名前]さんと見回ったらいいわ」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
 「……まあいいでしょう。[r]
 [sp] [名前]さんこちらに」[p]
@@ -185,24 +205,27 @@
 
 [財前通常]
 「[名前]さん行きましょう」[p]
-
+;=================================================================
+;背景変更　移動　どのような背景でしょうか
+;=================================================================
 ＃
 私は財前様と歩き出した。[r]
-暫く無言で歩くけど[r]
-怒っている感じはしなかった[p]
+暫く無言で歩くけど、怒っている感じはしなかった[p]
 
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
 「あの！　財前様も[r]
 [sp] このバザーに尽力したとお聞きしました[r]
 [sp] その……すごいですわ！」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
 「私だけの力ではありません。[r]
 [sp] チャリティーバザーは[r]
 [sp] もともと政府高官の奥方達が[r]
 [sp] 慈善活動の為に始められたものです」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
 [主人公口ほほえみ]
@@ -210,85 +233,125 @@
 「そうですの。[r]
 [sp] よければお話ししてくださいませんか？」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前目閉じ]
-「ええ。構いません。我が国で
-[sp] チャリティーバザーが始められたのは高名な伯爵夫人です。[r]
-[sp] 彼女は病院を見学して病人の世話をするのが[r]
-[sp] 数人の雑用係の男性な事に衝撃を受け、[r]
-[sp] そして伯爵夫人は看護学校の必要性を説いたそうです」[p]
+「ええ。構いません。[r]
+[sp]我が国で、チャリティーバザーが始められたのは高名な伯爵夫人です」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
+「彼女は病院を見学して病人の世話をするのが、[r]
+[sp]数人の雑用係の男性な事に衝撃を受け、[r]
+[sp]そして伯爵夫人は看護学校の必要性を説いたそうです」[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口通常]
 「政府の援助はなかったのですか？」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
 「当時政府は財政難で援助は難しかったのですよ。[r]
 [sp] 伯爵夫人は政府高官の奥方達と陣頭指揮をとって[r]
 [sp] バザーを開催し、その資金で看護学校を創設しています。」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
 「立派ですわね」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前目閉じ]
 「そうですね。[r]
 [sp] 以来財閥や皇室なども[r]
 [sp] 慈善活動に力をいれているのです」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 「……私もそんな風になりたいですわ」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
 「勿論そうなっていただこうと思っていますよ[r]
 [sp] よく学んで下さい。」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目伏]
 [主人公頬染め]
 「ええ。精進いたします」[r]
 （財前様は私の事を認めて下さっているのね）[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前口ほほえみ]
 「[名前]さん、何か買いたい品物はありますか？[r]
 [sp] 今日限定で職人の方々にお願いした[r]
 [sp] 特注の品物などは早く買わないと売り切れてしまいますよ」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [効果消し]
 [主人公憂い]
 「初めてなのでよくわかりませんの[r]
 [sp] まずは財前様のお役に立てるように[r]
 [sp] 何か出来ませんか？」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前驚き]
 「[名前]さんは変わった方ですね」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前微笑み]
 「では主催者の婦人方に[名前]さんに[r]
-[sp] 紹介しましょうか、[r]
-[sp] 人手が足りない所も出ているかもしれません」[p]
+[sp]紹介しましょうか、[r]
+[sp]人手が足りない所も出ているかもしれません」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
-「私、このままの服装でいいかしら？」[r]
+「私、このままの服装でいいかしら？」[p]
 （主催者とは政財界の奥方様達ね。[r]
-[sp] 華族はもちろんの事、皇族の方も[r]
-[sp] 参加しているかも知れないわ）[p]
+[sp]華族はもちろんの事、皇族の方も、参加しているかも知れないわ）[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
-「むしろ目立つ服装でないことの方が[r]
-[sp] この場では好ましいでしょう。[r]
-[sp] 気にしなくとも[名前]さんの所作見れば[r]
-[sp] 名家の御令嬢ということは分りますよ」[p]
+「むしろ目立つ服装でないことの方が、この場では好ましいでしょう。[r]
+[sp]気にしなくとも[名前]さんの所作見れば[r]
+[sp]名家の御令嬢ということは分りますよ」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
 [主人公口ほほえみ]
 「ええ」[p]
 
-;【テキスト全画面】黒茶・和紙風背景に白文字
-[テキスト全画面白文字]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】黒茶・和紙風背景に白文字[テキスト全画面白文字]
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+;【背景】バザー会場
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 #
 数時間後[p]
+バザー会場[p]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+;メッセージをもどします
+;[playse storage=paper_open.ogg loop=false ]
+[resetfont]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[call target=*start storage="macro_tati_zaizen.ks"]
+[cm]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 
-[背景バザー会場]
-[イベントシーン構築]
-[主人公ポーズ通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「ありがとうございました」[p]
 
@@ -298,10 +361,12 @@
 [sp] 丁寧に品物を包んで下さって、[r]
 [sp] お客様にも喜こばれていましたわ」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏柔]
 「ええ、感謝されると私まで嬉しくなります」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 「いずれ私も皆様のようにこのような機会を[r]
 [sp] 作れるようになりたいと思いますわ」[p]
@@ -312,6 +377,7 @@
 [sp] 加わって頂けるなら歓迎しますよ。[r]
 [sp] ところで[名字]様は財前様の婚約者なのですって？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目伏]
 「ええ」[p]
 
@@ -328,6 +394,7 @@
 [sp] 独逸大使夫人の庶子で[r]
 [sp]亀蔵財閥総帥の腰巾着とか」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
 [主人公口開け]
 「噂など当てになりませんわ。[r]
@@ -345,7 +412,7 @@
 私は後ろに振り向くと財前様が立っていた。[p]
 
 [主人公驚き]
-
+[whosay name="財前 美彬" color=%mp.color]
 [財前ため息]
 「私が見えていてわざといいましたね[r]
 [sp] ……余計なお世話です[r]
@@ -356,11 +423,13 @@
 [sp] 社交界でも財前様の良妻と評判の方になると思います。[r]
 [sp] [名字]様、財前様と行ってよろしいわ」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 「え、ええ。では失礼します」[p]
 
 [主人公通常]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前目閉じ]
 「あの伯爵夫人はよく[r]
 [sp] あんな風に人を試すことがあるんです。[r]
@@ -370,6 +439,7 @@
 [主人公ほほえみ]
 「親切に作業を教えてくださいましたわ」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前ほほえみ]
 「そうですか。
 [sp] [名前]さんもお手伝いばかりでお疲れでしょう。[r]
@@ -380,84 +450,99 @@
 [sp] 見回りをしたついでに私も[r]
 [sp] 財前様にと買った物がありますわ」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
 「それはまたどんなものを？」[p]
 
 [主人公目閉じ]
 [主人公頬染め]
-「名刺入れです」[r]
+「名刺入れです」[p]
+
 （喜んでくださるかしら）[p]
 
 ＃
-私は藍染に植物の刺繍の入った[r]
-名刺入れを差し出し財前様は受け取る[p]
+私は藍染に植物の刺繍の入った、名刺入れを差し出し[r]
+財前様は受け取る。[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前ほほえみ]
 「ありがとうございます[r]
 [sp] 小物もあると便利な時がありますね[r]
 [sp] この植物は見たことありませんが」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 「フウセンカズラという植物なんですって[r]
 [sp] 涼し気でいいかと思ったのです[r]
 [sp] 気に入りませんでしたか？」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前目閉じ]
 「いえ、そんな事はありませんよ。[r]
 [sp]家の奥にしまったままになる[r]
 [sp] 贈り物だと困りますから安心しました。」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「ええ、使って下さい」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前微笑み]
 「ええ、[r]
 [sp] ところで[名前]さん[r]
 [sp] 何を買いましょうか？[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
-「財前様のお勧めの品物はないですか？」
-（財前様が贈って下さるなら何でも嬉しいわ）
+「財前様のお勧めの品物はないですか？」[p]
 
+（財前様が贈って下さるなら何でも嬉しいわ）[p]
+
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
-「そうですね。
-そのの京扇子などどうですか？」
+「そうですね。　その京扇子などどうですか？」
 
 ＃
-財前様の視線の先を見ると
-流水が描かれ金箔の桜を散らした
-見事な京扇子が置かれていいた
+財前様の視線の先を見ると、流水が描かれ金箔の桜を散らした、
+見事な京扇子が置かれいた。[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚き]
 「財前様、二十円もしますわ！
 そんな高価なもの頂けません」
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前口笑み]
-「そうですか？
-気品があって所作の美しい
-貴方によく似合うと思いますが」
+「そうですか？[r]
+[sp]気品があって所作の美しい。[r]
+[sp]貴方によく似合うと思いますが」
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
-「いえ、あの私
-あちらで見かけたリボンがいいですわ
-不思議と既製品よりかわいいものが多かったのです」
-（そして既製品より安かったわ）
+「いえ、あの私、あちらで見かけたリボンがいいですわ。[r]
+[sp]不思議と既製品よりかわいいものが多かったのです」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（そして既製品より安かったわ）[p]
+
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
-「ああ、あれは呉服屋に前々から
-女学生や貴婦方から特に好まれそうな生地の
-切れ端を安く買い取って針妙に加工してもらったのです」
+「ああ、あれは呉服屋に前々から、女学生や[r]
+[sp]貴婦方から特に好まれそうな生地の切れ端を安く買い取って[r]
+[sp]針妙に加工してもらったのです」
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚き]
-「いろいろと工夫しているんですね」
+「いろいろと工夫しているんですね」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前目閉じ]
-「いえ、祖父が呉服屋をしていたので
-女学生のリボンはそういった
-自作がほとんどだと聞いたものですから
+「いえ、祖父が呉服屋をしていたので、[r]
+[sp]女学生のリボンは、そういった自作がほとんどだと聞いたものですから
 お手本にさせて頂いただけです」
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
 [主人公口ほほえみ]
@@ -466,77 +551,166 @@
 [主人公憂い]
 ＃
 リボンを見に行くと、
-すでにかなりのリボンが売り切れていた。
+すでにかなりのリボンが売り切れていた。[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前ため息]
-「残りはこの３個ですか、やや地味ですね」
+「残りはこの３個ですか、やや地味ですね」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
 [主人公口ほほえみ]
-「でも残り物には福があるといいますわ
-どれがいいかしら？」
+「でも残り物には福があるといいますわ。[r]
+[sp]どれがいいかしら？」[p]
+
 
 ＃
-残りの三つのリボンも十分綺麗で可愛らしい
-どれもリボンの結び目にはつまみ細工の
-花があつらえてあった。
+残りの三つのリボンも十分綺麗で可愛らしい。[r]
+どれもリボンの結び目にはつまみ細工の花があつらえてあった。[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
-「……その赤市松に赤い生地を組み合わせた牡丹の細工の
-のリボンなどどうですか？
-[名前]さんの雰囲気と着物に合っていますよ」
+「……その赤市松に赤い生地を組み合わせた、[r]
+[sp]牡丹の細工のリボンなど、どうですか？[r]
+[sp][名前]さんの雰囲気と着物に合っていますよ」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
-「ええ！それがいいですわね」
-（財前様が見立ててくださったわ）
+「ええ！それがいいですわね」[p]
+
+（財前様が見立ててくださったわ）[p]
 
 ＃
-リボンを包んでもらい、
-財前様と再び一緒に歩く。
+リボンを包んでもらい、財前様と再び一緒に歩く。[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前笑み]
-「他愛ないことですごく嬉しそうにするんですね」
+「他愛ないことですごく嬉しそうにするんですね」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚き]
 [主人公頬染め]
-（また財前様の優しい笑顔がみれたわ）
+（また財前様の優しい笑顔がみれたわ）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 
 [主人公憂い]
-（でも嬉しいはずだけど胸が痛い
-……財前様は恋愛がお嫌いだから
-私の恋愛感情は要らない）
+（でも嬉しいはずだけど胸が痛い……[r]
+[sp]財前様は恋愛がお嫌いだから、私の恋愛感情は要らない）[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前驚き]
-「突然悲しそうに。どうしましたか？」
+「突然悲しそうに。どうしましたか？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
-「なんでもありません
-今日はとても勉強になりましたわ
-私、財前様のお役にたてるようにいたします」
+「なんでもありません。[r]
+[sp]今日はとても勉強になりましたわ。
+[sp]私、財前様のお役にたてるようにいたします」[p]
 
+[whosay name="財前 美彬" color=%mp.color]
 [財前通常]
-「何を……[名前]さんは[名前]らしく
-していればいいのです。
-私は貴方を気に入っているのです」
+「何を……[名前]さんは[名前]らしくしていればいいのです。[r]
+[sp]私は貴方を気に入っているのです」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口通常]
-「初めてお会いした時に、
-地位がある事と貞淑であることと器量がある事
-しか望んでいないと……」
-(心を開いてくれてもそれ以上を望んでしまう)
+「初めてお会いした時に、[r]
+[sp]地位がある事と貞淑であることと器量がある事しか[r]
+[sp]望んでいないと……」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(心を開いてくれても、それ以上を望んでしまう)[p]
+
+[whosay name="財前 美彬" color=%mp.color]
 [財前ため息]
-「ええ……でもそれ以上に
-いえ、なんでもありません」
+「ええ……でもそれ以上に……いえ、なんでもありません」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
-（私は恋をしているから苦しい。
-財前様は恋をしない……こんな感情が煩わしいから
-それでも優しくされると期待してしまう）
+（私は恋をしているから苦しい。[r]
+[sp]財前様は恋をしない……こんな感情が煩わしいから）[p]
+
+（それでも優しくされると期待してしまう）[p]
 
 ＃
-いつかはきっととー
+いつかはきっとと――[p]
+;イベント終了
+[暗転]
+[イベントシーン終了]
+[stopbgm]
+;暗く全体消えていく演出
+[freeimage layer=29]
+[layopt layer=fix visible=true]
 
-イベント終了
+;@jump storage="event.ks" target=*event_owari
+
+@jump storage="test_katuragi.ks"
+[s]
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[locate x=530 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[locate x=730 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=830 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[wait time=10]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
 
