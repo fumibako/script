@@ -115,6 +115,23 @@
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】主人公邸 玄関
 ;[preload storage="data/fgimage/bg/bg_genkan.jpg" time=1000]
+;【背景】藤枝＿音楽練習室
+[preload storage="data/fgimage/bg/I9IhvvVdPo/ongakurensyuusitu.jpg" wait=true]
+;【背景】藤枝＿音楽会場外観
+[preload storage="data/fgimage/I9IhvvVdPo/ensoukaijyou.jpg" wait=true]
+;【効果】キラキラ
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_kirakira.png" wait=true]
+;【効果】;ピアノベース藤枝(目なし)
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_base.png" wait=true]
+;【効果】ピアノベース藤枝(目のみ通常１)
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_futuu.png" wait=true]
+;【効果】ピアノベース藤枝(目のみ閉じ1)合体表示
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_fusi1.png" wait=true]
+;【効果】ピアノベース藤枝(目のみ閉じ2)合体表示
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_fusi2.png" wait=true]
+;【効果】ピアノベース藤枝(目のみ閉じ2)合体表示
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_toji.png" wait=true]
+
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
@@ -427,8 +444,17 @@
 [preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
 ;【効果】キラキラ
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_kirakira.png" wait=true]
-;【効果】ピアノ
-[preload storage="data/fgimage/bg/B4nFWraU42/piano_base.png" wait=true]
+;【効果】;ピアノベース藤枝(目なし)
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_base.png" wait=true]
+;【効果】ピアノベース藤枝(目のみ通常１)
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_futuu.png" wait=true]
+;【効果】ピアノベース藤枝(目のみ閉じ1)合体表示
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_fusi1.png" wait=true]
+;【効果】ピアノベース藤枝(目のみ閉じ2)合体表示
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_fusi2.png" wait=true]
+;【効果】ピアノベース藤枝(目のみ閉じ2)合体表示
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_toji.png" wait=true]
+
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
@@ -491,6 +517,7 @@
 ;======================================================================================
 ;他散策時の凡庸
 ;======================================================================================
+*sansaku
 *bonyou
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
