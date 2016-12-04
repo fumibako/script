@@ -112,8 +112,8 @@
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ show
 [chara_show name="piano_base_me" layer=2 left=1]
 ;===================================藤枝を表準備完了です。====================================================
-;藤枝を表示します。
-[暗転２終了]
+;藤枝を表示します。ボタンは表示しない
+[freeimage layer=29 time=1000]
 
 ;表情切り替えをします。
 ;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
@@ -127,8 +127,8 @@
 [暗転２ storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=2000]
 ;SE拍手長め
 ;ピアノ画像消去１
-[freeimage layer=1 time=50]
-[freeimage layer=2 time=50]
+[chara_hide name="piano_base" time=0]
+[chara_hide name="piano_base_me" time=0]
 ;ミルクホールピアノを消去する
 [暗転２終了]
 ;=============================ピアノを弾くシーンおわり=================================================
