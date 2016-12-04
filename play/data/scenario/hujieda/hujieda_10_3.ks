@@ -109,9 +109,9 @@
 ;ピアノベース藤枝(目なし)レイヤー１
 [image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ new
-[chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1 left=300]
+[chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ show
-[chara_show name="piano_base_me" layer=2]
+[chara_show name="piano_base_me" layer=2　left=400]
 
 ;藤枝を表示します。
 [freeimage layer=29 time=600]
