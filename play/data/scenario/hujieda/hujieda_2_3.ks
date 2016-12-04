@@ -241,11 +241,11 @@
 [主人公口ほほえみ]
 ;============================================================================================
 [暗転２]
-[暗転]
+[eval exp="f.haikei_credit='　　'"]
+[chara_mod name="bg" storage="bg/hujieda_kyakuseki.jpg" time=100]
 [暗転２終了]
-観客席[p]
+;観客席
 ;============================================================================================
-
 [whosay name="三宮　時子" color="#c25232"]
 「演奏者は３人、候補を外れた女性の方も演奏されて[r]
 [sp]３人は課題の「ラ・カンパネッラ」[r]
@@ -255,8 +255,8 @@
 
 ;============================================================================================
 [eval exp="f.haikei_credit='　　'"]
-[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1000]
+[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1300]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
 [暗転２終了]
