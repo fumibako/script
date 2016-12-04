@@ -318,12 +318,11 @@
 （貴方が来てくれた、[r]
 [sp]それなら僕は何も恐れることはない）[p]
 ;===================================ピアノを弾くシーンはじまり=================================================
-[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
+[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1300]
 [藤枝退場]
 ;メッセージレイヤを非表示します。
 @layopt layer=message0 page=fore visible=false
 ;準備中の上にのせて
-[暗転２ storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
 ;消えている瞬間を隠す
 [主人公退場]
 ;会話ウィンドウ消去 メッセージあると何の画像かわからない
@@ -338,7 +337,7 @@
 [chara_show name="piano_base_me" layer=2 left=1]
 ;===================================藤枝を表準備完了です。====================================================
 ;藤枝ピアノベースを表示します。
-[freeimage layer=29]
+[freeimage layer=29 time=300]
 ;表情切り替えをします。
 ;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi1.png" time=0]
