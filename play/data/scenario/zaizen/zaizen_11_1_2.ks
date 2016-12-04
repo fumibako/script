@@ -47,8 +47,8 @@
 #
 財前様をおいて彼女の消えていった方へ向かい、[r]
 階段を上がり、人に聞いて彼女のいる部屋に向かった。[p]
-;【SE】ドアのノックの音　SEお願いします
-;[playse storage=paper_open.ogg loop=false ]
+;【SE】ドアノック音(トントン)
+[playse storage=door-knock.ogg loop=false ]
 
 ;【立ち絵】主人公：憂い
 [whosay name=&sf.girl_namae color="#cf5a7f"]
