@@ -115,6 +115,7 @@
 [image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ new
 [chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=1 zindex=2 top=1 left=1]
+[chara_show name="piano_base_me"]
 [freeimage layer=29 time=600]
 ;表情切り替え
 ;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
