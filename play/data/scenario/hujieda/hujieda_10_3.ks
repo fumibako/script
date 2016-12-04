@@ -83,15 +83,9 @@
 「こちらのお席になります」[p]
 #
 ;==============================================================================
-;[eval exp="f.haikei_credit='クレジット'"]
-[layopt layer=fix visible=false]
-[表示準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg" layer=29 time=1300]
-;クレジット[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
+;【背景】ミルクホール店内・客席
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=1000]
 [主人公通常]
-[freeimage layer=29 time=400]
-[layopt layer=fix visible=true]
-;ふわっと表示依頼
 ;==============================================================================
 #
 広い店内の奥にはピアノが置かれおり、[r]
