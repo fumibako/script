@@ -209,7 +209,7 @@
 「それは秘密ですわ」[p]
 #
 ;============================================================================================
-[暗転2]
+[暗転２]
 [eval exp="f.haikei_credit='I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
 [暗転２終了]
