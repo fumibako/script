@@ -61,8 +61,7 @@
 ;【立ち絵】主人公：通常
 [主人公憂い]
 [主人公口ムッ]
-「お兄様、私だってもう[ruby text=じゅう]十[ruby text=ろく]六です。[r]
-[sp]もう結婚もできます」[p]
+「お兄様、私だってもう[ruby text=じゅう]十[ruby text=ろく]六です。もう、結婚もできます」[p]
 
 [whosay name="文矢" color="#538a8a"] 
 「それにしてもわざわざ花まで用意して[r]
@@ -73,8 +72,8 @@
  [主人公目大]
  [主人公汗]
  [主人公口開]
-「それは……その評判のピアニストに[r]
-[sp]手紙とお花を渡したいと思ったのです」[p]
+「それは……その評判のピアニストに手紙とお花を[r]
+[sp]渡したいと思ったのです」[p]
 [主人公効果消]
 [主人公口通常]
 [主人公通常]
@@ -84,8 +83,8 @@
 「こちらのお席になります」[p]
 #
 ;==============================================================================
-;【背景】ミルクホール店内・客席
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=1200]
+;【背景】ミルクホール店内・客席 ゆっくり
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=1300]
 ;==============================================================================
 #
 広い店内の奥にはピアノが置かれおり、[r]
@@ -111,7 +110,7 @@
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ new
 [chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ show
-[chara_show name="piano_base_me" layer=2　left=400]
+[chara_show name="piano_base_me" layer=2 left=400]
 
 ;藤枝を表示します。
 [freeimage layer=29 time=600]
