@@ -26,7 +26,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 #
-磯野はゆっくりと沈鬱に新聞を差し出した。[p]
+磯野は、ゆっくりと沈鬱に新聞を差し出した。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
@@ -170,11 +170,10 @@
 [sp]そんなことも分らないのか！」[p]
 
 ;【立ち絵】葛城宮　怒り
-;==========
+
 ;キャラが止まってるので目パチ（目大）
-[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
-[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_ake.png" time=0]
-;==========
+[葛城宮目パチ1回]
+
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「それが本音か！[sp]軍の拡張はこれ以上は必要ない」[r]
 [葛城宮口ムッ]
@@ -189,6 +188,7 @@
 [fadeoutbgm time=3000]
 ;【立ち絵】葛城宮　怒り
 [葛城宮怒り]
+[葛城宮眉怒り皺]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「開き直るな！[r]
 [sp]植民地を手に入れずとも、豊かになることはできる[r]
@@ -198,7 +198,7 @@
 「で？　なんだ？[r]
 [sp]貴殿は国を豊かにできるのか？」[p]
 
-;【立ち絵】葛城宮　怒り
+;【立ち絵】葛城宮　憂い
 [葛城宮憂い]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「っ……」[p]
