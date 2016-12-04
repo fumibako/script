@@ -367,6 +367,8 @@ $('.junbi_girl').remove();
 緊迫した雰囲気がなくなり、[r]
 殿下の姿と優しい眼差しにほっとして気が遠くなっていく[p]
 
+;【SE】倒れて腕に受け止められる（フラ…サッ）
+[playse storage=taoreru_udenonakahe.ogg loop=false ]
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
