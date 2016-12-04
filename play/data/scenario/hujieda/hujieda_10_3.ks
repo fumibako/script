@@ -49,10 +49,12 @@
 「予約の[名字]様ですね。お席に案内します」[p]
 
 #
-歩きながらお兄様は私に尋ねる。[p]
+歩きながら、お兄様は私に尋ねる。[p]
+;【SE】落ち着いた足音（フェードアウト）
+;[playse storage=isono_out.ogg loop=false ]
 
 [whosay name="文矢" color="#538a8a"] 
-「普段わがままを言わない[名前]の頼みなら仕方ないと思ったけど[r]
+「普段、わがままを言わない[名前]の頼みなら仕方ないと思ったけど[r]
 [sp][名前]には、まだミルクホールは早くないかい？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -78,14 +80,12 @@
 [主人公通常]
 [whosay name="文矢" color="#538a8a"] 
 「まあ確かに素晴らしい旋律を奏でているね」[p]
-
 [whosay name="店員"]
 「こちらのお席になります」[p]
 #
 ;==============================================================================
 ;【背景】ミルクホール店内・客席
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=1000]
-[主人公通常]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=1200]
 ;==============================================================================
 #
 広い店内の奥にはピアノが置かれおり、[r]
@@ -104,14 +104,19 @@
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
 ;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
+
+;藤枝を表準備します。
 ;ピアノベース藤枝(目なし)レイヤー１
 [image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ new
-[chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1 left=1]
+[chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1 left=300]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ show
 [chara_show name="piano_base_me" layer=2]
+
+;藤枝を表示します。
 [freeimage layer=29 time=600]
-;表情切り替え
+
+;表情切り替えをします。
 ;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi1.png" time=10]
 ;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
@@ -119,13 +124,13 @@
 ;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_toji.png" time=10]
 
-;ピアノ消去する_タイムは調整中
+;ピアノ消去するために被せます。_タイムは調整中
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=2000]
 ;SE拍手長め
 ;ピアノ画像消去１
 [freeimage layer=1 time=50]
-;藤枝目退場
-[chara_hide name="piano_base_me"]
+[freeimage layer=2 time=50]
+;ミルクホールピアノを消去する
 [freeimage layer=29 time=50]
 ;=============================ピアノを弾くシーンおわり=================================================
 
