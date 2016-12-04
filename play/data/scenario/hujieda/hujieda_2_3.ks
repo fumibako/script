@@ -92,7 +92,7 @@
 
 #
 この手紙を読み返し励まされながら[r]
-わずか一か月のわずかな練習時間で、この難曲を諦めずに取り組み[r]
+わずか一か月の練習時間で、この難曲を諦めずに取り組み[r]
 ここまで弾けるようになった。[p]
 
 [fadeoutbgm time=3000]
@@ -103,7 +103,7 @@
 
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
-;【テキスト全画面】;[新聞] 裏で画面構成 test_bg_sinbun.jpg
+;【テキスト全画面】黒茶・和紙風
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
@@ -111,11 +111,6 @@
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 [藤枝退場]
-[主人公ポーズ通常]
-[主人公通常]
-;【背景】主人公邸 庭の見える部屋：昼
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -129,15 +124,18 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 #
-
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 ;メッセージをもどします
-;[playse storage=paper_open.ogg loop=false ]
 [resetfont]
-[freeimage layer = 29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;【背景】主人公邸 庭の見える部屋：昼
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=30]
 [イベントシーン構築ボタン無し版]
+[主人公ポーズ通常]
+[主人公通常]
+[freeimage layer = 29 time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -150,9 +148,10 @@
 「今日は時子さんが来られるの、[r]
 [sp]一緒に外出していいかしら？」[p]
 
+
 [whosay name=磯野 color="dimgray"]
-「まあ息が詰まるのも分りますが、[r]
-[sp]女中を一人控えさせていただきます」[p]
+「まあ、息が詰まるのも分りますが、女中を一人控えさせて[r]
+[sp]いただきます」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：ため息
@@ -212,13 +211,12 @@
 [layopt layer=fix visible=false]
 #
 [暗転]
-[eval exp="f.haikei_credit='まだないです'"]
-[表示準備 storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" layer=29]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[eval exp="f.haikei_credit='I9IhvvVdPo'"]
+[暗転２ storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" clegit=true]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
 [主人公ポーズ通常]
 [主人公通常]
-[freeimage layer=29 time=1000]
+[暗転２終了]
 [layopt layer=fix visible=true]
 ;============================================================================================
 [主人公目パチ1回]
