@@ -15,11 +15,10 @@
 #
 [主人公ポーズ通常]
 [主人公通常]
+[主人公照れ目普通]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-
-[主人公照れ目普通]
 #
 私は、お兄様とともに、『ミルクホール 月ノ光』にやってきた。[p]
 [if exp="sf.BGM=='ON'"]
@@ -36,7 +35,7 @@
 「まだ早かったようだね」[p]
 #
 ふとお兄様の声に待合室の時計を見ると、[r]
-予約した時間より五分ほど、早く着いてしまったようだ。[p]
+予約した時間より、五分ほど早く着いてしまったようだ。[p]
 
 [主人公目閉]
 待合室には、客席からのピアノの音が聞こえ、[r]
@@ -73,7 +72,7 @@
  [主人公汗]
  [主人公口開]
 「それは……その評判のピアニストに[r]
-[sp] 手紙とお花を渡したいと思ったのです。」[p]
+[sp]手紙とお花を渡したいと思ったのです」[p]
 [主人公効果消]
 [主人公口通常]
 [主人公通常]
@@ -114,8 +113,9 @@
 ;ピアノベース藤枝(目なし)レイヤー１
 [image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ new
-[chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=1 zindex=2 top=1 left=1]
-[chara_show name="piano_base_me"]
+[chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1 left=1]
+;ピアノベース藤枝(目のみ通常１)レイヤー１ show
+[chara_show name="piano_base_me" layer=2]
 [freeimage layer=29 time=600]
 ;表情切り替え
 ;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
