@@ -111,22 +111,26 @@
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
 ;【背景】ミルクホール店内ピアノ
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
-;ピアノベース表示 まぎらわしいのでimage
-[image storage="bg/B4nFWraU42/piano_base.png" layer=13 time=50 visible=true]
-[藤枝ベース私服]
-[wait time=10]
-[藤枝微笑み]
-;[藤枝アップ]を確認中
-[wait time=10]
+;ピアノベース藤枝(目なし)レイヤー１
+[image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
+;ピアノベース藤枝(目のみ通常１)レイヤー１ new
+[chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=1 zindex=2 top=1 left=1]
 [freeimage layer=29 time=600]
-[藤枝目閉じ]
-[wait time=100]
+;表情切り替え
+;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
+[chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi1.png" time=10]
+;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
+[chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi2.png" time=10]
+;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
+[chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_toji.png" time=10]
+
 ;ピアノ消去する_タイムは調整中
 [表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=2000]
 ;SE拍手長め
-;ピアノ画像消去
-[freeimage layer=13 time=50]
-[藤枝退場]
+;ピアノ画像消去１
+[freeimage layer=1 time=50]
+;藤枝目退場
+[chara_hide name="piano_base_me"]
 [freeimage layer=29 time=50]
 ;=============================ピアノを弾くシーンおわり=================================================
 
