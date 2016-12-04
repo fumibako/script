@@ -375,9 +375,9 @@
 [r]
 [sp]時間が許すまで私は殿下のお話を聞いた。[p]
 [cm]
-;切り替えまで時間がかかるのでSEをお願いします
-;【SE】スズムシ（リーンリーン）
-;[playse storage=mushi_suzumushi.ogg loop=false ]
+;切り替えまで時間がかかるのでSE
+;【SE】秋の虫複数
+[playse storage=musi_aki.ogg loop=false ]
 ;=========================================================================================
 ;背景切り替わりでセーブ等はさせない
 [layopt layer=fix visible=false]
