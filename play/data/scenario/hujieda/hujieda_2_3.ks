@@ -433,22 +433,33 @@ $('.piano_base_me').remove();
 
 「ですが、僕は独逸留学を辞退します」[p]
 
+[fadeoutbgm time=3000]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：驚き
 [主人公驚]
 （え！）[p]
+
+;【SE】人々のざわめき（ザワザワ…コンサート等ホール会場）
+[playse storage=zawa_hall.ogg loop=false ]
 #
 ざわざわと周囲が話し始める。[p]
 
 [whosay name="音楽留学関係者"]
 「静粛に！藤枝君それはどうしてかね？」[p]
 
+
 ;【立ち絵】藤枝：真剣
 [whosay name="藤枝 肇" color=%mp.color] 
 [藤枝真剣]
 「僕は今大切にしたい人がいます」[p]
 
-[fadeoutbgm time=3000]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
+
 
 ;【立ち絵】藤枝：目閉じ
 [藤枝目閉じ]
@@ -527,10 +538,11 @@ $('.piano_base_me').remove();
 [暗転２]
 ;【背景】ピアノホール（遠景）
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku2.jpg" time=50]
+[藤枝退場]
 [暗転２終了]
 ;============================================================================================
 #
-再び藤枝様はピアノに向かい音を紡いだ[p]
+再び藤枝様はピアノに向かい音を紡いだ。[p]
 
 ;==============================================================================
 ;【イメージ】キラキラ透過素材 layer=13 ゆっくり消したいので13を使用　キラキラも別バージョンがあるといいですね
