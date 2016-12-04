@@ -117,7 +117,7 @@
 
 ;表情切り替えをします。
 ;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
-[chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi1.png" time=20]
+[chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi1.png" time=0]
 ;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi2.png" time=20]
 ;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
