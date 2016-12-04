@@ -263,7 +263,7 @@
 ;============================================================================================
 [eval exp="f.haikei_credit='　　'"]
 ;【背景】室内音楽堂（近景）
-[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1300]
+[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1200]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
@@ -282,7 +282,7 @@
 ;【立ち絵】藤枝：微笑み
 [藤枝ベース私服]
 [藤枝微笑み]
-[表示開始 time=500]
+[表示開始 time=300]
 ;==========
 
 #
@@ -318,7 +318,7 @@
 （貴方が来てくれた、[r]
 [sp]それなら僕は何も恐れることはない）[p]
 ;===================================ピアノを弾くシーンはじまり=================================================
-[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1300]
+[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1100]
 [藤枝退場]
 ;メッセージレイヤを非表示します。
 @layopt layer=message0 page=fore visible=false
@@ -335,12 +335,14 @@
 [chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ show
 [chara_show name="piano_base_me" layer=2 left=1]
+[wait time=10]
 ;===================================藤枝を表準備完了です。====================================================
 ;藤枝ピアノベースを表示します。
-[freeimage layer=29 time=300]
-;表情切り替えをします。
+[freeimage layer=29 time=800]
+;表情切り替えをします。 一瞬目が消えしまう
 ;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
-[chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi1.png" time=0]
+[chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi1.png" time=0 wait=false]
+;[wait time=10]
 ;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi2.png" time=20]
 ;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
