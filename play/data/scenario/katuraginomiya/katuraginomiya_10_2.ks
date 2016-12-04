@@ -164,7 +164,8 @@
 
 [whosay name="今原中将" color=%mp.color]
 「苦労知らずの青二才が！」[p]
-;机ドンSE
+;【SE】机（ドン）
+[playse storage=tukue_don.ogg loop=false ]
 「私は貴殿と違い、苦労してこの地位を手に入れた！[r]
 [sp]国を守るためにも金や裏の繋がりが必要なんだ[r]
 [sp]そんなことも分らないのか！」[p]
