@@ -119,6 +119,10 @@
 [preload storage="data/fgimage/bg/I9IhvvVdPo/ongakurensyuusitu.jpg" wait=true]
 ;【背景】藤枝＿音楽会場外観
 [preload storage="data/fgimage/bg/I9IhvvVdPo/ensoukaijyou.jpg" wait=true]
+;【背景】藤枝＿音楽会場内装_近景
+[preload storage="data/fgimage/bg/I9IhvvVdPo/situnaiongaku.jpg" wait=true]
+;【背景】藤枝＿音楽会場内装_遠景
+[preload storage="data/fgimage/bg/I9IhvvVdPo/situnaiongaku2.jpg" wait=true]
 ;【効果】キラキラ
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_kirakira.png" wait=true]
 ;【効果】;ピアノベース藤枝(目なし)
