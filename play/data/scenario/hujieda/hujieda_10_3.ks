@@ -127,8 +127,10 @@
 [暗転２ storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=2000]
 ;SE拍手長め
 ;ピアノ画像消去１
-[chara_hide name="piano_base" time=0]
-[chara_hide name="piano_base_me" time=0]
+[iscript]
+$('.piano_base').remove();
+$('.piano_base_me').remove();
+[endscript]
 ;ミルクホールピアノを消去する
 [暗転２終了]
 ;=============================ピアノを弾くシーンおわり=================================================
