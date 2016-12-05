@@ -11,7 +11,8 @@
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [eval exp="f.haikei_credit=''"]
-[image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" layer=1 zindex=2 left=-200 visible=true]
+[image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" layer=1 zindex=2 top=600 left=-200 visible=true]
+[wait time=10]
 [keyframe name="animation1"]
 [frame p=100% x="3000" scale="4"]
 [endkeyframe]
@@ -50,11 +51,11 @@
 #
 お父様達の意外な言葉に嬉しく思っていると、目の前を[ruby text=あお]青[ruby text=かえで]楓の葉が[r]
 通り過ぎていく。[p]
-[iscript]
-$('.saku1').remove();
-[endscript]
 ;(カエデの花言葉は、「大切な思い出」「美しい変化」「遠慮」)
 ;===========================全画面==============================================
+[iscript]
+$('.kaede').remove();
+[endscript]
 ;【背景】楓の葉の背景全画面表示用　hijieda_kaede_sita2.jpg
 [暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
 ;メッセージレイヤを全画面用に設定変更
@@ -65,6 +66,7 @@ $('.saku1').remove();
 ;=========================================================================
 
 そして、その後、私は言葉を告げられなくなった。[p]
+
 ;=========================================================================
 [resetfont]
 ;メッセージレイヤを会話窓用に設定変更
@@ -225,15 +227,15 @@ $('.saku1').remove();
 指切りCG[p]
 ;=========================================================================
 #
-「指切りげんまん嘘ついたら針千本呑ます」[r]
+「指切りげんまん嘘ついたら針千本呑ます」[p]
 
 #
-私たちは同時に声を合わせて指切りをした。[r]
+私たちは同時に声を合わせて指切りをした。[p]
+
 ――そうお互いに誓い合った。 離れても貴方を想います。[p]
 
-
 [fadeoutbgm time=3000]
-
+[wait time=100]
 ;ノーマルここまで
 ;@jump storage="event.ks" target=*event_owari
 
