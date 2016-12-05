@@ -45,12 +45,14 @@
 [主人公ほほえみ]
 「まあ……！　それは嬉しい事ですわ」[p]
 
-
-[kanim name="kaede" keyframe="animation1" time="7000" ]
+[kanim name="kaede" keyframe="animation1" time="6000"]
+[wa]
 #
 お父様達の意外な言葉に嬉しく思っていると、目の前を[ruby text=あお]青[ruby text=かえで]楓の葉が[r]
 通り過ぎていく。[p]
-
+[iscript]
+$('.saku1').remove();
+[endscript]
 ;(カエデの花言葉は、「大切な思い出」「美しい変化」「遠慮」)
 ;===========================全画面==============================================
 ;【背景】楓の葉の背景全画面表示用　hijieda_kaede_sita2.jpg
