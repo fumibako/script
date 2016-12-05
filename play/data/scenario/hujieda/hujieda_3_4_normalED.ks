@@ -12,7 +12,7 @@
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [eval exp="f.haikei_credit=''"]
 [keyframe name="animation1"]
-[frame p=100% x="1000" y="1000" scale="2"]
+[frame p=100% x="2000" y="1000"]
 [endkeyframe]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
