@@ -172,6 +172,8 @@
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】公園
 [preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg" wait=true]
+;【背景】楓の葉
+[preload storage="data/fgimage/bg/hijieda_kaede_sita3.jpg" wait=true]
 ;【背景CG】hujieda_normalED.jpg
 [preload storage="data/fgimage/bg/hujieda_normalED.jpg" wait=true]
 ;======================================================================================
