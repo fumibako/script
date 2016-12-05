@@ -136,8 +136,8 @@
 
 #
 大蔵大臣は席をたち会議室を出ていった。[p]
-;【SE】ドアが開く　閉じる？
-[playse storage=door_open.ogg loop=false ]
+;【SE】ドアを閉じる音（バタン）
+[playse storage=door_close_batan.ogg loop=false ]
 
 
 [fadeoutbgm time=3000]
