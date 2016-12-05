@@ -276,6 +276,9 @@
 #
 私は、止まってあった財前様の車に乗ると、運転手さんが車を走らせた。[p]
 
+;【SE】車が走っている音（車内）
+[playse storage=car_inside.ogg loop=false ]
+
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
 「さて、何から知りたいですか？」[p]
