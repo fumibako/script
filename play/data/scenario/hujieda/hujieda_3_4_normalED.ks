@@ -11,6 +11,12 @@
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [eval exp="f.haikei_credit=''"]
+[image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" left=-1000 top=800 leyer=2]
+[keyframe name="kaede_fuwa"]
+[frame p=10% x="300" rotate="60deg"]
+[frame p=50% x="600" rotate="180deg"]
+[frame p=100% y="1000" rotate="360deg" opacity=0 ]
+[endkeyframe]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -40,29 +46,37 @@
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 「まあ……！　それは嬉しい事ですわ」[p]
-[主人公驚]
 
-[暗転]
+
+[kanim name=kaede keyframe="kaede_fuwa" time="5000"]
 #
-;お父様達の意外な言葉に嬉しく思っていると、目の前を[ruby text=あお]青[ruby text=かえで]楓の葉が通り抜けいく。[p]
+お父様達の意外な言葉に嬉しく思っていると、目の前を[ruby text=あお]青[ruby text=かえで]楓の葉が通り過ぎていく。[p]
 
 ;(カエデの花言葉は、「大切な思い出」「美しい変化」「遠慮」)
+;===========================全画面==============================================
+;【背景】楓の葉の背景全画面表示用　hijieda_kaede_sita2.jpg
+[暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+
 ;=========================================================================
+
+そして、その後、私は言葉を告げられなくなった。[p]
+;=========================================================================
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;【背景】楓の葉の背景hijieda_kaede_sita3.jpg
 [chara_mod name="bg" storage="bg/hijieda_kaede_sita3.jpg"]
-[表示準備 storage="bg/hijieda_kaede_sita3.jpg" layer=13]
-;=========================================================================
-
-#
-そして、その後、私は、言葉を告げられなくなった。[p]
-
-
-;==========================
 ;【立ち絵】藤枝：真剣
 [藤枝ベース私服]
 [藤枝真剣]
-[freeimage layer=13 time=300]
+[暗転２終了]
 ;==========================
+
+[主人公驚]
 
 まだ、若葉の楓の木の下に藤枝様が立っていた。[r]
 こちらに気づいて彼は私に柔らかく微笑む[p]
