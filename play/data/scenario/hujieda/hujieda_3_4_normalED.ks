@@ -12,10 +12,8 @@
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [eval exp="f.haikei_credit=''"]
 [image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" left=-1000 top=800 leyer=2]
-[keyframe name="kaede_fuwa"]
-[frame p=10% x="300" rotate="60deg"]
-[frame p=50% x="600" rotate="180deg"]
-[frame p=100% y="1000" rotate="360deg" opacity=0 ]
+[keyframe name="animation1"]
+[frame p=100% x="3000" scale="4"]
 [endkeyframe]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -48,7 +46,7 @@
 「まあ……！　それは嬉しい事ですわ」[p]
 
 
-[kanim name=kaede keyframe="kaede_fuwa" time="5000"]
+[kanim name="kaede" keyframe="animation1" time="7000" ]
 #
 お父様達の意外な言葉に嬉しく思っていると、目の前を[ruby text=あお]青[ruby text=かえで]楓の葉が通り過ぎていく。[p]
 
