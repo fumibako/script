@@ -11,7 +11,7 @@
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [eval exp="f.haikei_credit=''"]
-[image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" left=-1000 top=800 leyer=2]
+[image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" layer=1 zindex=2 left=-200 visible=true]
 [keyframe name="animation1"]
 [frame p=100% x="3000" scale="4"]
 [endkeyframe]
@@ -48,7 +48,8 @@
 
 [kanim name="kaede" keyframe="animation1" time="7000" ]
 #
-お父様達の意外な言葉に嬉しく思っていると、目の前を[ruby text=あお]青[ruby text=かえで]楓の葉が通り過ぎていく。[p]
+お父様達の意外な言葉に嬉しく思っていると、目の前を[ruby text=あお]青[ruby text=かえで]楓の葉が[r]
+通り過ぎていく。[p]
 
 ;(カエデの花言葉は、「大切な思い出」「美しい変化」「遠慮」)
 ;===========================全画面==============================================
