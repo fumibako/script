@@ -10,7 +10,6 @@
 [call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
-[表示準備 storage="bg/I9IhvvVdPo/kouenn.jpg" layer=13]
 [eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -21,8 +20,8 @@
 ;=========================================================================
 *seen_1a
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公目パチ1回]
 「忙しい時間を割いて頂き、ありがとうございます[r]
+[主人公目パチ1回]
 [sp]それにしても、またどうしてこの場所に？」[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -49,7 +48,9 @@
 
 ;(カエデの花言葉は、「大切な思い出」「美しい変化」「遠慮」)
 ;=========================================================================
-;【背景】楓の葉の背景
+;【背景】楓の葉の背景hijieda_kaede_sita3.jpg
+[chara_mod name="bg" storage="bg/hijieda_kaede_sita3.jpg"]
+[表示準備 storage="bg/hijieda_kaede_sita3.jpg" layer=13]
 ;=========================================================================
 
 #
@@ -70,22 +71,24 @@
 そして、彼は、お父様に礼をして言った。[p]
 
 [whosay name="藤枝 肇" color=%mp.color]
-「[名字]様この度は機会を頂き[r]
-ありがとうございます！」[p]
+「[名字]様、[r]
+[sp]この度は機会を頂き、ありがとうございます！」[p]
 
 [主人公ほほえみ]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「新聞奨学生になり、音楽学校への編入試験も優秀な成績だったと[r]
-[sp]聞いた。 君は努力家のようだな」[p]
+「藤枝君、[r]
+[sp]君は、新聞奨学生になり、音楽学校への編入試験も[r]
+[sp]優秀な成績だったと聞いた。 努力家のようだな」[p]
 
 ;【立ち絵】藤枝：微笑み
-[藤枝微笑み]
 [whosay name="藤枝 肇" color=%mp.color]
+[藤枝微笑み]
 「自分の夢と恋の為ですから[r]
 [sp]どんな努力を惜しむつもりはありません」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「良い目をしているな。[sp]だが、[名前]との仲を正式に認めるのは早いし[r]
+「良い目をしているな。[r]
+[sp]だが、[名前]との仲を正式に認めるのは早いし[r]
 [sp]君の努力が必ずしも報われとは限らない」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
