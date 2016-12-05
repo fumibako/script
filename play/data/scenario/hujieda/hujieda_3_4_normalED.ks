@@ -11,8 +11,6 @@
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [eval exp="f.haikei_credit=''"]
-[image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" layer=1 zindex=2 top=600 left=-200 visible=true]
-[wait time=10]
 [keyframe name="animation1"]
 [frame p=100% x="3000" scale="4"]
 [endkeyframe]
@@ -45,6 +43,8 @@
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 「まあ……！　それは嬉しい事ですわ」[p]
+[image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" layer=1 zindex=2 top=300 left=-200 visible=true time=50]
+[wait time=10]
 
 [kanim name="kaede" keyframe="animation1" time="6000"]
 [wa]
