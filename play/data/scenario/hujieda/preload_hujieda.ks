@@ -171,7 +171,9 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】公園
-[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg"]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg" wait=true]
+;【背景CG】hujieda_normalED.jpg
+[preload storage="data/fgimage/bg/hujieda_normalED.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
