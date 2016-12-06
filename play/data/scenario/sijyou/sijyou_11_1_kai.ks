@@ -172,19 +172,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;相思相愛のイメージ画像が(あれば…)
 [whosay name="華織" color="olivedrab"]
 「[華衣]も、彼女の深い優しさに引かれ、相思相愛の仲になっていたよ」[p]
-#
 ;////////////////////////シーン完全に現時間に戻る////////////////////
-*seen4
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-[image layer=29 storage="bg/bg_ryoutei.jpg" time=50]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-[四条イベントシーン構築]
-;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[暗転２]
+[イベントシーン構築ボタン無し版]
+;【背景】料亭
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 ;背景 料亭 主人公表示
 [主人公ポーズ通常]
@@ -194,11 +186,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条ベース羽織]
 [四条憂い]
 [wait time=10]
-;=============================
-[freeimage layer=29 time=800]
-[layopt layer=fix visible=true]
-;=============================
-[四条ボタン表示]
+[暗転２終了]
+;==========================================================
+[メッセージウィンドウ上ボタン表示]
+*seen4
 ;感情 悲しい悔やむ
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、彼女と出会ってからは、少し落ち着いてきた……けれど……」[p]
@@ -238,16 +229,21 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、そのことで、ずっと僕を恨んでいる。[r]
 [sp]君からの手紙を捨ててしまうほどに……」[p]
+;↓急すぎるので地の文をつけましたが適当に変更してください
 #
-;華織様は、目を伏せると手紙のやり取りが出来なくなった経緯を語った。
+;華織様は、目を伏せると、手紙のやり取りが出来なくなった経緯を語った。[p]
+華織様は、目を伏せると、先日の華衣様とのやり取りについて語った。
 [cm]
 ;==============◆◆◆どんな風に恨んでいるの？？　今までどう行動してたの？◆◆◆◆====================
+[暗転２]
+[主人公退場]
+;【背景】四条家（玄関外）
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[暗転２ storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" clegit=true]
-;背景四条家
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=50]
+[イベントシーン構築ボタン無し版枠茶色]
 [暗転２終了]
-[イベントシーン構築枠茶色]
+[メッセージウィンドウ上ボタン表示]
+;========================================================
 [whosay name="華織" color="olivedrab"]
 「待ってくれ[華衣]、[r]
 [sp]信じてほしい、彼女が残したものが、ここにはあるんだ」[p]
@@ -278,13 +274,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 （あの人の想いを伝えないと。　僕と[華衣]のためにも)[p]
 ;==============◆◆◆どんな風に恨んでいるの？？　今までどう行動してたの？おわり◆◆◆◆====================
-#
 [cm]
 ;=========================================================================================
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-[暗転２ storage="bg/bg_ryoutei.jpg" time=100 clegit=true]
+[暗転２]
 [wait time=10]
-;[料亭]
+;【背景】料亭
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -295,6 +290,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;プレイヤー、華織に対して疑いはもつが、読むことによって多少の消化
 [暗転２終了]
 [メッセージウィンドウ上ボタン表示]
+;=========================================================================================
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
 「本当は[華衣]の事を思うなら、ずっと会いたかった君との[r]
