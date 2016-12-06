@@ -389,7 +389,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="bg" storage="bg/test_mon.jpg" time=10]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [表示準備 storage="bg/test_mon.jpg" time=10]
-[暗点２終了]
+[暗転２終了]
 ;================================================================================
 #
 『[華衣]の婚約者の生家前』[p]
@@ -437,7 +437,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [主人公通常]
 [wait time=10]
-[暗点２終了]
+[暗転２終了]
 ;=================================================================================
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
