@@ -253,21 +253,23 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
-*seen6
 [autosave]
-#
+;===============================================================================
+[暗転２]
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[autosave]
-[whosay name="文矢(手紙)" color="#538a8a"]
-『[名前]は華織のことをどう思う？　どうしたい？』[p]
-#
 ; 相手を優しく思って考えている
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[暗転２終了]
+;===============================================================================
+*seen6
+[whosay name="文矢(手紙)" color="#538a8a"]
+『[名前]は華織のことをどう思う？　どうしたい？』[p]
+[autosave]
 [主人公目閉じ]
 [wait time=10]
 ;決意の表情を一瞬
