@@ -8,9 +8,9 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;===========================================================
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[四条イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -18,7 +18,7 @@
 [主人公困り]
 [wait time=10]
 [プリロード画面消去]
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 ;===========================================================
 #
 手紙が来なくなって数日。[p]
@@ -39,7 +39,7 @@
 ;疑心暗鬼の表情　もうすこしお上品でもいいのよ・・・
 [主人公真剣]
 [wait time=10]
-[主人公口ふぅ]
+[主人公口ムッ]
 [wait time=10]
 [主人公ポーズ指]
 [wait time=10]
@@ -75,21 +75,23 @@
 (華織様は私に何もご連絡下さらないのね)[p]
 #
 [fadeoutbgm time=3000]
-[主人公退場]
-[chara_mod name="bg" storage="toumei.gif" time=1500]
-*seen2
+;===================================================================
+[暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[主人公ポーズ通常]
+[暗転２終了]
+;===================================================================
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [主人公口通常]
 [wait time=10]
+
 [whosay name="磯野" color="dimgray"]
 「お嬢様、」[p]
+*seen2
 #
 [主人公ポーズ通常]
 [主人公通常]
