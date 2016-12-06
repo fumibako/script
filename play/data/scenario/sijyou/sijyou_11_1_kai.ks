@@ -12,11 +12,12 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;==============================================================================================
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[メッセージウィンドウ上ボタン表示]
 ;===============================テスト用イベントシーン構築ここまで===============================
 テストページからはじめます[p]
 [if exp="sf.BGM=='ON'"]
@@ -52,11 +53,10 @@
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「[華衣]の方はそう感じていなかったみたいだけれどね……」[p]
-[四条退場]
 [fadeoutbgm time=3000]
-#
 ;///////////////////徐々に回想シーンへ/////////////////////
-;[暗転]
+[暗転２]
+[四条退場]
 [chara_mod name="bg" storage="toumei.gif"]
 ;背景暗転
 ;男モノローグメッセージウィンドウ 
@@ -67,9 +67,10 @@
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
-
 ;背景四条家
-[イベントシーン構築枠茶色]
+[イベントシーン構築ボタン無し版枠茶色]
+[暗転２終了]
+[メッセージウィンドウ上ボタン表示]
 ;=================================================================================_
 *seen1
 [autosave]
@@ -238,23 +239,15 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「[華衣]は、そのことで、ずっと僕を恨んでいる。[r]
 [sp]君からの手紙を捨ててしまうほどに……」[p]
 #
-;華織様は、目を伏せると先日のことを語った　手紙のやり取りが出来なくなった時のことを？？？？？だめだああ
+;華織様は、目を伏せると手紙のやり取りが出来なくなった経緯を語った。
 [cm]
 ;==============◆◆◆どんな風に恨んでいるの？？　今までどう行動してたの？◆◆◆◆====================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[image layer=29 storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
+[暗転２ storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" clegit=true]
 ;背景四条家
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=50]
+[暗転２終了]
 [イベントシーン構築枠茶色]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
-;=============================
-[freeimage layer=29 time=800]
-[layopt layer=fix visible=true]
-;=============================
 [whosay name="華織" color="olivedrab"]
 「待ってくれ[華衣]、[r]
 [sp]信じてほしい、彼女が残したものが、ここにはあるんだ」[p]
@@ -288,28 +281,20 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 [cm]
 ;=========================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-[image layer=29 storage="bg/bg_ryoutei.jpg" time=100]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[暗転２ storage="bg/bg_ryoutei.jpg" time=100 clegit=true]
 [wait time=10]
 ;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[四条イベントシーン構築]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=50]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
-;プレイヤー、華織に対して疑いはもつが、読むことによって多少の消化
-;主人公　話を聞くのが辛いが耐えている
-;=============================
-[freeimage layer=29 time=800]
-[layopt layer=fix visible=true]
-;=============================
-[四条ボタン表示]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
+;プレイヤー、華織に対して疑いはもつが、読むことによって多少の消化
+[暗転２終了]
+[メッセージウィンドウ上ボタン表示]
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
 「本当は[華衣]の事を思うなら、ずっと会いたかった君との[r]
@@ -359,7 +344,6 @@ _　それでも、離れること、失うことはとても辛かった。[p]
 [sp]まだ帰って来られてないのですね」[p]
 ;答える1 悩みながら答える
 [四条憂い]
-
 [whosay name="華織" color="olivedrab"]
 「ここずっと、家族総出で[華衣]の捜索にあたってるけれど見つから[r]
 [sp]ない……」[p]
