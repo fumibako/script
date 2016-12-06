@@ -1,26 +1,26 @@
 ;¥¥¥¥¥¥¥¥イベントバッド_イベント5.5手紙イベントバット¥¥¥¥¥¥¥¥
 ;○数日後手紙がかえってくる
 *start
-;暗転
-;[chara_mod name="bg" storage="toumei.gif" time=1500]
 [stopbgm]
-;///使用背景メモ必要時に開放///
-;[preload storage="data/fgimage/bg/room_niwa.jpg"]
-;///////////////////////////////
 [call target=*start storage="tyrano.ks"]
+[call target=*10_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
-#
-数日後、兄[sp]"文矢"からの手紙がかえってきた。[p]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;===========================================================
+#
+数日後、兄[sp]"文矢"からの手紙がかえってきた。[p]
+
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。下がって頂戴」[p]
@@ -47,22 +47,28 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな……」[p]
-[主人公退場]
-#
+;============================================================
+[暗転２ storage="bg/bg_prologue.jpg"]
+[主人公口ムッ]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;============================================================
 ;ナレーター
 [テキスト全画面白文字暗]
 文矢の言う通り、その後、四条家と[名字]家の[r]
 結納は、たしかに執り行われた。[p]
 しかし、その2人の間に拭いきれない影を[r] 
 落としていた。[p] 
-[イベントシーン構築]
-[wait time=10]
-[主人公ポーズ通常]
-[wait time=10]
-[主人公通常]
-[wait time=10]
-[主人公困り]
-[wait time=10]
+;============================================================
+;メッセージをもどします
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[暗転２終了]
+;============================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「もし、あの時、華織様のことを"想って"いたら、[r]
 [主人公目閉じ]
