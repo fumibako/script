@@ -383,7 +383,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
-:[wait time=10]
+;[wait time=10]
 ;○急いで！のイメージ☆キャラの決意 四条の決意○京の端町、質素な邸宅がある
 ;【背景】質素な邸宅の玄関
 [chara_mod name="bg" storage="bg/test_mon.jpg" time=10]
@@ -494,7 +494,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「えぇっ？」[p]
 [主人公通常]
 ;/////////////////↑この辺りまで、四条の表情変化が激しいので修正//////////////
-
 ;[四条通常]
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
@@ -532,7 +531,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [暗転２]
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_sijyou_dozou.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条真剣]
 [wait time=10]
