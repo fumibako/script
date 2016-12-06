@@ -4,7 +4,6 @@
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-;暗転プリロードサブルーチン
 [call target=*9_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
@@ -12,11 +11,11 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 [layopt layer=13 visible=true]
 ;=========================================================================================
-;[料亭]
+;【背景】料亭
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-[四条イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -24,7 +23,7 @@
 *seen0
 [er]
 [プリロード画面消去]
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 ;=========================================================================================
 #
 兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
