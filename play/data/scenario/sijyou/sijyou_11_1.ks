@@ -252,12 +252,14 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *skp_cmon
 [cm]
 [resetfont]
+[暗転２]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [chara_mod name="bg" storage="toumei.gif"]
 [主人公ポーズ通常]
 [主人公通常]
+[暗転２終了]
 [主人公目閉じ]
 [wait time=10]
 [current layer="message0"]
@@ -269,11 +271,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+;==================
+;四条登場
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条真剣]
-;==================
-;四条登場
 [freeimage layer=13 time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
@@ -362,46 +364,46 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ありがとうございます)[p]
-#
-;【退場】四条
-[四条退場]
+[autosave]
 [fadeoutbgm time=3000]
 ;================================================================================
+[暗転２ storage="bg/bg_prologue.jpg"]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;================================================================================
 *seen5
-[autosave]
 ;適当につけましたので変えてもよいです。遠いぞーってことがわかればよし　ここは三人称しか思いつかない
-[テキスト全画面白文字]
 [sp]私たち達は、杳々たる山深き[r]
 『[華衣]の婚約者』の生家へと足を運んだ。[p]
-;○急いで！のイメージ
-;☆キャラの決意 四条の決意
-;○京の端町、質素な邸宅がある
-;[質素な邸宅]和の家
-[イベントシーン構築]
-[call target=*start storage="macro_tati_sijyou.ks"]
-[wait time=10]
-[chara_mod name="bg" storage="bg/test_mon.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_mon.jpg" time=100]
+;================================================================================
+;メッセージをもどします
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;[call target=*start storage="macro_tati_sijyou.ks"]
+:[wait time=10]
+;○急いで！のイメージ☆キャラの決意 四条の決意○京の端町、質素な邸宅がある
+;【背景】質素な邸宅の玄関
+[chara_mod name="bg" storage="bg/test_mon.jpg" time=10]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[主人公ポーズ通常]
-[wait time=10]
-[主人公通常]
-[wait time=10]
+[表示準備 storage="bg/test_mon.jpg" time=10]
+;================================================================================
 #
 『[華衣]の婚約者の生家前』[p]
 #  
-;ここで二十に名前が表示されるようなので消したりウェイトしてみる
 [whosay name="質屋"]
 「その刀は世襲財産ですね。[r]
 [sp]差し押さえできないので他のものを回収します」[p]
 ;【SE】箱を閉めたり置く(パタン)
 [playse storage=box_close_oku.ogg loop=false ]
+;==================
+;四条登場
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
 [四条通常]
-;==================
-;四条登場
 [freeimage layer=13 time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
@@ -425,27 +427,17 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「行きましょう」[p]
-#
-;【退場】四条
-[四条退場]
 ;=================================================================================
 *seen6
-;[暗点]
+[暗点２]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_konyaku_jikka2.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-;【登場】四条
-;[四条ベース着物]
-[四条ベース羽織]
 [四条通常]
-;==================
-;四条登場
-[freeimage layer=13 time=800]
-[layopt layer=13 visible=true]
-;四条登場
-;==================
+[wait time=10]
 [主人公通常]
 [wait time=10]
+[暗点２終了]
+;=================================================================================
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
 「ごめん下さい」[p]
@@ -533,29 +525,19 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「はい、」[p]
 [主人公目閉]
-;【退場】四条
-[四条退場]
-;=================================================================
+;=================================================================================
 *seen7
-[er]
-#
+[暗転２]
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_sijyou_dozou.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-;【登場】四条
-;[四条ベース着物]
-[四条ベース羽織]
-;[四条通常]
 [四条真剣]
-;==================
-;四条登場
-[freeimage layer=13 time=1000]
-[layopt layer=13 visible=true]
-;四条登場
-;================
+[wait time=10]
 [主人公通常]
 [wait time=10]
+[暗転２終了]
+;=================================================================================
 #
 案内された先には、小さな土蔵が、ひっそりと佇んでいた。[p]
 [autosave]
