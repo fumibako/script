@@ -380,6 +380,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;================================================================================
 ;メッセージをもどします
 [resetfont]
+;メッセージレイヤを消去
+@layopt layer=message0 visible=false
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
@@ -391,6 +393,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [表示準備 storage="bg/test_mon.jpg" time=10]
 [主人公通常]
 [暗転２終了]
+;メッセージレイヤを表示
+@layopt layer=message0 visible=true
 ;================================================================================
 #
 『[華衣]の婚約者の生家前』[p]
@@ -431,6 +435,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「行きましょう」[p]
 ;=================================================================================
 *seen6
+;メッセージレイヤを消去
+@layopt layer=message0 visible=false
 [暗転２]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -439,6 +445,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公通常]
 [wait time=10]
 [暗転２終了]
+;メッセージレイヤを表示
+@layopt layer=message0 visible=true
 ;=================================================================================
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
@@ -529,6 +537,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;=================================================================================
 *seen7
 [暗転２]
+;メッセージレイヤを消去
+@layopt layer=message0 visible=false
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -537,6 +547,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公通常]
 [wait time=10]
 [暗転２終了]
+;メッセージレイヤを表示
+@layopt layer=message0 visible=true
 ;=================================================================================
 #
 案内された先には、小さな土蔵が、ひっそりと佇んでいた。[p]
@@ -861,7 +873,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「あっ！」[p]
 ;=================================================================================_
 *seen12
-
 #
 ;ナレーター
 『手記』を開いた途端、四角く折られた緋色の紙が落ちた。[p]
