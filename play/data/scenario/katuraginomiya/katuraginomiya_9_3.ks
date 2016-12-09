@@ -250,7 +250,7 @@
 ;【立ち絵】主人公 ほほえみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
-「いえ負担ではありませんわ[r]
+「いえ負担ではありませんわ。[r]
 [sp]優しく話して頂いて感謝しております」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
