@@ -29,10 +29,15 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 [mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[freeimage layer=29]
+[layopt layer=29 visible=true]
 [mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=300 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[freeimage layer=29]
+[layopt layer=29 visible=true]
 [mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[freeimage layer=29]
+[layopt layer=29 visible=true]
 ;==========================スクリプト・全画面表示の間に設定===============================
 ;【テキスト全画面】;bg/bg_EDsakura.jpg
 ;機能ボタン消去
@@ -45,6 +50,7 @@
 [wait time=100]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
+[wait time=10]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
