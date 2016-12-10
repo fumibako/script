@@ -17,10 +17,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=========================================================================
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公目パチ1回]
-;エピローグ
-#
+
 [mtext name=cc text="これが新しい私たちの始まり。" layer=29 size=29 x=300 y=200 color=white in_effect="fadeIn" out_effect="fadeOut"]
 [mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=300 y=250 color=white in_effect="fadeIn" out_effect="fadeOut"]
 [l]
@@ -32,7 +29,6 @@
 [freeimage layer=27 time=1000]
 [layopt layer=27 visible=true]
 ;==========================スクリプト・全画面表示の間に設定===============================
-#
 ;【テキスト全画面】;bg/bg_EDsakura.jpg
 ;機能ボタン消去
 [layopt layer=fix visible=false]
