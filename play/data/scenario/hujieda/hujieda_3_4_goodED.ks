@@ -9,7 +9,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】青空に桜
-[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
+[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [eval exp="f.haikei_credit=''"]
 ;[イベントシーン構築ボタン無し版]
 ;[主人公ポーズ通常]
@@ -17,13 +18,13 @@
 [プリロード画面消去]
 ;[メッセージウィンドウ上ボタン表示]
 ;文字色　font_color
-[eval exp="tf.fc='#5b4513'"]
+[eval exp="tf.fc='0x663300'"]
 ;=========================================================================
 
-[mtext name=cc text="これが新しい私たちの始まり。" layer=29 size=29 x=200 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-[mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=200 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-[mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=200 y=200 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-[mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=200 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext name=cc text="これが新しい私たちの始まり。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=300 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 [l]
 [freeimage layer=29 time=1000]
 [layopt layer=29 visible=true]
@@ -32,7 +33,7 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;背景変更:黒茶・和紙風
+;【背景】青空に桜
 [image layer=29 x=1 y=1 storage="bg/bg/bg_EDsakura.jpg" time=1000 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
