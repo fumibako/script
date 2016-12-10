@@ -13,6 +13,7 @@
 ;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [eval exp="f.haikei_credit=''"]
 ;[イベントシーン構築ボタン無し版]
+;[eval exp="sf.FButton='OFF'"]
 ;[主人公ポーズ通常]
 ;[主人公通常]
 [プリロード画面消去]
@@ -25,9 +26,7 @@
 [mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 [mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=300 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 [mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-[l]
-[freeimage layer=29 time=1000]
-[layopt layer=29 visible=true]
+
 ;==========================スクリプト・全画面表示の間に設定===============================
 ;【テキスト全画面】;bg/bg_EDsakura.jpg
 ;機能ボタン消去
