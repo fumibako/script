@@ -34,17 +34,18 @@
 [layopt layer=29 visible=true]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】青空に桜
-[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [image layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
+[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [wait time=100]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
+
 ―― ４年後　某月[p]
- 
- ;==========================スクリプト・全画面表示からの復帰準備========================================
+
+  ;==========================スクリプト・全画面表示からの復帰準備========================================
 [cm]
 @layopt layer=message0 visible=false
 [call target=*start storage="macro_tati_hujieda.ks"]
@@ -53,8 +54,7 @@
 [freeimage layer=29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
-[暗転２ storage="bg/room_niwa.jpg" layer=29]
+[暗転２ storage="bg/room_niwa.jpg"]
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [イベントシーン構築ボタン無し版]
@@ -93,6 +93,7 @@
 [主人公目閉じ]
 「ええ、お手紙に書いてありましたが、肇様が独逸から帰ってこられる予定の月です」[p]
 ;↑↓左寄り調整のために一旦[r]を除いています。テストプレイしつつ[r]を追記予定(◆jsYiJcqRkk案
+
 「もしかしたら船が遅れるかも知れないとは、書いてありましたが、やっとなのです」[p]
 
 ;↓◆B4nFWraU42さんもおっしゃってくださいましたが、主人公の「やっとなのです」を受ける言葉を入れてみています(◆jsYiJcqRkk案
