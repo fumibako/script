@@ -152,8 +152,12 @@
 ;///////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
-;【背景】公園
-[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg"]
+;【背景】空と桜
+[preload storage="data/fgimage/bg/bg_sakura.jpg"]
+;【背景】空と桜ＥＤ
+[preload storage="data/fgimage/bg/bg_EDsakura.jpg"]
+;【背景】ﾌﾟﾛﾛｰｸﾞ
+[preload storage="data/fgimage/bg/bg_prologue.jpg"]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
