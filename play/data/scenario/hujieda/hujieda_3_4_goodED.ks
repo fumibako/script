@@ -16,18 +16,17 @@
 ;[主人公通常]
 [プリロード画面消去]
 ;[メッセージウィンドウ上ボタン表示]
+;文字色　font_color
+[eval exp="tf.fc='#5b4513'"]
 ;=========================================================================
 
-[mtext name=cc text="これが新しい私たちの始まり。" layer=29 size=29 x=300 y=200 color=white in_effect="fadeIn" out_effect="fadeOut"]
-[mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=300 y=250 color=white in_effect="fadeIn" out_effect="fadeOut"]
+[mtext name=cc text="これが新しい私たちの始まり。" layer=29 size=29 x=200 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=200 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=200 y=200 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=200 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 [l]
-[freeimage layer=27 time=1000]
-[layopt layer=27 visible=true]
-[mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=300 y=200 color=white in_effect="fadeIn" out_effect="fadeOut"]
-[mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=300 y=250 color=white in_effect="fadeIn" out_effect="fadeOut"]
-[l]
-[freeimage layer=27 time=1000]
-[layopt layer=27 visible=true]
+[freeimage layer=29 time=1000]
+[layopt layer=29 visible=true]
 ;==========================スクリプト・全画面表示の間に設定===============================
 ;【テキスト全画面】;bg/bg_EDsakura.jpg
 ;機能ボタン消去
