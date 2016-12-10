@@ -393,9 +393,13 @@
 [fadeoutbgm time=3000]
 
 ;==========================スクリプト・全画面表示の間に設定===============================
-;【テキスト全画面】;bg/bg_EDsakura.jpg
+;【テキスト全画面】
+[主人公退場]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
 ;機能ボタン消去
-[layopt layer=fix visible=false]
+[clearfix]
 [layopt layer=29 visible=true]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】青空に桜
