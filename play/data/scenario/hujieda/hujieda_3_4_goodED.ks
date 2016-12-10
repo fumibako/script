@@ -23,6 +23,14 @@
 ;=========================================================================
 
 [mtext name=cc text="これが新しい私たちの始まり。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
+[l]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 [mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 [mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=300 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 [mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
@@ -51,17 +59,18 @@
 [call target=*start storage="macro_tati_hujieda.ks"]
 ;メッセージをもどします
 [resetfont]
-[freeimage layer=29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[暗転２ storage="bg/room_niwa.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[image layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=1000 visible=true]
+;[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 [主人公通常]
 [主人公ポーズ通常]
 @layopt layer=message0 visible=true
-[freeimage layer=29]
+[freeimage layer=29 time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -75,11 +84,7 @@
 
 （もうすぐだわ）[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
+
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様、お茶をどうぞ。　少しは落ち着きませんと」[p]
