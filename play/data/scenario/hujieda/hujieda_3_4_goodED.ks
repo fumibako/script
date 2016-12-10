@@ -31,12 +31,14 @@
 ;【テキスト全画面】;bg/bg_EDsakura.jpg
 ;機能ボタン消去
 [layopt layer=fix visible=false]
+[layopt layer=29 visible=true]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】青空に桜
 [image layer=29 x=1 y=1 storage="bg/bg/bg_EDsakura.jpg" time=1000 visible=true]
+;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [wait time=10]
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position left=300 width=300 height=300 top=250 page=fore margint="50"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -52,7 +54,7 @@
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[表示準備 storage="bg/room_niwa.jpg" layer=29]
+[暗転２ storage="bg/room_niwa.jpg" layer=29]
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [イベントシーン構築ボタン無し版]
