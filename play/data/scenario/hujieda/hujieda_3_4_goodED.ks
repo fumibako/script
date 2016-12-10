@@ -409,7 +409,7 @@
 ;【背景】青空に桜
 ;[image layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
 ;【背景】ﾌﾟﾛﾛーｸﾞ
-[image layer=29 x=1 y=1 storage="bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [wait time=100]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
