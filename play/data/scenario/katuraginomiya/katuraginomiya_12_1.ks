@@ -126,6 +126,9 @@
 「さすがにこの結果は落ち込まれていると思いますもの。[r]
 [sp]私は殿下は克服されると信じています」[p]
 
+[fadeoutbgm time=3000]
+
+@jump storage="katuraginomiya/katuraginomiya_12_1b.ks" target=*seen_0
 
 ;@jump storage="event.ks" target=*event_owari
 
