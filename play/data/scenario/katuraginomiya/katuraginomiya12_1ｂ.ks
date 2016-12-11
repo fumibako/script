@@ -98,6 +98,7 @@
 [sp]国民に訴え、国民に理解を得られるように[r]
 [sp]伝えましょう！」[p]
 
+[イベントシーン終了]
 ;@jump storage="event.ks" target=*event_owari
 
 @jump storage="test_katuragi.ks"
