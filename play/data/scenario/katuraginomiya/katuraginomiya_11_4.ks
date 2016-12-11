@@ -1,3 +1,4 @@
+;11月4週イベント 
 =======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -10,11 +11,10 @@
 [eval exp="f.haikei_credit=' '"]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです===============================
-;11月4週イベント 
+
 ;ｸﾘｯｸなしですとｽﾏﾎでならないので、何か対策を。
 ;【SE】時計（広間カチコチ）
 [playse storage=tokei_hiroma.ogg loop=false ]
-
 
 ;==========================スクリプト・全画面表示の間に設定===============================
 ;【テキスト全画面】黒茶・和紙風背景(暗)に白文字 ;[新聞] 裏で画面構成 test_bg_sinbun.jpg
@@ -25,7 +25,7 @@
 [image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
-;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[chara_mod name="bg" storage="toumei.gif" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -45,12 +45,12 @@
 [layopt layer=fix visible=true]
 [イベントシーン構築ボタン無し版]
 ;【背景】ttps://www.flickr.com/photos/28752865@N08/5741972861/
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [葛城宮ベース軍服]
 [葛城宮真剣]
 [葛城宮口開]
 [freeimage layer = 29 time=1000]
 [eval exp="sf.FButton='ON'"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
 [cm]
 [メッセージウィンドウ上ボタン表示]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
