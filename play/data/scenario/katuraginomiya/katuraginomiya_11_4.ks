@@ -25,7 +25,7 @@
 [image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
-[chara_mod name="bg" storage="toumei.gif" time=50]
+[chara_mod name="bg" storage="bg/katuraginomiya_kaigi2.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
