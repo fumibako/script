@@ -36,15 +36,15 @@
 [resetfont]
 ;メッセージレイヤを会話窓用に設定変更
 ;[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-;機能ボタン表示
-[layopt layer=fix visible=true]
-[イベントシーン構築ボタン無し版]
+[イベントシーン構築ボタン無し版枠茶色]
 ;【背景】ttps://www.flickr.com/photos/28752865@N08/5741972861/
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [葛城宮ベース軍服]
 ;[葛城宮ポーズ通常]
 [葛城宮通常]
 [freeimage layer = 29 time=1000]
+;機能ボタン表示
+[layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
 [cm]
 [メッセージウィンドウ上ボタン表示]
