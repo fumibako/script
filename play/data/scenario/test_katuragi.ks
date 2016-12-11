@@ -70,13 +70,13 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="test12_1" text="12月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test2_2" text="2月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=250 y=100 color=white]
-[glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="300" x=100 y=150 color=white]
+[glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="300" x=100 y=300 color=white]
 
 
-[glink target="sansaku1" text="散策イベント(2月～)1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="sansaku2" text="散策イベント(2月～)2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="bazaar" text="バザーイベント" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="sansaku1" text="散策イベント(2月～)1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="sansaku2" text="散策イベント(2月～)2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="bazaar" text="バザーイベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 ;[glink target="page_3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="page_1" text="前に戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
