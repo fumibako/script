@@ -61,7 +61,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="test11_1b" text="11月1週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test11_4" text="11月4週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test12_1" text="12月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test12_1" text="12月1週b" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test12_1b" text="12月1週b" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 
 [glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 @jump target=common_page
@@ -183,7 +183,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 *test12_1b
 [cm]
 [freeimage layer = 26]
-@jump storage="katuraginomiya/katuraginomiya_12_1b.ks"
+@jump storage="katuraginomiya/katuraginomiya12_1ｂ.ks"
 [s]
 
 
