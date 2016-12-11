@@ -76,6 +76,9 @@
 [主人公目伏柔]
 （本当に良かった）[p]
 
+[fadeoutbgm time=3000]
+@jump storage="katuraginomiya/katuraginomiya2_2ｂ.ks" target=seen_0
+
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
