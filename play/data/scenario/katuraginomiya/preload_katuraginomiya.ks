@@ -330,6 +330,8 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】会議室
+[preload storage="data/fgimage/bg/I9IhvvVdPo/kaigisitu.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
@@ -345,8 +347,8 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
-;【背景】主人公邸 庭の見える部屋：昼
-;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true] 
+;【背景】会議室
+[preload storage="data/fgimage/bg/I9IhvvVdPo/kaigisitu.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
