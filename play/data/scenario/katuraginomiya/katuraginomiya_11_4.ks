@@ -5,7 +5,8 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[暗転]
+;【背景】ﾌﾟﾛﾛーｸﾞ
+[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
 [eval exp="f.haikei_credit=' '"]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです===============================
@@ -31,9 +32,6 @@
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
 
-
-
-[テキスト全画面白文字暗]
 汚職事件を起こした今原中将やその関係者への軍法会議での判決は懲役刑、[r]
 事態を重く見て臨時の軍上層部での会議を行う事になった[r]
 私は上司である大将の左官、また議事進行係を買って出た。[p]
