@@ -128,7 +128,7 @@
 
 [fadeoutbgm time=3000]
 
-@jump storage="katuraginomiya/katuraginomiya_12_1b.ks" target=*seen_0
+@jump storage="katuraginomiya/katuraginomiya12_1ｂ.ks" target=*seen_0
 
 ;@jump storage="event.ks" target=*event_owari
 
