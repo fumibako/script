@@ -54,21 +54,23 @@
 
 ;【立ち絵】主人公 照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公眉下げ下]
 [主人公目伏]
-[主人公照れ]
 「ええ」[p]
-
 #
+[主人公頬染め]
 殿下は私を引き寄せ、ぎゅっと私を力強く抱きしめた。[p]
 私の鼓動は高鳴り、顔が熱くなっていく……。[p]
 
 ;=============================================================
+[暗転２ storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
 [葛城宮退場]
 ;退場しないとＣＧ見れない
 ;主人公と葛城宮抱擁CG[p]
 ;【背景】主人公と葛城宮抱擁 仮
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
+[暗転2終了]
 ;=============================================================
 ;【立ち絵】主人公 照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
