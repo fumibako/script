@@ -302,12 +302,13 @@
 [sp] 　　　　　　愛するために生まれてきた ――[p]
 ;[財前退場]
 [主人公退場]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
 ;【背景】 フウセンカズラの実
 [chara_mod name="bg" storage="bg/zaizen_fusenkazura.jpg"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-;↓最後に機能ボタンがチラッと見えるのが気になるためコメントアウトに変更させていただきました(スクリプト担
-;[暗転２終了]
 [fadeoutbgm time=3000]
 [wait time=100]
 ;====================================================================================
