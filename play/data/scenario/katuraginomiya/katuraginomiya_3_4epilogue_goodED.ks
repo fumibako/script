@@ -331,11 +331,19 @@ $('.junbi_girl').remove();
 [image name="anten" layer=29 storage="bg/bg_sakura.jpg" time=1500]
 [葛城宮退場]
 [主人公退場]
-[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [freeimage layer=29 time=100]
 ;===============================================================
-
-
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position left=300 width=300 height=300 top=200 page=fore margint="50"]
+;テキスト全画面　0x663300
+[font color=white size=35]
+;===============================================================
+;画面中央に「完」の文字
+[sp]　　　　完[p]
 ;===============================================================
 ;@jump storage="event.ks" target=*event_owari
 
