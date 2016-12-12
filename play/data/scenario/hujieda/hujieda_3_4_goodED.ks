@@ -413,15 +413,17 @@
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [wait time=100]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
-[position left=300 width=300 height=300 top=200 page=fore margint="50"]
+[position left=300 width=330 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
 ――そして肇様と[p]
 新しい明日を紡いでいく。[p]
+;==================================================================================
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position left=300 width=300 height=300 top=200 page=fore margint="50"]
 [font color=white size=35]
 ;画面中央に「完」の文字
-[font color=white size=35]
 [sp]　　　　完[p]
 ;================スクリプト・全画面表示からの復帰準備 初期化　ｽｸﾘﾌﾟﾄ担当さまにお任せします。================
 ;メッセージをもどします
