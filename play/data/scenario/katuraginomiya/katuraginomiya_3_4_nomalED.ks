@@ -70,7 +70,7 @@
 ;【背景】主人公と葛城宮抱擁 仮
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
-[暗転2終了]
+[暗転２終了]
 ;=============================================================
 ;【立ち絵】主人公 照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
