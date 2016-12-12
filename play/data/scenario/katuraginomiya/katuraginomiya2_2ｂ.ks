@@ -17,7 +17,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風_暗
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】執務室 
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
@@ -131,12 +131,31 @@
 [葛城宮目伏せ照れ]
 「……そうだな」[p]
 
+;全画面で違和感あるならｺﾒﾝﾄにしてください スレとおりに全画面へ
 #
+;=============================================================
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+;一瞬裏がみえるの防止背景
+[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=50]
+[葛城宮退場]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;=============================================================
 話が終わり、深々と礼をすると秘書は部屋を退出した。[r]
+[r]
 これまで彼が支えとなってくれた日々に想いを馳せつつ、私は目を閉じた。[p]
 
-#
 喪失感が胸に広がる――。[p] 
+;=============================================================
+;会話ウィンドウ消去 一瞬みえるの防止
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+;=============================================================
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
