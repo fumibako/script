@@ -112,6 +112,16 @@
 [preload storage="data/fgimage/sijyou/emo_hohosome.png" wait=true]
 ;[四条ビンタ]
 [preload storage="data/fgimage/sijyou/emo_binta.png" wait=true]
+;【背景】ししおどし
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sisiodosi.jpg" wait=true]
+;【背景】料亭風の屋内（昼）
+[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
+;【背景】思い出（花
+[preload storage="data/fgimage/bg/bg_omoide.jpg" wait=true]
+;【背景】庭園＿萩
+[preload storage="data/fgimage/bg/bg_flower_hagi.jpg" wait=true]
+;【背景】庭園
+[preload storage="data/fgimage/bg/bg_teien_ishidatami.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
