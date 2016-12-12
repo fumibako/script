@@ -170,9 +170,28 @@
 「殿下をいつまでもお慕いしています」[p]
 [主人公目伏柔]
 「貴方とともに喜びも悲しみも、共にすると誓います」[p]
-
+;=============================================================
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+;一瞬裏がみえるの防止背景
+[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 [葛城宮退場]
+[主人公退場]
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position left=300 width=300 height=300 top=200 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=35]
+;=============================================================
 
+;画面中央に「完」の文字
+[sp]　　　　完[p]
+
+;=============================================================
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;=============================================================
 ;@jump storage="event.ks" target=*event_owari
 
