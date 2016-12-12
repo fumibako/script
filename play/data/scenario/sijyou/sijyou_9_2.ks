@@ -37,7 +37,7 @@
 
 [resetfont]
 ;////////////先に登場させておく////////////
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sisiodosi.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sisiodosi.jpg" time=1000]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
