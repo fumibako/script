@@ -32,14 +32,18 @@
 ――白萩そよぐ、料亭にて。[l][r]
 [r]
 四条家と[名字]家の見合いが執り行われた。[p]
+;【SE】ししおどし（控え目な流水…カコン）
+[playse storage=sisiodosi.ogg loop=false ]
+
 [resetfont]
 ;////////////先に登場させておく////////////
-[四条イベントシーン構築]
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sisiodosi.jpg" time=500]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
-[freeimage layer = 29 time=0]
+[freeimage layer = 29 time=1000]
 [layopt layer=fix visible=true]
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 #
 ;○四条、主人公の父親を敬う態度で礼容な挨拶を交わす。（四条の公私を分けた態度を表現.主人公には私的な形）
 [whosay name="四条父" color="darkolivegreen"]
