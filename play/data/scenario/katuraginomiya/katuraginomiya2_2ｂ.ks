@@ -108,11 +108,11 @@
 [whosay name="秘書" color=%mp.color]
 「はい、いずれ殿下には考えを同じくする者も[r]
 [sp]信頼できる者も出るでしょう。[r]
-[sp]これ以上衰える前に引退したく思っております」[p]
+[sp]これ以上、衰える前に引退したく思っております」[p]
 
 [whosay name="葛城宮 晴仁" color=%mp.color]
 [葛城宮ため息]
-「幼い頃からお前を信頼していた。 だがお前の意思も尊重しよう」[p]
+「幼い頃からお前を信頼していた。 だが、お前の意思も尊重しよう」[p]
 
 [whosay name="秘書" color=%mp.color]
 「はい、後任の者がまだいませんが、今の殿下なら[r]
@@ -121,7 +121,7 @@
 
 [whosay name="葛城宮 晴仁" color=%mp.color]
 [葛城宮驚き ]
-「どういう意味だ？」
+「どういう意味だ？」[p]
 
 [whosay name="秘書" color=%mp.color]
 「ご婚約者様の事です。[r]
@@ -137,7 +137,7 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;背景変更:黒茶・和紙風
+;背景変更:黒茶・和紙風bg_prologue_dark.jpg　bg_prologue.jpg
 [image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 ;一瞬裏がみえるの防止背景
 [chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=50]
