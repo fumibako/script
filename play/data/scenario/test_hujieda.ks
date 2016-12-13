@@ -59,8 +59,9 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test12_3" text="12月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+;[glink target="test11_3" text="11月2週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test12_3" text="12月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test12_3b" text="12月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
