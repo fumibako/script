@@ -1,4 +1,4 @@
-;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [preload storage="data/fgimage/sijyou/base_kimono.png"]
 [preload storage="data/fgimage/sijyou/base_haori.png"]
 [preload storage="data/fgimage/sijyou/mayu_futuu.png"]
@@ -72,18 +72,22 @@
 [glink target="mayu_03" text="[四条眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
 [glink target="mayu_04" text="[四条眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 [glink target="mayu_06" text="[四条眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-;[glink target="mayu_05" text="[四条眉通常下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+[glink target="mayu_05" text="[四条眉眉間に皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 [endif]
 
 [if exp="f.gra_sijyou_part=='me'"]
-[glink target="me_01" text="[四条目通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
-[glink target="me_02" text="[四条目大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="me_03" text="[四条目にこ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="me_04" text="[四条目伏]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="me_05" text="[四条目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="me_06" text="[四条横目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="me_07" text="[四条横伏目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-;[glink target="me_08" text="[四条目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+[glink target="me_01" text="[四条目通常]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=60 color=white]
+[glink target="me_02" text="[四条目大]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=85 color=white]
+[glink target="me_03" text="[四条目にこ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=110 color=white]
+[glink target="me_04" text="[四条目伏]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=135 color=white]
+[glink target="me_08" text="[四条目伏2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=160 color=white]
+[glink target="me_05" text="[四条目閉じ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=185 color=white]
+[glink target="me_06" text="[四条横目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=210 color=white]
+[glink target="me_07" text="[四条横伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=235 color=white]
+[glink target="me_09" text="[四条横伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=260 color=white]
+[glink target="me_10" text="[四条右流し目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=285 color=white]
+[glink target="me_11" text="[四条右伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=310 color=white]
+[glink target="me_12" text="[四条右伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=335 color=white]
 [endif]
 
 [if exp="f.gra_sijyou_part=='kuti'"]
@@ -94,7 +98,7 @@
 [glink target="kuti_05" text="[四条口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
 [glink target="kuti_06" text="[四条口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 [glink target="kuti_09" text="[四条口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-;[glink target="kuti_07" text="[四条口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+[glink target="kuti_07" text="[四条口叫び]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
 ;[glink target="kuti_06" text="[四条口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
@@ -259,8 +263,8 @@
 @jump target=text
 
 *mayu_05
-[四条眉通常下]
-[eval exp="f.gra_sijyou_face='眉：[四条眉通常下]'"]
+[四条眉眉間に皺]
+[eval exp="f.gra_sijyou_face='眉：[四条眉眉間に皺]'"]
 @jump target=text
 
 *mayu_06
@@ -289,11 +293,6 @@
 [eval exp="f.gra_sijyou_face='目：[四条目伏]'"]
 @jump target=text
 
-*me_08
-[四条目伏柔]
-[eval exp="f.gra_sijyou_face='目：[四条目伏柔]'"]
-@jump target=text
-
 *me_05
 [四条目閉じ]
 [eval exp="f.gra_sijyou_face='目：[四条目閉じ]'"]
@@ -308,6 +307,32 @@
 [四条横伏目]
 [eval exp="f.gra_sijyou_face='目：[四条横伏目]'"]
 @jump target=text
+
+*me_08
+[四条目伏2]
+[eval exp="f.gra_sijyou_face='目：[四条目伏2]'"]
+@jump target=text
+
+*me_09
+[四条横伏目2]
+[eval exp="f.gra_sijyou_face='目：[四条横伏目2]'"]
+@jump target=text
+
+*me_10
+[四条右流し目]
+[eval exp="f.gra_sijyou_face='目：[四条右流し目]'"]
+@jump target=text
+
+*me_11
+[四条右伏目]
+[eval exp="f.gra_sijyou_face='目：[四条右伏目]'"]
+@jump target=text
+
+*me_12
+[四条右伏目2]
+[eval exp="f.gra_sijyou_face='目：[四条右伏目2]'"]
+@jump target=text
+
 
 
 *kuti_01
@@ -341,8 +366,8 @@
 @jump target=text
 
 *kuti_07
-[四条口]
-[eval exp="f.gra_sijyou_face='口：[四条口]'"]
+[四条口叫び]
+[eval exp="f.gra_sijyou_face='口：[四条口叫び]'"]
 @jump target=text
 
 *kuti_08

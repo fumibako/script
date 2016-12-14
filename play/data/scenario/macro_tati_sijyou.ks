@@ -1,4 +1,4 @@
-﻿;==============================
+﻿﻿;==============================
 ;layer8：他キャラbase（のっぺらぼう）
 ;layer9:他キャラ口
 ;layer10:他キャラ目
@@ -14,20 +14,74 @@
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
-[chara_new name="sijyou_base" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=8 name="sijyou_base" time=0]
+;◆◆立ち絵画像サイズ：(x)1202x(y)2000を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される…といいな
+[eval exp="f.sijyou_tatie_moto_width=1202"]
+[eval exp="f.sijyou_tatie_moto_height=2000"]
+;◆立ち絵【通常サイズ】のwidth、height、left、top設定
+[eval exp="f.sijyou_tatie_tuujou_width=f.sijyou_tatie_moto_width*0.44"]
+[eval exp="f.sijyou_tatie_tuujou_height=f.sijyou_tatie_moto_height*0.44"]
+[eval exp="f.sijyou_tatie_tuujou_left=238"]
+[eval exp="f.sijyou_tatie_tuujou_top=7"]
+;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（準備中
+[eval exp="f.sijyou_tatie_tonari_width=f.sijyou_tatie_moto_width*0.7"]
+[eval exp="f.sijyou_tatie_tonari_height=f.sijyou_tatie_moto_height*0.7"]
+[eval exp="f.sijyou_tatie_tonari_left=238"]
+[eval exp="f.sijyou_tatie_tonari_top=7"]
+;◆立ち絵【サイズ：顔寄せ】のwidth、height、left、top設定（準備中
+[eval exp="f.sijyou_tatie_up_width=f.sijyou_tatie_moto_width*0.9"]
+[eval exp="f.sijyou_tatie_up_height=f.sijyou_tatie_moto_height*0.9"]
+[eval exp="f.sijyou_tatie_up_left=238"]
+[eval exp="f.sijyou_tatie_up_top=7"]
+
+;◆四条立ち絵初期設定【通常サイズ】
+[chara_new name="sijyou_base" storage="toumei.gif" width=&f.sijyou_tatie_tuujou_width height=&f.sijyou_tatie_tuujou_height]
+[chara_show left=&f.sijyou_tatie_tuujou_left top=&f.sijyou_tatie_tuujou_top layer=8 name="sijyou_base" time=0]
 [wait time=10]
-[chara_new name="sijyou_kuti" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=9 name="sijyou_kuti" time=0]
+[chara_new name="sijyou_kuti" storage="toumei.gif" width=&f.sijyou_tatie_tuujou_width height=&f.sijyou_tatie_tuujou_height]
+[chara_show left=&f.sijyou_tatie_tuujou_left top=&f.sijyou_tatie_tuujou_top layer=9 name="sijyou_kuti" time=0]
 [wait time=10]
-[chara_new name="sijyou_me" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=10 name="sijyou_me" time=0]
+[chara_new name="sijyou_me" storage="toumei.gif" width=&f.sijyou_tatie_tuujou_width height=&f.sijyou_tatie_tuujou_height]
+[chara_show left=&f.sijyou_tatie_tuujou_left top=&f.sijyou_tatie_tuujou_top layer=10 name="sijyou_me" time=0]
 [wait time=10]
-[chara_new name="sijyou_mayu" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=11 name="sijyou_mayu" time=0]
+[chara_new name="sijyou_mayu" storage="toumei.gif" width=&f.sijyou_tatie_tuujou_width height=&f.sijyou_tatie_tuujou_height]
+[chara_show left=&f.sijyou_tatie_tuujou_left top=&f.sijyou_tatie_tuujou_top layer=11 name="sijyou_mayu" time=0]
 [wait time=10]
-[chara_new name="sijyou_emo" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=12 name="sijyou_emo" time=0]
+[chara_new name="sijyou_emo" storage="toumei.gif" width=&f.sijyou_tatie_tuujou_width height=&f.sijyou_tatie_tuujou_height]
+[chara_show left=&f.sijyou_tatie_tuujou_left top=&f.sijyou_tatie_tuujou_top layer=12 name="sijyou_emo" time=0]
+[wait time=10]
+
+;◆四条立ち絵初期設定【サイズ：隣に並ぶ】
+[chara_new name="sijyou_base_tonari" storage="toumei.gif" width=&f.sijyou_tatie_tonari_width height=&f.sijyou_tatie_tonari_height]
+[chara_show left=&f.sijyou_tatie_tonari_left top=&f.sijyou_tatie_tonari_top layer=8 name="sijyou_base_tonari" time=0]
+[wait time=10]
+[chara_new name="sijyou_kuti_tonari" storage="toumei.gif" width=&f.sijyou_tatie_tonari_width height=&f.sijyou_tatie_tonari_height]
+[chara_show left=&f.sijyou_tatie_tonari_left top=&f.sijyou_tatie_tonari_top layer=9 name="sijyou_kuti_tonari" time=0]
+[wait time=10]
+[chara_new name="sijyou_me_tonari" storage="toumei.gif" width=&f.sijyou_tatie_tonari_width height=&f.sijyou_tatie_tonari_height]
+[chara_show left=&f.sijyou_tatie_tonari_left top=&f.sijyou_tatie_tonari_top layer=10 name="sijyou_me_tonari" time=0]
+[wait time=10]
+[chara_new name="sijyou_mayu_tonari" storage="toumei.gif" width=&f.sijyou_tatie_tonari_width height=&f.sijyou_tatie_tonari_height]
+[chara_show left=&f.sijyou_tatie_tonari_left top=&f.sijyou_tatie_tonari_top layer=11 name="sijyou_mayu_tonari" time=0]
+[wait time=10]
+[chara_new name="sijyou_emo_tonari" storage="toumei.gif" width=&f.sijyou_tatie_tonari_width height=&f.sijyou_tatie_tonari_height]
+[chara_show left=&f.sijyou_tatie_tonari_left top=&f.sijyou_tatie_tonari_top layer=12 name="sijyou_emo_tonari" time=0]
+[wait time=10]
+
+;◆四条立ち絵初期設定【サイズ：顔寄せ】
+[chara_new name="sijyou_base_up" storage="toumei.gif" width=&f.sijyou_tatie_up_width height=&f.sijyou_tatie_up_height]
+[chara_show left=&f.sijyou_tatie_up_left top=&f.sijyou_tatie_up_top layer=8 name="sijyou_base_up" time=0]
+[wait time=10]
+[chara_new name="sijyou_kuti_up" storage="toumei.gif" width=&f.sijyou_tatie_up_width height=&f.sijyou_tatie_up_height]
+[chara_show left=&f.sijyou_tatie_up_left top=&f.sijyou_tatie_up_top layer=9 name="sijyou_kuti_up" time=0]
+[wait time=10]
+[chara_new name="sijyou_me_up" storage="toumei.gif" width=&f.sijyou_tatie_up_width height=&f.sijyou_tatie_up_height]
+[chara_show left=&f.sijyou_tatie_up_left top=&f.sijyou_tatie_up_top layer=10 name="sijyou_me_up" time=0]
+[wait time=10]
+[chara_new name="sijyou_mayu_up" storage="toumei.gif" width=&f.sijyou_tatie_up_width height=&f.sijyou_tatie_up_height]
+[chara_show left=&f.sijyou_tatie_up_left top=&f.sijyou_tatie_up_top layer=11 name="sijyou_mayu_up" time=0]
+[wait time=10]
+[chara_new name="sijyou_emo_up" storage="toumei.gif" width=&f.sijyou_tatie_up_width height=&f.sijyou_tatie_up_height]
+[chara_show left=&f.sijyou_tatie_up_left top=&f.sijyou_tatie_up_top layer=12 name="sijyou_emo_up" time=0]
 [wait time=10]
 
 ;◆四条立ち絵アップ、通常サイズ時のkeyframe設定
@@ -45,23 +99,24 @@
 [frame p=100% y=0 opacity=1]
 [endkeyframe]
 
+;◆サイズマクロは文字表示不具合が直るまで一旦コメントアウトさせていただきます
 [macro name="四条アップ"]
-[kanim keyframe="scale1" name="sijyou_base" time=10]
-[kanim keyframe="scale1" name="sijyou_me" time=10]
-[kanim keyframe="scale1" name="sijyou_mayu" time=10]
-[kanim keyframe="scale1" name="sijyou_kuti" time=10]
-[kanim keyframe="scale1" name="sijyou_emo" time=1000]
+;[kanim keyframe="scale1" name="sijyou_base" time=10]
+;[kanim keyframe="scale1" name="sijyou_me" time=10]
+;[kanim keyframe="scale1" name="sijyou_mayu" time=10]
+;[kanim keyframe="scale1" name="sijyou_kuti" time=10]
+;[kanim keyframe="scale1" name="sijyou_emo" time=1000]
 ;スマホフリーズ対策time=10 →おｋ
-[wa]
+;[wa]
 [endmacro]
 [macro name="四条サイズ通常"]
-[kanim keyframe="no_scale1" name="sijyou_base" time=10]
-[kanim keyframe="no_scale1" name="sijyou_me" time=10]
-[kanim keyframe="no_scale1" name="sijyou_mayu" time=10]
-[kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
-[kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
+;[kanim keyframe="no_scale1" name="sijyou_base" time=10]
+;[kanim keyframe="no_scale1" name="sijyou_me" time=10]
+;[kanim keyframe="no_scale1" name="sijyou_mayu" time=10]
+;[kanim keyframe="no_scale1" name="sijyou_kuti" time=10]
+;[kanim keyframe="no_scale1" name="sijyou_emo" time=1000]
 ;スマホフリーズ対策time=10 →おｋ
-[wa]
+;[wa]
 [endmacro]
 
 ;立ち絵表示[四条ベース着物]
@@ -205,7 +260,6 @@
 [endmacro]
 
 
-
 ;立ち絵表示[四条眉通常]
 [macro name="四条眉通常"]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
@@ -239,6 +293,12 @@
 ;立ち絵表示[四条眉強気]
 [macro name="四条眉強気"]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_tuyoki.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[四条眉眉間に皺]
+[macro name="四条眉眉間に皺"]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_siwa.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -284,6 +344,12 @@
 [wait time=10]
 [endmacro]
 
+;立ち絵表示[四条口叫び]
+[macro name="四条口叫び"]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_sakebi.png" time=0]
+[wait time=10]
+[endmacro]
+
 
 ;立ち絵表示[四条目通常]
 [macro name="四条目通常"]
@@ -309,6 +375,12 @@
 [wait time=10]
 [endmacro]
 
+;立ち絵表示[四条目伏2]
+[macro name="四条目伏2"]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+[endmacro]
+
 ;立ち絵表示[四条目閉じ]
 [macro name="四条目閉じ"]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
@@ -324,6 +396,30 @@
 ;立ち絵表示[四条横伏目]
 [macro name="四条横伏目"]
 [chara_mod name="sijyou_me" storage="sijyou/me_yokofusi1.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[四条横伏目2]
+[macro name="四条横伏目2"]
+[chara_mod name="sijyou_me" storage="sijyou/me_yokofusi2.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[四条右流し目]
+[macro name="四条右流し目"]
+[chara_mod name="sijyou_me" storage="sijyou/me_migi.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[四条右伏目]
+[macro name="四条右伏目"]
+[chara_mod name="sijyou_me" storage="sijyou/me_migifusi1.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[四条右伏目2]
+[macro name="四条右伏目2"]
+[chara_mod name="sijyou_me" storage="sijyou/me_migifusi2.png" time=0]
 [wait time=10]
 [endmacro]
 
