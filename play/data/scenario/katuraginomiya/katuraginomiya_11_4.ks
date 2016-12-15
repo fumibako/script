@@ -42,11 +42,6 @@
 私は上司である大将の左官、また議事進行係を買って[r]
 出た。[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】五色（重いムードに
-[playbgm storage="heavymood_goshiki.ogg" loop=true]
-[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
-[endif]
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 ;メッセージをもどします
@@ -69,7 +64,13 @@
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「定刻となりましたので臨時の会議を始めます！」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
 
+[whosay name="葛城宮　晴仁" color=%mp.color]
 「今から行われるこの会議は軍の兵達の指標となり、[r]
 [sp]政治おける軍の立場を決める重要なものであります」[p]
 
@@ -249,13 +250,17 @@
 「今、貴方の自宅に警察が入ってます。　証拠も見つかるでしょう。[r]
 [sp]そして証言もあります。入りなさい！」[p]
 
+;【SE】ドアが開く
+[playse storage=door_open.ogg loop=false ]
 
 #
 隣室から現れたのは一人の初老の男性だ。[r]
 柏木元大将の家令にあたる。[p]
 
+;【SE】椅子ガタ１
+
 [whosay name="柏木元大将" color=%mp.color]
-「どうしてここにお前が！」
+「どうしてここにお前が！」[p]
 
 [whosay name="柏木家家令" color=%mp.color]
 「旦那様が蟷螂団とも組み、[r]
@@ -264,13 +269,16 @@
 
 
 #
-その場に居た者は表情を凍りつかせ柏木元大将を凝視した。[r]
+その場に居た者は表情を凍りつかせ柏木元大将を凝視した。[p]
+;【SE】人々のざわめき（ザワザワ…屋内）
+[playse storage=zawa_room.ogg loop=false ]
+
 しばしの間をおいて、場にざわめきが広がっていく……。 [p]
 ;==========================================================================
 ;【背景】蟷螂団 ﾚｲﾔｰ13に表示
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=50]
 [image layer=13 x=1 y=1 storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=1000 visible=true]
-[eval exp="f.haikei_credit=''＠名無しさん１"]
+[eval exp="f.haikei_credit='＠名無しさん１'"]
 ;==========================================================================
 #
 蟷螂団は以前にも事件を起こしている。[r]
