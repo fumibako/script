@@ -26,6 +26,7 @@
 [wait time=10]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
 [chara_mod name="bg" storage="bg/katuraginomiya_kaigi2.jpg" time=50]
+[eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -256,11 +257,25 @@
 #
 その場に居た者は表情を凍りつかせ柏木元大将を凝視した。[r]
 しばしの間をおいて、場にざわめきが広がっていく……。 [p]
-
+;==========================================================================
+;【背景】蟷螂団 ﾚｲﾔｰ13に表示
+;[chara_mod name="bg" storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=50]
+[image layer=13 x=1 y=1 storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=1000]
+[eval exp="f.haikei_credit=''＠名無しさん１"]
+;==========================================================================
 #
 蟷螂団は以前にも事件を起こしている。[r]
 軍将校に働きかけクーデターを起こし、帝政を復活させようと[r]
 した右翼団体だ。[p]
+
+;==========================================================================
+;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
+;[chara_mod name="bg" storage="bg/katuraginomiya_kaigi2.jpg" time=50]
+[eval exp="f.haikei_credit=''"]
+;【背景】蟷螂団 ﾚｲﾔｰ13に表示を消去
+[freeimage layer=13 time=1000]
+[layopt layer=13 visible=true]
+;==========================================================================
 
 [whosay name="将校" color=%mp.color]
 「……蟷螂団！ 」[p]
@@ -271,6 +286,8 @@
 [whosay name="中将" color=%mp.color]
 「まさか、そんなことを現実にしようとは…」[p]
 
+;【SE】人々のざわめき（ザワザワ…屋内）
+[playse storage=zawa_room.ogg loop=false ]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮目閉じ]
@@ -283,14 +300,22 @@
 
 #
 茫然と柏木元大将が呟く。[p]
-
+;==========================================================================
+;【背景】治安維持法
+[chara_mod name="bg" storage="bg/B4nFWraU42/katuragi_chianijihou.jpg"]
+[eval exp="f.haikei_credit='font by　花園明朝体'"]
+;==========================================================================
 #
 国体を変革することを目的として結社を組織したる者又は[r]
 結社の役員其の他指導者たる任務に従事したる者は[r]
 死刑又は無期もしくは五年以上の禁固刑。[p]
 ;（治安維持法より）
-
-
+;==========================================================================
+;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
+[chara_mod name="bg" storage="bg/katuraginomiya_kaigi2.jpg" time=50]
+[eval exp="f.haikei_credit=''"]
+;==========================================================================
+;【背景】治安維持法
 [葛城宮怒り]
 「帝政化と軍事化で国が栄えるなどと、愚かな考えを[r]
 [sp]持ったものだ。[r]
