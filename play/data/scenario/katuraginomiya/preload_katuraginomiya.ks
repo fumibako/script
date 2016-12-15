@@ -313,6 +313,10 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】会議室2
 [preload storage="data/fgimage/bg/katuraginomiya_kaigi2.jpg" wait=true]
+;【背景】臣民教育
+[preload storage="data/fgimage/bg/B4nFWraU42/katuragi_sisou.jpg" wait=true]
+;【背景】蟷螂団
+[preload storage="data/fgimage/bg/B4nFWraU42/katuragi_kamakiri.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
