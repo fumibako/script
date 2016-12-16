@@ -1117,6 +1117,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条微笑み]
 [sp]では、こちらの花と、僕が見本で持ってきた[ruby text=ぼ]牡[ruby text=たん]丹[ruby text=かご]籠で、いけて[r]
 [sp]みましょうか」[p]
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 ;==============================四条ｱｯﾌﾟ=============================
 #
 [wait time=2]
@@ -1126,7 +1128,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条_隣_ベース羽織]
 [四条_隣_微笑み]
 ;===四条登場=====
-[freeimage layer=13 time=800]
+[freeimage layer=13 time=700]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 ;近づいて驚く
@@ -1209,7 +1211,7 @@ _　いらっしゃるのでしょうか？)[p]
 [whosay name="華織" color="olivedrab"]
 「でも、なかなか皆さんを喜ばすことは難しいですね……[r]
 [sp]感動を与えるというものは、心に余裕をもって伝えなければ、[r]
-[四条困り微笑み]
+[四条_隣_困り微笑み]
 [sp]見に来る人には、簡単に見透かされしまいます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]
