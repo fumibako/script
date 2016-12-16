@@ -121,24 +121,27 @@
  
 #
 ;====================================================================================
-;[layopt layer=message0 visible=false]
+[layopt layer=message0 visible=false]
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】 全画面背景_番傘の女性
-[image layer=29 x=1 y=1 storage="bg/hujieda_haha.jpg" time=1000 visible=true]
+[image layer=29 x=1 y=1 storage="bg/hujieda_haha.jpg" time=1200 visible=true]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-;[layopt layer=message0 visible=true]
+[layopt layer=message0 visible=true]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
 お母様は、身分の高い公爵家の御令嬢でね。[r]
 [r]
-本妻の実子ではないとはいえ、[r]
-母譲りの美人で、淑女の名も高く、[r]
-噂を聞きつけた華族の方々から[r]
-お手紙が沢山来たそうだよ。[p]
+妾腹でも本妻の子同然に育てられ[r]
+母譲りの美人で淑女の名も高く、[ruby text=あ]数[ruby text=また]多にお手紙が来たんだよ。 
+
+;本妻の実子ではないとはいえ、[r]
+;母譲りの美人で、淑女の名も高く、[r]
+;噂を聞きつけた華族の方々から[r]
+;お手紙が沢山来たそうだよ。[p]
 
 お母様はいつか家の為に嫁ぐ事が嫌で[r]
 肝心な話が出るとうまく断っていたんだ。[p]
@@ -209,7 +212,8 @@
 時の首相に見出されて欧羅巴に留学したんだ。[p]
 
 留学後は、[r]
-法制度の細分化に助力し、その功績がみとめられたそうだよ。[r]
+法制度の細分化に助力し、その功績がみとめられた[r]
+そうだよ。[r]
 ;だって　はない？ので　そうだよ。で。
 [r]
 [r]
