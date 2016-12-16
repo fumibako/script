@@ -99,12 +99,11 @@
 ;〜〜シーン イベントのはじまりおわり〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
 #
 [fadeoutbgm time=3000]
-[暗転]
+[暗転２]
 ;夜、主人公部屋　考える
 ;〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜シーン 庭の見える部屋：夜 楽しみの前の降下〜〜〜〜〜〜〜〜〜〜〜〜〜
 ;=================================================================================_
 *seen1
-[autosave]
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -112,6 +111,7 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[暗転２終了]
 #
 雲をすり抜ける、月影さやけき夜。[p]
 [if exp="sf.BGM=='ON'"]
@@ -123,6 +123,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お父様からも了承を得られましたし、はりきって先生にも連絡してしまい[r]
 [sp]ましたが……)[p]
+[autosave]
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (当日は著名な先生も来られます と、おっしゃってましたわ。[r]
