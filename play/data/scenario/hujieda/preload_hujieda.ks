@@ -445,7 +445,10 @@
 ;///////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】主人公邸 部屋
 [preload storage="data/fgimage/bg/room_niwa.jpg"]
-
+;【背景】全画面　番傘の女性
+[preload storage="data/fgimage/bg/hujieda_haha.jpg" wait=true]
+;【背景】全画面　白っぽいﾐﾙｸﾎｰﾙ店内
+[preload storage="data/fgimage/bg/I9IhvvVdPo/mirukutennai_zengamen.jpg" wait=true]
 
 ;======================================================================================
 @jump target=end_sub
