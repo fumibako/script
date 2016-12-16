@@ -908,8 +908,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;完成に喜ぶ児童達。
 [whosay name=乙女子その弐 color=%mp.color]
 「できましたわ！」[p]
+#
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公通常]
 [四条ベース羽織]
@@ -1034,10 +1035,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [暗転２]
-[chara_hide name="sijyou_tonari_mayu"]
-[chara_hide name="sijyou_tonari_me"]
-[chara_hide name="sijyou_tonari_kuti"]
-[chara_hide name="sijyou_tonari_base"]
+[chara_mod name="sijyou_tonari_mayu" storage="toumei.gif" time=0]
+[chara_mod name="sijyou_tonari_me" storage="toumei.gif" time=0]
+[chara_mod name="sijyou_tonari_kuti" storage="toumei.gif" time=0]
+[chara_mod name="sijyou_tonari_base" storage="toumei.gif" time=0]
 [暗転]
 ;=============================================================================_
 *kyousitu_zentai
