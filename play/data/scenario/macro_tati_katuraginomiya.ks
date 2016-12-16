@@ -299,6 +299,11 @@
 [wait time=10]
 [endmacro]
 
+;[葛城宮口微笑み上げ]
+[macro name="葛城宮口微笑み上げ"]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_hohoemi_age.png" time=0]
+[wait time=10]
+[endmacro]
 
 ;立ち絵表示[葛城宮目通常]
 [macro name="葛城宮目通常"]
