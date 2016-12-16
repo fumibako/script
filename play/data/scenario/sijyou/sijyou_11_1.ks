@@ -704,18 +704,21 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;一人称にした！！
 ;=================================================================================_
 *seen10
-[autosave]
+
 ;//////////////////////////場面転換//////////////////////////////////////////////////
-;[暗点][料亭]
+[暗転２]
+;料亭
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryoutei.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [主人公ポーズ通常]
 [主人公通常]
 [wait time=10]
+[暗転終了]
 ;華織が説明してるので地の文があまり思いつかない
 #
 『料亭』に戻ってきた私達。[p]
+[autosave]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
