@@ -154,7 +154,7 @@
 見送っていても、それを許していたそうだよ。[p]
 ;==========================
 ;【背景】 全画面背景_bg_prologue.jpg　ここでﾐﾙｸﾎｰﾙ関連に切り替えないとおかしい
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=1200 visible=true]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/mirukutennai_zengamen.jpg" time=1200 visible=true]
 ;==========================
 そんな折、学生達の間で人気だというミルクホールに[r]
 行ってみたくて、友人達とこっそり行ったんだ。[p]
