@@ -231,7 +231,11 @@ _　ございます」[p]
 ;/////////////////////////////////回想シーンおわり。//////////////////
 ;○四条、主人公の落ち着いた振る舞いに少し驚く
 ;△思い浮かばず 追加して頂けると助かります
-;[お見合いの場]
+;消えている瞬間を隠してみる・・・
+[layopt layer=29 visible=true]
+;ボタンを非表示
+[layopt layer=fix visible=false]
+[image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
 [主人公ポーズ通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -240,11 +244,6 @@ _　ございます」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 ;～～～～～～～～～ここから準備中～～～～～～～～～
-;消えている瞬間を隠してみる・・・
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-;イメージ思い出
-[image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
 ;その間に登場
 ;【登場】四条
 ;[四条ベース着物]　公式の場なので羽織？
@@ -384,7 +383,7 @@ _　ございます」[p]
 _　か……？)[p]
 [主人公照れ目普通]
 [whosay name="四条 華織" color="olivedrab"]
-「僕のことは文矢のように思ってもらえばいいよ[r]
+「僕のことは文矢のように思ってもらえばいいよ。[r]
 [sp]次はあちらを見て回ろうか」[p]
 #
 ;【退場】四条
@@ -428,7 +427,7 @@ _　か……？)[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 #
-私はその手をとって導かれていく。[r]
+私はその手をとって導かれていく。[p]
 四条様は、私をしっかりと支え、気遣いをしてくれているけれど、その背はどこか遠くに感じた。[p]
 ;感じざる得ない？
 ;○四条が気を使っていることに気づく主人公
@@ -488,7 +487,7 @@ _　か……？)[p]
 ;○四条は気遣いできるくらいに勘は良いかも
 [whosay name="四条 華織" color="olivedrab"]
 [四条憂い]
-「……気を使わなくてもいいよ。
+「……気を使わなくてもいいよ。 
 [主人公目を開く]
 それに[ruby text=し]仕[ruby text=きた]来りにしたがって[r]
 [sp][名前]ちゃんから、離れたのは、僕だからね」[p]
@@ -543,7 +542,7 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 [暗転]
 [chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
-[主人公目閉じ]
+[主人公目閉]
 #
 美しい白萩を見ながら、私と四条様は、微笑みあった。[p]
 私は、ようやく四条様の隣に近づけたような、そんな気がしたのだった。[p]
