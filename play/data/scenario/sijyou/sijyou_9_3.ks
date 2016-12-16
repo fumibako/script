@@ -21,9 +21,9 @@
 [主人公通常]
 [wait time=10]
 [プリロード画面消去]
-[if exp="tf.test_sijyou==true"]
-@jump target=seen7
-[endif]
+;[if exp="tf.test_sijyou==true"]
+;@jump target=seen7
+;[endif]
 ;///////////////////////////////
 *first_seen
 [四条ボタン表示]
