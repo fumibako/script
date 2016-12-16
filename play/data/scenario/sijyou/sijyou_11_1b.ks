@@ -465,7 +465,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [wait time=10]
 ;病院背景に表示されないようにwait
-;主人公の目閉じの合体pngがほしいです！
+;主人公の目閉じの合体png
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
@@ -474,7 +476,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-;主人公の目閉じの合体pngがほしいです！
+;主人公の目閉じの合体png
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 ;表示されるまでの間上に被せたい
 ;=============================================
 ;ネリネの花言葉のひとつ、輝きに~~
