@@ -93,6 +93,7 @@
 [whosay name="華織" color="olivedrab"]
 「[華衣]、僕がこんなこというのは、おこがましいけれど」[p]
 ;おこがましいですが、眉間に皺よってる感じの表情がほしいです。
+[四条眉眉間に皺]
 ;四条目通常
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
 [wait time=10]
