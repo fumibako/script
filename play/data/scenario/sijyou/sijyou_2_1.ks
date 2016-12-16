@@ -25,7 +25,7 @@
 [四条ボタン表示]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
 [if exp="tf.test_sijyou==true"]
-@jump target=*sijyou_5
+@jump target=*sijyou_3
 [endif]
 ;=================================================================================_
 *seen0
@@ -688,8 +688,19 @@ $('.bg1').remove();
 ;同じ流れなので変える
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (もっと、他に華道の楽しみを伝えれるようなお言葉があれば……)[p]
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
+;==================================四条ｱｯﾌﾟ=======================================
+#
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 [wait time=2]
-[四条アップ]
+[四条退場]
+[四条_隣_ベース羽織]
+[四条_隣_通常]
+;===四条登場=====
+[freeimage layer=13 time=700]
+[layopt layer=13 visible=true]
+;====四条登場=====
 [whosay name="華織" color="olivedrab"]
 「丸美屋様。 『上手くなりましたね』と褒められたときを想像なさって[r]
 [sp]下さい」[p]
@@ -699,12 +710,14 @@ $('.bg1').remove();
 「褒められたとき……」[p]
 ;子女、想像する
 [whosay name="華織" color="olivedrab"]
+[四条_隣_目にこ]
 「ふふ。 今、丸美屋様は、どなたに褒められましたか？」[p]
 [whosay name="乙女子 その壱" color=%mp.color]
 「お父様……でしょうか？」[p]
 ;子女、もじもじ
 ;他に言い回し
 [whosay name="華織" color="olivedrab"]
+[四条_隣_微笑み]
 「丸美屋様。帰っていけたら、お父様がお喜びになられるのでしょうね」[p]
 [whosay name="乙女子 その壱" color=%mp.color]
 「ありがとうございます。[r]
@@ -723,16 +736,17 @@ $('.bg1').remove();
 [fadeoutbgm time=3000]
 ;戻す
 #
-[四条退場]
-[暗転]
-
-[四条サイズ通常]
+[暗転２]
+[chara_mod name="sijyou_tonari_mayu" storage="toumei.gif" time=0]
+[chara_mod name="sijyou_tonari_me" storage="toumei.gif" time=0]
+[chara_mod name="sijyou_tonari_kuti" storage="toumei.gif" time=0]
+[chara_mod name="sijyou_tonari_base" storage="toumei.gif" time=0]
+[主人公通常]
+[暗転２終了]
 ;～～～～～～～～～～～～～シーン昼休みに～～～～～～～～～～～～～～～～
 *sijyou_4
 [er]
 #
-[主人公ポーズ通常]
-[主人公通常]
 私は、華織様と、なんとか午前中を[ruby text=しの]凌ぎきり、お昼休みを頂くことと[r]
 なった。[p]
 [autosave]
@@ -910,7 +924,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「できましたわ！」[p]
 #
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" visible=true time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公通常]
 [四条ベース羽織]
@@ -1039,7 +1053,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="sijyou_tonari_me" storage="toumei.gif" time=0]
 [chara_mod name="sijyou_tonari_kuti" storage="toumei.gif" time=0]
 [chara_mod name="sijyou_tonari_base" storage="toumei.gif" time=0]
-[暗転]
 ;=============================================================================_
 *kyousitu_zentai
 [er]
