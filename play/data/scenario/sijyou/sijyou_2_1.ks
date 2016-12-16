@@ -952,6 +952,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
 [wait time=10]
 [sp]お付き合いして華織様と呼ぶようになりましたが……)[p]
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
 ;全体や続きを読み解かないと何が言いたいの？ってなる
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
@@ -960,16 +962,15 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;==================================四条ｱｯﾌﾟ=========================================
 #
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
-[whosay name="華織" color="olivedrab"]
 [wait time=2]
 [四条退場]
 [四条_隣_ベース羽織]
 [四条_隣_通常]
 ;===四条登場=====
-[freeimage layer=13 time=800]
+[freeimage layer=13 time=700]
 [layopt layer=13 visible=true]
 ;====四条登場=====
-
+[whosay name="華織" color="olivedrab"]
 「[名前]さん？ どうかされましたか？」[p]
 ;ここも苗字でなくてもいいいかな
 #
@@ -981,6 +982,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 私は、そこで口を[ruby text=つぐ]噤んだ。[p]
 ;心配そうにみている
+[四条_隣_眉下げ]
 [四条_隣_伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
@@ -1031,13 +1033,18 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公目閉]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-[四条退場]
+[暗転２]
+[chara_hide name="sijyou_tonari_mayu"]
+[chara_hide name="sijyou_tonari_me"]
+[chara_hide name="sijyou_tonari_kuti"]
+[chara_hide name="sijyou_tonari_base"]
 [暗転]
 ;=============================================================================_
 *kyousitu_zentai
 [er]
 ;【背景】　和室広め　赤っぽく
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
+[暗転２終了]
 ;〜〜〜 〜〜〜 シーン急上昇(期待値高め)〜〜〜 〜〜〜
 ;～～～～シーン片付ける～～～～～
 ;楽しく片付ける2人 主人公が絶好調になる
