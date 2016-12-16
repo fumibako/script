@@ -99,7 +99,7 @@ $('.saku3').remove();
 #
 ;イベントスチル
 ;幼い頃の2人と文矢　を背景に　二人の結納姿
-[暗転２ storage=2bg/sijyou_CGnomal.jpg"]
+[暗転２ storage="bg/sijyou_CGnomal.jpg"]
 [chara_mod name="bg" storage="bg/sijyou_CGnomal.jpg" time=1000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [暗転２終了]
@@ -127,7 +127,7 @@ $('.saku3').remove();
 ;===============================================================
 幸せは信じれば巡ってくる。[r]
 [r]
-[sp]それは、案外気づかない近い場所に[r]
+それは、案外気づかない近い場所に[r]
 あるのかもしれません[p]
 ;===============================================================
 ;一瞬裏がみえるの防止背景
