@@ -401,10 +401,12 @@
 [whosay name="？？？" color=%mp.color]
 「華織！」[p]
 
-;【BGM】「一閃」
-[playbgm storage="kinpaku_issen.ogg" loop=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
+
 ;強気の驚き
 [四条真剣]
 [四条口驚き]
@@ -497,6 +499,7 @@
 私は、少し不安な気持ちを抱えつつも
 ;華織様と別れた。
 部屋へと戻ることにした。[p]
+[主人公退場]
 ;長いので好感度で表示するかスルーでいい
 @jump storage="sijyou/sijyou_9_4b.ks" target=*start
 ;¥¥¥¥¥¥¥¥イベント4おわり¥¥¥¥¥¥¥¥
