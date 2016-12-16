@@ -102,7 +102,7 @@
 [glink target="kuti_06" text="[葛城宮口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 [glink target="kuti_09" text="[葛城宮口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [glink target="kuti_07" text="[葛城宮口怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
-;[glink target="kuti_06" text="[葛城宮口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
+[glink target="kuti_08" text="[葛城宮口微笑み上げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
 [endif]
@@ -363,8 +363,8 @@
 @jump target=text
 
 *kuti_08
-[葛城宮口笑顔小]
-[eval exp="f.gra_katuraginomiya_face='口：[葛城宮口笑顔小]'"]
+[葛城宮口微笑み上げ]
+[eval exp="f.gra_katuraginomiya_face='口：[葛城宮口微笑み上げ]'"]
 @jump target=text
 
 *kuti_09
