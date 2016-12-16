@@ -1066,7 +1066,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;背景　床の間のみ表示　夕方バージョン
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
 [layopt layer=13 visible=true]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_kyousitu1_yuu.jpg" time=100]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公横目]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -1121,7 +1121,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 [wait time=2]
 [layopt layer=13 visible=true]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_kyousitu1_yuu.jpg" time=100]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg" time=100]
 [四条退場]
 [四条_隣_ベース羽織]
 [四条_隣_微笑み]
