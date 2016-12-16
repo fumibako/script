@@ -125,8 +125,8 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;【背景】 全画面背景洋館(用意してないので仮です)
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+;【背景】 全画面背景_番傘の女性
+[image layer=29 x=1 y=1 storage="bg/hujieda_haha.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;[layopt layer=message0 visible=true]
@@ -195,10 +195,8 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;【背景】 全画面背景洋館(用意してないので仮です)
-;全画面背景ポストカート
-; ttps://www.flickr.com/photos/45379817@N08/10997389504/in/photolist-hKNuKS-bzMvvU-6HTqaE-qRxLti-6xN6Ys-dTCxVj-rYYQSR-dTTBNX-qfSJzR-v7qz1-dTQ2jH-dtRsP1-6qrBb1-83ahTv-83dq2m-dTVMCS-pyRxX-bufLmT-6q4C8f-bNGewr-5peio6-oMnMw8-i8uRxh-dTThAR-v7qxK-uUzRF-5ydpHa-gZHNZ-d6LxuJ-bNGet4-74WTGd-6q5fNc-bNG888-bNGasc-bzMvoJ-72rcda-bzMxA3-dTRe1T-2YwHYo-vEAZ7Z-bNGddv-bNGaAM-bNGaFe-bNG7Qz-9aCQG3-bzMuzG-bNGc84-bNGbqv-74T1dT-bzMtSY
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+;【背景】 全画面背景＿空
+[image layer=29 x=1 y=1 storage="bg/hujieda_sky1.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;[layopt layer=message0 visible=true]
