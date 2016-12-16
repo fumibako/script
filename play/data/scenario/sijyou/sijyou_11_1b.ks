@@ -466,7 +466,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 ;病院背景に表示されないようにwait
 ;主人公の目閉じの合体png
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_komari.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
