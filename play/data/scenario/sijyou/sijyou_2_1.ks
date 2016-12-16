@@ -24,6 +24,9 @@
 [プリロード画面消去]
 [四条ボタン表示]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
+[if exp="tf.test_sijyou==true"]
+@jump target=*sijyou_6
+[endif]
 ;=================================================================================_
 *seen0
 [whosay name=華道の先生 color=%mp.color]
@@ -1114,16 +1117,24 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条微笑み]
 [sp]では、こちらの花と、僕が見本で持ってきた[ruby text=ぼ]牡[ruby text=たん]丹[ruby text=かご]籠で、いけて[r]
 [sp]みましょうか」[p]
+;==============================四条ｱｯﾌﾟ=============================
 #
 [wait time=2]
-[四条アップ]
-[wait time=1]
+[layopt layer=13 visible=true]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_kyousitu1_yuu.jpg" time=100]
+[四条退場]
+[四条_隣_ベース羽織]
+[四条_隣_微笑み]
+;===四条登場=====
+[freeimage layer=13 time=800]
+[layopt layer=13 visible=true]
+;====四条登場=====
 ;近づいて驚く
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-[四条目閉じ]
+[四条_隣_目閉じ]
 [主人公通常]
 華織様は、藤でできた壺状の籠を手にすると、短くなってしまった花々を[r]
 細く長い指で丁寧にしごく。[p]
@@ -1140,7 +1151,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 （……生き生きと風情のある姿になっていくわ)[p]
-;【１】主人公の会話のみにする　【２】地の文のみにする　【３】地の文を最後にする
 #
 [主人公通常]
 その手をよく見ると、[ruby text=つき]突[ruby text=ぬき]抜[ruby text=にん]忍[ruby text=どう]冬ののような、赤いかすり傷が[r]
@@ -1183,7 +1193,7 @@ _　いらっしゃるのでしょうか？)[p]
 私は、少し期待しながらも、華織様に尋ねた。[p]
 [whosay name="華織" color="olivedrab"]
 「そうですね。 
-[四条目閉じ]
+[四条_隣_目閉じ]
 やはり僕は、見に来て頂いた皆さんに喜んで[r]
 [sp]もらうように いけてます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1206,7 +1216,7 @@ _　いらっしゃるのでしょうか？)[p]
 （華織様……)[p]
 ;セリフ思いつかない↑
 [whosay name="華織" color="olivedrab"]
-[四条微笑み]
+[四条_隣_微笑み]
 「でも、さっきの[名前]さんの言葉で、決意も改めることもできましたし、[r]
 [sp]諦めず、もう一度、頑張ってみようと思います」[p]
 ;[名前]さんのおかげ、僕も改めて昔の想いを思い出しました。 何かのせいにしていては弱いままですよね
@@ -1252,7 +1262,6 @@ _　いらっしゃるのでしょうか？)[p]
 [if exp="tf.test_sijyou==true"]
 [四条退場]
 [暗転]
-[四条サイズ通常]
 ;↓ifで飛んでるのでセーブデータの肥大化防止
 [clearstack]
 [fadeoutbgm time=3000]
