@@ -24,9 +24,10 @@
 [プリロード画面消去]
 [四条ボタン表示]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
-[if exp="tf.test_sijyou==true"]
-@jump target=*sijyou_3
-[endif]
+;[if exp="tf.test_sijyou==true"]
+;@jump target=*sijyou_3
+;sijyou_5
+;[endif]
 ;=================================================================================_
 *seen0
 [whosay name=華道の先生 color=%mp.color]
