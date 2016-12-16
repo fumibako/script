@@ -24,6 +24,7 @@
 [er]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+@jump target=*seen7
 ;=========================================================================================
 #
 兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
@@ -623,9 +624,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [eval exp="f.haikei_credit=''"]
 ・・・・・・
 [wait time=1000]
+[暗転２]
 ;[寂れた邸宅]
-[chara_mod name="bg" storage="bg/test_mon.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/test_mon.jpg" time=100]
+[chara_mod name="bg" storage="bg/test_mon.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [er]
 ;【登場】四条
@@ -633,16 +634,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条ベース羽織]
 [四条真剣]
 [wait time=10]
-;==================
-;四条登場
-[freeimage layer=13 time=1000]
-[layopt layer=13 visible=true]
-;四条登場
-;================
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[暗転２終了]
 [whosay name="華織" color="olivedrab"]
 「少ないですが受け取って下さい」[p]
 [autosave]
