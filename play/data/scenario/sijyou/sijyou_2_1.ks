@@ -25,7 +25,7 @@
 [四条ボタン表示]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
 [if exp="tf.test_sijyou==true"]
-@jump target=*sijyou_6
+@jump target=*sijyou_5
 [endif]
 ;=================================================================================_
 *seen0
@@ -340,9 +340,9 @@ $('.bg1').remove();
 [whosay name=教室のお手伝い color=%mp.color]
 「それが、その湖池屋男爵様から……」[p]
 ;【SE】人々のざわめき（ザワザワ…暗くせわしない感じの効果音含む）
-[playse storage=zawa_dark.ogg loop=false ]
+;[playse storage=zawa_dark.ogg loop=false ]
 ;【SE】人々のざわめき（ザワザワ…屋内）
-;[playse storage=zawa_room.ogg loop=false ]
+[playse storage=zawa_room.ogg loop=false ]
 #
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
@@ -957,9 +957,19 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
 [wait time=10]
+;==================================四条ｱｯﾌﾟ=========================================
+#
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 [whosay name="華織" color="olivedrab"]
 [wait time=2]
-[四条アップ]
+[四条退場]
+[四条_隣_ベース羽織]
+[四条_隣_通常]
+;===四条登場=====
+[freeimage layer=13 time=800]
+[layopt layer=13 visible=true]
+;====四条登場=====
+
 「[名前]さん？ どうかされましたか？」[p]
 ;ここも苗字でなくてもいいいかな
 #
@@ -971,10 +981,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 私は、そこで口を[ruby text=つぐ]噤んだ。[p]
 ;心配そうにみている
-[四条伏目パチ1回]
+[四条_隣_伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
-;困りと憂いのちがいは何でしょう　わかりやすい
 (華織様のことを、いまさら昔の"華織お兄さま"のようにみえたなんて[r]
 [sp]言ったら、なんて思われるのでしょう……)[p]
 #
@@ -991,10 +1000,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;その代わりに別の気持ちを打ち明ける
 ;主人公の話をきく四条。
 [whosay name="華織" color="olivedrab"]
-;[四条眉下げ]
-[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
-[wait time=10]
-[chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+[四条_隣_眉下げ]
+[四条_隣_目大]
 [wait time=10]
 「そうなんですね。 懐かしいですよね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1005,7 +1012,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;お互いにいろいろ考えている
 ;四条は、様子がおかしい主人公に 生け花をしようと誘う。
 [whosay name="華織" color="olivedrab"]
-[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[四条_隣_目にこ]
 [wait time=10]
 [主人公通常]
 「そうだ。[名前]さん」[p]
@@ -1013,7 +1020,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [主人公目大]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[四条微笑み]
+[四条_隣_微笑み]
 「？ 」[p]
 [whosay name="華織" color="olivedrab"]
 「教室が終わりましたら、また一緒にいけてみませんか？」[p]
@@ -1021,14 +1028,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公笑顔]
 「はい！」[p]
-;いいですね！
 [主人公目閉]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [四条退場]
 [暗転]
-;退場のあとのほうが安定しているかも
-[四条サイズ通常]
 ;=============================================================================_
 *kyousitu_zentai
 [er]
@@ -1092,7 +1096,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 （ふぅ。　今日の私、華織様のお役に立てたでしょうか）[p]
-[四条ベース着物]
+[四条ベース羽織]
 [四条通常]
 [四条目大]
 ;===四条登場=====
