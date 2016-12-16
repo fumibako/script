@@ -119,7 +119,7 @@ $('.saku3').remove();
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
-[position left=200 width=500 height=300 top=200 page=fore margint="50"]
+[position left=200 width=500 height=300 top=100 page=fore margint="50"]
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示
 [layopt layer=message0 visible=true]
 ;テキスト全画面
@@ -133,7 +133,7 @@ $('.saku3').remove();
 ;一瞬裏がみえるの防止背景
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
-[position left=300 width=300 height=300 top=100 page=fore margint="50"]
+[position left=300 width=300 height=300 top=200 page=fore margint="50"]
 [font color=white size=35]
 ;===============================================================
 ;画面中央に「完」の文字
