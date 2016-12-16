@@ -702,6 +702,7 @@ $('.bg1').remove();
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [whosay name="華織" color="olivedrab"]
+[四条_隣_口微笑み]
 「丸美屋様。 『上手くなりましたね』と褒められたときを想像なさって[r]
 [sp]下さい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -759,7 +760,7 @@ $('.bg1').remove();
 [四条ベース着物]
 [四条困り微笑み]
 ;===四条登場=====
-[freeimage layer=13 time=800]
+[freeimage layer=13 time=700]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [whosay name="華織" color="olivedrab"]
