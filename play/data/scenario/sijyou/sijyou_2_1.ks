@@ -172,11 +172,13 @@ $('.bg1').remove();
 ;背景　和室　床の間のみ
 ;=========================================
 [wait time=50]
+[layopt layer=message0 visible=false]
 ;メッセージレイヤを全画面用に設定変更
+[layopt layer=13 visible=true]
+[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=1000]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[layopt layer=13 visible=true]
-[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[layopt layer=message0 visible=true]
 [font color=white size=27]
 ―― 後日。[r]
 淑女を目指す[ruby text=おと]乙[ruby text=め]女[ruby text=ご]子達が、母親や[r]
@@ -913,17 +915,19 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;(集中しないと)[p]
 ;華族が働いている感じるな～
 [主人公目閉]
+[暗転２]
+[主人公眉下げ下]
 #
 *sijyou_5
-[autosave]
 [er]
-;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[暗転２終了]
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;シーン急上昇まで流れ。楽しい時間を得る
 ;完成に喜ぶ児童達。
 [whosay name=乙女子その弐 color=%mp.color]
 「できましたわ！」[p]
+[autosave]
 #
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" visible=true time=100]
