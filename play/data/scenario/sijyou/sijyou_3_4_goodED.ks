@@ -99,13 +99,39 @@ $('.saku3').remove();
 #
 ;イベントスチル
 ;幼い頃の2人と文矢　を背景に　二人の結納姿
+[暗転２ storage=2bg/sijyou_CGnomal.jpg"]
 [chara_mod name="bg" storage="bg/sijyou_CGnomal.jpg" time=1000]
+[暗転２終了]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [p]
 # 
 ;ナレーターモノローグ
-『幸せは信じれば巡ってくる。[r]
-[sp]それは、案外気づかない近い場所にあるかもしれません』[p]
+;===============================================================
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position left=300 width=400 height=300 top=200 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;===============================================================
+幸せは信じれば巡ってくる。[r]
+[r]
+[sp]それは、案外気づかない近い場所に[r]
+あるのかもしれません[p]
+;===============================================================
+;一瞬裏がみえるの防止背景
+[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position left=300 width=300 height=300 top=200 page=fore margint="50"]
+[font color=white size=35]
+;===============================================================
+;画面中央に「完」の文字
+[sp]　　　　完[p]
+
 
 ;○プレイヤーに幸せの予感を残しておわり、紡いでいく話。
 ;幸せは信じれば巡ってくる それは案外気づかない近い場所にあるかもしれません というテーマかな
