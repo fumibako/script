@@ -100,7 +100,14 @@
 [endkeyframe]
 
 ;◆サイズマクロは文字表示不具合が直るまで一旦コメントアウトさせていただきます
+;[四条アップ]
 [macro name="四条アップ"]
+[四条退場]
+;↓顔up状態からの切り替えにも対応するよう追記してみます
+[四条_顔up_退場]
+;nameへのﾌﾗｸﾞはわからないので
+[四条_隣_ベース羽織]
+[四条_隣_通常]
 ;[kanim keyframe="scale1" name="sijyou_base" time=10]
 ;[kanim keyframe="scale1" name="sijyou_me" time=10]
 ;[kanim keyframe="scale1" name="sijyou_mayu" time=10]
@@ -109,6 +116,48 @@
 ;スマホフリーズ対策time=10 →おｋ
 ;[wa]
 [endmacro]
+
+;↓着物版やサイズ通常版、顔up版も作ってみました。もし使えそうでしたらご利用ください
+;[四条アップ_着物]
+[macro name="四条アップ_着物"]
+[四条退場]
+[四条_顔up_退場]
+[四条_隣_ベース着物]
+[四条_隣_通常]
+[endmacro]
+
+;[四条サイズ通常_着物]
+[macro name="四条サイズ通常_着物"]
+[四条_顔up_退場]
+[四条_隣_退場]
+[四条ベース着物]
+[四条通常]
+[endmacro]
+
+;[四条サイズ通常_羽織]
+[macro name="四条サイズ通常_羽織"]
+[四条_顔up_退場]
+[四条_隣_退場]
+[四条ベース羽織]
+[四条通常]
+[endmacro]
+
+;[四条_顔up_着物]
+[macro name="四条_顔up_着物"]
+[四条退場]
+[四条_隣_退場]
+[四条_顔up_ベース着物]
+[四条_顔up_通常]
+[endmacro]
+
+;[四条_顔up_羽織]
+[macro name="四条_顔up_羽織"]
+[四条退場]
+[四条_隣_退場]
+[四条_顔up_ベース羽織]
+[四条_顔up_通常]
+[endmacro]
+
 [macro name="四条サイズ通常"]
 ;[kanim keyframe="no_scale1" name="sijyou_base" time=10]
 ;[kanim keyframe="no_scale1" name="sijyou_me" time=10]
