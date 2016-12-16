@@ -385,23 +385,16 @@ $('.bg1').remove();
 [whosay name="華道の先生" color=%mp.color]
 「お二人とも、こちらに来て下さい」[p]
 #
-[四条退場]
-[主人公目閉]
-
+先生は、様子を[ruby text=いぶか]訝しむ生徒達に[ruby text=ひと]一[ruby text=こと]言、謝ると私達を廊下に連れ出した。[p]
+[暗転２]
+[四条通常]
 ;〜〜シーン廊下 先生の退場と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～
 *sijyou_1_1
-[暗転]
 [主人公憂い]
-先生は、様子を[ruby text=いぶか]訝しむ生徒達に[ruby text=ひと]一[ruby text=こと]言、謝ると私達を廊下に連れ出した。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[四条ベース羽織]
-[四条通常]
-;~===四条登場=====
-[freeimage layer=13 time=1000]
-[layopt layer=13 visible=true]
-;====四条登場=====
+[暗転２終了]
+
 ;[四条眉下げ]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
 [wait time=10]
@@ -490,7 +483,7 @@ $('.bg1').remove();
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「皆さんが待っていますわ。 いきましょうか」[p]
-[四条退場]
+[四条退場準備 storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg" time=100]
 [主人公憂い]
 ;暗転する前のお知らせ↓
 #
@@ -523,22 +516,18 @@ $('.bg1').remove();
 [主人公口通常]
 ;この時まだ大変さが軽い
 [fadeoutbgm time=3000]
-#
+[暗転２]
 ;〜〜シーン 先生の退場と主人公の立ち位置説明おわり〜〜〜
 *sijyou_2
 [er]
 ;〜〜シーン キャラと造作1 (軽度)後に繋ぐもの(テンション↓)〜〜〜
 ;背景　床の間のみ表示
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [主人公通常]
 [四条ベース羽織]
 [四条通常]
-;~===四条登場=====
-[freeimage layer=13 time=1000]
-[layopt layer=13 visible=true]
-;====四条登場=====
+[暗転２終了]
 #
 生徒達を落ち着かせたところで、私と華織様は、初級者向けの授業を[r]
 始めた。[p]
@@ -580,17 +569,19 @@ $('.bg1').remove();
 「その為にも、ご自身の想いを表現できるよう、今日はしっかりと基礎を[r]
 [sp]学びましょう」[p]
 [主人公目閉]
+[暗転２]
 [四条退場]
 
 *sijyou_3
-[autosave]
 [er]
 ;〜〜シーン キャラの造作1 軽度〜〜〜
 [暗転]
+[暗転２終了]
 ;このシーンの背景は生徒が描かれていないと違和感あるので暗転で。
 ;教室全体元ファイルアップロダ
 ;地の文　仮
-華織様と共に生徒達をみてまわった。[p]　
+華織様と共に生徒達をみてまわった。[p]
+[autosave]
 生徒達は、[ruby text=じゅう]十[ruby text=さん]三歳ほどの、あどけなさが残る少女であったが、[r]
 皆、教室に通わせるほどの向上思考の高い、良家の子女だけあって[r]
 取り組む態度は、真剣そのものであった。[p]
