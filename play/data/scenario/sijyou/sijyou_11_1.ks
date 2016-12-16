@@ -13,7 +13,7 @@
 ;=========================================================================================
 ;【背景】料亭
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-;[image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
+[image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -24,7 +24,6 @@
 [er]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
-@jump target=*seen7
 ;=========================================================================================
 #
 兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
@@ -788,7 +787,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 ;==================
 ;四条登場
-[freeimage layer=13 time=1000]
+[freeimage layer=13 time=700]
 [layopt layer=13 visible=true]
 ;四条登場
 ;================
