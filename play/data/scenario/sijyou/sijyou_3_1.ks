@@ -858,7 +858,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;===四条登場===
 [whosay name="華織" color="olivedrab"]
 「[名字]様、先日は、文矢さんと[名前]さんのお陰で助かりました。[r]
-[sp]ご子息、子女に、ご迷惑をおかけして申し訳ありませんでした」[p]
+[sp]ご子息、子女に、ご迷惑をおかけして申し訳ございませんでした」[p]
+;でした　でした重なるので違和感せめて接続的なものがほしい　　くわえて？　また？
 [四条目閉じ]
 ;いきなり文矢の会話からだと違和感あり
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -895,7 +896,6 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公口ムッ]
 [主人公憂い]
 [whosay name="華織" color="olivedrab"]
-[whosay name="華織" color="olivedrab"]
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
@@ -916,8 +916,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公ポーズ指]
 [主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そういえば、お正月のお手紙には、『君のお父様と会いました』と[r]
-[sp]書いてありましたが)[p]
+（そういえば、お正月のお手紙には、[r]
+[sp]『[名前]のお父様と会いました』と書いてありましたが)[p]
 [主人公憂い]
 [四条真剣]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -997,7 +997,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「泣いてないよ。 [r]
 [sp]文矢こそ、結納の時に名前さんの事が寂しくなって泣かないように」[p]
 [whosay name=文矢 color="#538a8a"]
-「ふふ。華織……変わったね」[p]
+「ふふ。 華織……変わったね」[p]
 [主人公照れ目普通]
 ;=================================================================================_
 *seen4
