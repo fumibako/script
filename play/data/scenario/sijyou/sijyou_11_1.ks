@@ -537,9 +537,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公目閉]
 ;=================================================================================
 *seen7
-[暗転２]
 ;メッセージレイヤを消去
 @layopt layer=message0 visible=false
+[暗転２]
 ;[土蔵]
 [chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -624,6 +624,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [eval exp="f.haikei_credit=''"]
 ・・・・・・
 [wait time=1000]
+;メッセージレイヤを消去
+@layopt layer=message0 visible=false
 [暗転２]
 ;[寂れた邸宅]
 [chara_mod name="bg" storage="bg/test_mon.jpg" time=50]
@@ -639,6 +641,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公通常]
 [wait time=10]
 [暗転２終了]
+;メッセージレイヤを表示
+@layopt layer=message0 visible=true
 [whosay name="華織" color="olivedrab"]
 「少ないですが受け取って下さい」[p]
 [autosave]
