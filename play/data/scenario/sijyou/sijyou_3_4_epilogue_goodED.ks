@@ -20,6 +20,9 @@
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
+;【登場】四条
+[四条ベース着物]
+[四条通常]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -46,9 +49,7 @@
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-;【登場】四条
-[四条ベース着物]
-[四条通常]
+
 [freeimage layer = 29 time=1000]
 ;ｸﾘｯｸがみえる場合は追加↓
 ;[layopt layer=message0 visible=true]
