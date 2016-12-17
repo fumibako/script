@@ -8,8 +8,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-;【背景】公園
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
+;【背景】たんぽぽ公園
+[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
 [eval exp="f.haikei_credit=''"]
 [keyframe name="animation1"]
 [frame p=100% x="2000" y="1000"]
@@ -48,13 +48,12 @@
 [kanim name="kaede" keyframe="animation1" time="6000"]
 #
 お父様達の意外な言葉に嬉しく思っていると、[r]
-[ruby text=あお]青[ruby text=かえで]楓の葉が、一枚通り過ぎていく。[p]
-;(カエデの花言葉は、「大切な思い出」「美しい変化」「遠慮」)
+暖かな風が吹き、白い綿毛が飛んでいく。[p]
 ;===========================全画面==============================================
 [iscript]
 $('.kaede').remove();
 [endscript]
-;【背景】楓の葉の背景全画面表示用　hijieda_kaede_sita2.jpg
+;【背景】綿毛の背景全画面表示用　hijieda_kaede_sita2.jpg
 [暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -64,24 +63,26 @@ $('.kaede').remove();
 
 そして、その後、私は言葉を告げられなくなった。[p]
 
+―― 目に飛び込んできたのは、誰よりも大切な人。[p]
+
 ;=========================================================================
 [resetfont]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-;【背景】楓の葉の背景hijieda_kaede_sita3.jpg
+;【背景】綿毛背景hijieda_kaede_sita3.jpg
 [chara_mod name="bg" storage="bg/hijieda_kaede_sita3.jpg"]
 ;【立ち絵】藤枝：真剣
 [藤枝ベース私服]
 [藤枝真剣]
 [暗転２終了]
 ;==========================
-
 [主人公驚]
 
-若葉の楓木の下に藤枝様が立っていた。[r]
-こちらに気づいて彼は私に柔らかく微笑む。[p]
+;【背景】たんぽぽ公園
+[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
+咲き競う一面のタンポポ畑の上で、彼は私に柔らかく微笑んでいた。[p]
 
-そして、彼は、お父様に礼をして言った。[p]
+そして、藤枝様は、お父様に礼をして言った。[p]
 
 [whosay name="藤枝 肇" color=%mp.color]
 「[名字]様、[r]
