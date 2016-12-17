@@ -186,6 +186,7 @@ $('.junbi_girl').remove();
 [p]
 
 [テキスト全画面白文字]
+[position left=300 width=700 height=500 top=110 page=fore margint="50"]
 ;一時的に行間多く
 [iscript]
 tyrano.plugin.kag.config.defaultLineSpacing = '15';
