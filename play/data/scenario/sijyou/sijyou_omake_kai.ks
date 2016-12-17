@@ -22,9 +22,12 @@ $('.loding_pic').remove();
 *seen0
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-;ガタゴト　音人　物音02（ガタン・バタン）×2回
+;【SE】物音（ガタン・バタン）
+;[playse storage=gatanbatan.ogg loop=false ]
 [whosay name="四条父" color="%mp.color"]
 「今日は、やけに二階が騒がしいな」[p]
+;【SE】物音（ガタン・バタン）
+[playse storage=gatanbatan.ogg loop=false ]
 [whosay name="四条母" color="#9B608B"]
 「聞いてよ！華織と[華衣]だけで、部屋の荷物の入れ替えをしてるみたい[r]
 [sp]なの！」[p]
@@ -87,6 +90,7 @@ $('.loding_pic').remove();
 [sp]かい？」[p]
 #
 華衣は、華織の部屋に留めておいた"華衣の婚約者"の荷物を運んでいたのだった。[p]
+
 [whosay name="四条 華衣" color=%mp.color]
 「それなら、[ruby text=メイ]女[ruby text=ド]中をよこせよっ アイツらならヘマもしないだろ！？」[p]
 [whosay name="華織" color="olivedrab"]
