@@ -55,6 +55,9 @@ $('.kaede').remove();
 [endscript]
 ;【背景】綿毛の背景全画面表示用　hijieda_kaede_sita2.jpg
 [暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
+;【立ち絵】藤枝：真剣
+[藤枝ベース私服]
+[藤枝微笑み]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -69,12 +72,9 @@ $('.kaede').remove();
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;【背景】綿毛背景hijieda_kaede_sita3.jpg
 [chara_mod name="bg" storage="bg/hijieda_kaede_sita3.jpg"]
-;【立ち絵】藤枝：真剣
-[藤枝ベース私服]
-[藤枝微笑み]
+[暗転２終了]
 ;=========================================================================
 ―― 目に飛び込んできたのは、誰よりも大切な人。[p]
-[暗転２終了]
 ;==================================================
 [主人公驚]
 
