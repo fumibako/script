@@ -20,6 +20,7 @@
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
+[call target=*start storage="macro_tati_sijyou.ks"]
 ;【登場】四条
 [四条ベース着物]
 [四条通常]
@@ -32,7 +33,7 @@
 [sp]ーその数年後、
 [sp]秋の薄紫の花達が風になびくころ。[p]
 ;タイトルの曲のほうがいいかも20090303yukidoke
-[call target=*start storage="macro_tati_sijyou.ks"]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
