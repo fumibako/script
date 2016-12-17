@@ -1,35 +1,61 @@
-
 ;/////////////////エピローグ追加分（good_end差分です)///////////
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
+[call target=*3_4_ep storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-
-[イベントシーン構築]
-
+[プリロード画面消去]
+;====================================================
 ;テストは一時的にイベントシーン構築つけてます
 *ep
-[テキスト全画面白文字]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】 裏で画面構成 ;[新聞] test_bg_sinbun.jpg bg_prologue_dark.jpg　bg_prologue.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風 bg_prologue.jpg
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 
 [sp]ーその数年後、
 [sp]秋の薄紫の花達が風になびくころ。[p]
-
 ;タイトルの曲のほうがいいかも20090303yukidoke
-
 [call target=*start storage="macro_tati_sijyou.ks"]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-[イベントシーン構築]
+
+;==========================スクリプト・全画面表示からの復帰準備========================================
+;メッセージをもどします
+[resetfont]
+;ｸﾘｯｸがみえる場合は追加↓
+;[layopt layer=message0 visible=false]
 ;【背景】[背景_庭]　和室かな？　昔の華族の家は和と洋が隣接しているので？
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;【登場】四条
 [四条ベース着物]
 [四条通常]
+[freeimage layer = 29 time=1000]
+;ｸﾘｯｸがみえる場合は追加↓
+;[layopt layer=message0 visible=true]
+[イベントシーン構築ボタン無し版枠茶色]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 ;[四条汗]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
 [wait time=10]
@@ -43,9 +69,15 @@
 [wait time=10]
 なかなか決まりませんね」[p]
 
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -166,12 +198,22 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [r]
 人々を幸せにする愛に変わっていく。[r]
 その手紙は－－[p]
+
+[position left=200 width=400 height=300 top=200 page=fore margint="50"]
+恋綴り　と呼ばれたという。[p]
 [iscript]
 tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [endscript]
 ;恋綴りのタイトルに戻るイメージ
 ;手紙によって大きく変わった四条兄弟が人々に貢献する・・・にもつながる？
-
+;===============================================================
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position left=300 width=300 height=300 top=200 page=fore margint="50"]
+;テキスト全画面
+[font size=35]
+;===============================================================
+;画面中央に「完」の文字
+[sp]　　　　完[p]
 
 ;@jump storage="event.ks" target=*event_owari
 
