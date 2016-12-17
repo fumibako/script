@@ -333,12 +333,20 @@
 ;桜の表示が遅いと見えない,処理不能の為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [preload storage="data/fgimage/"bg/bg_sakura.jpg"]
+;///////////////////////////////
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;==========================================================================
 *3_4_1
+*3_4_ep
 ;グットエンドエピローグ
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////////////////////
 
 ;まだないです
 [return]
