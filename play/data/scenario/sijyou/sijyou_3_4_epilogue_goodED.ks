@@ -5,6 +5,9 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+;【背景】ﾌﾟﾛﾛーｸﾞ　一瞬見える
+[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[eval exp="f.haikei_credit=' '"]
 [プリロード画面消去]
 ;====================================================
 ;テストは一時的にイベントシーン構築つけてます
