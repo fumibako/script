@@ -275,8 +275,8 @@
 
 その人物は、柏木元大将の家令にあたる者だった。[p]
 
-;【SE】椅子ガタ１
-
+;【SE】椅子を引く（ガタッ）
+[playse storage=isu_gata.ogg loop=false ]
 [whosay name="柏木元大将" color=%mp.color]
 「どうしてここにお前が！」[p]
 ;ここで人物紹介でもいい
