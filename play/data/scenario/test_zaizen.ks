@@ -46,23 +46,24 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test11_4_1" text="11月4週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test11_4_2" text="11月4週_2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test12_4" text="12月4週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test12_1" text="12月2週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test12_4" text="12月4週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 
-[glink target="test1_3_1" text="1月3週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="test1_3_2" text="1月3週_2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+
 [glink target="page2" text="2ページ目" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
-;色は変えてください・・・
-
 @jump target=*common
 ;１ページ目の表示を共通部分をみせて終わらせます
 
 ;２ぺージ目の表示
 *page2
-[glink target="test2_1" text="2月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test3_4good" text="3月4週good" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test3_4nomal" text="3月4週nomal" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="zaizen_bazaar" text="財前バザー" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="test1_3_1" text="1月3週_1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test1_3_2" text="1月3週_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test2_1" text="2月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="test3_4good" text="3月4週good" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test3_4nomal" text="3月4週nomal" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+
+[glink target="zaizen_bazaar" text="財前バザー" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="page_0" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=pink]
 @jump target=*common
 ;２ページ目の表示を共通部分をみせて終わらせます
@@ -188,6 +189,12 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 ;zaizen_11_4_2.ks
 
+*test12_1
+[cm]
+[freeimage layer = 26]
+@jump storage="zaizen/zaizen_12_1.ks"
+[s]
+;zaizen_12_1.ks
 
 *test12_4
 [cm]
