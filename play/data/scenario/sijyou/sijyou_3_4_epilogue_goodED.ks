@@ -10,7 +10,6 @@
 ;テストは一時的にイベントシーン構築つけてます
 *ep
 ;==========================スクリプト・全画面表示の間に設定===============================
-#
 ;【テキスト全画面】 裏で画面構成 ;[新聞] test_bg_sinbun.jpg bg_prologue_dark.jpg　bg_prologue.jpg
 ;機能ボタン消去
 [layopt layer=fix visible=false]
