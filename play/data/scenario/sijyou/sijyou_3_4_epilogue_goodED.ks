@@ -6,7 +6,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;【背景】ﾌﾟﾛﾛーｸﾞ　一瞬見える
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [eval exp="f.haikei_credit=' '"]
 [プリロード画面消去]
 ;====================================================
@@ -169,20 +169,21 @@ $('.junbi_girl').remove();
 #
 [名前]は華織に微笑み返すと、縁側で揺れるネリネの花を見つめた。[p]
 ;主語が決まってません↑
-
-#
-[イベントシーン構築枠茶色]　
-[四条真剣]
+[主人公退場]
 [whosay name="華織" color="olivedrab"]
+[四条真剣]
 (手紙の代わりに、華で想いを綴っていくと決めたのだから、
 [四条口微笑み]
 もっと精進しなくては)[p]
 [wait time=10]
-
+[暗転２ storage="bg/sijyou_CGgood.jpg" time=1000]
 ;【退場】四条
 [四条退場]
-[chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
+[chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=100]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[暗転２終了]
+;CGにあわせてメッセージ
+[p]
 
 [テキスト全画面白文字]
 ;一時的に行間多く
