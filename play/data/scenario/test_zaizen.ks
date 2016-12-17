@@ -46,7 +46,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test11_4_1" text="11月4週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test11_4_2" text="11月4週_2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test12_1" text="12月2週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test12_2" text="12月2週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="test12_4" text="12月4週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 
 
@@ -189,12 +189,12 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 ;zaizen_11_4_2.ks
 
-*test12_1
+*test12_2
 [cm]
 [freeimage layer = 26]
-@jump storage="zaizen/zaizen_12_1.ks"
+@jump storage="zaizen/zaizen_12_2.ks"
 [s]
-;zaizen_12_1.ks
+;zaizen_12_2.ks
 
 *test12_4
 [cm]
