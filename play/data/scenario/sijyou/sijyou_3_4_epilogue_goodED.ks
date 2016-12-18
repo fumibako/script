@@ -30,8 +30,9 @@
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
 
-[sp]ーその数年後、
-[sp]秋の薄紫の花達が風になびくころ。[p]
+[sp]―― その数年後、
+[sp]秋の輝きが風になびくころ。[p]
+;輝花が　輝きが　幸せな思い出が
 ;タイトルの曲のほうがいいかも20090303yukidoke
 
 [if exp="sf.BGM=='ON'"]
@@ -45,9 +46,9 @@
 [resetfont]
 ;ｸﾘｯｸがみえる場合は追加↓
 ;[layopt layer=message0 visible=false]
-;【背景】[背景_庭]　和室かな？　昔の華族の家は和と洋が隣接しているので？
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;【背景】ｴﾋﾟﾛｰｸﾞ部屋　昔の華族の家は和と洋が隣接しているので？
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_ep_wasitu.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [イベントシーン構築ボタン無し版枠茶色]
