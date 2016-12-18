@@ -53,12 +53,14 @@
 [p]
 
 ;時期でセリフの変更
-[whosay name="四条 華衣"]
+
 [if exp="f.sysgra_okeiko_month" > 12]
+[whosay name="四条 華衣"]
 「うるさい、俺は自分で何とかしたいの！」
 [else]
+[whosay name="見知らぬ御令息"]
 「うるさい、俺はひとりになりたいの！」
-;事件未解決
+;事件未解決　見合い　園遊会後なので知っている
 [endif]
 
 [p]
