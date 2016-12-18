@@ -347,7 +347,8 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////////////////////
-
+;【背景】ｴﾋﾟﾛｰｸﾞ部屋
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_ep_wasitu.jpg"]
 ;///////////////////////////////
 @jump target=end_sub
 ;まだないです
