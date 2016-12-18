@@ -255,14 +255,14 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 幼い頃の私は、その言葉の意味もわからず、ただ呆然と、[r]
 白く消えていく華織お兄さまを見送ってしまった。[p]
 ;背景ない内はこれで
+[autosave]
+;===============================================================================
+[暗転２]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
-[autosave]
-;===============================================================================
-[暗転２]
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
