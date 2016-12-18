@@ -139,7 +139,7 @@
 [fadeoutbgm time=3000]
 ;===============================================================
 [layopt layer=message0 visible=false]
-[暗転２ storage="bg/bg_prologue_dark.jpg"]
+[暗転２ storage="bg/bg_prologue.jpg"]
 ;黒背景を変更する場合 storage="" clegit=true　でクレジット表示可
 [財前退場]
 ;メッセージレイヤを全画面用に設定変更
@@ -157,7 +157,7 @@
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [layopt layer=message0 visible=false]
-[暗転２終了]
+;[暗転２終了]
 ;===============================================================
 ;@jump storage="event.ks" target=*event_owari
 
