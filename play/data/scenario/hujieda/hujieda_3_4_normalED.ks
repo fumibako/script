@@ -71,15 +71,14 @@ $('.kaede').remove();
 [主人公驚]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-;【背景】綿毛背景hijieda_kaede_sita3.jpg
-[chara_mod name="bg" storage="bg/hijieda_kaede_sita3.jpg"]
+;【背景】たんぽぽ公園
+[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
 [暗転２終了]
 ;=========================================================================
 ―― 目に飛び込んできたのは、誰よりも大切な人。[p]
 ;==================================================
 
-;【背景】たんぽぽ公園
-[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
+
 咲き競う一面のタンポポ畑の上で、彼は私に柔らかく微笑んでいた。[p]
 
 そして、藤枝様は、お父様に礼をして言った。[p]
