@@ -159,9 +159,6 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 『内容は覚えているからいいよ』[p]
 #
 ;○回想1おわり
-;【背景】ヒロインの部屋雪
-[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
@@ -182,13 +179,17 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 ――あと少しで、冷たい冬がくる。[r]
 私は"あの雪の日"を思い出した。[p]
+[暗転２]
 [主人公退場]
-;【背景】ヒロインの部屋
+;【背景】ヒロインの部屋雪
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
+[暗転２終了]
 ;背景ない内はこれで
 [whosay name="文矢" color="#538a8a"]
 「[名前]、華織が来たよ。 外にでてきて」[p]
