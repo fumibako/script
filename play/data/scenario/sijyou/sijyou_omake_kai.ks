@@ -17,11 +17,41 @@
 $('.loding_pic').remove();
 [endscript]
 ;//////////////////
-[イベントシーン構築枠茶色]
 ;=================================================================================_
-*seen0
+;==========================スクリプト・全画面表示の間に設定===============================
+;【テキスト全画面】黒茶・和紙風背景(暗)に白文字 ;[新聞] 裏で画面構成 test_bg_sinbun.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風_暗
+[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[wait time=10]
+;【背景】四条邸宅玄関ﾎｰﾙ
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+早春[r]
+[r]
+四条家にて――[p]
+;季節はｲﾍﾞﾝﾄに合わせて調整
+;==========================スクリプト・全画面表示からの復帰準備========================================
+;メッセージをもどします
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更
+;[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[イベントシーン構築ボタン無し版枠茶色]
+[freeimage layer = 29 time=1000]
+[eval exp="sf.FButton='ON'"]
+[cm]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+*seen0
 ;【SE】物音（ガタン・バタン）
 ;[playse storage=gatanbatan.ogg loop=false ]
 [whosay name="四条父" color="%mp.color"]
