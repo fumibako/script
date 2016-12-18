@@ -149,7 +149,6 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [手紙読了]
 
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;☆主人公の決意
 ;○今までの四条を振り返ってキャラのよさを確認する　気遣いができるひとである
 
@@ -157,6 +156,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 『大事なものではないのですか？』[p]
 [whosay name="華織" color="olivedrab"]
 『内容は覚えているからいいよ』[p]
+[暗転２]
 #
 ;○回想1おわり
 [iscript]
@@ -171,10 +171,16 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 [主人公口通常]
 [wait time=10]
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[暗転２終了]
+
 *seen4
-[autosave]
+
 #
 北風が障子の影を抜けて吹き抜けていく。[p]
+[autosave]
 [主人公目を開く]
 #
 ――あと少しで、冷たい冬がくる。[r]
