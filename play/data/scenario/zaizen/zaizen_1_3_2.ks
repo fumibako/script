@@ -109,7 +109,7 @@
 ;【立ち絵】財前：驚
 [財前驚き]
 [whosay name="財前美彬" color="#7a65b2"]
-（文章の雰囲気が[名前]さんらしい大切な人はその一員……）[p]
+（文章の雰囲気が[名前]さんらしい。　大切な人はその一員……）[p]
 
 [財前眉ひそめ]
 （まさか、[名前]さんが？）[p]
@@ -138,15 +138,26 @@
 （この沸き上がる熱い気持ちは何だろうか）[p]
 [fadeoutbgm time=3000]
 ;===============================================================
-[暗転２]
+[layopt layer=message0 visible=false]
+[暗転２ storage="bg/bg_prologue_dark.jpg"]
 ;黒背景を変更する場合 storage="" clegit=true　でクレジット表示可
 [財前退場]
-[暗転]
-[暗転２終了]
-;==========================
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;ｸﾘｯｸがみえる場合は追加↓
+[layopt layer=message0 visible=true]
+;テキスト全画面
+[font color=white size=27]
+;===============================================================
 #
 ―― そして取り付け騒ぎは、次第に沈静化していった[p]
 
+;===============================================================
+[暗転]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[layopt layer=message0 visible=false]
+[暗転２終了]
 ;===============================================================
 ;@jump storage="event.ks" target=*event_owari
 
