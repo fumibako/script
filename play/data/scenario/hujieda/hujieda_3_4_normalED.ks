@@ -9,7 +9,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】たんぽぽ公園
-[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
+[chara_mod name="bg" storage="bg/hujieda_tanpopo_kouen.jpg"]
 [eval exp="f.haikei_credit=''"]
 [keyframe name="animation1"]
 [frame p=100% x="2000" y="1000"]
@@ -71,7 +71,7 @@ $('.kaede').remove();
 [主人公驚]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-;【背景】たんぽぽ公園
+;【背景】たんぽぽ
 [chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
 [暗転２終了]
 ;=========================================================================
