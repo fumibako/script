@@ -39,7 +39,11 @@ camera zoom=2 from_zoom=3 x=180 y=100 time=1000[p]
 [eval exp="f.sijyou_tatie_moto_height=2000"]
 
 ;name属性を指定してアニメーション
-[anim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" time=1000 effect=easeInCirc opacity=0 ]
+[anim name="sijyou_kuti" effect=easeInCirc opacity=0 time=100]
+[anim name="sijyou_me" effect=easeInCirc opacity=0 time=100]
+[anim name="sijyou_mayu" effect=easeInCirc opacity=0 time=100]
+[anim name="sijyou_emo" effect=easeInCirc opacity=0 time=100]
+[anim name="sijyou_base" time=1000 effect=easeInCirc opacity=0 time=100]
 [wa]
 [anim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" width=&f.sijyou_tatie_moto_width top=10 height=&f.sijyou_tatie_moto_height]
 [wa]
