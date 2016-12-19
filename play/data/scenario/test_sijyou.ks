@@ -381,10 +381,14 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 
 *test_fumi3
+[cm]
+[freeimage layer = 26]
 @jump storage="sijyou/asuka_fumi.ks"
 [s]
 
 *test_camera
+[cm]
+[freeimage layer = 26]
 @jump storage="sijyou/camera_sijyou.ks
 [s]
 
