@@ -48,7 +48,7 @@ tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyo
 [anim name="sijyou_emo" effect=easeInCirc opacity=0 time=100]
 [anim name="sijyou_base" time=1000 effect=easeInCirc opacity=0 time=100]
 [wa]
-[anim name="sijyou_base" width=&f.sijyou_tatie_moto_width top=10 height=&f.sijyou_tatie_moto_heightleft=20]
+[anim name="sijyou_base" width=&f.sijyou_tatie_moto_width top=10 height=&f.sijyou_tatie_moto_height left=20]
 [anim name="sijyou_kuti" width=&f.sijyou_tatie_moto_width top=10 height=&f.sijyou_tatie_moto_height left=20]
 [anim name="sijyou_me" width=&f.sijyou_tatie_moto_width top=10 height=&f.sijyou_tatie_moto_height left=20]
 [anim name="sijyou_mayu" width=&f.sijyou_tatie_moto_width top=10 height=&f.sijyou_tatie_moto_height left=20]
