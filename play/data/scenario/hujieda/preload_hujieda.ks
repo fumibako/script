@@ -176,8 +176,8 @@
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】たんぽぽ
 [preload storage="data/fgimage/bg/hujieda_tanpopo.jpg" wait=true]
-;【背景】綿毛
-;[preload storage="data/fgimage/bg/hijieda_kaede_sita3.jpg" wait=true]
+;【背景】たんぽぽ公園
+[preload storage="data/fgimage/bg/hujieda_tanpopo_kouen.jpg" wait=true]
 ;【背景】綿毛全画面表示用
 [preload storage="data/fgimage/bg/hijieda_kaede_sita3.jpg" wait=true]
 ;【背景CG】hujieda_normalED.jpg
