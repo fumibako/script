@@ -37,6 +37,7 @@
 
 [eval exp="f.sijyou_tatie_moto_width=1202"]
 [eval exp="f.sijyou_tatie_moto_height=2000"]
+
 [iscript]
 tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyou_base');
 [endscript]
@@ -48,11 +49,11 @@ tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyo
 [anim name="sijyou_emo" effect=easeInCirc opacity=0 time=100]
 [anim name="sijyou_base" time=1000 effect=easeInCirc opacity=0 time=100]
 [wa]
-[anim name="sijyou_base" width=&f.sijyou_tatie_moto_width top=-10 height=&f.sijyou_tatie_moto_height left=20]
-[anim name="sijyou_kuti" width=&f.sijyou_tatie_moto_width top=-10 height=&f.sijyou_tatie_moto_height left=20]
-[anim name="sijyou_me" width=&f.sijyou_tatie_moto_width top=-10 height=&f.sijyou_tatie_moto_height left=20]
-[anim name="sijyou_mayu" width=&f.sijyou_tatie_moto_width top=-10 height=&f.sijyou_tatie_moto_height left=20]
-[anim name="sijyou_emo" width=&f.sijyou_tatie_moto_width top=-10 height=&f.sijyou_tatie_moto_height left=20]
+[anim name="sijyou_base" width=&f.sijyou_tatie_moto_width top=-100 height=&f.sijyou_tatie_moto_height left=10]
+[anim name="sijyou_kuti" width=&f.sijyou_tatie_moto_width top=-100 height=&f.sijyou_tatie_moto_height left=10]
+[anim name="sijyou_me" width=&f.sijyou_tatie_moto_width top=-100 height=&f.sijyou_tatie_moto_height left=10]
+[anim name="sijyou_mayu" width=&f.sijyou_tatie_moto_width top=-100 height=&f.sijyou_tatie_moto_height left=10]
+[anim name="sijyou_emo" width=&f.sijyou_tatie_moto_width top=-100 height=&f.sijyou_tatie_moto_height left=10]
 [wa]
 [anim name="sijyou_kuti" time=1001 effect=easeInCirc opacity=255]
 [anim name="sijyou_me" time=1001 effect=easeInCirc opacity=255]
@@ -61,7 +62,9 @@ tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyo
 [anim name="sijyou_base" time=1000 effect=easeInCirc opacity=255]
 [wa]
 
+文字表示[p]
 animﾃｽﾄを終了します。[p]
+
 ;¥¥¥¥¥¥¥¥イベントおわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
