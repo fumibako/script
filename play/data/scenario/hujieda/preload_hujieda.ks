@@ -179,7 +179,7 @@
 ;【背景】たんぽぽ公園
 [preload storage="data/fgimage/bg/hujieda_tanpopo_kouen.jpg" wait=true]
 ;【背景】綿毛全画面表示用
-[preload storage="data/fgimage/bg/hijieda_kaede_sita3.jpg" wait=true]
+[preload storage="data/fgimage/bg/hijieda_kaede_sita2.jpg" wait=true]
 ;【背景CG】hujieda_normalED.jpg
 [preload storage="data/fgimage/bg/hujieda_normalED.jpg" wait=true]
 ;======================================================================================
