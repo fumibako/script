@@ -6,6 +6,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
 ;【背景】主人公邸 お稽古部屋
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami_yoru.jpg" time=50]
 [eval exp="f.haikei_credit=''"]
