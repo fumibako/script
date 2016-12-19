@@ -35,6 +35,17 @@ camera zoom=2 from_zoom=3 x=180 y=100 time=1000[p]
 ;カメラの位置を元に戻す
 @reset_camera
 
+[eval exp="f.sijyou_tatie_moto_width=1202"]
+[eval exp="f.sijyou_tatie_moto_height=2000"]
+
+;name属性を指定してアニメーション
+[anim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" time=1000 effect=easeInCirc opacity=0 ]
+[wa]
+[anim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" width=&f.sijyou_tatie_moto_width top=10 height=&f.sijyou_tatie_moto_height]
+[wa]
+[anim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" time=1000 effect=easeInCirc opacity=255]
+[wa]
+
 ;¥¥¥¥¥¥¥¥イベントおわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
