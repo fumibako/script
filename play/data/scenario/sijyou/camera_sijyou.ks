@@ -22,21 +22,24 @@
 ;=====================ここからお芝居の幕引きです===============================
 
 ｶﾒﾗﾃｽﾄをします。[p]
-camera zoom=2 x=180 y=100 time=1000[p]
-[camera zoom=2 x=180 y=100 time=1000]
+;camera zoom=2 x=180 y=100 time=1000[p]
+;[camera zoom=2 x=180 y=100 time=1000]
 
-camera x=-180 y=100 time=2000[p]
-[camera x=-180 y=100 time=2000]
+;camera x=-180 y=100 time=2000[p]
+;[camera x=-180 y=100 time=2000]
 
-camera zoom=2 from_zoom=3 x=180 y=100 time=1000[p]
-[camera zoom=2 from_zoom=3 x=180 y=100 time=1000]
+;camera zoom=2 from_zoom=3 x=180 y=100 time=1000[p]
+;[camera zoom=2 from_zoom=3 x=180 y=100 time=1000]
 
-ｶﾒﾗﾃｽﾄを終了します。[p]
+;ｶﾒﾗﾃｽﾄを終了します。[p]
 ;カメラの位置を元に戻す
 @reset_camera
 
 [eval exp="f.sijyou_tatie_moto_width=1202"]
 [eval exp="f.sijyou_tatie_moto_height=2000"]
+[iscript]
+tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyou_base');
+[endscript]
 
 ;name属性を指定してアニメーション
 [anim name="sijyou_kuti" effect=easeInCirc opacity=0 time=100]
@@ -45,11 +48,20 @@ camera zoom=2 from_zoom=3 x=180 y=100 time=1000[p]
 [anim name="sijyou_emo" effect=easeInCirc opacity=0 time=100]
 [anim name="sijyou_base" time=1000 effect=easeInCirc opacity=0 time=100]
 [wa]
-[anim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" width=&f.sijyou_tatie_moto_width top=10 height=&f.sijyou_tatie_moto_height]
+[anim name="sijyou_base" width=&f.sijyou_tatie_moto_width top=0 height=&f.sijyou_tatie_moto_height]
+[anim name="sijyou_kuti" width=&f.sijyou_tatie_moto_width top=0 height=&f.sijyou_tatie_moto_height]
+[anim name="sijyou_me" width=&f.sijyou_tatie_moto_width top=0 height=&f.sijyou_tatie_moto_height]
+[anim name="sijyou_mayu" width=&f.sijyou_tatie_moto_width top=0 height=&f.sijyou_tatie_moto_height]
+[anim name="sijyou_emo" width=&f.sijyou_tatie_moto_width top=0 height=&f.sijyou_tatie_moto_height]
 [wa]
-[anim name="sijyou_base,sijyou_kuti,sijyou_me,sijyou_mayu,sijyou_emo" time=1000 effect=easeInCirc opacity=255]
+[anim name="sijyou_kuti" time=100 effect=easeInCirc opacity=255 left=20]
+[anim name="sijyou_me" time=100 effect=easeInCirc opacity=255 left=20]
+[anim name="sijyou_mayu" time=100 effect=easeInCirc opacity=255 left=20]
+[anim name="sijyou_emo" time=100 effect=easeInCirc opacity=255 left=20]
+[anim name="sijyou_base" time=1000 effect=easeInCirc opacity=255 left=20]
 [wa]
 
+animﾃｽﾄを終了します。[p]
 ;¥¥¥¥¥¥¥¥イベントおわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
 
