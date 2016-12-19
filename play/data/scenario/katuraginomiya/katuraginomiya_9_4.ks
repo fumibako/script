@@ -321,7 +321,7 @@ $('.junbi_girl').remove();
 ;====================
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「[名前]殿！」[p]
-
+[葛城宮口通常]
 [fadeoutbgm time=3000]
 
 #
