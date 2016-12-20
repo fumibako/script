@@ -113,7 +113,7 @@
 [主人公目を開く]
 ;[主人公目通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「どうか1人で考えこまないで下さい」[p]
+「どうか[ruby text=ひと]一[ruby text=り]人で考えこまないで下さい」[p]
 ;主人公笑うか通常で。あまり強気な性格ではない。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私と華織様は[ruby text="め"]夫[ruby text="おと"]婦となる方です」
@@ -572,7 +572,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【退場】主人公
 [主人公退場]
 ;【退場】四条
-[四条退場]
+[四条退場準備 storage="bg/test_sijyou_dozou.jpg"]
 ;場面転換
 ;=====================シーン・パラメータ============================================================_
 *seen8
