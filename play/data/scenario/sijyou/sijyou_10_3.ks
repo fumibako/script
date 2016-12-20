@@ -284,7 +284,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……」[p]
 [主人公通常]
-[wait time=10]
+[暗転２]
+[wait time=500]
 *seen7
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
