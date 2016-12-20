@@ -206,6 +206,7 @@
 [preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
 [preload storage="data/fgimage/bg/test_mon.jpg" wait=true]
 [preload storage="data/fgimage/bg/test_sijyou_dozou.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_dozou.jpg" wait=true]
 ;=====11_2========
 [preload storage="data/fgimage/bg/bg_bluesky.jpg" time=100 wait=true]
 [preload storage="data/fgimage/bg/test_konyaku_jikka2.jpg" wait=true]
