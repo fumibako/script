@@ -221,8 +221,8 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 [whosay name="華織" color="olivedrab"]
 (あぁ、もっと[名前]さんに何かをしてあげたいな )[p]
 #
-彼女に対して　返すべきもの、ほしいもの　で僕の心は、今まで以上に[r]
-貪欲になっていた。[p]
+彼女に対して　返すべきもの、ほしいもの　で[r]
+僕の心は、今まで以上に貪欲になっていた。[p]
 #
 －－だからかもしれない。　僕は、ふと考えた。[p]
 [whosay name="華織" color="olivedrab"]
