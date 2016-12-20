@@ -144,19 +144,18 @@
 [主人公通常]
 [eval exp="f.kaogura!='on'"]
 [暗転２終了]
+[四条ボタン表示]
 ;===============================================================
 *seen4
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [wait time=10]
 [主人公困り]
-[freeimage layer=29 time=1000]
-[layopt layer=fix visible=true]
-[wait time=10]
-[四条ボタン表示]
 [主人公目閉じ]
 (どうしましょう)[p]
+
 [whosay name="磯野" color="dimgray"]
-「文矢様にお手紙を書いてはいかがでしょうか？」[p]
+「お嬢様。 文矢様にお手紙を書いてはいかがでしょうか？」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
