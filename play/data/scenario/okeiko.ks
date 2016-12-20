@@ -1,6 +1,190 @@
-﻿[skipstop]
+﻿*start
+;↓◆お稽古パート経由かどうか見るための変数
+[eval exp="tf.okeiko_gamen=true"]
+[skipstop]
 ;[setreplay name="okeiko"]
-;*okeiko
+;背景変更:和紙風 桜色
+
+;手紙の話題リスト（初期話題）を読込んで配列f.wadai_list_hairetsu[i][j]に格納。
+;[i]部分が話題の種類
+;[j]部分が話題の属性(好感度増減値)を示す(0=話題の種類名、1=黒田、2=財前、3=華織、4=葛城宮 晴仁、5=藤枝　肇、6=好適距離a最初からok,b好感度20以上でok、c好感度50以上でok、7、8=その話題が苦手なキャラ、9、10=その話題を好むキャラ)
+[iscript]
+$.get("./data/scenario/fumi_wadai.csv", function(data){
+//読み込まれたファイル
+
+	f.wadai_list_moto = data;
+	f.wadai_list_shurui = [];
+	f.wadai_list_shurui = data.split("\n");
+	//ラベルの位置までジャンプ
+	TG.kag.stat.is_stop = false;
+	TG.kag.ftag.startTag("jump",{target:"*complete_load_wadai_list_shurui"}); 
+});
+[endscript]
+[s]
+*complete_load_wadai_list_shurui
+[iscript]
+	f.wadai_list_hairetsu = [];
+for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
+	f.wadai_list_hairetsu[i] = f.wadai_list_shurui[i].split(",");
+	for( var j = 0 , m = f.wadai_list_hairetsu[i].length ; j < m ; j++ ){//trimも同時に行っておく
+		f.wadai_list_hairetsu[i][j] = f.wadai_list_hairetsu[i][j].replace( /(^\s+)|(\s+$)/g , ""  );
+	}
+}
+[endscript]
+*complete_load_wadai_list_hairetsu
+
+[if exp="tf.test_gamen==true"]
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[cm]
+[イベントシーン構築]
+テスト画面からお稽古パートをはじめます。[r]
+手紙の「話題」を全て入手済みにしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*okeiko_wadai_all_plus_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*okeiko_wadai_all_plus_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*okeiko_wadai_all_plus_ok
+
+「はい」[r]
+話題を追加します[p]
+
+;手紙の話題リスト配列f.wadai_list_hairetsu[i][j]
+;[i]部分が話題の種類(配列中の位置ナンバー)
+;[j]の配列が話題の属性(好感度増減値)を示す(0=話題の表示名、1=黒田、2=財前、3=華織、4=葛城宮 晴仁、5=藤枝　肇、6=好適距離a最初からok,b好感度20以上でok、c好感度50以上でok、7、8=その話題が苦手なキャラ、9、10=その話題を好むキャラ)
+;◆話題の細かい設定については今後調整予定です
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,1,2,-1,1,"a","","",3,"");
+[endscript]
+『友人の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1,"a","","",1,"");
+[endscript]
+『新茶の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-1,1,"a","","",1,"");
+[endscript]
+『さつきの話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("読書の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『読書の話題』を手に入れました。[p]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("スポーツの話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『スポーツの話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("食事の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『食事の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("観劇の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『観劇の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("猫の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『猫の話題』を手に入れました。[p]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("聞き上手と話し上手の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『聞き上手と話し上手の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("緑の石の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『緑の石の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("写真の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『写真の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("1日のはじまりの話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『1日のはじまりの話題』を手に入れました。[p]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("お気に入りの曲の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『お気に入りの曲の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("道の話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『道の話題』を手に入れました。[r]
+
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠についての話題",0,0,0,0,0,"a","","","","");
+[endscript]
+『変化と永遠についての話題』を手に入れました。[r]
+お稽古パートをはじめます。[p]
+[イベントシーン終了]
+[current layer="message0"]
+@layopt layer=message0 page=fore visible=true
+
+@jump target=okeiko
+
+[s]
+*okeiko_wadai_all_plus_no
+「いいえ」[r]
+話題は初期状態でスタートします[p]
+[イベントシーン終了]
+[current layer="message0"]
+@layopt layer=message0 page=fore visible=true
+@jump target=okeiko
+[s]
+[endif]
+
+*okeiko
 [stopbgm]
 ;機能ボタン類を消去（fixレイヤー全消去）
 [clearfix]
@@ -37,13 +221,13 @@
 ;【SE】スズメのさえずり
 [playse storage=tori_suzume.ogg loop=false]
 
-;◆プリロード
+;◆プリロード(first.ksでプリロードするためこちらはコメントアウト）
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
-f.preload_images = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/me_fusi1.png","data/fgimage/girl/S/kuti_futuu.png","data/fgimage/message_bg/frame_red.png","data/fgimage/message_bg/frame_brown.png","data/fgimage/girl/L/base.png","data/fgimage/girl/L/mayu_futuu.png","data/fgimage/girl/L/me_futuu.png","data/fgimage/girl/L/kuti_futuu.png","data/bg/bg_prologue_dark.jpg","data/bg/bg_okeiko_main.jpg","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png"];
+f.preload_images = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/me_fusi1.png","data/fgimage/girl/S/kuti_futuu.png","data/fgimage/message_bg/frame_red.png","data/fgimage/message_bg/frame_brown.png","data/fgimage/girl/L/base.png","data/fgimage/girl/L/mayu_futuu.png","data/fgimage/girl/L/me_futuu.png","data/fgimage/girl/L/kuti_futuu.png"];
 //ver3.41ではエラーが出るのでコメントアウト。verup時に再度試すことf.preload_bgms = ["data/bgm/prologue_kotonisakuhana.m4a","data/bgm/isono_miyabi.m4a"];
 [endscript]
-[preload storage=&f.preload_images]
+;[preload storage=&f.preload_images]
 
 
 ;◆背景切り替え中に色々読込
@@ -53,6 +237,7 @@ f.preload_images = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_kat
 [chara_show left=300 top=220 layer=23 name="sys_fukidasi" time=0]
 [wait time=10]
 
+[call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -62,38 +247,10 @@ f.preload_images = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_kat
 [主人公退場]
 
 
-;手紙の話題リストを読込んで配列f.wadai_list_hairetsu[i][j]に格納。
-;[i]部分が話題の種類
-;[j]部分が話題の属性(好感度増減値)を示す(0=話題の種類名、1=黒田、2=財前、3=華織、4=自由枠1、5=自由枠2、6=好適距離a最初からok,b好感度20以上でok、c好感度50以上でok、7、8=その話題が苦手なキャラ、9、10=その話題を好むキャラ)
-[iscript]
-$.get("./data/scenario/fumi_wadai.csv", function(data){
-//読み込まれたファイル
-
-	f.wadai_list_moto = data;
-	f.wadai_list_shurui = [];
-	f.wadai_list_shurui = data.split("\n");
-	//ラベルの位置までジャンプ
-	TG.kag.stat.is_stop = false;
-	TG.kag.ftag.startTag("jump",{target:"*complete_load_wadai_list_shurui"}); 
-});
-[endscript]
-[s]
-*complete_load_wadai_list_shurui
-[iscript]
-	f.wadai_list_hairetsu = [];
-for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
-	f.wadai_list_hairetsu[i] = f.wadai_list_shurui[i].split(",");
-	for( var j = 0 , m = f.wadai_list_hairetsu[i].length ; j < m ; j++ ){//trimも同時に行っておく
-		f.wadai_list_hairetsu[i][j] = f.wadai_list_hairetsu[i][j].replace( /(^\s+)|(\s+$)/g , ""  );
-	}
-}
-[endscript]
-*complete_load_wadai_list_hairetsu
-
 
 ;手紙の便せんリストを読込んで配列f.binsen_list_hairetsu[i][j]に格納。
 ;[i]部分が便箋の種類
-;[j]部分が便箋の属性(好感度増減値)を示す(0=便箋の種類名、1=黒田、2=財前、3=華織、4=自由枠1、5=自由枠2、6=好適季節1、7=好適季節2)
+;[j]部分が便箋の属性(好感度増減値)を示す(0=便箋の種類名、1=黒田、2=財前、3=華織、4=葛城宮 晴仁、5=藤枝　肇、6=好適季節1、7=好適季節2)
 [iscript]
 $.get("./data/scenario/fumi_binsen.csv", function(data){
 //読み込まれたファイル
@@ -121,7 +278,7 @@ for( var i = 0 , l = f.binsen_list_shurui.length ; i < l ; i++ ){
 
 
 ;手紙の未読/既読リストを読込んで配列f.midoku_list_hairetsu[i][j]に格納。
-;[i]部分が攻略キャラ(0=黒田、1=財前、2=華織、3=自由枠1、4=自由枠2)
+;[i]部分が攻略キャラ(0=黒田、1=財前、2=華織、3=葛城宮 晴仁、4=藤枝　肇)
 ;[j]部分が各キャラの手紙が1=未読か0=既読かを示す。(1=返信済、0=未返信）初期csvは全部midokuは1、hensinは0に設定しているので、opening2シナリオで既読の際は0に設定し直す
 [iscript]
 $.get("./data/scenario/fumi_midoku.csv", function(data){
@@ -240,38 +397,39 @@ f.fumi_sijyou_number = f.fumi_list_sijyou_title.length;
 if (f.sijyou_fumi1_midoku == 0){
 f.midoku_list_hairetsu[2][0] = 0;
 }
-
-f.fumi_list_all_title.push("三月　「最初の手紙」　自由枠1");
-f.fumi_list_all_storage.push("fumi_jiyuuwaku1.ks");
-f.fumi_list_all_target.push("*jiyuuwaku1_fumi1");
+/*
+f.fumi_list_all_title.push("「最初の手紙」　葛城宮 晴仁");
+f.fumi_list_all_storage.push("fumi_katuraginomiya.ks");
+f.fumi_list_all_target.push("*katuraginomiya_fumi1");
 f.fumi_list_all_location_taishou.push(3);
 f.fumi_list_all_location_fumi.push(0);
-f.fumi_list_jiyuuwaku1_location_fumi = [];
-f.fumi_list_jiyuuwaku1_location_fumi[0] = 0;
-f.fumi_list_jiyuuwaku1_title = [];
-f.fumi_list_jiyuuwaku1_title[0] = "三月　「最初の手紙」";
-f.fumi_list_jiyuuwaku1_target = [];
-f.fumi_list_jiyuuwaku1_target[0] = "*jiyuuwaku1_fumi1";
-f.fumi_jiyuuwaku1_number = f.fumi_list_jiyuuwaku1_title.length;
-if (f.jiyuuwaku1_fumi1_midoku == 0){
+f.fumi_list_katuraginomiya_location_fumi = [];
+f.fumi_list_katuraginomiya_location_fumi[0] = 0;
+f.fumi_list_katuraginomiya_title = [];
+f.fumi_list_katuraginomiya_title[0] = "「最初の手紙」";
+f.fumi_list_katuraginomiya_target = [];
+f.fumi_list_katuraginomiya_target[0] = "*katuraginomiya_fumi1";
+f.fumi_katuraginomiya_number = f.fumi_list_katuraginomiya_title.length;
+if (f.katuraginomiya_fumi1_midoku == 0){
 f.midoku_list_hairetsu[3][0] = 0;
 }
 
-f.fumi_list_all_title.push("三月　「最初の手紙」　自由枠2");
-f.fumi_list_all_storage.push("fumi_jiyuuwaku2.ks");
-f.fumi_list_all_target.push("*jiyuuwaku2_fumi1");
+f.fumi_list_all_title.push("「最初の手紙」　藤枝　肇");
+f.fumi_list_all_storage.push("fumi_hujieda.ks");
+f.fumi_list_all_target.push("*hujieda_fumi1");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(0);
-f.fumi_list_jiyuuwaku2_location_fumi = [];
-f.fumi_list_jiyuuwaku2_location_fumi[0] = 0;
-f.fumi_list_jiyuuwaku2_title = [];
-f.fumi_list_jiyuuwaku2_title[0] = "三月　「最初の手紙」";
-f.fumi_list_jiyuuwaku2_target = [];
-f.fumi_list_jiyuuwaku2_target[0] = "*jiyuuwaku2_fumi1";
-f.fumi_jiyuuwaku2_number = f.fumi_list_jiyuuwaku2_title.length;
-if (f.jiyuuwaku2_fumi1_midoku == 0){
+f.fumi_list_hujieda_location_fumi = [];
+f.fumi_list_hujieda_location_fumi[0] = 0;
+f.fumi_list_hujieda_title = [];
+f.fumi_list_hujieda_title[0] = "「最初の手紙」";
+f.fumi_list_hujieda_target = [];
+f.fumi_list_hujieda_target[0] = "*hujieda_fumi1";
+f.fumi_hujieda_number = f.fumi_list_hujieda_title.length;
+if (f.hujieda_fumi1_midoku == 0){
 f.midoku_list_hairetsu[4][0] = 0;
 }
+*/
 
 //◆手紙（全員）総数計算
 f.fumi_all_number = f.fumi_list_all_title.length;
@@ -281,6 +439,10 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 ;◆お稽古初回のみ表示
 [if exp="sf.KSKIP=='ON' && sf.trail_okeiko_intro==undefined"]
 	[skipstop]
+[endif]
+;◆テスト画面から来た場合はカット
+[if exp="tf.test_gamen==true"]
+@jump target=*okeiko_main
 [endif]
 *intro
 
@@ -318,10 +480,14 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 *okeiko_main
 [wait time=500]
 
+[if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [wait time=10]
+[endif]
+
 [call target=*event_hantei]
 
 [s]
@@ -670,7 +836,7 @@ f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_now - f.okeiko_hituyou_k
 [endif]
 
 ;◆badED判定 8月4週終わった時点で全ての攻略対象の好感度が一定値未満だとbadED
-[if exp="((f.okeiko_month==8 && f.okeiko_week==4) && f.event_common[9]==0 && f.para_kuroda_koukando <= 30 && f.para_zaizen_koukando <= 30 && f.para_sijyou_koukando <= 30 && f.para_jiyuuwaku1_koukando <= 30 && f.para_jiyuuwaku2_koukando <= 30)"]
+[if exp="((f.okeiko_month==8 && f.okeiko_week==4) && f.event_common[9]==0 && f.para_kuroda_koukando <= 30 && f.para_zaizen_koukando <= 30 && f.para_sijyou_koukando <= 30 && f.para_katuraginomiya_koukando <= 30 && f.para_hujieda_koukando <= 30)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_8_4_badED'"]
 	[eval exp="f.event_type='talk'"]
@@ -742,7 +908,8 @@ f.para_shujinkou_kiryoku_now=f.para_shujinkou_kiryoku_now + f.okeiko_qk_up_kiryo
 if (f.para_shujinkou_kiryoku_now > f.para_shujinkou_kiryoku_max){
 	f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_max;
 }
-
+//◆◆各キャラ宛、話題の手紙を出した際の週数カウントがはじまっていれば1週減算処理
+//◆黒田宛
 if (f.kuroda_fumi_toutyakumachi_shumi > 0){
 f.kuroda_fumi_toutyakumachi_shumi = f.kuroda_fumi_toutyakumachi_shumi - 1;
 }
@@ -752,6 +919,57 @@ f.kuroda_fumi_toutyakumachi_kazoku = f.kuroda_fumi_toutyakumachi_kazoku - 1;
 if (f.kuroda_fumi_toutyakumachi_yuujin > 0){
 f.kuroda_fumi_toutyakumachi_yuujin = f.kuroda_fumi_toutyakumachi_yuujin - 1;
 }
+
+//◆四条宛 話題の手紙届くまでカウント減算処理
+if (f.sijyou_fumi_toutyakumachi_shumi > 0){
+f.sijyou_fumi_toutyakumachi_shumi = f.sijyou_fumi_toutyakumachi_shumi - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_sigoto > 0){
+f.sijyou_fumi_toutyakumachi_sigoto = f.sijyou_fumi_toutyakumachi_sigoto - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_kazoku > 0){
+f.sijyou_fumi_toutyakumachi_kazoku = f.sijyou_fumi_toutyakumachi_kazoku - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_kisetsu > 0){
+f.sijyou_fumi_toutyakumachi_kisetsu = f.sijyou_fumi_toutyakumachi_kisetsu - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_shourai > 0){
+f.sijyou_fumi_toutyakumachi_shourai = f.sijyou_fumi_toutyakumachi_shourai - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_yuujin > 0){
+f.sijyou_fumi_toutyakumachi_yuujin = f.sijyou_fumi_toutyakumachi_yuujin - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_shokuji > 0){
+f.sijyou_fumi_toutyakumachi_shokuji = f.sijyou_fumi_toutyakumachi_shokuji - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_kangeki > 0){
+f.sijyou_fumi_toutyakumachi_kangeki = f.sijyou_fumi_toutyakumachi_kangeki - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_neko > 0){
+f.sijyou_fumi_toutyakumachi_neko = f.sijyou_fumi_toutyakumachi_neko - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_kiki > 0){
+f.sijyou_fumi_toutyakumachi_kiki = f.sijyou_fumi_toutyakumachi_kiki - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_midori > 0){
+f.sijyou_fumi_toutyakumachi_midori = f.sijyou_fumi_toutyakumachi_midori - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_photo > 0){
+f.sijyou_fumi_toutyakumachi_photo = f.sijyou_fumi_toutyakumachi_photo - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_hajimari > 0){
+f.sijyou_fumi_toutyakumachi_hajimari = f.sijyou_fumi_toutyakumachi_hajimari - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_music > 0){
+f.sijyou_fumi_toutyakumachi_music = f.sijyou_fumi_toutyakumachi_music - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_michi > 0){
+f.sijyou_fumi_toutyakumachi_michi = f.sijyou_fumi_toutyakumachi_michi - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_henka > 0){
+f.sijyou_fumi_toutyakumachi_henka = f.sijyou_fumi_toutyakumachi_henka - 1;
+}
+
 [endscript]
 
 
@@ -777,7 +995,10 @@ f.kuroda_fumi_toutyakumachi_yuujin = f.kuroda_fumi_toutyakumachi_yuujin - 1;
 
 ;◆イベント発生判定
 *event_hantei
-
+;◆テスト画面からプレイの場合は助言イベントをカット
+[if exp="tf.test_gamen==true"]
+@jump target=*advice_event_owari
+[endif]
 
 ;◆お稽古パート導入イベント判定 4月1週になった時点で1度だけ発生
 [if exp="((f.okeiko_month==4 && f.okeiko_week==1) && f.event_common[0]==0)"]
@@ -850,6 +1071,7 @@ f.kuroda_fumi_toutyakumachi_yuujin = f.kuroda_fumi_toutyakumachi_yuujin - 1;
 	[eval exp="f.event_common[7]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
+*advice_event_owari
 
 ;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
 [if exp="(f.okeiko_month==6 && f.okeiko_week==4) && f.event_machi_kuroda[2]==0 && f.para_kuroda_koukando > 5"]
@@ -862,7 +1084,7 @@ f.kuroda_fumi_toutyakumachi_yuujin = f.kuroda_fumi_toutyakumachi_yuujin - 1;
 ;[endif]
 
 ;◆顔合せのお相手選びイベント判定：イベント 9月1週になった時点で、攻略対象の好感度一定値以上なら1度だけ発生
-[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_common[10]==0 && (f.para_kuroda_koukando > 30 || f.para_zaizen_koukando > 30 || f.para_sijyou_koukando > 30 || f.para_jiyuuwaku1_koukando > 30|| f.para_jiyuuwaku2_koukando > 30)"]
+[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_common[10]==0 && (f.para_kuroda_koukando > 30 || f.para_zaizen_koukando > 30 || f.para_sijyou_koukando > 30 || f.para_katuraginomiya_koukando > 30|| f.para_hujieda_koukando > 30)"]
 	[eval exp="f.event_storage='common_9_1.ks'"]
 	[eval exp="f.event_target='*replay_common_9_1'"]
 	[eval exp="f.event_type='talk'"]

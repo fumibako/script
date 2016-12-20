@@ -1,4 +1,4 @@
-﻿*start
+﻿﻿*start
 ;==============================
 ; 全般マクロ設定
 ;==============================
@@ -271,33 +271,13 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 [resetfont]
 [endmacro]
 
-;[手紙四条]%fumi_title、%fumi_number指定のこと
+;[手紙四条]%fumi_title、%fumi_number指定のこと（%fumi_title、%fumi_numberはまだ未完成のため、指定の必要はありません。将来使うかも的機能です：◆jsYiJcqRkk）
 [macro name="手紙四条"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
 [whosay name=""]
 [cm]
-[iscript]	
-/*
-f.fumi_all_title_new=f.okeiko_month_kansuuji+%fumi_title+"四条 華織";
-f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+%fumi_title";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("fumi_sijyou.ks");
-f.fumi_list_all_target.push("*sijyou_fumi"+%fumi_number+1);
-f.fumi_list_all_location_taishou.push(2);
-f.fumi_list_all_location_fumi.push(%fumi_number);
-f.fumi_list_kuroda_location_fumi.push(%fumi_number);
-f.fumi_list_kuroda_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_kuroda_target.push("*sijyou_fumi%fumi_number");
-f.kuroda_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
-f.fumi_toutyaku_sijyou[%fumi_number]=1;
-f.fumi_all_number=f.fumi_all_number + 1;
-f.fumi_sijyou_number=f.fumi_sijyou_number + 1;
-f.hensin_list_hairetsu[2][%fumi_number]=1;
-f.para_sijyou_koukando = f.para_sijyou_koukando + 4;
-*/
-[endscript]
 
 ;機能ボタン消去
 [clearfix]
@@ -310,7 +290,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + 4;
 
 [endmacro]
 
-;[手紙四条読了]%fumi_number指定のこと
+;[手紙四条読了]%fumi_number指定のこと（%fumi_numberはまだ未完成のため、指定の必要はありません。将来使うかも的機能です。現在はシナリオ内での手紙到着時にマクロとは別に手紙未読→既読処理記述の必要があります。ゲーム組み込み時にこちらで担当します：◆jsYiJcqRkk）
 [macro name="手紙四条読了"]
 ;[eval exp="f.midoku_list_hairetsu[2][%fumi_number] = 0;"]
 [freeimage layer = 29 time=500]

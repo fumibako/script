@@ -11,6 +11,7 @@
 *scene1
 [stopbgm]
 
+[call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -269,7 +270,7 @@
 [endif]
 *scene5b
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（まさか[emb exp="sf.kouryaku_ninzuu_kansuuji"]通も同時に届くなんて、思ってもみなかったわ）[p]
+（まさか三通も同時に届くなんて、思ってもみなかったわ）[p]
 [chara_mod name="girl_te" storage="girl/S/yubi.png" time=0]
 [wait time=10]
 [主人公閉伏目パチ1回]
@@ -298,7 +299,7 @@
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-「私ったらお兄様たちとぐらいしかまともに男の人とお話しした事が無いのに、いきなり[emb exp="sf.kouryaku_ninzuu_kansuuji"]人の方と文通なんてできるのかしら」[p]
+「私ったらお兄様たちとぐらいしかまともに男の人とお話しした事が無いのに、いきなり三人の方と文通なんてできるのかしら」[p]
 
 [主人公伏目パチ1回]
 [wait time=10]
@@ -603,9 +604,9 @@
 [button target=*kuroda_fumi1 graphic="moji_kuroda.png" x=200 y=50]
 [button target=*zaizen_fumi1 graphic="moji_zaizen.png" x=600 y=50]
 [button target=*kaori_fumi1 graphic="moji_kaori.png" x=200 y=150]
-[button target=*jiyuuwaku1_fumi1 graphic="moji_jiyuuwaku1.png" x=600 y=150]
-[button target=*jiyuuwaku2_fumi1 graphic="moji_jiyuuwaku2.png" x=200 y=250]
-[button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=250]
+;[button target=*katuraginomiya_fumi1 graphic="moji_katuraginomiya.png" x=600 y=150]
+;[button target=*hujieda_fumi1 graphic="moji_hujieda.png" x=200 y=250]
+[button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=150]
 #
 どなたのお手紙を読みましょう？
 [autosave]
@@ -774,18 +775,18 @@ f.kaori_fumi1_midoku = 0;
 @jump target=*fumi_sentaku01
 [s]
 
-*jiyuuwaku1_fumi1
+*katuraginomiya_fumi1
 ;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 ;	[skipstart]
 ;[endif]
-[if exp="sf.KSKIP=='ON' && sf.trail_opening2_jiyuuwaku1_fumi1b==undefined"]
+[if exp="sf.KSKIP=='ON' && sf.trail_opening2_katuraginomiya_fumi1b==undefined"]
 	[skipstop]
 [endif]
-*jiyuuwaku1_fumi1b
+*katuraginomiya_fumi1b
 [eval exp="f.select_scene=''"]
-[font color=white size=0][r]【 『(仮)自由枠1』を選択 】[r][resetfont]
+[font color=white size=0][r]【 『(仮)　』を選択 】[r][resetfont]
 [cm]
-[chara_mod name="bg" storage="bg/bg_tegami_jiyuuwaku1.jpg" time=100]
+[chara_mod name="bg" storage="bg/bg_tegami_katuraginomiya.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
@@ -804,7 +805,7 @@ f.kaori_fumi1_midoku = 0;
 [wait time=10]
 [cm]
 （仮）[r]
-自由枠1の手紙1[r]
+　の手紙1[r]
 [r]
 （黒田ルートを一通り実装した後に余裕があれば、シナリオ募集をしたいと考えています。[r]
 [sp]その際に、設定が自由なキャラ枠がある方がやりやすいライターさんもいらっしゃるかも、と「自由枠」を設けてみています）[r]
@@ -814,23 +815,23 @@ f.kaori_fumi1_midoku = 0;
 [autosave]
 [p]
 [iscript]
-f.jiyuuwaku1_fumi1_midoku = 0;
+f.katuraginomiya_fumi1_midoku = 0;
 [endscript]
 @jump target=*fumi_sentaku01
 [s]
 
-*jiyuuwaku2_fumi1
+*hujieda_fumi1
 ;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 ;	[skipstart]
 ;[endif]
-[if exp="sf.KSKIP=='ON' && sf.trail_opening2_jiyuuwaku2_fumi1b==undefined"]
+[if exp="sf.KSKIP=='ON' && sf.trail_opening2_hujieda_fumi1b==undefined"]
 	[skipstop]
 [endif]
-*jiyuuwaku2_fumi1b
+*hujieda_fumi1b
 [eval exp="f.select_scene=''"]
-[font color=white size=0][r]【 『(仮)自由枠2』を選択 】[r][resetfont]
+[font color=white size=0][r]【 『(仮)　』を選択 】[r][resetfont]
 [cm]
-[chara_mod name="bg" storage="bg/bg_tegami_jiyuuwaku2.jpg" time=100]
+[chara_mod name="bg" storage="bg/bg_tegami_hujieda.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
@@ -840,11 +841,11 @@ f.jiyuuwaku1_fumi1_midoku = 0;
 [主人公退場]
 [cm]
 （仮）[r]
-自由枠2の手紙1
+　の手紙1
 [autosave]
 [p]
 [iscript]
-f.jiyuuwaku2_fumi1_midoku = 0;
+f.hujieda_fumi1_midoku = 0;
 [endscript]
 @jump target=*fumi_sentaku01
 [s]
@@ -926,9 +927,9 @@ f.jiyuuwaku2_fumi1_midoku = 0;
 [button target=*kuroda_isono1 graphic="moji_kuroda.png" x=200 y=50]
 [button target=*zaizen_isono1 graphic="moji_zaizen.png" x=600 y=50]
 [button target=*kaori_isono1 graphic="moji_kaori.png" x=200 y=150]
-[button target=*jiyuuwaku1_isono1 graphic="moji_jiyuuwaku1.png" x=600 y=150]
-[button target=*jiyuuwaku2_isono1 graphic="moji_jiyuuwaku2.png" x=200 y=250]
-[button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=250]
+;[button target=*katuraginomiya_isono1 graphic="moji_katuraginomiya.png" x=600 y=150]
+;[button target=*hujieda_isono1 graphic="moji_hujieda.png" x=200 y=250]
+[button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=150]
 [autosave]
 [s]
 
@@ -1120,32 +1121,32 @@ f.jiyuuwaku2_fumi1_midoku = 0;
 @jump target=*isono_situmon01
 [s]
 
-*jiyuuwaku1_isono1
+*katuraginomiya_isono1
 [eval exp="f.select_scene=''"]
 [cm]
 ;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 ;	[skipstart]
 ;[endif]
-[if exp="sf.KSKIP=='ON' && sf.trail_opening2_jiyuuwaku1_isono1b==undefined"]
+[if exp="sf.KSKIP=='ON' && sf.trail_opening2_katuraginomiya_isono1b==undefined"]
 	[skipstop]
 [endif]
-*jiyuuwaku1_isono1b
+*katuraginomiya_isono1b
 #
 （仮）[r]
 まだ未定です。[p]
 @jump target=*isono_situmon01
 [s]
 
-*jiyuuwaku2_isono1
+*hujieda_isono1
 [eval exp="f.select_scene=''"]
 [cm]
 ;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 ;	[skipstart]
 ;[endif]
-[if exp="sf.KSKIP=='ON' && sf.trail_opening2_jiyuuwaku2_isono1b==undefined"]
+[if exp="sf.KSKIP=='ON' && sf.trail_opening2_hujieda_isono1b==undefined"]
 	[skipstop]
 [endif]
-*jiyuuwaku2_isono1b
+*hujieda_isono1b
 #
 （仮）
 まだ未定です。[p]
@@ -1263,7 +1264,7 @@ f.jiyuuwaku2_fumi1_midoku = 0;
 [主人公伏目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（――黒田様、財前様、華織お兄様、自由枠1様、自由枠2様）[p]
+（――黒田様、財前様、華織お兄様）[p]
 [主人公眉困り]
 [wait time=10]
 [主人公目通常]
@@ -1449,8 +1450,8 @@ f.jiyuuwaku2_fumi1_midoku = 0;
 [button target=*kuroda_fumi1 graphic="moji_kuroda.png" x=200 y=50]
 [button target=*zaizen_fumi1 graphic="moji_zaizen.png" x=600 y=50]
 [button target=*kaori_fumi1 graphic="moji_kaori.png" x=200 y=150]
-[button target=*jiyuuwaku1_fumi1 graphic="moji_jiyuuwaku1.png" x=600 y=150]
-[button target=*jiyuuwaku2_fumi1 graphic="moji_jiyuuwaku2.png" x=200 y=250]
+[button target=*katuraginomiya_fumi1 graphic="moji_katuraginomiya.png" x=600 y=150]
+[button target=*hujieda_fumi1 graphic="moji_hujieda.png" x=200 y=250]
 [button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=250]
 
 [endif]
@@ -1462,8 +1463,8 @@ f.jiyuuwaku2_fumi1_midoku = 0;
 [button target=*kuroda_isono1 graphic="moji_kuroda.png" x=200 y=50]
 [button target=*zaizen_isono1 graphic="moji_zaizen.png" x=600 y=50]
 [button target=*kaori_isono1 graphic="moji_kaori.png" x=200 y=150]
-[button target=*jiyuuwaku1_isono1 graphic="moji_jiyuuwaku1.png" x=600 y=150]
-[button target=*jiyuuwaku2_isono1 graphic="moji_jiyuuwaku2.png" x=200 y=250]
+[button target=*katuraginomiya_isono1 graphic="moji_katuraginomiya.png" x=600 y=150]
+[button target=*hujieda_isono1 graphic="moji_hujieda.png" x=200 y=250]
 [button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=250]
 
 [endif]

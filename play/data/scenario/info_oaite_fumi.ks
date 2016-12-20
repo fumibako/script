@@ -1499,24 +1499,20 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endscript]
 	[ptext text=&f.fumibako_page_hyouji layer=28 size=20 x=800 y=40 color=palegoldenrod bold=bold]
 
-
-[if exp="sf.kouryaku_ninzuu<2"]
-	[glink storage="fumi_henji.ks" target=&sf.fumibako_list[0] text=&sf.kouryaku_list_fullname[0] size=16 width="120" x=20 y=585 color=white]
-[elsif exp="sf.kouryaku_ninzuu>=2"]
-	[glink storage="fumi_henji.ks" target=&sf.fumibako_list[0] text=&sf.kouryaku_list_fullname[0] size=16 width="120" x=20 y=585 color=white]
-	[glink storage="fumi_henji.ks" target=&sf.fumibako_list[1] text=&sf.kouryaku_list_fullname[1] size=16 width="120" x=190 y=585 color=white]
+;◆「文箱」下部「手紙を書く」エリアのボタン表示
+;↓黒田ボタン
+	[glink storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=20 y=585 color=white]
+;↓財前ボタン
+	[glink storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=190 y=585 color=white]
+;↓四条ボタン
+	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=360 y=585 color=white]
+;葛城宮に手紙を出せるようになっていたらボタン表示
+[if exp="f.katuraginomiya_fumi_start==1"]
+	[glink storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=530 y=585 color=white]
 [endif]
-[if exp="sf.kouryaku_ninzuu<3"]
-[elsif exp="sf.kouryaku_ninzuu>=3"]
-	[glink storage="fumi_henji.ks" target=&sf.fumibako_list[2] text=&sf.kouryaku_list_fullname[2] size=16 width="120" x=360 y=585 color=white]
-[endif]
-[if exp="sf.kouryaku_ninzuu<4"]
-[elsif exp="sf.kouryaku_ninzuu>=4"]
-	[glink storage="fumi_henji.ks" target=&sf.fumibako_list[3] text=&sf.kouryaku_list_fullname[3] size=16 width="120" x=530 y=585 color=white]
-[endif]
-[if exp="sf.kouryaku_ninzuu<5"]
-[elsif exp="sf.kouryaku_ninzuu>=5"]
-	[glink storage="fumi_henji.ks" target=&sf.fumibako_list[4] text=&sf.kouryaku_list_fullname[4] size=16 width="120" x=700 y=585 color=white]
+;藤枝に手紙を出せるようになっていたらボタン表示
+[if exp="f.hujieda_fumi_start==1"]
+	[glink storage="fumi_henji.ks" target=fumibako_hujieda text="藤枝　肇" size=16 width="120" x=700 y=585 color=white]
 [endif]
 	[glink target="fumibako_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 [return]
@@ -1534,7 +1530,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [s]
 [return]
 
-
+;◆◆攻略対象情報画面(お稽古画面から「情報」ボタンを押すと表示される)
 *info_oaite
 [freeimage layer = 26]
 [freeimage layer = 27]
@@ -1550,11 +1546,13 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 @jump target=&f.oaite_viewing_target
 [endif]
 
+;◆情報：黒田
 *info_kuroda
 [freeimage layer = 27]
 [freeimage layer = 28]
 [eval exp="f.viewing_target = '*info_kuroda'"]
 [eval exp="f.oaite_viewing_target = '*info_kuroda'"]
+[eval exp="f.oaite_viewing_storage = 'info_oaite_fumi.ks'"]
 [call target=*info_kuroda_hyouji]
 
 ;◆手紙一覧
@@ -1722,21 +1720,15 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 
 *info_kuroda_hyouji
 [image layer=26 x=1 y=1 storage="bg/bg_info_kuroda.jpg"]
-[if exp="sf.kouryaku_ninzuu<2"]
-[elsif exp="sf.kouryaku_ninzuu>=2"]
-	[glink target=&sf.info_list1[1] text=&sf.kouryaku_list_fullname[1] size=16 width="120" x=30 y=580 color=white]
+	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
+	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
+;葛城宮に手紙を出せるようになっていたらボタン表示
+[if exp="f.katuraginomiya_fumi_start==1"]
+	[glink target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
 [endif]
-[if exp="sf.kouryaku_ninzuu<3"]
-[elsif exp="sf.kouryaku_ninzuu>=3"]
-	[glink target=&sf.info_list1[2] text=&sf.kouryaku_list_fullname[2] size=16 width="120" x=230 y=580 color=white]
-[endif]
-[if exp="sf.kouryaku_ninzuu<4"]
-[elsif exp="sf.kouryaku_ninzuu>=4"]
-	[glink target=&sf.info_list1[3] text=&sf.kouryaku_list_fullname[3] size=16 width="120" x=430 y=580 color=white]
-[endif]
-[if exp="sf.kouryaku_ninzuu<5"]
-[elsif exp="sf.kouryaku_ninzuu>=5"]
-	[glink target=&sf.info_list1[4] text=&sf.kouryaku_list_fullname[4] size=16 width="120" x=630 y=580 color=white]
+;藤枝に手紙を出せるようになっていたらボタン表示
+[if exp="f.hujieda_fumi_start==1"]
+	[glink target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
 	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
 [if exp="f.para_kuroda_koukando<0"]
@@ -1764,6 +1756,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 *info_zaizen
 [freeimage layer = 27]
 [freeimage layer = 28]
+[eval exp="f.oaite_viewing_storage = 'info_oaite_fumi.ks'"]
 [eval exp="f.viewing_target = '*info_zaizen'"]
 [eval exp="f.oaite_viewing_target = '*info_zaizen'"]
 [call target=*info_zaizen_hyouji]
@@ -1933,22 +1926,16 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 
 *info_zaizen_hyouji
 [image layer=26 x=1 y=1 storage="bg/bg_info_zaizen.jpg"]
-[glink target=&sf.info_list1[0] text=&sf.kouryaku_list_fullname[0] size=16 width="120" x=30 y=580 color=white]
-;[if exp="sf.kouryaku_ninzuu<2"]
-;[elsif exp="sf.kouryaku_ninzuu>=2"]
-;	[glink target=&sf.info_list1[1] text=&sf.kouryaku_list_fullname[1] size=16 width="120" x=30 y=580 color=white]
-;[endif]
-[if exp="sf.kouryaku_ninzuu<3"]
-[elsif exp="sf.kouryaku_ninzuu>=3"]
-	[glink target=&sf.info_list1[2] text=&sf.kouryaku_list_fullname[2] size=16 width="120" x=230 y=580 color=white]
+	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
+;	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
+	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
+;葛城宮に手紙を出せるようになっていたらボタン表示
+[if exp="f.katuraginomiya_fumi_start==1"]
+	[glink target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
 [endif]
-[if exp="sf.kouryaku_ninzuu<4"]
-[elsif exp="sf.kouryaku_ninzuu>=4"]
-	[glink target=&sf.info_list1[3] text=&sf.kouryaku_list_fullname[3] size=16 width="120" x=430 y=580 color=white]
-[endif]
-[if exp="sf.kouryaku_ninzuu<5"]
-[elsif exp="sf.kouryaku_ninzuu>=5"]
-	[glink target=&sf.info_list1[4] text=&sf.kouryaku_list_fullname[4] size=16 width="120" x=630 y=580 color=white]
+;藤枝に手紙を出せるようになっていたらボタン表示
+[if exp="f.hujieda_fumi_start==1"]
+	[glink target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
 	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
 [if exp="f.para_zaizen_koukando<0"]
@@ -1973,135 +1960,128 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [s]
 
 *info_sijyou
-[freeimage layer = 27]
-[freeimage layer = 28]
-[eval exp="f.viewing_target = '*info_sijyou'"]
-[eval exp="f.oaite_viewing_target = '*info_sijyou'"]
-[call target=*info_sijyou_hyouji]
-
-;◆手紙一覧
-;[eval exp="f.fumi_sijyou_number=13"]
-[if exp="f.fumi_sijyou_number>5"]
-			[glink target=*fumi_sijyou_page2 text="→" size=20 width="20" x=855 y=480 color=white]
-[endif]
-[eval exp="f.list_count = f.fumi_sijyou_number"]
-[eval exp="f.loop_count = f.list_count"]
-[if exp="f.loop_count > 5"]
-[eval exp="f.loop_count = 5"]
-[endif]
-*loop_fumi_sijyou
-[if exp="f.list_count == 0"]
-[else]
-	[eval exp="f.list_count = f.list_count - 1"]
-[endif]
-[if exp="f.loop_count == 0"]
-[else]
-	[eval exp="f.loop_count = f.loop_count - 1"]
-[endif]
-[iscript]
-	f.fumi_sijyou_midoku_y = ( 20 + 80 * f.fumi_sijyou_number ) - 80 * f.list_count;
-	f.fumi_sijyou_y = ( 10 + 80 * f.fumi_sijyou_number ) - 80 * f.list_count;
-	f.fumi_hairetsu1 = 2;
-	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
-[endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-;[emb exp ="f.fumi_sijyou_y"][r]
-[endif]
-
-[if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_sijyou
-[endif]
-[s]
-
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=*info_sijyou
 *fumi_sijyou_page2
-[cm]
-[freeimage layer = 28]
-[eval exp="f.viewing_target = '*fumi_sijyou_page2'"]
-[eval exp="f.oaite_viewing_target = '*fumi_sijyou_page2'"]
-[call target=*info_sijyou_hyouji]
-
-;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink target=*info_sijyou text="←" size=20 width="20" x=510 y=480 color=white]
-[if exp="f.fumi_sijyou_number>10"]
-[glink target=*fumi_sijyou_page3 text="→" size=20 width="20" x=855 y=480 color=white]
-[endif]
-[eval exp="f.list_count = f.fumi_sijyou_number - 5"]
-[eval exp="f.loop_count = f.list_count"]
-[if exp="f.loop_count > 5"]
-[eval exp="f.loop_count = 5"]
-[endif]
-;2f.list_count=[emb exp ="f.list_count"][r]
-*loop_fumi_sijyou2
-[if exp="f.list_count == 0"]
-[else]
-	[eval exp="f.list_count = f.list_count - 1"]
-[endif]
-[if exp="f.loop_count == 0"]
-[else]
-	[eval exp="f.loop_count = f.loop_count - 1"]
-[endif]
-;3f.list_count=[emb exp ="f.list_count"][r]
-;4f.loop_count=[emb exp ="f.loop_count"][r]
-;5f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[iscript]
-	f.fumi_sijyou_midoku_y =  20 + 80 * ( f.fumi_sijyou_number - 5 ) - 80 * f.list_count;
-	f.fumi_sijyou_y =  10 + 80 * ( f.fumi_sijyou_number - 5 ) - 80 * f.list_count;
-	f.fumi_hairetsu1 = 2;
-	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
-[endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-;7f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-;8f.fumi_sijyou_y=[emb exp ="f.fumi_sijyou_y"][r]
-[endif]
-
-[if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_sijyou2
-[endif]
-[s]
-
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page2
 *fumi_sijyou_page3
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page3
+*fumi_sijyou_page4
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page4
+*fumi_sijyou_page5
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page5
+*fumi_sijyou_page6
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page6
+*fumi_sijyou_page7
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page7
+*fumi_sijyou_page8
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page8
+*fumi_sijyou_page9
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page9
+*fumi_sijyou_page10
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page10
+*fumi_sijyou_page11
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page11
+*fumi_sijyou_page12
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page12
+*fumi_sijyou_page13
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page13
+*fumi_sijyou_page14
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page14
+*fumi_sijyou_page15
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page15
+*fumi_sijyou_page16
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page16
+*fumi_sijyou_page17
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page17
+*fumi_sijyou_page18
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page18
+*fumi_sijyou_page19
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page19
+*fumi_sijyou_page20
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page20
+*fumi_sijyou_page21
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page21
+*fumi_sijyou_page22
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page22
+*fumi_sijyou_page23
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page23
+*fumi_sijyou_page24
+@jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page24
+
+*info_katuraginomiya
+[freeimage layer = 27]
+[freeimage layer = 28]
+[eval exp="f.oaite_viewing_storage = 'info_oaite_fumi.ks'"]
+[eval exp="f.viewing_target = '*info_katuraginomiya'"]
+[eval exp="f.oaite_viewing_target = '*info_katuraginomiya'"]
+[call target=*info_katuraginomiya_hyouji]
+
+;◆手紙一覧
+;[eval exp="f.fumi_katuraginomiya_number=13"]
+[if exp="f.fumi_katuraginomiya_number>5"]
+			[glink target=*fumi_katuraginomiya_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+[endif]
+[eval exp="f.list_count = f.fumi_katuraginomiya_number"]
+[eval exp="f.loop_count = f.list_count"]
+[if exp="f.loop_count > 5"]
+[eval exp="f.loop_count = 5"]
+[endif]
+*loop_fumi_katuraginomiya
+[if exp="f.list_count == 0"]
+[else]
+	[eval exp="f.list_count = f.list_count - 1"]
+[endif]
+[if exp="f.loop_count == 0"]
+[else]
+	[eval exp="f.loop_count = f.loop_count - 1"]
+[endif]
+[iscript]
+	f.fumi_katuraginomiya_midoku_y = ( 20 + 80 * f.fumi_katuraginomiya_number ) - 80 * f.list_count;
+	f.fumi_katuraginomiya_y = ( 10 + 80 * f.fumi_katuraginomiya_number ) - 80 * f.list_count;
+	f.fumi_hairetsu1 = 3;
+	f.fumi_hairetsu2 = f.fumi_list_katuraginomiya_location_fumi[f.list_count];
+[endscript]
+[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
+	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
+[else]
+[endif]
+;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
+[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
+	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='katuraginomiya'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_katuraginomiya_y color=white]
+[else]
+	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
+[endif]
+[if exp="f.fumi_katuraginomiya_number==0"]
+[else]
+	[glink storage=fumi_katuraginomiya.ks target=&f.fumi_list_katuraginomiya_target[f.list_count] text=&f.fumi_list_katuraginomiya_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_katuraginomiya_y color=white]
+;[emb exp ="f.fumi_katuraginomiya_y"][r]
+[endif]
+
+[if exp="f.loop_count>0"]
+	@jump target=*loop_fumi_katuraginomiya
+[endif]
+[s]
+
+*fumi_katuraginomiya_page2
 [cm]
 [freeimage layer = 28]
-[eval exp="f.viewing_target = '*fumi_sijyou_page3'"]
-[eval exp="f.oaite_viewing_target = '*fumi_sijyou_page3'"]
-[call target=*info_sijyou_hyouji]
+[eval exp="f.viewing_target = '*fumi_katuraginomiya_page2'"]
+[eval exp="f.oaite_viewing_target = '*fumi_katuraginomiya_page2'"]
+[call target=*info_katuraginomiya_hyouji]
 
-;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink target=*fumi_sijyou_page2 text="←" size=20 width="20" x=510 y=480 color=white]
-
-[eval exp="f.list_count = f.fumi_sijyou_number - 10"]
+;1f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
+[glink target=*info_katuraginomiya text="←" size=20 width="20" x=510 y=480 color=white]
+[if exp="f.fumi_katuraginomiya_number>10"]
+[glink target=*fumi_katuraginomiya_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[endif]
+[eval exp="f.list_count = f.fumi_katuraginomiya_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
 [if exp="f.loop_count > 5"]
 [eval exp="f.loop_count = 5"]
 [endif]
 ;2f.list_count=[emb exp ="f.list_count"][r]
-*loop_fumi_sijyou3
+*loop_fumi_katuraginomiya2
 [if exp="f.list_count == 0"]
 [else]
 	[eval exp="f.list_count = f.list_count - 1"]
@@ -2112,95 +2092,147 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 ;3f.list_count=[emb exp ="f.list_count"][r]
 ;4f.loop_count=[emb exp ="f.loop_count"][r]
-;5f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
+;5f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
 [iscript]
-	f.fumi_sijyou_midoku_y =  20 + 80 * ( f.fumi_sijyou_number - 10 ) - 80 * f.list_count;
-	f.fumi_sijyou_y =  10 + 80 * ( f.fumi_sijyou_number - 10 ) - 80 * f.list_count;
-	f.fumi_hairetsu1 = 2;
-	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
+	f.fumi_katuraginomiya_midoku_y =  20 + 80 * ( f.fumi_katuraginomiya_number - 5 ) - 80 * f.list_count;
+	f.fumi_katuraginomiya_y =  10 + 80 * ( f.fumi_katuraginomiya_number - 5 ) - 80 * f.list_count;
+	f.fumi_hairetsu1 = 3;
+	f.fumi_hairetsu2 = f.fumi_list_katuraginomiya_location_fumi[f.list_count];
 [endscript]
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
 [else]
 [endif]
 ;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='katuraginomiya'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_katuraginomiya_y color=white]
 [else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
 [endif]
-;7f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[if exp="f.fumi_sijyou_number==0"]
+;7f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
+[if exp="f.fumi_katuraginomiya_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-;8f.fumi_sijyou_y=[emb exp ="f.fumi_sijyou_y"][r]
+	[glink storage=fumi_katuraginomiya.ks target=&f.fumi_list_katuraginomiya_target[f.list_count] text=&f.fumi_list_katuraginomiya_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_katuraginomiya_y color=white]
+;8f.fumi_katuraginomiya_y=[emb exp ="f.fumi_katuraginomiya_y"][r]
 [endif]
 
 [if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_sijyou3
+	@jump target=*loop_fumi_katuraginomiya2
 [endif]
 [s]
 
-*info_sijyou_hyouji
-[image layer=26 x=1 y=1 storage="bg/bg_info_sijyou.jpg"]
-[glink target=&sf.info_list1[0] text=&sf.kouryaku_list_fullname[0] size=16 width="120" x=30 y=580 color=white]
-[if exp="sf.kouryaku_ninzuu<2"]
-[elsif exp="sf.kouryaku_ninzuu>=2"]
-	[glink target=&sf.info_list1[1] text=&sf.kouryaku_list_fullname[1] size=16 width="120" x=230 y=580 color=white]
+*fumi_katuraginomiya_page3
+[cm]
+[freeimage layer = 28]
+[eval exp="f.viewing_target = '*fumi_katuraginomiya_page3'"]
+[eval exp="f.oaite_viewing_target = '*fumi_katuraginomiya_page3'"]
+[call target=*info_katuraginomiya_hyouji]
+
+;1f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
+[glink target=*fumi_katuraginomiya_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+
+[eval exp="f.list_count = f.fumi_katuraginomiya_number - 10"]
+[eval exp="f.loop_count = f.list_count"]
+[if exp="f.loop_count > 5"]
+[eval exp="f.loop_count = 5"]
 [endif]
-;[if exp="sf.kouryaku_ninzuu<3"]
-;[elsif exp="sf.kouryaku_ninzuu>=3"]
-;	[glink target=&sf.info_list1[2] text=&sf.kouryaku_list_fullname[2] size=16 width="120" x=230 y=580 color=white]
+;2f.list_count=[emb exp ="f.list_count"][r]
+*loop_fumi_katuraginomiya3
+[if exp="f.list_count == 0"]
+[else]
+	[eval exp="f.list_count = f.list_count - 1"]
+[endif]
+[if exp="f.loop_count == 0"]
+[else]
+	[eval exp="f.loop_count = f.loop_count - 1"]
+[endif]
+;3f.list_count=[emb exp ="f.list_count"][r]
+;4f.loop_count=[emb exp ="f.loop_count"][r]
+;5f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
+[iscript]
+	f.fumi_katuraginomiya_midoku_y =  20 + 80 * ( f.fumi_katuraginomiya_number - 10 ) - 80 * f.list_count;
+	f.fumi_katuraginomiya_y =  10 + 80 * ( f.fumi_katuraginomiya_number - 10 ) - 80 * f.list_count;
+	f.fumi_hairetsu1 = 3;
+	f.fumi_hairetsu2 = f.fumi_list_katuraginomiya_location_fumi[f.list_count];
+[endscript]
+[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
+	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
+[else]
+[endif]
+;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
+[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
+	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='katuraginomiya'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_katuraginomiya_y color=white]
+[else]
+	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
+[endif]
+;7f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
+[if exp="f.fumi_katuraginomiya_number==0"]
+[else]
+	[glink storage=fumi_katuraginomiya.ks target=&f.fumi_list_katuraginomiya_target[f.list_count] text=&f.fumi_list_katuraginomiya_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_katuraginomiya_y color=white]
+;8f.fumi_katuraginomiya_y=[emb exp ="f.fumi_katuraginomiya_y"][r]
+[endif]
+
+[if exp="f.loop_count>0"]
+	@jump target=*loop_fumi_katuraginomiya3
+[endif]
+[s]
+
+*info_katuraginomiya_hyouji
+[image layer=26 x=1 y=1 storage="bg/bg_info_katuraginomiya.jpg"]
+	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
+	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
+	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=430 y=580 color=white]
+;葛城宮に手紙を出せるようになっていたらボタン表示
+;[if exp="f.katuraginomiya_fumi_start==1"]
+;	[glink target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
 ;[endif]
-[if exp="sf.kouryaku_ninzuu<4"]
-[elsif exp="sf.kouryaku_ninzuu>=4"]
-	[glink target=&sf.info_list1[3] text=&sf.kouryaku_list_fullname[3] size=16 width="120" x=430 y=580 color=white]
-[endif]
-[if exp="sf.kouryaku_ninzuu<5"]
-[elsif exp="sf.kouryaku_ninzuu>=5"]
-	[glink target=&sf.info_list1[4] text=&sf.kouryaku_list_fullname[4] size=16 width="120" x=630 y=580 color=white]
+;藤枝に手紙を出せるようになっていたらボタン表示
+[if exp="f.hujieda_fumi_start==1"]
+	[glink target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
 	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
-[if exp="f.para_sijyou_koukando<0"]
+[if exp="f.para_katuraginomiya_koukando<0"]
 [eval exp="f.para_koukando_x = 270"]
-[elsif exp="f.para_sijyou_koukando<10"]
+[elsif exp="f.para_katuraginomiya_koukando<10"]
 [eval exp="f.para_koukando_x = 281"]
-[elsif exp="f.para_sijyou_koukando<100"]
+[elsif exp="f.para_katuraginomiya_koukando<100"]
 [eval exp="f.para_koukando_x = 270"]
 [else]
 [eval exp="f.para_koukando_x = 255"]
 [endif]
-[if exp="f.para_sijyou_koukando<0"]
+[if exp="f.para_katuraginomiya_koukando<0"]
 [eval exp="f.para_color = 'crimson'"]
 [else]
 [eval exp="f.para_color = 'black'"]
 [endif]
-[ptext text=&f.para_sijyou_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext text=&f.para_sijyou_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
-[ptext text=&f.para_sijyou_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
-[ptext text=&f.para_sijyou_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
+[ptext text=&f.para_katuraginomiya_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext text=&f.para_katuraginomiya_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
+[ptext text=&f.para_katuraginomiya_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[ptext text=&f.para_katuraginomiya_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
 [return]
 [s]
 
-*info_jiyuuwaku1
+*info_hujieda
 [freeimage layer = 27]
 [freeimage layer = 28]
-[eval exp="f.viewing_target = '*info_jiyuuwaku1'"]
-[eval exp="f.oaite_viewing_target = '*info_jiyuuwaku1'"]
-[call target=*info_jiyuuwaku1_hyouji]
+[eval exp="f.oaite_viewing_storage = 'info_oaite_fumi.ks'"]
+[eval exp="f.viewing_target = '*info_hujieda'"]
+[eval exp="f.oaite_viewing_target = '*info_hujieda'"]
+[call target=*info_hujieda_hyouji]
 
 ;◆手紙一覧
-;[eval exp="f.fumi_jiyuuwaku1_number=13"]
-[if exp="f.fumi_jiyuuwaku1_number>5"]
-			[glink target=*fumi_jiyuuwaku1_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+;[eval exp="f.fumi_hujieda_number=13"]
+[if exp="f.fumi_hujieda_number>5"]
+			[glink target=*fumi_hujieda_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
-[eval exp="f.list_count = f.fumi_jiyuuwaku1_number"]
+[eval exp="f.list_count = f.fumi_hujieda_number"]
 [eval exp="f.loop_count = f.list_count"]
 [if exp="f.loop_count > 5"]
 [eval exp="f.loop_count = 5"]
 [endif]
-*loop_fumi_jiyuuwaku1
+*loop_fumi_hujieda
 [if exp="f.list_count == 0"]
 [else]
 	[eval exp="f.list_count = f.list_count - 1"]
@@ -2210,263 +2242,52 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[eval exp="f.loop_count = f.loop_count - 1"]
 [endif]
 [iscript]
-	f.fumi_jiyuuwaku1_midoku_y = ( 20 + 80 * f.fumi_jiyuuwaku1_number ) - 80 * f.list_count;
-	f.fumi_jiyuuwaku1_y = ( 10 + 80 * f.fumi_jiyuuwaku1_number ) - 80 * f.list_count;
-	f.fumi_hairetsu1 = 3;
-	f.fumi_hairetsu2 = f.fumi_list_jiyuuwaku1_location_fumi[f.list_count];
-[endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_jiyuuwaku1_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='jiyuuwaku1'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_jiyuuwaku1_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_jiyuuwaku1_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_jiyuuwaku1_number==0"]
-[else]
-	[glink storage=fumi_jiyuuwaku1.ks target=&f.fumi_list_jiyuuwaku1_target[f.list_count] text=&f.fumi_list_jiyuuwaku1_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_jiyuuwaku1_y color=white]
-;[emb exp ="f.fumi_jiyuuwaku1_y"][r]
-[endif]
-
-[if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_jiyuuwaku1
-[endif]
-[s]
-
-*fumi_jiyuuwaku1_page2
-[cm]
-[freeimage layer = 28]
-[eval exp="f.viewing_target = '*fumi_jiyuuwaku1_page2'"]
-[eval exp="f.oaite_viewing_target = '*fumi_jiyuuwaku1_page2'"]
-[call target=*info_jiyuuwaku1_hyouji]
-
-;1f.fumi_jiyuuwaku1_number=[emb exp ="f.fumi_jiyuuwaku1_number"][r]
-[glink target=*info_jiyuuwaku1 text="←" size=20 width="20" x=510 y=480 color=white]
-[if exp="f.fumi_jiyuuwaku1_number>10"]
-[glink target=*fumi_jiyuuwaku1_page3 text="→" size=20 width="20" x=855 y=480 color=white]
-[endif]
-[eval exp="f.list_count = f.fumi_jiyuuwaku1_number - 5"]
-[eval exp="f.loop_count = f.list_count"]
-[if exp="f.loop_count > 5"]
-[eval exp="f.loop_count = 5"]
-[endif]
-;2f.list_count=[emb exp ="f.list_count"][r]
-*loop_fumi_jiyuuwaku12
-[if exp="f.list_count == 0"]
-[else]
-	[eval exp="f.list_count = f.list_count - 1"]
-[endif]
-[if exp="f.loop_count == 0"]
-[else]
-	[eval exp="f.loop_count = f.loop_count - 1"]
-[endif]
-;3f.list_count=[emb exp ="f.list_count"][r]
-;4f.loop_count=[emb exp ="f.loop_count"][r]
-;5f.fumi_jiyuuwaku1_number=[emb exp ="f.fumi_jiyuuwaku1_number"][r]
-[iscript]
-	f.fumi_jiyuuwaku1_midoku_y =  20 + 80 * ( f.fumi_jiyuuwaku1_number - 5 ) - 80 * f.list_count;
-	f.fumi_jiyuuwaku1_y =  10 + 80 * ( f.fumi_jiyuuwaku1_number - 5 ) - 80 * f.list_count;
-	f.fumi_hairetsu1 = 3;
-	f.fumi_hairetsu2 = f.fumi_list_jiyuuwaku1_location_fumi[f.list_count];
-[endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_jiyuuwaku1_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='jiyuuwaku1'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_jiyuuwaku1_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_jiyuuwaku1_midoku_y color=mediumslateblue bold=bold]
-[endif]
-;7f.fumi_jiyuuwaku1_number=[emb exp ="f.fumi_jiyuuwaku1_number"][r]
-[if exp="f.fumi_jiyuuwaku1_number==0"]
-[else]
-	[glink storage=fumi_jiyuuwaku1.ks target=&f.fumi_list_jiyuuwaku1_target[f.list_count] text=&f.fumi_list_jiyuuwaku1_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_jiyuuwaku1_y color=white]
-;8f.fumi_jiyuuwaku1_y=[emb exp ="f.fumi_jiyuuwaku1_y"][r]
-[endif]
-
-[if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_jiyuuwaku12
-[endif]
-[s]
-
-*fumi_jiyuuwaku1_page3
-[cm]
-[freeimage layer = 28]
-[eval exp="f.viewing_target = '*fumi_jiyuuwaku1_page3'"]
-[eval exp="f.oaite_viewing_target = '*fumi_jiyuuwaku1_page3'"]
-[call target=*info_jiyuuwaku1_hyouji]
-
-;1f.fumi_jiyuuwaku1_number=[emb exp ="f.fumi_jiyuuwaku1_number"][r]
-[glink target=*fumi_jiyuuwaku1_page2 text="←" size=20 width="20" x=510 y=480 color=white]
-
-[eval exp="f.list_count = f.fumi_jiyuuwaku1_number - 10"]
-[eval exp="f.loop_count = f.list_count"]
-[if exp="f.loop_count > 5"]
-[eval exp="f.loop_count = 5"]
-[endif]
-;2f.list_count=[emb exp ="f.list_count"][r]
-*loop_fumi_jiyuuwaku13
-[if exp="f.list_count == 0"]
-[else]
-	[eval exp="f.list_count = f.list_count - 1"]
-[endif]
-[if exp="f.loop_count == 0"]
-[else]
-	[eval exp="f.loop_count = f.loop_count - 1"]
-[endif]
-;3f.list_count=[emb exp ="f.list_count"][r]
-;4f.loop_count=[emb exp ="f.loop_count"][r]
-;5f.fumi_jiyuuwaku1_number=[emb exp ="f.fumi_jiyuuwaku1_number"][r]
-[iscript]
-	f.fumi_jiyuuwaku1_midoku_y =  20 + 80 * ( f.fumi_jiyuuwaku1_number - 10 ) - 80 * f.list_count;
-	f.fumi_jiyuuwaku1_y =  10 + 80 * ( f.fumi_jiyuuwaku1_number - 10 ) - 80 * f.list_count;
-	f.fumi_hairetsu1 = 3;
-	f.fumi_hairetsu2 = f.fumi_list_jiyuuwaku1_location_fumi[f.list_count];
-[endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_jiyuuwaku1_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='jiyuuwaku1'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_jiyuuwaku1_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_jiyuuwaku1_midoku_y color=mediumslateblue bold=bold]
-[endif]
-;7f.fumi_jiyuuwaku1_number=[emb exp ="f.fumi_jiyuuwaku1_number"][r]
-[if exp="f.fumi_jiyuuwaku1_number==0"]
-[else]
-	[glink storage=fumi_jiyuuwaku1.ks target=&f.fumi_list_jiyuuwaku1_target[f.list_count] text=&f.fumi_list_jiyuuwaku1_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_jiyuuwaku1_y color=white]
-;8f.fumi_jiyuuwaku1_y=[emb exp ="f.fumi_jiyuuwaku1_y"][r]
-[endif]
-
-[if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_jiyuuwaku13
-[endif]
-[s]
-
-*info_jiyuuwaku1_hyouji
-[image layer=26 x=1 y=1 storage="bg/bg_info_jiyuuwaku1.jpg"]
-[glink target=&sf.info_list1[0] text=&sf.kouryaku_list_fullname[0] size=16 width="120" x=30 y=580 color=white]
-[if exp="sf.kouryaku_ninzuu<2"]
-[elsif exp="sf.kouryaku_ninzuu>=2"]
-	[glink target=&sf.info_list1[1] text=&sf.kouryaku_list_fullname[1] size=16 width="120" x=230 y=580 color=white]
-[endif]
-[if exp="sf.kouryaku_ninzuu<3"]
-[elsif exp="sf.kouryaku_ninzuu>=3"]
-	[glink target=&sf.info_list1[2] text=&sf.kouryaku_list_fullname[2] size=16 width="120" x=430 y=580 color=white]
-[endif]
-;[if exp="sf.kouryaku_ninzuu<4"]
-;[elsif exp="sf.kouryaku_ninzuu>=4"]
-;	[glink target=&sf.info_list1[3] text=&sf.kouryaku_list_fullname[3] size=16 width="120" x=430 y=580 color=white]
-;[endif]
-[if exp="sf.kouryaku_ninzuu<5"]
-[elsif exp="sf.kouryaku_ninzuu>=5"]
-	[glink target=&sf.info_list1[4] text=&sf.kouryaku_list_fullname[4] size=16 width="120" x=630 y=580 color=white]
-[endif]
-	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
-[if exp="f.para_jiyuuwaku1_koukando<0"]
-[eval exp="f.para_koukando_x = 270"]
-[elsif exp="f.para_jiyuuwaku1_koukando<10"]
-[eval exp="f.para_koukando_x = 281"]
-[elsif exp="f.para_jiyuuwaku1_koukando<100"]
-[eval exp="f.para_koukando_x = 270"]
-[else]
-[eval exp="f.para_koukando_x = 255"]
-[endif]
-[if exp="f.para_jiyuuwaku1_koukando<0"]
-[eval exp="f.para_color = 'crimson'"]
-[else]
-[eval exp="f.para_color = 'black'"]
-[endif]
-[ptext text=&f.para_jiyuuwaku1_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext text=&f.para_jiyuuwaku1_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
-[ptext text=&f.para_jiyuuwaku1_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
-[ptext text=&f.para_jiyuuwaku1_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
-[return]
-[s]
-
-*info_jiyuuwaku2
-[freeimage layer = 27]
-[freeimage layer = 28]
-[eval exp="f.viewing_target = '*info_jiyuuwaku2'"]
-[eval exp="f.oaite_viewing_target = '*info_jiyuuwaku2'"]
-[call target=*info_jiyuuwaku2_hyouji]
-
-;◆手紙一覧
-;[eval exp="f.fumi_jiyuuwaku2_number=13"]
-[if exp="f.fumi_jiyuuwaku2_number>5"]
-			[glink target=*fumi_jiyuuwaku2_page2 text="→" size=20 width="20" x=855 y=480 color=white]
-[endif]
-[eval exp="f.list_count = f.fumi_jiyuuwaku2_number"]
-[eval exp="f.loop_count = f.list_count"]
-[if exp="f.loop_count > 5"]
-[eval exp="f.loop_count = 5"]
-[endif]
-*loop_fumi_jiyuuwaku2
-[if exp="f.list_count == 0"]
-[else]
-	[eval exp="f.list_count = f.list_count - 1"]
-[endif]
-[if exp="f.loop_count == 0"]
-[else]
-	[eval exp="f.loop_count = f.loop_count - 1"]
-[endif]
-[iscript]
-	f.fumi_jiyuuwaku2_midoku_y = ( 20 + 80 * f.fumi_jiyuuwaku2_number ) - 80 * f.list_count;
-	f.fumi_jiyuuwaku2_y = ( 10 + 80 * f.fumi_jiyuuwaku2_number ) - 80 * f.list_count;
+	f.fumi_hujieda_midoku_y = ( 20 + 80 * f.fumi_hujieda_number ) - 80 * f.list_count;
+	f.fumi_hujieda_y = ( 10 + 80 * f.fumi_hujieda_number ) - 80 * f.list_count;
 	f.fumi_hairetsu1 = 4;
-	f.fumi_hairetsu2 = f.fumi_list_jiyuuwaku2_location_fumi[f.list_count];
+	f.fumi_hairetsu2 = f.fumi_list_hujieda_location_fumi[f.list_count];
 [endscript]
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_jiyuuwaku2_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [else]
 [endif]
 ;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='jiyuuwaku2'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_jiyuuwaku2_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='hujieda'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_hujieda_y color=white]
 [else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_jiyuuwaku2_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [endif]
-[if exp="f.fumi_jiyuuwaku2_number==0"]
+[if exp="f.fumi_hujieda_number==0"]
 [else]
-	[glink storage=fumi_jiyuuwaku2.ks target=&f.fumi_list_jiyuuwaku2_target[f.list_count] text=&f.fumi_list_jiyuuwaku2_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_jiyuuwaku2_y color=white]
-;[emb exp ="f.fumi_jiyuuwaku2_y"][r]
+	[glink storage=fumi_hujieda.ks target=&f.fumi_list_hujieda_target[f.list_count] text=&f.fumi_list_hujieda_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_hujieda_y color=white]
+;[emb exp ="f.fumi_hujieda_y"][r]
 [endif]
 
 [if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_jiyuuwaku2
+	@jump target=*loop_fumi_hujieda
 [endif]
 [s]
 
-*fumi_jiyuuwaku2_page2
+*fumi_hujieda_page2
 [cm]
 [freeimage layer = 28]
-[eval exp="f.viewing_target = '*fumi_jiyuuwaku2_page2'"]
-[eval exp="f.oaite_viewing_target = '*fumi_jiyuuwaku2_page2'"]
-[call target=*info_jiyuuwaku2_hyouji]
+[eval exp="f.viewing_target = '*fumi_hujieda_page2'"]
+[eval exp="f.oaite_viewing_target = '*fumi_hujieda_page2'"]
+[call target=*info_hujieda_hyouji]
 
-;1f.fumi_jiyuuwaku2_number=[emb exp ="f.fumi_jiyuuwaku2_number"][r]
-[glink target=*info_jiyuuwaku2 text="←" size=20 width="20" x=510 y=480 color=white]
-[if exp="f.fumi_jiyuuwaku2_number>10"]
-[glink target=*fumi_jiyuuwaku2_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+;1f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
+[glink target=*info_hujieda text="←" size=20 width="20" x=510 y=480 color=white]
+[if exp="f.fumi_hujieda_number>10"]
+[glink target=*fumi_hujieda_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
-[eval exp="f.list_count = f.fumi_jiyuuwaku2_number - 5"]
+[eval exp="f.list_count = f.fumi_hujieda_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
 [if exp="f.loop_count > 5"]
 [eval exp="f.loop_count = 5"]
 [endif]
 ;2f.list_count=[emb exp ="f.list_count"][r]
-*loop_fumi_jiyuuwaku22
+*loop_fumi_hujieda2
 [if exp="f.list_count == 0"]
 [else]
 	[eval exp="f.list_count = f.list_count - 1"]
@@ -2477,53 +2298,53 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 ;3f.list_count=[emb exp ="f.list_count"][r]
 ;4f.loop_count=[emb exp ="f.loop_count"][r]
-;5f.fumi_jiyuuwaku2_number=[emb exp ="f.fumi_jiyuuwaku2_number"][r]
+;5f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
 [iscript]
-	f.fumi_jiyuuwaku2_midoku_y =  20 + 80 * ( f.fumi_jiyuuwaku2_number - 5 ) - 80 * f.list_count;
-	f.fumi_jiyuuwaku2_y =  10 + 80 * ( f.fumi_jiyuuwaku2_number - 5 ) - 80 * f.list_count;
+	f.fumi_hujieda_midoku_y =  20 + 80 * ( f.fumi_hujieda_number - 5 ) - 80 * f.list_count;
+	f.fumi_hujieda_y =  10 + 80 * ( f.fumi_hujieda_number - 5 ) - 80 * f.list_count;
 	f.fumi_hairetsu1 = 4;
-	f.fumi_hairetsu2 = f.fumi_list_jiyuuwaku2_location_fumi[f.list_count];
+	f.fumi_hairetsu2 = f.fumi_list_hujieda_location_fumi[f.list_count];
 [endscript]
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_jiyuuwaku2_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [else]
 [endif]
 ;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='jiyuuwaku2'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_jiyuuwaku2_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='hujieda'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_hujieda_y color=white]
 [else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_jiyuuwaku2_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [endif]
-;7f.fumi_jiyuuwaku2_number=[emb exp ="f.fumi_jiyuuwaku2_number"][r]
-[if exp="f.fumi_jiyuuwaku2_number==0"]
+;7f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
+[if exp="f.fumi_hujieda_number==0"]
 [else]
-	[glink storage=fumi_jiyuuwaku2.ks target=&f.fumi_list_jiyuuwaku2_target[f.list_count] text=&f.fumi_list_jiyuuwaku2_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_jiyuuwaku2_y color=white]
-;8f.fumi_jiyuuwaku2_y=[emb exp ="f.fumi_jiyuuwaku2_y"][r]
+	[glink storage=fumi_hujieda.ks target=&f.fumi_list_hujieda_target[f.list_count] text=&f.fumi_list_hujieda_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_hujieda_y color=white]
+;8f.fumi_hujieda_y=[emb exp ="f.fumi_hujieda_y"][r]
 [endif]
 
 [if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_jiyuuwaku22
+	@jump target=*loop_fumi_hujieda2
 [endif]
 [s]
 
-*fumi_jiyuuwaku2_page3
+*fumi_hujieda_page3
 [cm]
 [freeimage layer = 28]
-[eval exp="f.viewing_target = '*fumi_jiyuuwaku2_page3'"]
-[eval exp="f.oaite_viewing_target = '*fumi_jiyuuwaku2_page3'"]
-[call target=*info_jiyuuwaku2_hyouji]
+[eval exp="f.viewing_target = '*fumi_hujieda_page3'"]
+[eval exp="f.oaite_viewing_target = '*fumi_hujieda_page3'"]
+[call target=*info_hujieda_hyouji]
 
-;1f.fumi_jiyuuwaku2_number=[emb exp ="f.fumi_jiyuuwaku2_number"][r]
-[glink target=*fumi_jiyuuwaku2_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+;1f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
+[glink target=*fumi_hujieda_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 
-[eval exp="f.list_count = f.fumi_jiyuuwaku2_number - 10"]
+[eval exp="f.list_count = f.fumi_hujieda_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
 [if exp="f.loop_count > 5"]
 [eval exp="f.loop_count = 5"]
 [endif]
 ;2f.list_count=[emb exp ="f.list_count"][r]
-*loop_fumi_jiyuuwaku23
+*loop_fumi_hujieda3
 [if exp="f.list_count == 0"]
 [else]
 	[eval exp="f.list_count = f.list_count - 1"]
@@ -2534,74 +2355,64 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 ;3f.list_count=[emb exp ="f.list_count"][r]
 ;4f.loop_count=[emb exp ="f.loop_count"][r]
-;5f.fumi_jiyuuwaku2_number=[emb exp ="f.fumi_jiyuuwaku2_number"][r]
+;5f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
 [iscript]
-	f.fumi_jiyuuwaku2_midoku_y =  20 + 80 * ( f.fumi_jiyuuwaku2_number - 10 ) - 80 * f.list_count;
-	f.fumi_jiyuuwaku2_y =  10 + 80 * ( f.fumi_jiyuuwaku2_number - 10 ) - 80 * f.list_count;
+	f.fumi_hujieda_midoku_y =  20 + 80 * ( f.fumi_hujieda_number - 10 ) - 80 * f.list_count;
+	f.fumi_hujieda_y =  10 + 80 * ( f.fumi_hujieda_number - 10 ) - 80 * f.list_count;
 	f.fumi_hairetsu1 = 4;
-	f.fumi_hairetsu2 = f.fumi_list_jiyuuwaku2_location_fumi[f.list_count];
+	f.fumi_hairetsu2 = f.fumi_list_hujieda_location_fumi[f.list_count];
 [endscript]
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_jiyuuwaku2_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [else]
 [endif]
 ;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
 [eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='jiyuuwaku2'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_jiyuuwaku2_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='hujieda'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_hujieda_y color=white]
 [else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_jiyuuwaku2_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [endif]
-;7f.fumi_jiyuuwaku2_number=[emb exp ="f.fumi_jiyuuwaku2_number"][r]
-[if exp="f.fumi_jiyuuwaku2_number==0"]
+;7f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
+[if exp="f.fumi_hujieda_number==0"]
 [else]
-	[glink storage=fumi_jiyuuwaku2.ks target=&f.fumi_list_jiyuuwaku2_target[f.list_count] text=&f.fumi_list_jiyuuwaku2_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_jiyuuwaku2_y color=white]
-;8f.fumi_jiyuuwaku2_y=[emb exp ="f.fumi_jiyuuwaku2_y"][r]
+	[glink storage=fumi_hujieda.ks target=&f.fumi_list_hujieda_target[f.list_count] text=&f.fumi_list_hujieda_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_hujieda_y color=white]
+;8f.fumi_hujieda_y=[emb exp ="f.fumi_hujieda_y"][r]
 [endif]
 
 [if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_jiyuuwaku23
+	@jump target=*loop_fumi_hujieda3
 [endif]
 [s]
 
-*info_jiyuuwaku2_hyouji
-[image layer=26 x=1 y=1 storage="bg/bg_info_jiyuuwaku2.jpg"]
-[glink target=&sf.info_list1[0] text=&sf.kouryaku_list_fullname[0] size=16 width="120" x=30 y=580 color=white]
-[if exp="sf.kouryaku_ninzuu<2"]
-[elsif exp="sf.kouryaku_ninzuu>=2"]
-	[glink target=&sf.info_list1[1] text=&sf.kouryaku_list_fullname[1] size=16 width="120" x=230 y=580 color=white]
+*info_hujieda_hyouji
+[image layer=26 x=1 y=1 storage="bg/bg_info_hujieda.jpg"]
+	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
+	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
+	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=430 y=580 color=white]
+;葛城宮に手紙を出せるようになっていたらボタン表示
+[if exp="f.katuraginomiya_fumi_start==1"]
+	[glink target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=630 y=580 color=white]
 [endif]
-[if exp="sf.kouryaku_ninzuu<3"]
-[elsif exp="sf.kouryaku_ninzuu>=3"]
-	[glink target=&sf.info_list1[2] text=&sf.kouryaku_list_fullname[2] size=16 width="120" x=430 y=580 color=white]
-[endif]
-[if exp="sf.kouryaku_ninzuu<4"]
-[elsif exp="sf.kouryaku_ninzuu>=4"]
-	[glink target=&sf.info_list1[3] text=&sf.kouryaku_list_fullname[3] size=16 width="120" x=630 y=580 color=white]
-[endif]
-;[if exp="sf.kouryaku_ninzuu<5"]
-;[elsif exp="sf.kouryaku_ninzuu>=5"]
-;	[glink target=&sf.info_list1[4] text=&sf.kouryaku_list_fullname[4] size=16 width="120" x=630 y=580 color=white]
-;[endif]
 	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
-[if exp="f.para_jiyuuwaku2_koukando<0"]
+[if exp="f.para_hujieda_koukando<0"]
 [eval exp="f.para_koukando_x = 270"]
-[elsif exp="f.para_jiyuuwaku2_koukando<10"]
+[elsif exp="f.para_hujieda_koukando<10"]
 [eval exp="f.para_koukando_x = 281"]
-[elsif exp="f.para_jiyuuwaku2_koukando<100"]
+[elsif exp="f.para_hujieda_koukando<100"]
 [eval exp="f.para_koukando_x = 270"]
 [else]
 [eval exp="f.para_koukando_x = 255"]
 [endif]
-[if exp="f.para_jiyuuwaku2_koukando<0"]
+[if exp="f.para_hujieda_koukando<0"]
 [eval exp="f.para_color = 'crimson'"]
 [else]
 [eval exp="f.para_color = 'black'"]
 [endif]
-[ptext text=&f.para_jiyuuwaku2_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext text=&f.para_jiyuuwaku2_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
-[ptext text=&f.para_jiyuuwaku2_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
-[ptext text=&f.para_jiyuuwaku2_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
+[ptext text=&f.para_hujieda_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext text=&f.para_hujieda_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
+[ptext text=&f.para_hujieda_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[ptext text=&f.para_hujieda_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
 [return]
 [s]
 

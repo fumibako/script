@@ -41,7 +41,7 @@ _　　　　　　・・・読込中・・・[r]
 _　　　　　　　　  40%
 
 [iscript]
-f.preload_images_title3 = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_futuu.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/mayu_komari.png","data/fgimage/girl/S/mayu_tuyoki.png","data/fgimage/girl/S/mayu_sage.png","data/fgimage/girl/S/emo_hohosome.png"];
+f.preload_images_title3 = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_futuu.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/mayu_komari.png","data/fgimage/girl/S/mayu_tuyoki.png","data/fgimage/girl/S/mayu_sage.png","data/fgimage/girl/S/emo_hohosome.png","data/fgimage/bg/bg_prologue.jpg","data/fgimage/bg/bg_prologue_dark.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png"];
 [endscript]
 [preload storage=&f.preload_images_title3 wait=true]
 [cm]

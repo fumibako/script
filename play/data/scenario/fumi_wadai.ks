@@ -656,8 +656,8 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][1]);
 f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][2]);
 f.para_pre_sijyou_koukando = f.para_pre_sijyou_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][3]);
-f.para_pre_jiyuuwaku1_koukando = f.para_pre_jiyuuwaku1_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][4]);
-f.para_pre_jiyuuwaku2_koukando = f.para_pre_jiyuuwaku2_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][5]);
+f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][4]);
+f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][5]);
 [endscript]
 ;◆話題配列fumi_wadai.csvの6番目要素は話題の距離感を示す。a：最初からokな話題、b:そこそこ仲良くなるまでは引かれる話題、c:かなり仲良くなるまでは引かれる
 [if exp = "f.wadai_list_hairetsu[f.wadai_number][6] == 'a'"]
@@ -676,9 +676,9 @@ f.para_pre_jiyuuwaku2_koukando = f.para_pre_jiyuuwaku2_koukando + parseInt(f.wad
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][7] == '3'"]
 [eval exp = "f.para_pre_sijyou_koukando = f.para_pre_sijyou_koukando - 2"]
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][7] == '4'"]
-[eval exp = "f.para_pre_jiyuuwaku1_koukando = f.para_pre_jiyuuwaku1_koukando - 2"]
+[eval exp = "f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando - 2"]
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][7] == '5'"]
-[eval exp = "f.para_pre_jiyuuwaku2_koukando = f.para_pre_jiyuuwaku2_koukando - 2"]
+[eval exp = "f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando - 2"]
 [endif]
 [if exp = "f.wadai_list_hairetsu[f.wadai_number][8] == '1'"]
 [eval exp = "f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando - 2"]
@@ -687,9 +687,9 @@ f.para_pre_jiyuuwaku2_koukando = f.para_pre_jiyuuwaku2_koukando + parseInt(f.wad
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][8] == '3'"]
 [eval exp = "f.para_pre_sijyou_koukando = f.para_pre_sijyou_koukando - 2"]
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][8] == '4'"]
-[eval exp = "f.para_pre_jiyuuwaku1_koukando = f.para_pre_jiyuuwaku1_koukando - 2"]
+[eval exp = "f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando - 2"]
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][8] == '5'"]
-[eval exp = "f.para_pre_jiyuuwaku2_koukando = f.para_pre_jiyuuwaku2_koukando - 2"]
+[eval exp = "f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando - 2"]
 [endif]
 */
 [jump target=*fumi_kakunin]
@@ -710,11 +710,11 @@ if (f.para_zaizen_koukando < parseInt(sf.zaizen['koukando_a'])){
 if (f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
 	f.para_pre_sijyou_koukando = f.para_pre_sijyou_koukando - 1;
 }
-if (f.para_jiyuuwaku1_koukando < parseInt(sf.jiyuuwaku1['koukando_a'])){
-	f.para_pre_jiyuuwaku1_koukando = f.para_pre_jiyuuwaku1_koukando - 1;
+if (f.para_katuraginomiya_koukando < parseInt(sf.katuraginomiya['koukando_a'])){
+	f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando - 1;
 }
-if (f.para_jiyuuwaku2_koukando < parseInt(sf.jiyuuwaku2['koukando_a'])){
-	f.para_pre_jiyuuwaku2_koukando = f.para_pre_jiyuuwaku2_koukando - 1;
+if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_a'])){
+	f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando - 1;
 }
 [endscript]
 [return]
@@ -730,11 +730,11 @@ if (f.para_zaizen_koukando < parseInt(sf.zaizen['koukando_b'])){
 if (f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_b'])){
 	f.para_pre_sijyou_koukando = f.para_pre_sijyou_koukando - 1;
 }
-if (f.para_jiyuuwaku1_koukando < parseInt(sf.jiyuuwaku1['koukando_b'])){
-	f.para_pre_jiyuuwaku1_koukando = f.para_pre_jiyuuwaku1_koukando - 1;
+if (f.para_katuraginomiya_koukando < parseInt(sf.katuraginomiya['koukando_b'])){
+	f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando - 1;
 }
-if (f.para_jiyuuwaku2_koukando < parseInt(sf.jiyuuwaku2['koukando_b'])){
-	f.para_pre_jiyuuwaku2_koukando = f.para_pre_jiyuuwaku2_koukando - 1;
+if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_b'])){
+	f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando - 1;
 }
 [endscript]
 [return]
@@ -765,15 +765,17 @@ if (f.para_jiyuuwaku2_koukando < parseInt(sf.jiyuuwaku2['koukando_b'])){
 ;f.para_pre_kuroda_koukando=[emb exp ="f.para_pre_kuroda_koukando"]
 ;f.para_pre_zaizen_koukando=[emb exp ="f.para_pre_zaizen_koukando"]
 ;f.para_pre_sijyou_koukando=[emb exp ="f.para_pre_sijyou_koukando"][r]
-;f.para_pre_jiyuuwaku1_koukando=[emb exp ="f.para_pre_jiyuuwaku1_koukando"]
-;f.para_pre_jiyuuwaku2_koukando=[emb exp ="f.para_pre_jiyuuwaku2_koukando"]
+;f.para_pre_katuraginomiya_koukando=[emb exp ="f.para_pre_katuraginomiya_koukando"]
+;f.para_pre_hujieda_koukando=[emb exp ="f.para_pre_hujieda_koukando"]
 [s]
 
 *fumi_ok
+[if exp="f.fumi_henjityu==1"]
+ [eval exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]=1"]
+[endif]
 [eval exp="f.fumi_henjityu=0"]
 [eval exp="f.fumi_kakunin=0"]
 [eval exp="f.fumi_henji=1"]
-[eval exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]=1"]
 [eval exp="f.para_shujinkou_tairyoku_now=f.para_shujinkou_tairyoku_now-f.fumi_hituyou_tairyoku"]
 [eval exp="f.para_shujinkou_kiryoku_now=f.para_shujinkou_kiryoku_now-f.fumi_hituyou_kiryoku"]
 [iscript]
@@ -826,20 +828,21 @@ if (f.fumi_atesaki == 'zaizen'){
 	f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi-1;
 	f.zaizen_fumi_wadai_tyokuzen=f.wadai_list_hairetsu[f.wadai_number][0];
 }
-if (f.fumi_atesaki == 'sijyou'){
-	f.para_sijyou_koukando = f.para_sijyou_koukando + f.para_pre_sijyou_koukando;
-	f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi-1;
-	f.sijyou_fumi_wadai_tyokuzen=f.wadai_list_hairetsu[f.wadai_number][0];
+[endscript]
+[if exp="f.fumi_atesaki == 'sijyou'"]
+	@jump storage="01_sijyou_fumi_wadai.ks" target=*sijyou_wadai_shori
+[endif]
+*katuraginomiya_wadai_shori
+[iscript]
+if (f.fumi_atesaki == 'katuraginomiya'){
+	f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.para_pre_katuraginomiya_koukando;
+	f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi-1;
+	f.katuraginomiya_fumi_wadai_tyokuzen=f.wadai_list_hairetsu[f.wadai_number][0];
 }
-if (f.fumi_atesaki == 'jiyuuwaku1'){
-	f.para_jiyuuwaku1_koukando = f.para_jiyuuwaku1_koukando + f.para_pre_jiyuuwaku1_koukando;
-	f.jiyuuwaku1_fumi_henjimachi=f.jiyuuwaku1_fumi_henjimachi-1;
-	f.jiyuuwaku1_fumi_wadai_tyokuzen=f.wadai_list_hairetsu[f.wadai_number][0];
-}
-if (f.fumi_atesaki == 'jiyuuwaku2'){
-	f.para_jiyuuwaku2_koukando = f.para_jiyuuwaku2_koukando + f.para_pre_jiyuuwaku2_koukando;
-	f.jiyuuwaku2_fumi_henjimachi=f.jiyuuwaku2_fumi_henjimachi-1;
-	f.jiyuuwaku2_fumi_wadai_tyokuzen=f.wadai_list_hairetsu[f.wadai_number][0];
+if (f.fumi_atesaki == 'hujieda'){
+	f.para_hujieda_koukando = f.para_hujieda_koukando + f.para_pre_hujieda_koukando;
+	f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi-1;
+	f.hujieda_fumi_wadai_tyokuzen=f.wadai_list_hairetsu[f.wadai_number][0];
 }
 [endscript]
 [cm]

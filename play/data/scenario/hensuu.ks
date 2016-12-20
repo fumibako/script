@@ -65,29 +65,29 @@ sf.event_common=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 sf.event_kuroda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 sf.event_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 sf.event_sijyou=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
-sf.event_jiyuuwaku1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
-sf.event_jiyuuwaku2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
+sf.event_katuraginomiya=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
+sf.event_hujieda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 
 sf.event_machi_common=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 sf.event_machi_kuroda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 sf.event_machi_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 sf.event_machi_sijyou=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
-sf.event_machi_jiyuuwaku1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
-sf.event_machi_jiyuuwaku2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
+sf.event_machi_katuraginomiya=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
+sf.event_machi_hujieda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 
 f.event_common=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント100個まで対応
 f.event_kuroda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 f.event_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 f.event_sijyou=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
-f.event_jiyuuwaku1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
-f.event_jiyuuwaku2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
+f.event_katuraginomiya=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
+f.event_hujieda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 
 f.event_machi_common=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 f.event_machi_kuroda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 f.event_machi_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 f.event_machi_sijyou=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
-f.event_machi_jiyuuwaku1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
-f.event_machi_jiyuuwaku2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
+f.event_machi_katuraginomiya=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
+f.event_machi_hujieda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//イベント50個まで対応
 
 [endscript]
 
@@ -112,32 +112,17 @@ sf.kuroda ={
   "fumibako":"fumibako_kuroda",
   "ask1":"黒田将貴様について",
   "fumi1":"kuroda_fumi1",
-  "fumi2":"kuroda_fumi2",
-  "fumi3":"kuroda_fumi3",
-  "fumi4":"kuroda_fumi4",
-  "fumi5":"kuroda_fumi5",
-  "fumi6":"kuroda_fumi6",
-  "fumi7":"kuroda_fumi7",
-  "fumi8":"kuroda_fumi8",
-  "fumi9":"kuroda_fumi9",
-  "fumi10":"kuroda_fumi10",
-  "fumi11":"kuroda_fumi11",
-  "fumi12":"kuroda_fumi12",
-  "fumi13":"kuroda_fumi13"
 }; 
 f.para_kuroda_koukando=5;
 f.para_kuroda_sintyou=169;
 f.para_kuroda_taijuu=57;
 f.para_kuroda_shumi="－";
 f.kuroda_fumi_henjimachi=1;
-f.kuroda_fumi_toutyakumachi=3; //話題に対して返事が来る週数（初期）
-f.kuroda_fumi_toutyakumachi_week=0;
+f.kuroda_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
+f.kuroda_fumi_toutyakumachi_week=0; //その攻略対象にこちらから手紙を出してから、手紙が来るまでの経過週数(出した週を0とし、毎週加算される)
 f.kuroda_nextfumi_common=2;
-f.fumi_toutyaku_kuroda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+f.fumi_toutyaku_kuroda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 f.kuroda_au=0; //実際に会うことになったら1を代入
-f.kuroda_fumi_toutyakumachi_shumi=-1;
-f.kuroda_fumi_toutyakumachi_kazoku=-1;
-f.kuroda_fumi_toutyakumachi_yuujin=-1;
 
 [endscript]
 
@@ -146,9 +131,9 @@ f.kuroda_fumi_toutyakumachi_yuujin=-1;
 sf.zaizen ={
   "root":1,
   "code":"zaizen",
-  "myouji":"(仮)財前",
+  "myouji":"財前",
   "namae":"美彬",
-  "fullname":"(仮)財前 美彬",
+  "fullname":"財前 美彬",
   "koukando_a":50,
   "koukando_b":65,
   "koukando_c":80,
@@ -159,144 +144,85 @@ sf.zaizen ={
   "ask1":"(仮)財前美彬様について",
   "fumibako":"fumibako_zaizen",
   "fumi1":"zaizen_fumi1",
-  "fumi2":"zaizen_fumi2",
-  "fumi3":"zaizen_fumi3",
-  "fumi4":"zaizen_fumi4",
-  "fumi5":"zaizen_fumi5",
-  "fumi6":"zaizen_fumi6",
-  "fumi7":"zaizen_fumi7",
-  "fumi8":"zaizen_fumi8",
-  "fumi9":"zaizen_fumi9",
-  "fumi10":"zaizen_fumi10"
 }; 
 f.para_zaizen_koukando=0;
 f.para_zaizen_sintyou=174;
 f.para_zaizen_taijuu=62;
 f.para_zaizen_shumi="－";
 f.zaizen_fumi_henjimachi=1;
+f.zaizen_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
 f.zaizen_fumi_toutyakumachi_week=0;
 f.zaizen_nextfumi_common=2;
-f.fumi_toutyaku_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+f.fumi_toutyaku_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 f.zaizen_au=0;
 [endscript]
 
-;四条華織
+;葛城宮 晴仁
 [iscript]
-sf.sijyou ={
+sf.katuraginomiya ={
   "root":1,
-  "code":"sijyou",
-  "myouji":"(仮)四条",
-  "namae":"華織",
-  "fullname":"(仮)四条 華織",
-  "koukando_a":40,
-  "koukando_b":65,
-  "koukando_c":90,
-  "fumi_hindo_week":3,
-  "fumi_henjimachi_ok_number":1,
-  "isono1":"sijyou_isono1",
-  "info1":"info_sijyou",
-  "ask1":"(仮)四条華織様について",
-  "fumibako":"fumibako_sijyou",
-  "fumi1":"sijyou_fumi1",
-  "fumi2":"sijyou_fumi2",
-  "fumi3":"sijyou_fumi3",
-  "fumi4":"sijyou_fumi4",
-  "fumi5":"sijyou_fumi5",
-  "fumi6":"sijyou_fumi6",
-  "fumi7":"sijyou_fumi7",
-  "fumi8":"sijyou_fumi8",
-  "fumi9":"sijyou_fumi9",
-  "fumi10":"sijyou_fumi10"
-}; 
-f.para_sijyou_koukando=10;
-f.para_sijyou_sintyou=178;
-f.para_sijyou_taijuu=65;
-f.para_sijyou_shumi="－";
-f.sijyou_fumi_henjimachi=1;
-f.sijyou_fumi_toutyakumachi_week=0;
-f.sijyou_nextfumi_common=2;
-f.fumi_toutyaku_sijyou=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-f.sijyou_au=0;
-
-[endscript]
-
-;自由枠1
-[iscript]
-sf.jiyuuwaku1 ={
-  "root":1,
-  "code":"jiyuuwaku1",
-  "myouji":"(仮)自由枠",
+  "code":"katuraginomiya",
+  "myouji":"葛城宮",
   "namae":"1",
-  "fullname":"(仮)自由枠1",
+  "fullname":"葛城宮 晴仁",
   "koukando_a":30,
   "koukando_b":60,
   "koukando_c":80,
   "fumi_hindo_week":4,
   "fumi_henjimachi_ok_number":0,
-  "isono1":"jiyuuwaku1_isono1",
-  "info1":"info_jiyuuwaku1",
-  "ask1":"(仮)自由枠1様について",
-  "fumibako":"fumibako_jiyuuwaku1",
-  "fumi1":"jiyuuwaku1_fumi1",
-  "fumi2":"jiyuuwaku1_fumi2",
-  "fumi3":"jiyuuwaku1_fumi3",
-  "fumi4":"jiyuuwaku1_fumi4",
-  "fumi5":"jiyuuwaku1_fumi5",
-  "fumi6":"jiyuuwaku1_fumi6",
-  "fumi7":"jiyuuwaku1_fumi7",
-  "fumi8":"jiyuuwaku1_fumi8",
-  "fumi9":"jiyuuwaku1_fumi9",
-  "fumi10":"jiyuuwaku1_fumi10"
+  "isono1":"katuraginomiya_isono1",
+  "info1":"info_katuraginomiya",
+  "ask1":"葛城宮 晴仁様について",
+  "fumibako":"fumibako_katuraginomiya",
 }; 
-f.para_jiyuuwaku1_koukando=-5;
-f.para_jiyuuwaku1_sintyou="?";
-f.para_jiyuuwaku1_taijuu="?";
-f.para_jiyuuwaku1_shumi="－";
-f.jiyuuwaku1_fumi_henjimachi=1;
-f.jiyuuwaku1_fumi_toutyakumachi_week=0;
-f.jiyuuwaku1_nextfumi_common=2;
-f.fumi_toutyaku_jiyuuwaku1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-f.jiyuuwaku1_au=0;
-
+f.para_katuraginomiya_koukando=-5;
+f.para_katuraginomiya_sintyou="?";
+f.para_katuraginomiya_taijuu="?";
+f.para_katuraginomiya_shumi="－";
+f.katuraginomiya_fumi_henjimachi=1;
+f.katuraginomiya_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
+f.katuraginomiya_fumi_toutyakumachi_week=0;
+f.katuraginomiya_nextfumi_common=2;
+f.fumi_toutyaku_katuraginomiya=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+//↓葛城宮に手紙を出せるようになったら1。それ以外は0
+f.katuraginomiya_fumi_start=0;
+f.katuraginomiya_au=0;
+//↓葛城宮手紙タイトル配列をセット
+f.fumi_list_katuraginomiya_title = [];
 [endscript]
 
-;自由枠2
+;藤枝　肇
 [iscript]
-sf.jiyuuwaku2 ={
+sf.hujieda ={
   "root":1,
-  "code":"jiyuuwaku2",
-  "myouji":"(仮)自由枠",
+  "code":"hujieda",
+  "myouji":"藤枝",
   "namae":"2",
-  "fullname":"(仮)自由枠2",
+  "fullname":"藤枝　肇",
   "koukando_a":30,
   "koukando_b":60,
   "koukando_c":80,
   "fumi_hindo_week":2,
   "fumi_henjimachi_ok_number":9,
-  "isono1":"jiyuuwaku2_isono1",
-  "info1":"info_jiyuuwaku2",
-  "ask1":"(仮)自由枠2様について",
-  "fumibako":"fumibako_jiyuuwaku2",
-  "fumi1":"jiyuuwaku2_fumi1",
-  "fumi2":"jiyuuwaku2_fumi2",
-  "fumi3":"jiyuuwaku2_fumi3",
-  "fumi4":"jiyuuwaku2_fumi4",
-  "fumi5":"jiyuuwaku2_fumi5",
-  "fumi6":"jiyuuwaku2_fumi6",
-  "fumi7":"jiyuuwaku2_fumi7",
-  "fumi8":"jiyuuwaku2_fumi8",
-  "fumi9":"jiyuuwaku2_fumi9",
-  "fumi10":"jiyuuwaku2_fumi10"
+  "isono1":"hujieda_isono1",
+  "info1":"info_hujieda",
+  "ask1":"藤枝　肇様について",
+  "fumibako":"fumibako_hujieda",
+  "fumi1":"hujieda_fumi1",
 }; 
-f.para_jiyuuwaku2_koukando=20;
-f.para_jiyuuwaku2_sintyou="?";
-f.para_jiyuuwaku2_taijuu="?";
-f.para_jiyuuwaku2_shumi="－";
-f.jiyuuwaku2_fumi_henjimachi=1;
-f.jiyuuwaku2_fumi_toutyakumachi_week=0;
-f.jiyuuwaku2_nextfumi_common=2;
-f.fumi_toutyaku_jiyuuwaku2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-f.jiyuuwaku2_au=0;
+f.para_hujieda_koukando=20;
+f.para_hujieda_sintyou="?";
+f.para_hujieda_taijuu="?";
+f.para_hujieda_shumi="－";
+f.hujieda_fumi_henjimachi=1;
+f.hujieda_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
+f.hujieda_fumi_toutyakumachi_week=0;
+f.hujieda_nextfumi_common=2;
+f.fumi_toutyaku_hujieda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+//↓藤枝に手紙を出せるようになったら1。それ以外は0
+f.hujieda_fumi_start=0;
+f.hujieda_au=0;
+f.fumi_list_hujieda_title = [];
 
 [endscript]
 
@@ -320,35 +246,25 @@ if (sf.zaizen['root'] == 0){
   sf.info_list1.push(sf.zaizen['info1']);
   sf.fumibako_list.push(sf.zaizen['fumibako']);
 }
-if (sf.sijyou['root'] == 0){
-}else if (sf.sijyou['root'] == 1){
-  sf.kouryaku_list_fullname.push(sf.sijyou['fullname']);
-  sf.kouryaku_list_code.push(sf.sijyou['code']);
-  sf.fumi_list1.push(sf.sijyou['fumi1']);
-  sf.isono_list1.push(sf.sijyou['isono1']);
-  sf.ask_list1.push(sf.sijyou['ask1']);
-  sf.info_list1.push(sf.sijyou['info1']);
-  sf.fumibako_list.push(sf.sijyou['fumibako']);
+if (sf.katuraginomiya['root'] == 0){
+}else if (sf.katuraginomiya['root'] == 1){
+  sf.kouryaku_list_fullname.push(sf.katuraginomiya['fullname']);
+  sf.kouryaku_list_code.push(sf.katuraginomiya['code']);
+  sf.fumi_list1.push(sf.katuraginomiya['fumi1']);
+  sf.isono_list1.push(sf.katuraginomiya['isono1']);
+  sf.ask_list1.push(sf.katuraginomiya['ask1']);
+  sf.info_list1.push(sf.katuraginomiya['info1']);
+  sf.fumibako_list.push(sf.katuraginomiya['fumibako']);
 }
-if (sf.jiyuuwaku1['root'] == 0){
-}else if (sf.jiyuuwaku1['root'] == 1){
-  sf.kouryaku_list_fullname.push(sf.jiyuuwaku1['fullname']);
-  sf.kouryaku_list_code.push(sf.jiyuuwaku1['code']);
-  sf.fumi_list1.push(sf.jiyuuwaku1['fumi1']);
-  sf.isono_list1.push(sf.jiyuuwaku1['isono1']);
-  sf.ask_list1.push(sf.jiyuuwaku1['ask1']);
-  sf.info_list1.push(sf.jiyuuwaku1['info1']);
-  sf.fumibako_list.push(sf.jiyuuwaku1['fumibako']);
-}
-if (sf.jiyuuwaku2['root'] == 0){
-}else if (sf.jiyuuwaku2['root'] == 1){
-  sf.kouryaku_list_fullname.push(sf.jiyuuwaku2['fullname']);
-  sf.kouryaku_list_code.push(sf.jiyuuwaku2['code']);
-  sf.fumi_list1.push(sf.jiyuuwaku2['fumi1']);
-  sf.isono_list1.push(sf.jiyuuwaku2['isono1']);
-  sf.ask_list1.push(sf.jiyuuwaku2['ask1']);
-  sf.info_list1.push(sf.jiyuuwaku2['info1']);
-  sf.fumibako_list.push(sf.jiyuuwaku2['fumibako']);
+if (sf.hujieda['root'] == 0){
+}else if (sf.hujieda['root'] == 1){
+  sf.kouryaku_list_fullname.push(sf.hujieda['fullname']);
+  sf.kouryaku_list_code.push(sf.hujieda['code']);
+  sf.fumi_list1.push(sf.hujieda['fumi1']);
+  sf.isono_list1.push(sf.hujieda['isono1']);
+  sf.ask_list1.push(sf.hujieda['ask1']);
+  sf.info_list1.push(sf.hujieda['info1']);
+  sf.fumibako_list.push(sf.hujieda['fumibako']);
 }
 
 ;◆攻略キャラ人数計算
@@ -369,7 +285,5 @@ sf.kouryaku_ninzuu = sf.kouryaku_list_fullname.length;
 [else]
 [eval exp="sf.kouryaku_ninzuu_kansuuji='零'"]
 [endif]
-
-
 
 [return]
