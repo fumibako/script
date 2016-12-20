@@ -290,12 +290,12 @@
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;=============================
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 ;=============================
-[イベントシーン構築ボタン無し版]
 [暗転２終了]
 ;ｸﾘｯｸがみえる場合は追加↓
 [layopt layer=message0 visible=true]
