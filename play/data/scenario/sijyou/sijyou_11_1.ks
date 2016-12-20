@@ -1035,6 +1035,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;△ ○壺の柄と暗号を照らし合わせ、妹の場所を発見する
 [暗転]
+[fadeoutbgm time=3000]
+;背景変更:黒茶・和紙風 bg_prologue.jpg
+[image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg " time=1000 visible=true]
 ;=================================================================================_
 *seen15
 ;↓実装時は後半へ飛ぶ
