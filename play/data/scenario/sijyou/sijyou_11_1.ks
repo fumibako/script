@@ -457,7 +457,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条口通常]
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
-「急に尋ねてしまい申し訳ありません」[p]
+「急に訪ねてしまい申し訳ありません」[p]
 [四条目通常]
 [whosay name="華織" color="olivedrab"]
 「[華衣]はこちらに来てませんでしたか？」[p]
@@ -569,6 +569,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お手伝いします」[p]
 [四条口微笑み]
+#
 ;【退場】主人公
 [主人公退場]
 ;【退場】四条
