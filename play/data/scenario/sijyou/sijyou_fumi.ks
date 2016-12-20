@@ -107,9 +107,12 @@
 ;//////////////////////////☆特殊手紙のやりとり/////////////////////////////////
 ;//////////////////////趣味について//////////////////////
 *sijyou_syumi_1|(お見合い前)
+;◆↓お稽古パート経由で手紙を読みに来た場合は全画面表示のタイトルはカット(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『趣味について』(お見合い前)[p]
 ;#
+[endif]
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -118,11 +121,21 @@
 庭で花を愛でることだよ。家も華道をやっているからね。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+;◆↓未読or既読リスト配列中にて、その手紙の状態を未読→既読に変更。f.midoku_list_hairetsu[2(四条を示すNumber)][1(手紙固有Number)]。ちなみに[eval exp="f.midoku_list_hairetsu[2][0]だとオープニングで届く最初の手紙の未読or既読データを示す
+	[eval exp="f.midoku_list_hairetsu[2][1] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+
 [手紙四条読了 fumi_number=]
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
 [endif]
+
 
 *sijyou_syumi_2|(お見合い後)
 [テキスト全画面白文字]
