@@ -4,12 +4,12 @@
 ;手紙　四条華織
 ;=============================================
 
-*kaori_fumi1
+*sijyou_fumi1
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 （仮）[r]
 [名字] [名前]様[r]
@@ -36,13 +36,13 @@
 [s]
 
 
-*kaori_fumi2
+*sijyou_fumi2
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -56,13 +56,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi3
+*sijyou_fumi3
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -76,13 +76,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi4
+*sijyou_fumi4
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -96,13 +96,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi5
+*sijyou_fumi5
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -116,13 +116,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi6
+*sijyou_fumi6
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -136,13 +136,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi7
+*sijyou_fumi7
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -156,13 +156,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi8
+*sijyou_fumi8
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -176,13 +176,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi9
+*sijyou_fumi9
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -196,13 +196,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi10
+*sijyou_fumi10
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -216,13 +216,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi11
+*sijyou_fumi11
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -236,13 +236,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi12
+*sijyou_fumi12
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]
@@ -256,13 +256,13 @@
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
-*kaori_fumi13
+*sijyou_fumi13
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kaori.jpg"]
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [名字] [名前]様[r]
 [r]

@@ -10,7 +10,7 @@
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_zaizen.jpg"]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 （仮）[r]
 [名字] [名前]様[r]
