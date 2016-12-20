@@ -128,27 +128,24 @@
 [whosay name="四条母" color="#9B608B"]
 「[華衣]！ どこ行くの？！」[p]
 #
+;=========================================================
+[暗転２]
+[eval exp="f.kaogura!='off'"]
 ;【退場】四条
 [四条退場]
-;会話ウィンドウ消去
-[freeimage layer = 14]
-;機能ボタン消去
-[clearfix]
-[chara_mod name="bg" storage="toumei.gif" time=1000]
-*seen4
 ;☆障害の解決案、 第二ターニング・ポイント（主人公が解決策を見出す）
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[image layer=29 storage="bg/room_niwa.jpg"]
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
-[四条イベントシーン構築]
+;【背景】主人公部屋　夕方はないので昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[四条イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
 [eval exp="f.kaogura!='on'"]
+[暗転２終了]
+;===============================================================
+*seen4
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [wait time=10]
 [主人公困り]
