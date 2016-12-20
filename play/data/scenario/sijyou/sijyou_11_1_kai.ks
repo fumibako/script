@@ -235,6 +235,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 華織様は、目を伏せると、先日の華衣様とのやり取りについて語った。
 [cm]
 ;==============◆◆◆どんな風に恨んでいるの？？　今までどう行動してたの？◆◆◆◆====================
+[layopt layer=message0 visible=false]
 [暗転２]
 [主人公退場]
 ;【背景】四条家（玄関外）
@@ -242,6 +243,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=50]
 [イベントシーン構築ボタン無し版枠茶色]
 [暗転２終了]
+[layopt layer=message0 visible=true]
 [メッセージウィンドウ上ボタン表示]
 ;========================================================
 [whosay name="華織" color="olivedrab"]
@@ -255,6 +257,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [sp]全部ぜんぶ捨ててやる！」[p]
 ;【SE】紙を破く（ビリビリたくさん破き捨てる）
 [playse storage=paper_biribiri.ogg loop=false]
+[wait time=200]
 [四条目大]
 [whosay name="華織" color="olivedrab"]
 「！[sp][華衣]……」[p]
