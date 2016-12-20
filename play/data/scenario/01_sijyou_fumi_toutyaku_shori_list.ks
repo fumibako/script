@@ -47,6 +47,7 @@ f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(2);
 f.fumi_list_sijyou_location_fumi.push(2);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
+//↓配列情報(全手紙：その手紙ファイル中のラベル名)。変更してください
 f.fumi_list_sijyou_target.push("*sijyou_fumi3");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[3]=1;
