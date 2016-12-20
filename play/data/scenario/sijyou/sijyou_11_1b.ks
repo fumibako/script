@@ -188,7 +188,7 @@
 [wait time=10]
 ;たまに止まるのです
 ;【退場】四条
-[四条退場]
+[四条退場準備 storage="bg/sijyou_namigaura.jpg"]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
@@ -245,10 +245,14 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「一緒に行きましょう」[p]
+[暗転２]
 ;○主人公追う
 [主人公退場]
 ;【退場】四条
 [四条退場]
+;背景変更:黒茶・和紙風 bg_prologue.jpg
+[chara_mod name="bg" storage="bg/ bg_prologue.jpg" time=50]
+[暗転２終了]
 ;=================================================================================_
 *seen3
 [autosave]
@@ -342,15 +346,15 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [font color=white size=27]
-―― 華で綴られる想いが私たちの目の前に広がる。[r]
+―― 華で綴られる想いが私たちの目の前に広がる。[p]
 [r]
-まるで手紙が語りかけてくるようだった。[r]
+まるで手紙が語りかけてくるようだった。[p]
 [r]
 それに力を得たように、華織様が重い口を開き[r]
 すこしずつ[華衣]様の婚約者の方について語って[r]
-くださる。[r]
+くださる。[p]
 ;さった？
-私はその物語に引きこまれた。[p]
+私は、その物語に引きこまれた。[p]
 [resetfont]
 [wait time=10]
 ;裏で画面構成
@@ -536,6 +540,7 @@ $('.junbi_girl').remove();
 私も華織様の表情を見て、強く握り返した。[p]
 『また会う日を楽しみに』　『幸せな思い出』 [p]
 『忍耐』[p]
+[暗転２]
 ;【退場】四条
 [四条退場]
 #
