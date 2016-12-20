@@ -110,6 +110,7 @@
 [主人公目閉じ]
 [wait time=10]
 #
+磯野から、手紙を受けとると静かに読み始めた。[p]
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false ]
 *seen3
