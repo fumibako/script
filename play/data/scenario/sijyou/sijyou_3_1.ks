@@ -430,7 +430,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公ポーズ片手]
 「まぁ、お父様。 私を誰と、お比べなのですか？」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「こっちに来くれば、わかるだろう」[p]
+「こちらに来くれば、わかるだろう」[p]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
