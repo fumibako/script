@@ -1029,14 +1029,16 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いってみましょう！」[p]
 [四条口通常]
+[暗転２]
+[主人公退場]
 ;【退場】四条
 [四条退場]
 ;△ ○壺の柄と暗号を照らし合わせ、妹の場所を発見する
+[暗転]
 ;=================================================================================_
 *seen15
 ;↓実装時は後半へ飛ぶ
-;@jump storage="sijyou/sijyou_11_1b.ks"
-
+@jump storage="sijyou/sijyou_11_1b.ks" target=*first
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
