@@ -251,12 +251,18 @@
 ;【退場】四条
 [四条退場]
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
-[chara_mod name="bg" storage="bg/ bg_prologue.jpg" time=50]
-[暗転２終了]
-;=================================================================================_
+[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
+;==========================スクリプト・全画面表示の間に設定===============================
 *seen3
-[autosave]
-[テキスト全画面白文字]
+;【テキスト全画面】 裏で画面構成 ;[新聞] test_bg_sinbun.jpg bg_prologue_dark.jpg　bg_prologue.jpg
+;背景変更:黒茶・和紙風 bg_prologue.jpg
+[image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg " time=1000 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 ;場面転換 ネリネの庭がどういったものか絵によって変更
 # 
 ;ナレーター
@@ -264,31 +270,38 @@
 以前、華織様に尋ねた温室へとたどり着く。[p]
 その温室の中には、巨大なガラスと生い茂る緑に[r]
 守られるかのようにして、色とりどりのネリネが[r]
+[autosave]
 生育されていた。[p]
-;=============================
-[call target=*start storage="macro_tati_sijyou.ks"]
+[playse storage=shine.ogg loop=false ]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+;ｸﾘｯｸがみえる場合は追加↓
+[layopt layer=message0 visible=false]
 ;SEキラキラ？間
 ;[cancelskip] スキップ停止にしないとgitではフリーズするかも
-[playse storage=shine.ogg loop=false ]
+;=============================
+;裏で構築中
 [eval exp="f.haikei_credit='photo　by　＠名無し１'"]
-[layopt layer=fix visible=false]
 [image layer=29 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50 visible=true]
 [wait time=5]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
-;=============================
 ;婚約者の花園
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50]
-[四条イベントシーン構築]
+[call target=*start storage="macro_tati_sijyou.ks"]
+;=============================
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 ;=============================
-[freeimage layer=29 time=800]
-[layopt layer=fix visible=true]
+[イベントシーン構築ボタン無し版]
+[暗転２終了]
+;ｸﾘｯｸがみえる場合は追加↓
+[layopt layer=message0 visible=true]
 ;=============================
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 [whosay name="華衣" color=%mp.color]
 「ここって兄さんが言ってた場所」[p]
 ;○主人公が花言葉を教えてくれる
@@ -322,10 +335,9 @@
 それは、『忍耐』 [p]
 けれど、それは十分だと思い、私は胸の内にしまっておいた。[p]
 ほんの少しですが、想うゆえに耐え忍ぶ気持ちが、[r]
-私にもわかったから－－[p]
+私にもわかったから――[p]
 #
-;ナレーター
-1人、ネリネの庭で咽び泣く少年がいた。[r]
+[ruby text=ひと]一[ruby text=り]人、ネリネの庭で咽び泣く少年がいた。[r]
 世界でたった1つの想いを綴った手紙に[p]
 #手紙
 『私が、消えてしまう前に、咲いて誇る華を綴ります』[p]
@@ -540,9 +552,12 @@ $('.junbi_girl').remove();
 私も華織様の表情を見て、強く握り返した。[p]
 『また会う日を楽しみに』　『幸せな思い出』 [p]
 『忍耐』[p]
+;[暗転２ storage="ﾈﾘﾈの写真画像"]
 [暗転２]
 ;【退場】四条
 [四条退場]
+[暗転]
+;[chara_mod name="bg" storage="ﾈﾘﾈの写真画像"]
 #
 ;=================================================================================_
 *seen6
