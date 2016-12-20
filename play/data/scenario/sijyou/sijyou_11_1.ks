@@ -577,6 +577,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;=====================シーン・パラメータ============================================================_
 *seen8
 #
+;【背景】土蔵の中
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_dozou.jpg"]
+;[image layer=13 x=1 y=1 zindex=0 storage="bg/B4nFWraU42/sijyou_dozou.jpg" time=50]
+
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 私達は、埃に塗れながら大切な荷物を[ruby text=まと]纏めた。[p]
 ;なんか陰口みたいのでうーん
 [whosay name="華織" color="olivedrab"]
