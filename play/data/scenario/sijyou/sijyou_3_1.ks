@@ -1019,9 +1019,16 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 私は、お二人の笑顔を見ながらひっそりと考えた。[p]
 ;長いので分けます　
 ;これだけでもイベントになるように絞め言葉を。適当。
+[暗転２]
 [主人公退場]
+;【退場】四条
 [四条退場]
-;@jump storage=sijyou/sijyou_3_1b.ks
+[fadeoutbgm time=3000]
+;背景変更:黒茶・和紙風 bg_prologue.jpg
+[chara_mod name="bg" storage="bg/ bg_prologue.jpg"]
+[image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg" time=1000 visible=true]
+@jump storage=sijyou/sijyou_3_1b.ks
+
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
