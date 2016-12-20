@@ -17,11 +17,13 @@
 ;			[eval exp="f.sijyou_fumi_toutyakumachi_week=0"]
 ;			@jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
 			
-;◆『趣味について（お見合い前f.sijyou_omiai==0)』の手紙を送った場合、好感度に応じた期間後に返事（お見合い前）がある
+;◆『趣味について』の話題で手紙を送った場合かつ「趣味について（お見合い前）」の手紙をまだ貰っていない場合(f.fumi_toutyaku_sijyou[2]==0)に、好感度に応じた期間後に返事（お見合い前）がある
 [if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[2]==0"]
-	[eval exp="f.test='手紙到着「趣味について」'"]
+;↓手紙が届いている場合のメッセージ「○○様からお手紙が届いております」の○○様の部分
 	[eval exp="f.fumi_toutyaku_oaite[0]='四条様'"]
+;↓手紙が届いているかどうか、届いた手紙は何通かを見るための変数
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+;↓四条からの手紙到着待ち週数をリセット
 	[eval exp="f.sijyou_fumi_toutyakumachi_week=0"]
 	@jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
 [endif]
