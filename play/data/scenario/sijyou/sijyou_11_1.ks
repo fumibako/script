@@ -803,12 +803,16 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「そうだね。[r]
 [sp]明らかに関係性のないものは優先順位を下げておこう」[p]
+[暗転２]
 #
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryoutei.jpg" time=800]
 ;【退場】四条
 [四条退場]
+;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryoutei.jpg" time=100]
+[暗転２終了]
 #
 数分後……[p]
+;料亭
 ;○主人公が可愛い織柄の表紙の手記を見つける
 [主人公目パチ1回]
 [wait time=10]
