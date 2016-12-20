@@ -191,22 +191,22 @@
 [四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「そうだ。[r]
-[sp]せっかく、お義父さまのお許しを得たのだから、お出かけをしましょう[r]
-[sp]か」[p]
+[sp]せっかく、お義父さまのお許しを得たのだから、お出かけを[r]
+[sp]しましょうか」[p]
 #
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 [wait time=10]
 「はい！」[p]
+[暗転２]
 [主人公退場]
 ;【退場】四条
 [四条退場]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 ;=================================================================================_
 *seen3
-[autosave]
-#
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[暗転２終了]
 [iscript]
 $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
 [endscript]
@@ -214,10 +214,10 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 [イベントシーン構築枠茶色]
 #
 僕達は、賑わう町を並んで歩いていく。[p]
-
+[autosave]
 #
-人々は新しい季節と出会いにむけて、ショーウィンドウの前で何やら楽しそうに話をしている。[p]
-－－きっと誰かに新年の贈り物をするのだろう[p]
+人々は新しい季節と出会いにむけて、ショーウィンドウの前で楽しそうに話をしている。[p]
+―― きっと誰かに新年の贈り物をするのだろう[p]
 [whosay name="華織" color="olivedrab"]
 (あぁ、もっと[名前]さんに何かをしてあげたいな )[p]
 #
