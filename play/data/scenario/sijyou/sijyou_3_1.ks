@@ -836,21 +836,18 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (けど、華織様は、これからは、きっと大丈夫ですね)[p]
 [主人公目閉]
+[暗転２]
+[主人公通常]
 [四条退場]
-;～～～～～～～～～～シーン・旦那になるものとしての男、四条華織と父の会話～～～～～～～～～～～～
-;=================================================================================_
 *seen3
-[autosave]
-#
-[er]
-;暗転
-[chara_mod name="bg" storage="toumei.gif"]
-;転
-壇上での演説後、華織様は、祖母様と祖父様とともに挨拶に来られた。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[主人公通常]
+[暗転２終了]
+;～～～～～～～～～～シーン・旦那になるものとしての男、四条華織と父の会話～～～～～～～～～～～～
+;=================================================================================_
+壇上での演説後、華織様は、祖母様と祖父様とともに挨拶に来られた。[p]
+[autosave]
 [四条ベース羽織]
 [四条真剣]
 ;===四条登場===
