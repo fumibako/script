@@ -357,7 +357,7 @@
 ;一方的だなぁ～感じの良いBGM鳴っていれば気にならない？
 華織様のいつもの美しい細い筆跡は、慌てて書かれたような、墨跡が残されている。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様、お忙しい中、いそいでお誘いしてくれたのですね)[p]
+(華織様、お忙しい中、急いでお誘いしてくれたのですね)[p]
 #
 [主人公目閉]
 華織様は、私のために兄のような大人らしい立ち振る舞いをして下さる。[r]
@@ -374,6 +374,7 @@
 ;暖かい陽気で、まだ少し眠いよ！ということでもあり。
 ;【SE】メジロ（ピィピュイ）
 [playse storage=tori_mejiro.ogg loop=false ]
+[wait time=1000]
 [chara_mod name="bg" storage="toumei.gif" time=10]
 ;～～～～～～～～～～～～～～～～～～前章シーンおわり～～～～～～～～～～～～～～～～
 [layopt layer=fix visible=false]
