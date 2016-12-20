@@ -969,6 +969,12 @@ f.sijyou_fumi_toutyakumachi_michi = f.sijyou_fumi_toutyakumachi_michi - 1;
 if (f.sijyou_fumi_toutyakumachi_henka > 0){
 f.sijyou_fumi_toutyakumachi_henka = f.sijyou_fumi_toutyakumachi_henka - 1;
 }
+if (f.sijyou_fumi_toutyakumachi_dokusho > 0){
+f.sijyou_fumi_toutyakumachi_dokusho = f.sijyou_fumi_toutyakumachi_dokusho - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_sports > 0){
+f.sijyou_fumi_toutyakumachi_sports = f.sijyou_fumi_toutyakumachi_sports - 1;
+}
 
 [endscript]
 

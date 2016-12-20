@@ -77,16 +77,33 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == 'さつきの話題'){ //「さ�
 	f.sijyou_fumi_toutyakumachi_satuki=0;//季節ものの話題なので翌週届く
 }
 
+
+//◆◆話題への返事待ちカウントスタート処理：発生時期の限られる話題で手紙を送った場合【季節にこだわりのない話題】
+
 if(f.wadai_list_hairetsu[f.wadai_number][0] == '読書の話題'){ //「読書の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
-	f.sijyou_fumi_toutyakumachi_dokusho=0;//季節ものの話題なので翌週届く
+	if(f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
+		f.sijyou_fumi_toutyakumachi_dokusho=f.sijyou_fumi_toutyakumachi;
+	}
+	if(f.para_sijyou_koukando >= parseInt(sf.sijyou['koukando_a'])){
+		f.sijyou_fumi_toutyakumachi_dokusho=f.sijyou_fumi_toutyakumachi - 1;
+	}
+	if(f.para_sijyou_koukando > parseInt(sf.sijyou['koukando_b'])){
+		f.sijyou_fumi_toutyakumachi_dokusho=f.sijyou_fumi_toutyakumachi - 2;
+	}
 }
 
 if(f.wadai_list_hairetsu[f.wadai_number][0] == 'スポーツの話題'){ //「スポーツの話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
-	f.sijyou_fumi_toutyakumachi_sports=0;//季節ものの話題なので翌週届く
+	if(f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
+		f.sijyou_fumi_toutyakumachi_sports=f.sijyou_fumi_toutyakumachi;
+	}
+	if(f.para_sijyou_koukando >= parseInt(sf.sijyou['koukando_a'])){
+		f.sijyou_fumi_toutyakumachi_sports=f.sijyou_fumi_toutyakumachi - 1;
+	}
+	if(f.para_sijyou_koukando > parseInt(sf.sijyou['koukando_b'])){
+		f.sijyou_fumi_toutyakumachi_sports=f.sijyou_fumi_toutyakumachi - 2;
+	}
 }
 
-
-//◆◆話題への返事待ちカウントスタート処理：発生時期の限られる話題で手紙を送った場合【季節にこだわりのない話題】
 if(f.wadai_list_hairetsu[f.wadai_number][0] == '友人の話題'){ //「友人の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	if(f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
 		f.sijyou_fumi_toutyakumachi_yuujin=f.sijyou_fumi_toutyakumachi;
@@ -123,7 +140,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '観劇の話題'){ //「観劇�
 	}
 }
 
-if(f.wadai_list_hairetsu[f.wadai_number][0] == '猫の話題'){ //「友人の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+if(f.wadai_list_hairetsu[f.wadai_number][0] == '猫の話題'){ //「猫の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	if(f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
 		f.sijyou_fumi_toutyakumachi_neko=f.sijyou_fumi_toutyakumachi;
 	}
