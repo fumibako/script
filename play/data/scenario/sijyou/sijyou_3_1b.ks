@@ -108,7 +108,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 [endif]
-[四条退場]
+[四条退場準備 storage="bg/bg_ryoutei.jpg" time=600]
 ;～～～～～～～～～～シーン晴れやかの中、切ない～～～～～～～～～～～～～～～～～～～～
 
 *common1
@@ -117,9 +117,9 @@
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;「～ね」が続いておかしい
+[主人公通常]
 ;【SE】人々のざわめき（ザワザワ…宴会）
 [playse storage=zawa_enkai.ogg loop=false ]
-[主人公通常]
 #
 宴が半ばに入る頃、
 お父様方は、酔い冷めならぬ表情で、これから訪れるであろう幸せな悩みについて、花咲かす。[p]
@@ -253,8 +253,7 @@
 ;宴会または料亭席全体;宴会会場全体
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-;【SE】人々のざわめき（ザワザワ…宴会）
-[playse storage=zawa_enkai.ogg loop=false ]
+
 #
 お兄様は、安堵したかのように微笑むと華織様をみつめた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -294,6 +293,8 @@
 ;宴会または料亭席全体;宴会会場全体
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+;【SE】人々のざわめき（ザワザワ…宴会）
+[playse storage=zawa_enkai.ogg loop=false ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私は、お兄様が華織様を連れてこられて出会った気がしますが……）[p]
 ;兄、主人公の視線に気づく
@@ -376,8 +377,7 @@
 [主人公ポーズ片手]
 [whosay name="四条父" color="#9B608B"]
 「お前達も、来てくれたか！」[p]
-;【SE】人々のざわめき（ザワザワ…宴会）
-[playse storage=zawa_enkai.ogg loop=false ]
+
 [主人公横目]
 [主人公口通常]
 [whosay name="四条一華" color=%mp.color]
@@ -420,6 +420,8 @@
 #
 そうして、華織様のおかげで席は埋まり、本来の四条家と[名字]家の家族が[r]
 集まった。[p]
+;【SE】人々のざわめき（ザワザワ…宴会）
+[playse storage=zawa_enkai.ogg loop=false ]
 ;家族についての手紙を読んでいる
 [主人公通常]
 [主人公ポーズ指]
@@ -532,7 +534,8 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 （[華衣]さん……)[p]
-慣れない場と、ばつの悪さで顔を下げていると言った様子であった。[p]
+#
+華衣さんは、慣れない場と、ばつの悪さで顔を下げていると言った様子であった。[p]
 [whosay name="四条 華衣" color=%mp.color]
 「こんにちは、また会ったな……」[p]
 [四条微笑み]
@@ -551,7 +554,7 @@
 *seen4
 [autosave]
 #
-うなづくように顔を下げると、兄に向き直し、驚くほど丁寧に挨拶を[r]
+華衣さんは、頷くように顔を下げると、兄に向き直し、驚くほど丁寧に挨拶を[r]
 交わす。[p]
 [主人公横目]
 [主人公ポーズ指]
@@ -875,7 +878,7 @@
 [主人公ポーズ指]
 「はい」[p]
 [主人公退場]
-[四条退場]
+[四条退場 storage="bg/bg_ryouotei_yuu.jpg" time=600]
 ;=================================================================================_
 *seen8
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
@@ -1078,14 +1081,12 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 ;エピローグの回収↑
 ;いい感じになって見つめ合う二人。
 ;沈丁花
+[暗転２ storage=bg/B4nFWraU42/jincyou_ge.jpg]
 [四条退場]
 [主人公退場]
-#
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif" time=0]
-[chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=2000 wait=false]
+[chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=100 wait=false]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-
+[暗転２終了]
 #
 華織様の言葉とともに[r]
 永遠と不滅の花言葉をもつ沈丁花が、風に乗って甘く香る[p]
@@ -1239,7 +1240,8 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [whosay name=文矢 color="#538a8a"]
 「そうだなぁ……」[p]
 ;子供が何人がいいとか、奥さんのプレゼントとか？
-[四条退場]
+
+[四条退場準備 storage="bg/bg_enkaijou_rouka.jpg" time=600]
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
