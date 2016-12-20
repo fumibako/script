@@ -23,8 +23,12 @@
 #
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+―― 四条邸にて[p]
+[whosay name="女中"]
+「お帰りなさいませ。華織様」[p]
+
 [whosay name="華織" color="olivedrab"]
-「[華衣]は、部屋にいますか？」[p]
+「ただいま。 [華衣]は、部屋にいますか？」[p]
 
 [whosay name="女中"]
 「は、はい。[sp]先ほどお帰り遊ばされました」[p]
@@ -42,7 +46,9 @@
 [sp]こっちが辛いのにお前は幸せになろうとするんだ？」[p]
 ;モヤモヤの原因
 [whosay name="華織" color="olivedrab"]
-「僕が、不幸せになったら、君は幸せになれるかい？」[p]
+「僕が不幸せになったら、君は幸せになれるかい？」[p]
+#
+僕は、焦燥感釣られ、心の片隅に残っていた解決策を口にしてしまった。[p]
 [whosay name="四条 華衣" color=%mp.color]
 「！……」[p]
 #
@@ -50,6 +56,9 @@
 [whosay name="四条 華衣" color=%mp.color]
 「……そんなの……どう[ruby text=あ]足[ruby text=が]掻いたって無駄だ。[r]
 [sp]あの幸せはもう戻ってこない」[p]
+[whosay name="華織" color="olivedrab"]
+（こんなこと聞くべきことじゃないって分かっている。[r]
+[sp]けれど……）[p]
 [whosay name="華織" color="olivedrab"]
 「[華衣]、聞いてくれ。[r]
 [sp]彼女が残した言葉があるんだ、それから彼女は……」[p]
@@ -135,6 +144,7 @@
 [主人公通常]
 [freeimage layer=29]
 [四条ボタン表示]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様ならきっと大丈夫よね)[p]
 [主人公憂い]
