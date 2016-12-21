@@ -30,6 +30,9 @@
 [er]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、四条様からお手紙が届いております」[p]
+;磯野は男という再度の説明
+#
+部屋の障子から、初老の家令の声がした。[p]
 [autosave]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
@@ -42,9 +45,15 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「！　ありがとう 返事を書いたら呼びます。下がって頂戴」[p]
+「！　ありがとう磯野。[r]
+[sp]返事を書いたら呼びます。下がって頂戴」[p]
+#
+私は、毅然を繕いつつも、彼の手にした手紙を素早く受け取った。[p]
 [whosay name="磯野" color="dimgray"]
-「はい」[p]
+「はい。　それでは失礼します」[p]
+#
+;最低限の返事にも関わらず、礼節的に部屋から下がる
+彼を見送った後、私は頂いた手紙を高鳴る気持ちのまま開いた。[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目閉じ]
@@ -62,7 +71,7 @@
 
 [手紙四条読了 fumi_number=51]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(私も四条様のことを知りたいです)[p]
+(私も、四条様のことを知りたいです)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公目を開く]
@@ -71,6 +80,7 @@
 [主人公口ほほえみ]
 [p]
 #
+私は、これから始まる恋の予感に夢を含ませた。[p]
 ;¥¥¥¥¥¥¥¥¥¥手紙イベント¥¥¥¥¥¥
 ;機能ボタン消去
 [clearfix]
