@@ -18,10 +18,9 @@
 ;最大全角３１文字×４行
 ;=====================ここからお芝居の幕引きです===============================
 *scene1
-;【立ち絵】主人公：困り
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公憂い]
-（藤枝様の事が気になるわ。[sp]こんな気持ちでは、誰ともお会いできない）[p]
+#
+お手紙の相手と会う事を進められて思い浮かんだのは[r]
+一度だけ拝見した藤枝様の顔だった[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
@@ -29,78 +28,84 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
-;【立ち絵】主人公：決意
-[主人公目閉じ]
-（今、文通している相手の誰とも、婚約できなくなっても構わない……）[p]
-#
-私は覚悟を決め、スッと姿勢を正して息を整えた。[p]
+;【立ち絵】主人公：困り 
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+[主人公憂い] 
+[主人公目閉] 
+（藤枝様の事が、どうしても気になってしまう……)[p]  
 
-;【立ち絵】主人公：決意
-[主人公通常]
-[主人公口開]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「お父様、私はまだ学ぶべきことが沢山あります。[r]
-[sp]私には、まだ結婚は考えられません」[p]
+[主人公] 
+（こんな気持ちを抱えたまま、他の方達にお会いするのは失礼だわ）[p] 
 
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-「[名前]にはまだ早かったか……。[r]
-[sp]そういえば最近はお[ruby text=こと]箏のお稽古に熱心なようだね」[p]
-*scene2
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-;【立ち絵】主人公：通常
-[主人公通常]
-[主人公口通常]
-「ええ！　お琴を極めたいと思っております」[p]
+# 
+私は覚悟を決め、スッと姿勢を正して息を整えた。[p] 
 
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-「それは良いことだな。[r]
-[sp]お稽古を頑張るなら、また良縁も来るだろう。 精進しなさい」[p]
+;【立ち絵】主人公：決意 
+[主人公通常] 
+[主人公口開] 
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+「お父様、結婚は考えられません！[r]
+[sp]私にはまだ学ぶべきことがあります」[p] 
 
-;【立ち絵】主人公：笑顔
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ほほえみ]
-「ありがとうございますお父様！」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"] 
+「[名前]にはまだ早かったか……。[r] 
+[sp]そういえば最近はお筝のお稽古に熱心なようだね」[p] 
 
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-「私たちは[名前]に構ってやれてないし[r]
-[sp][名前]にも手紙を交わしたい年頃で、若いうちの方が良縁に[r]
-[sp]恵まれると思ったが、[名前]の気持ちを尊重しよう」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+;【立ち絵】主人公：通常 
+[主人公通常] 
+[主人公口通常] 
+「ええ！　お筝を極めたいと思っております」[p] 
 
-*scene3
-[主人公目閉じ]
-[主人公口ほほえみ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい。精一杯努力いたします」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"] 
+「それは良いことだな。お稽古を頑張るなら、[r] 
+[sp]また良縁に恵まれるだろう。[sp]精進しなさい」[p] 
 
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-「お稽古が楽しいのはいい事だ今を大切にしなさい。[r]
-[sp]だが今、[ruby text=か]交わしている方の都合もあるので、今交わしている、[r]
-[sp]お手紙の相手とはもう縁はないが[名前]は、それでもいいのかね？」[p]
-
-;【立ち絵】主人公：目閉じ思案
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公目閉じ]
-[主人公口通常]
-（おそらくこのまま結婚したら後悔するわ。[r]
-[sp]私は誰よりも、藤枝様の事を想っている）[p]
-
-;【立ち絵】主人公：決意
-[主人公通常]
-「はい。今はお稽古を頑張りたいと思います」[p]
-
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-「わかった」[p]
+;【立ち絵】主人公：笑顔 
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+[主人公ほほえみ] 
+「ありがとうございますお父様！」[p] 
 
 #
-話が終わり、お父様を見送るために立ち上がる。[p]
+お父様は、憂いを帯びた目で、再び私を見つめた。[p]
+
+[whosay name=&sf.father_name color="DarkSlateBlue"] 
+「[名前]。本当にいいのかね？[r]
+[sp]３人ともよい青年だし、惜しいと思っている」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「お休み、[名前]」[p]
+「外交ひとつとってしても、変革の時代だ。
+今後も私達は、忙しいあまり[名前]に構ってやれないかもしれない」[p]
 
-;【立ち絵】主人公：ほほえみ
-[主人公口ほほえみ]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「文矢も家から出てしまった今、お前は、また家で一人になってしまう。[r]
+私は、それだけが気がかりで仕方がない」[p]
+
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「おやすみなさい」[p]
+「お父様……磯野もいますし、私は大丈夫ですわ」[p]
+
+「それに、これが私の望んだことなのです……」[p]
+
+;【立ち絵】主人公：目閉じ思案 
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+[主人公目閉じ] 
+[主人公口通常] 
+（……たぶん、このまま結婚してしまったら、後悔してしまう)[p]
+
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「[名前]、[r]
+そこまで言うのなら、お前の気持ちを尊重しよう」[p]
+
+*scene3 
+
+[主人公目閉じ] 
+[主人公口ほほえみ] 
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+「はい。精一杯努力いたします」[p] 
+# 
+
+私は、藤枝様の事が気になってしまう想いを胸に秘めつつも、自身を律した。[p]
 
 ;【SE】襖を閉じる（ゆっくり）
 ;【SE】落ち着いた足音（フェードアウト）
