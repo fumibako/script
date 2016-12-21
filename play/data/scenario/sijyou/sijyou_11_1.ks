@@ -940,7 +940,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「華織様、きっと大丈夫です」[p]
 [四条通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「私たち２人なら、信じて乗り越えられます」[p]
+「私たち[ruby text=ふた]二[ruby text=り]人なら、信じて乗り越えられます」[p]
 [四条口微笑み]
 [四条頬染め]
 [whosay name="華織" color="olivedrab"]
