@@ -188,7 +188,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口通常]
 「はい……」[p]
-[四条退場]
+[四条退場準備 storage="bg/bg_ryoutei.jpg"]
 ;退場するのは静かに話をきいたにつなげるため
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
