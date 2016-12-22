@@ -660,7 +660,7 @@
 *sijyou_sigoto3|(お見合い後3)
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
-『仕事について』(お見合い後2)
+『仕事について』(お見合い後3)
 [p]
 [endif]
 
