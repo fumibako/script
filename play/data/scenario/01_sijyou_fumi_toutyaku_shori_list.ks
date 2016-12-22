@@ -326,18 +326,18 @@ f.fumi_toutyaku_sijyou[18]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_19
-;友人(お見合い前)19sijyou_yujin_1
+;友人(お見合い前)19　sijyou_yujin_1
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「19」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「19」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「友人」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「友人」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi19");
+f.fumi_list_all_target.push("*sijyou_yujin_1");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(18);
 f.fumi_list_sijyou_location_fumi.push(18);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi19");
+f.fumi_list_sijyou_target.push("*sijyou_yujin_1");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[19]=1;
 [endscript]
@@ -346,16 +346,16 @@ f.fumi_toutyaku_sijyou[19]=1;
 *fumi_toutyaku_sijyou_20
 ;友人(お見合い後)20 sijyou_yujin_2
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「20」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「20」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「友人」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「友人」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi20");
+f.fumi_list_all_target.push("*sijyou_yujin_2");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(19);
 f.fumi_list_sijyou_location_fumi.push(19);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi20");
+f.fumi_list_sijyou_target.push("*sijyou_yujin_2");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[20]=1;
 [endscript]
