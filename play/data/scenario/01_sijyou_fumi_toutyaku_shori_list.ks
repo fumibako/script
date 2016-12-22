@@ -146,6 +146,7 @@ f.fumi_toutyaku_sijyou[8]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_9
+;『家族・あなたと』(イベント6後) sijyou_kazoku_3
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「9」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「9」";
@@ -163,6 +164,7 @@ f.fumi_toutyaku_sijyou[9]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_10
+;『将来について』(お見合い前)10 sijyou_syourai1
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「10」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「10」";
@@ -180,6 +182,7 @@ f.fumi_toutyaku_sijyou[10]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_11
+;『将来について』(お見合い前2)11 sijyou_syourai1_
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「11」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「11」";
@@ -197,6 +200,7 @@ f.fumi_toutyaku_sijyou[11]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_12
+;『将来について』(お見合い後)12 sijyou_syourai2
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「12」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「12」";
@@ -214,6 +218,7 @@ f.fumi_toutyaku_sijyou[12]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_13
+;『将来について』(お見合い後, 事件解決後 )13 sijyou_syourai2_1
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「13」";
@@ -231,6 +236,7 @@ f.fumi_toutyaku_sijyou[13]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_14
+;『仕事について』(お見合い前)14 sijyou_sigoto1
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「14」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「14」";
@@ -248,6 +254,7 @@ f.fumi_toutyaku_sijyou[14]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_15
+;『仕事について』(お見合い後)15 sijyou_sigoto2
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「15」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「15」";
@@ -265,6 +272,7 @@ f.fumi_toutyaku_sijyou[15]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_16
+;『仕事について』(お見合い後2)16 sijyou_sigoto2_1
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「16」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「16」";
@@ -282,6 +290,7 @@ f.fumi_toutyaku_sijyou[16]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_17
+;『仕事について』(お見合い後3)17　 事件解決後 sijyou_sigoto3
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「17」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「17」";
@@ -299,6 +308,7 @@ f.fumi_toutyaku_sijyou[17]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_18
+;『仕事について』(お見合い後4)18　 事件解決後二月二日以降 sijyou_sigoto4
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「18」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「18」";
@@ -316,6 +326,7 @@ f.fumi_toutyaku_sijyou[18]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_19
+;友人(お見合い前)19sijyou_yujin_1
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「19」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「19」";
@@ -333,6 +344,7 @@ f.fumi_toutyaku_sijyou[19]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_20
+;友人(お見合い後)20 sijyou_yujin_2
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「20」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「20」";
