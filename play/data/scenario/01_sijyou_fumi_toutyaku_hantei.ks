@@ -86,8 +86,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『『将来について(お見合い後,事件解決後)』
-[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==1 && f.okeiko_month=>12 && f.fumi_toutyaku_sijyou[13]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い後,事件解決後)』
+[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==1 && f.okeiko_month>11 && f.fumi_toutyaku_sijyou[13]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
 [endif]
@@ -111,7 +111,7 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『仕事について』(お見合い後3)』事件解決後
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month=>12 && f.fumi_toutyaku_sijyou[17]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month>11 && f.fumi_toutyaku_sijyou[17]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
 [endif]
