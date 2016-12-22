@@ -1024,7 +1024,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
 [chara_mod name="bg" storage="bg/ bg_prologue.jpg"]
 [image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg" time=1000 visible=true]
-@jump storage=sijyou/sijyou_3_1b.ks
+@jump storage=sijyou/sijyou_3_1b.ks target=first
 
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
