@@ -418,7 +418,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「あれは何をなさっているのでしょうか？」[p]
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
-「資産の差し押さえだね [r]
+「資産の差し押さえだね。 [r]
 [sp][華衣]の婚約者は小さな公家の出なんだ」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
@@ -873,7 +873,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「そうですね」[p]
 [四条目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(1ページ目にわざわざかいてあるようですし……)[p]
+([ruby text=いち]一ページ目にわざわざかいてあるようですし……)[p]
+;横棒に空読みするためruby
 [fadeoutbgm time=3000]
 ;【SE】紙に触れる（パラリ）　紙がおちる
 [playse storage=paper_open.ogg loop=false ]
