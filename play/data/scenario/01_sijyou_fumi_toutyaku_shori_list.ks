@@ -36,20 +36,20 @@ f.fumi_toutyaku_sijyou[2]=1;
 ;趣味について(お見合い後)3 sijyou_syumi_2
 [iscript]
 //↓「文箱」クリック時に表示される一覧での手紙タイトル(差出人名入り)。変更してください
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「3」　四条 華織";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「趣味について」　四条 華織";
 //↓「情報」(攻略対象情報)クリック時に表示される一覧での手紙タイトル(差出人名無し)。変更してください
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「3」";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「趣味について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 //↓配列情報(全手紙：その手紙が記載されたファイル名)。必要があれば(sijyou_fumi_wadai.ksなど)変更してください
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 //↓配列情報(全手紙：その手紙ファイル中のラベル名)。変更してください
-f.fumi_list_all_target.push("*sijyou_fumi3");
+f.fumi_list_all_target.push("*sijyou_syumi_2");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(2);
 f.fumi_list_sijyou_location_fumi.push(2);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 //↓配列情報(全手紙：その手紙ファイル中のラベル名)。変更してください
-f.fumi_list_sijyou_target.push("*sijyou_fumi3");
+f.fumi_list_sijyou_target.push("*sijyou_syumi_2");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[3]=1;
 [endscript]
@@ -58,16 +58,16 @@ f.fumi_toutyaku_sijyou[3]=1;
 *fumi_toutyaku_sijyou_4
 ;家族について(お見合い前)4 sijyou_kazoku_1
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「4」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「4」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「家族について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi4");
+f.fumi_list_all_target.push("*sijyou_kazoku_1");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(3);
 f.fumi_list_sijyou_location_fumi.push(3);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi4");
+f.fumi_list_sijyou_target.push("*sijyou_kazoku_1");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[4]=1;
 [endscript]
@@ -76,16 +76,16 @@ f.fumi_toutyaku_sijyou[4]=1;
 *fumi_toutyaku_sijyou_5
 ;家族(お見合い後)5 sijyou_kazoku_2
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「5」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「5」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「家族について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi5");
+f.fumi_list_all_target.push("*sijyou_kazoku_2");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(4);
 f.fumi_list_sijyou_location_fumi.push(4);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi5");
+f.fumi_list_sijyou_target.push("*sijyou_kazoku_2");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[5]=1;
 [endscript]
@@ -94,16 +94,16 @@ f.fumi_toutyaku_sijyou[5]=1;
 *fumi_toutyaku_sijyou_6
 ;家族・祖父母両親(お見合い後・事件解決後)6 sijyou_kazoku_2_1
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「6」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「6」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について・祖父母両親」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「家族について・祖父母両親」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi6");
+f.fumi_list_all_target.push("*sijyou_kazoku_2_1");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(5);
 f.fumi_list_sijyou_location_fumi.push(5);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi6");
+f.fumi_list_sijyou_target.push("*sijyou_kazoku_2_1");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[6]=1;
 [endscript]
@@ -112,16 +112,16 @@ f.fumi_toutyaku_sijyou[6]=1;
 *fumi_toutyaku_sijyou_7
 ;『家族について 兄弟』 (お見合い後・事件解決後2)7 sijyou_kazoku_2_2
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「7」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「7」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について 兄弟」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「家族について 兄弟」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi7");
+f.fumi_list_all_target.push("*sijyou_kazoku_2_2");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(6);
 f.fumi_list_sijyou_location_fumi.push(6);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi7");
+f.fumi_list_sijyou_target.push("*sijyou_kazoku_2_2");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[7]=1;
 [endscript]
@@ -130,16 +130,16 @@ f.fumi_toutyaku_sijyou[7]=1;
 *fumi_toutyaku_sijyou_8
 ;『家族について 弟と妹』 (お見合い後・事件解決後2)8 sijyou_kazoku_2_3
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「8」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「8」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について 弟と妹」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「家族について 弟と妹」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi8");
+f.fumi_list_all_target.push("*sijyou_kazoku_2_3");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(7);
 f.fumi_list_sijyou_location_fumi.push(7);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi8");
+f.fumi_list_sijyou_target.push("*sijyou_kazoku_2_3");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[8]=1;
 [endscript]
@@ -148,16 +148,16 @@ f.fumi_toutyaku_sijyou[8]=1;
 *fumi_toutyaku_sijyou_9
 ;『家族・あなたと』(イベント6後) sijyou_kazoku_3
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「9」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「9」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族・あなたと」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「家族・あなたと」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi9");
+f.fumi_list_all_target.push("*sijyou_kazoku_3");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(8);
 f.fumi_list_sijyou_location_fumi.push(8);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi9");
+f.fumi_list_sijyou_target.push("*sijyou_kazoku_3");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[9]=1;
 [endscript]
@@ -166,34 +166,34 @@ f.fumi_toutyaku_sijyou[9]=1;
 *fumi_toutyaku_sijyou_10
 ;『将来について』(お見合い前)10 sijyou_syourai1
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「10」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「10」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「将来について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi10");
+f.fumi_list_all_target.push("*sijyou_syourai1");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(9);
 f.fumi_list_sijyou_location_fumi.push(9);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi10");
+f.fumi_list_sijyou_target.push("*sijyou_syourai1");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[10]=1;
 [endscript]
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_11
-;『将来について』(お見合い前2)11 sijyou_syourai1_
+;『将来について』(お見合い前2)11 sijyou_syourai1_2
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「11」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「11」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「将来について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi11");
+f.fumi_list_all_target.push("*sijyou_syourai1_21");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(10);
 f.fumi_list_sijyou_location_fumi.push(10);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi11");
+f.fumi_list_sijyou_target.push("*sijyou_syourai1_2");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[11]=1;
 [endscript]
@@ -202,16 +202,16 @@ f.fumi_toutyaku_sijyou[11]=1;
 *fumi_toutyaku_sijyou_12
 ;『将来について』(お見合い後)12 sijyou_syourai2
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「12」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「12」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「将来について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi12");
+f.fumi_list_all_target.push("*sijyou_syourai2");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(11);
 f.fumi_list_sijyou_location_fumi.push(11);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi12");
+f.fumi_list_sijyou_target.push("*sijyou_syourai2");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[12]=1;
 [endscript]
@@ -220,16 +220,16 @@ f.fumi_toutyaku_sijyou[12]=1;
 *fumi_toutyaku_sijyou_13
 ;『将来について』(お見合い後, 事件解決後 )13 sijyou_syourai2_1
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「将来について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi13");
+f.fumi_list_all_target.push("*sijyou_syourai2_1");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(12);
 f.fumi_list_sijyou_location_fumi.push(12);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi13");
+f.fumi_list_sijyou_target.push("*sijyou_syourai2_1");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[13]=1;
 [endscript]
@@ -238,16 +238,16 @@ f.fumi_toutyaku_sijyou[13]=1;
 *fumi_toutyaku_sijyou_14
 ;『仕事について』(お見合い前)14 sijyou_sigoto1
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「14」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「14」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「仕事について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「仕事について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi14");
+f.fumi_list_all_target.push("*sijyou_sigoto1");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(13);
 f.fumi_list_sijyou_location_fumi.push(13);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi14");
+f.fumi_list_sijyou_target.push("*sijyou_sigoto1");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[14]=1;
 [endscript]
@@ -256,16 +256,16 @@ f.fumi_toutyaku_sijyou[14]=1;
 *fumi_toutyaku_sijyou_15
 ;『仕事について』(お見合い後)15 sijyou_sigoto2
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「15」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「15」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「仕事について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「仕事について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi15");
+f.fumi_list_all_target.push("*sijyou_sigoto2");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(14);
 f.fumi_list_sijyou_location_fumi.push(14);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi15");
+f.fumi_list_sijyou_target.push("*sijyou_sigoto2");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[15]=1;
 [endscript]
@@ -274,16 +274,16 @@ f.fumi_toutyaku_sijyou[15]=1;
 *fumi_toutyaku_sijyou_16
 ;『仕事について』(お見合い後2)16 sijyou_sigoto2_1
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「16」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「16」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「仕事について」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「仕事について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi16");
+f.fumi_list_all_target.push("*sijyou_sigoto2_1");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(15);
 f.fumi_list_sijyou_location_fumi.push(15);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi16");
+f.fumi_list_sijyou_target.push("*sijyou_sigoto2_1");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[16]=1;
 [endscript]
