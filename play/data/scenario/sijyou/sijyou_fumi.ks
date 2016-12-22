@@ -138,10 +138,12 @@
 
 
 *sijyou_syumi_2|(お見合い後)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『趣味について』(お見合い後)
 [p]
-;#
+[endif]
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -162,10 +164,12 @@
 ;これについて手紙を出すと
 ;イベント6クリアまでは好感度が下がる。
 *sijyou_kazoku_1|(お見合い前)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『家族について』(お見合い前)
 [p]
-;#
+[endif]
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -181,10 +185,12 @@
 [endif]
 
 *sijyou_kazoku_2
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『家族について』(お見合い後)
 [p]
-;#
+[endif]
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -197,11 +203,15 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+
 *sijyou_kazoku_2_1
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『家族について 祖父母両親』(お見合い後・事件解決後)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -236,11 +246,15 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+
 *sijyou_kazoku_2_2|(お見合い後・事件解決後2)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『家族について 兄弟』(お見合い後)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -280,11 +294,16 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
+
+
 *sijyou_kazoku_2_3|(お見合い後・事件解決後2)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『家族について 弟と妹』(お見合い後)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -327,10 +346,13 @@
 [endif]
 
 *sijyou_kazoku_3|(イベント6後)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『家族について』(イベント6後)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -349,10 +371,13 @@
 
 ;/////////////////////////////////△将来について/////////////////////////////////
 *sijyou_syourai1|(お見合い前)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『将来について』(お見合い前)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -365,10 +390,13 @@
 [手紙四条読了 fumi_number=]
 
 *sijyou_syourai1_2|(お見合い前)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『将来について』(お見合い前2)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -382,10 +410,13 @@
 [手紙四条読了 fumi_number=]
 
 *sijyou_syourai2|(お見合い後)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『将来について』(お見合い後)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -401,10 +432,13 @@
 
 
 *sijyou_syourai2_1|(お見合い後)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『将来について』(お見合い後,その後)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]さんへ[r]
@@ -426,10 +460,13 @@
 ;////////////////////////仕事について///////////////////////////////
 
 *sijyou_sigoto1|(お見合い前)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『仕事について』(お見合い前)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -447,10 +484,13 @@
 [endif]
 
 *sijyou_sigoto2|(お見合い後)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『仕事について』(お見合い後)
 [p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]さんへ[r]
@@ -468,9 +508,12 @@
 [endif]
 
 *sijyou_sigoto2_1|(お見合い後2)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『仕事について』(お見合い後2)
 [p]
+[endif]
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -489,9 +532,12 @@
 [endif]
 
 *sijyou_sigoto3|(お見合い後3)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『仕事について』(お見合い後2)
 [p]
+[endif]
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]さんへ[r]
@@ -511,9 +557,12 @@
 ;何かのせい＝華衣のせいって読解力ない人に説明せなあかんけど、どうしましょう
 
 *sijyou_sigoto4|(お見合い後4)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『仕事について』(お見合い後2)
 [p]
+[endif]
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]さんへ[r]
@@ -558,11 +607,14 @@
 ;///////////////////////////////////春の手紙のやりとり１　1_2 1_3//////////////////////
 ;ゲームプレイしてみると初回４月　平均３回のやりとり
 *1
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 春[r]
 [r]
 『ヒヨドリ』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=1]
 [r][r][r]
 [名前]へ[r]
@@ -578,11 +630,14 @@
 [手紙四条読了 fumi_number=1]
 
 *1_2
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 春[r]
 [r]
 『アンズ』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=1]
 [r][r][r]
 [名前]へ[r]
@@ -599,11 +654,14 @@
 [手紙四条読了 fumi_number=1_2]
 
 *1_3
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 春[r]
 [r]
 『トキワナズナ』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=1]
 [r][r][r]
 [名前]へ、手紙をありがとう。[r]
@@ -623,11 +681,14 @@
 [endif]
 
 *2
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 春[r]
 [r]
 『お茶の中に』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=2]
 [r][r][r]
 [名前]へ[r]
@@ -645,11 +706,14 @@
 [endif]
 
 *3
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 春[r]
 [r]
 『チューリップ』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=3]
 [r][r][r]
 [名前]へ[r]
@@ -670,11 +734,14 @@
 [endif]
 
 *4
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 春[r]
 [r]
 『筍』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=4]
 [r][r][r]
 [名前]へ[r]
@@ -695,11 +762,14 @@
 ;////////////////////////夏の手紙のやりとり/////////////////////////////////
 ;見合い前なのでは？
 *5
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 夏[r]
 [r]
 『すだれ』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=5]
 [r][r][r]
 [名前]へ[r]
@@ -716,11 +786,14 @@
 [endif]
 
 *5_1
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 夏[r]
 [r]
 『すだれ2』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=5_1]
 [r][r][r]
 [名前]へ[r]
@@ -738,11 +811,13 @@
 [endif]
 
 *5_2
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 夏[r]
 [r]
 『ハマナス』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=5_2]
 [r][r][r]
 [名前]へ[r]
@@ -766,11 +841,14 @@
 [endif]
 
 *6
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 夏[r]
 [r]
 『かき氷』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=6]
 [r][r][r]
 [名前]へ[r]
@@ -819,11 +897,13 @@
 [endif]
 
 *8_1
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 夏[r]
 [r]
 『夏の夜明け』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=8_1]
 [r][r][r]
 [名前]へ[r]
@@ -839,11 +919,14 @@
 [endif]
 
 *8_2
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 夏[r]
 [r]
 『昨晩の星』[p]
-;#
+[endif]
+
+
 [手紙四条 fumi_number=8_2]
 [r][r][r]
 [名前]へ[r]
@@ -880,11 +963,13 @@
 
 ;/////////////////////////////////////秋の手紙のやりとり/////////////////////////////////////////////
 *9
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 秋[r]
 [r]
 『秋の夕暮れ』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=9]
 [r][r][r]
 [名前]へ[r]
@@ -901,11 +986,13 @@
 [endif]
 
 *10
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 秋[r]
 [r]
 『秋の空』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=10]
 [r][r][r]
 [名前]へ[r]
@@ -921,11 +1008,13 @@
 [endif]
 
 *11
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 秋[r]
 [r]
 『読書』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=11]
 [r][r][r]
 [名前]へ[r]
@@ -949,11 +1038,13 @@
 ;/////////////////////////////////////////////冬の手紙のやりとり////////////////////////////////////
 ;旅行中かも？？ およそ、ひと段落してるので愛情的な文面
 *12
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 冬[r]
 [r]
 『冬の夜ふけに』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=12]
 [r][r][r]
 [名前]さんへ[r]
@@ -970,11 +1061,13 @@
 [endif]
 
 *13
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 冬[r]
 [r]
 『別荘にて』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=13]
 [r][r][r]
 [名前]さんへ[r]
@@ -992,11 +1085,13 @@
 
 
 *14
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 冬[r]
 [r]
 『新年の準備』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=14]
 [r][r][r]
 [名前]さんへ[r]
@@ -1015,11 +1110,13 @@
 
 
 *15
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 冬[r]
 [r]
 『白霜』[p]
-;#
+[endif]
+
 [手紙四条 fumi_number=15]
 [r][r][r]
 [名前]さんへ[r]
@@ -1039,9 +1136,12 @@
 
 ;///////////////////エンド前への手紙///////////////////////////////////////////
 ;*16_end
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 冬[r]
 『結納』[p]
+[endif]
+
 [手紙四条 fumi_number=]
 [r][r]
 [名前]へ[r]
@@ -1067,9 +1167,12 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 ;///////未来へ///////
 ;思いつかない～　文矢さんて海外にいるのかな？
 ;*17_ex
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 春[r]
 『未来へ』[p]
+[endif]
+
 [手紙四条 fumi_number=]
 [名前]さんへ[r]
 [r]
@@ -1107,9 +1210,11 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 ;///////一歩進んでいるよとの手紙///////
 ;このままだと努力の実体性がない男なので付け足す。
 *18_ex
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 春[r]
 『全力』[p]
+[endif]
 [手紙四条 fumi_number=]
 *18_ex_fumi_in1
 [er]
@@ -1143,8 +1248,113 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [endif]
 
 
-*19_ex
+
 ;///////////////////////////////兄の手紙///////////////////////////////////////////
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*avuridasi
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+[wait time=10]
+『あぶりだしの便せん』[p]
+[endif]
+;///////あぶり出しの便せん///////
+[手紙四条 fumi_number=]
+[名前]。手紙をありがとう。[r]
+[r]
+えぇと……はじめ見たとき、何が書いてるのか、[r]
+わからなかったよ[r]
+他に入っているのか、光にあてたところで[r]
+気づきました。[r]
+今度からは、普通の便せんでお願いできないかな？[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+*avuridasi_2
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+[wait time=10]
+『あぶりだしの便せん』[p]
+[endif]
+
+;///////あぶり出しの便せん///////
+[手紙四条 fumi_number=]
+[名前]さん。手紙をありがとう。[r]
+[r]
+ごめん……はじめ見たとき、何が書いてるのか、[r]
+わからなかったんだ。[r]
+他に入っているのかと、光にあてたところで[r]
+気づきました。[r]
+次からは気づくようにしますね…[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+;///////////////話題はこちらに追加していく//////////////////
+
+;///////////△友人について///////////
+*sijyou_yujin_1|(お見合い前)
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『友人について』(お見合い前)
+[p]
+[endif]
+
+[手紙四条 fumi_number=]
+[r][r][r]
+[名前]へ[r]
+[r]
+手紙ありがとう。友人についてだね。それなら[r]
+君も知ってるだろうけど文矢が友人だよ。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+
+*sijyou_yujin_2|(お見合い後)
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『友人について』(お見合い後)
+[p]
+[endif]
+
+[手紙四条 fumi_number=]
+[r][r][r]
+[名前]へ[r]
+[r]
+手紙ありがとう。友人についてだね。それなら[r]
+文矢が一番の親友だよ。[r]
+文矢は手紙に合う心葉についてよく訊かれたよ、[r]
+彼の朗らかなところが好きなんだよね[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou==true]
+[clearstack]
+@jump target="*test"
+[endif]
+
+
+*19_ex
+;///////////////////////////////兄からの手紙///////////////////////////////////////////
 ;◎お見合い決定後に文矢から手紙がないとおかしいのでは？
 ;◎友人のくせに変化を知らない理由がわからない
 ;あまり小うるさくならない程度に書く
@@ -1181,100 +1391,6 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 [手紙読了]
-;///////////////////////////////兄の手紙///////////////////////////////////////////
-[if exp=tf.test_sijyou==true]
-[clearstack]
-@jump target="*test"
-[endif]
-
-*avuridasi
-[テキスト全画面白文字]
-[wait time=10]
-『あぶりだしの便せん』[p]
-;///////あぶり出しの便せん///////
-[手紙四条 fumi_number=]
-[名前]。手紙をありがとう。[r]
-[r]
-えぇと……はじめ見たとき、何が書いてるのか、[r]
-わからなかったよ[r]
-他に入っているのか、光にあてたところで[r]
-気づきました。[r]
-今度からは、普通の便せんでお願いできないかな？[r]
-[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-[手紙四条読了 fumi_number=]
-[if exp=tf.test_sijyou==true]
-[clearstack]
-@jump target="*test"
-[endif]
-
-*avuridasi_2
-[テキスト全画面白文字]
-[wait time=10]
-『あぶりだしの便せん』[p]
-
-;///////あぶり出しの便せん///////
-[手紙四条 fumi_number=]
-[名前]さん。手紙をありがとう。[r]
-[r]
-ごめん……はじめ見たとき、何が書いてるのか、[r]
-わからなかったんだ。[r]
-他に入っているのかと、光にあてたところで[r]
-気づきました。[r]
-次からは気づくようにしますね…[r]
-[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-[手紙四条読了 fumi_number=]
-[if exp=tf.test_sijyou==true]
-[clearstack]
-@jump target="*test"
-[endif]
-
-;///////////////話題はこちらに追加していく//////////////////
-
-;///////////△友人について///////////
-*sijyou_yujin_1|(お見合い前)
-[テキスト全画面白文字]
-『友人について』(お見合い前)
-[p]
-;#
-[手紙四条 fumi_number=]
-[r][r][r]
-[名前]へ[r]
-[r]
-手紙ありがとう。友人についてだね。それなら[r]
-君も知ってるだろうけど文矢が友人だよ。[r]
-[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
-[手紙四条読了 fumi_number=]
-[if exp=tf.test_sijyou==true]
-[clearstack]
-@jump target="*test"
-[endif]
-
-
-*sijyou_yujin_2|(お見合い後)
-[テキスト全画面白文字]
-『友人について』(お見合い後)
-[p]
-;#
-[手紙四条 fumi_number=]
-[r][r][r]
-[名前]へ[r]
-[r]
-手紙ありがとう。友人についてだね。それなら[r]
-文矢が一番の親友だよ。[r]
-文矢は手紙に合う心葉についてよく訊かれたよ、[r]
-彼の朗らかなところが好きなんだよね[r]
-[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
-[手紙四条読了 fumi_number=]
-[if exp=tf.test_sijyou==true]
-[clearstack]
-@jump target="*test"
-[endif]
 
 ;実装時に各手紙に読了処理等を追記予定
 ;fumi_numberがうまく動作していないので実装時に試行錯誤予定。マクロじゃなく各所にベタ打ちした方が早いやも
