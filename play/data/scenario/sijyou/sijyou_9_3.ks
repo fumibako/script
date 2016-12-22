@@ -53,7 +53,7 @@
 「はい。　それでは失礼します」[p]
 #
 ;最低限の返事にも関わらず、礼節的に部屋から下がる
-彼を見送った後、私は頂いた手紙を高鳴る気持ちのまま開いた。[p]
+彼を見送った後、私は頂いた手紙を高鳴る気持ちのまま開く。[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目閉じ]
@@ -437,7 +437,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name="四条父" color="darkolivegreen"]
-「２人はやはり仲が良いな！ 」[p]
+「[ruby text=ふた]二[ruby text=り]人はやはり仲が良いな！ 」[p]
 [whosay name="四条 華織" color="olivedrab"]
 「 ？ 」[p]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
