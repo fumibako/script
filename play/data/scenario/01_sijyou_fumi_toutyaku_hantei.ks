@@ -281,6 +281,20 @@
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
 [endif]
+;==============================================================================================================
+;◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇あぶりだしの手紙◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇
+;==============================================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
+;[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0  && f.fumi_toutyaku_sijyou[45]==0"]
+ ; [call target=*sijyou_toutyaku_hantei_shori_common]
+  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+;[endif]
+;==============================================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
+;[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==1  && f.fumi_toutyaku_sijyou[46]==0"]
+ ; [call target=*sijyou_toutyaku_hantei_shori_common]
+  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+;[endif]
 ;=======================================================================================
 ;◆◇◆◇◆◇◆◇◆◇◆◇◆____話題の手紙＿＿＿◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
 ;=======================================================================================
