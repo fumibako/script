@@ -209,6 +209,7 @@
 [endif]
 ;///////////////////////////////////////////////////////////新茶の話題/////////////////////////////
 *sincya
+*sijyou_fumi47
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題（事件前）[[p]
@@ -230,6 +231,7 @@
 [手紙四条読了 fumi_number=]
 
 *sincya_1
+*sijyou_fumi48
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題（事件後）[[p]
@@ -260,6 +262,7 @@
 [endif]
 
 *sincya_2
+*sijyou_fumi49
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題（事件後）[[p]
@@ -282,6 +285,7 @@
 [endif]
 
 *sincya_3
+*sijyou_fumi50
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題（事件後）[[p]
@@ -305,6 +309,7 @@
 
 
 *sincya_3_1
+*sijyou_fumi51
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題　凡庸（事件前）[p]
@@ -326,6 +331,7 @@
 [endif]
 
 *sincya_3_2
+*sijyou_fumi52
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題　凡庸（事件前）[p]
@@ -348,6 +354,7 @@
 
 ;////////////////事件後凡庸////////////////////////////////
 *sincya_3_3
+*sijyou_fumi55
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題　凡庸（事件後）[p]
@@ -368,6 +375,7 @@
 [endif]
 
 *sincya_3_4
+*sijyou_fumi56
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題　凡庸（事件後）[p]
@@ -392,6 +400,7 @@
 ;///////////////////////////////////////////////////////////さつきの話題/////////////////////////////
 
 *satuki
+*sijyou_fumi57
 [wait time=10]
 [テキスト全画面白文字]
 [wait time=50]
@@ -416,6 +425,7 @@
 [endif]
 
 *satuki2
+*sijyou_fumi58
 [wait time=10]
 [テキスト全画面白文字]
 [wait time=50]
@@ -445,6 +455,7 @@
 ;/////////////////////////////////////////////詩集の話題/////////////////////////////
 
 *sisyu
+*sijyou_fumi59
 [wait time=10]
 [テキスト全画面白文字]
 [wait time=50]
@@ -469,6 +480,7 @@
 
 ;/////////////////////////////聞き上手と話し上手の話題////////////////////////////
 *kiki_jyouzu1
+*sijyou_fumi60
 [wait time=10]
 [テキスト全画面白文字]
 [wait time=50]
@@ -489,7 +501,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
-
+*sijyou_fumi61
 [wait time=10]
 [テキスト全画面白文字]
 [wait time=50]
@@ -515,6 +527,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi62
 *kiki_jyouzu_2
 [テキスト全画面白文字]
 [wait time=50]
@@ -532,7 +545,7 @@
 [手紙四条読了 fumi_number=]
 
 
-
+*sijyou_fumi63
 *kiki_jyouzu_2_1
 [テキスト全画面白文字]
 [wait time=50]
@@ -555,6 +568,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi64
 *kiki_jyouzu_3
 [テキスト全画面白文字]
 [wait time=10]
@@ -578,6 +592,7 @@
 @jump target="*test"
 [endif]
 ;///////////////////////////////////////////////////////////食事の話題/////////////////////////////
+*sijyou_fumi65
 *syokuji
 [テキスト全画面白文字]
 [wait time=10]
@@ -600,6 +615,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi66
 *syokuji_2
 [テキスト全画面白文字]
 [wait time=10]
@@ -620,6 +636,7 @@
 @jump target="*test"
 [endif
 
+*sijyou_fumi67
 *syokuji_3
 [テキスト全画面白文字]
 [wait time=10]
@@ -641,6 +658,7 @@
 [endif]
 
 ;//////////////////////////////緑の石の話題/////////////////////////////
+*sijyou_fumi67
 *midori
 [テキスト全画面白文字]
 [wait time=10]
@@ -663,6 +681,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi68
 *midori2
 [テキスト全画面白文字]
 [wait time=10]
@@ -678,7 +697,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
-
+*sijyou_fumi69
 *midori2_1
 [テキスト全画面白文字]
 [wait time=10]
@@ -700,6 +719,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi70
 *midori3
 [テキスト全画面白文字]
 [wait time=10]
@@ -716,7 +736,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
-
+*sijyou_fumi71
 [テキスト全画面白文字]
 [wait time=10]
 『緑の石』３[p]
@@ -738,7 +758,7 @@
 [endif]
 
 ;//////////////////////////////一日のはじまりの話題/////////////////////////////
-
+*sijyou_fumi72
 *ichi_nichi
 [テキスト全画面白文字]
 [wait time=10]
@@ -760,6 +780,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi73
 *ichi_nichi2
 [テキスト全画面白文字]
 [wait time=10]
@@ -774,6 +795,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 [手紙四条読了 fumi_number=]
 
+*sijyou_fumi74
 [テキスト全画面白文字]
 [wait time=10]
 『一日のはじまり２＿２凡庸』[p]
@@ -792,6 +814,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi75
 *ichi_nichi3
 [テキスト全画面白文字]
 [wait time=10]
@@ -813,6 +836,7 @@
 [endif]
 
 ;//////////////////////////////猫の話題/////////////////////////////
+*sijyou_fumi76
 *neko
 [テキスト全画面白文字]
 [wait time=10]
@@ -833,6 +857,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi77
 *neko2
 [テキスト全画面白文字]
 [wait time=10]
@@ -849,6 +874,7 @@
 [手紙四条読了 fumi_number=]
 
 
+*sijyou_fumi78
 [テキスト全画面白文字]
 [wait time=10]
 『猫 凡庸2』[p]
@@ -869,6 +895,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi79
 *neko3
 [テキスト全画面白文字]
 [wait time=10]
@@ -899,6 +926,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi78
 *neko4
 [テキスト全画面白文字]
 [wait time=10]
@@ -921,6 +949,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi79
 *neko4b
 [テキスト全画面白文字]
 [wait time=10]
@@ -943,6 +972,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi80
 *neko5
 [テキスト全画面白文字]
 [wait time=10]
@@ -966,6 +996,7 @@
 [endif]
 
 ;//////////////////////////////道の話題/////////////////////////////
+*sijyou_fumi81
 *michi
 [テキスト全画面白文字]
 [wait time=10]
@@ -988,6 +1019,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi82
 *michi2
 [テキスト全画面白文字]
 [wait time=10]
@@ -1012,6 +1044,7 @@
 
 ;//////////////////////////////好きな曲の話題/////////////////////////////
 
+*sijyou_fumi83
 *kuoku1
 [テキスト全画面白文字]
 [wait time=10]
@@ -1036,6 +1069,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi84
 *kyoku2
 [テキスト全画面白文字]
 [wait time=10]
@@ -1062,7 +1096,7 @@
 
 
 ;//////////////////////////////変化と永遠の話題/////////////////////////////
-
+*sijyou_fumi85
 *henka1
 [テキスト全画面白文字]
 [wait time=10]
@@ -1087,7 +1121,7 @@
 [clearstack]
 @jump target="*test"
 [endif]
-
+*sijyou_fumi86
 *henka2
 [手紙四条 fumi_number=]
 [名前]へ　手紙をありがとう。[r]
@@ -1105,6 +1139,8 @@
 @jump target="*test"
 [endif]
 
+
+*sijyou_fumi87
 *henka3
 [手紙四条 fumi_number=]
 [名前]さんへ　手紙をありがとう。[r]
@@ -1124,6 +1160,7 @@
 [endif]
 
 ;//////////////////////////////////////スポーツ////////////////////////////////////////////
+*sijyou_fumi88
 *sps
 [wait time=10]
 [テキスト全画面白文字]
@@ -1144,7 +1181,7 @@
 @jump target="*test"
 [endif]
 
-[手紙四条 fumi_number=]
+*sijyou_fumi89
 *sps2
 [テキスト全画面白文字]
 『 スポーツ  事件解決後』
@@ -1168,6 +1205,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi90
 *sps2_1
 [テキスト全画面白文字]
 『 スポーツ 凡庸1』
@@ -1185,6 +1223,7 @@
 @jump target="*test"
 [endif]
 
+*sijyou_fumi91
 *sps2_2
 [テキスト全画面白文字]
 『 スポーツ 凡庸2』
