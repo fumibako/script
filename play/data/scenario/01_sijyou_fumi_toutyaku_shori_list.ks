@@ -33,6 +33,7 @@ f.fumi_toutyaku_sijyou[2]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_3
+;趣味について(お見合い後)3 sijyou_syumi_2
 [iscript]
 //↓「文箱」クリック時に表示される一覧での手紙タイトル(差出人名入り)。変更してください
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「3」　四条 華織";
@@ -55,6 +56,7 @@ f.fumi_toutyaku_sijyou[3]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_4
+;家族について(お見合い前)4 sijyou_kazoku_1
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「4」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「4」";
@@ -72,6 +74,7 @@ f.fumi_toutyaku_sijyou[4]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_5
+;家族(お見合い後)5 sijyou_kazoku_2
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「5」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「5」";
@@ -89,6 +92,7 @@ f.fumi_toutyaku_sijyou[5]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_6
+;家族・祖父母両親(お見合い後・事件解決後)6 sijyou_kazoku_2_1
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「6」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「6」";
@@ -106,6 +110,7 @@ f.fumi_toutyaku_sijyou[6]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_7
+;『家族について 兄弟』 (お見合い後・事件解決後2)7 sijyou_kazoku_2_2
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「7」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「7」";
@@ -123,6 +128,7 @@ f.fumi_toutyaku_sijyou[7]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_8
+;『家族について 弟と妹』 (お見合い後・事件解決後2)8 sijyou_kazoku_2_3
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「8」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「8」";
