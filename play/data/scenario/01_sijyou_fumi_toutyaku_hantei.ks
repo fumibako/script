@@ -1,4 +1,4 @@
-﻿*fumi_toutyaku_hantei_sijyou
+*fumi_toutyaku_hantei_sijyou
 ;◇四条手紙到着判定
 [eval exp="f.test='手紙到着可能性なし'"]
 [if exp="f.sijyou_fumi_henjimachi <= parseInt([sf.sijyou['fumi_henjimachi_ok_number']])"]
@@ -18,9 +18,89 @@
 ;(↑if文の中身について)
 ;f.sijyou_fumi_toutyakumachi_shumi==0…『趣味について』の話題の返事待ち週=0週(届く週)
 ;f.sijyou_omiai==0…お見合い前を示す。お見合い後は1
-;f.fumi_toutyaku_sijyou[2]==0…f.fumi_toutyaku_sijyou[]は四条全手紙の到着未着情報管理配列。その[2]が『趣味について（お見合い前）』の手紙の到着(1)or未着(0)を示す
+;f.fumi_toutyaku_sijyou[2]==0…f.fumi_toutyaku_sijyou[]は四条全手紙の到着未着情報管理配列。
+;その[2]が『趣味について（お見合い前）』の手紙の到着(1)or未着(0)を示す
 
 ;↓以下に手紙到着判定処理を記述してください
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『趣味について(お見合い後)』
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『家族について(お見合い前)』
+[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[4]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『家族について(お見合い後)』
+[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[5]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『家族・祖父母両親(お見合い後・事件解決後)』f.sijyou_omiai==1  f.sijyou_sobo==true
+[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.sijyou_sobo==true && f.fumi_toutyaku_sijyou[6]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い前)』
+[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[7]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い前2)』
+[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[8]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い前2)』
+[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[9]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い後)』
+[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[10]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『『将来について(お見合い後,事件解決後)』
+[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==1 && f.okeiko_month=>12 && f.fumi_toutyaku_sijyou[11]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い前)』
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[12]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後)』
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[13]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後2)』
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[14]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『仕事について』(お見合い後3)』
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[15]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+[endif]
+;=======================================================================================
 
 
 	[endif]
@@ -37,7 +117,7 @@
 ;↓(変更の必要はありません)四条からの手紙到着待ち週数をリセット
 	[eval exp="f.sijyou_fumi_toutyakumachi_week=0"]
 [return]
-
+;=======================================================================================
 ;◆2【つばめの季節】5月1週～6月4週に好感度が一定以上で届く(月の判定処理など参考に置いてみます)
 ;		[if exp="(f.okeiko_month==5 || f.okeiko_month==6) && f.para_sijyou_koukando > 5 && f.fumi_toutyaku_sijyou[2]==0"]
 ;			[eval exp="f.test='手紙到着「つばめの季節」'+f.sijyou_fumi_toutyakumachi_week+parseInt([sf.sijyou['fumi_hindo_week']])"]
@@ -45,4 +125,5 @@
 ;			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
 ;			[eval exp="f.sijyou_fumi_toutyakumachi_week=0"]
 ;			@jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+
 
