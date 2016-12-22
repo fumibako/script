@@ -399,9 +399,10 @@ f.fumi_toutyaku_sijyou[22]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_23
+;春『アンズ』1_2
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「23」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「23」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「アンズ」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「アンズ」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi23");
@@ -415,10 +416,10 @@ f.fumi_toutyaku_sijyou[23]=1;
 [endscript]
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 *fumi_toutyaku_sijyou_24
-;春『アンズ』1_2
+;春『トキワナズナ』1_3
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「アンズ」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「アンズ」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「トキワナズナ」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「トキワナズナ」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi24");
@@ -433,10 +434,10 @@ f.fumi_toutyaku_sijyou[24]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_25
-;春『トキワナズナ』1_3
+;春 『筍』4         sijyou_fumi25
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「トキワナズナ」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「トキワナズナ」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「筍」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「筍」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi25");
@@ -451,10 +452,10 @@ f.fumi_toutyaku_sijyou[25]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_26
-;春『チューリップ』3
+;夏『すだれ』5    sijyou_fumi26
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「チューリップ」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「チューリップ」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「すだれ」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「すだれ」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi26");
@@ -469,7 +470,7 @@ f.fumi_toutyaku_sijyou[26]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_27
-;春 『筍』4         sijyou_fumi25
+;夏『すだれ2』5_1  sijyou_fumi27
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「筍」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「筍」";
@@ -487,9 +488,10 @@ f.fumi_toutyaku_sijyou[27]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_28
+;夏『ハマナス』5_2  sijyou_fumi28
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「28」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「28」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「ハマナス」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「ハマナス」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi28");
@@ -504,9 +506,10 @@ f.fumi_toutyaku_sijyou[28]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_29
+;夏『かき氷』6  sijyou_fumi29
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「29」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「29」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「かき氷」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「かき氷」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi29");
@@ -521,9 +524,10 @@ f.fumi_toutyaku_sijyou[29]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_30
+;夏 『蛙』7   sijyou_fumi30
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「30」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「30」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「蛙」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「蛙」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi30");
@@ -538,9 +542,10 @@ f.fumi_toutyaku_sijyou[30]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_31
+;夏『夏の夜明け』8_1 *sijyou_fumi31
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「31」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「31」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「夏の夜明け」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「夏の夜明け」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi31");
@@ -555,9 +560,10 @@ f.fumi_toutyaku_sijyou[31]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_32
+;夏『昨晩の星』8_2 仲がいいこと *sijyou_fumi32
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「32」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「32」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「昨晩の星」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「昨晩の星」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi32");
@@ -572,9 +578,10 @@ f.fumi_toutyaku_sijyou[32]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_33
+;夏『ネリネ』8_3 *sijyou_fumi33
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「33」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「33」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「ネリネ」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「ネリネ」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi33");
@@ -588,9 +595,10 @@ f.fumi_toutyaku_sijyou[33]=1;
 [endscript]
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 *fumi_toutyaku_sijyou_34
+;秋『秋の夕暮れ』9 *sijyou_fumi34
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「34」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「34」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「秋の夕暮れ」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「秋の夕暮れ」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi34");
@@ -605,9 +613,10 @@ f.fumi_toutyaku_sijyou[34]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_35
+;秋『秋の空』10 *sijyou_fumi35
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「35」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「35」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「秋の空」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「秋の空」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi35");
@@ -622,9 +631,10 @@ f.fumi_toutyaku_sijyou[35]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_36
+;秋『読書』11 sijyou_fumi36
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「36」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「36」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「読書」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「読書」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi36");
@@ -639,9 +649,10 @@ f.fumi_toutyaku_sijyou[36]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_37
+;冬『冬の夜ふけに』12 sijyou_fumi37
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「37」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「37」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「冬の夜ふけに」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「冬の夜ふけに」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi37");
@@ -656,9 +667,10 @@ f.fumi_toutyaku_sijyou[37]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_38
+;冬『別荘にて』13 sijyou_fumi38
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「38」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「38」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「別荘にて」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「別荘にて」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi38");
@@ -673,9 +685,10 @@ f.fumi_toutyaku_sijyou[38]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_39
+;冬『新年の準備』14 sijyou_fumi39
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「39」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「39」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「新年の準備」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「新年の準備」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi39");
@@ -690,9 +703,10 @@ f.fumi_toutyaku_sijyou[39]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_40
+;冬『白霜』15 sijyou_fumi40
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「40」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「40」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「白霜」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「白霜」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi40");
