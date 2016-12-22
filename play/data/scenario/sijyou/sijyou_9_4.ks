@@ -17,26 +17,26 @@
 [image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 [font color=white size=27]
 [プリロード画面消去]
-;背景変更
-[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 ;スクリプト担：↓お稽古パートから歌舞伎見物シーンへ自然につながるような地の文を入れたいのですが、こんな感じで大丈夫でしょうか？
 ;okです
 [sp][r]
 ――お芝居見物に誘われ[r]
 [r]
 歌舞伎『大正座』を訪れることになった。[p]
+;背景変更
+[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [resetfont]
 [wait time=10]
-[四条イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [freeimage layer=29 time=0]
 ;==========================================================================
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 [whosay name="華織" color="olivedrab"]
 「本日の演目は『音頭恋寝刃』……」[p]
 [autosave]
@@ -49,7 +49,7 @@
 [endif]
 [主人公目パチ1回]
 #
-桟敷き席に座っていた[名前]は隣に座る華織の様子をみた。[p]
+桟敷き席に座っていた私は、隣に座る華織様の様子を[ruby text=うかが]窺った。[p]
 [whosay name="華織" color="olivedrab"]
 「わからないことがあったら聞いて」[p]
 
