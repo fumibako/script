@@ -721,9 +721,10 @@ f.fumi_toutyaku_sijyou[40]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_41
+;冬『結納』(1月～３月３週｜家族　その他話題にて)  sijyou_fumi41
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「41」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「41」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「結納」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「結納」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi41");
@@ -738,9 +739,10 @@ f.fumi_toutyaku_sijyou[41]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_42
+;春 『お茶の中に』2   sijyou_fumi42
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「42」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「42」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お茶の中に」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「お茶の中に」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi42");
@@ -755,9 +757,10 @@ f.fumi_toutyaku_sijyou[42]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_43
+;春『未来へ』 (1月2週～1月末まで)  sijyou_fumi43
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「43」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「43」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「未来へ」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「未来へ」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi43");
@@ -771,9 +774,10 @@ f.fumi_toutyaku_sijyou[43]=1;
 [endscript]
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 *fumi_toutyaku_sijyou_44
+;春『全力』 (『未来へ』をみている)  sijyou_fumi44
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「44」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「44」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「全力」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「全力」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi44");
@@ -788,12 +792,13 @@ f.fumi_toutyaku_sijyou[44]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_45
+;『あぶりだしの便せん』あぶりだしを選択（事件解決前)avuridasi
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「45」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「45」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「あぶりだしの便せん」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「あぶりだしの便せん」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi45");
+f.fumi_list_all_target.push("*avuridasi");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(44);
 f.fumi_list_sijyou_location_fumi.push(44);
@@ -805,22 +810,23 @@ f.fumi_toutyaku_sijyou[45]=1;
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_46
+;『あぶりだしの便せん』 （事件解決後）avuridasi_2
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「46」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「46」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「あぶりだしの便せん」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「あぶりだしの便せん」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi46");
+f.fumi_list_all_target.push("*avuridasi_2");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(45);
 f.fumi_list_sijyou_location_fumi.push(45);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi46");
+f.fumi_list_sijyou_target.push("*avuridasi_2");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[46]=1;
 [endscript]
 @jump target=*fumi_toutyaku_hantei_katuraginomiya
-
+;=============================================================================================
 *fumi_toutyaku_sijyou_47
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「47」　四条 華織";
