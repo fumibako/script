@@ -14,13 +14,13 @@
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[四条イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [プリロード画面消去]
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 ;=================================================================================_
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織さまがお迎えに来られました」
@@ -44,7 +44,7 @@
 「はい」[p]
 [主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
-「帯留めや髪飾りの位置は大丈夫かしら？　」[p]
+「帯留めや髪飾りの位置は大丈夫かしら？」[p]
 [whosay name="磯野" color="dimgray"] 
 「はい。大丈夫でございます。　お綺麗ですよ」[p]
 [whosay name="磯野" color="dimgray"] 
@@ -76,7 +76,7 @@
 [layopt layer=fix visible=false]
 ;【SE】鳥たち（複数の鳥の声）　適当なSEで合間を誤魔化す
 [playse storage=tori_yatyou.ogg loop=false ]
-[image layer=29 x=1 y=1 storage="bg/bg_ryoutei.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/bg_ryoutei.jpg" time=1000]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;○解決の知らせ→料亭などで落ち合うことに。
@@ -206,12 +206,13 @@
 ;=================================================================================_
 *seen3
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版枠茶色]
 [暗転２終了]
 [iscript]
 $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
 [endscript]
 [image name="yuki" storage="bg/sijyou_machi_yuki.png" layer=1 zindex=2]
-[イベントシーン構築枠茶色]
+[メッセージウィンドウ上ボタン表示]
 #
 僕達は、賑わう町を並んで歩いていく。[p]
 [autosave]
@@ -241,7 +242,7 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 [whosay name="華織" color="olivedrab"]
 ([名前]さんと綴っていけたらいいな)[p]
 #
-冬のしんとした寒さの中、2つの暖かな吐息がほんわりと並び、[r]
+冬のしんとした寒さの中、[ruby text=ふた]二つの暖かな吐息がほんわりと並び、[r]
 次の季節に思いを馳せる。[p]
 ;=================================================================================_
 *seen4
