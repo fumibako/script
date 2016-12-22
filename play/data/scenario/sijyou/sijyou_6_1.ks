@@ -88,8 +88,10 @@
 #
 恋夢に満ち足りていると、どこかで鐘が鳴りだした。[p]
 ;広間時計 ボーンボーンボーン…
-;【SE】時計（広間カチコチ）
-[playse storage=tokei_hiroma.ogg loop=false ]
+;【SE】時計の鐘（ボーン）３回ほど（繰り返し）
+[playse storage=tokei_tokei_kane.ogg loop=false]
+[playse storage=tokei_tokei_kane.ogg loop=false]
+[playse storage=tokei_tokei_kane.ogg loop=false]
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん、僕は、もうそろそろ行かないと」[p]
