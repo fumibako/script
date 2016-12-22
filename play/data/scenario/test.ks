@@ -21,6 +21,8 @@
 
 [cm]
 
+[glink target="test_okeiko" text="お稽古パート" graphic="select_waku_x500.png" size=20 width="300" x=100 y=30 color=white]
+
 ;[glink target="test1" text="四条テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=100 color=white]
 
 ;[glink target="test2" text="葛城宮テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=170 color=white]
@@ -127,6 +129,12 @@
 @jump storage="fumi_kuroda.ks"
 [s]
 
+*test_okeiko
+[cm]
+[eval exp="tf.test_gamen=true"]
+[freeimage layer = 26]
+@jump storage="okeiko.ks"
+[s]
 
 
 *title
