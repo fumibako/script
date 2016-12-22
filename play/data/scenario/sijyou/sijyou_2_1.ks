@@ -18,11 +18,11 @@
 ;【背景】主人公邸 お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[四条イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
 [プリロード画面消去]
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
 ;[if exp="tf.test_sijyou==true"]
 ;@jump target=*sijyou_3
