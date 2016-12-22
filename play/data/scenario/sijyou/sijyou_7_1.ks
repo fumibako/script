@@ -1,9 +1,9 @@
+[stopbgm]
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 ;////////////表示準備/////////
 ;選択肢背景＿表示遅れ防止
 [preload storage="data/fgimage/bg/plane_sakura.jpg"]
 ;//////////////////////////////
-[stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
@@ -17,8 +17,15 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;主人公復帰表情
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
+;主人公復帰表情消去
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ……）
 ;↓口：おちょぼ口 [主人公口ふぅ]
