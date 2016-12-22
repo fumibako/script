@@ -27,11 +27,11 @@
 [endif]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
-[四条イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer=29 time=0]
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 ;==========================================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ片手]
