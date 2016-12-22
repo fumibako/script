@@ -11,8 +11,7 @@
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[layopt layer=fix visible=true]
-[四条イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 ;まだ深刻ではない
 [主人公ポーズ通常]
 [wait time=10]
@@ -23,7 +22,7 @@
 ;信じようと悩み無理をしている表情
 *seen0
 [プリロード画面消去]
-[四条ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 ;=======================================================================
 [主人公伏目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
