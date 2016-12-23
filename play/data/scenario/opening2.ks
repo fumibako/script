@@ -1,4 +1,4 @@
-﻿;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 ;	[skipstart]
 ;[endif]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
@@ -60,9 +60,11 @@
 ;【SE】時計（広間カチコチ）
 [playse storage=tokei_hiroma.ogg loop=false]
 
-;主人公画像表示【マクロで切り替え】
-[主人公ポーズ指]
+;変更を最小限にしたいのでプリロード画面かぶせずすませたい ポーズがないので通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_komari.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
+;主人公画像表示【マクロで切り替え】
+[主人公ポーズ通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -73,6 +75,12 @@
 [wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
 [wait time=200]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+[主人公ポーズ指]
+[wait time=10]
+
 [chara_mod name="girl_te" storage="toumei.gif" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
@@ -211,7 +219,7 @@
 [wait time=10]
 [p]
 #
-思わずお茶を持ちあげた手を止め視線を逸らす。
+思わずお茶を持ちあげた手を止め視線を逸らす。[r]
 
 [主人公横伏目パチ1回]
 [wait time=10]
