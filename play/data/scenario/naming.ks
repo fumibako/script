@@ -1,4 +1,4 @@
-﻿
+
 [call target=*start storage="tyrano.ks"]
 [setreplay name="kuroda_3_4_normalED_scene1" storage="naming.ks" target="naming"]
 *naming
@@ -45,10 +45,26 @@
 [chara_show left=50 top=220 layer=7 name="A_emo" time=0]
 [wait time=10]
 
+;name属性を指定してアニメーション
+[anim name="A_base" opacity=0 time=100]
+[anim name="A_mayu" opacity=0 time=100]
+[anim name="A_me" opacity=0 time=100]
+[anim name="A_kuti" opacity=0 time=100]
+[anim name="A_emo" opacity=0 time=100]
+[wa]
+
 [主人公ポーズ通常L]
 [wait time=10]
 [主人公通常L]
 [wait time=10]
+
+;name属性を指定してアニメーション
+[anim name="A_base" opacity=255 time=1000]
+[anim name="A_mayu" opacity=255 time=1001]
+[anim name="A_me" opacity=255 time=1001]
+[anim name="A_kuti" opacity=255 time=1001]
+[anim name="A_emo" opacity=255 time=1001]
+[wa]
 
 ;名前入力部分
 *show_input_yourname
