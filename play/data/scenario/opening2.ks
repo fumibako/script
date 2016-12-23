@@ -299,7 +299,8 @@
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-「私ったらお兄様たちとぐらいしかまともに男の人とお話しした事が無いのに、いきなり三人の方と文通なんてできるのかしら」[p]
+「私ったらお兄様たちとぐらいしかまともに男の人とお話しした事が[r]
+[sp]無いのに、いきなり三人の方と文通なんてできるのかしら」[p]
 
 [主人公伏目パチ1回]
 [wait time=10]
@@ -729,7 +730,7 @@ f.zaizen_fumi1_midoku = 0;
 	[skipstop]
 [endif]
 *kaori_fumi1b
-[font color=white size=0][r]【 『(仮)四条 華織』を選択 】[r][resetfont]
+[font color=white size=0][r]【 『四条 華織』を選択 】[r][resetfont]
 [cm]
 [chara_mod name="bg" storage="bg/bg_tegami_kaori.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
@@ -748,7 +749,7 @@ f.zaizen_fumi1_midoku = 0;
 [wait time=10]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
-（仮）[r]
+;（仮）[r]
 [名字] [名前]様[r]
 [r]
 拝啓　最近では桜も咲き始め、暖かくなってきました。ご家族一同元気にお過ごしですか？[r]
@@ -902,7 +903,8 @@ f.hujieda_fumi1_midoku = 0;
 [主人公口通常]
 [wait time=10]
 [whosay name=磯野 color="dimgray"]
-「お相手の事は多少旦那様にお聞きしていますので、何かありましたらお尋ねください」
+「お相手の事は多少旦那様にお聞きしていますので、何かありましたら[r]
+[sp]お尋ねください」
 [autosave]
 [p]
 
@@ -994,14 +996,16 @@ f.hujieda_fumi1_midoku = 0;
 [endif]
 *zaizen_isono1b
 [whosay name=磯野 color="dimgray"]
-「財前様のお父様は一代にして数多の事業を成功され、華族を襲名された実業家でございます」[p]
+「財前様のお父様は一代にして数多の事業を成功され、[r]
+[sp]華族を襲名された実業家でございます」[p]
 [主人公目パチ1回]
 [wait time=10]
 [主人公口開]
 [wait time=10]
 [主人公眉下げ]
 [wait time=10]
-「華族として日が浅いながらも、財政界に強い発言力を持たれています」[p]
+「華族として日が浅いながらも、財政界に強い発言力を[r]
+[sp]持たれています」[p]
 [whosay name=磯野 color="dimgray"]
 「旦那様とは華族襲名来からのご友人だという事ですから、そのご縁でしょう」[p]
 [主人公目パチ1回]
@@ -1185,7 +1189,8 @@ f.hujieda_fumi1_midoku = 0;
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=磯野 color="dimgray"]
-「返事のお手紙は……そうですね、遅くても来月中にはお書きになったほうがよろしいかと」
+「返事のお手紙は……そうですね、遅くても来月中にはお書きに[r]
+[sp]なったほうがよろしいかと」
 [autosave]
 [p]
 [主人公ポーズ指]
@@ -1271,7 +1276,8 @@ f.hujieda_fumi1_midoku = 0;
 [wait time=30]
 [主人公横目パチ1回]
 [wait time=20]
-（どんな方達なのかしら、華織お兄様もきっとお変りになってるだろうな）[p]
+（どんな方達なのかしら、[r]
+[sp]華織お兄様もきっとお変りになってるだろうな）[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公目通常]
