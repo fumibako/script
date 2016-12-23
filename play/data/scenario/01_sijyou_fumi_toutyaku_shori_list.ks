@@ -5,7 +5,7 @@
 //↓「文箱」クリック時に表示される一覧での手紙タイトル(差出人名入り)テストしやすいように(お見合い前)など入れてみましたが、実際のタイトルからは除いた方が自然かも？
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「趣味について(お見合い前)」　四条 華織";
 //↓「情報」(攻略対象情報)クリック時に表示される一覧での手紙タイトル(差出人名無し)
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「趣味について(お見合い前)」";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「趣味について」";
 //↓配列情報(全手紙：タイトル)を追加
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 //↓配列情報(全手紙：その手紙が記載されたファイル名)を追加
