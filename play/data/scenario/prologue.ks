@@ -50,7 +50,7 @@ TG.stat.play_se = true;
 
 ;背景変更:プロローグイントロ全画面
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
-
+[wait time=10]
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
@@ -189,8 +189,8 @@ TG.stat.play_se = true;
 [endif]
 *prologue5
 #
-二人の両親であるこの館の主人夫妻は、仕事のため海外にいる事が[r]
-多く、帰ってくるのは極稀な事であった。
+二人の両親であるこの館の主人夫妻は、仕事のため[r]
+海外にいる事が多く、帰ってくるのは極稀な事であった。
 [autosave]
 [p]
 
@@ -238,7 +238,7 @@ TG.stat.play_se = true;
 「一番大切に……」[p]
 #
 そう呟いた妹は、一瞬考え込むように顔を伏せ視
-線をさ迷わせる。
+線をさ迷わせる。[r]
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
@@ -384,7 +384,7 @@ TG.stat.play_se = true;
 [endif]
 *prologue14
 #
-先ほど封をしたばかりの手紙を手渡す。
+先ほど封をしたばかりの手紙を手渡す。[r]
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 磯野はすぐに宛先を確認すると、納得した様子で頷いた。
