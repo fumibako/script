@@ -1,4 +1,4 @@
-﻿*fumi_toutyaku_hantei_sijyou
+*fumi_toutyaku_hantei_sijyou
 ;◇四条手紙到着判定
 [eval exp="f.test='手紙到着可能性なし'"]
 [if exp="f.sijyou_fumi_henjimachi <= parseInt([sf.sijyou['fumi_henjimachi_ok_number']])"]
@@ -9,7 +9,7 @@
 ;手紙到着：条件有り分
 ;◆◆手紙到着：季節、好感度など条件有り分
 
-;◆↓手紙一通分の到着判定処理(開始)：『趣味について（お見合い前）』
+;◆↓手紙一通分の到着判定処理(開始)：『趣味について』
 [if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[2]==0"]
 	[call target=*sijyou_toutyaku_hantei_shori_common]
 	@jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
