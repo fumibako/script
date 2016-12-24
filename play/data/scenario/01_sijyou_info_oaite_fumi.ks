@@ -46,7 +46,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -103,7 +103,7 @@
 ;7f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 ;8f.fumi_sijyou_y=[emb exp ="f.fumi_sijyou_y"][r]
 [endif]
 
@@ -163,7 +163,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -218,7 +218,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -273,7 +273,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -326,7 +326,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -379,7 +379,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -432,7 +432,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -485,7 +485,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -538,7 +538,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -591,7 +591,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -644,7 +644,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -698,7 +698,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -752,7 +752,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -806,7 +806,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -860,7 +860,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -914,7 +914,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -968,7 +968,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -1022,7 +1022,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -1076,7 +1076,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -1129,7 +1129,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -1183,7 +1183,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -1237,7 +1237,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -1291,7 +1291,7 @@
 [endif]
 [if exp="f.fumi_sijyou_number==0"]
 [else]
-	[glink storage=fumi_sijyou.ks target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]

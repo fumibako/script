@@ -38,6 +38,25 @@ f.sijyou_au=0;
 f.sijyou_omiai=0;
 //↓イベント6後=1。それ以外=0
 f.sijyou_event6=0;
+f.sijyou_fumi_toutyakumachi_shumi=-1;
+f.sijyou_fumi_toutyakumachi_sigoto=-1;
+f.sijyou_fumi_toutyakumachi_kazoku=-1;
+f.sijyou_fumi_toutyakumachi_kisetsu=-1;
+f.sijyou_fumi_toutyakumachi_shourai=-1;
+f.sijyou_fumi_toutyakumachi_yuujin=-1;
+f.sijyou_fumi_toutyakumachi_shokuji=-1;
+f.sijyou_fumi_toutyakumachi_kangeki=-1;
+f.sijyou_fumi_toutyakumachi_neko=-1;
+f.sijyou_fumi_toutyakumachi_kiki=-1;
+f.sijyou_fumi_toutyakumachi_midori=-1;
+f.sijyou_fumi_toutyakumachi_photo=-1;
+f.sijyou_fumi_toutyakumachi_hajimari=-1;
+f.sijyou_fumi_toutyakumachi_music=-1;
+f.sijyou_fumi_toutyakumachi_michi=-1;
+f.sijyou_fumi_toutyakumachi_henka=-1;
+f.sijyou_fumi_toutyakumachi_dokusho=-1;
+f.sijyou_fumi_toutyakumachi_sports=-1;
+
 [endscript]
 
 ;◆攻略キャラ配列

@@ -384,6 +384,8 @@ f.midoku_list_hairetsu[1][0] = 0;
 
 f.fumi_list_all_title.push("三月　「最初の手紙」　四条 華織");
 f.fumi_list_all_storage.push("fumi_sijyou.ks");
+f.fumi_list_sijyou_storage=[];
+f.fumi_list_sijyou_storage.push("fumi_sijyou.ks");
 f.fumi_list_all_target.push("*sijyou_fumi1");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(0);
@@ -1597,7 +1599,7 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 ;1=[emb exp="f.hensin_list_hairetsu[1]"][r]
 ;2=[emb exp="f.hensin_list_hairetsu[2]"],
 ;3=[emb exp="f.hensin_list_hairetsu[3]"][r]
-;4=[emb exp="f.hensin_list_hairetsu[4]"],
+;[emb exp="f.sijyou_fumi_toutyakumachi_shumi"],
 [font size=0][emb exp="f.okeiko_month"]月[emb exp="f.okeiko_week"]週：[font size=25]今週は何をしましょうか？
 [eval exp="f.okeikopart_shuuhajime=0"]
 [else]

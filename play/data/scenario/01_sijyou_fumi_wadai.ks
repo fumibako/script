@@ -1,4 +1,4 @@
-﻿*start
+﻿﻿*start
 *sijyou_wadai_shori
 [iscript]
 	f.para_sijyou_koukando = f.para_sijyou_koukando + f.para_pre_sijyou_koukando;

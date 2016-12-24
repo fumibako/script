@@ -1,14 +1,24 @@
-*fumi_toutyaku_hantei_sijyou
+﻿*fumi_toutyaku_hantei_sijyou
 ;◇四条手紙到着判定
 [eval exp="f.test='手紙到着可能性なし'"]
 [if exp="f.sijyou_fumi_henjimachi <= parseInt([sf.sijyou['fumi_henjimachi_ok_number']])"]
 	[eval exp="f.sijyou_fumi_toutyakumachi_week=f.sijyou_fumi_toutyakumachi_week+1"]
 	[eval exp="f.test='手紙到着可能性あり'+f.sijyou_fumi_toutyakumachi_week+parseInt([sf.sijyou['fumi_hindo_week']])"]
-;　↓f.sijyou_fumi_toutyakumachi_week(四条手紙が前回届いてからの経過週数)が四条の手紙を書く頻度sf.sijyou['fumi_hindo_week'を超えると手紙到着処理解放
-	[if exp="f.sijyou_fumi_toutyakumachi_week >= parseInt([sf.sijyou['fumi_hindo_week']])"]
+[endif]
+;↓f.sijyou_fumi_toutyakumachi_week(四条手紙が前回届いてからの経過週数)が四条の手紙を書く頻度sf.sijyou['fumi_hindo_week'を超えると手紙到着処理解放。判定リストへ飛ぶ
+[if exp="f.sijyou_event6==1 && f.sijyou_fumi_toutyakumachi_week >= parseInt([sf.sijyou['fumi_hindo_week']])"]
+	@jump target=*hantei_list_sijyou
+[endif]
+;↓話題のお返事待ち週数が0になった時にも判定リストへ飛ぶ
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0||f.sijyou_fumi_toutyakumachi_sigoto==0||f.sijyou_fumi_toutyakumachi_kazoku==0||f.sijyou_fumi_toutyakumachi_kisetsu==0||f.sijyou_fumi_toutyakumachi_shourai==0||f.sijyou_fumi_toutyakumachi_yuujin==0||f.sijyou_fumi_toutyakumachi_shokuji==0||f.sijyou_fumi_toutyakumachi_kangeki==0||f.sijyou_fumi_toutyakumachi_neko==0||f.sijyou_fumi_toutyakumachi_kiki==0||f.sijyou_fumi_toutyakumachi_midori==0||f.sijyou_fumi_toutyakumachi_photo==0||f.sijyou_fumi_toutyakumachi_hajimari==0||f.sijyou_fumi_toutyakumachi_music==0||f.sijyou_fumi_toutyakumachi_michi==0||f.sijyou_fumi_toutyakumachi_henka==0||f.sijyou_fumi_toutyakumachi_dokusho==0||f.sijyou_fumi_toutyakumachi_sports==0"]
+	@jump target=*hantei_list_sijyou
+[endif]
+@jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
+[s]
+
+*hantei_list_sijyou
 ;手紙到着：条件有り分
 ;◆◆手紙到着：季節、好感度など条件有り分
-
 ;◆↓手紙一通分の到着判定処理(開始)：『趣味について』
 [if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[2]==0"]
 	[call target=*sijyou_toutyaku_hantei_shori_common]
@@ -21,11 +31,11 @@
 ;f.fumi_toutyaku_sijyou[2]==0…f.fumi_toutyaku_sijyou[]は四条全手紙の到着未着情報管理配列。その[2]が『趣味について（お見合い前）』の手紙の到着(1)or未着(0)を示す
 
 ;↓以下に手紙到着判定処理を記述してください
-;◆↓手紙一通分の到着判定処理(開始)：『趣味について（お見合い前）』
-[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[2]==0"]
-	[call target=*sijyou_toutyaku_hantei_shori_common]
-	@jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
-[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『趣味について（お見合い前）』(重複分をコメントアウトさせていただきます(スクリプト担
+;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[2]==0"]
+;	[call target=*sijyou_toutyaku_hantei_shori_common]
+;	@jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+;[endif]
 ;◆↑手紙一通分の到着判定処理(終了)
 ;(↑if文の中身について)
 ;f.sijyou_fumi_toutyakumachi_shumi==0…『趣味について』の話題の返事待ち週=0週(届く週)
@@ -38,13 +48,13 @@
 ;◆↓手紙一通分の到着判定処理(開始)：『趣味について(お見合い後)』
 [if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_3 //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『家族について(お見合い前)』
 [if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[4]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_4
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『家族について(お見合い後)』
@@ -151,19 +161,19 @@
 ;◆↓手紙一通分の到着判定処理(開始)：春『ヒヨドリ』1
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[21]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_21
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：春『アンズ』1_2/f.okeiko_month==4
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 &&  f.fumi_toutyaku_sijyou[22]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_23
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：春『トキワナズナ』1_3/f.okeiko_month==4
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[23]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_24
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：春『チューリップ』3/f.okeiko_month==4
@@ -175,19 +185,19 @@
 ;◆↓手紙一通分の到着判定処理(開始)：春 『筍』4/f.okeiko_month==4
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[25]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_25
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：夏『すだれ』5/f.okeiko_month==5
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==5 && f.fumi_toutyaku_sijyou[26]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_26
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：夏『すだれ2』5_1/f.okeiko_month==5
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==5 && f.fumi_toutyaku_sijyou[27]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_27
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：夏『ハマナス』5_2/f.okeiko_month==5
@@ -311,8 +321,6 @@
 ;◆◇◆◇◆◇◆◇◆◇◆◇◆____話題の手紙＿＿＿◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
 ;=======================================================================================
 
-	[endif]
-[endif]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 [s]
 
