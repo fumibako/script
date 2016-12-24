@@ -112,14 +112,17 @@
 [endif]
 
 *fumi_cmmon
-
+;============================================================================================================
 ;///////////////////////////////////////△友人について （これは元ファイルにも残してあります)/////////////////////////////////////////
+;============================================================================================================
 *sijyou_yujin_1|(お見合い前)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 [wait time=50]
 『友人について』(お見合い前)
 [p]
-;#
+[endif]
+
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -130,19 +133,30 @@
 君も知ってるだろうけど文矢が友人だよ。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][18] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;/////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
+
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
 [endif]
-
+;============================================================================================================
 *sijyou_yujin_2|(お見合い後)
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 [wait time=50]
 『友人について』(お見合い後)
 [p]
-;#
+[endif]
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ[r]
@@ -154,20 +168,32 @@
 彼の朗らかなところが好きなんだよね[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][19] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
 [endif]
-
+;============================================================================================================
 ;//////////////////////////////////////////////////友人について 凡庸/////////////////////////////////////////
+;============================================================================================================
 *sijyou_yujin_b|(凡庸)
+*sijyou_fumi96
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 [wait time=50]
 『友人について』(お見合い前)
 [p]
-;#
+[endif]
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]へ。　手紙ありがとう。[r]
@@ -178,20 +204,31 @@
 [名前]とその友人がいつも楽しくありますように。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][95] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
 [endif]
-
+;============================================================================================================
 ;凡庸難しい
 *sijyou_yujin_b2|(凡庸)
+*sijyou_fumi97
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 [wait time=50]
 『友人について凡庸』(お見合い後)
 [p]
-;#
+[endif]
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]さんへ　手紙をありがとうございます。[r]
@@ -201,18 +238,31 @@
 [名前]さんと御友人がいつも楽しくありますように。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][96] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 
 [if exp=tf.test_sijyou==true]
 [clearstack]
 @jump target="*test"
 [endif]
+;============================================================================================================
 ;///////////////////////////////////////////////////////////新茶の話題/////////////////////////////
+;============================================================================================================
 *sincya
 *sijyou_fumi47
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 [wait time=50]
 新茶の話題（事件前）[[p]
+[endif]
 [手紙四条 fumi_number=]
 [名前]、手紙をありがとう。[r]
 [r]
@@ -228,6 +278,15 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][46] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 
 *sincya_1
@@ -254,6 +313,15 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][47] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 
 [if exp=tf.test_sijyou==true]
@@ -277,6 +345,15 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][48] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 
 [if exp=tf.test_sijyou==true]
@@ -301,6 +378,15 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][49] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 [if exp=tf.test_sijyou==true]
 [clearstack]
@@ -324,6 +410,15 @@
 [名前]なら、こんな失敗はしないのだろうね。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][50] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 [if exp=tf.test_sijyou==true]
 [clearstack]
@@ -346,6 +441,15 @@
 お茶を飲むと落ち着くよね[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="f.midoku_list_hairetsu[2][51] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
 [if exp=tf.test_sijyou==true]
 [clearstack]
