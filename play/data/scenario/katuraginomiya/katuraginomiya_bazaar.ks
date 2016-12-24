@@ -117,7 +117,7 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】;野点傘と縁談の背景
 [chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -282,9 +282,8 @@
 ;=================================================================
 [暗転２]
 ;【背景】;野点傘と縁談の背景
-;【背景】仲人庭園 
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [葛城宮ベース私服]
 [葛城宮微笑み]
 [暗転２終了]
