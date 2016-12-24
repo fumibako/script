@@ -1,4 +1,4 @@
-﻿;==============================
+﻿﻿;==============================
 ;layer8：他キャラbase（のっぺらぼう）
 ;layer9:他キャラ口
 ;layer10:他キャラ目
@@ -30,6 +30,71 @@
 [chara_show left=1 top=1 layer=12 name="hujieda_emo" time=0]
 [wait time=10]
 
+;◆◆立ち絵画像サイズ：(x)1800x(y)1200を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される…といいな
+[eval exp="f.hujieda_tatie_moto_width=1800"]
+[eval exp="f.hujieda_tatie_moto_height=1200"]
+;◆立ち絵【通常サイズ】のwidth、height、left、top設定（現状は黒田とサイズ合わせをしています。後日全キャラの立ち絵が揃ってから再調整予定です
+[eval exp="f.hujieda_tatie_tuujou_width=f.hujieda_tatie_moto_width*0.56"]
+[eval exp="f.hujieda_tatie_tuujou_height=f.hujieda_tatie_moto_height*0.56"]
+[eval exp="f.hujieda_tatie_tuujou_left=-20"]
+[eval exp="f.hujieda_tatie_tuujou_top=-10"]
+;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（現状は作成いただいたサイズマクロでの「アップ」時の倍率に合わせてあります。ご希望の倍率があれば調整してください。後日全キャラの立ち絵が揃ってから再調整予定のため、ご希望通りにいかない可能性もありますがご了承ください
+[eval exp="f.hujieda_tatie_tonari_width=f.hujieda_tatie_moto_width*0.53"]
+[eval exp="f.hujieda_tatie_tonari_height=f.hujieda_tatie_moto_height*0.53"]
+[eval exp="f.hujieda_tatie_tonari_left=206"]
+[eval exp="f.hujieda_tatie_tonari_top=-10"]
+;◆立ち絵【サイズ：顔アップ】のwidth、height、left、top設定（ご希望の倍率があれば調整してください。後日全キャラの立ち絵が揃ってから再調整予定のため、ご希望通りにいかない可能性もありますがご了承ください
+[eval exp="f.hujieda_tatie_up_width=f.hujieda_tatie_moto_width*1"]
+[eval exp="f.hujieda_tatie_up_height=f.hujieda_tatie_moto_height*1"]
+[eval exp="f.hujieda_tatie_up_left=-100"]
+[eval exp="f.hujieda_tatie_up_top=-200"]
+;[藤枝アップ]
+[macro name="藤枝アップ"]
+;name属性を指定してアニメーション
+[anim name="hujieda_kuti" effect=easeInCirc opacity=0 time=100]
+[anim name="hujieda_me" effect=easeInCirc opacity=0 time=100]
+[anim name="hujieda_mayu" effect=easeInCirc opacity=0 time=100]
+[anim name="hujieda_emo" effect=easeInCirc opacity=0 time=100]
+[anim name="hujieda_base" time=1000 effect=easeInCirc opacity=0 time=100]
+[wa]
+[anim name="hujieda_base" width=&f.hujieda_tatie_up_width top=&f.hujieda_tatie_up_top height=&f.hujieda_tatie_up_height left=&f.hujieda_tatie_up_left]
+[anim name="hujieda_kuti" width=&f.hujieda_tatie_up_width top=&f.hujieda_tatie_up_top height=&f.hujieda_tatie_up_height left=&f.hujieda_tatie_up_left]
+[anim name="hujieda_me" width=&f.hujieda_tatie_up_width top=&f.hujieda_tatie_up_top height=&f.hujieda_tatie_up_height left=&f.hujieda_tatie_up_left]
+[anim name="hujieda_mayu" width=&f.hujieda_tatie_up_width top=&f.hujieda_tatie_up_top height=&f.hujieda_tatie_up_height left=&f.hujieda_tatie_up_left]
+[anim name="hujieda_emo" width=&f.hujieda_tatie_up_width top=&f.hujieda_tatie_up_top height=&f.hujieda_tatie_up_height left=&f.hujieda_tatie_up_left]
+[wa]
+[anim name="hujieda_kuti" time=1001 effect=easeInCirc opacity=255]
+[anim name="hujieda_me" time=1001 effect=easeInCirc opacity=255]
+[anim name="hujieda_mayu" time=1001 effect=easeInCirc opacity=255]
+[anim name="hujieda_emo" time=1001 effect=easeInCirc opacity=255]
+[anim name="hujieda_base" time=1000 effect=easeInCirc opacity=255]
+[wa]
+[endmacro]
+
+;[藤枝サイズ通常]
+[macro name="藤枝サイズ通常"]
+;name属性を指定してアニメーション
+[anim name="hujieda_kuti" effect=easeInCirc opacity=0 time=100]
+[anim name="hujieda_me" effect=easeInCirc opacity=0 time=100]
+[anim name="hujieda_mayu" effect=easeInCirc opacity=0 time=100]
+[anim name="hujieda_emo" effect=easeInCirc opacity=0 time=100]
+[anim name="hujieda_base" time=1000 effect=easeInCirc opacity=0 time=100]
+[wa]
+[anim name="hujieda_base" width=&f.hujieda_tatie_tuujou_width top=&f.hujieda_tatie_tuujou_top height=&f.hujieda_tatie_tuujou_height left=&f.hujieda_tatie_tuujou_left]
+[anim name="hujieda_kuti" width=&f.hujieda_tatie_tuujou_width top=&f.hujieda_tatie_tuujou_top height=&f.hujieda_tatie_tuujou_height left=&f.hujieda_tatie_tuujou_left]
+[anim name="hujieda_me" width=&f.hujieda_tatie_tuujou_width top=&f.hujieda_tatie_tuujou_top height=&f.hujieda_tatie_tuujou_height left=&f.hujieda_tatie_tuujou_left]
+[anim name="hujieda_mayu" width=&f.hujieda_tatie_tuujou_width top=&f.hujieda_tatie_tuujou_top height=&f.hujieda_tatie_tuujou_height left=&f.hujieda_tatie_tuujou_left]
+[anim name="hujieda_emo" width=&f.hujieda_tatie_tuujou_width top=&f.hujieda_tatie_tuujou_top height=&f.hujieda_tatie_tuujou_height left=&f.hujieda_tatie_tuujou_left]
+[wa]
+[anim name="hujieda_kuti" time=1001 effect=easeInCirc opacity=255]
+[anim name="hujieda_me" time=1001 effect=easeInCirc opacity=255]
+[anim name="hujieda_mayu" time=1001 effect=easeInCirc opacity=255]
+[anim name="hujieda_emo" time=1001 effect=easeInCirc opacity=255]
+[anim name="hujieda_base" time=1000 effect=easeInCirc opacity=255]
+[wa]
+[endmacro]
+
+
 
 ;立ち絵表示[藤枝ベース郵便屋]
 [macro name="藤枝ベース郵便屋"]
@@ -37,10 +102,21 @@
 [wait time=10]
 [endmacro]
 
+;立ち絵表示[藤枝ベース郵便屋_手紙無し]
+[macro name="藤枝ベース郵便屋_手紙無し"]
+[chara_mod name="hujieda_base" storage="hujieda/base_yuubin_tegaminasi.png" time=0]
+[wait time=10]
+[endmacro]
 
 ;立ち絵表示[藤枝ベース私服]
 [macro name="藤枝ベース私服"]
 [chara_mod name="hujieda_base" storage="hujieda/base_sifuku.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[藤枝ベース私服_楽譜無し]
+[macro name="藤枝ベース私服_楽譜無し"]
+[chara_mod name="hujieda_base" storage="hujieda/base_sifuku_gakufunasi.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -396,5 +472,5 @@
 [wait time=10]
 [endmacro]
 
-
+[藤枝サイズ通常]
 [return]

@@ -1,3 +1,7 @@
+﻿;↓◆B4nFWraU42さん作のマクロを使用させていただきました。ありがとうございます
+[表示準備 storage="bg/plane_mizuiro.jpg"]
+[layopt layer=29 visible=true]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [preload storage="data/fgimage/hujieda/base_yuubin.png"]
 [preload storage="data/fgimage/hujieda/base_sifuku.png"]
@@ -19,12 +23,13 @@
 ;背景変更
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
 [イベントシーン構築]
-
+;[藤枝サイズ通常]
 [藤枝ベース郵便屋]
 [eval exp="f.gra_hujieda_pose='[藤枝ベース郵便屋]'"]
 [藤枝通常]
 [eval exp="f.gra_hujieda_face='[藤枝通常]'"]
 [eval exp="f.gra_hujieda_part='mayu'"]
+[表示開始]
 
 *text
 [cm]
@@ -35,9 +40,9 @@
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
 [glink target="pose_01" text="[藤枝ベース郵便屋]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
-[glink target="pose_02" text="[藤枝ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
-;[glink target="pose_03" text="[藤枝]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
-;[glink target="pose_04" text="[藤枝]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
+[glink target="pose_03" text="[藤枝ベース郵便屋_手紙無し]" graphic="select_waku_x500.png" size=12 width="160" x=0 y=60 color=white]
+[glink target="pose_02" text="[藤枝ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
+[glink target="pose_04" text="[藤枝ベース私服_楽譜無し]" graphic="select_waku_x500.png" size=12 width="160" x=0 y=120 color=white]
 
 [glink target="face_01" text="[藤枝通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 color=white]
 [glink target="face_09" text="[藤枝笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 color=white]
@@ -149,13 +154,13 @@
 @jump target=text
 
 *pose_03
-;[藤枝]
-[eval exp="f.gra_hujieda_pose='[藤枝]'"]
+[藤枝ベース郵便屋_手紙無し]
+[eval exp="f.gra_hujieda_pose='[藤枝ベース郵便屋_手紙無し]'"]
 @jump target=text
 
 *pose_04
-;[藤枝]
-[eval exp="f.gra_hujieda_pose='[藤枝]'"]
+[藤枝ベース私服_楽譜無し]
+[eval exp="f.gra_hujieda_pose='[藤枝ベース私服_楽譜無し]'"]
 @jump target=text
 
 *face_01
