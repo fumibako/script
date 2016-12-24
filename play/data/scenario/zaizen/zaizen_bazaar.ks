@@ -337,7 +337,7 @@
 [wait time=10]
 [財前退場]
 ;【背景】バザー会場　売店　売り子場面　近景とは別枠にしないとおかしい
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity3.jpg" time=50]
+[chara_mod name="bg" storage="bg/bg_cyarity4.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -610,7 +610,7 @@
 [暗転２]
 ;背景バザー出店描けるといいんですが（汗
 ;【背景】背景バザー出店（入り口）
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity3.jpg" time=50]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity51.jpg" time=50]
 [暗転２終了]
 ;=================================================================
 
