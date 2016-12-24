@@ -1562,7 +1562,7 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="f.midoku_list_hairetsu[2][43] = 0;"]
+[eval exp="f.midoku_list_hairetsu[2][42] = 0;"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -1612,7 +1612,7 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="f.midoku_list_hairetsu[2][44] = 0;"]
+[eval exp="f.midoku_list_hairetsu[2][43] = 0;"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -1648,7 +1648,7 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="f.midoku_list_hairetsu[2][45] = 0;"]
+[eval exp="f.midoku_list_hairetsu[2][44] = 0;"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -1681,7 +1681,7 @@ _　3月には、いよいよ[名前]との結納ですね。 [r]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="f.midoku_list_hairetsu[2][46] = 0;"]
+[eval exp="f.midoku_list_hairetsu[2][45] = 0;"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
