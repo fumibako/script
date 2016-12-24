@@ -160,7 +160,8 @@
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="f.midoku_list_hairetsu[2][3] = 0;"]
+;↓右側の[2]の部分は01_sijyou_fumi_toutyaku_shori_list.ksのラベル数値-1となります(スクリプト担
+[eval exp="f.midoku_list_hairetsu[2][2] = 0;"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -193,7 +194,7 @@
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="f.midoku_list_hairetsu[2][4] = 0;"]
+[eval exp="f.midoku_list_hairetsu[2][3] = 0;"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -815,7 +816,8 @@
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="f.midoku_list_hairetsu[2][21] = 0;"]
+;↓[20]の部分はラベル数値-1となります(スクリプト担
+[eval exp="f.midoku_list_hairetsu[2][20] = 0;"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
