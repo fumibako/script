@@ -197,7 +197,7 @@
 ;【立ち絵】藤枝：目伏せ
 [藤枝憂い]
 「迷ってましたが、皆、僕の背中を押してくれています。[r]
-[sp]それに留学の話をと聞いた学校在学中の時から[r]
+[sp]それに在学中の時に留学の話をと聞いてから[r]
 [sp]ずっと行きたいと思っていました」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -242,7 +242,7 @@
 [藤枝退場準備 storage="bg/bg_genkan.jpg" time=400]
 #
 そして藤枝様は持っていた手紙を磯野に渡し、[r]
-自転車に乗って行きました。[p]
+自転車に乗って去っていった。[p]
 [fadeoutbgm time=3000]
 
 ;@jump storage="event.ks" target=*event_owari
