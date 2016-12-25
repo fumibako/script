@@ -381,7 +381,7 @@ $('.oto').remove();
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[藤枝ベース私服]
+[藤枝ベース私服_楽譜無し]
 [藤枝通常]
 [イベントシーン構築ボタン無し版枠茶色]
 [freeimage layer = 29 time=1000]
@@ -405,7 +405,7 @@ $('.oto').remove();
 [whosay name="藤枝 肇" color=%mp.color] 
 「はい。少し待たせて頂きます」[p]
 
-[藤枝ベース私服_楽譜無し]
+
 ;【立ち絵】藤枝：微笑み
 [藤枝微笑み]
 （そうだ、待っている間手紙を読もう）[p]
