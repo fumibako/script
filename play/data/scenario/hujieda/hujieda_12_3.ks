@@ -54,7 +54,7 @@
 
 [whosay name="女中"]
 「三宮家の時子様です。[r]
-[sp]お嬢様にお会いしたいという事でしたが、[ruby text=い]如[ruby text=かが]何しましょうか？」[p]
+[sp]お嬢様にお会いしたいという事でしたが、[ruby text=い]如[ruby text=かが]何いたしましょうか？」[p]
 ;漢字で短く
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -152,9 +152,9 @@
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-そして、やっとほっとした。[p]
+そして、やっと少し気持ちが落ち着いた[p]
 
-;涙も枯れ果てた頃、（この場合は暗転から選択肢）
+涙も枯れ果てた頃、[p]
 [主人公効果消]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 #
