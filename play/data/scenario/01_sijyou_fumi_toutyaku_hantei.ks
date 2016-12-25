@@ -195,20 +195,20 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_26
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：夏『すだれ2』5_1/f.okeiko_month==5
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==5 && f.fumi_toutyaku_sijyou[27]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：夏『すだれ2』5_1/f.okeiko_month==6
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==6 && f.fumi_toutyaku_sijyou[27]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_27
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：夏『ハマナス』5_2/f.okeiko_month==5
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==5 && f.fumi_toutyaku_sijyou[28]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：夏『ハマナス』5_2/f.okeiko_month==7
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==7 && f.fumi_toutyaku_sijyou[28]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_28
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：夏『かき氷』6/f.okeiko_month==6
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==6 && f.fumi_toutyaku_sijyou[29]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：夏『かき氷』6/f.okeiko_month==7
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==7 && f.fumi_toutyaku_sijyou[29]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_29
 [endif]
@@ -301,7 +301,7 @@
 ;=======================================================================================
 ;！！日付　条件指定未！！
 ;◆↓手紙一通分の到着判定処理(開始)：春『全力』 (『未来へ』をみている)18_ex/f.okeiko_month=＞1　 f.okeiko_week=＞2  f.sijyou_sobo==true
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 &&(f.okeiko_month==1 || f.okeiko_month==2) && f.fumi_toutyaku_sijyou[44]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==1 &&(f.okeiko_month==1 || f.okeiko_month==2) && f.fumi_toutyaku_sijyou[44]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_44
 [endif]
@@ -322,6 +322,68 @@
 ;=======================================================================================
 ;◆◇◆◇◆◇◆◇◆◇◆◇◆____話題の手紙＿＿＿◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
 ;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：新茶の話題１（事件前）sijyou_fumi47
+;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
+ ; [call target=*sijyou_toutyaku_hantei_shori_common]
+  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_3 
+  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
+;[endif]
+;=======================================================================================
+;新茶の話題１（事件後）sijyou_fumi48
+;新茶の話題２（事件後） *sijyou_fumi49
+;新茶の話題３（事件後） *sijyou_fumi50
+;新茶の話題　凡庸（事件前） *sijyou_fumi51
+;新茶の話題　凡庸（事件前） *sijyou_fumi52
+;新茶の話題　凡庸（事件後） *sijyou_fumi55
+;新茶の話題　凡庸（事件後） *sijyou_fumi56
+;さつきの話題 sijyou_fumi57
+;さつきの話題(見合い後) sijyou_fumi58
+;詩集*sijyou_fumi59
+;聞き上手と話し上手１ sijyou_fumi60
+;聞き上手と話し上手１(事件解決後) sijyou_fumi61
+;聞き上手と話し上手２　凡庸 sijyou_fumi62
+;聞き上手と話し上手２　凡庸 sijyou_fumi63
+;聞き上手と話し上手３(事件解決後) sijyou_fumi64
+;食事 sijyou_fumi65
+;食事 凡庸1 sijyou_fumi66
+;食事 凡庸2 sijyou_fumi67
+;緑の石 sijyou_fumi68
+;緑の石　凡庸 sijyou_fumi69
+;緑の石　凡庸(事件後) sijyou_fumi70
+;緑の石３(事件後のみ sijyou_fumi71
+;緑の石４(事件後のみ) sijyou_fumi72
+;『一日のはじまり』ichi_nichi sijyou_fumi73
+;『一日のはじまり２凡庸』ichi_nichi2 sijyou_fumi74
+;『一日のはじまり２＿２凡庸』sijyou_fumi53
+;『一日のはじまり３』ichi_nichi3 sijyou_fumi75
+;『猫』neko*sijyou_fumi76
+;『猫 凡庸』neko2 sijyou_fumi77
+;『猫 凡庸2』sijyou_fumi78
+;『猫３　事件解決後』neko3*sijyou_fumi7
+;『猫４　事件解決後』neko4*sijyou_fumi78
+;『猫５　事件解決後』neko4b*sijyou_fumi79
+;『猫６　事件解決後』neko5*sijyou_fumi80
+;『道』michi*sijyou_fumi81
+;『道２ (事件解決後)』michi2*sijyou_fumi82
+;『お気に入りの曲』kuoku1*sijyou_fumi83
+;『お気に入りの曲２』sijyou_fumi84*kyoku
+;『変化と永遠』*enka1*sijyou_fumi85
+;『変化と永遠 (事件解決後) 』 henka2*sijyou_fumi86
+;『スポーツ』sps*sijyou_fumi88
+;『スポーツ 事件解決後』sps2*sijyou_fumi89
+;『 スポーツ 凡庸1』sps2_1*sijyou_fumi91
+;『 スポーツ 凡庸2』sps2_2 *sijyou_fumi92
+;『観劇の話題　事件前』kangeki *sijyou_fumi93
+;『観劇の話題　事件後』kangeki2 *sijyou_fumi94
+;『写真の話題（事件前）』syasin *sijyou_fumi95
+;『写真の話題（事件後）』syasin2*sijyou_fumi96
+;『友人について凡庸』(お見合い後) sijyou_fumi98
+;=======================================================================================
+
+
+
+
+
 
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 [s]
