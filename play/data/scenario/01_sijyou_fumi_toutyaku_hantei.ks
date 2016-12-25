@@ -366,7 +366,7 @@
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：新茶の話題　凡庸（事件後） sijyou_fumi56
-[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_56
 [endif]
@@ -380,16 +380,16 @@
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：さつきの話題(見合い後) sijyou_fumi58
-;[if exp="f.sijyou_fumi_toutyakumachi_satuki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_58
- ;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_satuki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[58]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_58
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：詩集*sijyou_fumi59
-;[if exp="f.sijyou_fumi_toutyakumachi_dokusho==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_59
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_dokusho==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[59]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_59
+[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手１ sijyou_fumi60
 [if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[60]==0"]
