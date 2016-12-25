@@ -20,8 +20,12 @@
 ;=============================================
 
 [cm]
+;背景変更:和紙風 桜色
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 
-[glink target="test_okeiko" text="お稽古パート" graphic="select_waku_x500.png" size=20 width="300" x=100 y=30 color=white]
+[glink target="test_okeiko_sijyou" text="お稽古パート(四条)" graphic="select_waku_x500.png" size=20 width="300" x=100 y=30 color=white]
+
+[glink target="test_okeiko" text="お稽古パート(他)" graphic="select_waku_x500.png" size=20 width="300" x=450 y=30 color=white]
 
 ;[glink target="test1" text="四条テスト" graphic="select_waku_x500.png" size=20 width="500" x=100 y=100 color=white]
 
@@ -132,10 +136,18 @@
 *test_okeiko
 [cm]
 [eval exp="tf.test_gamen=true"]
+[eval exp="tf.test_gamen_sijyou=false"]
 [freeimage layer = 26]
 @jump storage="okeiko.ks"
 [s]
 
+*test_okeiko_sijyou
+[cm]
+[eval exp="tf.test_gamen=true"]
+[eval exp="tf.test_gamen_sijyou=true"]
+[freeimage layer = 26]
+@jump storage="okeiko.ks"
+[s]
 
 *title
 ;------タイトルへ戻る

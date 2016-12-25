@@ -1,4 +1,4 @@
-@clearstack
+﻿@clearstack
 
 ;==============================
 ; タイトル画面
@@ -19,6 +19,8 @@
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+[eval exp="tf.test_gamen_sijyou=false"]
+[eval exp="tf.test_gamen=false"]
 
 [hidemenubutton]
 

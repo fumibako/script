@@ -3,6 +3,7 @@
 *fumibako
 [freeimage layer = 26]
 [freeimage layer = 27]
+@layopt layer=message1 page=fore visible = false
 
 [clearfix]
 [cm]
@@ -1532,6 +1533,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 
 ;◆◆攻略対象情報画面(お稽古画面から「情報」ボタンを押すと表示される)
 *info_oaite
+@layopt layer=message1 page=fore visible = false
 [freeimage layer = 26]
 [freeimage layer = 27]
 [clearfix]

@@ -1,9 +1,9 @@
 ﻿*start
 *sansaku
+@layopt layer=message1 page=fore visible = false
 [freeimage layer = 26]
 [freeimage layer = 27]
 
-[call target=*start storage="macro_tati_girl.ks"]
 
 [if exp="f.para_shujinkou_tairyoku_now < 1"]
 [chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
@@ -35,6 +35,10 @@
 [iscript]
 TG.stat.stack["call"] = [];
 [endscript]
+[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
 
 ;-----設定タグここから-----
 [if exp="sf.BGM=='OFF'"]
@@ -89,53 +93,53 @@ TG.stat.play_se = true;
 [freeimage layer = 20]
 
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
-[chara_new name="girl_base" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=15 name="girl_base" time=0]
-[wait time=10]
-[chara_new name="girl_mayu" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=16 name="girl_mayu" time=0]
-[wait time=10]
-[chara_new name="girl_me" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=17 name="girl_me" time=0]
-[wait time=10]
-[chara_new name="girl_kuti" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=18 name="girl_kuti" time=0]
-[wait time=10]
-[chara_new name="girl_emo" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=19 name="girl_emo" time=0]
-[wait time=10]
-[chara_new name="girl_te" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=20 name="girl_te" time=0]
-[wait time=10]
+;[chara_new name="girl_base" storage="toumei.gif"]
+;[chara_show left=1 top=381 layer=15 name="girl_base" time=0]
+;[wait time=10]
+;[chara_new name="girl_mayu" storage="toumei.gif"]
+;[chara_show left=1 top=381 layer=16 name="girl_mayu" time=0]
+;[wait time=10]
+;[chara_new name="girl_me" storage="toumei.gif"]
+;[chara_show left=1 top=381 layer=17 name="girl_me" time=0]
+;[wait time=10]
+;[chara_new name="girl_kuti" storage="toumei.gif"]
+;[chara_show left=1 top=381 layer=18 name="girl_kuti" time=0]
+;[wait time=10]
+;[chara_new name="girl_emo" storage="toumei.gif"]
+;[chara_show left=1 top=381 layer=19 name="girl_emo" time=0]
+;[wait time=10]
+;[chara_new name="girl_te" storage="toumei.gif"]
+;[chara_show left=1 top=381 layer=20 name="girl_te" time=0]
+;[wait time=10]
 
 
 *sansaku_machi
 
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[eval exp="f.message_storage='message_bg/frame_red.png'"]
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;[eval exp="f.message_storage='message_bg/frame_red.png'"]
+;[chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;[chara_show left=1 top=391 layer=10 name="message_bg"]
 
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save time=1]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load time=1 ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog time=1]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip time=1]
-[locate x=910 y=390]
+;[locate x=530 y=357]
+;[button name="message_save" graphic="button_message_save.png" role=save time=1]
+;[locate x=630 y=357]
+;[button name="message_load" graphic="button_message_load.png" role=load time=1 ]
+;[locate x=730 y=357]
+;[button name="message_backlog" graphic="button_message_log.png" role=backlog time=1]
+;[locate x=830 y=357]
+;[button name="message_skip" graphic="button_message_skip.png" role=skip time=1]
+;[locate x=910 y=390]
 ;散策機能はcallで呼び出されるので、fixボタンが使えない…けどcallスタックを消して使ってみる
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" time=1]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
+;[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" time=1]
+;[wait time=10]
+;[eval exp="sf.FButton='ON'"]
 
 ;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+;[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;@layopt layer=message0 page=fore visible=true
+;[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
+;[chara_config ptext="chara_name_area"]
 
 ;◆◆散策機能_イベント発生判定
 *sansaku_machi_event_hantei
@@ -154,9 +158,9 @@ TG.stat.play_se = true;
 	@jump target=*sansaku_machi_common_02
 [endif]
 
-;◆共通イベント3判定【さつき】5月3週～6月2週、期間中に町へ行くと1度だけ発生(旧：黒田イベント1から共通3に変更f.event_machi_kuroda[1]は欠番とします)
-[if exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_common[3]==0"]
-@jump target=*sansaku_machi_common_03
+;◆黒田イベント1判定【さつき】5月3週～6月2週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
+[if exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_kuroda[1]==0 && f.para_kuroda_koukando > 5"]
+	@jump target=*sansaku_machi_kuroda_01
 [endif]
 
 ;◆黒田イベント3判定【黒田家のうわさ１】7月1週～4週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
@@ -184,6 +188,8 @@ TG.stat.play_se = true;
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
+[イベントシーン構築]
+[wait time=10]
 
 ;◆主人公画像(S表示【マクロで切り替え】
 [主人公ポーズ通常]
@@ -340,6 +346,8 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -356,11 +364,11 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [wait time=10]
 
 [whosay name="呼び込み" color="#807070"]
-「暖かいミルクコオヒ[ruby text="イ"]ヰはいかが～」[r]
+「暖かいミルクコオヒ[ruby text="イ"]ヰはいかが～」[p]
 香ばしい香りがふわりと鼻をくすぐる。[p]
 
 [whosay name="三宮　時子" color="#c25232"]
-「あら。[名前]さんじゃない。ごきげんよう」[r]
+「あら。[名前]さんじゃない。ごきげんよう」[p]
 そう呼びとめたのは華族の友人だった。
 [autosave]
 [p]
@@ -455,7 +463,7 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [wait time=10]
 [主人公ほほえみ]
 [wait time=10]
-[sp]お互いに、楽しい文通が続きますように。」[p]
+[sp]お互いに、楽しい文通が続きますように」[p]
 [主人公閉目パチ1回]
 [wait time=10]
 「……そして、いつかお会いできますように」[p]
@@ -477,10 +485,6 @@ f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,1,2,-1,1,"a","","",3,"");
 [endscript]
-;話題配列の内訳："話題名",黒田好感度上下値,財前好感度上下値,四条好感度上下値,自由枠1好感度上下値,自由枠2好感度上下値,"話題の距離感をabc表記
-;(a：初期で話題に出してok、b:各キャラ好感度がb値に達して以降話題に出しても好感度が減らなくなる、c:各キャラ好感度がc値に達して以降話題に出しても好感度が減らなくなる)",その話題を特に好むキャラを配列数値で表示,その話題を特に好むキャラを配列数値で表示,その話題を特に苦手なキャラを配列数値で表示,その話題を特に苦手なキャラを配列数値で表示
-;キャラ配列数値：1=黒田、2=財前、3=四条、4=自由枠1、5=自由枠2
-;話題配列の各数値は黒田ルート作成時に仮でテスト入力したものです。今後各シナリオをゲーム本編に組み込む際に調整します
 
 [layopt layer=26 visible=true]
 [wait time=10]
@@ -517,6 +521,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,1,2,-1,1
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -630,7 +636,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,1,2,-1,1
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name=お茶屋の娘 color="#5b7e23"]
-「よかったら、手にとってご覧くださいな」[r]
+「よかったら、手にとってご覧くださいな」[p]
 と桶から枝を一本とりサッと水を拭いてこちらに示す。
 [autosave]
 [p]
@@ -733,9 +739,9 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1
 @jump target=*sansaku_machi_seika
 
 ;=============================================
-;◆町_共通イベント03「さつき」
-;イベント発生条件：5月3週～6月2週、期間中に町へ行くと1度だけ発生
-*sansaku_machi_common_03
+;◆町_黒田イベント01「さつき」
+;イベント発生条件：5月3週～6月2週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
+*sansaku_machi_kuroda_01
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -744,10 +750,12 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1
 [if exp="sf.KSKIP=='ON' && sf.trail_sansaku_machi_kuroda_01==undefined"]
 	[skipstop]
 [endif]
-*machi_common_03
+*machi_kuroda_01
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -839,11 +847,11 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お花も鮮やかで、色々なさつきを見られて眼福だったわ」[p]
 [freeimage layer = 26]
-[eval exp="f.event_machi_common[3]=1"]
+[eval exp="f.event_machi_kuroda[1]=1"]
 @jump target=*sansaku_machi_seika
 
 ;=============================================
-;◆町_黒田イベント02「麦」（黒田イベント01は欠番のため02から開始します）
+;◆町_黒田イベント02「麦」
 ;イベント発生条件：6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
 *sansaku_machi_kuroda_02
 ;◆既読スキップ開始
@@ -858,6 +866,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-
 ;【背景】主人公邸_庭
 [背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
+[wait time=10]
 ;【SE】鳥のさえずり
 [playse storage=tori_yatyou.ogg loop=false ]
 [主人公ポーズ通常]
@@ -1064,6 +1074,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -1123,6 +1135,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -1188,6 +1202,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -1321,6 +1337,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築]
+[wait time=10]
 ;【立ち絵】主人公：伏目
 [主人公ポーズ通常]
 [wait time=10]

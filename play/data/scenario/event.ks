@@ -1,4 +1,5 @@
 *start
+@layopt layer=message1 page=fore visible = false
 [freeimage layer = 26]
 [freeimage layer = 27]
 

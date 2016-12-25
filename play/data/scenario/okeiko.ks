@@ -2,8 +2,11 @@
 ;↓◆お稽古パート経由かどうか見るための変数
 [eval exp="tf.okeiko_gamen=true"]
 [skipstop]
+
+[call target=*start storage="01_sijyou_hensuu.ks"]
+[call target=*start storage="hensuu.ks"]
+
 ;[setreplay name="okeiko"]
-;背景変更:和紙風 桜色
 
 ;手紙の話題リスト（初期話題）を読込んで配列f.wadai_list_hairetsu[i][j]に格納。
 ;[i]部分が話題の種類
@@ -34,11 +37,73 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 *complete_load_wadai_list_hairetsu
 
 [if exp="tf.test_gamen==true"]
+;背景変更:和紙風 桜色
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [cm]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
+
+[if exp="tf.test_gamen_sijyou!=true"]
 [イベントシーン構築]
+[cm]
 テスト画面からお稽古パートをはじめます。[r]
+@jump target=*test_start_common
+[elsif exp="tf.test_gamen_sijyou==true"]
+@layopt layer=29 visible=true
+[ptext text="テスト画面からお稽古パート(四条)をはじめます。テスト用設定をお願いします。" layer=29 size=20 x=70 y=10 color=darkslateblue bold=bold]
+[ptext text="四条：返信速度設定（0で全て翌週届きます。0以外の値で本来の設定通り動作します)" layer=29 size=15 x=100 y=40 color=darkslateblue bold=bold]
+[edit left=100 top=60 width=200 length=200 maxchars=3 name="tf.test_sijyou_fumi_hensin_speed" height=20]
+
+[ptext text="四条：好感度（元の設定値=10)" layer=29 size=15 x=100 y=90 color=darkslateblue bold=bold]
+[edit left=100 top=110 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
+
+[ptext text="四条ルートに入った後=1。それ以外=0" layer=29 size=15 x=100 y=140 color=darkslateblue bold=bold]
+[edit left=100 top=160 width=200 length=200 maxchars=3 name="f.sijyou_au" height=20]
+
+[ptext text="四条：お見合い後=1。それ以外=0" layer=29 size=15 x=100 y=190 color=darkslateblue bold=bold]
+[edit left=100 top=210 width=200 length=200 maxchars=3 name="f.sijyou_omiai" height=20]
+
+[ptext text="四条：イベント6後=1。それ以外=0" layer=29 size=15 x=100 y=240 color=darkslateblue bold=bold]
+[edit left=100 top=260 width=200 length=200 maxchars=3 name="f.sijyou_event6" height=20]
+
+[ptext text="ゲームの進行度：" layer=29 size=15 x=100 y=290 color=darkslateblue bold=bold]
+[edit left=100 top=310 width=50 length=200 maxchars=2 name="f.okeiko_month" height=20]
+[ptext text="月" layer=29 size=15 x=160 y=310 color=darkslateblue bold=bold]
+
+[edit left=180 top=310 width=50 length=200 maxchars=2 name="f.okeiko_week" height=20]
+[ptext text="週" layer=29 size=15 x=240 y=310 color=darkslateblue bold=bold]
+
+[iscript]
+//入力済デフォルト値の設定
+$("input[name='tf.test_sijyou_fumi_hensin_speed']").val("0");
+$("input[name='f.para_sijyou_koukando']").val("40");
+$("input[name='f.sijyou_au']").val("0");
+$("input[name='f.sijyou_omiai']").val("0");
+$("input[name='f.sijyou_event6']").val("0");
+$("input[name='f.okeiko_month']").val("4");
+$("input[name='f.okeiko_week']").val("1");
+[endscript]
+;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
+[button graphic="kettei.png" target=*test_settei_kettei x=150 y=400 width=100 height=100]
+
+[s]
+*test_settei_kettei
+;入力値を数値化。フォームが表示されていることが大切。公式リファレンスより
+[iscript]
+tf.test_sijyou_fumi_hensin_speed = parseInt($("input[name='tf.test_sijyou_fumi_hensin_speed']").val());
+f.para_sijyou_koukando = parseInt($("input[name='f.para_sijyou_koukando']").val());
+f.sijyou_au = parseInt($("input[name='f.sijyou_au']").val());
+f.sijyou_omiai = parseInt($("input[name='f.sijyou_omiai']").val());
+f.sijyou_event6 = parseInt($("input[name='f.sijyou_event6']").val());
+f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
+f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
+[endscript]
+[cm]
+[freeimage layer = 29]
+[endif]
+
+*test_start_common
+[イベントシーン構築]
 手紙の「話題」を全て入手済みにしますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -52,6 +117,7 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [link target=*okeiko_wadai_all_plus_no]い　い　え[endlink][r]
 [resetfont]
 [s]
+
 
 *okeiko_wadai_all_plus_ok
 
@@ -169,7 +235,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠について
 お稽古パートをはじめます。[p]
 [イベントシーン終了]
 [current layer="message0"]
-@layopt layer=message0 page=fore visible=true
+@layopt layer=message1 page=fore visible = false
+@layopt layer=message0 page=fore visible = false
 
 @jump target=okeiko
 
@@ -179,7 +246,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠について
 話題は初期状態でスタートします[p]
 [イベントシーン終了]
 [current layer="message0"]
-@layopt layer=message0 page=fore visible=true
+@layopt layer=message1 page=fore visible = false
+@layopt layer=message0 page=fore visible = false
 @jump target=okeiko
 [s]
 [endif]
@@ -208,9 +276,11 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠について
 
 
 [cm]
-;ゲーム変数値数値を代入（月, 週, 月始め切り替え背景など
+;ゲーム変数値数値を代入（月, 週, 月始め切り替え背景など。テスト画面経由時以外に実行
+[if exp="tf.test_gamen!=true"]
 [eval exp="f.okeiko_month = 4"]
 [eval exp="f.okeiko_week = 1"]
+[endif]
 [eval exp="f.okeiko_bg_tukihajime = 'bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
 [eval exp="f.sysgra_okeiko_month = 'button/kanji_' + f.okeiko_month + '.png'"]
 [eval exp="f.sysgra_okeiko_week = 'button/kanji_' + f.okeiko_week + '.png'"]
@@ -237,8 +307,6 @@ f.preload_images = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_kat
 [chara_show left=300 top=220 layer=23 name="sys_fukidasi" time=0]
 [wait time=10]
 
-[call target=*start storage="01_sijyou_hensuu.ks"]
-[call target=*start storage="hensuu.ks"]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
@@ -1535,6 +1603,19 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 @jump target=*fumi_hyouji
 [endif]
 [cm]
+
+[if exp="tf.test_gamen_sijyou==true"]
+@layopt layer=message1 page=fore visible = false
+[current layer="message1"]
+;メッセージレイヤサイズをテスト表示用に設定変更
+[position layer=message1 left=0 width=500 height=100 top=120 page=fore color=white opacity=150]
+@layopt layer=message1 page=fore visible = true
+[font color=olivedrab size=15]
+四条テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_sijyou_fumi_hensin_speed"],好感度[emb exp="f.para_sijyou_koukando"][r]
+四条ルート(1○,0×)=[emb exp="f.sijyou_au"],お見合い(1後,0未)=[emb exp="f.sijyou_omiai"],イベント6(1後,0未)=[emb exp="f.sijyou_event6"][r]
+[resetfont]
+[endif]
+
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
@@ -1599,7 +1680,6 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 ;1=[emb exp="f.hensin_list_hairetsu[1]"][r]
 ;2=[emb exp="f.hensin_list_hairetsu[2]"],
 ;3=[emb exp="f.hensin_list_hairetsu[3]"][r]
-;[emb exp="f.sijyou_fumi_toutyakumachi_shumi"],
 [font size=0][emb exp="f.okeiko_month"]月[emb exp="f.okeiko_week"]週：[font size=25]今週は何をしましょうか？
 [eval exp="f.okeikopart_shuuhajime=0"]
 [else]
@@ -1615,7 +1695,55 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 他にも何かしましょうか？
 [endif]
 ;[return]
+[if exp="tf.test_gamen==true"]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
+[endif]
 [s]
 
 ;[endreplay] 
+
+*back_test
+[ct]
+[clearfix]
+[clearstack]
+[skipstop]
+[stopse]
+@layopt layer=message0 page=fore visible = false
+@layopt layer=message1 page=fore visible = false
+
+;◆全レイヤクリア
+[freeimage layer = 0]
+[freeimage layer = 1]
+[freeimage layer = 2]
+[freeimage layer = 3]
+[freeimage layer = 4]
+[freeimage layer = 5]
+[freeimage layer = 6]
+[freeimage layer = 7]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 13]
+[freeimage layer = 14]
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+[freeimage layer = 21]
+[freeimage layer = 22]
+[freeimage layer = 23]
+[freeimage layer = 24]
+[freeimage layer = 25]
+[freeimage layer = 26]
+[freeimage layer = 27]
+[freeimage layer = 28]
+[freeimage layer = 29]
+[chara_new name="bg" storage="bg/title.jpg"]
+[chara_show left=1 top=1 layer=1 name="bg" time=0]
+@jump storage="test.ks"
+[s]
 
