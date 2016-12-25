@@ -392,269 +392,245 @@
 ;[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手１ sijyou_fumi60
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_60
- ;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[60]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_60
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手１(事件解決後) sijyou_fumi61
-;[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_61
+[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[61]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_61
   [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手２　凡庸 sijyou_fumi62
-;[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_62
-  ;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[62]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_62
+[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手２　凡庸 sijyou_fumi63
-;[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_63
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[63]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_63
+[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手３(事件解決後) sijyou_fumi64
-;[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_64
- ;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[64]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_64
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：食事 sijyou_fumi65 f.sijyou_fumi_toutyakumachi_shokuji
-;[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_65
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[65]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_65
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：食事2 凡庸A sijyou_fumi66
-;[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_66
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[66]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_66
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：食事2 凡庸B sijyou_fumi67
-;[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_67
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[67]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_67
+   [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石 sijyou_fumi68
-;[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_47
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[68]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_68
+  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石2　凡庸 sijyou_fumi69
-;[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_47
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[69]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_69
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石2　凡庸(事件後) sijyou_fumi70
-;[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_70
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[70]==0"]
+ [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_70
+[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石３(事件後のみ sijyou_fumi71
-;[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_71
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[71]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_71
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石４(事件後のみ) sijyou_fumi72
-;[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_72
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[72]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_72
+[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり』ichi_nichi sijyou_fumi73
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_73
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[73]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_73
+[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり２凡庸』ichi_nichi2 sijyou_fumi74
-;[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_74
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[74]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+  @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_74
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり２＿２凡庸』sijyou_fumi53
-;[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_53
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[53]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_53
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり３』ichi_nichi3 sijyou_fumi75
-;[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_75
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==1 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[75]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_75
+  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『猫』neko*sijyou_fumi76
-;[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_76
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[76]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_76
+[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸A』neko2 sijyou_fumi77
-;[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_77
- ;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[77]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_77
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸B』sijyou_fumi78
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_78
- ;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[78]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_78
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『猫３　事件解決後』neko3*sijyou_fumi79
-;[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_79
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[79]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_79
+[endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『猫４　事件解決後』neko4*sijyou_fumi80
-;[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_78
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[80]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_80
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『猫５　事件解決後』neko4b*sijyou_fumi81
-;[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_81
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[81]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_81
+ [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫６　事件解決後』neko5*sijyou_fumi80
-;[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_80
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『猫６　事件解決後』neko5*sijyou_fumi82
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[82]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_82
+ [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『道』michi*sijyou_fumi81
-;[if exp="f.sijyou_fumi_toutyakumachi_michi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_81
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『道』sijyou_fumi83*michi
+[if exp="f.sijyou_fumi_toutyakumachi_michi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[83]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_81
+ [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『道２ (事件解決後)』michi2*sijyou_fumi82
-;[if exp="f.sijyou_fumi_toutyakumachi_michi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_82
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『道２ (事件解決後)』sijyou_fumi84*michi2
+[if exp="f.sijyou_fumi_toutyakumachi_michi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[84]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_84
+[endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『お気に入りの曲』kuoku1*sijyou_fumi83
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_83
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『お気に入りの曲』sijyou_fumi85*kuoku1
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[85]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_85
+ [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『お気に入りの曲２』sijyou_fumi84*kyoku
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_84
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『お気に入りの曲２』sijyou_fumi86*kyoku2
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[86]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_86
+[endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠』enka1*sijyou_fumi85
-;[if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_85
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠』sijyou_fumi87*henka1
+[if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[87]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_87
+[endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠 (事件解決後) 』 henka2*sijyou_fumi86
-;[if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_86
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠』sijyou_fumi88*henka2
+[if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[88]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_88
+[endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『スポーツ』sps*sijyou_fumi88
-;[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠 (事件解決後) 』sijyou_fumi89*henka3
+[if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[89]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_89
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『スポーツ１ 事件解決前』*sijyou_fumi90*sps_f.sijyou_fumi_toutyakumachi_sports
+;[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[90]==0"]
  ; [call target=*sijyou_toutyaku_hantei_shori_common]
   ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_88
   ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
 ;[endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『スポーツ 事件解決後』sps2*sijyou_fumi89
-;[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_89
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『スポーツ 事件解決後』sps2*sijyou_fumi91
+[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[91]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_89
+[endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『 スポーツ2 凡庸A』sps2_1*sijyou_fumi91
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_91
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『 スポーツ2 凡庸A』sps2_1*sijyou_fumi92
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[92]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_92
+ [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『 スポーツ2 凡庸B』sps2_2 *sijyou_fumi92
-;[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_92
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
-;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『観劇の話題　事件前』kangeki *sijyou_fumi93
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『 スポーツ2 凡庸B』sps2_2 *sijyou_fumi93
+;[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[93]==0"]
  ; [call target=*sijyou_toutyaku_hantei_shori_common]
   ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_93
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『観劇の話題　事件後』kangeki2 *sijyou_fumi94
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_94
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『観劇の話題　事件前』kangeki *sijyou_fumi94
+[if exp="f.sijyou_fumi_toutyakumachi_kangeki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[94]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_94
+ [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『写真の話題（事件前）』syasin *sijyou_fumi95
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_95
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『観劇の話題　事件後』sijyou_fumi95*kangeki2
+[if exp="f.sijyou_fumi_toutyakumachi_kangeki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[95]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_95
+  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『写真の話題（事件後）』syasin2*sijyou_fumi96
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_96
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『写真の話題（事件前）』sijyou_fumi96*syasin
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[96]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_96
+  [endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『写真の話題（事件後）』sijyou_fumi97*syasin2
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[97]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_97
+ [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『友人について凡庸』(お見合い後) sijyou_fumi98
-;[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_98
-  ; //←このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
-;[endif]
+[if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[3]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_98
+  [endif]
 ;=======================================================================================
 
 
