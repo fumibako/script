@@ -292,17 +292,18 @@
 [endif]
 ;=======================================================================================
 ;！！日付 条件指定未！！
-;◆↓手紙一通分の到着判定処理(開始)：春『未来へ』!!  (1月2週～1月末まで)17_ex (コメントアウトされている)f.okeiko_month=＞1 f.okeiko_week=＞2  f.sijyou_sobo==true
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 &&(f.okeiko_month==1 || f.okeiko_month==2) && f.fumi_toutyaku_sijyou[43]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：春『未来へ』!!  (1月2週～1月末まで)17_ex (コメントアウトされている)
+;f.okeiko_month=＞1 f.okeiko_week=＞2  f.sijyou_sobo==true
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==1 && f.sijyou_sobo==true &&(f.okeiko_month==1 || f.okeiko_month==2) && f.fumi_toutyaku_sijyou[43]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_43
 [endif]
 ;=======================================================================================
 ;！！日付　条件指定未！！
 ;◆↓手紙一通分の到着判定処理(開始)：春『全力』 (『未来へ』をみている)18_ex/f.okeiko_month=＞1　 f.okeiko_week=＞2  f.sijyou_sobo==true
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 &&(f.okeiko_month==1 || f.okeiko_month==2) && f.fumi_toutyaku_sijyou[44]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_44
 [endif]
 ;==============================================================================================================
 ;◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇あぶりだしの手紙◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇
@@ -310,13 +311,13 @@
 ;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
 ;[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0  && f.fumi_toutyaku_sijyou[45]==0"]
  ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_45
 ;[endif]
 ;==============================================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
 ;[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==1  && f.fumi_toutyaku_sijyou[46]==0"]
  ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_2
+  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_46
 ;[endif]
 ;=======================================================================================
 ;◆◇◆◇◆◇◆◇◆◇◆◇◆____話題の手紙＿＿＿◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
