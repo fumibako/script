@@ -24,7 +24,13 @@
 「そろそろお手紙のお返事来ないかしら」
 [主人公目パチ1回][p]
 
-（鳩が入ってこれるように、少しふすまを開けているけれども）[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
+
+（鳩が入ってこれるように、少し障子を開けているけれども）[p]
 
 ;【SE】落ち着いた足音（フェードイン）
 [playse storage=isono_in.ogg loop=false ]
@@ -48,6 +54,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 「ええ、精進するわ」[p]
+
+[fadeoutbgm time=3000]
 
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
@@ -112,7 +120,7 @@
 [whosay name=磯野 color="dimgray"]
 [主人公目伏]
 「家を取り仕切る私の立場から言わせて頂きますが、[r]
-[sp]お嬢様に悪い噂が立ち、今後の縁談に差しさわり、[r]
+[sp]お嬢様に悪い噂が立つと、今後の縁談に差しさわり、[r]
 [sp]家の評判を落とすことにもつながります」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -150,8 +158,8 @@
 
 [whosay name=磯野 color="dimgray"]
 「この手紙は没収しますが、わかりました。[r]
-[sp]今後お嬢様がお稽古す場合でも女中を傍に控えさせ[r]
-[sp]今後手紙を出されるのは禁止させていただきます」[p]
+[sp]今後はお嬢様がお稽古す場合でも女中を傍に控えさせ[r]
+[sp]手紙を出されるのは禁止させていただきます」[p]
 [fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：真剣落ち込み
