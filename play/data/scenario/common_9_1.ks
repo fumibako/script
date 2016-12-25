@@ -224,7 +224,7 @@
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「文奈、覚えているか？」[p]
+「[名前]、覚えているか？」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「文矢が文矢嫁君と見合いをしたのは９月の終わり頃だった……」[p]
@@ -234,7 +234,7 @@
 ふと、お父様は真剣な表情を浮かべる。[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「まぁ、それでだ。文奈もそろそろ誰かと会ってみる気はないかと思ってな？」[p]
+「まぁ、それでだ。[名前]もそろそろ誰かと会ってみる気はないかと思ってな？」[p]
 
 [主人公目パチ1回]
 [wait time=10]
