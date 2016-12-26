@@ -604,7 +604,7 @@ f.sijyou_fumi_toutyakumachi_kisetsu=-1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_31
-;夏『夏の夜明け』8_1 *sijyou_fumi31
+;夏『夏の夜明け』8_1 sijyou_fumi31
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「夏の夜明け」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「夏の夜明け」";
