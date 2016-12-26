@@ -1281,8 +1281,8 @@ f.fumi_toutyaku_sijyou[65]=1;
 *fumi_toutyaku_sijyou_66
 ;食事 凡庸(事件前)
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「食事」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「食事」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「食事２」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「食事２」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1300,8 +1300,8 @@ f.fumi_toutyaku_sijyou[66]=1;
 *fumi_toutyaku_sijyou_67
 ;食事 凡庸(事件後)
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「食事」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「食事」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「食事２」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「食事２」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
