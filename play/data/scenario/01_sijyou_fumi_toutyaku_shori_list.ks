@@ -1685,9 +1685,10 @@ f.fumi_toutyaku_sijyou[87]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_88
+;変化と永遠 見合い前
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「88」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「88」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「変化と永遠」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「変化と永遠」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/ssijyou_fumi_wadai.ks");
