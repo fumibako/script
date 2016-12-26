@@ -183,14 +183,14 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_24
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：春 『筍』4/f.okeiko_month==4
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[25]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：春 『筍』4/f.okeiko_month==5
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==5 && f.fumi_toutyaku_sijyou[25]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_25
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：夏『すだれ』5/f.okeiko_month==5
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==5 && f.fumi_toutyaku_sijyou[26]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：夏『すだれ』5/f.okeiko_month==6
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==6 && f.fumi_toutyaku_sijyou[26]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_26
 [endif]
@@ -207,8 +207,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_28
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：夏『かき氷』6/f.okeiko_month==7
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==7 && f.fumi_toutyaku_sijyou[29]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：夏『かき氷』6/f.okeiko_month==8
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==8 && f.fumi_toutyaku_sijyou[29]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_29
 [endif]
@@ -231,8 +231,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_32
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：夏『ネリネ』8_3/f.okeiko_month==8
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==8 && f.fumi_toutyaku_sijyou[33]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：夏『ネリネ』8_3/f.okeiko_month==9
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==9 && f.fumi_toutyaku_sijyou[33]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_33
 [endif]
