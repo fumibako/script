@@ -64,29 +64,29 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_5
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『家族・祖父母両親(お見合い後・事件解決後)』f.sijyou_omiai==1  f.sijyou_sobo==true
-[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.sijyou_sobo==true && f.fumi_toutyaku_sijyou[6]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『家族・祖父母両親(お見合い後・事件解決後)』(f.sijyou_omiai==1  f.sijyou_sobo==true [5]または[4]をみたら)
+[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.sijyou_sobo==true && (f.fumi_toutyaku_sijyou[4]==1 || f.fumi_toutyaku_sijyou[5]==1) &&　f.fumi_toutyaku_sijyou[6]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_6
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『家族について 兄弟』 (お見合い後・事件解決後2 f.sijyou_sobo==true)
+;◆↓手紙一通分の到着判定処理(開始)：『家族について 兄弟』 (お見合い後・事件解決後2 f.sijyou_sobo==true　[6]をみたら)
 ;sijyou_kazoku_2_2/f.sijyou_omiai==1    f.okeiko_month=>12  f.sijyou_sobo==true
-[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.okeiko_month==2 && f.fumi_toutyaku_sijyou[7]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.okeiko_month==2 && f.fumi_toutyaku_sijyou[6]==1 && f.fumi_toutyaku_sijyou[7]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_7
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『家族について 弟と妹』 (お見合い後・事件解決後2 f.sijyou_sobo==true)
+;◆↓手紙一通分の到着判定処理(開始)：『家族について 弟と妹』 (お見合い後・事件解決後2 f.sijyou_sobo==true [7]をみたら)
 ;sijyou_kazoku_2_3/f.sijyou_omiai==1  f.okeiko_month=>12  f.sijyou_sobo==true
-[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.okeiko_month==2 && f.fumi_toutyaku_sijyou[8]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.okeiko_month==2 && f.fumi_toutyaku_sijyou[7]==1 && f.fumi_toutyaku_sijyou[8]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_8
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：家族・主人公と(イベント6後??) 
+;◆↓手紙一通分の到着判定処理(開始)：家族・主人公と(事件解決後、1月イベント後) 
 ;sijyou_kazoku_3/f.sijyou_event6
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month==2 && f.fumi_toutyaku_sijyou[9]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kazoku==0 && f.sijyou_omiai==1 && f.okeiko_month==2 && f.fumi_toutyaku_sijyou[9]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_9
 [endif]
