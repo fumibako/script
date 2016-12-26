@@ -158,7 +158,7 @@
 
 [whosay name=磯野 color="dimgray"]
 「この手紙は没収しますが、わかりました。[r]
-[sp]今後はお嬢様がお稽古す場合でも女中を傍に控えさせ[r]
+[sp]今後はお嬢様がお稽古中の場合でも女中を傍に控えさせ[r]
 [sp]手紙を出されるのは禁止させていただきます」[p]
 [fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
