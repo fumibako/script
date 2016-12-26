@@ -165,20 +165,20 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_21
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：春『チューリップ』3/f.okeiko_month==4
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[24]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：春『アンズ』1_2/f.okeiko_month==4　sijyou_fumi22
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 &&  f.fumi_toutyaku_sijyou[22]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_22
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：春『アンズ』1_2/f.okeiko_month==4
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 &&  f.fumi_toutyaku_sijyou[22]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：春『トキワナズナ』1_3/f.okeiko_month==4
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[23]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_23
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：春『トキワナズナ』1_3/f.okeiko_month==4
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[23]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：春『チューリップ』3/f.okeiko_month==4　sijyou_fumi24
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[24]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_24
 [endif]
