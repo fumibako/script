@@ -231,6 +231,7 @@
 
 [主人公目パチ1回]
 [wait time=10]
+#
 ふと、お父様は真剣な表情を浮かべる。[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
