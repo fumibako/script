@@ -1195,11 +1195,12 @@
 ;==============================================================================================================
 *8_3
 *sijyou_fumi33
+[if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 夏[r]
 [r]
 『ネリネ』[p]
-;#
+[endif]
 [手紙四条 fumi_number=8_3]
 [r][r][r]
 [名前]へ[r]
@@ -1311,6 +1312,8 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 [eval exp="f.midoku_list_hairetsu[2][35] = 0;"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [endif]
 ;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=11]
