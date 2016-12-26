@@ -1488,8 +1488,8 @@ f.fumi_toutyaku_sijyou[76]=1;
 
 *fumi_toutyaku_sijyou_77
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「77」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「77」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
