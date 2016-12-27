@@ -497,13 +497,13 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_75
   [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫2』neko*sijyou_fumi76　（見合い後・呼称呼び捨て・事件解決前）
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[76]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫2』neko*sijyou_fumi76　（見合い前・呼称呼び捨て・事件解決前）三毛猫の疑問
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==0 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[76]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_76
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸A』neko2 sijyou_fumi77（見合い後　呼称呼び捨て）三毛猫の疑問
+;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸A』neko2 sijyou_fumi77（見合い後・呼称呼び捨て・事件解決前　呼称呼び捨て）
 [if exp="f.sijyou_fumi_toutyakumachi_neko==0 & f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[77]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_77
