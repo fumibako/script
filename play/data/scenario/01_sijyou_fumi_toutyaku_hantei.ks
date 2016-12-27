@@ -431,14 +431,14 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_65
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：食事2 凡庸A sijyou_fumi66
-[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 &&  (f.sijyou_omiai==0 || f.sijyou_event6==0) && f.fumi_toutyaku_sijyou[66]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：食事2 （お見合い後＿事件前） sijyou_fumi66
+[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[66]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_66
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：食事2 凡庸B sijyou_fumi67
-[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[67]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：食事2 （お見合い後＿事件後） sijyou_fumi67
+[if exp="f.sijyou_fumi_toutyakumachi_shokuji==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[67]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_67
    [endif]
