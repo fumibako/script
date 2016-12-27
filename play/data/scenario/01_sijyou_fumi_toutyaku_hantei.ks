@@ -539,8 +539,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_82
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『道』sijyou_fumi83*michi
-[if exp="f.sijyou_fumi_toutyakumachi_michi==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0) && f.fumi_toutyaku_sijyou[83]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『道』sijyou_fumi83*michi　（見合い前　事件解決前）
+[if exp="f.sijyou_fumi_toutyakumachi_michi==0 && f.sijyou_omiai==0 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[83]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_83
  [endif]
