@@ -588,7 +588,7 @@
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『スポーツ 事件解決後』sps2 sijyou_fumi91
-[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[91]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[91]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_91
 [endif]
@@ -599,7 +599,7 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_92
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『 スポーツ2 （お見合い後）』sps2_2 sijyou_fumi93 92をみていない
+;◆↓手紙一通分の到着判定処理(開始)：『 スポーツ2 （お見合い後　事件判定なし）』sps2_2 sijyou_fumi93 92をみていない
 ;[if exp="f.sijyou_fumi_toutyakumachi_sports==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[92]==0 && f.fumi_toutyaku_sijyou[93]==0"]
  ; [call target=*sijyou_toutyaku_hantei_shori_common]
   ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_93
