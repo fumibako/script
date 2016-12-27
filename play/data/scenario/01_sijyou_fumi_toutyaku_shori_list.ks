@@ -1601,7 +1601,7 @@ f.fumi_all_title_new=f.okeiko_month_kansuuji+"「道１」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「道１」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
-f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks);
+f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_all_target.push("*sijyou_fumi83");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(82);
