@@ -473,20 +473,20 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_72
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり』ichi_nichi sijyou_fumi73
-[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0) && f.fumi_toutyaku_sijyou[73]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり１』ichi_nichi sijyou_fumi73　（事件解決前　見合い前後判定なし）
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[73]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_73
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり２凡庸』ichi_nichi2 sijyou_fumi74
-[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0) && f.fumi_toutyaku_sijyou[74]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり２凡庸』ichi_nichi2 sijyou_fumi74（お見合い前）１をみている
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==0 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[73]==1 && f.fumi_toutyaku_sijyou[74]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_74
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり２＿２凡庸』sijyou_fumi53
-[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[53]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり２＿２凡庸』sijyou_fumi53（お見合い後　事件解決後）１をみている
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[73]==1 && f.fumi_toutyaku_sijyou[53]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_53
  [endif]
