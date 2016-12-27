@@ -497,44 +497,44 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_75
   [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫』neko*sijyou_fumi76　（見合い後）
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[76]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫』neko*sijyou_fumi76　（見合い後・呼称呼び捨て・事件解決前）
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[76]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_76
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸A』neko2 sijyou_fumi77
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0)  && f.fumi_toutyaku_sijyou[77]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸A』neko2 sijyou_fumi77（見合い後　呼称呼び捨て）三毛猫の疑問
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 & f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[77]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_77
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸B』sijyou_fumi78（見合い後）
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[78]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸B』sijyou_fumi78（見合い後 事件解決後）
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[78]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_78
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫３　事件解決後』neko3*sijyou_fumi79
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[79]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫３　事件解決後』neko3*sijyou_fumi79（見合い後 事件解決後　２どちらかをみている）
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && ( f.fumi_toutyaku_sijyou[77]==1 || f.fumi_toutyaku_sijyou[78]==1) && f.fumi_toutyaku_sijyou[79]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_79
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫４　事件解決後』neko4*sijyou_fumi80
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[80]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫４　事件解決後』neko4*sijyou_fumi80（見合い後 事件解決後 ３を見ている）
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[79]==1 && f.fumi_toutyaku_sijyou[80]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_80
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫５　事件解決後』neko4b*sijyou_fumi81
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[81]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫５　事件解決後』neko4b*sijyou_fumi81（見合い後 事件解決後　４をみている）
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[80]==1 && f.fumi_toutyaku_sijyou[81]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_81
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫６　事件解決後』neko5*sijyou_fumi82
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[82]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫６　事件解決後』neko5*sijyou_fumi82（見合い後 事件解決後　５をみている）
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[81]==1 && f.fumi_toutyaku_sijyou[82]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_82
  [endif]
