@@ -497,7 +497,7 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_75
   [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫』neko*sijyou_fumi76
+;◆↓手紙一通分の到着判定処理(開始)：『猫』neko*sijyou_fumi76　（見合い後）
 [if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[76]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_76
@@ -509,7 +509,7 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_77
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸B』sijyou_fumi78
+;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸B』sijyou_fumi78（見合い後）
 [if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[78]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_78
