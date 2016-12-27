@@ -1743,9 +1743,10 @@ f.fumi_toutyaku_sijyou[90]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_91
+;事件解決後
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「91」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「91」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツ１」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「スポーツ１」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
