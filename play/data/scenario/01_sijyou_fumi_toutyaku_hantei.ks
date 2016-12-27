@@ -103,14 +103,14 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_11
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い後)』
-[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[12]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い後)』 華道展のフラグがある2月3月"ではない"とき（華道展覧で変化しない内容だけなので見合い後は全て）
+[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[12]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_12
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い後,事件解決後)』
-[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==1 && f.okeiko_month>11 && f.fumi_toutyaku_sijyou[13]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『将来について(お見合い後,事件解決後)』前後別内容 華道展のフラグがある2月3月"ではない"とき
+[if exp="f.sijyou_fumi_toutyakumachi_shourai==0 && f.sijyou_omiai==1 && f.okeiko_month>11 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[13]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_13
 [endif]
@@ -121,26 +121,26 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_14
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後)』
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[15]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後)』華道展のフラグがある2月3月"ではない"とき
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[15]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_15
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後2)』
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[16]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後2)』華道展のフラグがある2月3月"ではない"とき
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[16]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_16
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『仕事について』(お見合い後3)』事件解決後
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month>11 && f.fumi_toutyaku_sijyou[17]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『仕事について』(お見合い後3)』事件解決後 華道展のフラグがある2月3月"ではない"とき
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && && f.fumi_toutyaku_sijyou[17]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_17
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後4)』事件解決後２月２日以降
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month==2 && f.fumi_toutyaku_sijyou[18]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後4)』事件解決後 華道展のフラグがある2月3月"ではない"とき
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && && f.fumi_toutyaku_sijyou[18]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_18
 [endif]
