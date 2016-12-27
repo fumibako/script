@@ -1743,7 +1743,7 @@ f.fumi_toutyaku_sijyou[90]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_91
-;事件解決後
+;『スポーツ 事件解決後』
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツ１」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「スポーツ１」";
@@ -1762,9 +1762,10 @@ f.fumi_toutyaku_sijyou[91]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_92
+;『 スポーツ2 （お見合い前　事件前）』
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「92」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「92」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツ２」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「スポーツ２」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1780,9 +1781,10 @@ f.fumi_toutyaku_sijyou[92]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_93
+;『 スポーツ2 （お見合い後　事件判定なし）』
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「93」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「93」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツ２」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「スポーツ２」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
