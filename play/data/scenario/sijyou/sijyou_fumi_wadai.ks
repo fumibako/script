@@ -850,7 +850,11 @@
 『緑の石　凡庸』[p]
 [endif]
 [手紙四条 fumi_number=]
-[名前]さん。手紙をありがとう。[r]
+[名前]
+[if exp="f.sijyou_event6==1"]
+さん
+[endif]
+。手紙をありがとう。[r]
 [r]
 [r]
 [r]
