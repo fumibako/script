@@ -1,11 +1,15 @@
-﻿﻿[setreplay name="opening2"]
-*opening2
+﻿;↓◆B4nFWraU42さん作のマクロを使用させていただきました。ありがとうございます
+[表示準備 storage="bg/plane_mizuiro.jpg"]
+[layopt layer=29 visible=true]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [preload storage="data/fgimage/katuraginomiya/base_gunpuku.png"]
 [preload storage="data/fgimage/katuraginomiya/base_sifuku.png"]
 [preload storage="data/fgimage/katuraginomiya/mayu_futuu.png"]
 [preload storage="data/fgimage/katuraginomiya/me_futuu.png"]
 [preload storage="data/fgimage/katuraginomiya/kuti_futuu.png"]
+[preload storage="data/fgimage/katuraginomiya/me_fusi1.png"]
+[preload storage="data/fgimage/katuraginomiya/me_fusi2.png"]
 
 [call target=*start storage="hensuu.ks"]
 [call target=*start storage="tyrano.ks"]
@@ -27,6 +31,8 @@
 [葛城宮通常]
 [eval exp="f.gra_katuraginomiya_face='[葛城宮通常]'"]
 [eval exp="f.gra_katuraginomiya_part='mayu'"]
+[表示開始]
+[freeimage layer = 29]
 
 *text
 [cm]
@@ -78,8 +84,8 @@
 [glink target="mayu_04" text="[葛城宮眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 [glink target="mayu_06" text="[葛城宮眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
 [glink target="mayu_07" text="[葛城宮眉怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="mayu_05" text="[葛城宮眉怒り皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-[glink target="mayu_08" text="[葛城宮眉悩み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+;[glink target="mayu_05" text="[葛城宮眉通常下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+;[glink target="mayu_08" text="[葛城宮眉下げ下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
 [endif]
 
 [if exp="f.gra_katuraginomiya_part=='me'"]
@@ -102,7 +108,7 @@
 [glink target="kuti_06" text="[葛城宮口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
 [glink target="kuti_09" text="[葛城宮口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [glink target="kuti_07" text="[葛城宮口怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
-[glink target="kuti_08" text="[葛城宮口微笑み上げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
+;[glink target="kuti_06" text="[葛城宮口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
 [endif]
@@ -123,6 +129,7 @@
 ポーズマクロ：[emb exp="f.gra_katuraginomiya_pose"][r]
 表情マクロ　：[emb exp="f.gra_katuraginomiya_face"][r]
 各表情は実際の立ち絵とは異なります。
+
 [s]
 
 
@@ -266,8 +273,8 @@
 @jump target=text
 
 *mayu_05
-[葛城宮眉怒り皺]
-[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉怒り皺]'"]
+[葛城宮眉通常下]
+[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉通常下]'"]
 @jump target=text
 
 *mayu_06
@@ -281,8 +288,8 @@
 @jump target=text
 
 *mayu_08
-[葛城宮眉悩み]
-[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉悩み]'"]
+[葛城宮眉下げ下]
+[eval exp="f.gra_katuraginomiya_face='眉：[葛城宮眉下げ下]'"]
 @jump target=text
 
 
@@ -363,8 +370,8 @@
 @jump target=text
 
 *kuti_08
-[葛城宮口微笑み上げ]
-[eval exp="f.gra_katuraginomiya_face='口：[葛城宮口微笑み上げ]'"]
+[葛城宮口笑顔小]
+[eval exp="f.gra_katuraginomiya_face='口：[葛城宮口笑顔小]'"]
 @jump target=text
 
 *kuti_09

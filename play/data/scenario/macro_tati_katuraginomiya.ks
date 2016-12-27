@@ -1,4 +1,4 @@
-﻿;==============================
+﻿﻿;==============================
 ;layer8：他キャラbase（のっぺらぼう）
 ;layer9:他キャラ口
 ;layer10:他キャラ目
@@ -8,26 +8,47 @@
 ;==============================
 
 *start
+;◆◆立ち絵画像サイズ：(x)1202x(y)2000を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される…といいな
+[eval exp="f.katuraginomiya_moto_width=2100"]
+[eval exp="f.katuraginomiya_moto_height=2650"]
+;◆立ち絵【通常サイズ】のwidth、height、left、top設定（現状は黒田とサイズ合わせをしています。後日全キャラの立ち絵が揃ってから再調整予定です
+[eval exp="f.katuraginomiya_tuujou_width=f.katuraginomiya_moto_width*0.3"]
+[eval exp="f.katuraginomiya_tuujou_height=f.katuraginomiya_moto_height*0.3"]
+[eval exp="f.katuraginomiya_tuujou_left=170"]
+[eval exp="f.katuraginomiya_tuujou_top=-10"]
+;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（現状は作成いただいたサイズマクロでの「アップ」時の倍率に合わせてあります。ご希望の倍率があれば調整してください。後日全キャラの立ち絵が揃ってから再調整予定のため、ご希望通りにいかない可能性もありますがご了承ください
+[eval exp="f.katuraginomiya_tonari_width=f.katuraginomiya_moto_width*0.53"]
+[eval exp="f.katuraginomiya_tonari_height=f.katuraginomiya_moto_height*0.53"]
+[eval exp="f.katuraginomiya_tonari_left=206"]
+[eval exp="f.katuraginomiya_tonari_top=-10"]
+
+;◆立ち絵【サイズ：顔アップ】のwidth、height、left、top設定（ご希望の倍率があれば調整してください。後日全キャラの立ち絵が揃ってから再調整予定のため、ご希望通りにいかない可能性もありますがご了承ください
+[eval exp="f.katuraginomiya_up_width=f.katuraginomiya_moto_width*0.9"]
+[eval exp="f.katuraginomiya_up_height=f.katuraginomiya_moto_height*0.9"]
+[eval exp="f.katuraginomiya_up_left=30"]
+[eval exp="f.katuraginomiya_up_top=-50"]
+
+
 ;画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 8]
 [freeimage layer = 9]
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
-[chara_new name="katuraginomiya_base" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=8 name="katuraginomiya_base" time=0]
+[chara_new name="katuraginomiya_base" storage="toumei.gif" width=&f.katuraginomiya_tuujou_width height=&f.katuraginomiya_tuujou_height]
+[chara_show left=&f.katuraginomiya_tuujou_left top=&f.katuraginomiya_tuujou_top layer=8 name="katuraginomiya_base" time=0]
 [wait time=10]
-[chara_new name="katuraginomiya_kuti" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=9 name="katuraginomiya_kuti" time=0]
+[chara_new name="katuraginomiya_kuti" storage="toumei.gif" width=&f.katuraginomiya_tuujou_width height=&f.katuraginomiya_tuujou_height]
+[chara_show left=&f.katuraginomiya_tuujou_left top=&f.katuraginomiya_tuujou_top layer=9 name="katuraginomiya_kuti" time=0]
 [wait time=10]
-[chara_new name="katuraginomiya_me" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=10 name="katuraginomiya_me" time=0]
+[chara_new name="katuraginomiya_me" storage="toumei.gif" width=&f.katuraginomiya_tuujou_width height=&f.katuraginomiya_tuujou_height]
+[chara_show left=&f.katuraginomiya_tuujou_left top=&f.katuraginomiya_tuujou_top layer=10 name="katuraginomiya_me" time=0]
 [wait time=10]
-[chara_new name="katuraginomiya_mayu" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=11 name="katuraginomiya_mayu" time=0]
+[chara_new name="katuraginomiya_mayu" storage="toumei.gif" width=&f.katuraginomiya_tuujou_width height=&f.katuraginomiya_tuujou_height]
+[chara_show left=&f.katuraginomiya_tuujou_left top=&f.katuraginomiya_tuujou_top layer=11 name="katuraginomiya_mayu" time=0]
 [wait time=10]
-[chara_new name="katuraginomiya_emo" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=12 name="katuraginomiya_emo" time=0]
+[chara_new name="katuraginomiya_emo" storage="toumei.gif" width=&f.katuraginomiya_tuujou_width height=&f.katuraginomiya_tuujou_height]
+[chara_show left=&f.katuraginomiya_tuujou_left top=&f.katuraginomiya_tuujou_top layer=12 name="katuraginomiya_emo" time=0]
 [wait time=10]
 
 
@@ -191,6 +212,8 @@
 [wait time=10]
 [endmacro]
 
+
+
 ;立ち絵表示[葛城宮眉通常]
 [macro name="葛城宮眉通常"]
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_futuu.png" time=0]
@@ -230,18 +253,6 @@
 ;立ち絵表示[葛城宮眉怒り]
 [macro name="葛城宮眉怒り"]
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_okori.png" time=0]
-[wait time=10]
-[endmacro]
-
-;立ち絵表示[葛城宮眉怒り皺]
-[macro name="葛城宮眉怒り皺"]
-[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_okori_siwa.png" time=0]
-[wait time=10]
-[endmacro]
-
-;立ち絵表示[葛城宮眉悩み]
-[macro name="葛城宮眉悩み"]
-[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_nayami.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -299,11 +310,6 @@
 [wait time=10]
 [endmacro]
 
-;[葛城宮口微笑み上げ]
-[macro name="葛城宮口微笑み上げ"]
-[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_hohoemi_age.png" time=0]
-[wait time=10]
-[endmacro]
 
 ;立ち絵表示[葛城宮目通常]
 [macro name="葛城宮目通常"]
