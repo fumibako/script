@@ -407,8 +407,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_61
   [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手２　凡庸 sijyou_fumi62
-[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[62]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手２(お見合い前)　凡庸 sijyou_fumi62
+[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[62]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_62
 [endif]
