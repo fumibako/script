@@ -205,12 +205,12 @@ f.sijyou_fumi_toutyakumachi_shourai=-1;
 *fumi_toutyaku_sijyou_11
 ;『将来について』(お見合い前2)11 sijyou_syourai1_2
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「将来について」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について２」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「将来について２」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_syourai1_21");
+f.fumi_list_all_target.push("*sijyou_syourai1_2");
 f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(10);
 f.fumi_list_sijyou_location_fumi.push(10);
@@ -223,10 +223,10 @@ f.sijyou_fumi_toutyakumachi_shourai=-1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_12
-;『将来について』(お見合い後)12 sijyou_syourai2
+;『将来について』(お見合い後)12 sijyou_syourai2　見合い２前後別内容
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「将来について」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について３」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「将来について３」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
