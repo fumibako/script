@@ -1489,7 +1489,7 @@ f.fumi_toutyaku_sijyou[76]=1;
 
 *fumi_toutyaku_sijyou_77
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫猫１」　四条 華織";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫１」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫１」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1597,8 +1597,8 @@ f.fumi_toutyaku_sijyou[82]=1;
 
 *fumi_toutyaku_sijyou_83
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「83」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「83」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「道１」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「道１」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks);
@@ -1615,8 +1615,8 @@ f.fumi_toutyaku_sijyou[83]=1;
 
 *fumi_toutyaku_sijyou_84
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「84」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「84」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「道２」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「道２」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
