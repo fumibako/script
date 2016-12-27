@@ -455,8 +455,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_69
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：緑の石2　凡庸(事件後) sijyou_fumi70 2の内容が同じなので　69=0のとき
-[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[69]==0 && f.fumi_toutyaku_sijyou[68]==1 && f.fumi_toutyaku_sijyou[70]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：緑の石2　凡庸(見合い後) sijyou_fumi70 2の内容が同じなので　69=0のとき
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[69]==0 && f.fumi_toutyaku_sijyou[68]==1 && f.fumi_toutyaku_sijyou[70]==0"]
  [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_70
 [endif]
