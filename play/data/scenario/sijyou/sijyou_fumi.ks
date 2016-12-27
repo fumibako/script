@@ -814,7 +814,7 @@
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="f.midoku_list_hairetsu[2][19] = 0;"]
+[eval exp="f.midoku_list_hairetsu[2][20] = 0;"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
