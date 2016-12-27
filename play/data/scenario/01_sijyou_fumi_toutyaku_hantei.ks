@@ -618,13 +618,13 @@
   [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『写真の話題（事件前）』sijyou_fumi96*syasin
-[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0) && f.fumi_toutyaku_sijyou[96]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==0 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[96]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_96
   [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『写真の話題（事件後）』sijyou_fumi97*syasin2
-[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[97]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[97]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_97
  [endif]
