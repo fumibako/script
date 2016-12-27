@@ -450,25 +450,25 @@
   [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石2　凡庸 sijyou_fumi69
-[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0) && f.fumi_toutyaku_sijyou[69]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0)&& f.fumi_toutyaku_sijyou[68]==1 && f.fumi_toutyaku_sijyou[69]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_69
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石2　凡庸(事件後) sijyou_fumi70
-[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[70]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[68]==1 && f.fumi_toutyaku_sijyou[70]==0"]
  [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_70
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：緑の石３(事件後のみ sijyou_fumi71
-[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[71]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：緑の石３(事件後のみ) sijyou_fumi71
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[68]==1 && f.fumi_toutyaku_sijyou[71]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_71
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：緑の石４(事件後のみ) sijyou_fumi72
-[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[72]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：緑の石４(事件後のみ) sijyou_fumi72 71==1
+[if exp="f.sijyou_fumi_toutyakumachi_midori==0 && f.sijyou_omiai==1 f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[71]==1 && f.fumi_toutyaku_sijyou[72]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_72
 [endif]
@@ -497,7 +497,7 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_75
   [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫』neko*sijyou_fumi76　（見合い後・呼称呼び捨て・事件解決前）
+;◆↓手紙一通分の到着判定処理(開始)：『猫2』neko*sijyou_fumi76　（見合い後・呼称呼び捨て・事件解決前）
 [if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[76]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_76
