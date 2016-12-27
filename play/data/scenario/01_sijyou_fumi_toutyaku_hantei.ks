@@ -395,32 +395,32 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_59
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手１ sijyou_fumi60
-[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0)  && f.fumi_toutyaku_sijyou[60]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手１ (お見合い前)sijyou_fumi60
+[if exp="f.sijyou_fumi_toutyakumachi_shumi==0 && f.sijyou_omiai==0 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[60]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_60
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手１(事件解決後) sijyou_fumi61
-[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[61]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手１(お見合い後) sijyou_fumi61＿呼称は手紙側で判別[60]と同じ内容なので判別
+[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[60]==0 && f.fumi_toutyaku_sijyou[61]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_61
   [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手２(お見合い前)　凡庸 sijyou_fumi62
+;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手２(お見合い前)　 sijyou_fumi62
 [if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==0 && f.fumi_toutyaku_sijyou[62]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_62
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手２　凡庸 sijyou_fumi63
-[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[63]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手２(お見合い後)　 sijyou_fumi63
+[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[62]==0 && f.fumi_toutyaku_sijyou[63]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_63
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手３(事件解決後) sijyou_fumi64
-[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[64]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手３(事件解決後のみ) sijyou_fumi64
+[if exp="f.sijyou_fumi_toutyakumachi_kiki==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[64]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_64
  [endif]
