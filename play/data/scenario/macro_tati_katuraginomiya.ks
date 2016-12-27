@@ -212,8 +212,6 @@
 [wait time=10]
 [endmacro]
 
-
-
 ;立ち絵表示[葛城宮眉通常]
 [macro name="葛城宮眉通常"]
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_futuu.png" time=0]
@@ -253,6 +251,18 @@
 ;立ち絵表示[葛城宮眉怒り]
 [macro name="葛城宮眉怒り"]
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_okori.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[葛城宮眉怒り皺]
+[macro name="葛城宮眉怒り皺"]
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_okori_siwa.png" time=0]
+[wait time=10]
+[endmacro]
+
+;立ち絵表示[葛城宮眉悩み]
+[macro name="葛城宮眉悩み"]
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_nayami.png" time=0]
 [wait time=10]
 [endmacro]
 
@@ -310,6 +320,11 @@
 [wait time=10]
 [endmacro]
 
+;[葛城宮口微笑み上げ]
+[macro name="葛城宮口微笑み上げ"]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_hohoemi_age.png" time=0]
+[wait time=10]
+[endmacro]
 
 ;立ち絵表示[葛城宮目通常]
 [macro name="葛城宮目通常"]
