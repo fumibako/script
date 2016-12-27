@@ -1796,6 +1796,7 @@ f.fumi_toutyaku_sijyou[93]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 *fumi_toutyaku_sijyou_94
+;観劇の話題_事件前＿誘う内容なので見合い後のみ
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「観劇」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「観劇」";
@@ -1814,9 +1815,10 @@ f.fumi_toutyaku_sijyou[94]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_95
+;事件後
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「95」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「95」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「観劇」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「観劇」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
