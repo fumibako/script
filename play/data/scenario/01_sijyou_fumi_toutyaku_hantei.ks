@@ -563,20 +563,20 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_86
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠』sijyou_fumi87*henka1(見合い後かつ事件前)
+;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠１』sijyou_fumi87*henka1(見合い後かつ事件前)
 [if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 &&  f.fumi_toutyaku_sijyou[87]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_87
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠』sijyou_fumi88*henka2　(見合い前かつ事件前)
+;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠２』sijyou_fumi88*henka2　(見合い前かつ事件前)
 [if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==0 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[88]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_88
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠 (事件解決後) 』sijyou_fumi89*henka3
-[if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[89]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『変化と永遠３ (事件解決後) 』sijyou_fumi89*henka3
+[if exp="f.sijyou_fumi_toutyakumachi_henka==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[89]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_89
 [endif]
