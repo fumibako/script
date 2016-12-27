@@ -1668,9 +1668,10 @@ f.fumi_toutyaku_sijyou[86]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_87
+;変化と永遠 見合い後　事件前
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「87」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「87」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「変化と永遠２」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「変化と永遠２」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1686,10 +1687,10 @@ f.fumi_toutyaku_sijyou[87]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_88
-;変化と永遠 見合い前
+;変化と永遠 見合い前　事件前
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「変化と永遠」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「変化と永遠」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「変化と永遠１」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「変化と永遠１」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/ssijyou_fumi_wadai.ks");
