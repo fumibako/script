@@ -22,7 +22,7 @@
 
 
 ;【背景】;野点傘と縁談の背景
-[chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=50]
+[chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 会場の玄関に七時に財前様と待ち合わせ。[p]
 
