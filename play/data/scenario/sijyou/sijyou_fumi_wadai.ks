@@ -408,15 +408,41 @@
 さつきの話題[p]
 [endif]
 [手紙四条 fumi_number=]
-[名前]。手紙をありがとう。[r]
+[名前]
+if exp="f.sijyou_event6==1"]
+さん
+[endif]
+。手紙をありがとう
+if exp="f.sijyou_event6==1"]
+ございます
+[endif]
+。[r]
 [r]
 百年の月日の経つ、さつきとは見事なもので[r]
-だろうね……。[r]
+[if exp="f.sijyou_event6==1"]
+でしょうね
+[else]
+だろうね
+[endif]
+……。
+[r]
 盆栽は、小さな箱庭のように思えて、生花とは[r]
-違った面白さがあるよね[r]
+違った面白さがあ
+[if exp="f.sijyou_event6==1"]
+りますね。
+[else]
+るよね。
+[endif]
+[r]
 あの小さな世界の中の大きな木の下で、[r]
 のんびりと過ごしてみたい。なんて思うのは、[r]
-僕だけかな？[r]
+僕だけ
+[if exp="f.sijyou_event6==1"]
+でしょうか
+[else]
+かな？
+[endif]
+[r]
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
