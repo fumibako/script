@@ -1074,8 +1074,8 @@ f.fumi_toutyaku_sijyou[54]=1;
 *fumi_toutyaku_sijyou_55
 ;新茶の話題　凡庸A（事件後）
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「新茶の話題」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「新茶の話題」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「新茶の話題　失敗」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「新茶の話題　失敗」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1093,8 +1093,8 @@ f.fumi_toutyaku_sijyou[55]=1;
 *fumi_toutyaku_sijyou_56
 ;新茶の話題　凡庸B（事件後）
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「新茶の話題」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「新茶の話題」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「新茶の話題　成功」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「新茶の話題　成功」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
