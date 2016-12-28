@@ -333,8 +333,8 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+;背景変更:芙蓉
+[image layer=29 x=1 y=1 storage="bg/bg_hujieda_fuyou.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [layopt layer=message0 visible=true]
