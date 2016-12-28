@@ -453,6 +453,8 @@
 [preload storage="data/fgimage/bg/I9IhvvVdPo/mirukutennai_zengamen.jpg" wait=true]
 ;【背景】 全画面背景＿空
 [preload storage="data/fgimage/bg/hujieda_sky1.jpg" wait=true]
+;【背景】 全画面背景＿芙蓉
+[preload storage="data/fgimage/bg/bg_hujieda_fuyou.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
