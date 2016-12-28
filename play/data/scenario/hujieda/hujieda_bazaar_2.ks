@@ -7,6 +7,9 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+;【背景】ﾁｬﾘﾃｨｰ会場門前
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -14,9 +17,6 @@
 [メッセージウィンドウ上ボタン表示]
 ;最大全角３１文字×４行
 ;=====================ここからお芝居の幕引きです===============================
-;【背景】ﾁｬﾘﾃｨｰ会場門前
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 数日は藤枝様の仕事前の数時間合奏の練習をする。[p]
 
