@@ -1,7 +1,5 @@
 ;=============================================
 ;◆チャリティーバザー◆3月1週から３月3週まで琴パラが高い藤枝ルート
-;=========================================================================
-;イベント6回目【藤枝の事を考える】9月1週、誰も選ばないを選択
 ;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -9,10 +7,6 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-;【背景】主人公邸 庭の見える部屋：夜　;チャリティバザー会場演奏会場 いまはない
-[暗転]
-;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=30]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -20,13 +14,17 @@
 [メッセージウィンドウ上ボタン表示]
 ;最大全角３１文字×４行
 ;=====================ここからお芝居の幕引きです===============================
-;チャリティバザー会場演奏会場 いまはない
+;【背景】ﾁｬﾘﾃｨｰ会場門前
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
-いまはないのでこの背景です  どんな場所か地の文、コメントをお願いします[p]
+数日は藤枝様の仕事前の数時間合奏の練習をする。[p]
 
-＃
-数日は藤枝様の仕事前の数時間合奏の練習をする。[r]
-会場の玄関に７時に財前様と待ち合わせ。[p]
+
+;【背景】;野点傘と縁談の背景
+[chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+会場の玄関に七時に財前様と待ち合わせ。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
@@ -36,7 +34,7 @@
 それでも藤枝様にお会いできる）[p]
 
 [whosay name=財前美彬]
-「貴方が[名字][名前]さんですね。　私が、財前です」[p]
+「貴方が[名字][名前]さんですね。 私が、財前です」[p]
 
 ＃
 長身の彫の深い顔立ちの青年が私に声を掛けた。[p]
@@ -45,8 +43,7 @@
 [主人公眉下げ下]
 [主人公目閉じ]
 [主人公口ほほえみ]
-「ええ、
-この度は機会を与えて下さってありがとうございます」[p]
+「ええ、この度は機会を与えて下さってありがとうございます」[p]
 
 [whosay name=財前美彬]
 「いえ、今年は経済的にも色々あって[r]
@@ -65,9 +62,18 @@
 [主人公憂い]
 「ええ」[p]
 
-＃
-財前様に案内され、
-2階の奥のテラスに面した会場に着く。[p]
+;【背景】二階への階段
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity7.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+
+
+;【背景】演奏会場１
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+#
+財前様に案内され、2階の奥のテラスに面した会場に着く。[p]
+
+
 藤枝様はピアノを弾いていた。[p]
 
 ;[ピアノと筝の入った背景]
@@ -189,17 +195,18 @@
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
-[藤枝退場]
 [イベントシーン構築ボタン無し版]
 ;裏で表情リセット
 [主人公ポーズ通常]
 [主人公通常]
+[藤枝ベース私服]
+[藤枝微笑み]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】[ピアノと筝の入った背景]
-[暗転]
-;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;【背景】演奏会場１
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
