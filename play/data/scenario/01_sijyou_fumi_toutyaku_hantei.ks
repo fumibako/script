@@ -134,13 +134,13 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『仕事について』(お見合い後3)』事件解決後 華道展のフラグがある2月3月"ではない"とき
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[17]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[17]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_17
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後4)』事件解決後 華道展のフラグがある2月3月"ではない"とき
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[18]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[18]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_18
 [endif]
@@ -629,8 +629,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_97
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『友人について凡庸』(お見合い後) sijyou_fumi98
-[if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[98]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『友人について凡庸』(お見合い後 事件解決前) sijyou_fumi98
+[if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[98]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_98
   [endif]
