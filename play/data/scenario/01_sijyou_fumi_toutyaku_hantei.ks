@@ -491,8 +491,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_53
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり３』ichi_nichi3 sijyou_fumi75
-[if exp="f.sijyou_fumi_toutyakumachi_hajimari==1 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[75]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり３(お見合い後 事件解決後)』ichi_nichi3 sijyou_fumi75
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==1 && f.sijyou_omiai==1  && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[75]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_75
   [endif]
@@ -503,8 +503,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_76
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸A』neko2 sijyou_fumi77（見合い後・呼称呼び捨て・事件解決前　呼称呼び捨て）
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 & f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[77]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『猫2 凡庸A』neko2 sijyou_fumi77（見合い後・呼称呼び捨て・事件解決前　呼称手紙側で変更）
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 & f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[77]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_77
  [endif]
@@ -516,7 +516,7 @@
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『猫３　事件解決後』neko3*sijyou_fumi79（見合い後 事件解決後　２どちらかをみている）
-[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && ( f.fumi_toutyaku_sijyou[77]==1 || f.fumi_toutyaku_sijyou[78]==1) && f.fumi_toutyaku_sijyou[79]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_neko==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && (f.fumi_toutyaku_sijyou[77]==1 || f.fumi_toutyaku_sijyou[78]==1) && f.fumi_toutyaku_sijyou[79]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_79
 [endif]
