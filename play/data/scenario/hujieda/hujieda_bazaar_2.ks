@@ -62,13 +62,16 @@
 [主人公憂い]
 「ええ」[p]
 
-;【背景】二階への階段
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity7.jpg" time=1000]
+;【背景】演奏会場１
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity51.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 
+;【背景】二階への階段
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity7.jpg" time=1100]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 
 ;【背景】演奏会場１
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1000]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1200]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 財前様に案内され、2階の奥のテラスに面した会場に着く。[p]
