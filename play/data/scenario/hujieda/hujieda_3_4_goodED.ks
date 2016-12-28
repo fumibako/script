@@ -433,7 +433,7 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ピアニスト、作曲家として名をあげている事も[r]
-音楽学校の助教授が内定したとも磯野から聞いている」[p]
+[sp]音楽学校の助教授が内定したとも磯野から聞いている」[p]
 
 [whosay name="藤枝 肇" color=%mp.color]
 「僕にはなすべきことが多くあり、これからも努力します！」[p]
