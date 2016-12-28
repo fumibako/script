@@ -460,6 +460,8 @@
 [preload storage="data/fgimage/bg/bg_cyarity4.jpg" wait=true]
 ;【背景】背景バザー出店（遠景）
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity.jpg" wait=true]
+;【背景】背景バザー出店（入り口）
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity3.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
