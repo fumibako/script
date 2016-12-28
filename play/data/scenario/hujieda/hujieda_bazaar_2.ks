@@ -7,6 +7,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】ﾁｬﾘﾃｨｰ会場門前
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
