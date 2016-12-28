@@ -151,8 +151,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_19
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：友人(お見合い後)sijyou_yujin_2/f.sijyou_omiai==1
-[if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[20]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：友人(お見合い後・事件解決前)sijyou_yujin_2/f.sijyou_omiai==1
+[if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[20]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_20
 [endif]
@@ -331,31 +331,31 @@
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：新茶の話題１（事件後）sijyou_fumi48 （事件前）を見ていない場合表示
-[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0)  && f.fumi_toutyaku_sijyou[47]==0 && f.fumi_toutyaku_sijyou[48]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[47]==0 && f.fumi_toutyaku_sijyou[48]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_48
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：新茶の話題２（事件後） *sijyou_fumi49 新茶の話題１(事件前[47])または（事件後[48]）を見ている
-[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==1 && (f.fumi_toutyaku_sijyou[47]==1 || f.fumi_toutyaku_sijyou[48]==1) && f.fumi_toutyaku_sijyou[49]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && (f.fumi_toutyaku_sijyou[47]==1 || f.fumi_toutyaku_sijyou[48]==1) && f.fumi_toutyaku_sijyou[49]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_49
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：新茶の話題３（事件後） sijyou_fumi50 新茶の話題１(事件前[47])または（事件後[48])をみている
-[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==1 && (f.fumi_toutyaku_sijyou[47]==1 || f.fumi_toutyaku_sijyou[48]==1) && f.fumi_toutyaku_sijyou[50]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && (f.fumi_toutyaku_sijyou[47]==1 || f.fumi_toutyaku_sijyou[48]==1) && f.fumi_toutyaku_sijyou[50]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_50
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：新茶の話題　凡庸（事件前） sijyou_fumi51 新茶の話題１(事件前[47])を見ている 52をみていない
-[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==0 &&  (f.fumi_toutyaku_sijyou[47]==1 || f.fumi_toutyaku_sijyou[48]==1) && f.fumi_toutyaku_sijyou[51]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==0 && (f.fumi_toutyaku_sijyou[47]==1 || f.fumi_toutyaku_sijyou[48]==1) && f.fumi_toutyaku_sijyou[51]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_51
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：新茶の話題　凡庸（事件前） sijyou_fumi52  新茶の話題１(事件前[47])を見ているを見ている 51をみていない
-[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && (f.sijyou_omiai==0 || f.sijyou_event6==0)  && f.fumi_toutyaku_sijyou[47]==1 && f.fumi_toutyaku_sijyou[51]==0 && f.fumi_toutyaku_sijyou[52]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sintya==0 && f.sijyou_omiai==0 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[47]==1 && f.fumi_toutyaku_sijyou[51]==0 && f.fumi_toutyaku_sijyou[52]==0"]
  [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_52
   [endif]
