@@ -339,7 +339,7 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [layopt layer=message0 visible=true]
 ;一瞬裏がみえるの防止背景
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
+[chara_mod name="bg" storage="bg/bg_hujieda_fuyou.jpg" time=50]
 ;テキスト全画面
 [font color=white size=27]
 ;====================================================================================
