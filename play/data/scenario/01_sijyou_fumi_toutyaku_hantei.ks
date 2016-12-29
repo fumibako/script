@@ -122,7 +122,7 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『仕事について(お見合い後・事件解決後)』華道展のフラグがある2月3月"ではない"とき
-[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.okeiko_month!=2 && f.okeiko_month!=3 && f.fumi_toutyaku_sijyou[15]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sigoto==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.okeiko_month !=2 && f.okeiko_month !=3 && f.fumi_toutyaku_sijyou[15]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_15
 [endif]
