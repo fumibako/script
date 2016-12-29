@@ -1518,6 +1518,7 @@ f.fumi_toutyaku_sijyou[76]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_77
+;『猫 見合い後』呼称手紙側で判別
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫２」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫２」";
@@ -1537,9 +1538,10 @@ f.fumi_toutyaku_sijyou[77]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_78
+;『猫 凡庸2』
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「78」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「78」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫３」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫３」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks);
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1550,14 +1552,16 @@ f.fumi_list_sijyou_location_fumi.push(77);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi78");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_neko=-1;
 f.fumi_toutyaku_sijyou[78]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_79
+;『猫　事件解決後（猫をひろう）』
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「79」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「79」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫（猫をひろう）」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫（猫をひろう）」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1568,14 +1572,16 @@ f.fumi_list_sijyou_location_fumi.push(78);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi79");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_neko=-1;
 f.fumi_toutyaku_sijyou[79]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_80
+;『猫　事件解決後（猫育つ）』
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「80」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「80」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫（猫の経過１）」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫（猫の経過１）」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1586,14 +1592,16 @@ f.fumi_list_sijyou_location_fumi.push(79);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi80");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_neko=-1;
 f.fumi_toutyaku_sijyou[80]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_81
+;『猫５　事件解決後（猫引き取り手発見）』
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「81」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「81」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫（猫の経過２）」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫（猫の経過２）」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1604,14 +1612,16 @@ f.fumi_list_sijyou_location_fumi.push(80);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi81");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_neko=-1;
 f.fumi_toutyaku_sijyou[81]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_82
+;『猫５　事件解決後（猫引き取り手へ）』
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「82」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「82」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫（猫の経過３）」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫（猫の経過３）」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
@@ -1622,6 +1632,7 @@ f.fumi_list_sijyou_location_fumi.push(81);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi82");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_neko=-1;
 f.fumi_toutyaku_sijyou[82]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
@@ -1641,6 +1652,7 @@ f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi83");
 f.sijyou_fumi_toutyakumachi_michi=-1;
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_michi=-1;
 f.fumi_toutyaku_sijyou[83]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
