@@ -43,63 +43,12 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [cm]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 
-[if exp="tf.test_gamen_sijyou!=true"]
+[if exp="tf.test_gamen_sijyou==true"]
+@jump storage="01_sijyou_test_nyuuryoku.ks" target=*start
+[elsif exp="tf.test_gamen_sijyou!=true"]
 [イベントシーン構築]
-[cm]
 テスト画面からお稽古パートをはじめます。[r]
 @jump target=*test_start_common
-[elsif exp="tf.test_gamen_sijyou==true"]
-@layopt layer=29 visible=true
-[ptext text="テスト画面からお稽古パート(四条)をはじめます。テスト用設定をお願いします。" layer=29 size=20 x=70 y=10 color=darkslateblue bold=bold]
-[ptext text="四条：返信速度設定（0で全て翌週届きます。0以外の値で本来の設定通り動作します)" layer=29 size=15 x=100 y=40 color=darkslateblue bold=bold]
-[edit left=100 top=60 width=200 length=200 maxchars=3 name="tf.test_sijyou_fumi_hensin_speed" height=20]
-
-[ptext text="四条：好感度（元の設定値=10)" layer=29 size=15 x=100 y=90 color=darkslateblue bold=bold]
-[edit left=100 top=110 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
-
-[ptext text="四条ルートに入った後=1。それ以外=0" layer=29 size=15 x=100 y=140 color=darkslateblue bold=bold]
-[edit left=100 top=160 width=200 length=200 maxchars=3 name="f.sijyou_au" height=20]
-
-[ptext text="四条：お見合い後=1。それ以外=0" layer=29 size=15 x=100 y=190 color=darkslateblue bold=bold]
-[edit left=100 top=210 width=200 length=200 maxchars=3 name="f.sijyou_omiai" height=20]
-
-[ptext text="四条：イベント6後=1。それ以外=0" layer=29 size=15 x=100 y=240 color=darkslateblue bold=bold]
-[edit left=100 top=260 width=200 length=200 maxchars=3 name="f.sijyou_event6" height=20]
-
-[ptext text="ゲームの進行度：" layer=29 size=15 x=100 y=290 color=darkslateblue bold=bold]
-[edit left=100 top=310 width=50 length=200 maxchars=2 name="f.okeiko_month" height=20]
-[ptext text="月" layer=29 size=15 x=160 y=310 color=darkslateblue bold=bold]
-
-[edit left=180 top=310 width=50 length=200 maxchars=2 name="f.okeiko_week" height=20]
-[ptext text="週" layer=29 size=15 x=240 y=310 color=darkslateblue bold=bold]
-
-[iscript]
-//入力済デフォルト値の設定
-$("input[name='tf.test_sijyou_fumi_hensin_speed']").val("0");
-$("input[name='f.para_sijyou_koukando']").val("40");
-$("input[name='f.sijyou_au']").val("0");
-$("input[name='f.sijyou_omiai']").val("0");
-$("input[name='f.sijyou_event6']").val("0");
-$("input[name='f.okeiko_month']").val("4");
-$("input[name='f.okeiko_week']").val("1");
-[endscript]
-;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
-[button graphic="kettei.png" target=*test_settei_kettei x=150 y=400 width=100 height=100]
-
-[s]
-*test_settei_kettei
-;入力値を数値化。フォームが表示されていることが大切。公式リファレンスより
-[iscript]
-tf.test_sijyou_fumi_hensin_speed = parseInt($("input[name='tf.test_sijyou_fumi_hensin_speed']").val());
-f.para_sijyou_koukando = parseInt($("input[name='f.para_sijyou_koukando']").val());
-f.sijyou_au = parseInt($("input[name='f.sijyou_au']").val());
-f.sijyou_omiai = parseInt($("input[name='f.sijyou_omiai']").val());
-f.sijyou_event6 = parseInt($("input[name='f.sijyou_event6']").val());
-f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
-f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
-[endscript]
-[cm]
-[freeimage layer = 29]
 [endif]
 
 *test_start_common
@@ -1605,17 +1554,10 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 [cm]
 
 [if exp="tf.test_gamen_sijyou==true"]
-@layopt layer=message1 page=fore visible = false
-[current layer="message1"]
-;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message1 left=0 width=500 height=100 top=120 page=fore color=white opacity=150]
-@layopt layer=message1 page=fore visible = true
-[font color=olivedrab size=15]
-四条テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_sijyou_fumi_hensin_speed"],好感度[emb exp="f.para_sijyou_koukando"][r]
-四条ルート(1○,0×)=[emb exp="f.sijyou_au"],お見合い(1後,0未)=[emb exp="f.sijyou_omiai"],イベント6(1後,0未)=[emb exp="f.sijyou_event6"][r]
-[resetfont]
+@jump storage="01_sijyou_test_hyouji.ks" target=*start
 [endif]
 
+*sijyou_test_hyouji_owari
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
