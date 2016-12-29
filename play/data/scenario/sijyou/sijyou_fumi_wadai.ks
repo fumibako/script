@@ -409,11 +409,11 @@
 [endif]
 [手紙四条 fumi_number=]
 [名前]
-if exp="f.sijyou_event6==1"]
+[if exp="f.sijyou_event6==1"]
 さん
 [endif]
 。手紙をありがとう
-if exp="f.sijyou_event6==1"]
+[if exp="f.sijyou_event6==1"]
 ございます
 [endif]
 。[r]
