@@ -1,4 +1,4 @@
-﻿﻿﻿;==============================
+﻿﻿﻿﻿;==============================
 ;layer8：他キャラbase（のっぺらぼう）
 ;layer9:他キャラ口
 ;layer10:他キャラ目
@@ -8,26 +8,46 @@
 ;==============================
 
 *start
+;◆◆立ち絵画像サイズ：(x)1500x(y)1988を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される予定
+[eval exp="f.zaizen_moto_width=1500"]
+[eval exp="f.zaizen_moto_height=1988"]
+;◆立ち絵【通常サイズ】のwidth、height、left、top設定（後日全キャラの立ち絵が揃ってから再調整予定です
+[eval exp="f.zaizen_tuujou_width=f.zaizen_moto_width*0.4"]
+[eval exp="f.zaizen_tuujou_height=f.zaizen_moto_height*0.4"]
+[eval exp="f.zaizen_tuujou_left=175"]
+[eval exp="f.zaizen_tuujou_top=0"]
+;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（後日全キャラの立ち絵が揃ってから再調整予定です
+[eval exp="f.zaizen_tonari_width=f.zaizen_moto_width*0.53"]
+[eval exp="f.zaizen_tonari_height=f.zaizen_moto_height*0.53"]
+[eval exp="f.zaizen_tonari_left=206"]
+[eval exp="f.zaizen_tonari_top=-10"]
+
+;◆立ち絵【サイズ：顔アップ】のwidth、height、left、top設定（後日全キャラの立ち絵が揃ってから再調整予定です
+[eval exp="f.zaizen_up_width=f.zaizen_moto_width*0.9"]
+[eval exp="f.zaizen_up_height=f.zaizen_moto_height*0.9"]
+[eval exp="f.zaizen_up_left=30"]
+[eval exp="f.zaizen_up_top=-50"]
+
 ;画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 8]
 [freeimage layer = 9]
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
-[chara_new name="zaizen_base" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=8 name="zaizen_base" time=0]
+[chara_new name="zaizen_base" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=8 name="zaizen_base" time=0]
 [wait time=10]
-[chara_new name="zaizen_kuti" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=9 name="zaizen_kuti" time=0]
+[chara_new name="zaizen_kuti" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=9 name="zaizen_kuti" time=0]
 [wait time=10]
-[chara_new name="zaizen_me" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=10 name="zaizen_me" time=0]
+[chara_new name="zaizen_me" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=10 name="zaizen_me" time=0]
 [wait time=10]
-[chara_new name="zaizen_mayu" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=11 name="zaizen_mayu" time=0]
+[chara_new name="zaizen_mayu" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=11 name="zaizen_mayu" time=0]
 [wait time=10]
-[chara_new name="zaizen_emo" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=12 name="zaizen_emo" time=0]
+[chara_new name="zaizen_emo" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=12 name="zaizen_emo" time=0]
 [wait time=10]
 
 ;◆財前立ち絵アップ、通常サイズ時のkeyframe設定
