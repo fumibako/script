@@ -194,7 +194,9 @@
 #
 襖を開けるとお二方の男性が座っていた。[p]
 
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（財前様とそのお父様だわ）[p]
+
 #
 お二方の視線が私の方へ向き私は思わず俯く。[p]
 
