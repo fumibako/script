@@ -67,14 +67,14 @@ animﾃｽﾄを終了します。[p]
 [四条退場]
 [暗転]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
-[position name="kan" left=300 width=300 height=300 top=200 page=fore margint="50"]
+[position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面　0x663300
 [font color=white size=35]
 [iscript]
 $("kan").css('margin','auto');
 [endscript]
 
-[sp]　 完。[p]
+[sp]　  完。[p]
 
 ;¥¥¥¥¥¥¥¥イベントおわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
