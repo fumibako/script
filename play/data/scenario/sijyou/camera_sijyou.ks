@@ -33,7 +33,7 @@
 
 ;ｶﾒﾗﾃｽﾄを終了します。[p]
 ;カメラの位置を元に戻す
-@reset_camera
+;@reset_camera
 
 [eval exp="f.sijyou_tatie_moto_width=1202"]
 [eval exp="f.sijyou_tatie_moto_height=2000"]
@@ -64,6 +64,15 @@ tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyo
 
 文字表示[p]
 animﾃｽﾄを終了します。[p]
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position name="kan" left=300 width=300 height=300 top=200 page=fore margint="50"]
+;テキスト全画面　0x663300
+[font color=white size=35]
+[iscript]
+$("kan").css('margin-left','auto','margin-right','auto');
+[endscript]
+
+[sp]　 完。[p]
 
 ;¥¥¥¥¥¥¥¥イベントおわり¥¥¥¥¥¥¥¥
 ;@jump storage="event.ks" target=*event_owari
