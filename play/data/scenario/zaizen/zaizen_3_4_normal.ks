@@ -514,14 +514,18 @@
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;一瞬裏がみえるの防止背景
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
+;===============================================================
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
-[position left=300 width=300 height=300 top=200 page=fore margint="50"]
+[position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面
 [font color=white size=35]
-;====================================================================================
+[iscript]
+$("kan").css('margin','auto');
+[endscript]
+;===============================================================
 ;画面中央に「完」の文字
-[sp]　　　　完[p]
-;====================================================================================
+[sp]　  完[p]
+;===============================================================
 [主人公退場]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
