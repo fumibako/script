@@ -71,7 +71,7 @@ animﾃｽﾄを終了します。[p]
 ;テキスト全画面　0x663300
 [font color=white size=35]
 [iscript]
-$("kan").css('margin-left','auto','margin-right','auto');
+$("kan").css('margin','auto');
 [endscript]
 
 [sp]　 完。[p]
