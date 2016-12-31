@@ -64,6 +64,8 @@ tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyo
 
 文字表示[p]
 animﾃｽﾄを終了します。[p]
+[四条退場]
+[暗転]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=300 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面　0x663300
