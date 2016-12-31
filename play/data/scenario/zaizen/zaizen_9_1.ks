@@ -19,7 +19,7 @@
 ;=====================ここからお芝居の幕引きです===============================
 　
 #
-鈴虫が鳴き夏の終わりと秋の始まりを告げている[p]
+鈴虫が鳴き、夏の終わりと秋の始まりを告げている。[p]
 
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false ]
@@ -81,7 +81,7 @@
 ;以下共通セリフに戻る
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「美彬君は真面目で冷静沈着と聞くなぁ。[r]
-[sp] [名前]に良い影響を与えてくれるのだね」[p]
+[sp][名前]に良い影響を与えてくれるのだね」[p]
 
 
 ;【立ち絵】主人公：通常
@@ -117,7 +117,7 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「そうか。では、早速見合いの準備を進めよう……[r]
-[sp] [名前]。美彬君に決めて、本当に良いのだね？」[p]
+[sp][名前]。美彬君に決めて、本当に良いのだね？」[p]
 
 ;【立ち絵】主人公：目閉じ思案
 [主人公目閉じ]
@@ -155,7 +155,9 @@
 「おやすみなさい」[p]
 
 ;【SE】襖を閉じる（ゆっくり）
-;【SE】落ち着いた足音（フェードアウト）
+[playse storage=fusuma-close.ogg loop=false ]
+;SEが重なるので一か所のみ設定
+;【SE】落ち着いた足音（フェードアウト）[playse storage=isono_out.ogg loop=false ]
 
 ;↓【仮】テストプレイヤーさんに見ていただくには、長いバージョンが良いかな？と仮に入れてみます
 [eval exp="f.para_kuroda_koukando = 20"]
