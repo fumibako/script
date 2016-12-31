@@ -151,8 +151,8 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_19
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：友人(お見合い後・事件解決前)sijyou_yujin_2/f.sijyou_omiai==1
-[if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[20]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：友人(お見合い後・事件前後共通)sijyou_yujin_2/f.sijyou_omiai==1
+[if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[20]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_20
 [endif]
@@ -629,10 +629,16 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_97
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『友人について凡庸』(お見合い後 事件解決前) sijyou_fumi98
+;◆↓手紙一通分の到着判定処理(開始)：『友人について凡庸１』(お見合い後 事件解決前) sijyou_fumi98
 [if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[98]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_98
+  [endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『友人について凡庸２』(お見合い後 事件後) sijyou_fumi99 sijyou_yujin_b2|(凡庸)
+[if exp="f.sijyou_fumi_toutyakumachi_yuujin==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[99]==0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_99
   [endif]
 ;=======================================================================================
 
