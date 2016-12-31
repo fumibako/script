@@ -37,14 +37,19 @@
 *text
 [cm]
 [layopt layer=24 visible=true]
-[ptext text="マクロ：ポーズ" layer=24 size=18 x=30 y=10 color=black bold=bold]
+[ptext text="マクロ：サイズ(衣装･表情再指定願います)" layer=24 size=12 x=30 y=10 color=black bold=bold]
+[ptext text="マクロ：衣装" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 ;[ptext text="表　情" layer=24 size=18 x=100 y=300 color=black bold=bold]
-[ptext text="アニメーション" layer=24 size=18 x=30 y=150 color=black bold=bold]
+[ptext text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
-[glink target="pose_01" text="[葛城宮ベース軍服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
-[glink target="pose_02" text="[葛城宮ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
+[glink target="size_01" text="[葛城宮サイズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
+[glink target="size_02" text="[葛城宮サイズ隣に並ぶ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
+[glink target="size_03" text="[葛城宮サイズ顔アップ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
+
+[glink target="pose_01" text="[葛城宮ベース軍服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 color=white]
+[glink target="pose_02" text="[葛城宮ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 color=white]
 ;[glink target="pose_03" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
 ;[glink target="pose_04" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
 
@@ -61,13 +66,13 @@
 [glink target="face_06" text="[葛城宮目伏せ照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 color=white]
 [glink target="face_07" text="[葛城宮微笑み照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 color=white]
 
-[glink target="face_21" text="[葛城宮目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 color=white]
+[glink target="face_21" text="[葛城宮目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
 
-[glink target="face_22" text="[葛城宮伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 color=white]
+[glink target="face_22" text="[葛城宮伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 color=white]
 
-[glink target="face_23" text="[葛城宮目を閉じる]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
+[glink target="face_23" text="[葛城宮目を閉じる]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 color=white]
 
-[glink target="face_24" text="[葛城宮目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 color=white]
+[glink target="face_24" text="[葛城宮目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 color=white]
 
 ;[glink target="face_24" text="[葛城宮怒り]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 color=white]
 
@@ -128,7 +133,7 @@
 この表情は以下の指定です。[r]
 ポーズマクロ：[emb exp="f.gra_katuraginomiya_pose"][r]
 表情マクロ　：[emb exp="f.gra_katuraginomiya_face"][r]
-各表情は実際の立ち絵とは異なります。
+立ち絵の塗り等について、ゲーム組み込み後に調整予定です。
 [s]
 
 
@@ -148,6 +153,45 @@
 [eval exp="f.gra_katuraginomiya_part='emo'"]
 @jump target=text
 
+
+*size_01
+[葛城宮サイズ通常]
+[eval exp="f.gra_katuraginomiya_pose='[葛城宮サイズ通常]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[葛城宮ベース軍服]
+[葛城宮通常]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
+@jump target=text
+
+*size_02
+[葛城宮サイズ隣に並ぶ]
+[eval exp="f.gra_katuraginomiya_pose='[葛城宮サイズ隣に並ぶ]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[葛城宮ベース軍服]
+[葛城宮通常]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
+@jump target=text
+
+*size_03
+[葛城宮サイズ顔アップ]
+[eval exp="f.gra_katuraginomiya_pose='[葛城宮サイズ顔アップ]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[葛城宮ベース軍服]
+[葛城宮通常]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
+@jump target=text
 
 *pose_01
 [葛城宮ベース軍服]

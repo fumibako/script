@@ -23,26 +23,31 @@
 ;背景変更
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
 [イベントシーン構築]
-;[藤枝サイズ通常]
 [藤枝ベース郵便屋]
 [eval exp="f.gra_hujieda_pose='[藤枝ベース郵便屋]'"]
 [藤枝通常]
 [eval exp="f.gra_hujieda_face='[藤枝通常]'"]
 [eval exp="f.gra_hujieda_part='mayu'"]
 [表示開始]
+[freeimage layer = 29]
 
 *text
 [cm]
 [layopt layer=24 visible=true]
-[ptext text="マクロ：ポーズ" layer=24 size=18 x=30 y=10 color=black bold=bold]
+[ptext text="マクロ：サイズ(衣装･表情再指定願います)" layer=24 size=12 x=30 y=10 color=black bold=bold]
+[ptext text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-[ptext text="アニメーション" layer=24 size=18 x=30 y=150 color=black bold=bold]
+[ptext text="アニメーション" layer=24 size=18 x=30 y=260 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
-[glink target="pose_01" text="[藤枝ベース郵便屋]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
-[glink target="pose_03" text="[藤枝ベース郵便屋_手紙無し]" graphic="select_waku_x500.png" size=12 width="160" x=0 y=60 color=white]
-[glink target="pose_02" text="[藤枝ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
-[glink target="pose_04" text="[藤枝ベース私服_楽譜無し]" graphic="select_waku_x500.png" size=12 width="160" x=0 y=120 color=white]
+[glink target="size_01" text="[藤枝サイズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
+[glink target="size_02" text="[藤枝サイズ隣に並ぶ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
+[glink target="size_03" text="[藤枝サイズ顔アップ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
+
+[glink target="pose_01" text="[藤枝ベース郵便屋]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 color=white]
+[glink target="pose_03" text="[藤枝ベース郵便屋_手紙無し]" graphic="select_waku_x500.png" size=12 width="160" x=0 y=180 color=white]
+[glink target="pose_02" text="[藤枝ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 color=white]
+[glink target="pose_04" text="[藤枝ベース私服_楽譜無し]" graphic="select_waku_x500.png" size=12 width="160" x=0 y=240 color=white]
 
 [glink target="face_01" text="[藤枝通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 color=white]
 [glink target="face_09" text="[藤枝笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 color=white]
@@ -57,13 +62,13 @@
 [glink target="face_06" text="[藤枝目伏せ照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 color=white]
 [glink target="face_07" text="[藤枝微笑み照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 color=white]
 
-[glink target="face_21" text="[藤枝目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 color=white]
+[glink target="face_21" text="[藤枝目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=280 color=white]
 
-[glink target="face_22" text="[藤枝伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 color=white]
+[glink target="face_22" text="[藤枝伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=310 color=white]
 
-[glink target="face_23" text="[藤枝目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
+[glink target="face_23" text="[藤枝目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=340 color=white]
 
-[glink target="face_24" text="[藤枝目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 color=white]
+[glink target="face_24" text="[藤枝目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=370 color=white]
 
 
 [glink target="mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=30 color=blue]
@@ -122,7 +127,7 @@
 この表情は以下の指定です。[r]
 ポーズマクロ：[emb exp="f.gra_hujieda_pose"][r]
 表情マクロ　：[emb exp="f.gra_hujieda_face"][r]
-各表情は実際の立ち絵とは異なります。
+立ち絵の塗り等について、ゲーム組み込み後に調整予定です。
 [s]
 
 
@@ -142,6 +147,42 @@
 [eval exp="f.gra_hujieda_part='emo'"]
 @jump target=text
 
+*size_01
+[藤枝サイズ通常]
+[eval exp="f.gra_hujieda_pose='[藤枝サイズ通常]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[藤枝ベース郵便屋]
+[藤枝通常]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
+@jump target=text
+
+*size_02
+[藤枝サイズ隣に並ぶ]
+[eval exp="f.gra_hujieda_pose='[藤枝サイズ隣に並ぶ]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[藤枝ベース郵便屋]
+[藤枝通常]
+[freeimage layer=13 time=50]
+[wait time=50]
+@jump target=text
+
+*size_03
+[藤枝サイズ顔アップ]
+[eval exp="f.gra_hujieda_pose='[藤枝サイズ顔アップ]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[藤枝ベース郵便屋]
+[藤枝通常]
+[freeimage layer=13 time=50]
+[wait time=50]
+@jump target=text
 
 *pose_01
 [藤枝ベース郵便屋]

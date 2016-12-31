@@ -23,15 +23,15 @@
 [eval exp="f.sijyou_tatie_tuujou_left=238"]
 [eval exp="f.sijyou_tatie_tuujou_top=7"]
 ;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（現状は作成いただいたサイズマクロでの「アップ」時の倍率に合わせてあります。ご希望の倍率があれば調整してください。後日全キャラの立ち絵が揃ってから再調整予定のため、ご希望通りにいかない可能性もありますがご了承ください
-[eval exp="f.sijyou_tatie_tonari_width=f.sijyou_tatie_moto_width*0.53"]
-[eval exp="f.sijyou_tatie_tonari_height=f.sijyou_tatie_moto_height*0.53"]
+[eval exp="f.sijyou_tatie_tonari_width=f.sijyou_tatie_tuujou_width*1.2"]
+[eval exp="f.sijyou_tatie_tonari_height=f.sijyou_tatie_tuujou_height*1.2"]
 [eval exp="f.sijyou_tatie_tonari_left=206"]
 [eval exp="f.sijyou_tatie_tonari_top=-10"]
 ;◆立ち絵【サイズ：顔アップ】のwidth、height、left、top設定（ご希望の倍率があれば調整してください。後日全キャラの立ち絵が揃ってから再調整予定のため、ご希望通りにいかない可能性もありますがご了承ください
-[eval exp="f.sijyou_tatie_up_width=f.sijyou_tatie_moto_width*0.9"]
-[eval exp="f.sijyou_tatie_up_height=f.sijyou_tatie_moto_height*0.9"]
-[eval exp="f.sijyou_tatie_up_left=30"]
-[eval exp="f.sijyou_tatie_up_top=-50"]
+[eval exp="f.sijyou_tatie_up_width=f.sijyou_tatie_tuujou_width*1.7"]
+[eval exp="f.sijyou_tatie_up_height=f.sijyou_tatie_tuujou_height*1.7"]
+[eval exp="f.sijyou_tatie_up_left=100"]
+[eval exp="f.sijyou_tatie_up_top=-20"]
 
 ;◆四条立ち絵初期設定【通常サイズ】
 [chara_new name="sijyou_base" storage="toumei.gif" width=&f.sijyou_tatie_tuujou_width height=&f.sijyou_tatie_tuujou_height]

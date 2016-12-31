@@ -1,4 +1,7 @@
-﻿﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+﻿[表示準備 storage="bg/plane_mizuiro.jpg"]
+[layopt layer=29 visible=true]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
 f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaizen/me_okori.png","data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zaizen/kuti_hiyayaka.png","data/fgimage/zaizen/me_yokofusi1.png","data/fgimage/zaizen/me_yoko.png","data/fgimage/zaizen/me_toji.png","data/fgimage/zaizen/me_niko.png","data/fgimage/zaizen/me_fusi2.png","data/fgimage/zaizen/me_fusi1.png","data/fgimage/zaizen/me_ake.png","data/fgimage/zaizen/mayu_tuyoki.png","data/fgimage/zaizen/mayu_sage.png","data/fgimage/zaizen/mayu_odoroki.png","data/fgimage/zaizen/mayu_komari_soft.png","data/fgimage/zaizen/mayu_hisome.png","data/fgimage/zaizen/kuti_warau.png","data/fgimage/zaizen/kuti_odoroki.png","data/fgimage/zaizen/kuti_mu.png","data/fgimage/zaizen/kuti_hohoemi_soft.png","data/fgimage/zaizen/kuti_hohoemi.png","data/fgimage/zaizen/kuti_ake.png","data/fgimage/zaizen/emo_hohosome.png","data/fgimage/zaizen/emo_ase.png","data/fgimage/zaizen/kuti_futuu.png","data/fgimage/zaizen/me_futuu.png","data/fgimage/zaizen/mayu_futuu.png","data/fgimage/zaizen/base_suit.png","data/fgimage/zaizen/base_enbifuku.png"];
 [endscript]
@@ -25,20 +28,21 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 [財前通常]
 [eval exp="f.gra_zaizen_face='[財前通常]'"]
 [eval exp="f.gra_zaizen_part='mayu'"]
+[表示開始]
+[freeimage layer = 29]
 
 *text
 [cm]
 [layopt layer=24 visible=true]
-[ptext text="マクロ：サイズは不具合調査中です" layer=24 size=12 x=30 y=10 color=#gray bold=bold]
+[ptext text="マクロ：サイズ(衣装･表情再指定願います)" layer=24 size=12 x=30 y=10 color=black bold=bold]
 [ptext text="マクロ：衣装" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 [ptext text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
-;↓不具合が解消されるまでコメントアウトします。不具合調査にはお時間をいただきます(スクリプト担
-;[glink target="size_01" text="[財前サイズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
-;[glink target="size_02" text="[財前サイズ隣に並ぶ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
-;[glink target="size_03" text="[財前サイズ顔寄せ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
+[glink target="size_01" text="[財前サイズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
+[glink target="size_02" text="[財前サイズ隣に並ぶ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
+[glink target="size_03" text="[財前サイズ顔アップ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
 
 [glink target="pose_01" text="[財前ベーススーツ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 color=white]
 [glink target="pose_02" text="[財前ベース燕尾服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 color=white]
@@ -125,7 +129,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 この表情は以下の指定です。[r]
 ポーズマクロ：[emb exp="f.gra_zaizen_pose"][r]
 表情マクロ　：[emb exp="f.gra_zaizen_face"][r]
-各表情は実際の立ち絵とは異なります。
+立ち絵の塗り等について、ゲーム組み込み後に調整予定です。
 [s]
 
 
@@ -148,16 +152,40 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 *size_01
 [財前サイズ通常]
 [eval exp="f.gra_zaizen_pose='[財前サイズ通常]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[財前ベーススーツ]
+[財前通常]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
 @jump target=text
 
 *size_02
 [財前サイズ隣に並ぶ]
 [eval exp="f.gra_zaizen_pose='[財前サイズ隣に並ぶ]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[財前ベーススーツ]
+[財前通常]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
 @jump target=text
 
 *size_03
-[財前サイズ顔寄せ]
-[eval exp="f.gra_zaizen_pose='[財前サイズ顔寄せ]'"]
+[財前サイズ顔アップ]
+[eval exp="f.gra_zaizen_pose='[財前サイズ顔アップ]'"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
+[wait time=50]
+[財前ベーススーツ]
+[財前通常]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
 @jump target=text
 
 *pose_01

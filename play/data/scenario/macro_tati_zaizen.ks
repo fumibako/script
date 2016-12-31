@@ -11,22 +11,21 @@
 ;◆◆立ち絵画像サイズ：(x)1500x(y)1988を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される予定
 [eval exp="f.zaizen_moto_width=1500"]
 [eval exp="f.zaizen_moto_height=1988"]
-;◆立ち絵【通常サイズ】のwidth、height、left、top設定（後日全キャラの立ち絵が揃ってから再調整予定です
-[eval exp="f.zaizen_tuujou_width=f.zaizen_moto_width*0.4"]
-[eval exp="f.zaizen_tuujou_height=f.zaizen_moto_height*0.4"]
-[eval exp="f.zaizen_tuujou_left=175"]
-[eval exp="f.zaizen_tuujou_top=0"]
-;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（後日全キャラの立ち絵が揃ってから再調整予定です
-[eval exp="f.zaizen_tonari_width=f.zaizen_moto_width*0.53"]
-[eval exp="f.zaizen_tonari_height=f.zaizen_moto_height*0.53"]
-[eval exp="f.zaizen_tonari_left=206"]
-[eval exp="f.zaizen_tonari_top=-10"]
-
-;◆立ち絵【サイズ：顔アップ】のwidth、height、left、top設定（後日全キャラの立ち絵が揃ってから再調整予定です
-[eval exp="f.zaizen_up_width=f.zaizen_moto_width*0.9"]
-[eval exp="f.zaizen_up_height=f.zaizen_moto_height*0.9"]
-[eval exp="f.zaizen_up_left=30"]
-[eval exp="f.zaizen_up_top=-50"]
+;◆立ち絵【通常サイズ】のwidth、height、left、top設定（他キャラに合わせて軽く調整済み。立ち絵調整・再出力後に再調整予定です
+[eval exp="f.zaizen_tuujou_width=f.zaizen_moto_width*0.39"]
+[eval exp="f.zaizen_tuujou_height=f.zaizen_moto_height*0.39"]
+[eval exp="f.zaizen_tuujou_left=180"]
+[eval exp="f.zaizen_tuujou_top=-10"]
+;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（軽く調整済み。立ち絵調整・再出力後に再調整予定です
+[eval exp="f.zaizen_tonari_width=f.zaizen_tuujou_width*1.2"]
+[eval exp="f.zaizen_tonari_height=f.zaizen_tuujou_height*1.2"]
+[eval exp="f.zaizen_tonari_left=116"]
+[eval exp="f.zaizen_tonari_top=-15"]
+;◆立ち絵【サイズ：顔アップ】のwidth、height、left、top設定（軽く調整済み。立ち絵調整・再出力後に再調整予定です
+[eval exp="f.zaizen_up_width=f.zaizen_tuujou_width*1.7"]
+[eval exp="f.zaizen_up_height=f.zaizen_tuujou_height*1.7"]
+[eval exp="f.zaizen_up_left=-10"]
+[eval exp="f.zaizen_up_top=-20"]
 
 ;画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [freeimage layer = 8]
@@ -50,62 +49,94 @@
 [chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=12 name="zaizen_emo" time=0]
 [wait time=10]
 
-;◆財前立ち絵アップ、通常サイズ時のkeyframe設定
-;立ち絵サイズ調整には◆B4nFWraU42さん作成のスクリプトを使用させていただきました。ありがとうございます(スクリプト担当
-;【財前アップ顔寄せ設定】透過→下→拡大→表示します
-[keyframe name="scale1"]
-[frame p=0% opacity=0]
-[frame p=10% x=-260 y=-320]
-[frame p=50% scale="0.7"]
-[frame p=100% opacity=1]
-[endkeyframe]
-
-;【財前アップ隣に並ぶ設定】透過→下→拡大→表示します
-[keyframe name="scale2"]
-[frame p=0% opacity=0]
-[frame p=10% x=-250 y=-510]
-[frame p=50% scale="0.5"]
-[frame p=100% opacity=1]
-[endkeyframe]
-
-;【財前通常サイズ設定】透過→縮小→上位置
-[keyframe name="no_scale1"]
-[frame p=0% opacity=0]
-[frame p=10% x=-250 y=-600 scale="0.4"]
-[frame p=100% y=0 opacity=1]
-[endkeyframe]
-
-;◆[財前サイズ顔寄せ]
-[macro name="財前サイズ顔寄せ"]
-[kanim keyframe="scale1" name="zaizen_base" time=10]
-[kanim keyframe="scale1" name="zaizen_me" time=10]
-[kanim keyframe="scale1" name="zaizen_mayu" time=10]
-[kanim keyframe="scale1" name="zaizen_kuti" time=10]
-[kanim keyframe="scale1" name="zaizen_emo" time=1000]
-;スマホフリーズ対策time=10 →おｋ
-[wa]
-[endmacro]
-
-;◆[財前サイズ隣に並ぶ]
+;◆[財前サイズ隣に並ぶ storage="bg/bg_machi.jpg"]　デフォルトは町画像
 [macro name="財前サイズ隣に並ぶ"]
-[kanim keyframe="scale2" name="zaizen_base" time=10]
-[kanim keyframe="scale2" name="zaizen_me" time=10]
-[kanim keyframe="scale2" name="zaizen_mayu" time=10]
-[kanim keyframe="scale2" name="zaizen_kuti" time=10]
-[kanim keyframe="scale2" name="zaizen_emo" time=1000]
-;スマホフリーズ対策time=10 →おｋ
-[wa]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[chara_new name="zaizen_base" storage="toumei.gif" width=&f.zaizen_tonari_width height=&f.zaizen_tonari_height]
+[chara_show left=&f.zaizen_tonari_left top=&f.zaizen_tonari_top layer=8 name="zaizen_base" time=0]
+[wait time=10]
+[chara_new name="zaizen_kuti" storage="toumei.gif" width=&f.zaizen_tonari_width height=&f.zaizen_tonari_height]
+[chara_show left=&f.zaizen_tonari_left top=&f.zaizen_tonari_top layer=9 name="zaizen_kuti" time=0]
+[wait time=10]
+[chara_new name="zaizen_me" storage="toumei.gif" width=&f.zaizen_tonari_width height=&f.zaizen_tonari_height]
+[chara_show left=&f.zaizen_tonari_left top=&f.zaizen_tonari_top layer=10 name="zaizen_me" time=0]
+[wait time=10]
+[chara_new name="zaizen_mayu" storage="toumei.gif" width=&f.zaizen_tonari_width height=&f.zaizen_tonari_height]
+[chara_show left=&f.zaizen_tonari_left top=&f.zaizen_tonari_top layer=11 name="zaizen_mayu" time=0]
+[wait time=10]
+[chara_new name="zaizen_emo" storage="toumei.gif" width=&f.zaizen_tonari_width height=&f.zaizen_tonari_height]
+[chara_show left=&f.zaizen_tonari_left top=&f.zaizen_tonari_top layer=12 name="zaizen_emo" time=0]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
 [endmacro]
 
-;◆[財前サイズ通常]
+;◆[財前サイズ顔アップ storage="bg/bg_machi.jpg"]　デフォルトは町画像
+[macro name="財前サイズ顔アップ"]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[chara_new name="zaizen_base" storage="toumei.gif" width=&f.zaizen_up_width height=&f.zaizen_up_height]
+[chara_show left=&f.zaizen_up_left top=&f.zaizen_up_top layer=8 name="zaizen_base" time=0]
+[wait time=10]
+[chara_new name="zaizen_kuti" storage="toumei.gif" width=&f.zaizen_up_width height=&f.zaizen_up_height]
+[chara_show left=&f.zaizen_up_left top=&f.zaizen_up_top layer=9 name="zaizen_kuti" time=0]
+[wait time=10]
+[chara_new name="zaizen_me" storage="toumei.gif" width=&f.zaizen_up_width height=&f.zaizen_up_height]
+[chara_show left=&f.zaizen_up_left top=&f.zaizen_up_top layer=10 name="zaizen_me" time=0]
+[wait time=10]
+[chara_new name="zaizen_mayu" storage="toumei.gif" width=&f.zaizen_up_width height=&f.zaizen_up_height]
+[chara_show left=&f.zaizen_up_left top=&f.zaizen_up_top layer=11 name="zaizen_mayu" time=0]
+[wait time=10]
+[chara_new name="zaizen_emo" storage="toumei.gif" width=&f.zaizen_up_width height=&f.zaizen_up_height]
+[chara_show left=&f.zaizen_up_left top=&f.zaizen_up_top layer=12 name="zaizen_emo" time=0]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
+
+[endmacro]
+
+
+;◆[財前サイズ通常 storage="bg/bg_machi.jpg"]　デフォルトは町画像
 [macro name="財前サイズ通常"]
-[kanim keyframe="no_scale1" name="zaizen_base" time=10]
-[kanim keyframe="no_scale1" name="zaizen_me" time=10]
-[kanim keyframe="no_scale1" name="zaizen_mayu" time=10]
-[kanim keyframe="no_scale1" name="zaizen_kuti" time=10]
-[kanim keyframe="no_scale1" name="zaizen_emo" time=1000]
-;スマホフリーズ対策time=10 →おｋ
-[wa]
+@layopt layer=13 visible=true
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=50]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[chara_new name="zaizen_base" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=8 name="zaizen_base" time=0]
+[wait time=10]
+[chara_new name="zaizen_kuti" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=9 name="zaizen_kuti" time=0]
+[wait time=10]
+[chara_new name="zaizen_me" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=10 name="zaizen_me" time=0]
+[wait time=10]
+[chara_new name="zaizen_mayu" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=11 name="zaizen_mayu" time=0]
+[wait time=10]
+[chara_new name="zaizen_emo" storage="toumei.gif" width=&f.zaizen_tuujou_width height=&f.zaizen_tuujou_height]
+[chara_show left=&f.zaizen_tuujou_left top=&f.zaizen_tuujou_top layer=12 name="zaizen_emo" time=0]
+[wait time=10]
+[freeimage layer=13 time=50]
+[wait time=50]
+
 [endmacro]
 
 ;立ち絵表示[財前ベーススーツ]
