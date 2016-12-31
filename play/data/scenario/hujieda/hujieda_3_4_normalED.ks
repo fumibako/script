@@ -230,8 +230,9 @@ $('.kaede').remove();
 
 ―― そうお互いに誓い合った。 離れても貴方を想います。[p]
 ;===============================================================
-[暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
 ;綿毛全画面
+;[暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
+[暗転２ storage="bg/bg_prologue.jpg"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面　0x663300
