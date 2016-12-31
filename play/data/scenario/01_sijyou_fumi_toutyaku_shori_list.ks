@@ -1953,9 +1953,10 @@ f.fumi_toutyaku_sijyou[98]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_99
+;お見合い後、事件解決後
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「99」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「99」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「友人２」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「友人２」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
