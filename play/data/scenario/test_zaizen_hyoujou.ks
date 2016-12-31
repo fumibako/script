@@ -1,4 +1,5 @@
-﻿[表示準備 storage="bg/plane_mizuiro.jpg"]
+﻿;マクロ及び立ち絵の自然な退場・登場時に◆B4nFWraU42さん作スクリプトを使用させていただきました。ありがとうございます
+[表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
@@ -150,7 +151,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 @jump target=text
 
 *size_01
-[財前サイズ通常]
+[財前サイズ通常 storage=bg/plane_mizuiro.jpg]
 [eval exp="f.gra_zaizen_pose='[財前サイズ通常]'"]
 @layopt layer=13 visible=true
 [image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
@@ -163,7 +164,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 @jump target=text
 
 *size_02
-[財前サイズ隣に並ぶ]
+[財前サイズ隣に並ぶ storage=bg/plane_mizuiro.jpg]
 [eval exp="f.gra_zaizen_pose='[財前サイズ隣に並ぶ]'"]
 @layopt layer=13 visible=true
 [image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
@@ -176,7 +177,7 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 @jump target=text
 
 *size_03
-[財前サイズ顔アップ]
+[財前サイズ顔アップ storage=bg/plane_mizuiro.jpg]
 [eval exp="f.gra_zaizen_pose='[財前サイズ顔アップ]'"]
 @layopt layer=13 visible=true
 [image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]

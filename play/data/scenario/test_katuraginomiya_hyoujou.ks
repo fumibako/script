@@ -1,4 +1,4 @@
-﻿;↓◆B4nFWraU42さん作のマクロを使用させていただきました。ありがとうございます
+﻿;マクロ及び立ち絵の自然な退場・登場時に◆B4nFWraU42さん作スクリプトを使用させていただきました。ありがとうございます
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
@@ -155,7 +155,7 @@
 
 
 *size_01
-[葛城宮サイズ通常]
+[葛城宮サイズ通常 storage=bg/plane_mizuiro.jpg]
 [eval exp="f.gra_katuraginomiya_pose='[葛城宮サイズ通常]'"]
 @layopt layer=13 visible=true
 [image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
@@ -168,7 +168,7 @@
 @jump target=text
 
 *size_02
-[葛城宮サイズ隣に並ぶ]
+[葛城宮サイズ隣に並ぶ storage=bg/plane_mizuiro.jpg]
 [eval exp="f.gra_katuraginomiya_pose='[葛城宮サイズ隣に並ぶ]'"]
 @layopt layer=13 visible=true
 [image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
@@ -181,7 +181,7 @@
 @jump target=text
 
 *size_03
-[葛城宮サイズ顔アップ]
+[葛城宮サイズ顔アップ storage=bg/plane_mizuiro.jpg]
 [eval exp="f.gra_katuraginomiya_pose='[葛城宮サイズ顔アップ]'"]
 @layopt layer=13 visible=true
 [image name="jyunbi" storage=bg/plane_mizuiro.jpg left=1 top=1 layer=13 zindex=1 visible=true time=30]
