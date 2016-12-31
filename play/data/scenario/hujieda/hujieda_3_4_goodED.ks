@@ -478,7 +478,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;【背景】青空に桜
 ;[image layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
-;【背景】ﾌﾟﾛﾛーｸﾞ
+;【背景】ﾌﾟﾛﾛーｸﾞ どちらか選んでください
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [wait time=100]
