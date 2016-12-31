@@ -228,9 +228,27 @@ $('.kaede').remove();
 #
 私たちは同時に声を合わせて指切りをした。[p]
 
-――そうお互いに誓い合った。 離れても貴方を想います。[p]
-
+―― そうお互いに誓い合った。 離れても貴方を想います。[p]
+;===============================================================
+[暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
+;綿毛全画面
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
+;テキスト全画面　0x663300
+[font color=white size=35]
+[iscript]
+$("kan").css('margin','auto');
+[endscript]
+;【背景】綿毛全画面
+[chara_mod name="bg" storage="bg/hijieda_kaede_sita2.jpg"]
+;===============================================================
+;画面中央に「完」の文字
+[sp]　  完[p]
+;===============================================================
 [fadeoutbgm time=3000]
+;会話ウィンドウ消去
+；[chara_mod name="message_bg" storage="toumei.gif" time=1]
+;===============================================================
 [wait time=100]
 ;ノーマルここまで
 ;@jump storage="event.ks" target=*event_owari
