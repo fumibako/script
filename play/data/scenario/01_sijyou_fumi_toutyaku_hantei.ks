@@ -377,14 +377,14 @@
 ;=======================================================================================
 ;さつきの話題 f.sijyou_fumi_toutyakumachi_satuki
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：さつきの話題 sijyou_fumi57
+;◆↓手紙一通分の到着判定処理(開始)：さつきの話題(見合い後) sijyou_fumi57　事件前後共通手紙側で判別
 [if exp="f.sijyou_fumi_toutyakumachi_satuki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[57]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_57
  [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：さつきの話題(見合い後) sijyou_fumi58
-[if exp="f.sijyou_fumi_toutyakumachi_satuki==0 && f.sijyou_omiai==1 && f.fumi_toutyaku_sijyou[58]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：さつきの話題(見合い後・事件後) sijyou_fumi58
+[if exp="f.sijyou_fumi_toutyakumachi_satuki==0 && f.sijyou_omiai==1 && f.sijyou_event6==1 && f.fumi_toutyaku_sijyou[58]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_58
  [endif]
