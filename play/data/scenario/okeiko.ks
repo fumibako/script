@@ -1,4 +1,5 @@
-﻿*start
+﻿;主人公登場時の画像被せ処理に◆B4nFWraU42さん作スクリプトを使用しました。ありがとうございます。
+*start
 ;↓◆お稽古パート経由かどうか見るための変数
 [eval exp="tf.okeiko_gamen=true"]
 [skipstop]
@@ -46,12 +47,13 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [if exp="tf.test_gamen_sijyou==true"]
 @jump storage="01_sijyou_test_nyuuryoku.ks" target=*start
 [elsif exp="tf.test_gamen_sijyou!=true"]
-[イベントシーン構築]
+;[イベントシーン構築]
 テスト画面からお稽古パートをはじめます。[r]
 @jump target=*test_start_common
 [endif]
 
 *test_start_common
+[cm]
 [イベントシーン構築]
 手紙の「話題」を全て入手済みにしますか？[r]
 
@@ -239,15 +241,6 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠について
 [chara_mod name="bg" storage=&f.okeiko_bg_tukihajime]
 ;【SE】スズメのさえずり
 [playse storage=tori_suzume.ogg loop=false]
-
-;◆プリロード(first.ksでプリロードするためこちらはコメントアウト）
-;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-[iscript]
-f.preload_images = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/me_fusi1.png","data/fgimage/girl/S/kuti_futuu.png","data/fgimage/message_bg/frame_red.png","data/fgimage/message_bg/frame_brown.png","data/fgimage/girl/L/base.png","data/fgimage/girl/L/mayu_futuu.png","data/fgimage/girl/L/me_futuu.png","data/fgimage/girl/L/kuti_futuu.png"];
-//ver3.41ではエラーが出るのでコメントアウト。verup時に再度試すことf.preload_bgms = ["data/bgm/prologue_kotonisakuhana.m4a","data/bgm/isono_miyabi.m4a"];
-[endscript]
-;[preload storage=&f.preload_images]
-
 
 ;◆背景切り替え中に色々読込
 ;【システム表示】フキダシ枠【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
@@ -715,14 +708,21 @@ f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_now - f.okeiko_hituyou_k
 [wait time=10]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
-[chara_mod name="A_base" storage="girl/L/base.png" time=0]
-[wait time=10]
-[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="A_me" storage="girl/L/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
-[wait time=10]
+;主人公L登場時被せ
+	[image name="junbi_girl" layer=29 storage="girl/L/gitl_L_all_futuu.png" left=50 top=220 time=300 visible=true]
+	[wait time=10]
+	[chara_mod name="A_base" storage="girl/L/base.png" time=0]
+	[wait time=10]
+	[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
+	[wait time=10]
+	[chara_mod name="A_me" storage="girl/L/me_futuu.png" time=0]
+	[wait time=10]
+	[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
+	[wait time=10]
+[wait time=200]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 [chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
 [wait time=10]
 [return]
@@ -1462,6 +1462,9 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 	[cm]
 	[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 	[wait time=10]
+;主人公L登場時被せ
+	[image name="junbi_girl" layer=29 storage="girl/L/gitl_L_all_futuu.png" left=50 top=220 time=300 visible=true]
+	[wait time=10]
 	[chara_mod name="A_base" storage="girl/L/base.png" time=0]
 	[wait time=10]
 	[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
@@ -1470,6 +1473,10 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 	[wait time=10]
 	[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 	[wait time=10]
+[wait time=200]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 	[layopt layer=26 visible=true]
 	[layopt layer=27 visible=true]
 	[image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
@@ -1496,6 +1503,10 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 	[cm]
 	[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 	[wait time=10]
+	[layopt layer=29 visible=true]
+;主人公L登場時被せ
+	[image name="junbi_girl" layer=29 storage="girl/L/gitl_L_all_futuu.png" left=50 top=220 time=300 visible=true]
+	[wait time=10]
 	[chara_mod name="A_base" storage="girl/L/base.png" time=0]
 	[wait time=10]
 	[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
@@ -1504,6 +1515,10 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 	[wait time=10]
 	[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 	[wait time=10]
+[wait time=200]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 [endif]
 [layopt layer=26 visible=true]
 [layopt layer=27 visible=true]
@@ -1539,14 +1554,21 @@ f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 *draw_fukidasi
 
 ;主人公画像表示【マクロでフリーズしやすいのでchara_modで切り替え】
-[chara_mod name="A_base" storage="girl/L/base.png" time=0]
-[wait time=10]
-[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="A_me" storage="girl/L/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
-[wait time=10]
+;主人公L登場時被せ
+	[image name="junbi_girl" layer=29 storage="girl/L/gitl_L_all_futuu.png" left=50 top=220 time=300 visible=true]
+	[wait time=10]
+	[chara_mod name="A_base" storage="girl/L/base.png" time=0]
+	[wait time=10]
+	[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
+	[wait time=10]
+	[chara_mod name="A_me" storage="girl/L/me_futuu.png" time=0]
+	[wait time=10]
+	[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
+	[wait time=10]
+[wait time=200]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 
 [if exp="f.fumi_toutyaku != 0"]
 @jump target=*fumi_hyouji
