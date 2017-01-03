@@ -1,4 +1,4 @@
-﻿﻿;◆手紙到着フラグONの個別処理
+﻿﻿﻿;◆手紙到着フラグONの個別処理
 ;◆四条手紙到着
 *fumi_toutyaku_sijyou_2
 [iscript]
@@ -1543,7 +1543,7 @@ f.fumi_toutyaku_sijyou[77]=1;
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫３」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「猫３」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks);
+f.fumi_list_all_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi_wadai.ks");
 f.fumi_list_all_target.push("*sijyou_fumi78");
 f.fumi_list_all_location_taishou.push(2);
