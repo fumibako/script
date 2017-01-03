@@ -68,7 +68,7 @@ f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
 [cm]
 [freeimage layer = 29]
 
-@jump storage=okeiko.ks target=*test_start_common
+@jump storage=okeiko_start.ks target=*test_start_common
 [s]
 
 *back_test
