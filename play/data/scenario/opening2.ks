@@ -60,11 +60,11 @@
 ;【SE】時計（広間カチコチ）
 [playse storage=tokei_hiroma.ogg loop=false]
 
-;変更を最小限にしたいのでプリロード画面かぶせずすませたい ポーズがないので通常
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_komari.png" left=1 top=381 time=300 visible=true]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_yubi_me_fusi_mayu_yowa_ase.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 ;主人公画像表示【マクロで切り替え】
-[主人公ポーズ通常]
+[主人公ポーズ指]
+[wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -78,8 +78,7 @@
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
-[主人公ポーズ指]
-[wait time=10]
+
 
 [chara_mod name="girl_te" storage="toumei.gif" time=0]
 [wait time=10]
