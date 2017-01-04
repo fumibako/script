@@ -323,7 +323,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 #
-私は恥ずかしさに父の背に隠れながら、チラリと黒田様を見た。[p]
+私は恥ずかしさのあまり、父の背に隠れながら、チラリと黒田様を見た。[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
