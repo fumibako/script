@@ -20,10 +20,10 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:華族会館全画面
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_cyarity6.jpg" time=50 visible=true]
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=50 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50" opacity=30]
+[position left=200 width=700 height=530 top=110 page=fore]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
