@@ -32,14 +32,17 @@
 長屋門の奥に絢爛な洋館がそびえ立っている。[p]
 
 かつて、政府の重鎮達が、[r]
-西欧諸国に我が国の発展を知らしめる為に造られた迎賓館であり、[r]
-諸外国を模倣し、舞踏会が開かれる場であった。[p]
+西欧諸国に我が国の発展を知らしめる為に造られた[r]
+迎賓館であり、諸外国を模倣し、舞踏会が[r]
+開かれる場であった。[p]
 
 今は国賓をもてなし、[r]
-華族としての責務を果たす場として華族会館と呼ばれている。[p]
+華族としての責務を果たす場として[r]
+『華族会館』と呼ばれている。[p]
 
-衆人の模範たる華族として、慈善活動は、[r]
-最も崇高な社交の場であり、女性の社会活動の第一歩でもあった。[p]
+衆人の模範たる華族として、『慈善活動』は、[r]
+最も崇高な社交の場であり、[r]
+女性の社会活動の第一歩でもあった。[p]
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
@@ -169,17 +172,17 @@
 [whosay name="財前美彬"]
 「……行きましょうか」[p]
 
-;【背景】演奏会場１
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1200]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
-財前様に案内され、2階の奥のテラスに面した会場に着く。[p]
+;【背景】演奏会場2_近景
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou2.jpg" time=1200]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+
+;財前様に案内され、ニ階の奥のテラスに面した会場に着く。[p]
 ;ここまで校正　あとは句点ダッシュ
 
 財前様に案内され、二階の奥のテラスに面した練習室に着くと、[r]
 藤枝様は心の琴線に触れるような演奏をしていた。[p]
 
-;[ピアノと筝の入った背景]
 [藤枝ベース私服]
 [藤枝微笑み]
 
@@ -189,6 +192,10 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （藤枝様がオルガンを弾く音は初めて聴いたけれど[r]
 [sp]心に響く綺麗な優しい音色なのは変わらないわ）[p]
+
+;【背景】演奏会場1_遠景
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1200]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 
 [whosay name="財前美彬"]
 「藤枝君」[p]
@@ -357,7 +364,7 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】[ピアノと筝の入った背景]
-;【背景】演奏会場１
+;【背景】演奏会場１ いまはない
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;テキスト全画面
