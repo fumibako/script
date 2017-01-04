@@ -99,8 +99,8 @@
 #
 財前様について裏口から華族会館へと入る。[p]
 
-;【背景】二階への階段
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity7.jpg" time=1100]
+;【背景】準備中の廊下
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity8.jpg" time=1100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 会場の中では、既に貴婦人の方々がチャリティーバザーの準備をしていた。[p]
@@ -116,7 +116,11 @@
 [whosay name="某貴婦人３"]
 「花でウェルカムの文字を入れようかしら」[p]
 
+;【背景】二階への階段
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity7.jpg" time=1100]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公驚]
 「皆様、熱心にチャリティバザーの準備をされているのですね！」[p]
 
