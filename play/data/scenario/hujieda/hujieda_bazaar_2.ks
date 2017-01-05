@@ -109,8 +109,8 @@
 
 [whosay name="財前美彬"]
 「早速ですが、お伝えした通り[r]
-[sp]本日から[名前]さんには、五日間、藤枝君と[r]
-[sp]会場の練習室を借りて練習をして頂きます」[p]
+[sp]本日から[名前]さんには、五日間、藤枝君と会場の練習室を[r]
+[sp]借りて練習をして頂きます」[p]
 
 [主人公目伏]
 [主人公口通常]
@@ -225,6 +225,7 @@
 [sp]滅多な事はいわないようにしてください。[r]
 [sp]あくまでも私からの紹介ですので」[p]
 
+;あくまでも私からの紹介ですので滅多な事はいわないようにしてください。
 [whosay name="財前美彬"]
 「君達は若く恋する年頃なのでしょうが[r]
 [sp][名字]様と手紙を交わしていることは、他の方に悟られれないように。[r]
@@ -237,8 +238,8 @@
 
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（本来華族は家長が決めた相手と結婚し、[r]
-[sp]身分の違う相手との恋は許されない）[p]
+（本来、華族は家長が決めた相手と結婚し、身分の違う相手との[r]
+[sp]恋は許されない）[p]
 
 [whosay name="財前美彬"]
 「私は他の打ち合わせに行きます。[r]
@@ -256,10 +257,10 @@
 
 ;【背景】ｲﾒｰｼﾞ背景　箏
 [image layer=13 x=1 y=1 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
-[wait time=10]
+[wait time=300]
 
 ;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ　
-[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=1300 visible=true]
+[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
 [wait time=10]
 #
 私たちは音合わせを始めた。互いの心を探るように音を重ねていく。[p]
@@ -316,8 +317,8 @@
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （藤枝様は私と財前様がお手紙を交わしていた事をご存じなのだわ）[p]
-[主人公目閉じ]
 [主人公口ほほえみ]
+[主人公目閉じ]
 「私は貴方がいいです」[p]
 [主人公頬染め]
 （私は藤枝様が好き。　今になって揺らぐことはないわ）[p]
@@ -364,12 +365,19 @@
 
 （きっと藤枝様とならよい演奏が出来るわ）[p]
 
+;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ　
+[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
+[wait time=10]
+
 [主人公目閉じ]
 #
 オルガンの切ない伴奏はお箏の主旋律に寄り添い、次第に暖かなものへと変わる。[p]
 
+;【背景】ｲﾒｰｼﾞ背景　箏
+[image layer=13 x=1 y=1 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
+[wait time=500]
 #
-ーーそして２つの音は溶け合いっていく。[p]
+――　そしてニつの音は溶け合いっていく。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （音を合わせるのは楽しいのね）[p]
@@ -389,6 +397,8 @@
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
+;イメージ背景削除
+[freeimage layer=13 time=600]
 [イベントシーン構築ボタン無し版]
 ;裏で表情リセット
 [主人公ポーズ通常]
