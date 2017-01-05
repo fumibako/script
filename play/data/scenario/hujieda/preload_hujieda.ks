@@ -510,7 +510,33 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】:ミルクホール 立ち絵用　ピアノ
 [preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
-;まだない
+;【背景】華族会館全画面
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity6_1.jpg" wait=true]
+;【背景】ﾁｬﾘﾃｨｰ会場門前
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity6.jpg" wait=true]
+;【背景】;野点傘と縁談の背景
+[preload storage="data/fgimage/bg/B4nFWraU42/katuraginomiya_yaten.jpg" wait=true]
+;【背景】演奏会場１うらぐち
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity51.jpg" wait=true]
+;【背景】準備中の廊下
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity8.jpg" wait=true]
+;【背景】二階への階段
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity7.jpg" wait=true]
+;【背景】演奏会場2_遠景
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_ensou1.jpg" wait=true]
+;【背景】演奏会場2_近景
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_ensou2.jpg" wait=true]
+;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ
+[preload storage="data/fgimage/bg/bg_hujieda_orugan.jpg" wait=true]
+;【背景】ｲﾒｰｼﾞ背景　箏
+[preload storage="data/fgimage/bg/bg_hujieda_koto.jpg" wait=true]
+;【背景】演奏会場１ 
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_ensou3.jpg" wait=true]
+;【背景】演奏会場２
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_ensou3_1.jpg" wait=true]
+;【背景】金屏風
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" wait=true]
+
 ;====================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
