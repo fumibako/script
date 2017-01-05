@@ -112,6 +112,7 @@
 [sp]本日から[名前]さんには、五日間、藤枝君と会場の練習室を[r]
 [sp]借りて練習をして頂きます」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目伏]
 [主人公口通常]
 「練習室はどちらになりますか？[r]
@@ -191,15 +192,16 @@
 
 財前様に案内され、二階の奥のテラスに面した練習室に着くと、[r]
 藤枝様は心の琴線に触れるような演奏をしていた。[p]
-
+#
 ;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ
 [image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=1300 visible=true]
 [wait time=10]
 
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目閉じ]
 [主人公口ほほえみ]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 （藤枝様がオルガンを弾く音は初めて聴いたけれど[r]
 [sp]心に響く綺麗な優しい音色なのは変わらないわ）[p]
 
@@ -254,7 +256,7 @@
 [藤枝口微笑み]
 「さあ、音を合わせていきましょう」[p]
 
-
+#
 ;【背景】ｲﾒｰｼﾞ背景　箏
 [image layer=13 x=1 y=1 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
 [wait time=300]
@@ -274,12 +276,12 @@
 
 [主人公眉下げ下]
 [主人公目伏]
-藤枝様はピアノに顔を向けたまま手を止めずに私だけに聞こえるようにささやいた。[p]
+藤枝様はピアノに顔を向けたまま手を止めずに私だけに聞こえるように[ruby text=ささ]囁いやいた。[p]
 
 [whosay name="藤枝 肇" color=%mp.color]
 「あの……」[p]
 #
-私も箏を見つめ爪弾きながら、ささやきかえす。[p]
+私も箏を見つめ爪弾きながら、[ruby text=ささ]囁やきかえす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目にこ]
 「なんですか？」[p]
@@ -326,7 +328,7 @@
 [whosay name="藤枝 肇" color=%mp.color]
 [藤枝笑顔大]
 「そうですか。　……良かったです」[p]
-
+[藤枝通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 「藤枝様は、私の気持ちを疑っているのですか？」[p]
@@ -365,6 +367,7 @@
 
 （きっと藤枝様とならよい演奏が出来るわ）[p]
 
+#
 ;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ　
 [image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
 [wait time=10]
@@ -454,7 +457,7 @@
 ;[playse storage=hakushu.ogg loop=false ]
 
 #
-司会者は財前様の知り合という事で場慣れしているようだった[p]
+司会者は財前様の知り合という事で場慣れしているようだった。[p]
 
 [藤枝ベース私服]
 [藤枝微笑み]
@@ -541,7 +544,7 @@
 拍手の残響を聞きながら達成感で胸が詰まる。[p]
 
 #
-[主人公目閉じ]
+[主人公目閉]
 [主人公口ほほえみ]
 そして司会の方が来て感想と挨拶を終え、大盛況の内に一幕を終えた。[p]
 
@@ -564,22 +567,18 @@
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
-;【背景】演奏会場１ 
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou3_1.jpg" time=1000]
+;【背景】金屏風
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [freeimage layer = 29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_hujieda.ks"]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 今日の最後の演奏が終わり、[r]
 藤枝は笑顔で満足そうにお客様を見送る。[p]
-
-[藤枝ベース私服]
-[藤枝微笑み]
 
 [whosay name="藤枝 肇" color=%mp.color] 
 「ご清聴ありがとうございました」[p]
@@ -609,9 +608,11 @@
 [主人公目閉じ]
 （今日の事は忘れないわ）[p]
 
+;（合奏できて良かった。[r]のどちらかでいい　置くならここで。
 
 [whosay name="司会者" color=%mp.color]
 「お二人とも、素晴らしい演奏をありがとうございます！……」[p]
+
 #
 司会の方が来て感想と挨拶を終え、大盛況の内に一幕を終えた。 [p]
 
@@ -641,14 +642,14 @@
 [freeimage layer = 29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[call target=*start storage="macro_tati_hujieda.ks"]
+[藤枝ベース私服]
+[藤枝微笑み]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 
-[藤枝ベース私服]
-[藤枝微笑み]
+
 
 #
 お客様が去っていく中、[r]
@@ -656,6 +657,7 @@
 
 
 [whosay name=？？？]
+[主人公通常]
 「ピアノの腕が上達したね肇君！[r]
 [sp]今回の演奏は二年前以上に素晴らしかったよ。[r]
 [sp]亡き母君も喜んでおられるだろう」[p]
