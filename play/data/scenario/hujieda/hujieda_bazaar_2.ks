@@ -192,8 +192,9 @@
 財前様に案内され、二階の奥のテラスに面した練習室に着くと、[r]
 藤枝様は心の琴線に触れるような演奏をしていた。[p]
 
-[藤枝ベース私服_楽譜無し]
-[藤枝微笑み]
+;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ
+[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=1300 visible=true]
+[wait time=10]
 
 [主人公眉下げ下]
 [主人公目閉じ]
@@ -207,6 +208,10 @@
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1200]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;==============================================================================
+
+[藤枝ベース私服_楽譜無し]
+[藤枝微笑み]
+[freeimage layer=13 time=600]
 
 [whosay name="財前美彬"]
 「藤枝君」[p]
@@ -247,10 +252,25 @@
 [whosay name="藤枝 肇" color=%mp.color]
 [藤枝口微笑み]
 「さあ、音を合わせていきましょう」[p]
+
+
+;【背景】ｲﾒｰｼﾞ背景　箏
+[image layer=13 x=1 y=1 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
+[wait time=10]
+
+;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ　
+[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=1300 visible=true]
+[wait time=10]
 #
-私たちは音合わせを始めた。互いの心を探るように音を重ねて行く。[p]
+私たちは音合わせを始めた。互いの心を探るように音を重ねていく。[p]
+
 [主人公目閉じ]
 もうすこしで合う、というところでピアノの澄んだ音がすこしためらうように震えた。[p]
+
+
+;イメージ背景削除
+[freeimage layer=13 time=600]
+
 [主人公眉下げ下]
 [主人公目伏]
 藤枝様はピアノに顔を向けたまま手を止めずに私だけに聞こえるようにささやいた。[p]
