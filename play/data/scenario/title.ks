@@ -21,6 +21,7 @@
 [freeimage layer = 20]
 [eval exp="tf.test_gamen_sijyou=false"]
 [eval exp="tf.test_gamen=false"]
+[eval exp="tf.okeiko_gamen=false"]
 
 [hidemenubutton]
 

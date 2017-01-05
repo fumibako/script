@@ -10,6 +10,12 @@
 [call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
 
+;ゲーム変数値数値を代入（月, 週, 月始め切り替え背景など。テスト画面経由時以外に実行
+[eval exp="f.okeiko_month = 4"]
+[eval exp="f.okeiko_week = 1"]
+;週始めを示す変数に1を代入(0=週始め以外を示す)
+[eval exp="f.okeikopart_shuuhajime=1"]
+
 ;手紙の話題リスト（初期話題）を読込んで配列f.wadai_list_hairetsu[i][j]に格納。
 ;[i]部分が話題の種類
 ;[j]部分が話題の属性(好感度増減値)を示す(0=話題の種類名、1=黒田、2=財前、3=華織、4=葛城宮 晴仁、5=藤枝　肇、6=好適距離a最初からok,b好感度20以上でok、c好感度50以上でok、7、8=その話題が苦手なキャラ、9、10=その話題を好むキャラ)
@@ -38,7 +44,12 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [endscript]
 *complete_load_wadai_list_hairetsu
 
-[if exp="tf.test_gamen==true"]
+;◆テスト画面経由でなければ設定画面表示せずにお稽古パートを読み込む
+[if exp="tf.test_gamen!=true"]
+@jump target=*okeiko
+[endif]
+
+*test_settei_start
 ;背景変更:和紙風 桜色
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
@@ -56,6 +67,7 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 *test_start_common
 [cm]
 [イベントシーン構築]
+[emb exp="tf.test_gamen"]
 手紙の「話題」を全て入手済みにしますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -228,11 +240,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠について
 
 
 [cm]
-;ゲーム変数値数値を代入（月, 週, 月始め切り替え背景など。テスト画面経由時以外に実行
-[if exp="tf.test_gamen!=true"]
-[eval exp="f.okeiko_month = 4"]
-[eval exp="f.okeiko_week = 1"]
-[endif]
+;◆月始め「○月」の全画面画像表示
 [eval exp="f.okeiko_bg_tukihajime = 'bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
 [eval exp="f.sysgra_okeiko_month = 'button/kanji_' + f.okeiko_month + '.png'"]
 [eval exp="f.sysgra_okeiko_week = 'button/kanji_' + f.okeiko_week + '.png'"]
