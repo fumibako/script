@@ -2,19 +2,23 @@
 ;=============================================
 ;藤枝ルート２月３週から３月４週の間にイベント
 ;=============================================
-;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
+[call target=*sansaku storage="hujieda/preload_hujieda.ks]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[イベントシーン構築]
-
+;背景:町並み
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[イベントシーン構築ボタン無し版]
+#
 [主人公ポーズ通常]
 [主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=====================ここからお芝居の幕引きです===============================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 #
 行きかう人々は、今日も賑やかに活気が溢れている。[p]
@@ -34,8 +38,7 @@
 [主人公眉下げ下]
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「あの！[r]
-[sp]お財布、落とされましたよ」[p]
+「あの！　お財布、落とされましたよ」[p]
 
 #
 彼女は振り向き、一礼する。[r]
