@@ -299,7 +299,7 @@
 #
 私は、その姿を見ただけで泣きそうになった。[p]
 
-彼は、客席に一礼し、私と視線が合った。[p]
+彼は、客席に一礼し、私と視線が合う。[p]
 
 [藤枝驚き]
 [whosay name="藤枝 肇" color=%mp.color] 
@@ -316,7 +316,7 @@
 [endif]
 
 #
-私たちは見つめ合い、お互いの感情を確かめ合った[p]
+私たちは見つめ合い、お互いの感情を確かめ合った。[p]
 [主人公目閉じ]
 私が頷くと藤枝様は決意した様子で、ピアノの椅子に座り、[r]
 吸い込まれるようにして鍵盤に指を置いた。[p]
@@ -436,7 +436,7 @@ $('.piano_base_me').remove();
 ;==========
 [藤枝目閉じ]
 #
-観客の歓声にこたえて藤枝様は一礼する。[r]
+観客の歓声に[ruby text=こた]応えて藤枝様は、一礼する。[r]
 そして藤枝様は、思いもよらない事を口に出した。[p]
 
 [fadeoutbgm time=3000]
@@ -656,11 +656,11 @@ $('.piano_base_me').remove();
 ;【背景】主人公邸 庭の見える部屋：昼
  [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+ [主人公通常]
 [暗転２終了]
 ;============================================================================================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公通常]
 [主人公目パチ1回]
 「ただいま帰りました」[p]
 
@@ -821,7 +821,7 @@ $('.piano_base_me').remove();
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「家の体面以前にも[r]
-[sp]私たちは第一にお前の幸せを願っている[r]
+[sp]私たちは第一にお前の幸せを願っている。[r]
 [sp]その事は覚えて置きなさい」[p]
 [fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
