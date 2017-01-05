@@ -71,7 +71,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 憂い
 [主人公憂い]
-「心配かけて申し訳ないと思っているわ[r]
+「心配かけて申し訳ないと思っているわ。[r]
 [sp]でも嗜み程度でなく もっと上手になりたいの」[p]
 
 [whosay name=磯野 color="dimgray"]
