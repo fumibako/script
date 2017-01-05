@@ -208,10 +208,14 @@
 そして会食が終わり余興の時間になる頃だった[p]
 
 [whosay name="財閥総帥秘書"]
-「財前さま、[r]
+「財前様、[r]
 [主人公通常]
 [sp]総帥が財前様をお呼びです。 来ていただけますか？」[p]
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
 [財前通常]
@@ -249,11 +253,7 @@
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ」[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】夕涼み（お稽古パートなど
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
-[endif]
+
 [主人公憂い]
 ;====================================================================================
 [暗転２]
@@ -262,7 +262,7 @@
 [暗転２終了 time=1000]
 ;====================================================================================
 十分後ー[r]
-財前さまが、席を外されて、ぼんやりする。[p]
+財前様が、席を外されて、ぼんやりする。[p]
 一人で知らない場所にいるというのは、寂しく不安な気持ちが広がる。[p]
 
 [whosay name="パーティ客男性"]
