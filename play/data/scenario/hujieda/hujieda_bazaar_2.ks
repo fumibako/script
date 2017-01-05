@@ -567,6 +567,8 @@
 ;【背景】演奏会場１ 
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou3_1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[藤枝ベース私服]
+[藤枝微笑み]
 [freeimage layer = 29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -578,7 +580,7 @@
 今日の最後の演奏が終わり、[r]
 藤枝は笑顔で満足そうにお客様を見送る。[p]
 
-[藤枝ベース私服]
+
 [藤枝微笑み]
 [whosay name="藤枝 肇" color=%mp.color] 
 「ご清聴ありがとうございました」[p]
