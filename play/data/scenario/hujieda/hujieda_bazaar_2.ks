@@ -14,7 +14,6 @@
 [プリロード画面消去]
 ;最大全角３１文字×４行
 ;==========================スクリプト・全画面表示の間に設定===============================
-
 ;【テキスト全画面】  [テキスト全画面白文字]裏で画面構成
 ;機能ボタン消去
 [layopt layer=fix visible=false]
@@ -375,9 +374,8 @@
 [藤枝微笑み]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-;【背景】[ピアノと筝の入った背景]
-;【背景】演奏会場１ いまはない
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1000]
+;【背景】演奏会場１ 
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -397,7 +395,6 @@
 [eval exp="sf.FButton='ON'"]
 [メッセージウィンドウ上ボタン表示]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
-;[ピアノと筝の入った背景]
 #
 司会者が会場に立つと、藤枝様の紹介を始めた。[p]
 
@@ -480,8 +477,35 @@
 
 [主人公目閉じ]
 [主人公口ほほえみ]
-#
+;==========================スクリプト・全画面表示の間に設定===============================
+;【テキスト全画面】  [テキスト全画面白文字]裏で画面構成
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+;====================================================================================
+
 ――　三時半[p]
+
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+;【背景】演奏会場１ 
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou3_1.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_hujieda.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 今日の最後の演奏が終わり、[r]
 藤枝は笑顔で満足そうにお客様を見送る。[p]
 
