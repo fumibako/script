@@ -1282,7 +1282,7 @@ _　いらっしゃるのでしょうか？)[p]
 ;引用元：～～はじめての　池坊いけばな入門～～
 [eval exp="tf.test_sijyou=false"]
 @jump storage="sijyou/sijyou_2_1b.ks"
-
+;続編に飛ぶ
 [if exp="tf.test_sijyou==true"]
 [四条退場]
 [暗転]
