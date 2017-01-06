@@ -1501,20 +1501,33 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[ptext text=&f.fumibako_page_hyouji layer=28 size=20 x=800 y=40 color=palegoldenrod bold=bold]
 
 ;◆「文箱」下部「手紙を書く」エリアのボタン表示
-;↓黒田ボタン
-	[glink storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=20 y=585 color=white]
-;↓財前ボタン
-	[glink storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=190 y=585 color=white]
-;↓四条ボタン
-	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=360 y=585 color=white]
+[if exp="f.kuroda_au==1"]
+	[glink storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=400 y=585 color=white]
+[elsif exp="f.zaizen_au==1"]
+	[glink storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=400 y=585 color=white]
+@jump target=fumibako_oaite_hyouji_owari
+[elsif exp="f.sijyou_au==1"]
+	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=400 y=585 color=white]
+@jump target=fumibako_oaite_hyouji_owari
+[elsif exp="f.katuraginomiya_au==1"]
+	[glink storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=400 y=585 color=white]
+@jump target=fumibako_oaite_hyouji_owari
+[elsif exp="(f.hujieda_au==1 && f.hujieda_fumi_start==1)"]
+;藤枝とは個別ルートに入った後、2月3週で主人公父から許しを得るまでお手紙を交わせない
+	[glink storage="fumi_henji.ks" target=fumibako_hujieda text="藤枝　肇" size=16 width="120" x=400 y=585 color=white]
+@jump target=fumibako_oaite_hyouji_owari
+;↓まだ個別ルートに入っていない間のみ複数のお相手を表示
+[elsif exp="f.kuroda_au + f.zaizen_au + f.sijyou_au + f.katuraginomiya_au + f.hujieda_au == 0"]
+	[glink storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=75 y=585 color=white]
+	[glink storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=275 y=585 color=white]
+	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=475 y=585 color=white]
 ;葛城宮に手紙を出せるようになっていたらボタン表示
-[if exp="f.katuraginomiya_fumi_start==1"]
-	[glink storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=530 y=585 color=white]
 [endif]
-;藤枝に手紙を出せるようになっていたらボタン表示
-[if exp="f.hujieda_fumi_start==1"]
-	[glink storage="fumi_henji.ks" target=fumibako_hujieda text="藤枝　肇" size=16 width="120" x=700 y=585 color=white]
+[if exp="f.katuraginomiya_fumi_start==1 && f.katuraginomiya_au==0"]
+	[glink storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=675 y=585 color=white]
 [endif]
+
+*fumibako_oaite_hyouji_owari
 	[glink target="fumibako_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 [return]
 [s]
