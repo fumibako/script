@@ -1025,7 +1025,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [chara_mod name="bg" storage="bg/ bg_prologue.jpg"]
 [image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg" time=1000 visible=true]
 @jump storage=sijyou/sijyou_3_1b.ks target=first
-
+;続編に飛ぶ
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
