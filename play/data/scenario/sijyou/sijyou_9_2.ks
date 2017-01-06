@@ -550,8 +550,12 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 [stopbgm]
 ;¥¥¥¥¥¥¥¥イベント2ここまで¥¥¥¥¥¥¥¥
 
-;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 
