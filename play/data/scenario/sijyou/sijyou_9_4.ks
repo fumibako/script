@@ -503,9 +503,12 @@
 ;長いので好感度で表示するかスルーでいい
 @jump storage="sijyou/sijyou_9_4b.ks" target=*start
 ;¥¥¥¥¥¥¥¥イベント4おわり¥¥¥¥¥¥¥¥
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 
