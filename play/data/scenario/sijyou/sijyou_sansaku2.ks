@@ -255,6 +255,11 @@
 (……)
 [主人公眉下げ下]
 [p]
+[eval exp="f.sijyou_sobo=true"]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 #
 
 ;機能ボタン表示
