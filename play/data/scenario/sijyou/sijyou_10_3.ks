@@ -289,7 +289,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [暗転]
 *seen7
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
-;@jump storage="event.ks" target=*event_owari
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
