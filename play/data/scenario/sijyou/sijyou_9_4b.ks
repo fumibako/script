@@ -156,9 +156,13 @@
 [sp]華織様、どうか元気を出してください……)[p]
 [fadeoutbgm time=3000]
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
-;@jump storage="event.ks" target=*event_owari
 [stopbgm]
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 *window_close
