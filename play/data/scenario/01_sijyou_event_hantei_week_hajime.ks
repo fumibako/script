@@ -24,14 +24,14 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
-;◆顔合せのお相手選びイベント判定：◆四条 sijyou_9_1.ks好感度一定値以上で1度だけ発生 　！！選択肢になるので条件は不明
-[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_common[3]==0 && (f.para_sijyou_koukando > 30 || f.para_zaizen_koukando > 30 || f.para_kuroda_koukando > 30 || f.para_katuraginomiya_koukando > 30|| f.para_hujieda_koukando > 30)"]
-	[eval exp="f.event_storage='sijyou_9_1.ks'"]
-	[eval exp="f.event_target='*replay_ sijyou_9_1.ks'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_sijyou[3]=1"]
-	@jump storage="event.ks" target=*start
-[endif]
+;◆顔合せのお相手選びイベント判定：◆四条 sijyou_9_1.ks好感度一定値以上で1度だけ発生 　選択肢になるのでいらない　common_9_1.ksでとぶ
+;[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_common[3]==0 && (f.para_sijyou_koukando > 30 || f.para_zaizen_koukando > 30 || f.para_kuroda_koukando > 30 || f.para_katuraginomiya_koukando > 30|| f.para_hujieda_koukando > 30)"]
+;[eval exp="f.event_storage='sijyou_9_1.ks'"]
+;[eval exp="f.event_target='*replay_ sijyou_9_1.ks'"]
+;[eval exp="f.event_type='talk'"]
+;[eval exp="f.event_sijyou[3]=1"]
+;@jump storage="event.ks" target=*start
+;[endif]
 ;================================================
 ;◆四条イベント判定【顔合せ】判定 四条ルートかつ9月2週になった時点で1度だけ発生
 [if exp="(f.okeiko_month==9 && f.okeiko_week==2) && f.event_sijyou[4]==0 && f.sijyou_au==1"]
@@ -54,7 +54,7 @@
 ;================================================
 ;◆四条イベント判定【デート】sijyou_9_4.ks　は別ファイル
 ;================================================
-;◆四条イベント判定【デート】sijyou_10_1.ks
+;◆四条イベント判定【障害のはじまり/手紙が帰ってこなくなる】sijyou_10_1.ks
 [if exp="(f.okeiko_month==10 && f.okeiko_week==1) && f.event_sijyou[7]==0 && f.sijyou_au==1"]
 	[eval exp="f.event_storage=’sijyou_10_1.ks'"]
 	[eval exp="f.event_target='*replay_sijyou_10_1.ks'"]
