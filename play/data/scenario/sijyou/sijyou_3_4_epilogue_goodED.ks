@@ -222,9 +222,12 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
 
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+;ending処理
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 
