@@ -1047,7 +1047,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg " time=1000 visible=true]
 ;=================================================================================_
 *seen15
-;↓実装時は後半へ飛ぶ
+;↓実装時は後半へ飛ぶ 
 @jump storage="sijyou/sijyou_11_1b.ks" target=*first
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
