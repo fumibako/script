@@ -151,6 +151,11 @@ $('.saku1').remove();
 [主人公ふぅ閉]
 (ふぅ。 なんだったのかしら……不思議な夢を見た気がするわ）[p]
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 
