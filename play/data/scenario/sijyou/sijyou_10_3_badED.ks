@@ -100,7 +100,9 @@
 [wait time=10]
 
 ;badED処理追記予定
-;@jump storage="event.ks" target=*event_owari
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
