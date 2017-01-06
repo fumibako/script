@@ -976,6 +976,11 @@ _　たとえ華道に対するお志が高くとも、私が……)[p]
 [主人公退場]
 [四条退場]
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 *window_close
