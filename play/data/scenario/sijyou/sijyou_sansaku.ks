@@ -31,9 +31,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (なんだったのでしょうか……)[p]
 
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 
