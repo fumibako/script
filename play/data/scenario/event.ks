@@ -7,127 +7,16 @@
 @jump storage=&f.event_storage target=&f.event_target
 [endif]
 
-
-;背景変更:主人公邸_お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[wait time=10]
-
-;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
-[chara_new name="girl_base" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=15 name="girl_base" time=0]
-[wait time=10]
-[chara_new name="girl_mayu" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=16 name="girl_mayu" time=0]
-[wait time=10]
-[chara_new name="girl_me" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=17 name="girl_me" time=0]
-[wait time=10]
-[chara_new name="girl_kuti" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=18 name="girl_kuti" time=0]
-[wait time=10]
-[chara_new name="girl_emo" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=19 name="girl_emo" time=0]
-[wait time=10]
-[chara_new name="girl_te" storage="toumei.gif"]
-[chara_show left=1 top=381 layer=20 name="girl_te" time=0]
-[wait time=10]
-
-[call target=*start storage="macro_tati_girl.ks"]
-
-;[if exp="(f.okeiko_month==4 && f.okeiko_week==1)"]
-
-;【機能ボタン表示】
-[locate x=250 y=17]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=350 y=17]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=450 y=17]
-[button name="button_info" fix=true graphic="button_info.png" storage=info_oaite_fumi.ks target=*info_oaite]
-[wait time=10]
-[locate x=550 y=17]
-[button name="button_sansaku" fix=true graphic="button_sansaku.png" storage=sansaku.ks target=*sansaku]
-[wait time=10]
-[locate x=650 y=17]
-[button name="button_fumibako" fix=true graphic="button_fumi.png" storage=info_oaite_fumi.ks target=*fumibako]
-[wait time=10]
-
-;【お稽古ボタン表示】
-[locate x=350 y=549]
-[button name="okeiko_sadou" fix=true graphic="button_okeiko_sadou.png" target=*okeiko_sadou]
-[wait time=10]
-[locate x=470 y=549]
-[button name="okeiko_kadou" fix=true graphic="button_okeiko_kadou.png" target=*okeiko_kadou]
-[wait time=10]
-[locate x=590 y=549]
-[button name="okeiko_reihou" fix=true graphic="button_okeiko_reihou.png" target=*okeiko_reihou]
-[wait time=10]
-[locate x=710 y=549]
-[button name="okeiko_gogaku" fix=true graphic="button_okeiko_gogaku.png" target=*okeiko_gogaku]
-[wait time=10]
-[locate x=852 y=533]
-[button name="okeiko_qk" fix=true graphic="button_okeiko_qk.png" target=*okeiko_qk]
-[wait time=10]
-
-;【システム表示】月週
-[layopt layer=21 visible=true]
-[image layer=21 x=81 y=6 storage=&f.sysgra_okeiko_month]
-[wait time=10]
-[layopt layer=22 visible=true]
-[image layer=22 x=81 y=50 storage=&f.sysgra_okeiko_week]
-[wait time=10]
-[eval exp="f.okeikopart_shuuhajime=1"]
-
-;【パラメータ計算＆描画】
-;↓処理ループ中に含める
-[iscript]
-f.para_shujinkou_tairyoku=f.para_shujinkou_tairyoku_now + "/" + f.para_shujinkou_tairyoku_max;
-f.para_shujinkou_kiryoku=f.para_shujinkou_kiryoku_now + "/" + f.para_shujinkou_kiryoku_max;
-f.para_shujinkou_shukujodo_max_width = f.para_shujinkou_shukujodo * 1 + 2;
-f.para_shujinkou_shukujodo_now_width = f.para_shujinkou_shukujodo * 1;
-f.para_shujinkou_tairyoku_max_width = f.para_shujinkou_tairyoku_max * 1 + 2;
-f.para_shujinkou_tairyoku_now_width = f.para_shujinkou_tairyoku_now * 1;
-f.para_shujinkou_kiryoku_max_width = f.para_shujinkou_kiryoku_max * 1 + 2;
-f.para_shujinkou_kiryoku_now_width = f.para_shujinkou_kiryoku_now * 1;
-[endscript]
-
-;称号判定
-[iscript]
-if (f.para_shujinkou_shukujodo > 80){f.shougou = "淑女";}
-else {f.shougou = "お転婆娘";}
-[endscript]
-
-;レイヤー24にパラメータ画像を表示
-[layopt layer=24 visible=true]
-[if exp="f.para_shujinkou_shukujodo == 0"]
-[else]
-[image layer=24 x=835 y=111 width=&f.para_shujinkou_shukujodo_max_width height=10 storage="button/parabar_empty_brown.png"]
-[image layer=24 x=836 y=112 width=&f.para_shujinkou_shukujodo_now_width height=8 storage="button/parabar_pink.png"]
-[endif]
-[if exp="f.para_shujinkou_tairyoku_max == 0"]
-[else]
-[image layer=24 x=835 y=174 width=&f.para_shujinkou_tairyoku_max_width height=10 storage="button/parabar_empty_brown.png"]
-[image layer=24 x=836 y=175 width=&f.para_shujinkou_tairyoku_now_width height=8 storage="button/parabar_green.png"]
-[endif]
-[if exp="f.para_shujinkou_kiryoku_max == 0"]
-[else]
-[image layer=24 x=835 y=212 width=&f.para_shujinkou_kiryoku_max_width height=10 storage="button/parabar_empty_brown.png"]
-[image layer=24 x=836 y=213 width=&f.para_shujinkou_kiryoku_now_width height=8 storage="button/parabar_blue.png"]
-[endif]
-
-;レイヤー24にパラメータテキストを表示
-[ptext text=&f.shougou layer=24 size=25 x=800 y=55 color=black bold=bold]
-;[ptext text=&f.para_shujinkou_shukujodo layer=24 size=20 x=914 y=92 color=moccasin bold=bold]
-[ptext text=&f.para_shujinkou_shukujodo layer=24 size=20 x=915 y=93 color=black bold=bold]
-;[ptext text=&f.para_shujinkou_tairyoku layer=24 size=20 x=869 y=157 color=moccasin bold=bold]
-[ptext text=&f.para_shujinkou_tairyoku layer=24 size=20 x=870 y=158 color=black bold=bold]
-;[ptext text=&f.para_shujinkou_kiryoku layer=24 size=20 x=869 y=194 color=moccasin bold=bold]
-[ptext text=&f.para_shujinkou_kiryoku layer=24 size=20 x=870 y=195 color=black bold=bold]
-;[endif]
-
 [if exp="f.event_type=='advice'"]
+;◆お稽古パート画面表示処理へ飛んで戻ってくる
+;↓どこから飛んだか、戻る際の道標
+[eval exp="f.hyoujimae_storage='event.ks'"]
+[eval exp="f.hyoujimae_target='*draw_owari'"]
+@jump storage="okeiko_hyouji.ks" target=*start
+[endif]
+*draw_owari
+[if exp="f.event_type=='advice'"]
+;◆各イベントスクリプトへ飛ぶ
 @jump storage=&f.event_storage target=&f.event_target
 [endif]
 
@@ -209,10 +98,13 @@ TG.stat.stack["call"] = [];
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
 [cm]
-[stopbgm ]
-;【BGM】夕涼み（お稽古）
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [wait time=10]
+[endif]
 
 [if exp="f.event_jiki=='weekend'"]
 	[eval exp="f.event_jiki='weekstart'"]
@@ -264,6 +156,10 @@ TG.stat.stack["call"] = [];
 	[skipstop]
 [endif]
 *common_4_1
+;◆チュートリアル中はフキダシを透明化
+[cm]
+[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
+[wait time=10]
 [skipstop]
 ;◆立ち絵L通常
 [chara_mod name="A_base" storage="girl/L/base.png" time=0]
@@ -365,6 +261,8 @@ TG.stat.stack["call"] = [];
 いいえ、今は結構よ
 [p]
 [resetfont]
+;↓アドバイスイベントを(1=通過済)に変更
+[eval exp="f.event_advice=1"]
 @jump storage="okeiko.ks" target=*draw_button_system
 
 *common_4_1_2
@@ -383,6 +281,7 @@ TG.stat.stack["call"] = [];
 ありがとう、磯野[p]
 [chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 [resetfont]
+[eval exp="f.event_advice=1"]
 @jump storage="okeiko.ks" target=*draw_button_system
 
 
@@ -441,7 +340,7 @@ TG.stat.stack["call"] = [];
 [chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 [wait time=10]
 [resetfont]
-
+[eval exp="f.event_advice=1"]
 @jump storage="okeiko.ks" target=*draw_button_system
 
 ;回想記録終了 
@@ -494,7 +393,7 @@ TG.stat.stack["call"] = [];
 [chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 [wait time=10]
 [resetfont]
-
+[eval exp="f.event_advice=1"]
 @jump storage="okeiko.ks" target=*draw_button_system
 
 ;回想記録終了 
@@ -549,7 +448,7 @@ TG.stat.stack["call"] = [];
 するのは悪いわね。[p]
 [chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 [wait time=10]
-
+[eval exp="f.event_advice=1"]
 @jump storage="okeiko.ks" target=*draw_button_system
 
 ;回想記録終了 
@@ -624,7 +523,7 @@ TG.stat.stack["call"] = [];
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう、磯野」[p]
 #
-
+[eval exp="f.event_advice=1"]
 @jump target=*event_owari
 
 ;回想記録終了 
@@ -681,7 +580,7 @@ TG.stat.stack["call"] = [];
 [wait time=10]
 [resetfont]
 
-
+[eval exp="f.event_advice=1"]
 @jump storage="okeiko.ks" target=*draw_button_system
 
 ;回想記録終了 
@@ -733,7 +632,7 @@ TG.stat.stack["call"] = [];
 [chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 [wait time=10]
 [resetfont]
-
+[eval exp="f.event_advice=1"]
 @jump storage="okeiko.ks" target=*draw_button_system
 
 ;回想記録終了 
@@ -805,7 +704,7 @@ TG.stat.stack["call"] = [];
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう、磯野」[p]
 #
-
+[eval exp="f.event_advice=1"]
 @jump target=*event_owari
 
 ;回想記録終了 
@@ -1133,3 +1032,47 @@ TG.stat.stack["call"] = [];
 
 [return]
 
+*back_test
+[ct]
+[clearfix]
+[clearstack]
+[skipstop]
+[stopse]
+@layopt layer=message0 page=fore visible = false
+@layopt layer=message1 page=fore visible = false
+
+;◆全レイヤクリア
+[freeimage layer = 0]
+[freeimage layer = 1]
+[freeimage layer = 2]
+[freeimage layer = 3]
+[freeimage layer = 4]
+[freeimage layer = 5]
+[freeimage layer = 6]
+[freeimage layer = 7]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 13]
+[freeimage layer = 14]
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+[freeimage layer = 21]
+[freeimage layer = 22]
+[freeimage layer = 23]
+[freeimage layer = 24]
+[freeimage layer = 25]
+[freeimage layer = 26]
+[freeimage layer = 27]
+[freeimage layer = 28]
+[freeimage layer = 29]
+[chara_new name="bg" storage="bg/title.jpg"]
+[chara_show left=1 top=1 layer=1 name="bg" time=0]
+@jump storage="test.ks"
+[s]

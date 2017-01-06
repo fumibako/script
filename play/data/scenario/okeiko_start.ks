@@ -67,7 +67,6 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 *test_start_common
 [cm]
 [イベントシーン構築]
-[emb exp="tf.test_gamen"]
 手紙の「話題」を全て入手済みにしますか？[r]
 
 ;選択肢用レイヤーを追加

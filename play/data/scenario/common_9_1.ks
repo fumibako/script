@@ -1,4 +1,4 @@
-﻿;=============================================
+﻿﻿;=============================================
 ;◆顔合せのお相手選び： 9月1週になった時点で、攻略対象の好感度一定値以上なら1度だけ発生
 ;=============================================
 *replay_common_9_1
@@ -15,29 +15,7 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
-;メッセージエリアの表示;【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
-
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-;[locate x=900 y=390]
-;[button name="message_close" graphic="button_message_close.png" role=message ]
-[eval exp="sf.FButton='ON'"]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+[イベントシーン構築]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -224,18 +202,17 @@
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「[名前]、覚えているか？」[p]
+「文奈、覚えているか？」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「文矢が文矢嫁君と見合いをしたのは９月の終わり頃だった……」[p]
 
 [主人公目パチ1回]
 [wait time=10]
-#
 ふと、お父様は真剣な表情を浮かべる。[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「まぁ、それでだ。[名前]もそろそろ誰かと会ってみる気はないかと思ってな？」[p]
+「まぁ、それでだ。文奈もそろそろ誰かと会ってみる気はないかと思ってな？」[p]
 
 [主人公目パチ1回]
 [wait time=10]
@@ -246,12 +223,12 @@
 [playse storage=mushi_suzumushi.ogg loop=false ]
 #
 どなたとお会いしましょうか？
-;【分岐】
+;【分岐】暫定的に各シナリオ9月1週へ飛ぶ処理を入れています(現状ではイベント後テストページに移動します。後日お稽古パートへ戻る処理を追記予定です)
+;好感度と淑女度によるif分岐処理を追記予定です(スクリプト担
 [glink storage="kuroda_9_1.ks" target=*replay_kuroda_9_1 text="黒田様" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
-[glink storage="zaizen_9_1.ks" target=*replay_zaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
-[glink storage="sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink storage="jiyuuwaku1_9_1.ks" target=*replay_jiyuuwaku1_9_1 text="自由枠１様" fontcolor=gray size=23 width="200" x=550 y=200 color=white]
-[glink storage="jiyuuwaku2_9_1.ks" target=*replay_jiyuuwaku2_9_1 text="自由枠２様" fontcolor=gray size=23 width="200" x=200 y=300 color=white]
+[glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
+[glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+
 [glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=550 y=300 color=white]
 [autosave]
 [s]
@@ -337,12 +314,13 @@
 
 #
 どなたとお会いしましょうか？
-;【分岐】
+;【分岐】暫定的に各シナリオ9月1週へ飛ぶ処理を入れています(現状ではイベント後テストページに移動します。後日お稽古パートへ戻る処理を追記予定です)
+;好感度と淑女度によるif分岐処理を追記予定です(スクリプト担
 [glink storage="kuroda_9_1.ks" target=*replay_kuroda_9_1 text="黒田様" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
-[glink storage="zaizen_9_1.ks" target=*replay_zaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
-[glink storage="sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-[glink storage="jiyuuwaku1_9_1.ks" target=*replay_jiyuuwaku1_9_1 text="自由枠１様" fontcolor=gray size=23 width="200" x=550 y=200 color=white]
-[glink storage="jiyuuwaku2_9_1.ks" target=*replay_jiyuuwaku2_9_1 text="自由枠２様" fontcolor=gray size=23 width="200" x=200 y=300 color=white]
+[glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
+[glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+
+[glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=550 y=300 color=white]
 [autosave]
 [s]
 

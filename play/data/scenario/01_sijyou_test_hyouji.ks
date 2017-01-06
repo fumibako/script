@@ -15,4 +15,4 @@
 祖母を(true見た,false見ていない)=[emb exp="f.sijyou_sobo"][r]
 
 [resetfont]
-@jump storage="okeiko.ks" target=*sijyou_test_hyouji_owari
+@jump storage="okeiko_hyouji.ks" target=*sijyou_test_hyouji_owari
