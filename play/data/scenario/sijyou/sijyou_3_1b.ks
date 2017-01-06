@@ -1250,6 +1250,9 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 *seen10
 [イベントシーン終了]
 
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 
 @jump storage="test_sijyou.ks"
 [s]
