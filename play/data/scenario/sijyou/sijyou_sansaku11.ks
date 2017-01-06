@@ -73,9 +73,13 @@
 [主人公ポーズ指]
 [主人公目パチ1回]
 (賑やかですわね)[p]
-;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 
