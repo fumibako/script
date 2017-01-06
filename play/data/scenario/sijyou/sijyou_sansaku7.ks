@@ -1219,7 +1219,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;（帰ったら未来の君のために頑張らないと……）[p]
 #
 ;@jump storage="sijyou/sijyou_omake_kai.ks"
+
 [イベントシーン終了]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 *window_close
