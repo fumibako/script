@@ -143,11 +143,17 @@ TG.stat.play_se = true;
 
 ;◆◆散策機能_イベント発生判定
 *sansaku_machi_event_hantei
+;=============================================
+;重要イベント判定(共通イベントよりも優先して発生させたいイベントはこちらに記載します
+;=============================================
 ;◆黒田イベント2判定【麦】6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生(まずokeiko.ksの*event_hanteiで判定し、このファイル上*sansakuに飛んでいる)
 [if exp="(f.okeiko_month==6 && f.okeiko_week==4) && f.event_machi_kuroda[2]==0 && f.para_kuroda_koukando > 5"]
 	@jump target=*sansaku_machi_kuroda_02
 [endif]
 
+;=============================================
+;◆共通イベント判定
+;=============================================
 ;◆共通イベント1判定【友人に会う】4月1週～6月4週、期間中に町へ行くと1度だけ発生
 [if exp="(f.okeiko_month==4 || f.okeiko_month==5 || f.okeiko_month==6) && f.event_machi_common[1]==0"]
 	@jump target=*sansaku_machi_common_01
@@ -158,11 +164,21 @@ TG.stat.play_se = true;
 	@jump target=*sansaku_machi_common_02
 [endif]
 
-;◆黒田イベント1判定【さつき】5月3週～6月2週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
-[if exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_kuroda[1]==0 && f.para_kuroda_koukando > 5"]
+;◆共通イベント1判定【さつき】5月3週～6月2週、期間中に町へ行くと1度だけ発生(以前は黒田イベントだったため、変数にその名残があります)
+[if exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_kuroda[1]==0"]
 	@jump target=*sansaku_machi_kuroda_01
 [endif]
 
+;=============================================
+;◆四条イベント判定
+;=============================================
+*sijyou_event_hantei
+@jump storage="01_sijyou_event_hantei_sansaku.ks" target=*start
+*sijyou_event_hantei_owari
+
+;=============================================
+;◆黒田イベント判定
+;=============================================
 ;◆黒田イベント3判定【黒田家のうわさ１】7月1週～4週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
 [if exp="f.okeiko_month==7 && f.event_machi_kuroda[3]==0 && f.para_kuroda_koukando > 10"]
 	@jump target=*sansaku_machi_kuroda_03
