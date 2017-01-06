@@ -190,7 +190,10 @@
 [autosave]
 ;ここでイベントは区切り バッドが必要であれば、文矢から「話をしてみたけどダメだったよ」という返事に。イベントバッドへ追記
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
-;@jump storage="event.ks" target=*event_owari
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
