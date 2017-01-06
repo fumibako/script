@@ -257,10 +257,12 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 $('.yuki').remove();
 [endscript]
 ;¥¥¥¥¥¥¥¥イベント7おわり¥¥¥¥¥¥¥¥
-;@jump storage="event.ks" target=*event_owari
-
-
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_sijyou.ks"
 [s]
 
