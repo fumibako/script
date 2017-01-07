@@ -184,6 +184,15 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 ;現状、去り際かっこいい感じな表情
 ;てにをは～が足りてない
 
+[イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="sansaku.ks" target=*sansaku_machi_seika
+[endif]
+[if exp="tf.sijyou_test==true"]
+@jump storage="test_sijyou.ks"
+[s]
+[endif]
 
 ;機能ボタン表示
 [locate x=530 y=357]
@@ -203,9 +212,7 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 [wait time=10]
 [eval exp="sf.FButton='ON'"]
 
-
 [機能ボタン表示]
-
 
 ;【背景】[背景_庭]
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
@@ -217,17 +224,6 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築]
 ;[主人公ポーズ通常]
-
-
-
-[イベントシーン終了]
-
-[if exp="tf.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_owari
-[endif]
-
-@jump storage="test_sijyou.ks"
-[s]
 
 *window_close
 [cm]
