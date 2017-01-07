@@ -643,6 +643,8 @@ _　さてどうしましょうか？」[p]
 
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
+[else]
+[イベントシーン２終了]
 [endif]
 
 @jump storage="test_sijyou.ks"
