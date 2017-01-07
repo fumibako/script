@@ -231,7 +231,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [endreplay] 
 @jump storage="event.ks" target=*event_ED
 [else]
-
+[イベントシーン３終了]
 [endif]
 
 @jump storage="test_sijyou.ks"
