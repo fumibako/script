@@ -445,6 +445,7 @@
 [macro name=イベントシーン終了２]
 ;書き直すのが面倒なので一括処理内容
 ;散策
+;テストモード[if exp="tf.test_sijyou==true"]@jump storage="test_sijyou.ks"[edif]
 [endmacro]
 
 [macro name=四条ルート終了]
@@ -468,6 +469,7 @@
 [macro name=イベントシーン終了４]
 ;書き直すのが面倒なので一括処理内容
 ;イベント
+;テストモード[if exp="tf.test_sijyou==true"]@jump storage="test_sijyou.ks"[edif]
 [endmacro]
 
 ;==================================================
