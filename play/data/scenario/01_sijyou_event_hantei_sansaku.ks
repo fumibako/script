@@ -1,4 +1,4 @@
-﻿;=============================================
+;=============================================
 ;◆四条イベント判定(散策ボタンを押すと起きるもの)
 ;=============================================
 *start
@@ -28,8 +28,8 @@
 	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定 sijyou_sansaku4.ks(11月3週～1月末)
-[if exp="f.okeiko_month==11 && f.event_machi_sijyou[4]==0 && f.sijyou_au==1"]
+;◆四条イベント判定 sijyou_sansaku4.ks(11月3週→12～1月末)
+[if exp="(f.okeiko_month==12 || f.okeiko_month==1) && f.event_machi_sijyou[4]==0 && f.sijyou_au==1"]
 	[eval exp="f.event_machi_sijyou[4]=1"]
 	@jump storage="sijyou_sansaku4.ks" 
 	;target=*sansaku
@@ -40,22 +40,22 @@
 	[eval exp="f.event_machi_sijyou[5]=1"]
 	@jump storage="sijyou_sansaku4.ks" 
 	;target=*sansaku
-[elsif exp="f.okeiko_month==11 && f.event_machi_sijyou[17]==0"]
+[elsif exp="f.okeiko_month==12 && f.event_machi_sijyou[17]==0"]
 	;「１７」なのは時期によってパターンが違うため	
 	[eval exp="f.event_machi_sijyou[17]=1"]
 	@jump storage="sijyou_sansaku4.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定 sijyou_sansaku6.ks(7~8月(他攻略対象より好感度が高い)花火イベント)
-[if exp="f.okeiko_month==11 && (f.para_sijyou_koukando > 30 || f.para_zaizen_koukando > 30 || f.para_kuroda_koukando > 30 || f.para_katuraginomiya_koukando > 30|| f.para_hujieda_koukando > 30) && f.event_machi_sijyou[6]==0 && f.sijyou_au==0"]
+;◆四条イベント判定 sijyou_sansaku6.ks(7~8月→8月(他攻略対象より好感度が高い)花火イベント)
+[if exp="f.okeiko_month==8 && f.para_sijyou_koukando > f.para_zaizen_koukando && f.para_sijyou_koukando > f.para_kuroda_koukando && f.para_sijyou_koukando > f.para_katuraginomiya_koukando &&  f.para_sijyou_koukando > f.para_hujieda_koukando && f.event_machi_sijyou[6]==0 && f.sijyou_au==0"]
 	[eval exp="f.event_machi_sijyou[6]=1"]
 	@jump storage="sijyou_sansaku4.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
-;◆四イベント判定条 sijyou_sansaku7.ks(３月華道パラメータ一定値以上、四条好感度一定値以上)
-[if exp="f.okeiko_month==11 && f.event_machi_sijyou[7]==0 && f.sijyou_au==1"]
+;◆四条イベント判定条 sijyou_sansaku7.ks(香水イベント　３月華道パラメータ一定値以上、四条好感度一定値以上)数値は適当
+[if exp="f.okeiko_month==3 && f.event_machi_sijyou[7]==0 && f.para_shujinkou_j_kadou > 100 && f.para_sijyou_koukando > 80 && f.sijyou_au==1"]
 	[eval exp="f.event_machi_sijyou[7]=1"]
 	@jump storage="sijyou_sansaku4.ks" 
 	;target=*sansaku
@@ -69,7 +69,7 @@
 ;[endif]
 ;================================================
 ;◆四条イベント判定 sijyou_sansaku9.ks(見合い前なら一回発生子供達　気力が微多めに回復)
-[if exp="f.okeiko_month > 9 && f.sijyou_au==0 && f.event_machi_sijyou[9]==0"]
+[if exp="f.okeiko_month < 9 && f.sijyou_au==0 && f.event_machi_sijyou[9]==0"]
 	[eval exp="f.event_machi_sijyou[9]=1"]
 	@jump storage="sijyou_sansaku9.ks" 
 	;target=*sansaku
