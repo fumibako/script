@@ -225,7 +225,13 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [イベントシーン終了]
 ;ending処理
 [if exp="tf.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_owari
+;goodエンディング時
+[eval exp="sf.ED_sijyou_good=1"]
+;回想記録終了
+[endreplay] 
+@jump storage="event.ks" target=*event_ED
+[else]
+
 [endif]
 
 @jump storage="test_sijyou.ks"
