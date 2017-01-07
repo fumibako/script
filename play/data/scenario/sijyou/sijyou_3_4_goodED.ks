@@ -156,7 +156,7 @@ $('.saku3').remove();
 [endreplay] 
 @jump storage="event.ks" target=*event_ED
 [else]
-
+[イベントシーン終了３]
 [endif]
 
 [if exp="tf.sijyou_test==true"]
