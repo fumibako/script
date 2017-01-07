@@ -155,8 +155,13 @@ $('.saku3').remove();
 ;回想記録終了
 [endreplay] 
 @jump storage="event.ks" target=*event_ED
-[else]
+[elsif exp="tf.okeiko_gamen==false"]
+;エピローグをつづけてみる場合の処理
+;[if exp="f.sijyou_good"]
+;@jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
+;[else]
 [イベントシーン終了３]
+:[endif]
 [endif]
 
 [if exp="tf.sijyou_test==true"]
