@@ -256,6 +256,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [eval exp="f.sijyou_au=1"]
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
+[else]
+[イベントシーン終了４]
 [endif]
 
 [イベントシーン終了]
