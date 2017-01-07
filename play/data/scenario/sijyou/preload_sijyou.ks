@@ -447,9 +447,22 @@
 ;散策
 [endmacro]
 
-[macro name=イベントシーン終了３]
+[macro name=四条ルート終了]
 ;書き直すのが面倒なので一括処理内容
 ;ending
+[if exp="mp.good"]
+
+;goodエンディング時
+[eval exp="sf.ED_sijyou_good=1"]
+;回想記録終了
+[endreplay] 
+@jump storage="event.ks" target=*event_ED
+
+[elsif exp="mp.nomal"]
+
+[elsif exp="mp.bad"]
+
+[endif]
 [endmacro]
 
 [macro name=イベントシーン終了４]
