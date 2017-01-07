@@ -102,6 +102,8 @@
 ;badED処理追記予定
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
+[else]
+[四条ルート終了 end=bad]
 [endif]
 
 [イベントシーン終了]
