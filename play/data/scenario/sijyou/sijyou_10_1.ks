@@ -193,6 +193,8 @@
 
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
+[else]
+[イベントシーン終了４]
 [endif]
 
 [イベントシーン終了]
