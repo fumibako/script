@@ -1,9 +1,9 @@
-;¥¥¥¥¥¥¥¥エンディング¥¥¥¥¥¥¥¥
-;////////☆その後の話 、 ファイナル・イメージ（本物の変化を見せる場）/////////
+;////////エンディング・その後の話 、 ファイナル・イメージ（本物の変化を見せる場）/////////
 ;春 3月
-;○四条家の挨拶
-;[青空]桜のエフェクト？
-;兄とその奥さんに見守られて結納(文字のみ)
+;○青空に桜のエフェクト/兄とその奥さんに見守られて結納(文字のみ)
+;///////////////////////////////////////////////////////////////////
+[setreplay name="replay_sijyou_3_4_goodED_scene" storage="sijyou_3_4_goodED.ks" target="start"]
+*start
 [chara_mod name="bg" storage="toumei.gif" time=100]
 ;桜の表示が遅いと見えない,処理不能の為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
@@ -151,12 +151,18 @@ $('.saku3').remove();
 [イベントシーン終了]
 ;ending処理待ち
 [if exp="tf.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_owari
+[eval exp="sf.ED_sijyou_normal=1"]
+;回想記録終了
+[endreplay] 
+@jump storage="event.ks" target=*event_ED
+[else]
+
 [endif]
 
+[if exp="tf.sijyou_test==true"]
 @jump storage="test_sijyou.ks"
 [s]
-
+[endif]
 
 
 *window_close
