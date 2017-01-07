@@ -71,6 +71,9 @@
 [主人公目パチ1回]
 （……帰りましょうか）[p]
 [イベントシーン終了]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="sansaku.ks" target=*sansaku_machi_seika
+[endif]
 @jump storage="test_sijyou.ks"
 [s]
 
