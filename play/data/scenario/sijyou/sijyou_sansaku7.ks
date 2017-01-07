@@ -1223,6 +1223,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [イベントシーン終了]
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
+[else]
+[イベントシーン終了２]
 [endif]
 
 @jump storage="test_sijyou.ks"
