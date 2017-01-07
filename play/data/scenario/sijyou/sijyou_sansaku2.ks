@@ -256,11 +256,15 @@
 [主人公眉下げ下]
 [p]
 [eval exp="f.sijyou_sobo=true"]
+#
+[イベントシーン終了]
+
 [if exp="tf.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_owari
+@jump storage="sansaku.ks" target=*sansaku_machi_seika
 [endif]
 
-#
+@jump storage="test_sijyou.ks"
+[s]
 
 ;機能ボタン表示
 [locate x=530 y=357]
