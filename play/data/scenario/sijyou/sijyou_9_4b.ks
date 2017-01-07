@@ -161,6 +161,8 @@
 
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
+[else]
+[イベントシーン終了４]
 [endif]
 
 @jump storage="test_sijyou.ks"
