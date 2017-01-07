@@ -34,7 +34,7 @@
 [イベントシーン終了]
 
 [if exp="tf.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_owari
+@jump storage="sansaku.ks" target=*sansaku_machi_seika
 [endif]
 
 @jump storage="test_sijyou.ks"
