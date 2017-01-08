@@ -51,7 +51,7 @@
 [wait time=10]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[position left=150 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
