@@ -46,11 +46,10 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 [主人公口通常]
-「？　[r]
-[sp]それはどういう意味かしら？」[p]
+「？　それはどういう意味かしら？」[p]
 
 #
-磯野は困ったように新聞を差し出す。[p]
+磯野は、困ったように新聞を差し出す。[p]
 ;した
 
 [if exp="sf.BGM=='ON'"]
@@ -81,7 +80,7 @@
 
 [sp]内閣不信任決議案が可決し内閣総辞職に！[r]
 [r]
-[sp]海軍汚職の全貌が明らかになり[r]
+[sp]海軍汚職の全貌が明らかになり、[r]
 海軍出身の議員辞職、[r]
 大幅な海軍予算の削減を行ったものの[r]
 大蔵大臣の失言もあり[r]
@@ -111,8 +110,7 @@
 ;【立ち絵】主人公 困り
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（事態が好転すると勝手に信じていたわ。[r]
-[sp]現実はそうではないのね)[p]
+（事態が好転すると勝手に信じていたわ。　現実はそうではないのね)[p]
 [主人公伏目パチ1回]
 （けれど諦めなければまた道は開けるかしら)[p]
 
@@ -133,6 +131,10 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 @jump storage="test_katuragi.ks"
 [s]
 
