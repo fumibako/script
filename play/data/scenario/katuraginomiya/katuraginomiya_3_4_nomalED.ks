@@ -59,10 +59,6 @@
 [主人公眉下げ下]
 [主人公目伏]
 「ええ」[p]
-#
-[主人公頬染め]
-殿下は私を引き寄せ、ぎゅっと私を力強く抱きしめた。[p]
-私の鼓動は高鳴り、顔が熱くなっていく……。[p]
 
 ;=============================================================
 [暗転２ storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
@@ -74,6 +70,12 @@
 ;[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
 [暗転２終了]
 ;=============================================================
+
+#
+[主人公頬染め]
+殿下は私を引き寄せ、ぎゅっと私を力強く抱きしめた。[p]
+私の鼓動は高鳴り、顔が熱くなっていく……。[p]
+
 ;【立ち絵】主人公 照れ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ]
@@ -81,8 +83,7 @@
 
 ;【立ち絵】葛城宮 微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「そんなに照れないでくれないか？[r]
-[sp]私までうつってしまいそうだ」[p]
+「そんなに照れないでくれないか？[sp]私までうつってしまいそうだ」[p]
 
 「今は純粋に再会できたことを喜んでいる。[r]
 [sp]だからもっと自然に受け止めてほしい」[p]
@@ -94,6 +95,8 @@
 （今は変に意識するより自然に喜びを共にしたいわ）[p]
 
 #
+[主人公目伏柔]
+[主人公口ほほえみ]
 私は殿下の背にそっと手をまわす。[p]
 
 ;[葛城宮効果消]
@@ -124,7 +127,7 @@
 ;CGここまで
 ;【背景】公園
 [暗転２ storage="bg/I9IhvvVdPo/kouenn.jpg"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　----'"]
 [葛城宮サイズ隣に並ぶ storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [葛城宮ベース私服]
