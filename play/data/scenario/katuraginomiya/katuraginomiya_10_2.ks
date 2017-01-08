@@ -138,8 +138,7 @@
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　怒り　幕間に設定済
-「今原中将、戦争をするつもりですか？[r]
-[sp]貴方は首相の意思に背いている」[p]
+「今原中将、戦争をするつもりですか？[sp]貴方は首相の意思に背いている」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】一閃（緊迫シーンに
@@ -167,7 +166,7 @@
 ;【SE】机（ドン）
 [playse storage=tukue_don.ogg loop=false ]
 「私は貴殿と違い、苦労してこの地位を手に入れた！[r]
-[sp]国を守るためにも金や裏の繋がりが必要なんだ[r]
+[sp]国を守るためにも金や裏の繋がりが必要なんだ！[r]
 [sp]そんなことも分らないのか！」[p]
 
 ;【立ち絵】葛城宮　怒り
@@ -179,12 +178,11 @@
 「それが本音か！[sp]軍の拡張はこれ以上は必要ない。[r]
 [葛城宮口ムッ]
 [葛城宮目伏]
-軍は自国を守るためにあればいい。[r]
+[sp]軍は自国を守るためにあればいい。[r]
 [sp]他国を侵略して得る豊かさは、後で痛い爪痕を残す！」[p]
 
 [whosay name="今原中将" color=%mp.color]
-「欧羅巴諸国は産業革命と植民地支配で[r]
-[sp]豊かになった。[r]
+「欧羅巴諸国は産業革命と植民地支配で豊かになった。[r]
 [sp]我が国も見習うべきなのだよ！」[p]
 [fadeoutbgm time=3000]
 ;【立ち絵】葛城宮　怒り
@@ -226,7 +224,7 @@
 [葛城宮目伏]
 
 [whosay name="首相" color=%mp.color]
-「２人ともその辺で[r]
+「二人ともその辺で[r]
 [sp]だが明らかになった以上、対策を立てねばならない。[r]
 [sp]今後は……」[p]
 #
@@ -242,7 +240,9 @@
 [freeimage layer=29]
 [layopt layer=fix visible=true]
 
-;@jump storage="event.ks" target=*event_owari
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 
 @jump storage="test_katuragi.ks"
 [s]
