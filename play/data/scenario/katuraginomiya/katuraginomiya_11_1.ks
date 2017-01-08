@@ -211,8 +211,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 [主人公眉困り]
-「あなたの夢の為なら、私も犠牲を払います。[sp]殿下と苦しみを[r]
-[sp]分かち合いたいのです」[p]
+「あなたの夢の為なら、私も犠牲を払います。[r]
+[sp]殿下と苦しみを分かち合いたいのです」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -230,8 +230,8 @@
 ;【立ち絵】葛城宮 真剣
 [葛城宮目閉じ]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「そのような事、軽々しくいってはいけない。 君は政界の闇も、宮中の[r]
-[sp]厳しさも知らない」[p]
+「そのような事、軽々しくいってはいけない。 君は政界の闇も、[r]
+[sp]宮中の厳しさも知らない」[p]
 
 ;【立ち絵】主人公 通常口開け
 [whosay name=&sf.girl_namae color="#cf5a7f"]
