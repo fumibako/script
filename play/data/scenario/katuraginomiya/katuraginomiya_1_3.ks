@@ -60,7 +60,7 @@
 [主人公伏目]
 [主人公口ほほえみ]
 [主人公眉下げ下]
-「でも手紙が来なくても、殿下の想いが何となくわかります[r]
+「でも手紙が来なくても、殿下の想いが何となくわかります。[r]
 [sp]以心伝心というのかしら」[p]
 
 [whosay name=磯野 color="dimgray"]
@@ -76,6 +76,9 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 [eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
+;メッセージレイヤを全画面用に設定変更
+;[position left=200 width=700 height=530 top=110 page=fore margint="50" opacity=0]
+;放送局前 をいれた方がいいのでは？
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/housoukyoku.jpg" time=1500 visible=true]
 ;クレジット表示
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -211,13 +214,14 @@ $('.29_fore').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)'
 初代内閣総理大臣はその反発から暗殺され[r]
 また欧米諸国との関係は悪化の一途をたどっている[r]
 [r]
-[sp]しかし、軍事を増強して戦争に勝てばいいなどと[r]
+[sp]だが、軍事を増強して戦争に勝てばいいなどと[r]
 そんな容易い問題ではない」[p]
 
 「切迫した国際情勢から軍は必要であろう。[r]
-[sp]だが、戦争を続ければ続けるほど[r]
-人の命は消え、勝ち続ければ勝ち続けるほど[r]
-孤立を深める結果になるだろう。[r]
+[sp]だが、戦争を続ければ続けるほど、人の命は[r]
+消え、[r]
+勝ち続ければ勝ち続けるほど、孤立を[r]
+深める結果になるだろう。[r]
 [sp]ナポレオンの最後をみればわかることだ。[r]
 [r]
 [sp]国を豊かにするためには最大限に[r]
