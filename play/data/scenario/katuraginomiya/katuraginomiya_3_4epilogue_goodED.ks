@@ -41,7 +41,8 @@
 [sp]皆、私を慈しんでくださったわ）[p]
 
 #
-今までの思い出がよみがえり、切なさと皆への感謝の気持ちでいっぱりになる。[p]
+今までの思い出がよみがえり、切なさと皆への感謝の気持ちで[r]
+いっぱいになる。[p]
 
 ;【立ち絵】主人公 目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -65,14 +66,23 @@
 ……ここはもう私の家でなくなる。[p]
 
 [whosay name="文矢" color="#538a8a"] 
+[主人公口通常]
 「[名前]、お前こそ私たちの誇りだ」[p]
 
 ;【立ち絵】主人公 困り微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公効果消]
-[主人公目閉じ]
-[主人公涙流_目閉用]
-[主人公眉下げ下]
+;↓効果：無し(通常) [主人公効果消]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+;↓効果：涙ポロリ(目閉用[主人公涙流_目閉用]
+[chara_mod name="girl_emo" storage="girl/S/emo_namida_nagare_toji.png" time=0]
+[wait time=10]
 「お兄様、何よりの言葉です。[r]
 [sp]宮中の皆様方と折り合えるように
 [主人公効果消]
@@ -84,8 +94,7 @@
 「では行ってまいります！」[p]
 
 #
-皆に別れを告げ、私は精一杯の笑顔を浮かべながら、[r]
-迎えの車に乗り込んだ。[p]
+皆に別れを告げ、私は精一杯の笑顔を浮かべながら、迎えの車に[r]乗り込んだ。[p]
 ;===============================================================
 [主人公退場]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg" time=1300]
@@ -183,29 +192,14 @@ $('.junbi_girl').remove();
 #
 ;===============================================================
 ;機能ボタン消去
-[layopt layer=fix visible=false]
-[eval exp="sf.FButton='OFF'"]
-[image name="anten" layer=29 storage="bg/anten.jpg" time=1500]
+[暗転２]
 [葛城宮退場]
 ;指定　暗転
 [chara_mod name="bg" storage="toumei.gif" time=100]
-[iscript]
-$('.anten').remove();
-[endscript]
-;機能ボタン表示
-[layopt layer=fix visible=true]
-[eval exp="sf.FButton='ON'"]
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
 ;【立ち絵】主人公目閉じ
 [主人公ポーズ通常]
-[主人公目閉じ]
-;主人公復帰表情消去"
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
-;====================
-
+[主人公目閉]
+[暗転２終了]
 ;===============================================================
 ;【立ち絵】主人公目閉じ
 #
@@ -346,9 +340,15 @@ $("kan").css('margin','auto');
 ;画面中央に「完」の文字
 [sp]　  完[p]
 ;===============================================================
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+[eval exp="sf.ED_katuraginomiya_good=1"]
+;回想記録終了
+;[endreplay] 
+@jump storage="event.ks" target=*event_ED
+[endif]
+
 @jump storage="test_katuragi.ks"
 [s]
 
