@@ -472,9 +472,9 @@
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [freeimage layer = 29 time=1000]
 ;================================以降スクリプト担当====================================================
-;機能ボタン表示_スクリプト担当さまにおまかせします
-
+;機能ボタン表示_スクリプト担当さまにおまかせします　
 [イベントシーン終了]
+
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
