@@ -1,5 +1,7 @@
 ;9回目イベント【背景】公園　背景森林公園 主人公と葛城宮抱擁CG
 =======================お芝居の準備中です==================================
+*start
+;[setreplay name="replay_sijyou_3_4_nomalED_scene" storage="katuraginomiya_3_4_nomalED.ks" target="start"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*3_4_nomal storage="katuraginomiya/preload_katuraginomiya.ks"]
@@ -95,8 +97,8 @@
 （今は変に意識するより自然に喜びを共にしたいわ）[p]
 
 #
-[主人公目伏柔]
 [主人公口ほほえみ]
+[主人公目伏柔]
 私は殿下の背にそっと手をまわす。[p]
 
 ;[葛城宮効果消]
@@ -132,11 +134,10 @@
 [葛城宮サイズ隣に並ぶ storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [葛城宮ベース私服]
 [葛城宮微笑み]
+[主人公通常]
 [暗転２終了]
 ;=============================================================
 
-[主人公ポーズ通常]
-[主人公通常]
 [主人公目パチ1回]
 ;【立ち絵】主人公 通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -150,15 +151,16 @@
 「……」[p]
 
 #
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_fusi1.png" time=0]
+[wait time=10]
 私の手をそっと取り、薬指に指輪をはめる。[p]
-
-;【立ち絵】主人公 驚き
-[主人公驚]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「この指輪は？」[p]
-
 [葛城宮効果消]
 [葛城宮真剣]
+;【立ち絵】主人公 驚き
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
+「この指輪は？」[p]
+
 ;【立ち絵】葛城宮真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「エンゲージメントリングという。[r]
@@ -170,8 +172,14 @@
 
 ;【立ち絵】主人公 微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ほほえみ]
-[主人公眉下げ下]
+;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 「はい！　お受けします」[p]
 [葛城宮微笑み]
 
@@ -204,7 +212,14 @@ $("kan").css('margin','auto');
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;=============================================================
-;@jump storage="event.ks" target=*event_owari
+
+[if exp="tf.okeiko_gamen==true"]
+;↓normalエンディング時[eval exp="sf.ED_katuraginomiya_normal=1"]
+[eval exp="sf.ED_katuraginomiya_normal=1"]
+;回想記録終了
+;[endreplay] 
+@jump storage="event.ks" target=*event_ED
+[endif]
 
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
