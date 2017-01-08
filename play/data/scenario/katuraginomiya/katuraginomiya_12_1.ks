@@ -118,8 +118,9 @@
 [主人公口通常]
 [主人公目閉じ]
 「さすがに、この結果は落ち込まれていると思いますもの。[r]
-[sp]私は殿下が克服されると信じています」[p]
-
+[sp]私は、殿下が克服されると信じています」[p]
+#
+;ジャンプ後に名前残り防止
 [fadeoutbgm time=3000]
 
 @jump storage="katuraginomiya/katuraginomiya12_1ｂ.ks" target=*seen_0
