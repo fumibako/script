@@ -55,9 +55,22 @@
 ;【立ち絵】主人公 目閉じ
 [主人公目閉じ]
 [主人公涙流_目閉用]
+
+
+[葛城宮サイズ隣に並ぶ storage="bg/I9IhvvVdPo/baraen.jpg"]
+;[葛城宮目閉じ]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
+[wait time=10]
+#
+殿下は、私の手を取り、手の甲へ接吻を落とす。[p]
+;[葛城宮眉悩み]
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_nayami.png" time=0]
+[wait time=10]
+
 [葛城宮退場準備 storage="bg/I9IhvvVdPo/baraen.jpg" time=500]
 #
-殿下は、私の手を取り、手の甲へ接吻を落とすと、[r]涙を流した私を一度も振り返ることなく薔薇園を後にされた。[p]
+そして、私を一度も振り返ることなく薔薇園を後にされた。[p]
+;その後は次で使われているのでつかえない
 
 ;=================================================================
 ;ボタン非表示
