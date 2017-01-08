@@ -434,24 +434,6 @@ $('.loding_pic1').remove();
 ;テストモード[if exp="tf.test_sijyou==true"]@jump storage="test_sijyou.ks"[edif]
 [endmacro]
 
-[macro name=四条ルート終了]
-;書き直すのが面倒なので一括処理内容
-;ending
-[if exp="mp.good"]
-
-;goodエンディング時
-[eval exp="sf.ED_sijyou_good=1"]
-;回想記録終了
-[endreplay] 
-@jump storage="event.ks" target=*event_ED
-
-[elsif exp="mp.nomal"]
-
-[elsif exp="mp.bad"]
-
-[endif]
-[endmacro]
-
 [macro name=イベントシーン終了４]
 ;書き直すのが面倒なので一括処理内容
 ;イベント
@@ -492,6 +474,83 @@ $('.loding_pic1').remove();
 [font size=27]
 ;#
 
+[endmacro]
+
+;◆[四条ルート終了 end=good][四条ルート終了 end=normal][四条ルート終了 end=bad]
+;↓マクロ作成途中で移動してしまったようなので、動作部分を変更・追記してみました。ローカルにてテスト画面からの動作でエラーが出ないことを部分的に確認済ですが、お稽古パート経由の動作は組み込みながらでないと確認ができないため、未確認です
+;うまく動作しないようでしたらこちらで修正します。その際はお知らせください(スクリプト担
+[macro name=四条ルート終了]
+;書き直すのが面倒なので一括処理内容
+;ending
+[if exp="mp.end='good'"]
+;goodエンディング時
+	[eval exp="sf.ED_sijyou_good=1"]
+;回想記録終了
+	[endreplay] 
+[elsif exp="mp.end='nomal'"]
+	[eval exp="sf.ED_sijyou_normal=1"]
+	[endreplay] 
+[elsif exp="mp.end='bad'"]
+	[eval exp="sf.ED_sijyou_bad=1"]
+	[endreplay] 
+[endif]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_ED
+[endif]
+[endmacro]
+
+;◆[財前ルート終了 end="good"][財前ルート終了 end="normal"][財前ルート終了 end="bad1"][財前ルート終了 end="bad2"]
+[macro name=財前ルート終了]
+[if exp="mp.end='good'"]
+	[eval exp="sf.ED_zaizen_good=1"]
+	[endreplay] 
+[elsif exp="mp.end='nomal'"]
+	[eval exp="sf.ED_zaizen_normal=1"]
+	[endreplay] 
+[elsif exp="mp.end='bad1'"]
+	[eval exp="sf.ED_zaizen_bad1=1"]
+	[endreplay] 
+[elsif exp="mp.end='bad2'"]
+	[eval exp="sf.ED_zaizen_bad2=1"]
+	[endreplay] 
+[endif]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_ED
+[endif]
+[endmacro]
+
+;◆[葛城宮ルート終了 end="good"][葛城宮ルート終了 end="normal"][葛城宮ルート終了 end="bad"]
+[macro name=葛城宮ルート終了]
+[if exp="mp.end='good'"]
+	[eval exp="sf.ED_katuraginomiya_good=1"]
+	[endreplay] 
+[elsif exp="mp.end='nomal'"]
+	[eval exp="sf.ED_katuraginomiya_normal=1"]
+	[endreplay] 
+[elsif exp="mp.end='bad'"]
+	[eval exp="sf.ED_katuraginomiya_bad=1"]
+	[endreplay] 
+[endif]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_ED
+[endif]
+[endmacro]
+
+;◆[藤枝ルート終了 end="good"][藤枝ルート終了 end="normal"][藤枝ルート終了 end="bad"]
+[macro name=藤枝ルート終了]
+[if exp="mp.end='good'"]
+	[eval exp="sf.ED_hujieda_good=1"]
+	[endreplay] 
+[elsif exp="mp.end='nomal'"]
+	[eval exp="sf.ED_hujieda_normal=1"]
+	[endreplay] 
+[elsif exp="mp.end='bad'"]
+	[eval exp="sf.ED_hujieda_bad=1"]
+	[endreplay] 
+[endif]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_ED
+[endif]
 [endmacro]
 
 ;◆[新聞]
