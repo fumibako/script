@@ -56,7 +56,7 @@
 [主人公憂い]
 [主人公口開]
 [主人公涙]
-「私の新しい門出なのです。 また会えることもあります。」[p]
+「私の新しい門出なのです。 また会えることもあります」[p]
 
 「沢山手紙を書きます。 だから皆、祝福してください」[p]
 
@@ -71,18 +71,16 @@
 
 ;【立ち絵】主人公 困り微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;↓効果：無し(通常) [主人公効果消]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
-[wait time=10]
-;↓目：閉じた状態 [主人公目閉]
-[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 ;↓効果：涙ポロリ(目閉用[主人公涙流_目閉用]
 [chara_mod name="girl_emo" storage="girl/S/emo_namida_nagare_toji.png" time=0]
 [wait time=10]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+
 「お兄様、何よりの言葉です。[r]
 [sp]宮中の皆様方と折り合えるように
 [主人公効果消]
@@ -281,10 +279,11 @@ $('.junbi_girl').remove();
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ありがとう」[p]
 
-[主人公憂い]
 #
+[主人公憂い]
 この十年間も激動の十年だった。[r]
 大地震は起こり、首都は壊滅的になった。[r]
+;となった？
 [主人公目伏柔]
 [主人公眉下げ下]
 [主人公口ほほえみ]
