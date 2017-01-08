@@ -384,13 +384,13 @@
 葛城宮家の主務事務官と宮内省の宗秩寮総裁を[r]
 迎え、婚約の申し込みをお受けした。[p]
 [r]
-【主務事務官・宗秩寮総裁】
+【主務事務官・宗秩寮総裁】[r]
 「[ruby text=かしこ]畏き[sp]あたりの[ruby text=おぼ]思し[ruby text=め]召しにより、[r]
 [sp]ご当家の長女・[名前]姫を葛城宮王妃に[r]
 お[ruby text=むか]迎え申し上げたい」[r]
 [r]
 [r]
-【[emb exp="sf.father_name"]】
+【[emb exp="sf.father_name"]】[r]
 「まことに一家一門の名誉。 [r]
 [sp]ご無沙汰の趣、謹んで[ruby text=はい]拝[ruby text=じゅ]受[ruby text=つかまつ]仕ります」[r]
 [p]
