@@ -1,4 +1,4 @@
-﻿﻿
+﻿﻿﻿
 *start
 
 ;==============================
@@ -426,6 +426,36 @@ $('.loding_pic1').remove();
 [eval exp="sf.FButton='OFF'"]
 [stopbgm]
 [stopse]
+[endmacro]
+
+[macro name=イベントシーン終了２]
+;書き直すのが面倒なので一括処理内容
+;散策
+;テストモード[if exp="tf.test_sijyou==true"]@jump storage="test_sijyou.ks"[edif]
+[endmacro]
+
+[macro name=四条ルート終了]
+;書き直すのが面倒なので一括処理内容
+;ending
+[if exp="mp.good"]
+
+;goodエンディング時
+[eval exp="sf.ED_sijyou_good=1"]
+;回想記録終了
+[endreplay] 
+@jump storage="event.ks" target=*event_ED
+
+[elsif exp="mp.nomal"]
+
+[elsif exp="mp.bad"]
+
+[endif]
+[endmacro]
+
+[macro name=イベントシーン終了４]
+;書き直すのが面倒なので一括処理内容
+;イベント
+;テストモード[if exp="tf.test_sijyou==true"]@jump storage="test_sijyou.ks"[edif]
 [endmacro]
 
 ;◆[チラシ]
