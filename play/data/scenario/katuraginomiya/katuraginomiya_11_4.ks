@@ -116,16 +116,18 @@
 [葛城宮真剣]
 [葛城宮口開]
 「賛同する者起立」[p]
-
 [葛城宮口通常]
+
+;【SE】椅子を引く（ガタッ）
+[playse storage=isu_gata.ogg loop=false ]
 #
 出席した全員が起立し、これで政治不干渉の方針が決定した。[p]
 ……これから形骸化した軍律をまた制定しよう。[p]
 [葛城宮退場準備 storage="g/katuraginomiya_kaigi2.jpg" time=300]
 [暗転]
 #
-そして会議の後に、上官の大将と交流のある親しい中将に[r]
-とある人物について相談を行った。[p]
+そして会議の後に、上官の大将と交流のある親しい中将に"とある人物"に[r]
+ついて相談を行った。[p]
 
 [fadeoutbgm time=3000]
 
@@ -374,9 +376,12 @@
 「先ほど、国会で大蔵大臣が大きな失言をしました！[r]
 [sp]首都を中心に大きな騒ぎと発展するやもしれません！」[p]
 
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
+
 @jump storage="test_katuragi.ks"
 [s]
 
