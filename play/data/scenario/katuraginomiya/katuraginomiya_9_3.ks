@@ -428,7 +428,10 @@
 [stopbgm]
 #
 [freeimage layer=29 time=10]
-;@jump storage="event.ks" target=*event_owari
+
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 
 @jump storage="test_katuragi.ks"
 [s]
