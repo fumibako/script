@@ -56,11 +56,16 @@
 [主人公目閉じ]
 [主人公涙流_目閉用]
 
-
-[葛城宮サイズ隣に並ぶ storage="bg/I9IhvvVdPo/baraen.jpg"]
+;手の甲に接吻シーン
+[表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
+[葛城宮ベース軍服]
+[葛城宮通常]
+[wait time=10]
 ;[葛城宮目閉じ]
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
 [wait time=10]
+[表示開始 time=300]
+
 #
 殿下は、私の手を取り、手の甲へ接吻を落とす。[p]
 ;[葛城宮眉悩み]
