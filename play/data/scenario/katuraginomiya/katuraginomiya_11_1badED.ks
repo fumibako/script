@@ -58,7 +58,7 @@
 
 ;手の甲に接吻シーン
 [暗転２ storage="bg/I9IhvvVdPo/baraen.jpg"]
-[葛城宮サイズ隣に並ぶ storage="bg/I9IhvvVdPo/baraen.jpg"]
+[葛城宮サイズ顔アップ storage="bg/I9IhvvVdPo/baraen.jpg"]
 [葛城宮ベース私服]
 [葛城宮通常]
 [wait time=10]
