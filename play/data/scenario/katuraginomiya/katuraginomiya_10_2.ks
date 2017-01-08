@@ -50,7 +50,7 @@
 [image layer=29 x=1 y=1 storage="bg/test_bg_sinbun.jpg" time=1000 visible=true]
 [wait time=10]
 [主人公伏目]
-;メッセージレイヤを全画面用に設定変更
+;メッセージレイヤを全画面用に設定変更　文章によっては調整した方がいいようですsc_2
 [position left=150 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
 [font color=white size=27]
