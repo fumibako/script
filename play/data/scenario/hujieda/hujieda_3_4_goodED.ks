@@ -513,9 +513,19 @@ $("kan").css('margin','auto');
 ;[eval exp="sf.FButton='ON'"]
 ;[cm]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
-;@jump storage="event.ks" target=*event_owari
+
 
 [イベントシーン終了]
+[if exp="tf.okeiko_gamen==true"]
+;↓normalエンディング時[eval exp="sf.ED_katuraginomiya_normal=1"]
+[eval exp="sf.ED_katuraginomiya_normal=1"]
+;回想記録終了
+;[endreplay] 
+@jump storage="event.ks" target=*event_ED
+[else]
+[藤枝ルート終了 end="good"]
+[endif]
+
 @jump storage="test_hujieda.ks"
 [s]
 
