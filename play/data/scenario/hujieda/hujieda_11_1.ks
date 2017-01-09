@@ -175,6 +175,7 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
+[イベントシーン終了４]
 @jump storage="test_hujieda.ks"
 [s]
 
