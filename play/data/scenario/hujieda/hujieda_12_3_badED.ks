@@ -132,6 +132,10 @@
 
 ;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
+[if exp="tf.okeiko_gamen==true"]
+[藤枝ルート終了 end="bad"]
+[endif]
+
 @jump storage="test_hujieda.ks"
 [s]
 
