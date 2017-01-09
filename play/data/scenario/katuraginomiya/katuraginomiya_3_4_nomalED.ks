@@ -219,6 +219,8 @@ $("kan").css('margin','auto');
 ;回想記録終了
 ;[endreplay] 
 @jump storage="event.ks" target=*event_ED
+[else]
+[葛城宮ルート終了 end="normal"]
 [endif]
 
 [イベントシーン終了]
