@@ -304,10 +304,10 @@
 ;【立ち絵】主人公 驚き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
+「私だけ、
 [葛城宮効果消]
 [chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_futuu.png" time=0]
 [wait time=10]
-「私だけ、
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
@@ -327,7 +327,9 @@
 「ああ。[r]
 [sp]私の周りにいる女性は身分が高すぎるせいか、差別意識が強い」[p]
 「周囲の者たちもほとんど私がいうことを青臭い夢だと思っている。[r]
-[sp]だが私はこの国を豊かで平等で平和な国に変えたい」[p]
+[sp]だが、私はこの国を豊かで平等で平和な国に変えたい」[p]
+;豊かで平等で平和な 長いですが思いつかないのでこのまま
+
 
 ;【立ち絵】主人公 驚き
 [主人公驚]
