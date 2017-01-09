@@ -227,7 +227,7 @@
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 [eval exp="f.haikei_credit=''"]
 [whosay name="侍従"]
-「[名字]様に事前にお会いしたいとのことで、こちらに晴仁親王様が[r]
+「[名字]様に事前にお会いしたいとのことで、こちらに親王殿下が[r]
 [sp]いらっしゃいます」[p]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
