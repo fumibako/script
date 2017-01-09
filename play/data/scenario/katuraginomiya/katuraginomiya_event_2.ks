@@ -21,6 +21,7 @@
 ;=====================ここからお芝居の幕引きです===============================
 #
 行き交う足音、子供たちの明るく元気な声が響く。[p]
+;行き交う足音や、子供たちの明るく元気な声が響く。上にします。
 ;【SE】子供たち
 [playse storage=kodomotachi.ogg loop=false ]
 
@@ -54,10 +55,20 @@
 
 #
 ;【立ち絵】葛城宮 驚き
-[葛城宮横目]
-[葛城宮驚き]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_odoroki.png" time=0]
+[wait time=10]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_yoko.png" time=0]
+[wait time=10]
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_odoroki.png" time=0]
+[wait time=10]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_ake.png" time=0]
+[wait time=10]
 ふと私の視線に気づいたように殿下の瞳が私を[ruby text=とら]捉える。[p]
-
+;表示まで時間かかるので近づく足音
+;【SE】足音（靴
+[playse storage=walk_kutsu.ogg loop=false ]
+[葛城宮微笑み]
+[wait time=10]
 [暗転２ storage="bg/bg_machi.jpg"]
 [葛城宮サイズ隣に並ぶ]
 [葛城宮ベース私服]
@@ -68,8 +79,16 @@
 「鷹司殿！」[p]
 
 ;【立ち絵】葛城宮 通常
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_yoko.png" time=0]
+[wait time=10]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_ake.png" time=0]
+[wait time=10]
 「皆すまない、[r]
-[sp]私は、そろそろ抜けるが、みんなで仲良く遊んでるんだぞ！」[p]
+[sp]私は、そろそろ抜けるが、みんなで仲良く遊んでるんだぞ！」
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_hohoemi.png" time=0]
+[wait time=10]
+[p]
+
 ;【SE】子供たち
 [playse storage=kodomotachi.ogg loop=false ]
 
@@ -88,6 +107,8 @@
 [endif]
 
 [whosay name="子供たち" color=%mp.color]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_hohoemi.png" time=0]
+[wait time=10]
 「わかった。　今度また遊びを教えてちょうだいね」[p]
 [葛城宮微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
