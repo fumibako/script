@@ -412,11 +412,10 @@
 
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [wait time=10]
-ふと、部屋のドアから落ち着いたノック音が耳に入った。[p]
+部屋のドアから落ち着いたノック音が耳に入る。[r]
 私が、入れ、というと、秘書が姿を現した。[p]
 [autosave]
-;ドアをノックして入れ、というと秘書の姿が見えた。[p]
-;ドアをノックして入れ　ですと　いつもは、ドアをノックしない秘書になってしまう。
+
 ;【SE】ドアが開く
 [playse storage=door_open.ogg loop=false ]
 
