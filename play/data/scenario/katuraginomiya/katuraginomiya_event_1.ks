@@ -71,7 +71,8 @@
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 「お稽古がんばっておられるのね……[r]
-[sp]そういえば お手紙を始められて数ヶ月ね。 意中の方はいらっしゃるの？」[p]
+[sp]そういえば お手紙を始められて数ヶ月ね。 意中の方は、[r]
+[sp]いらっしゃるの？」[p]
 
 ;【立ち絵】主人公：苦笑 （困り眉）
 [主人公苦笑]
@@ -89,7 +90,10 @@
 
 *seen_2
 #
-ふと視線を感じて振返ると、[ruby text=ふう]風[ruby text=が]雅で精悍な顔立ちをした青年と視線が絡まった。[p]
+ふと視線を感じて振返ると、[ruby text=ふう]風[ruby text=が]雅で[ruby text=せい]精[ruby text=かん]悍な顔立ちをした青年と[r]
+視線が絡まった。
+[葛城宮目パチ1回]
+[p]
 
 ;気品があり、華やかで、男らしい青年と視線が絡まった。[p]
 ;↑修飾が多い
@@ -106,6 +110,9 @@
 意思の強そうな眼差しに一瞬、思考が停止する。[p]
 
 #
+;[葛城宮目大]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_ake.png" time=0]
+[wait time=10]
 [主人公眉下げ下]
 [主人公伏目]
 [主人公頬染め]
