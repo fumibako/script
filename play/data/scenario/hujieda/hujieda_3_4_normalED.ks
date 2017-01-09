@@ -252,9 +252,13 @@ $("kan").css('margin','auto');
 ;===============================================================
 [wait time=100]
 ;ノーマルここまで
-;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
+
+[if exp="tf.okeiko_gamen==true"]
+[藤枝ルート終了 end="normal"]
+[endif]
+
 @jump storage="test_hujieda.ks"
 [s]
 
