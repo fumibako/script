@@ -111,12 +111,17 @@
 
 ;【立ち絵】葛城宮 驚き
 #
-[葛城宮驚き]
-[wait time=10]
 [主人公眉下げ下]
 [主人公伏目]
 [主人公頬染め]
-その方と私は、数秒見つめ合い、私は、ハッとして俯いた。[p]
+その方と私は、数秒見つめ合い、私は、ハッとして俯いた。
+;[葛城宮眉驚き]
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_odoroki.png" time=0]
+[wait time=10]
+;[葛城宮目大]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_ake.png" time=0]
+[wait time=10]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （異性の方からの視線をまともに受けたことがなかったけど[r]
