@@ -567,6 +567,7 @@ $('.junbi_girl').remove();
 ;放さない？
 
 [イベントシーン終了]
+[イベントシーン終了４]
 @jump storage="test_katuragi.ks"
 [s]
 
