@@ -101,8 +101,10 @@
 ;【立ち絵】葛城宮 微笑み
 [葛城宮笑顔]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「申し訳ないが、私は用事があるのでな。 君たちは皆で仲良く[r]
-[sp]遊べるだろう？」[p]
+「申し訳ないが、私は用事があるのでな。[r]
+[sp]君たちは、皆で仲良く遊べるだろう？」[p]
+;真ん中で折り返ししてしまうが違和感あるのでこのままに
+
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -154,7 +156,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「殿下……[ruby text=ひと]一つお聞きしていいですか？」[p]
+「殿下…… [ruby text=ひと]一つお聞きしていいですか？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
@@ -235,8 +237,8 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 主人公ポーズ両手、驚き、主人公頬染 
-[主人公ポーズ両手]
 [主人公驚]
+[主人公ポーズ両手]
 「え！
 [主人公頬染め]
 ……まだわかりませんわ！」
@@ -261,10 +263,10 @@
 [葛城宮ため息]
 ;【立ち絵】葛城宮 困り顔
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「……素晴らしいか。 
+「……素晴らしいか。
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
 [wait time=10]
-[sp]だが私はまだ何もできていない」[p]
+ だが、私はまだ何もできていない」[p]
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_fusi1.png" time=0]
 [wait time=10]
 「自分も国も変えたい。 そう思い、貴族院に入った。[r]
@@ -404,27 +406,30 @@
 ;情景文
 ;【SE】鳥たち（複数の鳥の声）
 [playse storage=tori_yatyou.ogg loop=false ]
-窓辺では、小鳥がさえずり、久しぶりに訪れた安穏した時間に身を任せる。[p]
-[autosave]
+窓辺では小鳥がさえずり、久しぶりの安穏とした時間に身を任せる。[p]
+;【SE】ドアノック音(トントン)
+[playse storage=door-knock.ogg loop=false ]
 
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [wait time=10]
 ふと、部屋のドアから落ち着いたノック音が耳に入る。[p]
-;【SE】ドアノック音(トントン)
-[playse storage=door-knock.ogg loop=false ]
-私が、入れ、というと、秘書が姿を現した。[p]
 
+私が、入れ、というと、秘書が姿を現した。[p]
+[autosave]
 ;ドアをノックして入れ、というと秘書の姿が見えた。[p]
 ;ドアをノックして入れ　ですと　いつもは、ドアをノックしない秘書になってしまう。
 ;【SE】ドアが開く
 [playse storage=door_open.ogg loop=false ]
 
 [whosay name="秘書" color=%mp.color]
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_nayami.png" time=0]
+[wait time=10]
 「殿下、柏木元大将が今原海相に接触したと、報告がありました」[p]
 
 ;【立ち絵】葛城宮 通常
-[葛城宮ため息]
+
 [whosay name="葛城宮　晴仁" color=%mp.color]
+[葛城宮ため息]
 「柏木元大将は戦争が自国に益をもたらすと勘違いしている。[r]
 [sp]しかも、質の悪い事に退役した今でも彼の支持者は多く、[r]
 [sp]富国強兵の考えを持つものは少なくない」[p]
