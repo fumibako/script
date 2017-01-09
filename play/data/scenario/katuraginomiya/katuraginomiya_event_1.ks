@@ -109,9 +109,9 @@
 [wait time=10]
 意思の強そうな眼差しに一瞬、思考が停止する。[p]
 
+;【立ち絵】葛城宮 驚き
 #
-;[葛城宮目大]
-[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_ake.png" time=0]
+[葛城宮驚き]
 [wait time=10]
 [主人公眉下げ下]
 [主人公伏目]
@@ -119,12 +119,16 @@
 その方と私は、数秒見つめ合い、私は、ハッとして俯いた。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[葛城宮驚き]
 （異性の方からの視線をまともに受けたことがなかったけど[r]
-[sp]こんなにも胸が高鳴るものなのかしら）[p]
+[sp]こんなにも胸が高鳴るものなのかしら）
+[p]
 
+[暗転２ storage="bg/bg_machi.jpg"]
+[葛城宮サイズ隣に並ぶ]
+[葛城宮ベース私服]
+[葛城宮微笑み]
+[暗転２終了]
 
-;【立ち絵】葛城宮 驚き
 ;【立ち絵】葛城宮 微笑み
 [主人公ポーズ通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
