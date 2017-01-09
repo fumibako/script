@@ -217,19 +217,19 @@
 ;【立ち絵】主人公 伏目
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-「けれど、お父様も家令も、私の意思を尊重して見守ってくださっています」[p]
+「けれど、お父様も家令も、私の意思を尊重して見守ってくださって[r]
+[sp]います」[p]
+;周囲の方も見守っ"て"くださっ"て"います。思いつかないのでこのまま
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
-
 ;【立ち絵】葛城宮 微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮微笑み]
-「それは何よりだな」[p]
+「それは、何よりだな」[p]
 [葛城宮目パチ1回]
 [葛城宮微笑み]
 ;【立ち絵】葛城宮 真剣
-「……君自身は私をどう思っている？」
+「……君自身は、私をどう思っている？」
 [主人公伏目パチ1回][p]
 
 
@@ -237,14 +237,15 @@
 ;【立ち絵】主人公 主人公ポーズ両手、驚き、主人公頬染 
 [主人公ポーズ両手]
 [主人公驚]
+「え！
 [主人公頬染め]
-「え！ ……まだわかりませんわ！」[p]
-
+……まだわかりませんわ！」
+[p]
+;エモが多いので分割
 [主人公ポーズ通常]
-[主人公照れ目普通]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
-
+[主人公照れ目普通]
 「ですが、お手紙を拝見するたびに色々なことを考えておられて[r]
 [sp]素晴らしい方だと思っております」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -260,14 +261,14 @@
 [葛城宮ため息]
 ;【立ち絵】葛城宮 困り顔
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「……素晴らしいか。[r]
+「……素晴らしいか。 
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
 [wait time=10]
-[sp]だが私はまだ何もできていない。」[p]
+[sp]だが私はまだ何もできていない」[p]
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_fusi1.png" time=0]
 [wait time=10]
-「自分も国も変えたい、そう思い貴族院に入った。[r]
-[sp]この国は四民平等を[ruby text=うた]謳いながら不平等だ」[p]
+「自分も国も変えたい。 そう思い、貴族院に入った。[r]
+[sp]この国は、四民平等を[ruby text=うた]謳いながら不平等だ」[p]
 ;【SE】子供たち
 [playse storage=kodomotachi_warai.ogg loop=false ]
 
@@ -279,35 +280,47 @@
 ;【立ち絵】葛城宮 真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「生まれてくる子供たちは平等ではないのだ。[r]
-[sp]……そして軍部が力を持ち始めている。[r]
-[sp]このままではいけない」[p]
+[sp]……そして軍部が力を持ち始めている。 このままではいけない」[p]
 
 ;【立ち絵】主人公 目閉じ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええ、きっと殿下ほどの強い意志の方なら、きっとやり遂げられるでしょう」[p]
+「ええ、きっと殿下ほどの強い意志の方なら、きっとやり遂げられる[r]
+[sp]でしょう」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 （やはり殿下は私には遠いお方なのだわ）[p]
-
+[autosave]
 [主人公目を開く]
-[葛城宮目伏せ照れ]
 ;【立ち絵】葛城宮 照れ顔
 [whosay name="葛城宮　晴仁" color=%mp.color]
+[葛城宮目伏せ照れ]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_hohoemi_age.png" time=0]
+[wait time=10]
 「ありがとう。そんな風に言ってくれる女性は君ぐらいだ」[p]
 
 ;【立ち絵】主人公 驚き
-[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「私だけ、ですか？」[p]
+[主人公驚]
+[葛城宮効果消]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_futuu.png" time=0]
+[wait time=10]
+「私だけ、
+[chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
+[wait time=10]
+ですか？」
+[葛城宮目パチ1回]
+[p]
+;真剣に切り替わるまでがきついので合間のエモ
 
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-[葛城宮効果消]
 [葛城宮真剣]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
