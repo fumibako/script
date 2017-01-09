@@ -517,12 +517,6 @@ $("kan").css('margin','auto');
 
 [イベントシーン終了]
 [if exp="tf.okeiko_gamen==true"]
-;↓normalエンディング時[eval exp="sf.ED_katuraginomiya_normal=1"]
-[eval exp="sf.ED_katuraginomiya_normal=1"]
-;回想記録終了
-;[endreplay] 
-@jump storage="event.ks" target=*event_ED
-[else]
 [藤枝ルート終了 end="good"]
 [endif]
 
