@@ -39,52 +39,59 @@
 [主人公目パチ1回]
 #
 時子さんは少し驚いたように目を見開いている。[r]
-時子さんと会うのは、とても久しぶり、私は微笑んで挨拶を返した。[p]
+[主人公口ほほえみ]
+時子さんと会うのは、とても久しぶりで、私は微笑んで挨拶を返した。[p]
 
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ごきげんよう、時子さん。　お久しぶりですね」[p]
+「ごきげんよう、時子さん。 お久しぶりですね」[p]
 
 [whosay name="三宮　時子" color="#c25232"]
-「[名前]さん、本当に雰囲気が変わられたわ。[sp]所作が洗練されて、見とれてしまうほどよ」[p]
+「[名前]さん、本当に雰囲気が変わられたわ。 所作が洗練されて、[r]
+[sp][ruby text=み]見[ruby text=と]惚れるしまうほどよ」[p]
 
 ;【立ち絵】主人公：苦笑（頬染め）
-[主人公目を開く]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
+[主人公目を開く]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうかしら？　ありがとうございます」[p]
-[主人公伏目]
-[主人公眉下げ下]
-[主人公頬染め]
-[主人公口ほほえみ]
 
 [whosay name="三宮　時子" color="#c25232"]
-「お稽古がんばっておられるのね……そういえば お手紙を始められて数ヶ月ね。意中の方はいらっしゃるの？」[p]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
+;[主人公伏目]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
+「お稽古がんばっておられるのね……[r]
+[sp]そういえば お手紙を始められて数ヶ月ね。意中の方はいらっしゃるの？」[p]
 
 ;【立ち絵】主人公：苦笑 （困り眉）
 [主人公苦笑]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、数ヶ月では……まだ心がきまらなくて」[p]
 
+[葛城宮ベース私服]
+[葛城宮通常]
+[表示開始 time=400]
+
 ;【立ち][葛城宮微笑み][絵】主人公 通常
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「？」[p]
 
-;[if exp="sf.BGM=='ON'"]
-;[fadeoutbgm time=3000]
-;[endif]
 *seen_2
 #
 ふと視線を感じて振返ると、[ruby text=ふう]風[ruby text=が]雅で精悍な顔立ちをした青年と視線が絡まった。[p]
-[葛城宮ベース私服]
-[葛城宮通常]
-[表示開始 time=400]
+
 ;気品があり、華やかで、男らしい青年と視線が絡まった。[p]
 ;↑修飾が多い
 ;華やかで上品（気品）である単語は・・風雅
@@ -116,7 +123,7 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮驚き]
 [葛城宮微笑み]
-「これはぶしつけに失礼した」[p]
+「これは、[ruby text=ぶ]不[ruby text=しつけ]躾に失礼した」[p]
 
 *seen_3
 [whosay name="三宮　時子" color="#c25232"]
