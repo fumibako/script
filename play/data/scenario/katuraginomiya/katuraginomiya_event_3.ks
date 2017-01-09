@@ -177,7 +177,6 @@
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
-[主人公退場]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/gosyo.jpg"]
@@ -187,10 +186,9 @@
 ;==========================スクリプトここまで=========================================================
 #
 皇后陛下に招待された離宮に近づくにつれて、[r]
-ますます緊張が高まり、不安な気持ちでいっぱいになった。[p]
-
-;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+ますます緊張が高まり、不安な気持ちでいっぱいに[r]
+なった。[p]
+;【侍従】[名前]姫様、～(労いの言葉)です。　謹んでご案内奉ります。
 二人の侍従に案内されて離宮の広い敷地に入る。[r]
 私は、緊張で足が少し[ruby text=すく]竦みそうだった。[p]
 ;【SE】足音3人石畳（フェードインアウト）
@@ -485,6 +483,7 @@ $('.junbi_girl').remove();
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
+[イベントシーン終了４]
 @jump storage="test_katuragi.ks"
 [s]
 
