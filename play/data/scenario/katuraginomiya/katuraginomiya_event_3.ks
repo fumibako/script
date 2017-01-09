@@ -88,12 +88,11 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口開]
-「招待を受けますわ」
-[主人公口ほほえみ]
-[p]
+「招待を受けますわ」[p]
 
 
 ;【立ち絵】主人公 照れ目普通
+[主人公口ほほえみ]
 [主人公眉下げ下]
 [主人公目伏柔]
 [主人公頬染め]
@@ -119,9 +118,6 @@
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-;【背景】お稽古部屋
-;[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公憂い]
 ;テキスト全画面
 [font color=white size=27]
@@ -144,8 +140,7 @@
 [主人公憂い]
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「お迎えの車が到着しました。[r]
-[sp]支度は整っておられるようですね」[p]
+「お迎えの車が到着しました。　支度は整っておられるようですね」[p]
 
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -160,57 +155,72 @@
 「どこか変なところはないかしら？」[p]
 
 [whosay name=磯野 color="dimgray"]
-「変なところなどどこにもありません。[sp]着物もお似合いです」[p]
+「変なところなどどこにもありません。 着物もお似合いです」[p]
 
 ;【立ち絵】主人公 困り
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
-「そう……直前になると緊張するわ。[sp]なかなか落ち着かなくて……[r]
-[sp]粗相をしてしまわないといいのだけれど」[p]
+「そう……直前になると緊張するわ。[r]
+[sp]なかなか落ち着かなくて…… 粗相をしてしまわないといいのだけれど」[p]
 
 [whosay name=磯野 color="dimgray"]
 「いつもの調子でされば心配はございません。[r]
 [sp]平常心ですよ、お嬢様」[p]
+
 #
-;==============================================================================
-[主人公退場]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】黒茶・和紙風背景(暗)に白文字[テキスト全画面白文字暗]裏で画面構成bg_prologue_dark.jpg
+;機能ボタン消去
 [layopt layer=fix visible=false]
-[chara_mod name="bg" storage="toumei.gif" time=1000]
-[eval exp="f.haikei_credit=''"]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=10]
+[主人公退場]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/gosyo.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 #
 皇后陛下に招待された離宮に近づくにつれて、[r]
 ますます緊張が高まり、不安な気持ちでいっぱいになった。[p]
-;==============================================================================
-[chara_mod name="bg" storage="bg/B4nFWraU42/gosyo.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-;主人公復帰表情
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10] 
-[layopt layer=fix visible=true]
- ;==============================================================================
+
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+二人の侍従に案内されて離宮の広い敷地に入る。[r]
+私は、緊張で足が少し[ruby text=すく]竦みそうだった。[p]
 ;【SE】足音3人石畳（フェードインアウト）
 [playse storage=asioto_isidatami_3nin.ogg loop=false ]
-[主人公ポーズ通常]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+;メッセージをもどします
+[resetfont]
+;ｸﾘｯｸがみえる場合は追加↓
+;[layopt layer=message0 visible=false]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [主人公憂い]
-;===================
-;主人公復帰表情消去
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
-;===================
+[freeimage layer = 29 time=1000]
+;ｸﾘｯｸがみえる場合は追加↓
+;[layopt layer=message0 visible=true]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[cm]
+;==========================スクリプト・全画面表示からの復帰準備========================================
 
-#
-２人の侍従に案内されて離宮の広い敷地に入り[r]
-緊張で足が少しすくむ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]
-（……宮中の方は私の事をどう思われいるのかしら）[p]
+（……宮中の方は私の事をどう思われているのかしら）[p]
 [主人公目伏]
 [chara_mod name="bg" storage="toumei.gif" time=1500]
 [eval exp="f.haikei_credit=''"]
 [whosay name="侍従"]
-「[名字]様に事前にお会いしたいとのことで[r]
-[sp]こちらに晴仁親王様がいらっしゃいます」[p]
+「[名字]様に事前にお会いしたいとのことで、こちらに晴仁親王様がいらっしゃいます」[p]
 [主人公目閉]
 #
 ;==============================================================================
