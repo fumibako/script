@@ -101,7 +101,8 @@
 ;【立ち絵】葛城宮 微笑み
 [葛城宮笑顔]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「申し訳ないが、私は用事があるのでな。[sp]君たちは皆で仲良く遊べるだろう？」[p]
+「申し訳ないが、私は用事があるのでな。　君たちは皆で[r]
+[sp]仲良く遊べるだろう？」[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -109,7 +110,7 @@
 [whosay name="子供たち" color=%mp.color]
 [chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_hohoemi.png" time=0]
 [wait time=10]
-「わかった。　今度また遊びを教えてちょうだいね」[p]
+「わかった。 今度また遊びを教えてちょうだいね」[p]
 [葛城宮微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 驚
@@ -127,11 +128,13 @@
 [主人公通常]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「子供たちが喧嘩をしているので仲裁をしたら遊びに誘われてな……」[p]
+「子供たちが喧嘩をしていたので仲裁に入ったら、遊びに誘われてな……」[p]
+;ここは思いつかないのでこのまま
+;子供たちが喧嘩をしていたので、思わず仲裁に入ったら、遊びに誘われてな……
+
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
 [wait time=10]
-「楽しいものだった。[r]
-[sp]無邪気な笑顔というのも、心が癒される」
+「楽しいものだった。 無邪気な笑顔というのも、心が癒される」
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [wait time=10]
 [p]
@@ -139,7 +142,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り顔
 [主人公困り]
-「心が癒される、ですか。[sp]何かございましたか？」[p]
+「心が癒される、ですか。 何かございましたか？」[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
@@ -154,14 +157,14 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「殿下……一つお聞きしていいですか？」[p]
+「殿下……[ruby text=ひと]一つお聞きしていいですか？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
 [葛城宮真剣]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「構わない。[sp]君に対しては誠実でいたい」[p]
+「構わない。　君に対しては誠実でいたい」[p]
 
 ;【立ち絵】主人公 真剣
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
