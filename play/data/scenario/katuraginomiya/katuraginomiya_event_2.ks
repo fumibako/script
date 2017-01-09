@@ -388,6 +388,9 @@
 [葛城宮サイズ通常]
 [葛城宮ベース私服]
 [葛城宮通常]
+
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
+[wait time=10]
 [freeimage layer = 29 time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
@@ -402,6 +405,8 @@
 窓辺では、小鳥がさえずり、久しぶりに訪れた安穏した時間に身を任せる。[p]
 [autosave]
 
+[chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
+[wait time=10]
 ふと、部屋のドアから落ち着いたノック音が耳に入る。[r]
 ;【SE】ドアノック音(トントン)
 [playse storage=door-knock.ogg loop=false ]
