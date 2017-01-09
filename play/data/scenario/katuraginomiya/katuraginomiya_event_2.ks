@@ -306,14 +306,14 @@
 [主人公驚]
 「私だけ、
 [葛城宮効果消]
-[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_futuu.png" time=0]
-[wait time=10]
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [wait time=10]
+[chara_mod name="katuraginomiya_kuti" storage="katuraginomiya/kuti_futuu.png" time=0]
+[wait time=10]
 ですか？」
-[葛城宮目パチ1回]
+
 [p]
 ;真剣に切り替わるまでがきついので合間のエモ
 
@@ -409,7 +409,7 @@
 
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [wait time=10]
-ふと、部屋のドアから落ち着いたノック音が耳に入る。[r]
+ふと、部屋のドアから落ち着いたノック音が耳に入る。[p]
 ;【SE】ドアノック音(トントン)
 [playse storage=door-knock.ogg loop=false ]
 私が、入れ、というと、秘書が姿を現した。[p]
@@ -426,31 +426,31 @@
 [葛城宮ため息]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「柏木元大将は戦争が自国に益をもたらすと勘違いしている。[r]
-[sp]しかも質の悪い事に退役した今でも彼の支持者は多く、[r]
+[sp]しかも、質の悪い事に退役した今でも彼の支持者は多く、[r]
 [sp]富国強兵の考えを持つものは少なくない」[p]
 
 [whosay name="秘書" color=%mp.color]
 [葛城宮眉怒り]
 [葛城宮目伏]
-「今原海相もこのままでは取り込まれるでしょう」[p]
+「今原海相も、このままでは取り込まれるでしょう」[p]
 
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮口開]
 「柏木元大将は戦争の準備を始めるつもりだろう。[r]
-[sp]……火消の対応ばかりに追われても仕方ない。[sp]直接、柏木元大将に接触できないだろうか」[p]
+[sp]……火消の対応ばかりに追われても仕方ない。 直接、柏木元大将に[r]
+[sp]接触できないだろうか」[p]
 
 [whosay name="秘書" color=%mp.color]
+[葛城宮口通常]
 「難しいですが、働きかけてみましょう」[p]
 
 [葛城宮目閉じ]
 [葛城宮口ムッ]
 「ああ、頼んだ」[p]
-[葛城宮退場]
-
-;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
+[イベントシーン４終了]
 @jump storage="test_katuragi.ks"
 [s]
 
