@@ -320,11 +320,10 @@ $('.oto').remove();
 (―― 1度きりでいい、 お会いしたい)[p]
 
 
-;@jump storage="event.ks" target=*event_owari
-
 #
 ;次のイベントにでてしまう名前残りを消去
 [イベントシーン終了]
+[イベントシーン終了４]
 @jump storage="test_hujieda.ks"
 [s]
 
