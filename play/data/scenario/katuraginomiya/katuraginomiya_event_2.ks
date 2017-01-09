@@ -101,8 +101,8 @@
 ;【立ち絵】葛城宮 微笑み
 [葛城宮笑顔]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「申し訳ないが、私は用事があるのでな。　君たちは皆で[r]
-[sp]仲良く遊べるだろう？」[p]
+「申し訳ないが、私は用事があるのでな。 君たちは皆で仲良く[r]
+[sp]遊べるだろう？」[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -116,25 +116,22 @@
 ;【立ち絵】主人公 驚
 [主人公驚]
 「殿下は子供たちとお知り合いなのですか？」[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
-
-[葛城宮微笑み]
-
 [主人公通常]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
+[葛城宮微笑み]
 「子供たちが喧嘩をしていたので仲裁に入ったら、遊びに誘われてな……」[p]
-;ここは思いつかないのでこのまま
-;子供たちが喧嘩をしていたので、思わず仲裁に入ったら、遊びに誘われてな……
+;ここは思いつかないのでそのまま
+;子供たちが喧嘩をしていたので、思わず仲裁に入ったところ、遊びに誘われてな……
 
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
 [wait time=10]
-「楽しいものだった。 無邪気な笑顔というのも、心が癒される」
+「楽しいものだった。 無邪気な笑顔というものは、心が癒される」
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [wait time=10]
 [p]
@@ -164,7 +161,7 @@
 [葛城宮真剣]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「構わない。　君に対しては誠実でいたい」[p]
+「構わない。 君に対しては誠実でいたい」[p]
 
 ;【立ち絵】主人公 真剣
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -186,15 +183,15 @@
 「反対されていないといえば嘘になるな」[p]
 [葛城宮伏目パチ1回]
 「君も知っているかもしれないが、[r]
-[sp]『皇族の婚嫁は同族又は勅旨に由りを特に認許せられた華族に[r]
-[sp] 限る』と決められている」[p]
+[sp]『皇族の婚嫁は同族又は勅旨に由りを特に認許せられた華族に限る』[r]
+[sp]と決められている」[p]
 
 ;【立ち絵】主人公 困り顔
 [主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、知っています。[r]
-[sp]お手紙をいただいたときより、法律関係や諸外国について学ぶ[r]
-[sp]機会をいただきましたから」[p]
+[sp]お手紙をいただいたときより、法律関係や諸外国について学ぶ機会を[r]
+[sp]いただきましたから」[p]
 
 [主人公伏目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -203,7 +200,7 @@
 ;【立ち絵】葛城宮 ため息
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「そうか。[r]
-[sp]まあ私の場合は周囲の者たちも、いつもの事の一つだと[r]
+[sp]まあ私の場合は周囲の者たちも、いつもの事の[ruby text=ひと]一つだと、[r]
 [sp]さほど気にしていない」[p]
 
 ;【立ち絵】葛城宮 通常
@@ -211,42 +208,44 @@
 「だが君の周囲の者こそ、私との手紙のやり取りについて[r]
 [sp]どう思っているのだ？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「恐れ多いことだと……」[p]
 ;【立ち絵】主人公 伏目
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-「けれど、お父様も家令も私の意思を尊重して見守って[r]
-[sp]くださっています」[p]
+「けれど、お父様も家令も、私の意思を尊重して見守ってくださっています」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
-[葛城宮微笑み]
+
 ;【立ち絵】葛城宮 微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
+[葛城宮微笑み]
 「それは何よりだな」[p]
 [葛城宮目パチ1回]
 [葛城宮微笑み]
 ;【立ち絵】葛城宮 真剣
-「……君自身は私をどう思っている？」[p]
-[主人公伏目パチ1回]
+「……君自身は私をどう思っている？」
+[主人公伏目パチ1回][p]
 
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 主人公ポーズ両手、驚き、主人公頬染 
 [主人公ポーズ両手]
 [主人公驚]
 [主人公頬染め]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「え！ ……まだわかりませんわ！[l][r]
+「え！ ……まだわかりませんわ！」[p]
+
 [主人公ポーズ通常]
 [主人公照れ目普通]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 
-[sp]ですが、お手紙を拝見するたびに色々なことを考えておられて[r]
+「ですが、お手紙を拝見するたびに色々なことを考えておられて[r]
 [sp]素晴らしい方だと思っております」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -268,7 +267,7 @@
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_fusi1.png" time=0]
 [wait time=10]
 「自分も国も変えたい、そう思い貴族院に入った。[r]
-[sp]この国は四民平等をうたいながら不平等だ」[p]
+[sp]この国は四民平等を[ruby text=うた]謳いながら不平等だ」[p]
 ;【SE】子供たち
 [playse storage=kodomotachi_warai.ogg loop=false ]
 
@@ -288,8 +287,7 @@
 [wait time=10]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええ、きっと殿下ほどの強い意志の方なら、[r]
-[sp]きっとやり遂げられるでしょう」[p]
+「ええ、きっと殿下ほどの強い意志の方なら、きっとやり遂げられるでしょう」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 （やはり殿下は私には遠いお方なのだわ）[p]
@@ -315,8 +313,7 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ。[r]
 [sp]私の周りにいる女性は身分が高すぎるせいか、差別意識が強い」[p]
-「周囲の者たちもほとんど私がいうことを[r]
-[sp]青臭い夢だと思っている。[r]
+「周囲の者たちもほとんど私がいうことを青臭い夢だと思っている。[r]
 [sp]だが私はこの国を豊かで平等で平和な国に変えたい」[p]
 
 ;【立ち絵】主人公 驚き
@@ -358,7 +355,8 @@
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
-数刻後[p]
+数刻後[r]
+葛城宮　執務室[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】五色（重いムードに
@@ -366,10 +364,9 @@
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
 
-私は、今日、彼女にまた偶然出会えて上機嫌だったが、後に私は悪い知らせを聞くことになる。[p]
+今日は、彼女にまた偶然出会えて上機嫌だったが、後に私は悪い知らせを聞くこととなる。[p]
 ;今日は彼女にまた偶然出会えて私は上機嫌だったが、悪い知らせを聞くことになる。[r]　
-;になるは、推理系/過去モノローグ系です→全画面にしてみる・・・・
-
+;ことになるは、推理系/過去モノローグ系です→全画面にしてみる・・・・誰が話しているかわからない
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
@@ -389,7 +386,7 @@
 ;【SE】鳥たち（複数の鳥の声）
 [playse storage=tori_yatyou.ogg loop=false ]
 
-窓辺では、小鳥がさえずり、久しぶりに訪れた安穏した時間に身を任せる[p]
+窓辺では、小鳥がさえずり、久しぶりに訪れた安穏した時間に身を任せる。[p]
 
 
 その時だった。　部屋のドアから落ち着いたノック音が耳に入る。[r]
