@@ -558,7 +558,7 @@
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;===================================================================================
-;*
+*6_1
 ;*イベント名のラベルを追加していきます。予備&テンプレ
 ;=======================================================================================
 [layopt layer=29 visible=true]
@@ -584,7 +584,8 @@
 *bonyou
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_hujieda.jpg" time=500]
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 @jump target=end_sub
