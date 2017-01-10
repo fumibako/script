@@ -1,6 +1,7 @@
 ;========================================================
 ;イベント8回目【散策イベント1】9月4週、
 ;========================================================
+*replay_hujieda_9_4
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*9_4 storage="hujieda/preload_hujieda.ks"]
