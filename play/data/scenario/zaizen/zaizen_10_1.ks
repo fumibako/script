@@ -2,7 +2,7 @@
 ;イベント３回目【散策イベント１】10月1週、
 ;時子さんより財前の噂を聞く
 ;=======================お芝居の準備中です==========================================
-*replay_katuraginomiya_10_1
+*replay_zaizen_10_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*10_1 storage="zaizen/preload_zaizen.ks"]
