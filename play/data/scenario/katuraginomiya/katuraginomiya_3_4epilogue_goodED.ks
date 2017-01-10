@@ -1,5 +1,6 @@
 ;goodエンドエピローグ
 =======================お芝居の準備中です==================================
+**replay_katuraginomiya_3_4epilogue_goodED
 ;[setreplay name="replay_katuraginomiya_3_4_goodED_scene" storage="katuraginomiya_3_4epilogue_goodED.ks" target="start"]
 ;katuraginomiya_3_4epilogue_goodED.ks
 *strat
