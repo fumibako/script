@@ -1,6 +1,9 @@
 ;========================================================================
 ;イベント１５回目【指切りエンド】3月4週、
 ;=======================お芝居の準備中です==================================
+*replay_hujieda_3_4_normalED
+;[setreplay name="replay_hujieda_3_4_normalED_scene" storage="hujieda_3_4_normalED.ks" target="start"]
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*3_4_normalED storage="hujieda/preload_hujieda.ks"]
