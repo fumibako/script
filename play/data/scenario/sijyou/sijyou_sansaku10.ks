@@ -1,4 +1,5 @@
 ;==============================攻略ヒントを教える散策==============================
+*sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*bonyou storage="sijyou/preload_sijyou.ks"]
