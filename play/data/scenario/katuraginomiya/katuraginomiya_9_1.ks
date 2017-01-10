@@ -1,5 +1,6 @@
 ;4回目イベント　葛城宮の好感度が一番高い、一定の淑女度　
 ;=======================お芝居の準備中です==================================
+*replay_katuraginomiya_9_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*9_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
