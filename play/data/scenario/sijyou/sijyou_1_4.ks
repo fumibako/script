@@ -53,7 +53,7 @@
 [主人公目閉]
 「……わかりましたわ」[p]
 #
-私は、そんな磯野に癒されながらも、 [r]
+私は、磯野に癒されながらも、 [r]
 ;淑女度分岐
 [主人公目伏]
 [if exp="f.para_shujinkou_shukujodo >= 200"]
@@ -119,7 +119,7 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-そんな店の前には、凛とした[ruby text=かど]門[ruby text=まつ]松達が、[ruby text=ぎょうぎ]行[ruby text=ぎ]儀よく並んでいた。[p]
+店の前には、凛とした[ruby text=かど]門[ruby text=まつ]松達が、[ruby text=ぎょうぎ]行[ruby text=ぎ]儀よく並んでいた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ指]
 (やはり、華織様は、こういったお飾りも、お得意様方に……？)[p]
