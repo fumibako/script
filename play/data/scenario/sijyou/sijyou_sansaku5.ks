@@ -8,6 +8,7 @@
 ;母親 期待していない,言葉遣いを改めてほしい,お稽古も放り出さないで、新しい相手とお見合いしてほしい
 ;華衣 (やる事はやったので)１人になりたい
 ;=======================お芝居の準備中です==================================
+*sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
