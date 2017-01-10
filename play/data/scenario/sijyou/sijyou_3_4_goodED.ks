@@ -2,7 +2,7 @@
 ;春 3月
 ;○青空に桜のエフェクト/兄とその奥さんに見守られて結納(文字のみ)
 ;///////////////////////////////////////////////////////////////////
-*replay_sijyou_sijyou_3_4_goodED
+*replay_sijyou_3_4_normalED
 [setreplay name="replay_sijyou_3_4_goodED_scene" storage="sijyou_3_4_goodED.ks" target="start"]
 *start
 [chara_mod name="bg" storage="toumei.gif" time=100]
@@ -159,10 +159,10 @@ $('.saku3').remove();
 [elsif exp="tf.okeiko_gamen==false"]
 ;エピローグをつづけてみる場合の処理
 ;[if exp="f.sijyou_good==true"]
+[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 "]
 ;@jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
-;[else]
-;[四条ルート終了 end=nomal]
-:[endif]
+[else]
+[四条ルート終了 end=nomal]
 [endif]
 
 [if exp="tf.sijyou_test==true"]
