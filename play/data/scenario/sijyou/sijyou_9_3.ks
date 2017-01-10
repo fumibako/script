@@ -191,7 +191,7 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(これからは、ここの『しきたり』を勉強しなくては！ )[p]
+(これからは、ここの[ruby text=し]仕[ruby text=きた]来りを勉強しなくては！ )[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 ;○はりきってる四条祖母 姑？
