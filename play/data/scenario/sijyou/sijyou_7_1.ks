@@ -1,3 +1,4 @@
+*replay_sijyou_7_1.ks
 [stopbgm]
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 ;////////////表示準備/////////
