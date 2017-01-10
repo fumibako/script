@@ -1,3 +1,4 @@
+*replay_sijyou_1_3
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
