@@ -1,6 +1,7 @@
 ;8.5回目イベント
 ;葛城宮からの手紙　
 =======================お芝居の準備中です==================================
+*replay_katuraginomiya_2_2
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*2_2 storage="katuraginomiya/preload_katuraginomiya.ks"]
