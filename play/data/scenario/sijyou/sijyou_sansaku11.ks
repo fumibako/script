@@ -1,5 +1,6 @@
 ;華衣忠告イベント後、華道30以上ならいつでも
 ;=======================お芝居の準備中です==================================
+*sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*bonyou storage="sijyou/preload_sijyou.ks"]
