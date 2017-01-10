@@ -1,6 +1,7 @@
 ;=============================================
 ;イベント3回目【手紙が届くその３】６月お琴のお稽古を２回以上
 ;=======================お芝居の準備中です==================================
+*replay_hujieda_6_4
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*6_4 storage="hujieda/preload_hujieda.ks"]
