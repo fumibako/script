@@ -17,6 +17,23 @@
 ;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します
 ;◆画面消去　[プリロード画面消去]
 ;======================================================================================
+*6_1
+;夢イベント
+;*イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;///////////////使用背景メモ　必要時に解放///////////////////
+[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+;======================================================================================
+@jump target=end_sub
+;[return]へGO　ここは、消さないでください
+;以降は、無駄な読み込みはしない
+;======================================================================================
 *9_1
 ;ルート決定
 ;*イベント名のラベルを追加していきます。
