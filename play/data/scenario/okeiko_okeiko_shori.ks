@@ -50,7 +50,7 @@
 [freeimage layer = 27]
 [cm]
 [eval exp="f.okeiko_kamoku='koto'"]
-[eval exp="f.okeiko_kamoku_j='箏(こと)'"]
+[eval exp="f.okeiko_kamoku_j='お箏'"]
 [call target="*okeiko_shori"]
 @jump storage="okeiko_hyouji.ks" target=*draw_button_system
 [s]

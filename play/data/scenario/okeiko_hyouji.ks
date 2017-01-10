@@ -40,17 +40,20 @@
 
 ;【お稽古ボタン表示】
 *draw_button_okeiko
-[locate x=350 y=549]
+[locate x=330 y=549]
 [button name="okeiko_sadou" fix=true graphic="button_okeiko_sadou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_sadou]
 [wait time=10]
-[locate x=470 y=549]
+[locate x=430 y=549]
 [button name="okeiko_kadou" fix=true graphic="button_okeiko_kadou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_kadou]
 [wait time=10]
-[locate x=590 y=549]
+[locate x=530 y=549]
 [button name="okeiko_reihou" fix=true graphic="button_okeiko_reihou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_reihou]
 [wait time=10]
-[locate x=710 y=549]
+[locate x=630 y=549]
 [button name="okeiko_gogaku" fix=true graphic="button_okeiko_gogaku.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_gogaku]
+[wait time=10]
+[locate x=730 y=549]
+[button name="okeiko_koto" fix=true graphic="button_okeiko_koto.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_koto]
 [wait time=10]
 [locate x=852 y=533]
 [button name="okeiko_qk" fix=true graphic="button_okeiko_qk.png" storage="okeiko.ks" target=*okeiko_qk]
@@ -157,7 +160,7 @@ else {f.shougou = "お転婆娘";}
 [ptext text="華道：" layer=24 size=20 x=770 y=297 color=black bold=bold]
 [ptext text="礼法：" layer=24 size=20 x=770 y=334 color=black bold=bold]
 [ptext text="語学：" layer=24 size=20 x=770 y=371 color=black bold=bold]
-[ptext text="箏：" layer=24 size=20 x=770 y=408 color=black bold=bold]
+[ptext text="お箏：" layer=24 size=20 x=770 y=408 color=black bold=bold]
 
 
 ;◆月始めのみの処理
