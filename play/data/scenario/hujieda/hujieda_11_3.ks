@@ -1,6 +1,7 @@
 ;========================================================================
 ;イベント１１回目【父と磯野への説得】１１月3週、
 ;=======================お芝居の準備中です=================================
+*replay_hujieda_11_3
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*11_3 storage="hujieda/preload_hujieda.ks"]
