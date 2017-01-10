@@ -1,6 +1,7 @@
 ;=============================================
 ;イベント1回目【財前を選択】9月1週、
 ;=======================お芝居の準備中です==========================================
+*replay_zaizenzaizen_9_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*9_1 storage="zaizen/preload_zaizen.ks"]
