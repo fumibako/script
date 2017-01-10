@@ -1,5 +1,6 @@
 ;６回目イベント　
 ;=======================お芝居の準備中です==================================
+*replay_katuraginomiya10_2
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*10_2 storage="katuraginomiya/preload_katuraginomiya.ks"]
@@ -17,7 +18,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-
+*seen0
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
 「お嬢様……この記事をお読みください」[p]
@@ -55,7 +56,7 @@
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
-
+*seen1
 [sp]内閣総辞職か！？[sp]過去最大の海軍の汚職事件 [r]
 [r]
 [sp]海軍高官が川氏物産を経由して[r]
@@ -83,6 +84,7 @@
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [cm]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
+*seen2
 #
 [主人公憂い]
 [主人公目パチ1回]
@@ -115,6 +117,7 @@
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
+*seen3
 同時刻[r]
 [r]
  与党会議室[p]
@@ -135,7 +138,7 @@
 [eval exp="sf.FButton='ON'"]
 [メッセージウィンドウ上ボタン表示]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
-
+*seen4
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　怒り　幕間に設定済
 「今原中将、戦争をするつもりですか？[sp]貴方は首相の意思に背いている」[p]
@@ -212,7 +215,7 @@
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
-
+*seen5
 ;【立ち絵】葛城宮　目閉じ眉困り
 [葛城宮困り]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -226,6 +229,7 @@
 「二人ともその辺で……。[r]
 [sp]だが明らかになった以上、対策を立てねばならない。[r]
 [sp]今後は……」[p]
+*seen6
 #
 [layopt layer=fix visible=false]
 [image layer=29 x=1 y=1 storage="bg/anten.jpg" time=2000 visible=true]
