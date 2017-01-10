@@ -615,11 +615,15 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;～～～～～～～～～～～～共通５～～～～～～～～～～～
 *common5
 [autosave]
-[主人公目閉じ]
+[主人公目閉]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+#
+大賞作品を見た後、私たちは他の作品を見て回る。[r]
+展示台に飾られた作品も、目を引かれる作品であった。[p]
+;適当に追加↑
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (こちらは、複数の生け花で、夏の[ruby text=かわず]蛙の跳ねる姿を表現されているの[r]
