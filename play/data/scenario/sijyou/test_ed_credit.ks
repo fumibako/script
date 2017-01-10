@@ -1,3 +1,4 @@
+*replay_test_ed_credit
 *first
 [if exp="tf.test_sijyou==true"]
 ;[暗転]
