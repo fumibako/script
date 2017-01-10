@@ -1,5 +1,6 @@
 ;５回目イベント　両家顔合わせ　
 ;=======================お芝居の準備中です==================================
+*replay_katuraginomiya_9_3
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*9_3 storage="katuraginomiya/preload_katuraginomiya.ks"]
