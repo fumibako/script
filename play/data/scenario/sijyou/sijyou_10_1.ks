@@ -1,3 +1,5 @@
+*replay_sijyou_10_1
+*start
 ;¥¥¥¥¥¥¥¥イベント☆障害のはじまり 心の暗闇 手紙が帰ってこなくなる¥¥¥¥¥¥¥¥
 [call target=*start storage="tyrano.ks"]
 [stopbgm]
