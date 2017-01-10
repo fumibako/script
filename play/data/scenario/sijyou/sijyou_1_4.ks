@@ -1,3 +1,5 @@
+*replay_sijyou_1_4
+*start
 *first
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -7,7 +9,6 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;///////////////////////////////
-*start
 ;=================================================================================_
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
