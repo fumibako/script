@@ -1,5 +1,6 @@
 ;8回目イベント　
 =======================お芝居の準備中です==================================
+*replay_katuraginomiya_1_3
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*1_3 storage="katuraginomiya/preload_katuraginomiya.ks"]
