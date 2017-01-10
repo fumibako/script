@@ -1,6 +1,9 @@
 ;=========================================================================
 ;イベント１５回目【指切りエンド】3月4週、goodED時エピローグ
 ;=======================お芝居の準備中です==================================
+*replay_hujieda_hujieda_3_4_goodED
+;[setreplay name="replay_hujieda_hujieda_3_4_goodED_scene" storage="hujieda_3_4_goodED.ks" target="start"]
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*3_4_goodED storage="hujieda/preload_hujieda.ks"]
