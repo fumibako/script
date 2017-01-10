@@ -1,3 +1,5 @@
+*replay_sijyou_6_1.ks
+*start
 ;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
