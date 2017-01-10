@@ -59,7 +59,7 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『家族について(お見合い後)』
-[if exp="f.sijyou_fumi_toutyakumachi_kazoku == 0 && f.sijyou_omiai == 1 && f.okeiko_month != 10 &&  && f.fumi_toutyaku_sijyou[5] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kazoku == 0 && f.sijyou_omiai == 1 && f.okeiko_month != 10 && f.fumi_toutyaku_sijyou[5] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_5
 [endif]
