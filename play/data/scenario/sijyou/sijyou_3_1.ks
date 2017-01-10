@@ -241,7 +241,7 @@
 (華織様の手紙だわ！)[p]
 #
 その手紙の上には、品の良い押し花と和紙で作られた華道展のチケットが、[r]
-添えられいた。[p]
+添えられていた。[p]
 ;～～～～～～～～淑女度ひくい～～～～～～～～
 [if exp="f.para_shujinkou_shukujodo<200"]
 [whosay name="磯野" color="dimgray"]
@@ -424,7 +424,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公ほほえみ]
 「お父様、早く、行きましょう！」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「急かなくても大丈夫。[r]
+「急かなくても大丈夫だ。[r]
+;だよ（どちらでも
 [sp][名前]も、好きな人のこととなると、せっかちになるのだな」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
