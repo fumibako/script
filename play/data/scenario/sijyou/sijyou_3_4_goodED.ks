@@ -2,6 +2,7 @@
 ;春 3月
 ;○青空に桜のエフェクト/兄とその奥さんに見守られて結納(文字のみ)
 ;///////////////////////////////////////////////////////////////////
+*replay_sijyou_sijyou_3_4_goodED
 [setreplay name="replay_sijyou_3_4_goodED_scene" storage="sijyou_3_4_goodED.ks" target="start"]
 *start
 [chara_mod name="bg" storage="toumei.gif" time=100]
