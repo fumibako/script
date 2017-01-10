@@ -63,16 +63,6 @@
 		@jump storage="event.ks" target=*start
 [endif]
 ;================================================
-;◆四条イベント判定【デート/事件導入】sijyou_10_3.ks
-[if exp="(f.okeiko_month==10 && f.okeiko_week==3) && f.event_sijyou[8]==0 && f.sijyou_au==1"]
-	[eval exp="f.event_storage='sijyou/sijyou_10_3.ks'"]
-	[eval exp="f.event_target='*replay_sijyou_10_3'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_sijyou[8]=1"]
-		@jump storage="event.ks" target=*start
-[endif]
-;================================================
-;================================================
 ;◆四条イベント判定【BAD】sijyou_10_3_badED.ks
 [if exp="(f.okeiko_month==10 && f.okeiko_week==3) && f.para_sijyou_koukando < 40 && f.event_sijyou[9]==0 && f.sijyou_au==1"]
 [eval exp="f.event_storage='sijyou/sijyou_10_3_badED.ks'"]
@@ -83,6 +73,15 @@
 	alert(f.event_storage);
 	[endscript]
 	@jump storage="event.ks" target=*start
+[endif]
+;================================================
+;◆四条イベント判定【デート/事件導入】sijyou_10_3.ks
+[if exp="(f.okeiko_month==10 && f.okeiko_week==3) && f.event_sijyou[8]==0 && f.sijyou_au==1"]
+	[eval exp="f.event_storage='sijyou/sijyou_10_3.ks'"]
+	[eval exp="f.event_target='*replay_sijyou_10_3'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_sijyou[8]=1"]
+		@jump storage="event.ks" target=*start
 [endif]
 ;================================================
 ;◆四条イベント判定【事件】sijyou_11_1.ks
