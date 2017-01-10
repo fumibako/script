@@ -1,6 +1,7 @@
 ;=========================================================================
 ;イベント９回目【花と手紙を渡す】１０月３週、
 ;=======================お芝居の準備中です==================================
+*replay_katuraginomiya_10_3
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*10_3 storage="hujieda/preload_hujieda.ks]
