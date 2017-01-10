@@ -1,6 +1,7 @@
 ;=============================================
 ;イベント5.5回目【財前からの手紙】11月３週、
 ;=======================お芝居の準備中です==========================================
+*replay_katuraginomiya_11_3
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*11_3 storage="zaizen/preload_zaizen.ks"]
