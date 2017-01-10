@@ -63,6 +63,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test3_4nomal" text="3月4週nomal" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 
 [glink target="zaizen_bazaar" text="財前バザー" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="zaizen_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=140 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 
 [glink target="page_0" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=pink]
@@ -247,11 +248,19 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 @jump storage="zaizen/zaizen_bazaar.ks"
 [s]
 ;zaizen/zaizen_bazaar.ks
+
 *test_sansaku
 [cm]
 [freeimage layer = 26]
-@jump storage="sijyou/sijyou_sansaku.ks"
+@jump storage="zaizen/zaizen_sansaku.ks"
 [s]
+
+*zaizen_6_1
+[cm]
+[freeimage layer = 26]
+@jump storage="zaizen/zaizen_6_1.ks"
+[s]
+
 
 *test_fumi
 [cm]
