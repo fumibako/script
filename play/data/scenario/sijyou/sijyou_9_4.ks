@@ -1,6 +1,6 @@
 ;¥¥¥¥¥¥¥¥イベント4¥¥¥¥¥¥¥¥
 ;/////☆デート2 ターニングポイント○歌舞伎座で音頭恋寝刃を鑑賞、伏線とキャラ紹介/////
-*replay_sijyou_sijyou_9_4
+*replay_sijyou_9_4
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
