@@ -1,6 +1,6 @@
 ;¥¥¥¥¥¥¥¥イベント1お見合い決定 9月1週¥¥¥¥¥¥¥¥
 ;☆主人公 選択肢からお見合い相手を決定 決意する主人公 ミッドポイントのはじまり//////////////////
-*replay_sijyou_9_1
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*9_1 storage="sijyou/preload_sijyou.ks"]
@@ -19,7 +19,7 @@
 ;=================================準備============================================
 [プリロード画面消去]
 [四条ボタン表示]
-*start
+*replay_sijyou_9_1
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
