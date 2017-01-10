@@ -1,5 +1,6 @@
 ;7.5回目イベント　
 =======================お芝居の準備中です==================================
+*replay_sijyou_12_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*12_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
@@ -16,7 +17,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-
+*seen0
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
 「葛城宮殿下は、手紙を送るといわれたのですよね？[r]
@@ -77,7 +78,7 @@
 [position left=130 width=750 height=530 top=110 page=fore margint="50"]
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
-
+*seen1
 [sp]内閣不信任決議案が可決し内閣総辞職に！[r]
 [r]
 [sp]海軍汚職の全貌が明らかになり、海軍出身の議員辞職。[r]
@@ -99,7 +100,7 @@
 [eval exp="sf.FButton='ON'"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;==========================スクリプト・全画面表示からの復帰準備完了========================================
-
+*seen2
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
@@ -119,6 +120,8 @@
 [主人公目閉じ]
 「さすがに、この結果は落ち込まれていると思いますもの。[r]
 [sp]私は、殿下が克服されると信じています」[p]
+
+*seen3
 #
 ;ジャンプ後に名前残り防止
 [fadeoutbgm time=3000]
@@ -126,7 +129,6 @@
 @jump storage="katuraginomiya/katuraginomiya12_1ｂ.ks" target=*seen_0
 ;次のイベントに飛びます
 [イベントシーン終了]
-
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
