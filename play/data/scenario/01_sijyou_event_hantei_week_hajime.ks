@@ -42,7 +42,7 @@
 	[eval exp="f.event_target='*replay_sijyou_9_2'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_sijyou[4]=1"]
- 	[eval exp="f.sijyou_omiai=1”]
+ 	[eval exp="f.sijyou_omiai=1"]
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
