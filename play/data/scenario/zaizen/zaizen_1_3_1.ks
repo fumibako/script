@@ -1,6 +1,7 @@
 ;=============================================
 ;イベント８回目【新聞に投稿】１月３週
 ;=======================お芝居の準備中です==========================================
+*replay_zaizen_1_3_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*1_3_1 storage="zaizen/preload_zaizen.ks"]
