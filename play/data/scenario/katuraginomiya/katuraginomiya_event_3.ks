@@ -1,5 +1,6 @@
 ;イベント3回目
 ;一定の淑女度、葛城宮一定の好感度
+*replay_katuraginomiya_event_3
 ;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
