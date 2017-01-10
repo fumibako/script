@@ -1,6 +1,7 @@
 ;=============================================
 ;イベント【主人公奮闘する】１２月2週
 ;=======================お芝居の準備中です==========================================
+*replay_zaizen_12_2
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*12_2 storage="zaizen/preload_zaizen.ks"]
