@@ -1,5 +1,6 @@
 ;///////散策案4 キャラの良さ、フラグ回収;期間 終わったあと;元散策3案;登場人物 四条親戚 四条華織 華衣///////
 ;=======================お芝居の準備中です==================================
+*sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*bonyou2 storage="sijyou/preload_sijyou.ks"]
