@@ -96,7 +96,7 @@ $('.saku3').remove();
 [whosay name="華衣" color=%mp.color]
 「自分にも、いつかそのような方と出会えるのかな……」[p]
 [whosay name="四条親戚" color="#807070"]
-「きっと貴方にも巡り会えますよ 華衣さんにも大事な人が 」[p]
+「きっと貴方にも巡り会えますよ。 華衣さんにも大事な人が 」[p]
 [whosay name="華衣" color=%mp.color]
 「！　」[p]
 [whosay name="華衣" color=%mp.color]
@@ -110,6 +110,14 @@ $('.saku3').remove();
 [暗転２終了]
 ;ｽﾁﾙをみてから考えよう・・・
 [p]
+
+[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 "]
+幸せは信じれば巡ってくる。[r]
+それは、案外気づかない近い場所にあるのかもしれません。[p]
+;エピローグをつづけてみる場合の処理
+@jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
+[endif]
+
 # 
 ;ナレーターモノローグ
 ;===============================================================
@@ -157,10 +165,7 @@ $('.saku3').remove();
 [endreplay] 
 @jump storage="event.ks" target=*event_ED
 [elsif exp="tf.okeiko_gamen==false"]
-;エピローグをつづけてみる場合の処理
-;[if exp="f.sijyou_good==true"]
-[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 "]
-;@jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
+
 [else]
 [四条ルート終了 end=nomal]
 [endif]
