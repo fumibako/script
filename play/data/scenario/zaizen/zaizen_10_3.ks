@@ -1,6 +1,7 @@
 ;=============================================
 ;イベント４回目【薔薇園でのデート】10月3週、zaizen_bara.jpg
 ;=======================お芝居の準備中です==========================================
+*replay_katuraginomiya_10_3
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*10_3 storage="zaizen/preload_zaizen.ks"]
