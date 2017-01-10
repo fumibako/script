@@ -1,6 +1,7 @@
 ;=============================================
 ;◆チャリティーバザー◆２月3週から３月４週までお茶事が高い葛城宮ルート
 ;=======================お芝居の準備中です==================================
+*replay_katuraginomiya_bazaar
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*sansaku storage="katuraginomiya/preload_katuraginomiya.ks"]
