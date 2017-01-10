@@ -420,7 +420,7 @@
 [wait time=10]
 [主人公ポーズ片手]
 ;今見たら驚いてない感じだったのでこちらに
-「！？」[p]
+;「？！」[p]
 [whosay name="華織" color="olivedrab"]
 「……！」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -464,7 +464,8 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 #
-謎の人物は、不穏な言葉を残すと去っていった。[p]
+;謎の
+少年は、不穏な言葉を残すと去っていった。[p]
 ;強気の驚き
 [四条真剣]
 [四条口驚き]
