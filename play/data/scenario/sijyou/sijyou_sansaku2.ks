@@ -2,6 +2,7 @@
 ;平均的に何でもこなすが特出したものがない。というイベントがない。
 ;主人公・・・子供の頃から知り合いのお兄さんなので、他の攻略対象に比べると、あまり淑女度はないかも
 ;=======================お芝居の準備中です==================================
+*sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*bonyou storage="sijyou/preload_sijyou.ks"]
