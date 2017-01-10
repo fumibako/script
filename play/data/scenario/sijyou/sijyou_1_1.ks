@@ -1,6 +1,8 @@
 ;¥¥¥¥¥¥¥¥イベント6.5¥¥¥¥¥¥¥¥
 ;☆結果の知らせ (黒田ルートと同じお正月なイメージ)手紙がくる＿×日程の調整によって変更してもokです。
 ;暗転プリロードサブルーチン
+*replay_sijyou_1_1
+*start
 [call target=*1_1 storage="sijyou/preload_sijyou.ks"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
