@@ -11,7 +11,10 @@
 	[iscript]
 	alert('アラート');
 	[endscript]
-	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks"]
+	[eval exp="f.event_storage='sijyou/' + 'sijyou_6_1.ks"]
+	[iscript]
+	alert(f.event_storage);
+	[endscript]
 	[eval exp="f.event_target='*replay_sijyou_6_1.ks'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_sijyou[1]=1"]
