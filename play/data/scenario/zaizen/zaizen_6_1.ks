@@ -62,7 +62,7 @@
 [sp] 　　　　　　　　　　　　　　　　　　　　　　　　敬具 [r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　　　[名字][名前] [p]
-[主人公手紙読了]
+[手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
