@@ -2,7 +2,7 @@
 ;イベント6回目【散策イベント２】1１月４週
 ;町で噂を聞く
 ;=======================お芝居の準備中です==========================================
-*replay_katuraginomiya_11_4_1
+*replay_zaizen_11_4_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*11_4_1 storage="zaizen/preload_zaizen.ks"]
