@@ -4,6 +4,7 @@
 ;zaizen_11_1_2.ks" target="seen_1" good　つづきをみる
 :zaizen_11_bad2.ks" target="seen_1" バッド１　財前の言う通りにする
 ;=======================お芝居の準備中です==========================================
+*replay_katuraginomiya_11_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*11_1 storage="zaizen/preload_zaizen.ks"]
