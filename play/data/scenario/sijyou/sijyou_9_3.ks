@@ -682,7 +682,7 @@ _　成長しないといけないのだわ)[p]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
 ;ナレーター
-"華織様"は私に思い出の場を語り合いながら、[ruby text=あたた]暖かな温室へと誘った。[p]
+"華織様"と私は思い出を語り合いながら、[ruby text=あたた]暖かな温室へと誘った。[p]
 ;連れ誘った
 [四条目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
