@@ -2,6 +2,7 @@
 ;=============================================
 ;藤枝ルート２月３週から３月４週の間にイベント
 ;=============================================
+*sansaku
 [stopbgm]
 [call target=*sansaku storage="hujieda/preload_hujieda.ks]
 [call target=*start storage="tyrano.ks"]
