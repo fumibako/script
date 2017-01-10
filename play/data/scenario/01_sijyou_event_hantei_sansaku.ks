@@ -10,6 +10,7 @@
 ;================================================
 ;◆四条イベント判定【散策１】9月1週~9月4週(銀座デート前まで)に1度だけ発生sijyou_sansaku.ks
 [if exp="f.okeiko_month==9 && f.event_machi_sijyou[1]==0 && f.sijyou_au==1"]
+	[eval exp="f.event_machi_sijyou[1]=1"]
 	@jump storage="sijyou/sijyou_sansaku.ks" 
 	;target=*sansaku
 [endif]
@@ -100,6 +101,13 @@
 [if exp="f.okeiko_month > 9 && f.sijyou_au==1 && f.event_machi_sijyou[13]==0"]
 	[eval exp="f.event_machi_sijyou[13]=1"]
 	@jump storage="sijyou/sijyou_sansaku13.ks" 
+	;target=*sansaku
+[endif]
+;================================================
+;◆四条イベント判定【散策１】12月sijyou_sansaku.ks
+[if exp="f.okeiko_month==12 && f.event_machi_sijyou[14]==0 && f.sijyou_au==1"]
+	[eval exp="f.event_machi_sijyou[14]=1"]
+	@jump storage="sijyou/sijyou_sansaku.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
