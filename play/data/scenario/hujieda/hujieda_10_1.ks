@@ -1,6 +1,7 @@
 ;=============================================
 ;イベント１０月１週、８．５回目
 ;=======================お芝居の準備中です==================================
+*replay_katuraginomiya_10_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*10_1 storage="hujieda/preload_hujieda.ks]
