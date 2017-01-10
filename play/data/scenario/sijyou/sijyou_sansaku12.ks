@@ -1,5 +1,6 @@
 ;幸せはどこに？ 華衣へのイベント
 ;=======================お芝居の準備中です==================================
+*sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*bonyou storage="sijyou/preload_sijyou.ks"]
