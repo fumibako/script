@@ -1,4 +1,4 @@
-*replay_hujieda_6_1.ks
+*replay_hujieda_6_1
 *start
 ;=======================お芝居の準備中です==================================
 [stopbgm]
@@ -7,7 +7,6 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-;[call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築ボタン無し版]
 [暗転]
 [主人公ポーズ通常]
