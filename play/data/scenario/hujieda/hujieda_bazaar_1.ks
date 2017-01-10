@@ -2,6 +2,7 @@
 ;◆チャリティーバザー◆２月4週から３月3週まで琴パラが高い藤枝ルート
 ;これもイベントの中に組み込む方がよいかも？
 ;=======================お芝居の準備中です 男性モノローグ版=================================
+*replay_hujieda_bazaar_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*hujieda_bazaar_1 storage="hujieda/preload_hujieda.ks"]
