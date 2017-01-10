@@ -1,7 +1,8 @@
 ;9回目イベント【背景】公園　背景森林公園 主人公と葛城宮抱擁CG
 =======================お芝居の準備中です==================================
-*start
+*replay_katuraginomiya_3_4_nomalED
 ;[setreplay name="replay_sijyou_3_4_nomalED_scene" storage="katuraginomiya_3_4_nomalED.ks" target="start"]
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*3_4_nomal storage="katuraginomiya/preload_katuraginomiya.ks"]
