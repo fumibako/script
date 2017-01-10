@@ -11,7 +11,7 @@
 	[iscript]
 	alert('アラート');
 	[endscript]
-	[eval exp="f.event_storage='sijyou/' + 'sijyou_6_1.ks"]
+	[eval exp="f.event_storage='sijyou/' + 'sijyou_6_1.ks'"]
 	[iscript]
 	alert(f.event_storage);
 	[endscript]
