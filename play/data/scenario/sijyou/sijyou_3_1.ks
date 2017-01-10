@@ -1,4 +1,5 @@
-*test
+*replay_sijyou_3_1
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 ;暗転プリロードサブルーチン
