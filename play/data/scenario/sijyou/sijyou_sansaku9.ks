@@ -1,3 +1,4 @@
+*sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
