@@ -238,7 +238,7 @@
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/ginza3.jpg" time=100]
 #
-目の前に広がる都会的な街並みに思わず息を呑む。[p]
+目の前に広がる、都会的な街並みに思わず息を呑む。[p]
 ;【登場】四条
 ;[四条ベース着物]
 [四条ベース羽織]
@@ -390,7 +390,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「今日は楽しく過ごせました。ありがとうございます」[p]
+「今日は楽しく過ごせました。 ありがとうございます」[p]
 ;【SE】ガサガサッ
 [playse storage=shigemi_gasagasa_short.ogg loop=false ]
 [whosay name="華織" color="olivedrab"]
@@ -409,7 +409,9 @@
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
-
+#
+場を切り裂くような少年の声がこだます。[p]
+;暖かな？
 ;強気の驚き
 [四条真剣]
 [四条口驚き]
