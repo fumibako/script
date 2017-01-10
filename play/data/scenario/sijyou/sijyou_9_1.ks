@@ -1,5 +1,7 @@
 ;¥¥¥¥¥¥¥¥イベント1お見合い決定 9月1週¥¥¥¥¥¥¥¥
 ;☆主人公 選択肢からお見合い相手を決定 決意する主人公 ミッドポイントのはじまり//////////////////
+*replay_sijyou_9_1
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*9_1 storage="sijyou/preload_sijyou.ks"]
