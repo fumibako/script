@@ -1,4 +1,6 @@
 ;【華道習いイベント】 華道一定値で。 ある程度は淑女度必要そうなイメージ　100あたりは必要かも
+*replay_sijyou_2_1
+*start
 *test
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -13,7 +15,6 @@
 ;macro_tati_sijyou.ksにkeyframe設定及び[四条アップ][四条サイズ通常]マクロを移動し
 ;問題無く動作することを確認(WindowsVistaSP2+Chrome 49.0.2623.112 m, iPhone6S+Safari)しました
 ;(ちなみに古いPCよりスマホの方が動作が軽かったです…動作の軽さはPCかスマホかの違いよりも、性能によるのかもと思いました)
-*start
 [cm]
 ;【背景】主人公邸 お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
