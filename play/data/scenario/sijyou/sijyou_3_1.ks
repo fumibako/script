@@ -535,7 +535,9 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
-見事な作品達が、白亜の台座に美を競い合いながらも、固有の世界感を表現している[p]
+華道展に来た。[p]
+見事な作品達が、白亜の台座に美を競い合いながらも、固有の世界感を[r]
+表現している[p]
 ;白を基調とした展示会場には、美しい花々が趣向ごとに展示されており、[r]
 来場者は皆、ゆったりと、華の世界に浸っていた。[p]
 [if exp="sf.BGM=='ON'"]
