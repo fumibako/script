@@ -1,6 +1,7 @@
 ;//////散策案3//////////
 ;期間・・・四条家でのデートのあとならいつでも？;四条祖母と出会い、花材を沢山持っていて主人公が手伝う。テンプレ。
 ;=======================お芝居の準備中です==================================
+*sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*bonyou storage="sijyou/preload_sijyou.ks"]
