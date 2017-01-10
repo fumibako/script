@@ -1,4 +1,5 @@
 ;¥¥¥¥¥¥¥¥イベント5.5手紙イベント¥¥¥¥¥¥¥¥
+*replay_sijyou_10_3
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
