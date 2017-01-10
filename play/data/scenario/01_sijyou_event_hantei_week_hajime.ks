@@ -9,7 +9,7 @@
 ;◆四条 sijyou_6_1.ks好感度一定値以上で1度だけ発生 日付は不明(仮)　！！共通イベントですがどうしましょう ここは葛城宮好感度→淑女度１８以下　と　藤枝好感度→箏、一定値　5/4で華道ばかり１５になった
 [if exp="(f.okeiko_month == 5 && f.okeiko_week == 4) && f.event_sijyou[1] == 0 && f.sijyou_au == 0 && (f.para_sijyou_koukando > f.para_zaizen_koukando || f.para_sijyou_koukando > f.para_kuroda_koukando || f.para_sijyou_koukando > f.para_katuraginomiya_koukando || f.para_sijyou_koukando > f.para_hujieda_koukando)"]
 	[iscript]
-	aleat("ここ2");
+	alert('アラート');
 	[endscript]
 	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks"]
 	[eval exp="f.event_target='*replay_sijyou_6_1.ks'"]
