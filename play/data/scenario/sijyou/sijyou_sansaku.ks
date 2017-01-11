@@ -52,7 +52,7 @@
 ;【SE】走り去る(屋外)
 [playse storage=run_soto.ogg loop=false ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(いってしまいまわれました)[p]
+(行ってしまいまわれました)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (なんだったのでしょうか……)[p]
 
