@@ -226,6 +226,8 @@ $('.omoide1').remove();
 [layopt layer=27 visible=true]
 
 ;葛城宮 "Hidetsugu Tonomura 様" "Karen Roe 様" "Takashi .M 様"
+;藤枝 "[◉”] Enrique Céspedes 様" "jeaneeem 様" "Taber Andrew Bain 様" "Ching 様" "kiukey 様" "Thomas Kohler 様" "田中十洋 様" 
+"coloredby 様" "Kevin Doncaster 様" "David Sanz 様"
 
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
