@@ -1,7 +1,12 @@
 *replay_sijyou_7_1
-*start
+;==============================================================================================================
 [stopbgm]
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+*start
 ;////////////表示準備/////////
 ;選択肢背景＿表示遅れ防止
 [preload storage="data/fgimage/bg/plane_sakura.jpg"]
@@ -11,23 +16,18 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;==============================================================================================================
-;七月一週に休憩を押した場合
-;==============================================================================================================
-[イベントシーン構築]
-#
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;主人公復帰表情
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
-;主人公復帰表情消去
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
+[主人公目閉]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;==============================================================================================================
+;七月～八月に休憩を押した場合（全員の好感度一定以下など補佐イベント）
+;==============================================================================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふぅ……）
 ;↓口：おちょぼ口 [主人公口ふぅ]
