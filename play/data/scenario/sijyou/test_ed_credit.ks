@@ -317,7 +317,7 @@ $('.omoide1').remove();
 [mtext name=cc text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="効果音ラボ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc  wait=false]
 [mtext name=cc text="フリー効果音　On-Jin ～音人～ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=false]
-[mtext name=cc text="効果ON 様" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=true]
+[mtext name=cc text="効果ON 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
@@ -342,6 +342,7 @@ $('.omoide1').remove();
 [eval exp="tf.top_y1=tf.top_y1+200"]
 [eval exp="tf.top_y2=tf.top_y2+200"]
 [eval exp="tf.top_y3=tf.top_y3+200"]
+[eval exp="tf.top_y3=tf.top_y4+200"]
 
 [mtext name=cc text="原案・企画" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
@@ -367,7 +368,7 @@ $('.omoide1').remove();
 [mtext name=cc text="シナリオ" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y1" color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="黒田 :◆8EASfQr/2Q ◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
 [mtext name=cc text="財前・葛城宮・藤枝:◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
-[mtext name=cc text="四条・他編集(財前・葛城宮・藤枝＿編集)：＠名無しさん１" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=true]
+[mtext name=cc text="四条・他編集(財前・葛城宮・藤枝＿編集)：＠名無しさん１" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y4" color=&tf.fc wait=true]
 [wait time=50]
 ;最後wait=true
 
