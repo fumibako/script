@@ -1,16 +1,15 @@
 ;==================================散策イベント====================================================================
-;△お見合い前、四条の好感度が一定値(数値は程々に高い)で散策にいったら見知らぬ人(華衣)から四条とのお見合いは止めた方がいい、
+;△お見合い後、で散策にいったら見知らぬ人(華衣)から四条とのお見合いは止めた方がいい、
 ;四条は遊び人だ、と言われる(無くてもいいイベント)一回きり
 ;=======================お芝居の準備中です==========================================================================
 *sansaku
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-;[call target=*bonyou2 storage="sijyou/preload_sijyou.ks"]
-[call target=*end_sub storage="sijyou/preload_sijyou.ks"]
+[call target=*bonyou1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_sijyou.ks"]
+;[call target=*start storage="macro_tati_sijyou.ks"]
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
