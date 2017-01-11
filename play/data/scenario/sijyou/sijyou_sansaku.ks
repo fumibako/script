@@ -4,8 +4,8 @@
 ;=======================お芝居の準備中です==========================================================================
 *sansaku
 [stopbgm]
+[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="tyrano.ks"]
-[call target=*bonyou1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
