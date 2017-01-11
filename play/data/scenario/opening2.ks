@@ -1,4 +1,4 @@
-;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+﻿;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 ;	[skipstart]
 ;[endif]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
@@ -318,7 +318,7 @@ $('.junbi_girl').remove();
 *scene6
 #
 それに、父が選んだ人たちだ。[r]
-きっと[emb exp="sf.kouryaku_ninzuu_kansuuji"]人とも格式高い御家柄の方々だろう。[r]
+きっと三人とも格式高い御家柄の方々だろう。[r]
 何かあったら父に迷惑がかかるかもしれない。
 [autosave]
 [p]
@@ -692,7 +692,7 @@ f.kuroda_fumi1_midoku = 0;
 [font color=white size=0][r]【 『(仮)財前 美彬』を選択 】[r][resetfont]
 [cm]
 ;背景変更:手紙
-[chara_mod name="bg" storage="bg/bg_tegami_zaizen.jpg" time=100]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
@@ -709,7 +709,6 @@ f.kuroda_fumi1_midoku = 0;
 [wait time=10]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
-（仮）[r]
 [名字] [名前]様[r]
 [r]
 謹啓　春暖の候、皆様ますますご清栄のこととお喜び申し上げます。[r]
@@ -739,7 +738,7 @@ f.zaizen_fumi1_midoku = 0;
 *kaori_fumi1b
 [font color=white size=0][r]【 『四条 華織』を選択 】[r][resetfont]
 [cm]
-[chara_mod name="bg" storage="bg/bg_tegami_kaori.jpg" time=100]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
