@@ -225,9 +225,20 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
+[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 ;葛城宮 "Hidetsugu Tonomura 様" "Karen Roe 様" "Takashi .M 様"
+[mtext name=cc text="flickr :Hidetsugu Tonomura 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc text="flickr :Karen Roe 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :Takashi .M 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+;スキップ時に残るのを防止
+[freeimage layer=27]
+[layopt layer=27 visible=true]
+
+
 ;藤枝 "[◉”] Enrique Céspedes 様" "jeaneeem 様" "Taber Andrew Bain 様" "Ching 様" "kiukey 様" "Thomas Kohler 様" "田中十洋 様" 
-"coloredby 様" "Kevin Doncaster 様" "David Sanz 様"
+"財前coloredby 様" "Kevin Doncaster 様" "David Sanz 様"
+;"gertrud 様" "Michael Gras, M.Ed. 様" "yoppy 様" "__U___ 様" "田中十洋 様" "Herry Lawford 様" "けんたま 様" "Cj Hughson 様"
+;"James Cridland 様" "
 
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
