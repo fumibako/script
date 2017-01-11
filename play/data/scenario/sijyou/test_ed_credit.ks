@@ -225,6 +225,8 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
+;葛城宮 "Hidetsugu Tonomura 様" "Karen Roe 様" "Takashi .M 様"
+
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
 ;フェードアウトして消します
