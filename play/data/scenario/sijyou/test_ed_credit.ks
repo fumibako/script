@@ -230,15 +230,48 @@ $('.omoide1').remove();
 [mtext name=cc text="flickr :Hidetsugu Tonomura 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
 [mtext name=cc text="flickr :Karen Roe 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 [mtext name=cc text="flickr :Takashi .M 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+
+;スキップ時に残るのを防止
+[freeimage layer=27]
+[layopt layer=27 visible=true]
+
+[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+;藤枝 "flickr :[◉”] Enrique Céspedes 様" "jeaneeem 様" "Taber Andrew Bain 様" "Ching 様" "kiukey 様" "Thomas Kohler 様" "田中十洋 様（あるので省略）" 
+[mtext name=cc text="flickr :［◉”］Enrique Céspedes 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc text="flickr :jeaneeem 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :Ching 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :kiukey 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :Thomas Kohler 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
+
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
 
-;藤枝 "[◉”] Enrique Céspedes 様" "jeaneeem 様" "Taber Andrew Bain 様" "Ching 様" "kiukey 様" "Thomas Kohler 様" "田中十洋 様" 
-"財前coloredby 様" "Kevin Doncaster 様" "David Sanz 様"
-;"gertrud 様" "Michael Gras, M.Ed. 様" "yoppy 様" "__U___ 様" "田中十洋 様" "Herry Lawford 様" "けんたま 様" "Cj Hughson 様"
-;"James Cridland 様" "
+[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+;財前"coloredby 様" "David Sanz 様" "gertrud 様" "Michael Gras, M.Ed. 様" "yoppy 様" 
+[mtext name=cc text="flickr :coloredby 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc text="flickr :David Sanz 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :gertrud 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :Michael Gras, M.Ed. 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :yoppy 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
+
+;スキップ時に残るのを防止
+[freeimage layer=27]
+[layopt layer=27 visible=true]
+
+[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+;"__U___ 様" "Herry Lawford 様" "けんたま 様" "Cj Hughson 様" "James Cridland 様" "田中十洋 様" 
+[mtext name=cc text="flickr :__U___ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :Herry Lawford 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :けんたま 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :Cj Hughson 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :James Cridland 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
+[mtext name=cc text="＠名無しさん１" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color="&tf.fc" wait=true]
+
+;スキップ時に残るのを防止
+[freeimage layer=27]
+[layopt layer=27 visible=true]
 
 ;透明化
 [kanim keyframe="not_opcy" name="omoide1" time=5000]
@@ -315,9 +348,13 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-;ここではキャラ画像ないと背景画像と勘違いされそうですね
-[mtext name=cc text="キャラクターグラフィック" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
+
+[mtext name=cc text="キャラクターグラフィック/黒田・四条" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+;ここ名前を表示していいのか
+[mtext name=cc text="キャラクターグラフィック/財前・葛城宮・藤枝" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
+[mtext name=cc text="◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+
 ;最後wait=true
 
 ;スキップ時に残るのを防止
@@ -325,16 +362,9 @@ $('.omoide1').remove();
 [layopt layer=27 visible=true]]
 
 [mtext name=cc text="シナリオ" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
-;最後wait=true
-
-;スキップ時に残るのを防止
-[freeimage layer=27]
-[layopt layer=27 visible=true]
-
-[mtext name=cc text="シナリオ" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
-;全シナリオのクレジット？　テストですが
+[mtext name=cc text="黒田 :◆8EASfQr/2Q ◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc text="財前・葛城宮・藤枝:◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
+[mtext name=cc text="四条・編集(財前・葛城宮・藤枝)：＠名無しさん１" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
