@@ -72,17 +72,20 @@
 [s]
 [endif]
 [clearfix]
-[locate x=350 y=549]
-[button name="okeiko_sadou" fix=true graphic="button_okeiko_sadou.png" target=*okeiko_sadou]
+[locate x=330 y=549]
+[button name="okeiko_sadou" fix=true graphic="button_okeiko_sadou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_sadou]
 [wait time=10]
-[locate x=470 y=549]
-[button name="okeiko_kadou" fix=true graphic="button_okeiko_kadou.png" target=*okeiko_kadou]
+[locate x=430 y=549]
+[button name="okeiko_kadou" fix=true graphic="button_okeiko_kadou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_kadou]
 [wait time=10]
-[locate x=590 y=549]
-[button name="okeiko_reihou" fix=true graphic="button_okeiko_reihou.png" target=*okeiko_reihou]
+[locate x=530 y=549]
+[button name="okeiko_reihou" fix=true graphic="button_okeiko_reihou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_reihou]
 [wait time=10]
-[locate x=710 y=549]
-[button name="okeiko_gogaku" fix=true graphic="button_okeiko_gogaku.png" target=*okeiko_gogaku]
+[locate x=630 y=549]
+[button name="okeiko_gogaku" fix=true graphic="button_okeiko_gogaku.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_gogaku]
+[wait time=10]
+[locate x=730 y=549]
+[button name="okeiko_koto" fix=true graphic="button_okeiko_koto.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_koto]
 [wait time=10]
 [locate x=852 y=533]
 [button name="okeiko_qk" fix=true graphic="button_okeiko_qk.png" storage="okeiko.ks" target=*okeiko_qk]
@@ -115,12 +118,15 @@
 [eval exp="f.okeikopart_serifu_okeiko_owari=1"]
 
 [iscript]
-f.okeiko_para_pre_random_1_3=Math.floor(Math.random() * 3 + 1);
-f.okeiko_para_pre_random_1_2=Math.floor(Math.random() * 2 + 1);
-f.okeiko_para_pre_random_1_2b=parseInt((Math.floor(Math.random() * 3)+Math.floor(Math.random() * 2))/2);
-f.okeiko_para_pre_random_1_2c=parseInt((Math.floor(Math.random() * 2)+Math.floor(Math.random() * 3))/2);
-//↓各お稽古科目熟練度。調整中です(今は1～3でランダム)
-f.okeiko_para_pre_random_jukurendo=Math.floor(Math.random() * 3 + 1);
+//↓淑女度上昇値(ランダムで1～2)
+f.okeiko_para_pre_random_1_2=Math.floor(Math.random() * 2) + 1;
+//↓各お稽古科目熟練度。調整中です(ランダムで1～3)
+f.okeiko_para_pre_random_jukurendo=Math.floor(Math.random() * 3)+ 1;
+//↓茶道他お稽古での気力・体力上昇値(ランダムで1～3)
+f.okeiko_para_pre_random_1_3=Math.floor(Math.random() * 3) + 1;
+//↓お箏の時のみ気力又は体力どちらかが上昇する(0=体力、1=気力)当初両方上昇案で実装しましたが、よりシンプルに変更
+f.okeiko_para_0tairyoku_1kiryoku=Math.floor(Math.random() * 2);
+//↓以下各パラメーター処理
 f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo+f.okeiko_para_pre_random_1_2;
 if(f.okeiko_kamoku=='sadou'||f.okeiko_kamoku=='reihou'){
 	if(f.para_shujinkou_tairyoku_max > 96){
@@ -131,8 +137,16 @@ if(f.okeiko_kamoku=='sadou'||f.okeiko_kamoku=='reihou'){
 		f.para_shujinkou_tairyoku_max=f.para_shujinkou_tairyoku_max+f.okeiko_para_pre_random_1_3;
 	}else if(f.para_shujinkou_tairyoku_max < 97){
 		f.para_shujinkou_tairyoku_max=f.para_shujinkou_tairyoku_max+f.okeiko_para_pre_random_1_3;
-		if(f.okeiko_kamoku=='sadou'){f.para_shujinkou_j_sadou = f.para_shujinkou_j_sadou + f.okeiko_para_pre_random_jukurendo;}
-		if(f.okeiko_kamoku=='reihou'){f.para_shujinkou_j_reihou = f.para_shujinkou_j_reihou + f.okeiko_para_pre_random_jukurendo;}
+	}
+	if(f.okeiko_kamoku=='sadou'){
+		if(f.para_shujinkou_j_sadou >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
+		if(f.para_shujinkou_j_sadou >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+		f.para_shujinkou_j_sadou = f.para_shujinkou_j_sadou + f.okeiko_para_pre_random_jukurendo;
+	}
+	if(f.okeiko_kamoku=='reihou'){
+		if(f.para_shujinkou_j_reihou >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
+		if(f.para_shujinkou_j_reihou >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+		f.para_shujinkou_j_reihou = f.para_shujinkou_j_reihou + f.okeiko_para_pre_random_jukurendo;
 	}
 }
 if(f.okeiko_kamoku=='kadou'||f.okeiko_kamoku=='gogaku'){
@@ -144,37 +158,52 @@ if(f.okeiko_kamoku=='kadou'||f.okeiko_kamoku=='gogaku'){
 		f.para_shujinkou_kiryoku_max=f.para_shujinkou_kiryoku_max+f.okeiko_para_pre_random_1_3;
 	}else if(f.para_shujinkou_kiryoku_max < 97){
 		f.para_shujinkou_kiryoku_max=f.para_shujinkou_kiryoku_max+f.okeiko_para_pre_random_1_3;
-		if(f.okeiko_kamoku=='kadou'){f.para_shujinkou_j_kadou = f.para_shujinkou_j_kadou + f.okeiko_para_pre_random_jukurendo;}
-		if(f.okeiko_kamoku=='gogaku'){f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + f.okeiko_para_pre_random_jukurendo;}
+	}
+	if(f.okeiko_kamoku=='kadou'){
+		if(f.para_shujinkou_j_kadou >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
+		if(f.para_shujinkou_j_kadou >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+		f.para_shujinkou_j_kadou = f.para_shujinkou_j_kadou + f.okeiko_para_pre_random_jukurendo;
+	}
+	if(f.okeiko_kamoku=='gogaku'){
+		f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + f.okeiko_para_pre_random_jukurendo;
+		if(f.para_shujinkou_j_gogaku >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
+		if(f.para_shujinkou_j_gogaku >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
 	}
 }
-//箏…体力、気力両方がランダムで上がる(0～2の間のランダム数。様子を見て調整)
-if(f.okeiko_kamoku=='koto'){
+//箏…体力、気力どちらかがランダムで上がる
+if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==0){
 	if(f.para_shujinkou_tairyoku_max > 96){
-		f.okeiko_para_pre_random_1_2b = 1;
+		f.okeiko_para_pre_random_1_3 = 1;
 		if(f.para_shujinkou_tairyoku_max > 99){
-			f.okeiko_para_pre_random_1_2b = 0;
+			f.okeiko_para_pre_random_1_3 = 0;
 		}
-		f.para_shujinkou_tairyoku_max=f.para_shujinkou_tairyoku_max+f.okeiko_para_pre_random_1_2b;
+		f.para_shujinkou_tairyoku_max=f.para_shujinkou_tairyoku_max+f.okeiko_para_pre_random_1_3;
 	}else if(f.para_shujinkou_tairyoku_max < 97){
-		f.para_shujinkou_tairyoku_max=f.para_shujinkou_tairyoku_max+f.okeiko_para_pre_random_1_2b;
+		f.para_shujinkou_tairyoku_max=f.para_shujinkou_tairyoku_max+f.okeiko_para_pre_random_1_3;
 	}
-	
+	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
+	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+	f.para_shujinkou_j_koto = f.para_shujinkou_j_koto + f.okeiko_para_pre_random_jukurendo;
+}
+if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==1){
 	if(f.para_shujinkou_kiryoku_max > 96){
-		f.okeiko_para_pre_random_1_2c = 1;
+		f.okeiko_para_pre_random_1_3 = 1;
 		if(f.para_shujinkou_kiryoku_max > 99){
-			f.okeiko_para_pre_random_1_2c = 0;
+			f.okeiko_para_pre_random_1_3 = 0;
 		}
-		f.para_shujinkou_kiryoku_max=f.para_shujinkou_kiryoku_max+f.okeiko_para_pre_random_1_2c;
+		f.para_shujinkou_kiryoku_max=f.para_shujinkou_kiryoku_max+f.okeiko_para_pre_random_1_3;
 	}else if(f.para_shujinkou_kiryoku_max < 97){
-		f.para_shujinkou_kiryoku_max=f.para_shujinkou_kiryoku_max+f.okeiko_para_pre_random_1_2c;
+		f.para_shujinkou_kiryoku_max=f.para_shujinkou_kiryoku_max+f.okeiko_para_pre_random_1_3;
 	}
-		f.para_shujinkou_j_koto = f.para_shujinkou_j_koto + f.okeiko_para_pre_random_jukurendo;
+	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
+	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+	f.para_shujinkou_j_koto = f.para_shujinkou_j_koto + f.okeiko_para_pre_random_jukurendo;
 }
 
 f.para_shujinkou_tairyoku_now = f.para_shujinkou_tairyoku_now - f.okeiko_hituyou_tairyoku;
 f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_now - f.okeiko_hituyou_kiryoku;
 
+//↓以下表示内容処理
 if(f.okeiko_para_pre_random_1_3==0){
 	f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'上がりました';
 	f.okeiko_seika_txt2='';
@@ -192,9 +221,15 @@ if(f.okeiko_para_pre_random_1_3==0){
 		}else{ f.okeiko_seika_txt2='上がりました'; }
 	}
 }
-//↓箏についてはテスト可能となってから調整予定です
-if(f.okeiko_kamoku=='koto'){
-	f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2b+'、気力最大値が'+f.okeiko_para_pre_random_1_2c;
+//↓箏
+if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==0){
+	f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'、体力最大値が'+f.okeiko_para_pre_random_1_3;
+	if(f.okeiko_para_pre_random_jukurendo > 0){
+		f.okeiko_seika_txt2=f.okeiko_kamoku_j+'の熟練度が'+f.okeiko_para_pre_random_jukurendo+'上がりました';
+	}else{ f.okeiko_seika_txt2='上がりました'; }
+}
+if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==1){
+	f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'、気力最大値が'+f.okeiko_para_pre_random_1_3;
 	if(f.okeiko_para_pre_random_jukurendo > 0){
 		f.okeiko_seika_txt2=f.okeiko_kamoku_j+'の熟練度が'+f.okeiko_para_pre_random_jukurendo+'上がりました';
 	}else{ f.okeiko_seika_txt2='上がりました'; }
@@ -206,7 +241,7 @@ if(f.okeiko_kamoku=='koto'){
 [ptext text=&f.okeiko_seika_txt2 layer=27 size=23 x=300 y=85 color=darkslateblue bold=bold]
 ;【SE】キラキラ
 [playse storage=kira.ogg loop=false ]
-[wait time=1500]
+[wait time=2000]
 
 
 ;◆お稽古終わり。イメージ画像を消す

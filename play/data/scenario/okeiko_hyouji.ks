@@ -199,7 +199,22 @@ $('.junbi_girl').remove();
 [endif]
 
 *sijyou_test_hyouji_owari
+;◆◆テスト表示
+[if exp="(tf.test_gamen==true && tf.test_gamen_sijyou==false)"]
+@layopt layer=message1 page=fore visible = false
+[current layer="message1"]
+;メッセージレイヤサイズをテスト表示用に設定変更
+[position layer=message1 left=0 width=500 height=120 top=120 page=fore color=white opacity=150]
+@layopt layer=message1 page=fore visible = true
+[font color=glay size=15]
+f.okeiko_para_0tairyoku_1kiryoku=[emb exp="f.okeiko_para_0tairyoku_1kiryoku"]
+;↓他ルートテスト用に準備中です
+;攻略対象名テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_oaite_name_fumi_hensin_speed"],好感度[emb exp="f.para_oaite_name_koukando"][r]
+;攻略対象名ルート(1○,0×)=[emb exp="f.oaite_name_au"],お見合い(1後,0未)=[emb exp="f.oaite_name_omiai"][r]
 
+[resetfont]
+[endif]
+*test_hyouji_owari
 [if exp="f.event_advice == 0"]
 @jump target=*button_back_test
 [endif]

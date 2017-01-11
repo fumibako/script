@@ -15,7 +15,7 @@ f.para_shujinkou_kiryoku_max=10;
 f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_max;
 f.para_shujinkou_exp_sadou=0;
 f.count_qk = 0;
-
+;↓各お稽古科目熟練度Max値
 f.para_shujinkou_jukuren_max=100;
 f.para_shujinkou_j_sadou=0;
 f.para_shujinkou_j_kadou=0;
