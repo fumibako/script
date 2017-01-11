@@ -20,12 +20,37 @@
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです==================================================================
 #
-町に出た。[p]
+町に出た。[r]
+絵画店の前には、様々な花の絵が飾られている。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
+（私も、絵画に励んでみようかしら）[p]
+;【SE】ザッ(衣擦れ)
+[playse storage=za_kinuzure.ogg loop=false ]
+[主人公驚]
+[quake count=1 time=100 hmax=1 vmax=1]
+[whosay name="？？？" color=%mp.color]
+「！」[p]
+#
+美しい絵画に夢中になっていると、前から歩いてきた少年とぶつかってしまった。[p]
+;手に持っていた絵画教本が地面に落ち、栞が飛び出す。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公憂い]
+「！　ごめんなさい」[p]
+#
+慌てて謝るが、ぶつかった相手は、睨み顔で思わぬことを言い出した。[p]
 [whosay name="？？？" color=%mp.color]
 「四条家の華織は遊び人だ、お見合いはやめておくんだな」[p]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ？」[p]
+;【SE】走り去る(屋外)
+[playse storage=run_soto.ogg loop=false ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (いってしまいまわれました)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
