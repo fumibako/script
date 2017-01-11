@@ -353,7 +353,7 @@ $('.omoide1').remove();
 [mtext name=cc text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
 ;ここ名前を表示していいのか
 [mtext name=cc text="キャラクターグラフィック/財前・葛城宮・藤枝" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
-[mtext name=cc text="◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc text="◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=false]
 
 ;最後wait=true
 
