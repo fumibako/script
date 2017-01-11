@@ -41,7 +41,7 @@ _　　　　　　・・・読込中・・・[r]
 _　　　　　　　　  40%
 
 [iscript]
-f.preload_images_title3 = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_futuu.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/mayu_komari.png","data/fgimage/girl/S/mayu_tuyoki.png","data/fgimage/girl/S/mayu_sage.png","data/fgimage/girl/S/emo_hohosome.png","data/fgimage/bg/bg_prologue.jpg","data/fgimage/bg/bg_prologue_dark.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png"];
+f.preload_images_title3 = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_futuu.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/mayu_komari.png","data/fgimage/girl/S/mayu_tuyoki.png","data/fgimage/girl/S/mayu_sage.png","data/fgimage/girl/S/emo_hohosome.png","data/fgimage/bg/bg_prologue.jpg","data/fgimage/bg/bg_prologue_dark.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/girl/S/girl_all_yubi_me_toji_mayu_yowa_ase.png","data/fgimage/girl/S/girl_all_yubi_me_fusi_mayu_yowa_ase.png","data/fgimage/girl/S/girl_all_me_futuu_mayu_futuu.png","data/fgimage/girl/S/girl_all_me_toji_mayu_komari.png","data/fgimage/girl/S/girl_all_me_toji_mayu_soft.png","data/fgimage/girl/S/girl_all_me_toji_mayu_futuu.png"];
 [endscript]
 [preload storage=&f.preload_images_title3 wait=true]
 [cm]
@@ -51,7 +51,7 @@ _　　　　　　　　  60%
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
-f.preload_images1 = ["data/fgimage/girl/S/me_futuu.png","data/fgimage/girl/S/me_fusi1.png","data/fgimage/girl/S/me_fusi2.png","data/fgimage/girl/S/me_toji.png","data/fgimage/girl/S/me_niko.png","data/fgimage/girl/S/me_ake.png","data/fgimage/girl/S/me_yoko.png","data/fgimage/girl/S/me_yokofusi1.png","data/fgimage/girl/S/me_yokofusi2.png","data/fgimage/girl/S/kuti_futuu.png","data/fgimage/girl/S/kuti_ake.png","data/fgimage/girl/S/kuti_hohoemi.png","data/fgimage/girl/S/kuti_ooake.png","data/fgimage/girl/S/kuti_warau.png","data/fgimage/girl/S/kuti_warau_s.png","data/fgimage/girl/S/kuti_otyobo.png"];
+f.preload_images1 = ["data/fgimage/girl/S/me_futuu.png","data/fgimage/girl/S/me_fusi1.png","data/fgimage/girl/S/me_fusi2.png","data/fgimage/girl/S/me_toji.png","data/fgimage/girl/S/me_niko.png","data/fgimage/girl/S/me_ake.png","data/fgimage/girl/S/me_yoko.png","data/fgimage/girl/S/me_yokofusi1.png","data/fgimage/girl/S/me_yokofusi2.png","data/fgimage/girl/S/kuti_futuu.png","data/fgimage/girl/S/kuti_ake.png","data/fgimage/girl/S/kuti_hohoemi.png","data/fgimage/girl/S/kuti_ooake.png","data/fgimage/girl/S/kuti_warau.png","data/fgimage/girl/S/kuti_warau_s.png","data/fgimage/girl/S/kuti_otyobo.png","data/fgimage/button/qk_anim01.png","data/fgimage/button/qk_anim02.png","data/fgimage/button/qk_anim03.png"];
 [endscript]
 [preload storage=&f.preload_images1 wait=true]
 [cm]
@@ -61,7 +61,7 @@ _　　　　　　　　  80%
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
-f.preload_images2 = ["data/fgimage/message_bg/frame_red.png","data/fgimage/message_bg/frame_brown.png","data/fgimage/girl/L/base.png","data/fgimage/girl/L/mayu_futuu.png","data/fgimage/girl/L/me_futuu.png","data/fgimage/girl/L/kuti_futuu.png","data/fgimage/bg/room_niwa.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/bg/bg_machi.jpg"];
+f.preload_images2 = ["data/fgimage/message_bg/frame_red.png","data/fgimage/message_bg/frame_brown.png","data/fgimage/girl/L/base.png","data/fgimage/girl/L/mayu_futuu.png","data/fgimage/girl/L/me_futuu.png","data/fgimage/girl/L/kuti_futuu.png","data/fgimage/bg/room_niwa.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/bg/bg_machi.jpg","data/fgimage/girl/L/gitl_L_all_futuu.png","data/fgimage/girl/L/girl_L_all_futuu_me_toji.png","data/fgimage/button/okeiko_koto.png","data/fgimage/button/okeiko_sadou.png","data/fgimage/button/okeiko_kadou.png","data/fgimage/button/okeiko_reihou.png","data/fgimage/button/okeiko_gogaku.png"];
 //ver3.41ではエラーが出るのでコメントアウト。verup時に再度試すことf.preload_bgms = ["data/bgm/prologue_kotonisakuhana.m4a","data/bgm/isono_miyabi.m4a"];
 [endscript]
 [preload storage=&f.preload_images2 wait=true]

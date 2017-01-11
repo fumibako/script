@@ -31,6 +31,10 @@
 
 ;◆描画処理終了
 *draw_owari
+
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+
 [s]
 
 
@@ -43,6 +47,11 @@
 ;◆イベント判定(週終わり：エンディングイベントなどの判定処理リスト)へ飛んで戻ってくる
 @jump storage="event_hantei_week_owari.ks" target=*start
 *event_hantei_week_owari_owari
+
+;◆「休憩中」画像切り替え
+[freeimage layer = 26]
+[layopt layer=26 visible=true]
+[image layer=26 x=334 y=155 storage="button/qk_anim02.png"]
 
 *okeiko_qk_shori
 ;◆休憩処理続き
@@ -165,10 +174,18 @@ f.sijyou_fumi_toutyakumachi_sports = f.sijyou_fumi_toutyakumachi_sports - 1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_all
 
 *qk_end
+
 ;週始めを示す変数に1を代入(0=週始め以外を示す)
 [eval exp="f.okeikopart_shuuhajime=1"]
-;◆月始めのみ…背景変更:月始め切り替え背景
+;◆「休憩中」画像切り替え
+[freeimage layer = 26]
+[layopt layer=26 visible=true]
+[image layer=26 x=334 y=155 storage="button/qk_anim03.png"]
+
 [if exp="f.tukihajime == 1"]
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+;◆月始めのみ…背景変更:月始め切り替え背景
 [eval exp="f.okeiko_bg_tukihajime = 'bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
 [chara_mod name="bg" storage=&f.okeiko_bg_tukihajime]
 [eval exp="f.tukihajime = 0"]
@@ -176,6 +193,7 @@ f.sijyou_fumi_toutyakumachi_sports = f.sijyou_fumi_toutyakumachi_sports - 1;
 [playse storage=tori_suzume.ogg loop=false ]
 [wait time=1000]
 [endif]
+
 ;◆イベント判定(週始め)へ
 @jump target=*event_hantei_week_hajime
 
