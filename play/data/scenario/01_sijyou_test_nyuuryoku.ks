@@ -83,6 +83,11 @@ f.sijyou_event6 = parseInt($("input[name='f.sijyou_event6']").val());
 tf.edit_sobo = parseInt($("input[name='tf.edit_sobo']").val());
 f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
+f.para_shujinkou_sadou = parseInt($("input[name='f.para_shujinkou_sadou']").val());
+f.para_shujinkou_kadou = parseInt($("input[name='f.para_shujinkou_kadou']").val());
+f.para_shujinkou_reihou = parseInt($("input[name='f.para_shujinkou_reihou']").val());
+f.para_shujinkou_gogaku = parseInt($("input[name='f.para_shujinkou_gogaku']").val());
+f.para_shujinkou_koto = parseInt($("input[name='f.para_shujinkou_koto']").val());
 [endscript]
 ;1が入力されたときはf.sijyou_sobo==true　それ以外はfalse
 [if exp="tf.edit_sobo==1"]
