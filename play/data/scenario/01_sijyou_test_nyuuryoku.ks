@@ -30,9 +30,9 @@
 [edit left=180 top=360 width=50 length=200 maxchars=2 name="f.okeiko_week" height=20]
 [ptext text="週" layer=29 size=15 x=240 y=360 color=darkslateblue bold=bold]
 
+[ptext text="華道熟練度：" layer=29 size=15 x=600 y=110 color=darkslateblue bold=bold]
+[edit left=600 top=130 width=200 length=200 maxchars=2 name="f.para_shujinkou_sadou" height=20]
 
-[ptext text="華道熟練度：" layer=29 size=15 x=600 y=40 color=darkslateblue bold=bold]
-[edit left=500 top=60 width=200 length=200 maxchars=2 name="f.para_shujinkou_sadou" height=20]
 
 ;茶道熟練度
 ;[edit left=180 top=360 width=50 length=200 maxchars=2 name="f.para_shujinkou_sadou" height=20]
