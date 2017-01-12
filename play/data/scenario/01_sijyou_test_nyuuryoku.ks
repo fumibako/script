@@ -31,7 +31,7 @@
 [ptext text="週" layer=29 size=15 x=240 y=360 color=darkslateblue bold=bold]
 
 [ptext text="華道熟練度：" layer=29 size=15 x=400 y=90 color=darkslateblue bold=bold]
-[edit left=400 top=110 width=200 length=200 maxchars=2 name="f.para_shujinkou_kadou" height=20]
+[edit left=400 top=110 width=200 length=200 maxchars=3 name="f.para_shujinkou_kadou" height=20]
 
 [ptext text="茶道熟練度" layer=29 size=15 x=400 y=140 color=darkslateblue bold=bold]
 [edit left=400 top=160 width=200 length=200 maxchars=3 name="f.para_shujinkou_sadou" height=20]
@@ -40,7 +40,7 @@
 [edit left=400 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_reihou" height=20]
 
 [ptext text="語学熟練度：" layer=29 size=15 x=400 y=240 color=darkslateblue bold=bold]
-[edit left=400 top=260 width=200 length=200 maxchars=2 name="f.para_shujinkou_gogaku" height=20]
+[edit left=400 top=260 width=200 length=200 maxchars=3 name="f.para_shujinkou_gogaku" height=20]
 
 [ptext text="箏熟練度：" layer=29 size=15 x=400 y=290 color=darkslateblue bold=bold]
 [edit left=400 top=310 width=200 length=200 maxchars=3 name="f.para_shujinkou_koto" height=20]
