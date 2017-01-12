@@ -1,4 +1,4 @@
-﻿;=============================================
+﻿﻿;=============================================
 ;◆四条テスト画面用　設定入力
 ;テストしやすいように自由に変更してください
 ;=============================================
@@ -31,19 +31,19 @@
 [ptext text="週" layer=29 size=15 x=240 y=360 color=darkslateblue bold=bold]
 
 [ptext text="華道熟練度：" layer=29 size=15 x=400 y=90 color=darkslateblue bold=bold]
-[edit left=400 top=110 width=200 length=200 maxchars=3 name="f.para_shujinkou_kadou" height=20]
+[edit left=400 top=110 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_kadou" height=20]
 
 [ptext text="茶道熟練度" layer=29 size=15 x=400 y=140 color=darkslateblue bold=bold]
-[edit left=400 top=160 width=200 length=200 maxchars=3 name="f.para_shujinkou_sadou" height=20]
+[edit left=400 top=160 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
 
 [ptext text="礼法熟練度" layer=29 size=15 x=400 y=190 color=darkslateblue bold=bold]
-[edit left=400 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_reihou" height=20]
+[edit left=400 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_reihou" height=20]
 
 [ptext text="語学熟練度：" layer=29 size=15 x=400 y=240 color=darkslateblue bold=bold]
-[edit left=400 top=260 width=200 length=200 maxchars=3 name="f.para_shujinkou_gogaku" height=20]
+[edit left=400 top=260 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_gogaku" height=20]
 
 [ptext text="箏熟練度：" layer=29 size=15 x=400 y=290 color=darkslateblue bold=bold]
-[edit left=400 top=310 width=200 length=200 maxchars=3 name="f.para_shujinkou_koto" height=20]
+[edit left=400 top=310 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_koto" height=20]
 
 
 
@@ -58,15 +58,15 @@ $("input[name='tf.edit_sobo']").val("0"); //デフォルト値は1以外の仮�
 $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
 //茶道熟練度
-$("input[name='f.para_shujinkou_sadou']").val("0");
+$("input[name='f.para_shujinkou_j_sadou']").val("0");
 //華道熟練度
-$("input[name='f.para_shujinkou_kadou']").val("0");
+$("input[name='f.para_shujinkou_j_kadou']").val("0");
 //礼法熟練度
-$("input[name='f.para_shujinkou_reihou']").val("0");
+$("input[name='f.para_shujinkou_j_reihou']").val("0");
 //語学熟練度
-$("input[name='f.para_shujinkou_gogaku']").val("0");
+$("input[name='f.para_shujinkou_j_gogaku']").val("0");
 //お箏熟練度
-$("input[name='f.para_shujinkou_koto']").val("0");
+$("input[name='f.para_shujinkou_j_koto']").val("0");
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*test_settei_kettei x=150 y=400 width=100 height=100]
@@ -83,11 +83,11 @@ f.sijyou_event6 = parseInt($("input[name='f.sijyou_event6']").val());
 tf.edit_sobo = parseInt($("input[name='tf.edit_sobo']").val());
 f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
-f.para_shujinkou_sadou = parseInt($("input[name='f.para_shujinkou_sadou']").val());
-f.para_shujinkou_kadou = parseInt($("input[name='f.para_shujinkou_kadou']").val());
-f.para_shujinkou_reihou = parseInt($("input[name='f.para_shujinkou_reihou']").val());
-f.para_shujinkou_gogaku = parseInt($("input[name='f.para_shujinkou_gogaku']").val());
-f.para_shujinkou_koto = parseInt($("input[name='f.para_shujinkou_koto']").val());
+f.para_shujinkou_j_sadou = parseInt($("input[name='f.para_shujinkou_j_sadou']").val());
+f.para_shujinkou_j_kadou = parseInt($("input[name='f.para_shujinkou_j_kadou']").val());
+f.para_shujinkou_j_reihou = parseInt($("input[name='f.para_shujinkou_j_reihou']").val());
+f.para_shujinkou_j_gogaku = parseInt($("input[name='f.para_shujinkou_j_gogaku']").val());
+f.para_shujinkou_j_koto = parseInt($("input[name='f.para_shujinkou_j_koto']").val());
 [endscript]
 ;1が入力されたときはf.sijyou_sobo==true　それ以外はfalse
 [if exp="tf.edit_sobo==1"]
