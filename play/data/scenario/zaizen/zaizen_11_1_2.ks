@@ -66,12 +66,12 @@
 
 ;==============================================================================
 [暗転２]
-; 背景パーティ会場控室
 [主人公眉下げ下]
 [主人公目伏]
 ;憂いまでの自然な切り替え表情
+;【背景］パーティ会場控室
 [chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [暗転２終了]
 ;==============================================================================
 
@@ -162,8 +162,8 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;【背景】洋館
-[image layer=29 x=1 y=1 storage="bg/zaizen_youkan.jpg" time=1300 visible=true]
+;【背景】洋館　全画面用
+[image layer=29 x=1 y=1 storage="bg/zaizen_youkan_zengamen.jpg" time=1300 visible=true]
 [wait time=10]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
@@ -181,7 +181,7 @@
 ;===============================================================
 ;【背景】呉服屋的な背景 　全画面文字のみ表示
 [image layer=29 x=1 y=1 storage="bg/zaizen_gofuku.jpg" time=1300 visible=true]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='― ― ―'"]
 ;===============================================================
 
 ;最大6~7行
@@ -217,6 +217,7 @@
 [resetfont]
 ;【背景】パーティ会場控室
 [chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
@@ -239,7 +240,7 @@
 [whosay name="財前母"]
 [主人公眉下げ下]
 [主人公口通常]
-「駆け落ちして暫く、貿易が盛んな港町に身を隠しました」[p]
+「駆け落ちして[ruby text=しばら]暫く、貿易が盛んな港町に身を隠しました」[p]
 [主人公憂い]
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
@@ -251,7 +252,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;【背景】港町的な背景
 [image layer=29 x=1 y=1 storage="bg/zaizen_minato.jpg" time=1300 visible=true]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='― ― ―'"]
 [wait time=10]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
@@ -276,6 +277,7 @@
 [resetfont]
 ;【背景】パーティ会場控室
 [chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=1000]
 ;メッセージレイヤを会話窓用に設定変更
@@ -304,7 +306,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;【背景】;呉服屋的な背景 
 [image layer=29 x=1 y=1 storage="bg/zaizen_gofuku.jpg" time=1300 visible=true]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='---'"]
 [wait time=10]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
@@ -338,6 +340,7 @@
 [resetfont]
 ;【背景】パーティ会場控室
 [chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 [表示準備 storage="bg/zaizen_paty_hikae.jpg"]
 [主人公憂い]
@@ -497,6 +500,7 @@
 #
 私は思わず財前様の手を取った。[r]
 そうでないと財前様が消えてしまいそうだと思ったから。[p]
+;そうしないと
 
 ;【立ち絵】主人公：悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
