@@ -176,8 +176,10 @@
 [preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true]
 ;【背景】パーティー会場
 [preload storage="data/fgimage/bg/test_zaizen_paty1.jpg" wait=true]
-;【背景】洋館 
+;【背景】洋館 BADにて使用
 [preload storage="data/fgimage/bg/zaizen_youkan.jpg" wait=true]
+;【背景】洋館 全画面
+[preload storage="data/fgimage/bg/zaizen_youkan_zengamen.jpg" wait=true]
 ;【背景】パーティ会場の庭
 [preload storage="data/fgimage/bg/test_zaizen_paty1.jpg" wait=true]
 ;【背景】呉服屋的な背景 
