@@ -344,8 +344,9 @@ $('.omoide1').remove();
 [eval exp="tf.top_y3=tf.top_y3+200"]
 [eval exp="tf.top_y4=tf.top_y4+200"]
 
-[mtext name=cc text="原案・企画" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc text="原案・企画" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y1" color="&tf.fc" in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
+
 ;最後wait=true
 
 ;スキップ時に残るのを防止
@@ -358,6 +359,7 @@ $('.omoide1').remove();
 ;ここ名前を表示していいのか
 [mtext name=cc text="キャラクターグラフィック/財前・葛城宮・藤枝" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext name=cc text="◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=false]
+[wait time=200]
 
 ;最後wait=true
 
