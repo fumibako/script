@@ -353,10 +353,8 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-
-[mtext name=cc text="キャラクターグラフィック/黒田・四条" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-;ここ名前を表示していいのか
+[mtext name=cc text="キャラクターグラフィック/黒田・四条" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y1" color="&tf.fc" in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc text="かいこ" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true ]
 [mtext name=cc text="キャラクターグラフィック/財前・葛城宮・藤枝" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext name=cc text="◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=false]
 [wait time=200]
