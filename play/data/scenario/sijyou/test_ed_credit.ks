@@ -343,6 +343,8 @@ $('.omoide1').remove();
 [eval exp="tf.top_y2=tf.top_y2+100"]
 [eval exp="tf.top_y3=tf.top_y3+100"]
 [eval exp="tf.top_y4=tf.top_y4+100"]
+;横X位置変更
+[eval exp="tf.left_x=200"]
 
 [mtext name=cc text="原案・企画" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y1" color="&tf.fc" in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
