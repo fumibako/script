@@ -39,7 +39,7 @@
 「[名前]さん、礼を言いましょう。[r]
 [sp]この件については、すっきりしました。[r]
 [sp]だが、貴方との婚約は破棄します」[p]
-
+;ですが
 ;【立ち絵】主人公：驚き
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -79,25 +79,50 @@
 
 #
 その夜、私は沢山泣いて実感した。[r]
-ー財前様に惹かれていたという事を。[p]
+―― 財前様に惹かれていたという事を。[p]
 
-[テキスト全画面白文字暗]
-ー３年後[p]
+;==========================スクリプト・全画面表示の間に設定===============================
+#
+;【テキスト全画面】 裏で画面構成 ;[新聞] test_bg_sinbun.jpg bg_prologue_dark.jpg　bg_prologue.jpg
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:黒茶・和紙風 bg_prologue.jpg
+[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[wait time=10]
+[主人公通常]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
+―― ３年後[p]
 #
 その後財前様は私との婚約を破棄し、[r]
 別の方と結婚し、[r]
 私はまだ誰とも結婚せずにいた[p]
-[イベントシーン構築]
-[主人公ポーズ通常]
-[主人公通常]
 [fadeoutbgm time=3000]
-
+;==========================スクリプト・全画面表示からの復帰準備========================================
+;メッセージをもどします
+[resetfont]
+;ｸﾘｯｸがみえる場合は追加↓
+;[layopt layer=message0 visible=false]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;ｸﾘｯｸがみえる場合は追加↓
+;[layopt layer=message0 visible=true]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+;[call target=*start storage="macro_tati_zaizen.ks"]
+[cm]
+;==========================スクリプト・全画面表示からの復帰準備========================================
+#
 ;[背景洋館]
 独逸大使邸[p]
-[chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[主人公通常]
-#
 私は財前様のお母様と手紙のやりとりをしていて[r]
 誕生日パーティに呼ばれた。[p]
 [if exp="sf.BGM=='ON'"]
