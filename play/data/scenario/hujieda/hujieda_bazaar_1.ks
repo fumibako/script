@@ -11,8 +11,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】背景ミルクホール
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1_1.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　― ― ―'"]
 [プリロード画面消去]
 ;=========================================================================
 ;==========================スクリプト・全画面表示の間に設定===============================
