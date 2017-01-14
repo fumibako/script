@@ -1,6 +1,7 @@
 ;=============================================
 ;◆チャリティーバザー◆3月1週から３月3週まで琴パラが高い藤枝ルート
 ;=======================お芝居の準備中です==================================
+*first_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*hujieda_bazaar_2 storage="hujieda/preload_hujieda.ks]
@@ -8,6 +9,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
+*seen00
 ;【背景】ﾁｬﾘﾃｨｰ会場門前
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
