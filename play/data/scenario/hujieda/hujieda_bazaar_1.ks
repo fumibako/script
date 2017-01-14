@@ -20,7 +20,7 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;背景変更:華族会館全画面
+;背景変更:
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1_1.jpg" time=50 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
@@ -106,8 +106,8 @@
 
 [whosay name="藤枝 肇" color=%mp.color] 
 [藤枝憂い]
-「チャリティーバザーは、母がよく参加していましたし、協力したいですが、[r]
-[sp]仕事があります」[p]
+「チャリティーバザーは、母がよく参加していましたし、[r]
+[sp]協力したいですが、仕事があります」[p]
 
 [whosay name="財前美彬"]
 「その事は、私が話をつけましょう」[p]
@@ -150,8 +150,8 @@
 
 [whosay name="財前美彬"]
 「そうですか。[r]
-[sp]人の馴れ初めには興味ありませんが、彼女のお父上は[r]
-[sp]手紙を許しているのですか？」[p]
+[sp]人の馴れ初めには興味ありませんが、彼女のお父上は手紙を[r]
+[sp]許しているのですか？」[p]
 
 
 [whosay name="藤枝 肇" color=%mp.color] 
@@ -241,9 +241,10 @@
 [主人公退場]
 [fadeoutbgm time=2000]
 
+[暗転]
 @jump storage="hujieda/hujieda_bazaar_2.ks" target=*seen00
-
 [イベントシーン終了]
+
 @jump storage="test_hujieda.ks"
 [s]
 
