@@ -508,6 +508,8 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
+;【背景】:ミルクホール 全画面用　ピアノ
+[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_1_1.jpg" wait=true]
 ;【背景】:ミルクホール 立ち絵用　ピアノ
 [preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
 ;【背景】華族会館全画面
