@@ -240,7 +240,7 @@
 (……けれどまた近く藤枝様に会える。　それに合奏がとても楽しみだわ)[p]
 [主人公退場]
 [fadeoutbgm time=2000]
-
+#
 [暗転]
 @jump storage="hujieda/hujieda_bazaar_2.ks" target=*seen00
 [イベントシーン終了]
