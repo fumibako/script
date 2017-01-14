@@ -9,29 +9,50 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_hujieda.ks"]
+;[call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】背景ミルクホール
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築ボタン無し版枠茶色]
-#
-[藤枝ベース私服]
-[藤枝通常]
 [プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
 ;=========================================================================
-;早朝
-#
+;==========================スクリプト・全画面表示の間に設定===============================
+;【テキスト全画面】  [テキスト全画面白文字]裏で画面構成
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:華族会館全画面
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=50 visible=true]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore]
+;テキスト全画面
+[font color=white size=27]
+;==========================スクリプトここまで=========================================================
 朝霧かすむ早朝。[r]
 柔らかな陽ざしが入る開店前のミルクホール。[p]
-
-ピアノを演奏前の指ならしに弾いていると、一人の男性が声を掛けてきた。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】夕涼み（お稽古パートなど
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
+
+;==========================スクリプト・全画面表示からの復帰準備========================================
+[resetfont]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[call target=*start storage="macro_tati_hujieda.ks"]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+[イベントシーン構築ボタン無し版枠茶色]
+[藤枝ベース私服]
+[藤枝通常]
+[freeimage layer = 29 time=1000]
+[メッセージウィンドウ上ボタン表示]
+;==========================スクリプトここまで=========================================================
+
+ピアノを演奏前の指ならしに弾いていると、一人の男性が声を掛けてきた。[p]
 
 [whosay name=財前美彬]
 「藤枝君、久しぶりと言うべきところでしょうか[r]
