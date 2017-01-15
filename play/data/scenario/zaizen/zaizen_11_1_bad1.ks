@@ -7,9 +7,9 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
-;【背景】パーティ会場 の庭ではない？
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
-[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+;【背景］パーティ会場控室
+[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -204,13 +204,16 @@
 「[名前]さんにもまた心惹かれる殿方が、現れるといいわね」[p]
 
 ;【立ち絵】主人公：目伏せ微笑み
+[主人公眉下げ下]
+[主人公目伏]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、そうですね」[p]
 
 #
-―― お手紙の相手を探そうと思えば、お父様に頼んだらいい。[r]
-だけどまだ、そんな気持ちにはなれないのだ。[r]
-きっと、いつかは私も結婚するのだろうけど[p]
+―― お手紙の相手を探そうと思えば、お父様に頼んだらいい。[p]
+[主人公憂い]
+（まだそんな気持ちにはなれないわ。[r]
+[sp]けれど、いつかは私も結婚するのかしら）[p]
 ;================================================================================================
 ;【背景】空
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
