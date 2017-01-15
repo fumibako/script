@@ -555,7 +555,7 @@
 [主人公目伏]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「少し早いが[名前]が疲れても無理もない、[r]
-[sp][名前]は料亭も初めてだったな。」[p]
+[sp][名前]は料亭も初めてだったな」[p]
 「美彬君には少し失礼だが、ここでお開きにさせて頂こう」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
