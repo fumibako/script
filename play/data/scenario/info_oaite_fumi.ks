@@ -10,7 +10,6 @@
 [layopt layer=26 visible=true]
 [layopt layer=27 visible=true]
 [layopt layer=28 visible=true]
-[freeimage layer = 26]
 [eval exp="f.fumi_henjityu=0;"]
 [eval exp="f.kinou = 'fumibako'"]
 
@@ -18,7 +17,10 @@
 ;◆手紙一覧
 *fumi_all_page1
 [cm]
+[freeimage layer = 26]
+[freeimage layer = 27]
 [freeimage layer = 28]
+[layopt layer=28 visible=true]
 [eval exp="f.fumibako_now_page = 1"]
 [eval exp="f.viewing_target = '*fumi_all_page1'"]
 [call target=*fumibako_oaite_hyouji]

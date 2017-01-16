@@ -79,12 +79,12 @@ f.para_shujinkou_gogaku=f.para_shujinkou_j_gogaku + "/" + f.para_shujinkou_jukur
 f.para_shujinkou_koto=f.para_shujinkou_j_koto + "/" + f.para_shujinkou_jukuren_max;
 [endscript]
 
-;称号判定 お転婆娘→淑女度5「無垢な娘」→10「夢見る娘」→15「努力家の娘」→20「純真な娘」→30「愛らしい娘」→40「可憐な乙女」→50「花のような乙女」→60「深窓の乙女」→70「たおやかな乙女」→80「優美なる淑女」→90「気高き淑女」→100「麗しい淑女」→200「ミルトニアの淑女」
+;称号判定 お転婆娘→淑女度5「無垢な娘」→10「夢見る娘」→15「努力家の娘」→20「純真な娘」→30「愛らしい娘」→40「可憐な乙女」→50「花のような乙女」→60「深窓の乙女」→70「たおやかな乙女」→80「優美なる淑女」→90「気高き淑女」→100「麗しき淑女」→200「ミルトニアの淑女」
 ;◆B4nFWraU42さんの案を称号の一部にいただきました。ありがとうございます
 
 [iscript]
 if (f.para_shujinkou_shukujodo >= 200 ){f.shougou = "ミルトニアの淑女";}
-else if (f.para_shujinkou_shukujodo >= 100 ){f.shougou = "麗しい淑女";}
+else if (f.para_shujinkou_shukujodo >= 100 ){f.shougou = "麗しき淑女";}
 else if (f.para_shujinkou_shukujodo >= 90 ){f.shougou = "気高き淑女";}
 else if (f.para_shujinkou_shukujodo >= 80 ){f.shougou = "優美なる淑女";}
 else if (f.para_shujinkou_shukujodo >= 70 ){f.shougou = "たおやかな乙女";}
@@ -207,9 +207,11 @@ $('.junbi_girl').remove();
 [position layer=message1 left=0 width=500 height=120 top=120 page=fore color=white opacity=150]
 @layopt layer=message1 page=fore visible = true
 [font color=glay size=15]
-f.okeiko_para_0tairyoku_1kiryoku=[emb exp="f.okeiko_para_0tairyoku_1kiryoku"]
+f.okeiko_para_0tairyoku_1kiryoku=[emb exp="f.okeiko_para_0tairyoku_1kiryoku"][r]
+便せんの種類f.binsen_list_hairetsu［f.binsen_number]［0]=[emb exp="f.binsen_list_hairetsu[f.binsen_number][0]"]
 ;↓他ルートテスト用に準備中です
 ;攻略対象名テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_oaite_name_fumi_hensin_speed"],好感度[emb exp="f.para_oaite_name_koukando"][r]
+
 ;攻略対象名ルート(1○,0×)=[emb exp="f.oaite_name_au"],お見合い(1後,0未)=[emb exp="f.oaite_name_omiai"][r]
 
 [resetfont]
@@ -332,7 +334,7 @@ if(f.okeiko_month==6){
 }
 if(f.okeiko_month==7){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("夏雲の模様",0,0,2,0,1,"",7);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("夏雲の模様",0,0,2,0,1,7,8);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("清流に鮎の模様",1,0,0,-2,0,7,8);
 }
@@ -340,7 +342,7 @@ if(f.okeiko_month==8){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("ラムネ瓶の模様",0,0,2,0,1,"",8);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("向日葵の模様",1,0,0,-2,0,7,8);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("向日葵の模様",1,0,0,-2,0,8,);
 }
 if(f.okeiko_month==9){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
@@ -382,7 +384,7 @@ if(f.okeiko_month==3){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("雛飾りの模様",0,0,2,0,1,"",3);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("うぐいすの模様",1,0,0,-2,0,3,4);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("うぐいすの模様",1,0,0,-2,0,3);
 }
 f.binsen_toutyaku_info1="「"+f.binsen_list_hairetsu[f.binsen_hairetsu_number_a][0]+"」「"+f.binsen_list_hairetsu[f.binsen_hairetsu_number_b][0]+"」";
 f.binsen_toutyaku_info2="の便箋が選べるようになりました";
@@ -420,6 +422,8 @@ $('.junbi_girl').remove();
 ;青葉の模様,1,0,0,-2,0,,
 
 *fumi_hyouji
+;◆「休憩中」画像消去
+[freeimage layer = 26]
 ;◆手紙到着していたら表示
 [if exp="f.fumi_toutyaku == 0"]
 	[eval exp="f.tukihajime = 0"]

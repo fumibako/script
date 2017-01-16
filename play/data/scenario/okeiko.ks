@@ -32,9 +32,6 @@
 ;◆描画処理終了
 *draw_owari
 
-;◆「休憩中」画像消去
-[freeimage layer = 26]
-
 [s]
 
 
