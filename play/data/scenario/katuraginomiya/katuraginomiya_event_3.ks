@@ -447,8 +447,8 @@
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
 [freeimage layer = 29 time=1000]
-;一瞬手紙の後ろがみえるので　手紙皇后さま
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=50]
+;一瞬手紙の後ろがみえるので　手紙皇后さま→侍従
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=50]
 ;機能ボタン表示
 [layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更
