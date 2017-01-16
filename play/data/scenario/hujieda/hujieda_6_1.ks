@@ -18,6 +18,12 @@
 ;ゆっくり表示
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 ―― 夢を見た。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】「深雪白雪」
+[playbgm storage="miyuki.ogg" loop=true]
+[eval exp="f.bgm_storage='miyuki.ogg'"]
+[endif]
+
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 #
@@ -36,7 +42,7 @@
 
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（優しい音だわ）
+（優しい音だわ）[p]
 
 #
 白い霧が立ち込める中、声がした。[p]
