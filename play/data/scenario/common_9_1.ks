@@ -205,7 +205,7 @@
 「文奈、覚えているか？」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「文矢が文矢嫁君と見合いをしたのは９月の終わり頃だった……」[p]
+「文矢が見合いをしたのは９月の終わり頃だった……」[p]
 
 [主人公目パチ1回]
 [wait time=10]
