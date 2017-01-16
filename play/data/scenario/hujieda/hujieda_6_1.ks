@@ -61,6 +61,7 @@
 #
 [主人公目閉]
 光が差し、私は瞼を閉じた。[p]
+[fadeoutbgm time=3000]
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 ;【背景】主人公邸 部屋
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
