@@ -1,3 +1,7 @@
+;normal/good回想機能から再生用タグです。ひとまず並べて書いていますが、テスト結果次第で調整予定です(回想未テスト
+[setreplay name="replay_zaizen_3_4_normal_scene" storage="zaizen_3_4_normal.ks" target="start"]
+[setreplay name="replay_zaizen_3_4_good_scene" storage="zaizen_3_4_good.ks" target="start"]
+*start
 ;=============================================
 ;イベント10回目【財前母の誕生日パーティ】3月4週、
 ;=======================お芝居の準備中です==========================================
@@ -13,13 +17,13 @@
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
+
 #
 [主人公ポーズ通常]
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-
 [主人公ほほえみ]
 ;【立ち絵】主人公：微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -539,9 +543,15 @@ $("kan").css('margin','auto');
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+*bunki_to_good_or_other
+;◆goodED条件を満たす場合、goodへ
+[if exp="tf.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) &&( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good)"]
+@jump storage="zaizen/zaizen_3_4_good.ks" target="seen_1"
+;◆それ以外の場合はnormalED終了処理へ
+[elsif exp="tf.okeiko_gamen==true"]
+[財前ルート終了 end="normal"]
+[endif]
 @jump storage="test_zaizen.ks"
 [s]
 

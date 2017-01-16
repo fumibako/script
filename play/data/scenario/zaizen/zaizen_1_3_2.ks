@@ -8,6 +8,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
+;↓1_3_1からのjump先ラベルです。つながりが自然になるように、テキスト調整時に「数日後、財前邸にて」など地の文(全画面?)を入れる予定です
+*seen1
 ;【背景】洋館居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -159,9 +161,10 @@
 [layopt layer=message0 visible=false]
 ;[暗転２終了]
 ;===============================================================
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 @jump storage="test_zaizen.ks"
 [s]
 

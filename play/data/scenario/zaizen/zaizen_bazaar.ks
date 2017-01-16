@@ -1,5 +1,5 @@
 ;=================================================================================
-;◆チャリティーバザー◆２月１週から３月４週まで礼法が高い　財前ルート
+;◆チャリティーバザー◆２月１週から３月４週まで礼法が高い　財前ルート：散策イベント
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -340,9 +340,9 @@
 [wait time=10]
 [財前退場]
 ;【背景】バザー会場　売店　売り子場面　近景とは別枠にしないとおかしい
-[chara_mod name="bg" storage="bg/bg_cyarity4.jpg" time=50]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity4.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[表示準備 storage="bg/bg_cyarity4.jpg"]
+[表示準備 storage="bg/B4nFWraU42/bg_cyarity4.jpg"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -683,8 +683,10 @@
 [freeimage layer=29]
 [layopt layer=fix visible=true]
 
-;@jump storage="event.ks" target=*event_owari
-
+;↓散策イベントとして実装する際に、気力回復無しの終了方法とします(シリアスな物語内容のため、回復することや主人公セリフが合わないため)
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="sansaku.ks" target=*sansaku_owari
+[endif]
 @jump storage="test_katuragi.ks"
 [s]
 

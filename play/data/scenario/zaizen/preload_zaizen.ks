@@ -478,7 +478,7 @@
 ;【背景】背景バザー出店（遠景）
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity.jpg" wait=true]
 ;【背景】バザー会場　売店　売り子場面
-[preload storage="data/fgimage/bg/bg_cyarity4.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity4.jpg" wait=true]
 ;【背景】背景バザー出店（遠景）
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity.jpg" wait=true]
 ;【背景】背景バザー出店（入り口）

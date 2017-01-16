@@ -327,9 +327,8 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;====================================================================================
 ;終わり
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+[財前ルート終了 end="good"]
 @jump storage="test_zaizen.ks"
 [s]
 

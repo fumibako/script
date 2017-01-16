@@ -258,9 +258,10 @@
 胸が苦しい気持ちを打ち明けた時どう変わるのか怖い……。[p]
 #
 ;====================================================
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 @jump storage="test_zaizen.ks"
 [s]
 
