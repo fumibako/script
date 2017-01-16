@@ -433,8 +433,8 @@
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-;一瞬手紙の後ろがみえるので　手紙皇后さま
-[chara_mod name="bg" storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=50]
+;一瞬手紙の後ろがみえるので　手紙皇后さま→侍従
+[chara_mod name="bg" storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=50]
 ;一瞬見えるメッセージ枠を消したい
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;テキスト全画面
