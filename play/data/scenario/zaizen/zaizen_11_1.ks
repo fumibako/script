@@ -22,7 +22,6 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -476,7 +475,22 @@
 [endif]
 
 ;============================================================================================================
-;@jump storage="event.ks" target=*event_owari
+*sentaku_to_bad_or_other
+[if exp="tf.okeiko_gamen==true"]
+;Evernoteシナリオに書いていただいている選択肢による分岐処理です
+#
+どうしましょうか？
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=150 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color="white" size=32]
+[link storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"]帰　　る[endlink][r]
+[r][r][r]
+[link storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"]帰らない[endlink][r]
+[resetfont]
+[s]
+[endif]
 
 [イベントシーン終了]
 @jump storage="test_zaizen.ks"

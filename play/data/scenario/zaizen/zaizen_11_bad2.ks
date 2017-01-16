@@ -1,3 +1,6 @@
+;財前badについては、回想時にもっと前のシーンから再生させるかどうか考え中です。今のところbad分岐以降を回想可能としています(スクリプト担
+[setreplay name="replay_zaizen_11_bad2_scene" storage="zaizen_11_bad2.ks" target="start"]
+*start
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -21,6 +24,13 @@
 ;=====================ここからお芝居の幕引きです===============================
 *seen_1
 ;本編からここに飛んできます
+;↓本編選択肢後にメッセージレイヤを戻す処理です
+[if exp="tf.okeiko_gamen==true"]
+[cm]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[endif]
 ;===============
 ;【立ち絵】主人公：目伏せ悲しみ
 [主人公憂い]
@@ -155,9 +165,8 @@
 ;bad2終わり
 
 ;====================================================
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+[財前ルート終了 end="bad1"]
 @jump storage="test_zaizen.ks"
 [s]
 

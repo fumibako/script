@@ -1,4 +1,6 @@
-;
+;財前badについては、回想時にもっと前のシーンから再生させるかどうか考え中です。今のところbad分岐以降を回想可能としています(スクリプト担
+[setreplay name="replay_zaizen_11_1_bad1_scene" storage="zaizen_11_1_bad1.ks" target="start"]
+*start
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -229,9 +231,8 @@
 
 ;bad終了
 ;================================================================================================
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+[財前ルート終了 end="bad2"]
 @jump storage="test_zaizen.ks"
 [s]
 

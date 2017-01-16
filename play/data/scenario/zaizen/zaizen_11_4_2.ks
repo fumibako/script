@@ -7,6 +7,8 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+;11_4_1からのjump先ラベル。つながりが自然になるように、テキスト調整時に翌日である旨の(全画面?)地の文を入れる予定です(スクリプト担
+*seen1
 ;【背景】主人公邸_庭_昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -144,9 +146,10 @@
 「でも、きっと財前様なら道を切り開かれるわ」[p]
 
 ;======================================================================
-;@jump storage="event.ks" target=*event_owari
-
 [イベントシーン終了]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 @jump storage="test_zaizen.ks"
 [s]
 

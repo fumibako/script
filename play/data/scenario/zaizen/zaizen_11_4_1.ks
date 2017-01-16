@@ -357,8 +357,9 @@
 
 
 ;====================================================================================
-;@jump storage="event.ks" target=*event_owari
-
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="zaizen_11_4_2.ks" target=*seen1
+[endif]
 [イベントシーン終了]
 @jump storage="test_zaizen.ks"
 [s]
