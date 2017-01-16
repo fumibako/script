@@ -155,12 +155,14 @@ f.zaizen_fumi_toutyakumachi_week=0;
 f.zaizen_nextfumi_common=2;
 f.fumi_toutyaku_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 f.zaizen_au=0; //個別ルートに入ったら1を代入
+f.zaizen_koukando_bad=50; //(調整中)好感度がこの数値未満でbad2に。bad1は選択肢による分岐です
+f.zaizen_reihou_good=80; //(調整中)礼法熟練度がこの数値以上かつ好感度がkoukando_c以上でgoodEDに
 [endscript]
 
 ;葛城宮 晴仁
 [iscript]
 sf.katuraginomiya ={
-  "root":1,
+  "root":0,
   "code":"katuraginomiya",
   "myouji":"葛城宮",
   "namae":"1",
@@ -194,7 +196,7 @@ f.fumi_list_katuraginomiya_title = [];
 ;藤枝　肇
 [iscript]
 sf.hujieda ={
-  "root":1,
+  "root":0,
   "code":"hujieda",
   "myouji":"藤枝",
   "namae":"2",
