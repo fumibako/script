@@ -316,6 +316,7 @@ f.okeiko_para_0tairyoku_1kiryoku=[emb exp="f.okeiko_para_0tairyoku_1kiryoku"][r]
 ;◆月始めのみ：便箋追加
 ;【便箋追加】（↓可能なら文字色変更表示）
 [iscript]
+f.para_shujinkou_koto_kaisuu=0; //その月のお箏練習回数リセット
 f.binsen_hairetsu_number=f.binsen_list_hairetsu.length;
 f.binsen_hairetsu_number_a=f.binsen_hairetsu_number;
 f.binsen_hairetsu_number_b=f.binsen_hairetsu_number+1;

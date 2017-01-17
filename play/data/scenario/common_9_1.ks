@@ -1,4 +1,4 @@
-﻿﻿;=============================================
+﻿﻿﻿;=============================================
 ;◆顔合せのお相手選び： 9月1週になった時点で、攻略対象の好感度一定値以上なら1度だけ発生
 ;=============================================
 *replay_common_9_1
@@ -226,9 +226,12 @@
 ;【分岐】暫定的に各シナリオ9月1週へ飛ぶ処理を入れています(現状ではイベント後テストページに移動します。後日お稽古パートへ戻る処理を追記予定です)
 ;好感度と淑女度によるif分岐処理を追記予定です(スクリプト担
 [glink storage="kuroda_9_1.ks" target=*replay_kuroda_9_1 text="黒田様" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
-[glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
+[glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizenzaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
 [glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-
+;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
+[if exp="f.event_hujieda[5]=1"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=200 color=white]
+[endif]
 [glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=550 y=300 color=white]
 [autosave]
 [s]
@@ -319,6 +322,10 @@
 [glink storage="kuroda_9_1.ks" target=*replay_kuroda_9_1 text="黒田様" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
 [glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
 [glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
+[if exp="f.event_hujieda[5]=1"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=200 color=white]
+[endif]
 
 [glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=550 y=300 color=white]
 [autosave]

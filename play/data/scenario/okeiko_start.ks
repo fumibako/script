@@ -92,6 +92,17 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [edit left=700 top=160 width=200 length=200 maxchars=3 name="tf.test_hujieda_fumi_hensin_speed" height=20]
 [ptext text="藤枝：返信速度(0=全て翌週、1=本来)" layer=29 size=15 x=700 y=190 color=darkslateblue bold=bold]
 [edit left=700 top=210 width=200 length=200 maxchars=3 name="tf.test_hujieda_fumi_hensin_speed" height=20]
+[ptext text="その月のお箏練習回数" layer=29 size=15 x=700 y=240 color=darkslateblue bold=bold]
+[edit left=700 top=260 width=200 length=200 maxchars=3 name="f.para_shujinkou_koto_kaisuu" height=20]
+
+[ptext text="藤枝：手紙1(0=未見、1=見た)" layer=29 size=15 x=700 y=290 color=darkslateblue bold=bold]
+[edit left=700 top=310 width=200 length=200 maxchars=3 name="f.event_hujieda1" height=20]
+[ptext text="藤枝：手紙2(0=未見、1=見た)" layer=29 size=15 x=700 y=340 color=darkslateblue bold=bold]
+[edit left=700 top=360 width=200 length=200 maxchars=3 name="f.event_hujieda2" height=20]
+[ptext text="藤枝：手紙3(0=未見、1=見た)" layer=29 size=15 x=700 y=390 color=darkslateblue bold=bold]
+[edit left=700 top=410 width=200 length=200 maxchars=3 name="f.event_hujieda3" height=20]
+[ptext text="藤枝：手紙4(0=未見、1=見た)" layer=29 size=15 x=700 y=440 color=darkslateblue bold=bold]
+[edit left=700 top=460 width=200 length=200 maxchars=3 name="f.event_hujieda4" height=20]
 
 [ptext text="熟練度：茶道" layer=29 size=15 x=10 y=190 color=darkslateblue bold=bold]
 [edit left=10 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
@@ -138,6 +149,12 @@ $("input[name='f.para_shujinkou_j_gogaku']").val("0");
 $("input[name='f.para_shujinkou_j_koto']").val("0");
 $("input[name='f.para_shujinkou_shukujodo']").val("0");
 
+$("input[name='f.para_shujinkou_koto_kaisuu']").val("2");
+$("input[name='f.event_hujieda1']").val("1");
+$("input[name='f.event_hujieda2']").val("1");
+$("input[name='f.event_hujieda3']").val("1");
+$("input[name='f.event_hujieda4']").val("1");
+
 $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
 [endscript]
@@ -164,6 +181,12 @@ f.para_shujinkou_j_reihou = parseInt($("input[name='f.para_shujinkou_j_reihou']"
 f.para_shujinkou_j_gogaku = parseInt($("input[name='f.para_shujinkou_j_gogaku']").val());
 f.para_shujinkou_j_koto = parseInt($("input[name='f.para_shujinkou_j_koto']").val());
 f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo']").val());
+
+f.para_shujinkou_koto_kaisuu = parseInt($("input[name='f.para_shujinkou_koto_kaisuu']").val());
+f.event_hujieda[1] = parseInt($("input[name='f.event_hujieda1']").val());
+f.event_hujieda[2] = parseInt($("input[name='f.event_hujieda2']").val());
+f.event_hujieda[3] = parseInt($("input[name='f.event_hujieda3']").val());
+f.event_hujieda[4] = parseInt($("input[name='f.event_hujieda4']").val());
 
 f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());

@@ -23,6 +23,8 @@ f.para_shujinkou_j_reihou=0;
 f.para_shujinkou_j_gogaku=0;
 f.para_shujinkou_j_koto=0;
 f.para_shujinkou_j_naginata=0;
+f.para_shujinkou_koto_kaisuu=0; //その月にお箏のお稽古をした回数
+
 
 f.para_shujinkou_status_max=100;
 f.para_shujinkou_status_a=1;
@@ -156,7 +158,7 @@ f.zaizen_nextfumi_common=2;
 f.fumi_toutyaku_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 f.zaizen_au=0; //個別ルートに入ったら1を代入
 f.zaizen_koukando_bad=50; //(調整中)好感度がこの数値未満でbad2に。bad1は選択肢による分岐です
-f.zaizen_reihou_good=80; //(調整中)礼法熟練度がこの数値以上かつ好感度がkoukando_c以上でgoodEDに
+f.zaizen_reihou_good=80; //(調整中)礼法熟練度がこの数値以上かつ淑女度一定値以上、財前好感度がkoukando_c以上でgoodEDに
 [endscript]
 
 ;葛城宮 晴仁
@@ -177,7 +179,7 @@ sf.katuraginomiya ={
   "ask1":"葛城宮 晴仁様について",
   "fumibako":"fumibako_katuraginomiya",
 }; 
-f.para_katuraginomiya_koukando=-5;
+f.para_katuraginomiya_koukando=10;
 f.para_katuraginomiya_sintyou="?";
 f.para_katuraginomiya_taijuu="?";
 f.para_katuraginomiya_shumi="－";
@@ -191,6 +193,9 @@ f.katuraginomiya_fumi_start=0;
 f.katuraginomiya_au=0; //個別ルートに入ったら1を代入
 //↓葛城宮手紙タイトル配列をセット
 f.fumi_list_katuraginomiya_title = [];
+f.katuraginomiya_koukando_bad=50; //(調整中)好感度がこの数値未満でbadに
+f.katuraginomiya_sadou_good=80; //(調整中)茶道熟練度がこの数値以上かつ淑女度一定値以上、葛城宮好感度がkoukando_c以上でgoodEDに
+
 [endscript]
 
 ;藤枝　肇
@@ -212,7 +217,7 @@ sf.hujieda ={
   "fumibako":"fumibako_hujieda",
   "fumi1":"hujieda_fumi1",
 }; 
-f.para_hujieda_koukando=20;
+f.para_hujieda_koukando=5;
 f.para_hujieda_sintyou="?";
 f.para_hujieda_taijuu="?";
 f.para_hujieda_shumi="－";
@@ -225,7 +230,8 @@ f.fumi_toutyaku_hujieda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 f.hujieda_fumi_start=0;
 f.hujieda_au=0; //個別ルートに入ったら1を代入
 f.fumi_list_hujieda_title = [];
-
+f.hujieda_koukando_bad=50; //(調整中)好感度がこの数値未満でbadに
+f.hujieda_koto_good=80; //(調整中)お箏熟練度がこの数値以上かつ淑女度一定値以上、藤枝好感度がkoukando_c以上でgoodEDに
 [endscript]
 
 ;◆攻略キャラ配列
