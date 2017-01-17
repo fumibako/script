@@ -3,13 +3,13 @@
 ;=======================お芝居の準備中です=======================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 ;↓1_3_1からのjump先ラベルです。つながりが自然になるように、テキスト調整時に「数日後、財前邸にて」など地の文(全画面?)を入れる予定です
 *seen1
+[call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
 ;【背景】洋館居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]

@@ -166,10 +166,10 @@
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ」[p]
-
+#
 ;========================================================================
 [if exp="tf.okeiko_gamen==true"]
-@jump storage="zaizen_1_3_2.ks" target=*seen1
+@jump storage="zaizen/zaizen_1_3_2.ks" target=*seen1
 [endif]
 [イベントシーン終了]
 @jump storage="test_zaizen.ks"

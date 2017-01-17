@@ -28,7 +28,6 @@
 ;【立ち絵】主人公：微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様の手紙の描き方が柔らかくなったわ）[p]
-
 ;【SE】紙に触れる（カサ）
 
 [if exp="sf.BGM=='ON'"]
@@ -519,6 +518,11 @@
 そう、耳に囁かれて私は真っ赤になった。[p]
 ;CG終わり
 ;normalここまで
+*bunki_to_good_or_other
+;◆goodED条件を満たす場合、goodへ
+[if exp="tf.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) && ( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good) && f.para_shujinkou_shukujodo >= 80"]
+@jump storage="zaizen/zaizen_3_4_good.ks" target="seen_1"
+[endif]
 ;====================================================================================
 ;機能ボタン消去
 [layopt layer=fix visible=false]
@@ -544,12 +548,8 @@ $("kan").css('margin','auto');
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 
 [イベントシーン終了]
-*bunki_to_good_or_other
-;◆goodED条件を満たす場合、goodへ
-[if exp="tf.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) &&( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good)"]
-@jump storage="zaizen/zaizen_3_4_good.ks" target="seen_1"
-;◆それ以外の場合はnormalED終了処理へ
-[elsif exp="tf.okeiko_gamen==true"]
+;◆normalED終了処理へ
+[if exp="tf.okeiko_gamen==true"]
 [財前ルート終了 end="normal"]
 [endif]
 @jump storage="test_zaizen.ks"
