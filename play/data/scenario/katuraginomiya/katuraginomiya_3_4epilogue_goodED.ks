@@ -1,16 +1,15 @@
 ;goodエンドエピローグ
 =======================お芝居の準備中です==================================
-**replay_katuraginomiya_3_4epilogue_goodED
-;[setreplay name="replay_katuraginomiya_3_4_goodED_scene" storage="katuraginomiya_3_4epilogue_goodED.ks" target="start"]
-;katuraginomiya_3_4epilogue_goodED.ks
-*strat
+*replay_katuraginomiya_3_4epilogue_goodED
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=3_4epilogue_goodED storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
+;↓normalから続けて再生時のjump先ラベルです
+*seen_1
+[call target=3_4epilogue_goodED storage="katuraginomiya/preload_katuraginomiya.ks"]
 ;【背景】玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -341,16 +340,10 @@ $("kan").css('margin','auto');
 [sp]　  完[p]
 ;===============================================================
 [イベントシーン終了]
-
+;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
-[eval exp="sf.ED_katuraginomiya_good=1"]
-;回想記録終了
-;[endreplay] 
-@jump storage="event.ks" target=*event_ED
-[else]
 [葛城宮ルート終了 end="good"]
 [endif]
-
 @jump storage="test_katuragi.ks"
 [s]
 

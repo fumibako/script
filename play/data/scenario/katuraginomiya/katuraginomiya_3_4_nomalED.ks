@@ -1,7 +1,9 @@
 ;9回目イベント【背景】公園　背景森林公園 主人公と葛城宮抱擁CG
 =======================お芝居の準備中です==================================
 *replay_katuraginomiya_3_4_nomalED
-;[setreplay name="replay_sijyou_3_4_nomalED_scene" storage="katuraginomiya_3_4_nomalED.ks" target="start"]
+;↓回想シーンスタートはnormal/goodどちらもここから始まるのが自然かと思いますので、この位置に置いてみます
+[setreplay name="replay_katuraginomiya_3_4_nomalED_scene" storage="katuraginomiya_3_4_nomalED.ks" target="start"]
+[setreplay name="replay_katuraginomiya_3_4_goodED_scene" storage="katuraginomiya_3_4_nomalED.ks" target="start"]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -188,6 +190,11 @@
 [主人公目伏柔]
 「貴方とともに喜びも悲しみも、共にすると誓います」[p]
 #
+*bunki_to_good_or_other
+;◆goodED条件を満たす場合、goodへ
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100"]
+@jump storage="katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks" target="seen_1"
+[endif]
 ;=============================================================
 ;機能ボタン消去
 [layopt layer=fix visible=false]
@@ -214,17 +221,11 @@ $("kan").css('margin','auto');
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;=============================================================
 
+[イベントシーン終了]
+;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました。マクロの動作がうまくいかない場合にまた変更する可能性があります(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
-;↓normalエンディング時[eval exp="sf.ED_katuraginomiya_normal=1"]
-[eval exp="sf.ED_katuraginomiya_normal=1"]
-;回想記録終了
-;[endreplay] 
-@jump storage="event.ks" target=*event_ED
-[else]
 [葛城宮ルート終了 end="normal"]
 [endif]
-
-[イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
 
