@@ -2,7 +2,9 @@
 ;お稽古パート：イベント判定(週終わり：主にエンディングイベントなどの判定処理用です)
 ;=============================================
 *start
-
+;=============================================
+;◆共通イベント判定
+;=============================================
 *event_hantei_week_owari
 ;◆イベント判定(週終わり：12月3週のbadEDは週始め開始のため、他のイベントと同じ並びで判定）
 ;◆判定 9月1週始めにお相手選びを保留すると、終わった時点で再度お相手選び
@@ -39,6 +41,18 @@
 *sijyou_event_hantei
 @jump storage="01_sijyou_event_hantei_week_owari.ks" target=*start
 *sijyou_event_hantei_owari
+
+;=============================================
+;◆財前イベント判定
+;=============================================
+;◆財前normalED判定 財前ルートかつ3月4週が終わる時点で発生
+[if exp="(f.okeiko_month==3 && f.okeiko_week==4)  && f.zaizen_au==1"]
+	[eval exp="f.event_storage='zaizen/zaizen_3_4_normal.ks'"]
+	[eval exp="f.event_target='*replay_zaizen_3_4_normal'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_zaizen[15]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
 
 ;=============================================
 ;◆黒田イベント判定

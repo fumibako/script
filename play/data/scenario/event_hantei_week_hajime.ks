@@ -10,6 +10,9 @@
 @jump target=*advice_event_owari
 [endif]
 
+;=============================================
+;◆共通イベント判定：助言
+;=============================================
 ;◆お稽古パート導入イベント判定 4月1週になった時点で1度だけ発生
 [if exp="((f.okeiko_month==4 && f.okeiko_week==1) && f.event_common[0]==0)"]
 	[eval exp="f.event_storage='event.ks'"]
@@ -93,11 +96,55 @@
 *advice_event_owari
 
 ;=============================================
+;◆共通イベント判定：助言以外
+;=============================================
+;◆夢イベント判定：イベント 6月2週になった時点で、攻略対象(四条、財前、黒田)の好感度一定値以上又は藤枝イベント発生中の状態なら1度だけ発生(まだコピペしただけです。全員の組み込み後に調整しようと思います)
+;[if exp="(f.okeiko_month==6 && f.okeiko_week==2) && f.event_common[11]==0 && (f.para_kuroda_koukando > 30 || f.para_zaizen_koukando > 30 || f.para_sijyou_koukando > 30 || f.para_katuraginomiya_koukando > 30|| f.para_hujieda_koukando > 30)"]
+;	[eval exp="f.event_storage='common_9_1.ks'"]
+;	[eval exp="f.event_target='*replay_common_9_1'"]
+;	[eval exp="f.event_type='talk'"]
+;	[eval exp="f.event_common[11]=1"]
+;	@jump storage="event.ks" target=*start
+;[endif]
+
+
+;◆顔合せのお相手選びイベント判定：イベント 9月1週になった時点で、攻略対象の好感度一定値以上なら1度だけ発生
+[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_common[10]==0 && (f.para_kuroda_koukando > 30 || f.para_zaizen_koukando > 30 || f.para_sijyou_koukando > 30 || f.para_katuraginomiya_koukando > 30|| f.para_hujieda_koukando > 30)"]
+	[eval exp="f.event_storage='common_9_1.ks'"]
+	[eval exp="f.event_target='*replay_common_9_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[10]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;=============================================
 ;◆四条イベント判定
 ;=============================================
 *sijyou_event_hantei
 @jump storage="01_sijyou_event_hantei_week_hajime.ks" target=*start
 *sijyou_event_hantei_owari
+
+;=============================================
+;◆財前イベント判定
+;=============================================
+*zaizen_event_hantei
+@jump storage="event_hantei_week_hajime_zaizen.ks" target=*start
+*zaizen_event_hantei_owari
+
+;=============================================
+;◆葛城宮イベント判定
+;=============================================
+*katuraginomiya_event_hantei
+@jump storage="event_hantei_week_hajime_katuraginomiya.ks" target=*start
+*katuraginomiya_event_hantei_owari
+
+;=============================================
+;◆藤枝イベント判定
+;=============================================
+*hujieda_event_hantei
+@jump storage="event_hantei_week_hajime_hujieda.ks" target=*start
+*hujieda_event_hantei_owari
+
 
 ;=============================================
 ;◆黒田イベント判定
@@ -111,15 +158,6 @@
 ;[if exp="(f.okeiko_month==8 && f.okeiko_week==4) && f.event_machi_kuroda[3]==1 && f.event_machi_kuroda[5]==0 && f.para_kuroda_koukando > 20"]
 ;	@jump storage="sansaku.ks" target=*sansaku_machi_kuroda_05
 ;[endif]
-
-;◆顔合せのお相手選びイベント判定：イベント 9月1週になった時点で、攻略対象の好感度一定値以上なら1度だけ発生
-[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_common[10]==0 && (f.para_kuroda_koukando > 30 || f.para_zaizen_koukando > 30 || f.para_sijyou_koukando > 30 || f.para_katuraginomiya_koukando > 30|| f.para_hujieda_koukando > 30)"]
-	[eval exp="f.event_storage='common_9_1.ks'"]
-	[eval exp="f.event_target='*replay_common_9_1'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_common[10]=1"]
-	@jump storage="event.ks" target=*start
-[endif]
 
 ;◆黒田イベント判定【顔合せ】判定 黒田ルートかつ9月3週になった時点で1度だけ発生
 [if exp="(f.okeiko_month==9 && f.okeiko_week==3) && f.event_kuroda[1]==0 && f.kuroda_au==1"]
