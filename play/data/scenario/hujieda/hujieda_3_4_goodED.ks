@@ -2,15 +2,15 @@
 ;イベント１５回目【指切りエンド】3月4週、goodED時エピローグ
 ;=======================お芝居の準備中です==================================
 *replay_hujieda_hujieda_3_4_goodED
-;[setreplay name="replay_hujieda_hujieda_3_4_goodED_scene" storage="hujieda_3_4_goodED.ks" target="start"]
-*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*3_4_goodED storage="hujieda/preload_hujieda.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
+;↓normalから続けて再生時のjump先ラベルです
+*seen_1
+[call target=*3_4_goodED storage="hujieda/preload_hujieda.ks"]
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 ;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]

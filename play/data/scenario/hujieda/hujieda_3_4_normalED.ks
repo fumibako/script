@@ -1,8 +1,8 @@
 ;========================================================================
 ;イベント１５回目【指切りエンド】3月4週、
 ;=======================お芝居の準備中です==================================
-*replay_hujieda_3_4_normalED
-;[setreplay name="replay_hujieda_3_4_normalED_scene" storage="hujieda_3_4_normalED.ks" target="start"]
+[setreplay name="replay_hujieda_hujieda_3_4_goodED_scene" storage="hujieda_3_4_normalED.ks" target="start"]
+[setreplay name="replay_hujieda_hujieda_3_4_normalED_scene" storage="hujieda_3_4_normalED.ks" target="start"]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -232,6 +232,12 @@ $('.kaede').remove();
 私たちは同時に声を合わせて指切りをした。[p]
 
 ―― そうお互いに誓い合った。 離れても貴方を想います。[p]
+*bunki_to_good_or_other
+;◆goodED条件を満たす場合、goodへ
+[if exp="tf.okeiko_gamen==true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70"]
+@jump storage="hujieda/hujieda_3_4_goodED.ks" target="seen_1"
+[endif]
+
 ;===============================================================
 ;綿毛全画面
 ;[暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
@@ -255,13 +261,11 @@ $("kan").css('margin','auto');
 ;===============================================================
 [wait time=100]
 ;ノーマルここまで
-
 [イベントシーン終了]
-
+;◆normalED終了処理へ
 [if exp="tf.okeiko_gamen==true"]
 [藤枝ルート終了 end="normal"]
 [endif]
-
 @jump storage="test_hujieda.ks"
 [s]
 
