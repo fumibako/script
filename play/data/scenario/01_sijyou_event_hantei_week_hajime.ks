@@ -12,31 +12,28 @@
 	[eval exp ="tf.hikaku_koukando=[f.para_sijyou_koukando , f.para_kuroda_koukando, f.para_zaizen_koukando, f.para_katuraginomiya_koukando , f.para_hujieda_koukando ]"]
 	[iscript]
 	tf.a=Math.max.apply(null, tf.hikaku_koukando);
-	//alert(tf.a); //一番高い数値がでます。
+	alert(tf.a); //一番高い数値がでます。
 [endscript]
-	[if exp="tf.a==f.para_sijyou_koukando && f.sijyou_au==0"]
+[if exp="tf.a==f.para_sijyou_koukando && f.sijyou_au==0"]
 	;四条の好感度と一番高い数値が同じであるとき	
 	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks'"]
 	[eval exp="f.event_target='*replay_sijyou_6_1'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_sijyou[1]=1"]
 	@jump storage="event.ks" target=*start
-	[elsif exp="tf.a==f.para_zaizen_koukando && f.zaizen_au==0"]
+[elsif exp="tf.a==f.para_zaizen_koukando && f.zaizen_au==0"]
 	[eval exp="f.event_storage='zaizen/zaizen_6_1.ks'"]
 	[eval exp="f.event_target='*replay_zaizen_6_1'"]
 	[eval exp="f.event_type='talk'"]
 	;共通イベント。四条の変数のままでok	
 	[eval exp="f.event_sijyou[1]=1"]
-	[elsif exp="tf.a==f.para_hujieda_koukando && f.hujieda_au==0"]
+[elsif exp="tf.a==f.para_hujieda_koukando && f.hujieda_au==0"]
 	[eval exp="f.event_storage='hujieda/hujieda_6_1.ks'"]
 	[eval exp="f.event_target='*replay_hujieda_6_1'"]
 	[eval exp="f.event_type='talk'"]
 	;共通イベント。四条の変数のままでok	
 	[eval exp="f.event_sijyou[1]=1"]
-	[else]
-	;ない場合はそのままスルー	
-	@jump storage="event.ks" target=*start
-	[endif]
+[endif]
 ;================================================
 ;◆ 七月一週に休憩を押した場合 ！！共通イベントですがどうしましょう
 [if exp="(f.okeiko_month==7 && f.okeiko_week==1) && f.event_sijyou[2]==0 && f.sijyou_au==0"]
