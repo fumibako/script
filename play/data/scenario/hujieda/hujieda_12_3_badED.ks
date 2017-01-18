@@ -86,8 +86,8 @@
 
 ;[font color="#250d00" size=27]
 ;【背景】　ラジオ　
-[eval exp="f.haikei_credit='　'"]
-[chara_mod name="bg" storage="bg/hujieda_rajio.jpg" time=1200]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1200]
 ;=========================================================================
 【藤枝 肇】[r]
 「彼女と会ったことは、数えるほどでしたが、[r]

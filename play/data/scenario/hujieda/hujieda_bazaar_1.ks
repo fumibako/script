@@ -11,7 +11,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_hujieda.ks"]
 ;【背景】背景ミルクホール
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
+[chara_mod name="bg" storage="bg/bg_fujieda_piano_1.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　― ― ―'"]
 [プリロード画面消去]
 ;=========================================================================
@@ -21,7 +21,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1_1.jpg" time=50 visible=true]
+[image layer=29 x=1 y=1 storage="bg/bg_fujieda_piano_1_1.jpg" time=50 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore]

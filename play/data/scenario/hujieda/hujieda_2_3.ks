@@ -271,10 +271,10 @@
 ;============================================================================================
 [eval exp="f.haikei_credit='　　'"]
 ;【背景】室内音楽堂（近景）
-[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1100]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
+[暗転２ storage="bg/situnaiongaku.jpg" time=1100]
+[chara_mod name="bg" storage="bg/situnaiongaku.jpg" time=100]
 ;藤枝さん用構築かくし↓
-[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
+[表示準備 storage="bg/situnaiongaku.jpg"]
 ;【立ち絵】主人公：真剣
 [主人公口通常]
 [主人公眉下げ下]
@@ -329,7 +329,7 @@
 [whosay name="藤枝 肇" color=%mp.color] 
 （貴方が来てくれた、それなら僕は何も恐れることはない）[p]
 ;===================================ピアノを弾くシーンはじまり=================================================
-[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1100]
+[暗転２ storage="bg/situnaiongaku.jpg" time=1100]
 [藤枝退場]
 ;メッセージレイヤを非表示します。
 @layopt layer=message0 page=fore visible=false
@@ -368,7 +368,7 @@ $('.piano_base').remove();
 $('.piano_base_me').remove();
 [endscript]
 ;【変更】背景を暗転の中から表す（遠景）
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku2.jpg" time=50]
+[chara_mod name="bg" storage="bg/situnaiongaku2.jpg" time=50]
 ;会話ウィンドウを表示します。 
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 [wait time=10]
@@ -422,10 +422,10 @@ $('.piano_base_me').remove();
 ;[playse storage=hakushu_concert.ogg loop=false ]
 ;============================================================================================
 [eval exp="f.haikei_credit='　　'"]
-[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1300]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
+[暗転２ storage="bg/situnaiongaku.jpg" time=1300]
+[chara_mod name="bg" storage="bg/situnaiongaku.jpg" time=100]
 ;藤枝さん用構築かくし↓
-[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
+[表示準備 storage="bg/situnaiongaku.jpg"]
 [暗転２終了]
 [call target=*start storage="macro_tati_hujieda.ks"]
 ;============================================================================================
@@ -567,7 +567,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [暗転２]
 ;【背景】ピアノホール（遠景）
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku2.jpg" time=50]
+[chara_mod name="bg" storage="bg/situnaiongaku2.jpg" time=50]
 [藤枝退場]
 [主人公目通常]
 [主人公口ほほえみ]
@@ -593,10 +593,10 @@ $('.piano_base_me').remove();
 [freeimage layer=13 time=800]
 ;==============================================================================
 ;【背景】室内音楽堂（近景）
-[暗転２ storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=1100]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situnaiongaku.jpg" time=100]
+[暗転２ storage="bg/situnaiongaku.jpg" time=1100]
+[chara_mod name="bg" storage="bg/situnaiongaku.jpg" time=100]
 ;藤枝さん用構築かくし↓
-[表示準備 storage="bg/I9IhvvVdPo/situnaiongaku.jpg"]
+[表示準備 storage="bg/situnaiongaku.jpg"]
 ;【立ち絵】藤枝:真剣
 [藤枝ベース私服]
 [藤枝通常]

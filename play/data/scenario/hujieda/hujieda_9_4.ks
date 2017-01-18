@@ -230,7 +230,8 @@
 （良くないけれどあの方が、奏でる音を知りたかったの）[p]
 ;==============================================================================
 ;【背景】窓
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho_ru4.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
 ;【アニメイメージ】キラキラ透過素材 layer=1
 [image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1000 left=-300 visible=true]
 ;==============================================================================
@@ -258,9 +259,10 @@ $('.oto').remove();
 ;セーブボタン解除
 [layopt layer=fix visible=true]
 ;窓から見た白っぽいミルクホール_ピアノ
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=1000]
+[eval exp="f.haikei_credit=''"]
+[chara_mod name="bg" storage="bg/bg_fujieda_piano_0.jpg" time=1000]
 ;jｓYiJｃｑRkkさんのピアノ画像、立ち絵表示あり
-[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" layer=13]
+[表示準備 storage="bg/bg_fujieda_piano_0.jpg" layer=13]
 ;==============================================================================
 #
 [主人公口通常]
@@ -284,11 +286,12 @@ $('.oto').remove();
 [主人公伏目]
 「私も藤枝様にお花とお手紙を渡せたらいいのに」[p]
 #
-[藤枝退場準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" time=300]
+[藤枝退場準備 storage="bg/bg_fujieda_piano_0.jpg" time=300]
 [wait time=10]
 ;==============================================================================
 ;窓
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho_ru4.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
 ;==============================================================================
 [fadeoutbgm time=3000]
 

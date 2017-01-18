@@ -120,9 +120,9 @@
 ;【背景】藤枝＿音楽会場外観
 [preload storage="data/fgimage/bg/I9IhvvVdPo/ensoukaijyou.jpg" wait=true]
 ;【背景】藤枝＿音楽会場内装_近景
-[preload storage="data/fgimage/bg/I9IhvvVdPo/situnaiongaku.jpg" wait=true]
+[preload storage="data/fgimage/bg/situnaiongaku.jpg" wait=true]
 ;【背景】藤枝＿音楽会場内装_遠景
-[preload storage="data/fgimage/bg/I9IhvvVdPo/situnaiongaku2.jpg" wait=true]
+[preload storage="data/fgimage/bg/situnaiongaku2.jpg" wait=true]
 ;【効果】キラキラ
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_kirakira.png" wait=true]
 ;【効果】;ピアノベース藤枝(目なし)
@@ -426,9 +426,9 @@
 ;【背景】:ミルクホール近景
 [preload storage="data/fgimage/bg/I9IhvvVdPo/mirukuho-ru3.jpg" wait=true]
 ;【背景】:ミルクホール窓
-[preload storage="data/fgimage/bg/I9IhvvVdPo/mirukuho_ru4.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/mirukuho_ru4.jpg" wait=true]
 ;【背景】:ミルクホール窓際　ピアノ
-[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_fujieda_piano_0.jpg" wait=true]
 ;【効果】キラキラ
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_kirakira.png" wait=true]
 ;======================================================================================
@@ -448,9 +448,9 @@
 ;【背景】主人公邸 部屋
 [preload storage="data/fgimage/bg/room_niwa.jpg"]
 ;【背景】全画面　番傘の女性
-[preload storage="data/fgimage/bg/hujieda_haha.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_haha.jpg" wait=true]
 ;【背景】全画面　白っぽいﾐﾙｸﾎｰﾙ店内
-[preload storage="data/fgimage/bg/I9IhvvVdPo/mirukutennai_zengamen.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/mirukutennai_zengamen.jpg" wait=true]
 ;【背景】 全画面背景＿空
 [preload storage="data/fgimage/bg/hujieda_sky1.jpg" wait=true]
 ;【背景】 全画面背景＿芙蓉
@@ -472,13 +472,13 @@
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】:ミルクホール玄関外昼
-[preload storage="data/fgimage/bg/I9IhvvVdPo/mirukutest.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/mirukutest.jpg" wait=true]
 ;【背景】:ミルクホール玄関中夜
 [preload storage="data/fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" wait=true]
 ;【背景】:ミルクホール玄関中昼
 [preload storage="data/fgimage/bg/I9IhvvVdPo/miruku_genkan2.jpg" wait=true]
 ;【背景】:ミルクホール 立ち絵用　ピアノ
-[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_fujieda_piano_0.jpg" wait=true]
 ;【効果】キラキラ
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_kirakira.png" wait=true]
 ;【効果】;ピアノベース藤枝(目なし)
@@ -509,9 +509,9 @@
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】:ミルクホール 全画面用　ピアノ
-[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_1_1.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_fujieda_piano_1_1.jpg" wait=true]
 ;【背景】:ミルクホール 立ち絵用　ピアノ
-[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_fujieda_piano_0.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_fujieda_piano_0.jpg" wait=true]
 ;【背景】華族会館全画面
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity6_1.jpg" wait=true]
 ;【背景】ﾁｬﾘﾃｨｰ会場門前

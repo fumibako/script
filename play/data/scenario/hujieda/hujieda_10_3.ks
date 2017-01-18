@@ -10,8 +10,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;【背景】 ミルクホール玄関外
-[eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutest.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１,　architecural　design　by　◆I9IhvvVdPo'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/mirukutest.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -29,7 +29,7 @@
 [endif]
 ;====================================================================================
 ;背景: [レトロな喫茶店]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='a　part　of　design　by　◆I9IhvvVdPo,　edited　by　＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg" time=1000]
 ;===============================================================
 [whosay name="文矢" color="#538a8a"] 
@@ -85,7 +85,8 @@
 #
 ;==============================================================================
 ;【背景】ミルクホール店内・客席 ゆっくり
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=1300]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/mirukutennai.jpg" time=1300]
 ;==============================================================================
 #
 広い店内の奥にはピアノが置かれおり、[r]
@@ -95,7 +96,7 @@
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
 ;準備中の上にのせて
-[暗転２ storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=1300]
+[暗転２ storage="bg/bg_fujieda_piano_1.jpg" layer=29 time=1300]
 ;消えている瞬間を隠す
 [主人公退場]
 ;会話ウィンドウ消去 メッセージあると何の画像かわからない
@@ -104,7 +105,7 @@
 ;==========================
 
 ;【背景】ミルクホール店内ピアノ
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=50]
+[chara_mod name="bg" storage="bg/bg_fujieda_piano_1.jpg" time=50]
 ;===================================藤枝を表準備します。=====================================================
 ;ピアノベース藤枝(目なし)レイヤー１
 [image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
@@ -125,7 +126,8 @@
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_toji.png" time=100]
 
 ;ピアノ消去するために被せます。_タイムは調整中
-[暗転２ storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" layer=29 time=2000]
+[暗転２ storage="bg/bg_fujieda_piano_1.jpg" layer=29 time=2000]
+[eval exp="f.haikei_credit=''"]
 ;SE拍手長め
 ;ピアノ画像消去１
 [iscript]
@@ -183,8 +185,9 @@ $('.oto').remove();
 藤枝様に花屋で買ったコリウスと手紙をそっと差し出した。[p]
 ;==============================================================================
 ;【背景】ミルクホール店内ピアノ
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=100]
-[表示準備 storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg"]
+[chara_mod name="bg" storage="bg/bg_fujieda_piano_1.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[表示準備 storage="bg/bg_fujieda_piano_1.jpg"]
 ;==============================================================================
 
 ;======ふわっと==========
@@ -298,9 +301,10 @@ $('.oto').remove();
 ;ボタン非表示
 [layopt layer=fix visible=false]
 ;ずっと立っている状態になってしまいますので退場します 裏で退場＿大
-[表示準備 storage="bg/I9IhvvVdPo/mirukutennai.jpg" layer=29 time=1300]
+[表示準備 storage="bg/B4nFWraU42/mirukutennai.jpg" layer=29 time=1300]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [藤枝退場]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
+[chara_mod name="bg" storage="bg/B4nFWraU42/mirukutennai.jpg" time=50]
 [freeimage layer=29 time=500]
 ;ボタン表示
 [layopt layer=fix visible=true]
@@ -319,7 +323,8 @@ $('.oto').remove();
 
 ;===============================ピアノを弾くシーン２===============================================
 ;【背景】ミルクホール店内ピアノ
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_fujieda_piano_1.jpg" time=1300]
+[chara_mod name="bg" storage="bg/bg_fujieda_piano_1.jpg" time=1300]
+[eval exp="f.haikei_credit=''"]
 [image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=2000 left=1 visible=true]
 ;==============================================================================
 #
@@ -334,7 +339,8 @@ $('.oto').remove();
 [layopt layer=fix visible=false]
 [表示準備 storage="bg/anten.jpg" layer=29 time=1300]
 ;【背景】客席
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutennai.jpg" time=50]
+[chara_mod name="bg" storage="bg/B4nFWraU42/mirukutennai.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [freeimage layer=29 time=500]
 ;セーブボタン解除
 [layopt layer=fix visible=true]
@@ -367,8 +373,8 @@ $('.oto').remove();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】背景:レトロな喫茶店（玄関）
+[eval exp="f.haikei_credit='a　part　of　design　by　◆I9IhvvVdPo,　edited　by　＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg" time=50]
-[eval exp="f.haikei_credit='まだないです'"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
