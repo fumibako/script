@@ -17,8 +17,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆badED判定 5月4週終わった時点で返信を一度もしていないとbadED
-[if exp="((f.okeiko_month==5 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[8]==0)"]
+;◆badED判定 5月4週終わった時点で返信を一度もしておらず、淑女度18未満の場合はbadED
+[if exp="((f.okeiko_month==5 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[8]==0 && f.para_shujinkou_shukujodo<18)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_5_4_badED'"]
 	[eval exp="f.event_type='talk'"]
@@ -50,7 +50,28 @@
 	[eval exp="f.event_storage='zaizen/zaizen_3_4_normal.ks'"]
 	[eval exp="f.event_target='*replay_zaizen_3_4_normal'"]
 	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_zaizen[15]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;=============================================
+;◆葛城宮イベント判定
+;=============================================
+;◆葛城宮normalED判定 葛城宮ルートかつ3月4週が終わる時点で発生
+[if exp="(f.okeiko_month==3 && f.okeiko_week==4)  && f.katuraginomiya_au==1"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_3_4_nomalED.ks'"]
+	[eval exp="f.event_target='*replay_katuraginomiya_3_4_nomalED'"]
+	[eval exp="f.event_type='talk'"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;=============================================
+;◆藤枝イベント判定
+;=============================================
+;◆藤枝normalED判定 藤枝ルートかつ3月4週が終わる時点で発生
+[if exp="(f.okeiko_month==3 && f.okeiko_week==4)  && f.hujieda_au==1"]
+	[eval exp="f.event_storage='hujieda/hujieda_3_4_normalED.ks'"]
+	[eval exp="f.event_target='*start'"]
+	[eval exp="f.event_type='talk'"]
 	@jump storage="event.ks" target=*start
 [endif]
 
