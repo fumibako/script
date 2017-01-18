@@ -50,7 +50,7 @@
 [iscript]
 //入力済デフォルト値の設定
 $("input[name='tf.test_sijyou_fumi_hensin_speed']").val("0");
-$("input[name='f.para_sijyou_koukando']").val("40");
+$("input[name='f.para_sijyou_koukando']").val("10");
 $("input[name='f.sijyou_au']").val("0");
 $("input[name='f.sijyou_omiai']").val("0");
 $("input[name='f.sijyou_event6']").val("0");
