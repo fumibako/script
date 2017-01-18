@@ -139,13 +139,13 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 //入力済デフォルト値の設定
 $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
 $("input[name='f.para_zaizen_koukando']").val("40");
-$("input[name='f.zaizen_au']").val("1");
+$("input[name='f.zaizen_au']").val("0");
 $("input[name='tf.test_katuraginomiya_fumi_hensin_speed']").val("0");
 $("input[name='f.para_katuraginomiya_koukando']").val("40");
 $("input[name='f.katuraginomiya_au']").val("0");
 $("input[name='tf.test_hujieda_fumi_hensin_speed']").val("0");
 $("input[name='f.para_hujieda_koukando']").val("40");
-$("input[name='f.hujieda_au']").val("0");
+$("input[name='f.hujieda_au']").val("1");
 
 $("input[name='f.para_shujinkou_j_sadou']").val("0");
 $("input[name='f.para_shujinkou_j_kadou']").val("0");
@@ -155,11 +155,11 @@ $("input[name='f.para_shujinkou_j_koto']").val("0");
 $("input[name='f.para_shujinkou_shukujodo']").val("0");
 
 $("input[name='f.para_shujinkou_koto_kaisuu']").val("2");
-$("input[name='f.event_hujieda1']").val("1");
-$("input[name='f.event_hujieda2']").val("1");
-$("input[name='f.event_hujieda3']").val("1");
-$("input[name='f.event_hujieda4']").val("1");
-$("input[name='f.event_hujieda5']").val("1");
+$("input[name='f.event_hujieda1']").val("0");
+$("input[name='f.event_hujieda2']").val("0");
+$("input[name='f.event_hujieda3']").val("0");
+$("input[name='f.event_hujieda4']").val("0");
+$("input[name='f.event_hujieda5']").val("0");
 
 $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
