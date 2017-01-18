@@ -179,10 +179,34 @@ TG.stat.play_se = true;
 ;=============================================
 ;◆財前イベント判定
 ;=============================================
-;◆財前イベント判定【バザー】2月1週から3月4週、礼法が70(暫定)以上で期間中に町へ行くと1度だけ発生
-[if exp="(f.okeiko_month==2 || f.okeiko_month==3) && f.event_machi_zaizen[1]==0 && f.para_shujinkou_j_reihou >= 70"]
+;◆財前イベント判定【バザー】財前ルートかつ2月1週から3月4週、礼法が70(暫定)以上で期間中に町へ行くと1度だけ発生
+[if exp="(f.okeiko_month==2 || f.okeiko_month==3) && f.event_machi_zaizen[1]==0 && f.para_shujinkou_j_reihou >= 70 && f.zaizen_au==1"]
 	[eval exp="f.event_machi_zaizen[1]=1"]
 	@jump storage="zaizen/zaizen_bazaar.ks"
+[endif]
+
+;=============================================
+;◆葛城宮イベント判定
+;=============================================
+;◆葛城宮イベント判定【散策1】葛城宮ルート2月2週から3月3週期間中に散策で1度だけ発生(散策2へ続く物語となるため元案の3月4週までではなく3月3週までに変更しました)
+[if exp="((f.okeiko_month==2 && f.okeiko_week!=1) || (f.okeiko_month==3 && f.okeiko_week!=4)) && f.event_machi_katuraginomiya[1]==0 && f.katuraginomiya_au==1"]
+	[eval exp="f.event_machi_katuraginomiya[1]=1"]
+	@jump storage="katuraginomiya/katuraginomiya_sansaku1.ks"
+[endif]
+
+;◆葛城宮イベント判定【散策1】葛城宮ルート2月2週から3月4週期間中に散策で1度だけ発生
+[if exp="((f.okeiko_month==2 && f.okeiko_week!=1) || f.okeiko_month==3) && f.event_machi_katuraginomiya[2]==0 && f.katuraginomiya_au==1"]
+	[eval exp="f.event_machi_katuraginomiya[2]=1"]
+	@jump storage="katuraginomiya/katuraginomiya_sansaku2.ks"
+[endif]
+
+;=============================================
+;◆藤枝イベント判定
+;=============================================
+;◆藤枝イベント判定【藤枝晶子さん(藤枝お姉さん)と話す】藤枝ルートかつ2月3週から3月4週期間中に町へ行くと1度だけ発生
+[if exp="((f.okeiko_month==2 && (f.okeiko_week==3 || f.okeiko_week==4)) || f.okeiko_month==3) && f.event_machi_hujieda[1]==0 && f.hujieda_au==1"]
+	[eval exp="f.event_machi_hujieda[1]=1"]
+	@jump storage="hujieda/hujieda_sansaku1.ks"
 [endif]
 
 ;=============================================
@@ -204,7 +228,7 @@ TG.stat.play_se = true;
 [endif]
 
 ;◆黒田イベント6判定【友人と会う（落ち込み時）】12月1週～2週、期間中に町へ行くと1度だけ発生
-[if exp="(f.okeiko_month==12 && (f.okeiko_week==1 || f.okeiko_week==2)) && f.event_machi_kuroda[6]==0"]
+[if exp="(f.okeiko_month==12 && (f.okeiko_week==1 || f.okeiko_week==2)) && f.event_machi_kuroda[6]==0 && f.kuroda_au==1"]
 	@jump target=*sansaku_machi_kuroda_06
 [endif]
 

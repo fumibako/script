@@ -432,6 +432,9 @@ $('.loding_pic1').remove();
 ;書き直すのが面倒なので一括処理内容
 ;散策
 ;テストモード[if exp="tf.test_sijyou==true"]@jump storage="test_sijyou.ks"[edif]
+[if exp="tf.okeiko_gamen==true"]
+@jump storage="sansaku.ks" target=*sansaku_machi_seika
+[endif]
 [endmacro]
 
 [macro name=イベントシーン終了４]

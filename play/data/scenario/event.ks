@@ -4,6 +4,7 @@
 [freeimage layer = 27]
 
 [if exp="f.event_type=='talk'"]
+[freeimage layer = 26]
 @jump storage=&f.event_storage target=&f.event_target
 [endif]
 
