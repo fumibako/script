@@ -130,8 +130,8 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [edit left=180 top=460 width=50 length=200 maxchars=2 name="f.okeiko_week" height=20]
 [ptext text="週" layer=29 size=15 x=240 y=460 color=darkslateblue bold=bold]
 
-[ptext text="四条：好感度（元の設定値=10)" layer=29 size=15 x=345 y=490 color=darkslateblue bold=bold]
-[edit left=345 top=510 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
+[ptext text="四条：好感度（元の設定値=10)" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
+[edit left=345 top=410 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
 
 [iscript]
 //入力済デフォルト値の設定
