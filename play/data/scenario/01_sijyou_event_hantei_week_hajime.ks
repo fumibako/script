@@ -12,7 +12,7 @@
 	[eval exp ="tf.hikaku_koukando=[f.para_sijyou_koukando , f.para_kuroda_koukando, f.para_zaizen_koukando, f.para_katuraginomiya_koukando , f.para_hujieda_koukando ]"]
 	[iscript]
 	tf.a=Math.max.apply(null, tf.hikaku_koukando);
-	alert(tf.a); //一番高い数値がでます。
+	//alert(tf.a); 
 [endscript]
 [if exp="tf.a==f.para_sijyou_koukando && f.sijyou_au==0"]
 	;四条の好感度と一番高い数値が同じであるとき	
