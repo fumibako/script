@@ -25,8 +25,16 @@
 	[eval exp="f.event_storage='zaizen/zaizen_6_1.ks'"]
 	[eval exp="f.event_target='*replay_zaizen_6_1'"]
 	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_zaizen[1]=1"]
+	;共通イベント。四条の変数のままでok	
+	[eval exp="f.event_sijyou[1]=1"]
+	[elsif exp="tf.a==f.para_hujieda_koukando && f.hujieda_au==0"]
+	[eval exp="f.event_storage='hujieda/hujieda_6_1.ks'"]
+	[eval exp="f.event_target='*replay_hujieda_6_1'"]
+	[eval exp="f.event_type='talk'"]
+	;共通イベント。四条の変数のままでok	
+	[eval exp="f.event_sijyou[1]=1"]
 	[else]
+	;ない場合はそのままスルー	
 	@jump storage="event.ks" target=*start
 	[endif]
 ;================================================
