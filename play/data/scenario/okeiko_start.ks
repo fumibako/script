@@ -103,6 +103,8 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [edit left=700 top=410 width=200 length=200 maxchars=3 name="f.event_hujieda3" height=20]
 [ptext text="藤枝：手紙4(0=未見、1=見た)" layer=29 size=15 x=700 y=440 color=darkslateblue bold=bold]
 [edit left=700 top=460 width=200 length=200 maxchars=3 name="f.event_hujieda4" height=20]
+[ptext text="藤枝：お返事イベント(0=未見、1=見た)" layer=29 size=15 x=700 y=490 color=darkslateblue bold=bold]
+[edit left=700 top=510 width=200 length=200 maxchars=3 name="f.event_hujieda5" height=20]
 
 [ptext text="熟練度：茶道" layer=29 size=15 x=10 y=190 color=darkslateblue bold=bold]
 [edit left=10 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
@@ -157,10 +159,10 @@ $("input[name='f.event_hujieda1']").val("1");
 $("input[name='f.event_hujieda2']").val("1");
 $("input[name='f.event_hujieda3']").val("1");
 $("input[name='f.event_hujieda4']").val("1");
+$("input[name='f.event_hujieda5']").val("1");
 
 $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
-
 $("input[name='f.para_sijyou_koukando']").val("10");
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
@@ -179,6 +181,7 @@ f.katuraginomiya_au = parseInt($("input[name='f.katuraginomiya_au']").val());
 tf.test_hujieda_fumi_hensin_speed = parseInt($("input[name='tf.test_hujieda_fumi_hensin_speed']").val());
 f.para_hujieda_koukando = parseInt($("input[name='f.para_hujieda_koukando']").val());
 f.hujieda_au = parseInt($("input[name='f.hujieda_au']").val());
+f.para_sijyou_koukando = parseInt($("input[name='f.para_sijyou_koukando']").val());
 
 f.para_shujinkou_j_sadou = parseInt($("input[name='f.para_shujinkou_j_sadou']").val());
 f.para_shujinkou_j_kadou = parseInt($("input[name='f.para_shujinkou_j_kadou']").val());
@@ -192,6 +195,7 @@ f.event_hujieda[1] = parseInt($("input[name='f.event_hujieda1']").val());
 f.event_hujieda[2] = parseInt($("input[name='f.event_hujieda2']").val());
 f.event_hujieda[3] = parseInt($("input[name='f.event_hujieda3']").val());
 f.event_hujieda[4] = parseInt($("input[name='f.event_hujieda4']").val());
+f.event_hujieda[5] = parseInt($("input[name='f.event_hujieda5']").val());
 
 f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
