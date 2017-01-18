@@ -14,25 +14,27 @@
 	tf.a=Math.max.apply(null, tf.hikaku_koukando);
 	//alert(tf.a); 
 [endscript]
-[if exp="tf.a==f.para_sijyou_koukando && f.sijyou_au==0"]
-	;四条の好感度と一番高い数値が同じであるとき	
-	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks'"]
-	[eval exp="f.event_target='*replay_sijyou_6_1'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_sijyou[1]=1"]
-	@jump storage="event.ks" target=*start
-[elsif exp="tf.a==f.para_zaizen_koukando && f.zaizen_au==0"]
-	[eval exp="f.event_storage='zaizen/zaizen_6_1.ks'"]
-	[eval exp="f.event_target='*replay_zaizen_6_1'"]
-	[eval exp="f.event_type='talk'"]
-	;共通イベント。四条の変数のままでok	
-	[eval exp="f.event_sijyou[1]=1"]
-[elsif exp="tf.a==f.para_hujieda_koukando && f.hujieda_au==0"]
+[if exp="tf.a==f.para_hujieda_koukando && f.para_shujinkou_j_koto > 15　&& f.hujieda_au==0"]
+	;藤枝の好感度と一番高い数値が同じであるとき箏が15以下（好感度があがらないキャラほど上の判定・15以上は手紙を出していたら有りえない数値）	
 	[eval exp="f.event_storage='hujieda/hujieda_6_1.ks'"]
 	[eval exp="f.event_target='*replay_hujieda_6_1'"]
 	[eval exp="f.event_type='talk'"]
 	;共通イベント。四条の変数のままでok	
 	[eval exp="f.event_sijyou[1]=1"]
+[elsif exp="tf.a==f.para_sijyou_koukando && f.sijyou_au==0 && f.para_shujinkou_shukujodo < 15"]
+	;四条の好感度と一番高い数値が同じであるとき淑女度が15以下（15以上は手紙を出していたら有りえない数値）	
+	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks'"]
+	[eval exp="f.event_target='*replay_sijyou_6_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_sijyou[1]=1"]
+	@jump storage="event.ks" target=*start
+[elsif exp="tf.a==f.para_zaizen_koukando && f.zaizen_au==0 && f.para_shujinkou_shukujodo < 15"]
+	[eval exp="f.event_storage='zaizen/zaizen_6_1.ks'"]
+	[eval exp="f.event_target='*replay_zaizen_6_1'"]
+	[eval exp="f.event_type='talk'"]
+	;共通イベント。四条の変数のままでok	
+	[eval exp="f.event_sijyou[1]=1"]
+[endif]
 [endif]
 ;================================================
 ;◆ 七月一週に休憩を押した場合 ！！共通イベントですがどうしましょう
