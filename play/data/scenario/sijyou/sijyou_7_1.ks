@@ -61,7 +61,7 @@
 
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 #
-どなたについてお願いしようかしら？
+どの様なお願いをしようかしら？
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢用の背景：(和紙風桜色はオープニングで使用)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -81,8 +81,8 @@
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
 [glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
-[glink target=*okeiko text="それよりお稽古のこと" fontcolor=gray size=22 width="400" x=200 y=230 color=white]
-[glink target=*syukujyo text="それより淑女らしく" fontcolor=gray size=22 width="400" x=200 y=280 color=white]
+[glink target=*okeiko text="お稽古が上達しますように" fontcolor=gray size=22 width="400" x=200 y=230 color=white]
+[glink target=*syukujyo text="淑女らしくなりたい" fontcolor=gray size=22 width="400" x=200 y=280 color=white]
 [glink target=*no text="見逃してしまった" fontcolor=gray size=22 width="400" x=200 y=330 color=white]
 [s]
 
@@ -101,6 +101,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （華織お兄様と親しくできますように）[p]
+[eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
 #
 私は星に願った。[p]
 @jump target=*end_Q
@@ -118,6 +119,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （財前様と親しくできますように）[p]
+[eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
 #
 私は星に願った。[p]
 @jump target=*end_Q
@@ -132,6 +134,7 @@
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公目閉じ]
 （黒田様と親しくできますように）[p]
+[eval exp="f.para_sijyou_zaizen=f.para_zaizen_kuroda + 1"]
 #
 私は星に願った。[p]
 
@@ -146,10 +149,31 @@
 [chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
-それよりお稽古のことをお願いした。[p]
-#
+お稽古のことをお願いした。[p]
 [主人公目閉じ]
-（今、気になるお稽古が上手になりますように）[p]
+[if exp="f.event_hujieda[1]==1"]
+;藤枝イベントをみてる場合
+（お箏が上手になりますように）[p]
+[eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 5"]
+[eval exp="f.para_shujinkou_j_koto=f.para_shujinkou_j_koto + 1"]
+[else]
+(今、気になっているお稽古が上達しますように）[p]
+
+[iscript]
+tf.rand = Math.floor( Math.random() * 4) + 1
+if(tf.rand == 0){
+f.para_shujinkou_j_sadou = f.para_shujinkou_j_sadou + 1;
+}else if (tf.rand == 1) {
+f.para_shujinkou_j_kadou =  f.para_shujinkou_j_kadou + 1;
+}else if (tf.rand == 2) {
+f.para_shujinkou_j_reihou = f.para_shujinkou_j_reihou + 1;
+}else{
+f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
+}
+[endscript]
+
+[endif]
+
 #
 私は星に願った。[p]
 @jump target=*end_Q
@@ -163,8 +187,9 @@
 [chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
-それより淑女らしくなれるようにお願いした。[p]
-
+淑女らしくなれるようにお願いした。[p]
+[eval exp="f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo + 1"] 
+[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 10"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （淑女らしくなれますように……）[p]
