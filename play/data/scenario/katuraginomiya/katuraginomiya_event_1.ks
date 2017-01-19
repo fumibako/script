@@ -1,5 +1,6 @@
 ;作者コメント欄　
 ;=======================お芝居の準備中です==================================
+*replay_katuraginomiya_event_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*event_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
