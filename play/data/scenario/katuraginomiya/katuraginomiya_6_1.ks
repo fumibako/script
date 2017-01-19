@@ -3,7 +3,7 @@
 *replay_katuraginomiya_6_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*9_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
+[call target=*6_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
