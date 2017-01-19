@@ -102,13 +102,19 @@
 
 [fadeoutse time=2000]
 [fadeoutbgm time=3000]
-
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+[layopt layer=fix visible=false]
+[image name="junbi" layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=2000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=100]
 ;【背景】主人公邸 部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
+[freeimage layer=29 time=1000]
+[layopt layer=fix visible=true]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下の夢だったわ。」[p]
 
