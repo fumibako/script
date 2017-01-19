@@ -7,7 +7,6 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-#
 [暗転]
 [イベントシーン構築ボタン無し版]
 #
