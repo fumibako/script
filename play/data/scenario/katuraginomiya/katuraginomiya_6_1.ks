@@ -18,6 +18,7 @@
 [eval exp="f.haikei_credit=''"]
 ―― 夢を見た。[p]
 # 
+[イベントシーン構築枠茶色]
 ;【背景】執務室（裏で画面構成）
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
@@ -112,6 +113,7 @@
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
+[イベントシーン構築ボタン無し版]
 [freeimage layer=29 time=1000]
 [layopt layer=fix visible=true]
 
