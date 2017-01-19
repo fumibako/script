@@ -29,6 +29,10 @@
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
+
+;地の文
+#
+思い悩んでいると、突如、窓から白鳩が飛び込んできた。[p]
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
@@ -37,9 +41,11 @@
 [主人公驚]
 「まあ！ かわいい鳩ね。[r]
 [sp]あ・・・お[ruby text=こと]箏の上にのってはダメよ」[p]
-
 [主人公口通常]
 
+;【立ち絵】鳩_箏の柏葉
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　I9IhvvVdPo_editing by＠名無しさん１'"]
 #
 愛らしいハトが慣れた様子で、[ruby text=こと]箏の柏葉に留まった。[r]
 鳩は弦を見ながら首を動かし、まるで演奏を待ちわびているようだった。[p]
@@ -66,10 +72,12 @@
 ;【立ち絵】主人公 驚き
 [主人公驚]
 「これは、手紙？」[p]
-
 ;【SE】鳩の羽ばたき（バサバサッ）
 [playse storage=tori_habataki_hato.ogg loop=false ]
 
+;【背景】主人公邸 お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【立ち絵】主人公 困り
 [主人公困り]
 「あ……行ってしまったわ」[p]
