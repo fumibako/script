@@ -7,19 +7,23 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-;【背景】執務室（裏で画面構成）
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
-[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg"]
+#
+[暗転]
 [イベントシーン構築ボタン無し版]
 #
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-#
+;ゆっくり表示
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+[eval exp="f.haikei_credit=''"]
 ―― 夢を見た。[p]
 # 
-ドアのノックの音かした。[r]
+;【背景】執務室（裏で画面構成）
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
+[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg"]
+ドアのノックの音がした。[r]
 多分、母宮だろう。　話についても予想はしている。[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -39,17 +43,17 @@
 # 
 予想通り、母宮が姿を見せる[p]
 
-[whosay name="葛城宮妃"color=%mp.color]
+[whosay name="葛城宮妃" color=%mp.color]
 「……お話があります。[r]
 [sp]お手紙を書いたそうですわね」[p]
 
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ええ、[r]
-[sp]ですが、母宮に相談する歳でもありません」
+[sp]ですが、母宮に相談する歳でもありません」[p]
 
 
-[whosay name="葛城宮妃"color=%mp.color]
+[whosay name="葛城宮妃" color=%mp.color]
 「まあ！　貴方は どうして勝手に話を進めるんですの？」[p]
 
 ;[葛城宮汗]
@@ -62,12 +66,13 @@
 ;[葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「……今は手紙を交わしているだけですので、[r]
-[sp]迷惑かどうかは彼女の返信しだいで判断するつもりです」[p]
+[sp]迷惑かどうかは、彼女の返信しだいで判断するつもりです」[p]
 
 [whosay name="葛城宮妃" color=%mp.color]
 「それだけではいけません。[r]
 [sp]品行方正で礼儀正しく評判の良い方でないと。[r]
-[sp]それに貴方以外の方とお手紙を交わし始めたばかりとか[p]
+[sp]それに貴方以外の方とお手紙を交わし始めたばかりとか」[p]
+
 「ああ……不安ですわ」[p]
 
 ;[葛城宮眉怒り]
@@ -76,8 +81,8 @@
 
 [whosay name="葛城宮妃" color=%mp.color]
 「もしお相手の方に貴方より親密になっている殿方がいたり、[r]
-[sp] お稽古も真面目に取り組んでいない方だったら[r]
-[sp] 黙って貴方から引き下がりなさい。」[p]
+[sp]お稽古も真面目に取り組んでいない方だったら[r]
+[sp]黙って貴方から引き下がりなさい」[p]
 
 ;[葛城宮横目]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -85,21 +90,24 @@
 
 [whosay name="葛城宮妃" color=%mp.color]
 「貴方が年頃の女性に好意を持つことだけで進歩だとは、[r]
-[sp] 思っていますので完全に反対はしませんが、[r]
-[sp] どんな方私も知ってから判断しますわ」[p]
+[sp]思っていますので、完全に反対はしませんが、[r]
+[sp]どんな方私も知ってから判断しますわ」[p]
 
 ;[葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ええ、そうしてください。[r]
-[sp] 母宮も彼女を見れば納得いただけるでしょう。」[p]
+[sp]母宮も彼女を見れば納得いただけるでしょう。」[p]
 
 [whosay name="葛城宮妃" color=%mp.color]
 「そう……お会いするのを楽しみにしています」[p]
 
 [暗転]
-
-;背景お稽古部屋？
-[イベントシーン構築]
+[fadeoutse time=2000]
+[fadeoutbgm time=3000]
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+;【背景】主人公邸 部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
