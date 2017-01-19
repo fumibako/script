@@ -54,7 +54,7 @@
 
 [image name=star layer=1 top=10 left=200 storage="bg/B4nFWraU42/star.jpg" time=10]
 [anim name="star" left=-300 top=600 opacity=0]
-
+[er]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あ、流れ星だわ！」[p]
 *select
@@ -231,6 +231,9 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 
 ;==============================================================================================================
 *end_Q
+[image name=star layer=1 top=10 left=200 storage="bg/B4nFWraU42/star.jpg" time=10]
+[anim name="star" left=-300 top=600 opacity=0]
+[er]
 #
 [イベントシーン終了]
 [if exp="tf.okeiko_gamen==true"]
