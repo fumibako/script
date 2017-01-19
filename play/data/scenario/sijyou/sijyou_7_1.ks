@@ -52,7 +52,7 @@
 [主人公目通常]
 顔の見えない彼の人を想い、空を見上げた。[p]
 
-[image name=star layer=1 top=10 left=200 storage="bg/B4nFWraU42/star.jpg" time=10]
+[image name=star layer=1 top=10 left=400 storage="bg/B4nFWraU42/star.jpg" time=10]
 [anim name="star" left=-300 top=600 opacity=0]
 [er]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -192,7 +192,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 私は星に願った。[p]
 @jump target=*end_Q
 ;==============================================================================================================
-*syukujy
+*syukujyo
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -231,7 +231,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 
 ;==============================================================================================================
 *end_Q
-[image name=star layer=1 top=10 left=200 storage="bg/B4nFWraU42/star.jpg" time=10]
+[image name=star layer=1 top=10 left=400 storage="bg/B4nFWraU42/star.jpg" time=10]
 [anim name="star" left=-300 top=600 opacity=0]
 [er]
 #
