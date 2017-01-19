@@ -131,13 +131,12 @@
 [主人公憂い]
 （どうしたらいいの？）[p]
 #
-[主人公退場]
-[暗転]
+[暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
- [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+ [chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[主人公ポーズ通常]
 [主人公通常]
+[暗転２終了]
 [主人公目パチ1回]
 ;【SE】軽い足音（フェードイン）
 [playse storage=girl_in_run.ogg loop=false ]
