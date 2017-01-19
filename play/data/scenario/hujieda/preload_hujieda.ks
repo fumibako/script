@@ -569,7 +569,10 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
-;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
+;背景鳩
+[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_hujieda_hato.jpg" wait=true]
+;背景月の光
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_moon_lake.jpg" wait=true]
 ;ここに追加
 ;====================================================================================
 @jump target=end_sub
