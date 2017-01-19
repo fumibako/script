@@ -52,7 +52,7 @@
 [主人公目通常]
 顔の見えない彼の人を想い、空を見上げた。[p]
 
-[image top=10 lefet=10 strage=bg/B4nFWraU42/star.jpg time=10]
+[image top=10 left=200 strage=bg/B4nFWraU42/star.jpg time=10]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あ、流れ星だわ！」[p]
