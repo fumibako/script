@@ -51,6 +51,9 @@
 #
 [主人公目通常]
 顔の見えない彼の人を想い、空を見上げた。[p]
+
+[image top=10 lefet=10 strage=bg/B4nFWraU42/star.jpg time=10]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あ、流れ星だわ！」[p]
 *select
@@ -101,6 +104,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （華織お兄様と親しくできますように）[p]
+;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[playse storage=kira.ogg loop=false ]
 [eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
 #
 私は星に願った。[p]
@@ -119,6 +124,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （財前様と親しくできますように）[p]
+;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[playse storage=kira.ogg loop=false ]
 [eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
 #
 私は星に願った。[p]
@@ -134,6 +141,8 @@
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公目閉じ]
 （黒田様と親しくできますように）[p]
+;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[playse storage=kira.ogg loop=false ]
 [eval exp="f.para_sijyou_zaizen=f.para_zaizen_kuroda + 1"]
 #
 私は星に願った。[p]
@@ -154,10 +163,14 @@
 [if exp="f.event_hujieda[1]==1"]
 ;藤枝イベントをみてる場合
 （お箏が上手になりますように）[p]
+;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[playse storage=kira.ogg loop=false ]
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 5"]
 [eval exp="f.para_shujinkou_j_koto=f.para_shujinkou_j_koto + 1"]
 [else]
 (今、気になっているお稽古が上達しますように）[p]
+;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[playse storage=kira.ogg loop=false ]
 
 [iscript]
 tf.rand = Math.floor( Math.random() * 4) + 1
@@ -193,6 +206,8 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （淑女らしくなれますように……）[p]
+;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[playse storage=kira.ogg loop=false ]
 #
 私は星に願った。[p]
 @jump target=*end_Q
