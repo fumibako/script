@@ -147,6 +147,25 @@
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
+*6_1
+;イベント名のラベルを追加していきます。
+;======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+;特別な時は bg_preload_katuraginomiya.jpg
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;//////////////////使用背景メモ//////////////////
+;【背景】執務室 
+[preload storage="data/fgimage/bg/I9IhvvVdPo/situmu.jpg" wait=true] 
+;【背景】主人公邸 庭の見える部屋：昼
+[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;======================================================================================
+@jump target=end_sub
+;[return]へGO　ここは、消さないでください
+;以降は、無駄な読み込みはしない
+;======================================================================================
 *8_2
 ;イベント名のラベルを追加していきます。
 ;======================================================================================
