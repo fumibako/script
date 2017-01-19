@@ -17,6 +17,7 @@
 #
 ;ゆっくり表示
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+[eval exp="f.haikei_credit=''"]
 ―― 夢を見た。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】「深雪白雪」
@@ -24,10 +25,17 @@
 [eval exp="f.bgm_storage='miyuki.ogg'"]
 [endif]
 
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　I9IhvvVdPo_editing by＠名無しさん１'"]
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(あの時の鳩さんだわ)[p]
+[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1000]
+[eval exp="f.haikei_credit=''"]
 #
-あの時の鳩さんだわ。[p]
+私が近づこうとした途端、鳩は飛立つ。[p]
 ;【SE】鳩の羽ばたき（バサバサッ）
 [playse storage=tori_habataki_hato.ogg loop=false ]
 
@@ -39,6 +47,8 @@
 私は鳩さんを追いかけた。[r]
 するとお[ruby text=こと]箏を爪びく音がする[p]
 ;箏SE
+;【SE】お箏（短くド・レ…）
+[playse storage=koto_dore.ogg loop=false ]
 
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -49,6 +59,8 @@
 
 [whosay name=？？？]
 「僕は、貴方の[ruby text=こと]箏の音を聞き続けたい」[p]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_moon_lake.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration by＠名無しさん１'"]
 
 [主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -57,10 +69,12 @@
 [whosay name=？？？]
 「貴方がお[ruby text=こと]箏のお稽古をし続けるなら[r]
 [sp]僕は、お手紙をださずにはいられないでしょう」[p]
-
+;【SE】お箏ぽい音（3秒ほどのトレモロとキラキラ）
+[playse storage=kotopoi_kira.ogg loop=false ]
 #
 [主人公目閉]
 光が差し、私は瞼を閉じた。[p]
+[fadeoutse time=2000]
 [fadeoutbgm time=3000]
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 ;【背景】主人公邸 部屋
