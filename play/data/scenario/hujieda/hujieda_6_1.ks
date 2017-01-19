@@ -45,7 +45,7 @@
 
 #
 私は鳩さんを追いかけた。[r]
-するとお[ruby text=こと]箏を爪びく音がする[p]
+すると、お[ruby text=こと]箏を爪びく音がする。[p]
 ;箏SE
 ;【SE】お箏（短くド・レ…）
 [playse storage=koto_dore.ogg loop=false ]
