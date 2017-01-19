@@ -7,7 +7,7 @@
 ;↓以下にイベント判定を追記してください。Wikiに説明を追記予定ですが、Googleスプレッドシート「四条イベントリスト」のうち週始めに発生予定のイベント分を貼っていただければ大丈夫と思います(週終わりに発生の必要があるエンディングなど特殊イベント以外は基本的にこちらで良いと思います)
 ;================================================
 ;◆四条 sijyou_6_1.ks好感度一定値以上で1度だけ発生 日付は不明(仮)　！！共通イベントですがどうしましょう ここは葛城宮好感度→淑女度１８以下　と　藤枝好感度→箏、一定値　5/4で華道ばかり１５になった
-[if exp="(f.okeiko_month == 5 && f.okeiko_week == 3) && f.event_sijyou[1] == 0"]
+[if exp="(f.okeiko_month == 6 && f.okeiko_week == 1) && f.event_sijyou[1] == 0"]
 	;配列に好感度を入れます。
 	[eval exp ="tf.hikaku_koukando=[f.para_sijyou_koukando , f.para_kuroda_koukando, f.para_zaizen_koukando, f.para_katuraginomiya_koukando , f.para_hujieda_koukando ]"]
 	[iscript]
@@ -22,6 +22,14 @@
 	;共通イベント。四条の変数のままでok	
 	[eval exp="f.event_sijyou[1]=1"]
 	@jump storage="event.ks" target=*start
+	;葛城宮の場合淑女度１５
+	;[elsif exp="tf.a == f.para_sijyou_koukando && f.katuraginomiya_au==0 && f.para_shujinkou_shukujodo > 14"]
+	;[eval exp="f.event_storage='katuraginomiya/katuraginomiya_6_1.ks'"]
+	;[eval exp="f.event_target='*replay_katuraginomiya_6_1'"]
+	;[eval exp="f.event_type='talk'"]
+	;共通イベント。四条の変数のままでok	
+	;[eval exp="f.event_sijyou[1]=1"]
+	;@jump storage="event.ks" target=*start
 	[elsif exp="tf.a == f.para_sijyou_koukando && f.sijyou_au==0 && f.para_shujinkou_shukujodo < 15"]
 	;四条の好感度と一番高い数値が同じであるとき淑女度が15以下（15以上は手紙を出していたら有りえない数値）	
 	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks'"]
