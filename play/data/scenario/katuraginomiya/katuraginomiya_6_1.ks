@@ -21,7 +21,7 @@
 ;【背景】執務室（裏で画面構成）
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
-[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg"]
+;[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg"]
 ドアのノックの音がした。[r]
 多分、母宮だろう。　話についても予想はしている。[p]
 
@@ -34,22 +34,20 @@
 [stopbgm]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「どうぞ。」[p]
+「どうぞ」[p]
 
 ;【SE】ドアが開く
 [playse storage=door_open.ogg loop=false ]
 
 # 
-予想通り、母宮が姿を見せる[p]
+予想通り、母宮が姿を見せる。[p]
 
 [whosay name="葛城宮妃" color=%mp.color]
-「……お話があります。[r]
-[sp]お手紙を書いたそうですわね」[p]
+「……お話があります。　お手紙を書いたそうですわね」[p]
 
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「ええ、[r]
-[sp]ですが、母宮に相談する歳でもありません」[p]
+「ええ。　ですが、母宮に相談する歳でもありません」[p]
 
 
 [whosay name="葛城宮妃" color=%mp.color]
@@ -101,8 +99,10 @@
 「そう……お会いするのを楽しみにしています」[p]
 
 [暗転]
+
 [fadeoutse time=2000]
 [fadeoutbgm time=3000]
+
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 ;【背景】主人公邸 部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
