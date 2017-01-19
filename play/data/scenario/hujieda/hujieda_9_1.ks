@@ -163,7 +163,7 @@
 [stopbgm]
 ;[endif]
 ;個別ルート前夜終了
-;[eval exp="f.fujieda_au=1"]
+[eval exp="f.fujieda_au=1"]
 
 #
 ;次のイベントにでてしまう名前残りを消去
