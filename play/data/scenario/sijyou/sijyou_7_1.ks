@@ -52,7 +52,11 @@
 [主人公目通常]
 顔の見えない彼の人を想い、空を見上げた。[p]
 
-[image top=10 left=200 strage="bg/B4nFWraU42/star.jpg" time=10]
+[image name=star top=10 left=200 storage="bg/B4nFWraU42/star.jpg" time=10]
+[keyframe name="animation_star"]
+[frame p=100% x="-400" y="-400" opacity=0 ]
+[endkeyframe]
+[kanim name=star keyframe="animation_star" time="5000" ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「あ、流れ星だわ！」[p]
