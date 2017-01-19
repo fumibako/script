@@ -24,7 +24,7 @@
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_6_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_6_1'"]
 	[eval exp="f.event_type='talk'"]
-	共通イベント。四条の変数のままでok	
+	;共通イベント。四条の変数のままでok	
 	[eval exp="f.event_sijyou[1]=1"]
 	;テスト用　他攻略ｷｬﾗと比較できるようにイベントを見たら上がるようにしてありますが上で調整してください
 	[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + tf.koukando_eventup_katuraginomiya"]
