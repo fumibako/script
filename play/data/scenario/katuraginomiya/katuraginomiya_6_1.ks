@@ -100,7 +100,7 @@
 「そう……お会いするのを楽しみにしています」[p]
 
 [暗転]
-
+;====================================================
 [fadeoutse time=2000]
 [fadeoutbgm time=3000]
 [layopt layer=fix visible=false]
@@ -116,6 +116,8 @@
 [主人公通常]
 [freeimage layer=29 time=1000]
 [layopt layer=fix visible=true]
+[メッセージウィンドウ上ボタン表示]
+;====================================================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下の夢だったわ。」[p]
