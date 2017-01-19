@@ -36,7 +36,7 @@
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
-;【立ち絵】鳩_箏の柏葉
+;【立ち絵】鳩_箏の柏葉　夢と結びつけるために画像配置　一回のみにします。他で付けたい部分があれば以下をコピー。
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　I9IhvvVdPo_editing by＠名無しさん１'"]
 
