@@ -21,6 +21,7 @@
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 ――　夢を見た。[p]
 
+[イベントシーン構築枠茶色]
 ;【背景】財前邸居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"  time=1000]
 
@@ -111,15 +112,21 @@
 
 [暗転]
 
+
 ; 背景お稽古部屋？
 ;【背景】主人公邸 お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[layopt layer=fix visible=false]
+[image name="junbi" layer=29 x=1 y=1 storage="bg/bg_okeiko.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;【背景】主人公邸 部屋
-;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=100]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
+[freeimage layer=29 time=1000]
+[layopt layer=fix visible=true]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「財前様の夢？」[p]
 
