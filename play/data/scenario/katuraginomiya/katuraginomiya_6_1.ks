@@ -23,16 +23,14 @@
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
 ;[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg"]
+
 ドアのノックの音がした。[r]
 多分、母宮だろう。　話についても予想はしている。[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
 [playbgm storage="sittori_umikaze.ogg" loop=true]
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
-
-[stopbgm]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「どうぞ」[p]
@@ -45,7 +43,6 @@
 
 [whosay name="葛城宮妃" color=%mp.color]
 「……お話があります。　お手紙を書いたそうですわね」[p]
-
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ええ。　ですが、母宮に相談する歳でもありません」[p]
@@ -87,9 +84,9 @@
 「勿論、相手に無理強いをするつもりはありません」[p]
 
 [whosay name="葛城宮妃" color=%mp.color]
-「貴方が年頃の女性に好意を持つことだけで進歩だとは、[r]
-[sp]思っていますので、完全に反対はしませんが、[r]
-[sp]どんな方私も知ってから判断しますわ」[p]
+「貴方が年頃の女性に好意を持つことだけで進歩だとは[r]
+[sp]思っています。[sp]ですから、完全に反対はしませんが、[r]
+[sp]どんな方か、私も知ってから判断しますわ」[p]
 
 ;[葛城宮通常]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -120,10 +117,11 @@
 ;====================================================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「殿下の夢だったわ。」[p]
+「殿下の夢だったわ」[p]
 
 [主人公ポーズ指]
-（他のお手紙の方々と親しくなっては、殿下とは縁が遠くなってしまうのかしら？[r]
+（他のお手紙の方々と親しくなっては、殿下とは縁が遠く[r]
+[sp]なってしまうのかしら？[r]
 [sp]それにもっと淑女らしくならないといけないのだわ）[p]
 [イベントシーン終了]
 [イベントシーン終了４]
