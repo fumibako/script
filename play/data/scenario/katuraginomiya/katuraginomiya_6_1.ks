@@ -111,9 +111,9 @@
 ;【背景】主人公邸 部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
-[イベントシーン構築ボタン無し版]
 [freeimage layer=29 time=1000]
 [layopt layer=fix visible=true]
 
