@@ -18,7 +18,18 @@
 	[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + tf.koukando_eventup_katuraginomiya"]
 	@jump storage="event.ks" target=*start
 [endif]
-
+;===================================================================================================================================================
+;葛城宮　夢イベント　場合淑女度１４（20以上は手紙を出していたら有りえない数値）１イベントみたとき
+[if exp="(f.okeiko_month==7 && f.okeiko_week==2) && f.para_shujinkou_shukujodo > 20 && f.event_katuraginomiya[1]==1 && f.event_sijyou[0]==0"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_6_1.ks'"]
+	[eval exp="f.event_target='*replay_katuraginomiya_6_1'"]
+	[eval exp="f.event_type='talk'"]
+	共通イベント。四条の変数のままでok	
+	[eval exp="f.event_sijyou[1]=1"]
+	;テスト用　他攻略ｷｬﾗと比較できるようにイベントを見たら上がるようにしてありますが上で調整してください
+	[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + tf.koukando_eventup_katuraginomiya"]
+	@jump storage="event.ks" target=*start
+[endif]
 ;===================================================================================================================================================
 ;2◆葛城宮イベント判定katuraginomiya_event_2.ks　町にて、葛城宮に会う。お手紙を拝見するたびに色々なことを考えておられて素晴らしい方だと思っていたという。その後葛城宮のモノローグ
 ;even1をみている
