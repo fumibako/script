@@ -36,6 +36,10 @@
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
+;【立ち絵】鳩_箏の柏葉
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　I9IhvvVdPo_editing by＠名無しさん１'"]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 驚
 [主人公驚]
@@ -43,11 +47,8 @@
 [sp]あ・・・お[ruby text=こと]箏の上にのってはダメよ」[p]
 [主人公口通常]
 
-;【立ち絵】鳩_箏の柏葉
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" time=1000]
-[eval exp="f.haikei_credit='illustration　by　I9IhvvVdPo_editing by＠名無しさん１'"]
 #
-愛らしいハトが慣れた様子で、[ruby text=こと]箏の柏葉に留まった。[r]
+愛らしいハトが慣れた様子で、[ruby text=こと]箏の柏葉に[ruby text=と]留まった。[r]
 鳩は弦を見ながら首を動かし、まるで演奏を待ちわびているようだった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -88,7 +89,7 @@
 
 [手紙藤枝 fumi_number=]
 
-琴の奏者様へ[l][r]
+箏の奏者様へ[l][r]
 [r]
 [sp]桜の花が咲きまた散る季節[r]
 [r]
@@ -101,7 +102,7 @@
 [sp]貴方様の筝が上達し益々成長することを[r]
 願っています。[r]
 [r]
-[sp]ちなみに毎日、２～３時間ほど練習すると効果的です。[r]
+[sp]ちなみに毎日、[ruby text=に]二～[ruby text=さん]三時間ほど練習すると効果的です。[r]
 [r]
 [sp]僕は名乗るほどの者ではありませんので[r]
 この手紙の事、僕の事はお構いなく。[p]
