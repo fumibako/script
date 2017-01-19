@@ -27,14 +27,6 @@
 	;共通イベント。四条の変数のままでok	
 	[eval exp="f.event_sijyou[1]=1"]
 	@jump storage="event.ks" target=*start
-	;葛城宮の場合淑女度１４（15以上は手紙を出していたら有りえない数値）	
-	;[elsif exp="tf.a == f.para_sijyou_koukando && f.katuraginomiya_au==0 && f.para_shujinkou_shukujodo > 14"]
-	;[eval exp="f.event_storage='katuraginomiya/katuraginomiya_6_1.ks'"]
-	;[eval exp="f.event_target='*replay_katuraginomiya_6_1'"]
-	;[eval exp="f.event_type='talk'"]
-	;共通イベント。四条の変数のままでok	
-	;[eval exp="f.event_sijyou[1]=1"]
-	;@jump storage="event.ks" target=*start
 	[elsif exp="tf.a == f.para_sijyou_koukando && f.sijyou_au==0 && f.para_shujinkou_shukujodo < 15"]
 	;四条の好感度と一番高い数値が同じであるとき淑女度が15以下（15以上は手紙を出していたら有りえない数値）	
 	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks'"]
