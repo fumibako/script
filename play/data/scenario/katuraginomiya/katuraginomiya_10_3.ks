@@ -1,7 +1,7 @@
 ;6.5回目イベント　
 ;葛城宮から手紙　
 ;=======================お芝居の準備中です==================================
-*replay_katuraginomiya10_3
+*replay_katuraginomiya_10_3
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*10_3 storage="katuraginomiya/preload_katuraginomiya.ks"]
