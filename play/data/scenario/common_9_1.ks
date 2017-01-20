@@ -229,7 +229,7 @@
 [glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizenzaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
 [glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
 ;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
-[if exp="f.event_hujieda[5]=1"]
+[if exp="f.event_hujieda[5]==1"]
 [glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=200 color=white]
 [endif]
 [glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=550 y=300 color=white]
@@ -323,11 +323,9 @@
 [glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
 [glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
 ;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
-[if exp="f.event_hujieda[5]=1"]
+[if exp="f.event_hujieda[5]==1"]
 [glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=200 color=white]
 [endif]
-
-[glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=550 y=300 color=white]
 [autosave]
 [s]
 

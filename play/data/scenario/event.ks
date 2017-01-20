@@ -1,7 +1,8 @@
 *start
-@layopt layer=message1 page=fore visible = false
+;休憩中画像消去。順番を最初にすると消えてくれるでしょうか？
 [freeimage layer = 26]
 [freeimage layer = 27]
+@layopt layer=message1 page=fore visible = false
 
 [if exp="f.event_type=='talk'"]
 [freeimage layer = 26]

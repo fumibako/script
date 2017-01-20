@@ -7,10 +7,10 @@
 ;↓8月までのイベントを見た際の好感度増加値です(暫定)
 [eval exp="tf.koukando_eventup_hujieda=5"]
 ;↓以下にイベント判定を追記
-;◆藤枝イベント判定【手紙が来る】条件 4月3週までにお箏の練習を2回以上で1度だけ発生
+;◆藤枝イベント判定【手紙が来る】条件 お箏の練習を2回以上で1度だけ発生
 ;9月1週個別ルート分岐が選択肢による流れなので、事前の好感度増加は無くても大丈夫かもしれません
 ;しかし他の攻略対象に比べ手紙による好感度up期間が短いため、その分の加算は必要かもしれないと考えて8月まではイベントによる好感度加算を入れています
-[if exp="(f.okeiko_month==4 && f.okeiko_week==4) && f.event_hujieda[1]==0 && f.para_shujinkou_koto_kaisuu>=2"]
+[if exp="f.okeiko_month==4 && f.event_hujieda[1]==0 && f.para_shujinkou_koto_kaisuu>=2"]
 	[eval exp="f.event_storage='hujieda/hujieda_4_4.ks'"]
 	[eval exp="f.event_target='replay_hujieda_4_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -19,8 +19,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆藤枝イベント判定【手紙が来る2】条件 5月3週までにお箏の練習を2回以上、手紙1通目を見ている場合に1度だけ発生
-[if exp="(f.okeiko_month==5 && f.okeiko_week==4) && f.event_hujieda[1]==1 && f.event_hujieda[2]==0 && f.para_shujinkou_koto_kaisuu>=2"]
+;◆藤枝イベント判定【手紙が来る2】条件 お箏の練習を2回以上、手紙1通目を見ている場合に1度だけ発生
+[if exp="f.okeiko_month==5 && f.event_hujieda[1]==1 && f.event_hujieda[2]==0 && f.para_shujinkou_koto_kaisuu>=2"]
 	[eval exp="f.event_storage='hujieda/hujieda_5_4.ks'"]
 	[eval exp="f.event_target='replay_hujieda_5_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -29,8 +29,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆藤枝イベント判定【手紙が来る3】条件 6月3週までにお箏の練習を2回以上、手紙2通目を見ている場合に1度だけ発生
-[if exp="(f.okeiko_month==6 && f.okeiko_week==4) && f.event_hujieda[2]==1 && f.event_hujieda[3]==0 && f.para_shujinkou_koto_kaisuu>=2"]
+;◆藤枝イベント判定【手紙が来る3】条件 6月にお箏の練習を2回以上、手紙2通目を見ている場合に1度だけ発生
+[if exp="f.okeiko_month==6 && f.event_hujieda[2]==1 && f.event_hujieda[3]==0 && f.para_shujinkou_koto_kaisuu>=2"]
 	[eval exp="f.event_storage='hujieda/hujieda_6_4.ks'"]
 	[eval exp="f.event_target='replay_hujieda_6_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -39,8 +39,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆藤枝イベント判定【手紙が来る4】条件 7月3週までにお箏の練習を2回以上、手紙3通目を見ている場合に1度だけ発生
-[if exp="(f.okeiko_month==7 && f.okeiko_week==4) && f.event_hujieda[3]==1 && f.event_hujieda[4]==0 && f.para_shujinkou_koto_kaisuu>=2"]
+;◆藤枝イベント判定【手紙が来る4】条件 7月にお箏の練習を2回以上、手紙3通目を見ている場合に1度だけ発生
+[if exp="f.okeiko_month==7 && f.event_hujieda[3]==1 && f.event_hujieda[4]==0 && f.para_shujinkou_koto_kaisuu>=2"]
 	[eval exp="f.event_storage='hujieda/hujieda_7_4.ks'"]
 	[eval exp="f.event_target='replay_hujieda_7_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -49,8 +49,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆藤枝イベント判定【手紙のお返事】条件 8月3週までにお箏の練習を2回以上、手紙4通目を見ている場合に1度だけ発生
-[if exp="(f.okeiko_month==8 && f.okeiko_week==4) && f.event_hujieda[4]==1 && f.event_hujieda[5]==0 && f.para_shujinkou_koto_kaisuu>=2"]
+;◆藤枝イベント判定【手紙のお返事】条件 8月にお箏の練習を2回以上、手紙4通目を見ている場合に1度だけ発生
+[if exp="f.okeiko_month==8 && f.event_hujieda[4]==1 && f.event_hujieda[5]==0 && f.para_shujinkou_koto_kaisuu>=2"]
 	[eval exp="f.event_storage='hujieda/hujieda_8_4.ks'"]
 	[eval exp="f.event_target='replay_hujieda_8_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -58,6 +58,7 @@
 	[eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando+tf.koukando_eventup_hujieda"]
 	@jump storage="event.ks" target=*start
 [endif]
+
 ;◆藤枝個別ルート分岐 f.event_hujieda[6]はcommon_9_1.ksから選択肢分岐で実装しています
 
 ;◆藤枝イベント判定【再び手紙が届く】条件 藤枝ルートかつ9月2週に1度だけ発生(物語の流れ上、必ず通過することが必要なイベントであるため原案の"お箏の練習を1回以上した場合に"という条件は除きました)
