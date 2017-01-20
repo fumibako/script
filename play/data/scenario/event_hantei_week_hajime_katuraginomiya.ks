@@ -72,7 +72,7 @@
 ;=======================================================================================
 ;5◆葛城宮イベント判定katuraginomiya_9_3.ks ルート決定後なので条件はすくなめ（9/3,かつ　au==1のとき）
 [if exp="(f.okeiko_month==9 && f.okeiko_week==3) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[5]==0"]
-	[eval exp="f.event_storage='katuraginomiya_9_3.ks'"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_3.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_3'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[5]=1"]
@@ -84,7 +84,7 @@
 ;=======================================================================================
 ;7◆葛城宮イベント判定 katuraginomiya_10_2.ks
 [if exp="(f.okeiko_month==10 && f.okeiko_week==2) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[7]==0"]
-	[eval exp="f.event_storage='katuraginomiya_9_3.ks'"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_3.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_10_2'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[7]=1"]
@@ -93,7 +93,7 @@
 ;=======================================================================================
 ;8◆葛城宮イベント判定 katuraginomiya_10_3.ks
 [if exp="(f.okeiko_month==10 && f.okeiko_week==3) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[8]==0"]
-	[eval exp="f.event_storage='katuraginomiya_10_3.ks'"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_10_3.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_10_3'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[8]=1"]
@@ -102,7 +102,7 @@
 ;=======================================================================================
 ;9◆葛城宮イベント判定 katuraginomiya_11_1.ks
 [if exp="(f.okeiko_month==11 && f.okeiko_week==1) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[9]==0"]
-	[eval exp="f.event_storage='katuraginomiya_11_1.ks'"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_11_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_11_1'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[9]=1"]
@@ -115,7 +115,7 @@
 ;11◆葛城宮イベント判定 katuraginomiya_11_4.ks
 ;別ファイルへ　週終わりファイルへ
 ;[if exp="(f.okeiko_month==11 && f.okeiko_week==4) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[12]==0"]
-;	[eval exp="f.event_storage='katuraginomiya_11_4.ks'"]
+;	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_11_4.ks'"]
 ;	[eval exp="f.event_target='*replay_katuraginomiya_11_4'"]
 ;	[eval exp="f.event_type='talk'"]
 ;	[eval exp="f.event_katuraginomiya[11]=1"]
@@ -124,7 +124,7 @@
 ;=======================================================================================
 ;12◆葛城宮イベント判定 katuraginomiya_12_1.ks(katuraginomiya12_1ｂ.ks)
 [if exp="(f.okeiko_month==12 && f.okeiko_week==1) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[12]==0"]
-	[eval exp="f.event_storage='katuraginomiya_12_1.ks'"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_12_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_12_1'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[12]=1"]
@@ -133,7 +133,7 @@
 ;=======================================================================================
 ;13◆葛城宮イベント判定 katuraginomiya_1_3.ks
 [if exp="(f.okeiko_month==1 && f.okeiko_week==3) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[13]==0"]
-	[eval exp="f.event_storage='katuraginomiya_1_3.ks'"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_1_3.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_1_3'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[13]=1"]
@@ -142,7 +142,7 @@
 ;=======================================================================================
 ;14◆葛城宮イベント判定katuraginomiya_2_2.ks(katuraginomiya2_2ｂ.ks)
 [if exp="(f.okeiko_month==2 && f.okeiko_week==2) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[14]==0"]
-	[eval exp="f.event_storage='katuraginomiya_2_2.ks'"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_2_2.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_2_2'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[14]=1"]
