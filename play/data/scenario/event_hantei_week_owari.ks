@@ -56,6 +56,14 @@
 ;=============================================
 ;◆葛城宮イベント判定
 ;=============================================
+;6◆葛城宮イベント判定katuraginomiya_9_4.ks ルート決定後なので条件はすくなめ（9/4,かつ　au==1のとき）
+[if exp="(f.okeiko_month==9 && f.okeiko_week==4) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[6]==0"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_4.ks'"]
+	[eval exp="f.event_target='*replay_katuraginomiya_9_4'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[6]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
 ;11◆葛城宮イベント判定 katuraginomiya_11_4.ks
 ;別ファイルへ　週終わりファイルへ
 [if exp="(f.okeiko_month==11 && f.okeiko_week==4) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[11]==0"]
