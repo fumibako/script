@@ -31,18 +31,7 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;===================================================================================================================================================
-;2◆葛城宮イベント判定katuraginomiya_event_2.ks　町にて、葛城宮に会う。お手紙を拝見するたびに色々なことを考えておられて素晴らしい方だと思っていたという。その後葛城宮のモノローグ
-;even1をみている
-[if exp="(f.okeiko_month==7 && f.okeiko_week==4) && f.para_shujinkou_shukujodo > 20 && f.event_katuraginomiya[2]==0 && f.event_katuraginomiya[1]==1 &&  f.katuraginomiya_au==0"]
-;&& f.para_sijyou_koukando < 11 && f.para_kuroda_koukando < 11 && f.para_hujieda_koukando < 11 必要であれば追加してください	
-	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_event_2.ks'"]
-	[eval exp="f.event_target='*replay_katuraginomiya_event_2'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_katuraginomiya[2]=1"]
-	;テスト用
-	[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + tf.koukando_eventup_katuraginomiya"]
-	@jump storage="event.ks" target=*start
-[endif]
+;2◆葛城宮イベント判定katuraginomiya_event_2.ks 別ファイルへ
 ;=======================================================================================
 ;3◆葛城宮イベント判定katuraginomiya_event_3.ks 皇后様のお印入りのお茶事の招待状が届く
 ;even2をみている
