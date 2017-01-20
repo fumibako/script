@@ -84,19 +84,19 @@ f.para_shujinkou_koto=f.para_shujinkou_j_koto + "/" + f.para_shujinkou_jukuren_m
 
 [iscript]
 if (f.para_shujinkou_shukujodo >= 200 ){f.shougou = "ミルトニアの淑女";}
-else if (f.para_shujinkou_shukujodo >= 100 ){f.shougou = "麗しき淑女";}
-else if (f.para_shujinkou_shukujodo >= 90 ){f.shougou = "気高き淑女";}
+else if (f.para_shujinkou_shukujodo >= 100 ){f.shougou = "　麗しき淑女";}
+else if (f.para_shujinkou_shukujodo >= 90 ){f.shougou = "　気高き淑女";}
 else if (f.para_shujinkou_shukujodo >= 80 ){f.shougou = "優美なる淑女";}
 else if (f.para_shujinkou_shukujodo >= 70 ){f.shougou = "たおやかな乙女";}
-else if (f.para_shujinkou_shukujodo >= 60 ){f.shougou = "深窓の乙女";}
+else if (f.para_shujinkou_shukujodo >= 60 ){f.shougou = "　深窓の乙女";}
 else if (f.para_shujinkou_shukujodo >= 50 ){f.shougou = "花のような乙女";}
-else if (f.para_shujinkou_shukujodo >= 40 ){f.shougou = "可憐な乙女";}
-else if (f.para_shujinkou_shukujodo >= 30 ){f.shougou = "愛らしい娘";}
-else if (f.para_shujinkou_shukujodo >= 20 ){f.shougou = "純真な娘";}
+else if (f.para_shujinkou_shukujodo >= 40 ){f.shougou = "　可憐な乙女";}
+else if (f.para_shujinkou_shukujodo >= 30 ){f.shougou = "　愛らしい娘";}
+else if (f.para_shujinkou_shukujodo >= 20 ){f.shougou = "　　純真な娘";}
 else if (f.para_shujinkou_shukujodo >= 15 ){f.shougou = "努力家の娘";}
-else if (f.para_shujinkou_shukujodo >= 10 ){f.shougou = "夢見る娘";}
-else if (f.para_shujinkou_shukujodo >= 5 ){f.shougou = "無垢な娘";}
-else {f.shougou = "お転婆娘";}
+else if (f.para_shujinkou_shukujodo >= 10 ){f.shougou = "　　夢見る娘";}
+else if (f.para_shujinkou_shukujodo >= 5 ){f.shougou = "　　無垢な娘";}
+else {f.shougou = "　　お転婆娘";}
 [endscript]
 
 ;レイヤー24にパラメータ画像を表示
@@ -142,7 +142,7 @@ else {f.shougou = "お転婆娘";}
 [endif]
 
 ;レイヤー24にパラメータテキストを表示
-[ptext text=&f.shougou layer=24 size=25 x=800 y=55 color=black bold=bold]
+[ptext text=&f.shougou layer=24 size=23 x=770 y=55 color=black bold=bold]
 [ptext text=&f.para_shujinkou_shukujodo layer=24 size=20 x=915 y=93 color=black bold=bold]
 [ptext text=&f.para_shujinkou_tairyoku layer=24 size=20 x=870 y=158 color=black bold=bold]
 [ptext text=&f.para_shujinkou_kiryoku layer=24 size=20 x=870 y=195 color=black bold=bold]
@@ -201,21 +201,9 @@ $('.junbi_girl').remove();
 *sijyou_test_hyouji_owari
 ;◆◆テスト表示
 [if exp="(tf.test_gamen==true && tf.test_gamen_sijyou==false)"]
-@layopt layer=message1 page=fore visible = false
-[current layer="message1"]
-;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message1 left=0 width=500 height=120 top=120 page=fore color=white opacity=150]
-@layopt layer=message1 page=fore visible = true
-[font color=glay size=15]
-f.okeiko_para_0tairyoku_1kiryoku=[emb exp="f.okeiko_para_0tairyoku_1kiryoku"][r]
-便せんの種類f.binsen_list_hairetsu［f.binsen_number]［0]=[emb exp="f.binsen_list_hairetsu[f.binsen_number][0]"]
-;↓他ルートテスト用に準備中です
-;攻略対象名テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_oaite_name_fumi_hensin_speed"],好感度[emb exp="f.para_oaite_name_koukando"][r]
-
-;攻略対象名ルート(1○,0×)=[emb exp="f.oaite_name_au"],お見合い(1後,0未)=[emb exp="f.oaite_name_omiai"][r]
-
-[resetfont]
+@jump storage="okeiko_hyouji_test_hyouji.ks" target=*start
 [endif]
+
 *test_hyouji_owari
 [if exp="f.event_advice == 0"]
 @jump target=*button_back_test
