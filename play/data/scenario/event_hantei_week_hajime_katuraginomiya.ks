@@ -142,7 +142,16 @@
 ;15 katuraginomiya_3_4_nomalED.ks
 ;16 katuraginomiya_3_4epilogue_goodED.ks
 ;散策
-;1(17)katuraginomiya_bazaar.ks茶道が高い
+;=======================================================================================
+;1(17)katuraginomiya_bazaar.ks茶道が高い2/3~3/4→3 *replay_katuraginomiya_bazaar
+[if exp="( (f.okeiko_month==2 || f.okeiko_month==3) && f.okeiko_week==3 ) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[14]==0"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_2_2.ks'"]
+	[eval exp="f.event_target='*replay_katuraginomiya_2_2'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[14]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+;========================以下は別ファイル=================================
 ;2(18)katuraginomiya_sansaku1.ks
 ;3(19)katuraginomiya_sansaku2.ks
 ;=========================================================
