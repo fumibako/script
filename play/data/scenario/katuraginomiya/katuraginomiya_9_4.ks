@@ -464,10 +464,13 @@ $('.junbi_girl').remove();
 [主人公ポーズ片手]
 #
 その言葉に私は、あの時の恐怖を思い出して体が震える。[p]
-[葛城宮サイズ隣に並ぶ storage="bg/room_niwa.jpg"]
+[暗転２ storage="bg/room_niwa.jpg"]
+[葛城宮サイズ隣に並ぶ]
 [葛城宮ベース私服]
 [葛城宮通常]
 [葛城宮憂い]
+[暗転２終了]
+
 すると殿下に抱きしめられた。[p]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮目閉じ]
