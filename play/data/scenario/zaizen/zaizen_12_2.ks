@@ -30,7 +30,7 @@
 [eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
 [endif]
 
-これで読んだ本は８冊目。[r]
+これで読んだ本は[ruby text=はっ]八[ruby text=さつ]冊目。[r]
 専門用語もあり、読み解くのには時間がかかった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
