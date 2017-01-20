@@ -523,6 +523,12 @@
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
 [if exp="tf.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) && ( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good) && f.para_shujinkou_shukujodo >= 80"]
+[暗転２ storage=bg/zaizen_paty_niwa.jpg]
+;【背景】パーティ会場庭
+[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
+[財前ベース燕尾服]
+[財前通常]
+[暗転２終了]
 @jump storage="zaizen/zaizen_3_4_good.ks" target="seen_1"
 [endif]
 ;====================================================================================
