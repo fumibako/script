@@ -184,6 +184,7 @@ if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==0){
 	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
 	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
 	f.para_shujinkou_j_koto = f.para_shujinkou_j_koto + f.okeiko_para_pre_random_jukurendo;
+	f.para_shujinkou_koto_kaisuu = f.para_shujinkou_koto_kaisuu + 1; //お箏の練習回数に1加算
 }
 if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==1){
 	if(f.para_shujinkou_kiryoku_max > 96){
@@ -198,11 +199,11 @@ if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==1){
 	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
 	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
 	f.para_shujinkou_j_koto = f.para_shujinkou_j_koto + f.okeiko_para_pre_random_jukurendo;
+	f.para_shujinkou_koto_kaisuu = f.para_shujinkou_koto_kaisuu + 1; //お箏の練習回数に1加算
 }
 
 f.para_shujinkou_tairyoku_now = f.para_shujinkou_tairyoku_now - f.okeiko_hituyou_tairyoku;
 f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_now - f.okeiko_hituyou_kiryoku;
-f.para_shujinkou_koto_kaisuu = f.para_shujinkou_koto_kaisuu + 1; //お箏の練習回数に1加算
 //↓以下表示内容処理
 if(f.okeiko_para_pre_random_1_3==0){
 	f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'上がりました';

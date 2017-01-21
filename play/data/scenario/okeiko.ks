@@ -182,10 +182,11 @@ f.sijyou_fumi_toutyakumachi_sports = f.sijyou_fumi_toutyakumachi_sports - 1;
 [if exp="f.tukihajime == 1"]
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
+;◆その月のお箏練習回数リセット
+[eval exp="f.para_shujinkou_koto_kaisuu=0"]
 ;◆月始めのみ…背景変更:月始め切り替え背景
 [eval exp="f.okeiko_bg_tukihajime = 'bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
 [chara_mod name="bg" storage=&f.okeiko_bg_tukihajime]
-[eval exp="f.tukihajime = 0"]
 ;【SE】スズメのさえずり
 [playse storage=tori_suzume.ogg loop=false ]
 [wait time=1000]

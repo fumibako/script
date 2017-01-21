@@ -162,7 +162,6 @@ else {f.shougou = "　　お転婆娘";}
 [ptext text="語学：" layer=24 size=20 x=770 y=371 color=black bold=bold]
 [ptext text="お箏：" layer=24 size=20 x=770 y=408 color=black bold=bold]
 
-
 ;◆月始めのみの処理
 [if exp="f.tukihajime == 1"]
 @jump target=*tukihajime
@@ -304,7 +303,6 @@ $('.junbi_girl').remove();
 ;◆月始めのみ：便箋追加
 ;【便箋追加】（↓可能なら文字色変更表示）
 [iscript]
-f.para_shujinkou_koto_kaisuu=0; //その月のお箏練習回数リセット
 f.binsen_hairetsu_number=f.binsen_list_hairetsu.length;
 f.binsen_hairetsu_number_a=f.binsen_hairetsu_number;
 f.binsen_hairetsu_number_b=f.binsen_hairetsu_number+1;
@@ -331,7 +329,7 @@ if(f.okeiko_month==8){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("ラムネ瓶の模様",0,0,2,0,1,"",8);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("向日葵の模様",1,0,0,-2,0,8,);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("向日葵の模様",1,0,0,-2,0,8,"");
 }
 if(f.okeiko_month==9){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
@@ -373,8 +371,9 @@ if(f.okeiko_month==3){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("雛飾りの模様",0,0,2,0,1,"",3);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("うぐいすの模様",1,0,0,-2,0,3);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("うぐいすの模様",1,0,0,-2,0,3,"");
 }
+
 f.binsen_toutyaku_info1="「"+f.binsen_list_hairetsu[f.binsen_hairetsu_number_a][0]+"」「"+f.binsen_list_hairetsu[f.binsen_hairetsu_number_b][0]+"」";
 f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 [endscript]
@@ -424,7 +423,7 @@ $('.junbi_girl').remove();
 	[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 	[wait time=10]
 	[layopt layer=29 visible=true]
-;主人公L登場時被せ
+	;主人公L登場時被せ
 	[image name="junbi_girl" layer=29 storage="girl/L/gitl_L_all_futuu.png" left=50 top=220 time=300 visible=true]
 	[wait time=10]
 	[chara_mod name="A_base" storage="girl/L/base.png" time=0]
@@ -435,10 +434,10 @@ $('.junbi_girl').remove();
 	[wait time=10]
 	[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 	[wait time=10]
-[wait time=200]
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
+	[wait time=200]
+	[iscript]
+	$('.junbi_girl').remove();
+	[endscript]
 [endif]
 [layopt layer=26 visible=true]
 [layopt layer=27 visible=true]
@@ -449,16 +448,16 @@ $('.junbi_girl').remove();
 	[eval exp="f.fumi_toutyaku_info1=f.fumi_toutyaku_oaite"]
 	[eval exp="f.fumi_toutyaku_info2='からお手紙が届いております'"]
 	[ptext text=&f.fumi_toutyaku_info1 layer=27 size=21 x=290 y=150 color=darkslateblue bold=bold]
-[wait time=10]
+	[wait time=10]
 	[ptext text=&f.fumi_toutyaku_info2 layer=27 size=21 x=290 y=185 color=darkslateblue bold=bold]
-[wait time=10]
-;【SE】キラキラ
-[playse storage=kira.ogg loop=false ]
+	[wait time=10]
+	;【SE】キラキラ
+	[playse storage=kira.ogg loop=false ]
 [else]
 	[ptext text=&f.fumi_toutyaku_info layer=27 size=21 x=290 y=165 color=darkslateblue bold=bold]
-[wait time=10]
-;【SE】キラキラ
-[playse storage=kira.ogg loop=false ]
+	[wait time=10]
+	;【SE】キラキラ
+	[playse storage=kira.ogg loop=false ]
 [endif]
 [p]
 [freeimage layer = 26]
