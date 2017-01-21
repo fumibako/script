@@ -116,7 +116,7 @@
 	[eval exp="f.event_common[10]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-
+*common_event_hantei_owari
 ;=============================================
 ;◆四条イベント判定
 ;=============================================
