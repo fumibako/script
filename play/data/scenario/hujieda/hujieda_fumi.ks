@@ -17,6 +17,7 @@
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 四月』[p]
+[endif]
 [手紙藤枝 fumi_number=]
 
 箏の奏者様へ[l][r]
@@ -52,6 +53,7 @@
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 五月』[p]
+[endif]
 [手紙藤枝 fumi_number=]
 
 [ruby text=こと]箏の奏者様へ[l][r]
@@ -93,6 +95,7 @@
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 六月』[p]
+[endif]
 [手紙藤枝 fumi_number=]
 [ruby text=こと]箏の奏者様へ[l][r]
 [r]
@@ -136,6 +139,7 @@
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 七月』[p]
+[endif]
 [手紙藤枝 fumi_number=]
 
 [sp][ruby text=こと]箏の奏者様へ[l][r]
@@ -184,6 +188,7 @@
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 八月』[p]
+[endif]
 [手紙藤枝 fumi_number=]
 
 [名字]　[名前]様へ [l][r]
@@ -227,6 +232,7 @@
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 九月』[p]
+[endif]
 [手紙藤枝 fumi_number=]
 [名字][名前] 様へ[l][r]
 [r]
@@ -282,6 +288,7 @@
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『趣味について』[p]
+[endif]
 ;最大12行くらい？
 ;#
 [endif]
