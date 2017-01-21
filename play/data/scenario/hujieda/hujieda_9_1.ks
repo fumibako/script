@@ -46,11 +46,11 @@
 [主人公口開] 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「お父様、結婚は考えられません！[r]
-[sp]私にはまだ学ぶべきことがあります」[p] 
+[sp]私には、まだ学ぶべきことがあります」[p] 
 
 [whosay name=&sf.father_name color="DarkSlateBlue"] 
-「[名前]にはまだ早かったか……。[r] 
-[sp]そういえば最近はお筝のお稽古に熱心なようだね」[p] 
+「[名前]には、まだ早かったか……。[r] 
+[sp]そういえば、最近はお筝のお稽古に熱心なようだね」[p] 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;【立ち絵】主人公：通常 
