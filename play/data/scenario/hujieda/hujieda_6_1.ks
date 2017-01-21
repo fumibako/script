@@ -45,24 +45,26 @@
 
 #
 私は鳩さんを追いかけた。[p]
-白い霧が立ち込め、。[p]
+白い霧が立ち込め、視界が白く染まる[p]
 
-お[ruby text=こと]箏を爪びく音がする。[p]
+お[ruby text=こと]箏を爪びく音がした。[p]
 ;箏SE
 ;【SE】お箏（短くド・レ…）
 [playse storage=koto_dore.ogg loop=false ]
-
+[主人公眉通常]
 [主人公目閉じ]
+[主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （優しい音だわ）[p]
 
-#
-霧が晴れ、月の光を映した湖の美しい夜景が広がる。[p]
 
 [whosay name=？？？]
-「僕は、貴方の[ruby text=こと]箏の音を聞き続けたい」[p]
+「貴方の[ruby text=こと]箏の音を聞き続けたい」[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_moon_lake.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration by＠名無しさん１'"]
+#
+声とともに[r]
+霧が晴れ、月の光を映した湖の美しい夜景が広がる。[p]
 
 [主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
