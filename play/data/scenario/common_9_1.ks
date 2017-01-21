@@ -21,6 +21,38 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。選択肢までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*sentaku
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false]
 
@@ -221,6 +253,7 @@
 
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false ]
+*sentaku
 #
 どなたとお会いしましょうか？
 ;【分岐】暫定的に各シナリオ9月1週へ飛ぶ処理を入れています(現状ではイベント後テストページに移動します。後日お稽古パートへ戻る処理を追記予定です)
@@ -254,9 +287,9 @@
 
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 「はい、お父様」[p]
-
+#
 [eval exp="f.event_oaite_mitei=1"]
-@jump storage="event.ks" target=*event_owari
+@jump storage="event_hantei_week_hajime.ks" target=*common_event_hantei_owari
 
 ;回想記録終了 
 [endreplay] 
