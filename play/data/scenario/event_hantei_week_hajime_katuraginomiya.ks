@@ -9,7 +9,7 @@
 [eval exp="tf.koukando_eventup_katuraginomiya=5"]
 ;===================================================================================================================================================
 ;1◆葛城宮イベント判定 katuraginomiya_event_1.ks 他好感度が一定以下_淑女度15以上 町で葛城宮に会い胸が高鳴る→手紙がくる 梅雨の晴れ 20以下　藤枝はイベントが被るので10以下
-[if exp="(f.okeiko_month==6 && f.okeiko_week==3) && f.event_oaite_mitei==1 && f.para_shujinkou_shukujodo > 15 && f.event_katuraginomiya[1]==0 && f.katuraginomiya_au == 0 && f.para_sijyou_koukando < 21 && f.para_kuroda_koukando < 21 && f.para_hujieda_koukando < 11"]
+[if exp="(f.okeiko_month==6 && f.okeiko_week==3) && f.para_shujinkou_shukujodo > 15 && f.event_katuraginomiya[1]==0 && f.katuraginomiya_au == 0 && f.para_sijyou_koukando < 21 && f.para_kuroda_koukando < 21 && f.para_hujieda_koukando < 11"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_event_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_event_1'"]
 	[eval exp="f.event_type='talk'"]
@@ -49,7 +49,7 @@
 ;=======================================================================================
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
 ;even3をみている
-[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_katuraginomiya[4]==0 && f.event_katuraginomiya[3]==1 && f.katuraginomiya_au==0 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando && f.para_katuraginomiya_koukando > f.para_kuroda_koukando && f.para_katuraginomiya_koukando > f.para_hujieda_koukando)"]
+[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_oaite_mitei==1 && f.event_katuraginomiya[4]==0 && f.event_katuraginomiya[3]==1 && f.katuraginomiya_au==0 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando && f.para_katuraginomiya_koukando > f.para_kuroda_koukando && f.para_katuraginomiya_koukando > f.para_hujieda_koukando)"]
 ;&& f.para_shujinkou_shukujodo > 20  必要であれば追加してください		
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
