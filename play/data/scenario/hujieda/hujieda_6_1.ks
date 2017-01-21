@@ -44,8 +44,8 @@
 「あ！　待って！」[p]
 
 #
-私は鳩さんを追いかけた。[p]
-白い霧が立ち込め、視界が白く染まる[p]
+私は鳩さんを追いかけた。[r]
+白い霧が立ち込め、視界が白く染まる。[p]
 
 お[ruby text=こと]箏を爪びく音がした。[p]
 ;箏SE
@@ -63,8 +63,7 @@
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_moon_lake.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration by＠名無しさん１'"]
 #
-声とともに[r]
-霧が晴れ、月の光を映した湖の美しい夜景が広がる。[p]
+声とともに霧が晴れ、月の光を映した湖の美しい夜景が広がる。[p]
 
 [主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
