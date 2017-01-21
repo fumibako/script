@@ -125,8 +125,7 @@
 [fadeoutbgm time=3000]
 #
 ;次のイベントにでてしまう名前残りを消去
-
-
+[eval exp="f.para_shujinkou_koto_kaisuu=0"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
