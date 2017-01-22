@@ -486,7 +486,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[2]=1;
 [endscript]
 		[eval exp="f.test='手紙到着財前'+f.target_fumi_toutyaku"]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_3
 [iscript]	
@@ -503,7 +503,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi3");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[3]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_4
 [iscript]	
@@ -520,7 +520,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi4");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[4]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_5
 [iscript]
@@ -537,7 +537,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi5");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[5]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_6
 [iscript]	
@@ -554,7 +554,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi6");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[6]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_7
 [iscript]	
@@ -571,7 +571,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi7");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[7]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_8
 [iscript]	
@@ -588,7 +588,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi8");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[8]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_9
 [iscript]	
@@ -605,7 +605,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi9");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[9]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_10
 [iscript]	
@@ -622,7 +622,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi10");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[10]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_11
 [iscript]	
@@ -639,7 +639,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi11");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[11]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_12
 [iscript]	
@@ -656,7 +656,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi12");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[12]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 *fumi_toutyaku_zaizen_13
 [iscript]	
@@ -673,7 +673,7 @@ f.fumi_list_zaizen_target.push("*zaizen_fumi13");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[13]=1;
 [endscript]
-@jump storage="01_sijyou_hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 ;◆四条手紙到着
 *fumi_toutyaku_sijyou_2
