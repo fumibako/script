@@ -78,6 +78,9 @@
 [ptext text="葛城宮イベント9/1前日最後までみた=1 それ以外=0" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
 [edit left=345 top=310 width=200 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
 
+[ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
+[edit left=345 top=460 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
+
 [iscript]
 //入力済デフォルト値の設定
 $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
@@ -108,6 +111,8 @@ $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
 $("input[name='f.para_sijyou_koukando']").val("10");
 $("input[name='f.event_katuraginomiya3']").val("0"); //デフォルト値0にしています。ご自由に設定してください
+
+$("input[name='tf.advice_event_hyouji']").val("0");
 
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
@@ -146,6 +151,7 @@ f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
 
 f.event_katuraginomiya[3] = parseInt($("input[name='f.event_katuraginomiya3']").val());
+tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
 [endscript]
 
 

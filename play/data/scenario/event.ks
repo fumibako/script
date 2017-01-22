@@ -114,14 +114,35 @@ TG.stat.stack["call"] = [];
 [endif]
 
 ;◆主人公立ち絵を戻す
-[chara_mod name="A_base" storage="girl/L/base.png" time=0]
+;主人公L画像表示:エラー対策で、一旦レイヤリセット後にchara_newでの表示としてみます
+;主人公L登場時被せ
+[image name="junbi_girl" layer=29 storage="girl/L/gitl_L_all_futuu.png" left=50 top=220 time=300 visible=true]
 [wait time=10]
-[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
+;一旦主人公L画像レイヤをリセット
+[freeimage layer = 3]
+[freeimage layer = 4]
+[freeimage layer = 5]
+[freeimage layer = 6]
+[layopt layer=3 visible=true]
+[layopt layer=4 visible=true]
+[layopt layer=5 visible=true]
+[layopt layer=6 visible=true]
+;主人公L画像を表示
+[chara_new name="A_base" storage="girl/L/base.png"]
+[chara_show left=50 top=220 layer=3 name="A_base" time=0]
 [wait time=10]
-[chara_mod name="A_me" storage="girl/L/me_futuu.png" time=0]
+[chara_new name="A_mayu" storage="girl/L/mayu_futuu.png"]
+[chara_show left=50 top=220 layer=4 name="A_mayu" time=0]
 [wait time=10]
-[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
+[chara_new name="A_me" storage="girl/L/me_futuu.png"]
+[chara_show left=50 top=220 layer=5 name="A_me" time=0]
 [wait time=10]
+[chara_new name="A_kuti" storage="girl/L/kuti_futuu.png"]
+[chara_show left=50 top=220 layer=6 name="A_kuti" time=0]
+[wait time=200]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 
 ;背景変更:主人公邸_お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko_main.jpg"]
@@ -469,33 +490,8 @@ TG.stat.stack["call"] = [];
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
 
-;セーブ等ボタン配置
-[if exp="sf.FButton=='ON'"]
-[else]
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-[endif]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+[イベントシーン構築]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -649,33 +645,7 @@ TG.stat.stack["call"] = [];
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[eval exp="f.message_storage='message_bg/frame_red.png'"]
-[chara_mod name="message_bg" storage=&f.message_storage]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
-
-;セーブ等ボタン配置
-[if exp="sf.FButton=='ON'"]
-[else]
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-[endif]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+[イベントシーン構築]
 
 [主人公ポーズ通常]
 [wait time=10]

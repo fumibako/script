@@ -5,8 +5,8 @@
 
 ;◆イベント発生判定
 *event_hantei
-;◆テスト画面からプレイの場合は助言イベントをカット
-[if exp="tf.test_gamen==true"]
+;◆テスト画面からプレイの場合は助言イベントをカット→設定で選べるようにしました
+[if exp="tf.advice_event_hyouji == 0"]
 @jump target=*advice_event_owari
 [endif]
 

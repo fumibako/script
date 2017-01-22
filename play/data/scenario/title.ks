@@ -22,6 +22,7 @@
 [eval exp="tf.test_gamen_sijyou=false"]
 [eval exp="tf.test_gamen=false"]
 [eval exp="tf.okeiko_gamen=false"]
+[eval exp="tf.advice_event_hyouji=1"]
 
 [hidemenubutton]
 
