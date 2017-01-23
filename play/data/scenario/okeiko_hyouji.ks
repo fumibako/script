@@ -61,6 +61,46 @@
 
 ;【パラメータ計算＆描画】
 *draw_para_count
+;↓(イベント中に届く)手紙タイトルに付ける月表示設定
+[iscript]
+if (f.okeiko_month==4){
+f.okeiko_month_kansuuji="四月 ";
+}
+if (f.okeiko_month==5){
+f.okeiko_month_kansuuji="五月 ";
+}
+if (f.okeiko_month==6){
+f.okeiko_month_kansuuji="六月 ";
+}
+if (f.okeiko_month==7){
+f.okeiko_month_kansuuji="七月 ";
+}
+if (f.okeiko_month==8){
+f.okeiko_month_kansuuji="八月 ";
+}
+if (f.okeiko_month==9){
+f.okeiko_month_kansuuji="九月 ";
+}
+if (f.okeiko_month==10){
+f.okeiko_month_kansuuji="十月 ";
+}
+if (f.okeiko_month==11){
+f.okeiko_month_kansuuji="十一月 ";
+}
+if (f.okeiko_month==12){
+f.okeiko_month_kansuuji="十二月 ";
+}
+if (f.okeiko_month==1){
+f.okeiko_month_kansuuji="一月 ";
+}
+if (f.okeiko_month==2){
+f.okeiko_month_kansuuji="二月 ";
+}
+if (f.okeiko_month==3){
+f.okeiko_month_kansuuji="三月 ";
+}
+[endscript]
+
 ;↓処理ループ中に含める
 [iscript]
 f.para_shujinkou_tairyoku=f.para_shujinkou_tairyoku_now + "/" + f.para_shujinkou_tairyoku_max;

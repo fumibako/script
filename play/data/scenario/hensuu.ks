@@ -159,6 +159,7 @@ f.fumi_toutyaku_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 f.zaizen_au=0; //個別ルートに入ったら1を代入
 f.zaizen_koukando_bad=50; //(調整中)好感度がこの数値未満でbad2に。bad1は選択肢による分岐です
 f.zaizen_reihou_good=80; //(調整中)礼法熟練度がこの数値以上かつ淑女度一定値以上、財前好感度がkoukando_c以上でgoodEDに
+f.zaizen_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値
 [endscript]
 
 ;葛城宮 晴仁
@@ -195,7 +196,7 @@ f.katuraginomiya_au=0; //個別ルートに入ったら1を代入
 f.fumi_list_katuraginomiya_title = [];
 f.katuraginomiya_koukando_bad=50; //(調整中)好感度がこの数値未満でbadに。しかし選択肢分岐badでしたね！失礼しました。万が一使ってくださった場合に備えて残しています(藤枝のbad用変数は削除しました)
 f.katuraginomiya_sadou_good=80; //(調整中)茶道熟練度がこの数値以上かつ淑女度一定値以上、葛城宮好感度がkoukando_c以上でgoodEDに
-
+f.katuraginomiya_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値
 [endscript]
 
 ;藤枝　肇
@@ -231,6 +232,7 @@ f.hujieda_fumi_start=0;
 f.hujieda_au=0; //個別ルートに入ったら1を代入
 f.fumi_list_hujieda_title = [];
 f.hujieda_koto_good=80; //(調整中)お箏熟練度がこの数値以上かつ淑女度一定値以上、藤枝好感度がkoukando_c以上でgoodEDに
+f.hujieda_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値
 [endscript]
 
 ;◆攻略キャラ配列

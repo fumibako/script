@@ -980,62 +980,12 @@ f.fumi_toutyaku_zaizen[29]=1;
 ;=============================================
 ;◆イベント中に届く手紙◆ イベントスクリプト中に貼り付け予定分です
 ;=============================================
-;10月3週『薔薇園散策のお誘い』←仮タイトルです
+;10月3週『薔薇園散策のお誘い』(←仮タイトル)→zaizen_10_3.ks 37行目～へ移動しました
 ;=============================================
-*fumi_toutyaku_zaizen_30
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「薔薇園散策のお誘い」　財前 美彬";//←仮タイトルです(お好みで変更してください)
-f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「薔薇園散策のお誘い」";//←仮タイトルです(お好みで変更してください)
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
-f.fumi_list_all_target.push("*zaizen_fumi29");
-f.fumi_list_all_location_taishou.push(1);
-f.fumi_list_all_location_fumi.push(29);
-f.fumi_list_zaizen_location_fumi.push(29);
-f.fumi_list_zaizen_title.push(f.fumi_zaizen_title_new);
-f.fumi_list_zaizen_target.push("*zaizen_fumi29");
-f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
-f.fumi_toutyaku_zaizen[30]=1;
-[endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+;11月3週『先日のパーティについて』(←仮タイトル)→zaizen_11_3.ks 40行目～へ移動しました
 ;=============================================
-;11月3週『先日のパーティについて』←仮タイトルです
+;3月4週『母の誕生日パーティご招待』(←仮タイトル)→zaizen_3_4_normal.ks 39行目～へ移動しました
 ;=============================================
-*fumi_toutyaku_zaizen_31
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のパーティについて」　財前 美彬";//←仮タイトルです(お好みで変更してください)
-f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「先日のパーティについて」";//←仮タイトルです(お好みで変更してください)
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
-f.fumi_list_all_target.push("*zaizen_fumi30");
-f.fumi_list_all_location_taishou.push(1);
-f.fumi_list_all_location_fumi.push(30);
-f.fumi_list_zaizen_location_fumi.push(30);
-f.fumi_list_zaizen_title.push(f.fumi_zaizen_title_new);
-f.fumi_list_zaizen_target.push("*zaizen_fumi30");
-f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
-f.fumi_toutyaku_zaizen[31]=1;
-[endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
-;=============================================
-;3月4週『母の誕生日パーティご招待』←仮タイトルです
-;=============================================
-*fumi_toutyaku_zaizen_32
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のパーティについて」　財前 美彬";//←仮タイトルです(お好みで変更してください)
-f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「先日のパーティについて」";//←仮タイトルです(お好みで変更してください)
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
-f.fumi_list_all_target.push("*zaizen_fumi31");
-f.fumi_list_all_location_taishou.push(1);
-f.fumi_list_all_location_fumi.push(31);
-f.fumi_list_zaizen_location_fumi.push(31);
-f.fumi_list_zaizen_title.push(f.fumi_zaizen_title_new);
-f.fumi_list_zaizen_target.push("*zaizen_fumi31");
-f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
-f.fumi_toutyaku_zaizen[32]=1;
-[endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
 
 ;◆四条手紙到着後処理は01_sijyou_fumi_toutyaku_shori_list.ksに移動済です
 
@@ -1043,26 +993,7 @@ f.fumi_toutyaku_zaizen[32]=1;
 ;=============================================
 ;◆イベント中に届く手紙◆ イベントスクリプト中に貼り付け予定分です
 ;=============================================
-;『最初の手紙』←仮タイトルです
-;=============================================
-*fumi_toutyaku_katuraginomiya_2
-[iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最初の手紙」　葛城宮 晴仁";
-f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「最初の手紙」";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
-f.fumi_list_all_target.push("*katuraginomiya_fumi00");
-f.fumi_list_all_location_taishou.push(3);
-f.fumi_list_all_location_fumi.push(1);
-f.fumi_list_katuraginomiya_location_fumi.push(1);
-f.fumi_list_katuraginomiya_title.push(f.fumi_katuraginomiya_title_new);
-f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi00");
-f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
-f.fumi_toutyaku_katuraginomiya[2]=1;
-[endscript]
-		[eval exp="f.test='手紙到着葛城宮 晴仁'+f.target_fumi_toutyaku"]
-@jump target=*fumi_toutyaku_hantei_hujieda
-
+;『最初の手紙』(←仮タイトル)→katuraginomiya_event_1.ks 399行目～へ移動しました
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
@@ -1490,7 +1421,7 @@ f.fumi_toutyaku_katuraginomiya[25]=1;
 @jump target=*fumi_toutyaku_hantei_hujieda
 
 ;=============================================
-;◆イベント中に届く手紙◆ イベントスクリプト中に貼り付け予定分です
+;◆イベントに関係して届く手紙◆ イベント中に届くのではないため、こちらに置きます
 ;=============================================
 ;◆葛城宮ルート時子さんの散策イベントを見ている場合に自動的に2週間後に手紙
 ;=============================================
@@ -1553,15 +1484,15 @@ f.fumi_list_hujieda_location_fumi.push(1);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
 f.fumi_list_hujieda_target.push("*hujieda_fumi01");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[1]=1;
+f.fumi_toutyaku_hujieda[2]=1;
 [endscript]
 		[eval exp="f.test='手紙到着 藤枝　肇'+f.target_fumi_toutyaku"]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_3
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 二」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 二」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 二」　藤枝　肇";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 二」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi02");
@@ -1571,150 +1502,157 @@ f.fumi_list_hujieda_location_fumi.push(2);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
 f.fumi_list_hujieda_target.push("*hujieda_fumi02");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[2]=1;
+f.fumi_toutyaku_hujieda[3]=1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_4
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「4」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「4」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 三」　藤枝　肇";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 三」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi4");
+f.fumi_list_all_target.push("*hujieda_fumi03");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(3);
 f.fumi_list_hujieda_location_fumi.push(3);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi4");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[3]=1;
-[endscript]
-@jump target=*hantei_fumi_toutyaku_end
-
-*fumi_toutyaku_hujieda_5
-[iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「5」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「5」";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi5");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(4);
-f.fumi_list_hujieda_location_fumi.push(4);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi5");
+f.fumi_list_hujieda_target.push("*hujieda_fumi03");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[4]=1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
-*fumi_toutyaku_hujieda_6
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「6」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「6」";
+*fumi_toutyaku_hujieda_5
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 四」　藤枝　肇";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 四」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi6");
+f.fumi_list_all_target.push("*hujieda_fumi04");
 f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(5);
-f.fumi_list_hujieda_location_fumi.push(5);
+f.fumi_list_all_location_fumi.push(4);
+f.fumi_list_hujieda_location_fumi.push(4);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi6");
+f.fumi_list_hujieda_target.push("*hujieda_fumi04");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[5]=1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
-*fumi_toutyaku_hujieda_7
+*fumi_toutyaku_hujieda_6
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「7」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「7」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 五」　藤枝　肇";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 五」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi7");
+f.fumi_list_all_target.push("*hujieda_fumi05");
 f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(6);
-f.fumi_list_hujieda_location_fumi.push(6);
+f.fumi_list_all_location_fumi.push(5);
+f.fumi_list_hujieda_location_fumi.push(5);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi7");
+f.fumi_list_hujieda_target.push("*hujieda_fumi05");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[6]=1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
-*fumi_toutyaku_hujieda_8
+*fumi_toutyaku_hujieda_7
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「8」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「8」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 六」　藤枝　肇";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 六」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi8");
+f.fumi_list_all_target.push("*hujieda_fumi06");
 f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(7);
-f.fumi_list_hujieda_location_fumi.push(7);
+f.fumi_list_all_location_fumi.push(6);
+f.fumi_list_hujieda_location_fumi.push(6);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi8");
+f.fumi_list_hujieda_target.push("*hujieda_fumi06");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[7]=1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
-*fumi_toutyaku_hujieda_9
+;=============================================
+;◆話題への返事◆
+;=============================================
+*fumi_toutyaku_hujieda_8
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「9」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「9」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「趣味について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「趣味について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi9");
+f.fumi_list_all_target.push("*hujieda_fumi07");
+f.fumi_list_all_location_taishou.push(4);
+f.fumi_list_all_location_fumi.push(7);
+f.fumi_list_hujieda_location_fumi.push(7);
+f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
+f.fumi_list_hujieda_target.push("*hujieda_fumi07");
+f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
+f.fumi_toutyaku_hujieda[8]=1;
+f.hujieda_fumi_toutyakumachi_shumi=-1;
+[endscript]
+@jump target=*hantei_fumi_toutyaku_end
+
+*fumi_toutyaku_hujieda_9
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「仕事について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「仕事について」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi08");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(8);
 f.fumi_list_hujieda_location_fumi.push(8);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi9");
+f.fumi_list_hujieda_target.push("*hujieda_fumi08");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[8]=1;
+f.fumi_toutyaku_hujieda[9]=1;
+f.hujieda_fumi_toutyakumachi_sigoto=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_10
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「10」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「10」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「友人について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「友人について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi10");
+f.fumi_list_all_target.push("*hujieda_fumi09");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(9);
 f.fumi_list_hujieda_location_fumi.push(9);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi10");
+f.fumi_list_hujieda_target.push("*hujieda_fumi09");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[9]=1;
+f.fumi_toutyaku_hujieda[10]=1;
+f.hujieda_fumi_toutyakumachi_yuujin=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_11
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「11」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「11」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「家族について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi11");
+f.fumi_list_all_target.push("*hujieda_fumi10");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(10);
 f.fumi_list_hujieda_location_fumi.push(10);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi11");
+f.fumi_list_hujieda_target.push("*hujieda_fumi10");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[10]=1;
+f.fumi_toutyaku_hujieda[11]=1;
+f.hujieda_fumi_toutyakumachi_kazoku=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_12
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「12」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「12」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「将来について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi12");
@@ -1724,31 +1662,33 @@ f.fumi_list_hujieda_location_fumi.push(11);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
 f.fumi_list_hujieda_target.push("*hujieda_fumi12");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[11]=1;
+f.fumi_toutyaku_hujieda[12]=1;
+f.hujieda_fumi_toutyakumachi_shourai=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_13
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「読書について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「読書について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi12");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(12);
 f.fumi_list_hujieda_location_fumi.push(12);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi12");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[12]=1;
+f.fumi_toutyaku_hujieda[13]=1;
+f.hujieda_fumi_toutyakumachi_dokusho=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_14
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツについて」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「スポーツについて」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi13");
@@ -1759,191 +1699,205 @@ f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
 f.fumi_list_hujieda_target.push("*hujieda_fumi13");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[14]=1;
+f.hujieda_fumi_toutyakumachi_sports=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_15
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「食事について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「食事について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi14");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(14);
 f.fumi_list_hujieda_location_fumi.push(14);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi14");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[15]=1;
+f.hujieda_fumi_toutyakumachi_shokuji=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_16
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「観劇について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「観劇について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi15");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(15);
 f.fumi_list_hujieda_location_fumi.push(15);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi15");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[16]=1;
+f.hujieda_fumi_toutyakumachi_kangeki=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_17
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「猫について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi16");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(16);
 f.fumi_list_hujieda_location_fumi.push(16);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi16");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[17]=1;
+f.hujieda_fumi_toutyakumachi_neko=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_18
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi17");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(17);
 f.fumi_list_hujieda_location_fumi.push(17);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi17");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[18]=1;
+f.hujieda_fumi_toutyakumachi_kiki=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_19
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「緑の石について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「緑の石について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi18");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(18);
 f.fumi_list_hujieda_location_fumi.push(18);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi18");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[19]=1;
+f.hujieda_fumi_toutyakumachi_midori=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_20
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「写真について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「写真について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi19");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(19);
 f.fumi_list_hujieda_location_fumi.push(19);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi19");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[20]=1;
+f.hujieda_fumi_toutyakumachi_photo=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_21
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi20");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(20);
 f.fumi_list_hujieda_location_fumi.push(20);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi20");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[21]=1;
+f.hujieda_fumi_toutyakumachi_hajimari=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_22
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi21");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(21);
 f.fumi_list_hujieda_location_fumi.push(21);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi21");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[22]=1;
+f.hujieda_fumi_toutyakumachi_music=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_23
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 道 」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「 道 」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi22");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(22);
 f.fumi_list_hujieda_location_fumi.push(22);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi22");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[23]=1;
+f.hujieda_fumi_toutyakumachi_michi=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
 *fumi_toutyaku_hujieda_24
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 変化と永遠 」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「 変化と永遠 」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi23");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(23);
 f.fumi_list_hujieda_location_fumi.push(23);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi23");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[24]=1;
+f.hujieda_fumi_toutyakumachi_henka=-1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
 
+;=============================================
+;◆季節の便り◆
+;=============================================
 *fumi_toutyaku_hujieda_25
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「巡る季節」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「巡る季節」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi24");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(24);
 f.fumi_list_hujieda_location_fumi.push(24);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi24");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[25]=1;
 [endscript]
@@ -1951,51 +1905,17 @@ f.fumi_toutyaku_hujieda[25]=1;
 
 *fumi_toutyaku_hujieda_26
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「実りの秋」　藤枝　肇";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「実りの秋」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
+f.fumi_list_all_target.push("*hujieda_fumi25");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(25);
 f.fumi_list_hujieda_location_fumi.push(25);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
+f.fumi_list_hujieda_target.push("*hujieda_fumi25");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[26]=1;
-[endscript]
-@jump target=*hantei_fumi_toutyaku_end
-
-*fumi_toutyaku_hujieda_27
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(26);
-f.fumi_list_hujieda_location_fumi.push(26);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[27]=1;
-[endscript]
-@jump target=*hantei_fumi_toutyaku_end
-
-*fumi_toutyaku_hujieda_28
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「13」　藤枝　肇";
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「13」";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi13");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(27);
-f.fumi_list_hujieda_location_fumi.push(27);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi13");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[28]=1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
