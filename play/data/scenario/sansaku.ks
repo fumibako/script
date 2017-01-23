@@ -1,6 +1,8 @@
 ﻿*start
 *sansaku
 @layopt layer=message1 page=fore visible = false
+@layopt layer=message0 visible=true
+[current layer="message0"]
 [freeimage layer = 26]
 [freeimage layer = 27]
 
