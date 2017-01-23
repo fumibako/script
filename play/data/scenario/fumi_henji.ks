@@ -850,9 +850,9 @@ f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + 1;
 [button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [iscript]
 f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando;
-f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando + 1;
+f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando;
 f.para_pre_sijyou_koukando = f.para_pre_sijyou_koukando;
-f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando + 1;
+f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando;
 f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando;
 [endscript]
 [if exp="f.fumi_kakunin==1"]
@@ -869,8 +869,8 @@ f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando;
 f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando + 1;
 f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando;
 f.para_pre_sijyou_koukando = f.para_pre_sijyou_koukando;
-f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando - 1;
-f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + 1;
+f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando;
+f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando;
 [endscript]
 ;f.para_pre_kuroda_koukando=[emb exp ="f.para_pre_kuroda_koukando"]
 [if exp="f.fumi_kakunin==1"]
@@ -1104,6 +1104,114 @@ f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + 1;
 
 *fumi_henji_1_15
 [eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=15;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_16
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=16;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_17
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=17;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_18
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=18;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_19
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=19;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_20
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=20;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_21
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=21;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_22
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=22;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_23
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=23;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_24
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=24;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_25
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=25;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_26
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=26;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_27
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=27;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_28
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=28;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_29
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=29;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_30
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=30;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_31
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=31;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_32
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=32;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_1_33
+[eval exp="f.fumi_atesaki='zaizen'; f.fumi_hairetsu1=1; f.fumi_hairetsu2=33;"]
 [call target=*fumi_write_hyouji]
 @jump target=*binsen_sentaku
 [s]
@@ -1926,6 +2034,96 @@ f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + 1;
 @jump target=*binsen_sentaku
 [s]
 
+*fumi_henji_3_16
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=16;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_17
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=17;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_18
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=18;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_19
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=19;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_20
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=20;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_21
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=21;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_22
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=22;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_23
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=23;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_24
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=24;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_25
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=25;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_26
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=26;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_27
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=27;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_28
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=28;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_29
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=29;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_30
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=30;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
 *fumi_henji_4_0
 [eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=0;"]
 [call target=*fumi_write_hyouji]
@@ -2018,6 +2216,96 @@ f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + 1;
 
 *fumi_henji_4_15
 [eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=15;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_16
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=16;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_17
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=17;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_18
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=18;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_19
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=19;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_20
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=20;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_21
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=21;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_22
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=22;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_23
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=23;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_24
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=24;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_25
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=25;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_26
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=26;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_27
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=27;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_28
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=28;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_29
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=29;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_4_30
+[eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=30;"]
 [call target=*fumi_write_hyouji]
 @jump target=*binsen_sentaku
 [s]
