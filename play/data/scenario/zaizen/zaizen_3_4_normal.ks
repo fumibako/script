@@ -36,6 +36,25 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
+*fumi_toutyaku_zaizen_32
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「母の誕生日パーティご招待」　財前 美彬";//←仮タイトルです(お好みで変更してください)
+f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「母の誕生日パーティご招待」";//←仮タイトルです(お好みで変更してください)
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
+f.fumi_list_all_target.push("*zaizen_fumi31");
+f.fumi_list_all_location_taishou.push(1);
+f.fumi_list_all_location_fumi.push(31);
+f.fumi_list_zaizen_location_fumi.push(31);
+f.fumi_list_zaizen_title.push(f.fumi_zaizen_title_new);
+f.fumi_list_zaizen_target.push("*zaizen_fumi31");
+f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
+f.fumi_toutyaku_zaizen[32]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_zaizen_number=f.fumi_zaizen_number + 1;
+f.hensin_list_hairetsu[1][31]=1;
+f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fumi;
+[endscript]
 
 [手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
@@ -61,6 +80,8 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [resetfont]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[1][31] = 0"]
 [手紙財前読了 fumi_number=]
 
 ;【SE】紙に触れる（パラリ）

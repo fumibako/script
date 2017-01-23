@@ -37,6 +37,25 @@
 [playse storage=paper_open.ogg loop=false ]
 ;【SE】紙に触れる（スッ）
 ;[playse storage=paper_su.ogg loop=false ]
+*fumi_toutyaku_zaizen_31
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のパーティについて」　財前 美彬";//←仮タイトルです(お好みで変更してください)
+f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「先日のパーティについて」";//←仮タイトルです(お好みで変更してください)
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
+f.fumi_list_all_target.push("*zaizen_fumi30");
+f.fumi_list_all_location_taishou.push(1);
+f.fumi_list_all_location_fumi.push(30);
+f.fumi_list_zaizen_location_fumi.push(30);
+f.fumi_list_zaizen_title.push(f.fumi_zaizen_title_new);
+f.fumi_list_zaizen_target.push("*zaizen_fumi30");
+f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
+f.fumi_toutyaku_zaizen[31]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_zaizen_number=f.fumi_zaizen_number + 1;
+f.hensin_list_hairetsu[1][30]=1;
+f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fumi;
+[endscript]
 [手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
 [sp]　初霜の候、貴方にはいよいよご清栄の由と存じます。[r]
@@ -63,6 +82,8 @@
 [sp][r][r]追伸　これから仕事が忙しくなりそうなので[r]
 お手紙のお返事は暫く返せなくなるかもしれません[p]
 [resetfont]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[1][30] = 0"]
 [手紙財前読了 fumi_number=]
 ;名前と追伸が近くアイコンにかかるため改ページ
 ;【SE】紙に触れる（パラリ）

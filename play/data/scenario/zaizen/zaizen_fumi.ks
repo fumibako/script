@@ -1081,7 +1081,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
-	;[eval exp="f.midoku_list_hairetsu[1][29] = 0;"]
+	;[eval exp="f.midoku_list_hairetsu[1][30] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1124,7 +1124,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
-	;[eval exp="f.midoku_list_hairetsu[1][30] = 0;"]
+	;[eval exp="f.midoku_list_hairetsu[1][30] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
