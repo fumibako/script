@@ -95,7 +95,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][1] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][2] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -130,7 +130,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][2] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][3] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -171,7 +171,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][3] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][4] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -211,7 +211,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][4] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][5] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -223,13 +223,11 @@
 ;=============================================
 ;『 将来について 』
 ;=============================================
-;=============================================
 *katuraginomiya_fumi05
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 将来について 』[p]
 [endif]
-;#
 [手紙葛城宮 fumi_number=]
 [名字]　[名前]殿へ[l][r]
 [sp]拝復　[名前]殿 にはお変わりなくお過ごしであろうか？ [r]
@@ -249,7 +247,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][5] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][6] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -257,11 +255,486 @@
 [手紙葛城宮読了 fumi_number=]
 
 ;=============================================
+;『 読書について 』
+;=============================================
+*katuraginomiya_fumi06
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 読書について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には穏やかにお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]静かに本を読むという時間も今ではないが、[r]
+幼い頃は三国志演義が好きで軍司というものに憧れたものだ。[r]
+[sp]巡り合わせとは不思議なもので、[r]  
+今は軍では参謀の役職に就いている。[r]
+[r]
+[sp]君も本が好きなのだろうか？[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][7] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『 スポーツについて 』
+;=============================================
+*katuraginomiya_fumi07
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 読書について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には元気にお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]幼い頃は剣道を習い、 [r]
+留学先ではサッカーの試合に参加したな。[r] 
+[r]
+[sp]純粋にスポーツは楽しい。と思っている。[r]
+[sp] 一定のルールに従って勝ち負けを争い、熱中できる。
+[sp] スポーツは私は見るのも参加するのも好きだな。[r]
+[r]
+[sp]君はスポーツをしたことがあるだろうか？
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][8] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『 食事について 』
+;=============================================
+*katuraginomiya_fumi08
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 読書について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には変わりなくお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]私は食に強いて言う好き嫌いはないな。 [r]
+[r] 
+[sp]今は流行りの三大洋食ライスカレー、コロッケ、トンカツ[r]
+というのも町で食べたことがあるが、[r]
+我が国の人用が好むように取り入れられ、作られている。[r]
+[r]
+[sp]ただ食欲は旺盛で薄味で育ってきたため敏感な方だと自覚がある。[r]
+どんな食事にも塩加減や鮮度などは大切でそれらが、[r]
+合わないものは不味いと感じてしまうな。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][9] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『 観劇について 』
+;=============================================
+*katuraginomiya_fumi09
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 観劇について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 にはお健やかにお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]観劇は留学した折は何度か観劇にもいった。 [r]
+[sp] 今では行く機会もそうはないが。[r]
+[r] 
+[sp]悲劇や喜劇というのは人の心を動かし、[r]
+実際行ってみた演劇も壮大で演出も素晴らしかった。[r]
+[sp]ただ物語には少々疑問をもつものがあったり、[r]
+最終的な結末が受け入れがたいと感じる時もある。[r]
+[r]
+[sp]君は観劇に言ったらどのような感想を持つのだろうか。 [r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][10] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『 猫について 』
+;=============================================
+*katuraginomiya_fumi10
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 猫について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 にはいかがお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]猫というと幼少の頃、子猫を拾ったが [r]
+飼うのを反対されて、知人に里親になってもらった事が[r]
+あったな。[r]
+[r]
+[sp]君も子猫を見たことがあるだろうか？[r]
+[sp] とても可愛いものだ。[r]
+[r]
+[sp] 君の家では動物を飼ったりしたことはあるだろうか？ [r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][11] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『聞き上手と話し上手について 』
+;=============================================
+*katuraginomiya_fumi11
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 聞き上手と話し上手について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には変わりなくお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]いち政治家として [r]
+聞き上手にも話し上手にもなろうと[r]
+意識し、努力はしている。[r]
+[sp]だが、私の周りにいる者たちとは[r]
+意見が合わないと思う事の方が多いな。[r]
+[r]
+[sp]合わないと思う者と話してても、[r]
+正直に言うと少々苦痛を感じることもあるな。[r]
+[r]
+[sp]そういう時はうまく逃げ道を作っているが[r]
+人付き合いとは難しいものだな。[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][12] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『聞き上手と話し上手について 』２
+;=============================================
+*katuraginomiya_fumi12
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 聞き上手と話し上手について2 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には変わりなくお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]君は聞き上手ではないかと [r]
+私は思っている。[r]
+[r]
+[sp] いつも私の話をきらきらとした目で。[r]
+聞いてくれるので話すのがとても楽しくなる。[r]
+[sp]君とは飽くことなくずっと話していたいと[r]
+会うたびに思っている。[r]
+[r]
+[sp]また君と話したい。 [r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][13] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『緑の石について 』
+;=============================================
+*katuraginomiya_fumi13
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 緑の石について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には変わりなくお過ごしであろうか？ [r]
+[sp] 先日は便りと緑の石を感謝する。[r]
+[r]
+[sp]この緑の石が何か調べるのも [r]
+勿体ないような気がして大切にとっておくことにした。[r]
+[r]
+[sp] 宝石の原石だとしても[r]
+ただの綺麗な緑色の石だったとしても。[r]
+[sp] 私にとってはいつか君からもらった思い出の[r]
+石になるかもしれないからだ。[r]
+[r]
+[sp]私は思い出の石になる事を願っている。 [r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][14] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『写真について 』
+;=============================================
+*katuraginomiya_fumi14
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 写真について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には変わりなくお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]最近では写真が流行っているし、 [r]
+[sp]写真機を持っている家も出てきたな。[r]
+[r]
+[sp] 私も写真を見るも絵葉書を見るぐらい楽しい。[r]
+だが、実物のものと雰囲気が違うなと感じるものもある。[r]
+[r]
+[sp]写真も一種の芸術かもしれないな。 [r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][15] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『一日のはじまりについて 』
+;=============================================
+*katuraginomiya_fumi15
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 一日のはじまりについて 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には変わりなくお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp] 幸先や出鼻をくじかれるという言葉やもあるように[r]
+最初は肝心だと私も思う。[r]
+[r]
+[sp]私は朝一番には私はジョギングをしている。 [r]
+たまに発見することもある。[r]
+[sp]自然の風景で心が和むこともある[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][16] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『お気に入りの曲について 』
+;=============================================
+*katuraginomiya_fumi16
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 お気に入りの曲について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp]拝復　[名前]殿 には変わりなくお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]欧羅巴では色々な曲と出会ったが[r]
+やはり我が国の音楽もいいものだと思う。[r]
+[r]
+[sp]女性的だが、"さくらさくら"が好きだな。[r]
+[sp]"さくらさくら" は、箏の手ほどき曲として[r]
+作られたものらしい。[r]
+[sp]君もお箏を習っていると聞いた。[r]
+[sp] いつか君のお箏を聴いてみたいな。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　 敬具[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][17] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『道 』
+;=============================================
+*katuraginomiya_fumi17
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 読書について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[r]
+[sp]　[名前]殿 にはお元気にお過ごしであろうか？ [r]
+[sp] 先日は便りを感謝する。[r]
+[r]
+[sp]君は要領よく道案内たのだな。[r]
+[r]
+[sp]長時間迷うと流石に疲れるが、[r]
+私は、探検の意味のある道探しは好きだ。[r]
+[r]
+[sp]無駄な事に思えるかもしれないが、 [r]
+新鮮でたまに小さな発見をする。[r]
+[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][18] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『道 』2　２月３週から３月４週まで
+;=============================================
+*katuraginomiya_fumi18
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 読書について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[r]
+[sp]　[名前]殿 には穏やかにお過ごしであろうか？ [r]
+[sp] 手紙を感謝する。[r]
+[r]
+[sp]道というのは人生にも比喩されることもあるな。[r]
+[r]
+[sp]道は一つではない、[r]
+だが、私は信じた道を突き進みたい。[r]
+[r]
+[sp]将来、多くの人に人に [r]
+良い影響を残せるように尽くすつもりだ。[r]
+[sp] 君に私の進んだ未来を見せたいと想う。[r]
+[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][19] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『 変化と永遠 』
+;=============================================
+*katuraginomiya_fumi19
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『 読書について 』[p]
+[endif]
+[手紙葛城宮 fumi_number=]
+[名字]　[名前]殿へ[l][r]
+[sp][名前]殿 にはお変わりなくお過ごしであろうか？ [r]
+[sp]先日は手紙を感謝する。
+[r]
+[sp] この世で変化しないものというのはないな。[r]
+[sp] 形あるものはすべて変化していく、[r]
+確かに、あるものすべてが変わるのは寂しい。[r]
+[r]
+[sp]だが、どう変化させていくかは、人次第でもある。[r]
+[sp]大切なものはよく考えて使うといいだろう。[r]
+[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][20] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;=============================================
 ;◆季節の便り◆
 ;=============================================
 ;『 虫干し 』６月ごろの手紙　好感度が一定以上
 ;=============================================
-*katuraginomiya_fumi06
+*katuraginomiya_fumi20
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 虫干し 』[p]
@@ -283,7 +756,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][6] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][21] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -295,7 +768,7 @@
 ;=============================================
 ;『 スイカ 』７月頃の手紙　好感度が一定以上
 ;=============================================
-*katuraginomiya_fumi07
+*katuraginomiya_fumi21
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 スイカ 』[p]
@@ -315,7 +788,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][7] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][22] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -327,7 +800,7 @@
 ;=============================================
 ;『 夏は夜 』８月頃の手紙　好感度が一定以上
 ;=============================================
-*katuraginomiya_fumi08
+*katuraginomiya_fumi22
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 夏は夜 』[p]
@@ -350,7 +823,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][8] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][23] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -361,7 +834,7 @@
 ;=============================================
 ;『 季節は巡る 』9月頃の手紙　好感度が一定以上
 ;=============================================
-*katuraginomiya_fumi09
+*katuraginomiya_fumi23
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 季節は巡る 』[p]
@@ -385,7 +858,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][9] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][24] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -399,7 +872,7 @@
 ;=============================================
 ;『 伊能殿について 』
 ;=============================================
-*katuraginomiya_fumi10
+*katuraginomiya_fumi24
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 伊能殿について 』[p]
@@ -434,7 +907,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][10] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][25] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -445,7 +918,7 @@
 ;=============================================
 ;『 従妹宮の件について 』
 ;=============================================
-*katuraginomiya_fumi11
+*katuraginomiya_fumi25
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 従妹宮の件について 』[p]
@@ -488,7 +961,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][11] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][26] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -497,7 +970,7 @@
 ;=============================================
 ;8月、event3で届く手紙『 お茶事について 』←仮タイトルです
 ;=============================================
-*katuraginomiya_fumi12
+*katuraginomiya_fumi26
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 お茶事について 』[p]
@@ -530,7 +1003,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][12] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][27] = 0;"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
