@@ -194,8 +194,8 @@ TG.stat.play_se = true;
 	@jump storage="katuraginomiya/katuraginomiya_sansaku1.ks"
 [endif]
 
-;◆葛城宮イベント判定【散策1】葛城宮ルート2月2週から3月4週期間中に散策で1度だけ発生
-[if exp="((f.okeiko_month==2 && f.okeiko_week!=1) || f.okeiko_month==3) && f.event_machi_katuraginomiya[2]==0 && f.katuraginomiya_au==1"]
+;◆葛城宮イベント判定【散策2】葛城宮ルートで散策1を見ている状態で2月2週から3月4週期間中に散策をすると、1度だけ発生。判定順から散策1が先に発生すると思いますが、念のためf.event_machi_katuraginomiya[1]==1 を条件に加えます
+[if exp="((f.okeiko_month==2 && f.okeiko_week!=1) || f.okeiko_month==3) && f.event_machi_katuraginomiya[1]==1 && f.event_machi_katuraginomiya[2]==0 && f.katuraginomiya_au==1"]
 	[eval exp="f.event_machi_katuraginomiya[2]=1"]
 	@jump storage="katuraginomiya/katuraginomiya_sansaku2.ks"
 [endif]
