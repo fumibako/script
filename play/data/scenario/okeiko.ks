@@ -45,7 +45,7 @@
 @jump storage="event_hantei_week_owari.ks" target=*start
 *event_hantei_week_owari_owari
 
-;◆「休憩中」画像切り替え
+;◆「休憩中」画像切り替え(四条9月4週のイベント後は画像表示すると違和感があったので、無しに
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
 [image layer=26 x=334 y=155 storage="button/qk_anim02.png"]
@@ -162,6 +162,174 @@ f.sijyou_fumi_toutyakumachi_dokusho = f.sijyou_fumi_toutyakumachi_dokusho - 1;
 }
 if (f.sijyou_fumi_toutyakumachi_sports > 0){
 f.sijyou_fumi_toutyakumachi_sports = f.sijyou_fumi_toutyakumachi_sports - 1;
+}
+
+//◆財前宛 話題の手紙届くまでカウント減算処理
+if (f.zaizen_fumi_toutyakumachi_shumi > 0){
+f.zaizen_fumi_toutyakumachi_shumi = f.zaizen_fumi_toutyakumachi_shumi - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_sigoto > 0){
+f.zaizen_fumi_toutyakumachi_sigoto = f.zaizen_fumi_toutyakumachi_sigoto - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_kazoku > 0){
+f.zaizen_fumi_toutyakumachi_kazoku = f.zaizen_fumi_toutyakumachi_kazoku - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_kisetsu > 0){
+f.zaizen_fumi_toutyakumachi_kisetsu = f.zaizen_fumi_toutyakumachi_kisetsu - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_shourai > 0){
+f.zaizen_fumi_toutyakumachi_shourai = f.zaizen_fumi_toutyakumachi_shourai - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_yuujin > 0){
+f.zaizen_fumi_toutyakumachi_yuujin = f.zaizen_fumi_toutyakumachi_yuujin - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_shokuji > 0){
+f.zaizen_fumi_toutyakumachi_shokuji = f.zaizen_fumi_toutyakumachi_shokuji - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_kangeki > 0){
+f.zaizen_fumi_toutyakumachi_kangeki = f.zaizen_fumi_toutyakumachi_kangeki - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_neko > 0){
+f.zaizen_fumi_toutyakumachi_neko = f.zaizen_fumi_toutyakumachi_neko - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_kiki > 0){
+f.zaizen_fumi_toutyakumachi_kiki = f.zaizen_fumi_toutyakumachi_kiki - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_midori > 0){
+f.zaizen_fumi_toutyakumachi_midori = f.zaizen_fumi_toutyakumachi_midori - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_photo > 0){
+f.zaizen_fumi_toutyakumachi_photo = f.zaizen_fumi_toutyakumachi_photo - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_hajimari > 0){
+f.zaizen_fumi_toutyakumachi_hajimari = f.zaizen_fumi_toutyakumachi_hajimari - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_music > 0){
+f.zaizen_fumi_toutyakumachi_music = f.zaizen_fumi_toutyakumachi_music - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_michi > 0){
+f.zaizen_fumi_toutyakumachi_michi = f.zaizen_fumi_toutyakumachi_michi - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_henka > 0){
+f.zaizen_fumi_toutyakumachi_henka = f.zaizen_fumi_toutyakumachi_henka - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_dokusho > 0){
+f.zaizen_fumi_toutyakumachi_dokusho = f.zaizen_fumi_toutyakumachi_dokusho - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_sports > 0){
+f.zaizen_fumi_toutyakumachi_sports = f.zaizen_fumi_toutyakumachi_sports - 1;
+}
+
+//◆葛城宮宛 話題の手紙届くまでカウント減算処理
+if (f.katuraginomiya_fumi_toutyakumachi_shumi > 0){
+f.katuraginomiya_fumi_toutyakumachi_shumi = f.katuraginomiya_fumi_toutyakumachi_shumi - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_sigoto > 0){
+f.katuraginomiya_fumi_toutyakumachi_sigoto = f.katuraginomiya_fumi_toutyakumachi_sigoto - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_kazoku > 0){
+f.katuraginomiya_fumi_toutyakumachi_kazoku = f.katuraginomiya_fumi_toutyakumachi_kazoku - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_kisetsu > 0){
+f.katuraginomiya_fumi_toutyakumachi_kisetsu = f.katuraginomiya_fumi_toutyakumachi_kisetsu - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_shourai > 0){
+f.katuraginomiya_fumi_toutyakumachi_shourai = f.katuraginomiya_fumi_toutyakumachi_shourai - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_yuujin > 0){
+f.katuraginomiya_fumi_toutyakumachi_yuujin = f.katuraginomiya_fumi_toutyakumachi_yuujin - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_shokuji > 0){
+f.katuraginomiya_fumi_toutyakumachi_shokuji = f.katuraginomiya_fumi_toutyakumachi_shokuji - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_kangeki > 0){
+f.katuraginomiya_fumi_toutyakumachi_kangeki = f.katuraginomiya_fumi_toutyakumachi_kangeki - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_neko > 0){
+f.katuraginomiya_fumi_toutyakumachi_neko = f.katuraginomiya_fumi_toutyakumachi_neko - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_kiki > 0){
+f.katuraginomiya_fumi_toutyakumachi_kiki = f.katuraginomiya_fumi_toutyakumachi_kiki - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_midori > 0){
+f.katuraginomiya_fumi_toutyakumachi_midori = f.katuraginomiya_fumi_toutyakumachi_midori - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_photo > 0){
+f.katuraginomiya_fumi_toutyakumachi_photo = f.katuraginomiya_fumi_toutyakumachi_photo - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_hajimari > 0){
+f.katuraginomiya_fumi_toutyakumachi_hajimari = f.katuraginomiya_fumi_toutyakumachi_hajimari - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_music > 0){
+f.katuraginomiya_fumi_toutyakumachi_music = f.katuraginomiya_fumi_toutyakumachi_music - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_michi > 0){
+f.katuraginomiya_fumi_toutyakumachi_michi = f.katuraginomiya_fumi_toutyakumachi_michi - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_henka > 0){
+f.katuraginomiya_fumi_toutyakumachi_henka = f.katuraginomiya_fumi_toutyakumachi_henka - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_dokusho > 0){
+f.katuraginomiya_fumi_toutyakumachi_dokusho = f.katuraginomiya_fumi_toutyakumachi_dokusho - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_sports > 0){
+f.katuraginomiya_fumi_toutyakumachi_sports = f.katuraginomiya_fumi_toutyakumachi_sports - 1;
+}
+
+//◆藤枝宛 話題の手紙届くまでカウント減算処理
+if (f.hujieda_fumi_toutyakumachi_shumi > 0){
+f.hujieda_fumi_toutyakumachi_shumi = f.hujieda_fumi_toutyakumachi_shumi - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_sigoto > 0){
+f.hujieda_fumi_toutyakumachi_sigoto = f.hujieda_fumi_toutyakumachi_sigoto - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_kazoku > 0){
+f.hujieda_fumi_toutyakumachi_kazoku = f.hujieda_fumi_toutyakumachi_kazoku - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_kisetsu > 0){
+f.hujieda_fumi_toutyakumachi_kisetsu = f.hujieda_fumi_toutyakumachi_kisetsu - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_shourai > 0){
+f.hujieda_fumi_toutyakumachi_shourai = f.hujieda_fumi_toutyakumachi_shourai - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_yuujin > 0){
+f.hujieda_fumi_toutyakumachi_yuujin = f.hujieda_fumi_toutyakumachi_yuujin - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_shokuji > 0){
+f.hujieda_fumi_toutyakumachi_shokuji = f.hujieda_fumi_toutyakumachi_shokuji - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_kangeki > 0){
+f.hujieda_fumi_toutyakumachi_kangeki = f.hujieda_fumi_toutyakumachi_kangeki - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_neko > 0){
+f.hujieda_fumi_toutyakumachi_neko = f.hujieda_fumi_toutyakumachi_neko - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_kiki > 0){
+f.hujieda_fumi_toutyakumachi_kiki = f.hujieda_fumi_toutyakumachi_kiki - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_midori > 0){
+f.hujieda_fumi_toutyakumachi_midori = f.hujieda_fumi_toutyakumachi_midori - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_photo > 0){
+f.hujieda_fumi_toutyakumachi_photo = f.hujieda_fumi_toutyakumachi_photo - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_hajimari > 0){
+f.hujieda_fumi_toutyakumachi_hajimari = f.hujieda_fumi_toutyakumachi_hajimari - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_music > 0){
+f.hujieda_fumi_toutyakumachi_music = f.hujieda_fumi_toutyakumachi_music - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_michi > 0){
+f.hujieda_fumi_toutyakumachi_michi = f.hujieda_fumi_toutyakumachi_michi - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_henka > 0){
+f.hujieda_fumi_toutyakumachi_henka = f.hujieda_fumi_toutyakumachi_henka - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_dokusho > 0){
+f.hujieda_fumi_toutyakumachi_dokusho = f.hujieda_fumi_toutyakumachi_dokusho - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_sports > 0){
+f.hujieda_fumi_toutyakumachi_sports = f.hujieda_fumi_toutyakumachi_sports - 1;
 }
 
 [endscript]

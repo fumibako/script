@@ -20,6 +20,7 @@
 休憩しましょう
 [wait time=500]
 ;◆◆一度色々リセットする
+*reset
 [ct]
 [clearfix]
 [clearstack]

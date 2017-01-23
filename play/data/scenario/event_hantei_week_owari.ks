@@ -36,7 +36,7 @@
 [endif]
 
 ;◆badED判定 8月4週終わった時点で全ての攻略対象の好感度が一定値未満だとbadED
-[if exp="((f.okeiko_month==8 && f.okeiko_week==4) && f.event_common[9]==0 && f.para_kuroda_koukando <= 30 && f.para_zaizen_koukando <= 30 && f.para_sijyou_koukando <= 30 && f.para_katuraginomiya_koukando <= 30 && f.para_hujieda_koukando <= 30)"]
+[if exp="((f.okeiko_month==8 && f.okeiko_week==4) && f.event_common[9]==0 && f.para_kuroda_koukando < 30 && f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30 && f.para_katuraginomiya_koukando < 30 && f.para_hujieda_koukando < 30)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_8_4_badED'"]
 	[eval exp="f.event_type='talk'"]

@@ -100,6 +100,15 @@ TG.stat.stack["call"] = [];
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
 [cm]
+;◆四条9月4週は週終わりに発生のため休憩処理続きへjump
+[if exp="f.okeiko_month==9 && f.okeiko_week==4 && f.sijyou_au==1"]
+@jump storage="okeiko.ks" target=*okeiko_qk_shori
+[endif]
+;◆6月4週はイベント被りの可能性があるため(黒田、藤枝)再度イベント発生チェックへjump
+[if exp="f.okeiko_month==6 && f.okeiko_week==4"]
+@jump storage="event_hantei_week_hajime.ks"
+[endif]
+
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
