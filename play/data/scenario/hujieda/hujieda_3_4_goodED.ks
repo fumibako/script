@@ -76,6 +76,7 @@
 [イベントシーン構築ボタン無し版]
 [主人公通常]
 [主人公ポーズ通常]
+[eval exp="f.kaogura!='on'"]　
 @layopt layer=message0 visible=true
 [freeimage layer=29 time=1000]
 ;機能ボタン表示
