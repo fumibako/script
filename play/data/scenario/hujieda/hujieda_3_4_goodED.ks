@@ -15,12 +15,7 @@
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 ;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [eval exp="f.haikei_credit=''"]
-;[イベントシーン構築ボタン無し版]
-;[eval exp="sf.FButton='OFF'"]
-;[主人公ポーズ通常]
-;[主人公通常]
 [プリロード画面消去]
-;[メッセージウィンドウ上ボタン表示]
 ;文字色　font_color
 [eval exp="tf.fc='0x663300'"]
 ;=========================================================================
