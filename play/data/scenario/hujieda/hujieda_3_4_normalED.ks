@@ -238,7 +238,8 @@ $('.kaede').remove();
 
 ;次のシーンでメッセージ枠消去
 [主人公退場]
-;[if exp="f.kaogura!='off'"]　onにする動作をジャンプ先でつける
+[eval exp="f.kaogura!='off'"]　
+;onにする動作をジャンプ先でつける 済
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
