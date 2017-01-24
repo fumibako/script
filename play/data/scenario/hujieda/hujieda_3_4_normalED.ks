@@ -236,7 +236,6 @@ $('.kaede').remove();
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
 [if exp="tf.okeiko_gamen==true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au==1"]
-
 ;次のシーンでメッセージ枠消去
 [主人公退場]
 [eval exp="f.kaogura!='off'"]　
@@ -244,9 +243,10 @@ $('.kaede').remove();
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
-[eval exp="sf.FButton='OFF'"]
 ;機能ボタン消去　ジャンプ後に表示　オン
 [layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+[wait time=10]
 @jump storage="hujieda/hujieda_3_4_goodED.ks" target="seen_1"
 [endif]
 
