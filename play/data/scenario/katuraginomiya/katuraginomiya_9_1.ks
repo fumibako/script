@@ -38,6 +38,18 @@
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
+
+*fumi_toutyaku_fumiya
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「親王様との婚約について」　文矢";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*fumi_fumiya");
+f.fumi_list_all_location_taishou.push(5);
+f.fumi_list_all_location_fumi.push(1);
+f.fumi_all_number=f.fumi_all_number + 1;
+[endscript]
+
 [手紙文矢 fumi_number=]
 [名前]へ[l][r]
 [r]
@@ -56,14 +68,14 @@
 [sp] まだ候補だと聞きましたが[名前]が親王妃となる[r]
 のでしょうか？[r]
 [sp] 恐れ多く、誉れ高いことですがとても苦労すると[r]
-思ってしまします。[r]
-[sp]父や磯野ともよく相談して決めてるといいでしょう。[r]
+思ってしまいます。[r]
+[sp]父や磯野ともよく相談して決めるといいでしょう。[r]
 皆、[名前]の意思を尊重してくれると思います。[r]
 [r]
 [sp]それでは皆が健やかに過ごせることを祈っています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　鷹司　文矢 [p]
+[sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢 [p]
 [手紙読了]
 
 [whosay name=磯野 color="dimgray"]
@@ -80,10 +92,31 @@
 そして私は文箱にお兄様の手紙をしまい、[r]
 代わりに、読み返した手紙を手に取って再び読んだ。[p]
 [主人公目閉]
-……私の心は決まりつつある[p]
+……私の心は決まりつつある。[p]
 [主人公伏目パチ1回]
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
+
+*fumi_toutyaku_katuraginomiya_29
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「婚約について」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
+f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「婚約について」";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*katuraginomiya_fumi27");
+f.fumi_list_all_location_taishou.push(3);
+f.fumi_list_all_location_fumi.push(28);
+f.fumi_list_katuraginomiya_location_fumi.push(28);
+f.fumi_list_katuraginomiya_title.push(f.fumi_katuraginomiya_title_new);
+f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi27");
+f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
+f.fumi_toutyaku_katuraginomiya[29]=1;
+f.katuraginomiya_fumi_toutyakumachi_shumi=-1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
+f.hensin_list_hairetsu[3][28] = 1;
+f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
+[endscript]
 
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
@@ -109,6 +142,8 @@
 [sp]返答がどちらにせよ私は受け止めるつもりだ。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[3][28] = 0"]
 [手紙葛城宮読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
@@ -148,7 +183,7 @@
 [暗転]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;システム地の文。変更してください
-婚約をお受けする[p]
+婚約をお受けする。[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;フラグA
 [eval exp="f.katuraginomiya_konyaku=true"]
@@ -163,7 +198,7 @@
 [暗転]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;システム地の文。変更してください
-婚約を辞退する[p]
+婚約を辞退する。[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;フラグB
 [eval exp="f.katuraginomiya_konyaku=false"]

@@ -32,6 +32,17 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
+*fumi_toutyaku_hahamiya
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「ご挨拶」　葛城宮妃　咲子";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*fumi_hahamiya");
+f.fumi_list_all_location_taishou.push(9);
+f.fumi_list_all_location_fumi.push(1);
+f.fumi_all_number=f.fumi_all_number + 1;
+[endscript]
+
 [手紙葛城宮妃殿下]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]

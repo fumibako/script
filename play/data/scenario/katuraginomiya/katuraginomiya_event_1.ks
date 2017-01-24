@@ -18,6 +18,37 @@
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。手紙到着までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*fumi_toutyaku_katuraginomiya_2
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
 ;=====================ここからお芝居の幕引きです===============================
 
 *seen_1
@@ -413,6 +444,23 @@ $('.junbi_girl').remove();
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 
+*fumi_toutyaku_katuraginomiya_2
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最初の手紙」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
+f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「最初の手紙」";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*katuraginomiya_fumi00");
+f.fumi_list_all_location_taishou.push(3);
+f.fumi_list_all_location_fumi.push(1);
+f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
+f.fumi_toutyaku_katuraginomiya[2]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
+f.hensin_list_hairetsu[3][1] = 1;
+f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
+[endscript]
+
 [手紙葛城宮 fumi_number=1]
 
 [font color=navy size=21]
@@ -451,6 +499,7 @@ $('.junbi_girl').remove();
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 [resetfont]
+[eval exp="f.midoku_list_hairetsu[3][1] = 0"]
 [手紙葛城宮読了 fumi_number=1]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]

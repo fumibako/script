@@ -18,6 +18,7 @@
 #
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+
 ;=====================ここからお芝居の幕引きです===============================
 [主人公目パチ1回]
 #
@@ -33,8 +34,27 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+*fumi_toutyaku_katuraginomiya_28
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お茶事について」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
+f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「お茶事について」";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*katuraginomiya_fumi26");
+f.fumi_list_all_location_taishou.push(3);
+f.fumi_list_all_location_fumi.push(27);
+f.fumi_list_katuraginomiya_location_fumi.push(27);
+f.fumi_list_katuraginomiya_title.push(f.fumi_katuraginomiya_title_new);
+f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi26");
+f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
+f.fumi_toutyaku_katuraginomiya[28]=1;
+f.katuraginomiya_fumi_toutyakumachi_shumi=-1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
+f.hensin_list_hairetsu[3][27] = 1;
+f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
+[endscript]
 
- 
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
@@ -60,11 +80,43 @@
 [sp]いや、心から君が受けてくれるのを望んでいる。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[3][27] = 0"]
  [手紙葛城宮読了 fumi_number=]
  [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 ;==============================================================================
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。侍従の手紙まで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*fumi_toutyaku_jijyuu_1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
 
 *seen0
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -454,6 +506,16 @@
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;=========================スクリプトここまで=======================================
+*fumi_toutyaku_jijyuu_1
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のお茶事について」　桂伯爵夫人";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*jijyuu_fumi1");
+f.fumi_list_all_location_taishou.push(8);
+f.fumi_list_all_location_fumi.push(1);
+f.fumi_all_number=f.fumi_all_number + 1;
+[endscript]
 
 [手紙侍従]
 [font color=navy size=20]
