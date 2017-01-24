@@ -16,6 +16,10 @@
 ;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [eval exp="f.haikei_credit=''"]
 [プリロード画面消去]
+;機能ボタン消去　ジャンプ後に表示　オン
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+
 ;文字色　font_color
 [eval exp="tf.fc='0x663300'"]
 ;=========================================================================
