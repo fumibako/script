@@ -29,6 +29,8 @@
 [mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [freeimage layer=29]
 [layopt layer=29 visible=true]
+
+[fadeoutbgm time=3000]
 ;==========================スクリプト・全画面表示の間に設定===============================
 ;【テキスト全画面】;bg/bg_EDsakura.jpg
 ;機能ボタン消去
@@ -45,9 +47,12 @@
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
-
 ―― 四年後　某月[p]
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
   ;==========================スクリプト・全画面表示からの復帰準備========================================
 [cm]
 @layopt layer=message0 visible=false
