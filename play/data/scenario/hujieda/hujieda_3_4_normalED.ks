@@ -198,6 +198,7 @@ $('.kaede').remove();
 [whosay name="藤枝 肇" color=%mp.color]
 「何の約束ですか？　」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：真剣
 [主人公通常]
 [主人公口開]
