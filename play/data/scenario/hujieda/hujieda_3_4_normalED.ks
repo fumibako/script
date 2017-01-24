@@ -243,10 +243,7 @@ $('.kaede').remove();
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
-;機能ボタン消去　ジャンプ後に表示　オン
-[layopt layer=fix visible=false]
-[eval exp="sf.FButton='OFF'"]
-[wait time=10]
+;機能ボタン消去　ジャンプ後に プリロ―ド画面消去があるため
 @jump storage="hujieda/hujieda_3_4_goodED.ks" target="seen_1"
 [endif]
 
