@@ -86,6 +86,22 @@
 [stopbgm]
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
+*fumi_toutyaku_hujieda_2
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　一」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　一」";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi01");
+f.fumi_list_all_location_taishou.push(4);
+f.fumi_list_all_location_fumi.push(1);
+f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
+f.fumi_toutyaku_hujieda[2]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
+f.hensin_list_hairetsu[4][1] = -1;
+f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
+[endscript]
 
 [手紙藤枝 fumi_number=]
 
@@ -106,6 +122,8 @@
 [r]
 [sp]僕は名乗るほどの者ではありませんので[r]
 この手紙の事、僕の事はお構いなく。[p]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[4][1] = 0"]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 

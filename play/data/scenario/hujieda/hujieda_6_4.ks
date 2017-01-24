@@ -136,6 +136,26 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
+*fumi_toutyaku_hujieda_4
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　三」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　三」";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi03");
+f.fumi_list_all_location_taishou.push(4);
+f.fumi_list_all_location_fumi.push(3);
+f.fumi_list_hujieda_location_fumi.push(3);
+f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
+f.fumi_list_hujieda_target.push("*hujieda_fumi03");
+f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
+f.fumi_toutyaku_hujieda[4]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
+f.hensin_list_hairetsu[4][3] = -1;
+f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
+[endscript]
+
 [手紙藤枝 fumi_number=]
 [ruby text=こと]箏の奏者様へ[l][r]
 [r]
@@ -167,7 +187,8 @@
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
-
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[4][3] = 0"]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
