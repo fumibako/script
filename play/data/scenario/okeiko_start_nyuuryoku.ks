@@ -19,7 +19,7 @@
 [ptext text="葛城宮ルートに入った後=1。それ以外=0" layer=29 size=15 x=345 y=90 color=darkslateblue bold=bold]
 [edit left=345 top=110 width=200 length=200 maxchars=3 name="f.katuraginomiya_au" height=20]
 [ptext text="葛城宮：手紙許可後=1。それ以外=0" layer=29 size=15 x=345 y=140 color=darkslateblue bold=bold]
-[edit left=345 top=160 width=200 length=200 maxchars=3 name="tf.test_katuraginomiya_fumi_hensin_speed" height=20]
+[edit left=345 top=160 width=200 length=200 maxchars=3 name="f.katuraginomiya_fumi_start" height=20]
 [ptext text="葛城宮：返信速度(0=全て翌週、1=本来)" layer=29 size=15 x=345 y=190 color=darkslateblue bold=bold]
 [edit left=345 top=210 width=200 length=200 maxchars=3 name="tf.test_katuraginomiya_fumi_hensin_speed" height=20]
 
@@ -28,7 +28,7 @@
 [ptext text="藤枝ルートに入った後=1。それ以外=0" layer=29 size=15 x=700 y=90 color=darkslateblue bold=bold]
 [edit left=700 top=110 width=200 length=200 maxchars=3 name="f.hujieda_au" height=20]
 [ptext text="藤枝：手紙許可後=1。それ以外=0" layer=29 size=15 x=700 y=140 color=darkslateblue bold=bold]
-[edit left=700 top=160 width=200 length=200 maxchars=3 name="tf.test_hujieda_fumi_hensin_speed" height=20]
+[edit left=700 top=160 width=200 length=200 maxchars=3 name="f.hujieda_fumi_start" height=20]
 [ptext text="藤枝：返信速度(0=全て翌週、1=本来)" layer=29 size=15 x=700 y=190 color=darkslateblue bold=bold]
 [edit left=700 top=210 width=200 length=200 maxchars=3 name="tf.test_hujieda_fumi_hensin_speed" height=20]
 [ptext text="その月のお箏練習回数" layer=29 size=15 x=700 y=240 color=darkslateblue bold=bold]
@@ -78,6 +78,10 @@
 [ptext text="葛城宮イベント9/1前日最後までみた=1 それ以外=0" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
 [edit left=345 top=310 width=200 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
 
+;f.event_katuraginomiya[2]==1 葛城宮のイベント2を見た
+[ptext text="葛城宮イベント2を見た=1 それ以外=0" layer=29 size=15 x=345 y=340 color=darkslateblue bold=bold]
+[edit left=345 top=360 width=200 length=200 maxchars=3 name="f.event_katuraginomiya2" height=20]
+
 [ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
 [edit left=345 top=460 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
 
@@ -89,9 +93,12 @@ $("input[name='f.zaizen_au']").val("0");
 $("input[name='tf.test_katuraginomiya_fumi_hensin_speed']").val("0");
 $("input[name='f.para_katuraginomiya_koukando']").val("10");
 $("input[name='f.katuraginomiya_au']").val("0");
+
 $("input[name='tf.test_hujieda_fumi_hensin_speed']").val("0");
 $("input[name='f.para_hujieda_koukando']").val("5");
 $("input[name='f.hujieda_au']").val("0");
+$("input[name='f.katuraginomiya_fumi_start']").val("0");
+$("input[name='f.hujieda_fumi_start']").val("0");
 
 $("input[name='f.para_shujinkou_j_sadou']").val("0");
 $("input[name='f.para_shujinkou_j_kadou']").val("0");
@@ -111,6 +118,7 @@ $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
 $("input[name='f.para_sijyou_koukando']").val("10");
 $("input[name='f.event_katuraginomiya3']").val("0"); //デフォルト値0にしています。ご自由に設定してください
+$("input[name='f.event_katuraginomiya2']").val("0");
 
 $("input[name='tf.advice_event_hyouji']").val("0");
 
@@ -128,6 +136,8 @@ f.zaizen_au = parseInt($("input[name='f.zaizen_au']").val());
 tf.test_katuraginomiya_fumi_hensin_speed = parseInt($("input[name='tf.test_katuraginomiya_fumi_hensin_speed']").val());
 f.para_katuraginomiya_koukando = parseInt($("input[name='f.para_katuraginomiya_koukando']").val());
 f.katuraginomiya_au = parseInt($("input[name='f.katuraginomiya_au']").val());
+f.katuraginomiya_fumi_start = parseInt($("input[name='f.katuraginomiya_fumi_start']").val());
+f.hujieda_fumi_start = parseInt($("input[name='f.hujieda_fumi_start']").val());
 tf.test_hujieda_fumi_hensin_speed = parseInt($("input[name='tf.test_hujieda_fumi_hensin_speed']").val());
 f.para_hujieda_koukando = parseInt($("input[name='f.para_hujieda_koukando']").val());
 f.hujieda_au = parseInt($("input[name='f.hujieda_au']").val());
@@ -151,6 +161,7 @@ f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
 
 f.event_katuraginomiya[3] = parseInt($("input[name='f.event_katuraginomiya3']").val());
+f.event_katuraginomiya[2] = parseInt($("input[name='f.event_katuraginomiya2']").val());
 tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
 [endscript]
 

@@ -197,7 +197,7 @@ f.okeiko_month_kansuuji="三月 ";
 		[eval exp="f.target_fumi_toutyaku='*fumi_toutyaku_katuraginomiya_'+f.katuraginomiya_nextfumi_common"]
 		[eval exp="f.test='手紙到着'+f.target_fumi_toutyaku"]
 		[iscript]
-		f.fumi_toutyaku_oaite.push('葛城宮 晴仁様');
+		f.fumi_toutyaku_oaite.push('葛城宮殿下');
 		[endscript]
 		[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
 		[eval exp="f.katuraginomiya_fumi_toutyakumachi_week=0"]
@@ -995,6 +995,14 @@ f.fumi_toutyaku_zaizen[29]=1;
 ;=============================================
 ;『最初の手紙』(←仮タイトル)→katuraginomiya_event_1.ks 399行目～へ移動しました
 ;=============================================
+;8月『 お茶事について 』(←仮タイトル)→katuraginomiya_event_3.ks 37行目～へ移動しました
+;=============================================
+;9月『 婚約について 』(←仮タイトル)→katuraginomiya_9_1.ks 88行目～
+;=============================================
+;10月『 話がしたい 』(←仮タイトル)→katuraginomiya_10_3.ks 50行目～
+;=============================================
+;2月『 感謝 』(←仮タイトル)→katuraginomiya_2_2.ks 45行目～
+;=============================================
 ;◆話題への返事◆
 ;=============================================
 *fumi_toutyaku_katuraginomiya_3
@@ -1471,109 +1479,17 @@ f.fumi_toutyaku_katuraginomiya[27]=1;
 ;=============================================
 ;◆イベント中に届く手紙◆ イベントスクリプト中に貼り付け予定分です
 ;=============================================
-*fumi_toutyaku_hujieda_2
-[iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 一」　藤枝　肇";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 一」";//←仮タイトルです。お好みに変更してください
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi01");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(1);
-f.fumi_list_hujieda_location_fumi.push(1);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi01");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[2]=1;
-[endscript]
-		[eval exp="f.test='手紙到着 藤枝　肇'+f.target_fumi_toutyaku"]
-@jump target=*hantei_fumi_toutyaku_end
-
-*fumi_toutyaku_hujieda_3
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 二」　藤枝　肇";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 二」";//←仮タイトルです。お好みに変更してください
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi02");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(2);
-f.fumi_list_hujieda_location_fumi.push(2);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi02");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[3]=1;
-[endscript]
-@jump target=*hantei_fumi_toutyaku_end
-
-*fumi_toutyaku_hujieda_4
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 三」　藤枝　肇";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 三」";//←仮タイトルです。お好みに変更してください
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi03");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(3);
-f.fumi_list_hujieda_location_fumi.push(3);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi03");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[4]=1;
-[endscript]
-@jump target=*hantei_fumi_toutyaku_end
-
-*fumi_toutyaku_hujieda_5
-[iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 四」　藤枝　肇";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 四」";//←仮タイトルです。お好みに変更してください
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi04");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(4);
-f.fumi_list_hujieda_location_fumi.push(4);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi04");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[5]=1;
-[endscript]
-@jump target=*hantei_fumi_toutyaku_end
-
-*fumi_toutyaku_hujieda_6
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 五」　藤枝　肇";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 五」";//←仮タイトルです。お好みに変更してください
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi05");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(5);
-f.fumi_list_hujieda_location_fumi.push(5);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi05");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[6]=1;
-[endscript]
-@jump target=*hantei_fumi_toutyaku_end
-
-*fumi_toutyaku_hujieda_7
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 六」　藤枝　肇";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 六」";//←仮タイトルです。お好みに変更してください
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi06");
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(6);
-f.fumi_list_hujieda_location_fumi.push(6);
-f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi06");
-f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[7]=1;
-[endscript]
-@jump target=*hantei_fumi_toutyaku_end
-
+;『鳩の届けた手紙　一』(←仮タイトル)→hujieda_4_4.ks 89行目～へ移動しました
+;=============================================
+;『鳩の届けた手紙　二』(←仮タイトル)→hujieda_5_4.ks 75行目～へ移動しました
+;=============================================
+;『鳩の届けた手紙　三』(←仮タイトル)→hujieda_6_4.ks 139行目～へ移動しました
+;=============================================
+;『鳩の届けた手紙　四』(←仮タイトル)→hujieda_7_4.ks 139行目～へ移動しました
+;=============================================
+;『鳩の届けた手紙　五』(←仮タイトル)→hujieda_8_4.ks 86行目～へ移動しました
+;=============================================
+;『鳩の届けた手紙　六』(←仮タイトル)→hujieda_9_2.ks 71行目～へ移動しました
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
@@ -1919,3 +1835,32 @@ f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[26]=1;
 [endscript]
 @jump target=*hantei_fumi_toutyaku_end
+
+;=============================================
+;◆兄や友人、その他のキャラクターからの手紙（作成途中です）
+;=============================================
+;◆時子さんからの手紙：葛城宮の伊能殿についての手紙から１週間後
+;=============================================
+*fumi_toutyaku_tokiko_katuraginomiya
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 未来へ向けて 」　三宮 時子";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*tokiko_fumi_katuraginomiya");
+f.fumi_list_all_location_taishou.push(6);
+f.fumi_list_all_location_fumi.push(1);
+f.fumi_all_number=f.fumi_all_number + 1;
+[endscript]
+;=============================================
+;5文矢、6時子、7飛鳥、8侍従、9葛城宮妃殿下、10皇后さま、11従妹宮f.fumi_list_all_location_taishou.push();
+;=============================================
+;「親王様との婚約について」(←仮タイトル)　文矢 katuraginomiya_9_1.ks 42行目～
+
+;「先日のお茶事について」(←仮タイトル)　桂伯爵夫人 katuraginomiya_event_3.ks 509行目～
+
+;「ご挨拶」(←仮タイトル)　葛城宮妃　咲子桂伯爵夫人 katuraginomiya_9_3.ks 35行目～
+
+;「　忠告　」(←仮タイトル)　久佐賀宮　志津子 katuraginomiya_event_3.ks 509行目～
+
+;「星も凍るような夜」(←仮タイトル)　三宮　時子 hujieda_1_3.ks 78行目～
+

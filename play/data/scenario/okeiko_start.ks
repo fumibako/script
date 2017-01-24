@@ -20,6 +20,7 @@
 [eval exp="f.binsen_number=0"]
 
 
+
 ;手紙の話題リスト（初期話題）を読込んで配列f.wadai_list_hairetsu[i][j]に格納。
 ;[i]部分が話題の種類
 ;[j]部分が話題の属性(好感度増減値)を示す(0=話題の種類名、1=黒田、2=財前、3=華織、4=葛城宮 晴仁、5=藤枝　肇、6=好適距離a最初からok,b好感度20以上でok、c好感度50以上でok、7、8=その話題が苦手なキャラ、9、10=その話題を好むキャラ)
@@ -217,6 +218,61 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠について
 [endif]
 
 *okeiko
+
+;↓(イベント中に届く)手紙タイトルに付ける月表示設定
+[iscript]
+if (f.okeiko_month==4){
+f.okeiko_month_kansuuji="四月 ";
+}
+if (f.okeiko_month==5){
+f.okeiko_month_kansuuji="五月 ";
+}
+if (f.okeiko_month==6){
+f.okeiko_month_kansuuji="六月 ";
+}
+if (f.okeiko_month==7){
+f.okeiko_month_kansuuji="七月 ";
+}
+if (f.okeiko_month==8){
+f.okeiko_month_kansuuji="八月 ";
+}
+if (f.okeiko_month==9){
+f.okeiko_month_kansuuji="九月 ";
+}
+if (f.okeiko_month==10){
+f.okeiko_month_kansuuji="十月 ";
+}
+if (f.okeiko_month==11){
+f.okeiko_month_kansuuji="十一月 ";
+}
+if (f.okeiko_month==12){
+f.okeiko_month_kansuuji="十二月 ";
+}
+if (f.okeiko_month==1){
+f.okeiko_month_kansuuji="一月 ";
+}
+if (f.okeiko_month==2){
+f.okeiko_month_kansuuji="二月 ";
+}
+if (f.okeiko_month==3){
+f.okeiko_month_kansuuji="三月 ";
+}
+//葛城宮手紙到着準備
+f.fumi_list_katuraginomiya_location_fumi = [];
+f.fumi_list_katuraginomiya_location_fumi[0] = 1;
+f.fumi_list_katuraginomiya_title = [];
+f.fumi_list_katuraginomiya_title[0] = "六月 「最初の手紙」";
+f.fumi_list_katuraginomiya_target = [];
+f.fumi_list_katuraginomiya_target[0] = "*katuraginomiya_fumi00";
+//藤枝手紙到着準備
+f.fumi_list_hujieda_location_fumi = [];
+f.fumi_list_hujieda_location_fumi[0] = 1;
+f.fumi_list_hujieda_title = [];
+f.fumi_list_hujieda_title[0] = "四月 「鳩の届けた手紙 一」";
+f.fumi_list_hujieda_target = [];
+f.fumi_list_hujieda_target[0] = "*hujieda_fumi01";
+[endscript]
+
 [stopbgm]
 ;機能ボタン類を消去（fixレイヤー全消去）
 [clearfix]

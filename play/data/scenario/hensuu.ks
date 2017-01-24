@@ -187,11 +187,11 @@ f.para_katuraginomiya_shumi="－";
 f.katuraginomiya_fumi_henjimachi=1;
 f.katuraginomiya_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
 f.katuraginomiya_fumi_toutyakumachi_week=0;
-f.katuraginomiya_nextfumi_common=2;
+f.katuraginomiya_nextfumi_common=22; //到着判定無しの場合の到着処理No。エラー回避のため「虫干し」の22を仮指定
 f.fumi_toutyaku_katuraginomiya=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 //↓葛城宮に手紙を出せるようになったら1。それ以外は0
-f.katuraginomiya_fumi_start=0;
-f.katuraginomiya_au=0; //個別ルートに入ったら1を代入
+f.katuraginomiya_fumi_start = 0;
+f.katuraginomiya_au = 0; //個別ルートに入ったら1を代入
 //↓葛城宮手紙タイトル配列をセット
 f.fumi_list_katuraginomiya_title = [];
 f.katuraginomiya_koukando_bad=50; //(調整中)好感度がこの数値未満でbadに。しかし選択肢分岐badでしたね！失礼しました。万が一使ってくださった場合に備えて残しています(藤枝のbad用変数は削除しました)
@@ -225,7 +225,7 @@ f.para_hujieda_shumi="－";
 f.hujieda_fumi_henjimachi=1;
 f.hujieda_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
 f.hujieda_fumi_toutyakumachi_week=0;
-f.hujieda_nextfumi_common=2;
+f.hujieda_nextfumi_common=8; //到着処理無しの時に飛ぶ到着処理No。エラー回避のため8「趣味について」を仮指定
 f.fumi_toutyaku_hujieda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 //↓藤枝に手紙を出せるようになったら1。それ以外は0
 f.hujieda_fumi_start=0;

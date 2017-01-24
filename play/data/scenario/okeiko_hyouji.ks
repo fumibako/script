@@ -485,6 +485,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 
 [if exp="f.fumi_toutyaku_oaite.length>1"]
+	;藤枝からの手紙の場合は鳩が届けたという内容に変更予定
 	[eval exp="f.fumi_toutyaku_info1=f.fumi_toutyaku_oaite"]
 	[eval exp="f.fumi_toutyaku_info2='からお手紙が届いております'"]
 	[ptext text=&f.fumi_toutyaku_info1 layer=27 size=21 x=290 y=150 color=darkslateblue bold=bold]
