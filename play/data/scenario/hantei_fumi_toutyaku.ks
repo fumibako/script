@@ -1003,6 +1003,8 @@ f.fumi_toutyaku_zaizen[29]=1;
 ;=============================================
 ;2月『 感謝 』(←仮タイトル)→katuraginomiya_2_2.ks 45行目～
 ;=============================================
+;2～3月『 バザーへのお誘い 』(←仮タイトル)→katuraginomiya_bazaar.ks 31行目～
+;=============================================
 ;◆話題への返事◆
 ;=============================================
 *fumi_toutyaku_katuraginomiya_3
@@ -1200,6 +1202,7 @@ f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi11");
 f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
 f.fumi_toutyaku_katuraginomiya[13]=1;
 f.katuraginomiya_fumi_toutyakumachi_kiki=-1;
+f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando - 1; //「聞き上手と話し上手について」1回目好感度-1
 [endscript]
 @jump target=*fumi_toutyaku_hantei_hujieda
 
@@ -1218,6 +1221,7 @@ f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi12");
 f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
 f.fumi_toutyaku_katuraginomiya[14]=1;
 f.katuraginomiya_fumi_toutyakumachi_kiki=-1;
+f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 2; //「聞き上手と話し上手について」1回目好感度+2
 [endscript]
 @jump target=*fumi_toutyaku_hantei_hujieda
 
@@ -1860,7 +1864,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 
 ;「ご挨拶」(←仮タイトル)　葛城宮妃　咲子桂伯爵夫人 katuraginomiya_9_3.ks 35行目～
 
-;「　忠告　」(←仮タイトル)　久佐賀宮　志津子 katuraginomiya_event_3.ks 509行目～
+;「　忠告　」(←仮タイトル)　久佐賀宮　志津子 katuraginomiya_9_4.ks 62行目～
 
 ;「星も凍るような夜」(←仮タイトル)　三宮　時子 hujieda_1_3.ks 78行目～
 

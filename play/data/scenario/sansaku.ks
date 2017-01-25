@@ -534,7 +534,7 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,1,2,-1,1,"a","","",3,"");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,0,0,1,2,"a","","","","");
 [endscript]
 
 [layopt layer=26 visible=true]
@@ -708,7 +708,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,1,2,-1,1
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1,"a","","",1,"");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,0,0,1,1,"a","","",1,"");
 [endscript]
 ;【淑女度上昇】+2（↓可能なら文字色変更表示）淑女度の数値は仮のもので、今後調整予定です
 [eval exp="f.para_shujinkou_shukujodo = f.para_shujinkou_shukujodo + 2"]
@@ -887,7 +887,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-1,1,"a","","",1,"");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1,1,"a","","",1,"");
 [endscript]
 [layopt layer=26 visible=true]
 [image layer=26 x=250 y=40 storage="button/frame_lesson_message.png"]

@@ -96,105 +96,105 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,1,2,-1,1,"a","","",3,"");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,0,0,1,2,"a","","",3,"");
 [endscript]
 『友人の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1,"a","","",1,"");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,0,0,1,1,"a","","",1,"");
 [endscript]
 『新茶の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,1,1,-1,1,"a","","",1,"");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1,1,"a","","",1,"");
 [endscript]
 『さつきの話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("読書の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("読書の話題",0,0,0,1,2,"a","","","","");
 [endscript]
 『読書の話題』を手に入れました。[p]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("スポーツの話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("スポーツの話題",0,0,0,1,0,"a","","","","");
 [endscript]
 『スポーツの話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("食事の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("食事の話題",0,0,0,1,0,"a","","","","");
 [endscript]
 『食事の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("観劇の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("観劇の話題",0,0,-1,-2,1,"a","","","","");
 [endscript]
 『観劇の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("猫の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("猫の話題",0,0,0,1,-1,"a","","","","");
 [endscript]
 『猫の話題』を手に入れました。[p]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("聞き上手と話し上手の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("聞き上手と話し上手の話題",0,0,2,0,0,"a","","","","");
 [endscript]
 『聞き上手と話し上手の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("緑の石の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("緑の石の話題",0,1,0,2,1,"a","","","","");
 [endscript]
 『緑の石の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("写真の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("写真の話題",0,0,1,1,2,"a","","","","");
 [endscript]
 『写真の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("1日のはじまりの話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("1日のはじまりの話題",0,2,1,1,1,"a","","","","");
 [endscript]
 『1日のはじまりの話題』を手に入れました。[p]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("お気に入りの曲の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("お気に入りの曲の話題",0,2,-1,0,2,"a","","","","");
 [endscript]
 『お気に入りの曲の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("道の話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("道の話題",0,2,0,1,1,"a","","","","");
 [endscript]
 『道の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠についての話題",0,0,0,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠についての話題",0,2,1,1,2,"a","","","","");
 [endscript]
 『変化と永遠についての話題』を手に入れました。[r]
 お稽古パートをはじめます。[p]
