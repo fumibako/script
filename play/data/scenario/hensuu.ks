@@ -235,6 +235,12 @@ f.hujieda_koto_good=80; //(調整中)お箏熟練度がこの数値以上かつ�
 f.hujieda_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値
 [endscript]
 
+;時子さん
+[eval exp="f.fumi_toutyaku_tokiko=[0,0,0,0,0,0,0]"]
+
+;飛鳥紗代子さん
+[eval exp="f.fumi_toutyaku_asuka=[0,0,0,0,0,0,0,0,0,0,0,0,0]"]
+
 ;◆攻略キャラ配列
 [iscript]
 sf.kouryaku_list_fullname = [sf.kuroda['fullname']];//配列として宣言

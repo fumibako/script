@@ -275,7 +275,10 @@ f.katuraginomiya_fumi_toutyakumachi_dokusho = f.katuraginomiya_fumi_toutyakumach
 if (f.katuraginomiya_fumi_toutyakumachi_sports > 0){
 f.katuraginomiya_fumi_toutyakumachi_sports = f.katuraginomiya_fumi_toutyakumachi_sports - 1;
 }
-
+//散策イベント2(時子さん)を見ている場合に手紙到着週数カウント減算
+if (f.katuraginomiya_fumi_inou > 0){
+f.katuraginomiya_fumi_inou = f.katuraginomiya_fumi_inou - 1;
+}
 //◆藤枝宛 話題の手紙届くまでカウント減算処理
 if (f.hujieda_fumi_toutyakumachi_shumi > 0){
 f.hujieda_fumi_toutyakumachi_shumi = f.hujieda_fumi_toutyakumachi_shumi - 1;
