@@ -218,7 +218,7 @@ sf.hujieda ={
   "fumibako":"fumibako_hujieda",
   "fumi1":"hujieda_fumi1",
 }; 
-f.para_hujieda_koukando=5;
+f.para_hujieda_koukando=0; //1/26調整更新(鳩の手紙による好感度加算を考慮して0に)
 f.para_hujieda_sintyou="?";
 f.para_hujieda_taijuu="?";
 f.para_hujieda_shumi="－";
@@ -232,7 +232,7 @@ f.hujieda_fumi_start=0;
 f.hujieda_au=0; //個別ルートに入ったら1を代入
 f.fumi_list_hujieda_title = [];
 f.hujieda_koto_good=80; //(調整中)お箏熟練度がこの数値以上かつ淑女度一定値以上、藤枝好感度がkoukando_c以上でgoodEDに
-f.hujieda_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値
+f.hujieda_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値。今のところ鳩が手紙を運ぶだけでも加算に含めている。こちらから返信できないうちは加算しなくても良いだろうか、など思案中(1/26)
 [endscript]
 
 ;時子さん

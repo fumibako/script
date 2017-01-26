@@ -5,10 +5,10 @@
 
 *hujieda_event_hantei
 ;↓8月までのイベントを見た際の好感度増加値です(暫定)
-[eval exp="tf.koukando_eventup_hujieda=5"]
+[eval exp="tf.koukando_eventup_hujieda=0"]
 ;↓以下にイベント判定を追記
 ;◆藤枝イベント判定【手紙が来る】条件 お箏の練習を2回以上で1度だけ発生
-;9月1週個別ルート分岐が選択肢による流れなので、事前の好感度増加は無くても大丈夫かもしれません
+;9月1週個別ルート分岐が選択肢による流れなので、事前の好感度増加は無くても大丈夫かもしれません→無しにしました(1/26更新)
 ;しかし他の攻略対象に比べ手紙による好感度up期間が短いため、その分の加算は必要かもしれないと考えて8月まではイベントによる好感度加算を入れています
 [if exp="f.okeiko_month==4 && f.event_hujieda[1]==0 && f.para_shujinkou_koto_kaisuu>=2"]
 	[eval exp="f.event_storage='hujieda/hujieda_4_4.ks'"]

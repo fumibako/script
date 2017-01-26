@@ -484,8 +484,22 @@ $('.junbi_girl').remove();
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [wait time=10]
 
-[if exp="f.fumi_toutyaku_oaite.length>1"]
-	;藤枝からの手紙の場合は鳩が届けたという内容に変更予定
+;藤枝からの9月2～10月4週は鳩が届けたという内容に変更
+[if exp="f.hato == 1"]
+	[ptext text=&f.fumi_toutyaku_info_hato layer=27 size=21 x=290 y=165 color=darkslateblue bold=bold]
+	[wait time=10]
+	;【SE】キラキラ
+	[playse storage=kira.ogg loop=false ]
+	[eval exp="f.hato == 0"]
+[p]
+[freeimage layer = 26]
+[wait time=10]
+[freeimage layer = 27]
+[wait time=10]
+	@jump target = *fumi_toutyaku_message_owari
+[endif]
+
+[if exp="f.fumi_toutyaku_oaite.length > 1"]
 	[eval exp="f.fumi_toutyaku_info1=f.fumi_toutyaku_oaite"]
 	[eval exp="f.fumi_toutyaku_info2='からお手紙が届いております'"]
 	[ptext text=&f.fumi_toutyaku_info1 layer=27 size=21 x=290 y=150 color=darkslateblue bold=bold]
@@ -505,6 +519,9 @@ $('.junbi_girl').remove();
 [wait time=10]
 [freeimage layer = 27]
 [wait time=10]
+
+*fumi_toutyaku_message_owari
+
 [eval exp="f.tukihajime = 0"]
 [eval exp="f.fumi_toutyaku = 0"]
 [eval exp="f.fumi_toutyaku_oaite=[]"]
