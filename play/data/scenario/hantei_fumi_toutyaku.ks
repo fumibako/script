@@ -501,8 +501,8 @@ f.okeiko_month_kansuuji="三月 ";
 ;=======================================================================================
 ;◆季節の便り◆
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度(暫定)11以上(初期値10より1でも上がっていればok
-[if exp="f.okeiko_month == 6 && f.para_katuraginomiya_koukando > 10 && f.fumi_toutyaku_katuraginomiya[22] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度(暫定)13以上(イベント1見終わった段階で好感度12：（内訳）初期値10+イベント1の手紙による加算2)より1でも上がっていればok
+[if exp="f.okeiko_month == 6 && f.para_katuraginomiya_koukando > 12 && f.fumi_toutyaku_katuraginomiya[22] == 0"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_22
 [endif]
