@@ -148,7 +148,7 @@ sf.zaizen ={
   "fumi1":"zaizen_fumi1",
 }; 
 f.para_zaizen_koukando=0;
-f.para_zaizen_sintyou=174;
+f.para_zaizen_sintyou=183;
 f.para_zaizen_taijuu=62;
 f.para_zaizen_shumi="－";
 f.zaizen_fumi_henjimachi=1;
@@ -181,8 +181,8 @@ sf.katuraginomiya ={
   "fumibako":"fumibako_katuraginomiya",
 }; 
 f.para_katuraginomiya_koukando=10;
-f.para_katuraginomiya_sintyou="?";
-f.para_katuraginomiya_taijuu="?";
+f.para_katuraginomiya_sintyou="177";
+f.para_katuraginomiya_taijuu="69";
 f.para_katuraginomiya_shumi="－";
 f.katuraginomiya_fumi_henjimachi=1;
 f.katuraginomiya_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
