@@ -309,38 +309,38 @@ f.okeiko_month_kansuuji="三月 ";
 ;=======================================================================================
 ;◆季節の便り◆
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『柏餅』5月
-[if exp="f.okeiko_month == 5 && f.fumi_toutyaku_zaizen[24]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『柏餅』5月 好感度(暫定)1以上
+[if exp="f.okeiko_month == 5 && f.para_zaizen_koukando > 0 && f.fumi_toutyaku_zaizen[24]==0"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_24
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『梅雨』6月
-[if exp="f.okeiko_month == 6 && f.fumi_toutyaku_zaizen[25]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『梅雨』6月 好感度(暫定)5以上
+[if exp="f.okeiko_month == 6 && f.para_zaizen_koukando > 4 && f.fumi_toutyaku_zaizen[25]==0"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_25
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『七夕』7月
-[if exp="f.okeiko_month == 7 && f.fumi_toutyaku_zaizen[26]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『七夕』7月 好感度(暫定)15以上
+[if exp="f.okeiko_month == 7 && f.para_zaizen_koukando > 14 && f.fumi_toutyaku_zaizen[26]==0"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_26
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『お墓参り』8月
-[if exp="f.okeiko_month == 8 && f.fumi_toutyaku_zaizen[27]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『お墓参り』8月 好感度(暫定)25以上
+[if exp="f.okeiko_month == 8 && f.para_zaizen_koukando > 24 && f.fumi_toutyaku_zaizen[27]==0"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_27
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『彼岸花』9月
-[if exp="f.okeiko_month == 9 && f.fumi_toutyaku_zaizen[28]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『彼岸花』9月 好感度(暫定)35以上
+[if exp="f.okeiko_month == 9 && f.para_zaizen_koukando > 34 && f.fumi_toutyaku_zaizen[28]==0"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_28
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『菊花展』10月
-[if exp="f.okeiko_month == 10 && f.fumi_toutyaku_zaizen[29]==0"]
+;◆↓手紙一通分の到着判定処理(開始)：『菊花展』10月 好感度(暫定)45以上
+[if exp="f.okeiko_month == 10 && f.para_zaizen_koukando > 44 && f.fumi_toutyaku_zaizen[29]==0"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_29
 [endif]
