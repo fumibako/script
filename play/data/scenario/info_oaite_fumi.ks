@@ -1722,7 +1722,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[eval exp="f.loop_count = f.loop_count - 1"]
 [endif]
 [iscript]
+	f.fumi_katuraginomiya_midoku_y = 0;
 	f.fumi_katuraginomiya_midoku_y = ( 20 + 80 * f.fumi_katuraginomiya_number ) - 80 * f.list_count;
+	f.fumi_katuraginomiya_y = 0;
 	f.fumi_katuraginomiya_y = ( 10 + 80 * f.fumi_katuraginomiya_number ) - 80 * f.list_count;
 	f.fumi_hairetsu1 = 3;
 	f.fumi_hairetsu2 = f.fumi_list_katuraginomiya_location_fumi[f.list_count];
@@ -1736,7 +1738,10 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
 	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='katuraginomiya'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_katuraginomiya_y color=white]
 [else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
+f.fumi_katuraginomiya_number=[emb exp="f.fumi_katuraginomiya_number"][r]
+f.fumi_katuraginomiya_midoku_y=[emb exp="f.fumi_katuraginomiya_midoku_y"]
+;	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="返信済" layer=28 size=15 x=850 y=100 color=mediumslateblue bold=bold]
 [endif]
 [if exp="f.fumi_katuraginomiya_number==0"]
 [else]
@@ -1928,7 +1933,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[eval exp="f.loop_count = f.loop_count - 1"]
 [endif]
 [iscript]
+	f.fumi_hujieda_midoku_y = 0;
 	f.fumi_hujieda_midoku_y = ( 20 + 80 * f.fumi_hujieda_number ) - 80 * f.list_count;
+	f.fumi_hujieda_y = 0;
 	f.fumi_hujieda_y = ( 10 + 80 * f.fumi_hujieda_number ) - 80 * f.list_count;
 	f.fumi_hairetsu1 = 4;
 	f.fumi_hairetsu2 = f.fumi_list_hujieda_location_fumi[f.list_count];
@@ -1942,7 +1949,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
 	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='hujieda'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_hujieda_y color=white]
 [else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
+;	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [endif]
 [if exp="f.fumi_hujieda_number==0"]
 [else]
@@ -2043,7 +2050,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;4f.loop_count=[emb exp ="f.loop_count"][r]
 ;5f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
 [iscript]
+	f.fumi_hujieda_midoku_y = 0;
 	f.fumi_hujieda_midoku_y =  20 + 80 * ( f.fumi_hujieda_number - 10 ) - 80 * f.list_count;
+	f.fumi_hujieda_y =  0;
 	f.fumi_hujieda_y =  10 + 80 * ( f.fumi_hujieda_number - 10 ) - 80 * f.list_count;
 	f.fumi_hairetsu1 = 4;
 	f.fumi_hairetsu2 = f.fumi_list_hujieda_location_fumi[f.list_count];

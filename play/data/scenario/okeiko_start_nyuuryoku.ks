@@ -64,12 +64,20 @@
 [edit left=345 top=260 width=200 length=200 maxchars=3 name="f.para_shujinkou_shukujodo" height=20]
 
 
-[ptext text="ゲームの進行度：" layer=29 size=15 x=100 y=440 color=darkslateblue bold=bold]
-[edit left=100 top=460 width=50 length=200 maxchars=2 name="f.okeiko_month" height=20]
-[ptext text="月" layer=29 size=15 x=160 y=460 color=darkslateblue bold=bold]
+[ptext text="ゲームの進行度：" layer=29 size=15 x=10 y=440 color=darkslateblue bold=bold]
+[edit left=10 top=460 width=50 length=200 maxchars=2 name="f.okeiko_month" height=20]
+[ptext text="月" layer=29 size=15 x=70 y=460 color=darkslateblue bold=bold]
 
-[edit left=180 top=460 width=50 length=200 maxchars=2 name="f.okeiko_week" height=20]
-[ptext text="週" layer=29 size=15 x=240 y=460 color=darkslateblue bold=bold]
+[edit left=90 top=460 width=50 length=200 maxchars=2 name="f.okeiko_week" height=20]
+[ptext text="週" layer=29 size=15 x=150 y=460 color=darkslateblue bold=bold]
+
+
+[ptext text="体力" layer=29 size=15 x=10 y=490 color=darkslateblue bold=bold]
+[edit left=10 top=510 width=50 length=200 maxchars=3 name="f.para_shujinkou_tairyoku_now" height=20]
+
+[ptext text="気力:テスト用に多く仮設定しています。本来は10ずつです" layer=29 size=15 x=70 y=490 color=darkslateblue bold=bold]
+[edit left=70 top=510 width=50 length=200 maxchars=3 name="f.para_shujinkou_kiryoku_now" height=20]
+
 
 [ptext text="四条：好感度（元の設定値=10)" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
 [edit left=345 top=410 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
@@ -95,7 +103,7 @@ $("input[name='f.para_katuraginomiya_koukando']").val("10");
 $("input[name='f.katuraginomiya_au']").val("0");
 
 $("input[name='tf.test_hujieda_fumi_hensin_speed']").val("0");
-$("input[name='f.para_hujieda_koukando']").val("5");
+$("input[name='f.para_hujieda_koukando']").val("0");
 $("input[name='f.hujieda_au']").val("0");
 $("input[name='f.katuraginomiya_fumi_start']").val("0");
 $("input[name='f.hujieda_fumi_start']").val("0");
@@ -121,6 +129,9 @@ $("input[name='f.event_katuraginomiya3']").val("0"); //デフォルト値0にし
 $("input[name='f.event_katuraginomiya2']").val("0");
 
 $("input[name='tf.advice_event_hyouji']").val("0");
+
+$("input[name='f.para_shujinkou_tairyoku_now']").val("900");
+$("input[name='f.para_shujinkou_kiryoku_now']").val("900");
 
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
@@ -163,6 +174,12 @@ f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
 f.event_katuraginomiya[3] = parseInt($("input[name='f.event_katuraginomiya3']").val());
 f.event_katuraginomiya[2] = parseInt($("input[name='f.event_katuraginomiya2']").val());
 tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
+
+f.para_shujinkou_tairyoku_now = parseInt($("input[name='f.para_shujinkou_tairyoku_now']").val());
+f.para_shujinkou_tairyoku_max = parseInt($("input[name='f.para_shujinkou_tairyoku_now']").val());
+f.para_shujinkou_kiryoku_now = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
+f.para_shujinkou_kiryoku_max = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
+
 [endscript]
 
 

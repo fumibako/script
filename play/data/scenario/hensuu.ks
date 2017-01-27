@@ -149,7 +149,7 @@ sf.zaizen ={
 }; 
 f.para_zaizen_koukando=0;
 f.para_zaizen_sintyou=183;
-f.para_zaizen_taijuu=62;
+f.para_zaizen_taijuu=73;
 f.para_zaizen_shumi="－";
 f.zaizen_fumi_henjimachi=1;
 f.zaizen_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
@@ -181,8 +181,8 @@ sf.katuraginomiya ={
   "fumibako":"fumibako_katuraginomiya",
 }; 
 f.para_katuraginomiya_koukando=10;
-f.para_katuraginomiya_sintyou="177";
-f.para_katuraginomiya_taijuu="69";
+f.para_katuraginomiya_sintyou=177;
+f.para_katuraginomiya_taijuu=69;
 f.para_katuraginomiya_shumi="－";
 f.katuraginomiya_fumi_henjimachi=1;
 f.katuraginomiya_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
@@ -219,8 +219,8 @@ sf.hujieda ={
   "fumi1":"hujieda_fumi1",
 }; 
 f.para_hujieda_koukando=0; //1/26調整更新(鳩の手紙による好感度加算を考慮して0に)
-f.para_hujieda_sintyou="?";
-f.para_hujieda_taijuu="?";
+f.para_hujieda_sintyou=165;
+f.para_hujieda_taijuu=56;
 f.para_hujieda_shumi="－";
 f.hujieda_fumi_henjimachi=1;
 f.hujieda_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
