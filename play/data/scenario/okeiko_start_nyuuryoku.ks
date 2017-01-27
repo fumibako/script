@@ -1,4 +1,4 @@
-﻿;=============================================
+;=============================================
 ;okeiko.ks 設定入力部分
 ;=============================================
 *start
@@ -45,6 +45,9 @@
 [ptext text="藤枝：お返事イベント(0=未見、1=見た)" layer=29 size=15 x=700 y=490 color=darkslateblue bold=bold]
 [edit left=700 top=510 width=200 length=200 maxchars=3 name="f.event_hujieda5" height=20]
 
+[ptext text="四条：好感度（元の設定値=10)" layer=29 size=15 x=700 y=530 color=darkslateblue bold=bold]
+[edit left=345 top=550 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
+
 [ptext text="熟練度：茶道" layer=29 size=15 x=10 y=190 color=darkslateblue bold=bold]
 [edit left=10 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
 
@@ -78,17 +81,17 @@
 [ptext text="気力:テスト用に多く仮設定しています。本来は10ずつです" layer=29 size=15 x=70 y=490 color=darkslateblue bold=bold]
 [edit left=70 top=510 width=50 length=200 maxchars=3 name="f.para_shujinkou_kiryoku_now" height=20]
 
-
-[ptext text="四条：好感度（元の設定値=10)" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
-[edit left=345 top=410 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
-
-;f.event_katuraginomiya[3]==1 葛城宮のイベント9/1前日最後までみた
-[ptext text="葛城宮イベント9/1前日最後までみた=1 それ以外=0" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
-[edit left=345 top=310 width=200 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
+;f.event_katuraginomiya[1]==1 葛城宮のイベント1を見た
+[ptext text="葛城宮のイベント1を見た=1 それ以外=0" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
+[edit left=345 top=310 width=200 length=200 maxchars=3 name="f.event_katuraginomiya1" height=20]
 
 ;f.event_katuraginomiya[2]==1 葛城宮のイベント2を見た
 [ptext text="葛城宮イベント2を見た=1 それ以外=0" layer=29 size=15 x=345 y=340 color=darkslateblue bold=bold]
 [edit left=345 top=360 width=200 length=200 maxchars=3 name="f.event_katuraginomiya2" height=20]
+
+;f.event_katuraginomiya[3]==1 葛城宮のイベント9/1前日最後までみた
+[ptext text="葛城宮イベント9/1前日最後までみた=1 それ以外=0" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
+[edit left=395 top=310 width=200 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
 
 [ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
 [edit left=345 top=460 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
