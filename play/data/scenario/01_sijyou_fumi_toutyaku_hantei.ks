@@ -450,13 +450,13 @@
   [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石2　凡庸 sijyou_fumi69
-[if exp="f.sijyou_fumi_toutyakumachi_midori == 0 && f.sijyou_omiai == 0 && f.okeiko_month !=10 && f.sijyou_event6==0 && f.fumi_toutyaku_sijyou[68] == 1 && f.fumi_toutyaku_sijyou[69] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_midori == 0 && f.sijyou_omiai == 0 && f.okeiko_month !=10 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[68] == 1 && f.fumi_toutyaku_sijyou[69] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_69
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石2　凡庸(見合い後　事件判別なし※2の内容が同じなので　69=0のとき) sijyou_fumi70 
-[if exp="f.sijyou_fumi_toutyakumachi_midori == 0 && f.sijyou_omiai == 1 && f.okeiko_month !=10 && f.fumi_toutyaku_sijyou[69]==0 && f.fumi_toutyaku_sijyou[68] == 1 && f.fumi_toutyaku_sijyou[70] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_midori == 0 && f.sijyou_omiai == 1 && f.okeiko_month !=10 && f.fumi_toutyaku_sijyou[69] == 0 && f.fumi_toutyaku_sijyou[68] == 1 && f.fumi_toutyaku_sijyou[70] == 0"]
  [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_70
 [endif]
@@ -468,19 +468,19 @@
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：緑の石４(事件後のみ) sijyou_fumi72 71==1
-[if exp="f.sijyou_fumi_toutyakumachi_midori == 0 && f.sijyou_omiai == 1 && f.okeiko_month !=10 && f.sijyou_event6 == 1 && f.fumi_toutyaku_sijyou[71]==1 && f.fumi_toutyaku_sijyou[72] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_midori == 0 && f.sijyou_omiai == 1 && f.okeiko_month !=10 && f.sijyou_event6 == 1 && f.fumi_toutyaku_sijyou[71] == 1 && f.fumi_toutyaku_sijyou[72] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_72
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり１』ichi_nichi sijyou_fumi73　（事件解決前　見合い前後判定なし）
-[if exp="f.sijyou_fumi_toutyakumachi_hajimari == 0 && f.sijyou_event6 == 0 && f.okeiko_month !=10 && f.fumi_toutyaku_sijyou[73]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari == 0 && f.sijyou_event6 == 0 && f.okeiko_month !=10 && f.fumi_toutyaku_sijyou[73] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_73
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『一日のはじまり２凡庸』ichi_nichi2 sijyou_fumi74（お見合い前）１をみている
-[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==0 && f.okeiko_month !=10 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[73]==1 && f.fumi_toutyaku_sijyou[74]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_hajimari==0 && f.sijyou_omiai==0 && f.okeiko_month !=10 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[73]==1 && f.fumi_toutyaku_sijyou[74] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_74
  [endif]
@@ -516,7 +516,7 @@
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『猫３　事件解決後』neko3*sijyou_fumi79（見合い後 事件解決後　２どちらかをみている）
-[if exp="f.sijyou_fumi_toutyakumachi_nek o== 0 && f.sijyou_omiai == 1 && f.okeiko_month !=10 && f.sijyou_event6 == 1 && (f.fumi_toutyaku_sijyou[77] == 1 || f.fumi_toutyaku_sijyou[78]==1) && f.fumi_toutyaku_sijyou[79] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_nek o== 0 && f.sijyou_omiai == 1 && f.okeiko_month !=10 && f.sijyou_event6 == 1 && (f.fumi_toutyaku_sijyou[77] == 1 || f.fumi_toutyaku_sijyou[78] == 1) && f.fumi_toutyaku_sijyou[79] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_79
 [endif]
