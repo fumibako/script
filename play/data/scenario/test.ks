@@ -151,6 +151,21 @@
 
 *title
 ;------タイトルへ戻る
+;↓各変数を初期設定にリセット
+[call target = *start storage = "01_sijyou_hensuu.ks"]
+[call target = *start storage = "hensuu.ks"]
+[eval exp = "tf.okeiko_gamen = false"]
+[eval exp = "tf.test_sijyou_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_zaizen_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_katuraginomiya_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_hujieda_fumi_hensin_speed = 1"]
+
+;test用変数もリセット
+[eval exp = "tf.test_gamen = false"]
+[eval exp = "tf.test_gamen_sijyou = false"]
+
+;↓念のためスタックの消去(Call、マクロ呼び出し、 if 文などを通過した時に呼び出し元に帰ってくるために保持するメモリ領域)
+[clearstack]
 @jump storage="title.ks"
 [endreplay]
 [s]

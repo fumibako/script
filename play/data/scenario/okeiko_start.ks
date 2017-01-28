@@ -547,7 +547,17 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 
 @jump storage="okeiko.ks" target=*okeiko_main
 
+;◆テストメニューへ戻る
 *back_test
+;↓各変数を初期設定にリセット
+[call target = *start storage = "01_sijyou_hensuu.ks"]
+[call target = *start storage = "hensuu.ks"]
+[eval exp = "tf.okeiko_gamen = false"]
+[eval exp = "tf.test_sijyou_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_zaizen_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_katuraginomiya_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_hujieda_fumi_hensin_speed = 1"]
+
 [ct]
 [clearfix]
 [clearstack]

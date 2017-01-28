@@ -17,6 +17,10 @@
 [wait time=10]
 [endif]
 
+;◆イベント全般(1表示、0非表示)tf.event_hyouji == 0の場合はイベント判定をカット
+[if exp="tf.event_hyouji == 0"]
+@jump target=*event_hantei_week_hajime_owari
+[endif]
 *event_hantei_week_hajime
 ;◆イベント判定(週始め)へ飛んで戻ってくる
 @jump storage="event_hantei_week_hajime.ks" target=*start
@@ -40,6 +44,10 @@
 @jump storage="okeiko_qk_reset.ks" target=*start
 *okeiko_qk_reset_end
 
+;◆イベント全般(1表示、0非表示)tf.event_hyouji == 0の場合はイベント判定をカット
+[if exp="tf.event_hyouji == 0"]
+@jump target=*event_hantei_week_owari_owari
+[endif]
 *event_hantei_week_owari
 ;◆イベント判定(週終わり：エンディングイベントなどの判定処理リスト)へ飛んで戻ってくる
 @jump storage="event_hantei_week_owari.ks" target=*start
@@ -162,6 +170,9 @@ f.sijyou_fumi_toutyakumachi_dokusho = f.sijyou_fumi_toutyakumachi_dokusho - 1;
 }
 if (f.sijyou_fumi_toutyakumachi_sports > 0){
 f.sijyou_fumi_toutyakumachi_sports = f.sijyou_fumi_toutyakumachi_sports - 1;
+}
+if (f.sijyou_fumi_toutyakumachi_aburidasi > 0){
+f.sijyou_fumi_toutyakumachi_aburidasi = f.sijyou_fumi_toutyakumachi_aburidasi - 1;
 }
 
 //◆財前宛 話題の手紙届くまでカウント減算処理
@@ -366,8 +377,19 @@ f.hujieda_fumi_toutyakumachi_sports = f.hujieda_fumi_toutyakumachi_sports - 1;
 ;◆イベント判定(週始め)へ
 @jump target=*event_hantei_week_hajime
 
-
+;◆テストメニューへ戻る
 *back_test
+;↓各変数を初期設定にリセット
+[call target = *start storage = "01_sijyou_hensuu.ks"]
+[call target = *start storage = "hensuu.ks"]
+[eval exp = "tf.okeiko_gamen = false"]
+[eval exp = "tf.test_sijyou_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_zaizen_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_katuraginomiya_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_hujieda_fumi_hensin_speed = 1"]
+[eval exp = "tf.event_hyouji = 1"]
+[eval exp = "tf.advice_event_hyouji = 1"]
+
 [ct]
 [clearfix]
 [clearstack]

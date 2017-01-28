@@ -125,78 +125,137 @@ f.kuroda_fumi_toutyakumachi_week=0; //その攻略対象にこちらから手紙
 f.kuroda_nextfumi_common=2;
 f.fumi_toutyaku_kuroda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 f.kuroda_au=0; //個別ルートに入ったら1を代入
-
+f.kuroda_fumi_toutyakumachi_shumi = -1;
+f.kuroda_fumi_toutyakumachi_sigoto = -1;
+f.kuroda_fumi_toutyakumachi_kazoku = -1;
+f.kuroda_fumi_toutyakumachi_kisetsu = -1;
+f.kuroda_fumi_toutyakumachi_shourai = -1;
+f.kuroda_fumi_toutyakumachi_yuujin = -1;
+f.kuroda_fumi_toutyakumachi_shokuji = -1;
+f.kuroda_fumi_toutyakumachi_kangeki = -1;
+f.kuroda_fumi_toutyakumachi_neko = -1;
+f.kuroda_fumi_toutyakumachi_kiki = -1;
+f.kuroda_fumi_toutyakumachi_midori = -1;
+f.kuroda_fumi_toutyakumachi_photo = -1;
+f.kuroda_fumi_toutyakumachi_hajimari = -1;
+f.kuroda_fumi_toutyakumachi_music = -1;
+f.kuroda_fumi_toutyakumachi_michi = -1;
+f.kuroda_fumi_toutyakumachi_henka = -1;
+f.kuroda_fumi_toutyakumachi_dokusho = -1;
+f.kuroda_fumi_toutyakumachi_sports = -1;
+f.kuroda_fumi_toutyakumachi_sintya = -1;
+f.kuroda_fumi_toutyakumachi_satuki = -1;
 [endscript]
 
 ;財前
 [iscript]
 sf.zaizen ={
-  "root":1,
-  "code":"zaizen",
-  "myouji":"財前",
-  "namae":"美彬",
-  "fullname":"財前 美彬",
-  "koukando_a":50,
-  "koukando_b":65,
-  "koukando_c":80,
-  "fumi_hindo_week":4,
-  "fumi_henjimachi_ok_number":0,
-  "isono1":"zaizen_isono1",
-  "info1":"info_zaizen",
-  "ask1":"(仮)財前美彬様について",
-  "fumibako":"fumibako_zaizen",
-  "fumi1":"zaizen_fumi1",
+  "root" : 1,
+  "code" : "zaizen",
+  "myouji" : "財前",
+  "namae" : "美彬",
+  "fullname" : "財前 美彬",
+  "koukando_a" : 50,
+  "koukando_b" : 65,
+  "koukando_c" : 80,
+  "fumi_hindo_week" : 4,
+  "fumi_henjimachi_ok_number" : 0,
+  "isono1" : "zaizen_isono1",
+  "info1" : "info_zaizen",
+  "ask1" : "(仮)財前美彬様について",
+  "fumibako" : "fumibako_zaizen",
+  "fumi1" : "zaizen_fumi1",
 }; 
-f.para_zaizen_koukando=0;
-f.para_zaizen_sintyou=183;
-f.para_zaizen_taijuu=73;
-f.para_zaizen_shumi="－";
-f.zaizen_fumi_henjimachi=1;
-f.zaizen_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
-f.zaizen_fumi_toutyakumachi_week=0;
-f.zaizen_nextfumi_common=2;
-f.fumi_toutyaku_zaizen=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-f.zaizen_au=0; //個別ルートに入ったら1を代入
-f.zaizen_koukando_bad=50; //(調整中)好感度がこの数値未満でbad2に。bad1は選択肢による分岐です
-f.zaizen_reihou_good=80; //(調整中)礼法熟練度がこの数値以上かつ淑女度一定値以上、財前好感度がkoukando_c以上でgoodEDに
+f.para_zaizen_koukando = 0;
+f.para_zaizen_sintyou = 183;
+f.para_zaizen_taijuu = 73;
+f.para_zaizen_shumi = "－";
+f.zaizen_fumi_henjimachi = 1;
+f.zaizen_fumi_toutyakumachi = 3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
+f.zaizen_fumi_toutyakumachi_week = 0;
+f.zaizen_nextfumi_common= 2 ;
+f.fumi_toutyaku_zaizen = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+f.zaizen_au = 0; //個別ルートに入ったら1を代入
+f.zaizen_koukando_bad = 50; //(調整中)好感度がこの数値未満でbad2に。bad1は選択肢による分岐です
+f.zaizen_reihou_good = 80; //(調整中)礼法熟練度がこの数値以上かつ淑女度一定値以上、財前好感度がkoukando_c以上でgoodEDに
 f.zaizen_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値
+f.zaizen_fumi_toutyakumachi_shumi = -1;
+f.zaizen_fumi_toutyakumachi_sigoto = -1;
+f.zaizen_fumi_toutyakumachi_kazoku = -1;
+f.zaizen_fumi_toutyakumachi_kisetsu = -1;
+f.zaizen_fumi_toutyakumachi_shourai = -1;
+f.zaizen_fumi_toutyakumachi_yuujin = -1;
+f.zaizen_fumi_toutyakumachi_shokuji = -1;
+f.zaizen_fumi_toutyakumachi_kangeki = -1;
+f.zaizen_fumi_toutyakumachi_neko = -1;
+f.zaizen_fumi_toutyakumachi_kiki = -1;
+f.zaizen_fumi_toutyakumachi_midori = -1;
+f.zaizen_fumi_toutyakumachi_photo = -1;
+f.zaizen_fumi_toutyakumachi_hajimari = -1;
+f.zaizen_fumi_toutyakumachi_music = -1;
+f.zaizen_fumi_toutyakumachi_michi = -1;
+f.zaizen_fumi_toutyakumachi_henka = -1;
+f.zaizen_fumi_toutyakumachi_dokusho = -1;
+f.zaizen_fumi_toutyakumachi_sports = -1;
+f.zaizen_fumi_toutyakumachi_sintya = -1;
+f.zaizen_fumi_toutyakumachi_satuki = -1;
 [endscript]
 
 ;葛城宮 晴仁
 [iscript]
 sf.katuraginomiya ={
-  "root":0,
-  "code":"katuraginomiya",
-  "myouji":"葛城宮",
-  "namae":"1",
-  "fullname":"葛城宮 晴仁",
-  "koukando_a":30,
-  "koukando_b":60,
-  "koukando_c":80,
-  "fumi_hindo_week":4,
-  "fumi_henjimachi_ok_number":0,
-  "isono1":"katuraginomiya_isono1",
-  "info1":"info_katuraginomiya",
-  "ask1":"葛城宮 晴仁様について",
-  "fumibako":"fumibako_katuraginomiya",
+  "root" : 0,
+  "code" : "katuraginomiya",
+  "myouji" : "葛城宮",
+  "namae" : "1",
+  "fullname" : "葛城宮 晴仁",
+  "koukando_a" : 30,
+  "koukando_b" : 60,
+  "koukando_c" : 80,
+  "fumi_hindo_week" : 4,
+  "fumi_henjimachi_ok_number" : 0,
+  "isono1" : "katuraginomiya_isono1",
+  "info1" : "info_katuraginomiya",
+  "ask1" : "葛城宮 晴仁様について",
+  "fumibako" : "fumibako_katuraginomiya",
 }; 
-f.para_katuraginomiya_koukando=10;
-f.para_katuraginomiya_sintyou=177;
-f.para_katuraginomiya_taijuu=69;
-f.para_katuraginomiya_shumi="－";
-f.katuraginomiya_fumi_henjimachi=1;
-f.katuraginomiya_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
-f.katuraginomiya_fumi_toutyakumachi_week=0;
-f.katuraginomiya_nextfumi_common=22; //到着判定無しの場合の到着処理No。エラー回避のため「虫干し」の22を仮指定
-f.fumi_toutyaku_katuraginomiya=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+f.para_katuraginomiya_koukando = 10;
+f.para_katuraginomiya_sintyou = 177;
+f.para_katuraginomiya_taijuu = 69;
+f.para_katuraginomiya_shumi = "－";
+f.katuraginomiya_fumi_henjimachi = 0; //最初の手紙に(0返事しているor1未返信)
+f.katuraginomiya_fumi_toutyakumachi = 3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
+f.katuraginomiya_fumi_toutyakumachi_week = 0;
+f.katuraginomiya_nextfumi_common= 22 ; //到着判定無しの場合の到着処理No。エラー回避のため「虫干し」の22を仮指定
+f.fumi_toutyaku_katuraginomiya = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 //↓葛城宮に手紙を出せるようになったら1。それ以外は0
 f.katuraginomiya_fumi_start = 0;
 f.katuraginomiya_au = 0; //個別ルートに入ったら1を代入
 //↓葛城宮手紙タイトル配列をセット
 f.fumi_list_katuraginomiya_title = [];
-f.katuraginomiya_koukando_bad=50; //(調整中)好感度がこの数値未満でbadに。しかし選択肢分岐badでしたね！失礼しました。万が一使ってくださった場合に備えて残しています(藤枝のbad用変数は削除しました)
-f.katuraginomiya_sadou_good=80; //(調整中)茶道熟練度がこの数値以上かつ淑女度一定値以上、葛城宮好感度がkoukando_c以上でgoodEDに
+f.katuraginomiya_koukando_bad = 50; //(調整中)好感度がこの数値未満でbadに。しかし選択肢分岐badでしたね！失礼しました。万が一使ってくださった場合に備えて残しています(藤枝のbad用変数は削除しました)
+f.katuraginomiya_sadou_good = 80; //(調整中)茶道熟練度がこの数値以上かつ淑女度一定値以上、葛城宮好感度がkoukando_c以上でgoodEDに
 f.katuraginomiya_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値
+f.katuraginomiya_fumi_toutyakumachi_shumi = -1;
+f.katuraginomiya_fumi_toutyakumachi_sigoto = -1;
+f.katuraginomiya_fumi_toutyakumachi_kazoku = -1;
+f.katuraginomiya_fumi_toutyakumachi_kisetsu = -1;
+f.katuraginomiya_fumi_toutyakumachi_shourai = -1;
+f.katuraginomiya_fumi_toutyakumachi_yuujin = -1;
+f.katuraginomiya_fumi_toutyakumachi_shokuji = -1;
+f.katuraginomiya_fumi_toutyakumachi_kangeki = -1;
+f.katuraginomiya_fumi_toutyakumachi_neko = -1;
+f.katuraginomiya_fumi_toutyakumachi_kiki = -1;
+f.katuraginomiya_fumi_toutyakumachi_midori = -1;
+f.katuraginomiya_fumi_toutyakumachi_photo = -1;
+f.katuraginomiya_fumi_toutyakumachi_hajimari = -1;
+f.katuraginomiya_fumi_toutyakumachi_music = -1;
+f.katuraginomiya_fumi_toutyakumachi_michi = -1;
+f.katuraginomiya_fumi_toutyakumachi_henka = -1;
+f.katuraginomiya_fumi_toutyakumachi_dokusho = -1;
+f.katuraginomiya_fumi_toutyakumachi_sports = -1;
+f.katuraginomiya_fumi_toutyakumachi_sintya = -1;
+f.katuraginomiya_fumi_toutyakumachi_satuki = -1;
 [endscript]
 
 ;藤枝　肇
@@ -218,21 +277,41 @@ sf.hujieda ={
   "fumibako":"fumibako_hujieda",
   "fumi1":"hujieda_fumi1",
 }; 
-f.para_hujieda_koukando=0; //1/26調整更新(鳩の手紙による好感度加算を考慮して0に)
+f.para_hujieda_koukando=5; //1/27調整更新(鳩の手紙による好感度を調整して5に戻しました)
 f.para_hujieda_sintyou=165;
 f.para_hujieda_taijuu=56;
 f.para_hujieda_shumi="－";
-f.hujieda_fumi_henjimachi=1;
-f.hujieda_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
-f.hujieda_fumi_toutyakumachi_week=0;
-f.hujieda_nextfumi_common=8; //到着処理無しの時に飛ぶ到着処理No。エラー回避のため8「趣味について」を仮指定
-f.fumi_toutyaku_hujieda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+f.hujieda_fumi_henjimachi= 1 ; //最初の手紙に(0返事しているor1未返信)
+f.hujieda_fumi_toutyakumachi= 3 ; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
+f.hujieda_fumi_toutyakumachi_week= 0 ;
+f.hujieda_nextfumi_common= 8 ; //到着処理無しの時に飛ぶ到着処理No。エラー回避のため8「趣味について」を仮指定
+f.fumi_toutyaku_hujieda = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 //↓藤枝に手紙を出せるようになったら1。それ以外は0
-f.hujieda_fumi_start=0;
-f.hujieda_au=0; //個別ルートに入ったら1を代入
+f.hujieda_fumi_start= 0 ;
+f.hujieda_au= 0 ; //個別ルートに入ったら1を代入
 f.fumi_list_hujieda_title = [];
-f.hujieda_koto_good=80; //(調整中)お箏熟練度がこの数値以上かつ淑女度一定値以上、藤枝好感度がkoukando_c以上でgoodEDに
+f.hujieda_koto_good= 80 ; //(調整中)お箏熟練度がこの数値以上かつ淑女度一定値以上、藤枝好感度がkoukando_c以上でgoodEDに
 f.hujieda_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値。今のところ鳩が手紙を運ぶだけでも加算に含めている。こちらから返信できないうちは加算しなくても良いだろうか、など思案中(1/26)
+f.hujieda_fumi_toutyakumachi_shumi = -1;
+f.hujieda_fumi_toutyakumachi_sigoto = -1;
+f.hujieda_fumi_toutyakumachi_kazoku = -1;
+f.hujieda_fumi_toutyakumachi_kisetsu = -1;
+f.hujieda_fumi_toutyakumachi_shourai = -1;
+f.hujieda_fumi_toutyakumachi_yuujin = -1;
+f.hujieda_fumi_toutyakumachi_shokuji = -1;
+f.hujieda_fumi_toutyakumachi_kangeki = -1;
+f.hujieda_fumi_toutyakumachi_neko = -1;
+f.hujieda_fumi_toutyakumachi_kiki = -1;
+f.hujieda_fumi_toutyakumachi_midori = -1;
+f.hujieda_fumi_toutyakumachi_photo = -1;
+f.hujieda_fumi_toutyakumachi_hajimari = -1;
+f.hujieda_fumi_toutyakumachi_music = -1;
+f.hujieda_fumi_toutyakumachi_michi = -1;
+f.hujieda_fumi_toutyakumachi_henka = -1;
+f.hujieda_fumi_toutyakumachi_dokusho = -1;
+f.hujieda_fumi_toutyakumachi_sports = -1;
+f.hujieda_fumi_toutyakumachi_sintya = -1;
+f.hujieda_fumi_toutyakumachi_satuki = -1;
 [endscript]
 
 ;時子さん

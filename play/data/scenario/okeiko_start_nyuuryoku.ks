@@ -1,4 +1,4 @@
-;=============================================
+﻿;=============================================
 ;okeiko.ks 設定入力部分
 ;=============================================
 *start
@@ -78,7 +78,7 @@
 [ptext text="体力" layer=29 size=15 x=10 y=490 color=darkslateblue bold=bold]
 [edit left=10 top=510 width=50 length=200 maxchars=3 name="f.para_shujinkou_tairyoku_now" height=20]
 
-[ptext text="気力:テスト用に多く仮設定しています。本来は10ずつです" layer=29 size=15 x=70 y=490 color=darkslateblue bold=bold]
+[ptext text="気力:本来は10ずつです" layer=29 size=15 x=70 y=490 color=darkslateblue bold=bold]
 [edit left=70 top=510 width=50 length=200 maxchars=3 name="f.para_shujinkou_kiryoku_now" height=20]
 
 ;f.event_katuraginomiya[1]==1 葛城宮のイベント1を見たx=345 y=190
@@ -96,6 +96,9 @@
 [ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
 [edit left=345 top=460 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
 
+[ptext text="イベント全般(1表示、0非表示)" layer=29 size=15 x=345 y=490 color=darkslateblue bold=bold]
+[edit left=345 top=510 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
+
 [iscript]
 //入力済デフォルト値の設定
 $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
@@ -106,7 +109,7 @@ $("input[name='f.para_katuraginomiya_koukando']").val("10");
 $("input[name='f.katuraginomiya_au']").val("0");
 
 $("input[name='tf.test_hujieda_fumi_hensin_speed']").val("0");
-$("input[name='f.para_hujieda_koukando']").val("0");
+$("input[name='f.para_hujieda_koukando']").val("5");
 $("input[name='f.hujieda_au']").val("0");
 $("input[name='f.katuraginomiya_fumi_start']").val("0");
 $("input[name='f.hujieda_fumi_start']").val("0");
@@ -133,6 +136,7 @@ $("input[name='f.event_katuraginomiya2']").val("0");
 $("input[name='f.event_katuraginomiya1']").val("0");
 
 $("input[name='tf.advice_event_hyouji']").val("0");
+$("input[name='tf.event_hyouji']").val("1");
 
 $("input[name='f.para_shujinkou_tairyoku_now']").val("900");
 $("input[name='f.para_shujinkou_kiryoku_now']").val("900");
@@ -180,6 +184,7 @@ f.event_katuraginomiya[2] = parseInt($("input[name='f.event_katuraginomiya2']").
 f.event_katuraginomiya[3] = parseInt($("input[name='f.event_katuraginomiya3']").val());
 
 tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
+tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
 
 f.para_shujinkou_tairyoku_now = parseInt($("input[name='f.para_shujinkou_tairyoku_now']").val());
 f.para_shujinkou_tairyoku_max = parseInt($("input[name='f.para_shujinkou_tairyoku_now']").val());
@@ -193,7 +198,19 @@ f.para_shujinkou_kiryoku_max = parseInt($("input[name='f.para_shujinkou_kiryoku_
 [freeimage layer = 29]
 @jump storage="okeiko_start.ks" target=*test_start_common
 
+;◆テストメニューへ戻る
 *back_test
+;↓各変数を初期設定にリセット
+[call target = *start storage = "01_sijyou_hensuu.ks"]
+[call target = *start storage = "hensuu.ks"]
+[eval exp = "tf.okeiko_gamen = false"]
+[eval exp = "tf.test_sijyou_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_zaizen_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_katuraginomiya_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_hujieda_fumi_hensin_speed = 1"]
+[eval exp = "tf.event_hyouji = 1"]
+[eval exp = "tf.advice_event_hyouji = 1"]
+
 [ct]
 [clearfix]
 [clearstack]
