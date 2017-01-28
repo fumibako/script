@@ -100,7 +100,7 @@ f.fumi_toutyaku_hujieda[2]=1;
 f.fumi_all_number=f.fumi_all_number + 1;
 f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
 f.hensin_list_hairetsu[4][1] = -1;
-f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
+//f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
 [endscript]
 
 [手紙藤枝 fumi_number=]
