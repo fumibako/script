@@ -158,7 +158,7 @@ sf.zaizen ={
   "koukando_a" : 50,
   "koukando_b" : 65,
   "koukando_c" : 80,
-  "fumi_hindo_week" : 4,
+  "fumi_hindo_week" : 3,
   "fumi_henjimachi_ok_number" : 0,
   "isono1" : "zaizen_isono1",
   "info1" : "info_zaizen",

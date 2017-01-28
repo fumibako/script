@@ -163,7 +163,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 *fumi_toutyaku_hantei_zaizen
 [if exp="f.zaizen_fumi_henjimachi <= parseInt([sf.zaizen['fumi_henjimachi_ok_number']])"]
-	[eval exp="f.zaizen_fumi_toutyakumachi_week=f.zaizen_fumi_toutyakumachi_week+1"]
+	[eval exp = "f.zaizen_fumi_toutyakumachi_week = f.zaizen_fumi_toutyakumachi_week + 1"]
 [endif]
 [if exp="f.zaizen_fumi_toutyakumachi_week >= parseInt([sf.zaizen['fumi_hindo_week']])"]
 @jump target=*hantei_list_zaizen
@@ -664,13 +664,13 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
-;◆↓手紙一通分の到着判定処理(開始)：『 巡る季節 』9月 好感度(暫定)13以上(好感度初期0、4-8月イベント好感度0up、イベント中の手紙到着(鳩6通)による好感度12up→9月2週時点で12。調整中)
-[if exp="f.okeiko_month == 9 && f.para_hujieda_koukando > 13 && f.fumi_toutyaku_hujieda[25] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『 巡る季節 』9月 好感度(暫定)10以上(好感度初期5、4-8月イベント好感度0up、イベント中の手紙返信(7月と9月の2通分)による好感度4up→9月2週時点で好感度4。調整中)
+[if exp="f.okeiko_month == 9 && f.para_hujieda_koukando > 9 && f.fumi_toutyaku_hujieda[25] == 0"]
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_25
 [endif]
-;◆↓手紙一通分の到着判定処理(開始)：『 実りの秋 』10月 好感度(暫定)20以上
-[if exp="f.okeiko_month == 10 && f.para_hujieda_koukando > 19  && f.fumi_toutyaku_hujieda[26] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『 実りの秋 』10月 好感度(暫定)15以上
+[if exp="f.okeiko_month == 10 && f.para_hujieda_koukando > 14  && f.fumi_toutyaku_hujieda[26] == 0"]
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_26
 [endif]
