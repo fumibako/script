@@ -1,4 +1,4 @@
-﻿﻿;=============================================
+﻿﻿﻿;=============================================
 ;◆四条テスト画面用　設定入力
 ;テストしやすいように自由に変更してください
 ;=============================================
@@ -45,6 +45,14 @@
 [ptext text="箏熟練度：" layer=29 size=15 x=400 y=290 color=darkslateblue bold=bold]
 [edit left=400 top=310 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_koto" height=20]
 
+[ptext text="イベント全般(1表示、0非表示)" layer=29 size=15 x=400 y=340 color=darkslateblue bold=bold]
+[edit left=400 top=360 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
+
+[ptext text="体力" layer=29 size=15 x=100 y=390 color=darkslateblue bold=bold]
+[edit left=100 top=410 width=50 length=200 maxchars=3 name="f.para_shujinkou_tairyoku_now" height=20]
+
+[ptext text="気力:本来は10ずつです" layer=29 size=15 x=160 y=390 color=darkslateblue bold=bold]
+[edit left=160 top=410 width=50 length=200 maxchars=3 name="f.para_shujinkou_kiryoku_now" height=20]
 
 
 [iscript]
@@ -67,9 +75,13 @@ $("input[name='f.para_shujinkou_j_reihou']").val("0");
 $("input[name='f.para_shujinkou_j_gogaku']").val("0");
 //お箏熟練度
 $("input[name='f.para_shujinkou_j_koto']").val("0");
+
+$("input[name='tf.event_hyouji']").val("1");
+$("input[name='f.para_shujinkou_tairyoku_now']").val("900");
+$("input[name='f.para_shujinkou_kiryoku_now']").val("900");
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
-[button graphic="kettei.png" target=*test_settei_kettei x=150 y=400 width=100 height=100]
+[button graphic="kettei.png" target=*test_settei_kettei x=150 y=450 width=100 height=100]
 
 [s]
 *test_settei_kettei
@@ -88,6 +100,12 @@ f.para_shujinkou_j_kadou = parseInt($("input[name='f.para_shujinkou_j_kadou']").
 f.para_shujinkou_j_reihou = parseInt($("input[name='f.para_shujinkou_j_reihou']").val());
 f.para_shujinkou_j_gogaku = parseInt($("input[name='f.para_shujinkou_j_gogaku']").val());
 f.para_shujinkou_j_koto = parseInt($("input[name='f.para_shujinkou_j_koto']").val());
+
+tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
+f.para_shujinkou_tairyoku_now = parseInt($("input[name='f.para_shujinkou_tairyoku_now']").val());
+f.para_shujinkou_tairyoku_max = parseInt($("input[name='f.para_shujinkou_tairyoku_now']").val());
+f.para_shujinkou_kiryoku_now = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
+f.para_shujinkou_kiryoku_max = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
 [endscript]
 ;1が入力されたときはf.sijyou_sobo==true　それ以外はfalse
 [if exp="tf.edit_sobo==1"]
@@ -104,6 +122,17 @@ f.para_shujinkou_j_koto = parseInt($("input[name='f.para_shujinkou_j_koto']").va
 [s]
 
 *back_test
+;↓各変数を初期設定にリセット
+[call target = *start storage = "01_sijyou_hensuu.ks"]
+[call target = *start storage = "hensuu.ks"]
+[eval exp = "tf.okeiko_gamen = false"]
+[eval exp = "tf.test_sijyou_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_zaizen_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_katuraginomiya_fumi_hensin_speed = 1"]
+[eval exp = "tf.test_hujieda_fumi_hensin_speed = 1"]
+[eval exp = "tf.event_hyouji = 1"]
+[eval exp = "tf.advice_event_hyouji = 1"]
+
 [ct]
 [clearfix]
 [clearstack]

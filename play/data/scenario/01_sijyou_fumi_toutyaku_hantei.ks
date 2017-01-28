@@ -1,4 +1,4 @@
-*fumi_toutyaku_hantei_sijyou
+﻿*fumi_toutyaku_hantei_sijyou
 ;◇四条手紙到着判定
 [eval exp="f.test='手紙到着可能性なし'"]
 [if exp="f.sijyou_fumi_henjimachi <= parseInt([sf.sijyou['fumi_henjimachi_ok_number']])"]
@@ -19,6 +19,19 @@
 *hantei_list_sijyou
 ;手紙到着：条件有り分
 ;◆◆手紙到着：季節、好感度など条件有り分
+;あぶりだしの便せんを使用した場合、あぶりだしと話題両方にお返事のフラグが入ります。あぶりだしに関するお返事が先に到着する方が自然かと思いますので、判定リスト先頭に移動します。もし話題のお返事を先に到着させたい場合は後方に再移動をお願いします(◆jsYiJcqRkk
+;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
+[if exp="f.sijyou_fumi_toutyakumachi_aburidasi == 0 && f.sijyou_omiai == 0  && f.fumi_toutyaku_sijyou[45] == 0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_45
+[endif]
+;==============================================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
+[if exp="f.sijyou_fumi_toutyakumachi_aburidasi == 0 && f.sijyou_omiai == 1  && f.fumi_toutyaku_sijyou[46] == 0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_46
+[endif]
+
 ;◆↓手紙一通分の到着判定処理(開始)：『趣味について』
 [if exp="f.sijyou_fumi_toutyakumachi_shumi == 0 && f.sijyou_omiai == 0 && f.fumi_toutyaku_sijyou[2] == 0"]
 	[call target=*sijyou_toutyaku_hantei_shori_common]
@@ -308,17 +321,7 @@
 ;==============================================================================================================
 ;◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇あぶりだしの手紙◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇
 ;==============================================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
-;[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0  && f.fumi_toutyaku_sijyou[45]==0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_45
-;[endif]
-;==============================================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
-;[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 1  && f.fumi_toutyaku_sijyou[46] == 0"]
- ; [call target=*sijyou_toutyaku_hantei_shori_common]
-  ; @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_46
-;[endif]
+;あぶりだしの手紙判定については、22行目(判定リスト先頭)に移動しました
 ;=======================================================================================
 ;◆◇◆◇◆◇◆◇◆◇◆◇◆____話題の手紙＿＿＿◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
 ;=======================================================================================
@@ -396,7 +399,7 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：聞き上手と話し上手１ (お見合い前)sijyou_fumi60
-[if exp="f.sijyou_fumi_toutyakumachi_shumi == 0 && f.sijyou_omiai == 0 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[60] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kiki == 0 && f.sijyou_omiai == 0 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[60] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_60
  [endif]
@@ -594,7 +597,7 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『 スポーツ2 （お見合い前）』sps2_1 sijyou_fumi92
-[if exp="f.sijyou_fumi_toutyakumachi_shumi == 0 && f.sijyou_omiai == 0 && f.sijyou_event6 == 0 && f.okeiko_month !=10 && f.fumi_toutyaku_sijyou[92] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sports == 0 && f.sijyou_omiai == 0 && f.sijyou_event6 == 0 && f.okeiko_month !=10 && f.fumi_toutyaku_sijyou[92] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_92
  [endif]

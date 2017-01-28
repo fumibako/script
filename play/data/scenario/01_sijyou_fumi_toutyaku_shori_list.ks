@@ -1,4 +1,4 @@
-﻿﻿﻿;◆手紙到着フラグONの個別処理
+﻿﻿﻿﻿;◆手紙到着フラグONの個別処理
 ;◆四条手紙到着
 *fumi_toutyaku_sijyou_2
 [iscript]

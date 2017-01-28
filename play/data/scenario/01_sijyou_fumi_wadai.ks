@@ -1,4 +1,4 @@
-﻿﻿*start
+﻿*start
 *sijyou_wadai_shori
 [iscript]
 	f.para_sijyou_koukando = f.para_sijyou_koukando + f.para_pre_sijyou_koukando;
@@ -238,27 +238,41 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '変化と永遠についての�
 		f.sijyou_fumi_toutyakumachi_henka=f.sijyou_fumi_toutyakumachi - 2;
 	}
 }
+
+if(f.binsen_list_hairetsu[f.binsen_number][0] == 'あぶりだし'){ //「あぶりだし」の便せんを選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
+		f.sijyou_fumi_toutyakumachi_aburidasi=f.sijyou_fumi_toutyakumachi;
+	}
+	if(f.para_sijyou_koukando >= parseInt(sf.sijyou['koukando_a'])){
+		f.sijyou_fumi_toutyakumachi_aburidasi=f.sijyou_fumi_toutyakumachi - 1;
+	}
+	if(f.para_sijyou_koukando > parseInt(sf.sijyou['koukando_b'])){
+		f.sijyou_fumi_toutyakumachi_aburidasi=f.sijyou_fumi_toutyakumachi - 2;
+	}
+}
+
 //テスト用設定：tf.test_sijyou_fumi_hensin_speed==0の場合、全手紙が翌週届く
-if(tf.test_sijyou_fumi_hensin_speed==0){
-if(f.sijyou_fumi_toutyakumachi_shumi>0)f.sijyou_fumi_toutyakumachi_shumi=0;
-if(f.sijyou_fumi_toutyakumachi_sigoto>0)f.sijyou_fumi_toutyakumachi_sigoto=0;
-if(f.sijyou_fumi_toutyakumachi_kazoku>0)f.sijyou_fumi_toutyakumachi_kazoku=0;
-if(f.sijyou_fumi_toutyakumachi_kisetsu>0)f.sijyou_fumi_toutyakumachi_kisetsu=0;
-if(f.sijyou_fumi_toutyakumachi_shourai>0)f.sijyou_fumi_toutyakumachi_shourai=0;
-if(f.sijyou_fumi_toutyakumachi_yuujin>0)f.sijyou_fumi_toutyakumachi_yuujin=0;
-if(f.sijyou_fumi_toutyakumachi_shokuji>0)f.sijyou_fumi_toutyakumachi_shokuji=0;
-if(f.sijyou_fumi_toutyakumachi_kangeki>0)f.sijyou_fumi_toutyakumachi_kangeki=0;
-if(f.sijyou_fumi_toutyakumachi_neko>0)f.sijyou_fumi_toutyakumachi_neko=0;
-if(f.sijyou_fumi_toutyakumachi_kiki>0)f.sijyou_fumi_toutyakumachi_kiki=0;
-if(f.sijyou_fumi_toutyakumachi_midori>0)f.sijyou_fumi_toutyakumachi_midori=0;
-if(f.sijyou_fumi_toutyakumachi_photo>0)f.sijyou_fumi_toutyakumachi_photo=0;
-if(f.sijyou_fumi_toutyakumachi_hajimari>0)f.sijyou_fumi_toutyakumachi_hajimari=0;
-if(f.sijyou_fumi_toutyakumachi_music>0)f.sijyou_fumi_toutyakumachi_music=0;
-if(f.sijyou_fumi_toutyakumachi_michi>0)f.sijyou_fumi_toutyakumachi_michi=0;
-if(f.sijyou_fumi_toutyakumachi_henka>0)f.sijyou_fumi_toutyakumachi_henka=0;
-if(f.sijyou_fumi_toutyakumachi_dokusho>0)f.sijyou_fumi_toutyakumachi_dokusho=0;
-if(f.sijyou_fumi_toutyakumachi_sports>0)f.sijyou_fumi_toutyakumachi_sports=0;
-sf.sijyou['fumi_hindo_week']=0;
+if(tf.test_sijyou_fumi_hensin_speed == 0){
+if(f.sijyou_fumi_toutyakumachi_shumi > 0)f.sijyou_fumi_toutyakumachi_shumi = 0;
+if(f.sijyou_fumi_toutyakumachi_sigoto > 0)f.sijyou_fumi_toutyakumachi_sigoto = 0;
+if(f.sijyou_fumi_toutyakumachi_kazoku > 0)f.sijyou_fumi_toutyakumachi_kazoku = 0;
+if(f.sijyou_fumi_toutyakumachi_kisetsu > 0)f.sijyou_fumi_toutyakumachi_kisetsu = 0;
+if(f.sijyou_fumi_toutyakumachi_shourai > 0)f.sijyou_fumi_toutyakumachi_shourai = 0;
+if(f.sijyou_fumi_toutyakumachi_yuujin > 0)f.sijyou_fumi_toutyakumachi_yuujin = 0;
+if(f.sijyou_fumi_toutyakumachi_shokuji > 0)f.sijyou_fumi_toutyakumachi_shokuji = 0;
+if(f.sijyou_fumi_toutyakumachi_kangeki > 0)f.sijyou_fumi_toutyakumachi_kangeki = 0;
+if(f.sijyou_fumi_toutyakumachi_neko > 0)f.sijyou_fumi_toutyakumachi_neko = 0;
+if(f.sijyou_fumi_toutyakumachi_kiki > 0)f.sijyou_fumi_toutyakumachi_kiki = 0;
+if(f.sijyou_fumi_toutyakumachi_midori > 0)f.sijyou_fumi_toutyakumachi_midori = 0;
+if(f.sijyou_fumi_toutyakumachi_photo > 0)f.sijyou_fumi_toutyakumachi_photo = 0;
+if(f.sijyou_fumi_toutyakumachi_hajimari > 0)f.sijyou_fumi_toutyakumachi_hajimari = 0;
+if(f.sijyou_fumi_toutyakumachi_music > 0)f.sijyou_fumi_toutyakumachi_music = 0;
+if(f.sijyou_fumi_toutyakumachi_michi > 0)f.sijyou_fumi_toutyakumachi_michi = 0;
+if(f.sijyou_fumi_toutyakumachi_henka > 0)f.sijyou_fumi_toutyakumachi_henka = 0;
+if(f.sijyou_fumi_toutyakumachi_dokusho > 0)f.sijyou_fumi_toutyakumachi_dokusho = 0;
+if(f.sijyou_fumi_toutyakumachi_sports > 0)f.sijyou_fumi_toutyakumachi_sports = 0;
+if(f.sijyou_fumi_toutyakumachi_aburidasi > 0)f.sijyou_fumi_toutyakumachi_aburidasi = 0;
+sf.sijyou['fumi_hindo_week'] = 0;
 }
 [endscript]
 @jump storage="fumi_wadai.ks" target=*katuraginomiya_wadai_shori
