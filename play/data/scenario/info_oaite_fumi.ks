@@ -51,6 +51,7 @@
 [endscript]
 *fumi_hyouji_hajime_1_left
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_1_left'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_1_left
 
@@ -58,7 +59,7 @@
 	@jump target=*loop_fumi_all_left
 [endif]
 
-*fumi_all_page1_rignt
+*fumi_all_page1_right
 [if exp="f.fumi_all_number < 6"]
 	@jump target=*fumi_all_page1_end
 [else]
@@ -68,7 +69,7 @@
 		[eval exp="f.loop_count = 5"]
 	[endif]
 ;f.list_count=[emb exp ="f.list_count"][r]
-	*loop_fumi_all_rignt
+	*loop_fumi_all_right
 	[if exp="f.list_count == 0"]
 	[else]
 		[eval exp="f.list_count = f.list_count - 1"]
@@ -85,11 +86,12 @@
 	[endscript]
 *fumi_hyouji_hajime_1_right
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_1_right'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_1_right
 
 	[if exp="f.loop_count>0"]
-		@jump target=*loop_fumi_all_rignt
+		@jump target=*loop_fumi_all_right
 	[endif]
 [endif]
 *fumi_all_page1_end
@@ -128,6 +130,7 @@
 [endscript]
 *fumi_hyouji_hajime_2_left
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_2_left'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_2_left
 
@@ -135,7 +138,7 @@
 	@jump target=*loop_fumi_all_left2
 [endif]
 
-*fumi_all_page2_rignt
+*fumi_all_page2_right
 [if exp="f.fumi_all_number<16"]
 	@jump target=*fumi_all_page2_end
 [else]
@@ -144,7 +147,7 @@
 [if exp="f.loop_count > 5"]
 [eval exp="f.loop_count = 5"]
 [endif]
-*loop_fumi_all_rignt2
+*loop_fumi_all_right2
 [if exp="f.list_count == 0"]
 [else]
 	[eval exp="f.list_count = f.list_count - 1"]
@@ -159,13 +162,14 @@
 	f.fumi_hairetsu1 = f.fumi_list_all_location_taishou[f.list_count];
 	f.fumi_hairetsu2 = f.fumi_list_all_location_fumi[f.list_count];
 [endscript]
-*fumi_hyouji_hajime_2_rignt
-[eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_2_rignt'"]
+*fumi_hyouji_hajime_2_right
+[eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_2_right'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
-*fumi_hyouji_owari_2_rignt
+*fumi_hyouji_owari_2_right
 
 [if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_all_rignt2
+	@jump target=*loop_fumi_all_right2
 [endif]
 [endif]
 *fumi_all_page2_end
@@ -205,6 +209,7 @@
 [endscript]
 *fumi_hyouji_hajime_left3
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left3'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left3
 
@@ -212,7 +217,7 @@
 	@jump target=*loop_fumi_all_left3
 [endif]
 
-*fumi_all_page3_rignt
+*fumi_all_page3_right
 [if exp="f.fumi_all_number<26"]
 	@jump target=*fumi_all_page3_end
 [else]
@@ -221,7 +226,7 @@
 [if exp="f.loop_count > 5"]
 [eval exp="f.loop_count = 5"]
 [endif]
-*loop_fumi_all_rignt3
+*loop_fumi_all_right3
 [if exp="f.list_count == 0"]
 [else]
 	[eval exp="f.list_count = f.list_count - 1"]
@@ -236,13 +241,14 @@
 	f.fumi_hairetsu1 = f.fumi_list_all_location_taishou[f.list_count];
 	f.fumi_hairetsu2 = f.fumi_list_all_location_fumi[f.list_count];
 [endscript]
-*fumi_hyouji_hajime_rignt3
-[eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_rignt3'"]
+*fumi_hyouji_hajime_right3
+[eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right3'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
-*fumi_hyouji_owari_rignt3
+*fumi_hyouji_owari_right3
 
 [if exp="f.loop_count>0"]
-	@jump target=*loop_fumi_all_rignt3
+	@jump target=*loop_fumi_all_right3
 [endif]
 [endif]
 *fumi_all_page3_end
@@ -281,6 +287,7 @@
 [endscript]
 *fumi_hyouji_hajime_left4
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left4'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left4
 
@@ -288,7 +295,7 @@
 	@jump target=*loop_fumi_all_left4
 [endif]
 
-*fumi_all_page4_rignt
+*fumi_all_page4_right
 [if exp="f.fumi_all_number<36"]
 	@jump target=*fumi_all_page4_end
 [else]
@@ -314,6 +321,7 @@
 [endscript]
 *fumi_hyouji_hajime_right4
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right4'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right4
 
@@ -357,6 +365,7 @@
 [endscript]
 *fumi_hyouji_hajime_left5
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left5'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left5
 
@@ -364,7 +373,7 @@
 	@jump target=*loop_fumi_all_left5
 [endif]
 
-*fumi_all_page5_rignt
+*fumi_all_page5_right
 [if exp="f.fumi_all_number<46"]
 	@jump target=*fumi_all_page5_end
 [else]
@@ -390,6 +399,7 @@
 [endscript]
 *fumi_hyouji_hajime_right5
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right5'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right5
 
@@ -433,6 +443,7 @@
 [endscript]
 *fumi_hyouji_hajime_left6
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left6'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left6
 
@@ -440,7 +451,7 @@
 	@jump target=*loop_fumi_all_left6
 [endif]
 
-*fumi_all_page6_rignt
+*fumi_all_page6_right
 [if exp="f.fumi_all_number<56"]
 	@jump target=*fumi_all_page6_end
 [else]
@@ -466,6 +477,7 @@
 [endscript]
 *fumi_hyouji_hajime_right6
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right6'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right6
 
@@ -509,6 +521,7 @@
 [endscript]
 *fumi_hyouji_hajime_left7
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left7'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left7
 
@@ -516,7 +529,7 @@
 	@jump target=*loop_fumi_all_left7
 [endif]
 
-*fumi_all_page7_rignt
+*fumi_all_page7_right
 [if exp="f.fumi_all_number<66"]
 	@jump target=*fumi_all_page7_end
 [else]
@@ -542,6 +555,7 @@
 [endscript]
 *fumi_hyouji_hajime_right7
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right7'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right7
 
@@ -584,7 +598,8 @@
 	f.fumi_hairetsu2 = f.fumi_list_all_location_fumi[f.list_count];
 [endscript]
 *fumi_hyouji_hajime_left8
-[eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right7'"]
+[eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left8'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left8
 
@@ -592,7 +607,7 @@
 	@jump target=*loop_fumi_all_left8
 [endif]
 
-*fumi_all_page8_rignt
+*fumi_all_page8_right
 [if exp="f.fumi_all_number<76"]
 	@jump target=*fumi_all_page8_end
 [else]
@@ -618,6 +633,7 @@
 [endscript]
 *fumi_hyouji_hajime_right8
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right7'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right8
 
@@ -661,6 +677,7 @@
 [endscript]
 *fumi_hyouji_hajime_left9
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left9'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left9
 
@@ -668,7 +685,7 @@
 	@jump target=*loop_fumi_all_left9
 [endif]
 
-*fumi_all_page9_rignt
+*fumi_all_page9_right
 [if exp="f.fumi_all_number<86"]
 	@jump target=*fumi_all_page9_end
 [else]
@@ -694,6 +711,7 @@
 [endscript]
 *fumi_hyouji_hajime_right9
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right9'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right9
 
@@ -737,6 +755,7 @@
 [endscript]
 *fumi_hyouji_hajime_left10
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left10'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left10
 
@@ -744,7 +763,7 @@
 	@jump target=*loop_fumi_all_left10
 [endif]
 
-*fumi_all_page10_rignt
+*fumi_all_page10_right
 [if exp="f.fumi_all_number<96"]
 	@jump target=*fumi_all_page10_end
 [else]
@@ -770,6 +789,7 @@
 [endscript]
 *fumi_hyouji_hajime_right10
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right10'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right10
 
@@ -813,6 +833,7 @@
 [endscript]
 *fumi_hyouji_hajime_left11
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left11'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left11
 
@@ -820,7 +841,7 @@
 	@jump target=*loop_fumi_all_left11
 [endif]
 
-*fumi_all_page11_rignt
+*fumi_all_page11_right
 [if exp="f.fumi_all_number<106"]
 	@jump target=*fumi_all_page11_end
 [else]
@@ -846,6 +867,7 @@
 [endscript]
 *fumi_hyouji_hajime_right11
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right11'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right11
 
@@ -889,6 +911,7 @@
 [endscript]
 *fumi_hyouji_hajime_left12
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left12'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left12
 
@@ -896,7 +919,7 @@
 	@jump target=*loop_fumi_all_left12
 [endif]
 
-*fumi_all_page12_rignt
+*fumi_all_page12_right
 [if exp="f.fumi_all_number<116"]
 	@jump target=*fumi_all_page12_end
 [else]
@@ -922,6 +945,7 @@
 [endscript]
 *fumi_hyouji_hajime_right12
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right12'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right12
 
@@ -965,6 +989,7 @@
 [endscript]
 *fumi_hyouji_hajime_left13
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left13'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left13
 
@@ -972,7 +997,7 @@
 	@jump target=*loop_fumi_all_left13
 [endif]
 
-*fumi_all_page13_rignt
+*fumi_all_page13_right
 [if exp="f.fumi_all_number<126"]
 	@jump target=*fumi_all_page13_end
 [else]
@@ -998,6 +1023,7 @@
 [endscript]
 *fumi_hyouji_hajime_right13
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right13'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right13
 
@@ -1041,6 +1067,7 @@
 [endscript]
 *fumi_hyouji_hajime_left14
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left14'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left14
 
@@ -1048,7 +1075,7 @@
 	@jump target=*loop_fumi_all_left14
 [endif]
 
-*fumi_all_page14_rignt
+*fumi_all_page14_right
 [if exp="f.fumi_all_number<136"]
 	@jump target=*fumi_all_page14_end
 [else]
@@ -1074,6 +1101,7 @@
 [endscript]
 *fumi_hyouji_hajime_right14
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right14'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right14
 
@@ -1117,6 +1145,7 @@
 [endscript]
 *fumi_hyouji_hajime_left15
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_left15'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'left'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_left15
 
@@ -1124,7 +1153,7 @@
 	@jump target=*loop_fumi_all_left15
 [endif]
 
-*fumi_all_page15_rignt
+*fumi_all_page15_right
 [if exp="f.fumi_all_number<146"]
 	@jump target=*fumi_all_page15_end
 [else]
@@ -1150,6 +1179,7 @@
 [endscript]
 *fumi_hyouji_hajime_right15
 [eval exp="tf.fumi_hyouji_owari_target='fumi_hyouji_owari_right15'"]
+[eval exp = "tf.fumi_hyouji_ichi = 'right'"]
 @jump target=*fumi_hyouji
 *fumi_hyouji_owari_right15
 
@@ -2122,43 +2152,53 @@ f.fumi_katuraginomiya_midoku_y=[emb exp="f.fumi_katuraginomiya_midoku_y"]
 [s]
 
 *fumi_hyouji
+[if exp="tf.fumi_hyouji_ichi == 'left'"]
+[eval exp="tf.fumi_hyouji_midoku_x = 35"]
+[eval exp="tf.fumi_hyouji_hensin_x = 410"]
+[eval exp="tf.fumi_hyouji_title_x = 70"]
+[endif]
+[if exp="tf.fumi_hyouji_ichi == 'right'"]
+[eval exp="tf.fumi_hyouji_midoku_x = 510"]
+[eval exp="tf.fumi_hyouji_hensin_x = 880"]
+[eval exp="tf.fumi_hyouji_title_x = 545"]
+[endif]
 ;◆攻略対象以外の手紙は未読や返信ボタンを表示しない
 [if exp="f.fumi_hairetsu1 == 5 || f.fumi_hairetsu1 == 6 || f.fumi_hairetsu1 == 7 || f.fumi_hairetsu1 == 8 || f.fumi_hairetsu1 == 9"]
 @jump target=*hensin_button_owari
 [endif]
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=35 y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="未読" layer=28 size=15 x=&tf.fumi_hyouji_midoku_x y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
 [else]
 [endif]
 ;◆9月2週以降はルート確定キャラ以外には返信できない f.fumi_hairetsu1(0=黒田、1=財前、2=四条、3=葛城宮、4=藤枝)
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0 && f.fumi_hairetsu1==0 && f.kuroda_au==1 && ((f.okeiko_month==9 && f.okeiko_week!=1)||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=410 y=&f.fumi_all_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0 && f.fumi_hairetsu1==1 && f.zaizen_au==1 && ((f.okeiko_month==9 && f.okeiko_week!=1)||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=410 y=&f.fumi_all_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 	
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0 && f.fumi_hairetsu1==2 && f.sijyou_au==1 && ((f.okeiko_month==9 && f.okeiko_week!=1)||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=410 y=&f.fumi_all_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0 && f.fumi_hairetsu1==3 && f.katuraginomiya_au==1 && ((f.okeiko_month==9 && f.okeiko_week!=1)||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=410 y=&f.fumi_all_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 	
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0 && f.fumi_hairetsu1==4 && f.hujieda_au==1 && ((f.okeiko_month==9 && f.okeiko_week!=1)||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=410 y=&f.fumi_all_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 
 ;◆8月までは全員へ返信可能
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0 && (f.okeiko_month==4||f.okeiko_month==5||f.okeiko_month==6||f.okeiko_month==7||f.okeiko_month==8)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=410 y=&f.fumi_all_y color=white]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0 && ((f.okeiko_month==9 && f.okeiko_week!=1)||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 ;9月2日以降、返信していない手紙の「返信」ボタン部分には何も表示しない
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
-	[ptext text="返信済" layer=28 size=15 x=410 y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
+	[ptext text="返信済" layer=28 size=15 x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == -1"]
 ;返信配列が-1の際も何も表示しない(藤枝の鳩からの手紙時に使用)
 [endif]
@@ -2166,6 +2206,6 @@ f.fumi_katuraginomiya_midoku_y=[emb exp="f.fumi_katuraginomiya_midoku_y"]
 
 [if exp="f.fumi_all_number==0"]
 [else]
-	[glink storage=&f.fumi_list_all_storage[f.list_count] target=&f.fumi_list_all_target[f.list_count] text=&f.fumi_list_all_title[f.list_count] size=16 width="300" x=70 y=&f.fumi_all_y color=white]
+	[glink storage=&f.fumi_list_all_storage[f.list_count] target=&f.fumi_list_all_target[f.list_count] text=&f.fumi_list_all_title[f.list_count] size=16 width="300" x=&tf.fumi_hyouji_title_x y=&f.fumi_all_y color=white]
 [endif]
 @jump target=&tf.fumi_hyouji_owari_target
