@@ -321,6 +321,7 @@
 ;『 食事について 』
 ;=============================================
 *katuraginomiya_fumi08
+*katuraginomiya_fumi080
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 食事について 』[p]
