@@ -245,25 +245,25 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：夏『ネリネ』8_3/f.okeiko_month==9
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 0 && f.okeiko_month == 9 && f.fumi_toutyaku_sijyou[33] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 1 && f.okeiko_month == 9 && f.fumi_toutyaku_sijyou[33] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_33
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：秋『秋の夕暮れ』9/f.okeiko_month==9
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==9 && f.fumi_toutyaku_sijyou[34]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==1 && f.okeiko_month==9 && f.fumi_toutyaku_sijyou[34]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_34
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：秋『秋の空』10/f.okeiko_month==10
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==11 && f.fumi_toutyaku_sijyou[35]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==1 && f.okeiko_month==11 && f.fumi_toutyaku_sijyou[35]==0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_35
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：秋『読書』11/f.okeiko_month==11
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 0 && f.okeiko_month == 11 && f.fumi_toutyaku_sijyou[36] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 1 && f.okeiko_month == 11 && f.fumi_toutyaku_sijyou[36] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_36
 [endif]
