@@ -1344,13 +1344,6 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
-	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][27] = 0;"]
-	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
-	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
 ;=============================================
@@ -1380,13 +1373,6 @@
 [sp]君はどんな茶が好きだろうか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
-	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][28] = 0;"]
-	[freeimage layer = 29]	
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
-	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
 
