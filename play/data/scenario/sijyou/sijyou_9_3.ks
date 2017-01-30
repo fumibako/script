@@ -60,6 +60,29 @@
 [wait time=10]
 [主人公目閉じ]
 #
+*fumi_toutyaku_sijyou_100
+[if exp="tf.okeiko_gamen==true"]
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「久しぶりに会って」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「久しぶりに会って」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_sijyou_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_all_target.push("*9_3");
+f.fumi_list_all_location_taishou.push(2);
+f.fumi_list_all_location_fumi.push(99);
+f.fumi_list_sijyou_location_fumi.push(99);
+f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
+f.fumi_list_sijyou_target.push("*9_3");
+f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.fumi_toutyaku_sijyou[100]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_sijyou_number=f.fumi_sijyou_number + 1;
+f.hensin_list_hairetsu[2][99]=1;//イベント中に届く手紙は基本的に「返信済」とします(返信している前提で物語が進行するため)
+f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fumi;
+[endscript]
+[endif]
+
 [手紙四条 fumi_number=51]
 [r][r][r]
 [名前]へ[r]
@@ -71,7 +94,43 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
+[if exp="tf.okeiko_gamen==true"]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[2][99] = 0"]
+[endif]
 [手紙四条読了 fumi_number=51]
+
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen8
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私も、四条様のことを知りたいです)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]

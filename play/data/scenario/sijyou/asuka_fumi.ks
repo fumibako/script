@@ -40,6 +40,12 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
 [手紙飛鳥読了 fumi_number=]
 
 ;どうぶつの森っぽい
@@ -60,7 +66,13 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
-;[手紙飛鳥読了 fumi_number=]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+[手紙飛鳥読了 fumi_number=]
 
 *1_sijyo
 [手紙飛鳥 fumi_number=]
@@ -87,6 +99,12 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
 [手紙飛鳥読了 fumi_number=]
 
 
@@ -112,10 +130,13 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
 [手紙飛鳥読了 fumi_number=]
-
-
-
 
 
 *3
@@ -133,6 +154,12 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
 [手紙飛鳥読了 fumi_number=]
 
 
@@ -157,6 +184,12 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
 [手紙飛鳥読了 fumi_number=]
 
 

@@ -30,11 +30,18 @@
 [eval exp="tf.btn_y=tf.btn_y+50"]
 ;endif
 
+[glink target="*3_1_kadouten " text="3月『四条華道展のお誘い』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[eval exp="tf.btn_y=tf.btn_y+50"]
+
 *common
 [glink target="*end_p " text="閉じる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&500 color=white]
 [s]
 
 *9_3
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『久しぶりに会って』[p]
+[endif]
 [手紙四条 fumi_number=51]
 [r][r][r]
 [名前]へ[r]
@@ -45,11 +52,22 @@
 [名前]のことをもっと知りたいです。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
-
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
 [手紙四条読了 fumi_number=51]
 @jump target=*start
 
 *10_3
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+;↓他の手紙は手紙の執筆者がつけたタイトル的な雰囲気で揃っているため、執筆者本人の名前が入るのは違和感が出てしまうかもしれません。
+;例えば『華織について』などはいかがでしょうか？ よろしければsijyou_10_3.ks 122行目、01_sijyou_fumi_toutyaku_shori_list.ks 1624行目とあわせてご変更いただけるとありがたいです(スクリプト担
+『文矢からの手助け』[p]
+[endif]
 [手紙文矢 fumi_number=]
 [名前]へ[r]
 [r]
@@ -71,9 +89,16 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 [sp]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+[手紙読了]
 @jump target=*start
 
-
+;↓エンディング中に届きかつ四条以外の人物からの手紙ということで、読み返すことがないため手紙到着処理対象外となります(スクリプト担
 *10_3_bad
 [手紙文矢 fumi_number=]
 [名前]へ[r]
@@ -89,6 +114,7 @@
 [手紙読了]
 @jump target=*start
 
+;↓華衣に渡した手紙であるため、手紙到着処理対象外となります(スクリプト担
 *11_b
 [手紙華衣婚約者 fumi_number=]
 [華衣]へ[r]
@@ -109,22 +135,102 @@
  　　　　　　　　　　　　　　　　　　　　　　　
  　　　　　　　　　　　　　　　　　　　　　　　
 *1_1
-[手紙四条 fumi_number=]
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『お正月』[p]
+[endif]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+;名前表示消去
+[whosay name=""]
+[cm]
+;機能ボタン消去
+[clearfix]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/nengajou_sijyou.jpg" time=500]
+[resetfont]
+;メッセージレイヤを年賀状用に設定変更
+[position vertical=true]
+[position left=270 width=350 height=510 top=40 page=fore margint=0]
+@layopt layer=message0 page=fore visible=true
+[font color=black size=19]
 ;○四条手紙 正月はがき？
 お健やかに新年をお迎えのこととお慶び申し上げます。[r]
-昨年は大変お世話になりありがとうございました。[r]
-本年もよろしくお願いいたします[p]
-ー追伸ー[r]
-先日、[名前]のお父様の浩文さまとお会いしました。[r]
+昨年は大変お世話になり、ありがとうございました。[r]
+本年も宜しくお願いいたします。 [r]
+[r]
+追伸[r]
+;↓縦書きハガキ対応のため、いくつか変更させていただきました。原案はこちらになります(スクリプト担
+;本年もよろしくお願いいたします[p]
+;ー追伸ー[r]
+先日、[名前]のお父様とお会いしました。[r]
 つきましては、[名前]さんと直接会ってお話しをしたいと[r]
 考えております。[r]
 [r]
-返事待ってます。
+;↓絵柄と被るため空白を入れています(スクリプト担
+[sp]　　　　　　返事待ってます。[p]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　四条華織[p]
+;↓差出人名はハガキに記載しましたので、コメントアウトします
+;[sp]　　　　　　　　　　　　　　　　　四条華織[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[position vertical=false]
+[resetfont]
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
 [手紙四条読了 fumi_number=]
 ;3_1は元ある手紙なので書かなくてよし
+@jump target=*start
+
+*3_1_kadouten
+[if exp="tf.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『四条華道展のお誘い』[p]
+[endif]
+[手紙四条 fumi_number=]
+*fumi_in1_1
+[er]
+[名前]さんへ[r]
+[r]
+お変わりなく、お元気でしょうか[r]
+;挨拶わからん
+気持ちの高まりのまま、[名前]さんからの返事も待たず、[r]
+矢継ぎ早に手紙を出して申し訳ありません。[r]
+[r]
+先日の手紙にお伝えした通り、華道競合展で大賞を[r]
+果たしました。[r]
+そのおかげで、他の先生方からの勧めもあり、来週に[r]
+『四条華道展』を行う運びとなりました。[r]
+もちろん、華道競合展で、大賞を得た作品も出す予定です。[r]
+[link target=fumi_in2_2][sp]　　　　　　　　　　　　　　　　　　　　　　　　【壱/弐】[endlink][s]
+*fumi_in2_2
+[er]
+[r]
+[名前]さんとお義父様が、よろしければ、迎えの者を向わせ[r]
+ますので、御家族も、ご一緒に来場ください。[r]
+その際に改めて、四条家と[名字]家と会食を設けようと[r]
+考えております。[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
+[link target=fumi_in1_1][sp]　　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
+[r]
+[link target=fumi_in3_3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
+*fumi_in3_3
+[er]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+[freeimage layer = 29]
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+[endif]
+[手紙四条読了 fumi_number=]
+;～～～～～～～～～～手紙2おわり～～～～～～～～～～～～～～
 @jump target=*start
 
 

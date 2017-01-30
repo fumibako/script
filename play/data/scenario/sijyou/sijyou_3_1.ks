@@ -23,6 +23,37 @@
 [プリロード画面消去]
 [四条ボタン表示]
 ;=================================================================================_
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。華道展お誘いの手紙まで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*fumi_toutyaku_sijyou_102
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのままはじめます。[p]
+[cm]
+[endif]
+
 *seen0
 ;華織様のことを思う主人公。
 ;地の文案2
@@ -319,6 +350,28 @@
 ;～～～～～～～～～～手紙2～～～～～～～～～～～～～～
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
+*fumi_toutyaku_sijyou_102
+[if exp="tf.okeiko_gamen==true"]
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「四条華道展のお誘い」　四条 華織"; //←仮タイトルです。ご自由に変更してください
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「四条華道展のお誘い」"; //←仮タイトルです。ご自由に変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_sijyou_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_all_target.push("*3_1_kadouten");
+f.fumi_list_all_location_taishou.push(2);
+f.fumi_list_all_location_fumi.push(101);
+f.fumi_list_sijyou_location_fumi.push(101);
+f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
+f.fumi_list_sijyou_target.push("*3_1_kadouten");
+f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.fumi_toutyaku_sijyou[102]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_sijyou_number=f.fumi_sijyou_number + 1;
+f.hensin_list_hairetsu[2][101]=1;//イベント中に届く手紙は基本的に「返信済」とします(返信している前提で物語が進行するため)
+f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fumi;
+[endscript]
+[endif]
 [手紙四条 fumi_number=]
 *fumi_in1_1
 [er]
@@ -350,8 +403,41 @@
 [link target=fumi_in3_3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
 *fumi_in3_3
 [er]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[2][101] = 0"]
 [手紙四条読了 fumi_number=]
 ;～～～～～～～～～～手紙2おわり～～～～～～～～～～～～～～
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok_2]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no_2]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok_2
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump storage="sijyou/sijyou_3_1b.ks" target=*seen10
+[s]
+
+*jump_no_2
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+
 ;=================================================================================_
 *seen2
 [autosave]

@@ -117,6 +117,18 @@
 [playse storage=mushi_suzumushi.ogg loop=false ]
 *seen3
 ;/////手紙///
+*fumi_toutyaku_fumiya
+[if exp="tf.okeiko_gamen==true"]
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「文矢からの手助け」　文矢"; //執筆者本人の名前が入るのは違和感が出てしまうかもしれません。例えば『華織について』などはいかがでしょうか？(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_all_target.push("*10_3");
+f.fumi_list_all_location_taishou.push(5);
+f.fumi_list_all_location_fumi.push(0);
+f.fumi_all_number=f.fumi_all_number + 1;
+[endscript]
+[endif]
 
 [手紙文矢 fumi_number=]
 [名前]へ[r]
@@ -150,6 +162,36 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [手紙読了]
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen7
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
 
 
 ;☆主人公の決意
@@ -293,6 +335,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 [if exp="tf.okeiko_gamen==true"]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

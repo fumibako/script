@@ -14,7 +14,7 @@
 ;【背景】主人公邸 庭の見える部屋：冬
 [chara_mod name="bg" storage="bg/room_niwa_fuyu.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築ボタン無し版
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -35,26 +35,69 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-#
-[手紙四条 fumi_number=]
+*fumi_toutyaku_sijyou_101
+[if exp="tf.okeiko_gamen==true"]
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お正月」　四条 華織";
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「お正月」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_sijyou_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_all_target.push("*1_1");
+f.fumi_list_all_location_taishou.push(2);
+f.fumi_list_all_location_fumi.push(100);
+f.fumi_list_sijyou_location_fumi.push(100);
+f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
+f.fumi_list_sijyou_target.push("*1_1");
+f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.fumi_toutyaku_sijyou[101]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_sijyou_number=f.fumi_sijyou_number + 1;
+f.hensin_list_hairetsu[2][100]=1;//イベント中に届く手紙は基本的に「返信済」とします(返信している前提で物語が進行するため)
+f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fumi;
+[endscript]
+[endif]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+;名前表示消去
+[whosay name=""]
+[cm]
+;機能ボタン消去
+[clearfix]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/nengajou_sijyou.jpg" time=500]
+[resetfont]
+;メッセージレイヤを年賀状用に設定変更
+[position vertical=true]
+[position left=270 width=350 height=510 top=40 page=fore margint=0]
+@layopt layer=message0 page=fore visible=true
+[font color=black size=19]
+
 ;○四条手紙 正月はがき？
-[sp]
-[r][r][r]
 お健やかに新年をお迎えのこととお慶び申し上げます。[r]
 昨年は大変お世話になり、ありがとうございました。[r]
-本年も宜しくお願いいたします。 [p]
-[sp]
-[r][r][r]
-――追伸――[r]
+本年も宜しくお願いいたします。 [r]
 [r]
+;↓縦書きハガキ対応のため、いくつか変更させていただきました。原案はこちらになります(スクリプト担
+;本年もよろしくお願いいたします[p]
+;ー追伸ー[r]
+追伸[r]
 先日、[名前]のお父様とお会いしました。[r]
 つきましては、[名前]さんと直接会ってお話しをしたいと[r]
 考えております。[r]
 [r]
-返事待ってます。
+;↓絵柄と被るため空白を入れています(スクリプト担
+[sp]　　　　　　返事待ってます。[p]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　四条華織[p]
+;↓差出人名はハガキに記載しましたので、コメントアウトします
+;[sp]　　　　　　　　　　　　　　　　　四条華織[p]
+[position vertical=false]
+[resetfont]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[2][100] = 0"]
 [手紙四条読了 fumi_number=]
 ;位置変更
 [iscript]
