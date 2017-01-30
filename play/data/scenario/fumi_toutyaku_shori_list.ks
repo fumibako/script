@@ -1604,11 +1604,92 @@ f.fumi_list_all_target.push("*tokiko_fumi_katuraginomiya");
 f.fumi_list_all_location_taishou.push(6);
 f.fumi_list_all_location_fumi.push(1);
 f.fumi_all_number=f.fumi_all_number + 1;
-f.fumi_toutyaku_tokiko[0] == 1;
+f.fumi_toutyaku_tokiko[0] = 1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka
 ;=============================================
-;5文矢、6時子、7飛鳥、8侍従、9葛城宮妃殿下、10皇后さま、11従妹宮f.fumi_list_all_location_taishou.push();
+;◆飛鳥紗代子さんからの手紙：
+;=============================================
+*fumi_toutyaku_asuka_0
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「はじめてのお手紙」 飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
+f.fumi_list_all_target.push("*0");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(0);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[0] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
+
+*fumi_toutyaku_asuka_1
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「秋の気配」 飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
+f.fumi_list_all_target.push("*1");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(1);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[1] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
+
+*fumi_toutyaku_asuka_2
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「探偵さま」飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
+f.fumi_list_all_target.push("*1_sijyo");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(2);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[2] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
+
+*fumi_toutyaku_asuka_3
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「いつか晴れ」飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
+f.fumi_list_all_target.push("*2");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(3);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[3] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
+
+*fumi_toutyaku_asuka_4
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「未来へ」飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
+f.fumi_list_all_target.push("*3");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(4);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[4] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
+
+*fumi_toutyaku_asuka_5
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「未来へ」飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
+f.fumi_list_all_target.push("*fuji");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(5);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[5] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
+
+;=============================================
+;5文矢、6時子、7飛鳥紗代子、8侍従、9葛城宮妃殿下、10皇后さま、11従妹宮f.fumi_list_all_location_taishou.push();
 ;=============================================
 
 ;「先日のお茶事について」(←仮タイトル)　桂伯爵夫人 katuraginomiya_event_3.ks 509行目～
@@ -1621,3 +1702,4 @@ f.fumi_toutyaku_tokiko[0] == 1;
 
 ;「星も凍るような夜」(←仮タイトル)　三宮　時子 hujieda_1_3.ks 78行目～
 
+;「文矢からの手助け」(←タイトル変更の可能性あり)　文矢 sijyou_10_3.ks 120行目～

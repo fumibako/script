@@ -694,15 +694,57 @@ f.okeiko_month_kansuuji="三月 ";
 ;◆葛城宮ルート時子さんの散策イベントを見ている場合に自動的に3週間後に手紙『 未来へ向けて 』
 ;=======================================================================================
 [if exp="f.event_machi_katuraginomiya[2] == 1 && f.katuraginomiya_fumi_inou == 0 && f.fumi_toutyaku_tokiko[0] == 0"]
-  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
+	[eval exp="f.fumi_toutyaku_oaite.push('三宮様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_tokiko_katuraginomiya
 [endif]
 *fumi_toutyaku_hantei_owari
 
+*fumi_toutyaku_hantei_asuka
 ;=======================================================================================
 ;◇◇飛鳥紗代子さん手紙到着判定◇◇
 ;=======================================================================================
-*fumi_toutyaku_hantei_asuka
+;◆(仮)5月2週　全ルート(1週目は他キャラからの手紙が届くことが多いため、2週にしてみています)
+[if exp="f.okeiko_month == 5 && f.okeiko_week == 2 && f.fumi_toutyaku_asuka[0] == 0"]
+	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_0
+[endif]
+
+;◆(仮)9月4週　藤枝ルート以外
+[if exp="f.okeiko_month == 9 && f.okeiko_week == 4 && ( f.kuroda_au == 1 || f.zaizen_au == 1 || f.sijyou_au == 1 || f.katuraginomiya_au == 1 ) && f.fumi_toutyaku_asuka[1] == 0"]
+	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_1
+[endif]
+
+;◆(仮)10月4週　四条ルート(イベント6を暗示させる感じにイベント6手前に配置してみていますが、「冬は、もうすぐそこ」という書き出しからは6の後を想定されていますでしょうか？)
+[if exp="f.okeiko_month == 10 && f.okeiko_week == 4 && f.sijyou_au == 1 && f.fumi_toutyaku_asuka[2] == 0"]
+	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_2
+[endif]
+
+;◆(仮)黒田11月3週or財前11月4週or四条10月2週or葛城宮10月4週or藤枝11月2週
+[if exp="((f.okeiko_month == 11 && f.okeiko_week == 3 && f.kuroda_au == 1) || (f.okeiko_month == 11 && f.okeiko_week == 4 && f.zaizen_au == 1) || (f.okeiko_month == 10 && f.okeiko_week == 2 && f.sijyou_au == 1) || (f.okeiko_month == 10 && f.okeiko_week == 4 && f.katuraginomiya_au == 1) || (f.okeiko_month == 11 && f.okeiko_week == 2 && f.hujieda_au == 1)) && f.fumi_toutyaku_asuka[3] == 0"]
+	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_3
+[endif]
+
+;◆(仮)2月4週　藤枝ルート以外
+[if exp="f.okeiko_month == 2 && f.okeiko_week == 4 && ( f.kuroda_au == 1 || f.zaizen_au == 1 || f.sijyou_au == 1 || f.katuraginomiya_au == 1 ) && f.fumi_toutyaku_asuka[4] == 0"]
+	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_4
+[endif]
+
+;◆(仮)2月4週　藤枝ルート
+[if exp="f.okeiko_month == 2 && f.okeiko_week == 4 && f.hujieda_au == 1 && f.fumi_toutyaku_asuka[5] == 0"]
+	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_5
+[endif]
 
 *fumi_toutyaku_hantei_asuka_owari
 
@@ -751,7 +793,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;◆到着判定時の共通処理：藤枝
 *hujieda_toutyaku_hantei_shori_common
 ;↓鳩から届く間(9月2週～10月4週)の到着メッセージ
-[if exp="f.okeiko_month == 10||(f.okeiko_month == 9 && f.okeiko_week != 1)"]
+[if exp="f.okeiko_month == 10 || (f.okeiko_month == 9 && f.okeiko_week != 1)"]
 	[eval exp="f.hato = 1"]
 	[eval exp="f.fumi_toutyaku_info_hato='鳩が訪れました。お手紙を受け取りました。'"]
 [else]
@@ -759,7 +801,7 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku_oaite.push('藤枝様')"]
 [endif]
 	;↓(変更の必要はありません)手紙が届いているかどうか、届いた手紙は何通かを見るための変数
-	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.fumi_toutyaku = f.fumi_toutyaku + 1"]
 	;↓(変更の必要はありません)藤枝からの手紙到着待ち週数をリセット
-	[eval exp="f.hujieda_fumi_toutyakumachi_week=0"]
+	[eval exp="f.hujieda_fumi_toutyakumachi_week = 0"]
 [return]

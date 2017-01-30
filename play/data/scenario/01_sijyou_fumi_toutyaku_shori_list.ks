@@ -1,4 +1,4 @@
-﻿﻿﻿﻿;◆手紙到着フラグONの個別処理
+﻿﻿﻿﻿﻿;◆手紙到着フラグONの個別処理
 ;◆四条手紙到着
 *fumi_toutyaku_sijyou_2
 [iscript]
@@ -1971,59 +1971,15 @@ f.fumi_toutyaku_sijyou[99]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
-*fumi_toutyaku_sijyou_100
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「100」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「100」";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi100");
-f.fumi_list_all_location_taishou.push(2);
-f.fumi_list_all_location_fumi.push(90);
-f.fumi_list_sijyou_location_fumi.push(90);
-f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi100");
-f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
-f.fumi_toutyaku_sijyou[100]=1;
-[endscript]
-@jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
-
-*fumi_toutyaku_sijyou_101
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「101」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「101」";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi101");
-f.fumi_list_all_location_taishou.push(2);
-f.fumi_list_all_location_fumi.push(100);
-f.fumi_list_sijyou_location_fumi.push(100);
-f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi101");
-f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
-f.fumi_toutyaku_sijyou[101]=1;
-[endscript]
-@jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
-
-*fumi_toutyaku_sijyou_102
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「102」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「102」";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi102");
-f.fumi_list_all_location_taishou.push(2);
-f.fumi_list_all_location_fumi.push(101);
-f.fumi_list_sijyou_location_fumi.push(101);
-f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi102");
-f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
-f.fumi_toutyaku_sijyou[102]=1;
-[endscript]
-@jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
+;=============================================
+;◆イベント中に届く手紙◆ イベントスクリプト中に移動しています
+;=============================================
+;『久しぶりに会って』*fumi_toutyaku_sijyou_100→sijyou_9_3.ks 63行目～へ移動しました
+;=============================================
+;『お正月』*fumi_toutyaku_sijyou_101→sijyou_1_1.ks 38行目～へ移動しました
+;=============================================
+;『四条華道展のお誘い』*fumi_toutyaku_sijyou_102→sijyou_3_1.ks 353行目～へ移動しました
+;=============================================
 
 *fumi_toutyaku_sijyou_103
 [iscript]	
