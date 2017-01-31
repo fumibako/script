@@ -30,6 +30,40 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
+;=====================================================================
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font　color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*end_rute
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;=====================================================================
+
+
 *scene2
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
