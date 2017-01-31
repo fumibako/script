@@ -199,7 +199,11 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [主人公目閉]
 [主人公眉下げ下]
 （いつも優しい言葉で励ましてくれる）[p]
+
 #
+;【背景】空
+[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=1000]
+[eval exp="f.haikei_credit='---'"]
 [主人公目伏柔]
 私は、鳩の飛び立った空を見上げた。[p]
 
