@@ -36,6 +36,44 @@
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (なんて広い温室なのかしら！ それに色々な花が咲き乱れて綺麗だわ)[p]
+
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+
+[endif]
+;------------------------------------------------------
+
+
 [whosay name="？？？"]
 「[名前]……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -152,6 +190,7 @@ $('.saku1').remove();
 [p]
 [主人公ふぅ閉]
 (ふぅ。 なんだったのかしら……不思議な夢を見た気がするわ）[p]
+*seen_end
 [イベントシーン終了]
 
 [if exp="tf.okeiko_gamen==true"]
