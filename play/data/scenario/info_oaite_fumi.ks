@@ -1262,6 +1262,8 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [layopt layer=27 visible=true]
 [layopt layer=28 visible=true]
 [freeimage layer = 26]
+;↓アドバイスイベントを(1=通過済)に変更(主人公セリフ表示のため)
+[eval exp="f.event_advice=1"]
 
 [if exp="f.oaite_viewing_target != ''"]
 @jump target=&f.oaite_viewing_target
