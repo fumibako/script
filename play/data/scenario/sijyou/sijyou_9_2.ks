@@ -51,12 +51,45 @@
 [whosay name="四条父" color="darkolivegreen"]
 「"[名字][名前]"嬢と、息子の"華織"との縁談をご承諾くださり[r]
 _　まして感謝申し上げます」[p]
-[stopbgm]
+;[stopbgm]鳴ってないのでコメント化
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+
+;=====================================================================
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*end_rute
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;=====================================================================
+
+
 [主人公目パチ1回]
 [whosay name="四条母" color="#9B608B"]
 「この様なご縁……本人もとても喜んでおります」[p]
@@ -551,6 +584,7 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 私は、ようやく四条様の隣に近づけたような、そんな気がしたのだった。[p]
 ;華織様の笑顔をみて、
 
+*end_rute
 [eval exp="f.sijyou_omiai=1"]
 [stopbgm]
 ;¥¥¥¥¥¥¥¥イベント2ここまで¥¥¥¥¥¥¥¥
