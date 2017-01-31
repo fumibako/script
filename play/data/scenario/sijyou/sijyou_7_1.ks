@@ -38,6 +38,7 @@
 [playse storage=tokei_hikaeme.ogg loop=false ]
 [主人公目通常]
 [主人公口ほほえみ]
+#
 書き終わった手紙に目を落とす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お返事が楽しみだわ)
