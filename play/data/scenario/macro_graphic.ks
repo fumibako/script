@@ -34,6 +34,9 @@
 
 ;メッセージレイヤサイズを手紙用に設定変更
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 
@@ -52,6 +55,9 @@
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙文矢]
@@ -69,6 +75,9 @@
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_jiyuuwaku2.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙飛鳥]
@@ -86,6 +95,9 @@
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_asuka.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙時子]
@@ -103,6 +115,9 @@
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_tokiko.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙華衣婚約者]
@@ -120,6 +135,9 @@
 [image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙皇后さま]
@@ -137,6 +155,9 @@
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙葛城宮妃殿下]
@@ -154,6 +175,9 @@
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akebono.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙従妹宮]
@@ -171,6 +195,9 @@
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_itokomiya.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙侍従]
@@ -188,6 +215,9 @@
 [image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙読了]主人公、茶色便せん、その他共通
@@ -219,33 +249,13 @@
 [resetfont]
 [endmacro]
 
-;[手紙財前]%fumi_title、%fumi_number指定のこと
+;[手紙財前]
 [macro name="手紙財前"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
 [whosay name=""]
 [cm]
-[iscript]	
-/*
-f.fumi_all_title_new=f.okeiko_month_kansuuji+%fumi_title+"財前 美彬";
-f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+%fumi_title";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("fumi_zaizen.ks");
-f.fumi_list_all_target.push("*zaizen_fumi"+%fumi_number+1);
-f.fumi_list_all_location_taishou.push(1);
-f.fumi_list_all_location_fumi.push(%fumi_number);
-f.fumi_list_kuroda_location_fumi.push(%fumi_number);
-f.fumi_list_kuroda_title.push(f.fumi_zaizen_title_new);
-f.fumi_list_kuroda_target.push("*zaizen_fumi%fumi_number");
-f.kuroda_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
-f.fumi_toutyaku_zaizen[%fumi_number]=1;
-f.fumi_all_number=f.fumi_all_number + 1;
-f.fumi_zaizen_number=f.fumi_zaizen_number + 1;
-f.hensin_list_hairetsu[1][%fumi_number]=1;
-f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
-*/
-[endscript]
 
 ;機能ボタン消去
 [clearfix]
@@ -255,6 +265,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 
 [endmacro]
 
@@ -288,7 +301,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 [resetfont]
 [endmacro]
 
-;[手紙四条]%fumi_title、%fumi_number指定のこと（%fumi_title、%fumi_numberはまだ未完成のため、指定の必要はありません。将来使うかも的機能です：◆jsYiJcqRkk）
+;[手紙四条]
 [macro name="手紙四条"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
@@ -304,7 +317,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 [image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
-
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙四条読了]%fumi_number指定のこと（%fumi_numberはまだ未完成のため、指定の必要はありません。将来使うかも的機能です。現在はシナリオ内での手紙到着時にマクロとは別に手紙未読→既読処理記述の必要があります。ゲーム組み込み時にこちらで担当します：◆jsYiJcqRkk）
@@ -329,6 +344,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 [button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
 [wait time=10]
 [eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endif]
 
 ;画面切り替え、手紙画面→通常会話パート
@@ -337,34 +355,13 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + 4;
 [resetfont]
 [endmacro]
 
-;[手紙葛城宮]%fumi_title、%fumi_number指定のこと
+;[手紙葛城宮]
 [macro name="手紙葛城宮"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
 [whosay name=""]
 [cm]
-[iscript]	
-/*
-f.fumi_all_title_new=f.okeiko_month_kansuuji+%fumi_title+"葛城宮　晴仁";
-f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+%fumi_title";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("fumi_katuraginomiya.ks");
-f.fumi_list_all_target.push("*katuraginomiya_fumi"+%fumi_number+1);
-f.fumi_list_all_location_taishou.push(3);
-f.fumi_list_all_location_fumi.push(%fumi_number);
-f.fumi_list_kuroda_location_fumi.push(%fumi_number);
-f.fumi_list_kuroda_title.push(f.fumi_katuraginomiya_title_new);
-f.fumi_list_kuroda_target.push("*katuraginomiya_fumi%fumi_number");
-f.kuroda_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
-f.fumi_toutyaku_katuraginomiya[%fumi_number]=1;
-f.fumi_all_number=f.fumi_all_number + 1;
-f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
-f.hensin_list_hairetsu[3][%fumi_number]=1;
-f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 4;
-*/
-[endscript]
-
 ;機能ボタン消去
 [clearfix]
 [freeimage layer = 29]
@@ -374,7 +371,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 4;
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 [font color = navy]
-
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙葛城宮読了]%fumi_number指定のこと
@@ -410,34 +409,13 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 4;
 
 
 
-;[手紙藤枝]%fumi_title、%fumi_number指定のこと
+;[手紙藤枝]
 [macro name="手紙藤枝"]
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
 ;名前表示消去
 [whosay name=""]
 [cm]
-[iscript]	
-/*
-f.fumi_all_title_new=f.okeiko_month_kansuuji+%fumi_title+"藤枝　肇";
-f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+%fumi_title";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("fumi_hujieda.ks");
-f.fumi_list_all_target.push("*hujieda_fumi"+%fumi_number+1);
-f.fumi_list_all_location_taishou.push(4);
-f.fumi_list_all_location_fumi.push(%fumi_number);
-f.fumi_list_kuroda_location_fumi.push(%fumi_number);
-f.fumi_list_kuroda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_kuroda_target.push("*hujieda_fumi%fumi_number");
-f.kuroda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
-f.fumi_toutyaku_hujieda[%fumi_number]=1;
-f.fumi_all_number=f.fumi_all_number + 1;
-f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
-f.hensin_list_hairetsu[4][%fumi_number]=1;
-f.para_hujieda_koukando = f.para_hujieda_koukando + 4;
-*/
-[endscript]
-
 ;機能ボタン消去
 [clearfix]
 [freeimage layer = 29]
@@ -446,7 +424,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + 4;
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg" time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
-
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [endmacro]
 
 ;[手紙藤枝読了]%fumi_number指定のこと
@@ -480,6 +460,30 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + 4;
 [resetfont]
 [endmacro]
 
+;[手紙黒田]
+[macro name="手紙黒田"]
+;【SE】パラリ(手紙を開く)
+[playse storage=paper_open.ogg loop=false ]
+;名前表示消去
+[whosay name=""]
+[cm]
+;磯野メッセージや「休憩中」など念のため消去
+[freeimage layer = 26]
+[freeimage layer = 27]
+[freeimage layer = 28]
+[freeimage layer = 29]
+[layopt layer=29 visible=true]
+;機能ボタン消去
+[clearfix]
+;背景変更:手紙
+[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg" time=500]
+[position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
+[resetfont]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
+
+[endmacro]
 
 ;==============================
 ; メッセージ窓マクロ設定-メッセージ枠画像:(layer10)

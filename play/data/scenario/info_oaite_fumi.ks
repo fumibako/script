@@ -12,6 +12,8 @@
 [layopt layer=28 visible=true]
 [eval exp="f.fumi_henjityu=0;"]
 [eval exp="f.kinou = 'fumibako'"]
+;↓アドバイスイベントを(1=通過済)に変更(主人公セリフ表示のため)
+[eval exp="f.event_advice=1"]
 
 
 ;◆手紙一覧
@@ -1240,6 +1242,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [freeimage layer = 27]
 [freeimage layer = 28]
 [cm]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 
 @jump storage=okeiko.ks target=*draw_button_system
 [s]

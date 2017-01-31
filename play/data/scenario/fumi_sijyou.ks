@@ -11,7 +11,9 @@
 [layopt layer=29 visible=true]
 [image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-（仮）[r]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [名字] [名前]様[r]
 [r]
 拝啓　最近では桜も咲き始め、暖かくなってきました。ご家族一同元気にお過ごしですか？[r]

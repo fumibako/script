@@ -5,13 +5,7 @@
 ;=============================================
 
 *kuroda_fumi1
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 初めてお手紙を差し上げます。黒田 将貴と申します。[r]
@@ -33,13 +27,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi2
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]つばめの季節になりました。[r]
@@ -58,13 +46,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi3
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]紫陽花の美しい季節になりました。[r]
@@ -84,13 +66,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi4
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]雨が続くこのごろ、いかがお過ごしでしょうか。[r]
@@ -110,13 +86,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi5
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]梅雨が終わり陽気が続くこのごろ、いかがお過ごしですか。[r]
@@ -137,13 +107,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi6
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]土用あけの暑さひとしおなこのごろ、お元気でしょうか。[r]
@@ -163,13 +127,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi7
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]萩の花が涼し気なこの頃ですね。[r]
@@ -188,13 +146,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi8
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]お返事とご快諾をありがとうございました。[r]
@@ -215,13 +167,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi9
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]お手紙をありがとうございました。[r]
@@ -240,13 +186,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi10
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]お手紙をありがとうございました。[r]
@@ -267,13 +207,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi11
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]お手紙を楽しく拝見しました。[r]
@@ -292,13 +226,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi12
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]素敵なお手紙をありがとうございました。[r]
@@ -317,13 +245,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi13
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]青葉の目に鮮やかな季節になりました。[r]
@@ -341,13 +263,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi14
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]秋の気配が濃くなりましたね。[r]
@@ -364,13 +280,7 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 
 *kuroda_fumi15
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]日毎に寒さが加わるこのごろですね。[r]
@@ -390,6 +300,7 @@
 
 *kuroda_fumi16
 ;背景変更:手紙
+[freeimage layer = 26]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
@@ -398,7 +309,9 @@
 [image layer=29 x=1 y=1 storage="bg/nengajou_kuroda.jpg"]
 ;メッセージレイヤを年賀状用に設定変更
 [position left=270 width=400 height=310 top=260 page=fore margint=0]
-@layopt layer=message0 page=fore visible=true
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [position vertical=true]
 [font color=black size=20]
 [sp]昨年末には多大な励ましを[r]
@@ -418,17 +331,14 @@
 [resetfont]
 [eval exp="f.midoku_list_hairetsu[0][15] = 0"]
 [freeimage layer = 29]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [return] 
 
 *kuroda_fumi17
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]寒さ厳しいこのごろですが、いかがお過ごしでしょうか。[r]
@@ -449,13 +359,7 @@
 [return] 
 
 *kuroda_fumi18
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [r]
@@ -466,13 +370,7 @@
 [return] 
 
 *kuroda_fumi19
-;背景変更:手紙
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg"]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [r]

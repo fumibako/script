@@ -12,7 +12,9 @@
 [layopt layer=29 visible=true]
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-（仮）[r]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [名字] [名前]様[r]
 [r]
 謹啓　春暖の候、皆様ますますご清栄のこととお喜び申し上げます。[r]
