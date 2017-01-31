@@ -58,10 +58,14 @@
 
 [fadeoutbgm time=3000]
 
+私はお稽古の手を止めて、お茶に手を伸ばしたときだった。[p]
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
 [主人公困り]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（鳩さん！！）[p]
+障子を振り返るといつものように鳩がお箏にとまった。[p]
 
 [whosay name=磯野 color="dimgray"]
 「鳩が……足が紙が括り付けてありますけど」[p]
