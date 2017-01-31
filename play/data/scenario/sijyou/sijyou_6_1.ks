@@ -66,6 +66,7 @@
 *jump_no
 [er]
 [current layer="message0"]
+[resetfont]
 「いいえ」[r]
 そのまま続きの場面に移動します。[p]
 [cm]
