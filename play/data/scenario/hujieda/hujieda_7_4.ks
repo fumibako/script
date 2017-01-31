@@ -132,7 +132,7 @@
 ;【SE】鳩の羽ばたき（バサバサッ）
 [playse storage=tori_habataki_hato.ogg loop=false ]
 
-
+@jump target=deback
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
@@ -155,6 +155,8 @@ f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
 f.hensin_list_hairetsu[4][4] = -1;
 f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
 [endscript]
+;エラー
+*deback
 
 [手紙藤枝 fumi_number=]
 [sp][ruby text=こと]箏の奏者様へ[l][r]
