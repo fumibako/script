@@ -59,7 +59,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
 [sp]拝啓　春草萌えいづる季節を迎え[r]
-貴方にはいかがお過ごしですか？[r]
+貴方におかれましては、いかがお過ごしですか？[r]
 [r]
 [sp] さて、暫く手紙を書けなかったことをまずは[r]
 お詫びしましょうか。[r]
