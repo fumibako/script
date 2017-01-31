@@ -100,13 +100,14 @@ TG.stat.stack["call"] = [];
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
 [cm]
+;◆四条11月1週は週をまたぐイベントであるため、週数を調整
+[if exp = "f.okeiko_month == 11 && f.okeiko_week == 1 && f.sijyou_au == 1"]
+[eval exp = "f.okeiko_week = 3"]
+[eval exp="f.sysgra_okeiko_week = 'button/kanji_' + f.okeiko_week + '.png'"]
+[endif]
 ;◆四条9月4週は週終わりに発生のため休憩処理続きへjump
 [if exp="f.okeiko_month == 9 && f.okeiko_week == 4 && f.sijyou_au == 1"]
 @jump storage="okeiko.ks" target=*okeiko_qk_shori
-[endif]
-;◆四条11月1週は週をまたぐイベントであるため、週数を調整
-[if exp = "f.okeiko_month == 11 && f.okeiko_week == 1 && f.sijyou_au == 1"]
-[eval exp = "f.okeiko_week == 3"]
 [endif]
 ;◆6月4週はイベント被りの可能性があるため(黒田、藤枝)再度イベント発生チェックへjump
 [if exp="f.okeiko_month == 6 && f.okeiko_week == 4"]
