@@ -1,4 +1,4 @@
-﻿﻿﻿;=============================================
+;=============================================
 ;◆四条テスト画面用　設定入力
 ;テストしやすいように自由に変更してください
 ;=============================================
@@ -54,6 +54,9 @@
 [ptext text="気力:本来は10ずつです" layer=29 size=15 x=160 y=390 color=darkslateblue bold=bold]
 [edit left=160 top=410 width=50 length=200 maxchars=3 name="f.para_shujinkou_kiryoku_now" height=20]
 
+[ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=390 y=190 color=darkslateblue bold=bold]
+[edit left=390 top=210 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
+
 
 [iscript]
 //入力済デフォルト値の設定
@@ -79,6 +82,8 @@ $("input[name='f.para_shujinkou_j_koto']").val("0");
 $("input[name='tf.event_hyouji']").val("1");
 $("input[name='f.para_shujinkou_tairyoku_now']").val("900");
 $("input[name='f.para_shujinkou_kiryoku_now']").val("900");
+//アドバイススキップ
+$("input[name='tf.advice_event_hyouji']").val("0");
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*test_settei_kettei x=150 y=450 width=100 height=100]
@@ -106,6 +111,8 @@ f.para_shujinkou_tairyoku_now = parseInt($("input[name='f.para_shujinkou_tairyok
 f.para_shujinkou_tairyoku_max = parseInt($("input[name='f.para_shujinkou_tairyoku_now']").val());
 f.para_shujinkou_kiryoku_now = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
 f.para_shujinkou_kiryoku_max = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
+
+tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
 [endscript]
 ;1が入力されたときはf.sijyou_sobo==true　それ以外はfalse
 [if exp="tf.edit_sobo==1"]
