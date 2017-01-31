@@ -54,8 +54,8 @@
 [ptext text="気力:本来は10ずつです" layer=29 size=15 x=160 y=390 color=darkslateblue bold=bold]
 [edit left=160 top=410 width=50 length=200 maxchars=3 name="f.para_shujinkou_kiryoku_now" height=20]
 
-[ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=390 y=190 color=darkslateblue bold=bold]
-[edit left=390 top=210 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
+[ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=400 y=370 color=darkslateblue bold=bold]
+[edit left=400 top=400 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
 
 
 [iscript]
