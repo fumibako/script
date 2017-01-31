@@ -2,7 +2,6 @@
 *start
 ;¥¥¥¥¥¥¥¥イベントバッド_イベント5.5手紙イベントバット¥¥¥¥¥¥¥¥
 ;○数日後手紙がかえってくる
-*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*10_3 storage="sijyou/preload_sijyou.ks"]
@@ -101,13 +100,11 @@
 [chara_mod name="bg" storage="toumei.gif" time=500]
 [wait time=10]
 
+
 ;badED処理追記予定
 [if exp="tf.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_owari
-[else]
 [四条ルート終了 end=bad]
 [endif]
-
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
