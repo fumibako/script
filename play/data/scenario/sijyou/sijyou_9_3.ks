@@ -107,7 +107,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font size=32]
+[font　color=white size=32]
 
 [link target=*jump_ok]は　　　い[endlink][r]
 [r][r][r]
