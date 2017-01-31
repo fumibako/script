@@ -328,7 +328,7 @@
 ;新茶の話題 f.sijyou_fumi_toutyakumachi_sintya
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：新茶の話題１（事件前　お見合い前後共通）sijyou_fumi47
-[if exp="f.sijyou_fumi_toutyakumachi_sintya == 0 && f.sijyou_event6 == 0 && f.okeiko_month !=10 && f.fumi_toutyaku_sijyou[47]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_sintya == 0 && f.sijyou_event6 == 0 && f.okeiko_month != 10 && f.fumi_toutyaku_sijyou[47] == 0"]
  [call target=*sijyou_toutyaku_hantei_shori_common]
  @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_47
  [endif]
