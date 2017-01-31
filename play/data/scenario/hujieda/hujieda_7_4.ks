@@ -132,7 +132,11 @@
 ;【SE】鳩の羽ばたき（バサバサッ）
 [playse storage=tori_habataki_hato.ogg loop=false ]
 
-@jump target=deback
+[if exp="tf.okeiko_gamen != true"]
+@jump target=deback1
+[endif]
+
+
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
@@ -187,11 +191,17 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]この伝書鳩は[ruby text=こと]箏の音色が気に入っているのか[r]
 よく母のお[ruby text=こと]箏の練習を聴いていました。[r]
 [sp]貴方様の邪魔になっていないといいのですが。[p]
+
+[if exp="tf.okeiko_gamen != true"]
+@jump target=deback2
+[endif]
+
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][4] = 0"]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 
+*deback2
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
