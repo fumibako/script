@@ -52,7 +52,7 @@
 「はい」[r]
 移動します。[p]
 [cm]
-@jump storage="sijyou_11_1b.ks" target=*seen_end
+@jump storage="sijyou/sijyou_11_1b.ks" target=*seen_end
 [s]
 
 *jump_no
