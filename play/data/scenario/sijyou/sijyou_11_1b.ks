@@ -559,6 +559,7 @@ $('.junbi_girl').remove();
 [四条退場]
 [暗転]
 ;[chara_mod name="bg" storage="ﾈﾘﾈの写真画像"]
+*seen_end
 ;四条イベント6後=1。それ以外=0
 [eval exp="f.sijyou_event6=1"]
 #
