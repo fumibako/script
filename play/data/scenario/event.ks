@@ -751,7 +751,8 @@ $('.junbi_girl').remove();
 [主人公目パチ1回]
 [wait time=10]
 
-「お返事を書かれなかったのは、何かお考えあってのことでございますか？」[p]
+「お返事を書かれなかったのは、何かお考えあってのことで[r]
+[sp]ございますか？」[p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]

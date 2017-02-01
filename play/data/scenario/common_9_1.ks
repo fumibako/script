@@ -68,7 +68,8 @@ jumpします。[p]
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
-（もう鈴虫が鳴いているなんて……今年は時が経つのが早く感じるわ）[p]
+（もう鈴虫が鳴いているなんて……。
+[sp]今年は時が経つのが早く感じるわ）[p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -106,7 +107,8 @@ jumpします。[p]
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
-（お兄様と義姉様がお見合いをされたのも、鈴虫が鳴く季節だったかしら？）[p]
+（お兄様と義姉様がお見合いをされたのも、鈴虫が鳴く季節だった[r]
+[sp]かしら？）[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
@@ -118,7 +120,7 @@ jumpします。[p]
 [主人公閉目パチ1回]
 [wait time=10]
 #
-もう何度も思い起こした、あの日の兄の言葉が頭に浮かぶ。[p]
+何度も思い起こした、あの日の兄の言葉が頭に浮かぶ。[p]
 
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 （お兄様。私にはまだ、そこまで思える方はいないようです）[p]
@@ -244,7 +246,8 @@ jumpします。[p]
 ふと、お父様は真剣な表情を浮かべる。[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「まぁ、それでだ。文奈もそろそろ誰かと会ってみる気はないかと思ってな？」[p]
+「まぁ、それでだ。文奈もそろそろ誰かと会ってみる気はないかと[r]
+[sp]思ってな？」[p]
 
 [主人公目パチ1回]
 [wait time=10]
@@ -258,6 +261,12 @@ jumpします。[p]
 どなたとお会いしましょうか？
 ;【分岐】暫定的に各シナリオ9月1週へ飛ぶ処理を入れています(現状ではイベント後テストページに移動します。後日お稽古パートへ戻る処理を追記予定です)
 ;好感度と淑女度によるif分岐処理を追記予定です(スクリプト担
+[iscript]
+tf.common_9_1_storage = [];
+tf.common_9_1_target = [];
+tf.common_9_1_oaite = [];
+
+[endscript]
 [glink storage="kuroda_9_1.ks" target=*replay_kuroda_9_1 text="黒田様" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
 [glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizenzaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
 [glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
