@@ -37,6 +37,7 @@
 [endif]
 
 *fumi_toutyaku_zaizen_32
+[if exp="tf.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「母の誕生日パーティご招待」　財前 美彬";//←仮タイトルです(お好みで変更してください)
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「母の誕生日パーティご招待」";//←仮タイトルです(お好みで変更してください)
@@ -55,6 +56,7 @@ f.fumi_zaizen_number=f.fumi_zaizen_number + 1;
 f.hensin_list_hairetsu[1][31]=1;
 f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fumi;
 [endscript]
+[endif]
 
 [手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
@@ -80,8 +82,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [resetfont]
+[if exp="tf.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[1][31] = 0"]
+[endif]
 [手紙財前読了 fumi_number=]
 
 ;【SE】紙に触れる（パラリ）
