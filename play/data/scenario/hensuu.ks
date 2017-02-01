@@ -115,14 +115,14 @@ sf.kuroda ={
   "ask1":"黒田将貴様について",
   "fumi1":"kuroda_fumi1",
 }; 
-f.para_kuroda_koukando=5;
-f.para_kuroda_sintyou=169;
-f.para_kuroda_taijuu=57;
-f.para_kuroda_shumi="－";
-f.kuroda_fumi_henjimachi=1;
-f.kuroda_fumi_toutyakumachi=3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
-f.kuroda_fumi_toutyakumachi_week=0; //その攻略対象にこちらから手紙を出してから、手紙が来るまでの経過週数(出した週を0とし、毎週加算される)
-f.kuroda_nextfumi_common=2;
+f.para_kuroda_koukando = 3; //2/2調整更新夢イベント偏りを減らすため5→3
+f.para_kuroda_sintyou = 169;
+f.para_kuroda_taijuu = 57;
+f.para_kuroda_shumi = "－";
+f.kuroda_fumi_henjimachi = 1;
+f.kuroda_fumi_toutyakumachi = 3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
+f.kuroda_fumi_toutyakumachi_week = 0; //その攻略対象にこちらから手紙を出してから、手紙が来るまでの経過週数(出した週を0とし、毎週加算される)
+f.kuroda_nextfumi_common = 2;
 f.fumi_toutyaku_kuroda=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 f.kuroda_au=0; //個別ルートに入ったら1を代入
 f.kuroda_fumi_toutyakumachi_shumi = -1;
@@ -219,7 +219,7 @@ sf.katuraginomiya ={
   "ask1" : "葛城宮 晴仁様について",
   "fumibako" : "fumibako_katuraginomiya",
 }; 
-f.para_katuraginomiya_koukando = 10;
+f.para_katuraginomiya_koukando = 5; //2/2調整更新夢イベント偏りを減らすため10→5
 f.para_katuraginomiya_sintyou = 177;
 f.para_katuraginomiya_taijuu = 69;
 f.para_katuraginomiya_shumi = "－";
@@ -277,9 +277,9 @@ sf.hujieda ={
   "fumibako":"fumibako_hujieda",
   "fumi1":"hujieda_fumi1",
 }; 
-f.para_hujieda_koukando=5; //1/27調整更新(鳩の手紙による好感度を調整して5に戻しました)
-f.para_hujieda_sintyou=165;
-f.para_hujieda_taijuu=56;
+f.para_hujieda_koukando = 2; //2/2調整更新(鳩の手紙による好感度を追加調整5→2。藤枝イベント発生していれば夢イベント時6予定)
+f.para_hujieda_sintyou = 165;
+f.para_hujieda_taijuu = 56;
 f.para_hujieda_shumi="－";
 f.hujieda_fumi_henjimachi= 1 ; //最初の手紙に(0返事しているor1未返信)
 f.hujieda_fumi_toutyakumachi= 3 ; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）

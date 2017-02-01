@@ -22,7 +22,7 @@ sf.sijyou ={
   "fumibako" : "fumibako_sijyou",
   "fumi1" : "sijyou_fumi1",
 }; 
-f.para_sijyou_koukando = 10; //←攻略対象好感度初期値です。自由に変更してください＿！！テスト中早くします！！！
+f.para_sijyou_koukando = 5; //←攻略対象好感度初期値です。自由に変更してください＿2/2調整更新夢イベント偏りを減らすため10→5
 f.para_sijyou_sintyou = 178; //←攻略対象情報に表示される身長です。自由に変更してください
 f.para_sijyou_taijuu = 65; //←攻略対象情報に表示される体重です。自由に変更してください
 f.para_sijyou_shumi = "－"; //←攻略対象情報に表示される趣味欄の内容です。自由に変更してください
