@@ -445,6 +445,7 @@ $('.junbi_girl').remove();
 [endif]
 
 *fumi_toutyaku_katuraginomiya_2
+[if exp="tf.okeiko_gamen==true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最初の手紙」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「最初の手紙」";//←仮タイトルです。お好みに変更してください
@@ -460,6 +461,7 @@ f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
 f.hensin_list_hairetsu[3][1] = 1;
 f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
 [endscript]
+[endif]
 
 [手紙葛城宮 fumi_number=1]
 
@@ -499,7 +501,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 [resetfont]
+[if exp="tf.okeiko_gamen==true"]
 [eval exp="f.midoku_list_hairetsu[3][1] = 0"]
+[endif]
 [手紙葛城宮読了 fumi_number=1]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]

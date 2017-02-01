@@ -27,6 +27,29 @@
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
+
+*fumi_toutyaku_katuraginomiya_32
+[if exp="tf.okeiko_gamen==true"]
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 バザーへのお誘い 」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
+f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「 バザーへのお誘い 」";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*katuraginomiya_fumi30");
+f.fumi_list_all_location_taishou.push(3);
+f.fumi_list_all_location_fumi.push(31);
+f.fumi_list_katuraginomiya_location_fumi.push(31);
+f.fumi_list_katuraginomiya_title.push(f.fumi_katuraginomiya_title_new);
+f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi30");
+f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
+f.fumi_toutyaku_katuraginomiya[32]=1;
+f.katuraginomiya_fumi_toutyakumachi_shumi=-1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
+f.hensin_list_hairetsu[3][31] = 1;
+f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
+[endscript]
+[endif]
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
@@ -50,6 +73,10 @@
 追伸[r]
 色々ある中で沢山の手紙を感謝する。君にとても[r]
 励まされた。[p]
+[if exp="tf.okeiko_gamen==true"]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[3][31] = 0"]
+[endif]
 [手紙葛城宮読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）

@@ -66,12 +66,13 @@
 「ええ」[p]
 
 ;=============================================================
-[暗転２ storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
+[暗転２ storage="bg/katuraginomiya_3_4_nomalED.jpg"]
+;goodED時[暗転２ storage="bg/katuraginomiya_3_4_goodED.jpg"]
 [葛城宮退場]
 ;退場しないとＣＧ見れない
 ;主人公と葛城宮抱擁CG[p]
 ;【背景】主人公と葛城宮抱擁 仮
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg"]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
 [暗転２終了]
 ;=============================================================

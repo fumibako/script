@@ -48,6 +48,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_katuraginomiya_30
+[if exp="tf.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 話がしたい 」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「 話がしたい 」";//←仮タイトルです。お好みに変更してください
@@ -67,6 +68,7 @@ f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
 f.hensin_list_hairetsu[3][29] = 1;
 f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
 [endscript]
+[endif]
 
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
@@ -91,8 +93,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]近いうちにまた会おう。[r]
 [sp][r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[if exp="tf.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][29] = 0"]
+[endif]
 [手紙葛城宮読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）

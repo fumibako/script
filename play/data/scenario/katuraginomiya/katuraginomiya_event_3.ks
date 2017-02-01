@@ -35,8 +35,9 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 *fumi_toutyaku_katuraginomiya_28
+[if exp="tf.okeiko_gamen==true"]
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お茶事について」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お茶事について」葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「お茶事について」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
@@ -54,6 +55,7 @@ f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
 f.hensin_list_hairetsu[3][27] = 1;
 f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
 [endscript]
+[endif]
 
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
@@ -80,8 +82,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]いや、心から君が受けてくれるのを望んでいる。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[if exp="tf.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][27] = 0"]
+[endif]
  [手紙葛城宮読了 fumi_number=]
  [resetfont]
 ;【SE】紙に触れる（パラリ）
@@ -507,8 +511,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;=========================スクリプトここまで=======================================
 *fumi_toutyaku_jijyuu_1
+[if exp="tf.okeiko_gamen==true"]
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のお茶事について」　桂伯爵夫人";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のお茶事について」</br>桂伯爵夫人";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
 f.fumi_list_all_target.push("*jijyuu_fumi1");
@@ -516,6 +521,7 @@ f.fumi_list_all_location_taishou.push(8);
 f.fumi_list_all_location_fumi.push(1);
 f.fumi_all_number=f.fumi_all_number + 1;
 [endscript]
+[endif]
 
 [手紙侍従]
 [font color=navy size=20]

@@ -467,7 +467,8 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
 ;[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg" wait=true]
 ;【背景】CG
-[preload storage="data/fgimage/bg/I9IhvvVdPo/katuraginomiya_3_4_nomalED.jpg" wait=true]
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED.jpg" wait=true]
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
