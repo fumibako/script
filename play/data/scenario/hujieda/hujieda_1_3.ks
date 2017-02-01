@@ -76,6 +76,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_tokiko_hujieda
+[if exp="tf.okeiko_gamen==true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「星も凍るような夜」　三宮　時子";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
@@ -85,6 +86,7 @@ f.fumi_list_all_location_taishou.push(6);
 f.fumi_list_all_location_fumi.push(1);
 f.fumi_all_number=f.fumi_all_number + 1;
 [endscript]
+[endif]
 
 [手紙時子]
 [名字]　[名前]様へ [l][r]

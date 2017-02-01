@@ -69,6 +69,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_hujieda_7
+[if exp="tf.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 六」　藤枝　肇";//←仮タイトルです。お好みに変更してください
 f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙 六」";//←仮タイトルです。お好みに変更してください
@@ -87,6 +88,7 @@ f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
 f.hensin_list_hairetsu[4][6] = 1; //9月2週からは文通可能。物語上文を交わすことが前提で進むため暫定で「返信済」としてみます
 f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
 [endscript]
+[endif]
 
 [手紙藤枝 fumi_number=]
 [名字][名前] 様へ[l][r]
@@ -128,8 +130,10 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
+[if exp="tf.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][6] = 0"]
+[endif]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 

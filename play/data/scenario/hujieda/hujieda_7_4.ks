@@ -159,7 +159,7 @@ f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
 f.hensin_list_hairetsu[4][4] = -1;
 f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
 [endscript]
-;エラー回避
+;エラー回避をありがとうございます(◆jsYiJcqRkk
 *deback1
 
 [手紙藤枝 fumi_number=]

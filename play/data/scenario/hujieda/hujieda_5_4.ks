@@ -73,6 +73,7 @@
 [playse storage=paper_open.ogg loop=false ]
 
 *fumi_toutyaku_hujieda_3
+[if exp="tf.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　二」";//←仮タイトルです。お好みに変更してください
 f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　二」";//←仮タイトルです。お好みに変更してください
@@ -89,8 +90,9 @@ f.fumi_toutyaku_hujieda[3]=1;
 f.fumi_all_number=f.fumi_all_number + 1;
 f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
 f.hensin_list_hairetsu[4][2] = -1;
-//f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
+f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
 [endscript]
+[endif]
 
 [手紙藤枝 fumi_number=]
 
@@ -116,8 +118,10 @@ f.hensin_list_hairetsu[4][2] = -1;
 [sp]続けることは嫌な事もありますが、喜びも多くあります。[r]
 [r]
 [sp]また貴方様の[ruby text=こと]箏の音を聴けることを願っています。[p]
+[if exp="tf.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][2] = 0"]
+[endif]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
