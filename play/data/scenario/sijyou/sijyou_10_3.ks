@@ -120,7 +120,7 @@
 *fumi_toutyaku_fumiya
 [if exp="tf.okeiko_gamen==true"]
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「文矢からの手助け」　文矢"; //執筆者本人の名前が入るのは違和感が出てしまうかもしれません。例えば『華織について』などはいかがでしょうか？(スクリプト担
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「華織について」　文矢"; //「文矢からの手助け」→「華織について」に変更させていただきました。「変えても大丈夫」とのご回答をありがとうございました(スクリプト担
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_event_fumi.ks");
 f.fumi_list_all_target.push("*10_3");
