@@ -185,7 +185,7 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：春『トキワナズナ』1_3/f.okeiko_month==4
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai==0 && f.okeiko_month==4 && f.fumi_toutyaku_sijyou[23]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 0 && f.okeiko_month == 4 && f.fumi_toutyaku_sijyou[23] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_23
 [endif]
@@ -197,7 +197,7 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：春 『筍』4/f.okeiko_month==5
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==0 && f.okeiko_month==5 && f.fumi_toutyaku_sijyou[25] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 0 && f.okeiko_month == 5 && f.fumi_toutyaku_sijyou[25] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_25
 [endif]
@@ -251,13 +251,13 @@
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：秋『秋の夕暮れ』9/f.okeiko_month==9
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==1 && f.okeiko_month==9 && f.fumi_toutyaku_sijyou[34]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai==1 && f.okeiko_month == 9 && f.fumi_toutyaku_sijyou[34] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_34
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：秋『秋の空』10/f.okeiko_month==10
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu==0 && f.sijyou_omiai==1 && f.okeiko_month==11 && f.fumi_toutyaku_sijyou[35]==0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 1 && f.okeiko_month == 11 && f.fumi_toutyaku_sijyou[35] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_35
 [endif]
@@ -314,7 +314,7 @@
 ;=======================================================================================
 ;！！日付　条件指定未！！
 ;◆↓手紙一通分の到着判定処理(開始)：春『全力』 (『未来へ』をみている)18_ex/f.okeiko_month=＞1　 f.okeiko_week=＞2  f.sijyou_sobo==true
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 1 &&(f.okeiko_month == 1 || f.okeiko_month == 2) && f.fumi_toutyaku_sijyou[44] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 1 && f.sijyou_sobo == true && (f.okeiko_month == 1 || f.okeiko_month == 2) && f.fumi_toutyaku_sijyou[43] == 1 && f.fumi_toutyaku_sijyou[44] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_44
 [endif]
