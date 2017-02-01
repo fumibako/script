@@ -249,9 +249,6 @@ $('.junbi_girl').remove();
 [endif]
 
 *shujinkou_message
-;メッセージレイヤを表示
-@layopt layer=message0 page=fore visible = true
-[current layer="message0"]
 ;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
 [position left=360 width=500 height=170 top=250 page=fore margint="50"]
 
@@ -259,6 +256,9 @@ $('.junbi_girl').remove();
 ;[chara_show left=300 top=220 layer=23 name="sys_fukidasi" time=100]
 [chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
 [wait time=10]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 
 [if exp="f.para_shujinkou_tairyoku_now < 1 || f.para_shujinkou_kiryoku_now < 1"]
 [chara_mod name="A_base" storage="girl/L/base.png" time=0]

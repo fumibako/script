@@ -70,7 +70,7 @@ f.fumi_toutyaku_kuroda[4]=1;
 
 *fumi_toutyaku_kuroda_5
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「夏山に来ています」　黒田 将貴";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「夏山に来ています」黒田 将貴";
 f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「夏山に来ています」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("fumi_kuroda.ks");
@@ -372,7 +372,7 @@ f.zaizen_fumi_toutyakumachi_dokusho=-1;
 
 *fumi_toutyaku_zaizen_10
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツについて」　財前 美彬";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツについて」財前 美彬";
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「スポーツについて」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
@@ -444,7 +444,7 @@ f.zaizen_fumi_toutyakumachi_neko=-1;
 
 *fumi_toutyaku_zaizen_14
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」　財前 美彬";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」財前 美彬";
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
@@ -480,7 +480,7 @@ f.zaizen_fumi_toutyakumachi_midori=-1;
 
 *fumi_toutyaku_zaizen_16
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「緑の石について 二」　財前 美彬";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「緑の石について 二」財前 美彬";
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「緑の石について 二」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
@@ -516,7 +516,7 @@ f.zaizen_fumi_toutyakumachi_photo=-1;
 
 *fumi_toutyaku_zaizen_18
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」　財前 美彬";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」財前 美彬";
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
@@ -534,7 +534,7 @@ f.zaizen_fumi_toutyakumachi_hajimari=-1;
 
 *fumi_toutyaku_zaizen_19
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」　財前 美彬";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」財前 美彬";
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
@@ -552,7 +552,7 @@ f.zaizen_fumi_toutyakumachi_music=-1;
 
 *fumi_toutyaku_zaizen_20
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について 二」　財前 美彬";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について 二」財前 美彬";
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について 二」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
@@ -867,7 +867,7 @@ f.katuraginomiya_fumi_toutyakumachi_dokusho=-1;
 
 *fumi_toutyaku_katuraginomiya_9
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツについて」　葛城宮 晴仁";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「スポーツについて」葛城宮 晴仁";
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「スポーツについて」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
@@ -939,7 +939,7 @@ f.katuraginomiya_fumi_toutyakumachi_neko=-1;
 
 *fumi_toutyaku_katuraginomiya_13
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」　葛城宮 晴仁";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」葛城宮 晴仁";
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
@@ -958,7 +958,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando - 1; //「聞き
 
 *fumi_toutyaku_katuraginomiya_14
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について 二」　葛城宮 晴仁";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について 二」葛城宮 晴仁";
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について 二」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
@@ -1016,7 +1016,7 @@ f.katuraginomiya_fumi_toutyakumachi_photo=-1;
 
 *fumi_toutyaku_katuraginomiya_17
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」　葛城宮 晴仁";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」葛城宮 晴仁";
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
@@ -1035,7 +1035,7 @@ f.katuraginomiya_fumi_toutyakumachi_hajimari=-1;
 
 *fumi_toutyaku_katuraginomiya_18
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」　葛城宮 晴仁";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」葛城宮 晴仁";
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
@@ -1212,7 +1212,7 @@ f.fumi_toutyaku_katuraginomiya[26]=1;
 ;=============================================
 *fumi_toutyaku_katuraginomiya_27
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「従妹宮の件について」　葛城宮 晴仁";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「従妹宮の件について」葛城宮 晴仁";
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「従妹宮の件について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
@@ -1429,7 +1429,7 @@ f.hujieda_fumi_toutyakumachi_neko=-1;
 
 *fumi_toutyaku_hujieda_18
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」　藤枝　肇";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」藤枝　肇";
 f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「聞き上手と話し上手について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
@@ -1483,7 +1483,7 @@ f.hujieda_fumi_toutyakumachi_photo=-1;
 
 *fumi_toutyaku_hujieda_21
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」　藤枝　肇";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」藤枝　肇";
 f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「一日のはじまりについて」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
@@ -1501,7 +1501,7 @@ f.hujieda_fumi_toutyakumachi_hajimari=-1;
 
 *fumi_toutyaku_hujieda_22
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」　藤枝　肇";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」藤枝　肇";
 f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「お気に入りの曲について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
@@ -1597,7 +1597,7 @@ f.fumi_toutyaku_hujieda[26]=1;
 ;=============================================
 *fumi_toutyaku_tokiko_katuraginomiya
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 未来へ向けて 」　三宮 時子";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「未来へ向けて」　三宮 時子";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
 f.fumi_list_all_target.push("*tokiko_fumi_katuraginomiya");
@@ -1612,7 +1612,7 @@ f.fumi_toutyaku_tokiko[0] = 1;
 ;=============================================
 *fumi_toutyaku_asuka_0
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「はじめてのお手紙」 飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「はじめてのお手紙」飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
 f.fumi_list_all_target.push("*0");
