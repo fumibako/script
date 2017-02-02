@@ -125,7 +125,7 @@ f.sijyou_fumi_toutyakumachi_kazoku=-1;
 *fumi_toutyaku_sijyou_7
 ;『家族について 兄弟』 (お見合い後・事件解決後2)7 sijyou_kazoku_2_2
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について 兄弟」</br>四条 華織";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について 兄弟」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「家族について 兄弟」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
@@ -145,7 +145,7 @@ f.sijyou_fumi_toutyakumachi_kazoku=-1;
 *fumi_toutyaku_sijyou_8
 ;『家族について 弟と妹』 (お見合い後・事件解決後2)8 sijyou_kazoku_2_3
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について 弟と妹」</br>四条 華織";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「家族について 弟と妹」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「家族について 弟と妹」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
