@@ -76,7 +76,7 @@ jumpします。[p]
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
-（もう鈴虫が鳴いているなんて……。
+（もう鈴虫が鳴いているなんて……。[r]
 [sp]今年は時が経つのが早く感じるわ）[p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
