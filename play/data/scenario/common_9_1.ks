@@ -2,6 +2,12 @@
 ;◆顔合せのお相手選び： 9月1週になった時点で、攻略対象の好感度一定値以上なら1度だけ発生
 ;=============================================
 *replay_common_9_1
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
+
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -22,7 +28,7 @@
 [主人公通常]
 [wait time=10]
 [if exp="tf.test_gamen==true"]
-テストページから開始しています。選択肢までjumpしますか？[r]
+テストページから開始しています。選択肢手前のif分岐までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -34,6 +40,7 @@
 [r][r][r]
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
+[プリロード画面消去]
 [s]
 
 
@@ -43,7 +50,7 @@
 「はい」[r]
 jumpします。[p]
 [cm]
-@jump target=*sentaku
+@jump target=*if_bunki
 [s]
 
 *jump_no
@@ -62,6 +69,7 @@ jumpします。[p]
 [wait time=10]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 「あら？」
+[プリロード画面消去]
 [autosave]
 [p]
 
@@ -249,6 +257,55 @@ jumpします。[p]
 「まぁ、それでだ。文奈もそろそろ誰かと会ってみる気はないかと[r]
 [sp]思ってな？」[p]
 
+*if_bunki
+;好感度と淑女度により、選択可能なお相手を調べる
+[iscript]
+tf.common_9_1_storage = [];
+tf.common_9_1_target = [];
+tf.common_9_1_oaite = [];
+tf.common_9_1_oaite_full = [];
+
+if (f.para_kuroda_koukando >= 30) {
+  tf.common_9_1_storage.push("kuroda_9_1.ks");
+  tf.common_9_1_target.push("*from_common_9_1");
+  tf.common_9_1_oaite.push("黒田様");
+  tf.common_9_1_oaite_full.push("黒田 将貴");
+}
+if (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) {
+  tf.common_9_1_storage.push("zaizen/zaizen_9_1.ks");
+  tf.common_9_1_target.push("*replay_zaizenzaizen_9_1");
+  tf.common_9_1_oaite.push("財前様");
+  tf.common_9_1_oaite_full.push("財前 美彬");
+}
+if (f.para_sijyou_koukando >= 30) {
+  tf.common_9_1_storage.push("sijyou/sijyou_9_1.ks");
+  tf.common_9_1_target.push("*replay_sijyou_9_1");
+  tf.common_9_1_oaite.push("四条様");
+  tf.common_9_1_oaite_full.push("四条 華織");
+}
+tf.common_9_1_ninzuu = 0;
+tf.common_9_1_ninzuu = tf.common_9_1_oaite.length;
+[endscript]
+
+「[名前]の淑女らしさは
+;淑女度一定値以下で父のセリフ変化
+[if exp="f.para_shujinkou_shukujodo < f.zaizen_shukujodo"]
+まだまだ
+[else]
+なかなか
+[endif]
+だね。[r] 
+
+[if exp="tf.common_9_1_ninzuu == 2"]
+[sp]いま手紙を交わしているなかで、 縁談を進められるのは[emb exp="tf.common_9_1_oaite_full[0]"]君と[r]
+[sp][emb exp="tf.common_9_1_oaite_full[1]"]君だな。会ってみるかい？」[p] 
+[elsif exp="tf.common_9_1_ninzuu == 1"]
+[sp]いま手紙を交わしているなかで、 縁談を進められるのは[emb exp="tf.common_9_1_oaite_full[0]"]君だな。[r]
+[sp]会ってみるかい？」[p]
+[elsif exp="tf.common_9_1_ninzuu == 3"]
+[sp]誰かと会ってみるかい？」[p]
+[endif]
+
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
@@ -258,23 +315,31 @@ jumpします。[p]
 [playse storage=mushi_suzumushi.ogg loop=false ]
 *sentaku
 #
+[if exp="tf.common_9_1_ninzuu == 1"]
+お会いしましょうか？
+[else]
 どなたとお会いしましょうか？
-;【分岐】暫定的に各シナリオ9月1週へ飛ぶ処理を入れています(現状ではイベント後テストページに移動します。後日お稽古パートへ戻る処理を追記予定です)
-;好感度と淑女度によるif分岐処理を追記予定です(スクリプト担
-[iscript]
-tf.common_9_1_storage = [];
-tf.common_9_1_target = [];
-tf.common_9_1_oaite = [];
-
-[endscript]
-[glink storage="kuroda_9_1.ks" target=*replay_kuroda_9_1 text="黒田様" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
-[glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizenzaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
-[glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
-[if exp="f.event_hujieda[5]==1"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=200 color=white]
 [endif]
-[glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=550 y=300 color=white]
+;【分岐】
+[eval exp="tf.common_9_1_y_left = 100"]
+[eval exp="tf.common_9_1_y_right = 100"]
+[glink storage=&tf.common_9_1_storage[0] target=&tf.common_9_1_target[0] text=&tf.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
+[if exp="tf.common_9_1_ninzuu >= 2"]
+[glink storage=&tf.common_9_1_storage[1] target=&tf.common_9_1_target[1] text=&tf.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[endif]
+[if exp="tf.common_9_1_ninzuu >= 3"]
+[eval exp="tf.common_9_1_y_left = tf.common_9_1_y_left + 100"]
+[glink storage=&tf.common_9_1_storage[2] target=&tf.common_9_1_target[2] text=&tf.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
+[endif]
+;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
+[eval exp="tf.common_9_1_y_right = tf.common_9_1_y_right + 100"]
+[if exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu == 1"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="会わない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[elsif exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu >= 2"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[endif]
+[eval exp="tf.common_9_1_y_left = tf.common_9_1_y_left + 100"]
+[glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
 [autosave]
 [s]
 
@@ -298,6 +363,7 @@ tf.common_9_1_oaite = [];
 「はい、お父様」[p]
 #
 [eval exp="f.event_oaite_mitei=1"]
+[イベントシーン終了]
 @jump storage="event_hantei_week_hajime.ks" target=*common_event_hantei_owari
 
 ;回想記録終了 
@@ -309,8 +375,9 @@ tf.common_9_1_oaite = [];
 [endif]
 *scene5
 
-;【背景】ヒロインの部屋
-[背景_庭]
+;【背景】主人公邸 庭の見える部屋：夜
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;メッセージエリアの表示;【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
 ;[chara_show left=1 top=391 layer=10 name="message_bg"]
@@ -358,17 +425,29 @@ tf.common_9_1_oaite = [];
 「誰に会うか、決めたかね？」[p]
 
 #
+[if exp="tf.common_9_1_ninzuu == 1"]
+お会いしましょう。
+[else]
 どなたとお会いしましょうか？
-;【分岐】暫定的に各シナリオ9月1週へ飛ぶ処理を入れています(現状ではイベント後テストページに移動します。後日お稽古パートへ戻る処理を追記予定です)
-;好感度と淑女度によるif分岐処理を追記予定です(スクリプト担
-[glink storage="kuroda_9_1.ks" target=*replay_kuroda_9_1 text="黒田様" fontcolor=gray size=23 width="200" x=200 y=100 color=white]
-[glink storage="zaizen/zaizen_9_1.ks" target=*replay_zaizen_9_1 text="財前様" fontcolor=gray size=23 width="200" x=550 y=100 color=white]
-[glink storage="sijyou/sijyou_9_1.ks" target=*replay_sijyou_9_1 text="四条様" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
-;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
-[if exp="f.event_hujieda[5]==1"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=200 color=white]
 [endif]
-[autosave]
+;【分岐】
+[eval exp="tf.common_9_1_y_left = 100"]
+[eval exp="tf.common_9_1_y_right = 100"]
+[glink storage=&tf.common_9_1_storage[0] target=&tf.common_9_1_target[0] text=&tf.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
+[if exp="tf.common_9_1_ninzuu >= 2"]
+[glink storage=&tf.common_9_1_storage[1] target=&tf.common_9_1_target[1] text=&tf.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[endif]
+[if exp="tf.common_9_1_ninzuu >= 3"]
+[eval exp="tf.common_9_1_y_left = tf.common_9_1_y_left + 100"]
+[glink storage=&tf.common_9_1_storage[2] target=&tf.common_9_1_target[2] text=&tf.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
+[endif]
+;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
+[eval exp="tf.common_9_1_y_right = tf.common_9_1_y_right + 100"]
+[if exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu == 1"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="会わない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[elsif exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu >= 2"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[endif]
 [s]
 
 
