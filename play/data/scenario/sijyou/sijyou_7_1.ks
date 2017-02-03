@@ -83,9 +83,13 @@
 [current layer="message1"]
 [font size=32]
 ;【分岐】
+[if exp="f.katuraginomiya_only == 1"]
+[glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[else]
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
 [glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
+[endif]
 [glink target=*okeiko text="お稽古が上達しますように" fontcolor=gray size=22 width="400" x=200 y=230 color=white]
 [glink target=*syukujyo text="淑女らしくなりたい" fontcolor=gray size=22 width="400" x=200 y=280 color=white]
 [glink target=*no text="見逃してしまった" fontcolor=gray size=22 width="400" x=200 y=330 color=white]
@@ -203,8 +207,12 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 淑女らしくなれるようにお願いした。[p]
+[if exp="f.katuraginomiya_only == 1"]
+[eval exp="f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo + 1"] 
+[else]
 [eval exp="f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo + 1"] 
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 10"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （淑女らしくなれますように……）[p]
@@ -229,7 +237,25 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 #
 私は星を眺めた。[p]
 @jump target=*end_Q
+;==============================================================================================================
+*katuragi
+[cm]
+;メッセージレイヤサイズを会話窓用に戻す ここはオンリーしか表示しない
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
+（殿下と親しくできますように）[p]
+;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[playse storage=kira.ogg loop=false ]
+[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
+#
+私は星に願った。[p]
 
+@jump target=*end_Q
 ;==============================================================================================================
 *end_Q
 [image name=star layer=1 top=10 left=400 storage="bg/B4nFWraU42/star.jpg" time=10]
