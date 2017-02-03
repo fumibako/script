@@ -12,14 +12,14 @@
 ;四条・財前は好感度最大値　葛城宮と被らないように淑女度１５以下
 ;================================================
 ;◆四条 sijyou_6_1.ks好感度一定値以上で1度だけ発生 日付は不明(仮)　！！共通イベントですがどうしましょう ここは葛城宮好感度→淑女度１８以下　と　藤枝好感度→箏、一定値　5/4で華道ばかり１５になった
-[if exp="(f.okeiko_month == 6 && f.okeiko_week == 1) && f.event_sijyou[1] == 0"]
+[if exp="(f.okeiko_month == 6 && f.okeiko_week == 1) && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
 	;配列に好感度を入れます。
 	[eval exp ="tf.hikaku_koukando=[f.para_sijyou_koukando , f.para_kuroda_koukando, f.para_zaizen_koukando, f.para_katuraginomiya_koukando , f.para_hujieda_koukando ]"]
 	[iscript]
 	tf.a=Math.max.apply(null, tf.hikaku_koukando);
 	//alert(tf.a); ここまでok
 	[endscript]
-	[if exp="tf.a == f.para_hujieda_koukando && f.hujieda_au==0 && f.para_shujinkou_j_koto > 7 && f.event_sijyou[1] == 0"]
+	[if exp="tf.a == f.para_hujieda_koukando && f.hujieda_au==0 && f.para_shujinkou_j_koto > 7 && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
 	;藤枝の好感度と一番高い数値が同じであるとき箏が7以上（好感度があがらないキャラほど上の判定・10以上は手紙を出していたら有りえない数値）	
 	[eval exp="f.event_storage='hujieda/hujieda_6_1.ks'"]
 	[eval exp="f.event_target='*replay_hujieda_6_1'"]
@@ -27,14 +27,14 @@
 	[eval exp="f.event_sijyou[1]=1"]
 	@jump storage="event.ks" target=*start
 	;四条	
-	[elsif exp="tf.a == f.para_sijyou_koukando && f.sijyou_au == 0 && f.para_shujinkou_shukujodo < 15 && f.event_sijyou[1] == 0"]
+	[elsif exp="tf.a == f.para_sijyou_koukando && f.sijyou_au == 0 && f.para_shujinkou_shukujodo < 15 && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
 	;四条の好感度と一番高い数値が同じであるとき淑女度が15以下（15以上は手紙を出していたら有りえない数値）	
 	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks'"]
 	[eval exp="f.event_target='*replay_sijyou_6_1'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_sijyou[1]=1"]
 	@jump storage="event.ks" target=*start
-	[elsif exp="tf.a == f.para_zaizen_koukando && f.zaizen_au == 0 && f.para_shujinkou_shukujodo < 15 && f.event_sijyou[1] == 0"]
+	[elsif exp="tf.a == f.para_zaizen_koukando && f.zaizen_au == 0 && f.para_shujinkou_shukujodo < 15 && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
 	;財前の好感度と一番高い数値が同じであるとき淑女度が15以下（15以上は手紙を出していたら有りえない数値）	
 	[eval exp="f.event_storage='zaizen/zaizen_6_1.ks'"]
 	[eval exp="f.event_target='*replay_zaizen_6_1'"]
