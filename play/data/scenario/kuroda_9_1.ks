@@ -1,7 +1,12 @@
-﻿;=============================================
+﻿﻿;=============================================
 ;◆黒田イベント４章【実際に会う事を決める】9月1週、お相手選択で「黒田」を選ぶと発生
 ;=============================================
 *replay_kuroda_9_1
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -25,6 +30,7 @@
 
 [主人公ポーズ通常]
 [wait time=10]
+*from_common_9_1
 [主人公通常]
 [wait time=10]
 ;【SE】鈴虫の音
@@ -33,7 +39,9 @@
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（……黒田様。お手紙の人柄に、触れてみたい）[p]
+（……黒田様。お手紙の人柄に、触れてみたい）
+[プリロード画面消去]
+[p]
 
 ;【立ち絵】主人公：決意
 [主人公閉目パチ1回]

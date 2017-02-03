@@ -1,4 +1,4 @@
-;=============================================
+﻿;=============================================
 ;◆葛城宮イベント判定(週始め)
 ;=============================================
 *start
@@ -9,7 +9,7 @@
 [eval exp="tf.koukando_eventup_katuraginomiya=5"]
 ;===================================================================================================================================================
 ;1◆葛城宮イベント判定 katuraginomiya_event_1.ks 他好感度が一定以下_淑女度15以上 町で葛城宮に会い胸が高鳴る→手紙がくる 梅雨の晴れ 20以下　藤枝はイベントが被るので10以下
-[if exp="(f.okeiko_month == 6 && f.okeiko_week == 3) && f.para_shujinkou_shukujodo > 15 && f.event_katuraginomiya[1]==0 && f.katuraginomiya_au == 0 && f.para_sijyou_koukando < 21 && f.para_kuroda_koukando < 21 && f.para_zaizen_koukando < 21 && f.para_hujieda_koukando < 11"]
+[if exp="(f.okeiko_month == 6 && f.okeiko_week == 3) && f.para_shujinkou_shukujodo >= 15 && f.event_katuraginomiya[1]==0 && f.katuraginomiya_au == 0 && f.para_sijyou_koukando < 21 && f.para_kuroda_koukando < 21 && f.para_zaizen_koukando < 21 && f.para_hujieda_koukando < 11"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_event_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_event_1'"]
 	[eval exp="f.event_type='talk'"]
@@ -19,8 +19,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;===================================================================================================================================================
-;葛城宮　夢イベント　場合淑女度１４（20以上は手紙を出していたら有りえない数値）１イベントみたとき
-[if exp="(f.okeiko_month == 7 && f.okeiko_week == 2) && f.para_shujinkou_shukujodo > 20 && f.event_katuraginomiya[1]==1 && f.event_sijyou[0]==0"]
+;葛城宮　夢イベント　場合淑女度15（20以上は手紙を出していたら有りえない数値）１イベントみたとき(イベント1発生条件が淑女度15以上のため、あわせて14→15以上と調整しました(◆jsYiJcqRkk
+[if exp="(f.okeiko_month == 7 && f.okeiko_week == 2) && f.para_shujinkou_shukujodo >= 15 && f.event_katuraginomiya[1]==1 && f.event_sijyou[0]==0"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_6_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_6_1'"]
 	[eval exp="f.event_type='talk'"]
@@ -33,7 +33,7 @@
 ;===================================================================================================================================================
 ;2◆葛城宮イベント判定katuraginomiya_event_2.ks 別ファイルへ7/4町にて、葛城宮に会う。お手紙を拝見するたびに色々なことを考えておられて素晴らしい方だと思っていたという。その後葛城宮のモノローグ		
 ;even1をみている		
-[if exp="(f.okeiko_month == 7 && f.okeiko_week == 4) && f.para_shujinkou_shukujodo > 20 && f.event_katuraginomiya[2] == 0 && f.event_katuraginomiya[1] == 1 &&  f.katuraginomiya_au == 0"]		
+[if exp="(f.okeiko_month == 7 && f.okeiko_week == 4) && f.para_shujinkou_shukujodo >= 20 && f.event_katuraginomiya[2] == 0 && f.event_katuraginomiya[1] == 1 &&  f.katuraginomiya_au == 0"]		
 ;&& f.para_sijyou_koukando < 11 && f.para_kuroda_koukando < 11 && f.para_hujieda_koukando < 11 必要であれば追加してください			
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_event_2.ks'"]		
 	[eval exp="f.event_target='*replay_katuraginomiya_event_2'"]		
@@ -42,11 +42,18 @@
 	;テスト用		
 	[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + tf.koukando_eventup_katuraginomiya"]		
 	@jump storage="event.ks" target=*start		
+;葛城宮のみ進行中の場合、イベント条件を満たさなければbadEDへ
+[elsif exp="(f.okeiko_month == 7 && f.okeiko_week == 4) && f.katuraginomiya_only == 1"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_katuraginomiya_only_badED'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[20]=1"]
+	@jump storage="event.ks" target=*start
 [endif]		
 ;=======================================================================================
 ;3◆葛城宮イベント判定katuraginomiya_event_3.ks 皇后様のお印入りのお茶事の招待状が届く
-;even2をみている
-[if exp="(f.okeiko_month == 8 && f.okeiko_week == 2) && f.para_shujinkou_shukujodo > 20 && f.event_katuraginomiya[3] == 0 && f.event_katuraginomiya[2] == 1 && f.katuraginomiya_au == 0"]
+;even2をみている+淑女度25以上(◆jsYiJcqRkk調整
+[if exp="(f.okeiko_month == 8 && f.okeiko_week == 2) && f.para_shujinkou_shukujodo >= 25 && f.event_katuraginomiya[3] == 0 && f.event_katuraginomiya[2] == 1 && f.katuraginomiya_au == 0"]
 ;&& f.para_sijyou_koukando < 11 && f.para_kuroda_koukando < 11 && f.para_hujieda_koukando < 11 必要であれば追加してください	
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_event_3.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_event_3'"]
@@ -55,12 +62,19 @@
 	;テスト用
 	[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + tf.koukando_eventup_katuraginomiya"]
 	@jump storage="event.ks" target=*start
+;葛城宮のみ進行中の場合、イベント条件を満たさなければbadEDへ
+[elsif exp="(f.okeiko_month == 8 && f.okeiko_week == 2) && f.katuraginomiya_only == 1"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_katuraginomiya_only_badED'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[20]=1"]
+	@jump storage="event.ks" target=*start
 [endif]
 
 ;=======================================================================================
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
-;even3をみている
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_oaite_mitei == 1 && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.katuraginomiya_au == 0 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando && f.para_katuraginomiya_koukando > f.para_kuroda_koukando && f.para_katuraginomiya_koukando > f.para_hujieda_koukando)"]
+;event3をみている+他キャラクターより好感度が上かつ好感度30以上+淑女度30以上(◆jsYiJcqRkk調整
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando && f.para_katuraginomiya_koukando > f.para_kuroda_koukando && f.para_katuraginomiya_koukando > f.para_zaizen_koukando && f.para_katuraginomiya_koukando > f.para_hujieda_koukando) && f.para_katuraginomiya_koukando >= 30 && f.para_shujinkou_shukujodo >= 30"]
 ;&& f.para_shujinkou_shukujodo > 20  必要であれば追加してください		
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
@@ -71,7 +85,7 @@
 [endif]
 ;=======================================================================================
 ;5◆葛城宮イベント判定katuraginomiya_9_3.ks ルート決定後なので条件はすくなめ（9/3,かつ　au==1のとき）
-[if exp="(f.okeiko_month==9 && f.okeiko_week==3) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[5]==0"]
+[if exp="(f.okeiko_month==9 && f.okeiko_week==3) && f.katuraginomiya_au==1 && f.event_katuraginomiya[5]==0"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_3.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_3'"]
 	[eval exp="f.event_type='talk'"]

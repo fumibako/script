@@ -6,6 +6,7 @@
 
 [if exp="f.event_type=='talk'"]
 [freeimage layer = 26]
+
 @jump storage=&f.event_storage target=&f.event_target
 [endif]
 
@@ -498,6 +499,11 @@ $('.junbi_girl').remove();
 	[skipstop]
 [endif]
 *replay_common_5_1_b
+;共通イベント：プリロード処理
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [clearfix]
 [freeimage layer = 21]
 [freeimage layer = 22]
@@ -514,6 +520,7 @@ $('.junbi_girl').remove();
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様。まだどなたにもお返事を書かれていないようですが……」
+[プリロード画面消去]
 [autosave]
 [p]
 
@@ -656,6 +663,11 @@ $('.junbi_girl').remove();
 	[skipstop]
 [endif]
 *replay_common_5_4_b
+;共通イベント：プリロード処理
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -669,6 +681,7 @@ $('.junbi_girl').remove();
 [whosay name="磯野" color="dimgray"]
 「お嬢様。何度も申し上げるのは心苦しいのですが[r]
 [sp]お手紙のお返事がまだのようですね……」
+[プリロード画面消去]
 [autosave]
 [p]
 
@@ -707,6 +720,10 @@ $('.junbi_girl').remove();
 	[skipstop]
 [endif]
 *common_5_4_badED
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 ;[stopbgm]
 ;【BGM】雪解水（哀しげな曲
 ;[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
@@ -747,9 +764,13 @@ $('.junbi_girl').remove();
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様。お手紙のお返事はこれ以上お待ちできません……。[r]
-[sp]このたびは残念ですが、どなた様ともご破談になります」[p]
+[プリロード画面消去]
+[if exp="f.para_shujinkou_shukujodo >= 18"]
+@jump target=*common_5_4_katuraginomiya
+[endif]
 [主人公目パチ1回]
 [wait time=10]
+[sp]このたびは残念ですが、どなた様ともご破談になります」[p]
 
 「お返事を書かれなかったのは、何かお考えあってのことで[r]
 [sp]ございますか？」[p]
@@ -773,7 +794,7 @@ $('.junbi_girl').remove();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「……お父様には悪いことをしてしまったわ」[p]
+「……お父様や皆様には悪いことをしてしまったわ」[p]
 
 [whosay name="磯野" color="dimgray"]
 「文通には色々なことがつきものでございます。[r]
@@ -826,6 +847,163 @@ $('.junbi_girl').remove();
 ;回想記録終了 
 [endreplay] 
 
+;◆イベント5月4週葛城宮専念
+*common_5_4_katuraginomiya
+[sp]このたびは残念ですが、黒田様、四条様、財前様のお三方とは[r]
+[sp]ご破談になります」[p]
+
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「ごめんなさい磯野。　言いにくいことを言わせてしまって。[r]
+[sp]お三方には申し訳ないことをしてしまいました」[p]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+
+[whosay name="磯野" color="dimgray"]
+「お返事を書かれなかったのは、何かお考えあってのことでございますか？」[p]
+
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「……」[p]
+「淑女として私は未熟すぎます。お返事を書こうとしても、そのことが気がかりで[r]
+[sp]手をつけられませんでした」[p]
+
+「それでお稽古に集中していたのです」[p]
+
+[whosay name="磯野" color="dimgray"]
+「そうだったのですか。[r]
+[sp]では、お三方とはご破談になりますが、旦那様より御伝言がございます」[p]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+
+「『お稽古を続けるように。己を磨けば、新たな道が開けることもある』[r]
+[sp]　とのお言葉でございます」[p]
+
+[主人公目閉じ]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「お父様が、そう仰せでしたか……」[p]
+
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[主人公目を開く]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
+「ありがとう、磯野」[p]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+「お父様とお話してみるわ。そしてご破談となるお三方にもお手紙を書きます」[p]
+
+（お返事を書けなかったお詫びと別れについて、心を込めて書きましょう。[r]
+[sp]もし、どこかでお会いすることがあっても、笑顔でお話できるように）[p]
+[eval exp="f.katuraginomiya_only = 1"]
+@jump target=*event_owari
+
+;◆イベント共通ルート葛城宮のみ進行時「badED」
+*replay_common_katuraginomiya_only_badED
+*common_katuraginomiya_only_badED
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+;【背景】お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築]
+
+[主人公ポーズ通常]
+[wait time=10]
+[主人公通常]
+[wait time=10]
+[プリロード画面消去]
+
+[whosay name="磯野" color="dimgray"]
+「お嬢様。……このたび、葛城宮親王殿下よりご連絡がございました。[r]
+[sp]残念ながら、これ以上の文通は難しいとのことでございます」
+[p]
+
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[主人公目パチ1回]
+[wait time=10]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「……」[p]
+
+[whosay name="磯野" color="dimgray"]
+「お忙しい方でいらっしゃいますから[r]
+[sp]あまりお気落としなさいませんよう」[p]
+
+[主人公目パチ1回]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「……どうすればよかったのかしら」[p]
+
+[whosay name="磯野" color="dimgray"]
+「そうですね。殿下のお眼鏡にかなうためには、相応の淑女らしさが大切かと[r]
+[sp]思います。次に高貴な方との機会がございましたら、今以上にお稽古を[r]
+[sp]されてはいかがでしょうか」[p]
+
+[主人公目パチ1回]
+[wait time=10]
+
+「また、お手紙はいただくばかりではなく、もっとご自分からも頻繁に[r]
+[sp]出されると良いのではないでしょうか」[p]
+
+
+
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「ありがとう、磯野」[p]
+
+#
+[主人公退場]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+[chara_mod name="bg" storage="toumei.gif" time=500]
+[wait time=10]
+[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1000]
+[wait time=10]
+;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+
+;テキスト全画面
+[font color=white size=27]
+[fadeoutbgm time=3000]
+磯野の淹れてくれる温かいお茶を飲み[r]
+私は深呼吸をした。[r]
+[r]
+「次の機会」[r]
+と磯野は言ってくれた。[r]
+[r]
+次の機会に備えて、もっとお稽古をしよう。[r]
+良い文通ができますように……。
+[p]
+[wait time=500]
+
+;画面中央に
+[font color=white size=35]
+[r]
+[r]
+[r]
+[sp]　　　　　　　　終[p]
+[wait time=1000]
+[eval exp="sf.ED_katuraginomiya_only_gameover=1"]
+@jump target=*event_ED
+
+
+
 ;◆イベント8月4週「badED」
 *replay_common_8_4_badED
 ;◆既読スキップ開始
@@ -837,6 +1015,10 @@ $('.junbi_girl').remove();
 	[skipstop]
 [endif]
 *common_8_4_badED
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -875,7 +1057,9 @@ $('.junbi_girl').remove();
 [whosay name="磯野" color="dimgray"]
 「お嬢様。……このたび、最後までお手紙を下さっていた[r]
 [sp]お相手様よりご連絡がございました。[r]
-[sp]残念ながら、これ以上の文通は難しいとのことでございます」[p]
+[sp]残念ながら、これ以上の文通は難しいとのことでございます」
+[プリロード画面消去]
+[p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]

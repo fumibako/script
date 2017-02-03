@@ -17,8 +17,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆badED判定 5月4週終わった時点で返信を一度もしておらず、淑女度18未満の場合はbadED(テスト画面経由時は藤枝イベント2が発生していれば回避)
-[if exp="tf.test_gamen==true && ((f.okeiko_month==5 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[8]==0 && f.para_shujinkou_shukujodo<18 && f.event_hujieda[2]!=1)"]
+;◆badED判定 5月4週終わった時点で返信を一度もしていない場合はbadED(淑女度18以上の場合はイベント中に回避。また、テスト画面経由時は藤枝イベント2が発生していれば回避)
+[if exp="tf.test_gamen==true && ((f.okeiko_month==5 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[8]==0 && f.event_hujieda[2]!=1)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_5_4_badED'"]
 	[eval exp="f.event_type='talk'"]
@@ -26,8 +26,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆badED判定 5月4週終わった時点で返信を一度もしておらず、淑女度18未満の場合はbadED(テスト画面経由時以外は藤枝イベント2が発生していても回避不能)
-[if exp="(tf.test_gamen!=true && (f.okeiko_month==5 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[8]==0 && f.para_shujinkou_shukujodo<18)"]
+;◆badED判定 5月4週終わった時点で返信を一度もしていない場合はbadED(淑女度18以上の場合はイベント中に回避。テスト画面経由時以外は藤枝イベント2が発生していても回避不能)
+[if exp="(tf.test_gamen!=true && (f.okeiko_month==5 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[8]==0)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_5_4_badED'"]
 	[eval exp="f.event_type='talk'"]
@@ -35,12 +35,19 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆badED判定 8月4週終わった時点で全ての攻略対象の好感度が一定値未満だとbadED
-[if exp="((f.okeiko_month==8 && f.okeiko_week==4) && f.event_common[9]==0 && f.para_kuroda_koukando < 30 && f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30 && f.para_katuraginomiya_koukando < 30 && f.para_hujieda_koukando < 30)"]
+;◆badED判定 8月4週終わった時点で黒田、四条の好感度が30未満、財前好感度30未満又は淑女度20未満、葛城宮ルート進行条件を満たさないとbadED
+[if exp="((f.okeiko_month==8 && f.okeiko_week==4) && f.event_common[9]==0 && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30 && (f.para_katuraginomiya_koukando < 30 || f.para_shujinkou_shukujodo < 30 && f.event_katuraginomiya[3] != 1 ) && f.katuraginomiya_only != 1)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_8_4_badED'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_common[9]=1"]
+	@jump storage="event.ks" target=*start
+;葛城宮とだけ進行している場合は葛城宮ルート進行条件を満たさないとbadED
+[elsif exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_katuraginomiya[20] == 0 && f.katuraginomiya_only == 1"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_katuraginomiya_only_badED'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[20]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
 

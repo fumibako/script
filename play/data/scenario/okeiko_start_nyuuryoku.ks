@@ -45,8 +45,11 @@
 [ptext text="藤枝：お返事イベント(0=未見、1=見た)" layer=29 size=15 x=700 y=490 color=darkslateblue bold=bold]
 [edit left=700 top=510 width=200 length=200 maxchars=3 name="f.event_hujieda5" height=20]
 
-[ptext text="四条：好感度（元の設定値=10)" layer=29 size=15 x=700 y=540 color=darkslateblue bold=bold]
+[ptext text="四条：好感度（元の設定値=5)" layer=29 size=15 x=700 y=540 color=darkslateblue bold=bold]
 [edit left=700 top=560 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
+
+[ptext text="黒田：好感度（元の設定値=3)" layer=29 size=15 x=700 y=590 color=darkslateblue bold=bold]
+[edit left=700 top=610 width=200 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
 
 [ptext text="熟練度：茶道" layer=29 size=15 x=10 y=190 color=darkslateblue bold=bold]
 [edit left=10 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
@@ -93,11 +96,14 @@
 [ptext text="葛城宮イベント9/1前日最後までみた=1 それ以外=0" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
 [edit left=345 top=410 width=200 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
 
-[ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
-[edit left=345 top=460 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
+[ptext text="葛城宮のみと文通=1 それ以外=0" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
+[edit left=345 top=460 width=200 length=200 maxchars=3 name="f.katuraginomiya_only" height=20]
 
-[ptext text="イベント全般(1表示、0非表示)" layer=29 size=15 x=345 y=490 color=darkslateblue bold=bold]
-[edit left=345 top=510 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
+[ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=345 y=490 color=darkslateblue bold=bold]
+[edit left=345 top=510 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
+
+[ptext text="イベント全般(1表示、0非表示)" layer=29 size=15 x=345 y=540 color=darkslateblue bold=bold]
+[edit left=345 top=560 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
 
 [iscript]
 //入力済デフォルト値の設定
@@ -130,10 +136,13 @@ $("input[name='f.event_hujieda5']").val("0");
 
 $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
-$("input[name='f.para_sijyou_koukando']").val("10");
+$("input[name='f.para_sijyou_koukando']").val("5");
+$("input[name='f.para_kuroda_koukando']").val("3");
+
 $("input[name='f.event_katuraginomiya3']").val("0"); //デフォルト値0にしています。ご自由に設定してください
 $("input[name='f.event_katuraginomiya2']").val("0");
 $("input[name='f.event_katuraginomiya1']").val("0");
+$("input[name='f.katuraginomiya_only']").val("0");
 
 $("input[name='tf.advice_event_hyouji']").val("0");
 $("input[name='tf.event_hyouji']").val("1");
@@ -161,6 +170,7 @@ tf.test_hujieda_fumi_hensin_speed = parseInt($("input[name='tf.test_hujieda_fumi
 f.para_hujieda_koukando = parseInt($("input[name='f.para_hujieda_koukando']").val());
 f.hujieda_au = parseInt($("input[name='f.hujieda_au']").val());
 f.para_sijyou_koukando = parseInt($("input[name='f.para_sijyou_koukando']").val());
+f.para_kuroda_koukando = parseInt($("input[name='f.para_kuroda_koukando']").val());
 
 f.para_shujinkou_j_sadou = parseInt($("input[name='f.para_shujinkou_j_sadou']").val());
 f.para_shujinkou_j_kadou = parseInt($("input[name='f.para_shujinkou_j_kadou']").val());
@@ -182,6 +192,7 @@ f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
 f.event_katuraginomiya[1] = parseInt($("input[name='f.event_katuraginomiya1']").val());
 f.event_katuraginomiya[2] = parseInt($("input[name='f.event_katuraginomiya2']").val());
 f.event_katuraginomiya[3] = parseInt($("input[name='f.event_katuraginomiya3']").val());
+f.katuraginomiya_only = parseInt($("input[name='f.katuraginomiya_only']").val());
 
 tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
 tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());

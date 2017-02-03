@@ -1194,6 +1194,8 @@
 
 
 *fumibako_oaite_hyouji
+[freeimage layer = 26]
+[layopt layer=26 visible=true]
 [image layer=26 x=1 y=1 storage="bg/bg_fumibako.jpg"]
 
 [iscript]
@@ -2120,6 +2122,8 @@ f.fumi_katuraginomiya_midoku_y=[emb exp="f.fumi_katuraginomiya_midoku_y"]
 [s]
 
 *info_hujieda_hyouji
+[freeimage layer = 26]
+
 [image layer=26 x=1 y=1 storage="bg/bg_info_hujieda.jpg"]
 	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
 	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
@@ -2159,6 +2163,7 @@ f.fumi_katuraginomiya_midoku_y=[emb exp="f.fumi_katuraginomiya_midoku_y"]
 [s]
 
 *fumi_hyouji
+[freeimage layer = 27]
 [if exp="tf.fumi_hyouji_ichi == 'left'"]
 [eval exp="tf.fumi_hyouji_midoku_x = 35"]
 [eval exp="tf.fumi_hyouji_hensin_x = 420"]
