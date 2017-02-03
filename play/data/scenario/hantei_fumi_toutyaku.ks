@@ -501,26 +501,27 @@ f.okeiko_month_kansuuji="三月 ";
 ;=======================================================================================
 ;◆季節の便り◆
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度(暫定)13以上(イベント1見終わった段階で好感度12：（内訳）初期値10+イベント1の手紙による加算2)より1でも上がっていればok
-[if exp="f.okeiko_month == 6 && f.para_katuraginomiya_koukando > 12 && f.fumi_toutyaku_katuraginomiya[22] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度条件は除きます
+;(葛城宮は最初の手紙がイベント中に届き返信済となるため、好感度条件があると「自分から送る」ことに気付かないプレイヤーさんが詰まってしまう可能性が高めであるため)
+[if exp="f.okeiko_month == 6 && f.fumi_toutyaku_katuraginomiya[22] == 0"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_22
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『 スイカ 』7月 好感度(暫定)15以上
-[if exp="f.okeiko_month == 7 && f.para_katuraginomiya_koukando > 14 && f.fumi_toutyaku_katuraginomiya[23] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『 スイカ 』7月 好感度条件は除きます
+[if exp="f.okeiko_month == 7 && f.fumi_toutyaku_katuraginomiya[23] == 0"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_23
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『夏は夜』8月 好感度(暫定)20以上
-[if exp="f.okeiko_month == 8 && f.para_katuraginomiya_koukando > 19 && f.fumi_toutyaku_katuraginomiya[24] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『夏は夜』8月 好感度(暫定)15以上(2/4調整。初期値を下げた事による)
+[if exp="f.okeiko_month == 8 && f.para_katuraginomiya_koukando >= 15 && f.fumi_toutyaku_katuraginomiya[24] == 0"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_24
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『季節は巡る』9月 好感度(暫定)30以上
-[if exp="f.okeiko_month == 8 && f.para_katuraginomiya_koukando > 29 && f.fumi_toutyaku_katuraginomiya[25] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『季節は巡る』9月 好感度(暫定)25以上(2/4調整。初期値を下げた事による)
+[if exp="f.okeiko_month == 8 && f.para_katuraginomiya_koukando >= 25 && f.fumi_toutyaku_katuraginomiya[25] == 0"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_25
 [endif]

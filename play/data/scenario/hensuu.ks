@@ -232,6 +232,7 @@ f.fumi_toutyaku_katuraginomiya = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 //↓葛城宮に手紙を出せるようになったら1。それ以外は0
 f.katuraginomiya_fumi_start = 0;
 f.katuraginomiya_au = 0; //個別ルートに入ったら1を代入
+f.katuraginomiya_only = 0; //葛城宮のみ文通状態となったら1を代入
 //↓葛城宮手紙タイトル配列をセット
 f.fumi_list_katuraginomiya_title = [];
 f.katuraginomiya_koukando_bad = 50; //(調整中)好感度がこの数値未満でbadに。しかし選択肢分岐badでしたね！失礼しました。万が一使ってくださった場合に備えて残しています(藤枝のbad用変数は削除しました)

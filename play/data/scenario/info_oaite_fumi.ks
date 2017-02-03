@@ -1213,7 +1213,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [elsif exp="f.sijyou_au==1"]
 	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=400 y=585 color=white]
 @jump target=fumibako_oaite_hyouji_owari
-[elsif exp="f.katuraginomiya_au == 1"]
+[elsif exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
 	[glink storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=400 y=585 color=white]
 @jump target=fumibako_oaite_hyouji_owari
 ;↓まだ個別ルートに入っていない間のみ複数のお相手を表示
@@ -1221,13 +1221,13 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[glink storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=75 y=585 color=white]
 	[glink storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=275 y=585 color=white]
 	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=475 y=585 color=white]
-;葛城宮に手紙を出せるようになっていたらボタン表示
 [endif]
 [if exp="f.hujieda_fumi_start==1"]
 ;藤枝と文通可能なのは個別ルートに入った後、9月2週～10月4週と2月3週以降。11月1週(発覚)～2月2週は不可
 	[glink storage="fumi_henji.ks" target=fumibako_hujieda text="藤枝　肇" size=16 width="120" x=400 y=585 color=white]
 @jump target=fumibako_oaite_hyouji_owari
 [endif]
+;葛城宮に手紙を出せるようになっていたらボタン表示
 [if exp="f.katuraginomiya_fumi_start == 1 && f.katuraginomiya_au == 0"]
 	[glink storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=675 y=585 color=white]
 [endif]

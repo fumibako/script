@@ -6,7 +6,9 @@
 *katuraginomiya_event_hantei
 ;↓以下にイベント判定を追記
 ;テスト用 他攻略ｷｬﾗと比較できるようにイベントを見たら上がるようにしてありますが０入力等で一括調整してください
-[eval exp="tf.koukando_eventup_katuraginomiya=5"]
+;5→0に調整しました。調整しやすく作ってくださってありがとうございます(◆jsYiJcqRkk
+;初期値5+イベント中の手紙2通x2+(お返事を溜めていなければ届く)季節の便り6～8月分=8月4週でこちらから手紙を出さなければ好感度15前後予定
+[eval exp="tf.koukando_eventup_katuraginomiya = 0"]
 ;===================================================================================================================================================
 ;1◆葛城宮イベント判定 katuraginomiya_event_1.ks 他好感度が一定以下_淑女度15以上 町で葛城宮に会い胸が高鳴る→手紙がくる 梅雨の晴れ 20以下　藤枝はイベントが被るので10以下
 [if exp="(f.okeiko_month == 6 && f.okeiko_week == 3) && f.para_shujinkou_shukujodo >= 15 && f.event_katuraginomiya[1]==0 && f.katuraginomiya_au == 0 && f.para_sijyou_koukando < 21 && f.para_kuroda_koukando < 21 && f.para_zaizen_koukando < 21 && f.para_hujieda_koukando < 11"]
