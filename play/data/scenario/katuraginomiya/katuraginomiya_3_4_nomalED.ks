@@ -124,13 +124,22 @@
 
 ;抱き上げるCGここからで
 ;===========================ＣＧ表示==================================
+;◆goodED条件を満たす場合、goodのCGを表示
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
+[暗転２ storage="bg/katuraginomiya_3_4_goodED.jpg"]
+[else]
 [暗転２ storage="bg/katuraginomiya_3_4_nomalED.jpg"]
-;goodED時[暗転２ storage="bg/katuraginomiya_3_4_goodED.jpg"]
+[endif]
 [葛城宮退場]
 ;退場しないとＣＧ見れない
 [主人公退場]
 ;【背景】主人公と葛城宮抱擁 仮
+;◆goodED条件を満たす場合、goodのCGを表示
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED.jpg"]
+[else]
 [chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED.jpg"]
+[endif]
 ;[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
 [暗転２終了]
 ;=============================================================
