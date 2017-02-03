@@ -36,7 +36,7 @@
 [endif]
 
 ;◆badED判定 8月4週終わった時点で黒田、四条の好感度が30未満、財前好感度30未満又は淑女度20未満、葛城宮ルート進行条件を満たさないとbadED
-[if exp="((f.okeiko_month==8 && f.okeiko_week==4) && f.event_common[9]==0 && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30 && (f.para_katuraginomiya_koukando < 30 || f.para_shujinkou_shukujodo < 30 && f.event_katuraginomiya[3] != 1 ) && f.katuraginomiya_only != 1)"]
+[if exp="((f.okeiko_month==8 && f.okeiko_week==4) && f.event_common[9]==0 && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30 && (f.para_katuraginomiya_koukando < 20 || f.para_shujinkou_shukujodo < 30 || f.event_katuraginomiya[3] != 1 ) && f.katuraginomiya_only != 1)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_8_4_badED'"]
 	[eval exp="f.event_type='talk'"]

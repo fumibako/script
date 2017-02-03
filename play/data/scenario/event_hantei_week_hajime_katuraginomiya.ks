@@ -73,8 +73,8 @@
 
 ;=======================================================================================
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
-;event3をみている+他キャラクターより好感度が上かつ好感度30以上+淑女度30以上(◆jsYiJcqRkk調整
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando && f.para_katuraginomiya_koukando > f.para_kuroda_koukando && f.para_katuraginomiya_koukando > f.para_zaizen_koukando && f.para_katuraginomiya_koukando > f.para_hujieda_koukando) && f.para_katuraginomiya_koukando >= 30 && f.para_shujinkou_shukujodo >= 30"]
+;event3をみている+他キャラクターより好感度が上かつ好感度20以上+淑女度30以上(◆jsYiJcqRkk調整
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando && f.para_katuraginomiya_koukando > f.para_kuroda_koukando && f.para_katuraginomiya_koukando > f.para_zaizen_koukando && f.para_katuraginomiya_koukando > f.para_hujieda_koukando) && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30"]
 ;&& f.para_shujinkou_shukujodo > 20  必要であれば追加してください		
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
