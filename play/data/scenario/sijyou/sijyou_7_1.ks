@@ -51,7 +51,11 @@
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 [主人公目通常]
-顔の見えない彼の人を想い、空を見上げた。[p]
+[if exp="f.katuraginomiya_only == 1"]
+秘めた想いを胸に夜空を見上げた。[p]
+[else]
+顔の見えない彼の人を想い、夜空を見上げた。[p]
+[endif]
 
 [image name=star layer=1 top=10 left=400 storage="bg/B4nFWraU42/star.jpg" time=10]
 [anim name="star" left=-300 top=600 opacity=0]
