@@ -42,7 +42,7 @@
 *fumi_toutyaku_fumiya
 [if exp="tf.okeiko_gamen==true"]
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「親王様との婚約について」</br>文矢";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「親王様との婚約について」文矢";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
 f.fumi_list_all_target.push("*fumi_fumiya");
