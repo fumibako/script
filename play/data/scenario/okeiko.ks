@@ -26,6 +26,10 @@
 @jump storage="event_hantei_week_hajime.ks" target=*start
 *event_hantei_week_hajime_owari
 
+;◆手紙到着判定
+@jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_all
+*fumi_toutyaku_hantei_owari
+
 *draw_button_system
 ;◆お稽古パート画面表示処理へ飛んで戻ってくる
 ;↓どこから飛んだか、戻る際の道標
@@ -347,10 +351,6 @@ f.hujieda_fumi_toutyakumachi_sports = f.hujieda_fumi_toutyakumachi_sports - 1;
 }
 
 [endscript]
-
-
-;◆手紙到着判定
-@jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_all
 
 *qk_end
 

@@ -242,7 +242,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[2]=1;
 f.zaizen_fumi_toutyakumachi_shumi=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_3
 [iscript]	
@@ -260,7 +260,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[3]=1;
 f.zaizen_fumi_toutyakumachi_sigoto=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_4
 [iscript]	
@@ -278,7 +278,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[4]=1;
 f.zaizen_fumi_toutyakumachi_yuujin=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_5
 [iscript]
@@ -296,7 +296,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[5]=1;
 f.zaizen_fumi_toutyakumachi_kazoku=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_6
 [iscript]	
@@ -314,7 +314,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[6]=1;
 f.zaizen_fumi_toutyakumachi_shourai=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_7
 [iscript]	
@@ -332,7 +332,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[7]=1;
 f.zaizen_fumi_toutyakumachi_sintya=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_8
 [iscript]	
@@ -350,7 +350,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[8]=1;
 f.zaizen_fumi_toutyakumachi_satuki=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_9
 [iscript]	
@@ -368,7 +368,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[9]=1;
 f.zaizen_fumi_toutyakumachi_dokusho=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_10
 [iscript]	
@@ -386,7 +386,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[10]=1;
 f.zaizen_fumi_toutyakumachi_sports=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_11
 [iscript]	
@@ -404,7 +404,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[11]=1;
 f.zaizen_fumi_toutyakumachi_shokuji=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_12
 [iscript]	
@@ -422,7 +422,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[12]=1;
 f.zaizen_fumi_toutyakumachi_kangeki=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_13
 [iscript]	
@@ -440,7 +440,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[13]=1;
 f.zaizen_fumi_toutyakumachi_neko=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_14
 [iscript]	
@@ -458,7 +458,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[14]=1;
 f.zaizen_fumi_toutyakumachi_kiki=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_15
 [iscript]	
@@ -476,7 +476,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[15]=1;
 f.zaizen_fumi_toutyakumachi_midori=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_16
 [iscript]	
@@ -494,7 +494,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[16]=1;
 f.zaizen_fumi_toutyakumachi_midori=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_17
 [iscript]	
@@ -512,7 +512,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[17]=1;
 f.zaizen_fumi_toutyakumachi_photo=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_18
 [iscript]	
@@ -530,7 +530,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[18]=1;
 f.zaizen_fumi_toutyakumachi_hajimari=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_19
 [iscript]	
@@ -548,7 +548,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[19]=1;
 f.zaizen_fumi_toutyakumachi_music=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_20
 [iscript]	
@@ -566,7 +566,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[20]=1;
 f.zaizen_fumi_toutyakumachi_music=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_21
 [iscript]	
@@ -584,7 +584,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[21]=1;
 f.zaizen_fumi_toutyakumachi_michi=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_22
 [iscript]	
@@ -602,7 +602,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[22]=1;
 f.zaizen_fumi_toutyakumachi_michi=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_23
 [iscript]	
@@ -620,7 +620,7 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[23]=1;
 f.zaizen_fumi_toutyakumachi_henka=-1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 ;=============================================
 ;◆季節の便り◆
@@ -640,7 +640,7 @@ f.fumi_list_zaizen_target.push("*5_2");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[24]=1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_25
 [iscript]	
@@ -657,7 +657,7 @@ f.fumi_list_zaizen_target.push("*6");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[25]=1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_26
 [iscript]	
@@ -674,7 +674,7 @@ f.fumi_list_zaizen_target.push("*7");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[26]=1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_27
 [iscript]	
@@ -691,7 +691,7 @@ f.fumi_list_zaizen_target.push("*8");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[27]=1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_28
 [iscript]	
@@ -708,7 +708,7 @@ f.fumi_list_zaizen_target.push("*9");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[28]=1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 *fumi_toutyaku_zaizen_29
 [iscript]	
@@ -725,7 +725,7 @@ f.fumi_list_zaizen_target.push("*10");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[29]=1;
 [endscript]
-@jump storage="01_sijyou_fumi_toutyaku_hantei.ks" target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 ;=============================================
 ;◆イベント中に届く手紙◆ イベントスクリプト中に貼り付け予定分です

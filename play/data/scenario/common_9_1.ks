@@ -21,7 +21,7 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -41,6 +41,7 @@
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
 [プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [s]
 
 
@@ -264,24 +265,28 @@ tf.common_9_1_storage = [];
 tf.common_9_1_target = [];
 tf.common_9_1_oaite = [];
 tf.common_9_1_oaite_full = [];
+tf.common_9_1_oaite_exp = [];
 
 if (f.para_kuroda_koukando >= 30) {
   tf.common_9_1_storage.push("kuroda_9_1.ks");
   tf.common_9_1_target.push("*from_common_9_1");
   tf.common_9_1_oaite.push("黒田様");
   tf.common_9_1_oaite_full.push("黒田 将貴");
+  tf.common_9_1_oaite_exp.push("f.kuroda_au = 1"); //葛城宮以外はボタンを押した段階で個別ルート決定するようにしてみます(シナリオ側の設定漏れ防止とテストし易さ目的)
 }
 if (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) {
   tf.common_9_1_storage.push("zaizen/zaizen_9_1.ks");
   tf.common_9_1_target.push("*replay_zaizenzaizen_9_1");
   tf.common_9_1_oaite.push("財前様");
   tf.common_9_1_oaite_full.push("財前 美彬");
+  tf.common_9_1_oaite_exp.push("f.zaizen_au = 1");
 }
 if (f.para_sijyou_koukando >= 30) {
   tf.common_9_1_storage.push("sijyou/sijyou_9_1.ks");
   tf.common_9_1_target.push("*replay_sijyou_9_1");
   tf.common_9_1_oaite.push("四条様");
   tf.common_9_1_oaite_full.push("四条 華織");
+  tf.common_9_1_oaite_exp.push("f.sijyou_au = 1");
 }
 tf.common_9_1_ninzuu = 0;
 tf.common_9_1_ninzuu = tf.common_9_1_oaite.length;
@@ -323,20 +328,20 @@ tf.common_9_1_ninzuu = tf.common_9_1_oaite.length;
 ;【分岐】
 [eval exp="tf.common_9_1_y_left = 100"]
 [eval exp="tf.common_9_1_y_right = 100"]
-[glink storage=&tf.common_9_1_storage[0] target=&tf.common_9_1_target[0] text=&tf.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
+[glink storage=&tf.common_9_1_storage[0] target=&tf.common_9_1_target[0] text=&tf.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white exp=&tf.common_9_1_oaite_exp[0]]
 [if exp="tf.common_9_1_ninzuu >= 2"]
-[glink storage=&tf.common_9_1_storage[1] target=&tf.common_9_1_target[1] text=&tf.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[glink storage=&tf.common_9_1_storage[1] target=&tf.common_9_1_target[1] text=&tf.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white exp=&tf.common_9_1_oaite_exp[1]]
 [endif]
 [if exp="tf.common_9_1_ninzuu >= 3"]
 [eval exp="tf.common_9_1_y_left = tf.common_9_1_y_left + 100"]
-[glink storage=&tf.common_9_1_storage[2] target=&tf.common_9_1_target[2] text=&tf.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
+[glink storage=&tf.common_9_1_storage[2] target=&tf.common_9_1_target[2] text=&tf.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white exp=&tf.common_9_1_oaite_exp[2]]
 [endif]
 ;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
 [eval exp="tf.common_9_1_y_right = tf.common_9_1_y_right + 100"]
 [if exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu == 1"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="会わない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[glink storage="hujieda/hujieda_9_1.ks" target=*scene1 text="お会いしない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
 [elsif exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu >= 2"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[glink storage="hujieda/hujieda_9_1.ks" target=*scene1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
 [endif]
 [eval exp="tf.common_9_1_y_left = tf.common_9_1_y_left + 100"]
 [glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]

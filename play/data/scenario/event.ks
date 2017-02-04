@@ -164,7 +164,7 @@ $('.junbi_girl').remove();
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [wait time=10]
 
-@jump storage="okeiko.ks" target=*draw_button_system
+@jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
 
 [return]
 
@@ -511,7 +511,7 @@ $('.junbi_girl').remove();
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -521,6 +521,7 @@ $('.junbi_girl').remove();
 [whosay name="磯野" color="dimgray"]
 「お嬢様。まだどなたにもお返事を書かれていないようですが……」
 [プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [autosave]
 [p]
 
@@ -671,7 +672,7 @@ $('.junbi_girl').remove();
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -682,6 +683,7 @@ $('.junbi_girl').remove();
 「お嬢様。何度も申し上げるのは心苦しいのですが[r]
 [sp]お手紙のお返事がまだのようですね……」
 [プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [autosave]
 [p]
 
@@ -730,32 +732,7 @@ $('.junbi_girl').remove();
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
-
-;セーブ等ボタン配置
-[if exp="sf.FButton=='ON'"]
-[else]
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-[endif]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+[イベントシーン構築ボタン無し版]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -765,6 +742,7 @@ $('.junbi_girl').remove();
 [whosay name="磯野" color="dimgray"]
 「お嬢様。お手紙のお返事はこれ以上お待ちできません……。[r]
 [プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [if exp="f.para_shujinkou_shukujodo >= 18"]
 @jump target=*common_5_4_katuraginomiya
 [endif]
@@ -914,13 +892,14 @@ $('.junbi_girl').remove();
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様。……このたび、葛城宮親王殿下よりご連絡がございました。[r]
@@ -1022,32 +1001,7 @@ $('.junbi_girl').remove();
 ;【背景】お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
-
-;セーブ等ボタン配置
-[if exp="sf.FButton=='ON'"]
-[else]
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-[endif]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+[イベントシーン構築ボタン無し版]
 
 [主人公ポーズ通常]
 [wait time=10]
@@ -1059,6 +1013,7 @@ $('.junbi_girl').remove();
 [sp]お相手様よりご連絡がございました。[r]
 [sp]残念ながら、これ以上の文通は難しいとのことでございます」
 [プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]

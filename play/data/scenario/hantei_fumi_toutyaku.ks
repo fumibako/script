@@ -41,11 +41,27 @@ f.okeiko_month_kansuuji="三月 ";
 }
 [endscript]
 
+[if exp="f.zaizen_au == 1"]
+@jump target=*fumi_toutyaku_hantei_zaizen
+[endif]
+[if exp="f.sijyou_au == 1"]
+@jump target=*fumi_toutyaku_hantei_sijyou
+[endif]
+[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
+@jump target=*fumi_toutyaku_hantei_katuraginomiya
+[endif]
+[if exp="f.hujieda_au == 1 && f.hujieda_fumi_start != 1"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
+[if exp="f.hujieda_fumi_start == 1"]
+@jump target=*fumi_toutyaku_hantei_hujieda
+[endif]
+
+
 *fumi_toutyaku_hantei_kuroda
 ;=============================================
 ;◇◇黒田手紙到着判定◇◇
 ;=============================================
-[eval exp="f.test='手紙到着可能性なし'"]
 [if exp="f.kuroda_fumi_henjimachi <= parseInt([sf.kuroda['fumi_henjimachi_ok_number']])"]
 	[eval exp="f.kuroda_fumi_toutyakumachi_week=f.kuroda_fumi_toutyakumachi_week+1"]
 	[eval exp="f.test='手紙到着可能性あり'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
@@ -92,7 +108,7 @@ f.okeiko_month_kansuuji="三月 ";
 			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_6
 
 ;◆7【いよいよですね】9月2週、黒田と会うことが決まった場合かつ好感度が一定以上で届く
-		[elsif exp="(f.okeiko_month==9 && f.okeiko_week==2)  && f.para_kuroda_koukando > 40 && f.fumi_toutyaku_kuroda[7]==0 && f.kuroda_au==1"]
+		[elsif exp="(f.okeiko_month==9 && f.okeiko_week==2)  && f.para_kuroda_koukando > 40 && f.fumi_toutyaku_kuroda[7]==0 && f.kuroda_au == 1"]
 			[eval exp="f.test='手紙到着「蛍の季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
 			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
 			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
@@ -100,7 +116,7 @@ f.okeiko_month_kansuuji="三月 ";
 			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_7
 			
 ;◆8【竜胆】10月1～2週に好感度が一定以上で届く
-		[elsif exp="(f.okeiko_month==10 && (f.okeiko_week==1 || f.okeiko_week==2)) && f.para_kuroda_koukando > 50 && f.fumi_toutyaku_kuroda[8]==0"]
+		[elsif exp="(f.okeiko_month==10 && (f.okeiko_week==1 || f.okeiko_week==2)) && f.para_kuroda_koukando > 50 && f.fumi_toutyaku_kuroda[8]==0 && f.kuroda_au == 1"]
 			[eval exp="f.test='手紙到着「竜胆」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
 			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
 			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
@@ -157,11 +173,25 @@ f.okeiko_month_kansuuji="三月 ";
 ;		@jump storage="fumi_toutyaku_shori_list.ks" target=&f.target_fumi_toutyaku
 	[endif]
 [endif]
+;個別ルート時は各キャラ到着判定終了
+[if exp="f.kuroda_au == 1"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
 
 ;=============================================
 ;◇◇財前手紙到着判定◇◇
 ;=============================================
 *fumi_toutyaku_hantei_zaizen
+[if exp="f.sijyou_au == 1"]
+@jump target=*fumi_toutyaku_hantei_sijyou
+[endif]
+[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
+@jump target=*fumi_toutyaku_hantei_katuraginomiya
+[endif]
+[if exp="f.hujieda_au == 1 && f.hujieda_fumi_start == 1"]
+@jump target=*fumi_toutyaku_hantei_hujieda
+[endif]
+
 [if exp="f.zaizen_fumi_henjimachi <= parseInt([sf.zaizen['fumi_henjimachi_ok_number']])"]
 	[eval exp = "f.zaizen_fumi_toutyakumachi_week = f.zaizen_fumi_toutyakumachi_week + 1"]
 [endif]
@@ -334,13 +364,13 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『彼岸花』9月 好感度(暫定)35以上
-[if exp="f.okeiko_month == 9 && f.para_zaizen_koukando > 34 && f.fumi_toutyaku_zaizen[28]==0"]
+[if exp="f.okeiko_month == 9 && f.para_zaizen_koukando > 34 && f.fumi_toutyaku_zaizen[28]==0 && f.zaizen_au == 1"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_28
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『菊花展』10月 好感度(暫定)45以上
-[if exp="f.okeiko_month == 10 && f.para_zaizen_koukando > 44 && f.fumi_toutyaku_zaizen[29]==0"]
+[if exp="f.okeiko_month == 10 && f.para_zaizen_koukando > 44 && f.fumi_toutyaku_zaizen[29]==0 && f.zaizen_au == 1"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_29
 [endif]
@@ -356,19 +386,31 @@ f.okeiko_month_kansuuji="三月 ";
 		;[eval exp="f.zaizen_nextfumi_common=f.zaizen_nextfumi_common+1"]
 		;@jump storage="fumi_toutyaku_shori_list.ks" target=&f.target_fumi_toutyaku
 *fumi_toutyaku_hantei_zaizen_owari
+;個別ルート時は各キャラ到着判定終了
+[if exp="f.zaizen_au == 1"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
 
+*fumi_toutyaku_hantei_sijyou
 ;=============================================
 ;◇◇四条手紙到着判定◇◇
 ;=============================================
 ;01_sijyou_fumi_toutyaku_hantei.ks上で判定した後、*fumi_toutyaku_hantei_katuraginomiyaに戻ります
 @jump storage=01_sijyou_fumi_toutyaku_hantei.ks target=*fumi_toutyaku_hantei_sijyou
 
+*fumi_toutyaku_hantei_katuraginomiya
 ;=============================================
 ;◇◇葛城宮手紙到着判定◇◇
 ;=============================================
-*fumi_toutyaku_hantei_katuraginomiya
+;個別ルート時は各キャラ到着判定終了
+[if exp="f.sijyou_au == 1"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
+[if exp="f.hujieda_au == 1 && f.hujieda_fumi_start == 1"]
+@jump target=*fumi_toutyaku_hantei_hujieda
+[endif]
 ;↓葛城宮との手紙開始していなければ藤枝手紙判定へ飛ぶ
-[if exp="f.katuraginomiya_fumi_start==0"]
+[if exp="f.katuraginomiya_fumi_start == 0"]
 @jump target=*fumi_toutyaku_hantei_hujieda
 [endif]
 
@@ -501,15 +543,15 @@ f.okeiko_month_kansuuji="三月 ";
 ;=======================================================================================
 ;◆季節の便り◆
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度条件は除きます
+;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度条件は除くかわりに「葛城宮イベント1を見ている」を条件に追加
 ;(葛城宮は最初の手紙がイベント中に届き返信済となるため、好感度条件があると「自分から送る」ことに気付かないプレイヤーさんが詰まってしまう可能性が高めであるため)
-[if exp="f.okeiko_month == 6 && f.fumi_toutyaku_katuraginomiya[22] == 0"]
+[if exp="f.okeiko_month == 6 && f.event_katuraginomiya[1] == 1 && f.fumi_toutyaku_katuraginomiya[22] == 0"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_22
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『 スイカ 』7月 好感度条件は除きます
-[if exp="f.okeiko_month == 7 && f.fumi_toutyaku_katuraginomiya[23] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『 スイカ 』7月 好感度条件は除くかわりに「葛城宮イベント1を見ている」を条件に追加
+[if exp="f.okeiko_month == 7 && f.event_katuraginomiya[1] == 1 && f.fumi_toutyaku_katuraginomiya[23] == 0"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_23
 [endif]
@@ -521,7 +563,7 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『季節は巡る』9月 好感度(暫定)25以上(2/4調整。初期値を下げた事による)
-[if exp="f.okeiko_month == 8 && f.para_katuraginomiya_koukando >= 25 && f.fumi_toutyaku_katuraginomiya[25] == 0"]
+[if exp="f.okeiko_month == 8 && f.para_katuraginomiya_koukando >= 25 && f.fumi_toutyaku_katuraginomiya[25] == 0 && f.katuraginomiya_au == 1"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_25
 [endif]
@@ -553,13 +595,17 @@ f.okeiko_month_kansuuji="三月 ";
 		;[eval exp="f.katuraginomiya_nextfumi_common=f.katuraginomiya_nextfumi_common+1"]
 		;@jump storage="fumi_toutyaku_shori_list.ks" target=&f.target_fumi_toutyaku
 *fumi_toutyaku_hantei_katuraginomiya_owari
+;個別ルート時は各キャラ到着判定終了
+[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
 
 ;=============================================
 ;◇◇藤枝手紙到着判定◇◇
 ;=============================================
 *fumi_toutyaku_hantei_hujieda
 ;↓藤枝との手紙開始していなければ手紙判定終了
-[if exp="f.hujieda_fumi_start==0"]
+[if exp="f.hujieda_fumi_start == 0"]
 @jump target=*fumi_toutyaku_hantei_tokiko
 [endif]
 
@@ -665,13 +711,13 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
-;◆↓手紙一通分の到着判定処理(開始)：『 巡る季節 』9月 好感度(暫定)10以上(好感度初期5、4-8月イベント好感度0up、イベント中の手紙返信(7月と9月の2通分)による好感度4up→9月2週時点で好感度4。調整中)
-[if exp="f.okeiko_month == 9 && f.para_hujieda_koukando > 9 && f.fumi_toutyaku_hujieda[25] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『 巡る季節 』9月3週以降 好感度条件無し(藤枝もイベント中に届く手紙が返信済となるため、返信可能な手紙を届ける目的で好感度条件を除きます2/4)
+[if exp="(f.okeiko_month == 9 && (f.okeiko_week == 3 || f.okeiko_week == 4 )) && f.fumi_toutyaku_hujieda[25] == 0 && f.hujieda_au == 1"]
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_25
 [endif]
 ;◆↓手紙一通分の到着判定処理(開始)：『 実りの秋 』10月 好感度(暫定)15以上
-[if exp="f.okeiko_month == 10 && f.para_hujieda_koukando > 14  && f.fumi_toutyaku_hujieda[26] == 0"]
+[if exp="f.okeiko_month == 10 && f.para_hujieda_koukando >= 15  && f.fumi_toutyaku_hujieda[26] == 0 && f.hujieda_au == 1"]
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_26
 [endif]
@@ -687,6 +733,8 @@ f.okeiko_month_kansuuji="三月 ";
 		[eval exp="f.hujieda_nextfumi_common=f.hujieda_nextfumi_common+1"]
 		@jump storage="fumi_toutyaku_shori_list.ks" target=&f.target_fumi_toutyaku
 *fumi_toutyaku_hantei_hujieda_owari
+
+*fumi_toutyaku_hantei_kobetu_owari
 
 *fumi_toutyaku_hantei_tokiko
 ;=======================================================================================
@@ -767,7 +815,7 @@ f.okeiko_month_kansuuji="三月 ";
 [eval exp="f.fumi_katuraginomiya_number = f.fumi_list_katuraginomiya_title.length"]
 [eval exp="f.fumi_hujieda_number = f.fumi_list_hujieda_title.length"]
 ;◆お稽古パート(休憩終了、週更新時)に戻る
-@jump storage=okeiko.ks target=*qk_end
+@jump storage=okeiko.ks target=*fumi_toutyaku_hantei_owari
 
 [s]
 
@@ -786,9 +834,9 @@ f.okeiko_month_kansuuji="三月 ";
 ;↓(変更の必要はありません)手紙が届いている場合のメッセージ「○○様からお手紙が届いております」の○○様の部分
 	[eval exp="f.fumi_toutyaku_oaite.push('葛城宮親王殿下')"]
 ;↓(変更の必要はありません)手紙が届いているかどうか、届いた手紙は何通かを見るための変数
-	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.fumi_toutyaku = f.fumi_toutyaku + 1"]
 ;↓(変更の必要はありません)葛城宮からの手紙到着待ち週数をリセット
-	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week=0"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 0"]
 [return]
 
 ;◆到着判定時の共通処理：藤枝
