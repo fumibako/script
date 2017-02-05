@@ -557,6 +557,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [eval exp="f.haikei_credit=''"]
 [暗転２ storage="bg/zaizen_CGnomal.jpg" clegit=true]
 [財前退場]
+[主人公退場]
 ;【背景】ノーマルエンドCG
 [chara_mod name="bg" storage="bg/zaizen_CGnomal.jpg"]
 ;[主人公驚]
