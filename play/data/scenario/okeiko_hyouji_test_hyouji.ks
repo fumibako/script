@@ -10,6 +10,7 @@
 @layopt layer=message1 page=fore visible = true
 [font color=glay size=15]
 葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"] 葛城宮ルート(1○,0×)=[emb exp="f.katuraginomiya_au"] 葛城宮のみ文通(1○,0×)=[emb exp="f.katuraginomiya_only"][r]
+葛城宮手紙可(1○,0×)=[emb exp="f.katuraginomiya_fumi_start"][r]
 藤枝好感度=[emb exp="f.para_hujieda_koukando"]　藤枝ルート(1○,0×)=[emb exp="f.hujieda_au"]　箏回数=[emb exp="f.para_shujinkou_koto_kaisuu"][r]
 財前好感度=[emb exp="f.para_zaizen_koukando"] 財前ルート(1○,0×)=[emb exp="f.zaizen_au"]
 ;↓他ルートテスト用に準備中です
