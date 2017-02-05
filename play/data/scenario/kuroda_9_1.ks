@@ -50,7 +50,11 @@
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-元々気持ちは固まりつつあったのだ、これ以上悩んでは他の方に失礼になるだろう。[r]
+元々気持ちは固まりつつあったのだ、これ以上悩んでは
+[if exp="tf.common_9_1_ninzuu != 1"]
+他の方に
+[endif]
+失礼になるだろう。[r]
 私は覚悟を決め、スッと姿勢を正して息を整えた。
 [autosave]
 [p]
@@ -68,7 +72,12 @@
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「……！　そうか、将貴君か」
+「……！　そうか
+[if exp="tf.common_9_1_ninzuu == 1"]
+」
+[else]
+、将貴君か」
+[endif]
 [autosave]
 [p]
 
@@ -79,11 +88,12 @@
 
 ;↓ここからのやりとりは仮状態。手紙を実際に色々書いてから変更する可能性が高いです
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「お手紙からは、黒田様が研究に真摯に取り組んでおられる様子や自然に親しんでおられることが伝わります。[r]
+「お手紙からは、黒田様が研究に真摯に取り組んでおられる様子や自然に[r]
+[sp]親しんでおられることが伝わります。[r]
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 [wait time=10]
-読むたびに、私も頑張ろう、と勇気づけられました」[p]
+[sp]読むたびに、私も頑張ろう、と勇気づけられました」[p]
 
 ;【このセリフのみ分岐】淑女度一定値以上の場合
 [if exp="f.para_shujinkou_shukujodo >= 40"]
@@ -126,7 +136,7 @@
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい。黒田様が色々な物事を興味深く語ってくださるので……[r]
+「はい。黒田様が色々な物事を興味深く語ってくださるので……。[r]
 [sp]お稽古ごとにしても、もっと知りたくなって、
 ;【立ち絵】主人公：ほほえみ
 楽しくなりました」[p]
@@ -138,7 +148,7 @@
 [主人公笑顔]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい。色々と学んで、黒田様のお力になれたら……[r]
+「はい。色々と学んで、黒田様のお力になれたら……。[r]
 [sp]なんてつい、思ってしまうのです。[r]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
@@ -147,7 +157,7 @@
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「そうか。では、早速見合いの準備を進めよう……[r]
+「そうか。では、早速見合いの準備を進めよう……。[r]
 [sp][名前]。将貴君に決めて、本当に良いのだね？」
 [autosave]
 [p]
