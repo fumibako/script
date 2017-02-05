@@ -24,6 +24,41 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_nomal
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+
+[endif]
+;------------------------------------------------------
 [主人公ほほえみ]
 ;【立ち絵】主人公：微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -483,6 +518,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [主人公憂い]
 私は、意を決して立ち上がって言った。[p]
 
+*seen_nomal
 ;====================================================================================
 ;【背景】雪柳
 [chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
@@ -523,7 +559,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [財前退場]
 ;【背景】ノーマルエンドCG
 [chara_mod name="bg" storage="bg/zaizen_CGnomal.jpg"]
-[主人公驚]
+;[主人公驚]
 [暗転２終了]
 額にキスCG（財前目閉じ主人公驚き）[p]
 ;====================================================================================
@@ -534,10 +570,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 言葉のでない私に財前様は言った。[p]
 
-[主人公口通常]
-[主人公眉下げ下]
-[主人公目伏]
-[主人公頬染め]
+;[主人公口通常]
+;[主人公眉下げ下]
+;[主人公目伏]
+;[主人公頬染め]
 #
 本当に貴方はかわいらしい方ですね。[r]
 いや、それだけではない。　私を惑わす悪い方です。[p]
@@ -554,7 +590,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [財前ベース燕尾服]
 [財前通常]
 [暗転２終了]
-@jump storage="zaizen/zaizen_3_4_good.ks" target="seen_1"
+@jump storage="zaizen/zaizen_3_4_good.ks" target="*replay_zaizen_3_4_good"
 [endif]
 ;====================================================================================
 ;機能ボタン消去
