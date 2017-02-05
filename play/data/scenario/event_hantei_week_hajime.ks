@@ -120,12 +120,30 @@
 	@jump storage="event.ks" target=*start
 [endif]
 *common_event_hantei_owari
+
+;◆各個別ルート(又はonly時)には対象キャラクターイベント判定のみ行う
+[if exp="f.zaizen_au == 1"]
+@jump target=*zaizen_event_hantei
+[endif]
+[if exp="f.sijyou_au == 1"]
+@jump target=*sijyou_event_hantei
+[endif]
+[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
+@jump target=*katuraginomiya_event_hantei
+[endif]
+[if exp="f.hujieda_au == 1"]
+@jump target=*hujieda_event_hantei
+[endif]
+
 ;=============================================
 ;◆四条イベント判定
 ;=============================================
 *sijyou_event_hantei
 @jump storage="01_sijyou_event_hantei_week_hajime.ks" target=*start
 *sijyou_event_hantei_owari
+[if exp="f.sijyou_au == 1"]
+@jump target=*event_hantei_owari
+[endif]
 
 ;=============================================
 ;◆財前イベント判定
@@ -133,6 +151,9 @@
 *zaizen_event_hantei
 @jump storage="event_hantei_week_hajime_zaizen.ks" target=*start
 *zaizen_event_hantei_owari
+[if exp="f.zaizen_au == 1"]
+@jump target=*event_hantei_owari
+[endif]
 
 ;=============================================
 ;◆葛城宮イベント判定
@@ -140,6 +161,9 @@
 *katuraginomiya_event_hantei
 @jump storage="event_hantei_week_hajime_katuraginomiya.ks" target=*start
 *katuraginomiya_event_hantei_owari
+[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
+@jump target=*event_hantei_owari
+[endif]
 
 ;=============================================
 ;◆藤枝イベント判定
@@ -147,13 +171,16 @@
 *hujieda_event_hantei
 @jump storage="event_hantei_week_hajime_hujieda.ks" target=*start
 *hujieda_event_hantei_owari
-
+[if exp="f.hujieda_au == 1"]
+@jump target=*event_hantei_owari
+[endif]
 
 ;=============================================
 ;◆黒田イベント判定
 ;=============================================
+*kuroda_event_hantei
 ;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
-[if exp="(f.okeiko_month==6 && f.okeiko_week==4) && f.event_machi_kuroda[2]==0 && f.para_kuroda_koukando > 5"]
+[if exp="(f.okeiko_month==6 && f.okeiko_week==4) && f.event_machi_kuroda[2]==0 && f.para_kuroda_koukando > 3"]
 	@jump storage="sansaku.ks" target=*sansaku
 [endif]
 
@@ -287,4 +314,6 @@
 	[eval exp="f.event_kuroda[14]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
+
+*event_hantei_owari
 @jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari

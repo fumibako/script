@@ -770,14 +770,15 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_b'])){
 [s]
 
 *fumi_ok
-[if exp="f.fumi_henjityu==1"]
- [eval exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]=1"]
+[if exp="f.fumi_henjityu == 1"]
+ [eval exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] = 1"]
 [endif]
-[eval exp="f.fumi_henjityu=0"]
-[eval exp="f.fumi_kakunin=0"]
-[eval exp="f.fumi_henji=1"]
-[eval exp="f.para_shujinkou_tairyoku_now=f.para_shujinkou_tairyoku_now-f.fumi_hituyou_tairyoku"]
-[eval exp="f.para_shujinkou_kiryoku_now=f.para_shujinkou_kiryoku_now-f.fumi_hituyou_kiryoku"]
+;「返信」から送らず「手紙を書く」から送った場合でも「一通でも返事をした」扱いとしてフラグに1を入れ5月4週bad回避とする(現実の手紙でも特定の手紙の返事かどうかにかかわらず「返事」扱いとなるため
+[eval exp="f.fumi_henji = 1"]
+[eval exp="f.fumi_henjityu = 0"]
+[eval exp="f.fumi_kakunin = 0"]
+[eval exp="f.para_shujinkou_tairyoku_now = f.para_shujinkou_tairyoku_now - f.fumi_hituyou_tairyoku"]
+[eval exp="f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_now - f.fumi_hituyou_kiryoku"]
 [iscript]
 if (f.fumi_atesaki == 'kuroda'){
 	f.para_kuroda_koukando = f.para_kuroda_koukando + f.para_pre_kuroda_koukando;
