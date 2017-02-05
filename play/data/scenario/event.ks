@@ -839,14 +839,15 @@ $('.junbi_girl').remove();
 [wait time=10]
 
 [whosay name="磯野" color="dimgray"]
-「お返事を書かれなかったのは、何かお考えあってのことでございますか？」[p]
+「お返事を書かれなかったのは、何かお考えあってのことでござい[r]
+[sp]ますか？」[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……」[p]
-「淑女として私は未熟すぎます。お返事を書こうとしても、そのことが気がかりで[r]
-[sp]手をつけられませんでした」[p]
+「淑女として私は未熟すぎます。お返事を書こうとしても、そのことが[r]
+[sp]気がかりで手をつけられませんでした」[p]
 
 「それでお稽古に集中していたのです」[p]
 
@@ -873,7 +874,7 @@ $('.junbi_girl').remove();
 「ありがとう、磯野」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-「お父様とお話してみるわ。そしてご破談となるお三方にもお手紙を書きます」[p]
+「お父様とお話してみるわ。そしてご破談となるお三方にもお手紙を[r][sp]書きます」[p]
 
 （お返事を書けなかったお詫びと別れについて、心を込めて書きましょう。[r]
 [sp]もし、どこかでお会いすることがあっても、笑顔でお話できるように）[p]
