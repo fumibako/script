@@ -475,7 +475,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]
 [if exp="f.katuraginomiya_only == 1 "]
 梅雨の晴れ間、
-[endif]
+[else]
 梅雨が明けた明るい日差しの中、
 [endif]
 町で君と出会い率直に[r]
