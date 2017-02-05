@@ -11,7 +11,7 @@
 [eval exp="tf.koukando_eventup_katuraginomiya = 0"]
 ;===================================================================================================================================================
 ;1◆葛城宮オンリーイベント判定 katuraginomiya_event_1.ks 他好感度が一定以下_淑女度15以上 町で葛城宮に会い胸が高鳴る→手紙がくる 梅雨の晴れ 20以下　藤枝はイベントが被るので10以下
-[if exp="f.katuraginomiya_only == 1 && (f.okeiko_month == 6 && f.okeiko_week == 2) && f.event_katuraginomiya[1]==0 && f.katuraginomiya_au == 0"]
+[if exp="(f.katuraginomiya_only == 1 && f.okeiko_month == 6 && f.okeiko_week == 2) && f.event_katuraginomiya[1]==0 && f.katuraginomiya_au == 0"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_event_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_event_1'"]
 	[eval exp="f.event_type='talk'"]
