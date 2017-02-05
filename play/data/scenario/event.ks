@@ -517,11 +517,10 @@ $('.junbi_girl').remove();
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
-[whosay name="磯野" color="dimgray"]
-「お嬢様。まだどなたにもお返事を書かれていないようですが……」
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+[whosay name="磯野" color="dimgray"]
+「お嬢様。まだどなたにもお返事を書かれていないようですが……」
 [autosave]
 [p]
 
@@ -678,12 +677,12 @@ $('.junbi_girl').remove();
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [whosay name="磯野" color="dimgray"]
 「お嬢様。何度も申し上げるのは心苦しいのですが[r]
 [sp]お手紙のお返事がまだのようですね……」
-[プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
+
 [autosave]
 [p]
 
@@ -738,11 +737,10 @@ $('.junbi_girl').remove();
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
-[whosay name="磯野" color="dimgray"]
-「お嬢様。お手紙のお返事はこれ以上お待ちできません……。[r]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+[whosay name="磯野" color="dimgray"]
+「お嬢様。お手紙のお返事はこれ以上お待ちできません……。[r]
 [if exp="f.para_shujinkou_shukujodo >= 18"]
 @jump target=*common_5_4_katuraginomiya
 [endif]
@@ -1007,13 +1005,12 @@ $('.junbi_girl').remove();
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [whosay name="磯野" color="dimgray"]
 「お嬢様。……このたび、最後までお手紙を下さっていた[r]
 [sp]お相手様よりご連絡がございました。[r]
 [sp]残念ながら、これ以上の文通は難しいとのことでございます」
-[プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
 [p]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
