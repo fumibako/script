@@ -18,6 +18,12 @@
 [財前通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+テスト用です 実際は表示されません[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 ;=====================ここからお芝居の幕引きです===============================
 *seen_1
 ;本編ではここに飛んできます。以降が続けて表示されます
@@ -38,13 +44,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「え……ええ！[r]
 [sp]どうしてご存じなのですか？」[p]
-
-[if exp="sf.BGM=='ON'"]
-;【BGM】はなごよみ〜さくら〜（normal/goodED用
-[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
-[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
-[endif]
-
+;nomalから同じ音楽なので無し
 ;【立ち絵】財前：目閉じ
 [whosay name="財前美彬" color="#7a65b2"]
 「……やはりそうでしたか。[r]
