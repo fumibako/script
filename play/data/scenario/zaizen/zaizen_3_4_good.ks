@@ -89,7 +89,7 @@
 
 ;====================================================================================
 ;[eval exp="f.haikei_credit='クレジットだすときはtrue↓'"]
-[暗転２ storage="bg/zaizen_CGnomal.jpg" clegit=false]
+[暗転２ storage="bg/zaizen_CGgood.jpg" clegit=false]
 [財前退場]
 ;【背景】グッドエンドCG　CG差分（財前目閉じ、主人公目閉じ）
 [chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
