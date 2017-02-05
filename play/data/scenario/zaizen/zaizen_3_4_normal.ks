@@ -44,6 +44,8 @@
 [resetfont]
 [er]
 「はい」[r]
+[財前ベース燕尾服]
+[財前驚き]
 移動します。[p]
 [cm]
 @jump target=*seen_nomal
