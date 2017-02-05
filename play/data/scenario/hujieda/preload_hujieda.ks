@@ -203,7 +203,8 @@
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】主人公邸 お稽古部屋
-;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
+[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
