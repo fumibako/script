@@ -68,7 +68,13 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+
+[if exp="tf.common_9_1_ninzuu == 1"]
+「そうか……」
+[else]
 「……！　そうか、華織君か」
+[endif]
+
 [autosave]
 [p]
 [主人公目パチ1回]
