@@ -589,8 +589,13 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
 [財前ベース燕尾服]
 [財前通常]
+[主人公ポーズ通常]
+[主人公通常]
+[主人公伏目]
+[主人公眉下げ下]
+[主人公頬染め]
 [暗転２終了]
-@jump storage="zaizen/zaizen_3_4_good.ks" target="*replay_zaizen_3_4_good"
+@jump storage="zaizen/zaizen_3_4_good.ks" target="*seen_1"
 [endif]
 ;====================================================================================
 ;機能ボタン消去
