@@ -111,11 +111,11 @@ $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
 $("input[name='f.para_zaizen_koukando']").val("0");
 $("input[name='f.zaizen_au']").val("0");
 $("input[name='tf.test_katuraginomiya_fumi_hensin_speed']").val("0");
-$("input[name='f.para_katuraginomiya_koukando']").val("10");
+$("input[name='f.para_katuraginomiya_koukando']").val("5");
 $("input[name='f.katuraginomiya_au']").val("0");
 
 $("input[name='tf.test_hujieda_fumi_hensin_speed']").val("0");
-$("input[name='f.para_hujieda_koukando']").val("5");
+$("input[name='f.para_hujieda_koukando']").val("2");
 $("input[name='f.hujieda_au']").val("0");
 $("input[name='f.katuraginomiya_fumi_start']").val("0");
 $("input[name='f.hujieda_fumi_start']").val("0");
