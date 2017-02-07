@@ -69,7 +69,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [r]
 [sp]申し訳ないですが私は忙しく貴方に都合を合わせて頂きたいと[r]
 思っています。[r]
-[ruby text=じゅう]十月[ruby text=さん]三週の日曜日が、私の予定が空いておりますのですが[r]
+[ruby text=じゅう]十月[ruby text=さん]三週の日曜日が、私の予定が空いておりますので[r]
 どうでしょうか？[p]
 [sp][r][r]
 [sp]返信お待ちしております。[r]
