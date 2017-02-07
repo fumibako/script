@@ -122,7 +122,7 @@ jumpします。[p]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=文矢 color="Teal"]
-（文奈にもいつか……）
+（[名前]にもいつか……）
 [autosave]
 [p]
 
