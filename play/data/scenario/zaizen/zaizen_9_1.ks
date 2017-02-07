@@ -46,17 +46,19 @@
 ;【立ち絵】主人公：決意
 [主人公目を開く]
 元々気持ちは固まりつつあったのだ、[r]
-これ以上悩んでは他の方に失礼になるだろう。[r]
-私は覚悟を決め、スッと姿勢を正して息を整えた。[p]
+[if exp="tf.common_9_1_ninzuu != 1"] 
+;↓2人以上と文通している場合のみ表示 
+他の方に 
+[endif] 
+失礼になるだろう。[r] 
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公口開]
-「お父様、私は財前様にお会いしたいと思います」[p]
-[主人公口通常]
-*scene2
-[whosay name=&sf.father_name color="DarkSlateBlue"]
-「……！　そうか、美彬君か」[p]
-
+「……！　そうか 
+[if exp="tf.common_9_1_ninzuu == 1"] 
+」 
+[else] 
+;↓2人以上と文通している場合のみ表示 
+、美彬君か」 
+[endif] 
 ;【立ち絵】主人公：通常
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]にとって、美彬君はどんな人物なのかね？」[p]
@@ -101,7 +103,7 @@
 *scene3
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい。財前様が色々な物事を丁寧に書いてくださるので……[r]
+「はい。財前様が色々な物事を丁寧に書いてくださるので[r]
 [sp]お稽古ごとにしても、もっと知りたくなって、極めようと思いました」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -112,7 +114,7 @@
 [主人公頬染め]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。色々と学んで、財前様のお力になれたら……[r]
-[sp]なんてつい、思ってしまうのです。[r]
+[sp]なんて、思ってしまうのです。[r]
 [sp]お手紙だけではなく、実際にお会いしてみたいです」[p]
 
 [主人公通常]
