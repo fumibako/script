@@ -15,7 +15,8 @@
 財前好感度=[emb exp="f.para_zaizen_koukando"] 財前ルート(1○,0×)=[emb exp="f.zaizen_au"]
 ;↓他ルートテスト用に準備中です
 ;攻略対象名テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_oaite_name_fumi_hensin_speed"],好感度[emb exp="f.para_oaite_name_koukando"][r]
-お見合い未定(1○,0×)=[emb exp="f.event_oaite_mitei"]　葛城宮Ev進行1=（[emb exp="f.event_katuraginomiya[1]"]）・2=（[emb exp="f.event_katuraginomiya[2]"]）・3=（[emb exp="f.event_katuraginomiya[3]"]）
+お見合い未定(1○,0×)=[emb exp="f.event_oaite_mitei"]　[r]
+葛城宮Ev進行1=（[emb exp="f.event_katuraginomiya[1]"]）・2=（[emb exp="f.event_katuraginomiya[2]"]）・3=（[emb exp="f.event_katuraginomiya[3]"]）
 ;攻略対象名ルート(1○,0×)=[emb exp="f.oaite_name_au"],お見合い(1後,0未)=[emb exp="f.oaite_name_omiai"][r]
 
 [resetfont]
