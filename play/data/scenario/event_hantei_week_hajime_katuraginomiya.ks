@@ -33,7 +33,7 @@
 [endif]
 ;===================================================================================================================================================
 ;葛城宮　夢イベント　場合淑女度15（20以上は手紙を出していたら有りえない数値）１イベントみたとき(イベント1発生条件が淑女度15以上のため、あわせて14→15以上と調整しました(◆jsYiJcqRkk
-[if exp="(f.okeiko_month == 7 && f.okeiko_week == 2) && f.para_shujinkou_shukujodo >= 15 && f.event_katuraginomiya[1]==1 && f.event_sijyou[0]==0"]
+[if exp="(f.okeiko_month == 7 && f.okeiko_week == 2) && f.para_shujinkou_shukujodo >= 15 && f.event_katuraginomiya[1] == 1 && f.event_sijyou[0] == 0"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_6_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_6_1'"]
 	[eval exp="f.event_type='talk'"]
