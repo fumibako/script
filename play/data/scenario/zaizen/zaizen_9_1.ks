@@ -50,14 +50,14 @@
 ;↓2人以上と文通している場合のみ表示 
 他の方に 
 [endif] 
-失礼になるだろう。[r] 
+失礼になるだろう。[p] 
 
 「……！　そうか 
 [if exp="tf.common_9_1_ninzuu == 1"] 
 」 
 [else] 
 ;↓2人以上と文通している場合のみ表示 
-、美彬君か」 
+、美彬君か」 [p]
 [endif] 
 ;【立ち絵】主人公：通常
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -120,7 +120,7 @@
 [主人公通常]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「そうか。では、早速見合いの準備を進めよう……[r]
+「そうか。では、早速見合いの準備を進めよう。[r]
 [sp][名前]。美彬君に決めて、本当に良いのだね？」[p]
 
 ;【立ち絵】主人公：目閉じ思案
