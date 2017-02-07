@@ -397,7 +397,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]苦しくて辛い）[p]
 
 [主人公目伏]
-（それなら告白べきなのだわ）[p]
+「……告白いたしますわ」[p]
 
 [whosay name="財前母"]
 「頑張ってね」[p]
