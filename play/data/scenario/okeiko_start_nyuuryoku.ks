@@ -105,6 +105,9 @@
 [ptext text="イベント全般(1表示、0非表示)" layer=29 size=15 x=345 y=540 color=darkslateblue bold=bold]
 [edit left=345 top=560 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
 
+[ptext text="お見合い決定済(0決定、1未定)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
+[edit left=345 top=610 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
+
 [iscript]
 //入力済デフォルト値の設定
 $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
@@ -143,6 +146,8 @@ $("input[name='f.event_katuraginomiya3']").val("0"); //デフォルト値0にし
 $("input[name='f.event_katuraginomiya2']").val("0");
 $("input[name='f.event_katuraginomiya1']").val("0");
 $("input[name='f.katuraginomiya_only']").val("0");
+//葛城宮確認用デフォルト値1 ご自由に設定してください
+$("input[name='f.event_oaite_mitei']").val("1");
 
 $("input[name='tf.advice_event_hyouji']").val("0");
 $("input[name='tf.event_hyouji']").val("1");
@@ -193,6 +198,8 @@ f.event_katuraginomiya[1] = parseInt($("input[name='f.event_katuraginomiya1']").
 f.event_katuraginomiya[2] = parseInt($("input[name='f.event_katuraginomiya2']").val());
 f.event_katuraginomiya[3] = parseInt($("input[name='f.event_katuraginomiya3']").val());
 f.katuraginomiya_only = parseInt($("input[name='f.katuraginomiya_only']").val());
+
+f.event_oaite_mitei = parseInt($("input[name='f.event_oaite_mitei']").val());
 
 tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
 tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
