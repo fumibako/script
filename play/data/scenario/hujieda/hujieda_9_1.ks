@@ -74,7 +74,21 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"] 
 「[名前]。本当にいいのかね？[r]
-[sp]三人とも良い青年だし、惜しいと思っている」[p]
+;分岐メッセージ　自由に変更してください
+[if exp="tf.common_9_1_ninzuu == 2"]
+;２人の場合
+[sp]彼らは、
+[elsif exp="tf.common_9_1_ninzuu == 1"]
+;１人の場合
+[sp]彼は、
+[elsif exp="tf.common_9_1_ninzuu == 3"]
+;３人の場合
+[sp]三人とも
+[endif]
+
+;共通
+
+良い青年だし、惜しいと思っている」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 [主人公口ほほえみ]
