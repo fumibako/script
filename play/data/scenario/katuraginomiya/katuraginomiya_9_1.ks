@@ -158,7 +158,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [主人公通常]
 私は、殿下との
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝規定ｷｬﾗ３０以下エラー回避＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-[if exp=" f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30 && f.para_koroda_koukando < 30 "]
+[if exp=" f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30 && f.para_kuroda_koukando < 30 "]
 ;３０以下エラー回避　変更してください
 婚約をお受けすることにした。[p]
 ;全画面ﾒｯｾｰｼﾞの分岐
