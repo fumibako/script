@@ -122,7 +122,7 @@ jumpします。[p]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=文矢 color="Teal"]
-（[名前]にもいつか……）
+（文奈にもいつか……）
 [autosave]
 [p]
 
@@ -259,39 +259,7 @@ jumpします。[p]
 [sp]思ってな？」[p]
 
 *if_bunki
-;好感度と淑女度により、選択可能なお相手を調べる
-[iscript]
-tf.common_9_1_storage = [];
-tf.common_9_1_target = [];
-tf.common_9_1_oaite = [];
-tf.common_9_1_oaite_full = [];
-tf.common_9_1_oaite_exp = [];
-
-if (f.para_kuroda_koukando >= 30) {
-  tf.common_9_1_storage.push("kuroda_9_1.ks");
-  tf.common_9_1_target.push("*from_common_9_1");
-  tf.common_9_1_oaite.push("黒田様");
-  tf.common_9_1_oaite_full.push("黒田 将貴");
-  tf.common_9_1_oaite_exp.push("f.kuroda_au = 1"); //葛城宮以外はボタンを押した段階で個別ルート決定するようにしてみます(シナリオ側の設定漏れ防止とテストし易さ目的)
-}
-if (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) {
-  tf.common_9_1_storage.push("zaizen/zaizen_9_1.ks");
-  tf.common_9_1_target.push("*replay_zaizenzaizen_9_1");
-  tf.common_9_1_oaite.push("財前様");
-  tf.common_9_1_oaite_full.push("財前 美彬");
-  tf.common_9_1_oaite_exp.push("f.zaizen_au = 1");
-}
-if (f.para_sijyou_koukando >= 30) {
-  tf.common_9_1_storage.push("sijyou/sijyou_9_1.ks");
-  tf.common_9_1_target.push("*replay_sijyou_9_1");
-  tf.common_9_1_oaite.push("四条様");
-  tf.common_9_1_oaite_full.push("四条 華織");
-  tf.common_9_1_oaite_exp.push("f.sijyou_au = 1");
-}
-tf.common_9_1_ninzuu = 0;
-tf.common_9_1_ninzuu = tf.common_9_1_oaite.length;
-[endscript]
-
+;◆選択可能なお相手を調べるスクリプトはevent_hantei_week_owari.ks
 「[名前]の淑女らしさは
 ;淑女度一定値以下で父のセリフ変化
 [if exp="f.para_shujinkou_shukujodo < f.zaizen_shukujodo"]
@@ -301,13 +269,13 @@ tf.common_9_1_ninzuu = tf.common_9_1_oaite.length;
 [endif]
 だね。[r] 
 
-[if exp="tf.common_9_1_ninzuu == 2"]
-[sp]いま手紙を交わしているなかで、 縁談を進められるのは[emb exp="tf.common_9_1_oaite_full[0]"]君と[r]
-[sp][emb exp="tf.common_9_1_oaite_full[1]"]君だな。会ってみるかい？」[p] 
-[elsif exp="tf.common_9_1_ninzuu == 1"]
-[sp]いま手紙を交わしているなかで、 縁談を進められるのは[emb exp="tf.common_9_1_oaite_full[0]"]君[r]
+[if exp="f.common_9_1_ninzuu == 2"]
+[sp]いま手紙を交わしているなかで、 縁談を進められるのは[emb exp="f.common_9_1_oaite_full[0]"]君と[r]
+[sp][emb exp="f.common_9_1_oaite_full[1]"]君だな。会ってみるかい？」[p] 
+[elsif exp="f.common_9_1_ninzuu == 1"]
+[sp]いま手紙を交わしているなかで、 縁談を進められるのは[emb exp="f.common_9_1_oaite_full[0]"]君[r]
 [sp]だけだな。 会ってみるかい？」[p]
-[elsif exp="tf.common_9_1_ninzuu == 3"]
+[elsif exp="f.common_9_1_ninzuu == 3"]
 [sp]誰かと会ってみるかい？」[p]
 [endif]
 
@@ -320,31 +288,31 @@ tf.common_9_1_ninzuu = tf.common_9_1_oaite.length;
 [playse storage=mushi_suzumushi.ogg loop=false ]
 *sentaku
 #
-[if exp="tf.common_9_1_ninzuu == 1"]
+[if exp="f.common_9_1_ninzuu == 1"]
 お会いしましょうか？
 [else]
 どなたとお会いしましょうか？
 [endif]
 ;【分岐】
-[eval exp="tf.common_9_1_y_left = 100"]
-[eval exp="tf.common_9_1_y_right = 100"]
-[glink storage=&tf.common_9_1_storage[0] target=&tf.common_9_1_target[0] text=&tf.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white exp=&tf.common_9_1_oaite_exp[0]]
-[if exp="tf.common_9_1_ninzuu >= 2"]
-[glink storage=&tf.common_9_1_storage[1] target=&tf.common_9_1_target[1] text=&tf.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white exp=&tf.common_9_1_oaite_exp[1]]
+[eval exp="f.common_9_1_y_left = 100"]
+[eval exp="f.common_9_1_y_right = 100"]
+[glink storage=&f.common_9_1_storage[0] target=&f.common_9_1_target[0] text=&f.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&f.common_9_1_y_left color=white exp=&f.common_9_1_oaite_exp[0]]
+[if exp="f.common_9_1_ninzuu >= 2"]
+[glink storage=&f.common_9_1_storage[1] target=&f.common_9_1_target[1] text=&f.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white exp=&f.common_9_1_oaite_exp[1]]
 [endif]
-[if exp="tf.common_9_1_ninzuu >= 3"]
-[eval exp="tf.common_9_1_y_left = tf.common_9_1_y_left + 100"]
-[glink storage=&tf.common_9_1_storage[2] target=&tf.common_9_1_target[2] text=&tf.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white exp=&tf.common_9_1_oaite_exp[2]]
+[if exp="f.common_9_1_ninzuu >= 3"]
+[eval exp="f.common_9_1_y_left = f.common_9_1_y_left + 100"]
+[glink storage=&f.common_9_1_storage[2] target=&f.common_9_1_target[2] text=&f.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&f.common_9_1_y_left color=white exp=&f.common_9_1_oaite_exp[2]]
 [endif]
 ;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
-[eval exp="tf.common_9_1_y_right = tf.common_9_1_y_right + 100"]
-[if exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu == 1"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*scene1 text="お会いしない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
-[elsif exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu >= 2"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*scene1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
+[eval exp="f.common_9_1_y_right = f.common_9_1_y_right + 100"]
+[if exp="f.event_hujieda[5]==1 && f.common_9_1_ninzuu == 1"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*scene1 text="お会いしない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
+[elsif exp="f.event_hujieda[5]==1 && f.common_9_1_ninzuu >= 2"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*scene1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
 [endif]
-[eval exp="tf.common_9_1_y_left = tf.common_9_1_y_left + 100"]
-[glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
+[eval exp="f.common_9_1_y_left = f.common_9_1_y_left + 100"]
+[glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=200 y=&f.common_9_1_y_left color=white]
 [autosave]
 [s]
 
@@ -430,28 +398,28 @@ tf.common_9_1_ninzuu = tf.common_9_1_oaite.length;
 「誰に会うか、決めたかね？」[p]
 
 #
-[if exp="tf.common_9_1_ninzuu == 1"]
+[if exp="f.common_9_1_ninzuu == 1"]
 お会いしましょう。
 [else]
 どなたとお会いしましょうか？
 [endif]
 ;【分岐】
-[eval exp="tf.common_9_1_y_left = 100"]
-[eval exp="tf.common_9_1_y_right = 100"]
-[glink storage=&tf.common_9_1_storage[0] target=&tf.common_9_1_target[0] text=&tf.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
-[if exp="tf.common_9_1_ninzuu >= 2"]
-[glink storage=&tf.common_9_1_storage[1] target=&tf.common_9_1_target[1] text=&tf.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[eval exp="f.common_9_1_y_left = 100"]
+[eval exp="f.common_9_1_y_right = 100"]
+[glink storage=&f.common_9_1_storage[0] target=&f.common_9_1_target[0] text=&f.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&f.common_9_1_y_left color=white]
+[if exp="f.common_9_1_ninzuu >= 2"]
+[glink storage=&f.common_9_1_storage[1] target=&f.common_9_1_target[1] text=&f.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white]
 [endif]
-[if exp="tf.common_9_1_ninzuu >= 3"]
-[eval exp="tf.common_9_1_y_left = tf.common_9_1_y_left + 100"]
-[glink storage=&tf.common_9_1_storage[2] target=&tf.common_9_1_target[2] text=&tf.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&tf.common_9_1_y_left color=white]
+[if exp="f.common_9_1_ninzuu >= 3"]
+[eval exp="f.common_9_1_y_left = f.common_9_1_y_left + 100"]
+[glink storage=&f.common_9_1_storage[2] target=&f.common_9_1_target[2] text=&f.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&f.common_9_1_y_left color=white]
 [endif]
 ;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
-[eval exp="tf.common_9_1_y_right = tf.common_9_1_y_right + 100"]
-[if exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu == 1"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="会わない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
-[elsif exp="f.event_hujieda[5]==1 && tf.common_9_1_ninzuu >= 2"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&tf.common_9_1_y_right color=white]
+[eval exp="f.common_9_1_y_right = f.common_9_1_y_right + 100"]
+[if exp="f.event_hujieda[5]==1 && f.common_9_1_ninzuu == 1"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="会わない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white]
+[elsif exp="f.event_hujieda[5]==1 && f.common_9_1_ninzuu >= 2"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white]
 [endif]
 [s]
 

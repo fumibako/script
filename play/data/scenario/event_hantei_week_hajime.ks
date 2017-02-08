@@ -115,6 +115,40 @@
 [elsif exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30) && (f.para_kuroda_koukando < 30 && f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30)"]
 @jump target=*katuraginomiya_event_hantei
 [elsif exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[10] == 0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
+
+;好感度と淑女度により、選択可能なお相手を調べる
+[iscript]
+f.common_9_1_storage = [];
+f.common_9_1_target = [];
+f.common_9_1_oaite = [];
+f.common_9_1_oaite_full = [];
+f.common_9_1_oaite_exp = [];
+
+if (f.para_kuroda_koukando >= 30) {
+  f.common_9_1_storage.push("kuroda_9_1.ks");
+  f.common_9_1_target.push("*from_common_9_1");
+  f.common_9_1_oaite.push("黒田様");
+  f.common_9_1_oaite_full.push("黒田 将貴");
+  f.common_9_1_oaite_exp.push("f.kuroda_au = 1"); //葛城宮以外はボタンを押した段階で個別ルート決定するようにしてみます(シナリオ側の設定漏れ防止とテストし易さ目的)
+}
+if (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) {
+  f.common_9_1_storage.push("zaizen/zaizen_9_1.ks");
+  f.common_9_1_target.push("*replay_zaizenzaizen_9_1");
+  f.common_9_1_oaite.push("財前様");
+  f.common_9_1_oaite_full.push("財前 美彬");
+  f.common_9_1_oaite_exp.push("f.zaizen_au = 1");
+}
+if (f.para_sijyou_koukando >= 30) {
+  f.common_9_1_storage.push("sijyou/sijyou_9_1.ks");
+  f.common_9_1_target.push("*replay_sijyou_9_1");
+  f.common_9_1_oaite.push("四条様");
+  f.common_9_1_oaite_full.push("四条 華織");
+  f.common_9_1_oaite_exp.push("f.sijyou_au = 1");
+}
+f.common_9_1_ninzuu = 0;
+f.common_9_1_ninzuu = f.common_9_1_oaite.length;
+[endscript]
+
 	[eval exp="f.event_storage='common_9_1.ks'"]
 	[eval exp="f.event_target='*replay_common_9_1'"]
 	[eval exp="f.event_type='talk'"]

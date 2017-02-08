@@ -42,9 +42,10 @@
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_common[9]=1"]
 	@jump storage="event.ks" target=*start
+[endif]
 
 ;葛城宮とだけ進行している場合は葛城宮ルート進行条件を満たさないとbadED
-[elsif exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_katuraginomiya[20] == 0 && f.katuraginomiya_only == 1 && (f.para_katuraginomiya_koukando < 20 || f.para_shujinkou_shukujodo < 30 || f.event_katuraginomiya[3] != 1)"]
+[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_katuraginomiya[20] == 0 && f.katuraginomiya_only == 1 && (f.para_katuraginomiya_koukando < 20 || f.para_shujinkou_shukujodo < 30 || f.event_katuraginomiya[3] != 1)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_katuraginomiya_only_badED'"]
 	[eval exp="f.event_type='talk'"]
