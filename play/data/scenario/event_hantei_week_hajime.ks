@@ -107,12 +107,14 @@
 ;	@jump storage="event.ks" target=*start
 ;[endif]
 
-
 ;◆顔合せのお相手選びイベント判定：イベント 9月1週になった時点で、攻略対象の好感度一定値以上なら1度だけ発生
 ;↓お相手候補が葛城宮だけの場合は葛城宮イベント判定へ
-[if exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.katuraginomiya_only == 1"]
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.katuraginomiya_only == 1"]
 @jump target=*katuraginomiya_event_hantei
-[elsif exp="(f.okeiko_month==9 && f.okeiko_week==1) && f.event_common[10]==0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
+;↓葛城宮Onlyではないものの葛城宮条件を満たし、他の候補の好感度等条件を満たさない結果葛城宮のみ候補となる場合も葛城宮イベント判定へ
+[elsif exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30) && (f.para_kuroda_koukando < 30 && f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30)"]
+@jump target=*katuraginomiya_event_hantei
+[elsif exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[10] == 0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
 	[eval exp="f.event_storage='common_9_1.ks'"]
 	[eval exp="f.event_target='*replay_common_9_1'"]
 	[eval exp="f.event_type='talk'"]
@@ -159,6 +161,10 @@
 ;◆葛城宮イベント判定
 ;=============================================
 *katuraginomiya_event_hantei
+;◆藤枝4月の箏イベントを見た場合は葛城宮イベント判定をスキップして藤枝判定へ
+[if exp="f.event_hujieda[1] == 1"]
+@jump target=*hujieda_event_hantei
+[endif]
 @jump storage="event_hantei_week_hajime_katuraginomiya.ks" target=*start
 *katuraginomiya_event_hantei_owari
 [if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
@@ -181,7 +187,7 @@
 *kuroda_event_hantei
 ;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
 [if exp="(f.okeiko_month==6 && f.okeiko_week==4) && f.event_machi_kuroda[2]==0 && f.para_kuroda_koukando > 3"]
-	@jump storage="sansaku.ks" target=*sansaku
+	@jump storage="sansaku.ks" target=*sansaku_machi_kuroda_02
 [endif]
 
 ;◆黒田イベント判定【友人からの忠告】8月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
