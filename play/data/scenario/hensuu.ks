@@ -24,6 +24,11 @@ f.para_shujinkou_j_gogaku=0;
 f.para_shujinkou_j_koto=0;
 f.para_shujinkou_j_naginata=0;
 f.para_shujinkou_koto_kaisuu=0; //その月にお箏のお稽古をした回数
+f.para_shujinkou_koto_kaisuu_all=0; //お箏のお稽古をした回数(4月からの累計)
+f.para_shujinkou_sadou_kaisuu_all=0; //お箏のお稽古をした回数(4月からの累計)
+f.para_shujinkou_kadou_kaisuu_all=0; //お箏のお稽古をした回数(4月からの累計)
+f.para_shujinkou_reihou_kaisuu_all=0; //お箏のお稽古をした回数(4月からの累計)
+f.para_shujinkou_gogaku_kaisuu_all=0; //お箏のお稽古をした回数(4月からの累計)
 
 
 f.para_shujinkou_status_max=100;
@@ -279,7 +284,7 @@ sf.hujieda ={
   "fumibako":"fumibako_hujieda",
   "fumi1":"hujieda_fumi1",
 }; 
-f.para_hujieda_koukando = 2; //2/2調整更新(鳩の手紙による好感度を追加調整5→2。藤枝イベント発生していれば夢イベント時6予定)
+f.para_hujieda_koukando = 5; //2/8調整更新(他キャラクターに手紙を出した際の偏りを減らすため2→5。藤枝イベント発生していれば夢イベント時9予定)
 f.para_hujieda_sintyou = 165;
 f.para_hujieda_taijuu = 56;
 f.para_hujieda_shumi="－";

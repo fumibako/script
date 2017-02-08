@@ -161,7 +161,7 @@ f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("緑の石の話題",0,1,0,2,1,"a","","","","");
 [endscript]
-『緑の石の話題』を手に入れました。[r]
+『緑の石』と『緑の石の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
@@ -173,9 +173,9 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("写真の話題",0,0,1,1,2,
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("1日のはじまりの話題",0,2,1,1,1,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("一日のはじまりの話題",0,2,1,1,1,"a","","","","");
 [endscript]
-『1日のはじまりの話題』を手に入れました。[p]
+『一日のはじまりの話題』を手に入れました。[p]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;

@@ -1,10 +1,15 @@
-﻿;=============================================
+﻿﻿;=============================================
 ;okeiko.ks 設定入力部分
 ;=============================================
 *start
+[call target=*start storage="01_sijyou_hensuu.ks"]
+[call target=*start storage="hensuu.ks"]
+[cm]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
+
 ;◆テスト設定画面表示
 @layopt layer=29 visible=true
-[ptext text="テスト画面からお稽古パートをはじめます。テスト用設定をお願いします。" layer=29 size=20 x=70 y=10 color=darkslateblue bold=bold]
+;[ptext text="テスト画面からお稽古パートをはじめます。テスト用設定をお願いします。" layer=29 size=20 x=70 y=10 color=darkslateblue bold=bold]
 
 ;各キャラ設定に変更
 [ptext text="財前：好感度" layer=29 size=15 x=10 y=40 color=darkslateblue bold=bold]
@@ -108,17 +113,22 @@
 [ptext text="お見合い決定済(0決定、1未定)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
 [edit left=345 top=610 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
 
+[ptext text="イベント「友人」1=見た、0=未見" layer=29 size=13 x=10 y=545 color=darkslateblue bold=bold]
+[edit left=10 top=560 width=50 length=200 maxchars=3 name="tf.event_yuujin" height=20]
+
 [iscript]
 //入力済デフォルト値の設定
 $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
-$("input[name='f.para_zaizen_koukando']").val("0");
+$("input[name='f.para_zaizen_koukando']").val(f.para_zaizen_koukando);
+$("input[name='f.para_katuraginomiya_koukando']").val(f.para_katuraginomiya_koukando);
+$("input[name='f.para_hujieda_koukando']").val(f.para_hujieda_koukando);
+$("input[name='f.para_sijyou_koukando']").val(f.para_sijyou_koukando);
+$("input[name='f.para_kuroda_koukando']").val(f.para_kuroda_koukando);
 $("input[name='f.zaizen_au']").val("0");
 $("input[name='tf.test_katuraginomiya_fumi_hensin_speed']").val("0");
-$("input[name='f.para_katuraginomiya_koukando']").val("5");
 $("input[name='f.katuraginomiya_au']").val("0");
 
 $("input[name='tf.test_hujieda_fumi_hensin_speed']").val("0");
-$("input[name='f.para_hujieda_koukando']").val("2");
 $("input[name='f.hujieda_au']").val("0");
 $("input[name='f.katuraginomiya_fumi_start']").val("0");
 $("input[name='f.hujieda_fumi_start']").val("0");
@@ -139,8 +149,6 @@ $("input[name='f.event_hujieda5']").val("0");
 
 $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
-$("input[name='f.para_sijyou_koukando']").val("5");
-$("input[name='f.para_kuroda_koukando']").val("3");
 
 $("input[name='f.event_katuraginomiya3']").val("0"); //デフォルト値0にしています。ご自由に設定してください
 $("input[name='f.event_katuraginomiya2']").val("0");
@@ -154,10 +162,11 @@ $("input[name='tf.event_hyouji']").val("1");
 
 $("input[name='f.para_shujinkou_tairyoku_now']").val("900");
 $("input[name='f.para_shujinkou_kiryoku_now']").val("900");
+$("input[name='tf.event_yuujin']").val("1"); //散策イベントテスト用に「友人の話題」は1=見たをデフォルト値に設定します
 
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
-[button graphic="kettei.png" target=*test_settei_kettei x=150 y=500 width=100 height=100]
+[button graphic="kettei.png" target=*test_settei_kettei x=220 y=500 width=100 height=100]
 
 [s]
 *test_settei_kettei
@@ -209,6 +218,7 @@ f.para_shujinkou_tairyoku_max = parseInt($("input[name='f.para_shujinkou_tairyok
 f.para_shujinkou_kiryoku_now = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
 f.para_shujinkou_kiryoku_max = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
 
+f.event_machi_common[1] = parseInt($("input[name='tf.event_yuujin']").val());
 [endscript]
 
 
