@@ -87,6 +87,39 @@ $('.junbi_girl').remove();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ooake.png" time=0]
 [wait time=10]
 
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。選択肢までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=lightblue size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*fumi_sentaku01
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……はぁ」
 [autosave]
@@ -611,7 +644,7 @@ $('.junbi_girl').remove();
 
 [button target=*kuroda_fumi1 graphic="moji_kuroda.png" x=200 y=50]
 [button target=*zaizen_fumi1 graphic="moji_zaizen.png" x=600 y=50]
-[button target=*kaori_fumi1 graphic="moji_kaori.png" x=200 y=150]
+[button target=*kaori_fumi1 graphic="moji_sijyou.png" x=200 y=150]
 ;[button target=*katuraginomiya_fumi1 graphic="moji_katuraginomiya.png" x=600 y=150]
 ;[button target=*hujieda_fumi1 graphic="moji_hujieda.png" x=200 y=250]
 [button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=150]
@@ -755,7 +788,6 @@ f.zaizen_fumi1_midoku = 0;
 [wait time=10]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
-;（仮）[r]
 [名字] [名前]様[r]
 [r]
 拝啓　最近では桜も咲き始め、暖かくなってきました。ご家族一同元気にお過ごしですか？[r]
@@ -782,81 +814,6 @@ f.kaori_fumi1_midoku = 0;
 @jump target=*fumi_sentaku01
 [s]
 
-*katuraginomiya_fumi1
-;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
-;	[skipstart]
-;[endif]
-[if exp="sf.KSKIP=='ON' && sf.trail_opening2_katuraginomiya_fumi1b==undefined"]
-	[skipstop]
-[endif]
-*katuraginomiya_fumi1b
-[eval exp="f.select_scene=''"]
-[font color=white size=0][r]【 『(仮)　』を選択 】[r][resetfont]
-[cm]
-[chara_mod name="bg" storage="bg/bg_tegami_katuraginomiya.jpg" time=100]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[cm]
-（仮）[r]
-　の手紙1[r]
-[r]
-（黒田ルートを一通り実装した後に余裕があれば、シナリオ募集をしたいと考えています。[r]
-[sp]その際に、設定が自由なキャラ枠がある方がやりやすいライターさんもいらっしゃるかも、と「自由枠」を設けてみています）[r]
-[r]
-（スクリプト的に攻略対象を後から追加するよりは、最初から多めに作り後から素材を流し込むor隠す方がやりやすそうなので、仮に5枠で作っていますが枠数は変更の可能性があります。[r]
-[sp]また、応募が無ければ黒田ルートのみで公開予定です）
-[autosave]
-[p]
-[iscript]
-f.katuraginomiya_fumi1_midoku = 0;
-[endscript]
-@jump target=*fumi_sentaku01
-[s]
-
-*hujieda_fumi1
-;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
-;	[skipstart]
-;[endif]
-[if exp="sf.KSKIP=='ON' && sf.trail_opening2_hujieda_fumi1b==undefined"]
-	[skipstop]
-[endif]
-*hujieda_fumi1b
-[eval exp="f.select_scene=''"]
-[font color=white size=0][r]【 『(仮)　』を選択 】[r][resetfont]
-[cm]
-[chara_mod name="bg" storage="bg/bg_tegami_hujieda.jpg" time=100]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-[主人公退場]
-[cm]
-（仮）[r]
-　の手紙1
-[autosave]
-[p]
-[iscript]
-f.hujieda_fumi1_midoku = 0;
-[endscript]
-@jump target=*fumi_sentaku01
-[s]
-
 *fumi_dokuryou01
 ;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 ;	[skipstart]
@@ -875,6 +832,40 @@ f.hujieda_fumi1_midoku = 0;
 [wait time=10]
 [主人公汗]
 [wait time=10]
+
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。次の選択肢までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=lightblue size=32]
+
+[link target=*jump_ok2]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no2]い　い　え[endlink][r]
+[resetfont]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+[s]
+
+*jump_ok2
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*isono_situmon01
+[s]
+
+*jump_no2
+[current layer="message0"]
+「いいえ」[r]
+そのまま続けます。[p]
+[cm]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ふぅ」
 [autosave]
@@ -934,7 +925,7 @@ f.hujieda_fumi1_midoku = 0;
 
 [button target=*kuroda_isono1 graphic="moji_kuroda.png" x=200 y=50]
 [button target=*zaizen_isono1 graphic="moji_zaizen.png" x=600 y=50]
-[button target=*kaori_isono1 graphic="moji_kaori.png" x=200 y=150]
+[button target=*kaori_isono1 graphic="moji_sijyou.png" x=200 y=150]
 ;[button target=*katuraginomiya_isono1 graphic="moji_katuraginomiya.png" x=600 y=150]
 ;[button target=*hujieda_isono1 graphic="moji_hujieda.png" x=200 y=250]
 [button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=150]
@@ -1003,7 +994,7 @@ f.hujieda_fumi1_midoku = 0;
 *zaizen_isono1b
 [whosay name=磯野 color="dimgray"]
 「財前様のお父様は一代にして数多の事業を成功され、[r]
-[sp]華族を襲名された実業家でございます」[p]
+[sp]新華族に叙せられた実業家でございます」[p]
 [主人公目パチ1回]
 [wait time=10]
 [主人公口開]
@@ -1013,7 +1004,8 @@ f.hujieda_fumi1_midoku = 0;
 「華族として日が浅いながらも、財政界に強い発言力を[r]
 [sp]持たれています」[p]
 [whosay name=磯野 color="dimgray"]
-「旦那様とは華族襲名来からのご友人だという事ですから、そのご縁でしょう」[p]
+「旦那様とは叙爵される以前からのご友人だという事ですから、[r]
+[sp]そのご縁でしょう」[p]
 [主人公目パチ1回]
 [wait time=10]
 [主人公口通常]
@@ -1024,8 +1016,8 @@ f.hujieda_fumi1_midoku = 0;
 [autosave]
 [p]
 [whosay name=磯野 color="dimgray"]
-「旦那様がおっしゃるには、実力のある真面目な方なそうですよ。[r]
-[sp]既にお父上の事業を手伝われ、素晴らしい成果を上げられてるとか」[p]
+「旦那様がおっしゃるには、実力のある真面目な方だそうですよ。[r]
+[sp]銀行の頭取として、素晴らしい成果を上げていらっしゃるそうです」[p]
 [主人公口ほほえみ]
 [wait time=10]
 [主人公眉通常]
@@ -1034,6 +1026,19 @@ f.hujieda_fumi1_midoku = 0;
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……凄い方なんですね」[p]
+
+[whosay name=磯野 color="dimgray"]
+「はい。お母様は独逸出身の方なので苦労されたとお聞きしましたが、[r]
+[sp]今では社交界でも指折りの人気をほこる方です」[p]
+
+[主人公驚]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「まあ！」[p]
+
+[主人公通常]
+[wait time=10]
+「そうなのですね。ありがとう」[p]
+
 [whosay name=磯野 color="dimgray"]
 「他の方で何か気になる事はありますか？」[p]
 @jump target=*isono_situmon01
@@ -1179,6 +1184,38 @@ f.hujieda_fumi1_midoku = 0;
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。イベント終わりまでjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=lightblue size=32]
+
+[link target=*jump_ok3]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no3]い　い　え[endlink][r]
+[resetfont]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+[s]
+
+*jump_ok3
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_owari
+[s]
+
+*jump_no3
+[current layer="message0"]
+「いいえ」[r]
+そのまま続けます。[p]
+[cm]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「もういいわ、色々ありがとう磯野」
@@ -1350,6 +1387,7 @@ f.hujieda_fumi1_midoku = 0;
 （時間は沢山あるのだから……ゆっくり、考えよう）
 [autosave]
 [p]
+*seen_owari
 #
 
 [stopbgm]
@@ -1386,8 +1424,13 @@ f.hujieda_fumi1_midoku = 0;
 
 ;背景非表示
 [chara_mod name="bg" storage="toumei.gif" time=100]
-
 [endreplay]
+
+
+[if exp="tf.test_gamen == true"]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+
 ;------タイトルへ戻る
 ;@jump storage="title.ks"
 
