@@ -153,7 +153,7 @@
 （黒田様と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
 [playse storage=kira.ogg loop=false ]
-[eval exp="f.para_sijyou_zaizen=f.para_zaizen_kuroda + 1"]
+[eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
 #
 私は星に願った。[p]
 
