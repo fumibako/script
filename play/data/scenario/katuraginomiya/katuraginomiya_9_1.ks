@@ -157,6 +157,15 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;【立ち絵】主人公 通常　
 [主人公通常]
 私は、殿下との
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝規定ｷｬﾗ３０以下エラー回避＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+[if exp=" f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30 && f.para_sijyou_kouroda < 30 "]
+;３０以下エラー回避　変更してください
+婚約をお受けすることにした。[p]
+;全画面ﾒｯｾｰｼﾞの分岐
+[eval exp="f.katuraginomiya_konyaku=true"]
+
+@jump target=*common
+[endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢用の背景：(和紙風桜色はオープニングで使用)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
