@@ -38,6 +38,7 @@ f.sijyou_au = 0;
 f.sijyou_omiai = 0;
 //↓イベント6後=1。それ以外=0
 f.sijyou_event6 = 0;
+f.sijyou_koukando_up_event_fumi = 2; //(調整中)イベント中に届く手紙での好感度上昇値
 //↓四条：祖母を(見た=true。見ていない=false)
 f.sijyou_sobo = false;
 f.sijyou_fumi_toutyakumachi_shumi = -1;
