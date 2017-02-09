@@ -152,9 +152,19 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_storage='common_9_1.ks'"]
 	[eval exp="f.event_target='*replay_common_9_1'"]
 	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_common[10]=1"]
+	[eval exp="f.event_common[10] = 1"]
 	@jump storage="event.ks" target=*start
 [endif]
+
+;◆badED判定 9月、誰のルートにも進行しない場合に(8月4週と同じ)badED(9月1週はお相手未定以外)
+[if exp="((f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1) || (f.okeiko_month == 9 && f.okeiko_week != 1)) && f.event_common[9]==0 && f.kuroda_au == 0 && f.sijyou_au == 0 && f.zaizen_au == 0 && f.katuraginomiya_au == 0 && f.hujieda_au == 0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_8_4_badED'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[9] = 1"]
+	@jump storage="event.ks" target=*start
+[endif]
+
 *common_event_hantei_owari
 
 ;◆各個別ルート(又はonly時)には対象キャラクターイベント判定のみ行う
@@ -220,17 +230,17 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;=============================================
 *kuroda_event_hantei
 ;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
-[if exp="(f.okeiko_month==6 && f.okeiko_week==4) && f.event_machi_kuroda[2]==0 && f.para_kuroda_koukando > 3"]
+[if exp="(f.okeiko_month == 6 && f.okeiko_week == 4) && f.event_machi_kuroda[2] == 0 && f.para_kuroda_koukando > 3"]
 	@jump storage="sansaku.ks" target=*sansaku_machi_kuroda_02
 [endif]
 
 ;◆黒田イベント判定【友人からの忠告】8月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
-;[if exp="(f.okeiko_month==8 && f.okeiko_week==4) && f.event_machi_kuroda[3]==1 && f.event_machi_kuroda[5]==0 && f.para_kuroda_koukando > 20"]
+;[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_machi_kuroda[3] == 1 && f.event_machi_kuroda[5] == 0 && f.para_kuroda_koukando > 20"]
 ;	@jump storage="sansaku.ks" target=*sansaku_machi_kuroda_05
 ;[endif]
 
 ;◆黒田イベント判定【顔合せ】判定 黒田ルートかつ9月3週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==9 && f.okeiko_week==3) && f.event_kuroda[1]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 3) && f.event_kuroda[1] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_9_3.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_9_3'"]
 	[eval exp="f.event_type='talk'"]
@@ -239,7 +249,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【手紙が届く：紅葉散策お誘い】黒田ルートかつ9月4週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==9 && f.okeiko_week==4) && f.event_kuroda[2]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 4) && f.event_kuroda[2] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_9_4.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_9_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -248,7 +258,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【初デート】黒田ルートかつ10月3週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==10 && f.okeiko_week==3) && f.event_kuroda[3]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 10 && f.okeiko_week == 3) && f.event_kuroda[3] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_10_3.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_10_3'"]
 	[eval exp="f.event_type='talk'"]
@@ -257,7 +267,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【手紙が届く：散策お誘い】黒田ルートかつ10月4週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==10 && f.okeiko_week==4) && f.event_kuroda[4]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 10 && f.okeiko_week == 4) && f.event_kuroda[4] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_10_4.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_10_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -266,7 +276,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【友人に会う】黒田ルートかつ11月1週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==11 && f.okeiko_week==1) && f.event_kuroda[5]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 11 && f.okeiko_week == 1) && f.event_kuroda[5] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_11_1.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_11_1'"]
 	[eval exp="f.event_type='talk'"]
@@ -275,7 +285,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【デート】黒田ルートかつ11月2週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==11 && f.okeiko_week==2) && f.event_kuroda[6]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 11 && f.okeiko_week == 2) && f.event_kuroda[6] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_11_2.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_11_2'"]
 	[eval exp="f.event_type='talk'"]
@@ -284,7 +294,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【黒田多忙と聞く】黒田ルートかつ11月3週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==11 && f.okeiko_week==3) && f.event_kuroda[7]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 11 && f.okeiko_week == 3) && f.event_kuroda[7] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_11_3.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_11_3'"]
 	[eval exp="f.event_type='talk'"]
@@ -293,7 +303,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【黒田母倒れデートキャンセル】黒田ルートかつ11月4週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==11 && f.okeiko_week==4) && f.event_kuroda[8]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 11 && f.okeiko_week == 4) && f.event_kuroda[8] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_11_4.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_11_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -302,7 +312,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【黒田実験失敗と聞く→手紙を書こうと決意】黒田ルートかつ12月2週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==12 && f.okeiko_week==2) && f.event_kuroda[9]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 12 && f.okeiko_week == 2) && f.event_kuroda[9] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_12_2.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_12_2'"]
 	[eval exp="f.event_type='talk'"]
@@ -311,7 +321,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【分岐：badED】黒田ルートかつ12月3週になった時点で淑女度一定値未満好感度一定値未満又は麦の穂無しでbadED
-[if exp="(f.okeiko_month==12 && f.okeiko_week==3) && f.event_kuroda[10]==0 && f.kuroda_au==1 &&(f.para_shujinkou_shukujodo <= 40 ||f.para_kuroda_koukando <= 50 || f.event_machi_kuroda[2]==0)"]
+[if exp="(f.okeiko_month == 12 && f.okeiko_week == 3) && f.event_kuroda[10] == 0 && f.kuroda_au == 1 &&(f.para_shujinkou_shukujodo <= 40 ||f.para_kuroda_koukando <= 50 || f.event_machi_kuroda[2] == 0)"]
 	[eval exp="f.event_storage='kuroda_12_3_badED.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_12_3_badED'"]
 	[eval exp="f.event_type='talk'"]
@@ -320,7 +330,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【分岐：normal/goodED】黒田ルートかつ12月3週になった時点で好感度一定値以上かつ麦の穂所持で1度だけ発生
-[if exp="(f.okeiko_month==12 && f.okeiko_week==3) && f.event_kuroda[11]==0 && f.kuroda_au==1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2]==1"]
+[if exp="(f.okeiko_month == 12 && f.okeiko_week == 3) && f.event_kuroda[11] == 0 && f.kuroda_au == 1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2] == 1"]
 	[eval exp="f.event_storage='kuroda_12_3.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_12_3'"]
 	[eval exp="f.event_type='talk'"]
@@ -329,7 +339,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【手紙が届く：年賀状】黒田ルートかつ1月1週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==1 && f.okeiko_week==1) && f.event_kuroda[12]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 1 && f.okeiko_week == 1) && f.event_kuroda[12] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_1_1.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_1_1'"]
 	[eval exp="f.event_type='talk'"]
@@ -338,7 +348,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【手紙が届く：お礼とお誘い】黒田ルートかつ1月4週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==1 && f.okeiko_week==4) && f.event_kuroda[13]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 1 && f.okeiko_week == 4) && f.event_kuroda[13] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_1_4.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_1_4'"]
 	[eval exp="f.event_type='talk'"]
@@ -347,7 +357,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【小料理屋】黒田ルートかつ2月2週になった時点で1度だけ発生
-[if exp="(f.okeiko_month==2 && f.okeiko_week==2) && f.event_kuroda[14]==0 && f.kuroda_au==1"]
+[if exp="(f.okeiko_month == 2 && f.okeiko_week == 2) && f.event_kuroda[14] == 0 && f.kuroda_au == 1"]
 	[eval exp="f.event_storage='kuroda_2_2.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_2_2'"]
 	[eval exp="f.event_type='talk'"]
