@@ -1041,8 +1041,6 @@ $('.junbi_girl').remove();
 「また、お手紙はいただくばかりではなく[r]
 [sp]もっとご自分からも出されると良いのではないでしょうか」[p]
 
-
-
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1090,7 +1088,6 @@ $('.junbi_girl').remove();
 
 ;回想記録終了 
 [endreplay] 
-
 
 *window_close
 [cm]

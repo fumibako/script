@@ -38,9 +38,43 @@
 ;【立ち絵】主人公：目閉じ
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
+[プリロード画面消去]
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。イベント終わりまでjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_owari
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続けます。[p]
+[cm]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……黒田様。お手紙の人柄に、触れてみたい）
-[プリロード画面消去]
 [p]
 
 ;【立ち絵】主人公：決意
@@ -267,9 +301,11 @@
 [endif]
 
 ;個別ルート前夜終了
-
-
-[eval exp="f.kuroda_au=1"]
+*seen_owari
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+[eval exp="f.kuroda_au = 1"]
+[eval exp="f.event_oaite_mitei = 0"]
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 

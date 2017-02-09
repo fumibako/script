@@ -108,6 +108,7 @@ $('.loding_pic1').remove();
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+[freeimage layer = 26]
 [chara_new name="girl_base" storage="toumei.gif"]
 [chara_show left=1 top=381 layer=15 name="girl_base" time=0]
 [wait time=10]
@@ -154,6 +155,7 @@ $('.loding_pic1').remove();
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+[freeimage layer = 26]
 [chara_new name="girl_base" storage="toumei.gif"]
 [chara_show left=1 top=381 layer=15 name="girl_base" time=0]
 [wait time=10]
@@ -217,6 +219,7 @@ $('.loding_pic1').remove();
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+[freeimage layer = 26]
 [chara_new name="girl_base" storage="toumei.gif"]
 [chara_show left=1 top=381 layer=15 name="girl_base" time=0]
 [wait time=10]
@@ -280,6 +283,7 @@ $('.loding_pic1').remove();
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+[freeimage layer = 26]
 [chara_new name="girl_base" storage="toumei.gif"]
 [chara_show left=1 top=381 layer=15 name="girl_base" time=0]
 [wait time=10]
@@ -330,7 +334,6 @@ $('.loding_pic1').remove();
 [resetfont]
 [endmacro]
 
-
 ;◆[イベントシーン構築枠茶色]
 [macro name="イベントシーン構築枠茶色"]
 ;↓メッセージ枠名前残り消去
@@ -344,6 +347,7 @@ $('.loding_pic1').remove();
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+[freeimage layer = 26]
 [chara_new name="girl_base" storage="toumei.gif"]
 [chara_show left=1 top=381 layer=15 name="girl_base" time=0]
 [wait time=10]
@@ -444,6 +448,28 @@ $('.loding_pic1').remove();
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
+[endmacro]
+
+;◆ex[話題入手 wadai_txt="『読書の話題』を手に入れました"]
+;配列のmp変数への入力はうまくいかなかったので、以下(話題内容と値は変更のこと)を追記する必要あり
+;[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('読書の話題',0,0,0,1,2,'a','','','','')"]
+[macro name="話題入手"]
+[iscript]
+f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
+f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
+[endscript]
+[layopt layer=26 visible=true]
+[image layer=26 x=250 y=40 storage="button/frame_lesson_message.png"]
+[wait time=10]
+[eval exp="f.sansaku_machi_seika_txt1= mp.wadai_txt"]
+[ptext text=&f.sansaku_machi_seika_txt1 layer=26 size=21 x=310 y=75 color=darkslateblue bold=bold]
+[wait time=10]
+;【SE】キラキラ
+[playse storage=kira.ogg loop=false ]
+[p]
+[freeimage layer = 26]
+
+
 [endmacro]
 
 ;◆[チラシ]
@@ -587,10 +613,10 @@ $('.loding_pic1').remove();
 [chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[position left=150 width=720 height=600 top=30 page=fore margint="0"]
 
 ;テキスト全画面
-[font color=white size=27]
+[font color=white size=26]
 ;#
 
 [endmacro]

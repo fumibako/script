@@ -148,27 +148,20 @@ TG.stat.play_se = true;
 ;=============================================
 ;重要イベント判定(共通イベントよりも優先して発生させたいイベントはこちらに記載します
 ;=============================================
-;◆黒田イベント2判定【麦】6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生(まずokeiko.ksの*event_hanteiで判定し、このファイル上*sansakuに飛んでいる)
-[if exp="(f.okeiko_month==6 && f.okeiko_week==4) && f.event_machi_kuroda[2]==0 && f.para_kuroda_koukando > 5"]
-	@jump target=*sansaku_machi_kuroda_02
-[endif]
+;◆黒田イベント2判定【麦】(判定部分はevent_hantei_week_hajime.ksに移動しました)
 
-;=============================================
-;◆共通イベント判定
-;=============================================
-;◆共通イベント1判定【友人に会う】4月1週～6月4週、期間中に町へ行くと1度だけ発生
-[if exp="(f.okeiko_month==4 || f.okeiko_month==5 || f.okeiko_month==6) && f.event_machi_common[1]==0"]
-	@jump target=*sansaku_machi_common_01
+;◆各個別ルート(又はonly時)には対象キャラクターイベント判定のみ行う
+[if exp="f.zaizen_au == 1"]
+@jump target=*zaizen_event_hantei
 [endif]
-
-;◆共通イベント2判定【新茶】4月3週～5月2週、期間中に町へ行くと1度だけ発生
-[if exp="((f.okeiko_month==4 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==5 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_common[2]==0"]
-	@jump target=*sansaku_machi_common_02
+[if exp="f.sijyou_au == 1"]
+@jump target=*sijyou_event_hantei
 [endif]
-
-;◆共通イベント1判定【さつき】5月3週～6月2週、期間中に町へ行くと1度だけ発生(以前は黒田イベントだったため、変数にその名残があります)
-[if exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_kuroda[1]==0"]
-	@jump target=*sansaku_machi_kuroda_01
+[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
+@jump target=*katuraginomiya_event_hantei
+[endif]
+[if exp="f.hujieda_au == 1"]
+@jump target=*hujieda_event_hantei
 [endif]
 
 ;=============================================
@@ -177,19 +170,28 @@ TG.stat.play_se = true;
 *sijyou_event_hantei
 @jump storage="01_sijyou_event_hantei_sansaku.ks" target=*start
 *sijyou_event_hantei_owari
+[if exp="f.sijyou_au == 1"]
+@jump target=*event_hantei_owari
+[endif]
 
 ;=============================================
 ;◆財前イベント判定
 ;=============================================
+*zaizen_event_hantei
 ;◆財前イベント判定【バザー】財前ルートかつ2月1週から3月4週、礼法が70(暫定)以上で期間中に町へ行くと1度だけ発生
 [if exp="(f.okeiko_month==2 || f.okeiko_month==3) && f.event_machi_zaizen[1]==0 && f.para_shujinkou_j_reihou >= 70 && f.zaizen_au==1"]
 	[eval exp="f.event_machi_zaizen[1]=1"]
 	@jump storage="zaizen/zaizen_bazaar.ks"
 [endif]
+*zaizen_event_hantei_owari
+[if exp="f.zaizen_au == 1"]
+@jump target=*event_hantei_owari
+[endif]
 
 ;=============================================
 ;◆葛城宮イベント判定
 ;=============================================
+*katuraginomiya_event_hantei
 ;◆葛城宮イベント判定【散策1】葛城宮ルート2月2週から3月3週期間中に散策で1度だけ発生(散策2へ続く物語となるため元案の3月4週までではなく3月3週までに変更しました)
 [if exp="((f.okeiko_month==2 && f.okeiko_week!=1) || (f.okeiko_month==3 && f.okeiko_week!=4)) && f.event_machi_katuraginomiya[1]==0 && f.katuraginomiya_au==1"]
 	[eval exp="f.event_machi_katuraginomiya[1]=1"]
@@ -199,22 +201,32 @@ TG.stat.play_se = true;
 ;◆葛城宮イベント判定【散策2】葛城宮ルートで散策1を見ている状態で2月2週から3月4週期間中に散策をすると、1度だけ発生。判定順から散策1が先に発生すると思いますが、念のためf.event_machi_katuraginomiya[1]==1 を条件に加えます
 [if exp="((f.okeiko_month==2 && f.okeiko_week!=1) || f.okeiko_month==3) && f.event_machi_katuraginomiya[1]==1 && f.event_machi_katuraginomiya[2]==0 && f.katuraginomiya_au==1"]
 	[eval exp="f.event_machi_katuraginomiya[2]=1"]
-	[eval exp="f.katuraginomiya_fumi_inou = 2"]
+	[eval exp="f.katuraginomiya_fumi_inou = 3"]
 	@jump storage="katuraginomiya/katuraginomiya_sansaku2.ks"
+[endif]
+*katuraginomiya_event_hantei_owari
+[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
+@jump target=*event_hantei_owari
 [endif]
 
 ;=============================================
 ;◆藤枝イベント判定
 ;=============================================
+*hujieda_event_hantei
 ;◆藤枝イベント判定【藤枝晶子さん(藤枝お姉さん)と話す】藤枝ルートかつ2月3週から3月4週期間中に町へ行くと1度だけ発生
 [if exp="((f.okeiko_month==2 && (f.okeiko_week==3 || f.okeiko_week==4)) || f.okeiko_month==3) && f.event_machi_hujieda[1]==0 && f.hujieda_au==1"]
 	[eval exp="f.event_machi_hujieda[1]=1"]
 	@jump storage="hujieda/hujieda_sansaku1.ks"
 [endif]
+*hujieda_event_hantei_owari
+[if exp="f.hujieda_au == 1"]
+@jump target=*event_hantei_owari
+[endif]
 
 ;=============================================
 ;◆黒田イベント判定
 ;=============================================
+*kuroda_event_hantei
 ;◆黒田イベント3判定【黒田家のうわさ１】7月1週～4週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
 [if exp="f.okeiko_month==7 && f.event_machi_kuroda[3]==0 && f.para_kuroda_koukando > 10"]
 	@jump target=*sansaku_machi_kuroda_03
@@ -235,6 +247,26 @@ TG.stat.play_se = true;
 	@jump target=*sansaku_machi_kuroda_06
 [endif]
 
+*kuroda_event_hantei_owari
+[if exp="f.kuroda_au == 1"]
+@jump target=*event_hantei_owari
+[endif]
+
+;=============================================
+;◆攻略対象固有イベント判定終わり
+;=============================================
+*event_hantei_owari
+
+;=============================================
+;◆共通イベント判定
+;=============================================
+*sansaku_hantei_common
+@jump storage="sansaku_hantei_common.ks" target=*start
+*sansaku_hantei_common_owari
+
+;=============================================
+;◆散策イベント
+;=============================================
 *sansaku_machi_normal
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
@@ -915,10 +947,14 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 	[skipstop]
 [endif]
 *machi_kuroda_02
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 ;【背景】主人公邸_庭
 [背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [wait time=10]
 ;【SE】鳥のさえずり
 [playse storage=tori_yatyou.ogg loop=false ]
@@ -928,6 +964,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「久々に、気持ちの良いお天気ね。[r]
 [sp]お出かけしてみましょう」
@@ -945,8 +983,11 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 #
 町へ出た。[r]
 お茶屋の表から声がする。[p]
+[if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ(町
 [playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 
 [主人公目パチ1回]
 [wait time=10]
