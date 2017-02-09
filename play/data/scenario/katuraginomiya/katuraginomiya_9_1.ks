@@ -157,9 +157,17 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;【立ち絵】主人公 通常　
 [主人公通常]
 私は、殿下との
+
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝葛城のみの攻略＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+[if exp="f.katuraginomiya_only == 1 "]
+婚約をお受けすることにした。[p]
+;全画面ﾒｯｾｰｼﾞの分岐
+[eval exp="f.katuraginomiya_konyaku=true"]
+@jump target=*common
+[endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝規定ｷｬﾗ３０以下エラー回避＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [if exp=" f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30 && f.para_kuroda_koukando < 30 "]
-;３０以下エラー回避　変更してください
+;３０以下エラー回避　ﾒｯｾｰｼﾞ変更してください　9_1共通とは別の動作（9_1がサポートするのは選択肢）＆テスト時にスムーズに進行するために必要
 婚約をお受けすることにした。[p]
 ;全画面ﾒｯｾｰｼﾞの分岐
 [eval exp="f.katuraginomiya_konyaku=true"]
