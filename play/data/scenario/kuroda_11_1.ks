@@ -158,6 +158,9 @@
 黒田様のお姿を思い出しつつ、私は友人と挨拶を交わして家に戻った。[p]
 
 ;（11月第1週）町で友人に会うイベント終了
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 

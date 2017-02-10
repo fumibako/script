@@ -152,6 +152,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [sp]木々の冬仕度も楽しみに、ご一緒させていただきたく存じます……）[p]
 
 ;手紙編終了
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 

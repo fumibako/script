@@ -363,6 +363,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 窓から射す陽光が、ひときわ明るさを増して見えた。[p]
 ;お正月、黒田から年賀状編終了
 
+;◆「休憩中」画像消去
+[freeimage layer = 26]
 
 @jump storage="event.ks" target=*event_owari
 

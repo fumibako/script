@@ -241,6 +241,9 @@
 [sp]折を見て、渡しますよ」[p]
 
 ;町で田中に会う編終了
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 

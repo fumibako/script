@@ -283,6 +283,9 @@
 （いつか見せてくださるかしら。もう少し、打ち解けたいわ）[p]
 
 ;町にお出かけ編、終了（11月第3週）
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 

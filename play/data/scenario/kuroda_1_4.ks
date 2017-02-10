@@ -286,6 +286,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;【部分分岐】無地の便せん【終了】
 
 ;手紙編終了
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 

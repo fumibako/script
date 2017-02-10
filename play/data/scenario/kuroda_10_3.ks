@@ -890,6 +890,8 @@
 ;紅葉散策編終了
 [黒田退場]
 [wait time=10]
+;◆「休憩中」画像消去
+[freeimage layer = 26]
 
 @jump storage="event.ks" target=*event_owari
 
