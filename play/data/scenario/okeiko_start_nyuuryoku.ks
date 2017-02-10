@@ -50,11 +50,17 @@
 [ptext text="藤枝：お返事イベント(0=未見、1=見た)" layer=29 size=15 x=700 y=490 color=darkslateblue bold=bold]
 [edit left=700 top=510 width=200 length=200 maxchars=3 name="f.event_hujieda5" height=20]
 
-[ptext text="四条：好感度（元の設定値=5)" layer=29 size=15 x=700 y=540 color=darkslateblue bold=bold]
-[edit left=700 top=560 width=200 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
+[ptext text="四条好感度（元値=5)" layer=29 size=15 x=580 y=540 color=darkslateblue bold=bold]
+[edit left=600 top=560 width=50 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
 
-[ptext text="黒田：好感度（元の設定値=3)" layer=29 size=15 x=700 y=590 color=darkslateblue bold=bold]
-[edit left=700 top=610 width=200 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
+[ptext text="四条ルート 1=内,0=外" layer=29 size=15 x=750 y=540 color=darkslateblue bold=bold]
+[edit left=750 top=560 width=50 length=200 maxchars=3 name="f.sijyou_au" height=20]
+
+[ptext text="黒田好感度（元値=3)" layer=29 size=15 x=580 y=590 color=darkslateblue bold=bold]
+[edit left=600 top=610 width=50 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
+
+[ptext text="黒田ルート 1=内,0=外" layer=29 size=15 x=750 y=590 color=darkslateblue bold=bold]
+[edit left=750 top=610 width=50 length=200 maxchars=3 name="f.kuroda_au" height=20]
 
 [ptext text="熟練度：茶道" layer=29 size=15 x=10 y=190 color=darkslateblue bold=bold]
 [edit left=10 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
@@ -113,8 +119,12 @@
 [ptext text="お見合い決定済(0決定、1未定)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
 [edit left=345 top=610 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
 
-[ptext text="イベント「友人」1=見た、0=未見" layer=29 size=13 x=10 y=545 color=darkslateblue bold=bold]
-[edit left=10 top=560 width=50 length=200 maxchars=3 name="tf.event_yuujin" height=20]
+[ptext text="共通追加分以外の散策イベント 1=表示,0=非表示" layer=29 size=10 x=10 y=545 color=darkslateblue bold=bold]
+[edit left=10 top=560 width=50 length=200 maxchars=3 name="tf.event_sansaku_hyouji" height=20]
+
+[ptext text="8月以前の↑散策イベント 1=表示,0=非表示" layer=29 size=12 x=10 y=585 color=darkslateblue bold=bold]
+[edit left=75 top=560 width=50 length=200 maxchars=3 name="tf.event_sansaku_hyouji_before_au" height=20]
+
 
 [iscript]
 //入力済デフォルト値の設定
@@ -132,6 +142,8 @@ $("input[name='tf.test_hujieda_fumi_hensin_speed']").val("0");
 $("input[name='f.hujieda_au']").val("0");
 $("input[name='f.katuraginomiya_fumi_start']").val("0");
 $("input[name='f.hujieda_fumi_start']").val("0");
+$("input[name='f.sijyou_au']").val("0");
+$("input[name='f.kuroda_au']").val("0");
 
 $("input[name='f.para_shujinkou_j_sadou']").val("0");
 $("input[name='f.para_shujinkou_j_kadou']").val("0");
@@ -162,8 +174,8 @@ $("input[name='tf.event_hyouji']").val("1");
 
 $("input[name='f.para_shujinkou_tairyoku_now']").val("900");
 $("input[name='f.para_shujinkou_kiryoku_now']").val("900");
-$("input[name='tf.event_yuujin']").val("1"); //散策イベントテスト用に「友人の話題」は1=見たをデフォルト値に設定します
-
+$("input[name='tf.event_sansaku_hyouji']").val("0"); //仮にデフォルト値0にしています。ご自由に変更してください
+$("input[name='tf.event_sansaku_hyouji_before_au']").val("0"); //仮にデフォルト値0にしています。ご自由に変更してください
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*test_settei_kettei x=220 y=500 width=100 height=100]
@@ -185,6 +197,8 @@ f.para_hujieda_koukando = parseInt($("input[name='f.para_hujieda_koukando']").va
 f.hujieda_au = parseInt($("input[name='f.hujieda_au']").val());
 f.para_sijyou_koukando = parseInt($("input[name='f.para_sijyou_koukando']").val());
 f.para_kuroda_koukando = parseInt($("input[name='f.para_kuroda_koukando']").val());
+f.sijyou_au = parseInt($("input[name='f.sijyou_au']").val());
+f.kuroda_au = parseInt($("input[name='f.kuroda_au']").val());
 
 f.para_shujinkou_j_sadou = parseInt($("input[name='f.para_shujinkou_j_sadou']").val());
 f.para_shujinkou_j_kadou = parseInt($("input[name='f.para_shujinkou_j_kadou']").val());
@@ -218,7 +232,11 @@ f.para_shujinkou_tairyoku_max = parseInt($("input[name='f.para_shujinkou_tairyok
 f.para_shujinkou_kiryoku_now = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
 f.para_shujinkou_kiryoku_max = parseInt($("input[name='f.para_shujinkou_kiryoku_now']").val());
 
-f.event_machi_common[1] = parseInt($("input[name='tf.event_yuujin']").val());
+//f.event_machi_common[1] = parseInt($("input[name='tf.event_yuujin']").val());
+//f.event_machi_sijyou[9] = parseInt($("input[name='tf.event_sijyou9']").val());
+tf.event_sansaku_hyouji =  parseInt($("input[name='tf.event_sansaku_hyouji']").val());
+tf.event_sansaku_hyouji_before_au =  parseInt($("input[name='tf.event_sansaku_hyouji_before_au']").val());
+
 [endscript]
 
 

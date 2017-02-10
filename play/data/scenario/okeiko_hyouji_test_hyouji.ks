@@ -6,7 +6,7 @@
 @layopt layer=message1 page=fore visible = false
 [current layer="message1"]
 ;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message1 left=0 width=500 height=140 top=120 page=fore color=white opacity=150]
+[position layer=message1 left=0 width=600 height=140 top=120 page=fore color=white opacity=150]
 @layopt layer=message1 page=fore visible = true
 [font color=glay size=15]
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
@@ -51,7 +51,9 @@
 財前好感度=[emb exp="f.para_zaizen_koukando"],
 [endif]
 
-財前ルート(1○,0×)=[emb exp="f.zaizen_au"]
+財前ルート(1○,0×)=[emb exp="f.zaizen_au"][r]
+イベント(1表示,0非表示)=[emb exp="tf.event_hyouji"]
+
 ;↓他ルートテスト用に準備中です
 ;攻略対象名テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_oaite_name_fumi_hensin_speed"],好感度[emb exp="f.para_oaite_name_koukando"][r]
 

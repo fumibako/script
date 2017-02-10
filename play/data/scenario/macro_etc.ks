@@ -462,7 +462,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [image layer=26 x=250 y=40 storage="button/frame_lesson_message.png"]
 [wait time=10]
 [eval exp="f.sansaku_machi_seika_txt1= mp.wadai_txt"]
-[ptext text=&f.sansaku_machi_seika_txt1 layer=26 size=21 x=310 y=75 color=darkslateblue bold=bold]
+[ptext text=&f.sansaku_machi_seika_txt1 layer=26 size=21 x=275 y=75 color=darkslateblue bold=bold]
 [wait time=10]
 ;【SE】キラキラ
 [playse storage=kira.ogg loop=false ]

@@ -143,14 +143,20 @@ TG.stat.play_se = true;
 ;[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
 ;[chara_config ptext="chara_name_area"]
 
-;◆◆散策機能_イベント発生判定
+;=============================================
+;=============================================
+;◆◆散策機能_イベント発生判定開始
+;=============================================
 *sansaku_machi_event_hantei
 ;=============================================
-;重要イベント判定(共通イベントよりも優先して発生させたいイベントはこちらに記載します
+;「他の散策イベント非表示時」は共通散策イベントの該当部分※のみチェック
+;※(話題関係散策イベント新規分、「手紙」の散策イベント)
+[if exp="tf.event_sansaku_hyouji == 0"]
+@jump target=*sansaku_hantei_common
+[endif]
 ;=============================================
-;◆黒田イベント2判定【麦】(判定部分はevent_hantei_week_hajime.ksに移動しました)
-
-;◆各個別ルート(又はonly時)には対象キャラクターイベント判定のみ行う
+;◆各個別ルート(又はonly時)には対象キャラクターイベント判定と共通ルート判定のみ行う
+;=============================================
 [if exp="f.zaizen_au == 1"]
 @jump target=*zaizen_event_hantei
 [endif]
@@ -163,6 +169,11 @@ TG.stat.play_se = true;
 [if exp="f.hujieda_au == 1"]
 @jump target=*hujieda_event_hantei
 [endif]
+
+;=============================================
+;重要イベント判定(共通イベントよりも優先して発生させたいイベントはこちらに記載します
+;=============================================
+;◆黒田イベント2判定【麦】(判定部分はevent_hantei_week_hajime.ksに移動しました)
 
 ;=============================================
 ;◆四条イベント判定
@@ -261,6 +272,32 @@ TG.stat.play_se = true;
 ;◆共通イベント判定
 ;=============================================
 *sansaku_hantei_common
+;=============================================
+;◆各ルート問題発生時に共通散策イベント判定を回避(後日落ち着いてから、共通イベントを見ていただくことができます)
+;「○○の話題で手紙を書いてみましょう」など散策イベント中の主人公の言動と物語の流れが合わないため、後日見ていただくようにします
+;各ルート回避時期については調整可能です(スレで相談します)
+;=============================================
+;◇財前ルート11月4週～1月3週は共通散策イベント発生回避
+[if exp="f.zaizen_au == 1 && ((f.okeiko_month == 11 && f.okeiko_week == 4)|| f.okeiko_month == 12 || (f.okeiko_month == 1 && f.okeiko_week != 4))"]
+@jump target=*sansaku_hantei_common_owari
+[endif]
+;◇四条ルート10月1週～11月2週は共通散策イベント発生回避(11月1週イベント後自動で3週になるはずですが、念のため11月2週も回避します)
+[if exp="f.sijyou_au == 1 && (f.okeiko_month == 10 && (f.okeiko_month == 11 && (f.okeiko_week == 1 && f.okeiko_week == 2)))"]
+@jump target=*sansaku_hantei_common_owari
+[endif]
+;◇葛城宮ルート10月2週～2月1週は共通散策イベント発生回避
+[if exp="f.katuraginomiya_au == 1 && ((f.okeiko_month == 10 && f.okeiko_week != 1)|| f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 ||(f.okeiko_month == 2 && f.okeiko_week == 1))"]
+@jump target=*sansaku_hantei_common_owari
+[endif]
+;◇藤枝ルート11月1週～2月2週は共通散策イベント発生回避(2月3週から手紙を許される)
+[if exp="f.hujieda_au == 1 && (f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 ||(f.okeiko_month == 2 && (f.okeiko_week == 1 && f.okeiko_week == 2)))"]
+@jump target=*sansaku_hantei_common_owari
+[endif]
+;◇黒田ルート11月4週～12月4週は共通散策イベント発生回避
+[if exp="f.kuroda_au == 1 && ((f.okeiko_month == 11 && f.okeiko_week == 4)|| f.okeiko_month == 12)"]
+@jump target=*sansaku_hantei_common_owari
+[endif]
+
 @jump storage="sansaku_hantei_common.ks" target=*start
 *sansaku_hantei_common_owari
 

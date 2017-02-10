@@ -17,11 +17,11 @@
 [wait time=10]
 [endif]
 
+*event_hantei_week_hajime
 ;◆イベント全般(1表示、0非表示)tf.event_hyouji == 0の場合はイベント判定をカット
 [if exp="tf.event_hyouji == 0"]
 @jump target=*event_hantei_week_hajime_owari
 [endif]
-*event_hantei_week_hajime
 ;◆イベント判定(週始め)へ飛んで戻ってくる
 @jump storage="event_hantei_week_hajime.ks" target=*start
 *event_hantei_week_hajime_owari

@@ -1,4 +1,4 @@
-*sansaku_machi_common_B4nFWraU42_01
+﻿*sansaku_machi_common_B4nFWraU42_01
 ;=======================================================================================
 ;◆町_共通イベント 01
 ;『一日のはじまりの話題』
@@ -53,8 +53,12 @@
 「そうですね……」[p]
 [fadeoutbgm time=3000]
 #
-『一日のはじまり』についての話題を手に入れました。[p]
+;『一日のはじまり』についての話題を手に入れました。[p]
+;【話題入手】
+[話題入手 wadai_txt="『1日のはじまりの話題』を手に入れました"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('1日のはじまりの話題',0,2,1,1,1,'a','','','','')"]
 [イベントシーン終了]
+[イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
 
@@ -107,8 +111,12 @@
 「[名前]さんって聞き上手ね！」[p]
 [fadeoutbgm time=3000]
 #
-『聞き上手と話し上手』についての話題を入手しました。[p]
+;『聞き上手と話し上手』についての話題を入手しました。[p]
+;【話題入手】
+[話題入手 wadai_txt="『聞き上手と話し上手の話題』を手に入れました"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('聞き上手と話し上手の話題',0,0,2,0,0,'a','','','','')"]
 [イベントシーン終了]
+[イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
 
@@ -157,8 +165,12 @@
 [fadeoutbgm time=3000]
 #
 ;長い道のりに行き交う人々を目にしながら、ふと思ってしまった。[p]
-『道』についての話題を手に入れました。[p]
+;『道』についての話題を手に入れました。[p]
+;【話題入手】
+[話題入手 wadai_txt="『道の話題』を手に入れました"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('道の話題',0,2,0,1,1,'a','','','','')"]
 [イベントシーン終了]
+[イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
 
@@ -182,7 +194,7 @@
 [主人公通常]
 [wait time=10]
 #
-散策イベント◆B4nFWraU42さんご担当その4です。[p]
+;散策イベント◆B4nFWraU42さんご担当その4です。[p]
 [whosay name="既婚の友人"]
 「[名前]さん！　お久しぶりですわ」[p]
 [if exp="sf.BGM=='ON'"]
@@ -229,7 +241,11 @@
 [主人公口ほほえみ]
 「お手紙に添えて、あの方にお送りしてみようかしら」[p]
 [fadeoutbgm time=3000]
+;【話題入手】
+[話題入手 wadai_txt="『緑の石』と『緑の石の話題』を手に入れました"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('緑の石の話題',0,1,0,2,1,'a','','','','')"]
 [イベントシーン終了]
+[イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
 
@@ -272,8 +288,12 @@
 (そういえば、あの方が好きな曲って何かしら？)[p]
 [fadeoutbgm time=3000]
 #
-『お気に入りの曲 』についての話題を得た。[p]
+;『お気に入りの曲 』についての話題を得た。[p]
+;【話題入手】
+[話題入手 wadai_txt="『お気に入りの曲の話題』を手に入れました"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('お気に入りの曲の話題',0,2,-1,0,2,'a','','','','')"]
 [イベントシーン終了]
+[イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
 
@@ -345,8 +365,12 @@
 (あの方は、ネコはお好きかしら……？)[p]
 [fadeoutbgm time=3000]
 #
-『猫』の話題を入手しました。[p]
+;『猫』の話題を入手しました。[p]
+;【話題入手】
+[話題入手 wadai_txt="『猫の話題』を手に入れました"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('猫の話題',0,0,0,1,-1,'a','','','','')"]
 [イベントシーン終了]
+[イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
 
@@ -402,7 +426,11 @@
 [fadeoutbgm time=3000]
 #
 『変化と永遠』についての話題を得た。[p]
+;【話題入手】
+[話題入手 wadai_txt="『変化と永遠についての話題』を手に入れました"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('変化と永遠についての話題',0,2,1,1,2,'a','','','','')"]
 [イベントシーン終了]
+[イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
 *sansaku_machi_common_B4nFWraU42_08
@@ -425,7 +453,7 @@
 [主人公通常]
 [wait time=10]
 #
-梅雨の特有の湿気を帯びた土の香りがする[p]
+梅雨の特有の湿気を帯びた土の香りがする。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 (せっかく散策に出たのに、今にも雨が降り出しそうだわ……)[p]
@@ -464,6 +492,7 @@
 (……今日は帰りましょうか)[p]
 ;[fadeoutbgm time=3000]
 [イベントシーン終了]
+[イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
 ;=======================================================================================
