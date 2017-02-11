@@ -40,13 +40,13 @@
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 
 [link target=*jump_ok]は　　　い[endlink][r]
 [r][r][r]
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
-[プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
 [s]
 
 
@@ -73,9 +73,9 @@ jumpします。[p]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
+[プリロード画面消去]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 「あら？」
-[プリロード画面消去]
 [autosave]
 [p]
 
