@@ -88,11 +88,17 @@
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-
 [イベントシーン構築]
+主人公復帰表情目閉じ　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
+[主人公ポーズ通常]
+[主人公通常]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ポーズ通常]
 [wait time=10]
 [主人公照れ目普通]
 [主人公ポーズ指]
@@ -127,11 +133,14 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+
 #
 町は賑やかな活気を見せる中、一人の人がビラを配っている。[p]
 [stopbgm]
@@ -144,16 +153,14 @@
 [endif]
 
 [whosay name=大衆食堂店員" ]
-「すぐそこの角に大衆食堂が開店！！[r]
-[sp]お品書きはこちらだよ」[p]
+「すぐそこの角に大衆食堂が開店！！　お品書きはこちらだよ」[p]
 
 [whosay name=町人男性 " ]
 「ついにここにも大衆食堂ができたか。[r]
 [sp]コロッケはあるんだろうな？」[p]
 
 [whosay name=町人女性 " ]
-「大衆食堂も増えたものね……。[r]
-[sp]ビフテキもあるかしら」[p]
+「大衆食堂も増えたものね……。 ビフテキもあるかしら」[p]
 
 #
 人々が広告を受け取っていく。[p]
@@ -161,8 +168,8 @@
 [whosay name=大衆食堂店員" ]
 「お嬢さんもどうだい？」[p]
 
-[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
 「え！　ええ。」[p]
 
 [主人公ポーズ指]
@@ -174,9 +181,9 @@
 [whosay name=三宮時子" ]
 「あら、[名前]さん何を見ていらっしゃるの？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公通常]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「大衆食堂のお品書きだそうです」[p]
 
 [whosay name=三宮時子" ]
@@ -498,8 +505,8 @@
 キョロキョロとし始めた。[p]
 ;↑元）また道に通っている女性をキョロキョロし始めた。[p]から変更させていただきました(◆jsYiJcqRkk
 
-[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
 （お写真はお兄様の結婚式の記念以来かしら）[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -536,11 +543,13 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 散策イベント◆I9IhvvVdPoさんご担当その6です。[p]
 
