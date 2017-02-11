@@ -9,7 +9,6 @@
 [if exp="tf.event_sansaku_hyouji == 0"]
 @jump target=*sansaku_hantei_new
 [endif]
-tf.event_sansaku_hyouji_before_au
 
 ;◆共通イベント1判定【友人に会う】4月1週～6月4週、期間中に町へ行くと1度だけ発生
 [if exp="(f.okeiko_month==4 || f.okeiko_month==5 || f.okeiko_month==6) && f.event_machi_common[1]==0"]
