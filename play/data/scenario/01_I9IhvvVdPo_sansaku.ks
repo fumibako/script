@@ -5,6 +5,12 @@
 ;イベント発生条件：8月3週～8月4週、期間中に町へ行くと1度だけ発生
 ;=======================================================================================
 ;背景:町並み
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
@@ -12,15 +18,16 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 
 #
-今日の町は一層賑わい、[r]
-人々は楽しそうだ。[p]
+今日の町は一層賑わい、人々は楽しそうだ。[p]
 [stopbgm]
 
 ;【BGM】筍の訪れ(町
@@ -47,8 +54,8 @@
 [whosay name=新聞社員" ]
 「君もどうぞ！　無料だよ」[p]
 
-[主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 「ええ、ありがとうございます」[p]
 
 
@@ -83,6 +90,8 @@
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 
 [イベントシーン構築]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公照れ目普通]
@@ -104,6 +113,12 @@
 ;『食事の話題』
 ;イベント発生条件：月週～月週、期間中に町へ行くと1度だけ発生
 ;=======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -118,8 +133,7 @@
 [主人公通常]
 [wait time=10]
 #
-町は賑やかな活気を見せる中[r]
-一人の人がビラを配っている。[p]
+町は賑やかな活気を見せる中、一人の人がビラを配っている。[p]
 [stopbgm]
 
 ;【BGM】筍の訪れ(町
@@ -169,8 +183,9 @@
 「あら、そうですの。[r]
 [sp]この辺りも賑わってきましたね」[p]
 
-[主人公ほほえみ]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 「新しいお店が出来たり、新装開店したりしていますね。[r]
 [sp]時子さんは洋食を食べたことはありますか？」[p]
 
@@ -179,9 +194,9 @@
 ;カフヱに統一させていただきました(◆jsYiJcqRkk
 [sp]連れて行って下さったときにありますわ」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉通常]
 [主人公目大]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「どんな味でしたか？」[p]
 （洋食は食べたことがないわ）[p]
 
@@ -192,16 +207,16 @@
 「『家では離れた台所から運ぶうちに冷めているんだよ』[r]
 [sp]と兄から聞きました」[p]
 
-[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
 「料理が温かいのですね！」[p]
 
 [whosay name=三宮時子" ]
 「私も驚いたのですが[r]
 [sp]温かい料理は食べやすく、美味しく感じましたわ」[p]
 
-[主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公照れ目普通]
 「そうなのですか」[p]
 
 [whosay name=三宮時子" ]
@@ -209,6 +224,7 @@
 [sp]話題にしてみてはどうかしら？[r]
 [sp]食習慣が合うかどうかというのも大切ですから」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「ええ、書いてみますわ」[p]
 
@@ -227,6 +243,11 @@
 ;『観劇の話題』
 ;イベント発生条件：月週～月週、期間中に町へ行くと1度だけ発生
 ;=======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -235,14 +256,16 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+
 #
-行きかう町の人々は賑やかだ。[r]
-数人の人がビラを配っている。[p]
+行きかう町の人々は賑やかだ。　数人の人がビラを配っている。[p]
 [stopbgm]
 
 ;【BGM】筍の訪れ(町
@@ -253,8 +276,7 @@
 [endif]
 
 [whosay name=劇団団員" ]
-「劇場の建設が終わり今年〇月に[r]
-[sp]劇団虹の公演が始まるよ。[r]
+「劇場の建設が終わり今年〇月に劇団虹の公演が始まるよ。[r]
 [sp]初公演は『ロミオとジュリエット』！！」[p]
 
 [主人公ポーズ指]
@@ -291,24 +313,22 @@
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-
 [イベントシーン構築]
 [主人公ポーズ通常]
+[wait time=10]
 [主人公通常]
 [wait time=10]
 
 [whosay name=町人男性" ]
-「嫁さんと行ってみようか。[r]
-[sp]たまにはいいよな」[p]
+「嫁さんと行ってみようか。　たまにはいいよな」[p]
 
-[whosay name=町人女性 " ]
+[whosay name=町人女性" ]
 「歌舞伎とはまた違ったものなのかしら？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公横目]
 [主人公ポーズ指]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「私も行ってみたいわ。[r]
-[sp]やはりデエトでしょうか？」[p]
+「私も行ってみたいわ。　やはりデエトでしょうか？」[p]
 
 [主人公照れ目普通]
 （お手紙で観劇について尋ねてみましょう）[p]
@@ -328,6 +348,12 @@
 ;『読書の話題』
 ;イベント発生条件：6月2週～7月3週、期間中に町へ行くと1度だけ発生　語学お稽古２回以上
 ;=======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -336,14 +362,15 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
-町は賑やかな活気を見せる中[r]
-私は書店に足を向けた。[p]
+町は賑やかな活気を見せる中、私は書店に足を向けた。[p]
 [stopbgm]
 
 ;【BGM】筍の訪れ(町
@@ -354,8 +381,7 @@
 [endif]
 
 [whosay name=書店店員" ]
-「いらっしゃいませ[r]
-[sp]どんな御本をお探しでしょうか？」[p]
+「いらっしゃいませ。　どんな御本をお探しでしょうか？」[p]
 
 [主人公目伏柔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -365,8 +391,7 @@
 (語学を学んでいくうちに詩に興味を惹かれたわ)[p]
 
 [whosay name=書店店員" ]
-「それなら今流行りの石垣菊乃の[r]
-[sp]初夏の詩集なんてどうですか？」[p]
+「それなら、今流行りの石垣菊乃の初夏の詩集なんてどうですか？」[p]
 
 [主人公ポーズ通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -376,22 +401,21 @@
 「こちらです」[p]
 
 #
-差し出された和綴じの本は花菖蒲の表紙で[r]
-私はパラパラとめくる。[p]
+差し出された和綴じの本は花菖蒲の表紙で、私はパラパラと[r]
+めくる。[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公伏目]
 [主人公眉下げ下]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「情緒ある美しくも優しい詩ですね[r]
-[sp]この本に致します。」[p]
+「情緒ある美しくも優しい詩ですね。[r]
+[sp]この本に致します」[p]
 
 [whosay name=書店店員" ]
 「お買い上げありがとございます！」[p]
 
-[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「あの方は[r]
-[sp]どんなな御本を読まれるのかしら？」[p]
+[主人公通常]
+「あの方は、どんな御本を読まれるのかしら？」[p]
 
 ;【話題入手】
 [話題入手 wadai_txt="『読書の話題』を手に入れました"]
@@ -409,6 +433,12 @@
 ;『写真の話題』
 ;イベント発生条件：月週～月週、期間中に町へ行くと1度だけ発生　淑女度２０以上
 ;=======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -417,11 +447,13 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 町は活気に包まれ、賑やかだ。[r]
 視線を感じ振り向くと、男性が近づいてきた。[p]
@@ -435,12 +467,11 @@
 [endif]
 
 [whosay name=？？？" ]
-「お嬢さん、僕は浪漫写真倶楽部、[r]
-[sp]川島潤といいます。」[p]
+「お嬢さん。 僕は浪漫写真倶楽部、川島潤といいます」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 [主人公ポーズ片手]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ！！」[p]
 
 （浪漫写真倶楽部……聞いたことがあるわ。[r]
@@ -451,6 +482,7 @@
 「お嬢さんのように、品のあるお嬢さんを探していたんです！[r]
 [sp]写真のモデルになって頂けないでしょうか？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公憂い]
 「申し訳ありませんが、お断りします」[p]
@@ -470,8 +502,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お写真はお兄様の結婚式の記念以来かしら）[p]
 
-[主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公照れ目普通]
 「私もいつか、あの方と写真を撮るのかしら」[p]
 ;「あの方」に統一させていただきます(◆jsYiJcqRkk
 ;散策イベント◆I9IhvvVdPoさんご担当その5です。[p]
@@ -490,6 +522,12 @@
 ;『の話題』
 ;イベント発生条件：月週～月週、期間中に町へ行くと1度だけ発生
 ;=======================================================================================
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
