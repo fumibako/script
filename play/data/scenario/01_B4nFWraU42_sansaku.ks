@@ -322,7 +322,22 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公ポーズ指]
-(そういえば、あの方が好きな曲って何かしら？)[p]
+(そういえば、
+[if exp="f.hujieda_au == 1"]
+藤枝様が好きな曲って何かしら？)[p]
+[elsif exp="f.katuraginomiya_au == 1"]
+殿下が好まれる曲は、どの様なものでしょうか？)[p]
+[elsif exp="f.zaizen_au == 1"]
+財前様がお好きな曲って何かしら？)[p]
+[elsif exp="f.kuroda_au == 1"]
+黒田様がお好きな曲って何かしら？)[p]
+[elsif exp="f.sijyou_au == 1"]
+華織様が好きな曲って何かしら？)[p]
+;園遊会後なのでok
+[else]
+あの方が好きな曲って何かしら？)[p]
+[endif]
+
 [fadeoutbgm time=3000]
 #
 [layopt layer=29 visible=true]
