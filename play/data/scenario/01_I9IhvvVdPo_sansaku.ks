@@ -170,7 +170,7 @@ $('.junbi_girl').remove();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
-「え！　ええ。」[p]
+「え！　ええ」[p]
 
 [主人公ポーズ指]
 #
@@ -182,13 +182,12 @@ $('.junbi_girl').remove();
 「あら、[名前]さん何を見ていらっしゃるの？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ポーズ通常]
 [主人公通常]
+[主人公ポーズ通常]
 「大衆食堂のお品書きだそうです」[p]
 
 [whosay name=三宮時子" ]
-「あら、そうですの。[r]
-[sp]この辺りも賑わってきましたね」[p]
+「あら、そうですの。　この辺りも賑わってきましたね」[p]
 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
