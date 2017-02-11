@@ -32,6 +32,8 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 [if exp="tf.test_gamen==true"]
 テストページから開始しています。選択肢手前のif分岐までjumpしますか？[r]
 
@@ -40,8 +42,6 @@
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
-[プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
 
 [link target=*jump_ok]は　　　い[endlink][r]
 [r][r][r]
@@ -73,7 +73,6 @@ jumpします。[p]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-[プリロード画面消去]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 「あら？」
 [autosave]
