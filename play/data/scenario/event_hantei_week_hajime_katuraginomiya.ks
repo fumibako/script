@@ -86,8 +86,17 @@
 
 ;=======================================================================================
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
-;event3をみている+他キャラクターより好感度が上かつ好感度20以上+淑女度30以上(◆jsYiJcqRkk調整
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando && f.para_katuraginomiya_koukando > f.para_kuroda_koukando && f.para_katuraginomiya_koukando > f.para_zaizen_koukando && f.para_katuraginomiya_koukando > f.para_hujieda_koukando) && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30"]
+;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生(2/11◆jsYiJcqRkk調整
+;葛城宮進行条件：event3をみている+好感度20以上+淑女度30以上
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
+	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[4]=1"]
+	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
+	@jump storage="event.ks" target=*start
+;又は(もっと考えたい選択時)event3をみている+他キャラクターより好感度が上かつ好感度20以上+淑女度30以上(◆jsYiJcqRkk調整
+[elsif exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando && f.para_katuraginomiya_koukando > f.para_kuroda_koukando && f.para_katuraginomiya_koukando > f.para_zaizen_koukando && f.para_katuraginomiya_koukando > f.para_hujieda_koukando) && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30"]
 ;&& f.para_shujinkou_shukujodo > 20  必要であれば追加してください		
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]

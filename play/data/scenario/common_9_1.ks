@@ -2,6 +2,11 @@
 ;◆顔合せのお相手選び： 9月1週になった時点で、攻略対象の好感度一定値以上なら1度だけ発生
 ;=============================================
 *replay_common_9_1
+;◆黒田、財前、四条の進行条件を満たさない場合にイベント発生を回避
+[if exp="f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30"]
+	@jump storage="event_hantei_week_hajime.ks" target=*common_9_1_hantei_owari
+[endif]
+
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
@@ -345,6 +350,11 @@ jumpします。[p]
 [endreplay] 
 
 *common_9_1_futatabi_oaiteerabi
+;◆黒田、財前、四条の進行条件を満たさない場合にイベント発生を回避
+[if exp="f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30"]
+	@jump storage="event_hantei_week_owari.ks" target=*common_9_1_hantei_owari
+[endif]
+
 [if exp="sf.KSKIP=='ON' && sf.trail_common_9_1_scene5==undefined"]
 	[skipstop]
 [endif]

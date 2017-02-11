@@ -114,6 +114,7 @@
 ;↓葛城宮Onlyではないものの葛城宮条件を満たし、他の候補の好感度等条件を満たさない結果葛城宮のみ候補となる場合も葛城宮イベント判定へ
 [elsif exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30) && (f.para_kuroda_koukando < 30 && f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30)"]
 @jump target=*katuraginomiya_event_hantei
+;黒田、財前、四条の進行条件を満たすと共通イベントcommon_9_1発生
 [elsif exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[10] == 0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
 
 ;好感度と淑女度により、選択可能なお相手を調べる
@@ -155,6 +156,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_common[10] = 1"]
 	@jump storage="event.ks" target=*start
 [endif]
+*common_9_1_hantei_owari
 
 ;◆badED判定 9月、誰のルートにも進行しない場合に(8月4週と同じ)badED(9月1週はお相手未定以外)
 [if exp="((f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1) || (f.okeiko_month == 9 && f.okeiko_week != 1)) && f.event_common[9]==0 && f.kuroda_au == 0 && f.sijyou_au == 0 && f.zaizen_au == 0 && f.katuraginomiya_au == 0 && f.hujieda_au == 0"]
