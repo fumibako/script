@@ -209,7 +209,9 @@
 [endif]
 
 ;個別ルート前夜終了
-[eval exp="f.zaizen_au=1"]
+[eval exp="f.zaizen_au = 1"]
+[eval exp="f.event_oaite_mitei = 0"]
+
 [イベントシーン終了]
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
