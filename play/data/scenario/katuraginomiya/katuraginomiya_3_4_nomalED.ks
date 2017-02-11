@@ -145,6 +145,12 @@
 ;=============================================================
 #
 殿下は私を抱き上げた。[p]
+;◆CG2：goodED条件を満たす場合はgood版に切り替え
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_2.jpg"]
+[else]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED_2.jpg"]
+[endif]
 
 ;【立ち絵】葛城宮 微笑み
 ;[葛城宮微笑み]
@@ -153,6 +159,12 @@
 
 #
 優しい微笑みを浮かべる殿下は、嬉しさをこらえきれないといった様子だ。[p]
+;◆CG3：goodED条件を満たす場合はgood版に切り替え
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_3.jpg"]
+[else]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED_3.jpg"]
+[endif]
 そんな殿下の様子に私もつられて微笑んでいた。[p]
 言葉にできないほどの嬉しさが込み上げる。[p]
 
