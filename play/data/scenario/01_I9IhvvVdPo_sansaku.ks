@@ -41,8 +41,8 @@
 「号外！　号外！　今日の全国野球大会の結果の速報だよ！」[p]
 
 [whosay name=町人男性 " ]
-「何回か野球の試合を見に行ったが、[r]
-[sp]ワクワクするものがあったなあ」[p]
+「何回か野球の試合を見に行ったが、ワクワクするものが[r]
+[sp]あったなあ」[p]
 
 [whosay name=町人女性 " ]
 「慶徳は優勝したかしら？[r]
@@ -89,8 +89,8 @@
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築]
-主人公復帰表情目閉じ　ポーズ通常
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+;主人公復帰表情　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
