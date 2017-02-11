@@ -104,7 +104,7 @@ $('.junbi_girl').remove();
 [主人公ポーズ指]
 「あの方はスポーツがお好きかしら？」[p]
 
-
+[layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『スポーツの話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('スポーツの話題',0,0,0,1,0,'a','','','','')"]
@@ -234,7 +234,7 @@ $('.junbi_girl').remove();
 [主人公ほほえみ]
 「ええ、書いてみますわ」[p]
 
-
+[layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『食事の話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('食事の話題',0,0,0,1,0,'a','','','','')"]
@@ -320,10 +320,15 @@ $('.junbi_girl').remove();
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築]
+
+;主人公復帰表情　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
-[wait time=10]
 [主人公通常]
-[wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 
 [whosay name=町人男性" ]
 「嫁さんと行ってみようか。　たまにはいいよな」[p]
@@ -339,7 +344,7 @@ $('.junbi_girl').remove();
 [主人公照れ目普通]
 （お手紙で観劇について尋ねてみましょう）[p]
 
-
+[layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『観劇の話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('観劇の話題',0,0,-1,-2,1,'a','','','','')"]
@@ -423,6 +428,7 @@ $('.junbi_girl').remove();
 [主人公通常]
 「あの方は、どんな御本を読まれるのかしら？」[p]
 
+[layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『読書の話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('読書の話題',0,0,0,1,2,'a','','','','')"]
@@ -514,6 +520,7 @@ $('.junbi_girl').remove();
 ;「あの方」に統一させていただきます(◆jsYiJcqRkk
 ;散策イベント◆I9IhvvVdPoさんご担当その5です。[p]
 
+[layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『写真の話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('写真の話題',0,0,1,1,2,'a','','','','')"]
