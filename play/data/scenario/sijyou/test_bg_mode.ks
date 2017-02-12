@@ -3,9 +3,9 @@
 *link
 [glink target=p1 exp="tf.page++" text="次へ" size=20 width="250" x=100 y=50 color=white]
 [if exp="tf.page > 0"]
-[glink target=p1 exp="tf.page--" text="前へ"　size=20 width="250" x=100 y=100 color=white]
+[glink target=p1 exp="tf.page--" text="前へ" size=20 width="250" x=100 y=80 color=white]
 [endif]
-[glink target=endtest text="おわり" size=20 width="250" x=100 y=150 color=white]
+[glink target=endtest text="おわり" size=20 width="250" x=100 y=110 color=white]
 [s]
 *p1
 [if exp="tf.page==1"]
