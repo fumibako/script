@@ -147,13 +147,13 @@
 [elsif exp="f.katuraginomiya_au == 1"]
 ;葛城宮
 [image name=omoide1 storage="bg/I9IhvvVdPo/situmu.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-[elsif="exp=f.zaizen_au == 1"]
+[elsif exp="f.zaizen_au == 1"]
 ;財前
 [image name=omoide1 storage="bg/I9IhvvVdPo/baraen.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-[elsif="exp=f.kuroda_au == 1"]
+[elsif exp="f.kuroda_au == 1"]
 ;黒田
 [image name=omoide1 storage="bg/bg_shinrinkouen_gate.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-[elsif="exp=f.sijyou_au == 1"]
+[elsif exp="f.sijyou_au == 1"]
 ;四条
 [image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [else]
