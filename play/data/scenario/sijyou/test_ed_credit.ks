@@ -3,6 +3,14 @@
 [if exp="tf.test_sijyou==true"]
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
+[glink target=test_haikei text=藤枝ver exp="f.hujieda_au=1" width="200" x=200 y=80 color=white]
+[glink target=test_haikei text=葛城宮ver exp="f.katuraginomiya_au=1" width="200" x=200 y=130 color=white]
+[glink target=test_haikei text=財前ver exp="f.zaizen_au=1" width="200" x=200 y=180 color=white]
+[glink target=test_haikei text=黒田ver exp="f.kuroda_au=1" width="200" x=200 y=230 color=white]
+[glink target=test_haikei text=四条ver exp="f.sijyou_au=1" width="200" x=200 y=330 color=white]
+[glink target=test_haikei text=例外  width="200" x=200 y=380 color=white]
+[s]
+*test_haikei
 [stopbgm]
 [endif]
 
@@ -512,6 +520,16 @@ $('.omoide1').remove();
 [mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [wait time=2000]
 [fadeoutbgm time=3000]
+
+;初期化
+藤枝 
+@eval exp="f.hujieda_au=0" 
+葛城宮 
+@eval exp="f.katuraginomiya_au=0"
+財前 exp="f.zaizen_au=0"
+@eval exp="f.kuroda_au=0" 
+四条
+@eval exp="f.sijyou_au=0" 
 
 [freeimage layer=27]
 ;白暗転がいいとはおもう　とりあえず暗転
