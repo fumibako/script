@@ -210,7 +210,7 @@ $('.omoide1').remove();
 
 [if exp="f.hujieda_au == 1"]
 ;藤枝
-[image name=omoide1 storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[image name=omoide1 storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [elsif exp="f.katuraginomiya_au == 1"]
 ;葛城宮
 [image name=omoide1 storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -425,7 +425,7 @@ $('.omoide1').remove();
 
 [if exp="f.hujieda_au == 1"]
 ;藤枝
-[image name=omoide1 storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[image name=omoide1 storage="bg/hujieda_tanpopo_kouen.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [elsif exp="f.katuraginomiya_au == 1"]
 ;葛城宮
 [image name=omoide1 storage="bg/B4nFWraU42/gosyo.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -533,7 +533,7 @@ $('.omoide1').remove();
 
 [freeimage layer=27]
 ;白暗転がいいとはおもう　とりあえず暗転
-[chara_mod name="bg" storage="bg_preload_girl.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg"]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
 
