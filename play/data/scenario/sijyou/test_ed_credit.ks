@@ -289,7 +289,7 @@ $('.omoide1').remove();
 [image name=omoide1 storage="bg/B4nFWraU42/bg_cyarity.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [elsif exp="f.zaizen_au == 1"]
 ;財前
-[image name=omoide1 storage="bg/I9IhvvVdPo/zaizen_bara.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[image name=omoide1 storage="bg/B4nFWraU42/zaizen_bara.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [elsif exp="f.kuroda_au == 1"]
 ;黒田
 [image name=omoide1 storage="bg/bg_winter_forest.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
