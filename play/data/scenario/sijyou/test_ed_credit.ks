@@ -516,7 +516,7 @@ $('.omoide1').remove();
 ;終了文字のx位置を変更
 [eval exp="tf.left_x=tf.left_x+200"]
 
-;終了用の画像が必要です　終了言葉は適当です　変更してください
+;終了言葉は適当です　変更してください
 [mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [wait time=2000]
 [fadeoutbgm time=3000]
@@ -532,8 +532,8 @@ $('.omoide1').remove();
 @eval exp="f.sijyou_au=0" 
 
 [freeimage layer=27]
-;白暗転がいいとはおもう　とりあえず暗転
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg"]
+;白暗転がいいとはおもう　とりあえず暗転;終了用の画像が必要です　
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=1300]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
 
