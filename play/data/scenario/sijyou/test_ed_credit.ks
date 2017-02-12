@@ -2,16 +2,51 @@
 *first
 [if exp="tf.test_sijyou==true"]
 ;[暗転]
+[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
-;if exp="tf.end==sijyou"　などで呼び出しor変更してください
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg"]
-@jump target=test
 [endif]
+
+[if exp="f.hujieda_au == 1"]
+;藤枝背景
+;文字色　font_color
+[eval exp="tf.fc='#5b4513'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg"]
+;bg/bg_tegami_tokiko.jpg
+[elsif exp="f.katuraginomiya_au == 1"]
+;葛城宮背景
+;文字色　font_color
+[eval exp="tf.fc='#5b4513'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg"]
+;bg/bg_tegami_kousitsu_jijyuu.jpg bg/bg_tegami_kousitsu_akebono.jpg
+[elsif="exp=f.zaizen_au == 1"]
+;財前背景
+;文字色　font_color
+[eval exp="tf.fc='#5b4513'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
+[elsif="exp=f.kuroda_au == 1"]
+;黒田背景
+;文字色　font_color
+[eval exp="tf.fc='#5b4513'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+[chara_mod name="bg" storage="bg_tegami_kuroda.jpg"]
+[elsif="exp=f.sijyou_au == 1"]
+;四条背景
+;文字色　font_color
+[eval exp="tf.fc='#5b4513'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg"]
+[else]
+;例外
+;文字色　font_color
+[eval exp="tf.fc='#5b4513'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+[endif]
+
+@jump target=test
+
 *start
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-;if exp="tf.end==sijyou"　などで呼び出しor変更してください
-[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -74,8 +109,7 @@
 [eval exp="tf.fs=20"]
 [eval exp="tf.fs1=13"]
 [eval exp="tf.fs2=18"]
-;文字色　font_color
-[eval exp="tf.fc='#5b4513'"]
+
 ;////////////ｊsでフェードアウトするとほかのものに線が入るようなのでキーフレームに/////////
 [keyframe name="not_opcy"]
 [frame p=100% opacity="0"]
