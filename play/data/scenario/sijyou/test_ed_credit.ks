@@ -13,7 +13,7 @@
 *test_haikei
 [stopbgm]
 [endif]
-
+;===============================================================
 [if exp="f.hujieda_au == 1"]
 ;藤枝背景
 ;文字色　font_color
@@ -21,7 +21,6 @@
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg"]
 ;bg/bg_tegami_tokiko.jpg
-
 [elsif exp="f.katuraginomiya_au==1"]
 ;葛城宮背景
 ;文字色　font_color
@@ -35,7 +34,7 @@
 [eval exp="tf.fc='#5b4513'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
-[elsif "exp=f.kuroda_au== 1"]
+[elsif exp=f.kuroda_au== 1"]
 ;黒田背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
@@ -52,7 +51,7 @@
 [eval exp="tf.fc='#5b4513'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
 [endif]
-
+;===============================================================
 @jump target=test
 
 *start
@@ -140,7 +139,7 @@
 [endif]
 ;音楽はなんでも
 
-
+;===============================================================
 [if exp="f.hujieda_au == 1"]
 ;藤枝
 [image name=omoide1 storage="bg/I9IhvvVdPo/bg_hujieda_hato.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -159,6 +158,7 @@
 [else]
 [image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [endif]
+;===============================================================
 
 [mtext name=cc text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 
@@ -209,6 +209,7 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
+;===============================================================
 [if exp="f.hujieda_au == 1"]
 ;藤枝
 [image name=omoide1 storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -227,6 +228,7 @@ $('.omoide1').remove();
 [else]
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [endif]
+;===============================================================
 
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=2000]
@@ -278,6 +280,7 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
+;===============================================================
 [if exp="f.hujieda_au == 1"]
 ;藤枝
 [image name=omoide1 storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -296,7 +299,7 @@ $('.omoide1').remove();
 [else]
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [endif]
-
+;===============================================================
 
 ;四条で使った背景素材メモ
 
@@ -424,6 +427,7 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
+;===============================================================
 [if exp="f.hujieda_au == 1"]
 ;藤枝
 [image name=omoide1 storage="bg/hujieda_tanpopo_kouen.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
@@ -442,6 +446,7 @@ $('.omoide1').remove();
 [else]
 [image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [endif]
+;===============================================================
 
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=2000]
