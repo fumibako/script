@@ -132,9 +132,24 @@
 ;音楽はなんでも
 
 
-;if exp="tf.end==sijyou"　などで変更してください
+[if exp="f.hujieda_au == 1"]
+;藤枝
+[image name=omoide1 storage="bg/I9IhvvVdPo/bg_hujieda_hato.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif exp="f.katuraginomiya_au == 1"]
+;葛城宮
+[image name=omoide1 storage="bg/I9IhvvVdPo/situmu.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.zaizen_au == 1"]
+;財前
+[image name=omoide1 storage="bg/I9IhvvVdPo/baraen.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.kuroda_au == 1"]
+;黒田
+[image name=omoide1 storage="bg/bg_shinrinkouen_gate.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.sijyou_au == 1"]
+;四条
 [image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-
+[else]
+[image name=omoide1 storage="bg/B4nFWraU42/ginza3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[endif]
 
 [mtext name=cc text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
 
@@ -185,8 +200,25 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-;if exp="tf.end==sijyou"　などで変更してください
+[if exp="f.hujieda_au == 1"]
+;藤枝
+[image name=omoide1 storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif exp="f.katuraginomiya_au == 1"]
+;葛城宮
+[image name=omoide1 storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.zaizen_au == 1"]
+;財前　B4nの画像
+[image name=omoide1 storage="bg/I9IhvvVdPo/test_zaizen_kaigi.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.kuroda_au == 1"]
+;黒田
+[image name=omoide1 storage="bg/bg_kouyou_ussou.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.sijyou_au == 1"]
+;四条
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[else]
+[image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[endif]
+
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=2000]
 
@@ -237,8 +269,25 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
+[if exp="f.hujieda_au == 1"]
+;藤枝
+[image name=omoide1 storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif exp="f.katuraginomiya_au == 1"]
+;葛城宮
+[image name=omoide1 storage="bg/B4nFWraU42/bg_cyarity.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.zaizen_au == 1"]
+;財前
+[image name=omoide1 storage="bg/I9IhvvVdPo/zaizen_bara.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.kuroda_au == 1"]
+;黒田
+[image name=omoide1 storage="bg/bg_winter_forest.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.sijyou_au == 1"]
+;四条
 [image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[else]
+[image name=omoide1 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[endif]
+
 
 ;四条で使った背景素材メモ
 
@@ -366,8 +415,25 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-;if exp="tf.end==sijyou"　などで変更してくださいtransでもいいかも
+[if exp="f.hujieda_au == 1"]
+;藤枝
+[image name=omoide1 storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif exp="f.katuraginomiya_au == 1"]
+;葛城宮
+[image name=omoide1 storage="bg/B4nFWraU42/gosyo.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.zaizen_au == 1"]
+;財前
+[image name=omoide1 storage="bg/B4nFWraU42/bg_cyarity51.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.kuroda_au == 1"]
+;黒田
+[image name=omoide1 storage="bg/bg_biwa_tree.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[elsif="exp=f.sijyou_au == 1"]
+;四条
 [image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[else]
+[image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
+[endif]
+
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=2000]
 
@@ -449,7 +515,7 @@ $('.omoide1').remove();
 
 [freeimage layer=27]
 ;白暗転がいいとはおもう　とりあえず暗転
-[chara_mod name="bg" storage="toumei.gif"]
+[chara_mod name="bg" storage="bg_preload_girl.jpg"]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
 
