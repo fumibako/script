@@ -39,7 +39,7 @@
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-[chara_mod name="bg" storage="bg_tegami_kuroda.jpg"]
+;[chara_mod name="bg" storage="bg_tegami_kuroda.jpg"]
 [elsif exp="f.sijyou_au == 1"]
 ;四条背景
 ;文字色　font_color
