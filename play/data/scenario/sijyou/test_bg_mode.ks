@@ -1,8 +1,11 @@
 *start
 [eval exp="tf.page=0"]
 *link
-[glink target=p1 exp="tf.page++"]
-
+[glink target=p1 exp="tf.page++" text=次へ　size=20 width="250" x=100 y=100 color=white]
+[if exp="tf.page > 0"]
+[glink target=p1 exp="tf.page--" text=前へ　size=20 width="250" x=100 y=150 color=white]
+[endif]
+[glink target=endtest text=おわり　size=20 width="250" x=100 y=200 color=white]
 [s]
 *p1
 [if exp="tf.page==1"]
@@ -181,7 +184,8 @@
 
 
 
-
+*endtest
+[eval exp="tf.page=0"]
 @jump storage="test_sijyou.ks"
 [s]
 
