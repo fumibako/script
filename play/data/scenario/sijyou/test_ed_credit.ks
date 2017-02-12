@@ -430,13 +430,13 @@ $('.omoide1').remove();
 [elsif exp="f.katuraginomiya_au == 1"]
 ;葛城宮
 [image name=omoide1 storage="bg/B4nFWraU42/gosyo.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-[elsif="exp=f.zaizen_au == 1"]
+[elsif exp="f.zaizen_au == 1"]
 ;財前
 [image name=omoide1 storage="bg/B4nFWraU42/bg_cyarity51.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-[elsif="exp=f.kuroda_au == 1"]
+[elsif exp="f.kuroda_au == 1"]
 ;黒田
 [image name=omoide1 storage="bg/bg_biwa_tree.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
-[elsif="exp=f.sijyou_au == 1"]
+[elsif exp="f.sijyou_au == 1"]
 ;四条
 [image name=omoide1 storage="bg/B4nFWraU42/nerine_img.jpg" layer=2 width=290 height=190 time=2000 x=200 y=100]
 [else]
