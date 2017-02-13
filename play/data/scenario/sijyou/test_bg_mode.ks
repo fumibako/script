@@ -325,7 +325,6 @@
 @jump storage="test_sijyou.ks"
 [endif]
 
-[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=50]
 @jump target=link
 
