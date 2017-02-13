@@ -14,7 +14,6 @@
 *p1
 [if exp="tf.page==1"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
-@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bara_image.jpg"]
 [endif]
 [if exp="tf.page==2"]
@@ -322,7 +321,6 @@
 ;@jump target=start
 [eval exp="f.haikei_credit=''"]
 [freeimage layer=27]
-
 [cm]
 @jump storage="test_sijyou.ks"
 [endif]
