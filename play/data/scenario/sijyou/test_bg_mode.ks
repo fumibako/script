@@ -3,6 +3,7 @@
 [eval exp="f.haikei_credit=''"]
 @layopt layer=27 visible=true
 *link
+@layopt layer=27 visible=true
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=500 y=450 color=white]
 [if exp="tf.page > 0"]
