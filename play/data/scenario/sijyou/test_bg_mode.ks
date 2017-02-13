@@ -4,11 +4,11 @@
 @layopt layer=27 visible=true
 *link
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=100 y=50 color=white]
+[glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=500 y=450 color=white]
 [if exp="tf.page > 0"]
-[glink target=p1 exp="tf.page--" text="前へ" size=20 width="250" x=100 y=80 color=white]
+[glink target=p1 exp="tf.page--" text="前へ" size=20 width="250" x=500 y=480 color=white]
 [endif]
-[glink target=endtest text="おわり" size=20 width="250" x=100 y=110 color=white]
+[glink target=endtest text="おわり" size=20 width="250" x=500 y=510 color=white]
 [s]
 *p1
 [if exp="tf.page==1"]
