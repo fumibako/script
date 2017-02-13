@@ -12,71 +12,87 @@
 [s]
 *p1
 [if exp="tf.page==1"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bara_image.jpg"]
 [endif]
 [if exp="tf.page==2"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity.jpg"]
 [endif]
 [if exp="tf.page==3"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity2.jpg"]
 [endif]
 [if exp="tf.page==4"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity3.jpg"]
 [endif]
 [if exp="tf.page==5"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity4.jpg"]
 [endif]
 [if exp="tf.page==6"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity51.jpg"]
 [endif]
 [if exp="tf.page==7"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg"]
 [endif]
 [if exp="tf.page==8"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6_1.jpg"]
 [endif]
 [if exp="tf.page==9"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity7.jpg"]
 [endif]
 [if exp="tf.page==10"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity8.jpg"]
 [endif]
 [if exp="tf.page==11"]
 [eval exp="f.haikei_credit=''"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg"]
 [endif]
 [if exp="tf.page==12"]
 [eval exp="f.haikei_credit=''"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou2.jpg"]
 [endif]
 [if exp="tf.page==13"]
 [eval exp="f.haikei_credit=''"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou3.jpg"]
 [endif]
 [if exp="tf.page==14"]
 [eval exp="f.haikei_credit=''"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou3_1.jpg"]
 [endif]
 [if exp="tf.page==15"]
 [eval exp="f.haikei_credit=''"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png
 [endif]
 [if exp="tf.page==16"]
 [eval exp="f.haikei_credit=''"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
 [endif]
 [if exp="tf.page==17"]
 [eval exp="f.haikei_credit=''"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_moon_lake.jpg"]
 [endif]
 [if exp="tf.page==18"]
@@ -169,6 +185,7 @@
 [endif]
 [if exp="tf.page==40"]
 [eval exp="f.haikei_credit='◆B4nFWraU42'"]
+@freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/test_zaizen_kaigi.jpg"]
 [endif]
@@ -255,11 +272,13 @@
 [endif]
 [if exp="tf.page==60"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+@freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [endif]
 [if exp="tf.page==61"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='◆B4nFWraU42'"]
+@freeimage layer=27
 [chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
 [endif]
 [if exp="tf.page==62"]
@@ -269,20 +288,24 @@
 [endif]
 [if exp="tf.page==63"]
 [eval exp="f.haikei_credit='flicer'"]
+@freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg"]
 [endif]
 [if exp="tf.page==64"]
+@freeimage layer=27
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/zaizen_paty_ousetu.jpg"]
 [endif]
 [if exp="tf.page==65"]
+@freeimage layer=27
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
 [endif]
 [if exp="tf.page==66"]
+@freeimage layer=27
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/zaizen_youkan_zengamen.jpg"]
