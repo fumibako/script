@@ -320,10 +320,13 @@
 [if exp="tf.page > 68"]
 [eval exp="tf.page=0"]
 ;@jump target=start
-@freeimage layer=27
+[eval exp="f.haikei_credit=''"]
+[freeimage layer=27]
 
+[cm]
 @jump storage="test_sijyou.ks"
 [endif]
+
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=50]
 @jump target=link
