@@ -1,6 +1,8 @@
 *start
 [eval exp="tf.page=0"]
+[eval exp="f.haikei_credit=''"]
 *link
+
 [glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=100 y=50 color=white]
 [if exp="tf.page > 0"]
 [glink target=p1 exp="tf.page--" text="前へ" size=20 width="250" x=100 y=80 color=white]
@@ -288,6 +290,8 @@
 ;@jump target=start
 @jump storage="test_sijyou.ks"
 [endif]
+[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=50]
 @jump target=link
 
 ;bg_biwa_flower.jpg	
@@ -350,6 +354,7 @@
 *endtest
 [eval exp="tf.page=0"]
 @jump storage="test_sijyou.ks"
+[eval exp="f.haikei_credit=''"]
 [s]
 
 *window_close
