@@ -111,6 +111,7 @@
 [eval exp="tf.top_y6=450"]
 [eval exp="tf.top_y7=500"]
 [eval exp="tf.top_y8=550"]
+[eval exp="tf.top_y9=600"]
 ;後半のメンバー表示にて　加算して下に変更しています
 
 ;文字サイズ　font_size &fs
@@ -361,8 +362,7 @@ $('.omoide1').remove();
 [mtext name=cc text="flickr :Herry Lawford 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 [mtext name=cc text="flickr :けんたま 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
 [mtext name=cc text="flickr :Cj Hughson 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :James Cridland 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
-[mtext name=cc text="＠名無しさん１" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color="&tf.fc" wait=true]
+[mtext name=cc text="flickr :James Cridland 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
@@ -380,8 +380,12 @@ $('.omoide1').remove();
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 [mtext name=cc text="flickr :Furbychan 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
 ;Furbychan　夕焼け
-[mtext name=cc text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=true]
+[mtext name=cc text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 ;heniha　線香花火
+[mtext name=cc text="◆I9IhvvVdPo　作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color="&tf.fc" wait=false]
+[mtext name=cc text="◆jsYiJcqRkk 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y8 color="&tf.fc" wait=false]
+[mtext name=cc text="＠名無しさん１ 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y9 color="&tf.fc" wait=true]
+
 ;最後wait=true
 ;[wait time=400]
 
