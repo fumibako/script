@@ -498,7 +498,7 @@ $('.omoide1').remove();
 
 [mtext name=cc text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 [mtext name=cc text="◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="＠名無しさん１" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
+[mtext name=cc text="＠名無しさん１・演出・補佐" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
