@@ -382,9 +382,9 @@ $('.omoide1').remove();
 ;Furbychan　夕焼け
 [mtext name=cc text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 ;heniha　線香花火
-[mtext name=cc text="◆I9IhvvVdPo　作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color="&tf.fc" wait=false]
-[mtext name=cc text="◆jsYiJcqRkk 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y8 color="&tf.fc" wait=false]
-[mtext name=cc text="＠名無しさん１ 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y9 color="&tf.fc" wait=true]
+[mtext name=cc text="◆I9IhvvVdPo　作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc text="◆jsYiJcqRkk 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc text="＠名無しさん１ 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
 
 ;最後wait=true
 ;[wait time=400]
