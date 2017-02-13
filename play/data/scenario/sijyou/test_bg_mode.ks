@@ -3,8 +3,9 @@
 [eval exp="f.haikei_credit=''"]
 @layopt layer=27 visible=true
 *link
+@clearstack stack=if
+
 @layopt layer=27 visible=true
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=500 y=450 color=white]
 [if exp="tf.page > 0"]
 [glink target=p1 exp="tf.page--" text="前へ" size=20 width="250" x=500 y=480 color=white]
@@ -14,36 +15,47 @@
 *p1
 [if exp="tf.page==1"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bara_image.jpg"]
+@jump target=link
 [endif]
 [if exp="tf.page==2"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity.jpg"]
+@jump target=link
 [endif]
 [if exp="tf.page==3"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
 @freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity2.jpg"]
+@jump target=link
 [endif]
 [if exp="tf.page==4"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
 @freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity3.jpg"]
 [endif]
 [if exp="tf.page==5"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
 @freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity4.jpg"]
+@jump target=link
 [endif]
 [if exp="tf.page==6"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
 @freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity51.jpg"]
+@jump target=link
 [endif]
 [if exp="tf.page==7"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
 @freeimage layer=27
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg"]
+@jump target=link
 [endif]
 [if exp="tf.page==8"]
 [eval exp="f.haikei_credit='B4nFWraU42'"]
@@ -269,6 +281,7 @@
 [if exp="tf.page==59"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [endif]
 [if exp="tf.page==60"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
@@ -280,6 +293,7 @@
 [eval exp="f.haikei_credit='◆B4nFWraU42'"]
 @freeimage layer=27
 [chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [endif]
 [if exp="tf.page==62"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
