@@ -428,81 +428,483 @@
 [chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
 [endif]
 [if exp="tf.page==68"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
 [endif]
 [if exp="tf.page==69"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato.jpg"]
 [endif]
 [if exp="tf.page==70"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato2.jpg"]
 [endif]
 [if exp="tf.page==71"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg"]
-[endif]
-[if exp="tf.page==72"] 
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg"]
 [endif]
-[if exp="tf.page==73"]
+[if exp="tf.page==72"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg"]
 [endif]
-[if exp="tf.page==74"]
+[if exp="tf.page==73"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/enzetu.jpg"]
 [endif]
-[if exp="tf.page==75"]
+[if exp="tf.page==74"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/housoukyoku.jpg"]
 [endif]
-[if exp="tf.page==76"]
+[if exp="tf.page==75"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
 [endif]
-[if exp="tf.page==77"]
+[if exp="tf.page==76"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [endif]
-[if exp="tf.page==78"]
+[if exp="tf.page==77"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg"]
 [endif]
-[if exp="tf.page==79"]
+[if exp="tf.page==78"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg"]
 [endif]
-[if exp="tf.page==80"]
+[if exp="tf.page==79"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg"]
 [endif]
-[if exp="tf.page==81"]
+[if exp="tf.page==80"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg"]
 [endif]
-[if exp="tf.page==82"]
+[if exp="tf.page==81"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutest.jpg"]
 [endif]
-[if exp="tf.page==83"]
+[if exp="tf.page==82"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg"]
 [endif]
-[if exp="tf.page==84"]
+[if exp="tf.page==83"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi1.jpg"]
 [endif]
-[if exp="tf.page==85"]
+[if exp="tf.page==84"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg"]
 [endif]
-[if exp="tf.page==88"]
+[if exp="tf.page==85"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg"]
 [endif]
-[if exp="tf.page==89"]
+[if exp="tf.page==86"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ongakurensyuusitu.jpg"]
 [endif]
-[if exp="tf.page==90"]
+[if exp="tf.page==87"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
 [endif]
-[if exp="tf.page==100"]
+[if exp="tf.page==88"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/test_zaizen_kaigi.jpg"]
 [endif]
-[if exp="tf.page==101"]
+[if exp="tf.page==89"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/tyasitu.jpg"]
+@jump target=link
+[endif]
+[if exp="tf.page==90"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/yo-roppa.jpg"]
+@jump target=link
+[endif]
+[if exp="tf.page==91"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg"]
+@jump target=link
+[endif]
+
+[endif]
+[if exp="tf.page==92"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_biwa_flower.jpg"]
+[endif]
+[if exp="tf.page==93"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_biwa_tree.jpg"]
+[endif]
+[if exp="tf.page==94"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
+[endif]
+[if exp="tf.page==95"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg"]
+[endif]
+[if exp="tf.page==96"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[endif]
+[if exp="tf.page==97"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_garden_isu.jpg"]
+[endif]
+[if exp="tf.page==98"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg"]
+[endif]
+[if exp="tf.page==99"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_genkan.jpg"]
+[endif]
+[if exp="tf.page==101"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
 [endif]
 [if exp="tf.page==102"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/yo-roppa.jpg"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg"]
 [endif]
 [if exp="tf.page==103"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_katuraginomiya_gosyo_in.jpg"]
 [endif]
-[if exp="tf.page > 105"]
+[if exp="tf.page==104"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_koryouriya.jpg"]
+[endif]
+[if exp="tf.page==105"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_kouyou_kaidan.jpg"]
+[endif]
+[if exp="tf.page==106"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_kouyou_ussou.jpg"]
+[endif]
+[if exp="tf.page==107"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_kurodake.jpg"]
+[endif]
+[if exp="tf.page==108"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_machi.jpg"]
+[endif]
+[if exp="tf.page==109"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[image layer=1 storage="bg/sijyou_machi_yuki.png"]
+[endif]
+[if exp="tf.page==110"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[endif]
+[if exp="tf.page==111"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_machi_hasi.jpg"]
+[endif]
+[if exp="tf.page==112"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_machi_omoide.jpg"]
+[endif]
+[if exp="tf.page==113"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+[endif]
+[if exp="tf.page==114"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_okeiko_anten.jpg"]
+[endif]
+[if exp="tf.page==115"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg"]
+[endif]
+[if exp="tf.page==116"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_omoide.jpg"]
+[endif]
+[if exp="tf.page==117"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[endif]
+[if exp="tf.page==118"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[endif]
+[if exp="tf.page==119"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[endif]
+[if exp="tf.page==120"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_shinrinkouen_gate.jpg"]
+[endif]
+[if exp="tf.page==121"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_shinrinkouen_gate_winter.jpg"]
+[endif]
+[if exp="tf.page==122"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_shinrinkouen_gate_winter_yuu.jpg"]
+[endif]
+[if exp="tf.page==123"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_shinrinkouen_gate_yuu.jpg"]
+[endif]
+[if exp="tf.page==124"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg"]
+[endif]
+[if exp="tf.page==125"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg"]
+[endif]
+[if exp="tf.page==126"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_tegami_tokiko.jpg"]
+[endif]
+[if exp="tf.page==127"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg"]
+[endif]
+[if exp="tf.page==128"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yoru.jpg"]
+[endif]
+[if exp="tf.page==130"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yuu.jpg"]
+[endif]
+[if exp="tf.page==131"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_tirasi.jpg"]
+[endif]
+[if exp="tf.page==132"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_winter_forest.jpg"]
+[endif]
+[if exp="tf.page==133"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_winter_forest_yuu.jpg"]
+[endif]
+[if exp="tf.page==134"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
+[endif]
+[if exp="tf.page==135"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/hijieda_kaede_sita2.jpg"]
+[endif]
+[if exp="tf.page==136"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/hujieda_kyakuseki.jpg"]
+[endif]
+[if exp="tf.page==137"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/hujieda_sky1.jpg"]
+[endif]
+[if exp="tf.page==138"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
+[endif]
+[if exp="tf.page==139"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/hujieda_tanpopo_kouen.jpg"]
+[endif]
+[if exp="tf.page==140"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/katuraginomiya_kaigi2.jpg"]
+[endif]
+[if exp="tf.page==141"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[endif]
+[if exp="tf.page==142"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg"]
+[endif]
+[if exp="tf.page==143"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/room_niwa_haru.jpg"]
+[endif]
+[if exp="tf.page==144"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
+[endif]
+[if exp="tf.page==145"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg"]
+[endif]
+[if exp="tf.page==144"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/situnaiongaku.jpg"]
+[endif]
+[if exp="tf.page==145"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/situnaiongaku2.jpg"]
+[endif]
+[if exp="tf.page==146"]
+[eval exp="f.haikei_credit=''"]
+@freeimage layer=27
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/test_mon.jpg"]
+[endif]
+
+[if exp="tf.page > 147"]
 [eval exp="tf.page=0"]
 ;@jump target=start
 [eval exp="f.haikei_credit=''"]
@@ -514,60 +916,7 @@
 [wait time=50]
 @jump target=link
 
-;bg_biwa_flower.jpg	
-;bg_biwa_tree.jpg
-;bg_bluesky.jpg
-;bg_flower_hagi.jpg
-;bg_garden_isu.jpg
-;bg_garden_isu_dark.jpg
-;bg_genkan.jpg
-;bg_kabuki_in.jpg
-;bg_kabuki_out.jpg
-;bg_katuraginomiya_gosyo_in.jpg
-;bg_koryouriya.jpg
-;bg_kouyou_kaidan.jpg
-;bg_kouyou_ussou.jpg
-;bg_kurodake.jpg
-;bg_machi.jpg
-;sijyou_machi_yuki.png
-;bg_machi_hasi.jpg
-;bg_machi_omoide.jpg
-;bg_okeiko.jpg
-;bg_okeiko_anten.jpg
-;bg_okeiko_main.jpg
-;bg_omoide.jpg
-;bg_ryoutei.jpg
-;bg_sakura.jpg
-;bg_shinrinkouen_gate.jpg
-;bg_shinrinkouen_gate_winter.jpg
-;bg_shinrinkouen_gate_winter_yuu.jpg
-;bg_shinrinkouen_gate_yuu.jpg
-;bg_shop_wazakka.jpg
-;bg_tegami_kuroda.jpg
-;bg_tegami_tokiko.jpg
-;bg_teien_ishidatami.jpg
-;bg_teien_ishidatami_yoru.jpg
-;bg_teien_ishidatami_yuu.jpg
-;bg_tirasi.jpg
-;bg_web_blue.jpg
-;bg_web_blue2.jpg
-;bg_winter_forest.jpg
-;bg_winter_forest_yuu.jpg
-;bg_yuuyake.jpg
-;hijieda_kaede_sita2.jpg
-;hujieda_kyakuseki.jpg
-;hujieda_sky1.jpg
-;hujieda_tanpopo.jpg
-;hujieda_tanpopo_kouen.jpg
-;katuraginomiya_kaigi2.jpg
-;room_niwa.jpg
-;room_niwa_akarui.jpg
-;room_niwa_haru.jpg
-;room_niwa_yoru.jpg
-;room_niwa_yuki.jpg
-;situnaiongaku.jpg
-;situnaiongaku2.jpg
-;test_mon.jpg
+
 
 
 
