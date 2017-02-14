@@ -13,7 +13,10 @@
 [glink target=endtest text="おわり" size=20 width="250" x=500 y=510 color=white]
 [s]
 *p1
-@jump target=&tf.page
+[iscript]
+tf.raberu = "*"+tf.page;
+[endscript]
+@jump target=&tf.raberu
 
 *0
 *1
