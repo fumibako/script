@@ -4,11 +4,10 @@
 @layopt layer=27 visible=true
 @layopt layer=1 visible=true
 *link
+@clearstack stack=if
 [iscript]
 $('.kouka').remove();
 [endscript]
-@clearstack stack=if
-
 @layopt layer=27 visible=true
 [glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=500 y=450 color=white]
 [if exp="tf.page > 0"]
@@ -342,7 +341,9 @@ tf.raberu = "*"+tf.page;
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_moon_lake.jpg"]
+@layopt layer=1 visible=true
 [image layer=1 name="kouka" storage="bg/B4nFWraU42/piano_base.png"]
+[wait time=100]
 [endif]
 *46
 [if exp="tf.page==46"]
@@ -445,7 +446,7 @@ tf.raberu = "*"+tf.page;
 [endif]
 *60
 [if exp="tf.page==60"]
-[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+[eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
@@ -537,7 +538,7 @@ tf.raberu = "*"+tf.page;
 [endif]
 *73
 [if exp="tf.page==73"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg"]
@@ -844,7 +845,7 @@ tf.raberu = "*"+tf.page;
 
 *116
 [if exp="tf.page==116"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_omoide.jpg"]
@@ -868,6 +869,7 @@ tf.raberu = "*"+tf.page;
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/menu_load_bg.jpg"]
 [endif]
 *120
 [if exp="tf.page==120"]
