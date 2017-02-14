@@ -709,20 +709,20 @@ tf.raberu = "*"+tf.page;
 [endif]
 *97
 [if exp="tf.page==97"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [endif]
 *98
 [if exp="tf.page==98"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_garden_isu.jpg"]
 [endif]
 *99
 [if exp="tf.page==99"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg"]
@@ -750,94 +750,98 @@ tf.raberu = "*"+tf.page;
 [endif]
 *103
 [if exp="tf.page==103"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_katuraginomiya_gosyo_in.jpg"]
 [endif]
 *104
 [if exp="tf.page==104"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_koryouriya.jpg"]
 [endif]
 *105
 [if exp="tf.page==105"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_kouyou_kaidan.jpg"]
 [endif]
 *106
 [if exp="tf.page==106"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_kouyou_ussou.jpg"]
 [endif]
 *107
 [if exp="tf.page==107"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='fricer'"]
 @freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[mtext text=&f.haikei_credit layer=27 size=18 x=400 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_kurodake.jpg"]
 [endif]
 *108
 [if exp="tf.page==108"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='ゆうあかり　http://light77.sakura.ne.jp/'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_machi.jpg"]
 [endif]
 *109
 [if exp="tf.page==109"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/ + (効果)＠名無しさん１'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [image layer=1 name=kouka storage="bg/sijyou_machi_yuki.png"]
 [endif]
 *110
+
 [if exp="tf.page==110"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[chara_mod name="bg" storage="bg/bg_web_blue2.jpg"]
 [endif]
+
 *111
 [if exp="tf.page==111"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='＠名無しさん１'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_machi_hasi.jpg"]
 [endif]
 *112
 [if exp="tf.page==112"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='ゆうあかり　http://light77.sakura.ne.jp/'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_machi_omoide.jpg"]
 [endif]
 *113
 [if exp="tf.page==113"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='ゆうあかり　http://light77.sakura.ne.jp/'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
 [endif]
 *114
 [if exp="tf.page==114"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='ゆうあかり　http://light77.sakura.ne.jp/　+編集'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_okeiko_anten.jpg"]
 [endif]
 *115
 [if exp="tf.page==115"]
-[eval exp="f.haikei_credit=''"]
+[eval exp="f.haikei_credit='ゆうあかり　http://light77.sakura.ne.jp/'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg"]
+[chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [endif]
+
 *116
 [if exp="tf.page==116"]
 [eval exp="f.haikei_credit=''"]
