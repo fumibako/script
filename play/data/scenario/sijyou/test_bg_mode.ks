@@ -342,7 +342,7 @@ tf.raberu = "*"+tf.page;
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_moon_lake.jpg"]
 @layopt layer=1 visible=true
 [image layer=1 name="kouka" storage="bg/B4nFWraU42/piano_base.png" zindex=2]
-[wait time=1000]
+[wait time=4000]
 [endif]
 *46
 [if exp="tf.page==46"]
@@ -796,6 +796,7 @@ tf.raberu = "*"+tf.page;
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [image layer=1 name=kouka storage="bg/sijyou_machi_yuki.png"]
+[wait time=4000]
 [endif]
 *110
 
