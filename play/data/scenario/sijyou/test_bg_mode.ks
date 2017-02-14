@@ -5,9 +5,7 @@
 @layopt layer=1 visible=true
 *link
 @clearstack stack=if
-[iscript]
-$('.kouka').remove();
-[endscript]
+
 @layopt layer=27 visible=true
 [glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=500 y=450 color=white]
 [if exp="tf.page > 0"]
@@ -17,6 +15,7 @@ $('.kouka').remove();
 [s]
 *p1
 [iscript]
+$('.kouka').remove();
 tf.raberu = "*"+tf.page;
 [endscript]
 @jump target=&tf.raberu
@@ -342,8 +341,8 @@ tf.raberu = "*"+tf.page;
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_moon_lake.jpg"]
 @layopt layer=1 visible=true
-[image layer=1 name="kouka" storage="bg/B4nFWraU42/piano_base.png"]
-[wait time=100]
+[image layer=1 name="kouka" storage="bg/B4nFWraU42/piano_base.png" zindex=2]
+[wait time=1000]
 [endif]
 *46
 [if exp="tf.page==46"]
