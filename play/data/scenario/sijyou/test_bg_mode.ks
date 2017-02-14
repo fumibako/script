@@ -909,164 +909,151 @@ tf.raberu = "*"+tf.page;
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg"]
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg"]
 [endif]
 *126
 [if exp="tf.page==126"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_tegami_tokiko.jpg"]
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yoru.jpg"]
 [endif]
 *127
 [if exp="tf.page==127"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg"]
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yuu.jpg"]
 [endif]
 *128
 [if exp="tf.page==128"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yoru.jpg"]
+[chara_mod name="bg" storage="bg/bg_tirasi.jpg"]
 [endif]
 *129
 [if exp="tf.page==129"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yuu.jpg"]
+[chara_mod name="bg" storage="bg/bg_winter_forest.jpg"]
 [endif]
 *130
 [if exp="tf.page==130"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_tirasi.jpg"]
+[chara_mod name="bg" storage="bg/bg_winter_forest_yuu.jpg"]
 [endif]
 *131
 [if exp="tf.page==131"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_winter_forest.jpg"]
+[chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
 [endif]
 *132
 [if exp="tf.page==132"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_winter_forest_yuu.jpg"]
+[chara_mod name="bg" storage="bg/hijieda_kaede_sita2.jpg"]
 [endif]
 *133
 [if exp="tf.page==133"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
+[chara_mod name="bg" storage="bg/hujieda_kyakuseki.jpg"]
 [endif]
 *134
 [if exp="tf.page==134"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/hijieda_kaede_sita2.jpg"]
+[chara_mod name="bg" storage="bg/hujieda_sky1.jpg"]
 [endif]
 *135
 [if exp="tf.page==135"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/hujieda_kyakuseki.jpg"]
+[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
 [endif]
 *136
 [if exp="tf.page==136"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/hujieda_sky1.jpg"]
+[chara_mod name="bg" storage="bg/hujieda_tanpopo_kouen.jpg"]
 [endif]
 *137
 [if exp="tf.page==137"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
+[chara_mod name="bg" storage="bg/katuraginomiya_kaigi2.jpg"]
 [endif]
 *138
 [if exp="tf.page==138"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/hujieda_tanpopo_kouen.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [endif]
 *139
 [if exp="tf.page==139"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/katuraginomiya_kaigi2.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg"]
 [endif]
 *140
 [if exp="tf.page==140"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa_haru.jpg"]
 [endif]
 *141
+
 [if exp="tf.page==141"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
 [endif]
 *142
 [if exp="tf.page==142"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/room_niwa_haru.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg"]
 [endif]
 *143
 [if exp="tf.page==143"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
+[chara_mod name="bg" storage="bg/situnaiongaku.jpg"]
 [endif]
 *144
 [if exp="tf.page==144"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg"]
+[chara_mod name="bg" storage="bg/situnaiongaku2.jpg"]
 [endif]
 *145
 [if exp="tf.page==145"]
 [eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/situnaiongaku.jpg"]
-[endif]
-*146
-[if exp="tf.page==146"]
-[eval exp="f.haikei_credit=''"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/situnaiongaku2.jpg"]
-[endif]
-*147
-[if exp="tf.page==147"]
-[eval exp="f.haikei_credit=''"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
 [endif]
-*148
-[if exp="tf.page > 148"]
+*146
+[if exp="tf.page > 146"]
 [eval exp="tf.page=0"]
 ;@jump target=start
 [eval exp="f.haikei_credit=''"]
