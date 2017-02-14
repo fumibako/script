@@ -6,14 +6,14 @@
 @clearstack stack=if
 
 @layopt layer=27 visible=true
-[glink exp="tf.page++" text="&tf.page" size=20 width="250" x=500 y=450 color=white target=&tf.page]
+[glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=500 y=450 color=white]
 [if exp="tf.page > 0"]
 [glink target=p1 exp="tf.page--" text="前へ" size=20 width="250" x=500 y=480 color=white]
 [endif]
 [glink target=endtest text="おわり" size=20 width="250" x=500 y=510 color=white]
 [s]
 *p1
-;@jump target=&tf.page
+@jump target=&tf.page
 
 *0
 *1
