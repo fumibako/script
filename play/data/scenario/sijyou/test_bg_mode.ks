@@ -1072,8 +1072,9 @@ tf.raberu = "*"+tf.page;
 
 *endtest
 [eval exp="tf.page=0"]
-@jump storage="test_sijyou.ks"
+@freeimage layer=27
 [eval exp="f.haikei_credit=''"]
+@jump storage="test_sijyou.ks"
 [s]
 
 *window_close
