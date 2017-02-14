@@ -837,7 +837,7 @@ tf.raberu = "*"+tf.page;
 [endif]
 *115
 [if exp="tf.page==115"]
-[eval exp="f.haikei_credit='ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit=''"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
@@ -1055,6 +1055,7 @@ tf.raberu = "*"+tf.page;
 [chara_mod name="bg" storage="bg/test_mon.jpg"]
 [endif]
 *146
+*147
 [if exp="tf.page > 146"]
 [eval exp="tf.page=0"]
 ;@jump target=start
