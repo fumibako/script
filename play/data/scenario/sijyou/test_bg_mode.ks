@@ -268,7 +268,7 @@ tf.raberu = "*"+tf.page;
 [endif]
 *35
 [if exp="tf.page==35"]
-[eval exp="f.haikei_credit='＠名無しさん１2'"]
+[eval exp="f.haikei_credit='＠名無しさん１'"]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg"]
