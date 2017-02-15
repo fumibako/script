@@ -258,7 +258,7 @@ $('.junbi_girl').remove();
 #
 町は賑やかで活気に満ちている。[r]
 町の雑踏の中では、私付きの女中以外にとって[r]
-私はただの道行く[ruby text=ひと]一人にすぎない。[p]
+私は、ただの道行く[ruby text=ひと]一人にすぎない。[p]
 
 ;[主人公憂い]幕間に設定済
 [whosay name=&sf.girl_namae color="#cf5a7f"]
