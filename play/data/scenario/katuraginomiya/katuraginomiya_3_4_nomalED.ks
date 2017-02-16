@@ -278,6 +278,7 @@ $("kan").css('margin','auto');
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました。マクロの動作がうまくいかない場合にまた変更する可能性があります(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
 [葛城宮ルート終了 end="normal"]
+@jump storage="event.ks" target=*event_ED
 [endif]
 @jump storage="test_katuragi.ks"
 [s]
