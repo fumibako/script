@@ -17,9 +17,7 @@
 [s]
 [endif]
 
-[if exp="tf.chara_test=true"]
-@ jump storage="test_sijyou_hyoujou.ks" target=*page_01
-[endif]
+
 
 
 *p1
@@ -1075,7 +1073,12 @@ tf.raberu = "*"+tf.page;
 [endif]
 
 [wait time=50]
+[if exp="tf.chara_test=true"]
+@jump storage="test_sijyou_hyoujou.ks" target=*page_01
+[else]
 @jump target=link
+[endif]
+
 
 
 
