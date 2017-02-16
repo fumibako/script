@@ -36,10 +36,10 @@ tf.raberu = "*"+tf.page;
 *1
 [if exp="tf.page == 1 || tf.page == 0 "]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 @layopt layer=message visible=true
 テスト２[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bara_image.jpg"]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 @jump target=link
 [endif]
 *2
