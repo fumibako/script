@@ -107,7 +107,7 @@
 [endif]
 ;=======================================================================================
 ;5◆葛城宮イベント判定katuraginomiya_9_3.ks ルート決定後なので条件はすくなめ（9/3,かつ　au==1のとき）
-[if exp="(f.okeiko_month==9 && f.okeiko_week==3) && f.katuraginomiya_au==1 && f.event_katuraginomiya[5]==0"]
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 3) && f.katuraginomiya_au==1 && f.event_katuraginomiya[5] == 0"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_3.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_3'"]
 	[eval exp="f.event_type='talk'"]
@@ -116,7 +116,7 @@
 [endif]
 ;=======================================================================================
 ;6◆葛城宮イベント判定katuraginomiya_9_4.ks　週終わりファイルへ ルート決定後なので条件はすくなめ（9/4,かつ　au==1のとき）		
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 4) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[6]==0"]		
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 4) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[6] == 0"]		
  	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_4.ks'"]		
  	[eval exp="f.event_target='*replay_katuraginomiya_9_4'"]		
  	[eval exp="f.event_type='talk'"]		
@@ -156,7 +156,7 @@
 ;=======================================================================================
 ;11◆葛城宮イベント判定 katuraginomiya_11_4.ks
 ;別ファイルへ　週終わりファイルへ
-;[if exp="(f.okeiko_month == 11 && f.okeiko_week==4) &&  f.katuraginomiya_au == 1 && f.event_katuraginomiya[12] == 0"]
+;[if exp="(f.okeiko_month == 11 && f.okeiko_week==4) &&  f.katuraginomiya_au == 1 && f.event_katuraginomiya[11] == 0"]
 ;	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_11_4.ks'"]
 ;	[eval exp="f.event_target='*replay_katuraginomiya_11_4'"]
 ;	[eval exp="f.event_type='talk'"]
