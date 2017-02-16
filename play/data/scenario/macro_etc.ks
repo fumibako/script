@@ -432,6 +432,39 @@ $('.loding_pic1').remove();
 [stopse]
 [endmacro]
 
+;◆[イベントシーン終了・ＢＧＭ有]
+[macro name="イベントシーン終了・ＢＧＭ有"]
+[cm]
+;攻略対象立ち絵消去
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 13]
+;主人公顔グラ消去
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+;演出用レイヤ消去
+[freeimage layer = 29]
+
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+
+;会話ウィンドウ消去
+[freeimage layer = 14]
+[wait time=10]
+
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[stopse]
+[endmacro]
+
 [macro name=イベントシーン終了２]
 ;書き直すのが面倒なので一括処理内容
 ;散策
