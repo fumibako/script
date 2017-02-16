@@ -1,5 +1,6 @@
 ;/////////////////エピローグ追加分（good_end差分です)///////////
 *replay_sijyou_3_4_epilogue_goodED
+*replay_sijyou_3_4_good
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
