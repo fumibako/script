@@ -7,15 +7,8 @@
 [setreplay name="replay_sijyou_3_4_goodED_scene" storage="sijyou_3_4_goodED.ks" target="start"]
 *start
 [stopbgm]
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
-[wait time=50]
-[image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;桜の表示が遅いと見えない,処理不能の為プリロード
-[preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [call target=*start storage="tyrano.ks"]
+[call target=*ed storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -215,7 +208,7 @@ $('.saku3').remove();
 ;幸せは信じれば巡ってくる それは案外気づかない近い場所にあるかもしれません というテーマかな
 ;2人も近いところにいましたけど、お見合いしなければ関係性は変わらなかった？
 
-[イベントシーン終了]
+[イベントシーン終了・ＢＧＭ有]
 ;ending処理待ち
 [if exp="tf.okeiko_gamen==true"]
 [eval exp="sf.ED_sijyou_normal=1"]
