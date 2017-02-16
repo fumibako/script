@@ -3,7 +3,7 @@
 *replay_sijyou_3_4_good
 *start
 [if exp="tf.test_sijyou == true"]
-[eval exp="tf.okeiko_gamen==true"]
+[eval exp="tf.okeiko_gamen=true"]
 [eval exp="f.sijyou_au=1"]
 [endif]
 [stopbgm]
