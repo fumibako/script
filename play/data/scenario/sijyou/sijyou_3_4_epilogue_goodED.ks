@@ -184,9 +184,9 @@ $('.junbi_girl').remove();
 [暗転２ storage="bg/bg_prologue.jpg" time=1000]
 [position left=300 width=700 height=500 top=110 page=fore margint="50"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
-[position left=300 width=300 height=300 top=200 page=fore margint="50"]
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
-[font color=white size=35]
+[font color=white size=27]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;メッセージレイヤを表示
