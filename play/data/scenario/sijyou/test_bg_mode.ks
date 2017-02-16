@@ -8,7 +8,7 @@
 
 [if exp="tf.chara_test==true"]
 テスト１
-@jump storage="test_sijyou_hyoujou.ks" target=*page_01
+@jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
 [else]
 @freeimage layer=27
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -824,7 +824,7 @@ chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 
 [wait time=50]
 [if exp="tf.chara_test=true"]
-@jump storage="test_sijyou_hyoujou.ks" target=*page_01
+@jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
 [else]
 @jump target=link
 [endif]
@@ -839,7 +839,7 @@ chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 @freeimage layer=27
 [eval exp="f.haikei_credit=''"]
 [if exp="tf.chara_test=true"]
-@jump storage="test_sijyou_hyoujou.ks" target=*page_01
+@jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
 [else]
 @jump storage="test_sijyou.ks"
 [endif]
