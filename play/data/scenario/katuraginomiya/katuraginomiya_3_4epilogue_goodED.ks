@@ -345,6 +345,7 @@ $("kan").css('margin','auto');
 ;クレジット呼び出し。呼び出し位置は移動してください。
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [葛城宮ルート終了 end="good"]
+@jump storage="event.ks" target=*event_ED
 [endif]
 [fadeoutbgm time=3000]
 @jump storage="test_katuragi.ks"
