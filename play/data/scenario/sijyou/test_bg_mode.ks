@@ -234,7 +234,7 @@ $('.kouka').remove();
 *38
 [if exp="tf.page==38"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/mirukutennai_zengamen.jpg"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg"]
 [endif]
 *39
 [if exp="tf.page==39"]
@@ -290,7 +290,6 @@ $('.kouka').remove();
 *48
 [if exp="tf.page==48"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_dozou.jpg"]
 [endif]
 *49
@@ -316,7 +315,6 @@ $('.kouka').remove();
 *53
 [if exp="tf.page==53"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
 [endif]
 *54
@@ -332,7 +330,7 @@ $('.kouka').remove();
 *56
 [if exp="tf.page==56"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
-chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
+[chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 [endif]
 *57
 [if exp="tf.page==57"]
@@ -399,8 +397,6 @@ chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 *69
 [if exp="tf.page==69"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
 [endif]
 *70
@@ -431,22 +427,16 @@ chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 *75
 [if exp="tf.page==75"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/housoukyoku.jpg"]
 [endif]
 *76
 [if exp="tf.page==76"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
 [endif]
 *77
 [if exp="tf.page==77"]
 [eval exp="f.haikei_credit='fricer'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [endif]
 *78
@@ -467,8 +457,6 @@ chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 *81
 [if exp="tf.page==81"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo/＠名無しさん１'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg"]
 [endif]
 *82
@@ -499,22 +487,17 @@ chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 *87
 [if exp="tf.page==87"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ongakurensyuusitu.jpg"]
 [endif]
 *88
 [if exp="tf.page==88"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
 [endif]
 *89
 [if exp="tf.page==89"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/test_zaizen_kaigi.jpg"]
 [endif]
 *90
@@ -563,8 +546,6 @@ chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 *98
 [if exp="tf.page==98"]
 [eval exp="f.haikei_credit='fricer'"]
-@freeimage layer=27
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/bg_garden_isu.jpg"]
 [endif]
 *99
@@ -626,6 +607,9 @@ chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
 *110
 
 [if exp="tf.page==110"]
+[iscript]
+$('.kouka').remove();
+[endscript]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/bg_web_blue2.jpg"]
 [endif]
