@@ -4,9 +4,10 @@
 @layopt layer=27 visible=true
 @layopt layer=1 visible=true
 *link
-@clearstack stack=if
 [if exp="tf.chara_test=true"]
 @jump storage="test_sijyou_hyoujou.ks" target=*page_01
+[else]
+@clearstack stack=if
 [endif]
 
 @layopt layer=27 visible=true
