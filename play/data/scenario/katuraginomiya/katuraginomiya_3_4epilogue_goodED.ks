@@ -2,8 +2,8 @@
 =======================お芝居の準備中です==================================
 *replay_katuraginomiya_3_4epilogue_goodED
 [stopbgm]
-[if exp="tf.test_katuraginomiya == true"]
-[eval exp="tf.okeiko_gamen == true"]
+[if exp="tf.test_katuraginomiya==true"]
+[eval exp="tf.okeiko_gamen=true"]
 [eval exp="f.katuraginomiya_au=1"]
 [endif]
 [call target=*start storage="tyrano.ks"]
