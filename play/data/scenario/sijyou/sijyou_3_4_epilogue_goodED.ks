@@ -214,9 +214,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 いつしか恋を綴り、[r]
 [r]
 人々を幸せにする愛に変わっていく。[r]
+[fadeoutbgm time=3000]
 [position left=290 width=700 height=500 top=110 page=fore margint="50"]
 その手紙は ――[p]
-[fadeoutbgm time=3000]
+
 [position left=300 width=400 height=300 top=200 page=fore margint="50"]
 恋綴り　と呼ばれたという。[p]
 
