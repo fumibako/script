@@ -144,6 +144,8 @@ $('.kaede').remove();
 「ええ、[r]
 [sp]でも僕も、負けるつもりはありません」[p]
 
+[藤枝目を開く]
+;↑「瞳は強く輝いていた」の描写にあわせて目を開く表情を追記しました(◆jsYiJcqRkk
 #
 藤枝様の瞳は、強く輝いていた。[r]
 初めて会った時よりも、ずっと生き生きしている。[p]
@@ -202,8 +204,8 @@ $('.kaede').remove();
 ;【立ち絵】主人公：真剣
 [主人公通常]
 [主人公口開]
-「私はずっと肇様にお手紙を書き続けます[r]
-[sp]だけど遠いところで離ればなれになるのは不安です[r]
+「私はずっと肇様にお手紙を書き続けます。[r]
+[sp]だけど遠いところで離ればなれになるのは不安です。[r]
 [sp]必ず私を迎えに来てくれると約束してください」[p]
 
 #
@@ -219,12 +221,24 @@ $('.kaede').remove();
 [whosay name="藤枝 肇" color=%mp.color]
 「ええ、約束を必ず守ります」[p]
 ;=========================================================================
+[if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
+[暗転２ storage="bg/hujieda_goodED.jpg"]
+[else]
 [暗転２ storage="bg/hujieda_normalED.jpg"]
+[endif]
 [藤枝退場]
+[主人公退場]
+;◆goodED条件を満たす場合、good画像を表示
+[if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
+[chara_mod name="bg" storage="bg/hujieda_goodED.jpg"]
+
+[else]
 ;【背景】hujieda_normalED.jpg
-[chara_mod name="bg" storage="bg/hujieda_normalED.jpg" time=1000]
+[chara_mod name="bg" storage="bg/hujieda_normalED.jpg"]
+[endif]
+
 [暗転２終了]
-指切りCG[p]
+;指切りCG
 ;=========================================================================
 #
 「指切りげんまん。嘘ついたら針千本呑ます」[p]
@@ -233,9 +247,10 @@ $('.kaede').remove();
 私たちは同時に声を合わせて指切りをした。[p]
 
 ―― そうお互いに誓い合った。 離れても貴方を想います。[p]
+
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
-[if exp="tf.okeiko_gamen==true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au==1"]
+[if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
 ;次のシーンでメッセージ枠消去
 [主人公退場]
 [eval exp="f.kaogura!='off'"]　
@@ -244,6 +259,7 @@ $('.kaede').remove();
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
 ;機能ボタン消去　ジャンプ後に プリロ―ド画面消去があるため
+[clearfix]
 @jump storage="hujieda/hujieda_3_4_goodED.ks" target="seen_1"
 [endif]
 
@@ -251,6 +267,10 @@ $('.kaede').remove();
 ;綿毛全画面
 ;[暗転２ storage="bg/hijieda_kaede_sita2.jpg"]
 [暗転２ storage="bg/bg_prologue.jpg"]
+;機能ボタン消去
+[clearfix]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面　0x663300
@@ -258,15 +278,14 @@ $('.kaede').remove();
 [iscript]
 $("kan").css('margin','auto');
 [endscript]
-;【背景】綿毛全画面
-[chara_mod name="bg" storage="bg/hijieda_kaede_sita2.jpg"]
+;【背景】綿毛全画面→normalEDのためbg_prologue.jpgに「完」の方にあわせてみます
+;[chara_mod name="bg" storage="bg/hijieda_kaede_sita2.jpg"]
+[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　  完[p]
 ;===============================================================
 [fadeoutbgm time=3000]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;===============================================================
 [wait time=100]
 ;ノーマルここまで
