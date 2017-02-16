@@ -90,6 +90,7 @@
 ;[eval exp="f.haikei_credit='クレジットだすときはtrue↓'"]
 [暗転２ storage="bg/zaizen_CGgood.jpg" clegit=false]
 [財前退場]
+[主人公退場]
 ;【背景】グッドエンドCG　CG差分（財前目閉じ、主人公目閉じ）
 [chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
 [暗転２終了]
@@ -98,7 +99,7 @@
 #
 再び財前様の顔が近づき、私は自然と目を閉じた。
 [p]
-すると額に柔らかく温かいものが触れる。[r]
+すると、額に柔らかく温かいものが触れる。[p]
 ―― 私を慈しむようかのようだわ[p]
 
 ;優しい色合いの暗転　庭ならyukiynagagiを表示してから
@@ -111,7 +112,8 @@
 ;背景変更:黒茶・和紙風 ゆっくりと1300 間がないので1500
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1500 visible=true]
 [wait time=10]
-[主人公伏目]
+[主人公ポーズ通常]
+[主人公通常]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -127,7 +129,6 @@
 ;洋館居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
-[主人公通常]
 ;[call target=*start storage="macro_tati_zaizen.ks"]立ち絵が消える
 ;余裕があれば(ムリ)私服でしょうか
 [財前ベーススーツ]
