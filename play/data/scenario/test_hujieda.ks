@@ -257,6 +257,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 *back_test
 [cm]
 [freeimage layer = 26]
+[eval exp="tf.test_hujieda == false"]
 @jump storage="test.ks"
 [s]
 
@@ -264,6 +265,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [cm]
 [freeimage layer = 26]
 ;------タイトルへ戻る
+[eval exp="tf.test_hujieda == false"]
 @jump storage="title.ks"
 [s]
 
