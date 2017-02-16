@@ -308,7 +308,7 @@ $('.junbi_girl').remove();
 
 「―― 私たちは幸せになる為に生まれてきたのです」[p]
 
-[fadeoutbgm time=3000]
+
 
 [主人公目閉じ]
 #
@@ -346,6 +346,7 @@ $("kan").css('margin','auto');
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [葛城宮ルート終了 end="good"]
 [endif]
+[fadeoutbgm time=3000]
 @jump storage="test_katuragi.ks"
 [s]
 
