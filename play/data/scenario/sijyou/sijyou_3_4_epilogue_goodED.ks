@@ -15,6 +15,7 @@
 ;====================================================
 ;テストは一時的にイベントシーン構築つけてます
 *ep
+[fadeoutbgm time=3000]
 ;==========================スクリプト・全画面表示の間に設定===============================
 ;【テキスト全画面】 裏で画面構成 ;[新聞] test_bg_sinbun.jpg bg_prologue_dark.jpg　bg_prologue.jpg
 ;機能ボタン消去
@@ -214,14 +215,20 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [r]
 人々を幸せにする愛に変わっていく。[r]
 [position left=290 width=700 height=500 top=110 page=fore margint="50"]
-その手紙は－－[p]
-
+その手紙は ――[p]
+[fadeoutbgm time=3000]
 [position left=300 width=400 height=300 top=200 page=fore margint="50"]
 恋綴り　と呼ばれたという。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用)
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
+
 [iscript]
 tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [endscript]
-;恋綴りのタイトルに戻るイメージ
+
 ;手紙によって大きく変わった四条兄弟が人々に貢献する・・・にもつながる？
 ;===============================================================
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
