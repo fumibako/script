@@ -178,6 +178,7 @@ $('.junbi_girl').remove();
 (手紙の代わりに、華で想いを綴っていくと決めたのだから、
 [四条口微笑み]
 もっと精進しなくては)[p]
+#
 [wait time=10]
 ;メッセージレイヤを消去
 @layopt layer=message0 visible=false
@@ -206,7 +207,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [freeimage layer = 29 time=1000]
 ;背景仮でおいてみる　いつもの手紙の背景に和花でも？？
 [font color="000000"]
-[position left=300 width=700 height=500 top=110 page=fore margint="50"]
+[position left=290 width=700 height=500 top=110 page=fore margint="50"]
 想いを繋げて綴っていく手紙は、[r]
 いつしか恋を綴り、[r]
 [r]
@@ -223,7 +224,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;===============================================================
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
-
+[font color=white size=35]
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
