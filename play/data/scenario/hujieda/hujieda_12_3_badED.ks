@@ -120,16 +120,27 @@
 [r]
 [sp]……ただそれだけ[p]
 
-
+;===============================================================
+[暗転２ storage="bg/bg_prologue_dark.jpg"]
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
+;テキスト全画面　0x663300
+[font color=white size=35]
+[iscript]
+$("kan").css('margin','auto');
+[endscript]
+;===============================================================
+;画面中央に「完」の文字
+[sp]　  完[p]
+;===============================================================
 [fadeoutbgm time=3000]
-
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[freeimage layer=29]
+[fadeoutbgm time=3000]
 [wait time=2000]
 ;スマホで音楽がぶちときれるのはどうしようもない 
-
-;=======================
-[freeimage layer=29]
-;=======================
-
+;===============================================================
 [イベントシーン終了]
 [if exp="tf.okeiko_gamen==true"]
 [藤枝ルート終了 end="bad"]
