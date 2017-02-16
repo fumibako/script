@@ -1,7 +1,6 @@
 *replay_test_ed_credit
 *first
 [if exp="tf.test_sijyou==true"]
-;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [glink target=test_haikei text=藤枝ver exp="f.hujieda_au=1" width="200" x=200 y=80 color=white]
 [glink target=test_haikei text=葛城宮ver exp="f.katuraginomiya_au=1" width="200" x=200 y=130 color=white]
@@ -9,10 +8,15 @@
 [glink target=test_haikei text=黒田ver exp="f.kuroda_au=1" width="200" x=200 y=230 color=white]
 [glink target=test_haikei text=四条ver exp="f.sijyou_au=1" width="200" x=200 y=330 color=white]
 [glink target=test_haikei text=例外  width="200" x=200 y=380 color=white]
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用)
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 [s]
-*test_haikei
 [stopbgm]
 [endif]
+*test_haikei
 ;===============================================================
 [if exp="f.hujieda_au == 1"]
 ;藤枝背景
@@ -126,19 +130,6 @@
 [keyframe name="opcy"]
 [frame p=100% opacity="1"]
 [endkeyframe]
-
-
-[if exp="tf.test_sijyou==true"]
-[mtext text="テストです。クリックしてください" layer=27 size=18 x="&tf.left_x" y=210 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut"]
-[p]
-;通常はここで鳴らさずEDから続けてください　スマホでクリック待ちしなければいけないので
-[if exp="sf.BGM=='ON'"]
-;【BGM】はなごよみ〜さくら〜（normal/goodED用)
-[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
-[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
-[endif]
-[endif]
-;音楽はなんでも
 
 ;===============================================================
 [if exp="f.hujieda_au == 1"]
