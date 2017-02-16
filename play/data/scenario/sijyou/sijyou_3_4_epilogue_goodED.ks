@@ -237,6 +237,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [eval exp="sf.ED_sijyou_good=1"]
 ;回想記録終了
 [endreplay] 
+[call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 @jump storage="event.ks" target=*event_ED
 [else]
 [四条ルート終了 end=good]
