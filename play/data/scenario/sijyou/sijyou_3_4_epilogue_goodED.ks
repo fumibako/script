@@ -238,7 +238,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
-[イベントシーン終了]
+[イベントシーン終了・ＢＧＭ有]
 ;ending処理
 [if exp="tf.okeiko_gamen==true"]
 ;goodエンディング時
