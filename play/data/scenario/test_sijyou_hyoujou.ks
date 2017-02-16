@@ -338,6 +338,7 @@
 @jump target=page_end
 
 *page_end
+[eval exp="tf.page=0"]
 [glink storage="sijyou/test_bg_mode.ks" target=p1 exp="tf.page++" text="&tf.page" size=20 width="200" x=800 y=190 color=white]
 [if exp="tf.page > 0"]
 [glink storage="sijyou/test_bg_mode.ks" target=p1 exp="tf.page--" text="前へ" size=20 width="200" x=800 y=240 color=white]
