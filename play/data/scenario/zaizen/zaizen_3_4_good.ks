@@ -325,7 +325,10 @@ $("kan").css('margin','auto');
 ;====================================================================================
 ;終わり
 [イベントシーン終了]
+[if exp="tf.okeiko_gamen==true"]
+[call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [財前ルート終了 end="good"]
+[endif]
 @jump storage="test_zaizen.ks"
 [s]
 
