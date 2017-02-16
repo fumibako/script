@@ -100,7 +100,7 @@ $('.saku3').remove();
 ;散策４を見ている場合
 [if exp="f.event_machi_sijyou[4]==1"]
 [whosay name="四条親戚" color="#807070"]
-「あのお二人を見て、そう思うなら、きっと」[p]
+「お二人を見て、そう思うなら、きっと」[p]
 [whosay name="華衣" color=%mp.color]
 「！　」[p]
 [whosay name="華衣" color=%mp.color]
@@ -119,12 +119,12 @@ $('.saku3').remove();
 （いつか、あの二人に負けないものを見つけてみせよう）[p]
 [else]
 [whosay name="四条親戚" color="#807070"]
-「あのお二人を見て、そう思うなら、きっと」[p]
+「お二人を見て、そう思うなら、きっと」[p]
 [whosay name="華衣" color=%mp.color]
-(……今は、まだわからない。[r]
-[sp]でも、もう一度、前を見てみようと思う）[p]
+「そうですね……」[p]
 [whosay name="華衣" color=%mp.color]
-（いつか、あの二人に負けないものを見つけてみせよう）[p]
+（今は、まだわからない。[r]
+[sp]でも、いつか、あの二人に負けないものを見つけてみせよう）[p]
 [endif]
 
 [if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 "]
@@ -140,8 +140,6 @@ $('.saku3').remove();
 ;ｽﾁﾙをみてから考えよう・・・
 [p]
 
-幸せは信じれば巡ってくる。[r]
-それは、案外、気づかない近い場所にあるのかもしれません。[p]
 [if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 "]
 ;エピローグをつづけてみる場合の処理
 @jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
