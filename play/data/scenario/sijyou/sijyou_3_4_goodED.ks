@@ -6,10 +6,15 @@
 *replay_sijyou_3_4_good
 [setreplay name="replay_sijyou_3_4_goodED_scene" storage="sijyou_3_4_goodED.ks" target="start"]
 *start
-[chara_mod name="bg" storage="toumei.gif" time=100]
+[stopbgm]
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[wait time=50]
+[image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
 ;桜の表示が遅いと見えない,処理不能の為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
-[stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
@@ -18,7 +23,11 @@
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
+#
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;================================================================================================
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=20 y=-600]
 [image name="saku2" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=60 y=-600 ]
 [image name="saku3" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=80 y=-600]
@@ -57,10 +66,7 @@
 [kanim name="saku2" keyframe="animation2" delay="1.0s" time="9000" count="infinite"]
 [kanim name="saku3" keyframe="animation3" delay="0.4s" time="8000"  count="infinite"]
 ;文字ボケ修正挑戦したが効果がないので消去
-;[iscript]
-;$("message0").css({"-webkit-font-smoothing" : "antialiased"});
-;[endscript]
-
+[anime name=message0 opacity=300]
 #
 四条家 と、[名字]家 の結納儀式がつつがなく終わり、親戚一同から祝福の声がかかる。[p]
 
