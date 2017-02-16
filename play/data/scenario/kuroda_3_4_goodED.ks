@@ -328,7 +328,7 @@ if (mp.name!="") {
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [chara_mod name="bg" storage="toumei.gif" time=1000]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_blue.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 
 ;主人公から兄への手紙
@@ -465,7 +465,9 @@ if (mp.name!="") {
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
-[fadeoutbgm time=3000]
+[if exp="tf.okeiko_gamen != true"]
+	[fadeoutbgm time=3000]
+[endif]
 ;メッセージレイヤを全画面用に設定変更
 [position left=160 width=700 height=530 top=110 page=fore margint="50"]
 
@@ -488,11 +490,20 @@ if (mp.name!="") {
 [wait time=10]
 [clearfix]
 [cm]
-[eval exp="sf.ED_kuroda_good=1"]
+[eval exp="sf.ED_kuroda_good = 1"]
 ;回想記録終了 
 [endreplay] 
 
+[if exp="tf.okeiko_gamen == true"]
+[イベントシーン終了・ＢＧＭ有]
+;クレジット呼び出し。呼び出し位置は移動してください。
+[call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 @jump storage="event.ks" target=*event_ED
+[endif]
+
+;お稽古パート以外から呼び出しの際はテストページへ(将来？テストページから呼び出しなど作る場合用)
+@jump storage="test.ks"
+[s]
 
 *window_close
 [cm]
