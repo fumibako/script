@@ -190,11 +190,8 @@ $('.saku3').remove();
 [eval exp="sf.ED_sijyou_normal=1"]
 ;回想記録終了
 [endreplay] 
-@jump storage="event.ks" target=*event_ED
-[elsif exp="tf.okeiko_gamen==false"]
-
-[else]
 [四条ルート終了 end=nomal]
+@jump storage="event.ks" target=*event_ED
 [endif]
 
 [if exp="tf.sijyou_test==true"]
