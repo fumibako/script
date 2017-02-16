@@ -46,7 +46,7 @@
 [ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 [ptext text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
-
+*sijyou_text1
 [glink target="page_01" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=blue]
 [glink target="page_02" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=blue]
 [glink target="page_03" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=blue]
