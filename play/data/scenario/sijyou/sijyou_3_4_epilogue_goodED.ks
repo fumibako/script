@@ -182,10 +182,12 @@ $('.junbi_girl').remove();
 ;メッセージレイヤを消去
 @layopt layer=message0 visible=false
 [暗転２ storage="bg/bg_prologue.jpg" time=1000]
+[font color="ffffff"]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [position left=300 width=700 height=500 top=110 page=fore margint="50"]
-[font color="000000"]
+;テキスト全画面
+[font size=35]
 ;メッセージレイヤを表示
 @layopt layer=message0 visible=true
 ;一時的に行間多く
@@ -200,6 +202,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 その陰には、彼を支える[名前]の姿があったという。[p]
 [暗転２終了]
 ;背景仮でおいてみる　いつもの手紙の背景に和花でも？？
+[font color="000000"]
 [chara_mod name="bg" storage="bg/sijyou_ed_tegami0.jpg" time=1000]
 想いを繋げて綴っていく手紙は、[r]
 いつしか恋を綴り、[r]
@@ -217,8 +220,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;===============================================================
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
-;テキスト全画面
-[font size=35]
+
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
