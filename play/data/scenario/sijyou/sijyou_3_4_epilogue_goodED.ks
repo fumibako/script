@@ -2,6 +2,10 @@
 *replay_sijyou_3_4_epilogue_goodED
 *replay_sijyou_3_4_good
 *start
+[if exp="tf.test_sijyou == true"]
+[eval exp="tf.okeiko_gamen==true"]
+[eval exp="f.sijyou_au=1"]
+[endif]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*3_4_ep storage="sijyou/preload_sijyou.ks"]
