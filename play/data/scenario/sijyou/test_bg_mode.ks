@@ -16,8 +16,9 @@
 [glink storage="sijyou/test_bg_mode.ks" target=endtest text="おわり" size=20 width="200" x=800 y=290 color=white]
 [s]
 [endif]
+
 [if exp="tf.chara_test=true"]
-[return]
+@ jump storage="test_sijyou_hyoujou.ks" target=*page_01
 [endif]
 
 
