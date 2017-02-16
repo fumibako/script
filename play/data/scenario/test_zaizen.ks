@@ -7,7 +7,7 @@
 [eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
 ;財前テストモード
-[eval exp="tf.test_zaizen == true"]
+[eval exp="tf.test_zaizen = true"]
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
