@@ -519,14 +519,14 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 	[eval exp="sf.ED_sijyou_good=1"]
 ;回想記録終了
 	[endreplay] 
-[elsif exp="mp.end='nomal'"]
+[elsif exp="mp.end='normal'"]
 	[eval exp="sf.ED_sijyou_normal=1"]
 	[endreplay] 
 [elsif exp="mp.end='bad'"]
 	[eval exp="sf.ED_sijyou_bad=1"]
 	[endreplay] 
 [endif]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="tf.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
