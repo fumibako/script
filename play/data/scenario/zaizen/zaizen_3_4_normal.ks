@@ -628,6 +628,7 @@ $("kan").css('margin','auto');
 ;◆normalED終了処理へ
 [if exp="tf.okeiko_gamen==true"]
 [財前ルート終了 end="normal"]
+@jump storage="event.ks" target=*event_ED
 [endif]
 @jump storage="test_zaizen.ks"
 [s]
