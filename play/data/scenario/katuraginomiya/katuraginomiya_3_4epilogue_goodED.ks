@@ -342,6 +342,8 @@ $("kan").css('margin','auto');
 [イベントシーン終了]
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
+;クレジット呼び出し。呼び出し位置は移動してください。
+[call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [葛城宮ルート終了 end="good"]
 [endif]
 @jump storage="test_katuragi.ks"
