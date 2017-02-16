@@ -338,9 +338,9 @@
 
 *page_end
 
-[glink storage="sijyou/test_bg_mode.ks" target=p1 exp="tf.page++" text="&tf.page" size=20 width="200" x=800 y=190 color=white]
+[glink storage="sijyou/test_bg_mode.ks" target=p1 exp="tf.page++" text="&tf.page" size=20 width="180" x=800 y=190 color=white]
 [if exp="tf.page > 0"]
-[glink storage="sijyou/test_bg_mode.ks" target=p1 exp="tf.page--" text="前へ" size=20 width="200" x=800 y=240 color=white]
+[glink storage="sijyou/test_bg_mode.ks" target=p1 exp="tf.page--" text="前へ" size=20 width="180" x=800 y=240 color=white]
 [endif]
 [glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=290 color=white]
 [glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=320 color=white]
