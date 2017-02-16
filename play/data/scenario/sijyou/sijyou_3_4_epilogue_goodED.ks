@@ -181,8 +181,9 @@ $('.junbi_girl').remove();
 [wait time=10]
 ;メッセージレイヤを消去
 @layopt layer=message0 visible=false
-[暗転２ storage="bg/bg_prologue.jpg" time=1000]
-[position left=300 width=700 height=500 top=110 page=fore margint="50"]
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -201,11 +202,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 ;【退場】四条
 [四条退場]
 その陰には、彼を支える[名前]の姿があったという。[p]
-[暗転２終了]
+[chara_mod name="bg" storage="bg/sijyou_ed_tegami0.jpg" time=1000]
+[freeimage layer = 29 time=1000]
 ;背景仮でおいてみる　いつもの手紙の背景に和花でも？？
 [font color="000000"]
 [position left=300 width=700 height=500 top=110 page=fore margint="50"]
-[chara_mod name="bg" storage="bg/sijyou_ed_tegami0.jpg" time=1000]
 想いを繋げて綴っていく手紙は、[r]
 いつしか恋を綴り、[r]
 [r]
