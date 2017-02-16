@@ -1,6 +1,11 @@
 ;=======================お芝居の準備中です==========================================
 *replay_zaizen_3_4_good
 [stopbgm]
+[if exp="tf.test_zaizen == true"]
+[eval exp="tf.okeiko_gamen == true"]
+[eval exp="f.zaizen_au=1"]
+[endif]
+
 [call target=*start storage="tyrano.ks"]
 [call target=*3_4_good storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_graphic.ks"]
