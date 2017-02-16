@@ -4,7 +4,8 @@
 *link
 @layopt layer=27 visible=true
 @layopt layer=1 visible=true
-[if exp="tf.chara_test=true"]
+
+[if exp="tf.chara_test==true"]
 テスト１
 @jump storage="test_sijyou_hyoujou.ks" target=*page_01
 [else]
