@@ -171,6 +171,8 @@ $('.saku3').remove();
 #
 [if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 && f.sijyou_sobo == true "]
 ;エピローグをつづけてみる場合の処理
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
 @jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target=*ep
 [endif]
 
