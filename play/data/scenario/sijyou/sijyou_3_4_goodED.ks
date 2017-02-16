@@ -133,7 +133,7 @@ $('.saku3').remove();
 ;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
 [else]
-[暗転２ storage="bg/sijyou_CGgood.jpg"]
+[暗転２ storage="bg/sijyou_CGnomal.jpg"]
 [chara_mod name="bg" storage="bg/sijyou_CGnomal.jpg" time=1000]
 ;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
