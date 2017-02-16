@@ -2,7 +2,7 @@
 *replay_zaizen_3_4_good
 [stopbgm]
 [if exp="tf.test_zaizen == true"]
-[eval exp="tf.okeiko_gamen == true"]
+[eval exp="tf.okeiko_gamen=true"]
 [eval exp="f.zaizen_au=1"]
 [endif]
 
