@@ -457,38 +457,7 @@
 ;==========================================================================
 *end_sub1
 ;ここはマクロ案部です。さすがに本体にかかわるマクロには書くけませんので、もしなにかあればこちらで検証&試作して見せます
-;◆[イベントシーン終了・ＢＧＭ有]
-[macro name="イベントシーン終了・ＢＧＭ有"]
-[cm]
-;攻略対象立ち絵消去
-[freeimage layer = 8]
-[freeimage layer = 9]
-[freeimage layer = 10]
-[freeimage layer = 11]
-[freeimage layer = 12]
-[freeimage layer = 13]
-;主人公顔グラ消去
-[freeimage layer = 15]
-[freeimage layer = 16]
-[freeimage layer = 17]
-[freeimage layer = 18]
-[freeimage layer = 19]
-[freeimage layer = 20]
-;演出用レイヤ消去
-[freeimage layer = 29]
 
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-
-;会話ウィンドウ消去
-[freeimage layer = 14]
-[wait time=10]
-
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-[stopse]
-[endmacro]
 ;==================================================
 ;テストプレイで画面遷移時の自然さに見入ってしまいました。立ち絵が背景と共にふわっと溶け込むように切り替わる自然さが素晴らしいと思います
 ;↓macro_etc.ksに[四条イベントシーン構築][四条ボタン表示]を追加と動作確認をしましたので、こちらは消去させていただきます
