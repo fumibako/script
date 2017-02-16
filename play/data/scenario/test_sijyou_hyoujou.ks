@@ -343,7 +343,6 @@
 [if exp="tf.page > 0"]
 [glink storage="sijyou/test_bg_mode.ks" target=p1 exp="tf.page--" text="前へ" size=20 width="200" x=800 y=240 color=white]
 [endif]
-[glink storage="sijyou/test_bg_mode.ks" target=endtest text="おわり" size=20 width="200" x=800 y=290 color=white]
 [glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=290 color=white]
 [glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=320 color=white]
 この表情は以下の指定です。[r]
