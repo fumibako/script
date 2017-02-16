@@ -133,11 +133,15 @@ $('.saku3').remove();
 [chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
 ;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
+
 [else]
 [暗転２ storage="bg/sijyou_CGnomal.jpg"]
 [chara_mod name="bg" storage="bg/sijyou_CGnomal.jpg" time=1000]
 ;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
+[endif]
+
+
 [whosay name="華織" color="olivedrab"]
 「これからは、僕が貴方の力になりたい。　恋人として、[r]
 [sp]夫として、貴方の支えでありたい」[p]
