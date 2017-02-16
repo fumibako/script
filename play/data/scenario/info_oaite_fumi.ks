@@ -1223,7 +1223,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[glink storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=275 y=585 color=white]
 	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=475 y=585 color=white]
 [endif]
-[if exp="f.hujieda_fumi_start==1"]
+[if exp="f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month == 10 || (f.okeiko_month == 2 && (f.okeiko_week == 3 || f.okeiko_week == 4)) || f.okeiko_month == 3)"]
 ;藤枝と文通可能なのは個別ルートに入った後、9月2週～10月4週と2月3週以降。11月1週(発覚)～2月2週は不可
 	[glink storage="fumi_henji.ks" target=fumibako_hujieda text="藤枝　肇" size=16 width="120" x=400 y=585 color=white]
 @jump target=fumibako_oaite_hyouji_owari
@@ -2176,7 +2176,7 @@ f.fumi_katuraginomiya_midoku_y=[emb exp="f.fumi_katuraginomiya_midoku_y"]
 [eval exp="tf.fumi_hyouji_title_x = 545"]
 [endif]
 ;◆攻略対象以外の手紙は未読や返信ボタンを表示しない
-[if exp="f.fumi_hairetsu1 == 5 || f.fumi_hairetsu1 == 6 || f.fumi_hairetsu1 == 7 || f.fumi_hairetsu1 == 8 || f.fumi_hairetsu1 == 9"]
+[if exp="f.fumi_hairetsu1 == 5 || f.fumi_hairetsu1 == 6 || f.fumi_hairetsu1 == 7 || f.fumi_hairetsu1 == 8 || f.fumi_hairetsu1 == 9 || f.fumi_hairetsu1 == 10 || f.fumi_hairetsu1 == 11"]
 @jump target=*hensin_button_owari
 [endif]
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] > 0"]
