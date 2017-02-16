@@ -57,7 +57,7 @@
 [ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=400 y=400 color=darkslateblue bold=bold]
 [edit left=400 top=430 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
 
-[ptext text="淑女度" layer=29 size=15 x=650 y=290 color=darkslateblue bold=bold]
+[ptext text="淑女度" layer=29 size=15 x=650 y=90 color=darkslateblue bold=bold]
 [edit left=650 top=110 width=200 length=200 maxchars=3 name="f.para_shujinkou_shukujodo" height=20]
 
 [iscript]
