@@ -72,7 +72,41 @@
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
 
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;------------------------------------------------
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「今から行われるこの会議は軍の兵達の指標となり、政治おける軍の立場を[r]
 [sp]決める重要なものであります」
@@ -380,6 +414,8 @@
 「先ほど、国会で大蔵大臣が大きな失言をしました！[r]
 [sp]首都を中心に大きな騒ぎと発展するやもしれません！」[p]
 *seen11
+
+*seen_end
 [イベントシーン終了]
 [イベントシーン終了４]
 
