@@ -131,15 +131,32 @@ $('.saku3').remove();
 [暗転２ storage="bg/sijyou_CGgood.jpg"]
 [chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
 ;[eval exp="f.haikei_credit=''"]
+[p]
 [暗転２終了]
 [else]
 [暗転２ storage="bg/sijyou_CGnomal.jpg"]
 [chara_mod name="bg" storage="bg/sijyou_CGnomal.jpg" time=1000]
 ;[eval exp="f.haikei_credit=''"]
-[暗転２終了]
-;ｽﾁﾙをみてから考えよう・・・
 [p]
+[暗転２終了]
+[whosay name="華織" color="olivedrab"]
+「これからは、僕が貴方の力になりたい。　恋人として、[r]
+[sp]夫として、貴方の支えでありたい」[p]
+[whosay name="華織" color="olivedrab"]
+「悔いのないように。[r]
+[sp]貴方に辛い時が訪れたとしても、いつでもこうして抱きしめて[r]
+[sp]あげます」[p]
+#
+貴方のおかげで ここまで来れた。[r] 
+貴方が教えてくれた、ひたむきな優しさに触れ、本当の愛を学び、[r]
+愛を知りました。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（ええ、これからも共に未来を創り、[r]
+[sp]私達の想いをのせて、花を慈しみましょう）[p]
 
+;離れてて思いつかないので仮
+
+#
 [if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 "]
 ;エピローグをつづけてみる場合の処理
 @jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
