@@ -14,6 +14,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;背景テスト組み合わせ中
+[eval exp="tf.chara_test=true"]
 [call target=*start storage="sijyou/test_bg_mode.ks"]
 
 ;=============================================
