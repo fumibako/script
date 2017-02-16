@@ -409,6 +409,20 @@
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
+*ed
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[wait time=50]
+[image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;桜の表示が遅いと見えない,処理不能の為プリロード
+[preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
+[preload storage="data/fgimage/bg/bg/bg_sakura.jpg"]
+@jump target=end_sub
+;[return]へGO
+;以降は、無駄な読み込みはしない
+;======================================================================================
 ;他散策時の凡庸
 ;======================================================================================
 *bonyou
@@ -429,7 +443,7 @@
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
-@jump target=end_sub
+@jump target=end_sub1
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -441,6 +455,7 @@
 ;◆【プリロード画面消去】はmacro.ksへ
 
 ;==========================================================================
+*end_sub1
 ;ここはマクロ案部です。さすがに本体にかかわるマクロには書くけませんので、もしなにかあればこちらで検証&試作して見せます
 ;◆[イベントシーン終了・ＢＧＭ有]
 [macro name="イベントシーン終了・ＢＧＭ有"]
