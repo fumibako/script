@@ -324,12 +324,13 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;====================================================================================
 ;終わり
-[イベントシーン終了]
 [if exp="tf.okeiko_gamen==true"]
+[イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [財前ルート終了 end="good"]
 @jump storage="event.ks" target=*event_ED
 [endif]
+[イベントシーン終了]
 @jump storage="test_zaizen.ks"
 [s]
 
