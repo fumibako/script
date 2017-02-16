@@ -194,7 +194,7 @@ $('.saku3').remove();
 @jump storage="event.ks" target=*event_ED
 [endif]
 
-[if exp="tf.sijyou_test==true"]
+[if exp="tf.test_sijyou == true"]
 @jump storage="test_sijyou.ks"
 [s]
 [endif]
