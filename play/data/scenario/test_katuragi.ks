@@ -6,6 +6,8 @@
 [playbgm storage="title_yukidoke.ogg" loop=true]
 [eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
+;葛城宮テスト
+[eval exp="tf.test_katuraginomiya == true"]
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
