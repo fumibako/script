@@ -219,6 +219,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [fadeoutbgm time=3000]
 [position left=300 width=400 height=300 top=200 page=fore margint="50"]
 恋綴り　と呼ばれたという。[p]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜（normal/goodED用)
 [playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
@@ -237,7 +238,6 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
-
 [イベントシーン終了]
 ;ending処理
 [if exp="tf.okeiko_gamen==true"]
