@@ -179,17 +179,9 @@ $('.junbi_girl').remove();
 [四条口微笑み]
 もっと精進しなくては)[p]
 [wait time=10]
-[暗転２ storage="bg/sijyou_CGgood.jpg" time=1000]
+[暗転２ storage="bg/bg_prologue.jpg" time=1000]
 ;【退場】四条
 [四条退場]
-[chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=100]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[暗転２終了]
-;CGにあわせてメッセージ
-[p]
-
-[テキスト全画面白文字]
-
 ;一時的に行間多く
 [iscript]
 tyrano.plugin.kag.config.defaultLineSpacing = '15';
@@ -198,6 +190,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 四条御流として更に名が知れ渡るほどに国の文化に[r]
 貢献することとなった。[p]
 その陰には、彼を支える[名前]の姿があったという。[p]
+[暗転２終了]
 ;背景仮でおいてみる　いつもの手紙の背景に和花でも？？
 [position left=300 width=700 height=500 top=110 page=fore margint="50"]
 [font color="000000"]
