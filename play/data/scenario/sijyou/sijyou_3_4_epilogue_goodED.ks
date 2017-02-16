@@ -207,7 +207,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [freeimage layer = 29 time=1000]
 ;背景仮でおいてみる　いつもの手紙の背景に和花でも？？
 [font color="000000"]
-[position left=250 width=700 height=500 top=110 page=fore margint="50"]
+[position left=200 width=700 height=500 top=110 page=fore margint="50"]
 想いを繋げて綴っていく手紙は、[r]
 いつしか恋を綴り、[r]
 [r]
