@@ -5,6 +5,9 @@
 @layopt layer=1 visible=true
 *link
 @clearstack stack=if
+[if exp="tf.chara_test=true"]
+@jump storage="test_sijyou_hyoujou.ks" target=*page_01
+[endif]
 
 @layopt layer=27 visible=true
 
@@ -1088,7 +1091,11 @@ tf.raberu = "*"+tf.page;
 [eval exp="tf.page=0"]
 @freeimage layer=27
 [eval exp="f.haikei_credit=''"]
+[if exp="tf.chara_test=true"]
+@jump storage="test_sijyou_hyoujou.ks" target=*page_01
+[else]
 @jump storage="test_sijyou.ks"
+[endif]
 [s]
 
 
