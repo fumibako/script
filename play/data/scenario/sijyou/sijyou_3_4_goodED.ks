@@ -128,7 +128,7 @@ $('.saku3').remove();
 [sp]でも、いつか、あの二人に負けないものを見つけてみせよう）[p]
 [endif]
 
-[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 "]
+[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 && f.sijyou_sobo == true "]
 [暗転２ storage="bg/sijyou_CGgood.jpg"]
 [chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
 ;[eval exp="f.haikei_credit=''"]
@@ -163,7 +163,7 @@ $('.saku3').remove();
 ;離れてて思いつかないので仮
 
 #
-[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 "]
+[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 && f.sijyou_sobo == true "]
 ;エピローグをつづけてみる場合の処理
 @jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
 [endif]
