@@ -57,6 +57,8 @@
 [ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=400 y=400 color=darkslateblue bold=bold]
 [edit left=400 top=430 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
 
+[ptext text="淑女度" layer=29 size=15 x=500 y=240 color=darkslateblue bold=bold]
+[edit left=500 top=260 width=200 length=200 maxchars=3 name="f.para_shujinkou_shukujodo" height=20]
 
 [iscript]
 //入力済デフォルト値の設定
@@ -78,6 +80,8 @@ $("input[name='f.para_shujinkou_j_reihou']").val("0");
 $("input[name='f.para_shujinkou_j_gogaku']").val("0");
 //お箏熟練度
 $("input[name='f.para_shujinkou_j_koto']").val("0");
+//淑女度
+$("input[name='f.para_shujinkou_shukujodo']").val("0");
 
 $("input[name='tf.event_hyouji']").val("1");
 $("input[name='f.para_shujinkou_tairyoku_now']").val("900");
@@ -105,6 +109,8 @@ f.para_shujinkou_j_kadou = parseInt($("input[name='f.para_shujinkou_j_kadou']").
 f.para_shujinkou_j_reihou = parseInt($("input[name='f.para_shujinkou_j_reihou']").val());
 f.para_shujinkou_j_gogaku = parseInt($("input[name='f.para_shujinkou_j_gogaku']").val());
 f.para_shujinkou_j_koto = parseInt($("input[name='f.para_shujinkou_j_koto']").val());
+
+f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo']").val());
 
 tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
 f.para_shujinkou_tairyoku_now = parseInt($("input[name='f.para_shujinkou_tairyoku_now']").val());
