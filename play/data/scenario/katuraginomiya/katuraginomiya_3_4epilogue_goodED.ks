@@ -56,6 +56,44 @@
 
 「皆、私の誇りです！　皆、悲しそうにそうにしないで下さい」[p]
 
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+#
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;------------------------------------------------
+
+
 ;【立ち絵】主人公 微笑み
 [主人公憂い]
 [主人公口開]
@@ -313,7 +351,7 @@ $('.junbi_girl').remove();
 「―― 私たちは幸せになる為に生まれてきたのです」[p]
 
 
-
+*seen_end
 [主人公目閉じ]
 #
 ―― きっとこれからも、
