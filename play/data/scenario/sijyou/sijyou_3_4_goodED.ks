@@ -190,7 +190,7 @@ $('.saku3').remove();
 [eval exp="sf.ED_sijyou_normal=1"]
 ;回想記録終了
 [endreplay] 
-[四条ルート終了 end=nomal]
+[四条ルート終了 end=normal]
 @jump storage="event.ks" target=*event_ED
 [endif]
 
