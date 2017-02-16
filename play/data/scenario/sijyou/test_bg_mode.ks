@@ -1,9 +1,9 @@
 *start
 [eval exp="tf.page=0"]
 [eval exp="f.haikei_credit=''"]
+*link
 @layopt layer=27 visible=true
 @layopt layer=1 visible=true
-*link
 [if exp="tf.chara_test=true"]
 @jump storage="test_sijyou_hyoujou.ks" target=*page_01
 [else]
