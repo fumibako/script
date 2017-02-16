@@ -14,6 +14,11 @@
 [if exp="tf.test_sijyou==true"]
 [glink target=endtest text="おわり" size=20 width="250" x=800 y=290 color=white]
 [endif]
+
+[if exp="tf.chara_test=true"]
+[return]
+[endif]
+
 [s]
 *p1
 [iscript]
@@ -1080,6 +1085,8 @@ tf.raberu = "*"+tf.page;
 [eval exp="f.haikei_credit=''"]
 @jump storage="test_sijyou.ks"
 [s]
+
+
 
 *window_close
 [cm]
