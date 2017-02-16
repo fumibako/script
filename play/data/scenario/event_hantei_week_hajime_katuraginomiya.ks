@@ -107,7 +107,7 @@
 [endif]
 ;=======================================================================================
 ;5◆葛城宮イベント判定katuraginomiya_9_3.ks ルート決定後なので条件はすくなめ（9/3,かつ　au==1のとき）
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 3) && f.katuraginomiya_au==1 && f.event_katuraginomiya[5] == 0"]
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 3) && f.katuraginomiya_au == 1 && f.event_katuraginomiya[5] == 0"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_3.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_3'"]
 	[eval exp="f.event_type='talk'"]
@@ -125,7 +125,7 @@
 [endif]
 ;=======================================================================================
 ;7◆葛城宮イベント判定 katuraginomiya_10_2.ks
-[if exp="(f.okeiko_month == 10 && f.okeiko_week == 2) &&  f.katuraginomiya_au==1 && f.event_katuraginomiya[7]==0"]
+[if exp="(f.okeiko_month == 10 && f.okeiko_week == 2) &&  f.katuraginomiya_au == 1 && f.event_katuraginomiya[7] == 0"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_10_2.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_10_2'"]
 	[eval exp="f.event_type='talk'"]
