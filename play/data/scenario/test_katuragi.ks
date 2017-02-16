@@ -7,7 +7,7 @@
 [eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
 ;葛城宮テスト
-[eval exp="tf.test_katuraginomiya == true"]
+[eval exp="tf.test_katuraginomiya = true"]
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
@@ -260,7 +260,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 *back_test
 [cm]
 [freeimage layer = 26]
-[eval exp="tf.test_katuraginomiya == false"]
+[eval exp="tf.test_katuraginomiya = false"]
 @jump storage="test.ks"
 [s]
 
@@ -268,7 +268,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [cm]
 [freeimage layer = 26]
 ;------タイトルへ戻る
-[eval exp="tf.test_katuraginomiya == false"]
+[eval exp="tf.test_katuraginomiya = false"]
 @jump storage="title.ks"
 [s]
 
