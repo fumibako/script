@@ -3,6 +3,10 @@
 ;=======================お芝居の準備中です==================================
 *replay_hujieda_hujieda_3_4_goodED
 [stopbgm]
+[if exp="tf.test_hujieda == true"]
+[eval exp="tf.okeiko_gamen==true"]
+[eval exp="f.hujieda_au=1"]
+[endif]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
