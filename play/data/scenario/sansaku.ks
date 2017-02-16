@@ -23,6 +23,20 @@
 [s]
 [endif]
 
+[if exp="f.hujieda_au == 1 && (f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || (f.okeiko_month == 2 && (f.okeiko_week == 1 || f.okeiko_week == 2)))"]
+[chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
+[wait time=10]
+[chara_mod name="A_me" storage="girl/L/me_toji.png" time=0]
+[wait time=10]
+[cm]
+[font size=25]
+一人での外出は[r]
+禁止されてしまったわ……[p]
+[wait time=10]
+@jump storage=sansaku.ks target=*sansaku_owari
+[s]
+[endif]
+
 [clearfix]
 [cm]
 [freeimage layer = 21]
