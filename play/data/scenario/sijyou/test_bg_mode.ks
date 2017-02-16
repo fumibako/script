@@ -7,11 +7,13 @@
 @clearstack stack=if
 
 @layopt layer=27 visible=true
-[glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=500 y=450 color=white]
+[glink target=p1 exp="tf.page++" text="&tf.page" size=20 width="250" x=800 y=190 color=white]
 [if exp="tf.page > 0"]
-[glink target=p1 exp="tf.page--" text="前へ" size=20 width="250" x=500 y=480 color=white]
+[glink target=p1 exp="tf.page--" text="前へ" size=20 width="250" x=800 y=240 color=white]
 [endif]
-[glink target=endtest text="おわり" size=20 width="250" x=500 y=510 color=white]
+[if exp="tf.test_sijyou==true"]
+[glink target=endtest text="おわり" size=20 width="250" x=800 y=290 color=white]
+[endif]
 [s]
 *p1
 [iscript]
