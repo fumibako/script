@@ -14,11 +14,6 @@
 [if exp="tf.test_sijyou==true"]
 [glink storage="sijyou/test_bg_mode.ks" target=endtest text="おわり" size=20 width="250" x=800 y=290 color=white]
 [endif]
-
-[if exp="tf.chara_test=true"]
-[return]
-[endif]
-
 [s]
 *p1
 [iscript]
@@ -1074,7 +1069,9 @@ tf.raberu = "*"+tf.page;
 
 [wait time=50]
 @jump target=link
-
+[if exp="tf.chara_test=true"]
+[return]
+[endif]
 
 
 
