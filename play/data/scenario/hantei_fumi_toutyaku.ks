@@ -414,16 +414,16 @@ f.okeiko_month_kansuuji="三月 ";
 @jump target=*fumi_toutyaku_hantei_hujieda
 [endif]
 
-;↓葛城宮ルートであれば葛城宮イベント関連手紙判定に飛ぶ
-[if exp="f.katuraginomiya_au == 1"]
-@jump target=*hantei_list_katuraginomiya_event
-[endif]
 ;↓葛城宮との手紙開始していれば判定スタート
 [if exp="f.katuraginomiya_fumi_start == 1 && f.katuraginomiya_fumi_henjimachi <= parseInt([sf.katuraginomiya['fumi_henjimachi_ok_number']])"]
 	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week=f.katuraginomiya_fumi_toutyakumachi_week+1"]
 [endif]
 [if exp="f.katuraginomiya_fumi_toutyakumachi_week >= parseInt([sf.katuraginomiya['fumi_hindo_week']])"]
 @jump target=*hantei_list_katuraginomiya
+[endif]
+;↓手紙到着タイミングに関わらず葛城宮ルートであれば葛城宮イベント関連手紙判定に飛ぶ
+[if exp="f.katuraginomiya_au == 1"]
+@jump target=*hantei_list_katuraginomiya_event
 [endif]
 @jump target=*fumi_toutyaku_hantei_katuraginomiya_owari
 
