@@ -373,16 +373,17 @@
 「ええ、お父様！」[p]
 [主人公ほほえみ]
 
-[whosay name="藤枝 肇" color=%mp.color]
-「いえ、お待ちしておりました。[r]
-[sp]お久しぶりでございます、浩文様」[p]
-
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「邪魔をしただろうか？」[p]
 
+[whosay name="藤枝 肇" color=%mp.color]
+「いえ、お待ちしておりました。[r]
+[sp]お久しぶりでございます、浩文様」[p]
+
+[whosay name=&sf.father_name color="DarkSlateBlue"]
 「四年振りか。 ……立派になったね、藤枝君」[p]
 
 [whosay name="藤枝 肇" color=%mp.color]
