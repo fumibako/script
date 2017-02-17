@@ -1,5 +1,7 @@
 ;背景：薔薇園のまま　
 =======================お芝居の準備中です==================================
+[setreplay name="replay_katuraginomiya_11_1badED_scene" storage="katuraginomiya_11_1badED.ks" target="start"]
+*start
 *replay_katuraginomiya_11_1badED
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
