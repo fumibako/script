@@ -48,6 +48,36 @@
 [ptext layer=1 page=fore text="黒田ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="黒田ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
 
+;[cg_image_button graphic="sijyou_CGnomal.jpg" no_graphic="../fgimage/bg/sijyou_CGnomal.jpg" x=60 y=100 width=210 height=140 folder="fgimage/bg" ]
+;[cg_image_button graphic="sijyou_CGgood.jpg" no_graphic="../fgimage/bg/sijyou_CGgood.jpg" x=300 y=100 width=210 height=140 folder="fgimage/bg" ]
+;[ptext layer=1 page=fore text="四条ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="四条ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+
+;[cg_image_button graphic="zaizen_CGnomal.jpg" no_graphic="../fgimage/bg/zaizen_CGnomal.jpg" x=60 y=100 width=210 height=140 folder="fgimage/bg" ]
+;[cg_image_button graphic="zaizen_CGgood.jpg" no_graphic="../fgimage/bg/zaizen_CGgood.jpg" x=300 y=100 width=210 height=140 folder="fgimage/bg" ]
+;[ptext layer=1 page=fore text="財前ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="財前ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+
+;[cg_image_button graphic="katuraginomiya_3_4_nomalED.jpg" no_graphic="../fgimage/bg/katuraginomiya_3_4_nomalED.jpg" x=60 y=100 width=210 height=140 folder="fgimage/bg" ]
+;[cg_image_button graphic="katuraginomiya_3_4_goodED.jpg" no_graphic="../fgimage/bg/katuraginomiya_3_4_goodED.jpg" x=300 y=100 width=210 height=140 folder="fgimage/bg" ]
+;[if exp="f.katuraginomiya==au"]
+;[ptext layer=1 page=fore text="葛城宮ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="葛城宮ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+;[else]
+;[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+;[endif]
+
+;[cg_image_button graphic="hujieda_normalED.jpg" no_graphic="../fgimage/bg/hujieda_normalED.jpg" x=60 y=100 width=210 height=140 folder="fgimage/bg" ]
+;[cg_image_button graphic="hujieda_goodED.jpg" no_graphic="../fgimage/bg/hujieda_goodED.jpg" x=300 y=100 width=210 height=140 folder="fgimage/bg" ]
+;[if exp="f.hujieda==au"]
+;[ptext layer=1 page=fore text="藤枝ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="藤枝ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+;[else]
+;[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+;[endif]
+
 @jump target="*common"
 
 *common
