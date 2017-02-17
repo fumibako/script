@@ -1,6 +1,8 @@
 ;========================================================================
 ;イベント１２回目【時子さん訪問】１２月3週、
 ;=======================お芝居の準備中です==================================
+[setreplay name="replay_hujieda_badED_scene" storage="hujieda_12_3_badED.ks" target="start"]
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*12_3_bad storage="hujieda/preload_hujieda.ks"]
