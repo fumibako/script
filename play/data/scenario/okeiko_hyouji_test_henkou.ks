@@ -72,6 +72,9 @@ $("input[name='tf.event_hyouji']").val("1");
 
 [s]
 *mode_end
+@layopt layer=message0 visible=true
+@layopt layer=message1 visible=true
+@layopt layer=fix visible=true
 [iscript]
 f.para_zaizen_koukando = parseInt($("input[name='f.para_zaizen_koukando']").val());
 f.para_katuraginomiya_koukando = parseInt($("input[name='f.para_katuraginomiya_koukando']").val());
@@ -100,7 +103,5 @@ f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo'
 [iscript]
 $('.loding_pic').remove();
 [endscript]
-@layopt layer=message0 visible=true
-@layopt layer=message1 visible=true
-@layopt layer=fix visible=true
+
 [return]
