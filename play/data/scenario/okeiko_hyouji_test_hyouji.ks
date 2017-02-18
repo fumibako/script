@@ -63,7 +63,7 @@
 
 @jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
 
-[if exp="tf.mode_hensu==1"]
+[if exp="tf.mode_hensu==0"]
 ;フラグで表示します
 [if exp="tf.mode_hensu_yes==1"]
 ;使用したことがわるように画像を変更します
