@@ -1,7 +1,10 @@
-
+*start
 ;調整モードです。お稽古中、一度利用するとﾎﾞﾀﾝの色が変わります
 ;tf.mode_hensu
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+@layopt layer=message0 visible=false
+@layopt layer=message1 visible=false
+@layopt layer=fix visible=false
 
 [ptext name="loding_pic" text="財前：好感度" layer=29 size=15 x=10 y=40 color=darkslateblue bold=bold]
 [edit left=10 top=60 width=200 length=200 maxchars=3 name="f.para_zaizen_koukando" height=20]
@@ -97,5 +100,7 @@ f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo'
 [iscript]
 $('.loding_pic').remove();
 [endscript]
-
-[retun]
+@layopt layer=message0 visible=true
+@layopt layer=message1 visible=true
+@layopt layer=fix visible=true
+[return]
