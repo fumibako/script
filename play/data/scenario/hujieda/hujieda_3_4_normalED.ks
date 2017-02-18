@@ -221,6 +221,8 @@ $('.kaede').remove();
 [whosay name="藤枝 肇" color=%mp.color]
 「ええ、約束を必ず守ります」[p]
 ;=========================================================================
+;メッセージウィンドウ消去から復帰時の顔グラをoffにします
+[eval exp="f.kaogura = 'off'"]
 [if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
 [暗転２ storage="bg/hujieda_goodED.jpg"]
 [else]
@@ -248,6 +250,8 @@ $('.kaede').remove();
 
 ―― そうお互いに誓い合った。 離れても貴方を想います。[p]
 
+;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
+[eval exp="f.kaogura = 'on'"]
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
 [if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
