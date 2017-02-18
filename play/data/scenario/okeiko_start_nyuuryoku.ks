@@ -58,7 +58,7 @@
 [ptext text="四条ルート 1=内,0=外" layer=29 size=15 x=780 y=540 color=darkslateblue bold=bold]
 [edit left=780 top=560 width=50 length=200 maxchars=3 name="f.sijyou_au" height=20]
 
-[ptext text="黒田好感度（元値=3)" layer=29 size=15 x=590 y=610 color=darkslateblue bold=bold]
+[ptext text="黒田好感度（元値=3)" layer=29 size=15 x=610 y=590 color=darkslateblue bold=bold]
 [edit left=630 top=610 width=50 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
 
 [ptext text="黒田ルート 1=内,0=外" layer=29 size=15 x=780 y=590 color=darkslateblue bold=bold]
