@@ -10,6 +10,7 @@
 ;◆テスト設定画面表示
 @layopt layer=29 visible=true
 ;[ptext text="テスト画面からお稽古パートをはじめます。テスト用設定をお願いします。" layer=29 size=20 x=70 y=10 color=darkslateblue bold=bold]
+[ptext text="ＰＣで始める場合、Tab⇔キーを押すことによって、次のテキストボックスへと入力が移ります" layer=29 size=10 x=70 y=10 color=darkslateblue bold=bold]
 
 ;各キャラ設定に変更
 [ptext text="財前：好感度" layer=29 size=15 x=10 y=40 color=darkslateblue bold=bold]
@@ -51,17 +52,17 @@
 [ptext text="返事EV:" layer=29 size=13 x=900 y=315 color=darkslateblue bold=bold]
 [edit left=905 top=340 width=40 length=200 maxchars=3 name="f.event_hujieda5" height=20]
 
-[ptext text="四条好感度（元値=5)" layer=29 size=15 x=590 y=540 color=darkslateblue bold=bold]
-[edit left=610 top=560 width=50 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
+[ptext text="四条好感度（元値=5)" layer=29 size=15 x=610 y=540 color=darkslateblue bold=bold]
+[edit left=630 top=560 width=50 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
 
-[ptext text="四条ルート 1=内,0=外" layer=29 size=15 x=760 y=540 color=darkslateblue bold=bold]
-[edit left=760 top=560 width=50 length=200 maxchars=3 name="f.sijyou_au" height=20]
+[ptext text="四条ルート 1=内,0=外" layer=29 size=15 x=780 y=540 color=darkslateblue bold=bold]
+[edit left=780 top=560 width=50 length=200 maxchars=3 name="f.sijyou_au" height=20]
 
-[ptext text="黒田好感度（元値=3)" layer=29 size=15 x=590 y=590 color=darkslateblue bold=bold]
-[edit left=610 top=610 width=50 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
+[ptext text="黒田好感度（元値=3)" layer=29 size=15 x=590 y=610 color=darkslateblue bold=bold]
+[edit left=630 top=610 width=50 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
 
-[ptext text="黒田ルート 1=内,0=外" layer=29 size=15 x=760 y=590 color=darkslateblue bold=bold]
-[edit left=760 top=610 width=50 length=200 maxchars=3 name="f.kuroda_au" height=20]
+[ptext text="黒田ルート 1=内,0=外" layer=29 size=15 x=780 y=590 color=darkslateblue bold=bold]
+[edit left=780 top=610 width=50 length=200 maxchars=3 name="f.kuroda_au" height=20]
 
 [ptext text="熟練度：茶道" layer=29 size=15 x=10 y=190 color=darkslateblue bold=bold]
 [edit left=10 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
