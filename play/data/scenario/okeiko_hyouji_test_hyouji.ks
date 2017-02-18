@@ -64,9 +64,9 @@
 変数編集モードＯＮ:
 [if exp="tf.mode_hensu_yes==1"]
 利用済
-[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="200" x=760 y=450 color=pink]
+[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="150" x=750 y=470 color=pink]
 [else]
-[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="200" x=760 y=450 color=white]
+[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="150" x=750 y=470 color=white]
 [endif]
 [endif]
 
@@ -89,6 +89,7 @@
 [eval exp = "tf.test_hujieda_fumi_hensin_speed = 1"]
 [eval exp = "tf.event_hyouji = 1"]
 [eval exp = "tf.advice_event_hyouji = 1"]
+[eval exp = tf.mode_hensu_yes = 0"]
 
 [ct]
 [clearfix]
