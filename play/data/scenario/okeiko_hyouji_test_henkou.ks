@@ -42,6 +42,11 @@
 [ptext name="loding_pic" text="淑女度" layer=29 size=15 x=415 y=290 color=darkslateblue bold=bold]
 [edit left=410 top=310 width=200 length=200 maxchars=3 name="f.para_shujinkou_shukujodo" height=20]
 
+[ptext name="loding_pic" text="アドバイスイベントを表示する" layer=29 size=15 x=10 y=340 color=darkslateblue bold=bold]
+[edit left=410 top=360 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
+
+[ptext name="loding_pic" text="イベントを表示する" layer=29 size=15 x=10 y=390 color=darkslateblue bold=bold]
+[edit left=410 top=410 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
 
 [iscript]
 //入力済デフォルト値の設定
@@ -94,8 +99,8 @@ f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo'
 //問題ないのであれば追加したいです
 //f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 //f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
-//tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
-//tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
+tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
+tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
 [endscript]
 
 *back_test
