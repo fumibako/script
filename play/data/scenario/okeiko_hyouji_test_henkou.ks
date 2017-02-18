@@ -1,5 +1,5 @@
 *start
-;調整モードです。お稽古中、一度利用するとﾎﾞﾀﾝの色が変わります
+;調整モードです。お稽古中、一度利用するとﾒｯｾｰｼﾞが変わります
 ;tf.mode_hensu
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 @layopt layer=message0 visible=false
@@ -104,4 +104,5 @@ f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo'
 $('.loding_pic').remove();
 [endscript]
 
-[return]
+@jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
+;[return]
