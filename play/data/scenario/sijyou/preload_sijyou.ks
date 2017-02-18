@@ -419,6 +419,12 @@
 ;桜の表示が遅いと見えない,処理不能の為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [preload storage="data/fgimage/bg/bg_sakura.jpg"]
+;エンディングスチルをプリロード
+[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true "]
+[preload storage="data/fgimage/bg/sijyou_CGgood.png"]
+[else]
+[preload storage="data/fgimage/bg/sijyou_CGnomal.png"]
+[endif]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない

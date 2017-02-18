@@ -127,16 +127,18 @@ $('.saku3').remove();
 [sp]でも、いつか、あの二人に負けないものを見つけてみせよう）[p]
 [endif]
 
-[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 && f.sijyou_sobo == true "]
-[暗転２ storage="bg/sijyou_CGgood.jpg"]
-[chara_mod name="bg" storage="bg/sijyou_CGgood.jpg" time=1000]
-;[eval exp="f.haikei_credit=''"]
+;メッセージウィンドウ消去から復帰時の顔グラをoffにします
+[eval exp="f.kaogura = 'off'"]
+[eval exp="f.haikei_credit='illustration　by　かいこ'"]
+;good条件分岐は3箇所：スチル表示(ここ)、169行目付近、preload_sijyou.ks423行目付近(もし調整が必要になった際用メモです。「以上」の部分を調整させていただきました
+[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true "]
+[暗転２ storage="bg/sijyou_CGgood.png" clegit=true]
+[chara_mod name="bg" storage="bg/sijyou_CGgood.png" time=1000]
 [暗転２終了]
 
 [else]
-[暗転２ storage="bg/sijyou_CGnomal.jpg"]
-[chara_mod name="bg" storage="bg/sijyou_CGnomal.jpg" time=1000]
-;[eval exp="f.haikei_credit=''"]
+[暗転２ storage="bg/sijyou_CGnomal.png" clegit=true]
+[chara_mod name="bg" storage="bg/sijyou_CGnomal.png" time=1000]
 [暗転２終了]
 [endif]
 
@@ -160,9 +162,11 @@ $('.saku3').remove();
 [sp]私達の想いをのせて、花を慈しみましょう）[p]
 
 ;離れてて思いつかないので仮
+;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
+[eval exp="f.kaogura = 'on'"]
 
 #
-[if exp="f.para_sijyou_koukando > 80 && f.para_shujinkou_shukujodo > 80 && f.sijyou_sobo == true "]
+[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true "]
 ;エピローグをつづけてみる場合の処理
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
