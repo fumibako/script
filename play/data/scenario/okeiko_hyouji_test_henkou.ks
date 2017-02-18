@@ -15,7 +15,7 @@
 [ptext name="loding_pic" text="葛城宮：好感度" layer=29 size=15 x=10 y=140 color=darkslateblue bold=bold]
 [edit left=10 top=160 width=50 length=200 maxchars=3 name="f.para_katuraginomiya_koukando" height=20]
 
-[ptext name="loding_pic" text="黒田好感度（元値=3)" layer=29 size=15 x=190 y=190 color=darkslateblue bold=bold]
+[ptext name="loding_pic" text="黒田好感度（元値=3)" layer=29 size=15 x=10 y=190 color=darkslateblue bold=bold]
 [edit left=10 top=210 width=50 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
 
 [ptext name="loding_pic" text="四条好感度（元値=5)" layer=29 size=15 x=10 y=240 color=darkslateblue bold=bold]
@@ -35,10 +35,10 @@
 [edit left=410 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_gogaku" height=20]
 
 [ptext name="loding_pic" text="熟練度：お箏" layer=29 size=15 x=410 y=240 color=darkslateblue bold=bold]
-[edit left=10 top=260 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_koto" height=20]
+[edit left=410 top=260 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_koto" height=20]
 
 [ptext name="loding_pic" text="淑女度" layer=29 size=15 x=415 y=290 color=darkslateblue bold=bold]
-[edit left=345 top=310 width=200 length=200 maxchars=3 name="f.para_shujinkou_shukujodo" height=20]
+[edit left=410 top=310 width=200 length=200 maxchars=3 name="f.para_shujinkou_shukujodo" height=20]
 
 
 [iscript]
@@ -93,7 +93,7 @@ f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo'
 //tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
 [endscript]
 
-
+*back_test
 [cm]
 [eval exp="tf.mode_hensu_yes = 1"]
 
