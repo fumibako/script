@@ -61,12 +61,12 @@
 
 [if exp="tf.mode_hensu==0"]
 ;フラグで表示します
-[r]変数編集モード利用しています。
+変数編集モードＯＮ:
 [if exp="tf.mode_hensu_yes==1"]
-[r]変数編集モード利用しました。
-[button fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=780 y=0]
+利用済
+[button fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=800 y=0]
 [else]
-[button fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=780 y=0]
+[button fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=800 y=0]
 [endif]
 [endif]
 
