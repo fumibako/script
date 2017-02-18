@@ -1,6 +1,8 @@
 *start
 ;調整モードです。お稽古中、一度利用するとﾒｯｾｰｼﾞが変わります
 ;tf.mode_hensu
+[ptext name="loding_pic" text="決定を押した後、休憩を押すと反映されます" layer=29 size=15 x=10 y=10 color=darkslateblue bold=bold]
+
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 @layopt layer=message0 visible=false
 @layopt layer=message1 visible=false
