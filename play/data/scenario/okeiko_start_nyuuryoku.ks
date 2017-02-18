@@ -185,7 +185,7 @@ $("input[name='f.para_shujinkou_kiryoku_now']").val("900");
 $("input[name='tf.event_sansaku_hyouji']").val("0"); //仮にデフォルト値0にしています。ご自由に変更してください
 $("input[name='tf.event_sansaku_hyouji_before_au']").val("1"); //仮にデフォルト値1にしています。ご自由に変更してください
 
-$("input[name='tf.mode_hensu']").val("1"); //仮にデフォルト値1にしています。ご自由に変更してください
+$("input[name='tf.mode_hensu']").val("0"); //仮にデフォルト値1にしています。ご自由に変更してください
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*test_settei_kettei x=220 y=500 width=100 height=100]
