@@ -63,6 +63,16 @@
 
 @jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
 
+[if exp="tf.mode_hensu==1"]
+;フラグで表示します
+[if exp="tf.mode_hensu_yes==1"]
+;使用したことがわるように画像を変更します
+[buttun fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=780 y=0]
+[else]
+[buttun fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="ExQuestion.png" size=19 width="200" x=780 y=0]
+[endif]
+[endif]
+
 ;◆テストメニューへ戻る
 *back_test
 ;↓各変数を初期設定にリセット
