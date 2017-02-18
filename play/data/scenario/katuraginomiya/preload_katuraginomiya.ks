@@ -467,8 +467,15 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
 ;[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg" wait=true]
 ;【背景】CG
-[preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED.jpg" wait=true]
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED.jpg" wait=true]
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED_2.jpg" wait=true]
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" wait=true]
+[else]
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED.jpg" wait=true]
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED_2.jpg" wait=true]
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg" wait=true]
+[endif]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　

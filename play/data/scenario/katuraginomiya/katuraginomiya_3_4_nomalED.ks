@@ -124,8 +124,11 @@
 
 ;抱き上げるCGここからで
 ;===========================ＣＧ表示==================================
+;メッセージウィンドウ消去から復帰時の顔グラをoffにします
+[eval exp="f.kaogura = 'off'"]
+;good条件分岐は6箇所：130行目、140行目、151行目、165行目、249行目、preload_katuraginomiya.ks469行目付近
 ;◆goodED条件を満たす場合、goodのCGを表示
-[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [暗転２ storage="bg/katuraginomiya_3_4_goodED.jpg"]
 [else]
 [暗転２ storage="bg/katuraginomiya_3_4_nomalED.jpg"]
@@ -135,21 +138,21 @@
 [主人公退場]
 ;【背景】主人公と葛城宮抱擁 仮
 ;◆goodED条件を満たす場合、goodのCGを表示
-[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED.jpg"]
 [else]
 [chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED.jpg"]
 [endif]
-;[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
+[eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;=============================================================
 #
 殿下は私を抱き上げた。[p]
 ;◆CG2：goodED条件を満たす場合はgood版に切り替え
-[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
-[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_2.jpg"]
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_2.jpg" time=0]
 [else]
-[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED_2.jpg"]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED_2.jpg" time=0]
 [endif]
 
 ;【立ち絵】葛城宮 微笑み
@@ -160,10 +163,10 @@
 #
 優しい微笑みを浮かべる殿下は、嬉しさをこらえきれないといった様子だ。[p]
 ;◆CG3：goodED条件を満たす場合はgood版に切り替え
-[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
-[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_3.jpg"]
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_3.jpg" time=0]
 [else]
-[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED_3.jpg"]
+[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED_3.jpg" time=0]
 [endif]
 そんな殿下の様子に私もつられて微笑んでいた。[p]
 言葉にできないほどの嬉しさが込み上げる。[p]
@@ -172,7 +175,8 @@
 ;[主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……殿下」[p]
-
+;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
+[eval exp="f.kaogura = 'on'"]
 ;=============================================================
 ;CGここまで
 ;【背景】公園
@@ -243,7 +247,7 @@
 #
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
-[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au==1"]
+[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [主人公退場]
 [葛城宮退場]
 @jump storage="katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks" target="seen_1"
