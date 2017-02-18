@@ -107,10 +107,12 @@
 
 ;f.event_katuraginomiya[3]==1 葛城宮のイベント9/1前日最後までみた
 [ptext text="Ev3" layer=29 size=15 x=525 y=340 color=darkslateblue bold=bold]
-[edit left=546 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
+[edit left=550 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
 
-[ptext text="葛城宮のみと文通=1 それ以外=0" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
-[edit left=345 top=460 width=200 length=200 maxchars=3 name="f.katuraginomiya_only" height=20]
+[ptext text="葛城宮のみと文通=1 それ以外=0" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
+[edit left=345 top=410 width=200 length=200 maxchars=3 name="f.katuraginomiya_only" height=20]
+
+
 
 [ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=345 y=490 color=darkslateblue bold=bold]
 [edit left=345 top=510 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
