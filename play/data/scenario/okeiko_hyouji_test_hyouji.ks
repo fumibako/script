@@ -59,10 +59,6 @@
 
 ;攻略対象名ルート(1○,0×)=[emb exp="f.oaite_name_au"],お見合い(1後,0未)=[emb exp="f.oaite_name_omiai"][r]
 
-[resetfont]
-
-@jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
-
 [if exp="tf.mode_hensu==0"]
 ;フラグで表示します
 [r]変数編集モード利用しています。
@@ -73,6 +69,13 @@
 [buttun fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=780 y=0]
 [endif]
 [endif]
+
+[resetfont]
+
+
+@jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
+
+
 
 ;◆テストメニューへ戻る
 *back_test
