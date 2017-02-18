@@ -64,9 +64,9 @@
 変数編集モードＯＮ:
 [if exp="tf.mode_hensu_yes==1"]
 利用済
-[glink storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=760 y=600 color=pink]
+[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する"　graphic="select_waku_x300.png" size=19 width="200" x=760 y=500 color=pink]
 [else]
-[glink storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=760 y=600 color=white]
+[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する"　graphic="select_waku_x300.png" size=19 width="200" x=760 y=500 color=white]
 [endif]
 [endif]
 
