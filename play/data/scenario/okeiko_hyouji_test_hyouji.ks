@@ -65,11 +65,12 @@
 
 [if exp="tf.mode_hensu==0"]
 ;フラグで表示します
+[r]変数編集モード利用しています。
 [if exp="tf.mode_hensu_yes==1"]
-;使用したことがわるように画像を変更します
+[r]変数編集モード利用しました。
 [buttun fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=780 y=0]
 [else]
-[buttun fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="ExQuestion.png" size=19 width="200" x=780 y=0]
+[buttun fix=true storage="okeiko_hyouji_test_henkou.ks" graphic="select_waku_x300.png" size=19 width="200" x=780 y=0]
 [endif]
 [endif]
 
