@@ -97,17 +97,17 @@
 
 ;f.event_katuraginomiya[1]==1 葛城宮のイベント1を見たx=345 y=190
 [ptext text="葛城宮のイベントを見た=1 それ以外=0" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
-[ptext text="Ev1:ｲﾍﾞﾝﾄ1を見た　Ev2:ｲﾍﾞﾝﾄ2を見た Ev3:9/1最後まで見た" layer=29 size=15 x=345 y=300 color=darkslateblue bold=bold]
-[ptext text="Ev1" layer=29 size=15 x=356 y=340 color=darkslateblue bold=bold]
+[ptext text="Ev1:ｲﾍﾞﾝﾄ1を見た　Ev2:ｲﾍﾞﾝﾄ2を見た Ev3:9/1最後まで見た" layer=29 size=5 x=345 y=310 color=darkslateblue bold=bold]
+[ptext text="Ev1" layer=29 size=15 x=346 y=340 color=darkslateblue bold=bold]
 [edit left=371 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya1" height=20]
 
 ;f.event_katuraginomiya[2]==1 葛城宮のイベント2を見た
-[ptext text="Ev2" layer=29 size=15 x=421 y=340 color=darkslateblue bold=bold]
+[ptext text="Ev2" layer=29 size=15 x=431 y=340 color=darkslateblue bold=bold]
 [edit left=471 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya2" height=20]
 
 ;f.event_katuraginomiya[3]==1 葛城宮のイベント9/1前日最後までみた
-[ptext text="Ev3" layer=29 size=15 x=521 y=340 color=darkslateblue bold=bold]
-[edit left=536 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
+[ptext text="Ev3" layer=29 size=15 x=531 y=340 color=darkslateblue bold=bold]
+[edit left=546 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
 
 [ptext text="葛城宮のみと文通=1 それ以外=0" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
 [edit left=345 top=460 width=200 length=200 maxchars=3 name="f.katuraginomiya_only" height=20]
