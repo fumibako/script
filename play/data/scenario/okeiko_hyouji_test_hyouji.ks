@@ -61,7 +61,7 @@
 
 [if exp="tf.mode_hensu==0"]
 ;フラグで表示します
-変数編集モードＯＮ:
+,　変数編集モードＯＮ:
 [if exp="tf.mode_hensu_yes==1"]
 利用済
 [glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="150" x=750 y=470 color=pink]
