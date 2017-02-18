@@ -30,7 +30,7 @@
 
 [ptext text="藤枝：好感度" layer=29 size=15 x=700 y=40 color=darkslateblue bold=bold]
 [edit left=700 top=60 width=200 length=200 maxchars=3 name="f.para_hujieda_koukando" height=20]
-[ptext text="藤枝ルートに入った後=1。それ以外=0" layer=29 size=15 x=700 y=90 color=darkslateblue bold=bold]
+[ptext text="藤枝ルートに入った後=1。それ以外=0" layer=29 size=14 x=700 y=90 color=darkslateblue bold=bold]
 [edit left=700 top=110 width=200 length=200 maxchars=3 name="f.hujieda_au" height=20]
 [ptext text="藤枝：手紙許可後=1。それ以外=0" layer=29 size=15 x=700 y=140 color=darkslateblue bold=bold]
 [edit left=700 top=160 width=200 length=200 maxchars=3 name="f.hujieda_fumi_start" height=20]
@@ -97,14 +97,14 @@
 [edit left=70 top=510 width=50 length=200 maxchars=3 name="f.para_shujinkou_kiryoku_now" height=20]
 
 ;f.event_katuraginomiya[1]==1 葛城宮のイベント1を見たx=345 y=190
-[ptext text="葛城宮のイベントを見た=1 それ以外=0" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
+[ptext text="葛城宮のイベントを見た(見た=1 それ以外=0)" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
 [ptext text="Ev1:ｲﾍﾞﾝﾄ1を見た　Ev2:ｲﾍﾞﾝﾄ2を見た Ev3:9/1最後まで見た" layer=29 size=5 x=345 y=310 color=darkslateblue bold=bold]
 [ptext text="Ev1" layer=29 size=15 x=341 y=340 color=darkslateblue bold=bold]
 [edit left=371 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya1" height=20]
 
 ;f.event_katuraginomiya[2]==1 葛城宮のイベント2を見た
 [ptext text="Ev2" layer=29 size=15 x=431 y=340 color=darkslateblue bold=bold]
-[edit left=465 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya2" height=20]
+[edit left=460 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya2" height=20]
 
 ;f.event_katuraginomiya[3]==1 葛城宮のイベント9/1前日最後までみた
 [ptext text="Ev3" layer=29 size=15 x=525 y=340 color=darkslateblue bold=bold]
@@ -113,7 +113,8 @@
 [ptext text="葛城宮のみと文通=1 それ以外=0" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
 [edit left=345 top=410 width=200 length=200 maxchars=3 name="f.katuraginomiya_only" height=20]
 
-
+[ptext text="お見合い決定済(0決定、1未定)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
+[edit left=345 top=460 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
 
 [ptext text="アドバイスイベント(1表示、0非表示)" layer=29 size=15 x=345 y=490 color=darkslateblue bold=bold]
 [edit left=345 top=510 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
@@ -121,8 +122,9 @@
 [ptext text="イベント全般(1表示、0非表示)" layer=29 size=15 x=345 y=540 color=darkslateblue bold=bold]
 [edit left=345 top=560 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
 
-[ptext text="お見合い決定済(0決定、1未定)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
+[ptext text="調整モードを表示(0表示、1非表示)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
 [edit left=345 top=610 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
+
 
 [ptext text="共通追加分以外の散策イベント 1=表示,0=非表示" layer=29 size=10 x=10 y=545 color=darkslateblue bold=bold]
 [edit left=10 top=560 width=50 length=200 maxchars=3 name="tf.event_sansaku_hyouji" height=20]
