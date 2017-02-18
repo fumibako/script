@@ -96,16 +96,18 @@
 [edit left=70 top=510 width=50 length=200 maxchars=3 name="f.para_shujinkou_kiryoku_now" height=20]
 
 ;f.event_katuraginomiya[1]==1 葛城宮のイベント1を見たx=345 y=190
-[ptext text="葛城宮のイベント1を見た=1 それ以外=0" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
-[edit left=345 top=310 width=200 length=200 maxchars=3 name="f.event_katuraginomiya1" height=20]
+[ptext text="葛城宮のイベントを見た=1 それ以外=0" layer=29 size=15 x=345 y=290 color=darkslateblue bold=bold]
+
+[ptext text="イベント1" layer=29 size=15 x=356 y=340 color=darkslateblue bold=bold]
+[edit left=371 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya1" height=20]
 
 ;f.event_katuraginomiya[2]==1 葛城宮のイベント2を見た
-[ptext text="葛城宮イベント2を見た=1 それ以外=0" layer=29 size=15 x=345 y=340 color=darkslateblue bold=bold]
-[edit left=345 top=360 width=200 length=200 maxchars=3 name="f.event_katuraginomiya2" height=20]
+[ptext text="イベント2" layer=29 size=15 x=345 y=421 color=darkslateblue bold=bold]
+[edit left=471 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya2" height=20]
 
 ;f.event_katuraginomiya[3]==1 葛城宮のイベント9/1前日最後までみた
-[ptext text="葛城宮イベント9/1前日最後までみた=1 それ以外=0" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
-[edit left=345 top=410 width=200 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
+[ptext text="イベント3" layer=29 size=15 x=521 y=340 color=darkslateblue bold=bold]
+[edit left=536 top=340 width=50 length=200 maxchars=3 name="f.event_katuraginomiya3" height=20]
 
 [ptext text="葛城宮のみと文通=1 それ以外=0" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
 [edit left=345 top=460 width=200 length=200 maxchars=3 name="f.katuraginomiya_only" height=20]
