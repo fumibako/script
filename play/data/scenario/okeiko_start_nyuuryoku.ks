@@ -124,7 +124,7 @@
 [edit left=345 top=560 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
 
 [ptext text="調整モードを表示(0表示、1非表示)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
-[edit left=345 top=610 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
+[edit left=345 top=610 width=200 length=200 maxchars=3 name="tf.mode_hensu" height=20]
 
 
 [ptext text="共通追加分以外の散策イベント 1=表示,0=非表示" layer=29 size=10 x=10 y=545 color=darkslateblue bold=bold]
@@ -184,6 +184,8 @@ $("input[name='f.para_shujinkou_tairyoku_now']").val("900");
 $("input[name='f.para_shujinkou_kiryoku_now']").val("900");
 $("input[name='tf.event_sansaku_hyouji']").val("0"); //仮にデフォルト値0にしています。ご自由に変更してください
 $("input[name='tf.event_sansaku_hyouji_before_au']").val("1"); //仮にデフォルト値1にしています。ご自由に変更してください
+
+$("input[name='tf.mode_hensu']").val("1"); //仮にデフォルト値1にしています。ご自由に変更してください
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*test_settei_kettei x=220 y=500 width=100 height=100]
@@ -245,6 +247,7 @@ f.para_shujinkou_kiryoku_max = parseInt($("input[name='f.para_shujinkou_kiryoku_
 tf.event_sansaku_hyouji =  parseInt($("input[name='tf.event_sansaku_hyouji']").val());
 tf.event_sansaku_hyouji_before_au =  parseInt($("input[name='tf.event_sansaku_hyouji_before_au']").val());
 
+tf.mode_hensu =  parseInt($("input[name='tf.mode_hensu']").val());
 [endscript]
 
 
