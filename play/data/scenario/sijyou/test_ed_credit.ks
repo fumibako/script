@@ -366,16 +366,26 @@ $('.omoide1').remove();
 $('.omoide1').remove();
 [endscript]
 
-
 [wait time=10]
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Furbychan 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
 ;Furbychan　夕焼け
-[mtext name=cc text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc text="flickr :Furbychan 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
 ;heniha　線香花火
-[mtext name=cc text="◆I9IhvvVdPo　作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
-[mtext name=cc text="◆jsYiJcqRkk 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
-[mtext name=cc text="＠名無しさん１ 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
+[mtext name=cc text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+;財前銀行背景
+[mtext name=cc text="flickr :Noriko YAMAMOTO様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=true]
+
+;最後wait=true
+;[wait time=400]
+
+;スキップ時に残るのを防止
+[freeimage layer=27]
+[layopt layer=27 visible=true]
+
+[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc text="◆I9IhvvVdPo　作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
+[mtext name=cc text="◆jsYiJcqRkk 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc text="＠名無しさん１ 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=true]
 
 ;最後wait=true
 ;[wait time=400]
