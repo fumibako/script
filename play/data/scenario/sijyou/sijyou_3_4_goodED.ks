@@ -220,6 +220,11 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 それは、案外気づかない近い場所に[r]
 あるのかもしれません[p]
 ;===============================================================
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
 ;一瞬裏がみえるの防止背景
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
