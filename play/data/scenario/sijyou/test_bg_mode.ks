@@ -1,5 +1,6 @@
 *start
 [eval exp="tf.page=0"]
+[eval exp="tf.bg_onry=1"]
 [eval exp="f.haikei_credit=''"]
 [mtext text=&f.haikei_credit layer=27 size=18 x=400 y=10 color=#5b4513 fadeout=false in_delay=0]
 *link
@@ -83,16 +84,19 @@ tf.raberu = "*"+tf.page;
 [if exp="tf.page==8"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6_1.jpg"]
+@jump target=link
 [endif]
 *9
 [if exp="tf.page==9"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity7.jpg"]
+@jump target=link
 [endif]
 *10
 [if exp="tf.page==10"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity8.jpg"]
+@jump target=link
 [endif]
 *11
 [if exp="tf.page==11"]
@@ -798,20 +802,26 @@ $('.kouka').remove();
 [eval exp="tf.page=0"]
 ;@jump target=start
 [eval exp="f.haikei_credit=''"]
+
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [eval exp="exp=tf.page=0"]
 [cm]
+
 [if exp="tf.chara_test==true"]
 @jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
-[else]
+[endif]
+
+[if exp="tf.bg_onry==1"]
 @jump storage="test_sijyou.ks"
 [endif]
+
 [endif]
 
 [wait time=50]
-[if exp="tf.chara_test=true"]
+[if exp="tf.chara_test==true"]
 @jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
 [else]
+;tf.bg_onry
 @jump target=link
 [endif]
 
@@ -824,7 +834,7 @@ $('.kouka').remove();
 [eval exp="tf.page=0"]
 @freeimage layer=27
 [eval exp="f.haikei_credit=''"]
-[if exp="tf.chara_test=true"]
+[if exp="tf.chara_test==true"]
 @jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
 [else]
 @jump storage="test_sijyou.ks"
