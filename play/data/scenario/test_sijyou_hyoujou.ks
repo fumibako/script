@@ -1293,14 +1293,6 @@
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 [l]
-[if exp="sf.FButton='OFF'"]
-;会話ウィンドウ表示
-@layopt layer=message0 page=fore visible=true
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-[current layer="message0"]
-@jump target=*sijyou_text1
-[endif]
-
 *messe_on
 ;会話ウィンドウ表示
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
@@ -1337,4 +1329,5 @@
 [current layer="message0"]
 [freeimage layer = 27]
 [wait time=10]
+[glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=320 color=white]
 [return]
