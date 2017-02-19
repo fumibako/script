@@ -15,6 +15,7 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;背景テスト組み合わせ中
 [eval exp="tf.chara_test=true"]
+[eval exp="f.kaogura = 'off'"]
 [eval exp="tf.page=0"]
 ;=============================================
 ;表情テスト
@@ -1238,6 +1239,7 @@
 [イベントシーン終了]
 [cm]
 [freeimage layer = 26]
+[eval exp="f.kaogura = 'on'"]
 @jump storage="test.ks"
 [s]
 
