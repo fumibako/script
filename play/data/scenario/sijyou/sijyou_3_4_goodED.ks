@@ -230,6 +230,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 これからも訪れるであろう、何気ない季節を花とともに語りましょう。[p]
 
 ;===============================================================
+[font color=white size=27]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
