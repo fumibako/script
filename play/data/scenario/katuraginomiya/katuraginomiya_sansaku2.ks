@@ -219,17 +219,18 @@
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku2.jpg" time=1000 visible=true]
 [wait time=10]
 けれど、その時、彼が一日食事をとらない私を心配して[r]
-女中に手紙と金平糖を託してくれました。[r]
+女中に手紙と金平糖を託してくれました。[p]
 
-私もう気持ちが抑えきれなくてお手紙を書いたのです。[r]
-正直な気持ちを書いた恋文を……[r]
 ;背景変更:桃　昼
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku3.jpg" time=1000 visible=true]
 [wait time=10]
+私、もう気持ちが抑えきれなくてお手紙を書いたのです。[r]
+正直な気持ちを書いた恋文を……[p]
+
 けれど[r]
-名家の御令嬢が僕などに好意を寄せてはいけません醜聞になります[r]
-と返事の手紙にかいてありましたわ。[p]
-[r]
+『名家の御令嬢が僕などに好意を寄せてはいけません。[r]
+醜聞になります』　と返事の手紙にかいてありましたわ。[p]
+
 ;背景変更:桃　昼
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku4.jpg" time=1000 visible=true]
 [wait time=10]
