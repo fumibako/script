@@ -53,8 +53,8 @@
 [ptext layer=1 page=fore text="四条ルート　:　normalEND" x=497 y=250 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="四条ルート　:　goodEND" x=727 y=250 size=17 color=navy visible=true]
 
-[cg_image_button graphic="zaizen_CGnomal.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=60 y=380 width=200 height=130 folder="fgimage/bg" ]
-[cg_image_button graphic="zaizen_CGgood.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=380 width=200 height=130 folder="fgimage/bg" ]
+[cg_image_button graphic="zaizen_CGnomal.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=37 y=380 width=200 height=130 folder="fgimage/bg" ]
+[cg_image_button graphic="zaizen_CGgood.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=267 y=380 width=200 height=130 folder="fgimage/bg" ]
 [ptext layer=1 page=fore text="財前ルート　:　normalEND" x=37 y=520 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="財前ルート　:　goodEND" x=267 y=520 size=17 color=navy visible=true]
 
@@ -64,18 +64,21 @@
 [ptext layer=1 page=fore text="葛城宮ルート　:　normalEND" x=497 y=520 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="葛城宮ルート　:　goodEND" x=727 y=520 size=17 color=navy visible=true]
 ;[else]
-;[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=497 y=420 size=17 color=navy visible=true]
-;[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=727 y=420 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=497 y=520 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=727 y=520 size=17 color=navy visible=true]
 ;[endif]
 
-;[cg_image_button graphic="hujieda_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=60 y=100 width=200 height=130 folder="fgimage/bg" ]
-;[cg_image_button graphic="hujieda_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=100 width=200 height=130 folder="fgimage/bg" ]
+;@jump target="*common"
+
+*page_1
+;[cg_image_button graphic="hujieda_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=37 y=110 width=200 height=130 folder="fgimage/bg" ]
+;[cg_image_button graphic="hujieda_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=267 y=110 width=200 height=130 folder="fgimage/bg" ]
 ;[if exp="f.hujieda_au == 1"]
-;[ptext layer=1 page=fore text="藤枝ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
-;[ptext layer=1 page=fore text="藤枝ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="藤枝ルート　:　normalEND" x=37 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="藤枝ルート　:　goodEND" x=267 y=250 size=17 color=navy visible=true]
 ;[else]
-;[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
-;[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=37 y=250 size=17 color=navy visible=true]
+;[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=267 y=250 size=17 color=navy visible=true]
 ;[endif]
 
 @jump target="*common"
