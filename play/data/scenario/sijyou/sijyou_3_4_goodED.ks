@@ -185,8 +185,8 @@ $('.saku3').remove();
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
 ;===============================================================
-;【背景】ヒロインの部屋雪
-[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
+;【背景】ヒロインの部屋
+[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
@@ -200,15 +200,21 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;テキスト全画面
 [font color=white size=27]
 ;===============================================================
+CGで語る文を考えないといけない[p]
+
+;===============================================================
+;【背景】ヒロインの部屋雪
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1300]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;===============================================================
 離れた時も、迷った時もあった。[p]
-
-
 
 ;===============================================================
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
-
+;===============================================================
+CGで語る文を考えないといけない[p]
 
 ;===============================================================
 ;背景変更:黒茶・和紙風
