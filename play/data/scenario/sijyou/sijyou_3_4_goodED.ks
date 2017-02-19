@@ -17,6 +17,7 @@
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 [イベントシーン構築ボタン無し版]
+[eval exp="f.kaogura = 'off'"]
 #
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
@@ -127,6 +128,8 @@ $('.saku3').remove();
 [sp]でも、いつか、あの二人に負けないものを見つけてみせよう）[p]
 [endif]
 
+数ヵ月後
+
 ;メッセージウィンドウ消去から復帰時の顔グラをoffにします
 [eval exp="f.kaogura = 'off'"]
 [eval exp="f.haikei_credit='illustration　by　かいこ'"]
@@ -162,11 +165,11 @@ $('.saku3').remove();
 ;エピローグをつづけてみる場合の処理
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
-@jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target=*ep
-[endif]
-
 ;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
 [eval exp="f.kaogura = 'on'"]
+;ノーマルエンドは主人公フェイス表示なしなので始めにoffにしました
+@jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target=*ep
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （幼い時から側に居てくれた華織様）[p]
@@ -179,7 +182,7 @@ $('.saku3').remove();
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示隠し
 [layopt layer=message0 visible=false]
 ;機能ボタン消去
-[layopt layer=fix visible=false]
+[clearfix]
 [eval exp="sf.FButton='OFF'"]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
@@ -198,23 +201,34 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示
 [layopt layer=message0 visible=true]
 ;テキスト全画面
-[font color=white size=27]
+;[font color=white size=27]
+[font size=27]
 ;===============================================================
-CGで語る文を考えないといけない[p]
+
+いつも兄と一緒に私を暖かく見守ってくださった。p]
 
 ;===============================================================
 ;【背景】ヒロインの部屋雪
 [chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1300]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;===============================================================
-離れた時も、迷った時もあった。[p]
+
+大人になって、離れた時も、迷った時もあった。[p]
 
 ;===============================================================
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 ;===============================================================
-CGで語る文を考えないといけない[p]
+
+それでも、貴方を信じて貴方の強さを知ることができた。[p]
+
+;===============================================================
+;【背景】思い出（花
+[chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+
+これからも訪れるであろう、何気ない季節を花とともに語りましょう。[p]
 
 ;===============================================================
 ;背景変更:黒茶・和紙風
