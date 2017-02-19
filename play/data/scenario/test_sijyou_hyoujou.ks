@@ -1244,6 +1244,7 @@
 [s]
 
 *title
+@clearstack
 [freeimage layer = 24]
 [freeimage layer = 8]
 [freeimage layer = 9]
@@ -1326,5 +1327,5 @@
 [current layer="message0"]
 [freeimage layer = 27]
 [wait time=10]
-
+@jump target=*sijyou_text1
 [return]
