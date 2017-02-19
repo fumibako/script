@@ -161,7 +161,9 @@ $('.saku3').remove();
 [sp]私達の想いをのせて、花を慈しみましょう）[p]
 
 #
-[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true "]
+[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.para_shujinkou_j_kadou >= 50"]
+;話の都合上華道展をいれてます
+;厳しいので５０でお許し下さい　華道がひくい時のセリフも楽しんでもらう
 ;エピローグをつづけてみる場合の処理
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
