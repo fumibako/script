@@ -351,6 +351,12 @@
 各表情は実際の立ち絵とは異なります。
 [s]
 
+[if exp="sf.FButton='Off'"]
+あああ1[l]
+;@jump target=*sijyou_text1
+[endif]
+[s]
+
 
 *sijyou_mayu
 [eval exp="f.gra_sijyou_part='sijyou_mayu'"]
@@ -1228,6 +1234,10 @@
 [eval exp="f.gra_sijyou_face='効果：[四条_顔up_]'"]
 @jump target=sijyou_up_text
 
+[if exp="sf.FButton='Off'"]
+あああ2[l]
+;@jump target=*sijyou_text1
+[endif]
 
 *back_test
 [freeimage layer = 24]
@@ -1244,10 +1254,7 @@
 @jump storage="test.ks"
 [s]
 
-[if exp="sf.FButton='Off'"]
-@jump target=*sijyou_text1
-[endif]
-[s]
+
 
 *title
 @clearstack
