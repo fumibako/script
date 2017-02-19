@@ -27,7 +27,7 @@
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-そして私は実際の様子を見ていないことに気づいた。[p]
+そして、私は実際の様子を見ていないことに気づいた。[p]
 
 ;【立ち絵】主人公通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -83,24 +83,36 @@
 [主人公眉下げ下]
 [主人公口ほほえみ]
 「磯野、ありがとう」[p]
-
 ;全画面時はない↓
 [主人公通常]
 [暗転]
-
-; 背景銀行
+#
+;===============================================================
+;ﾒｯｾｰｼﾞｸﾘｯｸ表示隠し
+[layopt layer=message0 visible=false]
+;機能ボタン消去
+[layopt layer=fix visible=false]
+[eval exp="sf.FButton='OFF'"]
+[position left=200 width=500 height=300 top=100 page=fore margint="50"]
+;【背景】銀行 全画面背景
+[image layer=29 x=1 y=1 storage="bg/bg_machi.jpg" time=1000 visible=true]
 ;【背景】町並み　ひとまず
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-
-;全画面背景
+;ﾒｯｾｰｼﾞｸﾘｯｸ表示
+[layopt layer=message0 visible=true]
+;テキスト全画面
+[font color=white size=27]
+;===============================================================
+;テキスト全画面
 
 財前様の立たされている立場を知って励ましたい。[r]
 その想いで出かけた。[r]
 ;どんな　（新聞に書いてあった　事件の最中　騒動　被害　抗争　激突　騒乱）　＋　どこへ　銀行へと出掛けた　向かった。
 
 ……だけどすぐにもう恐ろしい[p]
-;だけど、恐ろしい状況（惨事など）が目に飛び込んできた。　だけど、既に状況は深刻な事態になっていた。　など
+;だけど、恐ろしい状況（惨事など）が目に飛び込んできた。　
+;だけど、既に状況は深刻な事態になっていた。　など
 
 遠くからでも、聞こえた怒声見身が震える。[p]
 ;遠くからでも聞こえる怒声に身が震える。[p]
@@ -108,11 +120,23 @@
 「早くしろ」、「金を返せ！」[r]
 人々は警察と衝突寸前だった。[p]
 
-;[イベントシーン構築]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ポーズ通常]
-[主人公憂い]
+;===============================================================
+;メッセージをもどします
+[resetfont]
+;ｸﾘｯｸがみえる場合は追加↓
+[layopt layer=message0 visible=false]
+[freeimage layer = 29 time=1000]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;ｸﾘｯｸがみえる場合は追加↓
+[layopt layer=message0 visible=true]
+;機能ボタン表示
+[layopt layer=fix visible=true]
+[eval exp="sf.FButton='ON'"]
+;===============================================================
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公憂い]
 「こんな中で財前様は、逃げずに立ち向かっているのね。[r]
 [sp]私も財前様と町の皆が落ち着けるために何かしたいわ。[r]
 [sp]皆、とても辛い思いをしているのね」[p]
@@ -120,7 +144,8 @@
 
 #
 町はいつも活気があって皆、明るい顔をしていたのに、[r]
-今は皆怒り、困り、混乱している。[p]
+今は、皆怒り、困り、混乱している。[p]
+;２回目は皆はなくてもいい
 
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
