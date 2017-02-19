@@ -162,8 +162,8 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-;背景変更:黒茶・和紙風　;背景洋館がない↓ここを変える
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+;背景変更:和の豪邸　庭
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku1.jpg" time=1000 visible=true]
 [wait time=10]
 ;裏で表情リセット
 [主人公通常]
@@ -171,7 +171,7 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
-彼が書生としてきたのは、私の８歳の頃でしたわ。[r]
+彼が書生としてきたのは、私が、八歳の頃でしたわ。[r]
 私は、知りたがり屋で、たまたま私が知りたい事を[r]
 彼が知っていたことからよく私は彼とよく話す[r]
 ようになったのです[r]
@@ -215,14 +215,24 @@
 彼は、もう結婚してしまうのだと[r]
 私あの時は苦しくて苦しくてたまらなくて……[r]
 [r]
+;背景変更:金平糖
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku2.jpg" time=1000 visible=true]
+[wait time=10]
 けれど、その時、彼が一日食事をとらない私を心配して[r]
 女中に手紙と金平糖を託してくれました。[r]
+
 私もう気持ちが抑えきれなくてお手紙を書いたのです。[r]
 正直な気持ちを書いた恋文を……[r]
+;背景変更:桃　昼
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku3.jpg" time=1000 visible=true]
+[wait time=10]
 けれど[r]
 名家の御令嬢が僕などに好意を寄せてはいけません醜聞になります[r]
 と返事の手紙にかいてありましたわ。[p]
 [r]
+;背景変更:桃　昼
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku4.jpg" time=1000 visible=true]
+[wait time=10]
 はっきりと拒絶された事でその夜は悲しくて泣き明かしました。[r]
 ……彼は縁談を受け、この家をでればもう会う事もないと。[r]
 [r]
@@ -243,7 +253,7 @@
 [whosay name="三宮時子"]
 「伊能さんから家を出る時、手紙を頂きました。[r]
 [sp]私に惹かれているから縁談を断ったけれど[r]
-[sp] 私の幸せを想うからこそ、身勝手な事をするつもりはないと」[p]
+[sp]私の幸せを想うからこそ、身勝手な事をするつもりはないと」[p]
 
 [fadeoutbgm time=3000]
 
@@ -267,18 +277,17 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公口開]
-「そんな……諦めるなんて時子さんらしくありません[r]
+「そんな……諦めるなんて時子さんらしくありません。[r]
 [sp]お互いに想いあっているのに」[p]
 
 [whosay name="三宮時子"]
-「想い合っても現実はどうにもなりませんもの[r]
+「想い合っても現実はどうにもなりませんもの。[r]
 [sp]より不幸を招くことになるかもしれません」[p]
 
 ;【立ち絵】主人公憂い
 [主人公憂い]
 「……」[p]
-（こんな弱気な時子さん初めて……[r]
-[sp]私ではどうにもできないのかしら？）[p]
+（こんな弱気な時子さん初めて……[sp]私ではどうにもできないのかしら？）[p]
 
 ;【立ち絵】主人公通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
