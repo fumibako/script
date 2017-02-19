@@ -1228,6 +1228,7 @@
 [eval exp="f.gra_sijyou_face='効果：[四条_顔up_]'"]
 @jump target=sijyou_up_text
 
+
 *back_test
 [freeimage layer = 24]
 [freeimage layer = 8]
@@ -1241,6 +1242,11 @@
 [freeimage layer = 26]
 [eval exp="f.kaogura = 'on'"]
 @jump storage="test.ks"
+[s]
+
+[if exp="sf.FButton='Off'"]
+@jump target=*sijyou_text1
+[endif]
 [s]
 
 *title
@@ -1327,5 +1333,4 @@
 [current layer="message0"]
 [freeimage layer = 27]
 [wait time=10]
-@jump target=*sijyou_text1
 [return]
