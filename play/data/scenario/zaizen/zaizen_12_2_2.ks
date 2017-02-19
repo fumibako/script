@@ -96,7 +96,7 @@
 ;【背景】銀行 全画面背景
 [image layer=29 x=1 y=1 storage="bg/bg_zaizen_ginkou_mae.jpg" time=1000 visible=true]
 ;【背景】町並み　ひとまず
-[chara_mod name="bg" storage="bg/bg_zaizen_ginkou_mae.jpg" time=50]
+[chara_mod name="bg" storage="bg/bg_zaizen_ginkou_mae1.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示
 [layopt layer=message0 visible=true]
