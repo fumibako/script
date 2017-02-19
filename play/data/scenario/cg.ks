@@ -43,13 +43,13 @@
 @jump target=&tf.target_page
 
 *page_0
-[cg_image_button graphic="kuroda_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=30 y=100 width=210 height=140 folder="fgimage/bg" ]
-[cg_image_button graphic="kuroda_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=100 width=210 height=140 folder="fgimage/bg" ]
+[cg_image_button graphic="kuroda_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=30 y=100 width=200 height=130 folder="fgimage/bg" ]
+[cg_image_button graphic="kuroda_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=100 width=200 height=130 folder="fgimage/bg" ]
 [ptext layer=1 page=fore text="黒田ルート　:　normalEND" x=30 y=250 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="黒田ルート　:　goodEND" x=270 y=250 size=17 color=navy visible=true]
 
-[cg_image_button graphic="../fgimage/bg/sijyou_CGnomal.jpg" no_graphic="../fgimage/bg/sijyou_CGnomal.png" x=510 y=100 width=210 height=140 folder="fgimage/bg" ]
-[cg_image_button graphic="../fgimage/bg/sijyou_CGgood.jpg" no_graphic="../fgimage/bg/sijyou_CGgood.png" x=750 y=100 width=210 height=140 folder="fgimage/bg" ]
+[cg_image_button graphic="sijyou_CGnomal.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=510 y=100 width=200 height=130 folder="fgimage/bg"]
+[cg_image_button graphic="bg/sijyou_CGgood.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=750 y=100 width=200 height=130 folder="fgimage/bg"]
 [ptext layer=1 page=fore text="四条ルート　:　normalEND" x=510 y=250 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="四条ルート　:　goodEND" x=750 y=250 size=17 color=navy visible=true]
 
