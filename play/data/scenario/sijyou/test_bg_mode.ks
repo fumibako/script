@@ -7,6 +7,7 @@
 @layopt layer=1 visible=true
 
 [if exp="tf.chara_test==true"]
+@clearstack stack=if
 @jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
 [else]
 @freeimage layer=27
@@ -800,7 +801,7 @@ $('.kouka').remove();
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [eval exp="exp=tf.page=0"]
 [cm]
-[if exp="tf.chara_test=true"]
+[if exp="tf.chara_test==true"]
 @jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
 [else]
 @jump storage="test_sijyou.ks"
