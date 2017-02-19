@@ -60,13 +60,13 @@
 
 [cg_image_button graphic="katuraginomiya_3_4_nomalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=497 y=380 width=200 height=130 folder="fgimage/bg" ]
 [cg_image_button graphic="katuraginomiya_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=727 y=380 width=200 height=130 folder="fgimage/bg" ]
-;[if exp="f.katuraginomiya_au == 1"]
+[if exp="f.katuraginomiya_au == 1"]
 [ptext layer=1 page=fore text="葛城宮ルート　:　normalEND" x=497 y=520 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="葛城宮ルート　:　goodEND" x=727 y=520 size=17 color=navy visible=true]
-;[else]
-;[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=497 y=520 size=17 color=navy visible=true]
-;[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=727 y=520 size=17 color=navy visible=true]
-;[endif]
+[else]
+[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=497 y=520 size=17 color=navy visible=true]
+[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=727 y=520 size=17 color=navy visible=true]
+[endif]
 
 ;@jump target="*common"
 
