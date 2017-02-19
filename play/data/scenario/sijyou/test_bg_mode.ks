@@ -797,9 +797,14 @@ $('.kouka').remove();
 [eval exp="tf.page=0"]
 ;@jump target=start
 [eval exp="f.haikei_credit=''"]
-[freeimage layer=27]
+[chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
+[eval exp="exp=tf.page=0"]
 [cm]
+[if exp="tf.chara_test=true"]
+@jump storage="test_sijyou_hyoujou.ks" target=*sijyou_text
+[else]
 @jump storage="test_sijyou.ks"
+[endif]
 [endif]
 
 [wait time=50]
