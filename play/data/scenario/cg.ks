@@ -49,7 +49,7 @@
 [ptext layer=1 page=fore text="黒田ルート　:　goodEND" x=260 y=250 size=17 color=navy visible=true]
 
 [cg_image_button graphic="sijyou_CGnomal.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=110 width=200 height=130 folder="fgimage/bg"]
-[cg_image_button graphic="bg/sijyou_CGgood.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=730 y=110 width=200 height=130 folder="fgimage/bg"]
+[cg_image_button graphic="bg/sijyou_CGgood.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=720 y=110 width=200 height=130 folder="fgimage/bg"]
 [ptext layer=1 page=fore text="四条ルート　:　normalEND" x=490 y=250 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="四条ルート　:　goodEND" x=720 y=250 size=17 color=navy visible=true]
 
