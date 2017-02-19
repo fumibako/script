@@ -48,10 +48,10 @@
 [ptext layer=1 page=fore text="黒田ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="黒田ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
 
-[cg_image_button graphic="../fgimage/bg/sijyou_CGnomal.jpg" no_graphic="../fgimage/bg/sijyou_CGnomal.png" x=460 y=100 width=210 height=140 folder="fgimage/bg" ]
-[cg_image_button graphic="../fgimage/bg/sijyou_CGgood.jpg" no_graphic="../fgimage/bg/sijyou_CGgood.png" x=500 y=100 width=210 height=140 folder="fgimage/bg" ]
-[ptext layer=1 page=fore text="四条ルート　:　normalEND" x=60 y=250 size=17 color=navy visible=true]
-[ptext layer=1 page=fore text="四条ルート　:　goodEND" x=300 y=250 size=17 color=navy visible=true]
+[cg_image_button graphic="../fgimage/bg/sijyou_CGnomal.jpg" no_graphic="../fgimage/bg/sijyou_CGnomal.png" x=560 y=100 width=210 height=140 folder="fgimage/bg" ]
+[cg_image_button graphic="../fgimage/bg/sijyou_CGgood.jpg" no_graphic="../fgimage/bg/sijyou_CGgood.png" x=760 y=100 width=210 height=140 folder="fgimage/bg" ]
+[ptext layer=1 page=fore text="四条ルート　:　normalEND" x=560 y=250 size=17 color=navy visible=true]
+[ptext layer=1 page=fore text="四条ルート　:　goodEND" x=800 y=250 size=17 color=navy visible=true]
 
 ;[cg_image_button graphic="zaizen_CGnomal.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=60 y=100 width=210 height=140 folder="fgimage/bg" ]
 ;[cg_image_button graphic="zaizen_CGgood.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=100 width=210 height=140 folder="fgimage/bg" ]
