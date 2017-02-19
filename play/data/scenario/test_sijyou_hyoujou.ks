@@ -349,9 +349,9 @@
 ポーズマクロ：[emb exp="f.gra_sijyou_pose"][r]
 表情マクロ　：[emb exp="f.gra_sijyou_face"][r]
 各表情は実際の立ち絵とは異なります。
-;[if exp="sf.FButton='Off'"]
-:@jump target=*messe_on
-;[endif]
+[if exp="sf.FButton='Off'"]
+@jump target=*messe_on
+[endif]
 [s]
 
 *sijyou_mayu
