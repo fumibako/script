@@ -147,10 +147,6 @@ $('.saku3').remove();
 「これからは、僕が貴方の力になりたい。　恋人として、[r]
 [sp]夫として、貴方の支えでありたい」[p]
 [whosay name="華織" color="olivedrab"]
-「悔いのないように。[r]
-[sp]貴方に辛い時が訪れたとしても、いつでもこうして抱きしめて[r]
-[sp]あげます」[p]
-[whosay name="華織" color="olivedrab"]
 「貴方のおかげで ここまで来れた。[r] 
 [sp]貴方が教えてくれた、ひたむきな優しさに触れ、本当の愛を学び、[r]
 [sp]愛を知りました」[p]
@@ -161,10 +157,6 @@ $('.saku3').remove();
 （ええ、これからも共に未来を創り、[r]
 [sp]私達の想いをのせて、花を慈しみましょう）[p]
 
-;離れてて思いつかないので仮
-;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
-[eval exp="f.kaogura = 'on'"]
-
 #
 [if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true "]
 ;エピローグをつづけてみる場合の処理
@@ -173,7 +165,15 @@ $('.saku3').remove();
 @jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target=*ep
 [endif]
 
-# 
+;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
+[eval exp="f.kaogura = 'on'"]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（幼い時から側に居てくれた華織様）[p]
+
+#
+私は華織様に肩を寄せて、想い出を振り返る。[p]
+
 ;ナレーターモノローグ
 ;===============================================================
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示隠し
@@ -184,14 +184,36 @@ $('.saku3').remove();
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
-;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+;===============================================================
+;【背景】ヒロインの部屋雪
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
+;===============================================================
 [position left=200 width=500 height=300 top=100 page=fore margint="50"]
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示
 [layopt layer=message0 visible=true]
 ;テキスト全画面
 [font color=white size=27]
+;===============================================================
+離れた時も、迷った時もあった。[p]
+
+
+
+;===============================================================
+;【背景】青空に桜
+[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
+
+
+;===============================================================
+;背景変更:黒茶・和紙風
+[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 ;===============================================================
 幸せは信じれば巡ってくる。[r]
 [r]
@@ -207,10 +229,6 @@ $('.saku3').remove();
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
 
-
-;○プレイヤーに幸せの予感を残しておわり、紡いでいく話。
-;幸せは信じれば巡ってくる それは案外気づかない近い場所にあるかもしれません というテーマかな
-;2人も近いところにいましたけど、お見合いしなければ関係性は変わらなかった？
 
 [イベントシーン終了]
 ;ending処理待ち
