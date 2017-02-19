@@ -51,9 +51,11 @@
 ;[replay_image_button name="replay_zaizen_3_4_normal_scene" graphic="../fgimage/bg/replay_zaizem_3_4_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=450 width=210 height=140 folder="bgimage"]
 ;[replay_image_button name="replay_zaizen_3_4_good_scene" graphic="../fgimage/bg/replay_zaizem_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=450 width=210 height=140 folder="bgimage"]
 ;[replay_image_button name="replay_zaizen_11_1_bad1_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=550 y=450 width=210 height=140 folder="bgimage"]
+;[replay_image_button name="replay_zaizen_11_bad2_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=550 y=450 width=210 height=140 folder="bgimage"]
 ;[ptext layer=2 page=fore text="財前ルート　:　normalEND" x=50 y=500 size=17 color=navy visible=true]
 ;[ptext layer=2 page=fore text="財前ルート　:　goodEND" x=300 y=500 size=17 color=navy visible=true]
 ;[ptext layer=2 page=fore text="財前ルート　:　badEND" x=550 y=500 size=17 color=navy visible=true]
+;[ptext layer=2 page=fore text="財前ルート　:　badEND2" x=550 y=500 size=17 color=navy visible=true]
 
 ;[replay_image_button name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/replay_katuraginomiya_3_4_nomalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=450 width=210 height=140 folder="bgimage"]
 ;[replay_image_button name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/replay_katuraginomiya_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=450 width=210 height=140 folder="bgimage"]
