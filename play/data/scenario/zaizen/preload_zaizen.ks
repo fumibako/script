@@ -451,6 +451,7 @@
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;【背景】CGnomal
 [preload storage="data/fgimage/bg/zaizen_CGnomal.jpg" wait=true]
+[preload storage="data/fgimage/bg/zaizen_CGnomal_2.jpg" wait=true]
 ;【背景】雪柳
 [preload storage="data/fgimage/bg/zaizen_yukiyanagi.jpg" wait=true]
 ;【背景】パーティー会場庭

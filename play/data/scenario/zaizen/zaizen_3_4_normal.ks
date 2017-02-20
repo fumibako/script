@@ -24,7 +24,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -556,6 +556,8 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 財前様は私に近づく。[p]
 [財前目閉じ]
 ;====================================================================================
+;メッセージウィンドウ消去から復帰時の顔グラをoffにします
+[eval exp="f.kaogura = 'off'"]
 [eval exp="f.haikei_credit=''"]
 [暗転２ storage="bg/zaizen_CGnomal.jpg" clegit=true]
 [財前退場]
@@ -563,8 +565,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【背景】ノーマルエンドCG
 [chara_mod name="bg" storage="bg/zaizen_CGnomal.jpg"]
 ;[主人公驚]
+[p]
 [暗転２終了]
-額にキスCG（財前目閉じ主人公驚き）[p]
+;額にキスCG（財前目閉じ主人公驚き）
 ;====================================================================================
 
 #
@@ -581,8 +584,12 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 本当に貴方はかわいらしい方ですね。[r]
 いや、それだけではない。　私を惑わす悪い方です。[p]
 
+;【背景】ノーマルエンドCG
+[chara_mod name="bg" storage="bg/zaizen_CGnomal_2.jpg" time=0]
 そう、耳に囁かれて私は真っ赤になった。[p]
 ;CG終わり
+;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
+[eval exp="f.kaogura = 'on'"]
 ;normalここまで
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
