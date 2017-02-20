@@ -436,8 +436,8 @@ $('.kouka').remove();
 [endif]
 *76
 [if exp="tf.page==76"]
-[eval exp="f.haikei_credit='＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tokiko_sansaku1.jpg"]
 [endif]
 *77
 [if exp="tf.page==77"]
