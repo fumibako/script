@@ -137,14 +137,15 @@ $('.saku3').remove();
 [if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true "]
 [暗転２ storage="bg/sijyou_CGgood.png" clegit=true]
 [chara_mod name="bg" storage="bg/sijyou_CGgood.png" time=1000]
-[p]
-[暗転２終了]
+[cg storage="./data/fgimage/bg/sijyou_CGgood.png"] 
 [else]
 [暗転２ storage="bg/sijyou_CGnomal.png" clegit=true]
 [chara_mod name="bg" storage="bg/sijyou_CGnomal.png" time=1000]
+[cg storage="./data/fgimage/bg/sijyou_CGnomal.png"] 
+[endif]
 [p]
 [暗転２終了]
-[endif]
+
 
 
 [whosay name="華織" color="olivedrab"]
