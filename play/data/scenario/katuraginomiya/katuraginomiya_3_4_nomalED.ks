@@ -144,6 +144,7 @@
 [chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED.jpg"]
 [endif]
 [eval exp="f.haikei_credit=''"]
+[p]
 [暗転２終了]
 ;=============================================================
 #
