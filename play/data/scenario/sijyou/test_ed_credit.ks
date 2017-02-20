@@ -323,7 +323,7 @@ $('.omoide1').remove();
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-;藤枝 "flickr :[◉”] Enrique Céspedes 様" "jeaneeem 様" "Taber Andrew Bain 様" "Ching 様" "kiukey 様" "Thomas Kohler 様" "田中十洋 様（あるので省略）" 
+;藤枝 "flickr :[◉”] Enrique Céspedes 様" "jeaneeem 様" "Taber Andrew Bain 様" "Ching 様" "kiukey 様" "Thomas Kohler 様" "田中十洋 様　coloredby 様（あるので省略）" 
 [mtext name=cc text="flickr :［◉”］Enrique Céspedes 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
 [mtext name=cc text="flickr :jeaneeem 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 [mtext name=cc text="flickr :Ching 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
@@ -336,7 +336,7 @@ $('.omoide1').remove();
 
 
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-;財前"coloredby 様" "David Sanz 様" "gertrud 様" "Michael Gras, M.Ed. 様" "yoppy 様" 
+;財前"coloredby 様(藤枝・葛城宮でも使用)" "David Sanz 様" "gertrud 様" "Michael Gras, M.Ed. 様" "yoppy 様" 
 [mtext name=cc text="flickr :coloredby 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
 [mtext name=cc text="flickr :David Sanz 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 [mtext name=cc text="flickr :gertrud 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
