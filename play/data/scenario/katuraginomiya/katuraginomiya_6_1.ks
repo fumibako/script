@@ -21,7 +21,7 @@
 [イベントシーン構築枠茶色]
 ;【背景】執務室（裏で画面構成）
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg"]
 
 ドアのノックの音がした。[r]
