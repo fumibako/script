@@ -86,8 +86,8 @@
 
 ;【立ち絵】主人ほほえみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公目伏]
 [主人公眉下げ下]
+[主人公目伏]
 [主人公口ほほえみ]
 「磯野、ありがとう」[p]
 
@@ -160,17 +160,17 @@
 町は、いつも活気があって皆、明るい顔をしていたのに、[r]
 今は、怒り、動揺、困惑に満ち溢れている。[p]
 
-
-[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉]
 (胸が痛いわ）[p]
 
 [whosay name=磯野 color="#cf5a7f"]
+[主人公目を開く]
 「お嬢様、そろそろ」[p]
 
 [fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公目閉じ]
+[主人公目閉]
 「ええ、帰りましょう。　今ここで私にできることはないのね」[p]
 
 [主人公通常]
