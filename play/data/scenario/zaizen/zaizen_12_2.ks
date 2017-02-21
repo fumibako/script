@@ -91,29 +91,35 @@
 [sp]磯野は現状をどう見ているのですか？」[p]
 
 #
-;磯野は驚いた顔をし、暖かく微笑んだ。[p]
-;逆説の表情なので逆説でつなげる
 磯野は驚いた顔をしたけれど、すぐに暖かな微笑みを浮かべた。[p]
 
 [whosay name="磯野"]
 「分りました、[r]
 [sp]少し長い話になりますがよろしいでしょうか」[p]
-[fadeoutbgm time=3000]
-「お嬢様これだけ努力されているのです……私も考えてみましょう」[p]
-#
-;私は磯野の話を聞き、庶民の暮らしについて、[r]
-;また国の銀行の成り立ちと[r]
-;その営業、仕組みについての磯野の意見を聞いた。[p]
-;修飾・接続が多い為結論がわかりにくい
 
+「お嬢様これだけ努力されているのです……私も考えてみましょう」[p]
+
+[fadeoutbgm time=3000]
+;時間経過
+[anten]
+#
 私は、磯野に庶民の暮らしと、国の銀行の成り立ち、[r]
 その営業の仕組みについて意見を聞きき、話し合った。[p]
+
 [if exp="tf.okeiko_gamen != true"]
 ;テストモード
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+
 @jump storage="zaizen/zaizen_12_2_2.ks" target=*seen1
 [endif]
 
 [if exp="tf.okeiko_gamen == true && f.para_zaizen_koukando > 70"]
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+
 @jump storage="zaizen/zaizen_12_2_2.ks" target=*seen1
 [endif]
 
