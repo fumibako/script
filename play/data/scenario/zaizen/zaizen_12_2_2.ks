@@ -70,6 +70,7 @@
 [sp]現場の事を知り、できることがあるかも知れません。[r]
 [sp]お願いです！」[p]
 
+[fadeoutbgm time=3000]
 [whosay name="磯野"]
 「はあ……。 遠くからですよ。[r]
 [sp]……野次馬と噂されても困りますから、[r]
@@ -82,6 +83,13 @@
 [主人公眉下げ下]
 [主人公口ほほえみ]
 「磯野、ありがとう」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】冬支度
+[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
+[endif]
+
 ;全画面時はない↓
 [主人公通常]
 [暗転]
@@ -156,6 +164,7 @@
 [whosay name=磯野 color="#cf5a7f"]
 「お嬢様、そろそろ」[p]
 
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 「ええ、帰りましょう。　今ここで私にできることはないのね」[p]
