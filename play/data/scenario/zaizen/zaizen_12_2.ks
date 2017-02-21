@@ -114,7 +114,7 @@
 [endif]
 
 [if exp="tf.okeiko_gamen == true && f.para_zaizen_koukando > 70"]
-@jump storage="zaizen/zaizen_12_2.ks" target=*select1
+@jump storage="zaizen/zaizen_12_2_2.ks" target=*select1
 [endif]
 
 [イベントシーン終了]
