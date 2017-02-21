@@ -35,6 +35,12 @@
 「……磯野、銀行の様子を見に行きたいのですが、[r]
 [sp]いいでしょうか？」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 [whosay name="磯野"]
 「いけません！[r]
 [sp]銀行の前では人が暴動一歩手前なのですよ？[r]
