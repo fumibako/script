@@ -108,7 +108,14 @@
 
 私は、磯野に庶民の暮らしと、国の銀行の成り立ち、[r]
 その営業の仕組みについて意見を聞きき、話し合った。[p]
+[if exp="tf.okeiko_gamen != true"]
+;テストモード
+@jump storage="zaizen/zaizen_12_2.ks" target=*select1
+[endif]
 
+[if exp="tf.okeiko_gamen == true && f.para_zaizen_koukando > 70"]
+@jump storage="zaizen/zaizen_12_2.ks" target=*select1
+[endif]
 
 [イベントシーン終了]
 ;=================================================================================================
