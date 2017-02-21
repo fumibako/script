@@ -35,13 +35,11 @@
 「……磯野、銀行の様子を見に行きたいのですが、[r]
 [sp]いいでしょうか？」[p]
 
-[if exp="tf.okeiko_gamen == false"]
-;本番では音楽は続ける
+;12_2にて103行目あたりででfadeout
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
 [endif]
 
 [whosay name="磯野"]
@@ -91,9 +89,6 @@
 [主人公口ほほえみ]
 「磯野、ありがとう」[p]
 
-;全画面時はない↓
-[主人公通常]
-[暗転]
 #
 ;===============================================================
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示隠し
@@ -140,6 +135,7 @@
 ;===============================================================
 ;メッセージをもどします
 [resetfont]
+[主人公憂い]
 ;ｸﾘｯｸがみえる場合は追加↓
 [layopt layer=message0 visible=false]
 [freeimage layer = 29 time=1000]
