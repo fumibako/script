@@ -110,7 +110,7 @@
 その営業の仕組みについて意見を聞きき、話し合った。[p]
 [if exp="tf.okeiko_gamen != true"]
 ;テストモード
-@jump storage="zaizen/zaizen_12_2.ks" target=*seen1
+@jump storage="zaizen/zaizen_12_2_2.ks" target=*seen1
 [endif]
 
 [if exp="tf.okeiko_gamen == true && f.para_zaizen_koukando > 70"]
