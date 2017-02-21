@@ -84,12 +84,6 @@
 [主人公口ほほえみ]
 「磯野、ありがとう」[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】冬支度
-[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
-[endif]
-
 ;全画面時はない↓
 [主人公通常]
 [暗転]
@@ -119,6 +113,8 @@
 ;「どこへ」　銀行へと出掛けた　向かった。
 [r]
 ……だけど、既に状況は深刻な事態になっていた。[p]
+[playse storage=zawa_dark.ogg loop=false ]
+
 ;だけど、恐ろしい状況（惨事など）が目に飛び込んできた。　
 ;だけど、既に状況は深刻な事態になっていた。　など
 見た事のないほどの殺気だった人の行列に圧倒されてしまう。[p]
@@ -130,6 +126,12 @@
 ;遠くからでも聞こえる怒声に身が震える。[p]
 
 ーまるで戦場のようだわ[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】冬支度
+[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
+[endif]
 ;===============================================================
 ;メッセージをもどします
 [resetfont]
