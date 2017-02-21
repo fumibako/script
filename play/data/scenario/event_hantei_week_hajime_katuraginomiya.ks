@@ -1,4 +1,4 @@
-﻿﻿;=============================================
+﻿﻿﻿;=============================================
 ;◆葛城宮イベント判定(週始め)
 ;=============================================
 *start
@@ -197,7 +197,7 @@
 ;散策
 ;=======================================================================================
 ;1(17)katuraginomiya_bazaar.ks茶道が高い2/3~3/4→3 *replay_katuraginomiya_bazaar
-[if exp="( (f.okeiko_month == 2 || f.okeiko_month == 3) && f.okeiko_week == 3 ) && f.katuraginomiya_au == 1 && f.para_shujinkou_j_sadou > 70 && f.event_katuraginomiya[17] == 0"]
+[if exp="((f.okeiko_month == 2 && (f.okeiko_week == 3 || f.okeiko_week == 4)) || (f.okeiko_month == 3 && f.okeiko_week != 4)) && f.katuraginomiya_au == 1 && f.para_shujinkou_j_sadou >= 70 && f.event_katuraginomiya[17] == 0"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_bazaar.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_bazaar'"]
 	[eval exp="f.event_type='talk'"]
