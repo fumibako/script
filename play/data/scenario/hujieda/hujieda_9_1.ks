@@ -85,7 +85,7 @@
 ;３人の場合
 [sp]三人とも
 [elsif exp="f.common_9_1_ninzuu >= 3"]
-[sp] 三人とも
+[sp]三人とも
 [else]
 [sp]彼は
 [endif]
