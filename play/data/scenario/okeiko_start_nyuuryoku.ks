@@ -1,4 +1,4 @@
-﻿﻿;=============================================
+﻿﻿﻿;=============================================
 ;okeiko.ks 設定入力部分
 ;=============================================
 *start
@@ -250,6 +250,30 @@ tf.event_sansaku_hyouji_before_au =  parseInt($("input[name='tf.event_sansaku_hy
 tf.mode_hensu =  parseInt($("input[name='tf.mode_hensu']").val());
 [endscript]
 
+;財前からの手紙到着待ち週数を好感度に応じてリセット
+[if exp="f.para_zaizen_koukando >= parseInt([sf.zaizen['koukando_b']])"]
+	[eval exp="f.zaizen_fumi_toutyakumachi_week = 2"]
+[elsif exp="f.para_zaizen_koukando >= parseInt([sf.zaizen['koukando_a']])"]
+	[eval exp="f.zaizen_fumi_toutyakumachi_week = 1"]
+[else]
+	[eval exp="f.zaizen_fumi_toutyakumachi_week = 0"]
+[endif]
+;葛城宮からの手紙到着待ち週数を好感度に応じてリセット
+[if exp="f.para_katuraginomiya_koukando >= parseInt([sf.katuraginomiya['koukando_b']])"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 2"]
+[elsif exp="f.para_katuraginomiya_koukando >= parseInt([sf.katuraginomiya['koukando_a']])"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 1"]
+[else]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 0"]
+[endif]
+;藤枝からの手紙到着待ち週数を好感度に応じてリセット
+[if exp="f.para_hujieda_koukando >= parseInt([sf.hujieda['koukando_b']])"]
+	[eval exp="f.hujieda_fumi_toutyakumachi_week = 2"]
+[elsif exp="f.para_hujieda_koukando >= parseInt([sf.hujieda['koukando_a']])"]
+	[eval exp="f.hujieda_fumi_toutyakumachi_week = 1"]
+[else]
+	[eval exp="f.hujieda_fumi_toutyakumachi_week = 0"]
+[endif]
 
 [cm]
 [freeimage layer = 29]

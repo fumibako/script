@@ -1,4 +1,4 @@
-﻿;◆手紙到着判定処理開始
+﻿﻿;◆手紙到着判定処理開始
 *fumi_toutyaku_hantei_all
 [iscript]
 f.fumi_toutyaku_oaite = []; //到着時お相手名リセット
@@ -395,6 +395,10 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 ;◇◇四条手紙到着判定◇◇
 ;=============================================
+;◆10月1週～11月2週は事件中のため手紙到着判定を回避します
+[if exp="f.okeiko_month == 10 || (f.okeiko_month == 11 && ( f.okeiko_week == 1 || f.okeiko_week == 2 ))"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
 ;01_sijyou_fumi_toutyaku_hantei.ks上で判定した後、*fumi_toutyaku_hantei_katuraginomiyaに戻ります
 @jump storage=01_sijyou_fumi_toutyaku_hantei.ks target=*fumi_toutyaku_hantei_sijyou
 
@@ -832,8 +836,14 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku_oaite.push('財前様')"]
 ;↓(変更の必要はありません)手紙が届いているかどうか、届いた手紙は何通かを見るための変数
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-;↓(変更の必要はありません)財前からの手紙到着待ち週数をリセット
-	[eval exp="f.zaizen_fumi_toutyakumachi_week=0"]
+;↓(変更の必要はありません)財前からの手紙到着待ち週数を好感度に応じてリセット
+[if exp="f.para_zaizen_koukando >= parseInt([sf.zaizen['koukando_b']])"]
+	[eval exp="f.zaizen_fumi_toutyakumachi_week = 2"]
+[elsif exp="f.para_zaizen_koukando >= parseInt([sf.zaizen['koukando_a']])"]
+	[eval exp="f.zaizen_fumi_toutyakumachi_week = 1"]
+[else]
+	[eval exp="f.zaizen_fumi_toutyakumachi_week = 0"]
+[endif]
 [return]
 
 ;◆到着判定時の共通処理：葛城宮
@@ -842,8 +852,14 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku_oaite.push('葛城宮親王殿下')"]
 ;↓(変更の必要はありません)手紙が届いているかどうか、届いた手紙は何通かを見るための変数
 	[eval exp="f.fumi_toutyaku = f.fumi_toutyaku + 1"]
-;↓(変更の必要はありません)葛城宮からの手紙到着待ち週数をリセット
+;↓(変更の必要はありません)葛城宮からの手紙到着待ち週数を好感度に応じてリセット
+[if exp="f.para_katuraginomiya_koukando >= parseInt([sf.katuraginomiya['koukando_b']])"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 2"]
+[elsif exp="f.para_katuraginomiya_koukando >= parseInt([sf.katuraginomiya['koukando_a']])"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 1"]
+[else]
 	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 0"]
+[endif]
 [return]
 
 ;◆到着判定時の共通処理：藤枝
@@ -858,6 +874,13 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 	;↓(変更の必要はありません)手紙が届いているかどうか、届いた手紙は何通かを見るための変数
 	[eval exp="f.fumi_toutyaku = f.fumi_toutyaku + 1"]
-	;↓(変更の必要はありません)藤枝からの手紙到着待ち週数をリセット
+	;↓(変更の必要はありません)藤枝からの手紙到着待ち週数を好感度に応じてリセット
+[if exp="f.para_hujieda_koukando >= parseInt([sf.hujieda['koukando_b']])"]
+	[eval exp="f.hujieda_fumi_toutyakumachi_week = 2"]
+[elsif exp="f.para_hujieda_koukando >= parseInt([sf.hujieda['koukando_a']])"]
+	[eval exp="f.hujieda_fumi_toutyakumachi_week = 1"]
+[else]
 	[eval exp="f.hujieda_fumi_toutyakumachi_week = 0"]
+[endif]
+
 [return]

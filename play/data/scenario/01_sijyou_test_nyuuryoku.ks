@@ -1,4 +1,4 @@
-;=============================================
+﻿;=============================================
 ;◆四条テスト画面用　設定入力
 ;テストしやすいように自由に変更してください
 ;=============================================
@@ -127,6 +127,15 @@ tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val(
 [eval exp="f.sijyou_sobo=false"]
 [endif]
 ;散策２or 散策（祖母）をみた？f.sijyou_sobo==true　の判定です。
+
+手紙到着待ち週数を好感度に応じてリセット
+[if exp="f.para_sijyou_koukando >= parseInt([sf.sijyou['koukando_b']])"]
+	[eval exp="f.sijyou_fumi_toutyakumachi_week = 2"]
+[elsif exp="f.para_sijyou_koukando >= parseInt([sf.sijyou['koukando_a']])"]
+	[eval exp="f.sijyou_fumi_toutyakumachi_week = 1"]
+[else]
+	[eval exp="f.sijyou_fumi_toutyakumachi_week = 0"]
+[endif]
 
 [cm]
 [freeimage layer = 29]
