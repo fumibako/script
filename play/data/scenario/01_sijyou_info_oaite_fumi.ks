@@ -1304,7 +1304,7 @@
 
 
 *info_sijyou_hyouji
-[image layer=26 x=1 y=1 storage="bg/bg_info_sijyou.jpg"]
+[image layer=26 x=1 y=1 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
 	[glink storage="info_oaite_fumi.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
 	[glink storage="info_oaite_fumi.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
 ;	[glink target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]

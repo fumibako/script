@@ -1653,7 +1653,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [s]
 
 *info_zaizen_hyouji
-[image layer=26 x=1 y=1 storage="bg/bg_info_zaizen.jpg"]
+[image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_zaizen.jpg"]
 	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
 ;	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
 	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
@@ -1913,7 +1913,7 @@ f.fumi_katuraginomiya_midoku_y=[emb exp="f.fumi_katuraginomiya_midoku_y"]
 [s]
 
 *info_katuraginomiya_hyouji
-[image layer=26 x=1 y=1 storage="bg/bg_info_katuraginomiya.jpg"]
+[image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
 	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
 	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
 	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=430 y=580 color=white]
@@ -2125,7 +2125,7 @@ f.fumi_katuraginomiya_midoku_y=[emb exp="f.fumi_katuraginomiya_midoku_y"]
 *info_hujieda_hyouji
 [freeimage layer = 26]
 
-[image layer=26 x=1 y=1 storage="bg/bg_info_hujieda.jpg"]
+[image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_hujieda.jpg"]
 	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
 	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
 	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=430 y=580 color=white]
