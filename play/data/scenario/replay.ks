@@ -31,6 +31,7 @@
 *replayview
 
 *cgview
+@jump target=page_1 ;一時的確認用
 @jump target=&tf.target_page
 
 *page_0
@@ -57,30 +58,33 @@
 [ptext layer=2 page=fore text="財前ルート　:　badEND1" x=490 y=560 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="財前ルート　:　badEND2" x=710 y=560 size=17 color=navy visible=true]
 
-;[replay_image_button name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/replay_katuraginomiya_3_4_nomalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=450 width=200 height=130 folder="bgimage"]
-;[replay_image_button name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/replay_katuraginomiya_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=450 width=200 height=130 folder="bgimage"]
-;[replay_image_button name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=550 y=450 width=200 height=130 folder="bgimage"]
-;[if exp="katuraginomiya_au==1"]
-;[ptext layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=590 size=17 color=navy visible=true]
-;[ptext layer=2 page=fore text="葛城宮ルート　:　goodEND" x=300 y=590 size=17 color=navy visible=true]
-;[ptext layer=2 page=fore text="葛城宮ルート　:　badEND" x=550 y=590 size=17 color=navy visible=true]
-;[else]
-;[ptext layer=2 page=fore text="？？？ルート　:　normalEND" x=50 y=500 size=17 color=navy visible=true]
-;[ptext layer=2 page=fore text="？？？ルート　:　goodEND" x=300 y=500 size=17 color=navy visible=true]
-;[ptext layer=2 page=fore text="？？？ルート　:　badEND" x=550 y=500 size=17 color=navy visible=true]
-;[endif]
-;[replay_image_button name="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/replay_hujieda_hujieda_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=450 width=200 height=130 folder="bgimage"]
-;[replay_image_button name="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_hujieda_3_4_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=450 width=200 height=130 folder="bgimage"]
-;[replay_image_button name="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=550 y=450 width=200 height=130 folder="bgimage"]
-;[if exp="hujieda_au==1"]
-;[ptext layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=500 size=17 color=navy visible=true]
-;[ptext layer=2 page=fore text="藤枝ルート　:　goodEND" x=300 y=500 size=17 color=navy visible=true]
-;[ptext layer=2 page=fore text="藤枝ルート　:　badEND" x=550 y=500 size=17 color=navy visible=true]
-;[else]
-;[ptext layer=2 page=fore text="？？？ルート　:　normalEND" x=50 y=500 size=17 color=navy visible=true]
-;[ptext layer=2 page=fore text="？？？ルート　:　goodEND" x=300 y=500 size=17 color=navy visible=true]
-;[ptext layer=2 page=fore text="？？？ルート　:　badEND" x=550 y=500 size=17 color=navy visible=true]
-;[endif]
+@jump target ="*common"
+
+*page_1
+[replay_image_button name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/replay_katuraginomiya_3_4_nomalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=450 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/replay_katuraginomiya_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=450 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=550 y=450 width=200 height=130 folder="bgimage"]
+[if exp="katuraginomiya_au==1"]
+[ptext layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="葛城宮ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="葛城宮ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
+[else]
+[ptext layer=2 page=fore text="？？？ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="？？？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="？？？ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
+[endif]
+[replay_image_button name="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/replay_hujieda_hujieda_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=450 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_hujieda_3_4_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=300 y=450 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=550 y=450 width=200 height=130 folder="bgimage"]
+[if exp="hujieda_au==1"]
+[ptext layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="藤枝ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="藤枝ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
+[else]
+[ptext layer=2 page=fore text="？？？ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="？？？ルート　:　goodEND" x=300 y=380 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="？？？ルート　:　badEND" x=550 y=380 size=17 color=navy visible=true]
+[endif]
 
 @jump target ="*common"
 
