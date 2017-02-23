@@ -184,6 +184,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 #
 そういって、私は、お辞儀をした。[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 （親しき中にも礼儀ありだわ）[p]
 
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
