@@ -233,9 +233,13 @@ $('.kaede').remove();
 ;◆goodED条件を満たす場合、good画像を表示
 [if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
 [chara_mod name="bg" storage="bg/hujieda_goodED.jpg"]
+;◆CGモード用に画像を登録
+[cg storage="hujieda_goodED.jpg"] 
 [else]
 ;【背景】hujieda_normalED.jpg
 [chara_mod name="bg" storage="bg/hujieda_normalED.jpg"]
+;◆CGモード用に画像を登録
+[cg storage="hujieda_normalED.jpg"] 
 [endif]
 [p]
 [暗転２終了]
