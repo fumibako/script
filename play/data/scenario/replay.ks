@@ -31,7 +31,8 @@
 *replayview
 
 *cgview
-@jump target=page_1 ;一時的確認用
+@jump target=page_1 
+;一時的確認用
 @jump target=&tf.target_page
 
 *page_0
