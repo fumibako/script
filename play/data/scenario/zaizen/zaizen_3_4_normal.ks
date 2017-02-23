@@ -1,6 +1,6 @@
 ;normal/good回想機能から再生用タグです。ひとまず並べて書いていますが、テスト結果次第で調整予定です(回想未テスト
-[setreplay name="replay_zaizen_3_4_normal_scene" storage="zaizen_3_4_normal.ks" target="start"]
-[setreplay name="replay_zaizen_3_4_good_scene" storage="zaizen_3_4_good.ks" target="start"]
+[setreplay name="replay_zaizen_3_4_normal_scene" storage="zaizen/zaizen_3_4_normal.ks" target="start"]
+[setreplay name="replay_zaizen_3_4_good_scene" storage="zaizen/zaizen_3_4_good.ks" target="start"]
 *start
 ;=============================================
 ;イベント10回目【財前母の誕生日パーティ】3月4週、
