@@ -81,7 +81,7 @@
 「[名前]、華織おめでとう」[p]
 
 [whosay name="華織" color="olivedrab"]
-「[名前]さんと、あの時再会して、本当によかった」[p]
+「あの時、[名前]さんと再会して、本当によかった」[p]
 ;△お見合いのことです
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、大切にします」[p]
@@ -127,7 +127,7 @@ $('.saku3').remove();
 （今は、まだわからない。[r]
 [sp]でも、いつか、あの二人に負けないものを見つけてみせよう）[p]
 [endif]
-
+#
 
 ;◆ナレーターモノローグ
 ;===============================================================
@@ -137,10 +137,10 @@ $('.saku3').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;◆メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[position left=100 width=600 height=530 top=110 page=fore margint="50"]
 [image layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
 ;◆テキスト全画面
-[font size=27]
+[font color=snow size=27]
 ;◆ﾒｯｾｰｼﾞｸﾘｯｸ表示隠し
 [layopt layer=message0 visible=true]
 [wait time=10]
@@ -155,7 +155,9 @@ $('.saku3').remove();
 輝く春の陽によって彩られる愛しい人の輪郭。[r]
 「ええ、本当に」[r]
 私は幸せを感じて、微笑み返した。[p]
-すると、華やかな華織様のお顔が、そっと私の頬に寄り添い、愛情を込められたお言葉を耳元で囁いた。
+
+すると、華やかな華織様のお顔が、[r]
+そっと私の頬に寄り添い、愛情を込められたお言葉を耳元で囁いた。[p]
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 ;◆メッセージをもどします
@@ -165,12 +167,11 @@ $('.saku3').remove();
 [freeimage layer = 29 time=1000]
 ;◆メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-;◆ｸﾘｯｸがみえる場合は追加↓
-[layopt layer=message0 visible=true]
+
 ;◆機能ボタン表示
-[layopt layer=fix visible=true]
-[eval exp="sf.FButton='ON'"]
-;[cm]
+;[layopt layer=fix visible=true]
+;[eval exp="sf.FButton='ON'"]
+[cm]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 
 ;メッセージウィンドウ消去から復帰時の顔グラをoffにします
@@ -188,6 +189,9 @@ $('.saku3').remove();
 [endif]
 [p]
 [暗転２終了]
+
+;◆メッセージの表示
+[layopt layer=message0 visible=true]
 [whosay name="華織" color="olivedrab"]
 「これからは、僕が貴方の力になりたい。　恋人として、[r]
 [sp]夫として、貴方の支えでありたい」[p]
