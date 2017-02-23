@@ -36,13 +36,13 @@
 *page_0
 [replay_image_button name="kuroda_3_4_normalED_scene" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=30 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button name="kuroda_3_4_goodED_scene" graphic="../fgimage/bg/replay_kuroda_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=250 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button name="replay_kuroda_12_3_badED_scene" graphic="../fgimage/bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=420 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_kuroda_12_3_badED_scene" graphic="../fgimage/bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=470 y=60 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="黒田ルート　:　normalEND" x=30 y=210 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="黒田ルート　:　goodEND" x=250 y=210 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="黒田ルート　:　badEND" x=470 y=210 size=17 color=navy visible=true]
 
 [replay_image_button name="replay_sijyou_3_4_normalED_scene" graphic="../fgimage/bg/sijyou_CGnomal.png" no_graphic="../fgimage/bg/cg_bg.jpg" x=30 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button name="replay_sijyou_3_4_goodED_scene" graphic="../fgimage/bg/sijyou_CGgood.png" no_graphic="../fgimage/bg/cg_bg.jpg" x=240 y=250 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_sijyou_3_4_goodED_scene" graphic="../fgimage/bg/sijyou_CGgood.png" no_graphic="../fgimage/bg/cg_bg.jpg" x=250 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_sijyou_10_3badED_scene" graphic="../fgimage/bg/replay_sijyou_badlED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=470 y=240 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="四条ルート　:　normalEND" x=30 y=390 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　goodEND" x=250 y=390 size=17 color=navy visible=true]
@@ -50,7 +50,7 @@
 
 [replay_image_button name="replay_zaizen_3_4_normal_scene" graphic="../fgimage/bg/zaizem_3_4_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=30 y=420 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_zaizen_3_4_good_scene" graphic="../fgimage/bg/zaizem_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=250 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button name="replay_zaizen_11_1_bad1_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=420 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_zaizen_11_1_bad1_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=470 y=420 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_zaizen_11_bad2_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=750 y=420 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="財前ルート　:　normalEND" x=30 y=600 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="財前ルート　:　goodEND" x=250 y=600 size=17 color=navy visible=true]
