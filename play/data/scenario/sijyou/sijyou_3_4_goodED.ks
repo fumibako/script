@@ -150,7 +150,8 @@ $('.saku3').remove();
 記念写真を撮る。[r]
 [r]
 【写真家】[r]
-「今日は、良い天気で美しいお二人！　なんて　めでたい日だ」[r]
+「今日は、良い天気で美しいお二人！[r]
+[sp]なんて　めでたい日だ」[r]
 [r]
 写真家が揚々と笑って撮影準備を始められる。[p]
 
@@ -199,11 +200,12 @@ $('.saku3').remove();
 [cg storage="../fgimage/bg/sijyou_CGnomal.png"]
 [endif]
 [p]
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
 [暗転２終了]
 
 
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
+
 [wait time=10]
 ;◆メッセージの表示
 [layopt layer=message0 visible=true]
