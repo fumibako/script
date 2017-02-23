@@ -2,8 +2,8 @@
 =======================お芝居の準備中です==================================
 *replay_katuraginomiya_3_4_nomalED
 ;↓回想シーンスタートはnormal/goodどちらもここから始まるのが自然かと思いますので、この位置に置いてみます
-[setreplay name="replay_katuraginomiya_3_4_nomalED_scene" storage="katuraginomiya_3_4_nomalED.ks" target="start"]
-[setreplay name="replay_katuraginomiya_3_4_goodED_scene" storage="katuraginomiya_3_4_nomalED.ks" target="start"]
+[setreplay name="replay_katuraginomiya_3_4_nomalED_scene" storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="start"]
+[setreplay name="replay_katuraginomiya_3_4_goodED_scene" storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="start"]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
