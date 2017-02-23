@@ -61,8 +61,8 @@
 @jump target ="*common"
 
 *page_1
-[replay_image_button name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/replay_katuraginomiya_3_4_nomalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/replay_katuraginomiya_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 
 [if exp="f.katuraginomiya_au==1"]
@@ -74,8 +74,8 @@
 [ptext layer=2 page=fore text="？？？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="？？？ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 [endif]
-[replay_image_button name="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/replay_hujieda_hujieda_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button name="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_hujieda_3_4_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/hujieda_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/hujieda_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 
 [if exp="f.hujieda_au==1"]
