@@ -2,10 +2,13 @@
 共同制作中ゲームのスクリプト等です  
 下記にてゲームをプレビューすることができます  
 https://fumibako.github.io/script/play/  
-※ 再配布が禁止されている素材を除いた状態や仮素材に差し替えてアップロードしているため、一部の画像や音声が再現されずエラーが表示される場合があります  
-　(具体的には主人公邸関連背景、町背景などいくつかの背景は仮画像です。クリック待ちグリフ画像と効果音の全ては再現されません)  
+※ 再配布が禁止されている素材を除いた状態や仮素材に差し替えてアップロードしているため、一部の画像や音声が再現されずエラーが表示される場合があります    
+　(具体的には主人公邸関連背景、町背景などいくつかの背景は仮画像です。クリック待ちグリフ画像と効果音の全ては再現されません)   
+ 
+公式サイトプレビューはこちらになります  
+https://fumibako.github.io/script/  
 
-##スタッフ作業用リンク(完成後このリンクは消す予定です)  
+##スタッフ作業用リンク(完成後このリンクは消す予定です)  
 ・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  
 ・葛城宮シナリオ：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/katuraginomiya  
 ・藤枝シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/hujieda  
