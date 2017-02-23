@@ -137,7 +137,7 @@ $('.saku3').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;◆メッセージレイヤを全画面用に設定変更
-[position left=100 width=600 height=530 top=110 page=fore margint="50"]
+[position left=150 width=600 height=530 top=110 page=fore margint="50"]
 [image layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
 ;◆テキスト全画面
 [font color=snow size=27]
