@@ -341,7 +341,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 [主人公目伏]
 「アルベルトは、恋愛を望まなかったと聞くわ。[r]
-[sp]……私の所為ね」[p]
+[sp]……私の[ruby text=せ]所[ruby text=い]為ね」[p]
 
 [whosay name="財前母"]
 「でもね。今は、貴方には優しい一面を見せるように[r]
