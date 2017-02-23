@@ -513,7 +513,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 と述べて静かに去っていった。[p]
 [r]
-―― 出会いは一期一会。[r]
+――出会いは一期一会。[r]
 [r]
 殿下との別れを選んだけれど出会ったことは後悔はなく、[r]
 殿下は時折、新聞や雑誌に載り、私は懐かしく想う事になる。[p]

@@ -213,16 +213,16 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 「どこか変なところはないかしら？」[p]
 
 [whosay name=磯野 color="dimgray"]
-「変なところなどどこにもありません。 着物もお似合いです」[p]
+「変なところなどどこにもございません。 着物もお似合いです」[p]
 
 ;【立ち絵】主人公 困り
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 「そう……直前になると緊張するわ。[r]
-[sp]なかなか落ち着かなくて…… 粗相をしてしまわないといいのだけれど」[p]
+[sp]なかなか落ち着かなくて……粗相をしてしまわないといいのだけれど」[p]
 
 [whosay name=磯野 color="dimgray"]
-「いつもの調子でされば心配はございません。[r]
+「いつもの調子でなされば心配はございません。[r]
 [sp]平常心ですよ、お嬢様」[p]
 
 #
@@ -364,7 +364,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;【立ち絵】葛城宮 真剣
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮真剣]
-「……ああ君なら大丈夫だ。　いつもの笑顔が見れて、私も安心した」[p]
+「……ああ君なら大丈夫だ。　いつもの笑顔が見られて、[r]
+[sp]私も安心した」[p]
 
 #
 殿下は力強く頷き、私は応えるように微笑んだ。[p]
@@ -408,7 +409,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 [sp]殿下の「君なら大丈夫だ」という言葉が[r]
 魔法の言葉のように私に力を与え、[r]
-自然な微笑みが浮かべられる。[r]
+自然に微笑みを浮かべられる。[r]
 ;に？
 [r]
 [sp]茶道での会話は、基本的に亭主と正客がして[r]

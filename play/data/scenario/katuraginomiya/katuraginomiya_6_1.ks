@@ -16,7 +16,7 @@
 ;ゆっくり表示
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 [eval exp="f.haikei_credit=''"]
-―― 夢を見た。[p]
+――夢を見た。[p]
 # 
 [イベントシーン構築枠茶色]
 ;【背景】執務室（裏で画面構成）

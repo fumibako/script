@@ -102,7 +102,7 @@ jumpします。[p]
 ;[主人公伏目]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-「お稽古がんばっておられるのね……[r]
+「お稽古がんばっておられるのね……。[r]
 [sp]そういえば お手紙を始められて数ヶ月ね。 意中の方は、[r]
 [sp]いらっしゃるの？」[p]
 

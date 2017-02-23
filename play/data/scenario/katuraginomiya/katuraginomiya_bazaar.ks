@@ -19,7 +19,9 @@
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
 #
-殿下からのお誘いの手紙を読み、私の心は期待で胸が膨らむ。[p]
+殿下からのお誘いの手紙を読み、私の心は期待で一杯になる。[p]
+;二重主語になっていましたので、最初の「心は」のみに絞らせていただき述語を合わせました(◆jsYiJcqRkk
+;原文)殿下からのお誘いの手紙を読み、私の心は期待で胸が膨らむ。[p]
 
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -176,7 +178,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「[名前]殿！こちらだ」
+「[名前]殿！ こちらだ」
 [葛城宮ベース私服]
 [葛城宮微笑み]
 [表示開始 time=300]
@@ -197,7 +199,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 [主人公眉下げ下]
-「ずっと……ずっとお会いしたく思っておりました」[p]
+「ずっと……ずっと、お会いしたく思っておりました」[p]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮ため息]
@@ -208,7 +210,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [主人公眉下げ下]
 [主人公目伏]
 [主人公頬染め]
-「もうそのことは、いいです……殿下が私の前にいる。[r]
+「もうそのことは、良いのです……殿下が私の前にいらっしゃる。[r]
 [sp]それだけで幸せです」[p]
 ;もうが多いので一個にします　だけでも幸せ　だけで幸せ
 
@@ -245,7 +247,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
-「いえ、お恥ずかしながら、まだまだですわ」[p]
+「いえ、お恥ずかしながら、まだまだでございます」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お茶道の先生は厳しく、褒められた事は数えるほど）[p]
@@ -255,7 +257,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]私と息子にお茶を[ruby text=た]点てて頂けないかしら？」[p]
 
 [whosay name=葛城宮妃]
-「以前のお茶事で貴方の心得は十分にあると察していますわ。[r]
+「以前のお茶事で貴方には心得が十分にあると察していますわ。[r]
+;貴方には茶道の心得がある→左記文から"茶道の"を略した状態と思いますので、そのように調整しました(◆jsYiJcqRkk
+;原文)「以前のお茶事で貴方の心得は十分にあると察していますわ。[r]
+
 [sp]お茶事は、心構えが一番大事なのですよ」[p]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -303,9 +308,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [暗転２終了]
 ;=================================================================
 #
-私は殿下と妃殿下の前で少し緊張しながら私は、[r]
-「お薄一服差し上げます」と一礼して湯を沸かし、[r]
-[sp]いつもの手順で、心をこめて丁寧にお茶を[ruby text=た]点て茶碗にそそぐ。[p]
+私は殿下と妃殿下の前で少し緊張しながら、[r]
+「お薄一服差し上げます」と一礼して湯を沸かした。[p]
+;時間経過のある文章をそれぞれ別の文章かつ別頁に分けてわかりやすく調整しました(◆jsYiJcqRkk
+いつもの手順で、心をこめて丁寧にお茶を[ruby text=た]点て茶碗にそそぐ。[p]
 ;=================================================================
 [暗転２]
 ;【背景】;野点傘と縁談の背景
@@ -338,11 +344,11 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 [主人公眉下げ下]
-「褒めて頂き嬉しく思いますわ」[p]
+「褒めて頂き嬉しゅうございます」[p]
 
 [whosay name=葛城宮妃]
 [主人公目伏]
-「そろそろ会場時間ですわ。　貴方は何時まで入れるのかしら？」[p]
+「そろそろ会場時間ですわ。 貴方は何時まで居られるのかしら？」[p]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮通常]
@@ -350,7 +356,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
-「あまり居れないのですね」[p]
+「あまり長くはいらっしゃれないのですね」[p]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮微笑み]
@@ -381,7 +387,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
-「殿下は欲しいものはありませんか？」[p]
+「殿下は欲しいものはございませんか？」[p]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮微笑み]
@@ -391,7 +397,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
-「そうですわね……」[p]
+「そうですね……」[p]
 
 [fadeoutbgm time=3000]
 
@@ -433,10 +439,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]まさか私の醜聞を作るように指示した方なの？）[p]
 
 [whosay name=志津子女王]
-「……やり方は汚かったと思いますわ。　そちらの方が[名字]殿ね」[p]
+「……やり方は汚かったと思いますわ。 そちらの方が[名字]殿ね」[p]
 
 #
-ジロジロと値踏みするように睨むように冷たい視線を向ける。[p]
+ジロジロと値踏みするように、睨むように冷たい視線を向ける。[p]
 
 [主人公憂い]
 [葛城宮怒り]
@@ -444,7 +450,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 #
 [葛城宮口ムッ]
-殿下は私をかばうように私の前に出た。[p]
+殿下はかばうように私の前に出た。[p]
+;「私」が続くので一つに絞りました(◆jsYiJcqRkk
 
 [whosay name=志津子女王]
 「[名字]殿はもっと美しい方だと思っていましたわ。[r]
@@ -485,7 +492,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [主人公ポーズ通常]
 [主人公憂い]
-「貴方は殿下をお慕いしているのですね」[p]
+「貴方は殿下をお慕いしていらっしゃるのですね」[p]
 （たしか志津子様は殿下の元婚約者候補だった）[p]
 
 [whosay name=志津子女王]
@@ -498,15 +505,19 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉困り]
 [主人公目閉]
-（きっとお慕いしていたのだわ）[p]
+（きっとお慕いしていらっしゃったのだわ）[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
 [主人公口開]
-「私も心に決まった方がいて、いきなり別の方と[r]
-[sp]婚約されたら悲しいですわ。[r]
-[sp]貴方には悪い事をしたと思います」[p]
+「心に決まった方が、急に別の方と婚約してしまわれたら……。
+[sp]それが私だったのですね」[p]
+
+;相手の気持ちを引き出すためのセリフだと思いますので、嫌がらせをした相手だとしても、あまり相手の傷に触れるような言葉を重ねることは避ける方がより淑女的だと思いますので調整してみました。もっと良い表現があればご変更ください(◆jsYiJcqRkk
+;原文：「私も心に決まった方がいて、いきなり別の方と[r]
+;[sp]婚約されたら悲しいですわ。[r]
+;[sp]貴方には悪い事をしたと思います」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
@@ -526,19 +537,20 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]けれど私も殿下をお慕いしているのです」[p]
 
 「いつか志津子様や皇族の方々にも認めてもらうように[r]
-[sp]努力するつもりですわ」[p]
+[sp]努力するつもりです」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「私、殿下を誰よりも理解し、殿下を助けられる、[r]
-[sp]賢く強い妃になるつもりです」[p]
+[sp]賢く強い妃になろうと思います」[p]
+;「～つもりです」が続くので表現を変更しました(◆jsYiJcqRkk
 
 [whosay name=志津子女王]
 「そう……けれど現実は違いますわ。[r]
 [sp]反感を持っているのは私だけではありません」[p]
 
 「他の方の風当たりは厳しく、貴方は傷ついて、[r]
-[sp]きっと嫁いだことを後悔しますわよ。」[p]
+[sp]きっと嫁いだことを後悔しますわよ」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
@@ -548,13 +560,19 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]努力すれば報われることもあります」[p]
 
 [whosay name=志津子女王]
-「自信があるのね、[r]
-[sp]まあ私は軽率に事を起こし、皇后陛下にも叱責を受け、[r]
-[sp]私は貴方にもう何もする気もありませんわ。[r]
+「自信があるのね。[r]
+[sp]まあ、私は軽率に事を起こし、皇后陛下にも叱責を受けました」[p]
+
+「貴方には、もう何もする気もありませんわ。[r]
 [sp]黙って貴方が失望する時を待つことにします」[p]
 
+;原文：「自信があるのね、[r]
+;[sp]まあ私は軽率に事を起こし、皇后陛下にも叱責を受け、[r]
+;[sp]私は貴方にもう何もする気もありませんわ。[r]
+;[sp]黙って貴方が失望する時を待つことにします」[p]
+
 #
-そして志津子様は立ち去って行った。[p]
+そして志津子様は立ち去って行かれた。[p]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮ため息]
@@ -574,8 +592,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目伏]
-「私も嫉妬や羨望と無縁ではありませんから志津子様の気持ちも少しは、[r]
-[sp]わかるつもりです。 心というのは難しいですわね」[p]
+「私も嫉妬や羨望と無縁ではありませんから、志津子様の気持ちも少しは、[r]
+[sp]わかるつもりです。 心というのは難しいですね」[p]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮驚き]
@@ -608,18 +626,20 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;【SE】時計の鐘（ボーン）
 [playse storage=tokei_tokei_kane.ogg loop=false ]
 #
-けれど、正午の鐘の音鳴った。[p]
+正午の鐘の音が鳴った。[p]
+;原文：けれど、正午の鐘の音が鳴った。[p]
+
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮通常]
 「……名残惜しいな」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
-「ええ、けれど、またゆっくりお会いしましょう」[p]
+「ええ。けれど、またゆっくりお会いしましょう」[p]
 
 [主人公目閉]
 [主人公ポーズ通常]
 #
-――　また今度。[r]
+――また今度。[r]
 それはきっと近いうちに来る。[r]
 春が、訪れる。[p]
 

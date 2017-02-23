@@ -82,8 +82,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]君ももう海軍の汚職事件を知っているだろう？[r]
 [sp]軍人が権力を持ち政治に関わるのは良くないことだ。[r]
 軍国主義に走る危険性がある。[p]
-[sp]しかし私自身もこの時代皇族に生まれた多くが、[r]
-軍人になるのもあって私も軍人でもある。[r]
+[sp]しかしこの時代皇族に生まれた多くが[r]
+軍人になるのもあって、私も軍人でもある。[r]
 [r]
 [sp]私も政治に関わるべきではなく、辞職するつもりで[r]
 いる。[r]
@@ -176,7 +176,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [whosay name="首相" color=%mp.color]
 「貴殿を見込んでいました。[r]
-[sp]貴殿は指導者としての才能があります。　辞職願はまだ受理は[r]
+[sp]貴殿は指導者としての才能があります。　まだ辞職願の受理は[r]
 [sp]保留します」[p]
 
 
