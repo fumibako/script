@@ -468,7 +468,7 @@
 [whosay name="財前 美彬" color=%mp.color]
 [財前微笑み]
 「そうですか。
-[sp] [名前]さんもお手伝いばかりでお疲れでしょう。[r]
+[sp][名前]さんもお手伝いばかりでお疲れでしょう。[r]
 [sp]何か買って差し上げますよ」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]

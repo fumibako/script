@@ -100,9 +100,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]拝啓　春草萌えいづる季節を迎え[r]
 貴方におかれましては、いかがお過ごしですか？[r]
 [r]
-[sp] さて、暫く手紙を書けなかったことをまずは[r]
+[sp]さて、暫く手紙を書けなかったことをまずは[r]
 お詫びしましょうか。[r]
-[sp] 手紙を出せずにいる間も貴方から手紙を頂き[r]
+[sp]手紙を出せずにいる間も貴方から手紙を頂き[r]
 貴方温かく感じられるようになりました。[r]
 [sp]自分でも不思議な気分です。[p]
 ;自動改ページされるので区切ります
@@ -114,7 +114,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 いかがしましょうか？[r]
 [r]
 [sp]それでは返信をお待ちしております。[r]
-[sp] 浅春の折、穏やかにお過ごし下さい[r]
+[sp]浅春の折、穏やかにお過ごし下さい[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
@@ -139,7 +139,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【SE】襖を開ける（ゆっくり）
 
 [whosay name="磯野" color="dimgray"]
-「お嬢様は、すっかり麗しい淑女となられて、私めも鼻が高いです」[p]
+「お嬢様は、すっかり麗しい淑女となられて、私も鼻が高いです」[p]
 
 #
 磯野は感嘆したようにため息をつく。[p]
@@ -150,14 +150,14 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとう。 これからも精進しますわ。[r]
+「ありがとう。 これからも精進します。[r]
 [sp]ところで、財前様は、まだかしら？」[p]
 
 ;急に真顔なのでゆっくりと変えます
 [主人公目通常]
 
 [whosay name="磯野" color="dimgray"]
-「はい。　今、お着きになられましたので、お知らせにきました」[p]
+「はい。　今、お着きになられましたので、お知らせにまいりました」[p]
 
 ;【立ち絵】主人公：微笑み
 [主人公目閉じ]
@@ -182,8 +182,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「財前様。 お待たせしました」[p]
 #
-そういって、私は、お辞儀をした。[r]
-親しき中にも礼儀ありだわ。[p]
+そういって、私は、お辞儀をした。[p]
+
+（親しき中にも礼儀ありだわ）[p]
 
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;(親しき中にも礼儀ありだわ)[p]心情ではない?
@@ -191,7 +192,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】財前：通常
 [財前驚き]
 [whosay name="財前美彬" color="#7a65b2"]
-「いや、そんなに待っていない、[r]
+「いや、そんなに待っていない。[r]
 [sp]それにしても女性というのは、瞬く間に変わっていくものですね」[p]
 
 #
@@ -293,7 +294,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】財前：ため息
 [whosay name="財前美彬" color="#7a65b2"]
 [財前ため息]
-「そうですか……まあ構いません[r]
+「そうですか……まあ構いません。[r]
 [sp]母上は今お手すきのようだし、話してくるといい」[p]
 
 ;[財前退場] 案内される前に消えていくパターン１
@@ -339,7 +340,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 [主人公目伏]
 「アルベルトは、恋愛を望まなかったと聞くわ。[r]
-[sp] ……私の所為ね」[p]
+[sp]……私の所為ね」[p]
 
 [whosay name="財前母"]
 「でもね。今は、貴方には優しい一面を見せるように[r]
@@ -386,7 +387,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;四行なので分けます
 
 「[名前]さん勇気をだしていってごらんなさい。[r]
-[sp] 今のままでは貴方も苦しいでしょう？」[p]
+[sp]今のままでは貴方も苦しいでしょう？」[p]
 
 ;【立ち絵】主人公：目閉じ
 [主人公目閉]
@@ -444,7 +445,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]財前美彬殿か」[p]
 
 [whosay name="パーティ客女性"]
-「本当にお似合いですわね。 お[ruby text=ふた]二[ruby text=り]人ともまだ独身じゃなかったかしら[r]
+「本当にお似合いですわね。 お[ruby text=ふた]二[ruby text=り]人ともまだ独身じゃなかったかしら。[r]
 [sp]これは……もしかしたら」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]

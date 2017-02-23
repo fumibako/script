@@ -24,7 +24,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （今日は財前様と、 ゆっくりお話できるわ……）[p]
 [主人公目閉じ]
-（先日お手紙を頂いたけれど、 やはり忙しい方ね）[p]
+（先日お手紙を頂いたけれど、 やはりお忙しい方ね）[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -237,7 +237,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 「全く、人の弱みに付け込む気ですか？」[p]
 [財前通常]
 「私は、人を愛する気が全くありません。[r]
-[sp]母の事を話すのは今日限り……[r]
+[sp]母の事を話すのは今日限り……。[r]
 [sp]今後、その話題を出すようなら婚約を破棄します」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -265,7 +265,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
 [主人公通常]
-「ええ、何かありますの？」[p]
+「ええ、何かあるのですか？」[p]
 
 [whosay name="財前美彬" color="#7a65b2"]
 [財前通常]
@@ -291,7 +291,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目伏]
 [主人公眉下げ下]
-「いいえ、出席いたします、[r]
+「いいえ、出席いたします。[r]
 [sp]私は、貴方のお役に立ちたいと思います」[p]
 
 [whosay name="財前美彬" color="#7a65b2"]
@@ -370,7 +370,7 @@ $('.saku1').remove();
 [endscript]
 ;=========================================================================================================
 
-――　美しいけど愛おしく切ない風景だわ[r]
+――美しいけど愛おしく切ない風景だわ[r]
 こんな風に感じるのは、なぜなのかしら……[p]
 
 ;=========================================================================================================

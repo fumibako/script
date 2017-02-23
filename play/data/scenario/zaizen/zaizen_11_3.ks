@@ -60,7 +60,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [endif]
 [手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
-[sp]　初霜の候、貴方にはいよいよご清栄の由と存じます。[r]
+[sp]初霜の候、貴方にはいよいよご清栄の由と存じます。[r]
 [r]
 [sp]先日のパーティは思いがけず、醜態をさらし[r]
 己の未熟さを覚えました。[r]
@@ -77,7 +77,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [r]
 [sp]貴方に礼を言っておきましょう。
 [r]
-[sp] それでは取り急ぎ失礼します[r]
+[sp]それでは取り急ぎ失礼します[r]
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　 財前　美彬[p]
@@ -96,7 +96,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】主人公：眉ひそめ
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（忙しくなる……なんだか胸騒ぎがするわ[r]
+（忙しくなる……なんだか胸騒ぎがするわ。[r]
 [sp]良くないことが起こっているのかしら？）[p]
 [fadeoutbgm time=3000]
 ;【立ち絵】主人公：不安
