@@ -21,9 +21,9 @@
 
 
 *replaypage
-;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていい
+;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていいと思いますが置いてあります
 ;[button graphic="nextpage.gif" target="*nextpage" x=300 y=20]
-
+;↑次へのﾎﾞﾀﾝです。使用時は↑↓をfix=trueにして[cm]で他のボタンを消してください. ラベルbacktitle でclearfix
 [button graphic="back.png" target="*backtitle" x=870 y=20 ]
 
 [iscript]
@@ -100,6 +100,7 @@
 [back storage="toumei.gif" time=1]
 [cm]
 [freeimage layer=2]
+;clearfix
 @jump storage=title.ks
 
 *nextpage
