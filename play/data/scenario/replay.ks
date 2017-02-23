@@ -21,8 +21,9 @@
 
 
 *replaypage
-;[cm]
-[button graphic="nextpage.gif" target="*nextpage" x=300 y=20]
+;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていい
+;[button graphic="nextpage.gif" target="*nextpage" x=300 y=20]
+
 [button graphic="back.png" target="*backtitle" x=870 y=20 ]
 
 [iscript]
