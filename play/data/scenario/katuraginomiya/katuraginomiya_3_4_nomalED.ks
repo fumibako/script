@@ -140,8 +140,12 @@
 ;◆goodED条件を満たす場合、goodのCGを表示
 [if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED.jpg"]
+;◆CGモード用に画像を登録
+[cg storage="katuraginomiya_3_4_goodED.jpg"] 
 [else]
 [chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED.jpg"]
+;◆CGモード用に画像を登録
+[cg storage="katuraginomiya_3_4_nomalED.jpg"] 
 [endif]
 [eval exp="f.haikei_credit=''"]
 [p]
