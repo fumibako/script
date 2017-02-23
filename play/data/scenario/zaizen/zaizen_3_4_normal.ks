@@ -184,7 +184,6 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 #
 そういって、私は、お辞儀をした。[p]
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 （親しき中にも礼儀ありだわ）[p]
 
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -341,7 +340,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 [主人公目伏]
 「アルベルトは、恋愛を望まなかったと聞くわ。[r]
-[sp]……私の[ruby text=せ]所[ruby text=い]為ね」[p]
+[sp]……私の所為ね」[p]
 
 [whosay name="財前母"]
 「でもね。今は、貴方には優しい一面を見せるように[r]
@@ -518,7 +517,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 #
 財前様のお母様の声が、胸をよぎる。[p]
 
-―― 勇気をだしてごらんなさい。[p]
+――勇気をだしてごらんなさい。[p]
 [主人公憂い]
 私は、意を決して立ち上がって言った。[p]
 
@@ -566,6 +565,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [主人公退場]
 ;【背景】ノーマルエンドCG
 [chara_mod name="bg" storage="bg/zaizen_CGnomal.jpg"]
+;◆CGモード用に画像を登録
+[cg storage="zaizen_CGnomal.jpg"]
+
 ;[主人公驚]
 [p]
 [暗転２終了]

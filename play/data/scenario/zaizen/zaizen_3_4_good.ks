@@ -100,6 +100,9 @@
 [eval exp="f.kaogura = 'off'"]
 ;【背景】グッドエンドCG　CG差分（財前目閉じ、主人公目閉じ）
 [chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
+;◆CGモード用に画像を登録
+[cg storage="zaizen_CGgood.jpg"]
+
 [p]
 [暗転２終了]
 ;額にキスCG（財前目閉じ主人公目閉じ）
