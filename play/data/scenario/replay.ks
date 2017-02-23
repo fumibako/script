@@ -5,6 +5,8 @@
 ;@layopt layer=message0 visible=false
 @clearfix
 [hidemenubutton]
+;テスト画面に戻るためフラグ作成
+[eval exp="tf.replay_mode=true"]
 [cm]
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
@@ -101,6 +103,7 @@
 [cm]
 [freeimage layer=2]
 ;clearfix
+[eval exp="tf.replay_mode=false"]
 @jump storage=title.ks
 
 *nextpage
