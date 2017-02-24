@@ -1,8 +1,8 @@
 ;========================================================================
 ;イベント１５回目【指切りエンド】3月4週、
 ;=======================お芝居の準備中です==================================
-[setreplay name="replay_hujieda_hujieda_3_4_goodED_scene" storage="hujieda_3_4_normalED.ks" target="start"]
-[setreplay name="replay_hujieda_hujieda_3_4_normalED_scene" storage="hujieda_3_4_normalED.ks" target="start"]
+[setreplay name="replay_hujieda_hujieda_3_4_goodED_scene" storage="hujieda/hujieda_3_4_normalED.ks" target="start"]
+[setreplay name="replay_hujieda_hujieda_3_4_normalED_scene" storage="hujieda/ｈujieda_3_4_normalED.ks" target="start"]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -297,6 +297,8 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;ノーマルここまで
 [イベントシーン終了]
+;◆回想記録 
+[endreplay]
 ;◆normalED終了処理へ
 [if exp="tf.okeiko_gamen==true"]
 [藤枝ルート終了 end="normal"]
