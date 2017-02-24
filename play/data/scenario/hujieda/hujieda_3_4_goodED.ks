@@ -2,6 +2,8 @@
 ;イベント１５回目【指切りエンド】3月4週、goodED時エピローグ
 ;=======================お芝居の準備中です==================================
 *replay_hujieda_hujieda_3_4_goodED
+*replay_hujieda_hujieda_3_4_goodED_scene
+*start
 [stopbgm]
 [if exp="tf.test_hujieda==true"]
 [eval exp="tf.okeiko_gamen=true"]
@@ -518,6 +520,7 @@ $("kan").css('margin','auto');
 ;[eval exp="sf.FButton='ON'"]
 ;[cm]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
+[endreplay]
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
