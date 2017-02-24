@@ -533,13 +533,14 @@ $('.omoide1').remove();
 [fadeoutbgm time=3000]
 
 ;初期化
-藤枝 
+;藤枝 
 @eval exp="f.hujieda_au=0" 
-葛城宮 
+;葛城宮 
 @eval exp="f.katuraginomiya_au=0"
-財前 exp="f.zaizen_au=0"
+;財前 
+@eval exp="f.zaizen_au=0"
 @eval exp="f.kuroda_au=0" 
-四条
+;四条
 @eval exp="f.sijyou_au=0" 
 
 [freeimage layer=27]
