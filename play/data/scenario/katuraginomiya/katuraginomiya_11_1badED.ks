@@ -1,6 +1,7 @@
 ;背景：薔薇園のまま　
 =======================お芝居の準備中です==================================
-[setreplay name="replay_katuraginomiya_11_1badED_scene" storage="katuraginomiya_11_1badED.ks" target="start"]
+[setreplay name="replay_katuraginomiya_11_1badED_scene" storage="katuraginomiya/katuraginomiya_11_1badED.ks" target="start"]
+*replay_katuraginomiya_11_1badED_scene
 *start
 *replay_katuraginomiya_11_1badED
 [stopbgm]
@@ -124,10 +125,10 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-
+;回想記録終了
+[endreplay] 
 [if exp="tf.okeiko_gamen==true"]
 [eval exp="sf.ED_katuraginomiya_bad=1"]
-;回想記録終了[endreplay] 
 @jump storage="event.ks" target=*event_ED
 [else]
 [葛城宮ルート終了 end="bad"]
