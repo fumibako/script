@@ -290,7 +290,7 @@ $("kan").css('margin','auto');
 @jump storage="event.ks" target=*event_ED
 [endif]
 [endreplay]
-[if exp="tf.replay_mode==true"]
+[if exp="tf.flag_replaye==true"]
 @jump storage=replay.ks
 [endif]
 
