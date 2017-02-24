@@ -3,6 +3,7 @@
 ;=======================お芝居の準備中です==================================
 [setreplay name="replay_hujieda_hujieda_3_4_goodED_scene" storage="hujieda/hujieda_3_4_normalED.ks" target="start"]
 [setreplay name="replay_hujieda_hujieda_3_4_normalED_scene" storage="hujieda/ｈujieda_3_4_normalED.ks" target="start"]
+*replay_hujieda_hujieda_3_4_normalED_scene
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
