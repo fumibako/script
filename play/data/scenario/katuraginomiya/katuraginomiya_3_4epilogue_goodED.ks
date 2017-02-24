@@ -403,7 +403,7 @@ $("kan").css('margin','auto');
 [イベントシーン終了]
 [fadeoutbgm time=3000]
 
-[if exp="tf.replay_mode==true"]
+[if exp="tf.flag_replay==true"]
 @jump storage=replay.ks
 [endif]
 
