@@ -1262,7 +1262,7 @@ _　いらっしゃるのでしょうか？）[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
 [wait time=10]
 （華織様の花に対する思いは、[r]
-[ruby text=なみ]並[ruby text=たい]大[ruby text=てい]抵のものではない想いを持っていらっしゃるのですね）[p]
+[sp][ruby text=なみ]並[ruby text=たい]大[ruby text=てい]抵のものではない想いを持っていらっしゃるのですね）[p]
 ;キャラ説明
 
 [主人公目閉]
