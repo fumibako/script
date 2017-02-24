@@ -64,8 +64,8 @@
 [ptext layer=1 page=fore text="葛城宮ルート　:　normalEND" x=497 y=390 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="葛城宮ルート　:　goodEND" x=727 y=390 size=17 color=navy visible=true]
 [else]
-[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=497 y=390 size=17 color=navy visible=true]
-[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=727 y=390 size=17 color=navy visible=true]
+[ptext layer=1 page=fore text="？ルート　:　normalEND" x=497 y=390 size=17 color=navy visible=true]
+[ptext layer=1 page=fore text="？ルート　:　goodEND" x=727 y=390 size=17 color=navy visible=true]
 [endif]
 
 ;@jump target="*common"
@@ -76,8 +76,8 @@
 [ptext layer=1 page=fore text="藤枝ルート　:　normalEND" x=37 y=590 size=17 color=navy visible=true]
 [ptext layer=1 page=fore text="藤枝ルート　:　goodEND" x=267 y=590 size=17 color=navy visible=true]
 [else]
-[ptext layer=1 page=fore text="？？？ルート　:　normalEND" x=37 y=590 size=17 color=navy visible=true]
-[ptext layer=1 page=fore text="？？？ルート　:　goodEND" x=267 y=590 size=17 color=navy visible=true]
+[ptext layer=1 page=fore text="？ルート　:　normalEND" x=37 y=590 size=17 color=navy visible=true]
+[ptext layer=1 page=fore text="？ルート　:　goodEND" x=267 y=590 size=17 color=navy visible=true]
 [endif]
 
 @jump target="*common"
