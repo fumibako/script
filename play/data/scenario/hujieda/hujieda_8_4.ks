@@ -48,7 +48,7 @@
 [主人公伏目]
 [主人公眉下げ下]
 （……いけないわ集中しないと。　曲を弾くときは無心で！）[p]
-(先生も、"今度はどこか心ここにあらずね" と注意されたばかりなのに……）[p]
+（先生も、"今度はどこか心ここにあらずね" と注意されたばかりなのに……）[p]
 
 #
 私は、なんとか曲を弾き終え、一息つく。[p]
@@ -180,17 +180,17 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]郵便屋さんは、いつも何時ぐらいにくるのかしら？」[p]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢様！　最近は随分と淑女らしくなりましたのに[r]
+「お嬢様！　最近は随分と淑女らしくおなりでしたのに[r]
 [sp]廊下を走るなど……」[p]
 
 ;【立ち絵】主人公　目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
-「ごめんなさい[r]
+「ごめんなさい。[r]
 [sp]……それで郵便は何時頃に届くものなの？」[p]
 
 [whosay name=磯野 color="dimgray"]
-「いつも[ruby text=じゅう]十時頃でしょうか……[r]
+「いつも[ruby text=じゅう]十時頃でしょうか……。[r]
 [sp]どうしてそんなことを？」[p]
 
 ;【立ち絵】主人公　慌てる
@@ -201,7 +201,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 「いえ……手紙を交わしている方の手紙が気になって……」[p]
 
 [whosay name=磯野 color="dimgray"]
-「まあ、そうでございますか、[r]
+「そうでございますか、[r]
 [sp]どなたからのお手紙でしょうか？」[p]
 
 ;【立ち絵】主人公　慌てる
@@ -219,7 +219,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 ;【テキスト全画面】黒茶・和紙風背景に白文字
  [テキスト全画面白文字]
 翌日[r]
-[ruby text=じゅう]十時[p]
+[ruby text=じゅう]十時。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
@@ -249,7 +249,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ片手]
-（自転車の音が聞こえるわ。 もうすぐだわ！)[p]
+（自転車の音が聞こえるわ。 もうすぐだわ！）[p]
 [stopse]
 #
 ;=========表示================
@@ -260,14 +260,15 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [freeimage layer=13 time=300]
 ;=========================
 [主人公ポーズ通常]
-[whosay name="藤枝 肇" color=%mp.color] 
+;[whosay name="藤枝 肇" color=%mp.color] 初見であり、確実に藤枝とはいえない可能性もあるため「郵便屋」とさせていただきました(◆jsYiJcqRkk
+[whosay name="郵便屋" color=%mp.color] 
 「郵便です！」[p]
 [whosay name="女中" color=%mp.color] 
 「お疲れ様です」[p]
 
 ;【立ち絵】 藤枝　通常
 [藤枝笑顔]
-[whosay name="藤枝 肇" color=%mp.color] 
+[whosay name="郵便屋" color=%mp.color] 
 [主人公目パチ1回]
 「ありがとうございます！　では失礼します！」[p]
 #
@@ -310,7 +311,8 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]そうしないと藤枝様が責任を感じてしまわれるわね）[p]
 
 [主人公目閉じ]
-（藤枝様は私の幸せを願っていると書いてくれたから……努力してみましょう）[p]
+（藤枝様は私の幸せを願っていると書いてくださったから……[r]
+[sp]努力してみましょう）[p]
 
 [fadeoutbgm time=3000]
 #

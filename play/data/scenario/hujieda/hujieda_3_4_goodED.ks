@@ -34,7 +34,7 @@
 [mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=300 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [freeimage layer=29]
 [layopt layer=29 visible=true]
-[mtext name=cc text="お手紙は途絶えることはなかった。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[mtext name=cc text="お手紙が途絶えることはなかった。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [freeimage layer=29]
 [layopt layer=29 visible=true]
 
@@ -55,7 +55,7 @@
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
-―― 四年後　某月[p]
+――四年後、某月。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -94,7 +94,7 @@
 （もうすぐだわ）[p]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢様、お茶をどうぞ。　少しは落ち着きませんと」[p]
+「お嬢様、お茶をどうぞ。　少しは落ち着かれませんと」[p]
 
 ;【SE】湯のみを置く（コトリ）
 [playse storage=tya_yunomi_oku.ogg loop=false ]
@@ -402,7 +402,7 @@
 [sp][名前]様のおかげで希望を持ち続けられ、この国に[r]
 [sp]貢献できるように帰ってこれました」[p]
 
-「あの頃よりは、一人前の大人になっているでしょうか？」[p]
+「あの頃よりは、一人前の大人になっていますでしょうか？」[p]
 #
 お父様は頷き、あたたかな眼差しで肇様を見ている。[p]
 
@@ -462,7 +462,7 @@
 [sp]これからも、名前さんを幸せにする為に精一杯努力します」[p]
 
 #
-私と肇様は、微笑み合った。 幸福な気持ちでいっぱいで胸が詰まる。[p]
+私と肇様は、微笑み合った。 幸福な気持ちがいっぱいで胸が詰まる。[p]
 
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -492,7 +492,7 @@
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
-―― そして肇様と[p]
+――そして肇様と[p]
 新しい明日を紡いでいく。[p]
 ;==================================================================================
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する

@@ -134,10 +134,10 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公眉困り]
 [主人公目閉じ]
 （一瞬でも喜んでしまった自分が醜い。[r]
-[sp]藤枝様の夢が叶うかもしれないのに)[p]
+[sp]藤枝様の夢が叶うかもしれないのに）[p]
 [主人公眉下げ下]
-(藤枝様は、沢山お稽古を励ましてくれたわ。 [r]
-[sp]だから悲しくとも応援したい)[p]
+（藤枝様は、沢山お稽古を励ましてくれたわ。 [r]
+[sp]だから悲しくとも応援したい）[p]
 
 ;【SE】ペンで書く
 [playse storage=pen_write.ogg loop=false ]
@@ -175,7 +175,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 （……どうか藤枝様へ辿り着きますように）[p]
 [fadeoutbgm time=3000]
 #
-――　最後に私が藤枝様の背中を押すのだわ。[r]
+――最後に私が藤枝様の背中を押すのだわ。[r]
 [sp]藤枝様が自由に飛び立てるように[p]
 
 ;@jump storage="event.ks" target=*event_owari

@@ -18,7 +18,7 @@
 ;ゆっくり表示
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
 [eval exp="f.haikei_credit=''"]
-―― 夢を見た。[p]
+――夢を見た。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】「深雪白雪」
 [playbgm storage="miyuki.ogg" loop=true]
@@ -31,7 +31,7 @@
 [playse storage=tori_hato.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(あの時の鳩さんだわ)[p]
+（あの時の鳩さんだわ）[p]
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
 #
@@ -81,7 +81,7 @@
 [sp]僕の事を想ってくれるなら」[p]
 
 [whosay name=？？？]
-「ーーその時はきっと」[p]
+「――その時はきっと」[p]
 #
 [主人公目閉]
 光が差し、私は瞼を閉じた。[p]
@@ -100,7 +100,7 @@
 「夢？」[p]
 
 [主人公ポーズ指]
-（[ruby text=こと]箏のお稽古をすると、誰かとのご縁があるのかしら？[r]
+（お[ruby text=こと]箏のお稽古をすると、誰かとのご縁があるのかしら？[r]
 [sp]けれど今、交わしているお手紙の方の事も良く知った上で[r]
 [sp]その方を強く思わないといけないのね）[p]
   

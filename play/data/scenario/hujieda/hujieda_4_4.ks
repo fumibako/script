@@ -44,11 +44,12 @@
 ;【立ち絵】主人公 驚
 [主人公驚]
 「まあ！ かわいい鳩ね。[r]
-[sp]あ・・・お[ruby text=こと]箏の上にのってはダメよ」[p]
+[sp]あ……お[ruby text=こと]箏の上にのってはダメよ」[p]
 [主人公口通常]
 
 #
-愛らしいハトが慣れた様子で、[ruby text=こと]箏の柏葉に[ruby text=と]留まった。[r]
+愛らしい鳩が慣れた様子で、[ruby text=こと]箏の柏葉に[ruby text=と]留まった。[r]
+;↑鳩の表現を、意図のある場面以外は「鳩」に統一させていただきます(◆jsYiJcqRkk
 鳩は弦を見ながら首を動かし、まるで演奏を待ちわびているようだった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -143,7 +144,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [主人公目閉]
 「お[ruby text=こと]箏、うまくなれるかしら……」[p]
 [主人公ほほえみ]
-「いえ…… 精一杯、お稽古がんばりましょう！」[p] 
+「いえ……精一杯、お稽古がんばりましょう！」[p] 
 [fadeoutbgm time=3000]
 #
 ;次のイベントにでてしまう名前残りを消去

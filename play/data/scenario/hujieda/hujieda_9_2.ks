@@ -152,7 +152,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 （鳩さんは、たまに姿を見せていたけど、もう迷惑になると手紙を[r]
 [sp]出せずにいた）[p]
 [主人公目閉じ]
-(これから手紙を沢山出すわ……）[p]
+（これから手紙を沢山出すわ……）[p]
 ;===================================
 ;手紙やりとりフラグ
 [eval exp="f.hujieda_fumi_start=1"]
