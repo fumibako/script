@@ -6,7 +6,7 @@
 @clearfix
 [hidemenubutton]
 ;テスト画面に戻るためフラグ作成
-[eval exp="tf.replay_mode=true"]
+;[eval exp="tf.flag_replay=true"]は既にされているのでそれを使う
 [cm]
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
@@ -103,7 +103,7 @@
 [cm]
 [freeimage layer=2]
 ;clearfix
-[eval exp="tf.replay_mode=false"]
+;[eval exp="tf.flag_replay=false"]
 @jump storage=title.ks
 
 *nextpage
