@@ -24,7 +24,7 @@ $('.loding_pic').remove();
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [イベントシーン構築ボタン無し版枠茶色]
 [メッセージウィンドウ上ボタン表示]
-早春、四条家にて――[p]
+早春、四条家にて――。[p]
 ;季節はｲﾍﾞﾝﾄに合わせて調整
 *seen0
 ;【SE】物音（ガタン・バタン）
@@ -70,7 +70,7 @@ $('.loding_pic').remove();
 「は、はい……」[p]
 [fadeoutbgm time=3000]
 [whosay name="四条祖父" color="#888898"]
-(騒動の引き金になってしまった、ワシは何も言うまい)[p]
+（騒動の引き金になってしまった、ワシは何も言うまい）[p]
 ;=================================================================================_
 *seen1_a
 #
@@ -95,7 +95,7 @@ $('.loding_pic').remove();
 華衣は、華織の部屋に留めておいた"華衣の婚約者"の荷物を運んでいたのだった。[p]
 
 [whosay name="四条 華衣" color=%mp.color]
-「それなら、[ruby text=メイ]女[ruby text=ド]中をよこせよっ アイツらならヘマもしないだろ！？」[p]
+「それなら、[ruby text=メイ]女[ruby text=ド]中をよこせよっ。アイツらならヘマもしないだろ！？」[p]
 [whosay name="華織" color="olivedrab"]
 「大切な人の荷物も運べずして、何ができる？ 華衣は、いまいち[r]
 [sp]行動に重さがないね」[p]
@@ -123,9 +123,9 @@ $('.loding_pic').remove();
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [stopse]
 [whosay name="華織" color="olivedrab"]
-(ふぅ……兄とは、かくも大変なものですね。文矢)[p]
+（ふぅ……兄とは、かくも大変なものですね。文矢）[p]
 [whosay name="華織" color="olivedrab"]
-(これも、本来の兄としての義務をサボっていたツケでしょうか……）[p]
+（これも、本来の兄としての義務をサボっていたツケでしょうか……）[p]
 #
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
@@ -163,7 +163,7 @@ $('.loding_pic').remove();
 [whosay name="四条 華衣" color=%mp.color]
 「…………………」[p]
 [whosay name="四条 華衣" color=%mp.color]
-「――　泣かねぇよ、もう……」[p]
+「――泣かねぇよ、もう……」[p]
 [whosay name="四条 華衣" color=%mp.color]
 「幸せが訪れるのを待ってるって言ってたから」[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -183,7 +183,7 @@ $('.loding_pic').remove();
 [whosay name="日誌" color="%mp.color"]
 『無は有を産むべきもの。[r]
 [sp]自身の定めしもの見つけるべし。[r]
-[sp]―― 決して悲観されがたし。皆、初めは無であった』[p]
+[sp]――決して悲観されがたし。皆、初めは無であった』[p]
 [whosay name="四条 華衣" color=%mp.color]
 「初めは無……」[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -198,7 +198,7 @@ $('.loding_pic').remove();
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
-(さて、そろそろ手伝おうかな)[p]
+（さて、そろそろ手伝おうかな）[p]
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [whosay name="華織" color="olivedrab"]
 「[華衣]、大変だったら……」[p]
@@ -209,14 +209,14 @@ $('.loding_pic').remove();
 ;[whosay name="四条 華衣" color=%mp.color]
 ;「う……ん……もう少し、待って……ほし……な……」[p]
 [whosay name="華織" color="olivedrab"]
-(あぁ、寝てるじゃないか……)[p]
+（あぁ、寝てるじゃないか……）[p]
 [whosay name="華織" color="olivedrab"]
 「僕が生けた花をそのまま壺に突っ込んじゃって……[r]
 [sp]せめて花の向きは揃えて……」[p]
 ;暗転
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [whosay name="華織" color="olivedrab"]
-(いいや、そのままにしておくべきだ……そっとしておこう)[p]
+（いいや、そのままにしておくべきだ……そっとしておこう）[p]
 #
 派手な壺に不揃いな花が並ぶ。[r]
 時が経てば凛と前を向く花が並ぶのだろうか。[p]

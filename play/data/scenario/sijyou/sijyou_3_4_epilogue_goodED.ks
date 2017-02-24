@@ -39,7 +39,7 @@
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
 
-[sp]―― その数年後、
+[sp]――その数年後、
 [sp]秋の輝きが風になびくころ。[p]
 ;輝花が　輝きが　幸せな思い出が
 ;タイトルの曲のほうがいいかも20090303yukidoke
@@ -148,7 +148,7 @@ $('.junbi_girl').remove();
 [sp]ですね」[p]
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
-(そのうち、訪ねてくるような仲になれるだろうか？)[p]
+（そのうち、訪ねてくるような仲になれるだろうか？）[p]
 
 [主人公口笑顔]
 [wait time=10]
@@ -182,9 +182,9 @@ $('.junbi_girl').remove();
 [主人公退場]
 [whosay name="華織" color="olivedrab"]
 [四条真剣]
-(手紙の代わりに、華で想いを綴っていくと決めたのだから、
+（手紙の代わりに、華で想いを綴っていくと決めたのだから、
 [四条口微笑み]
-もっと精進しなくては)[p]
+もっと精進しなくては）[p]
 #
 [wait time=10]
 ;メッセージレイヤを消去
@@ -221,7 +221,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 人々を幸せにする愛に変わっていく。[r]
 [fadeoutbgm time=3000]
 [position left=290 width=700 height=500 top=110 page=fore margint="50"]
-その手紙は ――[p]
+その手紙は――[p]
 
 [position left=300 width=400 height=300 top=200 page=fore margint="50"]
 恋綴り　と呼ばれたという。[p]

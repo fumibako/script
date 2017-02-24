@@ -420,7 +420,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 [preload storage="data/fgimage/bg/bg_sakura.jpg"]
 ;エンディングスチルをプリロード
-[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true "]
+[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.para_shujinkou_j_kadou >= 50"]
 [preload storage="data/fgimage/bg/sijyou_CGgood.png"]
 [else]
 [preload storage="data/fgimage/bg/sijyou_CGnomal.png"]

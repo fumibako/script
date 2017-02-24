@@ -108,10 +108,10 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [sp]はぁ、来週からは奥様と[華衣]様が留学から帰ってくるらしいから大変[r]
 [sp]だわ」[p]
 [whosay name="女中・その壱" color=%mp.color]
-「奥様は、本当に[華衣]様に ご執心ですものね。　留学先では、結局、[r]
+「奥様は、本当に[華衣]様に ご執心ですものね。 留学先では、結局、[r]
 [sp]別荘にこもって遊んでいたらしいわ」[p]
 [whosay name="女中・その弐" color=%mp.color]
-「!! ちょっと！」[p]
+「！！ ちょっと！」[p]
 ;[whosay name="女中・その壱" color=%mp.color]
 ;「？」[p]
 [whosay name="四条祖父" color="#888898"]
@@ -122,8 +122,9 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;セリフにすると回想シーンの切り替えにならない為、ト書きへ
 ;=================================================================================_
 *seen2
-[whosay name="華織" color="olivedrab"]
-――　四条家の責務や才を発揮しない[華衣]の将来を憂いた祖父は、[r]
+;[whosay name="華織" color="olivedrab"]
+#
+――四条家の責務や才を発揮しない[華衣]の将来を憂いた祖父は、[r]
 早いところ落ち着いてほしいと考え、若干早めの見合い話を持ってきた。[p]
 [autosave]
 ;華族は国に貢献すること。富や国交以外では、文化などで貢献する
@@ -139,8 +140,8 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 「ふーん……」[p]
 ;なくても？↓
 [whosay name="華織" color="olivedrab"]
-(僕も時が来たら、[名前]ちゃんに手紙を出せるようになればいいな……[r]
-[sp]ふぅ、今更、選ばれる見込みはなさそうですが……)[p]
+（僕も時が来たら、[名前]ちゃんに手紙を出せるようになればいいな……。[r]
+[sp]ふぅ、今更、選ばれる見込みはなさそうですが……）[p]
 [whosay name="四条祖父" color="#888898"]
 「さっそく[華衣]、手紙を書きなさい 」[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -197,7 +198,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
 #
-華織様は、そこまで話すと俯いたまま黙ってしまった。[p]
+華織様は、そこまで話すと俯いたまま黙ってしまわれた。[p]
 [主人公憂い]
 ;プレイヤー感情 どうしたの？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -216,7 +217,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;↓口： [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
-「！ 」[p]
+「！」[p]
 ;華織、躊躇うが話す
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
@@ -269,13 +270,13 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
 （あの雪の日のように[r]
-[sp]また僕は、[名前]のことも諦めないといけないのか)[p]
+[sp]また僕は、[名前]のことも諦めないといけないのか）[p]
 [whosay name="華織" color="olivedrab"]
 （それで、[華衣]は、納得してくれるのだろうか）[p]
 [whosay name="華織" color="olivedrab"]
 （でも、それでは、ただの甘えだ。　あの人と約束したから）[p]
 [whosay name="華織" color="olivedrab"]
-（あの人の想いを伝えないと。　僕と[華衣]のためにも)[p]
+（あの人の想いを伝えないと。　僕と[華衣]のためにも）[p]
 ;==============◆◆◆どんな風に恨んでいるの？？　今までどう行動してたの？おわり◆◆◆◆====================
 [cm]
 ;=========================================================================================
@@ -317,7 +318,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様……)[p]
+（華織様……）[p]
 ;=================================================================================_
 *seen5
 ;話の繋がりを説明
@@ -353,8 +354,8 @@ _　それでも、離れること、失うことはとても辛かった。[p]
 ;話セリフにすると烏滸がましさが出たので内面で。
 ;主人公、案を考える
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(こういった時は、[華衣]様の御心が落ち着ける場所が分かれば、見つかる[r]
-気がしますが……)[p]
+（こういった時は、[華衣]様の御心が落ち着ける場所が分かれば、見つかる[r]
+気がしますが……）[p]
 ;２＿１同様・御心に統一することに
 ;華織をせつく、ストーリーの進行
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -378,7 +379,7 @@ _　それでも、離れること、失うことはとても辛かった。[p]
 「もし見つけても僕の言葉を受け入れてくれるか……」[p]
 [四条目伏]
 [whosay name="華織" color="olivedrab"]
-「ごめん、年下の君にこんなことを話して……[r]
+「ごめん、年下の君にこんなことを話して……。[r]
 [四条口微笑み]
 [sp]やっぱり、こんな事は、自分で解決しないといけないね……」[p]
 ;華織、出て行こうとする。膝立てるくらい
@@ -404,8 +405,8 @@ _　それでも、離れること、失うことはとても辛かった。[p]
 *seen7
 [autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(何か[華衣]様の御心に届く方法があればいいのですが……手紙など[r]
- ないのでしょうか？)[p]
+（何か[華衣]様の御心に届く方法があればいいのですが……手紙など[r]
+[sp]ないのでしょうか？）[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]

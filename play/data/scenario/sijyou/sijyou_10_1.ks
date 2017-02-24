@@ -30,10 +30,10 @@
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(最近、お手紙の内容の繋がりが、おかしいと思っていたら)[p]
+（最近、お手紙の内容の繋がりが、おかしいと思っていたら）[p]
 [autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ついにお手紙が、来なくなってしまいました)[p]
+（ついにお手紙が、来なくなってしまいました）[p]
 [主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、今日のお手紙に四条家からの手紙はありまして？」[p]
@@ -154,10 +154,10 @@
 [wait time=10]
 
 [主人公目閉じ]
-(どうしましょう)[p]
+（どうしましょう）[p]
 
 [whosay name="磯野" color="dimgray"]
-「お嬢様。 文矢様にお手紙を書いてはいかがでしょうか？」[p]
+「お嬢様。 文矢様にお手紙を書かれてはいかがでしょうか？」[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -181,9 +181,9 @@
 「そうですね……」[p]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(お兄様に恋の相談なんて、気恥ずかしいですが……)[p]
+（お兄様に恋の相談なんて、気恥ずかしいですが……）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(今はそんなことを考えている場合では、ないですよね)[p]
+（今はそんなことを考えている場合では、ないですよね）[p]
 ;○四条家の日常をみてプレイヤーが同調する形
 [主人公通常]
 *seen5

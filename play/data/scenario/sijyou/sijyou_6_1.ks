@@ -26,16 +26,16 @@
 [eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
 [endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ここは、どこでしょうか？）[p]
+（ここは、どこでしょうか？）[p]
 #
 寂しいような不思議な不安にかられる。[p]
 #
-その途端、見たことも大きな温室が目の前に現れた。[p]
+その途端、見たこともない大きな温室が目の前に現れた。[p]
 [playse storage=shine.ogg loop=false ]
 ;キラキラSEとか
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(なんて広い温室なのかしら！ それに色々な花が咲き乱れて綺麗だわ)[p]
+（なんて広い温室なのかしら！ それに色々な花が咲き乱れて綺麗だわ）[p]
 
 ;------------------------------------------------------
 [if exp="tf.test_gamen==true"]
@@ -78,13 +78,13 @@
 [whosay name="？？？"]
 「[名前]……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(誰かしら？……顔は見えないけれど声はするわ[r]
-[sp]優しくて懐かしいような声……)[p]
+（誰かしら？ ……顔は見えないけれど声はするわ[r]
+[sp]優しくて懐かしいような声……）[p]
 ;キャライメージ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(あの方は！)[p]
+（あの方は！）[p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「[名前]ちゃん。　こっちだよ」[p]
+「[名前]ちゃん。 こっちだよ」[p]
 #
 その優しい声の主は、華織お兄さまであった[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -94,7 +94,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私もです、華織お兄さま！」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「あの雪の日に君を置いて去っていってしまってごめんね[r]
+「あの雪の日に君を置いて去っていってしまってごめんね。[r]
 [sp]とても後悔してる」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな！ だって……大人になる為の決まりですもの」 [p]
@@ -109,7 +109,7 @@
 華織お兄さまは、私の髪飾りに花を添えると、夢のような足取りでワルツを[r]
 舞う。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「どうしてかしら？私、踊れてしまってるわ」[p]
+「どうしてかしら？ 私、踊れてしまってるわ」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん、とても上手だね。[r]
 [sp]そんな君には、これからは、もっと色々な事を教えてあげたいな」[p]
@@ -123,8 +123,8 @@
 華織お兄様は、静かに呟くと私の頬にご自身の頬をあてて抱きしめる。[p]
 ;キスはないからなー
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織お兄様、懐かしくて優しい気持ちになるわ……[r]
-[sp]私の幸せは、やっぱり、一番近くにいた華織お兄さまなのだわ……)[p]
+（華織お兄様、懐かしくて優しい気持ちになるわ……。[r]
+[sp]私の幸せは、やっぱり、一番近くにいた華織お兄さまなのだわ……）[p]
 ;一応　伏線はっておくか
 #
 恋夢に満ち足りていると、どこかで鐘が鳴りだした。[p]
@@ -186,11 +186,11 @@ $('.saku1').remove();
 #
 目が覚めると自分の部屋であった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(夢……?)
+（夢……?）
 [主人公憂い]
 [p]
 [主人公ふぅ閉]
-(ふぅ。 なんだったのかしら……不思議な夢を見た気がするわ）[p]
+（ふぅ。 なんだったのかしら……不思議な夢を見た気がするわ）[p]
 *seen_end
 [イベントシーン終了]
 

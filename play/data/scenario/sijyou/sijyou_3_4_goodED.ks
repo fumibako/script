@@ -107,7 +107,7 @@ $('.saku3').remove();
 [whosay name="華衣" color=%mp.color]
 「あなたは」[p]
 [whosay name="四条親戚" color="#807070"]
-「いつも子供達と遊んで頂き、ありがとうございます[r]
+「いつも子供達と遊んで頂き、ありがとうございます。[r]
 [sp]私、[華衣]さんのこと、ずっと応援していました」[p]
 [whosay name="華衣" color=%mp.color]
 「え、いえ、俺は別に……」[p]
@@ -115,7 +115,7 @@ $('.saku3').remove();
 「私、父と新しい事業を始めようと思うのですが、よろしければ[r]
 [sp][華衣]さんも手伝って頂けないでしょうか……？」[p]
 [whosay name="華衣" color=%mp.color]
-「俺に、できるのかな……　いえ、やらせてください！」
+「俺に、できるのかな……。 いえ、やらせてください！」
 [whosay name="華衣" color=%mp.color]
 （いつか、あの二人に負けないものを見つけてみせよう）[p]
 [else]
@@ -146,6 +146,8 @@ $('.saku3').remove();
 [wait time=10]
 ;===============================================================
 ;義姉さまから頂いた/
+;ベールは代々受け継がれるほど昔から日本に入っていたかどうかが気になりました。「お義姉さまから頂いた」又は「綾花さまから頂いた/明治の頃より四条家で受け継がれる」などの方が自然に感じられます。
+;しかし『結婚』の持つ歴史や家の大切なものを継ぐ面を強調される場合は、ベール以外のものを受け継がれる表現などにされるのはいかがでしょうか(◆jsYiJcqRkk
 四条家で代々受け継がれるベールをつけ、[r]
 記念写真を撮る。[r]
 [r]
@@ -190,7 +192,7 @@ $('.saku3').remove();
 [eval exp="f.kaogura = 'off'"]
 [eval exp="f.haikei_credit='illustration　by　かいこ'"]
 ;good条件分岐は3箇所：スチル表示(ここ)、169行目付近、preload_sijyou.ks423行目付近(もし調整が必要になった際用メモです。「以上」の部分を調整させていただきました
-[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true "]
+[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.para_shujinkou_j_kadou >= 50 "]
 [暗転２ storage="bg/sijyou_CGgood.png" clegit=true]
 [chara_mod name="bg" storage="bg/sijyou_CGgood.png" time=1000]
 ;◆CGモード用に画像を登録

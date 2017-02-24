@@ -22,7 +22,8 @@
 ;スクリプト担：↓お稽古パートから歌舞伎見物シーンへ自然につながるような地の文を入れたいのですが、こんな感じで大丈夫でしょうか？
 ;okです
 [sp][r]
-―― 華織様にお芝居見物に誘われ[r]
+;「に」が続くので調整しました(◆jsYiJcqRkk
+――華織様からお芝居見物に誘われ[r]
 [r]
 歌舞伎『大正座』を訪れることになった。[p]
 ;背景変更
@@ -77,7 +78,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様、お元気そう)[p]
+（華織様、お元気そう）[p]
 ;[太鼓SE]ドンドンドン…
 [playse storage=taiko.ogg loop=false ]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -249,7 +250,7 @@
 ;四条登場
 [四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
-「はじめてで緊張する？ 」[p]
+「はじめてで緊張する？」[p]
 ;[主人公照れ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -265,7 +266,7 @@
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(周りの方達は、"お付き合い"をされてる方達なのでしょうか？ )[p]
+（周りの方達は、"お付き合い"をされてる方達なのでしょうか？ ）[p]
 [四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
 「手を繋いでいるね」 [p]
@@ -354,12 +355,12 @@
 ;なだと子供っぽいな
 [主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様は、色々とお気遣いされて、余裕があって……)[p]
+（華織様は、色々とお気遣いされて、余裕があって……）[p]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(私も華織様に喜んでほしい)[p]
+（私も華織様に喜んでほしい）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(いつか華織様のお役に立てるようになりたいです)[p]
+（いつか華織様のお役に立てるようになりたいです）[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -443,6 +444,8 @@
 ;×修正点
 [whosay name="？？？" color=%mp.color]
 「アンタは人の大事な人を奪ったくせに！」[p]
+;「アンタは大事な人を奪ったくせに！」[p]"人の"を除いてもスッキリとわかりやすい文になる気もします。が、大切なセリフなのでさわらずにこのままにします(◆jsYiJcqRkk案
+
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]

@@ -84,7 +84,7 @@
 ;【SE】衣擦れ（スッ）文矢が障子の影にかくれるイメージ
 [playse storage=kinuzure.ogg loop=false ]
 [whosay name="華織" color="olivedrab"]
-「まったく君って奴は急にやって来たと思ったら引っ張り出して……[r]
+「まったく君って奴は急にやって来たと思ったら引っ張り出して……。[r]
 [sp]いくら君の頼みでも、今は……」[p]
 ;軽い感じがする
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -242,12 +242,12 @@ lay1[0].style.webkitFilter = "sepia(80%)";
 ;[主人公の家の前]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(たしか、あの時、華織様との別れ際に現れた方でしたね)[p]
+（たしか、あの時、華織様との別れ際に現れた方でしたね）[p]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(少し……怖そうな方でした)[p]
+（少し……怖そうな方でした）[p]
 ;[暗転]　もどす
 [chara_mod name="bg" storage="toumei.gif"]
 [iscript]
@@ -259,7 +259,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(でも、本当のところ[華衣]様とはどんな方でしょう……？)
+（でも、本当のところ[華衣]様とはどんな方でしょう……？）
 *seen3
 [autosave]
 ;///////////////////////選択肢//////////////////////////
@@ -396,14 +396,15 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;一度はプレイヤーの驚きと同調して困った表情をする主人公（あはは……；）といった感じ？
 [主人公困りほほえみ]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"] (お兄様……)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（お兄様……）[p]
 ;けど兄妹なので言いたいことはわかっている。素直に真摯に笑顔になる主人公
 [主人公ほほえみ]
 ;立ち絵がつくと結構笑える・・ほほえましいシーンになりますね
 [四条微笑み]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ありがとうございます)[p]
+（ありがとうございます）[p]
 [autosave]
 [fadeoutbgm time=3000]
 ;================================================================================
@@ -517,7 +518,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「そうでしたか[r]
 ;[四条口開]
-[sp]お父様は、いらしゃられますか？」[p]
+[sp]お父様は、いらっしゃいますか？」[p]
 [whosay name="華衣の婚約者の母"]
 「[ruby text=あの]旦[ruby text=ひと]那も、[ruby text=とし]歳ゆえに他界してまして……」[p]
 [四条困り]
@@ -626,7 +627,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 私達は、埃に塗れながら大切な荷物を[ruby text=まと]纏めた。[p]
 ;なんか陰口みたいのでうーん
 [whosay name="華織" color="olivedrab"]
-「……思わず、気を使って、あんな事を言ってしまったけれど、[r]
+「……思わず、気を遣って、あんな事を言ってしまったけれど、[r]
 [sp]先に、ここの事を[ruby text=たず]尋ねれば、良かったですね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ですけど、分かっていただいて良かったです」[p]
@@ -653,13 +654,13 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;華道パラが高いまたは、四条綾花f.sijyou_sobo==trueと会っていると表示される。それ以外は無し。
 ;なぜかというと華道展イベントが表示されない可能性が高いからです。
 [whosay name="華織" color="olivedrab"]
-（世襲財産までの差し押さえか……よっぽどのことなのだろうか？)[p]
+（世襲財産までの差し押さえか……よっぽどのことなのだろうか？）[p]
 （けど、華族が、いつまでも栄華を極めていられるかなんて、[r]
 [sp]そんなことは、誰にも決められないことだろう……）[p]
 [whosay name="華織" color="olivedrab"]
 （最後まで、大切な人を守れるような明確な強さを持って[r]
-[sp]いなれば生き抜く事もままならない時代が、いつかくるだろう)[p]
-(そのとき……僕には、何ができるだろうか)[p]
+[sp]いなれば生き抜く事もままならない時代が、いつかくるだろう）[p]
+（そのとき……僕には、何ができるだろうか）[p]
 #
 [endif]
 *common_2
@@ -698,7 +699,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「いえ、そんなお情けは……」[p]
 [四条目パチ1回]
 [whosay name="華織" color="olivedrab"]
-「勝手に来て、物色までしたのです。　それくらいは[r]
+「勝手に来て、物色までしたのです。 それくらいは[r]
 [sp]させてください」[p]
 [whosay name="華衣の婚約者の母"]
 「そこまで仰るなら」[p]
@@ -718,7 +719,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;○後ろから呼びかけて
 ;[whosay name="華織" color="olivedrab"]
 [whosay name="華衣の婚約者の母"]
-「[華衣]様に、お伝え下さいぇ[r]
+「[華衣]様に、お伝え下さいぇ。[r]
 [sp]もうしばらくしたら、この地を離れますと」[p]
 #
 [四条口通常]
@@ -838,7 +839,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;四条登場
 ;================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(結構な量ですね）[p]
+（結構な量ですね）[p]
 [四条口微笑み]
 [whosay name="華織" color="olivedrab"]
 「これを、全部読むのは時間がかかりそうだな」[p]
@@ -865,9 +866,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(？ この書物だけ可愛らしい織柄)[p]
+（？ この書物だけ可愛らしい織柄)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(このような装飾なら日記も楽しくなりそうですね……もしかしたら？)[p]
+（このような装飾なら日記も楽しくなりそうですね……もしかしたら？）[p]
 ;【登場】四条
 [四条ベース着物]
 [四条通常]
@@ -893,8 +894,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条口ムッ]
 #
 『手記』には不思議な言葉が記されていた。[r]
-－－ 頭は恋をし寝る。波の音を聞きながら刀を探す。[r]
-－－その壺には恋を詰めておく。[p]
+――頭は恋をし寝る。波の音を聞きながら刀を探す。[r]
+――その壺には恋を詰めておく。[p]
 
 [whosay name="華織" color="olivedrab"]
 「　『頭は恋をし寝る。波の音を聞きながら刀を探す。[r]
@@ -913,7 +914,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「そうですね」[p]
 [四条目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-([ruby text=いち]一ページ目にわざわざかいてあるようですし……)[p]
+（[ruby text=いち]一ページ目にわざわざかいてあるようですし……）[p]
 ;横棒に空読みするためruby
 [fadeoutbgm time=3000]
 ;【SE】紙に触れる（パラリ）　紙がおちる
@@ -975,7 +976,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;兄弟→弟に
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様……)[p]
+（華織様……）[p]
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様、きっと大丈夫です」[p]
@@ -1020,7 +1021,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条眉強気]
 ;○華織 顎に指をあて考える
 [whosay name="華織" color="olivedrab"]
-(……既視感を覚える単語だな)[p]
+（……既視感を覚える単語だな）[p]
 [四条目パチ1回]
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]

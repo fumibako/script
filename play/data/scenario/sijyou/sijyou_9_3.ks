@@ -52,7 +52,7 @@
 #
 私は、毅然を繕いつつも、彼の手にした手紙を素早く受け取った。[p]
 [whosay name="磯野" color="dimgray"]
-「はい。　それでは失礼します」[p]
+「はい。 それでは失礼します」[p]
 #
 ;最低限の返事にも関わらず、礼節的に部屋から下がる
 彼を見送った後、私は頂いた手紙を高鳴る気持ちのまま開く。[p]
@@ -135,12 +135,12 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(私も、四条様のことを知りたいです)[p]
+（私も、四条様のことを知りたいです）[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公目を開く]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(……今後ともいろいろとお教えいただければ幸いです)
+（……今後ともいろいろとお教えいただければ幸いです）
 [主人公口ほほえみ]
 [p]
 #
@@ -249,11 +249,11 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [wait time=10]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(なんとなく見覚えがあるような方もいらっしゃいますね)[p]
+（なんとなく見覚えがあるような方もいらっしゃいますね）[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(これからは、ここの[ruby text=し]仕[ruby text=きた]来りを勉強しなくては！ )[p]
+（これからは、ここの[ruby text=し]仕[ruby text=きた]来りを勉強しなくては！ ）[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 ;○はりきってる四条祖母 姑？
@@ -335,7 +335,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そうなのですね)[p]
+（そうなのですね）[p]
 [主人公目閉じ]
 [四条目パチ1回]
 #
@@ -432,7 +432,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [主人公ポーズ指]
 [主人公目を開く]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(急に腕を引かれて驚いてしまいました)[p]
+（急に腕を引かれて驚いてしまいました）[p]
 [四条困り微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「ここは走りやすい場所だからね。[r]
@@ -477,18 +477,18 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(やっぱり、まだ四条様にとって、妹扱いなのでしょうか？)[p]
+（やっぱり、まだ四条様にとって、妹扱いなのでしょうか？）[p]
 [四条目パチ1回]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そうだわ。私、四条様に言わないといけないことがありましたわ)[p]
+（そうだわ。私、四条様に言わないといけないことがありましたわ）[p]
 [四条目パチ1回]
 ;この部分↓は、あっても無くても。
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(もっと四条様、いえ、華織様と仲を深めたい)[p]
+（もっと四条様、いえ、華織様と仲を深めたい）[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -510,7 +510,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 「アナタ、邪魔をなさらないように」[p]
 [主人公横目パチ1回]
 [whosay name="四条父" color="darkolivegreen"]
-「そうだな！ 」[p]
+「そうだな！」[p]
 [主人公ポーズ指]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
@@ -531,7 +531,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [whosay name="四条 華織" color="olivedrab"]
-「なんだい[名前]？ 」
+「なんだい[名前]？」
 [四条目パチ1回]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -551,7 +551,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ご家族でお付き合いするにあたり[r]
-[sp]下のお名前でお呼びしてよろしいでしょうか？ 」[p]
+[sp]下のお名前でお呼びしてよろしいでしょうか？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
@@ -603,7 +603,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢用レイヤーを追加
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（華織様……)
+（華織様……）
 ;背景変更:和紙風 桜色
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
@@ -633,9 +633,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [主人公眉下げ下]
 （どうしてからしら？[r]
 [主人公伏目]
-_　私が、望んでいたことなのに少し緊張してしまうのは)[p]
-（そうだわ。　四条様にお近づきにあたって、私も淑女として[r]
-_　成長しないといけないのだわ)[p]
+_　私が、望んでいたことなのに少し緊張してしまうのは）[p]
+（そうだわ。　四条様にお近づきするにあたって、私も淑女[r]
+_　として成長しないといけないのだわ）[p]
 #
 これからの未来に身構えていると、四条様は私の手をとって優しい眼差しをむけられた。[p]
 ;フォロー
@@ -658,7 +658,7 @@ _　成長しないといけないのだわ)[p]
 「いえ、 "華織様" とお呼びさせてください」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り照れ]
-(もしかして、また、気を使われていまったかしら？)[p]
+（もしかして、また、気を遣われてしまったかしら？）[p]
 @jump target=common_0
 
 
@@ -674,7 +674,7 @@ _　成長しないといけないのだわ)[p]
 私は、ほっとした。[p]
 *select_2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(よかった。これからは……)[p]
+（よかった。これからは……）[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [whosay name="四条 華織" color="olivedrab"]
@@ -694,10 +694,10 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [主人公目閉]
-(華織様ったら……ですが、ようやく私たちは……)[p]
+（華織様ったら……ですが、ようやく私たちは……）[p]
 [主人公伏目パチ1回]
 #
-――　私と四条様の間に新しい風が吹いていく。[p]
+――私と四条様の間に新しい風が吹いていく。[p]
 出会いを振り返れば、とても長い月日。[p]
 ;理由をかいて↑　つまりどうなった？↓
 恋仲のように呼び合える。[r]
@@ -775,8 +775,8 @@ _　成長しないといけないのだわ)[p]
 [主人公ポーズ指]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(？ ……華織様のお祖母様も、華道家でいらしゃいましたから、[r]
-[sp]その為でしょうか？)[p]
+（？ ……華織様のお祖母様も、華道家でいらしゃいましたから、[r]
+[sp]その為でしょうか？）[p]
 ;……華織様のお祖母様は
 ;○過去のくだり、家のことも(手紙で追記あり)あってこの時点で主人公はあまり気にせず。 
 [主人公ポーズ通常]
@@ -851,7 +851,7 @@ _　成長しないといけないのだわ)[p]
 ;どんどん軽薄なゲームに・・・
 [whosay name="華織" color="olivedrab"]
 [四条微笑み]
-「綺麗だね。　よく似合っているよ」[p]
+「綺麗だね。 よく似合っているよ」[p]
 ;[sp]昔を思い出すよ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ]
@@ -905,7 +905,7 @@ _　成長しないといけないのだわ)[p]
 [四条_隣_微笑み]
 [wait time=10]
 #
-湖畔。暖かな日差しが水面を輝かせ、2人を乗せたボートをゆらゆらと[r]
+湖畔。暖かな日差しが水面を輝かせ、二人を乗せたボートをゆらゆらと[r]
 照らす。[p]
 ;[SE水を跳ねる音]？
 [whosay name="華織" color="olivedrab"]
@@ -914,12 +914,12 @@ _　成長しないといけないのだわ)[p]
 「そうですね」[p]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様、
+（華織様、
 [主人公驚]
-意外とお力も強いのですね)[p]
+意外とお力も強いのですね）[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-(息切れもされていないですし)[p]
+（息切れもされていないですし）[p]
 [主人公通常]
 ;【背景】[湖畔]
 [chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike_long.jpg" time=1500]
@@ -927,7 +927,7 @@ _　成長しないといけないのだわ)[p]
 [whosay name="華織" color="olivedrab"]
 [四条_隣_目にこ]
 [wait time=10]
-「ここまで来ると2人だけだね」[p]
+「ここまで来ると二人だけだね」[p]
 ;多分からかっている
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ]
@@ -961,7 +961,7 @@ _　成長しないといけないのだわ)[p]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様、どうしたのでしょうか？)[p]
+（華織様、どうしたのでしょうか？）[p]
 [stopse]
 #
 私は、理由を聞くこともできす、華織様の漕ぐボートに身を[ruby text=ゆだ]委ねた。[p]

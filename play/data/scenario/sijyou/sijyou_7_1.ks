@@ -41,7 +41,7 @@
 #
 書き終わった手紙に目を落とす。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（お返事が楽しみだわ)
+（お返事が楽しみだわ）
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
@@ -178,7 +178,7 @@
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 5"]
 [eval exp="f.para_shujinkou_j_koto=f.para_shujinkou_j_koto + 1"]
 [else]
-(今、気になっているお稽古が上達しますように）[p]
+（今、気になっているお稽古が上達しますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
 [playse storage=kira.ogg loop=false ]
 

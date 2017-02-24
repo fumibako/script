@@ -71,7 +71,7 @@
 [playse storage=pen_write.ogg loop=false ]
 私は、彼の人を想い、筆をとる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織さま……手紙、読ませていただきました。[r]
+（華織さま……手紙、読ませていただきました。[r]
 [sp]華道競合会にて大賞を受賞されて、私も嬉しくおもいます。[r]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 [sp]今は、どのようにご活躍して、いらっしゃるのでしょうか？）[p]
@@ -148,7 +148,7 @@
 [主人公ポーズ通常]
 [autosave]
 #
-―― 華織様に頂いた手紙からは、霧が晴れたような明るい気持ちが[r]
+――華織様に頂いた手紙からは、霧が晴れたような明るい気持ちが[r]
 [sp]伝わってくる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
@@ -158,14 +158,14 @@
 ;春はどうだろう開店祝いとか。冬は忙しいはず。クリスマスと正月は花屋は忙しい
 ;胸に手を当てるポーズがあったらいいな
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(やはり、こういった時は、お傍について、喜びを共にしたいです）[p]
+（やはり、こういった時は、お傍について、喜びを共にしたいです）[p]
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公横目]
 （磯野に頼んで行ってみようかしら？）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（ですが、お仕事が忙しい時に会いに行ったら、迷惑では、ないでしょう[r]
-[sp]か？）[p]
+（ですが、お仕事が忙しい時に会いに行ったら、迷惑では、[r]
+[sp]ないでしょうか？）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公目閉じ]
@@ -190,7 +190,7 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公伏目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（!……磯野の声だわ。
+（！ ……磯野の声だわ。
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
@@ -235,12 +235,13 @@
 [主人公通常]
 あら、磯野……？」[p]
 [whosay name="磯野" color="dimgray"]
-「あぁ、机の上で寝てしまったのですね……勝手に入って申し訳ございま[r]
-[sp]せん」[p]
+「あぁ、机の上で寝てしまわれたのですね……勝手に入って申し訳ござい[r]
+[sp]ません」[p]
 ;机の上でっていうのが、本当に机の上で？と読む人がいるかもしれない？
 [whosay name="磯野" color="dimgray"]
 「返事がなく、心配して部屋の様子を見てしまいましたら、[r]
-[sp]筆を枕にして、倒れているお嬢様を見つけていまい、慌ててしまい[r]
+[sp]筆を枕にして、倒れているお嬢様を見つけまして、慌ててしまい[r]
+;「しまい」の連続を避けて変更調整しました(◆jsYiJcqRkk
 [sp]ました……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
@@ -248,7 +249,7 @@
 [主人公ポーズ通常]
 [whosay name="磯野" color="dimgray"]
 「お嬢様。お言葉ですが、四条華織様との結納前。とても大事な時期です、[r]
-[sp]お風邪を召されませんようにお気をつけくださりませ」[p]
+[sp]お風邪を召されませんようにお気をつけくださいませ」[p]
 #
 安堵の表情を浮かべた磯野は、私の丈夫な様子をみるなり、お説教を始めだした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -269,7 +270,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目大]
 [主人公ポーズ片手]
-(華織様の手紙だわ！)[p]
+（華織様の手紙だわ！）[p]
 #
 その手紙の上には、品の良い押し花と和紙で作られた華道展のチケットが、[r]
 添えられていた。[p]
@@ -309,7 +310,7 @@
 ;説明：プレイヤー同調と説明
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ指]
-(お父様宛に？ どうしてかしら？ )[p]
+（お父様宛に？ どうしてかしら？ ）[p]
 [主人公ポーズ通常]
 ;説明：後の話の伏線１↑↓説明
 [whosay name="磯野" color="dimgray"]
@@ -320,7 +321,7 @@
 [主人公照れ目普通]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(奥方となられる方……そうだわ……私、華織様と、もうすぐ……)[p]
+（奥方となられる方……そうだわ……私、華織様と、もうすぐ……）[p]
 #
 私は、先ほどの疑問も忘れ、その言葉に顔を赤らめてしまった。[p]
 [主人公横目]
@@ -444,7 +445,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;一方的だなぁ～感じの良いBGM鳴っていれば気にならない？
 華織様のいつもの美しい細い筆跡は、慌てて書かれたような、墨跡が残されている。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様、お忙しい中、急いでお誘いしてくれたのですね)[p]
+（華織様、お忙しい中、急いでお誘いしてくださったのですね）[p]
 #
 [主人公目閉]
 華織様は、私のために兄のような大人らしい立ち振る舞いをして下さる。[r]
@@ -525,8 +526,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公ポーズ通常]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(どなたかお待ちなのかしら？ [r]
-華織様は会場にいらっしゃると思いますし……誰かしら？)[p]
+（どなたかお待ちなのかしら？ [r]
+[sp]華織様は会場にいらっしゃると思いますし……誰かしら？）[p]
 ;ここが違う↓
 #
 はやる気持ちのまま、父の後ろをついて歩いた。[p]
@@ -559,8 +560,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(どなたかお待ちなのかしら？ [r]
-華織様は会場にいらっしゃると思いますし……？)[p]
+（どなたかお待ちなのかしら？ [r]
+[sp]華織様は会場にいらっしゃると思いますし……？）[p]
 #
 ;ここが違う↓
 #
@@ -608,7 +609,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「お兄様！」[p]
 #
 [主人公困りほほえみ]
-久しぶりに一家団欒に戸惑いつつも、私達は、顔をほこらばせた。[p]
+久しぶりに一家団欒に戸惑いつつも、私達は、顔をほころばせた。[p]
 ;母親の設定はわからないから書けない、性格違ってたら教えて下さい くれくれマン
 [fadeoutbgm time=3000]
 #
@@ -635,8 +636,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [playse storage=zawa_room.ogg loop=false ]
 ;賑わう会場の表現
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(結構な人達がいるわ。華織様の作品を見るためにこれだけの方達が[r]
-[sp]来て下さっているのね……)[p]
+（結構な人達がいるわ。華織様の作品を見るためにこれだけの方達が[r]
+[sp]来て下さっているのね……）[p]
 [主人公口ほほえみ]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ほぉ。これはなかなか……生けた花とは、よく言ったものだ」[p]
@@ -677,23 +678,23 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公ポーズ片手]
-(それにしても、こちらの作品は、自然の風景をそのまま切り取ったような[r]
-[sp]情緒あふれる生け方をされているわ)[p]
+（それにしても、こちらの作品は、自然の風景をそのまま切り取ったような[r]
+[sp]情緒あふれる生け方をされているわ）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ指]
 [主人公ふぅ閉]
-(こういった表現は、基本ではあるけれど、とても技術や表現力が必要なのよね)[p]
+（こういった表現は、基本ではあるけれど、とても技術や表現力が必要なのよね）[p]
 ;華道オタクさを半減↓
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公真剣]
-(私も、華織様を支えれるように精進しなくては……!)[p]
+（私も、華織様を支えられるように精進しなくては……！）[p]
 ～～華道パラ普通の場合～～[p]
 [else]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公ほほえみ]
-(本当に、素敵な作品だわ)[p]
+（本当に、素敵な作品だわ）[p]
 #
 私は、華織様が作り出す華道の世界に目を奪われてしまった。[p]
 [endif]
@@ -712,8 +713,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;適当に追加↑
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(こちらは、複数の生け花で、夏の[ruby text=かわず]蛙の跳ねる姿を表現されているの[r]
-[sp]ですね……)[p]
+（こちらは、複数の生け花で、夏の[ruby text=かわず]蛙の跳ねる姿を表現されているの[r]
+[sp]ですね……）[p]
 ;【SE】人々のざわめき（ザワザワ…屋内）
 [playse storage=zawa_room.ogg loop=false ]
 ;～引き立て悪役の登場～
@@ -723,7 +724,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「どうせ親の七光りの賞だろう」[p]
 [主人公真剣]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(この様な素敵な花を見てなんてことをいうのでしょうか……)[p]
+（この様な素敵な花を見てなんてことをいうのでしょうか……）[p]
 ;四条綾花の登場
 [whosay name=四条祖母 color=%mp.color]
 「こんにちは、[名字]様」[p]
@@ -741,7 +742,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [if exp="f.sijyou_sobo==true"]
 [主人公ふぅ閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（何だったのでしょうか……)[p]
+（何だったのでしょうか……）[p]
 #
 ;華織様のお祖母様がゆったりと挨拶をした。[p]
 [主人公口ほほえみ]
@@ -763,7 +764,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;～～～華道パラが高い場合～～[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
-(あの方は、華道の名士の四条綾花様だわ)[p]
+（あの方は、華道の名士の四条綾花様だわ）[p]
 #
 華道の教本でも、お顔を何度か拝見しており、[r]
 園遊会でも、四条家について、詳しくお話をされた方。[p]
@@ -789,7 +790,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公横目]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様は、どこにいらっしゃるのかしら？)[p]
+（華織様は、どこにいらっしゃるのかしら？）[p]
 [whosay name=四条祖母 color=%mp.color]
 「[名前]さん。
 [主人公ポーズ通常]
@@ -856,11 +857,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 壇上の華道家達の厳しい言葉を聞いて、私は華織様の境遇を改めて知った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
-(華織様……今まで[華衣]様のことも背負っていらしゃったのに[r]
-[sp][ruby text=ご]御家業のことも、ずっと悩まれていたのですね)[p]
+（華織様……今まで[華衣]様のことも背負っていらしゃったのに[r]
+[sp][ruby text=ご]御家業のことも、ずっと悩まれていたのですね）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]
-(それなのに、おひとりで立ち向かわれて……努力されて……)[p]
+（それなのに、おひとりで立ち向かわれて……努力されて……）[p]
 [whosay name="先生方"]
 「……それだけに、この受賞展は、僕達も感極まる者があります」[p]
 [主人公ほほえみ]
@@ -877,7 +878,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [sp]悩んでいました」[p]
 [主人公憂い]
 [whosay name="華織" color="olivedrab"]
-「それは、僕の中に弱い部分が、あったのからだと思います」[p]
+「それは、僕の中に弱い部分が、あったからだと思います」[p]
 ;プレイヤー、主人公のことを褒める
 [四条微笑み]
 [whosay name="華織" color="olivedrab"]
@@ -894,10 +895,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「はい……」[p]
 [四条微笑み]
 #
-―― 華織様の視線が、私のことを密やかに射抜く。[p]
+――華織様の視線が、私のことを密やかに射抜く。[p]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-( 華織さま？！)[p]
+（ 華織さま？！）[p]
 #
 数人の勘の良い来場者は、チラリと私を見つめた。[p]
 ;主人公困り照れ
@@ -909,7 +910,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公眉下げ]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(……)[p]
+（……）[p]
 ;主人公、華織の冗談でかわした配慮にほほえましく思う
 [主人公照れ目普通]
 [四条困り微笑み]
@@ -924,11 +925,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;主人公慣れて、ほほえましく思う　少し大人
 [主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様ったら。一時は、恥ずかしさでどうなるかと思いましたわ)[p]
+（華織様ったら。一時は、恥ずかしさでどうなるかと思いましたわ）[p]
 [主人公ほほえみ]
 [四条微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(けど、華織様は、これからは、きっと大丈夫ですね)[p]
+（けど、華織様は、これからは、きっと大丈夫ですね）[p]
 [主人公目閉]
 [暗転２]
 [主人公通常]
@@ -1009,12 +1010,12 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、お正月のお手紙には、[r]
-[sp]『[名前]のお父様と会いました』と書いてありましたが)[p]
+[sp]『[名前]のお父様と会いました』と書いてありましたが）[p]
 [主人公憂い]
 [四条真剣]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そうですわよね。[r]
-[sp]自由にお出掛けを許してもらう事だけでは、ないですわよね……)[p]
+（そうですわよね。[r]
+[sp]自由にお出掛けを許してもらう事だけでは、ないですわよね……）[p]
 [主人公ポーズ通常]
 ;主人公柔
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -1098,13 +1099,13 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 昔のように。[r]
 けれども、少し変化が訪れた友情の間に幸せな笑い声が溢れる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(もう。お兄様ったら……)[p]
+（もう。お兄様ったら……）[p]
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ですが、本当にさり気なく気を遣って頂いてくださる……[r]
-[sp]私は、そんなお兄様のことを誇らしくも尊敬しております)[p]
+（ですが、本当にさり気なく気を遣って頂いてくださる……。[r]
+[sp]私は、そんなお兄様のことを誇らしくも尊敬しております）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(お兄様が華織様の友人で、お兄様が私の兄で、本当に良かった)[p]
+（お兄様が華織様の友人で、お兄様が私の兄で、本当に良かった）[p]
 #
 強さを秘めた幸せは、周囲の人を幸せにするのかもしれない。[r]
 私は、お二人の笑顔を見ながらひっそりと考えた。[p]
