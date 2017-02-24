@@ -289,6 +289,11 @@ $("kan").css('margin','auto');
 [葛城宮ルート終了 end="normal"]
 @jump storage="event.ks" target=*event_ED
 [endif]
+[endreplay]
+[if exp="tf.replay_mode==true"]
+@jump storage=replay.ks
+[endif]
+
 @jump storage="test_katuragi.ks"
 [s]
 
