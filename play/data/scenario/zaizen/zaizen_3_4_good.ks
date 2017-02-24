@@ -337,6 +337,7 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;====================================================================================
 ;終わり
+[endreplay]
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
@@ -345,8 +346,7 @@ $("kan").css('margin','auto');
 [endif]
 [イベントシーン終了]
 
-[if exp="tf.replay_mode==true"]
-[endreplay]
+[if exp="tf.replay==true"]
 @jump storage=replay.ks
 [endif]
 @jump storage="test_zaizen.ks"
