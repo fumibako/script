@@ -1,4 +1,6 @@
+[setreplay name="replay_sijyou_10_3badED_scene" storage="sijyou/sijyou_10_3_badED.ks" target="start"]
 *replay_sijyou_10_3badED
+*replay_sijyou_10_3badED_scene
 *start
 ;¥¥¥¥¥¥¥¥イベントバッド_イベント5.5手紙イベントバット¥¥¥¥¥¥¥¥
 ;○数日後手紙がかえってくる
