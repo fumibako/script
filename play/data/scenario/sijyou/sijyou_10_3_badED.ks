@@ -106,6 +106,8 @@
 [四条ルート終了 end=bad]
 [endif]
 [イベントシーン終了]
+;回想記録終了
+[endreplay] 
 @jump storage="test_sijyou.ks"
 [s]
 
