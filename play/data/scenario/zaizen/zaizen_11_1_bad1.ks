@@ -1,5 +1,5 @@
 ;財前badについては、回想時にもっと前のシーンから再生させるかどうか考え中です。今のところbad分岐以降を回想可能としています(スクリプト担
-[setreplay name="replay_zaizen_11_1_bad1_scene" storage="zaizen_11_1_bad1.ks" target="start"]
+[setreplay name="replay_zaizen_11_1_bad1_scene" storage="zaizen/zaizen_11_1_bad1.ks" target="start"]
 *start
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
@@ -232,6 +232,8 @@
 ;bad終了
 ;================================================================================================
 [イベントシーン終了]
+;回想記録終了
+[endreplay] 
 [財前ルート終了 end="bad2"]
 @jump storage="test_zaizen.ks"
 [s]
