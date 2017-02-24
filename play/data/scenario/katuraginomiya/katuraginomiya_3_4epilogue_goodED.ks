@@ -1,6 +1,7 @@
 ;goodエンドエピローグ
 =======================お芝居の準備中です==================================
 *replay_katuraginomiya_3_4epilogue_goodED
+*start
 [stopbgm]
 [if exp="tf.test_katuraginomiya==true"]
 [eval exp="tf.okeiko_gamen=true"]
@@ -389,7 +390,7 @@ $("kan").css('margin','auto');
 ;画面中央に「完」の文字
 [sp]　  完[p]
 ;===============================================================
-
+[endreplay]
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
@@ -401,6 +402,11 @@ $("kan").css('margin','auto');
 
 [イベントシーン終了]
 [fadeoutbgm time=3000]
+
+[if exp="tf.replay_mode==true"]
+@jump storage=replay.ks
+[endif]
+
 @jump storage="test_katuragi.ks"
 [s]
 
