@@ -344,6 +344,11 @@ $("kan").css('margin','auto');
 @jump storage="event.ks" target=*event_ED
 [endif]
 [イベントシーン終了]
+
+[if exp="tf.replay_mode==true"]
+[endreplay]
+@jump storage=replay.ks
+[endif]
 @jump storage="test_zaizen.ks"
 [s]
 
