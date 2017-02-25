@@ -309,7 +309,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;===============================================================
 [font color=white size=27]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image name=end layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 ;===============================================================
 幸せは信じれば巡ってくる。[r]
@@ -336,7 +336,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [if exp="tf.flag_replay==true"]
 [freeimage layer=29]
 @layopt layer=29 visible=true
-;@jump storage=replay.ks
+@jump storage=replay.ks
 [endif]
 ;回想記録終了
 [endreplay]
