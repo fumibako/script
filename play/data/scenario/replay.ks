@@ -19,7 +19,9 @@
     tf.selected_replay_obj = ""; //選択されたリプレイを一時的に保管
     
 [endscript]
-
+[iscript]
+$(".layer_free").css("display", "none");
+[endscript]
 
 
 *replaypage
