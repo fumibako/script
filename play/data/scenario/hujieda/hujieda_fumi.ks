@@ -40,7 +40,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
-	;[eval exp="f.midoku_list_hairetsu[4][1] = 0;"]
+	;[eval exp="f.midoku_list_hairetsu[4][1] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -82,7 +82,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
-	;[eval exp="f.midoku_list_hairetsu[4][2] = 0;"]
+	;[eval exp="f.midoku_list_hairetsu[4][2] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -125,7 +125,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
-	;[eval exp="f.midoku_list_hairetsu[4][3] = 0;"]
+	;[eval exp="f.midoku_list_hairetsu[4][3] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -174,7 +174,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
-	;[eval exp="f.midoku_list_hairetsu[4][4] = 0;"]
+	;[eval exp="f.midoku_list_hairetsu[4][4] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -218,7 +218,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
-	;[eval exp="f.midoku_list_hairetsu[4][5] = 0;"]
+	;[eval exp="f.midoku_list_hairetsu[4][5] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -272,7 +272,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
-	;[eval exp="f.midoku_list_hairetsu[4][6] = 0;"]
+	;[eval exp="f.midoku_list_hairetsu[4][6] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -319,7 +319,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][7] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][7] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -364,7 +364,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][8] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][8] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -406,7 +406,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][9] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][9] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -450,7 +450,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][10] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][10] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -496,7 +496,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][11] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][11] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -532,7 +532,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][12] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][12] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -573,7 +573,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][13] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][13] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -614,7 +614,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][14] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][14] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -655,7 +655,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][15] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][15] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -693,7 +693,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][16] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][16] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -732,7 +732,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][17] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][17] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -770,7 +770,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][18] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][18] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -805,7 +805,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][19] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][19] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -844,7 +844,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][20] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][20] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -882,7 +882,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][21] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][21] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -922,7 +922,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][22] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][22] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -963,7 +963,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][23] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][23] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -998,7 +998,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][24] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][24] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -1033,7 +1033,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  [eval exp="f.midoku_list_hairetsu[4][25] = 0;"]
+  [eval exp="f.midoku_list_hairetsu[4][25] = 0"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -1097,6 +1097,7 @@
 ;=============================================
 ;『さつきについて』
 ;=============================================
+*fumi_satuki
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『さつきについて』[p]
@@ -1116,6 +1117,13 @@
 [sp]貴方様も花はお好きですか？[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
+  [eval exp="f.midoku_list_hairetsu[4][27] = 0"]
+   [freeimage layer = 29]
+   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
 ;=============================================
@@ -1123,6 +1131,7 @@
 ;=============================================
 ;『新茶について』
 ;=============================================
+*fumi_sintya
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『新茶について』[p]
@@ -1145,6 +1154,14 @@
 [sp]貴方様もお茶を好まれるのでしょうか？[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[endif]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
+  [eval exp="f.midoku_list_hairetsu[4][26] = 0"]
+   [freeimage layer = 29]
+   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
 [イベントシーン終了]
