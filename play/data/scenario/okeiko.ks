@@ -290,6 +290,12 @@ f.katuraginomiya_fumi_toutyakumachi_dokusho = f.katuraginomiya_fumi_toutyakumach
 if (f.katuraginomiya_fumi_toutyakumachi_sports > 0){
 f.katuraginomiya_fumi_toutyakumachi_sports = f.katuraginomiya_fumi_toutyakumachi_sports - 1;
 }
+if (f.katuraginomiya_fumi_toutyakumachi_sintya > 0){
+f.katuraginomiya_fumi_toutyakumachi_sintya = f.katuraginomiya_fumi_toutyakumachi_sintya - 1;
+}
+if (f.katuraginomiya_fumi_toutyakumachi_satuki > 0){
+f.katuraginomiya_fumi_toutyakumachi_satuki = f.katuraginomiya_fumi_toutyakumachi_satuki - 1;
+}
 //散策イベント2(時子さん)を見ている場合に手紙到着週数カウント減算
 if (f.katuraginomiya_fumi_inou > 0){
 f.katuraginomiya_fumi_inou = f.katuraginomiya_fumi_inou - 1;
@@ -349,6 +355,13 @@ f.hujieda_fumi_toutyakumachi_dokusho = f.hujieda_fumi_toutyakumachi_dokusho - 1;
 if (f.hujieda_fumi_toutyakumachi_sports > 0){
 f.hujieda_fumi_toutyakumachi_sports = f.hujieda_fumi_toutyakumachi_sports - 1;
 }
+if (f.hujieda_fumi_toutyakumachi_sintya > 0){
+f.hujieda_fumi_toutyakumachi_sintya = f.hujieda_fumi_toutyakumachi_sintya - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_satuki > 0){
+f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
+}
+
 
 [endscript]
 
@@ -356,10 +369,16 @@ f.hujieda_fumi_toutyakumachi_sports = f.hujieda_fumi_toutyakumachi_sports - 1;
 
 ;週始めを示す変数に1を代入(0=週始め以外を示す)
 [eval exp="f.okeikopart_shuuhajime=1"]
+
 ;◆「休憩中」画像切り替え
+;9月1～2週休憩中は表示せず飛ばす
+[if exp="(f.okeiko_month == 9 && (f.okeiko_week == 1 || f.okeiko_week == 2)) && f.event_weekend == 1"]
+@jump target=*qk_gazou_owari3
+[endif]
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
 [image layer=26 x=334 y=155 storage="button/qk_anim03.png"]
+*qk_gazou_owari3
 
 [if exp="f.tukihajime == 1"]
 ;◆「休憩中」画像消去

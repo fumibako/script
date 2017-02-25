@@ -63,9 +63,12 @@
 [chara_new name="bg" storage="bg/bg_okeiko_main.jpg"]
 [chara_show left=1 top=1 layer=1 name="bg" time=1]
 [wait time=10]
+
+
 ;◆「休憩中」画像表示
 [layopt layer=26 visible=true]
 [image layer=26 x=334 y=155 storage="button/qk_anim01.png"]
+*qk_gazou_owari
 
 ;主人公L画像仮表示【登場時にchara_new使用。後はマクロで切り替え】
 [chara_new name="A_base" storage="toumei.gif"]

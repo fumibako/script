@@ -59,23 +59,9 @@
 
 ;攻略対象名ルート(1○,0×)=[emb exp="f.oaite_name_au"],お見合い(1後,0未)=[emb exp="f.oaite_name_omiai"][r]
 
-[if exp="tf.mode_hensu==0"]
-;フラグで表示します
-,　変数編集モードＯＮ:
-[if exp="tf.mode_hensu_yes==1"]
-利用済
-[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="150" x=750 y=470 color=pink]
-[else]
-[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="150" x=750 y=470 color=white]
-[endif]
-[endif]
-
 [resetfont]
 
-
 @jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
-
-
 
 ;◆テストメニューへ戻る
 *back_test
@@ -89,15 +75,15 @@
 [eval exp = "tf.test_hujieda_fumi_hensin_speed = 1"]
 [eval exp = "tf.event_hyouji = 1"]
 [eval exp = "tf.advice_event_hyouji = 1"]
-[eval exp = tf.mode_hensu_yes = 0"]
 
-[ct]
+[cm]
 [clearfix]
 [clearstack]
 [skipstop]
 [stopse]
 @layopt layer=message0 page=fore visible = false
 @layopt layer=message1 page=fore visible = false
+@layopt layer=message2 page=fore visible = false
 
 ;◆全レイヤクリア
 [freeimage layer = 0]

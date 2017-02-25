@@ -56,6 +56,7 @@
 「はい」[r]
 jumpします。[p]
 [cm]
+[イベント中テスト数値表示]
 @jump target=*if_bunki
 [s]
 
@@ -64,6 +65,7 @@ jumpします。[p]
 「いいえ」[r]
 最初からはじめます。[p]
 [cm]
+[イベント中テスト数値表示]
 [endif]
 
 ;【SE】鈴虫の音
@@ -409,8 +411,12 @@ jumpします。[p]
 「誰に会うか、決めたかね？」[p]
 
 #
-[if exp="f.common_9_1_ninzuu == 1"]
+;週終わりのイベントであることを示す変数に1を代入
+[eval exp="f.event_weekend = 1"]
+[if exp="f.common_9_1_ninzuu == 1 && f.event_hujieda[5] != 1"]
 お会いしましょう。
+[elsif exp="f.common_9_1_ninzuu == 1 && f.event_hujieda[5] == 1"]
+お会いしましょうか？
 [else]
 どなたとお会いしましょうか？
 [endif]

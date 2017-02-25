@@ -87,10 +87,10 @@ TG.stat.stack["call"] = [];
 
 ;◆イベント　終
 *event_owari
-[skipstop]
-#
 [freeimage layer = 26]
 [freeimage layer = 27]
+[skipstop]
+#
 [主人公退場]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif"]
@@ -110,6 +110,13 @@ TG.stat.stack["call"] = [];
 [if exp="f.okeiko_month == 9 && f.okeiko_week == 4 && f.sijyou_au == 1"]
 @jump storage="okeiko.ks" target=*okeiko_qk_shori
 [endif]
+;◆9月1週、週終わりに発生した場合は休憩処理続き(休憩中画像非表示)へjump
+[if exp="f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_weekend == 1"]
+[eval exp="f.event_weekend == 0"]
+@jump storage="okeiko.ks" target=*okeiko_qk_shori
+[endif]
+
+
 ;◆6月4週はイベント被りの可能性があるため(黒田、藤枝)再度イベント発生チェックへjump
 [if exp="f.okeiko_month == 6 && f.okeiko_week == 4"]
 @jump storage="event_hantei_week_hajime.ks"
