@@ -130,7 +130,10 @@
 *backpage
 [emb exp="tf.page--;"]
 [freeimage layer=2]
+[freeimage layer=1]
 @layopt layer=2 visible=false
+@clearfix
+@layopt layer=fix visible=true
 [clearstack]
 @jump target="*replaypage"
 
