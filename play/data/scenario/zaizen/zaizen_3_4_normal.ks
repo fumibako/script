@@ -616,7 +616,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image name=end layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;一瞬裏がみえるの防止背景
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 ;===============================================================
