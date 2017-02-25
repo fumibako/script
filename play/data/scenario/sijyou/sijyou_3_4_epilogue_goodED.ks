@@ -13,6 +13,12 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+
+[if exp="f.flag_replay==true"]
+@layopt layer=1 visible=true
+[chara_show name="bg"]
+[endif]
+
 ;【背景】ﾌﾟﾛﾛーｸﾞ　一瞬見える
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [eval exp="f.haikei_credit=' '"]
