@@ -105,6 +105,8 @@
 *backtitle
 [back storage="toumei.gif" time=1]
 [cm]
+[freeimage layer=1]
+@layopt layer=1 visible=true
 [freeimage layer=2]
 @clearfix
 [clearstack]
