@@ -110,8 +110,9 @@
 [back storage="toumei.gif" time=1]
 [cm]
 [freeimage layer=1]
-@layopt layer=1 visible=true
 [freeimage layer=2]
+@layopt layer=2 visible=true
+@layopt layer=1 visible=true
 @clearfix
 [clearstack]
 [iscript]
@@ -121,17 +122,17 @@
 
 *nextpage
 [emb exp="tf.page++;"]
+[clearstack]
 [freeimage layer=2]
 @layopt layer=2 visible=false
-[clearstack]
 @jump target="*replaypage"
 
 
 *backpage
 [emb exp="tf.page--;"]
+[clearstack]
 [freeimage layer=2]
 @layopt layer=2 visible=false
-[clearstack]
 @jump target="*replaypage"
 
 *clickcg
@@ -139,9 +140,9 @@
 [stopbgm]
 [cm]
 [freeimage layer = 2]
-@layopt layer=2 visible=true
-;リプレイで表示されない↑修正
 [freeimage layer = 1]
+;リプレイで表示されない修正
+@layopt layer=2 visible=true
 @layopt layer=1 visible=true
 @layopt layer=0 visible=true
 ;リプレイで表示されない↑修正
