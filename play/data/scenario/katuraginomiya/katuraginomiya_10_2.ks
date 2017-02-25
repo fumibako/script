@@ -83,6 +83,7 @@
 [eval exp="sf.FButton='ON'"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [cm]
+[イベント中テスト数値表示]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 *seen2
 #

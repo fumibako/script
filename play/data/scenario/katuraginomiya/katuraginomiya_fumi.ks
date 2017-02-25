@@ -102,7 +102,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][2] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][2] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -137,7 +137,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][3] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][3] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -178,7 +178,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][4] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][4] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -218,7 +218,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][5] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][5] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -253,7 +253,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][6] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][6] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -285,7 +285,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][7] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][7] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -318,7 +318,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][8] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][8] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -353,7 +353,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][9] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][9] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -388,7 +388,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][10] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][10] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -421,7 +421,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][11] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][11] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -456,7 +456,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][12] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][12] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -488,7 +488,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][13] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][13] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -522,7 +522,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][14] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][14] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -555,7 +555,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][15] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][15] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -587,7 +587,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][16] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][16] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -621,7 +621,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][17] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][17] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -653,7 +653,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][18] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][18] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -686,7 +686,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][19] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][19] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -718,7 +718,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][20] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][20] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -752,7 +752,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][21] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][21] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -785,7 +785,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][22] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][22] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -820,7 +820,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][23] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][23] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -856,7 +856,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][24] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][24] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -905,7 +905,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][25] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][25] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -957,7 +957,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][26] = 0;"]
+	[eval exp="f.midoku_list_hairetsu[3][26] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1333,7 +1333,7 @@
 ;=============================================
 ;『さつきについて』
 ;=============================================
-;*fumi_toutyaku_katuraginomiya_28
+*fumi_satuki
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『さつきについて』[p]
@@ -1343,7 +1343,7 @@
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお変わりなくお過ごしであろうか？[r]
-[sp]先日は便りを感謝する[r]
+[sp]先日は便りを感謝する。[r]
 [r]
 [sp]さつきというのも色鮮やかでいいな。[r]
 [sp]さつきには蜜が含まれている事を知っているか？[r]
@@ -1358,7 +1358,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	;[eval exp="f.midoku_list_hairetsu[3][28] = 0;"]配列設定
+	[eval exp="f.midoku_list_hairetsu[3][28] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1369,7 +1369,7 @@
 ;=============================================
 ;『新茶について』
 ;=============================================
-;*fumi_toutyaku_katuraginomiya_29
+*fumi_sintya
 [if exp="tf.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『新茶について』[p]
@@ -1394,7 +1394,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="tf.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	;[eval exp="f.midoku_list_hairetsu[3][29] = 0;"]配列設定
+	[eval exp="f.midoku_list_hairetsu[3][27] = 0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
