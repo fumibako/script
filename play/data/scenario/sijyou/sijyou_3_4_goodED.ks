@@ -71,7 +71,7 @@
 [endif]
 
 #
-[if exp="tf.flag_replay == true"]
+[if exp="f.flag_replay == true"]
 リプレイモードです[p]
 [endif]
 
@@ -337,7 +337,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [sp]　　　　完[p]
 [イベントシーン終了]
 ;回想下までいってしまいます
-[if exp="tf.flag_replay == true"]
+[if exp="f.flag_replay == true"]
 [freeimage layer=29]
 @layopt layer=29 visible=true
 ;@jump storage=replay.ks
