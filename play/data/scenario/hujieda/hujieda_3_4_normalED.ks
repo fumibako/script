@@ -12,6 +12,12 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
+
+[if exp="f.flag_replay==true"]
+@layopt layer=1 visible=true
+[chara_show name="bg"]
+[endif]
+
 ;【背景】たんぽぽ公園
 [chara_mod name="bg" storage="bg/hujieda_tanpopo_kouen.jpg"]
 [eval exp="f.haikei_credit=''"]
