@@ -121,6 +121,7 @@ $('.end').remove();
 [clearstack]
 [iscript]
     tf.flag_replay = false;
+    f.flag_replay = false;
 [endscript]
 @jump storage=title.ks
 
@@ -186,6 +187,7 @@ TG.stat.play_se = true;
 
 [iscript]
     tf.flag_replay = true;
+    f.flag_replay = true;
 [endscript]
 
 
