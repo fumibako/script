@@ -390,7 +390,16 @@ $("kan").css('margin','auto');
 ;画面中央に「完」の文字
 [sp]　  完[p]
 ;===============================================================
+[if exp="f.flag_replay==true"]
+;@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
 [endreplay]
+
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
