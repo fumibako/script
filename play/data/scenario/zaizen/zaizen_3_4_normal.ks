@@ -642,9 +642,13 @@ $("kan").css('margin','auto');
 [財前ルート終了 end="normal"]
 @jump storage="event.ks" target=*event_ED
 [endif]
+
 [if exp="tf.flag_replay==true"]
+[freeimage layer=29]
+@layopt layer=29 visible=true
 @jump storage=replay.ks
 [endif]
+
 @jump storage="test_zaizen.ks"
 [s]
 
