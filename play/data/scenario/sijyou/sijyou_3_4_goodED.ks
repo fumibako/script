@@ -336,7 +336,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [if exp="tf.flag_replay==true"]
 [freeimage layer=29]
 @layopt layer=29 visible=true
-@jump storage=replay.ks
+;@jump storage=replay.ks
 [endif]
 ;回想記録終了
 [endreplay]
