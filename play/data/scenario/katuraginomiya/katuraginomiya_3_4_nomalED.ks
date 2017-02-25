@@ -284,14 +284,22 @@ $("kan").css('margin','auto');
 ;=============================================================
 
 [イベントシーン終了]
+
+[if exp="f.flag_replay==true"]
+;@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
+;ifからだしておいてください
+[endreplay]
+
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました。マクロの動作がうまくいかない場合にまた変更する可能性があります(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
 [葛城宮ルート終了 end="normal"]
 @jump storage="event.ks" target=*event_ED
-[endif]
-[endreplay]
-[if exp="tf.flag_replaye==true"]
-@jump storage=replay.ks
 [endif]
 
 @jump storage="test_katuragi.ks"
