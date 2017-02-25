@@ -140,8 +140,8 @@
 [cm]
 [freeimage layer = 2]
 [freeimage layer = 1]
-@clearfix
-@layopt layer=fix visible=true
+;@clearfix
+;@layopt layer=fix visible=true
 [if exp="sf.BGM=='OFF'"]
 [iscript]
 /*BGMを再生しない*/
