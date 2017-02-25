@@ -27,8 +27,15 @@
 *replaypage
 [cm]
 ;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていいと思いますが置いてあります
-[button fix=true graphic="button_tugi.png" target="*nextpage" x=820 y=100]
+[if exp="tf.page == 0"]
+[button name=next fix=true graphic="button_tugi.png" target="*nextpage" x=820 y=100]
 ;↑次へのﾎﾞﾀﾝです
+[else]
+[iscript]
+$('.next').remove();
+[endscript]
+[endif]
+
 [button fix=true graphic="button_modoru.png" target="*backpage" x=820 y=200]
 ;↑戻るのボタンです
 [button fix=true graphic="back.png" target="*backtitle" x=870 y=20 ]
