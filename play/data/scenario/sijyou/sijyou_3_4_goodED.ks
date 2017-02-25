@@ -331,16 +331,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
 [if exp="f.flag_replay==true"]
-あああ
 [freeimage layer=29]
 @layopt layer=29 visible=true
 ;@jump storage=replay.ks
-
+[endif]
 [イベントシーン終了]
 ;回想下までいってしまいます
-
-
-
 ;回想記録終了
 [endreplay]
 
