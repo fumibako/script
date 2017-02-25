@@ -520,14 +520,18 @@ $("kan").css('margin','auto');
 ;[eval exp="sf.FButton='ON'"]
 ;[cm]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
+
+[if exp="f.flag_replay==true"]
+[イベントシーン終了]
+;@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
 ;回想シーン戻る処理
 [endreplay]
-[if exp="tf.flag_replay==true"]
-[イベントシーン終了]
-[freeimage layer=29]
-@layopt layer=29 visible=true
-@jump storage=replay.ks
-[endif]
 
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
