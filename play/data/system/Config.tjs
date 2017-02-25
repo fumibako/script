@@ -189,7 +189,7 @@ function KAGWindow_config()
 // ◆ 初期状態のメッセージレイヤの数
 // 前景レイヤと違って、0 を指定することはできません。これも必要な数だけ確保
 // するようにすべきです。laycount タグでシナリオ内でも変更できます。
-;numMessageLayers = 2;
+;numMessageLayers = 3;
 
 
 // ◆ 初期状態でメッセージレイヤを表示するかどうか
