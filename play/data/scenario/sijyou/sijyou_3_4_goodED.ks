@@ -99,7 +99,7 @@ $('.saku3').remove();
 [whosay name="四条親戚" color="#807070"]
 「きっと貴方にも巡り会えますよ。 華衣さんにも大事な人が 」[p]
 ;散策４を見ている場合
-[if exp="f.event_machi_sijyou[4]==1"]
+[if exp="f.event_sijyou_4==1"]
 [whosay name="四条親戚" color="#807070"]
 「お二人を見て、そう思うなら、きっと」[p]
 [whosay name="華衣" color=%mp.color]
