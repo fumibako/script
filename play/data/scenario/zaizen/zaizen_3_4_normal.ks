@@ -636,18 +636,25 @@ $("kan").css('margin','auto');
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 
 [イベントシーン終了]
+
+[if exp="f.flag_replay==true"]
+@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
+;↓ifからだしておいてください↓
 [endreplay]
+
 ;◆normalED終了処理へ
 [if exp="tf.okeiko_gamen==true"]
 [財前ルート終了 end="normal"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 
-[if exp="tf.flag_replay==true"]
-[freeimage layer=29]
-@layopt layer=29 visible=true
-@jump storage=replay.ks
-[endif]
+
 
 @jump storage="test_zaizen.ks"
 [s]
