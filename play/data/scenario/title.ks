@@ -23,6 +23,8 @@
 [eval exp="tf.test_gamen=false"]
 [eval exp="tf.okeiko_gamen=false"]
 [eval exp="tf.advice_event_hyouji=1"]
+[eval exp="tf.advice_event_hyouji=1"]
+[eval exp="f.flag_replay=false"]
 
 [hidemenubutton]
 
