@@ -24,9 +24,10 @@
 
 *replaypage
 ;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていいと思いますが置いてあります
-;[button graphic="nextpage.gif" target="*nextpage" x=300 y=20]
+[button fix=true graphic="button_tugi.png" target="*nextpage" x=300 y=20]
+[button fix=true graphic="button_modoru.png" target="*backpage" x=400 y=20]
 ;↑次へのﾎﾞﾀﾝです。使用時は↑↓をfix=trueにして[cm]で他のボタンを消してください. ラベルbacktitle でclearfix
-[button graphic="back.png" target="*backtitle" x=870 y=20 ]
+[button fix=true graphic="back.png" target="*backtitle" x=870 y=20 ]
 
 [iscript]
 	tf.target_page = "page_"+tf.page;
@@ -102,8 +103,10 @@
 [back storage="toumei.gif" time=1]
 [cm]
 [freeimage layer=2]
-;clearfix
-;[eval exp="tf.flag_replay=false"]
+@clearfix
+[iscript]
+    tf.flag_replay = false;
+[endscript]
 @jump storage=title.ks
 
 *nextpage
