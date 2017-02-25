@@ -10,8 +10,8 @@
 [cm]
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
-[layopt layer=1 visible=true]
-[ptext layer=1 page=fore text="思ひ出　(Ending List)" x=20 y=20 size=26 color=0xA8401C visible=true]
+[layopt layer=3 visible=true]
+[ptext layer=3 page=fore text="思ひ出　(Ending List)" x=20 y=20 size=26 color=0xA8401C visible=true]
 
 [iscript]
     
@@ -109,7 +109,7 @@
 *backtitle
 [back storage="toumei.gif" time=1]
 [cm]
-[freeimage layer=1]
+[freeimage layer=3]
 [freeimage layer=2]
 @layopt layer=2 visible=true
 @layopt layer=1 visible=true
@@ -140,10 +140,10 @@
 [stopbgm]
 [cm]
 [freeimage layer = 2]
-[freeimage layer = 1]
+[freeimage layer = 3]
 ;リプレイで表示されない修正
 @layopt layer=2 visible=true
-@layopt layer=1 visible=true
+@layopt layer=3 visible=true
 @layopt layer=0 visible=true
 ;リプレイで表示されない↑修正
 
