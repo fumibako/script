@@ -17,6 +17,12 @@
 ;↓normalから続けて再生時のjump先ラベルです
 *seen_1
 [call target=*3_4_goodED storage="hujieda/preload_hujieda.ks"]
+
+[if exp="f.flag_replay==true"]
+@layopt layer=1 visible=true
+[chara_show name="bg"]
+[endif]
+
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 ;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
