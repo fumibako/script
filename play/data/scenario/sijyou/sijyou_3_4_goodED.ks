@@ -332,6 +332,12 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
 [イベントシーン終了]
+;回想下までいってしまいます
+[if exp="tf.flag_replay==true"]
+[freeimage layer=29]
+@layopt layer=29 visible=true
+;@jump storage=replay.ks
+[endif]
 ;回想記録終了
 [endreplay]
 
@@ -347,12 +353,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [s]
 [endif]
 
-;回想下までいってしまいます
-[if exp="tf.flag_replay==true"]
-[freeimage layer=29]
-@layopt layer=29 visible=true
-@jump storage=replay.ks
-[endif]
+
 
 
 *window_close
