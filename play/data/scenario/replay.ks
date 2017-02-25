@@ -139,9 +139,16 @@
 [stopbgm]
 [cm]
 [freeimage layer = 2]
+@layopt layer=2 visible=true
+;リプレイで表示されない↑修正
 [freeimage layer = 1]
+@layopt layer=1 visible=true
+;リプレイで表示されない↑修正
+
+;追加しましたが、なくてもボタンは消されるようです↓
 ;@clearfix
 ;@layopt layer=fix visible=true
+
 [if exp="sf.BGM=='OFF'"]
 [iscript]
 /*BGMを再生しない*/
