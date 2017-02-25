@@ -337,7 +337,18 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;====================================================================================
 ;終わり
+[if exp="f.flag_replay==true"]
+[イベントシーン終了]
+@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
+;↓ifからだしておいてください↓
 [endreplay]
+
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
@@ -346,10 +357,8 @@ $("kan").css('margin','auto');
 [endif]
 [イベントシーン終了]
 
-[if exp="tf.flag_replay==true"]
-[イベントシーン終了]
-@jump storage=replay.ks
-[endif]
+
+
 @jump storage="test_zaizen.ks"
 [s]
 
