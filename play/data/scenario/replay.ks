@@ -9,9 +9,6 @@
 ;テスト画面に戻るためフラグ作成
 [eval exp="f.flag_replay=true"]
 [endif]
-[iscript]
-$('.1_fore"').remove();
-[endscript]
 [cm]
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
