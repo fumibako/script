@@ -145,8 +145,18 @@ $("kan").css('margin','auto');
 ;スマホで音楽がぶちときれるのはどうしようもない 
 ;===============================================================
 [イベントシーン終了]
+
+[if exp="f.flag_replay==true"]
+;@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
 ;◆回想記録
 [endreplay]
+
 [if exp="tf.okeiko_gamen==true"]
 [藤枝ルート終了 end="bad"]
 [endif]
