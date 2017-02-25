@@ -232,8 +232,18 @@
 ;bad終了
 ;================================================================================================
 [イベントシーン終了]
+
+[if exp="f.flag_replay==true"]
+;@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
 ;回想記録終了
 [endreplay] 
+
 [財前ルート終了 end="bad2"]
 @jump storage="test_zaizen.ks"
 [s]
