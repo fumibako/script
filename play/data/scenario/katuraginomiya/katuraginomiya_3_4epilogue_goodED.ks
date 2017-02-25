@@ -15,6 +15,12 @@
 ;↓normalから続けて再生時のjump先ラベルです
 *seen_1
 [call target=3_4epilogue_goodED storage="katuraginomiya/preload_katuraginomiya.ks"]
+
+[if exp="f.flag_replay==true"]
+@layopt layer=1 visible=true
+[chara_show name="bg"]
+[endif]
+
 ;【背景】玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
