@@ -10,7 +10,7 @@
 [eval exp="f.flag_replay=true"]
 [endif]
 [iscript]
-$('.end').remove();
+$('.1_fore"').remove();
 [endscript]
 [cm]
 
