@@ -298,8 +298,18 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;ノーマルここまで
 [イベントシーン終了]
+
+[if exp="f.flag_replay==true"]
+;@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
 ;◆回想記録 
 [endreplay]
+
 ;◆normalED終了処理へ
 [if exp="tf.okeiko_gamen==true"]
 [藤枝ルート終了 end="normal"]
