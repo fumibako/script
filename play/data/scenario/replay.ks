@@ -92,7 +92,7 @@
 [else]
 [ptext layer=2 page=fore text="？ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="？ルート　:　goodEND" x=300 y=380 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="？ルート　:　badEND" x=550 y=380 size=17 color=navy visible=true]
+[ptext layer=2 page=fore text="？ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
 [endif]
 
 @jump target ="*common"
