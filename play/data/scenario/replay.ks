@@ -3,6 +3,7 @@
 ;=========================================
 *start
 ;@layopt layer=message0 visible=false
+;※レイヤー１を一度でも消すとvisible=trueにしても戻せない？
 @clearfix
 [hidemenubutton]
 ;テスト画面に戻るためフラグ作成
@@ -147,9 +148,9 @@
 @layopt layer=0 visible=true
 ;リプレイで表示されない↑修正
 
-;追加しましたが、なくてもボタンは消されるようです↓
-;@clearfix
-;@layopt layer=fix visible=true
+;追加しましたが、なくてもボタンは消されるようです・・・リプレイ中にセーブされても困ることに気づく
+@clearfix
+@layopt layer=fix visible=true
 
 [if exp="sf.BGM=='OFF'"]
 [iscript]
