@@ -334,7 +334,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [freeimage layer=29]
 @layopt layer=29 visible=true
 [iscript]
-$('.1_fore"').remove();
+$('.1_fore').remove();
 [endscript]
 @layopt layer=1 visible=true
 ;@jump storage=replay.ks
