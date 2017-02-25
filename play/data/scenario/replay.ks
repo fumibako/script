@@ -70,6 +70,9 @@ $(".layer_free").hide();
 @jump target ="*common"
 
 *page_1
+[iscript]
+$(".layer_free").hide();
+[endscript]
 [replay_image_button name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
@@ -101,9 +104,9 @@ $(".layer_free").hide();
 
 
 *common
-[iscript]
-$(".layer_free").show();
-[endscript]
+;[iscript]
+;$(".layer_free").show();
+;[endscript]
 @layopt layer=2 visible=true
 [s]
 
