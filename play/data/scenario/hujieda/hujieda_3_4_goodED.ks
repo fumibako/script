@@ -520,12 +520,21 @@ $("kan").css('margin','auto');
 ;[eval exp="sf.FButton='ON'"]
 ;[cm]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
+;回想シーン戻る処理
 [endreplay]
+[if exp="tf.flag_replay==true"]
+[イベントシーン終了]
+[freeimage layer=29]
+@layopt layer=29 visible=true
+@jump storage=replay.ks
+[endif]
+
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [藤枝ルート終了 end="good"]
 [endif]
+
 
 [イベントシーン終了]
 @jump storage="test_hujieda.ks"
