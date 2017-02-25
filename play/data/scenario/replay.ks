@@ -42,7 +42,7 @@
 
 *page_0
 [iscript]
-$("layer_free").hide();
+$(".layer_free").hide();
 [endscript]
 [replay_image_button name="kuroda_3_4_normalED_scene" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button name="kuroda_3_4_goodED_scene" graphic="../fgimage/bg/replay_kuroda_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
@@ -102,7 +102,7 @@ $("layer_free").hide();
 
 *common
 [iscript]
-$("layer_free").show();
+$(".layer_free").show();
 [endscript]
 @layopt layer=2 visible=true
 [s]
