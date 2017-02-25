@@ -130,10 +130,7 @@
 *backpage
 [emb exp="tf.page--;"]
 [freeimage layer=2]
-[freeimage layer=1]
 @layopt layer=2 visible=false
-@clearfix
-@layopt layer=fix visible=true
 [clearstack]
 @jump target="*replaypage"
 
@@ -142,6 +139,9 @@
 [stopbgm]
 [cm]
 [freeimage layer = 2]
+[freeimage layer = 1]
+@clearfix
+@layopt layer=fix visible=true
 [if exp="sf.BGM=='OFF'"]
 [iscript]
 /*BGMを再生しない*/
