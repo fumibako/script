@@ -71,6 +71,10 @@
 [endif]
 
 #
+[if exp="tf.flag_replay == true"]
+リプレイモードです[p]
+[endif]
+
 [whosay name="文矢の奥様" color=%mp.color]
 「おめでとうございます」[p]
 
@@ -334,6 +338,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [イベントシーン終了]
 ;回想下までいってしまいます
 [if exp="tf.flag_replay == true"]
+[freeimage layer=29]
 @layopt layer=29 visible=true
 ;@jump storage=replay.ks
 [endif]
