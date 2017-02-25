@@ -244,13 +244,24 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
+
+[if exp="f.flag_replay==true"]
+@layopt layer=29 visible=true
+[イベントシーン終了]
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
+;回想記録終了ifからだしておいてください
+[endreplay] 
+
 [イベントシーン終了・ＢＧＭ有]
 ;ending処理
 [if exp="tf.okeiko_gamen==true"]
 ;goodエンディング時
 [eval exp="sf.ED_sijyou_good=1"]
-;回想記録終了
-[endreplay] 
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 @jump storage="event.ks" target=*event_ED
 [else]
