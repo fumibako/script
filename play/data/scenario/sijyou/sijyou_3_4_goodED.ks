@@ -70,11 +70,6 @@
 [eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
 [endif]
 
-#
-[if exp="f.flag_replay == true"]
-リプレイモードです[p]
-[endif]
-
 [whosay name="文矢の奥様" color=%mp.color]
 「おめでとうございます」[p]
 
@@ -335,16 +330,17 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
-[イベントシーン終了]
-;回想下までいってしまいます
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay==truee"]
+あああ
 [freeimage layer=29]
 @layopt layer=29 visible=true
 ;@jump storage=replay.ks
-[endif]
-[iscript]
-$('.end').remove();
-[endscript]
+
+[イベントシーン終了]
+;回想下までいってしまいます
+
+
+
 ;回想記録終了
 [endreplay]
 
