@@ -338,7 +338,14 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [if exp="tf.okeiko_gamen==true"]
 [eval exp="sf.ED_sijyou_normal=1"]
 ;回想記録終了
-[endreplay] 
+[endreplay]
+
+[if exp="tf.flag_replay==true"]
+[freeimage layer=29]
+@layopt layer=29 visivle=true
+@jump storage=replay.ks
+[endif]
+
 [四条ルート終了 end=normal]
 @jump storage="event.ks" target=*event_ED
 [endif]
