@@ -347,6 +347,7 @@ $("kan").css('margin','auto');
 [イベントシーン終了]
 
 [if exp="tf.flag_replay==true"]
+[イベントシーン終了]
 @jump storage=replay.ks
 [endif]
 @jump storage="test_zaizen.ks"
