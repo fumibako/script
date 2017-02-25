@@ -102,6 +102,16 @@
 [chara_mod name="bg" storage="toumei.gif" time=500]
 [wait time=10]
 
+[if exp="f.flag_replay==true"]
+@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
+;↓ifからだしておいてください↓
+[endreplay]
 
 ;badED処理追記予定
 [if exp="tf.okeiko_gamen==true"]
