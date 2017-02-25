@@ -333,6 +333,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [if exp="f.flag_replay==true"]
 [freeimage layer=29]
 @layopt layer=29 visible=true
+[iscript]
+$('.1_fore"').remove();
+[endscript]
+@layopt layer=1 visible=true
 ;@jump storage=replay.ks
 [endif]
 [イベントシーン終了]
