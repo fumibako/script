@@ -370,7 +370,7 @@ $('.junbi_girl').remove();
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[image name="anten" layer=29 storage="bg/bg_sakura.jpg" time=1500]
+[image name=end name="anten" layer=29 storage="bg/bg_sakura.jpg" time=1500]
 [葛城宮退場]
 [主人公退場]
 ;会話ウィンドウ消去
