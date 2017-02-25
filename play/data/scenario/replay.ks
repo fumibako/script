@@ -7,7 +7,7 @@
 @clearfix
 [hidemenubutton]
 ;テスト画面に戻るためフラグ作成
-;[eval exp="tf.flag_replay=true"]は既にされているのでそれを使う
+[eval exp="f.flag_replay=true"]
 [cm]
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
