@@ -8,6 +8,10 @@
 [hidemenubutton]
 ;テスト画面に戻るためフラグ作成
 [eval exp="f.flag_replay=true"]
+[endif]
+[iscript]
+$('.end').remove();
+[endscript]
 [cm]
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
