@@ -418,20 +418,45 @@ f.okeiko_month_kansuuji="三月 ";
 @jump target=*fumi_toutyaku_hantei_hujieda
 [endif]
 
+;↓手紙到着タイミングに関わらず葛城宮ルートであれば葛城宮イベント関連手紙判定に飛ぶ
+[if exp="f.katuraginomiya_au == 1"]
+@jump target=*hantei_list_katuraginomiya_event
+[endif]
+*katuraginomiya_event_fumi_check_owari
+
 ;↓葛城宮との手紙開始していれば判定スタート
 [if exp="f.katuraginomiya_fumi_start == 1 && f.katuraginomiya_fumi_henjimachi <= parseInt([sf.katuraginomiya['fumi_henjimachi_ok_number']])"]
 	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week=f.katuraginomiya_fumi_toutyakumachi_week+1"]
 [endif]
 [if exp="f.katuraginomiya_fumi_toutyakumachi_week >= parseInt([sf.katuraginomiya['fumi_hindo_week']])"]
 @jump target=*hantei_list_katuraginomiya
-[endif]
-;↓手紙到着タイミングに関わらず葛城宮ルートであれば葛城宮イベント関連手紙判定に飛ぶ
-[if exp="f.katuraginomiya_au == 1"]
-@jump target=*hantei_list_katuraginomiya_event
-[endif]
+[else]
+;手紙到着のタイミイングでなければ判定終わり
 @jump target=*fumi_toutyaku_hantei_katuraginomiya_owari
+[endif]
 
 ;手紙到着：条件有り分(返信週数などの影響がある分
+*hantei_list_katuraginomiya_event
+;=======================================================================================
+;◆イベントに関係して届く手紙◆ イベント中に届くのではないため、こちらに置きます
+;=======================================================================================
+;◆葛城宮ルート時子さんの散策イベントを見ている場合に自動的に2週間後に手紙『 伊能殿について 』
+;=======================================================================================
+[if exp="f.event_machi_katuraginomiya[2] == 1 && f.katuraginomiya_fumi_inou == 1 && f.fumi_toutyaku_katuraginomiya[26] == 0"]
+  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_26
+[endif]
+;=======================================================================================
+;◆葛城宮ルート10月1週に届く『 従妹宮の件について 』
+;=======================================================================================
+[if exp="f.okeiko_month == 10 && f.okeiko_week == 1 && f.fumi_toutyaku_katuraginomiya[27] == 0"]
+  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_27
+[endif]
+;イベント関連手紙のチェックが終われば判定続きに戻る
+@jump target=*katuraginomiya_event_fumi_check_owari
+
+;=======================================================================================
 *hantei_list_katuraginomiya
 ;=======================================================================================
 ;◆話題のお返事◆
@@ -550,6 +575,18 @@ f.okeiko_month_kansuuji="三月 ";
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_21
 [endif]
 ;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『新茶について』
+[if exp="f.katuraginomiya_fumi_toutyakumachi_sintya == 0 && f.fumi_toutyaku_katuraginomiya[28] == 0"]
+  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_28
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『さつきについて』
+[if exp="f.katuraginomiya_fumi_toutyakumachi_satuki == 0 && f.fumi_toutyaku_katuraginomiya[29] == 0"]
+  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_29
+[endif]
+;=======================================================================================
 ;◆季節の便り◆
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度条件は除くかわりに「葛城宮イベント1を見ている」を条件に追加
@@ -575,24 +612,6 @@ f.okeiko_month_kansuuji="三月 ";
 [if exp="f.okeiko_month == 8 && f.para_katuraginomiya_koukando >= 25 && f.fumi_toutyaku_katuraginomiya[25] == 0 && f.katuraginomiya_au == 1"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_25
-[endif]
-;=======================================================================================
-*hantei_list_katuraginomiya_event
-;=======================================================================================
-;◆イベントに関係して届く手紙◆ イベント中に届くのではないため、こちらに置きます
-;=======================================================================================
-;◆葛城宮ルート時子さんの散策イベントを見ている場合に自動的に2週間後に手紙『 伊能殿について 』
-;=======================================================================================
-[if exp="f.event_machi_katuraginomiya[2] == 1 && f.katuraginomiya_fumi_inou == 1 && f.fumi_toutyaku_katuraginomiya[26] == 0"]
-  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
-   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_26
-[endif]
-;=======================================================================================
-;◆葛城宮ルート10月1週に届く『 従妹宮の件について 』
-;=======================================================================================
-[if exp="f.okeiko_month == 10 && f.okeiko_week == 1 && f.fumi_toutyaku_katuraginomiya[27] == 0"]
-  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
-   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_27
 [endif]
 ;=======================================================================================
 ;手紙到着：条件有りが該当しなければ、条件無し分が到着(葛城宮には該当なし
@@ -719,6 +738,17 @@ f.okeiko_month_kansuuji="三月 ";
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_24
 [endif]
+;◆↓手紙一通分の到着判定処理(開始)：『 新茶について 』
+[if exp="f.hujieda_fumi_toutyakumachi_sintya == 0 && f.fumi_toutyaku_hujieda[27] == 0"]
+  [call target=*hujieda_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_27
+[endif]
+;◆↓手紙一通分の到着判定処理(開始)：『 さつきの話題 』
+[if exp="f.hujieda_fumi_toutyakumachi_satuki == 0 && f.fumi_toutyaku_hujieda[28] == 0"]
+  [call target=*hujieda_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_28
+[endif]
+
 ;=============================================
 ;◆季節の便り◆
 ;=============================================

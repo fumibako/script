@@ -2191,6 +2191,18 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_a'])){
 @jump target=*binsen_sentaku
 [s]
 
+*fumi_henji_3_31
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=31;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
+*fumi_henji_3_32
+[eval exp="f.fumi_atesaki='katuraginomiya'; f.fumi_hairetsu1=3; f.fumi_hairetsu2=32;"]
+[call target=*fumi_write_hyouji]
+@jump target=*binsen_sentaku
+[s]
+
 *fumi_henji_4_0
 [eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=0;"]
 [call target=*fumi_write_hyouji]

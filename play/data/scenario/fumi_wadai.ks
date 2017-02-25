@@ -1341,6 +1341,8 @@ if(f.katuraginomiya_fumi_toutyakumachi_michi>0)f.katuraginomiya_fumi_toutyakumac
 if(f.katuraginomiya_fumi_toutyakumachi_henka>0)f.katuraginomiya_fumi_toutyakumachi_henka=0;
 if(f.katuraginomiya_fumi_toutyakumachi_dokusho>0)f.katuraginomiya_fumi_toutyakumachi_dokusho=0;
 if(f.katuraginomiya_fumi_toutyakumachi_sports>0)f.katuraginomiya_fumi_toutyakumachi_sports=0;
+if(f.katuraginomiya_fumi_toutyakumachi_sintya>0)f.katuraginomiya_fumi_toutyakumachi_sintya=0;
+if(f.katuraginomiya_fumi_toutyakumachi_satuki>0)f.katuraginomiya_fumi_toutyakumachi_satuki=0;
 sf.katuraginomiya['fumi_hindo_week']=0;
 }
 }
@@ -1599,6 +1601,8 @@ if(f.hujieda_fumi_toutyakumachi_michi>0)f.hujieda_fumi_toutyakumachi_michi=0;
 if(f.hujieda_fumi_toutyakumachi_henka>0)f.hujieda_fumi_toutyakumachi_henka=0;
 if(f.hujieda_fumi_toutyakumachi_dokusho>0)f.hujieda_fumi_toutyakumachi_dokusho=0;
 if(f.hujieda_fumi_toutyakumachi_sports>0)f.hujieda_fumi_toutyakumachi_sports=0;
+if(f.hujieda_fumi_toutyakumachi_sintya>0)f.hujieda_fumi_toutyakumachi_sintya=0;
+if(f.hujieda_fumi_toutyakumachi_satuki>0)f.hujieda_fumi_toutyakumachi_satuki=0;
 sf.hujieda['fumi_hindo_week']=0;
 }
 }
