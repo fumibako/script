@@ -1,4 +1,4 @@
-﻿﻿﻿﻿
+﻿﻿﻿﻿﻿
 *start
 
 ;==============================
@@ -96,6 +96,94 @@ $('.loding_pic1').remove();
 [emb exp="f.shougou"]
 [endmacro]
 
+;◆[イベント中テスト数値表示]
+[macro name="イベント中テスト数値表示"]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
+@jump target=*test_hyouji_event4
+[else]
+@jump target=*test_hyouji_event_owari4
+[endif]
+
+*test_hyouji_event4
+[locate x=750 y=0]
+[button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
+[locate x=550 y=0]
+;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
+@layopt layer=message2 page=fore visible = false
+[current layer="message2"]
+;メッセージレイヤサイズをテスト表示用に設定変更
+[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+@layopt layer=message2 page=fore visible = true
+[font color=glay size=13]
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"][r]
+[endif]
+ 
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_hujieda_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+財前好感度=[emb exp="f.para_zaizen_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+財前好感度=[emb exp="f.para_zaizen_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+四条好感度=[emb exp="f.para_sijyou_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+四条好感度=[emb exp="f.para_sijyou_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+黒田好感度=[emb exp="f.para_kuroda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+黒田好感度=[emb exp="f.para_kuroda_koukando"][r]
+[endif]
+
+淑女度=[emb exp="f.para_shujinkou_shukujodo"][r]
+茶道熟練度=[emb exp="f.para_shujinkou_j_sadou"][r]
+華道熟練度=[emb exp="f.para_shujinkou_j_kadou"][r]
+礼法熟練度=[emb exp="f.para_shujinkou_j_reihou"][r]
+語学熟練度=[emb exp="f.para_shujinkou_j_gogaku"][r]
+お箏熟練度=[emb exp="f.para_shujinkou_j_koto"]
+[resetfont]
+[current layer="message0"]
+*test_hyouji_event_owari4
+[endmacro]
+
 ;◆[イベントシーン構築ボタン無し版枠茶色]
 [macro name="イベントシーン構築ボタン無し版枠茶色"]
 ;↓メッセージ枠名前残り消去
@@ -140,6 +228,91 @@ $('.loding_pic1').remove();
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
+@jump target=*test_hyouji_event2
+[else]
+@jump target=*test_hyouji_event_owari2
+[endif]
+
+*test_hyouji_event2
+[locate x=750 y=0]
+[button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
+[locate x=550 y=0]
+;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
+@layopt layer=message2 page=fore visible = false
+[current layer="message2"]
+;メッセージレイヤサイズをテスト表示用に設定変更
+[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+@layopt layer=message2 page=fore visible = true
+[font color=glay size=13]
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"][r]
+[endif]
+ 
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_hujieda_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+財前好感度=[emb exp="f.para_zaizen_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+財前好感度=[emb exp="f.para_zaizen_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+四条好感度=[emb exp="f.para_sijyou_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+四条好感度=[emb exp="f.para_sijyou_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+黒田好感度=[emb exp="f.para_kuroda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+黒田好感度=[emb exp="f.para_kuroda_koukando"][r]
+[endif]
+
+淑女度=[emb exp="f.para_shujinkou_shukujodo"][r]
+茶道熟練度=[emb exp="f.para_shujinkou_j_sadou"][r]
+華道熟練度=[emb exp="f.para_shujinkou_j_kadou"][r]
+礼法熟練度=[emb exp="f.para_shujinkou_j_reihou"][r]
+語学熟練度=[emb exp="f.para_shujinkou_j_gogaku"][r]
+お箏熟練度=[emb exp="f.para_shujinkou_j_koto"]
+[resetfont]
+[current layer="message0"]
+*test_hyouji_event_owari2
+
 [endmacro]
 
 ;==================================================
@@ -187,12 +360,104 @@ $('.loding_pic1').remove();
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
+@jump target=*test_hyouji_event
+[else]
+@jump target=*test_hyouji_event_owari
+[endif]
+
+*test_hyouji_event
+[locate x=750 y=0]
+[button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
+[locate x=550 y=0]
+;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
+@layopt layer=message2 page=fore visible = false
+[current layer="message2"]
+;メッセージレイヤサイズをテスト表示用に設定変更
+[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+@layopt layer=message2 page=fore visible = true
+[font color=glay size=13]
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"][r]
+[endif]
+ 
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_hujieda_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+財前好感度=[emb exp="f.para_zaizen_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+財前好感度=[emb exp="f.para_zaizen_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+四条好感度=[emb exp="f.para_sijyou_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+四条好感度=[emb exp="f.para_sijyou_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+黒田好感度=[emb exp="f.para_kuroda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+黒田好感度=[emb exp="f.para_kuroda_koukando"][r]
+[endif]
+
+淑女度=[emb exp="f.para_shujinkou_shukujodo"][r]
+茶道熟練度=[emb exp="f.para_shujinkou_j_sadou"][r]
+華道熟練度=[emb exp="f.para_shujinkou_j_kadou"][r]
+礼法熟練度=[emb exp="f.para_shujinkou_j_reihou"][r]
+語学熟練度=[emb exp="f.para_shujinkou_j_gogaku"][r]
+お箏熟練度=[emb exp="f.para_shujinkou_j_koto"]
+[resetfont]
+[current layer="message0"]
+*test_hyouji_event_owari
 [endmacro]
 
 ;==================================================
 ;◆[メッセージウィンドウ上ボタン表示]
 [macro name=メッセージウィンドウ上ボタン表示]
 ;セーブ等ボタン配置
+[if exp="f.flag_replay == true"]
+[locate x=830 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png"  storage="macro_etc.ks" target="*window_close" ]
+[wait time=10]
+
+[else]
 [locate x=530 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
 [locate x=630 y=357]
@@ -204,6 +469,7 @@ $('.loding_pic1').remove();
 [locate x=910 y=390]
 [button name="message_close" fix="true" graphic="x_50x50.png"  storage="macro_etc.ks" target="*window_close" ]
 [wait time=10]
+[endif]
 [eval exp="sf.FButton='ON'"]
 [endmacro]
 
@@ -251,6 +517,90 @@ $('.loding_pic1').remove();
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
+@jump target=*test_hyouji_event1
+[else]
+@jump target=*test_hyouji_event_owari1
+[endif]
+
+*test_hyouji_event1
+[locate x=750 y=0]
+[button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
+[locate x=550 y=0]
+;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
+@layopt layer=message2 page=fore visible = false
+[current layer="message2"]
+;メッセージレイヤサイズをテスト表示用に設定変更
+[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+@layopt layer=message2 page=fore visible = true
+[font color=glay size=13]
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"][r]
+[endif]
+ 
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_hujieda_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+財前好感度=[emb exp="f.para_zaizen_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+財前好感度=[emb exp="f.para_zaizen_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+四条好感度=[emb exp="f.para_sijyou_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+四条好感度=[emb exp="f.para_sijyou_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+黒田好感度=[emb exp="f.para_kuroda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+黒田好感度=[emb exp="f.para_kuroda_koukando"][r]
+[endif]
+
+淑女度=[emb exp="f.para_shujinkou_shukujodo"][r]
+茶道熟練度=[emb exp="f.para_shujinkou_j_sadou"][r]
+華道熟練度=[emb exp="f.para_shujinkou_j_kadou"][r]
+礼法熟練度=[emb exp="f.para_shujinkou_j_reihou"][r]
+語学熟練度=[emb exp="f.para_shujinkou_j_gogaku"][r]
+お箏熟練度=[emb exp="f.para_shujinkou_j_koto"]
+[resetfont]
+[current layer="message0"]
+*test_hyouji_event_owari1
 [endmacro]
 
 ;==================================================
@@ -332,6 +682,91 @@ $('.loding_pic1').remove();
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
+@jump target=*test_hyouji_event3
+[else]
+@jump target=*test_hyouji_event_owari3
+[endif]
+
+*test_hyouji_event3
+[locate x=750 y=0]
+[button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
+[locate x=550 y=0]
+;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
+@layopt layer=message2 page=fore visible = false
+[current layer="message2"]
+;メッセージレイヤサイズをテスト表示用に設定変更
+[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+@layopt layer=message2 page=fore visible = true
+[font color=glay size=13]
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"][r]
+[endif]
+ 
+;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
+[if exp="Number.isFinite(f.para_hujieda_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+藤枝好感度=[emb exp="f.para_hujieda_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+財前好感度=[emb exp="f.para_zaizen_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+財前好感度=[emb exp="f.para_zaizen_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+四条好感度=[emb exp="f.para_sijyou_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+四条好感度=[emb exp="f.para_sijyou_koukando"][r]
+[endif]
+
+[if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
+[resetfont]
+[font color=red size=13]
+黒田好感度=[emb exp="f.para_kuroda_koukando"]
+好感度に数値以外が代入されています。
+[resetfont]
+[s]
+[else]
+黒田好感度=[emb exp="f.para_kuroda_koukando"][r]
+[endif]
+
+淑女度=[emb exp="f.para_shujinkou_shukujodo"][r]
+茶道熟練度=[emb exp="f.para_shujinkou_j_sadou"][r]
+華道熟練度=[emb exp="f.para_shujinkou_j_kadou"][r]
+礼法熟練度=[emb exp="f.para_shujinkou_j_reihou"][r]
+語学熟練度=[emb exp="f.para_shujinkou_j_gogaku"][r]
+お箏熟練度=[emb exp="f.para_shujinkou_j_koto"]
+[resetfont]
+[current layer="message0"]
+*test_hyouji_event_owari3
+
 [endmacro]
 
 ;◆[イベントシーン構築枠茶色]
@@ -415,11 +850,15 @@ $('.loding_pic1').remove();
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+;休憩中画像消去
+[freeimage layer = 26]
 ;演出用レイヤ消去
 [freeimage layer = 29]
 
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
+@layopt layer=message1 page=fore visible=false
+@layopt layer=message2 page=fore visible=false
 
 ;会話ウィンドウ消去
 [freeimage layer = 14]
@@ -449,11 +888,15 @@ $('.loding_pic1').remove();
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+;休憩中画像消去
+[freeimage layer = 26]
 ;演出用レイヤ消去
 [freeimage layer = 29]
 
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
+@layopt layer=message1 page=fore visible=false
+@layopt layer=message2 page=fore visible=false
 
 ;会話ウィンドウ消去
 [freeimage layer = 14]
