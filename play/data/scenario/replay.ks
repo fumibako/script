@@ -143,6 +143,7 @@
 ;リプレイで表示されない↑修正
 [freeimage layer = 1]
 @layopt layer=1 visible=true
+@layopt layer=0 visible=true
 ;リプレイで表示されない↑修正
 
 ;追加しましたが、なくてもボタンは消されるようです↓
