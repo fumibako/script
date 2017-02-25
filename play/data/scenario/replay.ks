@@ -24,8 +24,8 @@
 
 *replaypage
 ;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていいと思いますが置いてあります
-[button fix=true graphic="button_tugi.png" target="*nextpage" x=300 y=20]
-[button fix=true graphic="button_modoru.png" target="*backpage" x=400 y=20]
+[button fix=true graphic="button_tugi.png" target="*nextpage" x=700 y=100]
+[button fix=true graphic="button_modoru.png" target="*backpage" x=700 y=200]
 ;↑次へのﾎﾞﾀﾝです。使用時は↑↓をfix=trueにして[cm]で他のボタンを消してください. ラベルbacktitle でclearfix
 [button fix=true graphic="back.png" target="*backtitle" x=870 y=20 ]
 
