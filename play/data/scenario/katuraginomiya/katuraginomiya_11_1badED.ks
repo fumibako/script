@@ -125,8 +125,17 @@
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
-;回想記録終了
+[if exp="f.flag_replay==true"]
+;@layopt layer=29 visible=true
+[iscript]
+$('.1_fore').remove();
+[endscript]
+@layopt layer=1 visible=true
+[endif]
+
+;回想記録終了 ifからだしておいてください
 [endreplay] 
+
 [if exp="tf.okeiko_gamen==true"]
 [eval exp="sf.ED_katuraginomiya_bad=1"]
 @jump storage="event.ks" target=*event_ED
