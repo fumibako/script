@@ -312,7 +312,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;====================================================================================
 ;再構築に時間がかかるで退場しない　財前さんだけ退場
 ;明るいシーンになっていくので暗転ではなく背景で
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [暗転２ storage="bg/zaizen_paty_ousetu.jpg" clegit=true]
 [財前退場] 
 ;案内される姿を見守ったパターン２　こちらにします。
