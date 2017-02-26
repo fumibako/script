@@ -349,7 +349,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目閉]
-「お父様、私は葛城宮殿下と、正式に婚約したく思っています。[r]
+「お父様、私は葛城宮殿下と、正式に婚約したいと思っています。[r]
 [主人公眉通常]
 [主人公目通常]
 [sp]お許し頂けますか？」[p]
