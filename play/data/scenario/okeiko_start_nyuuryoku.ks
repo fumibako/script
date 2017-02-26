@@ -177,12 +177,12 @@ $("input[name='f.katuraginomiya_only']").val("0");
 //葛城宮確認用デフォルト値1 ご自由に設定してください
 $("input[name='f.event_oaite_mitei']").val("1");
 
-$("input[name='tf.advice_event_hyouji']").val("0");
+$("input[name='tf.advice_event_hyouji']").val("1");
 $("input[name='tf.event_hyouji']").val("1");
 
 $("input[name='f.para_shujinkou_tairyoku_now']").val("900");
 $("input[name='f.para_shujinkou_kiryoku_now']").val("900");
-$("input[name='tf.event_sansaku_hyouji']").val("0"); //仮にデフォルト値0にしています。ご自由に変更してください
+$("input[name='tf.event_sansaku_hyouji']").val("1"); //仮にデフォルト値0にしています。ご自由に変更してください
 $("input[name='tf.event_sansaku_hyouji_before_au']").val("1"); //仮にデフォルト値1にしています。ご自由に変更してください
 
 $("input[name='tf.mode_hensu']").val("0"); //仮にデフォルト値0にしています。ご自由に変更してください
