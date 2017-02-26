@@ -123,20 +123,20 @@ dl#table dt {
 dl#table dd {
 	border-left: 1px solid rgba(200,200,255,0);
 	border-top: 1px solid rgba(200,200,255,0);
-	height: 260px; /* min-height 非対応の IE 用 */
+/*	height: 150px; */ /* min-height 非対応の IE 用 */
 	margin-left: 215px;
 }
 
 body dl#table dd {
-	min-height: 260px; /* 高さの最小値(画像の高さ＋行間？値) */
+/*	min-height: 150px; */ /* 高さの最小値(画像の高さ＋行間？値) */
 }
 
 dl#table dd.last { /* 最後の dd には行間？は必要ないため */
-	height: 260px; /* min-height 非対応の IE 用 */
+/*	height: 150px; */ /* min-height 非対応の IE 用 */
 }
 
 body > dl#table dd.last {
-	min-height: 260px; /* 高さの最小値(画像の高さ) */
+	min-height: 150px; /* 高さの最小値(画像の高さ) */
 }
 
 th {
@@ -144,4 +144,38 @@ th {
         text-align: left;
 }
 
+table.main_char {
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+}
+table.main_char th {
+    width: 180px;
+    padding: 10px;
+    vertical-align: top;
+}
+table.main_char td {
+    width: 75%;
+    padding: 10px;
+    vertical-align: center;
+}
+
+
+table.secret_char {
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+}
+table.secret_char th {
+    width: 180px;
+    padding: 10px;
+    vertical-align: top;
+}
+table.secret_char td {
+    width: 75%;
+    padding: 10px;
+    vertical-align: center;
+}
 
