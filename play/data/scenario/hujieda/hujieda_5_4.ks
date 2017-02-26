@@ -105,7 +105,8 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]また貴方様の[ruby text=こと]箏の音を聞きました。[r]
 少し上達されましたね。心から嬉しく想います。[r]
 [r]
-[sp]母が[ruby text=こと]箏がとても上手で僕は母の[ruby text=こと]箏の音色が好きでした。[r]
+[sp]母が[ruby text=こと]箏が、とても上手で僕はその音色が好きでした。[r]
+;[ruby text=こと]箏の音色が好きでした。[r]
 [sp]貴方様の音は母と違った魅力があります。[r]
 [sp]母は華やかで優美な調べでした。[p]
 ;アイコンにかかっているので分割します
