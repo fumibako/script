@@ -244,7 +244,7 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_31
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：夏『昨晩の星』8_2/f.okeiko_month==8 仲がいいこと
+;◆↓手紙一通分の到着判定処理(開始)：夏『昨晩の星』8_2/f.okeiko_month==8 デバックが面倒なのでそのままでおｋ
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 0 && f.okeiko_month == 8 && f.fumi_toutyaku_sijyou[32] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_32
@@ -262,7 +262,7 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_34
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：秋『秋の空』10/f.okeiko_month==10
+;◆↓手紙一通分の到着判定処理(開始)：秋『秋の空』10/f.okeiko_month==11
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 1 && f.okeiko_month == 11 && f.fumi_toutyaku_sijyou[35] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_35
