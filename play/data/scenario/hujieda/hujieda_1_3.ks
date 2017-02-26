@@ -98,7 +98,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp]さて先日お調べするといった藤枝様ですが、[r]
 独逸への留学についてお知らせします。[r]
 独逸留学は藤枝様ともう[ruby text=ふた]二[ruby text=り]人が決定していたのですが[r]
-３枠が諸事情で１枠となり独逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった。[r]
+[ruby text=さん]三枠が諸事情で[ruby text=いち]一枠となり独逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった。[r]
 そうです。[p]
 ;はみだし修正
 [sp][r][r][r]
