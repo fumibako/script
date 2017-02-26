@@ -570,7 +570,7 @@
  [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『お気に入りの曲２』sijyou_fumi86*kyoku2 お見合い後事件中・９・１０・１１月ではないとき　お気に入りの曲１の純粋な続きの内容のため[85]==1のとき
-[if exp="f.sijyou_fumi_toutyakumachi_music == 0 && f.sijyou_omiai == 1 && f.sijyou_event6 == 0 && f.okeiko_month !=9 && f.okeiko_month !=10 && f.okeiko_month !=11 && f.fumi_toutyaku_sijyou[85] == 1 && f.fumi_toutyaku_sijyou[86] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_music == 0 && f.sijyou_omiai == 1 && f.sijyou_event6 == 0 && f.okeiko_month != 9 && f.okeiko_month != 10 && f.okeiko_month != 11 && f.fumi_toutyaku_sijyou[85] == 1 && f.fumi_toutyaku_sijyou[86] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_86
 [endif]
