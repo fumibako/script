@@ -42,7 +42,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいえ、さほどまっておりませんわ」[p]
 
-（葛城宮さま少しおやつれになった？）[p]
+（殿下、少しおやつれになった？）[p]
 
 ;【立ち絵】葛城宮　通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
