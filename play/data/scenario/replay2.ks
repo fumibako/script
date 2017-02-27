@@ -126,7 +126,7 @@ $(".list").css("opacity",0);
 [endscript]
 [replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya_3_4.ks" target="replay_katuraginomiya_3_4_nomalED" graphic="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_katuraginomiya_good storage="katuraginomiya_3_4_goodED.ks" target="replay_katuraginomiya_3_4_goodED" graphic="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya_11_1badED.ks" target="replay_katuraginomiya_11_1badED" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya_11_1badED.ks" target="replay_katuraginomiya_11_1badED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 
 
 [if exp="sf.record_katuraginomiya_9_1 > 1"]
