@@ -6,6 +6,13 @@
 *replay_kuroda_3_4_goodED
 [call storage="tyrano.ks"]
 [setreplay name="kuroda_3_4_goodED_scene" storage="kuroda_3_4_goodED.ks" target="replay_kuroda_3_4_goodED_1"]
+[iscript]
+$(".list").remove();
+$(".rp_bt").remove();
+[endscript]
+[if exp="f.flag_replay==true"]
+[back storage="toumei.gif" time=1]
+[endif]
 
 *replay_kuroda_3_4_goodED_1
 [stopbgm]
@@ -493,6 +500,11 @@ if (mp.name!="") {
 [eval exp="sf.ED_kuroda_good = 1"]
 ;回想記録終了 
 [endreplay] 
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+[イベントシーン終了]
+@jump storage="replay2.ks"
+[endif]
 
 [if exp="tf.okeiko_gamen == true"]
 [イベントシーン終了・ＢＧＭ有]
