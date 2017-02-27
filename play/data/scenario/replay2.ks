@@ -101,7 +101,7 @@ $(".layer_free").css("opacity",0);
 ;sf.ED_sijyou_normal
 [replay_image_button2 end=&sf.ED_sijyou_normal storage="sijyou/sijyou_3_4_goodED.ks" target="replay_sijyou_3_4_normalED" graphic="../fgimage/bg/sijyou_CGnomal.png" x=50 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_sijyou_good storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target="replay_sijyou_3_4_goodED" graphic="../fgimage/bg/sijyou_CGgood.png" x=270 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_sijyou_bad storage="sijyou/sijyou_10_3_badED.ks" target="replay_sijyou_10_3badED" folder=fgimage graphic="bg/replay_sijyou_badlED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_sijyou_bad storage="sijyou/sijyou_10_3_badED.ks" target="replay_sijyou_10_3badED" folder=fgimage graphic="../fgimage/bg/replay_sijyou_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 [ptext name=list layer=2 page=fore text="四条ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
