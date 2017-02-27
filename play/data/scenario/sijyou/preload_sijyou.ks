@@ -423,7 +423,7 @@
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 [preload storage="data/fgimage/bg/room_niwa_yuki.jpg" wait=true]
 [preload storage="data/fgimage/bg/sijyou_CGnomal.png" wait=true]
-[preload storage=""data/fgimage/bg/bg_omoide.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_omoide.jpg" wait=true]
 ;エンディングスチルをプリロード
 [if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.para_shujinkou_j_kadou >= 50"]
 [preload storage="data/fgimage/bg/sijyou_CGgood.png" wait=true]
