@@ -9,6 +9,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[if exp="f.flag_replay==true"]
+[back storage="toumei.gif" time=1]
+[endif]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -274,12 +277,12 @@ $('.saku3').remove();
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(100%)";
+$('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-filter':'sepia(100%)','-ms-filter':'sepia(100%)'});
 [endscript]
+[wait time=10]
 ;===============================================================
 [position left=200 width=500 height=300 top=100 page=fore margint="50"]
+[wait time=10]
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示
 [layopt layer=message0 visible=true]
 ;テキスト全画面
@@ -328,9 +331,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 
 ;===============================================================
 [iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
+$('.1_fore').css({'filter':'sepia(0%)','-webkit-filter':'sepia(0%)','-moz-filter':'sepia(100%)','-ms-filter':'sepia(0%)'});
 [endscript]
 ;一瞬裏がみえるの防止背景
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
