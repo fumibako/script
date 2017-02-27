@@ -295,6 +295,7 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 ;===============================================================
 ;【背景】ヒロインの部屋雪
 [chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1300]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;===============================================================
 ;「忍耐」
@@ -303,6 +304,7 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 ;===============================================================
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 ;===============================================================
 ;「忍耐」
@@ -314,6 +316,7 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 ;===============================================================
 ;【背景】思い出（花
 [chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 
 これからも訪れるであろう、何気ない季節を花とともに語りましょう。[p]
