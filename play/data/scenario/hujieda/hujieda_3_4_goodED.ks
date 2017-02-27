@@ -548,6 +548,7 @@ $('.1_fore').remove();
 
 [if exp="f.flag_replay==true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
+[イベントシーン終了]
 @jump storage="replay2.ks"
 [endif]
 
