@@ -5,7 +5,7 @@
 
 [macro name=replay_image_button2]
 [if exp="mp.end==true"]
-[button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="mp.graphic"  storage="mp.storage|replay2.ks" target="mp.target|*clickcg" folder="bgimage" ]
+[button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="mp.graphic" storage="mp.storage|replay2.ks" target="mp.target|*clickcg" folder="bgimage" ]
 ;exp="tf.selected_cg_image = preexp"
 [else]
 [button graphic=&mp.no_graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic=""../fgimage/bg/cg_bg.jpg"" storage="replay2.ks" target="*no_image" folder="bgimage" ]
@@ -17,6 +17,9 @@
 [eval exp="f.flag_replay=true"]
 [endif]
 [cm]
+[iscript]
+$(".layer_free").css("opacity",0);
+[endscript]
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [layopt layer=3 visible=true]
@@ -122,6 +125,9 @@ $('.end').remove();
 
 
 *common
+[iscript]
+$(".layer_free").css("opacity",1);
+[endscript]
 @layopt layer=2 visible=true
 [s]
 
