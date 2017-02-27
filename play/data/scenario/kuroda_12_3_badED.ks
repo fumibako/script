@@ -7,6 +7,14 @@
 [call storage="tyrano.ks"]
 [setreplay name="replay_kuroda_12_3_badED_scene" storage="kuroda_12_3_badED.ks" target="replay_kuroda_12_3_badED_1"]
 
+[iscript]
+$(".list").remove();
+$(".rp_bt").remove();
+[endscript]
+[if exp="f.flag_replay==true"]
+[back storage="toumei.gif" time=1]
+[endif]
+
 *replay_kuroda_12_3_badED_1
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
@@ -268,6 +276,12 @@
 [eval exp="sf.ED_kuroda_bad=1"]
 ;回想記録終了 
 [endreplay] 
+
+[if exp="f.flag_replay==true"]
+[イベントシーン終了]
+@jump storage=replay2.ks
+[endif]
+
 @jump storage="event.ks" target=*event_ED
 
 *window_close
