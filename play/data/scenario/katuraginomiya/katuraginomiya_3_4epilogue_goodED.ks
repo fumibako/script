@@ -1,6 +1,10 @@
 ;goodエンドエピローグ
 =======================お芝居の準備中です==================================
 *replay_katuraginomiya_3_4epilogue_goodED
+*replay_katuraginomiya_3_4_goodED
+[iscript]
+$('.list').remove();
+[endscript]
 *start
 [stopbgm]
 [if exp="tf.test_katuraginomiya==true"]
@@ -406,6 +410,11 @@ $('.1_fore').remove();
 
 [endreplay]
 
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
+
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
@@ -417,10 +426,6 @@ $('.1_fore').remove();
 
 [イベントシーン終了]
 [fadeoutbgm time=3000]
-
-[if exp="tf.flag_replay==true"]
-@jump storage=replay.ks
-[endif]
 
 @jump storage="test_katuragi.ks"
 [s]
