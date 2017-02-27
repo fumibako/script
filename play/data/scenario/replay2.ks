@@ -5,7 +5,7 @@
 
 [macro name=replay_image_button2]
 [if exp="mp.end==1"]
-[button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="mp.graphic" storage="mp.storage|replay2.ks" target="mp.target|*clickcg" folder="bgimage" ]
+[button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="mp.graphic" storage="mp.storage|replay2.ks" target="mp.target|*clickcg" folder="mp.folder|fgimage" ]
 ;exp="tf.selected_cg_image = preexp"
 [else]
 [button graphic=&mp.no_graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic=""../fgimage/bg/cg_bg.jpg"" storage="replay2.ks" target="*no_image" folder="bgimage" ]
@@ -73,9 +73,9 @@ $('.end').remove();
 
 ;sf.ED_sijyou_normal
 ;sf.ED_sijyou_normal
-[replay_image_button2 end=&sf.ED_sijyou_normal storage="sijyou/sijyou_3_4_goodED.ks" name="replay_sijyou_3_4_normalED_scene" graphic="../fgimage/bg/sijyou_CGnomal.png" x=50 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_sijyou_good storage="sijyou/sijyou_3_4_epilogue_goodED.ks" name="replay_sijyou_3_4_goodED_scene" graphic="../fgimage/bg/sijyou_CGgood.png" x=270 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 storage="sijyou/sijyou_10_3_badED.ks" name="replay_sijyou_10_3badED_scene" graphic="../fgimage/bg/replay_sijyou_badlED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_sijyou_normal storage="sijyou/sijyou_3_4_goodED.ks" name="replay_sijyou_3_4_normalED_scene" graphic="bg/sijyou_CGnomal.png" x=50 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_sijyou_good storage="sijyou/sijyou_3_4_epilogue_goodED.ks" name="replay_sijyou_3_4_goodED_scene" graphic="bg/sijyou_CGgood.png" x=270 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_sijyou_bad storage="sijyou/sijyou_10_3_badED.ks" name="replay_sijyou_10_3badED_scene" graphic="bg/replay_sijyou_badlED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="四条ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
