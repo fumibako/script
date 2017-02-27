@@ -82,7 +82,7 @@ $('.end').remove();
 
 [replay_image_button name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 
 ;"sf.record.trail_シナリオファイル名_ラベル名"
 [trace exp="sf.record.katuraginomiya_replay_katuraginomiya_9_1"]
