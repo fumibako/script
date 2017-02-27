@@ -3,6 +3,7 @@
 *replay_zaizen_11_1_bad1
 *start
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 ;=======================お芝居の準備中です==========================================
