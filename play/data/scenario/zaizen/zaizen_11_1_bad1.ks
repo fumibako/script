@@ -1,6 +1,10 @@
 ;財前badについては、回想時にもっと前のシーンから再生させるかどうか考え中です。今のところbad分岐以降を回想可能としています(スクリプト担
 [setreplay name="replay_zaizen_11_1_bad1_scene" storage="zaizen/zaizen_11_1_bad1.ks" target="start"]
+*replay_zaizen_11_1_bad1
 *start
+[iscript]
+$('.list').remove();
+[endscript]
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
