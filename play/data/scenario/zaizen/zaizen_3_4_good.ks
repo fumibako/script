@@ -358,6 +358,11 @@ $('.1_fore').remove();
 ;↓ifからだしておいてください↓
 [endreplay]
 
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
+
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
