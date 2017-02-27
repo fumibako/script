@@ -3,6 +3,9 @@
 ;=======================お芝居の準備中です==================================
 *replay_hujieda_hujieda_3_4_goodED
 *replay_hujieda_hujieda_3_4_goodED_scene
+[iscript]
+$('.list').remove();
+[endscript]
 *start
 [stopbgm]
 [if exp="tf.test_hujieda==true"]
@@ -538,6 +541,11 @@ $('.1_fore').remove();
 
 ;回想シーン戻る処理
 [endreplay]
+
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
 
 [if exp="tf.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
