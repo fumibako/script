@@ -32,6 +32,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
 [ptext text="作業中＝10月3週badED。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
+
 *test_page1
 [glink target="test_replay" text="WEB版リプレイ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
@@ -42,12 +43,13 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="test9_4b" text="9月4週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 
-[glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="test10_3b" text="10月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test11_1" text="11月1～3週:1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test11_1_kai" text="11月1～3週:華衣" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="test11_1b" text="11月1～3週:2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test_replay2" text="ＣＧリプレイ解放" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=blue]
+[glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="test10_3b" text="10月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test11_1" text="11月1～3週:1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test11_1_kai" text="11月1～3週:華衣" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test11_1b" text="11月1～3週:2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 
 [glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
@@ -404,6 +406,27 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [freeimage layer = 26]
 @jump storage="replay2.ks
 [s]
+
+*test_replay2
+ＣＧとリプレイを解放します[p]
+[iscipt]
+sf.ED_sijyou_bad=1;
+sf.ED_sijyou_normal=1;
+sf.ED_sijyou_good=1;
+
+sf.ED_zaizen_normal=1;
+sf.ED_zaizen_good=1;
+sf.ED_zaizen_bad1=1;
+sf.ED_zaizen_bad2=1;
+
+sf.ED_katuraginomiya_normal=1;
+sf.ED_katuraginomiya_good=1;
+sf.ED_katuraginomiya_bad=1;
+
+sf.ED_hujieda_good=1;
+sf.ED_hujieda_normal=1;
+sf.ED_hujieda_bad=1;
+[endscipt]
 
 *test_save
 [cm]
