@@ -4,6 +4,9 @@
 [setreplay name="replay_hujieda_hujieda_3_4_goodED_scene" storage="hujieda/hujieda_3_4_normalED.ks" target="start"]
 [setreplay name="replay_hujieda_hujieda_3_4_normalED_scene" storage="hujieda/ｈujieda_3_4_normalED.ks" target="start"]
 *replay_hujieda_hujieda_3_4_normalED_scene
+[iscript]
+$('.list').remove();
+[endscript]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -315,6 +318,11 @@ $('.1_fore').remove();
 
 ;◆回想記録 
 [endreplay]
+
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
 
 ;◆normalED終了処理へ
 [if exp="tf.okeiko_gamen==true"]
