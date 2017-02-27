@@ -2,6 +2,7 @@
 ; 回想モード　画面作成
 ;=========================================
 *start
+
 [macro name=replayimage_button2]
 [if exp="mp.end==true"]
 [button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height preexp="mp.graphic"  storage="mp.storage|cg.ks" target="mp.target|*clickcg" folder="bgimage" ]
@@ -10,11 +11,6 @@
 [button graphic=&mp.no_graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height storage="cg.ks" target="*no_image" folder="bgimage" ]
 [endif]
 [endmacro]
-
-[endif]
-
-[endmacro]
-
 @clearfix
 [hidemenubutton]
 ;テスト画面に戻るためフラグ作成
