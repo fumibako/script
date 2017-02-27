@@ -62,7 +62,7 @@ $('.end').remove();
 
 [replay_image_button name="replay_sijyou_3_4_normalED_scene" graphic="../fgimage/bg/sijyou_CGnomal.png" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_sijyou_3_4_goodED_scene" graphic="../fgimage/bg/sijyou_CGgood.png" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button name="replay_sijyou_10_3badED_scene" graphic="../fgimage/bg/replay_sijyou_badlED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_sijyou_10_3badED_scene" graphic="../fgimage/bg/replay_sijyou_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="四条ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
