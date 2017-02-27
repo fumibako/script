@@ -408,6 +408,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 
 *test_replay2
+[cm]
 ;ＣＧとリプレイを解放します
 [glink target="yes1" text="フラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
