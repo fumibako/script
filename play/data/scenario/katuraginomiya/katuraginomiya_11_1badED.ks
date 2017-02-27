@@ -8,6 +8,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[if exp="f.flag_replay==true"]
+[back storage="toumei.gif" time=1]
+[endif]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*11_1badED storage="katuraginomiya/preload_katuraginomiya.ks"]
