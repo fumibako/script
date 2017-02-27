@@ -21,6 +21,14 @@
 [button graphic=&mp.no_graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" folder="bgimage"]
 [endif]
 [endmacro]
+
+[macro name="リプレイ画面消去"]
+[iscript]
+$(".list").remove();
+$(".rp_bt").remove();
+[endscript]
+[endmacro]
+
 @clearfix
 [hidemenubutton]
 ;テスト画面に戻るためフラグ作成
