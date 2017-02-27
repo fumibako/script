@@ -5,6 +5,7 @@
 *start
 *replay_katuraginomiya_11_1badED
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [stopbgm]
