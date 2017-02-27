@@ -22,7 +22,7 @@
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
 ;タイトルで使うことを想定＿[chara_mod name="bg" storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [layopt layer=3 visible=true]
-[ptext layer=3 page=fore text="思ひ出　(Ending List)" x=20 y=20 size=26 color=0xA8401C visible=true]
+[ptext name=list layer=3 page=fore text="思ひ出　(Ending List)" x=20 y=20 size=26 color=0xA8401C visible=true]
 
 [iscript]
     
@@ -74,27 +74,27 @@ $(".layer_free").css("opacity",0);
 [replay_image_button2 end=&sf.ED_kuroda_normal storage="kuroda_3_4_normalED.ks" target="kuroda_3_4_normalED" graphic="bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_kuroda_good storage="kuroda_3_4_goodED.ks" target="kuroda_3_4_goodED" graphic="bg/replay_kuroda_goodED.jpg"  x=270 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_kuroda_bad storage="kuroda_3_4_goodED.ks" target="replay_kuroda_12_3_badED" graphic="bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
-[ptext layer=2 page=fore text="黒田ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="黒田ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="黒田ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="黒田ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 
 ;sf.ED_sijyou_normal
 ;sf.ED_sijyou_normal
 [replay_image_button2 end=&sf.ED_sijyou_normal storage="sijyou/sijyou_3_4_goodED.ks" target="replay_sijyou_3_4_normalED" graphic="../fgimage/bg/sijyou_CGnomal.png" x=50 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_sijyou_good storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target="replay_sijyou_3_4_goodED" graphic="../fgimage/bg/sijyou_CGgood.png" x=270 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_sijyou_bad storage="sijyou/sijyou_10_3_badED.ks" target="replay_sijyou_10_3badED" folder=fgimage graphic="bg/replay_sijyou_badlED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
-[ptext layer=2 page=fore text="四条ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="四条ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
 
-[replay_image_button2 end=&sf.ED_zaizen_normal name="replay_zaizen_3_4_normal_scene" graphic="../fgimage/bg/zaizen_CGnomal.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_good name="replay_zaizen_3_4_good_scene" graphic="../fgimage/bg/zaizen_CGgood.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_bad1 name="replay_zaizen_11_1_bad1_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_bad2 name="replay_zaizen_11_bad2_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
-[ptext layer=2 page=fore text="財前ルート　:　normalEND" x=50 y=560 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="財前ルート　:　goodEND" x=270 y=560 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="財前ルート　:　badEND1" x=490 y=560 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="財前ルート　:　badEND2" x=710 y=560 size=17 color=navy visible=true]
+[replay_image_button2 end=&sf.ED_zaizen_normal storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/zaizen_CGnomal.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_good storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/zaizen_CGgood.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_bad1 storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/replay_zaizem_badED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_bad2 storage="zaizen/zaizen_11_bad2" traget="replay_zaizen_11_bad2" graphic="../fgimage/bg/replay_zaizem_badED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
+[ptext name=list layer=2 page=fore text="財前ルート　:　normalEND" x=50 y=560 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="財前ルート　:　goodEND" x=270 y=560 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="財前ルート　:　badEND1" x=490 y=560 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="財前ルート　:　badEND2" x=710 y=560 size=17 color=navy visible=true]
 
 @jump target ="*common"
 
@@ -110,13 +110,13 @@ $(".layer_free").css("opacity",0);
 ;"sf.record.trail_シナリオファイル名_ラベル名"
 [trace exp="sf.record.katuraginomiya_replay_katuraginomiya_9_1"]
 [if exp="sf.record_katuraginomiya_9_1 > 1"]
-[ptext layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="葛城宮ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="葛城宮ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="葛城宮ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="葛城宮ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 [else]
-[ptext layer=2 page=fore text="？ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="？ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="？ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 [endif]
 [replay_image_button2 end=&sf.ED_hujieda_normal name="replay_hujieda_hujieda_3_4_goodED" graphic="../fgimage/bg/hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_hujieda_good name="replay_hujieda_hujieda_3_4_normalED" graphic="../fgimage/bg/hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
@@ -125,13 +125,13 @@ $(".layer_free").css("opacity",0);
 ;"sf.record.trail_シナリオファイル名_ラベル名"
 [trace exp="sf.record_hujieda_9_1"]
 [if exp="sf.record.trail_hujieda_replay_hujieda_9_1 > 1"]
-[ptext layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="藤枝ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="藤枝ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="藤枝ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="藤枝ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
 [else]
-[ptext layer=2 page=fore text="？ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="？ルート　:　goodEND" x=300 y=380 size=17 color=navy visible=true]
-[ptext layer=2 page=fore text="？ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="？ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="？ルート　:　goodEND" x=300 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
 [endif]
 
 @jump target ="*common"
@@ -188,7 +188,6 @@ $(".layer_free").css("opacity",1);
 @layopt layer=3 visible=true
 @layopt layer=0 visible=true
 ;リプレイで表示されない↑修正
-
 ;追加しましたが、なくてもボタンは消されるようです・・・リプレイ中にセーブされても困ることに気づく
 @clearfix
 @layopt layer=fix visible=true
@@ -228,7 +227,7 @@ TG.stat.play_se = true;
 [endscript]
 
 
-@jump storage=&tf.selected_replay_obj.storage target=&tf.selected_replay_obj.target
+;@jump storage=&tf.selected_replay_obj.storage target=&tf.selected_replay_obj.target
 [s]
 
 *no_image
