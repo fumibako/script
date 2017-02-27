@@ -7,6 +7,14 @@
 [call target=*start storage="tyrano.ks"]
 [setreplay name="kuroda_3_4_normalED_scene" storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED_1"]
 
+[iscript]
+$(".list").remove();
+$(".rp_bt").remove();
+[endscript]
+[if exp="f.flag_replay==true"]
+[back storage="toumei.gif" time=1]
+[endif]
+
 *replay_kuroda_3_4_normalED_1
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -389,6 +397,12 @@ if (mp.name!="") {
 [eval exp="sf.ED_kuroda_normal=1"]
 ;回想記録終了
 [endreplay] 
+
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+[イベントシーン終了]
+@jump storage="replay2.ks"
+[endif]
 
 @jump storage="event.ks" target=*event_ED
 
