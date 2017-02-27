@@ -1,6 +1,9 @@
 ;/////////////////エピローグ追加分（good_end差分です)///////////
 [setreplay name="replay_sijyou_3_4_goodED_scene" storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target="start"]
 *replay_sijyou_3_4_epilogue_goodED
+[iscript]
+$('.list').remove();
+[endscript]
 *replay_sijyou_3_4_good
 *start
 [if exp="tf.test_sijyou == true"]
