@@ -1,6 +1,7 @@
 ;=======================お芝居の準備中です==========================================
 *replay_zaizen_3_4_good
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 *start
