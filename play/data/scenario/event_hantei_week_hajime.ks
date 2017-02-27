@@ -93,6 +93,17 @@
 	[eval exp="f.event_advice=0"]
 	@jump storage="event.ks" target=*start
 [endif]
+
+;◆「磯野に相談」イベント判定 5月中、他のアドバイスイベントが発生しなければ1度だけ発生
+[if exp="f.okeiko_month==5 && f.event_common[12]==0"]
+	[eval exp="f.event_storage='common_5_1.ks'"]
+	[eval exp="f.event_target='*replay_common_5_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[12]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
 *advice_event_owari
 
 ;=============================================

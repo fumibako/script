@@ -1,4 +1,4 @@
-[setreplay name="test"]
+﻿[setreplay name="test"]
 *test
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [clearstack]
@@ -31,19 +31,20 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [layopt layer=26 visible=true]
 [wait time=10]
 [ptext text="四条 華織ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
-[ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
-[ptext text="作業中＝10月3週badED。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
+;[ptext text="作業中＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
 
 *test_page1
 [glink target="test_replay" text="WEB版リプレイ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
-[glink target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test7_1" text="7月1週(未定)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test9_2" text="9月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test9_4b" text="9月4週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test5_1" text="5月(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="test7_1" text="7月1週(未定)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="test9_2" text="9月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test9_4b" text="9月4週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 
 [glink target="test_replay2" text="ＣＧリプレイ解放" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=blue]
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]

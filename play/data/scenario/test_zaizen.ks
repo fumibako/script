@@ -1,4 +1,4 @@
-﻿[setreplay name="test"]
+﻿﻿[setreplay name="test"]
 *test
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -32,18 +32,19 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [layopt layer=26 visible=true]
 [wait time=10]
 [ptext text="財前 美彬ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
-[ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
-[ptext text="四条、葛城宮、藤枝ルートスクリプト化完了後に作業予定です。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
+;[ptext text="" layer=26 size=17 x=100 y=65 color=darkslateblue]
 *page1
-[glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test11_1_bad" text="11月1週bad" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test11_1_2" text="11月1週_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test11_bad2" text="11月bad2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-[glink target="test11_1_3" text="11月1週_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="test5_1" text="5月(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test11_1_bad" text="11月1週bad" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test11_1_2" text="11月1週_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test11_bad2" text="11月bad2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="test11_1_3" text="11月1週_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
 
 [glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test11_4_1" text="11月4週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -96,8 +97,11 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 
 
-
-
+*test5_1
+[cm]
+[freeimage layer = 26]
+@jump storage="zaizen/zaizen_5_1.ks"
+[s]
 
 *test9_1
 [cm]

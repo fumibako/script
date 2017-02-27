@@ -25,7 +25,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 ;[glink target="test03" text="立ち絵サイズテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 ;[glink target="test04" text="お稽古パート" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test05" text="共通プロローグ後半(opening2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-;[glink target="test06" text="共通散策イベント6" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test06" text="磯野に相談" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 ;[glink target="test07" text="共通散策イベント7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 ;[glink target="test08" text="共通散策イベント8" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 ;[glink target="test09" text="共通散策イベント9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
@@ -323,6 +323,11 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 @jump storage="opening2.ks"
 [s]
 
+*test06
+[cm]
+[freeimage layer = 26]
+@jump storage="common_5_1.ks"
+[s]
 
 *back_test
 [cm]

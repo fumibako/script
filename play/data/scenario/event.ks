@@ -89,6 +89,7 @@ TG.stat.stack["call"] = [];
 *event_owari
 [freeimage layer = 26]
 [freeimage layer = 27]
+@layopt layer=message2 page=fore visible=false
 [skipstop]
 #
 [主人公退場]
@@ -182,6 +183,7 @@ $('.junbi_girl').remove();
 #
 [freeimage layer = 26]
 [freeimage layer = 27]
+@layopt layer=message2 page=fore visible=false
 [主人公退場]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif"]
