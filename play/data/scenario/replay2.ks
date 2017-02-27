@@ -1,8 +1,18 @@
 ;=========================================
-; 回想モード　画面作成
+; 回想モード　画面作成 黒田ルートについては未調整です。
 ;=========================================
 *start
+;プリロードをします。必要ないのでコメント化
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[iscript]
+//f.preload_images_rp_bt_kuroda = ["data/fgimage/bg/replay_kuroda_goodED.jpg","data/fgimage/bg/replay_kuroda_normalED.jpg"];
+//f.preload_images_rp_bt_sijyou = ["data/fgimage/bg/sijyou_CGnomal.png","data/fgimage/bg/sijyou_CGgood.png"];
+//f.preload_images_rp_bt_zaizen = ["data/fgimage/bg/zaizen_CGnomal.jpg,"data/fgimage/bg/zaizen_CGgood.jpg"];
+//f.preload_images_rp_bt_katuragi = ["data/fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg","data/fgimage/bg/katuraginomiya_3_4_goodED_3.jpg"]
+//f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/hujieda_normalED.jpg","data/fgimage/bg/hujieda_goodED.jpg"]
+[endscript]
 
+;ただの画像分岐ボタンです。
 [macro name=replay_image_button2]
 [if exp="mp.end == 1"]
 [button name=rp_bt graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic=&mp.graphic storage=&mp.storage target="&mp.target" folder="mp.folder|fgimage" ]
@@ -71,8 +81,8 @@ $('.end').remove();
 [iscript]
 $(".layer_free").css("opacity",0);
 [endscript]
-[replay_image_button2 end=&sf.ED_kuroda_normal storage="kuroda_3_4_normalED.ks" target="kuroda_3_4_normalED" graphic="bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_kuroda_good storage="kuroda_3_4_goodED.ks" target="kuroda_3_4_goodED" graphic="bg/replay_kuroda_goodED.jpg"  x=270 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_kuroda_normal storage="kuroda_3_4_normalED.ks" target="kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_kuroda_good storage="kuroda_3_4_goodED.ks" target="kuroda_3_4_goodED" graphic="../fgimage/bg/replay_kuroda_goodED.jpg"  x=270 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_kuroda_bad storage="kuroda_3_4_goodED.ks" target="replay_kuroda_12_3_badED" graphic="bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
@@ -99,16 +109,17 @@ $(".layer_free").css("opacity",0);
 @jump target ="*common"
 
 *page_1
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;並んでいるところをみせない
 [iscript]
 $(".layer_free").css("opacity",0);
+$(".list").css("opacity",0);
 [endscript]
 [replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya_3_4.ks" target="replay_katuraginomiya_3_4_nomalED" graphic="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_katuraginomiya_good storage="katuraginomiya_3_4_goodED.ks" target="replay_katuraginomiya_3_4_goodED" graphic="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya_11_1badED.ks" target="replay_katuraginomiya_11_1badED" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 
-;"sf.record.trail_シナリオファイル名_ラベル名"
-[trace exp="sf.record.katuraginomiya_replay_katuraginomiya_9_1"]
+
 [if exp="sf.record_katuraginomiya_9_1 > 1"]
 [ptext name=list layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="葛城宮ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
@@ -122,8 +133,7 @@ $(".layer_free").css("opacity",0);
 [replay_image_button2 end=&sf.ED_hujieda_good storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED" graphic="../fgimage/bg/hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_hujieda_bad storage="hujieda/hujieda_12_3_badED.ks" target="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 
-;"sf.record.trail_シナリオファイル名_ラベル名"
-[trace exp="sf.record_hujieda_9_1"]
+
 [if exp="sf.record.trail_hujieda_replay_hujieda_9_1 > 1"]
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
@@ -140,6 +150,8 @@ $(".layer_free").css("opacity",0);
 *common
 [iscript]
 $(".layer_free").css("opacity",1);
+$(".list").css("opacity",1);
+$('.loding_pic1').remove();
 [endscript]
 @layopt layer=2 visible=true
 [s]
@@ -227,7 +239,7 @@ TG.stat.play_se = true;
 [endscript]
 
 
-;@jump storage=&tf.selected_replay_obj.storage target=&tf.selected_replay_obj.target
+
 [s]
 
 *no_image
