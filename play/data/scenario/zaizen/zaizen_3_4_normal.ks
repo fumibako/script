@@ -6,6 +6,9 @@
 ;イベント10回目【財前母の誕生日パーティ】3月4週、
 ;=======================お芝居の準備中です==========================================
 *replay_zaizen_3_4_normal
+[iscript]
+$('.list').remove();
+[endscript]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*3_4_normal storage="zaizen/preload_zaizen.ks"]
