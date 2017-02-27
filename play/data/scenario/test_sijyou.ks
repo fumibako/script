@@ -417,6 +417,10 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 *no1
 [iscript]
+sf.ED_kuroda_bad=0;
+sf.ED_kuroda_normal=0;
+sf.ED_kuroda_good=0;
+
 sf.ED_sijyou_bad=0;
 sf.ED_sijyou_normal=0;
 sf.ED_sijyou_good=0;
@@ -438,6 +442,10 @@ sf.ED_hujieda_bad=0;
 
 *yes1
 [iscript]
+sf.ED_kuroda_bad=1;
+sf.ED_kuroda_normal=1;
+sf.ED_kuroda_good=1;
+
 sf.ED_sijyou_bad=1;
 sf.ED_sijyou_normal=1;
 sf.ED_sijyou_good=1;
