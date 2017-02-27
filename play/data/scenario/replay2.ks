@@ -4,7 +4,6 @@
 *start
 [clearstack]
 ;プリロードをします。必要ないのでコメント化
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [iscript]
 //f.preload_images_rp_bt_kuroda = ["data/fgimage/bg/replay_kuroda_goodED.jpg","data/fgimage/bg/replay_kuroda_normalED.jpg"];
 //f.preload_images_rp_bt_sijyou = ["data/fgimage/bg/sijyou_CGnomal.png","data/fgimage/bg/sijyou_CGgood.png"];
@@ -45,6 +44,7 @@
 
 
 *replaypage
+[image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [cm]
 ;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていいと思いますが置いてあります
 [if exp="tf.page == 0"]
@@ -110,7 +110,7 @@ $(".layer_free").css("opacity",0);
 @jump target ="*common"
 
 *page_1
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;並んでいるところをみせない
 [iscript]
 $(".layer_free").css("opacity",0);
