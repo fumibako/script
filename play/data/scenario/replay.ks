@@ -69,7 +69,7 @@ $('.end').remove();
 
 [replay_image_button name="replay_zaizen_3_4_normal_scene" graphic="../fgimage/bg/zaizen_CGnomal.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_zaizen_3_4_good_scene" graphic="../fgimage/bg/zaizen_CGgood.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=270 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button name="replay_zaizen_11_1_bad1_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button name="replay_zaizen_11_1_bad1_scene" graphic="../fgimage/bg/replay_zaizen_bad1ED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
 [replay_image_button name="replay_zaizen_11_bad2_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="財前ルート　:　normalEND" x=50 y=560 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="財前ルート　:　goodEND" x=270 y=560 size=17 color=navy visible=true]
