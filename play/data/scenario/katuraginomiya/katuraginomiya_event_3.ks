@@ -374,8 +374,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 微笑み[r]
 [主人公目閉]
-（私は、いつもの様に私らしく、殿下が好意を寄せて下さった私に[r]
-[sp]自信を持つのだわ）[p]
+（私は、いつもの様に自分らしく振る舞おう。殿下が好意を寄せて[r] 
+[sp]下さったことに自信を持つのだわ）[p] 
 #
 ;[葛城宮退場]
 [葛城宮退場準備 storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=300]
