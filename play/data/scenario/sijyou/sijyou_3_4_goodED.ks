@@ -350,8 +350,14 @@ $('.1_fore').remove();
 [endif]
 [イベントシーン終了]
 ;回想下までいってしまいます
+
 ;回想記録終了
 [endreplay]
+
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
 
 ;ending処理待ち
 [if exp="tf.okeiko_gamen==true"]
