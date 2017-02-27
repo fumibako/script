@@ -5,6 +5,9 @@
 *replay_sijyou_3_4_normalED
 *replay_sijyou_3_4_good
 [setreplay name="replay_sijyou_3_4_normalED_scene" storage="sijyou/sijyou_3_4_goodED.ks" target="start"]
+[iscript]
+$('.list').remove();
+[endscript]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
