@@ -4,6 +4,9 @@
 *replay_katuraginomiya_11_1badED_scene
 *start
 *replay_katuraginomiya_11_1badED
+[iscript]
+$('.list').remove();
+[endscript]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*11_1badED storage="katuraginomiya/preload_katuraginomiya.ks"]
@@ -141,6 +144,11 @@ $('.1_fore').remove();
 
 ;回想記録終了 ifからだしておいてください
 [endreplay] 
+
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
 
 [if exp="tf.okeiko_gamen==true"]
 [eval exp="sf.ED_katuraginomiya_bad=1"]
