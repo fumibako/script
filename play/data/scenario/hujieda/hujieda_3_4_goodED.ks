@@ -4,6 +4,7 @@
 *replay_hujieda_hujieda_3_4_goodED
 *replay_hujieda_hujieda_3_4_goodED_scene
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 *start
