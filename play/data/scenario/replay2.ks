@@ -82,8 +82,8 @@ $('.end').remove();
 [iscript]
 $(".layer_free").css("opacity",0);
 [endscript]
-[replay_image_button2 end=&sf.ED_kuroda_normal storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_goodED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_kuroda_good storage="kuroda_3_4_goodED.ks" target="replay_kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_goodED.jpg"  x=270 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_kuroda_normal storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_kuroda_good storage="kuroda_3_4_goodED.ks" target="replay_kuroda_3_4_goodED" graphic="../fgimage/bg/replay_kuroda_goodED.jpg"  x=270 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_kuroda_bad storage="kuroda_3_4_goodED.ks" target="replay_kuroda_12_3_badED" graphic="bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
