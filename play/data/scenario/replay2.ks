@@ -60,16 +60,16 @@ $('.end').remove();
 [endscript]
 
 *page_0
-[replay_image_button2 name="kuroda_3_4_normalED_scene" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="kuroda_3_4_goodED_scene" graphic="../fgimage/bg/replay_kuroda_goodED.jpg"  x=270 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_kuroda_12_3_badED_scene" graphic="../fgimage/bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 storage="kuroda_3_4_normalED.ks" name="kuroda_3_4_normalED_scene" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 storage="kuroda_3_4_goodED.ks" name="kuroda_3_4_goodED_scene" graphic="../fgimage/bg/replay_kuroda_goodED.jpg"  x=270 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 storage="kuroda_3_4_goodED.ks" name="replay_kuroda_12_3_badED_scene" graphic="../fgimage/bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="黒田ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="黒田ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 
-[replay_image_button2 name="replay_sijyou_3_4_normalED_scene" graphic="../fgimage/bg/sijyou_CGnomal.png"  x=50 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_sijyou_3_4_goodED_scene" graphic="../fgimage/bg/sijyou_CGgood.png"  x=270 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_sijyou_10_3badED_scene" graphic="../fgimage/bg/replay_sijyou_badlED.jpg"x=490 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 storage="sijyou/sijyou_3_4_goodED.ks" name="replay_sijyou_3_4_normalED_scene" graphic="../fgimage/bg/sijyou_CGnomal.png" x=50 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 storage="sijyou/sijyou_3_4_epilogue_goodED.ks" name="replay_sijyou_3_4_goodED_scene" graphic="../fgimage/bg/sijyou_CGgood.png" x=270 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 storage="sijyou/sijyou_10_3_badED.ks" name="replay_sijyou_10_3badED_scene" graphic="../fgimage/bg/replay_sijyou_badlED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="四条ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
