@@ -1,6 +1,9 @@
 [setreplay name="replay_sijyou_10_3badED_scene" storage="sijyou/sijyou_10_3_badED.ks" target="start"]
 *replay_sijyou_10_3badED
 *replay_sijyou_10_3badED_scene
+[iscript]
+$('.list').remove();
+[endscript]
 *start
 ;¥¥¥¥¥¥¥¥イベントバッド_イベント5.5手紙イベントバット¥¥¥¥¥¥¥¥
 ;○数日後手紙がかえってくる
@@ -117,6 +120,7 @@ $('.1_fore').remove();
 
 ;↓ifからだしておいてください↓
 [endreplay]
+
 [if exp="f.flag_replay==true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
