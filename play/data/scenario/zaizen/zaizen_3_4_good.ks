@@ -1,5 +1,8 @@
 ;=======================お芝居の準備中です==========================================
 *replay_zaizen_3_4_good
+[iscript]
+$('.list').remove();
+[endscript]
 *start
 [stopbgm]
 [if exp="tf.test_zaizen == true"]
