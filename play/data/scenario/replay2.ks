@@ -5,7 +5,7 @@
 
 [macro name=replay_image_button2]
 [if exp="mp.end==1"]
-[button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="mp.graphic" storage="mp.storage|replay2.ks" target="mp.target|*clickcg" folder="mp.folder|fgimage" ]
+[button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="&mp.graphic" storage="&mp.storage|replay2.ks" target="&mp.target|*clickcg" folder="mp.folder|fgimage" ]
 ;exp="tf.selected_cg_image = preexp"
 [else]
 [button graphic=&mp.no_graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic=""../fgimage/bg/cg_bg.jpg"" storage="replay2.ks" target="*no_image" folder="bgimage" ]
