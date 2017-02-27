@@ -3,7 +3,7 @@
 ;=========================================
 *start
 
-[macro name=replayimage_button2]
+[macro name=replay_image_button2]
 [if exp="mp.end==true"]
 [button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height preexp="mp.graphic"  storage="mp.storage|cg.ks" target="mp.target|*clickcg" folder="bgimage" ]
 ;exp="tf.selected_cg_image = preexp"
