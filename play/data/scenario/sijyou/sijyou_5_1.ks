@@ -54,14 +54,16 @@
 [p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 （でも、あの頃の四条様より、少し、お手紙の内容が……）[p]
 
+;どうしても呼びかけないと不自然
 [whosay name=磯野 color="dimgray"]
-「お嬢様。　お久しぶりのやりとりで、四条様も難しくお考え[r]
-[sp]かもしれません。[r]
+「お嬢様。　お久しぶりのやりとりで、四条様も難しく[r]
+[sp]お考えかもしれません。[r]
 [sp]ですが、根気よく返事をお出しください」[p]
-
+;くださりませ
 
 [主人公目パチ1回]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
