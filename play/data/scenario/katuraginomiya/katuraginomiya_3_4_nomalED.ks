@@ -4,6 +4,10 @@
 ;↓回想シーンスタートはnormal/goodどちらもここから始まるのが自然かと思いますので、この位置に置いてみます
 [setreplay name="replay_katuraginomiya_3_4_nomalED_scene" storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="start"]
 [setreplay name="replay_katuraginomiya_3_4_goodED_scene" storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="start"]
+*replay_katuraginomiya_3_4_nomalED_scene
+[iscript]
+$('.list').remove();
+[endscript]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -301,6 +305,11 @@ $('.1_fore').remove();
 
 ;ifからだしておいてください
 [endreplay]
+
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
 
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました。マクロの動作がうまくいかない場合にまた変更する可能性があります(スクリプト担
 [if exp="tf.okeiko_gamen==true"]
