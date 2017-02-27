@@ -1,5 +1,7 @@
 [setreplay name="test"]
 *test
+[image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
@@ -99,6 +101,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_page4" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
+
 [s]
 
 
@@ -131,6 +134,9 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
 
+[iscript]
+$('.loding_pic1').remove();
+[endscript]
 [s]
 
 *test5_1
