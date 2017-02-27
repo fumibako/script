@@ -298,7 +298,7 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 [chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=100]
 [wait time=10]
 ;ここでとまる
-うごいてますか？[p]
+;うごいてますか？[p]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;===============================================================
 ;「忍耐」
@@ -308,7 +308,8 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 ;【背景】青空に桜
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [wait time=10]
-[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
+;ここでとまる
+;[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 ;===============================================================
 ;「忍耐」
 それでも、貴方を信じて、隣に立とうと寄り添った。[r]
