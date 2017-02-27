@@ -295,9 +295,11 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 ;私をいつも兄と一緒に暖かく見守ってくださった。[p]
 ;===============================================================
 ;【背景】ヒロインの部屋雪
-[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1300]
+[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=100]
 [wait time=10]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;ここでとまる
+うごいてますか？[p]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;===============================================================
 ;「忍耐」
 大人になって、離れた時も、迷った時もあった。[p]
