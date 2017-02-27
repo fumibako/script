@@ -4,7 +4,7 @@
 *start
 
 [macro name=replay_image_button2]
-[if exp="mp.end==true"]
+[if exp="mp.end==1"]
 [button graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="mp.graphic" storage="mp.storage|replay2.ks" target="mp.target|*clickcg" folder="bgimage" ]
 ;exp="tf.selected_cg_image = preexp"
 [else]
@@ -22,6 +22,7 @@ $(".layer_free").css("opacity",0);
 [endscript]
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=100]
+;タイトルで使うことを想定＿[chara_mod name="bg" storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [layopt layer=3 visible=true]
 [ptext layer=3 page=fore text="思ひ出　(Ending List)" x=20 y=20 size=26 color=0xA8401C visible=true]
 
@@ -70,8 +71,10 @@ $('.end').remove();
 [ptext layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="黒田ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 
-[replay_image_button2 storage="sijyou/sijyou_3_4_goodED.ks" name="replay_sijyou_3_4_normalED_scene" graphic="../fgimage/bg/sijyou_CGnomal.png" x=50 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 storage="sijyou/sijyou_3_4_epilogue_goodED.ks" name="replay_sijyou_3_4_goodED_scene" graphic="../fgimage/bg/sijyou_CGgood.png" x=270 y=240 width=200 height=130 folder="bgimage"]
+;sf.ED_sijyou_normal
+;sf.ED_sijyou_normal
+[replay_image_button2 end=&sf.ED_sijyou_normal storage="sijyou/sijyou_3_4_goodED.ks" name="replay_sijyou_3_4_normalED_scene" graphic="../fgimage/bg/sijyou_CGnomal.png" x=50 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_sijyou_good storage="sijyou/sijyou_3_4_epilogue_goodED.ks" name="replay_sijyou_3_4_goodED_scene" graphic="../fgimage/bg/sijyou_CGgood.png" x=270 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 storage="sijyou/sijyou_10_3_badED.ks" name="replay_sijyou_10_3badED_scene" graphic="../fgimage/bg/replay_sijyou_badlED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="四条ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
