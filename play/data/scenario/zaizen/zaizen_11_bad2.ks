@@ -189,6 +189,11 @@ $('.1_fore').remove();
 ;回想記録終了 
 [endreplay]
 
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
+
 [財前ルート終了 end="bad1"]
 
 @jump storage="test_zaizen.ks"
