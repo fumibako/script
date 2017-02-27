@@ -3,6 +3,9 @@
 ;=======================お芝居の準備中です==================================
 [setreplay name="replay_hujieda_badED_scene" storage="hujieda/hujieda_12_3_badED.ks" target="start"]
 *replay_hujieda_badED_scene
+[iscript]
+$('.list').remove();
+[endscript]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -160,6 +163,11 @@ $('.1_fore').remove();
 
 ;◆回想記録
 [endreplay]
+
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
 
 [if exp="tf.okeiko_gamen==true"]
 [藤枝ルート終了 end="bad"]
