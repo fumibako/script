@@ -6,6 +6,7 @@
 [setreplay name="replay_katuraginomiya_3_4_goodED_scene" storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="start"]
 *replay_katuraginomiya_3_4_nomalED_scene
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 *start
