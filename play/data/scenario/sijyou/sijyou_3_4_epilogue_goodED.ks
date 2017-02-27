@@ -265,6 +265,10 @@ $('.1_fore').remove();
 
 ;回想記録終了ifからだしておいてください
 [endreplay] 
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
 
 [イベントシーン終了・ＢＧＭ有]
 ;ending処理
