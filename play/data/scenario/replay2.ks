@@ -85,10 +85,10 @@ $('.end').remove();
 [ptext layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
 
-[replay_image_button2 name="replay_zaizen_3_4_normal_scene" graphic="../fgimage/bg/zaizen_CGnomal.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_zaizen_3_4_good_scene" graphic="../fgimage/bg/zaizen_CGgood.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_zaizen_11_1_bad1_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_zaizen_11_bad2_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_normal name="replay_zaizen_3_4_normal_scene" graphic="../fgimage/bg/zaizen_CGnomal.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_good name="replay_zaizen_3_4_good_scene" graphic="../fgimage/bg/zaizen_CGgood.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_bad1 name="replay_zaizen_11_1_bad1_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_bad2 name="replay_zaizen_11_bad2_scene" graphic="../fgimage/bg/replay_zaizem_badED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
 [ptext layer=2 page=fore text="財前ルート　:　normalEND" x=50 y=560 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="財前ルート　:　goodEND" x=270 y=560 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="財前ルート　:　badEND1" x=490 y=560 size=17 color=navy visible=true]
@@ -98,13 +98,13 @@ $('.end').remove();
 
 *page_1
 
-[replay_image_button2 name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_normal name="replay_katuraginomiya_3_4_nomalED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_normal name="replay_katuraginomiya_3_4_goodED_scene" graphic="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_normal name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/replay_katuraginomiya_11_1badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 
 ;"sf.record.trail_シナリオファイル名_ラベル名"
 [trace exp="sf.record.katuraginomiya_replay_katuraginomiya_9_1"]
-[if exp="sf.record.replay_katuraginomiya_katuraginomiya_9_1 > 1"]
+[if exp="sf.record_katuraginomiya_9_1 > 1"]
 [ptext layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="葛城宮ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="葛城宮ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
@@ -113,12 +113,12 @@ $('.end').remove();
 [ptext layer=2 page=fore text="？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="？ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 [endif]
-[replay_image_button2 name="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 name="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_hujieda_normal name="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_hujieda_good name="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_hujieda_bad name="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 
 ;"sf.record.trail_シナリオファイル名_ラベル名"
-[trace exp="sf.record.trail_hujieda_replay_hujieda_9_1"]
+[trace exp="sf.record_hujieda_9_1"]
 [if exp="sf.record.trail_hujieda_replay_hujieda_9_1 > 1"]
 [ptext layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="藤枝ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
