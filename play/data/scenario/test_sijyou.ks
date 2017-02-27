@@ -408,8 +408,8 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [s]
 
 *test_replay2
-ＣＧとリプレイを解放します[p]
-[iscipt]
+;ＣＧとリプレイを解放します
+[iscript]
 sf.ED_sijyou_bad=1;
 sf.ED_sijyou_normal=1;
 sf.ED_sijyou_good=1;
@@ -426,7 +426,7 @@ sf.ED_katuraginomiya_bad=1;
 sf.ED_hujieda_good=1;
 sf.ED_hujieda_normal=1;
 sf.ED_hujieda_bad=1;
-[endscipt]
+[endscript]
 
 *test_save
 [cm]
