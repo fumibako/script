@@ -3,6 +3,7 @@
 *replay_katuraginomiya_3_4epilogue_goodED
 *replay_katuraginomiya_3_4_goodED
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 *start
