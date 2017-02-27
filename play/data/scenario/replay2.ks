@@ -2,6 +2,7 @@
 ; 回想モード　画面作成 黒田ルートについては未調整です。
 ;=========================================
 *start
+[clearstack]
 ;プリロードをします。必要ないのでコメント化
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [iscript]
