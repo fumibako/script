@@ -267,14 +267,17 @@ $('.1_fore').remove();
 
 ;回想記録終了ifからだしておいてください
 [endreplay] 
+
 [if exp="f.flag_replay==true"]
+[イベントシーン終了]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
 
 [イベントシーン終了・ＢＧＭ有]
-;ending処理
+;テストでもみれるように↑
 [if exp="tf.okeiko_gamen==true"]
+;ending処理
 ;goodエンディング時
 [eval exp="sf.ED_sijyou_good=1"]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
@@ -282,6 +285,7 @@ $('.1_fore').remove();
 [else]
 [四条ルート終了 end=good]
 [endif]
+
 
 @jump storage="test_sijyou.ks"
 [s]
