@@ -6,12 +6,14 @@
 *replay_kuroda_3_4_normalED
 [call target=*start storage="tyrano.ks"]
 [setreplay name="kuroda_3_4_normalED_scene" storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED_1"]
-
+[cm]
 [iscript]
 $(".list").remove();
 $(".rp_bt").remove();
 [endscript]
 [if exp="f.flag_replay==true"]
+[cm]
+@layopt layer=14 visible=true
 [back storage="toumei.gif" time=1]
 [endif]
 
