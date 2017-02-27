@@ -657,6 +657,11 @@ $('.1_fore').remove();
 ;↓ifからだしておいてください↓
 [endreplay]
 
+[if exp="f.flag_replay==true"]
+;web版はendreplayの下にするexe版はendreplayで戻る
+@jump storage="replay2.ks"
+[endif]
+
 ;◆normalED終了処理へ
 [if exp="tf.okeiko_gamen==true"]
 [財前ルート終了 end="normal"]
