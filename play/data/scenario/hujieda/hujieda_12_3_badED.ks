@@ -7,6 +7,10 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[if exp="f.flag_replay==true"]
+;暗転とは違う
+[back storage="toumei.gif" time=1]
+[endif]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
