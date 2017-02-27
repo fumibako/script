@@ -6,6 +6,7 @@
 *replay_sijyou_3_4_good
 [setreplay name="replay_sijyou_3_4_normalED_scene" storage="sijyou/sijyou_3_4_goodED.ks" target="start"]
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 *start
