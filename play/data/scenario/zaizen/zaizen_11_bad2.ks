@@ -4,6 +4,7 @@
 *replay_zaizen_11_bad2
 *start
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 ;=======================お芝居の準備中です==========================================
