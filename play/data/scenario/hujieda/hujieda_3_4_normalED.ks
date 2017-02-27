@@ -5,6 +5,7 @@
 [setreplay name="replay_hujieda_hujieda_3_4_normalED_scene" storage="hujieda/ｈujieda_3_4_normalED.ks" target="start"]
 *replay_hujieda_hujieda_3_4_normalED_scene
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 *start
