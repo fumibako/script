@@ -436,7 +436,7 @@ sf.ED_hujieda_bad=0;
 [endscript]
 @jump target=test_page1
 
-*yes
+*yes1
 [iscript]
 sf.ED_sijyou_bad=1;
 sf.ED_sijyou_normal=1;
