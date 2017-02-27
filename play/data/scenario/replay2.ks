@@ -176,6 +176,7 @@ $(".layer_free").css("opacity",1);
 @jump storage=title.ks
 
 *nextpage
+[image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [emb exp="tf.page++;"]
 [clearstack]
 [freeimage layer=2]
@@ -184,6 +185,7 @@ $(".layer_free").css("opacity",1);
 
 
 *backpage
+[image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [emb exp="tf.page--;"]
 [clearstack]
 [freeimage layer=2]
