@@ -409,6 +409,33 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 
 *test_replay2
 ;ＣＧとリプレイを解放します
+[glink target="yes1" text="フラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+[glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
+[glink target="no2" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
+
+[s]
+*no1
+[iscript]
+sf.ED_sijyou_bad=0;
+sf.ED_sijyou_normal=0;
+sf.ED_sijyou_good=0;
+
+sf.ED_zaizen_normal=0;
+sf.ED_zaizen_good=0;
+sf.ED_zaizen_bad1=0;
+sf.ED_zaizen_bad2=0;
+
+sf.ED_katuraginomiya_normal=0;
+sf.ED_katuraginomiya_good=0;
+sf.ED_katuraginomiya_bad=0;
+
+sf.ED_hujieda_good=0;
+sf.ED_hujieda_normal=0;
+sf.ED_hujieda_bad=0;
+[endscript]
+@jump target=test_page1
+
+*yes
 [iscript]
 sf.ED_sijyou_bad=1;
 sf.ED_sijyou_normal=1;
@@ -427,6 +454,9 @@ sf.ED_hujieda_good=1;
 sf.ED_hujieda_normal=1;
 sf.ED_hujieda_bad=1;
 [endscript]
+*no2
+@jump target=test_page1
+[s]
 
 *test_save
 [cm]
