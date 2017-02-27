@@ -4,6 +4,7 @@
 [setreplay name="replay_hujieda_badED_scene" storage="hujieda/hujieda_12_3_badED.ks" target="start"]
 *replay_hujieda_badED_scene
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 *start
