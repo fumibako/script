@@ -2,6 +2,7 @@
 *replay_sijyou_10_3badED
 *replay_sijyou_10_3badED_scene
 [iscript]
+$('rp_bt').remove();
 $('.list').remove();
 [endscript]
 *start
