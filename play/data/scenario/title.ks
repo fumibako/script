@@ -43,7 +43,7 @@
 [button name="button_title_cg" graphic="button_title_cg.png" target="*cg" time=0]
 
 [locate x=150 y=130]
-[button name="button_title_replay" graphic="button_title_replay.png" target="*replay" time=0]
+;[button name="button_title_replay" graphic="button_title_replay.png" target="*replay" time=0]
 
 [locate x=50 y=50]
 [button name="button_title_credit" graphic="button_title_credit.png" target="*credit" time=0]
