@@ -30,7 +30,7 @@
 [endif]
 ;================================================
 ;◆四条イベント判定 sijyou_sansaku4.ks(11月3週→12～1月末)
-[if exp="(f.okeiko_month == 12 || f.okeiko_month == 1) && f.event_machi_sijyou[4] == 0 && f.sijyou_au == 1  && f.sijyou_event6==1"]
+[if exp="(f.okeiko_month == 12 || f.okeiko_month == 1) && f.event_machi_sijyou[4] == 0 && f.sijyou_au == 1  && f.sijyou_event6 == 1"]
 	[eval exp="f.event_machi_sijyou[4]=1"]
 	@jump storage="sijyou/sijyou_sansaku4.ks" 
 	;target=*sansaku
