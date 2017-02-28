@@ -641,8 +641,8 @@ f.okeiko_month_kansuuji="三月 ";
 
 [eval exp="f.test='手紙到着可能性なし'"]
 ;↓藤枝との手紙開始していれば判定スタート
-[if exp="f.hujieda_fumi_start==1 && f.hujieda_fumi_henjimachi <= parseInt([sf.hujieda['fumi_henjimachi_ok_number']])"]
-	[eval exp="f.hujieda_fumi_toutyakumachi_week=f.hujieda_fumi_toutyakumachi_week+1"]
+[if exp="f.hujieda_fumi_start == 1 && f.hujieda_fumi_henjimachi <= parseInt([sf.hujieda['fumi_henjimachi_ok_number']])"]
+	[eval exp="f.hujieda_fumi_toutyakumachi_week = f.hujieda_fumi_toutyakumachi_week + 1"]
 [endif]
 [if exp="f.hujieda_fumi_toutyakumachi_week >= parseInt([sf.hujieda['fumi_hindo_week']])"]
 @jump target=*hantei_list_hujieda
@@ -762,17 +762,6 @@ f.okeiko_month_kansuuji="三月 ";
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_26
 [endif]
-
-;手紙到着：条件有りが該当しなければ、条件無し分が到着
-		[eval exp="f.target_fumi_toutyaku='*fumi_toutyaku_hujieda_'+f.hujieda_nextfumi_common"]
-		[eval exp="f.test='手紙到着'+f.target_fumi_toutyaku"]
-		[iscript]
-		f.fumi_toutyaku_oaite.push('藤枝様');
-		[endscript]
-		[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-		[eval exp="f.hujieda_fumi_toutyakumachi_week=0"]
-		[eval exp="f.hujieda_nextfumi_common=f.hujieda_nextfumi_common+1"]
-		@jump storage="fumi_toutyaku_shori_list.ks" target=&f.target_fumi_toutyaku
 *fumi_toutyaku_hantei_hujieda_owari
 
 *fumi_toutyaku_hantei_kobetu_owari
@@ -895,7 +884,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;◆到着判定時の共通処理：藤枝
 *hujieda_toutyaku_hantei_shori_common
 ;↓鳩から届く間(9月2週～10月4週)の到着メッセージ
-[if exp="f.okeiko_month == 10 || (f.okeiko_month == 9 && f.okeiko_week != 1)"]
+[if exp="f.okeiko_month == 10 || f.okeiko_month == 9"]
 	[eval exp="f.hato = 1"]
 	[eval exp="f.fumi_toutyaku_info_hato='鳩が訪れました。お手紙を受け取りました。'"]
 [else]

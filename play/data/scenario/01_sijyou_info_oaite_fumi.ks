@@ -34,20 +34,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page1'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page1
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou
@@ -89,23 +79,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-;7f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-;8f.fumi_sijyou_y=[emb exp ="f.fumi_sijyou_y"][r]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page2'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page2
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou2
@@ -150,21 +127,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-;f.midoku_list_hairetsu=[emb exp ="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]"][r]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page3'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page3
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou3
@@ -206,20 +172,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page4'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page4
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou4
@@ -261,20 +217,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page5'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page5
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou5
@@ -314,20 +260,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page6'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page6
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou6
@@ -367,20 +303,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page7'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page7
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou7
@@ -420,20 +346,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page8'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page8
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou8
@@ -473,20 +389,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page9'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page9
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou9
@@ -526,20 +432,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page10'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page10
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou10
@@ -579,20 +475,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page11'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page11
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou11
@@ -632,20 +518,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page12'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page12
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou12
@@ -686,20 +562,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page13'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page13
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou13
@@ -740,20 +606,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page14'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page14
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou14
@@ -794,20 +650,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page15'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page15
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou15
@@ -848,20 +694,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page16'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page16
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou16
@@ -902,20 +738,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page17'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page17
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou17
@@ -956,20 +782,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page18'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page18
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou18
@@ -1010,20 +826,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page19'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page19
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou19
@@ -1064,20 +870,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page20'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page20
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou20
@@ -1117,20 +913,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page21'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page21
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou21
@@ -1171,20 +957,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page22'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page22
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou22
@@ -1225,20 +1001,10 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page23'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page23
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou23
@@ -1279,28 +1045,15 @@
 	f.fumi_hairetsu1 = 2;
 	f.fumi_hairetsu2 = f.fumi_list_sijyou_location_fumi[f.list_count];
 [endscript]
-[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[else]
-[endif]
-[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]==0"]
-	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target exp="f.fumi_atesaki='sijyou'; f.fumi_henjityu=1;" text="返信" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
-[else]
-	[ptext text="返信済" layer=28 size=15 x=850 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
-[endif]
-[if exp="f.fumi_sijyou_number==0"]
-[else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
-[endif]
+;◆四条手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_sijyou_page24'"]
+@jump target=*fumi_hyouji_sijyou
+*fumi_hyouji_owari_sijyou_page24
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou24
 [endif]
 [s]
-
-
-
 
 
 *info_sijyou_hyouji
@@ -1346,4 +1099,27 @@
 [return]
 [s]
 
-[return]
+;======================================================================================
+;◆◆「情報」四条：手紙表示部分処理◆◆
+;======================================================================================
+*fumi_hyouji_sijyou
+;◆未読の表示
+[if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
+	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
+[endif]
+;◆返信ボタンを必要時に表示
+[if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
+	[ptext text="返信済" layer=28 size=15 x=840 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
+[elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.sijyou_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
+;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
+[else]
+	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
+	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
+[endif]
+;◆手紙タイトルを並べて表示
+[if exp="f.fumi_sijyou_number == 0"]
+[else]
+	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+[endif]
+@jump target=&tf.fumi_hyouji_owari_target
+

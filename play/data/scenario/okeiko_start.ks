@@ -175,7 +175,7 @@ f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("1日のはじまりの話題",0,2,1,1,1,"a","","","","");
 [endscript]
-『一日のはじまりの話題』を手に入れました。[p]
+『1日のはじまりの話題』を手に入れました。[p]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
@@ -257,20 +257,6 @@ f.okeiko_month_kansuuji="二月 ";
 if (f.okeiko_month==3){
 f.okeiko_month_kansuuji="三月 ";
 }
-//葛城宮手紙到着準備
-f.fumi_list_katuraginomiya_location_fumi = [];
-f.fumi_list_katuraginomiya_location_fumi[0] = 1;
-f.fumi_list_katuraginomiya_title = [];
-f.fumi_list_katuraginomiya_title[0] = "六月 「最初の手紙」";
-f.fumi_list_katuraginomiya_target = [];
-f.fumi_list_katuraginomiya_target[0] = "*katuraginomiya_fumi00";
-//藤枝手紙到着準備
-f.fumi_list_hujieda_location_fumi = [];
-f.fumi_list_hujieda_location_fumi[0] = 1;
-f.fumi_list_hujieda_title = [];
-f.fumi_list_hujieda_title[0] = "四月 「鳩の届けた手紙 一」";
-f.fumi_list_hujieda_target = [];
-f.fumi_list_hujieda_target[0] = "*hujieda_fumi01";
 [endscript]
 
 [stopbgm]
@@ -474,6 +460,42 @@ f.fumi_sijyou_number = f.fumi_list_sijyou_title.length;
 if (f.sijyou_fumi1_midoku == 0){
 f.midoku_list_hairetsu[2][0] = 0;
 }
+
+if (f.event_katuraginomiya[1] == 1){
+	//葛城宮手紙到着準備
+	f.fumi_list_all_title.push("六月 「最初の手紙」 葛城宮 晴仁");
+	f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+	f.fumi_list_all_target.push("*katuraginomiya_fumi00");
+	f.fumi_list_all_location_taishou.push(3);
+	f.fumi_list_all_location_fumi.push(0);
+
+	f.fumi_list_katuraginomiya_location_fumi = [];
+	f.fumi_list_katuraginomiya_location_fumi[0] = 1;
+	f.fumi_list_katuraginomiya_title = [];
+	f.fumi_list_katuraginomiya_title[0] = "六月 「最初の手紙」";
+	f.fumi_list_katuraginomiya_target = [];
+	f.fumi_list_katuraginomiya_target[0] = "*katuraginomiya_fumi00";
+	f.midoku_list_hairetsu[3][1] = 0;
+}
+if (f.event_hujieda[1] == 1){
+	//藤枝手紙到着準備
+	f.fumi_all_title_new="四月 「鳩の届けた手紙　一」"; //←仮タイトルです。お好みに変更してください
+	f.fumi_hujieda_title_new="四月 「鳩の届けた手紙　一」"; //←仮タイトルです。お好みに変更してください
+	f.fumi_list_all_title.push(f.fumi_all_title_new);
+	f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+	f.fumi_list_all_target.push("*hujieda_fumi01");
+	f.fumi_list_all_location_taishou.push(4);
+	f.fumi_list_all_location_fumi.push(1);
+	f.fumi_list_hujieda_location_fumi = [];
+	f.fumi_list_hujieda_location_fumi[0] = 1;
+	f.fumi_list_hujieda_title = [];
+	f.fumi_list_hujieda_title[0] = "四月 「鳩の届けた手紙 一」";
+	f.fumi_list_hujieda_target = [];
+	f.fumi_list_hujieda_target[0] = "*hujieda_fumi01";
+	f.hensin_list_hairetsu[4][1] = -1;
+	f.midoku_list_hairetsu[4][1] = 0;
+}
+
 /*
 f.fumi_list_all_title.push("「最初の手紙」　葛城宮 晴仁");
 f.fumi_list_all_storage.push("fumi_katuraginomiya.ks");
