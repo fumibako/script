@@ -56,7 +56,7 @@
 [endif]
 ;================================================
 ;◆四条イベント判定条 sijyou_sansaku7.ks(香水イベント　３月華道パラメータ一定値以上、四条好感度一定値以上)数値は適当
-[if exp="f.okeiko_month == 3 && f.event_machi_sijyou[7]==0 && f.para_shujinkou_j_kadou > 100 && f.para_sijyou_koukando > 80 && f.sijyou_au == 1"]
+[if exp="f.okeiko_month == 3 && f.event_machi_sijyou[7] == 0 && f.para_shujinkou_j_kadou > 100 && f.para_sijyou_koukando > 80 && f.sijyou_au == 1"]
 	[eval exp="f.event_machi_sijyou[7]=1"]
 	@jump storage="sijyou/sijyou_sansaku4.ks" 
 	;target=*sansaku
