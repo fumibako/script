@@ -1,9 +1,13 @@
-﻿;=============================================
+﻿﻿;=============================================
 ;◆黒田イベント【分岐：normalED】黒田ルートかつ3月4週になった時点で淑女度一定値未満、好感度一定値未満で1度だけ発生
 ;=============================================
 
-
 *replay_kuroda_3_4_normalED
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_kuroda.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+
 [call target=*start storage="tyrano.ks"]
 [setreplay name="kuroda_3_4_normalED_scene" storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED_1"]
 [cm]
@@ -23,104 +27,19 @@ $(".rp_bt").remove();
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-
-;メッセージ窓画像の仮表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[freeimage layer = 14]
-[chara_new name="message_bg" storage="toumei.gif"]
-[chara_show left=1 top=391 layer=14 name="message_bg"]
-
-;名前表示用のマクロ(ティラノ公式サンプルゲーム『MikuPod』を参考にしています)
-[macro name="whosay"]
-[eval exp="sf.father_name='浩文'"]
-;入力された名前によって色を変更
-[iscript]
-if(mp.name=="文矢"){
-    mp.color = "Teal";
-}else if(mp.name==sf.girl_namae){
-    mp.color = "#cf5a7f";
-}else if(mp.name=="磯野"){
-    mp.color = "dimgray";
-}else if(mp.name=="ばあや"){
-    mp.color = "#916565";
-}else if(mp.name==sf.father_name){
-    mp.color = "DarkSlateBlue";
-}else if(mp.name=="黒田 将貴"){
-    mp.color = "#7a65b2";
-}else if(mp.name=="黒田将貴"){
-    mp.color = "#7a65b2";
-}else if(mp.name=="田中　岩男"){
-    mp.color = "#775545";
-}else if(mp.name=="財前 美彬"){
-    mp.color = "royalblue";
-}else if(mp.name=="財前・アルベルト・美彬"){
-    mp.color = "royalblue";
-}else if(mp.name=="四条 華織"){
-    mp.color = "yellowgreen";
-}else if(mp.name=="三宮　時子"){
-    mp.color = "firebrick";
-}else if(mp.name=="お茶屋の娘"){
-    mp.color = "olivedrab";
-}else{
-    mp.color = "black";
-}
-//名前領域の一旦削除
-$(".chara_name_area").remove();
-
-//名前をバックログに追加
-tf.name_for_log = "<font color = '" + mp.color + "'>【 " + mp.name + " 】</font>";
-if (mp.name!="") {
-	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
-}
-[endscript]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
-[endmacro]
-
-
-[freeimage layer = 24]
-;◆既読スキップ開始
-[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
-	[skipstart]
-[endif]
-
-[if exp="sf.KSKIP=='ON' && sf.trail_kuroda_3_4_normalED_scene1==undefined"]
-	[skipstop]
-[endif]
-*scene1
 ;【背景】玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[eval exp="f.message_storage='message_bg/frame_red.png'"]
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
+[イベントシーン構築ボタン無し版]
 
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+*scene1
 
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
-;【背景】主人公邸_玄関
-;【テキスト枠】会話パート用 下部横長
-;【BGM】主人公邸通常会話パート用（容量に余裕があれば春っぽいBGM）
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 
 [whosay name="磯野" color="dimgray"]
 「本日は、黒田様のご卒業式ですね。行ってらっしゃいませ」[p]
@@ -274,23 +193,8 @@ if (mp.name!="") {
 [wait time=10]
 [chara_mod name="message_bg" storage="message_bg/frame_red.png" time=1]
 [wait time=10]
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
+
+[メッセージウィンドウ上ボタン表示]
 
 ;メッセージレイヤを会話窓用に設定変更
 [eval exp="f.kaogura='off'"]
@@ -321,7 +225,7 @@ if (mp.name!="") {
 #
 このひとは[r]
 花を見るのに、時の流れまでをも[r]
-感じているのか――[p]
+感じているのか――。[p]
 [eval exp="f.kaogura=''"]
 ;=============================================
 ;１１章、【後日談：normalED分岐】
@@ -345,7 +249,7 @@ if (mp.name!="") {
 ;背景変更:手紙
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [wait time=10]
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_blue.jpg" time=500]
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
 [wait time=10]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [wait time=10]
@@ -380,9 +284,9 @@ if (mp.name!="") {
 庭からは春風に乗って、花の香りが漂ってくる。[r]
 [r]
 「黒田様が、幼いころからお好きだったという『すみれ』[r]
-　無事に咲いて、よかったわ」[p]
+[sp]無事に咲いて、よかったわ」[p]
 [r]
-文箱の蓋を丁寧に閉め、ゆっくりと庭へ向かった――[p]
+文箱の蓋を丁寧に閉め、ゆっくりと庭へ向かった――。[p]
 
 [font color=white size=35]
 [r]
@@ -390,12 +294,6 @@ if (mp.name!="") {
 [r]
 [r]
 [sp]　　　　　　　　　　完[p]
-[stopbgm]
-[chara_mod name="bg" storage="toumei.gif" time=1000]
-[wait time=10]
-[clearfix]
-[cm]
-[resetfont]
 [eval exp="sf.ED_kuroda_normal=1"]
 ;回想記録終了
 [endreplay] 
@@ -403,8 +301,13 @@ if (mp.name!="") {
 [if exp="f.flag_replay==true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [イベントシーン終了]
+;【背景】セピア背景
+[chara_mod name="bg" storage="bg/plane_sepia.jpg"]
+[eval exp="f.haikei_credit=''"]
+
 @jump storage="replay2.ks"
 [endif]
+[イベントシーン終了]
 
 @jump storage="event.ks" target=*event_ED
 
