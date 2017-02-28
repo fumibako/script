@@ -16,21 +16,21 @@
 [endif]
 ;================================================
 ;◆四条イベント判定 sijyou_sansaku2.ks(9-2お見合い決定～9月末(銀座デート前まで)華道パラが上がる？華道展イベントフラグ2sijyou_sobo=true9
-[if exp="f.okeiko_month==9 && f.event_machi_sijyou[2]==0 && f.sijyou_au == 1"]
+[if exp="f.okeiko_month == 9 && f.event_machi_sijyou[2] == 0 && f.sijyou_au == 1"]
 	[eval exp="f.event_machi_sijyou[2]=1"]
 	@jump storage="sijyou/sijyou_sansaku2.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
 ;◆四条イベント判定 sijyou_sansaku3.ks(9-3園遊会～9月末(銀座デート前まで)華道パラが上がる？ 華道展イベントフラグ2sijyou_sobo=true)
-[if exp="(f.okeiko_month == 9 || f.okeiko_month == 10 && f.okeiko_week == 1)&& f.event_machi_sijyou[3]==0 && f.sijyou_au == 1"]
+[if exp="f.sijyou_au == 1 && (f.okeiko_month == 9 || f.okeiko_month == 10 && f.okeiko_week == 1) && f.event_machi_sijyou[3] == 0 "]
 	[eval exp="f.event_machi_sijyou[3]=1"]
 	@jump storage="sijyou/sijyou_sansaku3.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定 sijyou_sansaku4.ks(11月3週→12～1月末)
-[if exp="(f.okeiko_month == 12 || f.okeiko_month == 1) && f.event_machi_sijyou[4] == 0 && f.sijyou_au == 1  && f.sijyou_event6 == 1"]
+;◆四条イベント判定 sijyou_sansaku4.ks(11月3週→12～1月末)　事件解決後の華衣のイベント
+[if exp="f.sijyou_au == 1 && (f.okeiko_month == 12 || f.okeiko_month == 1) && f.event_machi_sijyou[4] == 0 && f.sijyou_event6 == 1"]
 	[eval exp="f.event_machi_sijyou[4]=1"]
 	@jump storage="sijyou/sijyou_sansaku4.ks" 
 	;target=*sansaku
