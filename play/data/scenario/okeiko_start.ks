@@ -467,7 +467,7 @@ if (f.event_katuraginomiya[1] == 1){
 	f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
 	f.fumi_list_all_target.push("*katuraginomiya_fumi00");
 	f.fumi_list_all_location_taishou.push(3);
-	f.fumi_list_all_location_fumi.push(0);
+	f.fumi_list_all_location_fumi.push(1);
 
 	f.fumi_list_katuraginomiya_location_fumi = [];
 	f.fumi_list_katuraginomiya_location_fumi[0] = 1;
@@ -476,6 +476,8 @@ if (f.event_katuraginomiya[1] == 1){
 	f.fumi_list_katuraginomiya_target = [];
 	f.fumi_list_katuraginomiya_target[0] = "*katuraginomiya_fumi00";
 	f.midoku_list_hairetsu[3][1] = 0;
+	f.hensin_list_hairetsu[3][1] = 1;
+
 }
 if (f.event_hujieda[1] == 1){
 	//藤枝手紙到着準備
