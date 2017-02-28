@@ -241,19 +241,74 @@ _　ございます」[p]
 （久しぶりに再会した華織お兄様。[r]
 [sp]幼きあの頃も、麗しい佇まいをなさってました）[p]
 ;イメージ背景 セピア和紙や花和紙
-[whosay name="四条 華織" color="olivedrab"]
+#
+春の色を映した雲が細く棚引く頃。[r]
+四条様の屋敷の周りには、情趣ある花々が咲き乱れ、[r]
+夢のような世界に浸ることができる。[p]
+しかし。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（せっかくお兄さまと、華織お兄さまの家に来たのに、[r]
+[sp]お二人で将棋をしてばかりで、退屈だわ)[p]
+#
+幼い頃の私は、はしたなく花畑で寝転び、[r]
+新たな愉しみについて探り始めた。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（あ、あの花は何かしら？)[p]
+#
+お兄様に頂いた髪飾りに似た花が、風に揺られている。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（近づいてみると大きいわ)[p]
+#
+私の背よりも、遥か高く咲き誇る花は、[r]
+まるで、高貴な美しさを漂わせる大人の女性のようであった。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（やっぱり届かない……)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（ですけど、やめておきましょう。華織お兄さまの大事な花ですもの)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（きっと大人になったら、あの花に届くのでしょうか？)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（大人になったら……)[p]
+#
+私は、届かない花を見ながら、甘い花香の中、夢の世界へと旅立つ。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（きっと、素敵な殿方と出逢って、ダンスホールで踊ったり、[r]
+[sp]ミルクホールでピアノの音に揺られたり、博識な殿方と[r]
+[sp]知的な会話に興じたりして……)[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（それから、お父さまとお母さまのように、波瀾万丈な時を乗り越えて浪漫を育むの)[p]
+
+;#齢、9歳の乙女頃。未来への期待において、若干、過大になりがちであった。
+
+[whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん、どうしたんだい？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織お兄さま！」[p]
+#
+私は、淑女を模して花を讃えることにした[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「あのお花、とても綺麗ですね……」[p]
-[whosay name="四条 華織" color="olivedrab"]
+[whosay name="華織お兄さま" color="olivedrab"]
 「いいよ、とってあげる」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「でも……」[p]
-[fadeoutbgm time=3000]
-[whosay name="四条 華織" color="olivedrab"]
-「美しい花こそ、次の花を咲かせる為にも[r]
-[sp]早めに切ってあげないといけないんだ」[p]
-「[名前]ちゃん の綺麗な黒髪によく似合うよ」[p]
+[whosay name="華織お兄さま" color="olivedrab"]
+「美しい花こそ、次の花を咲かせる為にも早めに切ってあげないといけないんだ」[p]
+;#主人公(なぜだか、この花に負けた様な気分だわ)[p]
+[whosay name="華織お兄さま" color="olivedrab"]
+「……の綺麗な黒髪によく似合うよ」[p]
+#
+麗しい佇まいをなされた華織お兄さまが、私の頭を撫でた途端、[r]
+私はより一層、憧れの恋夢が膨らんでいった。[p]
+[whosay name="華織お兄さま" color="olivedrab"]
+「ふふ、まるで絵画に描かれる妖精のようだね。[r]
+[sp]さぁ、文矢に見せておいでよ」[p]
+#
+私は、お兄さまの元に駆けて行きながらも、[r]
+いつかは、この花と同じような淑女となることを夢に描いたのだった。[p]
+
+
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]ちゃん」[p]
 #
