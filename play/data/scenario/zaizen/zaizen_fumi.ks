@@ -11,6 +11,36 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [eval exp="sf.FButton='OFF'"]
 ;=============================================
+;◆最初の手紙◆
+;=============================================
+*zaizen_fumi1
+;背景変更:手紙
+[手紙財前]
+[名字] [名前]様[r]
+[r]
+謹啓　春暖の候、皆様ますますご清栄のこととお喜び申し上げます。[r]
+このたび、古式日本の伝統に則り婚約の申し出を行うべく、手紙と釣書を送らせて頂きました。[p]
+[r]
+[sp]これからしばらくの間、私の事を知って頂けるよう努力いたしますのでよろしくお願いします。[r]
+では、お体にお気をつけてお過ごしください。返事をお待ちしています。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="tf.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[1][0] = 0;"]
+	;f.midoku_list_hairetsu[1][0]は共通イベントオープニング中で届く最初の手紙です。script/fumi_zaizen.ks中にあります
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙財前読了 fumi_number=]
+
+
+
+
+;=============================================
 ;◆話題への返事◆
 ;=============================================
 [if exp="tf.okeiko_gamen!=true"]
