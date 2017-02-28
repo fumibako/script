@@ -113,7 +113,7 @@ $('.loding_pic1').remove();
 @layopt layer=message2 page=fore visible = false
 [current layer="message2"]
 ;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+[position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
 @layopt layer=message2 page=fore visible = true
 [font color=glay size=13]
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
@@ -243,7 +243,7 @@ $('.loding_pic1').remove();
 @layopt layer=message2 page=fore visible = false
 [current layer="message2"]
 ;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+[position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
 @layopt layer=message2 page=fore visible = true
 [font color=glay size=13]
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
@@ -375,7 +375,7 @@ $('.loding_pic1').remove();
 @layopt layer=message2 page=fore visible = false
 [current layer="message2"]
 ;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+[position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
 @layopt layer=message2 page=fore visible = true
 [font color=glay size=13]
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
@@ -532,7 +532,7 @@ $('.loding_pic1').remove();
 @layopt layer=message2 page=fore visible = false
 [current layer="message2"]
 ;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+[position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
 @layopt layer=message2 page=fore visible = true
 [font color=glay size=13]
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
@@ -697,7 +697,7 @@ $('.loding_pic1').remove();
 @layopt layer=message2 page=fore visible = false
 [current layer="message2"]
 ;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message2 left=0 width=180 height=385 top=0 page=fore color=white opacity=120]
+[position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
 @layopt layer=message2 page=fore visible = true
 [font color=glay size=13]
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
