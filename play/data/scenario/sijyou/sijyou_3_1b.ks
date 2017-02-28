@@ -756,7 +756,7 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [主人公口ムッ]
-「そんなことはないですわ[r]
+「そんなことはないですわ。[r]
 [四条驚き]
 [sp]華織様は、お会いする時、いつも私をエスコートしてくれます」[p]
 [四条真剣]
