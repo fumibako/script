@@ -11,7 +11,7 @@
 *scene1
 [stopbgm]
 
-[call target=*start storage="01_sijyou_hensuu.ks"]
+;[call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
