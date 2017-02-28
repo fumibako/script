@@ -105,7 +105,7 @@
 [endif]
 ;================================================
 ;◆四条イベント判定【散策１】12月sijyou_sansaku.ks
-[if exp="f.okeiko_month == 12 && f.event_machi_sijyou[14] == 0 && f.sijyou_au==1"]
+[if exp="f.okeiko_month == 12 && f.event_machi_sijyou[14] == 0 && f.sijyou_au == 1"]
 	[eval exp="f.event_machi_sijyou[14]=1"]
 	@jump storage="sijyou/sijyou_sansaku.ks" 
 	;target=*sansaku
