@@ -20,6 +20,8 @@
 [プリロード画面消去]
 [四条ボタン表示]
 *replay_sijyou_9_1
+[fadeoutbgm time=2000]　
+
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
