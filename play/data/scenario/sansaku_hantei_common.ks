@@ -10,11 +10,6 @@
 @jump target=*sansaku_hantei_new
 [endif]
 
-;◆共通イベント1判定【友人に会う】4月1週～6月4週、期間中に町へ行くと1度だけ発生
-[if exp="(f.okeiko_month==4 || f.okeiko_month==5 || f.okeiko_month==6) && f.event_machi_common[1]==0"]
-	@jump storage="sansaku.ks" target=*sansaku_machi_common_01
-[endif]
-
 ;◆共通イベント2判定【新茶】4月3週～5月2週、期間中に町へ行くと1度だけ発生
 [if exp="((f.okeiko_month==4 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==5 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_common[2]==0"]
 	@jump storage="sansaku.ks" target=*sansaku_machi_common_02

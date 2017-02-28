@@ -189,6 +189,11 @@ TG.stat.play_se = true;
 ;=============================================
 ;◆黒田イベント2判定【麦】(判定部分はevent_hantei_week_hajime.ksに移動しました)
 
+;◆共通イベント1判定【友人に会う】4月1週～6月4週、期間中に町へ行くと1度だけ発生
+[if exp="(f.okeiko_month==4 || f.okeiko_month==5 || f.okeiko_month==6) && f.event_machi_common[1]==0"]
+	@jump storage="sansaku.ks" target=*sansaku_machi_common_01
+[endif]
+
 ;=============================================
 ;◆四条イベント判定
 ;=============================================
