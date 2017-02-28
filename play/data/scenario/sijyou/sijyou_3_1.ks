@@ -1088,7 +1088,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「泣いてないよ。 [r]
-[sp]文矢こそ、結納の時に名前さんの事が寂しくなって泣かないように」[p]
+[sp]文矢こそ、結納の時に[名前]さんの事が寂しくなって泣かないように」[p]
 [whosay name=文矢 color="#538a8a"]
 「ふふ。 華織……変わったね」[p]
 [主人公照れ目普通]
