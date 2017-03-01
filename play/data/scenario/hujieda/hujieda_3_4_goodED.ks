@@ -13,7 +13,7 @@ $('.list').remove();
 *start
 [stopbgm]
 [if exp="tf.test_hujieda==true"]
-[eval exp="tf.okeiko_gamen=true"]
+[eval exp="f.okeiko_gamen=true"]
 [eval exp="f.hujieda_au=1"]
 [endif]
 [call target=*start storage="tyrano.ks"]
@@ -552,7 +552,7 @@ $('.1_fore').remove();
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [藤枝ルート終了 end="good"]

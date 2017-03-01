@@ -141,7 +141,7 @@
 [playse storage=paper_open.ogg loop=false ]
 
 *fumi_toutyaku_hujieda_4
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　三」";//←仮タイトルです。お好みに変更してください
 f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　三」";//←仮タイトルです。お好みに変更してください
@@ -193,7 +193,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][3] = 0"]
 [endif]

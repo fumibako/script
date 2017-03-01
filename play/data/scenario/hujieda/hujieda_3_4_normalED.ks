@@ -237,7 +237,7 @@ $('.kaede').remove();
 ;=========================================================================
 ;メッセージウィンドウ消去から復帰時の顔グラをoffにします
 [eval exp="f.kaogura = 'off'"]
-[if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
+[if exp="f.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
 [暗転２ storage="bg/hujieda_goodED.jpg"]
 [else]
 [暗転２ storage="bg/hujieda_normalED.jpg"]
@@ -245,7 +245,7 @@ $('.kaede').remove();
 [藤枝退場]
 [主人公退場]
 ;◆goodED条件を満たす場合、good画像を表示
-[if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
+[if exp="f.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
 [chara_mod name="bg" storage="bg/hujieda_goodED.jpg"]
 ;◆CGモード用に画像を登録
 [cg storage="hujieda_goodED.jpg"] 
@@ -271,7 +271,7 @@ $('.kaede').remove();
 [eval exp="f.kaogura = 'on'"]
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
-[if exp="tf.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
+[if exp="f.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
 ;次のシーンでメッセージ枠消去
 [主人公退場]
 [eval exp="f.kaogura!='off'"]　
@@ -329,7 +329,7 @@ $('.1_fore').remove();
 [endif]
 
 ;◆normalED終了処理へ
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [藤枝ルート終了 end="normal"]
 [endif]
 @jump storage="test_hujieda.ks"

@@ -132,7 +132,7 @@
 ;【SE】鳩の羽ばたき（バサバサッ）
 [playse storage=tori_habataki_hato.ogg loop=false ]
 
-[if exp="tf.okeiko_gamen != true"]
+[if exp="f.okeiko_gamen != true"]
 @jump target=deback1
 [endif]
 
@@ -192,7 +192,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 よく母のお[ruby text=こと]箏の練習を聴いていました。[r]
 [sp]貴方様の邪魔になっていないといいのですが。[p]
 
-[if exp="tf.okeiko_gamen != true"]
+[if exp="f.okeiko_gamen != true"]
 [手紙藤枝読了 fumi_number=]
 @jump target=deback2
 [endif]

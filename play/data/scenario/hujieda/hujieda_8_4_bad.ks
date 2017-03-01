@@ -58,7 +58,7 @@ $("kan").css('margin','auto');
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;===============================================================
 [イベントシーン終了]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;[藤枝ルート終了 end="bad0"]
 [endif]
 @jump storage="test_hujieda.ks"

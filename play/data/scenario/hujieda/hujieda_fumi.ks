@@ -14,7 +14,7 @@
 ;『鳩の届けた手紙 一』←仮タイトルです。
 ;=============================================
 *hujieda_fumi01
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 一』[p]
 [endif]
@@ -38,7 +38,7 @@
 [sp]僕は名乗るほどの者ではありませんので[r]
 この手紙の事、僕の事はお構いなく。[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][1] = 0"]
    [freeimage layer = 29]
@@ -50,7 +50,7 @@
 ;『鳩の届けた手紙 二』←仮タイトルです。
 ;=============================================
 *hujieda_fumi02
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 二』[p]
 [endif]
@@ -80,7 +80,7 @@
 [sp]また貴方様の[ruby text=こと]箏の音を聴けることを願っています。[p]
 
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][2] = 0"]
    [freeimage layer = 29]
@@ -92,7 +92,7 @@
 ;『鳩の届けた手紙 三』←仮タイトルです。
 ;=============================================
 *hujieda_fumi03
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 三』[p]
 [endif]
@@ -123,7 +123,7 @@
 [sp]初心を忘れずゆっくり上達していきましょう。[p]
 
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][3] = 0"]
    [freeimage layer = 29]
@@ -136,7 +136,7 @@
 ;『鳩の届けた手紙 四』←仮タイトルです。
 ;=============================================
 *hujieda_fumi04
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 四』[p]
 [endif]
@@ -172,7 +172,7 @@
 [sp]貴方様の邪魔になっていないといいのですが。[p]
 
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][4] = 0"]
    [freeimage layer = 29]
@@ -185,7 +185,7 @@
 ;『鳩の届けた手紙 五』←仮タイトルです。
 ;=============================================
 *hujieda_fumi05
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙  五』[p]
 [endif]
@@ -216,7 +216,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
 
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][5] = 0"]
    [freeimage layer = 29]
@@ -229,7 +229,7 @@
 ;『鳩の届けた手紙 六』←仮タイトルです。
 ;=============================================
 *hujieda_fumi06
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 六』[p]
 [endif]
@@ -270,7 +270,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
 
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][6] = 0"]
    [freeimage layer = 29]
@@ -285,7 +285,7 @@
 ;『趣味について』
 ;=============================================
 *hujieda_fumi07
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『趣味について』[p]
 [endif]
@@ -317,7 +317,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　[r]
 [sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][7] = 0"]
    [freeimage layer = 29]
@@ -332,7 +332,7 @@
 ;『仕事について』
 ;=============================================
 *hujieda_fumi08
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『仕事について』[p]
 ;#
@@ -362,7 +362,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　[r]
 [sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][8] = 0"]
    [freeimage layer = 29]
@@ -377,7 +377,7 @@
 ;『友人について 』
 ;=============================================
 *hujieda_fumi09
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『友人について』[p]
 ;#
@@ -404,7 +404,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　[r]
 [sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][9] = 0"]
    [freeimage layer = 29]
@@ -418,7 +418,7 @@
 ;『 家族について 』
 ;=============================================
 *hujieda_fumi10
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 家族について 』[p]
 ;#
@@ -448,7 +448,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　[r]
 [sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][10] = 0"]
    [freeimage layer = 29]
@@ -462,7 +462,7 @@
 ;『 将来について 』
 ;=============================================
 *hujieda_fumi11
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 将来について 』[p]
 ;#
@@ -494,7 +494,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][11] = 0"]
    [freeimage layer = 29]
@@ -508,7 +508,7 @@
 ;『 読書について 』
 ;=============================================
 *hujieda_fumi12
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 読書について 』[p]
 ;#
@@ -530,7 +530,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][12] = 0"]
    [freeimage layer = 29]
@@ -544,7 +544,7 @@
 ;『 スポーツについて 』
 ;=============================================
 *hujieda_fumi13
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 スポーツについて 』[p]
 ;#
@@ -571,7 +571,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][13] = 0"]
    [freeimage layer = 29]
@@ -585,7 +585,7 @@
 ;『 食事について 』
 ;=============================================
 *hujieda_fumi14
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 食事について 』[p]
 ;#
@@ -612,7 +612,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][14] = 0"]
    [freeimage layer = 29]
@@ -626,7 +626,7 @@
 ;『 観劇について 』
 ;=============================================
 *hujieda_fumi15
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 観劇について 』[p]
 ;#
@@ -653,7 +653,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][15] = 0"]
    [freeimage layer = 29]
@@ -667,7 +667,7 @@
 ;『 猫について 』
 ;=============================================
 *hujieda_fumi16
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 猫について 』[p]
 ;#
@@ -691,7 +691,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][16] = 0"]
    [freeimage layer = 29]
@@ -705,7 +705,7 @@
 ;『聞き上手と話し上手について』
 ;=============================================
 *hujieda_fumi17
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『聞き上手と話し上手について』[p]
 ;#
@@ -730,7 +730,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][17] = 0"]
    [freeimage layer = 29]
@@ -744,7 +744,7 @@
 ;『緑の石について』
 ;=============================================
 *hujieda_fumi18
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『緑の石について』[p]
 ;#
@@ -768,7 +768,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][18] = 0"]
    [freeimage layer = 29]
@@ -782,7 +782,7 @@
 ;『写真について』
 ;=============================================
 *hujieda_fumi19
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『写真について』[p]
 ;#
@@ -803,7 +803,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][19] = 0"]
    [freeimage layer = 29]
@@ -817,7 +817,7 @@
 ;『一日のはじまりについて』
 ;=============================================
 *hujieda_fumi20
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『一日のはじまりについて』[p]
 ;#
@@ -842,7 +842,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][20] = 0"]
    [freeimage layer = 29]
@@ -856,7 +856,7 @@
 ;『お気に入りの曲について』
 ;=============================================
 *hujieda_fumi21
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『お気に入りの曲について』[p]
 ;#
@@ -880,7 +880,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][21] = 0"]
    [freeimage layer = 29]
@@ -894,7 +894,7 @@
 ;『道』
 ;=============================================
 *hujieda_fumi22
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『道』[p]
 ;#
@@ -920,7 +920,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][22] = 0"]
    [freeimage layer = 29]
@@ -934,7 +934,7 @@
 ;『 変化と永遠 』
 ;=============================================
 *hujieda_fumi23
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 変化と永遠 』[p]
 ;#
@@ -961,7 +961,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][23] = 0"]
    [freeimage layer = 29]
@@ -976,7 +976,7 @@
 ;『 巡る季節』 9月ごろの手紙　好感度が一定以上
 ;=============================================
 *hujieda_fumi24
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『巡る季節』[p]
 ;#
@@ -996,7 +996,7 @@
 [r]　　　　　　　　　　　　　　　　　　　　　　　
 [sp]　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][24] = 0"]
    [freeimage layer = 29]
@@ -1011,7 +1011,7 @@
 ;『 実りの秋』10月頃の手紙　好感度が一定以上
 ;=============================================
 *hujieda_fumi25
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『実りの秋』[p]
 [endif]
@@ -1031,7 +1031,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　[r]
 [sp]　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][25] = 0"]
    [freeimage layer = 29]
@@ -1047,7 +1047,7 @@
 ;◆時子さんの手紙◆
 ;=============================================
 *fumi_tokiko_hujieda
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『星も凍るような夜』[p]
@@ -1084,7 +1084,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　三宮　時子[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
    [freeimage layer = 29]
    @jump storage=info_oaite_fumi.ks target=&f.viewing_target
    [s]
@@ -1098,7 +1098,7 @@
 ;『さつきについて』
 ;=============================================
 *fumi_satuki
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『さつきについて』[p]
 ;#
@@ -1118,7 +1118,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][27] = 0"]
    [freeimage layer = 29]
@@ -1132,7 +1132,7 @@
 ;『新茶について』
 ;=============================================
 *fumi_sintya
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『新茶について』[p]
 ;#
@@ -1156,7 +1156,7 @@
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
 [endif]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][26] = 0"]
    [freeimage layer = 29]
