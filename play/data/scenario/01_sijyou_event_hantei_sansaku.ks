@@ -40,26 +40,26 @@
 ;◆四条イベント判定 sijyou_sansaku5.ks(9月～９月末　銀座デート前 b）or(11事件解決後～12月 a)
 [if exp="f.okeiko_month == 9 && f.event_machi_sijyou[5] == 0 && f.sijyou_au == 1"]
 	[eval exp="f.event_machi_sijyou[5]=1"]
-	@jump storage="sijyou/sijyou_sansaku4.ks" 
+	@jump storage="sijyou/sijyou_sansaku5.ks" 
 	;target=*sansaku
 [elsif exp="f.okeiko_month == 12 && f.event_machi_sijyou[17] == 0 && f.sijyou_event6==1"]
 	;「１７」なのは時期によってパターンが違うため	
 	[eval exp="f.event_machi_sijyou[17]=1"]
-	@jump storage="sijyou/sijyou_sansaku4.ks" 
+	@jump storage="sijyou/sijyou_sansaku5.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
 ;◆四条イベント判定 sijyou_sansaku6.ks(7~8月→8月(他攻略対象より好感度が高い)花火イベント)
 [if exp="f.okeiko_month == 8 && f.para_sijyou_koukando > f.para_zaizen_koukando && f.para_sijyou_koukando > f.para_kuroda_koukando && f.para_sijyou_koukando > f.para_katuraginomiya_koukando &&  f.para_sijyou_koukando > f.para_hujieda_koukando && f.event_machi_sijyou[6] == 0 && f.sijyou_au == 0"]
 	[eval exp="f.event_machi_sijyou[6]=1"]
-	@jump storage="sijyou/sijyou_sansaku4.ks" 
+	@jump storage="sijyou/sijyou_sansaku6.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
 ;◆四条イベント判定条 sijyou_sansaku7.ks(香水イベント　３月華道パラメータ一定値以上、四条好感度一定値以上)数値は適当
 [if exp="f.okeiko_month == 3 && f.event_machi_sijyou[7] == 0 && f.para_shujinkou_j_kadou > 100 && f.para_sijyou_koukando > 80 && f.sijyou_au == 1"]
 	[eval exp="f.event_machi_sijyou[7]=1"]
-	@jump storage="sijyou/sijyou_sansaku4.ks" 
+	@jump storage="sijyou/sijyou_sansaku7.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
