@@ -1002,7 +1002,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 	[eval exp="sf.ED_sijyou_bad=1"]
 	[endreplay] 
 [endif]
-[if exp="tf.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
@@ -1022,7 +1022,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 	[eval exp="sf.ED_zaizen_bad2=1"]
 	[endreplay] 
 [endif]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
@@ -1039,7 +1039,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 	[eval exp="sf.ED_katuraginomiya_bad=1"]
 	[endreplay] 
 [endif]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
@@ -1056,7 +1056,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 	[eval exp="sf.ED_hujieda_bad=1"]
 	[endreplay] 
 [endif]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
