@@ -352,7 +352,7 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 *fumi_toutyaku_sijyou_102
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「四条華道展のお誘い」　四条 華織"; //←仮タイトルです。ご自由に変更してください
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「四条華道展のお誘い」"; //←仮タイトルです。ご自由に変更してください

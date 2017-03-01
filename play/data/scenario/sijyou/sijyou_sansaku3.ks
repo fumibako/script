@@ -192,7 +192,7 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 
 [イベントシーン終了]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
 [else]
 [イベントシーン終了２]

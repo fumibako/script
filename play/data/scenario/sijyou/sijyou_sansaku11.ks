@@ -77,7 +77,7 @@
 
 [イベントシーン終了]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
 [else]
 [イベントシーン２終了]

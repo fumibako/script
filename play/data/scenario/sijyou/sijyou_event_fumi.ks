@@ -38,7 +38,7 @@
 [s]
 
 *9_3
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『久しぶりに会って』[p]
 [endif]
@@ -56,7 +56,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -65,7 +65,7 @@
 @jump target=*start
 
 *10_3
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 ;↓他の手紙は手紙の執筆者がつけたタイトル的な雰囲気で揃っているため、執筆者本人の名前が入るのは違和感が出てしまうかもしれません。
 ;例えば『華織について』などはいかがでしょうか？ よろしければsijyou_10_3.ks 122行目、01_sijyou_fumi_toutyaku_shori_list.ks 1624行目とあわせてご変更いただけるとありがたいです(スクリプト担
@@ -93,7 +93,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 [sp]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -138,7 +138,7 @@
  　　　　　　　　　　　　　　　　　　　　　　　
  　　　　　　　　　　　　　　　　　　　　　　　
 *1_1
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『お正月』[p]
 [endif]
@@ -181,7 +181,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [position vertical=false]
 [resetfont]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -191,7 +191,7 @@
 @jump target=*start
 
 *3_1_kadouten
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『四条華道展のお誘い』[p]
 [endif]
@@ -227,7 +227,7 @@
 *fumi_in3_3
 [er]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]

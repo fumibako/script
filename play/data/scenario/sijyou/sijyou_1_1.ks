@@ -36,7 +36,7 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 *fumi_toutyaku_sijyou_101
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お正月」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「お正月」";
@@ -129,7 +129,7 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [endscript]
 [イベントシーン終了]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

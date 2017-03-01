@@ -131,7 +131,7 @@ $('.1_fore').remove();
 [endif]
 
 ;badED処理追記予定
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [四条ルート終了 end=bad]
 [endif]
 [イベントシーン終了]

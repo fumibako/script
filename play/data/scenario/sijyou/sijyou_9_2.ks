@@ -654,7 +654,7 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 
 [イベントシーン終了]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

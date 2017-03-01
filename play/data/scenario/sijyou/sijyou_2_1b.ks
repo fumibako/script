@@ -980,7 +980,7 @@ _　たとえ華道に対するお志が高くとも、私が……）[p]
 [四条退場]
 [イベントシーン終了]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

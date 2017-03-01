@@ -61,7 +61,7 @@
 [主人公目閉じ]
 #
 *fumi_toutyaku_sijyou_100
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「久しぶりに会って」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「久しぶりに会って」";
@@ -97,7 +97,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[2][99] = 0"]
 [endif]
@@ -973,7 +973,7 @@ _　として成長しないといけないのだわ）[p]
 *seen8
 
 [イベントシーン終了]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

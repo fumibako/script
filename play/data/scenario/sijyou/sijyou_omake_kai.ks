@@ -228,9 +228,7 @@ $('.loding_pic').remove();
 
 [イベントシーン終了]
 
-[if exp="tf.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_owari
-[endif]
+[イベントシーン終了４]
 
 @jump storage="test_sijyou.ks"
 [s]

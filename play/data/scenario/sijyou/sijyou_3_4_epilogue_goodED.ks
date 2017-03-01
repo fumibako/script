@@ -1,6 +1,9 @@
 ;/////////////////エピローグ追加分（good_end差分です)///////////
 [setreplay name="replay_sijyou_3_4_goodED_scene" storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target="start"]
 *replay_sijyou_3_4_goodED
+[ct]
+[clearfix]
+[clearstack]
 [iscript]
 $('rp_bt').remove();
 $('.list').remove();
@@ -9,7 +12,7 @@ $('.list').remove();
 *replay_sijyou_3_4_good
 *start
 [if exp="tf.test_sijyou == true"]
-[eval exp="tf.okeiko_gamen=true"]
+[eval exp="f.okeiko_gamen=true"]
 [eval exp="f.sijyou_au=1"]
 [endif]
 [stopbgm]
@@ -271,12 +274,16 @@ $('.1_fore').remove();
 [if exp="f.flag_replay==true"]
 [イベントシーン終了]
 ;web版はendreplayの下にするexe版はendreplayで戻る
+;【背景】セピア背景
+[chara_mod name="bg" storage="bg/plane_sepia.jpg"]
+[eval exp="f.haikei_credit=''"]
+
 @jump storage="replay2.ks"
 [endif]
 
 [イベントシーン終了・ＢＧＭ有]
 ;テストでもみれるように↑
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;ending処理
 ;goodエンディング時
 [eval exp="sf.ED_sijyou_good=1"]

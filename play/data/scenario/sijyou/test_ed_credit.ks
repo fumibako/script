@@ -549,7 +549,7 @@ $('.omoide1').remove();
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [return]
 [endif]
 

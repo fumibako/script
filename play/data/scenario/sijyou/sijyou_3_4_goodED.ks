@@ -369,7 +369,7 @@ $('.1_fore').remove();
 [endif]
 
 ;ending処理待ち
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [eval exp="sf.ED_sijyou_normal=1"]
 [四条ルート終了 end=normal]
 @jump storage="event.ks" target=*event_ED

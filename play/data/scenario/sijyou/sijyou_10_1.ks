@@ -193,7 +193,7 @@
 ;ここでイベントは区切り バッドが必要であれば、文矢から「話をしてみたけどダメだったよ」という返事に。イベントバッドへ追記
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]
