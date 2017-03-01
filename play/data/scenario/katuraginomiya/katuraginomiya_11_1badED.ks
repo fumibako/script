@@ -154,7 +154,7 @@ $('.1_fore').remove();
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [eval exp="sf.ED_katuraginomiya_bad=1"]
 @jump storage="event.ks" target=*event_ED
 [else]

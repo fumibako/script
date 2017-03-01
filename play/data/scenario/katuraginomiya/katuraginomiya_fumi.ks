@@ -14,7 +14,7 @@
 ;『最初の手紙』←仮タイトルです
 ;=============================================
 *katuraginomiya_fumi00
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『最初の手紙』[p]
 [endif]
@@ -63,7 +63,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします。f.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	;[eval exp="f.midoku_list_hairetsu[3][1] = 0"]
 	[freeimage layer = 29]
@@ -78,7 +78,7 @@
 ;『趣味について』
 ;=============================================
 *katuraginomiya_fumi01
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『趣味について』[p]
 [endif]
@@ -100,7 +100,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][2] = 0"]
 	[freeimage layer = 29]
@@ -114,7 +114,7 @@
 ;『仕事について』
 ;=============================================
 *katuraginomiya_fumi02
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『仕事について』[p]
 [endif]
@@ -135,7 +135,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][3] = 0"]
 	[freeimage layer = 29]
@@ -151,7 +151,7 @@
 ;『友人について 』
 ;=============================================
 *katuraginomiya_fumi03
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『友人について』[p]
 [endif]
@@ -176,7 +176,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][4] = 0"]
 	[freeimage layer = 29]
@@ -191,7 +191,7 @@
 ;『 家族について 』
 ;=============================================
 *katuraginomiya_fumi04
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『家族について』[p]
 [endif]
@@ -216,7 +216,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][5] = 0"]
 	[freeimage layer = 29]
@@ -231,7 +231,7 @@
 ;『 将来について 』
 ;=============================================
 *katuraginomiya_fumi05
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 将来について 』[p]
 [endif]
@@ -251,7 +251,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][6] = 0"]
 	[freeimage layer = 29]
@@ -264,7 +264,7 @@
 ;『 読書について 』
 ;=============================================
 *katuraginomiya_fumi06
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 読書について 』[p]
 [endif]
@@ -283,7 +283,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][7] = 0"]
 	[freeimage layer = 29]
@@ -295,7 +295,7 @@
 ;『 スポーツについて 』
 ;=============================================
 *katuraginomiya_fumi07
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 スポーツについて 』[p]
 [endif]
@@ -316,7 +316,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][8] = 0"]
 	[freeimage layer = 29]
@@ -329,7 +329,7 @@
 ;=============================================
 *katuraginomiya_fumi08
 *katuraginomiya_fumi080
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 食事について 』[p]
 [endif]
@@ -351,7 +351,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][9] = 0"]
 	[freeimage layer = 29]
@@ -363,7 +363,7 @@
 ;『 観劇について 』
 ;=============================================
 *katuraginomiya_fumi09
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 観劇について 』[p]
 [endif]
@@ -386,7 +386,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][10] = 0"]
 	[freeimage layer = 29]
@@ -398,7 +398,7 @@
 ;『 猫について 』
 ;=============================================
 *katuraginomiya_fumi10
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 猫について 』[p]
 [endif]
@@ -419,7 +419,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][11] = 0"]
 	[freeimage layer = 29]
@@ -431,7 +431,7 @@
 ;『聞き上手と話し上手について 』
 ;=============================================
 *katuraginomiya_fumi11
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 聞き上手と話し上手について 』[p]
 [endif]
@@ -454,7 +454,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][12] = 0"]
 	[freeimage layer = 29]
@@ -466,7 +466,7 @@
 ;『聞き上手と話し上手について 』２
 ;=============================================
 *katuraginomiya_fumi12
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 聞き上手と話し上手について2 』　　　
 [endif]
@@ -486,7 +486,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][13] = 0"]
 	[freeimage layer = 29]
@@ -498,7 +498,7 @@
 ;『緑の石について 』
 ;=============================================
 *katuraginomiya_fumi13
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 緑の石について 』[p]
 [endif]
@@ -520,7 +520,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][14] = 0"]
 	[freeimage layer = 29]
@@ -532,7 +532,7 @@
 ;『写真について 』
 ;=============================================
 *katuraginomiya_fumi14
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 写真について 』[p]
 [endif]
@@ -553,7 +553,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][15] = 0"]
 	[freeimage layer = 29]
@@ -565,7 +565,7 @@
 ;『一日のはじまりについて 』
 ;=============================================
 *katuraginomiya_fumi15
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 一日のはじまりについて 』[p]
 [endif]
@@ -585,7 +585,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][16] = 0"]
 	[freeimage layer = 29]
@@ -597,7 +597,7 @@
 ;『お気に入りの曲について 』
 ;=============================================
 *katuraginomiya_fumi16
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 お気に入りの曲について 』[p]
 [endif]
@@ -619,7 +619,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][17] = 0"]
 	[freeimage layer = 29]
@@ -631,7 +631,7 @@
 ;『道 』
 ;=============================================
 *katuraginomiya_fumi17
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 道について１ 』[p]
 [endif]
@@ -651,7 +651,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][18] = 0"]
 	[freeimage layer = 29]
@@ -663,7 +663,7 @@
 ;『道 』2　２月３週から３月４週まで
 ;=============================================
 *katuraginomiya_fumi18
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 道２ 』[p]
 [endif]
@@ -684,7 +684,7 @@
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][19] = 0"]
 	[freeimage layer = 29]
@@ -696,7 +696,7 @@
 ;『 変化と永遠 』
 ;=============================================
 *katuraginomiya_fumi19
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 変化と永遠について 』[p]
 [endif]
@@ -716,7 +716,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][20] = 0"]
 	[freeimage layer = 29]
@@ -731,7 +731,7 @@
 ;『 虫干し 』６月ごろの手紙　好感度が一定以上
 ;=============================================
 *katuraginomiya_fumi20
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 虫干し 』[p]
 [endif]
@@ -750,7 +750,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][21] = 0"]
 	[freeimage layer = 29]
@@ -765,7 +765,7 @@
 ;『 スイカ 』７月頃の手紙　好感度が一定以上
 ;=============================================
 *katuraginomiya_fumi21
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 スイカ 』[p]
 [endif]
@@ -783,7 +783,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][22] = 0"]
 	[freeimage layer = 29]
@@ -798,7 +798,7 @@
 ;『 夏は夜 』８月頃の手紙　好感度が一定以上
 ;=============================================
 *katuraginomiya_fumi22
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 夏は夜 』[p]
 [endif]
@@ -818,7 +818,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][23] = 0"]
 	[freeimage layer = 29]
@@ -832,7 +832,7 @@
 ;『 季節は巡る 』9月頃の手紙　好感度が一定以上
 ;=============================================
 *katuraginomiya_fumi23
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 季節は巡る 』[p]
 [endif]
@@ -854,7 +854,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][24] = 0"]
 	[freeimage layer = 29]
@@ -871,7 +871,7 @@
 ;『 伊能殿について 』
 ;=============================================
 *katuraginomiya_fumi24
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 伊能殿について 』[p]
 [endif]
@@ -903,7 +903,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][25] = 0"]
 	[freeimage layer = 29]
@@ -917,7 +917,7 @@
 ;『 従妹宮の件について 』
 ;=============================================
 *katuraginomiya_fumi25
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 従妹宮の件について 』[p]
 [endif]
@@ -955,7 +955,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][26] = 0"]
 	[freeimage layer = 29]
@@ -967,7 +967,7 @@
 ;8月、event3で届く手紙『 お茶事について 』←仮タイトルです
 ;=============================================
 *katuraginomiya_fumi26
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 お茶事について 』[p]
 [endif]
@@ -997,7 +997,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1007,7 +1007,7 @@
 ;9月『 婚約について 』←仮タイトルです
 ;=============================================
 *katuraginomiya_fumi27
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 婚約について 』[p]
 [endif]
@@ -1036,7 +1036,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1047,7 +1047,7 @@
 ;10月『 話がしたい 』←仮タイトルです
 ;=============================================
 *katuraginomiya_fumi28
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 話がしたい 』[p]
 [endif]
@@ -1075,7 +1075,7 @@
 [sp][r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1086,7 +1086,7 @@
 ;2月『 感謝 』←仮タイトルです
 ;=============================================
 *katuraginomiya_fumi29
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 感謝 』[p]
 [endif]
@@ -1111,7 +1111,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1125,7 +1125,7 @@
 ;『 未来へ向けて 』
 ;=============================================
 *tokiko_fumi_katuraginomiya
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 未来へ向けて 』[p]
 [endif]
@@ -1155,7 +1155,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　三宮　時子[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1165,7 +1165,7 @@
 ;event3　侍従からの手紙
 ;=============================================
 *jijyuu_fumi1
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『先日のお茶事について』[p]
@@ -1189,7 +1189,7 @@
 [r]
 [sp]　　　　　　　　　　　　皇后陛下侍従　桂伯爵夫人　範子[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1199,7 +1199,7 @@
 ;9月1週　文矢からの手紙
 ;=============================================
 *fumi_fumiya
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『親王様との婚約について』[p]
@@ -1231,7 +1231,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　[r]
 [sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1242,7 +1242,7 @@
 ;9月3週　葛城宮妃からの手紙
 ;=============================================
 *fumi_hahamiya
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『ご挨拶』[p]
@@ -1276,7 +1276,7 @@
 追伸　息子は型にはまる事を嫌い、周囲と衝突しています。[r]
 私は息子が貴方との婚約で変わるように望んでいますわ。[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1287,7 +1287,7 @@
 ;9月4週　従妹宮からの手紙
 ;=============================================
 *fumi_itokomiya
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『　忠告　』[p]
@@ -1321,7 +1321,7 @@
 [sp][r]
 追伸　これは忠告ですわ。　有り難く思いなさい。[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	[freeimage layer = 29]	
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
@@ -1334,7 +1334,7 @@
 ;『さつきについて』
 ;=============================================
 *fumi_satuki
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『さつきについて』[p]
 [endif]
@@ -1356,7 +1356,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][28] = 0"]
 	[freeimage layer = 29]
@@ -1370,7 +1370,7 @@
 ;『新茶について』
 ;=============================================
 *fumi_sintya
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『新茶について』[p]
 [endif]
@@ -1392,7 +1392,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][27] = 0"]
 	[freeimage layer = 29]

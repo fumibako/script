@@ -12,7 +12,7 @@ $('.list').remove();
 *start
 [stopbgm]
 [if exp="tf.test_katuraginomiya==true"]
-[eval exp="tf.okeiko_gamen=true"]
+[eval exp="f.okeiko_gamen=true"]
 [eval exp="f.katuraginomiya_au=1"]
 [endif]
 [call target=*start storage="tyrano.ks"]
@@ -421,7 +421,7 @@ $('.1_fore').remove();
 [endif]
 
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました(スクリプト担
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [イベントシーン終了・ＢＧＭ有]
 ;クレジット呼び出し。呼び出し位置は移動してください。
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]

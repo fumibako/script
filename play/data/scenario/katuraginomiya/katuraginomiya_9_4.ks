@@ -60,7 +60,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_itokomiya
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「忠告」 久佐賀宮 志津子";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);

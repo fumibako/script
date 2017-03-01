@@ -40,7 +40,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_fumiya
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「親王様との婚約について」文矢";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
@@ -99,7 +99,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_katuraginomiya_29
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「婚約について」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「婚約について」";//←仮タイトルです。お好みに変更してください
@@ -145,7 +145,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]返答がどちらにせよ私は受け止めるつもりだ。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][28] = 0"]
 [endif]
@@ -535,7 +535,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;機能ボタン表示_スクリプト担当さまにおまかせします　
 [イベントシーン終了]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 

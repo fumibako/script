@@ -244,7 +244,7 @@
 [freeimage layer=29]
 [layopt layer=fix visible=true]
 
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 

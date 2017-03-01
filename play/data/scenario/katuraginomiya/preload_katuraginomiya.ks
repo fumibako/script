@@ -467,7 +467,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg"]
 ;[preload storage="data/fgimage/bg/I9IhvvVdPo/kouenn.jpg" wait=true]
 ;【背景】CG
-[if exp="tf.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
+[if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED.jpg" wait=true]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED_2.jpg" wait=true]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" wait=true]
