@@ -5,6 +5,7 @@
 *start
 ;↓◆お稽古パート経由かどうか見るための変数をセット
 [eval exp="tf.okeiko_gamen=true"]
+[eval exp="f.okeiko_gamen=true"]
 [skipstop]
 
 [call target=*start storage="01_sijyou_hensuu.ks"]

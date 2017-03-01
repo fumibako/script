@@ -26,6 +26,7 @@
 [clearstack]
 [skipstop]
 [stopse]
+[eval exp="f.okeiko_gamen=true"]
 
 ;◆全レイヤクリア
 [freeimage layer = 0]
