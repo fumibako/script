@@ -25,7 +25,7 @@
 ;続きですのラベルを
 *seen_1
 ;↓本編選択肢後にメッセージレイヤを戻す処理です
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [cm]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -592,10 +592,10 @@
 ;=====================================================================================================================
 *sentaku_to_bad_or_other
 ;◆badED条件を満たす場合、bad2へ
-[if exp="tf.okeiko_gamen==true && (f.para_zaizen_koukando < f.zaizen_koukando_bad)"]
+[if exp="f.okeiko_gamen==true && (f.para_zaizen_koukando < f.zaizen_koukando_bad)"]
 @jump storage="zaizen/zaizen_11_1_bad1.ks" target="seen_1"
 ;◆それ以外の場合は続きへ
-[elsif exp="tf.okeiko_gamen==true"]
+[elsif exp="f.okeiko_gamen==true"]
 @jump  storage="zaizen/zaizen_11_1_3.ks" target="seen_1"
 [endif]
 [イベントシーン終了]

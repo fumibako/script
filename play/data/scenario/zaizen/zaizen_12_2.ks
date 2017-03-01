@@ -107,7 +107,7 @@
 私は、磯野に庶民の暮らしと、国の銀行の成り立ち、[r]
 その営業の仕組みについて意見を聞き、話し合った。[p]
 
-[if exp="tf.okeiko_gamen != true"]
+[if exp="f.okeiko_gamen != true"]
 ;テストモード
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
@@ -116,7 +116,7 @@
 @jump storage="zaizen/zaizen_12_2_2.ks" target=*seen1
 [endif]
 
-[if exp="tf.okeiko_gamen == true && f.para_zaizen_koukando > 70"]
+[if exp="f.okeiko_gamen == true && f.para_zaizen_koukando > 70"]
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
@@ -126,7 +126,7 @@
 
 [イベントシーン終了]
 ;=================================================================================================
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 @jump storage="test_zaizen.ks"

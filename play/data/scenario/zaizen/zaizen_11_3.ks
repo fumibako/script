@@ -38,7 +38,7 @@
 ;【SE】紙に触れる（スッ）
 ;[playse storage=paper_su.ogg loop=false ]
 *fumi_toutyaku_zaizen_31
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のパーティについて」　財前 美彬";//←仮タイトルです(お好みで変更してください)
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「先日のパーティについて」";//←仮タイトルです(お好みで変更してください)
@@ -84,7 +84,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp][r][r]追伸　これから仕事が忙しくなりそうなので[r]
 お手紙のお返事は暫く返せなくなるかもしれません[p]
 [resetfont]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[1][30] = 0"]
 [endif]

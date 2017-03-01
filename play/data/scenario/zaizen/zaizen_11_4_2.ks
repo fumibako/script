@@ -12,7 +12,7 @@
 ;【背景】主人公邸_庭_昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [イベントシーン構築ボタン無し版]
 [endif]
 #
@@ -150,7 +150,7 @@
 
 ;======================================================================
 [イベントシーン終了]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 @jump storage="test_zaizen.ks"

@@ -27,7 +27,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][0] = 0;"]
 	;f.midoku_list_hairetsu[1][0]は共通イベントオープニング中で届く最初の手紙です。script/fumi_zaizen.ks中にあります
@@ -43,7 +43,7 @@
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『趣味について』[p]
 [endif]
@@ -68,7 +68,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][1] = 0;"]
 	;f.midoku_list_hairetsu[1][0]は共通イベントオープニング中で届く最初の手紙です。script/fumi_zaizen.ks中にあります
@@ -81,7 +81,7 @@
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『仕事について』[p]
 [endif]
@@ -114,7 +114,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][2] = 0;"]
 	[freeimage layer = 29]
@@ -126,7 +126,7 @@
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『友人について 』[p]
 [endif]
@@ -157,7 +157,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][3] = 0;"]
 	[freeimage layer = 29]
@@ -169,7 +169,7 @@
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『家族について』[p]
 [endif]
@@ -195,7 +195,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][4] = 0;"]
 	[freeimage layer = 29]
@@ -207,7 +207,7 @@
 ;=============================================
 ;◆話題への返事◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『将来について 』[p]
 [endif]
@@ -233,7 +233,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][5] = 0;"]
 	[freeimage layer = 29]
@@ -243,7 +243,7 @@
 [手紙財前読了 fumi_number=]
 ;=============================================
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『新茶の話題 』[p]
 [endif]
@@ -268,7 +268,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][6] = 0;"]
 	[freeimage layer = 29]
@@ -278,7 +278,7 @@
 [手紙財前読了 fumi_number=]
 
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『さつきの話題』[p]
 ;↑桜の話題→さつきの話題、と手紙の内容に合わせて変更しました(◆jsYiJcqRkk
@@ -305,7 +305,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][7] = 0;"]
 	[freeimage layer = 29]
@@ -320,7 +320,7 @@
 ;『 読書について 』
 ;=============================================
 *zaizen_fumi08
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『読書について』[p]
 [endif]
@@ -346,7 +346,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][8] = 0;"]
 	[freeimage layer = 29]
@@ -360,7 +360,7 @@
 ;『 スポーツについて 』
 ;=============================================
 *zaizen_fumi09
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『スポーツについて』[p]
 [endif]
@@ -381,7 +381,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][9] = 0;"]
 	[freeimage layer = 29]
@@ -395,7 +395,7 @@
 ;『 食事について 』
 ;=============================================
 *zaizen_fumi10
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 食事について 』[p]
 [endif]
@@ -415,7 +415,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][10] = 0;"]
 	[freeimage layer = 29]
@@ -429,7 +429,7 @@
 ;『 観劇について 』
 ;=============================================
 *zaizen_fumi11
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 観劇について 』[p]
 [endif]
@@ -449,7 +449,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][11] = 0;"]
 	[freeimage layer = 29]
@@ -463,7 +463,7 @@
 ;『 猫について 』
 ;=============================================
 *zaizen_fumi12
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 猫について 』[p]
 [endif]
@@ -485,7 +485,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][12] = 0;"]
 	[freeimage layer = 29]
@@ -499,7 +499,7 @@
 ;『聞き上手と話し上手について 』
 ;=============================================
 *zaizen_fumi13
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『聞き上手と話し上手について 』[p]
 [endif]
@@ -520,7 +520,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][13] = 0;"]
 	[freeimage layer = 29]
@@ -534,7 +534,7 @@
 ;『緑の石について』
 ;=============================================
 *zaizen_fumi14
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『緑の石について』[p]
 [endif]
@@ -556,7 +556,7 @@
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][14] = 0;"]
 	[freeimage layer = 29]
@@ -570,7 +570,7 @@
 ;『緑の石ついて2 』
 ;=============================================
 *zaizen_fumi15
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『緑の石について2』[p]
 [endif]
@@ -590,7 +590,7 @@
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][15] = 0;"]
 	[freeimage layer = 29]
@@ -604,7 +604,7 @@
 ;『写真について』
 ;=============================================
 *zaizen_fumi16
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『写真について』[p]
 [endif]
@@ -632,7 +632,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][16] = 0;"]
 	[freeimage layer = 29]
@@ -646,7 +646,7 @@
 ;『一日のはじまりについて』
 ;=============================================
 *zaizen_fumi17
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『一日のはじまりについて』[p]
 [endif]
@@ -669,7 +669,7 @@
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][17] = 0;"]
 	[freeimage layer = 29]
@@ -683,7 +683,7 @@
 ;『お気に入りの曲について』
 ;=============================================
 *zaizen_fumi18
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『お気に入りの曲について』[p]
 [endif]
@@ -703,7 +703,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][18] = 0;"]
 	[freeimage layer = 29]
@@ -717,7 +717,7 @@
 ;『お気に入りの曲について 2』１１月２週以降
 ;=============================================
 *zaizen_fumi19
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『お気に入りの曲について 2』[p]
 [endif]
@@ -740,7 +740,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][19] = 0;"]
 	[freeimage layer = 29]
@@ -754,7 +754,7 @@
 ;『 道 』
 ;=============================================
 *zaizen_fumi20
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 道 』[p]
 [endif]
@@ -776,7 +776,7 @@
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][20] = 0;"]
 	[freeimage layer = 29]
@@ -790,7 +790,7 @@
 ;『 道２ 』
 ;=============================================
 *zaizen_fumi21
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 道２ 』[p]
 [endif]
@@ -809,7 +809,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][21] = 0;"]
 	[freeimage layer = 29]
@@ -823,7 +823,7 @@
 ;『 変化と永遠 』
 ;=============================================
 *zaizen_fumi22
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『 変化と永遠 』[p]
 [endif]
@@ -851,7 +851,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][22] = 0;"]
 	[freeimage layer = 29]
@@ -865,7 +865,7 @@
 
 ;◆季節の便り◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『柏餅 』[p]
 [endif]
@@ -892,7 +892,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][23] = 0;"]
 	[freeimage layer = 29]
@@ -903,7 +903,7 @@
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『梅雨 』[p]
 [endif]
@@ -927,7 +927,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][24] = 0;"]
 	[freeimage layer = 29]
@@ -938,7 +938,7 @@
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『七夕 』[p]
 [endif]
@@ -964,7 +964,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][25] = 0;"]
 	[freeimage layer = 29]
@@ -975,7 +975,7 @@
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『お墓参り 』[p]
 [endif]
@@ -1002,7 +1002,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][26] = 0;"]
 	[freeimage layer = 29]
@@ -1013,7 +1013,7 @@
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『彼岸花 』[p]
 [endif]
@@ -1041,7 +1041,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][27] = 0;"]
 	[freeimage layer = 29]
@@ -1052,7 +1052,7 @@
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『菊花展』[p]
 [endif]
@@ -1077,7 +1077,7 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[1][28] = 0;"]
 	[freeimage layer = 29]
@@ -1092,7 +1092,7 @@
 ;10月3週『薔薇園散策のお誘い』←仮タイトルです
 ;=============================================
 *zaizen_fumi29
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『薔薇園 散策のお誘い』[p]
 [endif]
@@ -1119,7 +1119,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[1][30] = 0;"]
 	[freeimage layer = 29]
@@ -1131,7 +1131,7 @@
 ;11月3週『先日のパーティについて』←仮タイトルです
 ;=============================================
 *zaizen_fumi30
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『先日のパーティについて』[p]
 [endif]
@@ -1162,7 +1162,7 @@
 お手紙のお返事は暫く返せなくなるかもしれません[p]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[1][30] = 0"]
 	[freeimage layer = 29]
@@ -1176,7 +1176,7 @@
 ;エンディングのため、ゲーム中から「文箱」機能で読み返すことはできませんが「おまけ」で手紙を読み返す機能をつけるかもしれません。その際に読めるようにここに置きます(◆jsYiJcqRkk
 ;=============================================
 *zaizen_fumi31
-[if exp="tf.okeiko_gamen!=true"]
+[if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『母の誕生日パーティご招待』[p]
 [endif]
@@ -1206,7 +1206,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[1][31] = 0;"]
 	[freeimage layer = 29]

@@ -40,7 +40,7 @@ $('.list').remove();
 *seen_1
 ;本編からここに飛んできます
 ;↓本編選択肢後にメッセージレイヤを戻す処理です
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [cm]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true

@@ -87,7 +87,7 @@ $('.list').remove();
 [endif]
 
 *fumi_toutyaku_zaizen_32
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「母の誕生日パーティご招待」　財前 美彬";//←仮タイトルです(お好みで変更してください)
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「母の誕生日パーティご招待」";//←仮タイトルです(お好みで変更してください)
@@ -132,7 +132,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [resetfont]
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[1][31] = 0"]
 [endif]
@@ -610,7 +610,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;normalここまで
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
-[if exp="tf.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) && ( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good) && f.para_shujinkou_shukujodo >= 80"]
+[if exp="f.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) && ( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good) && f.para_shujinkou_shukujodo >= 80"]
 [暗転２ storage=bg/zaizen_paty_niwa.jpg]
 ;【背景】パーティ会場庭
 [chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
@@ -667,7 +667,7 @@ $('.1_fore').remove();
 [endif]
 
 ;◆normalED終了処理へ
-[if exp="tf.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen==true"]
 [財前ルート終了 end="normal"]
 @jump storage="event.ks" target=*event_ED
 [endif]
