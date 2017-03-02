@@ -72,6 +72,10 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
+;WEBインスペクター表示→[trace]
+[emb exp="f.fumi_all_title_new"][r]
+[emb exp="f.fumi_hujieda_title_new"]
+
 *fumi_toutyaku_hujieda_3
 [if exp="f.okeiko_gamen==true"]
 [iscript]	
