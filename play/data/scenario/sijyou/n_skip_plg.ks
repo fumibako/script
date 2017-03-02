@@ -223,7 +223,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 
 *plo
 [cm]
-[position width=960 height=550 top=60 left=300 page=fore opacity=0]
+[position width=960 height=550 top=60 left=250 page=fore opacity=0]
 @jump target="prologue0"
 [s]
 
