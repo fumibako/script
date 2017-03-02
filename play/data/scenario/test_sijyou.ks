@@ -74,6 +74,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test_credit" text="仮credit" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=blue]
 [glink target="test_bg" text="背景テスト" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=blue]
+[glink target="n_skip_plg" text="プロローグスキップテスト" graphic="select_waku_x500.png" size=15 width="250" x=450 y=300 color=blue]
 
 [glink target="test_page1" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
 [glink target="test_page3" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
@@ -472,6 +473,13 @@ sf.ED_hujieda_bad=1;
 [endscript]
 *no2
 @jump target=test_page1
+[s]
+
+*n_skip_plg
+[cm]
+[freeimage layer = 26]
+[iscript]
+@jump storage=n_skip_plg.ks
 [s]
 
 *test_save
