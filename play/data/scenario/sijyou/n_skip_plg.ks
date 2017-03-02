@@ -90,7 +90,8 @@ $('.junbi_girl').remove();
 $("input[name='sf.girl_myouji']").val("鷹司");
 $("input[name='sf.girl_namae']").val("文奈");
 //◆追加分
-$(".text_box").css('font-family' , "游明朝", "YuMincho", "ヒラギノ明朝", "ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "serif"):
+var p_props = {"font-family" : "游明朝", "YuMincho", "ヒラギノ明朝", "ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "serif"}
+$(".text_box").css(p_props):
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*ck_name x=650 y=250]
