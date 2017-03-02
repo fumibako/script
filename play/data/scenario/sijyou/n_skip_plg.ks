@@ -338,11 +338,18 @@ TG.stat.play_se = true;
 
 ;◆追加分
 [if exp="f.skip_sentaku == 1"]
+反応テスト[p]
 [イベントシーン構築枠茶色]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[wait time=10]
+@layopt layer=message0 page=fore visible=true
+[ptext name="chara_name_area" layer="message0" size=26 x=270 y=407 bold="bold"]
+[chara_config ptext="chara_name_area"]
 @jump target=*prologue_A
-[else]
+[endif]
+
+
 ;メッセージエリアの表示
 [eval exp="f.message_storage='message_bg/frame_brown.png'"]
 [chara_mod name="message_bg" storage=&f.message_storage]
@@ -371,7 +378,7 @@ TG.stat.play_se = true;
 @layopt layer=message0 page=fore visible=true
 [ptext name="chara_name_area" layer="message0" size=26 x=270 y=407 bold="bold"]
 [chara_config ptext="chara_name_area"]
-[endif]
+
 
 ;◆追加文
 *prologue_A
