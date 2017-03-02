@@ -148,6 +148,8 @@ f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi02");
 f.fumi_list_all_location_taishou.push(4);
+f.fumi_list_all_location_fumi.push(2);
+f.fumi_list_hujieda_location_fumi.push(2);
 [endscript]
 
 ;WEBインスペクター表示
@@ -155,8 +157,6 @@ f.fumi_list_all_location_taishou.push(4);
 [trace exp="f.fumi_hujieda_title_new"]
 
 [iscript]	
-f.fumi_list_all_location_fumi.push(2);
-f.fumi_list_hujieda_location_fumi.push(2);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
 f.fumi_list_hujieda_target.push("*hujieda_fumi02");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
@@ -164,6 +164,7 @@ f.fumi_toutyaku_hujieda[3]=1;
 f.fumi_all_number=f.fumi_all_number + 1;
 f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
 [endscript]
+;ここでエラー
 
 [iscript]	
 f.hensin_list_hairetsu[4][2] = -1;
