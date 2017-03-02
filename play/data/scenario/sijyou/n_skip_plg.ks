@@ -336,10 +336,11 @@ TG.stat.play_se = true;
 [背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
+;============================================================================================================
 ;◆追加分
 [if exp="f.skip_sentaku == 1"]
 [イベントシーン構築枠茶色]
-反応テスト[p]
+;反応テスト[p]
 ;メッセージレイヤを会話窓用に設定変更
 [position layer=message1 left=240 width=700 height=170 top=415 page=fore margint="50"]
 [wait time=10]
@@ -348,7 +349,7 @@ TG.stat.play_se = true;
 [chara_config ptext="chara_name_area"]
 @jump target=*prologue_A
 [endif]
-
+;============================================================================================================
 
 ;メッセージエリアの表示
 [eval exp="f.message_storage='message_bg/frame_brown.png'"]
@@ -379,10 +380,11 @@ TG.stat.play_se = true;
 [ptext name="chara_name_area" layer="message0" size=26 x=270 y=407 bold="bold"]
 [chara_config ptext="chara_name_area"]
 
-
+;============================================================================================================
 ;◆追加文
 *prologue_A
 [clearstack stack=if]
+;============================================================================================================
 
 [cm]
 ;【SE】ペンで書く
