@@ -185,7 +185,11 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [if exp="sf.ED_hujieda_good == 1 || sf.ED_hujieda_normal == 1 || sf.ED_hujieda_bad == 1"]
 @jump target=skip_sentaku
 [endif]
+;======================================条件に合わなければ問答無用でプロローグへ====================================
+;◆条件に合わなければ問答無用でプロローグへ naming.ksでskip_plg0に飛んでも大丈夫な構造
 @jump storage="prologue.ks"
+;============================================================================================================
+
 [s]
 
 [call target=*start storage="tyrano.ks"]
