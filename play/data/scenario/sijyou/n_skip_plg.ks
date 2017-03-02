@@ -89,6 +89,8 @@ $('.junbi_girl').remove();
 //デフォルトの名前
 $("input[name='sf.girl_myouji']").val("鷹司");
 $("input[name='sf.girl_namae']").val("文奈");
+//◆追加分
+$(".text_box").css('font-family' , "游明朝", "YuMincho", "ヒラギノ明朝", "ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;")
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*ck_name x=650 y=250]
@@ -223,7 +225,9 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 
 *plo
 [cm]
-[position width=960 height=550 top=60 left=250 page=fore opacity=0]
+;全画面
+[position left=200 width=960 height=530 top=110 page=fore margint="50"]
+;[position width=960 height=550 top=60 left=250 page=fore opacity=0]
 @jump target="prologue0"
 [s]
 
@@ -334,9 +338,11 @@ TG.stat.play_se = true;
 [背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
+;◆追加分
 [if exp="tf.skip_sentaku == 1"]
 [イベントシーン構築枠茶色]
-
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [else]
 ;メッセージエリアの表示
 [eval exp="f.message_storage='message_bg/frame_brown.png'"]
