@@ -230,6 +230,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 *op
 [cm]
 ;------オープニングの最初にジャンプする
+[イベントシーン構築]
 @jump storage="opening2.ks"
 [s]
 
