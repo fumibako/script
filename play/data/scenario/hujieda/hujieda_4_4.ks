@@ -147,6 +147,7 @@ f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　二
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi02");
+f.fumi_list_all_location_taishou.push(4);
 [endscript]
 
 ;WEBインスペクター表示
@@ -154,7 +155,6 @@ f.fumi_list_all_target.push("*hujieda_fumi02");
 [trace exp="f.fumi_hujieda_title_new"]
 
 [iscript]	
-f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(2);
 f.fumi_list_hujieda_location_fumi.push(2);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
