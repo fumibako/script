@@ -210,7 +210,9 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [current layer="message1"]
 [font size=32]
 ;=====================================================
-
+;飛び先で利用
+[clearstack stack=if]
+[eval exp="tf.skip_sentaku=1"]
 [link target=*plo]プロローグから始める[endlink][r]
 [r][r][r]
 [link target=*op] オープニングから始める[endlink][r]
@@ -220,16 +222,19 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [s]
 
 *plo
+[cm]
 [position width=960 height=550 top=60 left=300 page=fore opacity=0]
 @jump storage="prologue.ks"
 [s]
 
 *op
+[cm]
 ;------オープニングの最初にジャンプする
 @jump storage="opening2.ks"
 [s]
 
 *okiko
+[cm]
 ;------お稽古画面からはじめる
 [stopbgm]
 ;------シナリオの最初にジャンプする
