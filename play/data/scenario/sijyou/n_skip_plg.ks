@@ -338,10 +338,10 @@ TG.stat.play_se = true;
 
 ;◆追加分
 [if exp="f.skip_sentaku == 1"]
-反応テスト[p]
 [イベントシーン構築枠茶色]
+反応テスト[p]
 ;メッセージレイヤを会話窓用に設定変更
-;[position layer=message1 left=240 width=700 height=170 top=415 page=fore margint="50"]
+[position layer=message1 left=240 width=700 height=170 top=415 page=fore margint="50"]
 [wait time=10]
 @layopt layer=message0 page=fore visible=true
 [ptext name="chara_name_area" layer="message0" size=26 x=270 y=407 bold="bold"]
