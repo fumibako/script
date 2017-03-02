@@ -241,7 +241,7 @@
 
 ;背景変更:桃　昼
 [eval exp="f.haikei_credit=''"]
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku3.jpg" time=1000 visible=true]
+[image layer=29 x=1 y=1 storage="bg/bg_tokiko_sansaku3.jpg" time=1000 visible=true]
 [wait time=10]
 私、もう気持ちが抑えきれなくてお手紙を書いたのです。[r]
 正直な気持ちを書いた恋文を……。[p]
@@ -251,7 +251,7 @@
 [sp]醜聞になります』　と返事の手紙にかいてありましたわ。[p]
 
 ;背景変更:桃　夜　[eval exp="f.haikei_credit=''"]
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku4.jpg" time=1000 visible=true]
+[image layer=29 x=1 y=1 storage="bg/bg_tokiko_sansaku4.jpg" time=1000 visible=true]
 [wait time=10]
 ハッキリと拒絶された事で、その夜は悲しくて泣き明かしました。[r]
 ……彼は縁談を受け、この家をでればもう会う事もないと。[r]

@@ -21,7 +21,7 @@
 [wait time=10]
 ;【背景】;背景与党会議室
 ;【背景】会議室（裏で画面構成）
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/kaigisitu.jpg"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/kaigisitu.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
