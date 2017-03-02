@@ -648,7 +648,7 @@
 「有難うございます。後ほど改めてお礼を」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公困り眉]
+[主人公眉困り]
 「そんな……」[p]
 
 [whosay name="飛鳥紗代子"]
