@@ -91,7 +91,8 @@
 [if exp="f.okeiko_gamen==true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　一」";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　一」";//←仮タイトルです。お好みに変更してください
+//f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　一」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　一」";//←仮タイトルです。お好みに変
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi01");
