@@ -107,6 +107,8 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [endscript]
 [endif]
 
+テストです。[emb exp="f.fumi_all_title_new"][p]
+
 [手紙藤枝 fumi_number=]
 
 箏の奏者様へ[l][r]
