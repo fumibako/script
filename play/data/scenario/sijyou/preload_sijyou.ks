@@ -8,7 +8,7 @@
 ;↓プリロード作成をありがとうございます。first.ksでのプリロードに移動と動作確認ができましたので、こちらのプリロード処理を消去します
 ;四条用プリロード画面はどこで読み込むか思案中です。okeiko.ksにif分岐で読込を考えてみましたが、okeiko.ksはほぼループ動作なので…何度も読み込むとメモリを圧迫したりするだろうかと懸念したりです(スクリプト担
 ;プリロード画面自体のプリロード 9_1で読むことにします。ありがとうございます！
-;[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
+;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_preload.jpg" wait=true]
 ;以降は、無駄な読み込みはしない
 @jump target=end_sub0
 ;=======================================================================================
@@ -25,7 +25,7 @@
 ;///使用背景メモ　必要時に解放///////
 [preload storage="data/fgimage/bg/test_sijyou_hanazono.jpg" time=1500]
 ;プリロード画面自体のプリロード
-[preload storage="data/fgimage/bg/bg_sijyou_preload.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_preload.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -49,7 +49,7 @@
 *9_2
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sijyou_preload.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///使用背景メモ　必要時に解放///////
@@ -344,7 +344,7 @@
 ;グットエンドエピローグ
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sijyou_preload.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////////////////////
@@ -360,7 +360,7 @@
 ;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します　
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sijyou_preload.jpg" time=500]
 [wait time=50]
 [image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
@@ -394,7 +394,7 @@
 ;香水店デート　プリロード画面表示は未定
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sijyou_preload.jpg" time=500]
 [wait time=50]
 [image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
@@ -412,7 +412,7 @@
 *ed
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sijyou_preload.jpg" time=500]
 [wait time=50]
 [image name="loding_pic1" layer=29 folder="image" zindex=2 storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
@@ -450,7 +450,7 @@
 *bonyou2
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_sijyou_preload.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sijyou_preload.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 @jump target=end_sub1
