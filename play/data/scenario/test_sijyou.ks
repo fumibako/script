@@ -479,7 +479,7 @@ sf.ED_hujieda_bad=1;
 [cm]
 [freeimage layer = 26]
 [iscript]
-@jump storage=n_skip_plg.ks
+@jump storage=sijyou/n_skip_plg.ks
 [s]
 
 *test_save
