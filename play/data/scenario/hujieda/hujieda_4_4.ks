@@ -136,6 +136,63 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 
+
+;====================================テスト中追加=========================================
+*fumi_toutyaku_hujieda_3
+[if exp="f.okeiko_gamen==true"]
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　二」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　二」";//←仮タイトルです。お好みに変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi02");
+f.fumi_list_all_location_taishou.push(4);
+f.fumi_list_all_location_fumi.push(2);
+f.fumi_list_hujieda_location_fumi.push(2);
+f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
+f.fumi_list_hujieda_target.push("*hujieda_fumi02");
+f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
+f.fumi_toutyaku_hujieda[3]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
+f.hensin_list_hairetsu[4][2] = -1;
+f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
+[endscript]
+[endif]
+
+[手紙藤枝 fumi_number=]
+
+[ruby text=こと]箏の奏者様へ[l][r]
+[r]
+[sp]緑照り映える時節。
+[r]
+[sp]この手紙は貴方様に届いていますでしょうか？　[r]
+[r]
+[sp]また貴方様の[ruby text=こと]箏の音を聞きました。[r]
+少し上達されましたね。心から嬉しく想います。[r]
+[r]
+[sp]母は[ruby text=こと]箏が、とても上手で僕はその音色が好きでした。[r]
+;[ruby text=こと]箏の音色が好きでした。[r]
+[sp]貴方様の音は母と違った魅力があります。[r]
+[sp]母は華やかで優美な調べでした。[p]
+;アイコンにかかっているので分割します
+[r][sp]
+[sp]貴方の音は初々しく楚々とした調べです。[r]
+[sp]つま弾く音は、どの音も、とても丁寧な響きを持っていて[r]
+今後基礎を覚えたらどんな風に曲を奏でるのか楽しみです。
+[sp][r]
+[sp]極めることは貴方様の為にもなると思います。[r]
+[sp]続けることは嫌な事もありますが、喜びも多くあります。[r]
+[r]
+[sp]また貴方様の[ruby text=こと]箏の音を聴けることを願っています。[p]
+[if exp="f.okeiko_gamen==true"]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[4][2] = 0"]
+[endif]
+[手紙藤枝読了 fumi_number=]
+[resetfont]
+;=============================================================================
+
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
