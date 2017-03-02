@@ -109,6 +109,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 ;WEBインスペクター表示
 [trace exp="f.fumi_all_title_new"][r]
 [trace exp="f.fumi_hujieda_title_new"]
+[emb exp="f.fumi_list_hujieda_location_fumi"][p]
 
 [手紙藤枝 fumi_number=]
 
@@ -153,11 +154,13 @@ f.fumi_list_all_location_fumi.push(2);
 
 ;WEBインスペクター表示
 [trace exp="f.fumi_list_hujieda_location_fumi"][r]
-[emb exp="f.fumi_list_hujieda_location_fumi"][r]
+[emb exp="f.fumi_list_hujieda_location_fumi"][p]
+;表示
 
 [iscript]	
 f.fumi_list_hujieda_location_fumi.push(2);
 [endscript]
+;ここでエラー
 
 ;WEBインスペクター表示
 [trace exp="f.fumi_all_title_new"][r]
@@ -171,7 +174,7 @@ f.fumi_toutyaku_hujieda[3]=1;
 f.fumi_all_number=f.fumi_all_number + 1;
 f.fumi_hujieda_number=f.fumi_hujieda_number + 1;
 [endscript]
-;ここでエラー
+
 
 [iscript]	
 f.hensin_list_hairetsu[4][2] = -1;
