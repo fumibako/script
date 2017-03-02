@@ -136,6 +136,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 
+@jump target=test_fumiskip
 
 ;====================================テスト中追加=========================================
 *fumi_toutyaku_hujieda_3
@@ -192,6 +193,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 ;=============================================================================
+*test_fumiskip
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
