@@ -149,6 +149,13 @@ f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi02");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(2);
+[endscript]
+
+;WEBインスペクター表示
+[trace exp="f.fumi_list_hujieda_location_fumi"][r]
+[emb exp="f.fumi_list_hujieda_location_fumi"][r]
+
+[iscript]	
 f.fumi_list_hujieda_location_fumi.push(2);
 [endscript]
 
