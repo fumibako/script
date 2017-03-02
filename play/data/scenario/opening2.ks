@@ -28,8 +28,11 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [stopbgm]
+[if exp="sf.BGM=='ON'"]
 ;【BGM】秋の夜長（オープニング等まったりシーンに）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="mattari_akinoyonaga.ogg" loop=true]
+[eval exp="f.bgm_storage='mattari_akinoyonaga.ogg'"]
+[endif]
 
 ;メッセージ窓の表示
 [eval exp="f.message_storage='message_bg/frame_red.png'"]
@@ -43,6 +46,9 @@
 
 ;メッセージレイヤサイズを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[current layer="message0"]
+[resetfont]
+
 ;セーブ等ボタン配置
 [locate x=530 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
@@ -109,12 +115,15 @@ $('.junbi_girl').remove();
 [resetfont]
 「はい」[r]
 jumpします。[p]
+
 [cm]
 @jump target=*fumi_sentaku01
 [s]
 
 *jump_no
+@layopt layer=message1 visible=false
 [current layer="message0"]
+[resetfont]
 「いいえ」[r]
 最初からはじめます。[p]
 [cm]
