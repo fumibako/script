@@ -8,8 +8,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 ;【背景】パーティ会場の控室
-[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
+;[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -187,7 +187,7 @@
 [暗転２ storage="bg/test_zaizen_paty1.jpg" time=1500]
 ;【背景】パーティー会場
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;====================================================================================
 #

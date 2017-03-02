@@ -23,7 +23,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 ;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
@@ -59,7 +59,7 @@
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 ;個別のプリロード画面が今はないのです
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
@@ -168,7 +168,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////////////使用背景メモ///////////////////////////////////
@@ -187,7 +187,7 @@
 ;【背景】港町的な背景
 [preload storage="data/fgimage/bg/zaizen_minato.jpg" wait=true]
 ;【背景】パーティ会場控室
-[preload storage="data/fgimage/bg/zaizen_paty_hikae.jpg" wait=true]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" wait=true]
 ;【背景】シャンデリア
 [preload storage="data/fgimage/bg/bg_syanderia.jpg" wait=true]
 ;【背景】ホール
@@ -269,7 +269,7 @@
 [wait time=50]
 ;//////////////////////////使用背景メモ　///////////////////////////////
 ;【背景】パーティ会場控室
-[preload storage="data/fgimage/bg/zaizen_paty_hikae.jpg" wait=true]
+[preload storage="data/fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" wait=true]
 ;【背景】シャンデリア
 ;【背景】ホール]
 ;=======================================================================================
@@ -358,7 +358,7 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
 ;【背景】背景会議室
-[preload storage="data/fgimage/bg/I9IhvvVdPo/test_zaizen_kaigi.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/test_zaizen_kaigi.jpg" wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
@@ -419,7 +419,7 @@
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -443,7 +443,7 @@
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -468,7 +468,7 @@
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
