@@ -488,6 +488,19 @@ sf.ED_hujieda_bad=1;
 [iscript]
 localStorage.clear();
 [endscript]
+[glink target="yes11" text="システムフラグ閉鎖(タイトルへ)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+[glink target="no11" text="ゲームフラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
+[glink target="no22" text="おわる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
+[s]
+*yes11
+[clearsysvar]
+@jump target="title"
+[s]
+*no11
+[clearvar]
+[s]
+@jump target="title"
+*no22
 @jump target=test_page1
 [s]
 
