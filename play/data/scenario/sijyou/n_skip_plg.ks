@@ -341,7 +341,7 @@ TG.stat.play_se = true;
 [イベントシーン構築枠茶色]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@jump target=*prologue3
+@jump target=*prologue_A
 [else]
 ;メッセージエリアの表示
 [eval exp="f.message_storage='message_bg/frame_brown.png'"]
@@ -374,7 +374,7 @@ TG.stat.play_se = true;
 [endif]
 
 ;◆追加文
-*prologue3
+*prologue_A
 [clearstack stack=if]
 
 [cm]
