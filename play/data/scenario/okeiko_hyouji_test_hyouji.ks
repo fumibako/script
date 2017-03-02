@@ -59,7 +59,8 @@
 
 ;攻略対象名ルート(1○,0×)=[emb exp="f.oaite_name_au"],お見合い(1後,0未)=[emb exp="f.oaite_name_omiai"][r]
 
-[emb exp="f.fumi_all_title_new"][emb exp="f.fumi_hujieda_title_new"]
+;藤枝手紙[emb exp="f.fumi_all_title_new"][emb exp="f.fumi_hujieda_title_new"]
+
 [resetfont]
 
 @jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
