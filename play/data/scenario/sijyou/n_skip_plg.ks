@@ -334,7 +334,7 @@ TG.stat.play_se = true;
 [背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-;[if exp="tf.skip_sentaku == 1"]
+[if exp="tf.skip_sentaku == 1"]
 [イベントシーン構築枠茶色]
 
 [else]
