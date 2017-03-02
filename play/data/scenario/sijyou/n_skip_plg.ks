@@ -212,7 +212,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 ;=====================================================
 ;飛び先で利用
 [clearstack stack=if]
-[eval exp="tf.skip_sentaku=1"]
+[eval exp="f.skip_sentaku=1"]
 [link target=*plo]プロローグから始める[endlink][r]
 [r][r][r]
 [link target=*op] オープニングから始める[endlink][r]
@@ -337,7 +337,7 @@ TG.stat.play_se = true;
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 ;◆追加分
-[if exp="tf.skip_sentaku == 1"]
+[if exp="f.skip_sentaku == 1"]
 [イベントシーン構築枠茶色]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
