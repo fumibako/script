@@ -136,7 +136,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 
-@jump target=test_fumiskip
+;@jump target=test_fumiskip
 
 ;====================================テスト中追加=========================================
 *fumi_toutyaku_hujieda_3
