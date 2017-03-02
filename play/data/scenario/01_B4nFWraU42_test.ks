@@ -27,7 +27,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="sansaku06" text="共通散策イベント6『猫の話題』" graphic="select_waku_x500.png" size=20 width="450" x=100 y=350 color=white]
 [glink target="sansaku07" text="共通散策イベント7『変化と永遠』" graphic="select_waku_x500.png" size=20 width="450" x=100 y=400 color=white]
 [glink target="sansaku08" text="共通散策イベント8『手紙』（町なみイベント）" graphic="select_waku_x500.png" size=20 width="450" x=100 y=450 color=white]
-;[glink target="sansaku09" text="共通散策イベント9" graphic="select_waku_x500.png" size=20 width="450" x=100 y=500 color=white]
+[glink target="sansaku09" text="共通散策イベント『飛鳥さん』" graphic="select_waku_x500.png" size=20 width="450" x=100 y=500 color=white]
 ;[glink target="sansaku10" text="共通散策イベント10" graphic="select_waku_x500.png" size=20 width="450" x=100 y=550 color=white]
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
