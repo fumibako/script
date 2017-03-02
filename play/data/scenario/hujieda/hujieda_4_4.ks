@@ -106,8 +106,9 @@ f.hensin_list_hairetsu[4][1] = -1;
 f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_fumi;
 [endscript]
 [endif]
-
-テストです。[emb exp="f.fumi_all_title_new"][p]
+;WEBインスペクター表示
+[trace exp="f.fumi_all_title_new"][r]
+[trace exp="f.fumi_hujieda_title_new"]
 
 [手紙藤枝 fumi_number=]
 
