@@ -224,7 +224,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 *plo
 [cm]
 [position width=960 height=550 top=60 left=300 page=fore opacity=0]
-@jump target="prologue"
+@jump target="prologue0"
 [s]
 
 *op
@@ -245,7 +245,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 ;============================================================================================================
 ;プロローグ準備　元ファイルを触るのは怖いのでこちらに追加
 ;============================================================================================================
-*prologue
+*prologue0
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [if exp="sf.BGM=='OFF'"]
 [iscript]
