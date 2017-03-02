@@ -205,7 +205,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 
 ;=====================================================
 ;選択肢用レイヤーを追加
-[position layer=message1 height=400 top=100 left=380 opacity=0]
+[position layer=message1 height=500 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
