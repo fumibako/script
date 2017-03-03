@@ -542,14 +542,37 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 [if exp="sf.KSKIP=='ON' && sf.trail_okeiko_intro==undefined"]
 	[skipstop]
 [endif]
-;◆テスト画面から来た場合はカット
+;◆テスト画面から来た場合や周回時はカット
 [if exp="tf.test_gamen==true"]
 @jump storage="okeiko.ks" target=*okeiko_main
 [endif]
+;黒田チェック
+[if exp="sf.ED_kuroda_bad == 1 || sf.ED_kuroda_normal == 1 || sf.ED_kuroda_good == 1"]
+@jump storage="okeiko.ks" target=*okeiko_main
+[endif]
+;四条チェック
+[if exp="sf.ED_sijyou_bad == 1 || sf.ED_sijyou_normal == 1 || sf.ED_sijyou_good == 1"]
+@jump storage="okeiko.ks" target=*okeiko_main
+[endif]
+;財前チェック
+[if exp="sf.ED_zaizen_bad1 == 1 || sf.ED_zaizen_bad2 == 1 || sf.ED_zaizen_normal == 1 || sf.ED_zaizen_good == 1"]
+@jump storage="okeiko.ks" target=*okeiko_main
+[endif]
+;葛城宮チェック
+[if exp="sf.ED_katuraginomiya_good == 1 || sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_bad == 1"]
+@jump storage="okeiko.ks" target=*okeiko_main
+[endif]
+;藤枝チェック
+[if exp="sf.ED_hujieda_good == 1 || sf.ED_hujieda_normal == 1 || sf.ED_hujieda_bad == 1"]
+@jump storage="okeiko.ks" target=*okeiko_main
+[endif]
+
 *intro
 
 ;【背景】黒背景（和紙風の黒っぽい背景）全画面テキスト
 [chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=500]
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [font color=white size=27]
@@ -567,7 +590,7 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 [sp]　　　　　　気持ちも新たに[r]
 [r]
 [r]
-[sp]　　　　　　お稽古に励もう――[p]
+[sp]　　　　　　お稽古に励もう――。[p]
 [resetfont]
 
 @jump storage="okeiko.ks" target=*okeiko_main
