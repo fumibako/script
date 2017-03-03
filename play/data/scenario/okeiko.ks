@@ -38,6 +38,7 @@
 @jump storage="okeiko_hyouji.ks" target=*start
 
 ;◆描画処理終了
+
 *draw_owari
 
 [s]

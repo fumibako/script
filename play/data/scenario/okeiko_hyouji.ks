@@ -231,7 +231,7 @@ $('.junbi_girl').remove();
 [if exp="f.fumi_toutyaku != 0"]
 @jump target=*fumi_hyouji
 [endif]
-[cm]
+[ct]
 
 [if exp="tf.test_gamen_sijyou==true"]
 @jump storage="01_sijyou_test_hyouji.ks" target=*start
@@ -249,16 +249,21 @@ $('.junbi_girl').remove();
 [endif]
 
 *shujinkou_message
-;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
-[position left=360 width=500 height=170 top=250 page=fore margint="50"]
-
-;【システム表示】フキダシ枠【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-;[chara_show left=300 top=220 layer=23 name="sys_fukidasi" time=100]
-[chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
+[wait time=10]
+[current layer="message0"]
 [wait time=10]
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
-[current layer="message0"]
+[wait time=10]
+;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
+[position left=360 width=500 height=170 top=250 page=fore margint="50"]
+[wait time=10]
+
+;【システム表示】フキダシ枠仮表示【表示をより確実にするため、一旦リセットしてイチから表示】
+[freeimage layer = 23]
+[chara_new name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png"]
+[chara_show left=300 top=220 layer=23 name="sys_fukidasi" time=0]
+[wait time=10]
 
 [if exp="f.para_shujinkou_tairyoku_now < 1 || f.para_shujinkou_kiryoku_now < 1"]
 [chara_mod name="A_base" storage="girl/L/base.png" time=0]

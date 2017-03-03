@@ -373,7 +373,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_target='*replay_common_5_1'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_common[12]=1"]
-	[eval exp="f.event_advice=0"]
+;	[eval exp="f.event_advice=0"]
 	@jump storage="event.ks" target=*start
 [endif]
 

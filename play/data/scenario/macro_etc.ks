@@ -835,7 +835,7 @@ $('.loding_pic1').remove();
 
 ;◆[イベントシーン終了]
 [macro name="イベントシーン終了"]
-[cm]
+[ct]
 ;攻略対象立ち絵消去
 [freeimage layer = 8]
 [freeimage layer = 9]

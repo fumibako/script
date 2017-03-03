@@ -89,6 +89,9 @@ TG.stat.stack["call"] = [];
 *event_owari
 [freeimage layer = 26]
 [freeimage layer = 27]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+@layopt layer=message1 page=fore visible=false
 @layopt layer=message2 page=fore visible=false
 [skipstop]
 #
@@ -99,8 +102,6 @@ TG.stat.stack["call"] = [];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
 [cm]
 ;◆四条11月1週は週をまたぐイベントであるため、週数を調整
 [if exp = "f.okeiko_month == 11 && f.okeiko_week == 1 && f.sijyou_au == 1"]
@@ -123,55 +124,13 @@ TG.stat.stack["call"] = [];
 @jump storage="event_hantei_week_hajime.ks"
 [endif]
 
-[if exp="sf.BGM=='ON'"]
-[stopbgm]
-;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
-[wait time=10]
-[endif]
-
+;◆週終わりのイベントはフラグをリセットして休憩処理続きへ
 [if exp="f.event_jiki=='weekend'"]
-	[eval exp="f.event_jiki='weekstart'"]
+	[eval exp="f.event_jiki=''"]
 @jump storage="okeiko.ks" target=*okeiko_qk_shori
 [endif]
 
-;◆主人公立ち絵を戻す
-;主人公L画像表示:エラー対策で、一旦レイヤリセット後にchara_newでの表示としてみます
-;主人公L登場時被せ
-[image name="junbi_girl" layer=29 storage="girl/L/gitl_L_all_futuu.png" left=50 top=220 time=300 visible=true]
-[wait time=10]
-;一旦主人公L画像レイヤをリセット
-[freeimage layer = 3]
-[freeimage layer = 4]
-[freeimage layer = 5]
-[freeimage layer = 6]
-[layopt layer=3 visible=true]
-[layopt layer=4 visible=true]
-[layopt layer=5 visible=true]
-[layopt layer=6 visible=true]
-;主人公L画像を表示
-[chara_new name="A_base" storage="girl/L/base.png"]
-[chara_show left=50 top=220 layer=3 name="A_base" time=0]
-[wait time=10]
-[chara_new name="A_mayu" storage="girl/L/mayu_futuu.png"]
-[chara_show left=50 top=220 layer=4 name="A_mayu" time=0]
-[wait time=10]
-[chara_new name="A_me" storage="girl/L/me_futuu.png"]
-[chara_show left=50 top=220 layer=5 name="A_me" time=0]
-[wait time=10]
-[chara_new name="A_kuti" storage="girl/L/kuti_futuu.png"]
-[chara_show left=50 top=220 layer=6 name="A_kuti" time=0]
-[wait time=200]
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
-
-;背景変更:主人公邸_お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[wait time=10]
-
+;◆お稽古パートイベント判定終了へ
 @jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
 
 [return]
