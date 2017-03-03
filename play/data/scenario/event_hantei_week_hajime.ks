@@ -5,106 +5,6 @@
 
 ;◆イベント発生判定
 *event_hantei
-;◆テスト画面からプレイの場合は助言イベントをカット→設定で選べるようにしました
-[if exp="tf.advice_event_hyouji == 0"]
-@jump target=*advice_event_owari
-[endif]
-
-;=============================================
-;◆共通イベント判定：助言
-;=============================================
-;◆お稽古パート導入イベント判定 4月1週になった時点で1度だけ発生
-[if exp="((f.okeiko_month==4 && f.okeiko_week==1) && f.event_common[0]==0)"]
-	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_4_1'"]
-	[eval exp="f.event_type='advice'"]
-	[eval exp="f.event_common[0]=1"]
-;↓その週のアドバイスイベント処理を(0=アドバイスイベント発生かつ未通過、1=通過済)「今週は何をしましょうか？」のセリフに影響
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-;◆お稽古の助言イベント判定 4月2週になった時点でお稽古を一度もしていないと1度だけ発生
-[if exp="((f.okeiko_month==4 && f.okeiko_week==2) && f.para_shujinkou_shukujodo==1 && f.event_common[1]==0)"]
-	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_4_2'"]
-	[eval exp="f.event_type='advice'"]
-	[eval exp="f.event_common[1]=1"]
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-;◆散策の助言イベント判定 4月3週になった時点で散策を一度もしていないと1度だけ発生
-[if exp="((f.okeiko_month==4 && f.okeiko_week==3) && f.event_machi_common[1]==0 && f.event_common[2]==0)"]
-	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_4_3'"]
-	[eval exp="f.event_type='advice'"]
-	[eval exp="f.event_common[2]=1"]
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-;◆返信の助言イベント判定 4月4週になった時点で返信を一度もしていないと1度だけ発生
-[if exp="((f.okeiko_month==4 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[3]==0)"]
-	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_4_4'"]
-	[eval exp="f.event_type='advice'"]
-	[eval exp="f.event_common[3]=1"]
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-;◆返信の忠告イベント判定 5月1週になった時点で返信を一度もしていないと1度だけ発生
-[if exp="((f.okeiko_month==5 && f.okeiko_week==1) && f.fumi_henji==0 && f.event_common[4]==0)"]
-	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_1'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_common[4]=1"]
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-;◆お稽古の助言イベント判定 5月2週になった時点でお稽古を一度もしていないと1度だけ発生
-[if exp="((f.okeiko_month==5 && f.okeiko_week==2) && f.para_shujinkou_shukujodo==1 && f.event_common[5]==0)"]
-	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_2'"]
-	[eval exp="f.event_type='advice'"]
-	[eval exp="f.event_common[5]=1"]
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-;◆散策の助言イベント判定 5月3週になった時点で散策を一度もしていないと1度だけ発生
-[if exp="((f.okeiko_month==5 && f.okeiko_week==3) && f.event_machi_common[1]==0 && f.event_common[6]==0)"]
-	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_3'"]
-	[eval exp="f.event_type='advice'"]
-	[eval exp="f.event_common[6]=1"]
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-;◆返信の忠告イベント判定 5月4週になった時点で返信を一度もしていないと1度だけ発生
-[if exp="(f.okeiko_month==5 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[7]==0"]
-	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_4'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_common[7]=1"]
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-;◆「磯野に相談」イベント判定 5月中、他のアドバイスイベントが発生しなければ1度だけ発生
-[if exp="f.okeiko_month==5 && f.event_common[12]==0"]
-	[eval exp="f.event_storage='common_5_1.ks'"]
-	[eval exp="f.event_target='*replay_common_5_1'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_common[12]=1"]
-	[eval exp="f.event_advice=0"]
-	@jump storage="event.ks" target=*start
-[endif]
-
-*advice_event_owari
 
 ;=============================================
 ;◆共通イベント判定：助言以外
@@ -178,7 +78,6 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	@jump storage="event.ks" target=*start
 [endif]
 
-*common_event_hantei_owari
 
 ;◆各個別ルート(又はonly時)には対象キャラクターイベント判定のみ行う
 [if exp="f.zaizen_au == 1"]
@@ -377,6 +276,108 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_kuroda[14]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-
 *event_hantei_owari
+
+;◆テスト画面からプレイの場合は助言イベントをカット→設定で選べるようにしました
+[if exp="tf.advice_event_hyouji == 0"]
+@jump target=*advice_event_owari
+[endif]
+
+;=============================================
+;◆共通イベント判定：助言
+;=============================================
+;◆お稽古パート導入イベント判定 4月1週になった時点で1度だけ発生
+[if exp="((f.okeiko_month==4 && f.okeiko_week==1) && f.event_common[0]==0)"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_4_1'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[0]=1"]
+;↓その週のアドバイスイベント処理を(0=アドバイスイベント発生かつ未通過、1=通過済)「今週は何をしましょうか？」のセリフに影響
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆お稽古の助言イベント判定 4月2週になった時点でお稽古を一度もしていないと1度だけ発生
+[if exp="((f.okeiko_month==4 && f.okeiko_week==2) && f.para_shujinkou_shukujodo==1 && f.event_common[1]==0)"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_4_2'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[1]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆散策の助言イベント判定 4月3週になった時点で散策を一度もしていないと1度だけ発生
+[if exp="((f.okeiko_month==4 && f.okeiko_week==3) && f.event_machi_common[1]==0 && f.event_common[2]==0)"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_4_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[2]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆返信の助言イベント判定 4月4週になった時点で返信を一度もしていないと1度だけ発生
+[if exp="((f.okeiko_month==4 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[3]==0)"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_4_4'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[3]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆返信の忠告イベント判定 5月1週になった時点で返信を一度もしていないと1度だけ発生
+[if exp="((f.okeiko_month==5 && f.okeiko_week==1) && f.fumi_henji==0 && f.event_common[4]==0)"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[4]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆お稽古の助言イベント判定 5月2週になった時点でお稽古を一度もしていないと1度だけ発生
+[if exp="((f.okeiko_month==5 && f.okeiko_week==2) && f.para_shujinkou_shukujodo==1 && f.event_common[5]==0)"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_2'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[5]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆散策の助言イベント判定 5月3週になった時点で散策を一度もしていないと1度だけ発生
+[if exp="((f.okeiko_month==5 && f.okeiko_week==3) && f.event_machi_common[1]==0 && f.event_common[6]==0)"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[6]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆返信の忠告イベント判定 5月4週になった時点で返信を一度もしていないと1度だけ発生
+[if exp="(f.okeiko_month==5 && f.okeiko_week==4) && f.fumi_henji==0 && f.event_common[7]==0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_4'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[7]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆「磯野に相談」イベント判定 5月中、他のアドバイスイベントが発生しなければ1度だけ発生
+[if exp="f.okeiko_month==5 && f.event_common[12]==0"]
+	[eval exp="f.event_storage='common_5_1.ks'"]
+	[eval exp="f.event_target='*replay_common_5_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[12]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+*advice_event_owari
+*common_event_hantei_owari
+
 @jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
