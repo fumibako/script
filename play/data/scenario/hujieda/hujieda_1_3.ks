@@ -35,6 +35,46 @@
 [sp]すっかりお嬢様が立ち直られたようで、三宮様には感謝しないと[r]
 [sp]いけませんね」[p]
 
+
+;------------------------------------------------------
+[if exp="tf.test_gamen == true"]
+テストページからプレイしています。イベント終了まで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+
+[endif]
+;------------------------------------------------------
+
+
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
@@ -178,7 +218,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ――最後に私が藤枝様の背中を押すのだわ。[r]
 [sp]藤枝様が自由に飛び立てるように[p]
 
-;@jump storage="event.ks" target=*event_owari
+*seen_end
 
 [イベントシーン終了]
 [イベントシーン終了４]
