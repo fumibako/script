@@ -447,18 +447,23 @@ $('.junbi_girl').remove();
 *fumi_toutyaku_katuraginomiya_2
 [if exp="f.okeiko_gamen==true"]
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最初の手紙」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
-f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「最初の手紙」";//←仮タイトルです。お好みに変更してください
-f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_title.push("六月 「最初の手紙」 葛城宮 晴仁");
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
 f.fumi_list_all_target.push("*katuraginomiya_fumi00");
 f.fumi_list_all_location_taishou.push(3);
 f.fumi_list_all_location_fumi.push(1);
-f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
+
+f.fumi_list_katuraginomiya_location_fumi = [];
+f.fumi_list_katuraginomiya_location_fumi[0] = 1;
+f.fumi_list_katuraginomiya_title = [];
+f.fumi_list_katuraginomiya_title[0] = "六月 「最初の手紙」";
+f.fumi_list_katuraginomiya_target = [];
+f.fumi_list_katuraginomiya_target[0] = "*katuraginomiya_fumi00";
+f.midoku_list_hairetsu[3][1] = 0;
+f.hensin_list_hairetsu[3][1] = 1;
 f.fumi_toutyaku_katuraginomiya[2]=1;
 f.fumi_all_number=f.fumi_all_number + 1;
-f.fumi_katuraginomiya_number=f.fumi_katuraginomiya_number + 1;
-f.hensin_list_hairetsu[3][1] = 1;
+f.fumi_katuraginomiya_number = 1;
 f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
 [endscript]
 [endif]
