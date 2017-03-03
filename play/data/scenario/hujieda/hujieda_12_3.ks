@@ -33,6 +33,44 @@
 「お嬢様、[r]
 [sp]いつまでもふさぎ込んでいらしても仕方ありません」[p]
 
+
+;------------------------------------------------------
+[if exp="tf.test_gamen == true"]
+テストページからプレイしています。選択肢まで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_sele
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+
+[endif]
+;------------------------------------------------------
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ
 [主人公目閉じ]
@@ -148,6 +186,7 @@
 して泣いた。[p]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+*seen_sele
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
