@@ -114,6 +114,10 @@
 [ptext text="葛城宮のみと文通=1 それ以外=0" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
 [edit left=345 top=410 width=200 length=200 maxchars=3 name="f.katuraginomiya_only" height=20]
 
+[ptext text="誰かに手紙を出した=1 それ以外=0" layer=29 size=15 x=680 y=390 color=darkslateblue bold=bold]
+;f.fumi_henji==0
+[edit left=680 top=410 width=200 length=200 maxchars=3 name="f.fumi_henji" height=20]
+
 [ptext text="お見合い決定済(0決定、1未定)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
 [edit left=345 top=460 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
 
@@ -132,6 +136,7 @@
 
 [ptext text="8月以前の↑散策イベント 1=表示,0=非表示" layer=29 size=12 x=10 y=585 color=darkslateblue bold=bold]
 [edit left=75 top=560 width=50 length=200 maxchars=3 name="tf.event_sansaku_hyouji_before_au" height=20]
+
 
 
 [iscript]
@@ -174,6 +179,10 @@ $("input[name='f.event_katuraginomiya3']").val("0"); //デフォルト値0にし
 $("input[name='f.event_katuraginomiya2']").val("0");
 $("input[name='f.event_katuraginomiya1']").val("0");
 $("input[name='f.katuraginomiya_only']").val("0");
+
+//誰かに返事を出した
+$("input[name='f.fumi_henji']").val("0");
+
 //葛城宮確認用デフォルト値1 ご自由に設定してください
 $("input[name='f.event_oaite_mitei']").val("1");
 
@@ -231,6 +240,8 @@ f.event_katuraginomiya[1] = parseInt($("input[name='f.event_katuraginomiya1']").
 f.event_katuraginomiya[2] = parseInt($("input[name='f.event_katuraginomiya2']").val());
 f.event_katuraginomiya[3] = parseInt($("input[name='f.event_katuraginomiya3']").val());
 f.katuraginomiya_only = parseInt($("input[name='f.katuraginomiya_only']").val());
+
+f.fumi_henji = parseInt($("input[name='f.fumi_henji']").val());
 
 f.event_oaite_mitei = parseInt($("input[name='f.event_oaite_mitei']").val());
 
