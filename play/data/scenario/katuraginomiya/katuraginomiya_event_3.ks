@@ -514,7 +514,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 *fumi_toutyaku_jijyuu_1
 [if exp="f.okeiko_gamen==true"]
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のお茶事について」</br>桂伯爵夫人";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のお茶事について」桂伯爵夫人";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
 f.fumi_list_all_target.push("*jijyuu_fumi1");
