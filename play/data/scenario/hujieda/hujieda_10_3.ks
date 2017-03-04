@@ -456,16 +456,16 @@ $('.oto').remove();
 [whosay name="音楽学校教授"]
 「ファンレターかい？」[p]
 
+;【立ち絵】藤枝：驚き
+[藤枝驚き]
+[whosay name="藤枝 肇" color=%mp.color] 
+「先生！」[p]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】夕涼み
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
-
-;【立ち絵】藤枝：驚き
-[藤枝驚き]
-[whosay name="藤枝 肇" color=%mp.color] 
-「先生！」[p]
 
 [whosay name="音楽学校教授"]
 「お坊ちゃま育ちなのに休日なしで働いているから[r]
