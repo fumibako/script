@@ -12,6 +12,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [chara_mod name="bg" storage="bg/title.jpg"]
 
 [cm]
+[eval exp="tf.test_gamen1 = true"]
 [layopt layer=26 visible=true]
 [wait time=10]
 [ptext text="◆B4nFWraU42様　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
@@ -112,6 +113,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 
 *back_test
 [cm]
+[eval exp="tf.test_gamen1 = false"]
 [freeimage layer = 26]
 @jump storage="test.ks"
 [s]
