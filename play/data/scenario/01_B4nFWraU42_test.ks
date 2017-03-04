@@ -120,6 +120,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 
 *title
 [cm]
+[eval exp="tf.test_gamen1 = false"]
 [freeimage layer = 26]
 ;------タイトルへ戻る
 @jump storage="title.ks"
