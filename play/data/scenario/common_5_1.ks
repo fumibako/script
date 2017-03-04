@@ -65,6 +65,44 @@
 [主人公ポーズ通常]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
 [wait time=10]
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。選択肢まで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_select0
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+
+[endif]
+;------------------------------------------------------
+
+
 #
 再び溜息をつくと、廊下から落ち着いた足音が聞こえてきた。[p]
 [主人公伏目パチ1回]
@@ -137,6 +175,8 @@
 [sp]いいのでしょう？ ……そう考えてしまうと余計に筆が進まなくて」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+
+*seen_select0
 [whosay name=磯野 color="dimgray"]
 「お相手のことをお考えいただくのは、良いことでございます。[r]
 [sp]どなたについてお悩みでしょうか？」[p]
