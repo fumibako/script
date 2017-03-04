@@ -37,7 +37,8 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 #
-少しふっくらとした友人の指には、赤いルビーの指輪が光る。[p]
+声を掛けてきたのは、親戚の[ruby text=あす]飛[ruby text=か]鳥[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子だ。[r]
+少しふっくらとした彼女の指には、赤いルビーの指輪が光る。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
 「ごきげんよう、[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さん。　お元気になされてまし[r]
@@ -232,7 +233,8 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 #
-少しふっくらとした友人の指には、赤いルビーの指輪が光る。[p]
+声を掛けてきたのは、親戚の[ruby text=あす]飛[ruby text=か]鳥[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さんだ。[r]
+少しふっくらとした彼女の指には、赤いルビーの指輪が光る。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
 「ごきげんよう。　[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さん、お元気そうですね」[p]
@@ -469,7 +471,8 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 #
-少しふっくらとした友人の指には、赤いルビーの指輪が光る。[p]
+声を掛けてきたのは、親戚の[ruby text=あす]飛[ruby text=か]鳥[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さんだ。[r]
+少しふっくらとした彼女の指には、赤いルビーの指輪が光る。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
 「ごきげんよう。 [ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さん、お元気でしたか？」[p]
@@ -571,105 +574,7 @@
 [イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
 [s]
-*sansaku_machi_common_B4nFWraU42_09
-;=======================================================================================
-;◆町_共通イベント 09
-;『予備：飛鳥さんとの出会い』
-;イベント発生条件：月週～月週、期間中に町へ行くと1度だけ発生
-;=======================================================================================
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
-;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築ボタン無し版]
-[主人公ポーズ通常]
-[wait time=10]
-[主人公通常]
-[wait time=10]
-[プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
-;思いつかないけど書いておきます
 
-#
-町に出た。　行き交う人達が通りを賑わす。[p]
-
-[whosay name="商店の店員"]
-「新発売のシヘイドウの石鹸、洗い上がり抜群ですよ！」[p]
-
-#
-ふと、目を向けた先には、化粧品店の店員が特売催しの[r]
-呼び込みをしていた。[p]
-
-[whosay name="女性"]
-「まぁ！　試してみようかしら？」[p]
-
-#
-女性達は、目新しい商品に釘付けになる。[r]
-その輪の中から、キラリと輝く何かが落ちた。[p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公驚]
-「あの！ 何か落とされましたよ！」[p]
-
-#
-拾ってみると赤い石がはめられた指輪だった。[p]
-
-[whosay name="女性"]
-[主人公通常]
-「あら！？」[p]
-#
-私の声に直ぐに振り返った方は、大島紬の着物をきた、[r]
-品の良さそうな女性だった。[p]
-
-[whosay name="女性"]
-「ありがとうございます。 助かりましたわ！」[p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ほほえみ]
-「いえ」[p]
-
-[whosay name="飛鳥紗代子"]
-「失礼ですが、お名前を伺って良いでしょうか？[r]
-[sp]私は 飛鳥紗代子 と申します」[p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「私は[名字][名前]と申します」[p]
-
-[whosay name="飛鳥紗代子"]
-「有難うございます。後ほど改めてお礼を」[p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公眉困り]
-「そんな……」[p]
-
-[whosay name="飛鳥紗代子"]
-[主人公驚]
-「いいえ、これはとても大切なものなんです」[p]
-
-#
-[主人公通常]
-そういって、彼女はお辞儀をすると[r]
-通りの向こうで腕を組む男性の元へとかけて行った。[p]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ほほえみ]
-(きっとあの二人は……)[p]
-
-;[fadeoutbgm time=3000]
-[layopt layer=29 visible=true]
-[イベントシーン終了]
-[イベントシーン終了２]
-@jump storage="01_B4nFWraU42_test.ks"
-[s]
 ;=======================================================================================
 ;以下はメッセージウィンドウを閉じた時のクレジット表記スクリプトです
 ;=======================================================================================
