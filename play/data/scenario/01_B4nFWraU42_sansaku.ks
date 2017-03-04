@@ -129,6 +129,7 @@
 [fadeoutbgm time=3000]
 
 [if exp="tf.test_gamen1 == true"]
+[イベントシーン終了]
 @jump storage="01_B4nFWraU42_test.ks"
 [endif]
 #
@@ -194,6 +195,7 @@
 ;長い道のりに行き交う人々を目にしながら、ふと思ってしまった。[p]
 
 [if exp="tf.test_gamen1 == true"]
+[イベントシーン終了]
 @jump storage="01_B4nFWraU42_test.ks"
 [endif]
 
@@ -283,6 +285,7 @@
 [fadeoutbgm time=3000]
 
 [if exp="tf.test_gamen1 == true"]
+[イベントシーン終了]
 @jump storage="01_B4nFWraU42_test.ks"
 [endif]
 
@@ -355,6 +358,12 @@
 [endif]
 
 [fadeoutbgm time=3000]
+
+[if exp="tf.test_gamen1 == true"]
+[イベントシーン終了]
+@jump storage="01_B4nFWraU42_test.ks"
+[endif]
+
 #
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -439,6 +448,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (あの方は、ネコはお好きかしら……？)[p]
 [fadeoutbgm time=3000]
+
+[if exp="tf.test_gamen1 == true"]
+[イベントシーン終了]
+@jump storage="01_B4nFWraU42_test.ks"
+[endif]
+
 #
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -509,6 +524,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね……」[p]
 [fadeoutbgm time=3000]
+
+[if exp="tf.test_gamen1 == true"]
+[イベントシーン終了]
+@jump storage="01_B4nFWraU42_test.ks"
+[endif]
+
 #
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -578,11 +599,17 @@
 [sp]しまったのです……でも、もう一度あの人に会いたい！」[p]
 #
 その言葉にドキリとして、振り返ると既に人影すらなく、街道には、ポツポツと寂しい雨が飛び跳ねていた。[p]
+;振り返るが
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
 (……今日は帰りましょうか)[p]
-;[fadeoutbgm time=3000]
+
+[if exp="tf.test_gamen1 == true"]
+[イベントシーン終了]
+@jump storage="01_B4nFWraU42_test.ks"
+[endif]
+
 [layopt layer=29 visible=true]
 [イベントシーン終了]
 [イベントシーン終了２]
