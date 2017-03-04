@@ -449,6 +449,8 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;【背景】主人公邸 庭の見える部屋：昼
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】パーティー会場応接室
+[preload storage="data/fgimage/bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg" wait=true]
 ;【背景】CGnomal
 [preload storage="data/fgimage/bg/zaizen_CGnomal.jpg" wait=true]
 [preload storage="data/fgimage/bg/zaizen_CGnomal_2.jpg" wait=true]

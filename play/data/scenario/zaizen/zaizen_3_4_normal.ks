@@ -320,10 +320,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;再構築に時間がかかるで退場しない　財前さんだけ退場
 ;明るいシーンになっていくので暗転ではなく背景で
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
-[暗転２ storage="bg/I9IhvvVdPo/zaizen_paty_ousetu" clegit=true]
+[暗転２ storage="bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg" clegit=true]
 [財前退場] 
 ;案内される姿を見守ったパターン２　こちらにします。
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_ousetu"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg"]
 [暗転２終了]
 ;====================================================================================
 #
