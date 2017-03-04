@@ -37,16 +37,15 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 #
-声を掛けてきたのは、親戚の[ruby text=あす]飛[ruby text=か]鳥[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子だ。[r]
+声を掛けてきたのは、親戚の[ruby text=あす]飛[ruby text=か]鳥[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さんだ。[r]
 少しふっくらとした彼女の指には、赤いルビーの指輪が光る。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口ほほえみ]
-「ごきげんよう、[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さん。　お元気になされてまし[r]
-[sp]たか？」[p]
+「ごきげんよう、[ruby text=さ]紗[ruby text=よ]代[ruby text=こ]子さん。　お元気になされてましたか？」[p]
 [whosay name="飛鳥紗代子"]
 [主人公眉困り]
-「ふぅ、新しい生活に慣れるのも、時間がかかって、毎日、[r]
-[sp]お義母様に怒られないか恐々としてるわ」[p]
+「ふぅ、新しい生活に慣れるのも、時間がかかって、[r]
+[sp]毎日、お義母様に怒られないか恐々としてるわ」[p]
 ;花嫁修行中なのかな 婚姻、結納済みの友人でもいいかもしれません 悩みがない友人というイメージです 
 [whosay name="飛鳥紗代子"]
 [主人公眉下げ下]
@@ -61,6 +60,9 @@
 [主人公目パチ1回]
 「そうですね……」[p]
 [fadeoutbgm time=3000]
+[if exp="tf.test_gamen1 == true"]
+@jump storage="01_B4nFWraU42_test.ks"
+[endif]
 #
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -68,7 +70,6 @@
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('1日のはじまりの話題',0,2,1,1,1,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
-@jump storage="01_B4nFWraU42_test.ks"
 [s]
 
 *sansaku_machi_common_B4nFWraU42_02
@@ -98,7 +99,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 #
-;散策イベント◆B4nFWraU42さんご担当その2です。[p] 変更してもいいなら飛鳥さんでいいです
+;散策イベント◆B4nFWraU42さんご担当その2です。[p] 
 #
 今日の町は、気持ちの良い快晴。 [r]
 空を仰ぐと、澄み切った青の中に真珠色の日の光が差し込んでくる。[p]
@@ -126,6 +127,10 @@
 [whosay name="三宮　時子" color="#c25232"]
 「[名前]さんって聞き上手ね！」[p]
 [fadeoutbgm time=3000]
+
+[if exp="tf.test_gamen1 == true"]
+@jump storage="01_B4nFWraU42_test.ks"
+[endif]
 #
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -133,7 +138,6 @@
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('聞き上手と話し上手の話題',0,0,2,0,0,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
-@jump storage="01_B4nFWraU42_test.ks"
 [s]
 
 *sansaku_machi_common_B4nFWraU42_03
@@ -188,13 +192,18 @@
 [fadeoutbgm time=3000]
 #
 ;長い道のりに行き交う人々を目にしながら、ふと思ってしまった。[p]
+
+[if exp="tf.test_gamen1 == true"]
+@jump storage="01_B4nFWraU42_test.ks"
+[endif]
+
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『道の話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('道の話題',0,2,0,1,1,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
-@jump storage="01_B4nFWraU42_test.ks"
+
 [s]
 
 *sansaku_machi_common_B4nFWraU42_04
@@ -272,6 +281,11 @@
 [主人公口ほほえみ]
 「お手紙に添えて、あの方にお送りしてみようかしら」[p]
 [fadeoutbgm time=3000]
+
+[if exp="tf.test_gamen1 == true"]
+@jump storage="01_B4nFWraU42_test.ks"
+[endif]
+
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『緑の石』と『緑の石の話題』を手に入れました"]
