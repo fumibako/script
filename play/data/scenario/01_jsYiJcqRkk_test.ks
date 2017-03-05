@@ -27,9 +27,9 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test05" text="共通プロローグ後半(opening2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test06" text="磯野に相談" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test07" text="時子さん登場" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test08" text="さつきの話題" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test08" text="新茶の話題" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 
-[glink target="test9" text="sansaku_machi_kuroda_01" graphic="select_waku_x500.png" size=20 width="250" x=450 y=100 color=white]
+[glink target="test9" text="さつきの話題" graphic="select_waku_x500.png" size=20 width="250" x=450 y=100 color=white]
 [glink target="test10" text="sansaku_machi_kuroda_02" graphic="select_waku_x500.png" size=20 width="250" x=450 y=150 color=white]
 [glink target="test11" text="sansaku_machi_kuroda_03" graphic="select_waku_x500.png" size=20 width="250" x=450 y=200 color=white]
 [glink target="test12" text="sansaku_machi_kuroda_04" graphic="select_waku_x500.png" size=20 width="250" x=450 y=250 color=white]
