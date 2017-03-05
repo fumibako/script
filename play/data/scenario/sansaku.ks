@@ -490,6 +490,13 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [endif]
 *machi_common_01
 [stopbgm]
+;------------------------------------------------プリロード画面-----------------------------------------------
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;------------------------------------------------プリロード画面-----------------------------------------------
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -499,6 +506,7 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
 #
 町へ出た。[r]
 行きかう人々や商人たちの声がにぎやかに響く。[p]
