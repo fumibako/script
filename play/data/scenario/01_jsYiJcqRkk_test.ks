@@ -36,7 +36,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test13" text="黒田散策イベント13" graphic="select_waku_x500.png" size=20 width="250" x=450 y=250 color=white]
 [glink target="test14" text="黒田散策イベント14" graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
 [glink target="test15" text="黒田散策イベント15" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
-[glink target="test16" text="散策イベント" graphic="select_waku_x500.png" size=20 width="250" x=500 y=400 color=white]
+;[glink target="test16" text="散策イベント" graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
@@ -340,60 +340,90 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 *test07
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_common_01"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_common_01"
 [s]
 
 *test08
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_common_02"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_common_02"
 [s]
 
 *test09
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_common_03"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_common_03"
 [s]
 
 *test10
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_01"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_01"
 [s]
 
 *test11
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_02"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_02"
 [s]
 
 *test12
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_03"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_03"
 [s]
 
 *test13
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_04"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_04"
 [s]
 
 *test14
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_05"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_05"
 [s]
 
 *test15
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_06"
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_06"
 [s]
 
 *test16
 [cm]
 [freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
 @jump storage="sansaku.ks"
 [s]
 
