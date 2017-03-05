@@ -339,55 +339,55 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 *test07
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_common_01"
+@jump storage="sansaku.ks"　target="*sansaku_machi_common_01"
 [s]
 
 *test08
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_common_02"
+@jump storage="sansaku.ks"　target="*sansaku_machi_common_02"
 [s]
 
 *test09
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_common_03"
+@jump storage="sansaku.ks"　target="*sansaku_machi_common_03"
 [s]
 
 *test10
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_01"
+@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_01"
 [s]
 
 *test11
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_02"
+@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_02"
 [s]
 
 *test12
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_03"
+@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_03"
 [s]
 
 *test13
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_04"
+@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_04"
 [s]
 
 *test14
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_05"
+@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_05"
 [s]
 
 *test15
 [cm]
 [freeimage layer = 26]
-@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_06"
+@jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_06"
 [s]
 
 *back_test
