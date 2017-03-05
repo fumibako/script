@@ -51,16 +51,16 @@ $('.list').remove();
 #
 涙がとめどなく頬を伝い、悲しみで胸がいっぱいになった。[p]
 
+;【立ち絵】葛城宮　通常
+[葛城宮目閉じ]
+[whosay name="葛城宮　晴仁" color=%mp.color]
+「君は私の夢を聞いてくれた。[sp]いつまでも私の心は君のものだ」[p]
+
 [if exp="sf.BGM=='ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
 [playbgm storage="sittori_umikaze.ogg" loop=true]
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
-
-;【立ち絵】葛城宮　通常
-[葛城宮目閉じ]
-[whosay name="葛城宮　晴仁" color=%mp.color]
-「君は私の夢を聞いてくれた。[sp]いつまでも私の心は君のものだ」[p]
 
 「ありがとう、[r]
 [sp]――そしてさよなら[名前]殿」[p]
