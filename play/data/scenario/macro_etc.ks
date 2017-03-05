@@ -1044,7 +1044,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [endif]
 [endmacro]
 
-;◆[藤枝ルート終了 end="good"][藤枝ルート終了 end="normal"][藤枝ルート終了 end="bad"]
+;◆[藤枝ルート終了 end="good"][藤枝ルート終了 end="normal"][藤枝ルート終了 end="bad"][藤枝ルート終了 end="bad2"]
 [macro name=藤枝ルート終了]
 [if exp="mp.end='good'"]
 	[eval exp="sf.ED_hujieda_good=1"]
@@ -1054,6 +1054,9 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 	[endreplay] 
 [elsif exp="mp.end='bad'"]
 	[eval exp="sf.ED_hujieda_bad=1"]
+	[endreplay] 
+[elsif exp="mp.end='bad2'"]
+	[eval exp="sf.ED_hujieda_bad2=1"]
 	[endreplay] 
 [endif]
 [if exp="f.okeiko_gamen==true"]
