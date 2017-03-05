@@ -7,7 +7,7 @@
 @clearfix
 [hidemenubutton]
 [cm]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[image name="loding_pic1" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
 [wait time=50]
 
 ;プリロード　タイトルからでもいいですが、ひとまずここに
