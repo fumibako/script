@@ -283,8 +283,6 @@
 #
 そして藤枝様は持っていた手紙を磯野に渡し、自転車に乗って[r]
 去っていった。[p]
-[fadeoutbgm time=3000]
-
 
 *seen_end
 
@@ -293,10 +291,12 @@
 ;バッドのシナリオここから
 [暗転]
 [主人公退場]
-@jump storage=hujieda/hujieda_11_3bad.ks
+@jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
 ;バッドのシナリオここまで
 ;[endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+
+[fadeoutbgm time=3000]
 
 [イベントシーン終了]
 [イベントシーン終了４]
