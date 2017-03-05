@@ -49,14 +49,12 @@
 [sp]お聞きしております」 [p]
 
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-（今まではそういったお話はされなかったわ。[r]
-[sp]気遣ってくださったのかしら） [p]
-
 [whosay name=磯野 color="dimgray"]
 「詳しくは私も聞かされておりませんが、仲良くなられたら、[r]
 [sp]そのあたりのお話も聞かせてくださるかもしれませんね」[p]
 ;文矢に話していないことを磯野が知っているというのを回避したい
+;設定年表:: https://www.evernote.com/Home.action#n=c37927a2-8a6f-441d-9f77-45b7c7f6c986&ses=1&sh=5&sds=5&x=%25E5%259B%259B%25E6%259D%25A1&
+
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「優しげでそつなく見える華織お兄様にも、そのような[r]
