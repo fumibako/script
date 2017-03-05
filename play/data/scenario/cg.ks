@@ -7,9 +7,7 @@
 @clearfix
 [hidemenubutton]
 [cm]
-;準備中
-[image name="loding_pic1" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
-[wait time=50]
+
 
 ;プリロード　タイトルからでもいいですが、ひとまずここにマクロとしてまとめてあります
 [macro name=CGプリロード]
@@ -50,6 +48,9 @@
 [endif]
 [endmacro]
 
+;準備中
+[image name="loding_pic1" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
+[wait time=50]
 ;背景画像の後にしたい場合はマクロの位置を変更してください
 [CGプリロード]
 [back storage="../fgimage/bg/plane_sepia.jpg" time=1]
