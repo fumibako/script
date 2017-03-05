@@ -332,10 +332,17 @@ TG.stat.play_se = true;
 [wait time=10]
 
 ;◆主人公画像(S表示【マクロで切り替え】
+;主人公合体画像表示　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+;主人公合体画像削除
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 
 町へ出た。[r]
 行きかう人々や商人たちの声がにぎやかに響く。[p]
