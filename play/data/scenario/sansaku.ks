@@ -500,13 +500,14 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 [プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 町へ出た。[r]
 行きかう人々や商人たちの声がにぎやかに響く。[p]
