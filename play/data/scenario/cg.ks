@@ -7,18 +7,19 @@
 @clearfix
 [hidemenubutton]
 [cm]
+;準備中
 [image name="loding_pic1" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
 [wait time=50]
 
-;プリロード　タイトルからでもいいですが、ひとまずここに
+;プリロード　タイトルからでもいいですが、ひとまずここにマクロとしてまとめてあります
+[macro name=CGプリロード]
 ;黒田チェック
 [if exp="sf.ED_kuroda_normal == 1"]
-
+[preload storage="data/fgimage/bg/kuroda_normalED.jpg"]
 [endif]
 [if exp="sf.ED_kuroda_good == 1"]
-
+[preload storage="data/fgimage/bg/kuroda_goodED.jpg"]
 [endif]
-
 ;四条チェック
 [if exp="sf.ED_sijyou_normal == 1"]
 [preload storage="data/fgimage/bg/sijyou_CGnomal.png" wait=true]
@@ -26,32 +27,31 @@
 [if exp="sf.ED_sijyou_good == 1"]
 [preload storage="data/fgimage/bg/sijyou_CGgood.png" wait=true]
 [endif]
-
 ;財前チェック
 [if exp="sf.ED_zaizen_normal == 1 "]
-
+[preload storage="data/fgimage/bg/zaizen_CGnomal.jpg"]
 [endif]
 [if exp="sf.ED_zaizen_good == 1"]
-
+[preload storage="data/fgimage/bg/zaizen_CGgood.jpg"]
 [endif]
-
 ;葛城宮チェック
 [if exp="sf.ED_zaizen_normal == 1 "]
-
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED.jpg"]
 [endif]
 [if exp="sf.ED_katuraginomiya_normal == 1 "]
-
+[preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED.jpg"]
 [endif]
-
 ;藤枝チェック
 [if exp="sf.ED_hujieda_good == 1 "]
-
+[preload storage="data/fgimage/bg/hujieda_normalED.jpg"]
 [endif]
 [if exp="sf.ED_hujieda_normal == 1"]
-
+[preload storage="data/fgimage/bg/hujieda_goodED.jpg"]
 [endif]
+[endmacro]
 
-
+;背景画像の後にしたい場合はマクロの位置を変更してください
+[CGプリロード]
 [back storage="../fgimage/bg/plane_sepia.jpg" time=1]
 [layopt layer=1 visible=true]
 [chara_mod name="bg" storage="toumei.gif" time=1]
