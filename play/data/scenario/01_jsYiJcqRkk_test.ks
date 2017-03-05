@@ -26,9 +26,15 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 ;[glink target="test04" text="お稽古パート" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test05" text="共通プロローグ後半(opening2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test06" text="磯野に相談" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-;[glink target="test07" text="共通散策イベント7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-;[glink target="test08" text="共通散策イベント8" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-;[glink target="test09" text="共通散策イベント9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="test07" text="共通散策イベント7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test08" text="共通散策イベント8" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test09" text="共通散策イベント9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+;[glink target="test10" text="共通散策イベント10" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+;[glink target="test11" text="共通散策イベント11" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+;[glink target="test12" text="共通散策イベント12" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+;[glink target="test13" text="共通散策イベント13" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+;[glink target="test14" text="共通散策イベント14" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+;[glink target="test15" text="共通散策イベント15" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
@@ -327,6 +333,60 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [cm]
 [freeimage layer = 26]
 @jump storage="common_5_1.ks"
+[s]
+
+*test07
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_common_01"
+[s]
+
+*test08
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_common_02"
+[s]
+
+*test09
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_common_03"
+[s]
+
+*test10
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_01"
+[s]
+
+*test11
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_02"
+[s]
+
+*test12
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_03"
+[s]
+
+*test13
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_04"
+[s]
+
+*test14
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_05"
+[s]
+
+*test15
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"　target="sansaku_machi_kuroda_06"
 [s]
 
 *back_test
