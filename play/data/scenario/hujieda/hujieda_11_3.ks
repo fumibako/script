@@ -290,16 +290,17 @@
 *seen_end
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;ＢＡＤリプレイ用のジャンプ リプレイ終了処理はＢＡＤ側にあります
+[if exp="f.flag_replay == true"]
+@jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
+[endif]
+
 [if exp="f.para_hujieda_koukando < 40"]
 ;バッドのシナリオここから
 [暗転]
 [主人公退場]
 @jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
 ;バッドのシナリオここまで
-[endif]
-;ＢＡＤリプレイ用のジャンプ リプレイ終了処理はＢＡＤ側にあります
-[if exp="f.flag_replay == true"]
-@jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
 [endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 
