@@ -33,9 +33,10 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test10" text="黒田散策イベント10" graphic="select_waku_x500.png" size=20 width="250" x=450 y=100 color=white]
 [glink target="test11" text="黒田散策イベント11" graphic="select_waku_x500.png" size=20 width="250" x=450 y=150 color=white]
 [glink target="test12" text="黒田散策イベント12" graphic="select_waku_x500.png" size=20 width="250" x=450 y=200 color=white]
-[glink target="test13" text="黒田散策イベント13" graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
-[glink target="test14" text="黒田散策イベント14" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
-[glink target="test15" text="黒田散策イベント15" graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
+[glink target="test13" text="黒田散策イベント13" graphic="select_waku_x500.png" size=20 width="250" x=450 y=250 color=white]
+[glink target="test14" text="黒田散策イベント14" graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
+[glink target="test15" text="黒田散策イベント15" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
+[glink target="test16" text="散策イベント" graphic="select_waku_x500.png" size=20 width="250" x=500 y=400 color=white]
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
@@ -388,6 +389,12 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [cm]
 [freeimage layer = 26]
 @jump storage="sansaku.ks"　target="*sansaku_machi_kuroda_06"
+[s]
+
+*test16
+[cm]
+[freeimage layer = 26]
+@jump storage="sansaku.ks"
 [s]
 
 *back_test
