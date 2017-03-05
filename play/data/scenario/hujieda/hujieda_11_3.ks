@@ -1,7 +1,10 @@
 ;========================================================================
 ;イベント１１回目【父と磯野への説得】１１月3週、
 ;=======================お芝居の準備中です=================================
+[setreplay name="replay_hujieda_badED_scene" storage="hujieda/hujieda_11_3.ks" target="start"]
+*replay_hujieda_badED_scene2
 *replay_hujieda_11_3
+*start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*11_3 storage="hujieda/preload_hujieda.ks"]
@@ -293,6 +296,10 @@
 [主人公退場]
 @jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
 ;バッドのシナリオここまで
+[endif]
+;ＢＡＤリプレイ用のジャンプ リプレイ終了処理はＢＡＤ側にあります
+[if exp="f.flag_replay == true"]
+@jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
 [endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 
