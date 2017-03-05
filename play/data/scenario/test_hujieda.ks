@@ -63,9 +63,9 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test12_3" text="12月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="test12_3b" text="12月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="test11_3" text="11月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test12_3" text="12月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test12_3b" text="12月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 
 [glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
 ;ページをとめます
@@ -73,14 +73,17 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [s]
 
 *page_2
-[glink target="test2_3" text="2月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="hujieda_bazaar_1" text="藤枝・バザーイベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="hujieda_bazaar_2" text="藤枝・バザーイベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="sansaku1" text="散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+
+[glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="test2_3" text="2月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="hujieda_bazaar_1" text="藤枝・バザーイベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="hujieda_bazaar_2" text="藤枝・バザーイベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+
+[glink target="sansaku1" text="散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 
 [glink target="page_1" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 ;[glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
