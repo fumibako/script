@@ -674,15 +674,24 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,0,0,1,2,
 [endif]
 *machi_common_02
 [stopbgm]
+;------------------------------------------------プリロード画面-----------------------------------------------
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;------------------------------------------------プリロード画面-----------------------------------------------
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 町へ出た。[r]
 陽気な歌声が聞こえてくる。[r]
@@ -907,15 +916,25 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1
 	[skipstop]
 [endif]
 *machi_kuroda_01
+;[stopbgm]
+;------------------------------------------------プリロード画面-----------------------------------------------
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;------------------------------------------------プリロード画面-----------------------------------------------
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 町へ出た。[r]
 行き交う人々の賑やかな声が聞こえる。[p]
@@ -1019,10 +1038,12 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 	[skipstop]
 [endif]
 *machi_kuroda_02
+;------------------------------------------------プリロード画面-----------------------------------------------
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+;------------------------------------------------プリロード画面-----------------------------------------------
 ;【背景】主人公邸_庭
 [背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -1236,15 +1257,24 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 [endif]
 *machi_kuroda_03
 [stopbgm]
+;------------------------------------------------プリロード画面-----------------------------------------------
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;------------------------------------------------プリロード画面-----------------------------------------------
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 町へ出た。[r]
 行き交う人々の声が聞こえる。[p]
@@ -1297,15 +1327,25 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 	[skipstop]
 [endif]
 *machi_kuroda_04
+;[stopbgm]
+;------------------------------------------------プリロード画面-----------------------------------------------
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;------------------------------------------------プリロード画面-----------------------------------------------
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 町へ出た。[r]
 行き交う人々の声が聞こえる。[p]
@@ -1364,15 +1404,24 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 [endif]
 *machi_kuroda_05
 [stopbgm]
+;------------------------------------------------プリロード画面-----------------------------------------------
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;------------------------------------------------プリロード画面-----------------------------------------------
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 町へ出た。[p]
 ;【BGM】筍の訪れ(町
@@ -1499,10 +1548,17 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 [endif]
 *machi_kuroda_06
 [stopbgm]
+;------------------------------------------------プリロード画面-----------------------------------------------
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+;------------------------------------------------プリロード画面-----------------------------------------------
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
 [wait time=10]
 ;【立ち絵】主人公：伏目
 [主人公ポーズ通常]
@@ -1513,6 +1569,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
 #
 町へ出た。[r]
 景色が色あせて見え、師走のざわめきもどこか遠くに感じられる。[p]
