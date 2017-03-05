@@ -7,6 +7,50 @@
 @clearfix
 [hidemenubutton]
 [cm]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+
+;プリロード　タイトルからでもいいですが、ひとまずここに
+;黒田チェック
+[if exp="sf.ED_kuroda_normal == 1"]
+
+[endif]
+[if exp="sf.ED_kuroda_good == 1"]
+
+[endif]
+
+;四条チェック
+[if exp="sf.ED_sijyou_normal == 1"]
+[preload storage="data/fgimage/bg/sijyou_CGnomal.png" wait=true]
+[endif]
+[if exp="sf.ED_sijyou_good == 1"]
+[preload storage="data/fgimage/bg/sijyou_CGgood.png" wait=true]
+[endif]
+
+;財前チェック
+[if exp="sf.ED_zaizen_normal == 1 "]
+
+[endif]
+[if exp="sf.ED_zaizen_good == 1"]
+
+[endif]
+
+;葛城宮チェック
+[if exp="sf.ED_zaizen_normal == 1 "]
+
+[endif]
+[if exp="sf.ED_katuraginomiya_normal == 1 "]
+
+[endif]
+
+;藤枝チェック
+[if exp="sf.ED_hujieda_good == 1 "]
+
+[endif]
+[if exp="sf.ED_hujieda_normal == 1"]
+
+[endif]
+
 
 [back storage="../fgimage/bg/plane_sepia.jpg" time=1]
 [layopt layer=1 visible=true]
@@ -93,6 +137,7 @@ $(".list").css("opacity",0);
 [iscript]
 $(".layer_free").css("opacity",1);
 $(".list").css("opacity",1);
+$('.loding_pic1').remove();
 [endscript]
 
 *endpage
@@ -105,6 +150,9 @@ $(".list").css("opacity",1);
 [back storage="toumei.gif" time=1]
 [cm]
 [freeimage layer=1]
+[iscript]
+$('.loding_pic1').remove();
+[endscript]
 @jump storage=title.ks
 
 *nextpage
