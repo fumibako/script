@@ -287,13 +287,13 @@
 *seen_end
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;[if exp="f.para_hujieda_koukando < 12"]
+[if exp="f.para_hujieda_koukando < 40"]
 ;バッドのシナリオここから
 [暗転]
 [主人公退場]
 @jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
 ;バッドのシナリオここまで
-;[endif]
+[endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 
 [fadeoutbgm time=3000]
