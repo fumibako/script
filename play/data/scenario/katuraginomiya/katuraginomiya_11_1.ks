@@ -103,6 +103,7 @@
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [if exp="f.para_katuraginomiya_koukando <= 40"]
 ;バッドシナリオここから
+#
 私は、思わず泣いてしまった。[p]
 @jump storage="katuraginomiya/katuraginomiya_11_1badED.ks" target=no_end
 ;バッドシナリオここまで
