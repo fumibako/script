@@ -52,12 +52,6 @@ $('.list').remove();
 
 この国へ戻ってこられたのは、十年後だった。[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】「いにしえより続く街、太宰府」
-[playbgm storage="dazaifu.ogg" loop=true]
-[eval exp="f.bgm_storage='dazaifu.ogg'"]
-[endif]
-
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
 ;【テキスト全画面】
@@ -76,7 +70,13 @@ $('.list').remove();
 ;==========================スクリプトここまで=========================================================
 
 ――１５年後。[p]
-;[イベントシーン構築]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】「いにしえより続く街、太宰府」
+[playbgm storage="dazaifu.ogg" loop=true]
+[eval exp="f.bgm_storage='dazaifu.ogg'"]
+[endif]
+
 ;=========================================================================
 ;【背景】洋館内装　スマホでみたときの改行修正済　pcからだと間があるかもしれません（scpt担2
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
