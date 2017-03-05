@@ -1,8 +1,7 @@
 ;=============================================
 ;イベント１０月１週、８．５回目
 ;=======================お芝居の準備中です==================================
-[setreplay name="replay_hujieda_badED_scene" storage="hujieda/hujieda_11_3_badED.ks" target="start"]
-*replay_hujieda_badED_scene2
+*replay_hujieda_badED_scene3
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
