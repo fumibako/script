@@ -101,7 +101,7 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ、そうだ」[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-[if exp="f.para_katuraginomiya_koukando <= 40"]
+[if exp="f.para_katuraginomiya_koukando < 40"]
 ;バッドシナリオここから
 #
 私は、思わず泣いてしまった。[p]
