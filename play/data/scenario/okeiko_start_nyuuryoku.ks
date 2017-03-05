@@ -287,12 +287,13 @@ tf.mode_hensu =  parseInt($("input[name='tf.mode_hensu']").val());
 [endif]
 
 ;入力ミスアラート　進めれるようにアラートのみ！
-[if exp="f.okeiko_month == 9 && f.okeiko_week > 1"]
+[if exp="(f.okeiko_month == 9 && f.okeiko_week > 1 ) || f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3"]
 [if exp="f.kuroda_au == 0 && f.sijyou_au == 0 && f.zaizen_au == 0 && f.katuraginomiya_au == 0 && f.hujieda_au == 0"]
 [iscript]
 alert("9月以降ですがルートが決定してません");
 [endscript]
 [endif]
+
 [endif]
 
 [cm]
