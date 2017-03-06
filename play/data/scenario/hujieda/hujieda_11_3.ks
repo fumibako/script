@@ -4,6 +4,16 @@
 [setreplay name="replay_hujieda_badED_scene" storage="hujieda/hujieda_11_3.ks" target="start"]
 *replay_hujieda_badED_scene2
 *replay_hujieda_11_3
+[stopbgm]
+[iscript]
+$('rp_bt').remove();
+$('.list').remove();
+[endscript]
+[if exp="f.flag_replay==true"]
+[cm]
+;暗転とは違う
+[back storage="toumei.gif" time=1]
+[endif]
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
