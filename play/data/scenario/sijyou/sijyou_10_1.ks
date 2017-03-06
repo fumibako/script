@@ -192,7 +192,7 @@
 [autosave]
 ;ここでイベントは区切り バッドが必要であれば、文矢から「話をしてみたけどダメだったよ」という返事に。イベントバッドへ追記
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
-
+[fadeoutbgm time=3000]
 [if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [else]
