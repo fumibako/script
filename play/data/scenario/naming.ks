@@ -70,12 +70,12 @@
 [font size=15] 名前の入力が必要です。※入力無しの場合は、デフォルトネームとなります。
 ;[l]
 [resetfont]
-[r][r][r]
 ;名前が無い場合、先に入力する
 [eval exp="sf.girl_myouji='鷹司'"]
 [eval exp="sf.girl_namae='文奈'"]
 ;名前が無い場合、先に入力する
 [endif]
+[r][r][r]
 [font size=31]
 [link target=*name]名前入力から始める[endlink][r]
 [r][r][r]
