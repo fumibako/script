@@ -176,6 +176,7 @@ $('.loding_pic1').remove();
 [s]
 
 *backtitle
+[chara_new name="bg" storage="bg/title.jpg"]
 [back storage="toumei.gif" time=1]
 [cm]
 [iscript]
