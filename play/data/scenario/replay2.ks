@@ -9,7 +9,7 @@
 [clearstack]
 [skipstop]
 [stopse]
-
+[eval exp="sf.ED_hujieda_bad2=1"]
 ;プリロードをします。必要ないのでコメント化
 [iscript]
 //f.preload_images_rp_bt_kuroda = ["data/fgimage/bg/replay_kuroda_goodED.jpg","data/fgimage/bg/replay_kuroda_normalED.jpg"];
