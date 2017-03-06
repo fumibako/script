@@ -58,16 +58,15 @@
 [position layer=message1 height=550 top=50 left=250 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-お好みの開始位置をご選択ください。[r][r][r]
-
+お好みの開始位置をご選択ください。[r]
 ;=====================================================
 ;飛び先で利用
 [clearstack stack=if]
 [eval exp="f.skip_sentaku=1"]
 [if exp="sf.girl_myouji == undefined || sf.girl_namae == undefined "]
-[font size=20] 名前の入力が必要です。※入力無しの場合は、デフォルトネームとなります。
+[font size=15] 名前の入力が必要です。※入力無しの場合は、デフォルトネームとなります。
 [resetfont]
-[r]
+[r][r][r]
 ;名前が無い場合、先に入力する
 [eval exp="sf.girl_myouji='鷹司'"]
 [eval exp="sf.girl_namae='文奈'"]
