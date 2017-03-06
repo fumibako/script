@@ -971,7 +971,7 @@ _　として成長しないといけないのだわ）[p]
 [四条退場]
 ;=================================================================================_
 *seen8
-
+[fadeoutse time=1500]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
