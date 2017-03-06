@@ -67,7 +67,7 @@
 [clearstack stack=if]
 [eval exp="f.skip_sentaku=1"]
 [if exp="sf.girl_myouji == undefined || sf.girl_namae == undefined "]
-[font size=15] 名前の入力が必要です。※入力無しの場合は、デフォルトネームとなります。[p]
+[font size=15] 名前の入力が必要です。※入力無しの場合は、デフォルトネームとなります。[l]
 [resetfont]
 [r][r][r]
 ;名前が無い場合、先に入力する
