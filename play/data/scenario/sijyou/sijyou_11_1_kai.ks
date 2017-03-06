@@ -40,7 +40,7 @@
 [主人公通常]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「[華衣]は4人きょうだいの末っ子でね。[r]
+「[華衣]は、四人きょうだいの末っ子でね。[r]
 [sp]乳母日傘で育てられてじゃじゃ馬に育ってしまったんだ」[p]
 ;[四条口微笑み]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
