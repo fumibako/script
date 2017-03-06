@@ -59,7 +59,7 @@
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [if exp="sf.girl_myouji == undefined || sf.girl_namae == undefined "]
-[sp]         
+[sp]        　　　[sp] 
 [endif]
 お好みの開始位置をご選択ください。[r]
 ;=====================================================
@@ -67,7 +67,7 @@
 [clearstack stack=if]
 [eval exp="f.skip_sentaku=1"]
 [if exp="sf.girl_myouji == undefined || sf.girl_namae == undefined "]
-[font size=15] 名前の入力が必要です。※入力無しの場合は、デフォルトネームとなります。[s]
+[font size=15] 名前の入力が必要です。※入力無しの場合は、デフォルトネームとなります。[p]
 [resetfont]
 [r][r][r]
 ;名前が無い場合、先に入力する
