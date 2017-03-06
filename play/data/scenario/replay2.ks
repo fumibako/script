@@ -59,7 +59,7 @@ $(".rp_bt").remove();
 
 
 *replaypage
-[image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[image name="loding_pic1" layer=3 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [cm]
 ;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていいと思いますが置いてあります
 [if exp="tf.page == 0"]
