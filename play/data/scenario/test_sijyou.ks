@@ -444,6 +444,7 @@ sf.ED_katuraginomiya_bad=0;
 sf.ED_hujieda_good=0;
 sf.ED_hujieda_normal=0;
 sf.ED_hujieda_bad=0;
+sf.ED_hujieda_bad2=0;
 [endscript]
 @jump target=test_page1
 
@@ -469,6 +470,7 @@ sf.ED_katuraginomiya_bad=1;
 sf.ED_hujieda_good=1;
 sf.ED_hujieda_normal=1;
 sf.ED_hujieda_bad=1;
+sf.ED_hujieda_bad2=1;
 [endscript]
 *no2
 @jump target=test_page1
