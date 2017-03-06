@@ -1056,6 +1056,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 	[eval exp="sf.ED_hujieda_bad=1"]
 	[endreplay] 
 [elsif exp="mp.end='bad2'"]
+	test[p]
 	[eval exp="sf.ED_hujieda_bad2=1"]
 	[endreplay] 
 [endif]
