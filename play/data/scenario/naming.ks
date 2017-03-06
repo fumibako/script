@@ -58,6 +58,9 @@
 [position layer=message1 height=550 top=50 left=250 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
+[if exp="sf.girl_myouji == undefined || sf.girl_namae == undefined "]
+[sp]         
+[endif]
 お好みの開始位置をご選択ください。[r]
 ;=====================================================
 ;飛び先で利用
