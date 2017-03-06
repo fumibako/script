@@ -96,6 +96,7 @@ $('.end').remove();
 ;並んでいるところをみせない
 [iscript]
 $(".layer_free").css("opacity",0);
+$(".layer_2").css("opacity",0);
 [endscript]
 [replay_image_button2 end=&sf.ED_kuroda_normal storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_kuroda_good storage="kuroda_3_4_goodED.ks" target="replay_kuroda_3_4_goodED" graphic="../fgimage/bg/replay_kuroda_goodED.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
@@ -154,12 +155,12 @@ $(".list").css("opacity",0);
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
-[ptext name=list layer=2 page=fore text="藤枝ルート　:　badEND2" x=710 y=380 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="藤枝ルート　:　badEND2" x=710 y=500 size=17 color=navy visible=true]
 [else]
 [ptext name=list layer=2 page=fore text="？ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="？ルート　:　goodEND" x=300 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
-[ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=50 y=480 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=50 y=500 size=17 color=navy visible=true]
 [endif]
 
 @jump target ="*common"
@@ -179,6 +180,7 @@ $('.loding_pic1').remove();
 [cm]
 [iscript]
 $(".layer_free").css("opacity",1);
+$(".layer_2").css("opacity",1);
 [endscript]
 [freeimage layer=3]
 [freeimage layer=2]
