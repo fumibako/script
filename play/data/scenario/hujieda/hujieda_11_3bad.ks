@@ -73,7 +73,7 @@ $('.1_fore').remove();
 [endif]
 
 [if exp="f.okeiko_gamen==true"]
-;[藤枝ルート終了 end="bad2"]
+[藤枝ルート終了 end="bad2"]
 [endif]
 
 @jump storage="test_hujieda.ks"
