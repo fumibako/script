@@ -162,15 +162,17 @@ TG.menu.displayLog();
 }
 });
 
+
 //"→"キーを押したときだけスキップ処理。「ティラノスクリプト 製作テクニックwiki」様記載のスクリプトを使用させていただきました
 $(window).keydown(function(e){
-if(e.keyCode === 39 || e.keyCode === 32) {
-              
-               TG.kag.ftag.startTag("skipstart");
+if(e.keyCode === 39 || e.keyCode === 32 && this.kag.stat.is_skip != true) {
+
+  TG.kag.ftag.startTag("skipstart");
 } });
+
 $(window).keyup(function(e){
-if(e.keyCode === 39 || e.keyCode === 32) {
-              TG.kag.ftag.startTag("cancelskip");
+if(e.keyCode === 39 || e.keyCode === 32 && this.kag.stat.is_skip == true) {
+  TG.kag.ftag.startTag("cancelskip");
 } });
 [endscript]
 
