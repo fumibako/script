@@ -83,6 +83,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 
 [glink target="sansaku1" text="散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="test_fumi2" text="最後の手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 
 [glink target="page_1" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
@@ -237,6 +238,12 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [cm]
 [freeimage layer = 26]
 @jump storage="hujieda/hujieda_fumi.ks"
+[s]
+
+*test_fumi2
+[cm]
+[freeimage layer = 26]
+@jump storage="hujieda/hujieda_fumi_last.ks
 [s]
 
 *hujieda_bazaar_1
