@@ -335,6 +335,7 @@ TG.stat.play_se = false;
 *kskip_off
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.KSKIP='OFF'"]
+;f.skip=false; キー・スキップフラグ　設定なしでもとまるが念のため
 [iscript]
 	tf.text_skip = "OFF";
 	$(".text_skip").html("OFF");
@@ -350,6 +351,7 @@ TG.stat.play_se = false;
 
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BOOST='ON'"]
+;f.skip=true;　キー・スキップフラグ　設定なしでもとまるが念のため
 [anim name="button_boost_to_on" opacity=0 time=1]
 [locate x=535 y=480]
 [button name="button_boost_to_off" graphic="button_boost_on.png" target="*textboost_off" ]
