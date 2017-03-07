@@ -306,10 +306,15 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 
 ;===============================================================
 ;【背景】青空に桜
+[if exp="f.flag_replay==true"]
+[image layer=1 x=1 y=1 storage="bg/bg_sakura.jpg" time=1000 visible=true]
+[wait time=10]
+[else]
 [chara_mod name="bg" storage="bg/bg_sakura.jpg" time=100]
 [wait time=10]
 ;ここでとまる
-;[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
+[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
+[endif]
 ;===============================================================
 ;「忍耐」
 それでも、貴方を信じて、隣に立とうと寄り添った。[r]
@@ -319,10 +324,14 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 ;[ ]「華やか」[/]「幸せな思い出」[ ]「輝き」[/]「忍耐」[　]「また会う日を楽しみに」
 ;===============================================================
 ;【背景】思い出（花
+[if exp="f.flag_replay==true"]
+[image layer=1 x=1 y=1 storage="bg/bg_omoide.jpg" time=1000 visible=true]
+[wait time=10]
+[else]
 [chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
-
+[endif]
 これからも訪れるであろう、何気ない季節を花とともに語りましょう。[p]
 
 ;===============================================================
@@ -340,8 +349,10 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 [iscript]
 $('.1_fore').css({'filter':'sepia(0%)','-webkit-filter':'sepia(0%)','-moz-filter':'sepia(100%)','-ms-filter':'sepia(0%)'});
 [endscript]
+[if exp="f.flag_replay != true"]
 ;一瞬裏がみえるの防止背景
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
+[endif]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
 [font color=white size=35]
