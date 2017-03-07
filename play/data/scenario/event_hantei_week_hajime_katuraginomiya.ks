@@ -62,7 +62,13 @@
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[20]=1"]
 	@jump storage="event.ks" target=*start
-[endif]		
+[endif]	
+;===================================================================================================================================================
+;最後の手紙判定メモ 葛城宮オンリーではない場合において
+;・イベント１をみたがイベント２(7月4週）を見ていない→イベント３通過後判定時(8/1)に8月2週に手紙が届く
+;[if exp="f.katuraginomiya_only == 0 && f.event_katuraginomiya[2] == 0 && f.event_katuraginomiya[1] == 1 && (f.okeiko_month == 8 && f.okeiko_week == 1) && f.katuraginomiya_au == 0"]
+;最後の手紙フラグ
+;[endif]	
 ;=======================================================================================
 ;3◆葛城宮イベント判定katuraginomiya_event_3.ks 皇后様のお印入りのお茶事の招待状が届く
 ;even2をみている+淑女度25以上(◆jsYiJcqRkk調整
@@ -83,7 +89,12 @@
 	[eval exp="f.event_katuraginomiya[20]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-
+;===================================================================================================================================================
+;最後の手紙判定メモ 葛城宮オンリーではない場合において
+;・イベント２みたがイベント３を見ていない(8月2週)→イベント３判定と同じタイミングで手紙が届く
+;[if exp="f.katuraginomiya_only == 0 && f.event_katuraginomiya[3] == 0 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[1] == 1 && (f.okeiko_month == 8 && f.okeiko_week == 3) && f.katuraginomiya_au == 0"]
+;最後の手紙フラグ
+;[endif]
 ;=======================================================================================
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
 ;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生(2/11◆jsYiJcqRkk調整
