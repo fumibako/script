@@ -1,4 +1,4 @@
-﻿;=============================================
+﻿﻿;=============================================
 ;お稽古パート:画面表示処理:テスト値表示部分
 ;=============================================
 *start
@@ -61,6 +61,16 @@
 
 ;藤枝手紙[emb exp="f.fumi_all_title_new"][emb exp="f.fumi_hujieda_title_new"]
 
+[if exp="tf.mode_hensu==0"]
+;フラグで表示します		
+,　変数編集モードＯＮ:		
+[if exp="tf.mode_hensu_yes==1"]		
+利用済		
+[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="150" x=750 y=470 color=pink]		
+[else]		
+[glink storage="okeiko_hyouji_test_henkou.ks" text="数値調整する" size=19 width="150" x=750 y=470 color=white]		
+[endif]		
+[endif]
 [resetfont]
 
 @jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
@@ -77,8 +87,9 @@
 [eval exp = "tf.test_hujieda_fumi_hensin_speed = 1"]
 [eval exp = "tf.event_hyouji = 1"]
 [eval exp = "tf.advice_event_hyouji = 1"]
+[eval exp = "tf.mode_hensu_yes = 0"]
 
-[cm]
+[ct]
 [clearfix]
 [clearstack]
 [skipstop]
