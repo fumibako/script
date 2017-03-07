@@ -15,8 +15,8 @@
 [if exp="f.okeiko_gamen!=true"]
 [テキスト全画面白文字]
 『最後の手紙』[p]
-;#
 [endif]
+[手紙藤枝 fumi_number=]
 箏の奏者様へ[l][r]
 [r]
 [sp]貴方様の箏の音色に惹かれて手紙を書いた者です。[r]
