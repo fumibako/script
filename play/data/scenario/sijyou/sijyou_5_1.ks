@@ -108,7 +108,7 @@
 
 ;手紙の語調について
 [whosay name=磯野 color="dimgray"]
-「昔のように『気軽に』お手紙を書かれてみては、如何でしょう」[p]
+「昔のように『気軽に』書かれてみては、如何でしょう」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
