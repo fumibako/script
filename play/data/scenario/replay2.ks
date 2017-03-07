@@ -18,16 +18,7 @@ f.preload_images_rp_bt_zaizen = ["data/fgimage/bg/zaizen_CGnomal.jpg" , "data/fg
 f.preload_images_rp_bt_katuragi = ["data/fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg","data/fgimage/bg/katuraginomiya_3_4_goodED_3.jpg","data/fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg"];
 f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/hujieda_normalED.jpg","data/fgimage/bg/hujieda_goodED.jpg","data/fgimage/bg/replay_hujieda_badED.jpg","data/fgimage/bg/replay_hujieda_badED2.jpg"];
 [endscript]
-[if exp="tf.preload_on != 1"]
-;一回のみ読み込む
-[preload storage=&f.preload_images_rp_bt_kuroda]
-[preload storage=&f.preload_images_rp_bt_sijyou]
-[preload storage=&f.preload_images_rp_bt_zaizen]
-[preload storage=&f.preload_images_rp_bt_zaizen]
-[preload storage=&f.preload_images_rp_bt_hujieda]
-;一回のみ読み込む
-[eval exp="tf.preload_on = 1"]
-[endif]
+
 
 ;ただの画像分岐ボタンです。
 [macro name=replay_image_button2]
@@ -70,6 +61,18 @@ $(".rp_bt").remove();
 
 *replaypage
 [image name="loding_pic1" layer=3 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+
+[if exp="tf.preload_on != 1"]
+;一回のみ読み込む
+[preload storage=&f.preload_images_rp_bt_kuroda wait=true]
+[preload storage=&f.preload_images_rp_bt_sijyou wait=true]
+[preload storage=&f.preload_images_rp_bt_zaizen wait=true]
+[preload storage=&f.preload_images_rp_bt_katuragi wait=true]
+[preload storage=&f.preload_images_rp_bt_hujieda wait=true]
+;一回のみ読み込む
+[eval exp="tf.preload_on = 1"]
+[endif]
+
 [cm]
 ;[if exp="f.katuraginomiya_au == 1 ||f.hujieda_au == 1"]なくていいと思いますが置いてあります
 [if exp="tf.page == 0"]
