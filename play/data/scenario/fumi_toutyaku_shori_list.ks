@@ -1258,8 +1258,23 @@ f.fumi_toutyaku_katuraginomiya[27]=1;
 f.hensin_list_hairetsu[3][26] = -1; //←返信ボタンを非表示に
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
-
-
+;=============================================
+*katuraginomiya_fumi_last
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最後の手紙」　葛城宮 晴仁";
+f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「最後の手紙」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*katuraginomiya_fumi_last");
+f.fumi_list_all_location_taishou.push(3);
+f.fumi_list_all_location_fumi.push(29);
+f.fumi_list_katuraginomiya_location_fumi.push(29);
+f.fumi_list_katuraginomiya_title.push(f.fumi_katuraginomiya_title_new);
+f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi_last");
+f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
+f.fumi_toutyaku_katuraginomiya[30]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
 ;=============================================
 ;◆◆藤枝　肇手紙到着◆◆
 ;=============================================
