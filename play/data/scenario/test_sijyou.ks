@@ -501,7 +501,9 @@ localStorage.clear();
 [s]
 
 *auto
+[if exp=this.kag.stat.is_autostart != true]
 [autostart]
+[endif]
 @jump target=test_page1
 [s]
 
