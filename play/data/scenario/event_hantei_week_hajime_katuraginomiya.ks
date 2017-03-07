@@ -64,14 +64,14 @@
 	@jump storage="event.ks" target=*start
 [endif]	
 ;===================================================================================================================================================
-;最後の手紙判定メモ 葛城宮オンリーではない場合において
+;◆『最後の手紙』判定メモ 葛城宮オンリーではない場合において
 ;・イベント１をみたがイベント２(7月4週）を見ていない→イベント３通過後判定時(8/1)に8月2週に手紙が届く
-;[if exp="f.katuraginomiya_only == 0 && f.event_katuraginomiya[2] == 0 && f.event_katuraginomiya[1] == 1 && (f.okeiko_month == 8 && f.okeiko_week == 1) && f.katuraginomiya_au == 0"]
-;最後の手紙フラグ
-;[call target=*katuraginomiya_toutyaku_hantei_shori_common]
-;@jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last
-;f.katuraginomiya_fumi_start=0　手紙をストップは手紙側でないとダメ
-;[endif]	
+[if exp="f.okeiko_month == 8 && f.okeiko_week == 1 && f.katuraginomiya_only == 0 && f.event_katuraginomiya[2] == 0 && f.event_katuraginomiya[1] == 1 && f.katuraginomiya_au == 0 && f.event_katuraginomiya[21] == 0"]
+;最後の手紙フラグ 
+[eval exp="f.event_katuraginomiya[21]=1"]
+[call storage="hantei_fumi_toutyaku.ks" target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last	
+[endif]	
 ;=======================================================================================
 ;3◆葛城宮イベント判定katuraginomiya_event_3.ks 皇后様のお印入りのお茶事の招待状が届く
 ;even2をみている+淑女度25以上(◆jsYiJcqRkk調整
@@ -93,14 +93,14 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;===================================================================================================================================================
-;最後の手紙判定メモ 葛城宮オンリーではない場合において
+;◆『最後の手紙』判定メモ 葛城宮オンリーではない場合において
 ;・イベント２みたがイベント３を見ていない(8月2週)→イベント３判定と同じタイミングで手紙が届く
-;[if exp="f.katuraginomiya_only == 0 && f.event_katuraginomiya[3] == 0 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[1] == 1 && (f.okeiko_month == 8 && f.okeiko_week == 3) && f.katuraginomiya_au == 0"]
-;最後の手紙フラグ
-;[call target=*katuraginomiya_toutyaku_hantei_shori_common]
-;@jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last
-;f.katuraginomiya_fumi_start=0　手紙をストップは読んでからでないとダメ
-;[endif]
+[if exp="f.okeiko_month == 8 && f.okeiko_week == 2 && f.katuraginomiya_only == 0 && f.event_katuraginomiya[2] == 0 && f.event_katuraginomiya[1] == 1 && f.katuraginomiya_au == 0 && f.event_katuraginomiya[21] == 0 && f.event_katuraginomiya[22] == 0"]
+;最後の手紙フラグ 
+	[eval exp="f.event_katuraginomiya[22]=1"]
+	[call storage="hantei_fumi_toutyaku.ks" target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last	
+[endif]
 ;=======================================================================================
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
 ;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生(2/11◆jsYiJcqRkk調整
