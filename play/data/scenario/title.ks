@@ -164,14 +164,16 @@ TG.menu.displayLog();
 
 
 //"→"キーを押したときだけスキップ処理。「ティラノスクリプト 製作テクニックwiki」様記載のスクリプトを使用させていただきました
+f.skip=this.kag.stat.is_skip;
 $(window).keydown(function(e){
-if(e.keyCode === 39 || e.keyCode === 32 && this.kag.stat.is_skip != true) {
-
+if(e.keyCode === 39 || e.keyCode === 32 && f.skip != true) {
   TG.kag.ftag.startTag("skipstart");
+  f.skip=true;
 } });
 $(window).keyup(function(e){
-if(e.keyCode === 39 || e.keyCode === 32 && this.kag.stat.is_skip == true) {
+if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
   TG.kag.ftag.startTag("cancelskip");
+  f.skip=false;
 } });
 [endscript]
 
