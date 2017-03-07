@@ -10,14 +10,15 @@
 [skipstop]
 [stopse]
 
-;プリロードをします。必要ないのでコメント化
+;プリロードをします。スマホで表示が間に合わない
 [iscript]
-//f.preload_images_rp_bt_kuroda = ["data/fgimage/bg/replay_kuroda_goodED.jpg","data/fgimage/bg/replay_kuroda_normalED.jpg"];
+f.preload_images_rp_bt_kuroda = ["data/fgimage/bg/replay_kuroda_goodED.jpg","data/fgimage/bg/replay_kuroda_normalED.jpg","data/fgimage/bg/replay_kuroda_badED.jpg"];
 //f.preload_images_rp_bt_sijyou = ["data/fgimage/bg/sijyou_CGnomal.png","data/fgimage/bg/sijyou_CGgood.png"];
 f.preload_images_rp_bt_zaizen = ["data/fgimage/bg/zaizen_CGnomal.jpg" , "data/fgimage/bg/zaizen_CGgood.jpg" , "data/fgimage/bg/replay_zaizen_bad1ED.jpg","data/fgimage/bg/replay_zaizen_bad2ED.jpg"];
 //f.preload_images_rp_bt_katuragi = ["data/fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg","data/fgimage/bg/katuraginomiya_3_4_goodED_3.jpg"]
 //f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/hujieda_normalED.jpg","data/fgimage/bg/hujieda_goodED.jpg"]
 [endscript]
+[preload storage=&f.preload_images_rp_bt_kuroda]
 [preload storage=&f.preload_images_rp_bt_zaizen]
 
 ;ただの画像分岐ボタンです。
