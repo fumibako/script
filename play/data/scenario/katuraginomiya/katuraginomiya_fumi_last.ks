@@ -40,6 +40,8 @@
 [if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][28] = 0"]
+	;手紙返信ストップ処理	
+	[eval exp="f.katuraginomiya_fumi_start=0"]
 	[freeimage layer = 29]
 	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
 	[s]
