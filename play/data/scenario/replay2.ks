@@ -16,11 +16,12 @@ f.preload_images_rp_bt_kuroda = ["data/fgimage/bg/replay_kuroda_goodED.jpg","dat
 f.preload_images_rp_bt_sijyou = ["data/fgimage/bg/sijyou_CGnomal.png","data/fgimage/bg/sijyou_CGgood.png","data/fgimage/bg/replay_sijyou_badED.jpg"];
 f.preload_images_rp_bt_zaizen = ["data/fgimage/bg/zaizen_CGnomal.jpg" , "data/fgimage/bg/zaizen_CGgood.jpg" , "data/fgimage/bg/replay_zaizen_bad1ED.jpg","data/fgimage/bg/replay_zaizen_bad2ED.jpg"];
 //f.preload_images_rp_bt_katuragi = ["data/fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg","data/fgimage/bg/katuraginomiya_3_4_goodED_3.jpg"]
-//f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/hujieda_normalED.jpg","data/fgimage/bg/hujieda_goodED.jpg"]
+f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/hujieda_normalED.jpg","data/fgimage/bg/hujieda_goodED.jpg","data/fgimage/bg/replay_hujieda_badED.jpg","data/fgimage/bg/replay_hujieda_badED2.jpg"]
 [endscript]
 [preload storage=&f.preload_images_rp_bt_kuroda]
 [preload storage=&f.preload_images_rp_bt_sijyou]
 [preload storage=&f.preload_images_rp_bt_zaizen]
+[preload storage=&f.preload_images_rp_bt_hujieda]
 
 ;ただの画像分岐ボタンです。
 [macro name=replay_image_button2]
