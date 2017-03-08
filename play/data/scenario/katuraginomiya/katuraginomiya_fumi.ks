@@ -1431,7 +1431,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen==true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
-	[eval exp="f.midoku_list_hairetsu[3][28] = 0"]
+	[eval exp="f.midoku_list_hairetsu[3][29] = 0"]
 	;手紙返信ストップ処理	
 	[eval exp="f.katuraginomiya_fumi_start=0"]
 	[freeimage layer = 29]
