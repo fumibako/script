@@ -458,16 +458,19 @@ $('.loding_pic1').remove();
 [wait time=10]
 
 [else]
-[locate x=530 y=357]
+[locate x=580 y=357]
+[button name="message_auto" graphic="button_message_auto.png" role=auto]
+[wait time=10]
+[locate x=650 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
 [locate x=730 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[locate x=810 y=357]
 [button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
+[locate x=880 y=357]
 [button name="message_skip" graphic="button_message_skip.png" role=skip ]
 [locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png"  storage="macro_etc.ks" target="*window_close" ]
+[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
 [wait time=10]
 [endif]
 [eval exp="sf.FButton='ON'"]
@@ -604,11 +607,11 @@ $('.loding_pic1').remove();
 [endmacro]
 
 ;==================================================
-;◆[四条ボタン表示]
+;◆[四条ボタン表示]sijyou9_3
 [macro name=四条ボタン表示]
 ;セーブ等ボタン配置
 [locate x=580 y=357]
-[button name="message_auto" graphic=" button_message_auto.png " graphic="button_message_log.png" role=auto]
+[button name="message_auto" graphic="button_message_auto.png" role=auto]
 [wait time=10]
 [locate x=650 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
