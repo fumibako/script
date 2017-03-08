@@ -73,7 +73,7 @@
    @jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last	
 [endif]	
 ;=======================================================================================
-;3◆葛城宮イベント判定katuraginomiya_event_3.ks 皇后様のお印入りのお茶事の招待状が届く
+;3◆葛城宮イベント判定katuraginomiya_event_3.ks 皇后様のお印入りのお茶事の招待状が届く＜＜予定：淑女度３０　好感度２０＞＞
 ;even2をみている+淑女度25以上(◆jsYiJcqRkk調整
 [if exp="(f.okeiko_month == 8 && f.okeiko_week == 2) && f.para_shujinkou_shukujodo >= 25 && f.event_katuraginomiya[3] == 0 && f.event_katuraginomiya[2] == 1 && f.katuraginomiya_au == 0"]
 ;&& f.para_sijyou_koukando < 11 && f.para_kuroda_koukando < 11 && f.para_hujieda_koukando < 11 必要であれば追加してください	
