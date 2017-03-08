@@ -1325,7 +1325,7 @@ _　いらっしゃるのでしょうか？）[p]
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[button name="message_auto" graphic=" button_message_auto.png" role=auto]
+[button name="message_auto" graphic="button_message_auto.png" role=auto]
 [wait time=10]
 [locate x=650 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
