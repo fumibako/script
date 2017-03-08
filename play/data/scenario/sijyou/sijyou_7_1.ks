@@ -308,7 +308,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 ;機能ボタン表示
 ;セーブ等ボタン配置
 [locate x=580 y=357]
-[button name="message_auto" graphic=" button_message_auto.png "  role=auto]
+[button name="message_auto" graphic="button_message_auto.png" role=auto]
 [wait time=10]
 [locate x=650 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
