@@ -13,7 +13,7 @@
 [if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
 [resetfont]
 [font color=red size=15]
-葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
+葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]手紙[emb exp="f.katuraginomiya_fumi_start"]EV[emb exp="f.event_katuraginomiya1"]・[emb exp="f.event_katuraginomiya2"]・[emb exp="f.event_katuraginomiya3"]
 好感度に数値以外が代入されています。
 [resetfont]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
