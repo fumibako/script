@@ -234,7 +234,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]#
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 見逃してしまった。[p]
 [主人公通常]
 （自分の力で頑張りましょうか）[p]
@@ -307,20 +307,23 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[locate x=530 y=357]
+[locate x=580 y=357]
+[button name="message_auto" graphic=" button_message_auto.png "  role=auto]
+[wait time=10]
+[locate x=650 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
 [wait time=10]
-[locate x=630 y=357]
+[locate x=730 y=357]
 [button name="message_load" graphic="button_message_load.png" role=load ]
 [wait time=10]
-[locate x=730 y=357]
+[locate x=810 y=357]
 [button name="message_backlog" graphic="button_message_log.png" role=backlog ]
 [wait time=10]
-[locate x=830 y=357]
+[locate x=880 y=357]
 [button name="message_skip" graphic="button_message_skip.png" role=skip ]
 [wait time=10]
 [locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
 [wait time=10]
 [eval exp="sf.FButton='ON'"]
 ;メッセージレイヤを表示
