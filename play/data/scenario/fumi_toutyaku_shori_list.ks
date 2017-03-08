@@ -1273,6 +1273,7 @@ f.fumi_list_katuraginomiya_title.push(f.fumi_katuraginomiya_title_new);
 f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi_last");
 f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
 f.fumi_toutyaku_katuraginomiya[30]=1;
+f.katuraginomiya_fumi_start=0;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
 ;=============================================
