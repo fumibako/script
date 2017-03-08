@@ -1275,6 +1275,7 @@ f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
 f.fumi_toutyaku_katuraginomiya[30]=1;
 f.katuraginomiya_fumi_start=0;
 [endscript]
+;//f.hensin_list_hairetsu[3][29] = -1; //←返信ボタンを非表示に
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
 ;=============================================
 ;◆◆藤枝　肇手紙到着◆◆
