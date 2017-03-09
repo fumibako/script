@@ -1674,6 +1674,24 @@ f.fumi_toutyaku_hujieda[28]=1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
 
+*hujieda_fumi_last
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最後の手紙」　Ｈ ";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「最後の手紙」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi_last");
+f.fumi_list_all_location_taishou.push(4);
+f.fumi_list_all_location_fumi.push(28);
+f.fumi_list_hujieda_location_fumi.push(28);
+f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
+f.fumi_list_hujieda_target.push("*hujieda_fumi_last");
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_hujieda[29]=1;
+f.hensin_list_hairetsu[4][27] = -1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
+
 ;=============================================
 ;◆兄や友人、その他のキャラクターからの手紙（作成途中です）
 ;=============================================
