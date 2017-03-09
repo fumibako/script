@@ -227,6 +227,7 @@
 [wait time=10]
 [eval exp="sf.FButton='ON'"]
 ;[メッセージウィンドウ上ボタン表示]
+;[メッセージウィンドウ上ボタン表示]
 ;メッセージレイヤを表示
 [if exp="f.kaogura!='off'"]
 [chara_mod name="girl_base" storage="girl/S/base.png" time=0]
