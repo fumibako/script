@@ -61,18 +61,18 @@
 ;====================================================================================
 ;◆藤枝 【最後の手紙】 6月(f.event_hujieda[3])をみたが7月(f.event_hujieda[4])をみていない→8月1週に進行不可時の手紙到着
 [if exp="(f.okeiko_month == 8 && f.okeiko_week == 1) && f.event_hujieda[3] == 1 && f.event_hujieda[4] == 0 && f.event_hujieda[17] == 0"]
-	;[call storage="hantei_fumi_toutyaku.ks" target=*hujieda_toutyaku_hantei_shori_common]
+	[call storage="hantei_fumi_toutyaku.ks" target=*hujieda_toutyaku_hantei_shori_common]
 	[eval exp="f.event_hujieda[17]=1"]
-	@jump storage="event.ks" target=*start
-	;@jump storage="fumi_toutyaku_shori_list.ks" target=*hujieda_fumi_last
+	;@jump storage="event.ks" target=*start
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*hujieda_fumi_last
 [endif]
 ;=====================================================================================
 ;◆藤枝 【最後の手紙】7月(f.event_hujieda[4])をみたが8月(f.event_hujieda[5] == 0)をみていない→8月4週に進行不可時の手紙到着
 [if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_hujieda[4] == 1 && f.event_hujieda[5] == 0 && f.event_hujieda[17] == 0 "]
-	;[call storage="hantei_fumi_toutyaku.ks" target=*hujieda_toutyaku_hantei_shori_common]
+	[call storage="hantei_fumi_toutyaku.ks" target=*hujieda_toutyaku_hantei_shori_common]
 	[eval exp="f.event_hujieda[17]=1"]
-	@jump storage="event.ks" target=*start
-	;@jump storage="fumi_toutyaku_shori_list.ks" target=*hujieda_fumi_last
+	;@jump storage="event.ks" target=*start
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*hujieda_fumi_last
 [endif]
 ;=====================================================================================
 ;◆藤枝個別ルート分岐 f.event_hujieda[6]はcommon_9_1.ksから選択肢分岐で実装しています
