@@ -24,7 +24,7 @@ $('.list').remove();
 [endif]
 
 ;【背景］パーティ会場控室
-[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版]
 #
