@@ -116,6 +116,9 @@
 [endif]
 [eval exp="tf.test='１葛城宮ここは通りましたよ！！！！'"]
 [trace exp="tf.test"]
+[iscript]
+alert("１葛城宮");
+[endscript]
 ;他好感度が３０以上あるとき 葛城宮と比較なし
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 && f.para_sijyou_koukando >= 30 || f.para_kuroda_koukando >= 30 || f.para_zaizen_koukando >= 30"]
 ;[if exp="f.okeiko_month == 9 && f.replay_katuraginomiya_9_1 == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 "]
@@ -140,6 +143,9 @@
 [endif]
 [eval exp="tf.test='３葛城宮ここは通りましたよ！！！！'"]
 [trace exp="tf.test"]
+[iscript]
+alert("３葛城宮");
+[endscript]
 ;=======================================================================================
 ;5◆葛城宮イベント判定katuraginomiya_9_3.ks ルート決定後なので条件はすくなめ（9/3,かつ　au==1のとき）
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 3) && f.katuraginomiya_au == 1 && f.event_katuraginomiya[5] == 0"]
