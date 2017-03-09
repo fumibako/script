@@ -85,8 +85,8 @@ $('.end').remove();
 [replay_image_button name="replay_katuraginomiya_11_1badED_scene" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 
 ;"sf.record.trail_シナリオファイル名_ラベル名"
-[trace exp="sf.record.katuraginomiya_replay_katuraginomiya_9_1"]
-[if exp="sf.record.replay_katuraginomiya_katuraginomiya_9_1 > 1"]
+[trace exp="sf.replay_katuraginomiya"]
+[if exp="sf.replay_katuraginomiya == 1"]
 [ptext layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="葛城宮ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="葛城宮ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
@@ -100,8 +100,8 @@ $('.end').remove();
 [replay_image_button name="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 
 ;"sf.record.trail_シナリオファイル名_ラベル名"
-[trace exp="sf.record.trail_hujieda_replay_hujieda_9_1"]
-[if exp="sf.record.trail_hujieda_replay_hujieda_9_1 > 1"]
+[trace exp="sf.replay_hujieda=1"]
+[if exp="sf.replay_hujieda == 1"]
 [ptext layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="藤枝ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext layer=2 page=fore text="藤枝ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
