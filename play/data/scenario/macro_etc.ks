@@ -622,7 +622,7 @@ $('.loding_pic1').remove();
 [locate x=880 y=357]
 [button name="message_skip" graphic="button_message_skip.png" role=skip ]
 [locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
+[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" auto_next=false]
 [eval exp="sf.FButton='ON'"]
 [endmacro]
 
