@@ -114,7 +114,7 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-[eval exp="tf.test="１葛城宮ここは通りましたよ！！！！'"]
+[eval exp="tf.test="'１葛城宮ここは通りましたよ！！！！'"]
 [trace exp="tf.test"]
 ;他好感度が３０以上あるとき 葛城宮と比較なし
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 && f.para_sijyou_koukando >= 30 || f.para_kuroda_koukando >= 30 || f.para_zaizen_koukando >= 30"]
@@ -126,7 +126,7 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-[eval exp="tf.test="２葛城宮ここは通りましたよ！！！！'"]
+[eval exp="tf.test="'２葛城宮ここは通りましたよ！！！！'"]
 [trace exp="tf.test"]
 ;又は(もっと考えたい選択時)event3をみている+他キャラクターより好感度が上かつ好感度20以上+淑女度30以上(◆jsYiJcqRkk調整
 ;&& f.para_shujinkou_shukujodo > 20  必要であれば追加してください		
@@ -138,7 +138,7 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-[eval exp="tf.test="３葛城宮ここは通りましたよ！！！！'"]
+[eval exp="tf.test="'３葛城宮ここは通りましたよ！！！！'"]
 [trace exp="tf.test"]
 ;=======================================================================================
 ;5◆葛城宮イベント判定katuraginomiya_9_3.ks ルート決定後なので条件はすくなめ（9/3,かつ　au==1のとき）
