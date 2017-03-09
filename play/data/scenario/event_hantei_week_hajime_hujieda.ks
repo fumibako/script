@@ -58,14 +58,24 @@
 	[eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando+tf.koukando_eventup_hujieda"]
 	@jump storage="event.ks" target=*start
 [endif]
+;====================================================================================
 ;◆藤枝 【最後の手紙】 6月(f.event_hujieda[3])をみたが7月(f.event_hujieda[4])をみていない→8月1週に進行不可時の手紙到着
 [if exp="(f.okeiko_month == 8 && f.okeiko_week == 1) && f.event_hujieda[3] == 1 && f.event_hujieda[4] == 0 && f.event_hujieda[17] == 0"]
 	;[call storage="hantei_fumi_toutyaku.ks" target=*hujieda_toutyaku_hantei_shori_common]
 	[eval exp="f.event_hujieda[17]=1"]
 	@jump storage="event.ks" target=*start
+	;@jump storage="fumi_toutyaku_shori_list.ks" target=*hujieda_fumi_last
 [endif]
+;=====================================================================================
+;◆藤枝 【最後の手紙】7月(f.event_hujieda[4])をみたが8月(f.event_hujieda[5] == 0)をみていない→8月4週に進行不可時の手紙到着
+[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_hujieda[4] == 1 && f.event_hujieda[5] == 0 && f.event_hujieda[17] == 0 "]
+	;[call storage="hantei_fumi_toutyaku.ks" target=*hujieda_toutyaku_hantei_shori_common]
+	[eval exp="f.event_hujieda[17]=1"]
+	@jump storage="event.ks" target=*start
+	;@jump storage="fumi_toutyaku_shori_list.ks" target=*hujieda_fumi_last
+[endif]
+;=====================================================================================
 ;◆藤枝個別ルート分岐 f.event_hujieda[6]はcommon_9_1.ksから選択肢分岐で実装しています
-
 ;◆藤枝イベント判定【再び手紙が届く】条件 藤枝ルートかつ9月2週に1度だけ発生(物語の流れ上、必ず通過することが必要なイベントであるため原案の"お箏の練習を1回以上した場合に"という条件は除きました)
 ;このイベント以降は個別ルート分岐済かつ(禁止されるまでは)手紙による好感度upが可能となるため、好感度加算は中止しています
 [if exp="(f.okeiko_month==9 && f.okeiko_week==2) && f.event_hujieda[7]==0 && f.hujieda_au==1"]
