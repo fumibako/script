@@ -494,9 +494,9 @@ $('.junbi_girl').remove();
 	[ptext text=&f.fumi_toutyaku_info_hato layer=27 size=21 x=290 y=165 color=darkslateblue bold=bold]
 	[wait time=10]
 	;【SE】キラキラ
-	;[playse storage=kira.ogg loop=false ]
+	[playse storage=kira.ogg loop=false ]
 	;【SE】鳩	
-	[playse storage=tori_hato.ogg loop=false ]
+	;[playse storage=tori_hato.ogg loop=false ]
 	[eval exp="f.hato == 0"]
 [p]
 [freeimage layer = 26]
