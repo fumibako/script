@@ -546,6 +546,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 
 ;====================================================================
+[eval exp="sf.replay_katuraginomiya=1"]
 [eval exp="f.katuraginomiya_fumi_start=1"]
 ;次イベントでの名前残り消去
 #
