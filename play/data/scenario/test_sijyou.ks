@@ -471,6 +471,9 @@ sf.ED_hujieda_good=1;
 sf.ED_hujieda_normal=1;
 sf.ED_hujieda_bad=1;
 sf.ED_hujieda_bad2=1;
+
+sf.replay_katuraginomiya=1;
+sf.replay_hujieda=1;
 [endscript]
 *no2
 @jump target=test_page1
