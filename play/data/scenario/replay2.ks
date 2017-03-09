@@ -168,7 +168,7 @@ $(".list").css("opacity",0);
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
-[ptext name=list layer=2 page=fore text="藤枝ルート　:　badEND2" x=710 y=560 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="藤枝ルート　:　badEND2" x=50 y=560 size=17 color=navy visible=true]
 [else]
 [ptext name=list layer=2 page=fore text="？ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="？ルート　:　goodEND" x=300 y=380 size=17 color=navy visible=true]
