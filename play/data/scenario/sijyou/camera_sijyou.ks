@@ -116,26 +116,11 @@ $("kan").css('margin','auto');
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 [l]
-
 ;会話ウィンドウ表示
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 ;メッセージレイヤを表示
 [if exp="f.kaogura!='off'"]
