@@ -222,7 +222,7 @@
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=1000]
@@ -283,7 +283,7 @@
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=1000]
@@ -347,10 +347,10 @@
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [call target=*start storage="macro_tati_zaizen.ks"]
-[表示準備 storage="bg/zaizen_paty_hikae.jpg"]
+[表示準備 storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
 [主人公憂い]
 ;全画面用背景を消します
 [freeimage layer=29 time=1000]
