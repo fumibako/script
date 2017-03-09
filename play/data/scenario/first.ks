@@ -63,8 +63,11 @@ _　　　　　　　　  80%
 [iscript]
 f.preload_images2 = ["data/fgimage/message_bg/frame_red.png","data/fgimage/message_bg/frame_brown.png","data/fgimage/girl/L/base.png","data/fgimage/girl/L/mayu_futuu.png","data/fgimage/girl/L/me_futuu.png","data/fgimage/girl/L/kuti_futuu.png","data/fgimage/bg/room_niwa.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/bg/bg_machi.jpg","data/fgimage/girl/L/gitl_L_all_futuu.png","data/fgimage/girl/L/girl_L_all_futuu_me_toji.png","data/fgimage/button/okeiko_koto.png","data/fgimage/button/okeiko_sadou.png","data/fgimage/button/okeiko_kadou.png","data/fgimage/button/okeiko_reihou.png","data/fgimage/button/okeiko_gogaku.png"];
 //ver3.41ではエラーが出るのでコメントアウト。verup時に再度試すことf.preload_bgms = ["data/bgm/prologue_kotonisakuhana.m4a","data/bgm/isono_miyabi.m4a"];
+
+f.preload_images3=["data/image/button_message_auto.png","data/image/button_message_close.png","data/image/button_message_load.png","data/image/button_message_log.png","data/image/button_message_save.png","data/image/button_message_skip.png"];
 [endscript]
 [preload storage=&f.preload_images2 wait=true]
+[preload storage=&f.preload_images3 wait=true]
 [cm]
 [font color=white]
 _　　　　　　・・・読込中・・・[r]
