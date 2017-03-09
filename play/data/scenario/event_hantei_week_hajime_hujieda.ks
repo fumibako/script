@@ -63,7 +63,7 @@
 [if exp="(f.okeiko_month == 8 && f.okeiko_week == 1) && f.event_hujieda[3] == 1 && f.event_hujieda[4] == 0 && f.event_hujieda[17] == 0"]
 	[call storage="hantei_fumi_toutyaku.ks" target=*hujieda_toutyaku_hantei_shori_common]
 	[eval exp="f.event_hujieda[17]=1"]
-	[eval exp="f.hato = 1"]
+	;[eval exp="f.hato = 1"]
 	;@jump storage="event.ks" target=*start
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*hujieda_fumi_last
 [endif]
@@ -72,7 +72,7 @@
 [if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_hujieda[4] == 1 && f.event_hujieda[5] == 0 && f.event_hujieda[17] == 0 "]
 	[call storage="hantei_fumi_toutyaku.ks" target=*hujieda_toutyaku_hantei_shori_common]
 	[eval exp="f.event_hujieda[17]=1"]
-	[eval exp="f.hato = 1"]
+	;[eval exp="f.hato = 1"]
 	;@jump storage="event.ks" target=*start
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*hujieda_fumi_last
 [endif]
