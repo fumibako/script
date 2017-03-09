@@ -317,7 +317,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [fadeoutbgm time=3000]
 #
 
-
+[eval exp="sf.replay_hujieda=1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
