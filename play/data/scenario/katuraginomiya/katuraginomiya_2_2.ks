@@ -141,7 +141,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [cm]
 [endif]
 ;------------------------------------------------
-@jump storage="katuraginomiya/katuraginomiya2_2ｂ.ks" target=seen_0
+@jump storage="katuraginomiya/katuraginomiya2_2b.ks" target=seen_0
 
 *seen_end
 [イベントシーン終了]

@@ -160,7 +160,7 @@
 ;ジャンプ後に名前残り防止
 [fadeoutbgm time=3000]
 
-@jump storage="katuraginomiya/katuraginomiya12_1ｂ.ks" target=*seen_0
+@jump storage="katuraginomiya/katuraginomiya12_1b.ks" target=*seen_0
 ;次のイベントに飛びます
 [イベントシーン終了]
 [if exp="f.okeiko_gamen==true"]
