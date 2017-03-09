@@ -86,6 +86,10 @@ $('.list').remove();
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
+[if exp="tf.test_zaizen==true"]
+@jump target=*fumi_zaizen
+[endif]
+
 *fumi_toutyaku_zaizen_32
 [if exp="f.okeiko_gamen==true"]
 [iscript]	
@@ -107,7 +111,7 @@ f.hensin_list_hairetsu[1][31]=1;
 f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fumi;
 [endscript]
 [endif]
-
+*fumi_zaizen
 [手紙財前 fumi_number=]
 [名字]　[名前]様へ[l][r]
 [sp]拝啓　春草萌えいづる季節を迎え[r]
