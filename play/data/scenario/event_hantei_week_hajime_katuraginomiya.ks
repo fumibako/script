@@ -115,7 +115,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;他好感度が３０以上あるとき 葛城宮と比較なし
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 && f.para_sijyou_koukando >= 30 || f.para_kuroda_koukando >= 30 || f.para_zaizen_koukando >= 30"]
+;[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 && f.para_sijyou_koukando >= 30 || f.para_kuroda_koukando >= 30 || f.para_zaizen_koukando >= 30"]
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.replay_katuraginomiya_9_1 == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 "]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
 	[eval exp="f.event_type='talk'"]
