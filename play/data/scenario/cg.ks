@@ -111,7 +111,7 @@ $(".list").css("opacity",0);
 
 [cg_image_button graphic="katuraginomiya_3_4_nomalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=497 y=250 width=200 height=130 folder="fgimage/bg" ]
 [cg_image_button graphic="katuraginomiya_3_4_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=727 y=250 width=200 height=130 folder="fgimage/bg" ]
-[if exp="f.katuraginomiya_au == 1"]
+[if exp="sf.replay_katuraginomiya==1"]
 [ptext name=list layer=1 page=fore text="葛城宮ルート　:　normalEND" x=497 y=390 size=17 color=navy visible=true]
 [ptext name=list layer=1 page=fore text="葛城宮ルート　:　goodEND" x=727 y=390 size=17 color=navy visible=true]
 [else]
@@ -123,7 +123,7 @@ $(".list").css("opacity",0);
 
 [cg_image_button graphic="hujieda_normalED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=37 y=450 width=200 height=130 folder="fgimage/bg" ]
 [cg_image_button graphic="hujieda_goodED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=267 y=450 width=200 height=130 folder="fgimage/bg" ]
-[if exp="f.hujieda_au == 1"]
+[if exp="sf.replay_hujieda == 1"]
 [ptext name=list layer=1 page=fore text="藤枝ルート　:　normalEND" x=37 y=590 size=17 color=navy visible=true]
 [ptext name=list layer=1 page=fore text="藤枝ルート　:　goodEND" x=267 y=590 size=17 color=navy visible=true]
 [else]
