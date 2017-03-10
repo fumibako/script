@@ -535,7 +535,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;機能ボタン表示_スクリプト担当さまにおまかせします　
 [イベントシーン終了]
 [if exp="f.event_oaite_mitei == 1"]
-@jump storage="common_9_1.ks"　target=*common_9_1_futatabi_oaiteerabi
+@jump storage="common_9_1.ks"　target="*common_9_1_futatabi_oaiteerabi"
 [endif]
 
 [if exp="f.okeiko_gamen==true"]
