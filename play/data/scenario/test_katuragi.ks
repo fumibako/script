@@ -191,7 +191,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 *test12_1b
 [cm]
 [freeimage layer = 26]
-@jump storage="katuraginomiya/katuraginomiya12_1ｂ.ks"
+@jump storage="katuraginomiya/katuraginomiya12_1b.ks"
 [s]
 
 
@@ -211,7 +211,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 *test2_2b
 [cm]
 [freeimage layer = 26]
-@jump storage="katuraginomiya/katuraginomiya2_2ｂ.ks"
+@jump storage="katuraginomiya/katuraginomiya2_2b.ks"
 [s]
 
 
