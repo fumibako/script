@@ -8,8 +8,8 @@
 *event_hantei_week_owari
 ;◆判定　葛城宮
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_oaite_mitei == 1 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
-@jump storage="event_hantei_week_hajime_katuraginomiya.ks" target=**start
-;@jump storage="event_hantei_week_hajime.ks" target=*event_hantei
+;@jump storage="event_hantei_week_hajime_katuraginomiya.ks" target=**start
+@jump storage="event_hantei_week_hajime.ks" target=*event_hantei
 [endif]
 
 ;◆イベント判定(週終わり：12月3週のbadEDは週始め開始のため、他のイベントと同じ並びで判定）
