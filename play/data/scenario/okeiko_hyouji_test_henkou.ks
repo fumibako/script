@@ -27,7 +27,7 @@
 [edit left=10 top=360 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
 
 [ptext name="loding_pic" text="イベントを表示する" layer=29 size=15 x=10 y=390 color=darkslateblue bold=bold]
-[edit left=10 top=410 width=200 length=200 maxchars=3 name="tf.advice_event_hyouji" height=20]
+[edit left=10 top=410 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
 
 [ptext name="loding_pic" text="熟練度：茶道" layer=29 size=15 x=410 y=40 color=darkslateblue bold=bold]
 [edit left=410 top=60 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
