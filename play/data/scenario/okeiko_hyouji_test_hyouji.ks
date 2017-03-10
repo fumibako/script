@@ -63,9 +63,9 @@
 ;藤枝手紙[emb exp="f.fumi_all_title_new"][emb exp="f.fumi_hujieda_title_new"]
 
 ;お稽古パラ
-
-ok_rdm1_3・[emb exp="f.okeiko_para_pre_random_1_3"]＿pr_rdm_jkd・[emb exp="f.okeiko_para_pre_random_jukurendo"]
+;ok_rdm1_3・[emb exp="f.okeiko_para_pre_random_1_3"]＿pr_rdm_jkd・[emb exp="f.okeiko_para_pre_random_jukurendo"]
 [iscript]
+//Aボタンにしてありますがお好みで。
 $(window).keydown(function(e){
 if(e.keyCode == 65) {
 TG.kag.ftag.startTag("showlog");
