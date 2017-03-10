@@ -883,8 +883,8 @@ f.okeiko_month_kansuuji="三月 ";
 
 ;◆到着判定時の共通処理：藤枝
 *hujieda_toutyaku_hantei_shori_common
-;↓鳩から届く間(9月2週～10月4週)の到着メッセージ
-[if exp="f.okeiko_month == 10 || f.okeiko_month == 9"]
+;↓鳩から届く間(4月～10月4週)の到着メッセージ
+[if exp="f.okeiko_month >= 4 && f.okeiko_month <= 10"]
 	[eval exp="f.hato = 1"]
 	[eval exp="f.fumi_toutyaku_info_hato='鳩が訪れました。お手紙を受け取りました。'"]
 [else]
