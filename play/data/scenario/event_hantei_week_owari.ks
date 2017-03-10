@@ -5,7 +5,12 @@
 ;=============================================
 ;◆共通イベント判定
 ;=============================================
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
+[if exp="f.event_oaite_mitei == 1 && f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1"]
+;葛城宮　最後の手紙処理
+@jump target=*event_hantei_week_owari
+[endif]
+
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_katuraginomiya_koukando >= 20 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
 @jump storage="event_hantei_week_hajime.ks" target=*event_hantei
 [endif]
 
