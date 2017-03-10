@@ -43,20 +43,76 @@
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （凄い方なのね……）[p]
+「財前様のお父様も銀行家なのですか？」[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name=磯野 color="dimgray"]
-「お母様が[ruby text="ド"]独[ruby text="イツ"]逸出身の方だそうで、偏見などに苦労しておられます。[r]
-[sp]また、礼儀を重んじる方ともお聞きします。」[p]
-[主人公目パチ1回]
-[主人公通常]
+「いいえ、財前家は代々呉服屋でございました。[r]
+[sp]お父様は、全国の職人達から技術を集結させ、紡績工場を設立し、[r]
+[sp]衣服の生地の継承、開発をされているとお聞きしております」[p]
+
+「財前様は、初めは紡績工場の資産管理をされ、[r]
+[sp]銀行を興したのは、資産管理のシステムを円滑にする為でごさいます」[p]
+
+[主人公眉下げ下]
+[主人公目伏]
+[主人公ポーズ指]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「磯野、何となくわかりました。[r]
+[sp]お人柄や経歴についても深く聞かせて頂戴」[p]
+
 [whosay name=磯野 color="dimgray"]
-「"礼法"のお稽古をほどほどに重ねておくとよいでしょう」[p]
+「お母様が[ruby text="ド"]独[ruby text="イツ"]逸出身の方だそうで、偏見などに苦労されたそうでございますが、[r]
+[sp]並々ならぬ努力をされ、社交にも長けたこともあって、[r]
+[sp]社交界での今の地位を築き上げた方です。[p]
+[sp]今年で、二十三歳でしたか」[p]
+
+[主人公目パチ1回]
+[主人公憂い]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「聞けば聞くほど私とお手紙を交わしている事すら[r]
+[sp]身に過ぎているわ」[p]
+
+[whosay name=磯野 color="dimgray"]
+「そんな事はございません。[r]
+お嬢様が頑張れば認めて下さる方、ではないでしょうか」[p]
+
+#
+磯野は優しく微笑む。[p]
+
+[主人公通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「……どのように頑張ればよいのでしょうか？」[p]
+
+[whosay name=磯野 color="dimgray"]
+「礼儀を重んじる方だとお聞きしています[r]
+お稽古は『礼法』をほどほと上げるとよいでしょう」[p]
 
 「お稽古だけではお嬢様も滅入ってしまうと思います。[r]
 [sp]気分転換に"散策"もお勧めします」[p]
+
+[主人公通常]
+[主人公目パチ1回]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「お手紙はどのように書けばよいでしょうか？」[p]
+
+[whosay name=磯野 color="dimgray"]
+「何よりも礼儀を重んじる方なので今は勿論のこと、[r]
+[sp]親しくなってからも『丁寧に』書かれてはどうでしょうか？」[p]
+
+[主人公眉下げ下]
+「話題や、便箋の種類についてはどうしましょうか？」[p]
+
+[whosay name=磯野 color="dimgray"]
+「財前様は仕事を大事にされているとお聞きしています。[r]
+[sp]仕事やそれに関する事柄にについてはやはり熱をいれて[r]
+[sp]お返事を頂けるのではないでしょうか」[p]
+
+「また、便箋の種類は特に気にされる方ではないと思いますが、[r]
+[sp]手紙の話題などに好まれる花など察し、[r]
+[sp]選ばれるとよいでございましょう」[p]
 
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -67,7 +123,7 @@
 「私もお嬢様の笑顔が励みでございます」[p]
 [主人公目を開く]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（"季節の話題"、"礼法のお稽古"、"散策"ね)[p]
+（"仕事の話題"、"礼法のお稽古"、"散策"ね)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name=磯野 color="dimgray"] 
