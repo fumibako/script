@@ -270,6 +270,7 @@ jumpします。[p]
 ;淑女度一定値以下で父のセリフ変化
 [if exp="f.para_shujinkou_shukujodo < f.zaizen_shukujodo"]
 まだまだ
+[trace exp="f.para_shujinkou_shukujodo"]
 [else]
 なかなか
 [endif]
