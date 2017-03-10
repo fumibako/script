@@ -186,7 +186,7 @@ if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==0){
 		f.para_shujinkou_tairyoku_max=f.para_shujinkou_tairyoku_max+f.okeiko_para_pre_random_1_3;
 	}
 	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
-	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+	if(f.para_shujinkou_j_koto >= f.para_shujinkou_jukuren_max){f.okeiko_para_pre_random_jukurendo = 0;}
 	f.para_shujinkou_j_koto = f.para_shujinkou_j_koto + f.okeiko_para_pre_random_jukurendo;
 	f.para_shujinkou_koto_kaisuu = f.para_shujinkou_koto_kaisuu + 1; //お箏の練習回数/月に1加算
 	f.para_shujinkou_koto_kaisuu_all = f.para_shujinkou_koto_kaisuu_all + 1; //お箏の練習回数(累計)に1加算
@@ -202,7 +202,7 @@ if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==1){
 		f.para_shujinkou_kiryoku_max=f.para_shujinkou_kiryoku_max+f.okeiko_para_pre_random_1_3;
 	}
 	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
-	if(f.para_shujinkou_j_koto >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+	if(f.para_shujinkou_j_koto >= f.para_shujinkou_jukuren_max){f.okeiko_para_pre_random_jukurendo = 0;}
 	f.para_shujinkou_j_koto = f.para_shujinkou_j_koto + f.okeiko_para_pre_random_jukurendo;
 	f.para_shujinkou_koto_kaisuu = f.para_shujinkou_koto_kaisuu + 1; //お箏の練習回数/月に1加算
 	f.para_shujinkou_koto_kaisuu_all = f.para_shujinkou_koto_kaisuu_all + 1; //お箏の練習回数(累計)に1加算
