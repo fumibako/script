@@ -1,4 +1,4 @@
-﻿*start
+﻿﻿*start
 *sansaku
 @layopt layer=message1 page=fore visible = false
 @layopt layer=message0 visible=true
@@ -55,7 +55,8 @@ TG.stat.stack["call"] = [];
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-
+;↓磯野のアドバイスイベント終了前に散策ボタンを押した際、主人公セリフを表示するためのフラグ(アドバイスイベント終了フラグ)
+[eval exp="f.event_advice = 1"]
 ;-----設定タグここから-----
 [if exp="sf.BGM=='OFF'"]
 [iscript]
