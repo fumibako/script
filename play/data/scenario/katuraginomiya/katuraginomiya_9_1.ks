@@ -595,7 +595,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [stopbgm]
 [resetfont]
 [er]
+[if exp="f.katuraginomiya_konyaku == true"]
 [主人公退場]
+[endif]
 ;背景の変更。ひとまず暗転に
 [暗転]
 ;上に載っている画像が消えます。それまでに設定
@@ -605,7 +607,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;================================以降スクリプト担当====================================================
 ;機能ボタン表示_スクリプト担当さまにおまかせします　
 *seen_end
-[if exp="f.event_oaite_mitei == 1"]
+[if exp="f.event_oaite_mitei == 1 && f.katuraginomiya_konyaku == false"]
+;ジャンプ先でバッド判定あり
 @jump storage="common_9_1.ks" target="*common_9_1_futatabi_oaiteerabi"
 [endif]
 [イベントシーン終了]
