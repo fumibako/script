@@ -1439,6 +1439,68 @@
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
+;=============================================
+;『 最後の手紙２ 』葛城宮進行不可９月他の誰かを選んだ場合９月１週に到着。
+;=============================================
+*katuraginomiya_fumi_last_2_1
+[if exp="f.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『最後の手紙２』[p]
+[endif]
+[手紙葛城宮 fumi_number=1]
+[font color=navy size=21]
+[名字]　[名前]殿へ[l][r]
+[sp]　[名前]殿 にはお健やかにお過ごしであろうか？ [r]
+[r] 
+[sp]先日は、お茶事まで受けたくれたこと感謝する。[r]
+[sp]だが、この手紙を以って君との文通は終わりにする。[r]
+[r]
+[sp]私個人として、残念ではあるが、[r]  
+[名前]殿と手紙を交わし、[r]  
+君の私への感情や、淑女の品格を配慮してのことだ。[r]
+[r]
+[sp]今後の君の幸せを心から願っている。[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][30] = 0"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+;=============================================
+;『 最後の手紙３ 』葛城宮進行可９月他の誰かを選んだ場合９月１週に到着。
+;=============================================
+*katuraginomiya_fumi_last_2_1
+[if exp="f.okeiko_gamen!=true"]
+[テキスト全画面白文字]
+『最後の手紙２』[p]
+[endif]
+[手紙葛城宮 fumi_number=1]
+[font color=navy size=21]
+[名字]　[名前]殿へ[l][r]
+[sp]　[名前]殿 にはお健やかにお過ごしであろうか？ [r]
+[r] 
+[sp]先日は、お茶事まで受けたくれたこと感謝する。[r]
+[sp]だが、君には慕う相手がいるようだ。[r]  
+[r]
+[sp] 非常に残念ではあるが、私は身を引こう。[r]
+[r]
+[sp]君の結婚が幸せなものであることを心から祈っている[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen==true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][31] = 0"]
+	[freeimage layer = 29]
+	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
 [s]
