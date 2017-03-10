@@ -244,6 +244,41 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [主人公目閉じ]
 「磯野、[r]
 [sp]お父様に 今日時間がある時にお話しがしたい と伝えて下さい」[p]
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok0]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no0]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok0
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end0
+[s]
+
+*jump_no0
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;------------------------------------------------
 
 [whosay name=磯野 color="dimgray"]
 「かしこまりました。[r]
@@ -456,6 +491,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 殿下らの婚約をお受けして下さった。[r]
 そして、ここから殿下と私の物語はまた新たに始まる。[r]
 [p]
+*seen_end0
 [eval exp="f.event_oaite_mitei=0"]
 [eval exp="f.katuraginomiya_au=1"]
 ;===================================================================================
@@ -483,6 +519,41 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 （きっと殿下にはもっとふさわしい方がいるわ）[p]
 #
 磯野は、静かに返事をすると部屋から出て行った。[p]
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;------------------------------------------------
 
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
@@ -519,6 +590,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 殿下は時折、新聞や雑誌に載り、私は懐かしく想う事になる。[p]
 ;断るイベント
 ;==========================スクリプト・全画面表示からの復帰準備_初期化==================================
+*seen_end
 *common_end
 ;終了はすべてここにきます
 [stopbgm]
