@@ -7,6 +7,15 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [eval exp="sf.FButton='OFF'"]
+[if exp="tf.test_katuraginomiya == true"]
+これは葛城宮シナリオテストのみで表示されています。[r]
+新規に追加された手紙をみますか？[p]
+[link target=y]はい[endlink][r]
+[link target=n]いいえ[endlink][s]
+*y
+@jump target=*katuraginomiya_fumi_last
+*n
+[endif]
 ;=============================================
 ;=============================================
 ;◆イベント中に届く手紙◆ イベント後に「文箱」から読めるようにするために、このファイルに載せています(◆jsYiJcqRkk
