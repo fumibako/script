@@ -97,8 +97,8 @@
 ;・イベント２みたがイベント３を見ていない(8月2週)→イベント３判定と同じタイミングで手紙が届く
 [if exp="f.okeiko_month == 8 && f.okeiko_week == 2 && f.katuraginomiya_only == 0 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 0 && f.katuraginomiya_au == 0 && f.event_katuraginomiya[21] == 0 && f.event_katuraginomiya[22] == 0"]
 ;最後の手紙フラグ 
+	[eval exp="f.event_katuraginomiya[21]=1"]
 	[eval exp="f.event_katuraginomiya[22]=1"]
-	[eval exp="f.event_katuraginomiya[23]=1"]
 	[call storage="hantei_fumi_toutyaku.ks" target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last	
 [endif]
