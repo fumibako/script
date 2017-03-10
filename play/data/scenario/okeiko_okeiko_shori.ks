@@ -163,13 +163,13 @@ if(f.okeiko_kamoku=='kadou'||f.okeiko_kamoku=='gogaku'){
 	}
 	if(f.okeiko_kamoku=='kadou'){
 		if(f.para_shujinkou_j_kadou >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
-		if(f.para_shujinkou_j_kadou >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+		if(f.para_shujinkou_j_kadou >= f.para_shujinkou_jukuren_max ){f.okeiko_para_pre_random_jukurendo = 0;}
 		f.para_shujinkou_j_kadou = f.para_shujinkou_j_kadou + f.okeiko_para_pre_random_jukurendo;
 		f.para_shujinkou_kadou_kaisuu_all = f.para_shujinkou_kadou_kaisuu_all + 1; //華道の練習回数(累計)に1加算
 	}
 	if(f.okeiko_kamoku=='gogaku'){
 		if(f.para_shujinkou_j_gogaku >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
-		if(f.para_shujinkou_j_gogaku >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+		if(f.para_shujinkou_j_gogaku >= f.para_shujinkou_jukuren_max){f.okeiko_para_pre_random_jukurendo = 0;}
 		f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + f.okeiko_para_pre_random_jukurendo;
 		f.para_shujinkou_gogaku_kaisuu_all = f.para_shujinkou_gogaku_kaisuu_all + 1; //語学の練習回数(累計)に1加算
 	}
