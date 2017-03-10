@@ -7,14 +7,17 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [eval exp="sf.FButton='OFF'"]
+[テキスト全画面白文字]
 [if exp="tf.test_katuraginomiya == true"]
 これは葛城宮シナリオテストのみで表示されています。[r]
 新規に追加された手紙をみますか？[p]
 [link target=y]はい[endlink][r]
 [link target=n]いいえ[endlink][s]
 *y
+とびます[p]
 @jump target=*katuraginomiya_fumi_last
 *n
+はじめから[p]
 [endif]
 ;=============================================
 ;=============================================
