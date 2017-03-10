@@ -10,13 +10,15 @@
 [テキスト全画面白文字]
 [if exp="tf.test_katuraginomiya == true"]
 これは葛城宮シナリオテストのみで表示されています。[r]
-新規に追加された手紙をみますか？[p]
-[link target=y]はい[endlink][r]
+新規に追加された手紙をみますか？[r][r]
+[link target=y]はい[endlink][r][r][r]
 [link target=n]いいえ[endlink][s]
 *y
+[er]
 とびます[p]
 @jump target=*katuraginomiya_fumi_last
 *n
+[er]
 はじめから[p]
 [endif]
 ;=============================================
