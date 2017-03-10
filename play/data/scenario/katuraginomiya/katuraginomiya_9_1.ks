@@ -590,7 +590,6 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 殿下は時折、新聞や雑誌に載り、私は懐かしく想う事になる。[p]
 ;断るイベント
 ;==========================スクリプト・全画面表示からの復帰準備_初期化==================================
-*seen_end
 *common_end
 ;終了はすべてここにきます
 [stopbgm]
@@ -605,6 +604,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [freeimage layer = 29 time=1000]
 ;================================以降スクリプト担当====================================================
 ;機能ボタン表示_スクリプト担当さまにおまかせします　
+*seen_end
 [イベントシーン終了]
 [if exp="f.event_oaite_mitei == 1"]
 @jump storage="common_9_1.ks"　target="*common_9_1_futatabi_oaiteerabi"
