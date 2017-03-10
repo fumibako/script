@@ -82,8 +82,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="sansaku2" text="散策イベント(2月～)2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="bazaar" text="バザーイベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test_fumi2" text="最後の手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="test6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 
 [glink target="page_1" text="前に戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 @jump target=common_page
@@ -253,11 +252,6 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 @jump storage="katuraginomiya/katuraginomiya_fumi.ks"
 [s]
 
-*test_fumi2
-[cm]
-[freeimage layer = 26]
-@jump storage="katuraginomiya/katuraginomiya_fumi_last.ks"
-[s]
 
 *auto
 [autostart]
