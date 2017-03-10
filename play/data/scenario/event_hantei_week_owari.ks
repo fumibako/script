@@ -10,6 +10,11 @@
 @jump target=*event_hantei_week_owari
 [endif]
 
+;◆黒田、財前、四条の進行条件を満たさない場合に9/1からぬける
+[if exp="f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30"]
+	@jump target=*event_hantei_week_owari
+[endif]
+
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_katuraginomiya_koukando >= 20 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
 @jump storage="event_hantei_week_hajime.ks" target=*event_hantei
 [endif]
