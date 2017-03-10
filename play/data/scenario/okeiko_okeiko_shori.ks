@@ -140,13 +140,13 @@ if(f.okeiko_kamoku=='sadou'||f.okeiko_kamoku=='reihou'){
 	}
 	if(f.okeiko_kamoku=='sadou'){
 		if(f.para_shujinkou_j_sadou >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
-		if(f.para_shujinkou_j_sadou >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+		if(f.para_shujinkou_j_sadou >= f.para_shujinkou_jukuren_max){f.okeiko_para_pre_random_jukurendo = 0;}
 		f.para_shujinkou_j_sadou = f.para_shujinkou_j_sadou + f.okeiko_para_pre_random_jukurendo;
 		f.para_shujinkou_sadou_kaisuu_all = f.para_shujinkou_sadou_kaisuu_all + 1; //茶道の練習回数(累計)に1加算
 	}
 	if(f.okeiko_kamoku=='reihou'){
 		if(f.para_shujinkou_j_reihou >= (f.para_shujinkou_jukuren_max - 3)){f.okeiko_para_pre_random_jukurendo = 1;}
-		if(f.para_shujinkou_j_reihou >= (f.para_shujinkou_jukuren_max - 1)){f.okeiko_para_pre_random_jukurendo = 0;}
+		if(f.para_shujinkou_j_reihou >= f.para_shujinkou_jukuren_max){f.okeiko_para_pre_random_jukurendo = 0;}
 		f.para_shujinkou_j_reihou = f.para_shujinkou_j_reihou + f.okeiko_para_pre_random_jukurendo;
 		f.para_shujinkou_reihou_kaisuu_all = f.para_shujinkou_reihou_kaisuu_all + 1; //礼法の練習回数(累計)に1加算
 	}
