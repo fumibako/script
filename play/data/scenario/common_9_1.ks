@@ -270,7 +270,6 @@ jumpします。[p]
 ;淑女度一定値以下で父のセリフ変化
 [if exp="f.para_shujinkou_shukujodo < f.zaizen_shukujodo"]
 まだまだ
-[trace exp="f.para_shujinkou_shukujodo"]
 [else]
 なかなか
 [endif]
@@ -345,14 +344,17 @@ jumpします。[p]
 「はい、お父様」[p]
 #
 [eval exp="f.event_oaite_mitei=1"]
-[if exp="f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1"]
-;最後の手紙
-@jump target=*common_event_mitei
-[endif]
-[if exp="f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
-[イベントシーン終了]
-@jump storage="event_hantei_week_hajime.ks" target=*event_hantei
-[endif]
+
+;[if exp="f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1"]
+;葛城宮　最後の手紙処理
+;@jump target=*common_event_mitei
+;[endif]
+
+;[if exp="f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
+;[イベントシーン終了]
+;@jump storage="event_hantei_week_hajime.ks" target=*event_hantei
+;[endif]
+
 *common_event_mitei
 [イベントシーン終了]
 @jump storage="event_hantei_week_hajime.ks" target=*common_event_hantei_owari
