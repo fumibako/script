@@ -264,6 +264,8 @@ f.para_shujinkou_kiryoku_max = parseInt($("input[name='f.para_shujinkou_kiryoku_
 tf.event_sansaku_hyouji =  parseInt($("input[name='tf.event_sansaku_hyouji']").val());
 tf.event_sansaku_hyouji_before_au =  parseInt($("input[name='tf.event_sansaku_hyouji_before_au']").val());
 
+tf.last_fumi =  parseInt($("input[name='tf.last_fumi']").val());
+
 tf.mode_hensu =  parseInt($("input[name='tf.mode_hensu']").val());
 [endscript]
 
