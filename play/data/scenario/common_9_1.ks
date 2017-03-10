@@ -350,7 +350,7 @@ jumpします。[p]
 @jump target=*common_event_mitei
 [endif]
 [if exp="f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
-;f.para_shujinkou_shukujodo >= 30 &&
+[イベントシーン終了]
 @jump storage="event_hantei_week_hajime.ks" target=*event_hantei
 [endif]
 *common_event_mitei
