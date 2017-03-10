@@ -118,6 +118,10 @@
 ;f.fumi_henji==0
 [edit left=680 top=410 width=200 length=200 maxchars=3 name="f.fumi_henji" height=20]
 
+[ptext text="最後の手紙・葛城宮=1 なし=0" layer=29 size=15 x=680 y=390 color=darkslateblue bold=bold]
+;f.event_katuraginomiya[21] f.event_katuraginomiya[22] 
+[edit left=680 top=460 width=50 length=200 maxchars=1 name="tf.last_fumi" height=20]
+
 [ptext text="お見合い決定済(0決定、1未定)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
 [edit left=345 top=460 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
 
@@ -182,6 +186,8 @@ $("input[name='f.katuraginomiya_only']").val("0");
 
 //誰かに返事を出した
 $("input[name='f.fumi_henji']").val("0");
+//最後の手紙葛城
+$("input[name='tf.last_fumi']").val("0");
 
 //葛城宮確認用デフォルト値1 ご自由に設定してください
 $("input[name='f.event_oaite_mitei']").val("1");
@@ -284,6 +290,14 @@ tf.mode_hensu =  parseInt($("input[name='tf.mode_hensu']").val());
 	[eval exp="f.hujieda_fumi_toutyakumachi_week = 1"]
 [else]
 	[eval exp="f.hujieda_fumi_toutyakumachi_week = 0"]
+[endif]
+
+[if exp="tf.last_fumi == 1"]
+[iscript]
+f.event_katuraginomiya[21]=1;
+f.event_katuraginomiya[22] =1;
+alert("葛城宮・最後の手紙をＯＮにしました。出会う前には設定しないでください");
+[endscript]
 [endif]
 
 ;入力ミスアラート　進めれるようにアラートのみ！
