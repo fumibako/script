@@ -344,7 +344,7 @@ jumpします。[p]
 「はい、お父様」[p]
 #
 [eval exp="f.event_oaite_mitei=1"]
-[if exp="f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
+[if exp="f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
 @jump storage="event_hantei_week_hajime.ks" target=*event_hantei
 [endif]
 [イベントシーン終了]
