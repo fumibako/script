@@ -605,10 +605,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;================================以降スクリプト担当====================================================
 ;機能ボタン表示_スクリプト担当さまにおまかせします　
 *seen_end
-[イベントシーン終了]
 [if exp="f.event_oaite_mitei == 1"]
 @jump storage="common_9_1.ks" target="*common_9_1_futatabi_oaiteerabi"
 [endif]
+[イベントシーン終了]
 
 [if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
