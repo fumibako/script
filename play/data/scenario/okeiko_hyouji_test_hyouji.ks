@@ -65,6 +65,12 @@
 ;お稽古パラ
 ;ok_rdm1_3　pr_rdm_jkd
 [trace exp="f.okeiko_para_pre_random_1_3"]　[trace exp="f.okeiko_para_pre_random_jukurendo"]
+[iscript]
+$(window).keydown(function(e){
+if(e.keyCode == 65) {
+TG.kag.ftag.startTag("showlog");
+} });
+[endscript]
 
 [if exp="tf.mode_hensu==0"]
 ;フラグで表示します		
