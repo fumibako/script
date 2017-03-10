@@ -23,7 +23,7 @@
 [endif]
 
 葛城宮ルート(1○,0×)=[emb exp="f.katuraginomiya_au"],葛城宮のみ文通(1○,0×)=[emb exp="f.katuraginomiya_only"][r]
-手紙[emb exp="f.katuraginomiya_fumi_start"]EV[emb exp="f.event_katuraginomiya[1]"]・[emb exp="f.event_katuraginomiya[2]"]・[emb exp="f.event_katuraginomiya[3]"]
+;手紙[emb exp="f.katuraginomiya_fumi_start"]EV[emb exp="f.event_katuraginomiya[1]"]・[emb exp="f.event_katuraginomiya[2]"]・[emb exp="f.event_katuraginomiya[3]"]
 
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
 [if exp="Number.isFinite(f.para_hujieda_koukando) == false"]
@@ -61,6 +61,9 @@
 ;攻略対象名ルート(1○,0×)=[emb exp="f.oaite_name_au"],お見合い(1後,0未)=[emb exp="f.oaite_name_omiai"][r]
 
 ;藤枝手紙[emb exp="f.fumi_all_title_new"][emb exp="f.fumi_hujieda_title_new"]
+
+;お稽古パラ
+ok_rdm1_3[emb exp="f.okeiko_para_pre_random_1_3"]pr_rdm_jkd[emb exp="f.okeiko_para_pre_random_jukurendo"]
 
 [if exp="tf.mode_hensu==0"]
 ;フラグで表示します		
