@@ -118,7 +118,7 @@
 ;f.fumi_henji==0
 [edit left=680 top=410 width=200 length=200 maxchars=3 name="f.fumi_henji" height=20]
 
-[ptext text="最後の手紙・葛城宮=1 なし=0" layer=29 size=15 x=680 y=390 color=darkslateblue bold=bold]
+[ptext text="最後の手紙・葛城宮=1 なし=0" layer=29 size=15 x=680 y=440 color=darkslateblue bold=bold]
 ;f.event_katuraginomiya[21] f.event_katuraginomiya[22] 
 [edit left=680 top=460 width=50 length=200 maxchars=1 name="tf.last_fumi" height=20]
 
