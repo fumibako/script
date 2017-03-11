@@ -1,12 +1,10 @@
 ﻿;=============================================
 ;◆黒田イベント【分岐：badED】黒田ルートかつ12月3週になった時点で好感度一定値未満又は麦の穂無しでbadED
 ;=============================================
-
 *replay_kuroda_12_3_badED
 [stopbgm]
 [call storage="tyrano.ks"]
 [setreplay name="replay_kuroda_12_3_badED_scene" storage="kuroda_12_3_badED.ks" target="replay_kuroda_12_3_badED_1"]
-
 [iscript]
 $(".list").remove();
 $(".rp_bt").remove();
@@ -14,55 +12,44 @@ $(".rp_bt").remove();
 [if exp="f.flag_replay==true"]
 [back storage="toumei.gif" time=1]
 [endif]
-
+;==========================================================================================
 *replay_kuroda_12_3_badED_1
-;◆既読スキップ開始
-[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
-	[skipstart]
-[endif]
-
-[if exp="sf.KSKIP=='ON' && sf.trail_kuroda_12_3_badED_scene1==undefined"]
-	[skipstop]
-[endif]
-*scene1
-[freeimage layer = 24]
-
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [call target=*start storage="hensuu.ks"]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+;==========================================================================================
+;◆既読スキップ開始
+[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
+	[skipstart]
+[endif]
+[if exp="sf.KSKIP=='ON' && sf.trail_kuroda_12_3_badED_scene1==undefined"]
+	[skipstop]
+[endif]
+;==========================================================================================
+*scene1
+[stopbgm]
+[freeimage layer = 24]
 [wait time=10]
 ;【背景】庭・夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[eval exp="f.message_storage='message_bg/frame_red.png'"]
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
-[stopbgm]
-
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
+[主人公通常]
+[プリロード画面消去]
+;セーブ等ボタン配置
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+;==========================================================================================
+*scene1_1
+
 [主人公ふぅ閉]
 [wait time=10]
 ;【SE】時計（広間カチコチ）
@@ -103,17 +90,27 @@ $(".rp_bt").remove();
 [eval exp="f.kaogura='off'"]
 [主人公退場]
 [wait time=10]
+;==========================================================================================
 
 ――週末を迎えた。[p]
+
+;==========================================================================================
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [wait time=10]
+;==========================================================================================
 [eval exp="f.kaogura='on'"]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公伏目]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+;==========================================================================================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「黒田様に、よろしくお伝え下さいませ」[p]
@@ -147,7 +144,9 @@ $(".rp_bt").remove();
 [eval exp="f.kaogura='off'"]
 [主人公退場]
 [wait time=10]
+
 ――不安を抱えたまま、時が経ち[p]
+;==========================================================================================
 ;画面切り替え【背景】「主人公邸」
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -160,6 +159,8 @@ $(".rp_bt").remove();
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+
+;==========================================================================================
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様、黒田様よりお手紙が届いております」[p]
@@ -187,18 +188,14 @@ $(".rp_bt").remove();
 [主人公退場]
 [wait time=10]
 [fadeoutbgm time=3000]
+;==========================================================================================
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 [chara_mod name="message_bg" storage="toumei.gif"]
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
+;==========================================================================================
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg" time=500]
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]長い間連絡できずに、大変申し訳ありませんでした。[r]
@@ -213,7 +210,8 @@ $(".rp_bt").remove();
 心苦しく思いますので、このたびのことは[r]
 白紙に戻していただきたいと存じます。[r]
 ……[p]
-[freeimage layer = 29 time=1500]
+[手紙黒田読了]
+
 
 ;【BGM】雪解水（哀しげな曲
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true click=true]
@@ -282,6 +280,11 @@ $(".rp_bt").remove();
 @jump storage=replay2.ks
 [endif]
 
+[if exp="tf.test_kuroda==true"]
+[イベントシーン終了]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+
 @jump storage="event.ks" target=*event_ED
 
 *window_close
@@ -316,23 +319,9 @@ $(".rp_bt").remove();
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
-
+;メッセージレイヤを表示
 [if exp="f.kaogura!='off'"]
 [chara_mod name="girl_base" storage="girl/S/base.png" time=0]
 [wait time=10]
@@ -349,4 +338,3 @@ $(".rp_bt").remove();
 [wait time=10]
 
 [return]
-
