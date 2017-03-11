@@ -2,6 +2,11 @@
 ;◆黒田イベント５章【顔合せ】判定 黒田ルートかつ9月3週になった時点で1度だけ発生
 ;=============================================
 *replay_kuroda_9_3
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -19,36 +24,34 @@
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
+;[イベントシーン構築ボタン無し版]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-
-
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 page=fore visible=true
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
 [chara_config ptext="chara_name_area"]
 
+;セーブ等ボタン配置
+;[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
+
+
 
 #
 ――ついに、顔合せ当日となった。[p]
@@ -885,11 +888,17 @@
 
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
+;回想記録終了 
+[endreplay] 
+
+[if exp="tf.test_kuroda==true"]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[イベントシーン終了]
+[endif]
 
 @jump storage="event.ks" target=*event_owari
 
-;回想記録終了 
-[endreplay] 
+
 
 *window_close
 [cm]
@@ -923,21 +932,7 @@
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 ;メッセージレイヤを表示
 [if exp="f.kaogura!='off'"]
