@@ -4,8 +4,8 @@
 *replay_kuroda_9_3
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
-;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
@@ -24,29 +24,25 @@
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-;[イベントシーン構築ボタン無し版]
+[イベントシーン構築ボタン無し版]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+;[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
+;メッセージレイヤを会話窓用に設定変更;
+;[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+;@layopt layer=message0 page=fore visible=true
+;[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
+;[chara_config ptext="chara_name_area"]
 
-;セーブ等ボタン配置
-;[プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
-[eval exp="sf.FButton='ON'"]
-
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
-[wait time=10]
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
+[プリロード画面消去]
+;セーブ等ボタン配置
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+
+
+
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
