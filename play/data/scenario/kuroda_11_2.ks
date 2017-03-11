@@ -13,7 +13,7 @@
 [call target=*start storage="macro_tati_kuroda.ks"]
 [preload storage="data/fgimage/bg/bg_bluesky.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_winter_forest_yuu.jpg" wait=true]
-[preload storage="data/fgimage/bg_shinrinkouen_gate_winter.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_shinrinkouen_gate_winter.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_biwa_tree.jpg" wait=true]
 ;==========================================================================================
 ;◆既読スキップ開始
