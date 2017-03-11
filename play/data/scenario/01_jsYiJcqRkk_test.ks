@@ -65,6 +65,8 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test33" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test34" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 
+[glink target="*page2" text="page2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
+[glink target="*page1" text="page1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450 color=white]
 
 *cmmn
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
