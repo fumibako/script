@@ -877,8 +877,8 @@
 [endreplay] 
 
 [if exp="tf.test_kuroda==true"]
-@jump storage="01_jsYiJcqRkk_test.ks"
 [イベントシーン終了]
+@jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
 
 @jump storage="event.ks" target=*event_owari
