@@ -350,17 +350,13 @@
 [resetfont]
 ;画面:通常会話パート
 ;【テキスト枠】会話パート用 下部横長【茶色（男性視点用）】
-[chara_mod name="message_bg" storage="message_bg/frame_brown.png"]
+[イベントシーン構築ボタン無し版枠茶色]
 ;セーブ等ボタン配置
 [メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
+[機能ボタン表示]
 
-;[イベントシーン構築ボタン無し版枠茶色]
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+
 
 ;【背景】和室（黒田家） フェードイン
 [chara_mod name="bg" storage="bg/bg_kurodake.jpg" time=500]
