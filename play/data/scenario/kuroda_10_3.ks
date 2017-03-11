@@ -12,6 +12,7 @@
 [call target=*start storage="macro_tati_kuroda.ks"]
 [preload storage="data/fgimage/bg/bg_shinrinkouen_gate_yuu.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_kouyou_ussou.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_kouyou_kaidan.jpg" wait=true]
 ;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
