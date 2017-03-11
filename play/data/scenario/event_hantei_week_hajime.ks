@@ -127,6 +127,28 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 @jump target=*event_hantei_owari
 [endif]
 
+[if exp="f.event_katuraginomiya[21] == 1 && f.event_katuraginomiya[22] == 1"]
+;◆最後の手紙１を見たときはスキップして藤枝判定へ
+@jump target=*hujieda_event_hantei
+[endif]
+
+;◆葛城宮進行不可で他の攻略キャラと見合いをきめた場合　最後の手紙2_2
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 2) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && ( f.kuroda_au == 1 || f.sijyou_au == 1 || f.zaizen_au == 1) && f.katuraginomiya_au == 0"]
+;9/1に手紙は入らないので9/2　最後の手紙2_1　発生藤枝auは判定しない
+	[eval exp="f.event_katuraginomiya[23]=1"]
+	[call storage="hantei_fumi_toutyaku.ks" target=*katuraginomiya_toutyaku_hantei_shori_common]
+	@jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last_2_1	
+[endif]
+
+;◆葛城宮使者イベントを見た[4]が　他の攻略キャラとの見合いを決定しており、葛城宮見合いフラグが立ってない f.katuraginomiya_konyaku == false
+;最後の手紙2_2
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 2) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 1 && f.katuraginomiya_au == 0 && f.katuraginomiya_konyaku == false && ( f.kuroda_au == 1 || f.sijyou_au == 1 || f.zaizen_au == 1)"]
+;9/1に手紙は入らないので9/2　最後の手紙2_2　発生　藤枝auは判定しない
+	[eval exp="f.event_katuraginomiya[23]=1"]
+	[call storage="hantei_fumi_toutyaku.ks" target=*katuraginomiya_toutyaku_hantei_shori_common]
+	@jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last_2_2
+[endif]
+
 ;=============================================
 ;◆藤枝イベント判定
 ;=============================================
