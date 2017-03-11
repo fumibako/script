@@ -51,6 +51,7 @@
 ;【背景】玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=0]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[イベントシーン構築ボタン無し版]
 ;【立ち絵】主人公：通常
 [主人公ポーズ通常]
 [wait time=10]
