@@ -199,11 +199,11 @@
 [playse storage=paper_open.ogg loop=false ]
 [手紙華衣婚約者 fumi_number=]
 [華衣]へ[r]
-[image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=300 top=200 time=1500 wait=false]
-；うっすら
 [iscript]
 $(".nerine").css("opacity",0.5);
 [endscript]
+[image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=300 top=200 time=1500 wait=false]
+;うっすら
 「もともと私の身体は長くなかったようです。[r]
 [sp]だから華織さんを責めないであげてください。[r]
 [sp]私の無茶なお願いをきいてくれたのだのだから。[r]
