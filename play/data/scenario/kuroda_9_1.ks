@@ -2,6 +2,7 @@
 ;◆黒田イベント４章【実際に会う事を決める】9月1週、お相手選択で「黒田」を選ぶと発生
 ;=============================================
 *replay_kuroda_9_1
+[layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500 visible=true] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true] 
 ;◆既読スキップ開始
@@ -32,7 +33,6 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 [layopt layer=29 visible=true] 
-[layopt layer=fix visible=false] 
 ;=============================================
 ;【SE】鈴虫の音
 ;[playse storage=mushi_suzumushi.ogg loop=false ]
