@@ -296,17 +296,12 @@ jumpします。[p]
 [fadeoutse]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
+[layopt layer=29 visible=true]
+[image name="jumbi" layer=29 storage="bg/bg_ryoutei.jpg" left=1 time=500]
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 ;================================================================
-[イベントシーン構築ボタン無し版]
-;セーブ等ボタン配置
-[if exp="sf.FButton=='ON'"]
-[メッセージウィンドウ上ボタン表示]
-[eval exp="sf.FButton='ON'"]
-[endif]
-
 ;【立ち絵】黒田：通常
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
 [wait time=10]
@@ -317,6 +312,16 @@ jumpします。[p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
 [wait time=10]
 ;[黒田通常]
+
+[イベントシーン構築ボタン無し版]
+;セーブ等ボタン配置
+[freeimage layer=29 time=1000]
+[layopt layer=29 visible=true]
+
+[if exp="sf.FButton=='ON'"]
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+[endif]
 
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
