@@ -6,6 +6,7 @@
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[call target=*start storage="macro_graphic.ks"]
 ;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
@@ -46,6 +47,11 @@
 
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
+;テスト中は配列スキップ
+[if exp="tf.test_kuroda==true"]
+@jump target="test_kuroda_hairetu_skip"
+[endif]
+
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「紅葉散策お誘い」　黒田 将貴";
 f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「紅葉散策お誘い」";
@@ -65,16 +71,23 @@ f.hensin_list_hairetsu[0][13]=1;
 f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endscript]
 
+*test_kuroda_hairetu_skip
+
+;[if exp="tf.test_kuroda==true"]
+[手紙黒田]
+;[else]
 ;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
+;[clearfix]
+;[eval exp="sf.FButton='OFF'"]
+;[freeimage layer = 27]
+;[freeimage layer = 28]
+;[freeimage layer = 29]
+;[layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg" time=500]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+;[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg" time=500]
+;[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+;[endif]
+
 [名字] [名前]様[r]
 [r]
 [sp]秋の気配が濃くなりましたね。[r]
@@ -86,31 +99,11 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [sp]お返事をお待ちしております。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
-[iscript]
-[endscript]
+;[iscript]
+;[endscript]
+;◆黒田読了配列セット
 [eval exp="f.midoku_list_hairetsu[0][13] = 0;"]
-[freeimage layer = 29 time=500]
-;機能ボタン表示
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-
-;画面切り替え、手紙画面→通常会話パート
-;【テキスト枠】会話パート用 下部横長
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[手紙黒田読了]
 
 ;【立ち絵】主人公：ほほえみ
 [主人公笑顔]
