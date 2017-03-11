@@ -1029,6 +1029,10 @@ TG.stat.stack["call"] = [];
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
+;テキスト全画面
+[font color=white size=27]
+[fadeoutbgm time=3000]
+
 [if exp="f.event_katuraginomiya[3] == 1 && f.katuraginomiya_only != 1"]
 ;お茶事をみたフラグがある オンリーではない
 
@@ -1037,9 +1041,6 @@ TG.stat.stack["call"] = [];
 その報告を聞いて、[p]
 [endif]
 
-;テキスト全画面
-[font color=white size=27]
-[fadeoutbgm time=3000]
 磯野の淹れてくれる温かいお茶を飲み[r]
 私は深呼吸をした。[r]
 [r]
