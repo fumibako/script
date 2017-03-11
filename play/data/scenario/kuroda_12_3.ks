@@ -2,17 +2,35 @@
 ;◆黒田イベント【分岐：normal/goodED】黒田ルートかつ12月3週になった時点で好感度一定値以上かつ麦の穂所持で1度だけ
 ;=============================================
 *replay_kuroda_12_3
+;[call target=*start storage="tyrano.ks"]
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_kuroda.ks"]
+;==========================================================================================
+;◆既読スキップ開始
+[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
+	[skipstart]
+[endif]
+
+[if exp="sf.KSKIP=='ON' && sf.trail_kuroda_12_3_scene1==undefined"]
+	[skipstop]
+[endif]
+;==========================================================================================
 [stopbgm]
 [cm]
-[clearfix]
-[call target=*start storage="macro_tati_girl.ks"]
-
+[if exp="tf.test_kuroda != true"]
 [freeimage layer = 8]
 [freeimage layer = 9]
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
-
+[endif]
+;==========================================================================================
 ;黒田画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [chara_new name="kuroda_base" storage="toumei.gif"]
 [chara_show left=250 top=60 layer=8 name="kuroda_base" time=0]
@@ -29,7 +47,8 @@
 [chara_new name="kuroda_emo" storage="toumei.gif"]
 [chara_show left=250 top=60 layer=12 name="kuroda_emo" time=0]
 [wait time=10]
-[call target=*start storage="macro_tati_kuroda.ks"]
+
+;==========================================================================================
 ;名前表示用のマクロ(ティラノ公式サンプルゲーム『MikuPod』を参考にしています)
 [macro name="whosay"]
 [eval exp="sf.father_name='浩文'"]
@@ -75,19 +94,13 @@ if (mp.name!="") {
 [endscript]
 [ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
 [endmacro]
-
-;◆既読スキップ開始
-[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
-	[skipstart]
-[endif]
-
-[if exp="sf.KSKIP=='ON' && sf.trail_kuroda_12_3_scene1==undefined"]
-	[skipstop]
-[endif]
+;==========================================================================================
 *scene1
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
 [chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=500]
 [wait time=10]
+[プリロード画面消去]
+[wait time=50]
 
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -124,40 +137,29 @@ if (mp.name!="") {
 
 [resetfont]
 
+;【背景】主人公邸_庭
 ;【背景】庭・夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-;【背景】主人公邸_庭
-;【テキスト枠】会話パート用 下部横長
-;【立ち絵】主人公：目閉じ
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
 
+;【テキスト枠】会話パート用 下部横長
+[イベントシーン構築ボタン無し版]
+[chara_config ptext="chara_name_area"]
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+;【立ち絵】主人公：目閉じ
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公ふぅ閉]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ふぅ」[p]
@@ -704,10 +706,18 @@ if (mp.name!="") {
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
 
-@jump storage="event.ks" target=*event_owari
-
 ;回想記録終了 
 [endreplay] 
+
+*scene_end
+[if exp="tf.test_kuroda==true"]
+[イベントシーン終了]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+
+@jump storage="event.ks" target=*event_owari
+
+
 
 *window_close
 [cm]
@@ -731,7 +741,6 @@ if (mp.name!="") {
 [eval exp="sf.FButton='OFF'"]
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
-
 [layopt layer=27 visible=true]
 [wait time=10]
 [mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -742,23 +751,10 @@ if (mp.name!="") {
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 ;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
 [chara_mod name="girl_base" storage="girl/S/base.png" time=0]
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
@@ -767,9 +763,9 @@ if (mp.name!="") {
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[endif]
 @layopt layer=message0 page=fore visible=true
 [current layer="message0"]
-
 [freeimage layer = 27]
 [wait time=10]
 
