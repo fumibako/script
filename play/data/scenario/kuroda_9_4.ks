@@ -48,8 +48,7 @@
 「ありがとう、磯野」[p]
 #
 
-;【SE】パラリ(手紙を開く)
-[playse storage=paper_open.ogg loop=false ]
+
 ;テスト中は配列スキップ
 [if exp="tf.test_kuroda==true"]
 @jump target="test_kuroda_hairetu_skip"
