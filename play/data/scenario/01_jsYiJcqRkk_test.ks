@@ -7,9 +7,11 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 
 ;=============================================
 ;test
+
 ;=============================================
 [chara_mod name="bg" storage="bg/title.jpg"]
 [eval exp="tf.test_gamen=true"]
+[eval exp="tf.test_kuroda=true"]
 
 *page1
 [cm]
@@ -626,12 +628,14 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 *back_test
 [cm]
 [freeimage layer = 26]
+[eval exp="tf.test_kuroda=false"]
 @jump storage="test.ks"
 [s]
 
 *title
 [cm]
 [freeimage layer = 26]
+[eval exp="tf.test_kuroda=false"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
