@@ -104,6 +104,7 @@ if (mp.name!="") {
 
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
 ;テキスト全画面
 [font color=white size=27]
 ;主人公編
@@ -145,7 +146,7 @@ if (mp.name!="") {
 
 ;【テキスト枠】会話パート用 下部横長
 [イベントシーン構築ボタン無し版]
-[chara_config ptext="chara_name_area"]
+;[chara_config ptext="chara_name_area"]
 ;セーブ等ボタン配置
 [メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
