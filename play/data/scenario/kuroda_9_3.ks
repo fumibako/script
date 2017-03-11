@@ -257,12 +257,12 @@
 （この奥に、黒田様がいらっしゃるのね）
 [r]
 胸がドキドキと高鳴った――[p]
-
+;================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_9_3_scene5==undefined"]
 	[skipstop]
 [endif]
+;================================================================
 *scene5
-
 [resetfont]
 [fadeoutse]
 ;【SE】襖を開ける（ゆっくり）
@@ -270,26 +270,11 @@
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
-
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-
+;================================================================
+[イベントシーン構築ボタン無し版]
 ;セーブ等ボタン配置
 [if exp="sf.FButton=='ON'"]
-[else]
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 [endif]
 
@@ -303,11 +288,18 @@
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
 [wait time=10]
 ;[黒田通常]
+
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 ;【立ち絵】主人公：伏目
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 #
@@ -796,10 +788,11 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_9_3_scene11==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene11
 
 #
