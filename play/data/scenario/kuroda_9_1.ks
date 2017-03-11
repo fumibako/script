@@ -24,8 +24,6 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築ボタン無し版]
-[layopt layer=29 visible=true] 
-[layopt layer=fix visible=false] 
 [主人公ポーズ通常]
 [wait time=10]
 *from_common_9_1
@@ -33,6 +31,8 @@
 [wait time=10]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
 ;=============================================
 ;【SE】鈴虫の音
 ;[playse storage=mushi_suzumushi.ogg loop=false ]
