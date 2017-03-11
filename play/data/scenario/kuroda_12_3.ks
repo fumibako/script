@@ -277,6 +277,9 @@ $('.junbi_girl').remove();
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 #
 翌日、町にて――[p]
 
