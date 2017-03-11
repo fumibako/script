@@ -13,7 +13,13 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_kuroda.ks"]
-;ＷＥＢでもお稽古テストからでは画像がないとのエラー有り3/12 0:26
+[preload storage="data/fgimage/kuroda/base_haori_y1100.png"]
+[preload storage="data/fgimage/kuroda/base_haori_hohosome_y1100.png"]
+[preload storage="data/fgimage/kuroda/mayu_futuu_y1100.png"]
+[preload storage="data/fgimage/kuroda/me_futuu_y1100.png"]
+[preload storage="data/fgimage/kuroda/me_fusi1_y1100.png"]
+[preload storage="data/fgimage/kuroda/me_fusi2_y1100.png"]
+[preload storage="data/fgimage/kuroda/kuti_futuu_y1100.png"]
 ;==========================================================================================
 [if exp="tf.test_kuroda != true"]
 [freeimage layer = 8]
@@ -85,13 +91,7 @@
 ;==========================================================================================
 ;【背景】フェードアウト→屋敷玄関背景
 [chara_mod name="bg" storage="toumei.gif" time=1000]
-[preload storage="kuroda/base_haori_y1100.png"]
-[preload storage="kuroda/base_haori_hohosome_y1100.png"]
-[preload storage="kuroda/mayu_futuu_y1100.png"]
-[preload storage="kuroda/me_futuu_y1100.png"]
-[preload storage="kuroda/me_fusi1_y1100.png"]
-[preload storage="kuroda/me_fusi2_y1100.png"]
-[preload storage="kuroda/kuti_futuu_y1100.png"]
+
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
