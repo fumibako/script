@@ -35,7 +35,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test12" text="sansaku_machi_kuroda_04" graphic="select_waku_x500.png" size=20 width="250" x=450 y=250 color=white]
 [glink target="test13" text="sansaku_machi_kuroda_05" graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
 [glink target="test14" text="sansaku_machi_kuroda_06" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
-;[glink target="test15" text="散策イベント" graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
+[glink target="*page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
 @jump target=*cmmn
 
 *page2
@@ -56,11 +56,14 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test28" text="kuroda_12_3_badED"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
 [glink target="test29" text="kuroda_1_1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
 [glink target="test31" text="kuroda_1_4"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
-[glink target="test32" text="kuroda_2_2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450 color=white]
+[glink target="*page3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=450 y=450 color=white]
+
 @jump target=*cmmn
 
-[glink target="test33" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test34" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=150 y=100 color=white]
+*page3
+[glink target="test32" text="kuroda_2_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test33" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test34" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 
 
 *cmmn
