@@ -5,6 +5,13 @@
 [call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
 [cm]
+;正規戻るボタンから戻ってないとき回避
+[eval exp="tf.test_kuroda=false"]
+[eval exp="tf.test_sijyou=false"]
+[eval exp="tf.test_zaizen=false"]
+[eval exp="tf.test_katuraginomiya = false"]
+[eval exp="tf.test_hujieda = false"]
+
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 
 ;◆テスト設定画面表示
