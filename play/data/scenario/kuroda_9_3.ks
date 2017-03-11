@@ -43,6 +43,35 @@
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 
+;------------------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。黒田出会い前までjumpしますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*scene4
+[s]
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+;------------------------------------------------------------------
+
 ;【立ち絵】主人公：横目頬染め、片手を上げている
 [主人公横目パチ1回]
 [wait time=10]
@@ -325,6 +354,36 @@ $('.junbi_girl').remove();
 「[名字]様、お久しぶりです」
 [autosave]
 [p]
+
+;------------------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。イベント終わりまでjumpしますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+[link target=*jump_ok2]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no2]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok2
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*scene_end
+[s]
+*jump_no2
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+;------------------------------------------------------------------
+
 
 #
 耳に優しく響く声――[p]
@@ -860,6 +919,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [sp]では、またお会いしましょう」[p]
 
+
 ;見合い編終了
 [黒田退場]
 [wait time=10]
@@ -868,7 +928,7 @@ $('.junbi_girl').remove();
 [freeimage layer = 26]
 ;回想記録終了 
 [endreplay] 
-
+*seen_end
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
