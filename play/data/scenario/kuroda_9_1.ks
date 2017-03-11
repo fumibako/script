@@ -14,7 +14,7 @@
 	[skipstop]
 [endif]
 ;=============================================
-*scene1
+*scene1_1
 [freeimage layer = 24]
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
@@ -34,7 +34,7 @@
 [メッセージウィンドウ上ボタン表示]
 [layopt layer=29 visible=true] 
 ;=============================================
-*scene1_1
+*scene1
 ;【SE】鈴虫の音
 ;[playse storage=mushi_suzumushi.ogg loop=false ]
 ;【立ち絵】主人公：目閉じ
