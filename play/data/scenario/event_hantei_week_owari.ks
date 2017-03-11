@@ -15,6 +15,10 @@
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30"]
 	@jump target=*event_hantei_week_owari
 [endif]
+;◆葛城宮のお見合いを断っているときは抜ける
+[if exp="f.katuraginomiya_konyaku == false"]
+	@jump target=*event_hantei_week_owari
+[endif]
 
 ;◆葛城宮の判定を満たしている場合　判定処理に飛ぶ。穴があると9/1でお知らせする
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_katuraginomiya_koukando >= 20 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
