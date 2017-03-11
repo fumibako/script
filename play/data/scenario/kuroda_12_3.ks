@@ -11,6 +11,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_kuroda.ks"]
+[preload storage="data/fgimage/bg/white.jpg"]
 ;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
@@ -387,6 +388,8 @@ $('.junbi_girl').remove();
 ;[chara_mod name="bg_effect" storage="toumei.gif" time=100]
 ;[wait time=10]
 ;【効果】可能なら、全画面にガラスが割れ落ちるような、又は白い破片的なものが崩れ落ちるようなアニメーション挿入。実装困難なら省略
+;このあとがフリーズしやすいのでclearstack
+[clearstack]
 
 【黒田 将貴】[r]
 [r]
