@@ -11,6 +11,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_kuroda.ks"]
+[preload storage="data/fgimage/bg/bg_bluesky.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_winter_forest_yuu.jpg" wait=true]
+[preload storage="data/fgimage/bg_shinrinkouen_gate_winter.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_biwa_tree.jpg" wait=true]
 ;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
@@ -77,10 +81,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。行って参ります」[p]
 
+;==========================================================================================
 ;【背景】青空（秋晴れ）又はフェードアウトのまま
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
-
+;==========================================================================================
 ;【立ち絵】主人公：通常
 [主人公閉目パチ1回]
 [wait time=10]
@@ -109,6 +114,7 @@
 [wait time=10]
 [主人公通常]
 [wait time=10]
+;==========================================================================================
 ;【背景】公園の門フェードイン
 [chara_mod name="bg" storage="bg/bg_shinrinkouen_gate_winter.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
@@ -116,6 +122,7 @@
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_11_2_scene2==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene2
 ;【立ち絵】黒田：遠_疲れ
 [chara_delete name="kuroda_base"]
@@ -169,11 +176,11 @@
 「公園の木々も、冬支度をはじめていますよ」[p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
 [wait time=10]
-
+;==========================================================================================
 ;【背景】冬の木々
 [chara_mod name="bg" storage="bg/bg_winter_forest.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　Eddy BERTHIER　https://www.flickr.com/photos/didy_b/16022666269/'"]
-
+;==========================================================================================
 ;【立ち絵】主人公：通常
 [主人公目パチ1回]
 [wait time=10]
@@ -318,10 +325,11 @@
 [sp]近くに寄ってみましょう」
 [autosave]
 [p]
+;==========================================================================================
 ;【背景】（あれば）ビワの樹フェードイン。無ければ変更なし
 [chara_mod name="bg" storage="bg/bg_biwa_tree.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　Mike Petrucci　https://www.flickr.com/photos/scrappapervlog/17598158185/'"]
-
+;==========================================================================================
 ;【立ち絵】黒田：通常
 [黒田通常]
 [wait time=10]
