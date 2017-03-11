@@ -34,6 +34,7 @@
 [メッセージウィンドウ上ボタン表示]
 [layopt layer=29 visible=true] 
 ;=============================================
+*scene1_1
 ;【SE】鈴虫の音
 ;[playse storage=mushi_suzumushi.ogg loop=false ]
 ;【立ち絵】主人公：目閉じ
