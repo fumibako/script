@@ -489,6 +489,7 @@
 [anim name="message_load" opacity=0 time=1]
 [anim name="message_backlog" opacity=0 time=1]
 [anim name="message_skip" opacity=0 time=1]
+[anim name="message_close" opacity=0 time=1]
 [endmacro]
 
 ;機能ボタン表示
@@ -498,6 +499,7 @@
 [anim name="message_load" opacity=255 time=1]
 [anim name="message_backlog" opacity=255 time=1]
 [anim name="message_skip" opacity=255 time=1]
+[anim name="message_close" opacity=255 time=1]
 [endmacro]
 
 [return]
