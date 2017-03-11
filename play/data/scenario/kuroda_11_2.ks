@@ -1033,10 +1033,16 @@
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
 
-@jump storage="event.ks" target=*event_owari
-
 ;回想記録終了 
 [endreplay]
+
+[if exp="tf.test_kuroda==true"]
+[イベントシーン終了]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+@jump storage="event.ks" target=*event_owari
+
+
 
 *window_close
 [cm]
