@@ -12,7 +12,8 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_kuroda.ks"]
+;[call target=*start storage="macro_tati_kuroda.ks"]
+;↑画像がないとのエラーがでるため追加したが再度コメント化
 ;==========================================================================================
 [if exp="tf.test_kuroda != true"]
 [freeimage layer = 8]
@@ -68,8 +69,11 @@
 「お嬢様、黒田様がお迎えにお越しでございます」
 [autosave]
 [p]
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：ほほえみ
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
@@ -78,7 +82,7 @@
 「ありがとう、磯野」[r]
 手早く身支度を確認し、部屋を出る。
 [p]
-
+;==========================================================================================
 ;【背景】フェードアウト→屋敷玄関背景
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [preload storage="kuroda/base_haori_y1100.png"]
@@ -101,15 +105,16 @@
 [wait time=10]
 ;【SE】軽い足音（フェードアウト）
 [playse storage=girl_out_walk.ogg loop=false ]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene2==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene2
-
 ;【背景】フェードアウト→屋敷玄関背景
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [wait time=10]
+;==========================================================================================
 ;【立ち絵】黒田：ほほえみ
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
 [wait time=10]
@@ -182,10 +187,11 @@
 「寒いですから、もう出発してしまいましょうか」
 [autosave]
 [p]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene4==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene4
 
 [主人公目パチ1回]
@@ -251,9 +257,10 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （もう、磯野……）[p]
-
+;==========================================================================================
 ;【背景】町並みフェードイン
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
+;==========================================================================================
 ;【立ち絵】黒田：通常(近
 [chara_mod name="kuroda_mayu" storage="kuroda/mayu_futuu_y1100.png" time=0]
 [wait time=10]
@@ -263,10 +270,11 @@
 [wait time=10]
 [chara_mod name="kuroda_emo" storage="toumei.gif" time=0]
 [wait time=10]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene5==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene5
 ;【立ち絵】主人公：通常
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -302,10 +310,11 @@
 遠目にも美しい紅色が見えてきた。[p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]
 [wait time=10]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene6==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene6
 
 ;【立ち絵】黒田：ほほえみ
