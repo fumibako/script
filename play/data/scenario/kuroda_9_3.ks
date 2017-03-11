@@ -6,6 +6,9 @@
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+;[call target=*start storage="tyrano.ks"]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
 ;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
