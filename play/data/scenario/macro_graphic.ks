@@ -415,6 +415,22 @@
 
 [endmacro]
 
+;[手紙黒田読了]
+[macro name="手紙黒田読了"]
+;eval
+[freeimage layer = 29 time=500]
+;機能ボタン表示
+[if exp="sf.FButton!='OFF'"]
+;機能ボタン表示
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+[endif]
+;画面切り替え、手紙画面→通常会話パート
+;【テキスト枠】会話パート用 下部横長
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[resetfont]
+[endmacro]
+
 ;==============================
 ; メッセージ窓マクロ設定-メッセージ枠画像:(layer10)
 ;==============================
