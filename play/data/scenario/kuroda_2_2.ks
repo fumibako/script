@@ -12,8 +12,8 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-;[call target=*start storage="macro_tati_kuroda.ks"]
-;↑画像がないとのエラーがでるため追加したが再度コメント化
+[call target=*start storage="macro_tati_kuroda.ks"]
+;ＷＥＢでもお稽古テストからでは画像がないとのエラー有り3/12 0:26
 ;==========================================================================================
 [if exp="tf.test_kuroda != true"]
 [freeimage layer = 8]
@@ -473,12 +473,15 @@
 [anim name="kuroda_kuti" left=210 top=30 time=0]
 [anim name="kuroda_emo" left=210 top=30 time=0]
 [wa]
+;==========================================================================================
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば小料理屋店内風背景
 [eval exp="f.haikei_credit='photo by Omar + Kazumi Ovalle　http://www.flickr.com/photos/ovalle/4664496288/'"]
 [chara_mod name="bg" storage="bg/bg_koryouriya.jpg" time=1000]
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene11==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene11
 [主人公目パチ1回]
 [wait time=10]
@@ -575,12 +578,12 @@
 「たしかに、このヒレの鮮やかさは振袖みたいですね」[p]
 [主人公閉目パチ1回]
 [wait time=10]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene12==undefined"]
 	[skipstop]
 [endif]
 *scene12
-
+;==========================================================================================
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -687,10 +690,11 @@
 [主人公通常]
 [wait time=10]
 「『ご報告』とは何でしょうか？」[p]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene14==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene14
 ;【立ち絵】黒田：目閉じ
 [chara_mod name="kuroda_me" storage="kuroda/me_fusi1_y1100.png" time=0]
@@ -744,10 +748,11 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……そうだったのですか」[p]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene15==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene15
 [黒田目パチ1回L]
 [wait time=10]
@@ -785,9 +790,11 @@
 「まぁ……そうおっしゃっていただいて[r]
 [sp]麦も幸せ者ですね」[p]
 
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene16==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene16
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -814,8 +821,10 @@
 [wait time=30]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake_y1100.png" time=0]
 [wait time=10]
+;==========================================================================================
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば小料理屋店内風背景
 [chara_mod name="bg" storage="bg/bg_koryouriya.jpg" time=1000]
+;==========================================================================================
 [whosay name="黒田 将貴" color="#7a65b2"]
 「そしてご報告なのですが」[p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]
