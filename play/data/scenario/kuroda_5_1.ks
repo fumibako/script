@@ -110,7 +110,10 @@
 [イベントシーン終了]
 [endif]
 
+[if exp="tf.test_sijyou==true"]
+[イベントシーン終了]
 @jump storage="test_sijyou.ks"
+[endif]
 
 [s]
 *window_close
