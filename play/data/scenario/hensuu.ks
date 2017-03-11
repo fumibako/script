@@ -59,7 +59,7 @@ f.fumi_hituyou_kiryoku=8;
 f.fumi_toutyaku=0;
 f.fumi_toutyaku_oaite=[];
 f.fumi_henji=0; //返信機能を使ったかどうかの変数。一度でも返信したら1を代入(fumi_wadai.ks*fumi_okで使用)
-
+f.omiai_kettei2 = 0; //見合い候補の誰かが決定したらeventで1が一回入る
 //◆EDパラメータ
 sf.ED_kuroda_bad=0;
 sf.ED_kuroda_normal=0;
