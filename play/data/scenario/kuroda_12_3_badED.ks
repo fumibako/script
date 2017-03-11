@@ -150,6 +150,9 @@ $('.junbi_girl').remove();
 ;画面切り替え【背景】「主人公邸」
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;主人公復帰表情目閉じ　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [eval exp="f.kaogura='on'"]
 [主人公ポーズ通常]
 [wait time=10]
@@ -159,7 +162,9 @@ $('.junbi_girl').remove();
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 ;==========================================================================================
 
 [whosay name="磯野" color="dimgray"]
@@ -214,9 +219,16 @@ $('.junbi_girl').remove();
 
 
 ;【BGM】雪解水（哀しげな曲
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true click=true]
+;[playbgm storage="kanasige_yukigemizu.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
+
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
 ;メッセージレイヤを全画面用に設定変更
+[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=1000]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 
 ;テキスト全画面
