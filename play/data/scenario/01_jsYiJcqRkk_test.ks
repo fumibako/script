@@ -66,6 +66,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test32" text="kuroda_2_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test33" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test34" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="common_9_1" text="common_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 
 [glink target="*page2" text="page2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
 [glink target="*page1" text="page1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450 color=white]
@@ -624,6 +625,18 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 @jump storage="kuroda_3_4_goodED.ks"
 [s]
 
+*common_9_1
+[link target=y]好感度を全て１００にします[endlink][r]
+[link target=page1]もどる[endlink][s]
+*y
+[iscript]
+f.para_kuroda_koukando=100;
+f.para_sijyou_koukando=100;
+f.para_zaizen_koukando=100;
+f.para_shujinkou_shukujodo=200;
+[endscript]
+@jump storage=common_9_1.ks target="*replay_common_9_1"
+[s]
 
 *back_test
 [cm]
