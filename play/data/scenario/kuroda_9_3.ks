@@ -323,7 +323,7 @@ jumpします。[p]
 [eval exp="sf.FButton='ON'"]
 [endif]
 
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 ;【立ち絵】主人公：伏目
 [主人公ポーズ通常]
@@ -933,7 +933,7 @@ jumpします。[p]
 [freeimage layer = 26]
 ;回想記録終了 
 [endreplay] 
-*seen_end
+*scene_end
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
