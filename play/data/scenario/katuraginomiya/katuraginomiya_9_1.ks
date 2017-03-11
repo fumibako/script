@@ -494,7 +494,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 *seen_end0
 [eval exp="f.event_oaite_mitei=0"]
 [eval exp="f.katuraginomiya_au=1"]
-;共通お相手決定フラグ　９＿１判定をスキップする
+;共通お相手決定フラグ　９＿１判定をスキップする 
 [eval exp="f.omiai_kettei2 =1"]
 ;===================================================================================
 ;スクリプト・全画面表示からの復帰準備へ飛ぶ 初期化
