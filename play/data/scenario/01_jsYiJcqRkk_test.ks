@@ -63,7 +63,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 @jump target=*cmmn
 
 *page3
-[glink target="test32" text="kuroda_2_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test32" text="kuroda_2_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test33" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test34" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="common_9_1" text="common_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
@@ -626,8 +626,9 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [s]
 
 *common_9_1
-[link target=y]好感度を全て１００にします[endlink][r]
-[link target=page1]もどる[endlink][s]
+[glink target=y text="お見合い候補の好感度を全て１００にします" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=page1 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150]
+[s]
 *y
 [iscript]
 f.para_kuroda_koukando=100;
