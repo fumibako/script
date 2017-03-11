@@ -201,7 +201,7 @@
 [華衣]へ[r]
 [image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=300 top=200 time=1500 wait=false]
 ；うっすら
-[isvript]
+[iscript]
 $(".nerine").css("opacity",0.5);
 [endscript]
 「もともと私の身体は長くなかったようです。[r]
