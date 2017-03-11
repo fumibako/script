@@ -46,8 +46,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう、磯野」[p]
 #
-;【SE】パラリ(手紙を開く)
-[playse storage=paper_open.ogg loop=false ]
+
 
 ;◆テスト中は配列スキップ
 [if exp="tf.test_kuroda==true"]
