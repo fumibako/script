@@ -57,8 +57,12 @@ $(".rp_bt").remove();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ふぅ」[p]
-;【BGM】冬支度（悲しげ・筝曲）
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】冬支度
 [playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
+[endif]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -188,8 +192,7 @@ $('.junbi_girl').remove();
 [endif]
 *scene3
 
-;【SE】パラリ(手紙を開く)
-[playse storage=paper_open.ogg loop=false ]
+
 [主人公退場]
 [wait time=10]
 [fadeoutbgm time=3000]
