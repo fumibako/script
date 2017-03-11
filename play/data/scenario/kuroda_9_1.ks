@@ -2,11 +2,8 @@
 ;◆黒田イベント４章【実際に会う事を決める】9月1週、お相手選択で「黒田」を選ぶと発生
 ;=============================================
 *replay_kuroda_9_1
-[layopt layer=29 visible=true] 
-[layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
-
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -15,9 +12,9 @@
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_9_1_scene1==undefined"]
 	[skipstop]
 [endif]
+;=============================================
 *scene1
 [freeimage layer = 24]
-
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -26,34 +23,34 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
-
+[イベントシーン構築ボタン無し版]
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
 [主人公ポーズ通常]
 [wait time=10]
 *from_common_9_1
 [主人公通常]
 [wait time=10]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;=============================================
 ;【SE】鈴虫の音
 ;[playse storage=mushi_suzumushi.ogg loop=false ]
 ;【立ち絵】主人公：目閉じ
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-[プリロード画面消去]
+
 [if exp="tf.test_gamen==true"]
 テストページから開始しています。イベント終わりまでjumpしますか？[r]
-
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
-
 [link target=*jump_ok]は　　　い[endlink][r]
 [r][r][r]
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
-[プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
 [s]
 
 
@@ -306,10 +303,16 @@ jumpします。[p]
 [freeimage layer = 26]
 [eval exp="f.kuroda_au = 1"]
 [eval exp="f.event_oaite_mitei = 0"]
-@jump storage="event.ks" target=*event_owari
-
 ;回想記録終了 
 [endreplay] 
+
+[if exp="tf.test_kuroda==true"]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[イベントシーン終了]
+[endif]
+
+@jump storage="event.ks" target=*event_owari
+
 
 *window_close
 [cm]
@@ -343,21 +346,7 @@ jumpします。[p]
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 ;メッセージレイヤを表示
 [if exp="f.kaogura!='off'"]
