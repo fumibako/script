@@ -626,8 +626,8 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [s]
 
 *common_9_1
-[glink target=y text="お見合い候補の好感度を全て１００にします" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=page1 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150]
+[glink target=y text="お見合い候補の好感度を全て１００にします" graphic="select_waku_x500.png" size=10 width="250" x=100 y=100 color=white]
+[glink target=page1 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [s]
 *y
 [iscript]
