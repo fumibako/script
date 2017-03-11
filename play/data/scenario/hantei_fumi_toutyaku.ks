@@ -835,7 +835,7 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 ;=============================================
 ;◆葛城宮進行不可で他の攻略キャラと見合いをきめた場合　最後の手紙2_2　【上でスキップされる】
-[if exp="f.omiai_kettei2 == 1 && (f.okeiko_month == 9 && f.okeiko_week == 2) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && f.katuraginomiya_au == 0"]
+[if exp="f.sijyou_au != 1 && f.omiai_kettei2 == 1 && (f.okeiko_month == 9 && f.okeiko_week == 2) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && f.katuraginomiya_au == 0"]
 ;9/1に手紙は入らないので9/2　最後の手紙2_1　発生藤枝auは判定しない
 	[eval exp="f.event_katuraginomiya[23]=1"]
 	[eval exp="f.event_katuraginomiya[22]=1"]
