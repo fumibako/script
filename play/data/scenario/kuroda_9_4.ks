@@ -72,22 +72,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endscript]
 
 *test_kuroda_hairetu_skip
-
-;[if exp="tf.test_kuroda==true"]
 [手紙黒田]
-;[else]
-;機能ボタン消去
-;[clearfix]
-;[eval exp="sf.FButton='OFF'"]
-;[freeimage layer = 27]
-;[freeimage layer = 28]
-;[freeimage layer = 29]
-;[layopt layer=29 visible=true]
-;背景変更:手紙
-;[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg" time=500]
-;[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-;[endif]
-
 [名字] [名前]様[r]
 [r]
 [sp]秋の気配が濃くなりましたね。[r]
@@ -101,8 +86,11 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 ;[iscript]
 ;[endscript]
-;◆黒田読了配列セット
+[if exp="tf.test_kuroda != true"]
+;◆黒田読了配列セット シナリオのみのテスト中はスキップ
 [eval exp="f.midoku_list_hairetsu[0][13] = 0;"]
+[endif]
+
 [手紙黒田読了]
 
 ;【立ち絵】主人公：ほほえみ
