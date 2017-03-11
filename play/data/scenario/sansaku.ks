@@ -1193,11 +1193,18 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("さつきの話題",2,0,0,1
 [autosave]
 [p]
 
+;主人公復帰表情　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 ;【立ち絵】主人公：ほほえみ
 [主人公ポーズ通常]
 [wait time=10]
 [主人公ほほえみ]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえいえ、私はお手伝いしただけです」[p]
 
