@@ -11,7 +11,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [chara_mod name="bg" storage="bg/title.jpg"]
 [eval exp="tf.test_gamen=true"]
 
-
+*page1
 [cm]
 [layopt layer=26 visible=true]
 [wait time=10]
@@ -36,7 +36,34 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test13" text="sansaku_machi_kuroda_05" graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
 [glink target="test14" text="sansaku_machi_kuroda_06" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
 ;[glink target="test15" text="散策イベント" graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
+@jump target=*cmmn
 
+*page2
+[glink target="test16" text="kuroda_5_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test17" text="kuroda_6_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test18" text="kuroda_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="test16" text="kuroda_9_3"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test19" text="kuroda_9_4"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="test20" text="kuroda_10_3"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test21" text="kuroda_10_4"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test22" text="kuroda_11_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test23" text="kuroda_11_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+
+[glink target="test24" text="kuroda_11_3"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=100 color=white]
+[glink target="test25" text="kuroda_11_4"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=150 color=white]
+[glink target="test26" text="kuroda_12_2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=200 color=white]
+[glink target="test27" text="kuroda_12_3"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=250 color=white]
+[glink target="test28" text="kuroda_12_3_badED"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
+[glink target="test29" text="kuroda_1_1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
+[glink target="test31" text="kuroda_1_4"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
+[glink target="test32" text="kuroda_2_2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450 color=white]
+@jump target=*cmmn
+
+[glink target="test33" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target="test34" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=150 y=100 color=white]
+
+
+*cmmn
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 
@@ -416,6 +443,180 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_tati_girl.ks"]
 @jump storage="sansaku.ks"
 [s]
+
+*test16
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_5_1.ks"
+[s]
+
+*test17
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_6_2.ks"
+[s]
+
+
+*test18
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_9_1.ks"
+[s]
+
+*test19
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_9_3.ks"	
+[s]
+
+*test20
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_9_4.ks"
+[s]
+
+
+*test21
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_10_3.ks"	
+[s]
+
+*test22
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_10_4.ks"
+[s]
+
+*test23
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_11_1.ks"
+[s]
+
+*test24
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_11_2.ks"
+[s]
+
+*test25
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_11_3.ks"
+[s]
+
+*test26
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_11_4.ks"
+[s]
+
+*test27
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_12_2.ks"
+[s]
+
+*test28
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_12_3.ks"
+[s]
+
+*test29
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_12_3_badED.ks"
+[s]
+
+*test30
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_1_1.ks"
+[s]
+
+*test31
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_1_4.ks"
+[s]
+
+*test32
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_2_2.ks"
+[s]
+
+*test33
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_3_4_normalED.ks"
+[s]
+
+*test34
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="kuroda_3_4_goodED.ks"
+[s]
+
 
 *back_test
 [cm]
