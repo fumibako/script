@@ -1259,6 +1259,8 @@ f.hensin_list_hairetsu[3][26] = -1; //←返信ボタンを非表示に
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
 ;=============================================
+;『 最後の手紙』
+;=============================================
 *katuraginomiya_fumi_last
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最後の手紙」　葛城宮 晴仁";
@@ -1274,6 +1276,50 @@ f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi_last");
 f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
 f.fumi_toutyaku_katuraginomiya[30]=1;
 f.hensin_list_hairetsu[3][29] = -1; 
+//返信ボタンを非表示に
+f.katuraginomiya_fumi_start=0;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
+;=============================================
+;『 最後の手紙２』2_1
+;=============================================
+*katuraginomiya_fumi_last_2_1
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最後の手紙」　葛城宮 晴仁";
+f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「最後の手紙」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*katuraginomiya_fumi_last_2_1");
+f.fumi_list_all_location_taishou.push(3);
+f.fumi_list_all_location_fumi.push(30);
+f.fumi_list_katuraginomiya_location_fumi.push(30);
+f.fumi_list_katuraginomiya_title.push(f.fumi_katuraginomiya_title_new);
+f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi_last_2_1");
+f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
+f.fumi_toutyaku_katuraginomiya[31]=1;
+f.hensin_list_hairetsu[3][30] = -1; 
+//返信ボタンを非表示に
+f.katuraginomiya_fumi_start=0;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
+;=============================================
+;『 最後の手紙２』2_2
+;=============================================
+*katuraginomiya_fumi_last_2_2
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「最後の手紙」　葛城宮 晴仁";
+f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「最後の手紙」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*katuraginomiya_fumi_last_2_2");
+f.fumi_list_all_location_taishou.push(3);
+f.fumi_list_all_location_fumi.push(31);
+f.fumi_list_katuraginomiya_location_fumi.push(31);
+f.fumi_list_katuraginomiya_title.push(f.fumi_katuraginomiya_title_new);
+f.fumi_list_katuraginomiya_target.push("*katuraginomiya_fumi_last_2_2");
+f.katuraginomiya_fumi_henjimachi=f.katuraginomiya_fumi_henjimachi+1;
+f.fumi_toutyaku_katuraginomiya[32]=1;
+f.hensin_list_hairetsu[3][31] = -1; 
 //返信ボタンを非表示に
 f.katuraginomiya_fumi_start=0;
 [endscript]
