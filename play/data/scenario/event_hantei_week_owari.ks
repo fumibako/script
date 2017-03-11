@@ -5,7 +5,7 @@
 ;=============================================
 ;◆共通イベント判定
 ;=============================================
-;◆葛城宮　最後の手紙処理　event_hantei_week_owariに飛ぶ 
+;◆葛城宮　最後の手紙を見ている場合は　event_hantei_week_owariにスキップ 
 [if exp="f.event_oaite_mitei == 1 && f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1"]
 ;葛城宮　最後の手紙処理
 @jump target=*event_hantei_week_owari
@@ -15,6 +15,12 @@
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30"]
 	@jump target=*event_hantei_week_owari
 [endif]
+
+;◆お見合いが決定している場合は抜ける
+[if exp="f.omiai_kettei2 == 1"]
+@jump target=*event_hantei_week_owari
+[endif]
+
 ;◆葛城宮のお見合いを断っているときは抜ける
 [if exp="f.katuraginomiya_konyaku == false"]
 	@jump target=*event_hantei_week_owari
