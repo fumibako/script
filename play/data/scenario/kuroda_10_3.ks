@@ -9,6 +9,7 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_kuroda.ks"]
 [preload storage="data/fgimage/bg/bg_shinrinkouen_gate_yuu.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_kouyou_ussou.jpg" wait=true]
