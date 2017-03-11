@@ -211,9 +211,16 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 
 （黒田様も、気に入ってくださるかしら）[p]
 ;【部分分岐】梅柄の便せんに梅の香を焚き染めたもの【終了】
-
+;==========================================================================================
+[if exp="tf.test_kuroda == true"]
+[イベントシーン終了]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+;手紙編終了
+;◆「休憩中」画像消去
+[freeimage layer = 26]
 @jump storage="event.ks" target=*event_owari
-
+;==========================================================================================
 *kuroda_1_4_sentaku01_c
 ;【部分分岐】梅にうぐいす柄の便せん【開始】
 ;【黒田好感度】+1
@@ -245,7 +252,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 
 ;【部分分岐】梅にうぐいす柄の便せん【終了】
 ;==========================================================================================
-[if exp="tf.test_kuroda==true"]
+[if exp="tf.test_kuroda == true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
