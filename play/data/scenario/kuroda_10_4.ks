@@ -2,6 +2,14 @@
 ;◆黒田イベント【手紙が届く：散策お誘い】黒田ルートかつ10月4週になった時点で1度だけ発生
 ;=============================================
 *replay_kuroda_10_4
+;[call target=*start storage="tyrano.ks"]
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -10,40 +18,21 @@
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_10_4_scene1==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene1
-
 [stopbgm]
 [背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
-
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
-
+[イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
-[wait time=10]
-
+[プリロード画面消去]
+;セーブ等ボタン配置
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+;==========================================================================================
+*scene1_1
 [whosay name="磯野" color="dimgray"]
 「お嬢様、黒田様からお手紙でございます」
 [autosave]
@@ -58,6 +47,12 @@
 #
 ;【SE】パラリ(手紙を開く)
 [playse storage=paper_open.ogg loop=false ]
+
+;◆テスト中は配列スキップ
+[if exp="tf.test_kuroda==true"]
+@jump target="test_kuroda_hairetu_skip"
+[endif]
+
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「散策お誘い」　黒田 将貴";
 f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「散策お誘い」";
@@ -77,16 +72,8 @@ f.hensin_list_hairetsu[0][14]=1;
 f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endscript]
 
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg" time=500]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+*test_kuroda_hairetu_skip
+[手紙黒田]
 [名字] [名前]様[r]
 [r]
 [sp]日毎に寒さが加わるこのごろですね。[r]
@@ -101,29 +88,13 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [iscript]
 [endscript]
+;◆テスト中は配列スキップ
+[if exp="tf.test_kuroda != true"]
 [eval exp="f.midoku_list_hairetsu[0][14] = 0;"]
-[freeimage layer = 29 time=500]
-;機能ボタン表示
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
+[endif]
+[手紙黒田読了]
 
-;画面切り替え、手紙画面→通常会話パート
-;【テキスト枠】会話パート用 下部横長
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+
 ;【立ち絵】主人公：笑顔
 [主人公笑顔]
 [wait time=10]
@@ -155,10 +126,10 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
 
-@jump storage="event.ks" target=*event_owari
-
 ;回想記録終了 
-[endreplay] 
+[endreplay]
+
+@jump storage="event.ks" target=*event_owari
 
 *window_close
 [cm]
@@ -192,21 +163,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 ;メッセージレイヤを表示
 [if exp="f.kaogura!='off'"]
@@ -225,4 +182,3 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [wait time=10]
 
 [return]
- 
