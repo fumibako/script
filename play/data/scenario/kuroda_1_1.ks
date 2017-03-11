@@ -2,6 +2,15 @@
 ;◆黒田イベント【手紙が届く：年賀状】黒田ルートかつ1月1週になった時点で1度だけ発生
 =============================================
 *replay_kuroda_1_1
+;[call target=*start storage="tyrano.ks"]
+[layopt layer=29 visible=true] 
+[layopt layer=fix visible=false] 
+[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -10,14 +19,15 @@
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_1_scene1==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene1
-
 [stopbgm]
 [chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=500]
 [wait time=10]
-
+[プリロード画面消去]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
 
 ;テキスト全画面
 [font color=white size=27]
@@ -27,10 +37,13 @@
 ;【BGM】主人公邸通常会話パート用
 
 #
-――新年を迎えた。[l][r]
-;【BGM】めでたく候（お正月）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです→フリーズとクリック待ちが発生するためclick=trueを撤去中
+――新年を迎えた。[l]
+[if exp="sf.BGM=='ON'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
 [playbgm storage="oshougatsu_medetaku.ogg" loop=true]
-
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+[endif]
+[r]
 [r]
 澄みわたった青空のもと[r]
 召使い達の陽気な掛け声に[r]
@@ -50,41 +63,20 @@
 [p]
 [resetfont]
 
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_1_scene2==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene2
-
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[暗転２ storage="bg/room_niwa.jpg" clegit=true]
 ;【背景】主人公邸_庭、フェードイン
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=500]
-
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 ;【テキスト枠】会話パート用 下部横長
+[イベントシーン構築ボタン無し版]
+;=========================================================================================
 ;【立ち絵】主人公：伏目
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-;[locate x=900 y=390]
-;[button name="message_close" graphic="button_message_close.png" role=message ]
-[eval exp="sf.FButton='ON'"]
-
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;[chara_show left=1 top=391 layer=10 name="message_bg"]
-
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true click=true]
-
 [主人公ポーズ指]
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -93,9 +85,20 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[暗転２終了]
+;セーブ等ボタン配置
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+;=========================================================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……。[r]
 [sp]……黒田様は、いかがお過ごしかしら」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 
 ;【立ち絵】主人公：目閉じ
 [chara_mod name="girl_me" storage="girl/S/me_fusi2.png" time=0]
@@ -126,9 +129,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ふぅ」[p]
 
+;=========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_1_scene3==undefined"]
 	[skipstop]
 [endif]
+;=========================================================================================
 *scene3
 
 ;【SE】落ち着いた足音（フェードイン）
@@ -161,9 +166,11 @@
 （お友達の華やかな年賀状を見るのも、なんだかつらいわ……）[r]
 手つきも重く受け取ろうとして――[p]
 
+;=========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_1_scene4==undefined"]
 	[skipstop]
 [endif]
+;=========================================================================================
 *scene4
 #
 ;【立ち絵】主人公：驚
@@ -233,10 +240,11 @@
 ;【SE】落ち着いた足音（フェードアウト）
 [playse storage=isono_out.ogg loop=false ]
 [wait time=500]
-
+;=========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_1_scene5==undefined"]
 	[skipstop]
 [endif]
+;=========================================================================================
 *scene5
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
@@ -244,15 +252,16 @@
 [主人公退場]
 [wait time=10]
 ;機能ボタン消去
-[anim name="message_save" opacity=0 time=0]
-[anim name="message_load" opacity=0 time=0]
-[anim name="message_backlog" opacity=0 time=0]
-[anim name="message_skip" opacity=0 time=0]
+[機能ボタン消]
 [eval exp="sf.FButton='OFF'"]
 [chara_mod name="message_bg" storage="toumei.gif"]
 [wait time=10]
 [chara_mod name="bg" storage="toumei.gif" time=500]
-
+;◆テスト中は配列スキップ
+[if exp="tf.test_kuroda==true"]
+@jump target="test_kuroda_hairetu_skip"
+[endif]
+;=========================================================================================
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「年賀状」　黒田 将貴";
 f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「年賀状」";
@@ -271,7 +280,8 @@ f.fumi_kuroda_number=f.fumi_kuroda_number + 1;
 f.hensin_list_hairetsu[0][15]=1;
 f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endscript]
-
+*test_kuroda_hairetu_skip
+;=========================================================================================
 ;黒田より年賀状
 ;【背景】年賀状画像（黒田）表示（こちらで作成予定：ハガキ上部に「謹賀新年」の文字と四葉のクローバーの押し花風画像が入るシンプルなもの。ハガキ下部に縦書下記テキスト挿入）
 [chara_mod name="bg" storage="bg/nengajou_kuroda.jpg" time=500]
@@ -280,6 +290,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 @layopt layer=message0 page=fore visible=true
 [position vertical=true]
 [font color=black size=20]
+;=========================================================================================
 [sp]昨年末には多大な励ましを[r]
 いただき、ありがとうございました[r]
 [sp]おかげさまで、研究に光明が[r]
@@ -296,7 +307,10 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [p]
 [position vertical=false]
 [resetfont]
+;=========================================================================================
+[if exp="tf.test_kuroda != true"]
 [eval exp="f.midoku_list_hairetsu[0][15] = 0;"]
+[endif]
 
 ;画面切り替え、→通常会話パート
 ;【背景】主人公邸_庭、フェードイン
@@ -308,11 +322,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [wait time=10]
 ;機能ボタン登場
-[anim name="message_save" opacity=255 time=0]
-[anim name="message_load" opacity=255 time=0]
-[anim name="message_backlog" opacity=255 time=0]
-[anim name="message_skip" opacity=255 time=0]
+[機能ボタン表示]
 [eval exp="sf.FButton='ON'"]
+;=========================================================================================
 ;【立ち絵】主人公：通常
 [主人公ポーズ通常]
 [wait time=10]
@@ -326,10 +338,11 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 #
 裏面に『母の体調も落ち着きました。[r]
 その節はご心配をおかけしました』とも記されている。[p]
-
+;=========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_1_scene6==undefined"]
 	[skipstop]
 [endif]
+;=========================================================================================
 *scene6
 
 ;【立ち絵】主人公：目閉じ
@@ -365,8 +378,66 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
+;回想記録終了 
+[endreplay] 
+*scene_end
+[if exp="tf.test_kuroda==true"]
+[イベントシーン終了]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
 
 @jump storage="event.ks" target=*event_owari
 
-;回想記録終了 
-[endreplay] 
+
+
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
