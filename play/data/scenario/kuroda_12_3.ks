@@ -137,13 +137,12 @@ if (mp.name!="") {
 [playse storage=pen_write.ogg loop=false ]
 
 [resetfont]
-
+;==========================================================================================
 ;【背景】主人公邸_庭
 ;【背景】庭・夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-
-
+;==========================================================================================
 ;【テキスト枠】会話パート用 下部横長
 [イベントシーン構築ボタン無し版]
 ;[chara_config ptext="chara_name_area"]
@@ -218,6 +217,7 @@ $('.junbi_girl').remove();
 「これは……」[p]
 [fadeoutbgm time=3000]
 #
+;==========================================================================================
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
@@ -226,7 +226,7 @@ $('.junbi_girl').remove();
 ;【立ち絵】消去
 [主人公退場]
 [wait time=10]
-
+;==========================================================================================
 ;暗転
 [chara_mod name="bg" storage="toumei.gif" time=500]
 [wait time=10]
@@ -244,39 +244,34 @@ $('.junbi_girl').remove();
 ;ゆっくり暗転
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [wait time=10]
+;==========================================================================================
 ;【BGM】冬支度（悲しげ・筝曲）
 [stopbgm]
-[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】冬支度
+[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
+[endif]
 ;画面切り替え、【背景】「町並み」
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [wait time=10]
+;==========================================================================================
 ;【テキスト枠】会話パート用 下部横長
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
 [wait time=10]
 ;機能ボタン登場
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_12_3_scene4==undefined"]
 	[skipstop]
 [endif]
-
+;==========================================================================================
 *scene4
+;【立ち絵】主人公：目閉じ
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 ;【立ち絵】主人公：通常
 [主人公ポーズ通常]
 [wait time=10]
@@ -316,12 +311,13 @@ $('.junbi_girl').remove();
 #
 [主人公退場]
 [wait time=10]
-
+;==========================================================================================
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 [chara_mod name="message_bg" storage="toumei.gif"]
 [wait time=10]
+;==========================================================================================
 ;暗転
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [wait time=10]
@@ -332,12 +328,12 @@ $('.junbi_girl').remove();
 ;背景（効果）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_new name="bg_effect" storage="toumei.gif"]
 [chara_show left=1 top=1 layer=2 name="bg_effect"]
-
+;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_12_3_scene5==undefined"]
 	[skipstop]
 [endif]
+;==========================================================================================
 *scene5
-
 ;黒田編開始
 ;【背景】黒背景又は黒っぽい和紙風
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1]
@@ -346,8 +342,14 @@ $('.junbi_girl').remove();
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
 [font color=white size=27]
-;【BGM】五色（重い雰囲気の曲
-[playbgm storage="heavymood_goshiki.ogg" loop=true click=true]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+;==========================================================================================
+
 #
 ――その夕刻、研究室。[l][r]
 [r]
@@ -405,30 +407,16 @@ $('.junbi_girl').remove();
 ;【背景】あればレトロな実験室　 フェードイン（見つからなければ、黒背景）
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [eval exp="f.haikei_credit=''"]
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_mod name="message_bg" storage="message_bg/frame_brown.png"]
-;メッセージレイヤを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
+;【テキスト枠】会話パート用 下部横長【茶色（男性視点用）】
+[イベントシーン構築ボタン無し版枠茶色]
 
 ;セーブ等ボタン配置
 [if exp="sf.FButton=='ON'"]
 [else]
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 [endif]
+
 ;【立ち絵】黒田：横目（青ざめ）
 [chara_mod name="kuroda_base" storage="kuroda/base_kimono_aozame.png" time=0]
 [wait time=10]
@@ -670,17 +658,7 @@ $('.junbi_girl').remove();
 ;セーブ等ボタン配置
 [if exp="sf.FButton=='ON'"]
 [else]
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 [endif]
 
