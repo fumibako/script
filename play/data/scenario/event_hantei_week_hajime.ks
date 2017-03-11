@@ -91,7 +91,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;=============================================
 ;ルートによってみれないので上に
 ;=============================================
-[if exp="f.omiai_kettei2 == 1 && f.sijyou_au == 1 && (f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && f.katuraginomiya_au == 0"]
+[if exp="f.omiai_kettei2 == 1 && f.sijyou_au == 1 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && f.katuraginomiya_au == 0"]
 	;四条イベントとバッティングする
 	@jump target=koyu_event
 [endif]
@@ -106,7 +106,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 ;◆葛城宮使者イベントを見た[4]が　他の攻略キャラとの見合いを決定しており、葛城宮見合いフラグが立ってない f.katuraginomiya_konyaku == false
 ;最後の手紙2_2
-[if exp="f.omiai_kettei2 == 1 && f.sijyou_au == 1 && (f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && f.katuraginomiya_au == 0"]
+[if exp="f.omiai_kettei2 == 1 && f.sijyou_au == 1 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && f.katuraginomiya_au == 0"]
 	;お見合いから続けて見るとイベントがバッティングして四条イベントが発生しない　日付は考えます　最後の手紙2_1　発生藤枝auは判定しない　	
 	;四条イベントとバッティングする
 	@jump target=koyu_event
