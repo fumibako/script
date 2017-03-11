@@ -54,7 +54,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test11_1_kai" text="11月1～3週:華衣" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="test11_1b" text="11月1～3週:2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [iscript]
-$('.test').css({ backgroundImage: 'url("../data/image/select_waku_x500.png")'  });
+$('.test').css({ backgroundImage: 'url("../play/data/image/select_waku_x500.png")'  });
 [endscript]
 [glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
