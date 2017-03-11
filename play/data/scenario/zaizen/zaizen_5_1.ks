@@ -40,8 +40,9 @@
 「財前様の銀行の投資は我が国でも一歩先を行っていると言われ、[r]
 [sp]お手本にされる方もいらっしゃるそうです」[p]
 
-[主人公驚]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
 （凄い方なのね……）[p]
 「財前様のお父様も銀行家なのですか？」[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -56,10 +57,11 @@
 「財前様は、初めは紡績工場の資産管理をされ、[r]
 [sp]銀行を興したのは、資産管理のシステムを円滑にする為でごさいます」[p]
 
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
 [主人公ポーズ指]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、何となくわかりました。[r]
 [sp]お人柄や経歴についても深く聞かせて頂戴」[p]
 
@@ -69,11 +71,12 @@
 [sp]社交界での今の地位を築き上げた方です。[p]
 「今年で、二十三歳でしたか」[p]
 
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 [主人公ポーズ通常]
 [主人公憂い]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「とても苦労をされて成功されたのですね。」[r]
+「とても苦労をされて成功されたのですね。[r]
 [sp]淑女として未熟な私とつり合いが取れるでしょうか？」[p]
 
 
@@ -84,8 +87,9 @@
 #
 磯野は優しく微笑む。[p]
 
-[主人公通常]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
 「……どのように励むとよいのでしょうか？」[p]
 
 [whosay name=磯野 color="dimgray"]
@@ -95,15 +99,16 @@
 「お稽古だけではお嬢様も滅入ってしまうと思います。[r]
 [sp]気分転換に"散策"もお勧めします」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 [主人公目パチ1回]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 「お手紙はどのように書けばよいでしょうか？」[p]
 
 [whosay name=磯野 color="dimgray"]
 「何よりも礼儀を重んじる方なので今は勿論のこと、[r]
 [sp]親しくなってからも『丁寧に』書かれてはどうでしょうか？」[p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 「話題や、便箋の種類についてはどうしましょうか？」[p]
 
@@ -116,15 +121,17 @@
 [sp]手紙の話題などに好まれる花など察し、[r]
 [sp]選ばれるとよいでございましょう」[p]
 
-[主人公ほほえみ]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 「ありがとう磯野。[r]
 [sp]財前様の事を聞いて、お手紙を書きたくなりました」[p]
 
 [whosay name=磯野 color="dimgray"]
 「私もお嬢様の笑顔が励みでございます」[p]
-[主人公目を開く]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目を開く]
 （"仕事の話題"、"礼法のお稽古"、"散策"ね)[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
