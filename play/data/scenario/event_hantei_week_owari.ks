@@ -17,7 +17,7 @@
 [endif]
 
 ;◆お見合いが決定している場合は抜ける
-[if exp="f.omiai_kettei2 == 1"]
+[if exp="f.omiai_kettei == 1"]
 @jump target=*event_hantei_week_owari
 [endif]
 
