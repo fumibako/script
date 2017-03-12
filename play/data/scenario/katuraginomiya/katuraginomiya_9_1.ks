@@ -165,8 +165,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 くれるとよい。[r]
 [sp]返答がどちらにせよ私は受け止めるつもりだ。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 *yy2
+[sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
 [if exp="f.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][28] = 0"]
