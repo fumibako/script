@@ -296,8 +296,19 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [stopbgm]
 ;[endif]
 ;個別ルート前夜終了
-
 [eval exp="f.sijyou_au=1"]
+
+[if exp="f.okeiko_gamen==true"]
+[if exp="f.event_oaite_mitei != 1 && f.event_katuraginomiya[4] == 0"]
+;f.event_katuraginomiya[3] == 1は関係ない	
+[eval exp="f.event_oaite_mitei = 0"]
+	;共通お相手決定フラグ
+	[eval exp="f.omiai_kettei = 1"]
+	@jump storage="okeiko.ks" target=*event_hantei_week_owari_owari
+[endif]
+[endif]
+
+
 [eval exp="f.event_oaite_mitei = 0"]
 ;共通お相手決定フラグ
 [eval exp="f.omiai_kettei = 1"]
