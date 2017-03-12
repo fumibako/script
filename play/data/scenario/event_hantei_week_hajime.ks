@@ -80,8 +80,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 
 ;=============================================
 ;誰かとのお見合いが決定している　テストでみたいのでそのままスキップせず　一回代入したらスキップへ
-[if exp="(f.kuroda_au == 1 || f.sijyou_au == 1 || f.zaizen_au == 1) && f.omiai_kettei2 != 1"]
-[eval exp="f.omiai_kettei2=1"]
+[if exp="(f.kuroda_au == 1 || f.sijyou_au == 1 || f.zaizen_au == 1) && f.omiai_kettei != 1"]
+[eval exp="f.omiai_kettei=1"]
 [endif]
 
 ;◆各個別ルート(又はonly時)には対象キャラクターイベント判定のみ行う
