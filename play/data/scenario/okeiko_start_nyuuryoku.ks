@@ -329,7 +329,14 @@ alert("9月以降ですがルートが決定してません");
 alert("9月1週・葛城宮EV123onですが 淑女度30以下、または好感度19以下の低い状態ではじめます。");
 [endscript]
 [endif]
+[endif]
 
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1 ) && f.para_katuraginomiya_koukando > 19 || f.para_shujinkou_shukujodo > 30 "]
+[if exp="f.event_katuraginomiya[1] == 0 || f.event_katuraginomiya[2] == 0 || f.event_katuraginomiya[3] == 0"]
+[iscript]
+alert("9月1週・葛城宮淑女度30以上、好感度19以上の高い状態ですが EV123のどれかがoffではじめます。");
+[endscript]
+[endif]
 [endif]
 
 [cm]
