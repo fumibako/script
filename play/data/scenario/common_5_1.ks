@@ -234,7 +234,10 @@
 ;お相手について相談するかの選択肢に戻ります
 ;---------------------------------------------------------------
 *buncyou
-;背景はかえなくていいと思いますが如何しましょうか
+;選択肢の背景からの復帰
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目を開く]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
