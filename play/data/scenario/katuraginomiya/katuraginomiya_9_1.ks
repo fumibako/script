@@ -52,6 +52,12 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [endscript]
 [endif]
 [手紙文矢 fumi_number=]
+[if exp="tf.test_gamen==true"]
+テストモードで表示しています。[r]
+[link target=*yy]手紙スキップ[endlink][r][r]
+[link target=*nn]手紙を読む[endlink][s]
+*nn
+[endif]
 [名前]へ[l][r]
 [r]
 [sp]そちらは風がススキに揺れる涼しい頃でしょうか？[r]
@@ -77,8 +83,15 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　[r]
 [sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢 [p]
+*yy
 [手紙読了]
 
+[if exp="tf.test_gamen==true"]
+テストモードで表示しています[r]
+[link target=*fumi_toutyaku_katuraginomiya_29]手紙までスキップ[endlink][r][r]
+[link target=*nn1]スキップしない[endlink][s]
+*nn1
+[endif]
 [whosay name=磯野 color="dimgray"]
 「文矢様は、お元気にされていらっしゃいますか？」[p]
 #
@@ -123,6 +136,12 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
+[if exp="tf.test_gamen==true"]
+テストモードで表示しています
+[link target=*yy2]手紙スキップ[endlink][r][r]
+[link target=*nn2]手紙を読む[endlink][s]
+*nn2
+[endif]
 [名字]　[名前]殿へ[l]
 [r]
 [r]
@@ -145,6 +164,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]返答がどちらにせよ私は受け止めるつもりだ。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+*yy2
 [if exp="f.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][28] = 0"]
