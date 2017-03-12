@@ -297,20 +297,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[endif]
 ;個別ルート前夜終了
 [eval exp="f.sijyou_au=1"]
-
-[if exp="f.okeiko_gamen==true"]
-[イベントシーン終了４]
-[if exp="f.event_oaite_mitei != 1 && f.event_katuraginomiya[4] != 1"]
-;f.event_katuraginomiya[3] == 1は関係なく9/1のまま　f.event_oaite_miteiでもう少し待つか判定	
-[eval exp="f.event_oaite_mitei = 0"]
-	;共通お相手決定フラグ
-	[eval exp="f.omiai_kettei = 1"]
-	[eval exp="f.okeiko_week = 2"]
-	@jump storage="event.ks" target=*event_owari
-[endif]
-[endif]
-
-
 [eval exp="f.event_oaite_mitei = 0"]
 ;共通お相手決定フラグ
 [eval exp="f.omiai_kettei = 1"]
