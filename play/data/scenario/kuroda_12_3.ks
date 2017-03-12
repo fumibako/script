@@ -64,6 +64,9 @@
 [current layer="message0"]
 ;テキスト全画面
 [font color=white size=27]
+;名前欄消去
+[whosay name=""]
+
 ;主人公編
 ;【背景】黒背景又は黒っぽい和紙風
 ;【テキスト枠】全画面、白フォント
