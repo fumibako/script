@@ -36,31 +36,12 @@
 
 ;メッセージ窓の表示
 [eval exp="f.message_storage='message_bg/frame_red.png'"]
-[chara_mod name="message_bg" storage=&f.message_storage]
-
-;メッセージレイヤを表示
-@layopt layer=message0 page=fore visible = true
-;名前欄の設定
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
-[chara_config ptext="chara_name_area"]
-
-;メッセージレイヤサイズを会話窓用に設定変更
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[イベントシーン構築ボタン無し版]
 [current layer="message0"]
 [resetfont]
 
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 
 ;【SE】時計（広間カチコチ）
@@ -1480,20 +1461,7 @@ jumpします。[p]
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;機能ボタン表示
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+[メッセージウィンドウ上ボタン表示]
 [wait time=10]
 [eval exp="sf.FButton='ON'"]
 ;メッセージレイヤを表示
