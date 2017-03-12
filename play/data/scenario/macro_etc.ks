@@ -6,7 +6,8 @@
 ;==============================
 ;◆【[暗転２ clegit=true]】
 [macro name=暗転２]
-#
+;名前欄消去
+[whosay name=""]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 [image layer=29 x=1 y=1 storage=%storage|bg/anten.jpg time=%time|1300 visible=true]
@@ -39,7 +40,8 @@ $('.loding_pic1').remove();
 
 ;◆[暗転]
 [macro name="暗転"]
-#
+;名前欄消去
+[whosay name=""]
 [chara_mod name="bg" storage="toumei.gif"]
 [endmacro]
 
