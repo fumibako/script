@@ -56,7 +56,20 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [iscript]
 $('.test').css({ backgroundImage: 'url("../play/data/image/select_waku_x500.png")'});
 $('.test2').attr('src', '../data/image/select_waku_x500.png');
-$('.test3').prepend('<img src="../play/data/image/select_waku_x500.png" alt="" class="bgCoverImg">');
+//$('.test3').prepend('<img src="../play/data/image/select_waku_x500.png" alt="" class="bgCoverImg">');
+this.kag.config.unReadTextSkip = true
+
+$(window).keydown(function(e){
+if(e.keyCode === 38) {
+f.kidoku_btn=true;
+tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"true"})
+} });
+
+$(window).keydown(function(e){
+if(e.keyCode === 39) {
+f.kidoku_btn=false;
+tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"true"})
+} });
 [endscript]
 [glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
@@ -522,6 +535,9 @@ localStorage.clear();
 ;test中フラグ　一時変数手紙で利用します
 [eval exp="tf.test_sijyou=false"]
 @jump storage="test.ks"
+[iscript]
+this.kag.config.unReadTextSkip = true
+[endscript]
 [s]
 
 *title
