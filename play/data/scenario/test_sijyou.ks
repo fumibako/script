@@ -58,8 +58,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 
 [iscript]
 $('.test').css({ backgroundImage: 'url("../play/data/image/select_waku_x500.png")'});
-$('.test2').attr('src', '../data/image/select_waku_x500.png');
-$('.test3').prepend("<style="background: url('../data/image/select_waku_x500.png') left top repeat;background-size: cover; background-position:center top;">");
+$('.test2').attr('src', '../data/image/select_waku_x300.png');
 this.kag.config.autoRecordLabel = true;
 this.kag.config.unReadTextSkip = true;
 
