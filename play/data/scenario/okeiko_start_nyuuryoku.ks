@@ -324,7 +324,7 @@ alert("9月以降ですがルートが決定してません");
 
 ;入力ミス確認アラート　進めれるようにアラートのみ！
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1 ) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1"]
-[if exp="f.para_katuraginomiya_koukando =< 19 || f.para_shujinkou_shukujodo < 30 "]
+[if exp="f.para_katuraginomiya_koukando < 19 || f.para_shujinkou_shukujodo < 30"]
 [iscript]
 alert("9月以降・葛城宮ルート 淑女度30以下、または好感度19以下の低い状態ではじめます。");
 [endscript]
