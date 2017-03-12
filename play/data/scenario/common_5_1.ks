@@ -195,10 +195,10 @@
 ;【分岐】op2と同じ順番
 [glink storage="kuroda_5_1.ks" target=*seen1 text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=50 color=white]
 [glink storage="zaizen/zaizen_5_1.ks" target=*seen1 text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=150 color=white]
-[glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=200 color=white]
+[glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=250 color=white]
 
 [glink target=*seen1 text="文調や便せんについて" fontcolor=gray size=23 width="250" x=500 y=50 color=white]
-[glink target=*okeiko text="それよりお稽古のことが気になった" fontcolor=gray size=20 width="250" x=500 y=150 color=white]
+[glink target=*okeiko text="それよりお稽古のことが<br/>気になった" fontcolor=gray size=20 width="250" x=500 y=150 color=white]
 [glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=500 y=250 color=white]
 [s]
 
