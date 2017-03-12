@@ -63,6 +63,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [link target=*yy]手紙スキップ[endlink][r][r]
 [link target=*nn]手紙を読む[endlink][s]
 *nn
+[er]
 [endif]
 [名前]へ[l][r]
 [r]
@@ -100,6 +101,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [link target=*fumi_toutyaku_katuraginomiya_29]手紙までスキップ[endlink][r][r]
 [link target=*nn1]スキップしない[endlink][s]
 *nn1
+[er]
 [endif]
 
 #
@@ -155,6 +157,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [link target=*yy2]手紙スキップ[endlink][r][r]
 [link target=*nn2]手紙を読む[endlink][s]
 *nn2
+[er]
 [endif]
 [名字]　[名前]殿へ[l]
 [r]
