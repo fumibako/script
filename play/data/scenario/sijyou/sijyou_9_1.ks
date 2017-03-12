@@ -301,11 +301,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [if exp="f.okeiko_gamen==true"]
 [イベントシーン終了４]
 [if exp="f.event_oaite_mitei != 1 && f.event_katuraginomiya[4] != 1"]
-;f.event_katuraginomiya[3] == 1は関係ない	
+;f.event_katuraginomiya[3] == 1は関係ない　f.event_oaite_miteiでもう少し待つか判定	
 [eval exp="f.event_oaite_mitei = 0"]
 	;共通お相手決定フラグ
 	[eval exp="f.omiai_kettei = 1"]
-	@jump storage="okeiko.ks" target=*event_hantei_week_owari_owari
+	@jump storage="event_hantei_week_owari.ks" target=*sijyou_event_hantei
 [endif]
 [endif]
 
