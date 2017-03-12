@@ -30,6 +30,7 @@ f.para_shujinkou_kadou_kaisuu_all=0; //お箏のお稽古をした回数(4月か
 f.para_shujinkou_reihou_kaisuu_all=0; //お箏のお稽古をした回数(4月からの累計)
 f.para_shujinkou_gogaku_kaisuu_all=0; //お箏のお稽古をした回数(4月からの累計)
 f.event_oaite_mitei = 1; //1=お相手未定状態、0=それ以外
+f.omiai_kettei = 0; //見合い候補の誰かが決定したらeventで1が一回入る
 
 f.para_shujinkou_status_max=100;
 f.para_shujinkou_status_a=1;
@@ -59,7 +60,7 @@ f.fumi_hituyou_kiryoku=8;
 f.fumi_toutyaku=0;
 f.fumi_toutyaku_oaite=[];
 f.fumi_henji=0; //返信機能を使ったかどうかの変数。一度でも返信したら1を代入(fumi_wadai.ks*fumi_okで使用)
-f.omiai_kettei2 = 0; //見合い候補の誰かが決定したらeventで1が一回入る
+
 //◆EDパラメータ
 sf.ED_kuroda_bad=0;
 sf.ED_kuroda_normal=0;
