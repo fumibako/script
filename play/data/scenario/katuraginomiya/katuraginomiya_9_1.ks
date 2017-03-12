@@ -39,6 +39,11 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
+;シナリオのみはスキップ　一時変数が等しいは滅多に反応しない
+[if exp="tf.test_katuraginomiya == true"]
+@jump target=katuragi_hairetu_skip
+[endif]
+
 *fumi_toutyaku_fumiya
 [if exp="f.okeiko_gamen == true"]
 [iscript]
@@ -51,7 +56,7 @@ f.fumi_list_all_location_fumi.push(1);
 f.fumi_all_number=f.fumi_all_number + 1;
 [endscript]
 [endif]
-
+*katuragi_hairetu_skip
 [手紙文矢 fumi_number=]
 [if exp="tf.test_gamen == true || tf.test_katuraginomiya == true"]
 テストモードで表示しています。[r]
@@ -115,6 +120,12 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_katuraginomiya_29
+
+;シナリオのみはスキップ
+[if exp="tf.test_katuraginomiya == true"]
+@jump target=katuragi_hairetu_skip2
+[endif]
+
 [if exp="f.okeiko_gamen==true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「婚約について」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
@@ -136,11 +147,11 @@ f.hensin_list_hairetsu[3][28] = 1;
 f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomiya_koukando_up_event_fumi;
 [endscript]
 [endif]
-
+*katuragi_hairetu_skip2
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
 [if exp="tf.test_gamen==true"]
-テストモードで表示しています
+テストモードで表示しています[r]
 [link target=*yy2]手紙スキップ[endlink][r][r]
 [link target=*nn2]手紙を読む[endlink][s]
 *nn2
