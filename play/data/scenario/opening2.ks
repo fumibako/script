@@ -612,21 +612,7 @@ jumpします。[p]
 ;メッセージレイヤサイズを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;[機能ボタン表示]
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 
 ;背景変更:和紙風
@@ -712,7 +698,7 @@ f.kuroda_fumi1_midoku = 0;
 	[skipstop]
 [endif]
 *zaizen_fumi1b
-[font color=white size=0][r]【 『(仮)財前 美彬』を選択 】[r][resetfont]
+[font color=white size=0][r]【 『財前 美彬』を選択 】[r][resetfont]
 [cm]
 ;背景変更:手紙
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
