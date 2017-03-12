@@ -32,6 +32,38 @@
 [er]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、四条様からお手紙が届いております」[p]
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。手紙まで移動しますか？[r]
+園遊会イベント[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok0]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no0]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok0
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_sijyou_tegami
+[s]
+
+*jump_no0
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+
+
 ;磯野は男という再度の説明
 #
 部屋の障子から、初老の家令の声がした。[p]
@@ -59,6 +91,7 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [主人公目閉じ]
+*seen_sijyou_tegami
 #
 *fumi_toutyaku_sijyou_100
 [if exp="f.okeiko_gamen==true"]
@@ -84,6 +117,14 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [endif]
 
 [手紙四条 fumi_number=51]
+[if exp="tf.test_gamen == true"]
+テストモードで表示されています[r]
+[link target=*endtegami]手紙をスキップ[endlink][r][r]
+[link target=*no_tegami]手紙を読む[endlink][s]
+*no_tegami
+[er]
+[endif]
+
 [r][r][r]
 [名前]へ[r]
 [r]
@@ -95,6 +136,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 思います。　自分のことを語る手紙は苦手ですが、[r]
 読んでくれると嬉しいな。[r]
 [r]
+*endtegami
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
 [if exp="f.okeiko_gamen==true"]
