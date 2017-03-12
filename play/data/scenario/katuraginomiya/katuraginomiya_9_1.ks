@@ -52,7 +52,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [endscript]
 [endif]
 [手紙文矢 fumi_number=]
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen==true || tf.test_katuraginomiya == true"]
 テストモードで表示しています。[r]
 [link target=*yy]手紙スキップ[endlink][r][r]
 [link target=*nn]手紙を読む[endlink][s]
@@ -82,18 +82,20 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp]それでは皆が健やかに過ごせることを祈っています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢 [p]
 *yy
+[sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢 [p]
 [手紙読了]
 
-[if exp="tf.test_gamen==true"]
+[whosay name=磯野 color="dimgray"]
+「文矢様は、お元気にされていらっしゃいますか？」[p]
+
+[if exp="tf.test_gamen == true || tf.test_katuraginomiya == true"]
 テストモードで表示しています[r]
 [link target=*fumi_toutyaku_katuraginomiya_29]手紙までスキップ[endlink][r][r]
 [link target=*nn1]スキップしない[endlink][s]
 *nn1
 [endif]
-[whosay name=磯野 color="dimgray"]
-「文矢様は、お元気にされていらっしゃいますか？」[p]
+
 #
 磯野は懐かしそうに微笑んだ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
