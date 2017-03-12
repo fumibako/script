@@ -307,7 +307,7 @@ jumpします。[p]
 [eval exp="f.kuroda_au = 1"]
 [eval exp="f.event_oaite_mitei = 0"]
 ;共通お相手決定フラグ
-[eval exp="f.omiai_kettei2 = 1"]
+[eval exp="f.omiai_kettei = 1"]
 ;回想記録終了 
 [endreplay] 
 
