@@ -38,6 +38,42 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok0]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no0]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok0
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no0
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;------------------------------------------------
+
 ;【立ち絵】主人公：目閉じ思案
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私を試すようなお手紙が多いけれどそれでも、[r]
@@ -219,7 +255,7 @@
 （せめて、今まで以上に心を込めて別れの手紙を書こう。[r]
 [sp]もしどこかでお会いすることがあっても笑顔でお話できるように）[p]
 [endif]
-
+*seen_end
 ;個別ルート前夜終了
 [eval exp="f.zaizen_au = 1"]
 [eval exp="f.event_oaite_mitei = 0"]
