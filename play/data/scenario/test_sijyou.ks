@@ -68,7 +68,7 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"true"})
 $(window).keydown(function(e){
 if(e.keyCode === 39) {
 f.kidoku_btn=false;
-tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"true"})
+tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 } });
 [endscript]
 [glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
