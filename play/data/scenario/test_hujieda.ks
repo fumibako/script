@@ -94,7 +94,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 *common_page
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
-[glink target="auto" text="オートモード" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+
 [s]
 
 
