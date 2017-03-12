@@ -299,7 +299,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [eval exp="f.sijyou_au=1"]
 
 [if exp="f.okeiko_gamen==true"]
-[if exp="f.event_oaite_mitei != 1 && f.event_katuraginomiya[4] == 0"]
+[イベントシーン終了４]
+[if exp="f.event_oaite_mitei != 1 && f.event_katuraginomiya[4] != 1"]
 ;f.event_katuraginomiya[3] == 1は関係ない	
 [eval exp="f.event_oaite_mitei = 0"]
 	;共通お相手決定フラグ
