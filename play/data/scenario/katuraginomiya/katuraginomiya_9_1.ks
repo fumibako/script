@@ -267,7 +267,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 「はい」[r]
 移動します。[p]
 [cm]
-@jump target=*seen_end0
+@jump target=*seen_end00
 [s]
 
 *jump_no0
@@ -452,7 +452,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 #
 ;そして、お父様は、優しく笑って下さった。[p]
 お父様は、私の喜ぶ表情を見た後、優しく微笑み返した。[p]
-
+*seen_end00
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
 ;【テキスト全画面】黒茶・和紙風背景に白文字  [テキスト全画面白文字]裏で画面構成
@@ -507,20 +507,6 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 「皆、私の意思を尊重してくれることに、感謝しています。[r]
 [sp]謹んで[ruby text=はい]拝[ruby text=じ]辞[ruby text=つかまつ]仕ります、とお伝えください……」[p]
 
-[whosay name=磯野 color="dimgray"]
-「お嬢様のお決めになったことに反対いたしません。[r]
-[sp]……後の事はお任せください」[p]
-
-#
-磯野は安心と落胆の気持ちが入りまじった[r]
-複雑な表情をしている。[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"] 
-「ありがとう。[r]
-[主人公目閉じ]
-[sp]私では宮中になじめないでしょう」[p]
-（きっと殿下にはもっとふさわしい方がいるわ）[p]
-#
-磯野は、静かに返事をすると部屋から出て行った。[p]
 ;------------------------------------------------------
 [if exp="tf.test_gamen==true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
@@ -544,7 +530,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 「はい」[r]
 移動します。[p]
 [cm]
-@jump target=*seen_end
+@jump target=*seen_end1
 [s]
 
 *jump_no
@@ -556,7 +542,22 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [cm]
 [endif]
 ;------------------------------------------------
+[whosay name=磯野 color="dimgray"]
+「お嬢様のお決めになったことに反対いたしません。[r]
+[sp]……後の事はお任せください」[p]
 
+#
+磯野は安心と落胆の気持ちが入りまじった[r]
+複雑な表情をしている。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+「ありがとう。[r]
+[主人公目閉じ]
+[sp]私では宮中になじめないでしょう」[p]
+（きっと殿下にはもっとふさわしい方がいるわ）[p]
+#
+磯野は、静かに返事をすると部屋から出て行った。[p]
+
+*seen_end1
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
 ;【テキスト全画面】黒茶・和紙風背景に白文字  [テキスト全画面白文字]裏で画面構成
