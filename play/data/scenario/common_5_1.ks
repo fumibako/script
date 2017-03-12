@@ -197,7 +197,7 @@
 [glink storage="zaizen/zaizen_5_1.ks" target=*seen1 text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=150 color=white]
 [glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=250 color=white]
 
-[glink target=*seen1 text="文調や便せんについて" fontcolor=gray size=23 width="250" x=500 y=50 color=white]
+[glink target=*buncyou text="文調や便せんについて" fontcolor=gray size=23 width="250" x=500 y=50 color=white]
 [glink target=*okeiko text="それよりお稽古のことが<br/>気になった" fontcolor=gray size=20 width="250" x=500 y=150 color=white]
 [glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=500 y=250 color=white]
 [s]
@@ -226,28 +226,41 @@
 [sp]見てくださる方が、いらっしゃるかもしれませんね」[p]
 [主人公ほほえみ]
 「陰ながら磯野も応援させていただきます」[p] 
+
+[whosay name=磯野 color="dimgray"] 
+「お手紙のお相手については、よろしゅうございますか？」[p] 
+;よろしゅうございましたか？ 
+@jump target=*select
+;お相手について相談するかの選択肢に戻ります
+;---------------------------------------------------------------
+*buncyou
+;背景はかえなくていいと思いますが如何しましょうか
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目を開く]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-「では、今の文通相手以外の方と、[r]
-お手紙を交わすようになったらどうすればよいのでしょうか？」[p]
+「お手紙の文章を簡潔に書くか、丁寧に書くかなどは[r]
+[sp]どう選べばよいのでしょう？」[p]
 
 [whosay name=磯野 color="dimgray"] 
 「そうでございますね……最初は、簡潔な文章の御方は簡潔に、[r]
 [sp]丁寧な文章の御方には丁寧に、そして徐々に親しくなれば、[r]
 [sp]親しみを込めて気軽に書くと喜ばれるでしょう。」[p] 
 
+;[whosay name=磯野 color="dimgray"] 
 「また御相手の身近にあるお稽古に励むと、[r]
 [sp]良い事があるかもしれませんね」[p]
 
-[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
 「最初は、相手に合わせて、[r]
 [sp]親しくなれば気軽に……相手の御心も変化するのですね」[p]
 
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 （確かに、お相手の身近なお稽古に励むと話題もあうでしょう）[p]
 
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目伏]
 「その場合便箋の選び方はどうしましょうか？」[p]
 
@@ -256,7 +269,7 @@
 [sp]暖かみがあり、力強い便箋を好まれる方も、[r]
 [sp]繊細で風情の趣のある便箋を好まれる方もおられるでしょう」[p]
 
-
+;[whosay name=磯野 color="dimgray"]
 「お手紙の内容から察してみてはいかがでございましょうか」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -268,6 +281,7 @@
 ;よろしゅうございましたか？ 
 @jump target=*select
 ;お相手について相談するかの選択肢に戻ります
+;----------------------------------------------
 
 *no
 ;【背景】主人公邸 庭の見える部屋：昼
