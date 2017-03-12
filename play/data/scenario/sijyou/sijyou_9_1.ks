@@ -301,8 +301,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;共通お相手決定フラグ
 [eval exp="f.omiai_kettei = 1"]
 [if exp="f.okeiko_gamen==true"]
-@jump storage="event.ks" target=*start
-;@jump storage="event.ks" target=*event_owari
+@jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]
 [endif]
