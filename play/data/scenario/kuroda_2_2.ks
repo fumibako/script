@@ -630,9 +630,11 @@
 	[skipstop]
 [endif]
 *scene13
-[stopbgm]
-;【BGM】絆（想いを込める感じ）
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 #
 店主は奥へ姿を消した。他に客の姿は無い。
 [autosave]

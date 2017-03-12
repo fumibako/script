@@ -49,14 +49,11 @@
 [p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-;[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
 
 [whosay name="磯野" color="dimgray"]
 「はい。お嬢様」[p]
@@ -147,8 +144,11 @@
 [endif]
 *scene3
 
-;【BGM】筍の訪れ(町
-[fadeinbgm storage=machi_takenoko.ogg loop=true click=true time=3000]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 ;【背景】町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=500]
 [主人公目パチ1回]

@@ -51,8 +51,7 @@
 「今日はどんな着物にしましょう」
 [autosave]
 [p]
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+;最初のシーンは短いためBGM無しにします
 
 「黒田様はいつも紫色をお召しだから、この色が合うかしら」[p]
 ;【SE】落ち着いた足音（フェードイン）
@@ -77,8 +76,11 @@
 [whosay name="磯野" color="dimgray"]
 「失礼いたします」[p]
 [stopbgm]
-;【BGM】雪解水（哀しげな曲
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 [主人公目パチ1回]
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -274,6 +276,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「わかったわ。……ありがとう」[p]
+[fadeoutbgm time=3000]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -332,10 +335,13 @@
 [font color=white size=27]
 
 [stopbgm]
-;【BGM】雪すがら（哀しげな曲
-[playbgm storage="kanasige_yukisugara.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukisugara.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
+[endif]
 #
-一方、黒田家では――
+一方、黒田家では――。
 [autosave]
 [p]
 

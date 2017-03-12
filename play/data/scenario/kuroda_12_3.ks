@@ -50,52 +50,6 @@
 [wait time=10]
 
 ;==========================================================================================
-;名前表示用のマクロ(ティラノ公式サンプルゲーム『MikuPod』を参考にしています)
-[macro name="whosay"]
-[eval exp="sf.father_name='浩文'"]
-;入力された名前によって色を変更
-[iscript]
-if(mp.name=="文矢"){
-    mp.color = "#538a8a";
-}else if(mp.name==sf.girl_namae){
-    mp.color = "#cf5a7f";
-}else if(mp.name=="磯野"){
-    mp.color = "dimgray";
-}else if(mp.name=="ばあや"){
-    mp.color = "#916565";
-}else if(mp.name==sf.father_name){
-    mp.color = "DarkSlateBlue";
-}else if(mp.name=="黒田 将貴"){
-    mp.color = "#7a65b2";
-}else if(mp.name=="黒田将貴"){
-    mp.color = "#7a65b2";
-}else if(mp.name=="田中　岩男"){
-    mp.color = "#775545";
-}else if(mp.name=="財前 美彬"){
-    mp.color = "#4169c1";
-}else if(mp.name=="財前・アルベルト・美彬"){
-    mp.color = "#4169c1";
-}else if(mp.name=="四条 華織"){
-    mp.color = "yellowgreen";
-}else if(mp.name=="三宮　時子"){
-    mp.color = "#c25232";
-}else if(mp.name=="お茶屋の娘"){
-    mp.color = "#5b7e23";
-}else{
-    mp.color = "#807070";
-}
-//名前領域の一旦削除
-$(".chara_name_area").remove();
-
-//名前をバックログに追加
-tf.name_for_log = "<font color = '" + mp.color + "'>【 " + mp.name + " 】</font>";
-if (mp.name!="") {
-	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
-}
-[endscript]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
-[endmacro]
-;==========================================================================================
 *scene1
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
 [chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=500]
@@ -106,6 +60,8 @@ if (mp.name!="") {
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
 ;テキスト全画面
 [font color=white size=27]
 ;主人公編
@@ -118,8 +74,11 @@ if (mp.name!="") {
 （黒田様のお力になりたい）[r]
 [r]
 そのための――[p]
+[if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [r]
 [r]
 『手紙』
@@ -161,6 +120,39 @@ if (mp.name!="") {
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。町の場面までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+[イベント中テスト数値表示]
+@jump target=*scene3_end
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きを表示します。[p]
+[cm]
+[イベント中テスト数値表示]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ふぅ」[p]
@@ -239,9 +231,10 @@ $('.junbi_girl').remove();
 ;【テキスト枠】下部、白フォント
 [font color=white size=27]
 
-これなら、黒田様のお心に届くかしら……[p]
+これなら、黒田様のお心に届くかしら……。[p]
 [resetfont]
 
+*scene3_end
 ;ゆっくり暗転
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 [wait time=10]
@@ -282,7 +275,7 @@ $('.junbi_girl').remove();
 $('.junbi_girl').remove();
 [endscript]
 #
-翌日、町にて――[p]
+翌日、町にて――。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「黒田様に、よろしくお伝えくださいませ」[p]
@@ -311,7 +304,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 ;【立ち絵】主人公：通常
 「よろしくお願いいたします」[p]
-田中様に託した手紙を、祈るような心地で見つめた――[p]
+田中様に託した手紙を、祈るような心地で見つめた――。[p]
 #
 [主人公退場]
 [wait time=10]
@@ -364,7 +357,7 @@ $('.junbi_girl').remove();
 [r]
 ;【SE】雨
 [playse storage=rain.ogg loop=false ]
-嫌な夢を見た――
+嫌な夢を見た。
 [autosave]
 [p]
 
@@ -378,11 +371,13 @@ $('.junbi_girl').remove();
 [chara_mod name="bg_effect" storage="bg/white.jpg" time=100]
 [wait time=10]
 [chara_mod name="bg_effect" storage="toumei.gif" time=150]
-[wait time=10]
+[wait time=30]
 [chara_mod name="bg_effect" storage="bg/white.jpg" time=50]
 [wait time=10]
-[chara_mod name="bg_effect" storage="toumei.gif" time=50]
-[wait time=10]
+[freeimage layer = 2]
+
+;[chara_mod name="bg_effect" storage="toumei.gif" time=50]
+;[wait time=50]
 ;[chara_mod name="bg_effect" storage="bg/white.jpg" time=50]
 ;[wait time=10]
 ;[chara_mod name="bg_effect" storage="toumei.gif" time=100]
@@ -562,7 +557,7 @@ $('.junbi_girl').remove();
 [r]
 見覚えのある文字。[r]
 [r]
-白い封筒が暖かく輝くように感じられた――
+白い封筒が暖かく輝くように感じられた――。
 [autosave]
 [p]
 [resetfont]

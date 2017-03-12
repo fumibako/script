@@ -45,9 +45,11 @@
 ;【立ち絵】主人公：通常頬染め
 [whosay name="ばあや" color="#916565"]
 「お嬢様、お召し物はもうよろしいのですか」[p]
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [主人公横目パチ1回]
 [wait time=10]
 

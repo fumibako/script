@@ -1,6 +1,6 @@
 ﻿;=============================================
 ;◆黒田イベント【手紙が届く：年賀状】黒田ルートかつ1月1週になった時点で1度だけ発生
-=============================================
+;=============================================
 *replay_kuroda_1_1
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
@@ -28,6 +28,8 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
 
 ;テキスト全画面
 [font color=white size=27]
@@ -36,7 +38,6 @@
 ;【テキスト枠】全画面、白フォント
 ;【BGM】主人公邸通常会話パート用
 
-#
 ――新年を迎えた。[l]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】めでたく候（お正月などめでたいシーンに
@@ -58,7 +59,7 @@
 忙しく過ごしつつも[r]
 [r]
 年賀の晴れやかな空気とはうらはらに[r]
-私の心は浮かぬままだった――
+私の心は浮かぬままだった――。
 [autosave]
 [p]
 [resetfont]

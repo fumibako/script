@@ -41,9 +41,11 @@
 [wait time=10]
 #
 ――ついに、顔合せ当日となった。[p]
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 ;------------------------------------------------------------------
 [if exp="tf.test_gamen==true"]
 テストページから開始しています。黒田出会い前までjumpしますか？[r]

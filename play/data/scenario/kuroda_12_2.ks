@@ -52,8 +52,11 @@
 「……黒田様は、どうされているかしら」
 [autosave]
 [p]
-;【BGM】冬支度（悲しげ・筝曲）
+[if exp="sf.BGM=='ON'"]
+;【BGM】冬支度
 [playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
+[endif]
 #
 ――あの日以来、手紙は無い。[p]
 
@@ -114,8 +117,11 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ！」[p]
 [stopbgm]
-;【BGM】一閃（緊迫シーン）
-[playbgm storage="kinpaku_issen.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】一閃（緊迫シーンに
+[playbgm storage="kinpaku_issen.ogg" loop=true]
+[eval exp="f.bgm_storage='kinpaku_issen.ogg'"]
+[endif]
 ;【立ち絵】主人公：不安
 「……『あんなこと』って、どうされたのでしょう？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -163,6 +169,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうだったのですか……。[r]
 [sp]教えてくださって、ありがとうございます」[p]
+[fadeoutbgm time=3000]
 
 ;【立ち絵】主人公：目閉じ
 [chara_mod name="girl_me" storage="girl/S/me_fusi2.png" time=0]
@@ -180,6 +187,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、そんな……」[p]
+[stopbgm]
 
 ;【立ち絵】主人公：目閉じ
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -190,7 +198,6 @@
 [wait time=10]
 ……[p]
 ……！[p]
-[fadeoutbgm time=3000]
 『手紙』[p]
 
 黒田様のお手紙で、これまで何度も前向きな気持ちになった。[p]
@@ -205,9 +212,11 @@
 [p]
 ;【背景】暗転終了、町並み背景フェードイン
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
-[stopbgm]
-;【BGM】絆（想いを込める感じ）
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：決意
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
