@@ -29,6 +29,9 @@
 ;////////////先に登場させておく////////////
 [四条ベース羽織]
 [四条微笑み]
+;全画面テキストから開始時に文字が表示されない場合があるため、↓追記します(◆jsYiJcqRkk
+@layopt layer=message0 visible=true
+[current layer="message0"]
 ;テキスト全画面
 [font color=white size=27]
 ――白萩そよぐ、料亭にて。[l][r]
