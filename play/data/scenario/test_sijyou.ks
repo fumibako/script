@@ -61,7 +61,8 @@ $('.test').css({ backgroundImage: 'url("../play/data/image/select_waku_x500.png"
 $('.test2').attr('src', '../data/image/select_waku_x500.png');
 //$('.test3').prepend('<img src="../play/data/image/select_waku_x500.png" alt="" class="bgCoverImg">');
 this.kag.config.autoRecordLabel = true;
-this.kag.config.unReadTextSkip = true
+this.kag.config.unReadTextSkip = true;
+
 $(window).keydown(function(e){
 if(e.keyCode === 38) {
 f.kidoku_btn=true;
