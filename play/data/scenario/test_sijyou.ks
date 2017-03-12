@@ -53,7 +53,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test11_1" text="11月1～3週:1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test11_1_kai" text="11月1～3週:華衣" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="test11_1b" text="11月1～3週:2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
-[config_record_label color="0xCCCCFF" skip=false]
+[config_record_label color="0x99FFFF" skip=false]
 ;既読のみスキップ　未読はスキップしない
 
 [iscript]
