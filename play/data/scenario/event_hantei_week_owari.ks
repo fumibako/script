@@ -4,42 +4,75 @@
 *start
 ;=============================================
 ;◆共通イベント判定
+[iscript]
+alert("*event_hantei_week");
+[endscript]
 ;=============================================
 ;◆葛城宮　最後の手紙を見ている場合は　event_hantei_week_owariにスキップ 
-[if exp="f.event_oaite_mitei == 1 && (f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1)"]
+;[if exp="f.event_oaite_mitei == 1 && (f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1)"]
 ;葛城宮　最後の手紙処理
-@jump target=*event_hantei_week_owari
-[endif]
+;@jump target=*event_hantei_week_owari
+;[endif]
 
 ;◆黒田、財前、四条の進行条件を満たさない場合に9/1からぬける　ここでは判定しない 
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30"]
-	@jump target=*event_hantei_week_owari
-[endif]
+;[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30"]
+;	@jump target=*event_hantei_week_owari
+;[endif]
 
 ;◆お見合いが決定している場合は抜ける
-[if exp="f.omiai_kettei == 1"]
+;[if exp="f.omiai_kettei == 1"]
 ;cm9_1終わり　個別ファイルにも追記
-[eval exp="f.event_common[10] = 1"]
-@jump target=*event_hantei_week_owari
-[endif]
+;[eval exp="f.event_common[10] = 1"]
+;@jump target=*event_hantei_week_owari
+;[endif]
 
 ;◆葛城宮のお見合いを断っているときは抜ける
-[if exp="f.katuraginomiya_konyaku == false"]
-	@jump target=*event_hantei_week_owari
-[endif]
+;[if exp="f.katuraginomiya_konyaku == false"]
+;	@jump target=*event_hantei_week_owari
+;[endif]
 
 ;◆葛城宮のお見合い候補ではないときは抜ける 最後の手紙でもぬけれる↑
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando < 20 || f.event_katuraginomiya[3] == 0 || f.para_shujinkou_shukujodo < 30 )"]
-@jump target=*event_hantei_week_owari
-[endif]
+;[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando < 20 || f.event_katuraginomiya[3] == 0 || f.para_shujinkou_shukujodo < 30 )"]
+;@jump target=*event_hantei_week_owari
+;[endif]
 
-;◆葛城宮の判定を満たしている場合　判定処理に飛ぶ。穴があると9/1でお知らせする
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_katuraginomiya_koukando >= 20 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
-@jump storage="event_hantei_week_hajime.ks" target=*event_hantei
-[endif]
 
 *event_hantei_week_owari
-
+;=============================================================================
+;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
+;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生
+;葛城宮進行条件：event3をみている+好感度20以上+淑女度30以上(財前の淑女度判定２０が反応してしまう、財前は淑女度３０以上で回避)
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
+	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[4]=1"]
+	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+[eval exp="tf.test='１葛城宮ここは通りましたよ！！！！'"]
+[trace exp="tf.test"]
+;他好感度が３０以上あるとき 葛城宮と比較なし
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_shujinkou_shukujodo >= 30  && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && (f.para_sijyou_koukando >= 30 || f.para_kuroda_koukando >= 30 || f.para_zaizen_koukando >= 30)"]
+	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
+	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[4]=1"]
+	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+[eval exp="tf.test='２葛城宮ここは通りましたよ！！！！'"]
+;又は(もっと考えたい選択時)event3をみている+他キャラクターより好感度が上かつ好感度20以上+淑女度30以上(◆jsYiJcqRkk調整
+;&& f.para_shujinkou_shukujodo > 20  必要であれば追加してください		
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando || f.para_katuraginomiya_koukando > f.para_kuroda_koukando || f.para_katuraginomiya_koukando > f.para_zaizen_koukando || f.para_katuraginomiya_koukando > f.para_hujieda_koukando)  "]
+[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
+	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_katuraginomiya[4]=1"]
+	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+;=======================================================================
 ;◆イベント判定(週終わり：12月3週のbadEDは週始め開始のため、他のイベントと同じ並びで判定）
 ;◆判定 9月1週始めにお相手選びを保留すると、終わった時点で再度お相手選び
 [if exp="((f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[11] == 0 && f.event_oaite_mitei == 1)"]
@@ -158,5 +191,8 @@
 	[eval exp="f.event_kuroda[15]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
+[iscript]
+alert("*event_hantei_week_end");
+[endscript]
 
 @jump storage="okeiko.ks" target=*event_hantei_week_owari_owari
