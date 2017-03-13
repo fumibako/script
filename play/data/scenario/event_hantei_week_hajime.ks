@@ -23,15 +23,15 @@
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.katuraginomiya_only == 1"]
 @jump target=*katuraginomiya_event_hantei
 [endif]
+
 ;↓葛城宮Onlyではないものの葛城宮条件を満たし、他の候補の好感度等条件を満たさない結果葛城宮のみ候補となる場合も葛城宮イベント判定へ
 [if exp="f.katuraginomiya_only != 1 && (f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30) && (f.para_kuroda_koukando < 30 && f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30)"]
 @jump target=*katuraginomiya_event_hantei
 [endif]
 
 
-;黒田、財前、四条の進行条件を満たすと共通イベントcommon_9_1発生[if exp="f.event_oaite_mitei == 1"]は他にかかるのでファイル側へ　ここにくるまで葛城宮のイベント網
-;[10]==1にすると一度しか発生せず、通過しておわってしまう。[10]=1は決定後に各キャラで mitei 時はﾌｧｲﾙ内でジャンプ中　miteiかつ１０==１を作る場合はこの下に
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[10] == 0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
+;黒田、財前、四条の進行条件を満たすと共通イベントcommon_9_1発生　一回見ると見れない　ここにくるまで葛城宮のイベント網があるがひっからない
+[if exp="f.event_common[10]=0 &&(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[10] == 0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
 
 ;好感度と淑女度により、選択可能なお相手を調べる
 [iscript]
@@ -69,12 +69,14 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_storage='common_9_1.ks'"]
 	[eval exp="f.event_target='*replay_common_9_1'"]
 	[eval exp="f.event_type='talk'"]
-	[if exp="f.omiai_kettei == 1"]
-	;お見合い相手が決定するまではイベント終わらないで	
 	[eval exp="f.event_common[10] = 1"]
-	[endif]
 	@jump storage="event.ks" target=*start
 [endif]
+
+;[10]==1mitei 時はﾌｧｲﾙ内でジャンプ中　miteiかつ１０==１を作る場合はこの下に
+
+
+
 *common_9_1_hantei_owari
 
 ;◆badED判定 9月、誰のルートにも進行しない場合に(8月4週と同じ)badED(9月1週はお相手未定以外)
