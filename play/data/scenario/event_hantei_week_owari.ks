@@ -8,10 +8,10 @@
 
 *event_hantei_week_owari
 ;◆葛城宮　最後の手紙を見ている場合は　event_hantei_week_owariにスキップ 
-;[if exp="f.event_oaite_mitei == 1 && (f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1)"]
+[if exp="f.event_oaite_mitei == 1 && (f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1)"]
 ;葛城宮　最後の手紙処理
 @jump target=*event_hantei_katuragi_skip
-;[endif]
+[endif]
 ;=============================================================================
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
 ;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生
