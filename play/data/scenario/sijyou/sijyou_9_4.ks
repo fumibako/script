@@ -542,8 +542,9 @@
 部屋へと戻ることにした。[p]
 [主人公退場]
 ;長いので好感度で表示するかスルーでいい
-@jump storage="sijyou/sijyou_9_4b.ks" target=*start
 *seen_end
+@jump storage="sijyou/sijyou_9_4b.ks" target=*start
+
 ;¥¥¥¥¥¥¥¥イベント4おわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 
