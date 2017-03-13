@@ -27,7 +27,10 @@
 [if exp="f.katuraginomiya_only != 1 && (f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30) && (f.para_kuroda_koukando < 30 && f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30)"]
 @jump target=*katuraginomiya_event_hantei
 [endif]
-;黒田、財前、四条の進行条件を満たすと共通イベントcommon_9_1発生
+
+
+;黒田、財前、四条の進行条件を満たすと共通イベントcommon_9_1発生[if exp="f.event_oaite_mitei == 1"]は他にかかるのでファイル側へ　ここにくるまで葛城宮のイベント網
+;[10]==1にすると一度しか発生せず、通過しておわってしまう。[10]=1は決定後に各キャラで mitei 時はﾌｧｲﾙ内でジャンプ中　miteiかつ１０==１を作る場合はこの下に
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[10] == 0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
 
 ;好感度と淑女度により、選択可能なお相手を調べる
