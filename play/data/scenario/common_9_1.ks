@@ -7,6 +7,10 @@
 	@jump storage="event_hantei_week_hajime.ks" target=*common_9_1_hantei_owari
 [endif]
 
+[if exp="f.event_oaite_mitei == 1"]
+@jump taget="*common_9_1_futatabi_oaiteerabi"
+[endif]
+
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=500] 
