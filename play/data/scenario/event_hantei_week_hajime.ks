@@ -66,7 +66,10 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_storage='common_9_1.ks'"]
 	[eval exp="f.event_target='*replay_common_9_1'"]
 	[eval exp="f.event_type='talk'"]
+	[if exp="f.omiai_kettei == 1"]
+	;お見合い相手が決定するまではイベント終わらないで	
 	[eval exp="f.event_common[10] = 1"]
+	[endif]
 	@jump storage="event.ks" target=*start
 [endif]
 *common_9_1_hantei_owari
