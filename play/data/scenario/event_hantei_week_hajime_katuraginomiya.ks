@@ -106,7 +106,7 @@
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
 ;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生(2/11◆jsYiJcqRkk調整
 ;葛城宮進行条件：event3をみている+好感度20以上+淑女度30以上(財前の淑女度判定２０が反応してしまう、財前は淑女度３０以上で回避)
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 && f.para_kuroda_koukando < 30 && f.para_zaizen_koukando < 30 && f.para_sijyou_koukando < 30"]
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
 	[eval exp="f.event_type='talk'"]
