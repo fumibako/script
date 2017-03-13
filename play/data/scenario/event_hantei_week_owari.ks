@@ -32,6 +32,11 @@ alert("お見合い決定前です");
 	@jump target=*event_hantei_week_owari
 [endif]
 
+;◆葛城宮のお見合い候補ではないときは抜ける
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando < 20 || f.event_katuraginomiya[3] == 0)"]
+@jump target=*event_hantei_week_owari
+[endif]
+
 ;◆葛城宮の判定を満たしている場合　判定処理に飛ぶ。穴があると9/1でお知らせする
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_katuraginomiya_koukando >= 20 && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0"]
 @jump storage="event_hantei_week_hajime.ks" target=*event_hantei
