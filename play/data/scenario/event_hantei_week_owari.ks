@@ -16,6 +16,10 @@
 	@jump target=*event_hantei_week_owari
 [endif]
 
+[iscript]
+alert("お見合い決定前です");
+[endscript]
+
 ;◆お見合いが決定している場合は抜ける
 [if exp="f.omiai_kettei == 1"]
 @jump target=*event_hantei_week_owari
