@@ -31,6 +31,43 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （最近、お手紙の内容の繋がりが、おかしいと思っていたら）[p]
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+
+[endif]
+;------------------------------------------------------
+
 [autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ついにお手紙が、来なくなってしまいました）[p]
@@ -190,6 +227,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、ありがとう。さっそくお手紙を書いてみます」[p]
 [autosave]
+*seen_end
 ;ここでイベントは区切り バッドが必要であれば、文矢から「話をしてみたけどダメだったよ」という返事に。イベントバッドへ追記
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 [fadeoutbgm time=3000]
