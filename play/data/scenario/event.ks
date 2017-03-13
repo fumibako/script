@@ -115,6 +115,7 @@ TG.stat.stack["call"] = [];
 ;◆9月1週、週終わりに発生した場合は休憩処理続き(休憩中画像非表示)へjump
 [if exp="f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_weekend == 1"]
 [eval exp="f.event_weekend == 0"]
+[eval exp="f.event_jiki=''"]
 @jump storage="okeiko.ks" target=*okeiko_qk_shori
 [endif]
 

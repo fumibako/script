@@ -1,4 +1,4 @@
-﻿﻿;=============================================
+﻿﻿﻿;=============================================
 ;お稽古パート：イベント判定(週終わり：主にエンディングイベントなどの判定処理用です)
 ;=============================================
 *start
@@ -20,6 +20,7 @@
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
 	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_jiki='weekend'"]
 	[eval exp="f.event_katuraginomiya[4]=1"]
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
@@ -31,6 +32,7 @@
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
 	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_jiki='weekend'"]
 	[eval exp="f.event_katuraginomiya[4]=1"]
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
@@ -42,6 +44,7 @@
 [eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
 	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_jiki='weekend'"]
 	[eval exp="f.event_katuraginomiya[4]=1"]
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
