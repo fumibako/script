@@ -31,7 +31,7 @@
 
 
 ;黒田、財前、四条の進行条件を満たすと共通イベントcommon_9_1発生　一回見ると見れない　ここにくるまで葛城宮のイベント網があるがひっからない
-[if exp="f.event_common[10]=0 &&(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[10] == 0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
+[if exp="f.event_common[10] == 0 &&(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_common[10] == 0 && (f.para_kuroda_koukando >= 30 || (f.para_zaizen_koukando >= 30 && f.para_shujinkou_shukujodo >= f.zaizen_shukujodo) || f.para_sijyou_koukando >= 30)"]
 
 ;好感度と淑女度により、選択可能なお相手を調べる
 [iscript]
