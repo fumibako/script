@@ -296,6 +296,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [stopbgm]
 ;[endif]
 ;個別ルート前夜終了
+[eval exp="f.event_common[10] = 1"]
 [eval exp="f.sijyou_au=1"]
 [eval exp="f.event_oaite_mitei = 0"]
 ;共通お相手決定フラグ
