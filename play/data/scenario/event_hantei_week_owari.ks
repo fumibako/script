@@ -32,8 +32,8 @@ alert("お見合い決定前です");
 	@jump target=*event_hantei_week_owari
 [endif]
 
-;◆葛城宮のお見合い候補ではないときは抜ける
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando < 20 || f.event_katuraginomiya[3] == 0)"]
+;◆葛城宮のお見合い候補ではないときは抜ける 最後の手紙でもぬけれる↑
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.para_katuraginomiya_koukando < 20 || f.event_katuraginomiya[3] == 0 || f.para_shujinkou_shukujodo < 30 )"]
 @jump target=*event_hantei_week_owari
 [endif]
 
