@@ -27,6 +27,37 @@
 [whosay name="女中"]
 「お帰りなさいませ。華織様」[p]
 
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+
 [whosay name="華織" color="olivedrab"]
 「ただいま。 [華衣]は、部屋にいますか？」[p]
 
@@ -156,6 +187,8 @@
 （そうだわ。 手紙を書きましょう！[r]
 [主人公目閉]
 [sp]華織様、どうか元気を出してください……）[p]
+
+*seen_end
 [fadeoutbgm time=3000]
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 [stopbgm]
