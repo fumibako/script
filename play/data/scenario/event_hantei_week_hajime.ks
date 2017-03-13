@@ -390,4 +390,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 *advice_event_owari
 *common_event_hantei_owari
 
+[iscript]
+alert("葛城宮のイベント判定スルーです");
+[endscript]
+
 @jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
