@@ -22,6 +22,8 @@ alert("お見合い決定前です");
 
 ;◆お見合いが決定している場合は抜ける
 [if exp="f.omiai_kettei == 1"]
+;cm9_1終わり　個別ファイルにも追記
+[eval exp="f.event_common[10] = 1"]
 @jump target=*event_hantei_week_owari
 [endif]
 
