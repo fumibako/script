@@ -243,7 +243,9 @@
 
 
 
-
+[iscript]
+alert("葛城宮のイベント判定スルーです");
+[endscript]
 
 ;↓他のイベント判定処理リストに戻ります
 @jump storage="event_hantei_week_hajime.ks" target=*katuraginomiya_event_hantei_owari
