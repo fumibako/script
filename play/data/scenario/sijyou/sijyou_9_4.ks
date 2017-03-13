@@ -53,6 +53,38 @@
 [主人公目パチ1回]
 #
 桟敷き席に座っていた私は、隣に座る華織様の様子を[ruby text=うかが]窺った。[p]
+
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+
 [whosay name="華織" color="olivedrab"]
 「わからないことがあったら聞いて」[p]
 
@@ -511,6 +543,7 @@
 [主人公退場]
 ;長いので好感度で表示するかスルーでいい
 @jump storage="sijyou/sijyou_9_4b.ks" target=*start
+*seen_end
 ;¥¥¥¥¥¥¥¥イベント4おわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 
