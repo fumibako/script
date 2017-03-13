@@ -91,18 +91,7 @@ TG.stat.play_se = true;
 [eval exp="f.message_storage='message_bg/frame_brown.png'"]
 [chara_mod name="message_bg" storage=&f.message_storage]
 
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue2==undefined"]
 	[skipstop]

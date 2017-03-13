@@ -1,4 +1,4 @@
-﻿;=============================================
+﻿﻿;=============================================
 ;◆黒田イベント【分岐：goodED】黒田ルートかつ3月4週になった時点で淑女度一定値未満、好感度一定値未満で1度だけ発生
 ;=============================================
 ;１１章、【ファイナル・イメージ：normalED、goodED共通】黒田からの求婚、受け入れる主人公
@@ -27,52 +27,6 @@ $(".rp_bt").remove();
 [chara_new name="message_bg" storage="toumei.gif"]
 [chara_show left=1 top=391 layer=14 name="message_bg"]
 
-;名前表示用のマクロ(ティラノ公式サンプルゲーム『MikuPod』を参考にしています)
-[macro name="whosay"]
-[eval exp="sf.father_name='浩文'"]
-;入力された名前によって色を変更
-[iscript]
-if(mp.name=="文矢"){
-    mp.color = "Teal";
-}else if(mp.name==sf.girl_namae){
-    mp.color = "#cf5a7f";
-}else if(mp.name=="磯野"){
-    mp.color = "dimgray";
-}else if(mp.name=="ばあや"){
-    mp.color = "#916565";
-}else if(mp.name==sf.father_name){
-    mp.color = "DarkSlateBlue";
-}else if(mp.name=="黒田 将貴"){
-    mp.color = "#7a65b2";
-}else if(mp.name=="黒田将貴"){
-    mp.color = "#7a65b2";
-}else if(mp.name=="田中　岩男"){
-    mp.color = "#775545";
-}else if(mp.name=="財前 美彬"){
-    mp.color = "royalblue";
-}else if(mp.name=="財前・アルベルト・美彬"){
-    mp.color = "royalblue";
-}else if(mp.name=="四条 華織"){
-    mp.color = "yellowgreen";
-}else if(mp.name=="三宮　時子"){
-    mp.color = "firebrick";
-}else if(mp.name=="お茶屋の娘"){
-    mp.color = "olivedrab";
-}else{
-    mp.color = "black";
-}
-//名前領域の一旦削除
-$(".chara_name_area").remove();
-
-//名前をバックログに追加
-tf.name_for_log = "<font color = '" + mp.color + "'>【 " + mp.name + " 】</font>";
-if (mp.name!="") {
-	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
-}
-[endscript]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
-[endmacro]
-
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
 	[skipstart]
@@ -90,19 +44,7 @@ if (mp.name!="") {
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 ;[chara_show left=1 top=391 layer=10 name="message_bg"]
 
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
 
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -120,8 +62,11 @@ if (mp.name!="") {
 
 [whosay name="磯野" color="dimgray"]
 「本日は、黒田様のご卒業式ですね。行ってらっしゃいませ」[p]
-;【BGM】絆（想いを込めて）
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -221,8 +166,11 @@ if (mp.name!="") {
 [playse storage=tori_mejiro.ogg loop=false ]
 その時、目白が枝に止まり、花弁がひらひらと舞った。[l][r]
 [r]
-;【BGM】花ごよみ（normal/goodED用）
-[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 枝に揺れる目白を見上げ、黒田様は力を得たようにこちらへと向き直られた。[r]
 [r]
 その瞳は決意をたたえている。[p]
@@ -265,23 +213,7 @@ if (mp.name!="") {
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
 [wait time=10]
 [resetfont]
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
 
 ;メッセージレイヤを会話窓用に設定変更
 [eval exp="f.kaogura='off'"]
@@ -312,7 +244,7 @@ if (mp.name!="") {
 #
 このひとは[r]
 花を見るのに、時の流れまでをも[r]
-感じているのか――[p]
+感じているのか――。[p]
 [eval exp="f.kaogura=''"]
 
 ;=============================================
@@ -376,7 +308,7 @@ if (mp.name!="") {
 
 #
 [r]
-あの日のことが、思い出される――[p]
+あの日のことが、思い出される――。[p]
 [resetfont]
 ;回想
 ;【背景】主人公邸_庭
@@ -385,23 +317,7 @@ if (mp.name!="") {
 ;【テキスト枠】会話パート用 下部横長
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
-;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
 
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -410,10 +326,11 @@ if (mp.name!="") {
 [chara_config ptext="chara_name_area"]
 
 [stopbgm]
-;【BGM】主人公邸通常会話パート用（容量に余裕があれば回想っぽいBGM）
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [eval exp="f.kaogura='on'"]
 
 [resetfont]
@@ -458,7 +375,7 @@ if (mp.name!="") {
 [主人公閉目パチ1回]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「いえ、隅っこにお願いします。[r]
-　少し日陰なくらいが、ちょうど良いのですよ」[p]
+[sp]少し日陰なくらいが、ちょうど良いのですよ」[p]
 #
 
 ;【背景】プロローグと同じ黒っぽい和紙風、全画面テキスト

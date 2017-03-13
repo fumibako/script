@@ -1,4 +1,4 @@
-﻿;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+﻿﻿;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 ;	[skipstart]
 ;[endif]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]

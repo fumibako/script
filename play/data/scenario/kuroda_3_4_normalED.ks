@@ -1,4 +1,4 @@
-﻿﻿;=============================================
+﻿﻿﻿;=============================================
 ;◆黒田イベント【分岐：normalED】黒田ルートかつ3月4週になった時点で淑女度一定値未満、好感度一定値未満で1度だけ発生
 ;=============================================
 
@@ -43,8 +43,11 @@ $(".rp_bt").remove();
 
 [whosay name="磯野" color="dimgray"]
 「本日は、黒田様のご卒業式ですね。行ってらっしゃいませ」[p]
-;【BGM】絆（想いを込めて）
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -146,8 +149,11 @@ $(".rp_bt").remove();
 [playse storage=tori_mejiro.ogg loop=false ]
 その時、目白が枝に止まり、花弁がひらひらと舞った。[l][r]
 [r]
-;【BGM】花ごよみ（normal/goodED用）
-[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true click=true]
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 枝に揺れる目白を見上げ、黒田様は力を得たようにこちらへと向き直られた。[r]
 [r]
 その瞳は決意をたたえている。[p]
