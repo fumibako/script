@@ -103,8 +103,10 @@
 ;◆四条イベント判定
 ;=============================================
 *sijyou_event_hantei
+	[eval exp="f.event_jiki='weekend'"]
 @jump storage="01_sijyou_event_hantei_week_owari.ks" target=*start
 *sijyou_event_hantei_owari
+	[eval exp="f.event_jiki=''"]
 
 ;=============================================
 ;◆財前イベント判定
