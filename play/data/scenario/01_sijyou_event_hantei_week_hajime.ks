@@ -117,15 +117,6 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
-;◆四条イベント判定【お正月の手紙話】sijyou_1_3_normalED.ks(1_3)1_3は重なるので1_2
-[if exp="(f.okeiko_month == 1 && f.okeiko_week == 2) && f.event_sijyou[18] == 0 && f.sijyou_au == 1"]
-	[eval exp="f.event_storage='sijyou/sijyou_1_3_normalED.ks'"]
-	[eval exp="f.event_target='*replay_sijyou_1_3'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_sijyou[18]=1"]
-	@jump storage="event.ks" target=*start
-[endif]
-;================================================
 ;◆四条イベント判定【華衣のその後・１＿3、散策４をみたら？】sijyou_omake_kai.ks
 [if exp="(f.okeiko_month == 1 && f.okeiko_week == 3) && f.event_sijyou[12] == 0 && f.sijyou_au == 1"]
 	[eval exp="f.event_storage='sijyou/sijyou_omake_kai.ks'"]
