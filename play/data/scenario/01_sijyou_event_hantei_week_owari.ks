@@ -43,6 +43,15 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
+;◆四条イベント判定【華衣のその後・１＿3、散策４をみたら？】sijyou_omake_kai.ks
+[if exp="(f.okeiko_month == 1 && f.okeiko_week == 3) && f.event_sijyou[12] == 0 && f.sijyou_au == 1"]
+	[eval exp="f.event_storage='sijyou/sijyou_omake_kai.ks'"]
+	[eval exp="f.event_target='*replay_sijyou_omake_kai'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_sijyou[12]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+;================================================
 ;◆四条イベント判定【華道教室・華道パラが高い】  sijyou_2_1.ks
 [if exp="(f.okeiko_month == 2 && f.okeiko_week == 1) && f.para_shujinkou_j_kadou > 100 && f.event_sijyou[14] == 0 && f.sijyou_au == 1"]
 	[eval exp="f.event_storage='sijyou/sijyou_2_1.ks'"]
