@@ -26,8 +26,6 @@
 ;◆四条イベント判定 sijyou_sansaku3.ks(9-3園遊会～9月末(銀座デート前まで)華道パラが上がる？ 華道展イベントフラグ2sijyou_sobo=true)
 ;◆四条イベント判定【園遊会】sijyou_9_3.ksを見てからsijyou_sansaku3.ks
 [if exp="f.sijyou_au == 1 && f.event_sijyou[5] == 1 && (f.okeiko_month == 9 || f.okeiko_month == 10 && f.okeiko_week == 1) && f.event_machi_sijyou[3] == 0 "]
-;↑発生条件をf.event_machi_sijyou[5]華衣乳母日傘イベント→f.event_sijyou[5]園遊会イベントに修正しました。問題がある場合は再修正をお願いします。また、判定式からは銀座デート後の10月1週も発生しそうですが問題ないでしょうか(◆jsYiJcqRkk
-;修正前：[if exp="f.sijyou_au == 1 && f.event_machi_sijyou[5] == 1 && (f.okeiko_month == 9 || f.okeiko_month == 10 && f.okeiko_week == 1) && f.event_machi_sijyou[3] == 0 "]
 	[eval exp="f.event_machi_sijyou[3]=1"]
 	@jump storage="sijyou/sijyou_sansaku3.ks" 
 	;target=*sansaku
@@ -46,7 +44,7 @@
 	@jump storage="sijyou/sijyou_sansaku5.ks" 
 	;target=*sansaku
 [elsif exp="f.okeiko_month == 12 && f.event_machi_sijyou[17] == 0 && f.sijyou_event6==1"]
-;↑11月は入れなくても大丈夫でしょうか(◆jsYiJcqRkk
+;↑11月は入れなくても大丈夫でしょうか(◆jsYiJcqRkk OK
 	;「１７」なのは時期によってパターンが違うため	
 	[eval exp="f.event_machi_sijyou[17]=1"]
 	@jump storage="sijyou/sijyou_sansaku5.ks" 
@@ -113,15 +111,18 @@
 	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定【散策１】12月sijyou_sansaku.ks
-[if exp="f.okeiko_month == 12 && f.event_machi_sijyou[14] == 0 && f.sijyou_au == 1"]
-;↑事件後の12月に？？？(華衣)から「華織は遊び人だ、お見合いはやめておくんだな」と言われるイベントが起きるのは違和感が出そうですが、この判定内容で意図通りでしょうか？
-;何か意図があって置いておられると思いますので、そのままにしておきます(◆jsYiJcqRkk
-	[eval exp="f.event_machi_sijyou[14]=1"]
-	@jump storage="sijyou/sijyou_sansaku.ks" 
-	;target=*sansaku
-[endif]
-;================================================
+;sijyou_sansaku2.ks
+;sijyou_sansaku3.ks
+;sijyou_sansaku4.ks
+;sijyou_sansaku5.ks
+;sijyou_sansaku6.ks
+;sijyou_sansaku7.ks
+;8ない。（旧華衣おまけ）
+;sijyou_sansaku9.ks
+;sijyou_sansaku10.ks
+;sijyou_sansaku11.ks
+;sijyou_sansaku12.ks
+;sijyou_sansaku13.ks
 
 ;↓他のイベント判定処理リストに戻ります
 @jump storage="sansaku.ks" target=*sijyou_event_hantei_owari
