@@ -33,6 +33,38 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+
+[if exp="f.test_gamen == true"]
+テストページからプレイしています。手紙まで移動しますか？[r]
+;---------------------------
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok1]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no1]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no1
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「わかったわ。すぐ参りますとお伝え下さい」[p]
 [autosave]
@@ -259,6 +291,7 @@ $('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)',
 $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
 $('.yuki').remove();
 [endscript]
+*seen_end
 ;¥¥¥¥¥¥¥¥イベント7おわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 
