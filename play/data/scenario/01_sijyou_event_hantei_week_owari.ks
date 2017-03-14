@@ -43,7 +43,7 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
-;◆四条イベント判定【華衣のその後・１＿3、散策４をみたら？】sijyou_omake_kai.ks
+;◆四条イベント判定【華衣のその後・1/3】sijyou_omake_kai.ks
 [if exp="(f.okeiko_month == 1 && f.okeiko_week == 3) && f.event_sijyou[12] == 0 && f.sijyou_au == 1"]
 	[eval exp="f.event_storage='sijyou/sijyou_omake_kai.ks'"]
 	[eval exp="f.event_target='*replay_sijyou_omake_kai'"]
