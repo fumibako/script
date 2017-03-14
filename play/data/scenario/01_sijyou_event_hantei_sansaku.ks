@@ -16,7 +16,7 @@
 [endif]
 ;================================================
 ;◆四条イベント判定 sijyou_sansaku2.ks(9-2お見合い決定～9月末(銀座デート前まで)華道パラが上がる？華道展イベントフラグ2sijyou_sobo=true9
-[if exp="f.okeiko_month == 9 && f.event_machi_sijyou[2] == 0 && f.sijyou_au == 1"]
+[if exp="f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3 || f.okeiko_week == 4 ) && f.event_machi_sijyou[2] == 0 && f.sijyou_au == 1"]
 ;↑9月1週も発生する条件で問題ないでしょうか？チェックリストにはコメント文の判定内容を載せています(◆jsYiJcqRkk
 	[eval exp="f.event_machi_sijyou[2]=1"]
 	@jump storage="sijyou/sijyou_sansaku2.ks" 
@@ -25,7 +25,7 @@
 ;================================================
 ;◆四条イベント判定 sijyou_sansaku3.ks(9-3園遊会～9月末(銀座デート前まで)華道パラが上がる？ 華道展イベントフラグ2sijyou_sobo=true)
 ;◆四条イベント判定【園遊会】sijyou_9_3.ksを見てからsijyou_sansaku3.ks
-[if exp="f.sijyou_au == 1 && f.event_sijyou[5] == 1 && (f.okeiko_month == 9 || f.okeiko_month == 10 && f.okeiko_week == 1) && f.event_machi_sijyou[3] == 0 "]
+[if exp="f.sijyou_au == 1 && f.event_sijyou[5] == 1 && (f.okeiko_month == 9 && f.okeiko_week == 4 || f.okeiko_month == 10 && f.okeiko_week == 1) && f.event_machi_sijyou[3] == 0 "]
 	[eval exp="f.event_machi_sijyou[3]=1"]
 	@jump storage="sijyou/sijyou_sansaku3.ks" 
 	;target=*sansaku
@@ -44,8 +44,8 @@
 	@jump storage="sijyou/sijyou_sansaku5.ks" 
 	;target=*sansaku
 [elsif exp="f.okeiko_month == 12 && f.event_machi_sijyou[17] == 0 && f.sijyou_event6==1"]
-;↑11月は入れなくても大丈夫でしょうか(◆jsYiJcqRkk OK
-	;「１７」なのは時期によってパターンが違うため	
+;↑11月は入れなくてもOK 12月が暇な時期	
+;「１７」なのは時期によってパターンが違うため	
 	[eval exp="f.event_machi_sijyou[17]=1"]
 	@jump storage="sijyou/sijyou_sansaku5.ks" 
 	;target=*sansaku
@@ -84,31 +84,24 @@
 ;↑コメントに書いていただいた"四条ルートのみいつでも"に合わせて9月も入るように調整させていただきました(◆jsYiJcqRkk
 	[eval exp="f.event_machi_sijyou[10]=1"]
 	@jump storage="sijyou/sijyou_sansaku10.ks" 
-	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定 sijyou_sansaku11.ks(いつでも→四条ルートのみに。但し、華道と四条の好感度50以上あるとき.美華イベント)
-[if exp="f.okeiko_month >= 9 && f.sijyou_au == 1 && f.event_machi_sijyou[11] == 0"]
-;↑コメントに書いていただいた"四条ルートのみいつでも"に合わせて9月も入るように調整させていただきました(◆jsYiJcqRkk
+;◆四条イベント判定 sijyou_sansaku11.ks(四条ルートのみ、(10月~2月)九月×　三月×　
+[if exp="(f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2) && f.sijyou_au == 1 && f.event_machi_sijyou[11] == 0"]
 	[eval exp="f.event_machi_sijyou[11]=1"]
 	@jump storage="sijyou/sijyou_sansaku11.ks" 
-	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定 sijyou_sansaku12.ks(9月以降)
-[if exp="f.okeiko_month >= 9 && f.sijyou_au == 1 && f.event_machi_sijyou[12] == 0"]
-;↑コメントに書いていただいた"四条ルートのみいつでも"に合わせて9月も入るように調整させていただきました(◆jsYiJcqRkk
+;◆四条イベント判定 sijyou_sansaku12.ks(10月~2月)九月×　三月×　
+[if exp="(f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2) && f.sijyou_au == 1 && f.event_machi_sijyou[12] == 0"]
 	[eval exp="f.event_machi_sijyou[12] = 1"]
 	@jump storage="sijyou/sijyou_sansaku12.ks" 
-	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定 sijyou_sansaku13.ks(9月以降)
-[if exp="f.okeiko_month >= 9 && f.sijyou_au == 1 && f.event_machi_sijyou[13] == 0"]
-;↑コメントに書いていただいた"四条ルートのみいつでも"に合わせて9月も入るように調整させていただきました(◆jsYiJcqRkk
+;◆四条イベント判定 sijyou_sansaku13.ks(10月~2月)九月×　三月×
+[if exp="(f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2) && f.sijyou_au == 1 && f.event_machi_sijyou[13] == 0"]
 	[eval exp="f.event_machi_sijyou[13]=1"]
 	@jump storage="sijyou/sijyou_sansaku13.ks" 
-	;target=*sansaku
 [endif]
 ;================================================
 ;sijyou_sansaku2.ks
