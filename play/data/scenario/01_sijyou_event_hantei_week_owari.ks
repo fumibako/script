@@ -5,7 +5,16 @@
 
 *sijyou_event_hantei
 ;以下にイベント判定を追記してください。Wikiに説明を追記予定ですが、Googleスプレッドシート「四条イベントリスト」のうち週終わりに発生予定のイベント分を貼っていただければ大丈夫と思います。
-
+;================================================
+;◆四条イベント判定【顔合せ】判定 四条ルートかつ9月2週になった時点で1度だけ発生
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 2) && f.event_sijyou[4] == 0 && f.sijyou_au == 1"]
+	[eval exp="f.event_storage='sijyou/sijyou_9_2.ks'"]
+	[eval exp="f.event_target='*replay_sijyou_9_2'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_sijyou[4]=1"]
+ 	[eval exp="f.sijyou_omiai=1"]
+	@jump storage="event.ks" target=*start
+[endif]
 ;================================================
 ;◆四条イベント判定【デート】sijyou_9_4.ks
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 4) && f.event_sijyou[6] == 0 && f.sijyou_au == 1"]
