@@ -43,7 +43,36 @@
 [主人公ポーズ片手]
 「四条家に入るにあたって、[r]
 [sp]お言葉など気をつけることは、他にあるかしら？」[p]
-;あたり？
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。手紙まで移動しますか？[r]
+;---------------------------
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok1]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no1]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no1
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
 *seen0
 [whosay name=磯野 color="dimgray"]
 [主人公ポーズ通常]
@@ -554,6 +583,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 （ストール、またお会いしたときに返しましょうか……）[p]
+*seen_end
 [eval exp="f.sijyou_ani=true"]
 ;==============================================================================================================
 #
