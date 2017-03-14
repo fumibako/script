@@ -23,8 +23,14 @@
 @jump target=*event_hantei_week_hajime_owari
 [endif]
 ;◆イベント判定(週始め)へ飛んで戻ってくる
+;↓◆イベント判定処理を見るための変数をセット
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks判定開始'"]
+[変数ログ表示]
 @jump storage="event_hantei_week_hajime.ks" target=*start
 *event_hantei_week_hajime_owari
+;↓◆イベント判定処理を見るための変数をセット
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks判定終了'"]
+[変数ログ表示]
 
 ;◆手紙到着判定
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_all
@@ -55,9 +61,14 @@
 [endif]
 *event_hantei_week_owari
 ;◆イベント判定(週終わり：エンディングイベントなどの判定処理リスト)へ飛んで戻ってくる
+;↓◆イベント判定処理を見るための変数をセット
+[eval exp="f.hantei_event_storage='event_hantei_week_owari.ks判定開始'"]
+[変数ログ表示]
 @jump storage="event_hantei_week_owari.ks" target=*start
 *event_hantei_week_owari_owari
-
+;↓◆イベント判定処理を見るための変数をセット
+[eval exp="f.hantei_event_storage='event_hantei_week_owari.ks判定終了'"]
+[変数ログ表示]
 ;◆「休憩中」画像切り替え(四条9月4週のイベント後は画像表示すると違和感があったので、無しに
 [freeimage layer = 26]
 [layopt layer=26 visible=true]

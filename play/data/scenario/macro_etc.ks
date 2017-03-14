@@ -4,6 +4,14 @@
 ;==============================
 ; その他マクロ設定
 ;==============================
+;◆[変数ログ表示]
+[macro name="変数ログ表示"]
+[iscript]
+console.info("f.hantei_event_storage=", this.kag.stat.f.hantei_event_storage);
+console.info("f.okeiko_week=", this.kag.stat.f.okeiko_week);
+[endscript]
+[endmacro]
+
 ;◆【[暗転２ clegit=true]】
 [macro name=暗転２]
 ;名前欄消去

@@ -6,6 +6,7 @@
 ;↓◆お稽古パート経由かどうか見るための変数をセット
 [eval exp="tf.okeiko_gamen=true"]
 [eval exp="f.okeiko_gamen=true"]
+[eval exp="f.event_jiki='未定'"]
 [skipstop]
 
 [call target=*start storage="01_sijyou_hensuu.ks"]
@@ -19,6 +20,9 @@
 ;手紙処理に使用する変数を初期化
 [eval exp="f.list_count=0"]
 [eval exp="f.binsen_number=0"]
+;↓◆イベント判定処理を見るための変数をセット
+[eval exp="f.hantei_event_storage='判定処理前'"]
+[変数ログ表示]
 
 
 

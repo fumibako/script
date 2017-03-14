@@ -2,7 +2,6 @@
 ;お稽古パート:画面表示処理:テスト値表示部分
 ;=============================================
 *start
-
 @layopt layer=message1 page=fore visible = false
 [current layer="message1"]
 ;メッセージレイヤサイズをテスト表示用に設定変更
