@@ -36,6 +36,34 @@
 [whosay name="華織" color="olivedrab"]
 「もし、分からないことがあったら仰ってください、こちら側からお手伝い[r]
 [sp]しますので」[p]
+;---------------------------
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok1]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no1]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no1
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
 [四条_隣_目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
@@ -978,6 +1006,7 @@ _　たとえ華道に対するお志が高くとも、私が……）[p]
 ;ｲﾍﾞﾝﾄｼｰﾝ終了時に　誰もいない教室がでるため暗転 messageは表示されない
 [主人公退場]
 [四条退場]
+*seen_end
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen==true"]
