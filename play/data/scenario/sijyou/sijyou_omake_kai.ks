@@ -39,6 +39,37 @@ $('.loding_pic').remove();
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+[whosay name="四条母" color="#9B608B"]
 「あぁ、せめて私も手伝ってあげたいのだけど、アナタからもちょっと[r]
 [sp]言って！」[p]
 [whosay name="四条父" color="%mp.color"]
@@ -225,7 +256,7 @@ $('.loding_pic').remove();
 その花は、また誰かに幸せを与え、新しい花を咲かすことを願っている。[p]
 ;=================================================================================_
 *seen3
-
+*seen_end
 [イベントシーン終了]
 
 [イベントシーン終了４]
