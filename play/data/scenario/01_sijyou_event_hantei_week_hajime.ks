@@ -62,25 +62,7 @@
 ;@jump storage="event.ks" target=*start
 ;[endif]
 ;================================================
-;◆四条イベント判定【顔合せ】判定 四条ルートかつ9月2週になった時点で1度だけ発生
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 2) && f.event_sijyou[4] == 0 && f.sijyou_au == 1"]
-	[eval exp="f.event_storage='sijyou/sijyou_9_2.ks'"]
-	[eval exp="f.event_target='*replay_sijyou_9_2'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_sijyou[4]=1"]
- 	[eval exp="f.sijyou_omiai=1"]
-	@jump storage="event.ks" target=*start
-[endif]
-;================================================
-;◆四条イベント判定【園遊会】sijyou_9_3.ks
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 3) && f.event_sijyou[5]==0 && f.sijyou_au==1"]
-	[eval exp="f.event_storage='sijyou/sijyou_9_3.ks'"]
-	[eval exp="f.event_target='*replay_sijyou_9_3'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_sijyou[5]=1"]
-	@jump storage="event.ks" target=*start
-[endif]
-;================================================
+
 ;◆四条イベント判定【デート】sijyou_9_4.ks　は別ファイル
 ;================================================
 ;◆四条イベント判定【障害のはじまり/手紙が帰ってこなくなる】sijyou_10_1.ks
