@@ -40,13 +40,13 @@
 [current layer="message1"]
 [font color=white size=32]
 
-[link target=*jump_ok]は　　　い[endlink][r]
+[link target=*jump_ok1]は　　　い[endlink][r]
 [r][r][r]
-[link target=*jump_no]い　い　え[endlink][r]
+[link target=*jump_no1]い　い　え[endlink][r]
 [resetfont]
 [s]
 
-*jump_ok
+*jump_ok1
 [current layer="message0"]
 [resetfont]
 「はい」[r]
@@ -55,7 +55,7 @@
 @jump target=*seen3
 [s]
 
-*jump_no
+*jump_no1
 [current layer="message0"]
 「いいえ」[r]
 そのまま続きの場面に移動します。[p]
