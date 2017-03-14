@@ -25,6 +25,15 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
+;◆四条イベント判定【園遊会】sijyou_9_3.ks
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 3) && f.event_sijyou[5]==0 && f.sijyou_au==1"]
+	[eval exp="f.event_storage='sijyou/sijyou_9_3.ks'"]
+	[eval exp="f.event_target='*replay_sijyou_9_3'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_sijyou[5]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+;================================================
 ;ennding パラメータは適当です
 ;================================================
 ;◆四条normalED判定 四条ルートかつ3月4週が終わる時点で淑女度一定値未満又は好感度一定値未満で1度だけ発生　イベント上で分岐することに
