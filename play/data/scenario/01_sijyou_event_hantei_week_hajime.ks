@@ -134,15 +134,7 @@
 	[eval exp="f.event_sijyou[13]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-;================================================
-;◆四条イベント判定【華道教室・華道パラが高い】  sijyou_2_1.ks
-[if exp="(f.okeiko_month == 2 && f.okeiko_week == 1) && f.para_shujinkou_j_kadou > 100 && f.event_sijyou[14] == 0 && f.sijyou_au == 1"]
-	[eval exp="f.event_storage='sijyou/sijyou_2_1.ks'"]
-	[eval exp="f.event_target='*replay_sijyou_2_1'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_sijyou[14]=1"]
-	@jump storage="event.ks" target=*start
-[endif]
+
 ;================================================
 ;◆四条イベント判定【華道展・f.sijyou_sobo==true】 sijyou_3_1.ks
 [if exp="(f.okeiko_month == 3 && f.okeiko_week == 1) && f.sijyou_sobo == true && f.event_sijyou[15] == 0 && f.sijyou_au == 1"]
