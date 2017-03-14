@@ -52,11 +52,14 @@
 ;これも先生のおかげです。と言いたいが先生の呼び方が…有名な華道漫画でも読んでサラッと調べてみる
 [主人公目閉]
 ;---------------------------
+;------------------------------------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font color=white size=32]
+[font size=32]
 
 [link target=*jump_ok1]は　　　い[endlink][r]
 [r][r][r]
