@@ -240,12 +240,8 @@
 ;2(18)katuraginomiya_sansaku1.ks
 ;3(19)katuraginomiya_sansaku2.ks
 ;=========================================================
-
-
-[if exp="f.debak == true"]
-[iscript]
-alert("葛城宮のイベント判定スルーです");
-[endscript]
+[if exp="f.test_gamen==true"]
+[変数ログ表示]
 [endif]
 
 ;↓他のイベント判定処理リストに戻ります
