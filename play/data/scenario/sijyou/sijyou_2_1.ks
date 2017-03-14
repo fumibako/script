@@ -51,10 +51,38 @@
 「ありがとうございます」[p]
 ;これも先生のおかげです。と言いたいが先生の呼び方が…有名な華道漫画でも読んでサラッと調べてみる
 [主人公目閉]
+;---------------------------
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok1]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no1]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+
+*jump_no1
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
 [whosay name=華道の先生 color=%mp.color]
 「華道とは、心を磨くもの。[r]
-[sp][名前]さんが、上達したのも、きっと、どなたかに捧げたい思いがあるので[r]
-[sp]しょう」[p]
+[sp][名前]さんが、上達したのも、きっと、どなたかに捧げたい思いが[r]
+[sp]あるのでしょう」[p]
 ;盛り上げ役。
 ;(照れる主人公) セリフはなくていいかな
 [主人公照れ目普通]
@@ -1279,9 +1307,8 @@ _　いらっしゃるのでしょうか？）[p]
 ;私は、畏敬の念を[ruby text=いだい]抱いた。[p]
 ;雲心月性 opに回帰　僅かに臆してしまった。　
 ;なんかいい言葉で。
-
+*seen_end
 ;引用元：～～はじめての　池坊いけばな入門～～
-[eval exp="tf.test_sijyou=false"]
 @jump storage="sijyou/sijyou_2_1b.ks"
 ;続編に飛ぶ
 [if exp="tf.test_sijyou==true"]
