@@ -37,6 +37,8 @@
 「もし、分からないことがあったら仰ってください、こちら側からお手伝い[r]
 [sp]しますので」[p]
 ;---------------------------
+[if exp="tf.test_gamen==true"]
+テストページからプレイしています。手紙まで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
