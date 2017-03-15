@@ -117,9 +117,6 @@
 ;↓目：[主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-;↓口：[主人公口開]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
-[wait time=10]
 「磯野、どの様にお返事を書いたら良いかしら？」[p]
 
 ;手紙の語調について
