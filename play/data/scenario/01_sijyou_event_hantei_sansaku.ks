@@ -8,13 +8,6 @@
 ;================================================
 ;散策
 ;================================================
-;◆四条イベント判定【散策１】9月1週~9月4週(銀座デート前まで)に1度だけ発生sijyou_sansaku.ks
-[if exp="f.okeiko_month==9 && f.event_machi_sijyou[1] == 0 && f.sijyou_au == 1"]
-	[eval exp="f.event_machi_sijyou[1]=1"]
-	@jump storage="sijyou/sijyou_sansaku.ks" 
-	;target=*sansaku
-[endif]
-;================================================
 ;◆四条イベント判定 sijyou_sansaku2.ks(9-2お見合い決定～9月末(銀座デート前まで)華道パラが上がる？華道展イベントフラグ2sijyou_sobo=true9
 [if exp="f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3 || f.okeiko_week == 4 ) && f.event_machi_sijyou[2] == 0 && f.sijyou_au == 1"]
 ;↑9月1週も発生する条件で問題ないでしょうか？チェックリストにはコメント文の判定内容を載せています(◆jsYiJcqRkk
@@ -31,10 +24,17 @@
 	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定 sijyou_sansaku4.ks(11月3週→12～1月末)　事件解決後の華衣のイベント
-[if exp="f.sijyou_au == 1 && (f.okeiko_month == 12 || f.okeiko_month == 1) && f.event_machi_sijyou[4] == 0 && f.sijyou_event6 == 1"]
-	[eval exp="f.event_machi_sijyou[4]=1"]
-	@jump storage="sijyou/sijyou_sansaku4.ks" 
+;◆四条イベント判定条 sijyou_sansaku7.ks(香水イベント　３月華道パラメータ一定値以上、四条好感度一定値以上)数値は適当
+[if exp="f.okeiko_month == 3 && f.event_machi_sijyou[7] == 0 && f.para_shujinkou_j_kadou > 70 && f.para_sijyou_koukando > 80 && f.sijyou_au == 1"]
+	[eval exp="f.event_machi_sijyou[7]=1"]
+	@jump storage="sijyou/sijyou_sansaku7.ks" 
+	;target=*sansaku
+[endif]
+;================================================
+;◆四条イベント判定【散策１】9月1週~9月4週(銀座デート前まで)に1度だけ発生sijyou_sansaku.ks
+[if exp="f.okeiko_month==9 && f.event_machi_sijyou[1] == 0 && f.sijyou_au == 1"]
+	[eval exp="f.event_machi_sijyou[1]=1"]
+	@jump storage="sijyou/sijyou_sansaku.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
@@ -58,10 +58,10 @@
 	;target=*sansaku
 [endif]
 ;================================================
-;◆四条イベント判定条 sijyou_sansaku7.ks(香水イベント　３月華道パラメータ一定値以上、四条好感度一定値以上)数値は適当
-[if exp="f.okeiko_month == 3 && f.event_machi_sijyou[7] == 0 && f.para_shujinkou_j_kadou > 70 && f.para_sijyou_koukando > 80 && f.sijyou_au == 1"]
-	[eval exp="f.event_machi_sijyou[7]=1"]
-	@jump storage="sijyou/sijyou_sansaku7.ks" 
+;◆四条イベント判定 sijyou_sansaku4.ks(11月3週→12～1月末)　事件解決後の華衣のイベント
+[if exp="f.sijyou_au == 1 && (f.okeiko_month == 12 || f.okeiko_month == 1) && f.event_machi_sijyou[4] == 0 && f.sijyou_event6 == 1"]
+	[eval exp="f.event_machi_sijyou[4]=1"]
+	@jump storage="sijyou/sijyou_sansaku4.ks" 
 	;target=*sansaku
 [endif]
 ;================================================
