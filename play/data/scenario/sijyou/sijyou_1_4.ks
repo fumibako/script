@@ -15,6 +15,8 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
 [font color=white size=27]
 [プリロード画面消去]
 正月を過ぎる頃。 [r]
@@ -591,7 +593,7 @@
 ;==============================================================================================================
 #
 [イベントシーン終了]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

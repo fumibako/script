@@ -36,7 +36,7 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 *fumi_toutyaku_sijyou_101
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お正月」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「お正月」";
@@ -96,8 +96,10 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;[sp]　　　　　　　　　　　　　　　　　四条華織[p]
 [position vertical=false]
 [resetfont]
+[if exp="f.okeiko_gamen==true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[2][100] = 0"]
+[endif]
 [手紙四条読了 fumi_number=]
 ;位置変更
 [iscript]

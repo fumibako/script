@@ -17,6 +17,9 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+;全画面テキストから開始時に文字が表示されない場合があるため、↓追記します(◆jsYiJcqRkk
+@layopt layer=message0 visible=true
+[current layer="message0"]
 [font color=white size=27]
 [プリロード画面消去]
 ;スクリプト担：↓お稽古パートから歌舞伎見物シーンへ自然につながるような地の文を入れたいのですが、こんな感じで大丈夫でしょうか？

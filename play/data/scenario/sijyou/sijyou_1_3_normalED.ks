@@ -34,7 +34,7 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
-[if exp="f.test_gamen == true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。手紙まで移動しますか？[r]
 ;---------------------------
 ;選択肢用レイヤーを追加

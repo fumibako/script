@@ -352,7 +352,7 @@
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 *fumi_toutyaku_sijyou_102
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「四条華道展のお誘い」　四条 華織"; //←仮タイトルです。ご自由に変更してください
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「四条華道展のお誘い」"; //←仮タイトルです。ご自由に変更してください
@@ -404,8 +404,10 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [link target=fumi_in3_3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
 *fumi_in3_3
 [er]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[2][101] = 0"]
+[endif]
 [手紙四条読了 fumi_number=]
 ;～～～～～～～～～～手紙2おわり～～～～～～～～～～～～～～
 [if exp="tf.test_gamen==true"]
