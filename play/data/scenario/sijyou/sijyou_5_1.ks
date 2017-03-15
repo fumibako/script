@@ -26,16 +26,19 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
-*seen1
+*seen0
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公通常]
 #
 私は、思い切って磯野に相談することにした。[p]
+
+*seen1
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄様のことを聞いていいかしら」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -96,7 +99,7 @@
 [sp]お嬢様との仲が深まった後に諦めずにお手紙を送られると」 [p]
 
 「お互いの事をよく知るための[r]
-[sp]大事なきっかけの一つになるかもしれません」 [p]
+[sp]大事なきっかけの一つになるかもしれませんよ」 [p]
  
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：通常 [主人公眉通常]
@@ -121,6 +124,12 @@
 
 ;手紙の語調について
 [whosay name=磯野 color="dimgray"]
+;↓口：通常 [主人公口通常]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 「昔のように『気軽に』書かれてみては、如何でしょう」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
