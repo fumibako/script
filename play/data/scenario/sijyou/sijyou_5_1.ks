@@ -57,6 +57,9 @@
 [主人公目パチ1回]
 [p]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（よく考えてみたら、四条様のお家のことも知らないわ）[p]
+
 [whosay name=磯野 color="dimgray"]
 「華織様は、四人御兄弟のうちの御次男でございます」[p]
 ;11_1_kaiで有り 
@@ -86,6 +89,9 @@
 （でも、あの頃の四条様より、少し、お手紙の内容が……）[p]
 
 [whosay name=磯野 color="dimgray"]
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 「その時の話題の御返答が芳しくなくても、[r] 
 [sp]お嬢様との仲が深まった後に諦めずにお手紙を送られると」 [p]
 
@@ -96,12 +102,21 @@
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 (お互いの事をよく知る……きっかけですか。[r] 
-[sp]反応が良ろしくなくても時期をみて、続けてお手紙を[r]
-[sp]出してみることも大事なのね)[p]
+[sp]反応が良くなくても時期をみて、続けてお手紙を出してみることも[r]
+[sp]大事なのね)[p]
 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓口：[主人公口開]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 「磯野、どの様にお返事を書いたら良いかしら？」[p]
 
 ;手紙の語調について
