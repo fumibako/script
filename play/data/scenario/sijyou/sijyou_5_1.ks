@@ -153,8 +153,8 @@
 [sp]如何でしょうか？」[p]
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「また、お話があうように"華道のお稽古"も、ほどほどに重ねておく[r]
-[sp]と良いでしょう」[p]
+「また、お話があうように"華道のお稽古"も、ほどほどに重ねておくと[r]
+[sp]良いでしょう」[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
