@@ -8,9 +8,9 @@ https://fumibako.github.io/script/play/
 公式サイトプレビューはこちらになります  
 https://fumibako.github.io/script/  
 
-##スタッフ作業用リンク(完成後このリンクは消す予定です)  
-・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  
-・葛城宮シナリオ：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/katuraginomiya  
+##スタッフ作業用リンク(完成後このリンクは消す予定です)    
+・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  　
+・葛城宮シナリオ：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/katuraginomiya  
 ・藤枝シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/hujieda  
 ・財前シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/zaizen  
 ・シナリオやスクリプト全般　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario  
