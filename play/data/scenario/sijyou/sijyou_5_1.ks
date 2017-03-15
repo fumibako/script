@@ -95,7 +95,7 @@
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-「その時の話題の御返答が芳しくなくても、[r] 
+「その時の話題の御返答が[ruby text=かんば]芳しくなくても、[r] 
 [sp]お嬢様との仲が深まった後に諦めずにお手紙を送られると」 [p]
 
 「お互いの事をよく知るための[r]
