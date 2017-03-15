@@ -7,12 +7,21 @@
 ;=============================================
 
 *event_hantei_week_owari
-;◆葛城宮　最後の手紙を見ている場合は　event_hantei_week_owariにスキップ 
+[eval exp="f.hantei_event_storage='event_hantei_week_owari判定開始'"]
+[変数ログ表示]
+;◆葛城宮　最後の手紙を見ている場合は　event_hantei_katuragi_skipにスキップ 
 [if exp="f.event_oaite_mitei == 1 && (f.event_katuraginomiya[21] == 1 || f.event_katuraginomiya[22] == 1)"]
 ;葛城宮　最後の手紙処理
 @jump target=*event_hantei_katuragi_skip
 [endif]
 ;=============================================================================
+[eval exp="f.hantei_event_storage='event_hantei_week_owari葛城宮9_1判定直前'"]
+[変数ログ表示]
+[if exp="f.kuroda_au + f.zaizen_au + f.sijyou_au + f.katuraginomiya_au + f.hujieda_au != 0"]
+	@jump target=*event_hantei_katuragi_skip
+[endif]
+[eval exp="f.hantei_event_storage='event_hantei_week_owari葛城宮9_1判定開始'"]
+[変数ログ表示]
 ;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
 ;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生
 ;葛城宮進行条件：event3をみている+好感度20以上+淑女度30以上(財前の淑女度判定２０が反応してしまう、財前は淑女度３０以上で回避)
@@ -50,6 +59,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 *event_hantei_katuragi_skip
+[eval exp="f.hantei_event_storage='event_hantei_week_owari.ks葛城宮9_1判定skip通過'"]
+[変数ログ表示]
 ;=======================================================================
 ;◆イベント判定(週終わり：12月3週のbadEDは週始め開始のため、他のイベントと同じ並びで判定）
 ;◆判定 9月1週始めにお相手選びを保留すると、終わった時点で再度お相手選び

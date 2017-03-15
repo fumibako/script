@@ -4,6 +4,8 @@
 *start
 
 *katuraginomiya_event_hantei
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks冒頭通過'"]
+[変数ログ表示]
 ;↓以下にイベント判定を追記
 ;テスト用 他攻略ｷｬﾗと比較できるようにイベントを見たら上がるようにしてありますが０入力等で一括調整してください
 ;5→0に調整しました。調整しやすく作ってくださってありがとうございます(◆jsYiJcqRkk
@@ -103,7 +105,14 @@
    @jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last	
 [endif]
 ;=======================================================================================
-;4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定直前'"]
+[変数ログ表示]
+[if exp="f.kuroda_au + f.zaizen_au + f.sijyou_au + f.katuraginomiya_au + f.hujieda_au != 0"]
+	@jump target=*event_hantei_katuragi_skip
+[endif]
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定開始'"]
+[変数ログ表示]
+;(A)4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
 ;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生(2/11◆jsYiJcqRkk調整
 ;葛城宮進行条件：event3をみている+好感度20以上+淑女度30以上(財前の淑女度判定２０が反応してしまう、財前は淑女度３０以上で回避)
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30"]
@@ -114,9 +123,11 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定中：(A)判定後通過'"]
+[変数ログ表示]
 [eval exp="tf.test='１葛城宮ここは通りましたよ！！！！'"]
 [trace exp="tf.test"]
-;他好感度が３０以上あるとき 葛城宮と比較なし
+;(B)他好感度が３０以上あるとき 葛城宮と比較なし
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && f.para_shujinkou_shukujodo >= 30  && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && (f.para_sijyou_koukando >= 30 || f.para_kuroda_koukando >= 30 || f.para_zaizen_koukando >= 30)"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_9_1'"]
@@ -125,8 +136,10 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定中：(B)判定後通過'"]
+[変数ログ表示]
 [eval exp="tf.test='２葛城宮ここは通りましたよ！！！！'"]
-;又は(もっと考えたい選択時)event3をみている+他キャラクターより好感度が上かつ好感度20以上+淑女度30以上(◆jsYiJcqRkk調整
+;(C)又は(もっと考えたい選択時)event3をみている+他キャラクターより好感度が上かつ好感度20以上+淑女度30以上(◆jsYiJcqRkk調整
 ;&& f.para_shujinkou_shukujodo > 20  必要であれば追加してください		
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 1) && (f.event_oaite_mitei == 1 || f.katuraginomiya_only == 1) && f.event_katuraginomiya[4] == 0 && f.event_katuraginomiya[3] == 1 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30 && (f.para_katuraginomiya_koukando > f.para_sijyou_koukando || f.para_katuraginomiya_koukando > f.para_kuroda_koukando || f.para_katuraginomiya_koukando > f.para_zaizen_koukando || f.para_katuraginomiya_koukando > f.para_hujieda_koukando)  "]
 [eval exp="f.event_storage='katuraginomiya/katuraginomiya_9_1.ks'"]
@@ -136,6 +149,11 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定中：(C)判定後通過'"]
+[変数ログ表示]
+*event_hantei_katuragi_skip
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定skip通過'"]
+[変数ログ表示]
 [eval exp="tf.test='３葛城宮ここは通りましたよ！！！！'"]
 ;=======================================================================================
 ;5◆葛城宮イベント判定katuraginomiya_9_3.ks ルート決定後なので条件はすくなめ（9/3,かつ　au==1のとき）
