@@ -379,7 +379,13 @@ $('.1_fore').remove();
 
 [if exp="f.flag_replay==true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
-@jump storage="replay2.ks"
+[chara_mod name="bg" storage="../fgimage/bg/plane_sepia.jpg" time=1000]
+[wait time=50]
+[clearfix]
+[clearstack]
+[skipstop]
+[stopse]
+@jump storage="replay2.ks" target=*replaypage
 [endif]
 
 ;ending処理待ち
