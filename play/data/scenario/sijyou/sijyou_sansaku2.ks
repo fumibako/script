@@ -31,7 +31,7 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-#町の女性
+[whosay name="町の女性"]
 「その花、一束お願い」[p]
 #
 [主人公目パチ1回]
