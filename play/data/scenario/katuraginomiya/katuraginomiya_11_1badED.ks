@@ -41,6 +41,40 @@ $('.list').remove();
 ;選択肢からここに飛んできます スクリプト担当以外消さないでください
 ;・バットエンド（泣く）
 ;=================================================================
+[if exp="tf.test_gamen==true"]
+katuraginomiya_11_1badED.ks[r]
+テストページから開始しています。イベント終わりまでjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+[イベント中テスト数値表示]
+@jump target=*seen_end
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[イベント中テスト数値表示]
+[endif]
+
 [葛城宮憂い]
 [主人公ポーズ片手]
 [wait time=10]
@@ -136,6 +170,23 @@ $('.list').remove();
 心の中の宝石のようにキラキラといつまでも輝き続け[r]
 私を支え続けていく―― 。[p]
 ;@jump storage="event.ks" target=*event_owari
+*seen_end
+;===============================================================
+[暗転２ storage="bg/bg_prologue_dark.jpg"]
+[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[eval exp="f.haikei_credit=''"]
+;メッセージレイヤを全画面用に設定変更 真ん中に設定する
+[position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
+;テキスト全画面　0x663300
+[font color=white size=35]
+[iscript]
+$("kan").css('margin','auto');
+[endscript]
+;===============================================================
+;画面中央に「完」の文字
+[sp]　  完[p]
+;===============================================================
+[fadeoutbgm time=3000]
 
 [イベントシーン終了]
 [if exp="f.flag_replay==true"]
