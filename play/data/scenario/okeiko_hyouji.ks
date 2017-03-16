@@ -233,20 +233,21 @@ $('.junbi_girl').remove();
 [endif]
 [ct]
 
+;↓アドバイスイベント中はテスト数値非表示
+[if exp="f.event_advice == 0"]
+@jump target=*return_moto_target
+[endif]
+;◆◆テスト表示
 [if exp="tf.test_gamen_sijyou==true"]
 @jump storage="01_sijyou_test_hyouji.ks" target=*start
 [endif]
 
 *sijyou_test_hyouji_owari
-;◆◆テスト表示
 [if exp="(tf.test_gamen==true && tf.test_gamen_sijyou==false)"]
 @jump storage="okeiko_hyouji_test_hyouji.ks" target=*start
 [endif]
 
 *test_hyouji_owari
-[if exp="f.event_advice == 0"]
-@jump target=*button_back_test
-[endif]
 
 *shujinkou_message
 [wait time=10]
@@ -265,6 +266,9 @@ $('.junbi_girl').remove();
 [chara_show left=300 top=220 layer=23 name="sys_fukidasi" time=0]
 [wait time=10]
 
+;↓既読色でも元の濃茶色で表示
+[config_record_label color="0x664f44"]
+
 [if exp="f.para_shujinkou_tairyoku_now < 1 || f.para_shujinkou_kiryoku_now < 1"]
 [chara_mod name="A_base" storage="girl/L/base.png" time=0]
 [wait time=10]
@@ -274,7 +278,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 [wait time=10]
-[font size=25]
+[font size=25 color="0x664f44"]
 そろそろ休憩したいです……
 [eval exp="f.okeikopart_serifu_okeiko_owari=0"]
 [elsif exp="f.okeikopart_serifu_okeiko_owari==1"]
@@ -297,7 +301,7 @@ $('.junbi_girl').remove();
 	[chara_mod name="girl_emo" storage="toumei.gif" time=0]
 	[wait time=10]
 
-[font size=25]
+[font size=25 color="0x664f44"]
 お稽古が終わりました。[r]
 他にも何かしましょうか？
 [eval exp="f.okeikopart_serifu_okeiko_owari=0"]
@@ -310,7 +314,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 [wait time=10]
-[font size=0][emb exp="f.okeiko_month"]月[emb exp="f.okeiko_week"]週：[font size=25]今週は何をしましょうか？
+[font size=0][emb exp="f.okeiko_month"]月[emb exp="f.okeiko_week"]週：[font size=25 color="0x664f44"]今週は何をしましょうか？
 [eval exp="f.okeikopart_shuuhajime=0"]
 [else]
 [chara_mod name="A_base" storage="girl/L/base.png" time=0]
@@ -321,15 +325,18 @@ $('.junbi_girl').remove();
 [wait time=10]
 [chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 [wait time=10]
-[font size=25]
+[font size=25 color=0x664f44]
 他にも何かしましょうか？
 [endif]
+;↓既読色有効に戻す：薄セピア色
+[config_record_label color="0xa68f84"]
 
 *button_back_test
 [if exp="tf.test_gamen==true"]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 [endif]
 
+*return_moto_target
 ;◆表示処理呼び出し元へ戻る
 @jump storage=&f.hyoujimae_storage target=&f.hyoujimae_target
 [s]
@@ -462,7 +469,7 @@ $('.junbi_girl').remove();
 	[eval exp="f.tukihajime = 0"]
 	@jump target=*draw_fukidasi
 [endif]
-[skipstop]
+;[skipstop]
 [if exp="f.tukihajime!=1"]
 	[cm]
 	[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]

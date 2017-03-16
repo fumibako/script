@@ -5,6 +5,8 @@
 
 ;◆イベント発生判定
 *event_hantei
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks冒頭共通イベント判定開始'"]
+[変数ログ表示]
 
 ;=============================================
 ;◆共通イベント判定：助言以外
@@ -79,6 +81,9 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;=============================================
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks共通9_1判定終了通過、誰かとのお見合い～直前通過'"]
+[変数ログ表示]
+
 ;誰かとのお見合いが決定している　テストでみたいのでそのままスキップせず　一回代入したらスキップへ
 [if exp="(f.kuroda_au == 1 || f.sijyou_au == 1 || f.zaizen_au == 1) && f.omiai_kettei != 1"]
 [eval exp="f.omiai_kettei=1"]
@@ -97,6 +102,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [if exp="f.hujieda_au == 1"]
 @jump target=*hujieda_event_hantei
 [endif]
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks四条イベント判定直前通過'"]
+[変数ログ表示]
 
 ;=============================================
 ;◆四条イベント判定
@@ -108,6 +115,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 @jump target=*event_hantei_owari
 [endif]
 
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks財前イベント判定直前通過'"]
+[変数ログ表示]
 ;=============================================
 ;◆財前イベント判定
 ;=============================================
@@ -118,16 +127,24 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 @jump target=*event_hantei_owari
 [endif]
 
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks葛城宮イベント判定直前通過'"]
+[変数ログ表示]
 ;=============================================
 ;◆葛城宮イベント判定
 ;=============================================
 *katuraginomiya_event_hantei
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks葛城宮イベント判定開始'"]
+[変数ログ表示]
 ;◆藤枝4月の箏イベントを見た場合は葛城宮イベント判定をスキップして藤枝判定へ
 [if exp="f.event_hujieda[1] == 1"]
 @jump target=*hujieda_event_hantei
 [endif]
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks葛城宮イベント判定event_hantei_week_hajime_katuraginomiya.ksへjump直前'"]
+[変数ログ表示]
 @jump storage="event_hantei_week_hajime_katuraginomiya.ks" target=*start
 *katuraginomiya_event_hantei_owari
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks葛城宮イベント判定終わり通過'"]
+[変数ログ表示]
 [if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
 @jump target=*event_hantei_owari
 [endif]
@@ -137,6 +154,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 @jump target=*hujieda_event_hantei
 [endif]
 
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks藤枝イベント判定直前通過'"]
+[変数ログ表示]
 ;=============================================
 ;◆藤枝イベント判定
 ;=============================================
@@ -147,6 +166,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 @jump target=*event_hantei_owari
 [endif]
 
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks黒田イベント判定直前通過'"]
+[変数ログ表示]
 ;=============================================
 ;◆黒田イベント判定
 ;=============================================
@@ -293,6 +314,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 @jump target=*advice_event_owari
 [endif]
 
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks共通(助言)イベント判定直前通過'"]
+[変数ログ表示]
 ;=============================================
 ;◆共通イベント判定：助言
 ;=============================================
@@ -308,7 +331,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆お稽古の助言イベント判定 4月2週になった時点でお稽古を一度もしていないと1度だけ発生
-[if exp="((f.okeiko_month==4 && f.okeiko_week==2) && f.para_shujinkou_shukujodo==1 && f.event_common[1]==0)"]
+[if exp="((f.okeiko_month==4 && f.okeiko_week==2) && f.para_shujinkou_shukujodo == 1 && f.event_common[1]==0)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_4_2'"]
 	[eval exp="f.event_type='advice'"]
@@ -348,7 +371,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆お稽古の助言イベント判定 5月2週になった時点でお稽古を一度もしていないと1度だけ発生
-[if exp="((f.okeiko_month==5 && f.okeiko_week==2) && f.para_shujinkou_shukujodo==1 && f.event_common[5]==0)"]
+[if exp="((f.okeiko_month==5 && f.okeiko_week==2) && f.para_shujinkou_shukujodo == 1 && f.event_common[5]==0)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_5_2'"]
 	[eval exp="f.event_type='advice'"]
@@ -387,7 +410,80 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	@jump storage="event.ks" target=*start
 [endif]
 
+;=============================================
+;◆イベント判定：各個別ルート「散策」キーイベント発生時期にお知らせ, f.event_common[13]以降を使用
+;=============================================
+;◆散策の助言イベント判定 四条ルート：9月2～4週の期間中sansaku2未見なら1度だけ発生
+[if exp="(f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3 || f.okeiko_week == 4 )) && f.event_machi_sijyou[2] == 0 && f.sijyou_au == 1 && f.event_common[13] == 0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_4_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[13]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+;◆散策の助言イベント判定 四条ルート：9-3園遊会～9月末(銀座デート前まで)でsansaku3未見なら1度だけ発生
+[if exp="f.sijyou_au == 1 && f.event_sijyou[5] == 1 && (f.okeiko_month == 9 && f.okeiko_week == 4 || f.okeiko_month == 10 && f.okeiko_week == 1) && f.event_machi_sijyou[3] == 0 && f.event_common[14] == 0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[14]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+;◆散策の助言イベント判定 四条ルート：香水イベント　３月華道パラメータ一定値以上、四条好感度一定値以上でsansaku7未見なら1度だけ発生
+[if exp="f.okeiko_month == 3 && f.event_machi_sijyou[7] == 0 && f.para_shujinkou_j_kadou > 70 && f.para_sijyou_koukando > 80 && f.sijyou_au == 1 && f.event_common[15] == 0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[15]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+;◆散策の助言イベント判定 財前ルート：【バザー】財前ルートかつ2月1週から3月4週、礼法が70(暫定)以上でバザーイベント未見なら1度だけ発生
+[if exp="(f.okeiko_month == 2 || f.okeiko_month == 3) && f.event_machi_zaizen[1] == 0 && f.para_shujinkou_j_reihou >= 70 && f.zaizen_au == 1 && f.event_common[16] == 0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[16]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+;◆散策の助言イベント判定 葛城宮ルート：【散策1】葛城宮ルート2月2週から3月3週期間中で散策1未見なら1度だけ発生
+[if exp="((f.okeiko_month == 2 && f.okeiko_week != 1) || (f.okeiko_month == 3 && f.okeiko_week != 4)) && f.event_machi_katuraginomiya[1] == 0 && f.katuraginomiya_au == 1 && f.event_common[17] == 0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[17]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+;◆散策の助言イベント判定 葛城宮ルート：【散策2】葛城宮ルートで散策1を見ている状態で2月2週から3月4週期間中で散策2未見なら1度だけ発生
+[if exp="((f.okeiko_month == 2 && f.okeiko_week != 1) || f.okeiko_month == 3) && f.event_machi_katuraginomiya[1] == 1 && f.event_machi_katuraginomiya[2] == 0 && f.katuraginomiya_au == 1 && f.event_common[18] == 0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[18]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+;◆散策の助言イベント判定 藤枝ルート：【藤枝晶子さん(藤枝お姉さん)と話す】藤枝ルートかつ2月3週から3月4週期間中で散策イベント未見なら1度だけ発生
+[if exp="((f.okeiko_month==2 && (f.okeiko_week==3 || f.okeiko_week==4)) || f.okeiko_month==3) && f.event_machi_hujieda[1]==0 && f.hujieda_au==1 && f.event_common[19] == 0"]
+	[eval exp="f.event_storage='event.ks'"]
+	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_type='advice'"]
+	[eval exp="f.event_common[19]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+
 *advice_event_owari
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks共通(助言)イベント判定終了通過'"]
+[変数ログ表示]
+
 *common_event_hantei_owari
+[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks　*common_event_hantei_owari通過'"]
+[変数ログ表示]
 
 @jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari

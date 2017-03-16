@@ -369,6 +369,9 @@ TG.stat.stack["call"] = [];
 [wait time=10]
 [chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 [wait time=10]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 ;◆磯野メッセージ表示
 [layopt layer=26 visible=true]
 [layopt layer=27 visible=true]
@@ -383,9 +386,6 @@ TG.stat.stack["call"] = [];
 [freeimage layer = 26]
 [freeimage layer = 27]
 ;◆主人公メッセージ表示
-;メッセージレイヤを表示
-@layopt layer=message0 page=fore visible = true
-[current layer="message0"]
 ;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
 [position left=360 width=500 height=170 top=250 page=fore margint="50"]
 
@@ -599,13 +599,13 @@ TG.stat.stack["call"] = [];
 [playse storage=kira.ogg loop=false ]
 [ptext text="【磯野】　お嬢様。今日は良いお天気ですね。" layer=27 size=18 x=270 y=150 color=darkslateblue bold=bold]
 [ptext text="『散策』に出られてはいかがでしょう？" layer=27 size=18 x=345 y=188 color=darkslateblue bold=bold]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [p]
 [freeimage layer = 26]
 [freeimage layer = 27]
 ;◆主人公メッセージ表示
-;メッセージレイヤを表示
-@layopt layer=message0 page=fore visible = true
-[current layer="message0"]
 ;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
 [position left=360 width=500 height=170 top=250 page=fore margint="50"]
 
@@ -914,6 +914,7 @@ TG.stat.stack["call"] = [];
 [wait time=10]
 ;機能ボタン消去
 [clearfix]
+[wait time=10]
 [eval exp="sf.FButton='OFF'"]
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]

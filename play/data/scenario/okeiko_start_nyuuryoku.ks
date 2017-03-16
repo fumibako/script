@@ -174,7 +174,7 @@ $("input[name='f.para_shujinkou_j_kadou']").val("0");
 $("input[name='f.para_shujinkou_j_reihou']").val("0");
 $("input[name='f.para_shujinkou_j_gogaku']").val("0");
 $("input[name='f.para_shujinkou_j_koto']").val("0");
-$("input[name='f.para_shujinkou_shukujodo']").val("0");
+$("input[name='f.para_shujinkou_shukujodo']").val(f.para_shujinkou_shukujodo);
 
 $("input[name='f.para_shujinkou_koto_kaisuu']").val("0");
 $("input[name='f.event_hujieda1']").val("0");
@@ -359,7 +359,7 @@ alert("9月1週・葛城宮淑女度30以上、好感度19以上の高い状態�
 [ct]
 [clearfix]
 [clearstack]
-[skipstop]
+;[skipstop]
 [stopse]
 @layopt layer=message0 page=fore visible = false
 @layopt layer=message1 page=fore visible = false

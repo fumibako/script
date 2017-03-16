@@ -50,7 +50,7 @@
 [else]
 財前好感度=[emb exp="f.para_zaizen_koukando"],
 [endif]
-
+[font color=0x664f44]
 財前ルート(1○,0×)=[emb exp="f.zaizen_au"][r]
 イベント(1表示,0非表示)=[emb exp="tf.event_hyouji"]
 
@@ -82,6 +82,9 @@ TG.kag.ftag.startTag("showlog");
 [endif]		
 [endif]
 [resetfont]
+;操作メッセージレイヤをメインメッセージに戻す
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 
 @jump storage="okeiko_hyouji.ks" target=*test_hyouji_owari
 
@@ -102,7 +105,7 @@ TG.kag.ftag.startTag("showlog");
 [ct]
 [clearfix]
 [clearstack]
-[skipstop]
+;[skipstop]
 [stopse]
 @layopt layer=message0 page=fore visible = false
 @layopt layer=message1 page=fore visible = false
