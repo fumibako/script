@@ -223,6 +223,7 @@ $('.saku3').remove();
 [p]
 ;会話ウィンドウ表示
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
+[wait time=10]
 [暗転２終了]
 
 
@@ -276,6 +277,7 @@ $('.saku3').remove();
 ;===============================================================
 ;【背景】ヒロインの部屋
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[wait time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [iscript]
 $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-filter':'sepia(100%)','-ms-filter':'sepia(100%)'});
@@ -283,12 +285,12 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 [wait time=10]
 ;===============================================================
 [position left=200 width=500 height=300 top=100 page=fore margint="50"]
-[wait time=10]
+[wait time=50]
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示
 [layopt layer=message0 visible=true]
 ;テキスト全画面
-;[font color=white size=27]
-[font size=27]
+[font color=white size=27]
+;[font size=27]
 ;===============================================================
 ;「幸せな思い出」
 いつも兄と一緒に私を暖かく見守ってくださった。[p]
@@ -296,10 +298,10 @@ $('.1_fore').css({'filter':'sepia(100%)','-webkit-filter':'sepia(100%)','-moz-fi
 ;===============================================================
 ;【背景】ヒロインの部屋雪
 [chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=100]
-[wait time=10]
+[wait time=50]
 ;ここでとまる
 ;うごいてますか？[p]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;===============================================================
 ;「忍耐」
 大人になって、離れた時も、迷った時もあった。[p]
@@ -355,6 +357,7 @@ $('.1_fore').css({'filter':'sepia(0%)','-webkit-filter':'sepia(0%)','-moz-filter
 [endif]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
+[wait time=50]
 [font color=white size=35]
 ;===============================================================
 ;画面中央に「完」の文字
