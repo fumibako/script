@@ -33,8 +33,11 @@
 [主人公通常]
 #
 私は、思い切って磯野に相談することにした。[p]
-
+;=========================================================
 *seen1
+;【背景】主人公邸 庭の見える部屋：昼
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
