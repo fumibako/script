@@ -93,7 +93,7 @@ TG.stat.stack["call"] = [];
 @layopt layer=message0 page=fore visible=false
 @layopt layer=message1 page=fore visible=false
 @layopt layer=message2 page=fore visible=false
-[skipstop]
+;[skipstop]
 #
 [主人公退場]
 ;会話ウィンドウ消去
@@ -115,7 +115,7 @@ TG.stat.stack["call"] = [];
 ;◆9月1週、週終わりに発生した場合は休憩処理続き(休憩中画像非表示)へjump
 [if exp="f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_weekend == 1"]
 [eval exp="f.event_weekend == 0"]
-[eval exp="f.event_jiki=''"]
+;[eval exp="f.event_jiki=''"]
 @jump storage="okeiko.ks" target=*okeiko_qk_shori
 [endif]
 
@@ -125,9 +125,9 @@ TG.stat.stack["call"] = [];
 @jump storage="event_hantei_week_hajime.ks"
 [endif]
 
-;◆週終わりのイベントはフラグをリセットして休憩処理続きへ
+;◆週終わりのイベントは休憩処理続きへ→フラグリセットは休憩中非表示のために使用後にリセット
 [if exp="f.event_jiki=='weekend'"]
-	[eval exp="f.event_jiki=''"]
+;	[eval exp="f.event_jiki=''"]
 @jump storage="okeiko.ks" target=*okeiko_qk_shori
 [endif]
 
@@ -139,7 +139,7 @@ TG.stat.stack["call"] = [];
 ;◆イベント　終
 *event_ED
 [stopbgm]
-[skipstop]
+;[skipstop]
 #
 [freeimage layer = 26]
 [freeimage layer = 27]
@@ -167,7 +167,7 @@ TG.stat.stack["call"] = [];
 [cm]
 [chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 [wait time=10]
-[skipstop]
+;[skipstop]
 ;◆立ち絵L通常
 [chara_mod name="A_base" storage="girl/L/base.png" time=0]
 [wait time=10]
@@ -1134,7 +1134,7 @@ TG.stat.stack["call"] = [];
 [ct]
 [clearfix]
 [clearstack]
-[skipstop]
+;[skipstop]
 [stopse]
 @layopt layer=message0 page=fore visible = false
 @layopt layer=message1 page=fore visible = false
