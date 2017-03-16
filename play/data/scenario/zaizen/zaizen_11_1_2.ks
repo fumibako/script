@@ -32,6 +32,41 @@
 [current layer="message0"]
 [endif]
 ;=========================
+[if exp="tf.test_gamen==true"]
+zaizen_11_1_2.ks[r]
+テストページから開始しています。分岐地点までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[ct]
+[イベント中テスト数値表示]
+@jump target=*sentaku_to_bad_or_other
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[ct]
+[イベント中テスト数値表示]
+[endif]
+
 ;【立ち絵】主人公：眉ひそめ
 [主人公目閉じ]
 [主人公眉困り]
