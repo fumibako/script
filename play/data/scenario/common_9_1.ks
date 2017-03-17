@@ -51,7 +51,6 @@
 [resetfont]
 [s]
 
-
 *jump_ok
 [current layer="message0"]
 [resetfont]
@@ -317,9 +316,9 @@ jumpします。[p]
 	[eval exp="f.common_9_1_y_right = f.common_9_1_y_right + 100"]
 [endif]
 [if exp="f.event_hujieda[5]==1 && f.common_9_1_ninzuu == 1"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*scene1 text="お会いしない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="お会いしない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
 [elsif exp="f.event_hujieda[5]==1 && f.common_9_1_ninzuu >= 2"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*scene1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white exp="f.hujieda_au = 1"]
 [endif]
 [eval exp="f.common_9_1_y_left = f.common_9_1_y_left + 100"]
 [glink target=*horyuu text="もっと考えたい" fontcolor=gray size=23 width="200" x=200 y=&f.common_9_1_y_left color=white]
