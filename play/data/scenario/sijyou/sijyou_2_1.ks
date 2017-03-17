@@ -124,8 +124,12 @@
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[if exp="f.para_shujinkou_shukujodo >= 200"]
+「……おそれいります。 でも、今は決めかねますので、[r]
+[sp]家の者に相談の上、必ずお返事をさせていただきます」[p]
+[else]
 「わかりました。 お父様に了承を得た上でお手伝いしようかと思います」[p]
-;おそれいります。父に訊いてご返事を
+[endif]
 [主人公目閉]
 ;他に良い言い回しは？
 ;〜〜シーン イベントのはじまりおわり〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
@@ -159,7 +163,12 @@
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （当日は著名な先生も来られます と、おっしゃってましたわ。[r]
-[sp]そんな方と私がご一緒に教えることなんて出来るのでしょうか？）[p]
+[if exp="f.para_shujinkou_shukujodo >= 200"]
+[sp]私が、その様な方々と御一緒に教鞭を[ruby text=と]執るなど[r]
+[sp]出来るのでしょうか？）[p]
+[else]
+[sp]そんな方と、私が一緒に教えることなんて出来るのでしょうか？）[p]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （こういう時は……やはり、華織様に相談しようかしら？）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -507,7 +516,7 @@ $('.bg1').remove();
 ;フォローできなくなってしまった
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そ、そんなことないです！ 気になさらないで下さい。[r]
+「そ、そんなことないです！ お気になさらないで下さい。[r]
 [主人公口ほほえみ]
 [sp]私も、ご一緒できて嬉しいです」[p]
 [whosay name="華織" color="olivedrab"]
