@@ -195,7 +195,7 @@ $('.saku1').remove();
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen==true"]
-[eval exp="f.tukihajime=0"]
+;[eval exp="f.tukihajime=0"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]
