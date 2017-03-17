@@ -93,7 +93,8 @@
 [whosay name="磯野" color="dimgray"]
 「四条家とは旧知の仲」[p]
 [whosay name="磯野" color="dimgray"]
-「なんの連絡も無しに婚約を破棄することは、ないと思われます」[p]
+「御連絡も無しに御婚約を破棄されることは、ないと思います」[p]
+;存じます　との指摘　ですが分かりにくいので、そのままに
 *seen1
 #
 ;一旦主人公を表示なしにする
@@ -106,7 +107,7 @@
 [chara_mod name="bg" storage="toumei.gif" time=1000]
 
 [テキスト全画面白文字]
-一方、そのころ四条邸では[p]
+一方、そのころ四条邸では――。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です
@@ -207,9 +208,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ」[p]
 [whosay name="磯野" color="dimgray"]
-「文矢様から、四条様のことで何かあれば相談するようにと[r]
-[sp]言いつかっておりまして」
-;△文矢様と四条さまのお二人は、仲がよろしいのですよね→変更
+「文矢様から、四条様のことで何かございましたら[r]
+[sp]相談するようにと言いつかっておりまして」
 [p]
 [主人公伏目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
