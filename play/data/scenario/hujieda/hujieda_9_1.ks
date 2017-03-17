@@ -35,6 +35,38 @@
 [主人公憂い] 
 [主人公目閉] 
 （藤枝様の事が、どうしても気になってしまう……）[p]  
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。イベント終了までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+[イベント中テスト数値表示]
+@jump target=*end_rute
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[イベント中テスト数値表示]
+[endif]
 
 [主人公憂い] 
 （こんな気持ちを抱えたまま、他の方達にお会いするのは失礼だわ）[p] 
@@ -137,8 +169,6 @@
 ;【SE】落ち着いた足音（フェードアウト）
 [playse storage=isono_out.ogg loop=false ]
 [wait time=1000]
-
-
 
 # 
 [主人公憂い]
