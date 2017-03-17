@@ -130,7 +130,7 @@ jumpします。[p]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=文矢 color="Teal"]
-（文奈にもいつか……）
+（[名前]にもいつか……）
 [autosave]
 [p]
 
@@ -253,7 +253,7 @@ jumpします。[p]
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「文奈、覚えているか？」[p]
+「[名前]、覚えているか？」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「文矢が見合いをしたのは９月の終わり頃だった……」[p]
@@ -263,7 +263,7 @@ jumpします。[p]
 ふと、お父様は真剣な表情を浮かべる。[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「まぁ、それでだ。文奈もそろそろ誰かと会ってみる気はないかと[r]
+「まぁ、それでだ。[名前]もそろそろ誰かと会ってみる気はないかと[r]
 [sp]思ってな？」[p]
 
 *if_bunki
