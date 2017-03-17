@@ -196,6 +196,8 @@ if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
 
 ;--------ロードが押された時の処理
 *load
+;黒田ルート以外はまだオートセーブに対応できていないため、一旦オートセーブ関連機能をスキップします(3/18 ◆jsYiJcqRkk
+@jump target=*noload
 ;メッセージレイヤの定義(画面全体）
 [position layer=message0 width=960 height=500 top=80 left=340 page=fore opacity=0]
 [stopbgm]
