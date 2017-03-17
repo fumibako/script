@@ -348,7 +348,8 @@ TG.stat.stack["call"] = [];
 [wait time=10]
 [resetfont]
 [eval exp="f.event_advice=1"]
-@jump storage="okeiko.ks" target=*draw_button_system
+;◆お稽古パートイベント判定終了へ
+@jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
 
 ;回想記録終了 
 [endreplay] 
@@ -401,7 +402,8 @@ TG.stat.stack["call"] = [];
 [wait time=10]
 [resetfont]
 [eval exp="f.event_advice=1"]
-@jump storage="okeiko.ks" target=*draw_button_system
+;◆お稽古パートイベント判定終了へ
+@jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
 
 ;回想記録終了 
 [endreplay] 
@@ -456,7 +458,8 @@ TG.stat.stack["call"] = [];
 [chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 [wait time=10]
 [eval exp="f.event_advice=1"]
-@jump storage="okeiko.ks" target=*draw_button_system
+;◆お稽古パートイベント判定終了へ
+@jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
 
 ;回想記録終了 
 [endreplay] 
@@ -569,7 +572,8 @@ TG.stat.stack["call"] = [];
 [resetfont]
 
 [eval exp="f.event_advice=1"]
-@jump storage="okeiko.ks" target=*draw_button_system
+;◆お稽古パートイベント判定終了へ
+@jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
 
 ;回想記録終了 
 [endreplay] 
@@ -621,7 +625,8 @@ TG.stat.stack["call"] = [];
 [wait time=10]
 [resetfont]
 [eval exp="f.event_advice=1"]
-@jump storage="okeiko.ks" target=*draw_button_system
+;◆お稽古パートイベント判定終了へ
+@jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
 
 ;回想記録終了 
 [endreplay] 

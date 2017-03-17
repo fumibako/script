@@ -114,10 +114,10 @@
 ;◆四条イベント判定
 ;=============================================
 *sijyou_event_hantei
-	[eval exp="f.event_jiki='weekend'"]
+	[eval exp="f.event_jiki = 'weekend'"]
 @jump storage="01_sijyou_event_hantei_week_owari.ks" target=*start
 *sijyou_event_hantei_owari
-	[eval exp="f.event_jiki=''"]
+	[eval exp="f.event_jiki = ''"]
 
 ;=============================================
 ;◆財前イベント判定
@@ -182,5 +182,8 @@
 	[eval exp="f.event_kuroda[15]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
+
+;↓イベント時期フラグリセット(休憩中画像非表示に使用)
+[eval exp="f.event_jiki=''"]
 
 @jump storage="okeiko.ks" target=*event_hantei_week_owari_owari

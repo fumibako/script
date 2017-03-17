@@ -48,18 +48,19 @@
 *draw_owari
 ;↓イベント時期フラグリセット(休憩中画像非表示に使用)
 [eval exp="f.event_jiki=''"]
+;↓月始めフラグリセット(休憩中画像非表示に使用)
+[eval exp="f.tukihajime = 0"]
 [s]
 
 
 ;◆休憩ボタンを押した際の処理：まず画像消去などリセット処理へ飛んで戻ってくる
 *okeiko_qk
-[eval exp="f.hantei_event_storage='okeiko.ks休憩開始'"]
-[変数ログ表示]
-
 @jump storage="okeiko_qk_reset.ks" target=*start
 *okeiko_qk_reset_end
-[eval exp="f.hantei_event_storage='okeiko.ks休憩中 *okeiko_qk_reset_end通過'"]
-[変数ログ表示]
+;◆「休憩中」画像切り替え(四条9月4週のイベント後は画像表示すると違和感があったので、無しに
+[freeimage layer = 26]
+[layopt layer=26 visible=true]
+[image layer=26 x=334 y=155 storage="button/qk_anim02.png"]
 
 ;◆イベント全般(1表示、0非表示)tf.event_hyouji == 0の場合はイベント判定をカット
 [if exp="tf.event_hyouji == 0"]
@@ -68,21 +69,14 @@
 *event_hantei_week_owari
 ;◆イベント判定(週終わり：エンディングイベントなどの判定処理リスト)へ飛んで戻ってくる
 ;↓◆イベント判定処理を見るための変数をセット
-[eval exp="f.hantei_event_storage='event_hantei_week_owari.ks判定開始'"]
-[変数ログ表示]
 @jump storage="event_hantei_week_owari.ks" target=*start
 *event_hantei_week_owari_owari
+
 ;↓◆イベント判定処理を見るための変数をセット
 [eval exp="f.hantei_event_storage='event_hantei_week_owari.ks判定終了'"]
 [変数ログ表示]
-;◆「休憩中」画像切り替え(四条9月4週のイベント後は画像表示すると違和感があったので、無しに
-[freeimage layer = 26]
-[layopt layer=26 visible=true]
-[image layer=26 x=334 y=155 storage="button/qk_anim02.png"]
 
 *okeiko_qk_shori
-[eval exp="f.hantei_event_storage='okeiko.ks *okeiko_qk_shori通過、週加算処理直前'"]
-[変数ログ表示]
 
 ;◆休憩処理続き
 [iscript]
@@ -382,11 +376,7 @@ f.hujieda_fumi_toutyakumachi_sintya = f.hujieda_fumi_toutyakumachi_sintya - 1;
 if (f.hujieda_fumi_toutyakumachi_satuki > 0){
 f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
 }
-
-
 [endscript]
-[eval exp="f.hantei_event_storage='okeiko.ks *okeiko_qk_shori通過、週加算処理直後'"]
-[変数ログ表示]
 
 *qk_end
 
@@ -399,14 +389,15 @@ f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
 	@jump target=*qk_gazou_owari3
 [endif]
 ;週終わりのイベント後は表示せず飛ばす
-[if exp="f.event_jiki='weekend'"]
+[if exp="f.event_jiki=='weekend'"]
 	@jump target=*qk_gazou_owari3
 [endif]
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
 [image layer=26 x=334 y=155 storage="button/qk_anim03.png"]
 *qk_gazou_owari3
-
+;イベント時期リセット
+[eval exp="f.event_jiki=''"]
 [if exp="f.tukihajime == 1"]
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
