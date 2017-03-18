@@ -1,4 +1,4 @@
-;/////////////////エピローグ追加分（good_end差分です)///////////
+;/////////////////エピローグ追加分（good_end差分です)//////////
 [setreplay name="replay_sijyou_3_4_goodED_scene" storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target="start"]
 *replay_sijyou_3_4_goodED
 [ct]
