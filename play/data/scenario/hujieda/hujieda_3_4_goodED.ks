@@ -4,7 +4,7 @@
 *replay_hujieda_hujieda_3_4_goodED
 *replay_hujieda_hujieda_3_4_goodED_scene
 [if exp="f.flag_replay==true"]
-[back storage="toumei.gif" time=1]
+[bg storage="toumei.gif" time=1]
 [endif]
 [iscript]
 $('rp_bt').remove();
