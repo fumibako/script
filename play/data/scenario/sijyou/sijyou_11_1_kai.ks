@@ -1,6 +1,6 @@
 *start
 ;===============================テスト用イテスト用イベントシーン構築==============================
-;///使用背景メモ　ここはテスト用です必要時に開放///
+;使用背景メモ　ここはテスト用です必要時に開放
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg"]
 ;[preload storage="data/fgimage/bg/bg_prologue_dark.jpg"]
 ;[preload storage="data/fgimage/bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
