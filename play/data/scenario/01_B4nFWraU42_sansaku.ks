@@ -1,4 +1,4 @@
-﻿*sansaku_machi_common_B4nFWraU42_01
+﻿﻿*sansaku_machi_common_B4nFWraU42_01
 ;=======================================================================================
 ;◆町_共通イベント 01
 ;『一日のはじまりの話題』
@@ -68,7 +68,7 @@
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『1日のはじまりの話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('1日のはじまりの話題',0,2,1,1,1,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('1日のはじまりの話題',0,1,2,1,1,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 [s]
@@ -137,7 +137,7 @@
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『聞き上手と話し上手の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('聞き上手と話し上手の話題',0,0,2,0,0,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('聞き上手と話し上手の話題',0,2,0,-1,0,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 [s]
@@ -204,7 +204,7 @@
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『道の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('道の話題',0,2,0,1,1,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('道の話題',0,0,2,1,1,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 
@@ -294,7 +294,7 @@
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『緑の石』と『緑の石の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('緑の石の話題',0,1,0,2,1,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('緑の石の話題',0,0,1,2,1,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
@@ -370,7 +370,7 @@
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『お気に入りの曲の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('お気に入りの曲の話題',0,2,-1,0,2,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('お気に入りの曲の話題',0,-1,2,0,2,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"
@@ -538,7 +538,7 @@
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『変化と永遠についての話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('変化と永遠についての話題',0,2,1,1,2,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('変化と永遠についての話題',0,1,2,1,2,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 @jump storage="01_B4nFWraU42_test.ks"

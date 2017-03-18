@@ -1,4 +1,4 @@
-﻿﻿*sansaku_machi_common_I9IhvvVdPo_01
+﻿﻿﻿*sansaku_machi_common_I9IhvvVdPo_01
 ;=======================================================================================
 ;◆町_共通イベント 01
 ;『スポーツの話題』
@@ -347,7 +347,7 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『観劇の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('観劇の話題',0,0,-1,-2,1,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('観劇の話題',0,-1,0,-2,1,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 @jump storage="01_I9IhvvVdPo_test.ks"
@@ -522,7 +522,7 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『写真の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('写真の話題',0,0,1,1,2,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('写真の話題',0,1,0,1,2,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 @jump storage="01_I9IhvvVdPo_test.ks"

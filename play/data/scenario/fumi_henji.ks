@@ -805,6 +805,11 @@ f.para_pre_sijyou_koukando = parseInt(f.binsen_list_hairetsu[f.binsen_number][3]
 f.para_pre_katuraginomiya_koukando = parseInt(f.binsen_list_hairetsu[f.binsen_number][4]);
 f.para_pre_hujieda_koukando = parseInt(f.binsen_list_hairetsu[f.binsen_number][5]);
 [endscript]
+[eval exp="f.hantei_event_storage = 'parseInt(f.binsen_list_hairetsu[f.binsen_number][2])=' + parseInt(f.binsen_list_hairetsu[f.binsen_number][2])"]
+[変数ログ表示]
+[eval exp="f.hantei_event_storage = 'parseInt(f.binsen_list_hairetsu[f.binsen_number][0])=' + f.binsen_list_hairetsu[f.binsen_number][0]"]
+[変数ログ表示]
+
 [if exp = "f.binsen_list_hairetsu[f.binsen_number][6] == f.okeiko_month"]
 [call target = *binsen_good_kisetsu]
 [elsif exp = "f.binsen_list_hairetsu[f.binsen_number][7] == f.okeiko_month"]
@@ -853,7 +858,7 @@ f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando;
 
 if (f.para_zaizen_koukando < parseInt(sf.zaizen['koukando_a'])){
 	f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando + 0;
-}else if(f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_a']) && f.para_zaizen_koukando < parseInt(sf.zaizen['koukando_b'])){
+}else if((f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_a'])) && (f.para_zaizen_koukando < parseInt(sf.zaizen['koukando_b']))){
 	f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando + 1;
 }else if(f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_b'])){
 	f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando + 0;

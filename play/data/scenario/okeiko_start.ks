@@ -7,7 +7,7 @@
 [eval exp="tf.okeiko_gamen=true"]
 [eval exp="f.okeiko_gamen=true"]
 [eval exp="f.event_jiki='未定'"]
-[skipstop]
+;[skipstop]
 
 [call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
@@ -143,7 +143,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("食事の話題",0,0,0,1,0,
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("観劇の話題",0,0,-1,-2,1,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("観劇の話題",0,-1,0,-2,1,"a","","","","");
 [endscript]
 『観劇の話題』を手に入れました。[r]
 
@@ -157,49 +157,49 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("猫の話題",0,0,0,1,-1,"a
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("聞き上手と話し上手の話題",0,0,2,0,0,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("聞き上手と話し上手の話題",0,2,0,-1,0,"a","","","","");
 [endscript]
 『聞き上手と話し上手の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("緑の石の話題",0,1,0,2,1,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("緑の石の話題",0,1,1,2,1,"a","","","","");
 [endscript]
 『緑の石』と『緑の石の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("写真の話題",0,0,1,1,2,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("写真の話題",0,1,0,1,2,"a","","","","");
 [endscript]
 『写真の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("1日のはじまりの話題",0,2,1,1,1,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("1日のはじまりの話題",0,1,2,1,1,"a","","","","");
 [endscript]
 『1日のはじまりの話題』を手に入れました。[p]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("お気に入りの曲の話題",0,2,-1,0,2,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("お気に入りの曲の話題",0,-1,2,0,2,"a","","","","");
 [endscript]
 『お気に入りの曲の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("道の話題",0,2,0,1,1,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("道の話題",0,0,2,1,1,"a","","","","");
 [endscript]
 『道の話題』を手に入れました。[r]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠についての話題",0,2,1,1,2,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠についての話題",0,1,2,1,2,"a","","","","");
 [endscript]
 『変化と永遠についての話題』を手に入れました。[r]
 お稽古パートをはじめます。[p]
@@ -544,7 +544,7 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 
 ;◆お稽古初回のみ表示
 [if exp="sf.KSKIP=='ON' && sf.trail_okeiko_intro==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 ;◆テスト画面から来た場合や周回時はカット
 [if exp="tf.test_gamen==true"]
@@ -613,7 +613,7 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 [ct]
 [clearfix]
 [clearstack]
-[skipstop]
+;[skipstop]
 [stopse]
 @layopt layer=message0 page=fore visible = false
 @layopt layer=message1 page=fore visible = false

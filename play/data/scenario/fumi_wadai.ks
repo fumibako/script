@@ -658,8 +658,15 @@ f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando + parseInt(f.wadai_list_
 f.para_pre_sijyou_koukando = f.para_pre_sijyou_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][3]);
 f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][4]);
 f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][5]);
+f.hantei_event_storage = 'parseInt(f.wadai_list_hairetsu[f.wadai_number][2]=' + parseInt(f.wadai_list_hairetsu[f.wadai_number][2]);
 [endscript]
-;◆話題配列fumi_wadai.csvの6番目要素は話題の距離感を示す。a：最初からokな話題、b:そこそこ仲良くなるまでは引かれる話題、c:かなり仲良くなるまでは引かれる
+[変数ログ表示]
+[eval exp="f.hantei_event_storage = 'f.wadai_list_hairetsu[f.wadai_number][0]=' + f.wadai_list_hairetsu[f.wadai_number][0]"]
+[変数ログ表示]
+[eval exp="f.hantei_event_storage = 'f.para_pre_zaizen_koukando=' + f.para_pre_zaizen_koukando"]
+[変数ログ表示]
+/*
+;◆話題配列fumi_wadai.csvの6番目要素は話題の距離感を示す。a：最初からokな話題、b:そこそこ仲良くなるまでは引かれる話題、c:かなり仲良くなるまでは引かれる(話題の好みは一様ではないため一旦実装解除します2017.03.17)
 [if exp = "f.wadai_list_hairetsu[f.wadai_number][6] == 'a'"]
 [call target = *wadai_a]
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][6] == 'b'"]
@@ -667,8 +674,10 @@ f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + parseInt(f.wadai_lis
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][6] == 'c'"]
 [call target = *wadai_c]
 [endif]
+[eval exp="f.hantei_event_storage = 'f.para_pre_zaizen_koukando=' + f.para_pre_zaizen_koukando"]
+[変数ログ表示]
+
 ;◆話題配列fumi_wadai.csvの7,8番目要素はその話題を嫌がる攻略対象を示す。(未実装)
-/*
 [if exp = "f.wadai_list_hairetsu[f.wadai_number][7] == '1'"]
 [eval exp = "f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando - 2"]
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][7] == '2'"]
@@ -804,6 +813,7 @@ if (f.fumi_atesaki == 'kuroda'){
 		}
 		if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
 			f.kuroda_fumi_toutyakumachi_kazoku=f.kuroda_fumi_toutyakumachi - 2;
+			f.para_kuroda_koukando = f.para_kuroda_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
 		}
 	}
 	if(f.wadai_list_hairetsu[f.wadai_number][0] == '友人の話題'){ //話題No.3「友人の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
@@ -815,6 +825,15 @@ if (f.fumi_atesaki == 'kuroda'){
 		}
 		if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
 			f.kuroda_fumi_toutyakumachi_yuujin=f.kuroda_fumi_toutyakumachi - 2 - 1;
+		}
+	}
+	if(f.wadai_list_hairetsu[f.wadai_number][0] == '将来の話題'){ //「将来の話題」を選択した場合
+		if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		}
+		if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		}
+		if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+			f.para_kuroda_koukando = f.para_kuroda_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
 		}
 	}
 	if(f.wadai_list_hairetsu[f.wadai_number][0] == '新茶の話題'){ //「新茶の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
@@ -863,6 +882,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '家族について'){ //話題�
 	}
 	if(f.para_zaizen_koukando > parseInt(sf.zaizen['koukando_b'])){//好感度がsf.zaizen['koukando_b']を超えるなら、初期値より2週少なくセットします
 		f.zaizen_fumi_toutyakumachi_kazoku=f.zaizen_fumi_toutyakumachi - 2;
+		f.para_zaizen_koukando = f.para_zaizen_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
 	}
 }
 
@@ -959,6 +979,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '観劇の話題'){ //「観劇�
 	}
 	if(f.para_zaizen_koukando > parseInt(sf.zaizen['koukando_b'])){
 		f.zaizen_fumi_toutyakumachi_kangeki=f.zaizen_fumi_toutyakumachi - 2;
+		f.para_zaizen_koukando = f.para_zaizen_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
 	}
 }
 
@@ -1031,6 +1052,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == 'お気に入りの曲の話題')
 	}
 	if(f.para_zaizen_koukando > parseInt(sf.zaizen['koukando_b'])){
 		f.zaizen_fumi_toutyakumachi_music=f.zaizen_fumi_toutyakumachi - 2;
+		f.para_zaizen_koukando = f.para_zaizen_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
 	}
 }
 
@@ -1220,9 +1242,11 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '観劇の話題'){ //「観劇�
 	}
 	if(f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_a'])){
 		f.katuraginomiya_fumi_toutyakumachi_kangeki=f.katuraginomiya_fumi_toutyakumachi - 1;
+		f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 1; //苦手(-2)だった話題でも少し大丈夫に(+1)
 	}
 	if(f.para_katuraginomiya_koukando > parseInt(sf.katuraginomiya['koukando_b'])){
 		f.katuraginomiya_fumi_toutyakumachi_kangeki=f.katuraginomiya_fumi_toutyakumachi - 2;
+		f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 2; //苦手(-2)だった話題でも大丈夫に(+2)
 	}
 }
 
@@ -1247,6 +1271,9 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '聞き上手と話し上手の�
 	}
 	if(f.para_katuraginomiya_koukando > parseInt(sf.katuraginomiya['koukando_b'])){
 		f.katuraginomiya_fumi_toutyakumachi_kiki=f.katuraginomiya_fumi_toutyakumachi - 2;
+	}
+	if(f.midoku_list_hairetsu[3][12] = 0){ //'聞き上手と話し上手の話題'1通目が既読なら
+		f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + 3; //1通目(-1)の設定を(+2)にするために+3
 	}
 }
 
@@ -1495,6 +1522,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '猫の話題'){ //「猫の話�
 	}
 	if(f.para_hujieda_koukando > parseInt(sf.hujieda['koukando_b'])){
 		f.hujieda_fumi_toutyakumachi_neko=f.hujieda_fumi_toutyakumachi - 2;
+		f.para_hujieda_koukando = f.para_hujieda_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
 	}
 }
 

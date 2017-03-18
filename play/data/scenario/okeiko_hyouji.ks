@@ -361,51 +361,51 @@ f.binsen_hairetsu_number_b=f.binsen_hairetsu_number+1;
 f.binsen_hairetsu_number_c=f.binsen_hairetsu_number+2;
 if(f.okeiko_month==5){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("レンガ街の風景画",0,1,2,1,1,"","");
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("レンガ街の風景画",0,2,1,1,1,"","");
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("新緑の模様",1,2,0,1,1,5,6);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("新緑の模様",1,0,2,1,1,5,6);
 }
 if(f.okeiko_month==6){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("黒無地",-1,0,0,1,-2,"","");
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("紫陽花の模様",1,2,0,1,1,6,7);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("紫陽花の模様",1,0,2,1,1,6,7);
 }
 if(f.okeiko_month==7){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("夏雲の模様",0,1,0,2,1,7,8);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("夏雲の模様",0,0,1,2,1,7,8);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("清流に鮎の模様",1,1,1,2,1,7,8);
 }
 if(f.okeiko_month==8){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("ラムネ瓶の模様",0,1,0,1,2,"",8);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("ラムネ瓶の模様",0,0,1,1,2,"",8);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("向日葵の模様",1,2,0,1,2,8,"");
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("向日葵の模様",1,0,2,1,2,8,"");
 }
 if(f.okeiko_month==9){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("お月見の模様",1,1,1,1,1,"",9);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("葡萄の模様",1,2,0,1,1,9,10);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("葡萄の模様",1,0,2,1,1,9,10);
 }
 if(f.okeiko_month==10){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("曼珠沙華の模様",0,2,2,-2,1,10,11);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("紅葉の模様",2,2,1,1,1,10,11);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("紅葉の模様",2,1,2,1,1,10,11);
 }
 if(f.okeiko_month==11){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("柿の模様",2,2,0,1,2,11,12);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("柿の模様",2,0,2,1,2,11,12);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("どんぐりの模様",1,2,0,1,1,11,12);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("どんぐりの模様",1,0,2,1,1,11,12);
 }
 if(f.okeiko_month==12){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("雪の模様",0,1,0,0,1,12,1);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("雪の模様",0,0,1,0,1,12,1);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("蜜柑の模様",1,2,-1,1,1,12,1);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("蜜柑の模様",1,-1,2,1,1,12,1);
 }
 if(f.okeiko_month==1){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
@@ -417,11 +417,11 @@ if(f.okeiko_month==2){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("豆撒きの風景画",0,0,0,2,1,"",2);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("蕗のとうの模様",1,2,1,1,2,2,3);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("蕗のとうの模様",1,1,2,1,2,2,3);
 }
 if(f.okeiko_month==3){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
-	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("雛飾りの模様",0,0,-1,0,1,"",3);
+	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("雛飾りの模様",0,-1,0,0,1,"",3);
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("うぐいすの模様",1,0,0,1,1,3,"");
 }
@@ -469,6 +469,7 @@ $('.junbi_girl').remove();
 	[eval exp="f.tukihajime = 0"]
 	@jump target=*draw_fukidasi
 [endif]
+;[autostop]を入れるとフリーズ率高いためコメントアウト。調査予定。
 ;[skipstop]
 [if exp="f.tukihajime!=1"]
 	[cm]

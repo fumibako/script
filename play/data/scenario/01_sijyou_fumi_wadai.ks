@@ -39,6 +39,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '家族について'){ //話題�
 	}
 	if(f.para_sijyou_koukando > parseInt(sf.sijyou['koukando_b'])){//好感度がsf.sijyou['koukando_b']を超えるなら、初期値より2週少なくセットします(が苦手な話題なので返事が1週遅い)
 		f.sijyou_fumi_toutyakumachi_kazoku=f.sijyou_fumi_toutyakumachi - 2 + 1;
+		f.para_sijyou_koukando = f.para_sijyou_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
 	}
 	if(f.sijyou_event6==1){ //イベント6を見た後なら、翌週返事が来ると仮入力しています
 		f.sijyou_fumi_toutyakumachi_kazoku=0;

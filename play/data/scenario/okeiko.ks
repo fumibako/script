@@ -68,12 +68,11 @@
 [endif]
 *event_hantei_week_owari
 ;◆イベント判定(週終わり：エンディングイベントなどの判定処理リスト)へ飛んで戻ってくる
-;↓◆イベント判定処理を見るための変数をセット
 @jump storage="event_hantei_week_owari.ks" target=*start
 *event_hantei_week_owari_owari
 
 ;↓◆イベント判定処理を見るための変数をセット
-[eval exp="f.hantei_event_storage='event_hantei_week_owari.ks判定終了'"]
+[eval exp="f.hantei_event_storage='okeiko.ks:event_hantei_week_owari.ks判定終了'"]
 [変数ログ表示]
 
 *okeiko_qk_shori
@@ -377,6 +376,9 @@ if (f.hujieda_fumi_toutyakumachi_satuki > 0){
 f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
 }
 [endscript]
+;↓◆イベント判定処理を見るための変数をセット
+[eval exp="f.hantei_event_storage='okeiko.ks:週加算処理通過'"]
+[変数ログ表示]
 
 *qk_end
 
