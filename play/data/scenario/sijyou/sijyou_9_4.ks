@@ -470,7 +470,7 @@
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
 [wait time=10]
 [whosay name="？？？" color=%mp.color]
-「よくもまぁ、ぬけぬけと笑っていられるな」[p]
+「よくもまあ、ぬけぬけと笑っていられるな」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [主人公伏目パチ1回]
