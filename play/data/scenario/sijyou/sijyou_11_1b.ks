@@ -406,7 +406,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 [whosay name="華織" color="olivedrab"]
 『急にどうしたのですか？ [華衣]の好きな花なんてきいて』[p]
 [whosay name="華織" color="olivedrab"]
-『あぁ、君は[華衣]の婚約者ですか。それは失礼しました』[p]
+『ああ、君は[華衣]の婚約者ですか。それは失礼しました』[p]
 [whosay name="華織" color="olivedrab"]
 『ふふ、記念日なのかな』[p]
 [whosay name="華織" color="olivedrab"]
