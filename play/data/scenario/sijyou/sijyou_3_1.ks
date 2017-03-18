@@ -235,7 +235,7 @@
 [主人公通常]
 あら、磯野……？」[p]
 [whosay name="磯野" color="dimgray"]
-「あぁ、机の上で寝てしまわれたのですね……勝手に入って申し訳ござい[r]
+「ああ、机の上で寝てしまわれたのですね……勝手に入って申し訳ござい[r]
 [sp]ません」[p]
 ;机の上でっていうのが、本当に机の上で？と読む人がいるかもしれない？
 [whosay name="磯野" color="dimgray"]
@@ -519,7 +519,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
 [主人公ポーズ片手]
-「まぁ、お父様。 私を誰と、お比べなのですか？」[p]
+「まあ、お父様。 私を誰と、お比べなのですか？」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「こちらに来くれば、わかるだろう」[p]
 #
@@ -593,7 +593,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お兄様！ 来て下さったのですね」[p]
 [whosay name=文矢 color="#538a8a"]
-「まぁね。[名前]と華織の結納が終わるまでの間くらいは、[r]
+「まあね。[名前]と華織の結納が終わるまでの間くらいは、[r]
 [sp]一緒に過ごしたいからね」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「文矢の家にも、代わりに仕事を任せられる安心有能な家令がいるよう[r]
@@ -721,7 +721,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [playse storage=zawa_room.ogg loop=false ]
 ;～引き立て悪役の登場～
 [whosay name="華道家の弟子達"]
-「ふーん…まぁまぁだな」[p]
+「ふーん…まあまあだな」[p]
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1142669656
 [主人公憂い]
 「どうせ親の七光りの賞だろう」[p]
 [主人公真剣]
