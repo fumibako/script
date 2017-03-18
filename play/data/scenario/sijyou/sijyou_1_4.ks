@@ -233,7 +233,7 @@
 伸し掛けてきた疑問を眉を潜めて[ruby text=たず]尋ねたが、[r]
 彼は[ruby text=われ]我[ruby text=かん]関せずに、またもや私の顔をシゲシゲと見つめた。[p]
 [whosay name="華織様に似た男性"]
-「[ruby text=か]華[ruby text=ぞく]族[ruby text=が]画[ruby text=ほう]報の写真で見たよりも、随分とまぁ」
+「[ruby text=か]華[ruby text=ぞく]族[ruby text=が]画[ruby text=ほう]報の写真で見たよりも、随分と、まあ」
 [主人公憂い]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
