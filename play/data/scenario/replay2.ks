@@ -159,7 +159,7 @@ $(".list").css("opacity",0);
 [ptext name=list layer=2 page=fore text="？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 [endif]
-[replay_image_button2 end=&sf.ED_hujieda_normal storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_3_4_normalED" graphic="../fgimage/bg/hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_hujieda_normal storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_hujieda_good storage="hujieda/hujieda_3_4_goodED.ks" target="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_hujieda_bad storage="hujieda/hujieda_12_3_badED.ks" target="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_hujieda_bad2 storage="hujieda/hujieda_11_3.ks" target="*replay_hujieda_badED_scene2" graphic="../fgimage/bg/replay_hujieda_badED2.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
