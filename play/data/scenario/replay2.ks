@@ -190,7 +190,7 @@ $('.loding_pic1').remove();
 
 *backtitle
 [chara_mod name="bg" storage="bg/title.jpg"]
-[back storage="toumei.gif" time=1]
+[bg storage="toumei.gif" time=1]
 [cm]
 [iscript]
 $(".layer_free").css("opacity",1);
@@ -226,7 +226,7 @@ $(".layer_2").css("opacity",1);
 @jump target="*replaypage"
 
 *clickcg
-[back storage="toumei.gif" time=1]
+[bg storage="toumei.gif" time=1]
 [stopbgm]
 [cm]
 [freeimage layer = 2]
