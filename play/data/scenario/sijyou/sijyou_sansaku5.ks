@@ -35,7 +35,7 @@
 
 ;時期でセリフの変更
 [whosay name="四条母"]
-[if exp="f.sysgra_okeiko_month" > 12]
+[if exp="f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3]
 「華衣、ダメよ！勝手に何処かに行っては！」
 ;お稽古は終わっているが過保護
 [else]
@@ -55,7 +55,7 @@
 
 ;時期でセリフの変更
 
-[if exp="f.sysgra_okeiko_month" > 12]
+[if exp="exp="f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3]
 [whosay name="四条 華衣"]
 「うるさい、俺は自分で何とかしたいの！」
 [else]
@@ -75,19 +75,17 @@
 #
 ;セリフは適当。時期でセリフの変更
 [whosay name=&sf.girl_namae color="[whosay name="cf5a7f"]
-[if exp="f.sysgra_okeiko_month" > 12]
+[if exp="f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3]
 ([華衣]さん、少し変わられましたね)
 [else]
 (何だったのでしょうか？)
 [endif]
 [p]
 
-;間違えてコピーしたかも？↓
-;個別ルート前夜終了[eval exp="f.sijyou_au=1"]
 
 [イベントシーン終了]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
 [else]
 [イベントシーン終了２]
