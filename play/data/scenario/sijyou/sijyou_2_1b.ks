@@ -640,7 +640,7 @@ _　したかったのかもしれません……）[p]
 [主人公横伏目]
 [主人公口開]
 「華織様は、ああいった淑女らしい方がお好みでしょうか」[p]
-http://thesaurus.weblio.jp/content/%E3%81%82%E3%81%82%E3%81%84%E3%81%A3%E3%81%9F%E9%A1%9E%E3%81%AE%E4%BA%BA%E9%96%93
+;http://thesaurus.weblio.jp/content/%E3%81%82%E3%81%82%E3%81%84%E3%81%A3%E3%81%9F%E9%A1%9E%E3%81%AE%E4%BA%BA%E9%96%93
 [whosay name="華織" color="olivedrab"]
 [主人公目伏]
 [主人公口ムッ]
