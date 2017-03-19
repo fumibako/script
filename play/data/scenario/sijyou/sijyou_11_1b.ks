@@ -287,7 +287,7 @@ $(".nerine").css("opacity",0.5);
 ;[cancelskip] スキップ停止にしないとgitではフリーズするかも
 ;=============================
 ;裏で構築中
-[eval exp="f.haikei_credit='photo　by　＠名無し１'"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [image layer=29 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50 visible=true]
 [wait time=5]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -361,7 +361,7 @@ $(".nerine").css("opacity",0.5);
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 ;四条家玄関
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
-[eval exp="f.haikei_credit='photo　by　＠名無し１'"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [font color=white size=27]
@@ -436,7 +436,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;==========================================
 ;病院 四条表示準備してます
 [chara_mod name="bg" storage="bg/sijyou_byouin.jpg" time=100]
-[eval exp="f.haikei_credit='photo　by　＠名無し１'"]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_byouin.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
@@ -486,7 +486,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *seen5
 ;花園もどる
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　＠名無し１'"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [wait time=10]
