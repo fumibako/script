@@ -314,6 +314,9 @@
 [if exp="tf.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
+[if exp="f.okeiko_gamen==true"]
+@jump storage="event.ks" target=*event_owari
+[endif]
 @jump storage="01_jsYiJcqRkk_test.ks" target=﻿*test
 [s]
 
