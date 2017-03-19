@@ -165,8 +165,8 @@
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-（お友達の華やかな年賀状を見るのも、なんだかつらいわ……）[r]
-手つきも重く受け取ろうとして――[p]
+（お友達の華やかな年賀状を見るのも、なんだかつらいわ……）[p]
+手つきも重く受け取ろうとして――。[p]
 
 ;=========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_1_scene4==undefined"]
@@ -224,7 +224,7 @@
 [wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-（お兄様たちがいらしたら、どれだけからかわれるか[r]
+（お兄様たちがいらしたら、どれだけからかわれるか。[r]
 [sp]……見られなくてホッとしたわ）
 [p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -233,7 +233,7 @@
 [主人公閉目パチ1回]
 [wait time=10]
 [whosay name="磯野" color="dimgray"]
-「どういたしまして」[r]
+「どういたしまして」[p]
 磯野にいつもの温かい笑みが浮かぶ。[p]
 「では、失礼いたします」[p]
 #
@@ -258,6 +258,7 @@
 [chara_mod name="message_bg" storage="toumei.gif"]
 [wait time=10]
 [chara_mod name="bg" storage="toumei.gif" time=500]
+[wait time=10]
 ;◆テスト中は配列スキップ
 [if exp="tf.test_kuroda==true"]
 @jump target="test_kuroda_hairetu_skip"
@@ -286,11 +287,12 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;黒田より年賀状
 ;【背景】年賀状画像（黒田）表示（こちらで作成予定：ハガキ上部に「謹賀新年」の文字と四葉のクローバーの押し花風画像が入るシンプルなもの。ハガキ下部に縦書下記テキスト挿入）
 [chara_mod name="bg" storage="bg/nengajou_kuroda.jpg" time=500]
+[wait time=10]
 ;メッセージレイヤを年賀状用に設定変更
 [position left=270 width=400 height=310 top=260 page=fore margint=0]
 @layopt layer=message0 page=fore visible=true
 [position vertical=true]
-[font color=black size=20]
+[font color=black size=19]
 ;=========================================================================================
 [sp]昨年末には多大な励ましを[r]
 いただき、ありがとうございました[r]
@@ -356,7 +358,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 #
-『研究に光明』――安心すると同時に涙がにじむ。
+『研究に光明』[p]
+――安心すると同時に涙がにじむ。
 [autosave]
 [p]
 
@@ -365,6 +368,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 （よかった……お母様も落ち着かれたのですね）[p]
 
 「お忙しいでしょうに、お知らせくださるなんて……」[p]
+[fadeoutbgm time=3000]
 
 [chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
 [wait time=10]
@@ -375,6 +379,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 葉書を胸に、深いため息をついて庭を眺める。[l][r]
 ;【背景】主人公邸_庭、フェードイン
 窓から射す陽光が、ひときわ明るさを増して見えた。[p]
+[stopbgm]
+
 ;お正月、黒田から年賀状編終了
 
 ;◆「休憩中」画像消去
