@@ -691,7 +691,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公ポーズ通常]
 [主人公真剣]
 （私も、華織様を支えられるように精進しなくては……！）[p]
-～～華道パラ普通の場合～～[p]
+;～～華道パラ普通の場合～～[p]
 [else]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
@@ -722,7 +722,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;～引き立て悪役の登場～
 [whosay name="華道家の弟子達"]
 「ふーん…まあまあだな」[p]
-http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1142669656
+;http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1142669656
 [主人公憂い]
 「どうせ親の七光りの賞だろう」[p]
 [主人公真剣]
