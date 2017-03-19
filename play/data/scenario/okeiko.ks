@@ -7,15 +7,6 @@
 ;お稽古パート
 ;=============================================
 *okeiko_main
-[wait time=500]
-
-[if exp="sf.BGM=='ON'"]
-[stopbgm]
-;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
-[wait time=10]
-[endif]
 
 *event_hantei_week_hajime
 ;◆イベント全般(1表示、0非表示)tf.event_hyouji == 0の場合はイベント判定をカット
@@ -31,6 +22,14 @@
 ;↓◆イベント判定処理を見るための変数をセット
 [eval exp="f.hantei_event_storage='okeiko.ks: *event_hantei_week_hajime_owari通過(event_hantei_week_hajime.ks判定終了)'"]
 [変数ログ表示]
+
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[wait time=10]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 
 ;◆手紙到着判定
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_all
@@ -410,7 +409,7 @@ f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
 [chara_mod name="bg" storage=&f.okeiko_bg_tukihajime]
 ;【SE】スズメのさえずり
 [playse storage=tori_suzume.ogg loop=false ]
-[wait time=1000]
+[wait time=100]
 [endif]
 
 ;◆イベント判定(週始め)へ
