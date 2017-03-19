@@ -124,7 +124,7 @@ sf.kuroda ={
 f.para_kuroda_koukando = 3; //2/2調整更新夢イベント偏りを減らすため5→3
 f.para_kuroda_sintyou = 169;
 f.para_kuroda_taijuu = 57;
-f.para_kuroda_shumi = "－";
+f.para_kuroda_shumi = "散策";
 f.kuroda_fumi_henjimachi = 1;
 f.kuroda_fumi_toutyakumachi = 3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
 f.kuroda_fumi_toutyakumachi_week = 0; //その攻略対象にこちらから手紙を出してから、手紙が来るまでの経過週数(出した週を0とし、毎週加算される)
@@ -168,14 +168,14 @@ sf.zaizen ={
   "fumi_henjimachi_ok_number" : 0,
   "isono1" : "zaizen_isono1",
   "info1" : "info_zaizen",
-  "ask1" : "(仮)財前美彬様について",
+  "ask1" : "財前美彬様について",
   "fumibako" : "fumibako_zaizen",
   "fumi1" : "zaizen_fumi1",
 }; 
 f.para_zaizen_koukando = 0;
 f.para_zaizen_sintyou = 183;
 f.para_zaizen_taijuu = 73;
-f.para_zaizen_shumi = "－";
+f.para_zaizen_shumi = "仕事の成果をあげること";
 f.zaizen_fumi_henjimachi = 1;
 f.zaizen_fumi_toutyakumachi = 3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
 f.zaizen_fumi_toutyakumachi_week = 0;
@@ -229,7 +229,7 @@ sf.katuraginomiya ={
 f.para_katuraginomiya_koukando = 5; //2/2調整更新夢イベント偏りを減らすため10→5
 f.para_katuraginomiya_sintyou = 177;
 f.para_katuraginomiya_taijuu = 69;
-f.para_katuraginomiya_shumi = "－";
+f.para_katuraginomiya_shumi = "和歌を詠むこと";
 f.katuraginomiya_fumi_henjimachi = 0; //最初の手紙に(0返事しているor1未返信)
 f.katuraginomiya_fumi_toutyakumachi = 3; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
 f.katuraginomiya_fumi_toutyakumachi_week = 0;
@@ -288,7 +288,7 @@ sf.hujieda ={
 f.para_hujieda_koukando = 5; //2/8調整更新(他キャラクターに手紙を出した際の偏りを減らすため2→5。藤枝イベント発生していれば夢イベント時9予定)
 f.para_hujieda_sintyou = 165;
 f.para_hujieda_taijuu = 56;
-f.para_hujieda_shumi="－";
+f.para_hujieda_shumi="音楽鑑賞と楽器演奏";
 f.hujieda_fumi_henjimachi= 1 ; //最初の手紙に(0返事しているor1未返信)
 f.hujieda_fumi_toutyakumachi= 3 ; //話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）
 f.hujieda_fumi_toutyakumachi_week= 0 ;
