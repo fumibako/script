@@ -413,6 +413,7 @@
 ;[主人公の家の前]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_genkan.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
 #
 ;【登場】四条

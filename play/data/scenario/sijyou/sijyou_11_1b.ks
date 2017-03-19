@@ -361,6 +361,7 @@ $(".nerine").css("opacity",0.5);
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 ;四条家玄関
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　＠名無し１'"]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [font color=white size=27]
@@ -418,6 +419,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;==========================================
 ;[暗点]か空
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 #
 『私の[ruby text=やまい]病のことで、[華衣]との婚約解消されたら嫌だった。[r]
 [sp]急がないといけない、この想いを綴るには種もほしい』[p]
@@ -434,6 +436,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;==========================================
 ;病院 四条表示準備してます
 [chara_mod name="bg" storage="bg/sijyou_byouin.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　＠名無し１'"]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_byouin.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
@@ -483,6 +486,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *seen5
 ;花園もどる
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　＠名無し１'"]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [wait time=10]

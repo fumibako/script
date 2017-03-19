@@ -241,6 +241,7 @@ lay1[0].style.webkitFilter = "sepia(80%)";
 ;あのときって？？ということで一度表示
 ;[主人公の家の前]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （たしか、あの時、華織様との別れ際に現れた方でしたね）[p]
 ;↓眉：困り [主人公眉困り]
