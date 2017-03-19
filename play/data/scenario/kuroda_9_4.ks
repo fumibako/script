@@ -121,6 +121,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [主人公ふぅ閉]
 [wait time=10]
 「……ふぅ。考えても仕方がないわ」[p]
+[fadeoutbgm time=3000]
+[wait time=10]
 ;【立ち絵】主人公：ほほえみ（下がり眉）
 [主人公ほほえみ]
 [wait time=10]
@@ -136,6 +138,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [sp]ぜひご一緒させていただきたく存じます……）[p]
 ;手紙編終了
 [stopse]
+[stopbgm]
 
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]

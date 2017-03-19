@@ -895,10 +895,12 @@
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「もうしばらく卒業までバタバタしてしまうのですが……[r]
+「もうしばらく卒業までバタバタしてしまうのですが……。[r]
 [sp]卒業式の日に、またお会いできますか？」
 [autosave]
 [p]
+[fadeoutbgm time=3000]
+[wait time=10]
 [黒田目パチ1回L]
 [wait time=10]
 
@@ -913,6 +915,7 @@
 [主人公閉目パチ1回]
 [wait time=10]
 「楽しみに、お待ちしております」[p]
+[stopbgm]
 [黒田退場]
 [wait time=10]
 

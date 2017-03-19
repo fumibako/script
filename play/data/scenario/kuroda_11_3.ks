@@ -270,6 +270,8 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ごきげんよう、田中様」[p]
+[fadeoutbgm time=3000]
+[wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 （悔しがる黒田様……まだ、そんなお姿は見たことがない）[p]
@@ -283,6 +285,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=50]
 （いつか見せてくださるかしら。もう少し、打ち解けたいわ）[p]
+[stopbgm]
 
 ;町にお出かけ編、終了（11月第3週）
 [if exp="tf.test_kuroda==true"]

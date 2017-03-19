@@ -369,7 +369,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 
 「お忙しいでしょうに、お知らせくださるなんて……」[p]
 [fadeoutbgm time=3000]
-
+[wait time=10]
 [chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
 [wait time=10]
 ;【立ち絵】主人公：ほほえみ

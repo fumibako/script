@@ -107,6 +107,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [主人公ほほえみ]
 [wait time=10]
 （今度は二週間後にお会いできるのね……待つのも楽しみのうちかしら）[p]
+[fadeoutbgm time=3000]
+[wait time=10]
 ;【立ち絵】主人公：通常
 [主人公ポーズ通常]
 [wait time=10]
@@ -123,7 +125,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [wait time=10]
 （……こちらこそ沢山お話しできて、嬉しゅうございました。[r]
 [sp]木々の冬仕度も楽しみに、ご一緒させていただきたく存じます……）[p]
-
+[stopbgm]
 ;手紙編終了
 ;◆「休憩中」画像消去
 [freeimage layer = 26]

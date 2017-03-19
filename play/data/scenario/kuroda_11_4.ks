@@ -178,7 +178,7 @@
 [playse storage=girl_out_walk.ogg loop=false ]
 ……[p]
 ;==========================================================================================
-[whosay name="召使い"]
+[whosay name="女中"]
 「お嬢様。先ほど黒田様の車夫から聞いたのですが――」[p]
 [主人公目パチ1回]
 [wait time=10]
@@ -469,7 +469,7 @@
 [黒田閉目パチ1回]
 [wait time=10]
 [fadeoutbgm time=3000]
-
+[wait time=10]
 （母上には無理をさせてしまっているな）[p]
 ;【立ち絵】黒田：目閉じ
 [chara_mod name="kuroda_me" storage="kuroda/me_fusi2.png" time=0]
@@ -478,6 +478,7 @@
 [wait time=10]
 （こんなときに、研究ばかりしていて良いものだろうか[r]
 [sp]……しかし、研究も長く休むわけにはいかない）[p]
+[stopbgm]
 
 ;黒田家編　終了
 [黒田退場]

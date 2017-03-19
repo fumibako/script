@@ -273,6 +273,8 @@ jumpします。[p]
 [wait time=10]
 （きちんと振る舞えるか、心配だわ。[r]
 [sp]今まで以上にお稽古を頑張ろう）[p]
+[fadeoutbgm time=3000]
+[wait time=10]
 
 ;【分岐】他攻略対象の好感度が高い場合
 [if exp="f.para_sijyou_koukando > 15 || f.para_katuraginomiya_koukando > 15 || f.para_hujieda_koukando > 15 || f.para_zaizen_koukando > 15"]
@@ -298,6 +300,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （せめて、今まで以上に心を込めて別れの手紙を書こう。
 [sp]もしどこかでお会いすることがあっても笑顔でお話できるように）[p]
+[stopbgm]
 [endif]
 
 ;個別ルート前夜終了

@@ -202,6 +202,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [wait time=1000]
 
 ――部屋が梅の上品な香りに包まれた。[p]
+[fadeoutbgm time=3000]
+[wait time=10]
 
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
@@ -210,6 +212,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 「……できたわ。よい香り」[p]
 
 （黒田様も、気に入ってくださるかしら）[p]
+[stopbgm]
 ;【部分分岐】梅柄の便せんに梅の香を焚き染めたもの【終了】
 ;==========================================================================================
 [if exp="tf.test_kuroda == true"]
@@ -236,6 +239,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [sp]うぐいすも入った柄の便せんにしましょう。[r]
 [sp]気に入ってくださるかしら」
 [p]
+[fadeoutbgm time=3000]
+[wait time=10]
 
 ;【立ち絵】主人公：目閉じ
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -249,6 +254,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 （……素敵なお誘いをありがとうございます。[r]
 [sp]順調とお聞きして、心より安堵いたしました。[r]
 [sp]黒田様にお会いできることを何より楽しみに、ご一緒させていただきます……）[p]
+[stopbgm]
 
 ;【部分分岐】梅にうぐいす柄の便せん【終了】
 ;==========================================================================================
@@ -274,6 +280,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 
 「久しぶりのお手紙。ここは気持ちも新たに無地の便せんにしてみましょう」[p]
+[fadeoutbgm time=3000]
+[wait time=10]
 
 ;【立ち絵】主人公：目閉じ
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -287,6 +295,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 （……素敵なお誘いをありがとうございます。[r]
 [sp]順調とお聞きして、心より安堵いたしました。[r]
 [sp]黒田様にお会いできることを何より楽しみに、ご一緒させていただきます……）[p]
+[stopbgm]
 
 ;【部分分岐】無地の便せん【終了】
 ;==========================================================================================

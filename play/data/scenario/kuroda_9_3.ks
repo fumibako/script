@@ -863,7 +863,7 @@ jumpします。[p]
 *scene11
 
 #
-楽しい時間はあっという間に過ぎてしまった――
+楽しい時間はあっという間に過ぎてしまった――。
 [autosave]
 [p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake.png" time=0]
@@ -917,6 +917,8 @@ jumpします。[p]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お父様が、お会いすることを許してくださったわ）[p]
+[fadeoutbgm time=3000]
+[wait time=10]
 
 ;【立ち絵】黒田：通常
 [黒田目パチ1回]
@@ -926,7 +928,7 @@ jumpします。[p]
 [黒田ほほえみ]
 [wait time=10]
 [sp]では、またお会いしましょう」[p]
-
+[stopbgm]
 
 ;見合い編終了
 [黒田退場]

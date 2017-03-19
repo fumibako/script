@@ -296,6 +296,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「大丈夫。 ありがとう、磯野」[p]
+[fadeoutbgm time=3000]
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -303,6 +304,7 @@
 [主人公通常]
 [whosay name=磯野 color="dimgray"]
 「また気になるようなことがございましたら、お申し付けください」[p]
+[stopbgm]
 @jump target=*end_Q
 
 *end_Q
@@ -311,9 +313,6 @@
 ;[freeimage layer=29 time=1000]
 [イベントシーン終了]
 ;=================================================================================================
-[if exp="tf.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_owari
-[endif]
 [if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [endif]

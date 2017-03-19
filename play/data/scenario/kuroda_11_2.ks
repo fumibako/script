@@ -1026,11 +1026,13 @@
 [whosay name="黒田 将貴" color="#7a65b2"]
 「そうお聞きして、嬉しいですよ！[r]
 [sp]では[名前]さん、また再来週に」[p]
-
+[fadeoutbgm time=3000]
+[wait time=10]
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、再来週に。ごきげんよう、黒田様」[p]
+[stopbgm]
 [黒田退場]
 [wait time=10]
 ;散策再び編終了（11月第2週）

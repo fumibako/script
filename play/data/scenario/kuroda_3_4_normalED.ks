@@ -276,6 +276,8 @@ $(".rp_bt").remove();
 [sp]次にお兄様たちが帰国された際には、色々とご案内[r]
 するのが楽しみです。[r]
 ……[p]
+[fadeoutbgm time=3000]
+[wait time=10]
 
 
 ;【SE】パラリ(手紙)
@@ -300,6 +302,7 @@ $(".rp_bt").remove();
 [r]
 [r]
 [sp]　　　　　　　　　　完[p]
+[stopbgm]
 [eval exp="sf.ED_kuroda_normal=1"]
 ;回想記録終了
 [endreplay] 

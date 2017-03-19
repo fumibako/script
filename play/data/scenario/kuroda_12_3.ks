@@ -677,12 +677,14 @@ $('.junbi_girl').remove();
 [wait time=10]
 
 思わず背筋を伸ばし、手紙をそっと手に取り眺める。[p]
-
+[fadeoutbgm time=3000]
+[wait time=10]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake.png" time=0]
 [wait time=10]
 [fadeoutbgm time=3000]
 （もう一度――いや、何度でも研究に向かおう。[r]
 [sp]試料が尽きようとも、方法はあるはずだ）[p]
+[stopbgm]
 [黒田退場]
 [wait time=10]
 ;黒田編終了
