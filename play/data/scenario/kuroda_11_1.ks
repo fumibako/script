@@ -120,7 +120,7 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
-「きのこのお話や、紅葉谷のお能の話をうかがったわ」[r]
+「きのこのお話や、紅葉谷のお能の話をうかがったわ」[p]
 （虫のお話は伏せておくのが無難ね……）[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
