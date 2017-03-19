@@ -1209,16 +1209,16 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 首筋に、ほんのりと香りを残して……[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （このまま帰ったら、勘のいい磯野は、なんていうかしら……？）[p]
+[主人公退場]
 ;【SE】うぐいす（ケキョケキョ）
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
-[主人公退場]
+;【背景】青空に桜
+[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 #
 ;[暗転]
-[fadeoutse tome=1000]
 [chara_mod name="bg" storage="toumei.gif"]
-
-
-
+[fadeoutse tome=1000]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen==true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
