@@ -305,6 +305,7 @@ $(".rp_bt").remove();
 「黒田様が、幼いころから好きだったという『すみれ』[r]
 　無事に咲いて、よかったわ」[p]
 [fadeoutbgm time=3000]
+[wait time=10]
 
 #
 [r]
@@ -380,6 +381,7 @@ $(".rp_bt").remove();
 
 ;【背景】プロローグと同じ黒っぽい和紙風、全画面テキスト
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=500]
+[wait time=10]
 [主人公退場]
 [wait time=10]
 ;機能ボタン消去
@@ -389,7 +391,7 @@ $(".rp_bt").remove();
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
-[if exp="tf.okeiko_gamen != true"]
+[if exp="f.okeiko_gamen != true"]
 	[fadeoutbgm time=3000]
 [endif]
 ;メッセージレイヤを全画面用に設定変更
