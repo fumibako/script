@@ -1214,12 +1214,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公退場]
 #
 ;[暗転]
+[fadeoutse tome=1000]
 [chara_mod name="bg" storage="toumei.gif"]
-;おまけに飛ぶ？
-;[whosay name="華織" color="olivedrab"]
-;（帰ったら未来の君のために頑張らないと……）[p]
-#
-;@jump storage="sijyou/sijyou_omake_kai.ks"
+
+
 
 [イベントシーン終了]
 [if exp="f.okeiko_gamen==true"]
