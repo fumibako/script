@@ -25,11 +25,44 @@
 ;季節描写　春
 #
 町に出た。[r]
-はろやかな光が、桜の花びらと共に降り注ぐ。[p]
+はろやかな光が、桜の花びらと共に降り注ぐ。
+[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。香水店入店手前までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+[イベント中テスト数値表示]
+@jump target=*kousui_nyuutenmae
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[イベント中テスト数値表示]
 [endif]
 ;がやがやSE
 ;【SE】人々のざわめき（ザワザワ…屋外）
@@ -309,6 +342,9 @@ $('.saku1').remove();
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えぇと、香水の専門店でしょうか……？」[p]
+
+;↓香水店入店時のつながりのテストを重ねるためのラベルです(◆jsYiJcqRkk
+*kousui_nyuutenmae
 ;ふたりで香水を選ぶ
 [四条口開]
 [whosay name="華織" color="olivedrab"]
@@ -345,6 +381,41 @@ $('.saku1').remove();
 [whosay name="調香店主" color=%mp.color]
 「いらっしゃいませ～！[r]
 [sp]あらまあ！ 四条綾花様のところに華織様じゃないですか」[p]
+;↑"四条綾花様のところに"→"四条綾花様のところの"の方が自然でしょうか。変えると意味合いが変化してしまいますので、そのままにします(◆jsYiJcqRkk
+
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。（お父様が帰って～）までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok1]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no1]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+[イベント中テスト数値表示]
+@jump target=*otousamaga
+[s]
+
+*jump_no1
+[current layer="message0"]
+「いいえ」[r]
+そのまま続けます。[p]
+[cm]
+[イベント中テスト数値表示]
+[endif]
+
 [四条目閉じ]
 [四条口微笑み]
 [whosay name="華織" color="olivedrab"]
@@ -422,7 +493,7 @@ $('.saku1').remove();
 [四条頬染め]
 [四条口驚き]
 ;～～四条照れ驚き小～
-「そ、そうなんですか？　」 [p]
+「そ、そうなんですか？」 [p]
 [主人公眉通常]
 [主人公目通常]
 ;四条照れの間
@@ -502,7 +573,7 @@ $('.saku1').remove();
 #
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif"]
-――　華織様の香りを確かめる。[p]
+――華織様の香りを確かめる。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
@@ -548,13 +619,13 @@ $('.saku1').remove();
 「[名前] さん……？」 [p]
 #
 [主人公目通常]
-――　目と目が合う[p]
+――目と目が合う。[p]
 [主人公驚]
 私は、香りにつられたのか、華織様との距離が、いつもより、とても近い場所にいた。[p]
 それこそ抱きしめているかのような距離。[p]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「! ご、ごめんなさい」[p]
+「！ ご、ごめんなさい」[p]
 ;↓口：通常 [主人公口通常]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -749,7 +820,7 @@ $('.saku1').remove();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（！　）[p]
+（！）[p]
 ;~~~~~~~四条控えめな驚き~~~~~~~
 ;[四条目通常]
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
@@ -1093,7 +1164,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そうですね……感慨深いですね[r]
+「そうですね……感慨深いですね。[r]
 [sp]華織様のお祖母様とお祖父様が結ばれて、[ruby text=お]義[ruby text=とう]父様と [ruby text=お]義[ruby text=かぁ]母様が
 出会って[r]
 [sp]……華織様に出会えて」[p]
@@ -1115,6 +1186,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そういえば、私のお父様とお母様は、どの様にしてお近づきになられた[r]
 [sp]のでしょう？）[p]
+;↓つながり確認用ラベルです(◆jsYiJcqRkk
+*otousamaga
 #
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (お父様が帰ってきたら聞いてみようかしら）[p]
@@ -1124,14 +1197,15 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[暗転]
 [chara_mod name="bg" storage="toumei.gif" time=2000 wait=false]
 #
-――それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う[p]
+――それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う。[p]
+;↑エンディングは「結婚」に変更されましたが、ここでは「結納」のままで良いでしょうか？(◆jsYiJcqRkk
 [主人公退場]
 #
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~シーン主人公家の前~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;【背景】主人公邸 玄関
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[表示準備 storage=""bg/bg_genkan.jpg" layer=13]
+[表示準備 storage="bg/bg_genkan.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
@@ -1140,12 +1214,45 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [whosay name="華織" color="olivedrab"]
 「今日は、急な誘いについて来てくれてありがとう。　おかげで素敵な話を[r]
 [sp]聞くことができたよ」[p]
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。終了手前までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok2]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no2]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok2
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+[イベント中テスト数値表示]
+@jump target=*scene_end_mae
+[s]
+
+*jump_no2
+[current layer="message0"]
+「いいえ」[r]
+そのまま続けます。[p]
+[cm]
+[イベント中テスト数値表示]
+[endif]
+
 [主人公笑顔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「こちらこそ。 素敵な時間をありがとうございます」[p]
 
 [whosay name="華織" color="olivedrab"]
-「その、名前さんが嫌でなければ、ですが……[r]
+「その、名前さんが嫌でなければ、ですが……。[r]
 [sp]手を出してもらっていいですか？　」[p]
 [主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1200,13 +1307,14 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [else]
 「か、華織様こそ！」 [p]
 [endif]
+*scene_end_mae
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
-「今度は正式に会いましょう　その時までにこの香りを覚えておくよ」[p]
+「今度は正式に会いましょう。　その時までにこの香りを覚えておくよ」[p]
 [四条退場準備 storage="bg/bg_genkan.jpg" layer=13 time=500]
 #
 華織様は、手をとって門前まで送ると、会釈をして帰っていった。[p]
-首筋に、ほんのりと香りを残して……[p]
+首筋に、ほんのりと香りを残して……。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （このまま帰ったら、勘のいい磯野は、なんていうかしら……？）[p]
 [主人公退場]
@@ -1217,6 +1325,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 #
 ;[暗転]
+;↓こちらの環境では「青空に桜」が1秒未満で暗転に切り替わり、すこし不自然に感じられます。暗転代わりのtoumei.gifを除くと自然になりそうに思いますが、いかがでしょうか(◆jsYiJcqRkk
 [chara_mod name="bg" storage="toumei.gif"]
 [fadeoutse tome=1000]
 [イベントシーン終了]
