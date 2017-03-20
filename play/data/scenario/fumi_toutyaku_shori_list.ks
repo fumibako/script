@@ -1421,12 +1421,12 @@ f.fumi_all_title_new=f.okeiko_month_kansuuji+"「将来について」　藤枝�
 f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「将来について」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
-f.fumi_list_all_target.push("*hujieda_fumi12");
+f.fumi_list_all_target.push("*hujieda_fumi11");
 f.fumi_list_all_location_taishou.push(4);
 f.fumi_list_all_location_fumi.push(11);
 f.fumi_list_hujieda_location_fumi.push(11);
 f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
-f.fumi_list_hujieda_target.push("*hujieda_fumi12");
+f.fumi_list_hujieda_target.push("*hujieda_fumi11");
 f.hujieda_fumi_henjimachi=f.hujieda_fumi_henjimachi+1;
 f.fumi_toutyaku_hujieda[12]=1;
 f.hujieda_fumi_toutyakumachi_shourai=-1;
@@ -1739,7 +1739,7 @@ f.hensin_list_hairetsu[4][28] = -1;
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
 
 ;=============================================
-;◆兄や友人、その他のキャラクターからの手紙（作成途中です）
+;◆兄や友人、その他のキャラクターからの手紙
 ;=============================================
 ;◆時子さんからの手紙：葛城宮の伊能殿についての手紙から１週間後
 ;=============================================
