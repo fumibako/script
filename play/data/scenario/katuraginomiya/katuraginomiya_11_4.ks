@@ -175,6 +175,7 @@
 [wait time=10]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
 [chara_mod name="bg" storage="bg/katuraginomiya_kaigi2.jpg" time=50]
+[eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -278,7 +279,7 @@
 ;【背景】臣民教育 ﾚｲﾔｰ13に表示
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/katuragi_sisou.jpg" time=50]
 [image layer=13 x=1 y=1 storage="bg/B4nFWraU42/katuragi_sisou.jpg" time=1000 visible=true]
-[eval exp="f.haikei_credit='＠名無しさん１'"]
+[eval exp="f.haikei_credit='photo by ＠名無しさん１'"]
 ;==========================================================================
 #
 民族の宗教、言語、姓名を我が国と同化させ、臣民教育を徹底する。[p]
@@ -338,7 +339,7 @@
 ;【背景】蟷螂団 ﾚｲﾔｰ13に表示
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=50]
 [image layer=13 x=1 y=1 storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=1000 visible=true]
-[eval exp="f.haikei_credit='＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
 ;==========================================================================
 *seen7
 #
@@ -381,7 +382,7 @@
 ;==========================================================================
 ;【背景】治安維持法
 [chara_mod name="bg" storage="bg/B4nFWraU42/katuragi_chianijihou.jpg" time=1200]
-[eval exp="f.haikei_credit='font by　花園明朝体'"]
+[eval exp="f.haikei_credit='font by　花園明朝体, designed by ＠名無しさん１'"]
 ;==========================================================================
 *seen9
 #

@@ -369,7 +369,7 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】執務室（裏で画面構成）
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================

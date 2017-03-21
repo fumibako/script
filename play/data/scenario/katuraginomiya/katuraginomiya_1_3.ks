@@ -76,7 +76,7 @@
 ;機能ボタン非表示
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;メッセージレイヤを全画面用に設定変更
 ;[position left=200 width=700 height=530 top=110 page=fore margint="50" opacity=0]
 ;放送局前 をいれた方がいいのでは？
@@ -211,6 +211,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:演説画像
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/enzetu.jpg" time=1000 visible=true]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;再配布状態になるのでクレジットを表示
 [mtext name=ct text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]

@@ -7,7 +7,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+[back storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -153,7 +153,7 @@ $('.list').remove();
 ;===============================================================
 [主人公退場]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg" time=1300]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川'"]
 [表示準備 storage="bg/I9IhvvVdPo/ekken.jpg"]
 ;主人公復帰表情目閉じ　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
@@ -264,7 +264,7 @@ $('.junbi_girl').remove();
 
 ;【テキスト全画面】黒茶・和紙風背景に白文字
  [テキスト全画面白文字]
-――十年後[p]
+――十年後。[p]
 ;===============================================================
 ;【背景】青空に桜
 ;[chara_mod name="bg" storage="bg/bg_sakura.jpg"]

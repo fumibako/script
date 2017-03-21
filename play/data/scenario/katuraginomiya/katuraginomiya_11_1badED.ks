@@ -155,7 +155,7 @@ jumpします。[p]
 私にもっと強さがあれば、殿下は私を受け入れてくれたのかしら？[p]　
 
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 ;【立ち絵】主人公 通常
  [主人公目伏]
  [主人公眉下げ下]

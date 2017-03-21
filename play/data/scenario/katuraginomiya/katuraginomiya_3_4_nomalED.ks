@@ -10,7 +10,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+[back storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -29,7 +29,7 @@ $('.list').remove();
 ;【背景】公園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [表示準備 storage="bg/I9IhvvVdPo/kouenn.jpg"]
-[eval exp="f.haikei_credit='photo　by　I9IhvvVdPo'"]
+[eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]

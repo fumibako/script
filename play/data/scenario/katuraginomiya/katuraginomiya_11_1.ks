@@ -148,7 +148,7 @@
 [current layer="message0"]
 ;【背景】バラ園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
-[eval exp="f.haikei_credit='I9IhvvVdPo'"]
+[eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
 ;＝＝＝システムメッセージ。変更してください＝＝＝＝＝
 #
@@ -171,8 +171,8 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 ;【背景】バラ園
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
-[eval exp="f.haikei_credit='I9IhvvVdPo'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
+[eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
 ;＝＝＝システムメッセージ。変更してください・・・＝＝＝＝＝
 #
