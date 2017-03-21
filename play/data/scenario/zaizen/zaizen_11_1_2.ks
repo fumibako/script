@@ -8,7 +8,7 @@
 [call target=*start storage="macro_tati_zaizen.ks"]
 ;【背景】パーティ会場
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -222,7 +222,7 @@ jumpします。[p]
 ;===============================================================
 ;【背景】呉服屋的な背景 　全画面文字のみ表示
 [image layer=29 x=1 y=1 storage="bg/zaizen_gofuku.jpg" time=1300 visible=true]
-[eval exp="f.haikei_credit='― ― ―'"]
+[eval exp="f.haikei_credit=''"]
 ;===============================================================
 
 ;最大6~7行
@@ -293,7 +293,7 @@ jumpします。[p]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】港町的な背景
 [image layer=29 x=1 y=1 storage="bg/zaizen_minato.jpg" time=1300 visible=true]
-[eval exp="f.haikei_credit='― ― ―'"]
+[eval exp="f.haikei_credit=''"]
 [wait time=10]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更

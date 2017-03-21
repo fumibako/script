@@ -141,7 +141,7 @@
 ;===============================================================
 ;振り向いて背景変更する場合はこちら
 ;[chara_mod name="bg" storage="bg/zaizen_kuruma1.jpg" time=50]
-;[eval exp="f.haikei_credit='----　by　----　------------ '"]
+;[eval exp="f.haikei_credit=''"]
 ;[表示準備 storage="bg/zaizen_kuruma1.jpg" time=50]
 ;===============================================================
 ;町のままでで進行します。
@@ -268,7 +268,7 @@
 [財前退場]
 ;【背景】車の外　外なので退場です。
 [chara_mod name="bg" storage="bg/zaizen_kuruma1.jpg" time=50]
-;[eval exp="f.haikei_credit='----　by　----　------------ '"]
+;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;====================================================================================
 #

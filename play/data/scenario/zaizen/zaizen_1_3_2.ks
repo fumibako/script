@@ -12,7 +12,7 @@
 [call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
 ;【背景】洋館居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
 ;【立ち絵】財前：真剣　;変更してください
@@ -152,7 +152,7 @@
 [font color=white size=27]
 ;===============================================================
 #
-―― そして取り付け騒ぎは、次第に沈静化していった。[p]
+――そして取り付け騒ぎは、次第に沈静化していった。[p]
 
 ;===============================================================
 [暗転]

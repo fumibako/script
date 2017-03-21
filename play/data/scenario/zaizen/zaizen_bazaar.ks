@@ -451,6 +451,7 @@
 ;背景変更　移動　どのような背景でしょうか
 ;【背景】背景バザー出店（遠景）
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [wait time=10]
 [暗転２終了]
 ;=================================================================
@@ -576,6 +577,7 @@
 [暗転２]
 ;【背景】背景バザー出店（近景）
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity2.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [wait time=100]
 [主人公憂い]
 [暗転２終了]
@@ -618,6 +620,7 @@
 ;背景バザー出店描けるといいんですが（汗
 ;【背景】背景バザー出店（入り口）
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity51.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [暗転２終了]
 ;=================================================================
 

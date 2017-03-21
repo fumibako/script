@@ -26,7 +26,7 @@ $('.list').remove();
 
 ;【背景】パーティ会場の庭[背景_庭]　
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
-[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -131,6 +131,7 @@ jumpします。[p]
 [wait time=10]
 ;【背景】洋館居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -147,7 +148,7 @@ jumpします。[p]
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
 [表示準備 storage="bg/test_room_zaizen_ima.jpg"]
-[eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 
 ;【立ち絵】主人公：目伏せ

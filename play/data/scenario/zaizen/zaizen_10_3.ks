@@ -108,7 +108,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [暗転２]
 ;【背景】薔薇園
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg" time=50]
-[eval exp="f.haikei_credit='photo by I9IhvvVdPo'"]
+[eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [主人公通常]
 ;====================
 ;【立ち絵】財前 微笑み

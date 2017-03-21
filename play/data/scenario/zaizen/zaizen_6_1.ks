@@ -19,11 +19,13 @@
 #
 ;ゆっくり表示
 [chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
-――　夢を見た。[p]
+[eval exp="f.haikei_credit=''"]
+――夢を見た。[p]
 
 [イベントシーン構築枠茶色]
 ;【背景】財前邸居間
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"  time=1000]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 
 [whosay name="女中"]
 「若旦那様、今朝の新聞と、[名字]様からの手紙が届いております」[p]

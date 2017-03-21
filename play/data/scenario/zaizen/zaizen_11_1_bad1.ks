@@ -144,7 +144,7 @@ jumpします。[p]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -185,7 +185,7 @@ jumpします。[p]
 ;================================================================================================
 ;【背景】独逸大使館パーティ会場
 [chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;================================================================================================
 
 ;【立ち絵】主人公：微笑み
@@ -267,7 +267,7 @@ jumpします。[p]
 ;================================================================================================
 ;【背景】空
 [chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"][p]
+[eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 [fadeoutbgm time=3000]
 ;================================================================================================
 

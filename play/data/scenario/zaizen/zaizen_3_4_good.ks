@@ -27,7 +27,7 @@ $('.list').remove();
 
 ;【背景】パーティ会場庭
 [chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg"]
-;[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]

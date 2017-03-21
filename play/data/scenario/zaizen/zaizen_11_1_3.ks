@@ -222,7 +222,7 @@
 [財前退場]
 ;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
 [chara_mod name="bg" storage="bg/bg_syanderia.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫'"]
+[eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;====================================================================================
 #
