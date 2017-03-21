@@ -61,6 +61,7 @@ $('.list').remove();
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [主人公退場]
+@layopt layer=message2 page=fore visible = false
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1000]
 [wait time=10]
 [テキスト全画面白文字無背景]
@@ -69,7 +70,7 @@ $('.list').remove();
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
 
-――１５年後。[p]
+――十五年後。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】「いにしえより続く街、太宰府」
@@ -133,7 +134,7 @@ $('.list').remove();
 藤枝さまの中では、ずっと綺麗なままの私でいたい[r]から。[p]
 ――私はもう戻れない過去。　叶わない恋をした。[r]
 [r]
-[sp]……ただそれだけ[p]
+……ただそれだけ。[p]
 
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
