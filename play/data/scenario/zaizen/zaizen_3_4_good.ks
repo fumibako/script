@@ -5,7 +5,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [if exp="f.flag_replay==true"]
-[back storage="toumei.gif" time=1]
+[bg storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
