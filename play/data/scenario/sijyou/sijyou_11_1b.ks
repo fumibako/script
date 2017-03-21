@@ -53,6 +53,40 @@
 [四条ボタン表示]
 [whosay name="華織" color="olivedrab"]
 「[華衣]！ ここに居たんだな」[p]
+
+[if exp="tf.test_gamen==true"]
+テストページから開始しています。婚約者手紙の場面までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+[イベント中テスト数値表示]
+@jump target=*tegami_konyakusha
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[イベント中テスト数値表示]
+[endif]
+
 [fadeoutse time=1000]
 [stopse]
 [四条口ムッ]
@@ -190,6 +224,7 @@
 ;たまに止まるのです
 ;【退場】四条
 [四条退場準備 storage="bg/sijyou_namigaura.jpg"]
+*tegami_konyakusha
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
@@ -199,21 +234,22 @@
 [playse storage=paper_open.ogg loop=false ]
 [手紙華衣婚約者 fumi_number=]
 [華衣]へ[r]
-[image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=300 top=200 time=1500 wait=false]
+[image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=220 top=-20 time=1500 wait=false]
 ;うっすら
+;ネリネのサイズ調整と組み込み、演出をありがとうございます。調整しやすく助かりました(◆jsYiJcqRkk
 [iscript]
 $(".nerine").css("opacity",0.5);
 [endscript]
 「もともと私の身体は長くなかったようです。[r]
 [sp]だから華織さんを責めないであげてください。[r]
-[sp]私の無茶なお願いをきいてくれたのだのだから。[r]
+[sp]私の無茶なお願いをきいてくれたのだから。[r]
 [r]
 [sp]最後に[華衣]にみてほしいものがあります。[r]
 [sp]もし私の頼みを華織さんが忘れていなければ、[r]
-[sp]きっと[華衣]の家の庭に咲いている思います。[r]
+[sp]きっと[華衣]の家の庭に咲いていると思います。[r]
 [r]
 [r]
-[sp]どうか悲しまないでほしい[r]　
+[sp]どうか悲しまないでほしい。[r]　
 [sp]私は[華衣]に　幸せな思い出が訪れる日を楽しみにしています。」[p]
 [手紙読了] 
 
@@ -316,7 +352,7 @@ $(".nerine").css("opacity",0.5);
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[華衣]さん、ネリネの花言葉を知っていますか？」[p]
 [whosay name="華衣" color=%mp.color]
-「?」[p]
+「？」[p]
 [主人公困りほほえみ]
 [wait time=15]
 [主人公伏目パチ1回]
@@ -341,28 +377,34 @@ $(".nerine").css("opacity",0.5);
 それは、『忍耐』 [p]
 けれど、それは十分だと思い、私は胸の内にしまっておいた。[p]
 ほんの少しですが、想うゆえに耐え忍ぶ気持ちが、[r]
-私にもわかったから――[p]
+私にもわかったから――。[p]
 #
 [ruby text=ひと]一[ruby text=り]人、ネリネの庭で咽び泣く少年がいた。[r]
-世界でたった[ruby text=ひと]一つの想いを綴った手紙に[p]
-#手紙
+世界でたった[ruby text=ひと]一つの想いを綴った手紙に。[p]
+[whosay name="手紙"]
 『私が、消えてしまう前に、咲いて誇る華を綴ります』[p]
 #
 ;弟の回想 ところどころ三人目視点
 [主人公退場]
 ;=================================================================================_
 *seen4_1
+@layopt layer=message2 page=fore visible = false
 ;メッセージレイヤを全画面用に設定変更
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 [image layer=29 x=1 y=1 zindex=3 storage="bg/bg_prologue.jpg" time=50 visible=true]
 [wait time=50]
+[image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=1 top=-85 time=1000 wait=false opacity=]
+;うっすら
+[iscript]
+$(".nerine").css("opacity",0.9);
+[endscript]
 ;[eval exp="f.message_storage='toumei.gif'"]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 ;四条家玄関
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[position left=200 width=700 height=430 top=210 page=fore margint="50"]
 [wait time=50]
 [font color=white size=27]
 ――華で綴られる想いが私たちの目の前に広がる。[p]
