@@ -11,7 +11,7 @@ $('.list').remove();
 [endscript]
 [if exp="f.flag_replay==true"]
 [clearstack]
-[back storage="toumei.gif" time=1]
+[bg storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
