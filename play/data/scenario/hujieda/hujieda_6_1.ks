@@ -26,7 +26,7 @@
 [endif]
 
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato.jpg" time=1000]
-[eval exp="f.haikei_credit='illustration　by　I9IhvvVdPo_editing by＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by ＠名無しさん１'"]
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 

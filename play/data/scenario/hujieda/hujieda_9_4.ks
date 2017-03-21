@@ -12,6 +12,7 @@
 ;【背景】:町並み
 ;背景は、サブルーチンを読んでから(callの後)だと安全
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=30]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -245,7 +246,7 @@
 [er]
 ;==============================================================================
 [layopt layer=fix visible=false]
-[eval exp="f.haikei_credit='illustration　by　I9IhvvVdPo_editing by＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by＠名無しさん１'"]
 [表示準備 storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg" layer=29]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg" time=50]
@@ -263,6 +264,7 @@
 ;==============================================================================
 ;看板
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg" time=1200]
+[eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by＠名無しさん１'"]
 ;==============================================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ

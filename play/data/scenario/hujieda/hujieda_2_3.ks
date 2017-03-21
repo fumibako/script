@@ -10,6 +10,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ongakurensyuusitu.jpg" time=30]
+[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
 ;【立ち絵】藤枝：ため息
@@ -250,7 +251,7 @@
 #
 ;============================================================================================
 [暗転２]
-[eval exp="f.haikei_credit='I9IhvvVdPo'"]
+[eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
 [暗転２終了]
 [layopt layer=fix visible=true]

@@ -38,7 +38,7 @@
 
 ;【立ち絵】鳩_箏の柏葉　夢と結びつけるために画像配置　一回のみにします。他で付けたい部分があれば以下をコピー。
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" time=1000]
-[eval exp="f.haikei_credit='illustration　by　I9IhvvVdPo_editing by＠名無しさん１'"]
+[eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by ＠名無しさん１'"]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 驚
