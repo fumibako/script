@@ -409,6 +409,10 @@ $(".nerine").css("opacity",0.9);
 [wait time=50]
 [font color=white size=27]
 ――華で綴られる想いが私たちの目の前に広がる。[p]
+[iscript]
+//layer 1_fore
+$('.nerine').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
+[endscript]
 [r]
 まるで手紙が語りかけてくるようだった。[p]
 [r]
