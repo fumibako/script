@@ -410,9 +410,11 @@ $(".nerine").css("opacity",0.9);
 [font color=white size=27]
 ――華で綴られる想いが私たちの目の前に広がる。[p]
 [iscript]
-//layer 1_fore
-$('.nerine').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
-[endscript]
+$(function(){
+    setInterval(function(){
+        $('.nerine').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
+    },1000);
+})[endscript]
 [r]
 まるで手紙が語りかけてくるようだった。[p]
 [r]
