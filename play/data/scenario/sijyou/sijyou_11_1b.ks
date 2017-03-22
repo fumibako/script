@@ -392,7 +392,8 @@ $(".nerine").css("opacity",0.5);
 ;メッセージレイヤを全画面用に設定変更
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[image layer=29 x=1 y=1 zindex=3 storage="bg/bg_prologue.jpg" time=50 visible=true]
+;bg_prologue.jpg　anten.jpg
+[image layer=29 x=1 y=1 zindex=3 storage="bg/anten.jpg" time=50 visible=true]
 [wait time=50]
 [image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=1 top=-85 time=1000 wait=false opacity=]
 ;うっすら
