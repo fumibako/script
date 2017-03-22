@@ -1315,19 +1315,16 @@ jumpします。[p]
 #
 華織様は、手をとって門前まで送ると、会釈をして帰っていった。[p]
 首筋に、ほんのりと香りを残して……。[p]
+;【背景】青空に桜
+[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （このまま帰ったら、勘のいい磯野は、なんていうかしら……？）[p]
 [主人公退場]
 ;【SE】うぐいす（ケキョケキョ）
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
-;【背景】青空に桜
-[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
-[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
-#
-;[暗転]
-;↓こちらの環境では「青空に桜」が1秒未満で暗転に切り替わり、すこし不自然に感じられます。暗転代わりのtoumei.gifを除くと自然になりそうに思いますが、いかがでしょうか(◆jsYiJcqRkk
-[chara_mod name="bg" storage="toumei.gif"]
 [fadeoutse tome=1000]
+;[wait time=50]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen==true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
