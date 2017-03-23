@@ -36,12 +36,19 @@ https://fumibako.github.io/script/
 ・アオイサクラ 様 簡易コンフィグ画面プラグイン http://awoinekura.web.fc2.com/  
 ・ティラノスクリプト 製作テクニックwiki 様 http://tyrano.wiki.fc2.com/  
 
-###BGM
-・おとわび 様 http://otowabi.com/  
+###BGM　
+・おとわび 様 http://otowabi.com/  　
 
 ###画像素材  
 ・flickr 様 https://www.flickr.com/ (クレジット表記が必要なものは各画像に表記させていただきました)  
+・和風素材.com 様 http://www.wafusozai.com/  
+・ゆうあかり 様 http://light77.sakura.ne.jp/  
+・赤いガラスの宮殿 様 http://www.geocities.jp/redglass_palace/  
+・フリー素材屋Hoshino 写真提供者 usagi_s 様 http://www.s-hoshino.com/  
 ・明治村画像庫2 様 http://d.hatena.ne.jp/meiji_photo/  
+・otomegtx 様<br>
+・[PHOTO STOCKER]　様 http://photo.v-colors.com/  
+・YUKI 様 http://photo.v-colors.com/329.html
 ・フリー素材*ヒバナ 様 http://hibana.rgr.jp/  
 ・deviantart-gimei 様 http://gimei.deviantart.com/art/Japanese-style-image-set-102424728  
 ・pixiv : mit81 様 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=31433317  
@@ -53,6 +60,8 @@ https://fumibako.github.io/script/
 ###フォント  
 ・衡山毛筆フォント-青二書道教室 様 http://www7a.biglobe.ne.jp/~kouzan/  
 ・M+ FONTS 様 http://mplus-fonts.osdn.jp/index.html  
+・花園明朝 kamichi 様 https://ja.osdn.net/projects/hanazono-font/  
+・マキナス もじワク研究 様 http://moji-waku.com/makinas-flat/index.html  
 
 ##制作にご協力くださった方々  
 　＊　Special Thanks　＊  
@@ -60,11 +69,11 @@ https://fumibako.github.io/script/
 
 ##制作スタッフ
 ・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様  
-・キャラクターグラフィック：	かいこ(112 ◆UdslvZE52Q)  
-・シナリオ：	◆8EASfQr/2Q、＠名無しさん１、◆I9IhvvVdPo、◆ftAc29dlL.、◆jsYiJcqRkk  
-・スクリプト：	◆8EASfQr/2Q(吉里吉里Ver.システム原案)、◆jsYiJcqRkk(ティラノスクリプトVer.)  
-・その他(現まとめ役等)：	◆jsYiJcqRkk  
-  
+・キャラクターグラフィック：	かいこ 、 ◆jsYiJcqRkk   
+・脚本：	◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk  
+・スクリプト：	吉里吉里Ver.システム原案…◆8EASfQr/2Q 、 ティラノスクリプトVer.…◆jsYiJcqRkk、＠名無しさん１  
+・その他(現まとめ役等)：	◆jsYiJcqRkk 
+
   
   
 ##　
