@@ -91,9 +91,60 @@ TG.stat.play_se = true;
 	・　<a href="http://light77.sakura.ne.jp/" style="text-decoration:none;">ゆうあかり 様</a><br>
 	・　<a href="http://www.geocities.jp/redglass_palace/" style="text-decoration:none;">赤いガラスの宮殿 様</a><br>
 	・　<a href="http://www.s-hoshino.com/" style="text-decoration:none;">フリー素材屋Hoshino 写真提供者 usagi_s 様</a><br>
-	・　<a href="https://www.flickr.com/" style="text-decoration:none;">flickr</a> : <a href="https://www.flickr.com/photos/didy_b/16022666269/" style="text-decoration:none;">Eddy BERTHIER 様</a>, <a href="https://www.flickr.com/photos/b4nfter/16355722748/" style="text-decoration:none;">_ Liquid 様</a>, <a href="https://www.flickr.com/photos/duncanh1/6418213775/" style="text-decoration:none;">DncnH 様</a>, <a href="https://www.flickr.com/photos/minoir/14903340390/" style="text-decoration:none;">minoir 様</a>, <a href="https://www.flickr.com/photos/sunnywinds/6677424607/" style="text-decoration:none;">sunnywinds* 様</a>, <a href="https://www.flickr.com/photos/ovalle/4664496288/" style="text-decoration:none;">Omar + Kazumi Ovalle 様</a><br>
-	・　<a href="https://www.flickr.com/" style="text-decoration:none;">flickr</a> : <a href="https://www.flickr.com/photos/nivpic/4496431348/" style="text-decoration:none;">djNIV 様</a>, <a href="https://www.flickr.com/photos/swamibu/4839011160/" style="text-decoration:none;">Farrukh 様</a>, <a href="https://www.flickr.com/photos/mlinksva/15476575104/" style="text-decoration:none;">Mike Linksvayer 様</a>, <a href="https://www.flickr.com/photos/tanaka_juuyoh/8069544093/" style="text-decoration:none;">田中十洋 様</a>, <a href="https://www.flickr.com/photos/barnimages/22115435140/" style="text-decoration:none;">Barn Images 様</a>, <a href="https://www.flickr.com/photos/scrappapervlog/17598158185/" style="text-decoration:none;">Mike Petrucci 様</a><br>
+	・　<a href="http://d.hatena.ne.jp/meiji_photo/">明治村画像庫2 様</a><br>
+	・　otomegtx 様<br>
+	・　<a href="http://photo.v-colors.com/" title="PHOTO STOCKER -高解像度の無料写真素材-へのリンク" target="_blank">[PHOTO STOCKER]</a> <a href="http://photo.v-colors.com/329.html">YUKI 様</a><br>
+	
+                        
+<!-- 黒田ルート -->
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/didy_b/16022666269/">Eddy BERTHIER 様</a>, <a href="https://www.flickr.com/photos/b4nfter/16355722748/">_ Liquid 様</a>, <a href="https://www.flickr.com/photos/duncanh1/6418213775/">DncnH 様</a>, <a href="https://www.flickr.com/photos/minoir/14903340390/">minoir 様</a>, <a href="https://www.flickr.com/photos/sunnywinds/6677424607/">sunnywinds* 様</a>, <a href="https://www.flickr.com/photos/ovalle/4664496288/">Omar + Kazumi Ovalle 様</a><br>
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/nivpic/4496431348/">djNIV 様</a>, <a href="https://www.flickr.com/photos/swamibu/4839011160/">Farrukh 様</a>, <a href="https://www.flickr.com/photos/mlinksva/15476575104/">Mike Linksvayer 様</a>, <a href="https://www.flickr.com/photos/tanaka_juuyoh/8069544093/">田中十洋様 1</a><a href="https://www.flickr.com/photos/spilt-milk/9637765804//">、2</a><a href="https://www.flickr.com/photos/tanaka_juuyoh/4639980914/">、3</a>, <a href="https://www.flickr.com/photos/barnimages/22115435140/">Barn Images 様</a>, <a href="https://www.flickr.com/photos/scrappapervlog/17598158185/" style="text-decoration:none;">Mike Petrucci 様</a><br>
 
+<!-- 四条ルート -->
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/ironpoison_photos_69/7121783927/">ironpoison 様</a>
+, <a href="https://www.flickr.com/photos/28481088@N00/1503901616/">tanakawho 様</a>
+, <a href="https://www.flickr.com/photos/tatsumine/3961236021/">Tatsumine Sugiura 様</a>
+, <a href="https://www.flickr.com/photos/90664717@N00/18954137963/">Akuppa John Wigham 様</a>
+, <a href="https://www.flickr.com/photos/wallslide/138688451/">Jeremy Hall 様</a>
+<br>
+	・　<a href="https://www.flickr.com/">flickr</a> : 
+	<a href="https://www.flickr.com/photos/furbychan/103977041/">Furbychan 様</a>
+	, <a href="https://www.flickr.com/photos/syasara/132847100/">syasara 様</a>
+	, <a href="https://www.flickr.com/photos/compose-r/7990279856/">Ryosuke Yagi 様</a>
+	, <a href="https://www.flickr.com/photos/heniha/3822993967/">heniha 様</a><br>
+
+<!-- 財前ルート -->
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/33138035@N07/16342805145">Cj Hughson 様</a>
+	, <a href="https://www.flickr.com/photos/mikegras/15345919835/">Michael Gras, M.Ed. 様</a>
+	, <a href="https://www.flickr.com/photos/56533344@N00/255549492/">gertrud 様</a>
+	, <a href="https://www.flickr.com/photos/79786806@N07/26071665865/">けんたま/KENTAMA 様</a>
+	, <a href="https://www.flickr.com/photos/herry/5003953183/">Herry Lawford 様</a><br>
+	
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/spilt-milk/9637765804/">yoppy 様</a>
+	, <a href="https://www.flickr.com/photos/jamescridland/7355304774/">James Cridland 様</a>
+	, <a href="https://www.flickr.com/photos/__u___/29733804122/">__U___ 様</a>
+	, <a href="https://www.flickr.com/photos/lllnorikolll-300er/6984519846/">Noriko YAMAMOTO 様</a><br>
+
+<!-- 葛城宮ルート -->
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/tonomura/449495893">Hidetsugu Tonomura 様</a>
+	, <a href="https://www.flickr.com/photos/28752865@N08/5741972861/">Karen Roe 様</a>
+	, <a href="https://www.flickr.com/photos/93277085@N08/15317744408/">Takashi .M 様</a>
+	, <a href="https://www.flickr.com/photos/pv9007/27343499751/">Patrick Vierthaler 様</a>
+	, <a href="https://www.flickr.com/photos/74881150@N00/5624167271/">coloredby 様1</a><a href="https://www.flickr.com/photos/74881150@N00/8073384755/">、2</a><br>
+
+<!-- 藤枝ルート -->
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/36302473@N03/8464547376/">Ching 様</a>
+	, <a href="https://www.flickr.com/photos/andrewbain/2417040107/">Taber Andrew Bain 様</a>
+	, <a href="https://www.flickr.com/photos/28077296@N02/5728178624/">Thomas Kohler 様</a>
+	, <a href="https://www.flickr.com/photos/77rain/152441089/">kiukey 様</a>
+	, <a href="https://www.flickr.com/photos/riyagi/14568385682/">Ricardo 清介 屋宜 様</a><br>
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/enriquecespedes/8117311100/">[◉”] Enrique Céspedes 様</a>
+	, <a href="https://www.flickr.com/photos/jeaneeem/2168958243/">jeaneeem 様</a>
+	, <a href="https://www.flickr.com/photos/52766811@N06/24576437220/">Kevin Doncaster 様</a>
+	, <a href="https://www.flickr.com/photos/freakland/183982434/">David Sanz 様</a><br>
+	
+	・　＠名無しさん１<br>
+	・　◆I9IhvvVdPo<br>
 	<br>
         <img src="./data/image/h3.png"><b>画像素材</b><br>
 	・　<a href="http://www.viva-edo.com/" style="text-decoration:none;">ビバ！江戸 様</a><br>
@@ -104,7 +155,7 @@ TG.stat.play_se = true;
 </td></tr></table></div>
 [endhtml]
 
-[glink target=*credit_page2 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink target=*credit_page2 text="→" size=20 width="20" x=890 y=500 color=white]
 [s]
 
 *credit_page2
@@ -127,6 +178,8 @@ TG.stat.play_se = true;
         <img src="./data/image/h3.png"><b>フォント</b><br>
 	・　<a href="http://www7a.biglobe.ne.jp/~kouzan/" style="text-decoration:none;">衡山毛筆フォント-青二書道教室 様</a><br>
 	・　<a href="http://mplus-fonts.osdn.jp/index.html" style="text-decoration:none;">M+ FONTS 様</a><br>
+	・　<a href="https://ja.osdn.net/projects/hanazono-font/">花園明朝 kamichi様</a><br>
+	・　<a href="http://moji-waku.com/makinas-flat/index.html">マキナス もじワク研究 様</a><br>
 	<br>
         <img src="./data/image/h3.png"><b>BGM</b><br>
 	・　<a href="http://otowabi.com/" style="text-decoration:none;">おとわび 様</a><br>
@@ -143,17 +196,18 @@ TG.stat.play_se = true;
         <br>
 	<img src="./data/image/h2.png"><b>スタッフ</b><br>
 	<br>
-	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="spec">
-		<tr><th>原案・企画</th><td>： ◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様</td></tr>
-		<tr><th>キャラクターグラフィック</th><td>： かいこ</td></tr>
-		<tr><th>シナリオ</th><td>： ◆8EASfQr/2Q、◆ftAc29dlL.、◆jsYiJcqRkk</td></tr>
-		<tr><th>スクリプト</th><td>： ◆8EASfQr/2Q(吉里吉里Ver.システム原案)、◆jsYiJcqRkk(ティラノスクリプトVer.)</td></tr>
-		<tr><th>その他</th><td>： <a href="http://koitsuduri.webcrow.jp/report.html" style="text-decoration:none;">◆jsYiJcqRkk (バグ報告・ご連絡はこちらへ)</a></td></tr>
+	<table width="90%" border="0" cellpadding="0" cellspacing="0" class="spec">
+		<tr><th align="left">原案・企画</th><td>： ◆/99/KAMIYU 、 ◆8EASfQr/2Q 、 淑女の皆様</td></tr>
+		<tr><th align="left">キャラクターグラフィック</th><td>： かいこ 、 ◆jsYiJcqRkk</td></tr>
+		<tr><th align="left">脚本</th><td>：◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk</td></tr>
+		<tr><th align="left">スクリプト</th><td>： 吉里吉里Ver.システム原案…◆8EASfQr/2Q 、 ティラノスクリプトVer.…◆jsYiJcqRkk、＠名無しさん１</td></tr>
+		<tr><th align="left">Special Thanks</th><td>： エリ花様 、 黒田ルート添削・校正者様 、 登場人物名付け親様 、 テストプレイヤーの皆様 、 淑女の皆様</td></tr>
+		<tr><th align="left">その他</th><td>： ◆jsYiJcqRkk　<a href="memo.html">（制作メモ）</a></td></tr>
 	</table>
 </td></tr></table></div>
 
 [endhtml]
-[glink target=*credit_page1 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink target=*credit_page1 text="←" size=20 width="20" x=20 y=500 color=white]
 
 [s]
 
