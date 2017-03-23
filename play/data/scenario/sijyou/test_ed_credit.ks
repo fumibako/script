@@ -38,7 +38,7 @@
 [eval exp="tf.fc='#5b4513'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
-[elsif exp=f.kuroda_au== 1"]
+[elsif exp="f.kuroda_au== 1"]
 ;黒田背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
