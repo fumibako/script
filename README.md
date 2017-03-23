@@ -36,7 +36,7 @@ https://fumibako.github.io/script/
 ・アオイサクラ 様 簡易コンフィグ画面プラグイン http://awoinekura.web.fc2.com/  
 ・ティラノスクリプト 製作テクニックwiki 様 http://tyrano.wiki.fc2.com/  
 
-###BGM　
+###BGM  
 ・おとわび 様 http://otowabi.com/  　
 
 ###画像素材  
@@ -67,9 +67,9 @@ https://fumibako.github.io/script/
 　＊　Special Thanks　＊  
 　　エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、テストプレイヤーの皆様、淑女の皆様  
 
-##制作スタッフ
-・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様  
-・キャラクターグラフィック：	かいこ 、 ◆jsYiJcqRkk   
+##制作スタッフ  
+・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様  　
+・キャラクターグラフィック：	かいこ 、 ◆jsYiJcqRkk 
 ・脚本：	◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk  
 ・スクリプト：	吉里吉里Ver.システム原案…◆8EASfQr/2Q 、 ティラノスクリプトVer.…◆jsYiJcqRkk、＠名無しさん１  
 ・その他(現まとめ役等)：	◆jsYiJcqRkk 
