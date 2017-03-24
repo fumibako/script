@@ -288,7 +288,7 @@ jumpします。[p]
 [r]
 （この奥に、黒田様がいらっしゃるのね）
 [r]
-胸がドキドキと高鳴った――[p]
+胸がドキドキと高鳴った――。[p]
 ;================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_9_3_scene5==undefined"]
 	[skipstop]
@@ -321,10 +321,8 @@ jumpします。[p]
 [freeimage layer=29 time=1000]
 [layopt layer=29 visible=true]
 
-[if exp="sf.FButton=='ON'"]
 [メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
-[endif]
 
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
@@ -351,8 +349,8 @@ $('.junbi_girl').remove();
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 
-（繊細なお顔立ちに、純粋な瞳をされた方……[r]
-[sp]お手紙に書かれた自然の数々は、この瞳に映ってきたのね――）[p]
+（繊細なお顔立ちに、純粋な瞳をされた方……。[r]
+[sp]お手紙に書かれた自然の数々は、この瞳に映ってきたのね）[p]
 
 [黒田目パチ1回]
 [wait time=10]
@@ -394,7 +392,7 @@ jumpします。[p]
 
 
 #
-耳に優しく響く声――[p]
+耳に優しく響く声。[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]

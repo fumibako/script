@@ -415,11 +415,8 @@ $('.junbi_girl').remove();
 [イベントシーン構築ボタン無し版枠茶色]
 
 ;セーブ等ボタン配置
-[if exp="sf.FButton=='ON'"]
-[else]
 [メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
-[endif]
 
 ;【立ち絵】黒田：横目（青ざめ）
 [chara_mod name="kuroda_base" storage="kuroda/base_kimono_aozame.png" time=0]
@@ -660,11 +657,8 @@ $('.junbi_girl').remove();
 [chara_config ptext="chara_name_area"]
 
 ;セーブ等ボタン配置
-[if exp="sf.FButton=='ON'"]
-[else]
 [メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
-[endif]
 
 ;【立ち絵】黒田：真剣
 [chara_mod name="kuroda_base" storage="kuroda/base_kimono.png" time=0]
