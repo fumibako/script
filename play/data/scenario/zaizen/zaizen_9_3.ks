@@ -131,7 +131,7 @@
 ;機能ボタン消去
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[暗転２]
+[暗転２ storage="bg/bg_prologue_dark.jpg"]
 ;【背景】料亭風の屋内（昼）
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
