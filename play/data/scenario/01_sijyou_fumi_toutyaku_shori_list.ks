@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿;◆手紙到着フラグONの個別処理
+﻿﻿﻿﻿﻿﻿;◆手紙到着フラグONの個別処理
 ;◆四条手紙到着
 *fumi_toutyaku_sijyou_2
 [iscript]
@@ -1001,7 +1001,7 @@ f.fumi_toutyaku_sijyou[50]=1;
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 
 *fumi_toutyaku_sijyou_51
-:新茶の話題＿凡庸（事件前） sijyou_fumi48
+;新茶の話題＿凡庸（事件前） sijyou_fumi48
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「新茶の話題　失敗」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「新茶の話題　失敗」";
