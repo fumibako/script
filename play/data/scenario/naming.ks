@@ -264,6 +264,12 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [cm]
 ;------お稽古画面からはじめる
 [stopbgm]
+お稽古画面からはじめます[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 ;------シナリオの最初にジャンプする
 @jump storage="okeiko.ks"
 [s]
@@ -320,14 +326,9 @@ TG.stat.play_se = true;
 ;============================================================================================================
 [cm]
 [stopbgm]
-
 ;背景変更:プロローグイントロ全画面
 [chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 [wait time=10]
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-
 [font color=white size=31]
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue1==undefined"]
 	[skipstop]
@@ -338,11 +339,13 @@ TG.stat.play_se = true;
 ;[emb exp="sf.KSKIP"]
 淑女たるもの温良貞淑たり[r]
 詠雪之才を持て
-[l][r]
 [stopbgm]
-;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[l][r]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 [resetfont]
 [font color=white size=31]
@@ -380,16 +383,8 @@ TG.stat.play_se = true;
 [chara_mod name="message_bg" storage=&f.message_storage]
 
 ;セーブ等ボタン配置
-[locate x=530 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=630 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=730 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=830 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" target="*window_close" ]
+;[call target=*start storage="macro_etc.ks"]
+[メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue2==undefined"]
