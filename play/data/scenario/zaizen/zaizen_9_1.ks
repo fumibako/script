@@ -20,10 +20,8 @@
 ;=====================ここからお芝居の幕引きです===============================
 *replay_zaizen_9_1
 *replay_zaizenzaizen_9_1
-[fadeoutbgm time=2000]
 #
 鈴虫が鳴き、夏の終わりと秋の始まりを告げている。[p]
-
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false ]
 ;【立ち絵】主人公：目閉じ
@@ -32,11 +30,6 @@
 （お手紙を交わしている相手の中で、一番興味を惹かれるのは[r]
 [sp]財前様だわ）[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
 
 ;------------------------------------------------------
 [if exp="tf.test_gamen==true"]
