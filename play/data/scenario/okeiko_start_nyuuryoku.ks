@@ -138,7 +138,7 @@
 [ptext text="イベント全般(1表示、0非表示)" layer=29 size=15 x=345 y=540 color=darkslateblue bold=bold]
 [edit left=345 top=560 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
 
-[ptext text="調整モードを表示(0表示、1非表示)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
+[ptext text="調整モードを表示・ＢＧＭ(0表示、1非表示)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
 [edit left=345 top=610 width=200 length=200 maxchars=3 name="tf.mode_hensu" height=20]
 
 
@@ -323,23 +323,28 @@ alert("9月以降ですがルートが決定してません");
 
 
 ;入力ミス確認アラート　進めれるようにアラートのみ！
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1 ) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1"]
-[if exp="f.para_katuraginomiya_koukando < 19 || f.para_shujinkou_shukujodo < 30"]
+[if exp="(f.para_katuraginomiya_koukando < 19 || f.para_shujinkou_shukujodo < 30) && (f.okeiko_month == 9 && f.okeiko_week == 1 ) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1"]
 [iscript]
 alert("9月1週・葛城宮EV123onですが 淑女度30以下、または好感度19以下の低い状態ではじめます。");
 [endscript]
 [endif]
-[endif]
 
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 1 ) && f.para_katuraginomiya_koukando > 19 || f.para_shujinkou_shukujodo > 30 "]
-[if exp="f.event_katuraginomiya[1] == 0 || f.event_katuraginomiya[2] == 0 || f.event_katuraginomiya[3] == 0"]
+[if exp="(f.event_katuraginomiya[1] == 0 || f.event_katuraginomiya[2] == 0 || f.event_katuraginomiya[3] == 0) && (f.okeiko_month == 9 && f.okeiko_week == 1 ) && f.para_katuraginomiya_koukando > 19 || f.para_shujinkou_shukujodo > 30 "]
 [iscript]
 alert("9月1週・葛城宮淑女度30以上、好感度19以上の高い状態ですが EV123のどれかがoffではじめます。");
 [endscript]
 [endif]
-[endif]
 
 [cm]
+;調整モードで音楽をならす
+[if exp="sf.BGM == 'ON' && tf.mode_hensu == 0"]
+[stopbgm]
+;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[wait time=10]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
+
 [freeimage layer = 29]
 @jump storage="okeiko_start.ks" target=*test_start_common
 
