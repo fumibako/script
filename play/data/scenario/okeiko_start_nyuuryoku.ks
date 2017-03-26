@@ -138,7 +138,7 @@
 [ptext text="イベント全般(1表示、0非表示)" layer=29 size=15 x=345 y=540 color=darkslateblue bold=bold]
 [edit left=345 top=560 width=200 length=200 maxchars=3 name="tf.event_hyouji" height=20]
 
-[ptext text="調整モードを表示・ＢＧＭ(0表示、1非表示)" layer=29 size=15 x=345 y=590 color=darkslateblue bold=bold]
+[ptext text="調整モードを表示・ＢＧＭ(0表示、1非表示)" layer=29 size=10 x=345 y=590 color=darkslateblue bold=bold]
 [edit left=345 top=610 width=200 length=200 maxchars=3 name="tf.mode_hensu" height=20]
 
 
