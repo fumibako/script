@@ -7,8 +7,8 @@
 	@jump storage="event_hantei_week_hajime.ks" target=*common_9_1_hantei_owari
 [endif]
 
-
-
+;判定より下
+[stopbgm]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=500] 
@@ -80,6 +80,11 @@ jumpします。[p]
 「あら？」
 [autosave]
 [p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 [主人公目パチ1回]
 [wait time=10]
@@ -363,7 +368,7 @@ jumpします。[p]
 	[skipstop]
 [endif]
 *scene5
-
+[stopbgm]
 ;【背景】主人公邸 庭の見える部屋：夜
 [chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -401,10 +406,23 @@ jumpします。[p]
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
 [chara_config ptext="chara_name_area"]
 
+[if exp="f.event_katuraginomiya[4] != 1"]
+;葛城宮のイベントをみていないとき主人公合体画像を表示
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
+[endif]
+
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+
+;主人公合体画像を削除　なければremoveはスルーするが同じ条件下にする
+[if exp="f.event_katuraginomiya[4] != 1"]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+[endif]
 
 ;【SE】鈴虫の音
 [playse storage=mushi_suzumushi.ogg loop=false ]
@@ -412,6 +430,11 @@ jumpします。[p]
 「さて、[名前]」
 [autosave]
 [p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 
 [主人公目パチ1回]
 [wait time=10]
