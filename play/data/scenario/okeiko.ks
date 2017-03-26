@@ -15,13 +15,13 @@
 [endif]
 ;◆イベント判定(週始め)へ飛んで戻ってくる
 ;↓◆イベント判定処理を見るための変数をセット
-[eval exp="f.hantei_event_storage='okeiko.ks: event_hantei_week_hajime.ks判定開始'"]
-[変数ログ表示]
+;[eval exp="f.hantei_event_storage='okeiko.ks: event_hantei_week_hajime.ks判定開始'"]
+;[変数ログ表示]
 @jump storage="event_hantei_week_hajime.ks" target=*start
 *event_hantei_week_hajime_owari
 ;↓◆イベント判定処理を見るための変数をセット
-[eval exp="f.hantei_event_storage='okeiko.ks: *event_hantei_week_hajime_owari通過(event_hantei_week_hajime.ks判定終了)'"]
-[変数ログ表示]
+;[eval exp="f.hantei_event_storage='okeiko.ks: *event_hantei_week_hajime_owari通過(event_hantei_week_hajime.ks判定終了)'"]
+;[変数ログ表示]
 
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
@@ -56,6 +56,7 @@
 *okeiko_qk
 @jump storage="okeiko_qk_reset.ks" target=*start
 *okeiko_qk_reset_end
+
 ;◆「休憩中」画像切り替え(四条9月4週のイベント後は画像表示すると違和感があったので、無しに
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
@@ -65,20 +66,24 @@
 [if exp="tf.event_hyouji == 0"]
 @jump target=*event_hantei_week_owari_owari
 [endif]
+
 *event_hantei_week_owari
+[if exp="f.okeiko_month == 9 || f.okeiko_month == 1 || (f.okeiko_month == 2 && f.okeiko_week == 1) || (f.okeiko_month == 5 && f.okeiko_week == 4) || (f.okeiko_month == 8 && f.okeiko_week == 4) || (f.okeiko_month == 11 && f.okeiko_week == 4)"]
 ;◆イベント判定(週終わり：エンディングイベントなどの判定処理リスト)へ飛んで戻ってくる
 @jump storage="event_hantei_week_owari.ks" target=*start
+[endif]
+
 *event_hantei_week_owari_owari
 
 ;↓◆イベント判定処理を見るための変数をセット
-[eval exp="f.hantei_event_storage='okeiko.ks:event_hantei_week_owari.ks判定終了'"]
-[変数ログ表示]
+;[eval exp="f.hantei_event_storage='okeiko.ks:event_hantei_week_owari.ks判定終了'"]
+;[変数ログ表示]
 
 *okeiko_qk_shori
 
 ;◆休憩処理続き
 [iscript]
-if(f.para_shujinkou_tairyoku_now==f.para_shujinkou_tairyoku_max && f.para_shujinkou_kiryoku_now==f.para_shujinkou_kiryoku_max){
+if((f.para_shujinkou_tairyoku_now == f.para_shujinkou_tairyoku_max) && (f.para_shujinkou_kiryoku_now == f.para_shujinkou_kiryoku_max)){
 	f.count_qk = f.count_qk + 1;
 }
 f.okeiko_week = f.okeiko_week + 1;
@@ -97,17 +102,17 @@ f.sysgra_okeiko_month = 'button/kanji_' + f.okeiko_month + '.png';
 if (f.count_qk > 2){
 	if (f.para_shujinkou_shukujodo < 1){
 	} else  {
-		f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo - 1;
+		f.para_shujinkou_shukujodo = f.para_shujinkou_shukujodo - 1;
 		f.count_qk = 0;
 	}
 	if (f.para_shujinkou_tairyoku_max < 9){
 	} else {
-		f.para_shujinkou_tairyoku_max=f.para_shujinkou_tairyoku_max - 1;
+		f.para_shujinkou_tairyoku_max = f.para_shujinkou_tairyoku_max - 1;
 		f.count_qk = 0;
 	}
 	if (f.para_shujinkou_kiryoku_max < 9){
 	} else {
-		f.para_shujinkou_kiryoku_max=f.para_shujinkou_kiryoku_max - 1;
+		f.para_shujinkou_kiryoku_max = f.para_shujinkou_kiryoku_max - 1;
 		f.count_qk = 0;
 	}
 }
@@ -121,6 +126,17 @@ f.para_shujinkou_kiryoku_now=f.para_shujinkou_kiryoku_now + f.okeiko_qk_up_kiryo
 if (f.para_shujinkou_kiryoku_now > f.para_shujinkou_kiryoku_max){
 	f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_max;
 }
+[endscript]
+
+[if exp="(f.fumi_wadai_toutyakumachi <= 0) || (f.fumi_wadai_toutyakumachi == null)]
+@jump target=*qk_end
+[endif]
+
+[if exp="f.fumi_wadai_toutyakumachi > 0"]
+f.fumi_wadai_toutyakumachi = f.fumi_wadai_toutyakumachi - 1;
+[endif]
+
+[iscript]
 //◆◆各キャラ宛、話題の手紙を出した際の週数カウントがはじまっていれば1週減算処理
 //◆黒田宛
 if (f.kuroda_fumi_toutyakumachi_shumi > 0){
@@ -376,8 +392,8 @@ f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
 }
 [endscript]
 ;↓◆イベント判定処理を見るための変数をセット
-[eval exp="f.hantei_event_storage='okeiko.ks:週加算処理通過'"]
-[変数ログ表示]
+;[eval exp="f.hantei_event_storage='okeiko.ks:週加算処理通過'"]
+;[変数ログ表示]
 
 *qk_end
 
