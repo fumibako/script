@@ -21,18 +21,10 @@
 [プリロード画面消去]
 [四条ボタン表示]
 *replay_sijyou_9_1
-[fadeoutbgm time=2000]　
-
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「決めました。私、華織お兄さまとお会いします」[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
-
 ;=====================================================================
 [if exp="tf.test_gamen==true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
