@@ -19,16 +19,12 @@
 ;最大全角３１文字×４行
 ;=====================ここからお芝居の幕引きです===============================
 *replay_hujieda_9_1
-[fadeoutbgm time=2000]　
+;[fadeoutbgm time=2000]　
 #
 お手紙の相手と会う事を勧められて思い浮かんだのは、[r]
 一度だけ拝見した藤枝様のお顔だった。[p]
 
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
+
 
 ;【立ち絵】主人公：困り 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
