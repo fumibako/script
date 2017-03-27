@@ -660,11 +660,11 @@ f.para_pre_katuraginomiya_koukando = f.para_pre_katuraginomiya_koukando + parseI
 f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][5]);
 f.hantei_event_storage = 'parseInt(f.wadai_list_hairetsu[f.wadai_number][2]=' + parseInt(f.wadai_list_hairetsu[f.wadai_number][2]);
 [endscript]
-[変数ログ表示]
-[eval exp="f.hantei_event_storage = 'f.wadai_list_hairetsu[f.wadai_number][0]=' + f.wadai_list_hairetsu[f.wadai_number][0]"]
-[変数ログ表示]
-[eval exp="f.hantei_event_storage = 'f.para_pre_zaizen_koukando=' + f.para_pre_zaizen_koukando"]
-[変数ログ表示]
+;[変数ログ表示]
+;[eval exp="f.hantei_event_storage = 'f.wadai_list_hairetsu[f.wadai_number][0]=' + f.wadai_list_hairetsu[f.wadai_number][0]"]
+;[変数ログ表示]
+;[eval exp="f.hantei_event_storage = 'f.para_pre_zaizen_koukando=' + f.para_pre_zaizen_koukando"]
+;[変数ログ表示]
 /*
 ;◆話題配列fumi_wadai.csvの6番目要素は話題の距離感を示す。a：最初からokな話題、b:そこそこ仲良くなるまでは引かれる話題、c:かなり仲良くなるまでは引かれる(話題の好みは一様ではないため一旦実装解除します2017.03.17)
 [if exp = "f.wadai_list_hairetsu[f.wadai_number][6] == 'a'"]
@@ -674,8 +674,8 @@ f.hantei_event_storage = 'parseInt(f.wadai_list_hairetsu[f.wadai_number][2]=' + 
 [elsif exp = "f.wadai_list_hairetsu[f.wadai_number][6] == 'c'"]
 [call target = *wadai_c]
 [endif]
-[eval exp="f.hantei_event_storage = 'f.para_pre_zaizen_koukando=' + f.para_pre_zaizen_koukando"]
-[変数ログ表示]
+;[eval exp="f.hantei_event_storage = 'f.para_pre_zaizen_koukando=' + f.para_pre_zaizen_koukando"]
+;[変数ログ表示]
 
 ;◆話題配列fumi_wadai.csvの7,8番目要素はその話題を嫌がる攻略対象を示す。(未実装)
 [if exp = "f.wadai_list_hairetsu[f.wadai_number][7] == '1'"]
@@ -940,10 +940,12 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '将来について'){ //「将�
 
 if(f.wadai_list_hairetsu[f.wadai_number][0] == '新茶の話題'){ //「新茶の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	f.zaizen_fumi_toutyakumachi_sintya=0;//季節ものの話題なので翌週届く
+	f.fumi_wadai_toutyakumachi = 0;
 }
 
 if(f.wadai_list_hairetsu[f.wadai_number][0] == 'さつきの話題'){ //「さつきの話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	f.zaizen_fumi_toutyakumachi_satuki=0;//季節ものの話題なので翌週届く
+	f.fumi_wadai_toutyakumachi = 0;
 }
 
 //◆◆話題への返事待ちカウントスタート処理：発生時期の限られる話題で手紙を送った場合【季節にこだわりのない話題】
@@ -1182,9 +1184,9 @@ if (f.fumi_atesaki == 'katuraginomiya'){
 if(f.wadai_list_hairetsu[f.wadai_number][0] == '趣味について'){ //話題「趣味について」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	if(f.para_katuraginomiya_koukando < parseInt(sf.katuraginomiya['koukando_a'])){ //sf.katuraginomiya['koukando_a']("01_katuraginomiya_hensuu.ks"にて設定)の数値より好感度が低ければ、↓の週数をカウントにセットします
 		f.katuraginomiya_fumi_toutyakumachi_shumi=f.katuraginomiya_fumi_toutyakumachi; //f.katuraginomiya_fumi_toutyakumachi("01_katuraginomiya_hensuu.ks"にて設定)=話題の手紙に対してその攻略対象から返事が来るまでにかかる週数（初期）。
+		f.fumi_wadai_toutyakumachi = f.katuraginomiya_fumi_toutyakumachi;
 	}
 	if(f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_a'])){//好感度がsf.katuraginomiya['koukando_a']以上なら、初期値より1週少なくセットします
-		f.fumi_wadai_toutyakumachi = f.zaizen_fumi_toutyakumachi - 1;
 		f.katuraginomiya_fumi_toutyakumachi_shumi=f.katuraginomiya_fumi_toutyakumachi - 1;
 		f.fumi_wadai_toutyakumachi = f.katuraginomiya_fumi_toutyakumachi - 1;
 	}
@@ -1193,6 +1195,10 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '趣味について'){ //話題�
 		f.fumi_wadai_toutyakumachi = f.katuraginomiya_fumi_toutyakumachi - 2;
 	}
 }
+}
+[endscript]
+[iscript]
+if(f.okeiko_month != 13){
 
 if(f.wadai_list_hairetsu[f.wadai_number][0] == '仕事について'){ //話題「仕事について」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	if(f.para_katuraginomiya_koukando < parseInt(sf.katuraginomiya['koukando_a'])){
@@ -1511,7 +1517,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '趣味について'){ //話題�
 	}
 	if(f.para_hujieda_koukando > parseInt(sf.hujieda['koukando_b'])){//好感度がsf.hujieda['koukando_b']を超えるなら、初期値より2週少なくセットします
 		f.hujieda_fumi_toutyakumachi_shumi=f.hujieda_fumi_toutyakumachi - 2;
-		f.fumi_wadai_toutyakumachi = f.hujieda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.hujieda_fumi_toutyakumachi - 2;
 	}
 }
 

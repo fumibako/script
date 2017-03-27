@@ -22,7 +22,10 @@
 ;↓◆イベント判定処理を見るための変数をセット
 ;[eval exp="f.hantei_event_storage='okeiko.ks: *event_hantei_week_hajime_owari通過(event_hantei_week_hajime.ks判定終了)'"]
 ;[変数ログ表示]
-
+[if exp="f.skip_sentaku == 1"]
+[eval exp="f.skip_sentaku = 0"]
+@jump target=*bgm_owari
+[endif]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
@@ -30,6 +33,7 @@
 [wait time=10]
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
+*bgm_owari
 
 ;◆手紙到着判定
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_all
@@ -133,7 +137,7 @@ if (f.para_shujinkou_kiryoku_now > f.para_shujinkou_kiryoku_max){
 [endif]
 
 [if exp="f.fumi_wadai_toutyakumachi > 0"]
-f.fumi_wadai_toutyakumachi = f.fumi_wadai_toutyakumachi - 1;
+[eval exp="f.fumi_wadai_toutyakumachi = f.fumi_wadai_toutyakumachi - 1"]
 [endif]
 
 [iscript]
