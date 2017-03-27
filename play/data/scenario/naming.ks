@@ -376,6 +376,8 @@ TG.stat.play_se = true;
 @layopt layer=message0 page=fore visible=true
 [ptext name="chara_name_area" layer="message0" size=26 x=270 y=407 bold="bold"]
 [chara_config ptext="chara_name_area"]
+[eval exp="f.skip_sentaku=0"]
+;opには使用していない。お稽古に響かないようにプロローグでのフラグ使用後は０に
 @jump target=*prologue_A
 [endif]
 ;============================================================================================================
