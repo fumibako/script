@@ -72,7 +72,7 @@
 [endif]
 
 *event_hantei_week_owari
-[if exp="f.okeiko_month == 9 || f.okeiko_month == 1 || (f.okeiko_month == 2 && f.okeiko_week == 1) || (f.okeiko_month == 5 && f.okeiko_week == 4) || (f.okeiko_month == 8 && f.okeiko_week == 4) || (f.okeiko_month == 11 && f.okeiko_week == 4)"]
+[if exp="f.okeiko_month == 9 || f.okeiko_month == 1 || (f.okeiko_month == 2 && f.okeiko_week == 1) || (f.okeiko_month == 5 && f.okeiko_week == 4) || (f.okeiko_month == 8 && f.okeiko_week == 4) || (f.okeiko_month == 11 && f.okeiko_week == 4) || (f.okeiko_month == 3 && f.okeiko_week == 4)"]
 ;◆イベント判定(週終わり：エンディングイベントなどの判定処理リスト)へ飛んで戻ってくる
 @jump storage="event_hantei_week_owari.ks" target=*start
 [endif]
