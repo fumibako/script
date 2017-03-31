@@ -62,6 +62,10 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 ;◇◇黒田手紙到着判定◇◇
 ;=============================================
+;◇黒田ルート11月4週～12月4週は手紙到着判定を回避します
+[if exp="(f.okeiko_month == 11 && f.okeiko_week ==4) || f.okeiko_month == 12"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
 [if exp="f.kuroda_fumi_henjimachi <= parseInt([sf.kuroda['fumi_henjimachi_ok_number']])"]
 	[eval exp="f.kuroda_fumi_toutyakumachi_week=f.kuroda_fumi_toutyakumachi_week+1"]
 	[eval exp="f.test='手紙到着可能性あり'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
@@ -177,6 +181,7 @@ f.okeiko_month_kansuuji="三月 ";
 [if exp="f.kuroda_au == 1"]
 @jump target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
+*fumi_toutyaku_hantei_kuroda_owari
 
 ;=============================================
 ;◇◇財前手紙到着判定◇◇
@@ -190,6 +195,10 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 [if exp="f.hujieda_au == 1 && f.hujieda_fumi_start == 1"]
 @jump target=*fumi_toutyaku_hantei_hujieda
+[endif]
+;◇財前ルート11月4週～1月3週は手紙到着判定を回避します
+[if exp="(f.okeiko_month == 11  && f.okeiko_week ==4) || f.okeiko_month == 12 || (f.okeiko_month == 1 && f.okeiko_week != 4)"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 
 [if exp="f.zaizen_fumi_henjimachi <= parseInt([sf.zaizen['fumi_henjimachi_ok_number']])"]
@@ -417,6 +426,10 @@ f.okeiko_month_kansuuji="三月 ";
 [if exp="f.katuraginomiya_fumi_start == 0"]
 @jump target=*fumi_toutyaku_hantei_hujieda
 [endif]
+;◇葛城宮ルート10月2週～2月1週は葛城宮が通常の手紙を書けない期間のため手紙到着判定を回避します
+[if exp="(f.okeiko_month == 10  && f.okeiko_week != 1) || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || (f.okeiko_month == 2 && f.okeiko_week == 1)"]
+@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
 
 ;↓手紙到着タイミングに関わらず葛城宮ルートであれば葛城宮イベント関連手紙判定に飛ぶ
 [if exp="f.katuraginomiya_au == 1"]
@@ -634,6 +647,11 @@ f.okeiko_month_kansuuji="三月 ";
 ;◇◇藤枝手紙到着判定◇◇
 ;=============================================
 *fumi_toutyaku_hantei_hujieda
+;◇藤枝ルート11月1週～2月2週は手紙禁止期間(2月3週から手紙を許される)のため手紙到着判定を回避します
+[if exp="f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 ||  (f.okeiko_month == 2 && ( f.okeiko_week == 1 || f.okeiko_week == 2 ))"]
+@jump target=*fumi_toutyaku_hantei_tokiko
+[endif]
+
 ;↓藤枝との手紙開始していなければ手紙判定終了
 [if exp="f.hujieda_fumi_start == 0"]
 @jump target=*fumi_toutyaku_hantei_tokiko
