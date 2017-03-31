@@ -187,7 +187,7 @@
 [主人公驚]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まぁ、黒田様も」[p]
+「まあ、黒田様も」[p]
 [主人公通常]
 [wait time=10]
 

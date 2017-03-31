@@ -98,7 +98,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まぁ……！」[p]
+「まあ……！」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
@@ -190,7 +190,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まぁ。……そうだったの」[p]
+「まあ。……そうだったの」[p]
 ;【立ち絵】主人公：ほほえみ
 [主人公困りほほえみ]
 [wait time=10]

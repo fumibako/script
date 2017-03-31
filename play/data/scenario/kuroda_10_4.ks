@@ -101,7 +101,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [主人公笑顔]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まぁ！　またのお誘いをいただいて、嬉しいわ」[p]
+「まあ！　またのお誘いをいただいて、嬉しいわ」[p]
 [主人公ポーズ指]
 [wait time=10]
 [主人公ほほえみ]

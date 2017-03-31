@@ -432,7 +432,7 @@
 [主人公驚]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まぁ。シイタケみたいなひだは無くて[r]
+「まあ。シイタケみたいなひだは無くて[r]
 [sp]細やかな穴がたくさん開いているのですね」[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_10_3_scene9==undefined"]

@@ -216,7 +216,7 @@
 [主人公驚]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まぁ。私は寂しく感じていたところです」[p]
+「まあ。私は寂しく感じていたところです」[p]
 [主人公目パチ1回]
 [wait time=10]
 ;【立ち絵】主人公：通常
@@ -658,7 +658,7 @@
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まぁ。そうなのですか」[p]
+「まあ。そうなのですか」[p]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -804,7 +804,7 @@
 [主人公ほほえみ]
 [wait time=10]
 [whosay name="田中　岩男" color="#775545"]
-「まぁ俺も採集では人のこと言えないんだけどね」[p]
+「まあ俺も採集では人のこと言えないんだけどね」[p]
 @jump target=*kuroda_11_2_sentaku01_end
 ;【部分分岐】突然、置いてきぼりになったことを言う場合【終了】
 
@@ -1018,7 +1018,7 @@
 [主人公笑顔]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まぁ。嬉しゅうございますわ！[r]
+「まあ。嬉しゅうございますわ！[r]
 [sp]私ももっとお話ししたいと思っておりました」[p]
 ;【立ち絵】黒田：笑顔
 [黒田笑顔]
