@@ -81,10 +81,10 @@ TG.stat.play_se = true;
         <br>
         <img src="./data/image/h3.png"><b>スクリプト関係</b><br>
 	・　<a href="http://keito-works.com/" style="text-decoration:none;">keito-works 様</a><br>
-<!--	・　<a href="http://www7.plala.or.jp/S_H_Binary/kaze/index.html" style="text-decoration:none;">永遠の文芸部 様</a>： <a href="http://www7.plala.or.jp/S_H_Binary/kaze/tkouza.html" style="text-decoration:none;">ティラノスクリプト講座　Androidアプリの作り方</a><br>
--->
 	・　<a href="http://awoinekura.blog.fc2.com/" style="text-decoration:none;">アオイサクラ 様</a>： <a href="http://awoinekura.blog.fc2.com/blog-entry-6.html" style="text-decoration:none;">簡易コンフィグ画面プラグイン</a><br>
 	・　<a href="http://tyrano.wiki.fc2.com/" style="text-decoration:none;">ティラノスクリプト 製作テクニックwiki 様</a><br>
+	・　永遠の文芸部 様： ティラノスクリプト講座　Androidアプリの作り方<br>
+<!--<a href="http://www7.plala.or.jp/S_H_Binary/kaze/index.html" style="text-decoration:none;">　</a>　<a href="http://www7.plala.or.jp/S_H_Binary/kaze/tkouza.html" style="text-decoration:none;">　</a>-->
         <br>
         <img src="./data/image/h3.png"><b>背景</b><br>
 	・　<a href="http://www.wafusozai.com/" style="text-decoration:none;">和風素材.com 様</a><br>
@@ -93,12 +93,12 @@ TG.stat.play_se = true;
 	・　<a href="http://www.s-hoshino.com/" style="text-decoration:none;">フリー素材屋Hoshino 写真提供者 usagi_s 様</a><br>
 	・　<a href="http://d.hatena.ne.jp/meiji_photo/">明治村画像庫2 様</a><br>
 	・　otomegtx 様<br>
-	・　<a href="http://photo.v-colors.com/" title="PHOTO STOCKER -高解像度の無料写真素材-へのリンク" target="_blank">[PHOTO STOCKER]</a> <a href="http://photo.v-colors.com/329.html">YUKI 様</a><br>
+	・　<a href="http://photo.v-colors.com/" title="PHOTO STOCKER -高解像度の無料写真素材-へのリンク" target="_blank">PHOTO STOCKER</a> <a href="http://photo.v-colors.com/329.html">YUKI 様</a><br>
 	
                         
-<!-- 黒田ルート -->
-	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/didy_b/16022666269/">Eddy BERTHIER 様</a>, <a href="https://www.flickr.com/photos/b4nfter/16355722748/">_ Liquid 様</a>, <a href="https://www.flickr.com/photos/duncanh1/6418213775/">DncnH 様</a>, <a href="https://www.flickr.com/photos/minoir/14903340390/">minoir 様</a>, <a href="https://www.flickr.com/photos/sunnywinds/6677424607/">sunnywinds* 様</a>, <a href="https://www.flickr.com/photos/ovalle/4664496288/">Omar + Kazumi Ovalle 様</a><br>
-	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/nivpic/4496431348/">djNIV 様</a>, <a href="https://www.flickr.com/photos/swamibu/4839011160/">Farrukh 様</a>, <a href="https://www.flickr.com/photos/mlinksva/15476575104/">Mike Linksvayer 様</a>, <a href="https://www.flickr.com/photos/tanaka_juuyoh/8069544093/">田中十洋様 1</a><a href="https://www.flickr.com/photos/spilt-milk/9637765804//">、2</a><a href="https://www.flickr.com/photos/tanaka_juuyoh/4639980914/">、3</a>, <a href="https://www.flickr.com/photos/barnimages/22115435140/">Barn Images 様</a>, <a href="https://www.flickr.com/photos/scrappapervlog/17598158185/" style="text-decoration:none;">Mike Petrucci 様</a><br>
+<!-- 黒田ルート(複数の写真を使用させていただいた場合は他ルート分も1箇所にまとめて記載しています) -->
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/didy_b/16022666269/">Eddy BERTHIER 様</a>, <a href="https://www.flickr.com/photos/b4nfter/16355722748/">_ Liquid 様</a>, <a href="https://www.flickr.com/photos/duncanh1/6418213775/">Dun.can 様</a>, <a href="https://www.flickr.com/photos/minoir/14903340390/">minoir 様</a>, <a href="https://www.flickr.com/photos/sunnywinds/6677424607/">sunnywinds* 様</a>, <a href="https://www.flickr.com/photos/ovalle/4664496288/">Omar + Kazumi Ovalle 様</a><br>
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/nivpic/4496431348/">djNIV 様</a>, <a href="https://www.flickr.com/photos/swamibu/4839011160/">Farrukh 様</a>, <a href="https://www.flickr.com/photos/mlinksva/15476575104/">Mike Linksvayer 様</a>, <a href="https://www.flickr.com/photos/tanaka_juuyoh/8069544093/">田中十洋様 1</a><a href="https://www.flickr.com/photos/tanaka_juuyoh/4177427153/">、2</a><a href="https://www.flickr.com/photos/tanaka_juuyoh/4639980914/">、3</a>, <a href="https://www.flickr.com/photos/barnimages/22115435140/">barnimages.com 様</a>, <a href="https://www.flickr.com/photos/scrappapervlog/17598158185/" style="text-decoration:none;">Mike Petrucci 様</a><br>
 
 <!-- 四条ルート -->
 	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/ironpoison_photos_69/7121783927/">ironpoison 様</a>
@@ -138,11 +138,10 @@ TG.stat.play_se = true;
 	, <a href="https://www.flickr.com/photos/28077296@N02/5728178624/">Thomas Kohler 様</a>
 	, <a href="https://www.flickr.com/photos/77rain/152441089/">kiukey 様</a>
 	, <a href="https://www.flickr.com/photos/riyagi/14568385682/">Ricardo 清介 屋宜 様</a><br>
-	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/enriquecespedes/8117311100/">[◉”] Enrique Céspedes 様</a>
+	・　<a href="https://www.flickr.com/">flickr</a> : <a href="https://www.flickr.com/photos/enriquecespedes/8117311100/">［◉”］ Enrique Céspedes 様</a>
 	, <a href="https://www.flickr.com/photos/jeaneeem/2168958243/">jeaneeem 様</a>
 	, <a href="https://www.flickr.com/photos/52766811@N06/24576437220/">Kevin Doncaster 様</a>
 	, <a href="https://www.flickr.com/photos/freakland/183982434/">David Sanz 様</a><br>
-	
 	・　＠名無しさん１<br>
 	・　◆I9IhvvVdPo<br>
 	<br>
@@ -189,7 +188,8 @@ TG.stat.play_se = true;
 	・　<a href="http://www.yen-soft.com/ssse/" style="text-decoration:none;">フリー効果音　On-Jin ～音人～ 様</a><br>
 	・　<a href="http://koukaongen.com/kkog2_free/index.html" style="text-decoration:none;">効果音源 様</a><br>
 	・　<a href="http://www.koukasound.com/" style="text-decoration:none;">効果ON 様</a><br>
-        <br>
+	・　<a href="http://taira-komori.jpn.org/" style="text-decoration:none;">無料効果音で遊ぼう！ 様</a><br>
+       <br>
         <br>
         <br>
         <br>
@@ -202,7 +202,7 @@ TG.stat.play_se = true;
 		<tr><th align="left">脚本</th><td>：◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk</td></tr>
 		<tr><th align="left">スクリプト</th><td>： 吉里吉里Ver.システム原案…◆8EASfQr/2Q 、 ティラノスクリプトVer.…◆jsYiJcqRkk、＠名無しさん１</td></tr>
 		<tr><th align="left">Special Thanks</th><td>： エリ花様 、 黒田ルート添削・校正者様 、 登場人物名付け親様 、 テストプレイヤーの皆様 、 淑女の皆様</td></tr>
-		<tr><th align="left">その他</th><td>： ◆jsYiJcqRkk　<a href="memo.html">（制作メモ）</a></td></tr>
+		<tr><th align="left">その他</th><td>： ◆jsYiJcqRkk　</td></tr>
 	</table>
 </td></tr></table></div>
 
