@@ -310,6 +310,12 @@ $(".rp_bt").remove();
 #
 [r]
 あの日のことが、思い出される――。[p]
+[stopbgm]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [resetfont]
 ;回想
 ;【背景】主人公邸_庭
@@ -326,12 +332,6 @@ $(".rp_bt").remove();
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
 [chara_config ptext="chara_name_area"]
 
-[stopbgm]
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
 [eval exp="f.kaogura='on'"]
 
 [resetfont]
