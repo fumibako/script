@@ -918,11 +918,11 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku = f.fumi_toutyaku + 1"]
 ;↓(変更の必要はありません)葛城宮からの手紙到着待ち週数を好感度に応じてリセット
 [if exp="f.para_katuraginomiya_koukando >= parseInt([sf.katuraginomiya['koukando_b']])"]
-	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 2"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 3"]
 [elsif exp="f.para_katuraginomiya_koukando >= parseInt([sf.katuraginomiya['koukando_a']])"]
-	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 1"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 2"]
 [else]
-	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 0"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week = 1"]
 [endif]
 [return]
 

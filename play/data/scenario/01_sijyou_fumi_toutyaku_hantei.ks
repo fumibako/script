@@ -1,4 +1,4 @@
-﻿﻿*fumi_toutyaku_hantei_sijyou
+﻿﻿﻿*fumi_toutyaku_hantei_sijyou
 ;◇四条手紙到着判定
 [eval exp="f.test='手紙到着可能性なし'"]
 [if exp="f.sijyou_fumi_henjimachi <= parseInt([sf.sijyou['fumi_henjimachi_ok_number']])"]
@@ -19,6 +19,31 @@
 *hantei_list_sijyou
 ;手紙到着：条件有り分
 ;◆◆手紙到着：季節、好感度など条件有り分
+;=======================================================================================
+;物語進行上大切な手紙は判定先頭に移動しました。もし他のお返事を優先させたい場合は再移動をお願いします(◆jsYiJcqRkk
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：冬『結納』(1月～３月３週｜家族　その他話題にて)16_end (コメントアウトされている)f.okeiko_month==1 OR f.okeiko_month==2
+;1月～３月３週に四条が自発的に送る形で届くよう調整させていただきました。通常のプレイでは1月に届くと思われますが、物語進行上大切な手紙ですので返事を溜めていて解消された場合などでも期間中なら届く仕様としてみます(◆jsYiJcqRkk
+[if exp="f.sijyou_omiai == 1 && (f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3) && f.fumi_toutyaku_sijyou[41] == 0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_41
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：春『未来へ』!!  (1月2週～1月末まで)17_ex (コメントアウトされている)
+;f.okeiko_month=＞1 f.okeiko_week=＞2  f.sijyou_sobo==true
+;(1月2週～1月末まで)四条祖母を見ている場合に四条が自発的に送る形で届くよう調整させていただきました(◆jsYiJcqRkk
+[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai==1 && f.sijyou_sobo == true &&(f.okeiko_month == 1 || f.okeiko_month == 2) && f.fumi_toutyaku_sijyou[43] == 0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_43
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：春『全力』 (『未来へ』をみている)18_ex/f.okeiko_month=＞1　 f.okeiko_week=＞2  f.sijyou_sobo==true
+[if exp="f.sijyou_omiai == 1 && f.sijyou_sobo == true && (f.okeiko_month == 1 || f.okeiko_month == 2) && f.fumi_toutyaku_sijyou[43] == 1 && f.fumi_toutyaku_sijyou[44] == 0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+  [trace exp="'春『全力』'"]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_44
+[endif]
+;==============================================================================================================
 ;あぶりだしの便せんを使用した場合、あぶりだしと話題両方にお返事のフラグが入ります。あぶりだしに関するお返事が先に到着する方が自然かと思いますので、判定リスト先頭に移動します。もし話題のお返事を先に到着させたい場合は後方に再移動をお願いします(◆jsYiJcqRkk
 ;◆↓手紙一通分の到着判定処理(開始)：『あぶりだしの便せん』
 [if exp="f.sijyou_fumi_toutyakumachi_aburidasi == 0 && f.sijyou_omiai == 0  && f.fumi_toutyaku_sijyou[45] == 0"]
@@ -298,12 +323,7 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_40
 [endif]
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：冬『結納』(1月～３月３週｜家族　その他話題にて)16_end (コメントアウトされている)f.okeiko_month==1 OR f.okeiko_month==2
-;1月～３月３週に四条が自発的に送る形で届くよう調整させていただきました。通常のプレイでは1月に届くと思われますが、物語進行上大切な手紙ですので返事を溜めていて解消された場合などでも期間中なら届く仕様としてみます(◆jsYiJcqRkk
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu = 0 && f.sijyou_omiai == 1 && (f.okeiko_month == 1 || f.okeiko_month == 3) && f.fumi_toutyaku_sijyou[41] == 0"]
-  [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_41
-[endif]
+;『結納』『未来へ』『全力』について、判定Topへ移動しました
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：春 『お茶の中に』2/f.okeiko_month==3　3月に四条が自発的に送る形で届くよう調整させていただきました(◆jsYiJcqRkk
 [if exp="f.sijyou_omiai == 1 && f.okeiko_month == 3 && f.fumi_toutyaku_sijyou[42] == 0"]
@@ -311,23 +331,6 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_42
 [endif]
 ;=======================================================================================
-;！！日付 条件指定未！！
-;◆↓手紙一通分の到着判定処理(開始)：春『未来へ』!!  (1月2週～1月末まで)17_ex (コメントアウトされている)
-;f.okeiko_month=＞1 f.okeiko_week=＞2  f.sijyou_sobo==true
-;(1月2週～1月末まで)四条祖母を見ている場合に四条が自発的に送る形で届くよう調整させていただきました(◆jsYiJcqRkk
-[if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai==1 && f.sijyou_sobo == true &&(f.okeiko_month == 1 || f.okeiko_month == 2) && f.fumi_toutyaku_sijyou[43] == 0"]
-  [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_43
-[endif]
-;=======================================================================================
-;！！日付　条件指定未！！
-;◆↓手紙一通分の到着判定処理(開始)：春『全力』 (『未来へ』をみている)18_ex/f.okeiko_month=＞1　 f.okeiko_week=＞2  f.sijyou_sobo==true
-[if exp="f.sijyou_omiai == 1 && f.sijyou_sobo == true && (f.okeiko_month == 1 || f.okeiko_month == 2) && f.fumi_toutyaku_sijyou[43] == 1 && f.fumi_toutyaku_sijyou[44] == 0"]
-  [call target=*sijyou_toutyaku_hantei_shori_common]
-  [trace exp="'春『全力』'"]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_44
-[endif]
-;==============================================================================================================
 ;◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇あぶりだしの手紙◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇
 ;==============================================================================================================
 ;あぶりだしの手紙判定については、22行目(判定リスト先頭)に移動しました
