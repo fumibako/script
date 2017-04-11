@@ -237,7 +237,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 	[endif]
 	[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 
-[glink target="repair_binsen" text="便せんデータ修復" graphic="select_waku_x500.png" size=16 width="200" x=380 y=550 color=white]
+[glink target="repair_binsen" text="磯野を呼ぶ" graphic="select_waku_x500.png" size=16 width="200" x=380 y=550 color=white]
 
 [s]
 [s]
@@ -2401,22 +2401,25 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_a'])){
 [cm]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=300 top=100 left=380 opacity=0]
+[position layer=message1 height=500 top=90 left=350 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-便せんデータを修復しますか？[r][r]
+【磯野】お嬢様、いかがされましたか？[r][r]
+[sp]　　　便せんの具合が悪くなった場合に[r]
+[sp]　　　お直しすることができます。[r]
+[sp]　　　便せんをお直ししましょうか？[r][r]
 [font size=32]
-[link target=*repair_binsen_ok]は　　　い[endlink][r]
-[r][r][r]
-[link target=*repair_binsen_no]い　い　え[endlink][r]
+[link target=*repair_binsen_ok][sp]　は　　　い[endlink][r]
+[r][r]
+[link target=*repair_binsen_no][sp]　い　い　え[endlink][r]
 [resetfont]
 [s]
 
 
 *repair_binsen_ok
 
-「はい」[r]
-便せんデータを修復します。[p]
+[sp]　　　「はい」[r]
+[sp]　　　便せんをお直しします。[p]
 @layopt layer=message1 visible=false
 [cm]
 @layopt layer=message0 visible=true
@@ -2426,8 +2429,8 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_a'])){
 [s]
 
 *repair_binsen_no
-「いいえ」[r]
-元の画面に戻ります。[p]
+[sp]　　　「いいえ」[r]
+[sp]　　　また何かございましたら、お呼びください。[p]
 @layopt layer=message1 visible=false
 @layopt layer=message0 visible=true
 [cm]
