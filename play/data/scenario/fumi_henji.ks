@@ -236,6 +236,9 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 		@jump target=*loop_fumi_binsen_right
 	[endif]
 	[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+
+[glink target="repair_binsen" text="便せんデータ修復" graphic="select_waku_x500.png" size=16 width="200" x=380 y=550 color=white]
+
 [s]
 [s]
 
@@ -806,9 +809,9 @@ f.para_pre_katuraginomiya_koukando = parseInt(f.binsen_list_hairetsu[f.binsen_nu
 f.para_pre_hujieda_koukando = parseInt(f.binsen_list_hairetsu[f.binsen_number][5]);
 [endscript]
 [eval exp="f.hantei_event_storage = 'parseInt(f.binsen_list_hairetsu[f.binsen_number][2])=' + parseInt(f.binsen_list_hairetsu[f.binsen_number][2])"]
-[変数ログ表示]
+;[変数ログ表示]
 [eval exp="f.hantei_event_storage = 'parseInt(f.binsen_list_hairetsu[f.binsen_number][0])=' + f.binsen_list_hairetsu[f.binsen_number][0]"]
-[変数ログ表示]
+;[変数ログ表示]
 
 [if exp = "f.binsen_list_hairetsu[f.binsen_number][6] == f.okeiko_month"]
 [call target = *binsen_good_kisetsu]
@@ -2392,5 +2395,43 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_a'])){
 [eval exp="f.fumi_atesaki='hujieda'; f.fumi_hairetsu1=4; f.fumi_hairetsu2=30;"]
 [call target=*fumi_write_hyouji]
 @jump target=*binsen_sentaku
+[s]
+
+*repair_binsen
+[cm]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=300 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+便せんデータを修復しますか？[r][r]
+[font size=32]
+[link target=*repair_binsen_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*repair_binsen_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*repair_binsen_ok
+
+「はい」[r]
+便せんデータを修復します。[p]
+@layopt layer=message1 visible=false
+[cm]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+@jump storage="fumi_repair_binsen.ks" target="*start"
+
+[s]
+
+*repair_binsen_no
+「いいえ」[r]
+元の画面に戻ります。[p]
+@layopt layer=message1 visible=false
+@layopt layer=message0 visible=true
+[cm]
+[current layer="message0"]
+@jump target=*binsen_sentaku2
 [s]
 
