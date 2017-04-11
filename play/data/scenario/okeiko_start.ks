@@ -22,7 +22,7 @@
 [eval exp="f.binsen_number=0"]
 ;↓◆イベント判定処理を見るための変数をセット
 [eval exp="f.hantei_event_storage='判定処理前'"]
-[変数ログ表示]
+;[変数ログ表示]
 
 
 
@@ -582,7 +582,18 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 [font color=white size=27]
 【磯野】[r]
 「お嬢様。本日よりお稽古には[r]
-[sp]こちらのお部屋をお使いいただきます。[l][r]
+[sp]こちらのお部屋をお使いいただきます。[l]
+[if exp="sf.BGM=='ON'"]
+[stopbgm]
+;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[wait time=10]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+;↓初回のBGMをスマホ対応位置(クリック後)で鳴らしお稽古本編のBGMタグをスルーする目的でf.skip_sentaku変数を使用します
+[eval exp="f.skip_sentaku = 1"]
+[endif]
+
+[r]
 [r]
 [sp]より集中してお稽古に取り組めるよう[r]
 [sp]旦那様からのお計らいでございます」[p]

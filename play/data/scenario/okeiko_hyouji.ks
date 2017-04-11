@@ -354,11 +354,15 @@ $('.junbi_girl').remove();
 *tukihajime
 ;◆月始めのみ：便箋追加
 ;【便箋追加】（↓可能なら文字色変更表示）
+[wait time=10]
 [iscript]
 f.binsen_hairetsu_number=f.binsen_list_hairetsu.length;
 f.binsen_hairetsu_number_a=f.binsen_hairetsu_number;
 f.binsen_hairetsu_number_b=f.binsen_hairetsu_number+1;
 f.binsen_hairetsu_number_c=f.binsen_hairetsu_number+2;
+[endscript]
+[wait time=50]
+[iscript]
 if(f.okeiko_month==5){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_a].push("レンガ街の風景画",0,2,1,1,1,"","");
@@ -425,7 +429,9 @@ if(f.okeiko_month==3){
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b]=[];
 	f.binsen_list_hairetsu[f.binsen_hairetsu_number_b].push("うぐいすの模様",1,0,0,1,1,3,"");
 }
-
+[endscript]
+[wait time=10]
+[iscript]
 f.binsen_toutyaku_info1="「"+f.binsen_list_hairetsu[f.binsen_hairetsu_number_a][0]+"」「"+f.binsen_list_hairetsu[f.binsen_hairetsu_number_b][0]+"」";
 f.binsen_toutyaku_info2="の便箋が選べるようになりました";
 [endscript]
