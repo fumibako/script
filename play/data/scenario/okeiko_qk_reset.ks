@@ -16,6 +16,14 @@
 [cm]
 [chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
 [wait time=10]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[wait time=10]
+[current layer="message0"]
+[wait time=10]
+;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
+[position left=360 width=500 height=170 top=250 page=fore margint="50"]
+[wait time=10]
 [font size=25]
 休憩しましょう
 [wait time=500]
@@ -24,7 +32,7 @@
 [ct]
 [clearfix]
 [clearstack]
-[skipstop]
+;[skipstop]
 [stopse]
 [eval exp="f.okeiko_gamen=true"]
 

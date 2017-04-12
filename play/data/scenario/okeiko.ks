@@ -53,11 +53,13 @@
 [eval exp="f.event_jiki=''"]
 ;↓月始めフラグリセット(休憩中画像非表示に使用)
 [eval exp="f.tukihajime = 0"]
+[お稽古ボタン表示]
 [s]
 
 
 ;◆休憩ボタンを押した際の処理：まず画像消去などリセット処理へ飛んで戻ってくる
 *okeiko_qk
+
 @jump storage="okeiko_qk_reset.ks" target=*start
 *okeiko_qk_reset_end
 

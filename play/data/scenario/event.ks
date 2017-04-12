@@ -183,6 +183,8 @@ TG.stat.stack["call"] = [];
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [ptext text="【磯野】　このお部屋は初めてになりますね" layer=27 size=21 x=270 y=150 color=darkslateblue bold=bold]
 [ptext text="説明を聞かれますか？" layer=27 size=21 x=345 y=185 color=darkslateblue bold=bold]
+[お稽古ボタン表示]
+[wait time=10]
 
 [glink target=*common_4_1_yes text="はい" size=40 width="150" x=300 y=350 color=white]
 [glink target=*common_4_1_no text="いいえ" size=40 width="150" x=550 y=350 color=white]
@@ -253,6 +255,8 @@ TG.stat.stack["call"] = [];
 *common_4_1_no
 [freeimage layer = 26]
 [freeimage layer = 27]
+[お稽古ボタン表示]
+[wait time=10]
 ;◆主人公メッセージ表示
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
@@ -318,6 +322,7 @@ TG.stat.stack["call"] = [];
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [ptext text="【磯野】　お嬢様。お稽古で『淑女度』を" layer=27 size=18 x=270 y=150 color=darkslateblue bold=bold]
 [ptext text="高めることは、大切にござります。" layer=27 size=18 x=345 y=188 color=darkslateblue bold=bold]
+[お稽古ボタン表示]
 [p]
 [freeimage layer = 27]
 [image layer=27 x=250 y=490 storage="button/kira_frame_lesson.png"]
@@ -383,6 +388,7 @@ TG.stat.stack["call"] = [];
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [ptext text="【磯野】　お嬢様。今日は良いお天気ですね。" layer=27 size=18 x=270 y=150 color=darkslateblue bold=bold]
 [ptext text="『散策』に出られてはいかがでしょう？" layer=27 size=18 x=345 y=188 color=darkslateblue bold=bold]
+[お稽古ボタン表示]
 [p]
 [freeimage layer = 26]
 [freeimage layer = 27]
@@ -433,6 +439,7 @@ TG.stat.stack["call"] = [];
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [ptext text="【磯野】　お嬢様。右上の『文箱』は" layer=27 size=18 x=270 y=150 color=darkslateblue bold=bold]
 [ptext text="ご覧になりましたか？" layer=27 size=18 x=345 y=188 color=darkslateblue bold=bold]
+[お稽古ボタン表示]
 [p]
 [freeimage layer = 27]
 [ptext text="お手紙のご返事をなさってはいかがでしょう？" layer=27 size=18 x=300 y=170 color=darkslateblue bold=bold]
@@ -541,6 +548,7 @@ TG.stat.stack["call"] = [];
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [ptext text="【磯野】　お嬢様。お稽古で『淑女度』を" layer=27 size=18 x=270 y=150 color=darkslateblue bold=bold]
 [ptext text="高めることは、大切にござります。" layer=27 size=18 x=345 y=188 color=darkslateblue bold=bold]
+[お稽古ボタン表示]
 [p]
 [freeimage layer = 27]
 [image layer=27 x=250 y=490 storage="button/kira_frame_lesson.png"]
@@ -606,6 +614,7 @@ TG.stat.stack["call"] = [];
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
+[お稽古ボタン表示]
 [p]
 [freeimage layer = 26]
 [freeimage layer = 27]

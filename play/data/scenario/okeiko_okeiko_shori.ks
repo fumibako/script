@@ -6,6 +6,8 @@
 
 ;◆お稽古機能
 *okeiko_sadou
+[clearfix]
+[clearstack]
 [freeimage layer = 26]
 [freeimage layer = 27]
 [cm]
@@ -16,6 +18,8 @@
 [s]
 
 *okeiko_kadou
+[clearfix]
+[clearstack]
 [freeimage layer = 26]
 [freeimage layer = 27]
 [cm]
@@ -26,6 +30,8 @@
 [s]
 
 *okeiko_reihou
+[clearfix]
+[clearstack]
 [freeimage layer = 26]
 [freeimage layer = 27]
 [cm]
@@ -36,6 +42,8 @@
 [s]
 
 *okeiko_gogaku
+[clearfix]
+[clearstack]
 [freeimage layer = 26]
 [freeimage layer = 27]
 [cm]
@@ -46,6 +54,8 @@
 [s]
 
 *okeiko_koto
+[clearfix]
+[clearstack]
 [freeimage layer = 26]
 [freeimage layer = 27]
 [cm]
@@ -56,7 +66,7 @@
 [s]
 
 *okeiko_shori
-[if exp="f.para_shujinkou_tairyoku_now < f.okeiko_hituyou_tairyoku"]
+[if exp="(f.para_shujinkou_tairyoku_now < f.okeiko_hituyou_tairyoku) || (f.para_shujinkou_kiryoku_now < f.okeiko_hituyou_kiryoku)"]
 [chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="A_me" storage="girl/L/me_toji.png" time=0]
@@ -72,24 +82,6 @@
 [s]
 [endif]
 [clearfix]
-[locate x=330 y=549]
-[button name="okeiko_sadou" fix=true graphic="button_okeiko_sadou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_sadou]
-[wait time=10]
-[locate x=430 y=549]
-[button name="okeiko_kadou" fix=true graphic="button_okeiko_kadou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_kadou]
-[wait time=10]
-[locate x=530 y=549]
-[button name="okeiko_reihou" fix=true graphic="button_okeiko_reihou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_reihou]
-[wait time=10]
-[locate x=630 y=549]
-[button name="okeiko_gogaku" fix=true graphic="button_okeiko_gogaku.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_gogaku]
-[wait time=10]
-[locate x=730 y=549]
-[button name="okeiko_koto" fix=true graphic="button_okeiko_koto.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_koto]
-[wait time=10]
-[locate x=852 y=533]
-[button name="okeiko_qk" fix=true graphic="button_okeiko_qk.png" storage="okeiko.ks" target=*okeiko_qk]
-[wait time=10]
 
 ;◆お稽古中は主人公立ち絵を透明化
 [chara_mod name="A_base" storage="toumei.gif" time=0]
@@ -113,7 +105,7 @@
 [image layer=26 x=250 y=20 storage="button/frame_lesson_message.png"]
 [image layer=26 x=334 y=155 storage=&f.okeiko_image]
 [ptext text="……　お稽古中　……" layer=27 size=23 x=370 y=65 color=darkslateblue bold=bold]
-[wait time=1000]
+[wait time=500]
 
 [eval exp="f.okeikopart_serifu_okeiko_owari=1"]
 
@@ -213,7 +205,7 @@ f.para_shujinkou_kiryoku_now = f.para_shujinkou_kiryoku_now - f.okeiko_hituyou_k
 //↓以下表示内容処理
 if(f.okeiko_para_pre_random_1_3==0){
 	f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'上がりました';
-	f.okeiko_seika_txt2='';
+	f.okeiko_seika_txt2=f.okeiko_kamoku_j+'の熟練度が'+f.okeiko_para_pre_random_jukurendo+'上がりました';
 }else{
 	if(f.okeiko_kamoku=='sadou' || f.okeiko_kamoku=='reihou'){
 		f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'、体力最大値が'+f.okeiko_para_pre_random_1_3;
@@ -227,19 +219,19 @@ if(f.okeiko_para_pre_random_1_3==0){
 			f.okeiko_seika_txt2=f.okeiko_kamoku_j+'の熟練度が'+f.okeiko_para_pre_random_jukurendo+'上がりました';
 		}else{ f.okeiko_seika_txt2='上がりました'; }
 	}
-}
-//↓箏
-if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==0){
-	f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'、体力最大値が'+f.okeiko_para_pre_random_1_3;
-	if(f.okeiko_para_pre_random_jukurendo > 0){
-		f.okeiko_seika_txt2=f.okeiko_kamoku_j+'の熟練度が'+f.okeiko_para_pre_random_jukurendo+'上がりました';
-	}else{ f.okeiko_seika_txt2='上がりました'; }
-}
-if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==1){
-	f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'、気力最大値が'+f.okeiko_para_pre_random_1_3;
-	if(f.okeiko_para_pre_random_jukurendo > 0){
-		f.okeiko_seika_txt2=f.okeiko_kamoku_j+'の熟練度が'+f.okeiko_para_pre_random_jukurendo+'上がりました';
-	}else{ f.okeiko_seika_txt2='上がりました'; }
+	//↓箏
+	if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==0){
+		f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'、体力最大値が'+f.okeiko_para_pre_random_1_3;
+		if(f.okeiko_para_pre_random_jukurendo > 0){
+			f.okeiko_seika_txt2=f.okeiko_kamoku_j+'の熟練度が'+f.okeiko_para_pre_random_jukurendo+'上がりました';
+		}else{ f.okeiko_seika_txt2='上がりました'; }
+	}
+	if(f.okeiko_kamoku=='koto' && f.okeiko_para_0tairyoku_1kiryoku==1){
+		f.okeiko_seika_txt1='淑女度が'+f.okeiko_para_pre_random_1_2+'、気力最大値が'+f.okeiko_para_pre_random_1_3;
+		if(f.okeiko_para_pre_random_jukurendo > 0){
+			f.okeiko_seika_txt2=f.okeiko_kamoku_j+'の熟練度が'+f.okeiko_para_pre_random_jukurendo+'上がりました';
+		}else{ f.okeiko_seika_txt2='上がりました'; }
+	}
 }
 
 [endscript]

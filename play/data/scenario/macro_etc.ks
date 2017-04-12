@@ -4,6 +4,51 @@
 ;==============================
 ; その他マクロ設定
 ;==============================
+;◆[お稽古ボタン表示]
+[macro name="お稽古ボタン表示"]
+;◆並んでいるところをみせない→表示が終わったら見せる : script by ＠名無しさん１
+[iscript]
+$(".para").css("opacity",1); //パラメータ表示を復帰
+[endscript]
+;【機能ボタン表示】
+[locate x=250 y=17]
+[button name="message_save,button_okeiko" graphic="button_message_save.png" role=save]
+[wait time=10]
+[locate x=350 y=17]
+[button name="message_load,button_okeiko" graphic="button_message_load.png" role=load]
+[wait time=10]
+[locate x=450 y=17]
+[button name="button_info,button_okeiko" fix=true graphic="button_info.png" storage=info_oaite_fumi.ks target=*info_oaite ]
+[wait time=10]
+[locate x=550 y=17]
+[button name="button_sansaku,button_okeiko" fix=true graphic="button_sansaku.png" storage=sansaku.ks target=*sansaku ]
+[wait time=10]
+[locate x=650 y=17]
+[button name="button_fumibako,button_okeiko" fix=true graphic="button_fumi.png" storage=info_oaite_fumi.ks target=*fumibako ]
+[wait time=10]
+;【お稽古ボタン表示】
+[locate x=330 y=549]
+[button name="okeiko_sadou,button_okeiko" fix=true graphic="button_okeiko_sadou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_sadou ]
+[wait time=10]
+[locate x=430 y=549]
+[button name="okeiko_kadou,button_okeiko" fix=true graphic="button_okeiko_kadou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_kadou ]
+[wait time=10]
+[locate x=530 y=549]
+[button name="okeiko_reihou,button_okeiko" fix=true graphic="button_okeiko_reihou.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_reihou ]
+[wait time=10]
+[locate x=630 y=549]
+[button name="okeiko_gogaku,button_okeiko" fix=true graphic="button_okeiko_gogaku.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_gogaku ]
+[wait time=10]
+[locate x=730 y=549]
+[button name="okeiko_koto,button_okeiko" fix=true graphic="button_okeiko_koto.png" storage="okeiko_okeiko_shori.ks" target=*okeiko_koto ]
+[wait time=10]
+[locate x=852 y=533]
+[button name="okeiko_qk,button_okeiko" fix=true graphic="button_okeiko_qk.png" storage="okeiko.ks" target=*okeiko_qk ]
+[wait time=10]
+[endmacro]
+
+
+
 ;◆[変数ログ表示]
 [macro name="変数ログ表示"]
 [iscript]
@@ -1223,13 +1268,6 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 ;テキスト全画面
 [font color=white size=27]
 ;#
-
-[endmacro]
-
-;◆文頭スペース
-[macro name="sp"]
-[eval exp="sf.space='　'"]
-[emb exp="sf.space"]
 [endmacro]
 
 
@@ -1238,6 +1276,12 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 ;文中の表示
 [macro name="名字"]
 [emb exp="sf.girl_myouji"]
+[endmacro]
+
+;◆文頭スペース
+[macro name="sp"]
+[eval exp="sf.space = '　'"]
+[emb exp="sf.space"]
 [endmacro]
 
 ;文中の表示
@@ -1313,7 +1357,8 @@ $(".chara_name_area").text("<span style='color:#656B2F;'>文矢</span>");
 [locate x=790 y=357]
 [button name="message_backlog" graphic="button_message_log.png" role=backlog ]
 [locate x=860 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[button name="message_skip" graphic="button_message_skip.png"  fix="true" storage="macro_etc.ks" target="*skip"]
+;[button name="message_skip" graphic="button_message_skip.png" role=skip ]
 [locate x=910 y=390]
 [button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
 [wait time=10]
@@ -1357,3 +1402,17 @@ $(".chara_name_area").text("<span style='color:#656B2F;'>文矢</span>");
 [wait time=10]
 
 [return]
+
+*skip
+[if exp="sf.Midoku_SKIP='NO'"]
+[config_record_label skip=true color=0xa68f84]
+[eval exp="sf.Midoku_SKIP='OK'"]
+[font color="gray"]
+"未読でもスキップ可"に設定します。[r]
+"未読で止めたい"場合はタイトル画面より"未読スキップ不可"にご設定ください。[p]
+[resetfont]
+[skipstart]
+[endif]
+[if exp="sf.Midoku_SKIP='OK'"]
+[skipstart]
+[endif]
