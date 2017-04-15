@@ -15,6 +15,8 @@
 ;↓アドバイスイベントを(1=通過済)に変更(主人公セリフ表示のため)
 [eval exp="f.event_advice=1"]
 
+;◆並んでいるところをみせない : script by ＠名無しさん１
+[一斉表示準備]
 
 ;◆手紙一覧
 *fumi_all_page1
@@ -29,7 +31,7 @@
 
 ;[eval exp="f.fumi_all_number=5"]
 [if exp="f.fumi_all_number>10"]
-			[glink target=*fumi_all_page2 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" target=*fumi_all_page2 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_all_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -97,6 +99,7 @@
 	[endif]
 [endif]
 *fumi_all_page1_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page2
@@ -111,9 +114,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page1 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page1 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number>20"]
-[glink target=*fumi_all_page3 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page3 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left2
 [if exp="f.list_count == 0"]
@@ -175,6 +178,7 @@
 [endif]
 [endif]
 *fumi_all_page2_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 
@@ -190,9 +194,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page2 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page2 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 30"]
-[glink target=*fumi_all_page4 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page4 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left3
 [if exp="f.list_count == 0"]
@@ -254,6 +258,7 @@
 [endif]
 [endif]
 *fumi_all_page3_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page4
@@ -268,9 +273,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page3 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page3 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 40"]
-[glink target=*fumi_all_page5 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page5 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left4
 [if exp="f.list_count == 0"]
@@ -332,6 +337,7 @@
 [endif]
 [endif]
 *fumi_all_page4_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page5
@@ -346,9 +352,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page4 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page4 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 50"]
-[glink target=*fumi_all_page6 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page6 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left5
 [if exp="f.list_count == 0"]
@@ -410,6 +416,7 @@
 [endif]
 [endif]
 *fumi_all_page5_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page6
@@ -424,9 +431,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page5 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page5 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 60"]
-[glink target=*fumi_all_page7 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page7 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left6
 [if exp="f.list_count == 0"]
@@ -488,6 +495,7 @@
 [endif]
 [endif]
 *fumi_all_page6_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page7
@@ -502,9 +510,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page6 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page6 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 70"]
-[glink target=*fumi_all_page8 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page8 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left7
 [if exp="f.list_count == 0"]
@@ -566,6 +574,7 @@
 [endif]
 [endif]
 *fumi_all_page7_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page8
@@ -580,9 +589,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page7 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page7 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 80"]
-[glink target=*fumi_all_page9 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page9 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left8
 [if exp="f.list_count == 0"]
@@ -644,6 +653,7 @@
 [endif]
 [endif]
 *fumi_all_page8_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page9
@@ -658,9 +668,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page8 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page8 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 90"]
-[glink target=*fumi_all_page10 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page10 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left9
 [if exp="f.list_count == 0"]
@@ -722,6 +732,7 @@
 [endif]
 [endif]
 *fumi_all_page9_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page10
@@ -736,9 +747,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page9 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page9 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 100"]
-[glink target=*fumi_all_page11 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page11 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left10
 [if exp="f.list_count == 0"]
@@ -800,6 +811,7 @@
 [endif]
 [endif]
 *fumi_all_page10_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page11
@@ -814,9 +826,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page10 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page10 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 110"]
-[glink target=*fumi_all_page12 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page12 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left11
 [if exp="f.list_count == 0"]
@@ -878,6 +890,7 @@
 [endif]
 [endif]
 *fumi_all_page11_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page12
@@ -892,9 +905,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page11 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page11 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 120"]
-[glink target=*fumi_all_page13 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page13 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left12
 [if exp="f.list_count == 0"]
@@ -956,6 +969,7 @@
 [endif]
 [endif]
 *fumi_all_page12_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page13
@@ -970,9 +984,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page12 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page12 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 130"]
-[glink target=*fumi_all_page14 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page14 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left13
 [if exp="f.list_count == 0"]
@@ -1034,6 +1048,7 @@
 [endif]
 [endif]
 *fumi_all_page13_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page14
@@ -1048,9 +1063,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page13 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page13 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 140"]
-[glink target=*fumi_all_page15 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" target=*fumi_all_page15 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left14
 [if exp="f.list_count == 0"]
@@ -1112,6 +1127,7 @@
 [endif]
 [endif]
 *fumi_all_page14_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
 *fumi_all_page15
@@ -1126,9 +1142,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink target=*fumi_all_page14 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" target=*fumi_all_page14 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 140"]
-;[glink target=*fumi_all_page16 text="→" size=20 width="20" x=890 y=480 color=white]
+;[glink name="list" target=*fumi_all_page16 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left15
 [if exp="f.list_count == 0"]
@@ -1190,8 +1206,12 @@
 [endif]
 [endif]
 *fumi_all_page15_end
+@jump target=*fumibako_all_hyouji_owari
 [s]
 
+*fumibako_all_hyouji_owari
+[一斉表示]
+[s]
 
 *fumibako_oaite_hyouji
 [freeimage layer = 26]
@@ -1202,39 +1222,39 @@
 f.fumibako_max_page = Math.ceil(f.fumi_all_number / 10);
 f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + " 頁";
 [endscript]
-	[ptext text=&f.fumibako_page_hyouji layer=28 size=20 x=800 y=40 color=palegoldenrod bold=bold]
+	[ptext name="list" text=&f.fumibako_page_hyouji layer=28 size=20 x=800 y=40 color=palegoldenrod bold=bold]
 
 ;◆「文箱」下部「手紙を書く」エリアのボタン表示
 ;◇葛城宮only6月1週はボタン表示しない
 [if exp="f.katuraginomiya_au == 1 || (f.katuraginomiya_only == 1 && ((f.okeiko_month == 6 && f.okeiko_week != 1) || f.okeiko_month == 7 || f.okeiko_month == 8))"]
-	[glink storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=400 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=400 y=585 color=white]
 @jump target=fumibako_oaite_hyouji_owari
 [elsif exp="f.kuroda_au==1"]
-	[glink storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=400 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=400 y=585 color=white]
 [elsif exp="f.zaizen_au==1"]
-	[glink storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=400 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=400 y=585 color=white]
 @jump target=fumibako_oaite_hyouji_owari
 [elsif exp="f.sijyou_au==1"]
-	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=400 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=400 y=585 color=white]
 @jump target=fumibako_oaite_hyouji_owari
 ;↓◇まだ個別ルートに入っていない間又は葛城宮only以外のみ複数のお相手を表示
 [elsif exp="f.kuroda_au + f.zaizen_au + f.sijyou_au + f.katuraginomiya_au + f.hujieda_au + f.katuraginomiya_only == 0"]
-	[glink storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=75 y=585 color=white]
-	[glink storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=275 y=585 color=white]
-	[glink storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=475 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_kuroda text="黒田 将貴" size=16 width="120" x=75 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_zaizen text="財前 美彬" size=16 width="120" x=275 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_sijyou text="四条 華織" size=16 width="120" x=475 y=585 color=white]
 [endif]
 [if exp="f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month == 10 || (f.okeiko_month == 2 && (f.okeiko_week == 3 || f.okeiko_week == 4)) || f.okeiko_month == 3)"]
 ;藤枝と文通可能なのは個別ルートに入った後、9月2週～10月4週と2月3週以降。11月1週(発覚)～2月2週は不可
-	[glink storage="fumi_henji.ks" target=fumibako_hujieda text="藤枝　肇" size=16 width="120" x=400 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_hujieda text="藤枝　肇" size=16 width="120" x=400 y=585 color=white]
 @jump target=fumibako_oaite_hyouji_owari
 [endif]
 ;個別ルート進行前に葛城宮に手紙を出せるようになっていたらボタン表示
 [if exp="f.katuraginomiya_fumi_start == 1 && f.kuroda_au + f.zaizen_au + f.sijyou_au + f.katuraginomiya_au + f.hujieda_au == 0"]
-	[glink storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=675 y=585 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=675 y=585 color=white]
 [endif]
 
 *fumibako_oaite_hyouji_owari
-	[glink target="fumibako_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
+	[glink name="list" target="fumibako_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 [return]
 [s]
 
@@ -1267,6 +1287,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [freeimage layer = 26]
 ;↓アドバイスイベントを(1=通過済)に変更(主人公セリフ表示のため)
 [eval exp="f.event_advice = 1"]
+[一斉表示準備]
 
 [if exp="f.oaite_viewing_target != ''"]
 @jump target=&f.oaite_viewing_target
@@ -1286,7 +1307,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;◆手紙一覧
 ;[eval exp="f.fumi_kuroda_number=13"]
 [if exp="f.fumi_kuroda_number>5"]
-			[glink target=*fumi_kuroda_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+			[glink name="list" target=*fumi_kuroda_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_kuroda_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1316,6 +1337,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_kuroda
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *fumi_kuroda_page2
@@ -1326,9 +1348,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [call target=*info_kuroda_hyouji]
 
 ;1f.fumi_kuroda_number=[emb exp ="f.fumi_kuroda_number"][r]
-[glink target=*info_kuroda text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*info_kuroda text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_kuroda_number>10"]
-[glink target=*fumi_kuroda_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_kuroda_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_kuroda_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1362,6 +1384,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_kuroda2
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *fumi_kuroda_page3
@@ -1372,7 +1395,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [call target=*info_kuroda_hyouji]
 
 ;1f.fumi_kuroda_number=[emb exp ="f.fumi_kuroda_number"][r]
-[glink target=*fumi_kuroda_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_kuroda_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 
 [eval exp="f.list_count = f.fumi_kuroda_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1406,21 +1429,22 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_kuroda3
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *info_kuroda_hyouji
 [image layer=26 x=1 y=1 storage="bg/bg_info_kuroda.jpg"]
-	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
-	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
+	[glink name="list" target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
+	[glink name="list" storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
 ;葛城宮に手紙を出せるようになっていたらボタン表示
-[if exp="f.katuraginomiya_fumi_start == 1"]
-	[glink target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
+[if exp="f.katuraginomiya_fumi_start == 1 || f.katuraginomiya_au == 1"]
+	[glink name="list" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
 [endif]
 ;藤枝に手紙を出せるようになっていたらボタン表示
 [if exp="f.hujieda_fumi_start == 1"]
-	[glink target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
+	[glink name="list" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
-	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
+	[glink name="list" target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
 [if exp="f.para_kuroda_koukando<0"]
 [eval exp="f.para_koukando_x = 270"]
 [elsif exp="f.para_kuroda_koukando<10"]
@@ -1435,10 +1459,10 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [else]
 [eval exp="f.para_color = 'black'"]
 [endif]
-[ptext text=&f.para_kuroda_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext text=&f.para_kuroda_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
-[ptext text=&f.para_kuroda_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
-[ptext text=&f.para_kuroda_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
+[ptext name="list" text=&f.para_kuroda_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext name="list" text=&f.para_kuroda_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
+[ptext name="list" text=&f.para_kuroda_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[ptext name="list" text=&f.para_kuroda_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
 [return]
 [s]
 
@@ -1454,7 +1478,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;◆手紙一覧
 ;[eval exp="f.fumi_zaizen_number=13"]
 [if exp="f.fumi_zaizen_number>5"]
-			[glink target=*fumi_zaizen_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+			[glink name="list" target=*fumi_zaizen_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_zaizen_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1484,6 +1508,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_zaizen
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *fumi_zaizen_page2
@@ -1494,9 +1519,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [call target=*info_zaizen_hyouji]
 
 ;1f.fumi_zaizen_number=[emb exp ="f.fumi_zaizen_number"][r]
-[glink target=*info_zaizen text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*info_zaizen text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_zaizen_number>10"]
-[glink target=*fumi_zaizen_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_zaizen_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_zaizen_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1530,6 +1555,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_zaizen2
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *fumi_zaizen_page3
@@ -1540,7 +1566,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [call target=*info_zaizen_hyouji]
 
 ;1f.fumi_zaizen_number=[emb exp ="f.fumi_zaizen_number"][r]
-[glink target=*fumi_zaizen_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_zaizen_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 
 [eval exp="f.list_count = f.fumi_zaizen_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1574,22 +1600,23 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_zaizen3
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *info_zaizen_hyouji
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_zaizen.jpg"]
-	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
-;	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
-	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
+	[glink name="list" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
+;	[glink name="list" target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
+	[glink name="list" storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
 ;葛城宮に手紙を出せるようになっていたらボタン表示
-[if exp="f.katuraginomiya_fumi_start==1"]
-	[glink target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
+[if exp="f.katuraginomiya_fumi_start == 1 || f.katuraginomiya_au == 1"]
+	[glink name="list" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
 [endif]
 ;藤枝に手紙を出せるようになっていたらボタン表示
 [if exp="f.hujieda_fumi_start==1"]
-	[glink target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
+	[glink name="list" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
-	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
+	[glink name="list" target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
 [if exp="f.para_zaizen_koukando<0"]
 [eval exp="f.para_koukando_x = 270"]
 [elsif exp="f.para_zaizen_koukando<10"]
@@ -1604,10 +1631,10 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [else]
 [eval exp="f.para_color = 'black'"]
 [endif]
-[ptext text=&f.para_zaizen_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext text=&f.para_zaizen_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
-[ptext text=&f.para_zaizen_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
-[ptext text=&f.para_zaizen_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
+[ptext name="list" text=&f.para_zaizen_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext name="list" text=&f.para_zaizen_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
+[ptext name="list" text=&f.para_zaizen_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[ptext name="list" text=&f.para_zaizen_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
 [return]
 [s]
 
@@ -1671,7 +1698,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;◆手紙一覧
 ;[eval exp="f.fumi_katuraginomiya_number=13"]
 [if exp="f.fumi_katuraginomiya_number>5"]
-			[glink target=*fumi_katuraginomiya_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+			[glink name="list" target=*fumi_katuraginomiya_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_katuraginomiya_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1703,6 +1730,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_katuraginomiya
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *fumi_katuraginomiya_page2
@@ -1713,9 +1741,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [call target=*info_katuraginomiya_hyouji]
 
 ;1f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
-[glink target=*info_katuraginomiya text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*info_katuraginomiya text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_katuraginomiya_number>10"]
-[glink target=*fumi_katuraginomiya_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_katuraginomiya_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_katuraginomiya_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1749,6 +1777,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_katuraginomiya2
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *fumi_katuraginomiya_page3
@@ -1759,7 +1788,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [call target=*info_katuraginomiya_hyouji]
 
 ;1f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
-[glink target=*fumi_katuraginomiya_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_katuraginomiya_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 
 [eval exp="f.list_count = f.fumi_katuraginomiya_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1793,22 +1822,19 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_katuraginomiya3
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *info_katuraginomiya_hyouji
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
-	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
-	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
-	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=430 y=580 color=white]
-;葛城宮に手紙を出せるようになっていたらボタン表示
-;[if exp="f.katuraginomiya_fumi_start==1"]
-;	[glink target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
-;[endif]
+	[glink name="list" target="*info_kuroda" text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
+	[glink name="list" target="*info_zaizen" text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
+	[glink name="list" storage="01_sijyou_info_oaite_fumi.ks" target="*info_sijyou" text="四条 華織" size=16 width="120" x=430 y=580 color=white]
 ;藤枝に手紙を出せるようになっていたらボタン表示
 [if exp="f.hujieda_fumi_start==1"]
-	[glink target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
+	[glink name="list" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
-	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
+	[glink name="list" target="info_owari" text="終了" size=16 width="40" x=850 y=580 color=white]
 [if exp="f.para_katuraginomiya_koukando<0"]
 [eval exp="f.para_koukando_x = 270"]
 [elsif exp="f.para_katuraginomiya_koukando<10"]
@@ -1823,10 +1849,10 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [else]
 [eval exp="f.para_color = 'black'"]
 [endif]
-[ptext text=&f.para_katuraginomiya_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext text=&f.para_katuraginomiya_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
-[ptext text=&f.para_katuraginomiya_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
-[ptext text=&f.para_katuraginomiya_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
+[ptext name="list" text=&f.para_katuraginomiya_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext name="list" text=&f.para_katuraginomiya_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
+[ptext name="list" text=&f.para_katuraginomiya_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[ptext name="list" text=&f.para_katuraginomiya_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
 [return]
 [s]
 
@@ -1841,7 +1867,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;◆手紙一覧
 ;[eval exp="f.fumi_hujieda_number=13"]
 [if exp="f.fumi_hujieda_number>5"]
-			[glink target=*fumi_hujieda_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+			[glink name="list" target=*fumi_hujieda_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_hujieda_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1873,6 +1899,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_hujieda
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *fumi_hujieda_page2
@@ -1883,9 +1910,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [call target=*info_hujieda_hyouji]
 
 ;1f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
-[glink target=*info_hujieda text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*info_hujieda text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_hujieda_number>10"]
-[glink target=*fumi_hujieda_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_hujieda_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_hujieda_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1919,6 +1946,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_hujieda2
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *fumi_hujieda_page3
@@ -1929,7 +1957,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [call target=*info_hujieda_hyouji]
 
 ;1f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
-[glink target=*fumi_hujieda_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_hujieda_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 
 [eval exp="f.list_count = f.fumi_hujieda_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1965,20 +1993,21 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_hujieda3
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 *info_hujieda_hyouji
 [freeimage layer = 26]
 
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_hujieda.jpg"]
-	[glink target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
-	[glink target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
-	[glink storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=430 y=580 color=white]
+	[glink name="list" target="*info_kuroda" text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
+	[glink name="list" target="*info_zaizen" text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
+	[glink name="list" storage="01_sijyou_info_oaite_fumi.ks" target="*info_sijyou" text="四条 華織" size=16 width="120" x=430 y=580 color=white]
 ;葛城宮に手紙を出せるようになっていたらボタン表示
 [if exp="f.katuraginomiya_fumi_start==1"]
-	[glink target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=630 y=580 color=white]
+	[glink name="list" target="*info_katuraginomiya" text="葛城宮 晴仁" size=16 width="120" x=630 y=580 color=white]
 [endif]
-	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
+	[glink name="list" target="*info_owari" text="終了" size=16 width="40" x=850 y=580 color=white]
 [if exp="f.para_hujieda_koukando<0"]
 [eval exp="f.para_koukando_x = 270"]
 [elsif exp="f.para_hujieda_koukando<10"]
@@ -1993,10 +2022,10 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [else]
 [eval exp="f.para_color = 'black'"]
 [endif]
-[ptext text=&f.para_hujieda_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext text=&f.para_hujieda_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
-[ptext text=&f.para_hujieda_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
-[ptext text=&f.para_hujieda_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
+[ptext name="list" text=&f.para_hujieda_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext name="list" text=&f.para_hujieda_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
+[ptext name="list" text=&f.para_hujieda_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[ptext name="list" text=&f.para_hujieda_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
 [return]
 [s]
 
@@ -2006,6 +2035,11 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [freeimage layer = 28]
 @jump storage=okeiko.ks target=*draw_button_system
 [return]
+[s]
+
+;◆「情報」表示終了(このks内info関連全てのページからここにjumpして終了)
+*info_hyouji_owari
+[一斉表示]
 [s]
 
 *fumi_hyouji
@@ -2025,30 +2059,30 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 @jump target=*hensin_button_owari
 [endif]
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] > 0"]
-	[ptext text="未読" layer=28 size=15 x=&tf.fumi_hyouji_midoku_x y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="未読" layer=28 size=15 x=&tf.fumi_hyouji_midoku_x y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
 [else]
 [endif]
 ;◆9月1週お相手未定以外又は9月2週以降はルート確定キャラ以外には返信できない f.fumi_hairetsu1(0=黒田、1=財前、2=四条、3=葛城宮、4=藤枝)
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 0 && f.kuroda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 1 && f.zaizen_au == 1 && ((f.okeiko_month==9 && f.okeiko_week!=1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 	
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 2 && f.sijyou_au == 1 && ((f.okeiko_month==9 && f.okeiko_week!=1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 3 && (f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 ;◆葛城宮onlyかau=1の時は、葛城宮以外の返信ボタンは表示しない
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 != 3 && (f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 4 && f.hujieda_au == 1 && ((f.okeiko_month==9 && f.okeiko_week!=1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 
 ;◆9月1週お相手未定以外又は9月2週以降、返信していない手紙の「返信」ボタン部分には何も表示しない
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 )||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
@@ -2056,9 +2090,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;◆8月までは全員へ返信可能
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && (f.okeiko_month == 4 || f.okeiko_month == 5 || f.okeiko_month == 6 || f.okeiko_month == 7 || f.okeiko_month == 8)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu = 1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu = 1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
-	[ptext text="返信済" layer=28 size=15 x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="返信済" layer=28 size=15 x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == -1"]
 ;返信配列が-1の際も何も表示しない(藤枝の鳩からの手紙時に使用)
 [endif]
@@ -2066,7 +2100,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 
 [if exp="f.fumi_all_number==0"]
 [else]
-	[glink storage=&f.fumi_list_all_storage[f.list_count] target=&f.fumi_list_all_target[f.list_count] text=&f.fumi_list_all_title[f.list_count] size=14 width="325" height=17 x=&tf.fumi_hyouji_title_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=&f.fumi_list_all_storage[f.list_count] target=&f.fumi_list_all_target[f.list_count] text=&f.fumi_list_all_title[f.list_count] size=14 width="325" height=17 x=&tf.fumi_hyouji_title_x y=&f.fumi_all_y color=white]
 [endif]
 @jump target=&tf.fumi_hyouji_owari_target
 
@@ -2076,21 +2110,21 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 *fumi_hyouji_kuroda
 ;◆未読の表示
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_kuroda_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="未読" layer=28 size=15 x=510 y=&f.fumi_kuroda_midoku_y color=mediumslateblue bold=bold]
 [endif]
 ;◆返信ボタンを必要時に表示
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
-	[ptext text="返信済" layer=28 size=15 x=840 y=&f.fumi_kuroda_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="返信済" layer=28 size=15 x=840 y=&f.fumi_kuroda_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.kuroda_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_kuroda_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_kuroda_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_kuroda_number == 0"]
 [else]
-	[glink storage=fumi_kuroda.ks target=&f.fumi_list_kuroda_target[f.list_count] text=&f.fumi_list_kuroda_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_kuroda_y color=white]
+	[glink name="list" storage=fumi_kuroda.ks target=&f.fumi_list_kuroda_target[f.list_count] text=&f.fumi_list_kuroda_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_kuroda_y color=white]
 [endif]
 @jump target=&tf.fumi_hyouji_owari_target
 ;======================================================================================
@@ -2099,21 +2133,21 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 *fumi_hyouji_zaizen
 ;◆未読の表示
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_zaizen_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="未読" layer=28 size=15 x=510 y=&f.fumi_zaizen_midoku_y color=mediumslateblue bold=bold]
 [endif]
 ;◆返信ボタンを必要時に表示
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
-	[ptext text="返信済" layer=28 size=15 x=840 y=&f.fumi_zaizen_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="返信済" layer=28 size=15 x=840 y=&f.fumi_zaizen_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.zaizen_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_zaizen_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_zaizen_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_zaizen_number == 0"]
 [else]
-	[glink storage="zaizen/zaizen_fumi.ks" target=&f.fumi_list_zaizen_target[f.list_count] text=&f.fumi_list_zaizen_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_zaizen_y color=white]
+	[glink name="list" storage="zaizen/zaizen_fumi.ks" target=&f.fumi_list_zaizen_target[f.list_count] text=&f.fumi_list_zaizen_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_zaizen_y color=white]
 [endif]
 @jump target=&tf.fumi_hyouji_owari_target
 
@@ -2127,21 +2161,21 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 
 ;◆未読の表示
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="未読" layer=28 size=15 x=510 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
 [endif]
 ;◆返信ボタンを必要時に表示
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
-	[ptext text="返信済" layer=28 size=15 x=840 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="返信済" layer=28 size=15 x=840 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.katuraginomiya_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_katuraginomiya_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_katuraginomiya_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_katuraginomiya_number == 0"]
 [else]
-	[glink storage="katuraginomiya/katuraginomiya_fumi.ks" target=&f.fumi_list_katuraginomiya_target[f.list_count] text=&f.fumi_list_katuraginomiya_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_katuraginomiya_y color=white]
+	[glink name="list" storage="katuraginomiya/katuraginomiya_fumi.ks" target=&f.fumi_list_katuraginomiya_target[f.list_count] text=&f.fumi_list_katuraginomiya_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_katuraginomiya_y color=white]
 [endif]
 @jump target=&tf.fumi_hyouji_owari_target
 
@@ -2154,21 +2188,21 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 ;◆未読の表示
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="未読" layer=28 size=15 x=510 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [endif]
 ;◆返信ボタンを必要時に表示
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
-	[ptext text="返信済" layer=28 size=15 x=840 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="返信済" layer=28 size=15 x=840 y=&f.fumi_hujieda_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.hujieda_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_hujieda_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_hujieda_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_hujieda_number == 0"]
 [else]
-	[glink storage="hujieda/hujieda_fumi.ks" target=&f.fumi_list_hujieda_target[f.list_count] text=&f.fumi_list_hujieda_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_hujieda_y color=white]
+	[glink name="list" storage="hujieda/hujieda_fumi.ks" target=&f.fumi_list_hujieda_target[f.list_count] text=&f.fumi_list_hujieda_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_hujieda_y color=white]
 [endif]
 @jump target=&tf.fumi_hyouji_owari_target
 

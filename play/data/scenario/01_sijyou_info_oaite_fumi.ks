@@ -12,7 +12,7 @@
 ;↓f.fumi_sijyou_number=これまでに受け取った手紙数。コメントアウトを外して数値を入力すると、テスト的にたくさんの手紙の表示の具合を見ることができます(情報未入力の手紙は空欄になります)
 ;[eval exp="f.fumi_sijyou_number=116"]
 [if exp="f.fumi_sijyou_number>5"]
-			[glink target=*fumi_sijyou_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+			[glink name="list" target=*fumi_sijyou_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_sijyou_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -42,6 +42,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆◆「(攻略対象)情報」ページからの手紙を見る機能は、当初攻略対象からの手紙総数が10通を少し超える程度と見込んで、サラッと手紙を(未返信が無いかなど確認のために)振り返ったりする目的でつけたため5通ごとのページ切り替えとなっています
@@ -54,9 +55,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page2'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*info_sijyou text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*info_sijyou text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>10"]
-[glink target=*fumi_sijyou_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_sijyou_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -87,6 +88,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou2
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓10通を超える手紙を受け取ると3ページ目に表示
@@ -98,9 +100,9 @@
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink target=*fumi_sijyou_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>15"]
-[glink target=*fumi_sijyou_page4 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page4 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 10"]
@@ -135,6 +137,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou3
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓15通を超える手紙を受け取ると4ページ目に表示
@@ -146,9 +149,9 @@
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink target=*fumi_sijyou_page3 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page3 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>20"]
-[glink target=*fumi_sijyou_page5 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page5 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 15"]
@@ -180,6 +183,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou4
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓20通を超える手紙を受け取ると5ページ目に表示
@@ -191,9 +195,9 @@
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink target=*fumi_sijyou_page4 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page4 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>25"]
-[glink target=*fumi_sijyou_page6 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page6 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 20"]
@@ -225,6 +229,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou5
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓25通を超える手紙を受け取ると6ページ目に表示
@@ -235,9 +240,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page6'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page5 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page5 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>30"]
-[glink target=*fumi_sijyou_page7 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page7 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 25"]
@@ -268,6 +273,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou6
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓30通を超える手紙を受け取ると7ページ目に表示
@@ -278,9 +284,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page7'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page6 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page6 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>35"]
-[glink target=*fumi_sijyou_page8 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page8 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 30"]
@@ -311,6 +317,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou7
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓35通を超える手紙を受け取ると8ページ目に表示
@@ -321,9 +328,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page8'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page7 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page7 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>40"]
-[glink target=*fumi_sijyou_page9 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page9 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 35"]
@@ -354,6 +361,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou8
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓40通を超える手紙を受け取ると9ページ目に表示
@@ -364,9 +372,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page9'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page8 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page8 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>45"]
-[glink target=*fumi_sijyou_page10 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page10 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 40"]
@@ -397,6 +405,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou9
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓45通を超える手紙を受け取ると10ページ目に表示
@@ -407,9 +416,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page10'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page9 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page9 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>50"]
-[glink target=*fumi_sijyou_page11 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page11 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 45"]
@@ -440,6 +449,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou10
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓50通を超える手紙を受け取ると11ページ目に表示
@@ -450,9 +460,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page11'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page10 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page10 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>55"]
-[glink target=*fumi_sijyou_page12 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page12 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 50"]
@@ -483,6 +493,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou11
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓55通を超える手紙を受け取ると12ページ目に表示
@@ -493,9 +504,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page12'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page11 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page11 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>60"]
-[glink target=*fumi_sijyou_page13 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page13 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 55"]
@@ -526,6 +537,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou12
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -537,9 +549,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page13'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page12 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page12 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>65"]
-[glink target=*fumi_sijyou_page14 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page14 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 60"]
@@ -570,6 +582,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou13
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -581,9 +594,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page14'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page13 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page13 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>70"]
-[glink target=*fumi_sijyou_page15 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page15 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 65"]
@@ -614,6 +627,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou14
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -625,9 +639,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page15'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page14 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page14 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>75"]
-[glink target=*fumi_sijyou_page16 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page16 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 70"]
@@ -658,6 +672,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou15
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -669,9 +684,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page16'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page15 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page15 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>80"]
-[glink target=*fumi_sijyou_page17 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page17 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 75"]
@@ -702,6 +717,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou16
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -713,9 +729,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page17'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page16 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page16 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>85"]
-[glink target=*fumi_sijyou_page18 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page18 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 80"]
@@ -746,6 +762,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou17
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -757,9 +774,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page18'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page17 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page17 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>90"]
-[glink target=*fumi_sijyou_page19 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page19 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 85"]
@@ -790,6 +807,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou18
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -801,9 +819,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page19'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page18 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page18 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>95"]
-[glink target=*fumi_sijyou_page20 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page20 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 90"]
@@ -834,6 +852,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou19
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -845,9 +864,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page20'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page19 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page19 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>100"]
-[glink target=*fumi_sijyou_page21 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page21 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 95"]
@@ -878,6 +897,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou20
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓100通を超える手紙を受け取ると21ページ目に表示
@@ -888,9 +908,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page21'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page20 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page20 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>105"]
-[glink target=*fumi_sijyou_page22 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page22 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 100"]
@@ -921,6 +941,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou21
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -932,9 +953,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page22'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page21 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page21 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>110"]
-[glink target=*fumi_sijyou_page23 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page23 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 105"]
@@ -965,6 +986,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou22
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
@@ -976,9 +998,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page23'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page22 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page22 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>115"]
-[glink target=*fumi_sijyou_page24 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page24 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 110"]
@@ -1009,6 +1031,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou23
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 ;◆↓115通を超える手紙を受け取ると24ページ目に表示
@@ -1019,10 +1042,10 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page24'"]
 [call target=*info_sijyou_hyouji]
 
-[glink target=*fumi_sijyou_page23 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" target=*fumi_sijyou_page23 text="←" size=20 width="20" x=510 y=480 color=white]
 ;↓もし120通を超えるなら使用予定
 ;[if exp="f.fumi_sijyou_number>120"]
-;[glink target=*fumi_sijyou_page25 text="→" size=20 width="20" x=855 y=480 color=white]
+;[glink name="list" target=*fumi_sijyou_page25 text="→" size=20 width="20" x=855 y=480 color=white]
 ;[endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 115"]
@@ -1053,23 +1076,24 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou24
 [endif]
+@jump target=*info_hyouji_owari
 [s]
 
 
 *info_sijyou_hyouji
 [image layer=26 x=1 y=1 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
-	[glink storage="info_oaite_fumi.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
-	[glink storage="info_oaite_fumi.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
-;	[glink target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
+	[glink name="list" storage="info_oaite_fumi.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
+	[glink name="list" storage="info_oaite_fumi.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
+;	[glink name="list" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
 ;葛城宮に手紙を出せるようになっていたらボタン表示
 [if exp="f.katuraginomiya_fumi_start==1"]
-	[glink storage="info_oaite_fumi.ks" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
+	[glink name="list" storage="info_oaite_fumi.ks" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
 [endif]
 ;藤枝に手紙を出せるようになっていたらボタン表示
 [if exp="f.hujieda_fumi_start==1"]
-	[glink storage="info_oaite_fumi.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
+	[glink name="list" storage="info_oaite_fumi.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
-	[glink target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
+	[glink name="list" target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
 [if exp="f.para_sijyou_koukando<0"]
 [eval exp="f.para_koukando_x = 270"]
 [elsif exp="f.para_sijyou_koukando<10"]
@@ -1084,10 +1108,10 @@
 [else]
 [eval exp="f.para_color = 'black'"]
 [endif]
-[ptext text=&f.para_sijyou_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext text=&f.para_sijyou_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
-[ptext text=&f.para_sijyou_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
-[ptext text=&f.para_sijyou_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
+[ptext name="list" text=&f.para_sijyou_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext name="list" text=&f.para_sijyou_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
+[ptext name="list" text=&f.para_sijyou_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[ptext name="list" text=&f.para_sijyou_shumi layer=27 size=25 x=270 y=448 color=black bold=bold]
 [return]
 [s]
 
@@ -1099,27 +1123,32 @@
 [return]
 [s]
 
+;◆「情報」表示終了(このks内info関連全てのページからここにjumpして終了)
+*info_hyouji_owari
+[一斉表示]
+[s]
+
 ;======================================================================================
 ;◆◆「情報」四条：手紙表示部分処理◆◆
 ;======================================================================================
 *fumi_hyouji_sijyou
 ;◆未読の表示
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2]>0"]
-	[ptext text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="未読" layer=28 size=15 x=510 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
 [endif]
 ;◆返信ボタンを必要時に表示
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
-	[ptext text="返信済" layer=28 size=15 x=840 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
+	[ptext name="list" text="返信済" layer=28 size=15 x=840 y=&f.fumi_sijyou_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.sijyou_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
+	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_sijyou_number == 0"]
 [else]
-	[glink storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
+	[glink name="list" storage=&f.fumi_list_sijyou_storage[f.list_count] target=&f.fumi_list_sijyou_target[f.list_count] text=&f.fumi_list_sijyou_title[f.list_count] size=16 width="270" x=545 y=&f.fumi_sijyou_y color=white]
 [endif]
 @jump target=&tf.fumi_hyouji_owari_target
 
