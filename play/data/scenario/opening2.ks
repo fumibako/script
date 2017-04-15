@@ -1,12 +1,12 @@
-﻿﻿;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
-;	[skipstart]
-;[endif]
+﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+	[skipstart]
+[endif]
 [chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [setreplay name="opening2"]
 *opening2
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene1==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene1
 [stopbgm]
@@ -169,7 +169,7 @@ jumpします。[p]
 [p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene2==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene2
 [fadeoutbgm time=3000]
@@ -191,7 +191,7 @@ jumpします。[p]
 [playbgm storage="isono_miyabi.ogg" loop=true]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene3==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene3
 [whosay name=磯野 color="dimgray"]
@@ -245,14 +245,14 @@ jumpします。[p]
 
 [主人公横伏目パチ1回]
 [wait time=10]
-私の目の前にあるこれは、３０分ほど前にここに置かれたまま、一度もその位置を変えていなかった。[p]
+私の目の前にあるこれは、三十分ほど前にここに置かれたまま、一度もその位置を変えていなかった。[p]
 [chara_mod name="girl_te" storage="girl/S/yubi.png" time=0]
 [wait time=10]
 [主人公伏目パチ1回]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene4==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene4
 [whosay name=磯野 color="dimgray"]
@@ -276,7 +276,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene5==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene5
 ;【SE】紙に触れる（スッ）
@@ -296,7 +296,7 @@ jumpします。[p]
 
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene5b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene5b
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -336,7 +336,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene6==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene6
 #
@@ -358,7 +358,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene7==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene7
 [whosay name=磯野 color="dimgray"]
@@ -393,7 +393,7 @@ jumpします。[p]
 
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene8==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene8
 ;立ち絵表情変更
@@ -421,7 +421,7 @@ jumpします。[p]
 「そ、そうね……いつかはお会いするんですものね」[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene9==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene9
 #
@@ -444,7 +444,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene10==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene10
 [whosay name=磯野 color="dimgray"]
@@ -476,7 +476,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene11==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene11
 [whosay name=磯野 color="dimgray"]
@@ -532,7 +532,7 @@ jumpします。[p]
 
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene12==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene12
 #
@@ -541,7 +541,7 @@ jumpします。[p]
 [autosave]
 [p]
 
-（―――[名前]にも、いつか届くかもしれないよ？[r]
+（――[名前]にも、いつか届くかもしれないよ？[r]
 [sp]将来[名前]の事を一番大切にしてくれて[r]
 [sp][名前]も一番大切だと思える人からの手紙）
 [autosave]
@@ -560,7 +560,7 @@ jumpします。[p]
 [p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene13==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene13
 [主人公ポーズ指]
@@ -695,7 +695,7 @@ f.kuroda_fumi1_midoku = 0;
 ;	[skipstart]
 ;[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_zaizen_fumi1b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *zaizen_fumi1b
 [font color=white size=0][r]【 『財前 美彬』を選択 】[r][resetfont]
@@ -742,7 +742,7 @@ f.zaizen_fumi1_midoku = 0;
 ;	[skipstart]
 ;[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_kaori_fumi1b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *kaori_fumi1b
 [font color=white size=0][r]【 『四条 華織』を選択 】[r][resetfont]
@@ -791,11 +791,11 @@ f.kaori_fumi1_midoku = 0;
 [s]
 
 *fumi_dokuryou01
-;[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
-;	[skipstart]
-;[endif]
+[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+	[skipstart]
+[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene16==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene16
 [eval exp="f.select_scene=''"]
@@ -866,7 +866,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene17==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene17
 [whosay name=磯野 color="dimgray"]
@@ -882,7 +882,7 @@ jumpします。[p]
 [p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene18==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene18
 *isono_situmon01
@@ -919,7 +919,7 @@ jumpします。[p]
 ;	[skipstart]
 ;[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_kuroda_isono1b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *kuroda_isono1b
 [whosay name=磯野 color="dimgray"]
@@ -952,7 +952,8 @@ jumpします。[p]
 「旦那様がおっしゃるには、努力家で優しいお人柄だそうです。[r]
 [主人公目パチ1回]
 [wait time=10]
-[sp]机上の学問だけではなく、野山など自然にも親しまれているそうです」[p]
+[sp]机上の学問だけではなく、野山など自然にも親しまれている[r]
+[sp]そうです」[p]
 [whosay name=磯野 color="dimgray"]
 「他の方で何か気になる事はありますか？」[p]
 @jump target=*isono_situmon01
@@ -965,7 +966,7 @@ jumpします。[p]
 ;	[skipstart]
 ;[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_zaizen_isono1b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *zaizen_isono1b
 [whosay name=磯野 color="dimgray"]
@@ -1027,7 +1028,7 @@ jumpします。[p]
 ;	[skipstart]
 ;[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_kaori_isono1b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *kaori_isono1b
 [主人公ポーズ指]
@@ -1119,7 +1120,7 @@ jumpします。[p]
 ;	[skipstart]
 ;[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_katuraginomiya_isono1b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *katuraginomiya_isono1b
 #
@@ -1135,7 +1136,7 @@ jumpします。[p]
 ;	[skipstart]
 ;[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_hujieda_isono1b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *hujieda_isono1b
 #
@@ -1150,7 +1151,7 @@ jumpします。[p]
 ;	[skipstart]
 ;[endif]
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene19==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene19
 [cm]
@@ -1236,7 +1237,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene20==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene20
 [whosay name=磯野 color="dimgray"]
@@ -1278,7 +1279,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene21==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene21
 #
@@ -1346,7 +1347,7 @@ jumpします。[p]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene21b==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *scene21b
 ;【BGM】フェードアウト
@@ -1363,6 +1364,7 @@ jumpします。[p]
 （時間は沢山あるのだから……ゆっくり、考えよう）
 [autosave]
 [p]
+
 *seen_owari
 #
 
