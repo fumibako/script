@@ -48,94 +48,57 @@
 [freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=25 visible=true]
+[一斉表示準備]
+[wait time=10]
 ;背景画像表示【マクロでフリーズしやすいのでchara_modで切り替え】
 [if exp="f.fumi_henjityu==1"]
 [chara_mod name="bg" storage="bg/plane_sakura.jpg"]
-[image layer=25 x=380 y=20 storage="button/fumi_henji.png"]
-[image layer=25 x=660 y=20 storage="button/fumi_atena_bg_henji.png"]
+[wait time=10]
+[image name="list" layer=25 x=380 y=20 storage="button/fumi_henji.png"]
+[image name="list" layer=25 x=660 y=20 storage="button/fumi_atena_bg_henji.png"]
 [else]
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg"]
-[image layer=25 x=380 y=20 storage="button/fumi_write.png"]
-[image layer=25 x=660 y=20 storage="button/fumi_atena_bg_write.png"]
+[wait time=10]
+[image name="list" layer=25 x=380 y=20 storage="button/fumi_write.png"]
+[image name="list" layer=25 x=660 y=20 storage="button/fumi_atena_bg_write.png"]
 [endif]
 [wait time=10]
 ;◆宛名表示
 [layopt layer=23 visible=true]
 [eval exp = "f.button_atesaki = 'button/fumi_atena_' + f.fumi_atesaki + '.png'"]
-[image layer=25 x=660 y=20 storage=&f.button_atesaki]
+[image name="list" layer=25 x=660 y=20 storage=&f.button_atesaki]
 
-;主人公画像表示【マクロでフリーズしやすいのでchara_modで切り替え】
-;[chara_mod name="A_base" storage="girl/L/base.png" time=0]
-;[wait time=10]
-;[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
-;[wait time=10]
-;[chara_mod name="A_me" storage="girl/L/me_futuu.png" time=0]
-;[wait time=10]
-;[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
-;[wait time=10]
-
-;[chara_show left=80 top=30 layer=23 name="sys_fukidasi" time=100]
-;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
-;[position left=330 width=500 height=550 top=60 page=fore margint="50"]
 [image layer=25 x=30 y=20 storage="button/frame_lesson_fukidasi300.png"]
 [wait time=10]
 ;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
 [position left=80 width=700 height=550 top=37 page=fore margint="50"]
-
-[if exp="f.para_shujinkou_tairyoku_now < 1"]
-[else]
-;【機能ボタン表示】
-;*draw_button_system
-[locate x=680 y=535]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=780 y=535]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[endif]
-
-[if exp="f.para_shujinkou_kiryoku_now < 5"]
-[else]
-;【機能ボタン表示】
-;*draw_button_system
-[locate x=680 y=535]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=780 y=535]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[endif]
 [return]
 
 *binsen_sentaku
 [if exp="f.para_shujinkou_tairyoku_now < f.fumi_hituyou_tairyoku"]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="A_me" storage="girl/L/me_toji.png" time=0]
 [wait time=10]
-;[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
-;[wait time=10]
 [font size=25]
 今は疲れすぎて[r]
 書けないわ……[r]
 [font size=20 color=rosybrown]
 (必要体力[emb exp="f.fumi_hituyou_tairyoku"] 気力[emb exp="f.fumi_hituyou_kiryoku"])
+@jump target="*fumi_binsen_hyouji_end"
 [s]
 [s]
 [elsif exp="f.para_shujinkou_kiryoku_now < f.fumi_hituyou_kiryoku"]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="A_me" storage="girl/L/me_toji.png" time=0]
 [wait time=10]
-;[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
-;[wait time=10]
 [font size=25]
 今は疲れすぎて[r]
 書けないわ……[r]
 [font size=20 color=rosybrown]
 (必要体力[emb exp="f.fumi_hituyou_tairyoku"] 気力[emb exp="f.fumi_hituyou_kiryoku"])
+@jump target="*fumi_binsen_hyouji_end"
 [s]
 [s]
 [else]
@@ -145,14 +108,10 @@
 [s]
 
 *binsen_sentaku2
-
 [if exp="f.binsen_viewing_target == null"]
 	[eval exp="f.binsen_viewing_target = '*fumi_binsen_page1'"]
 [endif]
-;f.binsen_viewing_target=[emb exp ="f.binsen_viewing_target"][r]
 [jump target=&f.binsen_viewing_target]
-
-
 
 *fumi_binsen_page1
 [cm]
@@ -168,10 +127,10 @@
 f.binsen_max_page = Math.ceil(f.fumi_binsen_number / 10);
 f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
-	[ptext text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
 
 [if exp="f.fumi_binsen_number>10"]
-			[glink target=*fumi_binsen_page2 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" target=*fumi_binsen_page2 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_binsen_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -192,22 +151,14 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left
 [endif]
-;f.binsen_viewing_target=[emb exp ="f.binsen_viewing_target"][r]
 [font size=25]
-;[r]f.binsen_list_hairetsu.length=[emb exp="f.binsen_list_hairetsu.length"]
-;[emb exp="f.wadai_list_hairetsu[4][0]"]、[emb exp="f.wadai_list_hairetsu[4][1]"][r]
-;[emb exp="f.wadai_list_hairetsu[5][0]"]、[emb exp="f.wadai_list_hairetsu[5][1]"][r]
 どの便せんに[r]
 書きましょう？
-;f.fumi_hairetsu1=[emb exp="f.fumi_hairetsu1"]
-;f.fumi_hairetsu2=[emb exp="f.fumi_hairetsu2"]
-
-;[emb exp ="f.viewing_target"][r]
 
 [eval exp="f.list_count = f.fumi_binsen_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -230,15 +181,12 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 		[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>5"]
-		[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+		[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
 [endif]
 	[if exp="f.loop_count>0"]
 		@jump target=*loop_fumi_binsen_right
 	[endif]
-	[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-
-[glink target="repair_binsen" text="磯野を呼ぶ" graphic="select_waku_x500.png" size=16 width="200" x=380 y=550 color=white]
-
+@jump target="*fumi_binsen_hyouji_end"
 [s]
 [s]
 
@@ -251,7 +199,6 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 書きましょう？
 ;[emb exp ="f.viewing_target"][r]
 
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 
 [eval exp="f.binsen_now_page = 2"]
 [eval exp="f.binsen_viewing_target = '*fumi_binsen_page2'"]
@@ -259,11 +206,11 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 f.binsen_max_page = Math.ceil(f.fumi_binsen_number / 10);
 f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
-	[ptext text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
 
-			[glink target=*fumi_binsen_page1 text="←" size=20 width="20" x=350 y=480 color=white]
+			[glink name="list" target=*fumi_binsen_page1 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_binsen_number>20"]
-			[glink target=*fumi_binsen_page3 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" target=*fumi_binsen_page3 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_binsen_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -285,7 +232,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 ;f.fumi_binsen_y＝[emb exp ="f.fumi_binsen_y"][r]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left_page2
@@ -312,14 +259,14 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>15"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_right_page2
 [endif]
 [endif]
-
+@jump target="*fumi_binsen_hyouji_end"
 [s]
 [s]
 
@@ -330,10 +277,6 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [font size=25]
 どの便せんに[r]
 書きましょう？
-;[emb exp ="f.viewing_target"][r]
-
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-;	[glink storage="fumi_henji.ks" target="*fumi_henji_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 
 [eval exp="f.binsen_now_page = 3"]
 [eval exp="f.binsen_viewing_target = '*fumi_binsen_page3'"]
@@ -341,10 +284,10 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 f.binsen_max_page = Math.ceil(f.fumi_binsen_number / 10);
 f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
-	[ptext text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink target=*fumi_binsen_page2 text="←" size=20 width="20" x=350 y=480 color=white]
+	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+		[glink name="list" target=*fumi_binsen_page2 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_binsen_number>30"]
-		[glink target=*fumi_binsen_page4 text="→" size=20 width="20" x=890 y=480 color=white]
+		[glink name="list" target=*fumi_binsen_page4 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_binsen_number - 20"]
 [eval exp="f.loop_count = f.list_count"]
@@ -366,7 +309,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 ;f.fumi_binsen_y＝[emb exp ="f.fumi_binsen_y"][r]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left_page3
@@ -393,13 +336,14 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>25"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_right_page3
 [endif]
 [endif]
+@jump target="*fumi_binsen_hyouji_end"
 [s]
 [s]
 
@@ -410,10 +354,6 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [font size=25]
 どの便せんに[r]
 書きましょう？
-;[emb exp ="f.viewing_target"][r]
-
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-;	[glink storage="fumi_henji.ks" target="*fumi_henji_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 
 [eval exp="f.binsen_now_page = 4"]
 [eval exp="f.binsen_viewing_target = '*fumi_binsen_page4'"]
@@ -421,10 +361,10 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 f.binsen_max_page = Math.ceil(f.fumi_binsen_number / 10);
 f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
-	[ptext text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink target=*fumi_binsen_page3 text="←" size=20 width="20" x=350 y=480 color=white]
+	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+		[glink name="list" target=*fumi_binsen_page3 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_binsen_number>40"]
-		[glink target=*fumi_binsen_page5 text="→" size=20 width="20" x=890 y=480 color=white]
+		[glink name="list" target=*fumi_binsen_page5 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_binsen_number - 30"]
 [eval exp="f.loop_count = f.list_count"]
@@ -446,7 +386,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 ;f.fumi_binsen_y＝[emb exp ="f.fumi_binsen_y"][r]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left_page4
@@ -469,17 +409,17 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [iscript]
 	f.fumi_binsen_y =  10 + 80 * (f.fumi_binsen_number - 35)  - 80 * f.list_count;
 [endscript]
-;[emb exp ="f.list_count"][r]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>35"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_right_page4
 [endif]
 [endif]
+@jump target="*fumi_binsen_hyouji_end"
 [s]
 [s]
 
@@ -490,10 +430,6 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [font size=25]
 どの便せんに[r]
 書きましょう？
-;[emb exp ="f.viewing_target"][r]
-
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-;	[glink storage="fumi_henji.ks" target="*fumi_henji_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 
 [eval exp="f.binsen_now_page = 5"]
 [eval exp="f.binsen_viewing_target = '*fumi_binsen_page5'"]
@@ -501,8 +437,8 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 f.binsen_max_page = Math.ceil(f.fumi_binsen_number / 10);
 f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
-	[ptext text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink target=*fumi_binsen_page4 text="←" size=20 width="20" x=350 y=480 color=white]
+	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+		[glink name="list" target=*fumi_binsen_page4 text="←" size=20 width="20" x=350 y=480 color=white]
 [eval exp="f.list_count = f.fumi_binsen_number - 40"]
 [eval exp="f.loop_count = f.list_count"]
 [if exp="f.loop_count > 5"]
@@ -522,9 +458,8 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
 ;f.fumi_binsen_y＝[emb exp ="f.fumi_binsen_y"][r]
 
-
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left_page5
@@ -551,16 +486,31 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>45"]
-	[glink storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_right_page5
 [endif]
 [endif]
+@jump target="*fumi_binsen_hyouji_end"
 [s]
 [s]
 
+*fumi_binsen_hyouji_end
+[if exp="(f.para_shujinkou_tairyoku_now >= f.fumi_hituyou_tairyoku) && (f.para_shujinkou_kiryoku_now >= f.fumi_hituyou_kiryoku)"]
+	[glink name="list" target="repair_binsen" text="磯野を呼ぶ" graphic="select_waku_x500.png" size=16 width="200" x=380 y=550 color=white]
+[endif]
+;【機能ボタン表示】
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[locate x=680 y=535]
+[button name="message_save,list" graphic="button_message_save.png" role=save ]
+[wait time=10]
+[locate x=780 y=535]
+[button name="message_load,list" graphic="button_message_load.png" role=load ]
+[wait time=10]
+[一斉表示]
+[s]
 
 *fumi_henji_save
 
@@ -800,7 +750,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 ;◆便箋Noから便箋配列の好感度の部分を呼び出してpre好感度パラメータに代入
 *binsen_shori_koukando
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [iscript]
 f.para_pre_kuroda_koukando = parseInt(f.binsen_list_hairetsu[f.binsen_number][1]);
 f.para_pre_zaizen_koukando = parseInt(f.binsen_list_hairetsu[f.binsen_number][2]);
@@ -843,19 +793,20 @@ f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + 1;
 *gotyou_sentaku
 [cm]
 [freeimage layer = 28]
+[一斉表示準備]
 [font size=25]
 どんな感じに[r]
 書きましょう？
-;[emb exp ="f.viewing_target"][r]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-	[glink storage="fumi_henji.ks" target=*gotyou_kanketsu text="簡潔に書く" size=16 width="200" x=480 y=150 color=white]
-	[glink storage="fumi_henji.ks" target=*gotyou_teinei text="丁寧に書く" size=16 width="200" x=480 y=250 color=white]
-	[glink storage="fumi_henji.ks" target=*gotyou_kigaru text="気軽に書く" size=16 width="200" x=480 y=350 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=*gotyou_kanketsu text="簡潔に書く" size=16 width="200" x=480 y=150 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=*gotyou_teinei text="丁寧に書く" size=16 width="200" x=480 y=250 color=white]
+	[glink name="list" storage="fumi_henji.ks" target=*gotyou_kigaru text="気軽に書く" size=16 width="200" x=480 y=350 color=white]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[一斉表示]
 [s]
 
 *gotyou_kanketsu
 [eval exp="f.fumi_gotyou='簡潔に書く'"]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [iscript]
 f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando;
 
@@ -898,7 +849,7 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_a'])){
 
 *gotyou_teinei
 [eval exp="f.fumi_gotyou='丁寧に書く'"]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [iscript]
 f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando + 1;
 f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando + 2;
@@ -938,7 +889,7 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_a'])){
 
 *gotyou_kigaru
 [eval exp="f.fumi_gotyou='気軽に書く'"]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [iscript]
 if (f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a']) && f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_b'])){
 	f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando - 2;

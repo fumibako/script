@@ -6,7 +6,7 @@
 
 *wadai_sentaku
 ;f.wadai_list_hairetsu=[emb exp="f.wadai_list_hairetsu[0][0]"]
-
+[一斉表示準備]
 [if exp="f.wadai_viewing_target == null"]
 	[eval exp="f.wadai_viewing_target = '*fumi_wadai_page1'"]
 [endif]
@@ -26,9 +26,9 @@
 f.wadai_max_page = Math.ceil(f.fumi_wadai_number / 10);
 f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
-	[ptext text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
 [if exp="f.fumi_wadai_number>10"]
-			[glink target=*fumi_wadai_page2 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" target=*fumi_wadai_page2 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_wadai_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -48,23 +48,10 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 	f.fumi_wadai_y = ( 10 + 80 * f.fumi_wadai_number ) - 80 * f.list_count;
 [endscript]
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-;f.list_count=[emb exp="f.list_count"]
-;f.fumi_wadai_y=[emb exp="f.fumi_wadai_y"]
-;f.wadai_list_hairetsu0_0=[emb exp="f.wadai_list_hairetsu[0][0]"]
-;f.wadai_list_hairetsu49_0=[emb exp="f.wadai_list_hairetsu[49][0]"]
-;f.wadai_list_hairetsu=[emb exp="f.wadai_list_hairetsu[f.list_count][0]"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left
 [endif]
-;f.wadai_viewing_target=[emb exp ="f.wadai_viewing_target"][r]
-[font size=25]
-どんな話題に[r]
-しましょうか？
-;f.fumi_hairetsu1=[emb exp="f.fumi_hairetsu1"]
-;f.fumi_hairetsu2=[emb exp="f.fumi_hairetsu2"]
-
-;[emb exp ="f.viewing_target"][r]
 
 [eval exp="f.list_count = f.fumi_wadai_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -87,15 +74,12 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>5"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
 [endif]
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_right
 [endif]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-;	[glink storage="fumi_henji.ks" target="*fumi_henji_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
-;	[glink target="*fumi_henji_save" text="保存" color=gray size=16 width="40" x=680 y=585 color=white]
-;	[glink target="*fumi_henji_load" text="読込" color=gray size=16 width="40" x=780 y=585 color=white]
+@jump target="*fumi_wadai_hyouji_end"
 [s]
 [s]
 
@@ -103,12 +87,6 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [cm]
 [freeimage layer = 28]
 *wadai_serifu
-[font size=25]
-どんな話題に[r]
-しましょうか？
-;[emb exp ="f.viewing_target"][r]
-
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 
 [eval exp="f.wadai_now_page = 2"]
 [eval exp="f.wadai_viewing_target = '*fumi_wadai_page2'"]
@@ -116,11 +94,11 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 f.wadai_max_page = Math.ceil(f.fumi_wadai_number / 10);
 f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
-	[ptext text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
 
-			[glink target=*fumi_wadai_page1 text="←" size=20 width="20" x=350 y=480 color=white]
+			[glink name="list" target=*fumi_wadai_page1 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_wadai_number>20"]
-			[glink target=*fumi_wadai_page3 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" target=*fumi_wadai_page3 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_wadai_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -142,7 +120,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 ;f.fumi_wadai_y＝[emb exp ="f.fumi_wadai_y"][r]
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left_page2
@@ -169,14 +147,14 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>15"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_right_page2
 [endif]
 [endif]
-
+@jump target="*fumi_wadai_hyouji_end"
 [s]
 [s]
 
@@ -184,13 +162,6 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [cm]
 [freeimage layer = 28]
 *wadai_serifu3
-[font size=25]
-どんな話題に[r]
-しましょうか？
-;[emb exp ="f.viewing_target"][r]
-
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-;	[glink storage="fumi_henji.ks" target="*fumi_henji_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 
 [eval exp="f.wadai_now_page = 3"]
 [eval exp="f.wadai_viewing_target = '*fumi_wadai_page3'"]
@@ -198,10 +169,10 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 f.wadai_max_page = Math.ceil(f.fumi_wadai_number / 10);
 f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
-	[ptext text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink target=*fumi_wadai_page2 text="←" size=20 width="20" x=350 y=480 color=white]
+	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+		[glink name="list" target=*fumi_wadai_page2 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_wadai_number>30"]
-		[glink target=*fumi_wadai_page4 text="→" size=20 width="20" x=890 y=480 color=white]
+		[glink name="list" target=*fumi_wadai_page4 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_wadai_number - 20"]
 [eval exp="f.loop_count = f.list_count"]
@@ -223,7 +194,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 ;f.fumi_wadai_y＝[emb exp ="f.fumi_wadai_y"][r]
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left_page3
@@ -250,13 +221,14 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>25"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_right_page3
 [endif]
 [endif]
+@jump target="*fumi_wadai_hyouji_end"
 [s]
 [s]
 
@@ -264,13 +236,6 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [cm]
 [freeimage layer = 28]
 *wadai_serifu4
-[font size=25]
-どんな話題に[r]
-しましょうか？
-;[emb exp ="f.viewing_target"][r]
-
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-;	[glink storage="fumi_henji.ks" target="*fumi_henji_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 
 [eval exp="f.wadai_now_page = 4"]
 [eval exp="f.wadai_viewing_target = '*fumi_wadai_page4'"]
@@ -278,10 +243,10 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 f.wadai_max_page = Math.ceil(f.fumi_wadai_number / 10);
 f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
-	[ptext text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink target=*fumi_wadai_page3 text="←" size=20 width="20" x=350 y=480 color=white]
+	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+		[glink name="list" target=*fumi_wadai_page3 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_wadai_number>40"]
-		[glink target=*fumi_wadai_page5 text="→" size=20 width="20" x=890 y=480 color=white]
+		[glink name="list" target=*fumi_wadai_page5 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_wadai_number - 30"]
 [eval exp="f.loop_count = f.list_count"]
@@ -303,7 +268,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 ;f.fumi_wadai_y＝[emb exp ="f.fumi_wadai_y"][r]
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left_page4
@@ -330,13 +295,14 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>35"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_right_page4
 [endif]
 [endif]
+@jump target="*fumi_wadai_hyouji_end"
 [s]
 [s]
 
@@ -344,13 +310,6 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [cm]
 [freeimage layer = 28]
 *wadai_serifu5
-[font size=25]
-どんな話題に[r]
-しましょうか？
-;[emb exp ="f.viewing_target"][r]
-
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-;	[glink storage="fumi_henji.ks" target="*fumi_henji_owari" text="終了" color=gray size=16 width="40" x=880 y=585 color=white]
 
 [eval exp="f.wadai_now_page = 5"]
 [eval exp="f.wadai_viewing_target = '*fumi_wadai_page5'"]
@@ -358,8 +317,8 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 f.wadai_max_page = Math.ceil(f.fumi_wadai_number / 10);
 f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
-	[ptext text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink target=*fumi_wadai_page4 text="←" size=20 width="20" x=350 y=480 color=white]
+	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
+		[glink name="list" target=*fumi_wadai_page4 text="←" size=20 width="20" x=350 y=480 color=white]
 [eval exp="f.list_count = f.fumi_wadai_number - 40"]
 [eval exp="f.loop_count = f.list_count"]
 [if exp="f.loop_count > 5"]
@@ -381,7 +340,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left_page5
@@ -408,16 +367,25 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>45"]
-	[glink storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
 [endif]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_right_page5
 [endif]
 [endif]
+@jump target="*fumi_wadai_hyouji_end"
 [s]
 [s]
 
+
+*fumi_wadai_hyouji_end
+[font size=25]
+どんな話題に[r]
+しましょうか？
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[一斉表示]
+[s]
 
 *fumi_henji_save
 
@@ -651,7 +619,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 ;◆話題Noから話題配列の好感度の部分を呼び出してpre好感度パラメータに代入
 *wadai_shori_koukando
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [iscript]
 f.para_pre_kuroda_koukando = f.para_pre_kuroda_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][1]);
 f.para_pre_zaizen_koukando = f.para_pre_zaizen_koukando + parseInt(f.wadai_list_hairetsu[f.wadai_number][2]);
@@ -754,22 +722,23 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_b'])){
 *fumi_kakunin
 [cm]
 [freeimage layer = 28]
+[一斉表示準備]
 [eval exp="f.fumi_kakunin=1"]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [font size=25]
 この内容で[r]
 よいかしら？
 [eval exp="f.fumi_sentaku_binsen = '便せん　：　' + f.binsen_list_hairetsu[f.binsen_number][0]"]
 [eval exp="f.fumi_sentaku_gotyou = '文　調　：　' + f.fumi_gotyou"]
 [eval exp="f.fumi_sentaku_wadai = '話　題　：　' + f.wadai_list_hairetsu[f.wadai_number][0]"]
-	[ptext text=&f.fumi_sentaku_binsen layer=28 size=25 x=350 y=120 color=saddlebrown bold=bold]
-		[glink storage="fumi_henji.ks" target=&f.binsen_viewing_target text="変更" size=20 width="40" x=800 y=120 color=white]
-	[ptext text=&f.fumi_sentaku_gotyou layer=28 size=25 x=350 y=245 color=saddlebrown bold=bold]
-		[glink storage="fumi_henji.ks" target=*gotyou_sentaku text="変更" size=20 width="40" x=800 y=245 color=white]
-	[ptext text=&f.fumi_sentaku_wadai layer=28 size=25 x=350 y=370 color=saddlebrown bold=bold]
-		[glink target=&f.wadai_viewing_target text="変更" size=20 width="40" x=800 y=370 color=white]
-[button folder="fgimage/button" graphic="button_ok100x100.png" target="*fumi_ok" x=450 y=430]
-
+	[ptext name="list" text=&f.fumi_sentaku_binsen layer=28 size=25 x=350 y=120 color=saddlebrown bold=bold]
+		[glink name="list" storage="fumi_henji.ks" target=&f.binsen_viewing_target text="変更" size=20 width="40" x=800 y=120 color=white]
+	[ptext name="list" text=&f.fumi_sentaku_gotyou layer=28 size=25 x=350 y=245 color=saddlebrown bold=bold]
+		[glink name="list" storage="fumi_henji.ks" target=*gotyou_sentaku text="変更" size=20 width="40" x=800 y=245 color=white]
+	[ptext name="list" text=&f.fumi_sentaku_wadai layer=28 size=25 x=350 y=370 color=saddlebrown bold=bold]
+		[glink name="list" target=&f.wadai_viewing_target text="変更" size=20 width="40" x=800 y=370 color=white]
+[button name="list" folder="fgimage/button" graphic="button_ok100x100.png" target="*fumi_ok" x=450 y=430]
+[一斉表示]
 ;sf.kuroda'koukando_a'=[emb exp = "sf.kuroda['koukando_a']"][r]
 ;f.para_pre_kuroda_koukando=[emb exp ="f.para_pre_kuroda_koukando"]
 ;f.para_pre_zaizen_koukando=[emb exp ="f.para_pre_zaizen_koukando"]
@@ -1819,7 +1788,7 @@ sf.hujieda['fumi_hindo_week']=0;
 [endscript]
 [cm]
 [freeimage layer = 28]
-[button folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
 [chara_mod name="A_mayu" storage="girl/L/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="A_me" storage="girl/L/me_niko.png" time=0]
