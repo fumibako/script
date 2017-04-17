@@ -1112,7 +1112,7 @@
 [ptext name="list" text=&f.para_sijyou_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
 [ptext name="list" text=&f.para_sijyou_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
 [if exp="f.midoku_list_hairetsu[2][1] == 0 || f.midoku_list_hairetsu[2][2] == 0"]
-	[ptext name="list" text=&f.para_sijyou_shumi layer=27 size=25 x=255 y=448 color=black bold=bold]
+	[ptext name="list" text=&f.para_sijyou_shumi layer=27 size=23 x=255 y=448 color=black bold=bold]
 [else]
 	[ptext name="list" text="―" layer=27 size=25 x=270 y=448 color=black bold=bold]
 [endif]
