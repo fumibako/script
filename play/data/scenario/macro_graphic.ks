@@ -398,9 +398,6 @@
 [whosay name=""]
 [cm]
 ;磯野メッセージや「休憩中」など念のため消去
-[freeimage layer = 26]
-[freeimage layer = 27]
-[freeimage layer = 28]
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;機能ボタン消去
