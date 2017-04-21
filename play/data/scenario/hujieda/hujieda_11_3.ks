@@ -4,6 +4,7 @@
 [setreplay name="replay_hujieda_badED_scene" storage="hujieda/hujieda_11_3.ks" target="start"]
 *replay_hujieda_badED_scene2
 *replay_hujieda_11_3
+
 [stopbgm]
 [iscript]
 $('rp_bt').remove();
@@ -12,6 +13,7 @@ $('.list').remove();
 [if exp="f.flag_replay==true"]
 [cm]
 ;暗転とは違う
+
 [back storage="toumei.gif" time=1]
 [endif]
 *start
@@ -22,8 +24,18 @@ $('.list').remove();
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
+[freeimage layer=1 time=500]
+[ct]
+[wait time=10]
+[clearfix]
+[wait time=10]
+[clearstack]
+[wait time=10]
+@layopt layer=1 visible=true
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=30]
+;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=30]
+[chara_new name="bg" storage="bg/room_niwa_yoru.jpg"]
+[chara_show left=1 top=1 layer=1 name="bg" time=0]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
