@@ -1,4 +1,5 @@
 [setreplay name="replay_sijyou_10_3badED_scene" storage="sijyou/sijyou_10_3_badED.ks" target="start"]
+*replay_sijyou_10_3_badED
 *replay_sijyou_10_3badED
 *replay_sijyou_10_3badED_scene
 [iscript]
