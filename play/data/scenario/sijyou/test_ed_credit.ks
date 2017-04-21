@@ -22,28 +22,30 @@
 ;藤枝背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg"]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg"]
 ;bg/bg_tegami_tokiko.jpg
-[elsif exp="f.katuraginomiya_au==1"]
+[elsif exp="f.katuraginomiya_au == 1"]
 ;葛城宮背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg"]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg"]
 ;bg/bg_tegami_kousitsu_jijyuu.jpg bg/bg_tegami_kousitsu_akebono.jpg
-[elsif exp="f.zaizen_au==1"]
+[elsif exp="f.zaizen_au == 1"]
 ;財前背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
-[elsif exp="f.kuroda_au== 1"]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
+[elsif exp="f.kuroda_au == 1"]
 ;黒田背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-;[chara_mod name="bg" storage="bg_tegami_kuroda.jpg"]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+[bg storage="../fgimage/bg/bg_tegami_kuroda.jpg" time=1000]
+[wait time=10]
+[chara_mod name="bg" storage="bg_tegami_kuroda.jpg"]
 [elsif exp="f.sijyou_au == 1"]
 ;四条背景
 ;文字色　font_color
