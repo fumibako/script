@@ -19,9 +19,22 @@
 ;[変数ログ表示]
 @jump storage="event_hantei_week_hajime.ks" target=*start
 *event_hantei_week_hajime_owari
+;◆スキップ状態の時はスキップを解除
+[eval exp="f.skip=this.kag.stat.is_skip"]
+[if exp="f.skip == true"]
+	[cancelskip]
+	[eval exp="f.skip = false"]
+[endif]
+
 ;↓◆イベント判定処理を見るための変数をセット
 ;[eval exp="f.hantei_event_storage='okeiko.ks: *event_hantei_week_hajime_owari通過(event_hantei_week_hajime.ks判定終了)'"]
 ;[変数ログ表示]
+;[if exp="that.kag.stat.is_skip == true"]
+;	[skipstop]
+;[endif]
+;[if exp="this.kag.stat.is_skip == true"]
+;	[skipstop]
+;[endif]
 [if exp="f.skip_sentaku == 1"]
 [eval exp="f.skip_sentaku = 0"]
 @jump target=*bgm_owari

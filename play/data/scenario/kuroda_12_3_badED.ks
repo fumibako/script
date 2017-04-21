@@ -3,6 +3,9 @@
 ;=============================================
 *replay_kuroda_12_3_badED
 [stopbgm]
+[ct]
+[clearfix]
+[clearstack]
 [call storage="tyrano.ks"]
 [setreplay name="replay_kuroda_12_3_badED_scene" storage="kuroda_12_3_badED.ks" target="replay_kuroda_12_3_badED_1"]
 [iscript]
@@ -291,12 +294,12 @@ $('.junbi_girl').remove();
 ;回想記録終了 
 [endreplay] 
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [イベントシーン終了]
 @jump storage=replay2.ks
 [endif]
 
-[if exp="tf.test_kuroda==true"]
+[if exp="tf.test_kuroda == true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]

@@ -9,14 +9,45 @@
 [clearstack]
 [skipstop]
 [stopse]
+;◆全レイヤクリア
+[freeimage layer = 0]
+[freeimage layer = 1]
+[freeimage layer = 2]
+[freeimage layer = 3]
+[freeimage layer = 4]
+[freeimage layer = 5]
+[freeimage layer = 6]
+[freeimage layer = 7]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 13]
+[freeimage layer = 14]
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+[freeimage layer = 21]
+[freeimage layer = 22]
+[freeimage layer = 23]
+[freeimage layer = 24]
+[freeimage layer = 25]
+[freeimage layer = 26]
+[freeimage layer = 27]
+[freeimage layer = 28]
+[freeimage layer = 29]
 
 ;プリロードをします。スマホで表示が間に合わない
 [iscript]
 f.preload_images_rp_bt_kuroda = ["data/fgimage/bg/replay_kuroda_goodED.jpg","data/fgimage/bg/replay_kuroda_normalED.jpg","data/fgimage/bg/replay_kuroda_badED.jpg"];
-f.preload_images_rp_bt_sijyou = ["data/fgimage/bg/sijyou_CGnomal.png","data/fgimage/bg/sijyou_CGgood.png","data/fgimage/bg/replay_sijyou_badED.jpg"];
-f.preload_images_rp_bt_zaizen = ["data/fgimage/bg/zaizen_CGnomal.jpg" , "data/fgimage/bg/zaizen_CGgood.jpg" , "data/fgimage/bg/replay_zaizen_bad1ED.jpg","data/fgimage/bg/replay_zaizen_bad2ED.jpg"];
-f.preload_images_rp_bt_katuragi = ["data/fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg","data/fgimage/bg/katuraginomiya_3_4_goodED_3.jpg","data/fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg"];
-f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/hujieda_normalED.jpg","data/fgimage/bg/hujieda_goodED.jpg","data/fgimage/bg/replay_hujieda_badED.jpg","data/fgimage/bg/replay_hujieda_badED2.jpg"];
+f.preload_images_rp_bt_sijyou = ["data/fgimage/bg/B4nFWraU42/replay_sijyou_normalED.jpg","data/fgimage/bg/replay_sijyou_goodED.jpg","data/fgimage/bg/replay_sijyou_badED.jpg"];
+f.preload_images_rp_bt_zaizen = ["data/fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" , "data/fgimage/bg/replay_zaizen_goodED.jpg" , "data/fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg","data/fgimage/bg/replay_zaizen_bad2ED.jpg"];
+f.preload_images_rp_bt_katuragi = ["data/fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg","data/fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_goodED.jpg","data/fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg"];
+f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/replay_hujieda_normalED.jpg","data/fgimage/bg/replay_hujieda_goodED.jpg","data/fgimage/bg/B4nFWraU42/replay_hujieda_badED.jpg","data/fgimage/bg/replay_hujieda_badED2.jpg"];
 [endscript]
 
 
@@ -47,6 +78,10 @@ $(".rp_bt").remove();
 
 [bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
 ;タイトルで使うことを想定＿[chara_mod name="bg" storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[layopt layer=1 visible=true]
+[chara_new name="bg" storage="bg/plane_sepia.jpg"]
+[chara_show left=1 top=1 layer=1 name="bg" time=100]
+
 [layopt layer=3 visible=true]
 [ptext name=list layer=3 page=fore text="思ひ出　(Ending List)" x=20 y=20 size=26 color=0xA8401C visible=true]
 
@@ -113,23 +148,23 @@ $(".layer_2").css("opacity",0);
 [endscript]
 [replay_image_button2 end=&sf.ED_kuroda_normal storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_kuroda_good storage="kuroda_3_4_goodED.ks" target="replay_kuroda_3_4_goodED" graphic="../fgimage/bg/replay_kuroda_goodED.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_kuroda_bad storage="kuroda_3_4_goodED.ks" target="replay_kuroda_12_3_badED" graphic="../fgimage/bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_kuroda_bad storage="kuroda_12_3_badED.ks" target="replay_kuroda_12_3_badED" graphic="../fgimage/bg/replay_kuroda_badED.jpg" no_graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 
 ;sf.ED_sijyou_normal
 ;sf.ED_sijyou_normal
-[replay_image_button2 end=&sf.ED_sijyou_normal storage="sijyou/sijyou_3_4_goodED.ks" target="replay_sijyou_3_4_normalED" graphic="../fgimage/bg/sijyou_CGnomal.png" x=50 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_sijyou_good storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target="replay_sijyou_3_4_goodED" graphic="../fgimage/bg/sijyou_CGgood.png" x=270 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_sijyou_normal storage="sijyou/sijyou_3_4_goodED.ks" target="replay_sijyou_3_4_normalED" graphic="../fgimage/bg/B4nFWraU42/replay_sijyou_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_sijyou_good storage="sijyou/sijyou_3_4_epilogue_goodED.ks" target="replay_sijyou_3_4_goodED" graphic="../fgimage/bg/replay_sijyou_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_sijyou_bad storage="sijyou/sijyou_10_3_badED.ks" target="replay_sijyou_10_3badED" folder=fgimage graphic="../fgimage/bg/replay_sijyou_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 [ptext name=list layer=2 page=fore text="四条ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
 
-[replay_image_button2 end=&sf.ED_zaizen_normal storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/zaizen_CGnomal.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_good storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/zaizen_CGgood.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_bad1 storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/replay_zaizen_bad1ED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_normal storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_good storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/replay_zaizen_goodED.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_bad1 storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_zaizen_bad2 storage="zaizen/zaizen_11_bad2.ks" traget="replay_zaizen_11_bad2" graphic="../fgimage/bg/replay_zaizen_bad2ED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
 [ptext name=list layer=2 page=fore text="財前ルート　:　normalEND" x=50 y=560 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="財前ルート　:　goodEND" x=270 y=560 size=17 color=navy visible=true]
@@ -145,8 +180,8 @@ $(".layer_2").css("opacity",0);
 $(".layer_free").css("opacity",0);
 $(".list").css("opacity",0);
 [endscript]
-[replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="replay_katuraginomiya_3_4_nomalED" graphic="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_katuraginomiya_good storage="katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks" target="replay_katuraginomiya_3_4_goodED" graphic="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="replay_katuraginomiya_3_4_nomalED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_katuraginomiya_good storage="katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks" target="replay_katuraginomiya_3_4_goodED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_goodED.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_11_1badED.ks" target="replay_katuraginomiya_11_1badED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 
 
@@ -159,9 +194,9 @@ $(".list").css("opacity",0);
 [ptext name=list layer=2 page=fore text="？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 [endif]
-[replay_image_button2 end=&sf.ED_hujieda_normal storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_hujieda_good storage="hujieda/hujieda_3_4_goodED.ks" target="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_hujieda_bad storage="hujieda/hujieda_12_3_badED.ks" target="replay_hujieda_badED_scene" graphic="../fgimage/bg/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_hujieda_normal storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_hujieda_good storage="hujieda/hujieda_3_4_goodED.ks" target="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/replay_hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_hujieda_bad storage="hujieda/hujieda_12_3_badED.ks" target="replay_hujieda_badED_scene" graphic="../fgimage/bg/B4nFWraU42/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_hujieda_bad2 storage="hujieda/hujieda_11_3.ks" target="*replay_hujieda_badED_scene2" graphic="../fgimage/bg/replay_hujieda_badED2.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
 
 [if exp="sf.replay_hujieda == 1"]

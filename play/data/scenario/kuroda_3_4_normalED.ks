@@ -7,18 +7,41 @@
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_kuroda.jpg" time=500] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
-
+;【背景】玄関
+[chara_new name="bg" storage="bg/bg_genkan.jpg"]
+[chara_show left=1 top=1 layer=1 name="bg" time=0]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [call target=*start storage="tyrano.ks"]
+
 [setreplay name="kuroda_3_4_normalED_scene" storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED_1"]
 [cm]
 [iscript]
 $(".list").remove();
 $(".rp_bt").remove();
 [endscript]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [cm]
 @layopt layer=14 visible=true
 [back storage="toumei.gif" time=1]
+;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
+[chara_new name="girl_base" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=15 name="girl_base" time=0]
+[wait time=10]
+[chara_new name="girl_mayu" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=16 name="girl_mayu" time=0]
+[wait time=10]
+[chara_new name="girl_me" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=17 name="girl_me" time=0]
+[wait time=10]
+[chara_new name="girl_kuti" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=18 name="girl_kuti" time=0]
+[wait time=10]
+[chara_new name="girl_emo" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=19 name="girl_emo" time=0]
+[wait time=10]
+[chara_new name="girl_te" storage="toumei.gif"]
+[chara_show left=1 top=381 layer=20 name="girl_te" time=0]
+[wait time=10]
 [endif]
 
 *replay_kuroda_3_4_normalED_1
@@ -27,9 +50,6 @@ $(".rp_bt").remove();
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-;【背景】玄関
-[chara_mod name="bg" storage="bg/bg_genkan.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 
 *scene1
@@ -59,19 +79,25 @@ $(".rp_bt").remove();
 [wait time=10]
 ;機能ボタン消去
 [clearfix]
+[wait time=10]
 [eval exp="sf.FButton='OFF'"]
 [chara_mod name="message_bg" storage="toumei.gif"]
+[wait time=10]
 
 ;[chara_delete="message_bg"]
 ;【背景】ゆっくり暗転後、桜（全画面テキスト用）
 [chara_mod name="bg" storage="toumei.gif" time=500]
+[wait time=10]
 [chara_mod name="bg" storage="bg/bg_EDsakura.jpg" time=1000]
+[wait time=10]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
+[wait time=10]
 
 ;メッセージレイヤを全画面用に設定変更
 [position left=160 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=10]
 
 ;テキスト全画面
 [font color=white size=27]
@@ -142,17 +168,21 @@ $(".rp_bt").remove();
 
 ;【SE】小鳥のはばたき
 [playse storage=tori_habataki_kotori.ogg loop=false ]
+[wait time=10]
 黒田様は桜へ歩を進め[r]
 枝先に下がる花に顔を埋めんばかりだ。[r]
 [r]
 ;【SE】メジロ（ピピ？問いかけるようなさえずり）
 [playse storage=tori_mejiro.ogg loop=false ]
+[wait time=10]
 その時、目白が枝に止まり、花弁がひらひらと舞った。[l][r]
 [r]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜（normal/goodED用
 [playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[wait time=10]
 [eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[wait time=10]
 [endif]
 枝に揺れる目白を見上げ、黒田様は力を得たようにこちらへと向き直られた。[r]
 [r]
@@ -177,148 +207,7 @@ $(".rp_bt").remove();
 「まだ一人前にもなっていない身ですが[r]
 [sp]早く貴方にお伝えしたくて」[p]
 
-;場面転換
-;◆ スチル表示：斜め上から陽光をうけて笑顔の黒田。学生服（帽子は取っている）で卒業証書を片手に、
-;主人公へ手を差し出している。その手にそっと主人公の手が触れた瞬間の図
-;背景は淡い春の青空をぼかしで表現。桜の花びらを散らす
-;（イメージ案です。描きやすいようにアレンジしていただいて大丈夫です）
-;【背景】ゆっくり暗転後、EDスチル
-[chara_mod name="bg" storage="toumei.gif" time=500]
-[wait time=10]
-[chara_mod name="bg" storage="bg/kuroda_normalED.jpg" time=500]
-[wait time=10]
-[eval exp="f.haikei_credit='illustration　by　かいこ'"]
-[cg storage="kuroda_normalED.jpg"]
-[p]
-[resetfont]
-
-;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[freeimage layer = 14]
-[chara_new name="message_bg" storage="toumei.gif"]
-[chara_show left=1 top=391 layer=14 name="message_bg" time=1]
-[wait time=10]
-[chara_mod name="message_bg" storage="message_bg/frame_red.png" time=1]
-[wait time=10]
-
-[メッセージウィンドウ上ボタン表示]
-
-;メッセージレイヤを会話窓用に設定変更
-[eval exp="f.kaogura='off'"]
-[position left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 page=fore visible=true
-[ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407]
-[chara_config ptext="chara_name_area"]
-#
-そういえば、千日紅の花言葉は[r]
-『変わらぬ愛』[r]
-とも聞く。[p]
-そう思い浮かべたところで、黒田様の声が響いた。[p]
-
-[whosay name="黒田 将貴" color="#7a65b2"]
-「散ればまた、咲かせれば良いのですよ」[p]
-
-#
-ハッと桜を見上げる。[p]
-
-繊細な花びらを身にまとう、その幹は[r]
-力強いうねりと逞しさとを備え[r]
-大人でも抱えきれぬほどの厚みがあった。[p]
-
-[whosay name="黒田 将貴" color="#7a65b2"]
-「この樹は、百年以上もの間[r]
-[sp]毎年うつくしい花を咲かせているのです」[p]
-
-#
-このひとは[r]
-花を見るのに、時の流れまでをも[r]
-感じているのか――。[p]
-[eval exp="f.kaogura=''"]
-;=============================================
-;１１章、【後日談：normalED分岐】
-;=============================================
-;【SE】うぐいす（ケキョケキョ）
-[playse storage=tori_uguisu_pikyo.ogg loop=false ]
-;【背景他】手紙用画面
-;【BGM】normal/goodED用BGM
-;【背景他】手紙用画面
-;【SE】パラリ(手紙を開く)
-[playse storage=paper_open.ogg loop=false ]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-[chara_mod name="message_bg" storage="toumei.gif"]
-[wait time=10]
-[freeimage layer = 27]
-[freeimage layer = 28]
-[freeimage layer = 29]
-[layopt layer=29 visible=true]
-;背景変更:手紙
-[chara_mod name="bg" storage="toumei.gif" time=1000]
-[wait time=10]
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
-[wait time=10]
-[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-[wait time=10]
-
-;主人公から兄への手紙
-文矢お兄様[r]
-[r]
-拝啓[r]
-[sp]今日は、ご報告したいことがあります。[r]
-黒田様との結婚が決まりました。[r]
-[r]
-[sp]黒田様の研究は順調に進んでいるようで[r]
-国の機関とも共同研究を始められたそうです。[p]
-[r]
-[sp]研究の合間に散策へ連れて行っていただいて[r]
-私も植物にずいぶん詳しくなりました。[r]
-[r]
-[sp]次にお兄様たちが帰国された際には、色々とご案内[r]
-するのが楽しみです。[r]
-……[p]
-[fadeoutbgm time=3000]
-[wait time=10]
-
-
-;【SE】パラリ(手紙)
-[playse storage=paper_open.ogg loop=false ]
-[freeimage layer = 29]
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1000]
-;テキスト全画面
-[font color=white size=27]
-文箱に納められた手紙の束から[r]
-私はそっと視線を外した。[r]
-[r]
-庭からは春風に乗って、花の香りが漂ってくる。[r]
-[r]
-「黒田様が、幼いころからお好きだったという『すみれ』[r]
-[sp]無事に咲いて、よかったわ」[p]
-[r]
-文箱の蓋を丁寧に閉め、ゆっくりと庭へ向かった――。[p]
-
-[font color=white size=35]
-[r]
-[r]
-[r]
-[r]
-[sp]　　　　　　　　　　完[p]
-[stopbgm]
-[eval exp="sf.ED_kuroda_normal=1"]
-;回想記録終了
-[endreplay] 
-
-[if exp="f.flag_replay==true"]
-;web版はendreplayの下にするexe版はendreplayで戻る
-[イベントシーン終了]
-;【背景】セピア背景
-[chara_mod name="bg" storage="bg/plane_sepia.jpg"]
-[eval exp="f.haikei_credit=''"]
-
-@jump storage="replay2.ks"
-[endif]
-[イベントシーン終了]
-
-@jump storage="event.ks" target=*event_ED
+@jump storage="kuroda_3_4_normalED2.ks" target=*scene0
 
 *window_close
 [cm]

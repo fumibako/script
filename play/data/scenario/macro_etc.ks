@@ -68,8 +68,8 @@ $(".para").css("opacity",1); //パラメータ表示を復帰
 ;◆[変数ログ表示]
 [macro name="変数ログ表示"]
 [iscript]
-console.info("f.hantei_event_storage=", this.kag.stat.f.hantei_event_storage);
-console.info("f.okeiko_week=", this.kag.stat.f.okeiko_week);
+//console.info("f.hantei_event_storage=", this.kag.stat.f.hantei_event_storage);
+//console.info("f.okeiko_week=", this.kag.stat.f.okeiko_week);
 [endscript]
 [endmacro]
 
@@ -171,7 +171,7 @@ $('.loding_pic1').remove();
 [macro name="イベント中テスト数値表示"]
 ;◆テストモード時のみボタンと変数数値表示
 [if exp="tf.test_gamen == true"]
-@jump target=*test_hyouji_event4
+@jump target=*test_hyouji_event_owari4
 [else]
 @jump target=*test_hyouji_event_owari4
 [endif]
@@ -185,7 +185,7 @@ $('.loding_pic1').remove();
 [current layer="message2"]
 ;メッセージレイヤサイズをテスト表示用に設定変更
 [position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
-@layopt layer=message2 page=fore visible = true
+;@layopt layer=message2 page=fore visible = true
 [font color=glay size=13]
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
 [if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
@@ -433,7 +433,8 @@ $('.loding_pic1').remove();
 [resetfont]
 ;◆テストモード時のみボタンと変数数値表示
 [if exp="tf.test_gamen == true"]
-@jump target=*test_hyouji_event
+;@jump target=*test_hyouji_event
+@jump target=*test_hyouji_event_owari
 [else]
 @jump target=*test_hyouji_event_owari
 [endif]

@@ -27,93 +27,14 @@
 [eval exp="f.flag_replay=false"]
 
 [hidemenubutton]
+;構築中隠し
+[暗転２ storage="bg/title.jpg" time=0]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 
 ;背景（タイトル画像）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_new name="bg" storage="bg/title.jpg"]
 [chara_show left=1 top=1 layer=1 name="bg" time=0]
-
-;タイトル各種ボタン表示
-[locate x=450 y=50]
-[button name="button_title_start" graphic="button_title_start.png" target="*start" time=0]
-
-[locate x=350 y=130]
-[button name="button_title_load" graphic="button_title_load.png" target="*load" time=0]
-
-[locate x=250 y=50]
-[button name="button_title_cg" graphic="button_title_cg.png" target="*cg" time=0]
-
-[locate x=150 y=130]
-;[button name="button_title_replay" graphic="button_title_replay.png" target="*replay" time=0]
-
-[locate x=50 y=50]
-[button name="button_title_credit" graphic="button_title_credit.png" target="*credit" time=0]
-
-[locate x=0 y=540]
-[button name="test_mode" graphic="toumei.gif" target="*test"  time=0 width=100 height=100]
-
-*settei
-
-;-----音・文表示設定タグここから-----
-
-[if exp="sf.SE=='OFF'"]
-[iscript]
-/*効果音を再生しない*/
-TG.stat.play_se = false;
-[endscript]
-[locate x=795 y=480]
-[button name="button_se_to_on" graphic="button_se_off.png" target="*se_on" ]
-[else]
-[iscript]
-/*効果音を再生する*/
-TG.stat.play_se = true;
-[endscript]
-[locate x=795 y=480]
-[button name="button_se_to_off" graphic="button_se_on.png" target="*se_off" ]
-[endif]
-
-;未読スキップオフ
-[config_record_label skip=false]
-
-;既読文字カラー
-;color部分を任意の色に変更します。今回は限りなく白い灰色
-[config_record_label color="0xccccbb" ]
-
-
-[eval exp="sf.KSKIP=='OFF'"]
-;[if exp="sf.KSKIP=='OFF'"]
-;[locate x=405 y=480]
-;[button name="button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on" ]
-;[else]
-;[eval exp="sf.KSKIP='ON'"]
-;[locate x=405 y=480]
-;[button name="button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off" ]
-;[endif]
-
-[if exp="sf.BOOST=='ON'"]
-[boost_mode_on]
-;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
-[eval exp="f.okeiko_month = 0"]
-[eval exp="sf.BOOST='ON'"]
-[locate x=535 y=480]
-[button name="button_boost_to_off" graphic="button_boost_on.png" target="*textboost_off" ]
-[else]
-[boost_mode_off]
-;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
-[eval exp="sf.BOOST='OFF'"]
-[locate x=535 y=480]
-[button name="button_boost_to_on" graphic="button_boost_off.png" target="*textboost_on" ]
-[endif]
-
-[if exp="sf.BGM=='OFF'"]
-[locate x=665 y=480]
-[button name="button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on" ]
-[else]
-[eval exp="sf.BGM='ON'"]
-[locate x=665 y=480]
-[button name="button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off" ]
-[endif]
-
-;-----設定タグここまで-----
+[bg storage="../fgimage/bg/title.jpg" time=0]
 
 ;背景（効果）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_new name="bg_effect" storage="toumei.gif"]
@@ -147,6 +68,7 @@ TG.stat.play_se = true;
 [freeimage layer = 14]
 [chara_new name="message_bg" storage="toumei.gif"]
 [chara_show left=1 top=391 layer=14 name="message_bg"]
+[wait time=10]
 
 [iscript]
 var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';    
@@ -162,7 +84,6 @@ TG.menu.displayLog();
 }
 });
 
-
 //"→"キーを押したときだけスキップ処理。「ティラノスクリプト 製作テクニックwiki」様記載のスクリプトを使用させていただきました
 f.skip=this.kag.stat.is_skip;
 $(window).keydown(function(e){
@@ -176,8 +97,101 @@ if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
   f.skip=false;
 } });
 [endscript]
+[wait time=10]
 
+;◆スキップ状態の時はスキップを解除
+[if exp="f.skip == true"]
+	[cancelskip]
+	[eval exp="f.skip = false"]
+[endif]
+[wait time=10]
 
+;タイトル各種ボタン表示
+[locate x=450 y=50]
+[button name="list" graphic="button_title_start.png" target="*start" time=0]
+
+[locate x=350 y=130]
+[button name="list" graphic="button_title_load.png" target="*load" time=0]
+
+[locate x=250 y=50]
+[button name="list" graphic="button_title_cg.png" target="*cg" time=0]
+
+[locate x=150 y=130]
+[button name="list" graphic="button_title_replay.png" target="*replay" time=0]
+
+[locate x=50 y=50]
+[button name="list" graphic="button_title_credit.png" target="*credit" time=0]
+
+[locate x=0 y=540]
+[button name="test_mode" graphic="toumei.gif" target="*test"  time=0 width=100 height=100]
+*settei
+
+;-----音・文表示設定タグここから-----
+
+[if exp="sf.SE=='OFF'"]
+[iscript]
+/*効果音を再生しない*/
+TG.stat.play_se = false;
+[endscript]
+[locate x=795 y=480]
+[button name="list,button_se_to_on" graphic="button_se_off.png" target="*se_on"]
+[else]
+[iscript]
+/*効果音を再生する*/
+TG.stat.play_se = true;
+[endscript]
+[locate x=795 y=480]
+[button name="list,button_se_to_off" graphic="button_se_on.png" target="*se_off"]
+[endif]
+
+;未読スキップオフ
+[config_record_label skip=false]
+
+;既読文字カラー
+;color部分を任意の色に変更します。今回は限りなく白い灰色
+[config_record_label color="0xccccbb" ]
+
+[eval exp="sf.KSKIP=='OFF'"]
+;[if exp="sf.KSKIP=='OFF'"]
+;[locate x=405 y=480]
+;[button name="list,button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on"]
+;[else]
+;[eval exp="sf.KSKIP='ON'"]
+;[locate x=405 y=480]
+;[button name="list,button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off"]
+;[endif]
+
+[if exp="sf.BOOST=='ON'"]
+[boost_mode_on]
+;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
+[eval exp="f.okeiko_month = 0"]
+[eval exp="sf.BOOST='ON'"]
+[locate x=535 y=480]
+[button name="list,button_boost_to_off" graphic="button_boost_on.png" target="*textboost_off"]
+[else]
+[boost_mode_off]
+;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
+[eval exp="sf.BOOST='OFF'"]
+[locate x=535 y=480]
+[button name="list,button_boost_to_on" graphic="button_boost_off.png" target="*textboost_on"]
+[endif]
+
+[if exp="sf.BGM=='OFF'"]
+[locate x=665 y=480]
+[button name="list,button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on"]
+[else]
+[eval exp="sf.BGM='ON'"]
+[locate x=665 y=480]
+[button name="list,button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off"]
+[endif]
+
+;-----設定タグここまで-----
+
+;隠し解除
+[iscript]
+$('.loding_pic1').remove();
+[endscript]
+[暗転２終了]
 [s]
 
 ;-------ボタンが押されたときの処理
@@ -255,7 +269,7 @@ if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
 [wait time=10]
 [clearfix]
 [cm]
-[jump storage="replay.ks"]
+[jump storage="replay2.ks"]
 [s]
 
 ;----------クレジットモードが選択された時

@@ -11,6 +11,7 @@
 
 [call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
+[bg storage="toumei.gif" time=1]
 
 ;ゲーム変数値数値を代入（月, 週, 月始め切り替え背景など。テスト画面経由時以外に実行
 [eval exp="f.okeiko_month = 4"]
@@ -21,7 +22,7 @@
 [eval exp="f.list_count=0"]
 [eval exp="f.binsen_number=0"]
 ;↓◆イベント判定処理を見るための変数をセット
-[eval exp="f.hantei_event_storage='判定処理前'"]
+;[eval exp="f.hantei_event_storage='判定処理前'"]
 ;[変数ログ表示]
 
 

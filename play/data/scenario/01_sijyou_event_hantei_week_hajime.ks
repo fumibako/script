@@ -34,9 +34,9 @@
 	[eval exp="f.event_target='*replay_sijyou_10_3_badED'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_sijyou[9]=1"]
-	[iscript]
-	alert(f.event_storage);
-	[endscript]
+;	[iscript]
+;	alert(f.event_storage);
+;	[endscript]
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
