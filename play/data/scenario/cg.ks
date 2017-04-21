@@ -2,7 +2,6 @@
 ; CG モード　画面作成　
 ;注意：ＣＧモードは独自の[cg]（ティラノ側）で動いているのでreplay2とは関係のない動作です。フラグを解放しても見れません。確認の場合は[cg storage="~~"]を実行して下さい。
 ;=========================================
-
 @layopt layer=message0 visible=false
 
 @clearfix
@@ -68,6 +67,13 @@
 
 
 *cgpage
+
+;スキップ停止　キースキップ安定化のため、スキップフラグ処理追加
+[iscript]
+TG.kag.ftag.startTag("cancelskip");
+f.skip=false;
+[endscript]
+
 [ptext layer=1 page=fore text="画廊" x=20 y=10 size=26 color=0xA8401C visible=true]
 ;[ptext layer=1 page=fore text="動作テスト中" x=22 y=60 size=17 color=navy visible=true]
 [cm]
@@ -142,6 +148,12 @@ $(".list").css("opacity",0);
 $(".layer_free").css("opacity",1);
 $(".list").css("opacity",1);
 $('.loding_pic1').remove();
+[endscript]
+
+;スキップ停止　キースキップ安定化のため、スキップフラグ処理追加
+[iscript]
+TG.kag.ftag.startTag("cancelskip");
+f.skip=false;
 [endscript]
 
 *endpage
