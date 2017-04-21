@@ -120,6 +120,17 @@ jumpします。[p]
 ;================================================================================================
 [暗転２]
 [財前退場]
+;背景変更時にフリーズすることが多いため、背景に使用しているレイヤ1をリセット
+[freeimage layer=1 time=500]
+[ct]
+[wait time=10]
+[clearfix]
+[wait time=10]
+[clearstack]
+[wait time=10]
+@layopt layer=1 visible=true
+[chara_new name="bg" storage="toumei.gif"]
+[chara_show left=1 top=1 layer=1 name="bg" time=500]
 [暗転]
 [暗転２終了]
 ;================================================================================================
@@ -141,9 +152,17 @@ jumpします。[p]
 [image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 [主人公通常]
+[wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-[chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
+[wait time=10]
+@layopt layer=message0 page=fore visible = true
+[wait time=10]
+[current layer="message0"]
+[wait time=10]
+[bg storage="../fgimage/bg/zaizen_youkan.jpg" time=0]
+;[chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -155,14 +174,17 @@ jumpします。[p]
 ;された。[r]だけど/けれど
 けれど私は、まだ誰とも結婚せずにいた。[p]
 [fadeoutbgm time=3000]
+[wait time=10]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 ;メッセージをもどします
 [resetfont]
 ;ｸﾘｯｸがみえる場合は追加↓
 ;[layopt layer=message0 visible=false]
 [freeimage layer = 29 time=1000]
+[wait time=10]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[wait time=10]
 ;ｸﾘｯｸがみえる場合は追加↓
 ;[layopt layer=message0 visible=true]
 ;機能ボタン表示
@@ -176,15 +198,19 @@ jumpします。[p]
 ――独逸大使邸。[p]
 私は、財前様のお母様と手紙のやりとりをしていて、誕生日パーティに[r]
 呼ばれた。[p]
-[if exp="sf.BGM=='ON'"]
+[if exp="sf.BGM == 'ON'"]
 ;【BGM】夕涼み（お稽古パートなど
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[wait time=10]
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
+[wait time=10]
 [主人公目閉]
+[wait time=10]
 ;================================================================================================
 ;【背景】独逸大使館パーティ会場
-[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
+[bg storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;================================================================================================
 
@@ -209,7 +235,8 @@ jumpします。[p]
 [sp]あれでは[ruby text=う]上[ruby text=ま]手くいかないわ」[p]
 
 #
-財前様は、淑女と名高い御令嬢と多額の結納金を出して結婚されたという噂だ。[p]
+財前様は、淑女と名高い御令嬢と多額の結納金を出して結婚されたという[r]
+噂だ。[p]
 
 
 ;【立ち絵】主人公：困り
@@ -266,7 +293,17 @@ jumpします。[p]
 [sp]けれど、いつかは私も結婚するのかしら）[p]
 ;================================================================================================
 ;【背景】空
-[chara_mod name="bg" storage="bg/bg_bluesky.jpg"]
+;背景変更時にフリーズすることが多いため、背景に使用しているレイヤ1をリセット
+[freeimage layer=1 time=500]
+[ct]
+[wait time=10]
+[clearfix]
+[wait time=10]
+[clearstack]
+[wait time=10]
+@layopt layer=1 visible=true
+[bg storage="../fgimage/bg/bg_bluesky.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 [fadeoutbgm time=3000]
 ;================================================================================================
@@ -279,7 +316,9 @@ jumpします。[p]
 *seen_end
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[wait time=10]
+[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]

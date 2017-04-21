@@ -129,8 +129,19 @@ jumpします。[p]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
+;背景変更時にフリーズすることが多いため、背景に使用しているレイヤ1を解放、この後は[bg]タグに切り替えます
+[freeimage layer=1 time=500]
+[ct]
+[wait time=10]
+[clearfix]
+[wait time=10]
+[clearstack]
+[wait time=10]
+
 ;【背景】洋館居間
-[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+[bg storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=0]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -176,7 +187,7 @@ jumpします。[p]
 
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
-「どうした？少し不満そうだが？」[p]
+「どうした？ 少し不満そうだが？」[p]
 
 ;【立ち絵】主人公：目伏せ憂い微笑み
 [主人公口ほほえみ]
@@ -188,7 +199,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"]
 「ああ、行ってくる」[p]
 ;====================
-[財前退場準備 storage="bg/test_room_zaizen_ima.jpg"　time=500]
+[財前退場準備 storage="bg/test_room_zaizen_ima.jpg" time=500]
 ;====================
 #
 彼は立ち上がりダイニングルームを後にする。[r]
@@ -216,7 +227,9 @@ jumpします。[p]
 *seen_end
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+;[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
