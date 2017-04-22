@@ -106,8 +106,8 @@ $(".rp_bt").remove();
 [preload storage=&f.preload_images_rp_bt_katuragi wait=true]
 [preload storage=&f.preload_images_rp_bt_hujieda wait=true]
 
-[preload storage=&f.preload_scenario_kuroda wait=true]
-[preload storage=&f.preload_scenario_sijyou wait=true]
+;[preload storage=&f.preload_scenario_kuroda wait=true]
+;[preload storage=&f.preload_scenario_sijyou wait=true]
 ;一回のみ読み込む
 [eval exp="tf.preload_on = 1"]
 [endif]
