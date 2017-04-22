@@ -115,7 +115,7 @@ $('.list').remove();
 [chara_mod name="bg" storage="toumei.gif" time=500]
 [wait time=10]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 @layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -126,13 +126,13 @@ $('.1_fore').remove();
 ;↓ifからだしておいてください↓
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
 
 ;badED処理追記予定
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [四条ルート終了 end=bad]
 [endif]
 [イベントシーン終了]
