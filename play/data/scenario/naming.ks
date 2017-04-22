@@ -1,9 +1,8 @@
-﻿;周回プレイ時のスクリプトは＠名無しさん１様作です。ありがとうございます。
+;周回プレイ時のスクリプトは＠名無しさん１様作です。ありがとうございます。
 [call target=*start storage="tyrano.ks"]
 *naming
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -52,7 +51,9 @@
 ;和紙風 若草色
 ;[chara_mod name="bg" storage="bg/plane_wakakusa.jpg" time=100]
 ;[eval exp="f.haikei_credit=''"]
-
+;bg背景を黒に
+[bg storage="toumei.gif" time=1]
+[wait time=10]
 ;=====================================================
 ;選択肢用レイヤーを追加
 [position layer=message1 height=550 top=50 left=250 opacity=0]
