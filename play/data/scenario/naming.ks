@@ -52,6 +52,7 @@
 ;[chara_mod name="bg" storage="bg/plane_wakakusa.jpg" time=100]
 ;[eval exp="f.haikei_credit=''"]
 ;bg背景を黒に
+[wait time=50]
 [bg storage="toumei.gif" time=1]
 [wait time=10]
 ;=====================================================
