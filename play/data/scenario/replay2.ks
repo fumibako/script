@@ -53,7 +53,17 @@ f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/replay_hujieda_normalED.jpg",
 [iscript]
 f.preload_scenario_kuroda = ["data/scenario/kuroda_3_4_normalED.ks","data/scenario/kuroda_3_4_goodED.ks","data/scenario/kuroda_12_3_badED.ks"];
 f.preload_scenario_sijyou = ["data/scenario/sijyou/sijyou_3_4_goodED.ks","data/scenario/sijyou/sijyou_3_4_epilogue_goodED.ks","data/scenario/sijyou/sijyou_10_3_badED.ks"];
+f.preload_scenario_zaizen = ["data/scenario/zaizen/zaizen_3_4_normal.ks","data/scenario/zaizen/zaizen_3_4_good.ks","data/scenario/zaizen/zaizen_11_1_bad1.ks","data/scenario/zaizen/zaizen_11_bad2.ks"];
+
+//f.preload_scenario_hujieda = ["data/scenario/hujieda/hujieda_3_4_normalED.ks","data/scenario/hujieda/hujieda_3_4_goodED.ks","data/scenario/hujieda/hujieda_12_3_badED.ks","data/scenario/hujieda/hujieda_11_3.ks"]
+
 [endscript]
+;githubではエラー
+;[preload storage=&f.preload_scenario_kuroda wait=true]
+;[preload storage=&f.preload_scenario_sijyou wait=true]
+;[preload storage=&f.preload_scenario_zaizen wait=true]
+;[preload storage=&f.preload_scenario_katuragi wait=true]
+;[preload storage=&f.preload_scenario_hujieda wait=true]
 
 ;ただの画像分岐ボタンです。
 [macro name=replay_image_button2]
@@ -109,8 +119,7 @@ $(".rp_bt").remove();
 [preload storage=&f.preload_images_rp_bt_katuragi wait=true]
 [preload storage=&f.preload_images_rp_bt_hujieda wait=true]
 
-[preload storage=&f.preload_scenario_kuroda wait=true]
-[preload storage=&f.preload_scenario_sijyou wait=true]
+
 ;一回のみ読み込む
 [eval exp="tf.preload_on = 1"]
 [endif]
