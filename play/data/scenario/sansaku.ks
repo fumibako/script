@@ -526,6 +526,7 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 
 [whosay name="三宮　時子" color="#c25232"]
 「あら。[名前]さんじゃない。ごきげんよう」[p]
+#
 そう呼びとめたのは華族の友人だった。
 [autosave]
 [p]
