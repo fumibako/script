@@ -55,14 +55,14 @@ f.preload_scenario_kuroda = ["data/scenario/kuroda_3_4_normalED.ks","data/scenar
 f.preload_scenario_sijyou = ["data/scenario/sijyou/sijyou_3_4_goodED.ks","data/scenario/sijyou/sijyou_3_4_epilogue_goodED.ks","data/scenario/sijyou/sijyou_10_3_badED.ks"];
 f.preload_scenario_zaizen = ["data/scenario/zaizen/zaizen_3_4_normal.ks","data/scenario/zaizen/zaizen_3_4_good.ks","data/scenario/zaizen/zaizen_11_1_bad1.ks","data/scenario/zaizen/zaizen_11_bad2.ks"];
 
+//f.preload_scenario_katuraginomiya = ["data/scenario/katuraginomiya/katuraginomiya_3_4_nomalED.k","data/scenario/katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks","data/scenario/katuraginomiya/katuraginomiya_11_1badED.ks"]
 //f.preload_scenario_hujieda = ["data/scenario/hujieda/hujieda_3_4_normalED.ks","data/scenario/hujieda/hujieda_3_4_goodED.ks","data/scenario/hujieda/hujieda_12_3_badED.ks","data/scenario/hujieda/hujieda_11_3.ks"]
-
 [endscript]
 ;githubではエラー
 ;[preload storage=&f.preload_scenario_kuroda wait=true]
 ;[preload storage=&f.preload_scenario_sijyou wait=true]
 ;[preload storage=&f.preload_scenario_zaizen wait=true]
-;[preload storage=&f.preload_scenario_katuragi wait=true]
+;[preload storage=&f.preload_scenario_katuraginomiya wait=true]
 ;[preload storage=&f.preload_scenario_hujieda wait=true]
 
 ;ただの画像分岐ボタンです。
