@@ -37,11 +37,6 @@ $('.list').remove();
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;テスト用です 実際は表示されません...表示するので消します[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】はなごよみ〜さくら〜（normal/goodED用
-[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
-[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
-[endif]
 ;=====================ここからお芝居の幕引きです===============================
 *seen_1
 ;本編ではここに飛んできます。以降が続けて表示されます
@@ -55,6 +50,12 @@ $('.list').remove();
 「確認したい事があります。[r]
 [sp]金融恐慌の際に多くの新聞社にお手紙を送ったのは[r]
 [sp][名前]さんですね？」[p]
+
+[if exp="f.flag_replay == true && sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
 
 ;【立ち絵】主人公：驚
 [主人公驚]
