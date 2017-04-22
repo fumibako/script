@@ -28,6 +28,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 ;[glink target="test04" text="お稽古パート" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test05" text="共通プロローグ後半(opening2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test06" text="磯野に相談" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test35" text=".hide等表示テスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="test07" text="時子さん登場" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="test08" text="新茶の話題" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 
@@ -623,6 +624,58 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 @jump storage="kuroda_3_4_goodED.ks"
+[s]
+
+*test35
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+[イベントシーン構築]
+.hide等の表示をテストします。[l][r]
+[iscript]
+$(".list").hide();
+[endscript]
+[locate x=450 y=50]
+[button name="list" graphic="button_title_start.png" target="*test" time=0]
+.hideの後、.hideしたnameの［button］タグを使用しました。[r]
+まだ.showはしていませんが、表示されてしまいませんか？[r]
+(fixではないボタン表示中のためマウススクロールなどで進行してください)[p]
+
+[glink name="list" target="*test" text="テスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+同様に［glink］タグを使用しました。[r]
+まだ.showはしていませんが、表示されてしまいませんか？[p]
+[layopt layer=26 visible=true]
+[image name="list" layer=26 x=334 y=1 storage="button/qk_anim01.png"]
+次に［image］タグを使用しました。[r]
+やはり(私の環境下では)表示されてしまいます。[p]
+[iscript]
+$(".list").hide();
+[endscript]
+再度.hideしました。.hideはもしかして、それまでに表示されているname要素にのみ効果があるのでしょうか？[r]
+javascriptのリファレンスを見ましたが、すぐには.hideを置いた後のname要素にまで効果が及ぶかどうかはわかりませんでした……が、挙動としては.hideの後に表示させるname要素には効かない感じがします。[p]
+[iscript]
+$(".list").remove(); //一度除きます
+[endscript]
+ちなみにopacityもローカルでは同様に"それまでに表示されているname要素にのみ効果がある"挙動でした。[p]
+[button name="list" visible=false graphic="button_title_start.png" target="*test" time=0]
+[iscript]
+$(".list").hide();
+[endscript]
+［button name="list" visible=false］として非表示後に.hideしました。[p]
+
+[button name="list" visible=true graphic="button_title_start.png"]
+［button name="list" visible=true］しました。.showしていないのに(私の環境では)見えてしまいました。
+◆B4nFWraU42さんの環境ではいかがでしょうか？[p]
+[iscript]
+$(".list").remove(); //除きます
+[endscript]
+"構築中の表示を隠し、構築後に一斉表示"という目的の為には、［暗転２]でもボタン類は見えてしまいますので、表示を隠すのはなかなか難しいですね……。ひとまず変数の計算や画面操作系の読み込みを終えてからボタン表示タグを置く、という対策を気付いた範囲で取ってみますが、他に良い方法がありましたらお知らせください。[p]
+
+[イベントシーン終了]
+@jump target="test"
+
 [s]
 
 *common_9_1
