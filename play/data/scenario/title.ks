@@ -28,7 +28,8 @@
 
 [hidemenubutton]
 ;構築中隠し
-[暗転２ storage="bg/title.jpg" time=0]
+;[一斉表示準備]
+@layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 
 ;背景（タイトル画像）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
@@ -184,14 +185,9 @@ TG.stat.play_se = true;
 [locate x=665 y=480]
 [button name="list,button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off"]
 [endif]
-
 ;-----設定タグここまで-----
 
-;隠し解除
-[iscript]
-$('.loding_pic1').remove();
-[endscript]
-[暗転２終了]
+@jump target=*complete_contents
 [s]
 
 ;-------ボタンが押されたときの処理
@@ -391,5 +387,10 @@ TG.stat.play_se = false;
 [jump storage="test.ks"]
 [s]
 
-
-
+*complete_contents
+;隠し解除
+;[一斉表示]
+[iscript]
+$('.loding_pic1').remove();
+[endscript]
+[s]
