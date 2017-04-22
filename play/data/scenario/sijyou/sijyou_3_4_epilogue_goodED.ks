@@ -232,19 +232,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [font color="000000"]
 [position left=200 width=700 height=500 top=110 page=fore margint="50"]
 [wait time=50]
-
-[iscript]
-$(".layer_event_click").hide();
-[endscript]
-
 想いを繋げて綴っていく手紙は、[r]
 いつしか恋を綴り、[r]
 [r]
 人々を幸せにする愛に変わっていく。[p]
-
-[iscript]
-$(".layer_event_click").show();
-[endscript]
 
 [fadeoutbgm time=3000]
 [position left=290 width=700 height=500 top=110 page=fore margint="50"]
