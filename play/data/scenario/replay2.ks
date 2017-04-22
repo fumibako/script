@@ -48,8 +48,8 @@ f.preload_images_rp_bt_sijyou = ["data/fgimage/bg/B4nFWraU42/replay_sijyou_norma
 f.preload_images_rp_bt_zaizen = ["data/fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg","data/fgimage/bg/replay_zaizen_goodED.jpg","data/fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg","data/fgimage/bg/replay_zaizen_bad2ED.jpg"];
 f.preload_images_rp_bt_katuragi = ["data/fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg","data/fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_goodED.jpg","data/fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg"];
 f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/replay_hujieda_normalED.jpg","data/fgimage/bg/replay_hujieda_goodED.jpg",2"data/fgimage/bg/B4nFWraU42/replay_hujieda_badED.jpg","data/fgimage/bg/replay_hujieda_badED2.jpg"];
-f.preload_scenario_kuroda = ["data/scenario/kuroda_3_4_normalED.ks","data/scenario/kuroda_3_4_goodED.ks",data/scenario/kuroda_12_3_badED.ks];
-f.preload_scenario_sijyou = ["data/scenario/sijyou/sijyou_3_4_goodED.ks","data/scenario/sijyou/sijyou_3_4_epilogue_goodED.ks","data/scenario/sijyou/sijyou_10_3_badED.ks"]
+f.preload_scenario_kuroda = ["data/scenario/kuroda_3_4_normalED.ks","data/scenario/kuroda_3_4_goodED.ks","data/scenario/kuroda_12_3_badED.ks"];
+f.preload_scenario_sijyou = ["data/scenario/sijyou/sijyou_3_4_goodED.ks","data/scenario/sijyou/sijyou_3_4_epilogue_goodED.ks","data/scenario/sijyou/sijyou_10_3_badED.ks"];
 [endscript]
 
 
