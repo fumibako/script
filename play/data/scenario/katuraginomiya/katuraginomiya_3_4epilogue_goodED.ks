@@ -23,6 +23,61 @@ $('.list').remove();
 ;↓normalから続けて再生時のjump先ラベルです
 *seen_1
 [call target=3_4epilogue_goodED storage="katuraginomiya/preload_katuraginomiya.ks"]
+;[葛城宮ベース軍服]
+[preload storage="data/fgimage/katuraginomiya/base_gunpuku.png" wait=true]
+;[葛城宮ベース私服]
+[preload storage="data/fgimage/katuraginomiya/base_sifuku.png" wait=true]
+;葛城宮眉
+;葛城宮眉通常
+[preload storage="data/fgimage/katuraginomiya/mayu_futuu.png" wait=true]
+;葛城宮眉下げ
+[preload storage="data/fgimage/katuraginomiya/mayu_sage.png" wait=true]
+;葛城宮眉困り
+[preload storage="data/fgimage/katuraginomiya/mayu_komari.png" wait=true]
+;葛城宮眉強気
+[preload storage="data/fgimage/katuraginomiya/mayu_tuyoki.png" wait=true]
+;葛城宮眉驚き
+[preload storage="data/fgimage/katuraginomiya/mayu_odoroki.png" wait=true]
+;葛城宮眉怒り
+[preload storage="data/fgimage/katuraginomiya/mayu_okori.png" wait=true]
+;============
+;葛城宮目
+[preload storage="data/fgimage/katuraginomiya/me_futuu.png" wait=true]
+;葛城宮目大
+[preload storage="data/fgimage/katuraginomiya/me_ake.png" wait=true]
+;葛城宮目にこ
+[preload storage="data/fgimage/katuraginomiya/me_niko.png" wait=true]
+;葛城宮目伏
+[preload storage="data/fgimage/katuraginomiya/me_fusi1.png" wait=true]
+;葛城宮目閉じ
+[preload storage="data/fgimage/katuraginomiya/me_toji.png" wait=true]
+;葛城宮横目
+[preload storage="data/fgimage/katuraginomiya/me_yoko.png" wait=true]
+;葛城宮横伏目
+[preload storage="data/fgimage/katuraginomiya/me_yokofusi1.png" wait=true]
+;============
+;葛城宮口通常
+[preload storage="data/fgimage/katuraginomiya/kuti_futuu.png" wait=true]
+;葛城宮口開
+[preload storage="data/fgimage/katuraginomiya/kuti_ake.png" wait=true]
+;葛城宮口大開
+[preload storage="data/fgimage/katuraginomiya/kuti_ooake.png" wait=true]
+;[葛城宮口微笑み
+[preload storage="data/fgimage/katuraginomiya/kuti_hohoemi.png" wait=true]
+;[葛城宮口笑顔
+[preload storage="data/fgimage/katuraginomiya/kuti_warau_s.png" wait=true]
+;[葛城宮口笑顔大
+[preload storage="data/fgimage/katuraginomiya/kuti_warau.png" wait=true]
+;[葛城宮口驚き
+[preload storage="data/fgimage/katuraginomiya/kuti_odoroki.png" wait=true]
+;葛城宮口ムッ
+[preload storage="data/fgimage/katuraginomiya/kuti_mu.png" wait=true]
+;葛城宮口怒り
+[preload storage="data/fgimage/katuraginomiya/kuti_okori.png" wait=true]
+;[葛城宮汗]
+[preload storage="data/fgimage/katuraginomiya/emo_ase.png" wait=true]
+;[葛城宮頬染め]
+[preload storage="data/fgimage/katuraginomiya/emo_hohosome.png" wait=true]
 
 [if exp="f.flag_replay==true"]
 @layopt layer=1 visible=true
@@ -232,7 +287,7 @@ $('.junbi_girl').remove();
 ;【立ち絵】葛城宮　驚き
 [葛城宮驚き]
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「先帝に！……身に余る光栄です！」[p]
+「先帝に！ ……身に余る光栄です！」[p]
 [葛城宮真剣]
 
 「先帝は、諸外国から一目置かれる、[ruby text=いち]一[ruby text=だい]大国家に成した我が国の要であり[r]
@@ -250,26 +305,43 @@ $('.junbi_girl').remove();
 [暗転２]
 [葛城宮退場]
 ;指定　暗転
-[chara_mod name="bg" storage="toumei.gif" time=100]
+;一度背景レイヤをリセットします
+[freeimage layer=1 time=100]
+[ct]
+[wait time=10]
+[clearfix]
+[wait time=10]
+[clearstack]
+[wait time=10]
+@layopt layer=1 visible=true
+[chara_new name="bg" storage="toumei.gif"]
+[chara_show left=1 top=1 layer=1 name="bg" time=500]
+[eval exp="f.haikei_credit=''"]
+[wait time=10]
 ;【立ち絵】主人公目閉じ
 [主人公ポーズ通常]
 [主人公目閉]
+[wait time=10]
 [暗転２終了]
+[wait time=10]
 ;===============================================================
 ;【立ち絵】主人公目閉じ
 #
 それから月日は流れた。[p]
 私たちは無事に結婚し、殿下は軍を退役し、[r]
-衆議院や貴族院議員に働きかけ制度を改革していく――[p]
+衆議院や貴族院議員に働きかけ制度を改革していく――。[p]
 
 ;【テキスト全画面】黒茶・和紙風背景に白文字
- [テキスト全画面白文字]
+[テキスト全画面白文字]
+[wait time=10]
+
 ――十年後。[p]
 ;===============================================================
 ;【背景】青空に桜
 ;[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
-[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
-[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[bg storage="../fgimage/bg/bg_EDsakura.jpg" time=0]
+[chara_mod name="bg" storage="toumei.gif"]
+[wait time=50]
 ;[font color="0x663300"]
 [font color=white size=27]
 #
@@ -287,9 +359,12 @@ $('.junbi_girl').remove();
 ;期待を買われ内閣総理大臣となった。[p]
 [resetfont]
 ;===============================================================
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
+[bg storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" time=0]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/situmu.jpg" time=1500]
+[call target=*start storage="macro_tati_katuraginomiya.ks"]
+[wait time=50]
 [イベントシーン構築]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
@@ -390,7 +465,8 @@ $('.junbi_girl').remove();
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
-[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
+[bg storage="../fgimage/bg/bg_EDsakura.jpg" time=0]
+;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [freeimage layer=29 time=100]
 ;===============================================================
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
