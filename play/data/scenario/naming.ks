@@ -372,6 +372,12 @@ TG.stat.play_se = true;
 [背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
+;skipを選択していない場合　区切りのよいところでbg変更
+[if exp="f.skip_sentaku != 1"]
+;bg背景を黒に
+[bg storage="toumei.gif" time=1]
+[wait time=10]
+[endif]
 ;============================================================================================================
 ;◆追加分
 [if exp="f.skip_sentaku == 1"]
