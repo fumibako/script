@@ -51,10 +51,6 @@ f.preload_images_rp_bt_hujieda = ["data/fgimage/bg/replay_hujieda_normalED.jpg",
 [endscript]
 
 
-[iscript]
-f.preload_scenario_kuroda = ["data/scenario/kuroda_3_4_normalED.ks","data/scenario/kuroda_3_4_goodED.ks","data/scenario/kuroda_12_3_badED.ks"];
-[endscript]
-
 
 ;ただの画像分岐ボタンです。
 [macro name=replay_image_button2]
