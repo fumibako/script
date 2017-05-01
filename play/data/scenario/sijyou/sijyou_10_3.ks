@@ -115,7 +115,7 @@
 （その様なことを考えてしまうばかりで）[p]
 [else]
 （そんなこと、考えてばかりで）[p]
-[end]
+[endif]
 [主人公目閉じ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
