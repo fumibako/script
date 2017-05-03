@@ -11,7 +11,8 @@
 
 [call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
-[bg storage="toumei.gif" time=1]
+;背景チラ見え防止
+[bg storage="../fgimage/bg/toumei.gif" time=0]
 
 ;ゲーム変数値数値を代入（月, 週, 月始め切り替え背景など。テスト画面経由時以外に実行
 [eval exp="f.okeiko_month = 4"]

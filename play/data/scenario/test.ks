@@ -23,6 +23,7 @@
 [cm]
 ;背景変更:和紙風 桜色
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[bg storage="../fgimage/bg/toumei.gif" time=0]
 
 [glink target="test_okeiko_sijyou" text="お稽古パート(四条)" graphic="select_waku_x500.png" size=20 width="300" x=100 y=30 color=white]
 

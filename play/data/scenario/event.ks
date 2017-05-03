@@ -3,6 +3,8 @@
 [freeimage layer = 26]
 [freeimage layer = 27]
 @layopt layer=message1 page=fore visible = false
+;背景チラ見え防止
+[bg storage="../fgimage/bg/toumei.gif" time=0]
 
 [if exp="f.event_type=='talk'"]
 [freeimage layer = 26]
