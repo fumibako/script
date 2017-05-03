@@ -11,11 +11,11 @@
 
 *start
 ;◆◆立ち絵画像サイズ：(x)1500x(y)1988を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される予定
-[eval exp="f.zaizen_moto_width=1500"]
-[eval exp="f.zaizen_moto_height=1988"]
+[eval exp="f.zaizen_moto_width=994"]
+[eval exp="f.zaizen_moto_height=1318"]
 ;◆立ち絵【通常サイズ】のwidth、height、left、top設定（他キャラに合わせて軽く調整済み。立ち絵調整・再出力後に再調整予定です
-[eval exp="f.zaizen_tuujou_width=f.zaizen_moto_width*0.39"]
-[eval exp="f.zaizen_tuujou_height=f.zaizen_moto_height*0.39"]
+[eval exp="f.zaizen_tuujou_width=f.zaizen_moto_width*0.58"]
+[eval exp="f.zaizen_tuujou_height=f.zaizen_moto_height*0.58"]
 [eval exp="f.zaizen_tuujou_left=180"]
 [eval exp="f.zaizen_tuujou_top=-10"]
 ;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（軽く調整済み。立ち絵調整・再出力後に再調整予定です
