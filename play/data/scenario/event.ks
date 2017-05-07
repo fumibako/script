@@ -185,6 +185,8 @@ TG.stat.stack["call"] = [];
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [ptext text="【磯野】　このお部屋は初めてになりますね" layer=27 size=21 x=270 y=150 color=darkslateblue bold=bold]
 [ptext text="説明を聞かれますか？" layer=27 size=21 x=345 y=185 color=darkslateblue bold=bold]
+[wait time=10]
+
 [お稽古ボタン表示]
 [wait time=10]
 
@@ -257,7 +259,7 @@ TG.stat.stack["call"] = [];
 *common_4_1_no
 [freeimage layer = 26]
 [freeimage layer = 27]
-[お稽古ボタン表示]
+;[お稽古ボタン表示]
 [wait time=10]
 ;◆主人公メッセージ表示
 ;メッセージレイヤを表示

@@ -266,6 +266,19 @@ f.okeiko_month_kansuuji="三月 ";
 }
 [endscript]
 
+[cm]
+;◆月始め「○月」の全画面画像表示
+[eval exp="f.okeiko_bg_tukihajime = 'bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
+[eval exp="f.sysgra_okeiko_month = 'button/kanji_' + f.okeiko_month + '.png'"]
+[eval exp="f.sysgra_okeiko_week = 'button/kanji_' + f.okeiko_week + '.png'"]
+[eval exp="f.fumi_kakunin=0"]
+
+;◆背景変更:月始め切り替え背景
+[chara_mod name="bg" storage=&f.okeiko_bg_tukihajime time=0]
+[wait time=500]
+;【SE】スズメのさえずり
+[playse storage=tori_suzume.ogg loop=false]
+
 [stopbgm]
 ;機能ボタン類を消去（fixレイヤー全消去）
 [clearfix]
@@ -287,18 +300,6 @@ f.okeiko_month_kansuuji="三月 ";
 [chara_show left=50 top=220 layer=7 name="A_emo" time=0]
 [wait time=10]
 
-
-[cm]
-;◆月始め「○月」の全画面画像表示
-[eval exp="f.okeiko_bg_tukihajime = 'bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
-[eval exp="f.sysgra_okeiko_month = 'button/kanji_' + f.okeiko_month + '.png'"]
-[eval exp="f.sysgra_okeiko_week = 'button/kanji_' + f.okeiko_week + '.png'"]
-[eval exp="f.fumi_kakunin=0"]
-
-;◆背景変更:月始め切り替え背景
-[chara_mod name="bg" storage=&f.okeiko_bg_tukihajime]
-;【SE】スズメのさえずり
-[playse storage=tori_suzume.ogg loop=false]
 
 ;◆背景切り替え中に色々読込
 ;【システム表示】フキダシ枠【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
@@ -576,11 +577,14 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 *intro
 
 ;【背景】黒背景（和紙風の黒っぽい背景）全画面テキスト
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=500]
+[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=100]
+[wait time=10]
 @layopt layer=message0 page=fore visible = true
+[wait time=10]
 [current layer="message0"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=10]
 [font color=white size=27]
 【磯野】[r]
 「お嬢様。本日よりお稽古には[r]
@@ -609,7 +613,11 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 [r]
 [sp]　　　　　　お稽古に励もう――。[p]
 [resetfont]
-
+;背景変更:主人公邸_お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[wait time=10]
 @jump storage="okeiko.ks" target=*okeiko_main
 
 ;◆テストメニューへ戻る

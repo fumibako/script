@@ -594,19 +594,24 @@ jumpします。[p]
 ;[endif]
 *scene15
 *fumi_sentaku01
+;背景変更:和紙風
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit=''"]
+[wait time=10]
 [eval exp="f.select_scene='fumi_sentaku01'"]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
 ;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif"]
+[chara_mod name="message_bg" storage="toumei.gif" time=0]
 [wait time=10]
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 
-[chara_mod name="message_bg" storage=&f.message_storage]
+[chara_mod name="message_bg" storage=&f.message_storage time=0]
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
 ;メッセージレイヤサイズを会話窓用に設定変更
@@ -616,14 +621,17 @@ jumpします。[p]
 [eval exp="sf.FButton='ON'"]
 
 ;背景変更:和紙風
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit=''"]
+[wait time=10]
 
-[button target=*kuroda_fumi1 graphic="moji_kuroda.png" x=200 y=50]
-[button target=*zaizen_fumi1 graphic="moji_zaizen.png" x=600 y=50]
-[button target=*kaori_fumi1 graphic="moji_sijyou.png" x=200 y=150]
+[button target=*kuroda_fumi1 graphic="moji_kuroda.png" x=200 y=50 time=0]
+[button target=*zaizen_fumi1 graphic="moji_zaizen.png" x=600 y=50 time=0]
+[button target=*kaori_fumi1 graphic="moji_sijyou.png" x=200 y=150 time=0]
 ;[button target=*katuraginomiya_fumi1 graphic="moji_katuraginomiya.png" x=600 y=150]
 ;[button target=*hujieda_fumi1 graphic="moji_hujieda.png" x=200 y=250]
-[button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=150]
+[button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=150 time=0]
 #
 どなたのお手紙を読みましょう？
 [autosave]
@@ -802,6 +810,7 @@ f.kaori_fumi1_midoku = 0;
 [cm]
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [背景_庭]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [主人公ふぅ閉]
@@ -893,18 +902,18 @@ jumpします。[p]
 [wait time=10]
 
 ;背景変更:和紙風
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
 [eval exp="f.haikei_credit=''"]
 
 #
 どなたか詳しく知りたい方はいらっしゃいますか？
 
-[button target=*kuroda_isono1 graphic="moji_kuroda.png" x=200 y=50]
-[button target=*zaizen_isono1 graphic="moji_zaizen.png" x=600 y=50]
-[button target=*kaori_isono1 graphic="moji_sijyou.png" x=200 y=150]
-;[button target=*katuraginomiya_isono1 graphic="moji_katuraginomiya.png" x=600 y=150]
-;[button target=*hujieda_isono1 graphic="moji_hujieda.png" x=200 y=250]
-[button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=150]
+[button target=*kuroda_isono1 graphic="moji_kuroda.png" x=200 y=50 time=0]
+[button target=*zaizen_isono1 graphic="moji_zaizen.png" x=600 y=50 time=0]
+[button target=*kaori_isono1 graphic="moji_sijyou.png" x=200 y=150 time=0]
+;[button target=*katuraginomiya_isono1 graphic="moji_katuraginomiya.png" x=600 y=150 time=0]
+;[button target=*hujieda_isono1 graphic="moji_hujieda.png" x=200 y=250 time=0]
+[button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=150 time=0]
 [autosave]
 [s]
 
@@ -1156,6 +1165,7 @@ jumpします。[p]
 *scene19
 [cm]
 [背景_庭]
+[wait time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公口ほほえみ]
 [wait time=10]
@@ -1395,13 +1405,13 @@ jumpします。[p]
 ;オープニング　終
 
 ;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif"]
+[chara_mod name="message_bg" storage="toumei.gif" time=0]
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 
 ;背景非表示
-[chara_mod name="bg" storage="toumei.gif" time=100]
+[chara_mod name="bg" storage="toumei.gif" time=50]
 [endreplay]
 
 

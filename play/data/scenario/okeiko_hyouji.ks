@@ -18,7 +18,8 @@
 [clearstack]
 [clearfix]
 ;背景変更:主人公邸_お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg"]
+[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [wait time=10]
 

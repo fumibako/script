@@ -8,7 +8,8 @@
 
 ;背景：庭
 [macro name="背景_庭"]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
+[wait time=10]
 [endmacro]
 
 
