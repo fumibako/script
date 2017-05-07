@@ -1,4 +1,10 @@
-﻿;↓読み込み不良対策。終了処理ラベルを真っ先に読む
+﻿*where_are_you
+;↓読み込み不良対策。お稽古パート中なら文箱や情報画面を表示せず戻る
+[if exp="f.viewing_storage == 'okeiko.ks'"]
+	@jump storage=okeiko.ks target=*draw_button_system
+[endif]
+
+;↓読み込み不良対策。終了処理ラベルを真っ先に読む
 *fumibako_owari
 ;背景変更:主人公邸_お稽古部屋
 [chara_mod name="bg" storage="bg/bg_okeiko_main.jpg" time=0]
