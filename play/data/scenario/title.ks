@@ -8,6 +8,8 @@
 [position layer=message0 width=960 height=500 top=640 left=960 page=fore opacity=0]
 
 *title
+;↓タイトルメニューから「戻る」際にボタンが重複表示になることを防止
+[cm]
 [freeimage layer = 3]
 [freeimage layer = 4]
 [freeimage layer = 5]
