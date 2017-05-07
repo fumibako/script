@@ -1,4 +1,27 @@
-﻿*start
+﻿;↓読み込み不良対策。お稽古パート中なら話題選択ボタンを表示せず戻る
+*where_are_you
+[if exp="f.viewing_storage == 'okeiko.ks'"]
+	@jump storage=okeiko.ks target=*draw_button_system
+[endif]
+
+;↓読み込み不良対策。終了処理ラベルを最初に読み込む
+*fumi_henji_owari
+[eval exp="f.fumi_henjityu==0"]
+
+[clearfix]
+[wait time=10]
+[freeimage layer = 23]
+[freeimage layer = 26]
+[freeimage layer = 27]
+[freeimage layer = 28]
+[wait time=10]
+[cm]
+[wait time=10]
+
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+
+*start
 
 ;=============================================
 ;手紙の話題選択
@@ -399,18 +422,6 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 @jump target=*start
 [return]
 
-*fumi_henji_owari
-[eval exp="f.fumi_henjityu==0"]
-
-[clearfix]
-[freeimage layer = 23]
-[freeimage layer = 26]
-[freeimage layer = 27]
-[freeimage layer = 28]
-[cm]
-
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
-[s]
 
 ;◆選択した話題のNoを振って、好感度処理に繋ぐ
 *wadai_shori0
@@ -1788,7 +1799,10 @@ sf.hujieda['fumi_hindo_week']=0;
 [endscript]
 [cm]
 [freeimage layer = 28]
-[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+;↓手紙を出した後は自動で画面が閉じられるため、ボタン類を撤去
+;[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[clearfix]
+[wait time=10]
 [chara_mod name="A_mayu" storage="girl/L/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="A_me" storage="girl/L/me_niko.png" time=0]

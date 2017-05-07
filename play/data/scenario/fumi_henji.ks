@@ -1,4 +1,30 @@
-﻿*start
+﻿;↓読み込み不良対策。お稽古パート中なら話題選択ボタンを表示せず戻る
+*where_are_you
+[if exp="f.viewing_storage == 'okeiko.ks'"]
+	@jump storage=okeiko.ks target=*draw_button_system
+[endif]
+
+;↓読み込み不良で終了処理ができずボタン類が再表示されてしまう件を防止
+*fumi_henji_owari
+[eval exp="f.fumi_henjityu=0"]
+[eval exp="f.fumi_kakunin=0"]
+[eval exp="f.fumi_atesaki=''"]
+[eval exp="f.fumi_hairetsu1=0"]
+[eval exp="f.fumi_hairetsu2=0"]
+
+[clearfix]
+;[freeimage layer = 23]
+[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
+[freeimage layer = 25]
+[freeimage layer = 26]
+[freeimage layer = 27]
+[freeimage layer = 28]
+[cm]
+
+@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+[s]
+
+*start
 
 ;=============================================
 ;手紙を書く
@@ -43,7 +69,6 @@
 
 [freeimage layer = 24]
 [freeimage layer = 25]
-[freeimage layer = 26]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
@@ -52,12 +77,12 @@
 [wait time=10]
 ;背景画像表示【マクロでフリーズしやすいのでchara_modで切り替え】
 [if exp="f.fumi_henjityu==1"]
-[chara_mod name="bg" storage="bg/plane_sakura.jpg"]
+[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
 [wait time=10]
 [image name="list" layer=25 x=380 y=20 storage="button/fumi_henji.png"]
 [image name="list" layer=25 x=660 y=20 storage="button/fumi_atena_bg_henji.png"]
 [else]
-[chara_mod name="bg" storage="bg/plane_mizuiro.jpg"]
+[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
 [wait time=10]
 [image name="list" layer=25 x=380 y=20 storage="button/fumi_write.png"]
 [image name="list" layer=25 x=660 y=20 storage="button/fumi_atena_bg_write.png"]
@@ -72,6 +97,8 @@
 [wait time=10]
 ;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
 [position left=80 width=700 height=550 top=37 page=fore margint="50"]
+;↓背景を切り替えた後に文箱背景表示レイヤを消す
+[freeimage layer = 26]
 [return]
 
 *binsen_sentaku
@@ -523,25 +550,6 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [showload]
 @jump target=*start
 [return]
-
-*fumi_henji_owari
-[eval exp="f.fumi_henjityu=0"]
-[eval exp="f.fumi_kakunin=0"]
-[eval exp="f.fumi_atesaki=''"]
-[eval exp="f.fumi_hairetsu1=0"]
-[eval exp="f.fumi_hairetsu2=0"]
-
-[clearfix]
-;[freeimage layer = 23]
-[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
-[freeimage layer = 25]
-[freeimage layer = 26]
-[freeimage layer = 27]
-[freeimage layer = 28]
-[cm]
-
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
-[s]
 
 ;◆選択した便箋のNoを振って、好感度処理に繋ぐ
 *binsen_shori0

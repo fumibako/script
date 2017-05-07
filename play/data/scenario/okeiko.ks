@@ -53,6 +53,11 @@
 *fumi_toutyaku_hantei_owari
 
 *draw_button_system
+[eval exp="f.viewing_storage = 'okeiko.ks'"]
+[eval exp="f.viewing_target = '*draw_button_system'"]
+;背景チラ見え防止
+[bg storage="../fgimage/bg/toumei.gif" time=0]
+
 ;◆お稽古パート画面表示処理へ飛んで戻ってくる
 ;↓どこから飛んだか、戻る際の道標
 [eval exp="f.hyoujimae_storage='okeiko.ks'"]
@@ -66,6 +71,7 @@
 [eval exp="f.event_jiki=''"]
 ;↓月始めフラグリセット(休憩中画像非表示に使用)
 [eval exp="f.tukihajime = 0"]
+[wait time=10]
 [お稽古ボタン表示]
 [s]
 

@@ -1,7 +1,22 @@
-﻿*start
+﻿;↓読み込み不良対策。終了処理ラベルを真っ先に読む
+*fumibako_owari
+;[freeimage layer = 23]
+[freeimage layer = 26]
+[freeimage layer = 27]
+[freeimage layer = 28]
+[cm]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
+
+@jump storage=okeiko.ks target=*draw_button_system
+[s]
+
+*start
 
 *fumibako
-[freeimage layer = 26]
+;↓文箱機能内表示を自然に切り替えるため文箱背景レイヤはfreeimageから除きます
+;[freeimage layer = 26]
 [freeimage layer = 27]
 @layopt layer=message1 page=fore visible = false
 
@@ -21,7 +36,7 @@
 ;◆手紙一覧
 *fumi_all_page1
 [cm]
-[freeimage layer = 26]
+;[freeimage layer = 26]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [layopt layer=28 visible=true]
@@ -1214,6 +1229,7 @@
 [s]
 
 *fumibako_oaite_hyouji
+[eval exp="f.viewing_storage = 'info_oaite_fumi.ks'"]
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
 [image layer=26 x=1 y=1 storage="bg/bg_fumibako.jpg"]
@@ -1258,23 +1274,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [return]
 [s]
 
-
-*fumibako_owari
-;[freeimage layer = 23]
-[freeimage layer = 26]
-[freeimage layer = 27]
-[freeimage layer = 28]
-[cm]
-;メッセージレイヤを表示
-@layopt layer=message0 page=fore visible = true
-[current layer="message0"]
-
-@jump storage=okeiko.ks target=*draw_button_system
-[s]
-[return]
-
 ;◆◆攻略対象情報画面(お稽古画面から「情報」ボタンを押すと表示される)
 *info_oaite
+[eval exp="f.viewing_storage = 'info_oaite_fumi.ks'"]
 @layopt layer=message1 page=fore visible = false
 [freeimage layer = 26]
 [freeimage layer = 27]
