@@ -1,5 +1,11 @@
 ﻿;↓読み込み不良対策。終了処理ラベルを真っ先に読む
 *fumibako_owari
+;背景変更:主人公邸_お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[wait time=10]
+
 ;[freeimage layer = 23]
 [freeimage layer = 26]
 [freeimage layer = 27]
@@ -10,6 +16,19 @@
 [current layer="message0"]
 
 @jump storage=okeiko.ks target=*draw_button_system
+[s]
+
+*info_owari
+;背景変更:主人公邸_お稽古部屋
+[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[wait time=10]
+[freeimage layer = 26]
+[freeimage layer = 27]
+[freeimage layer = 28]
+@jump storage=okeiko.ks target=*draw_button_system
+[return]
 [s]
 
 *start
@@ -2047,13 +2066,6 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [return]
 [s]
 
-*info_owari
-[freeimage layer = 26]
-[freeimage layer = 27]
-[freeimage layer = 28]
-@jump storage=okeiko.ks target=*draw_button_system
-[return]
-[s]
 
 ;◆「情報」表示終了(このks内info関連全てのページからここにjumpして終了)
 *info_hyouji_owari
