@@ -8,12 +8,12 @@
 ;layer13:空(予備
 ;==============================
 *start
-;◆◆立ち絵画像サイズ：(x)1202x(y)2000を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される…といいな
-[eval exp="f.katuraginomiya_moto_width=2100"]
-[eval exp="f.katuraginomiya_moto_height=2650"]
+;◆◆立ち絵画像サイズ：(x)2100→1036x(y)2650→1307を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される…といいな
+[eval exp="f.katuraginomiya_moto_width=1036"]
+[eval exp="f.katuraginomiya_moto_height=1307"]
 ;◆立ち絵【通常サイズ】のwidth、height、left、top設定（現状は黒田とサイズ合わせをしています。後日全キャラの立ち絵が揃ってから再調整予定です
-[eval exp="f.katuraginomiya_tuujou_width=f.katuraginomiya_moto_width*0.29"]
-[eval exp="f.katuraginomiya_tuujou_height=f.katuraginomiya_moto_height*0.29"]
+[eval exp="f.katuraginomiya_tuujou_width=f.katuraginomiya_moto_width*0.59"]
+[eval exp="f.katuraginomiya_tuujou_height=f.katuraginomiya_moto_height*0.59"]
 [eval exp="f.katuraginomiya_tuujou_left=175"]
 [eval exp="f.katuraginomiya_tuujou_top=-8"]
 ;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（現状は作成いただいたサイズマクロでの「アップ」時の倍率に合わせてあります。ご希望の倍率があれば調整してください。後日全キャラの立ち絵が揃ってから再調整予定のため、ご希望通りにいかない可能性もありますがご了承ください
