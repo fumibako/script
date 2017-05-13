@@ -10,12 +10,12 @@
 ;立ち絵の自然な退場時に◆B4nFWraU42さん作スクリプトを使用させていただきました。ありがとうございます
 
 *start
-;◆◆立ち絵画像サイズ：(x)1800x(y)1200を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所と通常サイズ倍率を新サイズに合わせて変更すれば他に反映される予定
-[eval exp="f.hujieda_moto_width=1800"]
-[eval exp="f.hujieda_moto_height=1200"]
-;◆立ち絵【通常サイズ】のwidth、height、left、top設定（他キャラに合わせて軽く調整済み。立ち絵調整・再出力後に再調整予定です
-[eval exp="f.hujieda_tuujou_width=f.hujieda_moto_width*0.54"]
-[eval exp="f.hujieda_tuujou_height=f.hujieda_moto_height*0.54"]
+;◆◆立ち絵画像サイズ：(x)1800→1652x(y)1200→1101を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所と通常サイズ倍率を新サイズに合わせて変更すれば他に反映される予定
+[eval exp="f.hujieda_moto_width=1652"]
+[eval exp="f.hujieda_moto_height=1101"]
+;◆立ち絵【通常サイズ】のwidth、height、left、top設定（他キャラに合わせて軽く調整済み。立ち絵調整・再出力後に再調整予定です972ｘ
+[eval exp="f.hujieda_tuujou_width=f.hujieda_moto_width*0.59"]
+[eval exp="f.hujieda_tuujou_height=f.hujieda_moto_height*0.59"]
 [eval exp="f.hujieda_tuujou_left=10"]
 [eval exp="f.hujieda_tuujou_top=-8"]
 ;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（軽く調整済み。立ち絵調整・再出力後に再調整予定です
