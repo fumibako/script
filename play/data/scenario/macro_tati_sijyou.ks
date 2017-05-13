@@ -14,12 +14,12 @@
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
-;◆◆立ち絵画像サイズ：(x)1202x(y)2000を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される…といいな
-[eval exp="f.sijyou_tatie_moto_width=1202"]
-[eval exp="f.sijyou_tatie_moto_height=2000"]
+;◆◆立ち絵画像サイズ：(x)1202→899x(y)2000を変数に入力。最大使用サイズ確定後(全キャラの立ち絵が揃ってから調整予定)はそのサイズで立ち絵画像再出力予定。その際は↓の2箇所を新サイズに合わせて変更すれば反映される…といいな
+[eval exp="f.sijyou_tatie_moto_width=899"]
+[eval exp="f.sijyou_tatie_moto_height=1496"]
 ;◆立ち絵【通常サイズ】のwidth、height、left、top設定（現状は黒田とサイズ合わせをしています。後日全キャラの立ち絵が揃ってから再調整予定です
-[eval exp="f.sijyou_tatie_tuujou_width=f.sijyou_tatie_moto_width*0.44"]
-[eval exp="f.sijyou_tatie_tuujou_height=f.sijyou_tatie_moto_height*0.44"]
+[eval exp="f.sijyou_tatie_tuujou_width=f.sijyou_tatie_moto_width*0.59"]
+[eval exp="f.sijyou_tatie_tuujou_height=f.sijyou_tatie_moto_height*0.59"]
 [eval exp="f.sijyou_tatie_tuujou_left=238"]
 [eval exp="f.sijyou_tatie_tuujou_top=7"]
 ;◆立ち絵【サイズ：隣に並ぶ】のwidth、height、left、top設定（現状は作成いただいたサイズマクロでの「アップ」時の倍率に合わせてあります。ご希望の倍率があれば調整してください。後日全キャラの立ち絵が揃ってから再調整予定のため、ご希望通りにいかない可能性もありますがご了承ください
