@@ -180,13 +180,14 @@ $(".layer_2").css("opacity",0);
 
 [replay_image_button2 end=&sf.ED_zaizen_normal storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_zaizen_good storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/replay_zaizen_goodED.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_bad1 storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_bad2 storage="zaizen/zaizen_11_bad2.ks" traget="replay_zaizen_11_bad2" graphic="../fgimage/bg/replay_zaizen_bad2ED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_bad2 storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_zaizen_bad1 storage="zaizen/zaizen_11_bad2.ks" traget="replay_zaizen_11_bad2" graphic="../fgimage/bg/replay_zaizen_bad2ED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
 [ptext name=list layer=2 page=fore text="財前ルート　:　normalEND" x=50 y=560 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="財前ルート　:　goodEND" x=270 y=560 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="財前ルート　:　badEND1" x=490 y=560 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="財前ルート　:　badEND2" x=710 y=560 size=17 color=navy visible=true]
-
+;zaizen_11_1_bad1.ks・・・財前ルート終了 end="bad2"
+;zaizen_11_1_bad2.ks・・・財前ルート終了 end="bad1"になっている
 @jump target ="*common"
 
 *page_1
