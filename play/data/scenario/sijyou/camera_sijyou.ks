@@ -100,7 +100,7 @@ animﾃｽﾄを終了します。[p]
 
 [iscript]
 //mp.message = encodeURI(mp.message);
-mp.message = mp.message;
+var.val = mp.message;
 [endscript]
 [locate x=%left|0 y=%top|0]
 [button name="button_tweet" target=*clicktweet graphic=%storage|button_info.png]
@@ -111,7 +111,8 @@ mp.message = mp.message;
 *clicktweet
 [cm]
 [iscript]
-window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
+//window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
+window.open('https://twitter.com/intent/tweet?text=' + val');
 [endscript]
 *closetweet
 [cm]
