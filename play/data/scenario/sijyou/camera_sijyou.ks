@@ -106,8 +106,8 @@ animﾃｽﾄを終了します。[p]
 *clicktweet
 [cm]
 [iscript]
-//mp.message = encodeURI(mp.message);
-var val = mp.message;
+var val = encodeURI(mp.message);
+//var val = mp.message;
 //window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
 window.open('https://twitter.com/intent/tweet?text='+val);
 [endscript]
