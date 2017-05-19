@@ -99,7 +99,8 @@ animﾃｽﾄを終了します。[p]
 [macro name="tweet"]
 
 [iscript]
-mp.message = encodeURI(mp.message);
+//mp.message = encodeURI(mp.message);
+mp.message = mp.message;
 [endscript]
 [locate x=%left|0 y=%top|0]
 [button name="button_tweet" target=*clicktweet graphic=%storage|button_info.png]
