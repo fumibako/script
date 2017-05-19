@@ -105,6 +105,7 @@ mp.message = encodeURI(mp.message);
 [button name="button_tweet" target=*clicktweet graphic=%storage|button_info.png]
 [locate x=%close_left|0 y=%close_top|0]
 [button name="button_tweet_close" target=*closetweet graphic=%storage_close|back.png]
+[emb exp=mp.message]
 [s]
 *clicktweet
 [cm]
@@ -115,7 +116,7 @@ window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
 [cm]
 [endmacro]
 
-[tweet storage="../data/fgimage/button/button_ok100x100.png" message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=200 close_left=200]
+[tweet torage_close="button_info.png"　storage="../data/fgimage/button/button_ok100x100.png" message="ティラノスクリプトはすごいね" top=100 left=100 close_top=200 close_left=200]
 ツイートテストをおわります[p]
 [cm]
 [四条退場]
