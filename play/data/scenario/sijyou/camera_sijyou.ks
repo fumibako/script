@@ -114,12 +114,9 @@ window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
 *closetweet
 [cm]
 [endmacro]
-[s]
-[cm]
-
-[tweet　graphic="button/button_ok100x100.png" message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=100 close_left=100]
+[tweet graphic="button/button_ok100x100.png" message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=100 close_left=100]
 ツイートテストをおわります[p]
-
+[cm]
 [四条退場]
 [暗転]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
