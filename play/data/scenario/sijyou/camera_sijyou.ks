@@ -109,7 +109,7 @@ animﾃｽﾄを終了します。[p]
 var val = encodeURI(mp.message);
 //var val = mp.message;
 //window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
-window.open('https://twitter.com/intent/tweet?hashtags=恋綴りtext='+val);
+window.open('https://twitter.com/intent/tweet?hashtags=恋綴り&text='+val);
 [endscript]
 *closetweet
 [cm]
