@@ -109,13 +109,13 @@ animﾃｽﾄを終了します。[p]
 var val = encodeURI(mp.message);
 //var val = mp.message;
 //window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
-window.open('https://twitter.com/intent/tweet?text='+val);
+window.open('https://twitter.com/intent/tweet?hashtags=恋綴りtext='+val);
 [endscript]
 *closetweet
 [cm]
 [endmacro]
 
-[tweet torage_close="button_info.png"　storage="../data/fgimage/button/button_ok100x100.png" message="#恋綴り　http://koitsuduri.webcrow.jp/" top=100 left=100 close_top=200 close_left=200]
+[tweet torage_close="button_info.png"　storage="../data/fgimage/button/button_ok100x100.png" message="http://koitsuduri.webcrow.jp/" top=100 left=100 close_top=200 close_left=200]
 ツイートテストをおわります[p]
 [cm]
 [四条退場]
