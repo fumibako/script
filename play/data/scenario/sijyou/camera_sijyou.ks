@@ -21,7 +21,7 @@
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
 
-
+@jump target=*teet_test
 イベントシーン構築テストをします。[p]
 ;[四条イベントシーン構築][p]
 
@@ -78,8 +78,8 @@ tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyo
 
 文字表示[p]
 animﾃｽﾄを終了します。[p]
+*teet_test
 ツイートテストをします。本当にツイートしないでください。
-
 ; Twitter関連プラグイン v1.00
 ; シケモクMKさま
 ;　☆[tweet]タグ
@@ -102,9 +102,9 @@ animﾃｽﾄを終了します。[p]
 mp.message = encodeURI(mp.message);
 [endscript]
 [locate x=%left|0 y=%top|0]
-[button name="button_tweet" target=*clicktweet graphic=%storage|tweet/tweet.png]
+[button name="button_tweet" target=*clicktweet graphic=%storage|button_info.png]
 [locate x=%close_left|0 y=%close_top|0]
-[button name="button_tweet_close" target=*closetweet graphic=%storage_close|tweet/close.png]
+[button name="button_tweet_close" target=*closetweet graphic=%storage_close|back.png]
 [s]
 *clicktweet
 [cm]
@@ -114,7 +114,8 @@ window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
 *closetweet
 [cm]
 [endmacro]
-[tweet graphic="button/button_ok100x100.png" message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=100 close_left=100]
+
+[tweet storage="../data/fgimage/button/button_ok100x100.png" message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=200 close_left=200]
 ツイートテストをおわります[p]
 [cm]
 [四条退場]
