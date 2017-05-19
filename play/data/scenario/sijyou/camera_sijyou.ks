@@ -78,6 +78,48 @@ tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyo
 
 文字表示[p]
 animﾃｽﾄを終了します。[p]
+ツイートテストをします。本当にツイートしないでください。
+
+; Twitter関連プラグイン v1.00
+; シケモクMKさま
+;　☆[tweet]タグ
+;　Twitterで好きな文章のつぶやきを促すことができます。
+;<パラメータ>
+;　message(必須): 呟いてもらう文章を指定します
+;　storage(必須)：つぶやきボタンの画像を指定します。ファイルはimageフォルダ以下に配置して下さい
+;　left :つぶやきボタンの横位置
+;　top :つぶやきボタンの縦位置
+;　close_left:閉じるボタンの横位置
+;　close_top:閉じるボタンと縦位置
+; ＜使い方＞
+;twitterプラグインの呼び出し
+;[call storage="twitter/twitter.ks"]
+;[tweet message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=100 close_left=100]
+;tweetボタン
+[macro name="tweet"]
+
+[iscript]
+mp.message = encodeURI(mp.message);
+[endscript]
+[locate x=%left|0 y=%top|0]
+[button name="button_tweet" target=*clicktweet graphic=%storage|tweet/tweet.png]
+[locate x=%close_left|0 y=%close_top|0]
+[button name="button_tweet_close" target=*closetweet graphic=%storage_close|tweet/close.png]
+[s]
+*clicktweet
+[cm]
+[iscript]
+window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
+[endscript]
+*closetweet
+[cm]
+[endmacro]
+[s]
+[cm]
+
+[tweet message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=100 close_left=100]
+ツイートテストをおわります[p]
+
 [四条退場]
 [暗転]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
