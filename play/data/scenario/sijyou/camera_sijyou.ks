@@ -117,7 +117,7 @@ window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
 [s]
 [cm]
 
-[tweet message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=100 close_left=100]
+[tweet　graphic="button/button_ok100x100.png" message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=100 close_left=100]
 ツイートテストをおわります[p]
 
 [四条退場]
