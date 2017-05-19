@@ -79,7 +79,7 @@ tf.sijyou_tachi_s= $('sijyou_kuti','sijyou_me','sijyou_mayu','sijyou_emo','sijyo
 文字表示[p]
 animﾃｽﾄを終了します。[p]
 *teet_test
-ツイートテストをします。本当にツイートしないでください。
+ツイートテストをします。本当にツイートしないでください。[r]
 ; Twitter関連プラグイン v1.00
 ; シケモクMKさま
 ;　☆[tweet]タグ
@@ -100,7 +100,6 @@ animﾃｽﾄを終了します。[p]
 
 [iscript]
 //mp.message = encodeURI(mp.message);
-var val = mp.message;
 [endscript]
 [locate x=%left|0 y=%top|0]
 [button name="button_tweet" target=*clicktweet graphic=%storage|button_info.png]
@@ -111,8 +110,9 @@ var val = mp.message;
 *clicktweet
 [cm]
 [iscript]
+var val = mp.message;
 //window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
-window.open('https://twitter.com/intent/tweet?text=' + val);
+window.open('https://twitter.com/intent/tweet?text='+val);
 [endscript]
 *closetweet
 [cm]
