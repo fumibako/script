@@ -97,10 +97,6 @@ animﾃｽﾄを終了します。[p]
 ;[tweet message="ティラノスクリプト　ツイッターブラグインのサンプル http://tyrano.jp/demo" top=100 left=100 close_top=100 close_left=100]
 ;tweetボタン
 [macro name="tweet"]
-
-[iscript]
-//mp.message = encodeURI(mp.message);
-[endscript]
 [locate x=%left|0 y=%top|0]
 [button name="button_tweet" target=*clicktweet graphic=%storage|button_info.png]
 [locate x=%close_left|0 y=%close_top|0]
@@ -110,6 +106,7 @@ animﾃｽﾄを終了します。[p]
 *clicktweet
 [cm]
 [iscript]
+//mp.message = encodeURI(mp.message);
 var val = mp.message;
 //window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
 window.open('https://twitter.com/intent/tweet?text='+val);
@@ -118,7 +115,7 @@ window.open('https://twitter.com/intent/tweet?text='+val);
 [cm]
 [endmacro]
 
-[tweet torage_close="button_info.png"　storage="../data/fgimage/button/button_ok100x100.png" message="ティラノスクリプトはすごいね" top=100 left=100 close_top=200 close_left=200]
+[tweet torage_close="button_info.png"　storage="../data/fgimage/button/button_ok100x100.png" message="#恋綴り　http://koitsuduri.webcrow.jp/" top=100 left=100 close_top=200 close_left=200]
 ツイートテストをおわります[p]
 [cm]
 [四条退場]
