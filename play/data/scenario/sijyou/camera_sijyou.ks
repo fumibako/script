@@ -112,7 +112,7 @@ var val = mp.message;
 [cm]
 [iscript]
 //window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
-window.open('https://twitter.com/intent/tweet?text=' + val');
+window.open('https://twitter.com/intent/tweet?text=' + val);
 [endscript]
 *closetweet
 [cm]
