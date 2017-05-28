@@ -19,7 +19,7 @@ nav {
  
 h1 {
   display : block;
-  font-size : 32px;
+  font-size : 25px;
 }
 
 h2 {
@@ -61,7 +61,7 @@ li {
   background      : linear-gradient(rgba(220,220,255,0.4) 85%, rgba(255,255,255,0.5) 100%);
   float   : left;
   cursor  : pointer;
-  padding : 10px 20px;
+  padding : 10px 10px;
   border-top    : 2px solid rgba(200,200,255,0.5);
   border-bottom : 2px solid rgba(150,150,150,0.4);
 }
