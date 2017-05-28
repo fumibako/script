@@ -469,7 +469,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;◆散策の助言イベント判定 四条ルート：9-3園遊会～9月末(銀座デート前まで)でsansaku3未見なら1度だけ発生
 [if exp="f.sijyou_au == 1 && f.event_sijyou[5] == 1 && (f.okeiko_month == 9 && f.okeiko_week == 4 || f.okeiko_month == 10 && f.okeiko_week == 1) && f.event_machi_sijyou[3] == 0 && f.event_common[14] == 0"]
 	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_target='*replay_common_4_3'"]
 	[eval exp="f.event_type='advice'"]
 	[eval exp="f.event_common[14]=1"]
 	[eval exp="f.event_advice=0"]
@@ -478,7 +478,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;◆散策の助言イベント判定 四条ルート：香水イベント　３月華道パラメータ一定値以上、四条好感度一定値以上でsansaku7未見なら1度だけ発生
 [if exp="f.okeiko_month == 3 && f.event_machi_sijyou[7] == 0 && f.para_shujinkou_j_kadou > 70 && f.para_sijyou_koukando > 80 && f.sijyou_au == 1 && f.event_common[15] == 0"]
 	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_target='*replay_common_4_3'"]
 	[eval exp="f.event_type='advice'"]
 	[eval exp="f.event_common[15]=1"]
 	[eval exp="f.event_advice=0"]
@@ -487,7 +487,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;◆散策の助言イベント判定 財前ルート：【バザー】財前ルートかつ2月1週から3月4週、礼法が70(暫定)以上でバザーイベント未見なら1度だけ発生
 [if exp="(f.okeiko_month == 2 || f.okeiko_month == 3) && f.event_machi_zaizen[1] == 0 && f.para_shujinkou_j_reihou >= 70 && f.zaizen_au == 1 && f.event_common[16] == 0"]
 	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_target='*replay_common_4_3'"]
 	[eval exp="f.event_type='advice'"]
 	[eval exp="f.event_common[16]=1"]
 	[eval exp="f.event_advice=0"]
@@ -496,7 +496,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;◆散策の助言イベント判定 葛城宮ルート：【散策1】葛城宮ルート2月2週から3月3週期間中で散策1未見なら1度だけ発生
 [if exp="((f.okeiko_month == 2 && f.okeiko_week != 1) || (f.okeiko_month == 3 && f.okeiko_week != 4)) && f.event_machi_katuraginomiya[1] == 0 && f.katuraginomiya_au == 1 && f.event_common[17] == 0"]
 	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_target='*replay_common_4_3'"]
 	[eval exp="f.event_type='advice'"]
 	[eval exp="f.event_common[17]=1"]
 	[eval exp="f.event_advice=0"]
@@ -505,7 +505,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;◆散策の助言イベント判定 葛城宮ルート：【散策2】葛城宮ルートで散策1を見ている状態で2月2週から3月4週期間中で散策2未見なら1度だけ発生
 [if exp="((f.okeiko_month == 2 && f.okeiko_week != 1) || f.okeiko_month == 3) && f.event_machi_katuraginomiya[1] == 1 && f.event_machi_katuraginomiya[2] == 0 && f.katuraginomiya_au == 1 && f.event_common[18] == 0"]
 	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_target='*replay_common_4_3'"]
 	[eval exp="f.event_type='advice'"]
 	[eval exp="f.event_common[18]=1"]
 	[eval exp="f.event_advice=0"]
@@ -514,7 +514,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;◆散策の助言イベント判定 藤枝ルート：【藤枝晶子さん(藤枝お姉さん)と話す】藤枝ルートかつ2月3週から3月4週期間中で散策イベント未見なら1度だけ発生
 [if exp="((f.okeiko_month==2 && (f.okeiko_week==3 || f.okeiko_week==4)) || f.okeiko_month==3) && f.event_machi_hujieda[1]==0 && f.hujieda_au==1 && f.event_common[19] == 0"]
 	[eval exp="f.event_storage='event.ks'"]
-	[eval exp="f.event_target='*replay_common_5_3'"]
+	[eval exp="f.event_target='*replay_common_4_3'"]
 	[eval exp="f.event_type='advice'"]
 	[eval exp="f.event_common[19]=1"]
 	[eval exp="f.event_advice=0"]
