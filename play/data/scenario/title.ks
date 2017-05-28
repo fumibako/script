@@ -338,10 +338,11 @@ TG.stat.play_se = false;
 [iscript]
 	tf.text_skip = "ON";
 	$(".text_skip").html("ON");
+	//$('.button_kskip_to_on').remove();
 [endscript]
 [config_record_label skip=true]
 [anim name="button_kskip_to_on" opacity=0 time=1]
-[locate x=535 y=480]
+[locate x=405 y=480]
 [button name="button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off" ]
 [return]
 [s]
@@ -357,7 +358,7 @@ TG.stat.play_se = false;
 [endscript]
 [config_record_label skip=false]
 [anim name="button_kskip_to_off" opacity=0 time=1]
-[locate x=535 y=480]
+[locate x=405 y=480]
 [button name="button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on" ]
 [s]
 ;----------文字　瞬速が選択された時
