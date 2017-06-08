@@ -139,11 +139,13 @@ body > dl#table dd.last {
 	min-height: 150px; /* ‚‚³‚ÌÅ¬’l(‰æ‘œ‚Ì‚‚³) */
 }
 
+table {
+	  font-size : 16px;
+}
 th {
         font-weight: normal;
         text-align: left;
 }
-
 table.main_char {
     border-collapse: separate;
     border-spacing: 1px;
