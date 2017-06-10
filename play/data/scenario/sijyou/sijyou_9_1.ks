@@ -126,8 +126,8 @@
 #
 話が終わり、お父様を見送るために立ち上がる。[p]
 ;↓【仮】テストプレイヤーさんに見ていただくには、一番長いバージョンが良いかな？と仮に入れてみます
-[eval exp="f.para_sijyou_koukando = 50"]
-[eval exp="f.para_kuroda_koukando = 20"]
+;[eval exp="f.para_sijyou_koukando = 50"]
+;[eval exp="f.para_kuroda_koukando = 20"]
 ;↑【仮】ここまで。実装時には除きます
 ;四条華織への好感度が高い場合
 [if exp="f.para_sijyou_koukando > 40"]
