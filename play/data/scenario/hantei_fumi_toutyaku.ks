@@ -66,117 +66,131 @@ f.okeiko_month_kansuuji="三月 ";
 [if exp="(f.okeiko_month == 11 && f.okeiko_week ==4) || f.okeiko_month == 12"]
 @jump target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
-[if exp="f.kuroda_fumi_henjimachi <= parseInt([sf.kuroda['fumi_henjimachi_ok_number']])"]
+[if exp="(f.kuroda_fumi_henjimachi <= parseInt([sf.kuroda['fumi_henjimachi_ok_number']]))"]
 	[eval exp="f.kuroda_fumi_toutyakumachi_week=f.kuroda_fumi_toutyakumachi_week+1"]
-	[eval exp="f.test='手紙到着可能性あり'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-	[if exp="f.kuroda_fumi_toutyakumachi_week >= parseInt([sf.kuroda['fumi_hindo_week']])"]
+[endif]
+[if exp="f.kuroda_fumi_toutyakumachi_week >= parseInt([sf.kuroda['fumi_hindo_week']])"]
+@jump target=*hantei_list_kuroda
+[endif]
+@jump target=*fumi_toutyaku_hantei_kuroda_owari
+
+*hantei_list_kuroda
 ;◆◆手紙到着：季節、好感度など条件有り分
+;話題へのお返事を季節の手紙より優先とします(判定チェック手前に移動)
+;◆『趣味について』（最初から選べる話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_shumi == 0 && f.fumi_toutyaku_kuroda[9] == 0"]
+	[eval exp="f.test='手紙到着「趣味について」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_9
+[endif]
+
+;◆『家族について』（最初から選べる話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_kazoku == 0 && f.fumi_toutyaku_kuroda[10] == 0"]
+	[eval exp="f.test='手紙到着「家族について」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_10
+[endif]
+
+;◆『友人について』（最初から選べる話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_yuujin == 0 && f.fumi_toutyaku_kuroda[11] == 0"]
+	[eval exp="f.test='手紙到着「友人について」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_11
+[endif]
+
 ;◆2【つばめの季節】5月1週～6月4週に好感度が一定以上で届く
-		[if exp="(f.okeiko_month==5 || f.okeiko_month==6) && f.para_kuroda_koukando > 5 && f.fumi_toutyaku_kuroda[2]==0"]
-			[eval exp="f.test='手紙到着「つばめの季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_2
+[if exp="(f.okeiko_month == 5 || f.okeiko_month == 6) && f.para_kuroda_koukando > 5 && f.fumi_toutyaku_kuroda[2] == 0"]
+	[eval exp="f.test='手紙到着「つばめの季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_2
+[endif]
 
 ;◆3【ヤマアジサイ】5月3週～6月4週に好感度が一定以上で届く
-		[elsif exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4))|| f.okeiko_month==6) && f.para_kuroda_koukando > 20 && f.fumi_toutyaku_kuroda[3]==0"]
-			[eval exp="f.test='手紙到着「ヤマアジサイ」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_3
+[if exp="((f.okeiko_month == 5 && (f.okeiko_week == 3 || f.okeiko_week == 4))|| f.okeiko_month == 6) && f.para_kuroda_koukando > 20 && f.fumi_toutyaku_kuroda[3]==0"]
+	[eval exp="f.test='手紙到着「ヤマアジサイ」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_3
+[endif]
 		
 ;◆4【蛍の季節】6月1週～7月2週に好感度が一定以上で届く
-		[elsif exp="(f.okeiko_month==6 || (f.okeiko_month==7 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.para_kuroda_koukando > 15 && f.fumi_toutyaku_kuroda[4]==0"]
-			[eval exp="f.test='手紙到着「蛍の季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_4
+[if exp="(f.okeiko_month == 6 || (f.okeiko_month == 7 && (f.okeiko_week == 1 || f.okeiko_week == 2))) && f.para_kuroda_koukando > 15 && f.fumi_toutyaku_kuroda[4]==0"]
+	[eval exp="f.test='手紙到着「蛍の季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_4
+[endif]
 			
 ;◆5【夏山に来ています】7月1週～7月4週に好感度が一定以上で届く
-		[elsif exp="f.okeiko_month==7 && f.para_kuroda_koukando > 25 && f.fumi_toutyaku_kuroda[5]==0"]
-			[eval exp="f.test='手紙到着「夏山に来ています」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_5
+[if exp="f.okeiko_month == 7 && f.para_kuroda_koukando > 25 && f.fumi_toutyaku_kuroda[5] == 0"]
+	[eval exp="f.test='手紙到着「夏山に来ています」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_5
+[endif]
 		
 ;◆6【夏休みの日々】8月1週～8月4週に好感度が一定以上で届く
-		[elsif exp="f.okeiko_month==8 && f.para_kuroda_koukando > 30 && f.fumi_toutyaku_kuroda[6]==0"]
-			[eval exp="f.test='手紙到着「夏休みの日々」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_6
+[if exp="f.okeiko_month == 8 && f.para_kuroda_koukando > 30 && f.fumi_toutyaku_kuroda[6] == 0"]
+	[eval exp="f.test='手紙到着「夏休みの日々」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_6
+[endif]
 
 ;◆7【いよいよですね】9月2週、黒田と会うことが決まった場合かつ好感度が一定以上で届く
-		[elsif exp="(f.okeiko_month==9 && f.okeiko_week==2)  && f.para_kuroda_koukando > 40 && f.fumi_toutyaku_kuroda[7]==0 && f.kuroda_au == 1"]
-			[eval exp="f.test='手紙到着「蛍の季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_7
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 2)  && f.para_kuroda_koukando > 40 && f.fumi_toutyaku_kuroda[7] == 0 && f.kuroda_au == 1"]
+	[eval exp="f.test='手紙到着「蛍の季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_7
+[endif]
 			
 ;◆8【竜胆】10月1～2週に好感度が一定以上で届く
-		[elsif exp="(f.okeiko_month==10 && (f.okeiko_week==1 || f.okeiko_week==2)) && f.para_kuroda_koukando > 50 && f.fumi_toutyaku_kuroda[8]==0 && f.kuroda_au == 1"]
-			[eval exp="f.test='手紙到着「竜胆」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_8
-			
-;◆9『趣味について』（最初から選べる話題）の手紙を送った場合、好感度に応じた期間後に返事がある
-		[elsif exp="f.kuroda_fumi_toutyakumachi_shumi==0 && f.fumi_toutyaku_kuroda[9]==0"]
-			[eval exp="f.test='手紙到着「趣味について」'"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_9
-
-;◆10『家族について』（最初から選べる話題）の手紙を送った場合、好感度に応じた期間後に返事がある
-		[elsif exp="f.kuroda_fumi_toutyakumachi_kazoku==0 && f.fumi_toutyaku_kuroda[10]==0"]
-			[eval exp="f.test='手紙到着「家族について」'"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_10
-
-;◆11『友人について』（最初から選べる話題）の手紙を送った場合、好感度に応じた期間後に返事がある
-		[elsif exp="f.kuroda_fumi_toutyakumachi_yuujin==0 && f.fumi_toutyaku_kuroda[11]==0"]
-			[eval exp="f.test='手紙到着「友人について」'"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_11
+[if exp="(f.okeiko_month == 10 && (f.okeiko_week == 1 || f.okeiko_week == 2)) && f.para_kuroda_koukando > 50 && f.fumi_toutyaku_kuroda[8] == 0 && f.kuroda_au == 1"]
+	[eval exp="f.test='手紙到着「竜胆」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_8
+[endif]
 			
 			
 ;◆12：4月3週～5月2週に『新茶について』の手紙を送った場合、翌週に返事がある
-		[elsif exp="((f.okeiko_month==4 && f.okeiko_week==4)|| f.okeiko_month==5 && (f.okeiko_week==1 || f.okeiko_week==2 || f.okeiko_week==3)) && f.kuroda_fumi_toutyakumachi_sintya==0 && f.fumi_toutyaku_kuroda[12]==0"]
-			[eval exp="f.test='手紙到着「新茶について」'"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_12
+[if exp="((f.okeiko_month == 4 && f.okeiko_week == 4)|| f.okeiko_month == 5 && (f.okeiko_week == 1 || f.okeiko_week == 2 || f.okeiko_week == 3)) && f.kuroda_fumi_toutyakumachi_sintya == 0 && f.fumi_toutyaku_kuroda[12] == 0"]
+	[eval exp="f.test='手紙到着「新茶について」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_12
+[endif]
 			
 ;◆13：5月3週～6月2週に『さつきについて』の手紙を送った場合、翌週に返事がある
-		[elsif exp="((f.okeiko_month==5 && f.okeiko_week==4)|| f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2 || f.okeiko_week==3)) &&f.kuroda_fumi_toutyakumachi_satuki==0 && f.fumi_toutyaku_kuroda[13]==0"]
-			[eval exp="f.test='手紙到着「さつきについて」'"]
-			[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-			[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-			[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-			@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_13
-			
-		[endif]
+[if exp="((f.okeiko_month == 5 && f.okeiko_week == 4)|| f.okeiko_month == 6 && (f.okeiko_week == 1 || f.okeiko_week == 2 || f.okeiko_week == 3)) &&f.kuroda_fumi_toutyakumachi_satuki == 0 && f.fumi_toutyaku_kuroda[13] == 0"]
+	[eval exp="f.test='手紙到着「さつきについて」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_13
+[endif]
 
 ;手紙到着：条件有りが該当しなければ、条件無し分が到着：黒田ルートには無し
 ;		[eval exp="f.target_fumi_toutyaku='*fumi_toutyaku_kuroda_'+f.kuroda_nextfumi_common"]
 ;		[eval exp="f.test='手紙到着'+f.target_fumi_toutyaku"]
 ;		[eval exp="f.kuroda_nextfumi_common=f.kuroda_nextfumi_common+1"]
 ;		@jump storage="fumi_toutyaku_shori_list.ks" target=&f.target_fumi_toutyaku
-	[endif]
-[endif]
 ;個別ルート時は各キャラ到着判定終了
 [if exp="f.kuroda_au == 1"]
 @jump target=*fumi_toutyaku_hantei_kobetu_owari
