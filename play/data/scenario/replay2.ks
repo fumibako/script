@@ -169,8 +169,8 @@ $(".layer_2").css("opacity",0);
 [button name=rp_bt storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130]
 ;exp="tf.selected_cg_image = preexp"
 [else]
-[image name=rp_bt layer=29 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
-;[button name=rp_bt x=50 y=60 width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image"]
+;[image name=rp_bt layer=29 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
+[button name=rp_bt x=50 y=60 width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image"]
 [endif]
 
 [if exp="sf.ED_kuroda_good == 1"]
