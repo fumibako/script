@@ -36,6 +36,13 @@
 ;===================================================================================================================================================
 ;葛城宮　夢イベント　場合淑女度15（20以上は手紙を出していたら有りえない数値）１イベントみたとき(イベント1発生条件が淑女度15以上のため、あわせて14→15以上と調整しました(◆jsYiJcqRkk
 [if exp="(f.okeiko_month == 7 && f.okeiko_week == 2) && f.para_shujinkou_shukujodo >= 15 && f.event_katuraginomiya[1] == 1 && f.event_sijyou[0] == 0"]
+	;配列に好感度を入れます。
+	[eval exp ="tf.hikaku_koukando=[f.para_sijyou_koukando , f.para_kuroda_koukando, f.para_zaizen_koukando, f.para_katuraginomiya_koukando]"]
+	[iscript]
+	tf.a=Math.max.apply(null, tf.hikaku_koukando);
+	//alert(tf.a); ここまでok
+	[endscript]
+	[if exp="tf.a == f.para_katuraginomiya_koukando"]
 	[eval exp="f.event_storage='katuraginomiya/katuraginomiya_6_1.ks'"]
 	[eval exp="f.event_target='*replay_katuraginomiya_6_1'"]
 	[eval exp="f.event_type='talk'"]
@@ -44,6 +51,7 @@
 	;テスト用　他攻略ｷｬﾗと比較できるようにイベントを見たら上がるようにしてありますが上で調整してください
 	[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + tf.koukando_eventup_katuraginomiya"]
 	@jump storage="event.ks" target=*start
+	[endif]
 [endif]
 ;===================================================================================================================================================
 ;2◆葛城宮イベント判定katuraginomiya_event_2.ks 別ファイルへ7/4町にて、葛城宮に会う。お手紙を拝見するたびに色々なことを考えておられて素晴らしい方だと思っていたという。その後葛城宮のモノローグ		
