@@ -83,7 +83,7 @@
 ;【背景】藤枝bad洋館
 [preload storage="data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg" wait=true]
 ;【背景】藤枝badラジオ
-[preload storage="data/fgimage/storage="bg/B4nFWraU42/hujieda_rajio.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/hujieda_rajio.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
