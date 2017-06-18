@@ -79,7 +79,9 @@
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
 ;【背景】主人公邸 庭の見える部屋：昼
-;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+;【背景】藤枝bad洋館
+[preload storage="data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
