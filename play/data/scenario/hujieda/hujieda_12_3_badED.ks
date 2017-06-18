@@ -108,6 +108,7 @@ $('.list').remove();
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1200]
 ;=========================================================================
+[wait time=10]
 【藤枝 肇】[r]
 「彼女と会ったことは、数えるほどでしたが、[r]
 [r]
@@ -116,7 +117,8 @@ $('.list').remove();
 ;=======================
 ;[freeimage layer=29]
 ;=======================
-#
+[wait time=10]
+
 ――懐かしくも愛おしい気持ちが、[r]
 [r]
 [r]
@@ -131,6 +133,7 @@ $('.list').remove();
 ;【背景】洋館内装　夕空がないけどこのままでいいのかもしれません
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
+[wait time=10]
 [暗転]
 ;=========================================================================
 #
