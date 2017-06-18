@@ -166,13 +166,13 @@ $(".layer_2").css("opacity",0);
 [if exp="sf.ED_kuroda_normal == 1"]
 [button name=rp_bt storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130 folder="bgimage" ]
 ;exp="tf.selected_cg_image = preexp"
-[elsif exp="sf.ED_kuroda_normal == 0]
+[else]
 [button name=rp_bt x=50 y=60 width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" folder="bgimage"]
 [endif]
 
 [if exp="sf.ED_kuroda_good == 1"]
 [button name=rp_bt storage="kuroda_3_4_goodED.ks" target="replay_kuroda_3_4_goodED" graphic="../fgimage/bg/replay_kuroda_goodED.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
-[elsif exp="sf.ED_kuroda_good == 0]
+[else]
 [button name=rp_bt x=50 y=60 width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" folder="bgimage"]
 [endif]
 
