@@ -163,11 +163,13 @@ $(".layer_free").css("opacity",0);
 $(".layer_2").css("opacity",0);
 [endscript]
 ;=====================================================================================
+;黒田
+;=====================================================================================
 [if exp="sf.ED_kuroda_normal == 1"]
 [button name=rp_bt storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130]
 ;exp="tf.selected_cg_image = preexp"
 [else]
-[image name=rp_bt layer=1 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
+[image name=rp_bt layer=29 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
 ;[button name=rp_bt x=50 y=60 width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image"]
 [endif]
 
@@ -185,6 +187,8 @@ $(".layer_2").css("opacity",0);
 [ptext name=list layer=2 page=fore text="黒田ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
+;=====================================================================================
+;四条
 ;=====================================================================================
 ;sf.ED_sijyou_normal
 ;sf.ED_sijyou_normal
@@ -209,7 +213,8 @@ $(".layer_2").css("opacity",0);
 [ptext name=list layer=2 page=fore text="四条ルート　:　goodEND" x=270 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="四条ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
 ;=====================================================================================
-
+;財前
+;=====================================================================================
 [replay_image_button2 end=&sf.ED_zaizen_normal storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_zaizen_good storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/replay_zaizen_goodED.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_zaizen_bad2 storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
@@ -222,6 +227,7 @@ $(".layer_2").css("opacity",0);
 ;zaizen_11_1_bad2.ks・・・財前ルート終了 end="bad1"になっている
 @jump target ="*common"
 
+;=====================================================================================
 *page_1
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;並んでいるところをみせない
@@ -232,8 +238,9 @@ $(".list").css("opacity",0);
 [replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="replay_katuraginomiya_3_4_nomalED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_katuraginomiya_good storage="katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks" target="replay_katuraginomiya_3_4_goodED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_goodED.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
 [replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_11_1badED.ks" target="replay_katuraginomiya_11_1badED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
-
-
+;=====================================================================================
+;葛城宮
+;=====================================================================================
 [if exp="sf.replay_katuraginomiya==1"]
 [ptext name=list layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="葛城宮ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
@@ -243,10 +250,37 @@ $(".list").css("opacity",0);
 [ptext name=list layer=2 page=fore text="？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
 [endif]
-[replay_image_button2 end=&sf.ED_hujieda_normal storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_hujieda_good storage="hujieda/hujieda_3_4_goodED.ks" target="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/replay_hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_hujieda_bad storage="hujieda/hujieda_12_3_badED.ks" target="replay_hujieda_badED_scene" graphic="../fgimage/bg/B4nFWraU42/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_hujieda_bad2 storage="hujieda/hujieda_11_3.ks" target="*replay_hujieda_badED_scene2" graphic="../fgimage/bg/replay_hujieda_badED2.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
+
+;=====================================================================================
+;藤枝
+;=====================================================================================
+;[replay_image_button2 end=&sf.ED_hujieda_normal storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
+[if exp="sf.ED_hujieda_normal == 1"]
+[button name=rp_bt storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=240 width=200 height=130 ]
+[else]
+[button name=rp_bt width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" width=200 height=130 x=50 y=240]
+[endif]
+
+;[replay_image_button2 end=&sf.ED_hujieda_good storage="hujieda/hujieda_3_4_goodED.ks" target="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/replay_hujieda_goodED.jpg" x=270 y=240 width=200 height=130 folder="bgimage"]
+[if exp="sf.ED_hujieda_good == 1"]
+[button name=rp_bt storage="hujieda/hujieda_3_4_goodED.ks" target="replay_hujieda_hujieda_3_4_goodED_scene" graphic="../fgimage/bg/replay_hujieda_goodED.jpg" x=270 y=240 width=200 height=130]
+[else]
+[button name=rp_bt width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" width=200 height=130 x=270 y=240]
+[endif]
+
+;[replay_image_button2 end=&sf.ED_hujieda_bad storage="hujieda/hujieda_12_3_badED.ks" target="replay_hujieda_badED_scene" graphic="../fgimage/bg/B4nFWraU42/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130 folder="bgimage"]
+[if exp="sf.ED_hujieda_bad == 1"]
+[button name=rp_bt storage="hujieda/hujieda_12_3_badED.ks" target="replay_hujieda_badED_scene" graphic="../fgimage/bg/B4nFWraU42/replay_hujieda_badED.jpg" x=490 y=240 width=200 height=130]
+[else]
+[button name=rp_bt graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" width=200 height=130 x=490 y=240]
+[endif]
+
+;[replay_image_button2 end=&sf.ED_hujieda_bad2 storage="hujieda/hujieda_11_3.ks" target="*replay_hujieda_badED_scene2" graphic="../fgimage/bg/replay_hujieda_badED2.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
+[if exp="sf.ED_hujieda_bad2 == 1"]
+[button name=rp_bt end=&sf.ED_hujieda_bad2 storage="hujieda/hujieda_11_3.ks" target="*replay_hujieda_badED_scene2" graphic="../fgimage/bg/replay_hujieda_badED2.jpg" x=50 y=420 width=200 height=130]
+[else]
+[button name=rp_bt graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" width=200 height=130 x=50 y=420]
+[endif]
 
 [if exp="sf.replay_hujieda == 1"]
 [ptext name=list layer=2 page=fore text="藤枝ルート　:　normalEND" x=50 y=380 size=17 color=navy visible=true]
@@ -259,7 +293,7 @@ $(".list").css("opacity",0);
 [ptext name=list layer=2 page=fore text="？ルート　:　badEND" x=490 y=380 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="？ルート　:　badEND2" x=50 y=560 size=17 color=navy visible=true]
 [endif]
-
+;=====================================================================================
 @jump target ="*common"
 
 
