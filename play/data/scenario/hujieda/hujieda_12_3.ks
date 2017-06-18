@@ -175,11 +175,13 @@
 「一人で抱え込むことが出来ない時は、抱え込まないでいいのよ」[p]
 
 [主人公涙流_目閉用]
+[wait time=10]
 #
 
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [暗転]
+[wait time=10]
 ;時間経過
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 時子さんの言葉に安堵した私は、今までの悲しみを吐き出すかのように[r]
@@ -189,12 +191,15 @@
 *seen_sele
 ;【背景】主人公邸 庭の見える部屋：昼
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[wait time=10]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 そして、やっと少し気持ちが落ち着き、[r]
 
 涙も枯れ果てた頃、[p]
 [主人公効果消]
+[wait time=10]
 
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -204,6 +209,7 @@
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 セピア色
 [chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;[link]タグでの選択肢例
@@ -211,6 +217,7 @@
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
+[wait time=10]
 [current layer="message1"]
 [font size=32]
 [link target=*yes]藤枝様のことを話す。[endlink][r]
