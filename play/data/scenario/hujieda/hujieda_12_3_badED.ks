@@ -48,7 +48,6 @@ $('.list').remove();
 [fadeoutbgm time=3000]
 その後、藤枝様は独逸に留学し、[r]
 さらには渡米し、作曲家、ピアニストとして名を馳せられた。[p]
-;られた?
 
 この国へ戻ってこられたのは、十年後だった。[p]
 
@@ -83,14 +82,18 @@ $('.list').remove();
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 ;=========================================================================
-#
+[wait time=10]
+;#
 たまたま付けたラヂオから、ピアノと琴の合奏曲が[r]
 聴こえた。[p]
+[wait time=10]
 とても綺麗で切ない曲で、[r]
 "ピアノとお[ruby text=こと]箏の合奏曲なんて珍しい"と思いながら[r]
 聞いていると、彼の声が聞こえた。[p]
+[wait time=10]
 ;=======================
 [freeimage layer=29]
+[wait time=10]
 ;=======================
 ;[whosay name="藤枝 肇" color=%mp.color] 
 【藤枝 肇】[r]
