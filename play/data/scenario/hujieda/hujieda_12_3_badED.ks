@@ -133,7 +133,7 @@ $('.list').remove();
 ;既に下にある
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 [wait time=10]
-[image name="radio" layer=29 x=1 y=1 storage="anten.jpg" time=1000]
+[image name="radio" layer=29 x=1 y=1 storage="bg/anten.jpganten.jpg" time=1000]
 ;[暗転]
 ;=========================================================================
 #
@@ -158,6 +158,9 @@ $("kan").css('margin','auto');
 [fadeoutbgm time=3000]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
+[iscript]
+$(".bg").attr({ src: "./data/bgimage/toumei.gif"});
+[endscript]
 [freeimage layer=29]
 [fadeoutbgm time=3000]
 [wait time=2000]
