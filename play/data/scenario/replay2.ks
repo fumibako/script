@@ -170,19 +170,18 @@ $(".layer_2").css("opacity",0);
 ;exp="tf.selected_cg_image = preexp"
 [else]
 [image name=list layer=2 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
-;[button name=rp_bt x=50 y=60 width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image"]
 [endif]
 
 [if exp="sf.ED_kuroda_good == 1"]
 [button name=rp_bt storage="kuroda_3_4_goodED.ks" target="replay_kuroda_3_4_goodED" graphic="../fgimage/bg/replay_kuroda_goodED.jpg" x=270 y=60 width=200 height=130]
 [else]
-[button name=rp_bt graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" x=270 y=60 width=200 height=130]
+[image name=list layer=2 graphic="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130]
 [endif]
 
 [if exp="sf.ED_kuroda_bad == 1"]
 [button name=rp_bt storage="kuroda_12_3_badED.ks" target="replay_kuroda_12_3_badED" graphic="../fgimage/bg/replay_kuroda_badED.jpg" x=490 y=60 width=200 height=130]
 [else]
-[button name=rp_bt graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" x=490 y=60 width=200 height=130]
+[image name=list layer=2 graphic="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130]
 [endif]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="黒田ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
@@ -216,14 +215,14 @@ $(".layer_2").css("opacity",0);
 ;財前
 ;=====================================================================================
 ;[replay_image_button2 end=&sf.ED_zaizen_normal storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
-[if exp="sf.ED_zaizen == 1"]
+[if exp="sf.ED_zaizen_normal == 1"]
 [button name=rp_bt storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=420 width=200 height=130]
 [else]
 [button name=rp_bt storage="replay2.ks" target="*no_image" graphic="../fgimage/bg/cg_bg.jpg" x=50 y=420 width=200 height=130]
 [endif]
 
 ;[replay_image_button2 end=&sf.ED_zaizen_good storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/replay_zaizen_goodED.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
-[if exp="sf.ED_zaizen_good  == 1"]
+[if exp="sf.ED_zaizen_good == 1"]
 [button name=rp_bt storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/replay_zaizen_goodED.jpg"  x=270 y=420 width=200 height=130]
 [else]
 [button name=rp_bt storage="replay2.ks" target="*no_image" graphic="../fgimage/bg/cg_bg.jpg" x=270 y=420 width=200 height=130]
