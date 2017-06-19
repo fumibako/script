@@ -97,28 +97,24 @@ $('.list').remove();
 [freeimage layer=29]
 [wait time=10]
 ;=======================
-;[whosay name="藤枝 肇" color=%mp.color] 
 【藤枝 肇】[r]
 「これは、日本に戻って初めに作曲した、初恋の人を[r]
 [sp]想って作った曲です。[r]
 [sp]どうか今、彼女が幸せでありますようにと……」[p]
 
 ;=========================================================================
-
-;[font color="#250d00" size=27]
 ;【背景】　ラジオ　
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1200]
+[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1200 visible=true]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1000]
+;[wait time=10]
 ;=========================================================================
 [wait time=10]
 【藤枝 肇】[r]
 「彼女と会ったことは、数えるほどでしたが、[r]
 [r]
 [sp]夢のような恋でした」[p]
-
-;=======================
-;[freeimage layer=29]
-;=======================
 [wait time=10]
 
 ――懐かしくも愛おしい気持ちが、[r]
