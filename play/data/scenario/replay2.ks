@@ -66,14 +66,14 @@ f.preload_scenario_zaizen = ["data/scenario/zaizen/zaizen_3_4_normal.ks","data/s
 ;[preload storage=&f.preload_scenario_hujieda wait=true]
 
 ;ただの画像分岐ボタンです。
-[macro name=replay_image_button2]
-[if exp="mp.end == 1"]
-[button name=rp_bt graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic=&mp.graphic storage=&mp.storage target="&mp.target" folder="mp.folder|fgimage" ]
+;[macro name=replay_image_button2]
+;[if exp="mp.end == 1"]
+;[button name=rp_bt graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic=&mp.graphic storage=&mp.storage target="&mp.target" folder="mp.folder|fgimage" ]
 ;exp="tf.selected_cg_image = preexp"
-[else]
-[button graphic=&mp.no_graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" folder="bgimage"]
-[endif]
-[endmacro]
+;[else]
+;[button graphic=&mp.no_graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image" folder="bgimage"]
+;[endif]
+;[endmacro]
 
 [macro name="リプレイ画面消去"]
 [iscript]
