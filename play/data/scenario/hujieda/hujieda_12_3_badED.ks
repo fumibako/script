@@ -133,7 +133,7 @@ $('.list').remove();
 ;既に下にある
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 [wait time=10]
-[image name="radio" layer=29 x=1 y=1 storage="bg/anten.jpganten.jpg" time=1000]
+[image name="radio" layer=29 x=1 y=1 storage="bg/anten.jpg" time=1000]
 ;[暗転]
 ;=========================================================================
 #
