@@ -128,12 +128,13 @@ $('.list').remove();
 
 ;=========================================================================
 [font color=white size=27]
-;【背景】洋館内装　夕空がないけどこのままでいいのかもしれません
+;【背景】洋館内装
 [freeimage layer=29]
 ;既に下にある
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 [wait time=10]
-[暗転]
+[image name="radio" layer=29 x=1 y=1 storage="anten.jpg" time=1000]
+;[暗転]
 ;=========================================================================
 #
 藤枝さまの中では、ずっと綺麗なままの私でいたい[r]から。[p]
