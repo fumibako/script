@@ -25,8 +25,8 @@
 	tf.a=Math.max.apply(null, tf.hikaku_koukando);
 	//alert(tf.a); ここまでok
 	[endscript]
-	[if exp="tf.a == f.para_hujieda_koukando && f.hujieda_au==0 && f.para_shujinkou_j_koto > 7 && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
-	;藤枝の好感度と一番高い数値が同じであるとき箏が7以上（好感度があがらないキャラほど上の判定・10以上は手紙を出していたら有りえない数値）
+	[if exp="tf.a == f.para_hujieda_koukando && f.hujieda_au == 0 && f.para_shujinkou_j_koto > 5 && f.event_hujieda[2] == 1 && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
+	;藤枝の好感度と一番高い数値が同じであるとき箏が7以上（好感度があがらないキャラほど上の判定）
 	;藤枝が登場している場合、葛城宮は登場しないので淑女度判定なし
 	[eval exp="f.event_storage='hujieda/hujieda_6_1.ks'"]
 	[eval exp="f.event_target='*replay_hujieda_6_1'"]
