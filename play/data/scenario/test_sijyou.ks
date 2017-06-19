@@ -470,9 +470,9 @@ sf.ED_hujieda_bad2=0;
 
 *yes1
 [iscript]
-sf.ED_kuroda_bad=1;
-sf.ED_kuroda_normal=1;
-sf.ED_kuroda_good=1;
+sf.ED_kuroda_bad=0;
+sf.ED_kuroda_normal=0;
+sf.ED_kuroda_good=0;
 
 sf.ED_sijyou_bad=1;
 sf.ED_sijyou_normal=1;
