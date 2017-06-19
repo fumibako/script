@@ -80,7 +80,7 @@ $('.list').remove();
 
 ;=========================================================================
 ;【背景】洋館内装　スマホでみたときの改行修正済　pcからだと間があるかもしれません（scpt担2
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true
+[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
 [iscript]
 $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 [endscript]
@@ -89,7 +89,7 @@ $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 [wait time=10]
 ;#
 ;お[ruby text=こと]箏
-たまたま付けたラヂオから、ピアノと[ruby text=こと]箏の合奏曲が[r]
+たまたま付けたラヂオから、ピアノとお[ruby text=こと]箏の合奏曲が[r]
 聴こえた。[p]
 [wait time=10]
 とても綺麗で切ない曲で、[r]
@@ -135,9 +135,8 @@ $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 [freeimage layer=29]
 ;既に下にある
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
+[image name="radio" layer=29 x=1 y=0 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 [wait time=10]
-[image name="radio" layer=29 x=1 y=0 storage="bg/anten.jpg" time=1000]
-;[暗転]
 ;=========================================================================
 #
 藤枝さまの中では、ずっと綺麗なままの私でいたい[r]から。[p]
