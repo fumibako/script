@@ -105,7 +105,7 @@ $('.list').remove();
 ;=========================================================================
 ;【背景】　ラジオ　
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1200 visible=true]
+[image name="radio" layer=29 x=1 y=1 storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1200 visible=true]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1000]
 ;[wait time=10]
@@ -130,6 +130,9 @@ $('.list').remove();
 [font color=white size=27]
 ;【背景】洋館内装　夕空がないけどこのままでいいのかもしれません
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
+[iscript]
+$('radio').remove();
+[endscript]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 [wait time=10]
 [暗転]
