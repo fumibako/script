@@ -129,10 +129,8 @@ $('.list').remove();
 ;=========================================================================
 [font color=white size=27]
 ;【背景】洋館内装　夕空がないけどこのままでいいのかもしれません
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
-[iscript]
-$('radio').remove();
-[endscript]
+[freeimage layer=29]
+;既に下にある
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000]
 [wait time=10]
 [暗転]
