@@ -543,11 +543,10 @@ sf.ED_zaizen_good=1;
 [endscript]
 @jump target=yes1
 
-
-*kt_1 
+*kt_1
 [iscript]
 sf.replay_katuraginomiya=1;
-sf.ED_katuraginomiya_good=1;
+sf.ED_katuraginomiya_bad=1;
 [endscript]
 @jump target=yes1
 *kt_2 
@@ -559,7 +558,7 @@ sf.ED_katuraginomiya_normal=1;
 *kt_3
 [iscript]
 sf.replay_katuraginomiya=1;
-sf.ED_katuraginomiya_bad=1;
+sf.ED_katuraginomiya_good=1;
 [endscript]
 @jump target=yes1
 
