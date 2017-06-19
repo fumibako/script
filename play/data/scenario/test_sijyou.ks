@@ -483,11 +483,11 @@ sf.ED_hujieda_bad2=0;
 
 [glink target=*kt_1 text="葛城宮バッド" size=20 width="250" x=500 y=100 color=blue]
 [glink target=*kt_2 text="葛城宮ノーマル" size=20 width="250" x=500 y=150 color=blue]
-[glink target=*kt_3 text="葛城宮バッド" size=20 width="250" x=500 y=200 color=blue]
+[glink target=*kt_3 text="葛城宮グッド" size=20 width="250" x=500 y=200 color=blue]
 [glink target=*hji_1 text="藤枝バッドA" size=20 width="250" x=500 y=250 color=blue]
 [glink target=*hji_2 text="藤枝バッドB" size=20 width="250" x=500 y=300 color=blue]
 [glink target=*hji_3 text="藤枝ノーマル" size=20 width="250" x=500 y=350 color=blue]
-[glink target=*hji_4 text="藤枝バッド" size=20 width="250" x=500 y=400 color=blue]
+[glink target=*hji_4 text="藤枝グッド" size=20 width="250" x=500 y=400 color=blue]
 [s]
 
 *kuroda_1
