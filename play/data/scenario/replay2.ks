@@ -169,8 +169,8 @@ $(".layer_2").css("opacity",0);
 [button name=rp_bt storage="kuroda_3_4_normalED.ks" target="replay_kuroda_3_4_normalED" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130]
 ;exp="tf.selected_cg_image = preexp"
 [else]
-;[image name=rp_bt layer=29 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
-[button name=rp_bt x=50 y=60 width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image"]
+[image name=list layer=2 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
+;[button name=rp_bt x=50 y=60 width=200 height=130 graphic="../fgimage/bg/cg_bg.jpg" storage="replay2.ks" target="*no_image"]
 [endif]
 
 [if exp="sf.ED_kuroda_good == 1"]
@@ -215,10 +215,34 @@ $(".layer_2").css("opacity",0);
 ;=====================================================================================
 ;財前
 ;=====================================================================================
-[replay_image_button2 end=&sf.ED_zaizen_normal storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_good storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/replay_zaizen_goodED.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_bad2 storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_zaizen_bad1 storage="zaizen/zaizen_11_bad2.ks" traget="replay_zaizen_11_bad2" graphic="../fgimage/bg/replay_zaizen_bad2ED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
+;[replay_image_button2 end=&sf.ED_zaizen_normal storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=420 width=200 height=130 folder="bgimage"]
+[if exp="sf.ED_zaizen == 1"]
+[button name=rp_bt storage="zaizen/zaizen_3_4_normal.ks" target="replay_zaizen_3_4_normal" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=420 width=200 height=130]
+[else]
+[button name=rp_bt storage="replay2.ks" target="*no_image" graphic="../fgimage/bg/cg_bg.jpg" x=50 y=420 width=200 height=130]
+[endif]
+
+;[replay_image_button2 end=&sf.ED_zaizen_good storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/replay_zaizen_goodED.jpg"  x=270 y=420 width=200 height=130 folder="bgimage"]
+[if exp="sf.ED_zaizen_good  == 1"]
+[button name=rp_bt storage="zaizen/zaizen_3_4_good.ks" target="replay_zaizen_3_4_good" graphic="../fgimage/bg/replay_zaizen_goodED.jpg"  x=270 y=420 width=200 height=130]
+[else]
+[button name=rp_bt storage="replay2.ks" target="*no_image" graphic="../fgimage/bg/cg_bg.jpg" x=270 y=420 width=200 height=130]
+[endif]
+
+;[replay_image_button2 end=&sf.ED_zaizen_bad2 storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg" x=490 y=420 width=200 height=130 folder="bgimage"]
+[if exp="sf.ED_zaizen_bad2 == 1"]
+[button name=rp_bt storage="zaizen/zaizen_11_1_bad1.ks" traget="replay_zaizen_11_1_bad1" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_bad1ED.jpg" x=490 y=420 width=200 height=130]
+[else]
+[button name=rp_bt storage="replay2.ks" target="*no_image" graphic="../fgimage/bg/cg_bg.jpg" x=490 y=420 width=200 height=130]
+[endif]
+
+;[replay_image_button2 end=&sf.ED_zaizen_bad1 storage="zaizen/zaizen_11_bad2.ks" traget="replay_zaizen_11_bad2" graphic="../fgimage/bg/replay_zaizen_bad2ED.jpg" x=710 y=420 width=200 height=130 folder="bgimage"]
+[if exp="sf.ED_zaizen_bad1 == 1"]
+[button name=rp_bt storage="zaizen/zaizen_11_bad2.ks" traget="replay_zaizen_11_bad2" graphic="../fgimage/bg/replay_zaizen_bad2ED.jpg" x=710 y=420 width=200 height=130]
+[else]
+[button name=rp_bt storage="replay2.ks" target="*no_image" graphic="../fgimage/bg/cg_bg.jpg" x=710 y=420 width=200 height=130]
+[endif]
+
 [ptext name=list layer=2 page=fore text="財前ルート　:　normalEND" x=50 y=560 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="財前ルート　:　goodEND" x=270 y=560 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="財前ルート　:　badEND1" x=490 y=560 size=17 color=navy visible=true]
@@ -226,7 +250,6 @@ $(".layer_2").css("opacity",0);
 ;zaizen_11_1_bad1.ks・・・財前ルート終了 end="bad2"
 ;zaizen_11_1_bad2.ks・・・財前ルート終了 end="bad1"になっている
 @jump target ="*common"
-
 ;=====================================================================================
 *page_1
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
@@ -235,16 +258,17 @@ $(".layer_2").css("opacity",0);
 $(".layer_free").css("opacity",0);
 $(".list").css("opacity",0);
 [endscript]
-[replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="replay_katuraginomiya_3_4_nomalED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_katuraginomiya_good storage="katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks" target="replay_katuraginomiya_3_4_goodED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_goodED.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
-[replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_11_1badED.ks" target="replay_katuraginomiya_11_1badED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
 ;=====================================================================================
 ;葛城宮
 ;=====================================================================================
+[replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks" target="replay_katuraginomiya_3_4_nomalED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg"  x=50 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_katuraginomiya_good storage="katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks" target="replay_katuraginomiya_3_4_goodED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_goodED.jpg" x=270 y=60 width=200 height=130 folder="bgimage"]
+[replay_image_button2 end=&sf.ED_katuraginomiya_normal storage="katuraginomiya/katuraginomiya_11_1badED.ks" target="replay_katuraginomiya_11_1badED" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_badED.jpg" x=490 y=60 width=200 height=130 folder="bgimage"]
+
 [if exp="sf.replay_katuraginomiya==1"]
-[ptext name=list layer=2 page=fore text="葛城宮ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
-[ptext name=list layer=2 page=fore text="葛城宮ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
-[ptext name=list layer=2 page=fore text="葛城宮ルート　:　badEND" x=490 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="葛城宮ルート :　normalEND" x=50 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="葛城宮ルート :　goodEND" x=270 y=200 size=17 color=navy visible=true]
+[ptext name=list layer=2 page=fore text="葛城宮ルート :　badEND" x=490 y=200 size=17 color=navy visible=true]
 [else]
 [ptext name=list layer=2 page=fore text="？ルート　:　normalEND" x=50 y=200 size=17 color=navy visible=true]
 [ptext name=list layer=2 page=fore text="？ルート　:　goodEND" x=270 y=200 size=17 color=navy visible=true]
