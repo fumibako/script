@@ -34,14 +34,14 @@
 	[eval exp="f.event_sijyou[1]=1"]
 	@jump storage="event.ks" target=*start
 	;四条	
-	[elsif exp="tf.a == f.para_sijyou_koukando && f.sijyou_au == 0 && (f.para_shujinkou_shukujodo < 15 || f.para_sijyou_koukando > 15) && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
+	[elsif exp="tf.a == f.para_sijyou_koukando && f.sijyou_au == 0 && (f.para_shujinkou_shukujodo < 15 || f.para_sijyou_koukando > 20) && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
 	;四条の好感度と一番高い数値が同じであるとき淑女度が15以下　または　四条の好感度と一番高い数値が同じであり、その好感度が15以上	
 	[eval exp="f.event_storage='sijyou/sijyou_6_1.ks'"]
 	[eval exp="f.event_target='*replay_sijyou_6_1'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_sijyou[1]=1"]
 	@jump storage="event.ks" target=*start
-	[elsif exp="tf.a == f.para_zaizen_koukando && f.zaizen_au == 0 && (f.para_shujinkou_shukujodo < 15 || f.para_zaizen_koukando > 15) && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
+	[elsif exp="tf.a == f.para_zaizen_koukando && f.zaizen_au == 0 && (f.para_shujinkou_shukujodo < 15 || f.para_zaizen_koukando > 20) && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
 	;財前の好感度と一番高い数値が同じであるとき淑女度が15以下	または　財前の好感度と一番高い数値が同じであり、その好感度が15以上
 	[eval exp="f.event_storage='zaizen/zaizen_6_1.ks'"]
 	[eval exp="f.event_target='*replay_zaizen_6_1'"]
