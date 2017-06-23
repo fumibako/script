@@ -1089,19 +1089,26 @@ $('.info_face').remove();
 [image layer=26 x=1 y=1 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
 [eval exp="tf.x_info = 175"]
 [eval exp="tf.y_info = 31"]
-[if exp="f.sijyou_au == 0"]
-;他のキャラに切り替えた、または切り替えてきたときに困るので共通画像を設定 or remove(現在テストでremoveを実行)
-;[image name=info_face layer=26 x=&tf.x_info y=&tf.y_info folder="image" storage="face_kyoutu_no.png" zindex=2]
-[elsif exp="f.sijyou_au == 1 && f.para_sijyou_koukando < 40"]
-;セピア画像(badEDの可能性を示す指標)：好感度40未満
-[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_sepia.png" zindex=2]
-[elsif exp=f.sijyou_au == 1 && f.para_sijyou_koukando >= 40]
-;カラー画像(表情通常：normal以上のEDの可能性を示す指標)：好感度40以上
-[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_color.png" zindex=2]
-[elsif exp="f.sijyou_au == 1 && f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.event_sijyou[15] == 1 && f.para_shujinkou_j_kadou >= 50"]
-;カラー画像(表情ほほえみ：goodED条件を満たした時の指標)：好感度80以上かつ淑女度80以上 祖母イベントをみている（≒華道展のイベントをみている）かつ 華道50以上
-[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_smail.png" zindex=2]
+;[if exp="f.sijyou_au == 0"]
+	;他のキャラに切り替えた、または切り替えてきたときに困るので共通画像を設定 or remove(現在テストでremoveを実行)同じlayer26なのでいらないかと
+	;[image name=info_face layer=26 x=&tf.x_info y=&tf.y_info folder="image" storage="face_kyoutu_no.png" zindex=2]
+	;@jump target=*info_face_sijyou_owari
+;[endif]
+[if exp="f.sijyou_au == 1 && f.para_sijyou_koukando < 40"]
+	;セピア画像(badEDの可能性を示す指標)：好感度40未満
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_sepia.png" zindex=2]
+	@jump target=*info_face_sijyou_owari
 [endif]
+[if exp=f.sijyou_au == 1 && f.para_sijyou_koukando >= 40]
+	;カラー画像(表情通常：normal以上のEDの可能性を示す指標)：好感度40以上
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_color.png" zindex=2]
+	@jump target=*info_face_sijyou_owari
+[endif]
+[if exp="f.sijyou_au == 1 && f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.event_sijyou[15] == 1 && f.para_shujinkou_j_kadou >= 50"]
+	;カラー画像(表情ほほえみ：goodED条件を満たした時の指標)：好感度80以上かつ淑女度80以上 祖母イベントをみている（≒華道展のイベントをみている）かつ 華道50以上
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_smail.png" zindex=2]
+[endif]
+*info_face_sijyou_owari
 ;==============================================================================
 
 	[glink name="list" storage="info_oaite_fumi.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
