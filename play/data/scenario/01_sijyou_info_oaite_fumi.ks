@@ -1081,7 +1081,7 @@
 
 
 *info_sijyou_hyouji
-[isceipt]
+[iscript]
 $('.info_face').remove();
 [endscript]
 [image layer=26 x=1 y=1 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
