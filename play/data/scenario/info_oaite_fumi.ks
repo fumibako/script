@@ -1902,22 +1902,25 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [s]
 ;======================================================================================
 *info_katuraginomiya_hyouji
-;葛城宮フェイス　（画像がない財前の仮位置で調整しています）
+;葛城宮フェイス　（画像がないので仮位置で調整しています）
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
+;！！以下画像できるまで！！
+[eval exp="tf.x_info = 175"]
+[eval exp="tf.y_info = 31"]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando < 40"]
 	;face_katuraginomiya_sepia.png：(normalED条件未満) f.katuraginomiya_au == 1
-	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
+	;[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
 	@jump target=*info_face_katuraginomiya_owari
 [endif]
-[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40"]
+;[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40"]
 	;face_katuraginomiya_color.png：(normalED条件のパラメータやフラグを満たす場合) f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40
-	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_color.png" zindex=2]
-	@jump target=*info_face_katuraginomiya_owari
-[endif]
-[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100"]
+	;[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_color.png" zindex=2]
+	;@jump target=*info_face_katuraginomiya_owari
+:[endif]
+;[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100"]
 	;face_katuraginomiya_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100
-	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_smile.png" zindex=2]
-[endif]
+	;[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_smile.png" zindex=2]
+;[endif]
 *info_face_katuraginomiya_owari
 ;======================================================================================
 	[glink name="list" target="*info_kuroda" text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
