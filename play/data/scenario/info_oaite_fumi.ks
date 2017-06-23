@@ -1654,23 +1654,25 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 @jump target=*info_hyouji_owari
 [s]
-
+;======================================================================================
 *info_zaizen_hyouji
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_zaizen.jpg"]
-;======================================================================================
+;！！以下画像できるまで！！
+[eval exp="tf.x_info = 175"]
+[eval exp="tf.y_info = 31"]
 [if exp="f.zaizen_au == 1 && f.para_zaizen_koukando < 50"]
 	;・face_zaizen_sepia.png：(normalED条件未満) f.zaizen_au == 1
-	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face_zaizen_sepia.png" zindex=2]
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_sepia.png" zindex=2]
 	@jump target=*info_face_zizen_owari
 [endif]
 [if exp="f.zaizen_au == 1 && f.para_zaizen_koukando >= 50"]
 	;・face_zaizen_color.png：(normalED条件のパラメータやフラグを満たす場合) f.zaizen_au == 1 && f.para_zaizen_koukando >= 50
-	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face_zaizen_color.png" zindex=2]
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_color.png" zindex=2]
 	@jump target=*info_face_zizen_owari
 [endif]
 [if exp="f.zaizen_au == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80"]
 	;・face_zaizen_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.zaizen_au == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80
-	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face_zaizen_smile.png" zindex=2]
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_smile.png" zindex=2]
 	;@jump target=*info_face_zizen_owari
 [endif]
 *info_face_zizen_owari
@@ -1711,7 +1713,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 [return]
 [s]
-
+;======================================================================================
 *info_sijyou
 @jump storage="01_sijyou_info_oaite_fumi.ks" target=*info_sijyou
 *fumi_sijyou_page2
@@ -1760,7 +1762,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 @jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page23
 *fumi_sijyou_page24
 @jump storage="01_sijyou_info_oaite_fumi.ks" target=fumi_sijyou_page24
-
+;======================================================================================
 *info_katuraginomiya
 [freeimage layer = 27]
 [freeimage layer = 28]
@@ -1898,9 +1900,26 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 @jump target=*info_hyouji_owari
 [s]
-
+;======================================================================================
 *info_katuraginomiya_hyouji
+;葛城宮フェイス　（画像がない財前の仮位置で調整しています）
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
+[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando < 40"]
+	;face_katuraginomiya_sepia.png：(normalED条件未満) f.katuraginomiya_au == 1
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
+	@jump target=*info_face_katuraginomiya_owari
+[endif]
+[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40"]
+	;face_katuraginomiya_color.png：(normalED条件のパラメータやフラグを満たす場合) f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_color.png" zindex=2]
+	@jump target=*info_face_katuraginomiya_owari
+[endif]
+[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100"]
+	;face_katuraginomiya_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_smile.png" zindex=2]
+[endif]
+*info_face_katuraginomiya_owari
+;======================================================================================
 	[glink name="list" target="*info_kuroda" text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
 	[glink name="list" target="*info_zaizen" text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
 	[glink name="list" storage="01_sijyou_info_oaite_fumi.ks" target="*info_sijyou" text="四条 華織" size=16 width="120" x=430 y=580 color=white]
