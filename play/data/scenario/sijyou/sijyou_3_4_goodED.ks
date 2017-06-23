@@ -211,7 +211,7 @@ $('.saku3').remove();
 [eval exp="f.kaogura = 'off'"]
 [eval exp="f.haikei_credit='illustration　by　かいこ'"]
 ;good条件分岐は3箇所：スチル表示(ここ)、169行目付近、preload_sijyou.ks423行目付近(もし調整が必要になった際用メモです。「以上」の部分を調整させていただきました
-[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.para_shujinkou_j_kadou >= 50 "]
+[if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.event_sijyou[15] == 1 && f.para_shujinkou_j_kadou >= 50"]
 [暗転２ storage="bg/sijyou_CGgood.png" clegit=true]
 [chara_mod name="bg" storage="bg/sijyou_CGgood.png" time=1000]
 ;◆CGモード用に画像を登録
