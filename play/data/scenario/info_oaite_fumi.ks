@@ -1657,6 +1657,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;======================================================================================
 *info_zaizen_hyouji
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_zaizen.jpg"]
+;◆財前
 ;！！以下画像できるまで！！
 [eval exp="tf.x_info = 175"]
 [eval exp="tf.y_info = 31"]
@@ -1902,7 +1903,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [s]
 ;======================================================================================
 *info_katuraginomiya_hyouji
-;葛城宮フェイス　（画像がないので仮位置で調整しています）
+;◆葛城宮フェイス　（画像がないので仮位置で調整しています）
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
 ;！！以下画像できるまで！！
 [eval exp="tf.x_info = 175"]
@@ -1955,7 +1956,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 [return]
 [s]
-
+;======================================================================================
 *info_hujieda
 [freeimage layer = 27]
 [freeimage layer = 28]
@@ -2095,11 +2096,31 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 @jump target=*info_hyouji_owari
 [s]
-
+;======================================================================================
 *info_hujieda_hyouji
 [freeimage layer = 26]
-
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_hujieda.jpg"]
+;◆ 藤枝
+;！！以下画像できるまで！！
+[eval exp="tf.x_info = 175"]
+[eval exp="tf.y_info = 31"]
+[if exp="f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month >= 10 || f.okeiko_month <= 3)"]
+	;face_hujieda_sepia.png：(normalED条件未満) f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month >= 10 || f.okeiko_month <= 3)
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_sepia.png" zindex=2]
+	@jump target=*info_face_hujieda_owari
+[endif]
+[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 40"]
+	;face_hujieda_color.png：(normalED条件のパラメータやフラグを満たす場合) f.hujieda_au == 1 && f.para_hujieda_koukando >= 40
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_color.png" zindex=2]
+	@jump target=*info_face_hujieda_owari	
+[endif]
+[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70"]
+	;face_hujieda_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_smile.png" zindex=2]	
+	@jump target=*info_face_hujieda_owari	
+[endif]
+*info_face_hujieda_owari
+;======================================================================================
 	[glink name="list" target="*info_kuroda" text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
 	[glink name="list" target="*info_zaizen" text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
 	[glink name="list" storage="01_sijyou_info_oaite_fumi.ks" target="*info_sijyou" text="四条 華織" size=16 width="120" x=430 y=580 color=white]
