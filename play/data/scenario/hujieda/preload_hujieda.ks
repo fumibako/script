@@ -148,6 +148,9 @@
 *3_4_goodED
 ;*イベント名のラベルを追加していきます。
 ;======================================================================================
+[if exp="f.flag_replay == true"]
+[cm]
+[endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_hujieda.jpg" time=500]
@@ -170,6 +173,9 @@
 *3_4_normalED
 ;*イベント名のラベルを追加していきます。;イベント１５回目【指切りエンド】3月4週、
 ;======================================================================================
+[if exp="f.flag_replay == true"]
+[cm]
+[endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_hujieda.jpg" time=500]
