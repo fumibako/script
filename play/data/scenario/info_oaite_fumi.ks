@@ -1660,17 +1660,17 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;======================================================================================
 [if exp="f.zaizen_au == 1 && f.para_zaizen_koukando < 50"]
 	;・face_zaizen_sepia.png：(normalED条件未満) f.zaizen_au == 1
-	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face_sijyou_sepia.png" zindex=2]
+	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face_zaizen_sepia.png" zindex=2]
 	@jump target=*info_face_zizen_owari
 [endif]
 [if exp="f.zaizen_au == 1 && f.para_zaizen_koukando >= 50"]
 	;・face_zaizen_color.png：(normalED条件のパラメータやフラグを満たす場合) f.zaizen_au == 1 && f.para_zaizen_koukando >= 50
-	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face_sijyou_sepia.png" zindex=2]
+	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face_zaizen_color.png" zindex=2]
 	@jump target=*info_face_zizen_owari
 [endif]
 [if exp="f.zaizen_au == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80"]
 	;・face_zaizen_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.zaizen_au == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80
-	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face_sijyou_sepia.png" zindex=2]
+	[image name=info_face layer=26 x="&f.x_info" y="&f.y_info" folder="image" storage="face__zaizen_smail.png" zindex=2]
 	;@jump target=*info_face_zizen_owari
 [endif]
 *info_face_zizen_owari
