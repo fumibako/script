@@ -1301,6 +1301,10 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 
 ;◆◆攻略対象情報画面(お稽古画面から「情報」ボタンを押すと表示される)
 *info_oaite
+;◆お相手肖像画像表示位置変数
+[eval exp="f.x_info=0"]
+[eval exp="f.y_info=0"]
+
 [eval exp="f.viewing_storage = 'info_oaite_fumi.ks'"]
 @layopt layer=message1 page=fore visible = false
 [freeimage layer = 26]
@@ -1460,7 +1464,24 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [s]
 
 *info_kuroda_hyouji
-[image layer=26 x=1 y=1 storage="bg/bg_info_kuroda.jpg"]
+[image layer=26 x=0 y=0 storage="bg/bg_info_kuroda.jpg"]
+
+;◆ 黒田ルート：goodED条件パラメータ・フラグを満たした場合：カラーほほえみ肖像
+[if exp="f.kuroda_au == 1 && f.para_kuroda_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.para_shujinkou_j_gogaku >= 80 && f.event_machi_kuroda[2] == 1"]
+	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_smile.png" zindex=2]
+	@jump target=*info_face_kuroda_owari
+[endif]
+;◆ 黒田ルート：normalED条件パラメータ・フラグを満たした場合：カラー肖像
+[if exp="f.kuroda_au == 1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2] == 1"]
+	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_color.png" zindex=2]
+	@jump target=*info_face_kuroda_owari
+[endif]
+;◆ 黒田ルート：normalED条件未満の場合：セピア肖像
+[if exp="f.kuroda_au == 1"]
+	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_sepia.png" zindex=2]
+[endif]
+*info_face_kuroda_owari
+
 	[glink name="list" target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
 	[glink name="list" storage="01_sijyou_info_oaite_fumi.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
 ;葛城宮に手紙を出せるようになっていたらボタン表示

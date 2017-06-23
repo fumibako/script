@@ -1,4 +1,4 @@
-﻿﻿﻿;=============================================
+﻿﻿﻿﻿;=============================================
 ;okeiko.ks 設定入力部分
 ;=============================================
 *start
@@ -59,17 +59,20 @@
 [ptext text="返事EV:" layer=29 size=13 x=900 y=315 color=darkslateblue bold=bold]
 [edit left=905 top=340 width=40 length=200 maxchars=3 name="f.event_hujieda5" height=20]
 
-[ptext text="四条好感度（元値=5)" layer=29 size=15 x=610 y=540 color=darkslateblue bold=bold]
-[edit left=630 top=560 width=50 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
+[ptext text="四条好感度（元値=5)" layer=29 size=12 x=560 y=540 color=darkslateblue bold=bold]
+[edit left=580 top=560 width=50 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
 
-[ptext text="四条ルート 1=内,0=外" layer=29 size=15 x=780 y=540 color=darkslateblue bold=bold]
-[edit left=780 top=560 width=50 length=200 maxchars=3 name="f.sijyou_au" height=20]
+[ptext text="四条ルート 1=内,0=外" layer=29 size=12 x=690 y=540 color=darkslateblue bold=bold]
+[edit left=690 top=560 width=50 length=200 maxchars=3 name="f.sijyou_au" height=20]
 
-[ptext text="黒田好感度（元値=3)" layer=29 size=15 x=610 y=590 color=darkslateblue bold=bold]
-[edit left=630 top=610 width=50 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
+[ptext text="黒田好感度（元値=3)" layer=29 size=12 x=560 y=590 color=darkslateblue bold=bold]
+[edit left=580 top=610 width=50 length=200 maxchars=3 name="f.para_kuroda_koukando" height=20]
 
-[ptext text="黒田ルート 1=内,0=外" layer=29 size=15 x=780 y=590 color=darkslateblue bold=bold]
-[edit left=780 top=610 width=50 length=200 maxchars=3 name="f.kuroda_au" height=20]
+[ptext text="黒田ルート 1=内,0=外" layer=29 size=10 x=690 y=590 color=darkslateblue bold=bold]
+[edit left=690 top=610 width=50 length=200 maxchars=3 name="f.kuroda_au" height=20]
+
+[ptext text="黒田麦 1=〇,0=×" layer=29 size=12 x=800 y=590 color=darkslateblue bold=bold]
+[edit left=800 top=610 width=50 length=200 maxchars=3 name="f.kuroda_mugi" height=20]
 
 [ptext text="熟練度：茶道" layer=29 size=15 x=10 y=190 color=darkslateblue bold=bold]
 [edit left=10 top=210 width=200 length=200 maxchars=3 name="f.para_shujinkou_j_sadou" height=20]
@@ -168,6 +171,7 @@ $("input[name='f.katuraginomiya_fumi_start']").val("0");
 $("input[name='f.hujieda_fumi_start']").val("0");
 $("input[name='f.sijyou_au']").val("0");
 $("input[name='f.kuroda_au']").val("0");
+$("input[name='f.kuroda_mugi']").val("0");
 
 $("input[name='f.para_shujinkou_j_sadou']").val("0");
 $("input[name='f.para_shujinkou_j_kadou']").val("0");
@@ -231,6 +235,7 @@ f.para_sijyou_koukando = parseInt($("input[name='f.para_sijyou_koukando']").val(
 f.para_kuroda_koukando = parseInt($("input[name='f.para_kuroda_koukando']").val());
 f.sijyou_au = parseInt($("input[name='f.sijyou_au']").val());
 f.kuroda_au = parseInt($("input[name='f.kuroda_au']").val());
+f.event_machi_kuroda[2] = parseInt($("input[name='f.kuroda_mugi']").val());
 
 f.para_shujinkou_j_sadou = parseInt($("input[name='f.para_shujinkou_j_sadou']").val());
 f.para_shujinkou_j_kadou = parseInt($("input[name='f.para_shujinkou_j_kadou']").val());
