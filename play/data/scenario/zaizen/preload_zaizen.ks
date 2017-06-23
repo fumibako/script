@@ -201,8 +201,11 @@
 ;以降は、無駄な読み込みはしない
 ;=========================================================================
 *11_1bad2
-;これは続きなのでテスト用ですね
+;リプレイ用
 ;======================================================================================
+[if exp="f.flag_replay == true"]
+[cm]
+[endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
@@ -240,7 +243,7 @@
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
 *11_1_bad1
-;これは続きなのでテスト用ですね
+;リプレイ用
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -417,6 +420,9 @@
 *3_4_good 
 ;イベント名のラベルを追加していきます。
 ;================================================================================
+[if exp="f.flag_replay == true"]
+[cm]
+[endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
@@ -441,6 +447,9 @@
 *3_4_normal
 ;イベント10回目【財前母の誕生日パーティ】3月4週、
 ;================================================================================
+[if exp="f.flag_replay == true"]
+[cm]
+[endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
