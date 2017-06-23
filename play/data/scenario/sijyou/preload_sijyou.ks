@@ -180,6 +180,9 @@
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
 *10_3
+[if exp="f.flag_replay == true"]
+[cm]
+[endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
@@ -325,6 +328,9 @@
 ;以降は、無駄な読み込みはしない
 ;==========================================================================
 *3_4
+[if exp="f.flag_replay == true"]
+[cm]
+[endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
@@ -342,6 +348,9 @@
 *3_4_1
 *3_4_ep
 ;グットエンドエピローグ
+[if exp="f.flag_replay == true"]
+[cm]
+[endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sijyou_preload.jpg" time=500]
