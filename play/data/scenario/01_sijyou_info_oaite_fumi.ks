@@ -1081,12 +1081,14 @@
 
 
 *info_sijyou_hyouji
+;==============================================================================
 [iscript]
 $('.info_face').remove();
 [endscript]
+;同じlayer26なのでいらないかと
 [image layer=26 x=1 y=1 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
-[eval exp="tf.x_info=175"]
-[eval exp="tf.y_info=31"]
+[eval exp="tf.x_info = 175"]
+[eval exp="tf.y_info = 31"]
 [if exp="f.sijyou_au == 0"]
 ;他のキャラに切り替えた、または切り替えてきたときに困るので共通画像を設定 or remove(現在テストでremoveを実行)
 ;[image name=info_face layer=26 x=&tf.x_info y=&tf.y_info folder="image" storage="face_kyoutu_no.png" zindex=2]
@@ -1100,6 +1102,7 @@ $('.info_face').remove();
 ;カラー画像(表情ほほえみ：goodED条件を満たした時の指標)：好感度80以上かつ淑女度80以上 祖母イベントをみている（≒華道展のイベントをみている）かつ 華道50以上
 [image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_smail.png" zindex=2]
 [endif]
+;==============================================================================
 
 	[glink name="list" storage="info_oaite_fumi.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
 	[glink name="list" storage="info_oaite_fumi.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
