@@ -347,15 +347,15 @@ $('.loding_pic1').remove();
 [s]
 
 *backtitle
+[cm]
+[freeimage layer=3]
+[freeimage layer=2]
 [chara_mod name="bg" storage="bg/title.jpg"]
 [bg storage="toumei.gif" time=1]
-[cm]
 [iscript]
 $(".layer_free").css("opacity",1);
 $(".layer_2").css("opacity",1);
 [endscript]
-[freeimage layer=3]
-[freeimage layer=2]
 @layopt layer=2 visible=true
 @layopt layer=1 visible=true
 @clearfix
