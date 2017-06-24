@@ -1,4 +1,4 @@
-﻿@clearstack
+﻿﻿@clearstack
 
 ;==============================
 ; タイトル画面
@@ -111,20 +111,26 @@ if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
 [wait time=10]
 
 ;タイトル各種ボタン表示
-[locate x=450 y=50]
+[locate x=460 y=50]
 [button name="list" graphic="button_title_start.png" target="*start" time=0]
 
-[locate x=350 y=130]
+[locate x=370 y=130]
 [button name="list" graphic="button_title_load.png" target="*load" time=0]
 
-[locate x=250 y=50]
+[locate x=280 y=50]
 [button name="list" graphic="button_title_cg.png" target="*cg" time=0]
 
-[locate x=150 y=130]
+[locate x=190 y=130]
 [button name="list" graphic="button_title_replay.png" target="*replay" time=0]
 
-[locate x=50 y=50]
+[locate x=100 y=50]
 [button name="list" graphic="button_title_credit.png" target="*credit" time=0]
+
+;(どれかのルートを？)全エンディングクリア条件で表示予定。位置は今後さらに調整するかもしれません
+;[if exp=""]
+;	[locate x=10 y=130]
+;	[button name="list" graphic="button_title_omake.png" target="*omake" time=0]
+;[endif]
 
 [locate x=0 y=540]
 [button name="test_mode" graphic="toumei.gif" target="*test"  time=0 width=100 height=100]
@@ -279,6 +285,15 @@ TG.stat.play_se = true;
 ;[chara_mod name="bg" storage="toumei.gif" time=1]
 [wait time=10]
 [jump storage="credit.ks"]
+[s]
+
+;----------おまけが選択された時
+*omake
+;機能ボタン類を消去（fixレイヤー全消去）
+[clearfix]
+[cm]
+[wait time=10]
+[jump storage="omake.ks"]
 [s]
 
 ;----------BGM onが選択された時
