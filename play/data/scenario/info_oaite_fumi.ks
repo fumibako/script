@@ -1660,17 +1660,17 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;◆財前フェイス
 [eval exp="tf.x_info = 0"]
 [eval exp="tf.y_info = 0"]
-[if exp="f.zaizen_au == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80"]
+[if exp="f.zaizen_au == 1 && f.event_zaizen[1] == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80"]
 	;face_zaizen_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.zaizen_au == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_smile.png" zindex=2]
 	@jump target=*info_face_zizen_owari
 [endif]
-[if exp="f.zaizen_au == 1 && f.para_zaizen_koukando >= 50"]
+[if exp="f.zaizen_au == 1 && f.event_zaizen[1] == 1 && f.para_zaizen_koukando >= 50"]
 	;face_zaizen_color.png：(normalED条件のパラメータやフラグを満たす場合) f.zaizen_au == 1 && f.para_zaizen_koukando >= 50※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_color.png" zindex=2]
 	@jump target=*info_face_zizen_owari
 [endif]
-[if exp="f.zaizen_au == 1"]
+[if exp="f.zaizen_au == 1 && f.event_zaizen[1] == 1"]
 	;・face_zaizen_sepia.png：(normalED条件未満) f.zaizen_au == 1
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_sepia.png" zindex=2]
 	;@jump target=*info_face_zizen_owari
