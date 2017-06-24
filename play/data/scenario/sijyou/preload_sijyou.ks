@@ -122,6 +122,10 @@
 [preload storage="data/fgimage/bg/bg_flower_hagi.jpg" wait=true]
 ;【背景】庭園
 [preload storage="data/fgimage/bg/bg_teien_ishidatami.jpg" wait=true]
+;四条face
+[preload storage="data/image/face_sijyou_sepia.png" wait=true]
+[preload storage="data/image/face_sijyou_color.png" wait=true]
+[preload storage="data/image/face_sijyou_smile.png" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
