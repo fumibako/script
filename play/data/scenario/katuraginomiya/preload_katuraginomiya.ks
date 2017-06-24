@@ -99,6 +99,13 @@
 [preload storage="data/fgimage/katuraginomiya/emo_ase.png" wait=true]
 ;[葛城宮頬染め]
 [preload storage="data/fgimage/katuraginomiya/emo_hohosome.png" wait=true]
+
+;葛城宮face　ノーマルエンド未満
+[preload storage="data/image/face_katuraginomiya_sepia.png" wait=true]
+;葛城宮face　ノーマルエンド　好感度
+[preload storage="data/image/face_katuraginomiya_color.png" wait=true]
+;葛城宮face　グッドエンド　好感度他パラメータ
+[preload storage="data/image/face_katuraginomiya_smile.png" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください 
