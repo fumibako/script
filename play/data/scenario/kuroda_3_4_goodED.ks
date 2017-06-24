@@ -4,6 +4,9 @@
 ;１１章、【ファイナル・イメージ：normalED、goodED共通】黒田からの求婚、受け入れる主人公
 ;=============================================
 *replay_kuroda_3_4_goodED
+[if exp="f.flag_replay == true"]
+	[cm]
+[endif]
 [ct]
 [clearfix]
 [layopt layer=29 visible=true] 

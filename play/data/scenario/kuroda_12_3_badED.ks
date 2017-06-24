@@ -2,6 +2,9 @@
 ;◆黒田イベント【分岐：badED】黒田ルートかつ12月3週になった時点で好感度一定値未満又は麦の穂無しでbadED
 ;=============================================
 *replay_kuroda_12_3_badED
+[if exp="f.flag_replay == true"]
+	[cm]
+[endif]
 [stopbgm]
 [ct]
 [clearfix]

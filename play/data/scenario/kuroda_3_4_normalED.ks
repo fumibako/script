@@ -3,6 +3,9 @@
 ;=============================================
 
 *replay_kuroda_3_4_normalED
+[if exp="f.flag_replay == true"]
+	[cm]
+[endif]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_kuroda.jpg" time=500] 
