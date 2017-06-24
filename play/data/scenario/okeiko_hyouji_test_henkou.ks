@@ -47,6 +47,15 @@
 [ptext name="loding_pic" text="淑女度" layer=29 size=15 x=415 y=290 color=darkslateblue bold=bold]
 [edit left=410 top=310 width=200 length=200 maxchars=3 name="f.para_shujinkou_shukujodo" height=20]
 
+[ptext name="loding_pic" text="黒田お見合い・済=1" layer=29 size=15 x=440 y=290 color=darkslateblue bold=bold]
+[edit left=410 top=360 width=200 length=200 maxchars=2 name="tf.kuroda_omiai" height=20]
+
+[ptext name="loding_pic" text="四条お見合い・済=1" layer=29 size=15 x=445 y=290 color=darkslateblue bold=bold]
+[edit left=410 top=410 width=200 length=200 maxchars=2 name="f.sijyou_omiai" height=20];これは使用済フラグですのでfでok
+
+[ptext name="loding_pic" text="財前お見合い・済=1" layer=29 size=15 x=450 y=290 color=darkslateblue bold=bold]
+[edit left=410 top=460 width=200 length=200 maxchars=2 name="tf.zaizen_omiai" height=20]
+
 
 
 [iscript]
@@ -64,6 +73,10 @@ $("input[name='f.para_shujinkou_j_reihou']").val("0");
 $("input[name='f.para_shujinkou_j_gogaku']").val("0");
 $("input[name='f.para_shujinkou_j_koto']").val("0");
 $("input[name='f.para_shujinkou_shukujodo']").val("0");
+
+$("input[name='tf.kuroda_omiai']").val("0");
+$("input[name='tf.zaizen_omiai']").val("0");
+$("input[name='f.sijyou_omiai']").val("0");
 
 //$("input[name='f.okeiko_month']").val("4");
 //$("input[name='f.okeiko_week']").val("1");
@@ -105,6 +118,14 @@ f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo'
 tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val());
 tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
 [endscript]
+
+[if exp="tf.kuroda_omiai==1"]
+[eval exp="f.event_kuroda[1]=1"]
+[endif]
+
+[if exp="tf.zaizen_omiai==1"]
+[eval exp="f.event_zaizen[1]=1"]
+[endif]
 
 *back_test
 [cm]
