@@ -112,6 +112,10 @@ f.para_shujinkou_j_gogaku = parseInt($("input[name='f.para_shujinkou_j_gogaku']"
 f.para_shujinkou_j_koto = parseInt($("input[name='f.para_shujinkou_j_koto']").val());
 f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo']").val());
 
+tf.kuroda_omiai = parseInt($("input[name='tf.kuroda_omiai']").val());
+tf.zaizen_omiai = parseInt($("input[name='tf.zaizen_omiai']").val());
+f.sijyou_omiai = parseInt($("input[name='f.sijyou_omiai']").val());
+
 //問題ないのであれば追加したいです
 //f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 //f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
