@@ -120,6 +120,10 @@
 ;財前エモ
 [preload storage="data/fgimage/zaizen/emo_ase.png" wait=true]
 [preload storage="data/fgimage/zaizen/emo_hohosome.png" wait=true]
+;財前face
+[preload storage="data/image/face_zaizen_color.png" wait=true]
+[preload storage="data/image/face_zaizen_sepia.png" wait=true]
+[preload storage="data/image/face_zaizen_smile.png" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
