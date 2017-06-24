@@ -64,8 +64,8 @@
 どうしてか磯野は、仄かに微笑んだ。[p]
 ;もちろん？
 #
-無論。悪い気は、しなかった為、[r]
-私は裾を直して立ち上がると中庭へと向かうことにした[p]
+無論。 悪い気は、しなかった為、[r]
+私は、裾を直して立ち上がると中庭へと向かうことにした。[p]
 ;【SE】ヒグラシ（カナカナカナ）
 [playse storage=semi_higurasi.ogg loop=false ]
 ;せっかくなのでセミSEにしてみました。ヒグラシは夏の終わりですが夕方感が出るかと選択。他のセミに変えてくださっても大丈夫です(スクリプト担
@@ -78,12 +78,17 @@
 [chara_mod name="bg" storage="bg/sijyou_engawa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 #
-中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。その相手は[p]
-
+中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。 その相手は[p]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+
 [主人公驚]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -118,11 +123,16 @@
 [playse storage=hanabi_utiage_m.ogg loop=false ]
 ;アニメーション実行
 [kanim name="hababi" keyframe="opcy" time="6000" count=infinite]
-
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+
 [主人公目パチ1回]
 [wait time=10]
 ;黄昏って夏は19時らしい
@@ -158,7 +168,7 @@
 [主人公口ほほえみ]
 [wait time=10]
 #
-そうして、磯野は、素早くも精査な動きで、膝をつく[p]
+そうして、磯野は、素早くも精査な動きで、膝をつく。[p]
 [主人公目パチ1回]
 [wait time=10]
 
@@ -173,7 +183,7 @@
 [主人公ほほえみ]
 [wait time=10]
 #
-私は、出来うる限りの素直さで、いつも感謝を述べるのだ[p]
+私は、出来うる限りの素直さで、いつも感謝を述べるのだ。[p]
 ;のだ！って使っていいのかな
 ;◎父、華織と上手くいっているか気になり話かけたが、
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -187,7 +197,7 @@
 「華織様、ですか？ 
 [主人公ポーズ片手]
 [wait time=10]
-[sp]えぇ、お手紙も頂いてますし、」[p]
+[sp]えぇ、お手紙も頂いてますし……」[p]
 [主人公通常]
 [wait time=10]
 ;アニメーション停止
@@ -195,14 +205,17 @@
 ;透明化
 [kanim keyframe="not_opcy" name="hababi" time=5000]
 #
-とは言っても、憧れだった華織お兄様とのお付き合い。[p]
+とは言っても、憧れだった華織お兄様との特別な意味を含んだ、[r]
+文通。[r]
+幼い頃に無邪気に渡した、お手紙とは事情が異なる。[p]
 [iscript]
 $('.hababi').remove();
 [endscript]
 [主人公ふぅ閉]
 [wait time=10]
 #
-はっきりとした自信は、もてない。[p]
+;昔の記憶と今の事情について、どう思っていられるのか[r]
+だから、はっきりとした自信は、もてない。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公口通常]
@@ -212,7 +225,7 @@ $('.hababi').remove();
 
 ;夢見がちに目を閉じて回想
 #
-憧れの人が、今は婚約者として、身近にいる……[p]
+憧れの人が、今は婚約者候補として、身近にいる……。[p]
 ;候補？？
 #
 私は、兄と華織様に挟まれ、縁側で線香花火に興じたことを思い出した。[p]
@@ -224,9 +237,7 @@ $('.hababi').remove();
 [chara_mod name="bg" storage="bg/sijyou_hanabi1.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
 #
-;……[p]
-;いらないかも↑
-;黒い背景に全面文字？ よい感じにならんかえ
+;黒い背景に全面文字
 #
 ――闇に落ちいく火華は、松葉のように開き、[r]
 [r]
@@ -259,10 +270,16 @@ $('.hababi').remove();
 ;背景 主人公部屋 夕方か夜。
 [chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[wait time=10]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 [主人公目閉じ]
 [wait time=10]
 花火のような 貴方は、とても綺麗で[p]
@@ -278,8 +295,8 @@ $('.hababi').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい」[p]
 [主人公口ほほえみ]
-私は、お父様の声で我に帰った。[r]
-父は、水羊羹を爪楊枝に刺したまま、真剣な表情をして私を見つめる。[p]
+私は、お父様の声で我に返った。[r]
+父は、水羊羹を爪楊枝に刺したまま、真剣な表情をして私を見つめていた。[p]
 
 [主人公憂い]
 [wait time=10]
@@ -297,7 +314,7 @@ $('.hababi').remove();
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「？はい。 ありがとうございます」[p]
+「？　はい。 ありがとうございます」[p]
 [image name="hababi" storage="bg/sijyou_engawa2_1.png" layer=1 zindex=2 left=0 time=2000]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「たまには家には帰ってくるんだぞ」[p]
