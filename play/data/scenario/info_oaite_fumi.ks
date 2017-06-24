@@ -1910,7 +1910,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [eval exp="tf.y_info = 0"]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando < 40"]
 	;face_katuraginomiya_sepia.png：(normalED条件未満) f.katuraginomiya_au == 1
-	;[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
 	@jump target=*info_face_katuraginomiya_owari
 [endif]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40"]
