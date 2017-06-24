@@ -1666,7 +1666,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_sepia.png" zindex=2]
 	@jump target=*info_face_zizen_owari
 [endif]
-[if exp="f.zaizen_au == 1 && f.para_zaizen_koukando >= 50"]
+[if exp="f.zaizen_au == 1 && f.para_zaizen_koukando >= 50　&& f.para_zaizen_koukando < 80"]
 	;・face_zaizen_color.png：(normalED条件のパラメータやフラグを満たす場合) f.zaizen_au == 1 && f.para_zaizen_koukando >= 50
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_color.png" zindex=2]
 	@jump target=*info_face_zizen_owari
@@ -1913,7 +1913,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
 	@jump target=*info_face_katuraginomiya_owari
 [endif]
-[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40"]
+[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40 && f.para_katuraginomiya_koukando < 80 "]
 	;face_katuraginomiya_color.png：(normalED条件のパラメータやフラグを満たす場合) f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_color.png" zindex=2]
 	@jump target=*info_face_katuraginomiya_owari
@@ -2109,7 +2109,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_sepia.png" zindex=2]
 	@jump target=*info_face_hujieda_owari
 [endif]
-[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 40"]
+[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 40 && f.para_hujieda_koukando < 80"]
 	;face_hujieda_color.png：(normalED条件のパラメータやフラグを満たす場合) f.hujieda_au == 1 && f.para_hujieda_koukando >= 40
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_color.png" zindex=2]
 	@jump target=*info_face_hujieda_owari	
