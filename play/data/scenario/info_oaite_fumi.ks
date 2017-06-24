@@ -2102,9 +2102,8 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [freeimage layer = 26]
 [image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_hujieda.jpg"]
 ;◆ 藤枝フェイス
-;！！以下画像できるまで！！
-[eval exp="tf.x_info = 175"]
-[eval exp="tf.y_info = 31"]
+[eval exp="tf.x_info = 0"]
+[eval exp="tf.y_info = 0"]
 [if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70"]
 	;face_hujieda_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_smile.png" zindex=2]	
