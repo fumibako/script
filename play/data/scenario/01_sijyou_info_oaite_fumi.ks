@@ -1087,8 +1087,8 @@ $('.info_face').remove();
 [endscript]
 ;同じlayer26なのでいらないかと
 [image layer=26 x=1 y=1 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
-[eval exp="tf.x_info = 175"]
-[eval exp="tf.y_info = 31"]
+[eval exp="tf.x_info = 1"]
+[eval exp="tf.y_info = 1"]
 ;[if exp="f.sijyou_au == 0"]
 	;他のキャラに切り替えた、または切り替えてきたときに困るので共通画像を設定 or remove(現在テストでremoveを実行)同じlayer26なのでいらないかと
 	;[image name=info_face layer=26 x=&tf.x_info y=&tf.y_info folder="image" storage="face_kyoutu_no.png" zindex=2]
