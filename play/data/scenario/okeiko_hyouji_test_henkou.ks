@@ -121,10 +121,19 @@ tf.event_hyouji = parseInt($("input[name='tf.event_hyouji']").val());
 
 [if exp="tf.kuroda_omiai==1"]
 [eval exp="f.event_kuroda[1]=1"]
+[eval exp="f.kuroda_au = 1"]
+[eval exp="f.event_oaite_mitei = 0"]
+[endif]
+
+[if exp="f.sijyou_omiai==1"]
+[eval exp="f.sijyou_au = 1"]
+[eval exp="f.event_oaite_mitei = 0"]
 [endif]
 
 [if exp="tf.zaizen_omiai==1"]
 [eval exp="f.event_zaizen[1]=1"]
+[eval exp="f.zaizen_au = 1"]
+[eval exp="f.event_oaite_mitei = 0"]
 [endif]
 
 *back_test
