@@ -1467,17 +1467,17 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [image layer=26 x=0 y=0 storage="bg/bg_info_kuroda.jpg"]
 
 ;◆ 黒田ルート：goodED条件パラメータ・フラグを満たした場合：カラーほほえみ肖像
-[if exp="f.kuroda_au == 1 && f.para_kuroda_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.para_shujinkou_j_gogaku >= 80 && f.event_machi_kuroda[2] == 1"]
+[if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1 && f.para_kuroda_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.para_shujinkou_j_gogaku >= 80 && f.event_machi_kuroda[2] == 1"]
 	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_smile.png" zindex=2]
 	@jump target=*info_face_kuroda_owari
 [endif]
 ;◆ 黒田ルート：normalED条件パラメータ・フラグを満たした場合：カラー肖像
-[if exp="f.kuroda_au == 1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2] == 1"]
+[if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2] == 1"]
 	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_color.png" zindex=2]
 	@jump target=*info_face_kuroda_owari
 [endif]
 ;◆ 黒田ルート：normalED条件未満の場合：セピア肖像
-[if exp="f.kuroda_au == 1"]
+[if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1"]
 	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_sepia.png" zindex=2]
 [endif]
 *info_face_kuroda_owari
