@@ -1909,7 +1909,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;！！以下画像できるまで！！
 [eval exp="tf.x_info = 0"]
 [eval exp="tf.y_info = 0"]
-[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100"]
+[if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_shukujodo >= 100"]
 	;face_katuraginomiya_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_smile.png" zindex=2]
 [endif]
