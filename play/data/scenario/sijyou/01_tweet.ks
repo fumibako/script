@@ -25,21 +25,42 @@ please click[p]
 *twitter
 [イベントシーン構築ボタン無し版]
 ;=====================================================
-;グッドノーマル判定用　いまは使わない
-[if exp="sf.ED_kuroda_normal == 1 || sf.ED_kuroda_bad == 1"]
-
+;グッドノーマル判定用・今は使わない
+[if exp="sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1"]
+;[eval exp="tf.message2='黒田'"]
 [endif]
-[if exp="sf.ED_sijyou_normal == 1 || sf.ED_sijyou_good == 1"]
-
+[if exp="sf.ED_zaizen_normal == 1 && sf.ED_zaizen_good == 1"]
+;[eval exp="tf.message3='財前'"]
 [endif]
-[if exp="sf.ED_zaizen_normal == 1 || sf.ED_zaizen_good == 1"]
-
+[if exp="sf.ED_sijyou_normal == 1 && sf.ED_sijyou_good == 1"]
+;[eval exp="tf.message4='四条'"]
 [endif]
-[if exp="sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_good == 1"]
-
+[if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1"]
+;[eval exp="tf.message5='殿下'"]
 [endif]
-[if exp="sf.ED_hujieda_normal == 1 || sf.ED_hujieda_good == 1"]
-
+[if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1"]
+;[eval exp="tf.message6='鳥君(とりぎみ)'"]
+[endif]
+;=====================================================
+;直前にどのルートをクリアしたか？　tf.message7
+[if exp="tf.ED_kuroda == undefined || tf.ED_zaizen == undefined || tf.ED_sijyou ==== undefined ||  tf.ED_katuraginomiya == undefined || tf.ED_hujieda == undefined"]
+;テスト用エラー回避　仮で四条にしてます変更してください。ゲームデータがないときに確認したい為
+[eval exp="tf.message7='四条'"]
+[endif]
+[if exp="tf.ED_kuroda == 1 || f.kuroda_au == 1"]
+[eval exp="tf.message7='黒田'"]
+[endif]
+[if exp="tf.ED_zaizen == 1 || f.zaizen_au == 1"]
+[eval exp="tf.message7='財前'"]
+[endif]
+[if exp="tf.ED_sijyou == 1 || f.sijyou_au == 1"]
+[eval exp="tf.message7='四条'"]
+[endif]
+[if exp="tf.ED_katuraginomiya == 1 || f.katuraginomiya_au == 1"]
+[eval exp="tf.message7='殿下'"]
+[endif]
+[if exp="tf.ED_hujieda == 1 || f.hujieda_au == 1"]
+[eval exp="tf.message7='鳥君(とりぎみ)'"]
 [endif]
 ;=====================================================
 ;淑女度を一時変数に渡します
@@ -70,17 +91,18 @@ please click[p]
 [s]
 
 *tweet_yes
+[cm]
 [current layer="message0"]
 Twitter画面を開きます。[p]
 [iscript]
-var val = encodeURI(tf.message);
-//var val = mp.message;
-//window.open('https://twitter.com/intent/tweet?text=[emb exp=mp.message]');
-window.open('https://twitter.com/intent/tweet?hashtags=恋綴り&text=淑女度は'+val+'でした。');
+var val_1 = encodeURI(tf.message7);
+var val_2 = encodeURI(tf.message);
+window.open('https://twitter.com/intent/tweet?hashtags=恋綴り&hashtags=フリーゲーム&text=エンディング'+val_1+'ルートをクリアしました。淑女度は'+val_2+'でした。');
 [endscript]
 
 
 *closetweet
+[cm]
 [current layer="message0"]
 タイトル画面に戻ります。[p]
 ;ゲームプレイ後か判定
