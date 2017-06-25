@@ -6,7 +6,7 @@
 [chara_mod name="bg" storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 ;クリックしないとならない 何かメッセージ　
-[position layer=message1 width=600 height=160 top=150 left=80 margint="20" opacity=100 color=snow]
+[position layer=message1 width=600 height=160 top=150 left=80 margint=30 opacity=250 color=snow]
 @layopt layer=message1 visible=true
 [iscript]
 $(".message1_fore").css('box-shadow', '100px 100px 100px #fff');
@@ -20,6 +20,7 @@ $(".message1_fore").css('box-shadow', '100px 100px 100px #fff');
 [iscript]
 $(".messege1_fore").css('box-shadow', '0px', '0px', '0px');
 [endscript]
+@layopt layer=message1 visible=false
 [wait time=10]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
