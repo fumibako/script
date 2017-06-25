@@ -52,7 +52,7 @@
 ;=====================================================
 *next_1
 ;直前にどのルートをクリアしたか？　tf.message7
-[if exp="tf.ED_kuroda == undefined || tf.ED_zaizen == undefined || tf.ED_sijyou == undefined || tf.ED_katuraginomiya == undefined || tf.ED_hujieda == undefined"] 
+[if exp="tf.test_sijyou == true"] 
 ;テスト用エラー回避　仮で四条にしてます変更してください。ゲームデータがないときに確認したい為
 [eval exp="tf.message7='四条'"]
 [endif]
