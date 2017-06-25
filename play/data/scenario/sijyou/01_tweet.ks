@@ -76,7 +76,9 @@ please click[p]
 ;メッセージ
 [current layer="message0"]
 おめでとうございます。　この喜びを伝えますか？[r]
-淑女度は[emb exp="tf.message"]でした。[p]
+淑女度は[emb exp="tf.message"]でした。
+;[p]
+[wait time=10]
 
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
