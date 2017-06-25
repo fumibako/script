@@ -84,14 +84,18 @@ $(".layer_2").css("opacity",0);
 
 [if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
 [button name=rp_bt storage="test_katuraginomiya_hyoujou.ks" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg" x=270 y=240 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　葛城宮" x=270 y=380 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=240 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　？？？" x=270 y=380 size=17 color=navy visible=true]
 [endif]
 
 [if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1]
 [button name=rp_bt storage="test_hujieda_hyoujou.ks" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=420 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　藤枝" x=50 y=560 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=420 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　？？？" x=50 y=560 size=17 color=navy visible=true]
 [endif]
 @jump target ="*common"
 ;=====================================================================================
