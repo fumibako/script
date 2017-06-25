@@ -155,7 +155,7 @@ alert("test!");
 [eval exp="tf.extra_2 = true"]
 [endif]
 *extra2_hantei_end
-[if exp="tf.omake_2 == true"]
+[if exp="tf.extra_2 == true"]
 	[locate x=10 y=130]
 	[button name="list" graphic="button_title_omake.png" target="*omake" time=0]
 [endif]
