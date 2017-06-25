@@ -97,10 +97,20 @@ Twitter画面を開きます。[p]
 [iscript]
 var val_1 = encodeURI(tf.message7);
 var val_2 = encodeURI(tf.message);
-window.open('https://twitter.com/intent/tweet?hashtags=恋綴り&hashtags=フリーゲーム&text=エンディング'+val_1+'ルートをクリアしました。淑女度は'+val_2+'でした。');
+window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,フリーゲーム&text=エンディング'+val_1+'ルートをクリアしました。淑女度は'+val_2+'でした。');
 [endscript]
-
-
+;=================================================メモ==================================================================================================
+;パラメータ名=パラメータ値を & で連結することで、
+;特定のツイートにリプライ（返信）したり、ツイート完了後にフォローボタン付きのプロフィールを表示することが可能になります。
+;https://twitter.com/intent/tweet?text=ツイート内容&in_reply_to=ツイートID&related=account
+;text=ツイート本文
+;url=ツイートにURLを関連付けます。ツイートの末尾にURLが追加されます。
+;in_reply_to=ツイートIDを指定します。
+;ツイートに対する返信として投稿できます。
+;ツイートIDとは、ツイートの直接URLの一番最後の数字です。https://twitter.com/screen_name/status/1234567890 なら 1234567890 がツイートIDです。
+;hashtags=ハッシュタグを追加します。「#」は不要です。カンマで複数指定できます。
+;他フォローする、言語の指定（自動で最適化されるので指定しなくて良い）　http://kiteretsu-world.info/blog/2015/07/05/how-to-make-tweet-button/
+;===========================================================================================================================================
 *closetweet
 [cm]
 [current layer="message0"]
