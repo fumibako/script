@@ -124,6 +124,18 @@ window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,フリーゲー
 [cm]
 [current layer="message0"]
 タイトル画面に戻ります。[p]
+
+;初期化
+;藤枝 
+@eval exp="f.hujieda_au=0" 
+;葛城宮 
+@eval exp="f.katuraginomiya_au=0"
+;財前 
+@eval exp="f.zaizen_au=0"
+@eval exp="f.kuroda_au=0" 
+;四条
+@eval exp="f.sijyou_au=0"
+
 ;ゲームプレイ後か判定
 [if exp="f.okeiko_gamen == true"]
 ;呼び出した場所に戻る
