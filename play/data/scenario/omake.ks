@@ -58,20 +58,28 @@ $(".layer_2").css("opacity",0);
 ;黒田はありません
 [if exp="sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1 && sf.ED_kuroda_bad == 1"]
 [button name=rp_bt target="*page_0" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　黒田" x=50 y=200 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
+[ptext layer=2 page=fore text="表情鑑賞　:　？？？" x=50 y=200 size=17 color=navy visible=true]
 [endif]
+
 ;四条
 [if exp="sf.ED_sijyou_normal == 1 && sf.ED_sijyou_good == 1 && sf.ED_sijyou_bad == 1"]
 [button name=rp_bt storage="test_sijyou_hyoujou.ks" graphic="../fgimage/bg/B4nFWraU42/replay_sijyou_normalED.jpg" x=270 y=60 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　四条" x=270 y=200 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　？？？" x=270 y=200 size=17 color=navy visible=true]
 [endif]
+
 ;財前
 [if exp="sf.ED_zaizen_normal == 1 && sf.ED_zaizen_good == 1 && sf.ED_zaizen_bad2 == 1 && sf.ED_zaizen_bad1 == 1"]
 [button name=rp_bt storage="test_zaizen_hyoujou.ks" graphic="../fgimage/bg/I9IhvvVdPo/replay_zaizen_normalED.jpg" x=50 y=240 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　財前" x=50 y=380 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=240 width=200 height=130]
+[ptext layer=2 page=fore text="表情鑑賞　:　？？？" x=50 y=380 size=17 color=navy visible=true]
 [endif]
 
 [if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
