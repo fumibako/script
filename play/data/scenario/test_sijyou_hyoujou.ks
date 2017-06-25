@@ -339,11 +339,13 @@
 @jump target=page_end
 
 *page_end
-
+[if exp="tf.flag_omake == false"]
 [glink storage="sijyou/test_bg_mode.ks" target=0 exp="tf.page++" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
 [if exp="tf.page > 0"]
 [glink storage="sijyou/test_bg_mode.ks" target=0 exp="tf.page--" text="前へ" size=15 width="100" x=800 y=240 color=white]
 [endif]
+[endif]
+
 [if exp="tf.flag_omake == false"]
 [glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
 [elsif exp="tf.flag_omake == true"]
