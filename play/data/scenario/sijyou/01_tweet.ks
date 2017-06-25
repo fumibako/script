@@ -14,15 +14,16 @@
 [font color=0x664f44 size=30]
 ;クリックしないとならない 何かメッセージ　
 ――文綴る、 大切な貴方に　想い馳せ[p]
-[resetfont]
-[wait time=10]
-@layopt layer=message1 visible=false
-[wait time=10]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="title_yukidoke.ogg" loop=true]
 [eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
+[wait time=10]
+[resetfont]
+[wait time=10]
+@layopt layer=message1 visible=false
+[wait time=10]
 
 *teet_test
 ; Twitter関連プラグイン v1.00; シケモクMKさま
