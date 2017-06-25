@@ -45,7 +45,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 [glink target="test9_4b" text="9月4週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
-[glink target="test_camera" text="tweetテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=blue]
+[glink target="tweet" text="tweetテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=blue]
 
 [glink target="test_replay2" text="ＣＧリプレイ解放" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=blue]
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -422,10 +422,10 @@ $('.loding_pic1').remove();
 @jump storage="sijyou/asuka_fumi.ks"
 [s]
 
-*test_camera
+*tweet
 [cm]
 [freeimage layer = 26]
-@jump storage="sijyou/camera_sijyou.ks
+@jump storage="sijyou/01_tweet.ks
 [s]
 
 *test_replay
