@@ -6,20 +6,14 @@
 [chara_mod name="bg" storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 ;クリックしないとならない 何かメッセージ　
-[position layer=message1 width=600 height=100 top=150 left=80 margint=30 opacity=200 color=snow]
+[position layer=message1 width=600 height=100 top=150 left=80 margint=30 opacity=100 color=snow]
 @layopt layer=message1 visible=true
-[iscript]
-$(".message1_fore").css({'box-shadow' : 'inset 0 20px 0px 0px #fff'});
-[endscript]
 [wait time=10]
 [current layer="message1"]
 [font color=0x664f44 size=30]
 ――文綴る、 私の大切な 貴方に　想い馳せ[p]
 [resetfont]
 [wait time=10]
-[iscript]
-$(".messege1_fore").css('box-shadow' , 'none');
-[endscript]
 @layopt layer=message1 visible=false
 [wait time=10]
 [if exp="sf.BGM=='ON'"]
