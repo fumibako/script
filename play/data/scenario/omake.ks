@@ -1,5 +1,5 @@
 ;=========================================
-; 回想モード　画面作成 黒田ルートについては未調整です。
+; extraモード　画面作成 黒田ルート立ち絵テストがないです。
 ;=========================================
 *start
 ;◆◆一度色々リセットする
@@ -55,30 +55,33 @@ $(".layer_2").css("opacity",0);
     tf.flag_omake = false;
 [endscript]
 ;==================================================================================
+;黒田はありません
 [if exp="sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1 && sf.ED_kuroda_bad == 1"]
-
+[button name=rp_bt target="*page_0" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130]
 [else]
 [image name=list layer=2 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
 [endif]
-
+;四条
 [if exp="sf.ED_sijyou_normal == 1 && sf.ED_sijyou_good == 1 && sf.ED_sijyou_bad == 1"]
-
+[button name=rp_bt storage="test_sijyou_hyoujou.ks" graphic="../fgimage/bg/replay_sijyou_normalED.jpg" x=270 y=60 width=200 height=130]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130]
 [endif]
-
+;財前
 [if exp="sf.ED_zaizen_normal == 1 && sf.ED_zaizen_good == 1 && sf.ED_zaizen_bad2 == 1 && sf.ED_zaizen_bad1 == 1"]
-
-[endif]
-[if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
-
+[button name=rp_bt storage="test_zaizen_hyoujou.ks" graphic="../fgimage/bg/replay_zaizen_normalED.jpg" x=490 y=60 width=200 height=130]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=490 y=60 width=200 height=130]
 [endif]
-[if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1]
-
+[if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
+[button name=rp_bt storage="test_katuraginomiya_hyoujou.ks" graphic="../fgimage/bg/replay_katuraginomiya_normalED.jpg" x=50 y=240 width=200 height=130]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=240 width=200 height=130]
+[endif]
+[if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1]
+[button name=rp_bt storage="test_hujieda_hyoujou.ks" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=240 width=200 height=130]
+[else]
+[image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=240 width=200 height=130]
 [endif]
 @jump target ="*common"
 ;=====================================================================================
