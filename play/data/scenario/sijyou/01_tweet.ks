@@ -1,5 +1,6 @@
 *first
 [stopbgm]
+[skipstop]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
