@@ -673,10 +673,18 @@ $('.1_fore').remove();
 ;◆normalED終了処理へ
 [if exp="f.okeiko_gamen==true"]
 [財前ルート終了 end="normal"]
+;財前ルートをクリアした
+[eval exp="tf.ED_zaizen == 1"]
+;tweet表示
+[call storage="sijyou/01_tweet.ks"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 
 
+;財前ルートをクリアした
+[eval exp="tf.ED_zaizen == 1"]
+;tweet表示
+@jump torage="sijyou/01_tweet.ks"
 
 @jump storage="test_zaizen.ks"
 [s]
