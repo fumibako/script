@@ -143,12 +143,12 @@ if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
 @jump target=extra2_hantei_end
 [endif]
 ;葛城宮判定
-[if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"
+[if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
 [eval exp="tf.extra_2 = true"]
 @jump target=extra2_hantei_end
 [endif]
 ;藤枝判定
-[if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1]
+[if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1"]
 [eval exp="tf.extra_2 = true"]
 [endif]
 *extra2_hantei_end
