@@ -566,6 +566,7 @@ $('.omoide1').remove();
 [wait time=2000]
 [fadeoutbgm time=3000]
 
+[if exp="tf.test_sijyou==true"]
 ;初期化
 ;藤枝 
 @eval exp="f.hujieda_au=0" 
@@ -576,15 +577,17 @@ $('.omoide1').remove();
 @eval exp="f.kuroda_au=0" 
 ;四条
 @eval exp="f.sijyou_au=0" 
+[endif]
 
 [freeimage layer=27]
-;白暗転がいいとはおもう　とりあえず暗転;終了用の画像が必要です　
+;背景mod変更　レイヤー２９ではありません。
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=1300]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
 
 [if exp="f.okeiko_gamen==true"]
 [return]
+[call storage="01_tweet.ks"]
 [endif]
 
 @jump storage="test_sijyou.ks"
