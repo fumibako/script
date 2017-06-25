@@ -43,10 +43,16 @@ please click[p]
 [endif]
 ;=====================================================
 ;直前にどのルートをクリアしたか？　tf.message7
-[if exp="tf.ED_kuroda == undefined || tf.ED_zaizen == undefined || tf.ED_sijyou ==== undefined ||  tf.ED_katuraginomiya == undefined || tf.ED_hujieda == undefined"]
+[if exp="tf.ED_kuroda == undefined || tf.ED_zaizen == undefined"] 
 ;テスト用エラー回避　仮で四条にしてます変更してください。ゲームデータがないときに確認したい為
 [eval exp="tf.message7='四条'"]
 [endif]
+[if exp="tf.ED_sijyou ==== undefined || tf.ED_katuraginomiya == undefined || tf.ED_hujieda == undefined"]
+;テスト用エラー回避　仮で四条にしてます変更してください。ゲームデータがないときに確認したい為
+[eval exp="tf.message7='四条'"]
+[endif]
+
+
 [if exp="tf.ED_kuroda == 1 || f.kuroda_au == 1"]
 [eval exp="tf.message7='黒田'"]
 [endif]
