@@ -477,6 +477,21 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 @jump storage="test.ks"
 [s]
 
+*back_test_2
+[freeimage layer = 24]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+
+[イベントシーン終了]
+[cm]
+[freeimage layer = 26]
+[eval exp="f.kaogura = 'on'"]
+@jump storage="omake.ks"
+[s]
+
 *title
 [freeimage layer = 24]
 [freeimage layer = 8]
