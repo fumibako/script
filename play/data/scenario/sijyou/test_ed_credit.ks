@@ -585,8 +585,10 @@ $('.omoide1').remove();
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=1300]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
+
 ;tweet表示
-[call storage="01_tweet.ks"]
+[call storage="sijyou/01_tweet.ks"]
+
 [if exp="f.okeiko_gamen==true"]
 [return]
 [endif]
