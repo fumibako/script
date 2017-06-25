@@ -9,7 +9,7 @@
 [position layer=message1 height=160 top=200 left=80 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font color=0x664f44 size=32]
+[font color=0x664f44 size=30]
 ――文綴る、 私の大切な 貴方に　想い馳せ[p]
 [resetfont]
 [wait time=10]
