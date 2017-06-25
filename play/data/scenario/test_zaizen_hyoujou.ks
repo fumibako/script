@@ -1,4 +1,5 @@
 ﻿;マクロ及び立ち絵の自然な退場・登場時に◆B4nFWraU42さん作スクリプトを使用させていただきました。ありがとうございます
+[cm]
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
@@ -125,8 +126,11 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 ;[glink target="emo_07" text="[財前]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [endif]
 
-[glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=290 color=white]
-[glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=320 color=white]
+[if exp="tf.flag_omake == false"]
+[glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
+[elsif exp="tf.flag_omake == true"]
+[glink target="back_test_2" text="おまけへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
+[endif][glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=320 color=white]
 この表情は以下の指定です。[r]
 ポーズマクロ：[emb exp="f.gra_zaizen_pose"][r]
 表情マクロ　：[emb exp="f.gra_zaizen_face"][r]
