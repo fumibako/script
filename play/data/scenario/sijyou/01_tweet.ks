@@ -25,6 +25,11 @@ please click[p]
 *twitter
 [イベントシーン構築ボタン無し版]
 ;=====================================================
+;bad判定用・今は使わない マクロ[四条ルート終了 end=bad]に追記必須
+[if exp="tf.ED_bad == 1"]
+@jump target=*no_tweet
+[endif]
+;=====================================================
 ;グッドノーマル判定用・今は使わない
 [if exp="sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1"]
 ;[eval exp="tf.message2='黒田'"]
@@ -42,6 +47,7 @@ please click[p]
 ;[eval exp="tf.message6='鳥君(とりぎみ)'"]
 [endif]
 ;=====================================================
+*next_1
 ;直前にどのルートをクリアしたか？　tf.message7
 [if exp="tf.ED_kuroda == undefined || tf.ED_zaizen == undefined || tf.ED_sijyou == undefined || tf.ED_katuraginomiya == undefined || tf.ED_hujieda == undefined"] 
 ;テスト用エラー回避　仮で四条にしてます変更してください。ゲームデータがないときに確認したい為
@@ -127,6 +133,11 @@ window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,フリーゲー
 @jump target=end_test
 [endif]
 
+*no_tweet
+[if exp="f.okeiko_gamen == true"]
+;呼び出した場所に戻る　今は使っていない
+@jump storage="event.ks" target=*event_ED
+[endif]
 
 ;¥¥¥¥¥¥¥¥イベントおわり¥¥¥¥¥¥¥¥
 *end_test
