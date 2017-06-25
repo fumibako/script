@@ -129,6 +129,9 @@ if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
 ;(どれかのルートを？)全エンディングクリア条件で表示予定。位置は今後さらに調整するかもしれません
 ;黒田判定
 [if exp="sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1 && sf.ED_kuroda_bad == 1"]
+[iscript]
+alert("test!");
+[endscript]
 [eval exp="tf.extra_2 = true"]
 @jump target=extra2_hantei_end
 [endif]
@@ -138,7 +141,7 @@ if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
 @jump target=extra2_hantei_end
 [endif]
 ;財前判定
-[if exp="sf.ED_zaizen_normal == 1 && sf.ED_zaizen_good == 1 && sf.ED_zaizen_bad2 == 1 sf.ED_zaizen_bad1 == 1"]
+[if exp="sf.ED_zaizen_normal == 1 && sf.ED_zaizen_good == 1 && sf.ED_zaizen_bad2 == 1 && sf.ED_zaizen_bad1 == 1"]
 [eval exp="tf.extra_2 = true"]
 @jump target=extra2_hantei_end
 [endif]
