@@ -75,15 +75,15 @@ $(".layer_2").css("opacity",0);
 [endif]
 
 [if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
-[button name=rp_bt storage="test_katuraginomiya_hyoujou.ks" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg" x=50 y=270 width=200 height=130]
+[button name=rp_bt storage="test_katuraginomiya_hyoujou.ks" graphic="../fgimage/bg/I9IhvvVdPo/replay_katuraginomiya_normalED.jpg" x=270 y=240 width=200 height=130]
 [else]
-[image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=270 width=200 height=130]
+[image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=240 width=200 height=130]
 [endif]
 
 [if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1]
-[button name=rp_bt storage="test_hujieda_hyoujou.ks" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=270 y=240 width=200 height=130]
+[button name=rp_bt storage="test_hujieda_hyoujou.ks" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=300 width=200 height=130]
 [else]
-[image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=270 width=200 height=130]
+[image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=300 width=200 height=130]
 [endif]
 @jump target ="*common"
 ;=====================================================================================
