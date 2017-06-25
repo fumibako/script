@@ -1,17 +1,18 @@
 *first
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*11_1 storage="hujieda/preload_hujieda.ks]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [bg storage="../fgimage/bg/title.jpg" time=0]
+[wait time=10]
 ;クリックしないとならない
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=0x664f44 size=32]
-please click……[p]
+please click[p]
 [resetfont]
+[wait time=10]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="title_yukidoke.ogg" loop=true]
