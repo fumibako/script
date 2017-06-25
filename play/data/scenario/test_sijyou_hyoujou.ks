@@ -1,4 +1,5 @@
 ﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+[cm]
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
@@ -343,7 +344,11 @@
 [if exp="tf.page > 0"]
 [glink storage="sijyou/test_bg_mode.ks" target=0 exp="tf.page--" text="前へ" size=15 width="100" x=800 y=240 color=white]
 [endif]
+[if exp="tf.flag_omake == false"]
 [glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
+[elsif exp="tf.flag_omake == true"]
+[glink target="back_test_2" text="おまけへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
+[endif]
 [glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=320 color=white]
 この表情は以下の指定です。[r]
 ポーズマクロ：[emb exp="f.gra_sijyou_pose"][r]
@@ -1243,6 +1248,20 @@
 @jump storage="test.ks"
 [s]
 
+*back_test_2
+[freeimage layer = 24]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+
+[イベントシーン終了]
+[cm]
+[freeimage layer = 26]
+[eval exp="f.kaogura = 'on'"]
+@jump storage="omake.ks"
+[s]
 
 
 *title
