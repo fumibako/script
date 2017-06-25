@@ -1,11 +1,15 @@
 *first
 [stopbgm]
+[call target=*start storage="tyrano.ks"]
+[call target=*11_1 storage="hujieda/preload_hujieda.ks]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 ;クリックしないとならない
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font color=white size=32]
+[font color=0x664f44 size=32]
 please click……[p]
 [resetfont]
 [if exp="sf.BGM=='ON'"]
@@ -13,10 +17,7 @@ please click……[p]
 [playbgm storage="title_yukidoke.ogg" loop=true]
 [eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
-[call target=*start storage="tyrano.ks"]
-[call target=*11_1 storage="hujieda/preload_hujieda.ks]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
+
 *teet_test
 ; Twitter関連プラグイン v1.00; シケモクMKさま
 ;　Twitterで好きな文章のつぶやきを促すことができます。 呼び出すスクリプト追記場所を考え中
@@ -57,7 +58,7 @@ please click……[p]
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font color=white size=32]
+[font color=0x664f44 size=32]
 
 [link target=*tweet_yes]は　　　い[endlink][r]
 [r][r][r]
