@@ -12,7 +12,8 @@
 [wait time=10]
 [current layer="message1"]
 [font color=0x664f44 size=30]
-――文綴る、 私の大切な 貴方に　想い馳せ[p]
+;クリックしないとならない 何かメッセージ　
+――文綴る、 大切な貴方に　想い馳せ[p]
 [resetfont]
 [wait time=10]
 @layopt layer=message1 visible=false
