@@ -1,5 +1,8 @@
 ﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [cm]
+[iscript]
+$('.list').remove();
+[endscript]
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
