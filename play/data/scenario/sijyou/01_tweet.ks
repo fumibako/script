@@ -52,6 +52,7 @@ please click[p]
 [endif]
 [wait time=10]
 ;メッセージ
+[current layer="message0"]
 おめでとうございます。　この喜びを伝えますか？[r]
 淑女度は[emb exp="tf.message"]でした。[p]
 
