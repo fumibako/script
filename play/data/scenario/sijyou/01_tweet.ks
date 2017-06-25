@@ -3,7 +3,7 @@
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
-[bg storage="../fgimage/bg/title.jpg" time=0]
+[chara_mod name="bg" storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 ;クリックしないとならない 何かメッセージ
 [position layer=message1 height=160 top=200 left=380 opacity=0]
