@@ -5,12 +5,12 @@
 [call target=*start storage="macro_etc.ks"]
 [chara_mod name="bg" storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
-;クリックしないとならない 何かメッセージ
+;クリックしないとならない 何かメッセージ　
 [position layer=message1 height=160 top=200 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=0x664f44 size=32]
-please click[p]
+――文綴る、 私の大事な 貴方に　想い馳せ[p]
 [resetfont]
 [wait time=10]
 [if exp="sf.BGM=='ON'"]
