@@ -125,7 +125,7 @@
 ;四条face
 [preload storage="data/image/face_sijyou_sepia.png" wait=true]
 [preload storage="data/image/face_sijyou_color.png" wait=true]
-[preload storage="data/image/face_sijyou_smile.png" wait=true]
+[preload storage="data/image/face_sijyou_smail.png" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
