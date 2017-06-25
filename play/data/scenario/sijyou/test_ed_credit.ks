@@ -1,6 +1,7 @@
 *replay_test_ed_credit
 *first
 [if exp="tf.test_sijyou==true"]
+[stopbgm]
 [chara_mod name="bg" storage="toumei.gif"]
 [glink target=test_haikei text=藤枝ver exp="f.hujieda_au=1" width="200" x=200 y=80 color=white]
 [glink target=test_haikei text=葛城宮ver exp="f.katuraginomiya_au=1" width="200" x=200 y=130 color=white]
