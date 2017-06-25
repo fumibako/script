@@ -111,7 +111,7 @@ Twitter画面を開きます。[p]
 [iscript]
 var val_1 = encodeURI(tf.message7);
 var val_2 = encodeURI(tf.message);
-window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲームコレクション,フリーゲーム&url=goo.gl/JQGY4Z&text=エンディング'+val_1+'ルートをクリアしました。淑女度は'+val_2+'でした。');
+window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲームコレクション,フリーゲーム&url=goo.gl/JQGY4Z&text=エンディング'+val_1+'ルートをクリアしました。淑女度は'+val_2+'でした。goo.gl/JQGY4Z');
 [endscript]
 ;=================================================メモ==================================================================================================
 ;パラメータ名=パラメータ値を & で連結することで、
