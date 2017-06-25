@@ -5,6 +5,7 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
+$('.list').remove();
 f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaizen/me_okori.png","data/fgimage/zaizen/me_hiyayaka.png","data/fgimage/zaizen/kuti_hiyayaka.png","data/fgimage/zaizen/me_yokofusi1.png","data/fgimage/zaizen/me_yoko.png","data/fgimage/zaizen/me_toji.png","data/fgimage/zaizen/me_niko.png","data/fgimage/zaizen/me_fusi2.png","data/fgimage/zaizen/me_fusi1.png","data/fgimage/zaizen/me_ake.png","data/fgimage/zaizen/mayu_tuyoki.png","data/fgimage/zaizen/mayu_sage.png","data/fgimage/zaizen/mayu_odoroki.png","data/fgimage/zaizen/mayu_komari_soft.png","data/fgimage/zaizen/mayu_hisome.png","data/fgimage/zaizen/kuti_warau.png","data/fgimage/zaizen/kuti_odoroki.png","data/fgimage/zaizen/kuti_mu.png","data/fgimage/zaizen/kuti_hohoemi_soft.png","data/fgimage/zaizen/kuti_hohoemi.png","data/fgimage/zaizen/kuti_ake.png","data/fgimage/zaizen/emo_hohosome.png","data/fgimage/zaizen/emo_ase.png","data/fgimage/zaizen/kuti_futuu.png","data/fgimage/zaizen/me_futuu.png","data/fgimage/zaizen/mayu_futuu.png","data/fgimage/zaizen/base_suit.png","data/fgimage/zaizen/base_enbifuku.png"];
 [endscript]
 [preload storage=&f.preload_images_tati wait=true]
