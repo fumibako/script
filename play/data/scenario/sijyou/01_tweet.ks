@@ -9,7 +9,7 @@
 [position layer=message1 width=600 height=100 top=150 left=80 margint=30 opacity=200 color=snow]
 @layopt layer=message1 visible=true
 [iscript]
-$(".message1_fore").css('box-shadow', 'inset 0 0 20px #fff');
+$(".message1_fore").css({'box-shadow' : 'inset 0 20px 0px 0px #fff'});
 [endscript]
 [wait time=10]
 [current layer="message1"]
@@ -18,7 +18,7 @@ $(".message1_fore").css('box-shadow', 'inset 0 0 20px #fff');
 [resetfont]
 [wait time=10]
 [iscript]
-$(".messege1_fore").css('box-shadow' : 'none');
+$(".messege1_fore").css('box-shadow' , 'none');
 [endscript]
 @layopt layer=message1 visible=false
 [wait time=10]
