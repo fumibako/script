@@ -5,8 +5,8 @@
 [call target=*start storage="macro_etc.ks"]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
-;クリックしないとならない
-[position layer=message1 height=160 top=300 left=380 opacity=0]
+;クリックしないとならない 何かメッセージ
+[position layer=message1 height=160 top=200 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=0x664f44 size=32]
@@ -57,7 +57,7 @@ please click[p]
 淑女度は[emb exp="tf.message"]でした。[p]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=200 left=380 opacity=0]
+[position layer=message1 height=160 top=100 left=380 opacity=0]
 [wait time=10]
 @layopt layer=message1 visible=true
 [current layer="message1"]
@@ -70,6 +70,7 @@ please click[p]
 [s]
 
 *tweet_yes
+[current layer="message0"]
 Twitter画面を開きます。[p]
 [iscript]
 var val = encodeURI(tf.message);
@@ -80,6 +81,7 @@ window.open('https://twitter.com/intent/tweet?hashtags=恋綴り&text=淑女度�
 
 
 *closetweet
+[current layer="message0"]
 タイトル画面に戻ります。[p]
 ;ゲームプレイ後か判定
 [if exp="f.okeiko_gamen == true"]
