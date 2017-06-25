@@ -9,7 +9,7 @@
 [position layer=message1 height=160 top=200 left=80 opacity=1 color=#ffffff]
 @layopt layer=message1 visible=true
 [iscript]
-$(".messege1_fore").css('box-shadow', '20px', '20px', '20px');
+$(".message1_fore").css('box-shadow', '20px', '20px', '20px');
 [endscript]
 [current layer="message1"]
 [font color=0x664f44 size=30]
