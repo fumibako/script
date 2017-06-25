@@ -1,4 +1,4 @@
-﻿*where_are_you
+﻿﻿*where_are_you
 ;↓読み込み不良対策。お稽古パート中なら文箱や情報画面を表示せず戻る
 [if exp="f.viewing_storage == 'okeiko.ks'"]
 	@jump storage=okeiko.ks target=*draw_button_system
@@ -1919,7 +1919,7 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 	@jump target=*info_face_katuraginomiya_owari
 [endif]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando < 40"]
-	;face_katuraginomiya_sepia.png：(normalED条件未満) f.katuraginomiya_au == 1 (f.event_katuraginomiya[1]はイベントファイル末尾のf.katuraginomiya_fumi_startでも可）
+	;face_katuraginomiya_sepia.png：(normalED条件未満) f.katuraginomiya_au == 1
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
 	@jump target=*info_face_katuraginomiya_owari
 [endif]
@@ -2104,19 +2104,34 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;◆ 藤枝フェイス
 [eval exp="tf.x_info = 0"]
 [eval exp="tf.y_info = 0"]
-[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70"]
+[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 && f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70 && (f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3))"]
 	;face_hujieda_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70※これはコメント
-	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_smile.png" zindex=2]	
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_smile_yuubin.png" zindex=2]	
 	@jump target=*info_face_hujieda_owari	
 [endif]
-[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 40"]
+[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 && f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70 && ((f.okeiko_month == 9 && f.okeiko_week == 4) || f.okeiko_month >= 10 || f.okeiko_month <= 3)"]
+	;face_hujieda_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70※これはコメント
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_smile_sifuku.png" zindex=2]	
+	@jump target=*info_face_hujieda_owari	
+[endif]
+[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 40 && (f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3))"]
 	;face_hujieda_color.png：(normalED条件のパラメータやフラグを満たす場合) f.hujieda_au == 1 && f.para_hujieda_koukando >= 40
-	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_color.png" zindex=2]
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_color_yuubin.png" zindex=2]
 	@jump target=*info_face_hujieda_owari	
 [endif]
-[if exp="f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month >= 10 || f.okeiko_month <= 3)"]
+[if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 40 && ((f.okeiko_month == 9 && f.okeiko_week == 4) || f.okeiko_month >= 10 || f.okeiko_month <= 3)"]
+	;face_hujieda_color.png：(normalED条件のパラメータやフラグを満たす場合) f.hujieda_au == 1 && f.para_hujieda_koukando >= 40
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_color_sifuku.png" zindex=2]
+	@jump target=*info_face_hujieda_owari	
+[endif]
+[if exp="f.hujieda_au == 1 && (f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3))"]
 	;face_hujieda_sepia.png：(normalED条件未満) f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month >= 10 || f.okeiko_month <= 3)※これはコメント
-	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_sepia.png" zindex=2]
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_sepia_yuubin.png" zindex=2]
+	@jump target=*info_face_hujieda_owari	
+[endif]
+[if exp="f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week == 4) || f.okeiko_month >= 10 || f.okeiko_month <= 3)"]
+	;face_hujieda_sepia.png：(normalED条件未満) f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month >= 10 || f.okeiko_month <= 3)※これはコメント
+	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_sepia_sifuku.png" zindex=2]
 [endif]
 *info_face_hujieda_owari
 ;======================================================================================
