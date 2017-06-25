@@ -6,7 +6,7 @@
 [chara_mod name="bg" storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 ;クリックしないとならない 何かメッセージ　
-[position layer=message1 height=160 top=200 left=80 opacity=1 color=#ffffff]
+[position layer=message1 height=160 top=200 left=80 opacity=100 color=#ffffff]
 @layopt layer=message1 visible=true
 [iscript]
 $(".message1_fore").css('box-shadow', '20px', '20px', '20px');
