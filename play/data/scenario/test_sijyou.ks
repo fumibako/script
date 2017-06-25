@@ -45,6 +45,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 [glink target="test9_4b" text="9月4週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="test_camera" text="tweetテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=blue]
 
 [glink target="test_replay2" text="ＣＧリプレイ解放" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=blue]
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -131,7 +132,6 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 [glink target="test_fumi2" text="手紙（話題）" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="*test_ibent_fumi" text="イベント用の手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="test_fumi3" text="飛鳥紗代子からの手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test_camera" text="tweetテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="test_save" text="セーブデータクリア" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=blue]
 
 [glink target="test_page3" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
