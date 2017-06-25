@@ -6,7 +6,7 @@
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 ;クリックしないとならない
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=160 top=300 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=0x664f44 size=32]
@@ -50,13 +50,14 @@ please click[p]
 ;テスト用・エラー回避用
 [eval exp="tf.message=0"]
 [endif]
-
+[wait time=10]
 ;メッセージ
 おめでとうございます。　この喜びを伝えますか？[r]
-淑女度は[emb exp="tf.message"]でした。
+淑女度は[emb exp="tf.message"]でした。[p]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=160 top=200 left=380 opacity=0]
+[wait time=10]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=0x664f44 size=32]
