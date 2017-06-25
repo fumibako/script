@@ -369,11 +369,14 @@
 ;[藤枝頬染め]
 [preload storage="data/fgimage/hujieda/emo_hohosome.png" wait=true]
 ;藤枝faceノーマルエンド未満
-[preload storage="data/image/face_hujieda_sepia.png" wait=true]
+[preload storage="data/image/face_hujieda_sepia_yuubin.png" wait=true]
+[preload storage="data/image/face_hujieda_sepia_sifuku.png" wait=true]
 ;藤枝faceノーマルエンド　好感度40以上
-[preload storage="data/image/face_hujieda_color.png" wait=true]
+[preload storage="data/image/face_hujieda_color_yuubin.png" wait=true]
+[preload storage="data/image/face_hujieda_color_sifuku.png" wait=true]
 ;藤枝faceグッド
-[preload storage="data/image/face_hujieda_smile.png" wait=true]
+[preload storage="data/image/face_hujieda_smile_yuubin.png" wait=true]
+[preload storage="data/image/face_hujieda_smile_sifuku.png" wait=true]
 ;======================================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
