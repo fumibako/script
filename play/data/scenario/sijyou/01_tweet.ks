@@ -144,6 +144,23 @@ window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,フリーゲー
 ;呼び出した場所に戻る
 [return]
 [endif]
+
+;テスト時戻る
+[if exp="tf.test_kuroda == true"]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+
+[if exp="tf.test_zaizen == true"]
+@jump storage="test_zaizen.ks"
+[endif]
+
+[if exp="tf.test_katuraginomiya == true"]
+@jump storage="test_katuragi.ks"
+[endif]
+[if exp="tf.test_hujieda == true"]
+@jump storage="test_hujieda.ks"
+[endif]
+
 [if exp="tf.test_sijyou == true"]
 @jump target=end_test
 [endif]
