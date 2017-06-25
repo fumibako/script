@@ -128,7 +128,11 @@
 ;[glink target="emo_07" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [endif]
 
-[glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=290 color=white]
+[if exp="tf.flag_omake == false"]
+[glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
+[elsif exp="tf.flag_omake == true"]
+[glink target="back_test_2" text="おまけへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
+[endif]
 [glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=320 color=white]
 この表情は以下の指定です。[r]
 ポーズマクロ：[emb exp="f.gra_katuraginomiya_pose"][r]
