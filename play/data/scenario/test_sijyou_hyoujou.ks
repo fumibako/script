@@ -28,7 +28,9 @@ $('.list').remove();
 [cm]
 ;背景変更
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
+[if exp="tf.flag_omake != true"]
 [イベントシーン構築]
+[endif]
 [freeimage layer = 29]
 
 *page_01
