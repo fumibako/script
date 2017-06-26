@@ -1,8 +1,11 @@
 ﻿;マクロ及び立ち絵の自然な退場・登場時に◆B4nFWraU42さん作スクリプトを使用させていただきました。ありがとうございます
 [cm]
+[if exp="tf.flag_omake == true"]
 [iscript]
 $('.list').remove();
 [endscript]
+[clearfix]
+[endif]
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
