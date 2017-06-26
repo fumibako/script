@@ -361,7 +361,7 @@ $('.list').remove();
 [glink target="back_test_2" text="おまけへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
 [endif]
 [glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=320 color=white]
-[if exp="tf.btn_opasity == off"]
+[if exp="tf.btn_opasity == 'off'"]
 [glink target="opasity_0" text="ボタンを一時消す" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 color=white]
 [else]
 [glink target="opasity_100" text="ボタンを一時消す" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 color=white]
@@ -374,13 +374,13 @@ $('.list').remove();
 [endif]
 [s]
 *opasity_0
-[eval exp="tf.btn_opasity=off"]
+[eval exp="tf.btn_opasity='off'"]
 [iscript]
 $(".list").css("opacity",0);
 [endscript]
 ボタンを表示[p]
 *opasity_100
-[eval exp="tf.btn_opasity=on"]
+[eval exp="tf.btn_opasity='on'"]
 [iscript]
 $(".list").css("opacity",100);
 [endscript]
