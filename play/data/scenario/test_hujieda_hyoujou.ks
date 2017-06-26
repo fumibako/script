@@ -142,7 +142,7 @@ $('.list').remove();
 [else]
 [glink name=opasity target="opasity_100" text="ボタンを表示" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 color=white]
 [endif]
-[glink name=opasity target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=320 color=white]
+[glink name=opasity target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=320 color=white]
 [if exp="tf.flag_omake != true"]
 この表情は以下の指定です。[r]
 ポーズマクロ：[emb exp="f.gra_hujieda_pose"][r]
