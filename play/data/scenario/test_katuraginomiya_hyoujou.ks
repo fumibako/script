@@ -46,109 +46,132 @@ $('.list').remove();
 *text
 [cm]
 [layopt layer=24 visible=true]
-[ptext text="マクロ：サイズ(衣装･表情再指定願います)" layer=24 size=12 x=30 y=10 color=black bold=bold]
-[ptext text="マクロ：衣装" layer=24 size=18 x=30 y=130 color=black bold=bold]
-[ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-;[ptext text="表　情" layer=24 size=18 x=100 y=300 color=black bold=bold]
-[ptext text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
-[ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
+[ptext name=list text="マクロ：サイズ(衣装･表情再指定願います)" layer=24 size=12 x=30 y=10 color=black bold=bold]
+[ptext name=list text="マクロ：衣装" layer=24 size=18 x=30 y=130 color=black bold=bold]
+[ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
+[ptext name=irast text="Illustration　by :◆jsYiJcqRkk" layer=24 size=10 x=390 y=1 color=black bold=bold]
+;[ptext name=list text="表　情" layer=24 size=18 x=100 y=300 color=black bold=bold]
+[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
+[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
-[glink target="size_01" text="[葛城宮サイズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
-[glink target="size_02" text="[葛城宮サイズ隣に並ぶ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
-[glink target="size_03" text="[葛城宮サイズ顔アップ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
+[glink name=list target="size_01" text="[葛城宮サイズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=white]
+[glink name=list target="size_02" text="[葛城宮サイズ隣に並ぶ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=white]
+[glink name=list target="size_03" text="[葛城宮サイズ顔アップ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
 
-[glink target="pose_01" text="[葛城宮ベース軍服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 color=white]
-[glink target="pose_02" text="[葛城宮ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 color=white]
-;[glink target="pose_03" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
-;[glink target="pose_04" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
+[glink name=list target="pose_01" text="[葛城宮ベース軍服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 color=white]
+[glink name=list target="pose_02" text="[葛城宮ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 color=white]
+;[glink name=list target="pose_03" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=white]
+;[glink name=list target="pose_04" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 color=white]
 
-[glink target="face_01" text="[葛城宮通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 color=white]
-[glink target="face_09" text="[葛城宮笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 color=white]
-[glink target="face_10" text="[葛城宮笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 color=white]
-[glink target="face_08" text="[葛城宮微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 color=white]
-[glink target="face_05" text="[葛城宮ため息]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 color=white]
-[glink target="face_03" text="[葛城宮驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 color=white]
-[glink target="face_11" text="[葛城宮憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 color=white]
-[glink target="face_04" text="[葛城宮困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 color=white]
-[glink target="face_02" text="[葛城宮怒り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 color=white]
-[glink target="face_12" text="[葛城宮真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 color=white]
-[glink target="face_06" text="[葛城宮目伏せ照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 color=white]
-[glink target="face_07" text="[葛城宮微笑み照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 color=white]
+[glink name=list target="face_01" text="[葛城宮通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 color=white]
+[glink name=list target="face_09" text="[葛城宮笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 color=white]
+[glink name=list target="face_10" text="[葛城宮笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 color=white]
+[glink name=list target="face_08" text="[葛城宮微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 color=white]
+[glink name=list target="face_05" text="[葛城宮ため息]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 color=white]
+[glink name=list target="face_03" text="[葛城宮驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 color=white]
+[glink name=list target="face_11" text="[葛城宮憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 color=white]
+[glink name=list target="face_04" text="[葛城宮困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 color=white]
+[glink name=list target="face_02" text="[葛城宮怒り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 color=white]
+[glink name=list target="face_12" text="[葛城宮真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 color=white]
+[glink name=list target="face_06" text="[葛城宮目伏せ照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 color=white]
+[glink name=list target="face_07" text="[葛城宮微笑み照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 color=white]
 
-[glink target="face_21" text="[葛城宮目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
+[glink name=list target="face_21" text="[葛城宮目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 color=white]
 
-[glink target="face_22" text="[葛城宮伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 color=white]
+[glink name=list target="face_22" text="[葛城宮伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 color=white]
 
-[glink target="face_23" text="[葛城宮目を閉じる]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 color=white]
+[glink name=list target="face_23" text="[葛城宮目を閉じる]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 color=white]
 
-[glink target="face_24" text="[葛城宮目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 color=white]
+[glink name=list target="face_24" text="[葛城宮目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 color=white]
 
-;[glink target="face_24" text="[葛城宮怒り]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 color=white]
+;[glink name=list target="face_24" text="[葛城宮怒り]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 color=white]
 
 
-[glink target="mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=30 color=blue]
-[glink target="me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=30 color=blue]
-[glink target="kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=30 color=blue]
-[glink target="emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=30 color=blue]
+[glink name=list target="mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=30 color=blue]
+[glink name=list target="me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=30 color=blue]
+[glink name=list target="kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=30 color=blue]
+[glink name=list target="emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=30 color=blue]
 
 [if exp="f.gra_katuraginomiya_part=='mayu'"]
-[glink target="mayu_01" text="[葛城宮眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
-[glink target="mayu_02" text="[葛城宮眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="mayu_03" text="[葛城宮眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="mayu_04" text="[葛城宮眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="mayu_06" text="[葛城宮眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="mayu_07" text="[葛城宮眉怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="mayu_05" text="[葛城宮眉怒り皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-[glink target="mayu_08" text="[葛城宮眉悩み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+[glink name=list target="mayu_01" text="[葛城宮眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
+[glink name=list target="mayu_02" text="[葛城宮眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+[glink name=list target="mayu_03" text="[葛城宮眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+[glink name=list target="mayu_04" text="[葛城宮眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink name=list target="mayu_06" text="[葛城宮眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+[glink name=list target="mayu_07" text="[葛城宮眉怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink name=list target="mayu_05" text="[葛城宮眉怒り皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink name=list target="mayu_08" text="[葛城宮眉悩み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
 [endif]
 
 [if exp="f.gra_katuraginomiya_part=='me'"]
-[glink target="me_01" text="[葛城宮目通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
-[glink target="me_02" text="[葛城宮目大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="me_03" text="[葛城宮目にこ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="me_04" text="[葛城宮目伏]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="me_05" text="[葛城宮目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="me_06" text="[葛城宮横目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="me_07" text="[葛城宮横伏目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-;[glink target="me_08" text="[葛城宮目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+[glink name=list target="me_01" text="[葛城宮目通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
+[glink name=list target="me_02" text="[葛城宮目大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+[glink name=list target="me_03" text="[葛城宮目にこ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+[glink name=list target="me_04" text="[葛城宮目伏]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink name=list target="me_05" text="[葛城宮目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+[glink name=list target="me_06" text="[葛城宮横目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink name=list target="me_07" text="[葛城宮横伏目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+;[glink name=list target="me_08" text="[葛城宮目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
 [endif]
 
 [if exp="f.gra_katuraginomiya_part=='kuti'"]
-[glink target="kuti_01" text="[葛城宮口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
-[glink target="kuti_02" text="[葛城宮口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="kuti_03" text="[葛城宮口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-[glink target="kuti_04" text="[葛城宮口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-[glink target="kuti_05" text="[葛城宮口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-[glink target="kuti_06" text="[葛城宮口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-[glink target="kuti_09" text="[葛城宮口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
-[glink target="kuti_07" text="[葛城宮口怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
-[glink target="kuti_08" text="[葛城宮口微笑み上げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
+[glink name=list target="kuti_01" text="[葛城宮口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
+[glink name=list target="kuti_02" text="[葛城宮口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+[glink name=list target="kuti_03" text="[葛城宮口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+[glink name=list target="kuti_04" text="[葛城宮口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+[glink name=list target="kuti_05" text="[葛城宮口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+[glink name=list target="kuti_06" text="[葛城宮口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+[glink name=list target="kuti_09" text="[葛城宮口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink name=list target="kuti_07" text="[葛城宮口怒り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 color=white]
+[glink name=list target="kuti_08" text="[葛城宮口微笑み上げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 color=white]
 
 
 [endif]
 
 [if exp="f.gra_katuraginomiya_part=='emo'"]
-[glink target="emo_01" text="[葛城宮効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
-[glink target="emo_02" text="[葛城宮頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
-[glink target="emo_03" text="[葛城宮汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
-;[glink target="emo_04" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
-;[glink target="emo_05" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
-;[glink target="emo_06" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
-;[glink target="emo_07" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
+[glink name=list target="emo_01" text="[葛城宮効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 color=white]
+[glink name=list target="emo_02" text="[葛城宮頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 color=white]
+[glink name=list target="emo_03" text="[葛城宮汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 color=white]
+;[glink name=list target="emo_04" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 color=white]
+;[glink name=list target="emo_05" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 color=white]
+;[glink name=list target="emo_06" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 color=white]
+;[glink name=list target="emo_07" text="[葛城宮]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 color=white]
 [endif]
 
 [if exp="tf.flag_omake == false"]
-[glink target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
+[glink name=opasity target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
 [elsif exp="tf.flag_omake == true"]
-[glink target="back_test_2" text="おまけへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
+[glink name=opasity target="back_test_2" text="おまけへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
 [endif]
 [glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="160" x=800 y=320 color=white]
+[if exp="tf.btn_opasity != 'off'"]
+[glink name=opasity target="opasity_0" text="ボタンを一時消す" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 color=white]
+[else]
+[glink name=opasity target="opasity_100" text="ボタンを表示" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 color=white]
+[endif]
+[if exp="tf.flag_omake != true"]
 この表情は以下の指定です。[r]
 ポーズマクロ：[emb exp="f.gra_katuraginomiya_pose"][r]
 表情マクロ　：[emb exp="f.gra_katuraginomiya_face"][r]
 立ち絵の塗り等について、ゲーム組み込み後に調整予定です。
+[endif]
 [s]
-
+;============================================================================
+*opasity_0
+[eval exp="tf.btn_opasity='off'"]
+[iscript]
+$(".list").css("opacity",0);
+//$(".layer_free").css("opacity",0);
+[endscript]
+ボタンを表示[p]
+*opasity_100
+[eval exp="tf.btn_opasity='on'"]
+[iscript]
+$(".list").css("opacity",1);
+$(".layer_free").css("opacity",1);
+[endscript]
+@jump target=text
+;============================================================================
 
 *mayu
 [eval exp="f.gra_katuraginomiya_part='mayu'"]
@@ -482,6 +505,9 @@ $('.list').remove();
 [イベントシーン終了]
 [cm]
 [freeimage layer = 26]
+[iscript]
+$(".list").css("opacity",1);
+[endscript]
 @jump storage="test.ks"
 [s]
 
@@ -496,6 +522,9 @@ $('.list').remove();
 [イベントシーン終了]
 [cm]
 [freeimage layer = 26]
+[iscript]
+$(".list").css("opacity",1);
+[endscript]
 [eval exp="f.kaogura = 'on'"]
 @jump storage="omake.ks"
 [s]
@@ -508,7 +537,9 @@ $('.list').remove();
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
-
+[iscript]
+$(".list").css("opacity",1);
+[endscript]
 [イベントシーン終了]
 [cm]
 [freeimage layer = 26]
@@ -516,7 +547,9 @@ $('.list').remove();
 @jump storage="title.ks"
 [s]
 
-
+[iscript]
+$(".list").css("opacity",1);
+[endscript]
 [イベントシーン終了]
 @jump storage="test.ks"
 [s]
