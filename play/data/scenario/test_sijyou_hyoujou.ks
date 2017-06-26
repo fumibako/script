@@ -54,7 +54,7 @@ $('.list').remove();
 [ptext text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
 [ptext text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-[ptext name=irast text="Illustration by :かいこ" layer=24 size=16 x=360 y=10 color=black bold=bold]
+[ptext name=irast text="Illustration by :かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold]
 [ptext text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 *sijyou_text1
@@ -158,7 +158,7 @@ $('.list').remove();
 [ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
 [ptext name=list text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-[ptext name=irast text="Illustration by :かいこ" layer=24 size=16 x=360 y=10 color=black bold=bold]
+[ptext name=irast text="Illustration by :かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold]
 [ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
@@ -262,7 +262,7 @@ $('.list').remove();
 [ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
 [ptext name=list text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-[ptext name=irast text="Illustration by :かいこ" layer=24 size=16 x=360 y=10 color=black bold=bold]
+[ptext name=irast text="Illustration by :かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold]
 [ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
@@ -366,7 +366,7 @@ $('.list').remove();
 [if exp="tf.btn_opasity == 'off'"]
 [glink target="opasity_0" text="ボタンを一時消す" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 color=white]
 [else]
-[glink target="opasity_100" text="ボタンを一時消す" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 color=white]
+[glink target="opasity_100" text="ボタンを表示" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 color=white]
 [endif]
 [if exp="tf.flag_omake != true"]
 この表情は以下の指定です。[r]
@@ -380,9 +380,10 @@ $('.list').remove();
 [eval exp="tf.btn_opasity='off'"]
 [iscript]
 $(".list").css("opacity",0);
-$(".layer_free").css("opacity",0);
+//$(".layer_free").css("opacity",0);
 [endscript]
 ボタンを表示[p]
+[s]
 
 *opasity_100
 [eval exp="tf.btn_opasity='on'"]
