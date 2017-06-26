@@ -1,8 +1,11 @@
 ﻿;マクロ及び立ち絵の自然な退場・登場時に◆B4nFWraU42さん作スクリプトを使用させていただきました。ありがとうございます
 [cm]
+[if exp="tf.flag_omake == true"]
 [iscript]
 $('.list').remove();
 [endscript]
+[clearfix]
+[endif]
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
@@ -26,7 +29,9 @@ $('.list').remove();
 [cm]
 ;背景変更
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
+[if exp="tf.flag_omake != true"]
 [イベントシーン構築]
+[endif]
 [藤枝ベース郵便屋]
 [eval exp="f.gra_hujieda_pose='[藤枝ベース郵便屋]'"]
 [藤枝通常]
