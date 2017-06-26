@@ -522,6 +522,9 @@ $(".layer_free").css("opacity",1);
 [イベントシーン終了]
 [cm]
 [freeimage layer = 26]
+[iscript]
+$(".list").css("opacity",1);
+[endscript]
 [eval exp="f.kaogura = 'on'"]
 @jump storage="omake.ks"
 [s]
@@ -537,6 +540,9 @@ $(".layer_free").css("opacity",1);
 [イベントシーン終了]
 [cm]
 [freeimage layer = 26]
+[iscript]
+$(".list").css("opacity",1);
+[endscript]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
