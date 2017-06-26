@@ -486,6 +486,9 @@ $(".layer_free").css("opacity",1);
 @jump target=text
 
 *back_test
+[if exp="tf.flag_omake == true"]
+@jump target=*omake
+[endif]
 [freeimage layer = 24]
 [freeimage layer = 8]
 [freeimage layer = 9]
@@ -501,6 +504,7 @@ $(".list").css("opacity",1);
 @jump storage="test.ks"
 [s]
 
+*omake
 *back_test_2
 [freeimage layer = 24]
 [freeimage layer = 8]
@@ -535,7 +539,9 @@ $(".list").css("opacity",1);
 @jump storage="title.ks"
 [s]
 
-
+[if exp="tf.flag_omake == true"]
+@jump target=*omake
+[endif]
 [イベントシーン終了]
 @jump storage="test.ks"
 [s]
