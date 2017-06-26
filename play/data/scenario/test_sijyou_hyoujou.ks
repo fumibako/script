@@ -54,6 +54,7 @@ $('.list').remove();
 [ptext text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
 [ptext text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
+[ptext name=irast text="Illustration by :かいこ" layer=24 size=16 x=360 y=10 color=black bold=bold]
 [ptext text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 *sijyou_text1
@@ -261,6 +262,7 @@ $('.list').remove();
 [ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
 [ptext name=list text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
+[ptext name=irast text="Illustration by :かいこ" layer=24 size=16 x=360 y=10 color=black bold=bold]
 [ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
@@ -373,16 +375,20 @@ $('.list').remove();
 各表情は実際の立ち絵とは異なります。
 [endif]
 [s]
+
 *opasity_0
 [eval exp="tf.btn_opasity='off'"]
 [iscript]
 $(".list").css("opacity",0);
+$(".layer_free").css("opacity",0);
 [endscript]
 ボタンを表示[p]
+
 *opasity_100
 [eval exp="tf.btn_opasity='on'"]
 [iscript]
-$(".list").css("opacity",100);
+$(".list").css("opacity",1);
+$(".layer_free").css("opacity",1);
 [endscript]
 @jump target=sijyou_text
 
