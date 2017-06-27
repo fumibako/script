@@ -354,7 +354,7 @@ $('.list').remove();
 @jump target=page_end
 
 *page_end
-;[if exp="tf.flag_omake == false"]
+[if exp="tf.flag_omake == false"]
 [iscript]
 tf.page = tf.page;
 tf.raberu = "*page"+tf.page;
@@ -363,7 +363,7 @@ tf.raberu = "*page"+tf.page;
 [if exp="tf.page > 1"]
 [glink target="&tf.raberu" exp="tf.page--" text="前へ" size=15 width="100" x=800 y=240 color=white]
 [endif]
-;[endif]
+[endif]
 ;============================================================================
 [if exp="tf.flag_omake == false"]
 [glink name=opasity target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
