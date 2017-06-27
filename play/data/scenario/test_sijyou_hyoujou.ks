@@ -396,12 +396,15 @@ $(".list").css("opacity",1);
 $(".layer_free").css("opacity",1);
 [endscript]
 ;戻る場所
-[if exp="tf.size='defo'"] 
+[if exp="tf.size == 'defo'"] 
 @jump target=sijyou_text
-[elsif exp="tf.size='tonari'"]
+[elsif exp="tf.size == 'tonari'"]
 @jump target=*sijyou_tonari_text
-[elsif exp="tf.size='up'"]
+[elsif exp="tf.siz e== 'up'"]
 @jump target=sijyou_up_text
+[else]
+エラー。　お手数ですがゲームの再起動をお願いします。[p]
+@jump target=sijyou_text
 [endif]
 ;============================================================================
 
