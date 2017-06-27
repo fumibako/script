@@ -657,12 +657,11 @@ $('.kouka').remove();
 [endscript]
 [endmacro]
 *110
-[macro name="bg_web_blue2"]
+[macro name="門"]
 [eval exp="tf.img_kouka='off'"]
 [eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/bg_web_blue2.jpg"]
+[chara_mod name="bg" storage="bg/test_mon.jpg"]
 [endmacro]
-
 *111
 [macro name="町＿橋"]
 [eval exp="tf.img_kouka='off'"]
@@ -686,43 +685,44 @@ $('.kouka').remove();
 [chara_mod name="bg" storage="bg/bg_okeiko_anten.jpg"]
 [endmacro]
 *115
-[macro name="tf.page==115"]
+[macro name="室内音楽１"]
+[eval exp="tf.img_kouka='off'"]
 [eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
+[chara_mod name="bg" storage="bg/situnaiongaku.jpg"]
 [endmacro]
-
 *116
-[macro name="tf.page==116"]
+[macro name="室内音楽２"]
+[eval exp="tf.img_kouka='off'"]
+[eval exp="f.haikei_credit=''"]
+[chara_mod name="bg" storage="bg/situnaiongaku2.jpg"]
+[endmacro]
+*117
+[macro name="四条_omoide"]
 [eval exp="f.haikei_credit='fricer'"]
 [chara_mod name="bg" storage="bg/bg_omoide.jpg"]
 [endmacro]
-*117
-[macro name="tf.page==117"]
+*118
+[macro name="料亭"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [endmacro]
-*118
-[macro name="tf.page==118"]
+*119
+[macro name=桜"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [endmacro]
-*119
-[macro name="tf.page==119"]
-[eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/menu_load_bg.jpg"]
-[endmacro]
 *120
-[macro name="tf.page==120"]
+[macro name="森林公園＿門"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/bg_shinrinkouen_gate.jpg"]
 [endmacro]
 *121
-[macro name="tf.page==121"]
+[macro name="森林公園＿冬"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/bg_shinrinkouen_gate_winter.jpg"]
 [endmacro]
 *122
-[macro name="tf.page==122"]
+[macro name="森林公園＿冬＿夕"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/bg_shinrinkouen_gate_winter_yuu.jpg"]
 [endmacro]
@@ -832,28 +832,20 @@ $('.kouka').remove();
 [chara_mod name="bg" storage="bg/room_niwa_yuki.jpg"]
 [endmacro]
 
-[macro name="室内音楽１"]
-[eval exp="tf.img_kouka='off'"]
-[eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/situnaiongaku.jpg"]
-[endmacro]
-
-[macro name="室内音楽２"]
-[eval exp="tf.img_kouka='off'"]
-[eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/situnaiongaku2.jpg"]
-[endmacro]
-
-[macro name="門"]
-[eval exp="tf.img_kouka='off'"]
-[eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/test_mon.jpg"]
-[endmacro]
-
 [macro name="bg_web_blue.jpg"]
 [eval exp="tf.img_kouka='off'"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [endmacro]
 
+[macro name="bg_web_blue2"]
+[eval exp="tf.img_kouka='off'"]
+[eval exp="f.haikei_credit=''"]
+[chara_mod name="bg" storage="bg/bg_web_blue2.jpg"]
+[endmacro]
+
+[macro name="ロード背景"]
+[eval exp="f.haikei_credit=''"]
+[chara_mod name="bg" storage="bg/menu_load_bg.jpg"]
+[endmacro]
 [return]
