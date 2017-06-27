@@ -1706,6 +1706,7 @@ tf.raberu = "*page"+tf.page;
 
 *omake
 *back_test_2
+[freeimage layer = 27]
 [freeimage layer = 24]
 [freeimage layer = 8]
 [freeimage layer = 9]
@@ -1726,6 +1727,7 @@ $(".list").css("opacity",1);
 
 *title
 @clearstack
+[freeimage layer = 27]
 [freeimage layer = 24]
 [freeimage layer = 8]
 [freeimage layer = 9]
