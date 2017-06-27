@@ -1322,372 +1322,356 @@ $(".layer_free").css("opacity",1);
 ["チャリティー会場６"]
 @jump target=page_text
 *page8
-["チャリティー会場６＿１"]
-@jump target=page_text
-*page9
 ["チャリティー会場７"]
 @jump target=page_text
-*page10
+*page9
 ["チャリティー会場８"]
 @jump target=page_text
-*page11
+*page10
 ["藤枝演奏１"]
 @jump target=page_text
-*page12
+*page11
 ["藤枝演奏２"]
 @jump target=page_text
-*page13
+*page12
 ["藤枝演奏３"]
 @jump target=page_text
-*page14
-["藤枝演奏３＿１"]
-@jump target=page_text
-*page15
+*page13
 ["img効果キラキラ"]
 @jump target=page_text
-*page16
+*page14
 ["img効果削除"]
 ["葛城森林公園"]
 @jump target=page_text
-*page17
+*page15
 ["藤枝ムーンレイク"]
 @jump target=page_text
-*page18
+*page16
 ["四条宴会"]
 @jump target=page_text
-*page19
+*page17
 ["四条エピローグ和室"]
 @jump target=page_text
-*page20
+*page18
 ["四条玄関"]
 @jump target=page_text
-*page21
+*page19
 ["四条玄関ホール"]
 @jump target=page_text
-*page22
+*page20
 ["四条華衣部屋"]
 @jump target=page_text
-*page23
+*page21
 ["四条金屏風"]
 @jump target=page_text
-*page24
+*page22
 ["四条金屏風２"]
 @jump target=page_text
-*page25
+*page23
 ["四条香水"]
 @jump target=page_text
-*page26
+*page24
 ["四条＿香水２"]
 @jump target=page_text
-*page27
+*page25
 ["四条ネリネ庭"]
 @jump target=page_text
-*page28
+*page26
 [四条廊下"]
 @jump target=page_text
-*page29
+*page27
 [四条展覧会"]
 @jump target=page_text
-*page30
+*page28
 ["四条家"]
 @jump target=page_text
-*page31
-["ししおどし"]
-@jump target=page_text
-*page32
+*page29
 ["四条＿波ヶ浦"]
 @jump target=page_text
-*page33
+*page30
 ["四条＿波ヶ裏２"]
 @jump target=page_text
-*page34
+*page31
 ["四条＿病院"]
 @jump target=page_text
-*page35
+*page32
 ["四条＿銀座"]
 @jump target=page_text
-*page36
+*page33
 ["葛城宮＿御所"]
 @jump target=page_text
-*page37
+*page34
 ["葛城宮＿御所＿中"]
 @jump target=page_text
-*page38
+*page35
 ["葛城宮＿野天"]
 @jump target=page_text
-*page39
+*page36
 ["藤枝＿ミルクホール＿１"]
 @jump target=page_text
-*page40
+*page37
 [藤枝＿ミルクホール店内"]
 @jump target=page_text
-*page41
+*page38
 ["藤枝＿ミルクホール"]
 @jump target=page_text
-*page42
+*page39
 ["藤枝＿ミルクホール２"]
 @jump target=page_text
-*page43
+*page40
 ["藤枝＿ミルクホール３"]
 @jump target=page_text
-*page44
+*page41
 ["藤枝＿ミルクホール４"]
 @jump target=page_text
-*page45
+*page42
 ["藤枝＿ミルクホール玄関２"]
 @jump target=page_text
-*page46
+*page43
 ["藤枝＿ミルクホール玄関１"]
 @jump target=page_text
-*page47
+*page44
 ["財前＿会議室"]
 @jump target=page_text
-*page48
+*page45
 ["四条＿ネリネイメージ"]
 @jump target=page_text
-*page49
+*page46
 ["四条＿池"]
 @jump target=page_text
-*page50
+*page47
 ["四条＿池＿ロング"]
 @jump target=page_text
-*page51
+*page48
 ["四条＿バラ噴水"]
 @jump target=page_text
-*page52
+*page49
 ["四条＿温室"]
 @jump target=page_text
-*page53
+[s]
+*page50
 ["四条＿バラ茂み"]
 @jump target=page_text
-*page54
+[s]
+*page51
 ["四条＿土蔵"]
 @jump target=page_text
-*page55
+[s]
+*page52
 ["四条＿土蔵２"]
 @jump target=page_text
-*page56
+*page53
 ["四条＿教室１"]
 @jump target=page_text
-*page57
+[s]
+*page54
 ["四条＿教室夕"]
 @jump target=page_text
-*page58
+[s]
+*page55
 ["四条＿教室夕２"]
 @jump target=page_text
-*page59
+[s]
+*page56
 ["四条_教室全体"]
 @jump target=page_text
-*page60
+[s]
+*page57
 ["四条＿教室廊下"]
 @jump target=page_text
-*page61
-["四条＿洋館バラ"]
-@jump target=page_text
-*page62
+*page58
 ["財前＿バラ"]
 @jump target=page_text
-*page63
+*page59
 ["四条＿婚約者実家２"]
 @jump target=page_text
-*page64
+*page60
 ["四条＿花園"]
 @jump target=page_text
-*page65
+*page61
 ["財前＿居間"]
 @jump target=page_text
-*page66
+*page62
 ["財前＿パーティ会場"]
 @jump target=page_text
-*page67
+*page63
 ["財前＿パーティ会場２"]
 @jump target=page_text
-*page68
+*page64
 ["財前＿パーティ会場控室"]
 @jump target=page_text
-*page69
+*page65
 ["財前＿パーティ会場庭"]
 @jump target=page_text
-*page70
+*page66
 ["財前＿パーティ会場＿応接室"]
 @jump target=page_text
-*page71
+*page67
 ["財前＿洋館"]
 @jump target=page_text
-*page72
+*page68
 ["財前＿雪柳"]
 @jump target=page_text
-@jump target=page_text
-*page73
+*page69
 ["バラ園"]
-*page74
+@jump target=page_text
+*page70
 ["葛城宮＿謁見室"]
 @jump target=page_text
-*page75
+*page71
 ["藤枝＿演奏会場"]
 @jump target=page_text
-*page76
+*page72
 ["葛城宮＿演説"]
 @jump target=page_text
-*page77
+*page73
 ["葛城宮＿放送局"]
-@jump target=page_text
-*page78
+*page74
 ["公園"]
 @jump target=page_text
-*page79
+*page75
 ["葛城宮＿仲人庭"]
 @jump target=page_text
-*page80
+*page76
 ["葛城宮＿仲人道"]
 @jump target=page_text
-*page81
+*page77
 ["葛城宮＿仲人道２"]
 @jump target=page_text
-*page82
+*page78
 ["葛城宮＿仲人庭＿夕"]
 @jump target=page_text
-*page83
-["藤枝＿音楽練習室"]
-@jump target=page_text
-*page84
+*page79
 ["葛城宮＿執務室"]
 @jump target=page_text
-*page85
+*page80
+["藤枝＿音楽練習室"]
+@jump target=page_text
+*page81
 ["洋館内装"]
 @jump target=page_text
-*page86
+*page82
 ["ビワ＿木"]
 @jump target=page_text
-*page87
+*page83
 ["青空"]
 @jump target=page_text
-*page88
+*page84
 ["萩の花"]
 @jump target=page_text
-*page89
+*page85
 ["四条＿庭園＿椅子"]
 @jump target=page_text
-*page90
+*page86
 ["四条＿庭園＿椅子dark"]
 @jump target=page_text
-*page91
+*page87
 ["玄関"]
 @jump target=page_text
-*page92
+*page88
 ["四条＿歌舞伎"]
 @jump target=page_text
-*page93
+*page89
 ["四条＿歌舞伎＿外"]
 @jump target=page_text
-*page94
+*page90
 ["紅葉"]
 @jump target=page_text
-*page95
+*page91
 ["紅葉＿階段"]
 @jump target=page_text
-*page96
+*page92
 ["紅葉＿鬱葱"]
 @jump target=page_text
-*page97
+*page93
 ["黒田家"]
 @jump target=page_text
-*page98
+*page94
 ["町"]
 @jump target=page_text
-*page99
+*page95
 ["img効果＿町雪"]
 @jump target=page_text
-*page100
+*page96
 ["img効果削除"]
 ["門"]
 @jump target=page_text
-*page101
-["町＿橋"]
-@jump target=page_text
-*page102
-["町＿思い出"]
-@jump target=page_text
-*page103
+*page97
 ["お稽古部屋"]
 @jump target=page_text
-*page104
-["お稽古部屋＿暗転"]
+*page98
+["町＿橋"]
 @jump target=page_text
-*page105
+*page99
 ["室内音楽１"]
 @jump target=page_text
-*page106
+*page100
 ["室内音楽２"]
 @jump target=page_text
-*page107
-["四条_omoide"]
-@jump target=page_text
-*page108
+*page101
 ["料亭"]
 @jump target=page_text
-*page109
+*page102
 ["桜"]
 @jump target=page_text
-*page110
+*page103
 ["森林公園＿門"]
 @jump target=page_text
-*page111
+*page104
 ["森林公園＿冬"]
 @jump target=page_text
-*page112
+*page105
 ["森林公園＿冬＿夕"]
 @jump target=page_text
-*page113
+*page106
 ["森林公園＿夕"]
 @jump target=page_text
-*page114
+*page107
 ["四条＿和雑貨"]
 @jump target=page_text
-*page115
+*page108
 ["石畳み"]
 @jump target=page_text
-*page116
+*page109
 ["石畳み＿夕"]
 @jump target=page_text
-*page117
+*page110
 ["石畳み＿夜"]
 @jump target=page_text
-*page118
+*page111
 ["森林＿冬"]
 @jump target=page_text
-*page119
-@jump target=page_text
+*page112
 ["森林＿冬＿夕"]
 @jump target=page_text
-*page120
+*page113
 ["夕焼け"]
 @jump target=page_text
-*page121
+*page114
 ["藤枝_kaede_sita2"]
 @jump target=page_text
-*page122
+*page115
 ["藤枝_kyakuseki"]
 @jump target=page_text
-*page123
+*page116
 ["藤枝_tanpopo"]
 @jump target=page_text
-*page124
+*page117
 ["藤枝_tanpopo_kouen"]
 @jump target=page_text
-*page125
+*page118
 ["主人公庭＿０"]
 @jump target=page_text
-*page126
+*page119
 ["主人公庭＿明"]
 @jump target=page_text
-*page127
+*page120
 ["主人公庭＿春"]
 @jump target=page_text
-*page128
+*page121
 ["主人公庭＿夜"]
 @jump target=page_text
-*page129
+*page122
 ["主人公庭＿雪"]
 @jump target=page_text
 *page130
