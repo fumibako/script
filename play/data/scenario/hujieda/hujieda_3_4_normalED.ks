@@ -331,6 +331,11 @@ $('.1_fore').remove();
 ;◆normalED終了処理へ
 [if exp="f.okeiko_gamen==true"]
 [藤枝ルート終了 end="normal"]
+;藤枝ルートをクリアした
+[eval exp="tf.ED_fujieda == 1"]
+;tweet表示
+[call storage="sijyou/01_tweet.ks"]
+@jump storage="event.ks" target=*event_ED
 [endif]
 @jump storage="test_hujieda.ks"
 [s]
