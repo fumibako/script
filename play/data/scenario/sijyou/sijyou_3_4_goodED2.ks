@@ -137,13 +137,12 @@ $('.1_fore').remove();
 ;ending処理待ち
 [if exp="f.okeiko_gamen==true"]
 [eval exp="sf.ED_sijyou_normal=1"]
-[四条ルート終了 end=normal]
-
 ;四条ルートをクリアした
 [eval exp="tf.ED_sijyou == 1"]
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
 
+[四条ルート終了 end=normal]
 @jump storage="event.ks" target=*event_ED
 [endif]
 
