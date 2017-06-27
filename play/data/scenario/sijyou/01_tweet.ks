@@ -112,12 +112,12 @@ Twitter画面を開きます。[p]
 [iscript]
 var val_1 = encodeURI(tf.message7);
 var val_2 = encodeURI(tf.message);
-window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲームコレクション,フリーゲーム&url=goo.gl/JQGY4Z&text=エンディング'+val_1+'ルートをクリアしました。淑女度は'+val_2+'でした。goo.gl/JQGY4Z');
+window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲーム,フリーゲーム,乙女ゲーム&url=goo.gl/uq8Dd1&text=エンディング'+val_1+'ルートをクリアしました。淑女度は'+val_2+'でした。goo.gl/uq8Dd1');
 [endscript]
 ;=================================================メモ==================================================================================================
 ;パラメータ名=パラメータ値を & で連結することで、
 ;特定のツイートにリプライ（返信）したり、ツイート完了後にフォローボタン付きのプロフィールを表示することが可能になります。
-;https://twitter.com/intent/tweet?text=ツイート内容&in_reply_to=ツイートID&related=account
+;https://twitter.com/intent/tweet?text=ツイート内容&in_reply_to=koituduriID&related=account
 ;text=ツイート本文
 ;url=ツイートにURLを関連付けます。ツイートの末尾にURLが追加されます。
 ;in_reply_to=ツイートIDを指定します。
