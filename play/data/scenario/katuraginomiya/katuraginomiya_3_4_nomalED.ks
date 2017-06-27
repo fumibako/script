@@ -318,6 +318,10 @@ $('.1_fore').remove();
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました。マクロの動作がうまくいかない場合にまた変更する可能性があります(スクリプト担
 [if exp="f.okeiko_gamen==true"]
 [葛城宮ルート終了 end="normal"]
+;葛城宮ルートをクリアした
+[eval exp="tf.ED_katuraginomiya == 1"]
+;tweet表示
+[call storage="sijyou/01_tweet.ks"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 
