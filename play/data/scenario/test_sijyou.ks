@@ -94,7 +94,7 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 [glink target="test3_4" text="3月4週normalEND" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test_credit" text="仮credit" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=blue]
-[glink target="test_bg" text="背景テスト" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=blue]
+
 
 [glink target="test_page1" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
 [glink target="test_page3" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
@@ -399,11 +399,6 @@ $('.loding_pic1').remove();
 @jump storage="sijyou/test_ed_credit.ks"
 [s]
 
-*test_bg
-[cm]
-[freeimage layer = 26]
-@jump storage="sijyou/test_bg_mode.ks"
-[s]
 *test_fumi
 [cm]
 [freeimage layer = 26]
