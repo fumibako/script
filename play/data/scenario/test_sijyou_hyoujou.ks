@@ -403,7 +403,7 @@ $(".layer_free").css("opacity",1);
 [elsif exp="tf.siz e== 'up'"]
 @jump target=sijyou_up_text
 [else]
-エラー。　お手数ですがゲームの再起動をお願いします。[p]
+;エラー。　お手数ですがゲームの再起動をお願いします。[p]
 @jump target=sijyou_text
 [endif]
 ;============================================================================
@@ -1295,7 +1295,7 @@ $(".layer_free").css("opacity",1);
 [elsif exp="tf.siz e== 'up'"]
 @jump target=sijyou_up_text
 [else]
-エラー。　お手数ですがゲームの再起動をお願いします。[p]
+;エラー。　お手数ですがゲームの再起動をお願いします。[p]初期値
 @jump target=sijyou_text
 [endif]
 ;===========================================================
