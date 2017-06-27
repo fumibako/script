@@ -269,9 +269,9 @@ $('.list').remove();
 [ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
 [ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
-[glink name=list target="page_01" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=blue]
-[glink name=list target="page_02" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=blue]
-[glink name=list target="page_03" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=blue]
+[glink name=list target="page_01" exp="tf.size='defo'" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=blue]
+[glink name=list target="page_02" exp="tf.size='tonari'" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=blue]
+[glink name=list target="page_03" exp="tf.size='up'" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 color=blue]
 
 [glink name=list target="sijyou_up_pose_01" text="[四条_顔up_ベース着物]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 color=white]
 [glink name=list target="sijyou_up_pose_02" text="[四条_顔up_ベース羽織]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 color=white]
@@ -395,7 +395,14 @@ $(".list").css("opacity",0);
 $(".list").css("opacity",1);
 $(".layer_free").css("opacity",1);
 [endscript]
+;戻る場所
+[if exp="tf.size='defo'"] 
 @jump target=sijyou_text
+[elsif exp="tf.size='tonari'"]
+@jump target=*sijyou_tonari_text
+[elsif exp="tf.size='up'"]
+@jump target=sijyou_up_text
+[endif]
 ;============================================================================
 
 *sijyou_mayu
