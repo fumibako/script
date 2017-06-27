@@ -1515,199 +1515,182 @@ $(".layer_free").css("opacity",1);
 ["財前＿洋館"]
 @jump target=page_text
 *page72
-["財前＿洋館モノローグ"]
-@jump target=page_text
-*page73
 ["財前＿雪柳"]
 @jump target=page_text
-*page74
-["バラ園"]
 @jump target=page_text
-*page75
+*page73
+["バラ園"]
+*page74
 ["葛城宮＿謁見室"]
 @jump target=page_text
-*page76
+*page75
 ["藤枝＿演奏会場"]
 @jump target=page_text
-*page77
+*page76
 ["葛城宮＿演説"]
 @jump target=page_text
-*page78
+*page77
 ["葛城宮＿放送局"]
 @jump target=page_text
-*page79
+*page78
 ["公園"]
 @jump target=page_text
-*page80
+*page79
 ["葛城宮＿仲人庭"]
 @jump target=page_text
-*page81
+*page80
 ["葛城宮＿仲人道"]
 @jump target=page_text
-*page82
+*page81
 ["葛城宮＿仲人道２"]
 @jump target=page_text
-*page83
+*page82
 ["葛城宮＿仲人庭＿夕"]
 @jump target=page_text
-*page84
+*page83
 ["藤枝＿音楽練習室"]
 @jump target=page_text
-*page85
+*page84
 ["葛城宮＿執務室"]
 @jump target=page_text
-*page86
+*page85
 ["洋館内装"]
 @jump target=page_text
-*page87
-["ビワ＿花"]
-@jump target=page_text
-*page88
+*page86
 ["ビワ＿木"]
 @jump target=page_text
-*page89
+*page87
 ["青空"]
 @jump target=page_text
-*page90
+*page88
 ["萩の花"]
 @jump target=page_text
-*page91
+*page89
 ["四条＿庭園＿椅子"]
 @jump target=page_text
-*page92
+*page90
 ["四条＿庭園＿椅子dark"]
 @jump target=page_text
-*page93
+*page91
 ["玄関"]
 @jump target=page_text
-*page94
+*page92
 ["四条＿歌舞伎"]
 @jump target=page_text
-*page95
+*page93
 ["四条＿歌舞伎＿外"]
 @jump target=page_text
-*page96
+*page94
 ["紅葉"]
 @jump target=page_text
-*page97
+*page95
 ["紅葉＿階段"]
 @jump target=page_text
-*page98
+*page96
 ["紅葉＿鬱葱"]
 @jump target=page_text
-*page99
+*page97
 ["黒田家"]
 @jump target=page_text
-*page100
+*page98
 ["町"]
 @jump target=page_text
-*page101
+*page99
 ["img効果＿町雪"]
 @jump target=page_text
-*page102
+*page100
 ["img効果削除"]
-@jump target=page_text
-*page103
 ["門"]
 @jump target=page_text
-*page104
+*page101
 ["町＿橋"]
 @jump target=page_text
-*page105
+*page102
 ["町＿思い出"]
 @jump target=page_text
-*page106
+*page103
 ["お稽古部屋"]
 @jump target=page_text
-*page107
+*page104
 ["お稽古部屋＿暗転"]
 @jump target=page_text
-*page108
+*page105
 ["室内音楽１"]
 @jump target=page_text
-*page109
+*page106
 ["室内音楽２"]
 @jump target=page_text
-*page110
+*page107
 ["四条_omoide"]
 @jump target=page_text
-*page111
+*page108
 ["料亭"]
 @jump target=page_text
-*page112
+*page109
 ["桜"]
 @jump target=page_text
-*page113
+*page110
 ["森林公園＿門"]
 @jump target=page_text
-*page114
+*page111
 ["森林公園＿冬"]
 @jump target=page_text
-*page115
+*page112
 ["森林公園＿冬＿夕"]
 @jump target=page_text
-*page116
+*page113
 ["森林公園＿夕"]
 @jump target=page_text
-*page117
+*page114
 ["四条＿和雑貨"]
 @jump target=page_text
-*page118
+*page115
 ["石畳み"]
+@jump target=page_text
+*page116
+["石畳み＿夕"]
+@jump target=page_text
+*page117
+["石畳み＿夜"]
+@jump target=page_text
+*page118
+["森林＿冬"]
 @jump target=page_text
 *page119
 @jump target=page_text
-["石畳み＿夜"]
-@jump target=page_text
-*page120
-["石畳み＿夕"]
-@jump target=page_text
-*page121
-["bg_tirasi"]
-@jump target=page_text
-*page122
-["森林＿冬"]
-@jump target=page_text
-*page123
 ["森林＿冬＿夕"]
 @jump target=page_text
-*page124
+*page120
 ["夕焼け"]
 @jump target=page_text
-*page125
+*page121
 ["藤枝_kaede_sita2"]
 @jump target=page_text
-*page126
+*page122
 ["藤枝_kyakuseki"]
 @jump target=page_text
-*page127
+*page123
 ["藤枝_tanpopo"]
 @jump target=page_text
-*page128
+*page124
 ["藤枝_tanpopo_kouen"]
 @jump target=page_text
-*page129
+*page125
 ["主人公庭＿０"]
 @jump target=page_text
-*page130
+*page126
 ["主人公庭＿明"]
 @jump target=page_text
-*page131
+*page127
 ["主人公庭＿春"]
 @jump target=page_text
-*page132
+*page128
 ["主人公庭＿夜"]
 @jump target=page_text
-*page133
+*page129
 ["主人公庭＿雪"]
 @jump target=page_text
-*page134
-["bg_web_blue"]
-@jump target=page_text
-*page135
-["bg_web_blue2"]
-@jump target=page_text
-*page136
+*page130
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="tf.page=1"]
 @jump target=page_text
