@@ -1411,7 +1411,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page38
 ["葛城宮＿野天"]
-@jump target=page_end
+@jump target=page_text
 *page39
 ["藤枝＿ミルクホール＿１"]
 @jump target=page_text
@@ -1441,7 +1441,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page48
 ["四条＿ネリネイメージ"]
-@jump target=page_end
+@jump target=page_text
 *page49
 ["四条＿池"]
 @jump target=page_text
@@ -1459,13 +1459,13 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page54
 ["四条＿土蔵"]
-@jump target=page_end
+@jump target=page_text
 *page55
 ["四条＿土蔵２"]
 @jump target=page_end
 *page56
 ["四条＿教室１"]
-@jump target=page_end
+@jump target=page_text
 *page57
 ["四条＿教室夕"]
 @jump target=page_text
@@ -1486,7 +1486,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page63
 ["四条＿婚約者実家２"]
-@jump target=page_end
+@jump target=page_text
 *page64
 ["四条＿花園"]
 @jump target=page_text
@@ -1507,7 +1507,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page70
 ["財前＿パーティ会場＿応接室"]
-@jump target=page_end
+@jump target=page_text
 *page71
 ["財前＿洋館"]
 @jump target=page_text
@@ -1534,7 +1534,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page79
 ["公園"]
-@jump target=page_end
+@jump target=page_text
 *page80
 ["葛城宮＿仲人庭"]
 @jump target=page_text
@@ -1639,7 +1639,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page114
 ["森林公園＿冬"]
-@jump target=page_end
+@jump target=page_text
 *page115
 ["森林公園＿冬＿夕"]
 @jump target=page_text
@@ -1670,7 +1670,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page124
 ["夕焼け"]
-@jump target=page_end
+@jump target=page_text
 *page125
 ["藤枝_kaede_sita2"]
 @jump target=page_text
