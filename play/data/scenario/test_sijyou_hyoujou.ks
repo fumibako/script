@@ -1326,6 +1326,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page9
 ["チャリティー会場７"]
+@jump target=page_text
 *page10
 ["チャリティー会場８"]
 @jump target=page_text
