@@ -845,7 +845,7 @@ $('.kouka').remove();
 [chara_mod name="bg" storage="bg/room_niwa_yuki.jpg"]
 [endmacro]
 *143
-[macro name="bg_web_blue.jpg"]
+[macro name="bg_web_blue"]
 [eval exp="tf.img_kouka='off'"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
@@ -861,4 +861,124 @@ $('.kouka').remove();
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/menu_load_bg.jpg"]
 [endmacro]
+[return]
+
+;=============================================================================================
+*start2
+[eval exp="tf.page=0"]
+
+[mtext text=&f.haikei_credit layer=27 size=18 x=400 y=10 color=#5b4513 fadeout=false in_delay=0]
+@layopt layer=27 visible=true
+@layopt layer=1 visible=true
+@clearstack stack=if
+[iscript]
+tf.raberu = "*page"+tf.page;
+[endscript]
+*page0
+*page1
+["バラ"]
+*page2
+["チャリティー会場１"]
+*page3
+["チャリティー会場２"]
+*page4
+["チャリティー会場３"]
+*page5
+["チャリティー会場４"]
+*page6
+["チャリティー会場５"]
+*page7
+["チャリティー会場６"]
+*page8
+["チャリティー会場６＿１"]
+*page9
+["チャリティー会場７"]
+*page10
+["チャリティー会場８"]
+*page11
+["藤枝演奏１"]
+*page12
+["藤枝演奏２"]
+*page13
+["藤枝演奏３"]
+*page14
+["藤枝演奏３＿１"]
+*page15
+["img効果キラキラ"]
+*page16
+["葛城森林公園"]
+*page17
+["藤枝ムーンレイク"]
+*page18
+["四条宴会"]
+*page19
+["四条エピローグ和室"]
+*page20
+["四条玄関"]
+*page21
+["四条玄関ホール"]
+*page22
+["四条華衣部屋"]
+*page23
+["四条金屏風"]
+*page24
+["四条金屏風２"]
+*page25
+["四条香水"]
+*page26
+["四条＿香水２"]
+*page27
+["四条ネリネ庭"]
+*page28
+[四条廊下"]
+*page29
+[四条展覧会"]
+*page30
+["四条家"]
+*page31
+["ししおどし"]
+*page32
+["四条＿波ヶ浦"]
+*page33
+["四条＿波ヶ裏２"]
+*page34
+["四条＿病院"]
+*page35
+["四条＿銀座"]
+*page36
+["葛城宮＿御所"]
+*page37
+["葛城宮＿御所＿中"]
+*page38
+["葛城宮＿野天"]
+*page39
+["藤枝＿ミルクホール＿１"]
+*page40
+[藤枝＿ミルクホール店内"]
+*page41
+["藤枝＿ミルクホール"]
+*page42
+["藤枝＿ミルクホール２"]
+*page43
+["藤枝＿ミルクホール３"]
+*page44
+["藤枝＿ミルクホール４"]
+*page45
+["藤枝＿ミルクホール玄関２"]
+*page46
+["藤枝＿ミルクホール玄関１"]
+*page47
+["財前＿会議室"]
+*page48
+["四条＿ネリネイメージ"]
+*page49
+["四条＿池"]
+*page50
+["四条＿池＿ロング"]
+*page51
+["四条＿バラ噴水"]
+*page52
+["ムーンレイク＿ピアノ効果"]
+
+*end
 [return]
