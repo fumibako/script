@@ -1345,6 +1345,7 @@ $(".layer_free").css("opacity",1);
 ["img効果キラキラ"]
 @jump target=page_text
 *page16
+["img効果削除"]
 ["葛城森林公園"]
 @jump target=page_text
 *page17
@@ -1433,7 +1434,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page45
 ["藤枝＿ミルクホール玄関２"]
-@jump target=page_end
+@jump target=page_text
 *page46
 ["藤枝＿ミルクホール玄関１"]
 @jump target=page_text
@@ -1463,7 +1464,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page55
 ["四条＿土蔵２"]
-@jump target=page_end
+@jump target=page_text
 *page56
 ["四条＿教室１"]
 @jump target=page_text
@@ -1473,7 +1474,7 @@ $(".layer_free").css("opacity",1);
 *page58
 ["四条＿教室夕２"]
 @jump target=page_text
-*pagee59
+*page59
 ["四条_教室全体"]
 @jump target=page_text
 *page60
