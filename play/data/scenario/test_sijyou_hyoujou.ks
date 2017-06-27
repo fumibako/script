@@ -55,7 +55,7 @@ $('.list').remove();
 [cm]
 [layopt layer=24 visible=true]
 [ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
-[ptext name=list text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
+[ptext name=list text="ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 [ptext name=irast text="Illustration　by :かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold]
 [ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
@@ -159,7 +159,7 @@ $('.list').remove();
 [cm]
 [layopt layer=24 visible=true]
 [ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
-[ptext name=list text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
+[ptext name=list text="ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 [ptext name=irast text="Illustration　by:かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold]
 [ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
@@ -262,12 +262,12 @@ $('.list').remove();
 *sijyou_up_text
 [cm]
 [layopt layer=24 visible=true]
-[ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
-[ptext name=list text="マクロ：ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
-[ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-[ptext name=irast text="Illustration　by:かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold]
-[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
-[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
+[ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold overwrite=true]
+[ptext name=list text="ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold overwrite=true]
+[ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold overwrite=true]
+[ptext name=irast text="Illustration　by:かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold overwrite=true]
+[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold overwrite=true]
+[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold overwrite=true]
 
 [glink name=list target="page_01" exp="tf.size='defo'" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 color=blue]
 [glink name=list target="page_02" exp="tf.size='tonari'" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 color=blue]
@@ -353,7 +353,7 @@ $('.list').remove();
 @jump target=page_end
 
 *page_end
-[if exp="tf.flag_omake == false"]
+;[if exp="tf.flag_omake == false"]
 [iscript]
 tf.raberu = "*page"+tf.page;
 [endscript]
@@ -361,7 +361,7 @@ tf.raberu = "*page"+tf.page;
 [if exp="tf.page > 0"]
 [glink target="&tf.raberu" exp="tf.page--" text="前へ" size=15 width="100" x=800 y=240 color=white]
 [endif]
-[endif]
+;[endif]
 ;============================================================================
 [if exp="tf.flag_omake == false"]
 [glink name=opasity target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 color=white]
