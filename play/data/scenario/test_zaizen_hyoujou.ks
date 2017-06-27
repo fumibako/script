@@ -42,8 +42,8 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 *text
 [cm]
 [layopt layer=24 visible=true]
-[ptext name=list text="マクロ：サイズ(衣装･表情再指定願います)" layer=24 size=12 x=30 y=10 color=black bold=bold]
-[ptext name=list text="マクロ：衣装" layer=24 size=18 x=30 y=130 color=black bold=bold]
+[ptext name=list text="サイズ" layer=24 size=12 x=30 y=10 color=black bold=bold]
+[ptext name=list text="衣装" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 [ptext name=irast text="Illustration　by :◆jsYiJcqRkk" layer=24 size=10 x=390 y=1 color=black bold=bold]
 [ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
