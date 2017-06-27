@@ -352,9 +352,9 @@ $('.list').remove();
 
 *page_end
 [if exp="tf.flag_omake == false"]
-[glink storage="sijyou/test_bg_mode.ks" target=0 exp="tf.page++" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
+[glink target="&tf.page" exp="tf.page++" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
 [if exp="tf.page > 0"]
-[glink storage="sijyou/test_bg_mode.ks" target=0 exp="tf.page--" text="前へ" size=15 width="100" x=800 y=240 color=white]
+[glink target="&tf.page" exp="tf.page--" text="前へ" size=15 width="100" x=800 y=240 color=white]
 [endif]
 [endif]
 ;============================================================================
