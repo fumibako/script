@@ -7,10 +7,6 @@ $('.list').remove();
 [clearfix]
 [endif]
 
-[iscript]
-tf.raberu = "*page"+tf.page;
-[endscript]
-
 ;おまけモード：著者名以外にname=listを追加　画面右ボタンを追加（ボタンopasity_0） タイトルに戻る+おまけにもどるでlistの表示を初期化
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
@@ -358,6 +354,9 @@ tf.raberu = "*page"+tf.page;
 
 *page_end
 [if exp="tf.flag_omake == false"]
+[iscript]
+tf.raberu = "*page"+tf.page;
+[endscript]
 [glink target="&tf.raberu" exp="tf.page++" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
 [if exp="tf.page > 0"]
 [glink target="&tf.raberu" exp="tf.page--" text="前へ" size=15 width="100" x=800 y=240 color=white]
