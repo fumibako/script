@@ -236,7 +236,7 @@
 [chara_mod name="bg" storage="bg/B4nFWraU42/mirukuho_ru4.jpg"]
 [endmacro]
 *40
-macro name="藤枝＿ミルクホール店内"]
+[macro name="藤枝＿ミルクホール店内"]
 [eval exp="tf.img_kouka='off'"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/mirukutennai.jpg"]
