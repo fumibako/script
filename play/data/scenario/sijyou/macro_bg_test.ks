@@ -374,10 +374,10 @@
 [wait time=10]
 [endmacro]
 *42
-[macro name="藤枝＿ミルクホール２"]
+[macro name="四条縁側＿夏"]
 [eval exp="tf.img_kouka='off'"]
-[eval exp="f.haikei_credit='◆I9IhvvVdPo/＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg"]
+[eval exp="f.haikei_credit='＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/sijyou_engawa.jpg"]
 [wait time=10]
 [ptext name=credit text=&f.haikei_credit layer=27 size=18 x=&tf.cl_x y=&tf.cl_y color=#5b4513 overwrite=true]
 [wait time=10]
