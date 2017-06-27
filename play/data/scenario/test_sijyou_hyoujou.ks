@@ -1289,6 +1289,9 @@ $(".layer_free").css("opacity",1);
 ;背景マクロ使用・四条は戻り場所がちがうのでpage_textにて判定　他はtextでok
 ;===========================================================
 *page_text
+[iscript]
+tf.raberu = "*page"+tf.page;
+[endscript]
 [if exp="tf.size == 'defo'"] 
 @jump target=sijyou_text
 [elsif exp="tf.size == 'tonari'"]
@@ -1680,6 +1683,7 @@ $(".layer_free").css("opacity",1);
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="tf.page=1"]
 @jump target=page_text
+[s]
 ;===========================================================
 
 *back_test
