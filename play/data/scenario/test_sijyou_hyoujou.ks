@@ -1418,6 +1418,7 @@ $(".layer_free").css("opacity",1);
 *page39
 ["藤枝＿ミルクホール"]
 @jump target=page_text
+;背景のサイズ？場所変更わからない？
 *page40
 ["藤枝＿ミルクホール３"]
 @jump target=page_text
@@ -1526,6 +1527,7 @@ $(".layer_free").css("opacity",1);
 @jump target=page_text
 *page73
 ["葛城宮＿放送局"]
+@jump target=page_text
 *page74
 ["公園"]
 @jump target=page_text
