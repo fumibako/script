@@ -87,7 +87,7 @@ $(".layer_2").css("opacity",0);
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　葛城宮" x=270 y=380 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=240 width=200 height=130]
-[ptext layer=2 page=fore text="表情鑑賞　:　？？？" x=270 y=380 size=17 color=navy visible=true]
+[ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=270 y=380 size=17 color=navy visible=true]
 [endif]
 
 [if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1]
