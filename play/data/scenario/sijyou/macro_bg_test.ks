@@ -6,7 +6,6 @@
 @layopt layer=1 visible=true
 @clearstack stack=if
 [iscript]
-//$('.kouka').remove();
 tf.raberu = "*"+tf.page;
 [endscript]
 *label_macro
@@ -170,6 +169,11 @@ macro name="四条展覧会"]
 [eval exp="f.haikei_credit='fricer'"]
 [chara_mod name="bg" storage="bg/sijyou_namigaura.jpg"]
 [endmacro]
+
+[macro name="四条＿波ヶ裏２"]
+[eval exp="f.haikei_credit='fricer'"]
+[chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg"]
+[endmacro]
 *33
 [macro name="四条＿病院"]
 [eval exp="f.haikei_credit='明治村画像庫'"]
@@ -204,6 +208,31 @@ macro name="藤枝＿ミルクホール店内"]
 [macro name="藤枝＿ミルクホール"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/mirukutest.jpg"]
+[endmacro]
+*80
+[macro name="ミルクホール２"]
+[eval exp="f.haikei_credit='◆I9IhvvVdPo/＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg"]
+[endmacro]
+*81
+[macro name="ミルクホール３"]
+[eval exp="f.haikei_credit='◆I9IhvvVdPo/＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg"]
+[endmacro]
+*82
+[macro name="ミルクホール４"]
+[eval exp="f.haikei_credit='＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutest.jpg"]
+[endmacro]
+*78
+[macro name="藤枝＿ミルクホール玄関２"]
+[eval exp="f.haikei_credit='fricer'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg"]
+[endmacro]
+*79
+[macro name="藤枝＿ミルクホール玄関１"]
+[eval exp="f.haikei_credit='fricer'"]
+[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg"]
 [endmacro]
 *40
 [macro name="財前＿会議室"]
@@ -254,189 +283,160 @@ macro name="藤枝＿ミルクホール店内"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_dozou.jpg"]
 [endmacro]
 *49
+[macro name="四条＿土蔵２"]
+[eval exp="f.haikei_credit='＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
+[endmacro]
+*50
 [macro name="四条＿教室１"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [endmacro]
-*50
+*51
 [macro name="四条＿教室夕"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
 [endmacro]
-*51
+*52
 [macro name="四条＿教室夕２"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg"]
 [endmacro]
-*52
-[macro name="tf.page==52"]
-[eval exp="f.haikei_credit='＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
-[endmacro]
 *53
-[macro name="tf.page==53"]
+[macro name="四条_教室全体"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
 [endmacro]
 *54
-[macro name="tf.page==54"]
+[macro name="四条＿教室廊下"]
+[eval exp="f.haikei_credit='＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
+[endmacro]
+*55
+[macro name="四条＿洋館バラ"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/youkan_rose.jpg"]	
 [endmacro]
-*55
-[macro name="tf.page==55"]
+*56
+[macro name="財前＿バラ"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/B4nFWraU42/zaizen_bara.jpg"]
 [endmacro]
-*56
-[macro name="tf.page==56"]
-[eval exp="f.haikei_credit='＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
-[endmacro]
 *57
-[macro name="tf.page==57"]
+[macro name="四条＿婚約者実家２"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [endmacro]
 *58
-[macro name="tf.page==58"]
+[macro name="四条＿花園"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg"]
 [endmacro]
 *59
-[macro name="tf.page==59"]
-[eval exp="f.haikei_credit='fricer'"]
-[chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg"]
 
-[endmacro]
 *60
-[macro name="tf.page==60"]
+[macro name="財前＿居間"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [endmacro]
 *61
-[macro name="tf.page==61"]
+[macro name="財前＿パーティ会場"]
 [eval exp="f.haikei_credit='fricer'"]
 [chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [endmacro]
 *62
-[macro name="tf.page==62"]
+[macro name="財前＿パーティ会場２"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
 [endmacro]
 *63
-[macro name="tf.page==63"]
+[macro name="財前＿パーティ会場控室"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/zaizen_paty_hikae.jpg"]
 [endmacro]
 *64
-[macro name="tf.page==64"]
+[macro name="財前＿パーティ会場庭"]
 [eval exp="f.haikei_credit='flicer'"]
 [chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg"]
 [endmacro]
 *65
 ;photo　by　
-[macro name="tf.page==65"]
+[macro name="財前＿パーティ会場＿応接室"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/zaizen_paty_ousetu.jpg"]
 [endmacro]
 *66
-[macro name="tf.page==66"]
+[macro name="財前＿洋館"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
 [endmacro]
 *67
-[macro name="tf.page==67"]
+[macro name="財前＿洋館モノローグ"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/zaizen_youkan_zengamen.jpg"]
 [endmacro]
 *68
-[macro name="tf.page==68"]
+[macro name="財前＿雪柳"]
 [eval exp="f.haikei_credit='flicer'"]
 [chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
 [endmacro]
 *69
-[macro name="tf.page==69"]
+[macro name="バラ園"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
 [endmacro]
 *70
-[macro name="tf.page==70"]
+[macro name="藤枝＿ハト"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo/＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato.jpg"]
 [endmacro]
 *71
-[macro name="tf.page==71"]
+[macro name="藤枝＿ハト２"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo/＠名無しさん１'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_hujieda_hato2.jpg"]
 [endmacro]
 *72
-[macro name="tf.page==72"]
+[macro name="葛城宮＿謁見室"]
 [eval exp="f.haikei_credit='明治村画像庫'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg"]
 [endmacro]
 *73
-[macro name="tf.page==73"]
+[macro name="藤枝＿演奏会場"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg"]
 [endmacro]
 *74
-[macro name="tf.page==74"]
+[macro name="葛城宮＿演説"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/enzetu.jpg"]
 [endmacro]
 *75
-macro name="tf.page==75"]
+[macro name="葛城宮＿放送局"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/housoukyoku.jpg"]
 [endmacro]
 *76
-[macro name="tf.page==76"]
+[macro name="時子＿散策１"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tokiko_sansaku1.jpg"]
 [endmacro]
 *77
-[macro name="tf.page==77"]
+[macro name="公園"]
 [eval exp="f.haikei_credit='fricer'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [endmacro]
-*78
-[macro name="tf.page==78"]
-[eval exp="f.haikei_credit='fricer'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/miruku_genkan2.jpg"]
-[endmacro]
-*79
-[macro name="tf.page==79"]
-[eval exp="f.haikei_credit='fricer'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukugenkan.jpg"]
-[endmacro]
-*80
-macro name="tf.page==80"]
-[eval exp="f.haikei_credit='◆I9IhvvVdPo/＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg"]
-[endmacro]
-*81
-[macro name="tf.page==81"]
-[eval exp="f.haikei_credit='◆I9IhvvVdPo/＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg"]
-[endmacro]
-*82
-[macro name="tf.page==82"]
-[eval exp="f.haikei_credit='＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukutest.jpg"]
-[endmacro]
 *83
-[macro name="tf.page==83"]
+[macro name="葛城宮＿仲人庭"]
 [eval exp="f.haikei_credit='◆I9IhvvVdPo'"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg"]
 [endmacro]
 *84
-[macro name="tf.page==84"]
+[macro name="葛城宮＿仲人道"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi1.jpg"]
 [endmacro]
 *85
-[macro name="tf.page==85"]
+[macro name="葛城宮＿仲人道２"]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg"]
 [endmacro]
