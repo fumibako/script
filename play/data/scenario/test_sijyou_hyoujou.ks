@@ -1407,16 +1407,16 @@ $(".layer_free").css("opacity",1);
 ["葛城宮＿野天"]
 @jump target=page_text
 *page36
-["藤枝＿ミルクホール＿１"]
+["四条縁側＿夏"]
 @jump target=page_text
 *page37
-[藤枝＿ミルクホール店内"]
+["藤枝＿ミルクホール＿１"]
 @jump target=page_text
 *page38
-["藤枝＿ミルクホール"]
+[藤枝＿ミルクホール店内"]
 @jump target=page_text
 *page39
-["藤枝＿ミルクホール２"]
+["藤枝＿ミルクホール"]
 @jump target=page_text
 *page40
 ["藤枝＿ミルクホール３"]
