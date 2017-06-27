@@ -3,10 +3,14 @@
 [if exp="tf.flag_omake == true"]
 [iscript]
 $('.list').remove();
-tf.raberu = "*page"+tf.page;
 [endscript]
 [clearfix]
 [endif]
+
+[iscript]
+tf.raberu = "*page"+tf.page;
+[endscript]
+
 ;おまけモード：著者名以外にname=listを追加　画面右ボタンを追加（ボタンopasity_0） タイトルに戻る+おまけにもどるでlistの表示を初期化
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
