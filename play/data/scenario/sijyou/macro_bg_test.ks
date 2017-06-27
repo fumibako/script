@@ -1,13 +1,8 @@
 *start
-[eval exp="tf.page=0"]
 [eval exp="f.haikei_credit=''"]
-[mtext text=&f.haikei_credit layer=27 size=18 x=400 y=10 color=#5b4513 fadeout=false in_delay=0]
+[mtext text=&f.haikei_credit layer=27 size=18 x=10 y=600 color=#5b4513 fadeout=false in_delay=0]
 @layopt layer=27 visible=true
 @layopt layer=1 visible=true
-@clearstack stack=if
-[iscript]
-tf.raberu = "*"+tf.page;
-[endscript]
 *label_macro
 *1
 [macro name=バラ]
