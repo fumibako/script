@@ -422,7 +422,7 @@
 [macro name="財前＿会議室"]
 [eval exp="tf.img_kouka='off'"]
 [eval exp="f.haikei_credit='＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/test_zaizen_kaigi.jpg"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/test_zaizen_kaigi.jpg"]
 [wait time=10]
 [ptext name=credit text=&f.haikei_credit layer=27 size=18 x=&tf.cl_x y=&tf.cl_y color=#5b4513 overwrite=true]
 [wait time=10]
