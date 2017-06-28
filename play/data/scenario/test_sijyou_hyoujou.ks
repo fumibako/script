@@ -388,6 +388,8 @@ tf.raberu = "*page"+tf.page;
 [endif]
 [s]
 ;============================================================================
+;ボタンと特定のptextを消す
+;============================================================================
 *opasity_0
 [eval exp="tf.btn_opasity='off'"]
 [iscript]
@@ -409,7 +411,7 @@ $(".layer_free").css("opacity",1);
 [elsif exp="tf.siz e== 'up'"]
 @jump target=sijyou_up_text
 [else]
-;エラー。　お手数ですがゲームの再起動をお願いします。[p]
+;初期の表示　戻り場所
 @jump target=sijyou_text
 [endif]
 ;============================================================================
@@ -1580,134 +1582,131 @@ tf.raberu = "*page"+tf.page;
 ["藤枝＿音楽練習室"]
 @jump target=page_text
 *page81
-["洋館内装"]
-@jump target=page_text
-*page82
 ["ビワ＿木"]
 @jump target=page_text
-*page83
+*page82
 ["青空"]
 @jump target=page_text
-*page84
+*page83
 ["萩の花"]
 @jump target=page_text
-*page85
+*page84
 ["四条＿庭園＿椅子"]
 @jump target=page_text
-*page86
+*page85
 ["四条＿庭園＿椅子dark"]
 @jump target=page_text
-*page87
+*page86
 ["玄関"]
 @jump target=page_text
-*page88
+*page87
 ["四条＿歌舞伎"]
 @jump target=page_text
-*page89
+*page88
 ["四条＿歌舞伎＿外"]
 @jump target=page_text
-*page90
+*page89
 ["紅葉"]
 @jump target=page_text
-*page91
+*page90
 ["紅葉＿階段"]
 @jump target=page_text
-*page92
+*page91
 ["紅葉＿鬱葱"]
 @jump target=page_text
-*page93
+*page92
 ["黒田家"]
 @jump target=page_text
-*page94
+*page93
 ["町"]
 @jump target=page_text
-*page95
+*page94
 ["img効果＿町雪"]
 @jump target=page_text
-*page96
+*page95
 ["img効果削除"]
 ["門"]
 @jump target=page_text
-*page97
+*page96
 ["お稽古部屋"]
 @jump target=page_text
-*page98
+*page97
 ["町＿橋"]
 @jump target=page_text
-*page99
+*page98
 ["室内音楽１"]
 @jump target=page_text
-*page100
+*page99
 ["室内音楽２"]
 @jump target=page_text
-*page101
+*page100
 ["料亭"]
 @jump target=page_text
-*page102
+*page101
 ["桜"]
 @jump target=page_text
-*page103
+*page102
 ["森林公園＿門"]
 @jump target=page_text
-*page104
+*page103
 ["森林公園＿冬"]
 @jump target=page_text
-*page105
+*page104
 ["森林公園＿冬＿夕"]
 @jump target=page_text
-*page106
+*page105
 ["森林公園＿夕"]
 @jump target=page_text
-*page107
+*page106
 ["四条＿和雑貨"]
 @jump target=page_text
-*page108
+*page107
 ["石畳み"]
 @jump target=page_text
-*page109
+*page108
 ["石畳み＿夕"]
 @jump target=page_text
-*page110
+*page109
 ["石畳み＿夜"]
 @jump target=page_text
-*page111
+*page110
 ["森林＿冬"]
 @jump target=page_text
-*page112
+*page111
 ["森林＿冬＿夕"]
 @jump target=page_text
-*page113
+*page112
 ["夕焼け"]
 @jump target=page_text
-*page114
+*page113
 ["藤枝_kyakuseki"]
 @jump target=page_text
-*page115
+*page114
 ["藤枝_tanpopo"]
 @jump target=page_text
-*page116
+*page115
 ["藤枝_tanpopo_kouen"]
 @jump target=page_text
-*page117
+*page116
 ["主人公庭＿０"]
 @jump target=page_text
-*page118
+*page117
 ["主人公庭＿明"]
 @jump target=page_text
-*page119
+*page118
 ["主人公庭＿春"]
 @jump target=page_text
-*page120
+*page119
 ["主人公庭＿雪"]
 @jump target=page_text
-*page121
+*page120
 ["主人公庭＿夜"]
 @jump target=page_text
-*page122
+*page121
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="tf.page=1"]
 @jump target=page_text
-*page123
+*page122
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="tf.page=1"]
 @jump target=page_text
