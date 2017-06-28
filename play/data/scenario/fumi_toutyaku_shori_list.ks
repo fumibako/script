@@ -417,7 +417,7 @@ f.fumi_list_all_location_taishou.push(1);
 f.fumi_list_all_location_fumi.push(11);
 f.fumi_list_zaizen_location_fumi.push(11);
 f.fumi_list_zaizen_title.push(f.fumi_zaizen_title_new);
-f.fumi_list_zaizen_target.push("*zaizen_fumi12");
+f.fumi_list_zaizen_target.push("*zaizen_fumi11");
 f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[12]=1;
 f.zaizen_fumi_toutyakumachi_kangeki=-1;
