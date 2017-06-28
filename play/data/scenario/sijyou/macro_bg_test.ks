@@ -1579,4 +1579,7 @@ $('.kouka').remove();
 [erasemacro name="ロード背景"]
 [eval exp="tf.erase == false"]
 *end
+[iscript]
+alert("eraseしました");
+[endscript]
 [return]
