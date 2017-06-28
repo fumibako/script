@@ -1290,11 +1290,11 @@ $('.kouka').remove();
 [eval exp="tf.page=0"]
 
 *page1
-[erasemacro name="バラ"]
+[erasemacro name=バラ]
 *page2
-[erasemacro name="チャリティー会場１"]
+[erasemacro name=チャリティー会場１]
 *page3
-[erasemacro name="チャリティー会場２"]
+[erasemacro name=チャリティー会場２]
 *page4
 [erasemacro name="チャリティー会場３"]
 *page5
