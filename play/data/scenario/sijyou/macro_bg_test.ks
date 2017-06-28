@@ -306,7 +306,7 @@
 *34
 [macro name="四条＿病院"]
 [eval exp="f.haikei_credit='明治村画像庫'"]
-[chara_mod name="bg" storage="bg/sijyou_byouin.jpg"]
+[chara_mod name="bg" width=690 storage="bg/sijyou_byouin.jpg"]
 [wait time=10]
 [ptext name=credit text=&f.haikei_credit layer=27 size=18 x=&tf.cl_x y=&tf.cl_y color=#5b4513 overwrite=true]
 [wait time=10]
