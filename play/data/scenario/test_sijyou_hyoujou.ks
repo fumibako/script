@@ -24,7 +24,7 @@ $('.list').remove();
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;背景テスト組み合わせ中
 [call target=*start storage="sijyou/macro_bg_test.ks"]
-[eval exp="tf.page=1"]
+[eval exp="tf.page=0"]
 [eval exp="tf.chara_test=true"]
 [eval exp="f.kaogura = 'off'"]
 ;=============================================
@@ -1310,7 +1310,7 @@ tf.raberu = "*page"+tf.page;
 [iscript]
 tf.page = tf.page-1;
 tf.raberu = "*page"+tf.page;
-alert(tf.raberu);
+//alert(tf.raberu);
 [endscript]
 [wait time=10]
 @jump target=&tf.raberu
@@ -1319,7 +1319,7 @@ alert(tf.raberu);
 [iscript]
 tf.page = tf.page+1;
 tf.raberu = "*page"+tf.page;
-alert(tf.raberu);
+//alert(tf.raberu);
 [endscript]
 [wait time=10]
 @jump target=&tf.raberu
