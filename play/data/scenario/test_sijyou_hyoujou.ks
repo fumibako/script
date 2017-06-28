@@ -1717,7 +1717,7 @@ tf.raberu = "*page"+tf.page;
 @clearstack
 ;マクロ削除
 [eval exp="tf.erase == true"]
-[call target="*erase" storage="macro_tati_sijyou.ks"]
+[call target="erase" storage="macro_tati_sijyou.ks"]
 [if exp="tf.flag_omake == true"]
 @jump target=*omake
 [endif]
@@ -1740,7 +1740,7 @@ tf.raberu = "*page"+tf.page;
 @clearstack
 ;マクロ削除
 [eval exp="tf.erase == true"]
-[call target="*erase" storage="macro_tati_sijyou.ks"]
+[call target="erase" storage="macro_tati_sijyou.ks"]
 [freeimage layer = 27]
 [freeimage layer = 24]
 [freeimage layer = 8]
@@ -1764,7 +1764,7 @@ $(".list").css("opacity",1);
 @clearstack
 ;マクロ削除
 [eval exp="tf.erase == true"]
-[call target=*erase storage="macro_tati_sijyou.ks"]
+[call target="erase" storage="macro_tati_sijyou.ks"]
 [freeimage layer = 27]
 [freeimage layer = 24]
 [freeimage layer = 8]
