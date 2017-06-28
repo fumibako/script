@@ -1,4 +1,9 @@
 *start
+*erase
+[if exp="tf.erase == true"]
+@jump target=*erase_start
+[endif]
+
 [eval exp="f.haikei_credit=''"]
 ;クレジットの位置
 [eval exp="tf.cl_x=10"]
@@ -1278,9 +1283,10 @@ $('.kouka').remove();
 [wait time=10]
 [endmacro]
 
+;[eval exp="tf.erase == true"]
 [return]
 ;=============================================================================================
-*erase
+*erase_start
 [eval exp="tf.page=0"]
 
 *page1
@@ -1571,5 +1577,6 @@ $('.kouka').remove();
 [erasemacro name="bg_web_blue2"]
 *page145
 [erasemacro name="ロード背景"]
+[eval exp="tf.erase == false"]
 *end
 [return]
