@@ -1716,7 +1716,7 @@ tf.raberu = "*page"+tf.page;
 *back_test
 @clearstack
 ;マクロ削除
-[eval exp="tf.erase == true"]
+[eval exp="tf.erase = true"]
 [call target=*start storage="sijyou/macro_bg_test.ks"]
 [if exp="tf.flag_omake == true"]
 @jump target=*omake
@@ -1739,7 +1739,7 @@ tf.raberu = "*page"+tf.page;
 *back_test_2
 @clearstack
 ;マクロ削除
-[eval exp="tf.erase == true"]
+[eval exp="tf.erase = true"]
 [call target=*start storage="sijyou/macro_bg_test.ks"]
 [freeimage layer = 27]
 [freeimage layer = 24]
@@ -1763,7 +1763,7 @@ $(".list").css("opacity",1);
 *title
 @clearstack
 ;マクロ削除
-[eval exp="tf.erase == true"]
+[eval exp="tf.erase = true"]
 [call target=*start storage="sijyou/macro_bg_test.ks"]
 [freeimage layer = 27]
 [freeimage layer = 24]
