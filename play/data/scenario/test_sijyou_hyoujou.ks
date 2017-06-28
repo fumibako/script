@@ -1315,7 +1315,7 @@ alert(tf.raberu);
 [wait time=10]
 @jump target=&tf.raberu
 [s]
-next_page_haikei
+*next_page_haikei
 [iscript]
 tf.page = tf.page+1;
 tf.raberu = "*page"+tf.page;
