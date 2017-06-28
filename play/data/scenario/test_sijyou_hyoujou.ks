@@ -354,13 +354,14 @@ $('.list').remove();
 @jump target=page_end
 
 *page_end
+;============================================================================
 [if exp="tf.flag_omake == true"]
 [iscript]
 tf.page = tf.page;
 tf.raberu = "*page"+tf.page;
 [endscript]
 [glink target="next_page_haikei" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
-[if exp="tf.page > 1"]
+[if exp="tf.page > 0"]
 [glink target="back_page_haikei" text="前へ" size=15 width="100" x=800 y=240 color=white]
 ;1307行～
 [endif]
