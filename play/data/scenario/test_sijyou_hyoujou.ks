@@ -1308,7 +1308,7 @@ tf.raberu = "*page"+tf.page;
 *back_page_haikei
 ;glinkそのままからでは動作が悪い
 [iscript]
-tf.page = tf.page--;
+tf.page = tf.page-1;
 tf.raberu = "*page"+tf.page;
 alert(tf.raberu);
 [endscript]
