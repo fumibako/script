@@ -359,7 +359,7 @@ $('.list').remove();
 tf.page = tf.page;
 tf.raberu = "*page"+tf.page;
 [endscript]
-[glink target="&tf.raberu" exp="tf.page++" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
+[glink target="next_page_haikei" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
 [if exp="tf.page > 1"]
 [glink target="back_page_haikei" text="前へ" size=15 width="100" x=800 y=240 color=white]
 ;1307行～
@@ -1315,6 +1315,16 @@ alert(tf.raberu);
 [wait time=10]
 @jump target=&tf.raberu
 [s]
+next_page_haikei
+[iscript]
+tf.page = tf.page+1;
+tf.raberu = "*page"+tf.page;
+alert(tf.raberu);
+[endscript]
+[wait time=10]
+@jump target=&tf.raberu
+[s]
+;===========================================================0
 *page0
 
 *page1
