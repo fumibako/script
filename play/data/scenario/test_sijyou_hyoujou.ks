@@ -11,11 +11,11 @@ $('.list').remove();
 [表示準備 storage="bg/plane_mizuiro.jpg"]
 [layopt layer=29 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[preload storage="data/fgimage/sijyou/base_kimono.png"]
-[preload storage="data/fgimage/sijyou/base_haori.png"]
-[preload storage="data/fgimage/sijyou/mayu_futuu.png"]
-[preload storage="data/fgimage/sijyou/me_futuu.png"]
-[preload storage="data/fgimage/sijyou/kuti_futuu.png"]
+[preload storage="data/fgimage/sijyou/base_kimono.png" wait=true]
+[preload storage="data/fgimage/sijyou/base_haori.png" wait=true]
+[preload storage="data/fgimage/sijyou/mayu_futuu.png" wait=true]
+[preload storage="data/fgimage/sijyou/me_futuu.png" wait=true]
+[preload storage="data/fgimage/sijyou/kuti_futuu.png" wait=true]
 
 [call target=*start storage="hensuu.ks"]
 [call target=*start storage="tyrano.ks"]
@@ -1714,6 +1714,9 @@ tf.raberu = "*page"+tf.page;
 ;===========================================================
 
 *back_test
+@clearstack
+;マクロ削除
+[call target=*erase storage="macro_tati_sijyou.ks"]
 [if exp="tf.flag_omake == true"]
 @jump target=*omake
 [endif]
@@ -1733,6 +1736,9 @@ tf.raberu = "*page"+tf.page;
 
 *omake
 *back_test_2
+@clearstack
+;マクロ削除
+[call target=*erase storage="macro_tati_sijyou.ks"]
 [freeimage layer = 27]
 [freeimage layer = 24]
 [freeimage layer = 8]
@@ -1754,6 +1760,8 @@ $(".list").css("opacity",1);
 
 *title
 @clearstack
+;マクロ削除
+[call target=*erase storage="macro_tati_sijyou.ks"]
 [freeimage layer = 27]
 [freeimage layer = 24]
 [freeimage layer = 8]
