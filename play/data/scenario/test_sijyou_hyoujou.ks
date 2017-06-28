@@ -354,14 +354,15 @@ $('.list').remove();
 @jump target=page_end
 
 *page_end
-[if exp="tf.flag_omake == false"]
+[if exp="tf.flag_omake == true"]
 [iscript]
 tf.page = tf.page;
 tf.raberu = "*page"+tf.page;
 [endscript]
 [glink target="&tf.raberu" exp="tf.page++" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
 [if exp="tf.page > 1"]
-[glink target="&tf.raberu" exp="tf.page--" text="前へ" size=15 width="100" x=800 y=240 color=white]
+[glink target="back_page_haikei" text="前へ" size=15 width="100" x=800 y=240 color=white]
+;1307行～
 [endif]
 [endif]
 ;============================================================================
@@ -1303,8 +1304,18 @@ tf.raberu = "*page"+tf.page;
 ;エラー。　お手数ですがゲームの再起動をお願いします。[p]初期値
 @jump target=sijyou_text
 [endif]
-;===========================================================
+;===========================================================0
+*back_page_haikei
+;glinkそのままからでは動作が悪い
+[iscript]
+tf.page = tf.page--;
+tf.raberu = "*page"+tf.page;
+[endscript]
+[wait time=10]
+@jump target=&tf.raberu
+[s]
 *page0
+
 *page1
 ["バラ"]
 @jump target=page_text
