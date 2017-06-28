@@ -360,7 +360,7 @@ $('.list').remove();
 tf.page = tf.page;
 tf.raberu = "*page"+tf.page;
 [endscript]
-[if exp="tf.page > 123"]
+[if exp="tf.page < 123"]
 [glink target="next_page_haikei" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
 [endif]
 [if exp="tf.page > 0"]
