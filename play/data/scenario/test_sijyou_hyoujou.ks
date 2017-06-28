@@ -360,7 +360,9 @@ $('.list').remove();
 tf.page = tf.page;
 tf.raberu = "*page"+tf.page;
 [endscript]
+[if exp="tf.page > 123"]
 [glink target="next_page_haikei" text="&tf.page" size=15 width="100" x=800 y=190 color=white]
+[endif]
 [if exp="tf.page > 0"]
 [glink target="back_page_haikei" text="前へ" size=15 width="100" x=800 y=240 color=white]
 ;1307行～
@@ -1678,33 +1680,34 @@ tf.raberu = "*page"+tf.page;
 ["夕焼け"]
 @jump target=page_text
 *page114
-["藤枝_kaede_sita2"]
-@jump target=page_text
-*page115
 ["藤枝_kyakuseki"]
 @jump target=page_text
-*page116
+*page115
 ["藤枝_tanpopo"]
 @jump target=page_text
-*page117
+*page116
 ["藤枝_tanpopo_kouen"]
 @jump target=page_text
-*page118
+*page117
 ["主人公庭＿０"]
 @jump target=page_text
-*page119
+*page118
 ["主人公庭＿明"]
 @jump target=page_text
-*page120
+*page119
 ["主人公庭＿春"]
+@jump target=page_text
+*page120
+["主人公庭＿雪"]
 @jump target=page_text
 *page121
 ["主人公庭＿夜"]
 @jump target=page_text
 *page122
-["主人公庭＿雪"]
+[chara_mod name="bg" storage="toumei.gif"]
+[eval exp="tf.page=1"]
 @jump target=page_text
-*page130
+*page123
 [chara_mod name="bg" storage="toumei.gif"]
 [eval exp="tf.page=1"]
 @jump target=page_text
