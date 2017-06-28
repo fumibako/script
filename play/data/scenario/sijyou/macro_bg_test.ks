@@ -1280,311 +1280,296 @@ $('.kouka').remove();
 
 [return]
 ;=============================================================================================
-*start2
+*erase
 [eval exp="tf.page=0"]
 
-[mtext text=&f.haikei_credit layer=27 size=18 x=400 y=10 color=#5b4513 fadeout=false in_delay=0]
-@layopt layer=27 visible=true
-@layopt layer=1 visible=true
-@clearstack stack=if
-[iscript]
-tf.raberu = "*page"+tf.page;
-[endscript]
-*page0
 *page1
-["バラ"]
+[erasemacro name="バラ"]
 *page2
-["チャリティー会場１"]
+[erasemacro name="チャリティー会場１"]
 *page3
-["チャリティー会場２"]
+[erasemacro name="チャリティー会場２"]
 *page4
-["チャリティー会場３"]
+[erasemacro name="チャリティー会場３"]
 *page5
-["チャリティー会場４"]
+[erasemacro name="チャリティー会場４"]
 *page6
-["チャリティー会場５"]
+[erasemacro name="チャリティー会場５"]
 *page7
-["チャリティー会場６"]
+[erasemacro name="チャリティー会場６"]
 *page8
-["チャリティー会場６＿１"]
+[erasemacro name="チャリティー会場６＿１"]
 *page9
-["チャリティー会場７"]
+[erasemacro name="チャリティー会場７"]
 *page10
-["チャリティー会場８"]
+[erasemacro name="チャリティー会場８"]
 *page11
-["藤枝演奏１"]
+[erasemacro name="藤枝演奏１"]
 *page12
-["藤枝演奏２"]
+[erasemacro name="藤枝演奏２"]
 *page13
-["藤枝演奏３"]
+[erasemacro name="藤枝演奏３"]
 *page14
-["藤枝演奏３＿１"]
+[erasemacro name="藤枝演奏３＿１"]
 *page15
-["img効果キラキラ"]
+[erasemacro name="img効果キラキラ"]
 *page16
-["葛城森林公園"]
+[erasemacro name="葛城森林公園"]
 *page17
-["藤枝ムーンレイク"]
+[erasemacro name="藤枝ムーンレイク"]
 *page18
-["四条宴会"]
+[erasemacro name="四条宴会"]
 *page19
-["四条エピローグ和室"]
+[erasemacro name="四条エピローグ和室"]
 *page20
-["四条玄関"]
+[erasemacro name="四条玄関"]
 *page21
-["四条玄関ホール"]
+[erasemacro name="四条玄関ホール"]
 *page22
-["四条華衣部屋"]
+[erasemacro name="四条華衣部屋"]
 *page23
-["四条金屏風"]
+[erasemacro name="四条金屏風"]
 *page24
-["四条金屏風２"]
+[erasemacro name="四条金屏風２"]
 *page25
-["四条香水"]
+[erasemacro name="四条香水"]
 *page26
-["四条＿香水２"]
+[erasemacro name="四条＿香水２"]
 *page27
-["四条ネリネ庭"]
+[erasemacro name="四条ネリネ庭"]
 *page28
-[四条廊下"]
+[erasemacro name=四条廊下"]
 *page29
-[四条展覧会"]
+[erasemacro name=四条展覧会"]
 *page30
-["四条家"]
+[erasemacro name="四条家"]
 *page31
-["ししおどし"]
+[erasemacro name="ししおどし"]
 *page32
-["四条＿波ヶ浦"]
+[erasemacro name="四条＿波ヶ浦"]
 *page33
-["四条＿波ヶ裏２"]
+[erasemacro name="四条＿波ヶ裏２"]
 *page34
-["四条＿病院"]
+[erasemacro name="四条＿病院"]
 *page35
-["四条＿銀座"]
+[erasemacro name="四条＿銀座"]
 *page36
-["葛城宮＿御所"]
+[erasemacro name="葛城宮＿御所"]
 *page37
-["葛城宮＿御所＿中"]
+[erasemacro name="葛城宮＿御所＿中"]
 *page38
-["葛城宮＿野天"]
+[erasemacro name="葛城宮＿野天"]
 *page39
-["藤枝＿ミルクホール＿１"]
+[erasemacro name="藤枝＿ミルクホール＿１"]
 *page40
-[藤枝＿ミルクホール店内"]
+[erasemacro name=藤枝＿ミルクホール店内"]
 *page41
-["藤枝＿ミルクホール"]
+[erasemacro name="藤枝＿ミルクホール"]
 *page42
-["藤枝＿ミルクホール２"]
+[erasemacro name="四条縁側＿夏"]
 *page43
-["藤枝＿ミルクホール３"]
+[erasemacro name="藤枝＿ミルクホール３"]
 *page44
-["藤枝＿ミルクホール４"]
+[erasemacro name="藤枝＿ミルクホール４"]
 *page45
-["藤枝＿ミルクホール玄関２"]
+[erasemacro name="藤枝＿ミルクホール玄関２"]
 *page46
-["藤枝＿ミルクホール玄関１"]
+[erasemacro name="藤枝＿ミルクホール玄関１"]
 *page47
-["財前＿会議室"]
+[erasemacro name="財前＿会議室"]
 *page48
-["四条＿ネリネイメージ"]
+[erasemacro name="四条＿ネリネイメージ"]
 *page49
-["四条＿池"]
+[erasemacro name="四条＿池"]
 *page50
-["四条＿池＿ロング"]
+[erasemacro name="四条＿池＿ロング"]
 *page51
-["四条＿バラ噴水"]
+[erasemacro name="四条＿バラ噴水"]
 *page52
-["ムーンレイク＿ピアノ効果"]
+[erasemacro name="ムーンレイク＿ピアノ効果"]
 *page53
-["四条＿温室"]
+[erasemacro name="四条＿温室"]
 *page54
-["四条＿バラ茂み"]
+[erasemacro name="四条＿バラ茂み"]
 *page55
-["四条＿土蔵"]
+[erasemacro name="四条＿土蔵"]
 *page56
-["四条＿土蔵２"]
+[erasemacro name="四条＿土蔵２"]
 *page57
-["四条＿教室１"]
+[erasemacro name="四条＿教室１"]
 *page58
-["四条＿教室夕"]
+[erasemacro name="四条＿教室夕"]
 *page59
-["四条＿教室夕２"]
+[erasemacro name="四条＿教室夕２"]
 *page60
-["四条_教室全体"]
+[erasemacro name="四条_教室全体"]
 *page61
-["四条＿教室廊下"]
+[erasemacro name="四条＿教室廊下"]
 *page62
-["四条＿洋館バラ"]
+[erasemacro name="四条＿洋館バラ"]
 *page63
-["財前＿バラ"]
+[erasemacro name="財前＿バラ"]
 *page64
-["四条＿婚約者実家２"]
+[erasemacro name="四条＿婚約者実家２"]
 *page65
-["四条＿花園"]
+[erasemacro name="四条＿花園"]
 *page66
-["財前＿居間"]
+[erasemacro name="財前＿居間"]
 *page67
-["財前＿パーティ会場"]
+[erasemacro name="財前＿パーティ会場"]
 *page68
-["財前＿パーティ会場２"]
+[erasemacro name="財前＿パーティ会場２"]
 *page69
-["財前＿パーティ会場控室"]
+[erasemacro name="財前＿パーティ会場控室"]
 *page70
-["財前＿パーティ会場庭"]
+[erasemacro name="財前＿パーティ会場庭"]
 *page71
-["財前＿パーティ会場＿応接室"]
+[erasemacro name="財前＿パーティ会場＿応接室"]
 *page72
-["財前＿洋館"]
+[erasemacro name="財前＿洋館"]
 *page73
-["財前＿洋館モノローグ"]
+[erasemacro name="財前＿洋館モノローグ"]
 *page74
-["財前＿雪柳"]
+[erasemacro name="財前＿雪柳"]
 *page75
-["バラ園"]
+[erasemacro name="バラ園"]
 *page76
-["藤枝＿ハト"]
+[erasemacro name="藤枝＿ハト"]
 *page77
-["藤枝＿ハト２"]
+[erasemacro name="藤枝＿ハト２"]
 *page78
-["葛城宮＿謁見室"]
+[erasemacro name="葛城宮＿謁見室"]
 *page79
-["藤枝＿演奏会場"]
+[erasemacro name="藤枝＿演奏会場"]
 *page80
-["葛城宮＿演説"]
+[erasemacro name="葛城宮＿演説"]
 *page81
-["葛城宮＿放送局"]
+[erasemacro name="葛城宮＿放送局"]
 *page82
-["時子＿散策１"]
+[erasemacro name="時子＿散策１"]
 *page83
-["公園"]
+[erasemacro name="公園"]
 *page84
-["葛城宮＿仲人庭"]
+[erasemacro name="葛城宮＿仲人庭"]
 *page85
-["葛城宮＿仲人道"]
+[erasemacro name="葛城宮＿仲人道"]
 *page86
-["葛城宮＿仲人道２"]
+[erasemacro name="葛城宮＿仲人道２"]
 *page87
-["葛城宮＿仲人庭＿夕"]
+[erasemacro name="葛城宮＿仲人庭＿夕"]
 *page88
-["藤枝＿音楽練習室"]
+[erasemacro name="藤枝＿音楽練習室"]
 *page89
-["葛城宮＿執務室"]
+[erasemacro name="葛城宮＿執務室"]
 *page90
-["葛城宮＿茶室モノローグ"]
+[erasemacro name="葛城宮＿茶室モノローグ"]
 *page91
-["葛城宮＿ヨーロッパモノローグ"]
+[erasemacro name="葛城宮＿ヨーロッパモノローグ"]
 *page92
-["洋館内装"]
+[erasemacro name="洋館内装"]
 *page93
-["ビワ＿花"]
+[erasemacro name="ビワ＿花"]
 *page94
-["ビワ＿木"]
+[erasemacro name="ビワ＿木"]
 *page95
-["青空"]
+[erasemacro name="青空"]
 *page96
-["萩の花"]
+[erasemacro name="萩の花"]
 *page97
-["四条＿庭園＿椅子"]
+[erasemacro name="四条＿庭園＿椅子"]
 *page98
-["四条＿庭園＿椅子dark"]
+[erasemacro name="四条＿庭園＿椅子dark"]
 *page99
-["玄関"]
+[erasemacro name="玄関"]
 *page100
-["四条＿歌舞伎"]
+[erasemacro name="四条＿歌舞伎"]
 *page101
-["四条＿歌舞伎＿外"]
+[erasemacro name="四条＿歌舞伎＿外"]
 *page102
-["紅葉"]
+[erasemacro name="紅葉"]
 *page104
-["紅葉＿階段"]
+[erasemacro name="紅葉＿階段"]
 *page105
-["紅葉＿鬱葱"]
+[erasemacro name="紅葉＿鬱葱"]
 *page106
-["黒田家"]
+[erasemacro name="黒田家"]
 *page107
-["町"]
+[erasemacro name="町"]
 *page108
-["img効果＿町雪"]
+[erasemacro name="img効果＿町雪"]
 *page109
-["img効果削除"]
+[erasemacro name="img効果削除"]
 *page110
-["門"]
+[erasemacro name="門"]
 *page111
-["町＿橋"]
+[erasemacro name="町＿橋"]
 *page112
-["町＿思い出"]
+[erasemacro name="町＿思い出"]
 *page113
-["お稽古部屋"]
+[erasemacro name="お稽古部屋"]
 *page114
-["お稽古部屋＿暗転"]
+[erasemacro name="お稽古部屋＿暗転"]
 *page115
-["室内音楽１"]
+[erasemacro name="室内音楽１"]
 *page116
-["室内音楽２"]
+[erasemacro name="室内音楽２"]
 *page117
-["四条_omoide"]
+[erasemacro name="四条_omoide"]
 *page118
-["料亭"]
+[erasemacro name="料亭"]
 *page119
-[桜"]
+[erasemacro name="桜"]
 *page120
-["森林公園＿門"]
+[erasemacro name="森林公園＿門"]
 *page121
-["森林公園＿冬"]
+[erasemacro name="森林公園＿冬"]
 *page122
-["森林公園＿冬＿夕"]
+[erasemacro name="森林公園＿冬＿夕"]
 *page123
-["森林公園＿夕"]
+[erasemacro name="森林公園＿夕"]
 *page124
-["四条＿和雑貨"]
+[erasemacro name="四条＿和雑貨"]
 *page125
-["石畳み"]
+[erasemacro name="石畳み"]
 *page126
-["石畳み＿夜"]
+[erasemacro name="石畳み＿夜"]
 *page127
-["石畳み＿夕"]
+[erasemacro name="石畳み＿夕"]
 *page128
-["bg_tirasi"]
+[erasemacro name="bg_tirasi"]
 *page129
-["森林＿冬"]
+[erasemacro name="森林＿冬"]
 *page130
-["森林＿冬＿夕"]
+[erasemacro name="森林＿冬＿夕"]
 *page131
-["夕焼け"]
+[erasemacro name="夕焼け"]
 *page132
-["藤枝_kaede_sita2"]
+[erasemacro name="藤枝_kaede_sita2"]
 *page133
-["藤枝_kyakuseki"]
+[erasemacro name="藤枝_kyakuseki"]
 *page134
-["藤枝_sky1"]
+[erasemacro name="藤枝_sky1"]
 *page135
-["藤枝_tanpopo"]
+[erasemacro name="藤枝_tanpopo"]
 *page136
-["藤枝_tanpopo_kouen"]
+[erasemacro name="藤枝_tanpopo_kouen"]
 *page137
-["葛城宮_会議室"]
+[erasemacro name="葛城宮_会議室"]
 *page138
-["主人公庭＿０"]
+[erasemacro name="主人公庭＿０"]
 *page139
-["主人公庭＿明"]
+[erasemacro name="主人公庭＿明"]
 *page140
-["主人公庭＿春"]
+[erasemacro name="主人公庭＿春"]
 *page141
-["主人公庭＿夜"]
+[erasemacro name="主人公庭＿夜"]
 *page142
-["主人公庭＿雪"]
+[erasemacro name="主人公庭＿雪"]
 *page143
-["bg_web_blue"]
+[erasemacro name="bg_web_blue"]
 *page144
-["bg_web_blue2"]
+[erasemacro name="bg_web_blue2"]
 *page145
-["ロード背景"]
-
-
-
-
-
-
-*text
+[erasemacro name="ロード背景"]
 *end
 [return]
