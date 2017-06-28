@@ -1310,6 +1310,7 @@ tf.raberu = "*page"+tf.page;
 [iscript]
 tf.page = tf.page--;
 tf.raberu = "*page"+tf.page;
+alert(tf.raberu);
 [endscript]
 [wait time=10]
 @jump target=&tf.raberu
