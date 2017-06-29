@@ -355,7 +355,7 @@ $('.list').remove();
 
 *page_end
 ;============================================================================
-[if exp="tf.flag_omake == true"]
+[if exp="tf.flag_omake == false"]
 [iscript]
 tf.page = tf.page;
 tf.raberu = "*page"+tf.page;
