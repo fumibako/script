@@ -1015,7 +1015,8 @@ $(".layer_free").css("opacity",1);
 ;====================================================-
 *pose_01
 [表示準備 storage=bg/plane_mizuiro.jpg]
-[if exp="tf.ichi_tonari == true"]
+;[if exp="tf.ichi_tonari == true"]
+[if exp="tf.size == 'tonari'"]
 [黒田_隣_ベース羽織]
 [eval exp="tf.gra_kuroda_pose='[黒田_隣_ベース羽織]'"]
 ;[黒田_隣_位置調整]
@@ -1031,7 +1032,8 @@ $(".layer_free").css("opacity",1);
 
 *pose_02
 [表示準備 storage=bg/plane_mizuiro.jpg]
-[if exp="tf.ichi_tonari == true"]
+;[if exp="tf.ichi_tonari == true"]
+[if exp="tf.size == 'tonari'"]
 [黒田_隣_ベース着物]
 [eval exp="tf.gra_kuroda_pose='[黒田_隣_ベース着物]'"]
 ;[黒田_隣_位置調整]
