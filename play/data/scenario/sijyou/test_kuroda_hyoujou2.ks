@@ -163,7 +163,7 @@ $('.list').remove();
 ;◆kuroda_emo_04 [黒田青ざめ1] [黒田青ざめ2]
 [macro name="サイズ・ポーズ判定_表情青ざめ"]
 [if exp="tf.size == 'tonari' && tf.gra_kuroda_pose == '[黒田_隣_ベース羽織]'"]
-[chara_mod name="kuroda_base" storage="kuroda/base_haori_hohosome_y1100.png" time=0]
+[chara_mod name="kuroda_base" storage="kuroda/base_haori_aozame_y1100.png" time=0]
 [wait time=10]
 ;[黒田_隣_ベース羽織_青ざめ"]
 [elsif exp="tf.size == 'tonari' && tf.gra_kuroda_pose == '[黒田_隣_ベース着物]'"]
