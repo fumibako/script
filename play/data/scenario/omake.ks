@@ -55,9 +55,9 @@ $(".layer_2").css("opacity",0);
     tf.flag_omake = true;
 [endscript]
 ;==================================================================================
-;黒田はありません
+;黒田はありません 仮の表情テスト
 [if exp="sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1 && sf.ED_kuroda_bad == 1"]
-[button name=rp_bt target="*page_0" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130]
+[button name=rp_bt storage="sijyou/test_kuroda_hyoujou2.ks" graphic="../fgimage/bg/replay_kuroda_normalED.jpg" x=50 y=60 width=200 height=130]
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　黒田" x=50 y=200 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 x=50 y=60 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
