@@ -114,12 +114,17 @@ $('.list').remove();
 ;黒田_隣_ベース着物_青ざめ
 [macro name="黒田_隣_ベース着物_青ざめ"]
 [eval exp="tf.size='tonari'"]
-[chara_mod name="kuroda_base" storage="kuroda/base_kimono_hohosome.png" time=0]
+[chara_mod name="kuroda_base" storage="kuroda/base_kimono_aozame.png" time=0]
 [wait time=10]
 [anim name=kuroda_base width=706 time=10]
 [wait time=10]
 [endmacro]
-
+[macro name="黒田_隣_ベース羽織_青ざめ"]
+[eval exp="tf.size='tonari'"]
+[chara_mod name="kuroda_base" storage="kuroda/base_haori_aozame_y1100.png" time=0]
+;[anim name=kuroda_base width=706 time=10]
+[wait time=10]
+[endmacro]
 
 [macro name="サイズ・ポーズ判定_表情通常"]
 [if exp="tf.size == 'tonari' && tf.gra_kuroda_pose == '[黒田_隣_ベース羽織]'"]
@@ -160,6 +165,7 @@ $('.list').remove();
 [if exp="tf.size == 'tonari' && tf.gra_kuroda_pose == '[黒田_隣_ベース羽織]'"]
 [chara_mod name="kuroda_base" storage="kuroda/base_haori_hohosome_y1100.png" time=0]
 [wait time=10]
+;[黒田_隣_ベース羽織_青ざめ"]
 [elsif exp="tf.size == 'tonari' && tf.gra_kuroda_pose == '[黒田_隣_ベース着物]'"]
 [wait time=10]
 ;[chara_mod name="kuroda_base" storage="kuroda/base_kimono_aozame.png" time=0]
