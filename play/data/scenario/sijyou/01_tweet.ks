@@ -70,25 +70,43 @@
 [eval exp="tf.message7='四条'"]
 [endif]
 [if exp="tf.ED_katuraginomiya == 1 || f.katuraginomiya_au == 1"]
-[eval exp="tf.message7='殿下'"]
+[eval exp="tf.message7='榊'"]
 [endif]
 [if exp="tf.ED_hujieda == 1 || f.hujieda_au == 1"]
-[eval exp="tf.message7='鳥君(とりぎみ)'"]
+[eval exp="tf.message7='コリウス'"]
 [endif]
 ;=====================================================
 ;淑女度を一時変数に渡します
 [eval exp="tf.message=f.para_shujinkou_shukujodo"]
-
-
 [if exp="tf.message == undefined"]
 ;テスト用・エラー回避用
 [eval exp="tf.message=0"]
 [endif]
 [wait time=10]
+
+;f.shougouから称号を持ってくるとお稽古画面位置合わせ用の空白が入ってしまうので、改めて称号取得します
+[iscript]
+if (f.para_shujinkou_shukujodo >= 200 ){tf.message3 = "ミルトニアの淑女";}
+else if (f.para_shujinkou_shukujodo >= 100 ){tf.message3 = "麗しき淑女";}
+else if (f.para_shujinkou_shukujodo >= 90 ){tf.message3 = "気高き淑女";}
+else if (f.para_shujinkou_shukujodo >= 80 ){tf.message3 = "優美なる淑女";}
+else if (f.para_shujinkou_shukujodo >= 70 ){tf.message3 = "たおやかな乙女";}
+else if (f.para_shujinkou_shukujodo >= 60 ){tf.message3 = "深窓の乙女";}
+else if (f.para_shujinkou_shukujodo >= 50 ){tf.message3 = "花のような乙女";}
+else if (f.para_shujinkou_shukujodo >= 40 ){tf.message3 = "可憐な乙女";}
+else if (f.para_shujinkou_shukujodo >= 30 ){tf.message3 = "愛らしい娘";}
+else if (f.para_shujinkou_shukujodo >= 20 ){tf.message3 = "純真な娘";}
+else if (f.para_shujinkou_shukujodo >= 15 ){tf.message3 = "努力家の娘";}
+else if (f.para_shujinkou_shukujodo >= 10 ){tf.message3 = "夢見る娘";}
+else if (f.para_shujinkou_shukujodo >= 5 ){tf.message3 = "無垢な娘";}
+else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo < 5){tf.message3 = "お転婆娘";}
+[endscript]
+[wait time=10]
 ;メッセージ
 [current layer="message0"]
 おめでとうございます。　この喜びを伝えますか？[r]
-淑女度は[emb exp="tf.message"]でした。
+淑女度は[emb exp="tf.message"]、称号は『[emb exp="tf.message3"]』でした。[r]
+「はい」を選択すると、Twitter画面を開きます。
 ;[p]
 [wait time=10]
 
@@ -108,11 +126,19 @@
 *tweet_yes
 [cm]
 [current layer="message0"]
-Twitter画面を開きます。[p]
+;Twitter画面を開きます。[p]
 [iscript]
+
 var val_1 = encodeURI(tf.message7);
 var val_2 = encodeURI(tf.message);
-window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲーム,フリーゲーム,乙女ゲーム&url=goo.gl/uq8Dd1&text=エンディング'+val_1+'ルートをクリアしました。淑女度は'+val_2+'でした。goo.gl/uq8Dd1');
+var val_3 = encodeURI(tf.message3);
+if(tf.ED_katuraginomiya == 1 || f.katuraginomiya_au == 1){
+	window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲーム,フリーゲーム,乙女ゲーム&url=goo.gl/uq8Dd1&text=『恋綴り』をクリアしました。お相手の"お印"は'+val_1+'。淑女度は'+val_2+'、称号は『'+val_3+'』でした。goo.gl/uq8Dd1');
+}
+if(tf.ED_hujieda == 1 || f.hujieda_au == 1){
+	window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲーム,フリーゲーム,乙女ゲーム&url=goo.gl/uq8Dd1&text=『恋綴り』をクリアしました。お相手の"イメージ花"は'+val_1+'。淑女度は'+val_2+'、称号は『'+val_3+'』でした。goo.gl/uq8Dd1');
+}
+window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲーム,フリーゲーム,乙女ゲーム&url=goo.gl/uq8Dd1&text=『恋綴り』'+val_1+'ルートをクリアしました。淑女度は'+val_2+'、称号は『'+val_3+'』でした。goo.gl/uq8Dd1');
 [endscript]
 ;=================================================メモ==================================================================================================
 ;パラメータ名=パラメータ値を & で連結することで、
