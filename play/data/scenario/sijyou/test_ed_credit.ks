@@ -46,7 +46,7 @@
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
 [bg storage="../fgimage/bg/bg_tegami_kuroda.jpg" time=1000]
 [wait time=10]
-[chara_mod name="bg" storage="bg_tegami_kuroda.jpg"]
+[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg"]
 [elsif exp="f.sijyou_au == 1"]
 ;四条背景
 ;文字色　font_color
