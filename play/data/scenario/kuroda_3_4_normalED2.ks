@@ -163,6 +163,14 @@
 [endif]
 [イベントシーン終了]
 [wait time=10]
+;【背景】タイトル背景
+[bg storage="../fgimage/bg/title.jpg" time=1000]
+[wait time=10]
+
+;黒田ルートをクリアした
+[eval exp="tf.ED_kuroda == 1"]
+;tweet表示
+[call storage="sijyou/01_tweet.ks"]
 
 @jump storage="event.ks" target=*event_ED
 
