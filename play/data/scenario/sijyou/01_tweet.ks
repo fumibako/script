@@ -114,7 +114,7 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=0x664f44 size=20]
-「はい」を選択すると、Twitter画面を開きます。[r]
+「はい」を選択すると、Twitter画面を開きます。[r][r]
 [wait time=10]
 [font color=0x664f44 size=32]
 [link target=*tweet_yes][sp]　　　　　　　は　　　い[endlink][r]
