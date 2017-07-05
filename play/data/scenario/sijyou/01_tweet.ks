@@ -13,7 +13,7 @@
 [current layer="message1"]
 [font color=0x664f44 size=30]
 ;クリックしないとならない 何かメッセージ　
-――文綴る、 大切な貴方に　想い馳せ[p]
+――文綴る、 大切な貴方に　想い馳せ。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="title_yukidoke.ogg" loop=true]
