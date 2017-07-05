@@ -123,6 +123,9 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 
 *tweet_yes
 [cm]
+[iscript]
+$('.list').remove();
+[endscript]
 [current layer="message0"]
 Twitter画面を開きます。[p]
 [iscript]
