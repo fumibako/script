@@ -109,7 +109,7 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 [wait time=10]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=190 top=80 left=380 opacity=0]
+[position layer=message1 height=200 top=80 left=280 opacity=0]
 [wait time=10]
 @layopt layer=message1 visible=true
 [current layer="message1"]
