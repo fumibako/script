@@ -117,7 +117,8 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 [r][r][r]
 [link target=*closetweet]い　い　え[endlink]
 [resetfont]
-[ptext name="list" page=fore layer=29 color=0x664f44 size=20 text="「はい」を選択すると、Twitter画面を開きます。" x=200 y=60]
+;ptextなのでdelay速度は大差ないが重要テキストは先の処理　補足は後で処理
+[ptext name="list" page=fore layer=29 bold=true color=0x664f44 size=20 x=250 y=60 text="「はい」を選択すると、Twitter画面を開きます。"]
 [s]
 
 *tweet_yes
