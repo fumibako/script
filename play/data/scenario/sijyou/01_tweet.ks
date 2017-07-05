@@ -111,6 +111,7 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 ;選択肢用レイヤーを追加
 [position layer=message1 height=300 top=60 left=180 opacity=0]
 [wait time=10]
+@layopt layer=message1 visible=true
 [current layer="message1"]
 [nowait]
 [font color=0x664f44 size=20]
@@ -122,7 +123,6 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 [link target=*closetweet][sp]　　　　　　い　い　え[endlink]
 [resetfont]
 [endnowait]
-@layopt layer=message1 visible=true
 [s]
 
 *tweet_yes
