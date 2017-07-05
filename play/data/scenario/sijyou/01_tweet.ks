@@ -114,10 +114,10 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=0x664f44 size=32]
-[sp]　　　　　
+_[sp]　　　　　　　　
 [link target=*tweet_yes]は　　　い[endlink][r]
 [r][r][r]
-[sp]　　　　　
+_[sp]　　　　　　　　
 [link target=*closetweet]い　い　え[endlink][r]
 [wait time=10]
 [font size=20]
