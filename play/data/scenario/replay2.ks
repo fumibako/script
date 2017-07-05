@@ -295,7 +295,7 @@ $(".list").css("opacity",0);
 ;藤枝
 ;=====================================================================================
 ;[replay_image_button2 end=&sf.ED_hujieda_normal storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=240 width=200 height=130 folder="bgimage"]
-[if exp="sf.ED_hujieda_normal == 1"]
+[if exp="sf.ED_hujieda_nomal == 1 || sf.ED_hujieda_normal == 1"]
 [button name=rp_bt storage="hujieda/hujieda_3_4_normalED.ks" target="replay_hujieda_hujieda_3_4_normalED_scene" graphic="../fgimage/bg/replay_hujieda_normalED.jpg" x=50 y=240 width=200 height=130 ]
 [else]
 [image name=list layer=2 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg" width=200 height=130 x=50 y=240]
