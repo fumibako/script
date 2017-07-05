@@ -40,7 +40,7 @@ $('.list').remove();
 ;=========================================================================
 *seen_1a
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「忙しい時間を割いて頂き、ありがとうございます[r]
+「忙しい時間を割いて頂き、ありがとうございます。[r]
 [主人公目パチ1回]
 [sp]それにしても、またどうしてこの場所に？」[p]
 
@@ -336,6 +336,8 @@ $('.1_fore').remove();
 [call storage="sijyou/01_tweet.ks"]
 [藤枝ルート終了 end="normal"]
 [endif]
+
+[藤枝ルート終了 end="normal"]
 @jump storage="test_hujieda.ks"
 [s]
 
