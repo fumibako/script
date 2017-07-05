@@ -106,8 +106,6 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 [current layer="message0"]
 おめでとうございます。　この喜びを伝えますか？[r]
 淑女度は[emb exp="tf.message"]、称号は『[emb exp="tf.message3"]』でした。[r]
-「はい」を選択すると、Twitter画面を開きます。
-;[p]
 [wait time=10]
 
 ;選択肢用レイヤーを追加
@@ -120,6 +118,8 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 [link target=*tweet_yes]は　　　い[endlink][r]
 [r][r][r]
 [link target=*closetweet]い　い　え[endlink][r]
+[font color=0x664f44 size=25]
+「はい」を選択すると、Twitter画面を開きます。
 [resetfont]
 [s]
 
