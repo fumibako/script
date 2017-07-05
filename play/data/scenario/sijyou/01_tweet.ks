@@ -109,7 +109,7 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 [wait time=10]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=190 top=80 left=380 opacity=0]
 [wait time=10]
 @layopt layer=message1 visible=true
 [current layer="message1"]
@@ -118,7 +118,8 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 [link target=*tweet_yes]は　　　い[endlink][r]
 [r][r][r]
 [link target=*closetweet]い　い　え[endlink][r]
-[font color=0x664f44 size=25]
+[wait time=10]
+[font color=0x664f44 size=20]
 「はい」を選択すると、Twitter画面を開きます。
 [resetfont]
 [s]
