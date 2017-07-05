@@ -151,6 +151,9 @@ window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲー
 ;他フォローする、言語の指定（自動で最適化されるので指定しなくて良い）　http://kiteretsu-world.info/blog/2015/07/05/how-to-make-tweet-button/
 ;===========================================================================================================================================
 *closetweet
+[iscript]
+$('.list').remove();
+[endscript]
 [cm]
 [current layer="message0"]
 タイトル画面に戻ります。[p]
@@ -168,33 +171,55 @@ window.open('https://twitter.com/intent/tweet?hashtags=恋綴り,ノベルゲー
 
 ;ゲームプレイ後か判定
 [if exp="f.okeiko_gamen == true"]
+[iscript]
+$('.list').remove();
+[endscript]
 ;呼び出した場所に戻る
 [return]
 [endif]
 
 ;テスト時戻る
 [if exp="tf.test_kuroda == true"]
+[iscript]
+$('.list').remove();
+[endscript]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
 
 [if exp="tf.test_zaizen == true"]
+[iscript]
+$('.list').remove();
+[endscript]
 @jump storage="test_zaizen.ks"
 [endif]
 
 [if exp="tf.test_katuraginomiya == true"]
+[iscript]
+$('.list').remove();
+[endscript]
 @jump storage="test_katuragi.ks"
 [endif]
+
 [if exp="tf.test_hujieda == true"]
+[iscript]
+$('.list').remove();
+[endscript]
 @jump storage="test_hujieda.ks"
 [endif]
 
 [if exp="tf.test_sijyou == true"]
+[iscript]
+$('.list').remove();
+[endscript]
 @jump target=end_test
 [endif]
 
 *no_tweet
 [if exp="f.okeiko_gamen == true"]
 ;呼び出した場所に戻る　今は使っていない
+[iscript]
+$('.list').remove();
+[endscript]
 @jump storage="event.ks" target=*event_ED
 [endif]
 
