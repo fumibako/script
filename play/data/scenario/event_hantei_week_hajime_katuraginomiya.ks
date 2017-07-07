@@ -1,11 +1,9 @@
-﻿﻿﻿;=============================================
+﻿﻿﻿﻿;=============================================
 ;◆葛城宮イベント判定(週始め)
 ;=============================================
 *start
 
 *katuraginomiya_event_hantei
-[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks冒頭通過'"]
-[変数ログ表示]
 ;↓以下にイベント判定を追記
 ;テスト用 他攻略ｷｬﾗと比較できるようにイベントを見たら上がるようにしてありますが０入力等で一括調整してください
 ;5→0に調整しました。調整しやすく作ってくださってありがとうございます(◆jsYiJcqRkk
@@ -113,13 +111,9 @@
    @jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last	
 [endif]
 ;=======================================================================================
-[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定直前'"]
-[変数ログ表示]
 [if exp="f.kuroda_au + f.zaizen_au + f.sijyou_au + f.katuraginomiya_au + f.hujieda_au != 0"]
 	@jump target=*event_hantei_katuragi_skip
 [endif]
-[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定開始'"]
-[変数ログ表示]
 ;(A)4◆葛城宮イベント判定katuraginomiya_9_1.ks 　使者がくる。ルートが決定する　ほぼ強制なのですがどうしましょう
 ;他キャラクターが候補に無い場合に条件を満たせば(好感度が他キャラクターより高いかどうかは関係なく)葛城宮発生(2/11◆jsYiJcqRkk調整
 ;葛城宮進行条件：event3をみている+好感度20以上+淑女度30以上(財前の淑女度判定２０が反応してしまう、財前は淑女度３０以上で回避)
@@ -131,8 +125,6 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定中：(A)判定後通過'"]
-[変数ログ表示]
 [eval exp="tf.test='１葛城宮ここは通りましたよ！！！！'"]
 [trace exp="tf.test"]
 ;(B)他好感度が３０以上あるとき 葛城宮と比較なし
@@ -144,8 +136,6 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定中：(B)判定後通過'"]
-[変数ログ表示]
 [eval exp="tf.test='２葛城宮ここは通りましたよ！！！！'"]
 ;(C)又は(もっと考えたい選択時)event3をみている+他キャラクターより好感度が上かつ好感度20以上+淑女度30以上(◆jsYiJcqRkk調整
 ;&& f.para_shujinkou_shukujodo > 20  必要であれば追加してください		
@@ -157,11 +147,7 @@
 	;イベント中に選択肢有り。イベントファイルに記述　[eval exp="f.katuraginomiya_au=1"]
 	@jump storage="event.ks" target=*start
 [endif]
-[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定中：(C)判定後通過'"]
-[変数ログ表示]
 *event_hantei_katuragi_skip
-[eval exp="f.hantei_event_storage='event_hantei_week_hajime_katuraginomiya.ks葛城宮9_1判定skip通過'"]
-[変数ログ表示]
 [eval exp="tf.test='３葛城宮ここは通りましたよ！！！！'"]
 ;=======================================================================================
 ;5◆葛城宮イベント判定katuraginomiya_9_3.ks ルート決定後なので条件はすくなめ（9/3,かつ　au==1のとき）
@@ -266,9 +252,6 @@
 ;2(18)katuraginomiya_sansaku1.ks
 ;3(19)katuraginomiya_sansaku2.ks
 ;=========================================================
-[if exp="f.test_gamen==true"]
-[変数ログ表示]
-[endif]
 
 ;↓他のイベント判定処理リストに戻ります
 @jump storage="event_hantei_week_hajime.ks" target=*katuraginomiya_event_hantei_owari
