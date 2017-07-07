@@ -153,6 +153,14 @@ if (f.para_shujinkou_kiryoku_now > f.para_shujinkou_kiryoku_max){
 }
 [endscript]
 
+[iscript]
+//散策イベント2(時子さん)を見ている場合に手紙到着週数カウント減算。カウントカット処理前に移動します。
+if (f.katuraginomiya_fumi_inou > 0){
+f.katuraginomiya_fumi_inou = f.katuraginomiya_fumi_inou - 1;
+}
+[endscript]
+
+;↓話題到着待ち状態でなければ、速度対策のため話題等カウントをカット。話題以外のカウント処理はこの手前に書く必要があります。
 [if exp="(f.fumi_wadai_toutyakumachi <= 0) || (f.fumi_wadai_toutyakumachi == null)]
 @jump target=*qk_end
 [endif]
@@ -350,10 +358,7 @@ f.katuraginomiya_fumi_toutyakumachi_sintya = f.katuraginomiya_fumi_toutyakumachi
 if (f.katuraginomiya_fumi_toutyakumachi_satuki > 0){
 f.katuraginomiya_fumi_toutyakumachi_satuki = f.katuraginomiya_fumi_toutyakumachi_satuki - 1;
 }
-//散策イベント2(時子さん)を見ている場合に手紙到着週数カウント減算
-if (f.katuraginomiya_fumi_inou > 0){
-f.katuraginomiya_fumi_inou = f.katuraginomiya_fumi_inou - 1;
-}
+
 //◆藤枝宛 話題の手紙届くまでカウント減算処理
 if (f.hujieda_fumi_toutyakumachi_shumi > 0){
 f.hujieda_fumi_toutyakumachi_shumi = f.hujieda_fumi_toutyakumachi_shumi - 1;
