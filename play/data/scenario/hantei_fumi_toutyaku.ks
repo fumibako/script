@@ -1,5 +1,8 @@
 ﻿﻿;◆手紙到着判定処理開始
 *fumi_toutyaku_hantei_all
+;[emb exp="f.hantei_event_storage='hantei_fumi_toutyaku.ks 手紙到着判定開始'"]
+;[変数ログ表示]
+
 [iscript]
 f.fumi_toutyaku_oaite = []; //到着時お相手名リセット
 f.hato = 0; //鳩による到着リセット
