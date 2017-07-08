@@ -7,6 +7,12 @@
 	<link rel="shortcut icon" href="play/link.ico">
   </head>
   <body>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@koitsuduri">
+<meta name="twitter:creator" content="恋綴り製作委員会">
+<meta name="twitter:title" content="恋綴り">
+<meta name="twitter:description" content="～ 大正淑女 文通で育む想い ～　フリーゲーム『恋綴り』公開中　顔も知らないお相手と文通で仲を深めるゲームです。お稽古に励みつつ、お手紙で深く心を通わせると……？">
+<meta name="twitter:image:src" content="http://koitsuduri.webcrow.jp/Twitter_card.jpg">
 
     <div align="center">
 
@@ -36,17 +42,9 @@
         <h3>重要度高<br></h3>
 ・16/1/11～　ゲームプレイ中のフリーズを改善したい。スクリプト上のレイヤー数、変数や処理が多いのが原因かもしれません。優先度高めに可能な範囲で整理予定<br>
 <br>
-・16/1/11～　後半、黒田ルートに入った後のゲーム性が低い　→　対策を検討します(時間がかかります)<br>
-<br>
-・15/09/12～　iPhoneのSafariからプレイすると動作が遅い<br>
-　↓<br>
-　特にBGM再生時に動作が遅延または止まるため、ティラノスクリプトの音関係のプリロードの対応を待って(公式掲示板よりVer3.41では未対応のようです)対策したいと思います。<br>
-　<br>
         <h3>重要度中<br></h3>
 
 ・16/10/8～　お手紙の内容も振り返って読みたいです　→　ご不便をおかけしました。そして貴重な感想をありがとうございます。余裕ができてからになりますが、手紙の直前のページを振り返って読む機能をつけたいと思います<br>
-<br>
-・16/1/11～　ゲームを少し進行した段階で全員の好感度が低いなら、こちらから手紙を書いてはと助言を入れるよう追加予定<br>
 <br>
 ・16/1/11～　全体的にSE音量をもう少しだけ下げる方がゲームに集中しやすいのでは　→　調整し、できればプレイヤーさんが音量をある程度調整できる機能を入れたいと考えます<br>
 <br>
@@ -58,29 +56,41 @@
 <br>
 ・16/10/8～　他のキャラクターの立ち絵をあまり見れず文奈さんしか見ることができない時間が長いので、「乙女ゲーム」としては少し寂しく感じました　→　サブキャラクターの立ち絵についても余裕ができれば追加したいと考えています<br>
 <br>
-・16/10/8～　(散策時や手紙の話題について)もっと色々な話題を聞いてみたいです　→　余裕ができれば追加したいところですが、難しいかもしれません<br>
-<br>
 ・16/1/11～　自分が出した手紙の種類・話題などの履歴もできれば見たい　→　余裕ができれば機能追加したいです<br>
-<br>
-・16/1/11～　散策が特定の時期以外の意義を失っている(もっと小ネタ会話など見たい)　→　対策を検討したいですが、難しいかもです<br>
-<br>
-・16/1/11～　話題の返事が一度だけだが、掘り下げたり色々あると楽しいのでは　→　特定のキャラクターでは手紙の時期によってお返事の内容が変化する予定です。その他のキャラクターによっては余裕ができれば検討したいです<br>
-<br>
-・16/1/11～　話題の選択で悩ましい　→　(「情報」機能で好感度を見ながら)色々と試してみるのはいかがでしょうか。ゲーム中にヒントなどある方が親切かもと思いますので、検討します<br>
 <br>
 ・15/03/05～　ブラウザにより表示が崩れる<br>
 　↓<br>
 　スクリプト以外の知識が必要なので時間がかかりそうです<br>
 <br>
-・13/11/20～　ptextのfaceで明朝を指定してもゴシック体表示になってしまう。Config.tjsにてデフォルトのフォント名を<br>
-;userFace = "ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝"; // deffont タグの face 属性に相当<br>
-　と指定してもptext（メッセージ窓のキャラ名表示部）はゴシック体表示のままである<br>
-　↓<br>
-　試行錯誤するも解決法不明。ゲーム動作には支障ないので、気になるものの保留<br>
 <br>
 <br>
 <h2>解決済・検討済のもの<br></h2>
-<br>
+<h3>16/1/11～　ゲーム進行の助言が欲しい</h3>
+　ゲームを少し進行した段階で全員の好感度が低いなら、こちらから手紙を書いてはなど助言が欲しい。<br>
+　↓<br>
+　17/03 助言イベントを追加しました<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>15/09/12～　iPhoneのSafariからプレイすると動作が遅い</h3>
+　17/03 不要な処理をカットするなど、複数の動作速度の改善処理を導入しました<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>16/1/11～　話題の選択で悩ましい</h3>
+　17/03 ゲーム中に助言イベントを追加しました。追加にあたっては、＠名無しさん１様に多くのご協力をいただきました。ありがとうございます<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>16/1/11～　話題の返事が一度だけだが、掘り下げたり色々あると楽しいのでは</h3>
+　17/03 特定のキャラクターでは同じ話題の手紙を何度か送ると、話題を掘り下げたり変化のある返信内容となるようにお手紙を追加しました。追加にあたっては、＠名無しさん１様、◆I9IhvvVdPo様に多くのご協力をいただきました。ありがとうございます<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>16/1/11及び16/10/8～　(散策時や手紙の話題について)もっと色々な話題を聞いてみたい</h3>
+　17/03 散策イベントや手紙の話題、話題のお返事追加にあたっては、＠名無しさん１様、◆I9IhvvVdPo様に多くのご協力をいただきました。ありがとうございます<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>16/1/11～　後半、黒田ルートに入った後のゲーム性が低い</h3>
+　17/03 散策イベント等を追加し、後半になってもゲーム性があまり低下しないように改善しました。イベントの追加にあたっては、＠名無しさん１様、◆I9IhvvVdPo様に多くのご協力をいただきました。ありがとうございます<br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
+<h3>13/11/20～　ptextのfaceで明朝を指定してもゴシック体表示になってしまう</h3>
+　Config.tjsにてデフォルトのフォント名を;userFace = "ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝"; // deffont タグの face 属性に相当<br>
+　と指定してもptext（メッセージ窓のキャラ名表示部）はゴシック体表示のままである<br>
+　↓<br>
+　17/03 ブラウザによっては反映されるようになりました<br><br>
+<hr style="border-top: 1px dashed #ccccff;width: 100%;">
 <h3>？～　バックログ時のスクロールができない(一部ブラウザ)</h3>
 　16/10/21 スクロール機能の改善を行いました。作業は＠名無しさん１様にご担当いただき、大変助かりました。ありがとうございます<br>
 <hr style="border-top: 1px dashed #ccccff;width: 100%;">
@@ -137,6 +147,7 @@
 <h3>15/09/25～　オープニングの途中で既読スキップを利用していると画面がフリーズすることに気付きました<br></h3>
 　↓<br>
 15/09/27　既読スキップ開始タグを下記のように変更すると解決しました(スキップ中に[skipstart]するとフリーズするみたい？v.3.41)<br>
+※ スクリプトの情報が古いため、参考にしていただかない方が良いと思います。ティラノスクリプト最新版の仕様をご自身でご確認ください。
 変更前：
 <div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;"><pre><code>[if exp="sf.KSKIP=='ON'"]
 	[skipstart]
@@ -170,7 +181,8 @@
 　(最初から通しプレイ時のみ自動でスキップ状態になるものの、ロード機能を使うと既読箇所でもスキップ状態が解除される。スキップボタンを押せば既読部分はスキップ状態になる)<br><br>
 １．Config.tjsの◆ラベル記録を";autoRecordPageShowing = true;"にする<br><br>
 ２．既読スキップON/OFFボタンをタイトル画面やコンフィグ画面などにつけて、sf.KSKIP=='ON'などシステム変数にON/OFF情報を入れる<br>
-↓既読スキップON/OFFボタンをつけるスクリプト(アオイサクラ様作「簡易コンフィグ画面プラグイン」の方法を参考にしています。ありがとうございます)
+↓既読スキップON/OFFボタンをつけるスクリプト(アオイサクラ様作「簡易コンフィグ画面プラグイン」の方法を参考にしています。ありがとうございます)<br>
+※ スクリプトの情報が古いため、参考にしていただかない方が良いと思います。ティラノスクリプト最新版の仕様をご自身でご確認ください。
 <div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;"><pre><code>[if exp="sf.KSKIP=='OFF'"]
 [locate x=535 y=480]
 [button name="button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on" ]
@@ -199,6 +211,7 @@
 [s]</code></pre></div>
 <br>
 ３．シナリオの既読判定をしたい箇所にラベルを付け、それぞれラベル直前※に下記タグを追記する<br>
+※ スクリプトの情報が古いため、参考にしていただかない方が良いと思います。ティラノスクリプト最新版の仕様をご自身でご確認ください。
 <div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
 [if exp="sf.KSKIP=='ON' && sf.trail_シナリオファイル名_ラベル名==undefined"]<br>
 	[skipstop]<br>
@@ -208,7 +221,8 @@
 ※　sf.trail_シナリオファイル名_ラベル名…例えば"prologue.ks"の"*scene1"ラベルの場合"sf.trail_prologue_scene1"です<br>
 ※　ラベルの後だと、初見でもsf.trail_シナリオファイル名_ラベル名に1が入る場合がある為。Config.tjsの説明ではラベルの最後まで実行しないと加算されないとありますが、現状はラベル直後でも1加算されることがあるようです。(環境にもよるのかも…)<br>
 <br>
-４．各イベントシナリオ冒頭など(既読スキップ開始したい場所)に下記を追記する(9/27修正済)
+４．各イベントシナリオ冒頭など(既読スキップ開始したい場所)に下記を追記する(9/27修正済)<br>
+※ スクリプトの情報が古いため、参考にしていただかない方が良いと思います。ティラノスクリプト最新版の仕様をご自身でご確認ください。
 <div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]<br>
 	[skipstart]<br>
@@ -228,13 +242,15 @@ make.ksに↑を追記するだけでは、反映されませんでした<br>
 <h3>14/4/13　スキップの動作が不安定なのを解決したい<br></h3>
 スキップ中にクリックしてもすぐ停止しない場合がある。スキップ停止後マウスクリックしてもシナリオが進行せず、機能ボタンも動作しなくなることがある<br>
 　↓<br>
-　15/9/8　ティラノスクリプトを最新(ver3.40)にし、skip中はブーストモードをOFFにするような式を追加すると安定しました<br>
+　15/9/8　ティラノスクリプトを(ver3.40)にし、skip中はブーストモードをOFFにするような式を追加すると安定しました<br>
 　具体的にはboost_mode.jsの30行目と98行目(// boost_modeが効いてる時は1文字ずつ表示ではなくテキスト全てを一気に表示させる)行の手前に↓を追加<br>
+※ スクリプトの情報が古いため、参考にしていただかない方が良いと思います。ティラノスクリプト最新版の仕様をご自身でご確認ください。
 <div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
 if (that.kag.stat.is_skip == true) sutdioOverdrive.tyrano.kag.stat.is_boost_mode = false;<br>
 </div>
 これだけだとskipから復帰した時にブーストモードが解除されっぱなしなので……<br>
 kag.layer.jsの22行目～(ver.3.40)<br>
+※ スクリプトの情報が古いため、参考にしていただかない方が良いと思います。ティラノスクリプト最新版の仕様をご自身でご確認ください。
 <div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;">
             if (that.kag.stat.is_skip == true) that.kag.stat.is_skip =<br>
                 false;<br>
@@ -253,6 +269,7 @@ kag.layer.jsの22行目～(ver.3.40)<br>
 (ゲーム上どの進行段階のデータか判別するために)<br>
 　↓<br>
 　16/1/30 更新　kag.menu.jsの83行目～(ver.4.00rc4)を下記のように書き換えたところ、できました<br>
+※ スクリプトの情報が古いため、参考にしていただかない方が良いと思います。ティラノスクリプト最新版の仕様をご自身でご確認ください。
 変更前：<br>
 <div style="background:#fffdfa; padding:10px; border:1px dashed #7788cc; border-radius:10px;margin-left:10px;margin-right:20px;overflow: auto;"><pre><code>        if (this.snap == null) this.snapSave(this.kag.stat.current_message_str, function() {
             data = that.snap;
