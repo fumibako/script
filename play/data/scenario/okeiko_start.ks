@@ -3,6 +3,12 @@
 ;=============================================
 ;主人公登場時の画像被せ処理に◆B4nFWraU42さん作スクリプトを使用しました。ありがとうございます。
 *start
+;背景（タイトル画像）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
+[freeimage layer=1]
+[wait time=10]
+[chara_new name="bg" storage="../fgimage/toumei.gif"]
+[chara_show left=1 top=0 layer=1 name="bg" time=0]
+
 ;↓◆お稽古パート経由かどうか見るための変数をセット
 [eval exp="tf.okeiko_gamen=true"]
 [eval exp="f.okeiko_gamen=true"]

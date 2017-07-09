@@ -1,8 +1,10 @@
 ﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 	[skipstart]
 [endif]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+;[wait time=10]
+;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [setreplay name="opening2"]
 *opening2
 [if exp="sf.KSKIP=='ON' && sf.trail_opening2_scene1==undefined"]
@@ -24,7 +26,9 @@
 
 [cm]
 ;背景変更:主人公邸_庭
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [stopbgm]
@@ -595,8 +599,9 @@ jumpします。[p]
 *scene15
 *fumi_sentaku01
 ;背景変更:和紙風
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=0]
 [wait time=10]
+;[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
 [eval exp="f.select_scene='fumi_sentaku01'"]
@@ -621,7 +626,8 @@ jumpします。[p]
 [eval exp="sf.FButton='ON'"]
 
 ;背景変更:和紙風
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=0]
+[wait time=10]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
@@ -656,7 +662,9 @@ jumpします。[p]
 
 [font color=white size=0][r]【 『黒田 将貴』を選択 】[r][resetfont]
 [cm]
-[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg" time=100]
+[bg storage="../fgimage/bg/bg_tegami_kuroda.jpg" time=100]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
@@ -709,7 +717,9 @@ f.kuroda_fumi1_midoku = 0;
 [font color=white size=0][r]【 『財前 美彬』を選択 】[r][resetfont]
 [cm]
 ;背景変更:手紙
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
+[bg storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
@@ -755,7 +765,9 @@ f.zaizen_fumi1_midoku = 0;
 *kaori_fumi1b
 [font color=white size=0][r]【 『四条 華織』を選択 】[r][resetfont]
 [cm]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=100]
+[bg storage="../fgimage/bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=100]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
@@ -809,8 +821,9 @@ f.kaori_fumi1_midoku = 0;
 [eval exp="f.select_scene=''"]
 [cm]
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[背景_庭]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=100]
 [wait time=10]
+;[背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [主人公ふぅ閉]
@@ -902,7 +915,9 @@ jumpします。[p]
 [wait time=10]
 
 ;背景変更:和紙風
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=0]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
 [eval exp="f.haikei_credit=''"]
 
 #
@@ -931,6 +946,9 @@ jumpします。[p]
 ;	[skipstop]
 [endif]
 *kuroda_isono1b
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=磯野 color="dimgray"]
 「黒田様は地方に沢山の土地をもつ[r]
 [sp]古くから続く伝統ある御家柄とお聞きしています」
@@ -978,6 +996,9 @@ jumpします。[p]
 ;	[skipstop]
 [endif]
 *zaizen_isono1b
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=磯野 color="dimgray"]
 「財前様のお父様は一代にして数多の事業を成功され、[r]
 [sp]新華族に叙せられた実業家でございます」[p]
@@ -1040,6 +1061,9 @@ jumpします。[p]
 ;	[skipstop]
 [endif]
 *kaori_isono1b
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ指]
 [wait time=10]
 [主人公伏目パチ1回]
@@ -1164,8 +1188,9 @@ jumpします。[p]
 [endif]
 *scene19
 [cm]
-[背景_庭]
-[wait time=50]
+;[背景_庭]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公口ほほえみ]
 [wait time=10]

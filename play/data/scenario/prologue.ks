@@ -29,7 +29,9 @@ TG.stat.play_se = true;
 [endif]
 
 [if exp="sf.KSKIP=='ON'"]
-	[skipstop]
+;	[skipstop]
+;未読スキップオフ≒既読スキップON。読める程度に薄いセピア色
+[config_record_label skip=false color=0xa68f84]
 	[skipstart]
 [endif]
 *prologue
@@ -48,8 +50,11 @@ TG.stat.play_se = true;
 [cm]
 [stopbgm]
 
-;背景変更:プロローグイントロ全画面
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
+;背景変更:プロローグイントロ全画面。[chara_mod]のタイミングでフリーズを何度か経験したため[bg]タグの方が安定するのではないかと試行してみます。
+[freeimage layer=1]
+[wait time=10]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=100]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 [wait time=10]
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -57,7 +62,7 @@ TG.stat.play_se = true;
 
 [font color=white size=31]
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue1==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue1
 [r][r][r][r][endnowait]
@@ -84,7 +89,8 @@ TG.stat.play_se = true;
 [resetfont][delay speed=10]
 
 ;背景変更:主人公邸_庭
-[背景_庭]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 ;メッセージエリアの表示
@@ -94,7 +100,7 @@ TG.stat.play_se = true;
 [メッセージウィンドウ上ボタン表示]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue2==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue2
 ;メッセージレイヤを会話窓用に設定変更
@@ -107,7 +113,7 @@ TG.stat.play_se = true;
 [cm]
 ;【SE】ペンで書く
 [playse storage=pen_write.ogg loop=false]
-　××０９年　１０月　２１日　[名字]家　邸内
+　××○九年　十月　二十一日　[名字]家　邸内
 [autosave]
 [p]
 ;キャラ定義
@@ -136,7 +142,7 @@ TG.stat.play_se = true;
 [p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue3==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue3
 ;【SE】襖を開ける（勢いよく）
@@ -144,7 +150,7 @@ TG.stat.play_se = true;
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [resetfont]
-「―――文矢お兄様！」[p]
+「――文矢お兄様！」[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]……？　どうしたの？　廊下を走ってはいけないよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -162,7 +168,7 @@ TG.stat.play_se = true;
 [p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue4==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue4
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -175,7 +181,7 @@ TG.stat.play_se = true;
 「そっか、帰って来られるんだ……」[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue5==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue5
 #
@@ -194,7 +200,7 @@ TG.stat.play_se = true;
 [p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue6==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue6
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -212,7 +218,7 @@ TG.stat.play_se = true;
 妹は言葉の意味がわからなかったのか、不思議そうに首を傾げる。[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue7==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue7
 [whosay name=文矢 color="#538a8a"]
@@ -235,7 +241,7 @@ TG.stat.play_se = true;
 その視線が母親の手紙の前で止まった。[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue8==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue8
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -248,7 +254,7 @@ TG.stat.play_se = true;
 悲しげに視線を伏せたまま動かない妹を慰めるため、
 もう一度頭を撫でる。[r]
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue9==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue9
 ;【SE】落ち着いた足音（フェードイン）
@@ -285,7 +291,7 @@ TG.stat.play_se = true;
 妹の笑顔が戻った事に安堵しながら、磯野へと視線を向ける。[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue10==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue10
 [whosay name=文矢 color="#538a8a"]
@@ -298,7 +304,7 @@ TG.stat.play_se = true;
 
 [stopbgm ]
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue11==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue11
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
@@ -326,7 +332,7 @@ TG.stat.play_se = true;
 「はーい」[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue12==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue12
 ;【SE】軽い足音（小走りフェードアウト）
@@ -356,7 +362,7 @@ TG.stat.play_se = true;
 「申し訳ありません」と目尻の皺を深くして微笑んだ。[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue13==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue13
 [whosay name=磯野 color="dimgray"]
@@ -370,7 +376,7 @@ TG.stat.play_se = true;
 「なるほど、かしこまりました」[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue14==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue14
 #
@@ -391,7 +397,7 @@ TG.stat.play_se = true;
 「うん……」[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue15==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue15
 #
@@ -408,12 +414,12 @@ TG.stat.play_se = true;
 
 [whosay name=磯野 color="dimgray"]
 「しかし時が経つのは早いですね、文矢様はご結婚、[r]
-[sp]お嬢様も１２になられますか……」[p]
+[sp]お嬢様も十二になられますか……」[p]
 [whosay name=文矢 color="#538a8a"]
 「そう…だね……」[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue16==undefined"]
-	[skipstop]
+;	[skipstop]
 [endif]
 *prologue16
 #
@@ -422,7 +428,7 @@ TG.stat.play_se = true;
 [autosave]
 [p]
 
-（―――お手紙より、会いに来てくれる方が嬉しいな）[p]
+（――お手紙より、会いに来てくれる方が嬉しいな）[p]
 
 ふと、先ほどの妹の言葉を思い出す。[p]
 
@@ -431,24 +437,30 @@ TG.stat.play_se = true;
 #
 ;【BGM】フェードアウト
 [fadeoutbgm time=5000]
-それがきっと幸福な物になりますように、そう願わずにはいられなかった―――[p]
+それがきっと幸福な物になりますように、そう願わずにはいられなかった――。[p]
+[wait time=10]
 [cm]
+[wait time=10]
 ;[枠消]
 
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif"]
+[wait time=10]
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
+[wait time=10]
 
 
 ;プロローグ　終
 
 ;背景非表示
-[chara_mod name="bg" storage="toumei.gif" time=100]
+;[chara_mod name="bg" storage="toumei.gif" time=100]
+[bg storage="../fgimage/toumei.gif" time=100]
+[wait time=10]
 
 
 [stopbgm]

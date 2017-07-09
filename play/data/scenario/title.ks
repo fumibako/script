@@ -1,4 +1,4 @@
-﻿﻿@clearstack
+﻿﻿﻿@clearstack
 
 ;==============================
 ; タイトル画面
@@ -37,12 +37,12 @@
 
 ;背景（タイトル画像）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_new name="bg" storage="bg/title.jpg"]
-[chara_show left=1 top=1 layer=1 name="bg" time=0]
+[chara_show left=0 top=0 layer=1 name="bg" time=0]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 
 ;背景（効果）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_new name="bg_effect" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=2 name="bg_effect"]
+[chara_show left=0 top=0 layer=2 name="bg_effect"]
 
 [iscript]
     tf.flag_replay = false;
