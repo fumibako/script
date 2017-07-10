@@ -774,6 +774,8 @@ TG.stat.play_se = true;
 
 
 [stopbgm]
+;オープニングから始めると被らないように0に
+[eval exp="f.skip_sentaku=0"]
 ;------オープニングの最初にジャンプする
 @jump storage="opening1.ks"
 [s]
