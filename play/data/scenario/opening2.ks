@@ -28,8 +28,9 @@
 [if exp="f.skip_sentaku == 1"]
 ;「オープニングから」の挙動
 ;[freeimage layer=1] 消して不具合でるかわからないので画像変更
+[chara_mod name="bg_effect" storage="toumei.gif"]
 [iscript]
-$(".1_fore").attr({src: "./data/fgimage/toumei.gif"});
+//$(".1_fore").attr({src: "./data/fgimage/toumei.gif"});
 [endscript]
 ;準備中・・・・・・とメッセージ表示した方が親切かもしれない
 [endif]
