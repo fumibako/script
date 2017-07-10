@@ -32,7 +32,7 @@
 ;消して不具合でるかわからないので画像変更
 ;[chara_mod name="bg_effect" storage="toumei.gif"]
 [iscript]
-$(".bg").attr({src: "./data/fgimage/toumei.gif"});
+$(".bg").attr({src: "./data/fgimage/bg/room_niwa.jpg"});
 [endscript]
 ;準備中・・・・・・とメッセージ表示した方が親切かもしれない
 ;フラグテスト上に　メッセージ表示
