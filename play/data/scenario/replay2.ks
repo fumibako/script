@@ -350,7 +350,8 @@ $('.loding_pic1').remove();
 [cm]
 [freeimage layer=3]
 [freeimage layer=2]
-[chara_mod name="bg" storage="bg/title.jpg"]
+[freeimage layer=1]
+;[chara_mod name="bg" storage="bg/title.jpg"]
 [bg storage="toumei.gif" time=1]
 [iscript]
 $(".layer_free").css("opacity",1);
