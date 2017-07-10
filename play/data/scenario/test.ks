@@ -153,6 +153,7 @@
 
 *title
 ;------タイトルへ戻る
+[freeimage layer=1]
 ;↓各変数を初期設定にリセット
 [call target = *start storage = "01_sijyou_hensuu.ks"]
 [call target = *start storage = "hensuu.ks"]
