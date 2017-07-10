@@ -262,8 +262,8 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [cm]
 ;------オープニングの最初にジャンプする
 [イベントシーン構築]
-[eval exp="f.skip_sentaku=0"]
-;いまのところopには使用していないフラグ。お稽古に響かないように０に
+[eval exp="f.skip_sentaku=1"]
+;いまのところopには使用フラグ。使用後はお稽古側で０に
 @jump storage="opening2.ks"
 [s]
 
@@ -271,7 +271,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [cm]
 ;------お稽古画面からはじめる
 ;[eval exp="f.skip_sentaku=1"]
-;opには使用していないフラグ。お稽古にて音楽を続ける。使用後はお稽古側で０に
+;opには使用フラグ。お稽古にて音楽を続ける。使用後はお稽古側で０に
 [stopbgm]
 お稽古画面からはじめます[p]
 [if exp="sf.BGM=='ON'"]
