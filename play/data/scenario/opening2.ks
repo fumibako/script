@@ -33,6 +33,7 @@
 $(".1_fore").attr({src: "./data/fgimage/toumei.gif"});
 [endscript]
 ;準備中・・・・・・とメッセージ表示した方が親切かもしれない
+フラグテスト
 [endif]
 
 ;背景変更:主人公邸_庭
