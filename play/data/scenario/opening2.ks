@@ -25,6 +25,15 @@
 ;=============================================
 
 [cm]
+[if exp="f.skip_sentaku == 1"]
+;「オープニングから」の挙動
+;[freeimage layer=1] 消して不具合でるかわからないので画像変更
+[iscript]
+$(".1_fore").attr({src: "./data/fgimage/toumei.gif"});
+[endscript]
+;準備中・・・・・・とメッセージ表示した方が親切かもしれない
+[endif]
+
 ;背景変更:主人公邸_庭
 [bg storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
@@ -47,6 +56,7 @@
 ;セーブ等ボタン配置
 [メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
+
 
 ;【SE】時計（広間カチコチ）
 [playse storage=tokei_hiroma.ogg loop=false]
