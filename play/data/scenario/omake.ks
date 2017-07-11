@@ -41,6 +41,8 @@
 [freeimage layer = 28]
 [freeimage layer = 29]
 
+;背景表示(表情鑑賞から「おまけに戻る」時も切り替わるように)
+[bg storage="../fgimage/bg/title.jpg" time=1]
 ;タイトルに戻る
 [button fix=true graphic="back.png" target="*backtitle" x=870 y=20 ]
 
@@ -114,8 +116,9 @@ $('.loding_pic1').remove();
 [cm]
 [freeimage layer=3]
 [freeimage layer=2]
-[chara_mod name="bg" storage="bg/title.jpg"]
-[bg storage="toumei.gif" time=1]
+[freeimage layer=1]
+;[chara_mod name="bg" storage="bg/title.jpg"]
+[bg storage="../fgimage/bg/title.jpg" time=1]
 [iscript]
 $(".layer_free").css("opacity",1);
 $(".layer_2").css("opacity",1);

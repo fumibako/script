@@ -92,9 +92,9 @@ $(".rp_bt").remove();
 
 [bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
 ;タイトルで使うことを想定＿[chara_mod name="bg" storage="../fgimage/bg/plane_sepia.jpg" time=100]
-[layopt layer=1 visible=true]
-[chara_new name="bg" storage="bg/plane_sepia.jpg"]
-[chara_show left=1 top=1 layer=1 name="bg" time=100]
+;[layopt layer=1 visible=true]
+;[chara_new name="bg" storage="bg/plane_sepia.jpg"]
+;[chara_show left=1 top=1 layer=1 name="bg" time=100]
 
 [layopt layer=3 visible=true]
 [ptext name=list layer=3 page=fore text="思ひ出　(Ending List)" x=20 y=20 size=26 color=0xA8401C visible=true]

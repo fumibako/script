@@ -35,10 +35,11 @@
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 
-;背景（タイトル画像）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
-[chara_new name="bg" storage="bg/title.jpg"]
-[chara_show left=0 top=0 layer=1 name="bg" time=0]
+;背景（タイトル画像）表示：安定性のためtitle周りの背景表示を[bg]タグに統一します
+;[chara_new name="bg" storage="bg/title.jpg"]
+;[chara_show left=0 top=0 layer=1 name="bg" time=0]
 [bg storage="../fgimage/bg/title.jpg" time=0]
+[wait time=10]
 
 ;背景（効果）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_new name="bg_effect" storage="toumei.gif"]
@@ -229,7 +230,8 @@ TG.stat.play_se = true;
 *start
 ;[hide_title_button]
 ;機能ボタン類を消去（fixレイヤー全消去）
-[chara_mod name="bg" storage="toumei.gif" time=1]
+[bg storage="toumei.gif" time=0]
+[wait time=10]
 [clearfix]
 [cm]
 
@@ -286,19 +288,17 @@ TG.stat.play_se = true;
 
 ;----------CGモードが選択された時
 *cg
-[chara_mod name="bg" storage="toumei.gif" time=1]
-[wait time=10]
 [clearfix]
 [cm]
+[wait time=10]
 [jump storage="cg.ks"]
 [s]
 
 ;----------回想モードが選択された時
 *replay
-[chara_mod name="bg" storage="toumei.gif" time=1]
-[wait time=10]
 [clearfix]
 [cm]
+[wait time=10]
 [jump storage="replay2.ks"]
 [s]
 
@@ -307,7 +307,6 @@ TG.stat.play_se = true;
 ;機能ボタン類を消去（fixレイヤー全消去）
 [clearfix]
 [cm]
-;[chara_mod name="bg" storage="toumei.gif" time=1]
 [wait time=10]
 [jump storage="credit.ks"]
 [s]

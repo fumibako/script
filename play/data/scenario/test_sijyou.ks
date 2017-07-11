@@ -1,4 +1,4 @@
-﻿[setreplay name="test"]
+﻿﻿[setreplay name="test"]
 *test
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [clearstack]

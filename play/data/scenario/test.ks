@@ -1,4 +1,4 @@
-﻿[setreplay name="test"]
+﻿﻿[setreplay name="test"]
 *test
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [preload storage="data/fgimage/girl/S/base.png"]
@@ -22,8 +22,10 @@
 
 [cm]
 ;背景変更:和紙風 桜色
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
-[bg storage="../fgimage/bg/toumei.gif" time=0]
+;テストシナリオ用背景仮表示：シナリオ中では背景をchara_new chara_showされている前提でchara_modを使用しているものが多いため、エラー防止のためここで背景仮表示を行い[bg]タグから[chara_mod]タグに切り替えます
+[chara_new name="bg" storage="bg/plane_sakura.jpg"]
+[chara_show left=1 top=0 layer=1 name="bg" time=0]
+[bg storage="toumei.gif" time=0]
 
 [glink target="test_okeiko_sijyou" text="お稽古パート(四条)" graphic="select_waku_x500.png" size=20 width="300" x=100 y=30 color=white]
 

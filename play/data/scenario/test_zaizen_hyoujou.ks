@@ -1,4 +1,4 @@
-﻿;マクロ及び立ち絵の自然な退場・登場時に◆B4nFWraU42さん作スクリプトを使用させていただきました。ありがとうございます
+﻿﻿;マクロ及び立ち絵の自然な退場・登場時に◆B4nFWraU42さん作スクリプトを使用させていただきました。ありがとうございます
 [cm]
 [if exp="tf.flag_omake == true"]
 [clearfix]
@@ -25,8 +25,12 @@ f.preload_images_tati = ["data/fgimage/zaizen/kuti_okori.png","data/fgimage/zaiz
 
 [cm]
 ;背景変更
-[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
+[bg storage="../fgimage/bg/plane_mizuiro.jpg" time=0]
+[wait time=10]
 [if exp="tf.flag_omake != true"]
+;背景変更
+[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
+[wait time=10]
 [イベントシーン構築]
 [endif]
 
@@ -522,6 +526,7 @@ $(".layer_free").css("opacity",1);
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
+[freeimage layer = 1]
 
 [イベントシーン終了]
 [cm]
@@ -540,6 +545,7 @@ $(".list").css("opacity",1);
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
+[freeimage layer = 1]
 
 [イベントシーン終了]
 [cm]

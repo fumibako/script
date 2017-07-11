@@ -1,4 +1,4 @@
-﻿;周回プレイ時のスクリプトは＠名無しさん１様作です。ありがとうございます。
+﻿﻿;周回プレイ時のスクリプトは＠名無しさん１様作です。ありがとうございます。
 [call target=*start storage="tyrano.ks"]
 *naming
 
@@ -47,7 +47,10 @@
 
 *skip_sentaku
 ;背景変更:和紙風 桜色
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+;title周りをbgタグに統一します。ここはchara_modに合わせていただいたのに、すみません
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=0]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 ;和紙風 水色
 ;[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
 ;和紙風 セピア色
@@ -56,8 +59,8 @@
 ;[chara_mod name="bg" storage="bg/plane_wakakusa.jpg" time=100]
 ;[eval exp="f.haikei_credit=''"]
 ;bg背景を黒に
-[bg storage="toumei.gif" time=1]
-[wait time=10]
+;[bg storage="toumei.gif" time=1]
+;[wait time=10]
 ;=====================================================
 ;選択肢用レイヤーを追加
 [position layer=message1 height=550 top=50 left=250 opacity=0]
@@ -104,7 +107,8 @@
 [cm]
 
 ;背景変更:水色
-[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
+[bg storage="../fgimage/bg/plane_mizuiro.jpg" time=0]
+[wait time=10]
 ;[chara_mod name="bg" storage="toumei.gif" time=100]
 
 ;最初の選択肢メッセージレイヤを非表示
@@ -342,7 +346,8 @@ TG.stat.play_se = true;
 [cm]
 [stopbgm]
 ;背景変更:プロローグイントロ全画面
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=100]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 [wait time=10]
 [font color=white size=31]
 [if exp="sf.KSKIP=='ON' && sf.trail_prologue_prologue1==undefined"]
@@ -375,15 +380,16 @@ TG.stat.play_se = true;
 [resetfont][delay speed=10]
 
 ;背景変更:主人公邸_庭
-[背景_庭]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
-;skipを選択していない場合　区切りのよいところでbg変更
-[if exp="f.skip_sentaku != 1"]
+;skipを選択していない場合　区切りのよいところでbg変更:[bg]タグ使用のためコメントアウトさせていただきます(◆jsYiJcqRkk
+;[if exp="f.skip_sentaku != 1"]
 ;bg背景を黒に
-[bg storage="toumei.gif" time=1]
-[wait time=10]
-[endif]
+;[bg storage="toumei.gif" time=1]
+;[wait time=10]
+;[endif]
 ;============================================================================================================
 ;◆追加分
 [if exp="f.skip_sentaku == 1"]
@@ -468,7 +474,7 @@ TG.stat.play_se = true;
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [resetfont]
-「―――文矢お兄様！」[p]
+「――文矢お兄様！」[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]……？　どうしたの？　廊下を走ってはいけないよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -746,7 +752,7 @@ TG.stat.play_se = true;
 [autosave]
 [p]
 
-（―――お手紙より、会いに来てくれる方が嬉しいな）[p]
+（――お手紙より、会いに来てくれる方が嬉しいな）[p]
 
 ふと、先ほどの妹の言葉を思い出す。[p]
 
@@ -755,14 +761,16 @@ TG.stat.play_se = true;
 #
 ;【BGM】フェードアウト
 [fadeoutbgm time=5000]
-それがきっと幸福な物になりますように、そう願わずにはいられなかった―――[p]
+それがきっと幸福な物になりますように、そう願わずにはいられなかった――[p]
 [cm]
 ;[枠消]
 
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif"]
+[wait time=10]
 ;機能ボタン消去
 [clearfix]
+[wait time=10]
 [eval exp="sf.FButton='OFF'"]
 
 ;メッセージレイヤを非表示
@@ -772,7 +780,9 @@ TG.stat.play_se = true;
 ;プロローグ　終
 
 ;背景非表示
-[chara_mod name="bg" storage="toumei.gif" time=100]
+;[chara_mod name="bg" storage="toumei.gif" time=100]
+[bg storage="toumei.gif" time=100]
+[wait time=10]
 
 
 [stopbgm]

@@ -1,4 +1,4 @@
-﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+﻿﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 	[skipstart]
 [endif]
 ;[bg storage="../fgimage/bg/room_niwa.jpg" time=0]

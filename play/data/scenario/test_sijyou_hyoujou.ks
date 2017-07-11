@@ -1,4 +1,4 @@
-﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+﻿﻿;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [cm]
 [if exp="tf.flag_omake == true"]
 [iscript]
@@ -32,10 +32,14 @@ $('.list').remove();
 ;=============================================
 
 [cm]
-[chara_show left=0 top=0 name="bg" time=0]
+;[chara_show left=0 top=0 name="bg" time=0]
+;omakeから来た時は[bg]タグ、テストから来た時は[chara_mod]タグで背景表示
+[bg storage="../fgimage/bg/plane_mizuiro.jpg" time=0]
+[wait time=10]
 [if exp="tf.flag_omake != true"]
 ;背景変更
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=0]
+[wait time=10]
 [イベントシーン構築]
 [endif]
 [freeimage layer = 29]
@@ -1748,6 +1752,7 @@ tf.raberu = "*page"+tf.page;
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
+[freeimage layer = 1]
 
 [イベントシーン終了]
 [cm]
@@ -1772,6 +1777,7 @@ $(".list").css("opacity",1);
 [freeimage layer = 10]
 [freeimage layer = 11]
 [freeimage layer = 12]
+[freeimage layer = 1]
 [iscript]
 $(".list").css("opacity",1);
 [endscript]

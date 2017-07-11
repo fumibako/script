@@ -9,7 +9,8 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 ;test
 
 ;=============================================
-[chara_mod name="bg" storage="bg/title.jpg"]
+[bg storage="../fgimage/bg/title.jpg" time=0]
+[wait time=10]
 [eval exp="tf.test_gamen=true"]
 [eval exp="tf.test_kuroda=true"]
 
