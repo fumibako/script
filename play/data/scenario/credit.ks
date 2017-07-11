@@ -69,15 +69,35 @@ TG.stat.play_se = true;
 [button name="button_title" graphic="back.png" target="*back" ]
 
 [html top=1 left=1]
+<!--↓以下はスクロール対策用に追記-->
+<!--scroll scripts and codes by ＠名無しさん１ ◆B4nFWraU42-->
+<style>
+.credit_gamen {
+height:640px;
+width:960px;
+/*高さを指定しないと領域オーバーか認識しない為指定*/
+- webkit- overflow - scrolling: touch;
+scrolling: touch;
+overflow-scrolling:touch;
+}
+</style>
+<style>
+/* スクロールバーのデザインをつけることができます。ただしwebkitブラウザのみです。他ブラウザはjqueryプラグインで*/
+::-webkit-scrollbar{
+width:10px;
+background:#dad1c1;
+	}
+::-webkit-scrollbar-thumb{
+background:#beb7e8;
+	}
+</style>
+<!--↑ここまでスクロール対策用に追記-->
+<div class='credit_gamen' style="overflow-y:scroll;">
 <font size="2" color="#aa6161" family='"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","ヒラギノ明朝 Pro","Hiragino Mincho Pro"'>
-<div align="center">
-<br><br><br>
-<table border="0" align="left">
-<tr><td><img src="./data/image/buttom_toumei.gif" width="10%" hight="100%"></td><td>
+<table border="0" style="margin-left:10%; margin-right:0%; width:100%;" align="left">
+<tr><td>
 	<img src="./data/image/h2.png"><b>スクリプト・素材サイト様</b><br>
-        <br>
         制作にあたり、大変お世話になりました。ありがとうございます。<br>
-        <br>
         <img src="./data/image/h3.png"><b>スクリプトエンジン</b><br>
 	・　<a href="http://tyrano.jp/" style="text-decoration:none;">ティラノスクリプト 様</a><br>
         <br>
@@ -167,15 +187,35 @@ TG.stat.play_se = true;
 [locate x=850 y=20]
 [button name="button_title" graphic="back.png" target="*back" ]
 [html top=1 left=1]
+<!--↓以下はスクロール対策用に追記-->
+<!--scroll scripts and codes by ＠名無しさん１ ◆B4nFWraU42-->
+<style>
+.credit_gamen {
+height:640px;
+width:960px;
+/*高さを指定しないと領域オーバーか認識しない為指定*/
+- webkit- overflow - scrolling: touch;
+scrolling: touch;
+overflow-scrolling:touch;
+}
+</style>
+<style>
+/* スクロールバーのデザインをつけることができます。ただしwebkitブラウザのみです。他ブラウザはjqueryプラグインで*/
+::-webkit-scrollbar{
+width:10px;
+background:#dad1c1;
+	}
+::-webkit-scrollbar-thumb{
+background:#beb7e8;
+	}
+</style>
+<!--↑ここまでスクロール対策用に追記-->
+<div class='credit_gamen' style="overflow-y:scroll;">
 <font size="2" color="#aa6161" family='"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","ヒラギノ明朝 Pro","Hiragino Mincho Pro"'>
-<div align="center">
-<br><br><br>
-<table border="0" align="left">
-<tr><td><img src="./data/image/buttom_toumei.gif" width="10%" hight="100%"></td><td>
+<table border="0" style="margin-left:10%; margin-right:0%;" align="left">
+<tr><td>
 	<img src="./data/image/h2.png"><b>スクリプト・素材サイト様</b><br>
-        <br>
         制作にあたり、大変お世話になりました。ありがとうございます。<br>
-        <br>
         <img src="./data/image/h3.png"><b>フォント</b><br>
 	・　<a href="http://www7a.biglobe.ne.jp/~kouzan/" style="text-decoration:none;">衡山毛筆フォント-青二書道教室 様</a><br>
 	・　<a href="http://mplus-fonts.osdn.jp/index.html" style="text-decoration:none;">M+ FONTS 様</a><br>
@@ -191,20 +231,16 @@ TG.stat.play_se = true;
 	・　<a href="http://koukaongen.com/kkog2_free/index.html" style="text-decoration:none;">効果音源 様</a><br>
 	・　<a href="http://www.koukasound.com/" style="text-decoration:none;">効果ON 様</a><br>
 	・　<a href="http://taira-komori.jpn.org/" style="text-decoration:none;">無料効果音で遊ぼう！ 様</a><br>
-       <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <br><br>
 	<img src="./data/image/h2.png"><b>スタッフ</b><br>
-	<br>
-	<table width="90%" border="0" cellpadding="0" cellspacing="0" class="spec">
-		<tr><th align="left">原案・企画</th><td>： ◆/99/KAMIYU 、 ◆8EASfQr/2Q 、 淑女の皆様</td></tr>
-		<tr><th align="left">キャラクターグラフィック</th><td>： かいこ 、 ◆jsYiJcqRkk</td></tr>
-		<tr><th align="left">脚本</th><td>：◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk</td></tr>
-		<tr><th align="left">スクリプト</th><td>： 吉里吉里Ver.システム原案…◆8EASfQr/2Q 、 ティラノスクリプトVer.…◆jsYiJcqRkk、＠名無しさん１</td></tr>
-		<tr><th align="left">Special Thanks</th><td>： エリ花様 、 黒田ルート添削・校正者様 、 登場人物名付け親様 、 テストプレイヤーの皆様 、 淑女の皆様</td></tr>
-		<tr><th align="left">その他</th><td>： ◆jsYiJcqRkk　</td></tr>
+	<table width="90%" style="margin-left:5%; border-bottom:1px solid #ddddef;" cellpadding="0" cellspacing="0" class="spec">
+		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left">原案・企画</th><td>：</td><td> ◆/99/KAMIYU 、 ◆8EASfQr/2Q 、 淑女の皆様</td></tr>
+		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left" style="font-size:80%;">キャラクター<br>グラフィック</th><td>：</td><td> かいこ 、 ◆jsYiJcqRkk</td></tr>
+		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left">脚本</th><td>：</td><td>◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk</td></tr>
+		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left">スクリプト<br></th><td>：</td><td> 吉里吉里Ver.システム原案…◆8EASfQr/2Q<br>
+		　　ティラノスクリプトVer.…◆jsYiJcqRkk、＠名無しさん１</td></tr>
+		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left">Special Thanks<br></th><td>：</td><td> エリ花様 、 黒田ルート添削・校正者様 、 登場人物名付け親様 、 テストプレイヤーの皆様 、 淑女の皆様</td></tr>
+		<tr><th align="left">その他</th><td>：</td><td> ◆jsYiJcqRkk　</td></tr>
 	</table>
 </td></tr></table></div>
 
