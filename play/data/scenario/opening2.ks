@@ -1450,7 +1450,9 @@ jumpします。[p]
 [eval exp="sf.FButton='OFF'"]
 
 ;背景非表示
-[chara_mod name="bg" storage="toumei.gif" time=50]
+[bg storage="toumei.gif" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="toumei.gif" time=50]
 [endreplay]
 
 
