@@ -174,12 +174,14 @@ $('.loding_pic1').remove();
 *test7_1
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_7_1.ks"
 [s]
 
 *test9_1
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_9_1.ks"
 [s]
 
@@ -187,6 +189,7 @@ $('.loding_pic1').remove();
 *test9_2
 [cm]
 [freeimage layer = 26]
+[bg storage="toumei.gif" time=50]
 @jump storage="sijyou/sijyou_9_2.ks"
 [s]
 
@@ -194,6 +197,7 @@ $('.loding_pic1').remove();
 *test9_3
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_9_3.ks"
 [s]
 
@@ -201,6 +205,7 @@ $('.loding_pic1').remove();
 *test9_4
 [cm]
 [freeimage layer = 26]
+[bg storage="toumei.gif" time=50]
 @jump storage="sijyou/sijyou_9_4.ks"
 [s]
 
@@ -208,6 +213,7 @@ $('.loding_pic1').remove();
 *test9_4b
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_9_4b.ks"
 [s]
 
@@ -215,6 +221,7 @@ $('.loding_pic1').remove();
 *test10_1
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_10_1.ks"
 [s]
 
@@ -222,6 +229,7 @@ $('.loding_pic1').remove();
 *test10_3
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_10_3.ks"
 [s]
 
@@ -229,6 +237,7 @@ $('.loding_pic1').remove();
 *test10_3b
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_10_3_badED.ks"
 [s]
 
@@ -236,24 +245,28 @@ $('.loding_pic1').remove();
 *test11_1
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_11_1.ks"
 [s]
 
 *test11_1_kai
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_11_1_kai.ks" target=*start
 [s]
 
 *test11_1b
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_11_1b.ks"
 [s]
 
 *test1_1
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_1_1.ks"
 [s]
 
@@ -261,54 +274,63 @@ $('.loding_pic1').remove();
 *test1_3
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_1_3_normalED.ks"
 [s]
 
 *test1_4
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_1_4.ks"
 [s]
 
 *test2_1
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_2_1.ks"
 [s]
 
 *test2_1b
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_2_1b.ks"
 [s]
 
 *test3_1
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_3_1.ks"
 [s]
 
 *test3_1b
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_3_1b.ks"
 [s]
 
 *test3_1b_f
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_3_1b_fumiya.ks"
 [s]
 
 *test3_4
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_3_4_goodED.ks"
 [s]
 
 *test_goodED
 [cm]
 [freeimage layer = 26]
+;問題なし
 @jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
 [s]
 
