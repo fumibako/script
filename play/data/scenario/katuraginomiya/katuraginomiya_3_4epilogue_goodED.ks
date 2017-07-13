@@ -6,8 +6,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -80,12 +81,14 @@ $('.list').remove();
 [preload storage="data/fgimage/katuraginomiya/emo_hohosome.png" wait=true]
 
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】玄関
-[chara_mod name="bg" storage="bg/bg_genkan.jpg"]
+[bg storage="../fgimage/bg/bg_genkan.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -207,7 +210,9 @@ $('.list').remove();
 皆に別れを告げ、私は精一杯の笑顔を浮かべながら、迎えの車に[r]乗り込んだ。[p]
 ;===============================================================
 [主人公退場]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg" time=1300]
+[bg storage="../fgimage/bg/I9IhvvVdPo/ekken.jpg" time=1300]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg" time=1300]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川'"]
 [表示準備 storage="bg/I9IhvvVdPo/ekken.jpg"]
 ;主人公復帰表情目閉じ　ポーズ通常
@@ -305,17 +310,12 @@ $('.junbi_girl').remove();
 [暗転２]
 [葛城宮退場]
 ;指定　暗転
-;一度背景レイヤをリセットします
-[freeimage layer=1 time=100]
 [ct]
 [wait time=10]
 [clearfix]
 [wait time=10]
 [clearstack]
 [wait time=10]
-@layopt layer=1 visible=true
-[chara_new name="bg" storage="toumei.gif"]
-[chara_show left=1 top=1 layer=1 name="bg" time=500]
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
 ;【立ち絵】主人公目閉じ
@@ -340,7 +340,7 @@ $('.junbi_girl').remove();
 ;【背景】青空に桜
 ;[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [bg storage="../fgimage/bg/bg_EDsakura.jpg" time=0]
-[chara_mod name="bg" storage="toumei.gif"]
+;[chara_mod name="bg" storage="toumei.gif"]
 [wait time=50]
 ;[font color="0x663300"]
 [font color=white size=27]

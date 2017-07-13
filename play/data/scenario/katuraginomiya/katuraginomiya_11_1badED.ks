@@ -8,8 +8,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -19,12 +20,14 @@ $('.list').remove();
 [call target=*start storage="macro_tati_girl.ks"]
 
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】薔薇園 
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
+[bg storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築ボタン無し版]
 #
@@ -139,7 +142,9 @@ jumpします。[p]
 ;すべて消えていく暗転
 [表示準備 storage="bg/anten.jpg" layer=29 time=1500]
 ;裏で背景変更
-[chara_mod name="bg" storage="toumei.gif" time=50]
+[bg storage="toumei.gif" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="toumei.gif" time=50]
 [主人公憂い]
 [主人公ポーズ通常]
 [主人公効果消]
@@ -154,7 +159,9 @@ jumpします。[p]
 
 私にもっと強さがあれば、殿下は私を受け入れてくれたのかしら？[p]　
 
-[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=1000]
+[bg storage="../fgimage/bg/bg_bluesky.jpg" time=1000]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 ;【立ち絵】主人公 通常
  [主人公目伏]
@@ -173,7 +180,9 @@ jumpします。[p]
 *seen_end
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
