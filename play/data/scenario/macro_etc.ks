@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿
+﻿﻿﻿﻿﻿﻿
 *start
 
 ;==============================
@@ -70,8 +70,8 @@ $(".para").css("opacity",1); //パラメータ表示を復帰
 ;◆[変数ログ表示]
 [macro name="変数ログ表示"]
 [iscript]
-//console.info("f.hantei_event_storage=", this.kag.stat.f.hantei_event_storage);
-//console.info("f.okeiko_week=", this.kag.stat.f.okeiko_week);
+console.info("f.hantei_event_storage=", this.kag.stat.f.hantei_event_storage);
+console.info("f.katuraginomiya_fumi_inou=", this.kag.stat.f.katuraginomiya_fumi_inou);
 [endscript]
 [endmacro]
 
@@ -113,7 +113,11 @@ $('.loding_pic1').remove();
 [macro name="暗転"]
 ;名前欄消去
 [whosay name=""]
-[chara_mod name="bg" storage="toumei.gif"]
+[if exp="f.flag_replay == true"]
+	[bg storage="../fgimage/bg/toumei.gif" time=500]
+[else]
+	[chara_mod name="bg" storage="toumei.gif"]
+[endif]
 [endmacro]
 
 ;◆[華衣]
@@ -1250,7 +1254,11 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
+[if exp="f.flag_replay == true"]
+	[bg storage="../fgimage/bg/bg_prologue.jpg" time=0]
+[else]
+	[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
+[endif]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -1286,7 +1294,11 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風(暗)
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[if exp="f.flag_replay == true"]
+	[bg storage="../fgimage/bg/bg_prologue.jpg" time=0]
+[else]
+	[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
+[endif]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]

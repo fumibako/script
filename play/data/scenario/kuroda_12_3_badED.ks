@@ -43,7 +43,8 @@ $(".rp_bt").remove();
 [freeimage layer = 24]
 [wait time=10]
 ;【背景】庭・夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
+[bg storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -96,7 +97,8 @@ $(".rp_bt").remove();
 [endif]
 *scene2
 ;ゆっくり暗転
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg storage="toumei.gif" time=1000]
+[wait time=10]
 [eval exp="f.kaogura='off'"]
 [主人公退場]
 [wait time=10]
@@ -106,7 +108,8 @@ $(".rp_bt").remove();
 
 ;==========================================================================================
 ;【背景】町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
+[bg storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [wait time=10]
 ;==========================================================================================
@@ -150,7 +153,8 @@ $('.junbi_girl').remove();
 田中様へ託したものの、心は晴れない。[p]
 
 ;ゆっくり暗転
-[chara_mod name="bg" storage="bg/toumei.gif" time=1000]
+[bg storage="toumei.gif" time=1000]
+[wait time=10]
 [eval exp="f.kaogura='off'"]
 [主人公退場]
 [wait time=10]
@@ -158,7 +162,8 @@ $('.junbi_girl').remove();
 ――不安を抱えたまま、時が経ち[p]
 ;==========================================================================================
 ;画面切り替え【背景】「主人公邸」
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[bg storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;主人公復帰表情目閉じ　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
@@ -237,7 +242,8 @@ $('.junbi_girl').remove();
 
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
 ;メッセージレイヤを全画面用に設定変更
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=1000]
+[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
+[wait time=10]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 
 ;テキスト全画面
@@ -288,7 +294,7 @@ $('.junbi_girl').remove();
 [r]
 [sp]　　　　　　　　完[p]
 [stopbgm]
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg storage="toumei.gif" time=1000]
 [wait time=10]
 [clearfix]
 [cm]
@@ -299,6 +305,8 @@ $('.junbi_girl').remove();
 
 [if exp="f.flag_replay == true"]
 [イベントシーン終了]
+[bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[wait time=10]
 @jump storage=replay2.ks
 [endif]
 
