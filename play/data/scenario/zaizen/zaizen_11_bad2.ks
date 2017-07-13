@@ -7,8 +7,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
@@ -20,12 +21,14 @@ $('.list').remove();
 [call target=*start storage="macro_tati_zaizen.ks"]
 
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】パーティ会場の庭[背景_庭]　
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+[bg storage="../fgimage/bg/test_zaizen_paty1.jpg" time=100]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #

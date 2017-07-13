@@ -10,8 +10,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -22,12 +23,14 @@ $('.list').remove();
 [call target=*start storage="macro_tati_zaizen.ks"]
 
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[bg storage="../fgimage/bg/room_niwa.jpg"]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 
@@ -187,7 +190,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [暗転２ storage="bg/bg_genkan.jpg" clegit=true]
 ;背景玄関
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=100]
+[bg storage="../fgimage/bg/bg_genkan.jpg" time=100]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=100]
 ;既に待っていた状態なので先に出しておくパーティ会場なので燕尾服
 [財前ベース燕尾服]
 [財前通常]
@@ -249,7 +254,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【背景】洋館パーティ会場
 ;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg" time=50]
 ;【背景】独逸大使館パーティ会場
-[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
+[bg storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
 [暗転２終了]
 ;====================================================================================
 
@@ -327,7 +334,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [暗転２ storage="bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg" clegit=true]
 [財前退場] 
 ;案内される姿を見守ったパターン２　こちらにします。
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg"]
+[bg storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg"]
 [暗転２終了]
 ;====================================================================================
 #
@@ -435,7 +444,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【背景】洋館パーティ会場
 ;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg" time=50]
 ;【背景】独逸大使館パーティ会場
-[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
+[bg storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
 ;[主人公通常]
 ;心情の表情設定↑　その後驚きで
 [暗転２終了]
@@ -475,7 +486,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [暗転２]
 ;【背景】雪柳
 [eval exp="f.haikei_credit='　'"]
-[chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
+[bg storage="../fgimage/bg/zaizen_yukiyanagi.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
 [表示準備 storage="bg/zaizen_yukiyanagi.jpg"]
 [主人公涙]
 [暗転２終了]
@@ -507,7 +520,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;====================================================================================　
 ;一瞬、裏背景（黒）がみえるのがいやですが。スクリプト担当２
 ;【背景】パーティ会場庭
-[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
+[bg storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=1000]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
 ;====================================================================================　
 ;【立ち絵】主人公：目伏せ悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -541,7 +556,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 *seen_nomal
 ;====================================================================================
 ;【背景】雪柳
-[chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
+[bg storage="../fgimage/bg/zaizen_yukiyanagi.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
 ;====================================================================================
 ;【立ち絵】主人公：悲しみ
 [主人公頬染め]
@@ -581,7 +598,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [財前退場]
 [主人公退場]
 ;【背景】ノーマルエンドCG
-[chara_mod name="bg" storage="bg/zaizen_CGnomal.jpg"]
+[bg storage="../fgimage/bg/zaizen_CGnomal.jpg"]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_CGnomal.jpg"]
 ;◆CGモード用に画像を登録
 [cg storage="zaizen_CGnomal.jpg"]
 
@@ -606,7 +625,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 いや、それだけではない。　私を惑わす悪い方です。[p]
 
 ;【背景】ノーマルエンドCG
-[chara_mod name="bg" storage="bg/zaizen_CGnomal_2.jpg" time=0]
+[bg storage="../fgimage/bg/zaizen_CGnomal_2.jpg" time=0]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_CGnomal_2.jpg" time=0]
 そう、耳に囁かれて私は真っ赤になった。[p]
 ;CG終わり
 ;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
@@ -617,7 +638,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [if exp="f.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) && ( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good) && f.para_shujinkou_shukujodo >= 80"]
 [暗転２ storage=bg/zaizen_paty_niwa.jpg]
 ;【背景】パーティ会場庭
-[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
+[bg storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=1000]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
 [財前ベース燕尾服]
 [財前通常]
 [主人公ポーズ通常]
@@ -635,7 +658,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;背景変更:黒茶・和紙風
 [image name=end layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;一瞬裏がみえるの防止背景
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 ;===============================================================
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]

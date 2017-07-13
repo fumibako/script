@@ -4,8 +4,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -21,12 +22,14 @@ $('.list').remove();
 [call target=*start storage="macro_tati_zaizen.ks"]
 
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】パーティ会場庭
-[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg"]
+[bg storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg"]
 [eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #
@@ -112,7 +115,9 @@ $('.list').remove();
 ;メッセージウィンドウ消去から復帰時の顔グラをoffにします
 [eval exp="f.kaogura = 'off'"]
 ;【背景】グッドエンドCG　CG差分（財前目閉じ、主人公目閉じ）
-[chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
+[bg storage="../fgimage/bg/zaizen_CGgood.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
 ;◆CGモード用に画像を登録
 [cg storage="zaizen_CGgood.jpg"]
 
@@ -154,7 +159,9 @@ $('.list').remove();
 ;[playse storage=paper_open.ogg loop=false ]
 [resetfont]
 ;洋館居間
-[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+[bg storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;[call target=*start storage="macro_tati_zaizen.ks"]立ち絵が消える
 ;余裕があれば(ムリ)私服でしょうか
@@ -245,7 +252,9 @@ $('.list').remove();
 [暗転２ storage="bg/zaizen_fusenkazura2.jpg"]
 [財前退場]
 ;【背景】 フウセンカズラの花
-[chara_mod name="bg" storage="bg/zaizen_fusenkazura2.jpg"]
+[bg storage="../fgimage/bg/zaizen_fusenkazura2.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_fusenkazura2.jpg"]
 [eval exp="f.haikei_credit=' '"]
 [暗転２終了]
 ;====================================================================================
@@ -345,7 +354,9 @@ $("kan").css('margin','auto');
 ;[財前退場]
 
 ;【背景】 フウセンカズラの実
-[chara_mod name="bg" storage="bg/zaizen_fusenkazura.jpg"]
+[bg storage="../fgimage/bg/zaizen_fusenkazura.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/zaizen_fusenkazura.jpg"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [wait time=100]
