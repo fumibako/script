@@ -2,7 +2,9 @@
 *first
 [if exp="tf.test_sijyou==true"]
 [stopbgm]
-[chara_mod name="bg" storage="toumei.gif"]
+[bg storage="../fgimage/bg/toumei.gif" time=0]
+[wait time=10]
+;[chara_mod name="bg" storage="toumei.gif"]
 [glink target=test_haikei text=藤枝ver exp="f.hujieda_au=1" width="200" x=200 y=80 color=white]
 [glink target=test_haikei text=葛城宮ver exp="f.katuraginomiya_au=1" width="200" x=200 y=130 color=white]
 [glink target=test_haikei text=財前ver exp="f.zaizen_au=1" width="200" x=200 y=180 color=white]
@@ -24,39 +26,49 @@
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg"]
+[bg storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_hujieda.jpg" time=500]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg"]
 ;bg/bg_tegami_tokiko.jpg
 [elsif exp="f.katuraginomiya_au == 1"]
 ;葛城宮背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg"]
+[bg storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg" time=500]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg"]
 ;bg/bg_tegami_kousitsu_jijyuu.jpg bg/bg_tegami_kousitsu_akebono.jpg
 [elsif exp="f.zaizen_au == 1"]
 ;財前背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
+[bg storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=500]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"]
 [elsif exp="f.kuroda_au == 1"]
 ;黒田背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
-[bg storage="../fgimage/bg/bg_tegami_kuroda.jpg" time=1000]
+[bg storage="../fgimage/bg/bg_tegami_kuroda.jpg" time=500]
 [wait time=10]
-[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg"]
+;[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg"]
 [elsif exp="f.sijyou_au == 1"]
 ;四条背景
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg"]
+[bg storage="../fgimage/bg/B4nFWraU42/bg_tegami_konyakusha.jpg" time=500]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg"]
 [else]
 ;例外
 ;文字色　font_color
 [eval exp="tf.fc='#5b4513'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
+[bg storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
 [endif]
 ;===============================================================
 @jump target=test
@@ -582,7 +594,9 @@ $('.omoide1').remove();
 
 [freeimage layer=27]
 ;背景mod変更　レイヤー２９ではありません。
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=1300]
+[bg storage="../fgimage/bg/I9IhvvVdPo/bg_preload_girl.jpg" time=1300]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=1300]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
 

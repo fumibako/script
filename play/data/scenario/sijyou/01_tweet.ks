@@ -4,8 +4,9 @@
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
-[chara_mod name="bg" storage="../fgimage/bg/title.jpg" time=0]
+[bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
+;[chara_mod name="bg" storage="../fgimage/bg/title.jpg" time=0]
 ;クリックしないとならない 何かメッセージ　
 [position layer=message1 width=600 height=100 top=150 left=80 margint=30 opacity=100 color=snow]
 @layopt layer=message1 visible=true

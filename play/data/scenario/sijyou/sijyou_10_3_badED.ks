@@ -6,8 +6,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 *start
 ;¥¥¥¥¥¥¥¥イベントバッド_イベント5.5手紙イベントバット¥¥¥¥¥¥¥¥
@@ -19,12 +20,14 @@ $('.list').remove();
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -99,10 +102,13 @@ $('.list').remove();
 [eval exp="sf.FButton='OFF'"]
 [主人公退場]
 
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
 [wait time=10]
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=1000]
+;[chara_mod name="bg" storage="toumei.gif" time=500]
 [wait time=10]
+[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=1000]
 
 ;画面中央に「完」
 [テキスト全画面白文字暗]
@@ -112,8 +118,9 @@ $('.list').remove();
 [p]
 [freeimage layer = 28]
 [stopbgm]
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
 [wait time=10]
+;[chara_mod name="bg" storage="toumei.gif" time=500]
 
 [if exp="f.flag_replay == true"]
 @layopt layer=29 visible=true
@@ -128,6 +135,8 @@ $('.1_fore').remove();
 
 [if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
+[bg storage="../fgimage/bg/plane_sepia.jpg"]
+[wait time=10]
 @jump storage="replay2.ks"
 [endif]
 

@@ -25,12 +25,14 @@ $('.list').remove();
 [freeimage layer = 14]
 
 ;[if exp="f.flag_replay == true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 ;[endif]
 
 ;【背景】青空に桜
-[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[bg storage="../fgimage/bg/bg_sakura.jpg" time=0]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
 [イベントシーン構築ボタン無し版]
 [eval exp="f.kaogura = 'off'"]
@@ -213,12 +215,16 @@ $('.saku3').remove();
 ;good条件分岐は3箇所：スチル表示(ここ)、169行目付近、preload_sijyou.ks423行目付近(もし調整が必要になった際用メモです。「以上」の部分を調整させていただきました
 [if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.event_sijyou[15] == 1 && f.para_shujinkou_j_kadou >= 50"]
 [暗転２ storage="bg/sijyou_CGgood.png" clegit=true]
-[chara_mod name="bg" storage="bg/sijyou_CGgood.png" time=1000]
+[bg storage="../fgimage/bg/sijyou_CGgood.png" time=1000]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/sijyou_CGgood.png" time=1000]
 ;◆CGモード用に画像を登録
 [cg storage="sijyou_CGgood.png"] 
 [else]
 [暗転２ storage="bg/sijyou_CGnomal.png" clegit=true]
-[chara_mod name="bg" storage="bg/sijyou_CGnomal.png" time=1000]
+[bg storage="../fgimage/bg/sijyou_CGnomal.png" time=1000]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/sijyou_CGnomal.png" time=1000]
 ;◆CGモード用に画像を登録
 [cg storage="sijyou_CGnomal.png"]
 [endif]

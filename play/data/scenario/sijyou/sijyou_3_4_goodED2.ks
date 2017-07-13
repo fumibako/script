@@ -19,8 +19,9 @@
 [wait time=10]
 ;===============================================================
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa_sepia.jpg"]
+[bg storage="../fgimage/bg/room_niwa_sepia.jpg"]
 [wait time=50]
+;[chara_mod name="bg" storage="bg/room_niwa_sepia.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;↓フリーズ防止策として、セピア化背景を導入してcssフィルターはコメントアウトさせていただきます(◆jsYiJcqRkk
 ;[iscript]
@@ -44,7 +45,8 @@
 ;私をいつも兄と一緒に暖かく見守ってくださった。[p]
 ;===============================================================
 ;【背景】ヒロインの部屋雪
-[chara_mod name="bg" storage="bg/room_niwa_yuki_sepia.jpg" time=100]
+[bg storage="../fgimage/bg/room_niwa_yuki_sepia.jpg" time=100]
+;[chara_mod name="bg" storage="bg/room_niwa_yuki_sepia.jpg" time=100]
 [wait time=50]
 ;ここでとまる
 ;うごいてますか？[p]
@@ -59,7 +61,8 @@
 [image layer=1 x=1 y=1 storage="bg/bg_sakura_sepia.jpg" time=1000 visible=true]
 [wait time=10]
 [else]
-[chara_mod name="bg" storage="bg/bg_sakura_sepia.jpg" time=100]
+[bg storage="../fgimage/bg/bg_sakura_sepia.jpg" time=100]
+;[chara_mod name="bg" storage="bg/bg_sakura_sepia.jpg" time=100]
 [wait time=10]
 ;ここでとまる
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
@@ -77,7 +80,8 @@
 [image layer=1 x=1 y=1 storage="bg/bg_omoide_sepia.jpg" time=1000 visible=true]
 [wait time=10]
 [else]
-[chara_mod name="bg" storage="bg/bg_omoide_sepia.jpg" time=500]
+[bg storage="../fgimage/bg/bg_omoide_sepia.jpg" time=500]
+;[chara_mod name="bg" storage="bg/bg_omoide_sepia.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 [endif]
@@ -100,7 +104,9 @@
 ;[endscript]
 ;[if exp="f.flag_replay != true"]
 ;一瞬裏がみえるの防止背景(replay時にも裏が見えるのを防止したいので↑↓if～をコメントアウトしました(◆jsYiJcqRkk
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 ;[endif]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
@@ -128,6 +134,8 @@ $('.1_fore').remove();
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [clearfix]
 [clearstack]
+[bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[wait time=10]
 [skipstop]
 [stopse]
 @jump storage="replay2.ks" 

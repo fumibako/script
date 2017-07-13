@@ -11,6 +11,7 @@ $('.list').remove();
 [endscript]
 *replay_sijyou_3_4_good
 *start
+[freeimage layer = 1]
 [if exp="tf.test_sijyou == true"]
 [eval exp="f.okeiko_gamen=true"]
 [eval exp="f.sijyou_au=1"]
@@ -23,12 +24,14 @@ $('.list').remove();
 [call target=*start storage="macro_tati_girl.ks"]
 
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】ﾌﾟﾛﾛーｸﾞ　一瞬見える
-[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [eval exp="f.haikei_credit=' '"]
 [プリロード画面消去]
 ;====================================================
@@ -72,7 +75,9 @@ $('.list').remove();
 ;ｸﾘｯｸがみえる場合は追加↓
 ;[layopt layer=message0 visible=false]
 ;【背景】ｴﾋﾟﾛｰｸﾞ部屋　昔の華族の家は和と洋が隣接しているので？
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_ep_wasitu.jpg"]
+[bg storage="../fgimage/bg/B4nFWraU42/bg_sijyou_ep_wasitu.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_ep_wasitu.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -226,7 +231,9 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 ;【退場】四条
 [四条退場]
 その陰には、彼を支える[名前]の姿があったという。[p]
-[chara_mod name="bg" storage="bg/sijyou_ed_tegami0.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_ed_tegami0.jpg" time=1000"]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/sijyou_ed_tegami0.jpg" time=1000]
 [freeimage layer = 29 time=1000]
 ;背景仮でおいてみる　いつもの手紙の背景に和花でも？？
 [font color="000000"]
@@ -282,7 +289,9 @@ $('.1_fore').remove();
 [イベントシーン終了]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 ;【背景】セピア背景
-[chara_mod name="bg" storage="bg/plane_sepia.jpg"]
+[bg storage="../fgimage/bg/plane_sepia.jpg"]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/plane_sepia.jpg"]
 [eval exp="f.haikei_credit=''"]
 
 @jump storage="replay2.ks"
