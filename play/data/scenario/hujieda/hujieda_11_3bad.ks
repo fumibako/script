@@ -9,7 +9,9 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;【背景】プロローグ
- [chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=30]
+[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=30]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=30]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 ;[主人公ポーズ通常]
@@ -34,6 +36,8 @@
 沢山、手紙を送ればよかった。[p] 
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
+[bg storage="toumei.gif" time=0]
+[wait time=10]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面　0x663300
@@ -49,9 +53,9 @@ $("kan").css('margin','auto');
 [fadeoutbgm time=3000]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
-[freeimage layer=29]
+[freeimage layer=29 time=2000]
 [fadeoutbgm time=3000]
-[wait time=2000]
+[wait time=500]
 ;スマホで音楽がぶちときれるのはどうしようもない 
 ;===============================================================
 [イベントシーン終了]

@@ -7,10 +7,11 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 [if exp="f.flag_replay==true"]
 [cm]
 ;暗転とは違う
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -21,11 +22,13 @@ $('.list').remove();
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -38,7 +41,7 @@ $('.list').remove();
 ;選択肢からジャンプしてくるラベルです。スクリプト担当以外は消さないでください。
 ;=========================================================================
 
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 [主人公目パチ1回]
 ;bad
@@ -62,8 +65,9 @@ $('.list').remove();
 [image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [主人公退場]
 @layopt layer=message2 page=fore visible = false
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1000]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=1000]
 [wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1000]
 [テキスト全画面白文字無背景]
 ;メッセージレイヤを全画面用に設定変更[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -153,6 +157,8 @@ $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 [iscript]
 $("kan").css('margin','auto');
 [endscript]
+[bg storage="toumei.gif" time=0]
+[wait time=10]
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　  完[p]
@@ -163,9 +169,9 @@ $("kan").css('margin','auto');
 [iscript]
 $(".bg").attr({ src: "./data/bgimage/toumei.gif"});
 [endscript]
-[freeimage layer=29]
+[freeimage layer=29 time=2000]
 [fadeoutbgm time=3000]
-[wait time=2000]
+[wait time=500]
 ;スマホで音楽がぶちときれるのはどうしようもない 
 ;===============================================================
 [イベントシーン終了]
@@ -175,7 +181,7 @@ $(".bg").attr({ src: "./data/bgimage/toumei.gif"});
 [iscript]
 $('.1_fore').remove();
 [endscript]
-@layopt layer=1 visible=true
+;@layopt layer=1 visible=true
 [endif]
 
 ;◆回想記録
@@ -183,6 +189,8 @@ $('.1_fore').remove();
 
 [if exp="f.flag_replay==true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
+[bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[wait time=10]
 @jump storage="replay2.ks"
 [endif]
 

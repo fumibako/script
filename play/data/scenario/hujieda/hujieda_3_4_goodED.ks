@@ -4,12 +4,13 @@
 *replay_hujieda_hujieda_3_4_goodED
 *replay_hujieda_hujieda_3_4_goodED_scene
 [if exp="f.flag_replay==true"]
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 [iscript]
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 *start
 [stopbgm]
 [if exp="tf.test_hujieda==true"]
@@ -26,12 +27,14 @@ $('.list').remove();
 [call target=*3_4_goodED storage="hujieda/preload_hujieda.ks"]
 
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】青空に桜
-[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[bg storage="../fgimage/bg/bg_sakura.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 ;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [eval exp="f.haikei_credit=''"]
 [プリロード画面消去]
@@ -62,7 +65,9 @@ $('.list').remove();
 [eval exp="sf.FButton='OFF'"]
 ;【背景】青空に桜
 [image layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
-[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
+[bg storage="../fgimage/bg/bg_EDsakura.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
 [wait time=100]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
@@ -88,7 +93,9 @@ $('.list').remove();
 ;[image layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=1000 visible=true]
 ;[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 [主人公通常]
 [主人公ポーズ通常]
@@ -500,8 +507,9 @@ $('.list').remove();
 ;[image name=end layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
 ;【背景】ﾌﾟﾛﾛーｸﾞ どちらか選んでください
 [image name=end  layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
-[wait time=100]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=300 width=330 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面

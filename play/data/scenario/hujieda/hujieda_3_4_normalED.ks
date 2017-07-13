@@ -8,8 +8,9 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
+[freeimage layer = 1]
 [if exp="f.flag_replay == true"]
-[bg storage="toumei.gif" time=1]
+;[bg storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -21,12 +22,14 @@ $('.list').remove();
 [call target=*start storage="macro_tati_hujieda.ks"]
 
 [if exp="f.flag_replay==true"]
-@layopt layer=1 visible=true
-[chara_show name="bg"]
+;@layopt layer=1 visible=true
+;[chara_show name="bg"]
 [endif]
 
 ;【背景】たんぽぽ公園
-[chara_mod name="bg" storage="bg/hujieda_tanpopo_kouen.jpg"]
+[bg storage="../fgimage/bg/hujieda_tanpopo_kouen.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/hujieda_tanpopo_kouen.jpg"]
 [eval exp="f.haikei_credit=''"]
 [keyframe name="animation1"]
 [frame p=100% x="2000" y="1000"]
@@ -89,7 +92,9 @@ $('.kaede').remove();
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;【背景】たんぽぽ
-[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
+[bg storage="../fgimage/bg/hujieda_tanpopo.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
 [暗転２終了]
 ;=========================================================================
 ――目に飛び込んできたのは、誰よりも大切な人。[p]
@@ -246,12 +251,16 @@ $('.kaede').remove();
 [主人公退場]
 ;◆goodED条件を満たす場合、good画像を表示
 [if exp="f.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
-[chara_mod name="bg" storage="bg/hujieda_goodED.jpg"]
+[bg storage="../fgimage/bg/hujieda_goodED.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/hujieda_goodED.jpg"]
 ;◆CGモード用に画像を登録
 [cg storage="hujieda_goodED.jpg"] 
 [else]
 ;【背景】hujieda_normalED.jpg
-[chara_mod name="bg" storage="bg/hujieda_normalED.jpg"]
+[bg storage="../fgimage/bg/hujieda_normalED.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/hujieda_normalED.jpg"]
 ;◆CGモード用に画像を登録
 [cg storage="hujieda_normalED.jpg"] 
 [endif]
@@ -301,7 +310,9 @@ $("kan").css('margin','auto');
 [endscript]
 ;【背景】綿毛全画面→normalEDのためbg_prologue.jpgに「完」の方にあわせてみます
 ;[chara_mod name="bg" storage="bg/hijieda_kaede_sita2.jpg"]
-[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　  完[p]

@@ -14,7 +14,7 @@ $('.list').remove();
 [cm]
 ;暗転とは違う
 
-[back storage="toumei.gif" time=1]
+;[back storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -24,18 +24,20 @@ $('.list').remove();
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[freeimage layer=1 time=500]
+[freeimage layer=1]
 [ct]
 [wait time=10]
 [clearfix]
 [wait time=10]
 [clearstack]
 [wait time=10]
-@layopt layer=1 visible=true
+;@layopt layer=1 visible=true
 ;【背景】主人公邸 庭の見える部屋：夜
 ;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=30]
-[chara_new name="bg" storage="bg/room_niwa_yoru.jpg"]
-[chara_show left=1 top=1 layer=1 name="bg" time=0]
+[bg storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
+[wait time=10]
+;[chara_new name="bg" storage="bg/room_niwa_yoru.jpg"]
+;[chara_show left=1 top=1 layer=1 name="bg" time=0]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -185,7 +187,9 @@ $('.list').remove();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 玄関 （裏で画面構成）
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[bg storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [表示準備 storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;テキスト全画面
