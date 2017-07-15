@@ -1183,8 +1183,8 @@ jumpします。[p]
 [主人公ポーズ通常]
 [主人公目閉]
 [四条退場]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif" time=2000 wait=false]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif" time=2000 wait=false]
 #
 ――それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う。[p]
 ;↑エンディングは「結婚」に変更されましたが、ここでは「結納」のままで良いでしょうか？(◆jsYiJcqRkk
