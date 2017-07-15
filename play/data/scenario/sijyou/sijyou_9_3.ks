@@ -15,8 +15,7 @@
 ;=================================================================================_
 *seen0
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
