@@ -13,7 +13,8 @@
 [layopt layer=13 visible=true]
 ;=========================================================================================
 ;【背景】料亭
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[背景_料亭風の屋内（昼)]
+;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築ボタン無し版]
@@ -118,7 +119,6 @@
 [四条目閉じ]
 ごめん[r]
 [sp]どうしても、自分で解決しておきたい事があったんだ」[p]
-;さらっと説明しておこう
 [主人公口ほほえみ]
 [wait time=10]
 [主人公頬染め]
@@ -148,7 +148,6 @@
 「[名前]。　けど僕は……[名前]に迷惑はかけたくない。[r]
 [sp]このままでは、[名前]に相応しくない。[r]
 [sp]今抱えている問題は、自分で解決しなければならないんだ」[p]
-;こんな感じに説明？　自分のことを話さないの範囲で。
 ;主人公優しい表情
 [主人公目を開く]
 ;[主人公目通常]
@@ -222,7 +221,6 @@
 [autosave]
 ;////////////////////////////シーン追加分///////////////////////////
 [主人公口ほほえみ]
-;いきなり真顔はダメよー
 [whosay name="華織" color="olivedrab"]
 「歌舞伎座の帰りに会った僕の弟、[華衣]を覚えてる……？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -230,8 +228,8 @@
 「はい……」[p]
 [四条退場準備 storage="bg/bg_ryoutei.jpg"]
 ;退場するのは静かに話をきいたにつなげるため
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
@@ -239,9 +237,11 @@ lay1[0].style.webkitFilter = "sepia(80%)";
 [endscript]
 [主人公目閉じ]
 ;あのときって？？ということで一度表示
-;[主人公の家の前]
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;===========================================
+[背景_主人公邸_玄関]
+;[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;===========================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （たしか、あの時、華織様との別れ際に現れた方でしたね）[p]
 ;↓眉：困り [主人公眉困り]
@@ -249,8 +249,10 @@ lay1[0].style.webkitFilter = "sepia(80%)";
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （少し……怖そうな方でした）[p]
-;[暗転]　もどす
-[chara_mod name="bg" storage="toumei.gif"]
+;===========================================
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
+;===========================================
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
@@ -297,7 +299,10 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
-[chara_mod name="bg" storage="toumei.gif"]
+;===========================================
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
+;===========================================
 [主人公ポーズ通常]
 [主人公通常]
 [暗転２終了]
@@ -308,8 +313,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 私は、華織様の話を静かに聞いた。[p]
 #
 ・・・・・・[p]
-;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[背景_料亭風の屋内（昼)]
+;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 ;==================
@@ -429,9 +434,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 ;[wait time=10]
 ;○急いで！のイメージ☆キャラの決意 四条の決意○京の端町、質素な邸宅がある
-;【背景】質素な邸宅の玄関
-[chara_mod name="bg" storage="bg/test_mon.jpg" time=10]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_華衣婚約者の玄関]
+;[chara_mod name="bg" storage="bg/test_mon.jpg" time=10]
+;[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [表示準備 storage="bg/test_mon.jpg" time=10]
 [主人公通常]
 [暗転２終了]
@@ -480,8 +485,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;メッセージレイヤを消去
 @layopt layer=message0 visible=false
 [暗転２]
-[chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_華衣婚約者の実家]
+;[chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
+;[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条通常]
 [wait time=10]
 [主人公通常]
@@ -581,9 +587,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;メッセージレイヤを消去
 @layopt layer=message0 visible=false
 [暗転２]
-;[土蔵]
-[chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_土蔵]
+;[chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
+;[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [四条真剣]
 [wait time=10]
 [主人公通常]
@@ -620,11 +626,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;=====================シーン・パラメータ============================================================_
 *seen8
 #
-;【背景】土蔵の中
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_dozou.jpg"]
-;[image layer=13 x=1 y=1 zindex=0 storage="bg/B4nFWraU42/sijyou_dozou.jpg" time=50]
-
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_土蔵の中]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_dozou.jpg"]
+;=====================
 私達は、埃に塗れながら大切な荷物を[ruby text=まと]纏めた。[p]
 ;なんか陰口みたいのでうーん
 [whosay name="華織" color="olivedrab"]
@@ -664,11 +668,13 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 （そのとき……僕には、何ができるだろうか）[p]
 #
 [endif]
+;============================
 *common_2
-;[暗点]
 #
-[chara_mod name="bg" storage="toumei.gif"]
+[暗点]
+;[chara_mod name="bg" storage="toumei.gif"]
 [eval exp="f.haikei_credit=''"]
+;============================
 ・・・・・・
 [wait time=1000]
 ;メッセージレイヤを消去
@@ -739,9 +745,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [四条退場]
 ;=================================================================================_
 *seen9
-;夕空
-[chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
-[eval exp="f.haikei_credit=''"]
+[背景_四条夕焼け]
+;[chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
+;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
 #
 ;ナレーター
@@ -756,7 +762,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;//////////////////////////場面転換//////////////////////////////////////////////////
 [暗転２]
 ;料亭
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[背景_料亭風の屋内（昼)]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryoutei.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [主人公ポーズ通常]
