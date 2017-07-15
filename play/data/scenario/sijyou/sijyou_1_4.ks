@@ -143,8 +143,7 @@
 「いってらっしゃいませ、お嬢様」[p]
 ;=================================================================================_
 *seen1
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+[背景_町]
 [主人公通常]
 #
 町に出た。[r]
