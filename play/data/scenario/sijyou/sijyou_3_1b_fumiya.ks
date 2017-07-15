@@ -16,9 +16,9 @@
 ;=================================================================================_
 *first
 #
-;○四条邸宅の庭
-;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
+;【背景】四条邸宅
+[背景_四条家]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [イベントシーン構築枠茶色]
 #
@@ -60,7 +60,8 @@
 [sp]これでは本当に秘密の花園にでも迷い込んでしまったみたいだ）[p]
 ;=================================================================================_
 *seen0
-[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
+[背景_四条家庭バラ茂]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 「！？ お祖母様？」[p]
@@ -154,10 +155,12 @@
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;「華織様の雄志？」[p]
 ;○四条邸宅の庭
-;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[font bold=true]××05年の冬がせまってきた頃合い。[resetfont][p]
+;【背景】四条邸宅
+[背景_四条家]
+[font bold=true]
+××05年の冬がせまってきた頃。
+[resetfont]
+[p]
 僕は、せまる寒さと反比例して、とある決意の闘志を燃やしていた。[p]
 [whosay name=文矢 color="#538a8a"]
 「華織。 いつ手紙のやりとりをしてもいいように、[r]
@@ -204,7 +207,7 @@
 ;=================================================================================_
 *seen2
 #
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[背景_庭]
 #
 春に近づく頃。[p]
 あれから[r]
@@ -222,10 +225,11 @@
 ;=================================================================================_
 *seen3
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 一方、その頃の華織は。[p]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
+[背景_四条家廊下]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 「文矢、頑張っているだろうか」[p]
@@ -245,7 +249,8 @@
 ・・・・・・[p]
 ;=================================================================================_
 *seen4
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[背景_四条玄関]
+;[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 （ふぅ……大抵、こんなことしても、良いことを思いつかないっていうのは[r]
@@ -269,7 +274,7 @@
 [whosay name="四条悠次郎" color="#9B608B"]
 （？ ……今、華織がいたような？）[p]
 #
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[背景_庭]
 [whosay name="磯野" color="dimgray"]
 「文矢様、今、よろしいでしょうか？」[p]
 [whosay name=文矢 color="#538a8a"]
