@@ -6,8 +6,8 @@
 ;背景（タイトル画像）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [freeimage layer=1]
 [wait time=10]
-[chara_new name="bg" storage="../fgimage/toumei.gif"]
-[chara_show left=1 top=0 layer=1 name="bg" time=0]
+;[chara_new name="bg" storage="../fgimage/toumei.gif"]
+;[chara_show left=1 top=0 layer=1 name="bg" time=0]
 
 ;↓◆お稽古パート経由かどうか見るための変数をセット
 [eval exp="tf.okeiko_gamen=true"]
@@ -18,7 +18,7 @@
 [call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
 ;背景チラ見え防止
-[bg storage="../fgimage/bg/toumei.gif" time=0]
+;[bg storage="../fgimage/bg/toumei.gif" time=0]
 
 ;ゲーム変数値数値を代入（月, 週, 月始め切り替え背景など。テスト画面経由時以外に実行
 [eval exp="f.okeiko_month = 4"]
@@ -69,7 +69,7 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 
 *test_settei_start
 ;背景変更:和紙風 桜色
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [cm]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
@@ -583,7 +583,7 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 *intro
 
 ;【背景】黒背景（和紙風の黒っぽい背景）全画面テキスト
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=100]
+[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=100]
 [wait time=10]
 @layopt layer=message0 page=fore visible = true
 [wait time=10]
@@ -620,7 +620,7 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 [sp]　　　　　　お稽古に励もう――。[p]
 [resetfont]
 ;背景変更:主人公邸_お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko_main.jpg" time=0]
+[bg storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [wait time=10]

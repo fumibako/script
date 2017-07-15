@@ -1,10 +1,17 @@
-﻿﻿*start
+﻿﻿﻿*start
 *sansaku
 @layopt layer=message1 page=fore visible = false
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [freeimage layer = 26]
 [freeimage layer = 27]
+;背景（タイトル画像）表示準備【将来的には[bg]タグへ置き換え予定です】
+[freeimage layer=1]
+[wait time=10]
+[chara_new name="bg" storage="../fgimage/toumei.gif"]
+[wait time=10]
+[chara_show left=1 top=0 layer=1 name="bg" time=0]
+[wait time=10]
 
 
 [if exp="f.para_shujinkou_tairyoku_now < 1"]
