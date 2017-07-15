@@ -829,6 +829,19 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [chara_mod name="bg" storage="bg/bg_enkaijou_rouka.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [endmacro]
+;==============
+[macro name=背景_線香花火]
+[chara_mod name="bg" storage="bg/sijyou_hanabi1.jpg" time=1000]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+;==============
+[macro name=背景_花火2]
+[chara_mod name="bg" storage="bg/sijyou_hanabi2.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　YUKI　http://photo.v-colors.com/329.html'"]
+[endmacro]
+;==============
+
+
 ;==============================================================
 ;全てはここにGoします
 [return]
