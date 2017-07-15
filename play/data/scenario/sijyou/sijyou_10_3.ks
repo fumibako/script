@@ -10,9 +10,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;===========================================================
 ;【背景】ヒロインの部屋
-;[背景_庭_夜]
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭_夜]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
@@ -142,8 +140,7 @@
 ;===================================================================
 [暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭]
 [暗転２終了]
 ;===================================================================
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -279,8 +276,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公口通常]
 [wait time=10]
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
+[背景_庭_夜]
 [暗転２終了]
 
 *seen4
@@ -295,8 +292,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [暗転２]
 [主人公退場]
 ;【背景】ヒロインの部屋雪
-[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
+[背景_庭_雪]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 var lay1=document.getElementsByClassName("layer 1_fore");
@@ -371,8 +368,8 @@ var lay1=document.getElementsByClassName("layer 1_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
+[背景_庭_夜]
 ; 相手を優しく思って考えている
 [主人公ポーズ通常]
 [wait time=10]
