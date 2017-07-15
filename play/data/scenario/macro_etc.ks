@@ -114,9 +114,9 @@ $('.loding_pic1').remove();
 ;名前欄消去
 [whosay name=""]
 [if exp="f.flag_replay == true"]
-	[bg storage="../fgimage/bg/toumei.gif" time=%time|500]
+	[bg storage="../fgimage/bg/toumei.gif" time=%time|600]
 [else]
-	[chara_mod name="bg" storage="toumei.gif"]
+	[chara_mod name="bg" storage="toumei.gif" time=%time|600]
 [endif]
 [endmacro]
 
@@ -1257,7 +1257,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [if exp="f.flag_replay == true"]
 	[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0]
 [else]
-	[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
+	[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=%time|0]
 [endif]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
@@ -1297,7 +1297,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [if exp="f.flag_replay == true"]
 	[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0]
 [else]
-	[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
+	[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=%time|0]
 [endif]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
