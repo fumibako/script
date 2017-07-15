@@ -849,6 +849,11 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
 [endmacro]
 ;==============
+[macro name=背景_青空に桜]
+[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
+[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
+[endmacro]
+;==============
 
 ;==============================================================
 ;全てはここにGoします
