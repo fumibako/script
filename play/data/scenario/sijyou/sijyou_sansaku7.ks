@@ -379,22 +379,19 @@ $('.saku1').remove();
 「いらっしゃいませ～！[r]
 [sp]あらまあ！ 四条綾花様のところに華織様じゃないですか」[p]
 ;↑"四条綾花様のところに"→"四条綾花様のところの"の方が自然でしょうか。変えると意味合いが変化してしまいますので、そのままにします(◆jsYiJcqRkk
-
+;===================================================
 [if exp="tf.test_gamen==true"]
 テストページから開始しています。（お父様が帰って～）までjumpしますか？[r]
-
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
-
 [link target=*jump_ok1]は　　　い[endlink][r]
 [r][r][r]
 [link target=*jump_no1]い　い　え[endlink][r]
 [resetfont]
 [s]
-
 *jump_ok1
 [current layer="message0"]
 [resetfont]
@@ -404,7 +401,6 @@ jumpします。[p]
 [イベント中テスト数値表示]
 @jump target=*otousamaga
 [s]
-
 *jump_no1
 [current layer="message0"]
 「いいえ」[r]
@@ -412,7 +408,7 @@ jumpします。[p]
 [cm]
 [イベント中テスト数値表示]
 [endif]
-
+;===================================================
 [四条目閉じ]
 [四条口微笑み]
 [whosay name="華織" color="olivedrab"]
@@ -571,13 +567,12 @@ jumpします。[p]
 [暗転]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ――華織様の香りを確かめる。[p]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
-
+;===================================================
 ;セリフは適当 もっとお上品にしてください
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -728,7 +723,6 @@ jumpします。[p]
 ;======================================
 [四条退場]
 [背景選択肢_sakura]
-
 ;～～～驚きつつ困惑照れ～～～
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -763,11 +757,13 @@ jumpします。[p]
 [current layer="message0"]
 [cm]
 #
-[chara_mod name="bg" storage="toumei.gif"]
+;====================================================
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 私は、華織様にお願いして、つけてもらうことにした。[p]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
+;====================================================
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
@@ -859,11 +855,13 @@ jumpします。[p]
 [current layer="message0"]
 [cm]
 #
+;====================================================
 [暗転]
 ;[chara_mod name="bg" storage="toumei.gif"]
 私は、恥ずかしくなって、自分でつけることにした。[p]
 [背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
+;====================================================
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
