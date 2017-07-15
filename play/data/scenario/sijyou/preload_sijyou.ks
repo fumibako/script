@@ -656,11 +656,22 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
 ;==============
+[macro name=背景_四条華道教室(夕)]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
+;==============
 [macro name=背景_四条華道教室廊下]
 [chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
 ;==============
+[macro name=背景_四条華道教室全体(夕)]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
+;==============
+
 ;==============================================================
 ;全てはここにGoします
 [return]
