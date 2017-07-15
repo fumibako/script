@@ -640,6 +640,11 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [endmacro]
 ;==============
+[macro name=背景_四条_歌舞伎座前]
+[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=%|50]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+[endmacro]
+;==============
 [macro name=背景_四条玄関]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=%time|500]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
