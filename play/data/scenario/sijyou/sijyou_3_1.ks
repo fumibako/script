@@ -13,8 +13,7 @@
 [er]
 ;条件:華織の迷いのイベントを一つでも見ている　【全力】の手紙をよんだ後日 夜
 ;主人公庭夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭_夜]
 [stopbgm]
 ;～～～～～～～～～～～～～～～～～～前章シーンここから～～～～～～～～～～～～～～～～
 [四条イベントシーン構築]
@@ -79,8 +78,7 @@
 #
 私は手紙をもう一度、開いた。[p]
 ;～～～～～～選択肢～～～～～
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
-[eval exp="f.haikei_credit=''"]
+[背景選択肢_sakura]
 [position layer=message1 height=160 top=100 left=280 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
@@ -97,8 +95,8 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 私は、手紙をじっくり読み返した。[p]
 ;～～～～～～～～～～手紙１～～～～～～～～～～～～～～
 [手紙四条 fumi_number=]
@@ -143,8 +141,7 @@
 私は、机に置いてある、手紙を眺めた。[p]
 ;～～～～～～～共通1～～～～～～～
 *common1
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭_夜]
 [主人公ポーズ通常]
 [autosave]
 #
@@ -176,8 +173,8 @@
 [autosave]
 #
 あの寂しい夜とはうってかわって私は、幸せな悩みを抱えて眠ってしまった。[p]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;ちゅんちゅんSE　ここでは、目白かな
 ;【SE】メジロ（ピィピュイ）
 [playse storage=tori_mejiro.ogg loop=false ]
@@ -186,8 +183,7 @@
 ;磯野が四条の手紙をもってきて、返事がなく、心配して呼びかけるが、すぐに起きて返事をする主人公
 [whosay name="磯野" color="dimgray"]
 「お嬢様？」[p]
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭]
 [主人公伏目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （！ ……磯野の声だわ。
@@ -224,8 +220,7 @@
 [playse storage=fusuma-open.ogg loop=false ]
 [whosay name="磯野" color="dimgray"]
 「お嬢様！ 大丈夫ですか？！」[p]
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公伏目]
 「？　う……ん……
@@ -275,7 +270,7 @@
 その手紙の上には、品の良い押し花と和紙で作られた華道展のチケットが、[r]
 添えられていた。[p]
 ;～～～～～～～～淑女度ひくい～～～～～～～～
-[if exp="f.para_shujinkou_shukujodo<200"]
+[if exp="f.para_shujinkou_shukujodo < 200"]
 [whosay name="磯野" color="dimgray"]
 「お嬢様のお目覚めには、適された文でしょうか？」[p]
 #
@@ -465,7 +460,8 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;【SE】メジロ（ピィピュイ）
 [playse storage=tori_mejiro.ogg loop=false ]
 [wait time=1000]
-[chara_mod name="bg" storage="toumei.gif" time=10]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif" time=10]
 ;～～～～～～～～～～～～～～～～～～前章シーンおわり～～～～～～～～～～～～～～～～
 [layopt layer=fix visible=false]
 ;テキスト全面表示
@@ -489,8 +485,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [resetfont]
 ;～～～～～～～～～～～～～～～シーン主人公準備はじめ～～～～～～～～～～～～～～～～
 ;主人公部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭]
 [主人公ポーズ通常]
 [主人公目閉]
 [wait time=10]
@@ -523,8 +518,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「こちらに来くれば、わかるだろう」[p]
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 [主人公ポーズ通常]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -559,8 +554,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 #
 [主人公ポーズ通常]
 [主人公目閉]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どなたかお待ちなのかしら？ [r]
 [sp]華織様は会場にいらっしゃると思いますし……？）[p]
@@ -573,8 +568,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 *common4
 [fadeoutbgm time=3000]
 ;～～～～～～主人公宅玄関～～～～～～～～～～～～～～
-;[主人公の家の前]
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
+[背景_主人公邸_玄関]
+;[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [主人公驚]
 #
 父の後ろをついて、玄関先まで出てみると、兄、文矢が待っていた。[p]
@@ -618,11 +613,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;～～～～～～～～～～～～～シーン主人公準備おわり～～～～～～～～～～～～～～～～
 [主人公目閉]
 ;～～～～～～～～～～～～～シーン華道展はじまり～～～～～～～～～～～～～～～～
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 [主人公通常]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条展覧会]
 #
 華道展に来た。[p]
 見事な作品達が、白亜の台座に美を競い合いながらも、固有の世界感を[r]
@@ -649,9 +643,9 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 *kaori_sakuhin
 [autosave]
 #
-;背景を変えてみる・・・松の枝、沈丁花のイメージを被せる必要あり 松は描いたのでいいかな
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu2.jpg"]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条金屏風2]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu2.jpg"]
+;[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 お兄様が金屏風の前に飾られた受賞作品を見つける。[p]
 [if exp="f.para_shujinkou_j_gogaku>=100"]
 ;語学の能力が高い
@@ -742,7 +736,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;～～～～～～～～～～～～共通５ここまで～～～～～～～～～～～
 ;祖母のイベントをやっていない人が、何故祖母と、わかったのか説明する
 ;～～～祖母イベントをやってる場合～～～[p]
-[if exp="f.sijyou_sobo==true"]
+[if exp="f.sijyou_sobo == true"]
 [主人公ふぅ閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （何だったのでしょうか……）[p]
@@ -811,8 +805,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;～～～～～～シーン壇上。イベントの趣旨、プレイヤーの勝利～～～～～～～～～
 ;↓［全画面～］タグの関係か華織立ち絵の表示が不安定なため再度マクロをコールしてみます(スクリプト担
 [call target=*start storage="macro_tati_sijyou.ks"]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 [主人公通常]
 #
 しばらく、展示作品に愉しんでいると、華織様が他の華道名士達と[r]
@@ -820,7 +814,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;室内ざわざわSE
 ;【SE】人々のざわめき（ザワザワ…屋内）
 [playse storage=zawa_room.ogg loop=false ]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
+[背景_四条金屏風1]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
@@ -938,7 +933,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公通常]
 [四条退場]
 *seen3
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
+[背景_四条展覧会
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [暗転２終了]
@@ -1120,7 +1116,8 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [四条退場]
 [fadeoutbgm time=3000]
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
-[chara_mod name="bg" storage="bg/ bg_prologue.jpg"]
+[背景_黒茶・和紙風]
+;[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg" time=1000 visible=true]
 @jump storage=sijyou/sijyou_3_1b.ks target=first
 ;続編に飛ぶ
