@@ -230,11 +230,9 @@
 ;退場するのは静かに話をきいたにつなげるため
 [暗転]
 ;[chara_mod name="bg" storage="toumei.gif"]
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(80%)";
-[endscript]
+
+[背景セピア化]
+
 [主人公目閉じ]
 ;あのときって？？ということで一度表示
 ;===========================================
@@ -253,11 +251,9 @@ lay1[0].style.webkitFilter = "sepia(80%)";
 [暗転]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;===========================================
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
-[endscript]
+
+[背景セピア化_解除]
+
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -267,8 +263,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [autosave]
 ;///////////////////////選択肢//////////////////////////
 ;背景変更:和紙風 水色
-[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
-[eval exp="f.haikei_credit=''"]
+[背景選択肢_mizuiro]
+
 ;選択肢用レイヤーを追加(ルビ込みの高さ等に対応するため大きさをすこし調整しました)
 [position layer=message1 height=200 top=100 left=280 opacity=0]
 @layopt layer=message1 visible=true
