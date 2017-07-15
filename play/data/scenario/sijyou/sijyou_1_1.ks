@@ -12,8 +12,9 @@
 ;=================================================================================_
 ;[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
 ;【背景】主人公邸 庭の見える部屋：冬
-[chara_mod name="bg" storage="bg/room_niwa_fuyu.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭_冬]
+;[chara_mod name="bg" storage="bg/room_niwa_fuyu.jpg" time=1000]
+;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
@@ -102,12 +103,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [endif]
 [手紙四条読了 fumi_number=]
 ;位置変更
-[iscript]
-//layer 1_fore
-//bright=function(){
-$('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
-//};
-[endscript]
+[背景明度アップ]
 ;=================================================================================_
 *seen2
 [主人公ポーズ通常]
@@ -125,10 +121,7 @@ $('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)',
 [主人公退場]
 ;=================================================================================_
 *seen3
-[iscript]
-//layer 1_fore
-$('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
-[endscript]
+[背景明度アップ解除]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen==true"]
