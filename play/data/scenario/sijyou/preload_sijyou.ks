@@ -596,7 +596,7 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 ;==============
 [macro name=
 [macro name=背景_庭_縁側(夜)]
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=%|1000]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=%time|1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
 ;==============
@@ -690,17 +690,17 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [endmacro]
 ;==============
 [macro name=背景_四条_歌舞伎座前]
-[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=%|50]
+[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=%time|50]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [endmacro]
 ;==============
 [macro name=背景_四条_歌舞伎座中]
-[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg" time=%|50]
+[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg" time=%time|50]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [endmacro]
 ;==============
 [macro name=背景_四条_銀座]
-[chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=%|50]
+[chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=%time|50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
 ;==============
