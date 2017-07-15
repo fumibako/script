@@ -532,6 +532,11 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [endmacro]
+;==============
+[macro name=背景選択肢_mizuiro]
+[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
 ;=============
 [macro name=背景_黒茶・和紙風]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
