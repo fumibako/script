@@ -11,8 +11,7 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;/////////////////////////////////////////////////////
 ;【背景】ヒロインの部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭]
 [イベントシーン構築ボタン無し版]
 ;まだ深刻ではない
 [主人公ポーズ通常]
