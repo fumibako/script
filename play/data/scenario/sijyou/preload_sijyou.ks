@@ -481,6 +481,23 @@
 ;ここはマクロ案部です。さすがに本体にかかわるマクロには書くけませんので、もしなにかあればこちらで検証&試作して見せます
 
 ;四条用背景　一括変換　記録にはcg/flg等を使う
+[macro name="背景セピア化"]
+[iscript]
+//レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(100%)";
+[endscript]
+[endmacro]
+;======
+[macro name="背景セピア化_解除"]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+//レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(0%)";
+[endscript]
+[endmacro]
+;=======
 [macro name="背景_庭"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
 [wait time=10]
@@ -488,7 +505,7 @@
 [endmacro]
 ;==============
 [macro name=背景_庭_夜]
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=%time|50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [endmacro]
 ;==============
