@@ -497,6 +497,11 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [endmacro]
 ;==============
+[macro name=背景_主人公邸_玄関]
+[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[endmacro]
+;==============
 [macro name=背景_四条_夢]
 [chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
 [endmacro]
