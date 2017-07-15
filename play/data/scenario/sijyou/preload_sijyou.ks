@@ -5,10 +5,40 @@
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;==================================================
 *first
-;↓プリロード作成をありがとうございます。first.ksでのプリロードに移動と動作確認ができましたので、こちらのプリロード処理を消去します
-;四条用プリロード画面はどこで読み込むか思案中です。okeiko.ksにif分岐で読込を考えてみましたが、okeiko.ksはほぼループ動作なので…何度も読み込むとメモリを圧迫したりするだろうかと懸念したりです(スクリプト担
-;プリロード画面自体のプリロード 9_1で読むことにします。ありがとうございます！
-;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_preload.jpg" wait=true]
+;四条用背景　一括変換　記録にはcg/flg等を使う
+[macro name="背景_庭"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[endmacro]
+[macro name=背景_庭_夜]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[endmacro]
+[macro name=背景_四条_夢]
+[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
+[endmacro]
+[macro name=背景_料亭風の屋内（昼)]
+;【背景】料亭風の屋内（昼）
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
+[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+[endmacro]
+[macro name=背景_思い出（花)]
+;【背景】思い出（花
+[chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+[macro name=背景_白萩]
+;【背景】白萩
+[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+[macro name=背景_庭園(昼)]
+;【背景】庭園
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+
 ;以降は、無駄な読み込みはしない
 @jump target=end_sub0
 ;=======================================================================================
