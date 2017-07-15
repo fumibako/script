@@ -30,8 +30,9 @@
 [r]
 歌舞伎『大正座』を訪れることになった。[p]
 ;背景変更
-[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+[背景_四条_歌舞伎座中]
+;[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
+;[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [resetfont]
 [wait time=10]
@@ -146,8 +147,8 @@
 [autosave]
 ;○開演後のホールでは、奥様方の熱狂的な交流が行われている。 (ホールのシーンは意味がないのでカット～)
 ;外にでる2人
-;[歌舞伎小屋前]
-[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
+[背景_四条_歌舞伎座前 time=2000]
+;[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_kabuki_out.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
@@ -268,8 +269,8 @@
 *seen2
 [autosave]
 ;場面転換 四条と主人公のデート
-;[商店背景] 銀座とか松坂屋とかでしょうか
-
+;【背景】銀座
+[背景_四条_銀座 time=1000]
 [chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/ginza3.jpg" time=100]
@@ -351,8 +352,8 @@
 *seen3
 [autosave]
 #
-;【商店店内】
-[chara_mod name="bg" storage="bg/bg_shop_wazakka.jpg" time=1500]
+;【背景】商店店内
+[背景_四条_商店]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_shop_wazakka.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -410,8 +411,8 @@
 [autosave]
 ;場面転換
 #
-;[主人公の家の前]
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
+[背景_主人公邸_玄関]
+;[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_genkan.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
