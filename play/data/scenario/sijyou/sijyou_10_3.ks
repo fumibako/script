@@ -211,15 +211,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp]
 [主人公退場]　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 ;場面転換
-
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(100%)";
-[endscript]
-;[歌舞伎座前]
-[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+[背景セピア化]
+[背景_四条_歌舞伎座前 time=2000]
+;[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [手紙読了]
 [if exp="tf.test_gamen==true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
@@ -251,8 +245,6 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 そのまま続きの場面に移動します。[p]
 [cm]
 [endif]
-
-
 ;☆主人公の決意
 ;○今までの四条を振り返ってキャラのよさを確認する　気遣いができるひとである
 
@@ -263,11 +255,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [暗転２]
 #
 ;○回想1おわり
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
-[endscript]
+[背景セピア化_解除]
 [主人公ポーズ通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -276,7 +264,6 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公口通常]
 [wait time=10]
 ;【背景】ヒロインの部屋
-;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
 [背景_庭_夜]
 [暗転２終了]
 
@@ -294,11 +281,9 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;【背景】ヒロインの部屋雪
 ;[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
 [背景_庭_雪]
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(100%)";
-[endscript]
+
+[背景セピア化]
+
 [暗転２終了]
 ;背景ない内はこれで
 [whosay name="文矢" color="#538a8a"]
@@ -394,11 +379,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 [if exp="f.okeiko_gamen==true"]
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
-[endscript]
+[背景セピア化_解除]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]
