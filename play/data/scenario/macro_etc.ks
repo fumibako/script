@@ -114,7 +114,7 @@ $('.loding_pic1').remove();
 ;名前欄消去
 [whosay name=""]
 [if exp="f.flag_replay == true"]
-	[bg storage="../fgimage/bg/toumei.gif" time=500]
+	[bg storage="../fgimage/bg/toumei.gif" time=%time|500]
 [else]
 	[chara_mod name="bg" storage="toumei.gif"]
 [endif]
@@ -1255,7 +1255,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [if exp="f.flag_replay == true"]
-	[bg storage="../fgimage/bg/bg_prologue.jpg" time=0]
+	[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0]
 [else]
 	[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [endif]
@@ -1295,7 +1295,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風(暗)
 [if exp="f.flag_replay == true"]
-	[bg storage="../fgimage/bg/bg_prologue.jpg" time=0]
+	[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0]
 [else]
 	[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 [endif]
