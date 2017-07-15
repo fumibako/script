@@ -1,7 +1,7 @@
 *test
-[if exp=tf.test_sijyou==true]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[if exp="tf.test_sijyou == true"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -9,8 +9,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;背景　床の間のみ表示　夕方バージョン
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条華道教室(夕)]
 [イベントシーン構築]
 [四条_隣_ベース羽織]
 [四条_隣_微笑み]
@@ -765,8 +764,7 @@ _　したかったのかもしれません……）[p]
 そんな私の心は、ようやく[ruby text=ひと]一つの答えを導き出した。[p]
 ;主人公の心の動きや時間経過に合わせて背景に変化が欲しく、夕方2バージョン目を追記してみます(スクリプト担
 ;加工具合や背景の変化位置などご希望がありましたら教えてください
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu2.jpg"]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条華道教室(夕)_2]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目大]
 （！ そうだわ、私、華織様にお近づきしたかったのですわ……）
