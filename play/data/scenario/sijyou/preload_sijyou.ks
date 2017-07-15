@@ -489,6 +489,14 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
 [endmacro]
 ;======
+[macro name="背景セピア化_50"]
+[iscript]
+//#tyrano_base > div.layer.\31 _fore.layer_fore
+var lay1=document.getElementsByClassName("layer 1_fore");
+lay1[0].style.webkitFilter = "sepia(50%)";
+[endscript]
+[endmacro]
+;======
 [macro name="背景セピア化_解除"]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
@@ -585,6 +593,21 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [macro name=背景_四条夕焼け]
 [chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
 [eval exp="f.haikei_credit=''"]
+[endmacro]
+;==============
+[macro name=背景_四条_波ヶ裏]
+[chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+;==============
+[macro name=背景_華衣婚約者花園]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_青空]
+[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 [endmacro]
 ;==============
 
