@@ -544,6 +544,13 @@
 [chara_mod name="bg" storage="bg/test_konyaku_jikka2.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [endmacro]
+;==============
+[macro name=背景_土蔵]
+[chara_mod name="bg" storage="bg/test_sijyou_dozou.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
+
 ;==============================================================
 ;全てはここにGoします
 [return]
