@@ -27,8 +27,7 @@
 [endif]
 [主人公目閉]
 [暗転]
-[chara_mod name="bg" storage="bg/bg_machi_hasi.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_橋]
 [主人公目通常][r]
 #
 『見返り橋』にやってきた。[r]
