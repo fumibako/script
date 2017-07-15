@@ -506,6 +506,22 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
 [endmacro]
 ;=======
+[macro name="背景明度アップ"]
+[iscript]
+//layer 1_fore
+//bright=function(){
+$('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
+//};
+[endscript]
+[endmacro]
+;=======
+[macro name="背景明度アップ解除"]
+[iscript]
+//layer 1_fore
+$('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
+[endscript]
+[endmacro]
+;=======
 [macro name="背景_庭"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
 [wait time=10]
