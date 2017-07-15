@@ -594,6 +594,12 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [endmacro]
 ;==============
+[macro name=
+[macro name=背景_庭_縁側(夜)]
+[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=%|1000]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
+;==============
 [macro name=背景_主人公邸_玄関]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
