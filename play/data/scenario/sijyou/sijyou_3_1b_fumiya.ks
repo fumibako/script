@@ -8,6 +8,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[call target=*first storage="sijyou/preload_sijyou.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
