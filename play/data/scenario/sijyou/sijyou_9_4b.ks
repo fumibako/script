@@ -21,7 +21,8 @@
 ;==========================================================================
 [イベントシーン構築枠茶色]
 #
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[背景_四条玄関]
+;[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ――四条邸にて。[p]
 [whosay name="女中"]
@@ -65,8 +66,7 @@
 「は、はい。[sp]先ほどお帰り遊ばされました」[p]
 #
 ;==========================================================================
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_四条家廊下]
 [whosay name="華織" color="olivedrab"]
 「[華衣]。[sp]僕は、あの時してしまったことを後悔している」[p]
 [whosay name="四条 華衣" color=%mp.color]
@@ -107,8 +107,7 @@
 [sp]必ず幸せになって[華衣]さんを導いてあげて下さい。[p]
 ;==========================================================================
 #
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_四条玄関]
 [whosay name="華織" color="olivedrab"]
 （一体どうすれば……）[p]
 ;シーン廊下 または華織の部屋
@@ -120,10 +119,13 @@
 [whosay name="女中頭"]
 「失礼しました」[p]
 #
-手渡された手紙達は、ズッシリと、僕の手の中で重さが生じる。[p]
-;↑女中頭のセリフからは(届いたばかりの)手紙を想像しますが、↓歴史…ということは、これまでの過去の手紙も含まれるのでしょうか。女中頭が過去の手紙もあわせて手渡すのは不思議な感じがします
-;手渡された手紙達は、ズッシリと、僕の手の中で重さが生じる。[p]→手渡された手紙とともに、これまで届いた手紙の束を手に取る。手紙達は、ズッシリと(以下同じ)などの案も思い浮かびましたが、違和感ではなくすこし不思議に思う程度ですので原文のまま残します(◆jsYiJcqRkk
-この手紙は、四条家が長年[ruby text=つむ]紡いできた歴史そのものだった。[p]
+手渡された手紙達は、四条家と[名字]家の婚約に対する[r]
+四条家に深い仲の人達からの数々の祝いの手紙。[p]
+
+嬉しいはずの手紙が、[華衣]のことを考えると[r]
+僕の手の中でズッシリと重さが生じた。[r]
+この手紙は、四条家が長年[ruby text=つむ]紡いできた歴史そのものだったから。[p]
+
 ――僕は、何度も考える。[r]
 [sp]幸せを諦めた後のことを。[p]
 諦めた後には、四条家の名も傷つき、[名字]家にもご迷惑がかかる。[p]
@@ -170,7 +172,7 @@
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[背景_庭_夜 time=1000]
 [eval exp="f.kaogura!='on'"]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
