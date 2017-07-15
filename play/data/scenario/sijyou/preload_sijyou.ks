@@ -622,6 +622,11 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit=''"]
 [endmacro]
 ;==============
+[macro name=背景_庭園(夜)]
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yoru.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+;==============
 [macro name=背景_四条家]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -776,6 +781,11 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [macro name=背景_沈丁花]
 [chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=100 wait=false]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_四条宴会廊下]
+[chara_mod name="bg" storage="bg/bg_enkaijou_rouka.jpg"]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [endmacro]
 ;==============================================================
 ;全てはここにGoします
