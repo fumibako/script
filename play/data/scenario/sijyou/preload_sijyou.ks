@@ -515,6 +515,12 @@ $('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)',
 [endscript]
 [endmacro]
 ;=======
+[macro name="背景明度アップ_13"]
+[iscript]
+$('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
+[endscript]
+[endmacro]
+;=======
 [macro name="背景明度アップ解除"]
 [iscript]
 //layer 1_fore
@@ -522,6 +528,10 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [endscript]
 [endmacro]
 ;=======
+[macro name="背景_町"]
+[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
+;==============
 [macro name="背景_庭"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
 [wait time=10]
