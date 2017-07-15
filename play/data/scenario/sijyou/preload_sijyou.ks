@@ -537,6 +537,11 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [endmacro]
+;==============
+[macro name=背景_選択肢_和紙風セピア色]
+[chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
 ;=============
 [macro name=背景_黒茶・和紙風]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
@@ -751,7 +756,11 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
 ;==============
-
+[macro name=背景_四条宴会]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
+;==============
 ;==============================================================
 ;全てはここにGoします
 [return]
