@@ -555,6 +555,11 @@
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [endmacro]
 ;==============
+[macro name=背景_四条夕焼け]
+[chara_mod name="bg" storage="bg/bg_yuuyake.jpg"]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+;==============
 
 ;==============================================================
 ;全てはここにGoします
