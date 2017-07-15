@@ -551,6 +551,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [endmacro]
 ;==============
+[macro name=背景_ネリネ]
+[chara_mod name="bg" storage="bg/B4nFWraU42/nerine_img.jpg" time=2000 wait=false]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
 [macro name=背景_華衣婚約者の玄関]
 ;【背景】華衣婚約者の玄関
 [chara_mod name="bg" storage="bg/test_mon.jpg" time=10]
