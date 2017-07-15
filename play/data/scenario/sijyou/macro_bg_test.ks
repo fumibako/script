@@ -12,6 +12,10 @@
 @layopt layer=27 visible=true
 @layopt layer=1 visible=true
 *label_macro
+[macro name=背景_庭_夜]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[endmacro]
 *1
 [macro name=バラ]
 [eval exp="tf.img_kouka='off'"]
