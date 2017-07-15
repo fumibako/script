@@ -29,8 +29,7 @@
 ;【SE】荒波（海）
 [playse storage=mizu_umi_aranami.ogg loop=true]
 ;こちらはループSEになります。SEフェードアウトやSE停止タグとセットでお使いください
-[chara_mod name="bg" storage="bg/test_sijyou_namigauara.jpg" time=100]
-[eval exp="f.haikei_credit=''"]
+[背景_四条_波ヶ裏]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
@@ -158,7 +157,7 @@ jumpします。[p]
 [主人公目閉じ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「つらいです、」[p]
+「つらいです……」[p]
 [主人公伏目パチ1回]
 [wait time=10]
 ;×筆者に女性的価値観が足りず思い浮かばずこんな形に
@@ -329,8 +328,7 @@ $(".nerine").css("opacity",0.5);
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;婚約者の花園
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=50]
-[call target=*start storage="macro_tati_sijyou.ks"]
+[背景_華衣婚約者花園]
 ;=============================
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -414,7 +412,8 @@ $(function(){
     setInterval(function(){
         $('.nerine').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
     },1000);
-})[endscript]
+})
+[endscript]
 [r]
 まるで手紙が語りかけてくるようだった。[p]
 [r]
@@ -430,14 +429,8 @@ $(function(){
 ;=================================================================================_
 #
 ;○概要案 好きな花について婚約者に話しをしたら、(妹の婚約者は)買い付けに出て、出先で事故(公家の出で、もともと身体が弱かった？)にあってしまう、
-;○回想シーン
-;○婚約者さんが四条に妹の好きな花は何？ときいてくる。
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(50%)";
-[endscript]
-;↑(◆B4nFWraU42さん作)回想シーン用セピア化スクリプトを使用させていただきました。ありがとうございます
+;○回想シーン婚約者さんが四条に弟の好きな花は何？ときいてくる。
+[背景セピア化_50]
 ;sepia(100%)だと四条邸壁や空の青さが飛んでしまうため50%に。さらに調整入れるかもです
 ;=================================================================================_
 ;四条家玄関
@@ -467,8 +460,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 『待って下さい！ そんな顔色で……せめて明日』[p]
 ;==========================================
 ;[暗点]か空
-[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=100]
-[eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
+[背景_青空]
 #
 『私の[ruby text=やまい]病のことで、[華衣]との婚約解消されたら嫌だった。[r]
 [sp]急がないといけない、この想いを綴るには種もほしい』[p]
@@ -484,8 +476,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 [stopse]
 ;==========================================
 ;病院 四条表示準備してます
-[chara_mod name="bg" storage="bg/sijyou_byouin.jpg" time=100]
-[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+[背景_四条病院]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_byouin.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
@@ -524,18 +515,12 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 ;名前残り消去
 #
 ;結果、弟！に恨まれてしまったんだろうなぁとプレイヤーが想像する形
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
-[endscript]
-;↑(◆B4nFWraU42さん作)回想シーン用セピア化スクリプト：セピア終了
+[背景セピア化_解除]
 ;回想シーンおわり
 ;=================================================================================_
 *seen5
 ;花園もどる
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_華衣婚約者花園]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [wait time=10]
@@ -566,7 +551,7 @@ $('.junbi_girl').remove();
 ;ネリネの花が宝石のようにキラキラ輝き始める。[p]
 
 天から、晩秋の透明感を増した日差しが降り注ぎ、[r]
-ネリネの花が宝石のようにキラキラ輝き始める。[p]
+ネリネの花が宝石のようにキラキラと輝き始める。[p]
 [主人公憂い]
 輝きを放つネリネの達の[ruby text=げん]眩[ruby text=よう]耀に、ふと我に返った。――[p]
 ;うーん
