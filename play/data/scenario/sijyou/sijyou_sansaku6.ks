@@ -10,8 +10,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;==========================================================================
 ;【背景】主人公邸 庭の見える部屋：夏
-[chara_mod name="bg" storage="bg/room_niwa_natu.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭_夏]
 [四条イベントシーン構築]
 ;前半はBGM無しでいい、同系統の音楽だと切り替えに違和感あると感じた
 [主人公ポーズ通常]
@@ -75,8 +74,7 @@
 ……[p]
 ;移動中、なくてもいいけど
 [主人公退場]
-[chara_mod name="bg" storage="bg/sijyou_engawa.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_庭_縁側(夕)]
 #
 中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。 その相手は[p]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
@@ -114,7 +112,8 @@ $('.junbi_girl').remove();
 [wait time=30]
 [主人公退場]
 ;背景 縁側　夕方か夜 時間がたつ。
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[背景_庭_縁側(夜)]
+;[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [image name="hababi" storage="bg/sijyou_engawa2_1.png" layer=1 zindex=2 left=0 time=2000]
 #
