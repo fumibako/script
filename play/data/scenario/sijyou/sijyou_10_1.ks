@@ -9,6 +9,7 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;使用背景:[背景_庭]　[四条玄関][chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 ;/////////////////////////////////////////////////////
 ;【背景】ヒロインの部屋
 [背景_庭]
@@ -113,6 +114,7 @@
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
+;[四条玄関]
 [chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 
@@ -175,8 +177,7 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [wait time=10]
 ;【背景】主人公部屋　夕方はないので昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]
