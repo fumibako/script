@@ -233,8 +233,7 @@ $('.hababi').remove();
 
 [テキスト全画面白文字無背景]
 ;背景 線香花火
-[chara_mod name="bg" storage="bg/sijyou_hanabi1.jpg" time=1000]
-[eval exp="f.haikei_credit=''"]
+[背景_線香花火]
 #
 ;黒い背景に全面文字
 #
@@ -255,7 +254,8 @@ $('.hababi').remove();
 [r]
 微かに華織お兄様の横顔を照らして、[r]
 ;背景 線香花火落ちた ただの暗闇?
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[暗転]
+;time=1000
 [r]
 玉火は、ポトリと落ちた。[p]
 [stopse]
@@ -266,9 +266,10 @@ $('.hababi').remove();
 
 [イベントシーン構築]
 
-;背景 主人公部屋 夕方か夜。
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+;【背景】 主人公部屋 夜。もどる
+[背景_庭_縁側(夜)]
+;[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+;[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [wait time=10]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
@@ -369,7 +370,7 @@ $('.hababi').remove();
 [主人公目伏柔]
 [wait time=10]
 ;背景花火
-[chara_mod name="bg" storage="bg/sijyou_hanabi2.jpg" time=1000]
+[背景_花火2]
 ;ウェイト入ると止まる他ないのでイメージで重ねる
 [image name="hababi_2" storage="bg/sijyou_hanabi2_1.jpg" layer=1 zindex=2 left=0 time=5000]
 [eval exp="f.haikei_credit='photo　by　YUKI　http://photo.v-colors.com/329.html'"]
