@@ -522,6 +522,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [endmacro]
 ;==============
+[macro name=背景_庭_冬]
+[chara_mod name="bg" storage="bg/room_niwa_fuyu.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[endmacro]
+;==============
 [macro name=背景_主人公邸_玄関]
 [chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1500]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
