@@ -550,6 +550,11 @@
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [endmacro]
 ;==============
+[macro name=背景_土蔵の中]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_dozou.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
 
 ;==============================================================
 ;全てはここにGoします
