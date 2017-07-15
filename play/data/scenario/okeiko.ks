@@ -55,8 +55,8 @@
 *draw_button_system
 [eval exp="f.viewing_storage = 'okeiko.ks'"]
 [eval exp="f.viewing_target = '*draw_button_system'"]
-;背景チラ見え防止
-[bg storage="../fgimage/bg/toumei.gif" time=0]
+;背景チラ見え防止:背景表示を[bg]へ切り替えに伴いまたたき防止のためにコメントアウトさせていただきます。
+;[bg storage="../fgimage/bg/toumei.gif" time=0]
 
 ;◆お稽古パート画面表示処理へ飛んで戻ってくる
 ;↓どこから飛んだか、戻る際の道標
@@ -451,11 +451,13 @@ f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
 ;◆その月のお箏練習回数リセット
 [eval exp="f.para_shujinkou_koto_kaisuu=0"]
 ;◆月始めのみ…背景変更:月始め切り替え背景
-[eval exp="f.okeiko_bg_tukihajime = 'bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
-[chara_mod name="bg" storage=&f.okeiko_bg_tukihajime]
+[freeimage layer = 1]
+[eval exp="f.okeiko_bg_tukihajime = '../fgimage/bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
+[bg storage=&f.okeiko_bg_tukihajime time=50]
+[wait time=10]
 ;【SE】スズメのさえずり
 [playse storage=tori_suzume.ogg loop=false ]
-[wait time=100]
+[wait time=500]
 [endif]
 
 ;◆イベント判定(週始め)へ
