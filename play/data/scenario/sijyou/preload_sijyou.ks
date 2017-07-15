@@ -593,6 +593,12 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 [endmacro]
 ;==============
+[macro name=背景_料亭風の屋内（夕)]
+;【背景】料亭風の屋内（夕）
+[chara_mod name="bg" storage="bg/bg_ryouotei_yuu.jpg"]
+[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+[endmacro]
+;==============
 [macro name=背景_思い出（花)]
 [chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
@@ -607,6 +613,12 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [macro name=背景_庭園(昼)]
 ;【背景】庭園
 [chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+;==============
+[macro name=背景_庭園(夕)]
+;【背景】庭園_夕
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yuu.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 [endmacro]
 ;==============
@@ -761,6 +773,10 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
 ;==============
+[macro name=背景_沈丁花]
+[chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=100 wait=false]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
 ;==============================================================
 ;全てはここにGoします
 [return]
