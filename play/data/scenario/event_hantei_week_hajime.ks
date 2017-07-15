@@ -1,4 +1,4 @@
-﻿﻿;=============================================
+﻿﻿﻿;=============================================
 ;お稽古パート：イベント判定(週始め)
 ;=============================================
 *start
@@ -364,6 +364,28 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [if exp="f.okeiko_month <= 3 &&f.okeiko_month >= 9"]
 @jump target=*isono_advice_sansaku
 [endif]
+;◆周回時は共通イベントの磯野アドバイスをカット
+;黒田チェック
+[if exp="sf.ED_kuroda_bad == 1 || sf.ED_kuroda_normal == 1 || sf.ED_kuroda_good == 1"]
+@jump target=*isono_advice_common_end
+[endif]
+;四条チェック
+[if exp="sf.ED_sijyou_bad == 1 || sf.ED_sijyou_normal == 1 || sf.ED_sijyou_good == 1"]
+@jump target=*isono_advice_common_end
+[endif]
+;財前チェック
+[if exp="sf.ED_zaizen_bad1 == 1 || sf.ED_zaizen_bad2 == 1 || sf.ED_zaizen_normal == 1 || sf.ED_zaizen_good == 1"]
+@jump target=*isono_advice_common_end
+[endif]
+;葛城宮チェック
+[if exp="sf.ED_katuraginomiya_good == 1 || sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_bad == 1"]
+@jump target=*isono_advice_common_end
+[endif]
+;藤枝チェック
+[if exp="sf.ED_hujieda_good == 1 || sf.ED_hujieda_normal == 1 || sf.ED_hujieda_bad == 1"]
+@jump target=*isono_advice_common_end
+[endif]
+
 ;◆お稽古パート導入イベント判定 4月1週になった時点で1度だけ発生
 [if exp="((f.okeiko_month==4 && f.okeiko_week==1) && f.event_common[0]==0)"]
 	[eval exp="f.event_storage='event.ks'"]
@@ -444,8 +466,10 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_advice=0"]
 	@jump storage="event.ks" target=*start
 [endif]
+*isono_advice_common_end
 
 ;◆「磯野に相談」イベント判定 5月中、他のアドバイスイベントが発生しなければ1度だけ発生
+;周回時にイベントを見るかどうか希望を選べるようにします(別の攻略対象の場合は見たい、などありそうです)
 [if exp="f.okeiko_month==5 && f.event_common[12]==0"]
 	[eval exp="f.event_storage='common_5_1.ks'"]
 	[eval exp="f.event_target='*replay_common_5_1'"]
