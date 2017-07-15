@@ -532,6 +532,11 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 ;==============
+[macro name="背景_お稽古部屋"]
+[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[endmacro]
+;==============
 [macro name="背景_庭"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
 [wait time=10]
@@ -646,7 +651,16 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
 [endmacro]
 ;==============
-
+[macro name=背景_四条華道教室_1]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_四条華道教室廊下]
+[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
+;==============
 ;==============================================================
 ;全てはここにGoします
 [return]
