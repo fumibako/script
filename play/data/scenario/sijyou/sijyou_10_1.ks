@@ -114,9 +114,9 @@
 [playbgm storage="kanasige_yukisugara.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukisugara.ogg'"]
 [endif]
-;[四条玄関]
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_四条玄関]
+;[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+;[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 
 [イベントシーン構築枠茶色]
 [call target=*start storage="macro_tati_sijyou.ks"]
