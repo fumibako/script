@@ -600,6 +600,46 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit=''"]
 [endmacro]
 ;==============
+[macro name=背景_四条家]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_四条家庭椅子1]
+[chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
+[eval exp="f.haikei_credit=' '"]
+[endmacro]
+;==============
+[macro name=背景_四条家庭椅子2]
+[chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+;==============
+[macro name=背景_四条家庭バラ茂]
+[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_四条家温室]
+[chara_mod name="bg" storage="bg/B4nFWraU42/rose_onsitsu.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_四条家庭バラ噴水]
+[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_rose_funsui.jpg"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_四条家湖畔1]
+[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_四条家湖畔2]
+[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike_long.jpg" time=1500]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;==============
 [macro name=背景_四条玄関]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=%time|500]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
