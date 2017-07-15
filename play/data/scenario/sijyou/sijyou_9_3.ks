@@ -200,8 +200,8 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 *seen1
 [autosave]
 ;○四条邸宅の庭
-;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyouke.jpg"]
+;【背景】[背景_四条家]
+[背景_四条家]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyouke.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [主人公通常]
@@ -339,8 +339,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;=================================================================================_
 *seen4
 ;地の文などをいれたため、明るいシーン→暗いシーン（華衣）→戻る明るい
-;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
+;【背景】[背景_四条家庭椅子1]
+[背景_四条家庭椅子1]
+;[chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_garden_isu.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 ;===================
@@ -382,9 +383,10 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [endif]
 ;がさがさ【SE】茂み (遠くでガサガサッ)
 [playse storage=shigemi_gasagasa_s.ogg loop=false ]
+;=================================================================================_
 ;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/bg_garden_isu_dark.jpg" time=1000]
-[eval exp="f.haikei_credit=''"]
+[背景_四条家庭椅子2]
+;=================================================================================_
 ;○そこはかとなく大人の雰囲気
 ;○伏線 無くてもどちらでも
 #
@@ -399,15 +401,18 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 「……なんで……だけ」[p]
 #
 こちらが気づいた途端、それは何も無かったかのように影へと消えていった。[p]
+;=================================================================================_
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
+;【背景】[背景_四条家庭椅子1]
+[背景_四条家庭椅子1]
+;[chara_mod name="bg" storage="bg/bg_garden_isu.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
+;=================================================================================_
 [主人公目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -486,10 +491,8 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 *mini_bara
 [er]
-;【背景】[洋館庭]
-[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-;追記分
+;【背景】[背景_四条家庭バラ茂]
+[背景_四条家庭バラ茂]
 ;◎家族ぐるみの付き合いになってきたので四条のことを名前で呼んでいいかきく
 [whosay name="四条 華織" color="olivedrab"]
 [主人公通常]
@@ -632,7 +635,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様……）
 ;背景変更:和紙風 桜色
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[背景選択肢_sakura]
 [eval exp="f.haikei_credit=''"]
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
@@ -650,9 +653,8 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-;【背景をもどす】[洋館庭]
-[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;【背景をもどす】[背景_四条家庭バラ茂]
+[背景_四条家庭バラ茂]
 [er]
 #
 私は緊張してしまった。[p]
@@ -687,16 +689,13 @@ _　として成長しないといけないのだわ）[p]
 [主人公困り照れ]
 （もしかして、また、気を遣われてしまったかしら？）[p]
 @jump target=common_0
-
-
 ;//////////////胸が高鳴った//////////////
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-;【背景をもどす】[洋館庭]
-[chara_mod name="bg" storage="bg/B4nFWraU42/rose_shigemi.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;【背景をもどす】[背景_四条家庭バラ茂]
+[背景_四条家庭バラ茂]
 #
 私は、ほっとした。[p]
 *select_2
@@ -766,9 +765,8 @@ _　として成長しないといけないのだわ）[p]
 ;場面転換
 [主人公通常]
 
-;【背景】[温室]
-[chara_mod name="bg" storage="bg/B4nFWraU42/rose_onsitsu.jpg"]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;【背景】[背景_四条家温室]
+[背景_四条家温室]
 #
 ;ナレーター
 "華織様"と私は思い出を語り合いながら、[ruby text=あたた]暖かな温室へと誘った。[p]
@@ -818,8 +816,9 @@ _　として成長しないといけないのだわ）[p]
 ;=================================================================================_
 *seen6
 ;場面転換
-;【背景】[薔薇庭]
-[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_rose_funsui.jpg"]
+;【背景】
+[背景_四条家庭バラ噴水]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_rose_funsui.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/niwa_rose_funsui.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -913,8 +912,9 @@ _　として成長しないといけないのだわ）[p]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;[四条アップ]は登場してるときしか使ったことないのでここで準備
-;【背景】[湖畔]
-[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=100]
+;【背景】[背景_四条家湖畔1]
+[背景_四条家湖畔1]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=100]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [主人公ポーズ通常]
@@ -948,9 +948,8 @@ _　として成長しないといけないのだわ）[p]
 [wait time=10]
 （息切れもされていないですし）[p]
 [主人公通常]
-;【背景】[湖畔]
-[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_large_ike_long.jpg" time=1500]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;【背景】[背景_四条家湖畔2]
+[背景_四条家湖畔2]
 [whosay name="華織" color="olivedrab"]
 [四条_隣_目にこ]
 [wait time=10]
