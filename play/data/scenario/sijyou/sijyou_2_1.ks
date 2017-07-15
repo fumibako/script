@@ -18,8 +18,7 @@
 ;(ちなみに古いPCよりスマホの方が動作が軽かったです…動作の軽さはPCかスマホかの違いよりも、性能によるのかもと思いました)
 [cm]
 ;【背景】主人公邸 お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_お稽古部屋]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -142,8 +141,7 @@
 ;=================================================================================_
 *seen1
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭_夜]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -230,7 +228,8 @@ $('.bg1').remove();
 そんな中、私は先生とともに淑女を目指す乙女達の[r]
 指導を勤めることとなった。
 ;=================表示準備========================
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[背景_四条華道教室_1]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [call target=*start storage="macro_tati_sijyou.ks"]
@@ -363,7 +362,6 @@ $('.bg1').remove();
 [主人公通常]
 ;〜〜〜〜〜〜〜〜シーン 先生と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～ここまで
 #
-;〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜シーン 庭の見える部屋：夜 楽しみの前の降下〜〜〜〜〜〜〜〜〜〜〜〜〜
 ;=================================================================================_
 *seen3
 [fadeoutbgm time=3000]
@@ -433,10 +431,8 @@ $('.bg1').remove();
 ;〜〜シーン廊下 先生の退場と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～
 *sijyou_1_1
 [主人公憂い]
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_rouka1.jpg"]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条華道教室廊下]
 [暗転２終了]
-
 ;[四条眉下げ]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
 [wait time=10]
@@ -532,8 +528,8 @@ $('.bg1').remove();
 教室に入っていく華織様の背中を目で送ると、ひとり、[r]
 心の中に渦巻く気持ちに思い惑った。[p]
 ;ひとり思案した　考えあぐねる　苦悶した　瞑想にふけった　思い滞る
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私、華織様のお仕事のお邪魔にはなりたくないですわ……）[p]
@@ -565,7 +561,7 @@ $('.bg1').remove();
 ;〜〜シーン キャラと造作1 (軽度)後に繋ぐもの(テンション↓)〜〜〜
 ;背景　床の間のみ表示
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[背景_四条華道教室_1]
 [主人公通常]
 [四条ベース羽織]
 [四条通常]
@@ -631,9 +627,7 @@ $('.bg1').remove();
 ・・・・・・[p]
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;背景　床の間のみ表示
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
-[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条華道教室_1]
 [四条ベース羽織]
 [四条通常]
 ;~===四条登場=====
@@ -789,7 +783,8 @@ $('.bg1').remove();
 [autosave]
 ;しのぎ・・・・乗り切って？
 ;背景　床の間のみ表示
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[背景_四条華道教室_1]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;戻す
@@ -849,13 +844,9 @@ $('.bg1').remove();
 （昔の私……）[p]
 [主人公目閉]
 [四条退場]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
 ;効果セピア
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(100%)";
-[endscript]
+[背景セピア化]
 ;背景　主人公部屋セピア 無邪気な頃を羨ましくも思う？
 ;～～～～～～～～回想 困ったら回想シーン C会話～～～～～～～～～
 ;=================================================================================_
@@ -865,8 +856,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 見せたこと思い出した。[p]
 [autosave]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_庭]
 [whosay name=幼い頃の私 color=%mp.color]
 「華織お兄さま！[r]
 [sp]せっかくの華道のはじめてが、こんな葉っぱでは面白くない[r]
@@ -891,17 +881,13 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [whosay name="華織お兄さま" color="olivedrab"]
 「ありがとう。  うまく出来たら、文矢に見せに行こうね」[p]
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;～～～～～～～～回想 困ったら回想シーン C会話おわり～～～～～～～～～
 ;効果セピア消し
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
-[endscript]
+[背景セピア化_解除]
 ;背景　床の間のみ表示
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[背景_四条華道教室_1]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [四条ベース着物]
@@ -953,7 +939,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 *sijyou_5
 [er]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
 [暗転２終了]
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;シーン急上昇まで流れ。楽しい時間を得る
@@ -962,7 +948,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 「できましたわ！」[p]
 [autosave]
 #
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg"]
+[背景_四条華道教室_1]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" visible=true time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公通常]
@@ -1096,7 +1082,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *kyousitu_zentai
 [er]
 ;【背景】　和室広め　赤っぽく
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu_zentai.jpg"]
+[背景_四条華道教室全体(夕)]
 [暗転２終了]
 ;〜〜〜 〜〜〜 シーン急上昇(期待値高め)〜〜〜 〜〜〜
 ;～～～～シーン片付ける～～～～～
@@ -1125,10 +1111,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 ;～～～～～～～～とりあえず　ここまで背景あったら描写書くかも～～～～～～～～～～～～～～～～～～～
 #
 *sijyou_6
-;[暗転] 暗転かつづくでもいい
-;[chara_mod name="bg" storage="toumei.gif"]
 ;背景　床の間のみ表示　夕方バージョン
-[chara_mod name="bg" storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg"]
+[背景_四条華道教室(夕)]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1_yuu.jpg" time=100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
