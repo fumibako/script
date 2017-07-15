@@ -551,7 +551,13 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [macro name="背景_町"]
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
-;==============
+[endmacro]
+;=======
+[macro name=背景_橋]
+[chara_mod name="bg" storage="bg/bg_machi_hasi.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
+;=======
 [macro name="背景_お稽古部屋"]
 [chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
