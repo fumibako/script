@@ -129,7 +129,7 @@
 ;[eval exp="f.para_kuroda_koukando = 20"]
 ;↑【仮】ここまで。実装時には除きます
 ;四条華織への好感度が高い場合
-[if exp="f.para_sijyou_koukando > 40"]
+[if exp="f.para_sijyou_koukando > 40 || tf.test_sijyou == true"]
 ;スクリプト担：↑数値は仮です。好感度がそれほど高くなくても合いそうな文章はifの外に出してみました。参考：四条がお見合い候補になる好感度=31以上
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]」[p]
