@@ -24,8 +24,9 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 ;【背景】料亭風の屋内（昼）
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
-[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+[背景_料亭風の屋内（昼)]
+;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
+;[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 ;////////////先に登場させておく////////////
 [四条ベース羽織]
 [四条微笑み]
@@ -91,8 +92,6 @@ _　まして感謝申し上げます」[p]
 [cm]
 [endif]
 ;=====================================================================
-
-
 [主人公目パチ1回]
 [whosay name="四条母" color="#9B608B"]
 「この様なご縁……本人もとても喜んでおります」[p]
@@ -233,7 +232,8 @@ _　ございます」[p]
 ;○主人公、四条について感想を述べる（四条についての紹介をする）
 [主人公退場]
 ;【背景】思い出（花
-[chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
+[背景_思い出（花)]
+;[chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 ;/////////////////////////////////回想シーンはじまり//////////////////
 ;～～～～～～～～～～～～～～～～～～ここまで準備中～～～～～～～～～～～～～～～～～～
@@ -351,7 +351,8 @@ _　ございます」[p]
 [四条ベース羽織]
 [四条微笑み]
 ;【背景】料亭風の屋内（昼）
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
+[背景_料亭風の屋内（昼)]
+;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 ;～～～～～～～～～ここまで準備中～～～～～～～～～
 [freeimage layer = 29 time=500]
@@ -401,8 +402,9 @@ _　ございます」[p]
 [wait time=50]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-;【背景】庭園
-[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
+;【背景】背景_白萩
+[背景_白萩]
+;[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 ;○主人公、再会した四条の大人の印象に緊張してしまう
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -498,7 +500,8 @@ _　か……？）[p]
 [image name="toujyou_mae" layer=13 x=1 y=1 storage="bg/bg_teien_ishidatami.jpg" time=500]
 [wait time=50]
 ;【背景】庭園
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
+[背景_庭園(昼)]
+;[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 [主人公目を開く]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -642,7 +645,8 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 *seen7
 [autosave]
 [暗転]
-[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
+[背景_白萩]
+;[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
 [主人公目閉]
 #
