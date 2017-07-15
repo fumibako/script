@@ -1,4 +1,4 @@
-﻿;=============================================
+﻿﻿;=============================================
 ;磯野に相談： 5月、他のアドバイスイベントが発生しないなら1度だけ発生
 ;=============================================
 *replay_common_5_1
@@ -6,6 +6,7 @@
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
 [eval exp="f.from_common_5_1 = 1"]
+[freeimage layer = 1]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
@@ -17,7 +18,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -37,6 +38,87 @@
 [wait time=50]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+;====================================================
+;◆周回時はイベントを見るかどうか選択
+;周回かどうかチェック。初プレイ時は選択肢を回避
+;黒田チェック
+[if exp="sf.ED_kuroda_bad == 1 || sf.ED_kuroda_normal == 1 || sf.ED_kuroda_good == 1"]
+@jump target=*event_select
+[endif]
+;四条チェック
+[if exp="sf.ED_sijyou_bad == 1 || sf.ED_sijyou_normal == 1 || sf.ED_sijyou_good == 1"]
+@jump target=*event_select
+[endif]
+;財前チェック
+[if exp="sf.ED_zaizen_bad1 == 1 || sf.ED_zaizen_bad2 == 1 || sf.ED_zaizen_normal == 1 || sf.ED_zaizen_good == 1"]
+@jump target=*event_select
+[endif]
+;葛城宮チェック
+[if exp="sf.ED_katuraginomiya_good == 1 || sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_bad == 1"]
+@jump target=*event_select
+[endif]
+;藤枝チェック
+[if exp="sf.ED_hujieda_good == 1 || sf.ED_hujieda_normal == 1 || sf.ED_hujieda_bad == 1"]
+@jump target=*event_select
+[endif]
+;↓初プレイ時は選択肢をjumpカット
+@jump target=*event_select_end
+
+*event_select
+;背景変更:和紙風 桜色
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+見たことのあるイベントです。[r]
+選択肢まで移動、又はイベントを終了しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=300 top=70 left=300 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=30]
+
+[link target=*jump_ok1]選択肢まで移動する[endlink][r]
+[r][r]
+[link target=*jump_to_end1]イベントを終了する[endlink][r]
+[r][r]
+[link target=*jump_no1]最初からイベントを見る[endlink][r]
+[resetfont]
+[s]
+*jump_ok1
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「選択肢まで移動する」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_select0
+[s]
+
+*jump_to_end1
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「イベントを終了する」[r]
+終了します。[p]
+[cm]
+@jump target=*end_Q
+[s]
+
+*jump_no1
+[er]
+[current layer="message0"]
+[resetfont]
+「最初からイベントを見る」[r]
+最初の場面に移動します。[p]
+;【背景】主人公邸 庭の見える部屋：昼
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
+[cm]
+
+*event_select_end
 ;=====================ここからお芝居の幕引きです===============================
 [chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
 [wait time=10]
@@ -186,7 +268,7 @@
 ;選択肢用の背景：(和紙風桜色はオープニングで使用)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 
 
@@ -204,7 +286,7 @@
 
 *okeiko
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公目パチ1回]
 [主人公通常]
@@ -236,7 +318,7 @@
 *buncyou
 ;選択肢の背景からの復帰
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目を開く]
@@ -298,7 +380,7 @@
 
 *no
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公目パチ1回]
 [主人公通常]
