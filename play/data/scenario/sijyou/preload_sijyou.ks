@@ -610,6 +610,11 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 [endmacro]
 ;==============
+[macro name=背景_四条病院]
+[chara_mod name="bg" storage="bg/sijyou_byouin.jpg" time=100]
+[eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川　http://d.hatena.ne.jp/meiji_photo/'"]
+[endmacro]
+;==============
 
 ;==============================================================
 ;全てはここにGoします
