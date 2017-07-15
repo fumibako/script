@@ -5,39 +5,7 @@
 ;◆【call target=*9_3 storage="sijyou/preload_sijyou.ks"】
 ;==================================================
 *first
-;四条用背景　一括変換　記録にはcg/flg等を使う
-[macro name="背景_庭"]
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
-[wait time=10]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[endmacro]
-[macro name=背景_庭_夜]
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[endmacro]
-[macro name=背景_四条_夢]
-[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
-[endmacro]
-[macro name=背景_料亭風の屋内（昼)]
-;【背景】料亭風の屋内（昼）
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
-[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
-[endmacro]
-[macro name=背景_思い出（花)]
-;【背景】思い出（花
-[chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
-[eval exp="f.haikei_credit=''"]
-[endmacro]
-[macro name=背景_白萩]
-;【背景】白萩
-[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
-[eval exp="f.haikei_credit=''"]
-[endmacro]
-[macro name=背景_庭園(昼)]
-;【背景】庭園
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
-[eval exp="f.haikei_credit=''"]
-[endmacro]
+
 
 ;以降は、無駄な読み込みはしない
 @jump target=end_sub0
@@ -512,11 +480,39 @@
 *end_sub1
 ;ここはマクロ案部です。さすがに本体にかかわるマクロには書くけませんので、もしなにかあればこちらで検証&試作して見せます
 
-;==================================================
-;テストプレイで画面遷移時の自然さに見入ってしまいました。立ち絵が背景と共にふわっと溶け込むように切り替わる自然さが素晴らしいと思います
-;↓macro_etc.ksに[四条イベントシーン構築][四条ボタン表示]を追加と動作確認をしましたので、こちらは消去させていただきます
-;マクロ作成と自然で軽い表示の試みをありがとうございます
-;主人公プリロードもfirst.ksに追加しましたので、消去しました。ありがとうございました(スクリプト担 了解です
+;四条用背景　一括変換　記録にはcg/flg等を使う
+[macro name="背景_庭"]
+[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[endmacro]
+[macro name=背景_庭_夜]
+[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[endmacro]
+[macro name=背景_四条_夢]
+[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
+[endmacro]
+[macro name=背景_料亭風の屋内（昼)]
+;【背景】料亭風の屋内（昼）
+[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
+[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
+[endmacro]
+[macro name=背景_思い出（花)]
+;【背景】思い出（花
+[chara_mod name="bg" storage="bg/bg_omoide.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+[macro name=背景_白萩]
+;【背景】白萩
+[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+[macro name=背景_庭園(昼)]
+;【背景】庭園
+[chara_mod name="bg" storage="bg/bg_teien_ishidatami.jpg" time=500]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
 ;==============================================================
 ;全てはここにGoします
 [return]
