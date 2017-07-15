@@ -840,7 +840,15 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 [eval exp="f.haikei_credit='photo　by　YUKI　http://photo.v-colors.com/329.html'"]
 [endmacro]
 ;==============
-
+[macro name=背景_香水店中]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
+[endmacro]
+;==============
+[macro name=背景_香水店前]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
+[endmacro]
+;==============
 
 ;==============================================================
 ;全てはここにGoします
