@@ -68,7 +68,7 @@
 ;背景変更:和紙風 桜色
 [bg storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-見たことのあるイベントです。[r]
+五月『磯野に相談』：既読イベントです。[r]
 選択肢まで移動、又はイベントを終了しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=300 top=70 left=300 opacity=0]
