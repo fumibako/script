@@ -19,8 +19,7 @@
 [wait time=50]
 [image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 ;料亭
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[背景_料亭風の屋内（昼)]
 [font color=white size=27]
 その後、華織様が用意された場で、[r]
 四条家と[名字]家で会食を共にすることとなった。[p]
@@ -86,8 +85,6 @@
 私は、もう一度、華織様と見つめ合った。[p]
 ;～～～～～～～～～～シーン晴れやか～～～～～～～～～～～～～～～～～～～～
 [autosave]
-;宴会または料亭席全体
-;[暗転]
 [whosay name=文矢 color="#538a8a"]
 「[名前]、よかったね」[p]
 ;～～淑女度低い場合～～
@@ -110,13 +107,11 @@
 [endif]
 [四条退場準備 storage="bg/bg_ryoutei.jpg" time=600]
 ;～～～～～～～～～～シーン晴れやかの中、切ない～～～～～～～～～～～～～～～～～～～～
-
 *common1
 [autosave]
-;宴会または料亭席全体;宴会会場全体
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-;「～ね」が続いておかしい
+;【背景】宴会場
+[背景_四条宴会]
+
 [主人公通常]
 ;【SE】人々のざわめき（ザワザワ…宴会）
 [playse storage=zawa_enkai.ogg loop=false ]
@@ -247,11 +242,12 @@
 ;～～～～～～～～～～シーン選択肢へ～～～～～～～～～～～～～～～～～～～～
 *common2
 [autosave]
-;背景　宴会会場　または料亭
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-;宴会または料亭席全体;宴会会場全体
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
+;【背景】暗転
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
+;【背景】宴会または料亭席全体;宴会会場全体
+[背景_四条宴会]
+;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 
 #
@@ -262,7 +258,8 @@
 （そういえば、お兄様は、どのようにして華織様と出会ったのでしょうか？）[p]
 ;～～～～～～選択肢～～～～～～～～～
 ;背景変更:和紙風 セピア色
-[chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
+[背景_選択肢_和紙風セピア色]
+;[chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=230 opacity=0]
@@ -279,8 +276,8 @@
 ;～～～～～回想イベントへ～～～～～～～～～～
 *deai
 [cm]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -289,10 +286,11 @@
 [主人公ポーズ通常]
 [主人公通常]
 お兄様と華織様の出会いが気になった。[p]
+;==========================================
 ;背景　宴会会場　または料亭
 ;宴会または料亭席全体;宴会会場全体
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条宴会]
+;==========================================
 ;【SE】人々のざわめき（ザワザワ…宴会）
 [playse storage=zawa_enkai.ogg loop=false ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -345,8 +343,8 @@
 ;～～～～～～シーンスキップ～～～～～～～～～
 *not_fumiya
 [cm]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -362,8 +360,8 @@
 *common3
 [autosave]
 ;宴会または料亭席全体;宴会会場全体
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条宴会]
+;==========================================
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織君も、もう少し飲んだらどうかな」[p]
 [if exp="sf.BGM=='ON'"]
@@ -407,16 +405,18 @@
 *seen3
 [autosave]
 [暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+;[chara_mod name="bg" storage="toumei.gif"]
 #
 功を奏でるように女将達は三味線を鳴らす中、空が薄っすらと茜色に[r]染まる。[p]
 [主人公通常]
 [主人公目閉じ]
-;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryouotei_yuu.jpg"]
+;==========================================
+;【背景】料亭風の屋内（夕）
+[背景_料亭風の屋内（夕)]
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/bg_ryouotei_yuu.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+;==========================================
 #
 そうして、華織様のおかげで席は埋まり、本来の四条家と[名字]家の家族が[r]
 集まった。[p]
@@ -523,7 +523,6 @@
 「兄さんは、好きなお酒でも飲んでて下さい」[p]
 [endif]
 ;=================================================================================_
-
 [四条困り微笑み]
 [whosay name="華織" color="olivedrab"]
 「ほら、[華衣]も挨拶して」[p]
@@ -889,8 +888,7 @@
 [layopt layer=fix visible=false]
 ;【背景】庭園
 [image layer=29 name="jyunbi" left=1 top=1 storage="bg/bg_teien_ishidatami_yuu.jpg" time=100]
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yuu.jpg" time=500]
-[eval exp="f.haikei_credit=''"]
+[背景_庭園(夕)]
 ;結
 ;食事の後。二人になる　夕方[p]
 ;個性的な兄弟の話をして、心配する華織。主人公は兄弟を好意的に評する
@@ -1080,13 +1078,14 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 「これからは、僕の全てをもってして、君に恋を綴ります」[p]
 ;エピローグの回収↑
 ;いい感じになって見つめ合う二人。
+;============================
 ;沈丁花
 [暗転２ storage=bg/B4nFWraU42/jincyou_ge.jpg]
 [四条退場]
 [主人公退場]
-[chara_mod name="bg" storage="bg/B4nFWraU42/jincyou_ge.jpg" time=100 wait=false]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_沈丁花]
 [暗転２終了]
+;============================
 #
 華織様の言葉とともに[r]
 永遠と不滅の花言葉をもつ沈丁花が、風に乗って甘く香る[p]
@@ -1111,12 +1110,12 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 ;＝＝＝＝＝＝＝表示準備＝＝＝＝＝＝＝
 [layopt layer=fix visible=false]
 #
-;【背景】庭園 夕方か夜でお願いします。
+;【背景】庭園 夜
 ;宵の口からもうすこし経った頃合いを目指してみました
 ;月が明るめで足元は手持ちの行灯か提灯で照らされている(手前に温かみのある光源)イメージです(スクリプト担
 [image layer=29 name="jyunbi" left=1 top=1 storage="bg/bg_teien_ishidatami_yoru.jpg" time=100]
-[chara_mod name="bg" storage="bg/bg_teien_ishidatami_yoru.jpg" time=500]
-[eval exp="f.haikei_credit=''"]
+[背景_庭園(夜)]
+;============================
 [四条ベース羽織]
 [四条困り微笑み]
 [主人公ポーズ通常]
@@ -1136,14 +1135,12 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 ;=================================================================================_
 *seen9
 [autosave]
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;料亭廊下
-;背景素材を探してくださってありがとうございます。ゆうあかりさんの53を夜っぽくしてみました(スクリプト担
-;ありがとうございます。
-[chara_mod name="bg" storage="bg/bg_enkaijou_rouka.jpg"]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_四条宴会廊下]
 [イベントシーン構築枠茶色]
+;=================================================================================_
 [whosay name="華織" color="olivedrab"]
 （まったく、こういう時は気を効かせてほしいな）[p]
 [whosay name="華織" color="olivedrab"]
@@ -1243,8 +1240,8 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 
 [四条退場準備 storage="bg/bg_enkaijou_rouka.jpg" time=600]
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 新しく訪れる幸せな悩みについて、ふたりの話は、尽きることなく夜も更けていった。[p]
 ;=================================================================================_
 *seen10
