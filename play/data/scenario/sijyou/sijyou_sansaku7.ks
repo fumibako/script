@@ -9,9 +9,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[背景_町]
 [表示準備]
-[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
@@ -215,9 +214,8 @@ $('.saku1').remove();
 ;【SE】人々のざわめき（ザワザワ…屋外）
 [playse storage=zawa_out.ogg loop=false]
 [layopt layer=fix visible=false]
-;背景銀座
-[chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+;【背景】銀座
+[背景_四条_銀座]
 ;============================================================
 [表示準備 storage="bg/B4nFWraU42/ginza3.jpg" layer=29]
 [主人公ポーズ通常]
@@ -306,12 +304,11 @@ $('.saku1').remove();
 ;////////////////////~~シーン香水店前~~~///////////////////////////
 ;華織、香りつながりで化粧品店、調香店に 行く
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;=====================表示準備==============================
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;背景：店外
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
+[背景_香水店前]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=29]
 [主人公ポーズ通常]
 [wait time=10]
@@ -366,9 +363,9 @@ $('.saku1').remove();
 ;主人公退場でもいい→やだ！めんどう！
 ;////////////////////~~シーン香水店内~~~///////////////////////////
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
+[背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;背景説明　背景ないので未
@@ -552,7 +549,7 @@ jumpします。[p]
 [四条退場]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしようかしら）
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[背景選択肢_sakura]
 [eval exp="f.haikei_credit=''"]
 [position layer=message1 height=160 top=100 left=280 opacity=0]
 @layopt layer=message1 visible=true
@@ -571,8 +568,8 @@ jumpします。[p]
 [current layer="message0"]
 [cm]
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ――華織様の香りを確かめる。[p]
 [chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
@@ -671,11 +668,10 @@ jumpします。[p]
 [current layer="message0"]
 [cm]
 #
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 私は、恥ずかしくなって、小瓶の香りを確かめることにした。[p]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
@@ -729,9 +725,10 @@ jumpします。[p]
 [whosay name="調香店主" color=%mp.color]
 「 華織様。　そこは、つけて差し上げては如何でしょうか？　」[p]
 #
+;======================================
 [四条退場]
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
-[eval exp="f.haikei_credit=''"]
+[背景選択肢_sakura]
+
 ;～～～驚きつつ困惑照れ～～～
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -862,10 +859,10 @@ jumpします。[p]
 [current layer="message0"]
 [cm]
 #
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 私は、恥ずかしくなって、自分でつけることにした。[p]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
@@ -1021,15 +1018,11 @@ jumpします。[p]
 [四条退場]
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回想~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;店外　効果セピア
-;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;回想シーン 効果セピア
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(100%)";
-[endscript]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg"]
+[背景セピア化]
+[背景_香水店前]
 [whosay name="調香店主" color=%mp.color]
 「しばらくしたら、浮かない顔をしたお客様が来られて[r]
 [sp]……あ、これは内緒にしてくださいね」[p]
@@ -1088,15 +1081,11 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [sp]ワケですよ」 [p]
 #
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回送おわり~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;回想シーン 効果セピア消す
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
-[endscript]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[背景セピア化_解除"]
+[背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
@@ -1203,8 +1192,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 #
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~シーン主人公家の前~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;【背景】主人公邸 玄関
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[背景_主人公邸_玄関]
 [表示準備 storage="bg/bg_genkan.jpg" layer=13]
 [四条ベース着物]
 [四条微笑み]
@@ -1316,8 +1304,7 @@ jumpします。[p]
 華織様は、手をとって門前まで送ると、会釈をして帰っていった。[p]
 首筋に、ほんのりと香りを残して……。[p]
 ;【背景】青空に桜
-[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
-[eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
+[背景_青空に桜]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （このまま帰ったら、勘のいい磯野は、なんていうかしら……？）[p]
 [主人公退場]
