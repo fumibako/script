@@ -547,7 +547,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [endmacro]
 ;==============
 [macro name=背景_四条玄関]
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=%time|500]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [endmacro]
 ;==============
