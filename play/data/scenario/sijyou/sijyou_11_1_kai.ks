@@ -26,8 +26,8 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 *first
-;[料亭]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
+[背景_料亭風の屋内（昼)]
+;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [layopt layer=13 visible=true]
 [image name="jyunbi" x=1 y=1 layer=13 storage="bg/bg_ryoutei.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
@@ -57,16 +57,13 @@
 ;///////////////////徐々に回想シーンへ/////////////////////
 [暗転２]
 [四条退場]
-[chara_mod name="bg" storage="toumei.gif"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
 ;背景暗転
 ;男モノローグメッセージウィンドウ 
 ;セリフのみでは華衣の善を納得できない方の為にト書き説明
 ;回想シーン 効果セピア
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(100%)";
-[endscript]
+[背景セピア化]
 ;背景四条家
 [イベントシーン構築ボタン無し版枠茶色]
 [暗転２終了]
@@ -89,8 +86,11 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 ;甘やかされたからもあるが努力もしなかった自然的なもの、過保護に何もできないと言われていたから　兄達の存在が大きく末子は期待されていなかった。[p]
 #
 それは、兄達の存在も大きかった故に周囲が[華衣]に対して期待せず、過保護に接してしまっていたからであった。[p]
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=5000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;=================================================================================_
+[背景_四条玄関 time=5000]
+;[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=5000 wait=false]
+;[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+;=================================================================================_
 ;背景 四条家玄関ホール(表示タイミングは変更する waitしないでゆっくりとtime？)
 ;華織自身も周囲に（兄には）多少コンプレックスはある
 [whosay name="女中・その壱" color=%mp.color]
@@ -154,15 +154,13 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 *seen3
 #
 ;背景 ネリネの花やイメージ画像
-;ないので[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
-[endscript]
-[chara_mod name="bg" storage="bg/B4nFWraU42/nerine_img.jpg" time=2000 wait=false]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[暗転]
+;[chara_mod name="bg" storage="toumei.gif"]
+[背景セピア化_解除]
+;=================================================================================_
+;背景ネリネ
+[背景_ネリネ]
+;=================================================================================_
 [whosay name="華織" color="olivedrab"]
 ――そして、その中から[華衣]が気に入ったのが、遠縁の公家の子女だった。[p]
 ;、[sp]それが[華衣]の婚約者となった。[p]
@@ -177,8 +175,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [暗転２]
 [イベントシーン構築ボタン無し版]
 ;【背景】料亭
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=50]
-[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
+[背景_料亭風の屋内（昼)]
 ;背景 料亭 主人公表示
 [主人公ポーズ通常]
 [wait time=10]
@@ -239,9 +236,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [layopt layer=message0 visible=false]
 [暗転２]
 [主人公退場]
-;【背景】四条家（玄関外）
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=50]
+[背景_四条家玄関_外]
 [イベントシーン構築ボタン無し版枠茶色]
 [暗転２終了]
 [layopt layer=message0 visible=true]
@@ -284,7 +279,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [wait time=10]
 ;【背景】料亭
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=50]
+[背景_料亭風の屋内（昼)]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
