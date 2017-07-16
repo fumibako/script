@@ -274,13 +274,14 @@ f.okeiko_month_kansuuji="三月 ";
 
 [cm]
 ;◆月始め「○月」の全画面画像表示
-[eval exp="f.okeiko_bg_tukihajime = 'bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
+[eval exp="f.okeiko_bg_tukihajime = '../fgimage/bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
 [eval exp="f.sysgra_okeiko_month = 'button/kanji_' + f.okeiko_month + '.png'"]
 [eval exp="f.sysgra_okeiko_week = 'button/kanji_' + f.okeiko_week + '.png'"]
 [eval exp="f.fumi_kakunin=0"]
 
 ;◆背景変更:月始め切り替え背景
-[chara_mod name="bg" storage=&f.okeiko_bg_tukihajime time=0]
+[freeimage layer = 1]
+[bg storage=&f.okeiko_bg_tukihajime time=50]
 [wait time=500]
 ;【SE】スズメのさえずり
 [playse storage=tori_suzume.ogg loop=false]
