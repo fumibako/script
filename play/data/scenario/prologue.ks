@@ -459,7 +459,7 @@ TG.stat.play_se = true;
 
 ;背景非表示
 ;[chara_mod name="bg" storage="toumei.gif" time=100]
-[bg storage="../fgimage/toumei.gif" time=100]
+[bg storage="../fgimage/toumei.gif" time=10]
 [wait time=10]
 
 
