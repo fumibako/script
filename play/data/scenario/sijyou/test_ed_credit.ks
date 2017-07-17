@@ -2,6 +2,8 @@
 *first
 [if exp="tf.test_sijyou==true"]
 [stopbgm]
+[freeimage layer = 1]
+[wait time=10]
 [bg storage="../fgimage/bg/toumei.gif" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="toumei.gif"]
