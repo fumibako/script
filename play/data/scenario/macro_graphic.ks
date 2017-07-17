@@ -9,6 +9,8 @@
 ;背景：庭
 [macro name="背景_庭"]
 [chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
+;↓[chara_mod]→[bg]過渡期は並列で書いておきます。全てのシナリオを[bg]に移行後は[bg]のみ残す予定です◆jsYiJcqRkk
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 [endmacro]
 

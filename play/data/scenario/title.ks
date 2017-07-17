@@ -28,6 +28,8 @@
 [eval exp="tf.advice_event_hyouji=1"]
 [eval exp="tf.advice_event_hyouji=1"]
 [eval exp="f.flag_replay=false"]
+;◆↓背景切り替え時の効果を指定します。bgのデフォルトであるfadeinはcrossfadeと異なっていたのでchara_modのデフォルトであるcrossfadeを指定しています
+[eval exp="f.bg_method='crossfade'"]
 
 [hidemenubutton]
 ;構築中隠し

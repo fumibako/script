@@ -81,7 +81,7 @@ console.info("f.katuraginomiya_fumi_inou=", this.kag.stat.f.katuraginomiya_fumi_
 [whosay name=""]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[image layer=29 x=1 y=1 storage=%storage|bg/anten.jpg time=%time|1300 visible=true]
+[image layer=29 x=0 y=0 storage=%storage|bg/anten.jpg time=%time|1300 visible=true]
 [wait time=10]
 [if exp=mp.clegit==true]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -1187,6 +1187,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 ;背景変更:新聞
 [chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
 [wait time=10]
+[bg storage="../fgimage/bg/test_bg_sinbun.jpg" time=600 method=%method | &f.bg_method]
+[wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=150 width=720 height=600 top=30 page=fore margint="0"]
 
@@ -1254,11 +1256,13 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[if exp="f.flag_replay == true"]
-	[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0]
-[else]
+;[if exp="f.flag_replay == true"]
+;↓[chara_mod]→[bg]過渡期は並列で書いておきます。全てのシナリオを[bg]に移行後は[bg]のみ残す予定です◆jsYiJcqRkk
+	[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0 method=%method | &f.bg_method]
+	[wait time=10]
+;[else]
 	[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=%time|0]
-[endif]
+;[endif]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -1294,11 +1298,12 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風(暗)
-[if exp="f.flag_replay == true"]
-	[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0]
-[else]
-	[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=%time|0]
-[endif]
+;[if exp="f.flag_replay == true"]
+	[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=%time|0 method=%method | &f.bg_method]
+	[wait time=10]
+;[else]
+	[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=%time|0]
+;[endif]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
