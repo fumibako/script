@@ -9,6 +9,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+[freeimage layer = 1]
+[wait time=10]
 [背景_町]
 [表示準備]
 [四条イベントシーン構築]

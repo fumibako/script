@@ -16,6 +16,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
+[freeimage layer = 1]
+[wait time=10]
 [背景_町]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]

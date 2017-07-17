@@ -8,6 +8,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
+[freeimage layer = 1]
+[wait time=10]
 [背景_町]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
@@ -79,7 +81,7 @@
 [if exp="f.okeiko_gamen==true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
 [else]
-[イベントシーン２終了]
+[イベントシーン終了２]
 [endif]
 
 @jump storage="test_sijyou.ks"

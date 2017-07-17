@@ -20,7 +20,9 @@ $('.loding_pic').remove();
 ;//////////////////
 ;=================================================================================_
 ;【背景】四条邸宅玄関ﾎｰﾙ
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[freeimage layer = 1]
+[wait time=10]
+[bg method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [イベントシーン構築ボタン無し版枠茶色]
 [メッセージウィンドウ上ボタン表示]
@@ -105,10 +107,10 @@ $('.loding_pic').remove();
 ;=================================================================================_
 *seen1_a
 #
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg method="crossfade" storage="toumei.gif" time=1000]
 #
 一方、二階では。[p]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
+[bg method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="四条 華衣" color=%mp.color]
 「お、重い！！ なんで俺だけ！？　手伝えよ！！」[p]
@@ -150,7 +152,7 @@ $('.loding_pic').remove();
 ;足音去っていく
 ;【SE】落ち着いた足音（フェードアウト）
 [playse storage=isono_out.ogg loop=false ]
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[bg method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [stopse]
 [whosay name="華織" color="olivedrab"]
@@ -158,8 +160,8 @@ $('.loding_pic').remove();
 [whosay name="華織" color="olivedrab"]
 （これも、本来の兄としての義務をサボっていたツケでしょうか……）[p]
 #
-[chara_mod name="bg" storage="toumei.gif" time=1000]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
+[bg method="crossfade" storage="toumei.gif" time=1000]
+[bg method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="四条 華衣" color=%mp.color]
 「……なんだよ、昔は『華衣、忘れ物はないかい？ きちんと歯は磨いた[r]
@@ -226,14 +228,14 @@ $('.loding_pic').remove();
 *seen2
 #
 ・・・・・・[p]
-[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[bg method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 （さて、そろそろ手伝おうかな）[p]
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg method="crossfade" storage="toumei.gif" time=1000]
 [whosay name="華織" color="olivedrab"]
 「[華衣]、大変だったら……」[p]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
+[bg method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 「[華衣]？」[p]
@@ -245,13 +247,13 @@ $('.loding_pic').remove();
 「僕が生けた花をそのまま壺に突っ込んじゃって……[r]
 [sp]せめて花の向きは揃えて……」[p]
 ;暗転
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg method="crossfade" storage="toumei.gif" time=1000]
 [whosay name="華織" color="olivedrab"]
 （いいや、そのままにしておくべきだ……そっとしておこう）[p]
 #
 派手な壺に不揃いな花が並ぶ。[r]
 時が経てば凛と前を向く花が並ぶのだろうか。[p]
-[chara_mod name="bg" storage="bg/B4nFWraU42/nerine_img.jpg" time=2000 wait=false]
+[bg method="crossfade" storage="../fgimage/bg/B4nFWraU42/nerine_img.jpg" time=2000 wait=false]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 その花は、また誰かに幸せを与え、新しい花を咲かすことを願っている。[p]
 ;=================================================================================_

@@ -9,6 +9,8 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
+[freeimage layer = 1]
+[wait time=10]
 [背景_町]
 ;[eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
@@ -198,7 +200,7 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 [イベントシーン終了２]
 [endif]
 
-[if exp="tf.sijyou_test==true"]
+[if exp="tf.test_sijyou==true"]
 @jump storage="test_sijyou.ks"
 [s]
 [endif]
