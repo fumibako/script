@@ -9,8 +9,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】[背景_庭]
-[chara_mod name="bg" storage="bg/room_niwa.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #

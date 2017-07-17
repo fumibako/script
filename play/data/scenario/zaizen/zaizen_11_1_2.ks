@@ -6,8 +6,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】パーティ会場
-[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600]
 ;[eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #
@@ -80,7 +82,7 @@ jumpします。[p]
 [財前退場]
 ;パーティ会場廊下　暗転
 ;【背景】暗転黒背景、会話ウィンドウは残る
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
 [主人公憂い]
 [暗転２終了]
 ;==============================================================================
@@ -110,7 +112,7 @@ jumpします。[p]
 [主人公目伏]
 ;憂いまでの自然な切り替え表情
 ;【背景］パーティ会場控室
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [暗転２終了]
 ;==============================================================================
@@ -257,7 +259,7 @@ jumpします。[p]
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=1000]
@@ -318,7 +320,7 @@ jumpします。[p]
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=1000]
@@ -382,7 +384,7 @@ jumpします。[p]
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 [表示準備 storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]

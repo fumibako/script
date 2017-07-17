@@ -9,8 +9,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】背景会議室　;変更してください
-[chara_mod name="bg" storage="bg/B4nFWraU42/test_zaizen_kaigi.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/test_zaizen_kaigi.jpg"]
 [eval exp="f.haikei_credit='Photo by  ＠名無しさん１'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #

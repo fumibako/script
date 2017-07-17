@@ -7,11 +7,13 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;↓1_3_1からのjump先ラベルです。つながりが自然になるように、テキスト調整時に「数日後、財前邸にて」など地の文(全画面?)を入れる予定です
 *seen1
 [call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
 ;【背景】洋館居間
-[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
