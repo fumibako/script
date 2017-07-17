@@ -12,6 +12,8 @@
 ;=================================================================================_
 ;[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
 ;【背景】主人公邸 庭の見える部屋：冬
+[freeimage layer = 1]
+[wait time=10]
 [背景_庭_冬]
 ;[chara_mod name="bg" storage="bg/room_niwa_fuyu.jpg" time=1000]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]

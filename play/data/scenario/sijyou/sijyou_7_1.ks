@@ -17,7 +17,9 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=10]
+[freeimage layer = 1]
+[wait time=10]
+[bg storage="../fgimage/bg/room_niwa_yoru.jpg" time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -47,7 +49,7 @@
 [wait time=10]
 [p]
 
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 [主人公目通常]
@@ -75,7 +77,7 @@
 ;選択肢用の背景：(和紙風桜色はオープニングで使用)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
-[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -109,7 +111,7 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
@@ -129,7 +131,7 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
@@ -147,7 +149,7 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公目閉じ]
 （黒田様と親しくできますように）[p]
@@ -165,7 +167,7 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 お稽古のことをお願いした。[p]
@@ -207,7 +209,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 淑女らしくなれるようにお願いした。[p]
@@ -233,7 +235,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 見逃してしまった。[p]
 [主人公通常]
@@ -248,7 +250,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[chara_mod name="bg" storage="bg/sijyou_engawa2.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]

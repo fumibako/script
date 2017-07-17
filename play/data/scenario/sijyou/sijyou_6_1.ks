@@ -9,13 +9,15 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築ボタン無し版]
+[freeimage layer = 1]
+[wait time=10]
 [暗転]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
 #
 ;ゆっくり表示
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+[bg storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
 ;bg_kinari.jpg	
 ;bg_kinari_sakura.jpg
 #
@@ -33,7 +35,7 @@
 その途端、見たこともない大きな温室が目の前に現れた。[p]
 [playse storage=shine.ogg loop=false ]
 ;キラキラSEとか
-[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
+[bg storage="../fgimage/bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なんて広い温室なのかしら！ それに色々な花が咲き乱れて綺麗だわ）[p]
 
@@ -104,7 +106,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ？！」[p]
 #
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+[bg storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
 #
 華織お兄さまは、私の髪飾りに花を添えると、夢のような足取りでワルツを[r]
 舞う。[p]
@@ -133,7 +135,7 @@
 [playse storage=tokei_tokei_kane.ogg loop=false]
 [playse storage=tokei_tokei_kane.ogg loop=false]
 [playse storage=tokei_tokei_kane.ogg loop=false]
-[chara_mod name="bg" storage="bg/test_sijyou_hanazono.jpg" time=1500]
+[bg storage="../fgimage/bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん、僕は、もうそろそろ行かないと」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -155,7 +157,7 @@
 [endkeyframe]
 ;アニメーション実行
 [kanim name="saku1" keyframe="animation1" time="7000" ]
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+[bg storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
 #
 花吹雪に包まれ声は遠ざかっていく[p]
 [iscript]
@@ -167,17 +169,23 @@ $('.saku1').remove();
 「華織お兄さま！　待ってください！」 [p]
 [fadeoutbgm time=4000]
 #
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg storage="toumei.gif" time=1000]
 
 ;【SE】すずめ（チュンチュン）
 [playse storage=tori_suzume.ogg loop=false ]
 ;【背景】主人公邸 庭の見える部屋：昼
+[layopt layer=29 visible=true] 
 [layopt layer=fix visible=false]
 [image name="junbi" layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=50]
-[背景_庭]
+;[背景_庭]
+;↓私のローカル環境下にてなぜか複数回マクロが効かなかったため直書きします。せっかくマクロにしてくださった箇所なのにすみません。環境由来の原因かもしれません◆jsYiJcqRkk
+[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[wait time=20]
 [主人公ポーズ指]
 [主人公通常]
 [freeimage layer=29 time=1000]

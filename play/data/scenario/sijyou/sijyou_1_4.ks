@@ -14,6 +14,8 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
+[freeimage layer = 1]
+[wait time=10]
 [image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
@@ -44,8 +46,8 @@
 [主人公ポーズ片手]
 「四条家に入るにあたって、[r]
 [sp]お言葉など気をつけることは、他にあるかしら？」[p]
-[if exp="tf.test_gamen==true"]
-テストページからプレイしています。手紙まで移動しますか？[r]
+;[if exp="tf.test_gamen==true"]
+;テストページからプレイしています。手紙まで移動しますか？[r]
 ;---------------------------
 ;選択肢用レイヤーを追加
 ;------------------------------------------------------
@@ -84,7 +86,8 @@
 [sp]お聞きしてございます」[p]
 [whosay name=磯野 color="dimgray"]
 「淑女の基礎たる言葉、[r]
-[sp]" ごきげんよう"  "おそれ入ります" で、間に合うでしょう」[p]#
+[sp]" ごきげんよう"  "おそれ入ります" で、間に合うでしょう」[p]
+#
 磯野は、薫り立つお茶を注ぐと、円熟した[ruby text=こ]古[ruby text=ちゃ]茶のように微笑んだ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]

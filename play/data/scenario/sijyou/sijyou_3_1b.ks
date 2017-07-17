@@ -19,6 +19,8 @@
 [wait time=50]
 [image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 ;料亭
+[freeimage layer = 1]
+[wait time=10]
 [背景_料亭風の屋内（昼)]
 [font color=white size=27]
 その後、華織様が用意された場で、[r]
@@ -883,7 +885,7 @@
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
 #
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[bg storage="toumei.gif"]
 華織様に誘われた私は、庭へと赴いた。[p]
 [layopt layer=fix visible=false]
 ;【背景】庭園

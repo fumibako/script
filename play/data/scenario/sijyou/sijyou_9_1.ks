@@ -10,6 +10,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;【背景】主人公邸 庭の見える部屋：夜
+[freeimage layer = 1]
+[wait time=10]
 [背景_庭_夜]
 [四条イベントシーン構築]
 [主人公ポーズ通常]

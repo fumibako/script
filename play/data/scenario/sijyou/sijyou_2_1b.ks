@@ -9,6 +9,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;背景　床の間のみ表示　夕方バージョン
+[freeimage layer = 1]
+[wait time=10]
 [背景_四条華道教室(夕)]
 [イベントシーン構築]
 [四条_隣_ベース羽織]

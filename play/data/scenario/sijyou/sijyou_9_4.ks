@@ -16,6 +16,8 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
+[freeimage layer = 1]
+[wait time=10]
 [image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 ;全画面テキストから開始時に文字が表示されない場合があるため、↓追記します(◆jsYiJcqRkk
 @layopt layer=message0 visible=true
@@ -271,7 +273,7 @@
 ;場面転換 四条と主人公のデート
 ;【背景】銀座
 [背景_四条_銀座 time=1000]
-[chara_mod name="bg" storage="bg/B4nFWraU42/ginza3.jpg" time=1000]
+;[bg storage="../fgimage/bg/B4nFWraU42/ginza3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/ginza3.jpg" time=100]
 #

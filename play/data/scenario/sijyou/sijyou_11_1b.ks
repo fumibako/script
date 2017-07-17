@@ -9,7 +9,9 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
+[freeimage layer = 1]
+[wait time=10]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=100]
 ;=================================================================================_
 ;テストモード削除
 ;=================================================================================_
@@ -113,7 +115,7 @@ jumpします。[p]
 [eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
 [endif]
 ;【波ヶ浦】夫婦岩：BGMに合わせ落ち着いた感じの背景に変更してみています
-[chara_mod name="bg" storage="bg/sijyou_namigaura.jpg" time=1000]
+[bg storage="../fgimage/bg/sijyou_namigaura.jpg" time=1000]
 [eval exp="f.haikei_credit=''"]
 [whosay name="華衣" color=%mp.color]
 「あの日の『幸せ』は、もう……どこにもない」[p]
@@ -292,7 +294,7 @@ $(".nerine").css("opacity",0.5);
 ;【退場】四条
 [四条退場]
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
 ;==========================スクリプト・全画面表示の間に設定===============================
 *seen3
 ;【テキスト全画面】 裏で画面構成 ;[新聞] test_bg_sinbun.jpg bg_prologue_dark.jpg　bg_prologue.jpg
@@ -399,9 +401,9 @@ $(".nerine").css("opacity",0.5);
 $(".nerine").css("opacity",0.9);
 [endscript]
 ;[eval exp="f.message_storage='toumei.gif'"]
-;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
+;[bg storage="../fgimage/bg/bg_prologue.jpg" time=100]
 ;四条家玄関
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+[bg storage="../fgimage/bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [position left=200 width=700 height=430 top=210 page=fore margint="50"]
 [wait time=50]
@@ -434,7 +436,7 @@ $(function(){
 ;sepia(100%)だと四条邸壁や空の青さが飛んでしまうため50%に。さらに調整入れるかもです
 ;=================================================================================_
 ;四条家玄関
-;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
+;[bg storage="../fgimage/bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 ;画面復帰
 [freeimage layer=29 time=500]
 [メッセージウィンドウ上ボタン表示]

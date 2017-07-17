@@ -13,6 +13,8 @@
 [er]
 ;条件:華織の迷いのイベントを一つでも見ている　【全力】の手紙をよんだ後日 夜
 ;主人公庭夜
+[freeimage layer = 1]
+[wait time=10]
 [背景_庭_夜]
 [stopbgm]
 ;～～～～～～～～～～～～～～～～～～前章シーンここから～～～～～～～～～～～～～～～～
@@ -136,7 +138,7 @@
 [current layer="message0"]
 [cm]
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[bg storage="toumei.gif"]
 ;横においてさらりと眺める
 私は、机に置いてある、手紙を眺めた。[p]
 ;～～～～～～～共通1～～～～～～～
@@ -700,8 +702,10 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [autosave]
 [主人公目閉]
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_tenrankai.jpg"]
+[bg storage="toumei.gif"]
+[wait time=10]
+[bg storage="../fgimage/bg/B4nFWraU42/bg_sijyou_tenrankai.jpg" method="crossfade"]
+[wait time=10]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 大賞作品を見た後、私たちは他の作品を見て回る。[r]

@@ -24,12 +24,16 @@
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 ;【背景】料亭風の屋内（昼）
+[freeimage layer = 1]
+[wait time=10]
 [背景_料亭風の屋内（昼)]
 ;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
 ;[eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 ;////////////先に登場させておく////////////
 [四条ベース羽織]
 [四条微笑み]
+;名前欄消去
+[whosay name=""]
 ;全画面テキストから開始時に文字が表示されない場合があるため、↓追記します(◆jsYiJcqRkk
 @layopt layer=message0 visible=true
 [current layer="message0"]

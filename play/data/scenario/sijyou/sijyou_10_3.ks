@@ -10,6 +10,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;===========================================================
 ;【背景】ヒロインの部屋
+[freeimage layer = 1]
+[wait time=10]
 [背景_庭_夜]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -295,7 +297,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [endif]
 #
 白く光る障子から、お兄さまの影と華織お兄さまの影が映る。[p]
-[chara_mod name="bg" storage="bg/room_niwa_yuki.jpg" time=1000]
+[bg storage="../fgimage/bg/room_niwa_yuki.jpg" time=1000 method="crossfade"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 #
 開けてみると視界に広がる一面の白。[r]

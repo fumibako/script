@@ -1,7 +1,9 @@
 *test
 ;テスト用イベントシーン構築
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[freeimage layer = 1]
+[wait time=10]
+[bg storage="toumei.gif"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -51,7 +53,7 @@
 [whosay name=文矢 color="#538a8a"]
 （ふぅ。[r]
 [sp]こんなところで待たされたら、誰だって探検をしたくなっても仕方ない）[p]
-[chara_mod name="bg" storage="toumei.gif"]
+[bg storage="toumei.gif"]
 ・・・・・[p]
 [whosay name=文矢 color="#538a8a"]
 （弱ったな。広すぎて迷ってしまったようだ。[r]
@@ -245,7 +247,7 @@
 [whosay name="華織" color="olivedrab"]
 （ちょっと、気晴らしに廊下を散歩してみよう）[p]
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[bg storage="toumei.gif"]
 #
 ・・・・・・[p]
 ;=================================================================================_
@@ -373,7 +375,7 @@
 #
 [fadeoutbgm time=3000]
 ;[暗転]
-[chara_mod name="bg" storage="toumei.gif"]
+[bg storage="toumei.gif"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]

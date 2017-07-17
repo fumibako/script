@@ -17,7 +17,10 @@
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_zaizen.ks"]
 ;【背景】主人公邸 庭の見える部屋：昼
+[freeimage layer = 1]
+[wait time=10]
 [bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -28,6 +31,8 @@
 ;=====================ここからお芝居の幕引きです===============================
 *seen0
 ;【背景】主人公邸 庭の見える部屋：昼
+[freeimage layer = 1]
+[wait time=10]
 [bg storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公通常]
