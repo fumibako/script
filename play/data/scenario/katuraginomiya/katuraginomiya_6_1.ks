@@ -7,6 +7,8 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[freeimage layer = 1]
+[wait time=10]
 [イベントシーン構築ボタン無し版]
 [暗転]
 [プリロード画面消去]
@@ -14,13 +16,13 @@
 ;=====================ここからお芝居の幕引きです===============================
 #
 ;ゆっくり表示
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=2000]
+[bg method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
 [eval exp="f.haikei_credit=''"]
 ――夢を見た。[p]
 # 
 [イベントシーン構築枠茶色]
 ;【背景】執務室（裏で画面構成）
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg"]
 
@@ -125,9 +127,9 @@
 [image name="junbi" layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/bg_kinari_sakura.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=100]
 ;【背景】主人公邸 部屋
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=100]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]

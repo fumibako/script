@@ -9,8 +9,10 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [表示準備]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -305,7 +307,7 @@ jumpします。[p]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
 ;テキスト全画面
@@ -383,7 +385,7 @@ jumpします。[p]
 [主人公退場]
 ;==========================================================================================================================
 ;【背景】:町並み　回想シーン・セピア用
-[chara_mod name="bg" storage="bg/bg_machi_omoide.jpg" time=1500]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi_omoide.jpg" time=1500]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 ;===========================================================================================================================
 #
@@ -398,7 +400,7 @@ jumpします。[p]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10] 
 ;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;====================================================================
 
@@ -520,7 +522,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [playse storage=paper_open.ogg loop=false ]
 
 ;【背景】お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]

@@ -10,8 +10,10 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [表示準備]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -368,7 +370,7 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】執務室（裏で画面構成）
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;テキスト全画面
 [font color=white size=27]

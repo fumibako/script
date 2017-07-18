@@ -8,8 +8,10 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -179,7 +181,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000] 
 [eval exp="f.haikei_credit='photo　by　ゆうあかり'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -241,7 +243,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公退場]
 [暗転]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [表示準備]
 [stopbgm]
@@ -428,7 +430,7 @@ $('.junbi_girl').remove();
 
 ;【SE】倒れて腕に受け止められる（フラ…サッ）
 [playse storage=taoreru_udenonakahe.ogg loop=false ]
-[chara_mod name="bg" storage="toumei.gif" time=1500]
+[bg storage="toumei.gif" time=1500]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （怖かった。けれど殿下が来てくださったわ[r]
@@ -438,7 +440,7 @@ $('.junbi_girl').remove();
 [主人公退場]
 [葛城宮退場]
 ;背景:庭【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000] 
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000] 
 [暗転２終了]
 [表示準備 storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり

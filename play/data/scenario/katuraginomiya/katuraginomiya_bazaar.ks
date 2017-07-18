@@ -8,8 +8,10 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸 庭の見える部屋：春
-[chara_mod name="bg" storage="bg/room_niwa_haru.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa_haru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -143,7 +145,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】;野点傘と縁談の背景
-[chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [表示準備 storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg"]
 ;テキスト全画面
@@ -303,7 +305,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;=================================================================
 [暗転２]
 [葛城宮退場]
-[chara_mod name="bg" storage="bg/katuraginomiya_Japan_Tea.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_Japan_Tea.jpg" time=50]
 [eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;=================================================================
@@ -315,7 +317,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;=================================================================
 [暗転２]
 ;【背景】;野点傘と縁談の背景
-[chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [葛城宮ベース私服]
 [葛城宮微笑み]
@@ -373,11 +375,11 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [主人公通常]
 ;[バザー背景] まだないので暗転
 ;【背景】背景バザー出店（入り口）
-;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity3.jpg" time=50]
+;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity3.jpg" time=50]
 ;【背景】背景バザー出店(遠景)
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity.jpg" time=50]
 ;【背景】バザー会場（近景）
-;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity2.jpg" time=50]
+;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity2.jpg" time=50]
 [暗転２終了]
 バザー出店会場[p]
 ;=================================================================

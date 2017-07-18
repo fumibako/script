@@ -5,8 +5,10 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】ﾌﾟﾛﾛーｸﾞ
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=600]
 [eval exp="f.haikei_credit=' '"]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです===============================
@@ -21,7 +23,7 @@
 [wait time=10]
 ;【背景】;背景与党会議室
 ;【背景】会議室（裏で画面構成）
-[chara_mod name="bg" storage="bg/B4nFWraU42/kaigisitu.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/kaigisitu.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]

@@ -8,8 +8,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -107,7 +109,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】仲人庭園 （裏で画面構成）
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/nakoudoteiniwa.jpg" time=50]
 [表示準備 storage="bg/I9IhvvVdPo/nakoudoteiniwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;テキスト全画面
@@ -184,7 +186,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 妃殿下は嬉しそうに微笑み、振り向くと軍服姿の殿下がいた。[p]
 ;=========================================================================================
 ;背景仲人庭園(道)振り向くという言葉に合わせて背景も変化させてみました。この後語りながら歩くのに良さそうな道の見える池に(スクリプト担
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi1.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_michi1.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;=========================================================================================
 
@@ -299,7 +301,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [葛城宮微笑み]
 ;[主人公退場]話の続きだから退場できない。けれど移動しているのでしょうか？→表情変化で数分変化に対応
 ;【背景】仲人庭園(道2)話の変化に合わせて背景も変化させてみます(スクリプト担
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [主人公ポーズ通常]
@@ -367,7 +369,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;=========================================================================================
 ;呉服屋的な背景 全画面文字のみ表示
 [テキスト全画面白文字無背景]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/yo-roppa.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/yo-roppa.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [sp]殿下は１２歳でイギリスに留学し、[r]
 イギリス国王から立憲君主制について学ばれた[r]
@@ -398,7 +400,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=500 visible=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext name=".junbi_girl" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
 ;メッセージをもどします↓
 [イベントシーン構築ボタン無し版]
 ;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)

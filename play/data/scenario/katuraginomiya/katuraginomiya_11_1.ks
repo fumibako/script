@@ -8,9 +8,11 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】バラ園
 [eval exp="f.haikei_credit='I9IhvvVdPo'"]
-[chara_mod name="bg" storage="bg / I9IhvvVdPo / baraen.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600]
 [イベントシーン構築ボタン無し版]
 ;登場人物の設定
 [主人公ポーズ通常]
@@ -119,10 +121,10 @@
 ;選択肢用の背景：(和紙風桜色はオープニングで使用) 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 セピア色　こちらがよければコメントアウトを外して使用
-;[chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
+;[bg method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=100]
 ;[eval exp="f.haikei_credit=''"]
 ;背景変更:和紙風 水色　上がよければコメントアウトをしてください
-[chara_mod name="bg" storage="bg/plane_mizuiro.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/plane_mizuiro.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;[link]タグでの選択肢例
@@ -147,7 +149,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 ;【背景】バラ園
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
 ;＝＝＝システムメッセージ。変更してください＝＝＝＝＝
@@ -171,7 +173,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 ;【背景】バラ園
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
 ;＝＝＝システムメッセージ。変更してください・・・＝＝＝＝＝

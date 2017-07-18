@@ -9,8 +9,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公部屋昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -238,7 +240,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/gosyo.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/gosyo.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -281,7 +283,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 （……宮中の方は私の事をどう思われているのかしら）[p]
 [主人公目伏]
 #
-[chara_mod name="bg" storage="toumei.gif" time=1500]
+[bg storage="toumei.gif" time=1500]
 [eval exp="f.haikei_credit=''"]
 [whosay name="侍従"]
 「[名字]様に事前にお会いしたいとのことで、こちらに親王殿下が[r]
@@ -292,7 +294,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [autosave]
 #
 ;==============================================================================
-[chara_mod name="bg" storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=1500]
+[bg method='crossfade' storage="../fgimage/bg/bg_katuraginomiya_gosyo_in.jpg" time=1500]
 [表示準備 storage="bg/bg_katuraginomiya_gosyo_in.jpg"]
 [eval exp="f.haikei_credit=''"]
 [主人公目伏]
@@ -424,7 +426,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
-[chara_mod name="bg" storage="bg /B4nFWraU42/ gosyo.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/gosyo.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [freeimage layer = 29 time=1000]
 ;機能ボタン表示
@@ -455,7 +457,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;==============================================================================
 [暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
@@ -491,7 +493,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;一瞬手紙の後ろがみえるので　手紙皇后さま→侍従
-[chara_mod name="bg" storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_tegami_kousitsu_jijyuu.jpg" time=50]
 ;一瞬見えるメッセージ枠を消したい
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;テキスト全画面
