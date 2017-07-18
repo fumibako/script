@@ -602,7 +602,7 @@ $('.junbi_girl').remove();
 ;描写が足りないとそしてが発生する
 
 ;[葛城宮退場] ふわっと退場
-[葛城宮退場準備 storage="bg/bg_room_niwa.jpg"time=300]
+[葛城宮退場準備 storage="bg/room_niwa.jpg" time=300]
 
 ;【SE】襖を閉じる（ゆっくり）
 [playse storage=fusuma-close.ogg loop=false ]
