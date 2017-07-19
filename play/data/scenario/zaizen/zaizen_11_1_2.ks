@@ -206,7 +206,7 @@ jumpします。[p]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】洋館　全画面用
-[image layer=29 x=1 y=1 storage="bg/zaizen_youkan_zengamen.jpg" time=1300 visible=true]
+[image layer=29 x=0 y=0 storage="bg/zaizen_youkan_zengamen.jpg" time=1300 visible=true]
 [wait time=10]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
@@ -223,7 +223,7 @@ jumpします。[p]
 
 ;===============================================================
 ;【背景】呉服屋的な背景 　全画面文字のみ表示
-[image layer=29 x=1 y=1 storage="bg/zaizen_gofuku.jpg" time=1300 visible=true]
+[image layer=29 x=0 y=0 storage="bg/zaizen_gofuku.jpg" time=1300 visible=true]
 [eval exp="f.haikei_credit=''"]
 ;===============================================================
 
@@ -294,7 +294,7 @@ jumpします。[p]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】港町的な背景
-[image layer=29 x=1 y=1 storage="bg/zaizen_minato.jpg" time=1300 visible=true]
+[image layer=29 x=0 y=0 storage="bg/zaizen_minato.jpg" time=1300 visible=true]
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
 [主人公伏目]
@@ -349,7 +349,7 @@ jumpします。[p]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】;呉服屋的な背景 
-[image layer=29 x=1 y=1 storage="bg/zaizen_gofuku.jpg" time=1300 visible=true]
+[image layer=29 x=0 y=0 storage="bg/zaizen_gofuku.jpg" time=1300 visible=true]
 [eval exp="f.haikei_credit='---'"]
 [wait time=10]
 [主人公伏目]

@@ -126,7 +126,7 @@
 ; 背景お稽古部屋？
 ;【背景】主人公邸 お稽古部屋
 [layopt layer=fix visible=false]
-[image name="junbi" layer=29 x=1 y=1 storage="bg/bg_okeiko.jpg" time=100]
+[image name="junbi" layer=29 x=0 y=0 storage="bg/bg_okeiko.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=100]

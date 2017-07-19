@@ -102,7 +102,7 @@
 [eval exp="sf.FButton='OFF'"]
 [position left=200 width=500 height=300 top=100 page=fore margint="50"]
 ;【背景】銀行 全画面背景
-[image layer=29 x=1 y=1 storage="bg/bg_zaizen_ginkou_mae.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_zaizen_ginkou_mae.jpg" time=1000 visible=true]
 ;【背景】町並み　ひとまず
 [bg method='crossfade' storage="../fgimage/bg/bg_zaizen_ginkou_mae1.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]

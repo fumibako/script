@@ -378,7 +378,7 @@ $('.saku1').remove();
 ;=========================================================================================================
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[image layer=29 x=1 y=1 storage="bg/anten.jpg" time=1300 visible=true]
+[image layer=29 x=0 y=0 storage="bg/anten.jpg" time=1300 visible=true]
 [wait time=10]
 [財前退場]
 [主人公退場]

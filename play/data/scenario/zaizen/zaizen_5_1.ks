@@ -8,7 +8,7 @@
 [eval exp="f.from_common_5_1 = 0"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 
 [call target=*start storage="tyrano.ks"]

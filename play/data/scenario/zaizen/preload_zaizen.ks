@@ -23,8 +23,8 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
-;[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
+;[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
@@ -42,7 +42,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////使用背景メモ　必要時に解放///////////////////
@@ -59,7 +59,7 @@
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 ;個別のプリロード画面が今はないのです
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////使用背景メモ　必要時に解放///////////////////
@@ -134,7 +134,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////使用背景メモ//////////////////
@@ -150,7 +150,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;///////////////////////////使用背景メモ///////////////////////////////////
@@ -172,7 +172,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////////////使用背景メモ///////////////////////////////////
@@ -212,7 +212,7 @@
 [endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////////////使用背景メモ/////////////////////////////////////////////////////////
@@ -229,7 +229,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////////////使用背景メモ/////////////////////////////////////////////////////////
@@ -251,7 +251,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;////////////////////使用背景メモ/////////////////////////////////////////////////////////
@@ -271,7 +271,7 @@
 ;上でプリロード。　分割が必要な時は解放
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ　///////////////////////////////
@@ -289,7 +289,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -305,7 +305,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -324,7 +324,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -342,7 +342,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -359,7 +359,7 @@
 ;======================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -376,7 +376,7 @@
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -392,7 +392,7 @@
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -410,7 +410,7 @@
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -429,7 +429,7 @@
 [endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -456,7 +456,7 @@
 [endif]
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -483,7 +483,7 @@
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_preload_zaizen.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
@@ -509,7 +509,7 @@
 ;================================================================================
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////////////////////////使用背景メモ///////////////////////////////////////////

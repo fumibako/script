@@ -139,7 +139,7 @@ $('.list').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風 ゆっくりと1300 間がないので1500
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1500 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1500 visible=true]
 [wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
