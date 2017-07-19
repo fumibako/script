@@ -11,7 +11,7 @@
 [stopbgm]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=500] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 

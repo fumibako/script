@@ -55,7 +55,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -75,7 +75,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_jiyuuwaku2.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_jiyuuwaku2.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -95,7 +95,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_asuka.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_asuka.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -115,7 +115,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_tokiko.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_tokiko.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -135,7 +135,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -155,7 +155,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -175,7 +175,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_akebono.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_akebono.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -195,7 +195,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_itokomiya.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_itokomiya.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -215,7 +215,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -251,7 +251,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -289,7 +289,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -328,7 +328,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg" time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 [font color = navy]
@@ -368,7 +368,7 @@
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg" time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -406,7 +406,7 @@
 ;機能ボタン消去
 [clearfix]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kuroda.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_kuroda.jpg" time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
