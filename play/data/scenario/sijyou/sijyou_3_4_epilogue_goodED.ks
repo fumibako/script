@@ -44,7 +44,7 @@ $('.list').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;【登場】四条
@@ -212,7 +212,7 @@ $('.junbi_girl').remove();
 @layopt layer=message0 visible=false
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面

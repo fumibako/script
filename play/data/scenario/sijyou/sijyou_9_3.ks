@@ -194,7 +194,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [eval exp="sf.FButton='OFF'"]
 [layopt layer=29 visible=true]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=500]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -910,7 +910,7 @@ _　として成長しないといけないのだわ）[p]
 [layopt layer=fix visible=false]
 [playse storage=mizu_ike.ogg loop=false]
 [layopt layer=29 visible=true]
-[image layer=29 name="kakusi" x=1 y=1 storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
+[image layer=29 name="kakusi" x=0 y=0 storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;[四条アップ]は登場してるときしか使ったことないのでここで準備

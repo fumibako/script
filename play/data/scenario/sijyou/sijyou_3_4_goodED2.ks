@@ -58,7 +58,7 @@
 ;===============================================================
 ;【背景】青空に桜
 [if exp="f.flag_replay == true"]
-[image layer=1 x=1 y=1 storage="bg/bg_sakura_sepia.jpg" time=1000 visible=true]
+[image layer=1 x=0 y=0 storage="bg/bg_sakura_sepia.jpg" time=1000 visible=true]
 [wait time=10]
 [else]
 [bg storage="../fgimage/bg/bg_sakura_sepia.jpg" time=100]
@@ -77,7 +77,7 @@
 ;===============================================================
 ;【背景】思い出（花
 [if exp="f.flag_replay==true"]
-[image layer=1 x=1 y=1 storage="bg/bg_omoide_sepia.jpg" time=1000 visible=true]
+[image layer=1 x=0 y=0 storage="bg/bg_omoide_sepia.jpg" time=1000 visible=true]
 [wait time=10]
 [else]
 [bg storage="../fgimage/bg/bg_omoide_sepia.jpg" time=500]
@@ -90,7 +90,7 @@
 ;===============================================================
 [font color=white size=27]
 ;背景変更:黒茶・和紙風
-[image name=end layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image name=end layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 ;===============================================================
 幸せは信じれば巡ってくる。[r]

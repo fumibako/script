@@ -17,7 +17,7 @@
 [wait time=10]
 [背景_料亭風の屋内（昼)]
 ;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
+[image layer=13 x=0 y=0 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -313,7 +313,7 @@
 ・・・・・・[p]
 [背景_料亭風の屋内（昼)]
 ;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
-[image layer=13 x=1 y=1 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
+[image layer=13 x=0 y=0 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 ;==================
 ;四条登場
@@ -1090,7 +1090,7 @@
 [暗転]
 [fadeoutbgm time=3000]
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
-[image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg " time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/ bg_prologue.jpg " time=1000 visible=true]
 ;=================================================================================_
 *seen15
 ;↓実装時は後半へ飛ぶ 

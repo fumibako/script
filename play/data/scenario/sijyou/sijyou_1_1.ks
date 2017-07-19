@@ -70,7 +70,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [freeimage layer = 29]
 [layopt layer=29 visible=true]
 ;背景変更:手紙
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/nengajou_sijyou.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/B4nFWraU42/nengajou_sijyou.jpg" time=500]
 [resetfont]
 ;メッセージレイヤを年賀状用に設定変更
 [position vertical=true]

@@ -16,7 +16,7 @@
 [wait time=50]
 [freeimage layer = 1]
 [wait time=10]
-[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]

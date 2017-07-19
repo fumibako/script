@@ -176,7 +176,7 @@ $('.saku1').remove();
 ;【背景】主人公邸 庭の見える部屋：昼
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false]
-[image name="junbi" layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=100]
+[image name="junbi" layer=29 x=0 y=0 storage="bg/room_niwa.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=50]

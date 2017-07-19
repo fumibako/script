@@ -111,7 +111,7 @@
 [layopt layer=fix visible=false]
 ;【SE】鳥たち（複数の鳥の声）　適当なSEで合間を誤魔化す
 [playse storage=tori_yatyou.ogg loop=false ]
-[image layer=29 x=1 y=1 storage="bg/bg_ryoutei.jpg" time=1000]
+[image layer=29 x=0 y=0 storage="bg/bg_ryoutei.jpg" time=1000]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 ;○解決の知らせ→料亭などで落ち合うことに。

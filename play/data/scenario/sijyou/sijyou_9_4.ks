@@ -18,7 +18,7 @@
 [wait time=50]
 [freeimage layer = 1]
 [wait time=10]
-[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 ;全画面テキストから開始時に文字が表示されない場合があるため、↓追記します(◆jsYiJcqRkk
 @layopt layer=message0 visible=true
 [current layer="message0"]

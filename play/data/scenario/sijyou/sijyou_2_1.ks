@@ -218,7 +218,7 @@ $('.bg1').remove();
 [layopt layer=message0 visible=false]
 ;メッセージレイヤを全画面用に設定変更
 [layopt layer=13 visible=true]
-[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=1000]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=1000]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [layopt layer=message0 visible=true]

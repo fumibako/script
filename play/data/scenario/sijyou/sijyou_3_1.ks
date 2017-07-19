@@ -474,7 +474,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[image layer=29 x=1 y=1 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 [font color=white size=27]
 [sp]――後日。[r]
 [sp]庭の沈丁花が香る、暖かな昼どき。[r]
@@ -1122,7 +1122,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
 [背景_黒茶・和紙風]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
-[image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/ bg_prologue.jpg" time=1000 visible=true]
 @jump storage=sijyou/sijyou_3_1b.ks target=first
 ;続編に飛ぶ
 [イベントシーン終了]

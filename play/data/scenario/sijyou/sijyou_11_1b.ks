@@ -299,7 +299,7 @@ $(".nerine").css("opacity",0.5);
 *seen3
 ;【テキスト全画面】 裏で画面構成 ;[新聞] test_bg_sinbun.jpg bg_prologue_dark.jpg　bg_prologue.jpg
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
-[image layer=29 x=1 y=1 storage="bg/ bg_prologue.jpg " time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/ bg_prologue.jpg " time=1000 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -393,7 +393,7 @@ $(".nerine").css("opacity",0.5);
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;bg_prologue.jpg　anten.jpg
-[image layer=29 x=1 y=1 zindex=3 storage="bg/anten.jpg" time=50 visible=true]
+[image layer=29 x=0 y=0 zindex=3 storage="bg/anten.jpg" time=50 visible=true]
 [wait time=50]
 [image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=1 top=-85 time=1000 wait=false opacity=]
 ;うっすら

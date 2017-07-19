@@ -15,7 +15,7 @@
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=500]
 [wait time=50]
 [プリロード画面消去]
 [wait time=50]
@@ -47,7 +47,7 @@
 
 [resetfont]
 ;////////////先に登場させておく////////////
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_sisiodosi.jpg" time=1000]
+[image layer=29 x=0 y=0 storage="bg/B4nFWraU42/bg_sisiodosi.jpg" time=1000]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -221,7 +221,7 @@ _　ございます」[p]
 [layopt layer=29 visible=true]
 ;ボタンを非表示
 [layopt layer=fix visible=false]
-[image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_omoide.jpg" time=500]
 ;回想シーンのため【退場】四条
 [四条退場]
 [if exp="sf.BGM=='ON'"]
@@ -340,7 +340,7 @@ _　ございます」[p]
 [layopt layer=29 visible=true]
 ;ボタンを非表示
 [layopt layer=fix visible=false]
-[image layer=29 x=1 y=1 storage="bg/bg_omoide.jpg" time=500]
+[image layer=29 x=0 y=0 storage="bg/bg_omoide.jpg" time=500]
 [主人公ポーズ通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -402,7 +402,7 @@ _　ございます」[p]
 [autosave]
 ;//////////////lay13//ここから準備_キャラmodでもいいかもしれない////////////
 [layopt layer=13 visible=true]
-[image name="toujyou_mae" layer=13 x=1 y=1 storage="bg/bg_flower_hagi.jpg" time=500]
+[image name="toujyou_mae" layer=13 x=0 y=0 storage="bg/bg_flower_hagi.jpg" time=500]
 [wait time=50]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -501,7 +501,7 @@ _　か……？）[p]
 [autosave]
 ;//////////////lay13//ここから準備_キャラmodでもいいかもしれない////////////
 [layopt layer=13 visible=true]
-[image name="toujyou_mae" layer=13 x=1 y=1 storage="bg/bg_teien_ishidatami.jpg" time=500]
+[image name="toujyou_mae" layer=13 x=0 y=0 storage="bg/bg_teien_ishidatami.jpg" time=500]
 [wait time=50]
 ;【背景】庭園
 [背景_庭園(昼)]

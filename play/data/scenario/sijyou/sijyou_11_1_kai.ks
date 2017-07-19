@@ -31,7 +31,7 @@
 [背景_料亭風の屋内（昼)]
 ;[chara_mod name="bg" storage="bg/bg_ryoutei.jpg"]
 [layopt layer=13 visible=true]
-[image name="jyunbi" x=1 y=1 layer=13 storage="bg/bg_ryoutei.jpg" time=100]
+[image name="jyunbi" x=0 y=0 layer=13 storage="bg/bg_ryoutei.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [四条ベース羽織]
 [四条憂い]
