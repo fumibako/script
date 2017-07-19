@@ -62,7 +62,7 @@ $('.list').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [主人公退場]
 @layopt layer=message2 page=fore visible = false
 [bg storage="../fgimage/bg/bg_prologue.jpg" time=1000]
@@ -84,7 +84,7 @@ $('.list').remove();
 
 ;=========================================================================
 ;【背景】洋館内装　スマホでみたときの改行修正済　pcからだと間があるかもしれません（scpt担2
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/youkannaisou.jpg" time=1000 visible=true]
 [iscript]
 $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 [endscript]
@@ -112,7 +112,7 @@ $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 ;=========================================================================
 ;【背景】　ラジオ　
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[image name="radio" layer=29 x=1 y=1 storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1200 visible=true]
+[image name="radio" layer=29 x=0 y=0 storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1200 visible=true]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/hujieda_rajio.jpg" time=1000]
 ;[wait time=10]

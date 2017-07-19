@@ -9,6 +9,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
+[wait time=10]
 [if exp="f.flag_replay == true"]
 ;[bg storage="toumei.gif" time=1]
 [endif]

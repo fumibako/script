@@ -8,8 +8,10 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸 お稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=30]
+[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=30]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -81,12 +83,12 @@
 #
 [主人公目閉]
 ;時間経過　少し暗めのお稽古部屋
-[chara_mod name="bg" storage="bg/bg_okeiko_anten.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_okeiko_anten.jpg" time=1000]
 ;わたしは琴に向かい、[sp]最近よく鳥文の君様のことを考えています。[r]を弾くしばらく弾き続けた。[p]
 
 私は、しばらく[ruby text=こと]箏を弾き続けた。[p]
 
-[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
 [主人公目通常]
 まもなくして、ふわっと[ruby text=こと]箏の上に鳩が止まった。[p]
 ;端に上に　どちらか
@@ -215,7 +217,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 #
 ;【背景】空
-[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_bluesky.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 [主人公目伏柔]
 私は、鳩の飛び立った空を見上げた。[p]

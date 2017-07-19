@@ -11,6 +11,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
+[wait time=10]
 *start
 [stopbgm]
 [if exp="tf.test_hujieda==true"]
@@ -64,7 +65,7 @@ $('.list').remove();
 [layopt layer=29 visible=true]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】青空に桜
-[image layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
 [bg storage="../fgimage/bg/bg_EDsakura.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
@@ -90,7 +91,7 @@ $('.list').remove();
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-;[image layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=1000 visible=true]
+;[image layer=29 x=0 y=0 storage="bg/room_niwa.jpg" time=1000 visible=true]
 ;[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;【背景】主人公邸 庭の見える部屋：昼
 [bg storage="../fgimage/bg/room_niwa.jpg" time=50]
@@ -504,9 +505,9 @@ $('.list').remove();
 [layopt layer=29 visible=true]
 [eval exp="sf.FButton='OFF'"]
 ;【背景】青空に桜
-;[image name=end layer=29 x=1 y=1 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
+;[image name=end layer=29 x=0 y=0 storage="bg/bg_EDsakura.jpg" time=1000 visible=true]
 ;【背景】ﾌﾟﾛﾛーｸﾞ どちらか選んでください
-[image name=end  layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image name=end  layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg"]

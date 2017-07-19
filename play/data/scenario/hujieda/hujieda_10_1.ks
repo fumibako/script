@@ -9,6 +9,8 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】 主人公部屋(昼)
  [背景_庭]
 [イベントシーン構築ボタン無し版]
@@ -169,7 +171,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;【背景】 全画面背景_番傘の女性
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/hujieda_haha.jpg" time=1200 visible=true]
+[image layer=29 x=0 y=0 storage="bg/B4nFWraU42/hujieda_haha.jpg" time=1200 visible=true]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [layopt layer=message0 visible=true]
@@ -199,7 +201,7 @@
 ;==========================
 ;【背景】 全画面背景_bg_prologue.jpg　ここでﾐﾙｸﾎｰﾙ関連に切り替えないとおかしい
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/mirukutennai_zengamen.jpg" time=1200 visible=true]
+[image layer=29 x=0 y=0 storage="bg/B4nFWraU42/mirukutennai_zengamen.jpg" time=1200 visible=true]
 ;==========================
 そんな折、学生達の間で人気だというミルクホールに[r]
 行ってみたくて、友人達とこっそり行ったんだ。[p]
@@ -251,7 +253,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;【背景】 全画面背景＿空
 [eval exp="f.haikei_credit=''"]
-[image layer=29 x=1 y=1 storage="bg/hujieda_sky1.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/hujieda_sky1.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;[layopt layer=message0 visible=true]
@@ -372,12 +374,12 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:芙蓉
-[image layer=29 x=1 y=1 storage="bg/bg_hujieda_fuyou.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_hujieda_fuyou.jpg" time=1000 visible=true]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [layopt layer=message0 visible=true]
 ;一瞬裏がみえるの防止背景
-[chara_mod name="bg" storage="bg/bg_hujieda_fuyou.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_hujieda_fuyou.jpg" time=50]
 ;テキスト全画面
 [font color=white size=27]
 ;====================================================================================

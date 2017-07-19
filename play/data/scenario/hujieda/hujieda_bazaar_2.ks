@@ -9,8 +9,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】ﾁｬﾘﾃｨｰ会場門前
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [プリロード画面消去]
 ;最大全角３１文字×４行
@@ -21,12 +23,12 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:華族会館全画面
-[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=50 visible=true]
+[image layer=29 x=0 y=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=50 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore]
 ;【背景】ﾁｬﾘﾃｨｰ会場門前
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity6.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -75,7 +77,7 @@
 
 ;==============================================================================
 ;【背景】;野点傘と縁談の背景
-[chara_mod name="bg" storage="bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuraginomiya_yaten.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;==============================================================================
 *seen1
@@ -134,7 +136,7 @@
 #
 ;==============================================================================
 ;【背景】演奏会場１うらぐち
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity51.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity51.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;==============================================================================
 *seen2
@@ -143,7 +145,7 @@
 #
 ;==============================================================================
 ;【背景】準備中の廊下
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity8.jpg" time=1100]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity8.jpg" time=1100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;==============================================================================
 *seen3
@@ -163,7 +165,7 @@
 #
 ;==============================================================================
 ;【背景】二階への階段
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_cyarity7.jpg" time=1100]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity7.jpg" time=1100]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;==============================================================================
@@ -194,7 +196,7 @@
 #
 ;==============================================================================
 ;【背景】演奏会場2_近景
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou2.jpg" time=1200]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_hujieda_ensou2.jpg" time=1200]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;==============================================================================
 *seen5
@@ -204,7 +206,7 @@
 藤枝様は心の琴線に触れるような演奏をしていた。[p]
 #
 ;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ
-[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=1300 visible=true]
+[image layer=13 x=0 y=0 storage="bg/bg_hujieda_orugan.jpg" time=1300 visible=true]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 
@@ -219,7 +221,7 @@
 ;==============================================================================
 #
 ;【背景】演奏会場1_遠景
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1200]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_hujieda_ensou1.jpg" time=1200]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [藤枝ベース私服_楽譜無し]
 [藤枝微笑み]
@@ -272,12 +274,12 @@
 
 #
 ;【背景】ｲﾒｰｼﾞ背景　箏
-[image layer=13 x=1 y=1 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
+[image layer=13 x=0 y=0 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
 [wait time=300]
 [eval exp="f.haikei_credit=''"]
 
 ;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ　
-[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
+[image layer=13 x=0 y=0 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 #
@@ -392,7 +394,7 @@
 ;================================================================================
 #
 ;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ　
-[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
+[image layer=13 x=0 y=0 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;================================================================================
@@ -403,7 +405,7 @@
 
 ;================================================================================
 ;【背景】ｲﾒｰｼﾞ背景　箏
-[image layer=13 x=1 y=1 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
+[image layer=13 x=0 y=0 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
 [wait time=500]
 [eval exp="f.haikei_credit=''"]
 ;================================================================================
@@ -428,7 +430,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 ;イメージ背景削除
 [freeimage layer=13 time=600]
@@ -439,7 +441,7 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】演奏会場１ 
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou3.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_hujieda_ensou3.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -455,7 +457,7 @@
 
 
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 
 五日後[r]
@@ -477,7 +479,7 @@
 司会者が会場に立つと、藤枝様の紹介を始めた。[p]
 
 ;【背景】金屏風
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
 
@@ -527,7 +529,7 @@
 ;=========================================================================
 #
 ;【背景】ｲﾒｰｼﾞ背景ｵﾙｶﾞﾝ　
-[image layer=13 x=1 y=1 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
+[image layer=13 x=0 y=0 storage="bg/bg_hujieda_orugan.jpg" time=2000 visible=true]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;=========================================================================
@@ -539,7 +541,7 @@
 一曲目は"亜麻色の髪の乙女"[p]
 
 ;【背景】ｲﾒｰｼﾞ背景　箏
-[image layer=13 x=1 y=1 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
+[image layer=13 x=0 y=0 storage="bg/bg_hujieda_koto.jpg" time=1300 visible=true]
 [wait time=300]
 [eval exp="f.haikei_credit=''"]
 
@@ -557,7 +559,7 @@
 ;イメージ背景削除
 [freeimage layer=13 time=100]
 ;【背景】金屏風
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [暗転２終了]
 ;================================================================
@@ -600,7 +602,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -613,7 +615,7 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 ;【背景】金屏風
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [主人公ほほえみ]
 [freeimage layer = 29 time=1000]
@@ -664,7 +666,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -679,7 +681,7 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 ;【背景】演奏会場１ 
-[chara_mod name="bg" storage="bg/B4nFWraU42/bg_hujieda_ensou3_1.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_hujieda_ensou3_1.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [藤枝ベース私服]
 [藤枝微笑み]

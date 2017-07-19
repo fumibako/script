@@ -10,8 +10,10 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_hujieda.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】背景ミルクホール
-[chara_mod name="bg" storage="bg/bg_fujieda_piano_1.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [プリロード画面消去]
 ;=========================================================================
@@ -21,7 +23,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:
-[image layer=29 x=1 y=1 storage="bg/bg_fujieda_piano_1_1.jpg" time=50 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_fujieda_piano_1_1.jpg" time=50 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore]
@@ -189,13 +191,13 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 [藤枝退場]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;テキスト全画面
 [font color=white size=27]

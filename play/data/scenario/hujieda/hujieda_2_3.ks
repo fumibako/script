@@ -9,7 +9,9 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/ongakurensyuusitu.jpg" time=30]
+[freeimage layer = 1]
+[wait time=10]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ongakurensyuusitu.jpg" time=30]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
@@ -150,7 +152,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 [藤枝退場]
 ;メッセージレイヤを全画面用に設定変更
@@ -173,7 +175,7 @@
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -233,7 +235,7 @@
 [主人公目閉]
 [暗転]
 ;【背景】主人公邸 玄関　
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ほほえみ]
 ;============================================================================================
@@ -252,7 +254,7 @@
 ;============================================================================================
 [暗転２]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
 [暗転２終了]
 [layopt layer=fix visible=true]
 ;============================================================================================
@@ -291,7 +293,7 @@
 [主人公通常]
 ;【背景】観客席
 [eval exp="f.haikei_credit='　　'"]
-[chara_mod name="bg" storage="bg/hujieda_kyakuseki.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100]
 [暗転２終了]
 ;============================================================================================
 ;【立ち絵】主人公：真剣
@@ -312,7 +314,7 @@
 [eval exp="f.haikei_credit='　　'"]
 ;【背景】室内音楽堂（近景）
 [暗転２ storage="bg/situnaiongaku.jpg" time=1100]
-[chara_mod name="bg" storage="bg/situnaiongaku.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/situnaiongaku.jpg"]
 ;【立ち絵】主人公：真剣
@@ -408,7 +410,7 @@ $('.piano_base').remove();
 $('.piano_base_me').remove();
 [endscript]
 ;【変更】背景を暗転の中から表す（遠景）
-[chara_mod name="bg" storage="bg/situnaiongaku2.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50]
 ;会話ウィンドウを表示します。 
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 [wait time=10]
@@ -451,7 +453,7 @@ $('.piano_base_me').remove();
 [暗転２]
 ;【背景】観客席　暗転のほうがいいかも
 [eval exp="f.haikei_credit='　　'"]
-[chara_mod name="bg" storage="bg/hujieda_kyakuseki.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100]
 [暗転２終了]
 ;============================================================================================
 #
@@ -463,7 +465,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [eval exp="f.haikei_credit='　　'"]
 [暗転２ storage="bg/situnaiongaku.jpg" time=1300]
-[chara_mod name="bg" storage="bg/situnaiongaku.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/situnaiongaku.jpg"]
 [暗転２終了]
@@ -607,7 +609,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [暗転２]
 ;【背景】ピアノホール（遠景）
-[chara_mod name="bg" storage="bg/situnaiongaku2.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50]
 [藤枝退場]
 [主人公目通常]
 [主人公口ほほえみ]
@@ -634,7 +636,7 @@ $('.piano_base_me').remove();
 ;==============================================================================
 ;【背景】室内音楽堂（近景）
 [暗転２ storage="bg/situnaiongaku.jpg" time=1100]
-[chara_mod name="bg" storage="bg/situnaiongaku.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/situnaiongaku.jpg"]
 ;【立ち絵】藤枝:真剣
@@ -671,7 +673,7 @@ $('.piano_base_me').remove();
 [暗転２]
 [藤枝退場]
 ;【背景】主人公邸 玄関 　主人公退場とメッセージ消すのは構築遅いので、やめよう
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
 [暗転２終了]
@@ -696,7 +698,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
- [chara_mod name="bg" storage="bg/room_niwa.jpg" time=1000]
+ [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
  [主人公通常]
 [暗転２終了]
@@ -722,7 +724,7 @@ $('.piano_base_me').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1200 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1200 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -758,7 +760,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 ;【背景】主人公邸 庭の見える部屋：夜
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=1000]
 ;============================================================================================
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]

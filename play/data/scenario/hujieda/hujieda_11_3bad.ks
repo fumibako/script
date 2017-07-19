@@ -8,6 +8,8 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】プロローグ
 [bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=30]
 [wait time=10]

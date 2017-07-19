@@ -4,6 +4,8 @@
 [setreplay name="replay_hujieda_badED_scene" storage="hujieda/hujieda_11_3.ks" target="start"]
 *replay_hujieda_badED_scene2
 *replay_hujieda_11_3
+[freeimage layer = 1]
+[wait time=10]
 
 [stopbgm]
 [iscript]
@@ -181,7 +183,7 @@ $('.list').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風  [テキスト全画面白文字]bg/bg_prologue_dark.jpg
-[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 [主人公憂い]
 ;メッセージレイヤを全画面用に設定変更

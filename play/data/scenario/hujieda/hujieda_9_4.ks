@@ -9,9 +9,11 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】:町並み
 ;背景は、サブルーチンを読んでから(callの後)だと安全
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=30]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=30]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -249,7 +251,7 @@
 [eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by＠名無しさん１'"]
 [表示準備 storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg" layer=29]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukuho-ru2.jpg" time=50]
 [主人公通常]
 [freeimage layer=29 time=200]
 ;ふわっと表示依頼
@@ -263,7 +265,7 @@
 
 ;==============================================================================
 ;看板
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/mirukuho-ru3.jpg" time=1200]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukuho-ru3.jpg" time=1200]
 [eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by＠名無しさん１'"]
 ;==============================================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -275,7 +277,7 @@
 ;==============================================================================
 ;【背景】窓
 [eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
 ;【アニメイメージ】キラキラ透過素材 layer=1
 [image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1000 left=-300 visible=true]
 ;==============================================================================
@@ -304,7 +306,7 @@ $('.oto').remove();
 [layopt layer=fix visible=true]
 ;窓から見た白っぽいミルクホール_ピアノ
 [eval exp="f.haikei_credit=''"]
-[chara_mod name="bg" storage="bg/bg_fujieda_piano_0.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_0.jpg" time=1000]
 ;jｓYiJｃｑRkkさんのピアノ画像、立ち絵表示あり
 [表示準備 storage="bg/bg_fujieda_piano_0.jpg" layer=13]
 ;==============================================================================
@@ -335,7 +337,7 @@ $('.oto').remove();
 ;==============================================================================
 ;窓
 [eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
-[chara_mod name="bg" storage="bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
 ;==============================================================================
 [fadeoutbgm time=3000]
 
