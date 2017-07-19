@@ -124,7 +124,7 @@
 [fadeoutse time=2000]
 [fadeoutbgm time=3000]
 [layopt layer=fix visible=false]
-[image name="junbi" layer=29 x=1 y=1 storage="bg/room_niwa.jpg" time=2000]
+[image name="junbi" layer=29 x=0 y=0 storage="bg/room_niwa.jpg" time=2000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [bg method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=100]

@@ -293,7 +293,7 @@ $('.list').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image name=end layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image name=end layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;一瞬裏がみえるの防止背景
 [bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
 [wait time=10]

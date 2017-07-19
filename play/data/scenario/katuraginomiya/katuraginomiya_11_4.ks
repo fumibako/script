@@ -20,7 +20,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風_暗
-[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
 [bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50]
@@ -173,7 +173,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風_暗
-[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
 [bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50]
@@ -280,7 +280,7 @@
 ;==========================================================================
 ;【背景】臣民教育 ﾚｲﾔｰ13に表示
 ;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_sisou.jpg" time=50]
-[image layer=13 x=1 y=1 storage="bg/B4nFWraU42/katuragi_sisou.jpg" time=1000 visible=true]
+[image layer=13 x=0 y=0 storage="bg/B4nFWraU42/katuragi_sisou.jpg" time=1000 visible=true]
 [eval exp="f.haikei_credit='photo by ＠名無しさん１'"]
 ;==========================================================================
 #
@@ -340,7 +340,7 @@
 ;==========================================================================
 ;【背景】蟷螂団 ﾚｲﾔｰ13に表示
 ;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_kamakiri.jpg" time=50]
-[image layer=13 x=1 y=1 storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=1000 visible=true]
+[image layer=13 x=0 y=0 storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=1000 visible=true]
 [eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
 ;==========================================================================
 *seen7

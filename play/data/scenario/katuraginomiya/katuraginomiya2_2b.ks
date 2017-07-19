@@ -19,7 +19,7 @@
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風_暗
-[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】執務室 
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" time=600]
@@ -140,7 +140,7 @@ _  　葛城宮家執務室。[p]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風bg_prologue_dark.jpg　bg_prologue.jpg
-[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 ;一瞬裏がみえるの防止背景
 [bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=50]
 [葛城宮退場]

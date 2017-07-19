@@ -103,7 +103,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
@@ -397,7 +397,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;背景切り替わりでセーブ等はさせない
 [layopt layer=fix visible=false]
 ;背景切り替わってないときにメッセージ表示防止・次画像↓
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=500 visible=true]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=500 visible=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext name=".junbi_girl" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50]
@@ -431,7 +431,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [fadeoutbgm time=3000]
 ;メッセージ＆ボタンを消してから余韻をもって二人同時に消えてください
 [イベントシーン終了]
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
 [葛城宮退場]
 [wait time=20]
 [stopbgm]

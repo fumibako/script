@@ -174,7 +174,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -236,7 +236,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -250,7 +250,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 皇后陛下に招待された離宮に近づくにつれて、[r]
 ますます緊張が高まり、不安な気持ちで[r]
 いっぱいになった。[p]
-;[image layer=29 x=1 y=1 storage="bg/B4nFWraU42/gosyo.jpg" time=1000 visible=true]
+;[image layer=29 x=0 y=0 storage="bg/B4nFWraU42/gosyo.jpg" time=1000 visible=true]
 ;[wait time=10]
 
 ;【侍従】[名前]姫様、～(労いの言葉)です。　謹んでご案内奉ります。
@@ -393,7 +393,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;==============================================================================
 ;【テキスト全画面】　茶室 [テキスト全画面白文字無背景]　裏で画面構成
 [layopt layer=fix visible=false]
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/tyasitu.jpg" time=1200 visible=true]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/tyasitu.jpg" time=1200 visible=true]
 [eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo'"]
 ;[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;メッセージレイヤを全画面用に設定変更
@@ -488,7 +488,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-[image layer=29 x=1 y=1 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -507,7 +507,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [resetfont]
 [freeimage layer = 29 time=1000]
 ;一瞬手紙の後ろがみえるので　手紙皇后さま→侍従
-[image layer=29 x=1 y=1 storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=50]
+[image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=50]
 ;機能ボタン表示
 [layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更
