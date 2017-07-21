@@ -12,6 +12,8 @@
 [wait time=50]
 ;背景:町並み
 [chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg storage="../fgimage/bg/bg_machi.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
