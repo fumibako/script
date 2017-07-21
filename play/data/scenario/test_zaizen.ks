@@ -25,6 +25,9 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;test
 ;=============================================
 [chara_mod name="bg" storage="bg/title.jpg"]
+[wait time=10]
+[bg storage="../fgimage/bg/title.jpg" time=0]
+[wait time=10]
 ;test中フラグ　一時変数 利用します
 [eval exp="tf.test_zaizen=true"]
 *page_0
