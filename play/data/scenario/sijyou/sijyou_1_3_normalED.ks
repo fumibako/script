@@ -56,7 +56,7 @@
 「はい」[r]
 移動します。[p]
 [cm]
-@jump target=*seen_end
+@jump target=*seen4
 [s]
 
 *jump_no1
