@@ -75,6 +75,11 @@ console.info("f.katuraginomiya_fumi_inou=", this.kag.stat.f.katuraginomiya_fumi_
 [endscript]
 [endmacro]
 
+[macro name="暗転１"]
+[bg storage="../fgimage/bg/anten.jpg" time=100 method=%method | &f.bg_method]
+[eval exp="f.haikei_credit=''"]
+[endmacro]
+;======
 ;◆【[暗転２ clegit=true]】
 [macro name=暗転２]
 ;名前欄消去
