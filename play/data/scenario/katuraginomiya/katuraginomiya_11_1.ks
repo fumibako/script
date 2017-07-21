@@ -103,6 +103,12 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ、そうだ」[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+[if exp="tf.test_katuraginomiya == true"]
+;シナリオテスト時は選択肢へ
+[葛城宮退場]
+@jump target=seen1
+[endif]
+
 [if exp="f.para_katuraginomiya_koukando < 40"]
 ;バッドシナリオここから
 #
