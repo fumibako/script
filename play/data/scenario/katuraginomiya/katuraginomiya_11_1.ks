@@ -367,8 +367,9 @@
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 
 ;一瞬、裏背景がみえるの防止
-[bg storage="../fgimage/bg/B4nFWraU42/bara_image.jpg" time=50 method=%method | &f.bg_method]
+[bg storage="../fgimage/bg/B4nFWraU42/bara_image.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+
 [freeimage layer=29 time=600]
 [wait time=10]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝スクリプト担当＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
