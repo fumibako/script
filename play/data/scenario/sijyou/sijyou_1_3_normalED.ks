@@ -281,7 +281,7 @@
 #
 ――その後、結納の日取りも三月末と決まり[r]
 [sp]何気ない日常が目に鮮やかに映るようになった。[p]
-[暗転]
+[暗転１]
 [暗転２]
 [iscript]
 $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
