@@ -25,7 +25,9 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 ;test
 ;=============================================
 [chara_mod name="bg" storage="bg/title.jpg"]
-
+[wait time=10]
+[bg storage="../fgimage/bg/title.jpg" time=0]
+[wait time=10]
 [cm]
 [layopt layer=26 visible=true]
 [wait time=10]
