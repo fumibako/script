@@ -481,10 +481,10 @@
 ;ここはマクロ案部です。さすがに本体にかかわるマクロには書くけませんので、もしなにかあればこちらで検証&試作して見せます
 
 ;四条用背景　一括変換　記録にはcg/flg等を使う
-[macro name="暗転１"]
-[bg storage="../fgimage/bg/anten.jpg" time=100 method=%method | &f.bg_method]
-[eval exp="f.haikei_credit=''"]
-[endmacro]
+;[macro name="暗転１"]
+;[bg storage="../fgimage/bg/anten.jpg" time=100 method=%method | &f.bg_method]
+;[eval exp="f.haikei_credit=''"]
+;[endmacro]
 [macro name="背景セピア化"]
 [iscript]
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
