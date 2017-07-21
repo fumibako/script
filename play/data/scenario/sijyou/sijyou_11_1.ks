@@ -280,6 +280,7 @@
 ;共通はラベルcommonへ　どこに飛ぶかわかるように一部はここに書く
 *華衣について
 [resetfont]
+[暗転]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
