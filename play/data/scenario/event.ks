@@ -4,16 +4,9 @@
 [freeimage layer = 27]
 @layopt layer=message1 page=fore visible = false
 ;背景チラ見え防止
-[bg storage="../fgimage/bg/toumei.gif" time=0]
-;背景（タイトル画像）表示準備【将来的には[bg]タグへ置き換え予定です】
+;[bg storage="../fgimage/bg/toumei.gif" time=0]
 [freeimage layer=1]
 [wait time=10]
-[chara_new name="bg" storage="../fgimage/toumei.gif"]
-[wait time=10]
-[chara_show left=1 top=0 layer=1 name="bg" time=0]
-[wait time=10]
-
-
 [if exp="f.event_type=='talk'"]
 [freeimage layer = 26]
 
@@ -511,6 +504,7 @@ TG.stat.stack["call"] = [];
 [freeimage layer = 22]
 ;【背景】お稽古部屋
 [bg storage="../fgimage/bg/bg_okeiko.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [イベントシーン構築ボタン無し版]
@@ -676,6 +670,7 @@ TG.stat.stack["call"] = [];
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 ;【背景】お稽古部屋
 [bg storage="../fgimage/bg/bg_okeiko.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 
@@ -736,6 +731,7 @@ TG.stat.stack["call"] = [];
 ;[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
 ;【背景】お稽古部屋
 [bg storage="../fgimage/bg/bg_okeiko.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 
@@ -896,6 +892,7 @@ TG.stat.stack["call"] = [];
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 ;【背景】お稽古部屋
 [bg storage="../fgimage/bg/bg_okeiko.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 
@@ -1006,6 +1003,7 @@ TG.stat.stack["call"] = [];
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 ;【背景】お稽古部屋
 [bg storage="../fgimage/bg/bg_okeiko.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 
