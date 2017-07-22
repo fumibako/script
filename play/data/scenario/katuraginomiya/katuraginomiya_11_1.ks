@@ -12,7 +12,7 @@
 [wait time=10]
 ;【背景】バラ園
 [eval exp="f.haikei_credit='I9IhvvVdPo'"]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600 wait=true]
 [イベントシーン構築ボタン無し版]
 ;登場人物の設定
 [主人公ポーズ通常]
@@ -130,7 +130,7 @@
 ;[bg method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=100]
 ;[eval exp="f.haikei_credit=''"]
 ;背景変更:和紙風 水色　上がよければコメントアウトをしてください
-[bg method='crossfade' storage="../fgimage/bg/plane_mizuiro.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/plane_mizuiro.jpg" time=100 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;[link]タグでの選択肢例
@@ -155,7 +155,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 ;【背景】バラ園
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
 ;＝＝＝システムメッセージ。変更してください＝＝＝＝＝
@@ -179,7 +179,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 ;【背景】バラ園
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/baraen.jpg" layer=13]
 ;＝＝＝システムメッセージ。変更してください・・・＝＝＝＝＝
