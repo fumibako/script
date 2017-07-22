@@ -9,7 +9,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】パーティ会場
-[bg method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600 wait=true]
 ;[eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #
@@ -117,7 +117,7 @@ jumpします。[p]
 [主人公目伏]
 ;憂いまでの自然な切り替え表情
 ;【背景］パーティ会場控室
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [暗転２終了]
 ;==============================================================================
@@ -345,7 +345,7 @@ jumpします。[p]
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=600]
@@ -680,7 +680,7 @@ jumpします。[p]
 
 
 ;================================テストメニューを抜けた時点で表示されませんが後で削除します===============================
-[if exp="tf.test_zaizen==true"]
+[if exp="tf.test_zaizen == true"]
 #
 ;演出の繋がりを知りたいので
 [er]
