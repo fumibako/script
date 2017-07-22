@@ -10,7 +10,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -87,7 +87,7 @@
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [主人公退場]
 ;【背景】放送局
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/housoukyoku.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/housoukyoku.jpg" time=50 wait=true]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 ;ラジオ放送局
 [イベントシーン構築ボタン無し版枠茶色]
@@ -226,7 +226,7 @@ $('.ct').remove();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50" opacity=0]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]　
 ;テキスト全画面
 [font color=white size=27]
