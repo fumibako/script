@@ -8,7 +8,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】ﾌﾟﾛﾛーｸﾞ
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit=' '"]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです===============================
@@ -22,7 +22,7 @@
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】執務室 
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
