@@ -21,7 +21,10 @@
 [endif]
 ;==========================================================================================
 *scene1
+[freeimage layer = 1]
+[wait time=10]
 [背景_庭]
+[wait time=10]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
 ;[chara_show left=1 top=391 layer=10 name="message_bg"]
@@ -173,7 +176,8 @@
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 ;【背景】暗転
-[chara_mod name="bg" storage="toumei.gif" time=2000]
+[bg storage="toumei.gif" time=2000]
+[wait time=10]
 ;【SE】軽い足音（フェードアウト）
 [playse storage=girl_out_walk.ogg loop=false ]
 ……[p]
@@ -202,7 +206,8 @@
 [wait time=500]
 
 ;【背景】暗転終了、庭背景フェードイン
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=2000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=2000]
+[wait time=10]
 ;【立ち絵】主人公：強気
 [主人公目パチ1回]
 [wait time=10]
@@ -327,7 +332,8 @@
 [eval exp="sf.FButton='OFF'"]
 
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
+[wait time=10]
 [call target=*start storage="macro_tati_kuroda.ks"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -360,7 +366,8 @@
 
 
 ;【背景】和室（黒田家） フェードイン
-[chara_mod name="bg" storage="bg/bg_kurodake.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_kurodake.jpg" time=500]
+[wait time=10]
 ;セーブ等ボタン配置
 [メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]

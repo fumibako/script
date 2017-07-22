@@ -25,6 +25,8 @@
 [endif]
 ;==========================================================================================
 [stopbgm]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸_庭
 [背景_庭]
 [wait time=10]
@@ -118,7 +120,8 @@
 「ええ。今行くわ、磯野」[p]
 
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば屋敷玄関背景
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopse]
 [主人公通常]
@@ -149,7 +152,8 @@
 *scene3
 
 ;【背景】青空（秋晴れ）又はフェードアウトのまま
-[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_bluesky.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 
 [主人公通常]
@@ -196,7 +200,8 @@
 *scene4
 
 ;【背景】公園の門フェードイン
-[chara_mod name="bg" storage="bg/bg_shinrinkouen_gate.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 
 ;【立ち絵】黒田：遠_考え中
@@ -297,7 +302,8 @@
 そう思ったとたんに近さを感じて緊張してしまい、顔を上げられなくなった。[p]
 
 ;【背景】紅葉
-[chara_mod name="bg" storage="bg/bg_kouyou_ussou.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_kouyou_ussou.jpg" time=500]
+[wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_10_3_scene5==undefined"]
 	[skipstop]
@@ -628,7 +634,8 @@
 *scene13
 
 ;【背景】紅葉　夕方
-[chara_mod name="bg" storage="bg/bg_kouyou_kaidan.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_kouyou_kaidan.jpg" time=500]
+[wait time=10]
 #
 見上げると、陽が傾きはじめている。[r]
 帰りの時間が近いと気づき、名残惜しく感じた。[p]
@@ -866,7 +873,8 @@
 #
 公園の門が見えてきた。[p]
 ;【背景】公園の門フェードイン
-[chara_mod name="bg" storage="bg/bg_shinrinkouen_gate_yuu.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate_yuu.jpg" time=500]
+[wait time=10]
 
 名残惜しさを感じつつも、黒田様の自然への情熱を目の当たりにして[r]
 少し疲れも感じていたので、ホッとする気持ちもあった――[p]

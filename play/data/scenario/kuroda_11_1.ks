@@ -22,7 +22,10 @@
 ;==========================================================================================
 *scene1
 [stopbgm]
+[freeimage layer = 1]
+[wait time=10]
 [背景_庭]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -52,7 +55,8 @@
 [endif]
 
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 ;==========================================================================================
 [主人公通常]

@@ -22,7 +22,9 @@
 ;==========================================================================================
 *scene1
 [stopbgm]
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=500]
+[freeimage layer = 1]
+[wait time=10]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
 [wait time=10]
 [プリロード画面消去]
 ;メッセージレイヤを全画面用に設定変更
@@ -74,7 +76,8 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [暗転２ storage="bg/room_niwa.jpg" clegit=true]
 ;【背景】主人公邸_庭、フェードイン
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[wait time=10]
 ;【テキスト枠】会話パート用 下部横長
 [イベントシーン構築ボタン無し版]
 ;=========================================================================================
@@ -257,7 +260,7 @@
 [eval exp="sf.FButton='OFF'"]
 [chara_mod name="message_bg" storage="toumei.gif"]
 [wait time=10]
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
 [wait time=10]
 ;◆テスト中は配列スキップ
 [if exp="tf.test_kuroda==true"]
@@ -286,7 +289,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;=========================================================================================
 ;黒田より年賀状
 ;【背景】年賀状画像（黒田）表示（こちらで作成予定：ハガキ上部に「謹賀新年」の文字と四葉のクローバーの押し花風画像が入るシンプルなもの。ハガキ下部に縦書下記テキスト挿入）
-[chara_mod name="bg" storage="bg/nengajou_kuroda.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/nengajou_kuroda.jpg" time=500]
 [wait time=10]
 ;メッセージレイヤを年賀状用に設定変更
 [position left=270 width=400 height=310 top=260 page=fore margint=0]
@@ -317,7 +320,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 
 ;画面切り替え、→通常会話パート
 ;【背景】主人公邸_庭、フェードイン
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=500]
 [wait time=10]
 ;【テキスト枠】会話パート用 下部横長
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
@@ -370,7 +373,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 「お忙しいでしょうに、お知らせくださるなんて……」[p]
 [fadeoutbgm time=3000]
 [wait time=10]
-[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=1000]
 [wait time=10]
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]

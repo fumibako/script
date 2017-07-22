@@ -10,13 +10,11 @@
 [wait time=10]
 [clearstack]
 [wait time=10]
-@layopt layer=1 visible=true
+;@layopt layer=1 visible=true
 
 ;◆ スチル表示:chara_modだとなぜかすぐ消えることがあるため[bg]タグに切り替えています
 [bg storage="../fgimage/bg/kuroda_normalED.jpg" time=500]
 [wait time=10]
-;[chara_new name="bg" storage="bg/kuroda_normalED.jpg"]
-;[chara_show left=1 top=1 layer=1 name="bg" time=500]
 [eval exp="f.haikei_credit='illustration　by　かいこ'"]
 [cg storage="kuroda_normalED.jpg"]
 [wait time=10]
@@ -93,7 +91,6 @@
 ;背景変更:手紙
 [bg storage="../fgimage/toumei.gif" time=1000]
 [wait time=10]
-;[chara_mod name="bg" storage="toumei.gif" time=1000]
 [image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
 [wait time=10]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
@@ -155,7 +152,6 @@
 [wait time=10]
 ;【背景】セピア背景
 [bg storage="../fgimage/bg/plane_sepia.jpg" time=1000]
-;[chara_mod name="bg" storage="bg/plane_sepia.jpg"]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 

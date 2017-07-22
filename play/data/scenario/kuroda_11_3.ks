@@ -22,6 +22,8 @@
 ;==========================================================================================
 *scene1
 [stopbgm]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸_庭
 [背景_庭]
 [wait time=10]
@@ -150,7 +152,8 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 ;【背景】町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=500]
+[wait time=10]
 [主人公目パチ1回]
 [wait time=10]
 

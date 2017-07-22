@@ -10,9 +10,11 @@
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_kuroda.jpg" time=500] 
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】玄関
-[chara_new name="bg" storage="bg/bg_genkan.jpg"]
-[chara_show left=1 top=1 layer=1 name="bg" time=0]
+[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [call target=*start storage="tyrano.ks"]
 
@@ -89,9 +91,9 @@ $(".rp_bt").remove();
 
 ;[chara_delete="message_bg"]
 ;【背景】ゆっくり暗転後、桜（全画面テキスト用）
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
 [wait time=10]
-[chara_mod name="bg" storage="bg/bg_EDsakura.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_EDsakura.jpg" time=1000]
 [wait time=10]
 [freeimage layer = 27]
 [freeimage layer = 28]

@@ -23,8 +23,11 @@
 ;==========================================================================================
 *scene1
 [stopbgm]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸_庭
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
 ;[chara_show left=1 top=391 layer=10 name="message_bg"]

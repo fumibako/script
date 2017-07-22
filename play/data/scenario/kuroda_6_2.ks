@@ -8,9 +8,11 @@
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_kuroda.ks"]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】黒背景
-[chara_mod name="bg" storage="toumei.gif"]
-;[eval exp="f.haikei_credit=''"]
+[bg storage="toumei.gif" time=500]
+[wait time=10]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]

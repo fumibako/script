@@ -16,8 +16,11 @@
 ;=============================================
 *scene1_1
 [freeimage layer = 24]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]

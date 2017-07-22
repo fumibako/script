@@ -51,8 +51,10 @@
 
 ;==========================================================================================
 *scene1
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
 [wait time=10]
 [プリロード画面消去]
 [wait time=50]
@@ -103,7 +105,8 @@
 ;==========================================================================================
 ;【背景】主人公邸_庭
 ;【背景】庭・夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;==========================================================================================
 ;【テキスト枠】会話パート用 下部横長
@@ -224,10 +227,10 @@ jumpします。[p]
 [wait time=10]
 ;==========================================================================================
 ;暗転
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
 [wait time=10]
 ;画面切り替え、【背景】黒背景又は和紙背景にぼんやりとした光が浮かび、キラキラ輝いている感じのもの（こちらで作成予定。作成に時間がかかりそうなら切り替え無し）
-[chara_mod name="bg" storage="bg/bg_komugi_moya.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
 [wait time=10]
 ;【SE】キラキラ
 [playse storage=shine.ogg loop=false ]
@@ -239,7 +242,7 @@ jumpします。[p]
 
 *scene3_end
 ;ゆっくり暗転
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg storage="toumei.gif" time=1000]
 [wait time=10]
 ;==========================================================================================
 ;【BGM】冬支度（悲しげ・筝曲）
@@ -250,7 +253,8 @@ jumpします。[p]
 [eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
 [endif]
 ;画面切り替え、【背景】「町並み」
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [wait time=10]
 ;==========================================================================================
@@ -319,7 +323,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 ;==========================================================================================
 ;暗転
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg storage="toumei.gif" time=1000]
 [wait time=10]
 [freeimage layer = 27]
 [freeimage layer = 28]
@@ -336,7 +340,8 @@ $('.junbi_girl').remove();
 *scene5
 ;黒田編開始
 ;【背景】黒背景又は黒っぽい和紙風
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1]
+[wait time=10]
 ;【テキスト枠】全画面、白フォント
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -371,11 +376,13 @@ $('.junbi_girl').remove();
 研究室も何もかも崩れ落ちる夢。[p]
 
 ;【効果】白フラッシュ3回
-[chara_mod name="bg_effect" storage="bg/white.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/white.jpg" time=50]
 [wait time=10]
-[chara_mod name="bg_effect" storage="toumei.gif" time=150]
+[bg method='crossfade' storage="toumei.gif" time=100]
 [wait time=30]
-[chara_mod name="bg_effect" storage="bg/white.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/white.jpg" time=50]
+[wait time=10]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1]
 [wait time=10]
 [freeimage layer = 2]
 
@@ -409,7 +416,8 @@ $('.junbi_girl').remove();
 ;画面:通常会話パート
 
 ;【背景】あればレトロな実験室　 フェードイン（見つからなければ、黒背景）
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg storage="toumei.gif" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;【テキスト枠】会話パート用 下部横長【茶色（男性視点用）】
 [イベントシーン構築ボタン無し版枠茶色]
@@ -540,7 +548,8 @@ $('.junbi_girl').remove();
 [chara_mod name="message_bg" storage="toumei.gif"]
 
 ;【背景】黒背景又は黒っぽい和紙風
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
+[wait time=10]
 ;【テキスト枠】全画面、白フォント
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -598,7 +607,8 @@ $('.junbi_girl').remove();
 [resetfont]
 
 ;【背景】黒背景又は黒っぽい和紙風
-[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
+[wait time=10]
 ;【テキスト枠】全画面、白フォント
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -632,12 +642,15 @@ $('.junbi_girl').remove();
 そのとき、ハラリと封筒から何かが机に落ちた。[p]
 
 ;暗転
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
+[wait time=10]
 ;【背景】黒背景の中心が温かく輝いている。封筒から麦の穂が机に落ちた様子が光の中に浮かび上がっている（こちらで素材を準備する予定です）
-[chara_mod name="bg" storage="bg/bg_komugi_moya.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
+[wait time=10]
 ;【SE】キラキラ
 [playse storage=shine.ogg loop=false ]
-[chara_mod name="bg" storage="bg/bg_komugi.jpg" time=3000]
+[bg method='crossfade' storage="../fgimage/bg/bg_komugi.jpg" time=3000]
+[wait time=10]
 ;【テキスト枠】会話パート用 下部横長
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -647,7 +660,8 @@ $('.junbi_girl').remove();
 [resetfont]
 
 ;【背景】あればレトロな実験室　 フェードイン（見つからなければ、黒背景）
-[chara_mod name="bg" storage="toumei.gif" time=1000]
+[bg storage="toumei.gif" time=1000]
+[wait time=10]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_brown.png"]
 ;メッセージレイヤを会話窓用に設定変更

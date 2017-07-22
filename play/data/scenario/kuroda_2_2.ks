@@ -58,8 +58,11 @@
 ;==========================================================================================
 *scene1
 [stopbgm]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸_庭
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -90,8 +93,7 @@
 [p]
 ;==========================================================================================
 ;【背景】フェードアウト→屋敷玄関背景
-[chara_mod name="bg" storage="toumei.gif" time=1000]
-
+[bg storage="toumei.gif" time=1000]
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
@@ -112,7 +114,7 @@
 ;==========================================================================================
 *scene2
 ;【背景】フェードアウト→屋敷玄関背景
-[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
 [wait time=10]
 ;==========================================================================================
 ;【立ち絵】黒田：ほほえみ
@@ -259,7 +261,8 @@
 （もう、磯野……）[p]
 ;==========================================================================================
 ;【背景】町並みフェードイン
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[wait time=10]
 ;==========================================================================================
 ;【立ち絵】黒田：通常(近
 [chara_mod name="kuroda_mayu" storage="kuroda/mayu_futuu_y1100.png" time=0]
@@ -438,7 +441,8 @@
 [wa]
 
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば小料理屋店内風背景
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
+[wait time=10]
 ;【立ち絵】黒田：通常
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
 [wait time=10]
@@ -476,7 +480,8 @@
 ;==========================================================================================
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば小料理屋店内風背景
 [eval exp="f.haikei_credit='photo by Omar + Kazumi Ovalle　http://www.flickr.com/photos/ovalle/4664496288/'"]
-[chara_mod name="bg" storage="bg/bg_koryouriya.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_koryouriya.jpg" time=1000]
+[wait time=10]
 ;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene11==undefined"]
 	[skipstop]
@@ -719,14 +724,17 @@
 [黒田退場]
 [wait time=10]
 ;暗転
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
+[wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 ;【背景】黒背景の中心が温かく輝いている。封筒から麦の穂が机に落ちた様子が光の中に浮かび上がっている（こちらで素材を準備する予定です）
-[chara_mod name="bg" storage="bg/bg_komugi_moya.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
+[wait time=10]
 ;【SE】キラキラ
 [playse storage=shine.ogg loop=false ]
-[chara_mod name="bg" storage="bg/bg_komugi.jpg" time=3000]
+[bg method='crossfade' storage="../fgimage/bg/bg_komugi.jpg" time=3000]
+[wait time=10]
 
 [whosay name="黒田 将貴" color="#7a65b2"]
 「これを見て、失敗を重ねても挑戦を続けようという力をいただきました。[r]
@@ -825,7 +833,8 @@
 [wait time=10]
 ;==========================================================================================
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば小料理屋店内風背景
-[chara_mod name="bg" storage="bg/bg_koryouriya.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_koryouriya.jpg" time=1000]
+[wait time=10]
 ;==========================================================================================
 [whosay name="黒田 将貴" color="#7a65b2"]
 「そしてご報告なのですが」[p]

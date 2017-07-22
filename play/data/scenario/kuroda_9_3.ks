@@ -23,6 +23,8 @@
 *scene1
 [freeimage layer = 24]
 [stopbgm]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸_庭
 [背景_庭]
 [wait time=10]
@@ -171,7 +173,8 @@ jumpします。[p]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 ;【背景】庭を明るめ加工（ふすまが開いて廊下の光が入る演出的な）
-[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=500]
+[wait time=10]
 [preload storage="data/fgimage/kuroda/base_haori.png"]
 [preload storage="data/fgimage/kuroda/base_haori_hohosome.png"]
 [wait time=200]
@@ -210,7 +213,8 @@ jumpします。[p]
 *scene3
 
 ;【背景】暗転黒背景、会話ウィンドウは残る
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500]
+[wait time=10]
 ;【立ち絵】主人公：下がり眉伏目（不安）
 [主人公困り]
 [wait time=10]
@@ -240,7 +244,8 @@ jumpします。[p]
 [eval exp="sf.FButton='OFF'"]
 
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
-[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
+[wait time=10]
 ;黒田画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [chara_new name="kuroda_base" storage="toumei.gif"]
 [chara_show left=250 top=60 layer=8 name="kuroda_base" time=0]
@@ -302,7 +307,8 @@ jumpします。[p]
 [layopt layer=29 visible=true]
 [image name="jumbi" layer=29 storage="bg/bg_ryoutei.jpg" left=1 time=500]
 ;【背景】料亭風の屋内（昼）
-[chara_mod name="bg" storage="bg/bg_ryoutei.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_ryoutei.jpg" time=500]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 ;================================================================
 ;【立ち絵】黒田：通常
@@ -844,7 +850,8 @@ jumpします。[p]
 ;【背景】フェードアウト→黒っぽい背景に
 [chara_mod name="bg" storage="toumei.gif" time=500]
 ;【背景】フェードイン：料亭風の屋内（夕）
-[chara_mod name="bg" storage="bg/bg_ryouotei_yuu.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_ryouotei_yuu.jpg" time=500]
+[wait time=10]
 
 ;【立ち絵】黒田：通常
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]

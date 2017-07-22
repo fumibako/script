@@ -23,6 +23,8 @@
 *scene1
 [freeimage layer = 24]
 [stopbgm]
+[freeimage layer = 1]
+[wait time=10]
 ;【背景】主人公邸_庭
 [背景_庭]
 [wait time=10]
@@ -66,7 +68,8 @@
 [sp]こんな日は、町に出てみましょう」[p]
 
 ;【背景】町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[wait time=10]
 
 #
 ――町に出た。[p]
@@ -133,7 +136,8 @@
 [whosay name="田中　岩男" color="#775545"]
 「いけね。つい口が滑っちゃった」[p]
 ;【背景】ゆっくり暗転
-[chara_mod name="bg" storage="toumei.gif" time=2000]
+[bg storage="toumei.gif" time=2000]
+[wait time=10]
 「貴女には言いづらいんですが、黒田は研究のここぞというときに[r]
 [sp]……実験に失敗しちゃったんですよ」[p]
 「よっぽど疲れていたみたいでねぇ」
@@ -211,7 +215,8 @@
 [autosave]
 [p]
 ;【背景】暗転終了、町並み背景フェードイン
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[wait time=10]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]

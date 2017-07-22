@@ -20,6 +20,8 @@ $(".rp_bt").remove();
 [endif]
 ;==========================================================================================
 *replay_kuroda_12_3_badED_1
+[freeimage layer = 1]
+[wait time=10]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
