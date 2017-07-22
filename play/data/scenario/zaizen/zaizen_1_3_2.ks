@@ -13,7 +13,7 @@
 *seen1
 [call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
 ;【背景】洋館居間
-[bg method='crossfade' storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
