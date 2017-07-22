@@ -12,7 +12,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -119,7 +119,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;=========================================================================================================
 [暗転２]
 ;【背景】薔薇園
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
 [主人公通常]
 ;====================
@@ -388,7 +388,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;==========================歩いているので背景変更===========================================================
 [暗転２]
 ;【背景】薔薇園２　またはバライメージ
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/zaizen_bara.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/zaizen_bara.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='名無しさん＠１'"]
 [暗転２終了]
 ;=========================================================================================================
@@ -446,7 +446,7 @@ $('.saku1').remove();
 [財前退場]
 [主人公退場]
 [wait time=10]
-[暗転]
+[暗転１]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
