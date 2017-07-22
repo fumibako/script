@@ -11,7 +11,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公部屋昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -115,7 +115,7 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】会議室（裏で画面構成）
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/kaigisitu.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/kaigisitu.jpg" wait=true]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
