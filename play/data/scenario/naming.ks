@@ -48,7 +48,7 @@
 *skip_sentaku
 ;背景変更:和紙風 桜色
 ;title周りをbgタグに統一します。ここはchara_modに合わせていただいたのに、すみません
-[bg storage="../fgimage/bg/plane_sakura.jpg" time=0]
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=0 wait=true]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=100]
 ;和紙風 水色
