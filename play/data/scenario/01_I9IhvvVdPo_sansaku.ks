@@ -4,14 +4,16 @@
 ;『スポーツの話題』
 ;イベント発生条件：8月3週～8月4週、期間中に町へ行くと1度だけ発生
 ;=======================================================================================
-;背景:町並み
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
-
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[freeimage layer = 1]
+[wait time=10]
+;背景:町並み
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -62,9 +64,6 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 [新聞]
-;[新聞]
-;[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
-;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 『全国野球大会　慶徳中学校優勝！！』[r]
 [r]
 [sp]今年二度目を迎える全国野球は勝ち抜き戦で行われ、[r]
@@ -86,7 +85,8 @@
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築]
 ;主人公復帰表情　ポーズ通常
@@ -125,8 +125,11 @@ $('.junbi_girl').remove();
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 
+[freeimage layer = 1]
+[wait time=10]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -254,8 +257,11 @@ $('.junbi_girl').remove();
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
+[freeimage layer = 1]
+[wait time=10]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -317,7 +323,8 @@ $('.junbi_girl').remove();
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築]
 
@@ -365,8 +372,11 @@ $('.junbi_girl').remove();
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 
+[freeimage layer = 1]
+[wait time=10]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -433,8 +443,6 @@ $('.junbi_girl').remove();
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('読書の話題',0,0,0,1,2,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
-@jump storage="sansaku.ks" target=*sansaku_machi_seika
-
 @jump storage="01_I9IhvvVdPo_test.ks"
 [s]
 
@@ -450,8 +458,11 @@ $('.junbi_girl').remove();
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 
+[freeimage layer = 1]
+[wait time=10]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -540,8 +551,11 @@ $('.junbi_girl').remove();
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 
+[freeimage layer = 1]
+[wait time=10]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -569,8 +583,11 @@ $('.junbi_girl').remove();
 ;『の話題』
 ;イベント発生条件：月週～月週、期間中に町へ行くと1度だけ発生
 ;=======================================================================================
+[freeimage layer = 1]
+[wait time=10]
 ;背景:町並み
-[chara_mod name="bg" storage="bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
