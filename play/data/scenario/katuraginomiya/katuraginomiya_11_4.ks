@@ -10,7 +10,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】ﾌﾟﾛﾛーｸﾞ
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=600]
+[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit=' '"]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです===============================
@@ -23,7 +23,7 @@
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
-[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -176,7 +176,7 @@
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=10]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
-[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -279,7 +279,7 @@
 *seen5
 ;==========================================================================
 ;【背景】臣民教育 ﾚｲﾔｰ13に表示
-;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_sisou.jpg" time=50]
+;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_sisou.jpg" time=50 wait=true]
 [image layer=13 x=0 y=0 storage="bg/B4nFWraU42/katuragi_sisou.jpg" time=1000 visible=true]
 [eval exp="f.haikei_credit='photo by ＠名無しさん１'"]
 ;==========================================================================
@@ -290,7 +290,7 @@
 それはどれだけの屈辱になるだろうか。[p]
 ;==========================================================================
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
-;[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50]
+;[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;【背景】臣民教育 ﾚｲﾔｰ13に表示を消去
 [freeimage layer=13 time=1000]
@@ -339,7 +339,7 @@
 しばしの間をおいて、場にざわめきが広がっていく……。 [p]
 ;==========================================================================
 ;【背景】蟷螂団 ﾚｲﾔｰ13に表示
-;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_kamakiri.jpg" time=50]
+;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_kamakiri.jpg" time=50 wait=true]
 [image layer=13 x=0 y=0 storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=1000 visible=true]
 [eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
 ;==========================================================================
@@ -351,7 +351,7 @@
 
 ;==========================================================================
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
-;[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50]
+;[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;【背景】蟷螂団 ﾚｲﾔｰ13に表示を消去
 [freeimage layer=13 time=1000]
@@ -383,7 +383,7 @@
 茫然と柏木元大将が呟く。[p]
 ;==========================================================================
 ;【背景】治安維持法
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_chianijihou.jpg" time=1200]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_chianijihou.jpg" time=1200 wait=true]
 [eval exp="f.haikei_credit='font by　花園明朝体, designed by ＠名無しさん１'"]
 ;==========================================================================
 *seen9
@@ -394,7 +394,7 @@
 ;（治安維持法より）
 ;==========================================================================
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
-[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;==========================================================================
 *seen10
