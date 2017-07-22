@@ -4,7 +4,7 @@
 *start
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
-[call target=*9_1 storage="sijyou/preload_sijyou.ks"]
+;[call target=*9_1 storage="sijyou/preload_sijyou.ks"]本編では通らない
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -22,6 +22,8 @@
 [プリロード画面消去]
 [四条ボタン表示]
 *replay_sijyou_9_1
+[call target=*9_1 storage="sijyou/preload_sijyou.ks"]
+
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
