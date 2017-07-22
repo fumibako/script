@@ -123,8 +123,10 @@ tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val(
 ;1が入力されたときはf.sijyou_sobo==true　それ以外はfalse
 [if exp="tf.edit_sobo==1"]
 [eval exp="f.sijyou_sobo=true"]
+[eval exp="f.event_sijyou[15] = 1"]
 [else]
 [eval exp="f.sijyou_sobo=false"]
+[eval exp="f.event_sijyou[15] = 0"]
 [endif]
 ;散策２or 散策（祖母）をみた？f.sijyou_sobo==true　の判定です。
 
