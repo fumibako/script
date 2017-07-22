@@ -27,7 +27,10 @@
 ;【立ち絵】主人公：微笑み
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（なんだか最近財前様のお手紙の感じが変わったわ）[p]
+（なんだか最近財前様のお手紙の感じが変わったわ）
+[autosave]
+[wait time=10]
+[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】夕涼み（お稽古パートなど
@@ -71,7 +74,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 たまに吐き出すとすっきりするものですね。[r]
 [r]
 [sp]母を許そうと思う日が来るとは思っても[r]
-みませんでした。[p]
+みませんでした。
+[autosave]
+[wait time=10]
+[p]
 [sp]貴方のお節介な部分が私に移ったのでしょうか。[r]
 だとしても、自分でも悪くない変化だと思います[r]
 なにか胸の内のもやもやした黒いものが霧散し[r]

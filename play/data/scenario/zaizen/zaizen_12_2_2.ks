@@ -37,7 +37,10 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;[主人公通常]
 「……磯野、銀行の様子を見に行きたいのですが、[r]
-[sp]いいでしょうか？」[p]
+[sp]いいでしょうか？」
+[autosave]
+[wait time=10]
+[p]
 
 ;12_2にて103行目あたりででfadeout
 [if exp="sf.BGM=='ON'"]
@@ -65,8 +68,10 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「私もただ、守られているだけでなく、財前様がどのような立場に[r]
-[sp]立たされているか理解した上で、お手紙を出したいと思います」[p]
-
+[sp]立たされているか理解した上で、お手紙を出したいと思います」
+[autosave]
+[wait time=10]
+[p]
 
 ;【立ち絵】主人公通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -103,6 +108,7 @@
 [position left=200 width=500 height=300 top=100 page=fore margint="50"]
 ;【背景】銀行 全画面背景
 [image layer=29 x=0 y=0 storage="bg/bg_zaizen_ginkou_mae.jpg" time=1000 visible=true]
+[wait time=1000]
 ;【背景】町並み　ひとまず
 [bg method='crossfade' storage="../fgimage/bg/bg_zaizen_ginkou_mae1.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
@@ -114,7 +120,10 @@
 ;テキスト全画面
 
 財前様の立たされている立場を知って励ましたい。[r]
-その想いで騒乱の起きている、財前様の経営する銀行支店へと向かった。[p]
+その想いで騒乱の起きている、財前様の経営する銀行支店へと向かった。
+[autosave]
+[wait time=10]
+[p]
 [sp][r]
 ……だけど、既に状況は深刻な事態になっていた。[p]
 [playse storage=zawa_dark.ogg loop=false ]
@@ -135,7 +144,7 @@
 ;もし戦場にするのであれば、人々が警官と争っている、武器をもっているシーンが必要。
 ;（まるで　のようだった　はなくても通じる）
 
-ー人々の銀行への不信と憤りは私の想像を遥かに超えていた。[p]
+――人々の銀行への不信と憤りは私の想像を遥かに超えていた。[p]
 
 
 
@@ -164,7 +173,10 @@
 [主人公憂い]
 「こんな中で財前様は、逃げずに立ち向かっているのね。[r]
 [sp]私も財前様と町の皆が落ち着けるために何かしたいわ。[r]
-[sp]皆、とても辛い思いをしているのね」[p]
+[sp]皆、とても辛い思いをしているのね」
+[autosave]
+[wait time=10]
+[p]
 
 #
 町は、いつも活気があって皆、明るい顔をしていたのに、[r]

@@ -24,7 +24,10 @@
 
 ;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（今日は財前様と、 ゆっくりお話できるわ……）[p]
+（今日は財前様と、 ゆっくりお話できるわ……）
+[autosave]
+[wait time=10]
+[p]
 [主人公目閉じ]
 （先日お手紙を頂いたけれど、 やはりお忙しい方ね）[p]
 
@@ -64,7 +67,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]秋麗の候、貴方様には一段とご清栄の由と存じます。[r]
 [r]
 [sp]さて、この度、[名前]さんと薔薇園の散策をしたく手紙を[r]
-出しました。[p]
+出しました。
+[autosave]
+[wait time=10]
+[p]
 
 [sp]やはり私も形式にのっとって貴方と何度かお会いした後に[r]
 成婚という形が望ましいと思います。[r]
@@ -72,7 +78,8 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]申し訳ないですが私は忙しく貴方に都合を合わせて頂きたいと[r]
 思っています。[r]
 [ruby text=じゅう]十月[ruby text=さん]三週の日曜日が、私の予定が空いておりますので[r]
-どうでしょうか？[p]
+どうでしょうか？
+[p]
 [sp][r][r]
 [sp]返信お待ちしております。[r]
 [r]
@@ -95,7 +102,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 （そろそろ時間ね）[p]
 
 [whosay name="磯野" color="dimgray"]
-「お嬢様。 財前様がお見えになりました」[p]
+「お嬢様。 財前様がお見えになりました」
+[autosave]
+[wait time=10]
+[p]
 #
 
 ;【立ち絵】主人公：真剣
@@ -122,17 +132,24 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;=========================================================================================================
 #
 薔薇の花々は咲き誇り、色とりどりの美しさをみせていた。[r]
-私たちはゆっくりと歩き、財前様は私に気を遣うように話しかける。[p]
+私たちはゆっくりと歩き、財前様は私に気を遣うように話しかける。
+[p]
 
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
-「今日は少し風が冷たい。 寒くありませんか？」[p]
+「今日は少し風が冷たい。 寒くありませんか？」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目閉じ思案
 [主人公目閉じ]
 [主人公眉下げ下]
-「いいえ、……それよりお話があります」[p]
+「いいえ、……それよりお話があります」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name="財前美彬" color="#7a65b2"]
 [財前目通常]
@@ -145,7 +162,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [主人公通常]
 [主人公口開]
 「私は、言葉の駆け引きは苦手なので、はっきり言いますわ。[r]
-[sp]どうして恋愛を[ruby text=わずら]煩わしいと思っていらっしゃるのですか？」[p]
+[sp]どうして恋愛を[ruby text=わずら]煩わしいと思っていらっしゃるのですか？」
+[autosave]
+[wait time=10]
+[p]
 
 ;【立ち絵】財前：冷ややか
 [whosay name="財前美彬" color="#7a65b2"]
@@ -157,7 +177,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】主人公：真剣
 [主人公憂い]
 「私が知りたいのです。 家族になるんですもの。[r]
-[sp]貴方のお母様に関係あることなのですか？」[p]
+[sp]貴方のお母様に関係あることなのですか？」
+[autosave]
+[wait time=10]
+[p]
 [主人公口通常]
 
 [whosay name="財前美彬" color="#7a65b2"]
@@ -168,7 +191,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：真剣
 「いえ、お父様からではありません。 少し噂を聞いた程度です。[r]
- [sp]ですが、貴方の口から聞きたいのです」[p]
+ [sp]ですが、貴方の口から聞きたいのです」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：目伏せ
@@ -183,7 +209,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】財前：冷ややか
 [財前冷ややか]
 「貴方が恋愛を望むなら、私との縁談を今から断っても構わない。[r]
-[sp]今なら体面を傷つける事もなく無効にできます」[p]
+[sp]今なら体面を傷つける事もなく無効にできます」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：悲しみ
@@ -194,7 +223,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】財前：目伏せ
 [財前目閉じ]
 [財前口開]
-「さあ？ 私を冷たいと感じますか？」[p]
+「さあ？ 私を冷たいと感じますか？」
+[autosave]
+[wait time=10]
+[p]
 [主人公憂い]
 [財前口通常]
 [財前眉冷ややか]
@@ -211,7 +243,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】財前：通常
 [財前冷ややか]
 「ああ、生い立ちについての同情は不要です。[r]
-[sp]母の事は恥ですが、今は何とも思っていないですから」[p]
+[sp]母の事は恥ですが、今は何とも思っていないですから」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：悲しみ
@@ -226,7 +261,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 「同情は不要だといっているでしょう。 [名前]さんは顔に出やすい人ですね」[p]
 [財前冷ややかな微笑み]
 「ですが素直で物怖じしない所は気に入っています。[r]
-[sp]将来、化けるかもしれませんのでね」[p]
+[sp]将来、化けるかもしれませんのでね」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目伏せ思案
@@ -236,7 +274,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name="財前美彬" color="#7a65b2"]
 [財前ため息]
 ;【立ち絵】財前：ため息
-「全く、人の弱みに付け込む気ですか？」[p]
+「全く、人の弱みに付け込む気ですか？」
+[autosave]
+[wait time=10]
+[p]
 [財前通常]
 「私は、人を愛する気が全くありません。[r]
 [sp]母の事を話すのは今日限り……。[r]
@@ -246,7 +287,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】主人公：目伏せ
 
 「はい。今後、この話題には触れませんわ。[r]
-[sp]お約束します」[p]
+[sp]お約束します」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉]
@@ -262,7 +306,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [財前通常]
 ;【立ち絵】財前：通常
 「ああ、ところで急ですが[r]
-[sp][ruby text=じゅう]十[ruby text=いち]一月の初めの日曜日ですが予定を開けてくれませんか？」[p]
+[sp][ruby text=じゅう]十[ruby text=いち]一月の初めの日曜日ですが予定を開けてくれませんか？」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
@@ -274,13 +321,19 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】財前：通常
 「懇意にしている財閥の総帥の会社の祝賀パーティがあります。[r]
 [sp]貴方のお父上から、そういった機会に同伴する約束を[r]
-[sp]したので出席して頂きます」[p]
+[sp]したので出席して頂きます」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：驚き
 [主人公驚]
 「！」[p]
-（まさかこんな早くにパーティの機会があるなんて）[p]
+（まさかこんな早くにパーティの機会があるなんて）
+[autosave]
+[wait time=10]
+[p]
 [whosay name="財前美彬" color="#7a65b2"]
 [主人公口通常]
 [財前冷ややかな微笑み]
@@ -294,7 +347,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [主人公目伏]
 [主人公眉下げ下]
 「いいえ、出席いたします。[r]
-[sp]私は、貴方のお役に立ちたいと思います」[p]
+[sp]私は、貴方のお役に立ちたいと思います」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：通常
@@ -317,7 +373,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name="財前美彬" color="#7a65b2"]
 「貴方もいずれ現実を知るでしょう。[r]
 [sp]今は、私も今の貴方で満足する事にします。[r]
-[sp]今日は風が冷たいので、そろそろ帰りましょう」[p]
+[sp]今日は風が冷たいので、そろそろ帰りましょう」
+[autosave]
+[wait time=10]
+[p]
 [財前通常]
 #
 ;【立ち絵】主人公：目伏せ微笑み
@@ -335,7 +394,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;=========================================================================================================
 [主人公憂い]
 #
-お見合いでは、財前様の後ろを歩いたけれど、今は隣を歩いている。[p]
+お見合いでは、財前様の後ろを歩いたけれど、今は隣を歩いている。
+[autosave]
+[wait time=10]
+[p]
 
 財前様をチラッと見ても、その表情からは何も読み取れない。[p]
 
@@ -354,6 +416,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 [fadeoutbgm time=3000]
 ;====================================花びら=====================================================================
+@layopt layer=1 visible = true
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
 ;------------keyframe の定義
 [keyframe name="animation1"]
