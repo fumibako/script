@@ -12,7 +12,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】背景会議室　;変更してください
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/test_zaizen_kaigi.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/test_zaizen_kaigi.jpg" wait=true]
 [eval exp="f.haikei_credit='Photo by  ＠名無しさん１'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
