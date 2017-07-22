@@ -1006,7 +1006,7 @@ $('.loding_pic1').remove();
 ;書き直すのが面倒なので一括処理内容
 ;散策
 ;テストモード[if exp="tf.test_sijyou==true"]@jump storage="test_sijyou.ks"[edif]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
 [endif]
 [endmacro]
@@ -1025,6 +1025,7 @@ $('.loding_pic1').remove();
 ;[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('読書の話題',0,0,0,1,2,'a','','','','')"]
 [macro name="話題入手"]
 [iscript]
+if (typeof f.wadai_list_hairetsu == "undefined"){f.wadai_list_hairetsu = [];}
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [endscript]
@@ -1067,7 +1068,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:チラシ
-[chara_mod name="bg" storage="bg/bg_tirasi.jpg"]
+[bg method='crossfade' storage="../fgimage/bg/bg_tirasi.jpg" time=600]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -1190,9 +1191,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:新聞
-[chara_mod name="bg" storage="bg/test_bg_sinbun.jpg"]
-[wait time=10]
-[bg storage="../fgimage/bg/test_bg_sinbun.jpg" time=600 method=%method | &f.bg_method]
+[bg method='crossfade' storage="../fgimage/bg/test_bg_sinbun.jpg" time=600]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=150 width=720 height=600 top=30 page=fore margint="0"]
