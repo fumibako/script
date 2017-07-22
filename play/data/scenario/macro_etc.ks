@@ -76,7 +76,7 @@ console.info("f.katuraginomiya_fumi_inou=", this.kag.stat.f.katuraginomiya_fumi_
 [endmacro]
 
 [macro name="暗転１"]
-[bg storage="../fgimage/bg/anten.jpg" time=100 method=%method | &f.bg_method]
+[bg storage="../fgimage/bg/anten.jpg" time=100 method=%method | &f.bg_method wait=true]
 [eval exp="f.haikei_credit=''"]
 [endmacro]
 ;======
@@ -87,7 +87,7 @@ console.info("f.katuraginomiya_fumi_inou=", this.kag.stat.f.katuraginomiya_fumi_
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 [image layer=29 x=0 y=0 storage=%storage|bg/anten.jpg time=%time|1300 visible=true]
-[wait time=10]
+[wait time=%time|1300]
 [if exp=mp.clegit==true]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [endif]
@@ -95,6 +95,8 @@ console.info("f.katuraginomiya_fumi_inou=", this.kag.stat.f.katuraginomiya_fumi_
 
 [macro name=暗転２終了]
 [freeimage layer = 29 time=%time|1300]
+;↓[暗転２終了]後のautosaveで暗転のまま再現されるケースが多いこと、そしてマウススクロール速読時[暗転２終了]後に透明度が半端なまま進行する不具合が複数回発生したため、それらの防止用にwaitを入れます◆jsYiJcqRkk
+[wait time=%time|1300]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -118,7 +120,7 @@ $('.loding_pic1').remove();
 [macro name="暗転"]
 ;名前欄消去
 [whosay name=""]
-	[bg storage="../fgimage/bg/toumei.gif" time=%time|600]
+	[bg storage="../fgimage/bg/toumei.gif" time=%time|600 wait=true]
 [endmacro]
 
 ;◆[華衣]
