@@ -31,11 +31,6 @@
 *9_1
 ;個別に呼び出してますのでいちいち書いてます。
 ;幕の役割なので、プリロード画面消去は、マクロにして、消すタイミングはシナリオで決定します　
-[layopt layer=29 visible=true]
-[layopt layer=fix visible=false]
-[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
-[wait time=50]
 ;///使用背景メモ　必要時に解放///////
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;ここで読みます＿手紙など
