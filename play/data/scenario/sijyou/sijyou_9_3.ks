@@ -993,14 +993,15 @@ _　として成長しないといけないのだわ）[p]
 [stopse]
 ;なったままだった
 #
+[fadeoutse time=1000]
 私は、理由を聞くこともできす、華織様の漕ぐボートに身を[ruby text=ゆだ]委ねた。[p]
 ;適当　怠惰にすごしたかんじ
 ;【退場】四条
 [四条退場]
 ;=================================================================================_
 *seen8
-[fadeoutse time=1500]
 [イベントシーン終了]
+[stopse]
 [if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari
 [else]
