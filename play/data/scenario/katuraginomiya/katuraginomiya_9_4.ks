@@ -11,7 +11,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -181,7 +181,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000] 
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000 wait=true] 
 [eval exp="f.haikei_credit='photo　by　ゆうあかり'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -191,10 +191,6 @@ f.fumi_all_number=f.fumi_all_number + 1;
 
 私は、お稽古の先生からの勧めで[r]直に茶器を確かめて購入することとなり、[r]町に出る事にした。[p]
 
-;私は、お稽古の先生からの手紙の勧めで[r]茶器の器を購入することとなり、[r]町に出た。[p]
-;又、先生の手紙に直で確かめるようにと書かれてあり、町に出る事になった.手紙であることはわかるため重複
-;のがつづく　ので　できれば↓
-;私は、お稽古の先生からの勧めで[r]直で茶器を確かめて購入することとなり、[r]町に出る事にした。[p]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
@@ -243,7 +239,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公退場]
 [暗転]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [表示準備]
 [stopbgm]
@@ -440,7 +436,7 @@ $('.junbi_girl').remove();
 [主人公退場]
 [葛城宮退場]
 ;背景:庭【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000] 
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000 wait=true] 
 [暗転２終了]
 [表示準備 storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり
