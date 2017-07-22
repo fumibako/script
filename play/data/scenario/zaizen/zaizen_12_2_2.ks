@@ -14,7 +14,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -110,7 +110,7 @@
 [image layer=29 x=0 y=0 storage="bg/bg_zaizen_ginkou_mae.jpg" time=1000 visible=true]
 [wait time=1000]
 ;【背景】町並み　ひとまず
-[bg method='crossfade' storage="../fgimage/bg/bg_zaizen_ginkou_mae1.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_zaizen_ginkou_mae1.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示
 [layopt layer=message0 visible=true]
