@@ -10,7 +10,7 @@
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
-;[call target=*9_1 storage="sijyou/preload_sijyou.ks"]本編では通らない
+[call target=*9_1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
