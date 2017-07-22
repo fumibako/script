@@ -38,8 +38,6 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 
 ;背景（タイトル画像）表示：安定性のためtitle周りの背景表示を[bg]タグに統一します
-;[chara_new name="bg" storage="bg/title.jpg"]
-;[chara_show left=0 top=0 layer=1 name="bg" time=0]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 

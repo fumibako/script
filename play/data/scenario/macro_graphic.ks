@@ -8,8 +8,6 @@
 
 ;背景：庭
 [macro name="背景_庭"]
-[chara_mod name="bg" storage="bg/room_niwa.jpg" time=0]
-;↓[chara_mod]→[bg]過渡期は並列で書いておきます。全てのシナリオを[bg]に移行後は[bg]のみ残す予定です◆jsYiJcqRkk
 [bg storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 [endmacro]
@@ -29,7 +27,7 @@
 ;背景とメッセージ枠を手紙青仕様に
 [macro name="手紙青"]
 ;背景変更:手紙青
-[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=100]
 
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true

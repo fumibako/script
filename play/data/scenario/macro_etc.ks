@@ -118,11 +118,7 @@ $('.loding_pic1').remove();
 [macro name="暗転"]
 ;名前欄消去
 [whosay name=""]
-[if exp="f.flag_replay == true"]
 	[bg storage="../fgimage/bg/toumei.gif" time=%time|600]
-[else]
-	[chara_mod name="bg" storage="toumei.gif" time=%time|600]
-[endif]
 [endmacro]
 
 ;◆[華衣]
@@ -1260,13 +1256,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
-;[if exp="f.flag_replay == true"]
-;↓[chara_mod]→[bg]過渡期は並列で書いておきます。全てのシナリオを[bg]に移行後は[bg]のみ残す予定です◆jsYiJcqRkk
-	[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0 method=%method | &f.bg_method]
-	[wait time=10]
-;[else]
-	[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=%time|0]
-;[endif]
+[bg storage="../fgimage/bg/bg_prologue.jpg" time=%time|0 method=%method | &f.bg_method]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -1301,13 +1291,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
-;背景変更:黒茶・和紙風(暗)
-;[if exp="f.flag_replay == true"]
-	[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=%time|0 method=%method | &f.bg_method]
-	[wait time=10]
-;[else]
-	[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=%time|0]
-;[endif]
+[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=%time|0 method=%method | &f.bg_method]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
