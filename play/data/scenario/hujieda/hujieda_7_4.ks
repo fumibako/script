@@ -217,7 +217,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 #
 ;【背景】空
-[bg method='crossfade' storage="../fgimage/bg/bg_bluesky.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_bluesky.jpg" time=1000 wait=true]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 [主人公目伏柔]
 私は、鳩の飛び立った空を見上げた。[p]
