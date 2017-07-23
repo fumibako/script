@@ -27,7 +27,7 @@
 [eval exp="f.bgm_storage='miyuki.ogg'"]
 [endif]
 
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_hujieda_hato.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_hujieda_hato.jpg" time=1000 wait=true]
 [eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by ＠名無しさん１'"]
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
@@ -62,7 +62,7 @@
 
 [whosay name=？？？]
 「貴方の[ruby text=こと]箏の音を聞き続けたい」[p]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_moon_lake.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_moon_lake.jpg" time=1000 wait=true]
 [eval exp="f.haikei_credit='illustration by＠名無しさん１'"]
 #
 声とともに霧が晴れ、月の光を映した湖の美しい夜景が広がる。[p]
