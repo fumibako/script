@@ -14,7 +14,7 @@
 
 [cm]
 ;[手紙青]
-[bg storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=100]
 [wait time=10]
 
 ;メッセージレイヤを表示

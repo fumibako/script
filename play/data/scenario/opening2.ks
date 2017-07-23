@@ -1,9 +1,9 @@
-﻿﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+﻿﻿﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 	[skipstart]
 [endif]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
-;[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+;[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=0]
 ;[wait time=10]
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -33,7 +33,7 @@
 [endif]
 
 ;背景変更:主人公邸_庭
-[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -65,7 +65,6 @@ $('.loding_pic1').remove();
 [playse storage=tokei_hiroma.ogg loop=false]
 
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_yubi_me_fusi_mayu_yowa_ase.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
 ;主人公画像表示【マクロで切り替え】
 [主人公ポーズ指]
 [wait time=10]
@@ -78,7 +77,7 @@ $('.loding_pic1').remove();
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
-[wait time=200]
+[wait time=240]
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
@@ -612,7 +611,7 @@ jumpします。[p]
 *scene15
 *fumi_sentaku01
 ;背景変更:和紙風
-[bg storage="../fgimage/bg/plane_sakura.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
 [eval exp="f.haikei_credit=''"]
@@ -624,7 +623,7 @@ jumpします。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
-[wait time=10]
+[wait time=100]
 ;主人公復帰表情通常　ポーズ通常削除
 [iscript]
 $('.junbi_girl').remove();
@@ -647,7 +646,7 @@ $('.junbi_girl').remove();
 [eval exp="sf.FButton='ON'"]
 
 ;背景変更:和紙風
-[bg storage="../fgimage/bg/plane_sakura.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=0]
 [wait time=10]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
@@ -683,7 +682,7 @@ $('.junbi_girl').remove();
 
 [font color=white size=0][r]【 『黒田 将貴』を選択 】[r][resetfont]
 [cm]
-[bg storage="../fgimage/bg/bg_tegami_kuroda.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/bg_tegami_kuroda.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
@@ -738,7 +737,7 @@ f.kuroda_fumi1_midoku = 0;
 [font color=white size=0][r]【 『財前 美彬』を選択 】[r][resetfont]
 [cm]
 ;背景変更:手紙
-[bg storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
@@ -786,7 +785,7 @@ f.zaizen_fumi1_midoku = 0;
 *kaori_fumi1b
 [font color=white size=0][r]【 『四条 華織』を選択 】[r][resetfont]
 [cm]
-[bg storage="../fgimage/bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
@@ -842,7 +841,7 @@ f.kaori_fumi1_midoku = 0;
 [eval exp="f.select_scene=''"]
 [cm]
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
-[bg storage="../fgimage/bg/room_niwa.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=100]
 [wait time=10]
 ;[背景_庭]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -936,14 +935,14 @@ jumpします。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
-[wait time=10]
+[wait time=100]
 ;主人公復帰表情通常　ポーズ通常削除
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
 
 ;背景変更:和紙風
-[bg storage="../fgimage/bg/plane_sakura.jpg" time=0  wait=true]
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=0  wait=true]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
 [eval exp="f.haikei_credit=''"]
@@ -974,7 +973,7 @@ $('.junbi_girl').remove();
 ;	[skipstop]
 [endif]
 *kuroda_isono1b
-[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=磯野 color="dimgray"]
@@ -1024,7 +1023,7 @@ $('.junbi_girl').remove();
 ;	[skipstop]
 [endif]
 *zaizen_isono1b
-[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=磯野 color="dimgray"]
@@ -1089,7 +1088,7 @@ $('.junbi_girl').remove();
 ;	[skipstop]
 [endif]
 *kaori_isono1b
-[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ指]
@@ -1217,7 +1216,7 @@ $('.junbi_girl').remove();
 *scene19
 [cm]
 ;[背景_庭]
-[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公口ほほえみ]
@@ -1464,7 +1463,7 @@ jumpします。[p]
 [eval exp="sf.FButton='OFF'"]
 
 ;背景非表示
-[bg storage="toumei.gif" time=50]
+[bg wait=true storage="toumei.gif" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="toumei.gif" time=50]
 [endreplay]

@@ -53,7 +53,7 @@ TG.stat.play_se = true;
 ;背景変更:プロローグイントロ全画面。[chara_mod]のタイミングでフリーズを何度か経験したため[bg]タグの方が安定するのではないかと試行してみます。
 [freeimage layer=1]
 [wait time=10]
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=100]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=100]
 [wait time=10]
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
@@ -89,7 +89,7 @@ TG.stat.play_se = true;
 [resetfont][delay speed=10]
 
 ;背景変更:主人公邸_庭
-[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
@@ -459,7 +459,7 @@ TG.stat.play_se = true;
 
 ;背景非表示
 ;[chara_mod name="bg" storage="toumei.gif" time=100]
-[bg storage="../fgimage/toumei.gif" time=10]
+[bg wait=true storage="../fgimage/toumei.gif" time=10]
 [wait time=10]
 
 

@@ -12,7 +12,9 @@
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=500] 
+[wait time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=10]
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 
 ;◆既読スキップ開始
@@ -25,8 +27,9 @@
 [endif]
 *scene1
 [freeimage layer = 24]
+[wait time=10]
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 
@@ -409,7 +412,7 @@ jumpします。[p]
 [if exp="f.event_katuraginomiya[4] != 1"]
 ;葛城宮のイベントをみていないとき主人公合体画像を表示
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[wait time=300]
 [endif]
 
 [主人公ポーズ通常]

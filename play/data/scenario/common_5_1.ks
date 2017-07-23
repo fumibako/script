@@ -7,10 +7,13 @@
 [stopbgm]
 [eval exp="f.from_common_5_1 = 1"]
 [freeimage layer = 1]
+[wait time=10]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=10]
 
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -18,7 +21,7 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -66,7 +69,7 @@
 
 *event_select
 ;背景変更:和紙風 桜色
-[bg storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 五月『磯野に相談』：既読イベントです。[r]
 選択肢まで移動、又はイベントを終了しますか？[r]
@@ -114,7 +117,7 @@
 「最初からイベントを見る」[r]
 最初の場面に移動します。[p]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [cm]
 
@@ -268,7 +271,7 @@
 ;選択肢用の背景：(和紙風桜色はオープニングで使用)
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
-[bg storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 
 
@@ -286,7 +289,7 @@
 
 *okeiko
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公目パチ1回]
 [主人公通常]
@@ -318,7 +321,7 @@
 *buncyou
 ;選択肢の背景からの復帰
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目を開く]
@@ -380,7 +383,7 @@
 
 *no
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公目パチ1回]
 [主人公通常]
