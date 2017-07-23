@@ -88,9 +88,9 @@
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん。 こっちだよ」[p]
 #
-その優しい声の主は、華織お兄様であった[p]
+その優しい声の主は、華織お兄さまであった[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織お兄様！」 [p]
+「華織お兄さま！」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん会いたかったよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
