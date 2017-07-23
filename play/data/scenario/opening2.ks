@@ -618,10 +618,18 @@ jumpします。[p]
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
 [eval exp="f.select_scene='fumi_sentaku01'"]
+;主人公復帰表情通常　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+;主人公復帰表情通常　ポーズ通常削除
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
+
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=0]
 [wait time=10]
