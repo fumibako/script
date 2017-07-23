@@ -132,13 +132,13 @@ $('.loding_pic1').remove();
 
 ;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。主人公部屋には攻略対象こないので
 [macro name=表示準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
-[wait time=50]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=0 top=0 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[wait time=%time|30]
 [endmacro]
 
 ;◆[四条退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
 [macro name=四条退場準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=0 top=0 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
 [wait time=50]
 [四条退場]
 [freeimage layer=13 time=50]
@@ -147,7 +147,7 @@ $('.loding_pic1').remove();
 
 ;◆[藤枝退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
 [macro name=藤枝退場準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=0 top=0 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
 [wait time=50]
 [藤枝退場]
 [freeimage layer=13 time=50]
@@ -156,7 +156,7 @@ $('.loding_pic1').remove();
 
 ;◆[葛城宮退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
 [macro name=葛城宮退場準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=0 top=0 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
 [wait time=50]
 [葛城宮退場]
 [freeimage layer=13 time=50]
@@ -165,7 +165,7 @@ $('.loding_pic1').remove();
 
 ;◆[財前退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
 [macro name=財前退場準備]
-[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=1 top=1 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
+[image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=0 top=0 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
 [wait time=50]
 [財前退場]
 [freeimage layer=13 time=50]
