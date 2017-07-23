@@ -1,7 +1,7 @@
 ﻿﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 	[skipstart]
 [endif]
-[image name="junbi_girl" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
 ;[wait time=10]
@@ -44,6 +44,11 @@
 [playbgm storage="mattari_akinoyonaga.ogg" loop=true]
 [eval exp="f.bgm_storage='mattari_akinoyonaga.ogg'"]
 [endif]
+;準備中の表示消去　メッセージに被る前に
+[iscript]
+$('.loding_pic1').remove();
+[endscript]
+
 
 ;メッセージ窓の表示
 [eval exp="f.message_storage='message_bg/frame_red.png'"]
