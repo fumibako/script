@@ -162,6 +162,7 @@
 [wait time=1]
 ;四条登場
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 
@@ -264,6 +265,7 @@
 ;【退場】四条
 [四条退場]
 [freeimage layer=13 time=100]
+[wait time=100]
 [layopt layer=13 visible=true]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -284,6 +286,7 @@
 [四条微笑み]
 ;四条登場
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 [四条目パチ1回]
@@ -365,6 +368,7 @@
 [四条ベース羽織]
 [四条微笑み]
 [freeimage layer=13 time=100]
+[wait time=100]
 [layopt layer=13 visible=true]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
@@ -406,6 +410,7 @@
 ;【退場】四条
 [四条退場]
 [freeimage layer=13 time=100]
+[wait time=100]
 [layopt layer=13 visible=true]
 ;////////☆事件の予感 迫り来る悪い奴ら//////
 ;=================================================================================_
@@ -424,6 +429,7 @@
 [四条ベース羽織]
 [四条微笑み]
 [freeimage layer=13 time=100]
+[wait time=100]
 [layopt layer=13 visible=true]
 ;○デートの終わりに事件が起きる
 ;○妹(弟)が登場する
@@ -539,6 +545,7 @@
 ;【退場】四条
 [四条退場]
 [freeimage layer=13 time=100]
+[wait time=100]
 [layopt layer=13 visible=true]
 ;=================================================================================_
 *seen5

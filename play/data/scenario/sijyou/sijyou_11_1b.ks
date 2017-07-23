@@ -48,6 +48,7 @@
 [四条口驚き]
 ;=============================
 [freeimage layer=29 time=800]
+[wait time=800]
 [layopt layer=fix visible=true]
 ;=============================
 [layopt layer=fix visible=true]
@@ -261,6 +262,7 @@ $(".nerine").css("opacity",0.5);
 [四条ベース羽織]
 [四条憂い]
 [freeimage layer=13 time=500]
+[wait time=500]
 [layopt layer=13 visible=true]
 ;======四条表示======
 [whosay name="華衣" color=%mp.color]
@@ -433,12 +435,14 @@ $(function(){
 ;○概要案 好きな花について婚約者に話しをしたら、(妹の婚約者は)買い付けに出て、出先で事故(公家の出で、もともと身体が弱かった？)にあってしまう、
 ;○回想シーン婚約者さんが四条に弟の好きな花は何？ときいてくる。
 [背景セピア化_50]
+[wait time=100]
 ;sepia(100%)だと四条邸壁や空の青さが飛んでしまうため50%に。さらに調整入れるかもです
 ;=================================================================================_
 ;四条家玄関
 ;[bg storage="../fgimage/bg/B4nFWraU42/bg_sijyou_genkan.jpg" time=100]
 ;画面復帰
 [freeimage layer=29 time=500]
+[wait time=500]
 [メッセージウィンドウ上ボタン表示]
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -508,6 +512,7 @@ $(function(){
 [四条憂い]
 ;======四条登場======
 [freeimage layer=13 time=500]
+[wait time=500]
 [layopt layer=13 visible=true]
 ;;======四条登場======
 [whosay name="華衣" color=%mp.color]
@@ -518,6 +523,7 @@ $(function(){
 #
 ;結果、弟！に恨まれてしまったんだろうなぁとプレイヤーが想像する形
 [背景セピア化_解除]
+[wait time=100]
 ;回想シーンおわり
 ;=================================================================================_
 *seen5
@@ -565,6 +571,7 @@ $('.junbi_girl').remove();
 [四条ベース羽織]
 [四条困り]
 [freeimage layer=13 time=500]
+[wait time=500]
 [layopt layer=13 visible=true]
 ;======四条登場======
 [whosay name="華織" color="olivedrab"]
@@ -602,7 +609,7 @@ $('.junbi_girl').remove();
 [暗転２]
 ;【退場】四条
 [四条退場]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="ﾈﾘﾈの写真画像"]
 *seen_end
 ;四条イベント6後=1。それ以外=0

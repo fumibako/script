@@ -11,7 +11,7 @@ $('.list').remove();
 [endscript]
 [if exp="f.flag_replay==true"]
 [clearstack]
-[bg storage="toumei.gif" time=1]
+[bg wait=true method='crossfade' storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -30,7 +30,7 @@ $('.list').remove();
 ;[endif]
 
 ;【背景】青空に桜
-[bg storage="../fgimage/bg/bg_sakura.jpg" time=0]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_sakura.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
@@ -197,6 +197,7 @@ $('.saku3').remove();
 ;◆ｸﾘｯｸがみえる場合は追加↓
 [layopt layer=message0 visible=false]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;◆メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 
@@ -215,14 +216,14 @@ $('.saku3').remove();
 ;good条件分岐は3箇所：スチル表示(ここ)、169行目付近、preload_sijyou.ks423行目付近(もし調整が必要になった際用メモです。「以上」の部分を調整させていただきました
 [if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.event_sijyou[15] == 1 && f.para_shujinkou_j_kadou >= 50"]
 [暗転２ storage="bg/sijyou_CGgood.png" clegit=true]
-[bg storage="../fgimage/bg/sijyou_CGgood.png" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/sijyou_CGgood.png" time=1000]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/sijyou_CGgood.png" time=1000]
 ;◆CGモード用に画像を登録
 [cg storage="sijyou_CGgood.png"] 
 [else]
 [暗転２ storage="bg/sijyou_CGnomal.png" clegit=true]
-[bg storage="../fgimage/bg/sijyou_CGnomal.png" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/sijyou_CGnomal.png" time=1000]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/sijyou_CGnomal.png" time=1000]
 ;◆CGモード用に画像を登録

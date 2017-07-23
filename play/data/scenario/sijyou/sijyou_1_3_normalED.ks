@@ -128,6 +128,7 @@
 [主人公目パチ1回]
 [wait time=10]
 [freeimage layer=29 time=500]
+[wait time=500]
 [layopt layer=fix visible=true]
 ;==========表示準備完了==============
 [whosay name="華織" color="olivedrab"]

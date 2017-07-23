@@ -98,6 +98,7 @@
 [四条真剣]
 ;四条登場
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 [四条口驚き]
@@ -230,10 +231,11 @@
 「はい……」[p]
 [四条退場準備 storage="bg/bg_ryoutei.jpg"]
 ;退場するのは静かに話をきいたにつなげるため
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 
 [背景セピア化]
+[wait time=100]
 
 [主人公目閉じ]
 ;あのときって？？ということで一度表示
@@ -250,11 +252,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （少し……怖そうな方でした）[p]
 ;===========================================
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;===========================================
 
 [背景セピア化_解除]
+[wait time=100]
 
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
@@ -299,7 +302,7 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 ;===========================================
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;===========================================
 [主人公ポーズ通常]
@@ -322,6 +325,7 @@
 [四条ベース羽織]
 [四条真剣]
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 ;==================
@@ -457,6 +461,7 @@
 [四条ベース羽織]
 [四条通常]
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 ;==================
@@ -670,7 +675,7 @@
 ;============================
 *common_2
 #
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 [eval exp="f.haikei_credit=''"]
 ;============================
@@ -785,6 +790,7 @@
 ;==================
 ;四条登場
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 ;================
@@ -841,6 +847,7 @@
 ;==================
 ;四条登場
 [freeimage layer=13 time=700]
+[wait time=700]
 [layopt layer=13 visible=true]
 ;四条登場
 ;================
@@ -882,6 +889,7 @@
 ;==================
 ;四条登場
 [freeimage layer=13 time=800]
+[wait time=800]
 [layopt layer=13 visible=true]
 ;四条登場
 ;================
@@ -1088,7 +1096,7 @@
 ;【退場】四条
 [四条退場]
 ;△ ○壺の柄と暗号を照らし合わせ、妹の場所を発見する
-[暗転]
+[暗転１]
 [fadeoutbgm time=3000]
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
 [image layer=29 x=0 y=0 storage="bg/ bg_prologue.jpg " time=1000 visible=true]

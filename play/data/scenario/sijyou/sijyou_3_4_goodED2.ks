@@ -19,7 +19,7 @@
 [wait time=10]
 ;===============================================================
 ;【背景】ヒロインの部屋
-[bg storage="../fgimage/bg/room_niwa_sepia.jpg"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_sepia.jpg"]
 [wait time=50]
 ;[chara_mod name="bg" storage="bg/room_niwa_sepia.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -45,7 +45,7 @@
 ;私をいつも兄と一緒に暖かく見守ってくださった。[p]
 ;===============================================================
 ;【背景】ヒロインの部屋雪
-[bg storage="../fgimage/bg/room_niwa_yuki_sepia.jpg" time=100]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_yuki_sepia.jpg" time=100]
 ;[chara_mod name="bg" storage="bg/room_niwa_yuki_sepia.jpg" time=100]
 [wait time=50]
 ;ここでとまる
@@ -61,7 +61,7 @@
 [image layer=1 x=0 y=0 storage="bg/bg_sakura_sepia.jpg" time=1000 visible=true]
 [wait time=10]
 [else]
-[bg storage="../fgimage/bg/bg_sakura_sepia.jpg" time=100]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_sakura_sepia.jpg" time=100]
 ;[chara_mod name="bg" storage="bg/bg_sakura_sepia.jpg" time=100]
 [wait time=10]
 ;ここでとまる
@@ -80,7 +80,7 @@
 [image layer=1 x=0 y=0 storage="bg/bg_omoide_sepia.jpg" time=1000 visible=true]
 [wait time=10]
 [else]
-[bg storage="../fgimage/bg/bg_omoide_sepia.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_omoide_sepia.jpg" time=500]
 ;[chara_mod name="bg" storage="bg/bg_omoide_sepia.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
@@ -104,7 +104,7 @@
 ;[endscript]
 ;[if exp="f.flag_replay != true"]
 ;一瞬裏がみえるの防止背景(replay時にも裏が見えるのを防止したいので↑↓if～をコメントアウトしました(◆jsYiJcqRkk
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 ;[endif]
@@ -134,7 +134,7 @@ $('.1_fore').remove();
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [clearfix]
 [clearstack]
-[bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [wait time=10]
 [skipstop]
 [stopse]

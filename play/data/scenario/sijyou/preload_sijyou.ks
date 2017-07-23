@@ -559,7 +559,7 @@ $('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)',
 ;=======
 
 [macro name="背景_お稽古部屋"]
-[bg storage="../fgimage/bg/bg_okeiko.jpg" time=1000 method=%method | &f.bg_method] wait=true
+[bg storage="../fgimage/bg/bg_okeiko.jpg" time=1000 method=%method | &f.bg_method wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [endmacro]
 ;==============

@@ -97,7 +97,7 @@
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [cm]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 私は、手紙をじっくり読み返した。[p]
 ;～～～～～～～～～～手紙１～～～～～～～～～～～～～～
@@ -138,7 +138,8 @@
 [current layer="message0"]
 [cm]
 ;[暗転]
-[bg storage="toumei.gif"]
+[bg wait=true method='crossfade' storage="toumei.gif" time=600]
+[wait time=50]
 ;横においてさらりと眺める
 私は、机に置いてある、手紙を眺めた。[p]
 ;～～～～～～～共通1～～～～～～～
@@ -829,6 +830,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [四条微笑み]
 ;===四条登場===
 [freeimage layer=13 time=500]
+[wait time=500]
 [layopt layer=13 visible=true]
 ;===四条登場===
 「今日は、四条華道展に来てくださってありがとうございます。[r]
@@ -950,6 +952,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [四条真剣]
 ;===四条登場===
 [freeimage layer=13 time=500]
+[wait time=500]
 [layopt layer=13 visible=true]
 ;===四条登場===
 [whosay name="華織" color="olivedrab"]

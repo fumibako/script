@@ -160,6 +160,7 @@ $('.saku1').remove();
 [四条ベース着物]
 [四条笑顔大]
 [freeimage layer=13 time=800]
+[wait time=800]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん！　こんなところで会えるなんて奇遇だね。[r]
 ;困り笑顔
@@ -212,7 +213,7 @@ $('.saku1').remove();
 [四条退場]
 #
 ;//////////////////~~シーン銀座~~////////////////////////////
-[暗転]
+[暗転１]
 ;【SE】人々のざわめき（ザワザワ…屋外）
 [playse storage=zawa_out.ogg loop=false]
 [layopt layer=fix visible=false]
@@ -225,6 +226,7 @@ $('.saku1').remove();
 [主人公通常]
 [wait time=10]
 [freeimage layer=29 time=500]
+[wait time=500]
 [layopt layer=fix visible=true]
 ;============================================================
 ;↓眉： [主人公眉下げ]
@@ -258,6 +260,7 @@ $('.saku1').remove();
 [四条笑顔]
 [四条頬染め]
 [freeimage layer=13 time=400]
+[wait time=400]
 「 これからは、ずっと繋いで歩いて行けたらいいね」 [p]
 ;にこりと笑って
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -306,7 +309,7 @@ $('.saku1').remove();
 ;////////////////////~~シーン香水店前~~~///////////////////////////
 ;華織、香りつながりで化粧品店、調香店に 行く
 #
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;=====================表示準備==============================
 ;背景：店外
@@ -316,6 +319,7 @@ $('.saku1').remove();
 [wait time=10]
 [主人公通常]
 [freeimage layer=29 time=500]
+[wait time=500]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=13]
 ;===================================================
 華織様に付いていくと、ビルヂングの下に収まった店が目に留まった。[p]
@@ -335,6 +339,7 @@ $('.saku1').remove();
 [wait time=10]
 [四条微笑み]
 [freeimage layer=13 time=500]
+[wait time=500]
 [whosay name="華織" color="olivedrab"]
 「ここは、祖母の知人が営んでいる 調香店だよ」[p]
 [主人公口ほほえみ]
@@ -365,7 +370,7 @@ $('.saku1').remove();
 ;主人公退場でもいい→やだ！めんどう！
 ;////////////////////~~シーン香水店内~~~///////////////////////////
 #
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 [背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
@@ -374,6 +379,7 @@ $('.saku1').remove();
 [四条ベース着物]
 [四条通常]
 [freeimage layer=13 time=500]
+[wait time=500]
 ;説明・四条綾花・・・祖母　散策をみてね
 [主人公通常]
 [wait time=10]
@@ -566,7 +572,7 @@ jumpします。[p]
 [current layer="message0"]
 [cm]
 #
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ――華織様の香りを確かめる。[p]
 [背景_香水店中]
@@ -574,6 +580,7 @@ jumpします。[p]
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
+[wait time=500]
 ;===================================================
 ;セリフは適当 もっとお上品にしてください
 [主人公ポーズ指]
@@ -665,7 +672,7 @@ jumpします。[p]
 [current layer="message0"]
 [cm]
 #
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 私は、恥ずかしくなって、小瓶の香りを確かめることにした。[p]
 [背景_香水店中]
@@ -673,6 +680,7 @@ jumpします。[p]
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
+[wait time=500]
 [主人公ポーズ片手]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -760,7 +768,7 @@ jumpします。[p]
 [cm]
 #
 ;====================================================
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 私は、華織様にお願いして、つけてもらうことにした。[p]
 [背景_香水店中]
@@ -769,6 +777,7 @@ jumpします。[p]
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
+[wait time=500]
 [主人公真剣]
 ;↑のほうが爽やか？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -858,7 +867,7 @@ jumpします。[p]
 [cm]
 #
 ;====================================================
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 私は、恥ずかしくなって、自分でつけることにした。[p]
 [背景_香水店中]
@@ -867,6 +876,7 @@ jumpします。[p]
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
+[wait time=500]
 [主人公驚]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1018,7 +1028,7 @@ jumpします。[p]
 [四条退場]
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回想~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;店外　効果セピア
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;回想シーン 効果セピア
 [背景セピア化]
@@ -1081,7 +1091,7 @@ jumpします。[p]
 [sp]ワケですよ」 [p]
 #
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~シーン回送おわり~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;回想シーン 効果セピア消す
 [背景セピア化_解除"]
@@ -1090,6 +1100,7 @@ jumpします。[p]
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
+[wait time=500]
 ;(　´_ゝ｀)ﾌｰﾝって内容でもある
 [whosay name="調香店主" color=%mp.color]
 「驚いちゃいましたよ。　とても素敵な縁を感じましたね」[p]
@@ -1183,7 +1194,7 @@ jumpします。[p]
 [主人公ポーズ通常]
 [主人公目閉]
 [四条退場]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif" time=2000 wait=false]
 #
 ――それが、もしも、些細な出会いであっても、私は結納の時に感謝の念を抱くと思う。[p]
@@ -1197,6 +1208,7 @@ jumpします。[p]
 [四条ベース着物]
 [四条微笑み]
 [freeimage layer=13 time=500]
+[wait time=500]
 [主人公ポーズ通常]
 [主人公通常]
 [whosay name="華織" color="olivedrab"]

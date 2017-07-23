@@ -19,6 +19,7 @@
 [freeimage layer = 1]
 [wait time=10]
 [背景_庭_夜]
+[wait time=10]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
@@ -203,13 +204,16 @@
 [sp]今はどの様なお姿をされてるのでしょうか？）[p]
 #
 ――あの頃は、お兄さまと華織お兄さまに囲まれて楽しく過ごしていて……[p]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif" time=1000]
 [wait time=10]
+;↓背景セピア化付近で表示不具合が複数回発生したためwaitを多めに取っています◆jsYiJcqRkk
 [背景セピア化]
+[wait time=100]
 ;↑新バージョンになると邪魔になるのでマクロ化
 ;【背景】ヒロインの部屋
 [背景_庭]
+[wait time=50]
 ;【プロローグ抜粋】
 [whosay name=文矢 color="#538a8a"]
 『[名前]、僕はまだ磯野に用事があるから、先に行って華織をもてなして[r]
@@ -225,14 +229,16 @@
 [whosay name="華織お兄さま" color="olivedrab"]
 『今日も[名前]ちゃんは、元気だね』[p]
 #
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif" time=1000]
 [wait time=10]
 
 [背景セピア化_解除]
+[wait time=50]
 
 ;【背景】主人公邸 庭の見える部屋：夜
 [背景_庭_夜 time=1000]
+[wait time=100]
 ;【恥ずかしいことも知られているので余計に緊張する主人公 片手ポーズ恥じ横目】
 ;【主人公口ムッ】
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]

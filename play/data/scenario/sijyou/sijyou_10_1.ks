@@ -153,6 +153,7 @@
 [四条ビンタ]
 ;ビンタエモありがとうございます。疲れてるとマゾのコメントにみえる！
 [freeimage layer=13 time=1000]
+[wait time=1000]
 @layopt layer=13 visible=true
 [whosay name="四条祖父" color="#888898"]
 「華織……なんで」[p]

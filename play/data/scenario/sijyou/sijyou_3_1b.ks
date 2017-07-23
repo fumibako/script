@@ -245,7 +245,7 @@
 *common2
 [autosave]
 ;【背景】暗転
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;【背景】宴会または料亭席全体;宴会会場全体
 [背景_四条宴会]
@@ -278,7 +278,7 @@
 ;～～～～～回想イベントへ～～～～～～～～～～
 *deai
 [cm]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -345,7 +345,7 @@
 ;～～～～～～シーンスキップ～～～～～～～～～
 *not_fumiya
 [cm]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -406,7 +406,7 @@
 ;=================================================================================_
 *seen3
 [autosave]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 #
 功を奏でるように女将達は三味線を鳴らす中、空が薄っすらと茜色に[r]染まる。[p]
@@ -448,6 +448,7 @@
 [wait time=10]
 ;四条登場
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 ;～～～～～～～～～～～～～～～シーン個性的な兄弟～～～～～～～～～～～
@@ -902,6 +903,7 @@
 [主人公通常]
 [layopt layer=fix visible=true]
 [freeimage layer=29 time=700]
+[wait time=700]
 ;表示準備
 [whosay name="華織" color="olivedrab"]
 「ふぅ……空気がすっかり春の香りになりましたね」[p]
@@ -1125,6 +1127,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 [主人公照れ]
 [layopt layer=fix visible=true]
 [freeimage layer=29 time=800]
+[wait time=800]
 ;＝＝＝＝＝＝＝表示準備＝＝＝＝＝＝＝
 [whosay name="華織" color="olivedrab"]
 「……帰りましょうか」[p]
@@ -1137,7 +1140,7 @@ _　[名前]さんのおかげで、もう一歩先に進めます」[p]
 ;=================================================================================_
 *seen9
 [autosave]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;料亭廊下
 [背景_四条宴会廊下]

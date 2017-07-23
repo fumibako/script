@@ -28,7 +28,7 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 [主人公目閉]
-[暗転]
+[暗転１]
 [背景_橋]
 [主人公目通常]
 #

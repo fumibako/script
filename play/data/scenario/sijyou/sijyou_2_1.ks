@@ -181,7 +181,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 （ダメですわ。急な手紙で、驚かせてしまうかもしれないわ）[p]
-[暗転]
+[暗転１]
 ;月背景
 [image name="bg1" layer=1 storage="bg/sijyou_engawa3.jpg" time=1000 top=-304]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
@@ -281,6 +281,7 @@ $('.bg1').remove();
  [四条微笑み]
 ;~===四条登場=====
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [whosay name="華織" color="olivedrab"]
@@ -530,7 +531,7 @@ $('.bg1').remove();
 教室に入っていく華織様の背中を目で送ると、ひとり、[r]
 心の中に渦巻く気持ちに思い惑った。[p]
 ;ひとり思案した　考えあぐねる　苦悶した　瞑想にふけった　思い滞る
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -615,7 +616,7 @@ $('.bg1').remove();
 *sijyou_3
 [er]
 ;〜〜シーン キャラの造作1 軽度〜〜〜
-[暗転]
+[暗転１]
 ;このシーンの背景は生徒が描かれていないと違和感あるので暗転で。
 ;教室全体元ファイルアップロダ
 ;地の文　仮
@@ -634,6 +635,7 @@ $('.bg1').remove();
 [四条通常]
 ;~===四条登場=====
 [freeimage layer=13 time=800]
+[wait time=800]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [主人公ポーズ指]
@@ -731,6 +733,7 @@ $('.bg1').remove();
 [四条_隣_通常]
 ;===四条登場=====
 [freeimage layer=13 time=700]
+[wait time=700]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [whosay name="華織" color="olivedrab"]
@@ -794,6 +797,7 @@ $('.bg1').remove();
 [四条困り微笑み]
 ;===四条登場=====
 [freeimage layer=13 time=700]
+[wait time=700]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [whosay name="華織" color="olivedrab"]
@@ -846,9 +850,10 @@ $('.bg1').remove();
 （昔の私……）[p]
 [主人公目閉]
 [四条退場]
-[暗転]
+[暗転１]
 ;効果セピア
 [背景セピア化]
+[wait time=100]
 ;背景　主人公部屋セピア 無邪気な頃を羨ましくも思う？
 ;～～～～～～～～回想 困ったら回想シーン C会話～～～～～～～～～
 ;=================================================================================_
@@ -883,11 +888,12 @@ $('.bg1').remove();
 [whosay name="華織お兄さま" color="olivedrab"]
 「ありがとう。  うまく出来たら、文矢に見せに行こうね」[p]
 #
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;～～～～～～～～回想 困ったら回想シーン C会話おわり～～～～～～～～～
 ;効果セピア消し
 [背景セピア化_解除]
+[wait time=100]
 ;背景　床の間のみ表示
 [背景_四条華道教室_1]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=1000]
@@ -898,6 +904,7 @@ $('.bg1').remove();
 ;四条考えてる
 ;===四条登場=====
 [freeimage layer=13 time=800]
+[wait time=800]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [主人公ポーズ通常]
@@ -941,7 +948,7 @@ $('.bg1').remove();
 #
 *sijyou_5
 [er]
-[暗転]
+[暗転１]
 [暗転２終了]
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;シーン急上昇まで流れ。楽しい時間を得る
@@ -958,6 +965,7 @@ $('.bg1').remove();
 [四条通常]
 ;===四条登場=====
 [freeimage layer=13 time=800]
+[wait time=800]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [四条微笑み]
@@ -1010,6 +1018,7 @@ $('.bg1').remove();
 [四条_隣_通常]
 ;===四条登場=====
 [freeimage layer=13 time=700]
+[wait time=700]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [whosay name="華織" color="olivedrab"]
@@ -1147,6 +1156,7 @@ $('.bg1').remove();
 [四条目大]
 ;===四条登場=====
 [freeimage layer=13 time=800]
+[wait time=800]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 [whosay name="華織" color="olivedrab"]
@@ -1179,6 +1189,7 @@ $('.bg1').remove();
 [四条_隣_微笑み]
 ;===四条登場=====
 [freeimage layer=13 time=700]
+[wait time=700]
 [layopt layer=13 visible=true]
 ;====四条登場=====
 ;近づいて驚く
@@ -1312,7 +1323,7 @@ _　いらっしゃるのでしょうか？）[p]
 ;続編に飛ぶ
 [if exp="tf.test_sijyou==true"]
 [四条退場]
-[暗転]
+[暗転１]
 ;↓ifで飛んでるのでセーブデータの肥大化防止
 [clearstack]
 [fadeoutbgm time=3000]

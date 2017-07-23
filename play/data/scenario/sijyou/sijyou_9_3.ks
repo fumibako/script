@@ -226,6 +226,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 なった。[p]
 [resetfont]
 [freeimage layer = 29 time=500]
+[wait time=500]
 
 ;機能ボタン表示
 [メッセージウィンドウ上ボタン表示]
@@ -299,6 +300,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [四条微笑み]
 ;四条登場
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 ;=======================
@@ -337,6 +339,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;【退場】四条
 [四条退場]
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;=================================================================================_
 *seen4
@@ -352,6 +355,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [四条ベース羽織]
 [四条微笑み]
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;===================
 [主人公通常]
@@ -841,6 +845,7 @@ _　として成長しないといけないのだわ）[p]
 [四条微笑み]
 ;四条登場
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
 
@@ -929,6 +934,7 @@ _　として成長しないといけないのだわ）[p]
 [四条_隣_通常]
 [wait time=10]
 [freeimage layer=29 time=1200]
+[wait time=1200]
 ;///////////////////////準備///////////////////
 [layopt layer=fix visible=true]
 [四条_隣_微笑み]

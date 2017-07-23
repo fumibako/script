@@ -1,6 +1,6 @@
 *test
 [if exp="tf.test_sijyou == true"]
-[暗転]
+[暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -1013,8 +1013,9 @@ _　たとえ華道に対するお志が高くとも、私が……）[p]
 決して真っ直ぐにならない花の姿を大切にしながら、私は大切な誰かの[r]
 ために花を生けた[p]
 [暗転２]
-[暗転]
+;[暗転１]
 [暗転１]
+[wait time=50]
 ;ｲﾍﾞﾝﾄｼｰﾝ終了時に　誰もいない教室がでるため暗転 messageは表示されない
 [主人公退場]
 [四条退場]

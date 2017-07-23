@@ -214,6 +214,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公退場]　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
 ;場面転換
 [背景セピア化]
+[wait time=100]
 [背景_四条_歌舞伎座前 time=2000]
 ;[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [手紙読了]
@@ -258,6 +259,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 #
 ;○回想1おわり
 [背景セピア化_解除]
+[wait time=100]
 [主人公ポーズ通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -377,7 +379,8 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [主人公通常]
 [wait time=100]
 [暗転２]
-[暗転]
+[暗転１]
+[wait time=10]
 *seen7
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
