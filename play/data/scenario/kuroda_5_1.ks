@@ -8,8 +8,10 @@
 [eval exp="f.from_common_5_1 = 0"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=10]
 
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -19,7 +21,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
@@ -31,7 +33,7 @@
 ;=====================ここからお芝居の幕引きです===============================
 *seen1
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公通常]
@@ -39,7 +41,10 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「黒田様のことを聞いていいかしら」[p]
+「黒田様のことを聞いていいかしら」
+[autosave]
+[wait time=10]
+[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name=磯野 color="dimgray"]
@@ -47,7 +52,10 @@
 [whosay name=磯野 color="dimgray"]
 「黒田様は、大学で植物の研究をしておられるそうです。[r]
 [sp]机上の学問だけではなく、野山に足を運ばれることも多いとお聞き[r]
-[sp]します」[p]
+[sp]します」
+[autosave]
+[wait time=10]
+[p]
 [主人公目パチ1回]
 
 「自然がお好きだそうですので、便せんは植物や自然のものが画かれた[r]
@@ -63,7 +71,10 @@
 
 [whosay name=磯野 color="dimgray"]
 「お忙しい方で、お返事をあまり返して下さらないことも多いかもしれ[r]
-[sp]ませんが、お嬢様からお手紙を出し続けてみてください」[p]
+[sp]ませんが、お嬢様からお手紙を出し続けてみてください」
+[autosave]
+[wait time=10]
+[p]
 
 [主人公目パチ1回]
 [主人公ポーズ指]
@@ -73,7 +84,10 @@
 [主人公ポーズ通常]
 [whosay name=磯野 color="dimgray"]
 「黒田様は、海外の論文や書籍をよく読まれるそうです。[r]
-[sp]"語学のお稽古"で海外の知識を深めると、お話が合うかもしれません」[p]
+[sp]"語学のお稽古"で海外の知識を深めると、お話が合うかもしれません」
+[autosave]
+[wait time=10]
+[p]
 
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
@@ -81,7 +95,10 @@
 「また、気分転換に"散策"もお勧めいたします」[p]
 
 「散策で"季節感のある話題"を手に入れられましたら、すぐにお手紙に[r]
-[sp]書かれると良いでしょう」[p]
+[sp]書かれると良いでしょう」
+[autosave]
+[wait time=10]
+[p]
 
 「話題が季節外れになってしまうと、お返事をいただけないことも[r]
 [sp]あるかもしれません」[p]
@@ -89,7 +106,10 @@
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう、磯野。[r]
-[sp]黒田様に、もっとお手紙を書きたくなりました」[p]
+[sp]黒田様に、もっとお手紙を書きたくなりました」
+[autosave]
+[wait time=10]
+[p]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様のお役に立てると幸いでございます」[p]
@@ -99,7 +119,10 @@
 （"自然のものが画かれた便せん"、"語学のお稽古"、"散策"ね）[p]
 
 （"季節感のある話題"はすぐにお手紙に書くようにも、気をつけて[r]
-[sp]みましょう）[p]
+[sp]みましょう）
+[autosave]
+[wait time=10]
+[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]

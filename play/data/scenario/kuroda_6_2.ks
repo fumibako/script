@@ -11,7 +11,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】黒背景
-[bg storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="toumei.gif" time=500]
 [wait time=10]
 [イベントシーン構築ボタン無し版]
 #

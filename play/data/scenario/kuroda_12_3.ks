@@ -5,8 +5,10 @@
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -54,7 +56,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
 [wait time=10]
 [プリロード画面消去]
 [wait time=50]
@@ -105,7 +107,7 @@
 ;==========================================================================================
 ;【背景】主人公邸_庭
 ;【背景】庭・夜
-[bg method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;==========================================================================================
@@ -122,7 +124,7 @@
 [主人公ポーズ通常]
 [wait time=10]
 [主人公ふぅ閉]
-[wait time=10]
+[wait time=50]
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
@@ -227,10 +229,10 @@ jumpします。[p]
 [wait time=10]
 ;==========================================================================================
 ;暗転
-[bg storage="toumei.gif" time=500]
-[wait time=10]
+[bg wait=true method='crossfade' storage="toumei.gif" time=500]
+[wait time=50]
 ;画面切り替え、【背景】黒背景又は和紙背景にぼんやりとした光が浮かび、キラキラ輝いている感じのもの（こちらで作成予定。作成に時間がかかりそうなら切り替え無し）
-[bg method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
 [wait time=10]
 ;【SE】キラキラ
 [playse storage=shine.ogg loop=false ]
@@ -242,8 +244,8 @@ jumpします。[p]
 
 *scene3_end
 ;ゆっくり暗転
-[bg storage="toumei.gif" time=1000]
-[wait time=10]
+[bg wait=true method='crossfade' storage="toumei.gif" time=500]
+[wait time=50]
 ;==========================================================================================
 ;【BGM】冬支度（悲しげ・筝曲）
 [stopbgm]
@@ -253,7 +255,7 @@ jumpします。[p]
 [eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
 [endif]
 ;画面切り替え、【背景】「町並み」
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [wait time=10]
@@ -277,7 +279,7 @@ jumpします。[p]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
-[wait time=10]
+[wait time=50]
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
@@ -323,8 +325,8 @@ $('.junbi_girl').remove();
 [wait time=10]
 ;==========================================================================================
 ;暗転
-[bg storage="toumei.gif" time=1000]
-[wait time=10]
+[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[wait time=50]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
@@ -340,7 +342,7 @@ $('.junbi_girl').remove();
 *scene5
 ;黒田編開始
 ;【背景】黒背景又は黒っぽい和紙風
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1]
 [wait time=10]
 ;【テキスト枠】全画面、白フォント
 ;メッセージレイヤを全画面用に設定変更
@@ -376,14 +378,14 @@ $('.junbi_girl').remove();
 研究室も何もかも崩れ落ちる夢。[p]
 
 ;【効果】白フラッシュ3回
-[bg method='crossfade' storage="../fgimage/bg/white.jpg" time=50]
-[wait time=10]
-[bg method='crossfade' storage="toumei.gif" time=100]
-[wait time=30]
-[bg method='crossfade' storage="../fgimage/bg/white.jpg" time=50]
-[wait time=10]
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1]
-[wait time=10]
+[bg wait=true method='crossfade' storage="../fgimage/bg/white.jpg" time=10]
+[wait time=70]
+[bg wait=true method='crossfade' storage="toumei.gif" time=10]
+[wait time=150]
+[bg wait=true method='crossfade' storage="../fgimage/bg/white.jpg" time=10]
+[wait time=70]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1]
+[wait time=50]
 [freeimage layer = 2]
 
 ;[chara_mod name="bg_effect" storage="toumei.gif" time=50]
@@ -416,8 +418,8 @@ $('.junbi_girl').remove();
 ;画面:通常会話パート
 
 ;【背景】あればレトロな実験室　 フェードイン（見つからなければ、黒背景）
-[bg storage="toumei.gif" time=1000]
-[wait time=10]
+[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[wait time=50]
 [eval exp="f.haikei_credit=''"]
 ;【テキスト枠】会話パート用 下部横長【茶色（男性視点用）】
 [イベントシーン構築ボタン無し版枠茶色]
@@ -546,9 +548,10 @@ $('.junbi_girl').remove();
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 [chara_mod name="message_bg" storage="toumei.gif"]
+[wait time=10]
 
 ;【背景】黒背景又は黒っぽい和紙風
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
 [wait time=10]
 ;【テキスト枠】全画面、白フォント
 ;メッセージレイヤを全画面用に設定変更
@@ -584,6 +587,7 @@ $('.junbi_girl').remove();
 ;【背景他】手紙用画面に切り替え
 ;主人公より手紙
 [手紙青]
+[wait time=100]
 [font color=navy size=21]
 
 黒田 将貴様[r]
@@ -607,7 +611,7 @@ $('.junbi_girl').remove();
 [resetfont]
 
 ;【背景】黒背景又は黒っぽい和紙風
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
 [wait time=10]
 ;【テキスト枠】全画面、白フォント
 ;メッセージレイヤを全画面用に設定変更
@@ -642,14 +646,14 @@ $('.junbi_girl').remove();
 そのとき、ハラリと封筒から何かが机に落ちた。[p]
 
 ;暗転
-[bg storage="toumei.gif" time=500]
-[wait time=10]
+[bg wait=true method='crossfade' storage="toumei.gif" time=500]
+[wait time=50]
 ;【背景】黒背景の中心が温かく輝いている。封筒から麦の穂が机に落ちた様子が光の中に浮かび上がっている（こちらで素材を準備する予定です）
-[bg method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
 [wait time=10]
 ;【SE】キラキラ
 [playse storage=shine.ogg loop=false ]
-[bg method='crossfade' storage="../fgimage/bg/bg_komugi.jpg" time=3000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi.jpg" time=3000]
 [wait time=10]
 ;【テキスト枠】会話パート用 下部横長
 ;メッセージレイヤを会話窓用に設定変更
@@ -660,8 +664,8 @@ $('.junbi_girl').remove();
 [resetfont]
 
 ;【背景】あればレトロな実験室　 フェードイン（見つからなければ、黒背景）
-[bg storage="toumei.gif" time=1000]
-[wait time=10]
+[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[wait time=50]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_brown.png"]
 ;メッセージレイヤを会話窓用に設定変更

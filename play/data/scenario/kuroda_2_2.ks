@@ -7,8 +7,10 @@
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -61,7 +63,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸_庭
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=0]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
@@ -93,7 +95,7 @@
 [p]
 ;==========================================================================================
 ;【背景】フェードアウト→屋敷玄関背景
-[bg storage="toumei.gif" time=1000]
+[bg wait=true storage="toumei.gif" time=1000]
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
@@ -114,7 +116,7 @@
 ;==========================================================================================
 *scene2
 ;【背景】フェードアウト→屋敷玄関背景
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
 [wait time=10]
 ;==========================================================================================
 ;【立ち絵】黒田：ほほえみ
@@ -261,7 +263,7 @@
 （もう、磯野……）[p]
 ;==========================================================================================
 ;【背景】町並みフェードイン
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
 [wait time=10]
 ;==========================================================================================
 ;【立ち絵】黒田：通常(近
@@ -441,7 +443,7 @@
 [wa]
 
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば小料理屋店内風背景
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
 [wait time=10]
 ;【立ち絵】黒田：通常
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
@@ -480,7 +482,7 @@
 ;==========================================================================================
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば小料理屋店内風背景
 [eval exp="f.haikei_credit='photo by Omar + Kazumi Ovalle　http://www.flickr.com/photos/ovalle/4664496288/'"]
-[bg method='crossfade' storage="../fgimage/bg/bg_koryouriya.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_koryouriya.jpg" time=1000]
 [wait time=10]
 ;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene11==undefined"]
@@ -724,16 +726,16 @@
 [黒田退場]
 [wait time=10]
 ;暗転
-[bg storage="toumei.gif" time=500]
+[bg wait=true storage="toumei.gif" time=500]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 ;【背景】黒背景の中心が温かく輝いている。封筒から麦の穂が机に落ちた様子が光の中に浮かび上がっている（こちらで素材を準備する予定です）
-[bg method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
 [wait time=10]
 ;【SE】キラキラ
 [playse storage=shine.ogg loop=false ]
-[bg method='crossfade' storage="../fgimage/bg/bg_komugi.jpg" time=3000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi.jpg" time=3000]
 [wait time=10]
 
 [whosay name="黒田 将貴" color="#7a65b2"]
@@ -833,7 +835,7 @@
 [wait time=10]
 ;==========================================================================================
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば小料理屋店内風背景
-[bg method='crossfade' storage="../fgimage/bg/bg_koryouriya.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_koryouriya.jpg" time=1000]
 [wait time=10]
 ;==========================================================================================
 [whosay name="黒田 将貴" color="#7a65b2"]

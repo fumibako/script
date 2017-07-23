@@ -5,8 +5,10 @@
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=10]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -55,7 +57,7 @@
 ;【背景】玄関
 [freeimage layer = 1]
 [wait time=10]
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=0]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
@@ -90,7 +92,7 @@
 
 ;==========================================================================================
 ;【背景】青空（秋晴れ）又はフェードアウトのまま
-[bg method='crossfade' storage="../fgimage/bg/bg_bluesky.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_bluesky.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 ;==========================================================================================
@@ -124,7 +126,7 @@
 [wait time=10]
 ;==========================================================================================
 ;【背景】公園の門フェードイン
-[bg method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate_winter.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate_winter.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 
@@ -187,7 +189,7 @@
 [wait time=10]
 ;==========================================================================================
 ;【背景】冬の木々
-[bg method='crossfade' storage="../fgimage/bg/bg_winter_forest.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_winter_forest.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　Eddy BERTHIER　https://www.flickr.com/photos/didy_b/16022666269/'"]
 ;==========================================================================================
@@ -337,7 +339,7 @@
 [p]
 ;==========================================================================================
 ;【背景】（あれば）ビワの樹フェードイン。無ければ変更なし
-[bg method='crossfade' storage="../fgimage/bg/bg_biwa_tree.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_biwa_tree.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　Mike Petrucci　https://www.flickr.com/photos/scrappapervlog/17598158185/'"]
 ;==========================================================================================
@@ -381,7 +383,7 @@
 [黒田退場]
 [wait time=10]
 ;【背景】（あれば）びわの花フェードイン。無ければ変更なし
-[bg method='crossfade' storage="../fgimage/bg/bg_biwa_flower.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_biwa_flower.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 
@@ -413,7 +415,7 @@
 香りに気をとられていると、近くで物音がした。[p]
 
 ;【背景】ビワの樹フェードイン
-[bg method='crossfade' storage="../fgimage/bg/bg_biwa_tree.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_biwa_tree.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　Mike Petrucci　https://www.flickr.com/photos/scrappapervlog/17598158185/'"]
 ;【立ち絵】黒田：驚
@@ -963,7 +965,7 @@
 #
 田中は元気よく去って行った。日が陰り始めている。[p]
 ;【背景】冬の木々
-[bg method='crossfade' storage="../fgimage/bg/bg_winter_forest_yuu.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_winter_forest_yuu.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　Eddy BERTHIER　https://www.flickr.com/photos/didy_b/16022666269/'"]
 
@@ -1007,7 +1009,7 @@
 [p]
 
 ;【背景】公園の門（冬・夕）
-[bg method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate_winter_yuu.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate_winter_yuu.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 

@@ -5,8 +5,10 @@
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -24,7 +26,7 @@
 [stopbgm]
 [freeimage layer = 1]
 [wait time=10]
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
 [wait time=10]
 [プリロード画面消去]
 ;メッセージレイヤを全画面用に設定変更
@@ -76,10 +78,11 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [暗転２ storage="bg/room_niwa.jpg" clegit=true]
 ;【背景】主人公邸_庭、フェードイン
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [wait time=10]
 ;【テキスト枠】会話パート用 下部横長
 [イベントシーン構築ボタン無し版]
+[wait time=10]
 ;=========================================================================================
 ;【立ち絵】主人公：伏目
 [主人公ポーズ指]
@@ -253,15 +256,15 @@
 *scene5
 
 ;【背景、立ち絵、テキスト枠】フェードアウト、暗転
-[主人公退場]
-[wait time=10]
+;[主人公退場]
+;[wait time=10]
 ;機能ボタン消去
 [機能ボタン消]
 [eval exp="sf.FButton='OFF'"]
-[chara_mod name="message_bg" storage="toumei.gif"]
-[wait time=10]
-[bg storage="toumei.gif" time=500]
-[wait time=10]
+;[chara_mod name="message_bg" storage="toumei.gif"]
+;[wait time=10]
+;[bg wait=true storage="toumei.gif" time=500]
+;[wait time=50]
 ;◆テスト中は配列スキップ
 [if exp="tf.test_kuroda==true"]
 @jump target="test_kuroda_hairetu_skip"
@@ -289,8 +292,11 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;=========================================================================================
 ;黒田より年賀状
 ;【背景】年賀状画像（黒田）表示（こちらで作成予定：ハガキ上部に「謹賀新年」の文字と四葉のクローバーの押し花風画像が入るシンプルなもの。ハガキ下部に縦書下記テキスト挿入）
-[bg method='crossfade' storage="../fgimage/bg/nengajou_kuroda.jpg" time=500]
+[layopt layer=29 visible=true]
 [wait time=10]
+;背景変更:手紙
+[image layer=29 x=0 y=0 storage="bg/nengajou_kuroda.jpg" time=500]
+[wait time=500]
 ;メッセージレイヤを年賀状用に設定変更
 [position left=270 width=400 height=310 top=260 page=fore margint=0]
 @layopt layer=message0 page=fore visible=true
@@ -317,18 +323,14 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [if exp="tf.test_kuroda != true"]
 [eval exp="f.midoku_list_hairetsu[0][15] = 0;"]
 [endif]
-
-;画面切り替え、→通常会話パート
-;【背景】主人公邸_庭、フェードイン
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=500]
+[freeimage layer = 29]
 [wait time=10]
-;【テキスト枠】会話パート用 下部横長
-[chara_mod name="message_bg" storage="message_bg/frame_red.png"]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [wait time=10]
 ;機能ボタン登場
 [機能ボタン表示]
+[wait time=50]
 [eval exp="sf.FButton='ON'"]
 ;=========================================================================================
 ;【立ち絵】主人公：通常
@@ -339,7 +341,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
+[wait time=50]
 
 #
 裏面に『母の体調も落ち着きました。[r]
@@ -373,8 +375,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 「お忙しいでしょうに、お知らせくださるなんて……」[p]
 [fadeoutbgm time=3000]
 [wait time=10]
-[bg method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=1000]
-[wait time=10]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=1000]
+[wait time=50]
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 [wait time=10]

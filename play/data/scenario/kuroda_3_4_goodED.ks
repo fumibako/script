@@ -11,12 +11,14 @@
 [clearfix]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_preload_kuroda.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_preload_kuroda.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】玄関
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [call target=*start storage="tyrano.ks"]
@@ -72,7 +74,7 @@ $(".rp_bt").remove();
 [endif]
 *scene1
 ;【背景】玄関
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
@@ -127,10 +129,10 @@ $(".rp_bt").remove();
 [chara_mod name="message_bg" storage="toumei.gif"]
 [wait time=10]
 ;【背景】ゆっくり暗転後、桜（全画面テキスト用）
-[bg storage="toumei.gif" time=500]
-[wait time=10]
-[bg method='crossfade' storage="../fgimage/bg/bg_EDsakura.jpg" time=1000]
-[wait time=10]
+[bg wait=true method='crossfade' storage="toumei.gif" time=300]
+[wait time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_EDsakura.jpg" time=500]
+[wait time=100]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]

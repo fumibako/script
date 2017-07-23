@@ -5,8 +5,10 @@
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=10]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -120,7 +122,7 @@
 「ええ。今行くわ、磯野」[p]
 
 ;【背景】フェードアウト→黒背景or黒っぽい和紙背景orあれば屋敷玄関背景
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [stopse]
@@ -152,7 +154,7 @@
 *scene3
 
 ;【背景】青空（秋晴れ）又はフェードアウトのまま
-[bg method='crossfade' storage="../fgimage/bg/bg_bluesky.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_bluesky.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 
@@ -200,7 +202,7 @@
 *scene4
 
 ;【背景】公園の門フェードイン
-[bg method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 
@@ -302,7 +304,7 @@
 そう思ったとたんに近さを感じて緊張してしまい、顔を上げられなくなった。[p]
 
 ;【背景】紅葉
-[bg method='crossfade' storage="../fgimage/bg/bg_kouyou_ussou.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kouyou_ussou.jpg" time=500]
 [wait time=10]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_10_3_scene5==undefined"]
@@ -634,7 +636,7 @@
 *scene13
 
 ;【背景】紅葉　夕方
-[bg method='crossfade' storage="../fgimage/bg/bg_kouyou_kaidan.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kouyou_kaidan.jpg" time=500]
 [wait time=10]
 #
 見上げると、陽が傾きはじめている。[r]
@@ -873,7 +875,7 @@
 #
 公園の門が見えてきた。[p]
 ;【背景】公園の門フェードイン
-[bg method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate_yuu.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_shinrinkouen_gate_yuu.jpg" time=500]
 [wait time=10]
 
 名残惜しさを感じつつも、黒田様の自然への情熱を目の当たりにして[r]

@@ -13,7 +13,7 @@
 ;@layopt layer=1 visible=true
 
 ;◆ スチル表示:chara_modだとなぜかすぐ消えることがあるため[bg]タグに切り替えています
-[bg storage="../fgimage/bg/kuroda_normalED.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/kuroda_normalED.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　かいこ'"]
 [cg storage="kuroda_normalED.jpg"]
@@ -89,10 +89,10 @@
 [layopt layer=29 visible=true]
 [wait time=10]
 ;背景変更:手紙
-[bg storage="../fgimage/toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/toumei.gif" time=1000]
 [wait time=10]
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
-[wait time=10]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
+[wait time=500]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [wait time=10]
 
@@ -119,7 +119,7 @@
 ;【SE】パラリ(手紙)
 [playse storage=paper_open.ogg loop=false ]
 [freeimage layer = 29]
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1000]
 [wait time=10]
 ;テキスト全画面
 [font color=white size=27]
@@ -151,7 +151,7 @@
 [イベントシーン終了]
 [wait time=10]
 ;【背景】セピア背景
-[bg storage="../fgimage/bg/plane_sepia.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=1000]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 
@@ -160,7 +160,7 @@
 [イベントシーン終了]
 [wait time=10]
 ;【背景】タイトル背景
-[bg storage="../fgimage/bg/title.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/title.jpg" time=1000]
 [wait time=10]
 
 ;黒田ルートをクリアした

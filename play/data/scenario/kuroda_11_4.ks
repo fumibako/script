@@ -5,8 +5,10 @@
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -176,7 +178,7 @@
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 ;【背景】暗転
-[bg storage="toumei.gif" time=2000]
+[bg wait=true method='crossfade' storage="toumei.gif" time=2000]
 [wait time=10]
 ;【SE】軽い足音（フェードアウト）
 [playse storage=girl_out_walk.ogg loop=false ]
@@ -206,7 +208,7 @@
 [wait time=500]
 
 ;【背景】暗転終了、庭背景フェードイン
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=2000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=2000]
 [wait time=10]
 ;【立ち絵】主人公：強気
 [主人公目パチ1回]
@@ -332,7 +334,7 @@
 [eval exp="sf.FButton='OFF'"]
 
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
 [wait time=10]
 [call target=*start storage="macro_tati_kuroda.ks"]
 ;メッセージレイヤを全画面用に設定変更
@@ -366,7 +368,7 @@
 
 
 ;【背景】和室（黒田家） フェードイン
-[bg method='crossfade' storage="../fgimage/bg/bg_kurodake.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kurodake.jpg" time=500]
 [wait time=10]
 ;セーブ等ボタン配置
 [メッセージウィンドウ上ボタン表示]

@@ -5,8 +5,10 @@
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -68,7 +70,7 @@
 [sp]こんな日は、町に出てみましょう」[p]
 
 ;【背景】町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
 [wait time=10]
 
 #
@@ -136,7 +138,7 @@
 [whosay name="田中　岩男" color="#775545"]
 「いけね。つい口が滑っちゃった」[p]
 ;【背景】ゆっくり暗転
-[bg storage="toumei.gif" time=2000]
+[bg wait=true method='crossfade' storage="toumei.gif" time=2000]
 [wait time=10]
 「貴女には言いづらいんですが、黒田は研究のここぞというときに[r]
 [sp]……実験に失敗しちゃったんですよ」[p]
@@ -215,7 +217,7 @@
 [autosave]
 [p]
 ;【背景】暗転終了、町並み背景フェードイン
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
 [wait time=10]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに

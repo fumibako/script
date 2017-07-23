@@ -5,8 +5,10 @@
 ;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -173,7 +175,7 @@ jumpします。[p]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 ;【背景】庭を明るめ加工（ふすまが開いて廊下の光が入る演出的な）
-[bg method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=500]
 [wait time=10]
 [preload storage="data/fgimage/kuroda/base_haori.png"]
 [preload storage="data/fgimage/kuroda/base_haori_hohosome.png"]
@@ -213,7 +215,7 @@ jumpします。[p]
 *scene3
 
 ;【背景】暗転黒背景、会話ウィンドウは残る
-[bg storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="toumei.gif" time=500]
 [wait time=10]
 ;【立ち絵】主人公：下がり眉伏目（不安）
 [主人公困り]
@@ -244,7 +246,7 @@ jumpします。[p]
 [eval exp="sf.FButton='OFF'"]
 
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
-[bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
 [wait time=10]
 ;黒田画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [chara_new name="kuroda_base" storage="toumei.gif"]
@@ -307,7 +309,7 @@ jumpします。[p]
 [layopt layer=29 visible=true]
 [image name="jumbi" layer=29 storage="bg/bg_ryoutei.jpg" left=1 time=500]
 ;【背景】料亭風の屋内（昼）
-[bg method='crossfade' storage="../fgimage/bg/bg_ryoutei.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_ryoutei.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 ;================================================================
@@ -850,7 +852,7 @@ jumpします。[p]
 ;【背景】フェードアウト→黒っぽい背景に
 [chara_mod name="bg" storage="toumei.gif" time=500]
 ;【背景】フェードイン：料亭風の屋内（夕）
-[bg method='crossfade' storage="../fgimage/bg/bg_ryouotei_yuu.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_ryouotei_yuu.jpg" time=500]
 [wait time=10]
 
 ;【立ち絵】黒田：通常

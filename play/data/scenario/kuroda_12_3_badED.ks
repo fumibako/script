@@ -24,8 +24,10 @@ $(".rp_bt").remove();
 [wait time=10]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [call target=*start storage="hensuu.ks"]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -45,7 +47,7 @@ $(".rp_bt").remove();
 [freeimage layer = 24]
 [wait time=10]
 ;【背景】庭・夜
-[bg storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
@@ -99,7 +101,7 @@ $(".rp_bt").remove();
 [endif]
 *scene2
 ;ゆっくり暗転
-[bg storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
 [wait time=10]
 [eval exp="f.kaogura='off'"]
 [主人公退場]
@@ -110,7 +112,7 @@ $(".rp_bt").remove();
 
 ;==========================================================================================
 ;【背景】町並み
-[bg storage="../fgimage/bg/bg_machi.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [wait time=10]
@@ -121,7 +123,7 @@ $(".rp_bt").remove();
 [主人公ポーズ通常]
 [wait time=10]
 [主人公伏目]
-[wait time=10]
+[wait time=50]
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
@@ -155,7 +157,7 @@ $('.junbi_girl').remove();
 田中様へ託したものの、心は晴れない。[p]
 
 ;ゆっくり暗転
-[bg storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
 [wait time=10]
 [eval exp="f.kaogura='off'"]
 [主人公退場]
@@ -164,7 +166,7 @@ $('.junbi_girl').remove();
 ――不安を抱えたまま、時が経ち[p]
 ;==========================================================================================
 ;画面切り替え【背景】「主人公邸」
-[bg storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;主人公復帰表情目閉じ　ポーズ通常
@@ -244,7 +246,7 @@ $('.junbi_girl').remove();
 
 ;【背景】黒背景（完全な黒か、和紙風の黒っぽい背景か考え中。スクリプト組み時に決めます）全画面テキスト、褪せた灰青色文字（場面変化と緊張の色的な）色は仮でスクリプト組む際に調整予定
 ;メッセージレイヤを全画面用に設定変更
-[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
 [wait time=10]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 
@@ -296,7 +298,7 @@ $('.junbi_girl').remove();
 [r]
 [sp]　　　　　　　　完[p]
 [stopbgm]
-[bg storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
 [wait time=10]
 [clearfix]
 [cm]
@@ -307,7 +309,7 @@ $('.junbi_girl').remove();
 
 [if exp="f.flag_replay == true"]
 [イベントシーン終了]
-[bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [wait time=10]
 @jump storage=replay2.ks
 [endif]

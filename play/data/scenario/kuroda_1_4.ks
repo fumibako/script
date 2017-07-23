@@ -6,8 +6,10 @@
 [clearfix]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
-[image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
+[wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=50]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -26,7 +28,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸_庭
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=0]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=0]
 [wait time=10]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]

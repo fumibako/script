@@ -14,7 +14,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;◆ スチル表示:chara_modだとなぜかすぐ消えることがあるため[bg]タグに切り替えています
-[bg storage="../fgimage/bg/kuroda_goodED.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/kuroda_goodED.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　かいこ'"]
 [cg storage="kuroda_normalED.jpg"]
@@ -93,10 +93,10 @@
 [layopt layer=29 visible=true]
 [wait time=10]
 ;背景変更:手紙
-[bg storage="../fgimage/toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/toumei.gif" time=500]
 [wait time=10]
-[image layer=29 x=1 y=1 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
-[wait time=10]
+[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
+[wait time=500]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [wait time=10]
 
@@ -125,7 +125,7 @@
 [ct]
 [clearfix]
 [clearstack]
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
 [wait time=10]
 ;テキスト全画面
 [font color=white size=27]
@@ -160,7 +160,7 @@
 [wait time=10]
 ;回想
 ;【背景】主人公邸_庭
-[bg storage="../fgimage/bg/room_niwa.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【テキスト枠】会話パート用 下部横長
@@ -225,7 +225,7 @@
 #
 
 ;【背景】プロローグと同じ黒っぽい和紙風、全画面テキスト
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
 [wait time=10]
 [主人公退場]
 [wait time=10]
@@ -262,7 +262,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　完[p]
-[bg storage="../fgimage/toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/toumei.gif" time=1000]
 [wait time=10]
 [clearfix]
 [wait time=10]
@@ -274,7 +274,7 @@
 [if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [イベントシーン終了]
-[bg storage="../fgimage/bg/plane_sepia.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=1000]
 [wait time=10]
 @jump storage="replay2.ks"
 [endif]
