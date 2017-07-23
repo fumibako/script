@@ -92,7 +92,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄さま！」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「[名前]ちゃん会いたかったよ」[p]
+「[名前]ちゃん、会いたかったよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私もです、華織お兄さま！」 [p]
 #
@@ -113,8 +113,8 @@
 #
 [bg storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
 #
-華織お兄さまは、私の髪飾りに花を添えると、夢のような足取りでワルツを[r]
-舞う。[p]
+華織お兄さまは、私の髪飾りに花を添えると、夢のような足取りで[r]
+ワルツを舞う。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうしてかしら？ 私、踊れてしまってるわ」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -127,7 +127,8 @@
 ;【SE】衣擦れ（スッ）
 [playse storage=kinuzure.ogg loop=false ]
 #
-華織お兄様は、静かに呟くと私の頬にご自身の頬を慈しむようにあてられた。[p]
+華織お兄様は、静かに呟くと[r]
+私の頬に御自身の頬を慈しむようにあてられた。[p]
 ;キスはないからなー
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織お兄様、懐かしくて優しい気持ちになるわ……。[r]
@@ -142,7 +143,7 @@
 [playse storage=tokei_tokei_kane.ogg loop=false]
 [bg storage="../fgimage/bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name="華織お兄さま" color="olivedrab"]
-「[名前]ちゃん、僕は、もうそろそろ行かないと」[p]
+「[名前]ちゃん。 僕は、もうそろそろ行かないと」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうしてですか？！　私、もう子供じゃないのに！」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -165,11 +166,12 @@
 [kanim name="saku1" keyframe="animation1" time="7000" ]
 [bg storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
 #
-伸ばした手は、子供のように小さく、華織お兄"さま"には届きそうにない。[r]
-花吹雪に包まれ、華織お兄さまの声は遠ざかっていった。[p]
+伸ばした手は、子供のように小さく、華織お兄"さま"には届きそうにない。[p]
 [iscript]
 $('.saku1').remove();
 [endscript]
+#
+花吹雪に包まれ、華織お兄さまの声は遠ざかっていった。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん 、頑張ってね……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
