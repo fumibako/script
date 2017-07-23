@@ -106,8 +106,23 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな！ だって……大人になる為の決まりですもの」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「さぁ、[名前]ちゃん。君に好きな花をあげよう。そしてワルツを踊[r]
-[sp]ろうか」[p]
+「さぁ、[名前]ちゃん。君に好きな花をあげよう」
+;そして　は夢の中でおかしいことを示してましたが違和感あるようなので修正
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「綺麗！」[p]
+#
+鮮やかなバラの中に、淑女らしい花が一輪、キラキラと輝いていた。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(この花の名前は……)[p]
+#
+渡されたバラからは、甘い香りがフワリと漂い、[r]
+まどろむが心が、花の形を[ruby text=かす]霞ませる。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様、この花の名前は……？」
+#
+花の名を尋ねかけた時、華織様は、不思議なことを言い出した。[p]
+[whosay name="華織お兄さま" color="olivedrab"]
+「それでは、一緒にワルツを踊ろうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ？！」[p]
 #
