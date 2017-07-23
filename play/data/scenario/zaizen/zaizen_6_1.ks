@@ -26,7 +26,7 @@
 
 [イベントシーン構築枠茶色]
 ;【背景】財前邸居間
-[bg method='crossfade' storage="../fgimage/bg/test_room_zaizen_ima.jpg"  time=1000]
+[bg method='crossfade' storage="../fgimage/bg/test_room_zaizen_ima.jpg"  time=1000 wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 
 [whosay name="女中"]
@@ -150,7 +150,7 @@
 [image name="junbi" layer=29 x=0 y=0 storage="bg/bg_okeiko.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=100 wait=true]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
