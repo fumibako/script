@@ -20,7 +20,7 @@
 ;背景変更:主人公邸_お稽古部屋
 [freeimage layer = 1]
 [wait time=10]
-[bg storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [wait time=10]
@@ -426,6 +426,7 @@ $('.junbi_girl').remove();
 	[layopt layer=26 visible=true]
 	[layopt layer=27 visible=true]
 	[image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
+	[wait time=10]
 		[ptext text=&f.binsen_toutyaku_info1 layer=27 size=21 x=290 y=150 color=darkslateblue bold=bold]
 		[ptext text=&f.binsen_toutyaku_info2 layer=27 size=21 x=290 y=185 color=darkslateblue bold=bold]
 ;【SE】キラキラ

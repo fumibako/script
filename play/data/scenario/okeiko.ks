@@ -73,6 +73,8 @@
 [eval exp="f.tukihajime = 0"]
 [wait time=10]
 [お稽古ボタン表示]
+;毎週休憩終わりにautosaveが入るようにしてみます(調整するかもしれません
+[autosave]
 [s]
 
 
@@ -453,7 +455,7 @@ f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
 ;◆月始めのみ…背景変更:月始め切り替え背景
 [freeimage layer = 1]
 [eval exp="f.okeiko_bg_tukihajime = '../fgimage/bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
-[bg storage=&f.okeiko_bg_tukihajime time=50]
+[bg wait=true storage=&f.okeiko_bg_tukihajime time=50]
 [wait time=10]
 ;【SE】スズメのさえずり
 [playse storage=tori_suzume.ogg loop=false ]

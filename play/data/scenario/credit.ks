@@ -4,7 +4,7 @@
 ;背景変更:プロローグイントロ全画面
 ;[chara_mod name="bg" storage="bg/bg_web_blue2.jpg" time=50]
 [freeimage layer=1]
-[bg storage="../fgimage/bg/bg_web_blue2.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/bg_web_blue2.jpg" time=0]
 
 ;-----設定タグここから-----
 

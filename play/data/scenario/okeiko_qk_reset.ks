@@ -77,6 +77,7 @@
 ;◆「休憩中」画像表示
 [layopt layer=26 visible=true]
 [image layer=26 x=334 y=155 storage="button/qk_anim01.png"]
+[wait time=10]
 *qk_gazou_owari
 
 ;主人公L画像仮表示【登場時にchara_new使用。後はマクロで切り替え】

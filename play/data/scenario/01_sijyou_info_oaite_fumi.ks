@@ -1086,7 +1086,8 @@
 $('.info_face').remove();
 [endscript]
 ;同じlayer26なのでいらないかと
-[image layer=26 x=1 y=1 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
+[image layer=26 x=0 y=0 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
+[wait time=10]
 [eval exp="tf.x_info = 1"]
 [eval exp="tf.y_info = 1"]
 ;[if exp="f.sijyou_au == 0"]
@@ -1097,16 +1098,19 @@ $('.info_face').remove();
 [if exp="f.sijyou_au == 1 && f.sijyou_omiai == 1 && f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.event_sijyou[15] == 1 && f.para_shujinkou_j_kadou >= 50"]
 	;カラー画像(表情ほほえみ：goodED条件を満たした時の指標)：お見合い済＜シナリオにあったフラグを使用　好感度80以上かつ淑女度80以上 祖母イベントをみている（≒華道展のイベントをみている）かつ 華道50以上
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_smail.png" zindex=2]
+[wait time=10]
 	@jump target=*info_face_sijyou_owari
 [endif]
 [if exp="f.sijyou_au == 1 && f.para_sijyou_koukando >= 40 && f.sijyou_omiai == 1"]
 	;カラー画像(表情通常：normal以上のEDの可能性を示す指標)：好感度40以上　お見合い済＜シナリオにあったフラグを使用
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_color.png" zindex=2]
+[wait time=10]
 	@jump target=*info_face_sijyou_owari
 [endif]
 [if exp="f.sijyou_au == 1 && f.para_sijyou_koukando < 40 && f.sijyou_omiai == 1"]
 	;セピア画像(badEDの可能性を示す指標)：好感度40未満 お見合い済＜シナリオにあったフラグを使用
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_sepia.png" zindex=2]
+[wait time=10]
 	@jump target=*info_face_sijyou_owari
 [endif]
 *info_face_sijyou_owari

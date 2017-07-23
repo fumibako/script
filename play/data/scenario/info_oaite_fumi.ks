@@ -7,7 +7,7 @@
 ;↓読み込み不良対策。終了処理ラベルを真っ先に読む
 *fumibako_owari
 ;背景変更:主人公邸_お稽古部屋
-[bg method='crossfade' storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [wait time=10]
@@ -26,7 +26,7 @@
 
 *info_owari
 ;背景変更:主人公邸_お稽古部屋
-[bg method='crossfade' storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [wait time=10]
@@ -1257,7 +1257,8 @@
 [eval exp="f.viewing_storage = 'info_oaite_fumi.ks'"]
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
-[image layer=26 x=1 y=1 storage="bg/bg_fumibako.jpg"]
+[image layer=26 x=0 y=0 storage="bg/bg_fumibako.jpg"]
+[wait time=30]
 
 [iscript]
 f.fumibako_max_page = Math.ceil(f.fumi_all_number / 10);
@@ -1465,20 +1466,24 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 
 *info_kuroda_hyouji
 [image layer=26 x=0 y=0 storage="bg/bg_info_kuroda.jpg"]
+[wait time=10]
 
 ;◆ 黒田ルート：goodED条件パラメータ・フラグを満たした場合：カラーほほえみ肖像
 [if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1 && f.para_kuroda_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.para_shujinkou_j_gogaku >= 80 && f.event_machi_kuroda[2] == 1"]
 	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_smile.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_kuroda_owari
 [endif]
 ;◆ 黒田ルート：normalED条件パラメータ・フラグを満たした場合：カラー肖像
 [if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2] == 1"]
 	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_color.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_kuroda_owari
 [endif]
 ;◆ 黒田ルート：normalED条件未満の場合：セピア肖像
 [if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1"]
 	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_sepia.png" zindex=2]
+	[wait time=10]
 [endif]
 *info_face_kuroda_owari
 
@@ -1656,23 +1661,27 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [s]
 ;======================================================================================
 *info_zaizen_hyouji
-[image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_zaizen.jpg"]
+[image layer=26 x=0 y=0 storage="bg/I9IhvvVdPo/bg_info_zaizen.jpg"]
+	[wait time=10]
 ;◆財前フェイス
 [eval exp="tf.x_info = 0"]
 [eval exp="tf.y_info = 0"]
 [if exp="f.zaizen_au == 1 && f.event_zaizen[1] == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80"]
 	;face_zaizen_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.zaizen_au == 1 && f.para_zaizen_koukando >= 80 &&  f.para_shujinkou_j_reihou >= 80 && f.para_shujinkou_shukujodo >= 80※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_smile.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_zizen_owari
 [endif]
 [if exp="f.zaizen_au == 1 && f.event_zaizen[1] == 1 && f.para_zaizen_koukando >= 50"]
 	;face_zaizen_color.png：(normalED条件のパラメータやフラグを満たす場合) f.zaizen_au == 1 && f.para_zaizen_koukando >= 50※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_color.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_zizen_owari
 [endif]
 [if exp="f.zaizen_au == 1 && f.event_zaizen[1] == 1"]
 	;・face_zaizen_sepia.png：(normalED条件未満) f.zaizen_au == 1
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_zaizen_sepia.png" zindex=2]
+	[wait time=10]
 	;@jump target=*info_face_zizen_owari
 [endif]
 
@@ -1904,23 +1913,27 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;======================================================================================
 *info_katuraginomiya_hyouji
 ;◆葛城宮フェイス　（画像がないので仮位置で調整しています）
-[image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
+[image layer=26 x=0 y=0 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
+[wait time=10]
 ;！！以下画像できるまで！！
 [eval exp="tf.x_info = 0"]
 [eval exp="tf.y_info = 0"]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_shukujodo >= 100 && f.para_shujinkou_j_sadou >= 80"]
 	;face_katuraginomiya_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_smile.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_katuraginomiya_owari
 [endif]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40"]
 	;face_katuraginomiya_color.png：(normalED条件のパラメータやフラグを満たす場合) f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_color.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_katuraginomiya_owari
 [endif]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando < 40"]
 	;face_katuraginomiya_sepia.png：(normalED条件未満) f.katuraginomiya_au == 1
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_katuraginomiya_owari
 [endif]
 *info_face_katuraginomiya_owari
@@ -2100,38 +2113,45 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 ;======================================================================================
 *info_hujieda_hyouji
 [freeimage layer = 26]
-[image layer=26 x=1 y=1 storage="bg/I9IhvvVdPo/bg_info_hujieda.jpg"]
+[image layer=26 x=0 y=0 storage="bg/I9IhvvVdPo/bg_info_hujieda.jpg"]
+	[wait time=10]
 ;◆ 藤枝フェイス
 [eval exp="tf.x_info = 0"]
 [eval exp="tf.y_info = 0"]
 [if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 && f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70 && (f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3))"]
 	;face_hujieda_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_smile_yuubin.png" zindex=2]	
+	[wait time=10]
 	@jump target=*info_face_hujieda_owari	
 [endif]
 [if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 && f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70 && ((f.okeiko_month == 9 && f.okeiko_week == 4) || f.okeiko_month >= 10 || f.okeiko_month <= 3)"]
 	;face_hujieda_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.hujieda_au == 1 && f.para_hujieda_koukando >= 80 &&  f.para_shujinkou_j_koto >= 80 && f.para_shujinkou_shukujodo >= 70※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_smile_sifuku.png" zindex=2]	
+	[wait time=10]
 	@jump target=*info_face_hujieda_owari	
 [endif]
 [if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 40 && (f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3))"]
 	;face_hujieda_color.png：(normalED条件のパラメータやフラグを満たす場合) f.hujieda_au == 1 && f.para_hujieda_koukando >= 40
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_color_yuubin.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_hujieda_owari	
 [endif]
 [if exp="f.hujieda_au == 1 && f.para_hujieda_koukando >= 40 && ((f.okeiko_month == 9 && f.okeiko_week == 4) || f.okeiko_month >= 10 || f.okeiko_month <= 3)"]
 	;face_hujieda_color.png：(normalED条件のパラメータやフラグを満たす場合) f.hujieda_au == 1 && f.para_hujieda_koukando >= 40
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_color_sifuku.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_hujieda_owari	
 [endif]
 [if exp="f.hujieda_au == 1 && (f.okeiko_month == 9 && (f.okeiko_week == 2 || f.okeiko_week == 3))"]
 	;face_hujieda_sepia.png：(normalED条件未満) f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month >= 10 || f.okeiko_month <= 3)※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_sepia_yuubin.png" zindex=2]
+	[wait time=10]
 	@jump target=*info_face_hujieda_owari	
 [endif]
 [if exp="f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week == 4) || f.okeiko_month >= 10 || f.okeiko_month <= 3)"]
 	;face_hujieda_sepia.png：(normalED条件未満) f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month >= 10 || f.okeiko_month <= 3)※これはコメント
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_hujieda_sepia_sifuku.png" zindex=2]
+	[wait time=10]
 [endif]
 *info_face_hujieda_owari
 ;======================================================================================

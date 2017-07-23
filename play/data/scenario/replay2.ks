@@ -90,7 +90,8 @@ $(".rp_bt").remove();
 [cm]
 
 
-[bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[wait time=10]
 ;タイトルで使うことを想定＿[chara_mod name="bg" storage="../fgimage/bg/plane_sepia.jpg" time=100]
 ;[layopt layer=1 visible=true]
 ;[chara_new name="bg" storage="bg/plane_sepia.jpg"]
@@ -110,6 +111,7 @@ $(".rp_bt").remove();
 
 *replaypage
 [image name="loding_pic1" layer=3 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=580]
 
 [if exp="tf.preload_on != 1"]
 ;一回のみ読み込む
@@ -352,7 +354,7 @@ $('.loding_pic1').remove();
 [freeimage layer=2]
 [freeimage layer=1]
 ;[chara_mod name="bg" storage="bg/title.jpg"]
-[bg storage="toumei.gif" time=1]
+[bg wait=true storage="toumei.gif" time=1]
 [iscript]
 $(".layer_free").css("opacity",1);
 $(".layer_2").css("opacity",1);
@@ -369,6 +371,7 @@ $(".layer_2").css("opacity",1);
 
 *nextpage
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=10]
 [emb exp="tf.page++;"]
 [clearstack]
 [freeimage layer=2]
@@ -378,6 +381,7 @@ $(".layer_2").css("opacity",1);
 
 *backpage
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=10]
 [emb exp="tf.page--;"]
 [clearstack]
 [freeimage layer=2]
@@ -385,7 +389,7 @@ $(".layer_2").css("opacity",1);
 @jump target="*replaypage"
 
 *clickcg
-[bg storage="toumei.gif" time=1]
+[bg wait=true storage="toumei.gif" time=1]
 [stopbgm]
 [cm]
 [freeimage layer = 2]

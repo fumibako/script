@@ -166,6 +166,7 @@ f.skip=false;
 [back storage="toumei.gif" time=1]
 [cm]
 [freeimage layer=1]
+[wait time=10]
 [iscript]
 $('.loding_pic1').remove();
 [endscript]

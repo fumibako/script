@@ -99,11 +99,15 @@
 ;◆お稽古イメージ画像を表示
 [eval exp="f.okeiko_image = 'button/okeiko_'+f.okeiko_kamoku+'.png'"]
 [freeimage layer = 26]
+[wait time=10]
 [layopt layer=26 visible=true]
 [freeimage layer = 27]
+[wait time=10]
 [layopt layer=27 visible=true]
 [image layer=26 x=250 y=20 storage="button/frame_lesson_message.png"]
+[wait time=10]
 [image layer=26 x=334 y=155 storage=&f.okeiko_image]
+[wait time=10]
 [ptext text="……　お稽古中　……" layer=27 size=23 x=370 y=65 color=darkslateblue bold=bold]
 [wait time=500]
 
@@ -245,7 +249,9 @@ if(f.okeiko_para_pre_random_1_3==0){
 
 ;◆お稽古終わり。イメージ画像を消す
 [freeimage layer = 26]
+[wait time=10]
 [freeimage layer = 27]
+[wait time=10]
 
 ;◆主人公立ち絵とフキダシを戻す
 [chara_mod name="girl_base" storage="toumei.gif" time=0]

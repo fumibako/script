@@ -42,7 +42,7 @@
 [freeimage layer = 29]
 
 ;背景表示(表情鑑賞から「おまけに戻る」時も切り替わるように)
-[bg storage="../fgimage/bg/title.jpg" time=1]
+[bg wait=true storage="../fgimage/bg/title.jpg" time=1]
 ;タイトルに戻る
 [button fix=true graphic="back.png" target="*backtitle" x=870 y=20 ]
 
@@ -64,6 +64,7 @@ $(".layer_2").css("opacity",0);
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　四条" x=50 y=200 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=60 width=200 height=130]
+[wait time=10]
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=50 y=200 size=17 color=navy visible=true]
 [endif]
 
@@ -73,6 +74,7 @@ $(".layer_2").css("opacity",0);
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　財前" x=270 y=200 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=60 width=200 height=130]
+[wait time=10]
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=270 y=200 size=17 color=navy visible=true]
 [endif]
 
@@ -82,6 +84,7 @@ $(".layer_2").css("opacity",0);
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　黒田" x=50 y=380 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 x=50 y=240 width=200 height=130 storage="../fgimage/bg/cg_bg.jpg"]
+[wait time=10]
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=50 y=380 size=17 color=navy visible=true]
 [endif]
 
@@ -90,6 +93,7 @@ $(".layer_2").css("opacity",0);
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　葛城宮" x=270 y=380 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=270 y=240 width=200 height=130]
+[wait time=10]
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=270 y=380 size=17 color=navy visible=true]
 [endif]
 
@@ -98,6 +102,7 @@ $(".layer_2").css("opacity",0);
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　藤枝" x=50 y=560 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=420 width=200 height=130]
+[wait time=10]
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=50 y=560 size=17 color=navy visible=true]
 [endif]
 @jump target ="*common"
@@ -118,7 +123,7 @@ $('.loding_pic1').remove();
 [freeimage layer=2]
 [freeimage layer=1]
 ;[chara_mod name="bg" storage="bg/title.jpg"]
-[bg storage="../fgimage/bg/title.jpg" time=1]
+[bg wait=true storage="../fgimage/bg/title.jpg" time=1]
 [iscript]
 $(".layer_free").css("opacity",1);
 $(".layer_2").css("opacity",1);

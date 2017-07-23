@@ -7,12 +7,13 @@
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[wait time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 [freeimage layer = 1]
 [wait time=10]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
@@ -85,13 +86,13 @@
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築]
 ;主人公復帰表情　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[wait time=300]
 [主人公ポーズ通常]
 [主人公通常]
 [iscript]
@@ -122,13 +123,14 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[wait time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 
 [freeimage layer = 1]
 [wait time=10]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
@@ -255,12 +257,13 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[wait time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 [freeimage layer = 1]
 [wait time=10]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
@@ -323,14 +326,14 @@ $('.junbi_girl').remove();
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築]
 
 ;主人公復帰表情　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[wait time=300]
 [主人公ポーズ通常]
 [主人公通常]
 [iscript]
@@ -369,13 +372,14 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[wait time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 
 [freeimage layer = 1]
 [wait time=10]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
@@ -455,13 +459,14 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[wait time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 
 [freeimage layer = 1]
 [wait time=10]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
@@ -548,13 +553,14 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
 [image name="loding_pic" layer=29 x=1 y=1 storage="bg/bg_kinari_sakura.jpg" time=500]
+[wait time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 
 [freeimage layer = 1]
 [wait time=10]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
@@ -586,7 +592,7 @@ $('.junbi_girl').remove();
 [freeimage layer = 1]
 [wait time=10]
 ;背景:町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [stopbgm]
