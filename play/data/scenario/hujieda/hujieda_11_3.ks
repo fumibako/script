@@ -35,7 +35,7 @@ $('.list').remove();
 [wait time=10]
 ;@layopt layer=1 visible=true
 ;【背景】主人公邸 庭の見える部屋：夜
-;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=30]
+;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=30 wait=true]
 [bg storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
 [wait time=10]
 ;[chara_new name="bg" storage="bg/room_niwa_yoru.jpg"]
@@ -189,7 +189,7 @@ $('.list').remove();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 玄関 （裏で画面構成）
-[bg storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[bg storage="../fgimage/bg/bg_genkan.jpg" time=100 wait=true]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [表示準備 storage="bg/bg_genkan.jpg"]
