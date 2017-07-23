@@ -13,7 +13,7 @@
 [wait time=10]
 ;【背景】 ミルクホール玄関外
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１,　architecural　design　by　◆I9IhvvVdPo'"]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutest.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutest.jpg" time=50 wait=true]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -107,7 +107,7 @@
 ;==========================
 
 ;【背景】ミルクホール店内ピアノ
-[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=50 wait=true]
 ;===================================藤枝を表準備します。=====================================================
 ;ピアノベース藤枝(目なし)レイヤー１
 [image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
@@ -173,7 +173,7 @@ $('.junbi_girl').remove();
 [iscript]
 $('.oto').remove();
 [endscript]
-;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの
+;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの 次のシナリオにかぶっていいので wait=trueはなし
 [bg storage="toumei.gif" time=1300]
 ;==============================================================================
 ;[SE拍手]長めがいいかもしれない
@@ -187,7 +187,7 @@ $('.oto').remove();
 藤枝様に花屋で買ったコリウスと手紙をそっと差し出した。[p]
 ;==============================================================================
 ;【背景】ミルクホール店内ピアノ
-[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100 wait=true]
 [eval exp="f.haikei_credit=''"]
 [表示準備 storage="bg/bg_fujieda_piano_1.jpg"]
 ;==============================================================================
@@ -307,7 +307,7 @@ $('.oto').remove();
 [表示準備 storage="bg/B4nFWraU42/mirukutennai.jpg" layer=29 time=1300]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [藤枝退場]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=50 wait=true]
 [freeimage layer=29 time=500]
 ;ボタン表示
 [layopt layer=fix visible=true]
@@ -346,7 +346,7 @@ $('.oto').remove();
 [layopt layer=fix visible=false]
 [表示準備 storage="bg/anten.jpg" layer=29 time=1300]
 ;【背景】客席
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [freeimage layer=29 time=500]
 ;セーブボタン解除
@@ -381,7 +381,7 @@ $('.oto').remove();
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】背景:レトロな喫茶店（玄関）
 [eval exp="f.haikei_credit='a　part　of　design　by　◆I9IhvvVdPo,　edited　by　＠名無しさん１'"]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" time=50 wait=true]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
