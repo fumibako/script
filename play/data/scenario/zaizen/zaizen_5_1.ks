@@ -19,7 +19,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -30,7 +30,7 @@
 ;=====================ここからお芝居の幕引きです===============================
 *seen1
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [主人公通常]
 [whosay name=磯野 color="dimgray"]
