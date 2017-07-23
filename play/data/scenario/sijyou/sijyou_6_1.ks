@@ -80,7 +80,7 @@
 [whosay name="？？？"]
 「[名前]……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（誰かしら？ ……顔は見えないけれど声はするわ[r]
+（誰かしら？ ……顔は見えないけれど声はするわ。[r]
 [sp]優しくて懐かしいような声……）[p]
 ;キャライメージ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -88,7 +88,7 @@
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん。 こっちだよ」[p]
 #
-その優しい声の主は、華織お兄さまであった[p]
+その優しい声の主は、華織お兄"さま"であった[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄さま！」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -96,7 +96,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私もです、華織お兄さま！」 [p]
 #
-華織お兄"さま"が、私の身体を優しく包む。[r]
+華織お兄さまが、私の身体を優しく包む。[r]
 ;私の小さな身体を　にしましたが自分で言っているのは違和感
 まるで、あの日の子供に返ったようだった。[p]
 
@@ -127,7 +127,7 @@
 ;【SE】衣擦れ（スッ）
 [playse storage=kinuzure.ogg loop=false ]
 #
-華織お兄様は、静かに呟くと私の頬にご自身の頬をあてて抱きしめる。[p]
+華織お兄様は、静かに呟くと私の頬にご自身の頬を慈しむようにあてられた。[p]
 ;キスはないからなー
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織お兄様、懐かしくて優しい気持ちになるわ……。[r]
