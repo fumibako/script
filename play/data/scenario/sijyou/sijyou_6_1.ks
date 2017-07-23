@@ -106,8 +106,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そんな！ だって……大人になる為の決まりですもの」 [p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「さぁ、[名前]ちゃん。君に好きな花をあげよう」
-;そして　は夢の中でおかしいことを示してましたが違和感あるようなので修正
+「さぁ、[名前]ちゃん。君に好きな花をあげよう」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「綺麗！」[p]
 #
@@ -118,7 +117,7 @@
 渡されたバラからは、甘い香りがフワリと漂い、[r]
 まどろむが心が、花の形を[ruby text=かす]霞ませる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様、この花の名前は……？」
+「華織様、この花の名前は……？」[p]
 #
 花の名を尋ねかけた時、華織様は、不思議なことを言い出した。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
