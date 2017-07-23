@@ -365,6 +365,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 *test05
 [cm]
 [freeimage layer = 26]
+[bg storage="../fgimage/bg/room_niwa.jpg" time=100]
 @jump storage="opening2.ks"
 [s]
 
