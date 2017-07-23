@@ -133,7 +133,7 @@ $('.loding_pic1').remove();
 ;◆[表示準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。主人公部屋には攻略対象こないので
 [macro name=表示準備]
 [image name="jyunbi" storage=%storage|bg/bg_machi.jpg left=0 top=0 layer=%layer|13 zindex=%zindex|1 visible=true time=%time|30]
-[wait time=%time|30]
+[wait time=%time|50]
 [endmacro]
 
 ;◆[四条退場準備 storage="bg/bg_machi.jpg"]　デフォルトは町画像。
