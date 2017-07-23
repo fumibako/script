@@ -11,7 +11,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 お稽古部屋
- [bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=30]
+ [bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=30 wait=true]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -164,7 +164,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 #
 [暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
- [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=100]
+ [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=100 wait=true]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
 [暗転２終了]
@@ -231,7 +231,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 ;【背景】主人公邸 玄関
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000 wait=true]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [表示準備 storage="bg/bg_genkan.jpg" layer=29]
 [表示準備 storage="bg/bg_genkan.jpg"]
