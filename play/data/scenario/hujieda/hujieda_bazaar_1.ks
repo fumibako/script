@@ -13,7 +13,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】背景ミルクホール
-[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100 wait=true]
 [eval exp="f.haikei_credit=''"]
 [プリロード画面消去]
 ;=========================================================================
@@ -197,7 +197,7 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;テキスト全画面
 [font color=white size=27]
