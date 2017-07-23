@@ -11,7 +11,7 @@
 [call target=*start storage="macro_tati_hujieda.ks"]
 [freeimage layer = 1]
 [wait time=10]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ongakurensyuusitu.jpg" time=30]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ongakurensyuusitu.jpg" time=30 wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
@@ -175,7 +175,7 @@
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -235,7 +235,7 @@
 [主人公目閉]
 [暗転]
 ;【背景】主人公邸 玄関　
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ほほえみ]
 ;============================================================================================
@@ -254,7 +254,7 @@
 ;============================================================================================
 [暗転２]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000 wait=true]
 [暗転２終了]
 [layopt layer=fix visible=true]
 ;============================================================================================
@@ -293,7 +293,7 @@
 [主人公通常]
 ;【背景】観客席
 [eval exp="f.haikei_credit='　　'"]
-[bg method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100 wait=true]
 [暗転２終了]
 ;============================================================================================
 ;【立ち絵】主人公：真剣
@@ -453,7 +453,7 @@ $('.piano_base_me').remove();
 [暗転２]
 ;【背景】観客席　暗転のほうがいいかも
 [eval exp="f.haikei_credit='　　'"]
-[bg method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100 wait=true]
 [暗転２終了]
 ;============================================================================================
 #
@@ -465,7 +465,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [eval exp="f.haikei_credit='　　'"]
 [暗転２ storage="bg/situnaiongaku.jpg" time=1300]
-[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100 wait=true]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/situnaiongaku.jpg"]
 [暗転２終了]
@@ -609,7 +609,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [暗転２]
 ;【背景】ピアノホール（遠景）
-[bg method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50 wait=true]
 [藤枝退場]
 [主人公目通常]
 [主人公口ほほえみ]
@@ -636,7 +636,7 @@ $('.piano_base_me').remove();
 ;==============================================================================
 ;【背景】室内音楽堂（近景）
 [暗転２ storage="bg/situnaiongaku.jpg" time=1100]
-[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
+[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100 wait=true]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/situnaiongaku.jpg"]
 ;【立ち絵】藤枝:真剣
@@ -673,7 +673,7 @@ $('.piano_base_me').remove();
 [暗転２]
 [藤枝退場]
 ;【背景】主人公邸 玄関 　主人公退場とメッセージ消すのは構築遅いので、やめよう
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
 [暗転２終了]
@@ -698,7 +698,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
- [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000]
+ [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000 wait=true]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
  [主人公通常]
 [暗転２終了]
@@ -760,7 +760,7 @@ $('.piano_base_me').remove();
 ;============================================================================================
 ;【背景】主人公邸 庭の見える部屋：夜
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[bg method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=1000 wait=true]
 ;============================================================================================
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
