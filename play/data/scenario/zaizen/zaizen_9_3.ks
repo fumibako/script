@@ -12,7 +12,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -86,7 +86,7 @@
 [playse storage=fusuma-open.ogg loop=false ]
 ;=================================================================================================
 ;【背景】庭を明るめ加工（ふすまが開いて廊下の光が入る演出的な）
-[bg method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=500 wait=true]
 
 ;=================================================================================================
 
@@ -121,7 +121,7 @@
 [主人公目閉]
 ;=================================================================================================
 ;【背景】暗転黒背景、会話ウィンドウは残る
-[bg storage="toumei.gif" time=500]
+[bg storage="toumei.gif" time=500 wait=true]
 ;=================================================================================================
 [主人公口通常]
 [主人公目伏]
@@ -147,7 +147,7 @@
 [eval exp="sf.FButton='OFF'"]
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
 ;【背景】料亭風の屋内（昼）
-[bg method='crossfade' storage="../fgimage/bg/bg_ryoutei.jpg" time=500]
+[bg method='crossfade' storage="../fgimage/bg/bg_ryoutei.jpg" time=500 wait=true]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 ;【立ち絵】の設定
@@ -437,8 +437,8 @@
 
 ;=================================================================================================
 [暗転２]
-;【背景】料亭廊下だと思います
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg" time=600]
+;【背景】料亭庭_橋
+[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_katuraginomiya_sinrin_kouen.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [暗転２終了]
 ;=================================================================================================
@@ -465,9 +465,9 @@
 #
 ;=================================================================================================
 [暗転２]
-;［背景庭］
-;【背景】庭園　料亭の庭だと思いますので変更
-[bg method='crossfade' storage="../fgimage/bg/bg_teien_ishidatami.jpg" time=500]
+
+;【背景】庭園　料亭の庭
+[bg method='crossfade' storage="../fgimage/bg/bg_teien_ishidatami.jpg" time=500 wait=true]
 [eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;=================================================================================================
@@ -620,7 +620,7 @@
 [暗転２]
 [主人公憂い]
 ;【背景】料亭風の屋内（昼）
-[bg method='crossfade' storage="../fgimage/bg/bg_ryoutei.jpg" time=1000]
+[bg method='crossfade' storage="../fgimage/bg/bg_ryoutei.jpg" time=1000 wait=true]
 [eval exp="f.haikei_credit='photo　by　usagi_s　フリー素材屋Hoshino　http://www.s-hoshino.com/'"]
 [暗転２終了]
 ;=================================================================================================
