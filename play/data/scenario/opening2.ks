@@ -1,6 +1,8 @@
 ﻿﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 	[skipstart]
 [endif]
+[image name="junbi_girl" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
 ;[bg storage="../fgimage/bg/room_niwa.jpg" time=0]
 ;[wait time=10]
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
@@ -27,15 +29,7 @@
 [cm]
 [if exp="f.skip_sentaku == 1"]
 ;「オープニングから」の挙動
-;[call target=*start storage="tyrano.ks"]
 [freeimage layer=1] 
-;消して不具合でるかわからないので画像変更
-;[chara_mod name="bg_effect" storage="toumei.gif"]
-[iscript]
-//$(".bg").attr({src: "./data/fgimage/bg/room_niwa.jpg"});
-[endscript]
-;準備中・・・・・・とメッセージ表示した方が親切かもしれない
-;フラグテスト上に　メッセージ表示
 [endif]
 
 ;背景変更:主人公邸_庭
