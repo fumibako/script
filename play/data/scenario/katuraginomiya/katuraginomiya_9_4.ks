@@ -175,7 +175,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 [主人公憂い]
 [主人公ポーズ通常]
 ;メッセージレイヤを全画面用に設定変更
@@ -194,6 +194,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
@@ -245,7 +246,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [stopbgm]
 ;主人公復帰表情目閉じ　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[wait time=300]
 [主人公ポーズ通常]
 [主人公憂い]
 [iscript]
@@ -426,23 +427,27 @@ $('.junbi_girl').remove();
 
 ;【SE】倒れて腕に受け止められる（フラ…サッ）
 [playse storage=taoreru_udenonakahe.ogg loop=false ]
-[bg storage="toumei.gif" time=1500]
-
+[bg wait=true storage="toumei.gif" time=1500]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （怖かった。けれど殿下が来てくださったわ[r]
 [sp]きっともう大丈夫）[p]
 ;==========================スクリプト===============================
 [暗転２]
+[wait time=10]
 [主人公退場]
 [葛城宮退場]
 ;背景:庭【背景】主人公邸 庭の見える部屋：昼
 [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000 wait=true] 
+[wait time=10]
 [暗転２終了]
+[wait time=10]
 [表示準備 storage="bg/room_niwa.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[wait time=300]
 [主人公ポーズ通常]
 [主人公眉通常]
 [主人公目閉]

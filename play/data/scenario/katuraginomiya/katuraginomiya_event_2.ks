@@ -365,7 +365,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 [主人公退場]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -402,6 +402,7 @@
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_toji.png" time=0]
 [wait time=10]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]

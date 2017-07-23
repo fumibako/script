@@ -389,7 +389,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;裏で表情リセット
 [主人公通常]
 ;メッセージレイヤを全画面用に設定変更
@@ -405,6 +405,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
@@ -500,7 +501,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;裏で表情リセット
 [主人公通常]
 ;メッセージレイヤを全画面用に設定変更
@@ -606,7 +607,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;裏で表情リセット
 [主人公通常]
 ;メッセージレイヤを全画面用に設定変更
@@ -647,6 +648,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;================================以降スクリプト担当====================================================
 ;機能ボタン表示_スクリプト担当さまにおまかせします　
 *seen_end

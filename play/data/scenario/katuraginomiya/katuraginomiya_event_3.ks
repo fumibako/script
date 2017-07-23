@@ -175,7 +175,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [主人公憂い]
@@ -189,6 +189,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更
@@ -237,10 +238,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/gosyo.jpg" time=600]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/gosyo.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -269,6 +270,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [主人公憂い]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;ｸﾘｯｸがみえる場合は追加↓
 ;[layopt layer=message0 visible=true]
 ;機能ボタン表示
@@ -283,7 +285,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 （……宮中の方は私の事をどう思われているのかしら）[p]
 [主人公目伏]
 #
-[bg storage="toumei.gif" time=1500]
+[bg wait=true storage="toumei.gif" time=1500]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 [whosay name="侍従"]
 「[名字]様に事前にお会いしたいとのことで、こちらに親王殿下が[r]
@@ -295,7 +298,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 #
 ;==============================================================================
 [bg method='crossfade' storage="../fgimage/bg/bg_katuraginomiya_gosyo_in.jpg" time=1500 wait=true]
+[wait time=10]
 [表示準備 storage="bg/bg_katuraginomiya_gosyo_in.jpg"]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 [主人公目伏]
 ;==============================================================================
@@ -394,6 +399,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;【テキスト全画面】　茶室 [テキスト全画面白文字無背景]　裏で画面構成
 [layopt layer=fix visible=false]
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/tyasitu.jpg" time=1200 visible=true]
+[wait time=1200]
 [eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo'"]
 ;[mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 ;メッセージレイヤを全画面用に設定変更
@@ -427,8 +433,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
 [bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/gosyo.jpg" time=600 wait=true]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 ;メッセージレイヤを会話窓用に設定変更
@@ -458,6 +466,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
 [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000 wait=true]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ポーズ通常]
 [主人公通常]
@@ -489,11 +498,12 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;一瞬手紙の後ろがみえるので　手紙皇后さま→侍従
 [bg method='crossfade' storage="../fgimage/bg/bg_tegami_kousitsu_jijyuu.jpg" time=50 wait=true]
+[wait time=10]
 ;一瞬見えるメッセージ枠を消したい
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;テキスト全画面
@@ -506,8 +516,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;一瞬手紙の後ろがみえるので　手紙皇后さま→侍従
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=50]
+[wait time=50]
 ;機能ボタン表示
 [layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更

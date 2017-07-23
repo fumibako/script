@@ -83,6 +83,7 @@
 ;[position left=200 width=700 height=530 top=110 page=fore margint="50" opacity=0]
 ;放送局前 をいれた方がいいのでは？
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/housoukyoku.jpg" time=1500 visible=true]
+[wait time=1500]
 ;クレジット表示
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [主人公退場]
@@ -94,6 +95,7 @@
 [葛城宮ベース軍服]
 [葛城宮微笑み]
 [freeimage layer=29 time=300]
+[wait time=300]
 ;画面表示もどる
 [メッセージウィンドウ上ボタン表示]
 ;機能ボタン表示
@@ -213,6 +215,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:演説画像
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/enzetu.jpg" time=1000 visible=true]
+[wait time=1500]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;再配布状態になるのでクレジットを表示
 [mtext name=ct text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -295,6 +298,7 @@ $('.29_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)'
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 [メッセージウィンドウ上ボタン表示]
 ;機能ボタン表示
 [layopt layer=fix visible=true]

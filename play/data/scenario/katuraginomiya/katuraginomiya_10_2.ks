@@ -51,7 +51,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/test_bg_sinbun.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更　文章によっては調整した方がいいようですsc_2
 [position left=150 width=700 height=530 top=110 page=fore margint="50"]
@@ -77,6 +77,7 @@
 [playse storage=paper_open.ogg loop=false ]
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
@@ -111,7 +112,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】会議室（裏で画面構成）
@@ -136,6 +137,7 @@
 [wait time=10]
 ;表示
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -236,6 +238,7 @@
 #
 [layopt layer=fix visible=false]
 [image layer=29 x=0 y=0 storage="bg/anten.jpg" time=2000 visible=true]
+[wait time=2000]
 [葛城宮退場]
 [wait time=10]
 ;メッセージ消去
@@ -244,6 +247,7 @@
 [stopbgm]
 ;暗く全体消えていく演出
 [freeimage layer=29]
+[wait time=10]
 [layopt layer=fix visible=true]
 
 [if exp="f.okeiko_gamen==true"]

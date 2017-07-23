@@ -7,6 +7,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
+[wait time=10]
 [if exp="f.flag_replay==true"]
 ;[bg storage="toumei.gif" time=1]
 [endif]
@@ -86,7 +87,7 @@ $('.list').remove();
 [endif]
 
 ;【背景】玄関
-[bg storage="../fgimage/bg/bg_genkan.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/bg_genkan.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -210,14 +211,15 @@ $('.list').remove();
 皆に別れを告げ、私は精一杯の笑顔を浮かべながら、迎えの車に[r]乗り込んだ。[p]
 ;===============================================================
 [主人公退場]
-[bg storage="../fgimage/bg/I9IhvvVdPo/ekken.jpg" time=1300]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/ekken.jpg" time=1300]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/ekken.jpg" time=1300]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　明治村画像庫2 早川'"]
 [表示準備 storage="bg/I9IhvvVdPo/ekken.jpg"]
+[wait time=10]
 ;主人公復帰表情目閉じ　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[wait time=300]
 [主人公ポーズ通常]
 [主人公通常]
 ;主人公復帰表情消去"
@@ -308,6 +310,7 @@ $('.junbi_girl').remove();
 ;===============================================================
 ;機能ボタン消去
 [暗転２]
+[wait time=10]
 [葛城宮退場]
 ;指定　暗転
 [ct]
@@ -338,9 +341,7 @@ $('.junbi_girl').remove();
 ――十年後。[p]
 ;===============================================================
 ;【背景】青空に桜
-;[chara_mod name="bg" storage="bg/bg_sakura.jpg"]
-[bg storage="../fgimage/bg/bg_EDsakura.jpg" time=0]
-;[chara_mod name="bg" storage="toumei.gif"]
+[bg wait=true storage="../fgimage/bg/bg_EDsakura.jpg" time=0]
 [wait time=50]
 ;[font color="0x663300"]
 [font color=white size=27]
@@ -359,15 +360,16 @@ $('.junbi_girl').remove();
 ;期待を買われ内閣総理大臣となった。[p]
 [resetfont]
 ;===============================================================
-[bg storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" time=0]
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/situmu.jpg"]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" time=0]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [表示準備 storage="bg/I9IhvvVdPo/situmu.jpg" time=1500]
+[wait time=10]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [wait time=50]
 [イベントシーン構築]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[wait time=300]
 ;【立ち絵】主人公目閉じ
 [主人公ポーズ通常]
 [主人公通常]
@@ -460,14 +462,15 @@ $('.junbi_girl').remove();
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
 [image name=end name="anten" layer=29 storage="bg/bg_sakura.jpg" time=1500]
+[wait time=1500]
 [葛城宮退場]
 [主人公退場]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [wait time=10]
-[bg storage="../fgimage/bg/bg_EDsakura.jpg" time=0]
-;[chara_mod name="bg" storage="bg/bg_EDsakura.jpg"]
+[bg wait=true storage="../fgimage/bg/bg_EDsakura.jpg" time=0]
 [freeimage layer=29 time=100]
+[wait time=100]
 ;===============================================================
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]

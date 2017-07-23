@@ -20,9 +20,10 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風_暗
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;【背景】執務室 
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" time=600 wait=true]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -45,6 +46,7 @@ _  　葛城宮家執務室。[p]
 ;[葛城宮ポーズ通常]
 [葛城宮通常]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -141,8 +143,10 @@ _  　葛城宮家執務室。[p]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風bg_prologue_dark.jpg　bg_prologue.jpg
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
+[wait time=1000]
 ;一瞬裏がみえるの防止背景
 [bg method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=50]
+[wait time=10]
 [葛城宮退場]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]

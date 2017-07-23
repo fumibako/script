@@ -107,6 +107,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:新聞
 [image layer=29 x=0 y=0 storage="bg/test_bg_sinbun.jpg" time=1000 visible=true]
+[wait time=1000]
 [wait time=10]
 ;テキスト全画面
 ;メッセージレイヤを全画面用に設定変更
@@ -130,6 +131,7 @@
 [wait time=10]
 [主人公憂い]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]

@@ -358,7 +358,7 @@
 #
 [layopt layer=fix visible=false]
 [image layer=29 x=0 y=0 storage="bg/B4nFWraU42/bara_image.jpg" time=1500 visible=true]
-[wait time=10]
+[wait time=1500]
 [葛城宮退場]
 [wait time=10]
 [主人公退場]
@@ -371,7 +371,7 @@
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 
 [freeimage layer=29 time=600]
-[wait time=10]
+[wait time=600]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝スクリプト担当＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [イベントシーン終了]
 

@@ -21,9 +21,10 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風_暗
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
 [bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50 wait=true]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -62,6 +63,7 @@
 [葛城宮真剣]
 [葛城宮口開]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 [eval exp="sf.FButton='ON'"]
 [cm]
 [メッセージウィンドウ上ボタン表示]
@@ -174,9 +176,10 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風_暗
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;【背景】;背景ttps://www.flickr.com/photos/28752865@N08/5741972861/
 [bg method='crossfade' storage="../fgimage/bg/katuraginomiya_kaigi2.jpg" time=50 wait=true]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -203,6 +206,7 @@
 [葛城宮ベース軍服]
 [葛城宮真剣]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -281,6 +285,7 @@
 ;【背景】臣民教育 ﾚｲﾔｰ13に表示
 ;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_sisou.jpg" time=50 wait=true]
 [image layer=13 x=0 y=0 storage="bg/B4nFWraU42/katuragi_sisou.jpg" time=1000 visible=true]
+[wait time=1000]
 [eval exp="f.haikei_credit='photo by ＠名無しさん１'"]
 ;==========================================================================
 #
@@ -294,6 +299,7 @@
 [eval exp="f.haikei_credit=''"]
 ;【背景】臣民教育 ﾚｲﾔｰ13に表示を消去
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;==========================================================================
 *seen6
@@ -341,6 +347,7 @@
 ;【背景】蟷螂団 ﾚｲﾔｰ13に表示
 ;[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/katuragi_kamakiri.jpg" time=50 wait=true]
 [image layer=13 x=0 y=0 storage="bg/B4nFWraU42/katuragi_kamakiri.jpg" time=1000 visible=true]
+[wait time=1000]
 [eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
 ;==========================================================================
 *seen7
@@ -355,6 +362,7 @@
 [eval exp="f.haikei_credit=''"]
 ;【背景】蟷螂団 ﾚｲﾔｰ13に表示を消去
 [freeimage layer=13 time=1000]
+[wait time=1000]
 [layopt layer=13 visible=true]
 ;==========================================================================
 *seen8

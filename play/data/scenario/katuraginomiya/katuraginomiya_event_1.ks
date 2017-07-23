@@ -303,7 +303,7 @@ jumpします。[p]
 [layopt layer=29 visible=true]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000]
-[wait time=10]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】お稽古部屋
@@ -320,6 +320,7 @@ jumpします。[p]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [locate x=530 y=357]
 [button name="message_save" graphic="button_message_save.png" role=save ]
@@ -398,7 +399,7 @@ jumpします。[p]
 #
 ;主人公復帰表情
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10] 
+[wait time=300] 
 ;【背景】お稽古部屋
 [bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]

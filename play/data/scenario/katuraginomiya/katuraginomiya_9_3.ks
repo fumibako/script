@@ -104,7 +104,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 [主人公伏目]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -124,6 +124,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
@@ -398,6 +399,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [layopt layer=fix visible=false]
 ;背景切り替わってないときにメッセージ表示防止・次画像↓
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=500 visible=true]
+[wait time=500]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [mtext name=".junbi_girl" text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=50 wait=true]
@@ -412,6 +414,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [葛城宮ベース軍服]
 [葛城宮笑顔大]
 [freeimage layer=29 time=500]
+[wait time=500]
 ;ボタン表示
 [layopt layer=fix visible=true]
 ;[メッセージウィンドウ上ボタン表示]
@@ -432,11 +435,13 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;メッセージ＆ボタンを消してから余韻をもって二人同時に消えてください
 [イベントシーン終了]
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
+[wait time=1000]
 [葛城宮退場]
 [wait time=20]
 [stopbgm]
 #
 [freeimage layer=29 time=10]
+[wait time=10]
 
 [if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_owari

@@ -11,6 +11,7 @@
 [wait time=10]
 ;【背景】町並み
 [bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50  wait=true]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -174,7 +175,7 @@
 ;背景変更:和の豪邸　庭
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku1.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;裏で表情リセット
 [主人公通常]
 ;メッセージレイヤを全画面用に設定変更　;テキスト全画面
@@ -236,7 +237,7 @@
 ;背景変更:金平糖
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tokiko_sansaku2.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 [sp][r]
 けれど、その時、彼が一日食事をとらない私を心配して[r]
 女中に手紙と金平糖を託してくれました。[p]
@@ -244,7 +245,7 @@
 ;背景変更:桃　昼
 [eval exp="f.haikei_credit=''"]
 [image layer=29 x=0 y=0 storage="bg/bg_tokiko_sansaku3.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 私、もう気持ちが抑えきれなくてお手紙を書いたのです。[r]
 正直な気持ちを書いた恋文を……。[p]
 
@@ -254,7 +255,7 @@
 
 ;背景変更:桃　夜　[eval exp="f.haikei_credit=''"]
 [image layer=29 x=0 y=0 storage="bg/bg_tokiko_sansaku4.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ハッキリと拒絶された事で、その夜は悲しくて泣き明かしました。[r]
 ……彼は縁談を受け、この家をでればもう会う事もないと。[r]
 [r]
@@ -264,6 +265,7 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]

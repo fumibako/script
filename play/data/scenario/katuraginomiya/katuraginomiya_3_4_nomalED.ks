@@ -28,7 +28,7 @@ $('.list').remove();
 [endif]
 
 ;【背景】公園
-[bg storage="../fgimage/bg/I9IhvvVdPo/kouenn.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/kouenn.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [表示準備 storage="bg/I9IhvvVdPo/kouenn.jpg"]
@@ -156,13 +156,13 @@ $('.list').remove();
 ;【背景】主人公と葛城宮抱擁 仮
 ;◆goodED条件を満たす場合、goodのCGを表示
 [if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
-[bg storage="../fgimage/bg/katuraginomiya_3_4_goodED.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_goodED.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED.jpg"]
 ;◆CGモード用に画像を登録
 [cg storage="katuraginomiya_3_4_goodED.jpg"] 
 [else]
-[bg storage="../fgimage/bg/katuraginomiya_3_4_nomalED.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_nomalED.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED.jpg"]
 ;◆CGモード用に画像を登録
@@ -176,11 +176,11 @@ $('.list').remove();
 殿下は私を抱き上げた。[p]
 ;◆CG2：goodED条件を満たす場合はgood版に切り替え
 [if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
-[bg storage="../fgimage/bg/katuraginomiya_3_4_goodED_2.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_goodED_2.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_2.jpg" time=0]
 [else]
-[bg storage="../fgimage/bg/katuraginomiya_3_4_nomalED_2.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_nomalED_2.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED_2.jpg" time=0]
 [endif]
@@ -194,13 +194,11 @@ $('.list').remove();
 優しい微笑みを浮かべる殿下は、嬉しさをこらえきれないといった様子だ。[p]
 ;◆CG3：goodED条件を満たす場合はgood版に切り替え
 [if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
-[bg storage="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" time=0]
 [wait time=10]
-[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_3.jpg" time=0]
 [else]
-[bg storage="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg" time=0]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/katuraginomiya_3_4_nomalED_3.jpg" time=0]
 [endif]
 そんな殿下の様子に私もつられて微笑んでいた。[p]
 言葉にできないほどの嬉しさが込み上げる。[p]
@@ -215,9 +213,8 @@ $('.list').remove();
 ;CGここまで
 ;【背景】公園
 [暗転２ storage="bg/I9IhvvVdPo/kouenn.jpg"]
-[bg storage="../fgimage/bg/I9IhvvVdPo/kouenn.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/kouenn.jpg" time=50]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/kouenn.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　----'"]
 [葛城宮サイズ隣に並ぶ storage="bg/I9IhvvVdPo/kouenn.jpg"]
 [葛城宮ベース私服]
@@ -294,10 +291,10 @@ $('.list').remove();
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image name=end layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
+[wait time=1000]
 ;一瞬裏がみえるの防止背景
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=50]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 [葛城宮退場]
 [主人公退場]
 ;===============================================================

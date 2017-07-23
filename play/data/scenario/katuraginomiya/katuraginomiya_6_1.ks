@@ -10,19 +10,21 @@
 [freeimage layer = 1]
 [wait time=10]
 [イベントシーン構築ボタン無し版]
-[暗転]
+[暗転１]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
 #
 ;ゆっくり表示　 2000かかる演出なのでwait=trueはなしに
-[bg method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ――夢を見た。[p]
 # 
 [イベントシーン構築枠茶色]
 ;【背景】執務室（裏で画面構成）
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/situmu.jpg" wait=true]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;[表示準備 storage="bg/I9IhvvVdPo/situmu.jpg"]
 
@@ -118,23 +120,27 @@
 
 [whosay name="葛城宮妃" color=%mp.color]
 「そう……お会いするのを楽しみにしています」[p]
-
-[暗転]
+#
+[暗転１]
 ;====================================================
 [fadeoutse time=2000]
 [fadeoutbgm time=3000]
 [layopt layer=fix visible=false]
 [image name="junbi" layer=29 x=0 y=0 storage="bg/room_niwa.jpg" time=2000]
+[wait time=2000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [bg method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=100 wait=true]
+[wait time=10]
 ;【背景】主人公邸 部屋
 [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=100 wait=true]
+[wait time=10]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer=29 time=1000]
+[wait time=1100]
 [layopt layer=fix visible=true]
 [メッセージウィンドウ上ボタン表示]
 ;====================================================

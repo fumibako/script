@@ -9,6 +9,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
+[wait time=10]
 [if exp="f.flag_replay==true"]
 ;[bg storage="toumei.gif" time=1]
 [endif]
@@ -25,9 +26,8 @@ $('.list').remove();
 [endif]
 
 ;【背景】薔薇園 
-[bg storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/baraen.jpg" time=50]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/I9IhvvVdPo/baraen.jpg"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [イベントシーン構築ボタン無し版]
 #
@@ -112,6 +112,7 @@ jumpします。[p]
 
 ;手の甲に接吻シーン
 [暗転２ storage="bg/I9IhvvVdPo/baraen.jpg"]
+[wait time=10]
 [葛城宮サイズ顔アップ storage="bg/I9IhvvVdPo/baraen.jpg"]
 [葛城宮ベース私服]
 [葛城宮通常]
@@ -129,7 +130,7 @@ jumpします。[p]
 [wait time=10]
 
 [葛城宮退場準備 storage="bg/I9IhvvVdPo/baraen.jpg" time=500]
-
+[wait time=500]
 
 #
 [主人公口通常]
@@ -141,14 +142,15 @@ jumpします。[p]
 [layopt layer=fix visible=false]
 ;すべて消えていく暗転
 [表示準備 storage="bg/anten.jpg" layer=29 time=1500]
-;裏で背景変更
-[bg storage="toumei.gif" time=50]
 [wait time=10]
-;[chara_mod name="bg" storage="toumei.gif" time=50]
+;裏で背景変更
+[bg wait=true storage="toumei.gif" time=50]
+[wait time=10]
 [主人公憂い]
 [主人公ポーズ通常]
 [主人公効果消]
 [freeimage layer=29 time=500]
+[wait time=500]
 ;ボタン表示
 [layopt layer=fix visible=true]
 ;=================================================================
@@ -159,9 +161,8 @@ jumpします。[p]
 
 私にもっと強さがあれば、殿下は私を受け入れてくれたのかしら？[p]　
 
-[bg storage="../fgimage/bg/bg_bluesky.jpg" time=1000]
+[bg wait=true storage="../fgimage/bg/bg_bluesky.jpg" time=1000]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/bg_bluesky.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 ;【立ち絵】主人公 通常
  [主人公目伏]
@@ -180,9 +181,9 @@ jumpします。[p]
 *seen_end
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
-[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=50]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
+[bg wait=true storage="../fgimage/bg/bg_prologue_dark.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
