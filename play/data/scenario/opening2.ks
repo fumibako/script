@@ -923,13 +923,20 @@ jumpします。[p]
 *scene18
 *isono_situmon01
 [eval exp="f.select_scene='isono_situmon01'"]
+;主人公復帰表情通常　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+;主人公復帰表情通常　ポーズ通常削除
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 
 ;背景変更:和紙風
-[bg storage="../fgimage/bg/plane_sakura.jpg" time=0]
+[bg storage="../fgimage/bg/plane_sakura.jpg" time=0  wait=true]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/plane_sakura.jpg" time=0]
 [eval exp="f.haikei_credit=''"]
