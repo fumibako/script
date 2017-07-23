@@ -14,7 +14,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -110,7 +110,8 @@
 [image layer=29 x=0 y=0 storage="bg/bg_zaizen_ginkou_mae.jpg" time=1000 visible=true]
 [wait time=1000]
 ;【背景】町並み　ひとまず
-[bg method='crossfade' storage="../fgimage/bg/bg_zaizen_ginkou_mae1.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_zaizen_ginkou_mae1.jpg" time=50]
+[wait time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 ;ﾒｯｾｰｼﾞｸﾘｯｸ表示
 [layopt layer=message0 visible=true]
@@ -160,6 +161,7 @@
 ;ｸﾘｯｸがみえる場合は追加↓
 [layopt layer=message0 visible=false]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;ｸﾘｯｸがみえる場合は追加↓

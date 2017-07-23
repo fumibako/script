@@ -12,7 +12,7 @@
 *seen1
 [call target=*11_4_2 storage="zaizen/preload_zaizen.ks"]
 ;【背景】主人公邸_庭_昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [if exp="f.okeiko_gamen!=true"]
 [イベントシーン構築ボタン無し版]

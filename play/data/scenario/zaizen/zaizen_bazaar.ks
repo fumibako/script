@@ -11,7 +11,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -127,7 +127,7 @@
 [暗転２]
 ;背景バザー出店描けるといいんですが（汗
 ;【背景】背景バザー出店（入り口）
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity3.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity3.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [表示準備 storage="bg/B4nFWraU42/bg_cyarity3.jpg"]
 [暗転２終了]
@@ -241,7 +241,7 @@
 [暗転２]
 ;背景変更　移動　どのような背景でしょうか
 ;【背景】背景バザー出店（遠景）
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [wait time=10]
 [暗転２終了]
@@ -384,7 +384,7 @@
 [wait time=1000]
 [財前退場]
 ;【背景】バザー会場　売店　売り子場面　近景とは別枠にしないとおかしい
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity4.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity4.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [表示準備 storage="bg/B4nFWraU42/bg_cyarity4.jpg"]
 ;メッセージレイヤを全画面用に設定変更
@@ -504,7 +504,7 @@
 [主人公通常]
 ;背景変更　移動　どのような背景でしょうか
 ;【背景】背景バザー出店（遠景）
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [wait time=10]
 [暗転２終了]
@@ -649,7 +649,7 @@
 #
 [暗転２]
 ;【背景】背景バザー出店（近景）
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity2.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity2.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [wait time=100]
 [主人公憂い]
@@ -696,7 +696,7 @@
 [暗転２]
 ;背景バザー出店描けるといいんですが（汗
 ;【背景】背景バザー出店（入り口）
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity51.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity51.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [暗転２終了]
 [wait time=100]
@@ -766,7 +766,7 @@
 いつかはきっと――[p]
 [暗転２]
 ;イベント終了
-[暗転]
+[暗転１]
 [イベントシーン終了]
 [stopbgm]
 ;暗く全体消えていく演出

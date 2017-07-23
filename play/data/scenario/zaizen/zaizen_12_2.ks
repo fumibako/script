@@ -12,7 +12,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -118,7 +118,7 @@
 [fadeoutbgm time=3000]
 ;時間経過
 #
-[暗転]
+[暗転１]
 [主人公目閉]
 私は、磯野に庶民の暮らしと、国の銀行の成り立ち、[r]
 その営業の仕組みについて意見を聞き、話し合った。[p]
@@ -126,7 +126,7 @@
 [if exp="f.okeiko_gamen != true"]
 ;テストモード
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 
 @jump storage="zaizen/zaizen_12_2_2.ks" target=*seen1
@@ -134,7 +134,7 @@
 
 [if exp="f.okeiko_gamen == true && f.para_zaizen_koukando > 70"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 
 @jump storage="zaizen/zaizen_12_2_2.ks" target=*seen1

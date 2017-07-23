@@ -13,7 +13,7 @@
 *seen1
 [call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
 ;【背景】洋館居間
-[bg method='crossfade' storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
@@ -174,7 +174,7 @@
 ――そして取り付け騒ぎは、次第に沈静化していった。[p]
 
 ;===============================================================
-[暗転]
+[暗転１]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [layopt layer=message0 visible=false]

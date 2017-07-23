@@ -13,7 +13,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -157,7 +157,7 @@
 
 ;===============================================================
 ;振り向いて背景変更する場合はこちら
-;[bg method='crossfade' storage="../fgimage/bg/zaizen_kuruma1.jpg" time=50]
+;[bg wait=true method='crossfade' storage="../fgimage/bg/zaizen_kuruma1.jpg" time=50]
 ;[eval exp="f.haikei_credit=''"]
 ;[表示準備 storage="bg/zaizen_kuruma1.jpg" time=50]
 ;===============================================================
@@ -295,7 +295,7 @@
 [暗転２]
 [財前退場]
 ;【背景】車の外　外なので退場です。
-[bg method='crossfade' storage="../fgimage/bg/zaizen_kuruma1.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/zaizen_kuruma1.jpg" time=50]
 ;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;====================================================================================
@@ -367,7 +367,7 @@
 
 ;====================================================================================
 ;新聞社前はない
-[暗転]
+[暗転１]
 ;====================================================================================
 
 [whosay name="運転手"]

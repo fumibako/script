@@ -12,7 +12,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】町並み
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -311,7 +311,7 @@
 [暗転２]
 [財前退場]
 [主人公退場]
-[暗転]
+[暗転１]
 [fadeoutbgm time=3000]
 ;====================================================
 [イベントシーン終了]

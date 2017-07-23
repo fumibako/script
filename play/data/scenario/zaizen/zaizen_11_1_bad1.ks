@@ -8,7 +8,7 @@ $('.list').remove();
 [endscript]
 [freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-;[bg storage="toumei.gif" time=1]
+;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
@@ -25,7 +25,7 @@ $('.list').remove();
 [endif]
 
 ;【背景］パーティ会場控室
-[bg storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
@@ -135,7 +135,7 @@ jumpします。[p]
 [wait time=10]
 [clearstack]
 [wait time=10]
-[暗転]
+[暗転１]
 [暗転２終了]
 ;================================================================================================
 #
@@ -157,7 +157,7 @@ jumpします。[p]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風 bg_prologue.jpg
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 [主人公通常]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更
@@ -167,7 +167,7 @@ jumpします。[p]
 [wait time=10]
 [current layer="message0"]
 [wait time=10]
-[bg storage="../fgimage/bg/zaizen_youkan.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/zaizen_youkan.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_youkan.jpg"]
 [wait time=10]
@@ -220,7 +220,7 @@ jumpします。[p]
 [wait time=10]
 ;================================================================================================
 ;【背景】独逸大使館パーティ会場
-[bg storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;================================================================================================
@@ -321,7 +321,7 @@ jumpします。[p]
 [clearstack]
 [wait time=10]
 @layopt layer=1 visible=true
-[bg storage="../fgimage/bg/bg_bluesky.jpg" time=500]
+[bg wait=true storage="../fgimage/bg/bg_bluesky.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　Mike Linksvayer　https://www.flickr.com/photos/mlinksva/15476575104/'"]
 [fadeoutbgm time=3000]
@@ -336,7 +336,7 @@ jumpします。[p]
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
 [wait time=10]
-[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
+[bg wait=true storage="../fgimage/bg/bg_prologue_dark.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する

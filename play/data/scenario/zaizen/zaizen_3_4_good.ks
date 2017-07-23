@@ -6,7 +6,7 @@ $('.list').remove();
 [endscript]
 [freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-;[bg storage="toumei.gif" time=1]
+;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -27,7 +27,7 @@ $('.list').remove();
 [endif]
 
 ;【背景】パーティ会場庭
-[bg storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg"]
 [eval exp="f.haikei_credit=''"]
@@ -127,7 +127,7 @@ $('.list').remove();
 ;メッセージウィンドウ消去から復帰時の顔グラをoffにします
 [eval exp="f.kaogura = 'off'"]
 ;【背景】グッドエンドCG　CG差分（財前目閉じ、主人公目閉じ）
-[bg storage="../fgimage/bg/zaizen_CGgood.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/zaizen_CGgood.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_CGgood.jpg"]
 ;◆CGモード用に画像を登録
@@ -177,7 +177,7 @@ $('.list').remove();
 ;[playse storage=paper_open.ogg loop=false ]
 [resetfont]
 ;洋館居間
-[bg storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
@@ -282,7 +282,7 @@ $('.list').remove();
 [暗転２ storage="bg/zaizen_fusenkazura2.jpg"]
 [財前退場]
 ;【背景】 フウセンカズラの花
-[bg storage="../fgimage/bg/zaizen_fusenkazura2.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/zaizen_fusenkazura2.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_fusenkazura2.jpg"]
 [eval exp="f.haikei_credit=' '"]
@@ -399,7 +399,7 @@ $("kan").css('margin','auto');
 ;[財前退場]
 
 ;【背景】 フウセンカズラの実
-[bg storage="../fgimage/bg/zaizen_fusenkazura.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/zaizen_fusenkazura.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_fusenkazura.jpg"]
 ;メッセージレイヤを会話窓用に設定変更

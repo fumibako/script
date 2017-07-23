@@ -12,7 +12,7 @@ $('.list').remove();
 [endscript]
 [freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-;[bg storage="toumei.gif" time=1]
+;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 [stopbgm]
 [call target=*start storage="tyrano.ks"]
@@ -28,7 +28,7 @@ $('.list').remove();
 [endif]
 
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg"]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg"]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -203,7 +203,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [暗転２ storage="bg/bg_genkan.jpg" clegit=true]
 ;背景玄関
-[bg storage="../fgimage/bg/bg_genkan.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/bg_genkan.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=100]
 ;既に待っていた状態なので先に出しておくパーティ会場なので燕尾服
@@ -277,7 +277,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【背景】洋館パーティ会場
 ;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg" time=50]
 ;【背景】独逸大使館パーティ会場
-[bg storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
 [暗転２終了]
@@ -370,7 +370,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [暗転２ storage="bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg" clegit=true]
 [財前退場] 
 ;案内される姿を見守ったパターン２　こちらにします。
-[bg storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/zaizen_paty_ousetu.jpg"]
 [暗転２終了]
@@ -486,7 +486,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [wait time=10]
 [p]
 
-[暗転]
+[暗転１]
 #
 私は、不安と期待が入りまじった気持ちでパーティ会場に戻った。[p]
 
@@ -501,7 +501,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【背景】洋館パーティ会場
 ;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg" time=50]
 ;【背景】独逸大使館パーティ会場
-[bg storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/zaizen_doitutaisikan.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_doitutaisikan.jpg"]
 ;[主人公通常]
@@ -554,7 +554,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [暗転２]
 ;【背景】雪柳
 [eval exp="f.haikei_credit='　'"]
-[bg storage="../fgimage/bg/zaizen_yukiyanagi.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/zaizen_yukiyanagi.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
 [表示準備 storage="bg/zaizen_yukiyanagi.jpg"]
@@ -595,7 +595,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;====================================================================================　
 ;一瞬、裏背景（黒）がみえるのがいやですが。スクリプト担当２
 ;【背景】パーティ会場庭
-[bg storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=1000]
+[bg wait=true storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=1000]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
 ;====================================================================================　
@@ -637,7 +637,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 *seen_nomal
 ;====================================================================================
 ;【背景】雪柳
-[bg storage="../fgimage/bg/zaizen_yukiyanagi.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/zaizen_yukiyanagi.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_yukiyanagi.jpg"]
 ;====================================================================================
@@ -682,7 +682,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [財前退場]
 [主人公退場]
 ;【背景】ノーマルエンドCG
-[bg storage="../fgimage/bg/zaizen_CGnomal.jpg"]
+[bg wait=true storage="../fgimage/bg/zaizen_CGnomal.jpg"]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_CGnomal.jpg"]
 ;◆CGモード用に画像を登録
@@ -712,7 +712,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 いや、それだけではない。　私を惑わす悪い方です。[p]
 
 ;【背景】ノーマルエンドCG
-[bg storage="../fgimage/bg/zaizen_CGnomal_2.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/zaizen_CGnomal_2.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_CGnomal_2.jpg" time=0]
 そう、耳に囁かれて私は真っ赤になった。[p]
@@ -725,7 +725,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [if exp="f.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) && ( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good) && f.para_shujinkou_shukujodo >= 80"]
 [暗転２ storage=bg/zaizen_paty_niwa.jpg]
 ;【背景】パーティ会場庭
-[bg storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=1000]
+[bg wait=true storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=1000]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
 [財前ベース燕尾服]
@@ -745,7 +745,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;背景変更:黒茶・和紙風
 [image name=end layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 ;一瞬裏がみえるの防止背景
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=50]
 ;===============================================================

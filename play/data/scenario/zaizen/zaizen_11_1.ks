@@ -15,7 +15,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -170,7 +170,7 @@ jumpします。[p]
 ;====================================================================================
 [暗転２]
 ;【背景】玄関
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [財前ベース燕尾服]
 [財前通常]
@@ -234,7 +234,7 @@ jumpします。[p]
 [暗転２]
 ;【背景】パーティー会場
 [主人公通常]
-[bg method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600]
 ;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;====================================================================================
@@ -342,7 +342,7 @@ jumpします。[p]
 ;====================================================================================
 [暗転２]
 #
-;[bg method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50 wait=true]
+;[bg wait=true method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
 [暗転２終了 time=1000]
 ;====================================================================================
 十分後――。[r]
@@ -402,7 +402,7 @@ jumpします。[p]
 [主人公伏目]
 [主人公眉下げ下]
 ;====================================================================================
-;[bg method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=1000 wait=true]
+;[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=1000]
 [表示準備 storage="bg/test_zaizen_paty1.jpg"]
 ;====================================================================================
 [whosay name="パーティ客男性"]
@@ -564,7 +564,7 @@ jumpします。[p]
 [sp]思いもよりませんでした。 ……帰りましょう」
 #
 ;=================テストメニューを抜けたときにテスト変数は消えますが、実装時には削除します========================
-[if exp="tf.test_zaizen == true"]
+[if exp="tf.test_zaizen==true"]
 ;演出の繋がりを知りたいので 実際は好感度を入力してください
 [er]
 テストフラグで表示されています。[r]

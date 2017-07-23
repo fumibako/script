@@ -10,7 +10,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】パーティ会場の控室
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
 ;[eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -218,7 +218,7 @@
 ;====================================================================================
 [暗転２ storage="bg/test_zaizen_paty1.jpg" time=1500]
 ;【背景】パーティー会場
-[bg method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600]
 [wait time=600]
 ;[eval exp="f.haikei_credit=''"]
 [暗転２終了]
@@ -257,7 +257,7 @@
 [暗転２ storage="bg/bg_syanderia.jpg"]
 [財前退場]
 ;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
-[bg method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
 [eval exp="f.haikei_credit=''"]
 [暗転２終了]
 ;====================================================================================
@@ -293,7 +293,7 @@
 （今度は胸がズキズキする……なぜなの？）[p]
 [fadeoutbgm time=3000]
 
-[暗転]
+[暗転１]
 #
 パーティは閉会の時間を迎え、[r]
 私は自分の気持ちに戸惑いながら、財前様に送られ家に帰った。[p]

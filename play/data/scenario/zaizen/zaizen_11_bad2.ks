@@ -9,7 +9,7 @@ $('.list').remove();
 [endscript]
 [freeimage layer = 1]
 [if exp="f.flag_replay==true"]
-;[bg storage="toumei.gif" time=1]
+;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
@@ -26,7 +26,7 @@ $('.list').remove();
 [endif]
 
 ;【背景】パーティ会場の庭[背景_庭]　
-[bg storage="../fgimage/bg/test_zaizen_paty1.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/test_zaizen_paty1.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/test_zaizen_paty1.jpg"]
 [eval exp="f.haikei_credit=''"]
@@ -108,7 +108,7 @@ jumpします。[p]
 
 ;===========================================================================
 [暗転２]
-[暗転]
+[暗転１]
 [主人公伏目]
 [主人公眉下げ下]
 [暗転２終了]
@@ -137,9 +137,9 @@ jumpします。[p]
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;背景変更時にフリーズすることが多いため、背景に使用しているレイヤ1を解放、この後は[bg]タグに切り替えます
-[freeimage layer=1 time=500]
+[freeimage layer=1 time=0]
 [ct]
 [wait time=10]
 [clearfix]
@@ -148,7 +148,7 @@ jumpします。[p]
 [wait time=10]
 
 ;【背景】洋館居間
-[bg storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
@@ -245,7 +245,7 @@ jumpします。[p]
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
 ;[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
-[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/bg_prologue_dark.jpg" time=0]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する

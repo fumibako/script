@@ -9,7 +9,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】パーティ会場
-[bg method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600]
 ;[eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 #
@@ -84,7 +84,7 @@ jumpします。[p]
 [財前退場]
 ;パーティ会場廊下　暗転
 ;【背景】暗転黒背景、会話ウィンドウは残る
-[bg storage="toumei.gif" time=500]
+[bg wait=true storage="toumei.gif" time=500]
 [主人公憂い]
 [暗転２終了]
 ;==============================================================================
@@ -117,7 +117,7 @@ jumpします。[p]
 [主人公目伏]
 ;憂いまでの自然な切り替え表情
 ;【背景］パーティ会場控室
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [暗転２終了]
 ;==============================================================================
@@ -218,7 +218,7 @@ jumpします。[p]
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
 ;暗転で落ち着いてから上にのせます。
-[暗転]
+[暗転１]
 ;【テキスト全画面】 全画面文字のみ表示
 ;機能ボタン消去
 [layopt layer=fix visible=false]
@@ -280,7 +280,7 @@ jumpします。[p]
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=600]
@@ -313,7 +313,7 @@ jumpします。[p]
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
 ;暗転で落ち着いてから上にのせます。
-[暗転]
+[暗転１]
 ;【テキスト全画面】 全画面文字のみ表示
 ;機能ボタン消去
 [layopt layer=fix visible=false]
@@ -345,7 +345,7 @@ jumpします。[p]
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;全画面用背景を消します
 [freeimage layer=29 time=600]
@@ -373,7 +373,7 @@ jumpします。[p]
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
 ;暗転で落ち着いてから上にのせます。
-[暗転]
+[暗転１]
 ;【テキスト全画面】 全画面文字のみ表示
 ;機能ボタン消去
 [layopt layer=fix visible=false]
@@ -416,7 +416,7 @@ jumpします。[p]
 ;メッセージをもどします
 [resetfont]
 ;【背景】パーティ会場控室
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/zaizen_paty_hikae.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 [表示準備 storage="bg/I9IhvvVdPo/zaizen_paty_hikae.jpg"]
@@ -680,7 +680,7 @@ jumpします。[p]
 
 
 ;================================テストメニューを抜けた時点で表示されませんが後で削除します===============================
-[if exp="tf.test_zaizen == true"]
+[if exp="tf.test_zaizen==true"]
 #
 ;演出の繋がりを知りたいので
 [er]

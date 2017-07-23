@@ -12,7 +12,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】[背景_庭]
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=600 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #

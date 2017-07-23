@@ -12,7 +12,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】背景会議室　;変更してください
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/test_zaizen_kaigi.jpg" wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/test_zaizen_kaigi.jpg"]
 [eval exp="f.haikei_credit='Photo by  ＠名無しさん１'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
@@ -231,7 +231,7 @@
 [fadeoutbgm time=3000]
 [暗転２]
 [財前退場]
-[暗転]
+[暗転１]
 ;余韻のあるシーンなのですぐ消えないで。
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
