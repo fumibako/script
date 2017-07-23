@@ -28,6 +28,7 @@
 [macro name="手紙青"]
 ;背景変更:手紙青
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=100]
+[wait time=100]
 
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
@@ -54,6 +55,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -74,6 +76,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_jiyuuwaku2.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -94,6 +97,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_asuka.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -114,6 +118,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_tokiko.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -134,6 +139,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/B4nFWraU42/bg_tegami_konyakusha.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -154,6 +160,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_akabudou.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -174,6 +181,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_akebono.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -194,6 +202,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_itokomiya.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -214,6 +223,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_kousitsu_jijyuu.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -224,6 +234,7 @@
 ;[手紙読了]主人公、茶色便せん、その他共通
 [macro name="手紙読了"]
 [freeimage layer = 29 time=500]
+[wait time=500]
 [if exp="sf.FButton!='OFF'"]
 ;機能ボタン表示
 [メッセージウィンドウ上ボタン表示]
@@ -250,6 +261,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -262,6 +274,7 @@
 [macro name="手紙財前読了"]
 ;[eval exp="f.midoku_list_hairetsu[1][%fumi_number] = 0;"]
 [freeimage layer = 29 time=500]
+[wait time=500]
 [if exp="sf.FButton!='OFF'"]
 ;機能ボタン表示
 [メッセージウィンドウ上ボタン表示]
@@ -288,6 +301,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -299,6 +313,7 @@
 [macro name="手紙四条読了"]
 ;[eval exp="f.midoku_list_hairetsu[2][%fumi_number] = 0;"]
 [freeimage layer = 29 time=500]
+[wait time=500]
 [if exp="sf.FButton!='OFF'"]
 ;機能ボタン表示
 [メッセージウィンドウ上ボタン表示]
@@ -327,6 +342,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_katuragi_silver.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 [font color = navy]
@@ -339,6 +355,7 @@
 [macro name="手紙葛城宮読了"]
 ;[eval exp="f.midoku_list_hairetsu[3][%fumi_number] = 0;"]
 [freeimage layer = 29 time=500]
+[wait time=500]
 ;機能ボタン表示
 [if exp="sf.FButton!='OFF'"]
 ;機能ボタン表示
@@ -367,6 +384,7 @@
 [layopt layer=29 visible=true]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_hujieda.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -378,6 +396,7 @@
 [macro name="手紙藤枝読了"]
 ;[eval exp="f.midoku_list_hairetsu[4][%fumi_number] = 0;"]
 [freeimage layer = 29 time=500]
+[wait time=500]
 ;機能ボタン表示
 [if exp="sf.FButton!='OFF'"]
 ;機能ボタン表示
@@ -405,6 +424,7 @@
 [clearfix]
 ;背景変更:手紙
 [image layer=29 x=0 y=0 storage="bg/bg_tegami_kuroda.jpg" time=500]
+[wait time=500]
 [position width=630 height=520 top=80 left=200 page=fore margint="40" opacity=0]
 [resetfont]
 ;メッセージレイヤを表示
@@ -417,6 +437,7 @@
 [macro name="手紙黒田読了"]
 ;eval
 [freeimage layer = 29 time=500]
+[wait time=500]
 ;機能ボタン表示
 [if exp="sf.FButton!='OFF'"]
 ;機能ボタン表示

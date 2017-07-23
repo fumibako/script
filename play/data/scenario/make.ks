@@ -1,4 +1,5 @@
 [call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_graphic.ks"]
 
 [if exp="sf.BGM=='OFF'"]
 [iscript]
