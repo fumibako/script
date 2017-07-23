@@ -11,7 +11,8 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 お稽古部屋
- [bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=30 wait=true]
+ [bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=30]
+[wait time=10]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -164,7 +165,8 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 #
 [暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
- [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=100 wait=true]
+ [bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=100]
+[wait time=10]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
 [暗転２終了]
@@ -231,7 +233,8 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 ;【背景】主人公邸 玄関
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[wait time=10]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [表示準備 storage="bg/bg_genkan.jpg" layer=29]
 [表示準備 storage="bg/bg_genkan.jpg"]
@@ -240,6 +243,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer=29 time=400]
+[wait time=400]
 ;=========表示================
 [メッセージウィンドウ上ボタン表示]
 [主人公目パチ1回]
@@ -260,6 +264,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [藤枝通常]
 [藤枝口微笑み]
 [freeimage layer=13 time=300]
+[wait time=300]
 ;=========================
 [主人公ポーズ通常]
 ;[whosay name="藤枝 肇" color=%mp.color] 初見であり、確実に藤枝とはいえない可能性もあるため「郵便屋」とさせていただきました(◆jsYiJcqRkk
@@ -275,6 +280,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 「ありがとうございます！　では失礼します！」[p]
 #
 [藤枝退場準備 storage="bg/bg_genkan.jpg" time=300]
+[wait time=300]
 ;【立ち絵】主人公　驚き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]

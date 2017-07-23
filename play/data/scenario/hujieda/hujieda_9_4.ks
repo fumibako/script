@@ -13,7 +13,8 @@
 [wait time=10]
 ;【背景】:町並み
 ;背景は、サブルーチンを読んでから(callの後)だと安全
-[bg method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=30]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=30]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -251,9 +252,11 @@
 [eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by＠名無しさん１'"]
 [表示準備 storage="bg/I9IhvvVdPo/mirukuho-ru2.jpg" layer=29]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukuho-ru2.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukuho-ru2.jpg" time=50]
+[wait time=10]
 [主人公通常]
 [freeimage layer=29 time=200]
+[wait time=200]
 ;ふわっと表示依頼
 [layopt layer=fix visible=true]
 ;==============================================================================
@@ -265,7 +268,8 @@
 
 ;==============================================================================
 ;看板
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukuho-ru3.jpg" time=1200]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukuho-ru3.jpg" time=1200]
+[wait time=10]
 [eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by＠名無しさん１'"]
 ;==============================================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -277,24 +281,31 @@
 ;==============================================================================
 ;【背景】窓
 [eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
+[wait time=10]
 ;【アニメイメージ】キラキラ透過素材 layer=1
 [image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=1000 left=-300 visible=true]
+[wait time=10]
 ;==============================================================================
 ;背景窓　
 #
-そっと窓に近づくと、繊細で美しい音色が私の胸を打つ。[p]
+そっと窓に近づくと、繊細で美しい音色が私の胸を打つ。
+[wait time=1000]
+[p]
 ;==============================================================================
 ;アニメ中にセーブさせない
 [layopt layer=fix visible=false]
 ;【アニメ】音の奔流アニメ 右に移動left　速さtime 消える
 [anim name="oto" left="+=800" time=7000 opacity=0]
+[wait time=10]
 ;==============================================================================
 ;【立ち絵】主人公：驚き
 [主人公驚]
 （すごいわ！[r]
 [sp]ピアノの響きの奔流に圧倒されてしまうわ。[r]
-[sp]それになんて綺麗で繊細な音を奏でてるのかしら）[p]
+[sp]それになんて綺麗で繊細な音を奏でてるのかしら）
+[wait time=3000]
+[p]
 ;==============================================================================
 [wa]
 ;念のためにアニメ消去
@@ -304,9 +315,11 @@ $('.oto').remove();
 [endscript]
 ;セーブボタン解除
 [layopt layer=fix visible=true]
+[wait time=10]
 ;窓から見た白っぽいミルクホール_ピアノ
 [eval exp="f.haikei_credit=''"]
-[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_0.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_0.jpg" time=1000]
+[wait time=10]
 ;jｓYiJｃｑRkkさんのピアノ画像、立ち絵表示あり
 [表示準備 storage="bg/bg_fujieda_piano_0.jpg" layer=13]
 ;==============================================================================
@@ -321,6 +334,7 @@ $('.oto').remove();
 [藤枝ベース私服]
 [藤枝微笑み]
 [freeimage layer=13 time=300]
+[wait time=300]
 ;================================
 #
 ガラス越しからは、花束を渡される演奏者が見えた。[p]
@@ -337,7 +351,8 @@ $('.oto').remove();
 ;==============================================================================
 ;窓
 [eval exp="f.haikei_credit='illustration by ＠名無しさん１'"]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukuho_ru4.jpg" time=1000]
+[wait time=10]
 ;==============================================================================
 [fadeoutbgm time=3000]
 

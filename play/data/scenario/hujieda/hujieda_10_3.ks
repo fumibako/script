@@ -13,7 +13,8 @@
 [wait time=10]
 ;【背景】 ミルクホール玄関外
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１,　architecural　design　by　◆I9IhvvVdPo'"]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutest.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutest.jpg" time=50]
+[wait time=10]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -32,7 +33,8 @@
 ;====================================================================================
 ;背景: [レトロな喫茶店]
 [eval exp="f.haikei_credit='a　part　of　design　by　◆I9IhvvVdPo,　edited　by　＠名無しさん１'"]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/miruku_genkan2.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/miruku_genkan2.jpg" time=1000]
+[wait time=10]
 ;===============================================================
 [whosay name="文矢" color="#538a8a"] 
 「まだ早かったようだね」[p]
@@ -45,7 +47,7 @@
 私はドキドキしながら、長い五分間を待った……。[p]
 
 ;背景がないで暗転だ
-[暗転]
+[暗転１]
 
 [主人公照れ目普通]
 [whosay name="店員"]
@@ -88,7 +90,8 @@
 ;==============================================================================
 ;【背景】ミルクホール店内・客席 ゆっくり
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=1300]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=1300]
+[wait time=10]
 ;==============================================================================
 #
 広い店内の奥にはピアノが置かれている。[r]
@@ -99,6 +102,7 @@
 @layopt layer=message0 page=fore visible=false
 ;準備中の上にのせて
 [暗転２ storage="bg/bg_fujieda_piano_1.jpg" layer=29 time=1300]
+[wait time=10]
 ;消えている瞬間を隠す
 [主人公退場]
 ;会話ウィンドウ消去 メッセージあると何の画像かわからない
@@ -107,10 +111,12 @@
 ;==========================
 
 ;【背景】ミルクホール店内ピアノ
-[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=50]
+[wait time=10]
 ;===================================藤枝を表準備します。=====================================================
 ;ピアノベース藤枝(目なし)レイヤー１
 [image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
+[wait time=10]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ new
 [chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ show
@@ -129,6 +135,7 @@
 
 ;ピアノ消去するために被せます。_タイムは調整中
 [暗転２ storage="bg/bg_fujieda_piano_1.jpg" layer=29 time=2000]
+[wait time=2000]
 [eval exp="f.haikei_credit=''"]
 ;SE拍手長め
 ;ピアノ画像消去１
@@ -136,15 +143,17 @@
 $('.piano_base').remove();
 $('.piano_base_me').remove();
 [endscript]
+[wait time=10]
 ;ミルクホールピアノを消去する
 [暗転２終了]
+[wait time=10]
 ;=============================ピアノを弾くシーンおわり=================================================
 
 ;=======================;会話ウィンドウ表示============================================================
 [chara_mod name="message_bg" storage=&f.message_storage time=300]
 ;主人公復帰表情目閉じ　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
+[wait time=300]
 [主人公ポーズ通常]
 [主人公柔和ほほえみ１]
 [iscript]
@@ -152,6 +161,7 @@ $('.junbi_girl').remove();
 [endscript]
 [layopt layer=fix visible=true]
 @layopt layer=message0 page=fore visible=true
+[wait time=10]
 ;==============================================================================
 #
 その横顔は、以前、郵便が来る時間にこっそりと拝見した横顔と重なった。[p]
@@ -167,14 +177,16 @@ $('.junbi_girl').remove();
 ;==============================================================================
 ;【イメージ】キラキラ透過素材 layer=1
 [image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=2000 left=1 visible=true]
+[wait time=2000]
 ;==============================================================================
 ピアノの響きが静謐な雰囲気を醸し出す。[p]
 ;==============================================================================
 [iscript]
 $('.oto').remove();
 [endscript]
-;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの 次のシナリオにかぶっていいので wait=trueはなし
-[bg storage="toumei.gif" time=1300]
+;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの
+[bg wait=true storage="toumei.gif" time=1300]
+[wait time=10]
 ;==============================================================================
 ;[SE拍手]長めがいいかもしれない
 [playse storage=hakushu.ogg loop=false]
@@ -187,7 +199,8 @@ $('.oto').remove();
 藤枝様に花屋で買ったコリウスと手紙をそっと差し出した。[p]
 ;==============================================================================
 ;【背景】ミルクホール店内ピアノ
-[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100]
+[wait time=100]
 [eval exp="f.haikei_credit=''"]
 [表示準備 storage="bg/bg_fujieda_piano_1.jpg"]
 ;==============================================================================
@@ -197,6 +210,7 @@ $('.oto').remove();
 [藤枝ベース私服]
 [藤枝微笑み]
 [freeimage layer=13 time=400]
+[wait time=400]
 ;===========================
 ;【立ち絵】主人公：微笑み頬染
 [主人公ほほえみ]
@@ -305,10 +319,13 @@ $('.oto').remove();
 [layopt layer=fix visible=false]
 ;ずっと立っている状態になってしまいますので退場します 裏で退場＿大
 [表示準備 storage="bg/B4nFWraU42/mirukutennai.jpg" layer=29 time=1300]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [藤枝退場]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=50]
+[wait time=10]
 [freeimage layer=29 time=500]
+[wait time=500]
 ;ボタン表示
 [layopt layer=fix visible=true]
 ;==============================================================================
@@ -326,9 +343,11 @@ $('.oto').remove();
 
 ;===============================ピアノを弾くシーン２===============================================
 ;【背景】ミルクホール店内ピアノ
-[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=1300]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=1300]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 [image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=1 time=2000 left=1 visible=true]
+[wait time=2000]
 ;==============================================================================
 #
 藤枝様の弾く『エリーゼのために』は、今まで聴いたことがある[r]
@@ -345,8 +364,10 @@ $('.oto').remove();
 ;ボタン非表示
 [layopt layer=fix visible=false]
 [表示準備 storage="bg/anten.jpg" layer=29 time=1300]
+[wait time=10]
 ;【背景】客席
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/mirukutennai.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [freeimage layer=29 time=500]
 ;セーブボタン解除
@@ -376,12 +397,13 @@ $('.oto').remove();
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】背景:レトロな喫茶店（玄関）
 [eval exp="f.haikei_credit='a　part　of　design　by　◆I9IhvvVdPo,　edited　by　＠名無しさん１'"]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/mirukugenkan.jpg" time=50]
+[wait time=10]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
@@ -398,6 +420,7 @@ $('.oto').remove();
 [藤枝通常]
 [イベントシーン構築ボタン無し版枠茶色]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [layopt layer=message0 visible=true]

@@ -11,7 +11,8 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 お稽古部屋
-[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=50]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]

@@ -11,7 +11,7 @@ $('.list').remove();
 [if exp="f.flag_replay==true"]
 [cm]
 ;暗転とは違う
-;[bg storage="toumei.gif" time=1]
+;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -26,7 +26,7 @@ $('.list').remove();
 ;[chara_show name="bg"]
 [endif]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg storage="../fgimage/bg/room_niwa.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -45,7 +45,7 @@ $('.list').remove();
 [主人公憂い]
 [主人公目パチ1回]
 ;bad
-[暗転]
+[暗転１]
 #
 それでも私は時子さんにも何も言えなかった。[p]
 ;前シーンでの音楽を消します
@@ -65,7 +65,7 @@ $('.list').remove();
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
 [主人公退場]
 @layopt layer=message2 page=fore visible = false
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=1000]
+[bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=1000]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg" time=1000]
 [テキスト全画面白文字無背景]
@@ -157,7 +157,7 @@ $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 [iscript]
 $("kan").css('margin','auto');
 [endscript]
-[bg storage="toumei.gif" time=0]
+[bg wait=true storage="toumei.gif" time=0]
 [wait time=10]
 ;===============================================================
 ;画面中央に「完」の文字
@@ -189,7 +189,7 @@ $('.1_fore').remove();
 
 [if exp="f.flag_replay==true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
-[bg storage="../fgimage/bg/plane_sepia.jpg" time=100]
+[bg wait=true storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [wait time=10]
 @jump storage="replay2.ks"
 [endif]

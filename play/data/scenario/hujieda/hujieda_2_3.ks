@@ -11,7 +11,8 @@
 [call target=*start storage="macro_tati_hujieda.ks"]
 [freeimage layer = 1]
 [wait time=10]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ongakurensyuusitu.jpg" time=30 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ongakurensyuusitu.jpg" time=30]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版枠茶色]
 #
@@ -153,7 +154,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 [藤枝退場]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -175,11 +176,13 @@
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50]
+[wait time=10]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -233,9 +236,10 @@
 #
 ;============================================================================================
 [主人公目閉]
-[暗転]
+[暗転１]
 ;【背景】主人公邸 玄関　
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公ほほえみ]
 ;============================================================================================
@@ -254,7 +258,8 @@
 ;============================================================================================
 [暗転２]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/ensoukaijyou.jpg" time=1000]
+[wait time=10]
 [暗転２終了]
 [layopt layer=fix visible=true]
 ;============================================================================================
@@ -293,7 +298,8 @@
 [主人公通常]
 ;【背景】観客席
 [eval exp="f.haikei_credit='　　'"]
-[bg method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100]
+[wait time=10]
 [暗転２終了]
 ;============================================================================================
 ;【立ち絵】主人公：真剣
@@ -314,7 +320,8 @@
 [eval exp="f.haikei_credit='　　'"]
 ;【背景】室内音楽堂（近景）
 [暗転２ storage="bg/situnaiongaku.jpg" time=1100]
-[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
+[bg wait=true method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
+[wait time=10]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/situnaiongaku.jpg"]
 ;【立ち絵】主人公：真剣
@@ -332,6 +339,7 @@
 [藤枝ベース私服]
 [藤枝微笑み]
 [表示開始 time=300]
+[wait time=10]
 ;==========
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -372,6 +380,7 @@
 （貴方が来てくれた、それなら僕は何も恐れることはない）[p]
 ;===================================ピアノを弾くシーンはじまり=================================================
 [暗転２ storage="bg/situnaiongaku.jpg" time=1100]
+[wait time=10]
 [藤枝退場]
 ;メッセージレイヤを非表示します。
 @layopt layer=message0 page=fore visible=false
@@ -384,6 +393,7 @@
 ;===================================藤枝を表準備します。=====================================================
 ;ピアノベース藤枝(目なし)レイヤー１
 [image name=piano_base storage="bg/B4nFWraU42/hujieda_piano_base.png" layer=1 time=50 visible=true zindex=1]
+[wait time=50]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ new
 [chara_new name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_futuu.png" layer=2 top=1]
 ;ピアノベース藤枝(目のみ通常１)レイヤー１ show
@@ -392,6 +402,7 @@
 ;===================================藤枝を表準備完了です。====================================================
 ;藤枝ピアノベースを表示します。
 [freeimage layer=29 time=800]
+[wait time=800]
 ;表情切り替えをします。 一瞬目が消えしまう
 ;ピアノベース藤枝(目のみ閉じ1)合体表示 レイヤー１
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_fusi1.png" time=0 wait=false]
@@ -409,8 +420,10 @@
 $('.piano_base').remove();
 $('.piano_base_me').remove();
 [endscript]
+[wait time=10]
 ;【変更】背景を暗転の中から表す（遠景）
-[bg method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50]
+[wait time=10]
 ;会話ウィンドウを表示します。 
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 [wait time=10]
@@ -419,6 +432,7 @@ $('.piano_base_me').remove();
 ;メッセージレイヤを表示します。
 @layopt layer=message0 page=fore visible=true
 [暗転２終了]
+[wait time=10]
 ;======================再構築おわります======================================
 ;============================ピアノを弾くシーンおわり=================================================
 
@@ -430,18 +444,22 @@ $('.piano_base_me').remove();
 ;==============================================================================
 ;【イメージ】キラキラ透過素材 layer=13 ゆっくり消したいので13を使用
 [image name="oto" storage="bg/B4nFWraU42/bg_hujieda_kirakira.png" layer=13 time=2000 left=1 visible=true]
+[wait time=10]
 ;==============================================================================
 #
 鬼気迫る力強い旋律でありながら、[r]
-どこまでも繊細で、一点の曇りのない音色に心打たれる。[p]
+どこまでも繊細で、一点の曇りのない音色に心打たれる。
+[wait time=2000]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （こんなにも心に響く音を聴くのは初めてだわ）[p]
 
 ;=======================================
 ;【イメージ】キラキラ透過素材を消去
 [freeimage layer=13 time=800]
+[wait time=800]
 ;=======================================
-[暗転]
+[暗転１]
 #
 藤枝様の音色にこれほどの力強さは、ミルクホールの演奏になかった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -453,7 +471,8 @@ $('.piano_base_me').remove();
 [暗転２]
 ;【背景】観客席　暗転のほうがいいかも
 [eval exp="f.haikei_credit='　　'"]
-[bg method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/hujieda_kyakuseki.jpg" time=100]
+[wait time=10]
 [暗転２終了]
 ;============================================================================================
 #
@@ -465,10 +484,14 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [eval exp="f.haikei_credit='　　'"]
 [暗転２ storage="bg/situnaiongaku.jpg" time=1300]
-[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100 wait=true]
+[wait time=10]
+[bg wait=true method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
+[wait time=10]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/situnaiongaku.jpg"]
+[wait time=10]
 [暗転２終了]
+[wait time=10]
 [call target=*start storage="macro_tati_hujieda.ks"]
 ;============================================================================================
 
@@ -477,6 +500,7 @@ $('.piano_base_me').remove();
 [藤枝ベース私服]
 [藤枝通常]
 [表示開始 time=300]
+[wait time=10]
 ;==========
 [藤枝目閉じ]
 #
@@ -609,7 +633,8 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [暗転２]
 ;【背景】ピアノホール（遠景）
-[bg method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50]
+[wait time=10]
 [藤枝退場]
 [主人公目通常]
 [主人公口ほほえみ]
@@ -627,22 +652,28 @@ $('.piano_base_me').remove();
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
 [主人公頬染め]
-（ピアノの優しくて甘い旋律が、この場の雰囲気を包んでいる……）[p]
+（ピアノの優しくて甘い旋律が、この場の雰囲気を包んでいる……）
+[wait time=2000]
+[p]
 
 （本当になんて、綺麗な音なのかしら）[p]
 ;=======================================
 ;【イメージ】キラキラ透過素材を消去
 [freeimage layer=13 time=800]
+[wait time=800]
 ;==============================================================================
 ;【背景】室内音楽堂（近景）
 [暗転２ storage="bg/situnaiongaku.jpg" time=1100]
-[bg method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100 wait=true]
+[wait time=10]
+[bg wait=true method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
+[wait time=10]
 ;藤枝さん用構築かくし↓
 [表示準備 storage="bg/situnaiongaku.jpg"]
 ;【立ち絵】藤枝:真剣
 [藤枝ベース私服]
 [藤枝通常]
 [暗転２終了]
+[wait time=10]
 ;==============================================================================
 
 ;==========
@@ -650,6 +681,7 @@ $('.piano_base_me').remove();
 [藤枝ベース私服]
 [藤枝通常]
 [表示開始 time=300]
+[wait time=10]
 ;==========
 [藤枝目閉じ]
 #
@@ -673,7 +705,8 @@ $('.piano_base_me').remove();
 [暗転２]
 [藤枝退場]
 ;【背景】主人公邸 玄関 　主人公退場とメッセージ消すのは構築遅いので、やめよう
-[bg method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公通常]
 [暗転２終了]
@@ -698,7 +731,8 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [暗転２]
 ;【背景】主人公邸 庭の見える部屋：昼
- [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000 wait=true]
+ [bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000]
+[wait time=10]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
  [主人公通常]
 [暗転２終了]
@@ -725,7 +759,7 @@ $('.piano_base_me').remove();
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1200 visible=true]
-[wait time=10]
+[wait time=1200]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -737,10 +771,11 @@ $('.piano_base_me').remove();
 ;============================================================================================
 [resetfont]
 [主人公通常]
-[暗転]
+[暗転１]
 ;一瞬背景切り替えが見える↓防止
 [wait time=10]
 [freeimage layer=29 time=1000]
+[wait time=1000]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;機能ボタン表示　
@@ -760,7 +795,8 @@ $('.piano_base_me').remove();
 ;============================================================================================
 ;【背景】主人公邸 庭の見える部屋：夜
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[bg method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=1000 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=1000]
+[wait time=10]
 ;============================================================================================
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]

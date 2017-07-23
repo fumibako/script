@@ -11,7 +11,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 お稽古部屋
-[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=100 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -39,7 +39,7 @@
 [playse storage=tori_hato.ogg loop=false ]
 
 ;【立ち絵】鳩_箏の柏葉　夢と結びつけるために画像配置　一回のみにします。他で付けたい部分があれば以下をコピー。
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by ＠名無しさん１'"]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -80,7 +80,8 @@
 [playse storage=tori_habataki_hato.ogg loop=false ]
 
 ;【背景】主人公邸 お稽古部屋
-[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【立ち絵】主人公 困り
 [主人公困り]

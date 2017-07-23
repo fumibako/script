@@ -10,7 +10,7 @@
 [freeimage layer = 1]
 [wait time=10]
 [イベントシーン構築ボタン無し版]
-[暗転]
+[暗転１]
 [主人公ポーズ通常]
 [主人公通常]
 [プリロード画面消去]
@@ -18,7 +18,8 @@
 ;=====================ここからお芝居の幕引きです===============================
 #
 ;ゆっくり表示
-[bg method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 ――夢を見た。[p]
 [if exp="sf.BGM=='ON'"]
@@ -27,14 +28,16 @@
 [eval exp="f.bgm_storage='miyuki.ogg'"]
 [endif]
 
-[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_hujieda_hato.jpg" time=1000 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_hujieda_hato.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by ＠名無しさん１'"]
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （あの時の鳩さんだわ）[p]
-[bg method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
 #
 私が近づこうとした途端、鳩は飛立つ。[p]
@@ -62,7 +65,8 @@
 
 [whosay name=？？？]
 「貴方の[ruby text=こと]箏の音を聞き続けたい」[p]
-[bg method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_moon_lake.jpg" time=1000 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_moon_lake.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='illustration by＠名無しさん１'"]
 #
 声とともに霧が晴れ、月の光を映した湖の美しい夜景が広がる。[p]
@@ -89,12 +93,14 @@
 光が差し、私は瞼を閉じた。[p]
 [fadeoutse time=2000]
 [fadeoutbgm time=3000]
-[bg method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
+[wait time=10]
 ;【背景】主人公邸 部屋
-;[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=100]
+;[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=100]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;【背景】主人公邸 お稽古部屋
-[bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
+[wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]

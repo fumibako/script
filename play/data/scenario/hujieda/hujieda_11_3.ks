@@ -35,11 +35,8 @@ $('.list').remove();
 [wait time=10]
 ;@layopt layer=1 visible=true
 ;【背景】主人公邸 庭の見える部屋：夜
-;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=30 wait=true]
-[bg storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
+[bg wait=true storage="../fgimage/bg/room_niwa_yoru.jpg" time=0]
 [wait time=10]
-;[chara_new name="bg" storage="bg/room_niwa_yoru.jpg"]
-;[chara_show left=1 top=1 layer=1 name="bg" time=0]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
@@ -184,14 +181,13 @@ $('.list').remove();
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風  [テキスト全画面白文字]bg/bg_prologue_dark.jpg
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 [主人公憂い]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 玄関 （裏で画面構成）
-[bg storage="../fgimage/bg/bg_genkan.jpg" time=100 wait=true]
+[bg wait=true storage="../fgimage/bg/bg_genkan.jpg" time=1000]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/bg_genkan.jpg" time=1000]
 [表示準備 storage="bg/bg_genkan.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;テキスト全画面
@@ -205,6 +201,7 @@ $('.list').remove();
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=false]
 ;メッセージレイヤを会話窓用に設定変更
@@ -239,6 +236,7 @@ $('.list').remove();
 [藤枝ベース郵便屋]
 [藤枝驚き]
 [freeimage layer=13 time=500]
+[wait time=500]
 ;==========
 [whosay name="藤枝 肇" color=%mp.color] 
 「！」[p]
@@ -311,6 +309,7 @@ $('.list').remove();
 #
 ;ふわっと消えていく
 [藤枝退場準備 storage="bg/bg_genkan.jpg" time=400]
+[wait time=10]
 #
 そして藤枝様は持っていた手紙を磯野に渡し、自転車に乗って[r]
 去っていった。[p]
@@ -325,7 +324,7 @@ $('.list').remove();
 
 [if exp="f.para_hujieda_koukando < 40"]
 ;バッドのシナリオここから
-[暗転]
+[暗転１]
 [主人公退場]
 @jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
 ;バッドのシナリオここまで

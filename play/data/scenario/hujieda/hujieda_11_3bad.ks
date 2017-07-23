@@ -11,7 +11,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】プロローグ
-[bg storage="../fgimage/bg/bg_prologue_dark.jpg" time=30]
+[bg wait=true storage="../fgimage/bg/bg_prologue_dark.jpg" time=30]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg" time=30]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -38,7 +38,7 @@
 沢山、手紙を送ればよかった。[p] 
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
-[bg storage="toumei.gif" time=0]
+[bg wait=true storage="toumei.gif" time=0]
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]

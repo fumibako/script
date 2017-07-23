@@ -11,7 +11,7 @@ $('.list').remove();
 [freeimage layer = 1]
 [wait time=10]
 [if exp="f.flag_replay == true"]
-;[bg storage="toumei.gif" time=1]
+;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
@@ -28,7 +28,7 @@ $('.list').remove();
 [endif]
 
 ;【背景】たんぽぽ公園
-[bg storage="../fgimage/bg/hujieda_tanpopo_kouen.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/hujieda_tanpopo_kouen.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/hujieda_tanpopo_kouen.jpg"]
 [eval exp="f.haikei_credit=''"]
@@ -65,11 +65,14 @@ $('.list').remove();
 [主人公ほほえみ]
 「まあ……！　それは嬉しい事ですわ」[p]
 [image name="kaede" storage="bg/B4nFWraU42/img_kaede.png" layer=1 zindex=2 top=0 left=-200 visible=true time=50]
-[wait time=10]
+[wait time=50]
 [kanim name="kaede" keyframe="animation1" time="6000"]
+[wait time=10]
 #
 お父様達の意外な言葉に嬉しく思っていると、[r]
-暖かな風が吹き、白い綿毛が飛んでいく。[p]
+暖かな風が吹き、白い綿毛が飛んでいく。
+[wait time=1000]
+[p]
 ;===========================全画面==============================================
 [iscript]
 $('.kaede').remove();
@@ -93,7 +96,7 @@ $('.kaede').remove();
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;【背景】たんぽぽ
-[bg storage="../fgimage/bg/hujieda_tanpopo.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/hujieda_tanpopo.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/hujieda_tanpopo.jpg"]
 [暗転２終了]
@@ -252,14 +255,14 @@ $('.kaede').remove();
 [主人公退場]
 ;◆goodED条件を満たす場合、good画像を表示
 [if exp="f.okeiko_gamen == true && (f.para_hujieda_koukando >= parseInt(sf.hujieda['koukando_c'])) && ( f.para_shujinkou_j_koto >= f.hujieda_koto_good) && f.para_shujinkou_shukujodo >= 70 && f.hujieda_au == 1"]
-[bg storage="../fgimage/bg/hujieda_goodED.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/hujieda_goodED.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/hujieda_goodED.jpg"]
 ;◆CGモード用に画像を登録
 [cg storage="hujieda_goodED.jpg"] 
 [else]
 ;【背景】hujieda_normalED.jpg
-[bg storage="../fgimage/bg/hujieda_normalED.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/hujieda_normalED.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/hujieda_normalED.jpg"]
 ;◆CGモード用に画像を登録
@@ -311,7 +314,7 @@ $("kan").css('margin','auto');
 [endscript]
 ;【背景】綿毛全画面→normalEDのためbg_prologue.jpgに「完」の方にあわせてみます
 ;[chara_mod name="bg" storage="bg/hijieda_kaede_sita2.jpg"]
-[bg storage="../fgimage/bg/bg_prologue.jpg" time=50]
+[bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 ;===============================================================

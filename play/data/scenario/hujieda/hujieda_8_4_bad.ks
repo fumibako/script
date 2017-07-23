@@ -8,9 +8,8 @@
 [call target=*start storage="macro_tati_girl.ks"]
 [freeimage layer = 1]
 ;【背景】主人公邸 お稽古部屋
-[bg storage="../fgimage/bg/bg_okeiko.jpg" time=30]
+[bg wait=true storage="../fgimage/bg/bg_okeiko.jpg" time=30]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/bg_okeiko.jpg" time=30]
  [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 ;[主人公ポーズ通常]
@@ -30,7 +29,7 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
-[wait time=10]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -57,7 +56,7 @@ $("kan").css('margin','auto');
 ;===============================================================
 [fadeoutbgm time=3000]
 ;会話ウィンドウ消去
-[暗転]
+[暗転１]
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;===============================================================
 [イベントシーン終了]

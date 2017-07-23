@@ -13,7 +13,7 @@
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】背景ミルクホール
-[bg method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_fujieda_piano_1.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [プリロード画面消去]
 ;=========================================================================
@@ -52,6 +52,7 @@
 [藤枝ベース私服]
 [藤枝通常]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 [メッセージウィンドウ上ボタン表示]
 ;==========================スクリプトここまで=========================================================
 #
@@ -197,7 +198,7 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;【背景】主人公邸 庭の見える部屋：昼
-[bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000 wait=true]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;テキスト全画面
 [font color=white size=27]
@@ -211,6 +212,7 @@
 [主人公ポーズ通常]
 [主人公通常]
 [freeimage layer=29 time=1100]
+[wait time=1100]
 ;メッセージレイヤを会話窓用に設定変更
 [call target=*start storage="macro_tati_hujieda.ks"]
 ;機能ボタン表示
@@ -243,7 +245,7 @@
 [主人公退場]
 [fadeoutbgm time=2000]
 #
-[暗転]
+[暗転１]
 @jump storage="hujieda/hujieda_bazaar_2.ks" target=*seen00
 [イベントシーン終了]
 

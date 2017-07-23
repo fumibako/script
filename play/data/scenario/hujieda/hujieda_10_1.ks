@@ -13,6 +13,7 @@
 [wait time=10]
 ;【背景】 主人公部屋(昼)
  [背景_庭]
+[wait time=10]
 [イベントシーン構築ボタン無し版]
 #
 [主人公ポーズ通常]
@@ -172,6 +173,7 @@
 ;【背景】 全画面背景_番傘の女性
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [image layer=29 x=0 y=0 storage="bg/B4nFWraU42/hujieda_haha.jpg" time=1200 visible=true]
+[wait time=1200]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [layopt layer=message0 visible=true]
@@ -202,6 +204,7 @@
 ;【背景】 全画面背景_bg_prologue.jpg　ここでﾐﾙｸﾎｰﾙ関連に切り替えないとおかしい
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [image layer=29 x=0 y=0 storage="bg/B4nFWraU42/mirukutennai_zengamen.jpg" time=1200 visible=true]
+[wait time=1200]
 ;==========================
 そんな折、学生達の間で人気だというミルクホールに[r]
 行ってみたくて、友人達とこっそり行ったんだ。[p]
@@ -215,6 +218,7 @@
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 ;機能ボタン表示
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
@@ -254,6 +258,7 @@
 ;【背景】 全画面背景＿空
 [eval exp="f.haikei_credit=''"]
 [image layer=29 x=0 y=0 storage="bg/hujieda_sky1.jpg" time=1000 visible=true]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;[layopt layer=message0 visible=true]
@@ -286,6 +291,7 @@
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [freeimage layer = 29 time=1000]
+[wait time=1000]
 
 ;機能ボタン表示
 [layopt layer=fix visible=true]
@@ -375,11 +381,13 @@
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:芙蓉
 [image layer=29 x=0 y=0 storage="bg/bg_hujieda_fuyou.jpg" time=1000 visible=true]
+[wait time=1000]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [layopt layer=message0 visible=true]
 ;一瞬裏がみえるの防止背景
-[bg method='crossfade' storage="../fgimage/bg/bg_hujieda_fuyou.jpg" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_hujieda_fuyou.jpg" time=50]
+[wait time=10]
 ;テキスト全画面
 [font color=white size=27]
 ;====================================================================================
