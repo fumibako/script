@@ -617,6 +617,7 @@ $('.bg1').remove();
 [四条退場準備 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 
 *sijyou_3
+#
 [er]
 ;〜〜シーン キャラの造作1 軽度〜〜〜
 [暗転１]
@@ -634,6 +635,7 @@ $('.bg1').remove();
 ・・・・・・[p]
 ;〜〜シーン キャラの造作2 中度〜〜〜
 ;背景　床の間のみ表示
+[image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
 [背景_四条華道教室_1]
 [四条ベース羽織]
 [四条通常]
