@@ -483,7 +483,7 @@
 [macro name="背景セピア化"]
 [iscript]
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
-var lay1=document.getElementsByClassName("layer 1_fore");
+var lay1=document.getElementsByClassName("layer base_fore");
 lay1[0].style.webkitFilter = "sepia(100%)";
 [endscript]
 [endmacro]
@@ -491,7 +491,7 @@ lay1[0].style.webkitFilter = "sepia(100%)";
 [macro name="背景セピア化_50"]
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
+var lay1=document.getElementsByClassName("layer base_fore");
 lay1[0].style.webkitFilter = "sepia(50%)";
 [endscript]
 [endmacro]
@@ -500,7 +500,7 @@ lay1[0].style.webkitFilter = "sepia(50%)";
 [iscript]
 //#tyrano_base > div.layer.\31 _fore.layer_fore
 //レイヤーのクラス名を変数に代入。jqueryで出来ればいらない処理
-var lay1=document.getElementsByClassName("layer 1_fore");
+var lay1=document.getElementsByClassName("layer base_fore");
 lay1[0].style.webkitFilter = "sepia(0%)";
 [endscript]
 [endmacro]
@@ -509,21 +509,21 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 [iscript]
 //layer 1_fore
 //bright=function(){
-$('.1_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
+$('.base_fore').css({'filter':'brightness(1.5)','-webkit-filter':'brightness(1.5)','-moz-filter':'brightness(1.5)','-ms-filter':'brightness(1.5)'});
 //};
 [endscript]
 [endmacro]
 ;=======
 [macro name="背景明度アップ_13"]
 [iscript]
-$('.1_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
+$('.base_fore').css({'filter':'brightness(1.3)','-webkit-filter':'brightness(1.3)','-moz-filter':'brightness(1.3)','-ms-filter':'brightness(1.3)'});
 [endscript]
 [endmacro]
 ;=======
 [macro name="背景明度アップ解除"]
 [iscript]
 //layer 1_fore
-$('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
+$('.base_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
 [endscript]
 [endmacro]
 ;==============
