@@ -42,7 +42,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_replay" text="WEB版リプレイ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink name="test" target="test5_1" text="5月(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink name="test2" target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink name="test3" target="test7_1" text="7月1週(未定)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink name="test3" target="test7_1" text="7月1週(星　ﾌﾟﾚｲ動向調査EV)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="test9_2" text="9月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
@@ -141,7 +141,7 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 *common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
-[glink target="auto" text="オートモード" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=white]
+[glink target="auto" text="オートセーブをロード" graphic="select_waku_x500.png" size=15 width="250" x=500 y=600 color=white]
 
 *button_BGM
 [if exp="sf.BGM=='OFF'"]
@@ -637,10 +637,15 @@ localStorage.clear();
 [s]
 
 *auto
-[if exp="this.kag.stat.is_auto != true"]
-[autostart]
+;[if exp="this.kag.stat.is_auto != true"]
+;[autostart]
+;[else]
+;[autostop]
+;[endif]
+[if exp="sf.system.autosave == true"]
+[autoload]
 [else]
-[autostop]
+自動的に保存されたデータはありません。[p]
 [endif]
 @jump target=test_page1
 [s]
