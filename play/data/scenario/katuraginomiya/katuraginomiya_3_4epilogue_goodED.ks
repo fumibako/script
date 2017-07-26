@@ -9,6 +9,7 @@ $('.list').remove();
 [freeimage layer = 1]
 [wait time=10]
 [if exp="f.flag_replay==true"]
+[cm]
 ;[bg storage="toumei.gif" time=1]
 [endif]
 *start
@@ -368,7 +369,9 @@ $('.junbi_girl').remove();
 [wait time=10]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [wait time=50]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
+;ボタンのみ分岐
+[メッセージウィンドウ上ボタン表示]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=300]
 ;【立ち絵】主人公目閉じ
