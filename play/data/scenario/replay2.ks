@@ -258,6 +258,7 @@ $(".layer_2").css("opacity",0);
 ;並んでいるところをみせない
 [iscript]
 $(".layer_free").css("opacity",0);
+$(".rp_bt").css("opacity",0);
 $(".list").css("opacity",0);
 [endscript]
 ;=====================================================================================
@@ -343,6 +344,7 @@ $(".list").css("opacity",0);
 *common
 [iscript]
 $(".layer_free").css("opacity",1);
+$(".rp_bt").css("opacity",1);
 $(".list").css("opacity",1);
 $('.loding_pic1').remove();
 [endscript]
