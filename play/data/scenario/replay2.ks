@@ -253,6 +253,7 @@ $(".layer_2").css("opacity",0);
 @jump target ="*common"
 ;=====================================================================================
 *page_1
+[cm]
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 ;並んでいるところをみせない
 [iscript]
