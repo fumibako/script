@@ -313,6 +313,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [葛城宮退場]
 ;指定　暗転
+[暗転１]
 [ct]
 [wait time=10]
 [clearfix]
