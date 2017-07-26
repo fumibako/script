@@ -199,7 +199,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：目伏せ
 [財前不快]
-「母は父と恋愛し、私を産んだにも関わらず、[r]
+「母は父と恋愛し、私を産んだにもかかわらず、[r]
 [sp]結局は、独逸に帰る事を望み、私と父を捨てて故国に[r]
 [sp]帰った……それだけです」[p]
 
@@ -347,7 +347,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [主人公目伏]
 [主人公眉下げ下]
 「いいえ、出席いたします。[r]
-[sp]私は、貴方のお役に立ちたいと思います」
+[sp]私は、貴方のお役に立ちたいと思っておりますの」
 [autosave]
 [wait time=10]
 [p]
@@ -409,7 +409,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]きっと、女性のエスコートに慣れてるのね）[p]
 [主人公憂い]
 #
-そう思った途端、胸がチクチクしだした。[p]
+そう思った途端、胸がチクチクと痛んだ。[p]
 
 [主人公目閉じ]
 （……この気持ちは何？）[p]
