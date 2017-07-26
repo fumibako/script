@@ -374,6 +374,7 @@ $(".layer_2").css("opacity",1);
 [iscript]
 $(".rp_bt").css("opacity",0);
 [endscript]
+;cmmonで戻している[cm]にすると次へも消えて一瞬画面に何も表示されない状態になる
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=10]
 [emb exp="tf.page++;"]
@@ -384,6 +385,10 @@ $(".rp_bt").css("opacity",0);
 
 
 *backpage
+[iscript]
+$(".rp_bt").css("opacity",0);
+[endscript]
+;cmmonで戻している[cm]にすると次へも消えて一瞬画面に何も表示されない状態になる
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=10]
 [emb exp="tf.page--;"]
