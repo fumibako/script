@@ -87,7 +87,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「な、何ですか？」[p]
 [whosay name="磯野" color="dimgray"]
-「もう、そのようなことを気になさる[ruby text=あいだ]関[ruby text=がら]柄ではございませんでしょう？」[p]
+「もう、そのようなことを気になさる[ruby text=あいだ]間[ruby text=がら]柄ではございませんでしょう？」[p]
 ;原文：「もう、そのようなことを気になさる[ruby text=あいだ]関[ruby text=がら]柄ではないのでしょう？」[p]
 ;日本語がおかしいような、あと読みにくい保留 rubyで補強
 [主人公照れ]
