@@ -23,7 +23,7 @@ $('.list').remove();
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -275,7 +275,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 @layopt layer=29 visible=true
 [イベントシーン終了]
 [iscript]
@@ -287,7 +287,7 @@ $('.1_fore').remove();
 ;回想記録終了ifからだしておいてください
 [endreplay] 
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [イベントシーン終了]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 ;【背景】セピア背景
@@ -301,7 +301,7 @@ $('.1_fore').remove();
 
 [イベントシーン終了・ＢＧＭ有]
 ;テストでもみれるように↑
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;ending処理
 ;goodエンディング時
 [eval exp="sf.ED_sijyou_good=1"]

@@ -40,7 +40,7 @@
 （なんて広い温室なのかしら！ それに色々な花が咲き乱れて綺麗だわ）[p]
 
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -225,7 +225,7 @@ $('.saku1').remove();
 *seen_end
 [イベントシーン終了]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;[eval exp="f.tukihajime=0"]
 @jump storage="event.ks" target=*event_owari
 [else]

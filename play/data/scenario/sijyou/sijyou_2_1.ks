@@ -27,7 +27,7 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;〜〜〜〜〜〜〜〜シーン イベントのはじまり〜〜〜〜〜〜〜〜〜
-;[if exp="tf.test_sijyou==true"]
+;[if exp="tf.test_sijyou == true"]
 ;@jump target=*sijyou_3
 ;sijyou_5
 ;[endif]
@@ -58,7 +58,7 @@
 [主人公目閉]
 ;---------------------------
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]

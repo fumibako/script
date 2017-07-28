@@ -34,7 +34,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （最近、お手紙の内容の繋がりが、おかしいと思っていたら）[p]
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -234,7 +234,7 @@
 ;ここでイベントは区切り バッドが必要であれば、文矢から「話をしてみたけどダメだったよ」という返事に。イベントバッドへ追記
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 [fadeoutbgm time=3000]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

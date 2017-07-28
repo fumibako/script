@@ -7,7 +7,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;[bg storage="toumei.gif" time=1]
 [endif]
 *start
@@ -19,7 +19,7 @@ $('.list').remove();
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]

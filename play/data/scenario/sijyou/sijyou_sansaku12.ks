@@ -65,7 +65,7 @@
 （……私も、帰りましょうか）[p]
 [イベントシーン終了]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
 [else]
 [イベントシーン終了２]

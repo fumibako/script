@@ -24,7 +24,7 @@
 [プリロード画面消去]
 [四条ボタン表示]
 ;=================================================================================_
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。華道展お誘いの手紙まで移動しますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -408,7 +408,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [endif]
 [手紙四条読了 fumi_number=]
 ;～～～～～～～～～～手紙2おわり～～～～～～～～～～～～～～
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 
 ;選択肢用レイヤーを追加

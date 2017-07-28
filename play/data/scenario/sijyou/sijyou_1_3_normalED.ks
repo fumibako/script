@@ -292,7 +292,7 @@ $('.yuki').remove();
 ;¥¥¥¥¥¥¥¥イベント7おわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

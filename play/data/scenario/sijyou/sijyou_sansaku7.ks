@@ -33,7 +33,7 @@
 [playbgm storage="machi_takenoko.ogg" loop=true]
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページから開始しています。香水店入店手前までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -388,7 +388,7 @@ $('.saku1').remove();
 [sp]あらまあ！ 四条綾花様のところに華織様じゃないですか」[p]
 ;↑"四条綾花様のところに"→"四条綾花様のところの"の方が自然でしょうか。変えると意味合いが変化してしまいますので、そのままにします(◆jsYiJcqRkk
 ;===================================================
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページから開始しています。（お父様が帰って～）までjumpしますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -1214,7 +1214,7 @@ jumpします。[p]
 [whosay name="華織" color="olivedrab"]
 「今日は、急な誘いについて来てくれてありがとう。　おかげで素敵な話を[r]
 [sp]聞くことができたよ」[p]
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページから開始しています。終了手前までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -1325,7 +1325,7 @@ jumpします。[p]
 [fadeoutse tome=1000]
 ;[wait time=50]
 [イベントシーン終了]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
 [else]
 [イベントシーン終了２]

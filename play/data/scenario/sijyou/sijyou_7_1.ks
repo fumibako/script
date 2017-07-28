@@ -269,7 +269,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [er]
 #
 [イベントシーン終了]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

@@ -129,7 +129,7 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [wait time=10]
 [イベントシーン終了]
 ;=====================システムメッセージ===========================================
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_owari
 [else]
 [イベントシーン終了２]

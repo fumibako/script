@@ -9,7 +9,7 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [clearstack]
 [bg wait=true method='crossfade' storage="toumei.gif" time=1]
 [endif]

@@ -474,7 +474,7 @@
 外交官をしており、普段は[ruby text=フ]仏[ruby text=ラン]蘭[ruby text=ス]西にいます。[r]
 [sp]それにしても、君のような美しい方が [ruby text=い]義[ruby text=もうと]妹になって嬉しいよ」[p]
 ;=================================================================================_
-[if exp="f.sijyou_ani==true"]
+[if exp="f.sijyou_ani == true"]
 [主人公照れ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい、よろしくお願いします。[r]

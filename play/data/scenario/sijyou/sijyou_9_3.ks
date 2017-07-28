@@ -24,7 +24,7 @@
 [主人公通常]
 [wait time=10]
 [プリロード画面消去]
-;[if exp="tf.test_sijyou==true"]
+;[if exp="tf.test_sijyou == true"]
 ;@jump target=seen7
 ;[endif]
 ;///////////////////////////////
@@ -33,7 +33,7 @@
 [er]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、四条様からお手紙が届いております」[p]
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。手紙まで移動しますか？[r]
 園遊会イベント[r]
 ;選択肢用レイヤーを追加
@@ -95,7 +95,7 @@
 *seen_sijyou_tegami
 #
 *fumi_toutyaku_sijyou_100
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「久しぶりに会って」　四条 華織";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「久しぶりに会って」";
@@ -140,13 +140,13 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 *endtegami
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[2][99] = 0"]
 [endif]
 [手紙四条読了 fumi_number=51]
 
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -1008,7 +1008,7 @@ _　として成長しないといけないのだわ）[p]
 *seen8
 [イベントシーン終了]
 [stopse]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

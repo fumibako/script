@@ -43,7 +43,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -69,7 +69,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -102,7 +102,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -133,7 +133,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -157,7 +157,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
@@ -187,7 +187,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]

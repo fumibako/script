@@ -1,6 +1,6 @@
 *replay_test_ed_credit
 *first
-[if exp="tf.test_sijyou==true"]
+[if exp="tf.test_sijyou == true"]
 [stopbgm]
 [freeimage layer = 1]
 [wait time=10]
@@ -187,7 +187,7 @@ $('.omoide1').remove();
 
 ;キーを押したときだけスキップ処理に対してfreeimage layer=27の後再描画 他にスキップについて処理あれば追加
  ;[iscript]
-;if(TG.kag.stat.is_skip==true||e.keyCode === 39 || e.keyCode === 32){
+;if(TG.kag.stat.is_skip == true||e.keyCode === 39 || e.keyCode === 32){
 ;//alert("テスト！スキップ中です");
 ;tyrano.plugin.kag.ftag.startTag("freeimage", {layer:"27"});
 ;//$('.cc').empty();
@@ -581,7 +581,7 @@ $('.omoide1').remove();
 [wait time=2000]
 [fadeoutbgm time=3000]
 
-[if exp="tf.test_sijyou==true"]
+[if exp="tf.test_sijyou == true"]
 ;初期化
 ;藤枝 
 @eval exp="f.hujieda_au=0" 
@@ -605,7 +605,7 @@ $('.omoide1').remove();
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [return]
 [endif]
 

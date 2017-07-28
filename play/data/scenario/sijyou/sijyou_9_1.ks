@@ -36,7 +36,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「決めました。私、華織お兄さまとお会いします」[p]
 ;=====================================================================
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -301,7 +301,7 @@
 [eval exp="f.event_oaite_mitei = 0"]
 ;共通お相手決定フラグ
 [eval exp="f.omiai_kettei = 1"]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

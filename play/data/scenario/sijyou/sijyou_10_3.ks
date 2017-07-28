@@ -33,7 +33,7 @@
 [endif]
 [主人公伏目パチ1回]
 [wait time=10]
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。手紙まで移動しますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -179,7 +179,7 @@
 *seen3
 ;/////手紙///
 *fumi_toutyaku_fumiya
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「華織について」　文矢"; //「文矢からの手助け」→「華織について」に変更させていただきました。「変えても大丈夫」とのご回答をありがとうございました(スクリプト担
 f.fumi_list_all_title.push(f.fumi_all_title_new);
@@ -218,7 +218,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [背景_四条_歌舞伎座前 time=2000]
 ;[chara_mod name="bg" storage="bg/bg_kabuki_out.jpg" time=2000]
 [手紙読了]
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -384,7 +384,7 @@ lay1[0].style.webkitFilter = "sepia(0%)";
 *seen7
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [背景セピア化_解除]
 @jump storage="event.ks" target=*event_owari
 [else]

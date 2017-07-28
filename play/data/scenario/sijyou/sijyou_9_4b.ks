@@ -30,7 +30,7 @@
 [whosay name="女中"]
 「お帰りなさいませ。華織様」[p]
 
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -215,7 +215,7 @@
 [stopbgm]
 [イベントシーン終了]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]

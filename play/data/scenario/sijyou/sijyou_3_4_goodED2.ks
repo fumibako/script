@@ -76,7 +76,7 @@
 ;[ ]「華やか」[/]「幸せな思い出」[ ]「輝き」[/]「忍耐」[　]「また会う日を楽しみに」
 ;===============================================================
 ;【背景】思い出（花
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [image layer=1 x=0 y=0 storage="bg/bg_omoide_sepia.jpg" time=1000 visible=true]
 [wait time=10]
 [else]
@@ -115,7 +115,7 @@
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [freeimage layer=29]
 @layopt layer=29 visible=true
 [iscript]
@@ -130,7 +130,7 @@ $('.1_fore').remove();
 ;回想記録終了
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [clearfix]
 [clearstack]
@@ -143,7 +143,7 @@ $('.1_fore').remove();
 [endif]
 
 ;ending処理待ち
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="sf.ED_sijyou_normal=1"]
 ;四条ルートをクリアした
 [eval exp="tf.ED_sijyou == 1"]

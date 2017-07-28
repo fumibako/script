@@ -33,7 +33,7 @@
 兄のはからいで料亭にやってきた私は、会うべき人を待っていた。[p]
 ;兄のはからいで料亭にやってきた私は、会うべき"とある人物"を待っていた。[p]
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -659,8 +659,8 @@
 ;あるほうですから
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
-[if exp=f.sijyou_sobo==true | | "f.para_shujinkou_j_kadou >= 80"]
-;華道パラが高いまたは、四条綾花f.sijyou_sobo==trueと会っていると表示される。それ以外は無し。
+[if exp=f.sijyou_sobo == true | | "f.para_shujinkou_j_kadou >= 80"]
+;華道パラが高いまたは、四条綾花f.sijyou_sobo == trueと会っていると表示される。それ以外は無し。
 ;なぜかというと華道展イベントが表示されない可能性が高いからです。
 [whosay name="華織" color="olivedrab"]
 （世襲財産までの差し押さえか……よっぽどのことなのだろうか？）[p]

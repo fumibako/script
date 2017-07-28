@@ -46,12 +46,12 @@
 [主人公ポーズ片手]
 「四条家に入るにあたって、[r]
 [sp]お言葉など気をつけることは、他にあるかしら？」[p]
-;[if exp="tf.test_gamen==true"]
+;[if exp="tf.test_gamen == true"]
 ;テストページからプレイしています。手紙まで移動しますか？[r]
 ;---------------------------
 ;選択肢用レイヤーを追加
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 [position layer=message1 height=160 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true

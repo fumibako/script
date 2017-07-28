@@ -56,7 +56,7 @@
 [whosay name="華織" color="olivedrab"]
 「[華衣]！ ここに居たんだな」[p]
 
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページから開始しています。婚約者手紙の場面までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -620,7 +620,7 @@ $('.junbi_girl').remove();
 ;¥¥¥¥¥¥¥¥イベント6おわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]
