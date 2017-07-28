@@ -8,7 +8,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [cm]
 ;暗転とは違う
 ;[bg wait=true storage="toumei.gif" time=1]
@@ -21,7 +21,7 @@ $('.list').remove();
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -176,7 +176,7 @@ $(".bg").attr({ src: "./data/bgimage/toumei.gif"});
 ;===============================================================
 [イベントシーン終了]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -187,14 +187,14 @@ $('.1_fore').remove();
 ;◆回想記録
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [bg wait=true storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [wait time=10]
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [藤枝ルート終了 end="bad"]
 [endif]
 

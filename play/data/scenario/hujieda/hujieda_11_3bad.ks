@@ -62,7 +62,7 @@ $("kan").css('margin','auto');
 ;===============================================================
 [イベントシーン終了]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -73,12 +73,12 @@ $('.1_fore').remove();
 ;◆回想記録
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [藤枝ルート終了 end="bad2"]
 [endif]
 

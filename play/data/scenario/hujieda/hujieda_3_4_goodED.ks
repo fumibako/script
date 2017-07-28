@@ -3,7 +3,7 @@
 ;=======================お芝居の準備中です==================================
 *replay_hujieda_hujieda_3_4_goodED
 *replay_hujieda_hujieda_3_4_goodED_scene
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 [iscript]
@@ -14,9 +14,9 @@ $('.list').remove();
 [wait time=10]
 *start
 [stopbgm]
-[if exp="tf.test_hujieda==true"]
-[eval exp="f.okeiko_gamen=true"]
-[eval exp="f.hujieda_au=1"]
+[if exp="tf.test_hujieda == true"]
+[eval exp="f.okeiko_gamen = true"]
+[eval exp="f.hujieda_au = 1"]
 [endif]
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
@@ -27,7 +27,7 @@ $('.list').remove();
 *seen_1
 [call target=*3_4_goodED storage="hujieda/preload_hujieda.ks"]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -538,7 +538,7 @@ $("kan").css('margin','auto');
 ;[cm]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [イベントシーン終了]
 ;@layopt layer=29 visible=true
 [iscript]
@@ -550,13 +550,13 @@ $('.1_fore').remove();
 ;回想シーン戻る処理
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [イベントシーン終了]
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [藤枝ルート終了 end="good"]

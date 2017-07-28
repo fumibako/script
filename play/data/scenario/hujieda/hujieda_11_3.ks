@@ -12,7 +12,7 @@
 $('rp_bt').remove();
 $('.list').remove();
 [endscript]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [cm]
 ;暗転とは違う
 

@@ -22,7 +22,7 @@ $('.list').remove();
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -327,7 +327,7 @@ $("kan").css('margin','auto');
 ;ノーマルここまで
 [イベントシーン終了]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -338,13 +338,13 @@ $('.1_fore').remove();
 ;◆回想記録 
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
 
 ;◆normalED終了処理へ
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;藤枝ルートをクリアした
 ;tweet表示
 [eval exp="tf.ED_fujieda == 1"]
