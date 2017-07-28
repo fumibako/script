@@ -279,7 +279,7 @@
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="tf.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true"]
 [イベントシーン終了・ＢＧＭ有]
 ;クレジット呼び出し。呼び出し位置は移動してください。
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
