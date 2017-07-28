@@ -508,7 +508,11 @@ $('.1_fore').remove();
 [イベントシーン終了・ＢＧＭ有]
 ;クレジット呼び出し。呼び出し位置は移動してください。
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
+[endif]
+;フラグ確認
 [葛城宮ルート終了 end="good"]
+
+[if exp="f.okeiko_gamen==true"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 
