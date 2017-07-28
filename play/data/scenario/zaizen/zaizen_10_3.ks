@@ -40,7 +40,7 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 *fumi_toutyaku_zaizen_30
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「薔薇園散策のお誘い」　財前 美彬";//←仮タイトルです(お好みで変更してください)
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「薔薇園散策のお誘い」";//←仮タイトルです(お好みで変更してください)
@@ -87,7 +87,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [resetfont]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[1][29] = 0"]
 [endif]
@@ -454,7 +454,7 @@ $('.saku1').remove();
 ;薔薇園デート編終了
 ;=========================================================================================================
 [イベントシーン終了]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 @jump storage="test_zaizen.ks"

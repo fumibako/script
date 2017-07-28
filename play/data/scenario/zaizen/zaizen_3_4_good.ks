@@ -5,7 +5,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 *start
@@ -21,7 +21,7 @@ $('.list').remove();
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -407,7 +407,7 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;====================================================================================
 ;終わり
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [イベントシーン終了]
 @layopt layer=29 visible=true
 [iscript]
@@ -419,12 +419,12 @@ $('.1_fore').remove();
 ;↓ifからだしておいてください↓
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [財前ルート終了 end="good"]

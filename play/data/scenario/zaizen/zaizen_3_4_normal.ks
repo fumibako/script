@@ -11,7 +11,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 [stopbgm]
@@ -22,7 +22,7 @@ $('.list').remove();
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -89,12 +89,12 @@ $('.list').remove();
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
-[if exp="tf.test_zaizen==true"]
+[if exp="tf.test_zaizen == true"]
 @jump target=*fumi_zaizen
 [endif]
 
 *fumi_toutyaku_zaizen_32
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「母の誕生日パーティご招待」　財前 美彬";//←仮タイトルです(お好みで変更してください)
 f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「母の誕生日パーティご招待」";//←仮タイトルです(お好みで変更してください)
@@ -143,7 +143,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [resetfont]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[1][31] = 0"]
 [endif]
@@ -722,7 +722,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;normalここまで
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
-[if exp="f.okeiko_gamen==true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) && ( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good) && f.para_shujinkou_shukujodo >= 80"]
+[if exp="f.okeiko_gamen == true && (f.para_zaizen_koukando >= parseInt(sf.zaizen['koukando_c'])) && ( f.para_shujinkou_j_reihou >= f.zaizen_reihou_good) && f.para_shujinkou_shukujodo >= 80"]
 [暗転２ storage=bg/zaizen_paty_niwa.jpg]
 ;【背景】パーティ会場庭
 [bg wait=true storage="../fgimage/bg/zaizen_paty_niwa.jpg" time=1000]
@@ -766,7 +766,7 @@ $("kan").css('margin','auto');
 
 [イベントシーン終了]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 @layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -777,13 +777,13 @@ $('.1_fore').remove();
 ;↓ifからだしておいてください↓
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
 
 ;◆normalED終了処理へ
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [財前ルート終了 end="normal"]
 ;財前ルートをクリアした
 [eval exp="tf.ED_zaizen == 1"]

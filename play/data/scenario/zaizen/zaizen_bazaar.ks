@@ -774,7 +774,7 @@
 [layopt layer=fix visible=true]
 
 ;↓散策イベントとして実装する際に、気力回復無しの終了方法とします(シリアスな物語内容のため、回復することや主人公セリフが合わないため)
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_owari
 [endif]
 @jump storage="test_katuragi.ks"

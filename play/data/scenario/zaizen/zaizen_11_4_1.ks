@@ -395,7 +395,7 @@
 #
 
 ;====================================================================================
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="zaizen/zaizen_11_4_2.ks" target=*seen1
 [endif]
 [イベントシーン終了]

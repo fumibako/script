@@ -196,7 +196,7 @@
 「ええ」[p]
 #
 ;========================================================================
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="zaizen/zaizen_1_3_2.ks" target=*seen1
 [endif]
 [イベントシーン終了]

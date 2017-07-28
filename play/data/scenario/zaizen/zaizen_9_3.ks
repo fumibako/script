@@ -688,7 +688,7 @@
 [freeimage layer = 29 time=1000]
 [イベントシーン終了]
 ;=================================================================================================
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 @jump storage="test_zaizen.ks"

@@ -7,7 +7,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;[bg wait=true storage="toumei.gif" time=1]
 [endif]
 ;=======================お芝居の準備中です==========================================
@@ -19,7 +19,7 @@ $('.list').remove();
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -42,7 +42,7 @@ $('.list').remove();
 [er]
 ;本編ではここ↓に飛んできます。そのためのスクリプト
 ;============================================================
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 zaizen_11_bad1.ks[r]
 テストページから開始しています。イベント終わりまでjumpしますか？[r]
 
@@ -356,7 +356,7 @@ $("kan").css('margin','auto');
 ;================================================================================================
 [イベントシーン終了]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -367,7 +367,7 @@ $('.1_fore').remove();
 ;回想記録終了
 [endreplay] 
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
