@@ -348,6 +348,15 @@ alert("9月1週・葛城宮淑女度30以上、好感度19以上の高い状態�
 [endscript]
 [endif]
 
+[if exp="f.event_katuraginomiya[1] == 1 "]
+;リプレイでの名前表示を解放します。
+[eval exp="sf.replay_katuraginomiya=1"]
+[endif]
+
+[if exp="f.event_hujieda[1] == 1 "]
+;リプレイでの名前表示を解放します。
+[eval exp="sf.replay_hujieda == 1"]
+[endif]
 [cm]
 ;調整モードで音楽をならす
 [if exp="sf.BGM == 'ON' && tf.mode_hensu == 0"]
