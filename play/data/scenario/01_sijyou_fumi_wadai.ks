@@ -50,7 +50,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '家族について' && f.sijyou_
 		f.para_sijyou_koukando = f.para_sijyou_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
 		f.fumi_wadai_toutyakumachi = f.sijyou_fumi_toutyakumachi - 1;
 	}
-	if(f.sijyou_event6==1){ //イベント6を見た後なら、翌週返事が来ると仮入力しています
+	if(f.sijyou_event6 == 1){ //イベント6を見た後なら、翌週返事が来ると仮入力しています
 		f.sijyou_fumi_toutyakumachi_kazoku=0;
 		f.fumi_wadai_toutyakumachi = 0;
 	}

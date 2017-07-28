@@ -151,7 +151,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
 [wait time=10]
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。選択肢まで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -409,7 +409,7 @@
 ;[freeimage layer=29 time=1000]
 [イベントシーン終了]
 ;=================================================================================================
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 @jump storage="01_jsYiJcqRkk_test.ks" target=﻿*test

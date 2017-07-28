@@ -1120,11 +1120,11 @@ $('.info_face').remove();
 	[glink name="list" storage="info_oaite_fumi.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
 ;	[glink name="list" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
 ;葛城宮に手紙を出せるようになっていたらボタン表示
-[if exp="f.katuraginomiya_fumi_start==1"]
+[if exp="f.katuraginomiya_fumi_start == 1"]
 	[glink name="list" storage="info_oaite_fumi.ks" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
 [endif]
 ;藤枝に手紙を出せるようになっていたらボタン表示
-[if exp="f.hujieda_fumi_start==1"]
+[if exp="f.hujieda_fumi_start == 1"]
 	[glink name="list" storage="info_oaite_fumi.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
 	[glink name="list" target="info_owari" text="終了"  size=16 width="40" x=850 y=580 color=white]
@@ -1157,7 +1157,7 @@ $('.info_face').remove();
 [freeimage layer = 26]
 [freeimage layer = 27]
 [freeimage layer = 28]
-@jump storage=okeiko.ks target=*draw_button_system
+	@jump storage="okeiko_draw_button_system.ks"
 [return]
 [s]
 

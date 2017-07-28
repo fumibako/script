@@ -75,7 +75,7 @@
 *common_9_1_hantei_owari
 
 ;◆badED判定 5月4週終わった時点で返信を一度もしていない場合はbadED(淑女度18以上の場合はイベント中に回避。また、テスト画面経由時は藤枝イベント2が発生していれば回避)
-[if exp="tf.test_gamen==true && ((f.okeiko_month == 5 && f.okeiko_week == 4) && f.fumi_henji==0 && f.event_common[8] == 0 && f.event_hujieda[2] != 1)"]
+[if exp="tf.test_gamen == true && ((f.okeiko_month == 5 && f.okeiko_week == 4) && f.fumi_henji==0 && f.event_common[8] == 0 && f.event_hujieda[2] != 1)"]
 	[eval exp="f.event_storage='event.ks'"]
 	[eval exp="f.event_target='*replay_common_5_4_badED'"]
 	[eval exp="f.event_type='talk'"]

@@ -72,7 +72,7 @@
 [endif]
 
 ;================================================
-;◆四条イベント判定【華織兄・華道パラが高いまたはf.sijyou_sobo==true】 sijyou_1_4.ks
+;◆四条イベント判定【華織兄・華道パラが高いまたはf.sijyou_sobo == true】 sijyou_1_4.ks
 [if exp="(f.okeiko_month == 1 && f.okeiko_week == 4) &&( f.para_shujinkou_j_kadou > 80 || f.sijyou_sobo == true )&& f.event_sijyou[13] == 0 && f.sijyou_au == 1"]
 	[eval exp="f.event_storage='sijyou/sijyou_1_4.ks'"]
 	[eval exp="f.event_target='*replay_sijyou_1_4'"]
@@ -82,7 +82,7 @@
 [endif]
 
 ;================================================
-;◆四条イベント判定【華道展・f.sijyou_sobo==true】 sijyou_3_1.ks
+;◆四条イベント判定【華道展・f.sijyou_sobo == true】 sijyou_3_1.ks
 [if exp="(f.okeiko_month == 3 && f.okeiko_week == 1) && f.sijyou_sobo == true && f.event_sijyou[15] == 0 && f.sijyou_au == 1"]
 	[eval exp="f.event_storage='sijyou/sijyou_3_1.ks'"]
 	[eval exp="f.event_target='*replay_sijyou_3_1'"]
