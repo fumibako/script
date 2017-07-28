@@ -45,7 +45,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_katuraginomiya_31
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 感謝 」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「 感謝 」";//←仮タイトルです。お好みに変更してください
@@ -87,7 +87,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][30] = 0"]
 [endif]
@@ -109,7 +109,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [fadeoutbgm time=3000]
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -147,7 +147,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 *seen_end
 [イベントシーン終了]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 

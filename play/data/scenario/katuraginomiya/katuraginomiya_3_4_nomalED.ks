@@ -10,7 +10,7 @@ $('rp_bt').remove();
 $('.list').remove();
 [endscript]
 [freeimage layer = 1]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;[bg storage="toumei.gif" time=1]
 [endif]
 *start
@@ -22,7 +22,7 @@ $('.list').remove();
 [call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -145,7 +145,7 @@ $('.list').remove();
 [eval exp="f.kaogura = 'off'"]
 ;good条件分岐は6箇所：130行目、140行目、151行目、165行目、249行目、preload_katuraginomiya.ks469行目付近
 ;◆goodED条件を満たす場合、goodのCGを表示
-[if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
+[if exp="f.okeiko_gamen == true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [暗転２ storage="bg/katuraginomiya_3_4_goodED.jpg"]
 [else]
 [暗転２ storage="bg/katuraginomiya_3_4_nomalED.jpg"]
@@ -155,7 +155,7 @@ $('.list').remove();
 [主人公退場]
 ;【背景】主人公と葛城宮抱擁 仮
 ;◆goodED条件を満たす場合、goodのCGを表示
-[if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
+[if exp="f.okeiko_gamen == true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_goodED.jpg" time=100]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED.jpg"]
@@ -175,7 +175,7 @@ $('.list').remove();
 #
 殿下は私を抱き上げた。[p]
 ;◆CG2：goodED条件を満たす場合はgood版に切り替え
-[if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
+[if exp="f.okeiko_gamen == true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_goodED_2.jpg" time=0]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/katuraginomiya_3_4_goodED_2.jpg" time=0]
@@ -193,7 +193,7 @@ $('.list').remove();
 #
 優しい微笑みを浮かべる殿下は、嬉しさをこらえきれないといった様子だ。[p]
 ;◆CG3：goodED条件を満たす場合はgood版に切り替え
-[if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
+[if exp="f.okeiko_gamen == true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [bg wait=true storage="../fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" time=0]
 [wait time=10]
 [else]
@@ -280,7 +280,7 @@ $('.list').remove();
 #
 *bunki_to_good_or_other
 ;◆goodED条件を満たす場合、goodへ
-[if exp="f.okeiko_gamen==true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
+[if exp="f.okeiko_gamen == true && (f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_c'])) && ( f.para_shujinkou_j_sadou >= f.katuraginomiya_sadou_good) && f.para_shujinkou_shukujodo >= 100 && f.katuraginomiya_au == 1"]
 [主人公退場]
 [葛城宮退場]
 @jump storage="katuraginomiya/katuraginomiya_3_4epilogue_goodED.ks" target="seen_1"
@@ -315,7 +315,7 @@ $("kan").css('margin','auto');
 
 [イベントシーン終了]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -326,13 +326,13 @@ $('.1_fore').remove();
 ;ifからだしておいてください
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
 
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました。マクロの動作がうまくいかない場合にまた変更する可能性があります(スクリプト担
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;葛城宮ルートをクリアした
 [eval exp="tf.ED_katuraginomiya == 1"]
 ;tweet表示

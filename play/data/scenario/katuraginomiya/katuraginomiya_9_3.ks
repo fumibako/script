@@ -35,7 +35,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_hahamiya
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「ご挨拶」　葛城宮妃　咲子";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
@@ -443,7 +443,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [freeimage layer=29 time=10]
 [wait time=10]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 

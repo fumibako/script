@@ -77,7 +77,7 @@
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -430,7 +430,7 @@
 [イベントシーン終了]
 [イベントシーン終了４]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 

@@ -151,7 +151,7 @@
 [whosay name="侍従" color=%mp.color]
 「何を読まれているんですか？　演説用のメモには見えませんが」[p]
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -317,7 +317,7 @@ $('.29_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)'
 *seen_end
 [イベントシーン終了]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 

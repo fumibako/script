@@ -8,13 +8,13 @@ $('.list').remove();
 [endscript]
 [freeimage layer = 1]
 [wait time=10]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [cm]
 ;[bg storage="toumei.gif" time=1]
 [endif]
 *start
 [stopbgm]
-[if exp="tf.test_katuraginomiya==true"]
+[if exp="tf.test_katuraginomiya == true"]
 [eval exp="f.okeiko_gamen=true"]
 [eval exp="f.katuraginomiya_au=1"]
 [endif]
@@ -82,7 +82,7 @@ $('.list').remove();
 ;[葛城宮頬染め]
 [preload storage="data/fgimage/katuraginomiya/emo_hohosome.png" wait=true]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -132,7 +132,7 @@ $('.list').remove();
 「皆、私の誇りです！　皆、悲しそうにしないで下さい」[p]
 
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 #
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
@@ -487,7 +487,7 @@ $("kan").css('margin','auto');
 ;画面中央に「完」の文字
 [sp]　  完[p]
 ;===============================================================
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -497,7 +497,7 @@ $('.1_fore').remove();
 
 [endreplay]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 [イベントシーン終了]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"

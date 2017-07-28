@@ -62,7 +62,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_itokomiya
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「忠告」 久佐賀宮 志津子";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
@@ -113,7 +113,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公憂い]
 （……異例な事）[p]
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]

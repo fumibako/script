@@ -130,7 +130,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 @jump target=katuragi_hairetu_skip2
 [endif]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「婚約について」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「婚約について」";//←仮タイトルです。お好みに変更してください
@@ -154,7 +154,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 *katuragi_hairetu_skip2
 [手紙葛城宮 fumi_number=]
 [font color=navy size=21]
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストモードで表示しています[r]
 [link target=*yy2]手紙スキップ[endlink][r][r]
 [link target=*nn2]手紙を読む[endlink][s]
@@ -184,7 +184,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 *yy2
 [sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][28] = 0"]
 [endif]
@@ -284,7 +284,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 「磯野、[r]
 [sp]お父様に 今日時間がある時にお話しがしたい と伝えて下さい」[p]
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -549,7 +549,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]謹んで[ruby text=はい]拝[ruby text=じ]辞[ruby text=つかまつ]仕ります、とお伝えください……」[p]
 
 ;------------------------------------------------------
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -658,7 +658,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [endif]
 [イベントシーン終了]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 

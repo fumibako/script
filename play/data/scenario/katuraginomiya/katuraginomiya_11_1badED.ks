@@ -10,7 +10,7 @@ $('.list').remove();
 [endscript]
 [freeimage layer = 1]
 [wait time=10]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;[bg storage="toumei.gif" time=1]
 [endif]
 [stopbgm]
@@ -20,7 +20,7 @@ $('.list').remove();
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
@@ -44,7 +44,7 @@ $('.list').remove();
 ;選択肢からここに飛んできます スクリプト担当以外消さないでください
 ;・バットエンド（泣く）
 ;=================================================================
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 katuraginomiya_11_1badED.ks[r]
 テストページから開始しています。イベント終わりまでjumpしますか？[r]
 
@@ -199,7 +199,7 @@ $("kan").css('margin','auto');
 [fadeoutbgm time=3000]
 
 [イベントシーン終了]
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
@@ -210,12 +210,12 @@ $('.1_fore').remove();
 ;回想記録終了 ifからだしておいてください
 [endreplay] 
 
-[if exp="f.flag_replay==true"]
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="sf.ED_katuraginomiya_bad=1"]
 @jump storage="event.ks" target=*event_ED
 [else]

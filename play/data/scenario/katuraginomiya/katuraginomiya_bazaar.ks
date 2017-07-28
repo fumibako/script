@@ -33,7 +33,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_katuraginomiya_32
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 バザーへのお誘い 」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「 バザーへのお誘い 」";//←仮タイトルです。お好みに変更してください
@@ -77,7 +77,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 追伸[r]
 色々ある中で沢山の手紙を感謝する。君にとても[r]
 励まされた。[p]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][31] = 0"]
 [endif]

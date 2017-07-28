@@ -50,7 +50,7 @@
 [playse storage=paper_su.ogg loop=false ]
 
 *fumi_toutyaku_katuraginomiya_30
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「 話がしたい 」　葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「 話がしたい 」";//←仮タイトルです。お好みに変更してください
@@ -95,7 +95,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]近いうちにまた会おう。[r]
 [sp][r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][29] = 0"]
 [endif]
@@ -202,7 +202,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 *seen3
 
 [イベントシーン終了]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
 

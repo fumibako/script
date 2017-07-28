@@ -37,7 +37,7 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 *fumi_toutyaku_katuraginomiya_28
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お茶事について」葛城宮 晴仁";//←仮タイトルです。お好みに変更してください
 f.fumi_katuraginomiya_title_new=f.okeiko_month_kansuuji+"「お茶事について」";//←仮タイトルです。お好みに変更してください
@@ -84,7 +84,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]いや、心から君が受けてくれるのを望んでいる。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][27] = 0"]
 [endif]
@@ -93,7 +93,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 ;==============================================================================
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 テストページからプレイしています。侍従の手紙まで移動しますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -526,7 +526,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;=========================スクリプトここまで=======================================
 *fumi_toutyaku_jijyuu_1
-[if exp="f.okeiko_gamen==true"]
+[if exp="f.okeiko_gamen == true"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「先日のお茶事について」桂伯爵夫人";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
