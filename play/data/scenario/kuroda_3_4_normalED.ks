@@ -94,9 +94,10 @@ $(".rp_bt").remove();
 ;[chara_delete="message_bg"]
 ;【背景】ゆっくり暗転後、桜（全画面テキスト用）
 [bg wait=true method='crossfade' storage="toumei.gif" time=300]
-[wait time=50]
+[wait time=30]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_EDsakura.jpg" time=500]
-[wait time=100]
+;↓wait=trueを入れていても読み込み不十分な場合がある為、念のためwaitを長めに。◆jsYiJcqRkk
+[wait time=520]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
@@ -108,6 +109,7 @@ $(".rp_bt").remove();
 
 ;テキスト全画面
 [font color=white size=27]
+[wait time=30]
 
 【黒田】[r]
 「[名前]さん、来てくださってありがとうございます」[l][r]
@@ -159,6 +161,7 @@ $(".rp_bt").remove();
 ――チクリと胸が痛む。[p]
 ;【BGM】フェードアウト
 [fadeoutbgm time=3000]
+[wait time=10]
 
 ふと黒田様を見ると[r]
 桜の花を見つめたまま黙っておられる。[r]
@@ -175,13 +178,13 @@ $(".rp_bt").remove();
 
 ;【SE】小鳥のはばたき
 [playse storage=tori_habataki_kotori.ogg loop=false ]
-[wait time=10]
+[wait time=30]
 黒田様は桜へ歩を進め[r]
 枝先に下がる花に顔を埋めんばかりだ。[r]
 [r]
 ;【SE】メジロ（ピピ？問いかけるようなさえずり）
 [playse storage=tori_mejiro.ogg loop=false ]
-[wait time=10]
+[wait time=30]
 その時、目白が枝に止まり、花弁がひらひらと舞った。[l][r]
 [r]
 [if exp="sf.BGM=='ON'"]
@@ -189,8 +192,9 @@ $(".rp_bt").remove();
 [playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
 [wait time=10]
 [eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
-[wait time=10]
+[wait time=30]
 [endif]
+[wait time=10]
 枝に揺れる目白を見上げ、黒田様は力を得たようにこちらへと向き直られた。[r]
 [r]
 その瞳は決意をたたえている。[p]

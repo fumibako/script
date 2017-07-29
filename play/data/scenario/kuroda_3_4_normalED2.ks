@@ -5,7 +5,7 @@
 *scene0
 [freeimage layer=1 time=500]
 [ct]
-[wait time=10]
+[wait time=500]
 [clearfix]
 [wait time=10]
 [clearstack]
@@ -14,10 +14,10 @@
 
 ;◆ スチル表示:chara_modだとなぜかすぐ消えることがあるため[bg]タグに切り替えています
 [bg wait=true method='crossfade' storage="../fgimage/bg/kuroda_normalED.jpg" time=500]
-[wait time=10]
+[wait time=30]
 [eval exp="f.haikei_credit='illustration　by　かいこ'"]
 [cg storage="kuroda_normalED.jpg"]
-[wait time=10]
+[wait time=200]
 [p]
 [resetfont]
 
@@ -89,10 +89,10 @@
 [layopt layer=29 visible=true]
 [wait time=10]
 ;背景変更:手紙
-[bg wait=true method='crossfade' storage="../fgimage/toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/toumei.gif" time=500]
 [wait time=10]
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
-[wait time=500]
+[wait time=520]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
 [wait time=10]
 
@@ -152,7 +152,7 @@
 [wait time=10]
 ;【背景】セピア背景
 [bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=1000]
-[wait time=10]
+[wait time=1000]
 [eval exp="f.haikei_credit=''"]
 
 @jump storage="replay2.ks"
@@ -161,7 +161,7 @@
 [wait time=10]
 ;【背景】タイトル背景
 [bg wait=true method='crossfade' storage="../fgimage/bg/title.jpg" time=1000]
-[wait time=10]
+[wait time=500]
 
 ;黒田ルートをクリアした
 [eval exp="tf.ED_kuroda == 1"]
