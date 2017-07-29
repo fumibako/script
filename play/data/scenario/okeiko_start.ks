@@ -74,7 +74,7 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 [cm]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 
-[if exp="tf.test_gamen_sijyou==true"]
+[if exp="tf.test_gamen_sijyou == true"]
 @jump storage="01_sijyou_test_nyuuryoku.ks" target=*start
 [elsif exp="tf.test_gamen_sijyou!=true"]
 @jump storage="okeiko_start_nyuuryoku.ks" target=*start
@@ -252,22 +252,22 @@ f.okeiko_month_kansuuji="八月 ";
 if (f.okeiko_month==9){
 f.okeiko_month_kansuuji="九月 ";
 }
-if (f.okeiko_month==10){
+if (f.okeiko_month == 10){
 f.okeiko_month_kansuuji="十月 ";
 }
-if (f.okeiko_month==11){
+if (f.okeiko_month == 11){
 f.okeiko_month_kansuuji="十一月 ";
 }
-if (f.okeiko_month==12){
+if (f.okeiko_month == 12){
 f.okeiko_month_kansuuji="十二月 ";
 }
-if (f.okeiko_month==1){
+if (f.okeiko_month == 1){
 f.okeiko_month_kansuuji="一月 ";
 }
-if (f.okeiko_month==2){
+if (f.okeiko_month == 2){
 f.okeiko_month_kansuuji="二月 ";
 }
-if (f.okeiko_month==3){
+if (f.okeiko_month == 3){
 f.okeiko_month_kansuuji="三月 ";
 }
 [endscript]
@@ -321,8 +321,6 @@ f.okeiko_month_kansuuji="三月 ";
 [call target=*start storage="macro_tati_girl.ks"]
 [wait time=10]
 [主人公退場]
-
-
 
 ;手紙の便せんリストを読込んで配列f.binsen_list_hairetsu[i][j]に格納。
 ;[i]部分が便箋の種類
@@ -553,11 +551,11 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 
 
 ;◆お稽古初回のみ表示
-[if exp="sf.KSKIP=='ON' && sf.trail_okeiko_intro==undefined"]
+[if exp="sf.KSKIP == 'ON' && sf.trail_okeiko_intro == undefined"]
 ;	[skipstop]
 [endif]
 ;◆テスト画面から来た場合や周回時はカット
-[if exp="tf.test_gamen==true"]
+[if exp="tf.test_gamen == true"]
 @jump storage="okeiko.ks" target=*okeiko_main
 [endif]
 ;黒田チェック
@@ -582,50 +580,7 @@ f.fumi_all_number = f.fumi_list_all_title.length;
 [endif]
 
 *intro
-
-;【背景】黒背景（和紙風の黒っぽい背景）全画面テキスト
-[bg wait=true storage="../fgimage/bg/bg_prologue_dark.jpg" time=100]
-[wait time=10]
-@layopt layer=message0 page=fore visible = true
-[wait time=10]
-[current layer="message0"]
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
-[wait time=10]
-[font color=white size=27]
-【磯野】[r]
-「お嬢様。本日よりお稽古には[r]
-[sp]こちらのお部屋をお使いいただきます。[l]
-[if exp="sf.BGM=='ON'"]
-[stopbgm]
-;【BGM】夕涼み（お稽古）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[wait time=10]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
-;↓初回のBGMをスマホ対応位置(クリック後)で鳴らしお稽古本編のBGMタグをスルーする目的でf.skip_sentaku変数を使用します
-[eval exp="f.skip_sentaku = 1"]
-[endif]
-
-[r]
-[r]
-[sp]より集中してお稽古に取り組めるよう[r]
-[sp]旦那様からのお計らいでございます」[p]
-[r]
-[r]
-【[emb exp="sf.girl_namae"]】[r]
-「お部屋をいただけるなんて」[p]
-[r]
-[sp]　　　　　　気持ちも新たに[r]
-[r]
-[r]
-[sp]　　　　　　お稽古に励もう――。[p]
-[resetfont]
-;背景変更:主人公邸_お稽古部屋
-[bg wait=true storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
-[wait time=10]
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[wait time=10]
-@jump storage="okeiko.ks" target=*okeiko_main
+@jump storage="okeiko_start_intro.ks"
 
 ;◆テストメニューへ戻る
 *back_test
