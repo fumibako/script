@@ -1,4 +1,4 @@
-﻿﻿﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
+﻿﻿﻿﻿[if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip!=true"]
 	[skipstart]
 [endif]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
@@ -825,7 +825,7 @@ f.zaizen_fumi1_midoku = 0;
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　四条　華織[p]
 [iscript]
-f.kaori_fumi1_midoku = 0;
+f.sijyou_fumi1_midoku = 0;
 [endscript]
 @jump target=*fumi_sentaku01
 [s]
