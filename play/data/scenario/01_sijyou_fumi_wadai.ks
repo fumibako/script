@@ -336,5 +336,4 @@ if(f.sijyou_fumi_toutyakumachi_aburidasi > 0)f.sijyou_fumi_toutyakumachi_aburida
 sf.sijyou['fumi_hindo_week'] = 0;
 }
 [endscript]
-@jump storage="fumi_wadai.ks" target=*katuraginomiya_wadai_shori
-[s]
+@jump storage="fumi_wadai_owari.ks"

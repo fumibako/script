@@ -1180,8 +1180,9 @@ $('.info_face').remove();
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.sijyou_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_sijyou_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_sijyou_number == 0"]

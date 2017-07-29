@@ -146,4 +146,4 @@ f.binsen_list_hairetsu[25]=["雛飾りの模様",0,-1,0,0,1,"",3];
 f.binsen_list_hairetsu[26]=["うぐいすの模様",1,0,0,1,1,3,""];
 [endscript]
 *complete_repair_binsen_list
-@jump storage="fumi_henji.ks" target=*binsen_sentaku2
+@jump storage="fumi_henji_binsen_sentaku2.ks" target=*binsen_sentaku2

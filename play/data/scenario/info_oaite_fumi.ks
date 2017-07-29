@@ -1,7 +1,7 @@
 ﻿﻿*where_are_you
 ;↓読み込み不良対策。お稽古パート中なら文箱や情報画面を表示せず戻る
 [if exp="f.viewing_storage == 'okeiko.ks'"]
-	@jump storage=okeiko.ks target=*draw_button_system
+	@jump storage="okeiko_draw_button_system.ks"
 [endif]
 
 ;↓読み込み不良対策。終了処理ラベルを真っ先に読む
@@ -21,7 +21,7 @@
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
 
-@jump storage=okeiko.ks target=*draw_button_system
+	@jump storage="okeiko_draw_button_system.ks"
 [s]
 
 *info_owari
@@ -33,7 +33,7 @@
 [freeimage layer = 26]
 [freeimage layer = 27]
 [freeimage layer = 28]
-@jump storage=okeiko.ks target=*draw_button_system
+	@jump storage="okeiko_draw_button_system.ks"
 [return]
 [s]
 
@@ -1258,7 +1258,7 @@
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
 [image layer=26 x=0 y=0 storage="bg/bg_fumibako.jpg"]
-[wait time=30]
+[wait time=50]
 
 [iscript]
 f.fumibako_max_page = Math.ceil(f.fumi_all_number / 10);
@@ -2216,33 +2216,39 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [endif]
 ;◆9月1週お相手未定以外又は9月2週以降はルート確定キャラ以外には返信できない f.fumi_hairetsu1(0=黒田、1=財前、2=四条、3=葛城宮、4=藤枝)
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 0 && f.kuroda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 1 && f.zaizen_au == 1 && ((f.okeiko_month==9 && f.okeiko_week!=1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 	
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 2 && f.sijyou_au == 1 && ((f.okeiko_month==9 && f.okeiko_week!=1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 3 && (f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1)"]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 ;◆葛城宮onlyかau=1の時は、葛城宮以外の返信ボタンは表示しない
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 != 3 && (f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 4 && f.hujieda_au == 1 && ((f.okeiko_month==9 && f.okeiko_week!=1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 
 ;◆9月1週お相手未定以外又は9月2週以降、返信していない手紙の「返信」ボタン部分には何も表示しない
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 )||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
 ;◆8月までは全員へ返信可能
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && (f.okeiko_month == 4 || f.okeiko_month == 5 || f.okeiko_month == 6 || f.okeiko_month == 7 || f.okeiko_month == 8)"]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu = 1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu = 1" size=16 width="32" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y color=white]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
 	[ptext name="list" text="返信済" layer=28 size=15 x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == -1"]
@@ -2270,8 +2276,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.kuroda_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_kuroda_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_kuroda_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_kuroda_number == 0"]
@@ -2293,8 +2300,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.zaizen_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_zaizen_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_zaizen_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_zaizen_number == 0"]
@@ -2321,8 +2329,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.katuraginomiya_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_katuraginomiya_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_katuraginomiya_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_katuraginomiya_number == 0"]
@@ -2348,8 +2357,9 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.hujieda_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
+	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-	[glink name="list" storage=fumi_henji.ks target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_hujieda_y color=white]
+	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=16 width="32" x=850 y=&f.fumi_hujieda_y color=white]
 [endif]
 ;◆手紙タイトルを並べて表示
 [if exp="f.fumi_hujieda_number == 0"]
