@@ -52,20 +52,11 @@
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_all
 *fumi_toutyaku_hantei_owari
 
+;↓draw_button_system切り出しました。okeiko_draw_button_system→okeiko_hyouji.ks→*draw_owari
 *draw_button_system
-[eval exp="f.viewing_storage = 'okeiko.ks'"]
-[eval exp="f.viewing_target = '*draw_button_system'"]
-;背景チラ見え防止:背景表示を[bg]へ切り替えに伴いまたたき防止のためにコメントアウトさせていただきます。
-;[bg storage="../fgimage/bg/toumei.gif" time=0]
-
-;◆お稽古パート画面表示処理へ飛んで戻ってくる
-;↓どこから飛んだか、戻る際の道標
-[eval exp="f.hyoujimae_storage='okeiko.ks'"]
-[eval exp="f.hyoujimae_target='*draw_owari'"]
-@jump storage="okeiko_hyouji.ks" target=*start
+@jump storage="okeiko_draw_button_system.ks"
 
 ;◆描画処理終了
-
 *draw_owari
 ;↓イベント時期フラグリセット(休憩中画像非表示に使用)
 [eval exp="f.event_jiki=''"]
