@@ -5,15 +5,11 @@
 [cm]
 [freeimage layer = 28]
 [一斉表示準備]
-[font size=25]
-どんな感じに[r]
-書きましょう？
-	[glink name="list" storage="fumi_henji_gotyou.ks" target=*gotyou_kanketsu text="簡潔に書く" size=16 width="200" x=480 y=150 color=white]
-	[glink name="list" storage="fumi_henji_gotyou.ks" target=*gotyou_teinei text="丁寧に書く" size=16 width="200" x=480 y=250 color=white]
-	[glink name="list" storage="fumi_henji_gotyou.ks" target=*gotyou_kigaru text="気軽に書く" size=16 width="200" x=480 y=350 color=white]
-[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
-[一斉表示]
-[s]
+;↓loadキャンセル時戻り先を記憶(試行中
+[eval exp="f.load_mae_storage='fumi_henji_gotyou.ks'; f.load_mae_target='*gotyou_sentaku'"]
+
+;↓先に選択後処理ラベルを読み込ませてから選択ボタン表示処理を行うよう順番を変更しました(◆jsYiJcqRkk
+@jump target=*button_hyouji
 
 *gotyou_kanketsu
 [eval exp="f.fumi_gotyou='簡潔に書く'"]
@@ -140,6 +136,18 @@ if (f.para_hujieda_koukando < parseInt(sf.hujieda['koukando_a'])){
 	f.para_pre_hujieda_koukando = f.para_pre_hujieda_koukando + 2;
 }
 [endscript]
+
+*button_hyouji
+[font size=25]
+どんな感じに[r]
+書きましょう？
+	[glink name="list" storage="fumi_henji_gotyou.ks" target=*gotyou_kanketsu text="簡潔に書く" size=16 width="200" x=480 y=150 color=white]
+	[glink name="list" storage="fumi_henji_gotyou.ks" target=*gotyou_teinei text="丁寧に書く" size=16 width="200" x=480 y=250 color=white]
+	[glink name="list" storage="fumi_henji_gotyou.ks" target=*gotyou_kigaru text="気軽に書く" size=16 width="200" x=480 y=350 color=white]
+[button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji.ks" target="*fumi_henji_owari" x=870 y=555]
+[一斉表示]
+[s]
+
 [if exp="f.fumi_kakunin == 1"]
 @jump storage=fumi_wadai.ks target=*fumi_kakunin
 [else]
