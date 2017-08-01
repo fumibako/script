@@ -172,6 +172,7 @@ jumpします。[p]
 [eval exp="sf.FButton='ON'"]
 [表示準備 storage="bg/test_room_zaizen_ima.jpg"]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
+[メッセージウィンドウ上ボタン表示]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 
 ;【立ち絵】主人公：目伏せ
