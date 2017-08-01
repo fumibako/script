@@ -244,6 +244,7 @@ jumpします。[p]
 ;bad2終わり
 *seen_end
 ;===============================================================
+[clearfix]
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
 ;[chara_mod name="bg" storage="bg/bg_prologue_dark.jpg"]
 [bg wait=true storage="../fgimage/bg/bg_prologue_dark.jpg" time=0]
