@@ -1257,7 +1257,7 @@
 [eval exp="f.viewing_storage = 'info_oaite_fumi.ks'"]
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
-[image layer=26 x=0 y=0 storage="bg/bg_fumibako.jpg"]
+[image layer=26 x=0 y=0 height=640 width=960 storage="bg/bg_fumibako.jpg"]
 [wait time=50]
 
 [iscript]
