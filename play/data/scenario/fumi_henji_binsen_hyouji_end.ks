@@ -8,10 +8,10 @@
 ﻿@clearstack
 [button fix=true name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji_owari.ks" target="*fumi_henji_owari" x=870 y=555]
 [locate x=680 y=535]
-[button fix=true name="message_save,list" graphic="button_message_save.png" role=save ]
+[button name="message_save,list" graphic="button_message_save.png" role=save ]
 [wait time=10]
 [locate x=780 y=535]
-[button fix=true name="message_load,list" graphic="button_message_load.png" role=load]
+[button name="message_load,list" graphic="button_message_load.png" role=load]
 ;autosaveロードを可能とするためsys_load.ksに飛ぶ方法を試行中です。まだうまく動作しないため、コメントアウトします◆jsYiJcqRkk
 ;[button fix=true name="message_load,list" graphic="button_message_load.png" storage="sys_load.ks"]
 [wait time=10]
