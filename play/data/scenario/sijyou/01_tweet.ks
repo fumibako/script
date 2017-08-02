@@ -33,7 +33,7 @@
 [イベントシーン構築ボタン無し版]
 ;=====================================================
 ;bad判定用・マクロ[四条ルート終了 end=bad]に追記必須
-[if exp="tf.ED_bad == 1"]
+[if exp="tf.ED_bad == 1 || "tf.tweet_end == true"]
 @jump target=*no_tweet
 [endif]
 ;=====================================================
@@ -161,6 +161,8 @@ $('.list').remove();
 [cm]
 [current layer="message0"]
 タイトル画面に戻ります。[p]
+;動作しました。
+[eval exp="tf.tweet_end=true"]
 
 ;初期化
 ;藤枝 
