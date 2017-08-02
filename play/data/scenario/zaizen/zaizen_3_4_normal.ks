@@ -4,6 +4,7 @@
 *start
 ;=============================================
 ;イベント10回目【財前母の誕生日パーティ】3月4週、
+[eval exp="f.okeiko_gamen = true"]
 ;=======================お芝居の準備中です==========================================
 *replay_zaizen_3_4_normal
 [iscript]
@@ -793,11 +794,6 @@ $('.1_fore').remove();
 @jump storage="event.ks" target=*event_ED
 [endif]
 
-
-;財前ルートをクリアした
-[eval exp="tf.ED_zaizen = 1"]
-;tweet表示
-@jump storage="sijyou/01_tweet.ks"
 
 @jump storage="test_zaizen.ks"
 [s]
