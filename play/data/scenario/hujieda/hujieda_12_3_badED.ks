@@ -175,7 +175,7 @@ $(".bg").attr({ src: "./data/bgimage/toumei.gif"});
 ;スマホで音楽がぶちときれるのはどうしようもない 
 ;===============================================================
 ;bad判定用 ツイート抑止 
-[eval exp="tf.ED_bad == 1"]
+[eval exp="tf.ED_bad = 1"]
 [イベントシーン終了]
 
 [if exp="f.flag_replay == true"]
