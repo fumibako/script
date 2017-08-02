@@ -642,15 +642,24 @@ localStorage.clear();
 ;[else]
 ;[autostop]
 ;[endif]
+[ptext text="お稽古中であるジャンプ演出のみの検査です。予期しない動作の不良は含まないテストです。リセットを忘れないで下さい" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
+[glink target="test_okeiko1" text="はい" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+[glink target="test_no_okeiko" text="いいえ（フラグを消す）" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
+[s]
+*test_okeiko1
 [eval exp="f.okeiko_gamen = true"]
-お稽古中であるジャンプのみ動作します。[r]
-予期しない動作の不良は含まないテストです。[p]
+[cm]
+@jump target=test_page1
+*test_no_okeiko
+[cm]
+[eval exp="f.okeiko_gamen = false"]
 @jump target=test_page1
 [s]
 
 *back_test
 [cm]
 [freeimage layer = 26]
+[eval exp="f.okeiko_gamen = false"]
 ;test中フラグ　一時変数手紙で利用します
 [eval exp="tf.test_sijyou=false"]
 @jump storage="test.ks"
@@ -662,6 +671,7 @@ this.kag.config.unReadTextSkip = true
 *title
 [cm]
 [freeimage layer = 26]
+[eval exp="f.okeiko_gamen = false"]
 ;test中フラグ　一時変数手紙で利用します
 [eval exp="tf.test_sijyou=false"]
 ;------タイトルへ戻る
