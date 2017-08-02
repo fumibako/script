@@ -141,7 +141,7 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 *common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
-[glink target="auto" text="オートセーブをロード" graphic="select_waku_x500.png" size=15 width="250" x=500 y=600 color=white]
+[glink target="auto" text="お稽古ﾌﾗｸﾞをON" graphic="select_waku_x500.png" size=15 width="250" x=500 y=600 color=white]
 
 *button_BGM
 [if exp="sf.BGM=='OFF'"]
@@ -642,11 +642,9 @@ localStorage.clear();
 ;[else]
 ;[autostop]
 ;[endif]
-[if exp="sf.system.autosave == true"]
-[autoload]
-[else]
-自動的に保存されたデータはありません。[p]
-[endif]
+[eval exp="f.okeiko_gamen = true"]
+お稽古中であるジャンプのみ動作します。[r]
+予期しない動作の不良は含まないテストです。[p]
 @jump target=test_page1
 [s]
 
