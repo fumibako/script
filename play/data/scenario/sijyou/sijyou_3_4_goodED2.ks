@@ -156,7 +156,7 @@ $('.1_fore').remove();
 
 [if exp="tf.test_sijyou == true"]
 ;四条ルートをクリアした
-[eval exp="tf.ED_sijyou == 1"]
+[eval exp="tf.ED_sijyou = 1"]
 ;tweet表示
 @jump storage="sijyou/01_tweet.ks"
 @jump storage="test_sijyou.ks"
