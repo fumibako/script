@@ -70,6 +70,8 @@ $('.list').remove();
 [暗転２ storage="bg/bg_prologue.jpg"]
 [主人公口ムッ]
 [wait time=10]
+;機能ボタン消去
+[clearfix]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;テキスト全画面
@@ -88,6 +90,7 @@ $('.list').remove();
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [暗転２終了]
 ;============================================================
+[メッセージウィンドウ上ボタン表示]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「もし、あの時、華織様のことを"想って"いたら、[r]
 [主人公目閉じ]
