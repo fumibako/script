@@ -33,7 +33,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [cm]
 [layopt layer=26 visible=true]
 [wait time=10]
-[ptext text="四条 華織ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
+[ptext name=pt text="四条 華織ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold overwrite=true]
 [ptext text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
 ;[ptext text="作業中＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
@@ -642,7 +642,7 @@ localStorage.clear();
 ;[else]
 ;[autostop]
 ;[endif]
-[ptext text="お稽古中であるジャンプ演出のみの検査です。予期しない動作の不良は含まないテストです。リセットを忘れないで下さい" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
+[ptext name=pt overwrite=true	text="お稽古中であるジャンプ演出のみの検査です。予期しない動作の不良は含まないテストです。リセットを忘れないで下さい" layer=26 size=10 x=100 y=20 color=darkslateblue bold=bold]
 [glink target="test_okeiko1" text="はい" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="test_no_okeiko" text="いいえ（フラグを消す）" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
 [s]
