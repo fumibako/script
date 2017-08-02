@@ -318,7 +318,7 @@ jumpします。[p]
 ;[freeimage layer=1 time=500]
 [iscript]
 $('.1_fore').remove();
-[endscript
+[endscript]
 [ct]
 [wait time=10]
 [clearfix]
