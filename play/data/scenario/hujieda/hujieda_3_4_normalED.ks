@@ -347,7 +347,7 @@ $('.1_fore').remove();
 [if exp="f.okeiko_gamen == true"]
 ;藤枝ルートをクリアした
 ;tweet表示
-[eval exp="tf.ED_fujieda == 1"]
+[eval exp="tf.ED_hujieda = 1"]
 [call storage="sijyou/01_tweet.ks"]
 [藤枝ルート終了 end="normal"]
 [endif]
