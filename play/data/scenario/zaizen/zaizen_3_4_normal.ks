@@ -139,7 +139,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 いかがしましょうか？[r]
 [r]
 [sp]それでは返信をお待ちしております。[r]
-[sp]浅春の折、穏やかにお過ごし下さい[r]
+[sp]浅春の折、穏やかにお過ごし下さい。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
