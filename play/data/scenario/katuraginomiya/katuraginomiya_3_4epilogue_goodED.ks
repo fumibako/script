@@ -510,6 +510,11 @@ $('.1_fore').remove();
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 ;フラグ確認
 [葛城宮ルート終了 end="good"]
+[eval exp="tf.ED_katuraginomiya = 1"]
+
+;tweet表示
+[call storage="sijyou/01_tweet.ks"]
+
 @jump storage="event.ks" target=*event_ED
 [endif]
 
