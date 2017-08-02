@@ -1116,10 +1116,6 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 	[endreplay] 
 [endif]
 [if exp="f.okeiko_gamen==true"]
-;財前ルートをクリアした
-[eval exp="tf.ED_zaizen == 1"]
-;tweet表示
-[call storage="sijyou/01_tweet.ks"]
 @jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
