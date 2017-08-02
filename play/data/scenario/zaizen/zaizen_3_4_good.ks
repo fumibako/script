@@ -428,6 +428,12 @@ $('.1_fore').remove();
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [財前ルート終了 end="good"]
+
+;財前ルートをクリアした
+[eval exp="tf.ED_zaizen == 1"]
+;tweet表示
+[call storage="sijyou/01_tweet.ks"]
+
 @jump storage="event.ks" target=*event_ED
 [endif]
 [イベントシーン終了]
