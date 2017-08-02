@@ -358,16 +358,20 @@ $("kan").css('margin','auto');
 [eval exp="tf.ED_bad == 1"]
 ;================================================================================================
 [イベントシーン終了]
-;回想記録終了
-[endreplay] 
 
+;[endreplay] の前に消す
 [if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
 $('.1_fore').remove();
 [endscript]
 @layopt layer=1 visible=true
+[endif]
 
+;回想記録終了
+[endreplay] 
+
+[if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
