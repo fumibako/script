@@ -795,7 +795,7 @@ $('.1_fore').remove();
 
 
 ;財前ルートをクリアした
-[eval exp="tf.ED_zaizen == 1"]
+[eval exp="tf.ED_zaizen = 1"]
 ;tweet表示
 @jump storage="sijyou/01_tweet.ks"
 
