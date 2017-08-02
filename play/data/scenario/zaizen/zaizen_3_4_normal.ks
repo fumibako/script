@@ -786,9 +786,10 @@ $('.1_fore').remove();
 [if exp="f.okeiko_gamen == true"]
 [財前ルート終了 end="normal"]
 ;財前ルートをクリアした
-[eval exp="tf.ED_zaizen == 1"]
+[eval exp="tf.ED_zaizen = 1"]
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
+
 @jump storage="event.ks" target=*event_ED
 [endif]
 
