@@ -559,7 +559,12 @@ $('.1_fore').remove();
 [if exp="f.okeiko_gamen == true"]
 [イベントシーン終了・ＢＧＭ有]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
+
 [藤枝ルート終了 end="good"]
+;藤枝ルート判定
+[eval exp="tf.ED_hujieda = 1"]
+;tweet表示
+[call storage="sijyou/01_tweet.ks"]
 [endif]
 
 
