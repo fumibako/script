@@ -59,6 +59,8 @@ $("kan").css('margin','auto');
 [暗転１]
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;===============================================================
+;bad判定用 ツイート抑止 
+[eval exp="tf.ED_bad == 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 ;[藤枝ルート終了 end="bad0"]
