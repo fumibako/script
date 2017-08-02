@@ -1,4 +1,5 @@
 ;goodエンドエピローグ
+[eval exp="f.okeiko_gamen = true"]
 =======================お芝居の準備中です==================================
 *replay_katuraginomiya_3_4epilogue_goodED
 *replay_katuraginomiya_3_4_goodED
