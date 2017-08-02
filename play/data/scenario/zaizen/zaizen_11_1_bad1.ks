@@ -2,6 +2,7 @@
 [setreplay name="replay_zaizen_11_1_bad1_scene" storage="zaizen/zaizen_11_1_bad1.ks" target="start"]
 *replay_zaizen_11_1_bad1
 *start
+[cm]
 [iscript]
 $('rp_bt').remove();
 $('.list').remove();
@@ -314,7 +315,10 @@ jumpします。[p]
 ;================================================================================================
 ;【背景】空
 ;背景変更時にフリーズすることが多いため、背景に使用しているレイヤ1をリセット
-[freeimage layer=1 time=500]
+;[freeimage layer=1 time=500]
+[iscript]
+$('.1_fore').remove();
+[endscript
 [ct]
 [wait time=10]
 [clearfix]
