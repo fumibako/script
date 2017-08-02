@@ -305,6 +305,9 @@ $('.1_fore').remove();
 ;ending処理
 ;goodエンディング時
 [eval exp="sf.ED_sijyou_good=1"]
+;四条ルートをクリアした
+[eval exp="tf.ED_sijyou = 1"]
+
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 @jump storage="event.ks" target=*event_ED
 [else]
