@@ -6,7 +6,13 @@
 [call target=*start storage="macro_etc.ks"]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
-;[chara_mod name="bg" storage="../fgimage/bg/title.jpg" time=0]
+;=====================================================
+;bad判定用・二度ツイート表示抑止naming.ksでfalse
+[if exp="tf.ED_bad == 1 || "tf.tweet_end == true"]
+@jump target=*no_tweet
+[endif]
+;デバック方法　グッドエンドをロードや再起動せず二回起動
+;=====================================================
 ;クリックしないとならない 何かメッセージ　
 [position layer=message1 width=600 height=100 top=150 left=80 margint=30 opacity=100 color=snow]
 @layopt layer=message1 visible=true
