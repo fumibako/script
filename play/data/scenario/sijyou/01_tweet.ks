@@ -4,6 +4,11 @@
 [call target=*start storage="tyrano.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
+;スキップ停止　キースキップ安定化のため、スキップフラグ処理追加
+[iscript]
+TG.kag.ftag.startTag("cancelskip");
+f.skip=false;
+[endscript]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 ;=====================================================
