@@ -11,6 +11,7 @@
 [eval exp="tf.test_zaizen=false"]
 [eval exp="tf.test_katuraginomiya = false"]
 [eval exp="tf.test_hujieda = false"]
+[eval exp="tf.tweet_end = false"]
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 
