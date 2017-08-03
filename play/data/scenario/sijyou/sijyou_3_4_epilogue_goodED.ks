@@ -112,9 +112,10 @@ $('.list').remove();
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
-
+[if exp="f.skip == false"]
 [主人公目パチ1回]
 [wait time=10]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうされましたか？ 」[p]
 [主人公口ほほえみ]
@@ -142,9 +143,10 @@ $('.junbi_girl').remove();
 「[華衣]から手紙ですか！ なかなか手紙さえ返してくれなかったのに。[r]
 [四条困り微笑み]
 [sp]一体、何をしてるのでしょうか……」[p]
-
+[if exp="f.skip == false"]
 [主人公目パチ1回]
 [wait time=10]
+[endif]
 [主人公ポーズ指]
 [wait time=10]
 ;なにかしらと読み
@@ -156,8 +158,10 @@ $('.junbi_girl').remove();
 「手紙によりますと……[r]
 [sp][華衣]さんは結納式の後に出会った方と四条家の鉱山[r]
 [sp]事業を生かした、発電事業をはじめ……」[p]
+[if exp="f.skip == false"]
 [主人公目パチ1回]
 [wait time=10]
+[endif]
 「事故の少ない交通機関の発展にも貢献しているそうですよ」[p]
 [主人公ポーズ通常]
 
@@ -185,8 +189,11 @@ $('.junbi_girl').remove();
 
 [主人公通常]
 [wait time=10]
+
+[if exp="f.skip == false"]
 [主人公目パチ1回]
 [wait time=10]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいのですか？」[p]
