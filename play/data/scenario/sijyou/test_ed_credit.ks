@@ -602,8 +602,10 @@ $('.omoide1').remove();
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
 
-;tweet表示
-;[call storage="sijyou/01_tweet.ks"]
+;tweet表示　tweetが起動してなければ起動する　tweetでも判定が走ります
+[if exp="tf.tweet_end != true"]
+[call storage="sijyou/01_tweet.ks"]
+[endif]
 
 [if exp="f.okeiko_gamen == true"]
 [return]
