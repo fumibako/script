@@ -165,17 +165,22 @@ $('.loding_pic1').remove();
 
 *test5_1
 [cm]
-[freeimage layer = 26]
+[eval exp="f.okeiko_month = 5"]
+[eval exp="f.okeiko_week = 1"]
 @jump storage="sijyou/sijyou_5_1.ks"
 [s]
 *test6_1
 [cm]
 [freeimage layer = 26]
+[eval exp="f.okeiko_month = 6"]
+[eval exp="f.okeiko_week = 1"]
 @jump storage="sijyou/sijyou_6_1.ks"
 [s]
 
 *test7_1
 [cm]
+[eval exp="f.okeiko_month = 7"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_7_1.ks"
@@ -183,6 +188,8 @@ $('.loding_pic1').remove();
 
 *test9_1
 [cm]
+[eval exp="f.okeiko_month = 9"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_9_1.ks"
@@ -191,6 +198,8 @@ $('.loding_pic1').remove();
 
 *test9_2
 [cm]
+[eval exp="f.okeiko_month = 9"]
+[eval exp="f.okeiko_week = 2"]
 [freeimage layer = 26]
 [bg storage="toumei.gif" time=50]
 @jump storage="sijyou/sijyou_9_2.ks"
@@ -207,6 +216,8 @@ $('.loding_pic1').remove();
 
 *test9_4
 [cm]
+[eval exp="f.okeiko_month = 9"]
+[eval exp="f.okeiko_week = 4"]
 [freeimage layer = 26]
 [bg storage="toumei.gif" time=50]
 @jump storage="sijyou/sijyou_9_4.ks"
@@ -215,6 +226,8 @@ $('.loding_pic1').remove();
 
 *test9_4b
 [cm]
+[eval exp="f.okeiko_month = 9"]
+[eval exp="f.okeiko_week = 4"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_9_4b.ks"
@@ -223,6 +236,8 @@ $('.loding_pic1').remove();
 
 *test10_1
 [cm]
+[eval exp="f.okeiko_month = 10"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_10_1.ks"
@@ -231,6 +246,8 @@ $('.loding_pic1').remove();
 
 *test10_3
 [cm]
+[eval exp="f.okeiko_month = 10"]
+[eval exp="f.okeiko_week = 3"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_10_3.ks"
@@ -239,6 +256,8 @@ $('.loding_pic1').remove();
 
 *test10_3b
 [cm]
+[eval exp="f.okeiko_month = 10"]
+[eval exp="f.okeiko_week = 3"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_10_3_badED.ks"
@@ -247,6 +266,8 @@ $('.loding_pic1').remove();
 
 *test11_1
 [cm]
+[eval exp="f.okeiko_month = 11"]
+[eval exp="f.okeiko_week = 2"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_11_1.ks"
@@ -254,6 +275,8 @@ $('.loding_pic1').remove();
 
 *test11_1_kai
 [cm]
+[eval exp="f.okeiko_month = 11"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_11_1_kai.ks" target=*start
@@ -261,6 +284,8 @@ $('.loding_pic1').remove();
 
 *test11_1b
 [cm]
+[eval exp="f.okeiko_month = 11"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_11_1b.ks"
@@ -268,6 +293,8 @@ $('.loding_pic1').remove();
 
 *test1_1
 [cm]
+[eval exp="f.okeiko_month = 1"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_1_1.ks"
@@ -276,6 +303,8 @@ $('.loding_pic1').remove();
 
 *test1_3
 [cm]
+[eval exp="f.okeiko_month = 1"]
+[eval exp="f.okeiko_week = 3"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_1_3_normalED.ks"
@@ -283,6 +312,8 @@ $('.loding_pic1').remove();
 
 *test1_4
 [cm]
+[eval exp="f.okeiko_month = 1"]
+[eval exp="f.okeiko_week = 4"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_1_4.ks"
@@ -290,6 +321,8 @@ $('.loding_pic1').remove();
 
 *test2_1
 [cm]
+[eval exp="f.okeiko_month = 2"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_2_1.ks"
@@ -297,6 +330,8 @@ $('.loding_pic1').remove();
 
 *test2_1b
 [cm]
+[eval exp="f.okeiko_month = 2"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_2_1b.ks"
@@ -304,6 +339,8 @@ $('.loding_pic1').remove();
 
 *test3_1
 [cm]
+[eval exp="f.okeiko_month = 3"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_3_1.ks"
@@ -311,6 +348,8 @@ $('.loding_pic1').remove();
 
 *test3_1b
 [cm]
+[eval exp="f.okeiko_month = 3"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_3_1b.ks"
@@ -318,6 +357,8 @@ $('.loding_pic1').remove();
 
 *test3_1b_f
 [cm]
+[eval exp="f.okeiko_month = 3"]
+[eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_3_1b_fumiya.ks"
@@ -325,6 +366,8 @@ $('.loding_pic1').remove();
 
 *test3_4
 [cm]
+[eval exp="f.okeiko_month = 3"]
+[eval exp="f.okeiko_week = 4"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_3_4_goodED.ks"
@@ -332,6 +375,8 @@ $('.loding_pic1').remove();
 
 *test_goodED
 [cm]
+[eval exp="f.okeiko_month = 3"]
+[eval exp="f.okeiko_week = 4"]
 [freeimage layer = 26]
 ;問題なし
 @jump storage="sijyou/sijyou_3_4_epilogue_goodED.ks"
@@ -662,6 +707,8 @@ localStorage.clear();
 [eval exp="f.okeiko_gamen = false"]
 ;test中フラグ　一時変数手紙で利用します
 [eval exp="tf.test_sijyou=false"]
+[call target = *start storage = "01_sijyou_hensuu.ks"]
+[call target = *start storage = "hensuu.ks"]
 @jump storage="test.ks"
 [iscript]
 this.kag.config.unReadTextSkip = true
@@ -674,6 +721,8 @@ this.kag.config.unReadTextSkip = true
 [eval exp="f.okeiko_gamen = false"]
 ;test中フラグ　一時変数手紙で利用します
 [eval exp="tf.test_sijyou=false"]
+[call target = *start storage = "01_sijyou_hensuu.ks"]
+[call target = *start storage = "hensuu.ks"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
