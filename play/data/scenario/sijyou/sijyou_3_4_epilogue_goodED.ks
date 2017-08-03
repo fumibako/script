@@ -316,6 +316,10 @@ $('.1_fore').remove();
 [eval exp="tf.ED_sijyou = 1"]
 
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
+
+;tweet表示
+[call storage="sijyou/01_tweet.ks"]
+
 @jump storage="event.ks" target=*event_ED
 [else]
 [四条ルート終了 end=good]
