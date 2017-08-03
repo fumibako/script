@@ -603,7 +603,7 @@ $('.omoide1').remove();
 [kanim keyframe="opcy" name="omoide1" time=10]
 
 ;tweet表示
-[call storage="sijyou/01_tweet.ks"]
+;[call storage="sijyou/01_tweet.ks"]
 
 [if exp="f.okeiko_gamen == true"]
 [return]
