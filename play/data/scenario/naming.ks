@@ -9,7 +9,8 @@
 ;===============================================ここから=============================================================
 *skip_plg0
 ;start
-
+;tweet動作2週目　ゲームを終了しないではじめからを選択した時tweetがスキップされるのを抑止
+[eval exp="tf.tweet_end=false"]
 ;黒田チェック
 [if exp="sf.ED_kuroda_bad == 1 || sf.ED_kuroda_normal == 1 || sf.ED_kuroda_good == 1"]
 @jump target=skip_sentaku
