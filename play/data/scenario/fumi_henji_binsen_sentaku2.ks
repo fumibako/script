@@ -21,7 +21,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
 
 [if exp="f.fumi_binsen_number>10"]
-			[glink name="list" target=*fumi_binsen_page2 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" storage="fumi_henji_binsen_sentaku2.ks" target=*fumi_binsen_page2 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_binsen_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -98,9 +98,9 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
 
-			[glink name="list" target=*fumi_binsen_page1 text="←" size=20 width="20" x=350 y=480 color=white]
+			[glink name="list" storage="fumi_henji_binsen_sentaku2.ks" target=*fumi_binsen_page1 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_binsen_number>20"]
-			[glink name="list" target=*fumi_binsen_page3 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" storage="fumi_henji_binsen_sentaku2.ks" target=*fumi_binsen_page3 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_binsen_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -175,9 +175,9 @@ f.binsen_max_page = Math.ceil(f.fumi_binsen_number / 10);
 f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink name="list" target=*fumi_binsen_page2 text="←" size=20 width="20" x=350 y=480 color=white]
+		[glink name="list" storage="fumi_henji_binsen_sentaku2.ks" target=*fumi_binsen_page2 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_binsen_number>30"]
-		[glink name="list" target=*fumi_binsen_page4 text="→" size=20 width="20" x=890 y=480 color=white]
+		[glink name="list" storage="fumi_henji_binsen_sentaku2.ks" target=*fumi_binsen_page4 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_binsen_number - 20"]
 [eval exp="f.loop_count = f.list_count"]
@@ -252,9 +252,9 @@ f.binsen_max_page = Math.ceil(f.fumi_binsen_number / 10);
 f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink name="list" target=*fumi_binsen_page3 text="←" size=20 width="20" x=350 y=480 color=white]
+		[glink name="list" storage="fumi_henji_binsen_sentaku2.ks" target=*fumi_binsen_page3 text="←" size=20 width="20" x=350 y=480 color=white]
 [if exp="f.fumi_binsen_number>40"]
-		[glink name="list" target=*fumi_binsen_page5 text="→" size=20 width="20" x=890 y=480 color=white]
+		[glink name="list" storage="fumi_henji_binsen_sentaku2.ks" target=*fumi_binsen_page5 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_binsen_number - 30"]
 [eval exp="f.loop_count = f.list_count"]
@@ -328,7 +328,7 @@ f.binsen_max_page = Math.ceil(f.fumi_binsen_number / 10);
 f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.binsen_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink name="list" target=*fumi_binsen_page4 text="←" size=20 width="20" x=350 y=480 color=white]
+		[glink name="list" storage="fumi_henji_binsen_sentaku2.ks" target=*fumi_binsen_page4 text="←" size=20 width="20" x=350 y=480 color=white]
 [eval exp="f.list_count = f.fumi_binsen_number - 40"]
 [eval exp="f.loop_count = f.list_count"]
 [if exp="f.loop_count > 5"]
