@@ -3,7 +3,10 @@
 ;=============================================
 
 *scene0
-[freeimage layer=1 time=500]
+;[freeimage layer=1 time=500]
+[iscript]
+$('.1_fore').remove();
+[endscript]
 [ct]
 [wait time=500]
 [clearfix]
