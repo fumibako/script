@@ -337,6 +337,7 @@ $('.1_fore').remove();
 [eval exp="tf.ED_katuraginomiya = 1"]
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
+[wait time=10]
 [葛城宮ルート終了 end="normal"]
 @jump storage="event.ks" target=*event_ED
 [endif]
