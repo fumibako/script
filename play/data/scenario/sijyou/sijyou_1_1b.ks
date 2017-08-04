@@ -7,7 +7,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_sijyou.ks"]
+
 ;=======================================================================
 *start
 [eval exp="f.kaogura!='off'"]
@@ -15,6 +15,7 @@
 [freeimage layer = 14]
 ;機能ボタン消去
 [clearfix]
+[call target=*start storage="macro_tati_sijyou.ks"]
 [bg storage="toumei.gif" time=1000]
 [er]
 [背景_四条玄関]
