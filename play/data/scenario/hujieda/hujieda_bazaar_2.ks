@@ -862,14 +862,20 @@
 [主人公口通常]
 （忠告されただけなのに不安に駆られているわ）[p]
 
-
+#
 [cm]
+;メッセージの表示を消します　
+[layopt layer=message0 visible=false]
 ;サイズアップ・全画面等スクリプト変更するときはテスト（または報告）して下さい。間違ったままアップしてしまいます。
 [暗転２ storage="bg/B4nFWraU42/bg_hujieda_ensou3_1.jpg"]
 [藤枝サイズ顔アップ]
 [藤枝ベース私服_楽譜無し]
 [藤枝目伏せ照れ]
 [暗転２終了]
+;メッセージの表示を戻します
+[layopt layer=message0 visible=true]
+[wait time=10]
+
 #
 藤枝様は私の手を握り、勇気づけるように囁いた。[p]
 [whosay name="藤枝 肇" color=%mp.color] 
