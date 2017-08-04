@@ -601,6 +601,12 @@ $('.omoide1').remove();
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_preload_girl.jpg" time=1300]
 ;表示
 [kanim keyframe="opcy" name="omoide1" time=10]
+[wait time=10]
+;スキップ停止　キースキップ安定化のため、スキップフラグ処理追加
+[iscript]
+TG.kag.ftag.startTag("cancelskip");
+f.skip=false;
+[endscript]
 
 ;tweet表示　tweetが起動してなければ起動する　tweetでも判定が走ります
 [if exp="tf.tweet_end != true"]
