@@ -180,7 +180,7 @@ $('.list').remove();
 
 [whosay name="藤枝 肇" color=%mp.color]
 「入ってもよろしいでしょうか？」
-[if exp="f.okeiko_gamen == true && f.skip == true"]
+[if exp="f.okeiko_gamen == true && (f.skip == true || this.kag.stat.is_skip == true)"]
 [eval exp="tf.game_skip_bgm = 1"]
 [endif]
 [p]
