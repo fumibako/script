@@ -233,18 +233,23 @@
 便箋のひとつをとっても、季節や相手を思って選んでくれたことに[r]
 気付かされる。[p]
 
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+
 [whosay name="華織" color="olivedrab"]
 (手紙を書くのは苦手な僕なのに、[r]
 [sp]あの時は、素っ気無い手紙にしてしまっていたのに）[p]
-#
-[名前]さんへの思いが込み上げてくる。[p]
 
+;[四条眉下げ]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
-;[四条頬染め]
-[chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
-[wait time=10]
+#
+[名前]さんへの思いが込み上げてくる。[p]
+
 
 [whosay name="華織" color="olivedrab"]
 (ありがとう）[p]
