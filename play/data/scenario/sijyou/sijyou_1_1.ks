@@ -76,6 +76,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [position vertical=true]
 [position left=270 width=350 height=510 top=40 page=fore margint=0]
 @layopt layer=message0 page=fore visible=true
+[wait time=10]
 [font color=black size=19]
 
 ;○四条手紙 正月はがき？
