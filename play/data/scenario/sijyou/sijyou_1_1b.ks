@@ -1,6 +1,7 @@
 *test
 [call target=*start storage="tyrano.ks"]
 [stopbgm]
+[call target=*1_1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
@@ -63,7 +64,7 @@
 #
 正月飾りのお披露目や、[r]
 親族や四条家を贔屓にしてくださる方々の挨拶も終えた頃、[r]
-女中達を従えた　が楚々と僕の前に　た。[p]
+女中達を従えた　女中頭が楚々と僕の前に現れた。[p]
 
 [whosay name="女中頭"]
 「お寒い中、お疲れになりましたでしょう。[r]
@@ -72,20 +73,32 @@
 [whosay name="華織" color="olivedrab"]
 「ありがとう」[p]
 
-
 [whosay name="女中頭"]
-「[名字]様からお手紙が届いております。
-[sp]それから……[華衣]様から、こちらをお預かりしております」[p]
+「それから……[華衣]様から、こちらをお預かりしております」[p]
 #
-から渡されたものは、で出来た文箱でだった。[p]
+女中頭から手渡されたもの ――[r]
+それは、漆に山水の蒔絵が描かれた、見覚えのある文箱だった。[p]
 
 [whosay name="華織" color="olivedrab"]
 「華衣がこれを？」[p]
+#
+記憶を辿って思い出せば、これは華衣にあげた文箱だ。[p]
 
 [whosay name="女中頭"]
 「……はい」[p]
 #
-控えめに　が返事をする。[p]
+控えめに女中が返事をする。[r]
+これ以上、深く尋ねては差し支えがあるのだろう。[r]
+僕は、そのまま[ruby text=そ]文[ruby text=れ]箱を受け取った。[p]
+
+
+[whosay name="華織" color="olivedrab"]
+（もう、[華衣]には、いらないということだろうか……）[p]
+#
+女中達が去っていく中、そっと文箱の蓋をあける。[p]
+
+華衣
+バラバラになった手紙が台紙の上で修復されていた。
 
 ;==========================================================================
 
