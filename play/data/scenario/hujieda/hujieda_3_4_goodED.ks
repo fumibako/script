@@ -535,7 +535,7 @@ TG.kag.ftag.startTag("cancelskip");
 f.skip=false;
 [endscript]
 ;念のためBGM停止
-[fadeinbgm time=1200]
+[fadeoutse time=1200]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜
