@@ -523,6 +523,14 @@ $("kan").css('margin','auto');
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　  完[p]
+;===============================================================
+[if exp="f.okeiko_gamen == true"]
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜（normal/goodED用)
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
+[endif]
 ;================スクリプト・全画面表示からの復帰準備 初期化　ｽｸﾘﾌﾟﾄ担当さまにお任せします。================
 ;メッセージをもどします
 [resetfont]
@@ -563,6 +571,15 @@ $('.1_fore').remove();
 [藤枝ルート終了 end="good"]
 ;藤枝ルート判定
 [eval exp="tf.ED_hujieda = 1"]
+[skipstop]
+[wait time=10]
+
+;スキップ停止　キースキップ安定化のため、スキップフラグ処理追加
+[iscript]
+TG.kag.ftag.startTag("cancelskip");
+f.skip=false;
+[endscript]
+
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
 [endif]
