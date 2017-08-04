@@ -85,13 +85,14 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 
 *test_page2
 [glink target="test1_1" text="1月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test1_4" text="1月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test2_1" text="2月1週:1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test2_1b" text="2月1週:2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test3_1" text="3月1週:1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test3_1b" text="3月1週:2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test3_1b_f" text="3月1週:2_文也" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test1_1b" text="1月1週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="test1_4" text="1月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target="test2_1" text="2月1週:1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="test2_1b" text="2月1週:2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test3_1" text="3月1週:1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="test3_1b" text="3月1週:2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test3_1b_f" text="3月1週:2_文也" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 
 
 [glink target="test3_4" text="3月4週normalEND" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -300,6 +301,14 @@ $('.loding_pic1').remove();
 @jump storage="sijyou/sijyou_1_1.ks"
 [s]
 
+*test1_1b
+[cm]
+[eval exp="f.okeiko_month = 1"]
+[eval exp="f.okeiko_week = 1"]
+[freeimage layer = 26]
+
+@jump storage="sijyou/sijyou_1_1b.ks"
+[s]
 
 *test1_3
 [cm]
