@@ -124,7 +124,7 @@
 [wait time=10]
 
 [whosay name="華織" color="olivedrab"]
-「華衣がこれを？」[p]
+「[華衣]がこれを？」[p]
 
 ;[四条口通常]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
