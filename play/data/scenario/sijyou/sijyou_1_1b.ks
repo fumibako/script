@@ -134,7 +134,7 @@
 [wait time=10]
 
 #
-記憶を辿って思い出せば、これは[華衣]にあげた文箱だ。[p]
+記憶を辿って思い出せば、これは僕が[華衣]にあげた文箱だ。[p]
 
 ;[四条目通常]
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
