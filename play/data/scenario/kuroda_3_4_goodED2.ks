@@ -240,14 +240,16 @@ $('.junbi_girl').remove();
 [eval exp="sf.FButton='OFF'"]
 [chara_mod name="message_bg" storage="toumei.gif" time=0]
 [wait time=10]
+
+;【背景】プロローグと同じ黒っぽい和紙風、全画面テキスト
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
+[wait time=10]
+
 [freeimage layer = 27]
 [freeimage layer = 28]
 [freeimage layer = 29]
 [wait time=10]
 
-;【背景】プロローグと同じ黒っぽい和紙風、全画面テキスト
-[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
-[wait time=10]
 
 [if exp="f.okeiko_gamen != true"]
 	[fadeoutbgm time=3000]
