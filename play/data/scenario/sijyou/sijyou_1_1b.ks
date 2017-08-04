@@ -30,6 +30,14 @@
 
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ――四条邸にて。[p]
+
+;====================
+;【立ち絵】四条 微笑み
+[四条サイズ通常_羽織]
+[四条通常]
+[表示開始 time=300]
+;====================
+
 [whosay name="女中"]
 「お帰りなさいませ。 華織様」[p]
 ;【SE】落ち着いた足音（フェードイン）
@@ -66,13 +74,6 @@
 [cm]
 [endif]
 
-;====================
-;【立ち絵】四条 微笑み
-[四条サイズ通常_羽織]
-[四条通常]
-[表示開始 time=300]
-;====================
-
 [whosay name="華織" color="olivedrab"]
 「ただいま」[p]
 #
@@ -88,16 +89,19 @@
 ;[四条目にこ]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
+;[四条口開]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_ake.png" time=0]
+[wait time=10]
 
 [whosay name="華織" color="olivedrab"]
 「ありがとう」[p]
 
-[whosay name="女中頭"]
-「それから……[華衣]様から、こちらをお預かりしております」[p]
-
 ;[四条口通常]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
 [wait time=10]
+
+[whosay name="女中頭"]
+「それから……[華衣]様から、こちらをお預かりしております」[p]
 
 ;[四条目大]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
@@ -107,12 +111,11 @@
 女中頭から手渡されたもの ――[r]
 それは、漆に山水の蒔絵が描かれた、見覚えのある文箱だった。[p]
 
-;[四条口開]
-[chara_mod name="sijyou_kuti" storage="sijyou/kuti_ake.png" time=0]
+;[四条眉驚き]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_odoroki.png" time=0]
 [wait time=10]
-
-;[四条目通常]
-[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+;[四条口驚き]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_odoroki.png" time=0]
 [wait time=10]
 
 [whosay name="華織" color="olivedrab"]
@@ -121,21 +124,32 @@
 ;[四条口通常]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
 [wait time=10]
+;[四条眉下げ]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 
 #
 記憶を辿って思い出せば、これは[華衣]にあげた文箱だ。[p]
 
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+
 [whosay name="女中頭"]
 「……はい」[p]
+
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条目伏]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
+[wait time=10]
+
 #
 控えめに女中頭が返事をする。[r]
 ;女中頭が控えめに返事をした。[r]
 これ以上、深く尋ねては差し支えがあるのだろう。[r]
 僕は、そのまま[ruby text=そ]文[ruby text=れ]箱を受け取った。[p]
-
-;[四条目伏]
-[chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
-[wait time=10]
 
 ;[四条口ムッ]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
@@ -152,6 +166,7 @@
 (もし[華衣]自身が望んでしたことなら、それは[r]
 [sp]自分の力で新しい一歩を踏み出そうとしている良い兆し……[r]
 [sp]なのかもしれないけれど……）[p]
+
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
@@ -163,13 +178,25 @@
 気を利かせた女中達が去っていく中、[r]
 僕は複雑な思いで、そっと文箱の蓋を開けた。[p]
 
+;[四条眉驚き]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_odoroki.png" time=0]
+[wait time=10]
 ;[四条目大]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+[wait time=10]
+;[四条口驚き]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_odoroki.png" time=0]
 [wait time=10]
 
 [whosay name="華織" color="olivedrab"]
 (これは……！)[p]
 
+;[四条口通常]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
+[wait time=10]
+;[四条眉下げ]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 ;[四条目伏]
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
 [wait time=10]
@@ -178,6 +205,9 @@
 あの時に[華衣]がバラバラにしてしまった[名前]さんからの手紙が、[r]
 数枚、台紙の上で丁寧に張られ、修復されていた。[p]
 
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
@@ -211,6 +241,9 @@
 
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
+;[四条頬染め]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=10]
 
 [whosay name="華織" color="olivedrab"]
