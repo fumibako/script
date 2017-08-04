@@ -97,8 +97,8 @@
 [whosay name="華織" color="olivedrab"]
 「ありがとう」[p]
 
-;[四条口通常]
-[chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
 
 [whosay name="女中頭"]
@@ -106,6 +106,10 @@
 
 ;[四条目大]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+[wait time=10]
+
+;[四条口通常]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
 [wait time=10]
 
 #
