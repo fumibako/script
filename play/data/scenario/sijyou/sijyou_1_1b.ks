@@ -26,6 +26,8 @@
 [wait time=10]
 [背景_四条玄関]
 ;[chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+[表示準備 storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
+
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ――四条邸にて。[p]
 [whosay name="女中"]
@@ -64,6 +66,7 @@
 [cm]
 [endif]
 
+[四条サイズ通常_羽織]
 [whosay name="華織" color="olivedrab"]
 「ただいま」[p]
 #
@@ -131,6 +134,10 @@
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
 
+;[四条目伏]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
+[wait time=10]
+
 [whosay name="華織" color="olivedrab"]
 ([名前]さん……)[p]
 #
@@ -144,12 +151,16 @@
 #
 [名前]さんへの思いが込み上げてくる。[p]
 
+;[四条目閉じ]
+[chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
+
 [whosay name="華織" color="olivedrab"]
 (ありがとう）[p]
 
 #
-手紙の大切さに改めて、僕は気付かされ、[r]
-心に暖かな花が芽吹いたような気がした。[p]
+手紙の大切さに改めて、僕は気付かされ、心に暖かな花が芽吹いたような[r]
+気がした。[p]
 ;===========================================================================
 *seen_end
 [イベントシーン終了]
