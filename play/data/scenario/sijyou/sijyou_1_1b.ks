@@ -241,6 +241,10 @@
 便箋のひとつをとっても、季節や相手を思って選んでくれたことに[r]
 気付かされる。[p]
 
+;[四条口ムッ]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
+[wait time=10]
+
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
