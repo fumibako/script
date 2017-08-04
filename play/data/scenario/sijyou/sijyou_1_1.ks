@@ -124,6 +124,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;=================================================================================_
 *seen3
 [背景明度アップ解除]
+
+@jump storage="sijyou/sijyou_1_1b.ks" target=*start
+
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
