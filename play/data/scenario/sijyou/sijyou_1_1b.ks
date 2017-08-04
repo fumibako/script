@@ -30,6 +30,8 @@
 ――四条邸にて。[p]
 [whosay name="女中"]
 「お帰りなさいませ。 華織様」[p]
+;【SE】落ち着いた足音（フェードイン）
+[playse storage=isono_in.ogg loop=false ]
 
 [if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
@@ -97,8 +99,16 @@
 僕は、そのまま[ruby text=そ]文[ruby text=れ]箱を受け取った。[p]
 
 [whosay name="華織" color="olivedrab"]
-（もう、[華衣]には、いらないということだろうか？[r]
-[sp][華衣]にとって、それは良い兆しなのかもしれないけれど……）[p]
+（もう、[華衣]には、いらないということだろうか？)[p]
+
+;[whosay name="華織" color="olivedrab"]
+(もし[華衣]自身が望んでしたことなら、それは[r]
+[sp]自分の力で新しい一歩を踏み出そうとしている良い兆し……[r]
+[sp]なのかもしれないけれど……）[p]
+
+;【SE】衣擦れ（スッ）
+[playse storage=kinuzure.ogg loop=false ]
+
 #
 気を利かせた女中達が去っていく中、[r]
 僕は複雑な思いで、そっと文箱の蓋を開けた。[p]
@@ -117,6 +127,9 @@
 #
 きっと[名前]さんの言葉が、[華衣]の心に届いたのだろう。[r]
 届かず、読めなかった[名前]さんからの手紙を大事に手に取る。[p]
+
+;【SE】紙に触れる（スッ）
+[playse storage=paper_su.ogg loop=false ]
 
 [whosay name="華織" color="olivedrab"]
 ([名前]さん……)[p]
