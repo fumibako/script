@@ -527,7 +527,7 @@ $("kan").css('margin','auto');
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　  完
-[if exp="tf.game_skip_bgm == 1"]
+[if exp="tf.game_skip_bgm == 1 && (f.skip == true || this.kag.stat.is_skip == true)""]
 ;スキップをかけているときの動作
 ;スキップ停止　キースキップ安定化のため、スキップフラグ処理追加
 [iscript]
