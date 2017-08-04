@@ -164,7 +164,7 @@
 [wait time=10]
 
 ;[whosay name="華織" color="olivedrab"]
-(もし[華衣]自身が望んでしたことなら、それは[r]
+（もし[華衣]自身が望んでしたことなら、それは[r]
 [sp]自分の力で新しい一歩を踏み出そうとしている良い兆し……[r]
 [sp]なのかもしれないけれど……）[p]
 
@@ -191,6 +191,8 @@
 
 [whosay name="華織" color="olivedrab"]
 (これは……！)[p]
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
 ;[四条口通常]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
@@ -228,9 +230,10 @@
 [wait time=10]
 
 [whosay name="華織" color="olivedrab"]
-([名前]さん……)[p]
+（[名前]さん……）[p]
 #
-手紙には、たくさんの励ましの言葉、何気ない日常への思いが綴られており、[r]
+手紙には、たくさんの励ましの言葉、何気ない日常への思いが[r]
+綴られており、[r]
 便箋のひとつをとっても、季節や相手を思って選んでくれたことに[r]
 気付かされる。[p]
 
@@ -239,7 +242,7 @@
 [wait time=10]
 
 [whosay name="華織" color="olivedrab"]
-(手紙を書くのは苦手な僕なのに、[r]
+（手紙を書くのは苦手な僕なのに、[r]
 [sp]あの時は、素っ気無い手紙にしてしまっていたのに）[p]
 
 ;[四条眉下げ]
