@@ -523,14 +523,6 @@ $("kan").css('margin','auto');
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　  完[p]
-;===============================================================
-[if exp="f.okeiko_gamen == true"]
-[if exp="sf.BGM=='ON'"]
-;【BGM】はなごよみ〜さくら〜（normal/goodED用)
-[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
-[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
-[endif]
-[endif]
 ;================スクリプト・全画面表示からの復帰準備 初期化　ｽｸﾘﾌﾟﾄ担当さまにお任せします。================
 ;メッセージをもどします
 [resetfont]
