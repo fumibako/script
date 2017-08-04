@@ -179,7 +179,11 @@ $('.list').remove();
 鼓動が高まる中、少し緊張したような声が襖の向こうから聞こえた。[p]
 
 [whosay name="藤枝 肇" color=%mp.color]
-「入ってもよろしいでしょうか？」[p]
+「入ってもよろしいでしょうか？」
+[if exp="f.okeiko_gamen == true && f.skip == true"]
+[eval exp="tf.game_skip_bgm = 1"]
+[endif]
+[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜
@@ -522,7 +526,28 @@ $("kan").css('margin','auto');
 [endscript]
 ;===============================================================
 ;画面中央に「完」の文字
-[sp]　  完[p]
+[sp]　  完
+[if exp="tf.game_skip_bgm == 1"]
+;スキップをかけているときの動作
+;スキップ停止　キースキップ安定化のため、スキップフラグ処理追加
+[iscript]
+TG.kag.ftag.startTag("cancelskip");
+f.skip=false;
+[endscript]
+;念のためBGM停止
+[fadeinbgm time=1200]
+[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】はなごよみ〜さくら〜
+[playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
+[eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
+[endif]
+
+[else]
+;それ以外
+[p]
+[endif]
+
 ;================スクリプト・全画面表示からの復帰準備 初期化　ｽｸﾘﾌﾟﾄ担当さまにお任せします。================
 ;メッセージをもどします
 [resetfont]
