@@ -262,6 +262,9 @@
 #
 [名前]さんへの思いが込み上げてくる。[p]
 
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 
 [whosay name="華織" color="olivedrab"]
 (ありがとう）[p]
