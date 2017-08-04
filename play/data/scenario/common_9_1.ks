@@ -264,7 +264,7 @@ jumpします。[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「文矢が見合いをしたのは９月の終わり頃だった……」[p]
-
+#
 [主人公目パチ1回]
 [wait time=10]
 ふと、お父様は真剣な表情を浮かべる。[p]
