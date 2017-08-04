@@ -180,11 +180,17 @@
 [eval exp="f.kaogura='on'"]
 
 [resetfont]
-
+;主人公復帰表情　ポーズ通常
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
 [wait time=10]
+;主人公復帰表情消去
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 
 [whosay name="黒田 将貴" color="#7a65b2"]
 「[名前]さん、これをお庭に蒔いてみてもらえませんか？」[p]
@@ -223,11 +229,8 @@
 「いえ、隅っこにお願いします。[r]
 [sp]少し日陰なくらいが、ちょうど良いのですよ」[p]
 #
-
-;【背景】プロローグと同じ黒っぽい和紙風、全画面テキスト
-[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
-[wait time=10]
 [主人公退場]
+[暗転２]
 [wait time=10]
 ;機能ボタン消去
 [ct]
@@ -240,6 +243,11 @@
 [freeimage layer = 28]
 [freeimage layer = 29]
 [wait time=10]
+
+;【背景】プロローグと同じ黒っぽい和紙風、全画面テキスト
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
+[wait time=10]
+
 [if exp="f.okeiko_gamen != true"]
 	[fadeoutbgm time=3000]
 [endif]
