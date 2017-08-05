@@ -5,6 +5,7 @@
 ;=============================================
 
 *zaizen_fumi1
+[clearfix]
 ;背景変更:手紙
 [freeimage layer = 27]
 [freeimage layer = 28]
@@ -27,7 +28,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
 [eval exp="f.midoku_list_hairetsu[1][0] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [return] 
 
@@ -51,7 +52,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][1] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi3
 ;背景変更:手紙
@@ -71,7 +72,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][2] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi4
 ;背景変更:手紙
@@ -91,7 +92,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][3] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi5
 ;背景変更:手紙
@@ -111,7 +112,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][4] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi6
 ;背景変更:手紙
@@ -131,7 +132,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][5] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi7
 ;背景変更:手紙
@@ -151,7 +152,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][6] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi8
 ;背景変更:手紙
@@ -171,7 +172,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][7] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi9
 ;背景変更:手紙
@@ -191,7 +192,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][8] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi10
 ;背景変更:手紙
@@ -211,7 +212,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][9] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi11
 ;背景変更:手紙
@@ -231,7 +232,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][10] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi12
 ;背景変更:手紙
@@ -251,7 +252,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][11] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *zaizen_fumi13
 ;背景変更:手紙
@@ -271,7 +272,7 @@
 [endscript]
 [eval exp="f.midoku_list_hairetsu[1][12] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 [return] 
 

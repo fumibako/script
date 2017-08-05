@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿
+﻿﻿﻿﻿﻿﻿﻿
 *start
 
 ;==============================
@@ -36,7 +36,7 @@ $(".para").css("opacity",1); //パラメータ表示を復帰
 [button name="message_load,button_okeiko" graphic="button_message_load.png" role=load]
 [wait time=10]
 [locate x=450 y=17]
-[button name="button_info,button_okeiko" fix=true graphic="button_info.png" storage=info_oaite_fumi.ks target=*info_oaite ]
+[button name="button_info,button_okeiko" fix=true graphic="button_info.png" storage=info.ks target=*info_oaite ]
 [wait time=10]
 [locate x=550 y=17]
 [button name="button_sansaku,button_okeiko" fix=true graphic="button_sansaku.png" storage=sansaku.ks target=*sansaku ]

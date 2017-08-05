@@ -14,5 +14,5 @@
 [freeimage layer = 28]
 [cm]
 
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]

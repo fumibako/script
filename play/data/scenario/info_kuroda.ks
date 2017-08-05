@@ -1,0 +1,199 @@
+﻿;======================================================================================
+;◆◆情報：黒田◆◆
+;======================================================================================
+*info_kuroda
+[freeimage layer = 27]
+[freeimage layer = 28]
+[eval exp="f.viewing_target = '*info_kuroda'"]
+[eval exp="f.oaite_viewing_target = '*info_kuroda'"]
+[eval exp="f.oaite_viewing_storage = 'info_kuroda.ks'"]
+;まず「閉」ボタンを設置(何かあった時に戻れるように)fixボタン使用のためcall内からは出しておく。
+﻿@clearstack
+[button fix=true name="list" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
+[call target=*info_kuroda_hyouji]
+
+;◆手紙一覧
+;[eval exp="f.fumi_kuroda_number=13"]
+[if exp="f.fumi_kuroda_number>5"]
+			[glink name="list" target=*fumi_kuroda_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+[endif]
+[eval exp="f.list_count = f.fumi_kuroda_number"]
+[eval exp="f.loop_count = f.list_count"]
+[if exp="f.loop_count > 5"]
+[eval exp="f.loop_count = 5"]
+[endif]
+*loop_fumi_kuroda
+[if exp="f.list_count == 0"]
+[else]
+	[eval exp="f.list_count = f.list_count - 1"]
+[endif]
+[if exp="f.loop_count == 0"]
+[else]
+	[eval exp="f.loop_count = f.loop_count - 1"]
+[endif]
+[iscript]
+	f.fumi_kuroda_midoku_y = ( 20 + 80 * f.fumi_kuroda_number ) - 80 * f.list_count;
+	f.fumi_kuroda_y = ( 10 + 80 * f.fumi_kuroda_number ) - 80 * f.list_count;
+	f.fumi_hairetsu1 = 0;
+	f.fumi_hairetsu2 = f.fumi_list_kuroda_location_fumi[f.list_count];
+[endscript]
+;◆黒田手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_kuroda_page1'"]
+@jump storage="info_fumi_hyouji_kuroda.ks" target=*fumi_hyouji_kuroda
+*fumi_hyouji_owari_kuroda_page1
+
+[if exp="f.loop_count>0"]
+	@jump target=*loop_fumi_kuroda
+[endif]
+[一斉表示]
+[s]
+
+*fumi_kuroda_page2
+[cm]
+[freeimage layer = 28]
+[eval exp="f.viewing_target = '*fumi_kuroda_page2'"]
+[eval exp="f.oaite_viewing_target = '*fumi_kuroda_page2'"]
+[call target=*info_kuroda_hyouji]
+
+;1f.fumi_kuroda_number=[emb exp ="f.fumi_kuroda_number"][r]
+[glink name="list" target=*info_kuroda text="←" size=20 width="20" x=510 y=480 color=white]
+[if exp="f.fumi_kuroda_number>10"]
+[glink name="list" target=*fumi_kuroda_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[endif]
+[eval exp="f.list_count = f.fumi_kuroda_number - 5"]
+[eval exp="f.loop_count = f.list_count"]
+[if exp="f.loop_count > 5"]
+[eval exp="f.loop_count = 5"]
+[endif]
+;2f.list_count=[emb exp ="f.list_count"][r]
+*loop_fumi_kuroda2
+[if exp="f.list_count == 0"]
+[else]
+	[eval exp="f.list_count = f.list_count - 1"]
+[endif]
+[if exp="f.loop_count == 0"]
+[else]
+	[eval exp="f.loop_count = f.loop_count - 1"]
+[endif]
+;3f.list_count=[emb exp ="f.list_count"][r]
+;4f.loop_count=[emb exp ="f.loop_count"][r]
+;5f.fumi_kuroda_number=[emb exp ="f.fumi_kuroda_number"][r]
+[iscript]
+	f.fumi_kuroda_midoku_y =  20 + 80 * ( f.fumi_kuroda_number - 5 ) - 80 * f.list_count;
+	f.fumi_kuroda_y =  10 + 80 * ( f.fumi_kuroda_number - 5 ) - 80 * f.list_count;
+	f.fumi_hairetsu1 = 0;
+	f.fumi_hairetsu2 = f.fumi_list_kuroda_location_fumi[f.list_count];
+[endscript]
+;◆黒田手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_kuroda_page2'"]
+@jump storage="info_fumi_hyouji_kuroda.ks" target=*fumi_hyouji_kuroda
+*fumi_hyouji_owari_kuroda_page2
+
+[if exp="f.loop_count>0"]
+	@jump target=*loop_fumi_kuroda2
+[endif]
+[一斉表示]
+[s]
+
+*fumi_kuroda_page3
+[cm]
+[freeimage layer = 28]
+[eval exp="f.viewing_target = '*fumi_kuroda_page3'"]
+[eval exp="f.oaite_viewing_target = '*fumi_kuroda_page3'"]
+[call target=*info_kuroda_hyouji]
+
+;1f.fumi_kuroda_number=[emb exp ="f.fumi_kuroda_number"][r]
+[glink name="list" target=*fumi_kuroda_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+
+[eval exp="f.list_count = f.fumi_kuroda_number - 10"]
+[eval exp="f.loop_count = f.list_count"]
+[if exp="f.loop_count > 5"]
+[eval exp="f.loop_count = 5"]
+[endif]
+;2f.list_count=[emb exp ="f.list_count"][r]
+*loop_fumi_kuroda3
+[if exp="f.list_count == 0"]
+[else]
+	[eval exp="f.list_count = f.list_count - 1"]
+[endif]
+[if exp="f.loop_count == 0"]
+[else]
+	[eval exp="f.loop_count = f.loop_count - 1"]
+[endif]
+;3f.list_count=[emb exp ="f.list_count"][r]
+;4f.loop_count=[emb exp ="f.loop_count"][r]
+;5f.fumi_kuroda_number=[emb exp ="f.fumi_kuroda_number"][r]
+[iscript]
+	f.fumi_kuroda_midoku_y =  20 + 80 * ( f.fumi_kuroda_number - 10 ) - 80 * f.list_count;
+	f.fumi_kuroda_y =  10 + 80 * ( f.fumi_kuroda_number - 10 ) - 80 * f.list_count;
+	f.fumi_hairetsu1 = 0;
+	f.fumi_hairetsu2 = f.fumi_list_kuroda_location_fumi[f.list_count];
+[endscript]
+;◆黒田手紙表示部共通処理へjumpして戻ってくる
+[eval exp="tf.fumi_hyouji_owari_target = 'fumi_hyouji_owari_kuroda_page3'"]
+@jump storage="info_fumi_hyouji_kuroda.ks" target=*fumi_hyouji_kuroda
+*fumi_hyouji_owari_kuroda_page3
+
+[if exp="f.loop_count>0"]
+	@jump target=*loop_fumi_kuroda3
+[endif]
+[一斉表示]
+[s]
+
+*info_kuroda_hyouji
+[image layer=26 x=0 y=0 storage="bg/bg_info_kuroda.jpg"]
+[wait time=10]
+
+;◆ 黒田ルート：goodED条件パラメータ・フラグを満たした場合：カラーほほえみ肖像
+[if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1 && f.para_kuroda_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.para_shujinkou_j_gogaku >= 80 && f.event_machi_kuroda[2] == 1"]
+	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_smile.png" zindex=2]
+	[wait time=10]
+	@jump target=*info_face_kuroda_owari
+[endif]
+;◆ 黒田ルート：normalED条件パラメータ・フラグを満たした場合：カラー肖像
+[if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2] == 1"]
+	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_color.png" zindex=2]
+	[wait time=10]
+	@jump target=*info_face_kuroda_owari
+[endif]
+;◆ 黒田ルート：normalED条件未満の場合：セピア肖像
+[if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1"]
+	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_sepia.png" zindex=2]
+	[wait time=10]
+[endif]
+*info_face_kuroda_owari
+
+	[glink name="list" storage="info_zaizen.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
+	[glink name="list" storage="info_sijyou.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
+;葛城宮に手紙を出せるようになっていたらボタン表示
+[if exp="f.katuraginomiya_fumi_start == 1 || f.katuraginomiya_au == 1"]
+	[glink name="list" storage="info_katuraginomiya.ks" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
+[endif]
+;藤枝に手紙を出せるようになっていたらボタン表示
+[if exp="f.hujieda_fumi_start == 1"]
+	[glink name="list" storage="info_hujieda.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
+[endif]
+[if exp="f.para_kuroda_koukando<0"]
+[eval exp="f.para_koukando_x = 270"]
+[elsif exp="f.para_kuroda_koukando<10"]
+[eval exp="f.para_koukando_x = 281"]
+[elsif exp="f.para_kuroda_koukando<100"]
+[eval exp="f.para_koukando_x = 270"]
+[else]
+[eval exp="f.para_koukando_x = 255"]
+[endif]
+[if exp="f.para_kuroda_koukando<0"]
+[eval exp="f.para_color = 'crimson'"]
+[else]
+[eval exp="f.para_color = 'black'"]
+[endif]
+[ptext name="list" text=&f.para_kuroda_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext name="list" text=&f.para_kuroda_sintyou layer=27 size=25 x=255 y=364 color=black bold=bold]
+[ptext name="list" text=&f.para_kuroda_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[if exp="f.midoku_list_hairetsu[0][8] == 0"]
+	[ptext name="list" text=&f.para_kuroda_shumi layer=27 size=23 x=255 y=448 color=black bold=bold]
+[else]
+	[ptext name="list" text="―" layer=27 size=25 x=270 y=448 color=black bold=bold]
+[endif]
+[return]
+[s]

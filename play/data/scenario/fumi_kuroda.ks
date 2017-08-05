@@ -24,7 +24,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][0] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi2
 [手紙黒田]
@@ -43,7 +43,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][1] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi3
 [手紙黒田]
@@ -63,7 +63,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][2] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi4
 [手紙黒田]
@@ -83,7 +83,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][3] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi5
 [手紙黒田]
@@ -104,7 +104,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][4] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi6
 [手紙黒田]
@@ -124,7 +124,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][5] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi7
 [手紙黒田]
@@ -143,7 +143,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][6] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi8
 [手紙黒田]
@@ -164,7 +164,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][7] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi9
 [手紙黒田]
@@ -183,7 +183,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][8] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi10
 [手紙黒田]
@@ -204,7 +204,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][9] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi11
 [手紙黒田]
@@ -223,7 +223,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][10] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi12
 [手紙黒田]
@@ -242,7 +242,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][11] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi13
 [手紙黒田]
@@ -260,7 +260,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][12] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi14
 [手紙黒田]
@@ -277,7 +277,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][13] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 
 *kuroda_fumi15
 [手紙黒田]
@@ -295,7 +295,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][14] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
 
 *kuroda_fumi16
@@ -334,7 +334,7 @@
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
 
 *kuroda_fumi17
@@ -355,7 +355,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][16] = 0"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
 
 *kuroda_fumi18
@@ -366,7 +366,7 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][17] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
 
 *kuroda_fumi19
@@ -377,5 +377,5 @@
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 [eval exp="f.midoku_list_hairetsu[0][18] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
