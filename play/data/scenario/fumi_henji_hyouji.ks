@@ -1,7 +1,7 @@
 ﻿*fumi_write_hyouji
 ;↓loadキャンセル時戻り先を記憶(試行中
 [eval exp="f.load_mae_storage='fumi_henji_hyouji.ks'; f.load_mae_target='*fumi_write_hyouji'"]
-[clearfix]
+;[clearfix]
 [cm]
 [freeimage layer = 21]
 [freeimage layer = 22]
@@ -18,11 +18,13 @@
 [wait time=10]
 ;背景画像表示
 [if exp="f.fumi_henjityu == 1"]
+[wait time=10]
 [bg wait=true method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=0]
 [wait time=10]
 [image name="list" layer=25 x=380 y=20 storage="button/fumi_henji.png"]
 [image name="list" layer=25 x=660 y=20 storage="button/fumi_atena_bg_henji.png"]
 [else]
+[wait time=10]
 [bg wait=true method='crossfade' storage="../fgimage/bg/plane_mizuiro.jpg" time=0]
 [wait time=10]
 [image name="list" layer=25 x=380 y=20 storage="button/fumi_write.png"]
