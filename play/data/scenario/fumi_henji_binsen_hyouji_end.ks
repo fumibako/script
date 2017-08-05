@@ -15,8 +15,9 @@
 ;autosaveロードを可能とするためsys_load.ksに飛ぶ方法を試行中です。まだうまく動作しないため、コメントアウトします◆jsYiJcqRkk
 ;[button fix=true name="message_load,list" graphic="button_message_load.png" storage="sys_load.ks"]
 [wait time=10]
-[一斉表示]
 [iscript]
 $('.loding_pic1').remove();
 [endscript]
+[wait time=10]
+[一斉表示]
 [s]
