@@ -9,7 +9,7 @@
 [eval exp="f.oaite_viewing_target = '*info_hujieda'"]
 ;まず「閉」ボタンを設置(何かあった時に戻れるように)fixボタン使用のためcall内からは出しておく。
 ﻿@clearstack
-[button fix=true name="list" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
+[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 [call target=*info_hujieda_hyouji]
 
 ;◆手紙一覧
