@@ -13,7 +13,7 @@
 *fumi_wadai_page1
 [cm]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [freeimage layer = 28]
 [eval exp="f.wadai_now_page = 1"]
 [eval exp="f.wadai_viewing_target = '*fumi_wadai_page1'"]
@@ -84,7 +84,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 *fumi_wadai_page2
 [cm]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [freeimage layer = 28]
 *wadai_serifu
 
@@ -161,7 +161,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 *fumi_wadai_page3
 [cm]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [freeimage layer = 28]
 *wadai_serifu3
 
@@ -237,7 +237,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 *fumi_wadai_page4
 [cm]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [freeimage layer = 28]
 *wadai_serifu4
 
@@ -313,7 +313,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 *fumi_wadai_page5
 [cm]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [freeimage layer = 28]
 *wadai_serifu5
 
