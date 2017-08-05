@@ -141,7 +141,7 @@
 [wait time=10]
 
 [whosay name="女中頭"]
-「……はい」[p]
+「……はい。　申し訳ございません」[p]
 
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
@@ -151,17 +151,23 @@
 [wait time=10]
 
 #
-控えめに女中頭が返事をする。[r]
-;女中頭が控えめに返事をした。[r]
-これ以上、深く尋ねては差し支えがあるのだろう。[r]
-僕は、そのまま[ruby text=そ]文[ruby text=れ]箱を受け取った。[p]
+女中頭は、ただ控えめに返事し、震えて謝罪の言葉を述べた。[p]
+
+[whosay name="華織" color="olivedrab"]
+（どうしたのだろう？ [r]
+[sp]僕がいない間、[華衣]が、また使用人達に無理をさせたのだろうか？）[p]
+
+#
+僕は、女中頭の様子を見て、[r]
+これ以上、深く尋ねては差し支えがあるのだろうと察し、[r]
+そのまま[ruby text=そ]文[ruby text=れ]箱を受け取った。[p]
 
 ;[四条口ムッ]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
 [wait time=10]
 
 [whosay name="華織" color="olivedrab"]
-（もう、[華衣]には、いらないということだろうか？)[p]
+（もう、[華衣]には、この文箱がいらないということだろうか？)[p]
 
 ;[四条口通常]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
@@ -180,8 +186,7 @@
 [playse storage=kinuzure.ogg loop=false ]
 
 #
-気を利かせた女中達が去っていく中、[r]
-僕は複雑な思いで、そっと文箱の蓋を開けた。[p]
+女中達が去っていく中、僕は複雑な思いで、そっと文箱の蓋を開けた。[p]
 
 ;[四条眉驚き]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_odoroki.png" time=0]
@@ -209,8 +214,9 @@
 [wait time=10]
 #
 文箱の中には、[r]
-あの時に[華衣]がバラバラにしてしまった[名前]さんからの手紙が、[r]
+全てではないが、[華衣]が無くしてまった[名前]さんからの手紙が、[r]
 数枚、台紙の上で丁寧に張られ、修復されていた。[p]
+;10_1　手紙を捨てるシーンがあります
 
 ;[四条口微笑み]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
@@ -223,11 +229,16 @@
 （[華衣]、直してくれたのか……）[p]
 *seen3
 #
-きっと、[名前]さんの言葉が、[華衣]の心に届いたのだろう。[r]
-届かず、読めなかった[名前]さんからの手紙を大事に手に取る。[p]
+ところどころ、穴だらけではあるが、[r]
+それでも彼なりに直そうとしてくれたのが伺える。[r]
+きっと、[名前]さんの言葉が、[華衣]の心に届いたのだろう。[p]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
+
+#
+届かず、読めなかった[名前]さんからの手紙を大事に手に取る。[p]
+
 
 ;[四条目伏]
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
@@ -236,10 +247,12 @@
 [whosay name="華織" color="olivedrab"]
 （[名前]さん……）[p]
 #
-手紙には、たくさんの励ましの言葉、何気ない日常への思いが[r]
-綴られており、[r]
-便箋のひとつをとっても、季節や相手を想って選んでくれたことに[r]
-気付かされる。[p]
+ボロボロになった手紙の内容を少しづつ紐解いていくと、[r]
+たくさんの励ましの言葉、何気ない日常への思いが[r]
+綴られているようだった。[p]
+#
+もっと、よく見れば、便箋のひとつをとっても、相手を想って[r]
+選んでくれていることに僕は気が付いた。[p]
 
 ;[四条口ムッ]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
@@ -261,6 +274,7 @@
 [wait time=10]
 #
 [名前]さんへの思いが込み上げてくる。[p]
+
 
 ;[四条口微笑み]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
