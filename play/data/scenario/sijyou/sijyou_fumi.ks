@@ -130,7 +130,7 @@
 
 [eval exp="f.midoku_list_hairetsu[2][1] = 0;"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 
@@ -195,7 +195,7 @@
 ;↓右側の[2]の部分は01_sijyou_fumi_toutyaku_shori_list.ksのラベル数値-1となります(スクリプト担
 [eval exp="f.midoku_list_hairetsu[2][2] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -229,7 +229,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][3] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -275,7 +275,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][4] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -323,7 +323,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][5] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -380,7 +380,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][6] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -432,7 +432,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][7] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -463,7 +463,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][8] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -495,7 +495,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][09] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -526,7 +526,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][10] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -570,7 +570,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][11] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -602,7 +602,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][12] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -635,7 +635,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][13] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -673,7 +673,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][14] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -705,7 +705,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][15] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -744,7 +744,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][16] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -780,7 +780,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][17] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -811,7 +811,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][18] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -842,7 +842,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][19] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -890,7 +890,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][20] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -922,7 +922,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][21] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -953,7 +953,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][22] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -989,7 +989,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][23] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1023,7 +1023,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][24] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1058,7 +1058,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][25] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1091,7 +1091,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][26] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1125,7 +1125,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][27] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1161,7 +1161,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][28] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1194,7 +1194,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][29] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1226,7 +1226,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][30] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1257,7 +1257,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][31] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1291,7 +1291,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][32] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1327,7 +1327,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][33] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1360,7 +1360,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][34] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1392,7 +1392,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][35] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [endif]
 ;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=11]
@@ -1425,7 +1425,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][36] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1459,7 +1459,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][37] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1492,7 +1492,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][38] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1524,7 +1524,7 @@
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][39] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1561,7 +1561,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][40] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1594,7 +1594,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][41] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1648,7 +1648,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][42] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1698,7 +1698,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][43] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1734,7 +1734,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][44] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////
@@ -1767,7 +1767,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][45] = 0;"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 ;//////////////////////////////////////////////////////////////////

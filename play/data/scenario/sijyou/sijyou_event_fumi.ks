@@ -58,7 +58,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 [手紙四条読了 fumi_number=51]
@@ -95,7 +95,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 [手紙読了]
@@ -183,7 +183,7 @@
 [resetfont]
 [if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 [手紙四条読了 fumi_number=]
@@ -229,7 +229,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
-@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 [endif]
 [手紙四条読了 fumi_number=]
