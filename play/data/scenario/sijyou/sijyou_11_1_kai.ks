@@ -266,6 +266,8 @@
 ;SEの位置は適当
 ;【SE】走り去る(屋外)
 [playse storage=run_soto.ogg loop=false ]
+#
+破られた手紙を拾いながら、僕は考える。[p]
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
