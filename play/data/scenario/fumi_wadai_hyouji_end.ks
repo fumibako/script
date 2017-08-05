@@ -4,4 +4,7 @@
 しましょうか？
 [button name="list" folder="fgimage/button" graphic="button_close80x80.png" storage="fumi_henji_owari.ks" target="*fumi_henji_owari" x=870 y=555]
 [一斉表示]
+[iscript]
+$('.loding_pic1').remove();
+[endscript]
 [s]

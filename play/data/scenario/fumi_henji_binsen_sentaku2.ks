@@ -6,6 +6,8 @@
 
 *fumi_binsen_page1
 [cm]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [freeimage layer = 28]
 
 [eval exp="f.binsen_now_page = 1"]
@@ -82,6 +84,8 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [s]
 *fumi_binsen_page2
 [cm]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [freeimage layer = 28]
 *binsen_serifu
 [font size=25]
@@ -162,6 +166,8 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 *fumi_binsen_page3
 [cm]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [freeimage layer = 28]
 *binsen_serifu3
 [font size=25]
@@ -239,6 +245,8 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 *fumi_binsen_page4
 [cm]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [freeimage layer = 28]
 *binsen_serifu4
 [font size=25]
@@ -315,6 +323,8 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 *fumi_binsen_page5
 [cm]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [freeimage layer = 28]
 *binsen_serifu5
 [font size=25]
