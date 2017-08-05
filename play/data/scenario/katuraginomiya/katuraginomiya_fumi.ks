@@ -81,7 +81,7 @@
 	;◆イベント中に読むため未読→既読処理はコメントアウトします。f.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	;[eval exp="f.midoku_list_hairetsu[3][1] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=1]
@@ -118,7 +118,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][2] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -153,7 +153,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][3] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -194,7 +194,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][4] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -234,7 +234,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][5] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -269,7 +269,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][6] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -301,7 +301,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][7] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -334,7 +334,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][8] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -369,7 +369,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][9] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -404,7 +404,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][10] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -437,7 +437,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][11] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -472,7 +472,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][12] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -504,7 +504,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][13] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -538,7 +538,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][14] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -571,7 +571,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][15] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -603,7 +603,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][16] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -637,7 +637,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][17] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -669,7 +669,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][18] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -702,7 +702,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][19] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -734,7 +734,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][20] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -768,7 +768,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][21] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -801,7 +801,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][22] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -836,7 +836,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][23] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -872,7 +872,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][24] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -921,7 +921,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][25] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -973,7 +973,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][26] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -1013,7 +1013,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
  [手紙葛城宮読了 fumi_number=]
@@ -1052,7 +1052,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -1091,7 +1091,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -1127,7 +1127,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -1171,7 +1171,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙読了]
@@ -1205,7 +1205,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙読了]
@@ -1247,7 +1247,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙読了]
@@ -1292,7 +1292,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙読了]
@@ -1337,7 +1337,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]	
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙読了]
@@ -1374,7 +1374,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][28] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -1410,7 +1410,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][27] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -1449,7 +1449,7 @@
 	;手紙返信ストップ処理	
 	[eval exp="f.katuraginomiya_fumi_start=0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -1482,7 +1482,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][30] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
@@ -1513,7 +1513,7 @@
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
 	[eval exp="f.midoku_list_hairetsu[3][31] = 0"]
 	[freeimage layer = 29]
-	@jump storage=info_oaite_fumi.ks target=&f.viewing_target
+	@jump storage=&f.viewing_storage target=&f.viewing_target
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
