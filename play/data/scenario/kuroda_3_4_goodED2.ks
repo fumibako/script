@@ -1,4 +1,4 @@
-﻿﻿﻿;=============================================
+﻿﻿﻿﻿;=============================================
 ;◆黒田イベント【分岐：goodED】黒田ルートかつ3月4週になった時点で淑女度一定値未満、好感度一定値未満で1度だけ発生
 ;=============================================
 ;１１章、【ファイナル・イメージ：normalED、goodED共通】黒田からの求婚、受け入れる主人公
@@ -229,7 +229,7 @@ $('.junbi_girl').remove();
 「いえ、隅っこにお願いします。[r]
 [sp]少し日陰なくらいが、ちょうど良いのですよ」[p]
 #
-[暗転２]
+[暗転２ storage="../fgimage/bg/bg_prologue.jpg" time=500]
 [wait time=10]
 [主人公退場]
 [wait time=10]
@@ -242,8 +242,8 @@ $('.junbi_girl').remove();
 [wait time=10]
 
 ;【背景】プロローグと同じ黒っぽい和紙風、全画面テキスト
-[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=500]
-[wait time=10]
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=0]
+[wait time=50]
 
 [freeimage layer = 27]
 [freeimage layer = 28]
