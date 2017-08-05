@@ -1,4 +1,4 @@
-﻿﻿﻿;=============================================
+﻿﻿﻿﻿;=============================================
 ;◆黒田イベント【分岐：normalED】黒田ルートかつ3月4週になった時点で淑女度一定値未満、好感度一定値未満で1度だけ発生
 ;=============================================
 
@@ -123,17 +123,21 @@ $('.1_fore').remove();
 [playse storage=paper_open.ogg loop=false ]
 [freeimage layer = 29]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1000]
-[wait time=10]
+[wait time=500]
 ;テキスト全画面
 [font color=white size=27]
+[wait time=10]
 文箱に納められた手紙の束から[r]
 私はそっと視線を外した。[r]
 [r]
+[wait time=10]
 庭からは春風に乗って、花の香りが漂ってくる。[r]
 [r]
+[wait time=10]
 「黒田様が、幼いころからお好きだったという『すみれ』[r]
 [sp]無事に咲いて、よかったわ」[p]
 [r]
+[wait time=10]
 文箱の蓋を丁寧に閉め、ゆっくりと庭へ向かった――。[p]
 
 [font color=white size=35]
@@ -141,6 +145,7 @@ $('.1_fore').remove();
 [r]
 [r]
 [r]
+[wait time=10]
 [sp]　　　　　　　　　　完[p]
 [stopbgm]
 [wait time=10]
@@ -155,7 +160,7 @@ $('.1_fore').remove();
 [wait time=10]
 ;【背景】セピア背景
 [bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=1000]
-[wait time=1000]
+[wait time=1200]
 [eval exp="f.haikei_credit=''"]
 
 @jump storage="replay2.ks"
