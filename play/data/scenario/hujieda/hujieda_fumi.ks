@@ -42,7 +42,7 @@
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][1] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -84,7 +84,7 @@
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][2] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -127,7 +127,7 @@
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][3] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -176,7 +176,7 @@
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][4] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -220,7 +220,7 @@
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][5] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -274,7 +274,7 @@
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
 	;[eval exp="f.midoku_list_hairetsu[4][6] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -321,7 +321,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][7] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -366,7 +366,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][8] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -408,7 +408,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][9] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -452,7 +452,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][10] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -498,7 +498,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][11] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -534,7 +534,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][12] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -575,7 +575,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][13] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -616,7 +616,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][14] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -657,7 +657,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][15] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -695,7 +695,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][16] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -734,7 +734,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][17] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -772,7 +772,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][18] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -807,7 +807,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][19] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -846,7 +846,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][20] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -884,7 +884,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][21] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -924,7 +924,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][22] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -965,7 +965,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][23] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -1000,7 +1000,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][24] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -1035,7 +1035,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][25] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -1086,7 +1086,7 @@
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙読了]
@@ -1122,7 +1122,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][27] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -1160,7 +1160,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][26] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
@@ -1195,7 +1195,7 @@
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
   [eval exp="f.midoku_list_hairetsu[4][28] = 0"]
    [freeimage layer = 29]
-   @jump storage=info_oaite_fumi.ks target=&f.viewing_target
+   @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
