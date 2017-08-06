@@ -3,11 +3,7 @@
 ;=======================お芝居の準備中です==================================
 *replay_katuraginomiya_event_2
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*event_2 storage="katuraginomiya/preload_katuraginomiya.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
 [表示準備]
 [freeimage layer = 1]

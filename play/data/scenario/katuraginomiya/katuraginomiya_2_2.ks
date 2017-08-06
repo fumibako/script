@@ -3,11 +3,7 @@
 =======================お芝居の準備中です==================================
 *replay_katuraginomiya_2_2
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*2_2 storage="katuraginomiya/preload_katuraginomiya.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 庭の見える部屋：昼

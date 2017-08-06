@@ -14,11 +14,7 @@ $('.list').remove();
 ;[bg storage="toumei.gif" time=1]
 [endif]
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*11_1badED storage="katuraginomiya/preload_katuraginomiya.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 
 [if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true

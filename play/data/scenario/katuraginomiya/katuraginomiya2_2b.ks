@@ -1,10 +1,6 @@
 =======================お芝居の準備中です==================================
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*12_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】ﾌﾟﾛﾛーｸﾞ
