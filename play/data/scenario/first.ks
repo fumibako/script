@@ -6,9 +6,7 @@
 ;ゲームに必要なライブラリ読み込み
 [call storage="tyrano.ks"]
 ;[call storage="novel_booster.ks"]
-[call storage="macro_graphic.ks"]
-[call storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
+[wait time=10]
 [call storage="boost_mode/boost_mode.ks"]
 
 ;メッセージレイヤの定義(画面全体）
@@ -25,6 +23,17 @@
 @layopt layer=message0 page=fore visible=true
 [font color=white]
 _　　　　　　・・・読込中・・・[r]
+[call target=*start storage="macro_etc.ks"]
+[wait time=10]
+[call target=*start storage="macro_etc2.ks"]
+[wait time=10]
+[call target=*start storage="macro_etc3.ks"]
+[wait time=10]
+[call target=*start storage="macro_graphic.ks"]
+[wait time=10]
+[call target=*start storage="macro_tati_girl.ks"]
+[wait time=10]
+
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 ;githubでエラーとなるksファイル分をコメントアウトします："data/scenario/event.ks","data/scenario/hantei_fumi_toutyaku.ks","data/scenario/01_sijyou_fumi_toutyaku_hantei.ks","data/scenario/sansaku.ks","data/scenario/fumi_henji.ks","data/scenario/info_oaite_fumi.ks","data/scenario/fumi_toutyaku_shori_list.ks","data/scenario/fumi_wadai.ks","data/scenario/01_sijyou_fumi_toutyaku_shori_list.ks",
 [iscript]

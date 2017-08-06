@@ -1,5 +1,11 @@
 [call target=*start storage="macro_etc.ks"]
+[wait time=10]
+[call target=*start storage="macro_etc2.ks"]
+[wait time=10]
+[call target=*start storage="macro_etc3.ks"]
+[wait time=10]
 [call target=*start storage="macro_graphic.ks"]
+[wait time=10]
 
 [if exp="sf.BGM=='OFF'"]
 [iscript]
