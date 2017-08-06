@@ -3,11 +3,7 @@
 *replay_hujieda_1_3
 ;=======================お芝居の準備中です==================================
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*1_3 storage="hujieda/preload_hujieda.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
 [freeimage layer = 1]
 [wait time=10]

@@ -20,11 +20,7 @@ $('.list').remove();
 [endif]
 *start
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*11_3 storage="hujieda/preload_hujieda.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_hujieda.ks"]
 [freeimage layer=1]
 [ct]

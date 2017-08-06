@@ -1,11 +1,7 @@
 ;=======================お芝居の準備中です==================================
 *start
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 ;[call target=*8_4 storage="hujieda/preload_hujieda.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [freeimage layer = 1]
 ;【背景】主人公邸 お稽古部屋
 [bg wait=true storage="../fgimage/bg/bg_okeiko.jpg" time=30]

@@ -3,11 +3,7 @@
 ;=======================お芝居の準備中です==================================
 *replay_hujieda_5_4
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*5_4 storage="hujieda/preload_hujieda.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸 お稽古部屋
