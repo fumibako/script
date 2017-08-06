@@ -315,11 +315,6 @@ f.okeiko_month_kansuuji="三月 ";
 [chara_show left=300 top=220 layer=23 name="sys_fukidasi" time=0]
 [wait time=10]
 
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
-[wait time=10]
 [主人公退場]
 
 ;手紙の便せんリストを読込んで配列f.binsen_list_hairetsu[i][j]に格納。

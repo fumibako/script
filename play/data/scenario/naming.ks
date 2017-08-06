@@ -1,11 +1,7 @@
-﻿﻿;周回プレイ時のスクリプトは＠名無しさん１様作です。ありがとうございます。
-[call target=*start storage="tyrano.ks"]
+﻿﻿﻿;周回プレイ時のスクリプトは＠名無しさん１様作です。ありがとうございます。
 *naming
 
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 ;===============================================ここから=============================================================
 *skip_plg0
 ;start

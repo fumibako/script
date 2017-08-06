@@ -2,16 +2,12 @@
 ;◆黒田イベント【友人に会う】黒田ルートかつ11月1週になった時点で1度だけ発生
 ;=============================================
 *replay_kuroda_11_1
-;[call target=*start storage="tyrano.ks"]
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500] 
 [wait time=10]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
 [wait time=50]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 ;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]

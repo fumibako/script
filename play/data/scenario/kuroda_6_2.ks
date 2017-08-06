@@ -3,11 +3,6 @@
 ;=============================================
 *replay_kuroda_6_2
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_kuroda.ks"]
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】黒背景

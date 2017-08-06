@@ -38,11 +38,6 @@ TG.stat.play_se = true;
 [setreplay name="prologue"]
 [eval exp="sf.FButton='OFF'"]
 [stopbgm]
-
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-
 ;=============================================
 ;プロローグ
 ;=============================================

@@ -53,10 +53,6 @@ $(".rp_bt").remove();
 
 *replay_kuroda_3_4_goodED_1
 [stopbgm]
-[call storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 
 [freeimage layer = 24]
 ;メッセージ窓画像の仮表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】

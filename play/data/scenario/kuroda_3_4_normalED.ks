@@ -53,10 +53,6 @@ $(".rp_bt").remove();
 
 *replay_kuroda_3_4_normalED_1
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [イベントシーン構築ボタン無し版]
 
 *scene1

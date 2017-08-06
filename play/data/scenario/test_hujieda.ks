@@ -1,4 +1,4 @@
-﻿[setreplay name="test"]
+﻿﻿[setreplay name="test"]
 *test
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -16,10 +16,6 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [preload storage=&f.preload_images_katuraginomiya wait=true]
 
 [call target=*start storage="hensuu.ks"]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 
 ;=============================================
 ;test
@@ -76,7 +72,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 
 *page_2
 
-[glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="test2_3" text="2月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]

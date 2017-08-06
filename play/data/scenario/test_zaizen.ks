@@ -1,4 +1,4 @@
-﻿﻿[setreplay name="test"]
+﻿﻿﻿[setreplay name="test"]
 *test
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -16,10 +16,6 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [preload storage=&f.preload_images_zaizen wait=true]
 
 [call target=*start storage="hensuu.ks"]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 
 ;=============================================
 ;test

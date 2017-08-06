@@ -10,10 +10,6 @@
 [preload storage="data/fgimage/girl/S/kuti_futuu.png"]
 
 [call target=*start storage="hensuu.ks"]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [eval exp="tf.test_gamen=true"]
 [eval exp="tf.flag_omake = false"]
 ;=============================================
@@ -23,9 +19,14 @@
 [cm]
 ;背景変更:和紙風 桜色
 ;テストシナリオ用背景仮表示：シナリオ中では背景をchara_new chara_showされている前提でchara_modを使用しているものが多いため、エラー防止のためここで背景仮表示を行い[bg]タグから[chara_mod]タグに切り替えます
+@layopt layer=1 visible=true
+[wait time=10]
 [chara_new name="bg" storage="bg/plane_sakura.jpg"]
+[wait time=10]
 [chara_show left=1 top=0 layer=1 name="bg" time=0]
+[wait time=10]
 [bg storage="toumei.gif" time=0]
+[wait time=10]
 
 [glink target="test_okeiko_sijyou" text="お稽古パート(四条)" graphic="select_waku_x500.png" size=20 width="300" x=100 y=30 color=white]
 

@@ -9,12 +9,6 @@
 [preload storage="data/fgimage/girl/S/me_fusi1.png"]
 [preload storage="data/fgimage/girl/S/kuti_futuu.png"]
 
-[call target=*start storage="hensuu.ks"]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
-
 ;=============================================
 ;表情テスト
 ;=============================================
