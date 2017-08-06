@@ -34,5 +34,10 @@ TG.stat.play_se = true;
 [skipstart]
 [endif]
 
+[if exp="f.viewing_storage == 'okeiko.ks'"]
+	[clearfix]
+	[お稽古ボタン表示]
+[endif]
+
 [return]
 
