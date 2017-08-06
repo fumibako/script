@@ -2,10 +2,6 @@
 ;イベント6.6回目【財前への手紙】11月４週イベント６回目翌日
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 ;11_4_1からのjump先ラベル。つながりが自然になるように、テキスト調整時に翌日である旨の(全画面?)地の文を入れる予定です(スクリプト担
 [freeimage layer = 1]
 [wait time=10]

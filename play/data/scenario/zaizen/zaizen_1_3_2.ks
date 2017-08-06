@@ -2,10 +2,6 @@
 ;イベント８、８回目【新聞の記事に載る】１月３週　数日後　財前視点
 ;=======================お芝居の準備中です=======================================
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 [freeimage layer = 1]
 [wait time=10]

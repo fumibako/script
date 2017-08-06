@@ -13,11 +13,7 @@ $('.list').remove();
 [endif]
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*11_1_bad1 storage="zaizen/preload_zaizen.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 
 [if exp="f.flag_replay == true"]

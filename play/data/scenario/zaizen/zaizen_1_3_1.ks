@@ -3,11 +3,7 @@
 ;=======================お芝居の準備中です==========================================
 *replay_zaizen_1_3_1
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*1_3_1 storage="zaizen/preload_zaizen.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [freeimage layer = 1]
 [wait time=10]
 ;【背景】主人公邸_庭_昼

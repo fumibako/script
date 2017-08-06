@@ -2,11 +2,7 @@
 ;◆チャリティーバザー◆２月１週から３月４週まで礼法が高い　財前ルート：散策イベント
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*bazar storage="zaizen/preload_zaizen.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 [freeimage layer = 1]
 [wait time=10]
