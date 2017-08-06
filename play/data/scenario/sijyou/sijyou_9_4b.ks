@@ -1,9 +1,7 @@
 *test
-[call target=*start storage="tyrano.ks"]
 [stopbgm]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
+;↓テスト画面からも背景マクロを参照できるように追記します。参照ラベルが違っていたらご調整ください◆jsYiJcqRkk
+[call target=*end_sub storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築]
 [主人公ポーズ通常]

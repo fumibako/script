@@ -4,12 +4,8 @@
 *start
 *test
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 ;暗転プリロードサブルーチン
 [call target=*2_1 storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;マクロ作成ありがとうございます(スクリプト担
 ;macro_etc.ksに[暗転]マクロを移動

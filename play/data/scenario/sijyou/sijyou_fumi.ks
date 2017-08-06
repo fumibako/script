@@ -27,10 +27,6 @@
 ;いつも手紙をありがとう。(話題)についてだね。それなら
 
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [eval exp="sf.FButton='OFF'"]
 ;テスト以外はコメはずす
 ;@jump target=*fumi_cmmon

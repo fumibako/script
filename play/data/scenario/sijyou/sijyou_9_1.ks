@@ -3,7 +3,6 @@
 ;=================================================================================_
 *start
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 ;テスト画面用プリロード移動
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -11,10 +10,6 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 [call target=*9_1 storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 ;【背景】主人公邸 庭の見える部屋：夜
 [freeimage layer = 1]
 [wait time=10]

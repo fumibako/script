@@ -1,9 +1,6 @@
 *first
 [stopbgm]
 [skipstop]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
 ;スキップ停止　キースキップ安定化のため、スキップフラグ処理追加
 [iscript]
 TG.kag.ftag.startTag("cancelskip");

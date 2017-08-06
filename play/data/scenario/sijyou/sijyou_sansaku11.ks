@@ -2,11 +2,7 @@
 ;=======================お芝居の準備中です=================================
 *sansaku
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*bonyou storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]

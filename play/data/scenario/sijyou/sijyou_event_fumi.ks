@@ -1,8 +1,4 @@
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg" time=1000]
 *start
 ;ボタンはじまり上位置　半自動行上げ機能

@@ -11,10 +11,6 @@
 ;選択肢背景＿表示遅れ防止
 [preload storage="data/fgimage/bg/plane_sakura.jpg"]
 ;//////////////////////////////
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;【背景】主人公邸 庭の見える部屋：夜
 [freeimage layer = 1]

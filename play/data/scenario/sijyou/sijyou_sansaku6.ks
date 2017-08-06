@@ -2,12 +2,8 @@
 ;==========================================================================
 *sansaku
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 ;個別ルート前の個別イベントなので四条プリロード画面表示
 [call target=*sansaku6 storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 ;==========================================================================
 ;【背景】主人公邸 庭の見える部屋：夏
 [freeimage layer = 1]

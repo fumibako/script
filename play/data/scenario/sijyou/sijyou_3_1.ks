@@ -1,12 +1,8 @@
 *replay_sijyou_3_1
 *start
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 ;暗転プリロードサブルーチン
 [call target=*3_1 storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;=================================================================================_
 *first

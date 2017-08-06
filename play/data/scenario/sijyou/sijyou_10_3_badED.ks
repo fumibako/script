@@ -14,11 +14,7 @@ $('.list').remove();
 ;¥¥¥¥¥¥¥¥イベントバッド_イベント5.5手紙イベントバット¥¥¥¥¥¥¥¥
 ;○数日後手紙がかえってくる
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
 [call target=*10_3 storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]

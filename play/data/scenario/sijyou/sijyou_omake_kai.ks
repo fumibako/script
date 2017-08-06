@@ -8,10 +8,6 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_rouka.jpg" wait=true]
 ;[preload storage="data/fgimage/bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 ;[preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;/////////準備おわり/////////
 [iscript]

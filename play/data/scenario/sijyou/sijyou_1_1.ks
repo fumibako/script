@@ -5,10 +5,6 @@
 *start
 [call target=*1_1 storage="sijyou/preload_sijyou.ks"]
 [stopbgm]
-[call target=*start storage="tyrano.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 ;=================================================================================_
 ;[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
 ;【背景】主人公邸 庭の見える部屋：冬

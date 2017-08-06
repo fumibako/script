@@ -1,12 +1,8 @@
 *test
-[call target=*start storage="tyrano.ks"]
 [stopbgm]
 [イベントシーン構築]
 テストページからはじめます。[p]
 [call target=*1_1 storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 
 ;=======================================================================
 *start

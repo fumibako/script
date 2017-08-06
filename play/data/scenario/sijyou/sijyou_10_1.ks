@@ -1,13 +1,9 @@
 *replay_sijyou_10_1
 *start
 ;¥¥¥¥¥¥¥¥イベント☆障害のはじまり 心の暗闇 手紙が帰ってこなくなる¥¥¥¥¥¥¥
-[call target=*start storage="tyrano.ks"]
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*10_1 storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_graphic.ks"]
-[call target=*start storage="macro_etc.ks"]
-[call target=*start storage="macro_tati_girl.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;使用背景:[背景_庭]　[四条玄関][chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 ;/////////////////////////////////////////////////////
