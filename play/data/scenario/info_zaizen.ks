@@ -7,9 +7,6 @@
 [eval exp="f.oaite_viewing_storage = 'info_zaizen.ks'"]
 [eval exp="f.viewing_target = '*info_zaizen'"]
 [eval exp="f.oaite_viewing_target = '*info_zaizen'"]
-;まず「閉」ボタンを設置(何かあった時に戻れるように)fixボタン使用のためcall内からは出しておく。
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 [call target=*info_zaizen_hyouji]
 
 ;◆手紙一覧
@@ -45,8 +42,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_zaizen
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_zaizen_page2
 [cm]
@@ -92,8 +88,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_zaizen2
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_zaizen_page3
 [cm]
@@ -137,8 +132,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_zaizen3
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 ;======================================================================================
 *info_zaizen_hyouji
 [image layer=26 x=0 y=0 storage="bg/I9IhvvVdPo/bg_info_zaizen.jpg"]

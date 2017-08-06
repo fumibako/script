@@ -23,11 +23,10 @@
 
 ;◆手紙一覧
 *fumi_all_page1
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)。ボタン並び時も表示させたい為nameはlist以外にします
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 ;[freeimage layer = 26]
 [freeimage layer = 27]
@@ -107,15 +106,13 @@
 	[endif]
 [endif]
 *fumi_all_page1_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page2
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 2"]
@@ -191,16 +188,13 @@
 [endif]
 [endif]
 *fumi_all_page2_end
-[一斉表示]
-[s]
-
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page3
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 3"]
@@ -276,15 +270,13 @@
 [endif]
 [endif]
 *fumi_all_page3_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page4
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 4"]
@@ -360,15 +352,13 @@
 [endif]
 [endif]
 *fumi_all_page4_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page5
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 5"]
@@ -444,15 +434,13 @@
 [endif]
 [endif]
 *fumi_all_page5_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page6
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 6"]
@@ -528,15 +516,13 @@
 [endif]
 [endif]
 *fumi_all_page6_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page7
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 7"]
@@ -612,15 +598,13 @@
 [endif]
 [endif]
 *fumi_all_page7_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page8
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 8"]
@@ -696,15 +680,13 @@
 [endif]
 [endif]
 *fumi_all_page8_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page9
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 9"]
@@ -780,15 +762,13 @@
 [endif]
 [endif]
 *fumi_all_page9_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page10
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 10"]
@@ -864,15 +844,13 @@
 [endif]
 [endif]
 *fumi_all_page10_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page11
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 11"]
@@ -948,15 +926,13 @@
 [endif]
 [endif]
 *fumi_all_page11_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page12
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 12"]
@@ -1032,15 +1008,13 @@
 [endif]
 [endif]
 *fumi_all_page12_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page13
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 13"]
@@ -1116,15 +1090,13 @@
 [endif]
 [endif]
 *fumi_all_page13_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page14
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 14"]
@@ -1200,15 +1172,13 @@
 [endif]
 [endif]
 *fumi_all_page14_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_all_page15
-;↓まず閉ボタンをfixで設置します(何かあった時の回避用)
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 15"]
@@ -1284,5 +1254,4 @@
 [endif]
 [endif]
 *fumi_all_page15_end
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"

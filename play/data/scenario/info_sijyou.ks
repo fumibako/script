@@ -7,9 +7,6 @@
 [eval exp="f.oaite_viewing_storage = 'info_sijyou.ks'"]
 [eval exp="f.viewing_target = '*info_sijyou'"]
 [eval exp="f.oaite_viewing_target = '*info_sijyou'"]
-;まず「閉」ボタンを設置(何かあった時に戻れるように)fixボタン使用のためcall内からは出しておく。
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 [call target=*info_sijyou_hyouji]
 
 ;◆手紙一覧
@@ -46,8 +43,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆◆「(攻略対象)情報」ページからの手紙を見る機能は、当初攻略対象からの手紙総数が10通を少し超える程度と見込んで、サラッと手紙を(未返信が無いかなど確認のために)振り返ったりする目的でつけたため5通ごとのページ切り替えとなっています
 ;四条の場合は手紙総数が多いため、このままではやりこみタイプのプレイヤーさんが沢山手紙を受け取った場合の振り返りやテスト自体もやりづらいと思います。もうすこし使いやすく改善したいのですが、時間が無いため申し訳ないのですがこのままお渡しします。テストプレイしやすいように自由に改変してくださって大丈夫です
@@ -92,8 +88,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou2
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓10通を超える手紙を受け取ると3ページ目に表示
 *fumi_sijyou_page3
@@ -141,8 +136,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou3
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓15通を超える手紙を受け取ると4ページ目に表示
 *fumi_sijyou_page4
@@ -187,8 +181,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou4
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓20通を超える手紙を受け取ると5ページ目に表示
 *fumi_sijyou_page5
@@ -233,8 +226,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou5
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓25通を超える手紙を受け取ると6ページ目に表示
 *fumi_sijyou_page6
@@ -277,8 +269,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou6
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓30通を超える手紙を受け取ると7ページ目に表示
 *fumi_sijyou_page7
@@ -321,8 +312,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou7
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓35通を超える手紙を受け取ると8ページ目に表示
 *fumi_sijyou_page8
@@ -365,8 +355,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou8
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓40通を超える手紙を受け取ると9ページ目に表示
 *fumi_sijyou_page9
@@ -409,8 +398,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou9
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓45通を超える手紙を受け取ると10ページ目に表示
 *fumi_sijyou_page10
@@ -453,8 +441,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou10
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓50通を超える手紙を受け取ると11ページ目に表示
 *fumi_sijyou_page11
@@ -497,8 +484,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou11
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓55通を超える手紙を受け取ると12ページ目に表示
 *fumi_sijyou_page12
@@ -541,8 +527,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou12
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 
 ;◆↓60通を超える手紙を受け取ると13ページ目に表示
@@ -586,8 +571,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou13
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 
 ;◆↓65通を超える手紙を受け取ると14ページ目に表示
@@ -631,8 +615,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou14
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 
 ;◆↓70通を超える手紙を受け取ると15ページ目に表示
@@ -676,8 +659,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou15
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 
 ;◆↓75通を超える手紙を受け取ると16ページ目に表示
@@ -721,8 +703,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou16
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 
 ;◆↓80通を超える手紙を受け取ると17ページ目に表示
@@ -766,9 +747,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou17
 [endif]
-[一斉表示]
-[s]
-
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓85通を超える手紙を受け取ると18ページ目に表示
 *fumi_sijyou_page18
@@ -811,9 +790,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou18
 [endif]
-[一斉表示]
-[s]
-
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓90通を超える手紙を受け取ると19ページ目に表示
 *fumi_sijyou_page19
@@ -856,9 +833,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou19
 [endif]
-[一斉表示]
-[s]
-
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓95通を超える手紙を受け取ると20ページ目に表示
 *fumi_sijyou_page20
@@ -901,8 +876,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou20
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓100通を超える手紙を受け取ると21ページ目に表示
 *fumi_sijyou_page21
@@ -945,9 +919,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou21
 [endif]
-[一斉表示]
-[s]
-
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓105通を超える手紙を受け取ると22ページ目に表示
 *fumi_sijyou_page22
@@ -990,9 +962,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou22
 [endif]
-[一斉表示]
-[s]
-
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓110通を超える手紙を受け取ると23ページ目に表示
 *fumi_sijyou_page23
@@ -1035,8 +1005,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou23
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 ;◆↓115通を超える手紙を受け取ると24ページ目に表示
 *fumi_sijyou_page24
@@ -1080,8 +1049,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_sijyou24
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 
 *info_sijyou_hyouji

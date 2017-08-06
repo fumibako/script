@@ -7,9 +7,6 @@
 [eval exp="f.oaite_viewing_storage = 'info_katuraginomiya.ks'"]
 [eval exp="f.viewing_target = '*info_katuraginomiya'"]
 [eval exp="f.oaite_viewing_target = '*info_katuraginomiya'"]
-;まず「閉」ボタンを設置(何かあった時に戻れるように)fixボタン使用のためcall内からは出しておく。
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 [call target=*info_katuraginomiya_hyouji]
 
 ;◆手紙一覧
@@ -47,8 +44,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_katuraginomiya
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_katuraginomiya_page2
 [cm]
@@ -94,8 +90,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_katuraginomiya2
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_katuraginomiya_page3
 [cm]
@@ -139,8 +134,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_katuraginomiya3
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 ;======================================================================================
 *info_katuraginomiya_hyouji
 ;◆葛城宮フェイス　（画像がないので仮位置で調整しています）

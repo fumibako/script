@@ -7,9 +7,6 @@
 [eval exp="f.oaite_viewing_storage = 'info_hujieda.ks'"]
 [eval exp="f.viewing_target = '*info_hujieda'"]
 [eval exp="f.oaite_viewing_target = '*info_hujieda'"]
-;まず「閉」ボタンを設置(何かあった時に戻れるように)fixボタン使用のためcall内からは出しておく。
-﻿@clearstack
-[button fix=true name="fix" folder="fgimage/button" width=60 height=60 graphic="button_close80x80.png" storage="info_fumibako_owari.ks" x=880 y=570]
 [call target=*info_hujieda_hyouji]
 
 ;◆手紙一覧
@@ -46,8 +43,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_hujieda
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_hujieda_page2
 [cm]
@@ -93,8 +89,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_hujieda2
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 
 *fumi_hujieda_page3
 [cm]
@@ -140,8 +135,7 @@
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_hujieda3
 [endif]
-[一斉表示]
-[s]
+@jump storage="info_fumibako_hyouji_end.ks"
 ;======================================================================================
 *info_hujieda_hyouji
 [freeimage layer = 26]
