@@ -131,7 +131,7 @@ jumpします。[p]
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
-（お兄様と義姉様がお見合いをされたのも、鈴虫が鳴く季節だった[r]
+（お兄様とお義姉様がお見合いをされたのも、鈴虫が鳴く季節だった[r]
 [sp]かしら？）[p]
 
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
@@ -147,7 +147,7 @@ jumpします。[p]
 何度も思い起こした、あの日の兄の言葉が頭に浮かぶ。[p]
 
 [whosay name=&sf.girl_namae color="mediumvioletred"]
-（お兄様。私にはまだ、そこまで思える方はいないようです）[p]
+（お兄様。　私にはまだ、そこまで思える方はいないようです）[p]
 
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 （けれど……）[p]
