@@ -1,6 +1,6 @@
 ﻿﻿﻿[setreplay name="test"]
 *test
-[image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu2.gif" left=740 top=580]
 [clearstack]
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
