@@ -6,8 +6,9 @@
 [macro name="一斉表示準備"]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [iscript]
-//$(".list").hide();
-$(".white").css("opacity",0); //非表示に
+$(".white").css("opacity",0); 
+//非表示に
+$(".list").hide();
 [endscript]
 [endmacro]
 
@@ -15,8 +16,9 @@ $(".white").css("opacity",0); //非表示に
 [macro name="一斉表示"]
 ;◆並んでいるところをみせない→表示が終わったら見せる : script by ＠名無しさん１
 [iscript]
-//$(".list").show();
-$(".white").css("opacity",1); //表示を復帰
+$(".list").show();
+$(".white").css("opacity",1); 
+//表示を復帰
 [endscript]
 [endmacro]
 
