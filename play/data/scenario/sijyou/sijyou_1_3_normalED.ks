@@ -163,9 +163,9 @@
 [chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「もちろん、今では、貴方のことを芯の強さ持った素敵な女性だと[r]
+「もちろん、今では、[ruby text=あ]貴[ruby text=なた]女のことを芯の強さ持った素敵な女性だと[r]
 [sp]思っている」[p]
-
+;②二人称の人代名詞。手紙文などで用い、女性に対する敬意を表す。 
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「時折、みせてくれる素の可愛らしい部分も含めて」[p]
