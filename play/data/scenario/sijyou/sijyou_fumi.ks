@@ -1,7 +1,7 @@
 ;////////////表示準備/////////
-;表示遅れ防止
+;表示遅れ防止　タイトル文字がみえるように背景変更
 ;[preload storage="data/fgimage/bg/bg_prologue_dark.jpg"]
-;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
+[preload storage="data/fgimage/bg/bg_prologue.jpg"]
 [bg storage="../fgimage/bg/bg_prologue.jpg" time=100]
 [chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 ;////////////表示準備/////////
@@ -151,7 +151,7 @@
 [endif]
 へ。[r]
 [r]
-いつも手紙をありがとう。趣味について
+いつも手紙をありがとう。　趣味について
 [if exp="f.sijyou_event6==1"]
 ですね
 [else]
@@ -216,7 +216,7 @@
 [r][r][r]
 [名前]へ。[r]
 [r]
-手紙ありがとう。家族についてだね。それなら[r]
+手紙ありがとう。　家族についてだね。　それなら[r]
 両親と他兄妹が多いよ。[r]
 僕のことは気にしなくていいよ。[名前]のことを知りたいね。[r]
 ;文矢は元気にしてるかな？
