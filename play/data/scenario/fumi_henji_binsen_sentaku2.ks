@@ -7,7 +7,7 @@
 *fumi_binsen_page1
 [cm]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 [freeimage layer = 28]
 
 [eval exp="f.binsen_now_page = 1"]
