@@ -37,7 +37,7 @@
 *test_page1
 [glink target="*sijyou_syumi_1" text="趣味について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="*sijyou_syumi_2" text="趣味について(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*sijyou_kazoku_1|" text="家族について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target="*sijyou_kazoku_1" text="家族について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="sijyou_kazoku_2" text="家族(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="sijyou_kazoku_2_1" text="家族・祖父母両親(お見合い後・事件解決後)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=300 color=white]
 [glink target="sijyou_kazoku_2_2" text="家族兄次男(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=350 color=white]
