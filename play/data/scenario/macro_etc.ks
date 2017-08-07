@@ -6,8 +6,8 @@
 [macro name="一斉表示準備"]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [iscript]
-$(".event-setting-element").css("opacity",0); 
-//非表示に
+//$(".layer_free").css("opacity",0); //ボタンをすべて非表示に
+//$(".layer_free").css("pointer-events","none");//glinkをクリック禁止に
 $(".list").hide();
 [endscript]
 [endmacro]
@@ -17,8 +17,8 @@ $(".list").hide();
 ;◆並んでいるところをみせない→表示が終わったら見せる : script by ＠名無しさん１
 [iscript]
 $(".list").show();
-$(".event-setting-element").css("opacity",1); 
-//表示を復帰
+//$(".layer_free").css("opacity",1); //すべてのボタンの表示を復帰
+//$(".layer_free").css("pointer-events","auto");//glinkをクリック可能に
 [endscript]
 [endmacro]
 
