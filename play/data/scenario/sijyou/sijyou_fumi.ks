@@ -653,7 +653,7 @@
 [手紙四条 fumi_number=]
 [r]
 [名前]さんへ[r]
-[if exp="f.fumi_toutyaku_sijyou[14]==1"]
+[if exp="f.fumi_toutyaku_sijyou[14] == 1"]
 おかげさまで、順調に進んでおります。[r]
 祖父も、作風が変わった、と仰っていました。[r]
 これも[名前]さんのおかげですね。[r]
