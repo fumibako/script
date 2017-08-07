@@ -7,7 +7,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [iscript]
 //$(".list").hide();
-$(".list").css("opacity",0); //非表示に
+$(".white").css("opacity",0); //非表示に
 [endscript]
 [endmacro]
 
@@ -16,7 +16,7 @@ $(".list").css("opacity",0); //非表示に
 ;◆並んでいるところをみせない→表示が終わったら見せる : script by ＠名無しさん１
 [iscript]
 //$(".list").show();
-$(".list").css("opacity",1); //表示を復帰
+$(".white").css("opacity",1); //表示を復帰
 [endscript]
 [endmacro]
 
