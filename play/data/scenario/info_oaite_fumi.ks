@@ -26,7 +26,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 ;[freeimage layer = 26]
 [freeimage layer = 27]
@@ -112,7 +112,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 2"]
@@ -194,7 +194,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 3"]
@@ -276,7 +276,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 4"]
@@ -358,7 +358,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 5"]
@@ -440,7 +440,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 6"]
@@ -522,7 +522,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 7"]
@@ -604,7 +604,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 8"]
@@ -686,7 +686,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 9"]
@@ -768,7 +768,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 10"]
@@ -850,7 +850,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 11"]
@@ -932,7 +932,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 12"]
@@ -1014,7 +1014,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 13"]
@@ -1096,7 +1096,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 14"]
@@ -1178,7 +1178,7 @@
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [一斉表示準備]
 @layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=480] 
 [cm]
 [freeimage layer = 28]
 [eval exp="f.fumibako_now_page = 15"]
