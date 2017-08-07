@@ -2,7 +2,7 @@
 ;表示遅れ防止
 ;[preload storage="data/fgimage/bg/bg_prologue_dark.jpg"]
 [preload storage="data/fgimage/bg/bg_prologue.jpg"]
-[bg storage="data/fgimage/bg/bg_prologue.jpg" wait=true]
+[bg storage="fgimage/bg/bg_prologue.jpg" wait=true]
 ;////////////表示準備/////////
 ;////////////四条 華織 季節の手紙////////////
 ;概要
