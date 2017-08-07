@@ -3,6 +3,7 @@
 ;[preload storage="data/fgimage/bg/bg_prologue_dark.jpg"]
 ;[preload storage="data/fgimage/bg/bg_prologue.jpg"]
 [bg storage="../fgimage/bg/bg_prologue.jpg" time=100]
+[chara_mod name="bg" storage="bg/bg_prologue.jpg"]
 ;////////////表示準備/////////
 ;////////////四条 華織 季節の手紙////////////
 ;概要
@@ -1829,6 +1830,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 *back_test
 [イベントシーン終了]
 [bg storage="../fgimage/bg/title.jpg" time=0]
+[chara_mod name="bg" storage="bg/title.jpg"]
 @jump storage="test_sijyou.ks"
 [s]
 *title
