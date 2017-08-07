@@ -34,7 +34,6 @@
 ;@jump target=*fumi_cmmon
 *test
 [if exp=tf.test_sijyou == true]
-[chara_mod name="bg" storage="bg/title.jpg"]
 *test_page1
 [glink target="*sijyou_syumi_1" text="趣味について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target="*sijyou_syumi_2" text="趣味について(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
