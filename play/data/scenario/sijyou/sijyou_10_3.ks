@@ -310,7 +310,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 汚れのない憧れの華織お兄さまの白い指先が、[r]
 うっすらと赤くなっていたことに気づいて私は驚きを隠せなかった。[p]
 [whosay name="華織お兄さま" color="olivedrab"]
-「急に来て驚かせたよね。ごめんね」[p]
+「急に来て驚かせたよね。 ごめんね」[p]
 [whosay name="幼い頃の私" color="#cf5a7f"]
 「いえ……けど、急にどうしてですの？」[p]
 *seen5
@@ -321,7 +321,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 「お誕生日の日に来れなくてごめんね」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「本当は、[名前]ちゃんにお花を贈ろうと思ったけれど、[r]
-[sp]僕は、まだ修練中の身だから、」[p]
+[sp]僕は、まだ修練中の身だから……」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「今、贈れる僕の精一杯の贈り物」[p]
 ;形があるものを送ってはいけないし
@@ -348,13 +348,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [autosave]
 ;===============================================================================
 [暗転２]
-[iscript]
-//#tyrano_base > div.layer.\31 _fore.layer_fore
-var lay1=document.getElementsByClassName("layer 1_fore");
-lay1[0].style.webkitFilter = "sepia(0%)";
-[endscript]
+[背景セピア化_解除]
 ;【背景】ヒロインの部屋
-;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=50]
 [背景_庭_夜]
 ; 相手を優しく思って考えている
 [主人公ポーズ通常]
