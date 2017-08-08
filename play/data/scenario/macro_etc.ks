@@ -6,9 +6,8 @@
 [macro name="一斉表示準備"]
 ;◆並んでいるところをみせない : script by ＠名無しさん１
 [iscript]
-//$(".layer_free").css("opacity",0); //ボタンをすべて非表示に
-//$(".layer_free").css("pointer-events","none");//glinkをクリック禁止に
 $(".list").hide();
+//$(".list").css("opacity",0); //非表示に
 [endscript]
 [endmacro]
 
@@ -17,8 +16,7 @@ $(".list").hide();
 ;◆並んでいるところをみせない→表示が終わったら見せる : script by ＠名無しさん１
 [iscript]
 $(".list").show();
-//$(".layer_free").css("opacity",1); //すべてのボタンの表示を復帰
-//$(".layer_free").css("pointer-events","auto");//glinkをクリック可能に
+//$(".list").css("opacity",1); //表示を復帰
 [endscript]
 [endmacro]
 
@@ -36,8 +34,9 @@ $(".para").css("opacity",1); //パラメータ表示を復帰
 [button name="message_load,button_okeiko" graphic="button_message_load.png" role=load]
 [wait time=10]
 [locate x=450 y=17]
-[button name="button_info,button_okeiko" fix=true graphic="button_info.png" storage=info.ks target=*info_oaite ]
+;[button name="button_info,button_okeiko" fix=true graphic="button_info.png" storage=info.ks target=*info_oaite ]
 [wait time=10]
+[button name="button_info,button_okeiko" fix=true graphic="button_info.png" storage=info_oaite_fumi.ks target=*info_oaite ]
 [locate x=550 y=17]
 [button name="button_sansaku,button_okeiko" fix=true graphic="button_sansaku.png" storage=sansaku.ks target=*sansaku ]
 [wait time=10]

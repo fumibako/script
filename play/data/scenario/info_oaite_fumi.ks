@@ -4,6 +4,9 @@
 	@jump storage="okeiko_draw_button_system.ks"
 [endif]
 
+*info_oaite
+@jump storage="info.ks" target=*info_oaite
+
 *start
 *fumibako
 ;↓文箱機能内表示を自然に切り替えるため文箱背景レイヤはfreeimageから除きます
