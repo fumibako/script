@@ -869,6 +869,15 @@ f.okeiko_month_kansuuji="三月 ";
 @jump target=katuragi_kyoutu_skip
 [endif]
 ;=============================================
+;◆葛城宮進行不可でイベント４の条件を満たしているが他の攻略キャラと見合いをきめた場合　最後の手紙2_1　【上でスキップされる】f.sijyou_au != 1 && 
+[if exp="f.omiai_kettei == 1 && (f.okeiko_month == 9 && f.okeiko_week == 2) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && f.katuraginomiya_au == 0 && f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 3"]
+;9/1に手紙は入らないので9/2　最後の手紙2_1　発生藤枝auは判定しない
+	[eval exp="f.event_katuraginomiya[23]=1"]
+	[eval exp="f.event_katuraginomiya[22]=1"]
+	[eval exp="f.event_katuraginomiya[21]=1"]
+	[call storage="hantei_fumi_toutyaku.ks" target=*katuraginomiya_toutyaku_hantei_shori_common]
+	@jump storage=fumi_toutyaku_shori_list.ks target=*katuraginomiya_fumi_last_2_2	
+[endif]
 ;◆葛城宮進行不可で他の攻略キャラと見合いをきめた場合　最後の手紙2_2　【上でスキップされる】f.sijyou_au != 1 && 
 [if exp="f.omiai_kettei == 1 && (f.okeiko_month == 9 && f.okeiko_week == 2) && f.event_katuraginomiya[1] == 1 && f.event_katuraginomiya[2] == 1 && f.event_katuraginomiya[3] == 1 && f.event_katuraginomiya[4] == 0 && f.katuraginomiya_au == 0"]
 ;9/1に手紙は入らないので9/2　最後の手紙2_1　発生藤枝auは判定しない
