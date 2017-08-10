@@ -1984,7 +1984,7 @@ f.fumi_toutyaku_sijyou[99]=1;
 *fumi_toutyaku_sijyou_103
 ;お見合い後、文矢から
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「妹へ　文矢";
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「妹へ」　文矢";
 f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「妹へ」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
