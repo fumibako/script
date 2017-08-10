@@ -7,6 +7,83 @@
 *info_oaite
 @jump storage="info.ks" target=*info_oaite
 
+*info_kuroda
+@jump storage="info_kuroda.ks" target=*info_kuroda
+*fumi_kuroda_page2
+@jump storage="info_kuroda.ks" target=fumi_kuroda_page2
+*fumi_kuroda_page3
+@jump storage="info_kuroda.ks" target=fumi_kuroda_page3
+
+*info_zaizen
+@jump storage="info_zaizen.ks" target=*info_zaizen
+*fumi_zaizen_page2
+@jump storage="info_zaizen.ks" target=fumi_zaizen_page2
+*fumi_zaizen_page3
+@jump storage="info_zaizen.ks" target=fumi_zaizen_page3
+
+*info_sijyou
+@jump storage="info_sijyou.ks" target=*info_sijyou
+*fumi_sijyou_page2
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page2
+*fumi_sijyou_page3
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page3
+*fumi_sijyou_page4
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page4
+*fumi_sijyou_page5
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page5
+*fumi_sijyou_page6
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page6
+*fumi_sijyou_page7
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page7
+*fumi_sijyou_page8
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page8
+*fumi_sijyou_page9
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page9
+*fumi_sijyou_page10
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page10
+*fumi_sijyou_page11
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page11
+*fumi_sijyou_page12
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page12
+*fumi_sijyou_page13
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page13
+*fumi_sijyou_page14
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page14
+*fumi_sijyou_page15
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page15
+*fumi_sijyou_page16
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page16
+*fumi_sijyou_page17
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page17
+*fumi_sijyou_page18
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page18
+*fumi_sijyou_page19
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page19
+*fumi_sijyou_page20
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page20
+*fumi_sijyou_page21
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page21
+*fumi_sijyou_page22
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page22
+*fumi_sijyou_page23
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page23
+*fumi_sijyou_page24
+@jump storage="info_sijyou.ks" target=fumi_sijyou_page24
+
+*info_katuraginomiya
+@jump storage="info_katuraginomiya.ks" target=*info_katuraginomiya
+*fumi_katuraginomiya_page2
+@jump storage="info_katuraginomiya.ks" target=fumi_katuraginomiya_page2
+*fumi_katuraginomiya_page3
+@jump storage="info_katuraginomiya.ks" target=fumi_katuraginomiya_page3
+
+*info_hujieda
+@jump storage="info_hujieda.ks" target=*info_hujieda
+*fumi_hujieda_page2
+@jump storage="info_hujieda.ks" target=fumi_hujieda_page2
+*fumi_hujieda_page3
+@jump storage="info_hujieda.ks" target=fumi_hujieda_page3
+
 *start
 *fumibako
 ;↓文箱機能内表示を自然に切り替えるため文箱背景レイヤはfreeimageから除きます
