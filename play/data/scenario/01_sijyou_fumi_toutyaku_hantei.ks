@@ -22,6 +22,12 @@
 ;=======================================================================================
 ;物語進行上大切な手紙は判定先頭に移動しました。もし他のお返事を優先させたい場合は再移動をお願いします(◆jsYiJcqRkk
 ;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『妹へ』(お見合い後) sijyou_fumi103
+[if exp="f.sijyou_omiai == 1 && (f.okeiko_month == 9 && f.okeiko_week == 2) && f.fumi_toutyaku_sijyou[103] == 0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_103
+[endif]
+;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：冬『結納』(1月～３月３週｜家族　その他話題にて)16_end (コメントアウトされている)f.okeiko_month == 1 OR f.okeiko_month==2
 ;1月～３月３週に四条が自発的に送る形で届くよう調整させていただきました。通常のプレイでは1月に届くと思われますが、物語進行上大切な手紙ですので返事を溜めていて解消された場合などでも期間中なら届く仕様としてみます(◆jsYiJcqRkk
 [if exp="f.sijyou_omiai == 1 && (f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3) && f.fumi_toutyaku_sijyou[41] == 0"]
