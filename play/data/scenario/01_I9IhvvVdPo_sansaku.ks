@@ -392,6 +392,7 @@ $('.junbi_girl').remove();
 [whosay name=書店店員" ]
 「いらっしゃいませ。　どんな御本をお探しでしょうか？」[p]
 
+[主人公眉下げ下]
 [主人公目伏柔]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「詩集を探しているのですが。[r]
@@ -413,16 +414,15 @@ $('.junbi_girl').remove();
 差し出された和綴じの本は花菖蒲の表紙で、私はパラパラとめくる。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公眉下げ下]
-[主人公伏目]
+[主人公微笑み]
 「情緒ある美しくも優しい詩ですね。[r]
 [sp]この本に致します」[p]
 
 [whosay name=書店店員" ]
-「お買い上げありがとございます！」[p]
+「お買い上げありがとうございます！」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公通常]
+[主人公目閉じ]
 「あの方は、どんな御本を読まれるのかしら？」[p]
 
 [layopt layer=29 visible=true]
