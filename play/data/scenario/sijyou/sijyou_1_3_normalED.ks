@@ -280,8 +280,8 @@
 [sp]何気ない日常が目に鮮やかに映るようになった。[p]
 [暗転１]
 [暗転２]
+[背景明度アップ解除]
 [iscript]
-$('.1_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)','-moz-filter':'brightness(1.0)','-ms-filter':'brightness(1.0)'});
 $('.yuki').remove();
 [endscript]
 *seen_end
