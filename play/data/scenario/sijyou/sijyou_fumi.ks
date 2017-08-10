@@ -1827,7 +1827,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
-[eval exp="f.midoku_list_hairetsu[2][46] = 0;"]
+[eval exp="f.midoku_list_hairetsu[2][102] = 0;"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
