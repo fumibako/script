@@ -1990,7 +1990,7 @@ f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
 f.fumi_list_all_target.push("*sijyou_fumi103");
-f.fumi_list_all_location_taishou.push(5);
+f.fumi_list_all_location_taishou.push(2);
 f.fumi_list_all_location_fumi.push(102);
 f.fumi_list_sijyou_location_fumi.push(102);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
