@@ -1,4 +1,4 @@
-﻿﻿﻿*fumi_toutyaku_hantei_sijyou
+﻿﻿﻿﻿*fumi_toutyaku_hantei_sijyou
 ;◇四条手紙到着判定
 [eval exp="f.test='手紙到着可能性なし'"]
 [if exp="f.sijyou_fumi_henjimachi <= parseInt([sf.sijyou['fumi_henjimachi_ok_number']])"]
@@ -24,7 +24,8 @@
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『妹へ』(お見合い後) sijyou_fumi103
 [if exp="f.sijyou_omiai == 1 && (f.okeiko_month == 9 && f.okeiko_week == 2) && f.fumi_toutyaku_sijyou[103] == 0"]
-  [call target=*sijyou_toutyaku_hantei_shori_common]
+	[eval exp="f.fumi_toutyaku_oaite.push('文矢様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_103
 [endif]
 ;=======================================================================================
