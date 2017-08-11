@@ -206,9 +206,10 @@ $('.loding_pic1').remove();
 *test9_3
 [cm]
 [freeimage layer = 26]
-[glink text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink text="9月3週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-[glink text="9月3週c" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+;glinkは自動的にcmでクリアされる
+[glink text="9月3週" storage="sijyou/sijyou_9_3.ks"　graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink text="9月3週b" storage="sijyou/sijyou_9_3b.ks" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink text="9月3週c" storage="sijyou/sijyou_9_3c.ks" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 [s]
 
 
