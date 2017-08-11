@@ -24,9 +24,6 @@ $(".1_fore").remove();
 [主人公通常]
 [wait time=10]
 [プリロード画面消去]
-;[if exp="tf.test_sijyou == true"]
-;@jump target=seen7
-;[endif]
 ;///////////////////////////////
 *first_seen
 [四条ボタン表示]
@@ -510,6 +507,12 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 *select_1
 *common_0
 *seen5
+*seen6
+*seen7
+[if exp="tf.test_sijyou == true"]
+[四条ベース羽織]
+[四条微笑み
+[endif]
 @jump storage="sijyou/sijyou_9_3b.ks" target=*mini_bara
 
 
