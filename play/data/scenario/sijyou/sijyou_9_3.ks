@@ -387,6 +387,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;ピュー◎ランド？
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（四条様には、よく、花言葉についても教えて頂いたわ）[p]
 #
 私は、思い出の場所が変わりないかと、庭を眺めた。[p]
 [if exp="sf.BGM=='ON'"]
