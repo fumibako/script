@@ -23,7 +23,7 @@
 ;物語進行上大切な手紙は判定先頭に移動しました。もし他のお返事を優先させたい場合は再移動をお願いします(◆jsYiJcqRkk
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『妹へ』(お見合い後) sijyou_fumi103
-[if exp="f.sijyou_omiai == 1 && (f.okeiko_month == 9 && f.okeiko_week == 2) && f.fumi_toutyaku_sijyou[103] == 0"]
+[if exp="f.sijyou_au == 1 && (f.okeiko_month == 9 && f.okeiko_week == 3) && f.fumi_toutyaku_sijyou[103] == 0"]
 	[eval exp="f.fumi_toutyaku_oaite.push('文矢様')"]
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_103
