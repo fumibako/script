@@ -426,7 +426,7 @@ $('.junbi_girl').remove();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
-「あの方は、どんな御本を読まれるのかしら？」[p]
+「あの方は、どの様な御本を読まれるのかしら？」[p]
 
 [layopt layer=29 visible=true]
 ;【話題入手】
