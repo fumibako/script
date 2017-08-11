@@ -495,7 +495,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 *select_1
 *common_0
 *seen5
-@jump storage="sijyou_9_3b.ks" target=*mini_bara
+@jump storage="sijyou/sijyou_9_3b.ks" target=*mini_bara
 
 
 *seen8
