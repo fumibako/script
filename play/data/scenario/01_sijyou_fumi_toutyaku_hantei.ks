@@ -29,6 +29,12 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_103
 [endif]
 ;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：秋『ネリネ』f.okeiko_month==9 4週でもいいです　四条が自発的に送る 
+[if exp="f.sijyou_omiai == 1 && (f.okeiko_month == 9 && f.okeiko_week == 3) && f.fumi_toutyaku_sijyou[33] == 0"]
+  [call target=*sijyou_toutyaku_hantei_shori_common]
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_33
+[endif]
+;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：冬『結納』(1月～３月３週｜家族　その他話題にて)16_end (コメントアウトされている)f.okeiko_month == 1 OR f.okeiko_month==2
 ;1月～３月３週に四条が自発的に送る形で届くよう調整させていただきました。通常のプレイでは1月に届くと思われますが、物語進行上大切な手紙ですので返事を溜めていて解消された場合などでも期間中なら届く仕様としてみます(◆jsYiJcqRkk
 [if exp="f.sijyou_omiai == 1 && (f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3) && f.fumi_toutyaku_sijyou[41] == 0"]
@@ -280,12 +286,6 @@
 [if exp="f.sijyou_fumi_toutyakumachi_kisetsu == 0 && f.sijyou_omiai == 0 && f.okeiko_month == 8 && f.fumi_toutyaku_sijyou[32] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_32
-[endif]
-;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：夏『ネリネ』8_3/f.okeiko_month==9 四条が自発的に送る形に(～kisetsu条件を除去)調整しました(◆jsYiJcqRkk
-[if exp="f.sijyou_omiai == 1 && f.okeiko_month == 9 && f.fumi_toutyaku_sijyou[33] == 0"]
-  [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_33
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：秋『秋の夕暮れ』9/f.okeiko_month==9
