@@ -92,7 +92,7 @@ $(".1_fore").remove();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [主人公目通常]
-（？)[p]
+（　？　)[p]
 [whosay name="華織" color="olivedrab"]
 「それは、ネリネという花だよ」[p]
 
