@@ -178,7 +178,7 @@ $(".1_fore").remove();
 [font size=32]
 [link target=*select_1]私は、緊張してしまった。[endlink][r]
 [r][r][r]
-[link target=*select_2] 私は、ほっとした。[endlink][r]
+[link target=*select_2_0] 私は、ほっとした。[endlink][r]
 [resetfont]
 [s]
 *select_1
@@ -231,6 +231,7 @@ _　私も淑女として成長しないといけないのだわ）[p]
 （もしかして、また、気を遣われてしまったかしら？）[p]
 @jump target=common_0
 ;//////////////胸が高鳴った//////////////
+*select_2_0
 [cm]
 ;【背景をもどす】[背景_四条家庭バラ茂]
 [背景_四条家庭バラ茂]
