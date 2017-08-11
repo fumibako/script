@@ -156,9 +156,19 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [font color=white size=32]
 
 [link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
+[r][r]
+[link target=*jump_ok_ev]次のシナリオへ[endlink][r]
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
+[s]
+
+*jump_ok_ev
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen5
 [s]
 
 *jump_ok
