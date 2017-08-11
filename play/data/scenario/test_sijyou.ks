@@ -38,7 +38,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="test_replay" text="WEB版リプレイ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink name="test" target="test5_1" text="5月(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink name="test2" target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink name="test3" target="test7_1" text="7月1週(星　ﾌﾟﾚｲ動向調査EV)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink name="test3" target="test7_1" text="7月1週(星　ﾌﾟﾚｲ動向調査EV)" graphic="select_waku_x500.png" size=15 width="250" x=100 y=250 color=white]
 [glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="test9_2" text="9月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
