@@ -1986,7 +1986,7 @@ f.fumi_toutyaku_sijyou[99]=1;
 ;"f.fumi_all_"は「文箱」一覧に表示される手紙の配列、"f.fumi_list_sijyou"は「情報：四条」に表示される手紙の配列となります。そのため文矢からの手紙はf.fumi_list_sijyouにpushされないようにコメントアウトしました。taishouを(5)にしてくださりありがとうございます
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「妹へ」　文矢";
-;f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「妹へ」";
+//f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「妹へ」";
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
 ;f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
