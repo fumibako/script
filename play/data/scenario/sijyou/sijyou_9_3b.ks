@@ -179,7 +179,8 @@ $(".1_fore").remove();
 [s]
 *select_1
 ;//////////////私は緊張してしまった。////////////////////////////
-;違和感ある人はこっちの流れ　好感度上げればいいのかも？
+;違和感ある人、好感度がかなりひくい用
+[cm]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -201,7 +202,8 @@ _　私が、望んでいたことなのに少し緊張してしまうのは）[
 （そうだわ。　四条様にお近づきするにあたって、私も淑女[r]
 _　として成長しないといけないのだわ）[p]
 #
-これからの未来に身構えていると、四条様は私の手をとって優しい眼差しをむけられた。[p]
+これからの未来に身構えていると、[r]
+四条様は私の手を取り、優しい眼差しを向けられた。[p]
 ;フォロー
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -225,6 +227,7 @@ _　として成長しないといけないのだわ）[p]
 （もしかして、また、気を遣われてしまったかしら？）[p]
 @jump target=common_0
 ;//////////////胸が高鳴った//////////////
+[cm]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
