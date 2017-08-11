@@ -59,7 +59,7 @@ $(".1_fore").remove();
 [sp][名前]は好きではないかもしれないね」[p]
 [四条口微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公驚き]
+[主人公驚]
 「いえ、そんな！」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ]
@@ -73,7 +73,7 @@ $(".1_fore").remove();
 [主人公笑顔]
 「暖かい心、枯れない愛……素敵ですね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公口微笑]
+[主人公口微笑み]
 [主人公目閉じ]
 （私も、帰ったら詳しく花言葉について調べてみましょう）[p]
 
@@ -91,7 +91,7 @@ $(".1_fore").remove();
 「それは、ネリネという花だよ」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公口微笑] 
+[主人公口微笑み] 
 [主人公眉下げ下]  
 [主人公目伏]
 「そうなのですね。[r]
