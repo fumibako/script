@@ -102,9 +102,9 @@ $(".1_fore").remove();
 [wait time=10]
 [主人公眉下げ下]  
 [主人公目伏]
-「そうなのですね。[r]
-[sp]まだ蕾ですが、銀糸がまばらに縫いこまれたように[r]
-[sp]キラキラと輝いていますわ！　不思議……」[p]
+「そうなのですね。[sp]まだ蕾ですが、[r]
+[sp]銀糸がまばらに縫いこまれたようにキラキラと輝いていますわ！[r]
+[sp]不思議……」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
@@ -114,7 +114,7 @@ $(".1_fore").remove();
 
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
-「そうだね。いざという時の為にね」[p]
+「そうだね。 いざという時の為にね」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [主人公ポーズ指]
 [主人公目パチ1回]
