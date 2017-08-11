@@ -6,11 +6,17 @@
 [call target=*9_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [layopt layer=13 visible=true]
+;テストから飛んでくるときのレイヤー１消去
+[iscript]
+$(".1_fore").remove();
+[endscript]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
-;[背景_四条家庭バラ茂]
+[四条ベース羽織]
+[四条微笑み]
+[暗転]
 [プリロード画面消去]
 ;=================================================================================_
 *seen5
