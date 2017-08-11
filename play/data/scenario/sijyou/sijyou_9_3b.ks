@@ -164,6 +164,7 @@ $(".1_fore").remove();
 ;選択肢用レイヤーを追加
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様……）
+[四条退場]
 ;背景変更:和紙風 桜色
 [背景選択肢_sakura]
 [eval exp="f.haikei_credit=''"]
@@ -185,6 +186,10 @@ $(".1_fore").remove();
 [current layer="message0"]
 ;【背景をもどす】[背景_四条家庭バラ茂]
 [背景_四条家庭バラ茂]
+[表示準備 storage="bg/B4nFWraU42/rose_shigemi.jpg" layer=13]
+[四条ベース羽織]
+[四条微笑み]
+[freeimage layer=13 time=100]
 [er]
 #
 私は緊張してしまった。[p]
@@ -226,6 +231,10 @@ _　として成長しないといけないのだわ）[p]
 [current layer="message0"]
 ;【背景をもどす】[背景_四条家庭バラ茂]
 [背景_四条家庭バラ茂]
+[表示準備 storage="bg/B4nFWraU42/rose_shigemi.jpg" layer=13]
+[四条ベース羽織]
+[四条微笑み]
+[freeimage layer=13 time=100]
 #
 私は、ほっとした。[p]
 *select_2
