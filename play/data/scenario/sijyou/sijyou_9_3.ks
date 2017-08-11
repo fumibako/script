@@ -8,6 +8,10 @@
 [call target=*9_3 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [layopt layer=13 visible=true]
+;テストから飛んでくるときのレイヤー１消去
+[iscript]
+$(".1_fore").remove();
+[endscript]
 ;=================================================================================_
 *seen0
 ;【背景】ヒロインの部屋
