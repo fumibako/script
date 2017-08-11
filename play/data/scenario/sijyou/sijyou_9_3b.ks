@@ -157,6 +157,7 @@ $(".1_fore").remove();
 「ですが、少しずつ[名前]との関係を深めていきましょうか」
 [四条笑顔]
 [p]
+;好感度がひくいとイベント発生　35以上だとスキップ
 [if exp="f.para_sijyou_koukando > 35"]
 @jump target=*select_2
 [endif]
