@@ -502,11 +502,13 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [主人公目閉]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
+;旧データ・ラベルロード対策
 *mini_bara
 *select_2
 *select_1
 *common_0
 *seen5
+@jump storage="sijyou/sijyou_9_3b.ks" target=*mini_bara
 *seen6
 *seen7
 [if exp="tf.test_sijyou == true"]
