@@ -511,7 +511,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 *seen7
 [if exp="tf.test_sijyou == true"]
 [四条ベース羽織]
-[四条微笑み
+[四条微笑み]
 [endif]
 @jump storage="sijyou/sijyou_9_3b.ks" target=*mini_bara
 
