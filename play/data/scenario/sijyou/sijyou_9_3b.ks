@@ -231,12 +231,15 @@ _　として成長しないといけないのだわ）[p]
 @jump target=common_0
 ;//////////////胸が高鳴った//////////////
 [cm]
-;メッセージレイヤサイズを会話窓用に戻す
-[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 visible=true
-[current layer="message0"]
 ;【背景をもどす】[背景_四条家庭バラ茂]
 [背景_四条家庭バラ茂]
+[wait time=10]
+;メッセージレイヤサイズを会話窓用に戻す
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+[wait time=10]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[wait time=10]
 [表示準備 storage="bg/B4nFWraU42/rose_shigemi.jpg" layer=13]
 [四条ベース羽織]
 [四条微笑み]
