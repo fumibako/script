@@ -73,7 +73,7 @@ $(".1_fore").empty();
 ;見た目だけで判断する子供らしさが残っているシーン
 ;なぜ可愛くないの？　どんな見た目？とのこと
 #
-[ruby text=サ]多[ruby text=ボ]肉[ruby text=テ]植[ruby text=ン]物と言われた植物は、普段、見る花々とは違って[r]
+[ruby text=サ]多[ruby text=ボ]肉[ruby text=テ]植[ruby text=ン]物は、普段、見る花々とは違って[r]
 美しい新芽もなく、ボコボコと丸く肉割れしており、[r]
 面妖な見た目であった。[p]
 [whosay name="華織" color="olivedrab"]
