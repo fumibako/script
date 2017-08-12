@@ -502,8 +502,8 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [p]
 #
 ;まだ妹扱い
-四条様は、無邪気な子供の頃と今の私の様子を見比べるかのように[r]
-意地悪に微笑まれた。[p]
+四条様は、無邪気な子供の頃の私と今の私の様子を見比べるかのように[r]
+意地悪に微笑む。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私だって、もう子供のように無邪気ではいられませんわ）[p]
 [whosay name="四条 華織" color="olivedrab"]
