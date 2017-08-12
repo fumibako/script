@@ -1,4 +1,4 @@
-﻿*start
+﻿﻿*start
 ;==============================
 ; その他マクロ設定[一斉表示準備][一斉表示][お稽古ボタン表示][変数ログ表示][暗転～][暗転２終了][表示開始][プリロード画面消去][華衣][表示準備][各キャラ退場準備][イベント中テスト数値表示][イベントシーン構築～]
 ;==============================
@@ -8,6 +8,7 @@
 [iscript]
 $(".layer_free").css("opacity",0); //ボタンとlistをすべて非表示に
 $(".list").css("opacity",0); 
+$(".28_fore").css("opacity",0); //layer28を非表示に
 $(".layer_free").css("pointer-events","none");//glinkをクリック禁止に
 $(".list").hide();
 [endscript]
@@ -19,6 +20,7 @@ $(".list").hide();
 [iscript]
 $(".layer_free").css("opacity",1); //すべての表示を復帰
 $(".list").css("opacity",1); //表示を復帰
+$(".28_fore").css("opacity",1); //layer28を表示
 $(".layer_free").css("pointer-events","auto");//glinkをクリック可能に
 $(".list").show();
 [endscript]
