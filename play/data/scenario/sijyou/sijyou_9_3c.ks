@@ -220,18 +220,37 @@ $('.junbi_girl').remove();
 [else]
 帯に挿した。[p]
 [endif]
-;どんどん軽薄なゲームに・・・
 [whosay name="華織" color="olivedrab"]
 [四条微笑み]
 「綺麗だね。 よく似合っているよ」[p]
-;[sp]昔を思い出すよ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ]
 「ありがとうございます……」
 [主人公伏目パチ1回]
 [p]
+*seen_siro_bara
+;========================================================
+;何しにきたの？ ここにシーンをいれて　ワルツの回収　バザー（未定）で正式に踊ったときの反比例
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;「華織様、白い蕾のバラには、どの様な意味があるのでしょう？」[p]
+;白いバラのつぼみ「恋をするには若すぎる」「少女時代」
+;[whosay name="華織" color="olivedrab"]
+;「[名前]のような可愛らしい人のことを示しているのだよ」
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;「可愛らしい、だなんて……私は、もう立派な淑女だと……思います」
+;自信なくつぶやいた。適当
+;[whosay name="華織" color="olivedrab"]
+;「そうだね」
+;ワルツ導入シーン地の文　ワルツのステップをおどる
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;（華織様、私に合わせて、ゆっくりとステップを踏まれていますわ）適当
+;[whosay name=&sf.girl_namae color="#cf5a7f"]
+;「（なにか理由をつけて中止シーン）
+;========================================================
+;何しにきたの？
 [whosay name="華織" color="olivedrab"]
 「[名前]も歩き回って疲れただろう？　そろそろ休もうか」[p]
+;そろそろ疲れただろう　等に変更予定
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「は、はい」[p]
 [whosay name="華織" color="olivedrab"]
