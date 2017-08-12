@@ -8,7 +8,7 @@
 [layopt layer=13 visible=true]
 ;テストから飛んでくるときのレイヤー１消去
 [iscript]
-$(".1_fore").remove();
+$(".1_fore").empty();
 [endscript]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
@@ -66,8 +66,8 @@ $(".1_fore").remove();
 (見た目は、可愛いとは言えませんが……）[p]
 [whosay name="華織" color="olivedrab"]
 [主人公通常]
-「サボテンだけは、固有の花言葉は無いけど、[r]
-[sp]花言葉は、素敵だと思うよ。[r]
+「サボテンには、品種別の花言葉は無いけど、[r]
+[sp]サボテンの花言葉は、素敵だと思うよ。[r]
 [sp]『燃える心』『偉大』『暖かい心』『枯れない愛』」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公笑顔]
