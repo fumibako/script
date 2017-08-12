@@ -496,9 +496,13 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [sp][名前]がよければ、また隠れ鬼でもするけど」[p]
 [四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
-「もう、そんな必要はないようだね」[p]
+「もう、そんな必要はないようだね」
 ;まだ妹扱い
+[主人公ポーズ通常]
+[主人公目閉じ]
+[p]
 [whosay name="四条 華織" color="olivedrab"]
+[主人公目を開く]
 「そうだ。　新しい庭が出来たんだ、一緒に見に行こうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
