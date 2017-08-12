@@ -49,7 +49,7 @@ $(".1_fore").empty();
 [主人公目パチ1回]
 [whosay name="華織" color="olivedrab"]
 [四条口開]
-「気に入ったものがあったら、また差し上げますよ」[p]
+「気に入ったものがあったら、また[名前]にあげるよ」[p]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「この不思議な形をした植物は何でしょうか？」[p]
