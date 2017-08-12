@@ -86,11 +86,12 @@ $(".1_fore").empty();
 [whosay name="華織" color="olivedrab"]
 [四条眉下げ]
 [四条目伏]
-「あ……。　ここにも芽があったんだね……」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+「あ……。　ここにも芽があったんだね……」
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目通常]
 （　？　)[p]
 [whosay name="華織" color="olivedrab"]
@@ -114,7 +115,7 @@ $(".1_fore").empty();
 
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
-「そうだね。 いざという時の為にね」[p]
+「そうだね。　いざという時の為にね」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [主人公ポーズ指]
 [主人公目パチ1回]
