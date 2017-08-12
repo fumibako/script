@@ -151,7 +151,7 @@ $(".1_fore").empty();
 #
 ;【退場】四条
 [四条退場]
-;[主人公目閉じ]
+[主人公退場]
 ;=================================================================================_
 *seen6
 ;場面転換
@@ -159,6 +159,13 @@ $(".1_fore").empty();
 [背景_四条家庭バラ噴水]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/niwa_rose_funsui.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[wait time=10]
+[主人公ポーズ通常]
+[主人公通常]
+[iscript]
+$('.junbi_girl').remove();
+[endscript]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
