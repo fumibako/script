@@ -67,8 +67,8 @@
 #
 [layopt layer=29 visible=true]
 ;【話題入手】
-[話題入手 wadai_txt="『1日のはじまりの話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('1日のはじまりの話題',0,1,2,1,1,'a','','','','')"]
+[話題入手 wadai_txt="『一日のはじまりの話題』を手に入れました"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('一日のはじまりの話題',0,1,2,1,1,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 [s]

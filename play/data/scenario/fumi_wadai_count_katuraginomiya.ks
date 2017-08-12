@@ -241,7 +241,21 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '写真の話題' && f.katuragino
 	}
 }
 
-if(f.wadai_list_hairetsu[f.wadai_number][0] == '1日のはじまりの話題' && f.katuraginomiya_fumi_toutyakumachi_hajimari < 0){ //「1日のはじまりの話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+if((f.wadai_list_hairetsu[f.wadai_number][0] == '1日のはじまりの話題') && (f.katuraginomiya_fumi_toutyakumachi_hajimari < 0)){ //「1日のはじまりの話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_katuraginomiya_koukando < parseInt(sf.katuraginomiya['koukando_a'])){
+		f.katuraginomiya_fumi_toutyakumachi_hajimari=f.katuraginomiya_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.katuraginomiya_fumi_toutyakumachi;
+	}
+	if(f.para_katuraginomiya_koukando >= parseInt(sf.katuraginomiya['koukando_a'])){
+		f.katuraginomiya_fumi_toutyakumachi_hajimari=f.katuraginomiya_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.katuraginomiya_fumi_toutyakumachi - 1;
+	}
+	if(f.para_katuraginomiya_koukando > parseInt(sf.katuraginomiya['koukando_b'])){
+		f.katuraginomiya_fumi_toutyakumachi_hajimari=f.katuraginomiya_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.katuraginomiya_fumi_toutyakumachi - 2;
+	}
+}
+if((f.wadai_list_hairetsu[f.wadai_number][0] == '一日のはじまりの話題') && (f.katuraginomiya_fumi_toutyakumachi_hajimari < 0)){ //「一日のはじまりの話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	if(f.para_katuraginomiya_koukando < parseInt(sf.katuraginomiya['koukando_a'])){
 		f.katuraginomiya_fumi_toutyakumachi_hajimari=f.katuraginomiya_fumi_toutyakumachi;
 		f.fumi_wadai_toutyakumachi = f.katuraginomiya_fumi_toutyakumachi;
