@@ -373,11 +373,10 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [sp]任されていたんだ。[r]
 [sp]だから文矢と[名前]が遊びにきてくれた時は、とても嬉しかったよ」[p]
 [autosave]
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
 （そうなのですね）[p]
 [主人公目閉じ]
 [四条目パチ1回]
@@ -435,8 +434,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（今、誰かがいらっしゃったような？[r]
-[sp]気のせいでしょうか？）[p]
+（今……どなたか、いらっしゃったような？[r]
+[sp]気のせいかしら？）[p]
+;でしょうか　より短絡的に気軽に　かしら？
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 ;【SE】子供たち(楽しげな笑い声)
