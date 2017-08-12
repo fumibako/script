@@ -50,13 +50,15 @@ $(".1_fore").empty();
 [whosay name="華織" color="olivedrab"]
 [四条口開]
 「気に入ったものがあったら、また[名前]にあげるよ」[p]
-[主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「この不思議な形をした植物は何でしょうか？」[p]
+「ありがとうございます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
+「あら、この不思議な形をした植物は何でしょうか？」[p]
 [主人公通常]
 [whosay name="華織" color="olivedrab"]
-「それはサボテンの一種で、ペヨーテ（[ruby text=う]烏[ruby text=ば]羽[ruby text=たま]玉）という品種名なんだ。[r]
-[sp][名前]は好きではないかもしれないね」[p]
+「それはサボテンの一種で、品種名は、ペヨーテ（[ruby text=う]烏[ruby text=ば]羽[ruby text=たま]玉）と言うんだ。[r]
+[sp][名前]は、好きではないかもしれないね」[p]
 [四条口微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
@@ -64,6 +66,11 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ]
 (見た目は、可愛いとは言えませんが……）[p]
+;見た目だけで判断する子供らしさが残っているシーン
+;なぜ可愛くないの？　どんな見た目？とのこと
+#
+[ruby text=サ]多[ruby text=ボ]肉[ruby text=テ]植[ruby text=ン]物と言われた植物は、普段、見る花々とは違って[r]
+美しい新芽もなく、ボコボコと丸く肉割れしており、面妖な見た目であった。[p]
 [whosay name="華織" color="olivedrab"]
 [主人公通常]
 「サボテンには、品種別の花言葉は無いけど、[r]
@@ -122,23 +129,28 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （？ ……華織様のお祖母様も、華道家でいらしゃいましたから、[r]
 [sp]その為でしょうか？）[p]
+#
+[主人公ポーズ通常]
+尋ねようとした時、華織様が私の手を取った。[p]
 ;……華織様のお祖母様は
 ;○過去のくだり、家のことも(手紙で追記あり)あってこの時点で主人公はあまり気にせず。 
-[主人公ポーズ通常]
-[四条微笑み]
 [whosay name="華織" color="olivedrab"]
+[四条微笑み]
 「[名前]、
 [四条口開]
 薔薇園を見に行こうか」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目大]
+「は、はい」[p]
 #
 ;【退場】四条
 [四条退場]
+[主人公目閉じ]
 ;=================================================================================_
 *seen6
 ;場面転換
 ;【背景】
 [背景_四条家庭バラ噴水]
-;[chara_mod name="bg" storage="bg/B4nFWraU42/niwa_rose_funsui.jpg"]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/niwa_rose_funsui.jpg" time=100]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
