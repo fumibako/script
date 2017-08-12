@@ -8,7 +8,7 @@
 [layopt layer=13 visible=true]
 ;テストから飛んでくるときのレイヤー１消去
 [iscript]
-$(".1_fore").remove();
+$(".1_fore").empty();
 [endscript]
 [四条イベントシーン構築]
 [主人公ポーズ通常]
