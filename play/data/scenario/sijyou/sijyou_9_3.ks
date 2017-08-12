@@ -166,7 +166,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 「はい」[r]
 移動します。[p]
 [cm]
-@jump target=*seen5
+@jump target=*seen4
 [s]
 
 *jump_ok
