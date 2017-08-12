@@ -16,9 +16,6 @@
 [freeimage layer = 26]
 ;↓アドバイスイベントを(1=通過済)に変更(主人公セリフ表示のため)
 [eval exp="f.event_advice = 1"]
-[一斉表示準備]
-@layopt layer=29 visible = true
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 
 [if exp="f.oaite_viewing_target != ''"]
 @jump storage=&f.oaite_viewing_storage target=&f.oaite_viewing_target

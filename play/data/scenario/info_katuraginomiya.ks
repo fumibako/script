@@ -137,6 +137,9 @@
 @jump storage="info_fumibako_hyouji_end.ks"
 ;======================================================================================
 *info_katuraginomiya_hyouji
+[一斉表示準備]
+@layopt layer=29 visible = true
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 ;◆葛城宮フェイス　（画像がないので仮位置で調整しています）
 [image layer=26 x=0 y=0 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
 [wait time=10]
@@ -184,13 +187,13 @@
 [else]
 [eval exp="f.para_color = 'black'"]
 [endif]
-[ptext name="list" text=&f.para_katuraginomiya_koukando layer=27 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
-[ptext name="list" text=&f.para_katuraginomiya_sintyou layer=27 size=25 x=270 y=364 color=black bold=bold]
-[ptext name="list" text=&f.para_katuraginomiya_taijuu layer=27 size=25 x=270 y=406 color=black bold=bold]
+[ptext name="list" text=&f.para_katuraginomiya_koukando layer=28 size=25 x=&f.para_koukando_x y=323 color=&f.para_color bold=bold]
+[ptext name="list" text=&f.para_katuraginomiya_sintyou layer=28 size=25 x=270 y=364 color=black bold=bold]
+[ptext name="list" text=&f.para_katuraginomiya_taijuu layer=28 size=25 x=270 y=406 color=black bold=bold]
 [if exp="f.midoku_list_hairetsu[3][2] == 0"]
-	[ptext name="list" text=&f.para_katuraginomiya_shumi layer=27 size=23 x=268 y=448 color=black bold=bold]
+	[ptext name="list" text=&f.para_katuraginomiya_shumi layer=28 size=23 x=268 y=448 color=black bold=bold]
 [else]
-	[ptext name="list" text="―" layer=27 size=27 x=270 y=448 color=black bold=bold]
+	[ptext name="list" text="―" layer=27 size=28 x=270 y=448 color=black bold=bold]
 [endif]
 [return]
 [s]
