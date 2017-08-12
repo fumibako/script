@@ -118,7 +118,7 @@
 
 ;[eval exp="f.fumi_all_number=5"]
 [if exp="f.fumi_all_number>10"]
-			[glink name="list" target=*fumi_all_page2 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page2 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_all_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -146,7 +146,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_1_left
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left
 [endif]
 
@@ -181,7 +181,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_1_right
 
-	[if exp="f.loop_count>0"]
+	[if exp="f.loop_count > 0"]
 		@jump target=*loop_fumi_all_right
 	[endif]
 [endif]
@@ -204,9 +204,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page1 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page1 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number>20"]
-[glink name="list" target=*fumi_all_page3 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page3 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left2
 [if exp="f.list_count == 0"]
@@ -229,7 +229,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_2_left
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left2
 [endif]
 
@@ -263,7 +263,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_2_right
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right2
 [endif]
 [endif]
@@ -286,9 +286,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page2 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page2 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 30"]
-[glink name="list" target=*fumi_all_page4 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page4 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left3
 [if exp="f.list_count == 0"]
@@ -311,7 +311,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left3
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left3
 [endif]
 
@@ -345,7 +345,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right3
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right3
 [endif]
 [endif]
@@ -368,9 +368,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page3 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page3 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 40"]
-[glink name="list" target=*fumi_all_page5 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page5 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left4
 [if exp="f.list_count == 0"]
@@ -393,7 +393,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left4
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left4
 [endif]
 
@@ -427,7 +427,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right4
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right4
 [endif]
 [endif]
@@ -450,9 +450,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page4 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page4 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 50"]
-[glink name="list" target=*fumi_all_page6 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page6 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left5
 [if exp="f.list_count == 0"]
@@ -475,7 +475,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left5
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left5
 [endif]
 
@@ -509,7 +509,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right5
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right5
 [endif]
 [endif]
@@ -532,9 +532,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page5 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page5 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 60"]
-[glink name="list" target=*fumi_all_page7 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page7 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left6
 [if exp="f.list_count == 0"]
@@ -557,7 +557,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left6
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left6
 [endif]
 
@@ -591,7 +591,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right6
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right6
 [endif]
 [endif]
@@ -614,9 +614,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page6 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page6 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 70"]
-[glink name="list" target=*fumi_all_page8 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page8 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left7
 [if exp="f.list_count == 0"]
@@ -639,7 +639,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left7
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left7
 [endif]
 
@@ -673,7 +673,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right7
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right7
 [endif]
 [endif]
@@ -696,9 +696,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page7 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page7 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 80"]
-[glink name="list" target=*fumi_all_page9 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page9 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left8
 [if exp="f.list_count == 0"]
@@ -721,7 +721,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left8
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left8
 [endif]
 
@@ -755,7 +755,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right8
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right8
 [endif]
 [endif]
@@ -778,9 +778,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page8 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page8 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 90"]
-[glink name="list" target=*fumi_all_page10 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page10 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left9
 [if exp="f.list_count == 0"]
@@ -803,7 +803,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left9
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left9
 [endif]
 
@@ -837,7 +837,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right9
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right9
 [endif]
 [endif]
@@ -860,9 +860,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page9 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page9 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 100"]
-[glink name="list" target=*fumi_all_page11 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page11 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left10
 [if exp="f.list_count == 0"]
@@ -885,7 +885,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left10
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left10
 [endif]
 
@@ -919,7 +919,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right10
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right10
 [endif]
 [endif]
@@ -942,9 +942,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page10 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page10 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 110"]
-[glink name="list" target=*fumi_all_page12 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page12 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left11
 [if exp="f.list_count == 0"]
@@ -967,7 +967,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left11
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left11
 [endif]
 
@@ -1001,7 +1001,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right11
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right11
 [endif]
 [endif]
@@ -1024,9 +1024,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page11 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page11 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 120"]
-[glink name="list" target=*fumi_all_page13 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page13 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left12
 [if exp="f.list_count == 0"]
@@ -1049,7 +1049,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left12
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left12
 [endif]
 
@@ -1083,7 +1083,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right12
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right12
 [endif]
 [endif]
@@ -1106,9 +1106,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page12 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page12 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 130"]
-[glink name="list" target=*fumi_all_page14 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page14 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left13
 [if exp="f.list_count == 0"]
@@ -1131,7 +1131,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left13
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left13
 [endif]
 
@@ -1165,7 +1165,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right13
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right13
 [endif]
 [endif]
@@ -1188,9 +1188,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page13 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page13 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 140"]
-[glink name="list" target=*fumi_all_page15 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page15 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left14
 [if exp="f.list_count == 0"]
@@ -1213,7 +1213,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left14
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left14
 [endif]
 
@@ -1247,7 +1247,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right14
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right14
 [endif]
 [endif]
@@ -1270,9 +1270,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" target=*fumi_all_page14 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page14 text="←" size=20 width="20" x=20 y=480 color=white]
 [if exp="f.fumi_all_number > 140"]
-;[glink name="list" target=*fumi_all_page16 text="→" size=20 width="20" x=890 y=480 color=white]
+;[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page16 text="→" size=20 width="20" x=890 y=480 color=white]
 [endif]
 *loop_fumi_all_left15
 [if exp="f.list_count == 0"]
@@ -1295,7 +1295,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_left15
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_left15
 [endif]
 
@@ -1329,7 +1329,7 @@
 @jump storage="fumibako_fumi_hyouji.ks"
 *fumi_hyouji_owari_right15
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_all_right15
 [endif]
 [endif]

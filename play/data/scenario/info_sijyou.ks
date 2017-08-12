@@ -12,8 +12,8 @@
 ;◆手紙一覧
 ;↓f.fumi_sijyou_number=これまでに受け取った手紙数。コメントアウトを外して数値を入力すると、テスト的にたくさんの手紙の表示の具合を見ることができます(情報未入力の手紙は空欄になります)
 ;[eval exp="f.fumi_sijyou_number=116"]
-[if exp="f.fumi_sijyou_number>5"]
-			[glink name="list" target=*fumi_sijyou_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+[if exp="f.fumi_sijyou_number > 5"]
+			[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_sijyou_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -40,7 +40,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page1
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -55,9 +55,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page2'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*info_sijyou text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*info_sijyou text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>10"]
-[glink name="list" target=*fumi_sijyou_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_sijyou_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -85,7 +85,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page2
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou2
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -99,9 +99,9 @@
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink name="list" target=*fumi_sijyou_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>15"]
-[glink name="list" target=*fumi_sijyou_page4 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page4 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 10"]
@@ -133,7 +133,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page3
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou3
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -147,9 +147,9 @@
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink name="list" target=*fumi_sijyou_page3 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page3 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>20"]
-[glink name="list" target=*fumi_sijyou_page5 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page5 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 15"]
@@ -178,7 +178,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page4
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou4
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -192,9 +192,9 @@
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink name="list" target=*fumi_sijyou_page4 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page4 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>25"]
-[glink name="list" target=*fumi_sijyou_page6 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page6 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 20"]
@@ -223,7 +223,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page5
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou5
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -236,9 +236,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page6'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page5 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page5 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>30"]
-[glink name="list" target=*fumi_sijyou_page7 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page7 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 25"]
@@ -266,7 +266,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page6
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou6
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -279,9 +279,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page7'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page6 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page6 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>35"]
-[glink name="list" target=*fumi_sijyou_page8 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page8 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 30"]
@@ -309,7 +309,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page7
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou7
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -322,9 +322,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page8'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page7 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page7 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>40"]
-[glink name="list" target=*fumi_sijyou_page9 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page9 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 35"]
@@ -352,7 +352,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page8
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou8
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -365,9 +365,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page9'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page8 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page8 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>45"]
-[glink name="list" target=*fumi_sijyou_page10 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page10 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 40"]
@@ -395,7 +395,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page9
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou9
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -408,9 +408,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page10'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page9 text="←" size=20 width="20" x=510 y=480 color=white]
-[if exp="f.fumi_sijyou_number>50"]
-[glink name="list" target=*fumi_sijyou_page11 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page9 text="←" size=20 width="20" x=510 y=480 color=white]
+[if exp="f.fumi_sijyou_number > 50"]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page11 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 45"]
@@ -438,7 +438,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page10
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou10
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -451,9 +451,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page11'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page10 text="←" size=20 width="20" x=510 y=480 color=white]
-[if exp="f.fumi_sijyou_number>55"]
-[glink name="list" target=*fumi_sijyou_page12 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page10 text="←" size=20 width="20" x=510 y=480 color=white]
+[if exp="f.fumi_sijyou_number > 55"]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page12 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 50"]
@@ -481,7 +481,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page11
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou11
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -494,9 +494,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page12'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page11 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page11 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>60"]
-[glink name="list" target=*fumi_sijyou_page13 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page13 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 55"]
@@ -524,7 +524,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page12
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou12
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -538,9 +538,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page13'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page12 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page12 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>65"]
-[glink name="list" target=*fumi_sijyou_page14 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page14 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 60"]
@@ -568,7 +568,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page13
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou13
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -582,9 +582,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page14'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page13 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page13 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>70"]
-[glink name="list" target=*fumi_sijyou_page15 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page15 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 65"]
@@ -612,7 +612,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page14
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou14
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -626,9 +626,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page15'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page14 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page14 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>75"]
-[glink name="list" target=*fumi_sijyou_page16 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page16 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 70"]
@@ -656,7 +656,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page15
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou15
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -670,9 +670,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page16'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page15 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page15 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>80"]
-[glink name="list" target=*fumi_sijyou_page17 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page17 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 75"]
@@ -700,7 +700,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page16
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou16
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -714,9 +714,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page17'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page16 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page16 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>85"]
-[glink name="list" target=*fumi_sijyou_page18 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page18 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 80"]
@@ -744,7 +744,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page17
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou17
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -757,9 +757,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page18'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page17 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page17 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>90"]
-[glink name="list" target=*fumi_sijyou_page19 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page19 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 85"]
@@ -787,7 +787,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page18
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou18
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -800,9 +800,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page19'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page18 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page18 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>95"]
-[glink name="list" target=*fumi_sijyou_page20 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page20 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 90"]
@@ -830,7 +830,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page19
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou19
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -843,9 +843,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page20'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page19 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page19 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>100"]
-[glink name="list" target=*fumi_sijyou_page21 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page21 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 95"]
@@ -873,7 +873,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page20
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou20
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -886,9 +886,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page21'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page20 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page20 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>105"]
-[glink name="list" target=*fumi_sijyou_page22 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page22 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 100"]
@@ -916,7 +916,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page21
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou21
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -929,9 +929,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page22'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page21 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page21 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>110"]
-[glink name="list" target=*fumi_sijyou_page23 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page23 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 105"]
@@ -959,7 +959,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page22
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou22
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -972,9 +972,9 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page23'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page22 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page22 text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_sijyou_number>115"]
-[glink name="list" target=*fumi_sijyou_page24 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page24 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 110"]
@@ -1002,7 +1002,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page23
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou23
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -1015,10 +1015,10 @@
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page24'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" target=*fumi_sijyou_page23 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page23 text="←" size=20 width="20" x=510 y=480 color=white]
 ;↓もし120通を超えるなら使用予定
 ;[if exp="f.fumi_sijyou_number>120"]
-;[glink name="list" target=*fumi_sijyou_page25 text="→" size=20 width="20" x=855 y=480 color=white]
+;[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page25 text="→" size=20 width="20" x=855 y=480 color=white]
 ;[endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 115"]
@@ -1046,7 +1046,7 @@
 @jump storage="info_fumi_hyouji_sijyou.ks"
 *fumi_hyouji_owari_sijyou_page24
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_sijyou24
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"

@@ -11,8 +11,8 @@
 
 ;◆手紙一覧
 ;[eval exp="f.fumi_hujieda_number=13"]
-[if exp="f.fumi_hujieda_number>5"]
-			[glink name="list" target=*fumi_hujieda_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+[if exp="f.fumi_hujieda_number > 5"]
+			[glink name="list" storage="info_hujieda.ks" target=*fumi_hujieda_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_hujieda_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -40,7 +40,7 @@
 @jump storage="info_fumi_hyouji_hujieda.ks"
 *fumi_hyouji_owari_hujieda_page1
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_hujieda
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -53,9 +53,9 @@
 [call target=*info_hujieda_hyouji]
 
 ;1f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
-[glink name="list" target=*info_hujieda text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_hujieda.ks" target=*info_hujieda text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_hujieda_number>10"]
-[glink name="list" target=*fumi_hujieda_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_hujieda.ks" target=*fumi_hujieda_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_hujieda_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -86,7 +86,7 @@
 @jump storage="info_fumi_hyouji_hujieda.ks"
 *fumi_hyouji_owari_hujieda_page2
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_hujieda2
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -99,7 +99,7 @@
 [call target=*info_hujieda_hyouji]
 
 ;1f.fumi_hujieda_number=[emb exp ="f.fumi_hujieda_number"][r]
-[glink name="list" target=*fumi_hujieda_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_hujieda.ks" target=*fumi_hujieda_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 
 [eval exp="f.list_count = f.fumi_hujieda_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -132,7 +132,7 @@
 @jump storage="info_fumi_hyouji_hujieda.ks"
 *fumi_hyouji_owari_hujieda_page3
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_hujieda3
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"

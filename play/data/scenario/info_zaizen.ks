@@ -11,8 +11,8 @@
 
 ;◆手紙一覧
 ;[eval exp="f.fumi_zaizen_number=13"]
-[if exp="f.fumi_zaizen_number>5"]
-			[glink name="list" target=*fumi_zaizen_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+[if exp="f.fumi_zaizen_number > 5"]
+			[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_zaizen_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -39,7 +39,7 @@
 @jump storage="info_fumi_hyouji_zaizen.ks"
 *fumi_hyouji_owari_zaizen_page1
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_zaizen
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -52,9 +52,9 @@
 [call target=*info_zaizen_hyouji]
 
 ;1f.fumi_zaizen_number=[emb exp ="f.fumi_zaizen_number"][r]
-[glink name="list" target=*info_zaizen text="←" size=20 width="20" x=510 y=480 color=white]
-[if exp="f.fumi_zaizen_number>10"]
-[glink name="list" target=*fumi_zaizen_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_zaizen.ks" target=*info_zaizen text="←" size=20 width="20" x=510 y=480 color=white]
+[if exp="f.fumi_zaizen_number > 10"]
+[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_zaizen_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -85,7 +85,7 @@
 @jump storage="info_fumi_hyouji_zaizen.ks"
 *fumi_hyouji_owari_zaizen_page2
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_zaizen2
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -98,7 +98,7 @@
 [call target=*info_zaizen_hyouji]
 
 ;1f.fumi_zaizen_number=[emb exp ="f.fumi_zaizen_number"][r]
-[glink name="list" target=*fumi_zaizen_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 
 [eval exp="f.list_count = f.fumi_zaizen_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -129,7 +129,7 @@
 @jump storage="info_fumi_hyouji_zaizen.ks"
 *fumi_hyouji_owari_zaizen_page3
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_zaizen3
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -175,16 +175,16 @@
 [if exp="f.hujieda_fumi_start==1"]
 	[glink name="list" storage="info_hujieda.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
 [endif]
-[if exp="f.para_zaizen_koukando<0"]
+[if exp="f.para_zaizen_koukando < 0"]
 [eval exp="f.para_koukando_x = 270"]
-[elsif exp="f.para_zaizen_koukando<10"]
+[elsif exp="f.para_zaizen_koukando < 10"]
 [eval exp="f.para_koukando_x = 281"]
-[elsif exp="f.para_zaizen_koukando<100"]
+[elsif exp="f.para_zaizen_koukando < 100"]
 [eval exp="f.para_koukando_x = 270"]
 [else]
 [eval exp="f.para_koukando_x = 255"]
 [endif]
-[if exp="f.para_zaizen_koukando<0"]
+[if exp="f.para_zaizen_koukando < 0"]
 [eval exp="f.para_color = 'crimson'"]
 [else]
 [eval exp="f.para_color = 'black'"]

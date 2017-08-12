@@ -11,8 +11,8 @@
 
 ;◆手紙一覧
 ;[eval exp="f.fumi_katuraginomiya_number=13"]
-[if exp="f.fumi_katuraginomiya_number>5"]
-			[glink name="list" target=*fumi_katuraginomiya_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+[if exp="f.fumi_katuraginomiya_number > 5"]
+			[glink name="list" storage="info_katuraginomiya.ks" target=*fumi_katuraginomiya_page2 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_katuraginomiya_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -41,7 +41,7 @@
 @jump storage="info_fumi_hyouji_katuraginomiya.ks"
 *fumi_hyouji_owari_katuraginomiya_page1
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_katuraginomiya
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -54,9 +54,9 @@
 [call target=*info_katuraginomiya_hyouji]
 
 ;1f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
-[glink name="list" target=*info_katuraginomiya text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_katuraginomiya.ks" target=*info_katuraginomiya text="←" size=20 width="20" x=510 y=480 color=white]
 [if exp="f.fumi_katuraginomiya_number>10"]
-[glink name="list" target=*fumi_katuraginomiya_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_katuraginomiya.ks" target=*fumi_katuraginomiya_page3 text="→" size=20 width="20" x=855 y=480 color=white]
 [endif]
 [eval exp="f.list_count = f.fumi_katuraginomiya_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -87,7 +87,7 @@
 @jump storage="info_fumi_hyouji_katuraginomiya.ks"
 *fumi_hyouji_owari_katuraginomiya_page2
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_katuraginomiya2
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
@@ -100,7 +100,7 @@
 [call target=*info_katuraginomiya_hyouji]
 
 ;1f.fumi_katuraginomiya_number=[emb exp ="f.fumi_katuraginomiya_number"][r]
-[glink name="list" target=*fumi_katuraginomiya_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_katuraginomiya.ks" target=*fumi_katuraginomiya_page2 text="←" size=20 width="20" x=510 y=480 color=white]
 
 [eval exp="f.list_count = f.fumi_katuraginomiya_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -131,7 +131,7 @@
 @jump storage="info_fumi_hyouji_katuraginomiya.ks"
 *fumi_hyouji_owari_katuraginomiya_page3
 
-[if exp="f.loop_count>0"]
+[if exp="f.loop_count > 0"]
 	@jump target=*loop_fumi_katuraginomiya3
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
