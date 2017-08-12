@@ -497,10 +497,15 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [四条微笑み]
 [whosay name="四条 華織" color="olivedrab"]
 「もう、そんな必要はないようだね」
-;まだ妹扱い
 [主人公ポーズ通常]
 [主人公目閉じ]
 [p]
+#
+;まだ妹扱い
+四条様は、無邪気な子供の頃と今の私の様子を見比べるかのように[r]
+意地悪に微笑まれた。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（私だって、もう子供のように無邪気ではいられませんわ）[p]
 [whosay name="四条 華織" color="olivedrab"]
 [主人公目を開く]
 「そうだ。　新しい庭が出来たんだ、一緒に見に行こうか」[p]
