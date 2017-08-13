@@ -264,8 +264,6 @@ $('.junbi_girl').remove();
 [主人公照れ]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
-[wait time=10]
 「可愛らしい、守るべき人、だなんて……」[p]
 ;文矢の、友人の妹なので華衣のことで直ぐに断ることもできない。また好意があるので断れない。言うべきか迷う
  [whosay name="華織" color="olivedrab"]
@@ -278,7 +276,7 @@ $('.junbi_girl').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
-「はい？」[p]
+「はい」[p]
 ;自分で解決し、変えようと思う
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
@@ -313,6 +311,8 @@ $('.junbi_girl').remove();
 遠くで見守っていた、互いの付き人達がソワソワし始めた。[p]
 ;2人だけだねのシーンに繋げる
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 「時間が過ぎるのは早いね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
@@ -329,7 +329,7 @@ $('.junbi_girl').remove();
 (次も会えるのだから、我慢しなくては)[p]
 ;========================================================
 [whosay name="華織" color="olivedrab"]
-「[名前]も歩き回って疲れただろう？[r]
+「[名前]も歩き回って疲れただろう？
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -338,7 +338,7 @@ $('.junbi_girl').remove();
 ;遠い場所までいかないよ、という配慮
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
-[sp]まだ少し時間もあることだから、ボートに乗りながらお茶でもしないかい？」
+[sp]まだ少し時間もあることだから、ボートに乗りながらお茶でもしないかい？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
