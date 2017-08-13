@@ -144,13 +144,11 @@ $(".1_fore").empty();
 「そうなのですね。[sp]まだ蕾ですが、[r]
 [sp]銀糸がまばらに縫いこまれたようにキラキラと輝いていますわ！[r]
 [sp]不思議……」[p]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「それにしても、色んな種類の花々があるのですね」
 [主人公目パチ1回]
 [p]
-
 [四条憂い]
 [whosay name="華織" color="olivedrab"]
 「そうだね。　いざという時の為にね」[p]
@@ -266,18 +264,21 @@ $('.junbi_girl').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「可愛らしい、守るべき人、だなんて……」[p]
 ;文矢の、友人の妹なので華衣のことで直ぐに断ることもできない。また好意があるので断れない。言うべきか迷う
+#
+;何か地の文
  [whosay name="華織" color="olivedrab"]
  [chara_mod name="sijyou_mayu" storage="sijyou/mayu_siwa.png" time=0]
 [wait time=10]
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi2.png" time=0]
 [wait time=10]
 「……[名前]、僕には……」[p]
-;実は弟がいて……
+;華織（実は弟がいて……）
+;主人公照れていたため気付かず
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
 「はい」[p]
-;自分で解決し、変えようと思う
+;華織、主人公の幸せな表情をみて、自分で解決し、変えようと思う
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
@@ -290,7 +291,7 @@ $('.junbi_girl').remove();
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
 [p]
-;全ては僕が解決することだ
+;華織（全ては僕が解決することだ）
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公笑顔]
 「それなら、華織様のお好きなところへ連れて行って下さい」[p]
@@ -334,12 +335,11 @@ $('.junbi_girl').remove();
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-(次も会えるのだから、我慢しなくては)
-[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
-[wait time=10]
-[p]
+(次も会えるのだから、我慢しなくては)[p]
 ;========================================================
 [whosay name="華織" color="olivedrab"]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 「[名前]も歩き回って疲れただろう？
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
