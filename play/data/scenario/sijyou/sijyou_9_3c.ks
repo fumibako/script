@@ -116,8 +116,13 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [主人公目閉じ]
+[if exp="f.para_shujinkou_shukujodo > 40"]
 （淑女として、見た目だけで判断せずに本質を知るべきですね。[r]
 [sp]私も、帰ったら詳しく花言葉について調べてみましょう）[p]
+[else]
+（私も、帰ったら詳しく花言葉について調べてみましょう）[p]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公笑顔]
 「あ、こちらのお花も、とても綺麗ですね！」[p]
@@ -267,7 +272,7 @@ $('.junbi_girl').remove();
 #
 ;何か地の文
  [whosay name="華織" color="olivedrab"]
- [chara_mod name="sijyou_mayu" storage="sijyou/mayu_siwa.png" time=0]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_siwa.png" time=0]
 [wait time=10]
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi2.png" time=0]
 [wait time=10]
@@ -275,6 +280,8 @@ $('.junbi_girl').remove();
 ;華織（実は弟がいて……）
 ;主人公照れていたため気付かず
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
 「はい」[p]
@@ -300,7 +307,7 @@ $('.junbi_girl').remove();
 [主人公ほほえみ]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
 [wait time=10]
-「僕の好きな場所か……。  わかったよ、考えておくよ」[p]
+「僕の好きな場所か……。　　わかったよ、考えておくよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様とのお出掛け……[r]
 [sp]きっと素敵な場に連れて行ってくださるに違いないわ。[r]
@@ -349,12 +356,13 @@ $('.junbi_girl').remove();
 ;遠い場所までいかないよ、という配慮
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
-[sp]まだ少し時間もあることだから、ボートに乗りながらお茶でもしないかい？」[p]
+[sp]まだ少し時間もあることだから、[r]
+[sp]ボートに乗りながらお茶でもしないかい？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-「は、はい」[p]
+「はい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様、また気遣ってくれたのですね。[r]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
