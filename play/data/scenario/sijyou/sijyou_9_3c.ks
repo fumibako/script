@@ -274,6 +274,7 @@ $('.junbi_girl').remove();
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi2.png" time=0]
 [wait time=10]
 「……[名前]、僕には……」[p]
+;実は弟がいて……
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
@@ -308,11 +309,11 @@ $('.junbi_girl').remove();
 #
 [主人公通常]
 私が華織様とのデェトに想像を膨らませていると、[r]
-四条家の庭に園遊会の終わりが近いことを告げる鐘が鳴る。[r]
+四条家の庭に園遊会の終わりが近いことを告げる鐘が鳴り、[r]
 遠くで見守っていた、互いの付き人達がソワソワし始めた。[p]
 ;2人だけだねのシーンに繋げる
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「時間が過ぎるのは早いね」
+「時間が過ぎるのは早いね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -333,20 +334,20 @@ $('.junbi_girl').remove();
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-[sp]近くに池があるんだ。
+[sp]近くに池があるんだ。[r]
 ;遠い場所までいかないよ、という配慮
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
-[r]
 [sp]まだ少し時間もあることだから、ボートに乗りながらお茶でもしないかい？」
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 「は、はい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様、気遣ってくれたのですね。[r]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 [sp]……もう少しだけ、華織様と御一緒に――)[p]
 [autosave]
 #
