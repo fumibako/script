@@ -314,7 +314,11 @@ $('.junbi_girl').remove();
 四条家の庭に園遊会の終わりが近いことを告げる鐘が鳴り、[r]
 遠くで見守っていた、互いの付き人達がソワソワし始めた。[p]
 ;2人だけだねのシーンに繋げる
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[whosay name="華織" color="olivedrab"]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
 「時間が過ぎるのは早いね」[p]
@@ -330,7 +334,10 @@ $('.junbi_girl').remove();
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-(次も会えるのだから、我慢しなくては)[p]
+(次も会えるのだから、我慢しなくては)
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+[p]
 ;========================================================
 [whosay name="華織" color="olivedrab"]
 「[名前]も歩き回って疲れただろう？
@@ -349,7 +356,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 「は、はい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様、気遣ってくれたのですね。[r]
+(華織様、また気遣ってくれたのですね。[r]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [sp]……もう少しだけ、華織様と御一緒に――)[p]
