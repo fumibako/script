@@ -32,13 +32,39 @@ $(".1_fore").empty();
 ;○温室をみてまわる 各国の珍しい草木(サボテンなども有り)を見て回る
 ;場面転換
 [主人公通常]
-
 ;【背景】[背景_四条家温室]
 [背景_四条家温室]
 #
-;ナレーター
 "華織様"と私は思い出を語り合いながら、[ruby text=あたた]暖かな温室へと誘った。[p]
-;連れ誘った
+;=================================================================================_
+[if exp="tf.test_gamen == true"]
+テストページからプレイしています。次のシーンまで移動しますか？[r]
+;---------------------------
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+[link target=*jump_ok1]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no1]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=**seen6
+[s]
+*jump_no1
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;=================================================================================_
 [四条目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -81,6 +107,7 @@ $(".1_fore").empty();
 「サボテンには、品種別の花言葉は無いけど、[r]
 [sp]サボテン自体の花言葉は、素敵だと思うよ。[r]
 [sp]『燃える心』『偉大』『暖かい心』『枯れない愛』」[p]
+;四条は見た目で判断していない、主人公は見た目で判断している差
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公笑顔]
 「暖かい心、枯れない愛……素敵ですね」[p]
@@ -89,10 +116,8 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [主人公目閉じ]
-;（淑女として、見た目だけで判断せずに本質を知るべきね)[p]
-（私も、帰ったら詳しく花言葉について調べてみましょう）[p]
-
-
+（淑女として、見た目だけで判断せずに本質を知るべきですね。[r]
+[sp]私も、帰ったら詳しく花言葉について調べてみましょう）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公笑顔]
 「あ、こちらのお花も、とても綺麗ですね！」[p]
@@ -187,7 +212,7 @@ $('.junbi_girl').remove();
 [wait time=1000]
 [layopt layer=13 visible=true]
 ;四条登場
-
+;華織、華衣と華衣婚約との約束に迷う心を隠す戯ける
 [whosay name="華織" color="olivedrab"]
 「[名前]の名前をつけた薔薇を育ててみようかな」[p]
 [四条口開]
@@ -207,9 +232,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [sp]今日は良い天気だから、バラも綺麗に咲いているね。[r]
 [sp][名前]にひとつあげよう」[p]
-;ここに連れてきたのはなんなの？？　適当に甘いシーン作ってください！！
 ;手折る・・比喩的に、女を自分のものにする。
-
 #
 [四条目閉じ]
 華織様は、まだ咲ききれていない純白のばらを一つ[ruby text=た]手[ruby text=お]折ると、[r]
@@ -229,35 +252,77 @@ $('.junbi_girl').remove();
 [主人公伏目パチ1回]
 [p]
 *seen_siro_bara
-;========================================================
-;何しにきたの？ ここにシーンをいれて　ワルツの回収　バザー（未定）で正式に踊ったときの反比例
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「華織様、白い蕾のバラには、どの様な意味があるのでしょう？」[p]
-;白いバラのつぼみ「恋をするには若すぎる」「少女時代」
-;[whosay name="華織" color="olivedrab"]
-;「[名前]のような可愛らしい人のことを示しているのだよ」
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「可愛らしい、だなんて……私は、もう立派な淑女だと……思います」
-;自信なくつぶやいた。適当
-;[whosay name="華織" color="olivedrab"]
-;「そうだね」
-;ワルツ導入シーン地の文　ワルツのステップをおどる
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;（華織様、私に合わせて、ゆっくりとステップを踏まれていますわ）適当
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;「（なにか理由をつけて中止シーン）
-;========================================================
-;何しにきたの？
-[whosay name="華織" color="olivedrab"]
-「[名前]も歩き回って疲れただろう？　そろそろ休もうか」[p]
-;そろそろ疲れただろう　等に変更予定
+;=================================================================================_
+;この時の心情 華織 まだ主人公のことを妹のように守るもの、両者が盲目的な恋  対等である関係を知らない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「は、はい」[p]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
+「華織様、白い蕾のバラには、どの様な意味があるのでしょう？」[p]
+;白いバラのつぼみ「恋をするには若すぎる」「少女時代」
 [whosay name="華織" color="olivedrab"]
-「近くに池があるんだ。　
+「[名前]のような可愛らしい、守るべき人のことを示しているんだよ」
+[主人公照れ]
+[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「可愛らしい、守るべき人、だなんて……」[p]
+;文矢の、友人の妹なので華衣のことで直ぐに断ることもできない。また好意があるので断れない。言うべきか迷う
+ [whosay name="華織" color="olivedrab"]
+ [chara_mod name="sijyou_mayu" storage="sijyou/mayu_siwa.png" time=0]
+[wait time=10]
+「……[名前]、僕は……」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい？」[p]
+;自分で解決し、変えようと思う
+[whosay name="華織" color="olivedrab"]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+「いや、[r]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
+[sp]次に会う時は何処に行こうかなと思ってね」[p]
+;全ては僕が解決することだ
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公笑顔]
+「それなら、華織様のお好きなところへ連れて行って下さい」[p]
+;華織に任せる恋
+[whosay name="華織" color="olivedrab"]
+[主人公微笑み]
+「好きなところか……。  わかったよ、考えておくよ」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織様とのお出掛け……きっと素敵な場に連れて行ってくださるに違いないわ。[r]
+[sp]楽しみです)
+#
+私が華織様とのデェトに想像を膨らませていると、[r]
+四条家の庭に園遊会の終わりが近いことを告げる鐘が鳴り、[r]
+遠くで見守っていた、互いの付き人達がソワソワし始めた。[p]
+;2人だけだねのシーンに繋げる
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「時間が過ぎるのは早いね」
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
+「そうですね……残念です」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
+(次も会えるのだから、我慢しなくては)[p]
+;========================================================
+[whosay name="華織" color="olivedrab"]
+「[名前]も歩き回って疲れただろう？[r]
+[sp]近くに池があるんだ。
+;遠い場所までいかないよ、という配慮
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
-ボートに乗りながらお茶でもしましょう」[p]
+[r]
+[sp]まだ少し時間もあることだから、ボートに乗りながらお茶でもしないかい？」
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「は、はい」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(華織様、気遣ってくれたのですね。
+……もう少しだけ、華織様と御一緒にーー)[p]
 [autosave]
 #
 [主人公退場]
