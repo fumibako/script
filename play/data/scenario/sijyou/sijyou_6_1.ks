@@ -219,6 +219,7 @@ $('.saku1').remove();
 [主人公ふぅ閉]
 （ふぅ。 なんだったのかしら……不思議な夢を見た気がするわ）[p]
 *seen_end
+[eval exp="sf.event_sijyou_event_6_1 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
