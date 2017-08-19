@@ -123,6 +123,7 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [p]
 [freeimage layer = 26]
 [wait time=10]
+[eval exp="sf.event_sijyou_sansaku_9 = 1"]
 [イベントシーン終了]
 ;=====================システムメッセージ===========================================
 [if exp="f.okeiko_gamen == true"]
