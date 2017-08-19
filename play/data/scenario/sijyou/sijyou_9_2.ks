@@ -661,6 +661,7 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 
 *end_rute
 [eval exp="f.sijyou_omiai=1"]
+[eval exp="sf.event_sijyou_9_2 = 1"]
 [stopbgm]
 ;¥¥¥¥¥¥¥¥イベント2ここまで¥¥¥¥¥¥¥¥
 
