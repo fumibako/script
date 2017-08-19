@@ -124,7 +124,7 @@ $('.list').remove();
 [if exp="f.flag_replay == true"]
 @layopt layer=29 visible=true
 [iscript]
-$('.1_fore').remove();
+$('.1_fore').empty();
 [endscript]
 @layopt layer=1 visible=true
 [endif]
