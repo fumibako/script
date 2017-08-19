@@ -77,11 +77,11 @@
 「？  華織様に了承のお手紙を出そうと思います」[p]
 [whosay name=磯野]
 「いえ、それはよろしいのですが……」[p]
-3
+#
 四条家使者から連絡を貰ったであろう磯野が、少しだけ曇った表情をみせる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お父様も、華織様との仲を認めて下さっていますし……[r]
-[sp]何かしら……？）
+[sp]何かしら……？）[p]
 #
 私は手紙をもう一度、読み返し、[r]
 ようやく夢から覚めるかようにハッと我に返った。[p]
@@ -142,7 +142,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「大丈夫ですわ、磯野！[r]
 [sp]いつかは華織様のお仕事の付き添いで、そういった場に[r]
-[sp]出向くかもしれないです」
+[sp]出向くかもしれないです」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ですから、もう少し、お稽古をしておきたいとこでしたの」[p]
 [whosay name=磯野]
@@ -180,14 +180,12 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[freeimage layer = 1]
-[wait time=10]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
 数日後――。[p]
-
+[resetfont]
 @layopt layer=message0 visible=false
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -197,14 +195,14 @@
 @layopt layer=fix visible=true
 ;主人公部屋 昼
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（ここ数日でワルツのステップも覚えました……あとは）
+（ここ数日でワルツのステップも覚えました……あとは）[p]
 [whosay name=磯野]
-「お嬢様、四条様がお迎えにいらっしゃいました」
+「お嬢様、四条様がお迎えにいらっしゃいました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとう。　すぐ向かいます」
+「ありがとう。　すぐ向かいます」[p]
 
 #
-鏡の前で、ばあやが用意した淡い紅を自らの手でさす。
+鏡の前で、ばあやが用意した淡い紅を自らの手でさす。[p]
 #
 鏡の前に映った自身の表情は、普段より、大人の艶(つや)やかな印象と変わった。
 
@@ -215,25 +213,41 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、どこかおかしいところはないかしら？」
 
-磯野からは『もう、気にしなくても良い』と言われたが、今日ばかりは違う。
-より大人になる為の一歩。
-磯野も、それを感じているのか、しっかりと私を見据えた。
+#
+磯野からは『もう、気にしなくても良い』と言われたが、今日ばかりは違う。[p]
+より大人になる為の一歩。[r]
+磯野も、それを感じているのか、しっかりと私を見据えた。[p]
 [whosay name=磯野]
-「はい。　今日のお嬢様は、凛となされて、一段とお綺麗でございます」
+「はい。[r]
+[sp]今日のお嬢様は、凛となされて、一段とお綺麗でございます」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとう磯野。     では、私、行って参ります」
+「ありがとう磯野。  では、私、行って参ります」[p]
 
-[暗転]
+[暗転２]
+[wait time=50]
+@layopt layer=fix visible=false
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+付き人と共に華織様の元へと急ぐ、廊下から玄関へのほんの少しの距離。[p]
 
-付き人と共に華織様の元へと急ぐ、廊下から玄関へのほんの少しの距離。
+近いような遠いような不思議な感覚に眩暈を覚える。[p]
 
-近いような遠いような不思議な感覚に眩暈を覚える。
+騒ぐ胸を押さえ、一歩ずつ前に歩みでた。[p]
 
-騒ぐ胸を押さえ、一歩ずつ前に歩みでた。
-
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[freeimage layer = 29]
+@layopt layer=fix visible=true
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(大丈夫だわ。努力をした分、自信を持っていきましょう)
+(大丈夫だわ。努力をした分、自信を持っていきましょう)[p]
 
 ;シーンの目的 エスコート回収1
 ;シーン流れ お約束 華織、いつもと違う主人公に戸惑う
@@ -244,8 +258,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お待たせしました、華織様」[p]
 #
-緊張と、ときめきの満ち汐の中、
-礼法の先生に教えて頂いた通り、背筋を自然かつ美しく伸ばし、華織様に挨拶をした。[p]
+緊張と、ときめきの満ち汐の中、[r]
+礼法の先生に教えて頂いた通り、背筋を自然かつ美しく伸ばし、[r]
+華織様に挨拶をした。[p]
 [whosay name="華織" color="olivedrab"]
 「……」[p]
 ;驚く
