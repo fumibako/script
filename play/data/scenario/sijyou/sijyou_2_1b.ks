@@ -1018,6 +1018,7 @@ _　たとえ華道に対するお志が高くとも、私が……）[p]
 [主人公退場]
 [四条退場]
 *seen_end
+[eval exp="sf.event_sijyou_2_1 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
