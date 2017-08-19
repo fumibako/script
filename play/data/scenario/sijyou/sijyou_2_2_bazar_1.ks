@@ -83,13 +83,15 @@ $(".1_fore").empty();
 磯野が心配そうな表情で私に尋ねてきた。[p]
 
 [whosay name=磯野]
+[主人公通常]
 「旦那様もお嬢様がお望みなら……と仰っておりましたが[r]
 [sp]如何いたしましょうか？」[p]
 
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 「？[sp]華織様に了承のお手紙を出そうと思います」[p]
 [whosay name=磯野]
+[主人公目通常]
 「いえ、それはよろしいのですが……」[p]
 #
 四条家使者から連絡を貰ったであろう磯野が、少しだけ曇った表情をみせる。[p]
@@ -97,9 +99,12 @@ $(".1_fore").empty();
 （お父様も、華織様との仲を認めて下さっていますし……[r]
 [sp]何かしら……？）[p]
 #
+[主人公目伏]
 私は手紙をもう一度、読み返し、[r]
+[主人公驚]
 ようやく夢から覚めるかようにハッと我に返った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公憂い]
 （そうだわ！　私、ダンスなんて
 [if exp="f.para_shujinkou_j_reihou > 50"]
 ;礼法が高い場合
@@ -112,6 +117,7 @@ $(".1_fore").empty();
 *scene1_1
 ;礼法が高い場合
 [whosay name=磯野]
+[主人公目大]
 「私は、お嬢様でしたら大丈夫だと思いますよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうでしょうか？」[p]
@@ -120,20 +126,24 @@ $(".1_fore").empty();
 #
 ;磯野は目皺をよせて、含み気に微笑む。[p]なくてもいい
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;困り照れ
+[主人公照れ]
 「磯野……」[p]
 [whosay name=磯野]
 「如何いたしましょう」[p]
 ;手配しましょうか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
 「そうですね。[sp]いつかは華織様のお仕事の付き添いで、[r]
 [sp]そういった場に出向くかもしれないですし、[r]
 [sp]もう少しお稽古をしておくべきかもしれないですね」[p]
+[主人公ほほえみ]
 [背景_思い出（花)]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
 （それに昔、憧れていたことが現実になるのだわ）[p]
 ;見合いのシーンのあれ 背景、一瞬、花畑へ。
 [背景_お稽古部屋]
+[主人公通常]
 [else]
 ;--------------------------------------------------
 *scene1_2
@@ -145,10 +155,16 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしましょう）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 （ですが、昔、憧れていたことが現実になるかもしれない……）[p]
 ;背景、見合いの回想シーンの花畑
 [背景_思い出（花)]
 #
+;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
 子供の頃、よく四条家の庭先の花畑で想像していたことを思い出す。[r]
 今となっては、叶うはずがないと、どこかで諦めていたこと。[p]
 [背景_お稽古部屋]
@@ -158,9 +174,14 @@ $(".1_fore").empty();
 [whosay name=磯野]
 「そういえば、その日は丁度、飛鳥家とのご予定を入れようかと……」[p]
 #
+[主人公驚]
 磯野が私の様子を妙に察し、自身の過失にして去ろうとする。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公真剣]
 「大丈夫ですわ、磯野！[r]
+;↓効果：汗 [主人公汗]
+[chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
+[wait time=10]
 [sp]いつかは華織様のお仕事の付き添いで、そういった場に[r]
 [sp]出向くかもしれないです」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -170,6 +191,7 @@ $(".1_fore").empty();
 [sp]今回はお断りしても構わない、とも聞いておりますが……。[r]
 [sp]よろしいのですか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 「心配しないでください。[r]
 [sp]この前、礼法の先生に『[名前]さん、もう少し頑張れそうですね』と[r]
 [sp]褒められたばかりです」[p]
@@ -189,10 +211,11 @@ $(".1_fore").empty();
 [sp]お嬢様の頑張りを応援していらっしゃいますよ。[r]
 [sp]それでは、失礼いたします」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ふぅ]
+[主人公ふう]
 （ふぅ。　立派な淑女になるというのは、大変ですわ）[p]
 ;礼法が低い場合おわり
 [endif]
+#
 ;====================================================
 [wait time=50]
 @layopt layer=fix visible=false
@@ -209,6 +232,7 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[背景_庭"]
 [freeimage layer = 29]
 
 @layopt layer=fix visible=true
@@ -223,14 +247,15 @@ $(".1_fore").empty();
 #
 鏡の前で、ばあやが用意した淡い紅を自らの手でさす。[p]
 #
-鏡の前に映った自身の表情は、普段より、大人の艶(つや)やかな印象と変わった。
+鏡の前に映った自身の表情は、[r]
+普段より、大人の艶(つや)やかな印象と変わった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(これでいいわ)
-
-部屋の障子をあけ、磯野の前に立つ。
+(これでいいわ)[p]
+#
+部屋の障子をあけ、磯野の前に立つ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「磯野、どこかおかしいところはないかしら？」
+「磯野、どこかおかしいところはないかしら？」[p]
 
 #
 磯野からは『もう、気にしなくても良い』と言われたが、今日ばかりは違う。[p]
@@ -238,10 +263,10 @@ $(".1_fore").empty();
 磯野も、それを感じているのか、しっかりと私を見据えた。[p]
 [whosay name=磯野]
 「はい。[r]
-[sp]今日のお嬢様は、凛となされて、一段とお綺麗でございます」[p]
+[sp]今日のお嬢様は、[ruby text=りん]凛となされて、一段とお綺麗でございます」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとう磯野。  では、私、行って参ります」[p]
+「ありがとう磯野。[sp]では、私、行って参ります」[p]
 
 [暗転２]
 [wait time=50]
@@ -252,7 +277,8 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
-付き人と共に華織様の元へと急ぐ、廊下から玄関へのほんの少しの距離。[p]
+付き人と共に華織様の元へと急ぐ、[r]
+廊下から玄関へのほんの少しの距離。[p]
 
 近いような遠いような不思議な感覚に眩暈を覚える。[p]
 
@@ -263,11 +289,13 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[暗転]
 [freeimage layer = 29]
 @layopt layer=fix visible=true
 ;------------------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (大丈夫だわ。努力をした分、自信を持っていきましょう)[p]
+#
 *scene2
 [背景_主人公邸_玄関]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -280,26 +308,30 @@ $(".1_fore").empty();
 「……」[p]
 ;驚く
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
 「どうかなされましたか？」[p]
 ;想像していた華織様の反応とは違って、私は戸惑った。[p](なくてもいい
 [whosay name="華織" color="olivedrab"]
-「失礼しました。
-今日の[名前]さんは、あまりにも僕が知っている可愛らしい[名前]ではなくて……」[p]
+「失礼しました。[sp]今日の[名前]さんは、[r]
+[sp]あまりにも僕が知っている可愛らしい[名前]さんではなくて……」[p]
 [whosay name="華織" color="olivedrab"]
 「とても美しいと感じます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公柔和ほほえみ]
 「ありがとうございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 (努力して良かったわ)[p]
 [whosay name="華織" color="olivedrab"]
-「今日の[名前]さんを僕は忘れないでしょう。
-さあ、車に乗って下さい」[p]
+「今日の[名前]さんを僕は忘れないでしょう。[r]
+[sp]さあ、車に乗って下さい」[p]
 #
 華織様が私の手を取ってエスコートする。[p]
 
 ;お見合いのように手を取っても背を向けてない
 #
-華織様の熱の篭った眼差しには、 お見合いの時とは違って、大人の愛情を感じられた。[p]
+華織様の熱の篭った眼差しには、 お見合いの時とは違って、[r]
+大人の愛情を感じられた。[p]
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
