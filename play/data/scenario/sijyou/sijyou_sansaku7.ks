@@ -1320,6 +1320,7 @@ jumpします。[p]
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
 [fadeoutse tome=1000]
 ;[wait time=50]
+[eval exp="sf.event_sijyou_sansaku_7 = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
