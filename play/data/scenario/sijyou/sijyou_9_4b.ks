@@ -208,6 +208,7 @@
 [endif]
 
 *seen_end
+[eval exp="sf.event_sijyou_9_4 = 1"]
 [fadeoutbgm time=3000]
 ;¥¥¥¥¥¥¥¥イベント5おわり¥¥¥¥¥¥¥¥
 [stopbgm]
