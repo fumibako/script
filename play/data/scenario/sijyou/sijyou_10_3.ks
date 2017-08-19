@@ -373,6 +373,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [暗転１]
 [wait time=10]
 *seen7
+[eval exp="sf.event_sijyou_10_3=1"]
 ;¥¥¥¥¥¥¥¥手紙イベントおわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
