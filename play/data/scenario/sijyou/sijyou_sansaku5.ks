@@ -79,7 +79,7 @@ _　思うの！」
 [endif]
 [p]
 
-
+[eval exp="sf.event_sijyou_sansaku_5 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
