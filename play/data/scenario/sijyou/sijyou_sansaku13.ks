@@ -67,6 +67,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 （……帰りましょうか）[p]
+
+[eval exp="sf.event_sijyou_sansaku_13 = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_machi_seika
