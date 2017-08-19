@@ -110,7 +110,7 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 [glink target="test_sansaku5" text="散策5" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="test_sansaku6" text="散策6" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test_sansaku7" text="散策7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-
+[glink target="test2_2" text="四条バザー" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 
 [glink target="test_sansaku8" text="散策8(華衣)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test_sansaku9" text="散策9" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -119,7 +119,7 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 [glink target="test_sansaku12" text="散策12" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="test_sansaku13" text="散策13" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 
-[glink target="test_page2" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
+[glink target="test_page2" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 [glink target="test_page4" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
@@ -345,6 +345,13 @@ $('.loding_pic1').remove();
 ;問題なし
 @jump storage="sijyou/sijyou_2_1b.ks"
 [s]
+
+*test2_2
+[eval exp="f.okeiko_month = 2"]
+[eval exp="f.okeiko_week = 2"]
+[freeimage layer = 26]
+;問題なし
+@jump storage="sijyou/sijyou_2_2_bazar_1.ks"
 
 *test3_1
 [cm]
