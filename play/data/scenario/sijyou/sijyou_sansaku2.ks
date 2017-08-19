@@ -255,7 +255,8 @@
 (……)
 [主人公眉下げ下]
 [p]
-[eval exp="f.sijyou_sobo=true"]
+[eval exp="f.sijyou_sobo = true"]
+[eval exp="sf.event_sijyou_sansaku_2 = 1"]
 #
 [イベントシーン終了]
 
