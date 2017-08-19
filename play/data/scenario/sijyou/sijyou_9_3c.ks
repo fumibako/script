@@ -475,6 +475,7 @@ $('.junbi_girl').remove();
 ;=================================================================================_
 
 *seen8
+[eval exp="sf.event_sijyou_9_3 = 1"]
 [イベントシーン終了]
 [stopse]
 [if exp="f.okeiko_gamen == true"]
