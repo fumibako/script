@@ -385,7 +385,7 @@ $('.hababi').remove();
 [iscript]
 $('.hababi_2').remove();
 [endscript]
-
+[eval exp="sf.event_sijyou_sansaku_6 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
