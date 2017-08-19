@@ -50,7 +50,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 （……私も、帰りましょうか）[p]
-
+[eval exp="sf.event_sijyou_sansaku_10 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
