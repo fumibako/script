@@ -1,71 +1,97 @@
+*replay_sijyou_2_1
+*start
+*test
+[stopbgm]
+;暗転プリロードサブルーチン ！！！！あとでここを変更↓！！！！
+[call target=*2_1 storage="sijyou/preload_sijyou.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+[cm]
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+[プリロード画面消去]
+;【背景】主人公邸 お稽古部屋
 *scene1
-春も近づく、ある昼下がりのこと――。
-
+春も近づく、ある昼下がりのこと――。[p]
+[wait time=10]
+[背景_お稽古部屋]
+[freeimage layer = 29]
+[wait time=10]
+[イベントシーン構築ボタン無し版]
+[主人公ポーズ通常]
+[主人公通常]
+[メッセージウィンドウ上ボタン表示]
 [whosay name=磯野]
-「お嬢様、四条様からお手紙が届いております」
+「お嬢様、四条様からお手紙が届いております」[p]
 #
-いつもより、硬い表情で磯野が手紙を差し出す。
-不思議に思いつつも、私は手紙を手に取った。
+いつもより、硬い表情で磯野が手紙を差し出す。[r]
+不思議に思いつつも、私は手紙を手に取った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(どうしたのかしら？）
+(どうしたのかしら？）[p]
 
+[手紙四条 fumi_number=]
 向春の候、お元気でいらしたでしょうか？[r]
-
 ここ最近は、数日後に開催される、慈善バザーの設営作業に追われていました。[r]
-
 設営作業といっても、僕の主な仕事は、貴賓を持て成すための国花の飾り付けです。[r]
-
 菊の花で英字を模って自由に花を生けるなど、普段の華道の仕事とは[r]
+違って面白さがありました。[p]
 
-違って面白さがありました。[r]
-
-また、僕が作業していた隣では
-
-ご婦人方が揃って、楽し気に
-
-鞠や簪、風車などの工芸品を数多く出品される準備をしていました。
-
-品揃えもそうですが、ご婦人方の慈善バザーへの意気込みから、開催日には、多くの人で盛り上がるのではないかと感じられました。
-
-ちなみに今年に限り、ダンスパーティも共に行うそうです。
-
+また、僕が作業していた隣では[r]
+ご婦人方が揃って、楽し気に[r]
+鞠や簪、風車などの工芸品を数多く出品される準備をしていました。[r]
+[r]
+品揃えもそうですが、ご婦人方の慈善バザーへの意気込みから、開催日には、[r]
+多くの人で盛り上がるのではないかと感じられました。[r]
+[r]
+ちなみに今年に限り、ダンスパーティも共に行うそうです。[p]
 さて、本題ですが……[r]
-
-もし、[名前]さんがよろしければ、慈善バザーに御一緒できないでしょうか？
-
-僕の個人のお誘いですので、ご無理にとは言いません。
-
-お返事お待ちしております。
-
-                                                            四条　華織
-　;前回より硬い文章ではなくなったので変更
+もし、[名前]さんがよろしければ、慈善バザーに御一緒できないでしょうか？[r]
+僕の個人のお誘いですので、ご無理にとは言いません。[r]
+[r]
+お返事お待ちしております。[r]
+[sp]                                                           四条　華織[p]
+[if exp="f.okeiko_gamen == true"]
+;[eval exp="f.midoku_list_hairetsu[2][1] = 0;"]
+[endif]
+[手紙四条読了 fumi_number=]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「慈善バザー、どういった場所かしら？
-楽しみだわ」
+「慈善バザー、どういった場所かしら？[r]
+[sp]楽しみだわ」
 [主人公ほほえみ][p]
 #
-お誘いを受けるつもりで、喜んでいると、磯野が心配そうな表情で私に尋ねてきた。
+お誘いを受けるつもりで、喜んでいると、[r]
+磯野が心配そうな表情で私に尋ねてきた。[p]
 
 [whosay name=磯野]
-「旦那様もお嬢様がお望みなら……と仰っておりましたが如何いたしましょうか？」
+「旦那様もお嬢様がお望みなら……と仰っておりましたが[r]
+[sp]如何いたしましょうか？」[p]
+
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「？  華織様に了承のお手紙を出そうと思います」
+「？  華織様に了承のお手紙を出そうと思います」[p]
 [whosay name=磯野]
-「いえ、それはよろしいのですが……」
-四条家使者から連絡を貰ったであろう磯野が、少しだけ曇った表情をみせる。
+「いえ、それはよろしいのですが……」[p]
+3
+四条家使者から連絡を貰ったであろう磯野が、少しだけ曇った表情をみせる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(お父様も、華織様との仲を認めて下さっていますし……何かしら……？)
+（お父様も、華織様との仲を認めて下さっていますし……[r]
+[sp]何かしら……？）
 #
-私は手紙をもう一度、読み返し、
-ようやく夢から覚めるかようにハッと我に返った。
+私は手紙をもう一度、読み返し、[r]
+ようやく夢から覚めるかようにハッと我に返った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（そうだわ！　私、ダンスなんて
+（そうだわ！　私、ダンスなんて[r]
 
 ;礼法が少ない場合
-できるか自信がないわ……)
+[sp]できるか自信がないわ……)[p]
 ;礼法が高い場合
-嗜む程度にしか……）
+[sp]嗜む程度にしか……）[p]
 ;
 
 *scene1_1
@@ -75,82 +101,101 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうでしょうか？」[p]
 [whosay name=磯野]
-「はい、"少し"……お稽古されればよいかと」
+「はい、"少し"……お稽古されればよいかと」[p]
 #
 ;磯野は目皺をよせて、含み気に微笑む。[p]なくてもいい
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;困り照れ
-「磯野……」
+「磯野……」[p]
 [whosay name=磯野]
-「如何いたしましょう」;手配しましょうか
+「如何いたしましょう」[p]
+;手配しましょうか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「そうですね。
-いつかは華織様のお仕事の付き添いで、
-そういった場に出向くかもしれないですし、
-もう少しお稽古をしておくべきかもしれないですね」
+「そうですね。[sp]いつかは華織様のお仕事の付き添いで、[r]
+[sp]そういった場に出向くかもしれないですし、[r]
+[sp]もう少しお稽古をしておくべきかもしれないですね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（それに昔、憧れていたことが現実になるのだわ）
+（それに昔、憧れていたことが現実になるのだわ）[p]
 ;見合いのシーンのあれ 背景、一瞬、花畑へ。
 ;--------------------------------------------------
 *scene1_2
 ;礼法が普通の場合？
 [whosay name=磯野]
-「私は、お嬢様でしたら、大丈夫だと思いますが……
-その日は、ご予定を入れましょうか……？」[p]
+「私は、お嬢様でしたら、大丈夫だと思いますが……[r]
+[sp]その日は、ご予定を入れましょうか……？」[p]
 ;やんわりと断るために　自身の過失にしようとする磯野
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（どうしましょう）
+（どうしましょう）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（ですが、昔、憧れていたことが現実になるかもしれない……）
+（ですが、昔、憧れていたことが現実になるかもしれない……）[p]
 ;背景、見合いの回想シーンの花畑
 #
-子供の頃、よく四条家の庭先の花畑で想像していたことを思い出す 。
-今となっては、叶うはずがないと、どこかで諦めていたこと。
+子供の頃、よく四条家の庭先の花畑で想像していたことを思い出す。[r]
+今となっては、叶うはずがないと、どこかで諦めていたこと。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;考え中
-（……）
+（……）[p]
 [whosay name=磯野]
-「そういえば、その日は丁度、飛鳥家とのご予定を入れようかと……」
+「そういえば、その日は丁度、飛鳥家とのご予定を入れようかと……」[p]
 #
 磯野が私の様子を妙に察し、自身の過失にして去ろうとする。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「大丈夫ですわ、磯野！
-いつかは華織様のお仕事の付き添いで、そういった場に
-出向くかもしれないです」
+「大丈夫ですわ、磯野！[r]
+[sp]いつかは華織様のお仕事の付き添いで、そういった場に[r]
+[sp]出向くかもしれないです」
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ですから、もう少し、お稽古をしておきたいとこでしたの」
+「ですから、もう少し、お稽古をしておきたいとこでしたの」[p]
 [whosay name=磯野]
-「……四条家の使いの者から、
-　今回はお断りしても構わない、とも聞いておりますが……。
-　よろしいのですか？」
+「……四条家の使いの者から、[r]
+[sp]今回はお断りしても構わない、とも聞いておりますが……。[r]
+[sp]よろしいのですか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「心配しないでください。
-　この前、礼法の先生に『[名前]さん、もう少し頑張れそうですね』
-　と褒められたばかりです」
+「心配しないでください。[r]
+[sp]この前、礼法の先生に『[名前]さん、もう少し頑張れそうですね』と[r]
+[sp]褒められたばかりです」[p]
 ;褒められていません
 [whosay name=磯野]
-「そうですか。　それでしたら私は先生にご連絡しておきましょう」
+「そうですか。　それでしたら私は先生にご連絡しておきましょう」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとう、磯野」
+[主人公ほほえみ]
+「ありがとう、磯野」[p]
 [if exp="f.para_sijyou_koukanndo < 150"]
 [whosay name=磯野]
-「旦那様も私も、お嬢様の頑張りを応援しています。
-　それでは、失礼いたします」
+「旦那様も私も、お嬢様の頑張りを応援しています。[r]
+[sp]それでは、失礼いたします」[p]
 [else]
 [whosay name=磯野]
-「旦那様も私も、そして、きっと四条様もーー
-　お嬢様の頑張りを応援していらっしゃいますよ。
-　それでは、失礼いたします」
+「旦那様も私も、そして、きっと四条様も ――[r]
+[sp]お嬢様の頑張りを応援していらっしゃいますよ。[r]
+[sp]それでは、失礼いたします」[p]
 [endif]
-主人公にこり
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;主人公ふぅ
-（ふぅ。　立派な淑女になるというのは、大変ですわ）
+[主人公ふぅ]
+（ふぅ。　立派な淑女になるというのは、大変ですわ）[p]
 ;礼法が低い場合おわり
 
-数日後――。
+[wait time=50]
+@layopt layer=fix visible=false
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[freeimage layer = 1]
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+数日後――。[p]
 
-主人公部屋 昼
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[freeimage layer = 29]
+
+@layopt layer=fix visible=true
+;主人公部屋 昼
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ここ数日でワルツのステップも覚えました……あとは）
 [whosay name=磯野]
@@ -197,30 +242,83 @@
 ;------------------------------------------------
 *scene2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「お待たせしました、華織様」
+「お待たせしました、華織様」[p]
 #
 緊張と、ときめきの満ち汐の中、
-礼法の先生に教えて頂いた通り、背筋を自然かつ美しく伸ばし、華織様に挨拶をした。
+礼法の先生に教えて頂いた通り、背筋を自然かつ美しく伸ばし、華織様に挨拶をした。[p]
 [whosay name="華織" color="olivedrab"]
-「……」;驚く
+「……」[p]
+;驚く
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「どうかなされましたか？」
-;想像していた華織様の反応とは違って、私は戸惑った。(なくてもいい
+「どうかなされましたか？」[p]
+;想像していた華織様の反応とは違って、私は戸惑った。[p](なくてもいい
 [whosay name="華織" color="olivedrab"]
 「失礼しました。
-今日の[名前]さんは、あまりにも僕が知っている可愛らしい[名前]ではなくて……」
+今日の[名前]さんは、あまりにも僕が知っている可愛らしい[名前]ではなくて……」[p]
 [whosay name="華織" color="olivedrab"]
-「とても美しいと感じます」
+「とても美しいと感じます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとうございます」
+「ありがとうございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(努力して良かったわ)
+(努力して良かったわ)[p]
 [whosay name="華織" color="olivedrab"]
 「今日の[名前]さんを僕は忘れないでしょう。
-さあ、車に乗って下さい」
+さあ、車に乗って下さい」[p]
 #
-華織様が私の手を取ってエスコートする。
+華織様が私の手を取ってエスコートする。[p]
 
 ;お見合いのように手を取っても背を向けてない
 #
-華織様の熱の篭った眼差しには、 お見合いの時とは違って、大人の愛情を感じられた。
+華織様の熱の篭った眼差しには、 お見合いの時とは違って、大人の愛情を感じられた。[p]
+[イベントシーン終了]
+@jump storage="test_sijyou.ks"
+[s]
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+[return]
