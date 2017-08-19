@@ -71,7 +71,7 @@
 [主人公ポーズ指]
 [主人公目パチ1回]
 (賑やかですわね)[p]
-
+[eval exp="sf.event_sijyou_sansaku_11 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
