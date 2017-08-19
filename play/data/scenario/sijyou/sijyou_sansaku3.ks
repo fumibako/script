@@ -187,7 +187,7 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 ;爽やかな感じになると良い
 ;現状、去り際かっこいい感じな表情
 ;てにをは～が足りてない
-
+[eval exp="sf.event_sijyou_sansaku_3 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
