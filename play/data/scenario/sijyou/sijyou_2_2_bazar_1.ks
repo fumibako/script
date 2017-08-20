@@ -126,7 +126,7 @@ $(".1_fore").empty();
 #
 ;磯野は目皺をよせて、含み気に微笑む。[p]なくてもいい
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公照れ]
+[主人公困り照れ]
 「磯野……」[p]
 [whosay name=磯野]
 「如何いたしましょう」[p]
@@ -211,7 +211,7 @@ $(".1_fore").empty();
 [sp]お嬢様の頑張りを応援していらっしゃいますよ。[r]
 [sp]それでは、失礼いたします」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ふう]
+[主人公ふぅ閉]
 （ふぅ。　立派な淑女になるというのは、大変ですわ）[p]
 ;礼法が低い場合おわり
 [endif]
@@ -233,28 +233,56 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [背景_庭"]
+;↓眉：強気 [主人公眉強気]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
+[wait time=10]
+;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [freeimage layer = 29]
-
 @layopt layer=fix visible=true
 ;主人公部屋 昼
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（ここ数日でワルツのステップも覚えました……あとは）[p]
+（ここ数日でワルツのステップも覚えました……
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+あとは）[p]
 [whosay name=磯野]
+[主人公驚]
 「お嬢様、四条様がお迎えにいらっしゃいました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
 「ありがとう。　すぐ向かいます」[p]
 
 #
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 鏡の前で、ばあやが用意した淡い紅を自らの手でさす。[p]
 #
 鏡の前に映った自身の表情は、[r]
 普段より、大人の艶(つや)やかな印象と変わった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(これでいいわ)[p]
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+(これでいいわ)
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[p]
 #
 部屋の障子をあけ、磯野の前に立つ。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
 「磯野、どこかおかしいところはないかしら？」[p]
 
 #
@@ -263,9 +291,16 @@ $(".1_fore").empty();
 磯野も、それを感じているのか、しっかりと私を見据えた。[p]
 [whosay name=磯野]
 「はい。[r]
+;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
 [sp]今日のお嬢様は、[ruby text=りん]凛となされて、一段とお綺麗でございます」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
 「ありがとう磯野。[sp]では、私、行って参ります」[p]
 
 [暗転２]
@@ -290,6 +325,8 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [暗転]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 [freeimage layer = 29]
 @layopt layer=fix visible=true
 ;------------------------------------------------
@@ -299,6 +336,8 @@ $(".1_fore").empty();
 *scene2
 [背景_主人公邸_玄関]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
 「お待たせしました、華織様」[p]
 #
 緊張と、ときめきの満ち汐の中、[r]
