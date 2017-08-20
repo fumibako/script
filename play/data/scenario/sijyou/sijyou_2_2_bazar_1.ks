@@ -2,6 +2,7 @@
 *start
 *test
 [iscript]
+f.para_shujinkou_j_reihou=100;
 $(".1_fore").empty();
 [endscript]
 [stopbgm]
