@@ -2,7 +2,6 @@
 *start
 *test
 [iscript]
-f.para_shujinkou_j_reihou=100;
 $(".1_fore").empty();
 [endscript]
 [stopbgm]
@@ -40,6 +39,7 @@ $(".1_fore").empty();
 いつもより、硬い表情で磯野が手紙を差し出す。[r]
 不思議に思いつつも、私は手紙を手に取った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目パチ1回]
 (どうしたのかしら？）[p]
 
 [手紙四条 fumi_number=]
