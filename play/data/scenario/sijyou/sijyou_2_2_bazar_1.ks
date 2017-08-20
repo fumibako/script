@@ -35,6 +35,11 @@ $(".1_fore").empty();
 ;====================================================
 [whosay name=磯野]
 「お嬢様、四条様からお手紙が届いております」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
+[playbgm storage="isono_miyabi.ogg" loop=true]
+[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
+[endif]
 #
 いつもより、硬い表情で磯野が手紙を差し出す。[r]
 不思議に思いつつも、私は手紙を手に取った。[p]
@@ -48,10 +53,10 @@ $(".1_fore").empty();
 [r]
 ここ最近は、数日後に開催される、慈善バザーの設営作業に[r]
 追われていました。[r]
-設営作業といっても、僕の主な仕事は、貴賓を持て成すための国花の[r]
-飾り付けです。[r]
-菊の花で英字を模って自由に花を生けるなど、普段の華道の仕事とは[r]
-違って面白さがありました。[p]
+設営作業といっても、僕の主な仕事は、貴賓を持て成すための[r]
+国花の飾り付けです。[r]
+菊の花で英字を模って自由に花を生けるなど、[r]
+普段の華道の仕事とは違って面白さがありました。[p]
 
 また、僕が作業していた隣では[r]
 ご婦人方が揃って、楽し気に鞠や簪、風車などの工芸品を[r]
@@ -95,7 +100,8 @@ $(".1_fore").empty();
 [主人公目通常]
 「いえ、それはよろしいのですが……」[p]
 #
-四条家使者から連絡を貰ったであろう磯野が、少しだけ曇った表情をみせる。[p]
+四条家使者から連絡を貰ったであろう磯野が、[r]
+少しだけ曇った表情をみせる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お父様も、華織様との仲を認めて下さっていますし……[r]
 [sp]何かしら……？）[p]
@@ -224,6 +230,7 @@ $(".1_fore").empty();
 ;礼法が低い場合おわり
 [endif]
 #
+[fadeoutbgm time=3000]
 ;====================================================
 [wait time=50]
 @layopt layer=fix visible=false
@@ -234,13 +241,23 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
+;====================================================
 数日後――。[p]
+;====================================================
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+;====================================================
 [resetfont]
 @layopt layer=message0 visible=false
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+;====================================================
 [背景_庭"]
+;====================================================
 ;↓眉：強気 [主人公眉強気]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
@@ -256,6 +273,7 @@ $(".1_fore").empty();
 [freeimage layer = 29]
 @layopt layer=fix visible=true
 ;主人公部屋 昼
+;====================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ここ数日でワルツのステップも覚えました……
 ;↓眉：通常 [主人公眉通常]
