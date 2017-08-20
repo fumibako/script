@@ -370,6 +370,9 @@ $(".1_fore").empty();
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 「ありがとうございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
@@ -381,6 +384,17 @@ $(".1_fore").empty();
 華織様が私の手を取ってエスコートする。[p]
 
 ;お見合いのように手を取っても背を向けてない
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+
 #
 華織様の熱の篭った眼差しには、 お見合いの時とは違って、[r]
 大人の愛情を感じられた。[p]
