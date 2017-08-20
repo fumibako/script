@@ -137,7 +137,12 @@ $(".1_fore").empty();
 「そうですね。[sp]いつかは華織様のお仕事の付き添いで、[r]
 [sp]そういった場に出向くかもしれないですし、[r]
 [sp]もう少しお稽古をしておくべきかもしれないですね」[p]
-[主人公ほほえみ]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;↓目：伏目 [主人公目伏]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 [背景_思い出（花)]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
@@ -271,8 +276,11 @@ $(".1_fore").empty();
 [wait time=10]
 鏡の前で、ばあやが用意した淡い紅を自らの手でさす。[p]
 #
+;↓目：横目 [主人公横目]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
 鏡の前に映った自身の表情は、[r]
-普段より、大人の艶(つや)やかな印象と変わった。[p]
+普段より、大人の[ruby text=つや]艶やかな印象と変わった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：通常 [主人公目通常]
@@ -301,6 +309,10 @@ $(".1_fore").empty();
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+
 [sp]今日のお嬢様は、[ruby text=りん]凛となされて、一段とお綺麗でございます」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -330,6 +342,9 @@ $(".1_fore").empty();
 [current layer="message0"]
 [暗転]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+;↓効果：無し(通常) [主人公効果消]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [freeimage layer = 29]
 @layopt layer=fix visible=true
