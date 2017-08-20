@@ -107,13 +107,14 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 （そうだわ！　私、ダンスなんて
+;--------------------------------------------------
 [if exp="f.para_shujinkou_j_reihou > 50"]
 ;礼法が高い場合
 [sp]嗜む程度にしか……）[p]
 [else]
 できるか自信がないわ……)[p]
 [endif]
-
+;--------------------------------------------------
 [if exp="f.para_shujinkou_j_reihou > 50"]
 *scene1_1
 ;礼法が高い場合
@@ -208,7 +209,7 @@ $(".1_fore").empty();
 [主人公ほほえみ]
 「ありがとう、磯野」[p]
 ;--------------------------------------------------
-[elsif exp="f.para_sijyou_koukanndo > 150 "]
+[if exp="f.para_sijyou_koukanndo > 150 "]
 [whosay name=磯野]
 「旦那様も私も、お嬢様の頑張りを応援しています。[r]
 [sp]それでは、失礼いたします」[p]
