@@ -1,9 +1,27 @@
-scene3
+*replay_sijyou_2_2
+*start
+*test
+[iscript]
+$(".1_fore").empty();
+[endscript]
+[stopbgm]
+;暗転プリロードサブルーチン ！！！！あとでここを変更↓！！！！
+[call target=*2_1 storage="sijyou/preload_sijyou.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+;====================================================
+[cm]
+[背景_チャリティ会場階段]
+[イベントシーン構築ボタン無し版]
+[主人公ポーズ通常]
+[主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;====================================================
+*scene3
 ;場面転換
+#
 華族会館  バザー会場の玄関ホール[p]
-
-肌寒い初春の日だというのに会場の華やかな雰囲気に熱気を感じる。[p]
-
+肌寒い初春の日だというのに会場の華やかな雰囲気に熱気を感じる。[r]
 緑葉と花で飾られた玄関ホールには多くの華族が夜会服を纏い、談笑に勤しんでいた。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -38,11 +56,13 @@ scene3
 「まずはバザーを見て回りましょうか。[r]
 [sp]もしかしたら僕の親戚も何か出店しているかも[r]
 [sp]しれません」[p]
+#
 ;------------------------------------------------
 ;場面転換 
+[背景_チャリティ会場出店]
 バザー売店[p]
 ;------------------------------------------------
-scene4
+*scene4
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様の手紙で書かれていた通り、色々な手工芸品が並んでるわ)[p]
 #
@@ -115,7 +135,8 @@ scene4
 「いえ、私も華織様にプレゼントを贈りたいと思いまして」[p]
 バザー 好感度低い場合
 ;------------------------------------------------
-scene5 好感度高い場合
+*scene5 
+;好感度高い場合
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「迷惑でしょうか……？」
 [whosay name="華織" color="olivedrab"]
@@ -131,10 +152,25 @@ scene5 好感度高い場合
 ;共通
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (きっと思い出に残る贈り物になるに違いないわ)[p]
+#
 ;------------------------------------------------
 ;全画面表示
-しばしの間、お互いに離れ、
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+しばしの間、お互いに離れ、[r]
 私は付き人についてもらいながらも、華織様への贈り物を探し始めた。[p]
+[resetfont]
+@layopt layer=message0 visible=false
+
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
 
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
