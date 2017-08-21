@@ -87,7 +87,7 @@ $(".1_fore").empty();
 #
 お誘いを受けるつもりで、喜んでいると、[r]
 磯野が心配そうな表情で私に尋ねてきた。[p]
-
+[autosave]
 [whosay name=磯野]
 [主人公通常]
 「旦那様もお嬢様がお望みなら……と仰っておりましたが[r]
@@ -166,6 +166,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 「ということは、私は振袖で参加する方が良いのですね……」[p]
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （和装でのダンスは、未だ形式として残っているけれど、[r]
 [sp]学んだことはないわ。[r]
@@ -178,6 +179,7 @@ $(".1_fore").empty();
 [whosay name=磯野]
 「私は、お嬢様でしたら、大丈夫だと思いますが……[r]
 [sp]その日は、ご予定を入れましょうか……？」[p]
+[autosave]
 ;やんわりと断るために　自身の過失にしようとする磯野
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしましょう）[p]
@@ -265,6 +267,7 @@ $(".1_fore").empty();
 「旦那様も私も、そして、きっと四条様も ――[r]
 [sp]お嬢様の頑張りを応援していらっしゃいますよ。[r]
 [sp]それでは、失礼いたします」[p]
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 （ふぅ。　立派な淑女になるというのは、大変ですわ）[p]
@@ -327,6 +330,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 あとは）[p]
+[autosave]
 [whosay name=磯野]
 [主人公驚]
 「お嬢様、四条様がお迎えにいらっしゃいました」[p]
@@ -415,6 +419,7 @@ $(".1_fore").empty();
 ;------------------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (大丈夫だわ。努力をした分、自信を持っていきましょう)[p]
+[autosave]
 #
 *scene2
 [背景_主人公邸_玄関]
@@ -462,7 +467,7 @@ $(".1_fore").empty();
 [sp]さあ、車に乗って下さい」[p]
 #
 華織様が私の手を取ってエスコートする。[p]
-
+[autosave]
 ;お見合いのように手を取っても背を向けてない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
@@ -474,7 +479,7 @@ $(".1_fore").empty();
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-
+[autosave]
 #
 華織様の熱の篭った眼差しには、 お見合いの時とは違って、[r]
 大人の愛情を感じられた。[p]
