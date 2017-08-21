@@ -479,6 +479,8 @@ $(".1_fore").empty();
 華織様の熱の篭った眼差しには、 お見合いの時とは違って、[r]
 大人の愛情を感じられた。[p]
 [イベントシーン終了]
+@jump storage="sijyou_2_2_bazar_2.ks" target=*scene3
+
 @jump storage="test_sijyou.ks"
 [s]
 *window_close
