@@ -64,8 +64,11 @@ $(".1_fore").empty();
 「そうなのですね」[p]
 [whosay name="華織" color="olivedrab"]
 「僕の家族も知見を得る為に留学していましたし、[r]
+[主人公目パチ1回]
+[主人公ポーズ指]
 [sp]協力できて皆が楽しめるなら良い催しだと思います」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ポーズ通常]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
@@ -90,6 +93,9 @@ $(".1_fore").empty();
 ;------------------------------------------------
 ;場面転換 
 [背景_チャリティ会場出店]
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 [ruby text=チャリ]慈[ruby text=ティー]善バザー売店[p]
 ;------------------------------------------------
 *scene4
