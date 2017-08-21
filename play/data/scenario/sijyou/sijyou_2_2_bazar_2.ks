@@ -325,10 +325,17 @@ $(".1_fore").empty();
 「それはとても良い案ですね。[r]
 [sp][名前]さんが良ければ、僕は嬉しい試みだと思います」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：下がり眉下位置 [主人公眉下げ下]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
+[wait time=10]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
-「勿論です。 華織様が何を選んで下さるか楽しみです」[p]
+「勿論です。 
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+華織様が何を選んで下さるか楽しみです」[p]
  [whosay name="華織" color="olivedrab"]
 「[名前]さんの期待に添えるように[r]
 [sp]素敵な贈り物を選んでみせましょう」[p]
@@ -352,6 +359,12 @@ $(".1_fore").empty();
 ;------------------------------------------------
 *scene5
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 (きっと思い出に残る贈り物になるに違いないわ)[p]
 #
 ;------------------------------------------------
