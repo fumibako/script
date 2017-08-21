@@ -1,4 +1,22 @@
-;------------------------------------------------
+*replay_sijyou_2_2
+*start
+*test
+[iscript]
+$(".1_fore").empty();
+[endscript]
+[stopbgm]
+;暗転プリロードサブルーチン
+[call target=*2_2 storage="sijyou/preload_sijyou.ks"]
+[call target=*start storage="macro_tati_sijyou.ks"]
+;====================================================
+[cm]
+[イベントシーン構築ボタン無し版]
+[主人公ポーズ通常]
+[主人公通常]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+;====================================================
+@layopt layer=fix visible=true
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様は何がお好みでしょうか？)[p]
 [whosay name=女性]
@@ -43,15 +61,15 @@
 [whosay name=四条幸代]
 「今日は華織様とご一緒に来られたのでしょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい。 何かご用件がありましたか？」[p]
+「はい。 何かご用件がございましたか？」[p]
 [whosay name=四条幸代]
 「いえ、その、華衣様がお元気でいらっしゃるのか気になっていたので……」[p]
 #
-(名前)様は、どうしてか潤んだ目をした後、俯かれた。[p]
+幸代様は、どうしてか潤んだ目をした後、俯かれた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (どうしたのかしら？)[p]
 #
-私が訝しでいると、 (名前)様は先ほどと打って変わって満点の笑顔でハキハキと話された[p]。
+私が訝しでいると、 幸代様は先ほどと打って変わって満点の笑顔でハキハキと話された[p]。
 [whosay name=四条幸代]
 「失礼いたしました。[r]
 [sp]実は、昔から華衣様には、私の弟達の相手をして下さっていて、[r]
@@ -62,16 +80,16 @@
 「ですが、華衣様は、いらっしゃられないようですので、[r]
 [sp]また今度にいたします……」[p]
 #
-(名前)様の快活な笑みが、花が綻ぶような慈愛の笑みに変わる。[p]
+幸代様の快活な笑みが、花が綻ぶような慈愛の笑みに変わる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(もしかして、 (名前)様は華衣様のことが気になっているとか？……考えすぎかしら？)
+(もしかして、 (名前)様は華衣様のことが気になっているとか？……考えすぎかしら？)[p]
 #
-私は(名前)様の表情の変化が気になりつつも、平静を装って返事をした。
+私は(名前)様の表情の変化が気になりつつも、平静を装って返事をした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「もし宜しければ華織様にお伝えしましょうか？」
+「もし宜しければ華織様にお伝えしましょうか？」[p]
 [whosay name=四条幸代]
 「いえ、[r]
-[sp]例え、上手く伝えられなくても私から直接、[r]
+[sp]たとえ上手く伝えられなくても、私から直接、[r]
 [sp]お伝えしたいので……」[p]
 「[名字]様、お気遣いありがとうございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -94,7 +112,7 @@
 [whosay name=四条幸代]
 「こちらは、如何でしょうか？ 」
 #
-勧められた陳列棚には、押し花が飾られた栞や便箋が数種類並んでいた。
+勧められた陳列棚には、押し花が飾られた栞や便箋が数種類並んでいた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様はお花を好まれますし、もし使って頂けたら…と考えると嬉しいですね)[p]
 #
@@ -103,9 +121,73 @@
 [link target=siori_prezent]栞を選んだ。[endlink][r][r]
 [link target=binsen_prezent]便箋を選んだ。[endlink][r]
 [s]
+*siori_prezent
+[eval exp="f.present_name = '栞'"]
+@jump target=cmon_prezent
+
+*binsen_prezent
+[eval exp="f.present_name = '便箋'"]
+;@jump target=cmon_prezent
+
+
+*cmon_prezent
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「良いですね。 こちらを頂きます」[p]
 [whosay name=四条親戚]
 「ありがとうございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様は何を選ばれたのでしょうか？)[p]
+
+
+;------------------------------------------------
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
