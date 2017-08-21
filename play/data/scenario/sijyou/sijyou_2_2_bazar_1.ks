@@ -5,8 +5,8 @@
 $(".1_fore").empty();
 [endscript]
 [stopbgm]
-;暗転プリロードサブルーチン ！！！！あとでここを変更↓！！！！
-[call target=*2_1 storage="sijyou/preload_sijyou.ks"]
+;暗転プリロードサブルーチン
+[call target=*2_2 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;====================================================
 [cm]
