@@ -121,6 +121,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……そういえば、前にも華織様とお買い物に来ましたね)[p]
 #
+[暗転]
 ;セピア
 [背景セピア化]
 [背景_四条_商店]
@@ -146,7 +147,7 @@ $(".1_fore").empty();
 ;------------------------------------------------
 ;バザー 好感度低い場合
 ;しんみりしすぎでは？ 好感度低い場合
-scene4_1
+*scene4_1
 [whosay name="華織" color="olivedrab"]
 「ありがとう[名前]さん。[r]
 [sp]ですが僕は[名前]さんから、既に沢山の幸せを頂いてますよ」[p]
@@ -220,7 +221,7 @@ scene4_1
 *good_seen
 ;好感度高い場合
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「迷惑でしょうか……？」
+「迷惑でしょうか……？」[p]
 [whosay name="華織" color="olivedrab"]
 「いえ、嬉しいですよ！」[p]
 「そうですね……[r]
@@ -247,17 +248,25 @@ scene4_1
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
+;------------------------------------------------
 しばしの間、お互いに離れ、[r]
 私は付き人についてもらいながらも、華織様への贈り物を探し始めた。[p]
+;------------------------------------------------
 [resetfont]
 @layopt layer=message0 visible=false
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 @layopt layer=message0 visible=true
-@layopt layer=fix visible=true
+;------------------------------------------------
 [イベントシーン終了]
+[if exp="f.okeiko_gamen == true"]
+
+
+[else]
+@layopt layer=fix visible=true
 @jump storage="test_sijyou.ks"
+[endif]
 [s]
 
 
