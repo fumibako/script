@@ -114,17 +114,19 @@ $(".1_fore").empty();
 (いやだわ。 せっかく今日は大人の女性として華織とデェトに来たのに)[p]
 ;主人公ふぅ から困り照れ
 [whosay name="華織" color="olivedrab"]
-「そういった[名前]さんも安心できて好きですよ。[p]
-ああ、こちらのカメオも美しいですね」
+「そういった[名前]さんも安心できて好きですよ。[r]
+[sp]ああ、こちらのカメオも美しいですね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「本当ですね。 青みがかった白が上品な風合いです」[p]
 ;醸し出しています
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (……そういえば、前にも華織様とお買い物に来ましたね)[p]
 #
+[背景_四条_商店]
 ふいに銀座でデェトした、あの時の気持ちが蘇る。[p]
 #
-私も華織様を喜ばせたい――
+私も華織様を喜ばせたい――[p]
+[背景_チャリティ会場出店]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私の願いは叶ったでしょうか？)[p]
 #
@@ -133,23 +135,99 @@ $(".1_fore").empty();
 「どうかしましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、私も華織様にプレゼントを贈りたいと思いまして」[p]
-バザー 好感度低い場合
 ;------------------------------------------------
-*scene5 
+;好感度が80以上ならスキップ
+[if exp="f.para_sijyou_koukando > 80"]
+@jump target=good_seen
+[endif]
+;------------------------------------------------
+;バザー 好感度低い場合
+;しんみりしすぎでは？ 好感度低い場合
+scene4_1
+[whosay name="華織" color="olivedrab"]
+「ありがとう[名前]さん。[r]
+[sp]ですが僕は[名前]さんから、既に沢山の幸せを頂いてますよ」[p]
+#
+華織様は、悪戯気に微笑んだかと思うと、[r]
+会場の騒めきに消されてしまいそうなくらい小さな声色で[r]
+華衣様の出来事を呟いた。[p]
+[whosay name="華織" color="olivedrab"]
+「[名前]さんの手助けがなければ、華衣とのことも[r]
+[sp]解決しなかったでしょう……[r]
+[sp]ですから僕は[名前]さんに幸せを与えたいのです」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様……」[p]
+#
+しんみりとした空気が流れたかと思うと、[r]
+華織様はパッと笑って何事もなかったかのようにお顔をあげられた。[p]
+[whosay name="華織" color="olivedrab"]
+「[名前]さんの気に入ったものがありましたか？」[p]
+#
+辛いことを隠し、兄のような朗らかな愛情をみせる華織様。[p]
+華織様と再会した頃の私はこの人を憧れの存在であって、[r]
+誰しも持っているのような弱いところなんてないと思ってしまっていた。[p]
+そう考えて、憧れから反した事が起きた時、[r]
+少しばかり華織様を疑ってしまった。[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(確かに華織様は、お一人で問題を解決しようするほど[r]
+[sp]意思は強いと感じられますが)[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(頼られていないというのは、取り残された気分になってしまうわ)[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(今は少しづつ近づいていると感じていたけれど)[p]
+#
+時折みせる、華織様の庇護的な愛情が[t]
+歳の差という距離を感じずにはいられなかった。[p]
+;-------------------------------------------------
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(私も華織様に対等な関係として、贈り物をしたい)[p]
+#
+思い悩んでいると、 [r]
+背後から姉妹らしき二人組の会話が私の耳に飛び込んできた。[p]
+[whosay name="姉妹 その壱"]
+「こちらも素敵ね。 [r]
+[sp]ねぇ、お姉様、お父様の贈り物に良いと思わない？」[p]
+[whosay name="姉妹 その弐"]
+「良いと思いますけれど、[r]
+[sp]今回はアナタのお小遣いから出してくれないかしら？」[p]
+[whosay name="姉妹 その壱"]
+「なら、お互いに……」[p]
+#
+お互いに……その言葉がパッと私の胸に一筋の光が去来した。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(そうだわ)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様。  もし宜ければお互いに贈り物を選ぶのはどうでしょうか？」[p]
+ [whosay name="華織" color="olivedrab"]
+「それはとても良い案ですね。
+[名前]さんが良ければ、僕は嬉しい試みだと思います」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「勿論です。 華織様が何を選んで下さるか楽しみです」[p]
+ [whosay name="華織" color="olivedrab"]
+「[名前]さんの期待に添えるように[r]
+[sp]素敵な贈り物を選んでみせましょう」[p]
+
+@jump target=*scene5
+;------------------------------------------------
+*good_seen
 ;好感度高い場合
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「迷惑でしょうか……？」
 [whosay name="華織" color="olivedrab"]
-「いえ、嬉しいですよ。
-そうですね……;考える
-もし宜ければ、今日という記念にお互いに贈り物を選ぶのはどうでしょうか？」[p]
+「いえ、嬉しいですよ！」[p]
+「そうですね……[r]
+[sp]もし宜ければ、今日という記念にお互いに贈り物を[r]
+[sp]選ぶのはどうでしょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！  素敵ですね！  華織様が何を選んで下さるか楽しみです」[p]
  [whosay name="華織" color="olivedrab"]
-「では、決まりですね。
-僕も[名前]さんからの贈り物を楽しみにしてます」[p]
+「では、決まりですね。[r]
+[sp]僕も[名前]さんからの贈り物を楽しみにしてます」[p]
 ;------------------------------------------------
-;共通
+*scene5
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (きっと思い出に残る贈り物になるに違いないわ)[p]
 #
@@ -167,11 +245,10 @@ $(".1_fore").empty();
 私は付き人についてもらいながらも、華織様への贈り物を探し始めた。[p]
 [resetfont]
 @layopt layer=message0 visible=false
-
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-
+@layopt layer=message0 visible=true
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
