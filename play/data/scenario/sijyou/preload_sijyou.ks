@@ -299,6 +299,14 @@
 @jump target=end_sub
 ;[return]へGO
 ;==========================================================================
+*2_2
+;//////使用背景メモ　上が実行されればいらない//////////////////////////////
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity7.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity.jpg" wait=true]
+@jump target=end_sub
+;[return]へGO
+;==========================================================================
+
 *3_1
 [layopt layer=29 visible=true]
 [layopt layer=fix visible=false]
@@ -852,6 +860,18 @@ $('.base_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0
 [macro name=背景_青空に桜]
 [bg storage="../fgimage/bg/bg_sakura.jpg" time=600 method=%method | &f.bg_method wait=true]
 [eval exp="f.haikei_credit='photo　by　djNIV　https://www.flickr.com/photos/nivpic/4496431348/'"]
+[endmacro]
+;==============
+[macro name=背景_チャリティ会場階段]
+;【背景】二階への階段
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity7.jpg" time=1100]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
+;==============
+[macro name=背景_チャリティ会場出店]
+;【背景】背景バザー出店（遠景）
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
 ;==============
 
