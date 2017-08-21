@@ -3,6 +3,7 @@
 *test
 [iscript]
 $(".1_fore").empty();
+f.para_shujinkou_j_reihou　=100;
 [endscript]
 [stopbgm]
 ;暗転プリロードサブルーチン ！！！！あとでここを変更↓！！！！
