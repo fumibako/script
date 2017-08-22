@@ -17,6 +17,7 @@ $(".1_fore").empty();
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;====================================================
+*seen_prezent
 @layopt layer=fix visible=true
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様は何がお好みでしょうか？)[p]
@@ -37,10 +38,18 @@ $(".1_fore").empty();
 (ええと……)[p]
 #
 私は、四条親戚の幸代と名乗る女性のお顔から記憶を呼び寄せる。[p]
+;↓目：通常より大きめに開いた状態[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
 ほんの少しの間を置いて、[r]
-冬の日、華衣様が子供達の姉を探しに行った記憶が蘇ってきた。[p]
+冬の日、華衣様が子供達の姉を探しに行った記憶が蘇ってきた。
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 (そうだわ。 この方は、エンさんと、カンさんのお姉様だわ)[p]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 ;------------------------------------------------
 [else]
 [whosay name=四条幸代]
@@ -48,7 +57,13 @@ $(".1_fore").empty();
 [sp]子供達が[名字]様に失礼をして……」[p]
 ;背景 四条家
 #
+;↓目：伏目 [主人公目伏]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 園遊会での出来事は、私の中で記憶に新しい。[p]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 [暗転]
 [背景セピア化]
 [背景_四条家庭椅子2]
@@ -58,20 +73,31 @@ $(".1_fore").empty();
 [背景セピア化_解除]
 [背景_チャリティ会場出店]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(あの時は、華織は私に対してあまり意識されてなかった気がするわ)[p]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
+(あの時の華織は、私に対してあまり意識されてなかった気がするわ)[p]
 [endif]
 ;------------------------------------------------
-
+*seen_2
+[autosave]
 [whosay name=四条幸代]
+[主人公通常]
 「今日は華織様と御一緒に来られたのでしょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい。 何かご用件がございましたか？」[p]
+「はい。 
+[主人公目パチ1回]
+何かご用件がございましたか？」[p]
 [whosay name=四条幸代]
-「いえ。[華衣]様が、お元気でいらっしゃるのか[r]
+「いえ。　[華衣]様が、お元気でいらっしゃるのか[r]
 [sp]気になっていたので……」[p]
 #
 四条幸代様は、どうしてか潤んだ目をした後、俯かれた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目パチ1回]
 (どうしたのかしら？)[p]
 #
 私が訝しでいると、[r]
@@ -80,16 +106,27 @@ $(".1_fore").empty();
 「失礼いたしました。[r]
 [sp]実は、昔から[華衣]様には、私の弟達の相手をして下さっていて、[r]
 [sp]きちんとお礼を伝えれたいと考えていたのです」[p]
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 「そうでしたのね」[p]
 [whosay name=四条幸代]
 「ですが、[華衣]様は、いらっしゃられないようですので、[r]
 [sp]また今度にいたします……」[p]
 #
+;↓目：通常より大きめに開いた状態[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
 幸代様の快活な笑みが、花が綻ぶような慈愛の笑みに変わる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 [主人公ポーズ指]
 (もしかして、幸代様は[華衣]様のことが気になっているのかしら？[r]
+;少し間をおいて
+[wait time=500]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
@@ -97,6 +134,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
 [sp]……考えすぎかしら？)[p]
+*seen_3
 #
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
@@ -121,8 +159,10 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 「？　いえ……」[p]
+*seen_4
 #
 深々とお辞儀をする幸代様。[p]
+[autosave]
 意志の強さを感じられる仕草に[r]
 私はこれ以上、彼女の心情を尋ねれそうになかった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -142,7 +182,7 @@ $(".1_fore").empty();
 [wait time=10]
 ;敢えて言葉はしなかったが、
 幸せが訪れる予感に私は胸をほんのりと温かくした。[p]
-
+*seen_5
 [whosay name=四条幸代]
 ;↓目：通常より大きめに開いた状態 [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -161,6 +201,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 「こちらは、如何でしょうか？ 」[p]
+*seen_6
 #
 勧められた陳列棚には、押し花が飾られた栞や便箋が[r]
 数種類、並んでいた。[p]
@@ -168,10 +209,13 @@ $(".1_fore").empty();
 [主人公ポーズ指]
 （華織様はお花を好まれますし、[r]
 [sp]もし使って頂けたら…と考えると嬉しいですね)[p]
+[autosave]
+*seen_7
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;選択肢 セーブできるように
+;選択肢 セーブできるように それほど重要ではない感を
+
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
 [bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
