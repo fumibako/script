@@ -170,10 +170,10 @@ $(".1_fore").empty();
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;選択肢
+;選択肢 セーブできるように
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
-[image name="bg1" layer=29 storage="bg/plane_sakura.jpg" time=100]
+[bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;選択肢用レイヤーを追加
@@ -193,8 +193,8 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[freeimage layer=29]
-栞を選んだ。
+[背景_チャリティ会場出店]
+栞を選んだ。[p]
 @jump target=cmon_prezent
 
 *binsen_prezent
@@ -203,14 +203,15 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[freeimage layer=29]
-便箋を選んだ。
+[背景_チャリティ会場出店]
+便箋を選んだ。[p]
 @jump target=cmon_prezent
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *cmon_prezent
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「良いですね。 こちらを頂きます」[p]
+[主人公ポーズ通常]
+「[ruby text=い]良いですね。 こちらを頂きます」[p]
 [whosay name=四条親戚]
 「ありがとうございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
