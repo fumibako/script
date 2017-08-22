@@ -23,10 +23,10 @@ $(".1_fore").empty();
 [whosay name=女性]
 「あの失礼ですが、もしかして、[名字]様でしょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「？ 」
+「？」[p]
 [whosay name=四条親戚]
 「突然、話し掛けて申し訳ございません。[r]
-[sp]私は四条家の親戚にあたる四条幸代というものです」[p]
+[sp]私は四条家の親戚にあたる四条幸代という[ruby text=もの]者です」[p]
 ;------------------------------------------------
 ;華衣、エンカンの飴屋のイベントを見ていない場合sijyou_sansaku4.ks
 [if exp="f.event_machi_sijyou[4] == 1"]
@@ -102,7 +102,7 @@ $(".1_fore").empty();
 意志の強さを感じられる仕草に[r]
 私はこれ以上、彼女の心情を尋ねれそうになかった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(もし、幸代様が華衣様を気に掛けて下さっていらっしゃるのでしたら……)[p]
+（もし、幸代様が華衣様を気に掛けて下さっていらっしゃるのでしたら……)[p]
 #
 ;敢えて言葉はしなかったが、
 幸せが訪れる予感に私は胸をほんのりと温かくした。[p]
@@ -117,14 +117,15 @@ $(".1_fore").empty();
 #
 勧められた陳列棚には、押し花が飾られた栞や便箋が数種類並んでいた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様はお花を好まれますし、もし使って頂けたら…と考えると嬉しいですね)[p]
+（華織様はお花を好まれますし、[r]
+[sp]もし使って頂けたら…と考えると嬉しいですね)[p]
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
-[image name="bg1" storage="data/fgimage/bg/plane_sakura.jpg" time=100]
+[image layer=29 name="bg1" storage="data/fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -162,7 +163,7 @@ $(".bg1").empty();
 「ありがとうございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様は何を選ばれたのでしょうか？)[p]
-
+[イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 
 
