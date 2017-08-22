@@ -20,11 +20,31 @@ $(".1_fore").empty();
 *seen_prezent
 @layopt layer=fix visible=true
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 (華織様は何がお好みでしょうか？)[p]
+;店員と分かるまで遅い
+#
+陳列棚の前で華織様への贈り物を探している私に[r]
+突如、慈善バザーの売り子が名を尋ねてきた。
+[主人公目パチ1回]
+[p]
 [whosay name=女性]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 「あの失礼ですが、もしかして、[名字]様でしょうか？」[p]
+#
+売り子は、どこかの令嬢のようなのか、佇まいが美しく、[r]
+白磁のような肌と意志の強そうさな大きな黒い瞳が印象的な女性であった。
+[主人公目パチ1回]
+[p]
+;どんな人が話しかけてきたのか書いてないと読み手側にストレス
+#
+私は不思議に思いながらも、その目に引き寄せられた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「？」[p]
+[主人公目パチ1回]
+(どなたかしら？)[p]
 [whosay name=四条親戚]
 「突然、話し掛けて申し訳ございません。[r]
 [sp]私は四条家の親戚にあたる四条幸代という[ruby text=もの]者です」[p]
@@ -35,9 +55,16 @@ $(".1_fore").empty();
 [whosay name=四条幸代]
 「先日は、エンとカンを……子供達を見てくださってありがとうございます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 (ええと……)[p]
 #
 私は、四条親戚の幸代と名乗る女性のお顔から記憶を呼び寄せる。[p]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 ;↓目：通常より大きめに開いた状態[主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -130,7 +157,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [主人公ポーズ指]
-(もしかして、幸代様は[華衣]様のことが気になっているのかしら？[r]
+(もしかして、幸代様は[華衣]さんのことが気になっているのかしら？[r]
 ;少し間をおいて
 [wait time=1000]
 ;↓眉：困り [主人公眉困り]
@@ -167,6 +194,9 @@ $(".1_fore").empty();
 「？　いえ……」[p]
 *seen_4
 #
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 深々とお辞儀をする幸代様。[p]
@@ -183,7 +213,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （でも、[r]
-[sp]もし、幸代様が華衣様を気に掛けて下さっていらっしゃるのでしたら……)[p]
+[sp]もし、幸代様が華衣さんを気に掛けて下さっていらっしゃるのでしたら……)[p]
 #
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -198,7 +228,12 @@ $(".1_fore").empty();
 「[名字]様、どういったものをお探しでしょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ片手]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 (！  そうでしたわ)[p]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [主人公ポーズ通常]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
