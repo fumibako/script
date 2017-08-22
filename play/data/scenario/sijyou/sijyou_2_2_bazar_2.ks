@@ -395,11 +395,10 @@ $(".1_fore").empty();
 [current layer="message0"]
 @layopt layer=message0 visible=true
 ;------------------------------------------------
-[イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
-
-
+@jump storage="sijyou/sijyou_2_2_bazar_3.ks"
 [else]
+[イベントシーン終了]
 @layopt layer=fix visible=true
 @jump storage="test_sijyou.ks"
 [endif]
