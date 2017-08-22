@@ -111,8 +111,14 @@ $(".1_fore").empty();
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 「そうでしたのね」[p]
 [whosay name=四条幸代]
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
 「ですが、[華衣]様は、いらっしゃられないようですので、[r]
 [sp]また今度にいたします……」[p]
 #
@@ -126,7 +132,7 @@ $(".1_fore").empty();
 [主人公ポーズ指]
 (もしかして、幸代様は[華衣]様のことが気になっているのかしら？[r]
 ;少し間をおいて
-[wait time=500]
+[wait time=1000]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
@@ -161,6 +167,8 @@ $(".1_fore").empty();
 「？　いえ……」[p]
 *seen_4
 #
+;↓目：伏目 [主人公目伏]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 深々とお辞儀をする幸代様。[p]
 [autosave]
 意志の強さを感じられる仕草に[r]
