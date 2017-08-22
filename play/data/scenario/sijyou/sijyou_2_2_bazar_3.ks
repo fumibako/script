@@ -10,6 +10,7 @@ $(".1_fore").empty();
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;====================================================
 [cm]
+[背景_チャリティ会場出店]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -117,20 +118,40 @@ $(".1_fore").empty();
 (華織様はお花を好まれますし、もし使って頂けたら…と考えると嬉しいですね)[p]
 #
 私は
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢
-[link target=siori_prezent]栞を選んだ。[endlink][r][r]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;背景変更:和紙風 桜色
+[image name="bg1" storage="bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+[link target=siori_prezent]栞を選んだ。[endlink][r]
+[r][r][r]
 [link target=binsen_prezent]便箋を選んだ。[endlink][r]
 [s]
+
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *siori_prezent
 [eval exp="f.present_name = '栞'"]
 @jump target=cmon_prezent
 
 *binsen_prezent
 [eval exp="f.present_name = '便箋'"]
-;@jump target=cmon_prezent
-
-
+@jump target=cmon_prezent
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *cmon_prezent
+[er]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[iscript]
+$(".bg1").empty();
+[endscript]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「良いですね。 こちらを頂きます」[p]
 [whosay name=四条親戚]
