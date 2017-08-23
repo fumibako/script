@@ -245,7 +245,7 @@ $(".1_fore").empty();
 [link target=seet_2]休憩室に行く[endlink][r]
 [s]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-*sweet_1
+*sweet_2
 [er]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
