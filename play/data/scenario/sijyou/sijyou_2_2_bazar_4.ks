@@ -34,9 +34,6 @@ $(".1_fore").empty();
 #
 華織様が手を差し伸べ、私の手を置かれるのを待つ。[p]
 #
-;↓目：横の伏目 [主人公横伏目]
-[chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
-[wait time=10]
 目を合わせるのも怖くなるほど、夢のような出来事に震える手。[p]
 ;私の手は震えた？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
