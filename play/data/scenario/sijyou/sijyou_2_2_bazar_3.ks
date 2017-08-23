@@ -306,6 +306,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 (華織様は何を選ばれたのでしょうか？)[p]
+#
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;全画面表示
 @layopt layer=fix visible=false
@@ -347,7 +348,7 @@ $(".1_fore").empty();
 [if exp ="f.present_name == '栞'"]
 「本を読む度に[名前]さんの事を思い浮かべそうです」[p]
 #
-華織様は穏やかな微笑みをして、私からの贈り物を受け取った。
+華織様は穏やかな微笑みをして、私からの贈り物を受け取った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (喜んでもらったみたいで良かった)[p]
 ;----------------便箋の場合--------------
@@ -372,7 +373,7 @@ $(".1_fore").empty();
 「はい」[p]
 #
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(お返事が楽しみだわ。[sp]喜んでもらったみたいで良かった)
+(お返事が楽しみだわ。[sp]喜んでもらったみたいで良かった)[p]
 [endif]
 ;--------------------------------------------------
 [whosay name="華織" color="olivedrab"]
@@ -390,11 +391,21 @@ $(".1_fore").empty();
 ;------------------------------
 [else]
 ;[if exp="f.present_name == '栞'"] 
+;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
 小さな天然石を綴ってミルトリアの形に模した、華やかな簪だった。[r]
 手に取って見ると花の細工がキラキラと揺れる。[p]
 ;宝石だと工芸品とは言わないので天然石くらい
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 （なんて綺麗な石かしら！[sp]それに細工も繊細で上品だわ）
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+[p]
 [whosay name="華織" color="olivedrab"]
 「ミルトニアの花の簪です。[sp]ミルトニアの優美な佇まいに、[r]
 [r][名前]さんを思い浮かべて手に取ってしまいました」[p]
@@ -405,11 +416,18 @@ $(".1_fore").empty();
 「ありがとうございます。  大事にいたします」[p]
 [endif]
 ;------------------------------------
-
+[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば……四条幸代様に出会ったのでしたわ。[r]
-[sp]でも、デェトを楽しみたいし、幸代様ご自身で話されると仰ってましたから[r]
-[sp]迂闊に話さない方が良いのかしら？)
+[主人公ポーズ指]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓目：伏目 [主人公目伏]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
+[sp]でも、デェトを楽しみたいし、幸代様ご自身で話されると[r]
+[sp]仰ってましたから迂闊に話さない方が良いのかしら？)[p]
 #
 私は幸代様と会ったことを
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -437,17 +455,30 @@ $(".1_fore").empty();
 [current layer="message0"]
 [暗転]
 ;背景は作成中
+[主人公ポーズ通常]
 話すことにした。[p]
 [eval exp="f.bitter_rute=1"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (ご親族とお会いしたのに、華織様に隠すのも失礼にあたるかしら？)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「先ほど、華織様の親戚の(名前)様にお会いしましたわ」[p]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+「先ほど、華織様の親戚の幸代様にお会いしましたわ」[p]
 [whosay name="華織" color="olivedrab"]
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
 「ああ、やはり慈善バザーにいらっしゃってましたか。[r] 
 [sp]叔母様は慈善活動に熱心でいらっしゃるので、娘にあたる幸代様も[r]
 [sp]来られると思っていましたよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 「幸代様は、華織様の叔母様の御息女なのですね」[p]
 [whosay name="華織" color="olivedrab"]
 「そうですね。[sp]行事があると[ruby text=ウチ]家に来ては、[r]
@@ -455,21 +486,47 @@ $(".1_fore").empty();
 [whosay name="華織" color="olivedrab"]
 「華衣について、何か言っていましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓目：横の伏目 [主人公横伏目]
+[chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
+[wait time=10]
 「い、いえ！ 挨拶をしただけですわ。[r]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 [sp]仲が良いことは良いことですね！」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓口：「えー」と閉口した感じの表情に [主人公口えー]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ee.png" time=0]
+[wait time=10]
+;↓効果：汗 [主人公汗]
+[chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
+[wait time=10]
 (詳細は存じあげませんが、[r]
 [sp]幸代様はご自身で華衣様に伝えると仰ってましたし、[r]
 [sp]今は黙っておきましょう)[p]
+;↓効果：無し(通常) [主人公効果消]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
 #
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 ふと、顔をあげると華織様は、何やら小さく呟きながら、[r]
 一人ウンウンと唸っていた。[p]
 [whosay name="華織" color="olivedrab"]
 「ただ、四条家(ウチ)の仕来りでは、……近い血縁の親族は[r]
 [sp]なかなか手紙の相手に選ばないので……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ポーズ指]
 (？ 華織様なりに華衣様のことをお考えなのかしら？ )[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ポーズ通常]
 「華織様？」[p]
 ;目大
 [whosay name="華織" color="olivedrab"]
@@ -482,8 +539,15 @@ $(".1_fore").empty();
 「そうでしたね。[r]
 [sp]せっかく洋食が味わえる食堂に来たのですから何か頂きましょうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
+;↓口：控え目な笑顔 [主人公口笑顔小]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
+[wait time=10]
 「はい」[p]
 ;ふふと笑って暗転
+[暗転]
 @jump target=comon_
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *seet_rute
@@ -492,6 +556,10 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 ;------------------------------------
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+[主人公ポーズ通常]
 話さないことにした。[o]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （やめておきましょう。 [r]
@@ -499,12 +567,21 @@ $(".1_fore").empty();
 [sp]幸代様にも悪いわ。[sp]今はデェトを楽しみましょう)[p]
 ;共通
 [whosay name="華織" color="olivedrab"]
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 「気に入って頂けて嬉しいです」[p]
 [whosay name="華織" color="olivedrab"]
 「さあ、せっかく洋食が味わえる食堂に来たのですから何か頂きましょうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 「はい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓口：控え目な笑顔 [主人公口笑顔小]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
+[wait time=10]
 「まあ！[sp]話に聞いてましたが色々とメニュウがありますのね」[p]
 *comon_rute
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
