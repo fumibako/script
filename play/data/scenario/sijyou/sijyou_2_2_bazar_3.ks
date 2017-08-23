@@ -258,7 +258,6 @@ $(".1_fore").empty();
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を
-
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
 [bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
@@ -307,11 +306,241 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 (華織様は何を選ばれたのでしょうか？)[p]
-[イベントシーン終了]
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;全画面表示
+@layopt layer=fix visible=false
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[暗転]
+;背景は作成中
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;--------------------------------------------------
+贈り物を選んだ私は、[r]
+華織様と約束していた大食堂で合流し、[r]
+お互いに選んだ品物をゆっくりと見せ合った。[p]
+;------------------------------------------------
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+[current layer="message0"]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[freeimage layer=29]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+;------------------------------------------------
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「私が選んだものは、こちらです」[p]
+[whosay name="華織" color="olivedrab"]
+「[emb exp="f.present_name"]ですか？[r]
+[sp]ありがとうございます。   とても嬉しいです」[p]
+;------------------栞の場合------------
+[if exp ="f.present_name == '栞'"]
+「本を読む度に[名前]さんの事を思い浮かべそうです」[p]
+#
+華織様は穏やかな微笑みをして、私からの贈り物を受け取った。
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(喜んでもらったみたいで良かった)[p]
+;----------------便箋の場合--------------
+[else]
+[whosay name="華織" color="olivedrab"]
+「使わせて頂きますね。[r]
+[sp]ああ、でも少し、勿体無い気がしてしまいますね」[p]
+#
+華織様は、嬉しいような困ったような表情をして、私からの贈り物を受け取った。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公驚]
+「いえ！ 気にせず使って下さい。 その方が私も嬉しいです」[p]
+[whosay name="華織" color="olivedrab"]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+「そうですね、[名前]さんにお手紙を書く時に使わせて頂きます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
+「はい」[p]
+#
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(お返事が楽しみだわ。[sp]喜んでもらったみたいで良かった)
+[endif]
+;--------------------------------------------------
+[whosay name="華織" color="olivedrab"]
+「僕が選んだものはこちらです」[p]
+#
+華織様が選んだのは、[r]
+;------------------------------------
+[if exp="f.present_name == '便箋'"]
+肌触りの良い綿の生地にミルトリアの刺繍が施されているハンカチだった。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(ふわっとした手触りのハンカチに可愛らしい花の刺繍が素敵だわ)[p]
+[whosay name="華織" color="olivedrab"]
+「ミルトニアの花が、今日の優美な[名前]さんを思い浮かんで、[r]
+[sp]思わず手に取ってしまいました。 如何でしょうか……」[p]
+;------------------------------
+[else]
+;[if exp="f.present_name == '栞'"] 
+小さな天然石を綴ってミルトリアの形に模した、華やかな簪だった。[r]
+手に取って見ると花の細工がキラキラと揺れる。[p]
+;宝石だと工芸品とは言わないので天然石くらい
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（なんて綺麗な石かしら！[sp]それに細工も繊細で上品だわ）
+[whosay name="華織" color="olivedrab"]
+「ミルトニアの花の簪です。[sp]ミルトニアの優美な佇まいに、[r]
+[r][名前]さんを思い浮かべて手に取ってしまいました」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
+「ありがとうございます。  大事にいたします」[p]
+[endif]
+;------------------------------------
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（そういえば……四条幸代様に出会ったのでしたわ。[r]
+[sp]でも、デェトを楽しみたいし、幸代様ご自身で話されると仰ってましたから[r]
+[sp]迂闊に話さない方が良いのかしら？)
+#
+私は幸代様と会ったことを
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;選択肢 セーブできるように それほど重要ではない感を
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;背景変更:和紙風 桜色
+[bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[wait time=10]
+[eval exp="f.haikei_credit=''"]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+[link target=bitter_rute]話す。[endlink][r]
+[r][r][r]
+[link target=seet_rute]話さない。[endlink][r]
+[s]
+
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+*bitter_rute
+[er]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[暗転]
+;背景は作成中
+話すことにした。[p]
+[eval exp="f.bitter_rute=1"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(ご親族とお会いしたのに、華織様に隠すのも失礼にあたるかしら？)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「先ほど、華織様の親戚の(名前)様にお会いしましたわ」[p]
+[whosay name="華織" color="olivedrab"]
+「ああ、やはり慈善バザーにいらっしゃってましたか。[r] 
+[sp]叔母様は慈善活動に熱心でいらっしゃるので、娘にあたる幸代様も[r]
+[sp]来られると思っていましたよ」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「幸代様は、華織様の叔母様の御息女なのですね」[p]
+[whosay name="華織" color="olivedrab"]
+「そうですね。[sp]行事があると[ruby text=ウチ]家に来ては、[r]
+[sp]小さな弟さん達と一緒に華衣と話をしてくれますし良い方だと思います」[p]
+[whosay name="華織" color="olivedrab"]
+「華衣について、何か言っていましたか？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「い、いえ！ 挨拶をしただけですわ。[r]
+[sp]仲が良いことは良いことですね！」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(詳細は存じあげませんが、[r]
+[sp]幸代様はご自身で華衣様に伝えると仰ってましたし、[r]
+[sp]今は黙っておきましょう)[p]
+#
+ふと、顔をあげると華織様は、何やら小さく呟きながら、[r]
+一人ウンウンと唸っていた。[p]
+[whosay name="華織" color="olivedrab"]
+「ただ、四条家(ウチ)の仕来りでは、……近い血縁の親族は[r]
+[sp]なかなか手紙の相手に選ばないので……」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(？ 華織様なりに華衣様のことをお考えなのかしら？ )[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様？」[p]
+;目大
+[whosay name="華織" color="olivedrab"]
+「！失礼しました。 また余計なことを考えてしまいました……」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「ご家族のことを熱心に考えられるのも良いですが、[r]
+[sp]今日は大事なひとときですわ」[p]
+;四条あせり
+[whosay name="華織" color="olivedrab"]
+「そうでしたね。[r]
+[sp]せっかく洋食が味わえる食堂に来たのですから何か頂きましょうか」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい」[p]
+;ふふと笑って暗転
+@jump target=comon_
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+*seet_rute
+[er]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+;------------------------------------
+話さないことにした。[o]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（やめておきましょう。 [r]
+[sp]もし何か違った形で[華衣]さんに伝わってしまったら[r]
+[sp]幸代様にも悪いわ。[sp]今はデェトを楽しみましょう)[p]
+;共通
+[whosay name="華織" color="olivedrab"]
+「気に入って頂けて嬉しいです」[p]
+[whosay name="華織" color="olivedrab"]
+「さあ、せっかく洋食が味わえる食堂に来たのですから何か頂きましょうか」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「まあ！[sp]話に聞いてましたが色々とメニュウがありますのね」[p]
+*comon_rute
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;全画面表示
+@layopt layer=fix visible=false
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[暗転]
+;背景は作成中
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+しばらくの間、昼食を頂きながら、話し合った。[p]
+;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
+;------------------------------------------------
+夕方に近づく頃――。[r]
+華族会館の周りでは、ダンスパーティーの知らせを聞いてか、[r]
+紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
+私達も、貴賓室で身だしなみを整えた後、二階のダンスホールへと向かった。[p]
+;------------------------------------------------
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+@layopt layer=message0 visible=true
+;------------------------------------------------
+
 [if exp="f.okeiko_gamen == true"]
 
 
 [else]
+[イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [endif]
 [s]
