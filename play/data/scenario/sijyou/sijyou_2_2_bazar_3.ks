@@ -409,7 +409,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
-「とても嬉しいです。　私も大切にします」
+「とても嬉しいです。　私も大切にします」[p]
 ;------------------------------
 [else]
 ;[if exp="f.present_name == '栞'"] 
@@ -595,7 +595,7 @@ $(".1_fore").empty();
 「はい」[p]
 ;ふふと笑って暗転
 [暗転]
-@jump target=comon_
+@jump target=comon_rute
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *seet_rute
 [er]
