@@ -51,7 +51,7 @@ $(".1_fore").empty();
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
-[ruby text=ワル]円[ruby text=ツ]舞の円に加わり、リズムを取り始める。[p]
+[ruby text=ワル]円[ruby text=ツ]舞の円に加わり、[ruby text=リズ]拍[ruby text=ム]子を取り始める。[p]
 回るたびに振袖の[ruby text=たもと]袂が蝶のようにひらめき、[r]
 自身が華麗な大人の世界の一員になったのかと思えた。[p]
 ;のかさえ思えた
@@ -223,7 +223,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 （少しお待ちしましょう。[r]
-[sp]これも夫人となったらお勤めの一つになるでしょう)[p]
+[sp]これも夫人となったらお勤めの[ruby text=ひと]一つになるでしょう)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -299,7 +299,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 ;給仕が立ち去るのを横目で見ながら？
-甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を潤す。[p]
+甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ryby text=うるお]潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
