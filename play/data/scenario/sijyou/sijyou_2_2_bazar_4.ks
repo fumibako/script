@@ -188,7 +188,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 「[名前]と申します」[p]
-[whosay name="森永"]
+[whosay name="森永夫人"]
 「私は森永と申します。[r]
 [sp]華織様のお兄様の知人といった所ですわ。[r]
 [sp][名字]様は、お可愛い方だとこと。 華織様はお幸せね！」[p]
@@ -241,7 +241,7 @@ $(".1_fore").empty();
 #
 私の様子に気付いたのか、[r]
 [主人公通常]
-気の良さそうな[ruby text=ボーイ]給仕が飲料を乗せた盆を手にして側に立った。[p]
+気の良さそうな[ruby text=ボー]給[ruby text=イ]仕が飲料を乗せた[ruby text=トレイ]盆を手にして側に立った。[p]
 ;注文を尋ねに来た…？ 注文を取りに来た？ 近づいた？ 近くに寄った？
 [whosay name="給仕"]
 「奥様、お飲物はいかがでしょうか？」[p]
@@ -302,7 +302,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 ;給仕が立ち去るのを横目で見ながら？
-[ruby text=フ]甘[ruby text=ルー]い[ruby text=テ]果[ruby text=ィー]物のような香りが漂う飲み物を手にし、喉を潤す。[p]
+甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
@@ -361,7 +361,7 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [暗転]
-休憩室に行くことにした[p]
+休憩室に行くことにした。[p]
 @jump storage="sijyou_2_2_bazar_5.ks"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_1
@@ -370,7 +370,7 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [暗転]
-もう一度、踊ることにした[p]
+もう一度、踊ることにした。[p]
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：控え目な笑顔 [主人公口笑顔小]
@@ -393,7 +393,7 @@ $(".1_fore").empty();
 「そうですか？ [r]
 [sp]……では、いきましょうか」[p]
 #
-私は、曲の合間をみて、華織様と共に広場(ホール)の円舞に滑り込んだ。[p]
+私は、曲の合間をみて、華織様と共に[ruby text=ホー]広[ruby text=ル]場の円舞に滑り込んだ。[p]
 ;------------------------------------
 *scene5
 ;キツイ内容でしょうか
@@ -426,6 +426,11 @@ $(".1_fore").empty();
 （私も、もっと大胆にターンをしてみたいわ)[p]
 [whosay name="華織" color="olivedrab"]
 「！」[p]
+;【SE】ザッ(衣擦れ)
+[playse storage=za_kinuzure.ogg loop=false ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[quake count=3 time=250 hmax=10 vmax=10]
 #
 しかし、[r]
 同じようにターンをしてしまったところ、[r]
@@ -448,10 +453,12 @@ $(".1_fore").empty();
 [chara_mod name="girl_emo" storage="girl/S/emo_ase.png" time=0]
 [wait time=10]
 「ごめんなさい、きゃっ」[p]
+[quake count=3 time=250 hmax=10 vmax=10]
 [whosay name="女性"]
 「きゃぁっ」[p]
 #
-一人の男性を主軸にして、[ruby text=ホール]広場の円舞がパタパタと乱れ、静まり返っていく。[p]
+一人の男性を主軸にして、[ruby text=ホー]広[ruby text=ル]場の円舞がパタパタと乱れ、[r]
+静まり返っていく。[p]
 #
 ;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
@@ -510,9 +517,10 @@ $(".1_fore").empty();
 私は、恥ずかしさと悔しさのあまり、[ruby text=ホール]広場を抜け出した。[p]
 ;------------------------------------ 
 *scene6
-;鹿鳴館回廊   
+華族館回廊の背景[p]   
 #
 回廊の柱にもたれると、私は顔を[ruby text=おお]覆い隠した。[p]
+[主人公ポーズ両手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (はしゃぎすぎてしまったわ……どうしてこんな事を？)[p]
 #
@@ -535,6 +543,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_emo" storage="girl/S/emo_namida_nagare.png" time=0]
 [wait time=10]
 涙を抑え、顔を見せる。[r]
+[主人公ポーズ通常]
 そこには華織様が、私を心配そうに見つめ立っていた。[p]
 ;[p]の後に華織アップ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
