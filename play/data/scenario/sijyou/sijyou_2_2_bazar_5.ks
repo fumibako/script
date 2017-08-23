@@ -188,6 +188,9 @@ $('.junbi_girl').remove();
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 「……」[p]
 #
 どうしてか騒がしいはずの花火の音が聞こえず、[r]
