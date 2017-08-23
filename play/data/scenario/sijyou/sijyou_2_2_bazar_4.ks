@@ -299,7 +299,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 ;給仕が立ち去るのを横目で見ながら？
-甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ryby text=うるお]潤す。[p]
+甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ruby text=うるお]潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
@@ -349,7 +349,7 @@ $(".1_fore").empty();
 [font size=32]
 [link target=sweet_1]もう一度、踊る[endlink][r]
 [r][r][r]
-[link target=seet_2]休憩室に行く[endlink][r]
+[link target=sweet_2]休憩室に行く[endlink][r]
 [s]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_2
