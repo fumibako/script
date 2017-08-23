@@ -8,17 +8,6 @@ $(".1_fore").empty();
 ;暗転プリロードサブルーチン
 [call target=*2_2 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-;====================================================
-[cm]
-[wait time=50]
-@layopt layer=fix visible=false
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
-[wait time=50]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
-@layopt layer=message0 visible=true
-[current layer="message0"]
-[font color=white size=27]
 [暗転]
 ;背景をセット予定↑
 [プリロード画面消去]
