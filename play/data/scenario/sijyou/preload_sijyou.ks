@@ -879,7 +879,10 @@ $('.base_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
 ;==============
-
+[macro name=背景_チャリティ会場回廊]
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/sijyou_bazaar_kairou.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[endmacro]
 ;==============================================================
 ;全てはここにGoします
 [return]
