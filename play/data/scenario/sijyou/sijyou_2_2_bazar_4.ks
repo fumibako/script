@@ -51,7 +51,7 @@ $(".1_fore").empty();
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
-ワルツの円に加わり、リズムを取り始める。[p]
+[ruby text=ワル]円[ruby text=ツ]舞の円に加わり、リズムを取り始める。[p]
 回るたびに振袖の[ruby text=たもと]袂が蝶のようにひらめき、[r]
 自身が華麗な大人の世界の一員になったのかと思えた。[p]
 ;のかさえ思えた
@@ -81,7 +81,7 @@ $(".1_fore").empty();
 [sp]自分に嘘を付くのが苦手なのです」[p]
 [whosay name="華織" color="olivedrab"]
 「だから今、[r]
-[sp]僕は美しい花のような[名前]さんとワルツを踊れて、[r]
+[sp]僕は美しい花のような[名前]さんと[ruby text=ワル]円[ruby text=ツ]舞を踊れて、[r]
 [sp]夢のような時間だと思います」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様……」[p]
