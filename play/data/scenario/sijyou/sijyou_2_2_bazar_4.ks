@@ -64,6 +64,7 @@ $(".1_fore").empty();
 ;感想
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日という日を忘れないわ)[p]
+#
 *scene2
 ;-----------------------------------
 ;全画面表示
@@ -93,6 +94,7 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 @layopt layer=message0 visible=true
+[freeimage layer=29]
 ;-------------------------------------------------
 *scene3
 #
