@@ -294,7 +294,7 @@ $(".1_fore").empty();
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-「どうぞ。 では失礼します」[p]
+「どうぞ。[sp]では失礼します」[p]
 #
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -333,7 +333,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「[名前]さん、お待たせしました。[r]
-[sp]？　 顔が少し赤いようですが……休憩室に行きましょうか？」[p]
+[sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」[p]
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
