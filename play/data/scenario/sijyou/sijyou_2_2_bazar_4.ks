@@ -17,11 +17,17 @@ $(".1_fore").empty();
 [メッセージウィンドウ上ボタン表示]
 ;====================================================
 *scene1
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「さあ、お手をどうぞ――」[p]
@@ -63,7 +69,13 @@ $(".1_fore").empty();
 [sp]ですが僕のような世辞が苦手な者が[r]
 [sp]お邪魔したところで、誰かを楽しませることもできませんよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓口：控え目な笑顔 [主人公口笑顔小]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
+[wait time=10]
 「そんな、私は楽しいですわ。[r]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 [sp]華織様といて楽しいと思えない方なんて、[r]
 [sp]きっと、おりませんわ」[p]
 [whosay name="華織" color="olivedrab"]
@@ -116,6 +128,9 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
 [freeimage layer=29]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 @layopt layer=fix visible=true
 ;-------------------------------------------------
 *scene3
@@ -124,13 +139,18 @@ $(".1_fore").empty();
 （なんて楽しい時間なのかしら！ [r]
 [sp]大人達がダンスに興じるのも少し分かったかもしれないわ)[p]
 [whosay name="華織" color="olivedrab"]
+;↓効果：無し(通常) [主人公効果消]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-
 「[名前]さん、暑くなってきましたね。[sp]何か飲み物を頼みましょうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：にっこり [主人公目にこ]
@@ -226,15 +246,14 @@ $(".1_fore").empty();
 [whosay name="給仕"]
 「奥様、お飲物はいかがでしょうか？」[p]
 *scene4
-#
-私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を 親戚のことを話している場合のみ表示　
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [if exp="f.bitter_rute != 1"]
 @jump target=sweet_rute
 [endif]
-
+#
+私は
 ;背景変更:和紙風 桜色
 [bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [wait time=10]
@@ -265,9 +284,9 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [暗転]
+頂くことにした。[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_rute
-頂くことにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
@@ -447,7 +466,7 @@ $(".1_fore").empty();
 #
 ふいに、何故だかお稽古の先生の声が脳裏に響く。[p]
  
-#"お稽古の先生"
+[whosay name="お稽古の先生"]
 ――[名前]さん、振袖でのターンは小降りに。[sp]足の動きを計算しつくして。 [r]
 そうでないの、違うわ。[p]
 
@@ -485,6 +504,9 @@ $(".1_fore").empty();
 [wait time=10]
 「ごめんなさい！」[p]
 #
+;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
 私は、恥ずかしさと悔しさのあまり、[ruby text=ホール]広場を抜け出した。[p]
 ;------------------------------------ 
 *scene6
@@ -495,7 +517,7 @@ $(".1_fore").empty();
 (はしゃぎすぎてしまったわ……どうしてこんな事を？)[p]
 #
 恥ずかしさで涙を[ruby text=こぼ]零すと、[r]
-隣の[ruby text=ホール]広場から、楽しげな楽曲が流れ始める。[p]
+隣の[ruby text=ホー]広[ruby text=ル]場から、楽しげな楽曲が流れ始める。[p]
 #
 自身の悲しみと周囲の楽しさの落差があまりにも違いすぎて、[r]
 場違いな気持ちが、より一層、高まってしまった。[p]
@@ -546,7 +568,7 @@ $(".1_fore").empty();
 ;↓効果：涙にじむ[主人公涙]
 [chara_mod name="girl_emo" storage="girl/S/emo_namida.png" time=0]
 [wait time=10]
-華織様は、私の肩を抱くと優しく包み込んだ。
+華織様は、私の肩を抱くと優しく包み込んだ。[p]
 ;驚き泣き→柔和泣き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：伏目 [主人公目伏]
@@ -556,7 +578,7 @@ $(".1_fore").empty();
 [whosay name="華織" color="olivedrab"] 
 「ええ、上手くできるでしょう。 [r]
 [sp]実際、僕も驚きました。[r]
-[sp]ですが、当分は僕の前だけで踊ってほしいです」
+[sp]"ですが、当分は僕の前だけで踊ってほしいです"」
 ;↓目：通常より大きめに開いた状態 [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -573,9 +595,6 @@ $(".1_fore").empty();
 恥ずかしさに打ち震えていると、光とともに大きな音が鳴り響いた。[p]
 ;背景変更
 #
-;↓口：大きく開けた状態 [主人公口大]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_ooake.png" time=0]
-[wait time=10]
 ;↓目：通常より大きめに開いた状態 [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -615,7 +634,7 @@ $(".1_fore").empty();
 華織様の少し緊張した声に包まれ、[r]
 私は少し意地悪ながら安心してしまった。[p]
 ;クリアフラグ
-[eval exp="se.event_sijyou_2_2_bazar = 1"]
+[eval exp="sf.event_sijyou_2_2_bazar = 1"]
 [イベントシーン終了]
 
 
