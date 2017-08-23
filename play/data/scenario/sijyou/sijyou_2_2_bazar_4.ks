@@ -362,7 +362,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [暗転]
 休憩室に行くことにした。[p]
-@jump storage="sijyou/sijyou_2_2_bazar_5.ks"
+@jump storage="sijyou/sijyou_2_2_bazar_5.ks" target="scene1"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_1
 [er]
