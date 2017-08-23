@@ -173,9 +173,19 @@ $(".1_fore").empty();
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を 親戚のことを話している場合のみ表示　
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-[if exp="f.f.bitter_rute != 1"]
+[if exp="f.bitter_rute != 1"]
 @jump target=sweet_rute
 [endif]
+
+;背景変更:和紙風 桜色
+[bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[wait time=10]
+[eval exp="f.haikei_credit=''"]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
 
 [link target=sweet_rute_0]頂く[endlink][r]
 [r][r][r]
