@@ -30,7 +30,7 @@ $(".1_fore").empty();
 突如、慈善バザーの売り子が名を尋ねてきた。
 [主人公目パチ1回]
 [p]
-[whosay name=女性]
+[whosay name=女性の売り子]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 「あの失礼ですが、もしかして、[名字]様でしょうか？」[p]
@@ -213,7 +213,8 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （でも、[r]
-[sp]もし、幸代様が華衣さんを気に掛けて下さっていらっしゃるのでしたら……)[p]
+[sp]もし、幸代様が華衣さんを気に掛けて下さって[r]
+[sp]いらっしゃるのでしたら……)[p]
 #
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -391,6 +392,9 @@ $(".1_fore").empty();
 ;------------------------------
 [else]
 ;[if exp="f.present_name == '栞'"] 
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 ;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -398,17 +402,17 @@ $(".1_fore").empty();
 手に取って見ると花の細工がキラキラと揺れる。[p]
 ;宝石だと工芸品とは言わないので天然石くらい
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
-[wait time=10]
-（なんて綺麗な石かしら！[sp]それに細工も繊細で上品だわ）
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+（なんて綺麗な石かしら！[sp]それに細工も繊細で上品だわ）
 [p]
 [whosay name="華織" color="olivedrab"]
 「ミルトニアの花の簪です。[sp]ミルトニアの優美な佇まいに、[r]
-[r][名前]さんを思い浮かべて手に取ってしまいました」[p]
+[sp][名前]さんを思い浮かべて手に取ってしまいました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
@@ -555,12 +559,13 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[暗転]
 ;------------------------------------
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [主人公ポーズ通常]
-話さないことにした。[o]
+話さないことにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （やめておきましょう。 [r]
 [sp]もし何か違った形で[華衣]さんに伝わってしまったら[r]
@@ -568,12 +573,18 @@ $(".1_fore").empty();
 ;共通
 [whosay name="華織" color="olivedrab"]
 ;↓目：通常 [主人公目通常]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 「気に入って頂けて嬉しいです」[p]
 [whosay name="華織" color="olivedrab"]
 「さあ、せっかく洋食が味わえる食堂に来たのですから何か頂きましょうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
@@ -583,6 +594,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
 「まあ！[sp]話に聞いてましたが色々とメニュウがありますのね」[p]
+#
 *comon_rute
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;全画面表示
@@ -601,9 +613,11 @@ $(".1_fore").empty();
 ;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
 ;------------------------------------------------
 夕方に近づく頃――。[r]
-華族会館の周りでは、ダンスパーティーの知らせを聞いてか、[r]
+華族会館の周りでは、ダンスパーティーの知らせを[r]
+聞いてか、[r]
 紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
-私達も、貴賓室で身だしなみを整えた後、二階のダンスホールへと向かった。[p]
+私達も、貴賓室で身だしなみを整えた後、[r]
+二階のダンスホールへと向かった。[p]
 ;------------------------------------------------
 [resetfont]
 @layopt layer=message0 visible=false
