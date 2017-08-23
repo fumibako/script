@@ -331,7 +331,7 @@ $(".1_fore").empty();
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
-[link targe=sweet_1]もう一度、踊る[endlink][r]
+[link target=sweet_1]もう一度、踊る[endlink][r]
 [r][r][r]
 [link target=seet_2]休憩室に行く[endlink][r]
 [s]
