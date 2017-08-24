@@ -20,6 +20,9 @@ $(".1_fore").empty();
 *scene1
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 「大丈夫です。　ありがとうございます」[p]
 [whosay name="給仕"]
 ;↓目：通常 [主人公目通常]
@@ -27,9 +30,15 @@ $(".1_fore").empty();
 [wait time=10]
 「失礼しました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 （華織様と御一緒に頂くまで我慢しておきましょう)[p]
 
 #
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 華織様を待っていると、楽団にピアノの奏者が入り、[r]
 他のバイオリン奏者達も音を合わせはじめる。[p]
 #
