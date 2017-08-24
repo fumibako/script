@@ -274,7 +274,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [暗転]
 遠慮しておいた。[p]
-@jump storage="sijyou_2_2_bazar_5a.ks"
+@jump storage="sijyou/sijyou_2_2_bazar_5a.ks"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_rute_0
 [er]
