@@ -81,8 +81,8 @@ $(".1_fore").empty();
 [wait time=10]
 恥ずかしさに打ち震えていると、[r]
 窓の外から光とともに大きな音が鳴り響いた。[p]
-;【SE】花火(打ち上げ：小)
-[playse storage=hanabi_utiage_s.ogg loop=false ]
+;【SE】花火(打ち上げ：大)
+[playse storage=hanabi_utiage_big.ogg loop=false ]
 驚いて見上げれば、大輪の花火が、陰った空を[r]
 煌びやかに照らしていた。[p]
 
