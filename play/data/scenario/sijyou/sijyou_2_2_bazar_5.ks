@@ -61,6 +61,11 @@ $(".1_fore").empty();
 [wait time=10]
 「ごめんなさい。 [r]
 [sp]私、今日の日をとても楽しみしていたのに」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 [whosay name="華織" color="olivedrab"] 
 「謝らないで下さい。[sp]僕も少し浮かれてました。[r]
 [sp]今はゆっくり休んで下さい」[p]
