@@ -93,7 +93,11 @@ $(".1_fore").empty();
 「あっ……」[p]
 #
 見れば、その方は幸代様だった。[p]
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 ;↓眉：困り [主人公眉困り]
