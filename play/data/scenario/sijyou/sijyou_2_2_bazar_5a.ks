@@ -143,7 +143,7 @@ $(".1_fore").empty();
 [wait time=10]
 「あ、ありがとうございます。[r]
 [sp]こちらには、よく来られるのですか？」[p]
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -153,7 +153,7 @@ $(".1_fore").empty();
 [wait time=10]
 「先ほどの殿方とのダンスは素敵でしたわ。[r]
 [sp]私も、早くより上手く踊れる様になりたいです」[p]
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「いえ、[名字]様の方が……」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -168,7 +168,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 「あの方とは親しいのですか？」[p]
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「いえ、お恥ずかしながら、[r]
 [sp]私は手紙を交わすには、歳が立ってしまっているので」[p]
 
@@ -181,7 +181,7 @@ $(".1_fore").empty();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「とても、その様には見えませんが……」[p]
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「お気遣いありがとうございます。[r]
 [sp]ですから、あの殿方は今夜の私のダンスに付き合って頂いた方に[r]
 [sp]すぎないのです」[p]
@@ -194,7 +194,7 @@ $(".1_fore").empty();
 ;↓目：横の伏目 [主人公横伏目]
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
-(やはり、華衣様のことを……？)
+(やはり、華衣様のことを……？)[p]
 
 #
 ;↓目：伏目 [主人公目伏]
@@ -212,17 +212,24 @@ $(".1_fore").empty();
 「四条家は、その昔、高貴な位を維持しようと同じ血の者を[r]
 [sp]結婚相手に選んでいました」[p]
 [主人公伏目パチ1回]
+;↓口：通常 [主人公口通常]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 「ですが、途中で気づいたのでしょう。[r]
 [sp]不健康な者が生まれ、時代の波の中で生きていくには、[r]
 [sp]多くの方と付き合うべきだと」[p]
 
 [whosay name=四条幸代]
-「ですから、近すぎる血縁者は、滅多に手紙の婚約者候補に選ばれにくいのです。[r]
-[sp]ご当主様……華織様のお爺様は親戚同士の結婚ですが、[r]
+「ですから、近すぎる血縁者は、滅多に手紙の婚約者候補に[r]
+[sp]選ばれにくいのです」[p]
+
+[whosay name=四条幸代]
+「ご当主様……華織様のお爺様は親戚同士の結婚ですが、[r]
 [sp]それは珍しい縁組みなのですよ」[p]
 ;手紙のやり取りはしていない
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+
 [主人公伏目パチ1回]
 (そうなのですね)[p]
 
