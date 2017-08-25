@@ -12,6 +12,8 @@ $(".1_fore").empty();
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
+[四条サイズ通常_羽織]
+[四条憂い]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;====================================================
@@ -48,6 +50,14 @@ $(".1_fore").empty();
 [wait time=10]
 #
 [背景_チャリティ会場休憩所夜]
+[四条_顔up_ベース羽織]
+;[四条_顔up_眉困り]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条_顔up_目伏2]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
