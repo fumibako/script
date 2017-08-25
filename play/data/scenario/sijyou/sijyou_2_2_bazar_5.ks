@@ -48,8 +48,11 @@ $(".1_fore").empty();
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
+[四条退場]
+;------------------------------------
 #
 [背景_チャリティ会場休憩所夜]
+[表示準備 storage="bg/B4nFWraU42/sijyou_bazaar_kyukeijyo.jpg"]
 [四条_顔up_ベース羽織]
 ;[四条_顔up_眉困り]
 [chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_komari.png" time=0]
@@ -57,7 +60,10 @@ $(".1_fore").empty();
 ;[四条_顔up_目伏2]
 [chara_mod name="sijyou_up_me" storage="sijyou/me_fusi2.png" time=0]
 [wait time=10]
-
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+[表示開始 time=300]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
