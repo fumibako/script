@@ -356,6 +356,7 @@ $('.loding_pic1').remove();
 [glink storage="sijyou/sijyou_2_2_bazar_3.ks" text="四条バザー3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink storage="sijyou/sijyou_2_2_bazar_4.ks" text="四条バザー4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink storage="sijyou/sijyou_2_2_bazar_5.ks" text="四条バザー5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink storage="sijyou/sijyou_2_2_bazar_5a.ks" text="四条バザー5a" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 
 [s]
 *test3_1
