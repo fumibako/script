@@ -54,13 +54,16 @@ $(".1_fore").empty();
 煌びやかな男女達は、そぞろにダンスホールに集まって円舞をはじめる。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(ふう、私も早く踊りたいですわ)
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+(ふう、私も華織様と早く踊りたいですわ)[p]
 #
 ダンスホールを恨めしげに見ていると、[r]
 華麗なステップを踏む男女が私の目に入った。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(私もあの様に、もっと上手く踊れたら良いのに。[r]
+（私もあの様に、もっと上手く踊れたら良いのに。[r]
 [sp]そうしたら華織様も……)[p]
 #
 きっと私を放っておいたりしないかもしれない。[r]
@@ -69,38 +72,59 @@ $(".1_fore").empty();
 [whosay name=男性]
 「よい、夜をお過ごしください」[p]
 [whosay name=女性]
-「有り難う存じます。 貴方も素敵な夜を」[p]
+「有り難う存じます。[sp]貴方も素敵な夜を」[p]
 #
 華麗なステップを踏む男女はキッチリと会釈し、離れていく。[r]
 別れた女性は、優雅な所作でこちらの壁際に戻ってきた。[p]
 
 その女性に私が目を奪われていると、[r]
-突然。戻ってきた女性が、ふらりと私の隣の柱にもたれかかった。[r]
+突然。戻ってきた女性が、ふらりと私の隣の柱にもたれかかった。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ooake.png" time=0]
+[wait time=10]
+「！」[p]
+[whosay name=四条幸代]
+「あっ……」[p]
+#
 見れば、その方は幸代様だった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 「だ、大丈夫ですか？」[p]
 #
+;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
 居た堪れず、急いで私は声をかけた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「あ、ありがとうございます。[r][sp]
-失礼しました、少しお酒を飲みすぎたようです」[p]
+「あ、ありがとうございます。[r]
+[sp]失礼しました、少しお酒を飲みすぎたようです」[p]
+
 #
+;↓目：伏目 [主人公目伏]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 幸代様は、背筋を伸ばすと、軽く身を縮めて会釈を返す。
 #
-先ほどの訪問着のピシリと着られた売り子姿の幸代様とはうって変わって、[r]
+先ほどの訪問着のピシリと着られた売り子姿の幸代様とは打って変わって、[r]
 バッスルスタイルの幸代様は、白い肌と[r]
 今にも折れそうな華奢な腰が目立ち、弱々しい印象を受けた。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「水を頂きましょうか？ ……給仕を呼びますわ」[p]
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「ありがとうございます、大丈夫ですわ。[r][sp]
 こちらにあるので……」[p]
 #
 幸代様は、慣れた足取りで[r]
 臨時に設置されたテーブルに向かうと瓶から杯へと水を注いだ。[p]
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「[名字]様も、どうぞ」[p]
 #
 ドレスに潰されてしまいそうな儚気な雰囲気を漂わす幸代様に[r]
@@ -149,7 +173,7 @@ $(".1_fore").empty();
 幸代様は、何か悟ったように微笑むと言葉を続けられた。[p]
 
 ;何故、華織、華衣の手紙の相手に含まれていなかったのか？
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「四条家は、その昔、高貴な位を維持しようと同じ血の者を[r]
 [sp]結婚相手に選んでいました」[p]
 
@@ -157,7 +181,7 @@ $(".1_fore").empty();
 [sp]不健康な者が生まれ、時代の波の中で生きていくには、[r]
 [sp]多くの方と付き合うべきだと」[p]
 
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「ですから、近すぎる血縁者は、滅多に手紙の婚約者候補に選ばれにくいのです。[r]
 [sp]ご当主様……華織様のお爺様は親戚同士の結婚ですが、[r]
 [sp]それは珍しい縁組みなのですよ」[p]
@@ -166,12 +190,12 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (そうなのですね)[p]
 
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「それに……私自身は思ってもいないことですが、[r]
 [sp]私の親は、あまり[華衣]様をよく思われていないので、[r]
 [sp]きっと私はあの人に巡り合わないでしょう」[p]
 
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「あ、好まない理由については、その……ぞ、存じあげておりません。[r]
 [sp]ですが、華衣様はとても気の良い方なので、[名字]様もよしなに」[p]
 
@@ -181,7 +205,7 @@ $(".1_fore").empty();
 #
 幸代様は、一瞬、目を大きくすると安心したように目を細くして微笑まれた。[p]
 
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「お見かけした時から、[r][sp]
 [名字]様と華織様は、どこか結び付きの深いお二人だと思いましたが」[p]
 
@@ -191,7 +215,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「幸代様……？」[p]
 
-[whosay name=四条親戚]
+[whosay name=四条幸代]
 「ほんの少し前まで、私は自分が何をすべきか、[r][sp]
 何をしたいのか分かっていましたが」[p]
 
@@ -199,25 +223,25 @@ $(".1_fore").empty();
 諦めてしまうのです」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「幸代様、私は応援しています。[r][sp]
-それに仰っていましたよね、うまく伝わらなくてもご自身で伝えたいと」[p]
+「幸代様、私は応援しています。[r]
+[sp]それに仰っていましたよね、うまく伝わらなくてもご自身で伝えたいと」[p]
 ;キツイ言い方ね
 
-[whosay name=四条親戚]
-「はい。[r][sp]
-お二人のダンスをされている姿を見て、もう一度、目が覚めました。[r][sp]
- 勇気を出してみます」[p]
-
+[whosay name=四条幸代]
+「はい。[r]
+[sp]お二人のダンスをされている姿を見て、目が覚めました。[r]
+[sp]勇気を出してみます」[p]
+#
 幸代様は、重たげなスカートを持ち上げると、[r]
 風のようにダンスホールを抜け出していった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(うまく伝わらなくても……ですか。[r][sp]
-そうですね、焦ることはないのだわ)
+（うまく伝わらなくても……ですか。[r]
+[sp]そうですね、焦ることはないのだわ)
 
 [whosay name="華織" color="olivedrab"]
-「[名前]さん、お待たせして失礼しました。[r][sp]
-幸代さんと何か話されていたのですか？」[p]
+「[名前]さん、お待たせして失礼しました。[r]
+[sp]幸代さんと何か話されていたのですか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。[sp]……でも今は秘密です」[p]
 [whosay name="華織" color="olivedrab"]
@@ -227,13 +251,13 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「では、[r][sp]
 [名前]さんの秘密が気になってしまう、どうしようもない僕と[r][sp]
-もう一度踊ってくださりませんか？」[p]
+もう一度、踊ってくださりませんか？」[p]
 
 [if exp="f.para_sijyou_koukando > 80"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ」[p]
 [else]
-好感度低い
+;好感度低い
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ふふ、どうしましょう？」[p]
 [whosay name="華織" color="olivedrab"]
