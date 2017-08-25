@@ -281,7 +281,7 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[暗転]
+[背景_チャリティ会場ダンスホール]
 頂くことにした。[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_rute
@@ -358,7 +358,7 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[暗転]
+[背景_チャリティ会場ダンスホール]
 休憩室に行くことにした。[p]
 @jump storage="sijyou/sijyou_2_2_bazar_5.ks" target="scene1"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -367,7 +367,7 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[暗転]
+[背景_チャリティ会場ダンスホール]
 もう一度、踊ることにした。[p]
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
