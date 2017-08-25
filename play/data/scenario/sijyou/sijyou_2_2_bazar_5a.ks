@@ -102,7 +102,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
 居た堪れず、急いで私は声をかけた。[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[whosay name=四条幸代]
 「あ、ありがとうございます。[r]
 [sp]失礼しました、少しお酒を飲みすぎたようです」[p]
 
@@ -110,7 +110,8 @@ $(".1_fore").empty();
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-幸代様は、背筋を伸ばすと、軽く身を縮めて会釈を返す。
+幸代様は、背筋を伸ばすと、軽く身を縮めて会釈を返す。[p]
+
 #
 先ほどの訪問着のピシリと着られた売り子姿の幸代様とは打って変わって、[r]
 バッスルスタイルの幸代様は、白い肌と[r]
@@ -125,10 +126,12 @@ $(".1_fore").empty();
 幸代様は、慣れた足取りで[r]
 臨時に設置されたテーブルに向かうと瓶から杯へと水を注いだ。[p]
 [whosay name=四条幸代]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
+[wait time=10]
 「[名字]様も、どうぞ」[p]
 #
 ドレスに潰されてしまいそうな儚気な雰囲気を漂わす幸代様に[r]
-[ruby textr=グラス]杯を手渡され、[r]
+[ruby text=グラス]杯を手渡され、[r]
 圧倒された私は華織様を待たずに思わず杯を手に取ってしまった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
