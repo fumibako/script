@@ -102,8 +102,7 @@ $(".1_fore").empty();
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
-[暗転]
-;背景は作成中
+[背景_チャリティ会場ダンスホール]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
@@ -124,6 +123,7 @@ $(".1_fore").empty();
 ;↓口：控え目な笑顔 [主人公口笑顔小]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
+[背景_チャリティ会場ダンスホール]
 [freeimage layer=29]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
