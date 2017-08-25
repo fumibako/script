@@ -8,7 +8,7 @@ $(".1_fore").empty();
 ;暗転プリロードサブルーチン
 [call target=*2_2 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[暗転]
+[背景_チャリティ会場ダンスホール]
 ;背景をセット予定↑
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
