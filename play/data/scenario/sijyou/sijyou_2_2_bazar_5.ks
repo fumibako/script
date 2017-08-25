@@ -131,6 +131,8 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 あの時の華織様の横顔が忘れずに心に残っている。[p]
+[cm]
+[暗転２ storage="bg/sijyou_hanabi1.jpg"]
 [テキスト全画面白文字無背景]
 ;背景 線香花火
 [背景_線香花火]
@@ -139,6 +141,7 @@ $(".1_fore").empty();
 [playse storage=hanabi_senkou.ogg loop=false ]
 ふとした瞬間が、とても綺麗な華織様への[r]
 届かないはずだった淡い思い。[p]
+[暗転２終了]
 [背景_チャリティ会場休憩所夜]
 [イベントシーン構築]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
