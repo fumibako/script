@@ -115,8 +115,7 @@ $(".1_fore").empty();
 [playse storage=hanabi_senkou.ogg loop=false ]
 ふとした瞬間が、とても綺麗な華織様への[r]
 届かないはずだった淡い思い。[p]
-;背景戻す
-[暗転]
+[背景_チャリティ会場休憩所夜]
 [イベントシーン構築]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
