@@ -147,7 +147,7 @@ $(".1_fore").empty();
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-「はい。 ダンスパーティがある時は」[p]
+「はい。[sp]ダンスパーティがある時は」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
 [wait time=10]
@@ -194,7 +194,7 @@ $(".1_fore").empty();
 ;↓目：横の伏目 [主人公横伏目]
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
-(やはり、華衣様のことを……？)[p]
+(やはり、幸代様は、[華衣]様のことを……？)[p]
 
 #
 ;↓目：伏目 [主人公目伏]
