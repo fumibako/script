@@ -361,9 +361,9 @@ $('.loding_pic1').remove();
 [s]
 
 *test2_2_k
-[eval exp="f.para_sijyou_koukanndo = 200"]
+[eval exp="f.para_sijyou_koukando = 200"]
 [iscript]
-alert(f.para_sijyou_koukanndo);
+alert(f.para_sijyou_koukando);
 [endscript]
 @jump target=*test2_2
 [s]
@@ -758,7 +758,7 @@ this.kag.config.unReadTextSkip = true
 [eval exp="f.okeiko_gamen = false"]
 ;test中フラグ　一時変数手紙で利用します
 [eval exp="tf.test_sijyou=false"]
-[eval exp="f.para_sijyou_koukanndo = 10"]
+[eval exp="f.para_sijyou_koukando = 10"]
 [call target = *start storage = "01_sijyou_hensuu.ks"]
 [call target = *start storage = "hensuu.ks"]
 ;------タイトルへ戻る
