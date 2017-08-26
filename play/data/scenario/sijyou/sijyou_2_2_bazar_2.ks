@@ -253,12 +253,14 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 (……そういえば、前にも華織様とお買い物に来ましたね)[p]
+[表示準備 storage="bg/anten.jpg"]
 [四条退場]
 #
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [暗転]
+[表示開始 time=100]
 ;セピア
 [背景セピア化]
 [背景_四条_商店]
@@ -267,9 +269,9 @@ $(".1_fore").empty();
 私も華織様を喜ばせたい――[p]
 [暗転]
 [背景セピア化_解除]
-[背景_チャリティ会場出店]
 ;====================
-[表示準備 storage="bg/B4nFWraU42/bg_cyarity.jpg"]
+[表示準備 storage="bg/anten.jpg"]
+[背景_チャリティ会場出店]
 [四条サイズ通常_羽織]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
 [wait time=10]
@@ -277,7 +279,7 @@ $(".1_fore").empty();
 [wait time=10]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
-[表示開始 time=300]
+
 ;====================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
