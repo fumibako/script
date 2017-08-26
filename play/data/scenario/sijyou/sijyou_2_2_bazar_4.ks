@@ -17,6 +17,22 @@ $(".1_fore").empty();
 [メッセージウィンドウ上ボタン表示]
 ;====================================================
 *scene1
+;表示準備
+[eval exp=f.src="'bg/B4nFWraU42/bg_cyarity3.jpg'"]
+
+[表示準備 storage=&f.src]
+[四条_隣_ベース羽織]
+;[四条_隣_眉下げ]
+[chara_mod name="sijyou_tonari_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+;[四条_隣_目伏2]
+[chara_mod name="sijyou_tonari_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+;[四条_隣_口微笑み]
+[chara_mod name="sijyou_tonari_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+[表示開始 time=300]
+
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -47,6 +63,14 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （大丈夫。[sp]お稽古通りにステップを踏めばいいの)[p]
 ;ステップは漢字に変更できない
+;------------------------------------
+[暗転２ storage="bg/bg_syanderia.jpg"]
+[四条退場]
+;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
+[eval exp="f.haikei_credit=''"]
+[暗転２終了]
+;------------------------------------
 #
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
@@ -124,7 +148,18 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
 [背景_チャリティ会場ダンスホール]
+[四条サイズ通常_羽織]
+;[四条眉下げ]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 [freeimage layer=29]
+
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
@@ -136,6 +171,9 @@ $(".1_fore").empty();
 （なんて楽しい時間なのかしら！ [r]
 [sp]大人達がダンスに興じるのも少し分かったかもしれないわ)[p]
 [whosay name="華織" color="olivedrab"]
+;[四条口笑顔]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_warau_s.png" time=0]
+[wait time=10]
 ;↓効果：無し(通常) [主人公効果消]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
@@ -155,17 +193,33 @@ $(".1_fore").empty();
 [wait time=10]
 「ええ、そうですね」[p]
 #
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 華織様と話をしていると[r]
 華やかな雰囲気をもった妙齢の女性が話しかけてきた。[p]
 ;華織様！と読んだ方がいいのか
+
 [whosay name="？？？"]
+;[四条横目]
+[chara_mod name="sijyou_me" storage="sijyou/me_yoko.png" time=0]
+[wait time=10]
 「あら、四条様！」[p]
 [whosay name="華織" color="olivedrab"]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条目大]
+[chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+[wait time=10]
 「森永夫人。 お元気でしたか？」[p]
 [whosay name="森永夫人"]
+;[四条眉下げ]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 「ええ。[sp]お兄様から御内約されたとお聞きしておりましたが[r]
 [sp]本当でしたのね！[r]
 [sp]おめでとうございます。[sp]とても嬉しいことですわ」[p]
@@ -178,6 +232,9 @@ $(".1_fore").empty();
 すかさず華織様が互いの紹介を始めた。[p]
 ;知人=四条兄の元手紙の相手。 婚約しようとしたしたが上手くいかず。華織より二歳年上
 [whosay name="華織" color="olivedrab"]
+;[四条目伏2]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
 「[名前]さん、こちらは兄の知人の森永様です。[r]
 [sp]森永夫人、お聞きしていると思いますが、[r]
 [sp]僕の婚約者の[名字]家の[名前]さんです」[p]
@@ -187,6 +244,9 @@ $(".1_fore").empty();
 [wait time=10]
 「[名前]と申します」[p]
 [whosay name="森永夫人"]
+;[四条目にこ]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
 「私は森永と申します。[r]
 [sp]華織様のお兄様の知人といった所ですわ。[r]
 [sp][名字]様は、お可愛い方だとこと。[sp]華織様はお幸せね！」[p]
@@ -201,6 +261,9 @@ $(".1_fore").empty();
 [主人公目パチ1回]
 [sp]ところで、華織様。[sp]今日はお兄様はいらっしゃらないの？」[p]
 [whosay name="華織" color="olivedrab"]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 「いえ、今日は兄は不在でして」[p]
 [whosay name="森永夫人"]
 [主人公目パチ1回]
@@ -212,6 +275,9 @@ $(".1_fore").empty();
 何かを感じ取った華織様は私を気遣い、小さな声で謝った。[p]
 [whosay name="華織" color="olivedrab"]
 「申し訳ございませんが[名前]さん。[r]
+;[四条目伏2]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
 [sp]混み合った話になりそうなので、少しお待ち頂いても[r]
 [sp]よろしいでしょうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -225,6 +291,8 @@ $(".1_fore").empty();
 [wait time=10]
 （少しお待ちしましょう。[r]
 [sp]これも夫人となったらお勤めの[ruby text=ひと]一つになるでしょう)[p]
+[四条退場]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -328,12 +396,26 @@ $(".1_fore").empty();
 [wait time=10]
 [sp]でも、はしゃぎ過ぎると失敗しそうだわ）[p]
 
+[表示準備 storage=&f.src]
+[四条_隣_ベース羽織]
+;[四条_隣_眉下げ]
+[chara_mod name="sijyou_tonari_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+;[四条_隣_目伏2]
+[chara_mod name="sijyou_tonari_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+;[四条_隣_口微笑み]
+[chara_mod name="sijyou_tonari_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+[表示開始 time=300]
+
 [whosay name="華織" color="olivedrab"]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「[名前]さん、お待たせしました。[r]
 [sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」[p]
+[四条退場]
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -368,6 +450,19 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [背景_チャリティ会場ダンスホール]
+[表示準備 storage=&f.src]
+[四条_隣_ベース羽織]
+;[四条_隣_眉困り]
+[chara_mod name="sijyou_tonari_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条_隣_目伏2]
+[chara_mod name="sijyou_tonari_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+;[四条_隣_口微笑み]
+[chara_mod name="sijyou_tonari_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+[表示開始 time=300]
+
 もう一度、踊ることにした。[p]
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -390,10 +485,14 @@ $(".1_fore").empty();
 [whosay name="華織" color="olivedrab"]
 「そうですか？ [r]
 [sp]……では、いきましょうか」[p]
+[四条退場]
 #
 私は、曲の合間をみて、華織様と共に[ruby text=ホー]広[ruby text=ル]場の円舞に滑り込んだ。[p]
 ;------------------------------------
 *scene5
+;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
+
 ;キツイ内容でしょうか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：にっこり [主人公目にこ]
@@ -515,7 +614,7 @@ $(".1_fore").empty();
 私は、恥ずかしさと悔しさのあまり、[ruby text=ホール]広場を抜け出した。[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *scene6
-[背景_チャリティ会場回廊] 
+[背景_チャリティ会場回廊]
 #
 回廊の柱にもたれると、私は顔を[ruby text=おお]覆い隠した。[p]
 [主人公ポーズ両手]
@@ -530,6 +629,7 @@ $(".1_fore").empty();
 
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、ここにいらしたのですね」[p]
+
 #
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -542,8 +642,26 @@ $(".1_fore").empty();
 [wait time=10]
 涙を抑え、顔を見せる。[r]
 [主人公ポーズ通常]
+
+[表示準備 storage=&f.src]
+[四条_隣_ベース羽織]
+;[四条_隣_眉困り]
+[chara_mod name="sijyou_tonari_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条_隣_目伏2]
+[chara_mod name="sijyou_tonari_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+;[四条_隣_口微笑み]
+[chara_mod name="sijyou_tonari_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+[表示開始 time=300]
+
+
 そこには華織様が、私を心配そうに見つめ立っていた。[p]
 ;[p]の後に華織アップ
+
+
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
