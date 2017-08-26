@@ -108,8 +108,8 @@ $(".1_fore").empty();
 ;【SE】花火(打ち上げ：大)
 [playse storage=hanabi_utiage_big.ogg loop=false ]
 [暗転２ storage="bg/sijyou_hanabi2.jpg"]
-;[四条_顔up_眉通常下]
-[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_futuu_sita.png" time=0]
+;[四条_顔up_眉下げ]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
 [wait time=10]
 [暗転２終了]
 驚いて見上げれば、大輪の花火が、陰った空を[r]
@@ -165,10 +165,6 @@ $(".1_fore").empty();
 [current layer="message0"]
 @layopt layer=message0 visible=true
 ;------------------------------------------------
-[四条_顔up_ベース羽織]
-;[四条_顔up_眉困り]
-[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_komari.png" time=0]
-[wait time=10]
 ;[四条_顔up_目伏2]
 [chara_mod name="sijyou_up_me" storage="sijyou/me_fusi2.png" time=0]
 [wait time=10]
@@ -242,8 +238,8 @@ $(".1_fore").empty();
 ;[四条_顔up_目閉じ]
 [chara_mod name="sijyou_up_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
-;[四条_顔up_口笑顔]
-[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_warau_s.png" time=0]
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
 「でも、今日の[名前]さんは、[r]
 [sp]いつもと違って華やかで、[r]
