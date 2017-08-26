@@ -132,8 +132,18 @@ $(".1_fore").empty();
 [wait time=10]
 あの時の華織様の横顔が忘れずに心に残っている。[p]
 [cm]
+;---------------------------------------------
+;全画面表示
+@layopt layer=fix visible=false
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
 [暗転２ storage="bg/sijyou_hanabi1.jpg"]
-[テキスト全画面白文字無背景]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;---------------------------------------------
 ;背景 線香花火
 [背景_線香花火]
 花火に照らされた華織様の横顔。[p]
@@ -141,12 +151,15 @@ $(".1_fore").empty();
 [playse storage=hanabi_senkou.ogg loop=false ]
 ふとした瞬間が、とても綺麗な華織様への[r]
 届かないはずだった淡い思い。[p]
-[暗転２終了]
 [背景_チャリティ会場休憩所夜]
-[イベントシーン構築]
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[wait time=10]
-[表示準備 storage="bg/B4nFWraU42/sijyou_bazaar_kyukeijyo.jpg"]
+;------------------------------------------------
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+@layopt layer=message0 visible=true
+;------------------------------------------------
 [四条_顔up_ベース羽織]
 ;[四条_顔up_眉困り]
 [chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_komari.png" time=0]
@@ -157,16 +170,10 @@ $(".1_fore").empty();
 ;[四条_顔up_口微笑み]
 [chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
-[表示開始 time=300]
-[主人公ポーズ通常]
-[wait time=10]
-[主人公通常]
 [wait time=10]
 [主人公目閉じ]
 [wait time=10]
-[iscript]
-$('.junbi_girl').remove();
-[endscript]
+[暗転２終了]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (私は華織様に憧れて、華織様のように）[p]
