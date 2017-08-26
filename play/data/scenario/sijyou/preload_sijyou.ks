@@ -306,8 +306,14 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 ;//////使用背景メモ　上が実行されればいらない//////////////////////////////
+[preload storage="data/fgimage/bg/bg_okeiko.jpg" wait=true]
+[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_omoide.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity7.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_bazaar_syokudou.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_bazaar_kyukeijyo.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/sijyou_bazaar_kairou.jpg" wait=true]
 [preload storage="data/fgimage/bg/sijyou_hanabi2_1.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
