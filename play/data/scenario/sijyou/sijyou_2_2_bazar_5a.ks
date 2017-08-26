@@ -16,7 +16,7 @@ $(".1_fore").empty();
 [主人公通常]
 [プリロード画面消去]
 [iscript]
-f.src = $(".base_fore").attr('src');
+f.src = $(".base_fore").attr('src',$('base_fore').css('background-image');
 alert(f.src);
 [endscript]
 [メッセージウィンドウ上ボタン表示]
