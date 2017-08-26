@@ -565,6 +565,38 @@ $(".1_fore").empty();
 [if exp="f.okeiko_gamen == true"]
 @jump storage="sijyou/sijyou_2_2_bazar_3.ks"
 [else]
+#
+テストページからプレイしています。次のシナリオに移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump storage="sijyou/sijyou_2_2_bazar_2.ks" target=*scene3
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+テストを終了します。[p]
+[cm]
 [イベントシーン終了]
 @layopt layer=fix visible=true
 @jump storage="test_sijyou.ks"
