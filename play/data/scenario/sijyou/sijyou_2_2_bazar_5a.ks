@@ -249,7 +249,7 @@ $(".1_fore").empty();
 [whosay name=四条幸代]
 「それに……私自身は思ってもいないことですが、[r]
 [sp]私の親は、あまり[華衣]様をよく思われていないので、[r]
-[sp]きっと私はあの人に巡り合わないでしょう」[p]
+[sp]きっと私は、あの人に巡り合わないでしょう」[p]
 
 [whosay name=四条幸代]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -257,7 +257,8 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 「あ、好まない理由については、その……ぞ、存じあげておりません。[r]
-[sp]ですが、華衣様はとても気の良い方なので、[名字]様もよしなに」[p]
+[sp]ですが、[華衣]様はとても気の良い方なので、[r]
+[sp][名字]様もよしなに」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
@@ -272,8 +273,8 @@ $(".1_fore").empty();
 「存じております。[r]
 [sp]私も少し気懸りでしたので……安心しています」[p]
 #
-幸代様は、一瞬、目を大きくした後、[r]
-安心したように目を細くして微笑まれた。[p]
+幸代様は、一瞬、目を大きくした後、安心したように目を細くして[r]
+微笑まれた。[p]
 
 [whosay name=四条幸代]
 ;↓目：通常 [主人公目通常]
@@ -334,7 +335,7 @@ $(".1_fore").empty();
 （うまく伝わらなくても……ですか。[r]
 [sp]そうですね、焦ることはないのだわ)[p]
 [iscript]
-f.src = $(".base").attr('src'); 
+f.src = $(".base_fore").attr('src'); 
 [endscript]
 [whosay name="華織" color="olivedrab"]
 [表示準備 storage=&f.src]
