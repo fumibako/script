@@ -505,8 +505,9 @@ $(".1_fore").empty();
 華織様の熱の篭った眼差しには、 お見合いの時とは違って、[r]
 大人の愛情を感じられた。[p]
 [四条退場準備 storage="bg/bg_genkan.jpg" time=100]
-[fadeoutbgm time=3000]
 [wait time=50]
+[fadeoutbgm time=3000]
+[暗転]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="sijyou/sijyou_2_2_bazar_2.ks" target=*scene3
 [else]
