@@ -133,7 +133,7 @@ $(".1_fore").empty();
 [wait time=10]
 ;====================
 [暗転２終了]
-[ruby text=チャリ]慈[ruby text=ティー]善バザー売店[p]
+―― [ruby text=チャリ]慈[ruby text=ティー]善バザー会場。[p]
 ;------------------------------------------------
 *scene4
 [whosay name=&sf.girl_namae color="#cf5a7f"]
