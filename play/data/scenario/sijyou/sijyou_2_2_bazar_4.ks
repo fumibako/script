@@ -415,7 +415,7 @@ $(".1_fore").empty();
 [wait time=10]
 「[名前]さん、お待たせしました。[r]
 [sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」[p]
-[四条退場]
+[四条_隣_退場]
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -485,7 +485,7 @@ $(".1_fore").empty();
 [whosay name="華織" color="olivedrab"]
 「そうですか？ [r]
 [sp]……では、いきましょうか」[p]
-[四条退場]
+[四条_隣_退場]
 #
 私は、曲の合間をみて、華織様と共に[ruby text=ホー]広[ruby text=ル]場の円舞に滑り込んだ。[p]
 ;------------------------------------
@@ -717,32 +717,51 @@ $(".1_fore").empty();
 ;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
-恥ずかしさに打ち震えていると、光とともに大きな音が鳴り響いた。[p]
-;背景変更
-#
+恥ずかしさに打ち震えていると、光とともに大きな音が鳴り響いた。
 ;↓目：通常より大きめに開いた状態 [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
+[p]
+;-------------------------------------------------------
+[暗転２ storage="bg/sijyou_hanabi1.jpg"]
+@layopt layer=fix visible=false
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
 驚いて見上げれば、大輪の花火が陰った空を煌びやかに照らしていた。[p]
-[whosay name="華織" color="olivedrab"] 
+【華織】[r]
 「違いますよ。[r]
 [sp]今日の[名前]さんはとても美しくて、[r]
-[sp]あの花火のように、他の方の視線を引いてしまったようなのです」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
+[sp]あの花火のように、他の方の視線を引いてしまったようなのです」[r]
+[r]
+【[emb exp="sf.girl_namae"]】[r]
+「華織様……？」[p]
+;驚き照れ
+どうしてか騒がしいはずの花火の音が聞こえず、[r]
+華織様の胸の鼓動だけが鳴り響く――。[p]
+;------------------------------------------------
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-;↓口：通常 [主人公口通常]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
-「……」[p]
-;驚き照れ
-#
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-どうしてか騒がしいはずの花火の音が聞こえず、[r]
-華織様の胸の鼓動だけが鳴り響く。[p]
+;------------------------------------------------
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+@layopt layer=message0 visible=true
+[暗転２終了]
+;------------------------------------------------
+
+
+
 ;目閉じ照れ
 [whosay name="華織" color="olivedrab"] 
 「迎えにいった時の[名前]さんの表情も、[r]
