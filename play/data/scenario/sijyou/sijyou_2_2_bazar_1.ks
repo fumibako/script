@@ -59,7 +59,7 @@ $(".1_fore").empty();
 普段の華道の仕事とは違って面白さがありました。[p]
 
 また、僕が作業していた隣では[r]
-ご婦人方が揃って、楽し気に鞠や簪、風車などの工芸品を[r]
+ご婦人方が揃って、楽し気に鞠や[ruby text=かんざし]簪、風車などの工芸品を[r]
 数多く出品される準備をしていました。[r]
 [r]
 品揃えもそうですが、ご婦人方の[ruby text=チャリ]慈[ruby text=ティー]善バザーへの意気込みから、[r]
@@ -252,14 +252,7 @@ $(".1_fore").empty();
 [sp]学んだことはないわ。[sp]私にできるかしら？)[p]
 [endif]
 ;--------------------------------------------------
-[if exp="f.para_sijyou_koukando < 150 "]
-[whosay name=磯野]
-;↓眉：通常 [主人公眉通常]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-「旦那様も私も、お嬢様の頑張りを応援しています。[r]
-[sp]それでは、失礼いたします」[p]
-[else]
+[if exp="f.para_sijyou_koukando > 150 "]
 [whosay name=磯野]
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
@@ -271,6 +264,13 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 （ふぅ。　立派な淑女になるというのは、大変ですわ）[p]
+[else]
+[whosay name=磯野]
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+「旦那様も私も、お嬢様の頑張りを応援しています。[r]
+[sp]それでは、失礼いたします」[p]
 ;礼法が低い場合おわり
 [endif]
 *seen_next1
@@ -366,7 +366,8 @@ $(".1_fore").empty();
 「磯野、どこかおかしいところはないかしら？」[p]
 
 #
-磯野からは『もう、気にしなくても良い』と言われたが、今日ばかりは違う。[p]
+磯野からは『もう、気にしなくても良い』と言われたが、[r]
+今日ばかりは違う。[p]
 より大人になる為の一歩。[r]
 磯野も、それを感じているのか、しっかりと私を見据えた。[p]
 [whosay name=磯野]
@@ -422,9 +423,9 @@ $(".1_fore").empty();
 [autosave]
 #
 *scene2
+[暗転２]
 [背景_主人公邸_玄関]
 ;====================
-[表示準備 storage="bg/bg_genkan.jpg"]
 [四条サイズ通常_羽織]
 ;[四条眉驚き]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_odoroki.png" time=0]
@@ -438,7 +439,7 @@ $(".1_fore").empty();
 ;[四条頬染め]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=10]
-[表示開始 time=300]
+[暗転２終了]
 ;====================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
@@ -514,6 +515,39 @@ $(".1_fore").empty();
 [if exp="f.okeiko_gamen == true"]
 @jump storage="sijyou/sijyou_2_2_bazar_2.ks" target=*scene3
 [else]
+#
+テストページからプレイしています。次のシナリオに移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump storage="sijyou/sijyou_2_2_bazar_2.ks" target=*scene3
+[s]
+
+*jump_no
+[er]
+[current layer="message0"]
+[resetfont]
+「いいえ」[r]
+テストを終了します。[p]
+[cm]
+;------------------------------------------------------
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [endif]
