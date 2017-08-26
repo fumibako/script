@@ -308,6 +308,7 @@
 ;//////使用背景メモ　上が実行されればいらない//////////////////////////////
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity7.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity.jpg" wait=true]
+[preload storage="data/fgimage/bg/sijyou_hanabi2.jpg" wait=true]
 @jump target=end_sub
 ;[return]へGO
 ;==========================================================================
