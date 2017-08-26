@@ -658,8 +658,11 @@ $(".1_fore").empty();
 
 
 そこには華織様が、私を心配そうに見つめ立っていた。[p]
-;[p]の後に華織アップ
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+[endif]
 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -713,6 +716,8 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ooake.png" time=0]
 [wait time=10]
 「私が上手く踊れないからですか？」[p]
+;【SE】花火(打ち上げ：中)
+[playse storage=hanabi_utiage_m.ogg loop=false ]
 #
 ;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
@@ -734,6 +739,9 @@ $(".1_fore").empty();
 [font color=white size=27]
 驚いて見上げれば、大輪の花火が陰った空を[r]
 煌びやかに照らしていた。[p]
+;【SE】花火(打ち上げ：小)
+[playse storage=hanabi_utiage_s.ogg loop=false ]
+
 [四条_隣_退場]
 【華織】[r]
 「違いますよ。[r]
@@ -745,7 +753,6 @@ $(".1_fore").empty();
 「華織様……？」[p]
 ;驚き照れ
 どうしてか騒がしいはずの花火の音が聞こえず、[r]
-[e]
 華織様の胸の鼓動だけが鳴り響く――。[p]
 ;------------------------------------------------
 ;↓効果：頬染め [主人公頬染め]
@@ -765,9 +772,10 @@ $(".1_fore").empty();
 ;[四条_顔up_口微笑み]
 [chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
-;[四条_隣_頬染め]
-[chara_mod name="sijyou_tonari_emo" storage="sijyou/emo_hohosome.png" time=0]
+;[四条_顔up_頬染め]
+[chara_mod name="sijyou_up_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=10]
+
 ;------------------------------------------------
 [resetfont]
 @layopt layer=message0 visible=false
