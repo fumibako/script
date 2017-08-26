@@ -337,7 +337,6 @@ $(".1_fore").empty();
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-[freeimage layer=29]
 [背景_チャリティ会場食堂]
 
 [四条_顔up_羽織]
@@ -350,6 +349,9 @@ $(".1_fore").empty();
 ;[四条_顔up_口微笑み]
 [chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
+
+[freeimage layer=29]
+
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;------------------------------------------------
@@ -687,9 +689,7 @@ $(".1_fore").empty();
 ;[四条_顔up_頬染め]
 [chara_mod name="sijyou_up_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=10]
-[四条_顔up_退場]
 ;ふふと笑って暗転
-[暗転]
 @jump target=comon_rute
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *seet_rute
@@ -744,8 +744,6 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
 「まあ！[sp]話に聞いてましたが色々とメニュウがありますのね」[p]
-[四条_顔up_退場]
-[暗転]
 #
 *comon_rute
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -755,7 +753,8 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
+[四条_顔up_退場]
 [背景_チャリティ会場ダンスホール]
 @layopt layer=message0 visible=true
 [current layer="message0"]
@@ -763,12 +762,14 @@ $(".1_fore").empty();
 しばらくの間、昼食を頂きながら、話し合った。[p]
 ;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
 ;------------------------------------------------
-[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
+[wait time=50]
 夕方に近づく頃――。[r]
 華族会館の周りでは、ダンスパーティーの知らせを[r]
 聞いてか、[r]
 紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
+[wait time=50]
 私達も、貴賓室で身だしなみを整えた後、[r]
 二階のダンスホールへと向かった。[p]
 ;------------------------------------------------
