@@ -107,7 +107,7 @@ $(".1_fore").empty();
 窓の外から光とともに大きな音が鳴り響いた。[p]
 ;【SE】花火(打ち上げ：大)
 [playse storage=hanabi_utiage_big.ogg loop=false ]
-[暗転２ storage="bg/sijyou_hanabi2.jpg"]
+[暗転２ storage="bg/sijyou_hanabi2_1.jpg"]
 ;[四条_顔up_眉下げ]
 [chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
 [wait time=10]
