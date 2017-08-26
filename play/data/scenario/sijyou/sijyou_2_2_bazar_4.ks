@@ -65,7 +65,7 @@ $(".1_fore").empty();
 ;ステップは漢字に変更できない
 ;------------------------------------
 [暗転２ storage="bg/bg_syanderia.jpg"]
-[四条退場]
+[四条_隣_退場]
 ;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
 [eval exp="f.haikei_credit=''"]
