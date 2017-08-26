@@ -723,7 +723,7 @@ $(".1_fore").empty();
 [wait time=10]
 [p]
 ;-------------------------------------------------------
-[暗転２ storage="bg/sijyou_hanabi1.jpg"]
+[暗転２ storage="bg/sijyou_hanabi2_1.jpg"]
 @layopt layer=fix visible=false
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
@@ -732,16 +732,20 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
-驚いて見上げれば、大輪の花火が陰った空を煌びやかに照らしていた。[p]
+驚いて見上げれば、大輪の花火が陰った空を[r]
+煌びやかに照らしていた。[p]
+[四条_隣_退場]
 【華織】[r]
 「違いますよ。[r]
 [sp]今日の[名前]さんはとても美しくて、[r]
-[sp]あの花火のように、他の方の視線を引いてしまったようなのです」[r]
+[sp]あの花火のように、[r]
+[sp]他の方の視線を引いてしまったようなのです」[r]
 [r]
 【[emb exp="sf.girl_namae"]】[r]
 「華織様……？」[p]
 ;驚き照れ
 どうしてか騒がしいはずの花火の音が聞こえず、[r]
+[e]
 華織様の胸の鼓動だけが鳴り響く――。[p]
 ;------------------------------------------------
 ;↓効果：頬染め [主人公頬染め]
@@ -749,6 +753,20 @@ $(".1_fore").empty();
 [wait time=10]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+
+[四条_顔up_ベース羽織]
+;[四条_顔up_眉困り]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条_顔up_目伏2]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+;[四条_隣_頬染め]
+[chara_mod name="sijyou_tonari_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=10]
 ;------------------------------------------------
 [resetfont]
