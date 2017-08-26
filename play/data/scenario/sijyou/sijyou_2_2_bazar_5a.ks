@@ -15,13 +15,11 @@ $(".1_fore").empty();
 [主人公ポーズ通常]
 [主人公通常]
 [プリロード画面消去]
-[iscript]
-f.src = $('<img />').attr('src',$('.base_fore').css('background-image'));
-alert(f.src);
-[endscript]
 [メッセージウィンドウ上ボタン表示]
 ;====================================================
 *scene1
+;背景準備設定
+[eval exp="f.src='../fgimage/bg/B4nFWraU42/bg_cyarity3.jpg'"]
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：閉じた状態 [主人公目閉]
