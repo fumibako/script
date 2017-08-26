@@ -18,6 +18,9 @@ $(".1_fore").empty();
 [メッセージウィンドウ上ボタン表示]
 ;====================================================
 *seen_prezent
+[iscript]
+$(".29_fore").empty();
+[endscript]
 @layopt layer=fix visible=true
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：ほほえみ [主人公口ほほえみ]
