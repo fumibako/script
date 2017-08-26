@@ -69,7 +69,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 ほんの少しの間を置いて、[r]
-冬の日、華衣様が子供達の姉を探しに行った記憶が蘇ってきた。
+冬の日、[華衣]様が子供達の姉を探しに行った記憶が蘇ってきた。
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
@@ -214,7 +214,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （でも、[r]
-[sp]もし、幸代様が華衣さんを気に掛けて下さって[r]
+[sp]もし、幸代様が[華衣]さんを気に掛けて下さって[r]
 [sp]いらっしゃるのでしたら……)[p]
 #
 ;↓目：伏目 [主人公目伏]
@@ -467,7 +467,7 @@ $(".1_fore").empty();
 ;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-小さな天然石を綴ってミルトリアの形に模した、華やかな[ruby text="かんざし"]簪だった。[r]
+小さな天然石を[ruby text="つづ"]綴ってミルトリアの形に模した、華やかな[ruby text="かんざし"]簪だった。[r]
 手に取って見ると花の細工がキラキラと揺れる。[p]
 ;宝石だと工芸品とは言わないので天然石くらい
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -480,18 +480,18 @@ $(".1_fore").empty();
 （なんて綺麗な石かしら！[sp]それに細工も繊細で上品だわ）
 [p]
 [whosay name="華織" color="olivedrab"]
-「ミルトニアの花の簪です。[sp]ミルトニアの優美な佇まいに、[r]
+「ミルトニアの花の[ruby text="かんざし"]簪です。[sp]ミルトニアの優美な佇まいに、[r]
 [sp][名前]さんを思い浮かべて手に取ってしまいました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
-「ありがとうございます。  大事にいたします」[p]
+「ありがとうございます。[sp]大事にいたします」[p]
 [endif]
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
-（そういえば……四条幸代様に出会ったのでしたわ。[r]
+（そういえば……四条幸代様に出会ったのでしたわ）[p]
 [主人公ポーズ指]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -499,7 +499,7 @@ $(".1_fore").empty();
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-[sp]でも、デェトを楽しみたいし、幸代様ご自身で話されると[r]
+（でも、デェトを楽しみたいし、幸代様ご自身で話されると[r]
 [sp][ruby text="おっしゃ"]仰ってましたから[ruby text="う"]迂[ruby text="かつ"]闊に話さない方が良いのかしら？)[p]
 [四条_顔up_退場]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -697,6 +697,7 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[背景_チャリティ会場食堂]
 ;------------------------------------
 [表示準備 storage=&f.src]
 [四条_顔up_羽織]
