@@ -15,6 +15,10 @@ $(".1_fore").empty();
 [主人公ポーズ通常]
 [主人公通常]
 [プリロード画面消去]
+[iscript]
+f.src = $(".base_fore").attr('src');
+alert(f.src);
+[endscript]
 [メッセージウィンドウ上ボタン表示]
 ;====================================================
 *scene1
@@ -341,10 +345,7 @@ $(".1_fore").empty();
 [wait time=10]
 （うまく伝わらなくても……ですか。[r]
 [sp]そうですね、焦ることはないのだわ)[p]
-[iscript]
-f.src = $(".base_fore").attr('src');
-aleat(f.src);
-[endscript]
+
 [whosay name="華織" color="olivedrab"]
 [表示準備 storage=&f.src]
 [四条_隣_ベース羽織]
