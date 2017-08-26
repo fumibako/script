@@ -555,7 +555,7 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 ;------------------------------------------------
 [if exp="f.okeiko_gamen == true"]
-@jump storage="sijyou/sijyou_2_2_bazar_3.ks"
+@jump storage="sijyou/sijyou_2_2_bazar_3.ks" target=seen_prezent
 [else]
 #
 テストページからプレイしています。次のシナリオに移動しますか？[r]
@@ -579,7 +579,7 @@ $(".1_fore").empty();
 「はい」[r]
 移動します。[p]
 [cm]
-@jump storage="sijyou/sijyou_2_2_bazar_2.ks" target=*scene3
+@jump storage="sijyou/sijyou_2_2_bazar_3.ks" target=seen_prezent
 [s]
 
 *jump_no
