@@ -879,6 +879,13 @@ $('.base_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0
 [bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity.jpg" time=50]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [endmacro]
+
+[macro name=背景_チャリティ会場食堂]
+;【背景】背景バザー食堂
+[bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/sijyou_bazaar_syokudou.jpg" time=50]
+[eval exp="f.src='bg/B4nFWraU42/sijyou_bazaar_syokudou.jpg'"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[endmacro]
 ;==============
 [macro name=背景_チャリティ会場回廊]
 [bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/sijyou_bazaar_kairou.jpg" time=50]
@@ -889,7 +896,7 @@ $('.base_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0
 ;==============
 [macro name=背景_チャリティ会場休憩所夜]
 [bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/sijyou_bazaar_kyukeijyo.jpg" time=50]
-[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [endmacro]
 [macro name=背景_チャリティ会場ダンスホール]
 [bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_cyarity3.jpg" time=50]
