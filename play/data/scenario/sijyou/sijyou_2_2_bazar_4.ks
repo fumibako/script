@@ -558,7 +558,7 @@ $(".29_fore").empty();
 [whosay name="女性"]
 「きゃぁっ」[p]
 #
-一人の男性を主軸にして、[ruby text=ホー]広[ruby text=ル]場の円舞がパタパタと乱れ、[r]
+一人の男性を主軸にして、[ruby text=ホー]広[ruby text=ル]間の円舞がパタパタと乱れ、[r]
 静まり返っていく。[p]
 #
 ;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
@@ -587,7 +587,6 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 ;↓口：小さく開けた状態。発言時などに… [主人公口開]
-; 毎発言時だとうるさく見えそうなので、注目してほしい発言や変化をつけたい時などに使用しています
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 「あ……」[p]
@@ -615,7 +614,7 @@ $(".29_fore").empty();
 ;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
-私は、恥ずかしさと悔しさのあまり、[ruby text=ホール]広場を抜け出した。[p]
+私は、恥ずかしさと悔しさのあまり、[ruby text=ホー]広[ruby text=ル]間を抜け出した。[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *scene6
 [背景_チャリティ会場回廊]
@@ -626,7 +625,7 @@ $(".29_fore").empty();
 (はしゃぎすぎてしまったわ……どうしてこんな事を？)[p]
 #
 恥ずかしさで涙を[ruby text=こぼ]零すと、[r]
-隣の[ruby text=ホー]広[ruby text=ル]場から、楽しげな楽曲が流れ始める。[p]
+隣の[ruby text=ホー]広[ruby text=ル]間から、楽しげな楽曲が流れ始める。[p]
 #
 自身の悲しみと周囲の楽しさの落差があまりにも違いすぎて、[r]
 場違いな気持ちが、より一層、高まってしまった。[p]
