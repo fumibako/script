@@ -540,7 +540,7 @@ $(".1_fore").empty();
 ;[四条_顔up_口微笑み]
 [chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
-[表示開始 time=300]
+[表示開始 time=100]
 ;====================
 
 ;↓眉：通常 [主人公眉通常]
@@ -773,7 +773,10 @@ $(".1_fore").empty();
 私達も、貴賓室で身だしなみを整えた後、[r]
 二階のダンスホールへと向かった。[p]
 ;------------------------------------------------
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_syanderia.jpg" time=50]
+[image name="syande" layer=29 x=0 y=0 zindex=0 storage="bg/bg_syanderia.jpg" time=50]
+[iscript]
+$('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)','-moz-filter':'brightness(0.5)','-ms-filter':'brightness(1.5)'});
+[endscript]
 シャンデリアの煌めきを放つホール。[r]
 洋城のような大テラス窓が、憧れの世界にいる事を感じさせる。[p]
 流行りのロープデコルテ、[r]
