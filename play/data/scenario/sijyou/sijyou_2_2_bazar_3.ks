@@ -797,8 +797,7 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 ;------------------------------------------------
 
 [if exp="f.okeiko_gamen == true"]
-
-
+@jump storage="sijyou/sijyou_2_2_bazar_5.ks"
 [else]
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
