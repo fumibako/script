@@ -1,4 +1,4 @@
-﻿﻿;◆手紙到着判定処理開始
+﻿﻿﻿;◆手紙到着判定処理開始
 *fumi_toutyaku_hantei_all
 ;[emb exp="f.hantei_event_storage='hantei_fumi_toutyaku.ks 手紙到着判定開始'"]
 ;[変数ログ表示]
@@ -797,6 +797,13 @@ f.okeiko_month_kansuuji="三月 ";
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_26
 [endif]
+
+;◆↓手紙一通分の到着判定処理(開始)：『 心の音色 』2月4週 お箏80以上、11_4文矢手紙後のお箏練習後のセリフを見ている、2月にお箏練習を2回以上
+[if exp="(f.okeiko_month == 2 && f.okeiko_week == 4) && f.para_shujinkou_j_koto >= 80 && f.fumi_fumiya_11_4 == 4 && f.para_shujinkou_koto_kaisuu >= 2 && f.fumi_toutyaku_hujieda[30] == 0 && f.hujieda_au == 1"]
+  [call target=*hujieda_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_30
+[endif]
+
 *fumi_toutyaku_hantei_hujieda_owari
 
 *fumi_toutyaku_hantei_kobetu_owari
@@ -811,6 +818,14 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku_oaite.push('三宮様')"]
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_tokiko_katuraginomiya
+[endif]
+;=======================================================================================
+;◆藤枝ルート１２月１週『 恋は、泡沫の夢、されど 』
+;=======================================================================================
+[if exp="(f.okeiko_month == 12 && f.okeiko_week == 1) && f.fumi_toutyaku_tokiko[1] == 0 && f.hujieda_au == 1"]
+	[eval exp="f.fumi_toutyaku_oaite.push('三宮様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_tokiko_hujieda
 [endif]
 *fumi_toutyaku_hantei_owari
 
@@ -900,10 +915,20 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 *katuragi_kyoutu_skip
 ;=======================================================================================
-;◇◇その他の方々手紙到着判定(今のところなし)◇◇
+;◇◇その他の方々手紙到着判定◇◇
 ;=======================================================================================
 *fumi_toutyaku_hantei_etc
-
+*fumi_toutyaku_hantei_fumiya
+;=======================================================================================
+;◇◇文矢手紙到着判定◇◇
+;=======================================================================================
+;◆11月4週　藤枝ルート(f.fumi_toutyaku_tokiko[5]はエラー防止のため時子さんの配列を借りています)
+[if exp="f.okeiko_month == 11 && f.okeiko_week == 4 && f.fumi_toutyaku_tokiko[5] == 0 && f.hujieda_au == 1"]
+	[eval exp="f.fumi_toutyaku_oaite.push('文矢様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_fumiya_1
+[endif]
+*fumi_toutyaku_hantei_fumiya_owari
 *fumi_toutyaku_hantei_etc_owari
 
 *hantei_fumi_toutyaku_end

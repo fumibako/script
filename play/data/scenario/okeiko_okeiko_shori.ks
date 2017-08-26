@@ -62,6 +62,10 @@
 [eval exp="f.okeiko_kamoku='koto'"]
 [eval exp="f.okeiko_kamoku_j='お箏'"]
 [call target="*okeiko_shori"]
+;藤枝ルート11月4週かつ文矢手紙後の主人公のセリフを見た状態でお箏の練習をした場合の変数処理
+[if exp="(f.okeiko_month == 11 && f.okeiko_week == 4) && f.fumi_fumiya_11_4 == 2 && f.hujieda_au == 1"]
+	[eval exp="f.fumi_fumiya_11_4 = 3"]
+[endif]
 @jump storage="okeiko_hyouji.ks" target=*draw_button_system
 [s]
 

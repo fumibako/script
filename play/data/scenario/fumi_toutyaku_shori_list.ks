@@ -1738,6 +1738,25 @@ f.hensin_list_hairetsu[4][28] = -1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
 
+*fumi_toutyaku_hujieda_30
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「心の音色」　藤枝　肇 ";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「心の音色」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi_koto");
+f.fumi_list_all_location_taishou.push(4);
+f.fumi_list_all_location_fumi.push(29);
+f.fumi_list_hujieda_location_fumi.push(29);
+f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
+f.fumi_list_hujieda_target.push("*hujieda_fumi_koto");
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_hujieda[30]=1;
+f.hensin_list_hairetsu[4][29] = -1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
+
+
 ;=============================================
 ;◆兄や友人、その他のキャラクターからの手紙
 ;=============================================
@@ -1755,6 +1774,22 @@ f.fumi_all_number=f.fumi_all_number + 1;
 f.fumi_toutyaku_tokiko[0] = 1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka
+;=============================================
+;◆時子さんからの手紙：藤枝ルート１２月１週
+;=============================================
+*fumi_toutyaku_tokiko_hujieda
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「恋は、泡沫の夢、されど」　三宮 時子";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*fumi_tokiko_hujieda_12_1");
+f.fumi_list_all_location_taishou.push(6);
+f.fumi_list_all_location_fumi.push(2);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_tokiko[1] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka
+
 ;=============================================
 ;◆飛鳥紗代子さんからの手紙：
 ;=============================================
@@ -1835,6 +1870,24 @@ f.fumi_all_number=f.fumi_all_number + 1;
 f.fumi_toutyaku_asuka[5] = 1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
+
+;=============================================
+;◆兄（文矢）からの手紙：
+;=============================================
+*fumi_toutyaku_fumiya_1
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「答えを出してごらん」 文矢";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*fumi_fumiya_hujieda_11_4");
+f.fumi_list_all_location_taishou.push(5);
+f.fumi_list_all_location_fumi.push(0);
+f.fumi_all_number=f.fumi_all_number + 1;
+;↓到着判定にはhensuu.ksで定義済の配列が必要かつ文矢の配列は無いため時子さんの配列を借りています(今からhensuu.ksに追加するとロードエラーになってしまうので避けます)
+f.fumi_toutyaku_tokiko[5] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_fumiya_owari
+
 
 ;=============================================
 ;5文矢、6時子、7飛鳥紗代子、8侍従、9葛城宮妃殿下、10皇后さま、11従妹宮f.fumi_list_all_location_taishou.push();
