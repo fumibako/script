@@ -27,7 +27,7 @@ $(".1_fore").empty();
 ;店員と分かるまで遅い
 #
 陳列棚の前で華織様への贈り物を探している私に[r]
-突如、慈善バザーの売り子が名を尋ねてきた。
+突如、[ruby text=チャリ]慈[ruby text=ティー]善バザーの売り子が名を尋ねてきた。
 [主人公目パチ1回]
 [p]
 [whosay name=女性の売り子]
@@ -47,7 +47,7 @@ $(".1_fore").empty();
 (どなたかしら？)[p]
 [whosay name=四条親戚]
 「突然、話し掛けて申し訳ございません。[r]
-[sp]私は四条家の親戚にあたる四条幸代という[ruby text=もの]者です」[p]
+[sp]私は四条家の親戚にあたる四条[ruby text=ゆき]幸[ruby text=よ]代という[ruby text=もの]者です」[p]
 ;------------------------------------------------
 ;華衣、エンカンの飴屋のイベントを見ていない場合sijyou_sansaku4.ks
 [if exp="f.event_machi_sijyou[4] == 1"]
@@ -563,7 +563,7 @@ $(".1_fore").empty();
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
-「ああ、やはり[ruby texy=チャリ]慈[ruby texy=ティー]善バザーにいらっしゃってましたか。[r] 
+「ああ、やはり[ruby text=チャリ]慈[ruby text=ティー]善バザーにいらっしゃってましたか。[r] 
 [sp]叔母様は慈善活動に熱心でいらっしゃるので、娘にあたる幸代様も[r]
 [sp]来られると思っていましたよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -620,7 +620,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 ふと、顔をあげると華織様は、何やら小さく呟きながら、[r]
-一人ウンウンと[ruby texy=うな]唸っていた。[p]
+一人ウンウンと[ruby text=うな]唸っていた。[p]
 [whosay name="華織" color="olivedrab"]
 「ただ、[ruby texy=ウ]四条[ruby texy=チ]家の仕来りでは、……近い血縁の親族は[r]
 [sp]なかなか手紙の相手に選ばないので……」[p]
@@ -783,7 +783,7 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 洋城のような大テラス窓が、憧れの世界にいる事を[r]
 感じさせる。[p]
 流行りのロープデコルテ、[r]
-絢爛豪華な振袖を夜会服として身に纏う紳士淑女達。[p]
+[ruby text=けん]絢[ruby text=らん]爛[ruby text=ごう]豪[ruby text=か]華な振袖を夜会服として身に[ruby text=まと]纏う紳士淑女達。[p]
 
 [ruby text=ホー]広[ruby text=ル]間の脇では音楽隊が優雅な曲を流れはじめ、[r]
 集まった人々は徐々に円を描くように[r]
