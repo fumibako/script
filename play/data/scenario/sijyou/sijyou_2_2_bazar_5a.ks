@@ -309,10 +309,11 @@ $(".1_fore").empty();
 
 [whosay name=四条幸代]
 「！……」[p]
+
 [if exp="sf.BGM=='ON'"]
-;【BGM】「いにしえより続く街、太宰府」
-[playbgm storage="dazaifu.ogg" loop=true]
-[eval exp="f.bgm_storage='dazaifu.ogg'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
