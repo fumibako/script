@@ -252,7 +252,7 @@ $(".1_fore").empty();
 [sp]学んだことはないわ。[sp]私にできるかしら？)[p]
 [endif]
 ;--------------------------------------------------
-[if exp="f.para_sijyou_koukanndo < 150 "]
+[if exp="f.para_sijyou_koukando < 150 "]
 [whosay name=磯野]
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
@@ -423,10 +423,6 @@ $(".1_fore").empty();
 #
 *scene2
 [背景_主人公邸_玄関]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
-[wait time=10]
-「お待たせしました、華織様」[p]
 ;====================
 [表示準備 storage="bg/bg_genkan.jpg"]
 [四条サイズ通常_羽織]
@@ -444,6 +440,10 @@ $(".1_fore").empty();
 [wait time=10]
 [表示開始 time=300]
 ;====================
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+「お待たせしました、華織様」[p]
 #
 緊張と、ときめきの満ち[ruby text=しお]汐の中、[r]
 礼法の先生に教えて頂いた通り、背筋を自然かつ美しく伸ばし、[r]
