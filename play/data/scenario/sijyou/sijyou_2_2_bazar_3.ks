@@ -338,26 +338,56 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [freeimage layer=29]
+[背景_チャリティ会場食堂]
+
+[四条_顔up_羽織]
+;[四条_顔up_眉下げ]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+;[四条_顔up_目にこ]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;------------------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私が選んだものは、こちらです」[p]
 [whosay name="華織" color="olivedrab"]
+;[四条_顔up_口笑顔]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_warau_s.png" time=0]
+[wait time=10]
 「[emb exp="f.present_name"]ですか？[r]
 [sp]ありがとうございます。   とても嬉しいです」[p]
 ;------------------栞の場合------------
 [if exp ="f.present_name == '栞'"]
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+;[四条_顔up_目閉じ]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
 「本を読む度に[名前]さんの事を思い浮かべそうです」[p]
 #
+;[四条_顔up_目伏]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_fusi1.png" time=0]
+[wait time=10]
 華織様は穏やかな微笑みをして、私からの贈り物を受け取った。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (喜んでもらったみたいで良かった)[p]
 ;----------------便箋の場合--------------
 [else]
 [whosay name="華織" color="olivedrab"]
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 「使わせて頂きますね。[r]
 [sp]ああ、でも少し、勿体無い気がしてしまいますね」[p]
+;[四条_顔up_眉困り]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 #
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -368,6 +398,9 @@ $(".1_fore").empty();
 [主人公驚]
 「いえ！ 気にせず使って下さい。 その方が私も嬉しいです」[p]
 [whosay name="華織" color="olivedrab"]
+;[四条_顔up_眉下げ]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -379,10 +412,23 @@ $(".1_fore").empty();
 「はい」[p]
 #
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;[四条_顔up_目閉じ]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
 (お返事が楽しみだわ。[sp]喜んでもらったみたいで良かった)[p]
 [endif]
 ;--------------------------------------------------
 [whosay name="華織" color="olivedrab"]
+;[四条_顔up_眉下げ]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+;[四条_顔up_目伏2]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
@@ -453,14 +499,15 @@ $(".1_fore").empty();
 [wait time=10]
 [sp]でも、デェトを楽しみたいし、幸代様ご自身で話されると[r]
 [sp]仰ってましたから迂闊に話さない方が良いのかしら？)[p]
-#
-私は幸代様と会ったことを
+[四条_顔up_退場]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
 [bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [wait time=10]
+#
+私は幸代様と会ったことを
 [eval exp="f.haikei_credit=''"]
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -478,8 +525,22 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[暗転]
-;背景は作成中
+[背景_チャリティ会場食堂]
+;====================
+[表示準備 storage=&f.src]
+[四条_顔up_羽織]
+;[四条_顔up_眉下げ]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+;[四条_顔up_目にこ]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+[表示開始 time=300]
+;====================
+
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -540,6 +601,13 @@ $(".1_fore").empty();
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 #
+;[四条_顔up_眉困り]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条_顔up_目閉じ]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
+
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -569,9 +637,25 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 「華織様？」[p]
-;目大
+
 [whosay name="華織" color="olivedrab"]
-「！失礼しました。 また余計なことを考えてしまいました……」[p]
+;[四条_顔up_眉驚き]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_odoroki.png" time=0]
+[wait time=10]
+;[四条_顔up_目大]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_ake.png" time=0]
+[wait time=10]
+
+「！[sp]失礼しました。 [r]
+[sp]また余計なことを考えてしまいました……」[p]
+
+;[四条_顔up_眉困り]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条_顔up_目伏2]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_fusi2.png" time=0]
+[wait time=10]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -580,11 +664,18 @@ $(".1_fore").empty();
 [sp]今日は大事なひとときですわ」[p]
 ;四条あせり
 [whosay name="華織" color="olivedrab"]
+;[四条_顔up_目にこ]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+;[四条_顔up_汗]
+[chara_mod name="sijyou_up_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
 「そうでしたね。[r]
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [sp]せっかく洋食が味わえる食堂に来たのですから何か頂きましょうか」[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
@@ -593,6 +684,10 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
 「はい」[p]
+;[四条_顔up_頬染め]
+[chara_mod name="sijyou_up_emo" storage="sijyou/emo_hohosome.png" time=0]
+[wait time=10]
+[四条_顔up_退場]
 ;ふふと笑って暗転
 [暗転]
 @jump target=comon_rute
@@ -602,8 +697,20 @@ $(".1_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[暗転]
 ;------------------------------------
+[表示準備 storage=&f.src]
+[四条_顔up_羽織]
+;[四条_顔up_眉下げ]
+[chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
+;[四条_顔up_目にこ]
+[chara_mod name="sijyou_up_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+;[四条_顔up_口微笑み]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+[表示開始 time=300]
+;====================
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
@@ -637,6 +744,8 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
 「まあ！[sp]話に聞いてましたが色々とメニュウがありますのね」[p]
+[四条_顔up_退場]
+[暗転]
 #
 *comon_rute
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -647,22 +756,23 @@ $(".1_fore").empty();
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
-[暗転]
-;背景は作成中
+[背景_チャリティ会場ダンスホール]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
 しばらくの間、昼食を頂きながら、話し合った。[p]
 ;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
 ;------------------------------------------------
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=50]
 夕方に近づく頃――。[r]
 華族会館の周りでは、ダンスパーティーの知らせを[r]
 聞いてか、[r]
 紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 私達も、貴賓室で身だしなみを整えた後、[r]
 二階のダンスホールへと向かった。[p]
-;全画面背景変更　今はない
 ;------------------------------------------------
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_syanderia.jpg" time=50]
 シャンデリアの煌めきを放つホール。[r]
 洋城のような大テラス窓が、憧れの世界にいる事を感じさせる。[p]
 流行りのロープデコルテ、[r]
