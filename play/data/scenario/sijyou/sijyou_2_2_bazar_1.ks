@@ -427,8 +427,25 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
 「お待たせしました、華織様」[p]
+;====================
+[表示準備 storage="bg/bg_genkan.jpg"]
+[四条サイズ通常_羽織]
+;[四条眉驚き]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_odoroki.png" time=0]
+[wait time=10]
+;[四条目大]
+[chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
+[wait time=10]
+;[四条口通常]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
+[wait time=10]
+;[四条頬染め]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
+[wait time=10]
+[表示開始 time=300]
+;====================
 #
-緊張と、ときめきの満ち汐の中、[r]
+緊張と、ときめきの満ち[ruby text=しお]汐の中、[r]
 礼法の先生に教えて頂いた通り、背筋を自然かつ美しく伸ばし、[r]
 華織様に挨拶をした。[p]
 [whosay name="華織" color="olivedrab"]
@@ -444,9 +461,15 @@ $(".1_fore").empty();
 「どうかなされましたか？」[p]
 ;想像していた華織様の反応とは違って、私は戸惑った。[p](なくてもいい
 [whosay name="華織" color="olivedrab"]
+;[四条眉下げ]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_sage.png" time=0]
+[wait time=10]
 「失礼しました。[sp]今日の[名前]さんは、[r]
 [sp]あまりにも僕が知っている可愛らしい[名前]さんではなくて……」[p]
 [whosay name="華織" color="olivedrab"]
+;[四条目伏]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
+[wait time=10]
 「とても美しいと感じます」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
@@ -463,6 +486,9 @@ $(".1_fore").empty();
 [主人公ほほえみ]
 (努力して良かったわ)[p]
 [whosay name="華織" color="olivedrab"]
+;[四条目にこ]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
 「今日の[名前]さんを僕は忘れないでしょう。[r]
 [sp]さあ、車に乗って下さい」[p]
 #
@@ -483,10 +509,15 @@ $(".1_fore").empty();
 #
 華織様の熱の篭った眼差しには、 お見合いの時とは違って、[r]
 大人の愛情を感じられた。[p]
-[イベントシーン終了]
+[四条退場準備 storage="bg/bg_genkan.jpg" time=100]
+[wait time=50]
+[if exp="f.okeiko_gamen == true"]
 @jump storage="sijyou/sijyou_2_2_bazar_2.ks" target=*scene3
-
+[else]
+[イベントシーン終了]
 @jump storage="test_sijyou.ks"
+[endif]
+
 [s]
 *window_close
 [cm]
