@@ -798,6 +798,19 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 @layopt layer=message0 visible=true
 ;------------------------------------------------
 
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+
 [if exp="f.okeiko_gamen == true"]
 @jump storage="sijyou/sijyou_2_2_bazar_4.ks" target=scene1
 [else]
