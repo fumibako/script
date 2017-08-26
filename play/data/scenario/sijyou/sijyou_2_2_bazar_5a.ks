@@ -16,9 +16,6 @@ $(".1_fore").empty();
 [主人公通常]
 [プリロード画面消去]
 [iscript]
-f.src = $('.base_fore').append ( $('<img />').attr('src',$('.base_fore').css('background-image').match(/https?:\/\/[-_.!~*'()a-zA-Z0-9;\/?:@&=+$,%#]+[a-z]/g)) ).
-css ( 'background-image', 'none' );});
-alert(f.src);
 f.src = $('<img />').attr('src',$('.base_fore').css('background-image'));
 alert(f.src);
 [endscript]
