@@ -47,6 +47,13 @@ $(".1_fore").empty();
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「さあ、お手をどうぞ――」[p]
+
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
 #
 華織様が手を差し伸べ、私の手を置かれるのを待つ。[p]
 #
@@ -186,7 +193,8 @@ $(".1_fore").empty();
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-「[名前]さん、暑くなってきましたね。[sp]何か飲み物を頼みましょうか」[p]
+「[名前]さん、暑くなってきましたね。[r]
+[sp]何か飲み物を頼みましょうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
@@ -204,14 +212,8 @@ $(".1_fore").empty();
 ;華織様！と読んだ方がいいのか
 
 [whosay name="？？？"]
-;[四条横目]
-[chara_mod name="sijyou_me" storage="sijyou/me_yoko.png" time=0]
-[wait time=10]
 「あら、四条様！」[p]
 [whosay name="華織" color="olivedrab"]
-;[四条眉困り]
-[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
-[wait time=10]
 ;[四条目大]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
 [wait time=10]
@@ -292,6 +294,7 @@ $(".1_fore").empty();
 （少しお待ちしましょう。[r]
 [sp]これも夫人となったらお勤めの[ruby text=ひと]一つになるでしょう)[p]
 [四条退場]
+[fadeoutbgm time=3000]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
