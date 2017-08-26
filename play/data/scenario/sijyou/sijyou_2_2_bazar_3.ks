@@ -439,7 +439,7 @@ $(".1_fore").empty();
 華織様が選んだのは、[r]
 ;------------------------------------
 [if exp="f.present_name == '便箋'"]
-肌触りの良い綿の生地にミルトリアの刺繍が施されているハンカチだった。[p]
+肌触りの良い綿の生地にミルトリアの[ruby text="し"]刺[ruby text="しゅう"]繍が施されているハンカチだった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
@@ -450,7 +450,7 @@ $(".1_fore").empty();
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-(ふわっとした手触りのハンカチに可愛らしい花の刺繍が素敵だわ)[p]
+(ふわっとした手触りのハンカチに可愛らしい花の[ruby text="し"]刺[ruby text="しゅう"]繍が素敵だわ)[p]
 [whosay name="華織" color="olivedrab"]
 「ミルトニアの花が、今日の優美な[名前]さんを思い浮かんで、[r]
 [sp]思わず手に取ってしまいました。 如何でしょうか……」[p]
@@ -467,7 +467,7 @@ $(".1_fore").empty();
 ;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-小さな天然石を綴ってミルトリアの形に模した、華やかな簪だった。[r]
+小さな天然石を綴ってミルトリアの形に模した、華やかな[ruby text="かんざし"]簪だった。[r]
 手に取って見ると花の細工がキラキラと揺れる。[p]
 ;宝石だと工芸品とは言わないので天然石くらい
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -489,8 +489,8 @@ $(".1_fore").empty();
 「ありがとうございます。  大事にいたします」[p]
 [endif]
 ;------------------------------------
-[主人公通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
 （そういえば……四条幸代様に出会ったのでしたわ。[r]
 [主人公ポーズ指]
 ;↓眉：困り [主人公眉困り]
@@ -500,7 +500,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 [sp]でも、デェトを楽しみたいし、幸代様ご自身で話されると[r]
-[sp]仰ってましたから迂闊に話さない方が良いのかしら？)[p]
+[sp][ruby text="おっしゃ"]仰ってましたから[ruby text="う"]迂[ruby text="かつ"]闊に話さない方が良いのかしら？)[p]
 [四条_顔up_退場]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を
@@ -563,7 +563,7 @@ $(".1_fore").empty();
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
-「ああ、やはり慈善バザーにいらっしゃってましたか。[r] 
+「ああ、やはり[ruby texy=チャリ]慈[ruby texy=ティー]善バザーにいらっしゃってましたか。[r] 
 [sp]叔母様は慈善活動に熱心でいらっしゃるので、娘にあたる幸代様も[r]
 [sp]来られると思っていましたよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -575,7 +575,7 @@ $(".1_fore").empty();
 「そうですね。[sp]行事があると[ruby text=ウチ]家に来ては、[r]
 [sp]小さな弟さん達と一緒に華衣と話をしてくれますし良い方だと思います」[p]
 [whosay name="華織" color="olivedrab"]
-「華衣について、何か言っていましたか？」[p]
+「[華衣]について、何か言っていましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -597,7 +597,7 @@ $(".1_fore").empty();
 [wait time=10]
 [主人公ポーズ片手]
 (詳細は存じあげませんが、[r]
-[sp]幸代様はご自身で華衣様に伝えると仰ってましたし、[r]
+[sp]幸代様はご自身で[華衣]様に伝えると[ruby text="おっしゃ"]仰ってましたし、[r]
 [sp]今は黙っておきましょう)[p]
 ;↓効果：無し(通常) [主人公効果消]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -620,9 +620,9 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 ふと、顔をあげると華織様は、何やら小さく呟きながら、[r]
-一人ウンウンと唸っていた。[p]
+一人ウンウンと[ruby texy=うな]唸っていた。[p]
 [whosay name="華織" color="olivedrab"]
-「ただ、四条家(ウチ)の仕来りでは、……近い血縁の親族は[r]
+「ただ、[ruby texy=ウ]四条[ruby texy=チ]家の仕来りでは、……近い血縁の親族は[r]
 [sp]なかなか手紙の相手に選ばないので……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
@@ -632,7 +632,7 @@ $(".1_fore").empty();
 ;↓目：横目 [主人公横目]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
-(？ 華織様なりに華衣様のことをお考えなのかしら？ )[p]
+(？[sp]華織様なりに[華衣]様のことをお考えなのかしら？ )[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 ;↓目：通常 [主人公目通常]
@@ -717,7 +717,7 @@ $(".1_fore").empty();
 [主人公ポーズ通常]
 話さないことにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（やめておきましょう。 [r]
+（やめておきましょう。[r]
 [sp]もし何か違った形で[華衣]さんに伝わってしまったら[r]
 [sp]幸代様にも悪いわ。[sp]今はデェトを楽しみましょう)[p]
 ;共通
@@ -764,7 +764,7 @@ $(".1_fore").empty();
 ;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
 ;------------------------------------------------
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
-[wait time=50]
+[wait time=500]
 夕方に近づく頃――。[r]
 華族会館の周りでは、ダンスパーティーの知らせを[r]
 聞いてか、[r]
@@ -774,10 +774,11 @@ $(".1_fore").empty();
 私達も、貴賓室で身だしなみを整えた後、[r]
 二階のダンスホールへと向かった。[p]
 ;------------------------------------------------
-[image name="syande" layer=29 x=0 y=0 zindex=0 storage="bg/bg_syanderia.jpg" time=50]
+[image name="syande" layer=29 x=0 y=0 zindex=0 storage="bg/bg_syanderia.jpg" time=500]
 [iscript]
 $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)','-moz-filter':'brightness(0.5)','-ms-filter':'brightness(1.5)'});
 [endscript]
+[wait time=100]
 シャンデリアの煌めきを放つホール。[r]
 洋城のような大テラス窓が、憧れの世界にいる事を[r]
 感じさせる。[p]
@@ -797,7 +798,7 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 ;------------------------------------------------
 
 [if exp="f.okeiko_gamen == true"]
-@jump storage="sijyou/sijyou_2_2_bazar_5.ks"
+@jump storage="sijyou/sijyou_2_2_bazar_4.ks" target=scene1
 [else]
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
