@@ -528,6 +528,9 @@ $(".1_fore").empty();
 ;------------------------------------------------
 *scene5
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
