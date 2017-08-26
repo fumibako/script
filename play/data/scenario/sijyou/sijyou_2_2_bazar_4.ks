@@ -17,8 +17,9 @@ $(".1_fore").empty();
 [メッセージウィンドウ上ボタン表示]
 ;====================================================
 *scene1
-;表示準備
-[eval exp=f.src="'bg/B4nFWraU42/bg_cyarity3.jpg'"]
+[iscript]
+$(".29_fore").empty();
+[endscript]
 
 [表示準備 storage=&f.src]
 [四条_隣_ベース羽織]
