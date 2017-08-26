@@ -5,8 +5,7 @@
 $(".1_fore").empty();
 [endscript]
 [stopbgm]
-;暗転プリロードサブルーチン ！！！！あとでここを変更↓！！！！
-[call target=*2_1 storage="sijyou/preload_sijyou.ks"]
+[call target=*2_2 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;====================================================
 [cm]
@@ -32,7 +31,7 @@ $(".1_fore").empty();
 #
 ―― 華族会館  [ruby text=チャリ]慈[ruby text=ティー]善バザー会場の玄関ホール。[r]
 肌寒い初春の日だというのに会場の華やかな雰囲気に熱気を感じる。[p]
-緑葉と花で飾られた玄関ホールには多くの華族が夜会服を纏い、[r]
+緑葉と花で飾られた玄関ホールでは、多くの華族が夜会服を纏い、[r]
 談笑に勤しんでいた。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
@@ -96,6 +95,10 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
 「そうですね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織様は、慈善活動にも関心があるのですね。[r]
+[sp]色々な事を知っていて……)[p]
+;華織は単に話を続けていた、という形です
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
@@ -103,8 +106,10 @@ $(".1_fore").empty();
 [wait time=10]
 「でも、一番は[r]
 [sp]一度、[名前]さんと来て見たかったのが理由ですけどね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公反応 表情
 [主人公照れ]
+「……」[p]
 [whosay name="華織" color="olivedrab"]
 ;[四条口笑顔]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_warau_s.png" time=0]
@@ -133,7 +138,7 @@ $(".1_fore").empty();
 [wait time=10]
 ;====================
 [暗転２終了]
-―― [ruby text=チャリ]慈[ruby text=ティー]善バザー会場。[p]
+――[ruby text=チャリ]慈[ruby text=ティー]善バザー会場。[p]
 ;------------------------------------------------
 *scene4
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -201,7 +206,7 @@ $(".1_fore").empty();
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
-[sp]でも、とても可愛いですわ」[p]
+[sp]とても可愛いですわ」[p]
 [whosay name=夫人]
 「なかなか上手くできているでしょう？[r]
 [sp]私が海外に留学した際に見たものを作ってみましたの。[r]
@@ -266,7 +271,7 @@ $(".1_fore").empty();
 [背景_四条_商店]
 ふいに銀座でデェトした、あの時の気持ちが[ruby text=よみがえ]蘇る。[p]
 #
-私も華織様を喜ばせたい――[p]
+私も華織様を喜ばせたい――。[p]
 [暗転]
 [背景セピア化_解除]
 ;====================
@@ -533,7 +538,7 @@ $(".1_fore").empty();
 [font color=white size=27]
 ;------------------------------------------------
 しばしの間、お互いに離れ、[r]
-私は付き人についてもらいながらも、[r]
+私は付き人についてもらいながら、[r]
 華織様への贈り物を探し始めた。[p]
 ;------------------------------------------------
 [resetfont]
