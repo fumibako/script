@@ -131,7 +131,6 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 ;====================
-[表示準備 storage="bg/B4nFWraU42/bg_cyarity7.jpg"]
 [四条サイズ通常_羽織]
 ;[四条眉通常]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
@@ -285,7 +284,7 @@ $(".1_fore").empty();
 [背景セピア化_解除]
 [背景_チャリティ会場出店]
 ;====================
-[表示準備 storage="bg/B4nFWraU42/bg_cyarity7.jpg"]
+[表示準備 storage="bg/B4nFWraU42/bg_cyarity.jpg"]
 [四条サイズ通常_羽織]
 ;[四条眉通常]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
@@ -397,7 +396,7 @@ $(".1_fore").empty();
 
 [背景_チャリティ会場出店]
 ;====================
-[表示準備 storage="bg/B4nFWraU42/bg_cyarity7.jpg"]
+[表示準備 storage="bg/B4nFWraU42/bg_cyarity.jpg"]
 [四条サイズ通常_羽織]
 ;[四条眉通常]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
