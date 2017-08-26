@@ -342,7 +342,8 @@ $(".1_fore").empty();
 （うまく伝わらなくても……ですか。[r]
 [sp]そうですね、焦ることはないのだわ)[p]
 [iscript]
-f.src = $(".base_fore").attr('src'); 
+f.src = $(".base_fore").attr('src');
+aleat(f.src);
 [endscript]
 [whosay name="華織" color="olivedrab"]
 [表示準備 storage=&f.src]
