@@ -305,9 +305,15 @@ $(".1_fore").empty();
 [wait time=10]
 「幸代様。[sp]私と華織様は、陰ながら[華衣]さんを応援しています。[r]
 [sp]ですが、私達には、できない事が沢山あるのです」[p]
+[fadeoutbgm time=3000]
 
 [whosay name=四条幸代]
 「！……」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】「いにしえより続く街、太宰府」
+[playbgm storage="dazaifu.ogg" loop=true]
+[eval exp="f.bgm_storage='dazaifu.ogg'"]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「バザーでお会いした幸代様の[r]
