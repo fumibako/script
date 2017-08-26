@@ -242,7 +242,8 @@ $(".1_fore").empty();
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-(いやだわ。 せっかく今日は大人の女性として華織とデェトに来たのに)[p]
+（いやだわ。[r]
+[sp]せっかく今日は大人の女性として華織様とデェトに来たのに)[p]
 ;主人公ふぅ から困り照れ
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
