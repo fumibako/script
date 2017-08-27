@@ -264,18 +264,20 @@ $(".1_fore").empty();
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
+ふいに銀座でデェトした、あの時の気持ちが[ruby text=よみがえ]蘇る。
 [暗転]
 [表示開始 time=100]
 ;セピア
 [背景セピア化]
 [背景_四条_商店]
-ふいに銀座でデェトした、あの時の気持ちが[ruby text=よみがえ]蘇る。[p]
+[p]
 #
 私も華織様を喜ばせたい――。[p]
 [暗転]
 [背景セピア化_解除]
 ;====================
 [表示準備 storage="bg/anten.jpg"]
+（私の願いは叶ったでしょうか……？）
 [背景_チャリティ会場出店]
 [四条サイズ通常_羽織]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
@@ -289,7 +291,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-(私の願いは叶ったでしょうか？)[p]
+[p]
 #
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
@@ -342,7 +344,7 @@ $(".1_fore").empty();
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
 「[名前]さんの手助けがなければ、[r]
-[sp]華衣とのことも解決しなかったでしょう……」
+[sp][華衣]とのことも解決しなかったでしょう……」
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
@@ -357,7 +359,8 @@ $(".1_fore").empty();
 しんみりとした空気が流れたかと思うと、[r]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
-華織様はパッと笑って何事もなかったかのようにお顔をあげられた。[p]
+華織様はパッと笑って何事もなかったかのように[r]
+お顔をあげられた。[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]さんの気に入ったものがありましたか？」[p]
 #
@@ -365,8 +368,7 @@ $(".1_fore").empty();
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-[四条退場]
-[暗転]
+[表示準備 storage="bg/anten.jpg"]
 華織様と再会した頃の私は、"この人は憧れの存在であって、[r]
 誰しも持っているのような弱いところなんてない"と思ってしまっていた。[p]
 ;[背景_庭_夜]
@@ -379,10 +381,7 @@ $(".1_fore").empty();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （頼られていないというのは、取り残された気分になってしまうわ)[p]
-
-[背景_チャリティ会場出店]
-;====================
-[表示準備 storage="bg/B4nFWraU42/bg_cyarity.jpg"]
+;[背景_チャリティ会場出店]
 [四条サイズ通常_羽織]
 ;[四条眉通常]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
