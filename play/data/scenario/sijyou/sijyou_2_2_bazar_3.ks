@@ -785,7 +785,8 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 流行りのローブデコルテ、[r]
 [ruby text=けん]絢[ruby text=らん]爛[ruby text=ごう]豪[ruby text=か]華な
 振袖を夜会服として身に[ruby text=まと]纏う淑女達。[r]
-紳士達も、彼女達に寄り添うように美しい装いをし、エスコートする。[p]
+紳士達も、美しい装いをし、[r]
+寄り添うように彼女達の手を取る。[p]
 [ruby text=ホー]広[ruby text=ル]間の脇では音楽隊が優雅な曲を[ruby text=かな]奏ではじめ、[r]
 集まった人々は徐々に円を描くように[r]
 ダンスに加わっていく。[p]
