@@ -549,9 +549,8 @@ $(".1_fore").empty();
 [current layer="message1"]
 [font color=white size=32]
 テストページからプレイしています。次のシナリオに移動しますか？[r]
-[link target=*jump_ok]次のシナリオへ[endlink][r]
-[r][r][r]
-[link target=*jump_no]テストをおわる[endlink][r]
+[link target=*jump_ok]次のシナリオへ[endlink][r][r]
+[link target=*jump_no]テストをおわる[endlink]
 [resetfont]
 [s]
 *jump_ok
@@ -568,10 +567,7 @@ $(".1_fore").empty();
 
 *jump_no
 [er]
-[current layer="message0"]
 [resetfont]
-「いいえ」[r]
-テストを終了します。[p]
 [cm]
 [イベントシーン終了]
 @layopt layer=fix visible=true
