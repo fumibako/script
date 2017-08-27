@@ -1,4 +1,4 @@
-﻿﻿﻿﻿;=============================================
+﻿﻿﻿﻿﻿;=============================================
 ;okeiko.ks 設定入力部分
 ;=============================================
 *start
@@ -59,6 +59,9 @@
 [edit left=857 top=340 width=40 length=200 maxchars=3 name="f.event_hujieda4" height=20]
 [ptext text="返事EV:" layer=29 size=13 x=900 y=315 color=darkslateblue bold=bold]
 [edit left=905 top=340 width=40 length=200 maxchars=3 name="f.event_hujieda5" height=20]
+
+[ptext text="文矢11_4手紙後お箏を練習(4=した､0=未)" layer=29 size=12 x=700 y=370 color=darkslateblue bold=bold]
+[edit left=700 top=390 width=200 length=200 maxchars=3 name="f.fumi_fumiya_11_4" height=20]
 
 [ptext text="四条好感度（元値=5)" layer=29 size=12 x=560 y=540 color=darkslateblue bold=bold]
 [edit left=580 top=560 width=50 length=200 maxchars=3 name="f.para_sijyou_koukando" height=20]
@@ -125,13 +128,13 @@
 [ptext text="葛城宮のみと文通=1 それ以外=0" layer=29 size=15 x=345 y=390 color=darkslateblue bold=bold]
 [edit left=345 top=410 width=200 length=200 maxchars=3 name="f.katuraginomiya_only" height=20]
 
-[ptext text="誰かに手紙を出した=1 それ以外=0" layer=29 size=15 x=680 y=390 color=darkslateblue bold=bold]
+[ptext text="誰かに手紙を出した=1 それ以外=0" layer=29 size=15 x=680 y=440 color=darkslateblue bold=bold]
 ;f.fumi_henji==0
-[edit left=680 top=410 width=200 length=200 maxchars=3 name="f.fumi_henji" height=20]
+[edit left=680 top=460 width=200 length=200 maxchars=3 name="f.fumi_henji" height=20]
 
-[ptext text="最後の手紙・葛城宮=1 なし=0" layer=29 size=15 x=680 y=440 color=darkslateblue bold=bold]
+[ptext text="最後の手紙・葛城宮=1 なし=0" layer=29 size=15 x=680 y=490 color=darkslateblue bold=bold]
 ;f.event_katuraginomiya[21] f.event_katuraginomiya[22] 
-[edit left=680 top=460 width=50 length=200 maxchars=1 name="tf.last_fumi" height=20]
+[edit left=680 top=510 width=50 length=200 maxchars=1 name="tf.last_fumi" height=20]
 
 [ptext text="お見合い決定済(0決定、1未定)" layer=29 size=15 x=345 y=440 color=darkslateblue bold=bold]
 [edit left=345 top=460 width=200 length=200 maxchars=3 name="f.event_oaite_mitei" height=20]
@@ -213,6 +216,8 @@ $("input[name='tf.event_sansaku_hyouji']").val("1"); //仮にデフォルト値0
 $("input[name='tf.event_sansaku_hyouji_before_au']").val("1"); //仮にデフォルト値1にしています。ご自由に変更してください
 
 $("input[name='tf.mode_hensu']").val("0"); //仮にデフォルト値0にしています。ご自由に変更してください
+$("input[name='f.fumi_fumiya_11_4']").val("4"); //文矢手紙後お箏練習
+
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*test_settei_kettei x=220 y=500 width=100 height=100]
@@ -280,6 +285,7 @@ tf.event_sansaku_hyouji_before_au =  parseInt($("input[name='tf.event_sansaku_hy
 tf.last_fumi =  parseInt($("input[name='tf.last_fumi']").val());
 
 tf.mode_hensu =  parseInt($("input[name='tf.mode_hensu']").val());
+f.fumi_fumiya_11_4 = parseInt($("input[name='f.fumi_fumiya_11_4']").val());
 [endscript]
 
 ;財前からの手紙到着待ち週数を好感度に応じてリセット
