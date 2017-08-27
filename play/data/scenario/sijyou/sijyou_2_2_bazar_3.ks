@@ -815,6 +815,32 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 [if exp="f.okeiko_gamen == true"]
 @jump storage="sijyou/sijyou_2_2_bazar_4.ks" target=scene1
 [else]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+テストページからプレイしています。次のシナリオに移動しますか？[r]
+[link target=*jump_ok]次のシナリオへ[endlink][r][r]
+[link target=*jump_no]テストをおわる[endlink]
+[resetfont]
+[s]
+*jump_ok
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump storage="sijyou/sijyou_2_2_bazar_4.ks" target=scene1
+[s]
+*jump_no
+[er]
+[resetfont]
+[cm]
+
 [イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [endif]
