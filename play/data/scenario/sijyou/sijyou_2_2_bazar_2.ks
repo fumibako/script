@@ -284,7 +284,7 @@ $(".1_fore").empty();
 [wait time=10]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
-
+[表示開始 time=300]
 ;====================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
