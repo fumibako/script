@@ -353,7 +353,7 @@ $(".29_fore").empty();
 [chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
 
-[freeimage layer=29]
+[freeimage layer=29 time=900]
 
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
@@ -509,7 +509,8 @@ $(".29_fore").empty();
 ;選択肢 セーブできるように それほど重要ではない感を
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
-[bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[表示準備 storage="bg/plane_sakura.jpg"]
+;[bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [wait time=10]
 #
 私は幸代様と会ったことを
@@ -530,10 +531,6 @@ $(".29_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[背景_チャリティ会場食堂]
-;====================
-[表示準備 storage=&f.src]
-[四条_顔up_羽織]
 ;[四条_顔up_眉下げ]
 [chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
 [wait time=10]
@@ -704,10 +701,6 @@ $(".29_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[背景_チャリティ会場食堂]
-;------------------------------------
-[表示準備 storage=&f.src]
-[四条_顔up_羽織]
 ;[四条_顔up_眉下げ]
 [chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
 [wait time=10]
