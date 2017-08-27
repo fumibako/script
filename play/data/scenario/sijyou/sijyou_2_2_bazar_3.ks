@@ -16,11 +16,19 @@ $(".1_fore").empty();
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+テストページから開始します[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
+
 ;====================================================
 *seen_prezent
 [iscript]
 $(".29_fore").empty();
 [endscript]
+[wait time=50]
 @layopt layer=fix visible=true
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：ほほえみ [主人公口ほほえみ]
@@ -790,6 +798,7 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 [ruby text=ホー]広[ruby text=ル]間の脇では音楽隊が優雅な曲を[ruby text=かな]奏ではじめ、[r]
 集まった人々は徐々に円を描くように[r]
 ダンスに加わっていく。[p]
+[fadeoutbgm time=3000]
 ;------------------------------------------------
 [resetfont]
 @layopt layer=message0 visible=false
