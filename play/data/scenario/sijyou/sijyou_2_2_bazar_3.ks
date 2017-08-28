@@ -35,6 +35,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 (華織様は何がお好みでしょうか？)[p]
+[autosave]
 ;店員と分かるまで遅い
 #
 陳列棚の前で華織様への贈り物を探している私に[r]
@@ -178,6 +179,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
 [sp]……考えすぎかしら？)[p]
+[autosave]
 *seen_3
 #
 ;↓眉：通常 [主人公眉通常]
@@ -446,6 +448,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 「僕が選んだものはこちらです」[p]
+[autosave]
 #
 華織様が選んだのは、[r]
 ;------------------------------------
