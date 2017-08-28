@@ -322,6 +322,8 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 あとは）[p]
+;礼法が上がってないのか？といわれるので対策
+[eval exp="f.para_shujinkou_j_reihou = f.para_shujinkou_j_reihou + 4"]
 [autosave]
 [whosay name=磯野]
 [主人公驚]
