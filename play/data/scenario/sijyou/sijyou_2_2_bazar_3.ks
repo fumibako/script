@@ -769,6 +769,7 @@ $(".29_fore").empty();
 [current layer="message0"]
 [font color=white size=27]
 しばらくの間、昼食を頂きながら、話し合った。[p]
+[fadeoutbgm time=3000]
 ;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
 ;------------------------------------------------
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
@@ -777,6 +778,11 @@ $(".29_fore").empty();
 華族会館の周りでは、ダンスパーティーの知らせを[r]
 聞いてか、[r]
 紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
 [wait time=50]
 私達も、貴賓室で身だしなみを整えた後、[r]
@@ -798,7 +804,6 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 [ruby text=ホー]広[ruby text=ル]間の脇では音楽隊が優雅な曲を[ruby text=かな]奏ではじめ、[r]
 集まった人々は徐々に円を描くように[r]
 ダンスに加わっていく。[p]
-[fadeoutbgm time=3000]
 ;------------------------------------------------
 [resetfont]
 @layopt layer=message0 visible=false
