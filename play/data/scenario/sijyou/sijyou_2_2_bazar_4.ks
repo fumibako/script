@@ -423,6 +423,10 @@ $(".29_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「[名前]さん、お待たせしました。[r]
+[wait time=10]
+;[四条_隣_眉困り]
+[chara_mod name="sijyou_tonari_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
 [sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」[p]
 #
 私は
@@ -814,7 +818,8 @@ $(".29_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （でも、今は、もう少しだけこのままで……）[p]
 [暗転２ storage="bg/sijyou_hanabi2_1.jpg"]
-
+;一瞬見えるの防止
+[bg wait=true method='crossfade' storage="../fgimage/bg/sijyou_hanabi2_1.jpg" time=50]]
 *seen_end
 ;クリアフラグ
 [eval exp="sf.event_sijyou_2_2_bazar = 1"]
