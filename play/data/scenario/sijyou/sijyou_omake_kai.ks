@@ -1,6 +1,6 @@
 ;おまけシナリオ　1_3終に発生
 *replay_sijyou_omake_kai
-[image name="loding_pic"layer=1 storage="bg/bg_kinari_sakura.jpg" time=1000]
+[image name="loding_pic" layer=1 storage="bg/bg_kinari_sakura.jpg" time=1000]
 [image name="loding_pic" layer=1 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [stopbgm]
 ;/////////準備/////////
