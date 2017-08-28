@@ -294,7 +294,7 @@ $(".29_fore").empty();
 [wait time=10]
 （少しお待ちしましょう。[r]
 [sp]これも夫人となったらお勤めの[ruby text=ひと]一つになるでしょう)[p]
-[四条退場]
+[四条退場準備 storage=&f.src time=100]
 [fadeoutbgm time=3000]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
