@@ -23,7 +23,7 @@
 好感度[emb exp="f.para_sijyou_koukando"][r]
 [endif]
 四条ルート(1○,0×)=[emb exp="f.sijyou_au"],お見合い(1後,0未)=[emb exp="f.sijyou_omiai"],イベント6(1後,0未)=[emb exp="f.sijyou_event6"][r]
-祖母を(true見た,false見ていない)=[emb exp="f.sijyou_sobo"][r]
+祖母を(true見た,false見ていない)=[emb exp="f.sijyou_sobo"]華衣について=[emb exp="f.event_sijyou_kai_jijyou"],散策4を見た=[emb exp="f.event_sijyou_4"][r]
 [resetfont]
 @jump storage="okeiko_hyouji.ks" target=*sijyou_test_hyouji_owari
 
