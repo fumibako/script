@@ -61,17 +61,6 @@
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
-;◆四条イベント判定【バザー】sijyou/sijyou_2_2_bazar_1.ks
-;goodエンドの条件以下であるときに発生（仮条件）　ある程度は礼法は必要 華衣について聞くを選択しているのも必要。(f.sijyou_sobo != true)
-[if exp="(f.okeiko_month == 2 && f.okeiko_week == 2) && f.sijyou_au == 1"]
-;[elsif="f.event_sijyou[17] == 0 && (f.event_sijyou_4 == 1 || f.event_sijyou_kai_jijyou == 1) && f.sijyou_sobo == false && f.para_shujinkou_j_reihou >= 10"]
-	[eval exp="f.event_storage='sijyou/sijyou_2_2_bazar_1.ks'"]
-	[eval exp="f.event_target='*replay_sijyou_2_2'"]
-	[eval exp="f.event_type='talk'"]
-	[eval exp="f.event_sijyou[17]=1"]
-	@jump storage="event.ks" target=*start
-[endif]
-;================================================
 ;ennding パラメータは適当です
 ;================================================
 ;◆四条ED判定 四条ルートかつ3月4週が終わる時点で淑女度一定値未満又は好感度一定値未満で1度だけ発生　イベント上でnormal分岐することに
