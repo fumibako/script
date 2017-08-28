@@ -60,6 +60,13 @@
 [ptext text="淑女度" layer=29 size=15 x=650 y=90 color=darkslateblue bold=bold]
 [edit left=650 top=110 width=200 length=200 maxchars=3 name="f.para_shujinkou_shukujodo" height=20]
 
+[ptext text="散策４をみた" layer=29 size=15 x=700 y=140 color=darkslateblue bold=bold]
+[edit left=650 top=160 width=200 length=200 maxchars=3 name="f.event_sijyou_4" height=20]
+
+[ptext text="華衣について聞くを選択した" layer=29 size=10 x=750 y=190 color=darkslateblue bold=bold]
+[edit left=650 top=210 width=200 length=200 maxchars=3 name="f.event_sijyou_kai_jijyou" height=20]
+
+
 [iscript]
 //入力済デフォルト値の設定
 $("input[name='tf.test_sijyou_fumi_hensin_speed']").val("0");
@@ -67,6 +74,8 @@ $("input[name='f.para_sijyou_koukando']").val("10");
 $("input[name='f.sijyou_au']").val("0");
 $("input[name='f.sijyou_omiai']").val("0");
 $("input[name='f.sijyou_event6']").val("0");
+$("input[name='f.event_sijyou_4']").val("0");
+$("input[name='f.event_sijyou_kai_jijyou']").val("0");
 $("input[name='tf.edit_sobo']").val("0"); //デフォルト値は1以外の仮に0と入力しています。やりやすいように変更してください
 $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
@@ -101,6 +110,8 @@ f.para_sijyou_koukando = parseInt($("input[name='f.para_sijyou_koukando']").val(
 f.sijyou_au = parseInt($("input[name='f.sijyou_au']").val());
 f.sijyou_omiai = parseInt($("input[name='f.sijyou_omiai']").val());
 f.sijyou_event6 = parseInt($("input[name='f.sijyou_event6']").val());
+f.event_sijyou_4 = parseInt($("input[name='f.event_sijyou_4']").val());
+f.event_sijyou_kai_jijyou = parseInt($("input[name='f.event_sijyou_kai_jijyou']").val());
 tf.edit_sobo = parseInt($("input[name='tf.edit_sobo']").val());
 f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());
@@ -129,6 +140,8 @@ tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val(
 [eval exp="f.event_sijyou[15] = 0"]
 [endif]
 ;散策２or 散策（祖母）をみた？f.sijyou_sobo==true　の判定です。
+
+
 
 手紙到着待ち週数を好感度に応じてリセット
 [if exp="f.para_sijyou_koukando >= parseInt([sf.sijyou['koukando_b']])"]
