@@ -36,7 +36,11 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （華織様と御一緒に頂くまで我慢しておきましょう)[p]
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 #
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -59,7 +63,7 @@ $(".1_fore").empty();
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-(ふう、私も華織様と早く踊りたいですわ)[p]
+（ふう、私も華織様と早く踊りたいですわ)[p]
 #
 ダンスホールを恨めしげに見ていると、[r]
 華麗なステップを踏む男女が私の目に入った。[p]
@@ -91,6 +95,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ooake.png" time=0]
 [wait time=10]
 「！」[p]
+[fadeoutbgm time=3000]
 [whosay name=四条幸代]
 [主人公ポーズ片手]
 「あっ……」[p]
@@ -168,7 +173,7 @@ $(".1_fore").empty();
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-(私、てっきり幸代様は[華衣]さんの事を[r]
+（私、てっきり幸代様は[華衣]さんの事を[r]
 [sp]気にかけているとばかり思ってしまいましたが)[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -243,9 +248,8 @@ $(".1_fore").empty();
 ;手紙のやり取りはしていない
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-
 [主人公伏目パチ1回]
-(そういえば、食堂で華織様が[r]
+（そういえば、食堂で華織様が[r]
 [sp]その様な独り言を[ruby text=おっしゃ]仰っていたような……？)[p]
 
 [whosay name=四条幸代]
@@ -324,7 +328,7 @@ $(".1_fore").empty();
 [sp]誠実な姿勢に幸せが訪れる予感を感じました」[p]
 
 「もし、幸代様が[華衣]さんを想うなら、[r]
-[sp]もう一度、勇気を出ししてみてはいかがでしょうか？」[p]
+[sp]もう一度、勇気を出ししてみては如何でしょうか？」[p]
 
 [whosay name=四条幸代]
 「はい。[r]
@@ -427,6 +431,9 @@ $(".1_fore").empty();
 「では、踊りましょうか」[p]
 [endif]
 #
+[四条退場準備 storage="bg/bg_syanderia.jpg"]
+;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
 ;共通
 華織様の側で手を取ると、もう一度ダンスを踊った。[p]
 
