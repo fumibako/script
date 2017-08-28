@@ -374,6 +374,11 @@ $(".29_fore").empty();
 ;給仕が立ち去るのを横目で見ながら？
 甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ruby text=うるお]潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
+[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
