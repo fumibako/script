@@ -15,6 +15,12 @@ $(".1_fore").empty();
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+テストページから開始します。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
 ;====================================================
 *scene1
 [iscript]
@@ -48,12 +54,6 @@ $(".29_fore").empty();
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「さあ、お手をどうぞ――」[p]
-
-[if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
-[endif]
 
 #
 華織様が手を差し伸べ、私の手を置かれるのを待つ。[p]
@@ -419,14 +419,14 @@ $(".29_fore").empty();
 [wait time=10]
 「[名前]さん、お待たせしました。[r]
 [sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」[p]
-[四条_隣_退場]
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 桜色
-[bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
+;四条のみ隠す　退場はしない
+[表示準備 storage="bg/plane_sakura.jpg"]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;選択肢用レイヤーを追加
@@ -444,7 +444,7 @@ $(".29_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[背景_チャリティ会場ダンスホール]
+[表示開始 time=300]
 休憩室に行くことにした。[p]
 @jump storage="sijyou/sijyou_2_2_bazar_5.ks" target="scene1"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -453,18 +453,6 @@ $(".29_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[背景_チャリティ会場ダンスホール]
-[表示準備 storage=&f.src]
-[四条_隣_ベース羽織]
-;[四条_隣_眉困り]
-[chara_mod name="sijyou_tonari_mayu" storage="sijyou/mayu_komari.png" time=0]
-[wait time=10]
-;[四条_隣_目伏2]
-[chara_mod name="sijyou_tonari_me" storage="sijyou/me_fusi2.png" time=0]
-[wait time=10]
-;[四条_隣_口微笑み]
-[chara_mod name="sijyou_tonari_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
-[wait time=10]
 [表示開始 time=300]
 
 もう一度、踊ることにした。[p]
