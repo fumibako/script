@@ -252,10 +252,15 @@ f.para_shujinkou_shukujodo = parseInt($("input[name='f.para_shujinkou_shukujodo'
 
 f.para_shujinkou_koto_kaisuu = parseInt($("input[name='f.para_shujinkou_koto_kaisuu']").val());
 f.event_hujieda[1] = parseInt($("input[name='f.event_hujieda1']").val());
+f.fumi_toutyaku_hujieda[2] = parseInt($("input[name='f.event_hujieda1']").val());
 f.event_hujieda[2] = parseInt($("input[name='f.event_hujieda2']").val());
+f.fumi_toutyaku_hujieda[3] = parseInt($("input[name='f.event_hujieda2']").val());
 f.event_hujieda[3] = parseInt($("input[name='f.event_hujieda3']").val());
+f.fumi_toutyaku_hujieda[4] = parseInt($("input[name='f.event_hujieda3']").val());
 f.event_hujieda[4] = parseInt($("input[name='f.event_hujieda4']").val());
+f.fumi_toutyaku_hujieda[5] = parseInt($("input[name='f.event_hujieda4']").val());
 f.event_hujieda[5] = parseInt($("input[name='f.event_hujieda5']").val());
+f.fumi_toutyaku_hujieda[6] = parseInt($("input[name='f.event_hujieda5']").val());
 
 f.okeiko_month = parseInt($("input[name='f.okeiko_month']").val());
 f.okeiko_week = parseInt($("input[name='f.okeiko_week']").val());

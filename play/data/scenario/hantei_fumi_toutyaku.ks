@@ -840,6 +840,13 @@ f.okeiko_month_kansuuji="三月 ";
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_0
 [endif]
 
+;◆(仮)5月4週　全ルート(鳩からの手紙2通目を見ている場合)
+[if exp="f.okeiko_month == 5 && f.okeiko_week == 4 && f.fumi_toutyaku_asuka[6] == 0 && f.fumi_toutyaku_hujieda[3] == 1"]
+	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_6
+[endif]
+
 ;◆(仮)9月4週　藤枝ルート以外
 [if exp="f.okeiko_month == 9 && f.okeiko_week == 4 && ( f.kuroda_au == 1 || f.zaizen_au == 1 || f.sijyou_au == 1 || f.katuraginomiya_au == 1 ) && f.fumi_toutyaku_asuka[1] == 0"]
 	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
