@@ -805,6 +805,17 @@ $(".29_fore").empty();
 [wait time=10]
 華織様の少し緊張した声に包まれ、[r]
 私は少し意地悪ながら安心してしまった。[p]
+;なんだったんだと終わるので主人公の締め
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織様も私のことを想って下さってるのですね……）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（そうだわ。[sp]まだ、華織様とのお付き合いは[r]
+[sp]これからですもの……もう少し、頑張ってみようかしら）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（でも、今は、もう少しだけこのままで……）[p]
+[暗転２ storage="bg/sijyou_hanabi2_1.jpg"]
+
+*seen_end
 ;クリアフラグ
 [eval exp="sf.event_sijyou_2_2_bazar = 1"]
 [イベントシーン終了]
