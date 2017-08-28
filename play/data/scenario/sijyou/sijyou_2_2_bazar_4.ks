@@ -451,6 +451,7 @@ $(".29_fore").empty();
 [current layer="message0"]
 [表示開始 time=300]
 休憩室に行くことにした。[p]
+[fadeoutbgm time=3000]
 @jump storage="sijyou/sijyou_2_2_bazar_5.ks" target="scene1"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_1
@@ -563,7 +564,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 （ど、どうしましょう！？)[p]
-
+[fadeoutbgm time=3000]
 #
 ふいに、何故だかお稽古の先生の声が脳裏に響く。[p]
  
@@ -583,6 +584,11 @@ $(".29_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 「あ……」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 #
 辺りの呆然とした雰囲気に[r]
 今までの努力が水の泡に消えていくような気がした。[p]
@@ -625,7 +631,7 @@ $(".29_fore").empty();
 
 [whosay name="華織" color="olivedrab"]
 「[名前]さん、ここにいらしたのですね」[p]
-
+[fadeoutbgm time=3000]
 #
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
