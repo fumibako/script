@@ -54,7 +54,7 @@ $(".29_fore").empty();
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「さあ、お手をどうぞ――」[p]
-
+[autosave]
 #
 華織様が手を差し伸べ、私の手を置かれるのを待つ。[p]
 #
@@ -117,6 +117,7 @@ $(".29_fore").empty();
 [sp]夢のような時間だと思います」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様……」[p]
+[autosave]
 ;セリフ思いつかないので名前で
 ;感想
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -211,7 +212,7 @@ $(".29_fore").empty();
 華織様と話をしていると[r]
 華やかな雰囲気をもった妙齢の女性が話しかけてきた。[p]
 ;華織様！と読んだ方がいいのか
-
+[autosave]
 [whosay name="？？？"]
 「あら、四条様！」[p]
 [whosay name="華織" color="olivedrab"]
@@ -308,6 +309,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
 [wait time=10]
 （それにしても踊った後だからか、喉が[ruby text=かわ]渇いてきたわ)[p]
+[autosave]
 #
 私の様子に気付いたのか、[r]
 [主人公通常]
@@ -345,7 +347,9 @@ $(".29_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [暗転]
-遠慮しておいた。[p]
+遠慮しておいた。
+[autosave]
+[p]
 @jump storage="sijyou/sijyou_2_2_bazar_5a.ks" target=scene1
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_rute_0
@@ -354,7 +358,9 @@ $(".29_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [背景_チャリティ会場ダンスホール]
-頂くことにした。[p]
+頂くことにした。
+[autosave]
+[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_rute
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -427,7 +433,9 @@ $(".29_fore").empty();
 ;[四条_隣_眉困り]
 [chara_mod name="sijyou_tonari_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
-[sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」[p]
+[sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」
+[autosave]
+[p]
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -454,7 +462,9 @@ $(".29_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [表示開始 time=300]
-休憩室に行くことにした。[p]
+休憩室に行くことにした。
+[autosave]
+[p]
 [fadeoutbgm time=3000]
 @jump storage="sijyou/sijyou_2_2_bazar_5.ks" target="scene1"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -465,7 +475,9 @@ $(".29_fore").empty();
 [current layer="message0"]
 [表示開始 time=300]
 
-もう一度、踊ることにした。[p]
+もう一度、踊ることにした。
+[autosave]
+[p]
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：控え目な笑顔 [主人公口笑顔小]
@@ -623,6 +635,7 @@ $(".29_fore").empty();
 [背景_チャリティ会場回廊]
 #
 回廊の柱にもたれると、私は顔を[ruby text=おお]覆い隠した。[p]
+[autosave]
 [主人公ポーズ両手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (はしゃぎすぎてしまったわ……どうしてこんな事を？)[p]
@@ -791,15 +804,12 @@ $(".29_fore").empty();
 @layopt layer=message0 visible=true
 [暗転２終了]
 ;------------------------------------------------
-
-
-
 ;目閉じ照れ
 [whosay name="華織" color="olivedrab"] 
 「迎えにいった時の[名前]さんの表情も、[r]
 [sp]頂いた贈り物も、花のように舞う貴女も[r]
 [sp]僕は今日という日を忘れられないでしょう」[p]
-
+[autosave]
 [whosay name="華織" color="olivedrab"] 
 「もし宜しければ、休まれた後に[r]
 [sp]もう一度、ここで踊って頂けませんか？」[p]
