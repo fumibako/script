@@ -214,14 +214,14 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;◆黒田イベント判定
 ;=============================================
 *kuroda_event_hantei
-;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
-[if exp="(f.okeiko_month == 6 && f.okeiko_week == 4) && f.event_machi_kuroda[2] == 0 && f.para_kuroda_koukando > 3"]
-	@jump storage="sansaku.ks" target=*sansaku_machi_kuroda_02
+;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上かつ華道熟練度5以上なら1度だけ発生
+[if exp="(f.okeiko_month == 6 && f.okeiko_week == 4) && f.event_machi_kuroda[2] == 0 && f.para_kuroda_koukando > 3 && f.para_shujinkou_j_kadou >= 5"]
+	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_02
 [endif]
 
 ;◆黒田イベント判定【友人からの忠告】8月4週になった時点で、黒田好感度一定値以上なら1度だけ発生
 ;[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_machi_kuroda[3] == 1 && f.event_machi_kuroda[5] == 0 && f.para_kuroda_koukando > 20"]
-;	@jump storage="sansaku.ks" target=*sansaku_machi_kuroda_05
+;	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_05
 ;[endif]
 
 ;◆黒田イベント判定【顔合せ】判定 黒田ルートかつ9月3週になった時点で1度だけ発生

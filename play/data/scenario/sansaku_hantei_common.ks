@@ -12,12 +12,12 @@
 
 ;◆共通イベント2判定【新茶】4月3週～5月2週、期間中に町へ行くと1度だけ発生
 [if exp="((f.okeiko_month==4 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==5 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_common[2]==0"]
-	@jump storage="sansaku.ks" target=*sansaku_machi_common_02
+	@jump storage="sansaku_common.ks" target=*sansaku_machi_common_02
 [endif]
 
 ;◆共通イベント1判定【さつき】5月3週～6月2週、期間中に町へ行くと1度だけ発生(以前は黒田イベントだったため、変数やjump先ラベルにその名残があります)
 [if exp="((f.okeiko_month==5 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==6 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_kuroda[1]==0"]
-	@jump storage="sansaku.ks" target=*sansaku_machi_kuroda_01
+	@jump storage="sansaku_common.ks" target=*sansaku_machi_kuroda_01
 [endif]
 
 *sansaku_hantei_new
@@ -38,7 +38,7 @@
 	@jump storage="01_I9IhvvVdPo_sansaku.ks" target=*sansaku_machi_common_I9IhvvVdPo_01
 [endif]
 ;=============================================
-;◇季節にこだわりのないもの(◆jsYiJcqRkkが発生時期を割り振っています。調整可能です)
+;◇季節にこだわりのないもの(◆jsYiJcqRkkが発生時期を割り振っています)
 ;=============================================
 ;◆共通イベント判定【1日のはじまりの話題】5月4週～3月4週、期間中に町へ行くと1度だけ発生
 [if exp="((f.okeiko_month == 5 && f.okeiko_week == 4) || f.okeiko_month == 6 || f.okeiko_month == 7 || f.okeiko_month == 8 || f.okeiko_month == 9 || f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3) && f.event_machi_common[5] == 0"]
