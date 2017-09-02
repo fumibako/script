@@ -252,7 +252,7 @@ jumpします。[p]
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
-「はい、文通を始めてもう４ヶ月も経ったのだと感慨深く思っていました」[p]
+「はい、文通を始めてもう[ruby text=よん]四[ruby text=か]ヶ[ruby text=げつ]月も経ったのだと感慨深く思っていました」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「そうか……」[p]
@@ -263,7 +263,7 @@ jumpします。[p]
 「[名前]、覚えているか？」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「文矢が見合いをしたのは９月の終わり頃だった……」[p]
+「文矢が見合いをしたのは[ruby text=く]九[ruby text=がつ]月の終わり頃だった……」[p]
 #
 [主人公目パチ1回]
 [wait time=10]
