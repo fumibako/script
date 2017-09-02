@@ -391,7 +391,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-@jump storage="sansaku.ks" target="*sansaku_machi_common_02"
+@jump storage="sansaku_common.ks" target="*sansaku_machi_common_02"
 [s]
 
 *test9
