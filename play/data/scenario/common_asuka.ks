@@ -57,6 +57,9 @@
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -68,6 +71,9 @@
 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 「お見合いに対する心配りの手紙だわ」[p]
 
 [whosay name="磯野" color="dimgray"]
@@ -75,6 +81,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
 「そうですね。お父様達が不在の際、[r]
 [sp]時折、ウチに立ち寄って下さっては、暖かな言葉を[r]
