@@ -179,13 +179,16 @@
 [sp]とても苦労しましたのよ？」[p]
 [whosay name="飛鳥伯父様"]
 「そのことは許してくれよ」[p]
-
+;【SE】雷（ゴロゴロ
+[playse storage=thunder_gorogoro.ogg loop=false ]
+[fadeoutbgm time=3000]
 #
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 皆が楽しく会話をしていると[p]
-[fadeoutbgm time=3000]
+;【SE】落雷
+[playse storage=thunder.ogg loop=false ]
 @layopt layer=13 visible=true
 [image layer=13 x=0 y=0 zindex=0 storage="bg/white.jpg" time=2000]
 [wait time=100]
@@ -196,6 +199,8 @@
 @layopt layer=13 visible=true
 
 突如、雲を引き裂くような雷がなった後、雨がざんざんと降りはじめた――。[p]
+;【SE】雨
+[playse storage=rain.ogg loop=false ]
 ;==========================================================
 [wait time=50]
 @layopt layer=fix visible=false
@@ -253,9 +258,9 @@
 ;お爺様宛
 
 [whosay name="飛鳥紗代子"]
-「それはいいわね。  是非、頼んでおいて頂戴」[p]
+「それはいいわね。[sp]是非、頼んでおいて頂戴」[p]
 [whosay name="飛鳥伯父様"]
-「こら、紗代子。  お前が食べるんじゃないぞ」[p]
+「こら、紗代子。[sp]お前が食べるんじゃないぞ」[p]
 #
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
@@ -369,7 +374,8 @@
 
 業を煮やした殿様は[r]
 [ruby text=かき]杜[ruby text=つばた]若を荒縄で縛り上げ家来どもに命じて……[p]
-;バッシャンSE
+;【SE】水音
+[playse storage=mizu_ike.ogg loop=false ]
 [sp][r][r]
 池に放り込んでしまったの。[p]
 
@@ -508,7 +514,9 @@
 
 [whosay name="飛鳥紗代子"]
 「？　おやすみなさいませ」[p]
-
+;ＳＥ確認できないのでわからない
+;【SE】人々のざわめき（ザワザワ…屋内）
+[playse storage=zawa_room.ogg loop=false ]
 #？？？
 「ザワザワ……」[p]
 
@@ -739,6 +747,7 @@
 [playse storage=girl_out_walk.ogg loop=false ]
 [暗転２]
 [wait time=1000]
+[暗転]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
