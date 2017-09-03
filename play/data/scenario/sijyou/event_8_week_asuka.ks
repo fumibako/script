@@ -14,7 +14,8 @@
 ;=====================ここからお芝居の幕引きです==============================
 
 ――夏の半ば。[r]
-[名字]家では、親戚一同が集まり、祖先の霊を祀る行事が行われた。[p]
+[名字]家では、親戚一同が集まり、[r]
+祖先の霊を祀る行事が行われた。[p]
 
 ;==========================================================
 [背景_庭]
@@ -101,8 +102,8 @@
 ――客間。[r][r]
 
 年季が入った客間は、天井のシミが黒々と深く[r]
-歴史を感じさせる。[r][r][r]
-[ruby text=ふすま]襖の上には、[名字]家の親族の写真が[r]
+歴史を感じさせる。[p]
+[ruby text=ふすま]襖の上には、[名字]家の親族の写真や肖像画が[r]
 飾られており、[r]
 親戚そろって、思い出などの他愛ない話を[r]
 交わした。[p]
@@ -113,6 +114,10 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
@@ -127,6 +132,9 @@
 [whosay name="飛鳥紗代子"]
 「どうしましたの、名前さん？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 「いえ……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (いけない、せっかく紗代子さん達がいらっしゃるのに)[p]
@@ -138,6 +146,9 @@
 そんな子供染みた事を伝えるわけにもいかず、[r]
 私は親族の前でいつも通りに笑ってみせた。[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+;↓目：横目 [主人公横目]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
 「よい方を迎えられて、私も嬉しい限りです。」[p]
 [whosay name="飛鳥伯父様"]
 「いやいや、とんだお転婆な娘で困ったこともありますよ」[p]
@@ -149,9 +160,13 @@
 「そのことは許してくれよ」[p]
 
 #
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 皆が楽しく会話をしていると[p]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/white.jpg" time=1000]
+[freeimage layer=29 time=500]
 
-;ドーン 雷音
 
 突如、雲を引き裂くような雷がなった後、雨がざんざんと降りはじめた。[p]
 ;==========================================================
