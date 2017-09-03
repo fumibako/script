@@ -674,10 +674,12 @@
 私の心に浮かんだ、彼の人を想えば……[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;藤枝の好感度が高い場合、
+;藤枝の好感度が高い場合、f.event_hujieda[17]進行不可手紙　７月のｲﾍﾞﾝﾄf.event_hujieda[4]
+[if exp="(f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start ==1) || (f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1)"]
 (明日も、お稽古頑張りましょう)[p]
+[else]
 (明日も手紙を出しましょう)[p]
-
+[endif]
 #
 彼の人を想えば、ずいぶんと心軽やかになったのであった。[p]
 
@@ -688,8 +690,10 @@
 「おやすみなさいませ。[sp]いい夢を」[p]
 [whosay name="飛鳥紗代子"]
 （ふぅ。猫様にしては、ずいぶんと大きな音でしたわね）[p]
-
-
+;【SE】軽い足音（フェードアウト）
+[playse storage=girl_out_walk.ogg loop=false ]
+[暗転２]
+[wait time=1000]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
