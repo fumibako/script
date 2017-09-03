@@ -1,4 +1,4 @@
-﻿﻿﻿[setreplay name="test"]
+[setreplay name="test"]
 *test
 [image name="loding_pic1" layer=2 folder="image" storage="junbi_cyu2.gif" left=740 top=580]
 [clearstack]
@@ -521,7 +521,8 @@ alert(f.para_sijyou_koukando);
 *test_sayoko
 [cm]
 [freeimage layer = 26]
-@jump storage="sijyou/event_8_week_asuka.ks"
+[glink storage="sijyou/event_8_week_asuka.ks" text="飛鳥紗代子イベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink storage="common_asuka.ks" text="飛鳥紗代子イベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [s]
 
 *tweet
