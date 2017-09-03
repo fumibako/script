@@ -54,12 +54,23 @@
 陰の深い輪郭は、紗代子さんとは、いくつか歳の差がある印象を受ける。[p]
 ;受けた？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 「いえ、お構いなく……。[r]
 [sp]私は、そのままの紗代子さんが親しみ易いです」[p]
 
 [whosay name="飛鳥紗代子"]
 「そうですわ。 [r]
 [sp]私、まだ伯母様とは呼ばれたくもありませんし、[r]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 [sp]町でお買い物を楽しみながら、[名前]さんと気軽に話したいの」[p]
 ;散策で会えることを示唆
 [whosay name="飛鳥伯父様"]
@@ -74,11 +85,18 @@
 [whosay name="飛鳥伯父様"]
 「はあ……。　この顔は自前みたいなものだ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(飛鳥伯父様、[r]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
+（飛鳥伯父様、[r]
 [sp]まだ紗代子さんに対して怒っていらっしゃるのかしら？)[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「客間にお茶を用意しております。[r]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+「失礼します。　客間にお茶を用意しております。[r]
 [sp]迎えが来られるまでお使いください」[p]
 #
 お父様と磯野が現れ、屈伸する親族達を気遣う。[p]
@@ -209,6 +227,9 @@
 [whosay name="飛鳥伯父様"]
 「こら、紗代子。[sp]はしたないぞ」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+;↓眉：下がり眉[主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 「折角、来たのだから、泊まっていってはどうだろうか？」[p]
 [whosay name="飛鳥伯父様"]
 「宜しいのでしょうか？」[p]
@@ -229,8 +250,11 @@
 [whosay name="飛鳥伯父様"]
 「こら、紗代子。  お前が食べるんじゃないぞ」[p]
 #
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 私達は、飛鳥家と楽しく団欒をした。[p]
-[背景_庭_夜]
+
 ;==========================================================
 [wait time=50]
 @layopt layer=fix visible=false
