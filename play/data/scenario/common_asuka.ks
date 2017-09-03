@@ -85,14 +85,14 @@
 ;↓眉：下がり眉
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
-;↓目：柔和な伏目 [主人公目伏柔]
-[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
-[wait time=10]
 「そうですね。お父様達が不在の際、[r]
 [sp]時折、ウチに立ち寄って下さっては、暖かな言葉を[r]
 [sp]掛けて頂いきましたわ」[p]
 ;文矢もいないときです。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
 （飛鳥家の奥様として来て下さったとしても、[r]
 [sp]私にとって、それは嬉しい事だったわ)[p]
 
