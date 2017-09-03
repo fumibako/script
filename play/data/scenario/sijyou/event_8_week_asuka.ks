@@ -80,14 +80,35 @@
 お父様と磯野が現れ、屈伸する親族達を気遣う。
 #
 私も流れに沿って客間に移動した。
-
+;==========================================================
 ;背景天井 
-
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+@layopt layer=fix visible=false
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[freeimage layer = 1]
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;==========================================================
 ――客間。
 天井のシミが黒々と深い、[r]
 年季が入った客間。[r]
 親戚そろって、他愛ない話を交わす。[p]
-
+;==========================================================
+[wait time=50]
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+;==========================================================
 #
 その中で私は、不安げに目を伏せていた。[p]
 
@@ -125,14 +146,34 @@
 ;ドーン 雷音
 
 突如、雲を引き裂くような雷がなった後、雨がざんざんと降りはじめた。[p]
-
+;==========================================================
+[wait time=50]
+@layopt layer=fix visible=false
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[freeimage layer = 1]
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;==========================================================
 ;ザァー…SE 雨イメージ
 
 細やかな雨粒が絶え間なく降り注ぎ、
 いつも窓から見える、庭先の木々さえ、霧の中にあって見えそうにない。[p]
 
 磯野以外の屋敷の従者達は、戸締まりに奔走し始める。[p]
-
+;==========================================================
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+;==========================================================
 [whosay name="飛鳥紗代子"]
 「この雨ですと、車を出すのも危なさそうですわね」[p]
 #
@@ -202,6 +243,19 @@
 [whosay name="飛鳥紗代子"]
 「これは、怪談(作り話)ではないの。昔から伝わる話なのよ」[p]
 #
+;==========================================================
+[wait time=50]
+@layopt layer=fix visible=false
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[freeimage layer = 1]
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;==========================================================
 ;全画面 森と池
 昔々、飛鳥の家に[ruby text=かき]杜[ruby text=つばた]若という美しい腰元がいて、[r]
 殿様の寵愛を受けていたの[r]
@@ -219,6 +273,16 @@
 ;バッシャンSE
 
 池に放り込んでしまったの。[p]
+;==========================================================
+[resetfont]
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+;==========================================================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「酷いわ……」[p]
@@ -264,7 +328,7 @@
 
 [whosay name="飛鳥紗代子"]
 「[ruby text=みな]皆の噂によると[ruby text=かき]杜[ruby text=つばた]若が見事らしいですわ。[r]
-[sp]でも、私、さしてお花に興味がないのに何故行きたいのかしらね？[r]
+[sp]でも、私、さしてお花に興味がないのに何故、行きたくなるのかしらね？[r]
 [sp]おほほ」
 ;のほほん。
 
@@ -289,7 +353,7 @@
 [whosay name="飛鳥紗代子"]
 「そう？[r]
 [sp][ruby text=かき]杜[ruby text=つばた]若さんのお話は私にとっては聞き慣れた話だから[r]
-[sp]イマイチですけれど……[p]
+[sp]イマイチですけれど……」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;憂 目閉じ
@@ -299,13 +363,15 @@
 ふぅ。 わかりましたわ。名前さんは、もう充分な御様子だから、ここまでにしますわね。
 その代わり、ここに置いてある小説を読ませて頂くわ[p]
 
-[whosay name=&sf.girl_namae color="#cf5a7f"] ニコ汗
-えぇ、どうぞ！[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+;ニコ汗
+「えぇ、どうぞ！」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 困り
 (もしかしたら、お父様や磯野なら、詳しく知ってるかもしれないわ……)[p]
 
-[whosay name=&sf.girl_namae color="#cf5a7f"] ふぅ
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+;ふぅ
 (そういえば、昔、夏の寝苦しい日に寝れないと駄々を捏ねた時、お父様が恐ろしい"昔話"をされましたね)[p]
 
 #   目閉じ憂
@@ -325,31 +391,30 @@
 (やだわ…もう充分なのに)[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-私、先に寝ますわね！おやすみなさいませ！
+「私、先に寝ますわね！　　おやすみなさいませ！」
 
 [whosay name="飛鳥紗代子"]
-？ おやすみなさいませ。
-
-ザワザワ……
+「？ おやすみなさいませ」
+#
+「ザワザワ……」
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-……きっと風の音ですよね[p]
+「……きっと風の音ですよね」[p]
 
 [whosay name="飛鳥紗代子"]
-夏なのに夜風がふくのかしら…？[p]
+「夏なのに夜風がふくのかしら…？[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-やめてください……せっかく落ち着こうとしているのに[p]
+「やめてください……せっかく落ち着こうとしているのに」[p]
 
 [whosay name="飛鳥紗代子"]
-ごめんなさい。つい、ね。[r]
-ねぇ、こんな時は、好きな人のことを考えてみたら？[p]
+「ごめんなさい。 つい」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-紗代子さんは、怖くないのですか？[p]
+「紗代子さんは、怖くないのですか？」[p]
 
 [whosay name="飛鳥紗代子"]
-怖いわ……でも、実家でも、そういったことが多いの。
-だから、つい……本当か気になってしまうの[p]
+「怖いわ……でも、実家でも、そういったことが多いの。[r]
+[sp]だから、つい……本当か気になってしまうの[p]
 
 #
 紗代子さんは、まるで本当にいくつか幽霊を見てきたかのように落ち着きを払っていた。[p]
@@ -357,97 +422,111 @@
 そんな彼女の振る舞いを見て、私は本当に得体の知れないものが庭を通り抜けていったような気がしてしまった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-紗代子さん、
-私、怖くなってきてしまったわ……！ [p]
+「紗代子さん、[r]
+[sp]私、怖くなってきてしまったわ……！」[p]
 
 [whosay name="飛鳥紗代子"]
-ああ、ごめんなさい！
-でも、怖くなった時は、大事な人のことを思い浮かべて寝るのよ。
-そうしたら、生きてる人に勝ることなし！って思えるから。[p]
+「ああ、ごめんなさい！[r]
+[sp]でも、怖くなった時は、大事な人のことを思い浮かべて寝るのよ。[r]
+[sp]そうしたら、生きてる人に勝ることなし！って思えるから」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-生きてる人に勝ることなし？[p]
+「生きてる人に勝ることなし？」[p]
 
 [whosay name="飛鳥紗代子"]
-旦那様の奥方様は、若くして事故で亡くなられたの。
-ですから私は、旦那様にとって二番目の奥さんにあたるのですけど、こちらを向いて貰うまで大変苦労しましたのよ。
+「旦那様の奥方様は、若くして事故で亡くなられたの。[r]
+[sp]ですから私は、旦那様にとって二番目の奥さんにあたるのですけど、[r]
+[sp]こちらを向いて貰うまで大変苦労しましたのよ」
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-そうなのですか？！
+「そうなのですか？！」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そういえば、三年ほど前に紗代子さんと出会った時、"まだ紗代子伯母さんとは呼ばないでね"……と言われて、そのまま、お名前で呼んでますが……)
+（そういえば、三年ほど前に紗代子さんと出会った時、[r]
+[sp]"まだ紗代子伯母さんとは呼ばないでね"……と言われて、[r]
+そのまま、お名前で呼んでますが……)[p]
 
 [whosay name="飛鳥紗代子"]
-あら、客間で私達が話をしてるのを聞いてなくて？
+「あら、客間で私達が話をしてるのを聞いてなくて？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-い、いえ、少し気になって！
+「い、いえ、少し気になって！」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(天井のシミがお顔に見えて、話を聞いてなかったなんて言えないわ)
+（天井のシミがお顔に見えて、話を聞いてなかったなんて言えないわ)[p]
 
-;皆は表立っては言いませんからね。 少し分かりにくかったかもしれませんね……。
+;皆は表立っては言いませんからね。 少し分かりにくかったかもしれませんね……[p]
 
 [whosay name="飛鳥紗代子"]
-話は戻しますけれど、
-私は、死んでる方に負けたくありませんでしたから、旦那様が"旦那様"として、こちらを向いてもらうまで、たくさん話しかけたり、苦手なお稽古に励みました。
+「話は戻しますけれど、[r]
+[sp]私は、死んでる方に負けたくありませんでしたから、[r]
+[sp]旦那様が"旦那様"として、こちらを向いてもらうまで」[p]
+
+「たくさん話しかけたり、苦手なお稽古に励みました。[r]
+[sp]今でこそ、軽口を言い合う仲ですけれど、[r]
+[sp]当時は苦労したものです」[p]
 ;お稽古によって見初められた
 
 [whosay name="飛鳥紗代子"]
-今でこそ、軽口を言い合う仲ですけれど、当時は苦労したものです。
-家柄同士のお付き合いだとしても共に生きていくなら、その方と素敵な恋をしてみたいですもの。
-;でしょう？にすると葛城宮や藤枝ではおかしいので独り言に
+「家柄同士のお付き合いだとしても[r]
+[sp]共に生きていくなら、[r]
+[sp]その方と素敵な恋をしてみたいですもの」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 目閉じ照れなし
-(恋ですか……)
+（恋ですか……)[p]
 ;藤枝 葛城宮↑
-(共に歩む方との恋……)
+;(共に歩む方との恋……)
 
 [whosay name="飛鳥紗代子"]
-生きて、恋をして、明日も生きていくの。[r]
+「生きて、恋をして、明日も生きていくの。[r]
 そうして、愛されてこそ、女性は美しくなるのよ。
 死んでる方より何事にも勝ると思わない？[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-そうかも……しれませんね」[p]
+「そうかも……しれませんね」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(紗代子さんは、普段は、お話に夢中になる方なのに、本当は、真面目で落ち着いた方なのね)
+（紗代子さんは、普段、お話に夢中になる方なのに[r]
+[sp]本当は、真面目で落ち着いた方なのね)[p]
 
 [whosay name="飛鳥紗代子"]
-あら、生きてるものに勝るものなし……でしたかしら？ 私、細かいことは覚えられないの。
-もし、お調べなられて間違っていたら許して頂戴ね[p]
+「あら、”生きてるものに勝るものなし”……でしたかしら？[r]
+[sp]私、細かいことは覚えられないの。[r]
+[sp]もし、お調べなられて間違っていたら許して頂戴ね」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 汗
-(本当に落ちついていらっしゃるのね……)
+(本当に落ちついていらっしゃるのね……)[p]
 
 #猫
-にゃーお[p]
+「にゃーお」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (！！)[p]
 
 [whosay name="飛鳥紗代子"]
- あら、お猫様だったのね[p]
+「あら、お猫様だったのね」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-紗代子さん……取り乱したりして、ごめんなさい[p]
+「紗代子さん……取り乱したりして、ごめんなさい」[p]
 
 [whosay name="飛鳥紗代子"]
-いいえ、こちらこそ。
-名前さんには刺激が強い話だったようでごめんなさい。
-それから、今日は楽しかったわ。[p]
+「いいえ、こちらこそ。[r]
+[sp]名前さんには刺激が強い話だったようでごめんなさい。[r]
+[sp]それから、今日は楽しかったわ」[p]
 
 [whosay name="飛鳥紗代子"]
-で。どなたを思い浮かべたのかしら？[p]
+「で。[sp]どなたを思い浮かべたのかしら？[p]
 
-[whosay name=&sf.girl_namae color="#cf5a7f"] 主人公照れ
-紗代子さん……[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+;主人公照れ
+「紗代子さん……[p]
 
 [whosay name="飛鳥紗代子"]
-大事なことよ。扉を開けた瞬間、崖に落ちる瞬間、その時に誰かの顔を思い浮かべたら、その人のことが好きってことなのよ。[p]
+「大事なことよ。[sp]扉を開けた瞬間、崖に落ちる瞬間、[r]
+[sp]その時に誰かの顔を思い浮かべたら[r]
+[sp]その方の事が、好きってことなのよ」[p]
 
-[whosay name=&sf.girl_namae color="#cf5a7f"] 汗ニコ
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+;汗ニコ
 (崖に落ちる瞬間……)[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 主人公目閉じ
@@ -472,10 +551,70 @@
 彼の人を想えば、ずいぶんと心軽やかになったのであった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-先に寝ますね。 おやすみなさいませ。
+「落ち着いて眠れそうです。 おやすみなさいませ」[p]
 
 [whosay name="飛鳥紗代子"]
-おやすみなさいませ。いい夢を。
+「おやすみなさいませ。いい夢を。
 
 [whosay name="飛鳥紗代子"]
 (ふぅ。猫様にしては、ずいぶんと大きな音でしたわね)[p]
+
+[if exp="f.okeiko_gamen == true"]
+@jump storage="event.ks" target=*event_owari
+[else]
+@jump storage="test_sijyou.ks"
+[endif]
+[s]
+
+;------------------------------------------------
+*window_close
+[cm]
+[chara_mod name="girl_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_emo" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+;会話ウィンドウ消去
+[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;メッセージレイヤを非表示
+@layopt layer=message0 page=fore visible=false
+[layopt layer=27 visible=true]
+[wait time=10]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[wait time=10]
+[l]
+
+;会話ウィンドウ表示
+[chara_mod name="message_bg" storage=&f.message_storage time=1]
+;機能ボタン表示
+;セーブ等ボタン配置
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+;メッセージレイヤを表示
+[if exp="f.kaogura!='off'"]
+[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[endif]
+@layopt layer=message0 page=fore visible=true
+[current layer="message0"]
+[freeimage layer = 27]
+[wait time=10]
+
+[return]
