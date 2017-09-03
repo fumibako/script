@@ -16,8 +16,12 @@
 ――夏の半ば。[r]
 [名字]家では、親戚一同が集まり、[r]
 祖先の霊を祀る行事が行われた。[p]
-
 ;==========================================================
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
 [背景_庭]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -36,7 +40,6 @@
 「無事終わってホッとしましたわ。[r]
 [sp]祀り事の最中は、棒立ちか正座しかしないのですから、[r]
 [sp]足が石になるかと思いました」[p]
-;慰霊碑になるかと思いました の方がよい？
 
 [whosay name="飛鳥伯父様"]
 「こら、紗代子。[r]
@@ -182,9 +185,12 @@
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 皆が楽しく会話をしていると[p]
+[fadeoutbgm time=3000]
 [image layer=13 x=0 y=0 zindex=0 storage="bg/white.jpg" time=1000]
-[freeimage layer=13 time=500]
+[wait time=10]
 [背景_庭_夜]
+[freeimage layer=13 time=500]
+[wait time=10]
 ;本当は天井です
 @layopt layer=13 visible=true
 
@@ -295,7 +301,7 @@
 
 [whosay name="飛鳥紗代子"]
 「普段着だと、帯の締め方を工夫して対処できますけれど、[r]
-[sp]寝巻きだとそうもいかないし……どうしましょう[p]
+[sp]寝巻きだとそうもいかないし……どうしましょう」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「氷を持ってこさせましょうか？」[p]
@@ -308,7 +314,7 @@
 謙遜する紗代子さんに私が言葉をかけようとした時、[r]
 紗代子さんは何か閃いたのか明るい声を上げた。[p]
 [whosay name="飛鳥紗代子"]
-「そうだわ！ もっといいことがあるわ！[r]
+「そうだわ！[sp]もっといいことがあるわ！[r]
 [sp]昔話をしましょう」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -318,7 +324,13 @@
 紗代子さんは、ニヤリ。と笑うと"昔話"を始めた。[p]
 
 [whosay name="飛鳥紗代子"]
-「これは、怪談(作り話)ではないの。昔から伝わる話なのよ」[p]
+「これは、怪談(作り話)ではないの。[r]
+[sp]昔から伝わる話なのよ」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】「深雪白雪」
+[playbgm storage="miyuki.ogg" loop=true]
+[eval exp="f.bgm_storage='miyuki.ogg'"]
+[endif]
 #
 ;==========================================================
 [wait time=50]
@@ -338,7 +350,8 @@
 殿様の寵愛を受けていたの――。[p]
 
 ところが殿様の長男も[ruby text=かき]杜[ruby text=つばた]若を愛するようになり、[r]
-やがて杜若は身籠もる。[r]
+やがて杜若は身籠もる。[p]
+
 何も知らない殿様は大層喜ぶが、[r]
 側近達は、口々に[r]
 [ruby text=かき]杜[ruby text=つばた]若のお腹の子は若君の子と告げ口する。[p]
@@ -352,6 +365,7 @@
 ;バッシャンSE
 [sp][r][r]
 池に放り込んでしまったの。[p]
+
 ;==========================================================
 [resetfont]
 [resetfont]
@@ -363,7 +377,6 @@
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;==========================================================
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「酷いわ……」[p]
 
@@ -371,6 +384,9 @@
 「このあと、この池の近くをとおった奥方様や側室様は、[r]
 [sp]釣られるようにして小舟に乗って[r]
 [sp]思わぬ事故死を繰り返したそうよ……」[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+「！！」[p]
 
 [whosay name="飛鳥紗代子"]
 「どう？ これが飛鳥家に伝わる"昔話"よ。[r]
@@ -410,8 +426,8 @@
 
 [whosay name="飛鳥紗代子"]
 「[ruby text=みな]皆の噂によると[ruby text=かき]杜[ruby text=つばた]若が見事らしいですわ。[r]
-[sp]でも、私、さしてお花に興味がないのに何故、行きたくなるのかしらね？[r]
-[sp]おほほ」[p]
+[sp]でも、私、さしてお花に興味がないのに[r]
+[sp]何故、行きたくなるのかしらね？　おほほ」[p]
 ;のほほん。
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -444,7 +460,7 @@
 [whosay name="飛鳥紗代子"]
 「ふう。[sp]わかりましたわ。[sp][名前]さんは、[r]
 [sp]もう充分な御様子だから、ここまでにしますわね。[r]
-[sp]その代わり、ここに置いてある小説を読ませて頂くわ[p]
+[sp]その代わり、ここに置いてある小説を読ませて頂くわ」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;ニコ汗
@@ -457,7 +473,7 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;ふぅ
-（そういえば、昔、夏の寝苦しい日に寝れないと駄々を捏ねた時、[r]
+（そういえば、昔、夏の寝苦しい日に寝れないと駄々を[ruby text=こ]捏ねた時、[r]
 [sp]お父様が恐ろしい"昔話"をされましたね)[p]
 
 #   
@@ -481,10 +497,10 @@
 (やだわ……もう充分なのに)[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「私、先に寝ますわね！　　おやすみなさいませ！」[p]
+「私、先に寝ますわね！　おやすみなさいませ！」[p]
 
 [whosay name="飛鳥紗代子"]
-「？ おやすみなさいませ」[p]
+「？　おやすみなさいませ」[p]
 
 #？？？
 「ザワザワ……」[p]
@@ -508,7 +524,7 @@
 
 [whosay name="飛鳥紗代子"]
 「怖いわ……でも、実家でも、そういったことが多いの。[r]
-[sp]だから、本当か気になってしまうの[p]
+[sp]だから、本当か気になってしまうの」[p]
 
 #
 紗代子さんは、まるで本当にいくつか幽霊を見てきたかのように[r]
@@ -521,6 +537,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「紗代子さん、[r]
 [sp]私、怖くなってきてしまったわ……！」[p]
+[fadeoutbgm time=3000]
 
 [whosay name="飛鳥紗代子"]
 「ああ、ごめんなさい！[r]
@@ -530,8 +547,14 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「生きてる人に勝ることなし？」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
+
 [whosay name="飛鳥紗代子"]
-「旦那様の奥方様は、若くして事故で亡くなられたの。[r]
+「私の旦那様の元奥方様は、若くして事故で亡くなられたの。[r]
 [sp]ですから私は、旦那様にとって二番目の奥さんにあたるのですけど、[r]
 [sp]こちらを向いて貰うまで大変苦労しましたのよ」[p]
 
@@ -578,7 +601,7 @@
 [whosay name="飛鳥紗代子"]
 「生きて、恋をして、明日も生きていくの。[r]
 [sp]そうして、愛されてこそ、女性は美しくなるのよ。[r]
-[sp]死んでる方より何事にも勝ると思わない？」[p]
+[sp]死んでる方より、何事にも勝ると思わない？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうかも……しれませんね」[p]
@@ -658,6 +681,8 @@
 「おやすみなさいませ。[sp]いい夢を」[p]
 [whosay name="飛鳥紗代子"]
 （ふぅ。猫様にしては、ずいぶんと大きな音でしたわね）[p]
+
+
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
