@@ -71,12 +71,15 @@
 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;↓目：通常 [主人公目通常]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「お見合いに対する心配りの手紙だわ」[p]
 
 [whosay name="磯野" color="dimgray"]
+;↓目：通常 [主人公目通常]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 「紗代子様は、お嬢様を気に掛けていらっしゃられましたから」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉
