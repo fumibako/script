@@ -1,6 +1,6 @@
-*replay_sijyou_1_1
+*replay_common_ausuka
 *start
-[call target=*1_1 storage="sijyou/preload_sijyou.ks"]
+[call target=**bonyou storage="sijyou/preload_sijyou.ks"]
 [stopbgm]
 ;=================================================================================_
 ;[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
