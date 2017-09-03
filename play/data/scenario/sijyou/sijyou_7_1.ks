@@ -85,7 +85,7 @@
 [current layer="message1"]
 [font size=32]
 ;【分岐】
-[if exp="f.katuraginomiya_only == 1"]
+[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1"]
 [glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [else]
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
