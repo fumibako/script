@@ -672,7 +672,52 @@
 
 #
 私の心に浮かんだ、彼の人を想えば……[p]
-
+;========================================================================
+;３回クリアしていなければ@jump target=comonへ　変数名は仮　クリアマクロにいれほしい
+[if exp="sf.ending_Number_of_times != 3"]
+@jump target=comon
+[endif]
+[暗転２]
+[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1"]
+[glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[endif]
+[if exp="f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1"]
+[glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[endif]
+[glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
+[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
+[endif]
+[s]
+;========================================================================
+*katuragi
+[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
+@jump target=comon1
+[s]
+;========================================================================
+*hujieda
+[eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 1"]
+@jump target=comon1
+[s]
+;========================================================================
+*sijyou
+[eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
+@jump target=comon1
+[s]
+;========================================================================
+*zaizen
+[eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
+@jump target=comon1
+[s]
+;========================================================================
+*kuroda
+[eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
+@jump target=comon1
+[s]
+;========================================================================
+*comon1
+[暗転２終了]
+*comon
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;藤枝の好感度が高い場合、f.event_hujieda[17]進行不可手紙　７月のｲﾍﾞﾝﾄf.event_hujieda[4]
 [if exp="(f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start ==1) || (f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1)"]
