@@ -1,8 +1,5 @@
 [stopbgm]
 [call target=*bonyou storage="sijyou/preload_sijyou.ks"]
-
-[主人公ポーズ通常]
-[主人公通常]
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -22,13 +19,15 @@
 ;==========================================================
 [背景_庭]
 [イベントシーン構築ボタン無し版]
+[主人公ポーズ通常]
+[主人公通常]
 [freeimage layer=29 time=0]
 [メッセージウィンドウ上ボタン表示]
 ;==========================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お疲れ様です」[p]
 [whosay name="飛鳥紗代子"]
-「[名前]さんもお疲れ様です。
+「[名前]さんもお疲れ様です」[p]
 #
 祀事が終わり、親戚の飛鳥紗代子さんと挨拶をする。[p]
 
@@ -63,23 +62,26 @@
 [sp]町でお買い物を楽しみながら、[名前]さんと気軽に話したいの」[p]
 ;散策で会えることを示唆
 [whosay name="飛鳥伯父様"]
-「(結婚してから)そろそろ三年ほど経つ。 いい頃合いだと思う……」[p]
+「(結婚してから)そろそろ三年ほど経つ。[r]
+[sp]いい頃合いだと思うが……」[p]
 #
 ふいに飛鳥伯父様は、またもや愁眉を寄せ、紗代子さんを横目で流し見た。[p]
 [whosay name="飛鳥紗代子"]
-「あら、旦那様。そんなお顔しては怖いですこと。おほほ」[p]
+「あら、旦那様。[r]
+[sp]そんなお顔しては怖いですこと。おほほ」[p]
 [whosay name="飛鳥伯父様"]
-「はあ……。この顔は自前みたいなものだ」[p]
+「はあ……。　この顔は自前みたいなものだ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(飛鳥伯父様、まだ紗代子さんに対して怒っていらっしゃるのかしら？)[p]
+(飛鳥伯父様、[r]
+[sp]まだ紗代子さんに対して怒っていらっしゃるのかしら？)[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「客間にお茶を用意しております。[r]
-迎えが来られるまでお使いください」[p]
+[sp]迎えが来られるまでお使いください」[p]
 #
-お父様と磯野が現れ、屈伸する親族達を気遣う。
+お父様と磯野が現れ、屈伸する親族達を気遣う。[p]
 #
-私も流れに沿って客間に移動した。
+私も流れに沿って客間に移動した。[p]
 ;==========================================================
 ;背景天井 
 [wait time=50]
@@ -95,10 +97,13 @@
 [current layer="message0"]
 [font color=white size=27]
 ;==========================================================
-――客間。
-天井のシミが黒々と深い、[r]
-年季が入った客間。[r]
-親戚そろって、他愛ない話を交わす。[p]
+――客間。[r][r]
+
+年季が入った客間は、天井のシミが黒々と深く[r]
+歴史を感じさせる。[r][r][r]
+[ruby text=ふすま]襖の上には、[名字]家の親族の写真が[r]
+飾られており、[r]
+親戚そろって、思い出などの他愛ない話を交わした。[p]
 ;==========================================================
 [wait time=50]
 [resetfont]
@@ -106,6 +111,7 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;==========================================================
@@ -171,6 +177,7 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;==========================================================
@@ -280,6 +287,7 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;==========================================================
