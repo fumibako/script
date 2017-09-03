@@ -151,7 +151,7 @@
 [sp]このお部屋、行事がない限りは使わないけれど、[r]
 [sp]天井のシミがどことなく顔にみえて、近寄りがたいのだったわ)[p]
 [whosay name="飛鳥紗代子"]
-「どうしましたの、名前さん？」[p]
+「どうしましたの、[名前]さん？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
@@ -170,7 +170,7 @@
 ;↓目：横目 [主人公横目]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
-「よい方を迎えられて、私も嬉しい限りです。」[p]
+「よい方を迎えられて、私も嬉しい限りです」[p]
 [whosay name="飛鳥伯父様"]
 「いやいや、とんだお転婆な娘で困ったこともありますよ」[p]
 [whosay name="飛鳥紗代子"]
@@ -186,8 +186,9 @@
 [wait time=10]
 皆が楽しく会話をしていると[p]
 [fadeoutbgm time=3000]
-[image layer=13 x=0 y=0 zindex=0 storage="bg/white.jpg" time=1000]
-[wait time=10]
+@layopt layer=13 visible=true
+[image layer=13 x=0 y=0 zindex=0 storage="bg/white.jpg" time=2000]
+[wait time=100]
 [背景_庭_夜]
 [freeimage layer=13 time=500]
 [wait time=10]
@@ -277,6 +278,11 @@
 －－夜、私達が眠りにつく頃。[r]
 荒れるような夏雨(なつさめ)は過ぎ去り、[r]
 部屋には湿った生暖かい風がじっとりと篭っていた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 ;==========================================================
 [resetfont]
 @layopt layer=message0 visible=false
@@ -316,6 +322,7 @@
 [whosay name="飛鳥紗代子"]
 「そうだわ！[sp]もっといいことがあるわ！[r]
 [sp]昔話をしましょう」[p]
+[fadeoutbgm time=3000]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「昔話？」[p]
