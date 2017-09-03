@@ -65,10 +65,11 @@
 「(結婚してから)そろそろ三年ほど経つ。[r]
 [sp]いい頃合いだと思うが……」[p]
 #
-ふいに飛鳥伯父様は、またもや愁眉を寄せ、紗代子さんを横目で流し見た。[p]
+ふいに飛鳥伯父様は、またもや愁眉を寄せ、[r]
+紗代子さんを横目で流し見た。[p]
 [whosay name="飛鳥紗代子"]
 「あら、旦那様。[r]
-[sp]そんなお顔しては怖いですこと。おほほ」[p]
+[sp]そんなお顔して、お怖いですこと。　おほほ」[p]
 [whosay name="飛鳥伯父様"]
 「はあ……。　この顔は自前みたいなものだ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -103,7 +104,8 @@
 歴史を感じさせる。[r][r][r]
 [ruby text=ふすま]襖の上には、[名字]家の親族の写真が[r]
 飾られており、[r]
-親戚そろって、思い出などの他愛ない話を交わした。[p]
+親戚そろって、思い出などの他愛ない話を[r]
+交わした。[p]
 ;==========================================================
 [wait time=50]
 [resetfont]
@@ -166,11 +168,11 @@
 [font color=white size=27]
 ;==========================================================
 ;ザァー…SE 雨イメージ
-
-細やかな雨粒が絶え間なく降り注ぎ、
-いつも窓から見える、庭先の木々さえ、霧の中にあって見えそうにない。[p]
-
-磯野以外の屋敷の従者達は、戸締まりに奔走し始める。[p]
+細やかな雨粒が絶え間なく降り注ぎ、[r]
+いつも窓から見える、庭先の木々さえ、[r]
+霧の中にあって見えそうにない。[p]
+磯野以外の屋敷の従者達は、戸締まりに奔走し始め、[r]
+私達は、ぼんやりと雲行きを眺めた。[p]
 ;==========================================================
 [resetfont]
 @layopt layer=message0 visible=false
@@ -189,7 +191,7 @@
 [whosay name="飛鳥伯父様"]
 「こら、紗代子。はしたないぞ」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「折角、来たのだから、泊まっていってはどうだろうか？[p]
+「折角、来たのだから、泊まっていってはどうだろうか？」[p]
 [whosay name="飛鳥伯父様"]
 「宜しいのでしょうか？」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -210,11 +212,34 @@
 「こら、紗代子。  お前が食べるんじゃないぞ」[p]
 #
 私達は、飛鳥家と楽しく団欒をした。[p]
-
-－－その夜、私達が眠りにつく頃。[r]
+[背景_庭_夜]
+;==========================================================
+[wait time=50]
+@layopt layer=fix visible=false
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[freeimage layer = 1]
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;==========================================================
+－－夜、私達が眠りにつく頃。[r]
 荒れるような夏雨(なつさめ)は過ぎ去り、[r]
 部屋には湿った生暖かい風がじっとりと篭っていた。[p]
-
+;==========================================================
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[背景_庭_夜]
+[freeimage layer=29 time=0]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+;==========================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日に限って、何で、こんなに熱いのかしら？)[p]
 
