@@ -21,12 +21,16 @@
 [whosay name="磯野" color="dimgray"]
 「飛鳥紗代子様から、お手紙を頂戴しました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+[主人公ポーズ片手]
 「まあ、紗代子さんから？」[p]
 #
 紗代子さんは、お母様のお兄様の奥様にあたる方だ。[r]
 飛鳥伯父様と三年ほど前にご結婚され、 [r]
 その時から私を可愛いがってくださる。[p]
 [whosay name="磯野" color="dimgray"]
+[主人公ポーズ通常]
 「どうぞ」[p]
 
 [手紙飛鳥 fumi_number=]
