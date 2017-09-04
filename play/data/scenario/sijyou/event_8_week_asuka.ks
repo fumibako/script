@@ -110,12 +110,11 @@
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
 @layopt layer=fix visible=false
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tenjyou.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[freeimage layer = 1]
-[wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tenjyou2.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
@@ -213,12 +212,11 @@
 ;==========================================================
 [wait time=50]
 @layopt layer=fix visible=false
+@layopt layer=message0 visible=false
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_asuka_haduki_ame.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[freeimage layer = 1]
-[wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_asuka_haduki_ame.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
