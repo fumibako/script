@@ -1,10 +1,15 @@
 [stopbgm]
 [call target=*asuka storage="sijyou/preload_sijyou.ks"]
 [wait time=50]
+[iscript]
+$(".1_fore").empty();
+[endscript]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[freeimage layer = 1]
+;【背景】広間
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" time=0]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [wait time=10]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 @layopt layer=message0 visible=true
@@ -22,7 +27,6 @@
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
-[背景_庭]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
@@ -112,6 +116,7 @@
 @layopt layer=fix visible=false
 [wait time=10]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tenjyou.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
@@ -142,6 +147,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou2.jpg" time=0]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
@@ -202,6 +208,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou3.jpg" time=0]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [freeimage layer=13 time=500]
 [wait time=10]
 @layopt layer=13 visible=true
@@ -213,6 +220,7 @@
 @layopt layer=fix visible=false
 @layopt layer=message0 visible=false
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_asuka_haduki_ame.jpg" time=50]
+[eval exp="f.haikei_credit=''"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
@@ -238,6 +246,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [freeimage layer=29 time=0]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;==========================================================
@@ -308,6 +317,7 @@
 [current layer="message0"]
 [背景_庭_夜]
 ;寝巻きではないので違和感
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [主人公退場]
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
@@ -394,6 +404,7 @@
 [freeimage layer = 1]
 [wait time=10]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_kakitubata.jpg" time=50]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
@@ -432,6 +443,7 @@
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;==========================================================
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
@@ -722,6 +734,7 @@
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [wait time=10]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 @layopt layer=message0 visible=true
@@ -740,6 +753,7 @@
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;==========================================================
 #
 私の心に浮かんだ、彼の人を想えば……[p]
