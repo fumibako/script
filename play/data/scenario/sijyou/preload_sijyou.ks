@@ -460,6 +460,21 @@
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
+*asuka
+[layopt layer=29 visible=true]
+[layopt layer=fix visible=false]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/B4nFWraU42/bg_sijyou_preload.jpg" time=500]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
+[wait time=50]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou2.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou3.jpg" wait=true]
+[preload storage="data/fgimage/bg/bg_asuka_haduki_ame.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_kakitubata.jpg" wait=true]
+@jump target=end_sub1
+;[return]へGO
+;以降は、無駄な読み込みはしない
+;======================================================================================
 ;他散策時の凡庸
 ;======================================================================================
 *bonyou
