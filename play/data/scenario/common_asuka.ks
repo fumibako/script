@@ -7,7 +7,7 @@
 ;【背景】主人公邸 庭の見える部屋：冬
 [freeimage layer = 1]
 [wait time=10]
-[背景_庭]
+[背景_お稽古部屋]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -17,9 +17,13 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=================================================================================_
-
 [whosay name="磯野" color="dimgray"]
 「飛鳥紗代子様から、お手紙を頂戴しました」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】夕涼み（お稽古パートなど
+[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -72,20 +76,20 @@
 @jump storage=info_oaite_fumi.ks target=&f.viewing_target
 [s]
 [endif]
-[手紙飛鳥読了 fumi_number=]
+[手紙読了]
 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-「お見合いに対する心配りの手紙だわ」[p]
+「お見合いに対する心配りのお手紙だわ」[p]
 
 [whosay name="磯野" color="dimgray"]
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-「紗代子様は、お嬢様を気に掛けていらっしゃられましたから」[p]
+「紗代子様は、お嬢様を気に掛けていらっしゃいましたから」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
