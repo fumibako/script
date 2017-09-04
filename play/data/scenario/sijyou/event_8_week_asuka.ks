@@ -425,7 +425,6 @@
 思わぬ事故死を繰り返したそうよ……[p]
 ;==========================================================
 [resetfont]
-[resetfont]
 @layopt layer=message0 visible=false
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -714,17 +713,43 @@
 ;主人公目閉じ
 (でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
 ;葛城宮のイベントをしてる時もこのセリフで大丈夫？
-
-[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=900]
+;==========================================================
+;背景天井 
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+@layopt layer=fix visible=false
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;==========================================================
 #
 庭の池に月が浮かび、[r]
 青々とした葉が水面を揺らす。[p]
-
+;==========================================================
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[freeimage layer=29 time=0]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+;==========================================================
 #
 私の心に浮かんだ、彼の人を想えば……[p]
 ;========================================================================
 ;３回クリアしていなければ@jump target=comonへ　変数名は仮　クリアマクロにいれほしい
-[if exp="sf.ending_Number_of_times > 4"]
+[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good+sf.ED_kuroda_bad + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+[emb exp="tf.ending_Number_of_times"][p]
+[if exp="tf.ending_Number_of_times < 4"]
 @jump target=comon
 [endif]
 [if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1"]
@@ -773,7 +798,7 @@
 [s]
 ;========================================================================
 *comon1
-[暗転２終了]
+
 *comon
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;藤枝の好感度が高い場合、f.event_hujieda[17]進行不可手紙　７月のｲﾍﾞﾝﾄf.event_hujieda[4]
