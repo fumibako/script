@@ -39,7 +39,7 @@
 [whosay name="飛鳥紗代子"]
 「無事終わってホッとしましたわ。[r]
 [sp]祀り事の最中は、棒立ちか正座しかしないのですから、[r]
-[sp]足が石になるかと思いました」[p]
+[sp]足が[ruby text=い]慰[ruby text=れい]霊[ruby text=ひ]碑になるかと思いました」[p]
 
 [whosay name="飛鳥伯父様"]
 「こら、紗代子。[r]
@@ -48,7 +48,7 @@
 ;主人公と紗代子さんが親しいことを示唆
 [whosay name="飛鳥紗代子"]
 「あら、旦那様。[r]
-[sp]お休みの時は身体を休まなくては、[r]
+[sp]お休みの時は身体を休ませなくては、[r]
 [sp]生きてる人間は疲れてしまいますのよ」[p]
 [whosay name="飛鳥伯父様"]
 「まったく……。　[名前]さん、すまない」[p]
@@ -77,8 +77,8 @@
 [sp]町でお買い物を楽しみながら、[名前]さんと気軽に話したいの」[p]
 ;散策で会えることを示唆
 [whosay name="飛鳥伯父様"]
-「(結婚してから)そろそろ三年ほど経つ。[r]
-[sp]いい頃合いだと思うが……」[p]
+「結婚してからそろそろ三年ほど経つ。[r]
+[sp]伯母と呼ばれても、いい頃合いだと思うが……」[p]
 #
 ふいに飛鳥伯父様は、またもや憂気に[ruby text=しわ]皺を寄せ、[r]
 紗代子さんを横目で流し見た。[p]
@@ -93,7 +93,7 @@
 （飛鳥伯父様、[r]
 [sp]まだ紗代子さんに対して怒っていらっしゃるのかしら？)[p]
 
-[whosay name=&sf.father_name color="DarkSlateBlue"]
+[whosay name="磯野" color="dimgray"]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -305,9 +305,38 @@
 ;==========================================================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日に限って、何で、こんなに熱いのかしら？)[p]
+[whosay name="飛鳥紗代子"]
+「[名前]さん、起きていらっしゃるかしら？」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「紗代子さん？」[p]
+[whosay name="飛鳥紗代子"]
+「起こしてしまったら、ごめんなさいね。[r]
+[sp]御簾とお茶を持ってきたの。[sp]ご一緒しても宜しいかしら？」
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「ええ！[sp]どうぞ。 [r]
+[sp]丁度、目が冴えて困っていたところでした。[r]
+[sp]飛鳥伯父様とお休みになられなくて宜しいのですか？」
 
 [whosay name="飛鳥紗代子"]
-「ふう。　今日は一段と寝苦しい日ですわね」[p]
+「旦那様達は、碁を打ちながら語っておられるわ。[r]
+[sp]ああなると、いつも夜が明けるまで続くのよ」[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「そうなのですか？」[p]
+
+[whosay name="飛鳥紗代子"]
+「ええそうよ。[sp]もし、観客役でもお願いされたら、[r]
+[sp]私、うかうか眠れやしないのよ。[r]
+[sp]ああ、恐ろしいですこと！」[p]
+;怪談をすることを示唆的な
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「ふふ、そうなのですね。[r]
+[sp]それでしたら、私で宜しければ、御一緒しましょうか」
+
+[whosay name="飛鳥紗代子"]
+「ありがとうございます。[sp]恩に着ますわ。[r]
+[sp]ふう。　今日は一段と寝苦しい日ですわね」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですね……」[p]
@@ -354,7 +383,7 @@
 [wait time=50]
 [freeimage layer = 1]
 [wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_kakitubata.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
@@ -372,7 +401,7 @@
 
 怒った殿様は矢の柄えで、[r]
 [ruby text=かき]杜[ruby text=つばた]若を叩いて尋問するけれど、[r]
-[ruby text=かき]杜[ruby text=つばた]若は泣くばかりではく白状はしなかったの。[p]
+[ruby text=かき]杜[ruby text=つばた]若は泣くばかりで白状はしなかったの。[p]
 
 業を煮やした殿様は[r]
 [ruby text=かき]杜[ruby text=つばた]若を荒縄で縛り上げ家来どもに命じて……[p]
