@@ -162,8 +162,8 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆藤枝イベント判定【バザー】条件 藤枝ルートかつ2月4週から3月3週までお箏熟練度が高い(暫定値)と1度だけ発生
-[if exp="((f.okeiko_month==2 && f.okeiko_week==4 )||(f.okeiko_month==3 && ( f.okeiko_week==1 || f.okeiko_week==2 || f.okeiko_week==3))) && f.event_hujieda[16]==0 && f.hujieda_au==1 && f.para_shujinkou_j_koto >= 70"]
+;◆藤枝イベント判定【バザー】条件 藤枝ルートかつ3月2週から3月3週までお箏熟練度が高い(暫定値)と1度だけ発生
+[if exp="(f.okeiko_month==3 && (f.okeiko_week==2 || f.okeiko_week==3)) && f.event_hujieda[16]==0 && f.hujieda_au==1 && f.para_shujinkou_j_koto >= 70"]
 	[eval exp="f.event_storage='hujieda/hujieda_bazaar_1.ks'"]
 	[eval exp="f.event_target='replay_hujieda_bazaar_1'"]
 	[eval exp="f.event_type='talk'"]
