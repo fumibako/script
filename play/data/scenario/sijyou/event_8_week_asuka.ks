@@ -178,8 +178,7 @@
 「いやいや、とんだお転婆な娘で困ったこともありますよ」[p]
 [whosay name="飛鳥紗代子"]
 「よくいいますこと！ [r]
-[sp]私も貴方には苦労させられたのよ。 良い返事を頂くまで[r]
-[sp]とても苦労しましたのよ？」[p]
+[sp]私も貴方には苦労させられたのよ？」[p]
 [whosay name="飛鳥伯父様"]
 「そのことは許してくれよ」[p]
 ;【SE】雷（ゴロゴロ
@@ -192,20 +191,20 @@
 皆が楽しく会話をしていると[p]
 ;【SE】落雷
 [playse storage=thunder.ogg loop=false ]
-@layopt layer=13 visible=true
-[image layer=13 x=0 y=0 zindex=0 storage="bg/white.jpg" time=2000]
-[wait time=100]
-[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou3.jpg" time=0]
-[freeimage layer=13 time=500]
-[wait time=10]
-@layopt layer=13 visible=true
 ;驚き
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
+@layopt layer=13 visible=true
+[image layer=13 x=0 y=0 zindex=0 storage="bg/white.jpg" time=2000]
+[wait time=100]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou3.jpg" time=0]
+[freeimage layer=13 time=500]
+[wait time=10]
+@layopt layer=13 visible=true
 突如、雲を引き裂くような雷がなった後、雨がざんざんと降りはじめた――。[p]
 ;【SE】雨
 [playse storage=rain.ogg loop=false ]
@@ -252,6 +251,8 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 ;↓眉：下がり眉[主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「折角、来たのだから、泊まっていってはどうだろうか？」[p]
 [whosay name="飛鳥伯父様"]
@@ -320,11 +321,11 @@
 「紗代子さん？」[p]
 [whosay name="飛鳥紗代子"]
 「起こしてしまったら、ごめんなさいね。[r]
-[sp]御簾とお茶を持ってきたの。[sp]ご一緒しても宜しいかしら？」
+[sp]御簾とお茶を持ってきたの。[sp]ご一緒しても宜しいかしら？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ！[sp]どうぞ。 [r]
 [sp]丁度、目が冴えて困っていたところでした。[r]
-[sp]飛鳥伯父様とお休みになられなくて宜しいのですか？」
+[sp]飛鳥伯父様とお休みになられなくて宜しいのですか？」[p]
 
 [whosay name="飛鳥紗代子"]
 「旦那様達は、碁を打ちながら語っておられるわ。[r]
@@ -341,7 +342,7 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ふふ、そうなのですね。[r]
-[sp]それでしたら、私で宜しければ、御一緒しましょうか」
+[sp]それでしたら、私で宜しければ、御一緒しましょうか」[p]
 
 [whosay name="飛鳥紗代子"]
 「ありがとうございます。[sp]恩に着ますわ。[r]
@@ -419,6 +420,9 @@
 [sp][r][r]
 池に放り込んでしまったの。[p]
 
+このあと、この池の近くをとおった奥方様や側室様は、[r]
+釣られるようにして小舟に乗って[r]
+思わぬ事故死を繰り返したそうよ……[p]
 ;==========================================================
 [resetfont]
 [resetfont]
@@ -430,13 +434,6 @@
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;==========================================================
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「酷いわ……」[p]
-
-[whosay name="飛鳥紗代子"]
-「このあと、この池の近くをとおった奥方様や側室様は、[r]
-[sp]釣られるようにして小舟に乗って[r]
-[sp]思わぬ事故死を繰り返したそうよ……」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「！！」[p]
@@ -718,8 +715,7 @@
 (でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
 ;葛城宮のイベントをしてる時もこのセリフで大丈夫？
 
-;庭の池に葉月が浮かぶは？葉月？？なので修正
-
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=900]
 #
 庭の池に月が浮かび、[r]
 青々とした葉が水面を揺らす。[p]
@@ -728,10 +724,9 @@
 私の心に浮かんだ、彼の人を想えば……[p]
 ;========================================================================
 ;３回クリアしていなければ@jump target=comonへ　変数名は仮　クリアマクロにいれほしい
-[if exp="sf.ending_Number_of_times < 4"]
+[if exp="sf.ending_Number_of_times > 4"]
 @jump target=comon
 [endif]
-[暗転２]
 [if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1"]
 [glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [endif]
@@ -745,26 +740,34 @@
 [s]
 ;========================================================================
 *katuragi
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「殿下……」[p]
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
 @jump target=comon1
 [s]
 ;========================================================================
 *hujieda
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「鳥文の君……」[p]
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 1"]
 @jump target=comon1
 [s]
 ;========================================================================
 *sijyou
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織お兄様……」[p]
 [eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
 @jump target=comon1
 [s]
 ;========================================================================
 *zaizen
+「財前様……」[p]
 [eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
 @jump target=comon1
 [s]
 ;========================================================================
 *kuroda
+「黒田様……」[p]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
 @jump target=comon1
 [s]
@@ -787,6 +790,8 @@
 
 [whosay name="飛鳥紗代子"]
 「おやすみなさいませ。[sp]いい夢を」[p]
+[fadeoutbgm time=3000]
+
 [whosay name="飛鳥紗代子"]
 （ふぅ。猫様にしては、ずいぶんと大きな音でしたわね）[p]
 ;【SE】軽い足音（フェードアウト）
