@@ -1,5 +1,5 @@
 [stopbgm]
-[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
+[call target=*asuka storage="sijyou/preload_sijyou.ks"]
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
@@ -140,6 +140,8 @@
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 [bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou2.jpg" time=0]
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
@@ -197,9 +199,14 @@
 [bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou3.jpg" time=0]
 [freeimage layer=13 time=500]
 [wait time=10]
-
 @layopt layer=13 visible=true
-
+;驚き
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 突如、雲を引き裂くような雷がなった後、雨がざんざんと降りはじめた――。[p]
 ;【SE】雨
 [playse storage=rain.ogg loop=false ]
@@ -228,7 +235,11 @@
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[背景_庭_夜]
+;表情戻す
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
