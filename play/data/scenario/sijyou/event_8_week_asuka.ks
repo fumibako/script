@@ -633,9 +633,9 @@
 ;お稽古によって見初められた
 
 [whosay name="飛鳥紗代子"]
-「結婚当初も、他の方から伯母と呼ばれるのを[r]
+「結婚当初も、私が他の方から"伯母"や"奥方"と呼ばれるのを[r]
 [sp]苦言なされるほど、前の奥様を大切にされていたのよ」[p]
-
+;苦言なされるほど　拒絶されるほど
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、三年ほど前に紗代子さんと出会った時、[r]
 [sp]"まだ紗代子伯母さんとは呼ばないでね"……と言われて、[r]
@@ -647,7 +647,7 @@
 [whosay name="飛鳥紗代子"]
 「家柄同士のお付き合いだとしても[r]
 [sp]共に生きていくなら、どんな困難だって乗り越えて[r]
-[sp]その方と素敵な恋を[ruby text=はぐく]育みたいです」[p]
+[sp]その方と素敵な恋を[ruby text=はぐく]育みたいですわ」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;目閉じ照れなし
@@ -721,6 +721,7 @@
 [wait time=10]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
+[wait time=10]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 @layopt layer=message0 visible=true
@@ -748,7 +749,7 @@
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
-[emb exp="tf.ending_Number_of_times"][p]
+;[emb exp="tf.ending_Number_of_times"][p]
 [if exp="tf.ending_Number_of_times < 4"]
 @jump target=comon
 [endif]
