@@ -115,7 +115,7 @@
 [wait time=50]
 [freeimage layer = 1]
 [wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tenjyou2.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
@@ -140,6 +140,7 @@
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou2.jpg" time=0]
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
@@ -193,10 +194,10 @@
 @layopt layer=13 visible=true
 [image layer=13 x=0 y=0 zindex=0 storage="bg/white.jpg" time=2000]
 [wait time=100]
-[背景_庭_夜]
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou3.jpg" time=0]
 [freeimage layer=13 time=500]
 [wait time=10]
-;本当は天井です
+
 @layopt layer=13 visible=true
 
 突如、雲を引き裂くような雷がなった後、雨がざんざんと降りはじめた――。[p]
@@ -210,7 +211,7 @@
 [wait time=50]
 [freeimage layer = 1]
 [wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_asuka_haduki_ame.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
