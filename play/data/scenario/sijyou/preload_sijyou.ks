@@ -472,6 +472,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou3.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_asuka_haduki_ame.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_kakitubata.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" wait=true]
 @jump target=end_sub1
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
