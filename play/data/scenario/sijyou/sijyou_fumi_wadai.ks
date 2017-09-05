@@ -29,7 +29,7 @@
 ;@jump target=*fumi_cmmon
 *test
 [if exp=tf.test_sijyou == true]
-[bg storage="data/fgimage/bg/bg_prologue.jpg"]
+[bg storage="../fgimage/bg/bg_prologue.jpg"]
 *test_page1
 *page1
 [glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
@@ -95,12 +95,13 @@
 
 *page4
 [glink target="*sisyu" text="詩集" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="*kangeki" text="観劇(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="*kangeki2" text="観劇(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
-[glink target="*sijyou_kaidan_1" text="怪談(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
-[glink target="*sijyou_kaidan_2" text="怪談(事件後)１" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
+[glink target="*kangeki" text="観劇(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
+[glink target="*kangeki2" text="観劇(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="*sijyou_kaidan_1" text="怪談(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="*sijyou_kaidan_2" text="怪談(事件後)１" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="*sijyou_kaidan_3" text="怪談(事件後)２" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
 [glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
 *common
 
@@ -2152,7 +2153,7 @@
 ;/////////////////ここからは戻り処理//////////////////////
 *back_test
 [イベントシーン終了]
-[chara_mod name="bg" storage="bg/title.jpg"]
+[bg storage="../fgimage/bg/title.jpg" time=0]
 @jump storage="test_sijyou.ks"
 [s]
 *title
