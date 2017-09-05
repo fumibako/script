@@ -25,7 +25,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
 [eval exp="tf.event_Number_of_times = 0"]
-[eval exp="tf.event_Number_of_times = "sf.event_sijyou_event_6_1 + sf.event_sijyou_9_3 + sf.event_sijyou_9_4 + sf.event_sijyou_10_1 + sf.event_sijyou_10_3 + sf.event_sijyou_11_1"]
+[eval exp="tf.event_Number_of_times = "sf.event_sijyou_event_6_1 + sf.event_sijyou_9_2 + sf.event_sijyou_9_3 + sf.event_sijyou_9_4 + sf.event_sijyou_10_1 + sf.event_sijyou_10_3 + sf.event_sijyou_11_1"]
 [eval exp="tf.event_Number_of_times = "tf.event_Number_of_times + sf.event_sijyou_1_1 + sf.event_sijyou_1_3 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
 [eval exp="tf.eventSnsaku_Number_of_times = 0"]
 [eval exp="tf.eventSnsaku_Number_of_times = "sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_10 + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12"]
