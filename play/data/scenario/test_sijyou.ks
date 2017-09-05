@@ -24,6 +24,14 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+[eval exp="tf.event_Number_of_times = 0"]
+[eval exp="tf.event_Number_of_times = "sf.event_sijyou_9_3 + sf.event_sijyou_9_4 + sf.event_sijyou_10_1 + sf.event_sijyou_10_3 + sf.event_sijyou_11_1"]
+[eval exp="tf.event_Number_of_times = "tf.event_Number_of_times + sf.event_sijyou_1_1 + sf.event_sijyou_1_3 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
+[eval exp="tf.eventSnsaku_Number_of_times = 0"]
+[eval exp="tf.eventSnsaku_Number_of_times = "sf.event_sijyou_sansaku +sf.event_sijyou_sansaku_10 + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12"]
+[eval exp="tf.eventSnsaku_Number_of_times = "tf.eventSnsaku_Number_of_times + sf.event_sijyou_sansaku_13 + sf.event_sijyou_sansaku_2"]
+[eval exp="tf.eventSnsaku_Number_of_times = "tf.eventSnsaku_Number_of_times + sf.event_sijyou_sansaku_3 + sf.event_sijyou_sansaku4 + sf.event_sijyou_sansaku_5"]
+[eval exp="tf.eventSnsaku_Number_of_times = "tf.eventSnsaku_Number_of_times + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7 + sf.event_sijyou_sansaku_9"]
 ;=============================================
 ;test
 ;=============================================
@@ -41,9 +49,9 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
 [ptext name="num_time" text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
-[ptext name="num_time" text="10" layer=26 size=17 x=275 y=85 color=darkslateblue]
+[ptext name="num_time" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue]
 [ptext name="num_time" text="四条ルート(散策)既プレイ数＝" layer=26 size=17 x=300 y=85 color=darkslateblue]
-[ptext name="num_time" text="10" layer=26 size=17 x=515 y=85 color=darkslateblue]
+[ptext name="num_time" text=&tf.eventSnsaku_Number_of_times layer=26 size=17 x=515 y=85 color=darkslateblue]
 
 *test_page1
 [glink target="test_replay" text="WEB版リプレイ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
