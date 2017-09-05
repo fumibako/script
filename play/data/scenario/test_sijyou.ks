@@ -39,9 +39,9 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext name=pt text="四条 華織ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold overwrite=true]
 [ptext text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
 [ptext text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
-[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=150 y=65 color=darkslateblue overwrite=true]
-[ptext text="四条ルート既プレイ数＝" layer=26 size=17 x=200 y=65 color=darkslateblue]
-[ptext text="01" layer=26 size=17 x=250 y=65 color=darkslateblue]
+[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=185 y=65 color=darkslateblue overwrite=true]
+[ptext text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=70 color=darkslateblue]
+[ptext text="01" layer=26 size=17 x=200 y=70 color=darkslateblue]
 [ptext text="四条ルート(散策)既プレイ数＝" layer=26 size=17 x=300 y=65 color=darkslateblue]
 [ptext text="01" layer=26 size=17 x=400 y=65 color=darkslateblue]
 
