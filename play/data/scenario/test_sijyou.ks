@@ -130,8 +130,8 @@ $(".26_fore").empty();
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
 [ptext name="num_times" text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
 [ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
-[ptext name="num_times" text="四条ルート(散策)既プレイ数＝" layer=26 size=17 x=300 y=85 color=darkslateblue]
-[ptext name="num_time2" text=&tf.eventSnsaku_Number_of_times layer=26 size=17 x=515 y=85 color=darkslateblue overwrite=true]
+[ptext name="num_times" text="四条ルート(散策)既プレイ数＝" layer=26 size=17 x=400 y=85 color=darkslateblue]
+[ptext name="num_time2" text=&tf.eventSnsaku_Number_of_times layer=26 size=17 x=615 y=85 color=darkslateblue overwrite=true]
 
 *test_page1
 [cm]
