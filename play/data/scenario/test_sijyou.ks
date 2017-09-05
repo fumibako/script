@@ -799,43 +799,43 @@ sf.ED_hujieda_good=1;
 [s]
 
 *check_event
-[ptext name="num_time2" text="四条6_1" layer=26 size=17 x=100 y=100 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_event_6_1 layer=26 size=17 x=515 y=100 color=darkslateblue overwrite=true]
+[ptext text="四条6_1" layer=26 size=17 x=100 y=100 color=darkslateblue]
+[ptext name="num_time3" text=&sf.event_sijyou_event_6_1 layer=26 size=17 x=515 y=100 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条9_2" layer=26 size=17 x=100 y=150 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_9_2 layer=26 size=17 x=515 y=150 color=darkslateblue overwrite=true]
+[ptext text="四条9_2" layer=26 size=17 x=100 y=150 color=darkslateblue]
+[ptext name="num_time4" text=&sf.event_sijyou_9_2 layer=26 size=17 x=515 y=150 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条9_3" layer=26 size=17 x=100 y=200 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_9_3 layer=26 size=17 x=515 y=200 color=darkslateblue overwrite=true]
+[ptext text="四条9_3" layer=26 size=17 x=100 y=200 color=darkslateblue]
+[ptext name="num_time5" text=&sf.event_sijyou_9_3 layer=26 size=17 x=515 y=200 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条9_4" layer=26 size=17 x=100 y=250 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_9_4 layer=26 size=17 x=515 y=250 color=darkslateblue overwrite=true]
+[ptext text="四条9_4" layer=26 size=17 x=100 y=250 color=darkslateblue]
+[ptext name="num_time6" text=&sf.event_sijyou_9_4 layer=26 size=17 x=515 y=250 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条10_1" layer=26 size=17 x=100 y=300 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_10_1 layer=26 size=17 x=515 y=300 color=darkslateblue overwrite=true]
+[ptext text="四条10_1" layer=26 size=17 x=100 y=300 color=darkslateblue]
+[ptext name="num_time7" text=&sf.event_sijyou_10_1 layer=26 size=17 x=515 y=300 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条10_3" layer=26 size=17 x=100 y=350 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_10_3 layer=26 size=17 x=515 y=350 color=darkslateblue overwrite=true]
+[ptext text="四条10_3" layer=26 size=17 x=100 y=350 color=darkslateblue]
+[ptext name="num_time8" text=&sf.event_sijyou_10_3 layer=26 size=17 x=515 y=350 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条11_1" layer=26 size=17 x=100 y=400 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_11_1 layer=26 size=17 x=515 y=400 color=darkslateblue overwrite=true]
+[ptext text="四条11_1" layer=26 size=17 x=100 y=400 color=darkslateblue]
+[ptext name="num_time9" text=&sf.event_sijyou_11_1 layer=26 size=17 x=515 y=400 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条1_1" layer=26 size=17 x=100 y=450 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_1_1 layer=26 size=17 x=515 y=450 color=darkslateblue overwrite=true]
+[ptext text="四条1_1" layer=26 size=17 x=100 y=450 color=darkslateblue]
+[ptext name="num_time10" text=&sf.event_sijyou_1_1 layer=26 size=17 x=515 y=450 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条1_3" layer=26 size=17 x=100 y=500 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_1_3 layer=26 size=17 x=515 y=500 color=darkslateblue overwrite=true]
+[ptext text="四条1_3" layer=26 size=17 x=100 y=500 color=darkslateblue]
+[ptext name="num_time11" text=&sf.event_sijyou_1_3 layer=26 size=17 x=515 y=500 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条1_4" layer=26 size=17 x=100 y=550 color=darkslateblue overwrite=true]
-[ptext name="num_time2" text=&sf.event_sijyou_1_4 layer=26 size=17 x=515 y=550 color=darkslateblue overwrite=true]
+[ptext text="四条1_4" layer=26 size=17 x=100 y=550 color=darkslateblue]
+[ptext name="num_time12" text=&sf.event_sijyou_1_4 layer=26 size=17 x=515 y=550 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条2_1" layer=26 size=17 x=100 y=600 color=darkslateblue overwrite=true]
+[ptext text="四条2_1" layer=26 size=17 x=100 y=600 color=darkslateblue]
 [ptext name="num_time2" text=&sf.event_sijyou_2_1 layer=26 size=17 x=515 y=600 color=darkslateblue overwrite=true]
 
-[ptext name="num_time2" text="四条2_2" layer=26 size=17 x=100 y=650 color=darkslateblue overwrite=true]
+[ptext text="四条2_2" layer=26 size=17 x=100 y=650 color=darkslateblue]
 [ptext name="num_time2" text=&sf.event_sijyou_2_2_bazar layer=26 size=17 x=650 y=85 color=darkslateblue overwrite=true]
 
-[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
+[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=blue]
 [s]
 
 *test_save
