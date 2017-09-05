@@ -30,6 +30,9 @@
 *test
 [if exp=tf.test_sijyou == true]
 [bg storage="../fgimage/bg/bg_prologue.jpg"]
+[iscript]
+$(".1_fore").empty();
+[endscript]
 *test_page1
 *page1
 [glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
