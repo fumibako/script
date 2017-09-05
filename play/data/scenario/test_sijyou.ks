@@ -41,9 +41,9 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=185 y=65 color=darkslateblue overwrite=true]
 [ptext name="num_time" text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
-[ptext name="num_time" text="10" layer=26 size=17 x=250 y=85 color=darkslateblue]
+[ptext name="num_time" text="10" layer=26 size=17 x=300 y=85 color=darkslateblue]
 [ptext name="num_time" text="四条ルート(散策)既プレイ数＝" layer=26 size=17 x=300 y=85 color=darkslateblue]
-[ptext name="num_time" text="10" layer=26 size=17 x=500 y=85 color=darkslateblue]
+[ptext name="num_time" text="10" layer=26 size=17 x=550 y=85 color=darkslateblue]
 
 *test_page1
 [glink target="test_replay" text="WEB版リプレイ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
