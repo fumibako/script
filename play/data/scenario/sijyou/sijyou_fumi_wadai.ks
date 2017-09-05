@@ -29,7 +29,7 @@
 ;@jump target=*fumi_cmmon
 *test
 [if exp=tf.test_sijyou == true]
-[bg storage="fgimage/bg/bg_prologue.jpg"]
+[bg storage="data/fgimage/bg/bg_prologue.jpg"]
 *test_page1
 *page1
 [glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
@@ -2078,6 +2078,7 @@
 『怪談話について』(お見合い後・事件解決後)
 [p]
 [endif]
+[手紙四条 fumi_number=]
 ;見合い後 f.sijyou_event6==1
 名前さんへ。[r][r]
 いつも手紙をありがとうございます。[r]
@@ -2111,6 +2112,7 @@
 『怪談話について』(お見合い後・事件解決後２)
 [p]
 [endif]
+[手紙四条 fumi_number=]
 ;見合い後 f.sijyou_event6==1 前の手紙を見ている
 [名前]さんへ。[r][r]
 いつも手紙をありがとうございます。[r]
