@@ -109,11 +109,7 @@ $(".26_fore").empty();
 [if exp="sf.event_sijyou_sansaku_13 == undefined"]
 [eval exp="sf.event_sijyou_sansaku_13 = 0"]
 [endif]
-
-[eval exp="tf.eventSnsaku_Number_of_times = "sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_10 + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12"]
-[eval exp="tf.eventSnsaku_Number_of_times = "tf.eventSnsaku_Number_of_times + sf.event_sijyou_sansaku_13 + sf.event_sijyou_sansaku_2"]
-[eval exp="tf.eventSnsaku_Number_of_times = "tf.eventSnsaku_Number_of_times + sf.event_sijyou_sansaku_3 + sf.event_sijyou_sansaku4 + sf.event_sijyou_sansaku_5"]
-[eval exp="tf.eventSnsaku_Number_of_times = "tf.eventSnsaku_Number_of_times + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7 + sf.event_sijyou_sansaku_9"]
+[eval exp="tf.eventSnsaku_Number_of_times = "sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_10 + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12 + tf.eventSnsaku_Number_of_times + sf.event_sijyou_sansaku_13 + sf.event_sijyou_sansaku_2 + sf.event_sijyou_sansaku_3 + sf.event_sijyou_sansaku4 + sf.event_sijyou_sansaku_5 + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7 + sf.event_sijyou_sansaku_9"]
 ;=============================================
 ;test
 ;=============================================
@@ -823,8 +819,8 @@ sf.ED_hujieda_good=1;
 [ptext name="num_time12" text=&sf.event_sijyou_1_4 layer=26 size=17 x=315 y=550 color=darkslateblue overwrite=true]
 [ptext text="四条2_1" layer=26 size=17 x=100 y=600 color=darkslateblue]
 [ptext name="num_time13" text=&sf.event_sijyou_2_1 layer=26 size=17 x=315 y=600 color=darkslateblue overwrite=true]
-[ptext text="四条2_2" layer=26 size=17 x=100 y=650 color=darkslateblue]
-[ptext name="num_time13" text=&sf.event_sijyou_2_2_bazar layer=26 size=17 x=315 y=700 color=darkslateblue overwrite=true]
+[ptext text="四条2_2" layer=26 size=17 x=400 y=100 color=darkslateblue]
+[ptext name="num_time13" text=&sf.event_sijyou_2_2_bazar layer=26 size=17 x=515 y=100 color=darkslateblue overwrite=true]
 [glink target="ending_Number_of_times" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
 [s]
 
