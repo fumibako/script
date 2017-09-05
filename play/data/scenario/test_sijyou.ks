@@ -65,7 +65,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [endif]
 ;sf.event_sijyou_event_6_1 sf.event_sijyou_9_2  sf.event_sijyou_9_3 sf.event_sijyou_9_4 sf.event_sijyou_9_4 sf.event_sijyou_10_1 sf.event_sijyou_10_3
 ;sf.event_sijyou_10_3 sf.event_sijyou_11_1 sf.event_sijyou_1_1 sf.event_sijyou_1_3 sf.event_sijyou_1_4 sf.event_sijyou_2_1 sf.event_sijyou_2_2_bazar
-[eval exp="tf.event_Number_of_times = "sf.event_sijyou_event_6_1 + sf.event_sijyou_9_2 + sf.event_sijyou_9_3 + sf.event_sijyou_9_4 + sf.event_sijyou_10_1 + sf.event_sijyou_10_3 + sf.event_sijyou_11_1 + sf.event_sijyou_1_1 + sf.event_sijyou_1_3 + sf.event_sijyou_1_4 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
+[eval exp="tf.event_Number_of_times = sf.event_sijyou_event_6_1 + sf.event_sijyou_9_2 + sf.event_sijyou_9_3 + sf.event_sijyou_9_4 + sf.event_sijyou_10_1 + sf.event_sijyou_10_3 + sf.event_sijyou_11_1 + sf.event_sijyou_1_1 + sf.event_sijyou_1_3 + sf.event_sijyou_1_4 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
 ;=============================================
 ;変数初期設定
 [eval exp="tf.eventSnsaku_Number_of_times = 0"]
@@ -824,7 +824,7 @@ sf.ED_hujieda_good=1;
 [ptext name="num_time13" text=&sf.event_sijyou_2_1 layer=26 size=17 x=315 y=600 color=darkslateblue overwrite=true]
 [ptext text="四条2_2" layer=26 size=17 x=100 y=650 color=darkslateblue]
 [ptext name="num_time13" text=&sf.event_sijyou_2_2_bazar layer=26 size=17 x=315 y=700 color=darkslateblue overwrite=true]
-[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
+[glink target="ending_Number_of_times" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
 [s]
 
 *test_save
