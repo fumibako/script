@@ -1,3 +1,4 @@
+*replay_event_8_week_asuka
 [stopbgm]
 [call target=*asuka storage="sijyou/preload_sijyou.ks"]
 [wait time=50]
@@ -17,7 +18,7 @@ $(".1_fore").empty();
 [font color=white size=27]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです==============================
-
+*seen1
 ――夏の半ば。[r]
 [名字]家では、親戚一同が集まり、[r]
 祖先の霊を祀る行事が行われた。[p]
@@ -33,13 +34,14 @@ $(".1_fore").empty();
 [freeimage layer=29 time=0]
 [メッセージウィンドウ上ボタン表示]
 ;==========================================================
+*seen2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お疲れ様です」[p]
 [whosay name="飛鳥紗代子"]
 「[名前]さんもお疲れ様です」[p]
 #
 祀事が終わり、親戚の飛鳥紗代子さんと挨拶をする。[p]
-
+[autosave]
 [whosay name="飛鳥紗代子"]
 「無事終わってホッとしましたわ。[r]
 [sp]祀り事の最中は、棒立ちか正座しかしないのですから、[r]
@@ -124,6 +126,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [font color=white size=27]
 ;==========================================================
+*seen3
 ――客間。[r][r]
 
 年季が入った客間は、天井のシミが黒々と深く[r]
@@ -154,7 +157,7 @@ $(".1_fore").empty();
 ;==========================================================
 #
 その中で私は、不安げに目を伏せていた。[p]
-
+*seen4
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふう。[r]
 [sp]このお部屋、行事がない限りは使わないけれど、[r]
@@ -168,7 +171,7 @@ $(".1_fore").empty();
 「いえ……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (いけない、せっかく紗代子さん達がいらっしゃるのに)[p]
-
+[autosave]
 #
 実は子供の頃から、この部屋の雰囲気が苦手だった。[p]
 ;セリフの方がいいでしょうか？
@@ -229,6 +232,7 @@ $(".1_fore").empty();
 [font color=white size=27]
 ;==========================================================
 ;ザァー…SE 雨イメージ
+*seen5
 細やかな雨粒が絶え間なく降り注ぎ、[r]
 いつも窓から見える、庭先の木々さえ、[r]
 霧の中にあって見えそうにない。[p]
@@ -250,8 +254,10 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;==========================================================
+*seen6
 [whosay name="飛鳥紗代子"]
 「この雨ですと、車を出すのも危なさそうですわね」[p]
+[autosave]
 #
 紗代子さんは、のんびりと磯野が出したナスやキュウリの漬物を[r]
 食べながら独りごちた。[p]
@@ -287,7 +293,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
 私達は、飛鳥家と楽しく団欒をした。[p]
-
+[autosave]
 ;==========================================================
 [wait time=50]
 @layopt layer=fix visible=false
@@ -323,6 +329,7 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 ;==========================================================
+*seen7
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日に限って、何で、こんなに熱いのかしら？)[p]
 [whosay name="飛鳥紗代子"]
@@ -382,7 +389,7 @@ $(".1_fore").empty();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「昔話？」[p]
-
+[autosave]
 #
 紗代子さんは、ニヤリ。と笑うと"昔話"を始めた。[p]
 
@@ -410,6 +417,7 @@ $(".1_fore").empty();
 [font color=white size=27]
 ;==========================================================
 ;全画面 森と池
+*seen8
 昔々、飛鳥の家に[ruby text=かき]杜[ruby text=つばた]若という美しい腰元がいて、[r]
 殿様の寵愛を受けていたの――。[p]
 
@@ -445,7 +453,7 @@ $(".1_fore").empty();
 @layopt layer=fix visible=true
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;==========================================================
-
+*seen9
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「！！」[p]
 
@@ -469,7 +477,7 @@ $(".1_fore").empty();
 「ごめんなさい、裏庭を走って行けばあるらしいのだけど、[r]
 [sp]周りから近寄ってはダメ！って言われてるから、[r]
 [sp]実際のところ、見れてないのよ」[p]
-
+[autosave]
 [whosay name="飛鳥紗代子"]
 「なぜか無性に見て見たいのですけれどね！」[p]
 
@@ -570,7 +578,7 @@ $(".1_fore").empty();
 
 [whosay name="飛鳥紗代子"]
 「そこに誰かいらっしゃるの？」[p]
-
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「！……今の音は、きっと風の音ですわ」[p]
 
@@ -727,7 +735,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;汗ニコ
 (崖に落ちる瞬間……)[p]
-
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公目閉じ
 (でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
