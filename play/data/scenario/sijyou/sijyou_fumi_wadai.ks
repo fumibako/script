@@ -99,7 +99,8 @@
 [glink target="*kangeki2" text="観劇(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
-[glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="*sijyou_kaidan_1" text="怪談(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
+[glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
 *common
 
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
@@ -1997,7 +1998,7 @@
 [手紙四条 fumi_number=]
 [r][r][r]
 [名前]
-[if exp="f.sijyou_event6==1"]
+[if exp="f.sijyou_event6 == 1"]
 さんへ[r]
 いつも手紙をありがとうございます。[r]
 僕と文矢が出会ったのは、十四歳の時でした。[r]
@@ -2029,14 +2030,116 @@
 [endif]
 ;//////////////////////////////////////////////////////////////////
 [手紙四条読了 fumi_number=]
-
 [if exp=tf.test_sijyou == true]
 [clearstack]
 @jump target="*test"
 [endif]
-
 ;============================================================================================================
+*sijyou_kaidan_1
+*sijyou_fumi21
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+[wait time=50]
+『怪談話について』(お見合い前)
+[p]
+[endif]
+[手紙四条 fumi_number=]
+;見合い前
+[名前]へ。[r]
+いつも手紙をありがとう。[r]
+そういえば、[名前]は怖い話が苦手だったね。[r]
+昔、僕が怪談話をして[名前]を泣かせてしまって、[r]
+文矢に怒られた事を思い出したよ。[r]
+もちろん、すぐに反省したよ。[sp]あの時は、楽しかったね。[r]
+皆が幸せで輝いていた気がするよ。[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
 
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou == true]
+[clearstack]
+@jump target="*test"
+[endif]
+;============================================================================================================
+*sijyou_kaidan_2
+*sijyou_fumi22
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+[wait time=50]
+『怪談話について』(お見合い後・事件解決後)
+[p]
+[endif]
+;見合い後 f.sijyou_event6==1
+名前さんへ。[r]
+いつも手紙をありがとうございます。[r]
+今も[名前]さんは怖い話は苦手でしょうか？[r]
+麻草の"花鳥得時"という場所に[r]
+珍しい見世物小屋が出来たらしいです。[r]
+花園の他にクマやトラも見れるらしいので、[r]
+いつか二人で行ってみたいですね。[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[s]
+[endif]
+;//////////////////////////////////////////////////////////////////
+[手紙四条読了 fumi_number=]
+[if exp=tf.test_sijyou == true]
+[clearstack]
+@jump target="*test"
+[endif]
+;============================================================================================================
+*sijyou_kaidan_3
+*sijyou_fumi23
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+[wait time=50]
+『怪談話について』(お見合い後・事件解決後２)
+[p]
+[endif]
+;見合い後 f.sijyou_event6==1 前の手紙を見ている
+[名前]さんへ。[r]
+いつも手紙をありがとうございます。[r]
+名前さん、もう怖い話は苦手ではないのでしょうか？[r]
+それでしたら、怖いお話を耳にしたので[r]
+書いてみましょうか。[p]
+
+麻草にある高層建築"明雲閣"での怖い噂話です。[r]
+夜の明雲閣は怪しげに光り、[r]
+時折、明雲閣の前を通った男性を呼び寄せるそうです。[r]
+呼び寄せられた男性は、無我夢中で長い螺旋階段を[r]
+ぐるぐると上がってしまい、
+[r]昼間では十二階だったその先に十三階への扉が現れるそうです。[p]
+
+そこには明雲閣の下の娼館で働いていた、[r]
+元娼婦の幽霊がいて、その人を連れ去ってしまうそうです。[r]
+あそこのエレベエタアが故障したままなのは、[r]
+そのせいかもしれない？[sp]……といった噂話でした。[r]
+あまり、怖くなかったかな。[p]
+;//////////////////////////////////////////////////////////////////
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[s]
+[endif]
+[手紙四条読了 fumi_number=]
+;//////////////////////////////////////////////////////////////////
+[if exp=tf.test_sijyou == true]
+[clearstack]
+@jump target="*test"
+[endif]
+;============================================================================================================
 ;/////////////////ここからは戻り処理//////////////////////
 *back_test
 [イベントシーン終了]
