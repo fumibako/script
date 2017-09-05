@@ -63,6 +63,8 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [if exp="sf.event_sijyou_2_2_bazar == undefined"]
 [eval exp="sf.event_sijyou_2_2_bazar"]
 [endif]
+;sf.event_sijyou_event_6_1 sf.event_sijyou_9_2  sf.event_sijyou_9_3 sf.event_sijyou_9_4 sf.event_sijyou_9_4 sf.event_sijyou_10_1 sf.event_sijyou_10_3
+;sf.event_sijyou_10_3 sf.event_sijyou_11_1 sf.event_sijyou_1_1 sf.event_sijyou_1_3 sf.event_sijyou_1_4 sf.event_sijyou_2_1 sf.event_sijyou_2_2_bazar
 [eval exp="tf.event_Number_of_times = "sf.event_sijyou_event_6_1 + sf.event_sijyou_9_2 + sf.event_sijyou_9_3 + sf.event_sijyou_9_4 + sf.event_sijyou_10_1 + sf.event_sijyou_10_3 + sf.event_sijyou_11_1 + sf.event_sijyou_1_1 + sf.event_sijyou_1_3 + sf.event_sijyou_1_4 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
 ;=============================================
 ;変数初期設定
@@ -232,7 +234,7 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 [glink target="test_fumi3" text="飛鳥紗代子からの手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
 [glink target="test_sayoko" text="飛鳥紗代子イベント" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
 [glink target="test_save" text="セーブデータクリア" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=blue]
-
+[glink target="check_event" text="evクリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test_page3" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=pink]
 *common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
@@ -796,7 +798,45 @@ sf.ED_hujieda_good=1;
 @jump target=test_page1
 [s]
 
+*check_event
+[ptext name="num_time2" text="四条6_1" layer=26 size=17 x=100 y=100 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_event_6_1 layer=26 size=17 x=515 y=100 color=darkslateblue overwrite=true]
 
+[ptext name="num_time2" text="四条9_2" layer=26 size=17 x=100 y=150 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_9_2 layer=26 size=17 x=515 y=150 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条9_3" layer=26 size=17 x=100 y=200 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_9_3 layer=26 size=17 x=515 y=200 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条9_4" layer=26 size=17 x=100 y=250 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_9_4 layer=26 size=17 x=515 y=250 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条10_1" layer=26 size=17 x=100 y=300 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_10_1 layer=26 size=17 x=515 y=300 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条10_3" layer=26 size=17 x=100 y=350 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_10_3 layer=26 size=17 x=515 y=350 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条11_1" layer=26 size=17 x=100 y=400 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_11_1 layer=26 size=17 x=515 y=400 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条1_1" layer=26 size=17 x=100 y=450 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_1_1 layer=26 size=17 x=515 y=450 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条1_3" layer=26 size=17 x=100 y=500 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_1_3 layer=26 size=17 x=515 y=500 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条1_4" layer=26 size=17 x=100 y=550 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_1_4 layer=26 size=17 x=515 y=550 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条2_1" layer=26 size=17 x=100 y=600 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_2_1 layer=26 size=17 x=515 y=600 color=darkslateblue overwrite=true]
+
+[ptext name="num_time2" text="四条2_2" layer=26 size=17 x=100 y=650 color=darkslateblue overwrite=true]
+[ptext name="num_time2" text=&sf.event_sijyou_2_2_bazar layer=26 size=17 x=650 y=85 color=darkslateblue overwrite=true]
+
+[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
+[s]
 
 *test_save
 [cm]
