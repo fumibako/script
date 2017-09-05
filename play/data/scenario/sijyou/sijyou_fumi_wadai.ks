@@ -29,7 +29,7 @@
 ;@jump target=*fumi_cmmon
 *test
 [if exp=tf.test_sijyou == true]
-[chara_mod name="bg" storage="bg/title.jpg"]
+[bg storage="fgimage/bg/bg_prologue.jpg"]
 *test_page1
 *page1
 [glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
@@ -100,6 +100,7 @@
 [glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [glink target="*sijyou_kaidan_1" text="怪談(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
+[glink target="*sijyou_kaidan_2" text="怪談(事件後)１" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
 [glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
 *common
 
@@ -2045,13 +2046,15 @@
 [endif]
 [手紙四条 fumi_number=]
 ;見合い前
-[名前]へ。[r]
+[名前]へ。[r][r]
 いつも手紙をありがとう。[r]
 そういえば、[名前]は怖い話が苦手だったね。[r]
 昔、僕が怪談話をして[名前]を泣かせてしまって、[r]
 文矢に怒られた事を思い出したよ。[r]
 もちろん、すぐに反省したよ。[sp]あの時は、楽しかったね。[r]
-皆が幸せで輝いていた気がするよ。[p]
+何気ない出来事が幸せで、全てが輝いていた気がするよ。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -2076,13 +2079,15 @@
 [p]
 [endif]
 ;見合い後 f.sijyou_event6==1
-名前さんへ。[r]
+名前さんへ。[r][r]
 いつも手紙をありがとうございます。[r]
 今も[名前]さんは怖い話は苦手でしょうか？[r]
 麻草の"花鳥得時"という場所に[r]
 珍しい見世物小屋が出来たらしいです。[r]
 花園の他にクマやトラも見れるらしいので、[r]
-いつか二人で行ってみたいですね。[p]
+いつか二人で行ってみたいですね。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -2107,7 +2112,7 @@
 [p]
 [endif]
 ;見合い後 f.sijyou_event6==1 前の手紙を見ている
-[名前]さんへ。[r]
+[名前]さんへ。[r][r]
 いつも手紙をありがとうございます。[r]
 名前さん、もう怖い話は苦手ではないのでしょうか？[r]
 それでしたら、怖いお話を耳にしたので[r]
@@ -2124,7 +2129,9 @@
 元娼婦の幽霊がいて、その人を連れ去ってしまうそうです。[r]
 あそこのエレベエタアが故障したままなのは、[r]
 そのせいかもしれない？[sp]……といった噂話でした。[r]
-あまり、怖くなかったかな。[p]
+あまり、怖くなかったかな。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
