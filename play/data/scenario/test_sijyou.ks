@@ -135,6 +135,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext name="num_time2" text=&tf.eventSnsaku_Number_of_times layer=26 size=17 x=515 y=85 color=darkslateblue overwrite=true]
 
 *test_page1
+[cm]
 [glink target="test_replay" text="WEB版リプレイ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink name="test" target="test5_1" text="5月(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink name="test2" target="test6_1" text="6月1週(夢イベント)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
@@ -800,7 +801,7 @@ sf.ED_hujieda_good=1;
 
 *check_event
 [ptext text="四条6_1" layer=26 size=17 x=100 y=100 color=darkslateblue]
-[ptext name="num_time3" text=&sf.event_sijyou_event_6_1 layer=26 size=17 x=515 y=100 color=darkslateblue overwrite=true]
+[ptext name="num_time3" text=&sf.event_sijyou_event_6_1 layer=26 size=17 x=315 y=100 color=darkslateblue overwrite=true]
 [ptext text="四条9_2" layer=26 size=17 x=100 y=150 color=darkslateblue]
 [ptext name="num_time4" text=&sf.event_sijyou_9_2 layer=26 size=17 x=315 y=150 color=darkslateblue overwrite=true]
 [ptext text="四条9_3" layer=26 size=17 x=100 y=200 color=darkslateblue]
@@ -823,7 +824,7 @@ sf.ED_hujieda_good=1;
 [ptext name="num_time13" text=&sf.event_sijyou_2_1 layer=26 size=17 x=315 y=600 color=darkslateblue overwrite=true]
 [ptext text="四条2_2" layer=26 size=17 x=100 y=650 color=darkslateblue]
 [ptext name="num_time13" text=&sf.event_sijyou_2_2_bazar layer=26 size=17 x=315 y=700 color=darkslateblue overwrite=true]
-[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=700 color=blue]
+[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
 [s]
 
 *test_save
