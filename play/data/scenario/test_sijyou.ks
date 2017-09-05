@@ -40,10 +40,10 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
 [ptext text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=185 y=65 color=darkslateblue overwrite=true]
-[ptext text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=70 color=darkslateblue]
-[ptext text="01" layer=26 size=17 x=200 y=70 color=darkslateblue]
-[ptext text="四条ルート(散策)既プレイ数＝" layer=26 size=17 x=300 y=65 color=darkslateblue]
-[ptext text="01" layer=26 size=17 x=400 y=65 color=darkslateblue]
+[ptext name="num_time" text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
+[ptext name="num_time" text="10" layer=26 size=17 x=200 y=85 color=darkslateblue]
+[ptext name="num_time" text="四条ルート(散策)既プレイ数＝" layer=26 size=17 x=300 y=85 color=darkslateblue]
+[ptext name="num_time" text="10" layer=26 size=17 x=400 y=85 color=darkslateblue]
 
 *test_page1
 [glink target="test_replay" text="WEB版リプレイ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
