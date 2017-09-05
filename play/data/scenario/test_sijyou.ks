@@ -63,8 +63,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [if exp="sf.event_sijyou_2_2_bazar == undefined"]
 [eval exp="sf.event_sijyou_2_2_bazar"]
 [endif]
-[eval exp="tf.event_Number_of_times = "sf.event_sijyou_event_6_1 + sf.event_sijyou_9_2 + sf.event_sijyou_9_3 + sf.event_sijyou_9_4 + sf.event_sijyou_10_1 + sf.event_sijyou_10_3 + sf.event_sijyou_11_1"]
-[eval exp="tf.event_Number_of_times = "tf.event_Number_of_times + sf.event_sijyou_1_1 + sf.event_sijyou_1_3 + sf.event_sijyou_1_4 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
+[eval exp="tf.event_Number_of_times = "sf.event_sijyou_event_6_1 + sf.event_sijyou_9_2 + sf.event_sijyou_9_3 + sf.event_sijyou_9_4 + sf.event_sijyou_10_1 + sf.event_sijyou_10_3 + sf.event_sijyou_11_1 + sf.event_sijyou_1_1 + sf.event_sijyou_1_3 + sf.event_sijyou_1_4 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
 ;=============================================
 ;変数初期設定
 [eval exp="tf.eventSnsaku_Number_of_times = 0"]
