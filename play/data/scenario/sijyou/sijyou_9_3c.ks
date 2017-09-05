@@ -56,7 +56,7 @@ $(".1_fore").empty();
 「はい」[r]
 移動します。[p]
 [cm]
-@jump target=**seen6
+@jump target=*seen8
 [s]
 *jump_no1
 [current layer="message0"]
