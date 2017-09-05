@@ -16,7 +16,14 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [preload storage=&f.preload_images_sijyou wait=true]
 
 [call target=*start storage="hensuu.ks"]
-
+;=============================================
+*ending_Number_of_times
+[eval exp="tf.ending_Number_of_times = 0"]
+[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good+sf.ED_kuroda_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
 ;=============================================
 ;test
 ;=============================================
@@ -31,7 +38,8 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [wait time=10]
 [ptext name=pt text="四条 華織ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold overwrite=true]
 [ptext text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
-;[ptext text="作業中＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext name="num_time" test=&tf.ending_Number_of_times layer=26 size=17 x=150 y=65 color=darkslateblue overwrite=true]
 
 
 *test_page1
@@ -738,6 +746,9 @@ localStorage.clear();
 [eval exp="f.okeiko_gamen = false"]
 @jump target=test_page1
 [s]
+
+
+
 
 *back_test
 [cm]
