@@ -19,7 +19,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;=============================================
 *ending_Number_of_times
 [eval exp="tf.ending_Number_of_times = 0"]
-[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good+sf.ED_kuroda_bad"]
+[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
@@ -217,6 +217,8 @@ tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
 [iscript]
 $('.loding_pic1').remove();
 [endscript]
+[trace exp="tf.ending_Number_of_times"]
+[trace exp="tf.eventSnsaku_Number_of_times"]
 [s]
 
 *test5_1
