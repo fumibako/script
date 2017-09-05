@@ -421,7 +421,7 @@ $('.omoide1').remove();
 ;heniha　線香花火
 [mtext name=cc text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 ;財前銀行背景
-[mtext name=cc text="flickr :Noriko YAMAMOTO 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=true]
+[mtext name=cc text="flickr :Noriko YAMAMOTO 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
 ;飛鳥雨
 [mtext name=cc text="flickr :Peterson Fialho de Carvalho" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=true]
 
