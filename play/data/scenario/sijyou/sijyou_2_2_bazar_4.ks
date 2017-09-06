@@ -253,18 +253,19 @@ $(".29_fore").empty();
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi2.png" time=0]
 [wait time=10]
 「[名前]さん、こちらは兄の知人の森永様です。[r]
-[sp]森永夫人、お聞きしてされていると思いますが、[r]
+[sp]森永夫人、お聞きされていると思いますが、[r]
 [sp]僕の婚約者の[名字]家の[名前]さんです」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;↓目：伏目 [主人公目伏]
-[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
-[wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
 「[名前]と申します」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -319,6 +320,7 @@ $(".29_fore").empty();
 [wait time=10]
 （少しお待ちしましょう。[r]
 [sp]これも夫人となったらお勤めの[ruby text=ひと]一つになるでしょう)[p]
+#
 [四条退場準備 storage=&f.src time=100]
 [fadeoutbgm time=3000]
 
@@ -615,7 +617,7 @@ $(".29_fore").empty();
  
 [whosay name="お稽古の先生"]
 ――[名前]さん、振袖でのターンは小降りに。[sp]足の動きを計算しつくして。 [r]
-そうでないの、違うわ。[p]
+[sp]そうでないの、違うわ。[p]
 
 ;洋装バージョン
 ;――[名前]さん、華麗にターンは回るのはいいけれど、周りもよく注意しなさい。
@@ -723,7 +725,7 @@ $(".29_fore").empty();
 ;↓効果：涙にじむ(目閉用[主人公涙_目閉用]
 [chara_mod name="girl_emo" storage="girl/S/emo_namida_toji.png" time=0]
 [wait time=10]
-「ごめんなさい。 私、今日の日をとても楽しみしていたのに」[p]
+「ごめんなさい。[sp]私、今日の日をとても楽しみしていたのに」[p]
 [whosay name="華織" color="olivedrab"]
 「お気になさられずとも、こういったことはよくある事です」[p]
 [whosay name="華織" color="olivedrab"] 
