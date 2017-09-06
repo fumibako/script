@@ -245,6 +245,7 @@ $(".29_fore").empty();
 ;華織様！と読んだ方がいいのか
 [autosave]
 [whosay name="？？？"]
+[四条目パチ1回]
 「あら、四条様！」[p]
 [whosay name="華織" color="olivedrab"]
 ;[四条目大]
