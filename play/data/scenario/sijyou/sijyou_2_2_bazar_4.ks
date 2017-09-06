@@ -133,7 +133,7 @@ $(".29_fore").empty();
 #
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 胸の鼓動がひとつ高鳴った瞬間、[r]
 華織様は、真剣な表情をして低いお声で呟かれた。[p]
@@ -144,8 +144,6 @@ $(".29_fore").empty();
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「ですから今、[r]
 [sp]僕は美しい花のような[名前]さんと[ruby text=ワル]円[ruby text=ツ]舞を踊れて、[r]
