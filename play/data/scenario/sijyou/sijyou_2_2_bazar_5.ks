@@ -97,7 +97,9 @@ $(".1_fore").empty();
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-（今度はもっと上手くできるかしら……)[p]
+（場酔いなんて恥ずかしい。[r]
+[sp]華織様の前でこんな姿をみせてしまうなんて……。[r]
+[sp]今度はもっと上手くできるかしら)[p]
 
 #
 ;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
@@ -105,7 +107,7 @@ $(".1_fore").empty();
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
-恥ずかしさに打ち震えていると、[r]
+恥ずかしさに身を縮めていると、[r]
 窓の外から光とともに大きな音が鳴り響いた。[p]
 ;【SE】花火(打ち上げ：大)
 [playse storage=hanabi_utiage_big.ogg loop=false ]
