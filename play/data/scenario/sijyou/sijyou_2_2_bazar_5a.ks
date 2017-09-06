@@ -92,7 +92,7 @@ $(".1_fore").empty();
 [wait time=10]
 突然、戻ってきた女性が、ふらりと私の隣の柱にもたれかかった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_ooake.png" time=0]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 「！」[p]
 [fadeoutbgm time=3000]
@@ -133,8 +133,13 @@ $(".1_fore").empty();
 今にも折れそうな華奢な腰が目立ち、弱々しい印象を受けた。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 「水を頂きましょうか？[sp]……給仕を呼びますわ」[p]
 [whosay name=四条幸代]
+;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
 「ありがとうございます、大丈夫ですわ。[r]
 [sp]こちらにあるので……」[p]
 #
@@ -183,9 +188,9 @@ $(".1_fore").empty();
 「あの方とは親しいのですか？」[p]
 [whosay name=四条幸代]
 「いえ、お恥ずかしながら、[r]
-[sp]私は手紙を交わすには、歳が立ってしまっているので」[p]
+[sp]私は手紙を交わすには、[ruby text=とう]薹が立ってしまっているので」[p]
 
-「こういった場所に連れられて略式をとって見合い相手を[r]
+「こういった場所に連れられては、略式に見合い相手を[r]
 [sp]探させられているのです」
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -234,9 +239,9 @@ $(".1_fore").empty();
 ;↓口：通常 [主人公口通常]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-「ですが、途中で気づいたのでしょう。[r]
-[sp]不健康な者が生まれ、時代の波の中で生きていくには、[r]
-[sp]多くの方と付き合うべきだと」[p]
+「ですが、立て続けに病弱者が生まれた事で気づいたのでしょう。[r]
+[sp]時代の荒波を乗り越えていくには、[r]
+[sp][ruby text=ち]血[ruby text=すじ]筋に[ruby text=こだわ]拘るよりも、[ruby text=さま]様[ruby text=ざま]々な方とお付き合いしなければと……」[p]
 
 [whosay name=四条幸代]
 「ですから、近すぎる血縁者は、滅多に手紙の婚約者候補に[r]
@@ -328,7 +333,7 @@ $(".1_fore").empty();
 [sp]誠実な姿勢に幸せが訪れる予感を感じました」[p]
 
 「もし、幸代様が[華衣]さんを想うなら、[r]
-[sp]もう一度、勇気を出ししてみては如何でしょうか？」[p]
+[sp]もう一度、勇気を出してみては如何でしょうか？」[p]
 
 [whosay name=四条幸代]
 「はい。[r]
@@ -336,7 +341,7 @@ $(".1_fore").empty();
 [sp]勇気を出してみます」[p]
 
 [whosay name=四条幸代]
-「まずは、[華衣]さんと話せるように親を説得しなくては！」[p]
+「まずは、[華衣]様と話せるように親を説得しなくては！」[p]
 #
 幸代様は、重たげなスカートを持ち上げると、[r]
 風のようにダンスホールを抜け出していった。[p]
