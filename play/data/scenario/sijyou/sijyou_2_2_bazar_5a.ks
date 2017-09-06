@@ -218,6 +218,8 @@ $(".1_fore").empty();
 ;↓目：横の伏目 [主人公横伏目]
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 (やはり、幸代様は、[華衣]様のことを……？)[p]
 
 #
