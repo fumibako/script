@@ -871,7 +871,7 @@ $(".29_fore").empty();
 （でも、今は、もう少しだけこのままで……）[p]
 [暗転２ storage="bg/sijyou_hanabi2_1.jpg"]
 ;一瞬見えるの防止
-[bg wait=true method='crossfade' storage="../fgimage/bg/sijyou_hanabi2_1.jpg" time=50]]
+[bg wait=true method='crossfade' storage="../fgimage/bg/sijyou_hanabi2_1.jpg" time=50]
 *seen_end
 ;クリアフラグ
 [eval exp="sf.event_sijyou_2_2_bazar = 1"]
