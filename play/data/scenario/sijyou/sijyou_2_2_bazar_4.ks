@@ -520,7 +520,7 @@ $(".29_fore").empty();
 [sp]……では、いきましょうか」[p]
 [四条_隣_退場]
 #
-私は、曲の合間をみて、華織様と共に[ruby text=ホー]広[ruby text=ル]場の円舞に滑り込んだ。[p]
+曲の合間をみて、私達は[ruby text=ホー]広[ruby text=ル]場の円舞に滑り込んだ。[p]
 ;------------------------------------
 *scene5
 ;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
@@ -553,6 +553,8 @@ $(".29_fore").empty();
 目に飛び込んだ隣のロープデコルテを着た女性が、[r]
 男性に抱かれて華やかに大胆にターンを繰り出していた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 （私も、もっと大胆にターンをしてみたいわ)[p]
 [whosay name="華織" color="olivedrab"]
 「！」[p]
@@ -562,6 +564,9 @@ $(".29_fore").empty();
 [wait time=10]
 [quake count=3 time=250 hmax=10 vmax=10]
 #
+;↓目：横目 [主人公横目]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
 しかし、[r]
 同じようにターンをしてしまったところ、[r]
 後ろの男性客に着物の[ruby text=たもと]袂がぶつかってしまった。[p]
@@ -742,9 +747,12 @@ $(".29_fore").empty();
 [wait time=10]
 「今度はもっと上手くできるでしょうか……？」[p]
 [whosay name="華織" color="olivedrab"] 
-「ええ、上手くできるでしょう。 [r]
-[sp]実際、僕も驚きました。[r]
-[sp]"ですが、当分は僕の前だけで踊ってほしいです"」
+「ええ、上手くできるでしょう。[sp]実際、僕も驚きました」[p]
+
+[whosay name="華織" color="olivedrab"]
+[chara_mod name="sijyou_tonari_me" storage="sijyou/me_toji.png" time=0]
+[wait time=10]
+「ですが、当分は僕の前だけで踊ってほしいです」
 ;↓目：通常より大きめに開いた状態 [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
@@ -753,7 +761,10 @@ $(".29_fore").empty();
 ;↓口：大きく開けた状態 [主人公口大]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ooake.png" time=0]
 [wait time=10]
-「私が上手く踊れないからですか？」[p]
+「私が上手く踊れないからですか？」
+[chara_mod name="sijyou_tonari_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+[p]
 ;【SE】花火(打ち上げ：中)
 [playse storage=hanabi_utiage_m.ogg loop=false ]
 #
@@ -840,7 +851,10 @@ $(".29_fore").empty();
 私は少し意地悪ながら安心してしまった。[p]
 ;なんだったんだと終わるので主人公の締め
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（華織様も私のことを想って下さってるのですね……）[p]
+;↓眉：下がり眉 
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+（華織様も私のことを想って下さっているのですね……）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そうだわ。[sp]まだ、華織様とのお付き合いは[r]
 [sp]これからですもの……もう少し、頑張ってみようかしら）[p]
