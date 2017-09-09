@@ -747,7 +747,7 @@ $(".1_fore").empty();
 [wait time=10]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
-[wait time=10]
+[wait time=500]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
@@ -799,11 +799,11 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=500]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[font color=white size=20]
 ;==========================================================
 殿下へ送る、手紙の内容を考えながら、[r]
 目を閉じる。[p]
@@ -811,6 +811,7 @@ $(".1_fore").empty();
 ;月池と主人公手紙の合体透過画像をください　こちらで作って良い場合、作ります
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
+[font color=white size=20]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 ;==========================================================
 ――暮夏のみぎり[r]
