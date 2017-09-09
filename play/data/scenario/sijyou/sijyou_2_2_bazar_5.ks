@@ -118,7 +118,9 @@ $(".1_fore").empty();
 驚いて見上げれば、大輪の花火が、陰った空を[r]
 煌びやかに照らしていた。[p]
 
-[whosay name="華織" color="olivedrab"] 
+[whosay name="華織" color="olivedrab"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 「花火、ですか。[sp]昔、[名前]さんと興じましたね」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
@@ -194,15 +196,19 @@ $(".1_fore").empty();
 ;初めてだから場酔いくらいある…と思えない心情を描き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様に御心配をお掛けしてしまった……。[r]
-[sp]きっと大人の淑女なら華やかな場所でも[r]
-[sp]悠然と振舞えるはずなのに）[p]
+[sp]きっと、大人の淑女なら[r]
+[sp]華やかな場所でも悠然と振舞えるはずなのに）[p]
 #
 今日の失敗を忘れられず、私は華織様の手を力強く握った。 [p]
 [whosay name="華織" color="olivedrab"]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_ake.png" time=0]
+[wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 「お気になさらないで下さい」[p]
 [whosay name="華織" color="olivedrab"]
+[chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 「[名前]さんは、そのままでも可愛らしい方ですよ」[p]
@@ -277,6 +283,8 @@ $(".1_fore").empty();
 [wait time=10]
 どうしてか騒がしいはずの花火の音が聞こえず、[r]
 胸の鼓動だけが鳴り響いていた。[p]
+
+*seen_end
 ;クリアフラグ
 [eval exp="sf.event_sijyou_2_2_bazar = 1"]
 [イベントシーン終了]
