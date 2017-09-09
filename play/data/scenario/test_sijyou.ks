@@ -799,7 +799,8 @@ sf.ED_hujieda_good=1;
 [s]
 
 *check_event
-[bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
+[chara_new name="bg" storage="bg/bg_web_blue.jpg"]
+;[bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
 [ptext text="四条6_1" layer=26 size=17 x=100 y=100 color=darkslateblue]
 [ptext name="num_time3" text=&sf.event_sijyou_event_6_1 layer=26 size=17 x=315 y=100 color=darkslateblue overwrite=true]
 [ptext text="四条9_2" layer=26 size=17 x=100 y=150 color=darkslateblue]
