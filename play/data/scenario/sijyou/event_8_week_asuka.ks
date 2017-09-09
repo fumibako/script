@@ -776,10 +776,10 @@ $(".1_fore").empty();
 ;========================================================================
 ;要望が多いのではじめからの表示にします。　
 [if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
-[glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=400 y=80 color=white]
 [endif]
 [if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
-[glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=400 y=130 color=white]
 [endif]
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
@@ -806,7 +806,7 @@ $(".1_fore").empty();
 [font color=white size=20]
 ;==========================================================
 殿下へ送る、手紙の内容を考えながら、[r]
-私は目を閉じ微睡む。[p]
+目を閉じる。[p]
 ;==========================================================
 ;月池と主人公手紙の合体透過画像をください　こちらで作って良い場合、作ります
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=1000 opasoty=70]
@@ -884,7 +884,7 @@ $(".1_fore").empty();
 ;==========================================================
 ;財前様を想って綴る
 財前様へ送る、手紙の内容を考えながら、[r]
-私は目を閉じ微睡む。[p]
+目を閉じる。[p]
 ;[anim name="tukitegami" opacity=60 time=10]
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=1000 opasoty=70]
 [anim name="tukitegami" opacity=70 time=1000]
