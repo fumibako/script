@@ -834,9 +834,9 @@ $(".1_fore").empty();
 ;財前様を想って綴る
 財前様へ送る、手紙の内容を考えながら、[r]
 私は目を閉じ微睡む。[p]
-[anim name="tukitegami" opacity=60 time=10]
-[image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=1300]
-[anim name="tukitegami" opacity=60 time=0]
+;[anim name="tukitegami" opacity=60 time=10]
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=1000 opasoty=70]
+[anim name="tukitegami" opacity=70 time=1000]
 [wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 ――暮夏のみぎり[r]
