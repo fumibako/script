@@ -594,7 +594,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
 すると、[r]
-目に飛び込んだ隣のロープデコルテを着た女性が、[r]
+目に飛び込んだ隣のローブデコルテを着た女性が、[r]
 男性に抱かれて華やかに大胆にターンを繰り出していた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
