@@ -55,23 +55,34 @@ $(".29_fore").empty();
 [whosay name="華織" color="olivedrab"]
 「さあ、お手をどうぞ――」[p]
 [autosave]
-#
-華織様が手を差し伸べ、私の手を置かれるのを待ってくださる。[p]
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;(ずっと夢に[ruby text=えが]描いていたことが現実になったの？[r]
-;[sp]華織様が目の前にいらっしゃるのに[r]
-;[sp]私、まだ信じられないわ……）[p]
+華織様が私の目を見ながら手を差し伸べる。
+;(る。→た後、)
+[r]
+;[四条_隣_目にこ]
+[chara_mod name="sijyou_tonari_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+戸惑う私の手を優しい笑顔で待ってくださった。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+;眉困り　目大　口微笑み　照れ
+(ずっと夢に[ruby text=えが]描いていたことが現実になったの？[r]
+[sp]華織様が目の前にいらっしゃるのに[r]
+[sp]私、まだ信じられないわ……）[p]
 #
 目を合わせるのも怖くなるほどに、夢の様な出来事に[r]
 私の手は震えてしまった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 「はい……」[p]
 #
-;私は、勇気を出して、愛する人の手にその手を重ねた。[p]
-私は、愛する人の手にその手を重ねた。[p]
+私は、勇気を出して、愛する人の手に自らの手を重ねた。[p]
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （大丈夫。[sp]お稽古通りにステップを踏めばいいの)[p]
