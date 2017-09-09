@@ -760,10 +760,12 @@ $(".1_fore").empty();
 青々とした葉が水面を揺らす。[p]
 ;==========================================================
 [resetfont]
+;ここは同じ背景でok
 @layopt layer=message0 visible=false
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_tuki0.jpg" time=0]
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
@@ -832,7 +834,8 @@ $(".1_fore").empty();
 ;財前様を想って綴る
 財前様へ送る、手紙の内容を考えながら、[r]
 私は目を閉じ微睡む。[p]
-[image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=800]
+[anim name="tukitegami" opacity=60 time=10]
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=1300]
 [anim name="tukitegami" opacity=60 time=0]
 [wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
@@ -859,6 +862,7 @@ _　お手紙から財前様は、とても現実的で[r]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[背景_庭_夜]
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
@@ -880,6 +884,7 @@ _　お手紙から財前様は、とても現実的で[r]
 [s]
 ;==========================================================
 *comon1
+
 ;==========================================================
 *comon
 [whosay name=&sf.girl_namae color="#cf5a7f"]
