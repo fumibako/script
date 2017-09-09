@@ -61,7 +61,7 @@ $(".29_fore").empty();
 ;[四条_隣_目にこ]
 [chara_mod name="sijyou_tonari_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
-戸惑う私の手を優しい笑顔で待ってくださった。[p]
+戸惑う私の手を華織様は優しい笑顔で待ってくださった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
