@@ -325,7 +325,7 @@ $(".29_fore").empty();
 「前見た時もよりも華織様は、お兄様のような華やかさが[r]
 [sp]増した気がいたしますわ。[r]
 [主人公目パチ1回]
-[sp]ところで、華織様。[sp]今日はお兄様はいらっしゃらないの？」[p]
+[sp]ところで、華織様。[sp]今日は、お兄様と御一緒かしら？」[p]
 [whosay name="華織" color="olivedrab"]
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
