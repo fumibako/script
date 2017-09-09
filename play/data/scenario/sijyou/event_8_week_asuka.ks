@@ -775,10 +775,10 @@ $(".1_fore").empty();
 私の心に浮かんだ、彼の人を想えば……[p]
 ;========================================================================
 ;要望が多いのではじめからの表示にします。　
-[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1"]
+[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
 [glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [endif]
-[if exp="f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1"]
+[if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
 [glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [endif]
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
@@ -790,6 +790,57 @@ $(".1_fore").empty();
 *katuragi
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下……」[p]
+;==========================================================
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+@layopt layer=fix visible=false
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki0.jpg" time=50]
+;メッセージレイヤを全画面用に設定変更
+[wait time=10]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=500]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=20]
+;==========================================================
+殿下へ送る、手紙の内容を考えながら、[r]
+私は目を閉じ微睡む。[p]
+;==========================================================
+;月池と主人公手紙の合体透過画像をください　こちらで作って良い場合、作ります
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=1000 opasoty=70]
+[anim name="tukitegami" opacity=70 time=1000]
+[wait time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+;==========================================================
+――暮夏のみぎり[r]
+私は、久しく、友人であり伯母である方から、[r]
+ゆっくりとお話をいたしました。[r]
+[r]
+そうして、ふと貴方のことが思い浮かびました。[p]
+[sp]殿下と出会い、手紙を交わすようになり、[r]
+いつしか私は、型にはまらない殿下の意志の強さを[r]
+尊敬するようになりました。[r]
+[sp]いつか殿下の思い描く未来を[r]
+見てみたいと……そして貴方を…[p]
+;==========================================================
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[背景_庭_夜]
+[freeimage layer=29 time=0]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（少し感傷的になっているかもしれないですね……）[p]
+#
+浮かんだ手紙の内容は、心に押し留めたが、[r]
+殿下への御手紙のことを考えると[r]
+自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
 @jump target=comon1
 [s]
@@ -871,7 +922,7 @@ _　お手紙から財前様は、とても現実的で[r]
 （少し感傷的になっているかもしれないですね……）[p]
 #
 浮かんだ手紙の内容は、心に押し留めたが、[r]
-財前様への手紙のことを考えると[r]
+財前様へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
 @jump target=comon1
