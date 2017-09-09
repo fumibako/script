@@ -1025,6 +1025,7 @@ $(".1_fore").empty();
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[font color=white size=20]
 ――暮夏のみぎり[r]
 私は、久しく、友人であり伯母である方から、[r]
 ゆっくりとお話をいたしました。[r]
