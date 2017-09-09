@@ -9,12 +9,12 @@ $(".1_fore").empty();
 [call target=*2_2 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [背景_チャリティ会場ダンスホール]
-;背景をセット予定↑
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+[glink target="seen_end" text="テストを終わる" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 テストページから開始します。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
