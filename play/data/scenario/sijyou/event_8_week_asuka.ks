@@ -1017,7 +1017,7 @@ $(".1_fore").empty();
 [wait time=500]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[font color=white size=20]
+[font color=white size=27]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ;財前様を想って綴る
 財前様へ送る、手紙の内容を考えながら、[r]
