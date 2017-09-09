@@ -792,6 +792,8 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下……」[p]
 #
+私の心に殿下が思い浮かんだ。[p]
+;のことが？　のお顔が？
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
@@ -858,6 +860,9 @@ $(".1_fore").empty();
 *hujieda
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「鳥文の君……」[p]
+#
+私の心に、鳥文の君が思い浮かんだ。[p]
+;のことが？
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
@@ -882,6 +887,7 @@ $(".1_fore").empty();
 [wait time=500]
 [font color=white size=20]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[font color=white size=20]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ――暮夏のみぎり[r]
 私は、久しく、友人であり伯母である方から、[r]
@@ -951,6 +957,7 @@ $(".1_fore").empty();
 [wait time=500]
 [font color=white size=20]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[font color=white size=20]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ――暮夏のみぎり[r]
 私は、久しく、友人であり伯母である方から、[r]
@@ -1074,13 +1081,14 @@ _　お手紙から財前様は、とても現実的で[r]
 [wait time=500]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[font color=white size=20]
+[font color=white size=27]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 黒田様へ送る、手紙の内容を考えながら、[r]
 目を閉じる。[p]
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+[font color=white size=20]
 ――暮夏のみぎり[r]
 私は、久しく、友人であり伯母である方から、[r]
 ゆっくりとお話をいたしました。[r]
