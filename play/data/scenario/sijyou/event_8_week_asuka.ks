@@ -809,8 +809,7 @@ $(".1_fore").empty();
 目を閉じる。[p]
 ;==========================================================
 ;月池と主人公手紙の合体透過画像をください　こちらで作って良い場合、作ります
-[image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=1000 opasoty=70]
-[anim name="tukitegami" opacity=70 time=1000]
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 ;==========================================================
@@ -885,9 +884,7 @@ $(".1_fore").empty();
 ;財前様を想って綴る
 財前様へ送る、手紙の内容を考えながら、[r]
 目を閉じる。[p]
-;[anim name="tukitegami" opacity=60 time=10]
-[image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=1000 opasoty=70]
-[anim name="tukitegami" opacity=70 time=1000]
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 ――暮夏のみぎり[r]
