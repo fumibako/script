@@ -823,11 +823,11 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[position left=0 width=960 height=530 top=0 page=fore margint="100" frame="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" opacity=60]
+[position frame="data/fgimage/bg/I9IhvvVdPo/bg_tegami_zaizen.jpg"　left=0 width=960 height=530 top=0 page=fore marginl=200 margint="100"  opacity=60]
 [wait time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
-[font color=white size=27]
+[font color=white size=20]
 ;==========================================================
 ;財前様を想って綴る
 財前様へ送る、手紙の内容を考えながら、[r]
