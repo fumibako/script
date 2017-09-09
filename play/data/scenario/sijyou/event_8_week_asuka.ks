@@ -774,13 +774,13 @@ $(".1_fore").empty();
 #
 私の心に浮かんだ、彼の人を想えば……[p]
 ;========================================================================
-;要望が多いのではじめからの表示にします。　
-[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
+;要望が多いのではじめからの表示にします。　調整中なので全ボタン表示
+;[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
 [glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=400 y=80 color=white]
-[endif]
-[if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
+;[endif]
+;[if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
 [glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=400 y=130 color=white]
-[endif]
+;[endif]
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
 [glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
