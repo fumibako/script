@@ -823,7 +823,7 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[position frame="../data/fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg"　left=0 width=960 height=640 top=0 page=fore margint="100" opacity=60]
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=500]
 @layopt layer=message0 visible=true
 [current layer="message0"]
@@ -832,6 +832,10 @@ $(".1_fore").empty();
 ;財前様を想って綴る
 財前様へ送る、手紙の内容を考えながら、[r]
 私は目を閉じ微睡む。[p]
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=800]
+[anim name="tukitegami" opacity=60 time=0]
+[wait time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 ――暮夏のみぎり[r]
 私は、久しく、友人であり伯母である方から、[r]
 ゆっくりとお話をいたしました。[r]
