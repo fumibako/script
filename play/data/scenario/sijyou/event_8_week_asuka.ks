@@ -797,7 +797,7 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 @layopt layer=fix visible=false
 [wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki0.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
@@ -878,7 +878,7 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 @layopt layer=fix visible=false
 [wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki0.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
