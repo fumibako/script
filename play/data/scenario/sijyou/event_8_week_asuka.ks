@@ -792,7 +792,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下……」[p]
 #
-;==========================================================
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
 @layopt layer=fix visible=false
@@ -844,6 +844,7 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （少し感傷的になっているかもしれないですね……）[p]
 #
@@ -853,19 +854,80 @@ $(".1_fore").empty();
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
 @jump target=comon1
 [s]
-;========================================================================
+;======================================================================================
 *hujieda
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「鳥文の君……」[p]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+@layopt layer=fix visible=false
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
+;メッセージレイヤを全画面用に設定変更
+[wait time=10]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=500]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+鳥文の君へ送る、手紙の内容を考えながら、[r]
+目を閉じる。[p]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+;月池と主人公手紙の合体透過画像仮
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
+[wait time=500]
+[font color=white size=20]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+――暮夏のみぎり[r]
+私は、久しく、友人であり伯母である方から、[r]
+ゆっくりとお話をいたしました。[r]
+[r]
+そうして、ふと貴方のことが思い浮かびました。[p]
+[sp][r][r]
+貴方とご縁があり、こうして手紙を交わしている期間は[r]
+あと、どれくらいになるのでしょうか。[r]
+もしかしたら、もうあと僅かなのかもしれませんし[r]
+もっと続くのかもしれません。[p]
+[sp][r]
+お[ruby text=こと]箏をかき鳴らしながら、[r]
+私は、よく鳥文の君の事を考えてしまいます。[r]
+いつ貴方からの手紙が来るだろうか、と[r]
+待ってしまうのです。[r]
+[r]もっと貴方のことが知りたいです。[r]
+……そして貴方と……[p]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[背景_庭_夜]
+[freeimage layer=29 time=0]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（少し感傷的になっているかもしれないですね……）[p]
+#
+浮かんだ手紙の内容は、心に押し留めたが、[r]
+鳥文の君へのお手紙のことを考えると[r]
+自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 1"]
 @jump target=comon1
 [s]
-;========================================================================
+;======================================================================================
 *sijyou
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄様……」[p]
 #
-;==========================================================
+私の心に華織お兄様が思い浮かんだ。[p]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
 @layopt layer=fix visible=false
@@ -919,6 +981,7 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （少し感傷的になっているかもしれないですね……）[p]
 #
@@ -982,6 +1045,7 @@ _　お手紙から財前様は、とても現実的で[r]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （少し感傷的になっているかもしれないですね……）[p]
 #
@@ -993,7 +1057,66 @@ _　お手紙から財前様は、とても現実的で[r]
 [s]
 ;========================================================================
 *kuroda
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「黒田様……」[p]
+#
+私の心に黒田様が思い浮かんだ。[p]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+@layopt layer=fix visible=false
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
+;メッセージレイヤを全画面用に設定変更
+[wait time=10]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=500]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=20]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+黒田様へ送る、手紙の内容を考えながら、[r]
+目を閉じる。[p]
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
+[wait time=500]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+――暮夏のみぎり[r]
+私は、久しく、友人であり伯母である方から、[r]
+ゆっくりとお話をいたしました。[r]
+[r]
+そうして、ふと貴方のことが思い浮かびました。[p]
+貴方とご縁があり、こうして手紙を交わしている期間は[r]
+あと、どれくらいになるのでしょうか。[r]
+もしかしたら、もうあと僅かなのかもしれませんし[r]
+もっと続くのかもしれません。[p]
+[sp][r][r]
+お手紙からは、黒田様が研究に真摯に[r]
+取り組んでおられる様子や[r]
+自然に親しんでおられることが伝わって[r]
+私も頑張ろう、と勇気づけられました。[p]
+お庭の植物や色々な物事が[r]
+これまでと違ったように見えるようになりました。[r]
+……私は、貴方と……[p]
+;仮文直してください！　どう頑張ってもムリです
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[背景_庭_夜]
+[freeimage layer=29 time=0]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（少し感傷的になっているかもしれないですね……）[p]
+#
+浮かんだ手紙の内容は、心に押し留めたが、[r]
+黒田様へのお手紙のことを考えると[r]
+自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
 @jump target=comon1
 [s]
