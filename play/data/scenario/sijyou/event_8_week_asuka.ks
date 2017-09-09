@@ -739,7 +739,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公目閉じ
 (でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
-;葛城宮のイベントをしてる時もこのセリフで大丈夫？
+#
 ;==========================================================
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
@@ -776,10 +776,10 @@ $(".1_fore").empty();
 ;========================================================================
 ;要望が多いのではじめからの表示にします。　調整中なので全ボタン表示
 ;[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
-[glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=400 y=80 color=white]
+[glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=500 y=80 color=white]
 ;[endif]
 ;[if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
-[glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=400 y=130 color=white]
+[glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=500 y=130 color=white]
 ;[endif]
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
@@ -790,6 +790,7 @@ $(".1_fore").empty();
 *katuragi
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「殿下……」[p]
+#
 ;==========================================================
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
@@ -819,7 +820,9 @@ $(".1_fore").empty();
 ゆっくりとお話をいたしました。[r]
 [r]
 そうして、ふと貴方のことが思い浮かびました。[p]
-[sp]殿下と出会い、手紙を交わすようになり、[r]
+[sp]
+[r]
+[r]殿下と出会い、手紙を交わすようになり、[r]
 いつしか私は、型にはまらない殿下の意志の強さを[r]
 尊敬するようになりました。[r]
 [sp]いつか殿下の思い描く未来を[r]
