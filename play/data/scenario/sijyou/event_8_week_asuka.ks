@@ -819,11 +819,11 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 @layopt layer=fix visible=false
 [wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki0.jpg" time=50]
 ;メッセージレイヤを全画面用に設定変更
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[position left=0 width=960 height=530 top=0 page=fore margint="100" frame="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" opacity=60]
 [wait time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
