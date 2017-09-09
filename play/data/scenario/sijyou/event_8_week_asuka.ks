@@ -807,29 +807,33 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
-;==========================================================
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 殿下へ送る、手紙の内容を考えながら、[r]
 目を閉じる。[p]
-;==========================================================
-;月池と主人公手紙の合体透過画像をください　こちらで作って良い場合、作ります
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+;月池と主人公手紙の合体透過画像仮
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
 [font color=white size=20]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
-;==========================================================
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ――暮夏のみぎり[r]
 私は、久しく、友人であり伯母である方から、[r]
 ゆっくりとお話をいたしました。[r]
 [r]
 そうして、ふと貴方のことが思い浮かびました。[p]
+貴方とご縁があり、こうして手紙を交わしている期間は[r]
+あと、どれくらいになるのでしょうか。[r]
+もしかしたら、もうあと僅かなのかもしれませんし[r]
+もっと続くのかもしれません。[p]
 [sp]
 [r]
 [r]殿下と出会い、手紙を交わすようになり、[r]
 いつしか私は、型にはまらない[r]
 殿下の意志の強さを尊敬するようになりました。[r][r]
-[sp]いつか殿下の思い描く未来を見てみたいと[r]
-……そして貴方を…[p]
-;==========================================================
+[sp]いつか殿下の思い描く未来を見てみたいと……。[r]
+……そして貴方を……[p]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [resetfont]
 @layopt layer=message0 visible=false
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -860,6 +864,65 @@ $(".1_fore").empty();
 *sijyou
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織お兄様……」[p]
+;==========================================================
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+@layopt layer=fix visible=false
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
+;メッセージレイヤを全画面用に設定変更
+[wait time=10]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=500]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+華織お兄様へ送る、手紙の内容を考えながら、[r]
+目を閉じる。[p]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+;月池と主人公手紙の合体透過画像仮
+[image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
+[wait time=500]
+[font color=white size=20]
+[position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+――暮夏のみぎり[r]
+私は、久しく、友人であり伯母である方から、[r]
+ゆっくりとお話をいたしました。[r]
+[r]
+そうして、ふと貴方のことが思い浮かびました。[p]
+貴方とご縁があり、こうして手紙を交わしている期間は[r]
+あと、どれくらいになるのでしょうか。[r]
+もしかしたら、もうあと僅かなのかもしれませんし[r]
+もっと続くのかもしれません。[p]
+華織お兄様と、お手紙を交わすようになり、[r]
+いつしか私は、華織お兄様への強い憧れを[r]
+思い出すようになりました。[r]
+[sp]あの頃より、私は大人になれたでしょうか？[r]
+華織お兄様との淑女となった私の未来を[r]
+よく考えてしまいます。[r]
+[r]もっと華織お兄様のことが知りたいです。[r]
+……そして貴方と……[p]
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[背景_庭_夜]
+[freeimage layer=29 time=0]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（少し感傷的になっているかもしれないですね……）[p]
+#
+浮かんだ手紙の内容は、心に押し留めたが、[r]
+華織お兄様へのお手紙のことを考えると[r]
+自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
 @jump target=comon1
 [s]
@@ -868,11 +931,8 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「財前様……」[p]
 #
-;ここからジャンプしてもいいです
-#
 私の心に財前様が思い浮かんだ。[p]
-;原文：お手紙の 相手の 気持ちへの 手紙の 内容を　考えながら　目を閉じ　微睡む ・・・つまり・・・相手への手紙内容を考えながら目を閉じ微睡む。である？
-;==========================================================
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
 @layopt layer=fix visible=false
@@ -886,7 +946,7 @@ $(".1_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=20]
-;==========================================================
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ;財前様を想って綴る
 財前様へ送る、手紙の内容を考えながら、[r]
 目を閉じる。[p]
@@ -898,9 +958,8 @@ $(".1_fore").empty();
 ゆっくりとお話をいたしました。[r]
 [r]
 そうして、ふと貴方のことが思い浮かびました。[p]
-
 貴方とご縁があり、こうして手紙を交わしている期間は[r]
-あとどれくらいになるのでしょうか。[r]
+あと、どれくらいになるのでしょうか。[r]
 もしかしたら、もうあと僅かなのかもしれませんし[r]
 もっと続くのかもしれません。[p]
 _　お手紙から財前様は、とても現実的で[r]
@@ -910,7 +969,7 @@ _　お手紙から財前様は、とても現実的で[r]
 けれど、それが私には新鮮で[r]
 まるで新しい世界を開けた気持ちになりました。[r]
 そして……私は、貴方を……[p]
-;==========================================================
+;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [resetfont]
 @layopt layer=message0 visible=false
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
