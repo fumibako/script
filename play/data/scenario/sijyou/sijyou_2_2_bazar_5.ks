@@ -17,6 +17,7 @@ $(".1_fore").empty();
 [wait time=10]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+[button fix=true target="seen_end" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 ;====================================================
 *scene1
 ;------------------------------------
@@ -190,9 +191,20 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 「私は、華織様に似合う大人の女性になれたでしょうか？」[p]
+;初めてだから場酔いくらいある…と思えない心情を描き
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織様に御心配をお掛けしてしまった……。[r]
+[sp]きっと大人の淑女なら華やかな場所でも[r]
+[sp]悠然と振舞えるはずなのに）[p]
 #
 今日の失敗を忘れられず、私は華織様の手を力強く握った。 [p]
-[whosay name="華織" color="olivedrab"] 
+[whosay name="華織" color="olivedrab"]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+「お気になさらないで下さい」[p]
+[whosay name="華織" color="olivedrab"]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 「[名前]さんは、そのままでも可愛らしい方ですよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
