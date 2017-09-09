@@ -774,6 +774,7 @@ $(".1_fore").empty();
 #
 私の心に浮かんだ、彼の人を想えば……[p]
 ;========================================================================
+[autosave]
 ;要望が多いのではじめからの表示にします。　調整中なので全ボタン表示
 ;[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
 [glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=500 y=80 color=white]
@@ -805,6 +806,7 @@ $(".1_fore").empty();
 [wait time=500]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[font color=white size=27]
 ;==========================================================
 殿下へ送る、手紙の内容を考えながら、[r]
 目を閉じる。[p]
@@ -823,10 +825,11 @@ $(".1_fore").empty();
 [sp]
 [r]
 [r]殿下と出会い、手紙を交わすようになり、[r]
-いつしか私は、型にはまらない殿下の意志の強さを[r]
-尊敬するようになりました。[r]
-[sp]いつか殿下の思い描く未来を[r]
-見てみたいと……そして貴方を…[p]
+いつしか私は、型にはまらない[r]
+殿下の意志の強さを尊敬するように[r]
+なりました。[r]
+[sp]いつか殿下の思い描く[r]
+未来を見てみたいと……そして貴方を…[p]
 ;==========================================================
 [resetfont]
 @layopt layer=message0 visible=false
