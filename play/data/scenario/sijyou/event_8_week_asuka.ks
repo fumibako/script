@@ -741,7 +741,6 @@ $(".1_fore").empty();
 (でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
 ;葛城宮のイベントをしてる時もこのセリフで大丈夫？
 ;==========================================================
-;背景天井 
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
 @layopt layer=fix visible=false
@@ -773,15 +772,7 @@ $(".1_fore").empty();
 #
 私の心に浮かんだ、彼の人を想えば……[p]
 ;========================================================================
-;３回クリアしていなければ@jump target=comonへ　変数名は仮　クリアマクロにいれほしい
-[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good+sf.ED_kuroda_bad + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
-;[emb exp="tf.ending_Number_of_times"][p]
-[if exp="tf.ending_Number_of_times < 4"]
-@jump target=comon
-[endif]
+;要望が多いのではじめからの表示にします。　
 [if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1"]
 [glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [endif]
@@ -817,6 +808,61 @@ $(".1_fore").empty();
 ;========================================================================
 *zaizen
 「財前様……」[p]
+#
+;ここからジャンプしてもいいです
+#
+私の心に財前様が思い浮かんだ。[p]
+;原文：お手紙の 相手の 気持ちへの 手紙の 内容を　考えながら　目を閉じ　微睡む ・・・つまり・・・相手への手紙内容を考えながら目を閉じ微睡む。である？
+;==========================================================
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+@layopt layer=fix visible=false
+[wait time=10]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" time=50]
+;メッセージレイヤを全画面用に設定変更
+[wait time=10]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+;==========================================================
+;財前様を想って綴る
+財前様へ送る、手紙の内容を考えながら、私は目を閉じ微睡む。[p]
+――暮夏のみぎり[r]
+私は、久しく、友人であり伯母である方から、[r]
+ゆっくりとお話をいたしました。[r]
+[r]
+そうして、ふと貴方のことが思い浮かびました。[p]
+
+貴方とご縁があり、こうして手紙を交わしている期間は[r]
+あとどれくらいになるのでしょうか。[r]
+もしかしたら、もうあと僅かなのかもしれませんし[r]
+もっと続くのかもしれません。[p]
+_　お手紙から財前様は、とても現実的で[r]
+冷静な印象を持ちました。[r]
+私とは違った視点で物事を捉えて[r]
+いらっしゃっいます。[r]
+けれど、それが私には新鮮で[r]
+まるで新しい世界を開けた気持ちになりました。[r]
+そして……私は、貴方を……[p]
+;==========================================================
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[freeimage layer=29 time=0]
+@layopt layer=message0 visible=true
+@layopt layer=fix visible=true
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（少し感傷的になっているかもしれないですね……）[p]
+#
+浮かんだ手紙の内容は、心に押し留めたが、[r]
+財前様への手紙のことを考えると[r]
+自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
 @jump target=comon1
 [s]
@@ -826,9 +872,9 @@ $(".1_fore").empty();
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
 @jump target=comon1
 [s]
-;========================================================================
+;==========================================================
 *comon1
-
+;==========================================================
 *comon
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;藤枝の好感度が高い場合、f.event_hujieda[17]進行不可手紙　７月のｲﾍﾞﾝﾄf.event_hujieda[4]
