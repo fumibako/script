@@ -157,7 +157,7 @@ $(".26_fore").empty();
 ;既読のみスキップ　未読はスキップしない
 
 [iscript]
-$('.test').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x300.png")' , 'background-size' : 'cover'});
+$('.test').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-size' : 'cover', 'background-position':'center'});
 $('.test2').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-repeat': 'no-repeat' , 'background-size' : 'contain'});
 [endscript]
 [glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
