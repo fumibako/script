@@ -372,7 +372,7 @@ $(".1_fore").empty();
 「紗代子さん？」[p]
 [whosay name="飛鳥紗代子"]
 「起こしてしまったら、ごめんなさいね。[r]
-[sp]お茶を持ってきたの。[sp]ご一緒しても宜しいかしら？」[p]
+[sp][ruby text=うち]団[ruby text=わ]扇とお茶を持ってきたの。[sp]ご一緒しても宜しいかしら？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ！[sp]どうぞ。 [r]
 [sp]丁度、目が冴えて困っていたところでした。[r]
