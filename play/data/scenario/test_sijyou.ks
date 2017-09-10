@@ -158,21 +158,7 @@ $(".26_fore").empty();
 
 [iscript]
 $('.test').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-size' : 'cover'});
-$('.test2').attr('src', '../data/image/select_waku_x300.png');
-this.kag.config.autoRecordLabel = true;
-this.kag.config.unReadTextSkip = true;
-
-$(window).keydown(function(e){
-if(e.keyCode === 38) {
-f.kidoku_btn=true;
-tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"true"})
-} });
-
-$(window).keydown(function(e){
-if(e.keyCode === 39) {
-f.kidoku_btn=false;
-tyrano.plugin.kag.ftag.startTag("config_record_label", {skip:"false"})
-} });
+$('.test2').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x300.png")' , 'background-size' : 'contain'});
 [endscript]
 [glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
 ;ページ停止に地点にジャンプ
