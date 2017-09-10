@@ -184,12 +184,12 @@ $("input[name='f.para_shujinkou_j_gogaku']").val("0");
 $("input[name='f.para_shujinkou_j_koto']").val("0");
 $("input[name='f.para_shujinkou_shukujodo']").val(f.para_shujinkou_shukujodo);
 
-$("input[name='f.para_shujinkou_koto_kaisuu']").val("0");
-$("input[name='f.event_hujieda1']").val("0");
-$("input[name='f.event_hujieda2']").val("0");
-$("input[name='f.event_hujieda3']").val("0");
-$("input[name='f.event_hujieda4']").val("0");
-$("input[name='f.event_hujieda5']").val("0");
+$("input[name='f.para_shujinkou_koto_kaisuu']").val("2");
+$("input[name='f.event_hujieda1']").val("1");
+$("input[name='f.event_hujieda2']").val("1");
+$("input[name='f.event_hujieda3']").val("1");
+$("input[name='f.event_hujieda4']").val("1");
+$("input[name='f.event_hujieda5']").val("1");
 
 $("input[name='f.okeiko_month']").val("4");
 $("input[name='f.okeiko_week']").val("1");
@@ -200,7 +200,7 @@ $("input[name='f.event_katuraginomiya1']").val("0");
 $("input[name='f.katuraginomiya_only']").val("0");
 
 //誰かに返事を出した
-$("input[name='f.fumi_henji']").val("0");
+$("input[name='f.fumi_henji']").val("1");
 //最後の手紙葛城
 $("input[name='tf.last_fumi']").val("0");
 
