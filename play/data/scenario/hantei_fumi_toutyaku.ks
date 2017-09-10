@@ -686,6 +686,15 @@ f.okeiko_month_kansuuji="三月 ";
 ;手紙到着：条件有り分
 *hantei_list_hujieda
 ;=======================================================================================
+;◆重要なお手紙：話題のお返事よりも前に判定
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『 心の音色 』2月4週 お箏80以上、11_4文矢手紙後のお箏練習後のセリフを見ている、2月にお箏練習を2回以上
+[if exp="(f.okeiko_month == 2 && f.okeiko_week == 4) && f.para_shujinkou_j_koto >= 80 && f.fumi_fumiya_11_4 == 4 && f.para_shujinkou_koto_kaisuu >= 2 && f.fumi_toutyaku_hujieda[30] == 0 && f.hujieda_au == 1"]
+  [call target=*hujieda_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_30
+[endif]
+
+;=======================================================================================
 ;◆話題のお返事◆
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『趣味について』
@@ -798,11 +807,6 @@ f.okeiko_month_kansuuji="三月 ";
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_26
 [endif]
 
-;◆↓手紙一通分の到着判定処理(開始)：『 心の音色 』2月4週 お箏80以上、11_4文矢手紙後のお箏練習後のセリフを見ている、2月にお箏練習を2回以上
-[if exp="(f.okeiko_month == 2 && f.okeiko_week == 4) && f.para_shujinkou_j_koto >= 80 && f.fumi_fumiya_11_4 == 4 && f.para_shujinkou_koto_kaisuu >= 2 && f.fumi_toutyaku_hujieda[30] == 0 && f.hujieda_au == 1"]
-  [call target=*hujieda_toutyaku_hantei_shori_common]
-   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_30
-[endif]
 
 *fumi_toutyaku_hantei_hujieda_owari
 

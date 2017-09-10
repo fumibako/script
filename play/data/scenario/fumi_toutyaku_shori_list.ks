@@ -1752,7 +1752,6 @@ f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
 f.fumi_list_hujieda_target.push("*hujieda_fumi_koto");
 f.fumi_all_number=f.fumi_all_number + 1;
 f.fumi_toutyaku_hujieda[30]=1;
-f.hensin_list_hairetsu[4][29] = -1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
 
