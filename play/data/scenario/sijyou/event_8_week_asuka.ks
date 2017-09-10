@@ -366,6 +366,42 @@ $(".1_fore").empty();
 *seen7
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日に限って、何で、こんなに熱いのかしら？)[p]
+;===================================================
+[if exp="tf.test_gamen == true"]
+テストページからプレイしています。選択肢に移動しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+[link target=*jump_ok2]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no2]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok2
+[current layer="message0"]
+[resetfont]
+[stopbgm]
+#
+「はい」[r]
+移動します。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
+[cm]
+@jump target=*seen_next2
+[s]
+*jump_no2
+[current layer="message0"]
+「いいえ」[r]
+そのままはじめます。[p]
+[cm]
+[endif]
+;===================================================
 [whosay name="飛鳥紗代子"]
 「[名前]さん、起きていらっしゃるかしら？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -774,6 +810,7 @@ $(".1_fore").empty();
 ;主人公目閉じ
 (でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
 #
+*seen_next2
 ;==========================================================
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
