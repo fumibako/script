@@ -55,6 +55,8 @@ $(".1_fore").empty();
 *jump_ok
 [current layer="message0"]
 [resetfont]
+[stopbgm]
+#
 「はい」[r]
 移動します。[p]
 [cm]
