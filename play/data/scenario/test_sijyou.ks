@@ -157,7 +157,7 @@ $(".26_fore").empty();
 ;既読のみスキップ　未読はスキップしない
 
 [iscript]
-$('.test').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png") no-repeat left top' , 'background-size' : 'contain'});
+$('.test').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-size' : 'cover'});
 $('.test2').attr('src', '../data/image/select_waku_x300.png');
 this.kag.config.autoRecordLabel = true;
 this.kag.config.unReadTextSkip = true;
