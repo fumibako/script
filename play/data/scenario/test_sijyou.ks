@@ -610,8 +610,8 @@ alert(f.para_sijyou_koukando);
 *test_sayoko
 [cm]
 [freeimage layer = 26]
-[glink storage="sijyou/event_8_week_asuka.ks" text="飛鳥紗代子イベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink storage="common_asuka.ks" text="飛鳥紗代子イベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink storage="common_asuka.ks" text="はじめての手紙" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink storage="sijyou/event_8_week_asuka.ks" text="怪談・葉月の庭" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [s]
 
 *tweet
