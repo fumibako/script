@@ -466,13 +466,17 @@
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
+;飛鳥　葉月イベント
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou2.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tenjyou3.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_asuka_haduki_ame.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tokei.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_kakitubata.jpg" wait=true]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tuki.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tuki0.jpg" wait=true]
+[preload storage="data/fgimage/bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" wait=true]
 @jump target=end_sub1
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
