@@ -302,7 +302,7 @@ $(".1_fore").empty();
 [wait time=50]
 [freeimage layer = 1]
 [wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tokei.jpg" time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
@@ -551,7 +551,7 @@ $(".1_fore").empty();
 
 # 
 ;モヤモヤのイメージ
-飛鳥さんが話されたような[r]
+紗代子さんが話されたような[r]
 愛憎の果てに無残な亡くなり方をされた家臣や、[r]
 側室さまのこと、"客間に宿る謎の怨霊"のこと。[p]
 
