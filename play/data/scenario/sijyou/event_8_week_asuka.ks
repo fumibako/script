@@ -337,6 +337,7 @@ $(".1_fore").empty();
 [freeimage layer = 1]
 [wait time=10]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tokei.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
@@ -894,6 +895,7 @@ $(".1_fore").empty();
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ;月池と主人公手紙の合体透過画像仮
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
+[eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo　・　Editing by ＠名無しさん１'"]
 [wait time=500]
 [font color=white size=20]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
@@ -965,6 +967,7 @@ $(".1_fore").empty();
 ;月池と主人公手紙の合体透過画像仮
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
+[eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo　・　Editing by ＠名無しさん１'"]
 [font color=white size=20]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
@@ -1036,6 +1039,7 @@ $(".1_fore").empty();
 ;月池と主人公手紙の合体透過画像仮
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
+[eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo　・　Editing by ＠名無しさん１'"]
 [font color=white size=20]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
@@ -1120,6 +1124,7 @@ $(".1_fore").empty();
 目を閉じる。[p]
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
+[eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo　・　Editing by ＠名無しさん１'"]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
 ――暮夏のみぎり[r]
@@ -1185,6 +1190,7 @@ _　お手紙から財前様は、とても現実的で[r]
 目を閉じる。[p]
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
+[eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo　・　Editing by ＠名無しさん１'"]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
 ――暮夏のみぎり[r]
