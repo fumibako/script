@@ -24,8 +24,8 @@
 [endif]
 ;================================================
 ;event_8_week_asuka.ks　飛鳥紗代子・怪談葉月の庭 ２週目以降　8_4バッドを満たしていない(誰かの好感度30以上　淑女度20以上)　選択肢処理がある為葛城宮オンリーではない || (f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30)の心配はonlyではじかれるので記述しない
-[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_common[21] == 0 && (f.para_kuroda_koukando >= 30 || f.para_zaizen_koukando >= 30 || f.para_shujinkou_shukujodo >= 20 || f.para_sijyou_koukando >= 30 || f.katuraginomiya_only != 1)"]
-;sf.EDclear_Number_of_times > 0
+[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_common[21] == 0 && (f.para_kuroda_koukando >= 30 || f.para_sijyou_koukando >= 30 || (f.para_zaizen_koukando >= 30 || f.para_shujinkou_shukujodo >= 20) || f.katuraginomiya_only != 1)"]
+;2週目sf.EDclear_Number_of_times > 0 ※財前好感度30だけで反応させない
 	[eval exp="f.event_storage='sijyou/event_8_week_asuka.ks'"]
 	[eval exp="f.event_target='*replay_event_8_week_asuka'"]
 	[eval exp="f.event_type='talk'"]
