@@ -12,7 +12,7 @@
 ;◆共通イベント判定：助言以外
 ;=============================================
 ;磯野アドバイス(f.event_common[0]~[7])badED5月4週(f.event_common[8])8月4週badED(f.event_common[9])
-;お見合い決定9_1(f.event_common[11])磯野相談f.event_common[12]各ｷｬﾗ散策ｱﾄﾞﾊﾞｲｽf.event_common[13]~[19]紗代子手紙[20]
+;お見合い決定9_1(f.event_common[11])磯野相談f.event_common[12]各ｷｬﾗ散策ｱﾄﾞﾊﾞｲｽf.event_common[13]~[19]紗代子手紙[20]怪談[21]
 ;================================================
 ;common_asuka.ks;　飛鳥紗代子はじめての手紙 当初の手紙は5_2になっています
 [if exp="(f.okeiko_month == 5 && f.okeiko_week == 4) && f.event_common[20] == 0"]
@@ -20,6 +20,16 @@
 	[eval exp="f.event_target='*replay_common_ausuka'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_common[20]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
+;================================================
+;event_8_week_asuka.ks　飛鳥紗代子・怪談葉月の庭 ２週目以降　8_4バッドを満たしていない(誰かの好感度30以上　淑女度20以上)　選択肢処理がある為葛城宮オンリーではない || (f.para_katuraginomiya_koukando >= 20 && f.para_shujinkou_shukujodo >= 30)の心配はonlyではじかれるので記述しない
+[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_common[21] == 0 && (f.para_kuroda_koukando >= 30 || f.para_zaizen_koukando >= 30 || f.para_shujinkou_shukujodo >= 20 || f.para_sijyou_koukando >= 30 || f.katuraginomiya_only != 1)"]
+;sf.EDclear_Number_of_times > 0
+	[eval exp="f.event_storage='sijyou/event_8_week_asuka.ks'"]
+	[eval exp="f.event_target='*replay_event_8_week_asuka'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[21]=1"]
 	@jump storage="event.ks" target=*start
 [endif]
 ;================================================
