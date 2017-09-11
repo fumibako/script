@@ -71,8 +71,19 @@
 [wait time=10]
 
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+;[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+;[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
 [if exp="f.okeiko_gamen == true"]
-
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「はじめてのお手紙」飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
+f.fumi_list_all_target.push("*0");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(0);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[0] = 1;
+[endscript]
 [endif]
 [手紙読了]
 
