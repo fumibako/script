@@ -642,7 +642,7 @@ $(".29_fore").empty();
 ;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
-観客は、その原因は誰かと視線を泳ぎ始めた。[p]
+観客は、その原因は誰かと視線を泳がせ始めた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
