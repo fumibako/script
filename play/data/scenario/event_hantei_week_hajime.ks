@@ -11,6 +11,17 @@
 ;=============================================
 ;◆共通イベント判定：助言以外
 ;=============================================
+;磯野アドバイス(f.event_common[0]~[7])badED5月4週(f.event_common[8])8月4週badED(f.event_common[9])
+;お見合い決定9_1(f.event_common[11])磯野相談f.event_common[12]各ｷｬﾗ散策ｱﾄﾞﾊﾞｲｽf.event_common[13]~[19]紗代子手紙[20]
+;================================================
+;common_asuka.ks;　飛鳥紗代子はじめての手紙 当初の手紙は5_2になっています
+[if exp="(f.okeiko_month == 5 && f.okeiko_week == 4) && f.event_common[20] == 0"]
+	[eval exp="f.event_storage='common_asuka.ks'"]
+	[eval exp="f.event_target='*replay_common_ausuka'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[20]=1"]
+	@jump storage="event.ks" target=*start
+[endif]
 ;================================================
 ;夢イベント　一番好感度高い　かつ
 ;藤枝　箏１０以上（普通に箏ばかりやれば１２）　葛城宮と被らないように箏パラメータで
@@ -545,7 +556,6 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_advice=0"]
 	@jump storage="event.ks" target=*start
 [endif]
-
 
 *advice_event_owari
 ;[eval exp="f.hantei_event_storage='event_hantei_week_hajime.ks共通(助言)イベント判定終了通過'"]
