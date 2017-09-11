@@ -168,7 +168,8 @@
 #
 お稽古のことをお願いした。[p]
 [主人公目閉じ]
-[if exp="f.event_hujieda[1]==1"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[if exp="f.event_hujieda[1] == 1"]
 ;藤枝イベントをみてる場合
 （お箏が上手になりますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
