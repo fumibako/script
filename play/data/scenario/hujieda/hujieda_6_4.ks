@@ -105,6 +105,7 @@
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 驚
 [主人公驚]
 「鳩さん！」[p]
@@ -112,7 +113,7 @@
 最近、暑くなってきたのでお稽古部屋の障子も開けたままにしている。[r]
 それを知っているのか、鳩は迷うことなくお[ruby text=こと]箏の上に[ruby text=と]留まった。[p]
 
-
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り
 [主人公困り]
 「ありがとう。[r]
@@ -121,6 +122,7 @@
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り
 [主人公困り]
 [主人公口ほほえみ]
