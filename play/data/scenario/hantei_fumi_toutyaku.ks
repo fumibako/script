@@ -837,12 +837,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;=======================================================================================
 ;◇◇飛鳥紗代子さん手紙到着判定◇◇
 ;=======================================================================================
-;◆(仮)5月2週　全ルート(1週目は他キャラからの手紙が届くことが多いため、2週にしてみています)
-[if exp="f.okeiko_month == 5 && f.okeiko_week == 2 && f.fumi_toutyaku_asuka[0] == 0"]
-	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
-	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
-   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_0
-[endif]
+;◆(仮)5月2週　全ルート「はじめての手紙」→common_asuka.ksイベント中に届くよう調整しました
 
 ;◆(仮)5月4週　全ルート(鳩からの手紙2通目を見ている場合)
 [if exp="f.okeiko_month == 5 && f.okeiko_week == 4 && f.fumi_toutyaku_asuka[6] == 0 && f.fumi_toutyaku_hujieda[3] == 1"]
