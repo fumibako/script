@@ -127,6 +127,7 @@
 [wait time=30]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 （先日の公園で、少し疲れたお顔をされていたような……）[p]
+#
 『黒田も泊まりで頑張っていますよ』[r]
 という田中様の言葉が思い浮かぶ。[p]
 
@@ -415,7 +416,7 @@
 ;【立ち絵】黒田：目閉じ
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
 [wait time=10]
-（もう、手放して、無いのです）[r]
+（もう、手放して、無いのです）[p]
 そう口に出しそうになり、うつむいて言葉を飲み込んだ。[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_11_4_scene5==undefined"]
