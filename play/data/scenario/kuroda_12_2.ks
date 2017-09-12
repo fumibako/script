@@ -198,6 +198,7 @@
 [wait time=50]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
+#
 ……[p]
 ……！[p]
 『手紙』[p]
@@ -208,6 +209,7 @@
 [wait time=10]
 [主人公閉目パチ1回]
 [wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 （想いをかたちにする……[r]
 [sp]『手紙』は強い力を持っているのかもしれない）
 [autosave]
