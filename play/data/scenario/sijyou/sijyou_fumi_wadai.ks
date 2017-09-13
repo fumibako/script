@@ -2042,6 +2042,7 @@ $(".1_fore").empty();
 ;============================================================================================================
 *sijyou_kaidan_1
 *sijyou_fumi21
+*sijyou_fumi104
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 [wait time=50]
@@ -2062,7 +2063,7 @@ $(".1_fore").empty();
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
-
+[eval exp="f.midoku_list_hairetsu[2][103] = 0;"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
@@ -2076,6 +2077,7 @@ $(".1_fore").empty();
 ;============================================================================================================
 *sijyou_kaidan_2
 *sijyou_fumi22
+*sijyou_fumi105
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 [wait time=50]
@@ -2096,7 +2098,7 @@ $(".1_fore").empty();
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
-
+[eval exp="f.midoku_list_hairetsu[2][104] = 0;"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
@@ -2110,6 +2112,7 @@ $(".1_fore").empty();
 ;============================================================================================================
 *sijyou_kaidan_3
 *sijyou_fumi23
+*sijyou_fumi106
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 [wait time=50]
@@ -2141,7 +2144,7 @@ $(".1_fore").empty();
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
-
+[eval exp="f.midoku_list_hairetsu[2][105] = 0;"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
