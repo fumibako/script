@@ -13,8 +13,8 @@ $(".1_fore").empty();
 [bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
 [else]
-;【背景】広間
-[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" time=0]
+;【背景】プロローグ
+[bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=0]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [wait time=10]
 [endif]
@@ -46,7 +46,13 @@ $(".1_fore").empty();
 [er]
 「選択肢まで移動する」[r]
 移動します。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
+[playbgm storage="sittori_umikaze.ogg" loop=true]
+[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+[endif]
 [cm]
+[背景_庭_夜]
 @jump target=*seen_next2
 [s]
 
@@ -881,7 +887,7 @@ $(".1_fore").empty();
 ;主人公目閉じ
 (でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
 #
-
+*seen_next2
 ;==========================================================
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
