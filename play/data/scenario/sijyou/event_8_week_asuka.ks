@@ -44,6 +44,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [resetfont]
 [er]
+[イベントシーン構築]
 「選択肢まで移動する」[r]
 移動します。[p]
 [if exp="sf.BGM=='ON'"]
@@ -53,7 +54,6 @@ $(".1_fore").empty();
 [endif]
 [cm]
 [背景_庭_夜]
-[イベントシーン構築]
 @jump target=*seen_next2
 [s]
 
@@ -62,10 +62,10 @@ $(".1_fore").empty();
 [current layer="message0"]
 [resetfont]
 [er]
+[イベントシーン構築]
 「イベントを終了する」[r]
 終了します。[p]
 [cm]
-[イベントシーン構築]
 [背景_庭_夜]
 @jump target=*end_Q
 [s]
@@ -1327,6 +1327,7 @@ _　お手紙から財前様は、とても現実的で[r]
 [暗転２]
 [wait time=1000]
 [暗転]
+[暗転２終了]
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『怪談の話題』を手に入れました"]
