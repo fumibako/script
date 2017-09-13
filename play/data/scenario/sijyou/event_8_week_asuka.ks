@@ -5,9 +5,6 @@
 [iscript]
 $(".1_fore").empty();
 [endscript]
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
-[wait time=50]
 [if exp="sf.event_8_week_asuka == 1"]
 ;背景変更:和紙風 桜色
 [bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
@@ -23,7 +20,6 @@ $(".1_fore").empty();
 ;=====================ここからお芝居の幕引きです==============================
 [if exp="sf.event_8_week_asuka == 1"]
 *event_select
-
 八月『怪談・葉月の庭』：既読イベントです。[r]
 選択肢まで移動、又はイベントを終了しますか？[r]
 ;選択肢用レイヤーを追加
