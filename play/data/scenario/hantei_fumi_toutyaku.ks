@@ -860,8 +860,8 @@ f.okeiko_month_kansuuji="三月 ";
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_2
 [endif]
 
-;◆(仮)黒田11月3週or財前11月4週or四条10月2週or葛城宮10月4週or藤枝11月2週
-[if exp="((f.okeiko_month == 11 && f.okeiko_week == 3 && f.kuroda_au == 1) || (f.okeiko_month == 11 && f.okeiko_week == 4 && f.zaizen_au == 1) || (f.okeiko_month == 10 && f.okeiko_week == 2 && f.sijyou_au == 1) || (f.okeiko_month == 10 && f.okeiko_week == 4 && f.katuraginomiya_au == 1) || (f.okeiko_month == 11 && f.okeiko_week == 2 && f.hujieda_au == 1)) && f.fumi_toutyaku_asuka[3] == 0"]
+;◆(仮)黒田12月1週or財前11月4週or四条10月2週or葛城宮10月4週or藤枝11月2週
+[if exp="((f.okeiko_month == 12 && f.okeiko_week == 1 && f.kuroda_au == 1) || (f.okeiko_month == 11 && f.okeiko_week == 4 && f.zaizen_au == 1) || (f.okeiko_month == 10 && f.okeiko_week == 2 && f.sijyou_au == 1) || (f.okeiko_month == 10 && f.okeiko_week == 4 && f.katuraginomiya_au == 1) || (f.okeiko_month == 11 && f.okeiko_week == 2 && f.hujieda_au == 1)) && f.fumi_toutyaku_asuka[3] == 0"]
 	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_3
