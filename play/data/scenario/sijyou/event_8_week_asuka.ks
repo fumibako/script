@@ -8,16 +8,78 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
+[if exp="sf.event_8_week_asuka == 1"]
+;背景変更:和紙風 桜色
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[else]
 ;【背景】広間
 [bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" time=0]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [wait time=10]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
-@layopt layer=message0 visible=true
-[current layer="message0"]
-[font color=white size=27]
+[endif]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです==============================
+[if exp="sf.event_8_week_asuka == 1"]
+*event_select
+
+八月『怪談・葉月の庭』：既読イベントです。[r]
+選択肢まで移動、又はイベントを終了しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=300 top=70 left=300 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=30]
+
+[link target=*jump_ok1]選択肢まで移動する[endlink][r]
+[r][r]
+[link target=*jump_to_end1]イベントを終了する[endlink][r]
+[r][r]
+[link target=*jump_no1]最初からイベントを見る[endlink][r]
+[resetfont]
+[s]
+*jump_ok1
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「選択肢まで移動する」[r]
+移動します。[p]
+[cm]
+@jump target=*seen_next2
+[s]
+
+*jump_to_end1
+[er]
+[current layer="message0"]
+[resetfont]
+[er]
+「イベントを終了する」[r]
+終了します。[p]
+[cm]
+[背景_庭_夜]
+@jump target=*end_Q
+[s]
+
+*jump_no1
+[er]
+[current layer="message0"]
+[resetfont]
+「最初からイベントを見る」[r]
+最初の場面に移動します。[p]
+[endif]
+;==========================================================
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+[if exp="sf.event_8_week_asuka == 1"]
+;【背景】広間
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" time=0]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[wait time=10]
+[endif]
+[current layer="message0"]
+[font color=white size=27]
 *seen1
 ――夏の半ば。[r]
 [名字]家では、親戚一同が集まり、[r]
@@ -819,7 +881,7 @@ $(".1_fore").empty();
 ;主人公目閉じ
 (でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
 #
-*seen_next2
+
 ;==========================================================
 [wait time=50]
 ;メッセージレイヤを全画面用に設定変更
@@ -1242,7 +1304,7 @@ _　お手紙から財前様は、とても現実的で[r]
 [endif]
 #
 彼の人を想えば、ずいぶんと心軽やかになったのであった。[p]
-
+*end_Q
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「落ち着いて眠れそうです。 おやすみなさいませ」[p]
 
@@ -1257,6 +1319,11 @@ _　お手紙から財前様は、とても現実的で[r]
 [暗転２]
 [wait time=1000]
 [暗転]
+[layopt layer=29 visible=true]
+;【話題入手】
+[話題入手 wadai_txt="『怪談の話題』を手に入れました"]
+;[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('怪談の話題',0,1,2,1,2,'a','','','','')"]
+[eval exp="sf.event_8_week_asuka = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
