@@ -53,6 +53,7 @@ $(".1_fore").empty();
 [endif]
 [cm]
 [背景_庭_夜]
+[イベントシーン構築]
 @jump target=*seen_next2
 [s]
 
@@ -64,6 +65,7 @@ $(".1_fore").empty();
 「イベントを終了する」[r]
 終了します。[p]
 [cm]
+[イベントシーン構築]
 [背景_庭_夜]
 @jump target=*end_Q
 [s]
