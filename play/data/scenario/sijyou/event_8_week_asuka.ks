@@ -74,9 +74,9 @@ $(".1_fore").empty();
 [er]
 [current layer="message0"]
 [resetfont]
-[イベントシーン構築ボタン無し版]
 「最初からイベントを見る」[r]
-最初の場面に移動します。[p]
+最初の場面に移動します。
+[p]
 [endif]
 ;==========================================================
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
