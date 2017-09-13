@@ -663,22 +663,25 @@
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_99
   [endif]
 ;=======================================================================================
+;100~103移動
+;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『怪談』(お見合い前) sijyou_fumi100 sijyou_kaidan_1
-[if exp="f.sijyou_fumi_toutyakumachi_kaidan == 0 && f.sijyou_omiai == 0 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[100] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kaidan == 0 && f.sijyou_omiai == 0 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[104] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_100
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_104
   [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『怪談』(お見合い後・・事件解決後1) sijyou_fumi100 sijyou_kaidan_1
-[if exp="f.sijyou_fumi_toutyakumachi_kaidan == 0 && f.sijyou_omiai == 1 && f.sijyou_event6 == 1 && f.fumi_toutyaku_sijyou[101] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kaidan == 0 && f.sijyou_omiai == 1 && f.sijyou_event6 == 1 && f.fumi_toutyaku_sijyou[105] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_101
+  ;このjump先ラベルを01_sijyou_fumi_toutyaku_shori_list.ks内の手紙ラベルと合わせていただくと、目的の手紙が届くようになると思います
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_105
   [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『怪談』(お見合い後・・事件解決後2 (1)を見ている) sijyou_fumi100 sijyou_kaidan_1
-[if exp="f.sijyou_fumi_toutyakumachi_kaidan == 0 && f.sijyou_omiai == 1 && f.sijyou_event6 == 1 && f.fumi_toutyaku_sijyou[102] == 0"]
+[if exp="f.sijyou_fumi_toutyakumachi_kaidan == 0 && f.sijyou_omiai == 1 && f.sijyou_event6 == 1 && f.fumi_toutyaku_sijyou[106] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
-   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_102
+   @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_106
   [endif]
 
 ;=======================================================================================
