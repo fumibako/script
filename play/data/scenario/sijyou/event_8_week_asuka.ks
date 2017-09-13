@@ -12,6 +12,7 @@ $(".1_fore").empty();
 ;背景変更:和紙風 桜色
 [bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
+[イベントシーン構築ボタン無し版]
 [else]
 ;【背景】プロローグ
 [bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=0]
@@ -44,7 +45,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [resetfont]
 [er]
-[イベントシーン構築]
+[メッセージウィンドウ上ボタン表示]
 「選択肢まで移動する」[r]
 移動します。[p]
 [if exp="sf.BGM=='ON'"]
@@ -62,7 +63,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [resetfont]
 [er]
-[イベントシーン構築]
+[メッセージウィンドウ上ボタン表示]
 「イベントを終了する」[r]
 終了します。[p]
 [cm]
@@ -75,10 +76,12 @@ $(".1_fore").empty();
 [current layer="message0"]
 [resetfont]
 「最初からイベントを見る」[r]
-最初の場面に移動します。
-[p]
+最初の場面に移動します。[p]
 [endif]
 ;==========================================================
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 @layopt layer=message0 visible=true
 [if exp="sf.event_8_week_asuka == 1"]
