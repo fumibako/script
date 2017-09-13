@@ -74,6 +74,7 @@ $(".1_fore").empty();
 [er]
 [current layer="message0"]
 [resetfont]
+[イベントシーン構築ボタン無し版]
 「最初からイベントを見る」[r]
 最初の場面に移動します。[p]
 [endif]
