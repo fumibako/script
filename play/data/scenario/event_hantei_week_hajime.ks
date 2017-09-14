@@ -15,7 +15,7 @@
 ;お見合い決定9_1(f.event_common[11])磯野相談f.event_common[12]各ｷｬﾗ散策ｱﾄﾞﾊﾞｲｽf.event_common[13]~[19]紗代子手紙[20]怪談[21]
 ;================================================
 ;common_asuka.ks;　飛鳥紗代子はじめての手紙 当初の手紙は5_2になっています
-[if exp="(f.okeiko_month == 5 && f.okeiko_week == 4) && f.event_common[20] == 0"]
+[if exp="(f.okeiko_month == 5 && f.okeiko_week == 2) && f.event_common[20] == 0"]
 	[eval exp="f.event_storage='common_asuka.ks'"]
 	[eval exp="f.event_target='*replay_common_ausuka'"]
 	[eval exp="f.event_type='talk'"]
