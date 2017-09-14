@@ -114,7 +114,7 @@ background:#beb7e8;
 	・　<a href="http://www.geocities.jp/redglass_palace/" style="text-decoration:none;">赤いガラスの宮殿 様</a><br>
 	・　<a href="http://www.s-hoshino.com/" style="text-decoration:none;">フリー素材屋Hoshino 写真提供者 usagi_s 様</a><br>
 	・　<a href="http://d.hatena.ne.jp/meiji_photo/">明治村画像庫2 様</a><br>
-	・　otomegtx 様<br>
+	・　<a href="http://otomegtx.yorozu.us/pic.html">otomegtx 様</a><br>
 	・　<a href="http://photo.v-colors.com/" title="PHOTO STOCKER -高解像度の無料写真素材-へのリンク" target="_blank">PHOTO STOCKER</a> <a href="http://photo.v-colors.com/329.html">YUKI 様</a><br>
 	
                         
@@ -128,6 +128,7 @@ background:#beb7e8;
 , <a href="https://www.flickr.com/photos/tatsumine/3961236021/">Tatsumine Sugiura 様</a>
 , <a href="https://www.flickr.com/photos/90664717@N00/18954137963/">Akuppa John Wigham 様</a>
 , <a href="https://www.flickr.com/photos/wallslide/138688451/">Jeremy Hall 様</a>
+, <a href="https://www.flickr.com/photos/ograndepet/8385420150/">Peterson Fialho de Carvalho 様</a>
 <br>
 	・　<a href="https://www.flickr.com/">flickr</a> : 
 	<a href="https://www.flickr.com/photos/furbychan/103977041/">Furbychan 様</a>
