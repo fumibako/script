@@ -341,10 +341,16 @@ $(".1_fore").empty();
 [endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
+[wait time=10]
 「バザーでお会いした幸代様の[r]
 [sp]"うまく伝わらなくても伝えたい"という[r]
 [sp]誠実な姿勢に幸せが訪れる予感を感じました」[p]
-
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 「もし、幸代様が[華衣]さんを想うなら、[r]
 [sp]もう一度、勇気を出してみては如何でしょうか？」[p]
 
@@ -450,7 +456,8 @@ $(".1_fore").empty();
 [endif]
 #
 [暗転２ storage="bg/bg_syanderia.jpg"]
-[四条退場]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 [四条_隣_退場]
 ;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
