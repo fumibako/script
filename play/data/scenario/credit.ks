@@ -127,8 +127,9 @@ background:#beb7e8;
 , <a href="https://www.flickr.com/photos/28481088@N00/1503901616/">tanakawho 様</a>
 , <a href="https://www.flickr.com/photos/tatsumine/3961236021/">Tatsumine Sugiura 様</a>
 , <a href="https://www.flickr.com/photos/90664717@N00/18954137963/">Akuppa John Wigham 様</a>
-, <a href="https://www.flickr.com/photos/wallslide/138688451/">Jeremy Hall 様</a>
-, <a href="https://www.flickr.com/photos/ograndepet/8385420150/">Peterson Fialho de Carvalho 様</a>
+, <a href="https://www.flickr.com/photos/wallslide/138688451/">Jeremy Hall 様</a><br>
+・　<a href="https://www.flickr.com/">flickr</a> :
+ <a href="https://www.flickr.com/photos/ograndepet/8385420150/">Peterson Fialho de Carvalho 様</a>
 <br>
 	・　<a href="https://www.flickr.com/">flickr</a> : 
 	<a href="https://www.flickr.com/photos/furbychan/103977041/">Furbychan 様</a>
