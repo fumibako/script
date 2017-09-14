@@ -366,7 +366,7 @@ $(".1_fore").empty();
 [wait time=10]
 「まずは、[華衣]様と話せるように親を説得しなくては！」[p]
 #
-[chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 幸代様は、重たげなスカートを持ち上げると、[r]
 風のようにダンスホールを抜け出していった。[p]
