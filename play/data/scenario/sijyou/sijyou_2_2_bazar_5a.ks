@@ -73,6 +73,9 @@ $(".1_fore").empty();
 [sp]そうしたら華織様も……)[p]
 #
 きっと私を放っておいたりしないかもしれない。[r]
+;↓目：横目 [主人公横目]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
 そんな事を少し考えつつも、ダンスを終えようとする男女に[r]
 再度、目を向けた。[p]
 
@@ -170,7 +173,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
 [wait time=10]
 「先ほどの殿方とのダンスは素敵でしたわ。[r]
-[sp]私も、早くより上手く踊れる様になりたいです」[p]
+[sp]私も早く、より上手く踊れる様になりたいです」[p]
 [whosay name=四条幸代]
 「いえ、[名字]様の方が……」[p]
 
@@ -207,10 +210,16 @@ $(".1_fore").empty();
 そう言って幸代様は、[r]
 ぼんやりと、先ほどの御一緒にダンスをされていた男性に目を向ける。[p]
 #
+;↓目：横目 [主人公横目]
+[chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
+[wait time=10]
 私も幸代様の視線を追うと、[r]
 その男性は、既に別の女性と楽しげに踊っていた。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：伏目 [主人公目伏]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 「そうでしたのね 」[p]
 [whosay name=四条幸代]
 「私も、できればお慕いできる方とダンスを踊ってみたいです」[p]
@@ -220,7 +229,7 @@ $(".1_fore").empty();
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-(やはり、幸代様は、[華衣]様のことを……？)[p]
+(やはり、幸代様は、[華衣]さんのことを……？)[p]
 
 #
 ;↓目：伏目 [主人公目伏]
@@ -438,9 +447,11 @@ $(".1_fore").empty();
 「では、踊りましょうか」[p]
 [endif]
 #
-[四条退場準備 storage="bg/bg_syanderia.jpg"]
+[暗転２ storage="bg/bg_syanderia.jpg"]
+[四条退場]
 ;【背景】シャンデリア　実際にダンスで動かせないので想像で補ってもらう　仮背景
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_syanderia.jpg" time=50]
+[暗転２終了]
 ;共通
 華織様の側で手を取ると、もう一度ダンスを踊った。[p]
 
