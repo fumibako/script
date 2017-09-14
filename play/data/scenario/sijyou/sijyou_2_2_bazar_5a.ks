@@ -355,16 +355,24 @@ $(".1_fore").empty();
 [sp]もう一度、勇気を出してみては如何でしょうか？」[p]
 
 [whosay name=四条幸代]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
 「はい。[r]
 [sp]お二人のダンスをされている姿を見て、目が覚めました。[r]
 [sp]勇気を出してみます」[p]
 
 [whosay name=四条幸代]
+[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
+[wait time=10]
 「まずは、[華衣]様と話せるように親を説得しなくては！」[p]
 #
+[chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
+[wait time=10]
 幸代様は、重たげなスカートを持ち上げると、[r]
 風のようにダンスホールを抜け出していった。[p]
-
+;↓目：伏目 [主人公目伏]
+[chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
