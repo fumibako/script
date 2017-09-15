@@ -17,6 +17,9 @@
 ;=================================================================================_
 [if exp="sf.common_asuka == 1"]
 *event_select
+;背景変更:和紙風 桜色
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
 五月『飛鳥紗代子・はじめての手紙』：既読イベントです。[r]
 イベントを見ますか？、又はイベントを終了しますか？[r]
 ;選択肢用レイヤーを追加
@@ -35,6 +38,7 @@
 [current layer="message0"]
 [resetfont]
 [er]
+[eval exp="tf.event_skip = 1"]
 「イベントを終了する」[r]
 終了します。[p]
 [cm]
@@ -152,7 +156,7 @@ f.fumi_toutyaku_asuka[0] = 1;
 ;[sp]私にとって、それは嬉しい事だったわ)[p]
 *seen_end
 ;スキップ地点
-[if exp="f.okeiko_gamen == true && sf.common_asuka == 1"]
+[if exp="f.okeiko_gamen == true && sf.common_asuka == 1 && tf.event_skip == 1"]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 ;[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
 ;[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
