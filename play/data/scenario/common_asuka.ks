@@ -5,7 +5,13 @@
 ;=================================================================================_
 [freeimage layer = 1]
 [wait time=10]
+[if exp="sf.common_asuka == 1"]
+;背景変更:和紙風 桜色
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[else]
 [背景_お稽古部屋]
+[endif]
 ;[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
@@ -17,9 +23,6 @@
 ;=================================================================================_
 [if exp="sf.common_asuka == 1"]
 *event_select
-;背景変更:和紙風 桜色
-[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
-[eval exp="f.haikei_credit=''"]
 五月『飛鳥紗代子・はじめての手紙』：既読イベントです。[r]
 イベントを見ますか？、又はイベントを終了しますか？[r]
 ;選択肢用レイヤーを追加
