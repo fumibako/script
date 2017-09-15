@@ -3,8 +3,6 @@
 [call target=*bonyou storage="sijyou/preload_sijyou.ks"]
 [stopbgm]
 ;=================================================================================_
-;[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
-;【背景】主人公邸 庭の見える部屋：冬
 [freeimage layer = 1]
 [wait time=10]
 [背景_お稽古部屋]
@@ -16,6 +14,42 @@
 [wait time=10]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+;=================================================================================_
+[if exp="sf.common_asuka == 1"]
+*event_select
+五月『飛鳥紗代子・はじめての手紙』：既読イベントです。[r]
+イベントを見ますか？、又はイベントを終了しますか？[r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=300 top=70 left=300 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=30]
+
+[link target=*jump_to_end1]イベントを終了する[endlink][r]
+[r][r]
+[link target=*jump_ok1]最初からイベントを見る[endlink][r]
+[resetfont]
+[s]
+*jump_to_end1
+[er]
+[current layer="message0"]
+[resetfont]
+[er]
+「イベントを終了する」[r]
+終了します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+*jump_ok1
+[er]
+[current layer="message0"]
+[resetfont]
+[er]
+「最初からイベントを見る」[r]
+最初の場面に移動します。[p]
+[cm]
+[背景_お稽古部屋]
+[endif]
 ;=================================================================================_
 [whosay name="磯野" color="dimgray"]
 「飛鳥紗代子様から、お手紙を頂戴しました」[p]
@@ -117,8 +151,26 @@ f.fumi_toutyaku_asuka[0] = 1;
 ;（飛鳥家の奥様のお立場上、来て下さったとしても、[r]
 ;[sp]私にとって、それは嬉しい事だったわ)[p]
 *seen_end
-[イベントシーン終了]
+;スキップ地点
+[if exp="f.okeiko_gamen == true && sf.common_asuka == 1"]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+;[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
+;[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「はじめてのお手紙」飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/asuka_fumi.ks");
+f.fumi_list_all_target.push("*0");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(0);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[0] = 1;
+[endscript]
+[endif]
 
+[eval exp="sf.common_asuka = 1"]
+
+[イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
