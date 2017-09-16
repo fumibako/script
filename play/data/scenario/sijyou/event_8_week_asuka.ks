@@ -1,5 +1,6 @@
 *replay_event_8_week_asuka
 [stopbgm]
+[eval exp="sf.event_8_week_asuka = 0"]
 [call target=*asuka storage="sijyou/preload_sijyou.ks"]
 [wait time=50]
 [iscript]
@@ -73,7 +74,6 @@ $(".1_fore").empty();
 [endif]
 
 *jump_no1
-
 [if exp="sf.event_8_week_asuka == 1"]
 [er]
 [current layer="message0"]
@@ -114,39 +114,6 @@ $(".1_fore").empty();
 *seen2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お疲れ様です」[p]
-[if exp="tf.test_gamen == true"]
-テストページからプレイしています。怪談シーンに移動しますか？[r]
-
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font color=white size=32]
-
-[link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
-[link target=*jump_no]い　い　え[endlink][r]
-[resetfont]
-[s]
-
-*jump_ok
-[current layer="message0"]
-[resetfont]
-[stopbgm]
-#
-「はい」[r]
-移動します。[p]
-[cm]
-@jump target=*seen_next
-[s]
-
-*jump_no
-[current layer="message0"]
-「いいえ」[r]
-そのままはじめます。[p]
-[cm]
-[endif]
-
 [whosay name="飛鳥紗代子"]
 「[名前]さんもお疲れ様です」[p]
 #
