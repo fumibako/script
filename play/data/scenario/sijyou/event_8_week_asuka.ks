@@ -20,7 +20,7 @@ $(".1_fore").empty();
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです==============================
 [if exp="sf.event_8_week_asuka != 1"]
-@jump start=*seen_start
+@jump start=*seen1
 [endif]
 ;ifの入れ子、endifが探せていないので下記をスキップする
 ;==========================================================
@@ -76,12 +76,14 @@ $(".1_fore").empty();
 「最初からイベントを見る」[r]
 最初の場面に移動します。[p]
 ;==========================================================
-*seen_start
+*seen1
+
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 @layopt layer=message0 visible=true
+あ[s]
 [if exp="sf.event_8_week_asuka == 1"]
 ;【背景】広間
 [bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" time=0]
