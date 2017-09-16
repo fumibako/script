@@ -6,21 +6,26 @@
 [iscript]
 $(".1_fore").empty();
 [endscript]
-[if exp="sf.event_8_week_asuka == 1"]
-;背景変更:和紙風 桜色
-[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
-[eval exp="f.haikei_credit=''"]
-[イベントシーン構築ボタン無し版]
-[else]
+
+[if exp="sf.event_8_week_asuka != 1"]
 ;【背景】プロローグ
 [bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=0]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [wait time=10]
+[else]
+;背景変更:和紙風 桜色
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[イベントシーン構築ボタン無し版];背景変更:和紙風 桜色
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[eval exp="f.haikei_credit=''"]
+[イベントシーン構築ボタン無し版]
 [endif]
+
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです==============================
 [if exp="sf.event_8_week_asuka != 1"]
-@jump start=*seen1
+@jump start=*seen_str
 [endif]
 ;ifの入れ子、endifが探せていないので下記をスキップする
 ;==========================================================
@@ -76,8 +81,7 @@ $(".1_fore").empty();
 「最初からイベントを見る」[r]
 最初の場面に移動します。[p]
 ;==========================================================
-*seen1
-
+*seen_str
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
