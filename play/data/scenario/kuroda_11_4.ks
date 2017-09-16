@@ -417,6 +417,7 @@
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
 [wait time=10]
 （もう、手放して、無いのです）[p]
+#
 そう口に出しそうになり、うつむいて言葉を飲み込んだ。[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_11_4_scene5==undefined"]
