@@ -19,7 +19,11 @@ $(".1_fore").empty();
 [endif]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです==============================
-[if exp="sf.event_8_week_asuka == 1"]
+[if exp="sf.event_8_week_asuka != 1"]
+@jump start=*seen_start
+[endif]
+;ifの入れ子、endifが探せていないので下記をスキップする
+;==========================================================
 *event_select
 八月『怪談・葉月の庭』：既読イベントです。[r]
 選択肢まで移動、又はイベントを終了しますか？[r]
@@ -35,11 +39,7 @@ $(".1_fore").empty();
 [link target=*jump_no1]最初からイベントを見る[endlink][r]
 [resetfont]
 [s]
-[endif]
-
-
 *jump_ok1
-[if exp="sf.event_8_week_asuka == 1"]
 [er]
 [current layer="message0"]
 [resetfont]
@@ -47,7 +47,7 @@ $(".1_fore").empty();
 [メッセージウィンドウ上ボタン表示]
 「選択肢まで移動する」[r]
 移動します。[p]
-[if exp="sf.BGM=='ON'"]
+[if exp="sf.BGM == 'ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
 [playbgm storage="sittori_umikaze.ogg" loop=true]
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
@@ -56,10 +56,8 @@ $(".1_fore").empty();
 [背景_庭_夜]
 @jump target=*seen_next2
 [s]
-[endif]
 
 *jump_to_end1
-[if exp="sf.event_8_week_asuka == 1"]
 [er]
 [current layer="message0"]
 [resetfont]
@@ -71,17 +69,14 @@ $(".1_fore").empty();
 [背景_庭_夜]
 @jump target=*end_Q
 [s]
-[endif]
-
 *jump_no1
-[if exp="sf.event_8_week_asuka == 1"]
 [er]
 [current layer="message0"]
 [resetfont]
 「最初からイベントを見る」[r]
 最初の場面に移動します。[p]
-[endif]
 ;==========================================================
+*seen_start
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
