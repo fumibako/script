@@ -1,6 +1,6 @@
 *replay_event_8_week_asuka
 [stopbgm]
-[eval exp="sf.event_8_week_asuka = 0"]
+;テスト用[eval exp="sf.event_8_week_asuka = 0"]
 [call target=*asuka storage="sijyou/preload_sijyou.ks"]
 [wait time=50]
 [iscript]
