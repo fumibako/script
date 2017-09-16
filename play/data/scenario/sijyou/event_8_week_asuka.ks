@@ -16,9 +16,6 @@ $(".1_fore").empty();
 ;背景変更:和紙風 桜色
 [bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-;背景変更:和紙風 桜色
-[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
-[eval exp="f.haikei_credit=''"]
 [イベントシーン構築ボタン無し版]
 [endif]
 [プリロード画面消去]
@@ -86,12 +83,10 @@ $(".1_fore").empty();
 [wait time=50]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 @layopt layer=message0 visible=true
-[if exp="sf.event_8_week_asuka == 1"]
 ;【背景】広間
 [bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" time=0]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [wait time=10]
-[endif]
 [current layer="message0"]
 [font color=white size=27]
 *seen1
