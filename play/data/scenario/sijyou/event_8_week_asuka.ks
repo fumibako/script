@@ -6,7 +6,7 @@
 [iscript]
 $(".1_fore").empty();
 [endscript]
-
+[イベントシーン構築ボタン無し版]
 [if exp="sf.event_8_week_asuka != 1"]
 ;【背景】プロローグ
 [bg wait=true storage="../fgimage/bg/bg_prologue.jpg" time=0]
@@ -16,15 +16,16 @@ $(".1_fore").empty();
 ;背景変更:和紙風 桜色
 [bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-[イベントシーン構築ボタン無し版];背景変更:和紙風 桜色
+;背景変更:和紙風 桜色
 [bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-[イベントシーン構築ボタン無し版]
 [endif]
-
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです==============================
 [if exp="sf.event_8_week_asuka != 1"]
+[iscript]
+aleat("ここは通った");
+[endscript]
 @jump start=*seen_str
 [endif]
 ;ifの入れ子、endifが探せていないので下記をスキップする
