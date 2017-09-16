@@ -168,7 +168,7 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
 （飛鳥伯父様、[r]
-[sp]まだ紗代子さんに対して怒っていらっしゃるのかしら？)[p]
+[sp]まだ紗代子さんに対して怒っていらっしゃるのかしら？）[p]
 
 [whosay name="磯野" color="dimgray"]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
@@ -232,7 +232,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ふう。[r]
 [sp]このお部屋、行事がない限りは使わないけれど、[r]
-[sp]天井のシミがどことなく顔にみえて、近寄りがたいのだったわ)[p]
+[sp]天井のシミがどことなく顔にみえて、近寄りがたいのだったわ）[p]
 [whosay name="飛鳥紗代子"]
 「どうしましたの、[名前]さん？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -241,7 +241,7 @@ $(".1_fore").empty();
 [wait time=10]
 「いえ……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(いけない、せっかく紗代子さん達がいらっしゃるのに)[p]
+（いけない、せっかく紗代子さん達がいらっしゃるのに）[p]
 [autosave]
 #
 実は子供の頃から、この部屋の雰囲気が苦手だった。[p]
@@ -404,7 +404,7 @@ $(".1_fore").empty();
 ;==========================================================
 *seen7
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(今日に限って、何で、こんなに熱いのかしら？)[p]
+（今日に限って、何で、こんなに熱いのかしら？）[p]
 ;===================================================
 [if exp="tf.test_gamen == true"]
 テストページからプレイしています。選択肢に移動しますか？[r]
@@ -600,7 +600,7 @@ $(".1_fore").empty();
 と思った途端、私の背筋がゾッと寒くなりだした。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そこまで計算された怪談なのかしら……？)[p]
+（そこまで計算された怪談なのかしら……？）[p]
 
 [whosay name="飛鳥紗代子"]
 「[ruby text=みな]皆の噂によると[ruby text=かき]杜[ruby text=つばた]若が見事らしいですわ。[r]
@@ -647,12 +647,12 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;困り
 （もしかしたら、お父様や磯野なら、[r]
-[sp]詳しく知ってるかもしれないわ……)[p]
+[sp]詳しく知ってるかもしれないわ……）[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;ふぅ
 （そういえば、昔、夏の寝苦しい日に寝れないと駄々を[ruby text=こ]捏ねた時、[r]
-[sp]お父様が恐ろしい"昔話"をされましたね)[p]
+[sp]お父様が恐ろしい"昔話"をされましたね）[p]
 
 #   
 ;目閉じ憂
@@ -672,7 +672,7 @@ $(".1_fore").empty();
 気になってしまうと、こうも記憶が蘇ってきてしまう。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(やだわ……もう充分なのに)[p]
+（やだわ……もう充分なのに）[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「私、先に寝ますわね！　おやすみなさいませ！」[p]
@@ -749,7 +749,7 @@ $(".1_fore").empty();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （天井のシミが、[r]
-[sp]お顔に見えて話を聞いてなかったなんて言えないわ)[p]
+[sp]お顔に見えて話を聞いてなかったなんて言えないわ）[p]
 ;皆は表立っては言いませんからね。 少し分かりにくかったかもしれませんね……[p]
 
 [whosay name="飛鳥紗代子"]
@@ -775,7 +775,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、三年ほど前に紗代子さんと出会った時、[r]
 [sp]"まだ紗代子伯母さんとは呼ばないでね"……と言われて、[r]
-[sp]そのまま、お名前で呼んでますが……)[p]
+[sp]そのまま、お名前で呼んでますが……）[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （伯父様の悲しげな表情は、そういった理由があるのですね）[p]
@@ -787,9 +787,9 @@ $(".1_fore").empty();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;目閉じ照れなし
-（恋ですか……)[p]
+（恋ですか……）[p]
 ;藤枝 葛城宮↑
-;(共に歩む方との恋……)
+;（共に歩む方との恋……）
 
 [whosay name="飛鳥紗代子"]
 「生きて、恋をして、明日も生きていくの。[r]
@@ -801,7 +801,7 @@ $(".1_fore").empty();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （紗代子さんは、普段、お話に夢中になる方なのに[r]
-[sp]本当は、真面目で落ち着いた方なのね)[p]
+[sp]本当は、真面目で落ち着いた方なのね）[p]
 
 [whosay name="飛鳥紗代子"]
 「あら、"生きてるものに勝るものなし"……でしたかしら？[r]
@@ -810,13 +810,13 @@ $(".1_fore").empty();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;汗
-(本当に落ちついていらっしゃるのね……)[p]
+（本当に落ちついていらっしゃるのね……）[p]
 
 [whosay name="猫"]
 「にゃーお」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(！！)[p]
+（！！）[p]
 
 [whosay name="飛鳥紗代子"]
 「あら、お猫様だったのね」[p]
@@ -851,11 +851,11 @@ $(".1_fore").empty();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;汗ニコ
-(崖に落ちる瞬間……)[p]
+（崖に落ちる瞬間……）[p]
 [autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公目閉じ
-(でも、私は、あの時……彼の人のことを考えたのかもしれない)[p]
+（でも、私は、あの時……彼の人のことを考えたのかもしれない）[p]
 #
 *seen_next2
 ;==========================================================
@@ -887,10 +887,10 @@ $(".1_fore").empty();
 [freeimage layer=29 time=0]
 @layopt layer=message0 visible=true
 @layopt layer=fix visible=true
-[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 ;==========================================================
 #
-私の心に浮かんだ、彼の人を想えば……[p]
+私の心に浮かんだ、彼の人を想えば……。[p]
 ;========================================================================
 [autosave]
 ;要望が多いのではじめからの表示にします。　調整中なので全ボタン表示
@@ -1219,7 +1219,7 @@ _　お手紙から財前様は、とても現実的で[r]
 [current layer="message0"]
 [font color=white size=27]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
-黒田様へ送る、手紙の内容を考えながら、[r]
+黒田様へ送る、お手紙の内容を考えながら、[r]
 目を閉じる。[p]
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
@@ -1227,24 +1227,26 @@ _　お手紙から財前様は、とても現実的で[r]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
 ――暮夏のみぎり[r]
-私は、友人であり伯母である方から、[r]
+[sp]私は、友人であり伯母である方から、[r]
 ゆっくりとお話を伺いました。[r]
 夏らしく、怪談のような話で怖くなって[r]
 しまいました。[r]
-そうして、ふと貴方のことが思い浮かびました。[p]
-貴方とご縁があり、こうして手紙を交わしている期間は[r]
+[sp]そうして、ふと黒田様のことが思い浮かびました。[p]
+[sp]黒田様とこうして手紙を交わしている期間は[r]
 あと、どれくらいになるのでしょうか。[r]
 もしかしたら、もうあと僅かなのかもしれませんし[r]
 もっと続くのかもしれません。[p]
-[sp][r][r]
-お手紙からは、黒田様が研究に真摯に[r]
-取り組んでおられる様子や[r]
-自然に親しんでおられることが伝わって[r]
-私も頑張ろう、と勇気づけられました。[p]
-お庭の植物や色々な物事が[r]
-これまでと違ったように見えるようになりました。[r]
-……私は、貴方と……[p]
+[sp]このごろは、植物に思いを巡らせることが増えて[r]
+まいりました。[r]
+[r]
+[sp]伯母のお話には杜若が出てきました。[r]
+池の中に咲く杜若は、その遠さもあって不思議な魅力を[r]
+持つように思います。[r]
+[r]
+[sp]黒田様は池や水辺の植物もお好きでしょうか。[r]
+[sp]……[p]
 ;仮文直してください！　どう頑張ってもムリです
+;丁寧に考えてくささって、ありがとうございます。案を一部いただき、この時期の距離感を意識した文章にさせていただきました◆jsYiJcqRkk
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [resetfont]
 @layopt layer=message0 visible=false
@@ -1258,9 +1260,9 @@ _　お手紙から財前様は、とても現実的で[r]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（少し感傷的になっているかもしれないですね……）[p]
+（お手紙を考えると、時を忘れそうになるわ……）[p]
 #
-浮かんだ手紙の内容は、心に押し留めたが、[r]
+浮かんだ内容は、心に押し留めたが、[r]
 黒田様へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
@@ -1274,9 +1276,9 @@ _　お手紙から財前様は、とても現実的で[r]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;藤枝の好感度が高い場合、f.event_hujieda[17]進行不可手紙　７月のｲﾍﾞﾝﾄf.event_hujieda[4]
 [if exp="f.haduki_hujieda == 1 && (f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start ==1) || (f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1)"]
-(明日も、お稽古頑張りましょう)[p]
+（明日も、お稽古頑張りましょう）[p]
 [else]
-(明日も、手紙を出しましょう)[p]
+（明日も、お手紙を出しましょう）[p]
 [endif]
 #
 彼の人を想えば、ずいぶんと心軽やかになったのであった。[p]
