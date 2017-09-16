@@ -27,7 +27,6 @@ $(".1_fore").empty();
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=30]
-
 [link target=*jump_ok1]選択肢まで移動する[endlink][r]
 [r][r]
 [link target=*jump_to_end1]イベントを終了する[endlink][r]
@@ -35,9 +34,12 @@ $(".1_fore").empty();
 [link target=*jump_no1]最初からイベントを見る[endlink][r]
 [resetfont]
 [s]
-*jump_ok1
-[er]
+[endif]
 
+
+*jump_ok1
+[if exp="sf.event_8_week_asuka == 1"]
+[er]
 [current layer="message0"]
 [resetfont]
 [er]
@@ -53,8 +55,10 @@ $(".1_fore").empty();
 [背景_庭_夜]
 @jump target=*seen_next2
 [s]
+[endif]
 
 *jump_to_end1
+[if exp="sf.event_8_week_asuka == 1"]
 [er]
 [current layer="message0"]
 [resetfont]
@@ -66,8 +70,11 @@ $(".1_fore").empty();
 [背景_庭_夜]
 @jump target=*end_Q
 [s]
+[endif]
 
 *jump_no1
+
+[if exp="sf.event_8_week_asuka == 1"]
 [er]
 [current layer="message0"]
 [resetfont]
