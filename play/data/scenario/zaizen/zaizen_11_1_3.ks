@@ -326,7 +326,7 @@ jumpします。[p]
 
 *seen_end1
 ;====================================================================================
-[eval exp="sf.event_zaizen_11_3 = 1"]
+[eval exp="sf.event_zaizen_11_1 = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
