@@ -321,7 +321,7 @@ $(".test_txt").remove();
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
 [ptext name="num_times" text="葛城宮ルート既プレイ数(ED除く)＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
-[ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=350 y=85 color=darkslateblue overwrite=true]
+[ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=360 y=85 color=darkslateblue overwrite=true]
 [ptext text="/17" layer=26 size=17 x=400 y=85 color=darkslateblue]
 [if exp="tf.event_Number_of_times > 17"]
 [ptext text="コンプリート！　プレイありがとうございます。" layer=26 size=17 x=500 y=85 color=darkslateblue]
