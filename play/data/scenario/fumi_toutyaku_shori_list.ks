@@ -726,7 +726,25 @@ f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
 f.fumi_toutyaku_zaizen[29]=1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
-
+;=============================================
+;『怪談』
+;=============================================
+*fumi_toutyaku_zaizen_30
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「怪談」　財前 美彬";
+f.fumi_zaizen_title_new=f.okeiko_month_kansuuji+"「怪談」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("zaizen/zaizen_fumi.ks");
+f.fumi_list_all_target.push("*zaizen_fumi_kaidan");
+f.fumi_list_all_location_taishou.push(1);
+f.fumi_list_all_location_fumi.push(32);
+f.fumi_list_zaizen_location_fumi.push(32);
+f.fumi_list_zaizen_title.push(f.fumi_zaizen_title_new);
+f.fumi_list_zaizen_target.push("*zaizen_fumi_kaidan");
+f.zaizen_fumi_henjimachi=f.zaizen_fumi_henjimachi+1;
+f.fumi_toutyaku_zaizen[31]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 ;=============================================
 ;◆イベント中に届く手紙◆ イベントスクリプト中に貼り付け予定分です
 ;=============================================
