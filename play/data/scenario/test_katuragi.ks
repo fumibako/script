@@ -380,12 +380,12 @@ $(".test_txt").remove();
 ;katuraginomiya_bazaar		sf.event_katuragi_bazar
 ;katuraginomiya_sansaku1	sf.event_katuragi_sansaku1
 ;katuraginomiya_sansaku2 sf.event_katuragi_sansaku2
-[wait time=9000]
+[glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
 [cm]
+[s]
+*end_check_event
 [freeimage layer = 26]
 @jump target=test
-[s]
-
 
 *auto
 [autostart]
