@@ -150,7 +150,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 #
 汚職事件を理由に今原中将をはじめ、軍国主義の者は除名処分が[r]
 検討された。[p]
-
+[autosave]
 [葛城宮目を閉じる]
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「彼らは、汚職事件で墓穴を掘りました。[r]
@@ -191,12 +191,12 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [葛城宮憂い]
 #
-夢を持っていた。　今志半ばで終わろうとしている。[r]
-悔いはあるそれでも自分が決めた事だから潔く身を引こう。[r]
-……そして彼女もこんな私に付き合う必要はない。[p]
+夢を持っていた。　今、志半ばで終わろうとしている。[r]
+悔いはある。　それでも自分が決めた事だから潔く身を引こう。[r]
+……そして彼女も、こんな私に付き合う必要はない。[p]
 
 *seen3
-
+[eval exp="sf.event_katuragi_10_3 = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
