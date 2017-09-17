@@ -275,7 +275,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [ptext text="9月1週" layer=26 size=17 x=100 y=220 color=darkslateblue visible=true]
 [ptext text="&sf.event_katuragi_9_1" layer=26 size=17 x=400 y=220 color=darkslateblue visible=true]
 [ptext text="9月3週" layer=26 size=17 x=100 y=240 color=darkslateblue visible=true]
-[ptext text="&sf.event_zaizen_9_3" layer=26 size=17 x=400 y=240 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_9_3" layer=26 size=17 x=400 y=240 color=darkslateblue visible=true]
 [ptext text="9月4週" layer=26 size=17 x=100 y=260 color=darkslateblue visible=true]
 [ptext text="&sf.event_katuragi_9_4" layer=26 size=17 x=400 y=260 color=darkslateblue visible=true]
 [ptext text="10月2週" layer=26 size=17 x=100 y=280 color=darkslateblue visible=true]
@@ -321,6 +321,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [wait time=5000]
 [cm]
 [freeimage layer = 26]
+@jump target=test
 [s]
 
 
