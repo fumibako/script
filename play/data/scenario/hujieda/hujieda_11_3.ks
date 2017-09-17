@@ -329,6 +329,7 @@ $('.list').remove();
 
 [fadeoutbgm time=3000]
 
+[eval exp="sf.event_hujieda_11_3 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
