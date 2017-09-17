@@ -309,6 +309,7 @@
 [主人公退場]
 [暗転１]
 [fadeoutbgm time=3000]
+[eval exp="sf.event_zaizen_sansaku_2_1 = 1"]
 ;====================================================
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
