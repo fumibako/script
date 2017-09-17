@@ -1214,6 +1214,33 @@
 	[s]
 [endif]
 [手紙財前読了 fumi_number=]
+;=============================================
+;『怪談』
+;=============================================
+*zaizen_fumi_kaidan
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+『怪談』[p]
+[endif]
+[手紙財前 fumi_number=]
+[名字]　[名前]様へ[l][r]
+
+
+怪談についての話題です。[r]
+
+
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[resetfont]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+	[eval exp="f.midoku_list_hairetsu[1][32] = 0;"]
+	[freeimage layer = 29]
+	@jump storage=&f.viewing_storage target=&f.viewing_target
+	[s]
+[endif]
+[手紙財前読了 fumi_number=]
+
 
 
 [イベントシーン終了]
