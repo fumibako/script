@@ -29,7 +29,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [wait time=10]
 [ptext text="葛城宮 晴仁ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
 [ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
-[ptext text="作業終了＝散策イベント2。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext name="test_txt" text="作業終了＝散策イベント2。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
 *button_BGM
 [if exp="sf.BGM=='OFF'"]
@@ -252,6 +252,9 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [s]
 
 *check_event
+[iscript]
+$(."test_txt").remove();
+[endscript]
 [eval exp="tf.ending_Number_of_times = 0"]
 [eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
@@ -265,7 +268,6 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 ;[ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
 [ptext text="6月3週・Ev1" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
 [ptext text=&sf.event_katuragi_event_1 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
-
 [ptext text="7月2週夢" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
 [ptext text=&sf.event_katuragi_6_1 layer=26 size=17 x=400 y=160 color=darkslateblue visible=true]
 [ptext text="7月4週・Ev2" layer=26 size=17 x=100 y=180 color=darkslateblue visible=true]
@@ -318,7 +320,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 ;katuraginomiya_bazaar		sf.event_katuragi_bazar
 ;katuraginomiya_sansaku1	sf.event_katuragi_sansaku1
 ;katuraginomiya_sansaku2 sf.event_katuragi_sansaku2
-[wait time=5000]
+[wait time=9000]
 [cm]
 [freeimage layer = 26]
 @jump target=test
