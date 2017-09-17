@@ -456,7 +456,7 @@
 [葛城宮目閉じ]
 [葛城宮口ムッ]
 「ああ、頼んだ」[p]
-
+[eval exp="sf.event_katuragi_event_2 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_katuragi.ks"
