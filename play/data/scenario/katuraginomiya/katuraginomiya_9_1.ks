@@ -516,7 +516,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 【主務事務官・宗秩寮総裁】[r]
 「[ruby text=かしこ]畏き[sp]あたりの[ruby text=おぼ]思し[ruby text=め]召しにより、[r]
 [sp]ご当家の長女・[名前]姫を葛城宮王妃に[r]
-お[ruby text=むか]迎え申し上げたい」[r]
+[sp]お[ruby text=むか]迎え申し上げたい」[r]
 [r]
 [r]
 【[emb exp="sf.father_name"]】[r]
