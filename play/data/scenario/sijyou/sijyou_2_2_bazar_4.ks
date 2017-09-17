@@ -524,6 +524,9 @@ $(".29_fore").empty();
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[四条_隣_退場]
+[四条サイズ通常_羽織]
+[四条憂い]
 [表示開始 time=300]
 休憩室に行くことにした。
 [autosave]
