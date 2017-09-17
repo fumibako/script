@@ -417,6 +417,8 @@
 #
 そう感じて心が温かくなった。[p]
 
+[eval exp="sf.event_katuragi_sansaku2 = 1"]
+
 ;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 [イベントシーン終了２]
