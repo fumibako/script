@@ -38,7 +38,7 @@
 [wait time=10]
 [p]
 
-;12_2にて103行目あたりででfadeout
+;12_2にてfadeout
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -49,6 +49,37 @@
 「いけません！[r]
 [sp]銀行の前では人が暴動一歩手前なのですよ？[r]
 [sp]巻き込まれたらどうするのですか？」[p]
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。シナリオ終点にjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_end1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
 
 ;【立ち絵】主人公目閉じ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -195,6 +226,8 @@
 
 [主人公通常]
 （けれど、財前様はこの現状と戦っているわ！）[p]
+
+*seen_end1
 [eval exp="sf.event_zaizen_12_2 = 1"]
 [イベントシーン終了]
 ;=================================================================================================
