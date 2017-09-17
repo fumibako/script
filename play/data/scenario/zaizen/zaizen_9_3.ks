@@ -38,6 +38,38 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……）[p]
 
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。シナリオ終点にjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_end1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+
 [whosay name="ばあや" color="#916565"]
 「そんなに鏡を何度も確かめなくとも、[r]
 [sp]お嬢様は、どこもおかしくありません、
@@ -682,6 +714,7 @@
 [wait time=10]
 [暗転１]
 [freeimage layer = 29 time=1000]
+*seen_end1
 [eval exp="sf.event_zaizen_9_3 = 1"]
 [イベントシーン終了]
 ;=================================================================================================
