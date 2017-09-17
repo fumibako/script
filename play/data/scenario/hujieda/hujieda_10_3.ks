@@ -577,6 +577,9 @@ $('.oto').remove();
 [藤枝退場準備 storage="bg/I9IhvvVdPo/mirukugenkan.jpg"]
 #
 ;次のイベントにでてしまう名前残りを消去
+
+[eval exp="sf.event_hujieda_10_3 = 1"]
+
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
