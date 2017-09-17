@@ -309,6 +309,9 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [if exp="sf.event_zaizen_11_1 == undefined"]
 [eval exp="sf.event_zaizen_11_1 = 0"]
 [endif]
+[if exp="sf.event_zaizen_11_3 == undefined"]
+[eval exp="sf.event_zaizen_11_3 = 0"]
+[endif]
 [if exp="sf.event_zaizen_11_4 == undefined"]
 [eval exp="sf.event_zaizen_11_4 = 0"]
 [endif]
@@ -319,7 +322,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [eval exp="sf.event_zaizen_12_4 = 0"]
 [endif]
 [if exp="sf.event_zaizen_1_3 == undefined"]
-[eval exp="sf.event_zaizen_1_2 = 0"]
+[eval exp="sf.event_zaizen_1_3 = 0"]
 [endif]
 [if exp="sf.event_zaizen_sansaku_2_1 == undefined"]
 [eval exp="sf.event_zaizen_sansaku_2_1 = 0"]
@@ -356,7 +359,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="1月3週2" layer=26 size=17 x=100 y=340 color=darkslateblue visible=true]
 [ptext text="&sf.event_zaizen_1_3" layer=26 size=17 x=400 y=340 color=darkslateblue visible=true]
 [ptext text="2月1週・散策" layer=26 size=17 x=100 y=360 color=darkslateblue visible=true]
-[ptext text="&sf.event_zaizen_2_1" layer=26 size=17 x=400 y=360 color=darkslateblue visible=true]
+[ptext text="&sf.event_zaizen_sansaku_2_1" layer=26 size=17 x=400 y=360 color=darkslateblue visible=true]
 [ptext text="2月1週~3月3週・散策・バザー" layer=26 size=17 x=100 y=380 color=darkslateblue visible=true]
 [ptext text="&sf.event_zaizen_sansaku_bazar" layer=26 size=17 x=400 y=380 color=darkslateblue visible=true]
 ;6_1 sf.event_zaizen_event_6_1
@@ -365,6 +368,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;10_1 sf.event_zaizen_10_1
 ;10_3 sf.event_zaizen_10_3
 ;11_1_3 sf.event_zaizen_11_1
+;11_3 sf.event_zaizen_11_3
 ;11_4 sf.event_zaizen_11_4
 ;12_2 sf.event_zaizen_12_2
 ;12_4 sf.event_zaizen_12_4
