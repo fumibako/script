@@ -218,7 +218,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp]藤枝様が自由に飛び立てるように[p]
 
 *seen_end
-
+[eval exp="sf.event_hujieda_1_3 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
