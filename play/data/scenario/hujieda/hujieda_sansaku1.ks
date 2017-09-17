@@ -244,7 +244,7 @@
 [sp]きっと藤枝様は、温かい家庭で育ったのね）[p]
 
 ;@jump storage="event.ks" target=*event_owari
-
+[eval exp="sf.event_hujieda_sansaku = 1"]
 [イベントシーン終了]
 [イベントシーン終了２]
 @jump storage="test_hujieda.ks"
