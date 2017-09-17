@@ -245,7 +245,7 @@
 [freeimage layer=29]
 [wait time=10]
 [layopt layer=fix visible=true]
-
+[eval exp="sf.event_katuragi_10_2 = 1"]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]
