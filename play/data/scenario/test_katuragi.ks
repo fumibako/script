@@ -323,7 +323,7 @@ $(".test_txt").remove();
 [ptext name="num_times" text="葛城宮ルート既プレイ数(ED除く)＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
 [ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=360 y=85 color=darkslateblue overwrite=true]
 [ptext text="/17" layer=26 size=17 x=400 y=85 color=darkslateblue]
-[if exp="tf.event_Number_of_times > 17"]
+[if exp="tf.event_Number_of_times >= 17"]
 [ptext text="コンプリート！　プレイありがとうございます。" layer=26 size=17 x=500 y=85 color=darkslateblue]
 [else]
 [ptext text="システムフラグを閉鎖する場合は四条テストの『システムフラグ閉鎖する』ボタンをお使い後ブラウザをリロードしてください』" layer=26 size=17 x=500 y=85 color=darkslateblue]
