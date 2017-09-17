@@ -129,7 +129,7 @@
 [bg method='crossfade' storage="../fgimage/bg/plane_mizuiro.jpg" time=100 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;[link]タグでの選択肢例
+;[link]タグでの選択肢
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢用レイヤーを追加
 [position layer=message1 height=160 top=100 left=380 opacity=0]
@@ -368,6 +368,7 @@
 
 [freeimage layer=29 time=600]
 [wait time=600]
+[eval exp="sf.event_katuragi_11_1 = 1"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝スクリプト担当＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [イベントシーン終了]
 
