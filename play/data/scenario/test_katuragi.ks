@@ -325,6 +325,8 @@ $(".test_txt").remove();
 [ptext text="/17" layer=26 size=17 x=400 y=85 color=darkslateblue]
 [if exp="tf.event_Number_of_times > 17"]
 [ptext text="コンプリート！　プレイありがとうございます。" layer=26 size=17 x=500 y=85 color=darkslateblue]
+[else]
+[ptext text="システムフラグを閉鎖する場合は四条テストの『システムフラグ閉鎖する』ボタンをお使い後ブラウザをリロードしてください』" layer=26 size=17 x=500 y=85 color=darkslateblue]
 [endif]
 [ptext text="6月3週・Ev1" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
 [ptext text=&sf.event_katuragi_event_1 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
