@@ -25,6 +25,39 @@
 [eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。シナリオ終点にjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_end1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+
+
 ;【立ち絵】主人公ほほえみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
@@ -148,7 +181,7 @@
 「ええ、ごきげんよう」[p]
 
 （次の機会に聞けるかしら）[p]
-
+*seen_end1
 [eval exp="sf.event_katuragi_sansaku1 = 1"]
 
 ;↓散策イベント終了時については、気力回復と共に主人公のコメントを入れたい場合は[イベントシーン終了]の前に[イベントシーン終了２]を置き、コメント無しの方が合いそうな場合は逆の順に置くと良さそうです(スクリプト担
