@@ -83,6 +83,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test_fumi2" text="手紙追加分" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 
 [glink target="page_1" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 ;[glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
@@ -261,6 +262,78 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [cm]
 @jump storage="hujieda/hujieda_6_1.ks"
 [s]
+
+*check_event
+[eval exp="tf.ending_Number_of_times = 0"]
+[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+[chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
+[ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
+[ptext name="num_times" text="財前ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
+[ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
+[ptext text="/13" layer=26 size=17 x=290 y=85 color=darkslateblue]
+[if exp="tf.event_Number_of_times >= 13"]
+[ptext text="コンプリート！　プレイありがとうございます。" layer=26 size=17 x=500 y=85 color=darkslateblue]
+[else]
+[ptext text="『システムフラグ閉鎖する』場合は四条テストの同じ名前のテストボタンを使用後ブラウザをリロードしてください。" layer=26 size=15 x=100 y=105 color=darkslateblue]
+[endif]
+[ptext text="4月4週" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
+[ptext text=&sf.event_hujieda_4_4 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
+[ptext text="5月4週" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_5_4" layer=26 size=17 x=400 y=160 color=darkslateblue visible=true]
+[ptext text="6月1週" layer=26 size=17 x=100 y=180 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_6_1" layer=26 size=17 x=400 y=180 color=darkslateblue visible=true]
+[ptext text="6月4週" layer=26 size=17 x=100 y=200 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_6_4" layer=26 size=17 x=400 y=200 color=darkslateblue visible=true]
+[ptext text="10月1週" layer=26 size=17 x=100 y=220 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_10_1" layer=26 size=17 x=400 y=220 color=darkslateblue visible=true]
+[ptext text="10月3週" layer=26 size=17 x=100 y=240 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_10_3" layer=26 size=17 x=400 y=240 color=darkslateblue visible=true]
+[ptext text="11月1週" layer=26 size=17 x=100 y=260 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_11_1" layer=26 size=17 x=400 y=260 color=darkslateblue visible=true]
+[ptext text="11月3週" layer=26 size=17 x=100 y=280 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_11_3" layer=26 size=17 x=400 y=280 color=darkslateblue visible=true]
+[ptext text="12月3週" layer=26 size=17 x=100 y=300 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_12_3" layer=26 size=17 x=400 y=300 color=darkslateblue visible=true]
+[ptext text="1月3週" layer=26 size=17 x=100 y=320 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_1_3" layer=26 size=17 x=400 y=320 color=darkslateblue visible=true]
+[ptext text="2月3週" layer=26 size=17 x=100 y=340 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_2_3" layer=26 size=17 x=400 y=340 color=darkslateblue visible=true]
+[ptext text="3月2週～3月3週・バザー" layer=26 size=17 x=100 y=360 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_bazaar" layer=26 size=17 x=400 y=360 color=darkslateblue visible=true]
+[ptext text="2月3週～2月4週・散策" layer=26 size=17 x=100 y=380 color=darkslateblue visible=true]
+[ptext text="&sf.event_hujieda_sansaku" layer=26 size=17 x=400 y=380 color=darkslateblue visible=true]
+;sf.event_hujieda_4_4
+;sf.event_hujieda_5_4
+;sf.event_hujieda_6_1
+;sf.event_hujieda_6_4
+;sf.event_hujieda_7_4
+;sf.event_hujieda_8_4
+;sf.event_hujieda_9_1
+;sf.event_hujieda_9_2
+;sf.event_hujieda_9_4
+;sf.event_hujieda_10_1
+;sf.event_hujieda_10_3
+;sf.event_hujieda_11_1
+;sf.event_hujieda_11_3
+;sf.event_hujieda_12_3
+;sf.event_hujieda_1_3
+;sf.event_hujieda_2_3
+;sf.event_hujieda_bazaar
+;sf.event_hujieda_sansaku1
+[glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
+[s]
+[cm]
+*end_check_event
+[freeimage layer = 26]
+@jump target=test
+[s]
+
+
 
 *auto
 [autostart]
