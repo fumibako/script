@@ -235,6 +235,7 @@
 （次にお会いするときには、財前様ときちんとお話ししよう）[p]
 #
 ;=====================================================================
+[eval exp="sf.event_zaizen_10_1 = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
