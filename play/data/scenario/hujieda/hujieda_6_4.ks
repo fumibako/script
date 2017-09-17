@@ -223,8 +223,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [fadeoutbgm time=3000]
 #
 ;次のイベントにでてしまう名前残りを消去
-;@jump storage="event.ks" target=*event_owari
 
+[eval exp="sf.event_hujieda_6_4 = 1"]
+;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
