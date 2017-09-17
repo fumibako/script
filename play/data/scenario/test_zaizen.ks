@@ -321,6 +321,13 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [if exp="sf.event_zaizen_1_3 == undefined"]
 [eval exp="sf.event_zaizen_1_2 = 0"]
 [endif]
+[if exp="sf.event_zaizen_sansaku_2_1 == undefined"]
+[eval exp="sf.event_zaizen_sansaku_2_1 = 0"]
+[endif]
+[if exp="sf.event_zaizen_sansaku_bazar== undefined"]
+[eval exp="sf.event_zaizen_sansaku_bazar = 0"]
+[endif]
+
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
