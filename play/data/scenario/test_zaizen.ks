@@ -291,21 +291,46 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
-;[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
+[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
 [ptext name="num_times" text="財前ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
 ;[ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
-[ptext text="9月1週" layer=26 size=17 x=100 y=120 color=darkslateblue visible=true]
-[ptext text="9月3週" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
-[ptext text="10月1週" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
-[ptext text="10月3週" layer=26 size=17 x=100 y=180 color=darkslateblue visible=true]
-[ptext text="11月1週_3" layer=26 size=17 x=100 y=200 color=darkslateblue visible=true]
-[ptext text="11月3週" layer=26 size=17 x=100 y=220 color=darkslateblue visible=true]
-[ptext text="11月4週" layer=26 size=17 x=100 y=240 color=darkslateblue visible=true]
-[ptext text="12月2週_2" layer=26 size=17 x=100 y=260 color=darkslateblue visible=true]
-[ptext text="12月4週" layer=26 size=17 x=100 y=280 color=darkslateblue visible=true]
-[ptext text="1月3週2" layer=26 size=17 x=100 y=300 color=darkslateblue visible=true]
-[ptext text="2月1週" layer=26 size=17 x=100 y=320 color=darkslateblue visible=true]
-[ptext text="2月2週_bazar" layer=26 size=17 x=100 y=340 color=darkslateblue visible=true]
+[ptext text="6月1週" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=140 color=darkslateblue visible=true]
+[ptext text="9月1週" layer=26 size=17 x=100 y=180 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=180 color=darkslateblue visible=true]
+[ptext text="9月3週" layer=26 size=17 x=100 y=200 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=200 color=darkslateblue visible=true]
+[ptext text="10月1週" layer=26 size=17 x=100 y=220 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=220 color=darkslateblue visible=true]
+[ptext text="10月3週" layer=26 size=17 x=100 y=240 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=240 color=darkslateblue visible=true]
+[ptext text="11月1週_3" layer=26 size=17 x=100 y=260 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=260 color=darkslateblue visible=true]
+[ptext text="11月3週" layer=26 size=17 x=100 y=280 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=280 color=darkslateblue visible=true]
+[ptext text="11月4週" layer=26 size=17 x=100 y=300 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=300 color=darkslateblue visible=true]
+[ptext text="12月2週_2" layer=26 size=17 x=100 y=320 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=320 color=darkslateblue visible=true]
+[ptext text="12月4週" layer=26 size=17 x=100 y=340 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=340 color=darkslateblue visible=true]
+[ptext text="1月3週2" layer=26 size=17 x=100 y=360 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=360 color=darkslateblue visible=true]
+[ptext text="2月1週" layer=26 size=17 x=100 y=380 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=380 color=darkslateblue visible=true]
+[ptext text="2月1週~3月3週バザー" layer=26 size=17 x=100 y=400 color=darkslateblue visible=true]
+[ptext text="0" layer=26 size=17 x=200 y=400 color=darkslateblue visible=true]
+;6_1
+;9_1
+;10_1
+;10_3
+;11_1_3
+;11_4
+;12_2
+;12_4
+;1_3_2
+;2_1
+bazaar
 [wait time=5000]
 [cm]
 [freeimage layer = 26]
