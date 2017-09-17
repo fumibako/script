@@ -32,6 +32,39 @@
 「あら、あちらにいるのは時子さん？[r]
 [sp]隣の殿方はどなたかしら」[p]
 
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。シナリオ終点にjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_end1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+
+
 #
 時子さんと隣には落ち着いた感じの男性が座り、[r]
 傍に女中らしき人が控えている。[p]
@@ -416,6 +449,7 @@
 
 #
 そう感じて心が温かくなった。[p]
+*seen_end1
 
 [eval exp="sf.event_katuragi_sansaku2 = 1"]
 
