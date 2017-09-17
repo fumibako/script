@@ -311,7 +311,7 @@
 [sp]後は、私も何かできないか頑張ります！」[p]
 ;次のイベントで表示されていまう名前残りを消去
 #
-
+[eval exp="sf.event_hujieda_12_3 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
