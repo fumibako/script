@@ -103,20 +103,51 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [whosay name=磯野]
 「チャリティーバザーは、華族の夫人を中心に皇族の方も参加されています」[p]
 「今後の為にもいいでしょうね、反対する理由はございませんよ」[p]
-
-
 ;========================================================
 [else]
 ;茶道が高くない
 [whosay name=磯野]
 「今後の為にもいいでしょうし、反対する理由はありません」[p]
-
 ;====================
 [endif]
 ;=====================
 *kyoutu|共通
 #
 磯野は頷いて優しく微笑む。[p]
+
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。シナリオ終点にjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_end1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉下げ下]
 [主人公目伏]
@@ -641,7 +672,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ――また今度。[r]
 それはきっと近いうちに来る。[r]
 春が、訪れる。[p]
-
+*seen_end1
 ;@jump storage="event.ks" target=*event_owari
 
 [eval exp="sf.event_katuragi_bazar = 1"]
