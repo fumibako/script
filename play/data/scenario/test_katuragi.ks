@@ -253,7 +253,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 
 *check_event
 [iscript]
-$(."test_txt").remove();
+$(".test_txt").remove();
 [endscript]
 [eval exp="tf.ending_Number_of_times = 0"]
 [eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
