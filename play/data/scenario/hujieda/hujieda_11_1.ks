@@ -223,7 +223,7 @@
 #
 ;次のイベントにでてしまう名前残りを消去
 
-
+[eval exp="sf.event_hujieda_11_1 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
