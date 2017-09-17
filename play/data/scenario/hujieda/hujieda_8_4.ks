@@ -320,8 +320,10 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 [fadeoutbgm time=3000]
 #
+;思い出等の名前表示フラグ↓
+[eval exp="sf.replay_hujieda = 1"]
+[eval exp="sf.event_hujieda_8_4 = 1"]
 
-[eval exp="sf.replay_hujieda=1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
