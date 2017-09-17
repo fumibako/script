@@ -311,6 +311,7 @@ $('.29_fore').css({'filter':'brightness(1.0)','-webkit-filter':'brightness(1.0)'
 
 ;==========================スクリプト担当=====================================================
 *seen_end
+[eval exp="sf.event_katuragi_1_3 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
