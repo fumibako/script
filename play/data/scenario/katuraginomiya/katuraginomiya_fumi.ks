@@ -1450,6 +1450,34 @@
 [endif]
 [手紙葛城宮読了 fumi_number=]
 ;=============================================
+;『怪談』
+;=============================================
+*katuraginomiya_fumi_kaidan
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+『怪談』[p]
+[endif]
+[手紙葛城宮 fumi_number=1]
+[font color=navy size=21]
+[名字]　[名前]殿へ[l][r]
+[r]
+
+怪談についての話題です。[r]
+
+
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	[eval exp="f.midoku_list_hairetsu[3][32] = 0"]
+	[freeimage layer = 29]
+	@jump storage=&f.viewing_storage target=&f.viewing_target
+	[s]
+[endif]
+[手紙葛城宮読了 fumi_number=]
+
+;=============================================
 ;『 最後の手紙２ 』葛城宮進行不可９月他の誰かを選んだ場合９月１週に到着。
 ;=============================================
 *katuraginomiya_fumi_last_2_1
