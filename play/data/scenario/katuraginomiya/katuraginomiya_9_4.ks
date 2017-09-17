@@ -611,8 +611,9 @@ $('.junbi_girl').remove();
 [sp]だから心配しないで下さい」[p]
 
 （例え、もう何があっても、私は殿下の手を放さない）[p]
-;放さない？
+
 *seen_end
+[eval exp="sf.event_katuragi_9_4 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_katuragi.ks"
