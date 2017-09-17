@@ -576,6 +576,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;枠消ししておわりたい
 ;一瞬見えるメッセージ枠を消したいので上で変更しています
 ;[chara_mod name="message_bg" storage="toumei.gif" time=1]
+[eval exp="sf.event_katuragi_event_3 = 1"]
 ;=========================スクリプトここまで=======================================
 #
 ;@jump storage="event.ks" target=*event_owari
