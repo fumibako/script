@@ -893,13 +893,13 @@ $(".1_fore").empty();
 私の心に浮かんだ、彼の人を想えば……。[p]
 ;========================================================================
 [autosave]
-;要望が多いのではじめからの表示にします。　調整中なので全ボタン表示
-;[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
+;要望が多いのではじめからの表示にします。
+[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
 [glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=500 y=80 color=white]
-;[endif]
-;[if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
+[endif]
+[if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
 [glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=500 y=130 color=white]
-;[endif]
+[endif]
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
 [glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
@@ -928,7 +928,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [font color=white size=27]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
-殿下へ送る、手紙の内容を考えながら、[r]
+殿下へ送る、お手紙の内容を考えながら、[r]
 目を閉じる。[p]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ;月池と主人公手紙の合体透過画像仮
@@ -969,7 +969,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （少し感傷的になっているかもしれないですね……）[p]
 #
-浮かんだ手紙の内容は、心に押し留めたが、[r]
+浮かんだ内容は、心に押し留めたが、[r]
 殿下への御手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
@@ -999,7 +999,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [font color=white size=27]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
-鳥文の君へ送る、手紙の内容を考えながら、[r]
+鳥文の君へ送る、お手紙の内容を考えながら、[r]
 目を閉じる。[p]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ;月池と主人公手紙の合体透過画像仮
@@ -1022,7 +1022,8 @@ $(".1_fore").empty();
 私の[ruby text=こと]箏の音は、届いてるのでしょうか？[r]
 貴方に励まされました。[r]
 私は箏の音色で感謝を伝えたいと想い、[r]
-……そして、貴方に……もう一度…[p]
+……そして、貴方に……もう一度……[p]
+;…が一個だったので追加
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [resetfont]
 @layopt layer=message0 visible=false
@@ -1038,7 +1039,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （少し感傷的になっているかもしれないですね……）[p]
 #
-浮かんだ手紙の内容は、心に押し留めたが、[r]
+浮かんだ内容は、心に押し留めたが、[r]
 鳥文の君へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 1"]
@@ -1066,7 +1067,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [font color=white size=27]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
-華織お兄様へ送る、手紙の内容を考えながら、[r]
+華織お兄様へ送る、お手紙の内容を考えながら、[r]
 目を閉じる。[p]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 ;月池と主人公手紙の合体透過画像仮
@@ -1123,9 +1124,10 @@ $(".1_fore").empty();
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（少し感傷的になっているかもしれないですね……）[p]
+（今は恥ずかしくて言えないわ……。[r]
+[sp]もっとに華織様と親しくなれたなら）[p]
 #
-浮かんだ手紙の内容は、心に押し留めたが、[r]
+浮かんだ内容は、心に押し留めたが、[r]
 華織お兄様へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
@@ -1152,8 +1154,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 [font color=white size=27]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
-;財前様を想って綴る
-財前様へ送る、手紙の内容を考えながら、[r]
+財前様へ送る、お手紙の内容を考えながら、[r]
 目を閉じる。[p]
 [image layer=29 name="tukitegami" x=0 y=0 storage="bg/B4nFWraU42/bg_asuka_haduki_tuki1.jpg" time=1000 opasoty=70]
 [wait time=500]
@@ -1192,7 +1193,7 @@ _　お手紙から財前様は、とても現実的で[r]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （少し感傷的になっているかもしれないですね……）[p]
 #
-浮かんだ手紙の内容は、心に押し留めたが、[r]
+浮かんだ内容は、心に押し留めたが、[r]
 財前様へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
 [eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
