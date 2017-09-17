@@ -289,10 +289,9 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+;必ずルート中に発生するものは１にしてしまってもいいのでは？
 [if exp="sf.event_zaizen_event_6_1 == undefined"]
 [eval exp="sf.event_zaizen_event_6_1 = 0"]
-[endif]
-[if exp="sf.event_zaizen_event_6_1 == undefined"]
 [endif]
 [if exp="sf.event_zaizen_9_1 == undefined"]
 [eval exp="sf.event_zaizen_9_1 = 0"]
