@@ -209,8 +209,8 @@ f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠についての話題",0,1,2,1,2,"a","","","","");
 [endscript]
-『変化と永遠についての話題』を手に入れました。[r]
-お稽古パートをはじめます。[p]
+『変化と永遠についての話題』を手に入れました。[p]
+;お稽古パートをはじめます。[p]
 
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
