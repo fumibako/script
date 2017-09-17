@@ -31,7 +31,37 @@
 
 #
 財前様は私の手を解いて言った。[p]
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。シナリオ終点にjumpしますか？[r]
 
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_end1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
 
 ;【立ち絵】財前：冷ややか
 [財前冷ややか]
@@ -105,7 +135,7 @@
 ;【立ち絵】財前：微笑み
 [whosay name="財前美彬" color="#7a65b2"]
 [財前笑み柔和]
-「驚く事ですか？ 貴方を手放すには惜しいと思います。[r]
+「驚く事ですか？　貴方を手放すには惜しいと思います。[r]
 [sp][名前]さんは芯も強い。[r]
 [sp]祖母と付き合うには貴方ぐらいの方が丁度いい」
 [autosave]
@@ -294,7 +324,7 @@
 パーティは閉会の時間を迎え、[r]
 私は自分の気持ちに戸惑いながら、財前様に送られ家に帰った。[p]
 
-
+*seen_end1
 ;====================================================================================
 [eval exp="sf.event_zaizen_11_3 = 1"]
 [イベントシーン終了]
