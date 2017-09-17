@@ -337,6 +337,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext name="num_times" text="財前ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
 [ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
 [ptext text="/13" layer=26 size=17 x=290 y=85 color=darkslateblue]
+[if exp="tf.event_Number_of_times >= 13"]
 [ptext text="コンプリート！　プレイありがとうございます。" layer=26 size=17 x=500 y=85 color=darkslateblue]
 [else]
 [ptext text="『システムフラグ閉鎖する』場合は四条テストの同じ名前のテストボタンをお使い後ブラウザをリロードしてください』layer=26 size=17 x=500 y=85 color=darkslateblue]
