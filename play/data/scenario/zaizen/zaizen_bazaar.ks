@@ -793,6 +793,7 @@ jumpします。[p]
 
 #
 いつかはきっと――[p]
+*seen_end1
 [暗転２]
 ;イベント終了
 [暗転１]
@@ -800,15 +801,14 @@ jumpします。[p]
 [stopbgm]
 ;暗く全体消えていく演出
 [freeimage layer=29]
-
-*seen_end1
 [layopt layer=fix visible=true]
 [eval exp="sf.event_zaizen_sansaku_bazar = 1"]
 ;↓散策イベントとして実装する際に、気力回復無しの終了方法とします(シリアスな物語内容のため、回復することや主人公セリフが合わないため)
 [if exp="f.okeiko_gamen == true"]
 @jump storage="sansaku.ks" target=*sansaku_owari
 [endif]
-@jump storage="test_katuragi.ks"
+
+@jump storage="test_zaizen.ks"
 [s]
 
 *window_close
