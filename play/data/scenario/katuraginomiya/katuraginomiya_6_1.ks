@@ -156,6 +156,7 @@
 
 [p]
 
+[eval exp="sf.event_katuragi_6_1 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_katuragi.ks"
