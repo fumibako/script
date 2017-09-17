@@ -24,11 +24,41 @@
 [autosave]
 [wait time=10]
 [p]
-;今はなくてもわかるので大丈夫かと
 [if exp="sf.BGM=='ON'"]
 ;【BGM】冬支度
 [playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
+[endif]
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。シナリオ終点にjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_end1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
 [endif]
 
 [whosay name="三宮　時子" color="#c25232"]
@@ -233,6 +263,7 @@
 
 [主人公通常]
 （次にお会いするときには、財前様ときちんとお話ししよう）[p]
+*seen_end1
 #
 ;=====================================================================
 [eval exp="sf.event_zaizen_10_1 = 1"]
