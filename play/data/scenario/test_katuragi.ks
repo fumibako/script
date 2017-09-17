@@ -292,14 +292,14 @@ $(".test_txt").remove();
 [ptext text="&sf.event_katuragi_12_1" layer=26 size=17 x=400 y=360 color=darkslateblue visible=true]
 [ptext text="1月3週" layer=26 size=17 x=100 y=380 color=darkslateblue visible=true]
 [ptext text="&sf.event_katuragi_1_3" layer=26 size=17 x=400 y=380 color=darkslateblue visible=true]
-[ptext text="2月2週" layer=26 size=17 x=100 y=420 color=darkslateblue visible=true]
-[ptext text="&sf.event_katuragi_2_2" layer=26 size=17 x=400 y=420 color=darkslateblue visible=true]
-[ptext text="2月3週~3月4週バザー" layer=26 size=17 x=100 y=440 color=darkslateblue visible=true]
+[ptext text="2月2週" layer=26 size=17 x=100 y=400 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_2_2" layer=26 size=17 x=400 y=400 color=darkslateblue visible=true]
+[ptext text="2月3週～3月4週バザー" layer=26 size=17 x=100 y=420 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_bazar" layer=26 size=17 x=400 y=420 color=darkslateblue visible=true]
+[ptext text="2月2週～3月4週・散策1" layer=26 size=17 x=100 y=440 color=darkslateblue visible=true]
 [ptext text="&sf.event_katuragi_bazar" layer=26 size=17 x=400 y=440 color=darkslateblue visible=true]
-[ptext text="2月2週~3月4週・散策1" layer=26 size=17 x=100 y=460 color=darkslateblue visible=true]
+[ptext text="2月2週～3月4週・散策2" layer=26 size=17 x=100 y=460 color=darkslateblue visible=true]
 [ptext text="&sf.event_katuragi_bazar" layer=26 size=17 x=400 y=460 color=darkslateblue visible=true]
-[ptext text="2月2週~3月4週・散策2" layer=26 size=17 x=100 y=480 color=darkslateblue visible=true]
-[ptext text="&sf.event_katuragi_bazar" layer=26 size=17 x=400 y=480 color=darkslateblue visible=true]
 
 ;katuraginomiya_event_1 sf.event_katuragi_event_1
 ;katuraginomiya_event_2 sf.event_katuragi_event_2
