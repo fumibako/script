@@ -423,6 +423,7 @@
 *seen11
 
 *seen_end
+[eval exp="sf.event_katuragi_11_4 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 
