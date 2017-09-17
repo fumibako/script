@@ -297,7 +297,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="9月1週" layer=26 size=17 x=100 y=120 color=darkslateblue visible=true]
 [ptext text="9月3週" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
 [ptext text="10月1週" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
-[ptext text="10月3週" layer=26 size=17 x=100 y=150 color=darkslateblue visible=true]
+[ptext text="10月3週" layer=26 size=17 x=100 y=180 color=darkslateblue visible=true]
 [ptext text="11月1週_3" layer=26 size=17 x=100 y=200 color=darkslateblue visible=true]
 [ptext text="11月3週" layer=26 size=17 x=100 y=220 color=darkslateblue visible=true]
 [ptext text="11月4週" layer=26 size=17 x=100 y=240 color=darkslateblue visible=true]
