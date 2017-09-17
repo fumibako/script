@@ -683,7 +683,7 @@ $('.piano_base_me').remove();
 #
 曲が終わると藤枝様は、皆に礼をする。[r]
 そして、私の方を向いた。[p]
-
+[autosave]
 ;【立ち絵】藤枝：真剣
 [藤枝真剣]
 [whosay name="藤枝 肇" color=%mp.color] 
@@ -737,7 +737,7 @@ $('.piano_base_me').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 「ただいま帰りました」[p]
-
+[autosave]
 [whosay name=磯野 color="dimgray"]
 「お帰りなさいませ、お嬢様」[p]
 
@@ -909,7 +909,7 @@ $('.piano_base_me').remove();
 「ええ、感謝しております」[p]
 
 *seen_end
-
+[eval exp="sf.event_hujieda_2_3 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
