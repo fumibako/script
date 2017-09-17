@@ -306,10 +306,10 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [ptext text="1月3週2" layer=26 size=17 x=100 y=300 color=darkslateblue visible=true]
 [ptext text="2月1週" layer=26 size=17 x=100 y=320 color=darkslateblue visible=true]
 [ptext text="2月2週_bazar" layer=26 size=17 x=100 y=340 color=darkslateblue visible=true]
-[wait time=50000]
+[wait time=5000]
 [cm]
 [freeimage layer = 26]
-@jump storage="zaizen/zaizen_fumi.ks"
+@jump target=test
 [s]
 
 *auto
