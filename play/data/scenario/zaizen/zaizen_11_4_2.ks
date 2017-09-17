@@ -159,6 +159,7 @@
 「でも、きっと財前様なら道を切り開かれるわ」[p]
 
 ;======================================================================
+[eval exp="sf.event_zaizen_11_4 = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
