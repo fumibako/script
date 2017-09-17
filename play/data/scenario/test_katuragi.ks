@@ -80,8 +80,9 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [glink target="sansaku2" text="散策イベント(2月～)2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="bazaar" text="バザーイベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="test_fumi_tuika" text="手紙追加分" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="test6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 
 [glink target="page_1" text="前に戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 @jump target=common_page
@@ -249,6 +250,13 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [cm]
 [freeimage layer = 26]
 @jump storage="katuraginomiya/katuraginomiya_fumi.ks"
+[s]
+
+*test_fumi_tuika
+[cm]
+[chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
+[freeimage layer = 26]
+@jump storage="katuraginomiya/katuraginomiya_fumi.ks" target=*katuraginomiya_fumi_kaidan
 [s]
 
 *check_event
