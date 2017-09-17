@@ -242,7 +242,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 *test_fumi2
 [cm]
 [freeimage layer = 26]
-@jump storage="hujieda/hujieda_fumi.ks" target="*fumi_asuka_hujieda_1"
+@jump storage="hujieda/hujieda_fumi.ks" target="hujieda_fumi_kaidan"
 [s]
 
 *hujieda_bazaar_1
