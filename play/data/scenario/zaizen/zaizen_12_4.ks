@@ -232,6 +232,7 @@
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [暗転２終了]
+[eval exp="sf.event_zaizen_12_4 = 1"]
 ;=============================================
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
