@@ -315,6 +315,8 @@ $(".test_txt").remove();
 [if exp="sf.event_katuragi_sansaku2
 [eval exp="sf.event_katuragi_sansaku2 = 0"]
 [endif]
+[eval exp="tf.event_sansaku_Number_of_times = sf.event_katuragi_sansaku1 + sf.event_katuragi_sansaku2"]
+[eval exp="tf.event_Number_of_times = sf.event_katuragi_event_1 + sf.event_katuragi_event_2 + sf.event_katuragi_event_3 + sf.event_katuragi_6_1 + sf.event_katuragi_9_1 + sf.event_katuragi_9_3 + sf.event_katuragi_9_4 + sf.event_katuragi_10_2 + sf.event_katuragi_10_3 + sf.event_katuragi_11_1 + sf.event_katuragi_11_4 + sf.event_katuragi_12_1 + sf.event_katuragi_1_3 + sf.event_katuragi_2_2 + sf.event_katuragi_bazar + tf.event_sansaku_Number_of_times"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
