@@ -527,6 +527,8 @@ $(".29_fore").empty();
 [四条_隣_退場]
 [四条サイズ通常_羽織]
 [四条憂い]
+;[四条目伏2]
+[chara_mod name="sijyou_me" storage="sijyou/me_fusi2.png" time=0]
 [表示開始 time=300]
 休憩室に行くことにした。
 [autosave]
