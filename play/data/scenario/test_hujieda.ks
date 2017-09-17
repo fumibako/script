@@ -20,8 +20,18 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 ;=============================================
 ;test
 ;=============================================
+[iscript]
+$(function(){
+    if($('.bg').length){
+        tf.bg = 1;
+    }
+});
+[endscript]
+;イベントをみたときにたまにmodエラー
+[if exp="tf.bg == 1"]
 [chara_mod name="bg" storage="bg/title.jpg"]
 [wait time=10]
+[endif]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 [cm]
@@ -329,8 +339,10 @@ $(".test_txt").remove();
 [endif]
 [eval exp="tf.event_sansaku_Number_of_times = sf.event_hujieda_bazaar + sf.event_hujieda_sansaku"]
 [eval exp="tf.event_Number_of_times = sf.event_hujieda_4_4 + sf.event_hujieda_5_4 + sf.event_hujieda_6_1 + sf.event_hujieda_6_4 + sf.event_hujieda_7_4 + sf.event_hujieda_8_4 +sf.event_hujieda_9_1 + sf.event_hujieda_9_2 + sf.event_hujieda_9_4 + sf.event_hujieda_10_1 + sf.event_hujieda_10_3 + sf.event_hujieda_11_1 + sf.event_hujieda_11_3 + sf.event_hujieda_12_3 + sf.event_hujieda_1_3 + sf.event_hujieda_2_3 + tf.event_sansaku_Number_of_times"]
+[if exp="tf.bg == 1"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [wait time=10]
+[endif]
 [bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=210 y=65 color=darkslateblue overwrite=true]
