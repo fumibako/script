@@ -20,8 +20,18 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 ;=============================================
 ;test
 ;=============================================
+[iscript]
+$(function(){
+    if($('.bg').length){
+        tf.bg = 1;
+    }
+});
+[endscript]
+;イベントをみたときにたまにmodエラーするので回避
+[if exp="tf.bg == 1"]
 [chara_mod name="bg" storage="bg/title.jpg"]
 [wait time=10]
+[endif]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 [cm]
@@ -254,7 +264,12 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 
 *test_fumi_tuika
 [cm]
+[if exp="tf.bg == 1"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
+[wait time=10]
+[endif]
+[bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
+[wait time=10]
 [freeimage layer = 26]
 @jump storage="katuraginomiya/katuraginomiya_fumi.ks" target=*katuraginomiya_fumi_kaidan
 [s]
@@ -325,7 +340,10 @@ $(".test_txt").remove();
 [endif]
 [eval exp="tf.event_sansaku_Number_of_times = sf.event_katuragi_sansaku1 + sf.event_katuragi_sansaku2"]
 [eval exp="tf.event_Number_of_times = sf.event_katuragi_event_1 + sf.event_katuragi_event_2 + sf.event_katuragi_event_3 + sf.event_katuragi_6_1 + sf.event_katuragi_9_1 + sf.event_katuragi_9_3 + sf.event_katuragi_9_4 + sf.event_katuragi_10_2 + sf.event_katuragi_10_3 + sf.event_katuragi_11_1 + sf.event_katuragi_11_4 + sf.event_katuragi_12_1 + sf.event_katuragi_1_3 + sf.event_katuragi_2_2 + sf.event_katuragi_bazar + tf.event_sansaku_Number_of_times"]
+[if exp="tf.bg == 1"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
+[wait time=10]
+[endif]
 [bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
 [wait time=10]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
