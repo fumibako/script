@@ -97,6 +97,8 @@
 [sp]これから成すべきことを国民に訴え、国民に理解を得られるように[r]
 [sp]伝えましょう！」[p]
 
+[eval exp="sf.event_katuragi_12_1 = 1"]
+
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
