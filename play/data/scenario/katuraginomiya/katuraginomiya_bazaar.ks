@@ -644,6 +644,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 ;@jump storage="event.ks" target=*event_owari
 
+[eval exp="sf.event_katuragi_bazar = 1"]
+
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_katuragi.ks"
