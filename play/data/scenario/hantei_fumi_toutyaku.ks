@@ -396,9 +396,15 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『菊花展』10月 好感度(暫定)45以上
-[if exp="f.okeiko_month == 10 && f.para_zaizen_koukando > 44 && f.fumi_toutyaku_zaizen[29]==0 && f.zaizen_au == 1"]
+[if exp="f.okeiko_month == 10 && f.para_zaizen_koukando > 44 && f.fumi_toutyaku_zaizen[29] == 0 && f.zaizen_au == 1"]
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_29
+[endif]
+;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『怪談』返事の詳細な判定は変更してください && f.zaizen_au == 1
+[if exp="f.zaizen_fumi_toutyakumachi_kaidan == 0 && f.fumi_toutyaku_zaizen[30] == 0"]
+  [call target=*zaizen_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_30
 [endif]
 ;=======================================================================================
 ;手紙到着：条件有りが該当しなければ、条件無し分が到着（財前には該当なし
@@ -617,6 +623,12 @@ f.okeiko_month_kansuuji="三月 ";
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_29
 [endif]
 ;=======================================================================================
+;◆↓手紙一通分の到着判定処理(開始)：『怪談』
+[if exp="f.katuraginomiya_fumi_toutyakumachi_kaidan == 0 && f.fumi_toutyaku_katuraginomiya[30] == 0"]
+  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_30
+[endif]
+;=======================================================================================
 ;◆季節の便り◆
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度条件は除くかわりに「葛城宮イベント1を見ている」を条件に追加
@@ -792,7 +804,11 @@ f.okeiko_month_kansuuji="三月 ";
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_28
 [endif]
-
+;◆↓手紙一通分の到着判定処理(開始)：『 怪談の話題 』
+[if exp="f.hujieda_fumi_toutyakumachi_kaidan == 0 && f.fumi_toutyaku_hujieda[31] == 0"]
+  [call target=*hujieda_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_31
+[endif]
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
