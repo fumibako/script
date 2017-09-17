@@ -313,6 +313,10 @@ $('.list').remove();
 *seen_end
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+;シナリオテスト用
+[if exp="tf.test_hujieda == true"]
+@jump target=*seen_end1
+[endif]
 ;ＢＡＤリプレイ用のジャンプ リプレイ終了処理はＢＡＤ側にあります
 [if exp="f.flag_replay == true"]
 @jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
@@ -328,7 +332,7 @@ $('.list').remove();
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 
 [fadeoutbgm time=3000]
-
+*seen_end1
 [eval exp="sf.event_hujieda_11_3 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
