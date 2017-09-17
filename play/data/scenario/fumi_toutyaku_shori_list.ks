@@ -1755,6 +1755,22 @@ f.fumi_toutyaku_hujieda[30]=1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
 
+*fumi_toutyaku_hujieda_31
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「怪談」　藤枝　肇 ";
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「怪談」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi_koto");
+f.fumi_list_all_location_taishou.push(4);
+f.fumi_list_all_location_fumi.push(30);
+f.fumi_list_hujieda_location_fumi.push(30);
+f.fumi_list_hujieda_title.push(f.fumi_hujieda_title_new);
+f.fumi_list_hujieda_target.push("*hujieda_fumi_kaidan");
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_hujieda[31]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
 
 ;=============================================
 ;◆兄や友人、その他のキャラクターからの手紙
