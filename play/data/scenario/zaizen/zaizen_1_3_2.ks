@@ -27,6 +27,38 @@
 [wait time=10]
 [p]
 
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。シナリオ終点にjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=160 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+@jump target=*seen_end1
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
+[endif]
+
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
 「ああ」[p]
@@ -175,6 +207,7 @@
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 [layopt layer=message0 visible=false]
 ;[暗転２終了]
+*seen_end1
 [eval exp="sf.event_zaizen_1_3 = 1"]
 ;===============================================================
 [イベントシーン終了]
