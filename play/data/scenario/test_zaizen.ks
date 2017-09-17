@@ -20,8 +20,19 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;=============================================
 ;test
 ;=============================================
+[iscript]
+$(function(){
+    if($('.bg').length){
+        tf.bg = 1;
+    }
+});
+[endscript]
+;イベントをみたときにたまにエラー
+[if exp="tf.bg == 1"]
 [chara_mod name="bg" storage="bg/title.jpg"]
 [wait time=10]
+[endif]
+
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
 ;test中フラグ　一時変数 利用します
@@ -338,8 +349,11 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [endif]
 [eval exp="tf.event_sansaku_Number_of_times = sf.event_zaizen_sansaku_2_1+ sf.event_zaizen_sansaku_bazar"]
 [eval exp="tf.event_Number_of_times = sf.event_zaizen_event_6_1 + sf.event_zaizen_9_1 + sf.event_zaizen_9_3 + sf.event_zaizen_10_1 + sf.event_zaizen_10_3 + sf.event_zaizen_11_1 + sf.event_zaizen_11_3 + sf.event_zaizen_11_4 + sf.event_zaizen_12_2 + sf.event_zaizen_12_4 + sf.event_zaizen_1_3 + tf.event_sansaku_Number_of_times"]
+[if exp="tf.bg == 1"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [wait time=10]
+[endif]
+
 [bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=210 y=65 color=darkslateblue overwrite=true]
