@@ -268,7 +268,7 @@ $(".test_txt").remove();
 ;[ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
 [ptext text="6月3週・Ev1" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
 [ptext text=&sf.event_katuragi_event_1 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
-[ptext text="7月2週夢" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
+[ptext text="7月2週・夢Ev" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
 [ptext text=&sf.event_katuragi_6_1 layer=26 size=17 x=400 y=160 color=darkslateblue visible=true]
 [ptext text="7月4週・Ev2" layer=26 size=17 x=100 y=180 color=darkslateblue visible=true]
 [ptext text=&sf.event_katuragi_event_2 layer=26 size=17 x=400 y=180 color=darkslateblue visible=true]
