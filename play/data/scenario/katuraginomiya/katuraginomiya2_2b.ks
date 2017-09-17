@@ -126,7 +126,7 @@ _  　葛城宮家執務室。[p]
 [whosay name="秘書" color=%mp.color]
 「ご婚約者様の事です。[r]
 [sp]殿下はあの方の事もあって、随分と落ち着かれました」[p]
-
+[autosave]
 [whosay name="葛城宮 晴仁" color=%mp.color]
 [葛城宮目伏せ照れ]
 「……そうだな」[p]
@@ -158,7 +158,7 @@ _  　葛城宮家執務室。[p]
 ;会話ウィンドウ消去 一瞬みえるの防止
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;=============================================================
-
+[eval exp="sf.event_katuragi_2_2 = 1"]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
