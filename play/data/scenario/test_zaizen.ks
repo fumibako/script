@@ -68,7 +68,8 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [glink target="zaizen_bazaar" text="財前バザー" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="zaizen_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="test_fumi_tuika" text="手紙追加分" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 
 [glink target="page_0" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=pink]
 @jump target=*common
@@ -280,6 +281,12 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [cm]
 [freeimage layer = 26]
 @jump storage="zaizen/zaizen_fumi.ks"
+[s]
+
+*test_fumi_tuika
+[cm]
+[freeimage layer = 26]
+@jump storage="zaizen/zaizen_fumi.ks" target="zaizen_fumi_kaidan"
 [s]
 
 *check_event
