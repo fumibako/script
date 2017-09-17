@@ -250,6 +250,68 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 @jump storage="katuraginomiya/katuraginomiya_fumi.ks"
 [s]
 
+*check_event
+[eval exp="tf.ending_Number_of_times = 0"]
+[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
+[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+[chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
+[ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
+[ptext name="num_times" text="葛城宮ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
+;[ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
+[ptext text="6月3週" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
+[ptext text=&sf.event_katuragi_event_1 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
+[ptext text="7月2週夢" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
+[ptext text=&sf.event_katuragi_event_2 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
+[ptext text="7月4週" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
+[ptext text=&sf.event_katuragi_event_3 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
+[ptext text="9月1週" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_9_1" layer=26 size=17 x=400 y=160 color=darkslateblue visible=true]
+[ptext text="9月3週" layer=26 size=17 x=100 y=180 color=darkslateblue visible=true]
+[ptext text="&sf.event_zaizen_9_3" layer=26 size=17 x=400 y=180 color=darkslateblue visible=true]
+[ptext text="9月4週" layer=26 size=17 x=100 y=200 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_9_4" layer=26 size=17 x=400 y=200 color=darkslateblue visible=true]
+[ptext text="10月2週" layer=26 size=17 x=100 y=220 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_10_2" layer=26 size=17 x=400 y=220 color=darkslateblue visible=true]
+[ptext text="10月3週" layer=26 size=17 x=100 y=240 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_10_3" layer=26 size=17 x=400 y=240 color=darkslateblue visible=true]
+[ptext text="11月1週" layer=26 size=17 x=100 y=260 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_11_1" layer=26 size=17 x=400 y=260 color=darkslateblue visible=true]
+[ptext text="11月4週" layer=26 size=17 x=100 y=280 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_11_4" layer=26 size=17 x=400 y=280 color=darkslateblue visible=true]
+[ptext text="12月1週" layer=26 size=17 x=100 y=300 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_12_1" layer=26 size=17 x=400 y=300 color=darkslateblue visible=true]
+[ptext text="1月3週" layer=26 size=17 x=100 y=320 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_1_3" layer=26 size=17 x=400 y=320 color=darkslateblue visible=true]
+[ptext text="1月3週2" layer=26 size=17 x=100 y=340 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_1_3" layer=26 size=17 x=400 y=340 color=darkslateblue visible=true]
+[ptext text="2月2週" layer=26 size=17 x=100 y=360 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_2_2" layer=26 size=17 x=400 y=360 color=darkslateblue visible=true]
+[ptext text="2月3週~3月4週バザー" layer=26 size=17 x=100 y=380 color=darkslateblue visible=true]
+[ptext text="&sf.event_katuragi_sansaku_bazar" layer=26 size=17 x=400 y=380 color=darkslateblue visible=true]
+
+;katuraginomiya_event_1
+;katuraginomiya_event_2
+;katuraginomiya_event_3
+;katuraginomiya_6_1
+;katuraginomiya_9_1	
+;katuraginomiya_9_3	
+;katuraginomiya_9_4
+;katuraginomiya_10_2	
+;katuraginomiya_10_3	
+;katuraginomiya_11_1	
+;katuraginomiya_11_4	
+;katuraginomiya12_1
+;katuraginomiya_1_3
+;katuraginomiya_2_2
+;katuraginomiya_bazaar		
+;katuraginomiya_sansaku1	
+;katuraginomiya_sansaku2
+[s]
+
 
 *auto
 [autostart]
