@@ -107,10 +107,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 （景気が悪くなりつつあるというだけではないの？）[p]
 
 ;=====================================================
-;@jump storage="event.ks" target=*event_owari
-
+[eval exp="sf.event_zaizen_11_3 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
+;@jump storage="event.ks" target=*event_owari
 @jump storage="test_zaizen.ks"
 [s]
 
