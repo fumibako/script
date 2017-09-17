@@ -1391,6 +1391,39 @@ $(".1_fore").empty();
 [endif]
 [手紙藤枝読了 fumi_number=]
 
+
+
+;=============================================
+;◆話題への返事 ◆
+;=============================================
+;『 怪談 』
+;=============================================
+*hujieda_fumi_kaidan
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+『　怪談　』[p]
+[endif]
+[手紙藤枝 fumi_number=]
+[名字]　[名前]様へ[l][r]
+
+怪談の話題についての内容です。[r]
+
+
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
+
+
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
+  [eval exp="f.midoku_list_hairetsu[4][30] = 0"]
+   [freeimage layer = 29]
+   @jump storage=&f.viewing_storage target=&f.viewing_target
+   [s]
+[endif]
+[手紙藤枝読了 fumi_number=]
+
+
 [イベントシーン終了]
 @jump storage="test_hujieda.ks"
 [s]
@@ -1422,7 +1455,7 @@ $(".1_fore").empty();
 ;『お気に入りの曲について』
 ;『道』
 ;『 変化と永遠 』
-
+;『　怪談　』
 ;◆季節の便り◆
 ;『巡る季節』 9月ごろの手紙　好感度が一定以上
 ;季節の便り『 実りの秋』10月頃の手紙　好感度が一定以上
