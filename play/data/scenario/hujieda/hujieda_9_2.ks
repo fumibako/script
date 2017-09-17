@@ -162,6 +162,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 #
 ;次のイベントにでてしまう名前残りを消去
+
+[eval exp="sf.event_hujieda_9_2 = 1"]
+
 ;@jump storage="event.ks" target=*event_owari
 
 [イベントシーン終了]
