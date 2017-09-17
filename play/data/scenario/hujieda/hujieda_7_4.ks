@@ -235,6 +235,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 #
 ;次のイベントにでてしまう名前残りを消去
+[eval exp="sf.event_hujieda_7_4 = 1"]
 [イベントシーン終了]
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
