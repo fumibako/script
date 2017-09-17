@@ -340,7 +340,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [if exp="tf.event_Number_of_times >= 13"]
 [ptext text="コンプリート！　プレイありがとうございます。" layer=26 size=17 x=500 y=85 color=darkslateblue]
 [else]
-[ptext text="『システムフラグ閉鎖する』場合は四条テストの同じ名前のテストボタンをお使い後ブラウザをリロードしてください』layer=26 size=17 x=500 y=85 color=darkslateblue]
+[ptext text="『システムフラグ閉鎖する』場合は四条テストの同じ名前のテストボタンをお使い後ブラウザをリロードしてください』layer=26 size=17 x=100 y=105 color=darkslateblue]
 [endif]
 [ptext text="6月1週" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
 [ptext text=&sf.event_zaizen_event_6_1 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
@@ -382,8 +382,8 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;2_1 sf.event_zaizen_sansaku_2_1
 ;bazaar sf.event_zaizen_sansaku_bazar
 [glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
-[cm]
 [s]
+[cm]
 *end_check_event
 [freeimage layer = 26]
 @jump target=test
