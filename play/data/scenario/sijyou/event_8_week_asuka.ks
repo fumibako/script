@@ -1215,7 +1215,7 @@ _　お手紙から財前様は、とても現実的で[r]
 浮かんだ内容は、心に押し留めたが、[r]
 財前様へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
-[eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
+[eval exp="f.para_zaizen_koukando = f.para_zaizen_koukando + 1"]
 @jump target=comon1
 [s]
 ;========================================================================
