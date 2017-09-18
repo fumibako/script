@@ -312,7 +312,7 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '変化と永遠についての�
 	}
 }
 
-if(f.wadai_list_hairetsu[f.wadai_number][0] == '怪談についての話題' && f.sijyou_fumi_toutyakumachi_henka < 0){ //「怪談についての話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+if(f.wadai_list_hairetsu[f.wadai_number][0] == '怪談についての話題' && f.sijyou_fumi_toutyakumachi_kaidan < 0){ //「怪談についての話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	if(f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
 		f.sijyou_fumi_toutyakumachi_kaidan=f.sijyou_fumi_toutyakumachi;
 		f.fumi_wadai_toutyakumachi = f.sijyou_fumi_toutyakumachi;
