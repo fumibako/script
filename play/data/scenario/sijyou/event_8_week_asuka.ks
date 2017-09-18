@@ -1050,6 +1050,7 @@ $(".1_fore").empty();
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 1"]
 @jump target=comon1
 [s]
+;藤枝の選択肢を選んだ場合に明日もお稽古頑張りましょうと表示します
 ;======================================================================================
 *sijyou
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -1293,8 +1294,8 @@ _　お手紙から財前様は、とても現実的で[r]
 ;==========================================================
 *comon
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;藤枝の好感度が高い場合、f.event_hujieda[17]進行不可手紙　７月のｲﾍﾞﾝﾄf.event_hujieda[4]
-[if exp="f.haduki_hujieda == 1 && (f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start ==1) || (f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1)"]
+;藤枝の選択肢を選んだ場合に表示
+[if exp="f.haduki_hujieda == 1"]
 （明日も、お稽古頑張りましょう）[p]
 [else]
 （明日も、お手紙を出しましょう）[p]
