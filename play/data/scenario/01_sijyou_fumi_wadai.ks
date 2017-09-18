@@ -312,6 +312,21 @@ if(f.wadai_list_hairetsu[f.wadai_number][0] == '変化と永遠についての�
 	}
 }
 
+if(f.wadai_list_hairetsu[f.wadai_number][0] == '怪談についての話題' && f.sijyou_fumi_toutyakumachi_henka < 0){ //「怪談についての話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
+		f.sijyou_fumi_toutyakumachi_henka=f.sijyou_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.sijyou_fumi_toutyakumachi;
+	}
+	if(f.para_sijyou_koukando >= parseInt(sf.sijyou['koukando_a'])){
+		f.sijyou_fumi_toutyakumachi_kaidan=f.sijyou_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.sijyou_fumi_toutyakumachi - 1;
+	}
+	if(f.para_sijyou_koukando > parseInt(sf.sijyou['koukando_b'])){
+		f.sijyou_fumi_toutyakumachi_kaidan=f.sijyou_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.sijyou_fumi_toutyakumachi - 2;
+	}
+}
+
 if(f.binsen_list_hairetsu[f.binsen_number][0] == 'あぶりだし' && f.sijyou_fumi_toutyakumachi_aburidasi < 0){ //「あぶりだし」の便せんを選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
 	if(f.para_sijyou_koukando < parseInt(sf.sijyou['koukando_a'])){
 		f.sijyou_fumi_toutyakumachi_aburidasi=f.sijyou_fumi_toutyakumachi;
@@ -345,6 +360,7 @@ if(f.sijyou_fumi_toutyakumachi_hajimari > 0)f.sijyou_fumi_toutyakumachi_hajimari
 if(f.sijyou_fumi_toutyakumachi_music > 0)f.sijyou_fumi_toutyakumachi_music = 0;
 if(f.sijyou_fumi_toutyakumachi_michi > 0)f.sijyou_fumi_toutyakumachi_michi = 0;
 if(f.sijyou_fumi_toutyakumachi_henka > 0)f.sijyou_fumi_toutyakumachi_henka = 0;
+if(f.sijyou_fumi_toutyakumachi_kaidan > 0)f.sijyou_fumi_toutyakumachi_kaidan = 0;
 if(f.sijyou_fumi_toutyakumachi_dokusho > 0)f.sijyou_fumi_toutyakumachi_dokusho = 0;
 if(f.sijyou_fumi_toutyakumachi_sports > 0)f.sijyou_fumi_toutyakumachi_sports = 0;
 if(f.sijyou_fumi_toutyakumachi_aburidasi > 0)f.sijyou_fumi_toutyakumachi_aburidasi = 0;
