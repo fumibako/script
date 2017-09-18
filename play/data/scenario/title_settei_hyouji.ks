@@ -20,6 +20,22 @@
 [eval exp="tf.advice_event_hyouji=1"]
 [eval exp="f.flag_replay=false"]
 [eval exp="tf.flag_replay=false"]
+[iscript]
+//クリア回数：未定義時変数セット(test_sijyou.ksのスクリプトを一部使用させていただきました。◆B4nFWraU42さん、ありがとうございます)
+if (typeof sf.ending_Number_of_times === "undefined") {
+	sf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad;
+	sf.ending_Number_of_times = sf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad;
+	sf.ending_Number_of_times = sf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1;
+	sf.ending_Number_of_times = sf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad;
+	sf.ending_Number_of_times = sf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2;
+}
+//怪談についての話題：未定義時変数セット
+if (typeof f.sijyou_fumi_toutyakumachi_kaidan === "undefined") {f.sijyou_fumi_toutyakumachi_kaidan = -1;}
+if (typeof f.zaizen_fumi_toutyakumachi_kaidan === "undefined") {f.zaizen_fumi_toutyakumachi_kaidan = -1;}
+if (typeof f.katuraginomiya_fumi_toutyakumachi_kaidan === "undefined") {f.katuraginomiya_fumi_toutyakumachi_kaidan = -1;}
+if (typeof f.hujieda_fumi_toutyakumachi_kaidan === "undefined") {f.hujieda_fumi_toutyakumachi_kaidan = -1;}
+if (typeof f.kuroda_fumi_toutyakumachi_kaidan === "undefined") {f.kuroda_fumi_toutyakumachi_kaidan = -1;}
+[endscript]
 ;◆↓背景切り替え時の効果を指定します。bgのデフォルトであるfadeinはcrossfadeと異なっていたのでchara_modのデフォルトであるcrossfadeを指定しています
 [eval exp="f.bg_method='crossfade'"]
 
