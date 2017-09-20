@@ -574,9 +574,10 @@ $('.junbi_girl').remove();
 	[skipstop]
 [endif]
 *scene8
-
+[if exp="sf.BGM=='ON'"]
 ;【BGM】絆（想いを込める感じ）
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true click=true]
+[endif]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
