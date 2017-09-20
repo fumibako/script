@@ -718,6 +718,10 @@ f.para_shujinkou_shukujodo=200;
 [ptext text="6月1週" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
 [ptext text=&sf.event_kuroda_event_6_1 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
 [ptext text="9月1週" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
+;
+[if exp="sf.trail_kuroda_9_1_seen_owari >= 1 || sf.record.trail_kuroda_9_1_seen_owari >= 1"]
+[eval exp="sf.event_kuroda_9_1 = 1"]
+[endif]
 [ptext text="&sf.event_kuroda_9_1" layer=26 size=17 x=400 y=160 color=darkslateblue visible=true]
 [ptext text="9月3週" layer=26 size=17 x=100 y=180 color=darkslateblue visible=true]
 [ptext text="&sf.event_kuroda_9_3" layer=26 size=17 x=400 y=180 color=darkslateblue visible=true]
