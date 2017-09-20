@@ -747,7 +747,7 @@ f.para_shujinkou_shukujodo=200;
 [ptext text="&sf.event_kuroda_1_2" layer=26 size=17 x=400 y=420 color=darkslateblue visible=true]
 [ptext text="2月2週" layer=26 size=17 x=100 y=440 color=darkslateblue visible=true]
 [ptext text="&sf.event_kuroda_1_4" layer=26 size=17 x=400 y=440 color=darkslateblue visible=true]
-[glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=460 color=white]
 [s]
 [cm]
 *end_check_event
@@ -766,6 +766,7 @@ f.para_shujinkou_shukujodo=200;
 *title
 [cm]
 [freeimage layer = 26]
+[bg storage="../fgimage/bg/title.jpg" time=0]
 [eval exp="tf.test_kuroda=false"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
