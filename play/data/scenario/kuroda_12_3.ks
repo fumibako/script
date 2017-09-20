@@ -703,6 +703,7 @@ $('.junbi_girl').remove();
 [endreplay] 
 
 *scene_end
+[eval exp="sf.event_kuroda_12_3 = 1"]
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
