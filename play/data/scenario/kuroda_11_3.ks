@@ -287,7 +287,7 @@
 [wait time=50]
 （いつか見せてくださるかしら。もう少し、打ち解けたいわ）[p]
 [stopbgm]
-
+[eval exp="sf.event_kuroda_11_3 = 1"]
 ;町にお出かけ編、終了（11月第3週）
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]
