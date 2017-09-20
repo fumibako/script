@@ -307,6 +307,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;回想記録終了 
 [endreplay] 
 *scene_end
+[eval exp="sf.event_kuroda_1_4 = 1"]
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
