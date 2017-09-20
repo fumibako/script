@@ -943,6 +943,7 @@ jumpします。[p]
 ;回想記録終了 
 [endreplay] 
 *scene_end
+[eval exp="sf.event_kuroda_9_3 = 1"]
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
