@@ -141,7 +141,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;手紙編終了
 [stopse]
 [stopbgm]
-
+[eval exp="sf.event_kuroda_9_4 = 1"]
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
