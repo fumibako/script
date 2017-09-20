@@ -40,7 +40,7 @@
 [wait time=10]
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
-
+[eval exp="sf.event_kuroda_event_6_1 = 1"]
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 
