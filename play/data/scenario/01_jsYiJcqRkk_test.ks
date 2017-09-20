@@ -758,6 +758,11 @@ f.para_shujinkou_shukujodo=200;
 [freeimage layer = 26]
 @jump target=test
 [s]
+;sf.event_kuroda_6_1  sf.event_kuroda_9_1  sf.event_kuroda_9_3  sf.event_kuroda_9_4
+;sf.event_kuroda_10_3 sf.event_kuroda_10_4 sf.event_kuroda_11_1 sf.event_kuroda_11_2 
+;sf.event_kuroda_11_3 sf.event_kuroda_11_4 sf.event_kuroda_12_2 sf.event_kuroda_12_3 
+;sf.event_kuroda_1_1 sf.event_kuroda_1_4 kuroda_2_2
+
 
 
 *back_test
