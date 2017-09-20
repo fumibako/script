@@ -347,7 +347,7 @@ $(".test_txt").remove();
 [bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
 [wait time=10]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
-[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=200 y=65 color=darkslateblue overwrite=true]
+[ptext name="num_time" text=&sf.ending_Number_of_times layer=26 size=17 x=200 y=65 color=darkslateblue overwrite=true]
 [ptext name="num_times" text="葛城宮ルート既プレイ数(ED除く)＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
 [ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=380 y=85 color=darkslateblue overwrite=true]
 [ptext text="/17" layer=26 size=17 x=400 y=85 color=darkslateblue]

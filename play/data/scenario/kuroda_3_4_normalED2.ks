@@ -173,10 +173,15 @@ $('.1_fore').remove();
 
 ;黒田ルートをクリアした
 [eval exp="tf.ED_kuroda == 1"]
+[if exp="f.okeiko_gamen == true"]
+	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
+[endif]
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
 
-@jump storage="event.ks" target=*event_ED
+[if exp="f.okeiko_gamen == true"]
+	@jump storage="event.ks" target=*event_ED
+[endif]
 
 *window_close
 [cm]

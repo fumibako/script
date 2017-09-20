@@ -127,7 +127,7 @@ $(".26_fore").empty();
 [ptext name=pt text="四条 華織ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold overwrite=true]
 [ptext text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
-[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
+[ptext name="num_time" text=&sf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
 [ptext name="num_times" text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
 [ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
 [ptext name="num_times" text="四条ルート(散策)既プレイ数＝" layer=26 size=17 x=400 y=85 color=darkslateblue]

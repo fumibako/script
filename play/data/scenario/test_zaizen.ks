@@ -356,7 +356,7 @@ $(function(){
 
 [bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
-[ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=210 y=65 color=darkslateblue overwrite=true]
+[ptext name="num_time" text=&sf.ending_Number_of_times layer=26 size=17 x=210 y=65 color=darkslateblue overwrite=true]
 [ptext name="num_times" text="財前ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
 [ptext name="num_time1" text=&tf.event_Number_of_times layer=26 size=17 x=295 y=85 color=darkslateblue overwrite=true]
 [ptext text="/13" layer=26 size=17 x=310 y=85 color=darkslateblue]

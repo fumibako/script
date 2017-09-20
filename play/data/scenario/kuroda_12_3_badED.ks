@@ -298,7 +298,10 @@ $('.junbi_girl').remove();
 [clearfix]
 [cm]
 [resetfont]
-[eval exp="sf.ED_kuroda_bad=1"]
+[eval exp="sf.ED_kuroda_bad = 1"]
+[if exp="f.okeiko_gamen == true"]
+	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
+[endif]
 ;回想記録終了 
 [endreplay] 
 

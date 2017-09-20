@@ -280,8 +280,11 @@ $('.junbi_girl').remove();
 [cm]
 [wait time=10]
 [eval exp="sf.ED_kuroda_good = 1"]
+[if exp="f.okeiko_gamen == true"]
+	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
+[endif]
 ;回想記録終了 
-[endreplay] 
+[endreplay]
 [if exp="f.flag_replay == true"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [イベントシーン終了]

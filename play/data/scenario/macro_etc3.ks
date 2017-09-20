@@ -21,7 +21,8 @@
 	[endreplay] 
 [endif]
 [if exp="f.okeiko_gamen == true"]
-@jump storage="event.ks" target=*event_ED
+	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
+	@jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
 
@@ -40,8 +41,9 @@
 	[eval exp="sf.ED_zaizen_bad2=1"]
 	[endreplay] 
 [endif]
-[if exp="f.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_ED
+[if exp="f.okeiko_gamen == true"]
+	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
+	@jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
 
@@ -57,8 +59,9 @@
 	[eval exp="sf.ED_katuraginomiya_bad=1"]
 	[endreplay] 
 [endif]
-[if exp="f.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_ED
+[if exp="f.okeiko_gamen == true"]
+	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
+	@jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
 
@@ -80,8 +83,9 @@
 	[eval exp="sf.ED_hujieda_bad2=1"]
 	[endreplay] 
 [endif]
-[if exp="f.okeiko_gamen==true"]
-@jump storage="event.ks" target=*event_ED
+[if exp="f.okeiko_gamen == true"]
+	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
+	@jump storage="event.ks" target=*event_ED
 [endif]
 [endmacro]
 
