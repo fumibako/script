@@ -160,6 +160,7 @@
 [stopbgm]
 ;（11月第1週）町で友人に会うイベント終了
 
+[eval exp="sf.event_kuroda_11_1 = 1"]
 ;シナリオのみのテスト中はもどる
 [if exp="tf.test_kuroda==true"]
 [イベントシーン終了]
