@@ -314,7 +314,7 @@ jumpします。[p]
 [eval exp="f.omiai_kettei = 1"]
 ;回想記録終了 
 [endreplay] 
-
+[eval exp="sf.event_kuroda_9_1 = 1"]
 [if exp="tf.test_kuroda==true"]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [イベントシーン終了]
