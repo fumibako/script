@@ -665,8 +665,8 @@
 ;=======================================================================================
 ;100~103移動
 ;=======================================================================================
-;◆↓手紙一通分の到着判定処理(開始)：『怪談』(お見合い前) sijyou_fumi100 sijyou_kaidan_1
-[if exp="f.sijyou_fumi_toutyakumachi_kaidan == 0 && f.sijyou_omiai == 0 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[104] == 0"]
+;◆↓手紙一通分の到着判定処理(開始)：『怪談』(お見合い前→事件解決前のみへ変更) sijyou_fumi100 sijyou_kaidan_1
+[if exp="f.sijyou_fumi_toutyakumachi_kaidan == 0 && f.sijyou_event6 == 0 && f.fumi_toutyaku_sijyou[104] == 0"]
   [call target=*sijyou_toutyaku_hantei_shori_common]
    @jump storage=01_sijyou_fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_sijyou_104
   [endif]
