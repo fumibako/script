@@ -339,7 +339,7 @@ $(".test_txt").remove();
 [eval exp="sf.event_katuragi_sansaku2 = 0"]
 [endif]
 [eval exp="tf.event_sansaku_Number_of_times = sf.event_katuragi_sansaku1 + sf.event_katuragi_sansaku2"]
-[eval exp="tf.event_Number_of_times = sf.event_katuragi_event_1 + sf.event_katuragi_event_2 + sf.event_katuragi_event_3 + sf.event_katuragi_6_1 + sf.event_katuragi_9_1 + sf.event_katuragi_9_3 + sf.event_katuragi_9_4 + sf.event_katuragi_10_2 + sf.event_katuragi_10_3 + sf.event_katuragi_11_1 + sf.event_katuragi_11_4 + sf.event_katuragi_12_1 + sf.event_katuragi_1_3 + sf.event_katuragi_2_2 + sf.event_katuragi_bazar + tf.event_sansaku_Number_of_times"]
+;[eval exp="tf.event_Number_of_times = sf.event_katuragi_event_1 + sf.event_katuragi_event_2 + sf.event_katuragi_event_3 + sf.event_katuragi_6_1 + sf.event_katuragi_9_1 + sf.event_katuragi_9_3 + sf.event_katuragi_9_4 + sf.event_katuragi_10_2 + sf.event_katuragi_10_3 + sf.event_katuragi_11_1 + sf.event_katuragi_11_4 + sf.event_katuragi_12_1 + sf.event_katuragi_1_3 + sf.event_katuragi_2_2 + sf.event_katuragi_bazar + tf.event_sansaku_Number_of_times"]
 [if exp="tf.bg == 1"]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 [wait time=10]
