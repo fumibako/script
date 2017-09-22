@@ -893,15 +893,21 @@ $(".1_fore").empty();
 私の心に浮かんだ、彼の人を想えば……。[p]
 ;========================================================================
 [autosave]
-;要望が多いのではじめからの表示にします。
-[if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true"]
+;好感度も「1」程、上がるので「29or19」にしています　区切りが悪いと気になられるのでしたら上がり値含めて調整してください
+[if exp="f.para_katuraginomiya_koukando >= 19 && (f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true)"]
 [glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=500 y=80 color=white]
 [endif]
 [if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
 [glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=500 y=130 color=white]
 [endif]
+;好感度２９以上で表示
+[if exp="f.para_sijyou_koukando >= 29 || tf.test_sijyou == true"]
 [glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[endif]
+[if exp="f.para_zaizen_koukando >= 29 || tf.test_sijyou == true"]
 [glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
+[endif]
+[if exp="f.para_kuroda_koukando >= 29 || tf.test_sijyou == true"]
 [glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
 [endif]
 [s]
@@ -1295,6 +1301,11 @@ _　お手紙から財前様は、とても現実的で[r]
 
 ;==========================================================
 *comon
+;淑女度が低い場合、あげます
+[if exp="f.para_shujinkou_shukujodo < 20"]
+[eval exp="f.para_shujinkou_shukujodo = f.para_shujinkou_shukujodo + 2"]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;藤枝の選択肢を選んだ場合に表示
 [if exp="f.haduki_hujieda == 1"]
@@ -1302,6 +1313,13 @@ _　お手紙から財前様は、とても現実的で[r]
 [else]
 （明日も、お手紙を出しましょう）[p]
 [endif]
+
+;それでも、淑女度が低い場合、お知らせ。文章は変更してください。なるべく前向きな形かつどのルートでも合うように濁しています
+[if exp="f.para_shujinkou_shukujodo < 20"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（それに、もっと淑女らしく……）[p]
+[endif]
+
 #
 彼の人を想えば、ずいぶんと心軽やかになったのであった。[p]
 *end_Q
