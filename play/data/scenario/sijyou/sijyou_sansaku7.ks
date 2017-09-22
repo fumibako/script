@@ -186,7 +186,7 @@ $('.saku1').remove();
 #
 [四条真剣]
 [whosay name="華織" color="olivedrab"]
-「待って！[名前]さん」[p]
+「待って！　[名前]さん」[p]
 ;[主人公口開]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -257,7 +257,7 @@ $('.saku1').remove();
 [四条頬染め]
 [freeimage layer=13 time=400]
 [wait time=400]
-「 これからは、ずっと繋いで歩いて行けたらいいね」 [p]
+「これからは、ずっと繋いで歩いて行けたらいいね」 [p]
 ;にこりと笑って
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
@@ -348,7 +348,8 @@ $('.saku1').remove();
 ;ふたりで香水を選ぶ
 [四条口開]
 [whosay name="華織" color="olivedrab"]
-「そうだね。ただ、ここは海外の香水店を見習って調香できる店なんだ。[r]
+「そうだね。[r]
+[sp]ただ、ここは海外の香水店を見習って調香できる店なんだ。[r]
 [sp]入ろうか」[p]
 ;場面転換のお知らせなのだけどセリフが不自然かも
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -467,7 +468,7 @@ jumpします。[p]
 「こっちは、優しい香りみたいだね」 [p]
 ;説明する　カタカナ使ってもいい？
 [whosay name="調香店主" color=%mp.color]
-「そちらの”ぱるふぁん”は、”ふろーらる”系で、特に"愛に効く香り"として[r]
+「そちらの"ぱるふぁん"は、"ふろーらる"系で、特に"愛に効く香り"として[r]
 [sp]重宝されてますよ」[p]
 [whosay name="華織" color="olivedrab"]
 ;～～～驚きつつ困惑照れ～～～
@@ -724,7 +725,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ええと……こうかしら？）[p]
 [whosay name="調香店主" color=%mp.color]
-「 華織様。　そこは、つけて差し上げては如何でしょうか？　」[p]
+「華織様。　そこは、つけて差し上げては如何でしょうか？　」[p]
 #
 ;======================================
 [四条退場]
@@ -777,7 +778,7 @@ jumpします。[p]
 [主人公真剣]
 ;↑のほうが爽やか？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様、私、よくわからないので、ぜひお願いします」[p]
+「華織様。　私、よくわからないので、ぜひお願いします」[p]
 [whosay name="華織" color="olivedrab"]
 「わかりました、待ってくださいね」[p]
 #
@@ -1180,8 +1181,8 @@ jumpします。[p]
 [主人公目通常]
 [主人公ポーズ片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(そういえば、私のお父様とお母様は、どの様にしてお近づきになられた[r]
-[sp]のでしょう？）[p]
+（そういえば、私のお父様とお母様は、[r]
+[sp]どの様にしてお近づきになられたのでしょう？）[p]
 ;↓つながり確認用ラベルです(◆jsYiJcqRkk
 *otousamaga
 #
