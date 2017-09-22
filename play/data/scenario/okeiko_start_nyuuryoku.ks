@@ -155,8 +155,8 @@
 [ptext text="8月以前の↑散策イベント 1=表示,0=非表示" layer=29 size=12 x=10 y=585 color=darkslateblue bold=bold]
 [edit left=75 top=560 width=50 length=200 maxchars=3 name="tf.event_sansaku_hyouji_before_au" height=20]
 
-[ptext text="クリア回数" layer=29 size=10 x=10 y=590 color=darkslateblue bold=bold]
-[edit left=10 top=620 width=50 length=200 maxchars=3 name="sf.ending_Number_of_times" height=20]
+[ptext text="クリア回数" layer=29 size=10 x=10 y=600 color=darkslateblue bold=bold]
+[edit left=90 top=600 width=50 length=200 maxchars=3 name="sf.ending_Number_of_times" height=20]
 
 [iscript]
 //入力済デフォルト値の設定
