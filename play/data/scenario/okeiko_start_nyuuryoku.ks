@@ -155,10 +155,12 @@
 [ptext text="8月以前の↑散策イベント 1=表示,0=非表示" layer=29 size=12 x=10 y=585 color=darkslateblue bold=bold]
 [edit left=75 top=560 width=50 length=200 maxchars=3 name="tf.event_sansaku_hyouji_before_au" height=20]
 
-
+[ptext text="クリア回数" layer=29 size=10 x=10 y=590 color=darkslateblue bold=bold]
+[edit left=10 top=620 width=50 length=200 maxchars=3 name="sf.ending_Number_of_times" height=20]
 
 [iscript]
 //入力済デフォルト値の設定
+$("input[name='sf.ending_Number_of_times]").val(sf.ending_Number_of_times);
 $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
 $("input[name='f.para_zaizen_koukando']").val(f.para_zaizen_koukando);
 $("input[name='f.para_katuraginomiya_koukando']").val(f.para_katuraginomiya_koukando);
@@ -226,6 +228,7 @@ $("input[name='f.fumi_fumiya_11_4']").val("4"); //文矢手紙後お箏練習
 *test_settei_kettei
 ;入力値を数値化。入力値確定処理時に入力フォームが表示されている必要あり。公式リファレンス[commit]より(フォームを消したらエラーが出ました)
 [iscript]
+sf.ending_Number_of_times = parseInt($("input[name='sf.ending_Number_of_times']").val());
 tf.test_zaizen_fumi_hensin_speed = parseInt($("input[name='tf.test_zaizen_fumi_hensin_speed']").val());
 f.para_zaizen_koukando = parseInt($("input[name='f.para_zaizen_koukando']").val());
 f.zaizen_au = parseInt($("input[name='f.zaizen_au']").val());
@@ -335,8 +338,11 @@ alert("9月以降ですがルートが決定してません");
 [endif]
 
 [endif]
-
-
+[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4 ) &&  (sf.ending_Number_of_times == undefined || sf.ending_Number_of_times <= 1)"]
+[iscript]
+alert("このままだと怪談のイベントは表示されません");
+[endscript]
+[endif]
 
 
 ;入力ミス確認アラート　進めれるようにアラートのみ！
