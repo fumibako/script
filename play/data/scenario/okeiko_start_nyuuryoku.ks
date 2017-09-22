@@ -338,7 +338,7 @@ alert("9月以降ですがルートが決定してません");
 [endif]
 
 [endif]
-[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4 ) &&  (sf.ending_Number_of_times == undefined || sf.ending_Number_of_times <= 1)"]
+[if exp="(f.okeiko_month == 8 && f.okeiko_week == 4 ) &&  (sf.ending_Number_of_times == undefined || sf.ending_Number_of_times < 1)"]
 [iscript]
 alert("このままだと怪談のイベントは表示されません");
 [endscript]
