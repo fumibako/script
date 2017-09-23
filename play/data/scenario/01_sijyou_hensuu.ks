@@ -62,6 +62,7 @@ f.sijyou_fumi_toutyakumachi_sports = -1;
 f.sijyou_fumi_toutyakumachi_sintya = -1;
 f.sijyou_fumi_toutyakumachi_satuki = -1;
 f.sijyou_fumi_toutyakumachi_aburidasi = -1;
+f.sijyou_fumi_toutyakumachi_kaidan = -1;
 [endscript]
 
 ;◆攻略キャラ配列
