@@ -144,8 +144,8 @@
 *fumi_toutyaku_hujieda_4
 [if exp="f.okeiko_gamen == true"]
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　三」";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　三」";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「時には翼を休めて」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「時には翼を休めて」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi03");
@@ -219,7 +219,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 ;【立ち絵】主人公　ほほえみ
 [主人公柔和ほほえみ１]
-「私もお手紙を返せるといいのだけれど」[p]
+「私も、お手紙を返せるといいのだけれど」[p]
 [fadeoutbgm time=3000]
 #
 ;次のイベントにでてしまう名前残りを消去
