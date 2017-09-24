@@ -78,8 +78,8 @@
 *fumi_toutyaku_hujieda_3
 [if exp="f.okeiko_gamen == true"]
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　二」";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　二」";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「貴方様の[ruby text=こと]箏の調べ」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「貴方様の[ruby text=こと]箏の調べ」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi02");
@@ -105,7 +105,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [r]
 [sp]この手紙は貴方様に届いていますでしょうか？　[r]
 [r]
-[sp]また貴方様の[ruby text=こと]箏の音を聞きました。[r]
+[sp]また貴方様の[ruby text=こと]箏の調べを聞きました。[r]
 少し上達されましたね。心から嬉しく想います。[r]
 [r]
 [sp]母は[ruby text=こと]箏が、とても上手で、その音色が好きでした。[r]
@@ -116,10 +116,10 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [r][sp]
 [sp]貴方の音は初々しく楚々とした調べです。[r]
 [sp]つま弾く音は、どの音も、とても丁寧な響きを持っていて[r]
-今後基礎を覚えたらどんな風に曲を奏でるのか楽しみです。
+今後、基礎を覚えたらどんな風に曲を奏でるのか楽しみです。
 [sp][r]
-[sp]極めることは貴方様の為にもなると思います。[r]
-[sp]続けることは嫌な事もありますが、喜びも多くあります。[r]
+[sp]極めることは、貴方様の為にもなると思います。[r]
+[sp]続けることは、嫌な事もありますが、喜びも多くあります。[r]
 [r]
 [sp]また貴方様の[ruby text=こと]箏の音を聴けることを願っています。[p]
 [if exp="f.okeiko_gamen == true"]
