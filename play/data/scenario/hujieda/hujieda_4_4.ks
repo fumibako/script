@@ -89,7 +89,7 @@
 *fumi_toutyaku_hujieda_2
 [if exp="f.okeiko_gamen == true"]
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　一」";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「[ruby text=こと]箏の音に惹かれて」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi01");
@@ -98,7 +98,7 @@ f.fumi_list_all_location_fumi.push(1);
 f.fumi_list_hujieda_location_fumi = [];
 f.fumi_list_hujieda_location_fumi[0] = 1;
 f.fumi_list_hujieda_title = [];
-f.fumi_list_hujieda_title[0] = "四月 「鳩の届けた手紙 一」";
+f.fumi_list_hujieda_title[0] = "四月 「[ruby text=こと]箏の音に惹かれて」";
 f.fumi_list_hujieda_target = [];
 f.fumi_list_hujieda_target[0] = "*hujieda_fumi01";
 f.hensin_list_hairetsu[4][1] = -1;
