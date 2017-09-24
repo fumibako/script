@@ -24,7 +24,7 @@
 私は、六段の調べの四段まで弾けるようになっていた。[p]
 ;私はが多いためページ分け。私はを消すと意味がわかりにくい
 
-お[ruby text=こと]箏をかき鳴らしながら、私は、よく鳥文の君の事を考えている。[p]
+お[ruby text=こと]箏をかき鳴らすと、つい鳥文の君の事を考えてしまう。[p]
 
 ;要約すると　私はよくAを考えている　という地の文になり、いまいち結論が抽象的
 ;最近の私は、お[ruby text=こと]箏をかき鳴らすと、つい鳥文の君の事を考えてしまう。[p]
@@ -39,7 +39,7 @@
 ;【立ち絵】主人公　目伏せ　不安そう
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
-（もう一月も経つけど、鳥文の君へ。　私の手紙は届いているかしら……)[p]
+（もう一月も経つけど、鳥文の君へ。　私のお手紙は届いているかしら……)[p]
 [主人公目閉]
 （鳩さんは、たまに来るけれど、お手紙は[ruby text=くく]括り付いてないわ）[p]
 
@@ -73,7 +73,7 @@
 ;はやる気持ちに着地した鳩の足の手紙をさっと解く。[p]↓
 ;はやる気持ちで、着地した鳩の足に括りつけられていた手紙をさっと解く。[p]結論まで長いので下にします。
 ;鳩は翼を畳んで、おき入りの場所に着地した。これをつける場合は、下記に鳩はいらない
-はやる気持ちで、鳩の足に括りつけられていた手紙をさっと解く。[p]
+はやる気持ちを抑えて、鳩の足に括りつけられていた手紙をさっと解く。[p]
 
 [fadeoutbgm time=2000]
 
@@ -85,8 +85,8 @@
 *fumi_toutyaku_hujieda_6
 [if exp="f.okeiko_gamen == true"]
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　五」";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　五」";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「謝辞とお別れを」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「謝辞とお別れを」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi05");
@@ -155,7 +155,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 「そんな！　これが最後のお手紙なの？」[p]
 
 （でも、確かに磯野やお父様に話したら、[r]
-[sp]きっと手紙を交わす事を反対されてしまうわ）[p]
+[sp]きっとお手紙を交わす事を反対されてしまうわ）[p]
 [主人公憂い]
 （どうしたらいいの？）[p]
 #
@@ -177,7 +177,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [主人公通常]
 [主人公口開]
 「ねえ！　磯野。[r]
-[sp]郵便屋さんは、いつも何時ぐらいにくるのかしら？」[p]
+[sp]郵便屋さんは、いつも何時ぐらいに来られるのかしら？」[p]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様！　最近は随分と淑女らしくおなりでしたのに[r]
@@ -187,7 +187,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
 「ごめんなさい。[r]
-[sp]……それで郵便は何時頃に届くものなの？」[p]
+[sp]……それで郵便は何時頃に届くものなのですか？」[p]
 
 [whosay name=磯野 color="dimgray"]
 「いつも[ruby text=じゅう]十時頃でしょうか……。[r]
@@ -198,7 +198,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
  [主人公困り]
  [主人公汗]
  [主人公口開]
-「いえ……手紙を交わしている方の手紙が気になって……」[p]
+「いえ……お手紙を交わしている方の手紙が気になって……」[p]
 
 [whosay name=磯野 color="dimgray"]
 「そうでございますか、[r]
@@ -212,7 +212,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 ;シーンが被るので上に↓
 [fadeoutbgm time=3000]
 [主人公目閉]
-（直接話しては手紙を交わした事が分ってしまうわ）[p]
+（直接話してはお手紙を交わした事が分ってしまうわ）[p]
 #
 [主人公効果消]
 
