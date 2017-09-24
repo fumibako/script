@@ -23,7 +23,7 @@
 [主人公ほほえみ]
 「お手紙書けたわ！」[p]
 [主人公目閉]
-（私からの手紙も喜んでくださるかしら？） [p]
+（私からのお手紙も喜んでくださるかしら？） [p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -39,7 +39,7 @@
 
 鳥文の君へ[l][r]
 [r]
-[sp]初めてお手紙を差し上げます。[r]
+[sp]初めて御手紙を差し上げます。[r]
 [sp]貴方様の事を鳥文の君と書いてもいいでしょうか？[r]
 私は[名字]　[名前]と申します。[r]
 [r]
@@ -63,7 +63,7 @@
 ――どんな方なんだろうと。[r]
 [sp]よければ貴方様の事も教えてください。[r]
 [r]
-[sp]お手紙心よりお待ちしています。[r]
+[sp]御手紙心よりお待ちしています。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　かしこ　[r]　　　　　　　　　　　　　　　　　　　　　　　　
 [sp]　　　　　　　　　　　　　　　　　　　　　　[名字]　[名前] [p]
 [fadeoutbgm time=3000]
@@ -89,7 +89,7 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
 [wait time=10]
 [主人公目通常]
-まもなくして、ふわっと[ruby text=こと]箏の上に鳩が止まった。[p]
+まもなくして、ふわっと[ruby text=こと]箏の端に上に鳩が止まった。[p]
 ;端に上に　どちらか
 
 [if exp="sf.BGM=='ON'"]
@@ -104,8 +104,8 @@
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]
-「今日も手紙が[ruby text=くく]括ってあるわね。[r]
-[sp]……ありがとう。 今日は私もお返事をかいたの。 待ってね」[p]
+「今日もお手紙が[ruby text=くく]括ってあるわ。[r]
+[sp]……ありがとう。 今日は私もお返事をお書きしたのです。 待って下さいね」[p]
 
 ;【SE】衣擦れ（スッ）
 [playse storage=kinuzure.ogg loop=false ]
@@ -143,8 +143,8 @@
 
 *fumi_toutyaku_hujieda_5
 [iscript]
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　四」";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「鳩の届けた手紙　四」";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「ひときわの成長に喜びを」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「ひときわの成長に喜びを」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi04");
@@ -226,7 +226,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [主人公口ほほえみ]
 [主人公頬染め]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（最近は文を付けないで来ることも、たまにあるけど[r]
+（最近は、鳩さんは文を付けないで来ることも、たまにあるけど[r]
 [sp]私の[ruby text=こと]箏が気に入ってくれたのね)[p]
 [主人公目閉]
 (……いつか鳥文の君に会えるのかしら)[p]
