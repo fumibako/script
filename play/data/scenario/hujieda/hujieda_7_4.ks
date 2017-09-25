@@ -89,8 +89,8 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
 [wait time=10]
 [主人公目通常]
-まもなくして、ふわっと[ruby text=こと]箏の端に上に鳩が止まった。[p]
-;端に上に　どちらか
+まもなくして、ふわっと[ruby text=こと]箏の上に鳩が止まった。[p]
+
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】夕涼み（お稽古パートなど
