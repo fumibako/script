@@ -45,10 +45,10 @@
 「あ！　待って！」[p]
 
 #
-私は鳩さんを追いかけた。[r]
+私は鳩を追いかけた。[r]
 白い霧が立ち込め、視界が白く染まる。[p]
 
-お[ruby text=こと]箏を爪びく音がした。[p]
+お[ruby text=こと]箏の爪びく音がした。[p]
 ;箏SE
 ;【SE】お箏（短くド・レ…）
 [playse storage=koto_dore.ogg loop=false ]
@@ -60,7 +60,7 @@
 
 
 [whosay name=？？？]
-「貴方の[ruby text=こと]箏の音を聞き続けたい」[p]
+「貴方の[ruby text=こと]箏の音で心が癒されました」[p]
 [bg wait=true method='crossfade' storage="../fgimage/bg/B4nFWraU42/bg_moon_lake.jpg" time=1000]
 [wait time=10]
 [eval exp="f.haikei_credit='illustration by＠名無しさん１'"]
@@ -73,7 +73,7 @@
 
 [whosay name=？？？]
 「貴方がお[ruby text=こと]箏のお稽古をし続けるなら[r]
-[sp]僕は、お手紙をださずにはいられないでしょう」[p]
+[sp]僕は、手紙をださずにはいられないでしょう」[p]
 ;【SE】お箏ぽい音（3秒ほどのトレモロとキラキラ）
 [playse storage=kotopoi_kira.ogg loop=false ]
 
