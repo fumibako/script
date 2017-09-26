@@ -215,7 +215,7 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("変化と永遠について
 [iscript]
 f.wadai_hairetsu_number=f.wadai_list_hairetsu.length;
 f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
-f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("怪談についての話題",2,2,2,2,2,"a","","","","");
+f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("怪談についての話題",2,2,2,2,1,"a","","","","");
 [endscript]
 『怪談についての話題』を手に入れました。[r]
 お稽古パートをはじめます。[p]
