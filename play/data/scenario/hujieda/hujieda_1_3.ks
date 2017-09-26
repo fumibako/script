@@ -208,7 +208,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公口ほほえみ]
 
 #
-時子さんへの手紙の中に、藤枝様への手紙も入れた。[r]
+時子さんへの手紙の中に、藤枝様への手紙も入れた。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私の気持ちをご存じでいらっしゃるなら、[r]
