@@ -111,7 +111,7 @@
 「鳩さん！」[p]
 #
 最近、暑くなってきたのでお稽古部屋の障子も開けたままにしている。[r]
-それを知っているのか、鳩は迷うことなくお[ruby text=こと]箏の上に[ruby text=と]留まった。[p]
+そして、鳩は迷うことなくお[ruby text=こと]箏の上に[ruby text=と]留まった。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り
@@ -132,7 +132,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口通常]
 [主人公目閉じ]
-（うまく弾けないから、きっと呆れているかしら？）[p]
+（うまく弾けないから、きっと呆れていらっしゃるかしら？）[p]
 
 [fadeoutbgm time=3000]
 
@@ -216,6 +216,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 ;【SE】紙を折る（丁寧）
 [playse storage=paper_oru.ogg loop=false ]
+
+#
+励まされて、嬉しさがこみ上げ心が温かくなった。[p]
 
 ;【立ち絵】主人公　ほほえみ
 [主人公柔和ほほえみ１]
