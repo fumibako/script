@@ -30,7 +30,7 @@
 [endif]
 
 [whosay name=磯野 color="dimgray"]
-「三宮様からの手紙です。[r]
+「三宮様からのお手紙です。[r]
 [sp]すっかりお嬢様が立ち直られたようで、三宮様には感謝しないと[r]
 [sp]いけませんね」[p]
 
@@ -108,8 +108,7 @@
 [playse storage=isono_out.ogg loop=false ]
 
 #
-磯野の足音が遠ざかるのを確認し、手紙の封を切り[r]
-時子さんからの手紙を読む。[p]
+磯野の足音が遠ざかるのを確認し、手紙の封を切り、読んだ。[p]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
@@ -183,13 +182,17 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;【SE】ペンで書く
 [playse storage=pen_write.ogg loop=false ]
 
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（藤枝様の夢が叶いますように）
+
 ;【SE】ペンのキャップを閉める
 [playse storage=pen_katya.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公　通常
 [主人公通常]
-「この手紙を出してくれますか？」[p]
+「このお手紙を出してくれますか？」[p]
 
 [whosay name="女中"]
 「かしこまりました……三宮様へですね」[p]
@@ -206,10 +209,13 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公口ほほえみ]
 
 #
-時子さんの手紙の中に、藤枝様への手紙も入れてある。[r]
-きっと私の気持ちをご存じでいらっしゃるなら届けて下さるでしょう。[p]
+時子さんへの手紙の中に、藤枝様への手紙も入れた。[r]
+[主人公通常]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（私の気持ちをご存じでいらっしゃるなら、[r]
+[sp]きっと時子さんは届けて下さるでしょう）[p]
 
-
+[主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……どうか藤枝様へ辿り着きますように）[p]
 [fadeoutbgm time=3000]
