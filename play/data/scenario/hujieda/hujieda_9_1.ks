@@ -78,13 +78,13 @@ jumpします。[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"] 
 「[名前]には、まだ早かったか……。[r] 
-[sp]そういえば、最近はお筝のお稽古に熱心なようだね」[p] 
+[sp]そういえば、最近はお[ruby text=こと]筝のお稽古に熱心なようだね」[p] 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 ;【立ち絵】主人公：通常 
 [主人公通常] 
 [主人公口通常] 
-「ええ！　お筝を極めたいと思っております」[p] 
+「ええ！　お[ruby text=こと]筝を極めたいと思っております」[p] 
 
 [whosay name=&sf.father_name color="DarkSlateBlue"] 
 「それは良いことだな。 お稽古を頑張るなら、[r] 
