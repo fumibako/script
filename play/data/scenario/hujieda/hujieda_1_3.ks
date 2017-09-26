@@ -182,9 +182,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;【SE】ペンで書く
 [playse storage=pen_write.ogg loop=false ]
 
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-（藤枝様の夢が叶いますように）
+#
+私はすぐに手紙をしたためた。[p]
 
 ;【SE】ペンのキャップを閉める
 [playse storage=pen_katya.ogg loop=false ]
@@ -210,12 +209,12 @@ f.fumi_all_number=f.fumi_all_number + 1;
 
 #
 時子さんへの手紙の中に、藤枝様への手紙も入れた。[r]
-[主人公通常]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私の気持ちをご存じでいらっしゃるなら、[r]
 [sp]きっと時子さんは届けて下さるでしょう）[p]
 
-[主人公目閉じ]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （……どうか藤枝様へ辿り着きますように）[p]
 [fadeoutbgm time=3000]
