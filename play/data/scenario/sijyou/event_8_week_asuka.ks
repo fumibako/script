@@ -233,6 +233,7 @@ $(".1_fore").empty();
 （ふう。[r]
 [sp]このお部屋、行事がない限りは使わないけれど、[r]
 [sp]天井のシミがどことなく顔にみえて、近寄りがたいのだったわ）[p]
+[autosave]
 [whosay name="飛鳥紗代子"]
 「どうしましたの、[名前]さん？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
