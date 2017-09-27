@@ -43,6 +43,7 @@ $(".1_fore").empty();
 #
 いつもより、硬い表情で磯野が手紙を差し出す。[r]
 不思議に思いつつも、私は手紙を手に取った。[p]
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 (どうしたのかしら？）[p]
@@ -331,7 +332,7 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 「ありがとう。　すぐ向かいます」[p]
-
+[autosave]
 #
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
@@ -373,7 +374,7 @@ $(".1_fore").empty();
 [wait time=10]
 
 [sp]今日のお嬢様は、[ruby text=りん]凛となされて、一段とお綺麗でございます」[p]
-
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「ありがとう磯野。[sp]では、私、行って参ります」[p]
