@@ -57,6 +57,7 @@ $(".29_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 (どなたかしら？)[p]
+[autosave]
 [whosay name=四条親戚]
 「突然、話し掛けて申し訳ございません。[r]
 [sp]私は四条家の親戚にあたる四条[ruby text=ゆき]幸[ruby text=よ]代という[ruby text=もの]者です」[p]
@@ -514,6 +515,7 @@ $(".29_fore").empty();
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
+[autosave]
 （でも、デェトを楽しみたいし、幸代様ご自身で話されると[r]
 [sp][ruby text="おっしゃ"]仰ってましたから[ruby text="う"]迂[ruby text="かつ"]闊に話さない方が良いのかしら？)[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
