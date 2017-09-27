@@ -53,7 +53,7 @@
 「鳩さん！」[p]
 ;#
 ;やってきた鳩には、手紙が括りつけてあった。[p]
-（鳩さんに手紙が括りつけてあるわ）[p]
+（鳩さんに手紙が[ruby text=くくり]括りつけてあるわ）[p]
 
 #
 [主人公口通常]
@@ -159,7 +159,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [fadeoutbgm time=3000]
 #
 私はお手紙をそっと抱きしめた。[p]
-
+;ここは手紙？
 #
 ;次のイベントにでてしまう名前残りを消去
 
