@@ -1334,8 +1334,8 @@ _　お手紙から財前様は、とても現実的で[r]
 （ふぅ。猫様にしては、ずいぶんと大きな音でしたわね）[p]
 ;【SE】軽い足音（フェードアウト）
 [playse storage=girl_out_walk.ogg loop=false ]
-[暗転２ time=1000]
-[wait time=1000]
+[暗転２ time=400]
+[wait time=100]
 [暗転]
 ;話題追加作業をありがとうございます。↓一旦暗転してから空白のメッセージウィンドウが表示されるのはすこしシュールに感じましたので、ウィンドウを消去します◆jsYiJcqRkk
 ;会話ウィンドウ消去
@@ -1349,7 +1349,7 @@ _　お手紙から財前様は、とても現実的で[r]
 ;[layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『怪談についての話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('怪談についての話題',2,2,2,2,2,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('怪談についての話題',2,2,2,2,1,'a','','','','')"]
 [eval exp="sf.event_8_week_asuka = 1"]
 [er]
 [イベントシーン終了]
