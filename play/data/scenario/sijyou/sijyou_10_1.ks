@@ -121,6 +121,7 @@
 ;○四条の苦悩シーン
 [whosay name="四条母" color="#9B608B"]
 「[華衣]！ 勝手に手紙を捨てるのはやめて頂戴！」[p]
+[autosave]
 [whosay name="四条 華衣" color=%mp.color]
 「うるさい！ 華織のせいであの人が死んだんだ！」[p]
 [whosay name="四条祖父" color="#888898"]
@@ -153,7 +154,7 @@
 @layopt layer=13 visible=true
 [whosay name="四条祖父" color="#888898"]
 「華織……なんで」[p]
-
+[autosave]
 ;【音楽フェード停止】
 [fadeoutbgm time=3000]
 [四条憂い]
@@ -192,7 +193,7 @@
 
 [主人公目閉じ]
 （どうしましょう）[p]
-
+[autosave]
 [whosay name="磯野" color="dimgray"]
 「お嬢様。 文矢様にお手紙を書かれてはいかがでしょうか？」[p]
 
