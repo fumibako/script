@@ -98,6 +98,7 @@
 [wait time=10]
 [主人公伏目パチ1回]
 [wait time=10]
+[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [if exp="f.para_shujinkou_shukujodo >= 200"]
 （私の傍に居たいとお思いになられなくしまったのでしょうか？）[p]
@@ -126,7 +127,7 @@
 （いっそ、華織様とのお付き合いをやめてしまった方がいいのでしょうか）[p]
 （そうしたら、私は、幸せになれたのでしょうか？）[p]
 [endif]
-
+[autosave]
 #
 私は、心の深淵に引き寄せられるように、違う方を選んだ未来を想像してしまった。[p]
 #
