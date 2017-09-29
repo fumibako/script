@@ -108,7 +108,7 @@
 [playse storage=isono_out.ogg loop=false ]
 
 #
-磯野の足音が遠ざかるのを確認し、手紙の封を切り、読んだ。[p]
+磯野の足音が遠ざかるのを確認し、そっと手紙の封を切った。[p]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
