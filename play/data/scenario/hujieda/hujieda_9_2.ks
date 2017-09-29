@@ -158,7 +158,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 ;===================================
 [fadeoutbgm time=3000]
 #
-私はお手紙をそっと抱きしめた。[p]
+私は手紙をそっと抱きしめた。[p]
 ;ここは手紙？
 #
 ;次のイベントにでてしまう名前残りを消去
