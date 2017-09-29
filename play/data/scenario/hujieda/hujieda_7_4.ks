@@ -170,7 +170,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]盛夏のみぎり、[r]
 [r]
 [sp]先日、貴方様の演奏を聴きました。[r]
-音色がとても暖かく優しい響いていました。[r]
+音色がとても暖かく優しく響いていました。[r]
 [r]
 [sp]以前聴いた痛々しさはどこにもなく[r]
 澄んだ音をかき鳴らされています。[r]
