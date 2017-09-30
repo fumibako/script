@@ -213,7 +213,7 @@ $('.omoide1').remove();
 [layopt layer=27 visible=true]
 
 [mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="和風素材.com 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc text="(c)www.wafusozai.com 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
 [mtext name=cc text="ゆうあかり 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext name=cc text="赤いガラスの宮殿 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  wait=false]
 [mtext name=cc text="フリー素材屋Hoshino 写真提供者 usagi_s 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc  wait=false]
