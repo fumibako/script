@@ -109,7 +109,7 @@ background:#beb7e8;
 <!--<a href="http://www7.plala.or.jp/S_H_Binary/kaze/index.html" style="text-decoration:none;">　</a>　<a href="http://www7.plala.or.jp/S_H_Binary/kaze/tkouza.html" style="text-decoration:none;">　</a>-->
         <br>
         <img src="./data/image/h3.png"><b>背景</b><br>
-	・　<a href="http://www.wafusozai.com/" style="text-decoration:none;">和風素材.com 様</a><br>
+	・　<!--<a href="http://www.wafusozai.com/" style="text-decoration:none;">-->(c)www.wafusozai.com 様<!--</a>--><br>
 	・　<a href="http://light77.sakura.ne.jp/" style="text-decoration:none;">ゆうあかり 様</a><br>
 	・　<a href="http://www.geocities.jp/redglass_palace/" style="text-decoration:none;">赤いガラスの宮殿 様</a><br>
 	・　<a href="http://www.s-hoshino.com/" style="text-decoration:none;">フリー素材屋Hoshino 写真提供者 usagi_s 様</a><br>
