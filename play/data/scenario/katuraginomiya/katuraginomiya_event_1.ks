@@ -249,7 +249,7 @@ jumpします。[p]
 
 [whosay name="三宮　時子" color="#c25232"]
 「ええ、今上帝の甥御様に当たる親王様よ。[r]
-[sp]でも女嫌いで手紙をだされなくて、話が出ても、ことごとく[r]
+[sp]でも女嫌いでお手紙をだされなくて、お話が出ても、ことごとく[r]
 [sp]破談にしていらっしゃると噂なの」[p]
 
 [主人公目パチ1回]
@@ -266,7 +266,7 @@ jumpします。[p]
 [wait time=10]
 [whosay name="三宮　時子" color="#c25232"]
 「いいえ。社交辞令は言われない方だから、あなたが気に入ったのだわ。[r]
-[sp]きっと、あなたに手紙を送るつもりなのよ」[p]
+[sp]きっと、あなたにお手紙を送るつもりなのよ」[p]
 
 ;【立ち絵】主人公 驚
 [主人公驚]
@@ -533,7 +533,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [主人公目を開く]
 [主人公通常]
 [whosay name=磯野 color="dimgray"]
-「ですが実際に手紙を出されているのです。  葛城宮殿下の事を[r]
+「ですが実際にお手紙を出されているのです。  葛城宮殿下の事を[r]
 [sp]お調べしておきます」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
