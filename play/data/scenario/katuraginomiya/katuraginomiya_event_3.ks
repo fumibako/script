@@ -143,7 +143,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口開]
-「招待を受けますわ」[p]
+「招待をお受けしますわ」[p]
 
 
 ;【立ち絵】主人公 照れ目普通
@@ -378,7 +378,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;【立ち絵】主人公 微笑み[r]
 [主人公目閉]
 （私は、いつもの様に自分らしく振る舞おう。殿下が好意を寄せて[r] 
-[sp]下さったことに自信を持つのだわ）[p] 
+[sp]下さったことに自信を持ちましょう）[p] 
 #
 ;[葛城宮退場]
 [葛城宮退場準備 storage="bg/bg_katuraginomiya_gosyo_in.jpg" time=300]
@@ -507,7 +507,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;==========================スクリプトここまで=========================================================
 
 
-数日後、正式に皇室からのお手紙を頂いた。[p]
+数日後、正式に皇室からの手紙を頂いた。[p]
 
 ;===================スクリプト・全画面表示からの復帰準備=================================
 [resetfont]
@@ -546,7 +546,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 縁子内親王殿下は、貴方を晴仁殿下の婚約者候補として、[r]
 容認する意向をお示しになりました。[p]
 [sp][r][r][r]
-[sp]ですが、他にも何人か晴仁親王殿下の婚約者は挙がっており、
+[sp]ですが、他にも何人か晴仁親王殿下の婚約者候補は挙がっており、
 [r]その何人かの方は、皇族又は皇族に連なる方です。[r]
 [sp]貴方や晴仁親王殿下もそれを[ruby text=わきま]弁えた上で[r]
 今後も節度をもってお手紙を交わすようにされますように。[r]
