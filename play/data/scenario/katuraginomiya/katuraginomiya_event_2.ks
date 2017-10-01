@@ -107,7 +107,7 @@ jumpします。[p]
 [暗転２終了 time=800]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
-「鷹司殿！」[p]
+「[名字]殿！」[p]
 
 ;【立ち絵】葛城宮 通常
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_yoko.png" time=0]
@@ -208,7 +208,7 @@ jumpします。[p]
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-（手紙をいただきはじめてから、ずっと気になっていたこと）[p]
+（お手紙をいただきはじめてから、ずっと気になっていたこと）[p]
 
 ;【立ち絵】葛城宮 ため息
 [葛城宮目伏]
