@@ -293,7 +293,7 @@ $(".hujieda_10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 
 [if exp="sf.event_hujieda_10_3 == 1"]
 [iscript]
-$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".hujieda_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [image name="day,hujieda_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true]
 [else]
