@@ -100,6 +100,7 @@ $(".1_fore").empty();
 *set_position
 
 ;左位置
+[eval exp="tf.x0 = 50"]
 [eval exp="tf.x1 = 70"]
 ;二桁↓左位置
 [eval exp="tf.x1_2 = 50"]
@@ -123,8 +124,10 @@ $(".1_fore").empty();
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;四条6_1
+[image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
 [image name="day,day6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
 ;四条9_1
+[image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true]
 [image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true]
 ;四条9_2
 [image name="day,day9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true]
