@@ -140,6 +140,11 @@ $(".1_fore").empty();
 ;四条2_2" 
 [image name="day,day2_2" storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true]
 
+
+*test
+[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=500 color=white]
+[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=550 color=white]
+
 *common
 ;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
 [iscript]
@@ -153,6 +158,7 @@ $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 }
 if(sf.event_sijyou_9_1 == 1)){
 $(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
 if(sf.event_sijyou_9_2 == 1)){
 $(".day9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 }
@@ -188,7 +194,4 @@ $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 }
 [endscript]
 
-*test
-[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=500 color=white]
-[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=550 color=white]
 [s]
