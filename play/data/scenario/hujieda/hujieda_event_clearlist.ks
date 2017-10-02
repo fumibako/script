@@ -84,7 +84,7 @@ $(".1_fore").empty();
 [eval exp="tf.x1_2 = 50"]
 ;左位置2
 [eval exp="tf.x0_1 = 250"]
-[eval exp="tf.x2 = 280"]
+[eval exp="tf.x2 = 285"]
 ;二桁↓左位置
 [eval exp="tf.x2_2 = 275"]
 ;左位置3
@@ -119,7 +119,7 @@ $(".1_fore").empty();
 
 ;達成数
 [ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
-[ptext text="/?? =" layer=26 size=21 x=680 y=40 color=snow]
+[ptext text="/13　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
@@ -144,8 +144,8 @@ $(".1_fore").empty();
 [image name="day,hujieda_6_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true]
 [image name="day,hujieda_6_4" storage="../image/day6_4.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true]
 ;sf.event_hujieda_7_4
-[image name="day,hujieda_4_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true]
-[image name="day,hujieda_4_4" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true]
+[image name="day,hujieda_7_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true]
+[image name="day,hujieda_7_4" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true]
 ;sf.event_hujieda_8_4
 [image name="day,hujieda_8_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true]
 [image name="day,hujieda_8_4" storage="../image/day8_4.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true]
@@ -271,72 +271,72 @@ $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 [iscript]
 $(".hujieda_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
+[image name="day,hujieda_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,hujieda_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
+[image name="day,hujieda_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_10_1 == 1"]
 [iscript]
 $(".hujieda_10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
+[image name="day,hujieda_10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
 [else]
-[image name="day,hujieda_10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
+[image name="day,hujieda_10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_10_3 == 1"]
 [iscript]
 $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y3 visible=true]
+[image name="day,hujieda_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true]
 [else]
-[image name="day,hujieda_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y3 visible=true]
+[image name="day,hujieda_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_11_1 == 1"]
 [iscript]
 $(".hujieda_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
 [else]
-[image name="day,hujieda_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_11_3 == 1"]
 [iscript]
 $(".hujieda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y5 visible=true]
+[image name="day,hujieda_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
 [else]
-[image name="day,hujieda_11_3r" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y5 visible=true]
+[image name="day,hujieda_11_3r" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_12_3 == 1"]
 [iscript]
 $(".hujieda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_12_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y6 visible=true]
+[image name="day,hujieda_12_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
 [else]
-[image name="day,hujieda_12_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y6 visible=true]
+[image name="day,hujieda_12_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_1_3 == 1"]
 [iscript]
 $(".hujieda_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y7 visible=true]
+[image name="day,hujieda_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [else]
-[image name="day,hujieda_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y7 visible=true]
+[image name="day,hujieda_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_2_3 == 1"]
 [iscript]
 $(".hujieda_2_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_2_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y8 visible=true]
+[image name="day,hujieda_2_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y8 visible=true]
 [else]
-[image name="day,hujieda_2_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y8 visible=true]
+[image name="day,hujieda_2_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y8 visible=true]
 [endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
@@ -344,17 +344,17 @@ $(".hujieda_2_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
+[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_sansaku1 == 1"]
 $(".hujieda_sansaku").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
 [else]
-[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
 [endif]
 
 
