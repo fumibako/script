@@ -111,8 +111,8 @@ $(".1_fore").empty();
 [eval exp="tf.x0_2 = 520"]
 [eval exp="tf.x3 = 550"]
 ;左位置4
-[eval exp="tf.x0_2 = 820"]
-[eval exp="tf.x3 = 850"]
+[eval exp="tf.x0_3 = 620"]
+[eval exp="tf.x4 = 650"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
