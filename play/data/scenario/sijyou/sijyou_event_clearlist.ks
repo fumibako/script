@@ -354,7 +354,7 @@ $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
-[if exp="sf.event_sijyou_sansaku_1 == 1"]
+[if exp="sf.event_sijyou_sansaku == 1"]
 [iscript]
 $(".sansaku_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
