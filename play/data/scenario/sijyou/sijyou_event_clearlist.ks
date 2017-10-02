@@ -98,9 +98,15 @@ $(".1_fore").empty();
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
 *set_position
-[eval exp="tf.y_plus_position =50"]
+
+;左位置
 [eval exp="tf.x1 = 70"]
+;二桁↓左位置
+[eval exp="tf.x1_2 = 60"]
+;左位置2
 [eval exp="tf.x2 = 300"]
+;下に連なる行
+[eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
 [eval exp="tf.y2 = tf.y1 + tf.y_plus_position"]
 [eval exp="tf.y3 = tf.y2 + tf.y_plus_position"]
@@ -131,7 +137,7 @@ $(".1_fore").empty();
 ;四条10_3" 
 [image name="day,day10_3" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true]
 ;四条11_1" 
-[image name="day,day11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1 y=&tf.y8 visible=true]
+[image name="day,day11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1_2 y=&tf.y8 visible=true]
 ;四条1_1" 
 [image name="day,day1_1" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
 ;四条1_3" 
