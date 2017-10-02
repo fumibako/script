@@ -232,27 +232,27 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y1 visible=true]
+[image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y1 visible=true]
 [else]
-[image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y1 visible=true]
+[image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_9_1 == 1"]
 [iscript]
 $(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y2 visible=true]
+[image name="day,day9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y2 visible=true]
 [else]
-[image name="day,day9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y2 visible=true]
+[image name="day,day9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_9_2 == 1"]
 [iscript]
 $(".day9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y3 visible=true]
+[image name="day,day9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y3 visible=true]
 [else]
-[image name="day,day9_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y3 visible=true]
+[image name="day,day9_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y3 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_9_3 == 1"]
@@ -268,18 +268,18 @@ $(".day9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y5 visible=true]
+[image name="day,day9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y5 visible=true]
 [else]
-[image name="day,day9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y5 visible=true]
+[image name="day,day9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y5 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_10_1 == 1"]
 [iscript]
 $(".day10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y6 visible=true]
+[image name="day,day10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y6 visible=true]
 [else]
-[image name="day,day10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y6 visible=true]
+[image name="day,day10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y6 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_10_3 == 1"]
@@ -288,16 +288,16 @@ $(".day10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(10
 [endscript]
 [image name="day,day10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y7 visible=true]
 [else]
-[image name="day,day10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y7 visible=true]
+[image name="day,day10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y7 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_11_1 == 1"]
 [iscript]
 $(".day11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y8 visible=true]
+[image name="day,day11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y8 visible=true]
 [else]
-[image name="day,day11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y8 visible=true]
+[image name="day,day11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y8 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_1_1 == 1"]
