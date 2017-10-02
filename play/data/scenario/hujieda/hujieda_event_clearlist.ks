@@ -126,7 +126,7 @@ $(".1_fore").empty();
 [ptext text="&tf.event_Number_of_time" layer=26 size=21 x="&tf.x3+100" y=&tf.y6+20 color=snow]
 [ptext text="/13" layer=26 size=21 x="&tf.x3+150" y=&tf.y6+20 color=snow]
 [ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x2 y=&tf.y6+50 color=snow]
-[ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+80 color=snow]
+[ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x3+100" y=&tf.y6+80 color=snow]
 [ptext text="/2" layer=26 size=21 x="&tf.x3+150" y=&tf.y6+80 color=snow]
 ;=======================================================================================
 ;sf.event_hujieda_4_4
@@ -293,7 +293,7 @@ $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 
 [if exp="sf.event_hujieda_11_1 == 1"]
 [iscript]
-$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".hujieda_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [image name="day,hujieda_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [else]
@@ -311,29 +311,29 @@ $(".hujieda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 
 [if exp="sf.event_hujieda_12_3 == 1"]
 [iscript]
-$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".hujieda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_12_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_12_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_1_3 == 1"]
 [iscript]
-$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".hujieda_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_2_3 == 1"]
 [iscript]
-$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".hujieda_2_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_2_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_2_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
