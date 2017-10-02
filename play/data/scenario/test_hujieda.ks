@@ -277,7 +277,7 @@ $(function(){
 *check_event0
 [freeimage layer = 26]
 [cm]
-@jump target="hujieda/hujieda_event_clearlist.ks."
+@jump target="hujieda/hujieda_event_clearlist.ks"
 [s]
 
 *check_event
