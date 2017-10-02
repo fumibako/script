@@ -137,8 +137,8 @@ $(".1_fore").empty();
 ;名前表示
 [image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=30 visible=true]
 ;達成率
-[ptext text="&tf.event_pasent" layer=26 size=17 x=450 y=30 color=darkslateblue]
-[ptext text="%" layer=26 size=17 x=500 y=30 color=darkslateblue]
+[ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
+[ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
 
 ;四条6_1
 [image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
