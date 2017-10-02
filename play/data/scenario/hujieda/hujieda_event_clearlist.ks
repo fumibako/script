@@ -122,12 +122,12 @@ $(".1_fore").empty();
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
 ;イベント数　テスト用
-[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
-[ptext text="&tf.event_Number_of_time" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
-[ptext text="/13" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+20 color=snow]
+[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x3 y=&tf.y6 color=snow]
+[ptext text="&tf.event_Number_of_time" layer=26 size=21 x="&tf.x3+100" y=&tf.y6+20 color=snow]
+[ptext text="/13" layer=26 size=21 x="&tf.x3+150" y=&tf.y6+20 color=snow]
 [ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x2 y=&tf.y6+50 color=snow]
 [ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+80 color=snow]
-[ptext text="/2" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+80 color=snow]
+[ptext text="/2" layer=26 size=21 x="&tf.x3+150" y=&tf.y6+80 color=snow]
 ;=======================================================================================
 ;sf.event_hujieda_4_4
 [image name="day,day4_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
@@ -153,14 +153,15 @@ $(".1_fore").empty();
 ;sf.event_hujieda_9_2
 [image name="day,day9_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
 [image name="day,day9_2" storage="../image/day9_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true]
+;左位置2 tf.x0_1  tf.x2 
 ;sf.event_hujieda_9_4
-[image name="day,day9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
+[image name="day,day9_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true]
 [image name="day,day9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true]
 ;sf.event_hujieda_10_1
-[image name="day,day10_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true]
+[image name="day,day10_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true]
 [image name="day,day10_1" storage="../image/day10_1.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true]
 ;sf.event_hujieda_10_3
-[image name="day,day10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true]
+[image name="day,day10_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true]
 [image name="day,day10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true]
 ;sf.event_hujieda_11_1
 [image name="day,day11_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true]
@@ -177,11 +178,12 @@ $(".1_fore").empty();
 ;sf.event_hujieda_2_3
 [image name="day,day2_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y8 visible=true]
 [image name="day,day2_3" storage="../image/day2_3.png"  layer=26 x=&tf.x2 y=&tf.y8 visible=true]
+;左位置3 tf.x0_2 tf.x3 
 ;sf.event_hujieda_bazaar
-[image name="day,hujieda_bazaar" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y1 visible=true]
+[image name="day,hujieda_bazaar" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
 [image name="day,hujieda_bazaar" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true]
 ;sf.event_hujieda_sansaku1 2/3
-[image name="day,hujieda_sansaku" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y2 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true]
 [image name="day,hujieda_sansaku" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true]
 ;====================================================================================================
 *common
@@ -192,23 +194,147 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 ;====================================================================================================
 ;判定処理をまとめます
 [if exp="sf.event_hujieda_4_4 == 1"]
+[iscript]
+$(".hujieda_4_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_4_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_4_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_5_4 == 1"]
+[iscript]
+$(".hujieda_5_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_5_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="hujieda_5_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_6_1 == 1"]
+[iscript]
+$(".hujieda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_6_4 == 1"]
+[iscript]
+$(".hujieda_6_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_6_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_6_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_7_4 == 1"]
+[iscript]
+$(".event_hujieda_7_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,event_hujieda_7_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,event_hujieda_7_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_8_4 == 1"]
+[iscript]
+$(".sf.event_hujieda_8_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_8_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_8_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_9_1 == 1"]
+[iscript]
+$(".hujieda_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_9_2 == 1"]
+[iscript]
+$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_9_4 == 1"]
-[if exp="sf.event_hujieda_10_1 == 1"]
+[iscript]
+$(".hujieda_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
+[if exp="sf.event_hujieda_10_1 == 1"][iscript]
+$(".hujieda_10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_10_3 == 1"]
+[iscript]
+$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_11_1 == 1"]
+[iscript]
+$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_11_3 == 1"]
+[iscript]
+$(".hujieda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_11_3r" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_12_3 == 1"]
+[iscript]
+$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_1_3 == 1"]
+[iscript]
+$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
+
 [if exp="sf.event_hujieda_2_3 == 1"]
-
-
+[iscript]
+$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
 [if exp="sf.event_hujieda_bazaar == 1"]
