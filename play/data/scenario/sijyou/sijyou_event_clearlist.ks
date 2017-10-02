@@ -98,7 +98,7 @@ $(".1_fore").empty();
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.x1 = 150"]
 [eval exp="tf.x2 = 500"]
-[eval exp="tf.y1 = 150"]
+[eval exp="tf.y1 = 130"]
 [eval exp="tf.y2 = tf.y1 + tf.y_plus_position"]
 [eval exp="tf.y3 = tf.y2 + tf.y_plus_position"]
 [eval exp="tf.y4 = tf.y3 + tf.y_plus_position"]
@@ -113,38 +113,82 @@ $(".1_fore").empty();
 *check_event
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
+;四条6_1
+[image name="day,day9_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
 ;四条9_1
-[image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
+[image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true]
 ;四条9_2
-[image name="day" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true]
+[image name="day,day9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true]
 ;四条9_3
-[image name="day" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true]
+[image name="day,day9_3" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true]
 ;四条9_4
-[image name="day" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true]
+[image name="day,day9_4" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true]
 ;四条10_1
-[image name="day" storage="../image/day10_1.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true]
+[image name="day,day10_1" storage="../image/day10_1.png" layer=26 x=&tf.x1 y=&tf.y6 visible=true]
 ;四条10_3" 
-[image name="day" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y6 visible=true]
+[image name="day,day10_3" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true]
 ;四条11_1" 
-[image name="day" storage="../image/day11_1.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true]
+[image name="day,day11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1 y=&tf.y8 visible=true]
 ;四条1_1" 
-[image name="day" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
+[image name="day,day1_1" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
 ;四条1_3" 
-[image name="day" storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true]
+[image name="day,day1_3" storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true]
 ;四条1_4" 
-[image name="day" storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y3 visible=true]
+[image name="day,day1_4" storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y3 visible=true]
 ;四条2_1" 
-[image name="day" storage="../image/day2_1.png" layer=26 x=&tf.x2 y=&tf.y4 visible=true]
+[image name="day,day2_1" storage="../image/day2_1.png" layer=26 x=&tf.x2 y=&tf.y4 visible=true]
 ;四条2_2" 
-[image name="day" storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true]
+[image name="day,day2_2" storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true]
 
 *common
+;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
 [iscript]
 $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
+;判定処理をまとめます
 *hantei_efect
+[iscript]
+if(sf.event_sijyou_event_6_1 == 1){
+$(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_9_1 == 1)){
+$(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+if(sf.event_sijyou_9_2 == 1)){
+$(".day9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_9_3 == 1){
+$(".day9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_9_4 == 1){
+$(".day9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_10_1 == 1){
+$(".day10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_10_3 == 1){
+$(".day10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_11_1 == 1){
+$(".day11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_1_1 == 1){
+$(".day1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_1_3 == 1){
+$(".day1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_1_4 == 1){
+$(".day1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_2_1 == 1){
+$(".day2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+if(sf.event_sijyou_2_2_bazar == 1){
+$(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+}
+[endscript]
 
-
-[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
-[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+*test
+[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=500 color=white]
+[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=550 color=white]
 [s]
