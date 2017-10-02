@@ -139,6 +139,6 @@ $(".1_fore").empty();
 [image storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
 
 *common
-[glink storage="sijyou_test.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
-[glink storage="sijyou_test.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
+[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 [s]
