@@ -106,8 +106,8 @@ $(".1_fore").empty();
 ;二桁↓左位置
 [eval exp="tf.x1_2 = 50"]
 ;左位置2
-[eval exp="tf.x0_1 = 280"]
-[eval exp="tf.x2 = 300"]
+[eval exp="tf.x0_1 = 260"]
+[eval exp="tf.x2 = 280"]
 ;左位置3
 [eval exp="tf.x0_2 = 520"]
 [eval exp="tf.x3 = 550"]
