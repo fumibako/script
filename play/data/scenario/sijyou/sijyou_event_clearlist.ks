@@ -73,7 +73,7 @@ $(".1_fore").empty();
 [if exp="sf.event_sijyou_sansaku_3 == undefined"]
 [eval exp="sf.event_sijyou_sansaku_3 = 0"]
 [endif]
-[if exp="sf.event_sijyou_sansaku4 == undefined"]
+[if exp="sf.event_sijyou_sansaku_4 == undefined"]
 [eval exp="sf.event_sijyou_sansaku4 = 0"]
 [endif]
 [if exp="sf.event_sijyou_sansaku_5 == undefined"]
@@ -101,7 +101,7 @@ $(".1_fore").empty();
 [eval exp="sf.event_sijyou_sansaku_13 = 0"]
 [endif]
 [eval exp="tf.eventSansaku_Number_of_times = sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_2 + sf.event_sijyou_sansaku_3"]
-[eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku4 + sf.event_sijyou_sansaku_5"]
+[eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_4 + sf.event_sijyou_sansaku_5"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_9 + sf.event_sijyou_sansaku_10"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12"]
@@ -150,13 +150,13 @@ $(".1_fore").empty();
 ;達成率
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
-;イベント数（散策除く）
+;イベント数　テスト用
 [ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
 [ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
 [ptext text="/13" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+20 color=snow]
 [ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x2 y=&tf.y6+50 color=snow]
-[ptext text="&tf.eventSansaku_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+100 color=snow]
-[ptext text="/12" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+100 color=snow]
+[ptext text="&tf.eventSansaku_Number_of_times" layer=26 size=21 x="&tf.x2+80" y=&tf.y6+100 color=snow]
+[ptext text="/12" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+80 color=snow]
 
 ;四条6_1
 [image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
@@ -442,9 +442,9 @@ $(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+140" y=&tf.y1 visible=true]
 [else]
-[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+140" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_10 == 1"]
