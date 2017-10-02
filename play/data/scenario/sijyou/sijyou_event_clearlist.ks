@@ -106,8 +106,8 @@ $(".1_fore").empty();
 ;二桁↓左位置
 [eval exp="tf.x1_2 = 50"]
 ;左位置2
-[eval exp="tf.x0_1 = 260"]
-[eval exp="tf.x2 = 280"]
+[eval exp="tf.x0_1 = 250"]
+[eval exp="tf.x2 = 270"]
 ;左位置3
 [eval exp="tf.x0_2 = 520"]
 [eval exp="tf.x3 = 550"]
@@ -200,8 +200,16 @@ $(".1_fore").empty();
 ;sansaku10
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y1 visible=true]
 [image name="day,sansaku_9" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y1 visible=true]
-
-
+;sansaku11
+[image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y2 visible=true]
+[image name="day,sansaku_9" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y2 visible=true]
+;sansaku12
+[image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true]
+[image name="day,sansaku_9" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y3 visible=true]
+;sansaku13
+[image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true]
+[image name="day,sansaku_9" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y4 visible=true]
+;====================================================================================================
 ;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
 ;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
 ;sijyou_sansaku3.ks(9/4~10/1)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ2
