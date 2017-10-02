@@ -160,7 +160,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscipt]
 [endif]
-@jump target=next1
+;@jump target=next1
 
 [if exp="sf.event_sijyou_9_1 == 1"]
 [iscript]
