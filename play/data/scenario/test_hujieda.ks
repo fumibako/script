@@ -66,6 +66,7 @@ $(function(){
 [glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="test9_2" text="9月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 [glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="check_event0" text="クリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=blue]
 
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -271,6 +272,12 @@ $(function(){
 [freeimage layer = 26]
 [cm]
 @jump storage="hujieda/hujieda_6_1.ks"
+[s]
+
+*check_event0
+[freeimage layer = 26]
+[cm]
+@jump target="hujieda/hujieda_event_clearlist.ks.ks"
 [s]
 
 *check_event
