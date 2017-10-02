@@ -97,8 +97,8 @@ $(".1_fore").empty();
 *set_position
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.x1 = 150"]
-[eval exp="tf.x2 = 400"]
-[eval exp="tf.y1 = 100"]
+[eval exp="tf.x2 = 430"]
+[eval exp="tf.y1 = 200"]
 [eval exp="tf.y2 = tf.y1 + tf.y_plus_position"]
 [eval exp="tf.y3 = tf.y2 + tf.y_plus_position"]
 [eval exp="tf.y4 = tf.y3 + tf.y_plus_position"]
@@ -128,15 +128,15 @@ $(".1_fore").empty();
 ;四条11_1" 
 [image storage="../image/day11_1.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true]
 ;四条1_1" 
-[image storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y8 visible=true]
+[image storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
 ;四条1_3" 
-[image storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y9 visible=true]
+[image storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true]
 ;四条1_4" 
-[image storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y10 visible=true]
+[image storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y3 visible=true]
 ;四条2_1" 
-[image storage="../image/day2_1.png" layer=26 x=&tf.x2 y=&tf.y11 visible=true]
+[image storage="../image/day2_1.png" layer=26 x=&tf.x2 y=&tf.y4 visible=true]
 ;四条2_2" 
-[image storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
+[image storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true]
 
 *common
 [glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
