@@ -147,8 +147,8 @@ $(".1_fore").empty();
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
 ;イベント数（散策除く）
 [ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
-[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+20 color=snow]
-[ptext text="/13" layer=26 size=21 x="&tf.x2+50" y=&tf.y6+20 color=snow]
+[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
+[ptext text="/13" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+20 color=snow]
 ;四条6_1
 [image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
 [image name="day,day6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
