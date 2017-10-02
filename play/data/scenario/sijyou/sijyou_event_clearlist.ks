@@ -96,42 +96,42 @@ $(".26_fore").empty();
 *set_position
 [eval exp="tf.x1 = 100"]
 [eval exp="tf.y1 = 100"]
-[eval exp="tf.y2 =tf.y1 + 100"]
-[eval exp="tf.y3 =tf.y2 + 100"]
-[eval exp="tf.y4 =tf.y3 + 100"]
-[eval exp="tf.y5 =tf.y4 + 100"]
-[eval exp="tf.y6 =tf.y5 + 100"]
-[eval exp="tf.y7 =tf.y6 + 100"]
-[eval exp="tf.y8 =tf.y7 + 100"]
-[eval exp="tf.y9 =tf.y8 + 100"]
-[eval exp="tf.y10 =tf.y9 + 100"]
-[eval exp="tf.y11 =tf.y10 + 100"]
+[eval exp="tf.y2 = tf.y1 + 100"]
+[eval exp="tf.y3 = tf.y2 + 100"]
+[eval exp="tf.y4 = tf.y3 + 100"]
+[eval exp="tf.y5 = tf.y4 + 100"]
+[eval exp="tf.y6 = tf.y5 + 100"]
+[eval exp="tf.y7 = tf.y6 + 100"]
+[eval exp="tf.y8 = tf.y7 + 100"]
+[eval exp="tf.y9 = tf.y8 + 100"]
+[eval exp="tf.y10 = tf.y9 + 100"]
+[eval exp="tf.y11 = tf.y10 + 100"]
 
 *check_event
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;四条9_1
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y1 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y1 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条9_2
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条9_3
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y3 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y3 cond="sf.event_sijyou_10_3==1"visible=true]
 ;四条9_4
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y4 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y4 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条10_1
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y5 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y5 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条10_3" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y6 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y6 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条11_1" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y7 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y7 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条1_1" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y8 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y8 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条1_3" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y9 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y9 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条1_4" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y10 cond="sf.event_sijyou_10_3==1"];
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y10 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条2_1" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y11 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y11 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条2_2" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y12 cond="sf.event_sijyou_10_3==1"]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y12 cond="sf.event_sijyou_10_3==1" visible=true]
 
 [s]
