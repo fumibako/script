@@ -114,11 +114,11 @@ $(".1_fore").empty();
 [eval exp="tf.x0_1 = 250"]
 [eval exp="tf.x2 = 265"]
 ;左位置3
-[eval exp="tf.x0_2 = 520"]
-[eval exp="tf.x3 = 550"]
+[eval exp="tf.x0_2 = 510"]
+[eval exp="tf.x3 = 540"]
 ;左位置4
-[eval exp="tf.x0_3 = 720"]
-[eval exp="tf.x4 = 750"]
+[eval exp="tf.x0_3 = 710"]
+[eval exp="tf.x4 = 740"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
@@ -312,45 +312,64 @@ $(".day11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(10
 [iscript]
 $(".day1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day1_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y1 visible=true]
+[image name="day,day1_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y1 visible=true]
 [else]
-[image name="day,day1_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y1 visible=true]
+[image name="day,day1_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_1_3 == 1"]
 [iscript]
 $(".day1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y2 visible=true]
+[image name="day,day1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y2 visible=true]
 [else]
-[image name="day,day1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y2 visible=true]
+[image name="day,day1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_1_4 == 1"]
 [iscript]
 $(".day1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
+[image name="day,day1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y3 visible=true]
 [else]
-[image name="day,day1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
+[image name="day,day1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y3 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_2_1 == 1"]
 [iscript]
 $(".day2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day2_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y4 visible=true]
+[image name="day,day2_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y4 visible=true]
 [else]
-[image name="day,day2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y4 visible=true]
+[image name="day,day2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y4 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_2_2_bazar == 1"]
 [iscript]
 $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y5 visible=true]
+[image name="day,day2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y5 visible=true]
 [else]
-[image name="day,day2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y5 visible=true]
+[image name="day,day2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y5 visible=true]
 [endif]
+[s]
 *test_end
+[cm]
+[iscript]
+$(".26_fore").empty();
+$(".1_fore").empty();
+[endscript]
+[s]
+
+*back_test
+[cm]
+[freeimage layer = 26]
+@jump storage="test.ks"
+[s]
+
+*title
+[cm]
+[freeimage layer = 26]
+;------タイトルへ戻る
+@jump storage="title.ks"
 [s]
