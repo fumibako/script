@@ -97,7 +97,7 @@ $(".1_fore").empty();
 *set_position
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.x1 = 100"]
-[eval exp="tf.x1 = 400"]
+[eval exp="tf.x2 = 450"]
 [eval exp="tf.y1 = 100"]
 [eval exp="tf.y2 = tf.y1 + tf.y_plus_position"]
 [eval exp="tf.y3 = tf.y2 + tf.y_plus_position"]
