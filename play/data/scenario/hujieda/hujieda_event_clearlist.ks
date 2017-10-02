@@ -129,7 +129,7 @@ $(".1_fore").empty();
 [ptext text="/13" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+20 color=snow]
 [ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x4 y=&tf.y6+50 color=snow]
 [ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+80 color=snow]
-[ptext text="/2" layer=26 size=21 x="&tf.x4150" y=&tf.y6+80 color=snow]
+[ptext text="/2" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+80 color=snow]
 ;=======================================================================================
 ;sf.event_hujieda_4_4
 [image name="day,hujieda_4_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
