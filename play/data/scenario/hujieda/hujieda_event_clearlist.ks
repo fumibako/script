@@ -73,7 +73,7 @@ $(".1_fore").empty();
 [eval exp="tf.allEvent_Number_of_times = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
 ;達成率
-[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 15 * 100"]
+[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 18 * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 ;====================================位置指定===========================================
 *set_position
@@ -119,7 +119,7 @@ $(".1_fore").empty();
 
 ;達成数
 [ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
-[ptext text="/13　=" layer=26 size=21 x=680 y=40 color=snow]
+[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
