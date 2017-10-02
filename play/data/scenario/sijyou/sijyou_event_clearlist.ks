@@ -114,26 +114,26 @@ $(".1_fore").empty();
 ;四条9_1
 [image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
 ;四条9_2
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true]
 ;四条9_3
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y3 cond="sf.event_sijyou_10_3==1"visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true]
 ;四条9_4
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y4 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true]
 ;四条10_1
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y5 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true]
 ;四条10_3" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y6 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y6 visible=true]
 ;四条11_1" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y7 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true]
 ;四条1_1" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y8 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y8 visible=true]
 ;四条1_3" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y9 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y9 visible=true]
 ;四条1_4" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y10 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y10 visible=true]
 ;四条2_1" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y11 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y11 visible=true]
 ;四条2_2" 
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y12 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y12 visible=true]
 
 [s]
