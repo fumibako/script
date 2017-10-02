@@ -97,12 +97,10 @@ $(".1_fore").empty();
 [eval exp="sf.event_sijyou_sansaku_13 = 0"]
 [endif]
 [eval exp="tf.eventSnsaku_Number_of_times = "sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_10 + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12 + tf.eventSnsaku_Number_of_times + sf.event_sijyou_sansaku_13 + sf.event_sijyou_sansaku_2 + sf.event_sijyou_sansaku_3 + sf.event_sijyou_sansaku4 + sf.event_sijyou_sansaku_5 + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7 + sf.event_sijyou_sansaku_9"]
-[eval exp="tf.ending_Number_of_times = 0"]
-[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+;達成イベント数
+[eval exp="tf.allEvent_Number_of_times = tf.eventSnsaku_Number_of_times + tf.event_Number_of_times"]
+;達成率
+[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 25 * 100"]
 ;====================================位置指定===========================================
 *set_position
 ;左位置
@@ -134,10 +132,14 @@ $(".1_fore").empty();
 [eval exp="tf.y11 = tf.y10 + tf.y_plus_position"]
 ;=======================================================================================
 *check_event
-;名前表示
-[image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=30 visible=true]
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
+;名前表示
+[image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=30 visible=true]
+;達成率
+[ptext text="&tf.event_pasent" layer=26 size=17 x=450 y=30 color=darkslateblue]
+[ptext text="%" layer=26 size=17 x=500 y=30 color=darkslateblue]
+
 ;四条6_1
 [image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
 [image name="day,day6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
