@@ -100,7 +100,12 @@ $(".1_fore").empty();
 [if exp="sf.event_sijyou_sansaku_13 == undefined"]
 [eval exp="sf.event_sijyou_sansaku_13 = 0"]
 [endif]
-[eval exp="tf.eventSansaku_Number_of_times = sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_2 + sf.event_sijyou_sansaku_3 + sf.event_sijyou_sansaku4 + sf.event_sijyou_sansaku_5 + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7 + sf.event_sijyou_sansaku_9 + sf.event_sijyou_sansaku_10 + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12 + sf.event_sijyou_sansaku_13 "]
+[eval exp="tf.eventSansaku_Number_of_times = sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_2 + sf.event_sijyou_sansaku_3"]
+[eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku4 + sf.event_sijyou_sansaku_5"]
+[eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7"]
+[eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_9 + sf.event_sijyou_sansaku_10"]
+[eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12"]
+[eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_13"]
 ;達成イベント数
 [eval exp="tf.allEvent_Number_of_times = tf.eventSansaku_Number_of_times + tf.event_Number_of_times"]
 ;達成率
@@ -429,22 +434,13 @@ $(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [image name="day,sansaku_7" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y7 visible=true]
 [endif]
 
-[if exp="sf.event_sijyou_sansaku_8 == 1"]
-[iscript]
-$(".sansaku_8").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[image name="day,sansaku_8" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
-[else]
-[image name="day,sansaku_8" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
-[endif]
-
 [if exp="sf.event_sijyou_sansaku_9 == 1"]
 [iscript]
 $(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
 [else]
-[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_10 == 1"]
