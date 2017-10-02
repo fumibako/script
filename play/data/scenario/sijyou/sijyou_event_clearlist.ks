@@ -4,6 +4,11 @@
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+;====================================================================================================
+*test
+;終わったら消す
+[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
+[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
 ;=============================================
 ;変数初期設定
 [eval exp="tf.event_Number_of_times = 0"]
@@ -222,11 +227,6 @@ $(".1_fore").empty();
 ;sijyou_sansaku11.ks(四条ルートのみ、(10月~2月)九月×　三月×　
 ;sijyou_sansaku12.ks(10月~2月)九月×　三月×　
 ;sijyou_sansaku13.ks(10月~2月)九月×　三月×
-;====================================================================================================
-*test
-;終わったら消す
-[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
-[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=650 color=white]
 ;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
