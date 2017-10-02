@@ -694,8 +694,9 @@ sf.ED_hujieda_good=1;
 @jump target=test_page1
 [s]
 
-*check_event01
+*check_event1
 @jump storage="sijyou/syjyou_event_clearlist.ks"
+[s]
 
 *check_event
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
