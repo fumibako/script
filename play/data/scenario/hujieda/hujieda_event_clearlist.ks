@@ -68,7 +68,13 @@ $(".1_fore").empty();
 ;藤枝散策イベントクリア回数
 [eval exp="tf.event_sansaku_Number_of_times = sf.event_hujieda_bazaar + sf.event_hujieda_sansaku"]
 ;藤枝イベントクリア回数
-[eval exp="tf.event_Number_of_times = sf.event_hujieda_4_4 + sf.event_hujieda_5_4 + sf.event_hujieda_6_1 + sf.event_hujieda_6_4 + sf.event_hujieda_7_4 + sf.event_hujieda_8_4 +sf.event_hujieda_9_1 + sf.event_hujieda_9_2 + sf.event_hujieda_9_4 + sf.event_hujieda_10_1 + sf.event_hujieda_10_3 + sf.event_hujieda_11_1 + sf.event_hujieda_11_3 + sf.event_hujieda_12_3 + sf.event_hujieda_1_3 + sf.event_hujieda_2_3 + tf.event_sansaku_Number_of_times"]
+[eval exp="tf.event_Number_of_times = sf.event_hujieda_4_4 + sf.event_hujieda_5_4 + sf.event_hujieda_6_1 + sf.event_hujieda_6_4"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_hujieda_7_4 + sf.event_hujieda_8_4 + sf.event_hujieda_9_1"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_hujieda_9_2 + sf.event_hujieda_9_4"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_hujieda_10_1 + sf.event_hujieda_10_3"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_hujieda_11_1 + sf.event_hujieda_11_3"] 
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times+ sf.event_hujieda_12_3 + sf.event_hujieda_1_3"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times+ sf.event_hujieda_2_3"]
 全てのイベント数　現時点はエンディング除く
 [eval exp="tf.allEvent_Number_of_times = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
