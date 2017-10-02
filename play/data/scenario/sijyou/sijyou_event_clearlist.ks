@@ -136,7 +136,7 @@ $(".1_fore").empty();
 ;四条2_1" 
 [image storage="../image/day2_1.png" layer=26 x=&tf.x1 y=&tf.y11 visible=true]
 ;四条2_2" 
-[image storage="../image/day2_2.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
+[image storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
 
 *common
 [glink storage="sijyou_test.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
