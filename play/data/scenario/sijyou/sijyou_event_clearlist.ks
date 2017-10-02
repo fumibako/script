@@ -123,7 +123,7 @@ $(".1_fore").empty();
 ;=======================================================================================
 *check_event
 ;名前表示
-[image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=300 y=20 visible=true]
+[image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=30 visible=true]
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;四条6_1
