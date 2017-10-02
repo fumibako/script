@@ -217,8 +217,8 @@ $(".1_fore").empty();
 ;====================================================================================================
 *test
 ;終わったら消す
-[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=500 color=white]
-[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=550 color=white]
+[glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
+[glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=650 color=white]
 ;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
@@ -322,18 +322,27 @@ $(".day1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
+[else]
+[image name="day,day1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_2_1 == 1"]
 [iscript]
 $(".day2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day2_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y4 visible=true]
+[else]
+[image name="day,day2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y4 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_2_2_bazar == 1"]
 [iscript]
 $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y5 visible=true]
+[else]
+[image name="day,day2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y5 visible=true]
 [endif]
 *test_end
 [s]
