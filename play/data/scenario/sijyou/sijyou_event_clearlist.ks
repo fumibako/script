@@ -216,85 +216,106 @@ $(".1_fore").empty();
 ;sijyou_sansaku13.ks(10月~2月)九月×　三月×
 ;====================================================================================================
 *test
+;終わったら消す
 [glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=500 color=white]
 [glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=550 color=white]
-
+;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
 [iscript]
 $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
+;====================================================================================================
 ;判定処理をまとめます
 *hantei_efect
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [iscript]
 $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y1 visible=true]
+[image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y1 visible=true]
 [else]
-[image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y1 visible=true]
+[image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y1 visible=true]
 [endif]
-;@jump target=next1
 
 [if exp="sf.event_sijyou_9_1 == 1"]
 [iscript]
 $(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y2 visible=true]
+[image name="day,day9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y2 visible=true]
 [else]
-[image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y2 visible=true]
+[image name="day,day9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y2 visible=true]
 [endif]
-*next1
+
 [if exp="sf.event_sijyou_9_2 == 1"]
 [iscript]
 $(".day9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y3 visible=true]
+[else]
+[image name="day,day9_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y3 visible=true]
 [endif]
 
-*next2
 [if exp="sf.event_sijyou_9_3 == 1"]
 [iscript]
 $(".day9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+100" y=&tf.y3 visible=true]
+[image name="day,day9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y4 visible=true]
 [else]
-[image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+100" y=&tf.y3 visible=true]
+[image name="day,day9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y4 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_9_4 == 1"]
 [iscript]
 $(".day9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y5 visible=true]
+[else]
+[image name="day,day9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y5 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_10_1 == 1"]
 [iscript]
 $(".day10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y6 visible=true]
+[else]
+[image name="day,day10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y6 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_10_3 == 1"]
 [iscript]
 $(".day10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y7 visible=true]
+[else]
+[image name="day,day10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y7 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_11_1 == 1"]
 [iscript]
 $(".day11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+150" y=&tf.y8 visible=true]
+[else]
+[image name="day,day11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+150" y=&tf.y8 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_1_1 == 1"]
 [iscript]
 $(".day1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day1_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y1 visible=true]
+[else]
+[image name="day,day1_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_1_3 == 1"]
 [iscript]
 $(".day1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[image name="day,day1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y2 visible=true]
+[else]
+[image name="day,day1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_1_4 == 1"]
