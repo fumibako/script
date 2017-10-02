@@ -66,6 +66,8 @@ $(function(){
 [glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 [glink target="test10_2" text="10月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="check_event0" text="クリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=blue]
+
 
 [glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test11_1b" text="11月1週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -273,7 +275,11 @@ $(function(){
 [freeimage layer = 26]
 @jump storage="katuraginomiya/katuraginomiya_fumi.ks" target=*katuraginomiya_fumi_kaidan
 [s]
-
+*check_event0
+[cm]
+[freeimage layer = 26]
+@jump storage="katuraginomiyakaturaginomiya_event_clearlist.ks"
+[s]
 *check_event
 [iscript]
 $(".test_txt").remove();
@@ -356,7 +362,7 @@ $(".test_txt").remove();
 [else]
 [ptext text="システムフラグを閉鎖する場合は四条テストの『システムフラグ閉鎖する』ボタンを使用後、ブラウザをリロードしてください。" layer=26 size=15 x=100 y=105 color=darkslateblue]
 [endif]
-[ptext text="6月3週・Ev2" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
+[ptext text="6月3週(or 6月3週)・Ev1" layer=26 size=17 x=100 y=140 color=darkslateblue visible=true]
 [ptext text=&sf.event_katuragi_event_2 layer=26 size=17 x=400 y=140 color=darkslateblue visible=true]
 [ptext text="7月2週・夢Ev" layer=26 size=17 x=100 y=160 color=darkslateblue visible=true]
 [ptext text=&sf.event_katuragi_6_1 layer=26 size=17 x=400 y=160 color=darkslateblue visible=true]
