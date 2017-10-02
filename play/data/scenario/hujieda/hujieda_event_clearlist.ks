@@ -84,7 +84,9 @@ $(".1_fore").empty();
 [eval exp="tf.x1_2 = 50"]
 ;左位置2
 [eval exp="tf.x0_1 = 250"]
-[eval exp="tf.x2 = 265"]
+[eval exp="tf.x2 = 280"]
+;二桁↓左位置
+[eval exp="tf.x2_2 = 275"]
 ;左位置3
 [eval exp="tf.x0_2 = 510"]
 [eval exp="tf.x3 = 540"]
@@ -125,7 +127,7 @@ $(".1_fore").empty();
 [ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x3 y=&tf.y6 color=snow]
 [ptext text="&tf.event_Number_of_time" layer=26 size=21 x="&tf.x3+100" y=&tf.y6+20 color=snow]
 [ptext text="/13" layer=26 size=21 x="&tf.x3+150" y=&tf.y6+20 color=snow]
-[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x2 y=&tf.y6+50 color=snow]
+[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x3 y=&tf.y6+50 color=snow]
 [ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x3+100" y=&tf.y6+80 color=snow]
 [ptext text="/2" layer=26 size=21 x="&tf.x3+150" y=&tf.y6+80 color=snow]
 ;=======================================================================================
@@ -165,16 +167,16 @@ $(".1_fore").empty();
 [image name="day,day10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true]
 ;sf.event_hujieda_11_1
 [image name="day,day11_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true]
-[image name="day,day11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2 y=&tf.y4 visible=true]
+[image name="day,day11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2_2 y=&tf.y4 visible=true]
 ;sf.event_hujieda_11_3
 [image name="day,day11_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true]
-[image name="day,day11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true]
+[image name="day,day11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2_2 y=&tf.y5 visible=true]
 ;sf.event_hujieda_12_3
 [image name="day,day12_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true]
-[image name="day,day12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true]
+[image name="day,day12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2_2 y=&tf.y6 visible=true]
 ;sf.event_hujieda_1_3
 [image name="day,day1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y7 visible=true]
-[image name="day,day1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true]
+[image name="day,day1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2_2 y=&tf.y7 visible=true]
 ;sf.event_hujieda_2_3
 [image name="day,day2_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y8 visible=true]
 [image name="day,day2_3" storage="../image/day2_3.png"  layer=26 x=&tf.x2 y=&tf.y8 visible=true]
@@ -197,143 +199,144 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".hujieda_4_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_4_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_4_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,hujieda_4_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_4_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_5_4 == 1"]
 [iscript]
 $(".hujieda_5_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_5_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_5_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true]
 [else]
-[image name="hujieda_5_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="hujieda_5_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_6_1 == 1"]
 [iscript]
 $(".hujieda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true]
 [else]
-[image name="day,hujieda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_6_4 == 1"]
 [iscript]
 $(".hujieda_6_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_6_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_6_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true]
 [else]
-[image name="day,hujieda_6_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_6_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_7_4 == 1"]
 [iscript]
 $(".event_hujieda_7_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,event_hujieda_7_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,event_hujieda_7_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true]
 [else]
-[image name="day,event_hujieda_7_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,event_hujieda_7_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_8_4 == 1"]
 [iscript]
 $(".sf.event_hujieda_8_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_8_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_8_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
 [else]
-[image name="day,hujieda_8_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_8_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_9_1 == 1"]
 [iscript]
 $(".hujieda_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true]
 [else]
-[image name="day,hujieda_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_9_2 == 1"]
 [iscript]
 $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true]
 [else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_9_4 == 1"]
 [iscript]
 $(".hujieda_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,hujieda_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [endif]
 
-[if exp="sf.event_hujieda_10_1 == 1"][iscript]
+[if exp="sf.event_hujieda_10_1 == 1"]
+[iscript]
 $(".hujieda_10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
 [else]
-[image name="day,hujieda_10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_10_3 == 1"]
 [iscript]
 $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y3 visible=true]
 [else]
-[image name="day,hujieda_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y3 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_11_1 == 1"]
 [iscript]
 $(".hujieda_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y4 visible=true]
 [else]
-[image name="day,hujieda_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y4 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_11_3 == 1"]
 [iscript]
 $(".hujieda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y5 visible=true]
 [else]
-[image name="day,hujieda_11_3r" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_11_3r" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y5 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_12_3 == 1"]
 [iscript]
 $(".hujieda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_12_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_12_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y6 visible=true]
 [else]
-[image name="day,hujieda_12_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_12_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y6 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_1_3 == 1"]
 [iscript]
 $(".hujieda_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y7 visible=true]
 [else]
-[image name="day,hujieda_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y7 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_2_3 == 1"]
 [iscript]
 $(".hujieda_2_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_2_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_2_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y8 visible=true]
 [else]
-[image name="day,hujieda_2_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_2_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y8 visible=true]
 [endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
@@ -341,17 +344,17 @@ $(".hujieda_2_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_sansaku1 == 1"]
-$(".hujieda_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".hujieda_sansaku").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
 [else]
-[image name="day,hujieda_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
 [endif]
 
 
