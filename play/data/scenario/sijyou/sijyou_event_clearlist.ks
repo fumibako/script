@@ -165,7 +165,7 @@ $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [if exp="sf.event_sijyou_9_1 == 1"]
 [iscript]
 $(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
+[endscipt]
 [endif]
 *next1
 [if exp="sf.event_sijyou_9_2 == 1"]
