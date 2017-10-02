@@ -97,14 +97,15 @@ $(".1_fore").empty();
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+;====================================位置指定===========================================
 *set_position
-
 ;左位置
 [eval exp="tf.x0 = 50"]
-[eval exp="tf.x1 = 70"]
+[eval exp="tf.x1 = 30"]
 ;二桁↓左位置
 [eval exp="tf.x1_2 = 50"]
 ;左位置2
+[eval exp="tf.x0_1 = 280"]
 [eval exp="tf.x2 = 300"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
@@ -119,7 +120,7 @@ $(".1_fore").empty();
 [eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
 [eval exp="tf.y11 = tf.y10 + tf.y_plus_position"]
-
+;=======================================================================================
 *check_event
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
@@ -130,26 +131,36 @@ $(".1_fore").empty();
 [image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true]
 [image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true]
 ;四条9_2
+[image name="day,day9_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true]
 [image name="day,day9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true]
 ;四条9_3
+[image name="day,day9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true]
 [image name="day,day9_3" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true]
 ;四条9_4
+[image name="day,day9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true]
 [image name="day,day9_4" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true]
 ;四条10_1
+[image name="day,day10_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true]
 [image name="day,day10_1" storage="../image/day10_1.png" layer=26 x=&tf.x1 y=&tf.y6 visible=true]
-;四条10_3" 
+;四条10_3"
+[image name="day,day10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true]
 [image name="day,day10_3" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true]
 ;四条11_1" 
 [image name="day,day11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1_2 y=&tf.y8 visible=true]
-;四条1_1" 
+;四条1_1"
+[image name="day,day1_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true]
 [image name="day,day1_1" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
-;四条1_3" 
+;四条1_3"
+[image name="day,day1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true]
 [image name="day,day1_3" storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true]
-;四条1_4" 
+;四条1_4"
+[image name="day,day1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true]
 [image name="day,day1_4" storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y3 visible=true]
-;四条2_1" 
+;四条2_1"
+[image name="day,day2_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true]
 [image name="day,day2_1" storage="../image/day2_1.png" layer=26 x=&tf.x2 y=&tf.y4 visible=true]
-;四条2_2" 
+;四条2_2"
+[image name="day,day2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true]
 [image name="day,day2_2" storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true]
 
 
