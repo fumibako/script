@@ -2,6 +2,7 @@
 [cm]
 [iscript]
 $(".26_fore").empty();
+$(".1_fore").empty();
 [endscript]
 ;変数初期設定
 [eval exp="tf.event_Number_of_times = 0"]
@@ -108,9 +109,10 @@ $(".26_fore").empty();
 [eval exp="tf.y11 = tf.y10 + 100"]
 
 *check_event
+[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;四条9_1
-[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y1 cond="sf.event_sijyou_10_3==1" visible=true]
+[image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
 ;四条9_2
 [image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 cond="sf.event_sijyou_10_3==1" visible=true]
 ;四条9_3
