@@ -102,7 +102,7 @@ $(".1_fore").empty();
 ;左位置
 [eval exp="tf.x1 = 70"]
 ;二桁↓左位置
-[eval exp="tf.x1_2 = 60"]
+[eval exp="tf.x1_2 = 50"]
 ;左位置2
 [eval exp="tf.x2 = 300"]
 ;下に連なる行
