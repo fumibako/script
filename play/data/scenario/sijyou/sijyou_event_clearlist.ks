@@ -352,7 +352,128 @@ $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [else]
 [image name="day,day2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y5 visible=true]
 [endif]
+;====================================================================================================
+;判定処理をまとめます 散策
+[if exp="sf.event_sijyou_sansaku_1 == 1"]
+[iscript]
+$(".sansaku_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+155" y=&tf.y1 visible=true]
+[else]
+[image name="day,sansaku_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+155" y=&tf.y1 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_2 == 1"]
+[iscript]
+$(".sansaku_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+155" y=&tf.y2 visible=true]
+[else]
+[image name="day,sansaku_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+155" y=&tf.y2 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_3 == 1"]
+[iscript]
+$(".sansaku_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+155" y=&tf.y3 visible=true]
+[else]
+[image name="day,sansaku_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+155" y=&tf.y3 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_4 == 1"]
+[iscript]
+$(".sansaku_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+155" y=&tf.y4 visible=true]
+[else]
+[image name="day,sansaku_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+155" y=&tf.y4 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_5 == 1"]
+[iscript]
+$(".sansaku_5").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_5" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+155" y=&tf.y5 visible=true]
+[else]
+[image name="day,sansaku_5" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+155" y=&tf.y5 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_6 == 1"]
+[iscript]
+$(".sansaku_6").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_6" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+155" y=&tf.y6 visible=true]
+[else]
+[image name="day,sansaku_6" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+155" y=&tf.y6 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_7 == 1"]
+[iscript]
+$(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_7" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+155" y=&tf.y7 visible=true]
+[else]
+[image name="day,sansaku_7" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+155" y=&tf.y7 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_8 == 1"]
+[iscript]
+$(".sansaku_8").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_8" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+155" y=&tf.y8 visible=true]
+[else]
+[image name="day,sansaku_8" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+155" y=&tf.y8 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_9 == 1"]
+[iscript]
+$(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+155" y=&tf.y1 visible=true]
+[else]
+[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+155" y=&tf.y1 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_10 == 1"]
+[iscript]
+$(".sansaku_10").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_10" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+155" y=&tf.y2 visible=true]
+[else]
+[image name="day,sansaku_10" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+155" y=&tf.y2 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_11 == 1"]
+[iscript]
+$(".sansaku_11").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_11" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+155" y=&tf.y3 visible=true]
+[else]
+[image name="day,sansaku_11" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+155" y=&tf.y3 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_12 == 1"]
+[iscript]
+$(".sansaku_12").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_12" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+155" y=&tf.y4 visible=true]
+[else]
+[image name="day,sansaku_12" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+155" y=&tf.y4 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_13 == 1"]
+[iscript]
+$(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,sansaku_13" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+155" y=&tf.y4 visible=true]
+[else]
+[image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+155" y=&tf.y4 visible=true]
+[endif]
 [s]
+
+
+
 *test_end
 [cm]
 [iscript]
