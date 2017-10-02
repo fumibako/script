@@ -263,7 +263,7 @@ $(".hujieda_9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [endscript]
 [image name="day,hujieda_9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true]
 [else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true]
+[image name="day,hujieda_9_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_9_4 == 1"]
@@ -308,7 +308,7 @@ $(".hujieda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [endscript]
 [image name="day,hujieda_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
 [else]
-[image name="day,hujieda_11_3r" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
+[image name="day,hujieda_11_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
 [endif]
 
 [if exp="sf.event_hujieda_12_3 == 1"]
@@ -349,6 +349,7 @@ $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 [endif]
 
 [if exp="sf.event_hujieda_sansaku == 1"]
+[iscript]
 $(".hujieda_sansaku").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
