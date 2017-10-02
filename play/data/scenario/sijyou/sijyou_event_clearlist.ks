@@ -133,7 +133,6 @@ $(".1_fore").empty();
 [eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
 [eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
-[eval exp="tf.y11 = tf.y10 + tf.y_plus_position"]
 ;=======================================================================================
 *check_event
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
@@ -146,8 +145,9 @@ $(".1_fore").empty();
 ;達成率
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
-;イベント数
-[ptext text="&tf.event_Number_of_times" layer=26 size=21 x=&tf.x2 y=&tf.y9 color=snow]
+;イベント数（散策除く）
+[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
+[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+150" y=&tf.y6 color=snow]
 
 ;四条6_1
 [image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
