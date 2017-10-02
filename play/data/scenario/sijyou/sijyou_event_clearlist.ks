@@ -108,8 +108,11 @@ $(".1_fore").empty();
 [eval exp="tf.x0_1 = 280"]
 [eval exp="tf.x2 = 300"]
 ;左位置3
-[eval exp="tf.x0_2 = 500"]
-[eval exp="tf.x3 = 520"]
+[eval exp="tf.x0_2 = 520"]
+[eval exp="tf.x3 = 550"]
+;左位置4
+[eval exp="tf.x0_2 = 820"]
+[eval exp="tf.x3 = 850"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
@@ -169,23 +172,35 @@ $(".1_fore").empty();
 [image name="day,day2_2" storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true]
 ;===============================================================================================
 ;sansaku1
-[image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
-[image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y1 visible=true]
+[image name="day,sansaku_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
+[image name="day,sansaku_1" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y1 visible=true]
 ;sansaku2
-[image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true]
-[image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y2 visible=true]
+[image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true]
+[image name="day,sansaku_2" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y2 visible=true]
 ;sansaku3
-[image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true]
-[image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y3 visible=true]
+[image name="day,sansaku_3" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true]
+[image name="day,sansaku_3" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y3 visible=true]
 ;sansaku4
-[image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true]
-[image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y4 visible=true]
+[image name="day,sansaku_4" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true]
+[image name="day,sansaku_4" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y4 visible=true]
 ;sansaku5
-[image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y5 visible=true]
-[image name="day,day9_1" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y5 visible=true]
+[image name="day,sansaku_5" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y5 visible=true]
+[image name="day,sansaku_5" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y5 visible=true]
+;sansaku6
+[image name="day,sansaku_6" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y6 visible=true]
+[image name="day,sansaku_6" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y6 visible=true]
+;sansaku7
+[image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y7 visible=true]
+[image name="day,sansaku_7" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y7 visible=true]
+;sansaku9
+[image name="day,sansaku_8" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y8 visible=true]
+[image name="day,sansaku_8" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y8 visible=true]
+;sansaku10
+[image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y1 visible=true]
+[image name="day,sansaku_9" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y1 visible=true]
 
 
-;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生sijyou_sansaku.ks
+;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
 ;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
 ;sijyou_sansaku3.ks(9/4~10/1)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ2
 ;sijyou_sansaku5.ks(9月～９月末　銀座デート前 b）or(11事件解決後～12月 a)
