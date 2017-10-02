@@ -122,7 +122,8 @@ $(".1_fore").empty();
 [eval exp="tf.y11 = tf.y10 + tf.y_plus_position"]
 ;=======================================================================================
 *check_event
-[image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=450 y=50 visible=true]
+;名前表示
+[image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=300 y=20 visible=true]
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;四条6_1
