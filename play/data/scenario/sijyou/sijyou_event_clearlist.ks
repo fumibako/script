@@ -95,18 +95,19 @@ $(".1_fore").empty();
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
 *set_position
+[eval exp="tf.y_plus_position =50"]
 [eval exp="tf.x1 = 100"]
-[eval exp="tf.y1 = 100"]
-[eval exp="tf.y2 = tf.y1 + 100"]
-[eval exp="tf.y3 = tf.y2 + 100"]
-[eval exp="tf.y4 = tf.y3 + 100"]
-[eval exp="tf.y5 = tf.y4 + 100"]
-[eval exp="tf.y6 = tf.y5 + 100"]
-[eval exp="tf.y7 = tf.y6 + 100"]
-[eval exp="tf.y8 = tf.y7 + 100"]
-[eval exp="tf.y9 = tf.y8 + 100"]
-[eval exp="tf.y10 = tf.y9 + 100"]
-[eval exp="tf.y11 = tf.y10 + 100"]
+[eval exp="tf.y1 = 200"]
+[eval exp="tf.y2 = tf.y1 + tf.y_plus_position"]
+[eval exp="tf.y3 = tf.y2 + tf.y_plus_position"]
+[eval exp="tf.y4 = tf.y3 + tf.y_plus_position"]
+[eval exp="tf.y5 = tf.y4 + tf.y_plus_position"]
+[eval exp="tf.y6 = tf.y5 + tf.y_plus_position"]
+[eval exp="tf.y7 = tf.y6 + tf.y_plus_position"]
+[eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
+[eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
+[eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
+[eval exp="tf.y11 = tf.y10 + tf.y_plus_position"]
 
 *check_event
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
@@ -136,4 +137,7 @@ $(".1_fore").empty();
 ;四条2_2" 
 [image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y12 visible=true]
 
+*common
+[glink storage="sijyou_test.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
+[glink storage="sijyou_test.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
 [s]
