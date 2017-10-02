@@ -86,7 +86,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　 財前　美彬[p]
 [sp][r][r]追伸　これから仕事が忙しくなりそうなので[r]
-お手紙のお返事は暫く返せなくなるかもしれません[p]
+手紙のお返事は暫く返せなくなるかもしれません[p]
 [resetfont]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
