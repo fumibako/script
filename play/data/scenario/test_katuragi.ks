@@ -278,7 +278,7 @@ $(function(){
 *check_event0
 [cm]
 [freeimage layer = 26]
-@jump storage="katuraginomiyakaturaginomiya_event_clearlist.ks"
+@jump storage="katuraginomiya/katuraginomiya_event_clearlist.ks"
 [s]
 *check_event
 [iscript]
