@@ -123,9 +123,9 @@ $(".1_fore").empty();
 [image name="c_name1" storage="../image/name_hujieda0.png" layer=26 x=250 y=30 visible=true]
 [endif]
 
-;達成数
-[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
-[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
+;達成数 コメント化
+;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
+;[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
