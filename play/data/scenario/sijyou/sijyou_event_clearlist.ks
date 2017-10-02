@@ -1,4 +1,8 @@
 *start
+[cm]
+[iscript]
+$(".26_fore").empty();
+[endscript]
 ;変数初期設定
 [eval exp="tf.event_Number_of_times = 0"]
 [if exp="sf.event_sijyou_event_6_1 == undefined"]
@@ -104,7 +108,7 @@
 [eval exp="tf.y11 =tf.y10 + 100"]
 
 *check_event
-[bg storage="../fgimage/bg/bg_fumibako" time=0]
+[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;四条9_1
 [image storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y1 cond="sf.event_sijyou_10_3==1"]
 ;四条9_2
