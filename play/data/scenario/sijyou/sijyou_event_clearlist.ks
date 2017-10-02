@@ -9,6 +9,9 @@ $(".1_fore").empty();
 [if exp="sf.event_sijyou_event_6_1 == undefined"]
 [eval exp="sf.event_sijyou_event_6_1 = 0"]
 [endif]
+[if exp="sf.event_sijyou_9_1 == undefined"]
+[eval exp="sf.event_sijyou_9_1 = 0"]
+[endif]
 [if exp="sf.event_sijyou_9_2 == undefined"]
 [eval exp="sf.event_sijyou_9_2 = 0"]
 [endif]
@@ -96,8 +99,8 @@ $(".1_fore").empty();
 [eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
 *set_position
 [eval exp="tf.y_plus_position =50"]
-[eval exp="tf.x1 = 150"]
-[eval exp="tf.x2 = 500"]
+[eval exp="tf.x1 = 100"]
+[eval exp="tf.x2 = 400"]
 [eval exp="tf.y1 = 130"]
 [eval exp="tf.y2 = tf.y1 + tf.y_plus_position"]
 [eval exp="tf.y3 = tf.y2 + tf.y_plus_position"]
@@ -157,6 +160,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscipt]
 [endif]
+;@jump target=test_end
 
 [if exp="sf.event_sijyou_9_1 == 1"]
 [iscript]
@@ -229,5 +233,5 @@ $(".day2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [endif]
-
+*test_end
 [s]
