@@ -76,7 +76,7 @@ $('.list').remove();
 [主人公ほほえみ]
 ;【立ち絵】主人公：微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（財前様の手紙の描き方が柔らかくなったわ）[p]
+（財前様のお手紙の描き方が柔らかくなったわ）[p]
 ;【SE】紙に触れる（カサ）
 
 [if exp="sf.BGM=='ON'"]
