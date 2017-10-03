@@ -1,4 +1,4 @@
-﻿﻿﻿[setreplay name="test"]
+[setreplay name="test"]
 *test
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -55,6 +55,7 @@ $(function(){
 [glink target="test11_1_2" text="11月1週_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 [glink target="test11_bad2" text="11月bad2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 [glink target="test11_1_3" text="11月1週_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
+[glink target="check_event0" text="クリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
 
 [glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test11_4_1" text="11月4週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -298,6 +299,12 @@ $(function(){
 [cm]
 [freeimage layer = 26]
 @jump storage="zaizen/zaizen_fumi.ks" target="zaizen_fumi_kaidan"
+[s]
+
+*check_event0
+[cm]
+[freeimage layer = 26]
+@jump storage="zaizen/zaizen_event_clearlist.ks"
 [s]
 
 *check_event
