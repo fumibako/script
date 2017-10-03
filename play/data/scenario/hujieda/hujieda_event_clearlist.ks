@@ -180,12 +180,13 @@ $(".1_fore").empty();
 [image name="day,hujieda_2_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y8 visible=true]
 [image name="day,hujieda_2_3" storage="../image/day2_3.png"  layer=26 x=&tf.x2 y=&tf.y8 visible=true]
 ;左位置3 tf.x0_2 tf.x3 
-;sf.event_hujieda_bazaar
-[image name="day,hujieda_bazaar" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
-[image name="day,hujieda_bazaar" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true]
 ;sf.event_hujieda_sansaku1 2/3
-[image name="day,hujieda_sansaku" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true]
-[image name="day,hujieda_sansaku" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true]
+;sf.event_hujieda_bazaar
+[image name="day,hujieda_bazaar" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true]
+[image name="day,hujieda_bazaar" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true]
+
 ;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
@@ -339,25 +340,23 @@ $(".hujieda_2_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
-[if exp="sf.event_hujieda_bazaar == 1"]
-[iscript]
-$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
-[else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
-[endif]
-
 [if exp="sf.event_hujieda_sansaku == 1"]
 [iscript]
 $(".hujieda_sansaku").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [endif]
 
-
+[if exp="sf.event_hujieda_bazaar == 1"]
+[iscript]
+$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
+[else]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
+[endif]
 
 [s]
 
