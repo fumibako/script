@@ -100,10 +100,15 @@ $(".1_fore").empty();
 ;散策数
 [eval exp="tf.eventSansaku_Number_of_times = 0"]
 [eval exp="tf.eventSansaku_Number_of_times = sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_2 + sf.event_sijyou_sansaku_3"]
+[trace exp="tf.eventSansaku_Number_of_times"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_4 + sf.event_sijyou_sansaku_5"]
+[trace exp="tf.eventSansaku_Number_of_times"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7"]
+[trace exp="tf.eventSansaku_Number_of_times"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_9 + sf.event_sijyou_sansaku_10"]
+[trace exp="tf.eventSansaku_Number_of_times"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12"]
+[trace exp="tf.eventSansaku_Number_of_times"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_13"]
 ;イベント数
 [eval exp="tf.event_Number_of_times = 0"]
