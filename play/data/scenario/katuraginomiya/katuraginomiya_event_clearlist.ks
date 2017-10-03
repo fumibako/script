@@ -198,9 +198,9 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".katuragi_event_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [endif]
 [if exp="sf.event_katuragi_event_2 == 1"]
 [endif]
@@ -232,7 +232,7 @@ $(".katuragi_event_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 [endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
-;左位置3"tf.x0_2 tf.x3
+;左位置3"tf.x3
 [if exp="sf.event_katuragi_sansaku1 == 1"]
 [iscript]
 $(".katuragi_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
