@@ -236,6 +236,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 「はい」[r]
 移動します。[p]
 [cm]
+[背景セピア化_解除]
 @jump target=*seen7
 [s]
 
