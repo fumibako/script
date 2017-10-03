@@ -82,7 +82,7 @@ $(".1_fore").empty();
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
 ;達成率
 [eval exp="tf.event_pasent=0"]
-[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 15 * 100"]
+[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 17 * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 ;====================================位置指定===========================================
 *set_position
@@ -121,14 +121,14 @@ $(".1_fore").empty();
 [image name="c_name1" storage="../image/name_katuragi.png" layer=26 x=250 y=30 visible=true]
 ;達成数
 [ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
-[ptext text="/?? =" layer=26 size=21 x=680 y=40 color=snow]
+[ptext text="/17 =" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
 ;イベント数　テスト用
 [ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x4 y=&tf.y6 color=snow]
-[ptext text="&tf.event_Number_of_time" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
-[ptext text="/13" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+20 color=snow]
+[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
+[ptext text="/15" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+20 color=snow]
 [ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x4 y=&tf.y6+50 color=snow]
 [ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+80 color=snow]
 [ptext text="/2" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+80 color=snow]
@@ -178,7 +178,7 @@ $(".1_fore").empty();
 [image name="day,katuragi_2_2" storage="../image/day2_2.png"  layer=26 x="&tf.x2" y=&tf.y6 visible=true]
 ;katuragi_bazar
 [image name="day,katuragi_bazar" storage="../image/day_check.png" layer=26 x="&tf.x0_1" y=&tf.y7 visible=true]
-[image name="day,katuragi_baxar" storage="../image/day2_3.png"  layer=26 x="&tf.x2+20" y=&tf.y7 visible=true]
+[image name="day,katuragi_bazar" storage="../image/day2_3.png"  layer=26 x="&tf.x2+20" y=&tf.y7 visible=true]
 ;左位置3"tf.x0_2 tf.x3
 ;katuragi_sansaku1 2月2週～3月4週・散策1
 [image name="day,katuragi_sansaku1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
@@ -337,17 +337,17 @@ $(".katuragi_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 [iscript]
 $(".katuragi_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
+[image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y1 visible=true]
 [else]
-[image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
+[image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y1 visible=true]
 [endif]
 [if exp="sf.event_katuragi_sansaku2 == 1"]
 [iscript]
 $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
+[image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true]
 [else]
-[image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
+[image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true]
 [endif]
 [s]
 
