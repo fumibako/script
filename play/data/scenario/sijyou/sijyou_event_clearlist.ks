@@ -196,8 +196,8 @@ $(".1_fore").empty();
 [image name="day,day10_3,sijyou_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true]
 [image name="day,day10_3,sijyou_10_3" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true]
 ;四条11_1"
-[image name="day,day11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
-[image name="day,day11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1_2 y=&tf.y8 visible=true]
+[image name="day,day11_1,sijyou_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
+[image name="day,day11_1,sijyou_11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1_2 y=&tf.y8 visible=true]
 ;四条1_1"
 [image name="day,day1_1,sijyou_1_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true]
 [image name="day,day1_1,sijyou_1_1" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
@@ -501,46 +501,46 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 
 [if exp="tf.sijyou_test == true"]
 [iscript]
-$('sijyou_6_1').click(function () {
+$('.sijyou_6_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_6_1.ks"}); 
 });
-$('sijyou_9_1').click(function () {
+$('.sijyou_9_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_1.ks"}); 
 });
-$('sijyou_9_2').click(function () {
+$('.sijyou_9_2').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_2.ks"}); 
 });
-$('sijyou_9_3').click(function () {
+$('.sijyou_9_3').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_3.ks"}); 
 });
-$('sijyou_9_4').click(function () {
+$('.sijyou_9_4').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_4.ks"}); 
 });
-$('sijyou_10_1').click(function () {
+$('.sijyou_10_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_10_1.ks"}); 
 });
-$('sijyou_10_2').click(function () {
+$('.sijyou_10_2').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_10_2.ks"}); 
 });
-$('sijyou_10_3').click(function () {
+$('.sijyou_10_3').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_10_3.ks"}); 
 });
-$('sijyou_10_4').click(function () {
+$('.sijyou_10_4').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_10_4.ks"}); 
 });
-$('sijyou_11_1').click(function () {
+$('.sijyou_11_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_11_1b.ks"}); 
 });
-$('sijyou_1_1').click(function () {
+$('.sijyou_1_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_1_1b.ks"}); 
 });
-$('sijyou_1_3').click(function () {
+$('.sijyou_1_3').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_1_3.ks"}); 
 });
-$('sijyou_1_4').click(function () {
+$('.sijyou_1_4').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_1_4.ks"}); 
 });
-$('sijyou_2_1').click(function () {
+$('.sijyou_2_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_2_1b.ks"}); 
 });
 [endscript]
