@@ -55,7 +55,6 @@ $(function(){
 [glink target="test11_1_2" text="11月1週_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
 [glink target="test11_bad2" text="11月bad2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
 [glink target="test11_1_3" text="11月1週_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
-[glink target="check_event0" text="クリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
 
 [glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
 [glink target="test11_4_1" text="11月4週_1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
@@ -82,6 +81,7 @@ $(function(){
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test_fumi_tuika" text="手紙追加分" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="check_event0" text="クリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 
 [glink target="page_0" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=pink]
 @jump target=*common
