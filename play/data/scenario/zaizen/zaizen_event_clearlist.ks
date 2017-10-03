@@ -93,7 +93,7 @@ $(".1_fore").empty();
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 [bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;名前表示
-[image name="c_name1" storage="../image/name_katuragi.png" layer=26 x=250 y=30 visible=true]
+[image name="c_name1" storage="../image/name_zaizen.png" layer=26 x=250 y=30 visible=true]
 ;達成数
 [ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 [ptext text="/?? =" layer=26 size=21 x=680 y=40 color=snow]
@@ -110,7 +110,7 @@ $(".1_fore").empty();
 ;=======================================================================================
 ;sf.event_zaizen_event_6_1
 [image name="day,zaizen_event_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
-[image name="day,zaizen_event_6_1" storage="../image/day6_2.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true]
+[image name="day,zaizen_event_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true]
 ;sf.event_zaizen_9_1
 [image name="day,zaizen_event_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true]
 [image name="day,zaizen_event_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true]
@@ -259,11 +259,11 @@ $(".zaizen_event_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 ;左位置3 tf.x3
 [if exp="sf.event_zaizen_sansaku_2_1 == 1"]
 [iscript]
-$(".zaizen_event_2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".zaizen_sansaku_2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,zaizen_event_2_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
+[image name="day,zaizen_sansaku_2_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,zaizen_event_2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
+[image name="day,zaizen_sansaku_2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_zaizen_sansaku_bazar == 1"]
