@@ -141,7 +141,7 @@ $(".1_fore").empty();
 [image name="day,zaizen_event_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true]
 ;sf.event_zaizen_1_3
 [image name="day,zaizen_event_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true]
-[image name="day,zaizen_event_1_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true]
+[image name="day,zaizen_event_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true]
 ;左位置3 tf.x0_2 tf.x3
 ;sf.event_zaizen_sansaku_2_1
 [image name="day,zaizen_sansaku_2_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
