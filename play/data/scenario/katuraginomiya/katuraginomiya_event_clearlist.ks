@@ -124,12 +124,12 @@ $(".1_fore").empty();
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
 ;イベント数　テスト用
-[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
+[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x4 y=&tf.y6 color=snow]
 [ptext text="&tf.event_Number_of_time" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
-[ptext text="/13" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+20 color=snow]
-[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x2 y=&tf.y6+50 color=snow]
-[ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+80 color=snow]
-[ptext text="/2" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+80 color=snow]
+[ptext text="/13" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+20 color=snow]
+[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x4 y=&tf.y6+50 color=snow]
+[ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+80 color=snow]
+[ptext text="/2" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+80 color=snow]
 ;=======================================================================================
 ;katuragi_event_1   !! 6/2 or 6/3 !!
 [image name="day,katuragi_event_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
@@ -194,11 +194,11 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 ;判定処理をまとめます
 [if exp="sf.event_katuragi_event_1 == 1"]
 [iscript]
-$(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".katuragi_event_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [else]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
 [if exp="sf.event_katuragi_event_2 == 1"]
 [endif]
@@ -229,22 +229,23 @@ $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 [if exp="sf.event_katuragi_bazar == 1"]
 [endif]
 ;====================================================================================================
-;判定処理をまとめます
+;判定処理をまとめます 散策
+;左位置3"tf.x0_2 tf.x3
 [if exp="sf.event_katuragi_sansaku1 == 1"]
 [iscript]
 $(".katuragi_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true]
 [endif]
 [if exp="sf.event_katuragi_sansaku2 == 1"]
 [iscript]
 $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
 [else]
-[image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
 [endif]
 [s]
 
