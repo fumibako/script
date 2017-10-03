@@ -254,7 +254,7 @@ $(".zaizen_event_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 [else]
 [image name="day,zaizen_event_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
 [endif]
-
+;==================================================================================-
 [if exp="sf.event_zaizen_sansaku_2_1 == 1"]
 [iscript]
 $(".zaizen_event_2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
@@ -272,3 +272,25 @@ $(".zaizen_sansaku_bazar").css({'filter': 'brightness(100%)','-webkit-filter': '
 [else]
 [image name="day,zaizen_sansaku_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
 [endif]
+[s]
+;==================================================================================-
+*test_end
+[cm]
+[iscript]
+$(".26_fore").empty();
+$(".1_fore").empty();
+[endscript]
+[s]
+
+*back_test
+[cm]
+[freeimage layer = 26]
+@jump storage="test.ks"
+[s]
+
+*title
+[cm]
+[freeimage layer = 26]
+;------タイトルへ戻る
+@jump storage="title.ks"
+[s]
