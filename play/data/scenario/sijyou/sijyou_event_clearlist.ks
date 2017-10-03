@@ -504,6 +504,9 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 $('.sijyou_6_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_6_1.ks"}); 
 });
+[endscript]
+[s]
+[iscript]
 $('.sijyou_9_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_1.ks"}); 
 });
