@@ -70,7 +70,7 @@ $(".1_fore").empty();
 [eval exp="sf.event_sijyou_sansaku_3 = 0"]
 [endif]
 [if exp="sf.event_sijyou_sansaku_4 == undefined"]
-[eval exp="sf.event_sijyou_sansaku4 = 0"]
+[eval exp="sf.event_sijyou_sansaku_4 = 0"]
 [endif]
 [if exp="sf.event_sijyou_sansaku_5 == undefined"]
 [eval exp="sf.event_sijyou_sansaku_5 = 0"]
@@ -100,9 +100,7 @@ $(".1_fore").empty();
 ;散策数
 [eval exp="tf.eventSansaku_Number_of_times = 0"]
 [eval exp="tf.eventSansaku_Number_of_times = sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_2 + sf.event_sijyou_sansaku_3"]
-[iscript]
-alert(tf.eventSansaku_Number_of_times);
-[endscript]
+
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_4 + sf.event_sijyou_sansaku_5"]
 [iscript]
 alert(tf.eventSansaku_Number_of_times);
