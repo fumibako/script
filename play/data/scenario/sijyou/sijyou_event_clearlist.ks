@@ -100,23 +100,10 @@ $(".1_fore").empty();
 ;散策数
 [eval exp="tf.eventSansaku_Number_of_times = 0"]
 [eval exp="tf.eventSansaku_Number_of_times = sf.event_sijyou_sansaku + sf.event_sijyou_sansaku_2 + sf.event_sijyou_sansaku_3"]
-
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_4 + sf.event_sijyou_sansaku_5"]
-[iscript]
-alert(tf.eventSansaku_Number_of_times);
-[endscript]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_6 + sf.event_sijyou_sansaku_7"]
-[iscript]
-alert(tf.eventSansaku_Number_of_times);
-[endscript]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_9 + sf.event_sijyou_sansaku_10"]
-[iscript]
-alert(tf.eventSansaku_Number_of_times);
-[endscript]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12"]
-[iscript]
-alert(tf.eventSansaku_Number_of_times);
-[endscript]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_13"]
 ;イベント数
 [eval exp="tf.event_Number_of_times = 0"]
@@ -180,12 +167,12 @@ alert(tf.eventSansaku_Number_of_times);
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
 ;イベント数　テスト用
-[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
-[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
-[ptext text="/13" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+20 color=snow]
-[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x2 y=&tf.y6+50 color=snow]
-[ptext text="&tf.eventSansaku_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+80 color=snow]
-[ptext text="/12" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+80 color=snow]
+;[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
+;[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
+;[ptext text="/13" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+20 color=snow]
+;[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x2 y=&tf.y6+50 color=snow]
+;[ptext text="&tf.eventSansaku_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+80 color=snow]
+;[ptext text="/12" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+80 color=snow]
 
 ;四条6_1
 [image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
