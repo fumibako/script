@@ -112,7 +112,17 @@ $(".1_fore").empty();
 [eval exp="tf.y6 = tf.y5 + tf.y_plus_position"]
 [eval exp="tf.y7 = tf.y6 + tf.y_plus_position"]
 [eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
-[eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]]
+[eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
+;================================移動ボタン=======================================================
+[button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda/event_clearlist_kuroda.ks"]
+[button name="c_name1" graphic="name_sijyou.png" y=550 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
+[button name="c_name1" graphic="name_zaizen.png" y=550 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
+[button name="c_name1" graphic="name_katuragi.png" y=550 x=550 storage="katuraginomiya/katuraginomiya_event_clearlist.ks"]
+[if exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_8_4 == 1"]
+[button name="c_name1" graphic="name_hujieda.png" y=550 x=700 storage="hijieda/hijieda_event_clearlist.ks"]
+[elsif exp="sf.event_hujieda_4_4 == 1"]
+[button name="c_name1" graphic="name_hujieda0.png" y=550 x=700 storage="hijieda/hujieda_event_clearlist.ks"]
+[endif]
 ;=======================================================================================
 *check_event
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
@@ -126,12 +136,12 @@ $(".1_fore").empty();
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
 ;イベント数　テスト用
-[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x4 y=&tf.y6 color=snow]
-[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+20 color=snow]
-[ptext text="/15" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+20 color=snow]
-[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x4 y=&tf.y6+50 color=snow]
-[ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+80 color=snow]
-[ptext text="/2" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+80 color=snow]
+;[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x4 y=&tf.y6 color=snow]
+;[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+20 color=snow]
+;[ptext text="/15" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+20 color=snow]
+;[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x4 y=&tf.y6+50 color=snow]
+;[ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+80 color=snow]
+;[ptext text="/2" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+80 color=snow]
 ;=======================================================================================
 ;katuragi_event_1   !! 6/2 or 6/3 !!
 [image name="day,katuragi_event_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
