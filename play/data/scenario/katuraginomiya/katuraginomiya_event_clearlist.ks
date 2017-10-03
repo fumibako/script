@@ -93,7 +93,9 @@ $(".1_fore").empty();
 [eval exp="tf.x1_2 = 50"]
 ;左位置2
 [eval exp="tf.x0_1 = 250"]
-[eval exp="tf.x2 = 265"]
+[eval exp="tf.x2 = 275"]
+;二桁↓左位置2
+[eval exp="tf.x2_2 = 265"]
 ;左位置3
 [eval exp="tf.x0_2 = 510"]
 [eval exp="tf.x3 = 540"]
@@ -161,13 +163,13 @@ $(".1_fore").empty();
 [image name="day,katuragi_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true]
 ;katuragi_11_1
 [image name="day,katuragi_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true]
-[image name="day,katuragi_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true]
+[image name="day,katuragi_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2_2 y=&tf.y2 visible=true]
 ;katuragi_11_4
 [image name="day,katuragi_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true]
-[image name="day,katuragi_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true]
+[image name="day,katuragi_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x2_2 y=&tf.y3 visible=true]
 ;katuragi_12_1
 [image name="day,katuragi_12_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true]
-[image name="day,katuragi_12_1" storage="../image/day12_1.png"  layer=26 x=&tf.x2 y=&tf.y4 visible=true]
+[image name="day,katuragi_12_1" storage="../image/day12_1.png"  layer=26 x=&tf.x2_2 y=&tf.y4 visible=true]
 ;katuragi_1_3
 [image name="day,katuragi_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true]
 [image name="day,katuragi_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true]
@@ -176,14 +178,14 @@ $(".1_fore").empty();
 [image name="day,katuragi_2_2" storage="../image/day2_2.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true]
 ;katuragi_bazar
 [image name="day,katuragi_bazar" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y7 visible=true]
-[image name="day,katuragi_baxar" storage="../image/day4_4.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true]
+[image name="day,katuragi_baxar" storage="../image/day2_3.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true]
 ;左位置3"tf.x0_2 tf.x3
-;katuragi_sansaku1
+;katuragi_sansaku1 2月2週～3月4週・散策1
 [image name="day,katuragi_sansaku1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
-[image name="day,katuragi_sansaku1" storage="../image/day4_4.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true]
-;katuragi_sansaku2
+[image name="day,katuragi_sansaku1" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true]
+;katuragi_sansaku2 2月2週～3月4週・散策2
 [image name="day,katuragi_sansaku2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
-[image name="day,katuragi_sansaku2" storage="../image/day4_4.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true]
+[image name="day,katuragi_sansaku2" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true]
 ;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。全部終わるまでプリロード幕つける
