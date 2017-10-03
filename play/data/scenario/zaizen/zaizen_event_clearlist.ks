@@ -87,7 +87,17 @@ $(".1_fore").empty();
 [eval exp="tf.y6 = tf.y5 + tf.y_plus_position"]
 [eval exp="tf.y7 = tf.y6 + tf.y_plus_position"]
 [eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
-[eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]]
+[eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
+;================================移動ボタン=======================================================
+[button name="c_name1" graphic="image/name_kuroda.png" y=550 x=10]
+[button name="c_name1" graphic="name_sijyou.png" y=550 x=100]
+[button name="c_name1" graphic="name_zaizen.png" y=550 x=200]
+[button name="c_name1" graphic="name_katuragi.png" y=550 x=300]
+[if exp="sf.event_hujieda_8_4 == 1"]
+[button name="c_name1" graphic="name_hujieda.png" y=550 x=400]
+[else]
+[button name="c_name1" graphic="name_hujieda0.png" y=550 x=400]
+[endif]
 ;=======================================================================================
 *check_event
 [chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
