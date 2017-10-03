@@ -499,7 +499,7 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
 
-[if exp="tf.sijyou_test == true"]
+[if exp="tf.test_sijyou == true"]
 [iscript]
 $('.sijyou_6_1').click(function () {
   Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_6_1.ks"}); 
