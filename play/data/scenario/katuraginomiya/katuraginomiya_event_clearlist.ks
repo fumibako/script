@@ -127,7 +127,7 @@ $(".1_fore").empty();
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
 ;イベント数　テスト用
 [ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x4 y=&tf.y6 color=snow]
-[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
+[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+20 color=snow]
 [ptext text="/15" layer=26 size=21 x="&tf.x4+150" y=&tf.y6+20 color=snow]
 [ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x4 y=&tf.y6+50 color=snow]
 [ptext text="&tf.event_sansaku_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+80 color=snow]
