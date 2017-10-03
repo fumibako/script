@@ -124,30 +124,30 @@ $(".1_fore").empty();
 [image name="day,zaizen_event_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true]
 [image name="day,zaizen_event_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true]
 ;sf.event_zaizen_11_1
-[image name="day,zaizen_event_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true]
-[image name="day,zaizen_event_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true]
+[image name="day,zaizen_event_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true]
+[image name="day,zaizen_event_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true]
 ;sf.event_zaizen_11_3
-[image name="day,zaizen_event_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true]
-[image name="day,zaizen_event_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true]
+[image name="day,zaizen_event_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true]
+[image name="day,zaizen_event_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true]
 ;sf.event_zaizen_11_4
-[image name="day,zaizen_event_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true]
-[image name="day,zaizen_event_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true]
+[image name="day,zaizen_event_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
+[image name="day,zaizen_event_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true]
 ;sf.event_zaizen_12_2
-[image name="day,zaizen_event_12_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true]
-[image name="day,zaizen_event_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true]
+[image name="day,zaizen_event_12_2" storage="../image/day_check.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
+[image name="day,zaizen_event_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true]
 ;sf.event_zaizen_12_4
-[image name="day,zaizen_event_12_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
-[image name="day,zaizen_event_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true]
+[image name="day,zaizen_event_12_4" storage="../image/day_check.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true]
+[image name="day,zaizen_event_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true]
 ;sf.event_zaizen_1_3
-[image name="day,zaizen_event_12_4" storage="../image/day_check.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
-[image name="day,zaizen_event_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true]
+[image name="day,zaizen_event_12_4" storage="../image/day_check.png" layer=26 x=&tf.x1 y=&tf.y3visible=true]
+[image name="day,zaizen_event_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true]
 
 ;sf.event_zaizen_sansaku_2_1
-[image name="day,zaizen_sansaku_2_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
-[image name="day,zaizen_sansaku_2_1" storage="../image/day2_1.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true]
+[image name="day,zaizen_sansaku_2_1" storage="../image/day_check.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
+[image name="day,zaizen_sansaku_2_1" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true]
 ;sf.event_zaizen_sansaku_bazar 2月1週~3月3週・散策・バザー
-[image name="day,zaizen_sansaku_bazar" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
-[image name="day,zaizen_sansaku_bazar" storage="../image/day2_1.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true]
+[image name="day,zaizen_sansaku_bazar" storage="../image/day_check.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true]
+[image name="day,zaizen_sansaku_bazar" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true]
 ;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。全部終わるまでプリロード幕つける
