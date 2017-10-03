@@ -98,7 +98,7 @@ $(".1_fore").empty();
 [eval exp="tf.x2_2 = 270]
 ;左位置3
 [eval exp="tf.x0_2 = 510"]
-[eval exp="tf.x3 = 540"]
+[eval exp="tf.x3 = 530"]
 ;左位置4
 [eval exp="tf.x0_3 = 730"]
 [eval exp="tf.x4 = 760"]
@@ -175,10 +175,10 @@ $(".1_fore").empty();
 [image name="day,katuragi_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true]
 ;katuragi_2_2
 [image name="day,katuragi_2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true]
-[image name="day,katuragi_2_2" storage="../image/day2_2.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true]
+[image name="day,katuragi_2_2" storage="../image/day2_2.png"  layer=26 x="&tf.x2" y=&tf.y6 visible=true]
 ;katuragi_bazar
-[image name="day,katuragi_bazar" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y7 visible=true]
-[image name="day,katuragi_baxar" storage="../image/day2_3.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true]
+[image name="day,katuragi_bazar" storage="../image/day_check.png" layer=26 x="&tf.x0_1" y=&tf.y7 visible=true]
+[image name="day,katuragi_baxar" storage="../image/day2_3.png"  layer=26 x="&tf.x2+20" y=&tf.y7 visible=true]
 ;左位置3"tf.x0_2 tf.x3
 ;katuragi_sansaku1 2月2週～3月4週・散策1
 [image name="day,katuragi_sansaku1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
@@ -242,24 +242,93 @@ $(".katuragi_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [endif]
 
 [if exp="sf.event_katuragi_9_3 == 1"]
+[iscript]
+$(".katuragi_9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
+[else]
+[image name="day,katuragi_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_9_4 == 1"]
+[iscript]
+$(".katuragi_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
+[else]
+[image name="day,katuragi_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_10_2 == 1"]
+[iscript]
+$(".katuragi_10_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_10_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true]
+[else]
+[image name="day,katuragi_10_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_10_3 == 1"]
+[iscript]
+$(".katuragi_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true]
+[else]
+[image name="day,katuragi_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_11_1 == 1"]
+[iscript]
+$(".katuragi_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
+[else]
+[image name="day,katuragi_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_11_4 == 1"]
+[iscript]
+$(".katuragi_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true]
+[else]
+[image name="day,katuragi_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_12_1 == 1"]
+[iscript]
+$(".katuragi_12_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_12_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
+[else]
+[image name="day,katuragi_12_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_1_3 == 1"]
+[iscript]
+$(".katuragi_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
+[else]
+[image name="day,katuragi_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_2_2 == 1"]
+[iscript]
+$(".katuragi_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
+[else]
+[image name="day,katuragi_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
 [endif]
+
 [if exp="sf.event_katuragi_bazar == 1"]
+[iscript]
+$(".katuragi_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+[endscript]
+[image name="day,katuragi_bazar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
+[else]
+[image name="day,katuragi_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
