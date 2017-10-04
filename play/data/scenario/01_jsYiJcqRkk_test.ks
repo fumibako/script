@@ -700,7 +700,7 @@ f.para_shujinkou_shukujodo=200;
 
 *check_event0
 
-@jump storage=kuroda_event_clearlist
+@jump storage=kuroda_event_clearlist.ks
 [s]
 
 *check_event
