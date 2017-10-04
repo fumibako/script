@@ -61,7 +61,13 @@ $(".1_fore").empty();
 [eval exp="tf.event_sansaku_Number_of_times = 0"]
 ;[eval exp="tf.event_sansaku_Number_of_times = sf.event_kuroda_sansaku_1+ sf.event_kuroda_sansaku_2"]
 ;黒田イベント
-[eval exp="tf.event_Number_of_times = sf.event_kuroda_event_6_1 + sf.event_kuroda_9_1 + sf.event_kuroda_9_3 + sf.event_kuroda_9_4 + sf.event_kuroda_10_3 + sf.event_kuroda_10_4 + sf.event_kuroda_11_1 + sf.event_kuroda_11_2 + sf.event_kuroda_11_3 + sf.event_kuroda_11_4 + sf.event_kuroda_12_3 + sf.event_kuroda_1_1 + sf.event_kuroda_2_2"]
+[eval exp="tf.event_Number_of_times = sf.event_kuroda_event_6_1 + sf.event_kuroda_9_1"] 
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_9_3 + sf.event_kuroda_9_4"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_10_3 + sf.event_kuroda_10_4"] 
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_11_1 + sf.event_kuroda_11_2"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_11_3 + sf.event_kuroda_11_4"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + +sf.event_kuroda_12_2 + sf.event_kuroda_12_3 + sf.event_kuroda_1_1"]
+[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_1_4 + sf.event_kuroda_2_2"]
 ;全てのイベント数 現時点でエンディングを除く
 [eval exp="tf.allEvent_Number_of_time = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
