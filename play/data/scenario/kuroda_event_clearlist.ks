@@ -302,7 +302,6 @@ $(".kuroda_1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [else]
 [image name="day,kuroda_1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
 [endif]
-[endif]
 
 [if exp="sf.event_kuroda_2_2 == 1"]
 $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
