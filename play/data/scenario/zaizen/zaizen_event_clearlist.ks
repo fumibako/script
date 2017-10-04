@@ -91,7 +91,7 @@ $(".1_fore").empty();
 [eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
 [eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
 ;================================移動ボタン=======================================================
-[button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda/event_clearlist_kuroda.ks"]
+[button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=550 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
 [button name="c_name1" graphic="name_zaizen.png" y=550 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
 [button name="c_name1" graphic="name_katuragi.png" y=550 x=550 storage="katuraginomiya/katuraginomiya_event_clearlist.ks"]
