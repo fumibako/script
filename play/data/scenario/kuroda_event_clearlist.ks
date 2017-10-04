@@ -131,7 +131,7 @@ $(".1_fore").empty();
 ;クリアリストの表示
 ;左位置 tf.x0 tf.x1
 ;6月1週 sf.event_kuroda_event_6_1
-[button name="day,kuroda_6_1" storage="kuroda_6_2.ks" graphic="day_6_1.png" x="&tf.x1" y="&tf.y1"]
+[button name="kuroda_6_1" graphic="day_6_1.png" storage="kuroda_6_2.ks"]
 [image name="day,kuroda_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
 ;[image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true]
 ;9月1週 sf.event_kuroda_9_1
