@@ -282,7 +282,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 ;====================================================================================================
 ;判定処理をまとめます
 *hantei_efect
-[[eval exp="tf.jp_sinario='none'"]
+[eval exp="tf.jp_sinario='none'"]
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [iscript]
 $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
