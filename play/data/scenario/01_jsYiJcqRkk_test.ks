@@ -70,7 +70,8 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="test33" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
 [glink target="test34" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
 [glink target="common_9_1" text="common_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*check_event" text="クリアチェック"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*check_event0" text="クリアリスト"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target="*check_event" text="クリアチェック"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
 
 [glink target="*page2" text="page2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
 [glink target="*page1" text="page1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450 color=white]
@@ -695,6 +696,11 @@ f.para_zaizen_koukando=100;
 f.para_shujinkou_shukujodo=200;
 [endscript]
 @jump storage=common_9_1.ks target="*replay_common_9_1"
+[s]
+
+*check_event0
+
+@jump storage=kuroda_event_clearlist
 [s]
 
 *check_event
