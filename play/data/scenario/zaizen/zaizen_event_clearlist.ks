@@ -1,3 +1,9 @@
+;====================================================================================================
+;説明
+;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
+;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
+;このシナリオの戻り値は　f.event_replay = 'zaizen';　です。
+;====================================================================================================
 *start
 [cm]
 [iscript]
@@ -169,6 +175,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [endscript]
 ;====================================================================================================
 ;判定処理をまとめます
+[eval exp="tf.jp_sinario='none'"]
 [if exp="sf.event_zaizen_event_6_1 == 1"]
 [iscript]
 $(".zaizen_event_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
@@ -288,6 +295,25 @@ $(".zaizen_sansaku_bazar").css({'filter': 'brightness(100%)','-webkit-filter': '
 [endif]
 [s]
 ;==================================================================================-
+*zaizen_sinario
+[cm]
+[iscript]
+$(".26_fore").empty();
+$(".1_fore").empty();
+[endscript]
+;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
+[if exp="tf.test_zaizen == true"]
+[iscript]
+alert(tf.jp_sinario);
+[endscript]
+[endif]
+
+[iscript]
+tf.jp_sinario = 'zaizen/' + tf.jp_sinario + '.ks';
+f.event_replay = 'zaizen';
+[endscript]
+@jump storage="&tf.jp_sinario"
+[s]
 *test_end
 [cm]
 [iscript]
