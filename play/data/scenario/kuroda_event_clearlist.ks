@@ -67,7 +67,7 @@ $(".1_fore").empty();
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
 ;達成率
 [eval exp="tf.event_pasent=0"]
-[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 13 * 100"]
+[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 15 * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 ;====================================位置指定===========================================
 *set_position
@@ -290,26 +290,26 @@ $(".kuroda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,kuroda_1_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
+[image name="day,kuroda_1_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
 [else]
-[image name="day,kuroda_1_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
+[image name="day,kuroda_1_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
 [endif]
 
 [if exp="sf.event_kuroda_1_4 == 1"]
 $(".kuroda_1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,kuroda_1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
+[image name="day,kuroda_1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
 [else]
-[image name="day,kuroda_1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
+[image name="day,kuroda_1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
 [endif]
 [endif]
 
 [if exp="sf.event_kuroda_2_2 == 1"]
 $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[image name="day,kuroda_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
+[image name="day,kuroda_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [else]
-[image name="day,kuroda_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
+[image name="day,kuroda_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [endif]
 [s]
 ;==================================================================================================================-
