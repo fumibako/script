@@ -119,10 +119,8 @@ $(".1_fore").empty();
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_sijyou_11_1 + sf.event_sijyou_1_1 + sf.event_sijyou_1_3"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_sijyou_1_4 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
 ;達成イベント数
-;[if exp="tf.test_sijyou == true"]
-;[eval exp="tf.allEvent_Number_of_times = 0"]
-;[eval exp="tf.allEvent_Number_of_times = tf.eventSansaku_Number_of_times + tf.event_Number_of_times"]
-;[endif]
+[eval exp="tf.allEvent_Number_of_times = 0"]
+[eval exp="tf.allEvent_Number_of_times = tf.eventSansaku_Number_of_times + tf.event_Number_of_times"]
 ;達成率
 [eval exp="tf.event_pasent =  0"]
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 25 * 100"]
@@ -172,8 +170,8 @@ $(".1_fore").empty();
 ;名前表示
 [image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=30 visible=true]
 ;達成数
-[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
-[ptext text="/25 =" layer=26 size=21 x=680 y=40 color=snow]
+;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
+;[ptext text="/25 =" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
 [ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
