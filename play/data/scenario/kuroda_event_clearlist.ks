@@ -188,7 +188,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".kuroda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[button name="day,kuroda_6_1" graphic=".day_6_1.png" x=&tf.x1 y=&tf.y1 folder="image"]
+[button name="day,kuroda_6_1" graphic="day_6_1.png" x=&tf.x1 y=&tf.y1 storage="kuroda_6_2.ks"]
 [image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
 [image name="day,kuroda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
