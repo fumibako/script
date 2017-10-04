@@ -112,8 +112,10 @@ $(".1_fore").empty();
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_sijyou_11_1 + sf.event_sijyou_1_1 + sf.event_sijyou_1_3"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_sijyou_1_4 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
 ;達成イベント数
+[eval exp="tf.allEvent_Number_of_times = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.eventSansaku_Number_of_times + tf.event_Number_of_times"]
 ;達成率
+[eval exp="tf.event_pasent =  0"]
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 25 * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 ;====================================位置指定===========================================
