@@ -1,3 +1,9 @@
+;====================================================================================================
+;説明
+;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
+;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
+;このシナリオの戻り値は　f.event_replay = 'sijyou';　です。
+;====================================================================================================
 *start
 [cm]
 [iscript]
@@ -6,9 +12,10 @@ $(".1_fore").empty();
 [endscript]
 ;====================================================================================================
 *test
-;終わったら消す
+[if exp="tf.test_sijyou == true"]
 [glink storage="test_sijyou.ks" target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink storage="test_sijyou.ks" target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
+[endif]
 ;=============================================
 ;変数初期設定
 [eval exp="tf.event_Number_of_times = 0"]
@@ -112,8 +119,10 @@ $(".1_fore").empty();
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_sijyou_11_1 + sf.event_sijyou_1_1 + sf.event_sijyou_1_3"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_sijyou_1_4 + sf.event_sijyou_2_1 + sf.event_sijyou_2_2_bazar"]
 ;達成イベント数
-[eval exp="tf.allEvent_Number_of_times = 0"]
-[eval exp="tf.allEvent_Number_of_times = tf.eventSansaku_Number_of_times + tf.event_Number_of_times"]
+;[if exp="tf.test_sijyou == true"]
+;[eval exp="tf.allEvent_Number_of_times = 0"]
+;[eval exp="tf.allEvent_Number_of_times = tf.eventSansaku_Number_of_times + tf.event_Number_of_times"]
+;[endif]
 ;達成率
 [eval exp="tf.event_pasent =  0"]
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 25 * 100"]
@@ -275,10 +284,12 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 ;====================================================================================================
 ;判定処理をまとめます
 *hantei_efect
+[[eval exp="tf.jp_sinario='none'"]
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [iscript]
 $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [else]
 [image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
@@ -288,6 +299,7 @@ $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_9_1" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='sijyou_9_1'"]
 [image name="day,day9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [else]
 [image name="day,day9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
@@ -297,6 +309,7 @@ $(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_9_2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='sijyou_9_2'"]
 [image name="day,day9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
 [else]
 [image name="day,day9_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
@@ -306,6 +319,7 @@ $(".day9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_9_3" graphic="day9_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='sijyou_9_3'"]
 [image name="day,day9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
 [else]
 [image name="day,day9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
@@ -315,6 +329,7 @@ $(".day9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_9_4" graphic="day9_4.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_9_4'"]
 [image name="day,day9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
 [else]
 [image name="day,day9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
@@ -324,6 +339,7 @@ $(".day9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_10_1" graphic="day10_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='sijyou_10_1'"]
 [image name="day,day10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
 [else]
 [image name="day,day10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
@@ -333,6 +349,7 @@ $(".day10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(10
 [iscript]
 $(".day10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_10_3" graphic="day10_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='sijyou_10_3'"]
 [image name="day,day10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y7 visible=true]
 [else]
 [image name="day,day10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y7 visible=true]
@@ -342,6 +359,7 @@ $(".day10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(10
 [iscript]
 $(".day11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_11_1" graphic="day11_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='sijyou_11_1'"]
 [image name="day,day11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y8 visible=true]
 [else]
 [image name="day,day11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y8 visible=true]
@@ -351,6 +369,7 @@ $(".day11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(10
 [iscript]
 $(".day1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_1_1" graphic="day1_1.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='sijyou_1_1'"]
 [image name="day,day1_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y1 visible=true]
 [else]
 [image name="day,day1_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y1 visible=true]
@@ -360,6 +379,7 @@ $(".day1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_1_3" graphic="day1_3.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='sijyou_1_3'"]
 [image name="day,day1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y2 visible=true]
 [else]
 [image name="day,day1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y2 visible=true]
@@ -369,6 +389,7 @@ $(".day1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_1_4" graphic="day1_4.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='sijyou_1_4'"]
 [image name="day,day1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y3 visible=true]
 [else]
 [image name="day,day1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y3 visible=true]
@@ -378,6 +399,7 @@ $(".day1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_2_1" graphic="day2_1.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y4 exp="tf.jp_sinario='sijyou_2_1'"]
 [image name="day,day2_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y4 visible=true]
 [else]
 [image name="day,day2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y4 visible=true]
@@ -387,6 +409,7 @@ $(".day2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_2_2" graphic="day2_2.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='sijyou_2_2_bazar_1'"]
 [image name="day,day2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y5 visible=true]
 [else]
 [image name="day,day2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y5 visible=true]
@@ -397,6 +420,7 @@ $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100
 [iscript]
 $(".sansaku_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku'"]
 [image name="day,sansaku_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y1 visible=true]
 [else]
 [image name="day,sansaku_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y1 visible=true]
@@ -406,6 +430,7 @@ $(".sansaku_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku2" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku2'"]
 [image name="day,sansaku_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true]
 [else]
 [image name="day,sansaku_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true]
@@ -415,6 +440,7 @@ $(".sansaku_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku3" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku3'"]
 [image name="day,sansaku_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y3 visible=true]
 [else]
 [image name="day,sansaku_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y3 visible=true]
@@ -424,6 +450,7 @@ $(".sansaku_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku4" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku4'"]
 [image name="day,sansaku_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y4 visible=true]
 [else]
 [image name="day,sansaku_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y4 visible=true]
@@ -433,6 +460,7 @@ $(".sansaku_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_5").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku5" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y5 exp="tf.jp_sinario='sijyou_sansaku5'"]
 [image name="day,sansaku_5" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y5 visible=true]
 [else]
 [image name="day,sansaku_5" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y5 visible=true]
@@ -442,6 +470,7 @@ $(".sansaku_5").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_6").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku6" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku6'"]
 [image name="day,sansaku_6" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y6 visible=true]
 [else]
 [image name="day,sansaku_6" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y6 visible=true]
@@ -451,6 +480,7 @@ $(".sansaku_6").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku7" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y7 exp="tf.jp_sinario='sijyou_sansaku7'"]
 [image name="day,sansaku_7" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y7 visible=true]
 [else]
 [image name="day,sansaku_7" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y7 visible=true]
@@ -460,6 +490,7 @@ $(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku9" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y8 exp="tf.jp_sinario='sijyou_sansaku9'"]
 [image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
 [else]
 [image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
@@ -469,6 +500,7 @@ $(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [iscript]
 $(".sansaku_10").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku10" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku10'"]
 [image name="day,sansaku_10" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
 [else]
 [image name="day,sansaku_10" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
@@ -478,6 +510,7 @@ $(".sansaku_10").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".sansaku_11").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku11" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku11'"]
 [image name="day,sansaku_11" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
 [else]
 [image name="day,sansaku_11" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
@@ -487,6 +520,7 @@ $(".sansaku_11").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".sansaku_12").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku12" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku12'"]
 [image name="day,sansaku_12" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
 [else]
 [image name="day,sansaku_12" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
@@ -496,62 +530,32 @@ $(".sansaku_12").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="sijyou_sansaku13" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku13'"]
 [image name="day,sansaku_13" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [else]
 [image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
+[s]
 
+*sijyou_sinario
+[cm]
+[iscript]
+$(".26_fore").empty();
+$(".1_fore").empty();
+[endscript]
+;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
 [if exp="tf.test_sijyou == true"]
 [iscript]
-$('.sijyou_6_1').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_6_1.ks"}); 
-});
-[endscript]
-[s]
-[iscript]
-$('.sijyou_9_1').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_1.ks"}); 
-});
-$('.sijyou_9_2').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_2.ks"}); 
-});
-$('.sijyou_9_3').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_3.ks"}); 
-});
-$('.sijyou_9_4').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_9_4.ks"}); 
-});
-$('.sijyou_10_1').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_10_1.ks"}); 
-});
-$('.sijyou_10_2').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_10_2.ks"}); 
-});
-$('.sijyou_10_3').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_10_3.ks"}); 
-});
-$('.sijyou_10_4').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_10_4.ks"}); 
-});
-$('.sijyou_11_1').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_11_1b.ks"}); 
-});
-$('.sijyou_1_1').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_1_1b.ks"}); 
-});
-$('.sijyou_1_3').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_1_3.ks"}); 
-});
-$('.sijyou_1_4').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_1_4.ks"}); 
-});
-$('.sijyou_2_1').click(function () {
-  Tyrano.kag.ftag.startTag("jump",{storage:"sijyou/sijyou_2_1b.ks"}); 
-});
+alert(tf.jp_sinario);
 [endscript]
 [endif]
-[s]
 
+[iscript]
+tf.jp_sinario = tf.jp_sinario + '.ks';
+f.event_replay = 'sijyou';
+[endscript]
+@jump storage="&tf.jp_sinario"
+[s]
 
 
 
