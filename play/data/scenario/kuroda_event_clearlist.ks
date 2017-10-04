@@ -184,11 +184,12 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [endscript]
 ;====================================================================================================
 ;判定処理をまとめます
+[eval exp="tf.jp_sinario='none'"]
 [if exp="sf.event_kuroda_event_6_1 == 1"]
 [iscript]
 $(".kuroda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[button name="kuroda_6_1" graphic="day6_1.png" storage="kuroda_6_2.ks" x=&tf.x1 y=&tf.y1]
+[button name="kuroda_6_1" graphic="day6_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='kuroda_6_1.ks'"]
 [image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
 [image name="day,kuroda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
@@ -321,6 +322,18 @@ $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [endif]
 [s]
 ;==================================================================================================================-
+*kuroda_sinario
+[cm]
+[iscript]
+$(".26_fore").empty();
+$(".1_fore").empty();
+[endscript]
+;tf.jp_sinarioのシナリオにジャンプ　今はアラートのみ
+[iscript]
+alert('tf.jp_sinario');
+[endscript]
+[s]
+
 *test_end
 [cm]
 [iscript]
