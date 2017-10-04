@@ -66,8 +66,10 @@ $(".1_fore").empty();
 [eval exp="sf.event_hujieda_sansaku = 0"]
 [endif]
 ;藤枝散策イベントクリア回数
+[eval exp="tf.event_sansaku_Number_of_times = 0"]
 [eval exp="tf.event_sansaku_Number_of_times = sf.event_hujieda_bazaar + sf.event_hujieda_sansaku"]
 ;藤枝イベントクリア回数
+[eval exp="tf.event_Number_of_times = 0"]
 [eval exp="tf.event_Number_of_times = sf.event_hujieda_4_4 + sf.event_hujieda_5_4 + sf.event_hujieda_6_1 + sf.event_hujieda_6_4"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_hujieda_7_4 + sf.event_hujieda_8_4 + sf.event_hujieda_9_1"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_hujieda_9_2 + sf.event_hujieda_9_4"]
@@ -79,6 +81,7 @@ $(".1_fore").empty();
 [eval exp="tf.allEvent_Number_of_times = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
 ;達成率
+[eval exp="tf.event_pasent = 0"]
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 18 * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 ;====================================位置指定===========================================
