@@ -133,7 +133,7 @@ $(".1_fore").empty();
 ;6月1週 sf.event_kuroda_event_6_1
 [button name="day,kuroda_6_1" graphic="day_6_1.png" x=&tf.x1 y=&tf.y1 storage="kuroda_6_2.ks" cond="sf.event_kuroda_event_6_1 == 1"]
 [image name="day,kuroda_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
-[image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true]
+;[image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true]
 ;9月1週 sf.event_kuroda_9_1
 [image name="day,kuroda_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true]
 [image name="day,kuroda_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true]
