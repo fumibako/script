@@ -551,7 +551,7 @@ alert(tf.jp_sinario);
 [endif]
 
 [iscript]
-tf.jp_sinario = tf.jp_sinario + '.ks';
+tf.jp_sinario = 'sijyou/' + tf.jp_sinario + '.ks';
 f.event_replay = 'sijyou';
 [endscript]
 @jump storage="&tf.jp_sinario"
