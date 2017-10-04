@@ -131,7 +131,6 @@ $(".1_fore").empty();
 ;クリアリストの表示
 ;左位置 tf.x0 tf.x1
 ;6月1週 sf.event_kuroda_event_6_1
-[button name="kuroda_6_1" graphic="day_6_1.png" storage="kuroda_6_2.ks"]
 [image name="day,kuroda_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
 ;[image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true]
 ;9月1週 sf.event_kuroda_9_1
@@ -189,6 +188,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".kuroda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="kuroda_6_1" graphic="day_6_1.png" storage="kuroda_6_2.ks" x=&tf.x1 y=&tf.y1]
 [image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
 [image name="day,kuroda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
