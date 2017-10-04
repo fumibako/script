@@ -330,8 +330,9 @@ $(".1_fore").empty();
 [endscript]
 ;tf.jp_sinarioのシナリオにジャンプ　今はアラートのみ
 [iscript]
-alert('tf.jp_sinario');
+alert(tf.jp_sinario);
 [endscript]
+@jump target="&tf.jp_sinario"
 [s]
 
 *test_end
