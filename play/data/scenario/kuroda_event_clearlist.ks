@@ -111,9 +111,9 @@ $(".1_fore").empty();
 [button name="c_name1" graphic="name_zaizen.png" y=550 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
 [button name="c_name1" graphic="name_katuragi.png" y=550 x=550 storage="katuraginomiya/katuraginomiya_event_clearlist.ks"]
 [if exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_8_4 == 1"]
-[button name="c_name1" graphic="name_hujieda.png" y=550 x=700 storage="hijieda/hijieda_event_clearlist.ks"]
+[button name="c_name1" graphic="name_hujieda.png" y=550 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [elsif exp="sf.event_hujieda_4_4 == 1"]
-[button name="c_name1" graphic="name_hujieda0.png" y=550 x=700 storage="hijieda/hujieda_event_clearlist.ks"]
+[button name="c_name1" graphic="name_hujieda0.png" y=550 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [endif]
 ;=======================================================================================
 *check_event
@@ -188,6 +188,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".kuroda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="day,kuroda_6_1" graphic=".day_6_1.png" x=&tf.x1 y=&tf.y1 folder="image"]
 [image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
 [image name="day,kuroda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
