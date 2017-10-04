@@ -1,4 +1,11 @@
+;====================================================================================================
+;説明
+;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
+;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
+;このシナリオの戻り値は　f.event_replay = kuroda;　です。
+;====================================================================================================
 *start
+;画面初期化
 [cm]
 [iscript]
 $(".26_fore").empty();
@@ -6,9 +13,10 @@ $(".1_fore").empty();
 [endscript]
 ;====================================================================================================
 *test
-;終わったら消す
+[if exp="tf.test_kuroda == true"]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
+[endif]
 ;=====================================================================================================
 ;エラー回避変数初期設定
 [if exp="sf.event_kuroda_event_6_1 == undefined"]
@@ -346,6 +354,7 @@ $(".1_fore").empty();
 [iscript]
 alert(tf.jp_sinario);
 tf.jp_sinario = tf.jp_sinario + '.ks';
+f.event_replay = kuroda;
 [endscript]
 @jump storage="&tf.jp_sinario"
 [s]
