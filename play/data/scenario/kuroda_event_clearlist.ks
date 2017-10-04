@@ -2,7 +2,7 @@
 ;説明
 ;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
 ;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
-;このシナリオの戻り値は　f.event_replay = kuroda;　です。
+;このシナリオの戻り値は　f.event_replay = 'kuroda';　です。
 ;====================================================================================================
 *start
 ;画面初期化
@@ -354,7 +354,7 @@ $(".1_fore").empty();
 [iscript]
 alert(tf.jp_sinario);
 tf.jp_sinario = tf.jp_sinario + '.ks';
-f.event_replay = kuroda;
+f.event_replay = 'kuroda';
 [endscript]
 @jump storage="&tf.jp_sinario"
 [s]
