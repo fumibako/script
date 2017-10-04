@@ -350,9 +350,14 @@ $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
-;tf.jp_sinarioのシナリオにジャンプ　今はアラートのみ
+;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
+[if exp="tf.test_kuroda == true"]
 [iscript]
 alert(tf.jp_sinario);
+[endscript]
+[endif]
+
+[iscript]
 tf.jp_sinario = tf.jp_sinario + '.ks';
 f.event_replay = 'kuroda';
 [endscript]
