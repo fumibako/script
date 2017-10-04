@@ -345,7 +345,7 @@ $(".1_fore").empty();
 ;tf.jp_sinarioのシナリオにジャンプ　今はアラートのみ
 [iscript]
 alert(tf.jp_sinario);
-tf.jp_sinairo = tf.jp_sinario + '.ks';
+tf.jp_sinario = tf.jp_sinario + '.ks';
 [endscript]
 @jump storage="&tf.jp_sinario"
 [s]
