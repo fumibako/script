@@ -106,6 +106,7 @@ $(".1_fore").empty();
 [eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
 ;================================移動ボタン=======================================================
+[button name="kuroda" graphic="day6_1.png" storage="kuroda_6_2.ks" x=&tf.x1 y=&tf.y1]
 [button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=550 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
 [button name="c_name1" graphic="name_zaizen.png" y=550 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
@@ -188,7 +189,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".kuroda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[button name="kuroda_6_1" graphic="day_6_1.png" storage="kuroda_6_2.ks" x=&tf.x1 y=&tf.y1]
+[button name="kuroda_6_1" graphic="day6_1.png" storage="kuroda_6_2.ks" x=&tf.x1 y=&tf.y1]
 [image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
 [image name="day,kuroda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
