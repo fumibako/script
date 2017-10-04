@@ -279,7 +279,7 @@ $(".kuroda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[button name="kuroda_11_4" graphic="day11_2.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='kuroda_11_4.ks'"]
+[button name="kuroda_11_4" graphic="day11_4.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='kuroda_11_4.ks'"]
 [image name="day,kuroda_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
 [else]
 [image name="day,kuroda_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
