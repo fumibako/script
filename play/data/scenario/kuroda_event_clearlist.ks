@@ -311,6 +311,7 @@ $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [else]
 [image name="day,kuroda_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
 [endif]
+[s]
 ;==================================================================================================================-
 *test_end
 [cm]
