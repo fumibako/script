@@ -585,7 +585,7 @@ jumpします。[p]
 [link target=*next11_bad]バッド1をみる[endlink][r]
 [r][r]
 [endif]
-[link target="end"]おわる[endlink]
+[link target="end"]終了する[endlink]
 [s]
 
 *next11_1_2
@@ -613,6 +613,9 @@ $(".sentaku").remove();
 [cm]
 [current layer="message0"]
 [resetfont]
+[iscript]
+$(".sentaku").remove();
+[endscript]
 @jump target=sentaku_to_bad_or_other2
 [endif]
 
@@ -628,11 +631,10 @@ $(".sentaku").remove();
 ;@layopt layer=message1 visible=true
 ;[current layer="message1"]
 ;[font color="white" size=32]
-[glink storage="zaizen/zaizen_11_bad2.ks"  text="帰　　る"target="*seen_1" size=20 width="250" x=400 y=200 color=white]
-[r][r][r]
-[link storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"]帰らない[endlink][r]
+[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=50 width="250" height=150 x=300 y=200 color=white]
+[glink storage=zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=50 width="250" height=150 x=300 y=600 color=white]
 [iscript]
-$('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-size' : 'cover', 'background-position':'center', 'border-style' : 'none'});
+$('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-size' : 'cover', 'background-position':'center', 'border-style' : 'none','box-shadow':'0px'});
 [endscript]
 [s]
 [endif]
