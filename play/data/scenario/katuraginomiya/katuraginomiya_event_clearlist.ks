@@ -367,18 +367,22 @@ $(".katuragi_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 ;====================================================================================================
 ;判定処理をまとめます 散策
 ;左位置3"tf.x3
+;katuragi_sansaku1 2月2週～3月4週・散策1
 [if exp="sf.event_katuragi_sansaku1 == 1"]
 [iscript]
 $(".katuragi_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="katuragi_sansaku1" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_sansaku1'"]
 [image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y1 visible=true]
 [else]
 [image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y1 visible=true]
 [endif]
+;katuragi_sansaku2 2月2週～3月4週・散策2
 [if exp="sf.event_katuragi_sansaku2 == 1"]
 [iscript]
 $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[button name="katuragi_sansaku2" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_sansaku2'"]
 [image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true]
 [else]
 [image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true]
