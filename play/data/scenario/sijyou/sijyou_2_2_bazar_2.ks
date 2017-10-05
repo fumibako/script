@@ -65,7 +65,7 @@ $(".1_fore").empty();
 ;↓目：横目 [主人公横目]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
-「華織様。　[ruby text=チャリ]慈[ruby text=ティー]善バザーとは、どの様な[ruby text=もよお]しでしょうか？」[p]
+「華織様。　[ruby text=チャリ]慈[ruby text=ティー]善バザーとは、どの様な[ruby text=もよお]催しでしょうか？」[p]
 [whosay name="華織" color="olivedrab"]
 [四条目パチ1回]
 「あまり僕は詳しくはないのですが、[r]
