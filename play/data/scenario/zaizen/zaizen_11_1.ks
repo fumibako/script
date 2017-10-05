@@ -613,13 +613,14 @@ $(".sentaku").remove();
 [cm]
 [current layer="message0"]
 [resetfont]
-@jump target=sentaku_to_bad_or_other
+@jump target=sentaku_to_bad_or_other2
 [endif]
 
 ;============================================================================================================
 *sentaku_to_bad_or_other
 [if exp="f.okeiko_gamen == true"]
 ;Evernoteシナリオに書いていただいている選択肢による分岐処理です
+*sentaku_to_bad_or_other2
 #
 どうしましょうか？
 ;選択肢用レイヤーを追加
