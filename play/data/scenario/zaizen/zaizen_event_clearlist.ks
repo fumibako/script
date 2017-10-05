@@ -230,7 +230,7 @@ $(".zaizen_event_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [iscript]
 $(".zaizen_event_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[button name="zaizen_11_1" graphic="day11_1.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='zaizen_11_1'"]
+[button name="zaizen_11_1" graphic="day11_1.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='zaizen_11_1'"]
 [image name="day,zaizen_event_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
 [else]
 [image name="day,zaizen_event_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
