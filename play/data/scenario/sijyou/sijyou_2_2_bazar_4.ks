@@ -67,7 +67,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 ;眉困り　目大　口微笑み　照れ
-(ずっと夢に[ruby text=えが]描いていたことが現実になったの？[r]
+（ずっと夢に[ruby text=えが]描いていたことが現実になったの？[r]
 [sp]華織様が目の前にいらっしゃるのに[r]
 [sp]私、まだ信じられないわ……）[p]
 #
