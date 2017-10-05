@@ -46,6 +46,9 @@
 jumpします。[p]
 [ct]
 [イベント中テスト数値表示]
+[if exp="tf.test_zaizen == true"]
+@jump target=*replay_sentaku_to_bad_or_other
+[endif]
 @jump target=*sentaku_to_bad_or_other
 [s]
 
@@ -564,6 +567,7 @@ jumpします。[p]
 @jump target=*sentaku_to_bad_or_other
 [endif]
 ;=================テストとリプレイ時の処理========================
+*replay_sentaku_to_bad_or_other
 [if exp="tf.test_zaizen == true || f.event_replay == 'zaizen'"]
 [image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
 [er]
