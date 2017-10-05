@@ -187,7 +187,7 @@ $(".1_fore").empty();
 [image name="day,hujieda_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true]
 ;sf.event_hujieda_11_1
 [image name="day,hujieda_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true]
-[image name="day,hujieda_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2_2 y=&tf.y4 visible=true]
+[image name="day,hujieda_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2 y=&tf.y4 visible=true]
 ;sf.event_hujieda_11_3
 [image name="dayhujieda_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true]
 [image name="day,hujieda_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true]
