@@ -554,7 +554,8 @@ alert(tf.jp_sinario);
 tf.jp_sinario = 'sijyou/' + tf.jp_sinario + '.ks';
 f.event_replay = 'sijyou';
 [endscript]
-[button fix=true name="replay_end" x=0 y=0 graphic="select_end_replay.png" storage="sijyou/sijyou_event_clearlist.ks" target="test_end"]
+;ここでボタンを表示させてみても消えてしまう
+;[button fix=true name="replay_end" x=0 y=0 graphic="select_end_replay.png" storage="sijyou/sijyou_event_clearlist.ks" target="test_end"]
 @jump storage="&tf.jp_sinario"
 [s]
 
