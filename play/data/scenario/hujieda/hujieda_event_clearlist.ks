@@ -190,13 +190,13 @@ $(".1_fore").empty();
 [image name="day,hujieda_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2_2 y=&tf.y4 visible=true]
 ;sf.event_hujieda_11_3
 [image name="dayhujieda_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true]
-[image name="day,hujieda_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2_2 y=&tf.y5 visible=true]
+[image name="day,hujieda_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true]
 ;sf.event_hujieda_12_3
 [image name="day,hujieda_12_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true]
-[image name="day,hujieda_12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2_2 y=&tf.y6 visible=true]
+[image name="day,hujieda_12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true]
 ;sf.event_hujieda_1_3
 [image name="day,hujieda_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y7 visible=true]
-[image name="day,hujieda_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2_2 y=&tf.y7 visible=true]
+[image name="day,hujieda_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true]
 ;sf.event_hujieda_2_3
 [image name="day,hujieda_2_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y8 visible=true]
 [image name="day,hujieda_2_3" storage="../image/day2_3.png"  layer=26 x=&tf.x2 y=&tf.y8 visible=true]
