@@ -613,7 +613,7 @@ $(".sentaku").remove();
 [cm]
 [current layer="message0"]
 [resetfont]
-@jump target=seen_end_11_1
+@jump target=sentaku_to_bad_or_other
 [endif]
 
 ;============================================================================================================
@@ -623,14 +623,16 @@ $(".sentaku").remove();
 #
 どうしましょうか？
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=150 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font color="white" size=32]
-[link storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"]帰　　る[endlink][r]
+;[position layer=message1 height=160 top=100 left=150 opacity=0]
+;@layopt layer=message1 visible=true
+;[current layer="message1"]
+;[font color="white" size=32]
+[glink storage="zaizen/zaizen_11_bad2.ks"  text="帰　　る"target="*seen_1" size=20 width="250" x=400 y=200 color=white]
 [r][r][r]
 [link storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"]帰らない[endlink][r]
-[resetfont]
+[iscript]
+$('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-size' : 'cover', 'background-position':'center', 'border-style' : 'none'});
+[endscript]
 [s]
 [endif]
 *seen_end_11_1
