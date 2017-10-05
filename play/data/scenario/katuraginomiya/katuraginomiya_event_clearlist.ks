@@ -1,3 +1,9 @@
+;====================================================================================================
+;説明
+;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
+;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
+;このシナリオの戻り値は　f.event_replay = 'katuraginomiya';　です。
+;====================================================================================================
 *start
 [cm]
 [iscript]
@@ -362,6 +368,26 @@ $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [endif]
 [s]
 
+*katuragi_sinario
+[cm]
+[iscript]
+$(".26_fore").empty();
+$(".1_fore").empty();
+[endscript]
+;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
+[if exp="tf.test_katuraginomiya == true"]
+[iscript]
+alert(tf.jp_sinario);
+[endscript]
+[endif]
+
+[iscript]
+tf.jp_sinario = 'katuraginomiya/' + tf.jp_sinario + '.ks';
+f.event_replay = 'katuraginomiya';
+[endscript]
+@jump storage="&tf.jp_sinario"
+[s]
+
 *test_end
 [cm]
 [iscript]
@@ -373,6 +399,8 @@ $(".1_fore").empty();
 *back_test
 [cm]
 [freeimage layer = 26]
+[eval exp="tf.jp_sinario='none'"]
+[eval exp="f.event_replay = 'none'"]
 @jump storage="test.ks"
 [s]
 
@@ -380,5 +408,7 @@ $(".1_fore").empty();
 [cm]
 [freeimage layer = 26]
 ;------タイトルへ戻る
+[eval exp="tf.jp_sinario='none'"]
+[eval exp="f.event_replay = 'none'"]
 @jump storage="title.ks"
 [s]
