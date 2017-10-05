@@ -1,3 +1,9 @@
+;====================================================================================================
+;説明
+;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
+;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
+;このシナリオの戻り値は　f.event_replay = 'hujieda';　です。
+;====================================================================================================
 *start
 [cm]
 [iscript]
@@ -6,9 +12,11 @@ $(".1_fore").empty();
 [endscript]
 ;====================================================================================================
 *test
+[if exp="tf.test_hujieda == true"]
 ;終わったら消す
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
+[endif]
 ;=======================================================================================
 ;変数初期設定　エラー回避
 [if exp="sf.event_hujieda_4_4 == undefined"]
@@ -370,7 +378,26 @@ $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 [else]
 [image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
 [endif]
+[s]
 
+*hujieda_sinario
+[cm]
+[iscript]
+$(".26_fore").empty();
+$(".1_fore").empty();
+[endscript]
+;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
+[if exp="tf.test_hujieda == true"]
+[iscript]
+alert(tf.jp_sinario);
+[endscript]
+[endif]
+
+[iscript]
+tf.jp_sinario = 'hujieda/' + tf.jp_sinario + '.ks';
+f.event_replay = 'hujieda';
+[endscript]
+@jump storage="&tf.jp_sinario"
 [s]
 
 *test_end
@@ -384,12 +411,16 @@ $(".1_fore").empty();
 *back_test
 [cm]
 [freeimage layer = 26]
+[eval exp="tf.jp_sinario='none'"]
+[eval exp="f.event_replay = 'none'"]
 @jump storage="test.ks"
 [s]
 
 *title
 [cm]
 [freeimage layer = 26]
+[eval exp="tf.jp_sinario='none'"]
+[eval exp="f.event_replay = 'none'"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
