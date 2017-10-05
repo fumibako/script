@@ -195,7 +195,7 @@ $(".1_fore").empty();
 [image name="day,katuragi_2_2" storage="../image/day2_2.png"  layer=26 x="&tf.x2" y=&tf.y6 visible=true]
 ;katuragi_bazar
 [image name="day,katuragi_bazar" storage="../image/day_check.png" layer=26 x="&tf.x0_1" y=&tf.y7 visible=true]
-[image name="day,katuragi_bazar" storage="../image/day2_3.png"  layer=26 x="&tf.x2+20" y=&tf.y7 visible=true]
+[image name="day,katuragi_bazar" storage="../image/day2_3.png"  layer=26 x="&tf.x2" y=&tf.y7 visible=true]
 ;左位置3"tf.x0_2 tf.x3
 ;katuragi_sansaku1 2月2週～3月4週・散策1
 [image name="day,katuragi_sansaku1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
@@ -359,7 +359,7 @@ $(".katuragi_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [iscript]
 $(".katuragi_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[button name="katuragi_bazar" graphic="day2_3.png" target="katuragi_sinario" x=&tf.x0_1 y=&tf.y7 exp="tf.jp_sinario='katuraginomiya_bazaar'"]
+[button name="katuragi_bazar" graphic="day2_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y7 exp="tf.jp_sinario='katuraginomiya_bazaar'"]
 [image name="day,katuragi_bazar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [else]
 [image name="day,katuragi_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
