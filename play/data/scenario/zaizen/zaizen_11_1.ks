@@ -559,16 +559,53 @@ jumpします。[p]
 「よりにもよって、貴方がいる場に あの女に出くわすとは[r]
 [sp]思いもよりませんでした。 ……帰りましょう」
 #
-;=================テストメニューを抜けたときにテスト変数は消えますが、実装時には削除します========================
-[if exp="tf.test_zaizen == true"]
-;演出の繋がりを知りたいので 実際は好感度を入力してください
+;=================スキップ========================
+[if exp="tf.test_zaizen != true || f.event_replay != 'zaizen'"]
+@jump target=*sentaku_to_bad_or_other
+[endif]
+;=================テストとリプレイ時の処理========================
+[if exp="tf.test_zaizen == true || f.event_replay == 'zaizen'"]
+[image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
 [er]
-テストフラグで表示されています。[r]
-[link storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"]つづきをみる[endlink]     
-[link storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"]バッド１をみる[endlink][r]
-[link target="end"]テストをおわる[endlink]
+リプレイモードで表示されています。　続きを選択してください。[r][r]
+;選択肢用レイヤーを追加
+[position layer=message1 height=300 top=70 left=300 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font size=30]
+[link target=next11_1_2]つづきをみる[endlink][r]
+[r]
+[if exp="sf.ED_zaizen_bad1 == 1"]
+[link target=*next11_bad]バッド1をみる[endlink][r]
+[r]
+[endif]
+[link target="end"]おわる[endlink]
 [s]
+
+*next11_1_2
+[er]
+[current layer="message0"]
+[resetfont]
+[iscript]
+$(".sentaku").remove();
+[endscript]
+@jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
+[s]
+*next11_bad
+[er]
+[current layer="message0"]
+[resetfont]
+[iscript]
+$(".sentaku").remove();
+[endscript]
+@jump storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"
+[s]
+
 *end
+[cm]
+[current layer="message0"]
+[resetfont]
+@jump target=seen_end_11_1
 [endif]
 
 ;============================================================================================================
@@ -588,7 +625,7 @@ jumpします。[p]
 [resetfont]
 [s]
 [endif]
-
+*seen_end_11_1
 [イベントシーン終了]
 @jump storage="test_zaizen.ks"
 [s]
