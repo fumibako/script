@@ -567,12 +567,16 @@ $(".1_fore").empty();
 
 *back_test
 [cm]
+[eval exp="tf.jp_sinario='none'"]
+[eval exp="f.event_replay = 'none'"]
 [freeimage layer = 26]
 @jump storage="test.ks"
 [s]
 
 *title
 [cm]
+[eval exp="tf.jp_sinario='none'"]
+[eval exp="f.event_replay = 'none'"]
 [freeimage layer = 26]
 ;------タイトルへ戻る
 @jump storage="title.ks"
