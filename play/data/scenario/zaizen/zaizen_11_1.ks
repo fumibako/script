@@ -429,7 +429,9 @@ jumpします。[p]
 流暢な日本語で話しかけられ、綺麗な碧い瞳が私を映す。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口開]
-[主人公目大]
+;[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
 (あ……財前様と同じ色だわ)[p]
 
 ;【立ち絵】主人公：微笑み
