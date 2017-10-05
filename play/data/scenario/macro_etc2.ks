@@ -5,7 +5,7 @@
 ;◆[メッセージウィンドウ上ボタン表示]
 [macro name=メッセージウィンドウ上ボタン表示]
 ;セーブ等ボタン配置
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
 [locate x=830 y=357]
 [button name="message_backlog" graphic="button_message_log.png" role=backlog ]
 [locate x=910 y=390]
@@ -165,6 +165,13 @@
 ;◆[四条ボタン表示]sijyou9_3
 [macro name=四条ボタン表示]
 ;セーブ等ボタン配置
+[if exp="f.flag_replay == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+[locate x=830 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[locate x=910 y=390]
+[button name="message_close" fix="true" graphic="x_50x50.png"  storage="macro_etc.ks" target="*window_close" ]
+[wait time=10]
+[else]
 [locate x=560 y=357]
 [button name="message_auto" graphic="button_message_auto.png" role=auto]
 [wait time=10]
@@ -177,7 +184,9 @@
 [locate x=860 y=357]
 [button name="message_skip" graphic="button_message_skip.png" role=skip ]
 [locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" auto_next=false]
+[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
+[wait time=10]
+[endif]
 [eval exp="sf.FButton='ON'"]
 [endmacro]
 
@@ -435,6 +444,25 @@
 [eval exp="sf.FButton='OFF'"]
 [stopbgm]
 [stopse]
+
+;◆クリアリストからシナリオリプレイ時はクリアリストへ戻す処理
+;お稽古パートへ戻る判定が先に置いてあるシナリオもあるため、実装時(「情報」からジャンプ時)は個々のシナリオの終了処理の配置を確認予定([イベントシーン終了２]等にもクリアリストへ戻す処理を書けば良いかも？実装時に試行予定)
+[if exp="f.event_replay == 'sijyou'"]
+	@jump storage="sijyou/sijyou_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'zaizen'"]
+	@jump storage="zaizen/zaizen_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'kuroda'"]
+	@jump storage="kuroda_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'katuraginomiya'"]
+	@jump storage="katuraginomiya/katuraginomiya_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'hujieda'"]
+	@jump storage="hujieda/hujieda_event_clearlist.ks" target=*start
+[endif]
+
 [endmacro]
 
 ;◆[イベントシーン終了・ＢＧＭ有]
