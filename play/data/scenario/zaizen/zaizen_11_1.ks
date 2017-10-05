@@ -631,8 +631,8 @@ $(".sentaku").remove();
 ;@layopt layer=message1 visible=true
 ;[current layer="message1"]
 ;[font color="white" size=32]
-[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=40 width="250" x=100 y=50 color=white]
-[glink storage=zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=40 width="250" x=100 y=100 color=white]
+[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=40 width="280" x=100 y=50 color=white]
+[glink storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=40 width="280" x=100 y=100 color=white]
 [wait time=10]
 [iscript]
 //$('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-size' : 'contain', 'background-position':'center', 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
