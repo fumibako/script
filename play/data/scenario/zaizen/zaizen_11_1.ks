@@ -571,6 +571,7 @@ jumpします。[p]
 ;=================テストとリプレイ時の処理========================
 *replay_sentaku_to_bad_or_other
 [if exp="tf.test_zaizen == true || f.event_replay == 'zaizen'"]
+@layopt layer=fix visible=false
 [image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
 [er]
 リプレイモードで表示されています。　続きを選択してください。[r]
@@ -585,6 +586,9 @@ jumpします。[p]
 [link target=*next11_bad]バッド1をみる[endlink][r]
 [r][r]
 [endif]
+[if exp="tf.test_zaizen == true"] 
+[link target="end0"]選択肢を見る（テストのみ）[endlink][r][r]
+[endif]
 [link target="end"]終了する[endlink]
 [s]
 
@@ -596,6 +600,7 @@ jumpします。[p]
 $(".sentaku").remove();
 [endscript]
 [cm]
+@layopt layer=fix visible=true
 @jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
 [s]
 *next11_bad
@@ -606,8 +611,19 @@ $(".sentaku").remove();
 $(".sentaku").remove();
 [endscript]
 [cm]
+@layopt layer=fix visible=true
 @jump storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"
 [s]
+
+*end0
+[cm]
+[current layer="message0"]
+[resetfont]
+[iscript]
+$(".sentaku").remove();
+[endscript]
+@layopt layer=fix visible=true
+@jump target=sentaku_to_bad_or_other2
 
 *end
 [cm]
@@ -616,7 +632,8 @@ $(".sentaku").remove();
 [iscript]
 $(".sentaku").remove();
 [endscript]
-@jump target=sentaku_to_bad_or_other2
+@layopt layer=fix visible=true
+@jump target=*seen_end_11_1
 [endif]
 
 ;============================================================================================================
