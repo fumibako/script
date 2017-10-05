@@ -925,7 +925,7 @@ jumpします。[p]
 私は夢を諦めない藤枝様の強さを感じた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （きっと、また一緒に弾ける日がくるわ）[p]
-
+*seen_end1
 #
 ;次のイベントにでてしまう名前残りを消去
 [eval exp="sf.event_hujieda_bazaar = 1"]
