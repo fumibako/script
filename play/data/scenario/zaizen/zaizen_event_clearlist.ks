@@ -180,7 +180,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".zaizen_event_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
-[button name="zaizen_6_1" graphic="day6_1.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='zaizen_6_2'"]
+[button name="zaizen_6_1" graphic="day6_1.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='zaizen_6_1'"]
 [image name="day,zaizen_event_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
 [image name="day,zaizen_event_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
