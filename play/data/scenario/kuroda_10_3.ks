@@ -895,17 +895,22 @@
 ;紅葉散策編終了
 [黒田退場]
 [wait time=10]
+;sfクリア記録
+[eval exp="sf.event_kuroda_10_3 = 1"]
+
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
+[イベントシーン終了]
+[endif]
+
+[if exp="tf.test_kuroda == true"]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
 
 ;回想記録終了 
 [endreplay] 
-[eval exp="sf.event_kuroda_10_3 = 1"]
-[if exp="tf.test_kuroda == true"]
-[イベントシーン終了]
-@jump storage="01_jsYiJcqRkk_test.ks"
-[endif]
-
 @jump storage="event.ks" target=*event_owari
 
 
