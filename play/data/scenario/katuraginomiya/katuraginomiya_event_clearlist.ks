@@ -408,6 +408,7 @@ alert(tf.jp_sinario);
 tf.jp_sinario = 'katuraginomiya/' + tf.jp_sinario + '.ks';
 f.event_replay = 'katuraginomiya';
 [endscript]
+@clearstack
 @jump storage="&tf.jp_sinario"
 [s]
 
