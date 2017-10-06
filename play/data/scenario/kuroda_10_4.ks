@@ -52,10 +52,11 @@
 
 
 ;◆テスト中は配列スキップ
-[if exp="tf.test_kuroda==true"]
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
 @jump target="test_kuroda_hairetu_skip"
 [endif]
 
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「散策お誘い」　黒田 将貴";
 f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「散策お誘い」";
@@ -74,6 +75,7 @@ f.fumi_kuroda_number=f.fumi_kuroda_number + 1;
 f.hensin_list_hairetsu[0][14]=1;
 f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endscript]
+[endif]
 
 *test_kuroda_hairetu_skip
 [手紙黒田]
@@ -92,7 +94,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [iscript]
 [endscript]
 ;◆テスト中は配列スキップ
-[if exp="tf.test_kuroda != true"]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[0][14] = 0;"]
 [endif]
 [手紙黒田読了]
