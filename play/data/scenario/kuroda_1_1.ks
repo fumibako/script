@@ -169,6 +169,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 （お友達の華やかな年賀状を見るのも、なんだかつらいわ……）[p]
+#
 手つきも重く受け取ろうとして――。[p]
 
 ;=========================================================================================
@@ -237,7 +238,9 @@
 [wait time=10]
 [whosay name="磯野" color="dimgray"]
 「どういたしまして」[p]
+#
 磯野にいつもの温かい笑みが浮かぶ。[p]
+[whosay name="磯野" color="dimgray"]
 「では、失礼いたします」[p]
 #
 ;【SE】襖を閉じる（ゆっくり）
@@ -263,7 +266,7 @@
 ;[bg wait=true storage="toumei.gif" time=500]
 ;[wait time=50]
 ;◆テスト中は配列スキップ
-[if exp="tf.test_kuroda==true || f.event_replay == 'kuroda'"]"]
+[if exp="tf.test_kuroda==true || f.event_replay == 'kuroda'"]
 @jump target="test_kuroda_hairetu_skip"
 [endif]
 ;=========================================================================================
