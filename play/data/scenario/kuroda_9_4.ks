@@ -53,8 +53,8 @@
 #
 
 
-;テスト中は配列スキップ
-[if exp="tf.test_kuroda==true"]
+;テスト中時とリプレイ時は配列スキップ
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'""]
 @jump target="test_kuroda_hairetu_skip"
 [endif]
 
