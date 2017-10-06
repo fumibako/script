@@ -418,6 +418,8 @@ f.event_replay = 'katuraginomiya';
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+[イベントシーン終了]
+@jump storage="katuraginomiya/katuraginomiya_event_clearlist.ks" target=*start
 [s]
 
 *back_test
