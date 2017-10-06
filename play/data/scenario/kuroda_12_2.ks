@@ -62,6 +62,7 @@
 
 [主人公閉目パチ1回]
 [wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうも気分がふさいで、いけないわ。[r]
 [sp]こんな日は、町に出てみましょう」[p]
 
