@@ -64,10 +64,10 @@
 #
 ;==========================================================================================
 ;◆テスト中は配列スキップ
-[if exp="tf.test_kuroda==true"]
+[if exp="tf.test_kuroda==true || f.event_replay == 'kuroda'"]
 @jump target="test_kuroda_hairetu_skip"
 [endif]
-
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「お礼とお誘い」　黒田 将貴";
 f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「お礼とお誘い」";
@@ -86,7 +86,7 @@ f.fumi_kuroda_number=f.fumi_kuroda_number + 1;
 f.hensin_list_hairetsu[0][16]=1;
 f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endscript]
-
+[endif]
 *test_kuroda_hairetu_skip
 [ct]
 ;==========================================================================================
@@ -109,7 +109,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [p]
 [iscript]
 [endscript]
-[if exp="tf.test_kuroda != true"]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[0][16] = 0;"]
 [endif]
 [手紙黒田読了]
@@ -145,7 +145,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;【黒田好感度】+2（手紙の話題に出た梅柄。それに香を焚くひと手間をかけているところが好感度up）
 ;==========================================================================================
 ;テスト中は好感度はスキップ
-[if exp="tf.test_kuroda != true"]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 2"]
 [endif]
 
@@ -220,6 +220,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [eval exp="sf.event_kuroda_1_4 = 1"]
 [if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
 [イベントシーン終了]
+[endif]
+[if exp="tf.test_kuroda == true"] 
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
 ;手紙編終了
@@ -230,7 +232,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 *kuroda_1_4_sentaku01_c
 ;【部分分岐】梅にうぐいす柄の便せん【開始】
 ;【黒田好感度】+1
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
+[endif]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_4_scene5==undefined"]
 	[skipstop]
@@ -264,6 +268,8 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [eval exp="sf.event_kuroda_1_4 = 1"]
 [if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
 [イベントシーン終了]
+[endif]
+[if exp="tf.test_kuroda == true"]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
 
@@ -304,17 +310,19 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;【部分分岐】無地の便せん【終了】
 ;==========================================================================================
 ;手紙編終了
-;◆「休憩中」画像消去
-[freeimage layer = 26]
-;回想記録終了 
-[endreplay] 
 *scene_end
 [eval exp="sf.event_kuroda_1_4 = 1"]
-[if exp="tf.test_kuroda==true || f.event_replay == 'kuroda'"]
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
 [イベントシーン終了]
+[endif]
+[if exp="tf.test_kuroda == true"]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
 
+;◆「休憩中」画像消去
+[freeimage layer = 26]
+;回想記録終了 
+[endreplay]
 @jump storage="event.ks" target=*event_owari
 
 
