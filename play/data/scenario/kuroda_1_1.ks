@@ -263,10 +263,11 @@
 ;[bg wait=true storage="toumei.gif" time=500]
 ;[wait time=50]
 ;◆テスト中は配列スキップ
-[if exp="tf.test_kuroda==true"]
+[if exp="tf.test_kuroda==true || f.event_replay == 'kuroda'"]"]
 @jump target="test_kuroda_hairetu_skip"
 [endif]
 ;=========================================================================================
+[if exp="f.okeiko_gamen == true"]
 [iscript]	
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「年賀状」　黒田 将貴";
 f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「年賀状」";
@@ -285,6 +286,7 @@ f.fumi_kuroda_number=f.fumi_kuroda_number + 1;
 f.hensin_list_hairetsu[0][15]=1;
 f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endscript]
+[endif]
 *test_kuroda_hairetu_skip
 ;=========================================================================================
 ;黒田より年賀状
@@ -317,7 +319,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [position vertical=false]
 [resetfont]
 ;=========================================================================================
-[if exp="tf.test_kuroda != true"]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[0][15] = 0;"]
 [endif]
 [freeimage layer = 29]
