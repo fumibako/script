@@ -6,10 +6,22 @@
 [macro name=メッセージウィンドウ上ボタン表示]
 ;セーブ等ボタン配置
 [if exp="f.flag_replay == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+[iscript]
+if(f.event_replay == 'sijyou'){f.clearlist_storage = 'sijyou/sijyou_event_clearlist.ks'; }
+if(f.event_replay == 'zaizen'){f.clearlist_storage = 'zaizen/zaizen_event_clearlist.ks';}
+if(f.event_replay == 'kuroda'){f.clearlist_storage = 'kuroda_event_clearlist.ks';}
+if(f.event_replay == 'katuraginomiya'){f.clearlist_storage = 'katuraginomiya/katuraginomiya_event_clearlist.ks';}
+if(f.event_replay == 'hujieda'){f.clearlist_storage = 'hujieda/hujieda_event_clearlist.ks';}
+if(f.flag_replay == true){f.clearlist_storage = 'replay2.ks';}
+if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.clearlist_storage = 'kuroda_event_clearlist.ks';} //例外処理は黒田に仮設定しています
+[endscript]
 [locate x=830 y=357]
 [button name="message_backlog" graphic="button_message_log.png" role=backlog ]
 [locate x=910 y=390]
 [button name="message_close" fix="true" graphic="x_50x50.png"  storage="macro_etc.ks" target="*window_close" ]
+[wait time=10]
+[locate x=850 y=0]
+[button name="back_clearlist" fix="true" graphic="back.png" storage=&f.clearlist_storage target="*test_end" ]
 [wait time=10]
 
 [else]
@@ -83,7 +95,7 @@
 [endif]
 
 *test_hyouji_event1
-[locate x=750 y=0]
+[locate x=750 y=100]
 [button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
 [locate x=550 y=0]
 ;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
@@ -166,10 +178,22 @@
 [macro name=四条ボタン表示]
 ;セーブ等ボタン配置
 [if exp="f.flag_replay == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+[iscript]
+if(f.event_replay == 'sijyou'){f.clearlist_storage = 'sijyou/sijyou_event_clearlist.ks'; }
+if(f.event_replay == 'zaizen'){f.clearlist_storage = 'zaizen/zaizen_event_clearlist.ks';}
+if(f.event_replay == 'kuroda'){f.clearlist_storage = 'kuroda_event_clearlist.ks';}
+if(f.event_replay == 'katuraginomiya'){f.clearlist_storage = 'katuraginomiya/katuraginomiya_event_clearlist.ks';}
+if(f.event_replay == 'hujieda'){f.clearlist_storage = 'hujieda/hujieda_event_clearlist.ks';}
+if(f.flag_replay == true){f.clearlist_storage = 'replay2.ks';}
+if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.clearlist_storage = 'kuroda_event_clearlist.ks';} //例外処理は黒田に仮設定しています
+[endscript]
 [locate x=830 y=357]
 [button name="message_backlog" graphic="button_message_log.png" role=backlog ]
 [locate x=910 y=390]
 [button name="message_close" fix="true" graphic="x_50x50.png"  storage="macro_etc.ks" target="*window_close" ]
+[wait time=10]
+[locate x=850 y=0]
+[button name="back_clearlist" fix="true" graphic="back.png" storage=&f.clearlist_storage target="*test_end" ]
 [wait time=10]
 [else]
 [locate x=560 y=357]
@@ -262,7 +286,7 @@
 [endif]
 
 *test_hyouji_event3
-[locate x=750 y=0]
+[locate x=750 y=100]
 [button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
 [locate x=550 y=0]
 ;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
