@@ -150,6 +150,7 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：ハッとする
 [主人公驚]
 （採用されるかわらないけれど、[r]
@@ -163,7 +164,8 @@
 [wait time=10]
 [p]
 
-（一社だけではなく沢山の新聞に出して、国民に落ち着くように訴えたいわ！）[p]
+（一社だけではなく沢山の新聞に出して、国民に[r]
+[sp]落ち着くように訴えたいわ！）[p]
 
 [whosay name="磯野" color="dimgray"]
 「どうされるのですか？」[p]
