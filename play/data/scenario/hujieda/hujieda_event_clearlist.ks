@@ -418,6 +418,7 @@ alert(tf.jp_sinario);
 tf.jp_sinario = 'hujieda/' + tf.jp_sinario + '.ks';
 f.event_replay = 'hujieda';
 [endscript]
+@clearstack
 @jump storage="&tf.jp_sinario"
 [s]
 
