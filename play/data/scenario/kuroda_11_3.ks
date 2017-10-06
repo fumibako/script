@@ -289,8 +289,12 @@
 [stopbgm]
 [eval exp="sf.event_kuroda_11_3 = 1"]
 ;町にお出かけ編、終了（11月第3週）
-[if exp="tf.test_kuroda==true"]
+
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
 [イベントシーン終了]
+[endif]
+;シナリオのみのテスト中はもどる
+[if exp="tf.test_kuroda == true"]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
 
