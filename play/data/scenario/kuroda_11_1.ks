@@ -161,9 +161,12 @@
 ;（11月第1週）町で友人に会うイベント終了
 
 [eval exp="sf.event_kuroda_11_1 = 1"]
-;シナリオのみのテスト中はもどる
-[if exp="tf.test_kuroda==true"]
+
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
 [イベントシーン終了]
+[endif]
+;シナリオのみのテスト中はもどる
+[if exp="tf.test_kuroda == true"]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
 
