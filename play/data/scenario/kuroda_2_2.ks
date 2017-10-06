@@ -101,6 +101,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 （黒田様が来て下さるなんて……！）[p]
+#
 はやる心を抑えて玄関に急いだ。[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
