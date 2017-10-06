@@ -142,8 +142,12 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [stopse]
 [stopbgm]
 [eval exp="sf.event_kuroda_9_4 = 1"]
-[if exp="tf.test_kuroda==true"]
+
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
 [イベントシーン終了]
+[endif]
+
+[if exp="tf.test_kuroda == true"]
 @jump storage="01_jsYiJcqRkk_test.ks"
 [endif]
 
