@@ -306,6 +306,16 @@ jumpします。[p]
 
 ;個別ルート前夜終了
 *seen_owari
+[eval exp="sf.event_kuroda_9_1 = 1"]
+
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
+[イベントシーン終了]
+[endif]
+
+[if exp="tf.test_kuroda == true"]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
 [eval exp="f.kuroda_au = 1"]
@@ -314,11 +324,6 @@ jumpします。[p]
 [eval exp="f.omiai_kettei = 1"]
 ;回想記録終了 
 [endreplay] 
-[eval exp="sf.event_kuroda_9_1 = 1"]
-[if exp="tf.test_kuroda==true"]
-@jump storage="01_jsYiJcqRkk_test.ks"
-[イベントシーン終了]
-[endif]
 
 @jump storage="event.ks" target=*event_owari
 
