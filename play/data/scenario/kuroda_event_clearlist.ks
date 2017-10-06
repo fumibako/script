@@ -363,6 +363,7 @@ alert(tf.jp_sinario);
 tf.jp_sinario = tf.jp_sinario + '.ks';
 f.event_replay = 'kuroda';
 [endscript]
+@clearstack
 @jump storage="&tf.jp_sinario"
 [s]
 
