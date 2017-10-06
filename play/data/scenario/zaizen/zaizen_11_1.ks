@@ -576,11 +576,12 @@ jumpします。[p]
 @layopt layer=fix visible=false
 [image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
 [er]
-リプレイモードで表示されています。　続きを選択してください。[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=300 top=70 left=300 opacity=0]
+[position layer=message1 height=550 top=50 left=250 opacity=0]
+[wait time=50]
 @layopt layer=message1 visible=true
 [current layer="message1"]
+リプレイモードで表示されています。　続きを選択してください。[r][r][r]
 [font size=30]
 [link target=next11_1_2]続きをみる[endlink][r]
 [r][r]
@@ -589,7 +590,7 @@ jumpします。[p]
 [r][r]
 [endif]
 [if exp="tf.test_zaizen == true"] 
-[link target="end0"]選択肢を見る（テストのみ）[endlink][r][r]
+[link target="end0"]選択肢を見る（テストのみ）[endlink][r][r][r]
 [endif]
 [link target="end"]終了する[endlink]
 [s]
@@ -654,7 +655,7 @@ $(".sentaku").remove();
 [glink storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=40 width="280" x=100 y=200 color=white]
 [wait time=10]
 [iscript]
-$('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")' , 'background-size' : 'center', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
+$('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x300.png")' , 'background-size' : 'center', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
 [endscript]
 [s]
 [endif]
