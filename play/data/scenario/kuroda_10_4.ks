@@ -128,16 +128,21 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [sp]木々の冬仕度も楽しみに、ご一緒させていただきたく存じます……）[p]
 [stopbgm]
 ;手紙編終了
+[eval exp="sf.event_kuroda_10_4 = 1"]
+
+[if exp="tf.test_kuroda == true || f.event_replay == 'kuroda'"]
+[イベントシーン終了]
+[endif]
+
+[if exp="tf.test_kuroda == true"]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
 
 ;回想記録終了 
 [endreplay]
-[eval exp="sf.event_kuroda_10_4 = 1"]
-[if exp="tf.test_kuroda==true"]
-[イベントシーン終了]
-@jump storage="01_jsYiJcqRkk_test.ks"
-[endif]
 
 @jump storage="event.ks" target=*event_owari
 
