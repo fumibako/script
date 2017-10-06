@@ -44,7 +44,8 @@ $(".1_fore").empty();
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（そうだわ。私、四条様に言わないといけないことがありましたわ）[p]
+（そうだわ。[r]
+[sp]私、四条様に言わないといけないことがありましたわ）[p]
 [四条目パチ1回]
 ;この部分↓は、あっても無くても。
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
@@ -134,7 +135,7 @@ $(".1_fore").empty();
 [whosay name="四条 華織" color="olivedrab"]
 「[名前]は、可愛らしい方ですね。[r]
 [四条口微笑み]
-[sp]そうですね。 僕も、[名前]をひとりの女性としてお付き合いを[r]
+[sp]そうですね。　僕も、[名前]をひとりの女性としてお付き合いを[r]
 [sp]させていただきましょうか」[p]
 ;態度を改ましょうか　敬愛
 ;わかりやすいセリフ
