@@ -36,17 +36,21 @@
 
 [whosay name="黒田 将貴" color="#7a65b2"]
 
+
+[if exp="tf.test_kuroda==true || f.event_replay == 'kuroda'"]
+[イベントシーン終了]
+[endif]
+
+[if exp="tf.test_kuroda==true"]
+@jump storage="01_jsYiJcqRkk_test.ks"
+[endif]
+
 ;夢編終了
 [wait time=10]
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
 *seen_end
 [eval exp="sf.event_kuroda_event_6_1 = 1"]
-[if exp="tf.test_kuroda==true"]
-@jump storage="01_jsYiJcqRkk_test.ks"
-[イベントシーン終了]
-[endif]
-
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 
