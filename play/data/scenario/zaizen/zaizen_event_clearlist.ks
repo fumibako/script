@@ -336,6 +336,8 @@ f.event_replay = 'zaizen';
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+[イベントシーン終了]
+@jump storage="zaizen/zaizen_event_clearlist.ks" target=*start
 [s]
 
 *back_test
