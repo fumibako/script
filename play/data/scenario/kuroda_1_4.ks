@@ -217,6 +217,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [stopbgm]
 ;【部分分岐】梅柄の便せんに梅の香を焚き染めたもの【終了】
 ;==========================================================================================
+[eval exp="sf.event_kuroda_1_4 = 1"]
 [if exp="tf.test_kuroda == true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
@@ -260,6 +261,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 
 ;【部分分岐】梅にうぐいす柄の便せん【終了】
 ;==========================================================================================
+[eval exp="sf.event_kuroda_1_4 = 1"]
 [if exp="tf.test_kuroda == true"]
 [イベントシーン終了]
 @jump storage="01_jsYiJcqRkk_test.ks"
