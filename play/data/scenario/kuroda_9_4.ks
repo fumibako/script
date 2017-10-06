@@ -92,7 +92,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
 ;[iscript]
 ;[endscript]
-[if exp="tf.test_kuroda != true"]
+[if exp="f.okeiko_gamen == true"]
 ;◆黒田読了配列セット シナリオのみのテスト中はスキップ
 [eval exp="f.midoku_list_hairetsu[0][13] = 0;"]
 [endif]
