@@ -21,7 +21,8 @@ $('.list').remove();
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]
 [endif]
-;【背景】主人公邸 庭の見える部屋：昼
+
+;【背景】主人公邸 庭の見える部屋：昼←テストメニューからプレイ時画面構築用です
 [bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/room_niwa.jpg" time=50]
@@ -36,6 +37,14 @@ $('.list').remove();
 *no_seen
 ;選択肢からジャンプしてくるラベルです。スクリプト担当以外は消さないでください。
 ;=========================================================================
+;メッセージレイヤサイズを会話窓用に戻す
+[cm]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+;【背景】ヒロインの部屋　(jump時は選択肢用背景から)背景をもどします
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=600]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
