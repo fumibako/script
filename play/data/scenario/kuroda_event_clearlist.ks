@@ -376,6 +376,8 @@ f.event_replay = 'kuroda';
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+[イベントシーン終了]
+@jump storage="kuroda_event_clearlist.ks" target=*start
 [s]
 
 *back_test
