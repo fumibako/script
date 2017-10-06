@@ -327,6 +327,7 @@ alert(tf.jp_sinario);
 tf.jp_sinario = 'zaizen/' + tf.jp_sinario + '.ks';
 f.event_replay = 'zaizen';
 [endscript]
+@clearstack
 @jump storage="&tf.jp_sinario"
 [s]
 *test_end
