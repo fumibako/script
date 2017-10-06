@@ -37,6 +37,10 @@
 [whosay name="黒田 将貴" color="#7a65b2"]
 
 
+*seen_end
+;黒田夢イベント終了
+[eval exp="sf.event_kuroda_event_6_1 = 1"]
+
 [if exp="tf.test_kuroda==true || f.event_replay == 'kuroda'"]
 [イベントシーン終了]
 [endif]
@@ -49,8 +53,7 @@
 [wait time=10]
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
-*seen_end
-[eval exp="sf.event_kuroda_event_6_1 = 1"]
+
 @jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 
