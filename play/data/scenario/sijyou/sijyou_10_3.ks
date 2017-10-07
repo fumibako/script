@@ -176,7 +176,7 @@
 *seen3
 ;/////手紙///
 *fumi_toutyaku_fumiya
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true && f.event_replay != 'sijyou'"]
 [iscript]
 f.fumi_all_title_new=f.okeiko_month_kansuuji+"「華織について」　文矢"; //「文矢からの手助け」→「華織について」に変更させていただきました。「変えても大丈夫」とのご回答をありがとうございました(スクリプト担
 f.fumi_list_all_title.push(f.fumi_all_title_new);
