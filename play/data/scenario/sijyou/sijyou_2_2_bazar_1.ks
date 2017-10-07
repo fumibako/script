@@ -324,8 +324,9 @@ $(".1_fore").empty();
 [wait time=10]
 あとは）[p]
 ;礼法が上がってないのか？といわれるので対策
+[if exp="f.event_replay != 'sijyou'"]
 [eval exp="f.para_shujinkou_j_reihou = f.para_shujinkou_j_reihou + 4"]
-[autosave]
+[endif]
 [whosay name=磯野]
 [主人公驚]
 「お嬢様、四条様がお迎えにいらっしゃいました」[p]
