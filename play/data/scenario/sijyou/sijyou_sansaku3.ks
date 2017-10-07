@@ -182,14 +182,17 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 [wait time=10]
 (華織様、また今度お会いしましょう)[p]
 [主人公目閉じ]
-[eval exp="f.sijyou_sobo=true]
+
 ;華道展セリフ　他に影響wiki参照
 #
 四条邸に並ぶ窓を少し眺めた後、私は、来た道を引き返した。[p]
 ;爽やかな感じになると良い
 ;現状、去り際かっこいい感じな表情
 ;てにをは～が足りてない
+[if exp="f.event_replay != 'sijyou'"]
+[eval exp="f.sijyou_sobo=true]
 [eval exp="sf.event_sijyou_sansaku_3 = 1"]
+[endif]
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
