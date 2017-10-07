@@ -151,7 +151,9 @@
 ;まだ、お節介のときの華織
 [whosay name="華織" color="olivedrab"]
 「[華衣]、心を込めて書くんだよ」[p]
+[if exp="f.event_replay != 'sijyou'"]
 [eval exp="f.event_sijyou_kai_jijyou = 1"]
+[endif]
 ;シーン徐々に現時間へ
 ;=================================================================================_
 *seen3
