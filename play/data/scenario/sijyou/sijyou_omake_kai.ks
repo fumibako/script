@@ -30,8 +30,9 @@ $('.loding_pic').remove();
 [whosay name="四条父" color="%mp.color"]
 「今日は、やけに二階が騒がしいな」[p]
 [whosay name="四条母" color="#9B608B"]
-「聞いてよ！華織と[華衣]だけで、部屋の荷物の入れ替えをしてるみたい[r]
-[sp]なの！」[p]
+「聞いてよ！[r]
+[sp]華織と[華衣]だけで、部屋の荷物の入れ替えを[r]
+[sp]してるみたいなの！」[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
