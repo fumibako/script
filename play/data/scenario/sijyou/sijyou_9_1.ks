@@ -291,19 +291,20 @@
 [stopbgm]
 ;[endif]
 ;個別ルート前夜終了
+[if exp="f.event_replay != 'sijyou'"]
 [eval exp="f.event_common[10] = 1"]
 [eval exp="f.sijyou_au=1"]
 [eval exp="f.event_oaite_mitei = 0"]
 [eval exp="sf.event_sijyou_9_1 = 1"]
 ;共通お相手決定フラグ
 [eval exp="f.omiai_kettei = 1"]
+[endif]
+[イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
 [イベントシーン終了４]
 [endif]
-
-[イベントシーン終了]
 @jump storage="test_sijyou.ks"
 [s]
 
