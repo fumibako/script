@@ -18,6 +18,8 @@ $(".1_fore").empty();
 ;終わったら消す
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
+[glink target="no_test" text="シナリオテストを無効にする" graphic="select_waku_x500.png" exp="tf.test_hujieda=false,tf.test_gamen=false" size=10 width="150" x=400 y=600 color=white]
+*no_test
 [endif]
 ;=======================================================================================
 ;変数初期設定　エラー回避
