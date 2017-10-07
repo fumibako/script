@@ -631,8 +631,10 @@ _　さてどうしましょうか？」[p]
 （今は、まだ意地の悪い兄でいよう。 いつか、またそのときが[r]
 [sp]来るまで） [p]
 #
+[if exp="f.event_replay != 'sijyou'"]
 [eval exp="f.event_sijyou_4 = 1"]
 [eval exp="sf.event_sijyou_sansaku_4 = 1"]
+[endif]
 ;【退場】四条
 [四条退場準備 time=500]
 
