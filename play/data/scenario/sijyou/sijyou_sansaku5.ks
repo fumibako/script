@@ -71,7 +71,7 @@ _　思うの！」
 ;四条祖父のこと
 #
 ;セリフは適当。時期でセリフの変更
-[whosay name=&sf.girl_namae color="[whosay name="cf5a7f"]
+[whosay name=&sf.girl_namae color="cf5a7f"]
 [if exp="f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3]
 ([華衣]さん、少し変わられましたね)
 [else]
