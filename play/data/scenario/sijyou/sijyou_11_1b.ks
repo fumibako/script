@@ -609,8 +609,10 @@ $('.junbi_girl').remove();
 ;[chara_mod name="bg" storage="ﾈﾘﾈの写真画像"]
 *seen_end
 ;四条イベント6後=1。それ以外=0
-[eval exp="f.sijyou_event6=1"]
+[if exp="f.event_replay != 'sijyou'"]
+[eval exp="f.sijyou_event6 = 1"]
 [eval exp="sf.event_sijyou_11_1=1"]
+[endif]
 #
 ;=================================================================================_
 *seen6
