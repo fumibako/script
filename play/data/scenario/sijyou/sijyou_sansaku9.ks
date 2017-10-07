@@ -44,6 +44,9 @@
 (私も帰りましょうか)[p]
 #
 ;=====================システムメッセージ===========================================
+[if exp="f.okeiko_gamen != true && f.event_replay == 'sijyou'"]
+@jump target=*seen_end_sansaku9
+[endif]
 [iscript]
 f.okeiko_para_pre_random_1_3=Math.floor(Math.random() * 3 + 1);
 if(f.para_shujinkou_tairyoku_now < 2){
@@ -123,6 +126,7 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [p]
 [freeimage layer = 26]
 [wait time=10]
+*seen_end_sansaku9
 [eval exp="sf.event_sijyou_sansaku_9 = 1"]
 [イベントシーン終了]
 ;=====================システムメッセージ===========================================
