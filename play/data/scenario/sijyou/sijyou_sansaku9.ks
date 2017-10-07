@@ -45,7 +45,7 @@
 (私も帰りましょうか)[p]
 #
 ;=====================システムメッセージ===========================================
-[if exp="f.okeiko_gamen != true && f.event_replay == 'sijyou'"]
+[if exp="f.event_replay == 'sijyou'"]
 @jump target=*seen_end_sansaku9
 [endif]
 [iscript]
