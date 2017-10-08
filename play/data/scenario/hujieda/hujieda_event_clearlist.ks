@@ -438,7 +438,7 @@ $(".1_fore").empty();
 [s]
 
 *back_okeiko
-[eval exp="f.okeiko_gamen == true"]
+[eval exp="f.okeiko_gamen = true"]
 [eval exp="tf.jp_sinario='none'"]
 [eval exp="f.event_replay = 'none'"]
 [freeimage layer = 26]
