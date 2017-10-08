@@ -655,6 +655,12 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;ジャンプ先でバッド判定あり
 @jump storage="common_9_1.ks" target="*common_9_1_futatabi_oaiteerabi"
 [endif]
+
+;リプレイ時は初期値にもどす
+[if exp="f.okeiko_gamen != true && f.event_replay == 'katuraginomiya'"]
+[eval exp="f.katuraginomiya_konyaku = false"]
+[endif]
+
 [イベントシーン終了]
 
 [if exp="f.okeiko_gamen == true"]
