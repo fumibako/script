@@ -242,7 +242,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;システム地の文。変更してください
 婚約をお受けする。[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝
-;フラグA
+;フラグA 話の流れにかかわる
 [eval exp="f.katuraginomiya_konyaku=true"]
 @jump target=*common
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -528,11 +528,13 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 そして、ここから殿下と私の物語はまた新たに始まる。[r]
 [p]
 *seen_end0
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.event_common[10] = 1"]
 [eval exp="f.event_oaite_mitei=0"]
 [eval exp="f.katuraginomiya_au=1"]
 ;共通お相手決定フラグ　９＿１判定をスキップする 
 [eval exp="f.omiai_kettei =1"]
+[endif]
 ;===================================================================================
 ;スクリプト・全画面表示からの復帰準備へ飛ぶ 初期化
 @jump target=*common_end
@@ -649,7 +651,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;機能ボタン表示_スクリプト担当さまにおまかせします　
 *seen_end
 [eval exp="sf.event_katuragi_9_1 = 1"]
-[if exp="f.event_oaite_mitei == 1 && f.katuraginomiya_konyaku == false"]
+[if exp="f.okeiko_gamen == true && f.event_oaite_mitei == 1 && f.katuraginomiya_konyaku == false"]
 ;ジャンプ先でバッド判定あり
 @jump storage="common_9_1.ks" target="*common_9_1_futatabi_oaiteerabi"
 [endif]
