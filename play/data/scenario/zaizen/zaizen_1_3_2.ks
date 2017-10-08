@@ -18,6 +18,7 @@
 [font color=white size=27]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 ;=======================
+@layopt layer=message0 visible=true
 数日後、財前邸にて。[p]
 ;=======================
 ;【背景】洋館居間
@@ -30,7 +31,6 @@
 [財前通常]
 [イベントシーン構築ボタン無し版枠茶色]
 @layopt layer=fix visible=true
-@layopt layer=message0 visible=true
 [freeimage layer=29 time=0]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
