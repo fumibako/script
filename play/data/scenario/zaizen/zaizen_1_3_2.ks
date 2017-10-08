@@ -5,19 +5,34 @@
 [call target=*start storage="macro_tati_zaizen.ks"]
 [freeimage layer = 1]
 [wait time=10]
+[call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
+[プリロード画面消去]
 ;↓1_3_1からのjump先ラベルです。つながりが自然になるように、テキスト調整時に「数日後、財前邸にて」など地の文(全画面?)を入れる予定です
 *seen1
-[call target=*1_3_2 storage="zaizen/preload_zaizen.ks"]
+#
+@layopt layer=fix visible=false
+@layopt layer=message0 visible=false
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=10]
+[current layer="message0"]
+[font color=white size=27]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+;=======================
+数日後、財前邸にて。[p]
+;=======================
 ;【背景】洋館居間
 [bg wait=true method='crossfade' storage="../fgimage/bg/test_room_zaizen_ima.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
-[イベントシーン構築ボタン無し版枠茶色]
-#
+;=======================
 ;【立ち絵】財前：真剣　;変更してください
 ;[財前サイズ通常]
 [財前ベーススーツ]
 [財前通常]
-[プリロード画面消去]
+[イベントシーン構築ボタン無し版枠茶色]
+@layopt layer=fix visible=true
+@layopt layer=message0 visible=true
+[freeimage layer=29 time=0]
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
 
