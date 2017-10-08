@@ -144,9 +144,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;【部分分岐】梅柄の便せんに梅の香を焚き染めたもの【開始】
 ;【黒田好感度】+2（手紙の話題に出た梅柄。それに香を焚くひと手間をかけているところが好感度up）
 ;==========================================================================================
-;テスト中は好感度はスキップ
-[if exp="f.okeiko_gamen == true"]
-[eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 2"]
+;テスト中+リプレイ時は好感度はスキップ
+[if exp="f.okeiko_gamen == true && f.event_replay != 'kuroda'"]
+	[eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 2"]
 [endif]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_4_scene3==undefined"]
@@ -232,7 +232,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 *kuroda_1_4_sentaku01_c
 ;【部分分岐】梅にうぐいす柄の便せん【開始】
 ;【黒田好感度】+1
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true && f.event_replay != 'kuroda'"]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
 [endif]
 

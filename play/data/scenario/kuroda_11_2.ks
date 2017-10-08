@@ -828,7 +828,10 @@
 *scene14
 
 ;【黒田好感度】+1（プラス点：黒田が良かれと思って言ったことや事前に聞く心遣いに気付いて挙げている点）
-[eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
+;リプレイ時+テスト時はパラメータ変化しない
+[if exp="f.okeiko_gamen == true && f.event_replay != 'kuroda'"]
+	[eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
+[endif]
 ;【立ち絵】主人公：通常
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -910,7 +913,10 @@
 *scene15
 
 ;【黒田好感度】-1（マイナス点：黒田への気遣いというよりは興味が薄いと判断されるため）
-[eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando - 1"]
+;リプレイ時+テスト時はパラメータ変化しない
+[if exp="f.okeiko_gamen == true && f.event_replay != 'kuroda'"]
+	[eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando - 1"]
+[endif]
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 [wait time=10]
