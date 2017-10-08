@@ -3,6 +3,7 @@
 ;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
 ;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
 ;このシナリオの戻り値は　f.event_replay = 'hujieda';　です。
+[eval exp="f.okeiko_gamen == false"]
 ;====================================================================================================
 *start
 @clearfix
@@ -434,6 +435,14 @@ $(".1_fore").empty();
 [endscript]
 [イベントシーン終了]
 @jump storage="hujieda/hujieda_event_clearlist.ks" target=*start
+[s]
+
+*back_okeiko
+[eval exp="f.okeiko_gamen == true"]
+[eval exp="tf.jp_sinario='none'"]
+[eval exp="f.event_replay = 'none'"]
+[freeimage layer = 26]
+@jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 
 *back_test
