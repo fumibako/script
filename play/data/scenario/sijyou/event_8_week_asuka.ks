@@ -983,7 +983,9 @@ $(".1_fore").empty();
 浮かんだ内容は、心に押し留めたが、[r]
 殿下への御手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
+[endif]
 @jump target=comon1
 [s]
 ;======================================================================================
@@ -1056,7 +1058,9 @@ $(".1_fore").empty();
 浮かんだ内容は、心に押し留めて、自戒する。[r]
 それでも鳥文の君から頂いたお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 1"]
+[endif]
 @jump target=comon1
 [s]
 ;藤枝の選択肢を選んだ場合に明日もお稽古頑張りましょうと表示します
@@ -1158,7 +1162,9 @@ $(".1_fore").empty();
 浮かんだ内容は、心に押し留めたが、[r]
 華織お兄様へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
+[endif]
 @jump target=comon1
 [s]
 ;========================================================================
@@ -1225,7 +1231,9 @@ _　お手紙から財前様は、とても現実的で[r]
 浮かんだ内容は、心に押し留めたが、[r]
 財前様へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_zaizen_koukando = f.para_zaizen_koukando + 1"]
+[endif]
 @jump target=comon1
 [s]
 ;========================================================================
@@ -1294,7 +1302,9 @@ _　お手紙から財前様は、とても現実的で[r]
 浮かんだ内容は、心に押し留めたが、[r]
 黒田様へのお手紙のことを考えると[r]
 自然と落ち着いて穏やかな気持ちになっていった。[p]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
+[endif]
 @jump target=comon1
 [s]
 ;==========================================================
@@ -1303,7 +1313,7 @@ _　お手紙から財前様は、とても現実的で[r]
 ;==========================================================
 *comon
 ;淑女度が低い場合、あげます
-[if exp="f.para_shujinkou_shukujodo < 20"]
+[if exp="f.para_shujinkou_shukujodo < 20 && f.okeiko_gamen == true"]
 [eval exp="f.para_shujinkou_shukujodo = f.para_shujinkou_shukujodo + 2"]
 [endif]
 
@@ -1348,9 +1358,12 @@ _　お手紙から財前様は、とても現実的で[r]
 [暗転２終了 time=600]
 ;・・・・・・
 ;[layopt layer=29 visible=true]
+[if exp="f.okeiko_gamen == true"]
 ;【話題入手】
 [話題入手 wadai_txt="『怪談についての話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('怪談についての話題',2,2,2,2,1,'a','','','','')"]
+[endif]
+
 [eval exp="sf.event_8_week_asuka = 1"]
 [er]
 [イベントシーン終了]
