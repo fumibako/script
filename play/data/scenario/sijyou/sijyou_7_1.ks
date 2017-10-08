@@ -114,7 +114,9 @@
 （華織お兄様と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
 [playse storage=kira.ogg loop=false ]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
+[endif]
 #
 私は星に願った。[p]
 @jump target=*end_Q
@@ -134,7 +136,9 @@
 （財前様と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
 [playse storage=kira.ogg loop=false ]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
+[endif]
 #
 私は星に願った。[p]
 @jump target=*end_Q
@@ -151,7 +155,9 @@
 （黒田様と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
 [playse storage=kira.ogg loop=false ]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
+[endif]
 #
 私は星に願った。[p]
 
@@ -169,7 +175,8 @@
 お稽古のことをお願いした。[p]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[if exp="f.event_hujieda[1] == 1"]
+
+[if exp="f.event_hujieda[1] == 1 && f.okeiko_gamen == true"]
 ;藤枝イベントをみてる場合
 （お箏が上手になりますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
@@ -180,7 +187,6 @@
 （今、気になっているお稽古が上達しますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
 [playse storage=kira.ogg loop=false ]
-
 [iscript]
 tf.rand = Math.floor( Math.random() * 4) + 1
 if(tf.rand == 0){
@@ -210,7 +216,7 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 #
 淑女らしくなれるようにお願いした。[p]
-[if exp="f.katuraginomiya_only == 1"]
+[if exp="f.katuraginomiya_only == 1 && f.okeiko_gamen == true"]
 [eval exp="f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo + 1"] 
 [else]
 [eval exp="f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo + 1"] 
