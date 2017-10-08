@@ -687,9 +687,12 @@ jumpします。[p]
 [wait time=50]
 @layopt layer=message1 visible=true
 [current layer="message1"]
+[font size=30]
 リプレイモードで表示されています。　続きを選択してください。[r][r][r]
 [link target="seen11_1_3"]つづきをみる[endlink][r][r][r]
+[if exp="sf.ED_zaizen_bad2 == 1"]
 [link target="seen11_1_bad"]バッド２をみる[r][r][r]
+[endif]
 [link target="end_test"]リプレイを終了する[endlink]
 [s]
 ;----------------------------
