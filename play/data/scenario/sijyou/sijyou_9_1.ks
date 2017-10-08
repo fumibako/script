@@ -291,7 +291,7 @@
 [stopbgm]
 ;[endif]
 ;個別ルート前夜終了
-[if exp="f.event_replay != 'sijyou'"]
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.event_common[10] = 1"]
 [eval exp="f.sijyou_au=1"]
 [eval exp="f.event_oaite_mitei = 0"]
