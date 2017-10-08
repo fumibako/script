@@ -675,17 +675,50 @@ jumpします。[p]
 「はい！」[p]
 
 
-;================================テストメニューを抜けた時点で表示されませんが後で削除します===============================
-[if exp="tf.test_zaizen == true"]
+;================================テストメニュー リプレイで表示===============================
 #
+[if exp="tf.test_zaizen == true || f.event_replay == 'zaizen'"]
+@layopt layer=fix visible=false
+[image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
+[er]
+;選択肢用レイヤーを追加
+[position layer=message1 height=550 top=50 left=250 opacity=0]
+[wait time=50]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+リプレイモードで表示されています。　続きを選択してください。[r][r][r]
+[font size=30]
 ;演出の繋がりを知りたいので
 [er]
 テストフラグで表示されています。[r]
-[link storage="zaizen/zaizen_11_1_3.ks" target="seen_1"]つづきをみる[endlink][r]
-[link storage="zaizen/zaizen_11_1_bad1.ks" target="seen_1"]bad1をみる[r]
-[link target="end_test"]テストをおわる[endlink][r]
+[link target="seen11_1_3"]つづきをみる[endlink][r]
+[link target="seen11_1_bad"]バッド２をみる[r]
+[link target="end_test"]リプレイを終了する[endlink][r]
 [s]
-*end_test
+;----------------------------
+*seen11_1_3
+[er]
+[current layer="message0"]
+[resetfont]
+[iscript]
+$(".sentaku").remove();
+[endscript]
+[cm]
+@layopt layer=fix visible=true
+@jump storage="zaizen/zaizen_11_1_3.ks" target=*seen_1
+[s]
+;--------------------------
+*seen11_1_bad
+[er]
+[current layer="message0"]
+[resetfont]
+[iscript]
+$(".sentaku").remove();
+[endscript]
+[cm]
+@layopt layer=fix visible=true
+@jump storage="zaizen/zaizen_11_1_bad1.ks" target="seen_1"
+[s]
 [endif]
 ;=====================================================================================================================
 *sentaku_to_bad_or_other
@@ -696,6 +729,7 @@ jumpします。[p]
 [elsif exp="f.okeiko_gamen == true"]
 @jump  storage="zaizen/zaizen_11_1_3.ks" target="seen_1"
 [endif]
+*end_test
 [イベントシーン終了]
 @jump storage="test_zaizen.ks"
 [s]
