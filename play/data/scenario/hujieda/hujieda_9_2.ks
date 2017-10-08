@@ -154,7 +154,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 （これからお手紙を沢山出すわ……）[p]
 ;===================================
 ;手紙やりとりフラグ
+[if exp="f.okeiko_gamen == true"]
 [eval exp="f.hujieda_fumi_start=1"]
+[endif]
 ;===================================
 [fadeoutbgm time=3000]
 #
