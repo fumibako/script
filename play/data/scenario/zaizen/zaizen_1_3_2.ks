@@ -9,7 +9,6 @@
 [プリロード画面消去]
 ;↓1_3_1からのjump先ラベルです。つながりが自然になるように、テキスト調整時に「数日後、財前邸にて」など地の文(全画面?)を入れる予定です
 *seen1
-#
 @layopt layer=fix visible=false
 @layopt layer=message0 visible=false
 ;メッセージレイヤを全画面用に設定変更
