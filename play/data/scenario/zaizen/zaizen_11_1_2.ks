@@ -54,7 +54,8 @@ zaizen_11_1_2.ks[r]
 jumpします。[p]
 [ct]
 [イベント中テスト数値表示]
-@jump target=*sentaku_to_bad_or_other
+@jump target=*seen_sentaku
+;@jump target=*sentaku_to_bad_or_other
 [s]
 
 *jump_no
@@ -674,7 +675,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
 
-
+*seen_sentaku
 ;================================テストメニュー リプレイで表示===============================
 #
 [if exp="tf.test_zaizen == true || f.event_replay == 'zaizen'"]
