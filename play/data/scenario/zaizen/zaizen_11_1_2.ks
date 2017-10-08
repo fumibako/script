@@ -688,13 +688,9 @@ jumpします。[p]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 リプレイモードで表示されています。　続きを選択してください。[r][r][r]
-[font size=30]
-;演出の繋がりを知りたいので
-[er]
-テストフラグで表示されています。[r]
-[link target="seen11_1_3"]つづきをみる[endlink][r]
-[link target="seen11_1_bad"]バッド２をみる[r]
-[link target="end_test"]リプレイを終了する[endlink][r]
+[link target="seen11_1_3"]つづきをみる[endlink][r][r][r]
+[link target="seen11_1_bad"]バッド２をみる[r][r][r]
+[link target="end_test"]リプレイを終了する[endlink]
 [s]
 ;----------------------------
 *seen11_1_3
