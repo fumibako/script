@@ -311,17 +311,48 @@ $('.list').remove();
 去っていった。[p]
 
 *seen_end
-
+[if exp="f.okeiko_gamen == true"]
+@jump target=*seen_hujieda_11_3_hantei
+[endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;シナリオテスト用
-[if exp="tf.test_hujieda == true"]
+;テスト時 または　リプレイ時かつ　藤枝バッド２をみている場合はシーン選択
+[if exp="(tf.test_hujieda == true && f.okeiko_gamen != true) || (f.okeiko_gamen != true && f.event_replay == 'hujieda' && sf.ED_hujieda_bad2 == 1)"]
+@layopt layer=fix visible=false
+[image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
+[er]
+;選択肢用レイヤーを追加
+[position layer=message1 height=550 top=50 left=250 opacity=0]
+[wait time=50]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+リプレイモードで表示されています。　続きを選択してください。[r][r][r]
+[font size=30]
+[link target="seen11_1_bad"]バッド２をみる[r][r][r]
+[link target="end_test1"]リプレイを終了する[endlink]
+[s]
+;----------------------------
+*seen11_1_bad
+[er]
+[current layer="message0"]
+[resetfont]
+[iscript]
+$(".sentaku").remove();
+[endscript]
+[cm]
+@layopt layer=fix visible=true
+@jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
+[s]
+*end_test1
+@layopt layer=fix visible=true
 @jump target=*seen_end1
 [endif]
+;----------------------------
 ;ＢＡＤリプレイ用のジャンプ リプレイ終了処理はＢＡＤ側にあります
 [if exp="f.flag_replay == true"]
 @jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
 [endif]
-
+;----------------------------
+*seen_hujieda_11_3_hantei
 [if exp="f.para_hujieda_koukando < 40"]
 ;バッドのシナリオここから
 [暗転１]
