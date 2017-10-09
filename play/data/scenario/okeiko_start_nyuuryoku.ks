@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿;=============================================
+;=============================================
 ;okeiko.ks 設定入力部分
 ;=============================================
 *start
@@ -7,6 +7,7 @@
 [cm]
 ;正規戻るボタンから戻ってないとき回避
 [eval exp="f.clearlist_out_storage ='okeiko_start_nyuuryoku.ks'"]
+[eval exp="f.event_replay = 'none']　
 [eval exp="tf.test_kuroda=false"]
 [eval exp="tf.test_sijyou=false"]
 [eval exp="tf.test_zaizen=false"]
