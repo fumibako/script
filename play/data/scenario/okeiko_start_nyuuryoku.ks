@@ -160,7 +160,7 @@
 
 [iscript]
 //入力済デフォルト値の設定
-if(sf.ending_Number_of_times == undefined){ sf.ending_Number_of_times = 0; }
+sf.ending_Number_of_times = 0;
 $("input[name='sf.ending_Number_of_times]").val(sf.ending_Number_of_times);
 $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
 $("input[name='f.para_zaizen_koukando']").val(f.para_zaizen_koukando);
