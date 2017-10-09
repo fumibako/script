@@ -678,7 +678,11 @@ jumpします。[p]
 *seen_sentaku
 ;================================テストメニュー リプレイで表示===============================
 #
-[if exp="tf.test_zaizen == true || f.event_replay == 'zaizen'"]
+;バッドをみていないリプレイでは次のシーンに
+[if exp="(f.okeiko_gamen != true && tf.test_zaizen != true) || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad2 != 1)"]
+@jump storage="zaizen/zaizen_11_1_3.ks" target=*seen_1
+[endif]
+[if exp="(f.okeiko_gamen != true && tf.test_zaizen == true) || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad2 == 1)"]
 @layopt layer=fix visible=false
 [image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
 [er]
@@ -690,9 +694,7 @@ jumpします。[p]
 リプレイモードで表示されています。　続きを選択してください。[r][r][r]
 [font size=30]
 [link target="seen11_1_3"]つづきをみる[endlink][r][r][r]
-[if exp="sf.ED_zaizen_bad2 == 1"]
 [link target="seen11_1_bad"]バッド２をみる[r][r][r]
-[endif]
 [link target="end_test"]リプレイを終了する[endlink]
 [s]
 ;----------------------------
