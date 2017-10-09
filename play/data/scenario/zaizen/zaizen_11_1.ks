@@ -556,12 +556,9 @@
 [r][r]
 [link target=*next11_bad]バッド1をみる[endlink][r]
 [r][r]
-;[if exp="tf.test_zaizen == true"] 
-;[link target="end0"]選択肢を見る（テストのみ）[endlink][r][r][r]
-;[endif] endifを探して稀にバグるのでコメント化
 [link target="end"]終了する[endlink]
-[endif]
 [s]
+[endif]
 
 *next11_1_2
 [if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
