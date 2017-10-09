@@ -572,7 +572,13 @@ jumpします。[p]
 [endif]
 ;=================テストとリプレイ時の処理========================
 *replay_sentaku_to_bad_or_other
-[if exp="tf.test_zaizen == true || f.event_replay == 'zaizen'"]
+;バッドをみていない場合はシームレスに次にリプレイ
+[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 != 1)"]
+@jump storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1"
+[endif]
+
+;バッドをみている場合は選択　みていない場合はシームレスに次にリプレイ
+[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
 @layopt layer=fix visible=false
 [image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
 [er]
@@ -585,13 +591,11 @@ jumpします。[p]
 [font size=30]
 [link target=next11_1_2]続きをみる[endlink][r]
 [r][r]
-[if exp="sf.ED_zaizen_bad1 == 1"]
 [link target=*next11_bad]バッド1をみる[endlink][r]
 [r][r]
-[endif]
-[if exp="tf.test_zaizen == true"] 
-[link target="end0"]選択肢を見る（テストのみ）[endlink][r][r][r]
-[endif]
+;[if exp="tf.test_zaizen == true"] 
+;[link target="end0"]選択肢を見る（テストのみ）[endlink][r][r][r]
+;[endif] endifを探して稀にバグるのでコメント化
 [link target="end"]終了する[endlink]
 [s]
 
