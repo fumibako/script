@@ -695,6 +695,7 @@ sf.ED_hujieda_good=1;
 [s]
 
 *check_event1
+[eval exp="f.clearlist_out_storage ='test_sijyou.ks'"]
 @jump storage="sijyou/sijyou_event_clearlist.ks"
 [s]
 
