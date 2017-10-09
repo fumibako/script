@@ -56,7 +56,7 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
 *no_test
 [endif]
 [locate x=880 y=24]
-[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start"]
+[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start" exp="f.event_replay='none'"]
 [wait time=10]
 ;=============================================
 ;変数初期設定
