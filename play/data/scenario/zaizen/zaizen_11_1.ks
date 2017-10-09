@@ -535,11 +535,13 @@
 *replay_sentaku_to_bad_or_other
 ;バッドをみていない場合はシームレスに次にリプレイ
 [if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 != 1)"]
+[p]
 @jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
 [endif]
 
 ;バッドをみている場合は選択　みていない場合はシームレスに次にリプレイ
 [if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
+[p]
 @layopt layer=fix visible=false
 [image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
 [er]
