@@ -179,7 +179,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（心が吸いこまれそうな、澄んだ空……[r]
+（心が吸いこまれそうな、澄んだ空……。[r]
 [sp]高い空へ舞い上がっていくような[r]
 [sp]心もとないような……）[p]
 
@@ -682,8 +682,9 @@
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「お能ですか。木漏れ日ということは、お外で……？」[r]
-[sp]――[ruby text="たきぎ"]薪能。そう呼ばれる、野外の能舞台だろうか。[p]
+「お能ですか。木漏れ日ということは、お外で……？」[p]
+#
+――[ruby text="たきぎ"]薪能。そう呼ばれる、野外の能舞台だろうか。[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_10_3_scene14==undefined"]
 	[skipstop]
@@ -717,7 +718,7 @@
 [chara_mod name="kuroda_me" storage="kuroda/me_yokofusi_kaisou.png" time=0]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「日が沈むと、かがり火がゆらめくなかに[r]
-[sp]舞台が浮かんで錦の袖がひるがえる……[r]
+[sp]舞台が浮かんで錦の袖がひるがえる……。[r]
 [wait time=500]
 [主人公閉目パチ1回]
 [wait time=10]
@@ -739,7 +740,7 @@
 [wait time=10]
 #
 目の前の紅葉が炎となりかがり火となって[r]
-お能の世界へといざなってくれる心地がする――[p]
+お能の世界へといざなってくれる心地がする――。[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_10_3_scene15==undefined"]
 	[skipstop]
@@ -778,7 +779,7 @@
 [autosave]
 [p]
 
-（今の繊細な表情と、イグチを見つけたときの楽しそうなお顔……[r]
+（今の繊細な表情と、イグチを見つけたときの楽しそうなお顔……。[r]
 [sp]どちらもお持ちなところが、黒田様の面白さかもしれない）[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_10_3_scene16==undefined"]
@@ -876,7 +877,7 @@
 [wait time=10]
 
 名残惜しさを感じつつも、黒田様の自然への情熱を目の当たりにして[r]
-少し疲れも感じていたので、ホッとする気持ちもあった――[p]
+少し疲れも感じていたので、ホッとする気持ちもあった――。[p]
 [fadeoutbgm time=3000]
 [wait time=10]
 ;【立ち絵】黒田：ほほえみ
