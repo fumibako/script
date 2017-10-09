@@ -1,12 +1,37 @@
 ﻿;======================================================================================
 ;◆◆情報：四条◆◆
 ;======================================================================================
+*jump_clearlist
+;[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+;[wait time=10]
+[freeimage layer = 28]
+[cm]
+[clearfix]
+[if exp="f.event_replay == 'sijyou'"]
+ @jump storage="sijyou/sijyou_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'zaizen'"]
+ @jump storage="zaizen/zaizen_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'kuroda'"]
+ @jump storage="kuroda_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'katuraginomiya'"]
+ @jump storage="katuraginomiya/katuraginomiya_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'hujieda'"]
+ @jump storage="hujieda/hujieda_event_clearlist.ks" target=*start
+[endif]
+
+[s]
+*start
 *info_sijyou
 [freeimage layer = 27]
 [freeimage layer = 28]
 [eval exp="f.oaite_viewing_storage = 'info_sijyou.ks'"]
 [eval exp="f.viewing_target = '*info_sijyou'"]
 [eval exp="f.oaite_viewing_target = '*info_sijyou'"]
+[call storage="eventpercent_sijyou.ks" target=*start]
 [call target=*info_sijyou_hyouji]
 
 ;◆手紙一覧
@@ -1063,6 +1088,7 @@ $('.info_face').remove();
 ;同じlayer26なのでいらないかと
 [image layer=26 x=0 y=0 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
 [wait time=10]
+[cm]
 [eval exp="tf.x_info = 1"]
 [eval exp="tf.y_info = 1"]
 ;[if exp="f.sijyou_au == 0"]
@@ -1123,5 +1149,9 @@ $('.info_face').remove();
 [else]
 	[ptext name="list" text="―" layer=28 size=25 x=270 y=448 color=black bold=bold]
 [endif]
+;◆クリアリストリンク
+[eval exp="f.clearlist_out_storage='info_sijyou.ks'"]
+[glink storage="info_sijyou.ks" target=*jump_clearlist exp="f.event_replay = 'sijyou'" text=&f.sijyou_event_percent fontcolor=gray size=16 width=170 x=130 y=480 color=white]
+[wait time=10]
 [return]
 [s]
