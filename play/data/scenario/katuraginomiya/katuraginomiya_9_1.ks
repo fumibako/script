@@ -5,6 +5,10 @@
 [call target=*9_1 storage="katuraginomiya/preload_katuraginomiya.ks"]
 [freeimage layer = 1]
 [wait time=10]
+;リプレイフラグ監視　既にtrueの値が入っている場合(未定義ではない)場合フラグを一時保管
+[if exp="f.katuraginomiya_konyaku == true && f.event_replay == 'katuraginomiya'"]
+[eval exp="tf.kansi_flag = f.katuraginomiya_konyaku"]
+[endif]
 ;【背景】主人公邸 庭の見える部屋：昼
 [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
@@ -656,9 +660,13 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 @jump storage="common_9_1.ks" target="*common_9_1_futatabi_oaiteerabi"
 [endif]
 
-;リプレイ時は初期値にもどす
-[if exp="f.okeiko_gamen != true && f.event_replay == 'katuraginomiya'"]
+;リプレイ時 監視フラグがtrueでない(未定義)の場合、初期値にもどす
+[if exp="f.okeiko_gamen != true && f.event_replay == 'katuraginomiya' && tf.kansi_flag != true"]
 [eval exp="f.katuraginomiya_konyaku = false"]
+[endif]
+;リプレイ時　監視フラグがtrueである(未定義ではない)場合そのまま渡す
+[if exp="f.okeiko_gamen != true && f.event_replay == 'katuraginomiya' && tf.kansi_flag == true"]
+[eval exp="f.katuraginomiya_konyaku = tf.kansi_flag"]
 [endif]
 
 [イベントシーン終了]
