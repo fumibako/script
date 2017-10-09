@@ -23,6 +23,10 @@ $(".1_fore").empty();
 [glink target="no_test" text="シナリオテストを無効にする" graphic="select_waku_x500.png" exp="tf.test_kuroda=false,tf.test_gamen=false" size=10 width="150" x=400 y=600 color=white]
 *no_test
 [endif]
+[locate x=880 y=24]
+[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start"]
+[wait time=10]
+
 ;=====================================================================================================
 ;エラー回避変数初期設定
 [if exp="sf.event_kuroda_event_6_1 == undefined"]

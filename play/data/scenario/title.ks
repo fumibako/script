@@ -250,36 +250,10 @@ TG.stat.play_se = true;
 [locate x=100 y=50]
 [button name="list" graphic="button_title_credit.png" target="*credit" time=0]
 
-;「おまけ」：一つ以上のルート全エンディングクリア条件で表示。位置は今後さらに調整するかもしれません
-;黒田判定
-[if exp="sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1 && sf.ED_kuroda_bad == 1"]
-[eval exp="tf.extra_2 = true"]
-@jump target=extra2_hantei_end
-[endif]
-;四条判定
-[if exp="sf.ED_sijyou_normal == 1 && sf.ED_sijyou_good == 1 && sf.ED_sijyou_bad == 1"]
-[eval exp="tf.extra_2 = true"]
-@jump target=extra2_hantei_end
-[endif]
-;財前判定
-[if exp="sf.ED_zaizen_normal == 1 && sf.ED_zaizen_good == 1 && sf.ED_zaizen_bad2 == 1 && sf.ED_zaizen_bad1 == 1"]
-[eval exp="tf.extra_2 = true"]
-@jump target=extra2_hantei_end
-[endif]
-;葛城宮判定
-[if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
-[eval exp="tf.extra_2 = true"]
-@jump target=extra2_hantei_end
-[endif]
-;藤枝判定
-[if exp="sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1"]
-[eval exp="tf.extra_2 = true"]
-[endif]
-*extra2_hantei_end
-[if exp="tf.extra_2 == true"]
-	[locate x=10 y=130]
-	[button name="list" graphic="button_title_omake.png" target="*omake" time=0]
-[endif]
+;「おまけ」を常に表示し、その中で非表示メニュー(説明有り)を作ることにしました
+[locate x=10 y=130]
+[button name="list" graphic="button_title_omake.png" target="*omake" time=0]
+
 
 [locate x=0 y=540]
 [button name="test_mode" graphic="toumei.gif" target="*test"  time=0 width=100 height=100]
