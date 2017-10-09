@@ -22,8 +22,6 @@
 ;=====================ここからお芝居の幕引きです===============================
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
-;リプレイ確認
-@jump target=*replay_sentaku_to_bad_or_other
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私はもっと財前様に認めてもらいたい）
