@@ -96,7 +96,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 でしょうか？[r]
 [r]
 [sp]毎日の貴方様の[ruby text=こと]箏の音を聴き胸が締め付けられるような[r]
-気持です。[r]
+気持ちです。[r]
 [r]
 [sp]僕はそうして気持ちを抑えきれず再び筆を取り、[r]
 貴方様に手紙を書います。[r]
