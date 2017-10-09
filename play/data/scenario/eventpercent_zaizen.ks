@@ -41,12 +41,28 @@
 [if exp="sf.event_zaizen_sansaku_bazar== undefined"]
 [eval exp="sf.event_zaizen_sansaku_bazar = 0"]
 [endif]
+;================================
+[if exp="sf.ED_zaizen_normal == undefined"]
+[eval exp="sf.ED_zaizen_normal = 0"]
+[endif]
+[if exp="sf.ED_zaizen_good == undefined"]
+[eval exp="sf.ED_zaizen_good = 0"]
+[endif]
+[if exp="sf.ED_zaizen_bad2 == undefined"]
+[eval exp="sf.ED_zaizen_bad2 = 0"]
+[endif]
+[if exp="sf.ED_zaizen_bad1 == undefined"]
+[eval exp="sf.ED_zaizen_bad1 = 0"]
+[endif]
 ;==================================達成率の計算===========================================
 ;財前散策
 [eval exp="tf.event_sansaku_Number_of_times = 0"]
 [eval exp="tf.event_sansaku_Number_of_times = sf.event_zaizen_sansaku_2_1+ sf.event_zaizen_sansaku_bazar"]
 ;財前イベント
 [eval exp="tf.event_Number_of_times = sf.event_zaizen_event_6_1 + sf.event_zaizen_9_1 + sf.event_zaizen_9_3 + sf.event_zaizen_10_1 + sf.event_zaizen_10_3 + sf.event_zaizen_11_1 + sf.event_zaizen_11_3 + sf.event_zaizen_11_4 + sf.event_zaizen_12_2 + sf.event_zaizen_12_4 + sf.event_zaizen_1_3"]
+;エンディング数4 13→17
+;[eval exp="tf.ending_Number_of_times = 0"]
+;[eval exp="tf.ending_Number_of_times = sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
 ;全てのイベント数 現時点でエンディングを除く
 [eval exp="tf.allEvent_Number_of_times = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
