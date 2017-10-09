@@ -534,7 +534,7 @@
 ;=================テストとリプレイ時の処理========================
 *replay_sentaku_to_bad_or_other
 ;バッドをみていない場合はシームレスに次にリプレイ
-[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 != 1)"]
+[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 != 1"]
 [p]
 @jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
 [endif]
@@ -559,9 +559,9 @@
 [link target="end"]終了する[endlink]
 [s]
 [endif]
-
+;endifを探してバグるので細かに対応　どのみち上でスキップしている
 *next11_1_2
-[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
+[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
 [er]
 [current layer="message0"]
 [resetfont]
@@ -575,7 +575,7 @@ $(".sentaku").remove();
 [endif]
 
 *next11_bad
-[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
+[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
 [er]
 [current layer="message0"]
 [resetfont]
@@ -590,7 +590,7 @@ $(".sentaku").remove();
 
 
 *end0
-[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
+[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
 [cm]
 [current layer="message0"]
 [resetfont]
@@ -603,7 +603,7 @@ $(".sentaku").remove();
 [endif]
 
 *end
-[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
+[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
 [cm]
 [current layer="message0"]
 [resetfont]
