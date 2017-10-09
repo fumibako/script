@@ -74,8 +74,8 @@
 *fumi_toutyaku_hujieda_3
 [if exp="f.okeiko_gamen == true"]
 [iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「貴方様の[ruby text=こと]箏の調べ」";//←仮タイトルです。お好みに変更してください
-f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「貴方様の[ruby text=こと]箏の調べ」";//←仮タイトルです。お好みに変更してください
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「貴方様の箏の調べ」";//←仮タイトルです。お好みに変更してください
+f.fumi_hujieda_title_new=f.okeiko_month_kansuuji+"「貴方様の箏の調べ」";//←仮タイトルです。お好みに変更してください
 f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*hujieda_fumi02");
