@@ -47,6 +47,16 @@
 [if exp="sf.event_kuroda_2_2 == undefined"]
 [eval exp="sf.event_kuroda_2_2 = 0"]
 [endif]
+;==================================
+[if exp="sf.ED_kuroda_normal == undefined"]
+[eval exp="sf.ED_kuroda_normal = 0"] 
+[endif]
+[if exp="sf.ED_kuroda_good == undefined"]
+[eval exp="sf.ED_kuroda_good = 0"]
+[endif]
+[if exp="sf.ED_kuroda_bad == undefined"]
+[eval exp="sf.ED_kuroda_bad = 0"]
+[endif]
 ;==================================達成率の計算===========================================
 ;黒田散策
 [eval exp="tf.event_sansaku_Number_of_times = 0"]
@@ -59,6 +69,9 @@
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_11_3 + sf.event_kuroda_11_4"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_12_2 + sf.event_kuroda_12_3 + sf.event_kuroda_1_1"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_1_4 + sf.event_kuroda_2_2"]
+;エンディング数3 /15→/18
+;[eval exp="tf.ending_Number_of_times = 0"]
+;[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
 ;全てのイベント数 現時点でエンディングを除く
 [eval exp="tf.allEvent_Number_of_time = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
