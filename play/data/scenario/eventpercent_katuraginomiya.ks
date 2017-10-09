@@ -57,6 +57,16 @@
 [if exp="sf.event_katuragi_sansaku2 == undefined"]
 [eval exp="sf.event_katuragi_sansaku2 = 0"]
 [endif]
+;===================================================
+[if exp="sf.ED_katuraginomiya_normal == undefined"]
+[eval exp="sf.ED_katuraginomiya_normal = 0"]
+[endif]
+[if exp="sf.ED_katuraginomiya_good == undefined"]
+[eval exp="sf.ED_katuraginomiya_good = 0"]
+[endif]
+[if exp="sf.ED_katuraginomiya_bad == undefined"]
+[eval exp="sf.ED_katuraginomiya_bad = 0"]
+[endif]
 ;==================================達成率の計算===========================================
 ;葛城宮散策
 [eval exp="tf.event_sansaku_Number_of_times=0"]
@@ -69,6 +79,9 @@
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_katuragi_10_3 + sf.event_katuragi_11_1 + sf.event_katuragi_11_4"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_katuragi_12_1 + sf.event_katuragi_1_3 + sf.event_katuragi_2_2"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_katuragi_bazar"]
+;エンディング数
+;[eval exp="tf.ending_Number_of_times = 0"]
+;[eval exp="tf.ending_Number_of_times = sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
 ;全てのイベント数 現時点でエンディングを除く
 [eval exp="tf.allEvent_Number_of_times = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
