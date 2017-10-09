@@ -6,6 +6,7 @@
 [call target=*start storage="hensuu.ks"]
 [cm]
 ;正規戻るボタンから戻ってないとき回避
+[eval exp="f.clearlist_out_storage ='okeiko_start_nyuuryoku.ks'"]
 [eval exp="tf.test_kuroda=false"]
 [eval exp="tf.test_sijyou=false"]
 [eval exp="tf.test_zaizen=false"]
