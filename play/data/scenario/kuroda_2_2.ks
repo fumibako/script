@@ -87,7 +87,8 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ありがとう、磯野」[r]
+「ありがとう、磯野」[p]
+#
 手早く身支度を確認し、部屋を出る。
 [p]
 ;==========================================================================================
@@ -100,6 +101,7 @@
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 （黒田様が来て下さるなんて……！）[p]
 #
 はやる心を抑えて玄関に急いだ。[p]
@@ -218,7 +220,7 @@
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_hohoemi_y1100.png" time=0]
 [wait time=10]
 
-黒田様の手がぎこちなくこちらへ差しのべられたように見えたとき――[p]
+黒田様の手がぎこちなくこちらへ差しのべられたように見えたとき――。[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -810,7 +812,7 @@
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-（麦の穂に込めた気持ちを分かってくださっていた[r]
+（麦の穂に込めた気持ちを分かってくださっていた。[r]
 [sp]……同封するには迷いもあったけれど、本当によかった）[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene17==undefined"]
