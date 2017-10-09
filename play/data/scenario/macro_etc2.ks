@@ -44,113 +44,11 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
 ;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari0まで削除)予定です◆◆
 [if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
-@jump target=*test_hyouji_event0
+[eval exp="f.macro_target='*test_hyouji_event_owari0'"]
+@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari0
 [endif]
-
-*test_hyouji_event0
-[locate x=750 y=100]
-[button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
-[locate x=550 y=0]
-;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
-@layopt layer=message2 page=fore visible = false
-[current layer="message2"]
-;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
-@layopt layer=message2 page=fore visible = true
-[font color=glay size=13]
-;◆好感度に数値以外(Undefindを除く)が代入された場合、赤字表記して進行ストップ
-[iscript]
-if (typeof f.para_katuraginomiya_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_katuraginomiya0"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
-[resetfont]
-[font color=red size=13]
-葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_katuraginomiya0
-葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"][r]
-
-;◆好感度に数値以外(Undefindを除く)が代入された場合、赤字表記して進行ストップ
-[iscript]
-if (typeof f.para_hujieda_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_hujieda0"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_hujieda_koukando) == false && typeof f.para_hujieda_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-藤枝好感度=[emb exp="f.para_hujieda_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_hujieda0
-藤枝好感度=[emb exp="f.para_hujieda_koukando"][r]
-
-[iscript]
-if (typeof f.para_zaizen_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_zaizen0"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_zaizen_koukando) == false && typeof f.para_zaizen_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-財前好感度=[emb exp="f.para_zaizen_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_zaizen0
-財前好感度=[emb exp="f.para_zaizen_koukando"][r]
-
-[iscript]
-if (typeof f.para_sijyou_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_sijyou0"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_sijyou_koukando) == false && typeof f.para_sijyou_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-四条好感度=[emb exp="f.para_sijyou_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_sijyou0
-四条好感度=[emb exp="f.para_sijyou_koukando"][r]
-
-[iscript]
-if (typeof f.para_kuroda_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_kuroda0"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_kuroda_koukando) == false && typeof f.para_kuroda_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-黒田好感度=[emb exp="f.para_kuroda_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_kuroda0
-黒田好感度=[emb exp="f.para_kuroda_koukando"][r]
-[endif]
-
-淑女度=[emb exp="f.para_shujinkou_shukujodo"][r]
-茶道熟練度=[emb exp="f.para_shujinkou_j_sadou"][r]
-華道熟練度=[emb exp="f.para_shujinkou_j_kadou"][r]
-礼法熟練度=[emb exp="f.para_shujinkou_j_reihou"][r]
-語学熟練度=[emb exp="f.para_shujinkou_j_gogaku"][r]
-お箏熟練度=[emb exp="f.para_shujinkou_j_koto"]
-[resetfont]
-[current layer="message0"]
 *test_hyouji_event_owari0
 [endmacro]
 
@@ -201,113 +99,11 @@ if (typeof f.para_kuroda_koukando === 'undefined'){
 ;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
 ;◆◆◆リプレイ実装時は表示を除外(以下の行をtf.test_gamen == trueのみに絞る予定です◆◆
 [if exp="tf.test_gamen == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
-@jump target=*test_hyouji_event1
+[eval exp="f.macro_target='*test_hyouji_event_owari1'"]
+@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari1
 [endif]
-
-*test_hyouji_event1
-[locate x=750 y=100]
-[button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
-[locate x=550 y=0]
-;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
-@layopt layer=message2 page=fore visible = false
-[current layer="message2"]
-;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
-@layopt layer=message2 page=fore visible = true
-[font color=glay size=13]
-;◆好感度に数値以外(Undefindを除く)が代入された場合、赤字表記して進行ストップ
-[iscript]
-if (typeof f.para_katuraginomiya_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_katuraginomiya1"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
-[resetfont]
-[font color=red size=13]
-葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_katuraginomiya1
-葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"][r]
-
-;◆好感度に数値以外(Undefindを除く)が代入された場合、赤字表記して進行ストップ
-[iscript]
-if (typeof f.para_hujieda_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_hujieda1"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_hujieda_koukando) == false && typeof f.para_hujieda_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-藤枝好感度=[emb exp="f.para_hujieda_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_hujieda1
-藤枝好感度=[emb exp="f.para_hujieda_koukando"][r]
-
-[iscript]
-if (typeof f.para_zaizen_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_zaizen1"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_zaizen_koukando) == false && typeof f.para_zaizen_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-財前好感度=[emb exp="f.para_zaizen_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_zaizen1
-財前好感度=[emb exp="f.para_zaizen_koukando"][r]
-
-[iscript]
-if (typeof f.para_sijyou_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_sijyou1"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_sijyou_koukando) == false && typeof f.para_sijyou_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-四条好感度=[emb exp="f.para_sijyou_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_sijyou1
-四条好感度=[emb exp="f.para_sijyou_koukando"][r]
-
-[iscript]
-if (typeof f.para_kuroda_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_kuroda1"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_kuroda_koukando) == false && typeof f.para_kuroda_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-黒田好感度=[emb exp="f.para_kuroda_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_kuroda1
-黒田好感度=[emb exp="f.para_kuroda_koukando"][r]
-[endif]
-
-淑女度=[emb exp="f.para_shujinkou_shukujodo"][r]
-茶道熟練度=[emb exp="f.para_shujinkou_j_sadou"][r]
-華道熟練度=[emb exp="f.para_shujinkou_j_kadou"][r]
-礼法熟練度=[emb exp="f.para_shujinkou_j_reihou"][r]
-語学熟練度=[emb exp="f.para_shujinkou_j_gogaku"][r]
-お箏熟練度=[emb exp="f.para_shujinkou_j_koto"]
-[resetfont]
-[current layer="message0"]
 *test_hyouji_event_owari1
 [endmacro]
 
@@ -353,112 +149,11 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
 ;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari2まで削除)予定です◆◆
 [if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
-@jump target=*test_hyouji_event2
+[eval exp="f.macro_target='*test_hyouji_event_owari2'"]
+@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari2
 [endif]
-
-*test_hyouji_event2
-[locate x=750 y=100]
-[button name="back_test_menu" fix="true" graphic="button_back_test.png" storage="okeiko_hyouji_test_hyouji.ks" target="back_test" ]
-[locate x=550 y=0]
-;[button name="back_okeiko" fix="true" graphic="button_back_okeiko.png" storage="event.ks" target="event_owari"]
-@layopt layer=message2 page=fore visible = false
-[current layer="message2"]
-;メッセージレイヤサイズをテスト表示用に設定変更
-[position layer=message2 left=0 width=200 height=385 top=0 page=fore color=white opacity=120]
-@layopt layer=message2 page=fore visible = true
-[font color=glay size=13]
-;◆好感度に数値以外(Undefindを除く)が代入された場合、赤字表記して進行ストップ
-[iscript]
-if (typeof f.para_katuraginomiya_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_katuraginomiya2"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
-[resetfont]
-[font color=red size=13]
-葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_katuraginomiya2
-葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"][r]
-
-;◆好感度に数値以外(Undefindを除く)が代入された場合、赤字表記して進行ストップ
-[iscript]
-if (typeof f.para_hujieda_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_hujieda2"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_hujieda_koukando) == false && typeof f.para_hujieda_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-藤枝好感度=[emb exp="f.para_hujieda_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_hujieda2
-藤枝好感度=[emb exp="f.para_hujieda_koukando"][r]
-
-[iscript]
-if (typeof f.para_zaizen_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_zaizen2"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_zaizen_koukando) == false && typeof f.para_zaizen_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-財前好感度=[emb exp="f.para_zaizen_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_zaizen2
-財前好感度=[emb exp="f.para_zaizen_koukando"][r]
-
-[iscript]
-if (typeof f.para_sijyou_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_sijyou2"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_sijyou_koukando) == false && typeof f.para_sijyou_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-四条好感度=[emb exp="f.para_sijyou_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_sijyou2
-四条好感度=[emb exp="f.para_sijyou_koukando"][r]
-
-[iscript]
-if (typeof f.para_kuroda_koukando === 'undefined'){
-	TG.kag.ftag.startTag("jump",{target:"*koukando_kuroda2"}); 
-}
-[endscript]
-[if exp="Number.isFinite(f.para_kuroda_koukando) == false && typeof f.para_kuroda_koukando != 'undefined'"]
-[resetfont]
-[font color=red size=13]
-黒田好感度=[emb exp="f.para_kuroda_koukando"]
-好感度に数値以外が代入されています。
-[resetfont]
-[s]
-[endif]
-*koukando_kuroda2
-黒田好感度=[emb exp="f.para_kuroda_koukando"][r]
-
-淑女度=[emb exp="f.para_shujinkou_shukujodo"][r]
-茶道熟練度=[emb exp="f.para_shujinkou_j_sadou"][r]
-華道熟練度=[emb exp="f.para_shujinkou_j_kadou"][r]
-礼法熟練度=[emb exp="f.para_shujinkou_j_reihou"][r]
-語学熟練度=[emb exp="f.para_shujinkou_j_gogaku"][r]
-お箏熟練度=[emb exp="f.para_shujinkou_j_koto"]
-[resetfont]
-[current layer="message0"]
 *test_hyouji_event_owari2
 [endmacro]
 
@@ -550,7 +245,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
 ;◆◆◆リプレイ実装時は表示を除外(以下の行をtf.test_gamen == trueのみに絞る予定です◆◆
 [if exp="tf.test_gamen == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
-@jump target=*test_hyouji_event1
+[eval exp="f.macro_target='*test_hyouji_event_owari1'"]
+@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari1
 [endif]
@@ -645,7 +341,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
 ;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari0まで削除)予定です◆◆
 [if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
-@jump target=*test_hyouji_event0
+[eval exp="f.macro_target='*test_hyouji_event_owari0'"]
+@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari0
 [endif]
