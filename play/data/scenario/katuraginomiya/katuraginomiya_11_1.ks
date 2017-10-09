@@ -99,10 +99,16 @@
 [whosay name="葛城宮　晴仁" color=%mp.color]
 「ああ、そうだ」[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-[if exp="tf.test_katuraginomiya == true"]
-;シナリオテスト時は選択肢へ
+;シナリオテスト時、リプレイ時　かつ　バッドをみている場合は選択肢へ
+[if exp="(tf.test_katuraginomiya == true && f.okeiko_gamen != true) || (f.okeiko_gamen != true && f.event_replay == 'katuraginomiya' && sf.ED_katuraginomiya_bad == 1)"]
 [葛城宮退場]
 @jump target=seen1
+;シナリオテスト時、リプレイ時　かつ　バッドをみていない場合は次のシーンへ
+[elsif exp="(tf.test_katuraginomiya == true && f.okeiko_gamen != true) || (f.okeiko_gamen != true && f.event_replay == 'katuraginomiya' && sf.ED_katuraginomiya_bad != 1)"]
+#
+胸がズキズキと痛んだ。[r]
+私は……
+@jump target=*yes
 [endif]
 
 [if exp="f.para_katuraginomiya_koukando < 40"]
@@ -168,7 +174,7 @@
 @jump storage="katuraginomiya/katuraginomiya_11_1badED.ks" target=no_end
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *yes
-;画面を戻した後下のシナリオい
+;画面を戻した後下のシナリオ
 [cm]
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
