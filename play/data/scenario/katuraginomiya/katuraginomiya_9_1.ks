@@ -644,6 +644,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [if exp="f.katuraginomiya_konyaku == true"]
 [主人公退場]
 [endif]
+[if exp="f.okeiko_gamen != true && f.event_replay == 'katuraginomiya' && f.katuraginomiya_konyaku == false"]
+;通常の場合そのまま浩文とのイベントになる
+[主人公退場]
+[endif]
 ;背景の変更。ひとまず暗転に
 [暗転]
 ;上に載っている画像が消えます。それまでに設定
