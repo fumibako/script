@@ -107,7 +107,7 @@
 [elsif exp="(tf.test_katuraginomiya == true && f.okeiko_gamen != true) || (f.okeiko_gamen != true && f.event_replay == 'katuraginomiya' && sf.ED_katuraginomiya_bad != 1)"]
 #
 胸がズキズキと痛んだ。[r]
-私は……
+私は……葛城宮殿下を問うことにした。[p]
 [葛城宮真剣]
 @jump target=*replay_yes
 [endif]
@@ -125,7 +125,7 @@
 *seen1
 #
 胸がズキズキと痛んだ。[r]
-私は……葛城宮殿下を問うことにした。[p]
+私は……
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢用の背景：(和紙風桜色はオープニングで使用) 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
