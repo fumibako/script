@@ -89,7 +89,7 @@
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 「先ほど、黒田様より使いの方が来られまして[r]
-『本日のお約束ですが、所要で伺えなくなりました』とのご伝言です」[p]
+[sp]『本日のお約束ですが、所要で伺えなくなりました』とのご伝言です」[p]
 
 ;【立ち絵】主人公：驚
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -433,7 +433,7 @@
 [wait time=10]
 #
 暮らしのために土地を売るたびに、少しずつ寡黙になる母上の姿を見てきた。[r]
-母上は自然豊かな土地を、とても愛していた――
+母上は自然豊かな土地を、とても愛していた――。
 [autosave]
 [p]
 
@@ -469,6 +469,7 @@
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「……わかった。行く」[p]
+#
 と答えるものの、そばを離れると[r]
 母上に何か良くないことが起こりそうで[r]
 [r]
@@ -476,6 +477,7 @@
 [黒田閉目パチ1回]
 [wait time=10]
 [fadeoutbgm time=3000]
+[whosay name="黒田 将貴" color="#7a65b2"]
 [wait time=10]
 （母上には無理をさせてしまっているな）[p]
 ;【立ち絵】黒田：目閉じ
