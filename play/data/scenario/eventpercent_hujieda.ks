@@ -56,6 +56,20 @@
 [if exp="sf.event_hujieda_sansaku == undefined"]
 [eval exp="sf.event_hujieda_sansaku = 0"]
 [endif]
+;================================
+[if exp="sf.ED_hujieda_normal == undefined"]
+[eval exp="sf.ED_hujieda_normal = 0"]
+[endif]
+[if exp="sf.ED_hujieda_good == undefined"]
+[eval exp="sf.ED_hujieda_normal = 0"]
+[endif]
+[if exp="sf.ED_hujieda_bad == undefined"]
+[eval exp="sf.ED_hujieda_normal = 0"]
+[endif]
+[if exp="sf.ED_hujieda_bad2 == undefined"]
+[eval exp="sf.ED_hujieda_normal = 0"]
+[endif]
+;================================
 ;藤枝散策イベントクリア回数
 [eval exp="tf.event_sansaku_Number_of_times = 0"]
 [eval exp="tf.event_sansaku_Number_of_times = sf.event_hujieda_bazaar + sf.event_hujieda_sansaku"]
@@ -68,7 +82,10 @@
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_hujieda_11_1 + sf.event_hujieda_11_3"] 
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times+ sf.event_hujieda_12_3 + sf.event_hujieda_1_3"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times+ sf.event_hujieda_2_3"]
-全てのイベント数　現時点はエンディング除く
+;エンディング数
+;[eval exp="tf.ending_Number_of_times = 0"]
+;[eval exp="tf.ending_Number_of_times = sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+;全てのイベント数　現時点はエンディング除く
 [eval exp="tf.allEvent_Number_of_times = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
 ;達成率
