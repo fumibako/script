@@ -156,15 +156,13 @@
 [edit left=75 top=560 width=50 length=200 maxchars=3 name="tf.event_sansaku_hyouji_before_au" height=20]
 
 [ptext text="クリア回数" layer=29 size=10 x=10 y=600 color=darkslateblue bold=bold]
-;[edit left=90 top=600 width=50 length=200 maxchars=3 name="sf.ending_Number_of_times" height=20]
-[edit left=90 top=600 width=50 length=200 maxchars=3 name="tf.ending_su" height=20]
+[edit left=90 top=600 width=50 length=200 maxchars=3 name="sf.ending_Number_of_times" height=20]
+
 
 [iscript]
 //入力済デフォルト値の設定
 //alert(sf.ending_Number_of_times);
-tf.ending_su = sf.ending_Number_of_times;
-$("input[name='tf.ending_su]").val(tf.ending_su);
-//$("input[name='sf.ending_Number_of_times]").val(sf.ending_Number_of_times);
+$("input[name='sf.ending_Number_of_times]").val(sf.ending_Number_of_times);
 $("input[name='tf.test_zaizen_fumi_hensin_speed']").val("0");
 $("input[name='f.para_zaizen_koukando']").val(f.para_zaizen_koukando);
 $("input[name='f.para_katuraginomiya_koukando']").val(f.para_katuraginomiya_koukando);
