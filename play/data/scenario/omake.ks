@@ -55,9 +55,11 @@
 [wait time=10]
 [bg storage="toumei.gif" time=0]
 [wait time=10]
-
 ;背景表示(表情鑑賞から「おまけに戻る」時も切り替わるように)
 [bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=1]
+;準備中
+[image name="loding_pic1" layer=3 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
+;[wait time=580]
 ;タイトルに戻る
 [button fix=true graphic="back.png" target="*backtitle" x=880 y=24 width=50 height=50 ]
 [call storage="eventpercent_sijyou.ks" target=*start]
