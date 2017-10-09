@@ -3,7 +3,6 @@
 ;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
 ;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
 ;このシナリオの戻り値は　f.event_replay = 'sijyou';　です。
-[eval exp="f.okeiko_gamen = false"]
 ;====================================================================================================
 *start
 @clearstack
@@ -13,6 +12,9 @@
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+[if exp="f.okeiko_gamen == true"]
+;
+[endif]
 ;====================================================================================================
 *test
 ;重要フラグを監視
@@ -96,7 +98,7 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
 [eval exp="sf.event_sijyou_2_1 = 0"]
 [endif]
 [if exp="sf.event_sijyou_2_2_bazar == undefined"]
-[eval exp="sf.event_sijyou_2_2_bazar"]
+[eval exp="sf.event_sijyou_2_2_bazar = 0"]
 [endif]
 ;sf.event_sijyou_event_6_1 sf.event_sijyou_9_1 sf.event_sijyou_9_2  sf.event_sijyou_9_3 sf.event_sijyou_9_4 
 ;sf.event_sijyou_10_1 sf.event_sijyou_10_3
@@ -592,7 +594,8 @@ $(".1_fore").empty();
 alert(tf.jp_sinario);
 [endscript]
 [endif]
-
+;お稽古モードオフ
+[eval exp="f.okeiko_gamen = false"]
 [iscript]
 tf.jp_sinario = 'sijyou/' + tf.jp_sinario + '.ks';
 f.event_replay = 'sijyou';
