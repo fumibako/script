@@ -23,44 +23,6 @@
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
 
-[if exp="tf.test_gamen == true"]
-テストページから開始しています。選択肢までjumpしますか？[r]
-
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font color=white size=32]
-
-[link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
-[link target=*jump_no]い　い　え[endlink][r]
-[resetfont]
-[s]
-
-
-*jump_ok
-[current layer="message0"]
-[resetfont]
-「はい」[r]
-jumpします。[p]
-[ct]
-[イベント中テスト数値表示]
-[if exp="tf.test_zaizen == true"]
-[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=1000]
-@jump target=*replay_sentaku_to_bad_or_other
-[endif]
-[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=1000]
-@jump target=*sentaku_to_bad_or_other
-[s]
-
-*jump_no
-[current layer="message0"]
-「いいえ」[r]
-最初からはじめます。[p]
-[ct]
-[イベント中テスト数値表示]
-[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私はもっと財前様に認めてもらいたい）
@@ -597,9 +559,11 @@ jumpします。[p]
 ;[link target="end0"]選択肢を見る（テストのみ）[endlink][r][r][r]
 ;[endif] endifを探して稀にバグるのでコメント化
 [link target="end"]終了する[endlink]
+[endif]
 [s]
 
 *next11_1_2
+[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
 [er]
 [current layer="message0"]
 [resetfont]
@@ -610,7 +574,10 @@ $(".sentaku").remove();
 @layopt layer=fix visible=true
 @jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
 [s]
+[endif]
+
 *next11_bad
+[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
 [er]
 [current layer="message0"]
 [resetfont]
@@ -621,8 +588,11 @@ $(".sentaku").remove();
 @layopt layer=fix visible=true
 @jump storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"
 [s]
+[endif]
+
 
 *end0
+[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
 [cm]
 [current layer="message0"]
 [resetfont]
@@ -631,8 +601,11 @@ $(".sentaku").remove();
 [endscript]
 @layopt layer=fix visible=true
 @jump target=sentaku_to_bad_or_other2
+[s]
+[endif]
 
 *end
+[if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
 [cm]
 [current layer="message0"]
 [resetfont]
