@@ -137,8 +137,11 @@ $(".1_fore").empty();
 [endif]
 ;=======================================================================================
 *check_event
-[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
-[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
+;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
+[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
+;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;名前表示
 [image name="c_name1" storage="../image/name_kuroda.png" layer=26 x=250 y=30 visible=true]
 ;達成数 コメント化
