@@ -15,6 +15,38 @@ $(".1_fore").empty();
 [endscript]
 ;====================================================================================================
 *test
+;重要フラグを監視
+[iscript]
+if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu == undefined){
+//四条ルートf.sijyou_au
+  tf_sijyou_flag_kannsi1=f.sijyou_au;
+//お見合い(1後,0未)f.sijyou_omiai
+  tf_sijyou_flag_kannsi2=f.sijyou_omiai;
+//イベント6(1後,0未)f.sijyou_event6
+  tf_sijyou_flag_kannsi3=f.sijyou_event6;
+//祖母を見たf.sijyou_sobo
+  tf_sijyou_flag_kannsi4=f.sijyou_sobo;
+//華衣についてf.event_sijyou_kai_jijyou
+  tf_sijyou_flag_kannsi5=f.event_sijyou_kai_jijyou;
+//散策4を見たf.event_sijyou_4
+  tf_sijyou_flag_kannsi6=f.event_sijyou_4;
+//四条兄にあったf.sijyou_ani
+  tf_sijyou_flag_kannsi7=f.sijyou_ani;
+//監視回数1
+  tf.kansi_kaisu = 1;
+}
+//監視フラグが変わった瞬間アラート
+if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefined){
+ if(tf_sijyou_flag_kannsi1 !=tf_sijyou_flag_kannsi1){alert("監視フラグ1が変更されました");}
+ if(tf_sijyou_flag_kannsi2 !=tf_sijyou_flag_kannsi2){alert("監視フラグ2が変更されました");}
+ if(tf_sijyou_flag_kannsi3 !=tf_sijyou_flag_kannsi3){alert("監視フラグ3が変更されました");}
+ if(tf_sijyou_flag_kannsi4 !=tf_sijyou_flag_kannsi4){alert("監視フラグ4が変更されました");}
+ if(tf_sijyou_flag_kannsi5 !=tf_sijyou_flag_kannsi5){alert("監視フラグ5が変更されました");}
+ if(tf_sijyou_flag_kannsi6 !=tf_sijyou_flag_kannsi6){alert("監視フラグ6が変更されました");}
+ if(tf_sijyou_flag_kannsi7 !=tf_sijyou_flag_kannsi7){alert("監視フラグ7が変更されました");}
+}
+[endscript]
+
 [if exp="tf.test_sijyou == true"]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
