@@ -3,7 +3,6 @@
 ;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
 ;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
 ;このシナリオの戻り値は　f.event_replay = 'katuraginomiya';　です。
-[eval exp="f.okeiko_gamen = false"]
 ;====================================================================================================
 *start
 @clearfix
@@ -413,7 +412,8 @@ $(".1_fore").empty();
 alert(tf.jp_sinario);
 [endscript]
 [endif]
-
+;お稽古モードオフ
+[eval exp="f.okeiko_gamen = false"]
 [iscript]
 tf.jp_sinario = 'katuraginomiya/' + tf.jp_sinario + '.ks';
 f.event_replay = 'katuraginomiya';
