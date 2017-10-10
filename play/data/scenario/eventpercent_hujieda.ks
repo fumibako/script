@@ -83,14 +83,14 @@
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times+ sf.event_hujieda_12_3 + sf.event_hujieda_1_3"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times+ sf.event_hujieda_2_3"]
 ;エンディング数
-;[eval exp="tf.ending_Number_of_times = 0"]
-;[eval exp="tf.ending_Number_of_times = sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
-;全てのイベント数　現時点はエンディング除く
+[eval exp="tf.ending_Number_of_times = 0"]
+[eval exp="tf.ending_Number_of_times = sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+;全てのイベント数　(ありがとうございます。エンディングを加算します)
 [eval exp="tf.allEvent_Number_of_times = 0"]
-[eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
+[eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times + tf.ending_Number_of_times"]
 ;達成率
 [eval exp="tf.event_pasent = 0"]
-[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 18 * 100"]
+[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (18 + 4) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.hujieda_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
 [return]

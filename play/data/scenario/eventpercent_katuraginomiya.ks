@@ -80,14 +80,14 @@
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_katuragi_12_1 + sf.event_katuragi_1_3 + sf.event_katuragi_2_2"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_katuragi_bazar"]
 ;エンディング数
-;[eval exp="tf.ending_Number_of_times = 0"]
-;[eval exp="tf.ending_Number_of_times = sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
-;全てのイベント数 現時点でエンディングを除く
+[eval exp="tf.ending_Number_of_times = 0"]
+[eval exp="tf.ending_Number_of_times = sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
+;全てのイベント数 (ありがとうございます。エンディングを加算します)
 [eval exp="tf.allEvent_Number_of_times = 0"]
-[eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
+[eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times + tf.ending_Number_of_times"]
 ;達成率
 [eval exp="tf.event_pasent=0"]
-[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 17 * 100"]
+[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (17 + 3) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.katuraginomiya_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
 [return]
