@@ -150,18 +150,18 @@ $(".1_fore").empty();
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;名前表示
 [if exp="sf.event_hujieda_8_4 == 1"]
-[image name="c_name1" storage="../image/name_hujieda.png" layer=26 x=250 y=30 visible=true]
+[image name="c_name1" storage="../image/name_hujieda.png" layer=26 x=250 y=35 visible=true]
 [endif]
 [if exp="sf.event_hujieda_8_4 != 1"]
-[image name="c_name1" storage="../image/name_hujieda0.png" layer=26 x=250 y=30 visible=true]
+[image name="c_name1" storage="../image/name_hujieda0.png" layer=26 x=250 y=35 visible=true]
 [endif]
 
 ;達成数 コメント化
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 ;[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
-[ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
-[ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
+[ptext text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow]
+[ptext text="%" layer=26 size=35 x=650 y=30 color=snow]
 ;=======================================================================================
 ;sf.event_hujieda_4_4
 [image name="day,hujieda_4_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
