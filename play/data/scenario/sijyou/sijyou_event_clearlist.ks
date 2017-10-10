@@ -59,8 +59,8 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start" exp="f.event_replay='none'"]
 [wait time=10]
 ;=============================================
-;変数初期設定
-[call storage="eventpercent_sijyou.ks" target=*start]→scenario/eventpercent_sijyou.ksとして切り出しました。一箇所で調整できるようにまとめます
+;変数初期設定→scenario/eventpercent_sijyou.ksとして切り出しました。一箇所で調整できるようにまとめます
+[call storage="eventpercent_sijyou.ks" target=*start]
 ;====================================位置指定===========================================
 *set_position
 ;左位置
