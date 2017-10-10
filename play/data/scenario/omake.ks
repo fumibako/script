@@ -126,7 +126,7 @@ $(".layer_2").css("opacity",0);
 [image layer=2 name=list storage="../image/h2.png" x=500 y=225]
 [if exp="sf.event_katuragi_event_1 == 1"]
 	[ptext layer=2 name=list page=fore text="葛城宮 晴仁：" x=545 y=230 size=17 color=navy visible=true]
-	[glink  target=*jump_clearlist exp="f.event_replay = 'katuraginomiya'" text=&f.hujieda_event_percent fontcolor=gray size=16 width=170 x=640 y=227 color=white]
+	[glink target="*jump_clearlist" exp="f.event_replay = 'katuraginomiya'" text="&f.katuraginomiya_event_percent" fontcolor="gray2" size="16" width="170" x="640" y="227" color="white"]
 [else]
 	[ptext layer=2 name=list page=fore text="？？？　：" x=545 y=230 size=17 color=navy visible=true]
 [endif]
