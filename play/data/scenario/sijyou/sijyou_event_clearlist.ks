@@ -49,16 +49,14 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
  if(tf_sijyou_flag_kannsi7 !=tf_sijyou_flag_kannsi7){alert("監視フラグ7が変更されました");}
 }
 [endscript]
-
+;=============================================
+;テスト表示
 [if exp="tf.test_sijyou == true"]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
 [glink target="no_test" text="シナリオテストを無効にする" graphic="select_waku_x500.png" exp="tf.test_sijyou=false,tf.test_gamen=false" size=10 width="150" x=400 y=600 color=white]
 *no_test
 [endif]
-[locate x=880 y=24]
-[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start" exp="f.event_replay='none'"]
-[wait time=10]
 ;=============================================
 ;変数初期設定→scenario/eventpercent_sijyou.ksとして切り出しました。一箇所で調整できるようにまとめます
 [call storage="eventpercent_sijyou.ks" target=*start]
@@ -90,7 +88,16 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
 [eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
 [eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
+;================================背景表示;================================
+;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
+[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
+;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;================================移動ボタン=======================================================
+[locate x=880 y=24]
+[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start" exp="f.event_replay='none'"]
+[wait time=10]
 [button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=550 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
 [button name="c_name1" graphic="name_zaizen.png" y=550 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
@@ -104,11 +111,6 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
 [endif]
 ;=======================================================================================
 *check_event
-;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
-[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
-[wait time=10]
-;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
-;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;名前表示
 [image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=35 visible=true]
 ;達成数
@@ -492,6 +494,8 @@ alert(tf.jp_sinario);
 ;表示リセットあるものだけ反応でエラー回避
 [if exp="f.okeiko_gamen == true"]
 [iscript]
+$(".3_fore").empty();
+$(".4_fore").empty();
 $(".5_fore").empty();
 $(".21_fore").empty();
 $(".22_fore").empty();
