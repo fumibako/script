@@ -24,59 +24,8 @@ $(".1_fore").empty();
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start"]
 [wait time=10]
 ;=======================================================================================
-;変数初期設定　エラー回避
-[if exp="sf.event_zaizen_event_6_1 == undefined"]
-[eval exp="sf.event_zaizen_event_6_1 = 0"]
-[endif]
-[if exp="sf.event_zaizen_9_1 == undefined"]
-[eval exp="sf.event_zaizen_9_1 = 0"]
-[endif]
-[if exp="sf.event_zaizen_9_3 == undefined"]
-[eval exp="sf.event_zaizen_9_3 = 0"]
-[endif]
-[if exp="sf.event_zaizen_10_1 == undefined"]
-[eval exp="sf.event_zaizen_10_1 = 0"]
-[endif]
-[if exp="sf.event_zaizen_10_3 == undefined"]
-[eval exp="sf.event_zaizen_10_3 = 0"]
-[endif]
-[if exp="sf.event_zaizen_11_1 == undefined"]
-[eval exp="sf.event_zaizen_11_1 = 0"]
-[endif]
-[if exp="sf.event_zaizen_11_3 == undefined"]
-[eval exp="sf.event_zaizen_11_3 = 0"]
-[endif]
-[if exp="sf.event_zaizen_11_4 == undefined"]
-[eval exp="sf.event_zaizen_11_4 = 0"]
-[endif]
-[if exp="sf.event_zaizen_12_2 == undefined"]
-[eval exp="sf.event_zaizen_12_2 = 0"]
-[endif]
-[if exp="sf.event_zaizen_12_4 == undefined"]
-[eval exp="sf.event_zaizen_12_4 = 0"]
-[endif]
-[if exp="sf.event_zaizen_1_3 == undefined"]
-[eval exp="sf.event_zaizen_1_3 = 0"]
-[endif]
-[if exp="sf.event_zaizen_sansaku_2_1 == undefined"]
-[eval exp="sf.event_zaizen_sansaku_2_1 = 0"]
-[endif]
-[if exp="sf.event_zaizen_sansaku_bazar== undefined"]
-[eval exp="sf.event_zaizen_sansaku_bazar = 0"]
-[endif]
-;==================================達成率の計算===========================================
-;財前散策
-[eval exp="tf.event_sansaku_Number_of_times = 0"]
-[eval exp="tf.event_sansaku_Number_of_times = sf.event_zaizen_sansaku_2_1+ sf.event_zaizen_sansaku_bazar"]
-;財前イベント
-[eval exp="tf.event_Number_of_times = sf.event_zaizen_event_6_1 + sf.event_zaizen_9_1 + sf.event_zaizen_9_3 + sf.event_zaizen_10_1 + sf.event_zaizen_10_3 + sf.event_zaizen_11_1 + sf.event_zaizen_11_3 + sf.event_zaizen_11_4 + sf.event_zaizen_12_2 + sf.event_zaizen_12_4 + sf.event_zaizen_1_3"]
-;全てのイベント数 現時点でエンディングを除く
-[eval exp="tf.allEvent_Number_of_times = 0"]
-[eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times"]
-;達成率
-[eval exp="tf.event_pasent=0"]
-[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / 13 * 100"]
-[eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
+[call storage="eventpercent_zaizen.ks" target=*start]
+;変数初期設定　エラー回避→scenario/eventpercent_zaizen.ksとして切り出しました。一箇所で調整できるようにまとめます
 ;====================================位置指定===========================================
 *set_position
 ;左位置
