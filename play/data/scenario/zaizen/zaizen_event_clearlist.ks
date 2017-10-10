@@ -124,13 +124,13 @@ $(".1_fore").empty();
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;名前表示
-[image name="c_name1" storage="../image/name_zaizen.png" layer=26 x=250 y=30 visible=true]
+[image name="c_name1" storage="../image/name_zaizen.png" layer=26 x=250 y=35 visible=true]
 ;達成数
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 ;[ptext text="/13 =" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
-[ptext text="&tf.event_pasent" layer=26 size=31 x=750 y=30 color=snow]
-[ptext text="%" layer=26 size=31 x=800 y=30 color=snow]
+[ptext text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
+[ptext text="%" layer=26 size=30 x=650 y=35 color=snow]
 ;イベント数　テスト用
 ;[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x4 y=&tf.y6 color=snow]
 ;[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+20 color=snow]
