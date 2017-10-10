@@ -61,13 +61,13 @@
 [eval exp="sf.ED_hujieda_normal = 0"]
 [endif]
 [if exp="sf.ED_hujieda_good == undefined"]
-[eval exp="sf.ED_hujieda_normal = 0"]
+[eval exp="sf.ED_hujieda_good = 0"]
 [endif]
 [if exp="sf.ED_hujieda_bad == undefined"]
-[eval exp="sf.ED_hujieda_normal = 0"]
+[eval exp="sf.ED_hujieda_bad = 0"]
 [endif]
 [if exp="sf.ED_hujieda_bad2 == undefined"]
-[eval exp="sf.ED_hujieda_normal = 0"]
+[eval exp="sf.ED_hujieda_bad2 = 0"]
 [endif]
 ;================================
 ;藤枝散策イベントクリア回数
