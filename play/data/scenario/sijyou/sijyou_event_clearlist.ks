@@ -12,9 +12,10 @@
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
-[if exp="f.okeiko_gamen == true"]
+;表示を戻す処理
+;[if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
 ;
-[endif]
+;[endif]
 ;====================================================================================================
 *test
 ;重要フラグを監視
@@ -488,8 +489,19 @@ $(".1_fore").empty();
 alert(tf.jp_sinario);
 [endscript]
 [endif]
+;表示リセットあるものだけ反応でエラー回避
+[if exp="f.okeiko_gamen == true"]
+[iscript]
+$(".5_fore").empty();
+$(".21_fore").empty();
+$(".22_fore").empty();
+$(".23_fore").empty();
+$(".24_fore").empty();
+$(".29_fore").empty();
+[endscript]
 ;お稽古モードオフ
 [eval exp="f.okeiko_gamen = false"]
+[endif]
 [iscript]
 tf.jp_sinario = 'sijyou/' + tf.jp_sinario + '.ks';
 f.event_replay = 'sijyou';
