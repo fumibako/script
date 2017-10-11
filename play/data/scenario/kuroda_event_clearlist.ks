@@ -12,11 +12,12 @@
 [cm]
 [if exp="f.okeiko_gamen != true"]
 [iscript]
-$(".26_fore").empty();
+$(".test").empty();
 $(".1_fore").empty();
 [endscript]
 [endif]
 [iscript]
+$(".day").empty();
 $(".chara_name_area").empty();
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
@@ -98,8 +99,8 @@ $(".chara_name_area").empty();
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 ;[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
-[ptext text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
-[ptext text="%" layer=26 size=30 x=650 y=35 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow overwrite=true]
+[ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow overwrite=true]
 ;=====================================================================================================
 ;クリアリストの表示
 ;左位置 tf.x0 tf.x1
