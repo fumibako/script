@@ -10,11 +10,12 @@
 [cm]
 [if exp="f.okeiko_gamen != true"]
 [iscript]
-$(".26_fore").empty();
+$(".test").empty();
 $(".1_fore").empty();
 [endscript]
 [endif]
 [iscript]
+$(".day").empty();
 $(".chara_name_area").empty();
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理（仮）自動で戻るなら無しでいいです
@@ -122,8 +123,8 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 ;[ptext text="/25 =" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
-[ptext text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
-[ptext text="%" layer=26 size=30 x=650 y=35 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow overwrite=true]
+[ptext name="pasent" text="%" layer=26 size=30 x=650 y=35 color=snow overwrite=true]
 ;イベント数　テスト用
 ;[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
 ;[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
