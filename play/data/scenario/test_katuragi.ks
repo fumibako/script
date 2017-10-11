@@ -1,5 +1,6 @@
-﻿﻿[setreplay name="test"]
+[setreplay name="test"]
 *test
+*start
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪解け（タイトル画面等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
