@@ -136,43 +136,55 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
 ;四条6_1
 [image name="day,day6_1,sijyou_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
 [image name="day,day6_1,sijyou_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true]
+[wait time=10]
 ;四条9_1
 [image name="day,day9_1,sijyou_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true]
 [image name="day,day9_1,sijyou_9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true]
+[wait time=10]
 ;四条9_2
 [image name="day,day9_2,sijyou_9_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true]
 [image name="day,day9_2,sijyou_9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true]
+[wait time=10]
 ;四条9_3
 [image name="day,day9_3,sijyou_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true]
 [image name="day,day9_3,sijyou_9_3" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true]
+[wait time=10]
 ;四条9_4
 [image name="day,day9_4,sijyou_9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true]
 [image name="day,day9_4,sijyou_9_4" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true]
+[wait time=10]
 ;四条10_1
 [image name="day,day10_1,sijyou_10_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true]
 [image name="day,day10_1,sijyou_10_1" storage="../image/day10_1.png" layer=26 x=&tf.x1 y=&tf.y6 visible=true]
+[wait time=10]
 ;四条10_3"
 [image name="day,day10_3,sijyou_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true]
 [image name="day,day10_3,sijyou_10_3" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true]
+[wait time=10]
 ;四条11_1"
 [image name="day,day11_1,sijyou_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
 [image name="day,day11_1,sijyou_11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1_2 y=&tf.y8 visible=true]
+[wait time=10]
 ;四条1_1"
 [image name="day,day1_1,sijyou_1_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true]
 [image name="day,day1_1,sijyou_1_1" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true]
+[wait time=10]
 ;四条1_3"
 [image name="day,day1_3,sijyou_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true]
 [image name="day,day1_3,sijyou_1_3" storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true]
+[wait time=10]
 ;四条1_4"
 [image name="day,day1_4,sijyou_1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true]
 [image name="day,day1_4,sijyou_1_4" storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y3 visible=true]
+[wait time=10]
 ;四条2_1"
 [image name="day,day2_1,sijyou_2_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true]
 [image name="day,day2_1,sijyou_2_1" storage="../image/day2_1.png" layer=26 x=&tf.x2 y=&tf.y4 visible=true]
+[wait time=10]
 ;四条2_2"
 [image name="day,day2_2,sijyou_2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true]
 [image name="day,day2_2,sijyou_2_2" storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true]
-
+[wait time=10]
 ;===============================================================================================
 ;sansaku1
 [image name="day,sansaku_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true]
