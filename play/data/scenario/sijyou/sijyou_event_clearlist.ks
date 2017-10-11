@@ -8,10 +8,12 @@
 @clearstack
 @clearfix
 [cm]
+[if exp="f.okeiko_gamen != true"]
 [iscript]
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+[endif]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
 [if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
 [eval exp="f.okeiko_gamen = true"]
