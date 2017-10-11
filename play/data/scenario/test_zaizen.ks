@@ -45,8 +45,8 @@ $(function(){
 [cm]
 [layopt layer=26 visible=true]
 [wait time=10]
-[ptext text="財前 美彬ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
-[ptext text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
+[ptext name="test" text="財前 美彬ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
+[ptext name="test" text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
 ;[ptext text="" layer=26 size=17 x=100 y=65 color=darkslateblue]
 *page1
 [glink target="test5_1" text="5月(磯野に相談)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
