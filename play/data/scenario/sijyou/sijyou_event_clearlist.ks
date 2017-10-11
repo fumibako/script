@@ -13,6 +13,10 @@
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+[else]
+[iscript]
+$(".chara_name_area").text();
+[endscript]
 [endif]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
 [if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
