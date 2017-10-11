@@ -27,7 +27,7 @@ $(".1_fore").empty();
 [endif]
 [if exp="tf.test_kuroda == true"]
 [iscript]
-$(".test").empty();
+$(".test").remove();
 [endscript]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
