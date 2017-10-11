@@ -3,21 +3,15 @@
 ;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
 ;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
 ;このシナリオの戻り値は　f.event_replay = 'kuroda';　です。
-[eval exp="f.okeiko_gamen = false"]
 ;====================================================================================================
-@clearstack
-@clearfix
 *start
 ;画面初期化
+@clearstack
+@clearfix
 [cm]
-[if exp="f.okeiko_gamen != true"]
 [iscript]
-$(".test").empty();
-$(".1_fore").empty();
-[endscript]
-[endif]
-[iscript]
-$(".day").empty();
+$(".parsent").remove();
+$(".parsent1").remove();
 $(".chara_name_area").empty();
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
@@ -26,7 +20,15 @@ $(".chara_name_area").empty();
 ;[endif]
 ;====================================================================================================
 *test
+[if exp="f.okeiko_gamen != true"]
+[iscript]
+$(".1_fore").empty();
+[endscript]
+[endif]
 [if exp="tf.test_kuroda == true"]
+[iscript]
+$(".test").empty();
+[endscript]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
 [glink target="no_test" text="シナリオテストを無効にする" graphic="select_waku_x500.png" exp="tf.test_kuroda=false,tf.test_gamen=false" size=10 width="150" x=400 y=600 color=white]
@@ -99,8 +101,8 @@ $(".chara_name_area").empty();
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 ;[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow overwrite=true]
-[ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow overwrite=true]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
 ;=====================================================================================================
 ;クリアリストの表示
 ;左位置 tf.x0 tf.x1
