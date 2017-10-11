@@ -15,7 +15,7 @@ $(".1_fore").empty();
 [endscript]
 [endif]
 [iscript]
-$(".day").empty();
+$(".26_fore+.day").empty();
 $(".chara_name_area").empty();
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理（仮）自動で戻るなら無しでいいです
