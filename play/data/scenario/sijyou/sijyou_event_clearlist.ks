@@ -8,12 +8,6 @@
 @clearstack
 @clearfix
 [cm]
-[if exp="f.okeiko_gamen != true"]
-[iscript]
-$(".test").empty();
-$(".1_fore").empty();
-[endscript]
-[endif]
 [iscript]
 $(".parsent").remove();
 $(".parsent1").remove();
@@ -58,7 +52,15 @@ if(tf.test_sijyou == true && tf.test_gamen == true && tf.kansi_kaisu != undefine
 [endscript]
 ;=============================================
 ;テスト表示
+[if exp="f.okeiko_gamen != true"]
+[iscript]
+$(".1_fore").empty();
+[endscript]
+[endif]
 [if exp="tf.test_sijyou == true"]
+[iscript]
+$(".test").empty();
+[endscript]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
 [glink target="no_test" text="シナリオテストを無効にする" graphic="select_waku_x500.png" exp="tf.test_sijyou=false,tf.test_gamen=false" size=10 width="150" x=400 y=600 color=white]
