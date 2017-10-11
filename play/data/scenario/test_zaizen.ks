@@ -17,7 +17,10 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [preload storage=&f.preload_images_zaizen wait=true]
 
 [call target=*start storage="hensuu.ks"]
-
+[cm]
+[iscript]
+$(".26_fore").empty();
+[endscript]
 ;=============================================
 ;test
 ;=============================================
