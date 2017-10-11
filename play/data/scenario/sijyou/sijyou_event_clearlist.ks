@@ -12,10 +12,10 @@
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
-;表示を戻す処理
-;[if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
-;
-;[endif]
+;リプレイから帰ってきてokeikoフラグを戻す処理
+[if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
+[eval exp="f.okeiko_gamen = true"]
+[endif]
 ;====================================================================================================
 *test
 ;重要フラグを監視
@@ -489,9 +489,8 @@ alert(tf.jp_sinario);
 [endif]
 
 ;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
+;一瞬、お稽古画面がみえるのを何とかしたい
 [if exp="f.okeiko_gamen == true"]
-[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
-[wait time=10]
 [chara_mod name="A_base" storage="toumei.gif" time=0]
 [wait time=10]
 [chara_mod name="A_mayu" storage="toumei.gif" time=0]
