@@ -8,10 +8,17 @@
 @clearfix
 @clearstack
 [cm]
+[cm]
+[if exp="f.okeiko_gamen != true"]
 [iscript]
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+[endif]
+;リプレイから帰ってきてokeikoフラグを戻す処理
+[if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
+[eval exp="f.okeiko_gamen = true"]
+[endif]
 ;====================================================================================================
 *test
 [if exp="tf.test_zaizen == true"]
@@ -20,9 +27,6 @@ $(".1_fore").empty();
 [glink target="no_test" text="シナリオテストを無効にする" graphic="select_waku_x500.png" exp="tf.test_zaizen=false,tf.test_gamen=false" size=10 width="150" x=400 y=600 color=white]
 *no_test
 [endif]
-[locate x=880 y=24]
-[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start"]
-[wait time=10]
 ;=======================================================================================
 [call storage="eventpercent_zaizen.ks" target=*start]
 ;変数初期設定　エラー回避→scenario/eventpercent_zaizen.ksとして切り出しました。一箇所で調整できるようにまとめます
@@ -60,6 +64,9 @@ $(".1_fore").empty();
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;================================移動ボタン=======================================================
+[locate x=880 y=24]
+[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage exp="f.event_replay='none'" target="*start"]
+[wait time=10]
 [button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=550 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
 [button name="c_name1" graphic="name_zaizen.png" y=550 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
