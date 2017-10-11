@@ -14,7 +14,6 @@
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
-
 ;====================================================================================================
 *test
 [if exp="tf.test_kuroda == true"]
@@ -23,10 +22,6 @@ $(".1_fore").empty();
 [glink target="no_test" text="シナリオテストを無効にする" graphic="select_waku_x500.png" exp="tf.test_kuroda=false,tf.test_gamen=false" size=10 width="150" x=400 y=600 color=white]
 *no_test
 [endif]
-[locate x=880 y=24]
-[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start"]
-[wait time=10]
-
 ;=====================================================================================================
 ;エラー回避変数初期設定→scenario/eventpercent_kuroda.ksとして切り出しました。一箇所で調整できるようにまとめます
 [call storage="eventpercent_kuroda.ks" target=*start]
@@ -60,7 +55,16 @@ $(".1_fore").empty();
 [eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
 [eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
+;================================背景表示;================================
+;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
+[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_clearlist.jpg"]
+;[bg storage="../fgimage/bg/bg_clearlist" time=0]
 ;================================移動ボタン=======================================================
+[locate x=880 y=24]
+[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start"]
+[wait time=10]
 [button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=550 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
 [button name="c_name1" graphic="name_zaizen.png" y=550 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
@@ -298,17 +302,35 @@ $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 ;==================================================================================================================-
 *kuroda_sinario
 [cm]
+;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
+[if exp="f.okeiko_gamen == true"]
+[chara_mod name="A_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="A_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="A_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="A_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[iscript]
+$(".21_fore").empty();
+$(".22_fore").empty();
+$(".23_fore").empty();
+$(".24_fore").empty();
+$(".29_fore").empty();
+$(".1_fore").empty();
+$(".26_fore").empty();
+[endscript]
+;お稽古モードオフ
+[eval exp="f.okeiko_gamen = false"]
+[else]
 [iscript]
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
-;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
-[if exp="tf.test_kuroda == true"]
-[iscript]
-alert(tf.jp_sinario);
-[endscript]
 [endif]
 
+;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
 [iscript]
 tf.jp_sinario = tf.jp_sinario + '.ks';
 f.event_replay = 'kuroda';
