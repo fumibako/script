@@ -12,7 +12,6 @@
 [iscript]
 $(".pasent").remove();
 $(".pasent1").remove();
-$(".day").remove();
 $(".chara_name_area").empty();
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
