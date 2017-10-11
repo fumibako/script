@@ -17,7 +17,10 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [preload storage=&f.preload_images_katuraginomiya wait=true]
 
 [call target=*start storage="hensuu.ks"]
-
+[cm]
+[iscript]
+$(".26_fore").empty();
+[endscript]
 ;=============================================
 ;test
 ;=============================================
@@ -278,7 +281,7 @@ $(function(){
 *check_event0
 [freeimage layer = 26]
 [cm]
-[eval exp="f.clearlist_out_storage='test_hujieda.ks'"]
+[eval exp="f.clearlist_out_storage ='test_hujieda.ks'"]
 @jump storage="hujieda/hujieda_event_clearlist.ks"
 [s]
 
