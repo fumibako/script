@@ -90,7 +90,7 @@ $(".chara_name_area").empty();
 ;[ptext text="/17 " layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow overwrite=teue]
-[ptext name="pasent" text="%" layer=26 size=31 x=650 y=35 color=snow overwrite=true]
+[ptext name="pasent1" text="%" layer=26 size=31 x=650 y=35 color=snow overwrite=true]
 ;イベント数　テスト用
 ;[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x4 y=&tf.y6 color=snow]
 ;[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+20 color=snow]
