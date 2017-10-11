@@ -195,6 +195,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [iscript]
 $(".kuroda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_6_1" graphic="day6_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='kuroda_6_2'"]
 [image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true]
 [else]
@@ -205,6 +206,7 @@ $(".kuroda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".kuroda_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_9_1" graphic="day9_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='kuroda_9_1'"]
 [image name="day,kuroda_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true]
 [else]
@@ -215,6 +217,7 @@ $(".kuroda_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".kuroda_9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_9_3" graphic="day9_3.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='kuroda_9_3'"]
 [image name="day,kuroda_9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true]
 [else]
@@ -225,6 +228,7 @@ $(".kuroda_9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".kuroda_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_9_4" graphic="day9_4.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='kuroda_9_4'"]
 [image name="day,kuroda_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true]
 [else]
@@ -235,6 +239,7 @@ $(".kuroda_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".kuroda_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_10_3" graphic="day10_3.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='kuroda_10_3'"]
 [image name="day,kuroda_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true]
 [else]
@@ -245,6 +250,7 @@ $(".kuroda_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_10_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_10_4" graphic="day10_4.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='kuroda_10_4'"]
 [image name="day,kuroda_10_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true]
 [else]
@@ -255,6 +261,7 @@ $(".kuroda_10_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_11_1" graphic="day11_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='kuroda_11_1'"]
 [image name="day,kuroda_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true]
 [else]
@@ -265,6 +272,7 @@ $(".kuroda_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_11_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_11_2" graphic="day11_2.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='kuroda_11_2'"]
 [image name="day,kuroda_11_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true]
 [else]
@@ -275,6 +283,7 @@ $(".kuroda_11_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_11_3" graphic="day11_3.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='kuroda_11_3'"]
 [image name="day,kuroda_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true]
 [else]
@@ -285,6 +294,7 @@ $(".kuroda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_11_4" graphic="day11_4.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='kuroda_11_4'"]
 [image name="day,kuroda_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
 [else]
@@ -295,6 +305,7 @@ $(".kuroda_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_12_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_12_2" graphic="day12_2.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='kuroda_12_2'"]
 [image name="day,kuroda_12_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true]
 [else]
@@ -305,6 +316,7 @@ $(".kuroda_12_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_12_3" graphic="day12_3.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y4 exp="tf.jp_sinario='kuroda_12_3'"]
 [image name="day,kuroda_12_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true]
 [else]
@@ -315,6 +327,7 @@ $(".kuroda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 [iscript]
 $(".kuroda_1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_1_1" graphic="day1_1.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='kuroda_1_1'"]
 [image name="day,kuroda_1_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true]
 [else]
@@ -326,6 +339,7 @@ $(".kuroda_1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".kuroda_1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [image name="day,kuroda_1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
 [else]
 [image name="day,kuroda_1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true]
@@ -335,6 +349,7 @@ $(".kuroda_1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [iscript]
 $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
+[wait time=10]
 [button name="kuroda_2_2" graphic="day2_2.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y7 exp="tf.jp_sinario='kuroda_2_2'"]
 [image name="day,kuroda_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [else]
