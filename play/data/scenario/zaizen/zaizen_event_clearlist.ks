@@ -8,7 +8,6 @@
 @clearfix
 @clearstack
 [cm]
-[cm]
 [if exp="f.okeiko_gamen != true"]
 [iscript]
 $(".26_fore").empty();
