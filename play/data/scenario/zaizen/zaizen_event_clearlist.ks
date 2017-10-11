@@ -53,6 +53,12 @@ $(".1_fore").empty();
 [eval exp="tf.y7 = tf.y6 + tf.y_plus_position"]
 [eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
 [eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
+;================================背景表示;================================
+;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
+[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+[wait time=10]
+;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
+;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;================================移動ボタン=======================================================
 [button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=550 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
@@ -67,11 +73,6 @@ $(".1_fore").empty();
 [endif]
 ;=======================================================================================
 *check_event
-;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
-[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
-[wait time=10]
-;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
-;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;名前表示
 [image name="c_name1" storage="../image/name_zaizen.png" layer=26 x=255 y=35 visible=true]
 ;達成数
@@ -272,18 +273,36 @@ $(".zaizen_sansaku_bazar").css({'filter': 'brightness(100%)','-webkit-filter': '
 ;==================================================================================-
 *zaizen_sinario
 [cm]
+;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
+;一瞬、お稽古画面がみえるのを何とかしたい
+[if exp="f.okeiko_gamen == true"]
+[chara_mod name="A_base" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="A_mayu" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="A_me" storage="toumei.gif" time=0]
+[wait time=10]
+[chara_mod name="A_kuti" storage="toumei.gif" time=0]
+[wait time=10]
+[iscript]
+$(".21_fore").empty();
+$(".22_fore").empty();
+$(".23_fore").empty();
+$(".24_fore").empty();
+$(".29_fore").empty();
+$(".1_fore").empty();
+$(".26_fore").empty();
+[endscript]
+;お稽古モードオフ
+[eval exp="f.okeiko_gamen = false"]
+[else]
 [iscript]
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
-;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
-[if exp="tf.test_zaizen == true"]
-[iscript]
-alert(tf.jp_sinario);
-[endscript]
 [endif]
-;お稽古モードオフ
-[eval exp="f.okeiko_gamen = false"]
+
+;シナリオジャンプ
 [iscript]
 tf.jp_sinario = 'zaizen/' + tf.jp_sinario + '.ks';
 f.event_replay = 'zaizen';
