@@ -490,10 +490,16 @@ alert(tf.jp_sinario);
 
 ;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
 [if exp="f.okeiko_gamen == true"]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
+[wait time=10]
 [chara_mod name="A_base" storage="toumei.gif" time=0]
+[wait time=10]
 [chara_mod name="A_mayu" storage="toumei.gif" time=0]
+[wait time=10]
 [chara_mod name="A_me" storage="toumei.gif" time=0]
+[wait time=10]
 [chara_mod name="A_kuti" storage="toumei.gif" time=0]
+[wait time=10]
 [iscript]
 $(".21_fore").empty();
 $(".22_fore").empty();
