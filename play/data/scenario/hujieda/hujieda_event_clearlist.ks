@@ -9,7 +9,6 @@
 @clearstack
 [cm]
 [iscript]
-$(".day").remove();
 $(".pasent").remove();
 $(".pasent1").remove();
 $(".chara_name_area").empty();
