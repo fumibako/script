@@ -493,10 +493,11 @@ alert(tf.jp_sinario);
 [endif]
 ;表示リセットあるものだけ反応でエラー回避
 [if exp="f.okeiko_gamen == true"]
+[chara_mod name="A_base" storage="toumei.gif" time=0]
+[chara_mod name="A_mayu" storage="toumei.gif" time=0]
+[chara_mod name="A_me" storage="toumei.gif" time=0]
+[chara_mod name="A_kuti" storage="toumei.gif" time=0]
 [iscript]
-$(".3_fore").empty();
-$(".4_fore").empty();
-$(".5_fore").empty();
 $(".21_fore").empty();
 $(".22_fore").empty();
 $(".23_fore").empty();
