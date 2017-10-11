@@ -10,7 +10,7 @@
 [cm]
 [if exp="f.okeiko_gamen != true"]
 [iscript]
-$(".26_fore").empty();
+$(".test").empty();
 $(".1_fore").empty();
 [endscript]
 [endif]
@@ -97,8 +97,8 @@ $(".chara_name_area").empty();
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 ;[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
-[ptext text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow]
-[ptext text="%" layer=26 size=35 x=650 y=30 color=snow]
+[ptext text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow overwrite=true]
+[ptext text="%" layer=26 size=35 x=650 y=30 color=snow overwrite=true]
 ;=======================================================================================
 ;sf.event_hujieda_4_4
 [image name="day,hujieda_4_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
