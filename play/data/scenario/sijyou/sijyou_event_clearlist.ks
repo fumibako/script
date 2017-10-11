@@ -15,7 +15,7 @@ $(".1_fore").empty();
 [endscript]
 [else]
 [iscript]
-$(".chara_name_area").text();
+$(".chara_name_area").empty();
 [endscript]
 [endif]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
