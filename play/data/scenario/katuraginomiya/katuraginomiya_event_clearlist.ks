@@ -8,14 +8,10 @@
 @clearfix
 @clearstack
 [cm]
-[if exp="f.okeiko_gamen != true"]
 [iscript]
-$(".test").empty();
-$(".1_fore").empty();
-[endscript]
-[endif]
-[iscript]
-$(".day").empty();
+$(".parsent").remove();
+$(".parsent1").remove();
+$(".day").remove();
 $(".chara_name_area").empty();
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
@@ -24,7 +20,15 @@ $(".chara_name_area").empty();
 ;[endif]
 ;====================================================================================================
 *test
+[if exp="f.okeiko_gamen != true"]
+[iscript]
+$(".1_fore").empty();
+[endscript]
+[endif]
 [if exp="tf.test_katuraginomiya == true]
+[iscript]
+$(".test").empty();
+[endscript]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=600 y=600 color=white]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=10 width="150" x=800 y=600 color=white]
 [glink target="no_test" text="シナリオテストを無効にする" graphic="select_waku_x500.png" exp="tf.test_katuraginomiya=false,tf.test_gamen=false" size=10 width="150" x=400 y=600 color=white]
@@ -89,8 +93,8 @@ $(".chara_name_area").empty();
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 ;[ptext text="/17 " layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow overwrite=teue]
-[ptext name="pasent1" text="%" layer=26 size=31 x=650 y=35 color=snow overwrite=true]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=31 x=650 y=35 color=snow]
 ;イベント数　テスト用
 ;[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x4 y=&tf.y6 color=snow]
 ;[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x4+100" y=&tf.y6+20 color=snow]
