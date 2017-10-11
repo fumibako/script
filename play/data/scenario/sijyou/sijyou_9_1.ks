@@ -288,6 +288,7 @@
 [endif]
 
 *end_rute
+#
 [stopbgm]
 ;[endif]
 ;個別ルート前夜終了
