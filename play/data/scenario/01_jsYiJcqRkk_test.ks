@@ -24,8 +24,8 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [cm]
 [layopt layer=26 visible=true]
 [wait time=10]
-[ptext text="◆jsYiJcqRkk　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
-[ptext text="ときどきテストしたいことがあるので、ページを作成してみました" layer=26 size=17 x=100 y=45 color=darkslateblue]
+[ptext name="test" text="◆jsYiJcqRkk　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
+[ptext name="test" text="ときどきテストしたいことがあるので、ページを作成してみました" layer=26 size=17 x=100 y=45 color=darkslateblue]
 ;[ptext text="" layer=26 size=17 x=100 y=65 color=darkslateblue]
 ;[ptext text="作業中＝　" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
