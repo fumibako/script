@@ -105,51 +105,81 @@ $(".chara_name_area").empty();
 ;クリアリストの表示
 ;左位置 tf.x0 tf.x1
 ;6月1週 sf.event_kuroda_event_6_1
-[image name="day,kuroda_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
-[image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true]
+[image name="day,kuroda_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+[wait time=10]
 ;9月1週 sf.event_kuroda_9_1
-[image name="day,kuroda_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true]
-[image name="day,kuroda_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true]
+[image name="day,kuroda_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 ;9月3週 sf.event_kuroda_9_3
-[image name="day,kuroda_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true]
-[image name="day,kuroda_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true]
+[image name="day,kuroda_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+[wait time=10]
 ;9月4週 sf.event_kuroda_9_4
-[image name="day,kuroda_9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true]
-[image name="day,kuroda_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true]
+[image name="day,kuroda_9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[wait time=10]
 ;10月3週 sf.event_kuroda_10_3
-[image name="day,kuroda_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true]
-[image name="day,kuroda_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true]
+[image name="day,kuroda_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[wait time=10]
 ;10月4週 sf.event_kuroda_10_4
-[image name="day,kuroda_10_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true]
-[image name="day,kuroda_10_4" storage="../image/day10_4.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true]
+[image name="day,kuroda_10_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_10_4" storage="../image/day10_4.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
+[wait time=10]
 ;11月1週 sf.event_kuroda_11_1
-[image name="day,kuroda_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true]
-[image name="day,kuroda_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true]
+[image name="day,kuroda_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
+[wait time=10]
 ;11月2週 sf.event_kuroda_11_2
-[image name="day,kuroda_11_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true]
-[image name="day,kuroda_11_2" storage="../image/day11_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true]
+[image name="day,kuroda_11_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_11_2" storage="../image/day11_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
+[wait time=10]
 ;左位置2 tf.x0_1 tf.x2;二桁 tf.x2_2
 ;11月3週 sf.event_kuroda_11_3 
-[image name="day,kuroda_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true]
-[image name="day,kuroda_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true]
+[image name="day,kuroda_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
+[wait time=10]
 ;11月4週 sf.event_kuroda_11_4
-[image name="day,kuroda_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true]
-[image name="day,kuroda_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true]
+[image name="day,kuroda_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 ;12月2週 sf.event_kuroda_12_2
-[image name="day,kuroda_12_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true]
-[image name="day,kuroda_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true]
+[image name="day,kuroda_12_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
+[wait time=10]
 ;12月3週 sf.event_kuroda_12_3
-[image name="day,kuroda_12_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true]
-[image name="day,kuroda_12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2 y=&tf.y4 visible=true]
+[image name="day,kuroda_12_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2 y=&tf.y4 visible=true wait=true]
+[wait time=10]
 ;1月1週 sf.event_kuroda_1_1
-[image name="day,kuroda_1_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true]
-[image name="day,kuroda_1_1" storage="../image/day1_1.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true]
+[image name="day,kuroda_1_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_1_1" storage="../image/day1_1.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
+[wait time=10]
 ;1月4週 sf.event_kuroda_1_4
-[image name="day,kuroda_1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true]
-[image name="day,kuroda_1_4" storage="../image/day1_4.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true]
+[image name="day,kuroda_1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_1_4" storage="../image/day1_4.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true wait=true]
+[wait time=10]
 ;2月2週 sf.event_kuroda_2_2
-[image name="day,kuroda_2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y7 visible=true]
-[image name="day,kuroda_2_2" storage="../image/day2_2.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true]
+[image name="day,kuroda_2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y7 visible=true wait=true]
+[wait time=10]
+[image name="day,kuroda_2_2" storage="../image/day2_2.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true wait=true]
+[wait time=10]
 ;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
