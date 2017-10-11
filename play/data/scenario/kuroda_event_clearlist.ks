@@ -16,7 +16,6 @@ $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
 [endif]
-
 ;リプレイから帰ってきてokeikoフラグを戻す処理
 ;[if exp="f.clearlist_out_storage == 'info_kuroda.ks'"]
 ;[eval exp="f.okeiko_gamen = true"]
@@ -70,7 +69,7 @@ $(".1_fore").empty();
 ;[bg storage="../fgimage/bg/bg_clearlist" time=0]
 ;================================移動ボタン=======================================================
 [locate x=880 y=24]
-[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start"]
+[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage exp="f.event_replay='none'" target="*start"]
 [wait time=10]
 [button name="c_name1" graphic="name_kuroda.png" y=550 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=550 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
