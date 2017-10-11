@@ -481,17 +481,14 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 
 *sijyou_sinario
 [cm]
-[iscript]
-$(".26_fore").empty();
-$(".1_fore").empty();
-[endscript]
 ;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
 [if exp="tf.test_sijyou == true"]
 [iscript]
 alert(tf.jp_sinario);
 [endscript]
 [endif]
-;表示リセットあるものだけ反応でエラー回避
+
+;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
 [if exp="f.okeiko_gamen == true"]
 [chara_mod name="A_base" storage="toumei.gif" time=0]
 [chara_mod name="A_mayu" storage="toumei.gif" time=0]
@@ -503,10 +500,19 @@ $(".22_fore").empty();
 $(".23_fore").empty();
 $(".24_fore").empty();
 $(".29_fore").empty();
+$(".1_fore").empty();
+$(".26_fore").empty();
 [endscript]
 ;お稽古モードオフ
 [eval exp="f.okeiko_gamen = false"]
+[else]
+[iscript]
+$(".26_fore").empty();
+$(".1_fore").empty();
+[endscript]
 [endif]
+
+;共通
 [iscript]
 tf.jp_sinario = 'sijyou/' + tf.jp_sinario + '.ks';
 f.event_replay = 'sijyou';
