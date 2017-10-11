@@ -1,6 +1,29 @@
 ﻿;======================================================================================
 ;◆◆情報：葛城宮◆◆
 ;======================================================================================
+*jump_clearlist
+;[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+;[wait time=10]
+[freeimage layer = 28]
+[cm]
+[clearfix]
+[if exp="f.event_replay == 'sijyou'"]
+ @jump storage="sijyou/sijyou_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'zaizen'"]
+ @jump storage="zaizen/zaizen_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'kuroda'"]
+ @jump storage="kuroda_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'katuraginomiya'"]
+ @jump storage="katuraginomiya/katuraginomiya_event_clearlist.ks" target=*start
+[endif]
+[if exp="f.event_replay == 'hujieda'"]
+ @jump storage="hujieda/hujieda_event_clearlist.ks" target=*start
+[endif]
+[s]
+*start
 *info_katuraginomiya
 [freeimage layer = 27]
 [freeimage layer = 28]
@@ -141,8 +164,10 @@
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
 ;◆葛城宮フェイス　（画像がないので仮位置で調整しています）
+[freeimage layer = 26]
 [image layer=26 x=0 y=0 storage="bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg"]
 [wait time=10]
+[cm]
 ;！！以下画像できるまで！！
 [eval exp="tf.x_info = 0"]
 [eval exp="tf.y_info = 0"]
@@ -195,5 +220,9 @@
 [else]
 	[ptext name="list" text="―" layer=27 size=28 x=270 y=448 color=black bold=bold]
 [endif]
+;◆クリアリストリンク
+[eval exp="f.clearlist_out_storage='info_katuraginomiya.ks'"]
+[glink storage="info_katuraginomiya.ks" target=*jump_clearlist exp="f.event_replay = 'katuraginomiya'" text=&f.katuraginomiya_event_percent fontcolor=gray size=16 width=170 x=130 y=480 color=white]
+[wait time=10]
 [return]
 [s]

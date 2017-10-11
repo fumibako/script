@@ -1086,6 +1086,7 @@
 $('.info_face').remove();
 [endscript]
 ;同じlayer26なのでいらないかと
+[freeimage layer = 26]
 [image layer=26 x=0 y=0 storage="bg/B4nFWraU42/bg_info_sijyou.jpg"]
 [wait time=10]
 [cm]

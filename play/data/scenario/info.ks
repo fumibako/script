@@ -21,7 +21,7 @@
 @jump storage=&f.oaite_viewing_storage target=&f.oaite_viewing_target
 [endif]
 
-@jump storage="info_kuroda.ks"
+@jump storage="info_kuroda.ks" target=*info_kuroda
 
 *info_kuroda
 @jump storage="info_kuroda.ks"
