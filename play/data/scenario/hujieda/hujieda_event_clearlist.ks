@@ -99,7 +99,7 @@ $(".chara_name_area").empty();
 ;[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow overwrite=true]
-[ptext name="pasent" text="%" layer=26 size=35 x=650 y=30 color=snow overwrite=true]
+[ptext name="pasent1" text="%" layer=26 size=35 x=650 y=30 color=snow overwrite=true]
 ;=======================================================================================
 ;sf.event_hujieda_4_4
 [image name="day,hujieda_4_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true]
