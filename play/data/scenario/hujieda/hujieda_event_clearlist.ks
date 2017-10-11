@@ -10,8 +10,8 @@
 [cm]
 [iscript]
 $(".day").remove();
-$(".parsent").remove();
-$(".parsent1").remove();
+$(".pasent").remove();
+$(".pasent1").remove();
 $(".chara_name_area").empty();
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
