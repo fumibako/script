@@ -13,12 +13,11 @@
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
-[else]
+[endif]
 [iscript]
 $(".chara_name_area").empty();
 [endscript]
-[endif]
-;リプレイから帰ってきてokeikoフラグを戻す処理
+;リプレイから帰ってきてokeikoフラグを戻す処理（仮）自動で戻るなら無しでいいです
 [if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
 [eval exp="f.okeiko_gamen = true"]
 [endif]
