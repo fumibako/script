@@ -10,10 +10,17 @@
 *start
 ;画面初期化
 [cm]
+[if exp="f.okeiko_gamen != true"]
 [iscript]
 $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
+[endif]
+
+;リプレイから帰ってきてokeikoフラグを戻す処理
+;[if exp="f.clearlist_out_storage == 'info_kuroda.ks'"]
+;[eval exp="f.okeiko_gamen = true"]
+;[endif]
 ;====================================================================================================
 *test
 [if exp="tf.test_kuroda == true"]
