@@ -41,9 +41,9 @@ $(function(){
 [cm]
 [layopt layer=26 visible=true]
 [wait time=10]
-[ptext text="藤枝　肇ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
-[ptext text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
-[ptext name="test_txt" text="四条、葛城宮ルートスクリプト化完了後に作業予定です。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext  name="test" text="藤枝　肇ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold]
+[ptext  name="test" text="テスト用に全てのスクリプトファイルへのリンクを解放してみています。" layer=26 size=17 x=100 y=45 color=darkslateblue]
+[ptext name="test,test_txt" text="四条、葛城宮ルートスクリプト化完了後に作業予定です。スクリプト作業をありがとうございました" layer=26 size=17 x=100 y=65 color=darkslateblue]
 ;[ptext text="作業中＝　" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
 *button_BGM
