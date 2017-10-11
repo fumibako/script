@@ -699,22 +699,13 @@ f.para_shujinkou_shukujodo=200;
 [s]
 
 *check_event0
-
+[eval exp="f.clearlist_out_storage = '01_jsYiJcqRkk_test.ks'"]
 @jump storage=kuroda_event_clearlist.ks
 [s]
 
 *check_event
-[eval exp="tf.ending_Number_of_times = 0"]
-[eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_katuraginomiya_normal + sf.ED_katuraginomiya_good + sf.ED_katuraginomiya_bad"]
-[eval exp="tf.ending_Number_of_times = tf.ending_Number_of_times + sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
-[eval exp="tf.event_Number_of_times = 0"]
-[eval exp="tf.event_Number_of_times = sf.event_kuroda_6_1 + sf.event_kuroda_9_1 + sf.event_kuroda_9_3 + sf.event_kuroda_9_4 +sf.event_kuroda_10_3"]
-[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_10_4 + sf.event_kuroda_11_1 + sf.event_kuroda_11_2"]
-[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_11_3 + sf.event_kuroda_11_4 + sf.event_kuroda_12_2"]
-[eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_12_3 + sf.event_kuroda_1_1 + sf.event_kuroda_1_4 + sf.event_kuroda_2_2"]
+[call storage="eventpercent_kuroda.ks" target=*start]
+
 [bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
 [ptext name="num_times" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
 [ptext name="num_time" text=&tf.ending_Number_of_times layer=26 size=17 x=210 y=65 color=darkslateblue overwrite=true]
