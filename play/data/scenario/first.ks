@@ -37,7 +37,7 @@ _　　　　　　・・・読込中・・・[r]
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 ;githubでエラーとなるksファイル分をコメントアウトします："data/scenario/event.ks","data/scenario/hantei_fumi_toutyaku.ks","data/scenario/01_sijyou_fumi_toutyaku_hantei.ks","data/scenario/sansaku.ks","data/scenario/fumi_henji.ks","data/scenario/info_oaite_fumi.ks","data/scenario/fumi_toutyaku_shori_list.ks","data/scenario/fumi_wadai.ks","data/scenario/01_sijyou_fumi_toutyaku_shori_list.ks",
 [iscript]
-f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/bg/bg_fumibako.jpg","data/fgimage/toumei.gif","data/image/button_title_start.png","data/image/button_title_load.png","data/image/button_title_cg.png","data/image/button_title_replay.png","data/image/button_title_credit.png","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/button/frame_lesson.png","data/fgimage/button/kira_button.png","data/fgimage/button/menu_button_close.png","data/image/moji_sijyou.png","data/image/moji_zaizen.png","data/image/moji_kuroda.png"];
+f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/bg/bg_clearlist.jpg","data/fgimage/bg/bg_fumibako.jpg","data/fgimage/toumei.gif","data/image/button_title_start.png","data/image/button_title_load.png","data/image/button_title_cg.png","data/image/button_title_replay.png","data/image/button_title_credit.png","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/button/frame_lesson.png","data/fgimage/button/kira_button.png","data/fgimage/button/menu_button_close.png","data/image/moji_sijyou.png","data/image/moji_zaizen.png","data/image/moji_kuroda.png"];
 [endscript]
 [preload storage=&f.preload_images_title1 wait=true]
 _　　　　　　　　  20%
