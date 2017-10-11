@@ -16,6 +16,9 @@ $(".26_fore").empty();
 $(".1_fore").empty();
 [endscript]
 [endif]
+[iscript]
+$(".chara_name_area").empty();
+[endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
 ;[if exp="f.clearlist_out_storage == 'info_kuroda.ks'"]
 ;[eval exp="f.okeiko_gamen = true"]
