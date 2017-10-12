@@ -72,6 +72,9 @@ $(".test").empty();
 ;[chara_mod name="bg" storage="bg/bg_clearlist.jpg"]
 ;[bg storage="../fgimage/bg/bg_clearlist.jpg" time=0]
 ;================================移動ボタン=======================================================
+[iscript]
+$(".layer_free").css("opacity",0);
+[endscript]
 [locate x=880 y=24]
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage exp="f.event_replay='none'" target="*start"]
 [wait time=10]
@@ -88,9 +91,6 @@ $(".test").empty();
 *check_event
 ;名前表示
 [image name="c_name1" storage="../image/name_katuragi.png" layer=26 x=255 y=35 visible=true]
-;達成数
-;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
-;[ptext text="/17 " layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=31 x=650 y=35 color=snow]
@@ -371,6 +371,9 @@ $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [else]
 [image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true wait=true]
 [endif]
+[iscript]
+$(".layer_free").css("opacity",1);
+[endscript]
 [s]
 
 *katuragi_sinario
