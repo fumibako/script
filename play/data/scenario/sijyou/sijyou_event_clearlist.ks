@@ -594,6 +594,9 @@ $(".23_fore").empty();
 $(".24_fore").empty();
 $(".29_fore").empty();
 $(".1_fore").empty();
+[endscript]
+[暗転]
+[iscript]
 $(".26_fore").empty();
 [endscript]
 ;お稽古モードオフ
