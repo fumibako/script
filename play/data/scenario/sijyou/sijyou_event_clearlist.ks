@@ -128,14 +128,10 @@ $(".test").remove();
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
-;イベント数　テスト用
-;[ptext text="イベント数（散策除く）" layer=26 size=21 x=&tf.x2 y=&tf.y6 color=snow]
-;[ptext text="&tf.event_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+20 color=snow]
-;[ptext text="/13" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+20 color=snow]
-;[ptext text="イベント数（散策のみ）" layer=26 size=21 x=&tf.x2 y=&tf.y6+50 color=snow]
-;[ptext text="&tf.eventSansaku_Number_of_times" layer=26 size=21 x="&tf.x2+100" y=&tf.y6+80 color=snow]
-;[ptext text="/12" layer=26 size=21 x="&tf.x2+150" y=&tf.y6+80 color=snow]
-
+;=======================================================================================
+[iscript]
+$(".day").css("opacity",0);
+[endscript]
 ;四条6_1
 [image name="day,day6_1,sijyou_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
@@ -282,6 +278,9 @@ $(".test").remove();
 $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
+[iscript]
+$(".day").css("opacity",1);
+[endscript]
 ;====================================================================================================
 ;判定処理をまとめます
 *hantei_efect
