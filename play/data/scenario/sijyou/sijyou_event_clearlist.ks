@@ -107,7 +107,7 @@ $(".test").remove();
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;================================移動ボタン=======================================================
-[iscrpt]
+[iscript]
 $(".layer_free").css("opacity",0);
 [endscript]
 [locate x=880 y=24]
