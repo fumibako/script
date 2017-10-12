@@ -111,7 +111,7 @@ $(".layer_free").css("opacity",0);
 [elsif exp="sf.event_hujieda_7_4 == 1 && sf.event_hujieda_8_4 != 1"]
 [image name="c_name1" storage="../image/name_hujieda0.png" layer=26 x=250 y=35 visible=true]
 [elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
-[image name="loding_pic2" layer=29 storage="../image/name_hatena.png" x=250 y=35 visible=true]
+[image name="c_name1" layer=29 storage="../image/name_hatena.png" x=250 y=35 visible=true]
 [endif]
 ;達成数 コメント化
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
