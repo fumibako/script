@@ -91,7 +91,6 @@ $(".layer_2").css("opacity",0);
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=70 width=160 height=104]
 [wait time=10]
-;[ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=50 y=180 size=17 color=navy visible=true]
 [endif]
 
 ;財前
@@ -105,7 +104,6 @@ $(".layer_2").css("opacity",0);
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=500 y=70 width=160 height=104]
 [wait time=10]
-;[ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=500 y=180 size=17 color=navy visible=true]
 [endif]
 
 ;黒田
@@ -119,7 +117,6 @@ $(".layer_2").css("opacity",0);
 [else]
 [image name=list layer=2 x=50 y=260 width=160 height=104 storage="../fgimage/bg/cg_bg.jpg"]
 [wait time=10]
-;[ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=50 y=370 size=17 color=navy visible=true]
 [endif]
 
 ;葛城宮
@@ -127,8 +124,6 @@ $(".layer_2").css("opacity",0);
 [if exp="sf.event_katuragi_event_1 == 1"]
 	[ptext layer=2 name=list page=fore text="葛城宮 晴仁：" x=545 y=230 size=17 color=navy visible=true]
 	[glink target="*jump_clearlist" exp="f.event_replay = 'katuraginomiya'" text="&f.katuraginomiya_event_percent" fontcolor="gray2" size="16" width="170" x="640" y="227" color="white"]
-[else]
-	[ptext layer=2 name=list page=fore text="？？？　：" x=545 y=230 size=17 color=navy visible=true]
 [endif]
 [wait time=10]
 [if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
@@ -161,7 +156,6 @@ $(".layer_2").css("opacity",0);
 [else]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=450 width=160 height=104]
 [wait time=10]
-;[ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=50 y=560 size=17 color=navy visible=true]
 [endif]
 [iscript]
 $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")','background-size' : '100% 100%', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
