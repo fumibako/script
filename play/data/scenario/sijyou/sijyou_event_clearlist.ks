@@ -7,12 +7,14 @@
 *start
 @clearstack
 @clearfix
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500 visible=true]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
+[wait time=50]
 [cm]
 [iscript]
 $(".pasent").remove();
 $(".pasent1").remove();
 $(".chara_name_area").empty();
-$(".layer_26").css("opacity",0);
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理（仮）自動で戻るなら無しでいいです
 [if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
@@ -100,7 +102,7 @@ $(".test").remove();
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
 ;================================背景表示;================================
 ;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
-[image layer=25 x=0 y=0 storage="bg/bg_clearlist.jpg" visible=true]
+[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg" visible=true]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
@@ -123,9 +125,6 @@ $(".test").remove();
 *check_event
 ;名前表示
 [image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=35 visible=true]
-;達成数
-;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
-;[ptext text="/25 =" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
@@ -556,8 +555,9 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
 [iscript]
-$(".layer_26").css("opacity",0);
-[endscript]
+$(".loding_pic").remove();
+$(".loding_pic1").remove();
+[endif]
 [s]
 
 *sijyou_sinario
