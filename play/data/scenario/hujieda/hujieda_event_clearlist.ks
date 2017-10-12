@@ -16,8 +16,10 @@ $(".chara_name_area").empty();
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_clearlist.jpg" time=500 visible=true]
 [if exp="sf.event_hujieda_8_4 == 1"]
 [image name="loding_pic2" layer=29 storage="../image/name_hujieda.png" x=250 y=35 visible=true]
-[elsif exp="sf.event_hujieda_8_4 != 1"]
+[elsif exp="sf.event_hujieda_7_4 == 1 && sf.event_hujieda_8_4 != 1"]
 [image name="loding_pic2" layer=29 storage="../image/name_hujieda0.png" x=250 y=35 visible=true]
+[elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
+;???画像
 [endif]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=580 visible=true]
 [wait time=50]
@@ -95,8 +97,10 @@ $(".layer_free").css("opacity",0);
 [endif]
 [if exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_8_4 == 1"]
 [button name="c_name1" graphic="name_hujieda.png" y=550 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
-[elsif exp="sf.event_hujieda_4_4 == 1"]
+[elsif exp="sf.event_hujieda_7_4 == 1 && sf.event_hujieda_8_4 != 1"]
 [button name="c_name1" graphic="name_hujieda0.png" y=550 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
+[elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
+;？？？画像
 [endif]
 ;=======================================================================================
 *check_event
@@ -104,8 +108,10 @@ $(".layer_free").css("opacity",0);
 [if exp="sf.event_hujieda_8_4 == 1"]
 [image name="c_name1" storage="../image/name_hujieda.png" layer=26 x=250 y=35 visible=true]
 [endif]
-[if exp="sf.event_hujieda_8_4 != 1"]
+[elsif exp="sf.event_hujieda_7_4 == 1 && sf.event_hujieda_8_4 != 1"]
 [image name="c_name1" storage="../image/name_hujieda0.png" layer=26 x=250 y=35 visible=true]
+[elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
+;???画像
 [endif]
 ;達成数 コメント化
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
