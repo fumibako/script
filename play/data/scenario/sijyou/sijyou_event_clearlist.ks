@@ -132,9 +132,6 @@ $(".test").remove();
 ;四条6_1
 [image name="day,day6_1,sijyou_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[iscript]
-$(".day").css("opacity",0);
-[endscript]
 [image name="day,day6_1,sijyou_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;四条9_1
@@ -278,9 +275,6 @@ $(".day").css("opacity",0);
 $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
-[iscript]
-$(".day").css("opacity",1);
-[endscript]
 ;====================================================================================================
 ;判定処理をまとめます
 *hantei_efect
