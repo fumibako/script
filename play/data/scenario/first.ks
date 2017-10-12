@@ -97,7 +97,7 @@ _　　　設定によっては音が鳴ります[r]
 [resetfont]
 [cm]
 [iscript]
-tf.system.backlog.pop() ;
+tf.system.backlog.pop();
 [endscript]
 
 ;タイトル画面表示
