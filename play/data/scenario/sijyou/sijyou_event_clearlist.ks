@@ -129,12 +129,12 @@ $(".test").remove();
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
 ;=======================================================================================
-[iscript]
-$(".day").css("opacity",0);
-[endscript]
 ;四条6_1
 [image name="day,day6_1,sijyou_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
+[iscript]
+$(".day").css("opacity",0);
+[endscript]
 [image name="day,day6_1,sijyou_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;四条9_1
