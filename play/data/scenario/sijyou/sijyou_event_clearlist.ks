@@ -122,8 +122,10 @@ $(".layer_free").css("opacity",0);
 [endif]
 [if exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_8_4 == 1"]
 [button name="c_name1" graphic="name_hujieda.png" y=550 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
-[elsif exp="sf.event_hujieda_4_4 == 1"]
+[elsif exp="sf.event_hujieda_7_4 == 1 && sf.event_hujieda_8_4 != 1"]
 [button name="c_name1" graphic="name_hujieda0.png" y=550 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
+[elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
+[button name="c_name1" graphic="name_hatena.png" y=550 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [endif]
 ;=======================================================================================
 *check_event
