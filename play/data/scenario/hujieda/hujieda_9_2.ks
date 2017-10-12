@@ -48,7 +48,11 @@
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 
+#
+鳩の鳴き声がして私は思わず空を見上げる。[p]
+
 ;【立ち絵】主人公：驚き
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 「鳩さん！」[p]
 ;#
@@ -57,7 +61,7 @@
 
 #
 [主人公口通常]
-鳩は手元の[ruby text=こと]箏の端に止まり、私は手紙を[ruby text=ほど]解いた。[p]
+鳩はフワリと手元の[ruby text=こと]箏の端に止まり、私は手紙を[ruby text=ほど]解いた。[p]
 
 
 [fadeoutbgm time=3000]
