@@ -12,6 +12,7 @@
 $(".pasent").remove();
 $(".pasent1").remove();
 $(".chara_name_area").empty();
+$(".layer_26").css("opacity",0);
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理（仮）自動で戻るなら無しでいいです
 [if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
@@ -554,6 +555,9 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [else]
 [image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
+[iscript]
+$(".layer_26").css("opacity",0);
+[endscript]
 [s]
 
 *sijyou_sinario
