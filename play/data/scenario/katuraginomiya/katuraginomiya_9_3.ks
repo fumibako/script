@@ -368,7 +368,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [テキスト全画面白文字無背景]
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/yo-roppa.jpg" time=600 wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
-[sp]殿下は１２歳でイギリスに留学し、[r]
+[sp]殿下は[ruby text=じゅう]十[ruby text=に]二歳
+でイギリスに留学し、[r]
 イギリス国王から立憲君主制について学ばれた[r]
 そうだ。[r]
 [sp]民主化が進むヨーロッパの国について[r]
