@@ -99,7 +99,7 @@ $(".test").remove();
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
 ;================================背景表示;================================
 ;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
-[image layer=25 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+[image layer=25 x=0 y=0 storage="bg/bg_clearlist.jpg" visible=true]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
