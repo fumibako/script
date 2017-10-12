@@ -99,7 +99,7 @@ $(".test").remove();
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
 ;================================背景表示;================================
 ;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
-[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+[image layer=25 x=0 y=0 storage="bg/bg_clearlist.jpg"]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
@@ -590,6 +590,7 @@ $(".26_fore").empty();
 [else]
 [iscript]
 $(".26_fore").empty();
+$(".25_fore").empty();
 $(".1_fore").empty();
 [endscript]
 [endif]
@@ -609,6 +610,7 @@ f.event_replay = 'sijyou';
 [cm]
 [iscript]
 $(".26_fore").empty();
+$(".25_fore").empty();
 $(".1_fore").empty();
 [endscript]
 [イベントシーン終了]
@@ -621,6 +623,7 @@ $(".1_fore").empty();
 ;f.event_replay = 'sijyou';
 [eval exp="f.event_replay = 'none'"]
 [freeimage layer = 26]
+[freeimage layer = 25]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 
@@ -630,6 +633,7 @@ $(".1_fore").empty();
 ;f.event_replay = 'sijyou';
 [eval exp="f.event_replay = 'none'"]
 [freeimage layer = 26]
+[freeimage layer = 25]
 @jump storage="test.ks"
 [s]
 
@@ -638,6 +642,7 @@ $(".1_fore").empty();
 [eval exp="tf.jp_sinario='none'"]
 [eval exp="f.event_replay = 'none'"]
 [freeimage layer = 26]
+[freeimage layer = 25]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
