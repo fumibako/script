@@ -14,6 +14,9 @@ $(".pasent").remove();
 $(".pasent1").remove();
 $(".chara_name_area").empty();
 [endscript]
+[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_clearlist.jpg" time=500 visible=true]
+[image name="loding_pic2" layer=29 storage="../image/name_kuroda.png" x=250 y=35 visible=true]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=580 visible=true]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
 ;[if exp="f.clearlist_out_storage == 'info_kuroda.ks'"]
 ;[eval exp="f.okeiko_gamen = true"]
@@ -359,6 +362,9 @@ $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [image name="day,kuroda_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [endif]
 [iscript]
+$(".loding_pic").remove();
+$(".loding_pic2").remove();
+$(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
 [s]
