@@ -74,6 +74,9 @@ $(".test").remove();
 ;[chara_mod name="bg" storage="bg/bg_clearlist.jpg"]
 ;[bg storage="../fgimage/bg/bg_clearlist" time=0]
 ;================================移動ボタン=======================================================
+[iscript]
+$(".layer_free").css("opacity",0);
+[endscript]
 [locate x=880 y=24]
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage exp="f.event_replay='none'" target="*start"]
 [wait time=10]
@@ -355,6 +358,9 @@ $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [else]
 [image name="day,kuroda_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true]
 [endif]
+[iscript]
+$(".layer_free").css("opacity",1);
+[endscript]
 [s]
 ;==================================================================================================================-
 *kuroda_sinario
