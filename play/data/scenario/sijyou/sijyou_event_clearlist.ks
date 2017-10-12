@@ -18,7 +18,8 @@ $(".chara_name_area").empty();
 [eval exp="f.okeiko_gamen = true"]
 [endif]
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_clearlist.jpg" time=500 visible=true]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
+[image name="loding_pic2" layer=29 storage="../image/name_sijyou.png" x=250 y=35 visible=true]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=580 visible=true]
 [wait time=50]
 ;====================================================================================================
 *test
@@ -559,9 +560,10 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
 [iscript]
-$(".layer_free").css("opacity",1);
 $(".loding_pic").remove();
+$(".loding_pic2").remove();
 $(".loding_pic1").remove();
+$(".layer_free").css("opacity",1);
 [endscript]
 [s]
 
