@@ -16,7 +16,7 @@ $(".chara_name_area").empty();
 [endscript]
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_clearlist.jpg" time=500 visible=true]
 [image name="loding_pic2" layer=29 storage="../image/name_zaizen.png" x=255 y=35 visible=true]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
+[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=580 visible=true]
 [wait time=50]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
 [if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
