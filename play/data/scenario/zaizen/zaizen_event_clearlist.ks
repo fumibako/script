@@ -71,6 +71,9 @@ $(".test").remove();
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;================================移動ボタン=======================================================
+[iscript]
+$(".layer_free").css("opacity",0);
+[endscript]
 [locate x=880 y=24]
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage exp="f.event_replay='none'" target="*start"]
 [wait time=10]
@@ -312,6 +315,9 @@ $(".zaizen_sansaku_bazar").css({'filter': 'brightness(100%)','-webkit-filter': '
 [else]
 [image name="day,zaizen_sansaku_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true]
 [endif]
+[iscript]
+$(".layer_free").css("opacity",1);
+[endscript]
 [s]
 ;==================================================================================-
 *zaizen_sinario
