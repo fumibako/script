@@ -17,8 +17,8 @@ $(".chara_name_area").empty();
 [if exp="f.clearlist_out_storage == 'info_sijyou.ks'"]
 [eval exp="f.okeiko_gamen = true"]
 [endif]
-[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500 visible=true]
-[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
+;[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500 visible=true]
+;[image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580 visible=true]
 [wait time=50]
 ;====================================================================================================
 *test
