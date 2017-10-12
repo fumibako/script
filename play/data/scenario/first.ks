@@ -23,6 +23,9 @@
 @layopt layer=message0 page=fore visible=true
 [font color=white]
 _　　　　　　・・・読込中・・・[r]
+[iscript]
+tf.system.backlog.pop();
+[endscript]
 [call target=*start storage="macro_etc.ks"]
 [wait time=10]
 [call target=*start storage="macro_etc2.ks"]
@@ -41,7 +44,9 @@ f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/bg/bg_clear
 [endscript]
 [preload storage=&f.preload_images_title1 wait=true]
 _　　　　　　　　  20%
-
+[iscript]
+tf.system.backlog.pop();
+[endscript]
 [iscript]
 f.preload_images_title2 = ["data/fgimage/bg/B4nFWraU42/bg_info_sijyou.jpg","data/fgimage/bg/I9IhvvVdPo/bg_info_hujieda.jpg","data/fgimage/bg/I9IhvvVdPo/bg_info_katuraginomiya.jpg","data/fgimage/bg/I9IhvvVdPo/bg_info_zaizen.jpg","data/fgimage/bg/bg_info_kuroda.jpg","data/image/toumei.gif","data/image/button_bgm_off.png","data/image/button_bgm_on.png","data/image/button_se_off.png","data/image/button_se_on.png","data/image/button_kskip_off.png","data/image/button_kskip_on.png","data/image/button_boost_off.png","data/fgimage/bg/bg_kinari_sakura.jpg","data/fgimage/bg/plane_mizuiro.jpg","data/fgimage/bg/plane_sakura.jpg","data/fgimage/bg/plane_wakakusa.jpg","tyrano/images/kag/menu_load_bg.jpg","tyrano/images/kag/menu_save_bg.jpg","tyrano/images/kag/menu_bg.jpg","data/image/button_fumi.png","data/image/button_sansaku.png","data/image/button_info.png","data/image/button_message_load.png","data/image/button_message_log.png","data/image/button_message_save.png","data/image/button_message_skip.png","data/image/x_50x50.png"];
 [endscript]
@@ -50,7 +55,9 @@ f.preload_images_title2 = ["data/fgimage/bg/B4nFWraU42/bg_info_sijyou.jpg","data
 [font color=white]
 _　　　　　　・・・読込中・・・[r]
 _　　　　　　　　  40%
-
+[iscript]
+tf.system.backlog.pop();
+[endscript]
 [iscript]
 f.preload_images_title3 = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_futuu.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/mayu_komari.png","data/fgimage/girl/S/mayu_tuyoki.png","data/fgimage/girl/S/mayu_sage.png","data/fgimage/girl/S/emo_hohosome.png","data/fgimage/bg/bg_prologue.jpg","data/fgimage/bg/bg_prologue_dark.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/bg/bg_fumibako.jpg","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/girl/S/girl_all_yubi_me_toji_mayu_yowa_ase.png","data/fgimage/girl/S/girl_all_yubi_me_fusi_mayu_yowa_ase.png","data/fgimage/girl/S/girl_all_me_futuu_mayu_futuu.png","data/fgimage/girl/S/girl_all_me_toji_mayu_komari.png","data/fgimage/girl/S/girl_all_me_toji_mayu_soft.png","data/fgimage/girl/S/girl_all_me_toji_mayu_futuu.png"];
 [endscript]
@@ -59,7 +66,9 @@ f.preload_images_title3 = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [font color=white]
 _　　　　　　・・・読込中・・・[r]
 _　　　　　　　　  60%
-
+[iscript]
+tf.system.backlog.pop();
+[endscript]
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
 f.preload_images1 = ["data/fgimage/girl/S/me_futuu.png","data/fgimage/girl/S/me_fusi1.png","data/fgimage/girl/S/me_fusi2.png","data/fgimage/girl/S/me_toji.png","data/fgimage/girl/S/me_niko.png","data/fgimage/girl/S/me_ake.png","data/fgimage/girl/S/me_yoko.png","data/fgimage/girl/S/me_yokofusi1.png","data/fgimage/girl/S/me_yokofusi2.png","data/fgimage/girl/S/kuti_futuu.png","data/fgimage/girl/S/kuti_ake.png","data/fgimage/girl/S/kuti_hohoemi.png","data/fgimage/girl/S/kuti_ooake.png","data/fgimage/girl/S/kuti_warau.png","data/fgimage/girl/S/kuti_warau_s.png","data/fgimage/girl/S/kuti_otyobo.png","data/fgimage/button/qk_anim01.png","data/fgimage/button/qk_anim02.png","data/fgimage/button/qk_anim03.png","data/fgimage/bg/bg_4gatsu.jpg","data/fgimage/bg/bg_5gatsu.jpg","data/fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg","data/fgimage/bg/B4nFWraU42/bg_tegami_sijyou.jpg","data/fgimage/bg/B4nFWraU42/bg_info_sijyou.jpg","data/fgimage/bg/I9IhvvVdPo/bg_tegami_zaizen.jpg","data/fgimage/bg/I9IhvvVdPo/bg_info_zaizen.jpg","data/fgimage/bg/bg_tegami_kuroda.jpg","data/fgimage/bg/bg_info_kuroda.jpg"];
@@ -69,7 +78,9 @@ f.preload_images1 = ["data/fgimage/girl/S/me_futuu.png","data/fgimage/girl/S/me_
 [font color=white]
 _　　　　　　・・・読込中・・・[r]
 _　　　　　　　　  80%
-
+[iscript]
+tf.system.backlog.pop();
+[endscript]
 ;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
 [iscript]
 f.preload_images2 = ["data/fgimage/message_bg/frame_red.png","data/fgimage/message_bg/frame_brown.png","data/fgimage/girl/L/base.png","data/fgimage/girl/L/mayu_futuu.png","data/fgimage/girl/L/me_futuu.png","data/fgimage/girl/L/kuti_futuu.png","data/fgimage/bg/room_niwa.jpg","data/fgimage/bg/bg_machi.jpg","data/fgimage/girl/L/gitl_L_all_futuu.png","data/fgimage/girl/L/girl_L_all_futuu_me_toji.png","data/fgimage/button/okeiko_koto.png","data/fgimage/button/okeiko_sadou.png","data/fgimage/button/okeiko_kadou.png","data/fgimage/button/okeiko_reihou.png","data/fgimage/button/okeiko_gogaku.png","data/fgimage/bg/I9IhvvVdPo/bg_preload_girl.jpg","data/fgimage/bg/B4nFWraU42/bg_sijyou_preload.jpg","data/fgimage/bg/I9IhvvVdPo/bg_preload_zaizen.jpg","data/fgimage/bg/I9IhvvVdPo/bg_preload_katuraginomiya.jpg","data/fgimage/bg/I9IhvvVdPo/bg_preload_hujieda.jpg","data/fgimage/bg/bg_preload_kuroda.jpg"];
@@ -96,10 +107,10 @@ _　　　設定によっては音が鳴ります[r]
 
 [resetfont]
 [cm]
+
 [iscript]
 tf.system.backlog.pop();
 [endscript]
-
 ;タイトル画面表示
 [jump storage="title.ks"]
 
