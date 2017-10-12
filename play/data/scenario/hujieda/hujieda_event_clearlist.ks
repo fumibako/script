@@ -107,7 +107,6 @@ $(".layer_free").css("opacity",0);
 ;名前表示
 [if exp="sf.event_hujieda_8_4 == 1"]
 [image name="c_name1" storage="../image/name_hujieda.png" layer=26 x=250 y=35 visible=true]
-[endif]
 [elsif exp="sf.event_hujieda_7_4 == 1 && sf.event_hujieda_8_4 != 1"]
 [image name="c_name1" storage="../image/name_hujieda0.png" layer=26 x=250 y=35 visible=true]
 [elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
