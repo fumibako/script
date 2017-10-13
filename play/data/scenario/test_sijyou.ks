@@ -51,7 +51,7 @@ $(".26_fore").empty();
 [glink target="tweet" text="tweetテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=blue]
 [glink target="check_event1" text="evクリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=600 color=blue]
 
-[glink target="test_replay2" text="ＣＧ・リプレイ解放" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=blue]
+[glink target="test_replay2" text="クリアフラグ操作" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=blue]
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test10_3b" text="10月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
@@ -533,18 +533,18 @@ alert(f.para_sijyou_koukando);
 
 *test_replay2
 [cm]
-;ＣＧとリプレイを解放します
+[ptext name="test" text="CG・クリアリスト・リプレイフラグ操作" layer=26 size=17 x=100 y=50 color=darkslateblue overwrite=true]
 [glink target="yes1" text="フラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
 [glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
-[glink target=kuroda4 text="黒田event" size=20 width="250" x=100 y=250 color=white]
-;[glink target=kuroda5 text="黒田/散策" size=20 width="250" x=100 y=250 color=white]
-[glink target=sijyou5 text="四条event" size=20 width="250" x=100 y=350 color=white]
-[glink target=sijyou4 text="四条/散策" size=20 width="250" x=100 y=400 color=white]
-[glink target=zaizen5 text="財前event" size=20 width="250" x=100 y=450 color=white]
-[glink target=kt_4 text="葛城宮event" size=20 width="250" x=100 y=500 color=white]
-[glink target=kt_5 text="葛城宮/散策" size=20 width="250" x=400 y=100 color=white]
-[glink target=huji_5 text="藤枝event" size=20 width="250" x=400 y=150 color=white]
+[glink target=kuroda4 text="黒田event解放" size=20 width="250" x=100 y=250 color=white]
+[glink target=no_page3 text="黒田event閉鎖" size=20 width="250" x=100 y=250 color=black]
+[glink target=sijyou5 text="四条event解放" size=20 width="250" x=100 y=350 color=white]
+[glink target=sijyou4 text="四条/散策解放" size=20 width="250" x=100 y=400 color=white]
+[glink target=zaizen5 text="財前event解放" size=20 width="250" x=100 y=450 color=white]
+[glink target=kt_4 text="葛城宮event解放" size=20 width="250" x=100 y=500 color=white]
+[glink target=kt_5 text="葛城宮/散策解放" size=20 width="250" x=400 y=100 color=white]
+[glink target=huji_5 text="藤枝event解放" size=20 width="250" x=400 y=150 color=white]
 [s]
 
 *no2
