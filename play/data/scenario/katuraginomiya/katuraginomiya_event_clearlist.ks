@@ -47,8 +47,8 @@ $(".test").empty();
 [eval exp="tf.x1 = 50"]
 ;二桁↓左位置
 [eval exp="tf.x1_2 = 50"]
-;左位置2
-[eval exp="tf.x0_1 = 250"]
+;左位置2◆
+[eval exp="tf.x0_1 = 240"]
 [eval exp="tf.x2 = 280"]
 ;二桁↓左位置2
 [eval exp="tf.x2_2 = 270]
@@ -98,8 +98,8 @@ $(".layer_free").css("opacity",0);
 ;名前表示
 [image name="c_name1" storage="../image/name_katuragi.png" layer=26 x=245 y=35 visible=true]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=25 x=600 y=33 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=25 x=650 y=33 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=25 x=600 y=34 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
 ;=======================================================================================
 ;katuragi_event_1   !! 6/2 or 6/3 !!
 [image name="day,katuragi_event_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
@@ -286,9 +286,9 @@ $(".katuragi_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endscript]
 [wait time=10]
 [button name="katuragi_10_3" graphic="day10_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_10_3'"]
-[image name="day,katuragi_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true wait=true]
+[image name="day,katuragi_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true wait=true]
 [else]
-[image name="day,katuragi_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true wait=true]
+[image name="day,katuragi_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true wait=true]
 [endif]
 [if exp="sf.event_katuragi_11_1 == 1"]
 [iscript]
@@ -296,9 +296,9 @@ $(".katuragi_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endscript]
 [wait time=10]
 [button name="katuragi_11_1" graphic="day11_1.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_11_1'"]
-[image name="day,katuragi_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true wait=true]
+[image name="day,katuragi_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true wait=true]
 [else]
-[image name="day,katuragi_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true wait=true]
+[image name="day,katuragi_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true wait=true]
 [endif]
 [if exp="sf.event_katuragi_11_4 == 1"]
 [iscript]
@@ -306,9 +306,9 @@ $(".katuragi_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endscript]
 [wait time=10]
 [button name="katuragi_11_4" graphic="day11_4.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y3 exp="tf.jp_sinario='katuraginomiya_11_4'"]
-[image name="day,katuragi_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true wait=true]
+[image name="day,katuragi_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true wait=true]
 [else]
-[image name="day,katuragi_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true wait=true]
+[image name="day,katuragi_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true wait=true]
 [endif]
 [if exp="sf.event_katuragi_12_1 == 1"]
 [iscript]
@@ -316,9 +316,9 @@ $(".katuragi_12_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endscript]
 [wait time=10]
 [button name="katuragi_12_1" graphic="day12_1.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y4 exp="tf.jp_sinario='katuraginomiya_12_1'"]
-[image name="day,katuragi_12_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true wait=true]
+[image name="day,katuragi_12_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y4 visible=true wait=true]
 [else]
-[image name="day,katuragi_12_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y4 visible=true wait=true]
+[image name="day,katuragi_12_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y4 visible=true wait=true]
 [endif]
 [if exp="sf.event_katuragi_1_3 == 1"]
 [iscript]
@@ -326,9 +326,9 @@ $(".katuragi_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [endscript]
 [wait time=10]
 [button name="katuragi_1_3" graphic="day1_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='katuraginomiya_1_3'"]
-[image name="day,katuragi_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true wait=true]
+[image name="day,katuragi_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y5 visible=true wait=true]
 [else]
-[image name="day,katuragi_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y5 visible=true wait=true]
+[image name="day,katuragi_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y5 visible=true wait=true]
 [endif]
 
 [if exp="sf.event_katuragi_2_2 == 1"]
@@ -337,9 +337,9 @@ $(".katuragi_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [endscript]
 [wait time=10]
 [button name="katuragi_2_2" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y6 exp="tf.jp_sinario='katuraginomiya_2_2'"]
-[image name="day,katuragi_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true wait=true
+[image name="day,katuragi_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true wait=true
 [else]
-[image name="day,katuragi_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true wait=true]
+[image name="day,katuragi_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true wait=true]
 [endif]
 ;2月3週
 [if exp="sf.event_katuragi_bazar == 1"]
@@ -348,9 +348,9 @@ $(".katuragi_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 [endscript]
 [wait time=10]
 [button name="katuragi_bazar" graphic="day2_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y7 exp="tf.jp_sinario='katuraginomiya_bazaar'"]
-[image name="day,katuragi_bazar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true wait=true]
+[image name="day,katuragi_bazar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true wait=true]
 [else]
-[image name="day,katuragi_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y7 visible=true wait=true]
+[image name="day,katuragi_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true wait=true]
 [endif]
 ;====================================================================================================
 ;判定処理をまとめます 散策
