@@ -443,11 +443,6 @@ $(".29_fore").empty();
 ;給仕が立ち去るのを横目で見ながら？
 甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ruby text=うるお]潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】めでたく候（お正月などめでたいシーンに
-[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
-[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
-[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -456,6 +451,11 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （ふう。[sp]なんだか、とてもフワフワしてきたわ）[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】春の声（ダンスシーン等）
+[playbgm storage="waltz_harunokoe.ogg" loop=true]
+[eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
+[endif]
 #
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
