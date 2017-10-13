@@ -14,7 +14,7 @@ $(".pasent1").remove();
 $(".chara_name_area").empty();
 [endscript]
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_clearlist.jpg" time=500 visible=true]
-[image name="loding_pic2" layer=29 storage="../image/name_katuragi.png" x=255 y=35 visible=true]
+[image name="loding_pic2" layer=29 storage="../image/name_katuragi.png" x=245 y=35 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=580 visible=true]
 [wait time=50]
 ;リプレイから帰ってきてokeikoフラグを戻す処理
@@ -96,10 +96,10 @@ $(".layer_free").css("opacity",0);
 ;=======================================================================================
 *check_event
 ;名前表示
-[image name="c_name1" storage="../image/name_katuragi.png" layer=26 x=255 y=35 visible=true]
+[image name="c_name1" storage="../image/name_katuragi.png" layer=26 x=245 y=35 visible=true]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=31 x=600 y=35 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=31 x=650 y=35 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=31 x=600 y=33 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=31 x=650 y=33 color=snow]
 ;=======================================================================================
 ;katuragi_event_1   !! 6/2 or 6/3 !!
 [image name="day,katuragi_event_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
