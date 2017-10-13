@@ -538,7 +538,7 @@ alert(f.para_sijyou_koukando);
 [glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
 [glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
 [glink target=kuroda4 text="黒田event解放" size=20 width="250" x=100 y=250 color=white]
-[glink target=no_page3 text="黒田event閉鎖" size=20 width="250" x=100 y=250 color=black]
+[glink target=no_page3 text="黒田event閉鎖" size=20 width="250" x=100 y=300 color=black]
 [glink target=sijyou5 text="四条event解放" size=20 width="250" x=100 y=350 color=white]
 [glink target=sijyou4 text="四条/散策解放" size=20 width="250" x=100 y=400 color=white]
 [glink target=zaizen5 text="財前event解放" size=20 width="250" x=100 y=450 color=white]
