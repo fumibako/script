@@ -30,11 +30,6 @@ $(".1_fore").empty();
 [current layer="message0"]
 [font color=white size=27]
 しばらくの間、昼食を頂きながら、話し合った。[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】ドナウ（ダンスシーン等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="waltz_danube.ogg" loop=true]
-[eval exp="f.bgm_storage='waltz_danube.ogg'"]
-[endif]
 ;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
 ;------------------------------------------------
 [image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
@@ -43,6 +38,11 @@ $(".1_fore").empty();
 華族会館の周りでは、ダンスパーティーの知らせを[r]
 聞いてか、[r]
 紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】ドナウ（ダンスシーン等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="waltz_danube.ogg" loop=true]
+[eval exp="f.bgm_storage='waltz_danube.ogg'"]
+[endif]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
 [wait time=50]
 私達も、貴賓室で身だしなみを整えた後、[r]
