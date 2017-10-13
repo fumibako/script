@@ -541,30 +541,69 @@ alert(f.para_sijyou_koukando);
 [glink target="yes1" text="フラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
 [glink target="no2" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
-
 [s]
+
 *no1
+[cm]
+[glink target=test_page1 text="黒田BAD閉鎖" exp="sf.ED_kuroda_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="黒田nomal閉鎖" exp="sf.ED_kuroda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="黒田good閉鎖" exp="sf.ED_kuroda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="四条BAD閉鎖" exp="sf.ED_sijyou_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="四条nomal閉鎖" exp="sf.ED_sijyou_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="四条good閉鎖" exp="sf.ED_sijyou_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[s]
+
+
+
 [iscript]
-sf.ED_kuroda_bad=0;
-sf.ED_kuroda_normal=0;
-sf.ED_kuroda_good=0;
-
-sf.ED_sijyou_bad=0;
-sf.ED_sijyou_normal=0;
-sf.ED_sijyou_good=0;
-
 sf.ED_zaizen_normal=0;
+[endscript]
+[iscript]
 sf.ED_zaizen_good=0;
+[endscript]
+[iscript]
 sf.ED_zaizen_bad1=0;
+[endscript]
+@jump target=test_page1
+
+
+[iscript]
 sf.ED_zaizen_bad2=0;
+[endscript]
+@jump target=test_page1
 
+[iscript]
 sf.ED_katuraginomiya_normal=0;
-sf.ED_katuraginomiya_good=0;
-sf.ED_katuraginomiya_bad=0;
+[endscript]
+@jump target=test_page1
 
+[iscript]
+sf.ED_katuraginomiya_good=0;
+[endscript]
+@jump target=test_page1
+
+[iscript]
+sf.ED_katuraginomiya_bad=0;
+[endscript]
+@jump target=test_page1
+
+
+[iscript]
 sf.ED_hujieda_good=0;
+[endscript]
+@jump target=test_page1
+
+[iscript]
 sf.ED_hujieda_normal=0;
+[endscript]
+@jump target=test_page1
+
+[iscript]
 sf.ED_hujieda_bad=0;
+[endscript]
+@jump target=test_page1
+
+[iscript]
 sf.ED_hujieda_bad2=0;
 [endscript]
 @jump target=test_page1
