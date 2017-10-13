@@ -786,9 +786,9 @@ $(".29_fore").empty();
 聞いてか、[r]
 紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;【BGM】ドナウ（ダンスシーン等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="waltz_danube.ogg" loop=true]
+[eval exp="f.bgm_storage='waltz_danube.ogg'"]
 [endif]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
 [wait time=50]
