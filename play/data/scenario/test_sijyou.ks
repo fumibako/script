@@ -546,40 +546,23 @@ alert(f.para_sijyou_koukando);
 *no1
 [cm]
 [glink target=test_page1 text="黒田BAD閉鎖" exp="sf.ED_kuroda_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="黒田nomal閉鎖" exp="sf.ED_kuroda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="黒田good閉鎖" exp="sf.ED_kuroda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="四条BAD閉鎖" exp="sf.ED_sijyou_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="四条nomal閉鎖" exp="sf.ED_sijyou_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="四条good閉鎖" exp="sf.ED_sijyou_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="財前badA閉鎖" exp="sf.ED_zaizen_bad1=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="財前badB閉鎖" exp="sf.ED_zaizen_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="財前nomal閉鎖" exp="sf.ED_zaizen_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="財前good閉鎖" exp="sf.ED_zaizen_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="葛城宮bad閉鎖" exp="sf.ED_katuraginomiya_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="葛城宮nomak閉鎖" exp="sf.ED_katuraginomiya_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="葛城宮good閉鎖" exp="sf.ED_katuraginomiya_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-
+[glink target=test_page1 text="黒田nomal閉鎖" exp="sf.ED_kuroda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target=test_page1 text="黒田good閉鎖" exp="sf.ED_kuroda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
+[glink target=test_page1 text="四条BAD閉鎖" exp="sf.ED_sijyou_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
+[glink target=test_page1 text="四条nomal閉鎖" exp="sf.ED_sijyou_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink target=test_page1 text="四条good閉鎖" exp="sf.ED_sijyou_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target=test_page1 text="財前badA閉鎖" exp="sf.ED_zaizen_bad1=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target=test_page1 text="財前badB閉鎖" exp="sf.ED_zaizen_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target=test_page1 text="財前nomal閉鎖" exp="sf.ED_zaizen_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target=test_page1 text="財前good閉鎖" exp="sf.ED_zaizen_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
+[glink target=test_page1 text="葛城宮bad閉鎖" exp="sf.ED_katuraginomiya_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target=test_page1 text="葛城宮nomak閉鎖" exp="sf.ED_katuraginomiya_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
+[glink target=test_page1 text="藤枝bad1閉鎖" exp="sf.ED_hujieda_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target=test_page1 text="藤枝bad2閉鎖" exp="sf.ED_hujieda_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
 [s]
 
-
-[iscript]
-sf.ED_hujieda_good=0;
-[endscript]
-@jump target=test_page1
-
-[iscript]
-sf.ED_hujieda_normal=0;
-[endscript]
-@jump target=test_page1
-
-[iscript]
-sf.ED_hujieda_bad=0;
-[endscript]
-@jump target=test_page1
-
-[iscript]
-sf.ED_hujieda_bad2=0;
-[endscript]
 @jump target=test_page1
 
 *yes1
