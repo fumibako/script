@@ -537,10 +537,11 @@ alert(f.para_sijyou_koukando);
 [glink target="yes1" text="フラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
 [glink target="no2" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
-[glink target=kuroda4 text="黒田event" size=20 width="250" x=100 y=250 color=blue]
-;[glink target=kuroda5 text="黒田/散策" size=20 width="250" x=100 y=250 color=blue]
-[glink target=sijyou5 text="四条event" size=20 width="250" x=100 y=350 color=blue]
-[glink target=sijyou4 text="四条/散策" size=20 width="250" x=100 y=400 color=blue]
+[glink target=kuroda4 text="黒田event" size=20 width="250" x=100 y=250 color=white]
+;[glink target=kuroda5 text="黒田/散策" size=20 width="250" x=100 y=250 color=white]
+[glink target=sijyou5 text="四条event" size=20 width="250" x=100 y=350 color=white]
+[glink target=sijyou4 text="四条/散策" size=20 width="250" x=100 y=400 color=white]
+[glink target=zaizen5 text="財前event" size=20 width="250" x=100 y=450 color=white]
 [s]
 
 *no1
@@ -663,6 +664,24 @@ alert(f.para_sijyou_koukando);
 *zaizen_3
 *zaizen_4
 @jump target=yes1
+[s]
+*zaizen_5
+[cm]
+[glink target="zaizen5" text="財前6_1" exp="sf.event_zaizen_event_6_1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="zaizen5" text="財前9_1" exp="sf.event_zaizen_9_1" size=20 width="250" x=100 y=150 color=blue]
+[glink target="zaizen5" text="財前9_3" exp="sf.event_zaizen_9_3" size=20 width="250" x=100 y=200 color=blue]
+[glink target="zaizen5" text="財前10_1" exp="sf.event_zaizen_10_1" size=20 width="250" x=100 y=250 color=blue]
+[glink target="zaizen5" text="財前10_3" exp="sf.event_zaizen_10_3" size=20 width="250" x=100 y=300 color=blue]
+[glink target="zaizen5" text="財前11_1" exp="sf.event_zaizen_11_1" size=20 width="250" x=100 y=350 color=blue]
+[glink target="zaizen5" text="財前11_3" exp="sf.event_zaizen_11_3" size=20 width="250" x=100 y=400 color=blue]
+[glink target="zaizen5" text="財前11_4" exp="sf.event_zaizen_11_4" size=20 width="250" x=100 y=450 color=blue]
+[glink target="zaizen5" text="財前12_2" exp="sf.event_zaizen_12_2" size=20 width="250" x=100 y=500 color=blue]
+[glink target="zaizen5" text="財前12_4" exp="sf.event_zaizen_12_4" size=20 width="250" x=400 y=100 color=blue]
+[glink target="zaizen5" text="財前1_3" exp="sf.event_zaizen_1_3" size=20 width="250" x=400 y=150 color=blue]
+[glink target="zaizen5" text="財前2_1" exp="sf.event_zaizen_sansaku_2_1" size=20 width="250" x=400 y=200 color=blue]
+[glink target="zaizen5" text="財前bazaar" exp="sf.event_zaizen_sansaku_bazar" size=20 width="250" x=400 y=250 color=blue]
+[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
+[s]
 
 *kt_1
 *kt_2 
@@ -673,12 +692,14 @@ sf.replay_katuraginomiya=1;
 @jump target=yes1
 
 *hji_1
+*hji_2
 *hji_3
 *hji_4
 [iscript]
 sf.replay_hujieda=1;
 [endscript]
 @jump target=yes1
+
 
 
 *no2
