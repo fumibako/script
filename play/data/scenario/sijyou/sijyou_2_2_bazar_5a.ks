@@ -36,12 +36,6 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （華織様と御一緒に頂くまで我慢しておきましょう)[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】春の声（ダンスシーン等）
-[playbgm storage="waltz_harunokoe.ogg" loop=true]
-[eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
-[endif]
-#
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
@@ -51,14 +45,18 @@ $(".1_fore").empty();
 ピアノの音によって徐々に纏まりを得たかと思うと、[r]
 シンと鳴り止み、[r]
 次の瞬間、指揮者の合図で壮麗な円舞曲が再開した。[p]
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】春の声（ダンスシーン等）
+[playbgm storage="waltz_harunokoe.ogg" loop=true]
+[eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ダンスが始まってしまったみたい。[r]
 [sp]……華織様は、まだ森永夫人に捕まっているみたいですね)[p]
 #
 静かに時を待つ私とは対照的に[r]
 煌びやかな男女達は、そぞろにダンスホールに集まって円舞をはじめる。[p]
-
+[背景_チャリティ会場ダンスホール]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
