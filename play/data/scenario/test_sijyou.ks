@@ -51,7 +51,7 @@ $(".26_fore").empty();
 [glink target="tweet" text="tweetテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=blue]
 [glink target="check_event1" text="evクリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=600 color=blue]
 
-[glink target="test_replay2" text="ＣＧリプレイ解放" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=blue]
+[glink target="test_replay2" text="ＣＧ・リプレイ解放" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=blue]
 [glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
 [glink target="test10_3b" text="10月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
@@ -544,6 +544,7 @@ alert(f.para_sijyou_koukando);
 [glink target=zaizen5 text="財前event" size=20 width="250" x=100 y=450 color=white]
 [glink target=kt_4 text="葛城宮event" size=20 width="250" x=100 y=500 color=white]
 [glink target=kt_5 text="葛城宮/散策" size=20 width="250" x=400 y=100 color=white]
+[glink target=huji_5 text="藤枝event" size=20 width="250" x=400 y=150 color=white]
 [s]
 
 *no2
@@ -569,7 +570,7 @@ alert(f.para_sijyou_koukando);
 [glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
 [glink target=no_page3 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
-@jump target=no1_cmmon 
+@jump target=no1_common 
 [s]
 *no_page3
 [glink target=kuroda4 text="黒田6_1閉鎖" exp="sf.event_kuroda_6_1=0" size=20 width="250" x=100 y=100 color=white]
