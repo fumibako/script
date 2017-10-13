@@ -588,10 +588,10 @@ alert(f.para_sijyou_koukando);
 [glink target=*kt_1 text="葛城宮バッド" exp="sf.ED_katuraginomiya_bad=1" size=20 width="250" x=500 y=100 color=blue]
 [glink target=*kt_2 text="葛城宮ノーマル" exp="sf.ED_katuraginomiya_normal=1" size=20 width="250" x=500 y=150 color=blue]
 [glink target=*kt_3 text="葛城宮グッド" exp="sf.ED_katuraginomiya_good=1" size=20 width="250" x=500 y=200 color=blue]
-[glink target=*hji_1 text="藤枝バッドA" exp="" size=20 width="250" x=500 y=250 color=blue]
-[glink target=*hji_2 text="藤枝バッドB" exp="" size=20 width="250" x=500 y=300 color=blue]
-[glink target=*hji_3 text="藤枝ノーマル" exp="" size=20 width="250" x=500 y=350 color=blue]
-[glink target=*hji_4 text="藤枝グッド" exp="" size=20 width="250" x=500 y=400 color=blue]
+[glink target=*hji_1 text="藤枝バッドA" exp="sf.ED_hujieda_bad=1" size=20 width="250" x=500 y=250 color=blue]
+[glink target=*hji_2 text="藤枝バッドB" exp="sf.ED_hujieda_bad2=1" size=20 width="250" x=500 y=300 color=blue]
+[glink target=*hji_3 text="藤枝ノーマル" exp="sf.ED_hujieda_normal=1" size=20 width="250" x=500 y=350 color=blue]
+[glink target=*hji_4 text="藤枝グッド" exp="sf.ED_hujieda_good=1" size=20 width="250" x=500 y=400 color=blue]
 [s]
 
 *kuroda_1
@@ -618,27 +618,10 @@ sf.replay_katuraginomiya=1;
 @jump target=yes1
 
 *hji_1
-[iscript]
-sf.replay_hujieda=1;
-sf.ED_hujieda_bad=1;
-[endscript]
-@jump target=yes1
-*hji_2
-[iscript]
-sf.replay_hujieda=1;
-sf.ED_hujieda_bad2=1;
-[endscript]
-@jump target=yes1
 *hji_3
-[iscript]
-sf.replay_hujieda=1;
-sf.ED_hujieda_normal=1;
-[endscript]
-@jump target=yes1
 *hji_4
 [iscript]
 sf.replay_hujieda=1;
-sf.ED_hujieda_good=1;
 [endscript]
 @jump target=yes1
 
