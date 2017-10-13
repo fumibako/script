@@ -38,8 +38,9 @@ https://fumibako.github.io/script/
 
 ###BGM  
 ・おとわび 様 http://otowabi.com/  　
+・クラシック名曲サウンドライブラリー様　http://classical-sound.seesaa.net/  
 
-###画像素材  
+###画像素材  
 ・flickr 様 https://www.flickr.com/ (クレジット表記が必要なものは各画像に表記させていただきました)  
 ・和風素材.com 様 http://www.wafusozai.com/  
 ・ゆうあかり 様 http://light77.sakura.ne.jp/  
