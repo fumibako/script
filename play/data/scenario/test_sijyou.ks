@@ -532,10 +532,11 @@ alert(f.para_sijyou_koukando);
 [s]
 
 *test_replay2
+;いまのところは特にeventリプレイ閉鎖は必要ないので黒田のみ
 [cm]
 [ptext name="test" text="CG・クリアリスト・リプレイフラグ操作" layer=26 size=17 x=100 y=50 color=darkslateblue overwrite=true]
-[glink target="yes1" text="フラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
-[glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
+[glink target="yes1" text="EDフラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+[glink target="no1" text="EDフラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=black]
 [glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
 [glink target=kuroda4 text="黒田event解放" size=20 width="250" x=100 y=250 color=white]
 [glink target=no_page3 text="黒田event閉鎖" size=20 width="250" x=100 y=300 color=black]
@@ -545,6 +546,8 @@ alert(f.para_sijyou_koukando);
 [glink target=kt_4 text="葛城宮event解放" size=20 width="250" x=100 y=500 color=white]
 [glink target=kt_5 text="葛城宮/散策解放" size=20 width="250" x=400 y=100 color=white]
 [glink target=huji_5 text="藤枝event解放" size=20 width="250" x=400 y=150 color=white]
+
+[glink target="*test_flag_bye" text="全てのフラグ閉鎖操作へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=black]
 [s]
 
 *no2
@@ -553,22 +556,22 @@ alert(f.para_sijyou_koukando);
 
 *no1
 [cm]
-[glink target=test_page1 text="黒田BAD閉鎖" exp="sf.ED_kuroda_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="黒田nomal閉鎖" exp="sf.ED_kuroda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target=test_page1 text="黒田good閉鎖" exp="sf.ED_kuroda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target=test_page1 text="四条BAD閉鎖" exp="sf.ED_sijyou_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target=test_page1 text="四条nomal閉鎖" exp="sf.ED_sijyou_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target=test_page1 text="四条good閉鎖" exp="sf.ED_sijyou_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target=test_page1 text="財前badA閉鎖" exp="sf.ED_zaizen_bad1=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target=test_page1 text="財前badB閉鎖" exp="sf.ED_zaizen_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-[glink target=test_page1 text="財前nomal閉鎖" exp="sf.ED_zaizen_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
-[glink target=test_page1 text="財前good閉鎖" exp="sf.ED_zaizen_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
-[glink target=test_page1 text="葛城宮bad閉鎖" exp="sf.ED_katuraginomiya_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target=test_page1 text="葛城宮nomak閉鎖" exp="sf.ED_katuraginomiya_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target=test_page1 text="藤枝bad1閉鎖" exp="sf.ED_hujieda_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target=test_page1 text="藤枝bad2閉鎖" exp="sf.ED_hujieda_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target=test_page1 text="黒田BAD閉鎖" exp="sf.ED_kuroda_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=black]
+[glink target=test_page1 text="黒田nomal閉鎖" exp="sf.ED_kuroda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=black]
+[glink target=test_page1 text="黒田good閉鎖" exp="sf.ED_kuroda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=black]
+[glink target=test_page1 text="四条BAD閉鎖" exp="sf.ED_sijyou_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=black]
+[glink target=test_page1 text="四条nomal閉鎖" exp="sf.ED_sijyou_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=black]
+[glink target=test_page1 text="四条good閉鎖" exp="sf.ED_sijyou_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=black]
+[glink target=test_page1 text="財前badA閉鎖" exp="sf.ED_zaizen_bad1=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=black]
+[glink target=test_page1 text="財前badB閉鎖" exp="sf.ED_zaizen_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=black]
+[glink target=test_page1 text="財前nomal閉鎖" exp="sf.ED_zaizen_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=black]
+[glink target=test_page1 text="財前good閉鎖" exp="sf.ED_zaizen_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=black]
+[glink target=test_page1 text="葛城宮bad閉鎖" exp="sf.ED_katuraginomiya_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=black]
+[glink target=test_page1 text="葛城宮nomak閉鎖" exp="sf.ED_katuraginomiya_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=black]
+[glink target=test_page1 text="藤枝bad1閉鎖" exp="sf.ED_hujieda_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=black]
+[glink target=test_page1 text="藤枝bad2閉鎖" exp="sf.ED_hujieda_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=black]
+[glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=black]
+[glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=black]
 [glink target=no_page3 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
 @jump target=no1_common 
 [s]
@@ -817,18 +820,26 @@ sf.replay_hujieda=1;
 [iscript]
 localStorage.clear();
 [endscript]
+*test_flag_bye
 [glink target="yes11" text="システムフラグ閉鎖(タイトルへ)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="no11" text="ゲームフラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
 [glink target="no22" text="おわる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
 [s]
+
 *yes11
 [clearsysvar]
-@jump target="title"
+[iscript]
+aleat("エラー防止のため再度WEBページを更新<f5>してください");
+[endscript]
+;location.href="URL" web版でこのページをみつけた人がいると困るので書かない
 [s]
 *no11
 [clearvar]
+[iscript]
+aleat("エラー防止のため再度WEBページを更新<f5>してください");
+[endscript]
 [s]
-@jump target="title"
+
 *no22
 @jump target=test_page1
 [s]
