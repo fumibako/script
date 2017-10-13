@@ -551,41 +551,15 @@ alert(f.para_sijyou_koukando);
 [glink target=test_page1 text="四条BAD閉鎖" exp="sf.ED_sijyou_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target=test_page1 text="四条nomal閉鎖" exp="sf.ED_sijyou_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
 [glink target=test_page1 text="四条good閉鎖" exp="sf.ED_sijyou_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="財前badA閉鎖" exp="sf.ED_zaizen_bad1=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="財前badB閉鎖" exp="sf.ED_zaizen_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="財前nomal閉鎖" exp="sf.ED_zaizen_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="財前good閉鎖" exp="sf.ED_zaizen_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="葛城宮bad閉鎖" exp="sf.ED_katuraginomiya_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="葛城宮nomak閉鎖" exp="sf.ED_katuraginomiya_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+[glink target=test_page1 text="葛城宮good閉鎖" exp="sf.ED_katuraginomiya_good=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
+
 [s]
-
-
-
-[iscript]
-sf.ED_zaizen_normal=0;
-[endscript]
-[iscript]
-sf.ED_zaizen_good=0;
-[endscript]
-[iscript]
-sf.ED_zaizen_bad1=0;
-[endscript]
-@jump target=test_page1
-
-
-[iscript]
-sf.ED_zaizen_bad2=0;
-[endscript]
-@jump target=test_page1
-
-[iscript]
-sf.ED_katuraginomiya_normal=0;
-[endscript]
-@jump target=test_page1
-
-[iscript]
-sf.ED_katuraginomiya_good=0;
-[endscript]
-@jump target=test_page1
-
-[iscript]
-sf.ED_katuraginomiya_bad=0;
-[endscript]
-@jump target=test_page1
 
 
 [iscript]
