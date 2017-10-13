@@ -580,14 +580,14 @@ alert(f.para_sijyou_koukando);
 [glink target=*sijyou_1 text="四条バッド" exp="sf.ED_sijyou_bad=1;" size=20 width="250" x=100 y=300 color=blue]
 [glink target=*sijyou_2 text="四条ノーマル" exp="sf.ED_sijyou_normal=1" size=20 width="250" x=100 y=350 color=blue]
 [glink target=*sijyou_3 text="四条グッド" exp="sf.ED_sijyou_good=1" size=20 width="250" x=100 y=400 color=blue]
-[glink target=*zaizen_1 text="財前バッドＡ" exp="" size=20 width="250" x=100 y=450 color=blue]
-[glink target=*zaizen_2 text="財前バッドＢ" exp="" size=20 width="250" x=100 y=500 color=blue]
-[glink target=*zaizen_3 text="財前ノーマル" exp="" size=20 width="250" x=100 y=550 color=blue]
-[glink target=*zaizen_4 text="財前グッド" exp="" size=20 width="250" x=100 y=600 color=blue]
+[glink target=*zaizen_1 text="財前バッドＡ" exp="sf.ED_zaizen_bad1=1" size=20 width="250" x=100 y=450 color=blue]
+[glink target=*zaizen_2 text="財前バッドＢ" exp="sf.ED_zaizen_bad2=1" size=20 width="250" x=100 y=500 color=blue]
+[glink target=*zaizen_3 text="財前ノーマル" exp="sf.ED_zaizen_normal=1" size=20 width="250" x=100 y=550 color=blue]
+[glink target=*zaizen_4 text="財前グッド" exp="sf.ED_zaizen_good=1" size=20 width="250" x=100 y=600 color=blue]
 
-[glink target=*kt_1 text="葛城宮バッド" exp="" size=20 width="250" x=500 y=100 color=blue]
-[glink target=*kt_2 text="葛城宮ノーマル" exp="" size=20 width="250" x=500 y=150 color=blue]
-[glink target=*kt_3 text="葛城宮グッド" exp="" size=20 width="250" x=500 y=200 color=blue]
+[glink target=*kt_1 text="葛城宮バッド" exp="sf.ED_katuraginomiya_bad=1" size=20 width="250" x=500 y=100 color=blue]
+[glink target=*kt_2 text="葛城宮ノーマル" exp="sf.ED_katuraginomiya_normal=1" size=20 width="250" x=500 y=150 color=blue]
+[glink target=*kt_3 text="葛城宮グッド" exp="sf.ED_katuraginomiya_good=1" size=20 width="250" x=500 y=200 color=blue]
 [glink target=*hji_1 text="藤枝バッドA" exp="" size=20 width="250" x=500 y=250 color=blue]
 [glink target=*hji_2 text="藤枝バッドB" exp="" size=20 width="250" x=500 y=300 color=blue]
 [glink target=*hji_3 text="藤枝ノーマル" exp="" size=20 width="250" x=500 y=350 color=blue]
@@ -604,42 +604,16 @@ alert(f.para_sijyou_koukando);
 @jump target=yes1
 
 *zaizen_1
-[iscript]
-sf.ED_zaizen_bad1=1;
-[endscript]
-@jump target=yes1
 *zaizen_2
-[iscript]
-sf.ED_zaizen_bad2=1;
-[endscript]
-@jump target=yes1
 *zaizen_3
-[iscript]
-sf.ED_zaizen_normal=1;
-[endscript]
-@jump target=yes1
 *zaizen_4
-[iscript]
-sf.ED_zaizen_good=1;
-[endscript]
 @jump target=yes1
 
 *kt_1
-[iscript]
-sf.replay_katuraginomiya=1;
-sf.ED_katuraginomiya_bad=1;
-[endscript]
-@jump target=yes1
 *kt_2 
-[iscript]
-sf.replay_katuraginomiya=1;
-sf.ED_katuraginomiya_normal=1;
-[endscript]
-@jump target=yes1
 *kt_3
 [iscript]
 sf.replay_katuraginomiya=1;
-sf.ED_katuraginomiya_good=1;
 [endscript]
 @jump target=yes1
 
