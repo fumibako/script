@@ -36,10 +36,6 @@ $(".26_fore").empty();
 [wait time=10]
 [ptext name="pt,test" text="四条 華織ルート　スクリプト確認用" layer=26 size=21 x=100 y=20 color=darkslateblue bold=bold overwrite=true]
 [ptext name="test" text="スクリプト作業をありがとうございました。" layer=26 size=17 x=100 y=45 color=darkslateblue]
-[ptext name="num_times,test" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
-[ptext name="num_time,test" text=&sf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
-[ptext name="num_times,test" text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
-[ptext name="num_time1,test" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
 
 *test_page1
 [cm]
@@ -542,6 +538,9 @@ alert(f.para_sijyou_koukando);
 [glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
 [glink target="no2" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
 [glink target=kuroda4 text="黒田event" size=20 width="250" x=100 y=250 color=blue]
+;[glink target=kuroda5 text="黒田/散策" size=20 width="250" x=100 y=250 color=blue]
+[glink target=sijyou5 text="四条event" size=20 width="250" x=100 y=350 color=blue]
+[glink target=sijyou4 text="四条/散策" size=20 width="250" x=100 y=400 color=blue]
 [s]
 
 *no1
@@ -618,15 +617,13 @@ alert(f.para_sijyou_koukando);
 [glink target=kuroda4 text="黒田1_1" exp="sf.event_kuroda_1_1=1" size=20 width="250" x=400 y=250 color=blue] 
 [glink target=kuroda4 text="黒田1_4" exp="sf.event_kuroda_1_4=1" size=20 width="250" x=400 y=300 color=blue]  
 [glink target=kuroda4 text="黒田2_2" exp="sf.event_kuroda_2_2=1" size=20 width="250" x=400 y=350 color=blue]
-[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
 [s]
 *sijyou_1
 *sijyou_2
 *sijyou_3
 @jump target=yes1
 *sijyou4
-
-;[s]
 [glink target="sijyou4" text="四条散策1" exp="sf.event_sijyou_sansaku=1" size=20 width="250" x=100 y=100 color=blue]
 [glink target="sijyou4" text="四条散策2" exp="sf.event_sijyou_sansaku_2=1" size=20 width="250" x=100 y=150 color=blue]
 [glink target="sijyou4" text="四条散策3" exp="sf.event_sijyou_sansaku_3=1" size=20 width="250" x=100 y=200 color=blue]
@@ -640,9 +637,26 @@ alert(f.para_sijyou_koukando);
 [glink target="sijyou4" text="四条散策11" exp="sf.event_sijyou_sansaku_11=1" size=20 width="250" x=400 y=100 color=blue]
 [glink target="sijyou4" text="四条散策12" exp="sf.event_sijyou_sansaku_12=1" size=20 width="250" x=400 y=150 color=blue]
 [glink target="sijyou4" text="四条散策13" exp="sf.event_sijyou_sansaku_13=1" size=20 width="250" x=400 y=200 color=blue]
+[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
 [s]
+*sijyou5
+[cm]
+[glink target="sijyou5" text="四条6_1" exp="sf.event_sijyou_event_6_1=1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="sijyou5" text="四条9_1"exp="sf.event_sijyou_9_1=1" size=20 width="250" x=100 y=150 color=blue]
+[glink target="sijyou5" text="四条9_2"exp="sf.event_sijyou_9_2=1" size=20 width="250" x=100 y=200 color=blue]
+[glink target="sijyou5" text="四条9_3"exp="sf.event_sijyou_9_3=1" size=20 width="250" x=100 y=250 color=blue]
+[glink target="sijyou5" text="四条9_4"exp="sf.event_sijyou_9_4=1" size=20 width="250" x=100 y=300 color=blue]
+[glink target="sijyou5" text="四条10_1"exp="sf.event_sijyou_10_1=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target="sijyou5" text="四条10_3"exp="sf.event_sijyou_10_3=1" size=20 width="250" x=100 y=400 color=blue]
+[glink target="sijyou5" text="四条11_1"exp="sf.event_sijyou_11_1=1" size=20 width="250" x=100 y=450 color=blue]
 
-
+[glink target="sijyou5" text="四条1_1"exp="sf.event_sijyou_1_1=1" size=20 width="250" x=400 y=100 color=blue]
+[glink target="sijyou5" text="四条1_3"exp="sf.event_sijyou_1_3=1" size=20 width="250" x=400 y=150 color=blue]
+[glink target="sijyou5" text="四条1_4"exp="sf.event_sijyou_1_4=1" size=20 width="250" x=400 y=200 color=blue]
+[glink target="sijyou5" text="四条2_1"exp="sf.event_sijyou_2_1=1" size=20 width="250" x=400 y=250 color=blue]
+[glink target="sijyou5" text="四条2_2"exp="sf.event_sijyou_2_2_bazar=1" size=20 width="250" x=400 y=300 color=blue]
+[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
+[s]
 
 *zaizen_1
 *zaizen_2
@@ -680,6 +694,11 @@ sf.replay_hujieda=1;
 [call storage="eventpercent_sijyou.ks" target=*start]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 ;[bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
+[ptext name="num_times,test" text="クリア回数＝" layer=26 size=17 x=100 y=65 color=darkslateblue]
+[ptext name="num_time,test" text=&sf.ending_Number_of_times layer=26 size=17 x=190 y=65 color=darkslateblue overwrite=true]
+[ptext name="num_times,test" text="四条ルート既プレイ数＝" layer=26 size=17 x=100 y=85 color=darkslateblue]
+[ptext name="num_time1,test" text=&tf.event_Number_of_times layer=26 size=17 x=275 y=85 color=darkslateblue overwrite=true]
+
 [ptext text="四条6_1" layer=26 size=17 x=100 y=100 color=darkslateblue]
 [ptext name="num_time3" text=&sf.event_sijyou_event_6_1 layer=26 size=17 x=315 y=100 color=darkslateblue overwrite=true]
 [ptext text="四条9_2" layer=26 size=17 x=100 y=150 color=darkslateblue]
