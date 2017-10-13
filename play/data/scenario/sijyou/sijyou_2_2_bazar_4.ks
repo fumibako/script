@@ -17,9 +17,9 @@ $(".1_fore").empty();
 [button fix=true target="seen_end" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 テストページから開始します。[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;【BGM】ドナウ（ダンスシーン等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="waltz_danube.ogg" loop=true]
+[eval exp="f.bgm_storage='waltz_danube.ogg'"]
 [endif]
 ;====================================================
 *scene1
