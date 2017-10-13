@@ -561,13 +561,15 @@ alert(f.para_sijyou_koukando);
 [glink target=test_page1 text="藤枝bad2閉鎖" exp="sf.ED_hujieda_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+[glink target=no2 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
 @jump target=no1_cmmon 
+[s]
 *no2
+
 
 
 *no1_common
 [glink target=test_page1 text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
-[glink target=no2 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
 [s]
 
 @jump target=test_page1
@@ -594,10 +596,37 @@ alert(f.para_sijyou_koukando);
 [glink target=*hji_4 text="藤枝グッド" exp="sf.ED_hujieda_good=1" size=20 width="250" x=500 y=400 color=blue]
 [s]
 
+
 *kuroda_1
 *kuroda_2
 *kuroda_3
-@jump target=yes1
+[cm]
+[glink target=kuroda4 text="黒田event" size=20 width="250" x=100 y=100 color=blue]
+[glink target=yes1 text="もどる" size=20 width="250" x=100 y=150 color=blue] 
+[s]
+
+*kuroda4
+[cm]
+[glink target=kuroda4 text="黒田6_1" exp="sf.event_kuroda_6_1" size=20 width="250" x=100 y=100 color=blue]
+[glink target=kuroda4 text="黒田9_1" exp="sf.event_kuroda_9_1"  size=20 width="250" x=100 y=150 color=blue] 
+[glink target=kuroda4 text="黒田9_3" exp="sf.event_kuroda_9_3"  size=20 width="250" x=100 y=200 color=blue] 
+[glink target=kuroda4 text="黒田9_4" exp="sf.event_kuroda_9_4" size=20 width="250" x=100 y=250 color=blue]
+[glink target=kuroda4 text="黒田10_3" exp="sf.event_kuroda_10_3" size=20 width="250" x=100 y=300 color=blue] 
+[glink target=kuroda4 text="黒田10_4" exp="sf.event_kuroda_10_4" size=20 width="250" x=100 y=350 color=blue]
+[glink target=kuroda4 text="黒田11_1" exp="sf.event_kuroda_11_1" size=20 width="250" x=100 y=400 color=blue]
+[glink target=kuroda4 text="黒田11_2" exp="sf.event_kuroda_11_2" size=20 width="250" x=100 y=450 color=blue] 
+[glink target=kuroda4 text="黒田11_3" exp="sf.event_kuroda_11_3" size=20 width="250" x=100 y=500 color=blue]
+
+[glink target=kuroda4 text="黒田11_4" exp="sf.event_kuroda_11_4" size=20 width="250" x=400 y=100 color=blue]
+[glink target=kuroda4 text="黒田12_2" exp="sf.event_kuroda_12_2" size=20 width="250" x=400 y=150 color=blue]
+[glink target=kuroda4 text="黒田12_3" exp="sf.event_kuroda_12_3" size=20 width="250" x=400 y=200 color=blue] 
+[glink target=kuroda4 text="黒田1_1" exp="sf.event_kuroda_1_1" size=20 width="250" x=400 y=250 color=blue] 
+[glink target=kuroda4 text="黒田1_4" exp="sf.event_kuroda_1_4" size=20 width="250" x=400 y=300 color=blue]  
+[glink target=kuroda4 text="黒田2_2" exp="sf.event_kuroda_2_2" size=20 width="250" x=400 y=350 color=blue]
+[glink target=kuroda4 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+[s]
+
+
 *sijyou_1
 *sijyou_2
 *sijyou_3
@@ -636,6 +665,7 @@ sf.replay_hujieda=1;
 [s]
 
 *check_event
+[call storage="eventpercent_sijyou.ks" target=*start]
 [chara_mod name="bg" storage="bg/bg_web_blue.jpg"]
 ;[bg storage="../fgimage/bg/bg_web_blue.jpg" time=0]
 [ptext text="四条6_1" layer=26 size=17 x=100 y=100 color=darkslateblue]
