@@ -542,6 +542,8 @@ alert(f.para_sijyou_koukando);
 [glink target=sijyou5 text="四条event" size=20 width="250" x=100 y=350 color=white]
 [glink target=sijyou4 text="四条/散策" size=20 width="250" x=100 y=400 color=white]
 [glink target=zaizen5 text="財前event" size=20 width="250" x=100 y=450 color=white]
+[glink target=kt_4 text="葛城宮event" size=20 width="250" x=100 y=500 color=white]
+[glink target=kt_5 text="葛城宮/散策" size=20 width="250" x=400 y=100 color=white]
 [s]
 
 *no1
@@ -566,8 +568,25 @@ alert(f.para_sijyou_koukando);
 @jump target=no1_cmmon 
 [s]
 *no2
+[glink target=kuroda4 text="黒田6_1" exp="sf.event_kuroda_6_1=0" size=20 width="250" x=100 y=100 color=white]
+[glink target=kuroda4 text="黒田9_1" exp="sf.event_kuroda_9_1=0"  size=20 width="250" x=100 y=150 color=white] 
+[glink target=kuroda4 text="黒田9_3" exp="sf.event_kuroda_9_3=0"  size=20 width="250" x=100 y=200 color=white] 
+[glink target=kuroda4 text="黒田9_4" exp="sf.event_kuroda_9_4=0" size=20 width="250" x=100 y=250 color=white]
+[glink target=kuroda4 text="黒田10_3" exp="sf.event_kuroda_10_3=0" size=20 width="250" x=100 y=300 color=white] 
+[glink target=kuroda4 text="黒田10_4" exp="sf.event_kuroda_10_4=0" size=20 width="250" x=100 y=350 color=white]
+[glink target=kuroda4 text="黒田11_1" exp="sf.event_kuroda_11_1=0" size=20 width="250" x=100 y=400 color=white]
+[glink target=kuroda4 text="黒田11_2" exp="sf.event_kuroda_11_2=0" size=20 width="250" x=100 y=450 color=white] 
+[glink target=kuroda4 text="黒田11_3" exp="sf.event_kuroda_11_3=0" size=20 width="250" x=100 y=500 color=white]
 
-
+[glink target=kuroda4 text="黒田11_4" exp="sf.event_kuroda_11_4=0" size=20 width="250" x=400 y=100 color=white]
+[glink target=kuroda4 text="黒田12_2" exp="sf.event_kuroda_12_2=0" size=20 width="250" x=400 y=150 color=white]
+[glink target=kuroda4 text="黒田12_3" exp="sf.event_kuroda_12_3=0" size=20 width="250" x=400 y=200 color=white] 
+[glink target=kuroda4 text="黒田1_1" exp="sf.event_kuroda_1_1=0" size=20 width="250" x=400 y=250 color=white] 
+[glink target=kuroda4 text="黒田1_4" exp="sf.event_kuroda_1_4=0" size=20 width="250" x=400 y=300 color=white]  
+[glink target=kuroda4 text="黒田2_2" exp="sf.event_kuroda_2_2=0" size=20 width="250" x=400 y=350 color=white]
+[glink target=no2 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
+@jump target=no1_cmmon 
+[s]
 
 *no1_common
 [glink target=test_page1 text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
@@ -690,6 +709,30 @@ alert(f.para_sijyou_koukando);
 sf.replay_katuraginomiya=1;
 [endscript]
 @jump target=yes1
+*kt_4
+[glink target="kt_4" text="葛城宮event_1"  exp="sf.event_katuragi_event_1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="kt_4" text="葛城宮event_2"  exp="sf.event_katuragi_event_2" size=20 width="250" x=100 y=150 color=blue]
+[glink target="kt_4" text="葛城宮event_3"  exp="sf.event_katuragi_event_3" size=20 width="250" x=100 y=200 color=blue]
+[glink target="kt_4" text="葛城宮6_1" exp="sf.event_katuragi_6_1" size=20 width="250" x=100 y=250 color=blue]
+[glink target="kt_4" text="葛城宮9_1"	exp="sf.event_katuragi_9_1" size=20 width="250" x=100 y=300 color=blue]
+[glink target="kt_4" text="葛城宮9_3"	exp="sf.event_katuragi_9_3" size=20 width="250" x=100 y=350 color=blue]
+[glink target="kt_4" text="葛城宮9_4" exp="sf.event_katuragi_9_4" size=20 width="250" x=100 y=400 color=blue]
+[glink target="kt_4" text="葛城宮10_2"	exp="sf.event_katuragi_10_2" size=20 width="250" x=100 y=450 color=blue]
+[glink target="kt_4" text="葛城宮10_3"	exp="sf.event_katuragi_10_3" size=20 width="250" x=100 y=500 color=blue]
+
+[glink target="kt_4" text="葛城宮11_1"	exp="sf.event_katuragi_11_1" size=20 width="250" x=400 y=100 color=blue]
+[glink target="kt_4" text="葛城宮11_4" exp="sf.event_katuragi_11_4" size=20 width="250" x=400 y=150 color=blue]
+[glink target="kt_4" text="葛城宮12_1" exp="sf.event_katuragi_12_1" size=20 width="250" x=400 y=200 color=blue]
+[glink target="kt_4" text="葛城宮1_3" exp="sf.event_katuragi_1_3" size=20 width="250" x=400 y=350 color=blue]
+[glink target="kt_4" text="葛城宮2_2" exp="sf.event_katuragi_2_2" size=20 width="250" x=400 y=400 color=blue]
+[glink target="kt_4" text="葛城宮bazaar" exp="sf.event_katuragi_bazar" size=20 width="250" x=100 y=450 color=blue]
+[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
+[s]
+*kt_5
+[glink target="kt_4" text="葛城宮sansaku1" exp="sf.event_katuragi_sansaku1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="kt_4" text="葛城宮sansaku2" exp="sf.event_katuragi_sansaku2" size=20 width="250" x=100 y=100 color=blue]
+[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
+[s]
 
 *hji_1
 *hji_2
@@ -699,6 +742,7 @@ sf.replay_katuraginomiya=1;
 sf.replay_hujieda=1;
 [endscript]
 @jump target=yes1
+*hji_5
 
 
 
