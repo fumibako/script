@@ -37,9 +37,9 @@ $(".1_fore").empty();
 [wait time=10]
 （華織様と御一緒に頂くまで我慢しておきましょう)[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;【BGM】春の声（ダンスシーン等）
+[playbgm storage="waltz_harunokoe.ogg" loop=true]
+[eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
 [endif]
 #
 ;↓目：通常 [主人公目通常]
