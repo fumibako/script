@@ -14,15 +14,78 @@ $(".1_fore").empty();
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
-[button fix=true target="seen_end" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
 テストページから開始します。[p]
+;====================================================
+*scene1
+;全画面表示
+@layopt layer=fix visible=false
+[wait time=50]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
+[四条_顔up_退場]
+[背景_チャリティ会場ダンスホール]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[font color=white size=27]
+しばらくの間、昼食を頂きながら、話し合った。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】ドナウ（ダンスシーン等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="waltz_danube.ogg" loop=true]
 [eval exp="f.bgm_storage='waltz_danube.ogg'"]
 [endif]
-;====================================================
-*scene1
+;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
+;------------------------------------------------
+[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
+[wait time=500]
+夕方に近づく頃――。[r]
+華族会館の周りでは、ダンスパーティーの知らせを[r]
+聞いてか、[r]
+紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
+[wait time=50]
+私達も、貴賓室で身だしなみを整えた後、[r]
+二階のダンスホールへと向かった。[p]
+;------------------------------------------------
+[image name="syande" layer=29 x=0 y=0 zindex=0 storage="bg/bg_syanderia.jpg" time=500]
+[iscript]
+$('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)','-moz-filter':'brightness(0.5)','-ms-filter':'brightness(1.5)'});
+[endscript]
+[wait time=100]
+シャンデリアの煌めきを放つホール。[r]
+洋城のような大テラス窓が、憧れの世界にいる事を[r]
+感じさせる。[p]
+流行りのローブデコルテ、[r]
+[ruby text=けん]絢[ruby text=らん]爛[ruby text=ごう]豪[ruby text=か]華な
+振袖を夜会服として身に[ruby text=まと]纏う淑女達。[r]
+紳士達も、美しい装いをし、[r]
+寄り添うように彼女達の手を取る。[p]
+[ruby text=ホー]広[ruby text=ル]間の脇では音楽隊が優雅な曲を[ruby text=かな]奏ではじめ、[r]
+集まった人々は徐々に円を描くように[r]
+ダンスに加わっていく。[p]
+;------------------------------------------------
+[resetfont]
+@layopt layer=message0 visible=false
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+@layopt layer=message0 visible=true
+;------------------------------------------------
+
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
+
 [iscript]
 $(".29_fore").empty();
 [endscript]
