@@ -772,7 +772,8 @@ $(".29_fore").empty();
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
-テストページからプレイしています。次のシナリオに移動しますか？[r]
+テストページからプレイしています。[r]
+次のシナリオに移動しますか？[r]
 [link target=*jump_ok]次のシナリオへ[endlink][r][r]
 [link target=*jump_no]テストをおわる[endlink]
 [resetfont]
