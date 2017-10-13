@@ -561,62 +561,46 @@ alert(f.para_sijyou_koukando);
 [glink target=test_page1 text="藤枝bad2閉鎖" exp="sf.ED_hujieda_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
+@jump target=no1_cmmon 
+*no2
+
+
+*no1_common
+[glink target=test_page1 text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
+[glink target=no2 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
 [s]
 
 @jump target=test_page1
 
 *yes1
 [glink target="no2" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
-[glink target=*kuroda_1 text="黒田バッド" size=20 width="250" x=100 y=150 color=blue]
-[glink target=*kuroda_2 text="黒田ノーマル" size=20 width="250" x=100 y=200 color=blue]
-[glink target=*kuroda_3 text="黒田グッド" size=20 width="250" x=100 y=250 color=blue]
-[glink target=*sijyou_1 text="四条バッド" size=20 width="250" x=100 y=300 color=blue]
-[glink target=*sijyou_2 text="四条ノーマル" size=20 width="250" x=100 y=350 color=blue]
-[glink target=*sijyou_3 text="四条グッド" size=20 width="250" x=100 y=400 color=blue]
-[glink target=*zaizen_1 text="財前バッドＡ" size=20 width="250" x=100 y=450 color=blue]
-[glink target=*zaizen_2 text="財前バッドＢ" size=20 width="250" x=100 y=500 color=blue]
-[glink target=*zaizen_3 text="財前ノーマル" size=20 width="250" x=100 y=550 color=blue]
-[glink target=*zaizen_4 text="財前グッド" size=20 width="250" x=100 y=600 color=blue]
+[glink target=*kuroda_1 text="黒田バッド"  exp="sf.ED_kuroda_bad=1" size=20 width="250" x=100 y=150 color=blue]
+[glink target=*kuroda_2 text="黒田ノーマル" exp="sf.ED_kuroda_normal=1" size=20 width="250" x=100 y=200 color=blue]
+[glink target=*kuroda_3 text="黒田グッド" exp="sf.ED_kuroda_good=1" size=20 width="250" x=100 y=250 color=blue]
+[glink target=*sijyou_1 text="四条バッド" exp="sf.ED_sijyou_bad=1;" size=20 width="250" x=100 y=300 color=blue]
+[glink target=*sijyou_2 text="四条ノーマル" exp="sf.ED_sijyou_normal=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target=*sijyou_3 text="四条グッド" exp="sf.ED_sijyou_good=1" size=20 width="250" x=100 y=400 color=blue]
+[glink target=*zaizen_1 text="財前バッドＡ" exp="" size=20 width="250" x=100 y=450 color=blue]
+[glink target=*zaizen_2 text="財前バッドＢ" exp="" size=20 width="250" x=100 y=500 color=blue]
+[glink target=*zaizen_3 text="財前ノーマル" exp="" size=20 width="250" x=100 y=550 color=blue]
+[glink target=*zaizen_4 text="財前グッド" exp="" size=20 width="250" x=100 y=600 color=blue]
 
-[glink target=*kt_1 text="葛城宮バッド" size=20 width="250" x=500 y=100 color=blue]
-[glink target=*kt_2 text="葛城宮ノーマル" size=20 width="250" x=500 y=150 color=blue]
-[glink target=*kt_3 text="葛城宮グッド" size=20 width="250" x=500 y=200 color=blue]
-[glink target=*hji_1 text="藤枝バッドA" size=20 width="250" x=500 y=250 color=blue]
-[glink target=*hji_2 text="藤枝バッドB" size=20 width="250" x=500 y=300 color=blue]
-[glink target=*hji_3 text="藤枝ノーマル" size=20 width="250" x=500 y=350 color=blue]
-[glink target=*hji_4 text="藤枝グッド" size=20 width="250" x=500 y=400 color=blue]
+[glink target=*kt_1 text="葛城宮バッド" exp="" size=20 width="250" x=500 y=100 color=blue]
+[glink target=*kt_2 text="葛城宮ノーマル" exp="" size=20 width="250" x=500 y=150 color=blue]
+[glink target=*kt_3 text="葛城宮グッド" exp="" size=20 width="250" x=500 y=200 color=blue]
+[glink target=*hji_1 text="藤枝バッドA" exp="" size=20 width="250" x=500 y=250 color=blue]
+[glink target=*hji_2 text="藤枝バッドB" exp="" size=20 width="250" x=500 y=300 color=blue]
+[glink target=*hji_3 text="藤枝ノーマル" exp="" size=20 width="250" x=500 y=350 color=blue]
+[glink target=*hji_4 text="藤枝グッド" exp="" size=20 width="250" x=500 y=400 color=blue]
 [s]
 
 *kuroda_1
-[iscript]
-sf.ED_kuroda_bad=1;
-[endscript]
-@jump target=yes1
 *kuroda_2
-[iscript]
-sf.ED_kuroda_normal=1;
-[endscript]
-@jump target=yes1
 *kuroda_3
-[iscript]
-sf.ED_kuroda_good=1;
-[endscript]
 @jump target=yes1
-
 *sijyou_1
-[iscript]
-sf.ED_sijyou_bad=1;
-[endscript]
-@jump target=yes1
 *sijyou_2
-[iscript]
-sf.ED_sijyou_normal=1;
-[endscript]
-@jump target=yes1
 *sijyou_3
-[iscript]
-sf.ED_sijyou_good=1;
-[endscript]
 @jump target=yes1
 
 *zaizen_1
