@@ -39,17 +39,19 @@ $(".1_fore").empty();
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
+#
 華織様を待っていると、楽団にピアノの奏者が入り、[r]
 他のバイオリン奏者達も音を合わせはじめる。[p]
-#
-ピアノの音によって徐々に纏まりを得たかと思うと、[r]
-シンと鳴り止み、[r]
-次の瞬間、指揮者の合図で壮麗な円舞曲が再開した。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】春の声（ダンスシーン等）
 [playbgm storage="waltz_harunokoe.ogg" loop=true]
 [eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
 [endif]
+#
+ピアノの音によって徐々に纏まりを得たかと思うと、[r]
+シンと鳴り止み、[r]
+次の瞬間、指揮者の合図で壮麗な円舞曲が再開した。[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ダンスが始まってしまったみたい。[r]
 [sp]……華織様は、まだ森永夫人に捕まっているみたいですね)[p]
