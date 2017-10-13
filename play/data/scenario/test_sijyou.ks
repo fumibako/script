@@ -541,6 +541,7 @@ alert(f.para_sijyou_koukando);
 [glink target="yes1" text="フラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
 [glink target="no2" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
+[glink target=kuroda4 text="黒田event" size=20 width="250" x=100 y=250 color=blue]
 [s]
 
 *no1
@@ -595,42 +596,53 @@ alert(f.para_sijyou_koukando);
 [glink target=*hji_3 text="藤枝ノーマル" exp="sf.ED_hujieda_normal=1" size=20 width="250" x=500 y=350 color=blue]
 [glink target=*hji_4 text="藤枝グッド" exp="sf.ED_hujieda_good=1" size=20 width="250" x=500 y=400 color=blue]
 [s]
-
-
 *kuroda_1
 *kuroda_2
 *kuroda_3
-[cm]
-[glink target=kuroda4 text="黒田event" size=20 width="250" x=100 y=100 color=blue]
-[glink target=yes1 text="もどる" size=20 width="250" x=100 y=150 color=blue] 
-[s]
-
+@jump target=yes1
 *kuroda4
 [cm]
-[glink target=kuroda4 text="黒田6_1" exp="sf.event_kuroda_6_1" size=20 width="250" x=100 y=100 color=blue]
-[glink target=kuroda4 text="黒田9_1" exp="sf.event_kuroda_9_1"  size=20 width="250" x=100 y=150 color=blue] 
-[glink target=kuroda4 text="黒田9_3" exp="sf.event_kuroda_9_3"  size=20 width="250" x=100 y=200 color=blue] 
-[glink target=kuroda4 text="黒田9_4" exp="sf.event_kuroda_9_4" size=20 width="250" x=100 y=250 color=blue]
-[glink target=kuroda4 text="黒田10_3" exp="sf.event_kuroda_10_3" size=20 width="250" x=100 y=300 color=blue] 
-[glink target=kuroda4 text="黒田10_4" exp="sf.event_kuroda_10_4" size=20 width="250" x=100 y=350 color=blue]
-[glink target=kuroda4 text="黒田11_1" exp="sf.event_kuroda_11_1" size=20 width="250" x=100 y=400 color=blue]
-[glink target=kuroda4 text="黒田11_2" exp="sf.event_kuroda_11_2" size=20 width="250" x=100 y=450 color=blue] 
-[glink target=kuroda4 text="黒田11_3" exp="sf.event_kuroda_11_3" size=20 width="250" x=100 y=500 color=blue]
+[glink target=kuroda4 text="黒田6_1" exp="sf.event_kuroda_6_1=1" size=20 width="250" x=100 y=100 color=blue]
+[glink target=kuroda4 text="黒田9_1" exp="sf.event_kuroda_9_1=1"  size=20 width="250" x=100 y=150 color=blue] 
+[glink target=kuroda4 text="黒田9_3" exp="sf.event_kuroda_9_3=1"  size=20 width="250" x=100 y=200 color=blue] 
+[glink target=kuroda4 text="黒田9_4" exp="sf.event_kuroda_9_4=1" size=20 width="250" x=100 y=250 color=blue]
+[glink target=kuroda4 text="黒田10_3" exp="sf.event_kuroda_10_3=1" size=20 width="250" x=100 y=300 color=blue] 
+[glink target=kuroda4 text="黒田10_4" exp="sf.event_kuroda_10_4=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target=kuroda4 text="黒田11_1" exp="sf.event_kuroda_11_1=1" size=20 width="250" x=100 y=400 color=blue]
+[glink target=kuroda4 text="黒田11_2" exp="sf.event_kuroda_11_2=1" size=20 width="250" x=100 y=450 color=blue] 
+[glink target=kuroda4 text="黒田11_3" exp="sf.event_kuroda_11_3=1" size=20 width="250" x=100 y=500 color=blue]
 
-[glink target=kuroda4 text="黒田11_4" exp="sf.event_kuroda_11_4" size=20 width="250" x=400 y=100 color=blue]
-[glink target=kuroda4 text="黒田12_2" exp="sf.event_kuroda_12_2" size=20 width="250" x=400 y=150 color=blue]
-[glink target=kuroda4 text="黒田12_3" exp="sf.event_kuroda_12_3" size=20 width="250" x=400 y=200 color=blue] 
-[glink target=kuroda4 text="黒田1_1" exp="sf.event_kuroda_1_1" size=20 width="250" x=400 y=250 color=blue] 
-[glink target=kuroda4 text="黒田1_4" exp="sf.event_kuroda_1_4" size=20 width="250" x=400 y=300 color=blue]  
-[glink target=kuroda4 text="黒田2_2" exp="sf.event_kuroda_2_2" size=20 width="250" x=400 y=350 color=blue]
-[glink target=kuroda4 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
+[glink target=kuroda4 text="黒田11_4" exp="sf.event_kuroda_11_4=1" size=20 width="250" x=400 y=100 color=blue]
+[glink target=kuroda4 text="黒田12_2" exp="sf.event_kuroda_12_2=1" size=20 width="250" x=400 y=150 color=blue]
+[glink target=kuroda4 text="黒田12_3" exp="sf.event_kuroda_12_3=1" size=20 width="250" x=400 y=200 color=blue] 
+[glink target=kuroda4 text="黒田1_1" exp="sf.event_kuroda_1_1=1" size=20 width="250" x=400 y=250 color=blue] 
+[glink target=kuroda4 text="黒田1_4" exp="sf.event_kuroda_1_4=1" size=20 width="250" x=400 y=300 color=blue]  
+[glink target=kuroda4 text="黒田2_2" exp="sf.event_kuroda_2_2=1" size=20 width="250" x=400 y=350 color=blue]
+[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [s]
-
-
 *sijyou_1
 *sijyou_2
 *sijyou_3
 @jump target=yes1
+*sijyou4
+
+;[s]
+[glink target="sijyou4" text="四条散策1" exp="sf.event_sijyou_sansaku=1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="sijyou4" text="四条散策2" exp="sf.event_sijyou_sansaku_2=1" size=20 width="250" x=100 y=150 color=blue]
+[glink target="sijyou4" text="四条散策3" exp="sf.event_sijyou_sansaku_3=1" size=20 width="250" x=100 y=200 color=blue]
+[glink target="sijyou4" text="四条散策4" exp="sf.event_sijyou_sansaku_4=1" size=20 width="250" x=100 y=250 color=blue]
+[glink target="sijyou4" text="四条散策5" exp="sf.event_sijyou_sansaku_5=1" size=20 width="250" x=100 y=300 color=blue]
+[glink target="sijyou4" text="四条散策6" exp="sf.event_sijyou_sansaku_6=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target="sijyou4" text="四条散策7" exp="sf.event_sijyou_sansaku_7=1" size=20 width="250" x=100 y=400 color=blue]
+[glink target="sijyou4" text="四条散策9" exp="sf.event_sijyou_sansaku_9=1" size=20 width="250" x=100 y=450 color=blue]
+[glink target="sijyou4" text="四条散策10" exp="sf.event_sijyou_sansaku_10=1" size=20 width="250" x=100 y=500 color=blue]
+
+[glink target="sijyou4" text="四条散策11" exp="sf.event_sijyou_sansaku_11=1" size=20 width="250" x=400 y=100 color=blue]
+[glink target="sijyou4" text="四条散策12" exp="sf.event_sijyou_sansaku_12=1" size=20 width="250" x=400 y=150 color=blue]
+[glink target="sijyou4" text="四条散策13" exp="sf.event_sijyou_sansaku_13=1" size=20 width="250" x=400 y=200 color=blue]
+[s]
+
+
 
 *zaizen_1
 *zaizen_2
