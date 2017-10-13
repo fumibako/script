@@ -536,7 +536,7 @@ alert(f.para_sijyou_koukando);
 ;ＣＧとリプレイを解放します
 [glink target="yes1" text="フラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="no1" text="フラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=blue]
-[glink target="no2" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
+[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
 [glink target=kuroda4 text="黒田event" size=20 width="250" x=100 y=250 color=white]
 ;[glink target=kuroda5 text="黒田/散策" size=20 width="250" x=100 y=250 color=white]
 [glink target=sijyou5 text="四条event" size=20 width="250" x=100 y=350 color=white]
@@ -544,6 +544,10 @@ alert(f.para_sijyou_koukando);
 [glink target=zaizen5 text="財前event" size=20 width="250" x=100 y=450 color=white]
 [glink target=kt_4 text="葛城宮event" size=20 width="250" x=100 y=500 color=white]
 [glink target=kt_5 text="葛城宮/散策" size=20 width="250" x=400 y=100 color=white]
+[s]
+
+*no2
+@jump target=test_page1
 [s]
 
 *no1
@@ -564,27 +568,27 @@ alert(f.para_sijyou_koukando);
 [glink target=test_page1 text="藤枝bad2閉鎖" exp="sf.ED_hujieda_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
 [glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
 [glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target=no2 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
+[glink target=no_page3 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
 @jump target=no1_cmmon 
 [s]
-*no2
-[glink target=kuroda4 text="黒田6_1" exp="sf.event_kuroda_6_1=0" size=20 width="250" x=100 y=100 color=white]
-[glink target=kuroda4 text="黒田9_1" exp="sf.event_kuroda_9_1=0"  size=20 width="250" x=100 y=150 color=white] 
-[glink target=kuroda4 text="黒田9_3" exp="sf.event_kuroda_9_3=0"  size=20 width="250" x=100 y=200 color=white] 
-[glink target=kuroda4 text="黒田9_4" exp="sf.event_kuroda_9_4=0" size=20 width="250" x=100 y=250 color=white]
-[glink target=kuroda4 text="黒田10_3" exp="sf.event_kuroda_10_3=0" size=20 width="250" x=100 y=300 color=white] 
-[glink target=kuroda4 text="黒田10_4" exp="sf.event_kuroda_10_4=0" size=20 width="250" x=100 y=350 color=white]
-[glink target=kuroda4 text="黒田11_1" exp="sf.event_kuroda_11_1=0" size=20 width="250" x=100 y=400 color=white]
-[glink target=kuroda4 text="黒田11_2" exp="sf.event_kuroda_11_2=0" size=20 width="250" x=100 y=450 color=white] 
-[glink target=kuroda4 text="黒田11_3" exp="sf.event_kuroda_11_3=0" size=20 width="250" x=100 y=500 color=white]
+*no_page3
+[glink target=kuroda4 text="黒田6_1閉鎖" exp="sf.event_kuroda_6_1=0" size=20 width="250" x=100 y=100 color=white]
+[glink target=kuroda4 text="黒田9_1閉鎖" exp="sf.event_kuroda_9_1=0"  size=20 width="250" x=100 y=150 color=white] 
+[glink target=kuroda4 text="黒田9_3閉鎖" exp="sf.event_kuroda_9_3=0"  size=20 width="250" x=100 y=200 color=white] 
+[glink target=kuroda4 text="黒田9_4閉鎖" exp="sf.event_kuroda_9_4=0" size=20 width="250" x=100 y=250 color=white]
+[glink target=kuroda4 text="黒田10_3閉鎖" exp="sf.event_kuroda_10_3=0" size=20 width="250" x=100 y=300 color=white] 
+[glink target=kuroda4 text="黒田10_4閉鎖" exp="sf.event_kuroda_10_4=0" size=20 width="250" x=100 y=350 color=white]
+[glink target=kuroda4 text="黒田11_1閉鎖" exp="sf.event_kuroda_11_1=0" size=20 width="250" x=100 y=400 color=white]
+[glink target=kuroda4 text="黒田11_2閉鎖" exp="sf.event_kuroda_11_2=0" size=20 width="250" x=100 y=450 color=white] 
+[glink target=kuroda4 text="黒田11_3閉鎖" exp="sf.event_kuroda_11_3=0" size=20 width="250" x=100 y=500 color=white]
 
-[glink target=kuroda4 text="黒田11_4" exp="sf.event_kuroda_11_4=0" size=20 width="250" x=400 y=100 color=white]
-[glink target=kuroda4 text="黒田12_2" exp="sf.event_kuroda_12_2=0" size=20 width="250" x=400 y=150 color=white]
-[glink target=kuroda4 text="黒田12_3" exp="sf.event_kuroda_12_3=0" size=20 width="250" x=400 y=200 color=white] 
-[glink target=kuroda4 text="黒田1_1" exp="sf.event_kuroda_1_1=0" size=20 width="250" x=400 y=250 color=white] 
-[glink target=kuroda4 text="黒田1_4" exp="sf.event_kuroda_1_4=0" size=20 width="250" x=400 y=300 color=white]  
-[glink target=kuroda4 text="黒田2_2" exp="sf.event_kuroda_2_2=0" size=20 width="250" x=400 y=350 color=white]
-[glink target=no2 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
+[glink target=kuroda4 text="黒田11_4閉鎖" exp="sf.event_kuroda_11_4=0" size=20 width="250" x=400 y=100 color=white]
+[glink target=kuroda4 text="黒田12_2閉鎖" exp="sf.event_kuroda_12_2=0" size=20 width="250" x=400 y=150 color=white]
+[glink target=kuroda4 text="黒田12_3閉鎖" exp="sf.event_kuroda_12_3=0" size=20 width="250" x=400 y=200 color=white] 
+[glink target=kuroda4 text="黒田1_1閉鎖" exp="sf.event_kuroda_1_1=0" size=20 width="250" x=400 y=250 color=white] 
+[glink target=kuroda4 text="黒田1_4閉鎖" exp="sf.event_kuroda_1_4=0" size=20 width="250" x=400 y=300 color=white]  
+[glink target=kuroda4 text="黒田2_2閉鎖" exp="sf.event_kuroda_2_2=0" size=20 width="250" x=400 y=350 color=white]
+[glink target=_page4 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
 @jump target=no1_cmmon 
 [s]
 
@@ -710,22 +714,22 @@ sf.replay_katuraginomiya=1;
 [endscript]
 @jump target=yes1
 *kt_4
-[glink target="kt_4" text="葛城宮event_1"  exp="sf.event_katuragi_event_1" size=20 width="250" x=100 y=100 color=blue]
-[glink target="kt_4" text="葛城宮event_2"  exp="sf.event_katuragi_event_2" size=20 width="250" x=100 y=150 color=blue]
-[glink target="kt_4" text="葛城宮event_3"  exp="sf.event_katuragi_event_3" size=20 width="250" x=100 y=200 color=blue]
-[glink target="kt_4" text="葛城宮6_1" exp="sf.event_katuragi_6_1" size=20 width="250" x=100 y=250 color=blue]
-[glink target="kt_4" text="葛城宮9_1"	exp="sf.event_katuragi_9_1" size=20 width="250" x=100 y=300 color=blue]
-[glink target="kt_4" text="葛城宮9_3"	exp="sf.event_katuragi_9_3" size=20 width="250" x=100 y=350 color=blue]
-[glink target="kt_4" text="葛城宮9_4" exp="sf.event_katuragi_9_4" size=20 width="250" x=100 y=400 color=blue]
-[glink target="kt_4" text="葛城宮10_2"	exp="sf.event_katuragi_10_2" size=20 width="250" x=100 y=450 color=blue]
-[glink target="kt_4" text="葛城宮10_3"	exp="sf.event_katuragi_10_3" size=20 width="250" x=100 y=500 color=blue]
+[glink target="kt_4" text="葛城宮event_1"  exp="sf.event_katuragi_event_1=1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="kt_4" text="葛城宮event_2"  exp="sf.event_katuragi_event_2=1" size=20 width="250" x=100 y=150 color=blue]
+[glink target="kt_4" text="葛城宮event_3"  exp="sf.event_katuragi_event_3=1" size=20 width="250" x=100 y=200 color=blue]
+[glink target="kt_4" text="葛城宮6_1" exp="sf.event_katuragi_6_1=1" size=20 width="250" x=100 y=250 color=blue]
+[glink target="kt_4" text="葛城宮9_1"	exp="sf.event_katuragi_9_1=1" size=20 width="250" x=100 y=300 color=blue]
+[glink target="kt_4" text="葛城宮9_3"	exp="sf.event_katuragi_9_3=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target="kt_4" text="葛城宮9_4" exp="sf.event_katuragi_9_4=1" size=20 width="250" x=100 y=400 color=blue]
+[glink target="kt_4" text="葛城宮10_2"	exp="sf.event_katuragi_10_2=1" size=20 width="250" x=100 y=450 color=blue]
+[glink target="kt_4" text="葛城宮10_3"	exp="sf.event_katuragi_10_3=1" size=20 width="250" x=100 y=500 color=blue]
 
-[glink target="kt_4" text="葛城宮11_1"	exp="sf.event_katuragi_11_1" size=20 width="250" x=400 y=100 color=blue]
-[glink target="kt_4" text="葛城宮11_4" exp="sf.event_katuragi_11_4" size=20 width="250" x=400 y=150 color=blue]
-[glink target="kt_4" text="葛城宮12_1" exp="sf.event_katuragi_12_1" size=20 width="250" x=400 y=200 color=blue]
-[glink target="kt_4" text="葛城宮1_3" exp="sf.event_katuragi_1_3" size=20 width="250" x=400 y=350 color=blue]
-[glink target="kt_4" text="葛城宮2_2" exp="sf.event_katuragi_2_2" size=20 width="250" x=400 y=400 color=blue]
-[glink target="kt_4" text="葛城宮bazaar" exp="sf.event_katuragi_bazar" size=20 width="250" x=100 y=450 color=blue]
+[glink target="kt_4" text="葛城宮11_1"	exp="sf.event_katuragi_11_1=1" size=20 width="250" x=400 y=100 color=blue]
+[glink target="kt_4" text="葛城宮11_4" exp="sf.event_katuragi_11_4=1" size=20 width="250" x=400 y=150 color=blue]
+[glink target="kt_4" text="葛城宮12_1" exp="sf.event_katuragi_12_1=1" size=20 width="250" x=400 y=200 color=blue]
+[glink target="kt_4" text="葛城宮1_3" exp="sf.event_katuragi_1_3=1" size=20 width="250" x=400 y=350 color=blue]
+[glink target="kt_4" text="葛城宮2_2" exp="sf.event_katuragi_2_2=1" size=20 width="250" x=400 y=400 color=blue]
+[glink target="kt_4" text="葛城宮bazaar" exp="sf.event_katuragi_bazar=1" size=20 width="250" x=100 y=450 color=blue]
 [glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
 [s]
 *kt_5
@@ -743,12 +747,27 @@ sf.replay_hujieda=1;
 [endscript]
 @jump target=yes1
 *hji_5
-
-
-
-*no2
-@jump target=test_page1
+[glink target="hji_5" text="藤枝4_4" exp="sf.event_hujieda_4_4=1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="hji_5" text="藤枝5_4" exp="sf.event_hujieda_5_4=1" size=20 width="250" x=100 y=150 color=blue]
+[glink target="hji_5" text="藤枝6_1" exp="sf.event_hujieda_6_1=1" size=20 width="250" x=100 y=200 color=blue]
+[glink target="hji_5" text="藤枝6_4" exp="sf.event_hujieda_6_4=1" size=20 width="250" x=100 y=250 color=blue]
+[glink target="hji_5" text="藤枝7_4" exp="sf.event_hujieda_7_4=1" size=20 width="250" x=100 y=300 color=blue]
+[glink target="hji_5" text="藤枝8_4" exp="sf.event_hujieda_8_4=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target="hji_5" text="藤枝9_1" exp="sf.event_hujieda_9_1=1" size=20 width="250" x=100 y=400 color=blue]
+[glink target="hji_5" text="藤枝9_2" exp="sf.event_hujieda_9_2=1" size=20 width="250" x=100 y=450 color=blue]
+[glink target="hji_5" text="藤枝9_4" exp="sf.event_hujieda_9_4=1" size=20 width="250" x=100 y=500 color=blue]
+[glink target="hji_5" text="藤枝10_1" exp="sf.event_hujieda_10_1=1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="hji_5" text="藤枝10_3" exp="sf.event_hujieda_10_3=1" size=20 width="250" x=100 y=150 color=blue]
+[glink target="hji_5" text="藤枝11_1" exp="sf.event_hujieda_11_1=1" size=20 width="250" x=100 y=200 color=blue]
+[glink target="hji_5" text="藤枝11_3" exp="sf.event_hujieda_11_3=1" size=20 width="250" x=100 y=250 color=blue]
+[glink target="hji_5" text="藤枝12_3" exp="sf.event_hujieda_12_3=1" size=20 width="250" x=100 y=300 color=blue]
+[glink target="hji_5" text="藤枝1_3" exp="sf.event_hujieda_1_3=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target="hji_5" text="藤枝2_3" exp="sf.event_hujieda_2_3=1" size=20 width="250" x=100 y=400 color=blue]
+[glink target="hji_5" text="藤枝バザー" exp="sf.event_hujieda_bazaar=1" size=20 width="250" x=100 y=450 color=blue]
+[glink target="hji_5" text="藤枝散策" exp="sf.event_hujieda_sansaku1=1" size=20 width="250" x=100 y=500 color=blue]
+[glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=550 color=blue]
 [s]
+
 
 *check_event1
 [eval exp="f.clearlist_out_storage ='test_sijyou.ks'"]
