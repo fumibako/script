@@ -84,7 +84,7 @@ overflow-scrolling:touch;
 <style>
 /* スクロールバーのデザインをつけることができます。ただしwebkitブラウザのみです。他ブラウザはjqueryプラグインで*/
 ::-webkit-scrollbar{
-width:10px;
+width:15px;
 background:#dad1c1;
 	}
 ::-webkit-scrollbar-thumb{
