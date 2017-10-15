@@ -383,8 +383,9 @@ $(".loding_pic1").remove();
 $(".loding_pic2").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
-[glink name="ending1" y="&tf.y2" x=""&tf.x3" text="エンデイング１" size=20]
-[glink name="ending1" y="&tf.y2" x=""&tf.x3+150" text="エンデイング２" size=
+;画像に変更します
+[glink name="ending1" y="&tf.y6" x="&tf.x3" text="エンデイング１" size=20 storage="katuraginomiya_3_4_nomalED.ks"]
+[glink name="ending1" y="&tf.y6" x="&tf.x3+150" text="エンデイング２" size=20 storage="katuraginomiya_3_4_nomalED.ks"]
 [s]
 
 *katuragi_sinario
