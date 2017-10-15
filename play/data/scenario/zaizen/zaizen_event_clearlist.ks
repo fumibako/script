@@ -45,7 +45,7 @@ $(".test").remove();
 *set_position
 ;左位置
 [eval exp="tf.x0 = 20"]
-[eval exp="tf.x1 = 50"]
+[eval exp="tf.x1 = 45"]
 ;二桁↓左位置
 [eval exp="tf.x1_2 = 50"]
 ;左位置2
