@@ -190,7 +190,7 @@ $(".layer_free").css("opacity",0);
 [endif]
 
 [if exp="sf.ED_zaizen_bad1 == 1"]
-[button name="ending2" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x6" text="BAD1" size=15 target="zaizen_sinario_ed" exp="tf.jp_sinario='zaizen_11_bad2'"]
+[button name="ending2" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x6" text="BAD1" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_11_bad2'"]
 [image name="ending2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end1_y" visible=true wait=true]
 [else]
 [image name="day,ending2" storage="../image/day_bad2.png" layer=26 x="&tf.x6" y="&tf.end1_y" visible=true wait=true]
@@ -200,7 +200,7 @@ $(".layer_free").css("opacity",0);
 [endif]
 
 [if exp="sf.ED_zaizen_normal == 1"]
-[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="zaizen_sinario_ed" exp="tf.jp_sinario='zaizen_3_4_normal'"]
+[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_3_4_normal'"]
 [image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [else]
@@ -211,7 +211,7 @@ $(".layer_free").css("opacity",0);
 [endif]
 
 [if exp="sf.ED_zaizen_good == 1"]
-[button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" text="good" size=15 target="zaizen_sinario_ed" exp="tf.jp_sinario='zaizen_3_4_good'"]
+[button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" text="good" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_3_4_good'"]
 [image name="ending4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [else]
