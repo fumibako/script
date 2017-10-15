@@ -49,8 +49,9 @@ $(".test").remove();
 ;二桁↓左位置
 [eval exp="tf.x1_2 = 50"]
 ;左位置2
-[eval exp="tf.x0_1 = 250"]
-[eval exp="tf.x2 = 265"]
+;左位置2◆
+[eval exp="tf.x0_1 = 240"]
+[eval exp="tf.x2 = 280"]
 ;左位置3
 [eval exp="tf.x0_2 = 510"]
 [eval exp="tf.x3 = 540"]
@@ -99,8 +100,8 @@ $(".layer_free").css("opacity",0);
 ;名前表示
 [image name="c_name1" storage="../image/name_zaizen.png" layer=26 x=255 y=35 visible=true]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=25 x=600 y=34 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
 ;=======================================================================================
 ;sf.event_zaizen_event_6_1
 [image name="day,zaizen_event_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
