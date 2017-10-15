@@ -273,9 +273,9 @@ $(".zaizen_event_12_2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [endscript]
 [wait time=10]
 [button name="zaizen_12_2" graphic="day12_2.png" target="zaizen_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='zaizen_12_2'"]
-[image name="day,zaizen_event_12_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true]
+[image name="day,zaizen_event_12_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true]
 [else]
-[image name="day,zaizen_event_12_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y1 visible=true]
+[image name="day,zaizen_event_12_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_zaizen_12_4 == 1"]
@@ -284,9 +284,9 @@ $(".zaizen_event_12_4").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [endscript]
 [wait time=10]
 [button name="zaizen_12_4" graphic="day12_4.png" target="zaizen_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='zaizen_12_4'"]
-[image name="day,zaizen_event_12_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
+[image name="day,zaizen_event_12_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true]
 [else]
-[image name="day,zaizen_event_12_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y2 visible=true]
+[image name="day,zaizen_event_12_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_zaizen_1_3 == 1"]
@@ -295,9 +295,9 @@ $(".zaizen_event_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 [endscript]
 [wait time=10]
 [button name="zaizen_1_3" graphic="day1_3.png" target="zaizen_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='zaizen_1_3_1'"]
-[image name="day,zaizen_event_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true]
+[image name="day,zaizen_event_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true]
 [else]
-[image name="day,zaizen_event_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y3 visible=true]
+[image name="day,zaizen_event_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true]
 [endif]
 ;==================================================================================
 ;左位置3 tf.x3
