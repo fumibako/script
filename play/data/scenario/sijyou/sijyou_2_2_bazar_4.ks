@@ -35,7 +35,7 @@ $(".1_fore").empty();
 [wait time=50]
 [image layer=29 x=0 y=0 zindex=1 storage="bg/bg_prologue.jpg" time=300]
 [四条_顔up_退場]
-[背景_チャリティ会場ダンスホール]
+[暗転]
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [font color=white size=27]
@@ -48,7 +48,7 @@ $(".1_fore").empty();
 var fil ={"filter":"brightness(78%) sepia(42%) hue-rotate(330deg)"};
 $(".yuugata").css(fil);
 [endscript]
-[trans time=900]
+[trans time=900 layer=29]
 [wt]
 [wait time=500]
 夕方に近づく頃――。[r]
@@ -64,6 +64,7 @@ $(".yuugata").css(fil);
 [wait time=50]
 私達も、貴賓室で身だしなみを整えた後、[r]
 二階のダンスホールへと向かった。[p]
+[背景_チャリティ会場ダンスホール]
 ;------------------------------------------------
 [image name="syande" layer=29 x=0 y=0 zindex=0 storage="bg/bg_syanderia.jpg" time=500]
 [iscript]
