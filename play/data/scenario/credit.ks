@@ -250,7 +250,7 @@ background:#beb7e8;
 		<tr><th align="left">その他</th><td>：</td><td> ◆jsYiJcqRkk　</td></tr>
 	</table>
 </td></tr></table></div>
-<script>
+[iscript]
 $(function(){
 	var box = $('.credit_gamen')[0];
 	var touchStartPositionX;
@@ -292,7 +292,7 @@ $(function(){
 		}
 	}
 });
-</script>
+[endscript]
 [endhtml]
 [glink target=*credit_page1 text="←" size=20 width="20" x=20 y=500 color=white]
 
