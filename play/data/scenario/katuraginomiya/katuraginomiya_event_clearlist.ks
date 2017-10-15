@@ -193,9 +193,6 @@ $(".layer_free").css("opacity",0);
 [button name="ending1" graphic="day_bad1.png" y="&tf.y7" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
 [else]
 [image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7" visible=true wait=true]
-[iscript]
-$(".ending1").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
-[endscript]
 [wait time=10]
 [endif]
 
@@ -203,9 +200,6 @@ $(".ending1").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-m
 ;[button name="ending2" graphic="day_bad2.png" y="&tf.y7" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
 ;[else]
 ;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7" visible=true wait=true]
-;[iscript]
-;$(".ending2").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1%)'});
-;[endscript]
 ;[wait time=10]
 ;[endif]
 
@@ -213,9 +207,6 @@ $(".ending1").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-m
 [button name="ending3" graphic="day_nomal.png" y="&tf.y8-10" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
 [else]
 [image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.y8-10" visible=true wait=true]
-[iscript]
-$(".ending3").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
-[endscript]
 [wait time=10]
 [endif]
 
@@ -223,9 +214,6 @@ $(".ending3").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-m
 [button name="ending4" graphic="day_good.png" y="&tf.y8-10" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED'"]
 [else]
 [image name="day,ending3" storage="../image/day_good.png" layer=26 x="&tf.x5+150" y="&tf.y8-10" visible=true wait=true]
-[iscript]
-$(".ending3").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
-[endscript]
 [wait time=10]
 [endif]
 ;====================================================================================================
