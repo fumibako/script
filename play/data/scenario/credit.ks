@@ -80,6 +80,7 @@ width:960px;
 - webkit- overflow - scrolling: touch;
 scrolling: touch;
 overflow-scrolling:touch;
+transform: translateZ(0);
 }
 </style>
 <style>
