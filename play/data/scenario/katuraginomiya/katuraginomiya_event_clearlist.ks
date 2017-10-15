@@ -58,8 +58,6 @@ $(".test").empty();
 ;左位置4
 [eval exp="tf.x0_3 = 730"]
 [eval exp="tf.x4 = 760"]
-;enndingボタン位置
-[eval exp="tf.x5 = 630"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
@@ -189,31 +187,38 @@ $(".layer_free").css("opacity",0);
 [image name="day,katuragi_sansaku2" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;========================================エンディング============================================================
+;enndingボタン位置
+[eval exp="tf.x5 = 630"]
+[eval exp="tf.x6 = tf.x5 + 150"]
+[eval exp="tf.end1_y = tf.y7 - 23"]
+[eval exp="tf.end2_y = tf.y8 - 10"]
+
 [if exp="sf.ED_katuraginomiya_bad == 1"]
-[button name="ending1" graphic="day_bad1.png" y="&tf.y7-25" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED'"]
+[image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
 [else]
-[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7-25" visible=true wait=true]
+[image name="day,ending1" storage="../image/day_bad1.png" y="&tf.end1_y" layer=26 x="&tf.x5"visible=true wait=true]
 [wait time=10]
 [endif]
 
 ;[if exp="sf.ED_ED_katuraginomiya_bad2 == 1"]
-;[button name="ending2" graphic="day_bad2.png" y="&tf.y7-25" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+;[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
 ;[else]
-;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7-25" visible=true wait=true]
+;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
 ;[wait time=10]
 ;[endif]
 
 [if exp="sf.ED_katuraginomiya_normal == 1"]
-[button name="ending3" graphic="day_nomal.png" y="&tf.y8-10" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
 [else]
-[image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.y8-10" visible=true wait=true]
+[image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [endif]
 
 [if exp="sf.ED_katuraginomiya_good == 1"]
-[button name="ending4" graphic="day_good.png" y="&tf.y8-10" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED'"]
+[button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED'"]
 [else]
-[image name="day,ending3" storage="../image/day_good.png" layer=26 x="&tf.x5+150" y="&tf.y8-10" visible=true wait=true]
+[image name="day,ending3" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [endif]
 ;====================================================================================================
