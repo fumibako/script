@@ -283,7 +283,7 @@ $(".layer_free").css("opacity",0);
 [endif]
 
 [if exp="sf.ED_sijyou_normal == 1"]
-[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_3_4_goodED2'"]
+[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_3_4_goodED'"]
 [else]
 [image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
