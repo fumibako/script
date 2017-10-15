@@ -43,7 +43,8 @@ $(".1_fore").empty();
 [image name="yuugata" layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
 [wait time=500]
 [iscript]
-$(".yuugata").css({'filter':'brightness(0.2),sepia(1),contrast(2)','-webkit-filter':'brightness(0.2),sepia(1),contrast(2)','-moz-filter':'brightness(0.2),sepia(1),contrast(2)','-ms-filter':'brightness(0.2),sepia(1),contrast(2)'});
+var fil ={"filter":"brightness(0.2)","filter":"sepia(1)","filter":"contrast(2)"}
+$(".yuugata").css(fil);
 [endscript]
 夕方に近づく頃――。[r]
 華族会館の周りでは、ダンスパーティーの知らせを[r]
