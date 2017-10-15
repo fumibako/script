@@ -76,7 +76,7 @@ TG.stat.play_se = true;
 height:640px;
 width:960px;
 /*高さを指定しないと領域オーバーか認識しない為指定*/
-overflow: scroll; 
+/*overflow: scroll; ×*/
 -webkit-overflow-scrolling: touch;
 scrolling: touch;
 overflow-scrolling:touch;
@@ -202,7 +202,7 @@ background:#beb7e8;
 height:640px;
 width:960px;
 /*高さを指定しないと領域オーバーか認識しない為指定*/
-- webkit- overflow - scrolling: touch;
+-webkit-overflow-scrolling: touch;
 scrolling: touch;
 overflow-scrolling:touch;
 }
