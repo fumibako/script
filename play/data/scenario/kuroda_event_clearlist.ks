@@ -190,6 +190,46 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 [image name="day,kuroda_2_2" storage="../image/day2_2.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true wait=true]
 [wait time=10]
+;========================================エンディング============================================================
+;enndingボタン位置
+[eval exp="tf.x5 = 630"]
+[eval exp="tf.x6 = tf.x5 + 170"]
+[eval exp="tf.x7 = tf.x5 + 130"]
+[eval exp="tf.x8 = tf.x6 + 110"]
+[eval exp="tf.end1_y = tf.y7 - 23"]
+[eval exp="tf.end2_y = tf.y8 - 10"]
+
+[if exp="sf.ED_kuroda_bad == 1"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="kuroda_sinario" exp="tf.jp_sinario='kuroda_12_3_badED'"]
+[image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
+[else]
+[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
+[wait time=10]
+[image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
+[wait time=10]
+[endif]
+
+[if exp="sf.ED_kuorda_normal == 1"]
+[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="kuroda_sinario" exp="tf.jp_sinario='kuroda_3_4_normalED'"]
+[image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[else]
+[image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[image name="ending3" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[endif]
+
+[if exp="sf.ED_kuroda_good == 1"]
+[button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" text="good" size=15 target="kuroda_sinario" exp="tf.jp_sinario='kuroda_3_4_goodED'"]
+[image name="ending4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[else]
+[image name="day,ending4" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[endif]
 ;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
@@ -362,6 +402,16 @@ $(".kuroda_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [image name="day,kuroda_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true]
 [else]
 [image name="day,kuroda_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true]
+[endif]
+;=============================================エンディングタイトル=========================================================
+[if exp="sf.ED_kuroda_normal == 1 || sf.ED_kuroda_good == 1 || sf.ED_kuroda_bad == 1"]
+[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-40" visible=true wait=true]
+[else]
+[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-50" visible=true wait=true]
+[iscript]
+$(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60%)','-moz-filter': 'brightness(60%)','-o-filter': 'brightness(60%)','-ms-filter': 'brightness(60%)'});
+[endscript]
+[wait time=10]
 [endif]
 [iscript]
 $(".loding_pic").remove();
