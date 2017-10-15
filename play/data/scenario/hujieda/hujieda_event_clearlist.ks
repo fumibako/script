@@ -53,9 +53,9 @@ $(".test").empty();
 [eval exp="tf.x1 = 50"]
 ;二桁↓左位置
 [eval exp="tf.x1_2 = 50"]
-;左位置2
-[eval exp="tf.x0_1 = 250"]
-[eval exp="tf.x2 = 290"]
+;左位置2◆
+[eval exp="tf.x0_1 = 240"]
+[eval exp="tf.x2 = 270"]
 ;二桁↓左位置
 [eval exp="tf.x2_2 = 275"]
 ;左位置3
