@@ -617,6 +617,9 @@ $(".layer_free").css("opacity",1);
 [endscript]
 [s]
 
+*sijyou_sinario_ed
+;必要な処理がれば追記
+
 *sijyou_sinario
 [cm]
 ;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
