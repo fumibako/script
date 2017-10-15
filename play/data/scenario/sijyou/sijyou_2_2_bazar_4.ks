@@ -31,7 +31,7 @@ $(".1_fore").empty();
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [wait time=50]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
+[image layer=29 x=0 y=0 zindex=1 storage="bg/bg_prologue.jpg" time=300]
 [四条_顔up_退場]
 [背景_チャリティ会場ダンスホール]
 @layopt layer=message0 visible=true
@@ -43,8 +43,7 @@ $(".1_fore").empty();
 [image name="yuugata" layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
 [wait time=500]
 [iscript]
-$(".yuugata").css({'filter':'brightness(0.2),sepia(1)','-webkit-filter':'brightness(0.2)','-moz-filter':'brightness(0.2)','-ms-filter':'brightness(0.2)'});
-
+$(".yuugata").css({'filter':'brightness(0.2),sepia(1),contrast(2)','-webkit-filter':'brightness(0.2),sepia(1),contrast(2)','-moz-filter':'brightness(0.2),sepia(1),contrast(2)','-ms-filter':'brightness(0.2),sepia(1),contrast(2)'});
 [endscript]
 夕方に近づく頃――。[r]
 華族会館の周りでは、ダンスパーティーの知らせを[r]
