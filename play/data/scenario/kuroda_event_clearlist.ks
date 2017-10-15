@@ -209,7 +209,7 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 [endif]
 
-[if exp="sf.ED_kuorda_normal == 1"]
+[if exp="sf.ED_kuroda_normal == 1"]
 [button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="kuroda_sinario" exp="tf.jp_sinario='kuroda_3_4_normalED'"]
 [image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
