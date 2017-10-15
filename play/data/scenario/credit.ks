@@ -180,6 +180,49 @@ background:#beb7e8;
 	・　<a href="http://masanbo.websozai.jp/" style="text-decoration:none;">素材工房まさん房 様</a><br>
 	・　<a href="http://www.pixiv.net/" style="text-decoration:none;">pixiv</a> : <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=31433317" style="text-decoration:none;">mit81 様</a>, <a href="http://www.pixiv.net/member.php?id=2360761" style="text-decoration:none;">アスカ 様</a>, <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=11794989" style="text-decoration:none;">ポテ子 様</a><br>
 </td></tr></table></div>
+[iscript]
+$(function(){
+	var box = $('.credit_gamen')[0];
+	var touchStartPositionX;
+	var touchStartPositionY;
+	var touchMovePositionX;
+	var touchMovePositionY;
+	var moveFarX;
+	var moveFarY;
+	var startScrollX;
+	var startScrollY;
+	var moveScrollX;
+	var moveScrollY;
+
+	box.addEventListener("touchstart",touchHandler,false);
+	box.addEventListener("touchmove",touchHandler,false);
+
+	function touchHandler(e){
+		var touch = e.touches[0];
+		if(e.type == "touchstart"){
+			touchStartPositionX = touch.pageX;
+			touchStartPositionY = touch.pageY;
+			//タッチ前スクロールをとる
+			startScrollX = $('.credit_gamen').scrollLeft();
+			startScrollY = $('.credit_gamen').scrollTop();
+		}
+		if(e.type == "touchmove"){
+			e.preventDefault();
+			//現在の座標を取得
+			touchMovePositionX = touch.pageX;
+			touchMovePositionY = touch.pageY;
+			//差をとる
+			moveFarX = touchStartPositionX - touchMovePositionX;
+			moveFarY = touchStartPositionY - touchMovePositionY;
+			//スクロールを動かす
+			moveScrollX = startScrollX +moveFarX;
+			moveScrollY = startScrollY +moveFarY;
+			$('.credit_gamen').scrollLeft(moveScrollX);
+			$('.credit_gamen').scrollTop(moveScrollY);
+		}
+	}
+});
+[endscript]
 [endhtml]
 
 [glink target=*credit_page2 text="→" size=20 width="20" x=890 y=500 color=white]
