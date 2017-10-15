@@ -189,9 +189,9 @@ $(".layer_free").css("opacity",0);
 ;========================================エンディング============================================================
 ;enndingボタン位置
 [eval exp="tf.x5 = 630"]
-[eval exp="tf.x6 = tf.x5 + 150"]
+[eval exp="tf.x6 = tf.x5 + 160"]
 [eval exp="tf.x7 = tf.x5 + 130"]
-[eval exp="tf.x8 = tf.x6 + 130"]
+[eval exp="tf.x8 = tf.x6 + 120"]
 [eval exp="tf.end1_y = tf.y7 - 23"]
 [eval exp="tf.end2_y = tf.y8 - 10"]
 
@@ -204,15 +204,6 @@ $(".layer_free").css("opacity",0);
 [image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
 [endif]
-
-;[if exp="sf.ED_ED_katuraginomiya_bad2 == 1"]
-;[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x6" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
-;[else]
-;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x6" y="&tf.end1_y" visible=true wait=true]
-;[wait time=10]
-;[image name="ending2" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
-;[wait time=10]
-;[endif]
 
 [if exp="sf.ED_katuraginomiya_normal == 1"]
 [button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
