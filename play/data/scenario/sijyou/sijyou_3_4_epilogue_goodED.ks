@@ -278,7 +278,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
 
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay == true || f.event_replay == 'sijyou'"]
 @layopt layer=29 visible=true
 [イベントシーン終了]
 [iscript]
