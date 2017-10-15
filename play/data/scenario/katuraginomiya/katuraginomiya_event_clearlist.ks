@@ -387,10 +387,10 @@ $(".layer_free").css("opacity",1);
 [endscript]
 ;画像に変更します
 
-[glink name="ending1" y="&tf.y7" x="&tf.x5" text="エンデイング1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
-[glink name="ending1" y="&tf.y7" x="&tf.x5+150" text="エンデイング2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
-[glink name="ending1" y="&tf.y8" x="&tf.x5" text="エンデイング3" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
-[glink name="ending1" y="&tf.y8" x="&tf.x5+150" text="エンデイング4" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
+[glink name="ending1" y="&tf.y7" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
+;[glink name="ending1" y="&tf.y7" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
+[glink name="ending1" y="&tf.y8" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
+[glink name="ending1" y="&tf.y8" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED']
 [s]
 *katuragi_sinario_ed
 *katuragi_sinario
