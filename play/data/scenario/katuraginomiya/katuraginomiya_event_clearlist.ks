@@ -58,6 +58,8 @@ $(".test").empty();
 ;左位置4
 [eval exp="tf.x0_3 = 730"]
 [eval exp="tf.x4 = 760"]
+;enndingボタン位置
+[eval exp="tf.x5 = 700"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
@@ -385,12 +387,12 @@ $(".layer_free").css("opacity",1);
 [endscript]
 ;画像に変更します
 
-[glink name="ending1" y="&tf.y7" x="&tf.x0_3" text="エンデイング1" size=15 storage="katuraginomiya_3_4_nomalED.ks"]
-[glink name="ending1" y="&tf.y7" x="&tf.x0_3+150" text="エンデイング2" size=15 storage="katuraginomiya_3_4_nomalED.ks"]
-[glink name="ending1" y="&tf.y8" x="&tf.x0_3" text="エンデイング3" size=15 storage="katuraginomiya_3_4_nomalED.ks"]
-[glink name="ending1" y="&tf.y8" x="&tf.x0_3+150" text="エンデイング4" size=15 storage="katuraginomiya_3_4_nomalED.ks"]
+[glink name="ending1" y="&tf.y7" x="&tf.x5" text="エンデイング1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+[glink name="ending1" y="&tf.y7" x="&tf.x5+150" text="エンデイング2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
+[glink name="ending1" y="&tf.y8" x="&tf.x5" text="エンデイング3" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
+[glink name="ending1" y="&tf.y8" x="&tf.x5+150" text="エンデイング4" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
 [s]
-
+*katuragi_sinario_ed
 *katuragi_sinario
 [cm]
 ;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
