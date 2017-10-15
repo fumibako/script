@@ -379,6 +379,36 @@ $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [else]
 [image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true wait=true]
 [endif]
+;======================================================================================================
+[if exp="sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
+[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+50" y="&tf.y7-50" visible=true wait=true]
+[else]
+[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+50" y="&tf.y7-50" visible=true wait=true]
+[iscript]
+$(".endtitle").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[endif]
+
+[if exp="sf.ED_katuraginomiya_bad == 1"]
+[button name="day,ending1" graphic="day_bad1.png" y="&tf.y7" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
+[else]
+[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7" visible=true wait=true]
+[iscript]
+$(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[endif]
+
+;[if exp="sf.ED_ED_katuraginomiya_bad2 == 1"]
+;[button name="day,ending2" graphic="day_bad2.png" y="&tf.y7" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+;[endif]
+[if exp="sf.ED_katuraginomiya_normal == 1"]
+[button name="day,ending3" graphic="day_nomal.png" y="&tf.y8-10" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+[endif]
+[if exp="sf.ED_katuraginomiya_good == 1"]
+[button name="day,ending4" graphic="day_good.png" y="&tf.y8-10" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED'"]
+[endif]
 [iscript]
 $(".loding_pic").remove();
 $(".loding_pic1").remove();
@@ -387,10 +417,6 @@ $(".layer_free").css("opacity",1);
 [endscript]
 ;画像に変更します
 
-[button name="day,ending1" graphic="day_bad1.png" y="&tf.y7" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
-;[glink name="day,ending2" graphic="day_bad2.png" y="&tf.y7" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
-[button name="day,ending3" graphic="day_nomal.png" y="&tf.y8" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
-[button name="day,ending4" graphic="day_good.png" y="&tf.y8" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED']
 [s]
 *katuragi_sinario_ed
 *katuragi_sinario
