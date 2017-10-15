@@ -42,6 +42,7 @@ $(".1_fore").empty();
 しばらくの間、昼食を頂きながら、話し合った。[p]
 ;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
 ;------------------------------------------------
+[backlay layer=29]
 [image name="yuugata" page=back layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg"]
 [wait time=50]
 [iscript]
