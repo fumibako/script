@@ -486,14 +486,14 @@ $("kan").css('margin','auto');
 [if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
 [iscript]
-$('.1_fore').remove();
+$('.1_fore').empty();
 [endscript]
 @layopt layer=1 visible=true
 [endif]
 
 [endreplay]
 
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay == true || f.event_replay == 'katuraginomiya'"]
 [イベントシーン終了]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
