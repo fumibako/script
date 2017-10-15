@@ -190,16 +190,16 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 ;========================================エンディング============================================================
 [if exp="sf.ED_katuraginomiya_bad == 1"]
-[button name="ending1" graphic="day_bad1.png" y="&tf.y7-50" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.y7-30" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
 [else]
-[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7-50" visible=true wait=true]
+[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7-30" visible=true wait=true]
 [wait time=10]
 [endif]
 
 ;[if exp="sf.ED_ED_katuraginomiya_bad2 == 1"]
-;[button name="ending2" graphic="day_bad2.png" y="&tf.y7-50" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+;[button name="ending2" graphic="day_bad2.png" y="&tf.y7-30" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
 ;[else]
-;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7-50" visible=true wait=true]
+;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7-30" visible=true wait=true]
 ;[wait time=10]
 ;[endif]
 
