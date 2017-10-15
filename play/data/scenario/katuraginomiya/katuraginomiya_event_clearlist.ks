@@ -59,7 +59,7 @@ $(".test").empty();
 [eval exp="tf.x0_3 = 730"]
 [eval exp="tf.x4 = 760"]
 ;enndingボタン位置
-[eval exp="tf.x5 = 700"]
+[eval exp="tf.x5 = 630"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
