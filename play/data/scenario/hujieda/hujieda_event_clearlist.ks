@@ -469,7 +469,7 @@ $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 [image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true wait=true]
 [endif]
 ;=============================================エンディングタイトル=========================================================
-[if exp="sf.ED_hujieda_normal == 1 || sf.ED_hujieda_good == 1 || sf.ED_hujieda_bad == 1 || sf.ED_hujieda_bad2 == 1]
+[if exp="sf.ED_hujieda_normal == 1 || sf.ED_hujieda_good == 1 || sf.ED_hujieda_bad == 1 || sf.ED_hujieda_bad2 == 1"]
 [image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-40" visible=true wait=true]
 [else]
 [image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-50" visible=true wait=true]
