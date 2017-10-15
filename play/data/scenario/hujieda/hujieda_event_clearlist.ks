@@ -370,7 +370,7 @@ $(".hujieda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [button name="hujieda_12_3" graphic="day12_3.png" target="hujieda_sinario" x=&tf.x2 y=&tf.y6 exp="tf.jp_sinario='hujieda_12_3'"]
 [image name="day,hujieda_12_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true wait=true]
 [else]
-[image name="day,hujieda_12_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+130" y=&tf.y6 visible=true wait=true]
+[image name="day,hujieda_12_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true wait=true]
 [endif]
 
 [if exp="sf.event_hujieda_1_3 == 1"]
