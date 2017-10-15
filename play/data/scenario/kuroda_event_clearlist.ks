@@ -109,8 +109,8 @@ $(".layer_free").css("opacity",0);
 ;[ptext text="&tf.allEvent_Number_of_times" layer=26 size=21 x=650 y=40 color=snow]
 ;[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=25 x=600 y=34 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
 ;=====================================================================================================
 ;クリアリストの表示
 ;左位置 tf.x0 tf.x1
