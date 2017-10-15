@@ -250,7 +250,49 @@ background:#beb7e8;
 		<tr><th align="left">その他</th><td>：</td><td> ◆jsYiJcqRkk　</td></tr>
 	</table>
 </td></tr></table></div>
+<script>
+$(function(){
+	var box = $('.credit_gamen')[0];
+	var touchStartPositionX;
+	var touchStartPositionY;
+	var touchMovePositionX;
+	var touchMovePositionY;
+	var moveFarX;
+	var moveFarY;
+	var startScrollX;
+	var startScrollY;
+	var moveScrollX;
+	var moveScrollY;
 
+	box.addEventListener("touchstart",touchHandler,false);
+	box.addEventListener("touchmove",touchHandler,false);
+
+	function touchHandler(e){
+		var touch = e.touches[0];
+		if(e.type == "touchstart"){
+			touchStartPositionX = touch.pageX;
+			touchStartPositionY = touch.pageY;
+			//タッチ前スクロールをとる
+			startScrollX = $('#touchbox').scrollLeft();
+			startScrollY = $('#touchbox').scrollTop();
+		}
+		if(e.type == "touchmove"){
+			e.preventDefault();
+			//現在の座標を取得
+			touchMovePositionX = touch.pageX;
+			touchMovePositionY = touch.pageY;
+			//差をとる
+			moveFarX = touchStartPositionX - touchMovePositionX;
+			moveFarY = touchStartPositionY - touchMovePositionY;
+			//スクロールを動かす
+			moveScrollX = startScrollX +moveFarX;
+			moveScrollY = startScrollY +moveFarY;
+			$('#touchbox').scrollLeft(moveScrollX);
+			$('#touchbox').scrollTop(moveScrollY);
+		}
+	}
+});
+</script>
 [endhtml]
 [glink target=*credit_page1 text="←" size=20 width="20" x=20 y=500 color=white]
 
