@@ -262,6 +262,41 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 [image name="day,sansaku_13" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y4 visible=true wait=true]
 [wait time=10]
+;========================================エンディング============================================================
+;enndingボタン位置
+[eval exp="tf.x5 = 630"]
+[eval exp="tf.x6 = tf.x5 + 150"]
+[eval exp="tf.end1_y = tf.y7 - 23"]
+[eval exp="tf.end2_y = tf.y8 - 10"]
+
+[if exp="sf.ED_sijyou_bad == 1"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED'"]
+[image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
+[else]
+[image name="day,ending1" storage="../image/day_bad1.png" y="&tf.end1_y" layer=26 x="&tf.x5"visible=true wait=true]
+[wait time=10]
+[endif]
+
+;[if exp="sf.ED_ED_sijyou_bad2 == 1"]
+;[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+;[else]
+;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
+;[wait time=10]
+;[endif]
+
+[if exp="sf.ED_sijyou_normal == 1"]
+[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+[else]
+[image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[endif]
+
+[if exp="sf.ED_sijyou_good == 1"]
+[button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED'"]
+[else]
+[image name="day,ending3" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[endif]
 ;====================================================================================================
 ;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
 ;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
@@ -561,6 +596,17 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [else]
 [image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
+;=============================================エンディングタイトル=========================================================
+[if exp="sf.ED_sijyou_normal == 1 || sf.ED_sijyou_good == 1 && sf.ED_sijyou_bad == 1"]
+[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-40" visible=true wait=true]
+[else]
+[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-50" visible=true wait=true]
+[iscript]
+$(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60%)','-moz-filter': 'brightness(60%)','-o-filter': 'brightness(60%)','-ms-filter': 'brightness(60%)'});
+[endscript]
+[wait time=10]
+[endif]
+;==========================================================================================
 [iscript]
 $(".loding_pic").remove();
 $(".loding_pic2").remove();
