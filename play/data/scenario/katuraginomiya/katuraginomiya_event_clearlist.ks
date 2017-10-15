@@ -362,9 +362,9 @@ $(".katuragi_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [endscript]
 [wait time=10]
 [button name="katuragi_sansaku1" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_sansaku1'"]
-[image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y1 visible=true wait=true]
+[image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true wait=true]
 [else]
-[image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y1 visible=true wait=true]
+[image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true wait=true]
 [endif]
 ;katuragi_sansaku2 2月2週～3月4週・散策2
 [if exp="sf.event_katuragi_sansaku2 == 1"]
@@ -373,9 +373,9 @@ $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [endscript]
 [wait time=10]
 [button name="katuragi_sansaku2" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_sansaku2'"]
-[image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true wait=true]
+[image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true wait=true]
 [else]
-[image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y2 visible=true wait=true]
+[image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true wait=true]
 [endif]
 [iscript]
 $(".loding_pic").remove();
@@ -383,6 +383,8 @@ $(".loding_pic1").remove();
 $(".loding_pic2").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
+[glink name="ending1" y="&tf.y2" x=""&tf.x3" text="エンデイング１" size=20]
+[glink name="ending1" y="&tf.y2" x=""&tf.x3+150" text="エンデイング２" size=
 [s]
 
 *katuragi_sinario
