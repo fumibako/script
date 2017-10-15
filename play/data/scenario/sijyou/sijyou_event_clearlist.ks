@@ -264,7 +264,7 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 ;========================================エンディング============================================================
 ;enndingボタン位置
-[eval exp="tf.x5 = 630"]
+[eval exp="tf.x5 = 700"]
 [eval exp="tf.x6 = tf.x5 + 150"]
 [eval exp="tf.end1_y = tf.y7 - 23"]
 [eval exp="tf.end2_y = tf.y8 - 10"]
