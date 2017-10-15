@@ -409,9 +409,9 @@ $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [endif]
 ;=============================================エンディングタイトル=========================================================
 [if exp="sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
-[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+60" y="&tf.y7-40" visible=true wait=true]
+[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-40" visible=true wait=true]
 [else]
-[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+60" y="&tf.y7-50" visible=true wait=true]
+[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-50" visible=true wait=true]
 [iscript]
 $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60%)','-moz-filter': 'brightness(60%)','-o-filter': 'brightness(60%)','-ms-filter': 'brightness(60%)'});
 [endscript]
