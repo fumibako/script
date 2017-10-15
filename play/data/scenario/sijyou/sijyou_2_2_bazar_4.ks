@@ -47,7 +47,7 @@ $(".1_fore").empty();
 [iscript]
 var fil ={"filter":"brightness(78%)","filter":"sepia(42%)"}
 $(".yuugata").css(fil);
-$(".yuugata").css({'filter':'hue-rotate(360deg)'});
+//$(".yuugata").css({'filter':'hue-rotate(360deg)'});
 [endscript]
 夕方に近づく頃――。[r]
 華族会館の周りでは、ダンスパーティーの知らせを[r]
