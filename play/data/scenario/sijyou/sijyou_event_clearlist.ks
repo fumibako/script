@@ -132,8 +132,8 @@ $(".layer_free").css("opacity",0);
 ;名前表示
 [image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=35 visible=true]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=25 x=600 y=34 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
 ;=======================================================================================
 ;四条6_1
 [image name="day,day6_1,sijyou_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
