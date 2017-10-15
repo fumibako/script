@@ -8,13 +8,21 @@ $(".1_fore").empty();
 ;暗転プリロードサブルーチン
 [call target=*2_2 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[背景_チャリティ会場ダンスホール]
+[暗転]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
-テストページから開始します。[p]
+テストページから開始します。 ルートを選択してください。[p]
+[link target=yes_biteer]幸代と会うver[endlink][r][r]
+[link target=no_biteer]幸代と会わないver[endlink][s]
+*yes_bitter
+幸代と会うシナリオ回収ルートです[p]
+[eval exp="f.bitter_rute = 1"]
+@jump target="*scene1"
+*no_biteer
+四条とのシーンを楽しむルートです[p]
 ;====================================================
 *scene1
 ;全画面表示
@@ -32,8 +40,12 @@ $(".1_fore").empty();
 しばらくの間、昼食を頂きながら、話し合った。[p]
 ;その後も慈善バザー会場の隣室で行われた書画展覧会で華織様と私は書画を楽しみ、日本の美術について話を重ねた。
 ;------------------------------------------------
-[image layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
+[image name="yuugata" layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
 [wait time=500]
+[iscript]
+$(".yuugata").css({'filter':'brightness(0.2),sepia(1)','-webkit-filter':'brightness(0.2)','-moz-filter':'brightness(0.2)','-ms-filter':'brightness(0.2)'});
+
+[endscript]
 夕方に近づく頃――。[r]
 華族会館の周りでは、ダンスパーティーの知らせを[r]
 聞いてか、[r]
@@ -50,7 +62,7 @@ $(".1_fore").empty();
 ;------------------------------------------------
 [image name="syande" layer=29 x=0 y=0 zindex=0 storage="bg/bg_syanderia.jpg" time=500]
 [iscript]
-$('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)','-moz-filter':'brightness(0.5)','-ms-filter':'brightness(1.5)'});
+$('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)','-moz-filter':'brightness(0.5)','-ms-filter':'brightness(0.5)'});
 [endscript]
 [wait time=100]
 シャンデリアの煌めきを放つホール。[r]
