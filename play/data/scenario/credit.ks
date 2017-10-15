@@ -75,8 +75,8 @@ TG.stat.play_se = true;
 .credit_gamen {
 height:640px;
 width:960px;
-/*高さを指定しないと領域オーバーか認識しない為指定*/
--webkit-overflow-scrolling: touch;
+/*高さを指定しないと領域オーバーか認識しない為指定 overflow:scroll;*/
+-webkit - overflow - scrolling: touch;
 scrolling: touch;
 overflow-scrolling:touch;
 }
@@ -200,7 +200,7 @@ background:#beb7e8;
 height:640px;
 width:960px;
 /*高さを指定しないと領域オーバーか認識しない為指定*/
--webkit-overflow-scrolling: touch;
+-webkit - overflow - scrolling: touch;
 scrolling: touch;
 overflow-scrolling:touch;
 }
