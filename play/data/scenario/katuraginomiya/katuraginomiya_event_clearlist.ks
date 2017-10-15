@@ -188,6 +188,46 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 [image name="day,katuragi_sansaku2" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
+;========================================エンディング============================================================
+[if exp="sf.ED_katuraginomiya_bad == 1"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.y7" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
+[else]
+[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7" visible=true wait=true]
+[iscript]
+$(".ending1").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
+[endscript]
+[wait time=10]
+[endif]
+
+;[if exp="sf.ED_ED_katuraginomiya_bad2 == 1"]
+;[button name="ending2" graphic="day_bad2.png" y="&tf.y7" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+;[else]
+;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7" visible=true wait=true]
+;[iscript]
+;$(".ending2").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1%)'});
+;[endscript]
+;[wait time=10]
+;[endif]
+
+[if exp="sf.ED_katuraginomiya_normal == 1"]
+[button name="ending3" graphic="day_nomal.png" y="&tf.y8-10" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
+[else]
+[image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.y8-10" visible=true wait=true]
+[iscript]
+$(".ending3").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
+[endscript]
+[wait time=10]
+[endif]
+
+[if exp="sf.ED_katuraginomiya_good == 1"]
+[button name="ending4" graphic="day_good.png" y="&tf.y8-10" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED'"]
+[else]
+[image name="day,ending3" storage="../image/day_good.png" layer=26 x="&tf.x5+150" y="&tf.y8-10" visible=true wait=true]
+[iscript]
+$(".ending3").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
+[endscript]
+[wait time=10]
+[endif]
 ;====================================================================================================
 *common
 ;一度、全ての日付の画像を暗めに表示します。全部終わるまでプリロード幕つける
@@ -379,56 +419,17 @@ $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [else]
 [image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true wait=true]
 [endif]
-;=============================================エンディング=========================================================
+;=============================================エンディングタイトル=========================================================
 [if exp="sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
 [image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+50" y="&tf.y7-40" visible=true wait=true]
 [else]
 [image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+50" y="&tf.y7-50" visible=true wait=true]
 [iscript]
-$(".endtitle").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+$(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60%)','-moz-filter': 'brightness(60%)','-o-filter': 'brightness(60%)','-ms-filter': 'brightness(60%)'});
 [endscript]
 [wait time=10]
 [endif]
 
-[if exp="sf.ED_katuraginomiya_bad == 1"]
-[button name="day,ending1" graphic="day_bad1.png" y="&tf.y7" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
-[else]
-[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7" visible=true wait=true]
-[iscript]
-$(".ending1").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
-[endscript]
-[wait time=10]
-[endif]
-
-;[if exp="sf.ED_ED_katuraginomiya_bad2 == 1"]
-;[button name="day,ending2" graphic="day_bad2.png" y="&tf.y7" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
-;[else]
-;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7" visible=true wait=true]
-;[iscript]
-;$(".ending2").css({'filter': 'grayscale(50%)','-webkit-filter': 'grayscale(50%)','-moz-filter': 'grayscale(50%)','-o-filter': 'grayscale(50%)','-ms-filter': 'grayscale(50%)'});
-;[endscript]
-;[wait time=10]
-;[endif]
-
-[if exp="sf.ED_katuraginomiya_normal == 1"]
-[button name="day,ending3" graphic="day_nomal.png" y="&tf.y8-10" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED'"]
-[else]
-[image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.y8-10" visible=true wait=true]
-[iscript]
-$(".ending3").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
-[endscript]
-[wait time=10]
-[endif]
-
-[if exp="sf.ED_katuraginomiya_good == 1"]
-[button name="day,ending4" graphic="day_good.png" y="&tf.y8-10" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED'"]
-[else]
-[image name="day,ending3" storage="../image/day_good.png" layer=26 x="&tf.x5+150" y="&tf.y8-10" visible=true wait=true]
-[iscript]
-$(".ending3").css({'filter': 'grayscale(50%)','-webkit-filter': 'grayscale(50%)','-moz-filter': 'grayscale(50%)','-o-filter': 'grayscale(50%)','-ms-filter': 'grayscale(50%)'});
-[endscript]
-[wait time=10]
-[endif]
 
 [iscript]
 $(".loding_pic").remove();
