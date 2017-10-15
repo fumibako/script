@@ -18,10 +18,12 @@ $(".1_fore").empty();
 [link target=yes_biteer]幸代と会うver[endlink][r][r]
 [link target=no_biteer]幸代と会わないver[endlink][s]
 *yes_bitter
+[er]
 幸代と会うシナリオ回収ルートです[p]
 [eval exp="f.bitter_rute = 1"]
 @jump target="*scene1"
 *no_biteer
+[er]
 四条とのシーンを楽しむルートです[p]
 ;====================================================
 *scene1
@@ -43,7 +45,7 @@ $(".1_fore").empty();
 [image name="yuugata" layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
 [wait time=500]
 [iscript]
-var fil ={"filter":"brightness(0.2)","filter":"sepia(1)","filter":"contrast(2)"}
+var fil ={"filter":"brightness(200%)","filter":"sepia(1)","filter":"contrast(2)"}
 $(".yuugata").css(fil);
 [endscript]
 夕方に近づく頃――。[r]
