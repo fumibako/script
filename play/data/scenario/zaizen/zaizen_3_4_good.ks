@@ -403,11 +403,11 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;====================================================================================
 ;終わり
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay == true || f.event_replay == 'zaizen'"]
 [イベントシーン終了]
 @layopt layer=29 visible=true
 [iscript]
-$('.1_fore').remove();
+$('.1_fore').empty();
 [endscript]
 @layopt layer=1 visible=true
 [endif]
