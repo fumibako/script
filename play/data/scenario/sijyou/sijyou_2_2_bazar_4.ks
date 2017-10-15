@@ -44,7 +44,7 @@ $(".1_fore").empty();
 ;------------------------------------------------
 [image name="yuugata" layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=900]
 [iscript]
-var fil ={"filter":"brightness(78%) sepia(42%) hue-rotate(330deg)"};
+var fil ={"filter":"brightness(78%) sepia(42%) hue-rotate(330deg)" , "webkit-filter":"brightness(78%) sepia(42%) hue-rotate(330deg)"};
 $(".yuugata").css(fil);
 [endscript]
 [wait time=50]
