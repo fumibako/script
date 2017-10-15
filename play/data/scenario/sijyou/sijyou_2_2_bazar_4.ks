@@ -17,7 +17,7 @@ $(".1_fore").empty();
 テストページから開始します。 ルートを選択してください。[p]
 [link target=yes_biteer]幸代と会うver[endlink][r][r]
 [link target=no_biteer]幸代と会わないver[endlink][s]
-*yes_bitter
+*yes_biteer
 [er]
 幸代と会うシナリオ回収ルートです[p]
 [eval exp="f.bitter_rute = 1"]
@@ -45,8 +45,9 @@ $(".1_fore").empty();
 [image name="yuugata" layer=29 x=0 y=0 zindex=0 storage="bg/B4nFWraU42/bg_cyarity6_1.jpg" time=300]
 [wait time=500]
 [iscript]
-var fil ={"filter":"brightness(78%)","filter":"sepia(42%)","filter":"hue-rotate(340deg)"}
+var fil ={"filter":"brightness(78%)","filter":"sepia(42%)"}
 $(".yuugata").css(fil);
+$(".yuugata").css({'filter':'hue-rotate(360deg)'});
 [endscript]
 夕方に近づく頃――。[r]
 華族会館の周りでは、ダンスパーティーの知らせを[r]
