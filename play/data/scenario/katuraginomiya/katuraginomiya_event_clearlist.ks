@@ -197,11 +197,11 @@ $(".layer_free").css("opacity",0);
 
 [if exp="sf.ED_katuraginomiya_bad == 1"]
 [button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED'"]
-[image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x5+10" y="&tf.end1_y" visible=true wait=true]
+[image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [else]
 [image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
-[image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
+[image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
 [endif]
 
