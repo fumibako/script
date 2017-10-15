@@ -282,7 +282,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 @layopt layer=29 visible=true
 [イベントシーン終了]
 [iscript]
-$('.1_fore').remove();
+$('.1_fore').empty();
 [endscript]
 @layopt layer=1 visible=true
 [endif]
