@@ -190,6 +190,8 @@ $(".layer_free").css("opacity",0);
 ;enndingボタン位置
 [eval exp="tf.x5 = 630"]
 [eval exp="tf.x6 = tf.x5 + 150"]
+[eval exp="tf.x7 = tf.x5 + 150"]
+[eval exp="tf.x8 = tf.x6 + 150"]
 [eval exp="tf.end1_y = tf.y7 - 23"]
 [eval exp="tf.end2_y = tf.y8 - 10"]
 
@@ -199,7 +201,7 @@ $(".layer_free").css("opacity",0);
 [else]
 [image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
-[image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x5+10" y="&tf.end1_y" visible=true wait=true]
+[image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
 [endif]
 
@@ -208,6 +210,8 @@ $(".layer_free").css("opacity",0);
 ;[else]
 ;[image name="day,ending2" storage="../image/day_bad1.png" layer=26 x="&tf.x6" y="&tf.end1_y" visible=true wait=true]
 ;[wait time=10]
+;[image name="ending2" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
+;[wait time=10]
 ;[endif]
 
 [if exp="sf.ED_katuraginomiya_normal == 1"]
@@ -215,7 +219,7 @@ $(".layer_free").css("opacity",0);
 [else]
 [image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
-[image name="ending3" storage="../image/day_check_mi.png" layer=26 x="&tf.x5+10" y="&tf.end2_y" visible=true wait=true]
+[image name="ending3" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [endif]
 
@@ -224,7 +228,7 @@ $(".layer_free").css("opacity",0);
 [else]
 [image name="day,ending4" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
-[image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x6+10" y="&tf.end2_y" visible=true wait=true]
+[image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [endif]
 ;====================================================================================================
