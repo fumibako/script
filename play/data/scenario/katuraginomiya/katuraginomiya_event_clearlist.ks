@@ -384,8 +384,11 @@ $(".loding_pic2").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
 ;画像に変更します
-[glink name="ending1" y="&tf.y6" x="&tf.x3" text="エンデイング１" size=20 storage="katuraginomiya_3_4_nomalED.ks"]
-[glink name="ending1" y="&tf.y6" x="&tf.x3+150" text="エンデイング２" size=20 storage="katuraginomiya_3_4_nomalED.ks"]
+
+[glink name="ending1" y="&tf.y7" x="&tf.x0_3" text="エンデイング1" size=15 storage="katuraginomiya_3_4_nomalED.ks"]
+[glink name="ending1" y="&tf.y7" x="&tf.x0_3+150" text="エンデイング2" size=15 storage="katuraginomiya_3_4_nomalED.ks"]
+[glink name="ending1" y="&tf.y8" x="&tf.x0_3" text="エンデイング3" size=15 storage="katuraginomiya_3_4_nomalED.ks"]
+[glink name="ending1" y="&tf.y8" x="&tf.x0_3+150" text="エンデイング4" size=15 storage="katuraginomiya_3_4_nomalED.ks"]
 [s]
 
 *katuragi_sinario
