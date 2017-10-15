@@ -197,7 +197,7 @@ $(".layer_free").css("opacity",0);
 [button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED'"]
 [image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
 [else]
-[image name="day,ending1" storage="../image/day_bad1.png" y="&tf.end1_y" layer=26 x="&tf.x5"visible=true wait=true]
+[image name="day,ending1" storage="../image/day_bad1.png" y="&tf.end1_y" layer=26 x="&tf.x5" visible=true wait=true]
 [wait time=10]
 [endif]
 
