@@ -387,10 +387,10 @@ $(".layer_free").css("opacity",1);
 [endscript]
 ;画像に変更します
 
-[buttan name="day,ending1" graphic="day_bad1.png" y="&tf.y7" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
+[button name="day,ending1" graphic="day_bad1.png" y="&tf.y7" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED.'"]
 ;[glink name="day,ending2" graphic="day_bad2.png" y="&tf.y7" x="&tf.x5+150" text="BAD2" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
-[buttan name="day,ending3" graphic="day_nomal.png" y="&tf.y8" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
-[buttan name="day,ending4" graphic="day_good.png" y="&tf.y8" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED']
+[button name="day,ending3" graphic="day_nomal.png" y="&tf.y8" x="&tf.x5" text="nomal" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4_nomalED']
+[button name="day,ending4" graphic="day_good.png" y="&tf.y8" x="&tf.x5+150" text="good" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_3_4epilogue_goodED']
 [s]
 *katuragi_sinario_ed
 *katuragi_sinario
