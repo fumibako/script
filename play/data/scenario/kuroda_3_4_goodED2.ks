@@ -285,7 +285,7 @@ $('.junbi_girl').remove();
 [endif]
 ;回想記録終了 
 [endreplay]
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay == true || f.event_replay == 'kuroda'"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [イベントシーン終了]
 [bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=1000]
