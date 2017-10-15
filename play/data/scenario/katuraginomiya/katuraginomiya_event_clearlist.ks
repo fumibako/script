@@ -385,7 +385,7 @@ $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 [else]
 [image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+50" y="&tf.y7-50" visible=true wait=true]
 [iscript]
-$(".endtitle").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(50%)'});
+$(".endtitle").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
 [endif]
@@ -395,7 +395,7 @@ $(".endtitle").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50
 [else]
 [image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.y7" visible=true wait=true]
 [iscript]
-$(".ending1").css({'filter': 'grayscale(50%)','-webkit-filter': 'grayscale(50%)','-moz-filter': 'grayscale(50%)','-o-filter': 'grayscale(50%)','-ms-filter': 'grayscale(50%)'});
+$(".ending1").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
 [endscript]
 [wait time=10]
 [endif]
@@ -415,7 +415,7 @@ $(".ending1").css({'filter': 'grayscale(50%)','-webkit-filter': 'grayscale(50%)'
 [else]
 [image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.y8-10" visible=true wait=true]
 [iscript]
-$(".ending3").css({'filter': 'grayscale(50%)','-webkit-filter': 'grayscale(50%)','-moz-filter': 'grayscale(50%)','-o-filter': 'grayscale(50%)','-ms-filter': 'grayscale(50%)'});
+$(".ending3").css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)','-moz-filter': 'grayscale(1)','-o-filter': 'grayscale(1)','-ms-filter': 'grayscale(1)'});
 [endscript]
 [wait time=10]
 [endif]
