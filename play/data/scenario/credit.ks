@@ -72,14 +72,20 @@ TG.stat.play_se = true;
 <!--↓以下はスクロール対策用に追記-->
 <!--scroll scripts and codes by ＠名無しさん１ ◆B4nFWraU42-->
 <style>
-.credit_gamen {
+.list{
+position: fixed;
 height:640px;
 width:960px;
 /*高さを指定しないと領域オーバーか認識しない為指定 overflow:scroll;　touch*/
--webkit - overflow - scrolling: touch;
-scrolling: touch;
-overflow-scrolling:touch;
 }
+.credit_gamen{
+height:100%;
+overflow: auto;
+-webkit-overflow-scrolling: touch;
+}
+/*.credit_gamen {height:640px;width:960px;*/
+/*高さを指定しないと領域オーバーか認識しない為指定 overflow:scroll;　touch*/
+/*-webkit - overflow - scrolling: touch;scrolling: touch;overflow-scrolling:touch;}*/
 </style>
 <style>
 /* スクロールバーのデザインをつけることができます。ただしwebkitブラウザのみです。他ブラウザはjqueryプラグインで*/
@@ -92,6 +98,7 @@ background:#beb7e8;
 	}
 </style>
 <!--↑ここまでスクロール対策用に追記-->
+<div class="list">
 <div class='credit_gamen' style="overflow-y:scroll;">
 <font size="2" color="#aa6161" family='"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","ヒラギノ明朝 Pro","Hiragino Mincho Pro"'>
 <table border="0" style="margin-left:10%; margin-right:0%; width:100%;" align="left">
@@ -179,7 +186,7 @@ background:#beb7e8;
 	・　<a href="http://gimei.deviantart.com/art/Japanese-style-image-set-102424728" style="text-decoration:none;">deviantart-gimei 様</a><br>
 	・　<a href="http://masanbo.websozai.jp/" style="text-decoration:none;">素材工房まさん房 様</a><br>
 	・　<a href="http://www.pixiv.net/" style="text-decoration:none;">pixiv</a> : <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=31433317" style="text-decoration:none;">mit81 様</a>, <a href="http://www.pixiv.net/member.php?id=2360761" style="text-decoration:none;">アスカ 様</a>, <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=11794989" style="text-decoration:none;">ポテ子 様</a><br>
-</td></tr></table></div>
+</td></tr></table></div></div>
 [endhtml]
 
 [glink target=*credit_page2 text="→" size=20 width="20" x=890 y=500 color=white]
