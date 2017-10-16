@@ -260,7 +260,7 @@ $(".layer_free").css("opacity",0);
 ;sansaku13
 [image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_13" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.6 visible=true wait=true]
+[image name="day,sansaku_13" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 ;========================================エンディング============================================================
 ;enndingボタン位置
