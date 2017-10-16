@@ -600,7 +600,7 @@ $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [endif]
 ;=============================================エンディングタイトル=========================================================
 [if exp="sf.ED_sijyou_normal == 1 || sf.ED_sijyou_good == 1 && sf.ED_sijyou_bad == 1"]
-[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-40" visible=true wait=true]
+[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+80" y="&tf.y7-30" visible=true wait=true]
 [else]
 [image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+130" y="&tf.y7-40" visible=true wait=true]
 [iscript]
