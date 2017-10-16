@@ -77,7 +77,7 @@ height:640px;
 width:960px;
 /*高さを指定しないと領域オーバーか認識しない為指定 overflow:scroll;　touch*/
 overflow-y:scroll;
--webkit-overflow-scrolling: touch;
+-webkit - overflow - scrolling: touch;
 scrolling:touch;
 overflow-scrolling:touch;
 }
