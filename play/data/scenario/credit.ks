@@ -81,7 +81,7 @@ width:960px;
 .credit_gamen{
 height:100%;
 overflow: auto;
--webkit-overflow-scrolling: touch;
+- webkit - overflow - scrolling: touch;
 }
 /*.credit_gamen {height:640px;width:960px;*/
 /*高さを指定しないと領域オーバーか認識しない為指定 overflow:scroll;　touch*/
