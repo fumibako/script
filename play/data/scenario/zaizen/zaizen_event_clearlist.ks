@@ -172,12 +172,12 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 ;========================================エンディング============================================================
 ;enndingボタン位置
-[eval exp="tf.x5 = 630"]
-[eval exp="tf.x6 = tf.x5 + 170"]
-[eval exp="tf.x7 = tf.x5 + 130"]
-[eval exp="tf.x8 = tf.x6 + 110"]
-[eval exp="tf.end1_y = tf.y7 - 23"]
-[eval exp="tf.end2_y = tf.y8 - 10"]
+[eval exp="tf.x5 = 580"]
+[eval exp="tf.x6 = tf.x5 + 200"]
+[eval exp="tf.x7 = tf.x5 + 140"]
+[eval exp="tf.x8 = tf.x6 + 130"]
+[eval exp="tf.end1_y = tf.y7 + 30"]
+[eval exp="tf.end2_y = tf.y8 + 10"]
 
 [if exp="sf.ED_zaizen_bad2 == 1"]
 [button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_11_1_bad'"]
