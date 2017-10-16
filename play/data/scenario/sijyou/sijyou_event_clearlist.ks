@@ -269,7 +269,7 @@ $(".layer_free").css("opacity",0);
 [eval exp="tf.x6 = tf.x5 + 170"]
 [eval exp="tf.x7 = tf.x5 + 130"]
 [eval exp="tf.x8 = tf.x6 + 110"]
-[eval exp="tf.end1_y = tf.y7 - 23"]
+[eval exp="tf.end1_y = tf.y7"]
 [eval exp="tf.end2_y = tf.y8"]
 
 [if exp="sf.ED_sijyou_bad == 1"]
