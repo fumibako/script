@@ -270,7 +270,7 @@ $(".layer_free").css("opacity",0);
 [eval exp="tf.x7 = tf.x5 + 130"]
 [eval exp="tf.x8 = tf.x6 + 110"]
 [eval exp="tf.end1_y = tf.y7 - 23"]
-[eval exp="tf.end2_y = tf.y8 - 10"]
+[eval exp="tf.end2_y = tf.y8"]
 
 [if exp="sf.ED_sijyou_bad == 1"]
 [button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_10_3_badED'"]
