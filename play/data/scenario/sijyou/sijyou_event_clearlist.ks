@@ -284,6 +284,8 @@ $(".layer_free").css("opacity",0);
 
 [if exp="sf.ED_sijyou_normal == 1"]
 [button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_3_4_goodED'"]
+[image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
 [else]
 [image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
@@ -293,6 +295,8 @@ $(".layer_free").css("opacity",0);
 
 [if exp="sf.ED_sijyou_good == 1"]
 [button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_3_4_epilogue_goodED'"]
+[image name="ending4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
 [else]
 [image name="day,ending4" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
