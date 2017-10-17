@@ -83,9 +83,9 @@ $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)',
 [resetfont]
 @layopt layer=message0 visible=false
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 visible=true
 [current layer="message0"]
 @layopt layer=message0 visible=true
+@layopt layer=fix visible=true
 ;------------------------------------------------
 
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
