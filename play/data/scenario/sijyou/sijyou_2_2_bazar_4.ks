@@ -307,9 +307,9 @@ $(".29_fore").empty();
 （なんて楽しい時間なのかしら！ [r]
 [sp]大人達がダンスに興じるのも少し分かったかもしれないわ)[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
-[playbgm storage="michikusa.ogg" loop=true]
-[eval exp="f.bgm_storage='michikusa.ogg'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 [whosay name="華織" color="olivedrab"]
 ;[四条口笑顔]
