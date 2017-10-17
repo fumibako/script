@@ -109,17 +109,18 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 「！」[p]
-[fadeoutbgm time=3000]
-[whosay name=四条幸代]
-[主人公ポーズ片手]
-「あっ……」[p]
-#
-見れば、その方はバザーでお会いした、四条幸代様だった。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】五色（重いムードに
 [playbgm storage="heavymood_goshiki.ogg" loop=true]
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
+
+[whosay name=四条幸代]
+[主人公ポーズ片手]
+「あっ……」[p]
+#
+見れば、その方はバザーでお会いした、四条幸代様だった。[p]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 ;↓眉：困り [主人公眉困り]
