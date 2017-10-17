@@ -725,7 +725,7 @@ sf.replay_katuraginomiya=1;
 [glink target="kt_4" text="葛城宮9_1" exp="sf.event_katuragi_9_1=1" size=20 width="250" x=100 y=300 color=blue]
 [glink target="kt_4" text="葛城宮9_3" exp="sf.event_katuragi_9_3=1" size=20 width="250" x=100 y=350 color=blue]
 [glink target="kt_4" text="葛城宮9_4" exp="sf.event_katuragi_9_4=1" size=20 width="250" x=100 y=400 color=blue]
-[glink target="kt_4" text="葛城宮10_2"	exp="sf.event_katuragi_10_2=1" size=20 width="250" x=100 y=450 color=blue]
+[glink target="kt_4" text="葛城宮10_2" exp="sf.event_katuragi_10_2=1" size=20 width="250" x=100 y=450 color=blue]
 [glink target="kt_4" text="葛城宮10_3"	exp="sf.event_katuragi_10_3=1" size=20 width="250" x=100 y=500 color=blue]
 
 [glink target="kt_4" text="葛城宮11_1"	exp="sf.event_katuragi_11_1=1" size=20 width="250" x=400 y=100 color=blue]
