@@ -82,7 +82,6 @@ $(".1_fore").empty();
 [sp]そうしたら華織様も……)[p]
 #
 きっと私を放っておいたりしないかもしれない。[r]
-[fadeoutbgm time=3000]
 ;↓目：横目 [主人公横目]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
@@ -95,7 +94,7 @@ $(".1_fore").empty();
 #
 華麗なステップを踏む男女はキッチリと会釈し、離れていく。[r]
 別れた女性は、優雅な所作でこちらの壁際に戻ってきた。[p]
-
+[fadeoutbgm time=3000]
 その女性に私が目を奪われていると、[r]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
