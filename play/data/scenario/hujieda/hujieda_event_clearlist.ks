@@ -122,94 +122,94 @@ $(".layer_free").css("opacity",0);
 ;sf.event_hujieda_4_4
 [image name="day,hujieda_4_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_4_4" storage="../image/day4_4.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+[image name="day,hujieda_4_4,h_4_4" storage="../image/day4_4.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_5_4
 [image name="day,hujieda_5_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_5_4" storage="../image/day5_4.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[image name="day,hujieda_5_4,h_5_4" storage="../image/day5_4.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_6_1
 [image name="day,hujieda_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+[image name="day,hujieda_6_1,h_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_6_4
 [image name="day,hujieda_6_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_6_4" storage="../image/day6_4.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[image name="day,hujieda_6_4,h_6_4" storage="../image/day6_4.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_7_4
 [image name="day,hujieda_7_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_7_4" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[image name="day,hujieda_7_4,h_7_4" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_8_4
 [image name="day,hujieda_8_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_8_4" storage="../image/day8_4.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
+[image name="day,hujieda_8_4,h_8_4" storage="../image/day8_4.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_9_1
 [image name="day,hujieda_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
+[image name="day,hujieda_9_1,h_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_9_2
 [image name="day,hujieda_9_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_9_2" storage="../image/day9_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
+[image name="day,hujieda_9_2,h_9_1" storage="../image/day9_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 ;左位置2 tf.x0_1  tf.x2 
 ;sf.event_hujieda_9_4
 [image name="day,hujieda_9_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
+[image name="day,hujieda_9_4,h_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_10_1
 [image name="day,hujieda_10_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_10_1" storage="../image/day10_1.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
+[image name="day,hujieda_10_1,h_10_1" storage="../image/day10_1.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_10_3
 [image name="day,hujieda_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
+[image name="day,hujieda_10_3,h_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_11_1
 [image name="day,hujieda_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2 y=&tf.y4 visible=true wait=true]
+[image name="day,hujieda_11_1,h_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_11_3
 [image name="day,hujieda_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
+[image name="day,hujieda_11_3,h_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_12_3
 [image name="day,hujieda_12_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true wait=true]
+[image name="day,hujieda_12_3,h_12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_1_3
 [image name="day,hujieda_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true wait=true]
+[image name="day,hujieda_1_3,h_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_2_3
 [image name="day,hujieda_2_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y8 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_2_3" storage="../image/day2_3.png"  layer=26 x=&tf.x2 y=&tf.y8 visible=true wait=true]
+[image name="day,hujieda_2_3,h_2_3" storage="../image/day2_3.png"  layer=26 x=&tf.x2 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 ;左位置3 tf.x0_2 tf.x3 
 ;sf.event_hujieda_sansaku1 2/3
 [image name="day,hujieda_sansaku" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_sansaku" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[image name="day,hujieda_sansaku,h_s1" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;sf.event_hujieda_bazaar
 [image name="day,hujieda_bazaar" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,hujieda_bazaar" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[image name="day,hujieda_bazaar,h_bz" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;========================================エンディング============================================================
 ;enndingボタン位置
@@ -271,6 +271,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 ;判定処理をまとめます
 [if exp="sf.event_hujieda_4_4 == 1"]
 [iscript]
+$(".h_4_4").remove();
 $(".hujieda_4_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -282,6 +283,7 @@ $(".hujieda_4_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_5_4 == 1"]
 [iscript]
+$(".h_5_4").remove();
 $(".hujieda_5_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -293,6 +295,7 @@ $(".hujieda_5_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_6_1 == 1"]
 [iscript]
+$(".h_6_1").remove();
 $(".hujieda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -304,6 +307,7 @@ $(".hujieda_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_6_4 == 1"]
 [iscript]
+$(".h_6_4").remove();
 $(".hujieda_6_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -315,6 +319,7 @@ $(".hujieda_6_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_7_4 == 1"]
 [iscript]
+$(".h_7_4").remove();
 $(".hujieda_7_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -326,6 +331,7 @@ $(".hujieda_7_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_8_4 == 1"]
 [iscript]
+$(".h_8_4").remove();
 $(".hujieda_8_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -337,6 +343,7 @@ $(".hujieda_8_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_9_1 == 1"]
 [iscript]
+$(".h_9_1").remove();
 $(".hujieda_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -348,6 +355,7 @@ $(".hujieda_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_9_2 == 1"]
 [iscript]
+$(".h_9_2").remove();
 $(".hujieda_9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -359,6 +367,7 @@ $(".hujieda_9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_9_4 == 1"]
 [iscript]
+$(".h_9_4").remove();
 $(".hujieda_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -370,6 +379,7 @@ $(".hujieda_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_10_1 == 1"]
 [iscript]
+$(".h_10_1").remove();
 $(".hujieda_10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -381,6 +391,7 @@ $(".hujieda_10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 
 [if exp="sf.event_hujieda_10_3 == 1"]
 [iscript]
+$(".h_10_3").remove();
 $(".hujieda_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -392,6 +403,7 @@ $(".hujieda_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 
 [if exp="sf.event_hujieda_11_1 == 1"]
 [iscript]
+$(".h_11_1").remove();
 $(".hujieda_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -403,6 +415,7 @@ $(".hujieda_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 
 [if exp="sf.event_hujieda_11_3 == 1"]
 [iscript]
+$(".h_11_3").remove();
 $(".hujieda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -414,6 +427,7 @@ $(".hujieda_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 
 [if exp="sf.event_hujieda_12_3 == 1"]
 [iscript]
+$(".h_12_3").remove();
 $(".hujieda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -425,6 +439,7 @@ $(".hujieda_12_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 
 [if exp="sf.event_hujieda_1_3 == 1"]
 [iscript]
+$(".h_1_3").remove();
 $(".hujieda_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -436,6 +451,7 @@ $(".hujieda_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 
 [if exp="sf.event_hujieda_2_3 == 1"]
 [iscript]
+$(".h_2_3").remove();
 $(".hujieda_2_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -449,6 +465,7 @@ $(".hujieda_2_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightnes
 ;2_3
 [if exp="sf.event_hujieda_sansaku == 1"]
 [iscript]
+$(".h_s1).remove();
 $(".hujieda_sansaku").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -460,6 +477,7 @@ $(".hujieda_sansaku").css({'filter': 'brightness(100%)','-webkit-filter': 'brigh
 ;3_2
 [if exp="sf.event_hujieda_bazaar == 1"]
 [iscript]
+$(".h_bz").remove();
 $(".hujieda_bazaar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
