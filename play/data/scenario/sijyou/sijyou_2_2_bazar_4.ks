@@ -516,9 +516,9 @@ $(".29_fore").empty();
 甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ruby text=うるお]潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】筍の訪れ（町散策時に
-[playbgm storage="machi_takenoko.ogg" loop=true]
-[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
+[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
 [endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -713,6 +713,7 @@ $(".29_fore").empty();
 [quake count=3 time=250 hmax=10 vmax=10]
 [whosay name="女性"]
 「きゃぁっ」[p]
+[fadeoutbgm time=3000]
 #
 一人の男性を主軸にして、[ruby text=ホー]広[ruby text=ル]間の円舞がパタパタと乱れ、[r]
 静まり返っていく。[p]
@@ -726,13 +727,17 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
 （ど、どうしましょう！？)[p]
-[fadeoutbgm time=3000]
 #
 ふいに、何故だかお稽古の先生の声が脳裏に響く。[p]
  
 [whosay name="お稽古の先生"]
 ――[名前]さん、振袖でのターンは小降りに。[sp]足の動きを計算しつくして。 [r]
 [sp]そうでないの、違うわ。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 
 ;洋装バージョン
 ;――[名前]さん、華麗にターンは回るのはいいけれど、周りもよく注意しなさい。
@@ -746,11 +751,6 @@ $(".29_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 「あ……」[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
-[endif]
 #
 辺りの呆然とした雰囲気に[r]
 今までの努力が水の泡に消えていくような気がした。[p]
