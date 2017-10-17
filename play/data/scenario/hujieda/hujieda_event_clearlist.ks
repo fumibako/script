@@ -221,7 +221,7 @@ $(".layer_free").css("opacity",0);
 [eval exp="tf.end2_y = tf.y8 + 10"]
 
 [if exp="sf.ED_hujieda_bad == 1"]
-[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_8_4_bad'"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_8_4_bad'"]
 [image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [else]
 [image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
@@ -231,7 +231,7 @@ $(".layer_free").css("opacity",0);
 [endif]
 
 [if exp="sf.ED_hujieda_bad2 == 1"]
-[button name="ending2" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x6" text="BAD1" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_12_3_badED'"]
+[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x6" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_12_3_badED'"]
 [image name="ending2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end1_y" visible=true wait=true]
 [else]
 [image name="day,ending2" storage="../image/day_bad2.png" layer=26 x="&tf.x6" y="&tf.end1_y" visible=true wait=true]
@@ -241,7 +241,7 @@ $(".layer_free").css("opacity",0);
 [endif]
 
 [if exp="sf.ED_hujieda_normal == 1"]
-[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_3_4_normalED'"]
+[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_3_4_normalED'"]
 [image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [else]
