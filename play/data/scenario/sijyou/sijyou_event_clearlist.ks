@@ -330,7 +330,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [iscript]
 $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_6_1").remove;
+$(".sijyou_6_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
@@ -342,7 +342,7 @@ $(".sijyou_6_1").remove;
 [if exp="sf.event_sijyou_9_1 == 1"]
 [iscript]
 $(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_9_1").remove;
+$(".sijyou_9_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_9_1" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='sijyou_9_1'"]
@@ -354,7 +354,7 @@ $(".sijyou_9_1").remove;
 [if exp="sf.event_sijyou_9_2 == 1"]
 [iscript]
 $(".day9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_9_2").remove;
+$(".sijyou_9_2").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_9_2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='sijyou_9_2'"]
@@ -366,7 +366,7 @@ $(".sijyou_9_2").remove;
 [if exp="sf.event_sijyou_9_3 == 1"]
 [iscript]
 $(".day9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_9_3").remove;
+$(".sijyou_9_3").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_9_3" graphic="day9_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='sijyou_9_3'"]
@@ -378,7 +378,7 @@ $(".sijyou_9_3").remove;
 [if exp="sf.event_sijyou_9_4 == 1"]
 [iscript]
 $(".day9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_9_4").remove;
+$(".sijyou_9_4").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_9_4" graphic="day9_4.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='sijyou_9_4'"]
@@ -390,7 +390,7 @@ $(".sijyou_9_4").remove;
 [if exp="sf.event_sijyou_10_1 == 1"]
 [iscript]
 $(".day10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_10_1").remove;
+$(".sijyou_10_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_10_1" graphic="day10_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='sijyou_10_1'"]
@@ -402,7 +402,7 @@ $(".sijyou_10_1").remove;
 [if exp="sf.event_sijyou_10_3 == 1"]
 [iscript]
 $(".day10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_10_3").remove;
+$(".sijyou_10_3").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_10_3" graphic="day10_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='sijyou_10_3'"]
@@ -414,7 +414,7 @@ $(".sijyou_10_3").remove;
 [if exp="sf.event_sijyou_11_1 == 1"]
 [iscript]
 $(".day11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_11_1").remove;
+$(".sijyou_11_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_11_1" graphic="day11_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='sijyou_11_1'"]
@@ -426,7 +426,7 @@ $(".sijyou_11_1").remove;
 [if exp="sf.event_sijyou_1_1 == 1"]
 [iscript]
 $(".day1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_1_1").remove;
+$(".sijyou_1_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_1_1" graphic="day1_1.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='sijyou_1_1'"]
@@ -438,7 +438,7 @@ $(".sijyou_1_1").remove;
 [if exp="sf.event_sijyou_1_3 == 1"]
 [iscript]
 $(".day1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_1_3").remove;
+$(".sijyou_1_3").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_1_3" graphic="day1_3.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='sijyou_1_3'"]
@@ -450,7 +450,7 @@ $(".sijyou_1_3").remove;
 [if exp="sf.event_sijyou_1_4 == 1"]
 [iscript]
 $(".day1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_1_4").remove;
+$(".sijyou_1_4").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_1_4" graphic="day1_4.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='sijyou_1_4'"]
@@ -462,7 +462,7 @@ $(".sijyou_1_4").remove;
 [if exp="sf.event_sijyou_2_1 == 1"]
 [iscript]
 $(".day2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_2_1").remove;
+$(".sijyou_2_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_2_1" graphic="day2_1.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y4 exp="tf.jp_sinario='sijyou_2_1'"]
@@ -474,7 +474,7 @@ $(".sijyou_2_1").remove;
 [if exp="sf.event_sijyou_2_2_bazar == 1"]
 [iscript]
 $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_2_2").remove;
+$(".sijyou_2_2").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_2_2" graphic="day2_2.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='sijyou_2_2_bazar_1'"]
@@ -487,6 +487,7 @@ $(".sijyou_2_2").remove;
 [if exp="sf.event_sijyou_sansaku == 1"]
 [iscript]
 $(".sansaku_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku1").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku'"]
@@ -498,6 +499,7 @@ $(".sansaku_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [if exp="sf.event_sijyou_sansaku_2 == 1"]
 [iscript]
 $(".sansaku_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku2").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku2" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku2'"]
@@ -509,6 +511,7 @@ $(".sansaku_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [if exp="sf.event_sijyou_sansaku_3 == 1"]
 [iscript]
 $(".sansaku_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku3").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku3" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku3'"]
@@ -520,6 +523,7 @@ $(".sansaku_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [if exp="sf.event_sijyou_sansaku_4 == 1"]
 [iscript]
 $(".sansaku_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku4").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku4" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku4'"]
@@ -531,6 +535,7 @@ $(".sansaku_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [if exp="sf.event_sijyou_sansaku_5 == 1"]
 [iscript]
 $(".sansaku_5").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku5").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku5" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y5 exp="tf.jp_sinario='sijyou_sansaku5'"]
@@ -542,6 +547,7 @@ $(".sansaku_5").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [if exp="sf.event_sijyou_sansaku_6 == 1"]
 [iscript]
 $(".sansaku_6").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku6").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku6" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku6'"]
@@ -553,6 +559,7 @@ $(".sansaku_6").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [if exp="sf.event_sijyou_sansaku_7 == 1"]
 [iscript]
 $(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku7").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku7" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku7'"]
@@ -564,6 +571,7 @@ $(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [if exp="sf.event_sijyou_sansaku_9 == 1"]
 [iscript]
 $(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku9").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku9" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku9'"]
@@ -575,6 +583,7 @@ $(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 [if exp="sf.event_sijyou_sansaku_10 == 1"]
 [iscript]
 $(".sansaku_10").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku10").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku10" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku10'"]
@@ -586,6 +595,7 @@ $(".sansaku_10").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [if exp="sf.event_sijyou_sansaku_11 == 1"]
 [iscript]
 $(".sansaku_11").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku11").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku11" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku11'"]
@@ -597,6 +607,7 @@ $(".sansaku_11").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [if exp="sf.event_sijyou_sansaku_12 == 1"]
 [iscript]
 $(".sansaku_12").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku12").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku12" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y5 exp="tf.jp_sinario='sijyou_sansaku12'"]
@@ -608,6 +619,7 @@ $(".sansaku_12").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [if exp="sf.event_sijyou_sansaku_13 == 1"]
 [iscript]
 $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
+$(".sijyou_sansaku13").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku13" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku13'"]
