@@ -16,7 +16,17 @@ $(".1_fore").empty();
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
+@jump target=scene1
 ;====================================================
+*bitter_rute
+[er]
+[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
+@layopt layer=message0 visible=true
+[current layer="message0"]
+[暗転]
+遠慮しておいた。
+[autosave]
+[p]
 *scene1
 ;背景準備設定
 [eval exp="f.src='../fgimage/bg/B4nFWraU42/bg_cyarity3.jpg'"]
