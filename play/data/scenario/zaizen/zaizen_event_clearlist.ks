@@ -190,7 +190,7 @@ $(".layer_free").css("opacity",0);
 [endif]
 
 [if exp="sf.ED_zaizen_bad1 == 1"]
-[button name="ending2" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x6" text="BAD1" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_11_bad2'"]
+[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x6" text="BAD1" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_11_bad2'"]
 [image name="ending2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end1_y" visible=true wait=true]
 [else]
 [image name="day,ending2" storage="../image/day_bad2.png" layer=26 x="&tf.x6" y="&tf.end1_y" visible=true wait=true]
