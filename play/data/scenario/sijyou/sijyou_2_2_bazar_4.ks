@@ -53,9 +53,9 @@ $(".yuugata").css(fil);
 聞いてか、[r]
 紳士淑女を乗せた馬車や車の音が賑やかになってくる。[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】ドナウ（ダンスシーン等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="waltz_danube.ogg" loop=true]
-[eval exp="f.bgm_storage='waltz_danube.ogg'"]
+;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=300]
 [wait time=50]
@@ -457,7 +457,7 @@ $(".29_fore").empty();
 ;注文を尋ねに来た…？ 注文を取りに来た？ 近づいた？ 近くに寄った？
 [whosay name="給仕"]
 「奥様、お飲物はいかがでしょうか？」[p]
-[fadeoutbgm time=3000]
+
 *scene4
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を 親戚のことを話している場合のみ表示　
@@ -529,11 +529,6 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （ふう。[sp]なんだか、とてもフワフワしてきたわ）[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】春の声（ダンスシーン等）
-[playbgm storage="waltz_harunokoe.ogg" loop=true]
-[eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
-[endif]
 #
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
