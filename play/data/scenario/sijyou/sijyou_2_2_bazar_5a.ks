@@ -29,9 +29,9 @@ $(".1_fore").empty();
 [p]
 *scene1
 [if exp="sf.BGM=='ON'"]
-;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+;【BGM】冬支度
+[playbgm storage="kanasige_koto_fuyujitaku.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_koto_fuyujitaku.ogg'"]
 [endif]
 ;背景準備設定
 [eval exp="f.src='../fgimage/bg/B4nFWraU42/bg_cyarity3.jpg'"]
