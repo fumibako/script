@@ -299,12 +299,18 @@ $(".29_fore").empty();
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 @layopt layer=fix visible=true
+[fadeoutbgm time=3000]
 ;-------------------------------------------------
 *scene3
 #
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なんて楽しい時間なのかしら！ [r]
 [sp]大人達がダンスに興じるのも少し分かったかもしれないわ)[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】みちくさ（楽しいお出かけの場面、すこしコミカルな場面などに
+[playbgm storage="michikusa.ogg" loop=true]
+[eval exp="f.bgm_storage='michikusa.ogg'"]
+[endif]
 [whosay name="華織" color="olivedrab"]
 ;[四条口笑顔]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_warau_s.png" time=0]
