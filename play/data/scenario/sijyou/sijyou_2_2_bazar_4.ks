@@ -516,9 +516,9 @@ $(".29_fore").empty();
 甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ruby text=うるお]潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
-[playbgm storage="isono_miyabi.ogg" loop=true]
-[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
 [endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
