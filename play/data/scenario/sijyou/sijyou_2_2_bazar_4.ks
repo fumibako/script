@@ -482,6 +482,8 @@ $(".29_fore").empty();
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
+;マクロが読み込まれていないときにクリックするとマクロの中身に飛んだりするwaitする
+[wait time=50]
 [link target=*sweet_rute_0]頂く[endlink][r]
 [r][r][r]
 [link storage="sijyou/sijyou_2_2_bazar_5a.ks" target=*bitter_rute]遠慮しておいた[endlink][r]
