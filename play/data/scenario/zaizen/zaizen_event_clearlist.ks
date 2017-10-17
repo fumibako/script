@@ -106,69 +106,69 @@ $(".layer_free").css("opacity",0);
 ;sf.event_zaizen_event_6_1
 [image name="day,zaizen_event_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+[image name="day,zaizen_event_6_1,day_z_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_9_1
 [image name="day,zaizen_event_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[image name="day,zaizen_event_9_1,day_z_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ; sf.event_zaizen_9_3
 [image name="day,zaizen_event_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+[image name="day,zaizen_event_9_3,day_z_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_10_1
 [image name="day,zaizen_event_10_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_10_1" storage="../image/day10_1.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[image name="day,zaizen_event_10_1,day_z_10_1" storage="../image/day10_1.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_10_3
 [image name="day,zaizen_event_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[image name="day,zaizen_event_10_3,day_z_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_11_1
 [image name="day,zaizen_event_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
+[image name="day,zaizen_event_11_1,day_z_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_11_3
 [image name="day,zaizen_event_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
+[image name="day,zaizen_event_11_3,day_z_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_11_4
 [image name="day,zaizen_event_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
+[image name="day,zaizen_event_11_4,day_z_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 ;左位置2　tf.x0_1 tf.x2 
 ;sf.event_zaizen_12_2
 [image name="day,zaizen_event_12_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
+[image name="day,zaizen_event_12_2,day_z_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_12_4
 [image name="day,zaizen_event_12_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
+[image name="day,zaizen_event_12_4,day_z_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_1_3
 [image name="day,zaizen_event_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_event_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
+[image name="day,zaizen_event_1_3,day_z_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;左位置3 tf.x0_2 tf.x3
 ;sf.event_zaizen_sansaku_2_1
 [image name="day,zaizen_sansaku_2_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_sansaku_2_1" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[image name="day,zaizen_sansaku_2_1,day_z_2_1" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;sf.event_zaizen_sansaku_bazar 2月1週~3月3週・散策・バザー
 [image name="day,zaizen_sansaku_bazar" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,zaizen_sansaku_bazar" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[image name="day,zaizen_sansaku_bazar,day_z_3_3" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;========================================エンディング============================================================
 ;enndingボタン位置
@@ -231,6 +231,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [eval exp="tf.jp_sinario='none'"]
 [if exp="sf.event_zaizen_event_6_1 == 1"]
 [iscript]
+$(".day_z_6_1").remove();
 $(".zaizen_event_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -242,6 +243,7 @@ $(".zaizen_event_6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 
 [if exp="sf.event_zaizen_9_1 == 1"]
 [iscript]
+$(".day_z_9_1").remove();
 $(".zaizen_event_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -253,6 +255,7 @@ $(".zaizen_event_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 
 [if exp="sf.event_zaizen_9_3 == 1"]
 [iscript]
+$(".day_z_9_3").remove();
 $(".zaizen_event_9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -264,6 +267,7 @@ $(".zaizen_event_9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 
 [if exp="sf.event_zaizen_10_1 == 1"]
 [iscript]
+$(".day_z_10_1").remove();
 $(".zaizen_event_10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -275,6 +279,7 @@ $(".zaizen_event_10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 
 [if exp="sf.event_zaizen_10_3 == 1"]
 [iscript]
+$(".day_z_10_3").remove();
 $(".zaizen_event_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -286,6 +291,7 @@ $(".zaizen_event_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 
 [if exp="sf.event_zaizen_11_1 == 1"]
 [iscript]
+$(".day_z_11_1").remove();
 $(".zaizen_event_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -297,6 +303,7 @@ $(".zaizen_event_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 
 [if exp="sf.event_zaizen_11_3 == 1"]
 [iscript]
+$(".day_z_11_3").remove();
 $(".zaizen_event_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -308,6 +315,7 @@ $(".zaizen_event_11_3").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 
 [if exp="sf.event_zaizen_11_4 == 1"]
 [iscript]
+$(".day_z_11_4").remove();
 $(".zaizen_event_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -319,6 +327,7 @@ $(".zaizen_event_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 
 [if exp="sf.event_zaizen_12_2 == 1"]
 [iscript]
+$(".day_z_12_2").remove();
 $(".zaizen_event_12_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -330,6 +339,7 @@ $(".zaizen_event_12_2").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 
 [if exp="sf.event_zaizen_12_4 == 1"]
 [iscript]
+$(".day_z_12_4").remove();
 $(".zaizen_event_12_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -341,6 +351,7 @@ $(".zaizen_event_12_4").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 
 [if exp="sf.event_zaizen_1_3 == 1"]
 [iscript]
+$(".day_z_1_3").remove();
 $(".zaizen_event_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -353,6 +364,7 @@ $(".zaizen_event_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 ;左位置3 tf.x3
 [if exp="sf.event_zaizen_sansaku_2_1 == 1"]
 [iscript]
+$(".day_z_2_1").remove();
 $(".zaizen_sansaku_2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -364,6 +376,7 @@ $(".zaizen_sansaku_2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'br
 
 [if exp="sf.event_zaizen_sansaku_bazar == 1"]
 [iscript]
+$(".day_z_3_3").remove();
 $(".zaizen_sansaku_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
