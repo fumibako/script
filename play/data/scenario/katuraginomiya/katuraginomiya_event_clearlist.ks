@@ -137,9 +137,9 @@ $(".layer_free").css("opacity",0);
 [image name="day,katuragi_9_4,k_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 ;katuragi_10_2
-[image name="day,katuragi_10_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
+[image name="day,katuragi_10_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_10_1,k_10_1" storage="../image/day10_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
+[image name="day,katuragi_10_2,k_10_2" storage="../image/day10_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 ;左位置2tf.x0_1 tf.x2
 ;katuragi_10_3
