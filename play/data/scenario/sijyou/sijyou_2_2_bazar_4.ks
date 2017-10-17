@@ -251,7 +251,6 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 (今日という日を忘れないわ)[p]
-[fadeoutbgm time=3000]
 #
 *scene2
 ;-----------------------------------
@@ -274,11 +273,6 @@ $(".29_fore").empty();
 ;一方の私達は、？  熱気→ほてった身体を？
 私達は、空いた柱に寄り、[r]
 熱気を帯びた身体を冷ます為に休憩をとった。[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】めでたく候（お正月などめでたいシーンに
-[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
-[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
-[endif]
 ;------------------------------------------------
 [resetfont]
 @layopt layer=message0 visible=false
@@ -312,7 +306,11 @@ $(".29_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なんて楽しい時間なのかしら！ [r]
 [sp]大人達がダンスに興じるのも少し分かったかもしれないわ)[p]
-
+[if exp="sf.BGM=='ON'"]
+;【BGM】筍の訪れ（町散策時に
+[playbgm storage="machi_takenoko.ogg" loop=true]
+[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
+[endif]
 [whosay name="華織" color="olivedrab"]
 ;[四条口笑顔]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_warau_s.png" time=0]
@@ -517,6 +515,12 @@ $(".29_fore").empty();
 ;給仕が立ち去るのを横目で見ながら？
 甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ruby text=うるお]潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
+[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+[endif]
+
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -568,6 +572,7 @@ $(".29_fore").empty();
 [sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」
 [autosave]
 [p]
+[fadeoutbgm time=3000]
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
