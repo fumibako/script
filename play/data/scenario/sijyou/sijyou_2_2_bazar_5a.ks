@@ -28,6 +28,11 @@ $(".1_fore").empty();
 [autosave]
 [p]
 *scene1
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+[endif]
 ;背景準備設定
 [eval exp="f.src='../fgimage/bg/B4nFWraU42/bg_cyarity3.jpg'"]
 ;------------------------------------
@@ -53,11 +58,7 @@ $(".1_fore").empty();
 #
 華織様を待っていると、楽団にピアノの奏者が入り、[r]
 他のバイオリン奏者達も音を合わせはじめる。[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】春の声（ダンスシーン等）
-[playbgm storage="waltz_harunokoe.ogg" loop=true]
-[eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
-[endif]
+
 #
 ピアノの音によって徐々に纏まりを得たかと思うと、[r]
 シンと鳴り止み、[r]
@@ -68,7 +69,6 @@ $(".1_fore").empty();
 #
 静かに時を待つ私とは対照的に[r]
 煌びやかな男女達は、そぞろにダンスホールに集まって円舞をはじめる。[p]
-[fadeoutbgm time=3000]
 [背景_チャリティ会場ダンスホール]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：困り [主人公眉困り]
@@ -89,7 +89,7 @@ $(".1_fore").empty();
 [wait time=10]
 そんな事を少し考えつつも、ダンスを終えようとする男女に[r]
 再度、目を向けた。[p]
-
+[fadeoutbgm time=3000]
 [whosay name=男性]
 「よい、夜をお過ごしください」[p]
 [whosay name=女性]
