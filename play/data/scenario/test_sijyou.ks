@@ -718,12 +718,12 @@ sf.replay_katuraginomiya=1;
 [endscript]
 @jump target=yes1
 *kt_4
-[glink target="kt_4" text="葛城宮event_1"  exp="sf.event_katuragi_event_1=1" size=20 width="250" x=100 y=100 color=blue]
-[glink target="kt_4" text="葛城宮event_2"  exp="sf.event_katuragi_event_2=1" size=20 width="250" x=100 y=150 color=blue]
-[glink target="kt_4" text="葛城宮event_3"  exp="sf.event_katuragi_event_3=1" size=20 width="250" x=100 y=200 color=blue]
+[glink target="kt_4" text="葛城宮event_1" exp="sf.event_katuragi_event_1=1" size=20 width="250" x=100 y=100 color=blue]
+[glink target="kt_4" text="葛城宮event_2" exp="sf.event_katuragi_event_2=1" size=20 width="250" x=100 y=150 color=blue]
+[glink target="kt_4" text="葛城宮event_3" exp="sf.event_katuragi_event_3=1" size=20 width="250" x=100 y=200 color=blue]
 [glink target="kt_4" text="葛城宮6_1" exp="sf.event_katuragi_6_1=1" size=20 width="250" x=100 y=250 color=blue]
-[glink target="kt_4" text="葛城宮9_1"	exp="sf.event_katuragi_9_1=1" size=20 width="250" x=100 y=300 color=blue]
-[glink target="kt_4" text="葛城宮9_3"	exp="sf.event_katuragi_9_3=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target="kt_4" text="葛城宮9_1" exp="sf.event_katuragi_9_1=1" size=20 width="250" x=100 y=300 color=blue]
+[glink target="kt_4" text="葛城宮9_3" exp="sf.event_katuragi_9_3=1" size=20 width="250" x=100 y=350 color=blue]
 [glink target="kt_4" text="葛城宮9_4" exp="sf.event_katuragi_9_4=1" size=20 width="250" x=100 y=400 color=blue]
 [glink target="kt_4" text="葛城宮10_2"	exp="sf.event_katuragi_10_2=1" size=20 width="250" x=100 y=450 color=blue]
 [glink target="kt_4" text="葛城宮10_3"	exp="sf.event_katuragi_10_3=1" size=20 width="250" x=100 y=500 color=blue]
