@@ -251,6 +251,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 (今日という日を忘れないわ)[p]
+[fadeoutbgm time=3000]
 #
 *scene2
 ;-----------------------------------
@@ -273,6 +274,11 @@ $(".29_fore").empty();
 ;一方の私達は、？  熱気→ほてった身体を？
 私達は、空いた柱に寄り、[r]
 熱気を帯びた身体を冷ます為に休憩をとった。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】めでたく候（お正月などめでたいシーンに
+[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
+[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+[endif]
 ;------------------------------------------------
 [resetfont]
 @layopt layer=message0 visible=false
@@ -306,11 +312,7 @@ $(".29_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なんて楽しい時間なのかしら！ [r]
 [sp]大人達がダンスに興じるのも少し分かったかもしれないわ)[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】筍の訪れ（町散策時に
-[playbgm storage="machi_takenoko.ogg" loop=true]
-[eval exp="f.bgm_storage='machi_takenoko.ogg'"]
-[endif]
+
 [whosay name="華織" color="olivedrab"]
 ;[四条口笑顔]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_warau_s.png" time=0]
@@ -461,9 +463,9 @@ $(".29_fore").empty();
 [主人公通常]
 気の良さそうな[ruby text=ボー]給[ruby text=イ]仕が飲料を乗せた[ruby text=トレイ]盆を手にして側に立った。[p]
 ;注文を尋ねに来た…？ 注文を取りに来た？ 近づいた？ 近くに寄った？
+[fadeoutbgm time=3000]
 [whosay name="給仕"]
 「奥様、お飲物はいかがでしょうか？」[p]
-
 *scene4
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を 親戚のことを話している場合のみ表示　
@@ -482,22 +484,10 @@ $(".29_fore").empty();
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
-
-[link target=sweet_rute_0]頂く[endlink][r]
+[link target=*sweet_rute_0]頂く[endlink][r]
 [r][r][r]
-[link target=bitter_rute]遠慮しておいた[endlink][r]
+[link storage="sijyou/sijyou_2_2_bazar_5a.ks" target=*bitter_rute]遠慮しておいた[endlink][r]
 [s]
-;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-*bitter_rute
-[er]
-[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 visible=true
-[current layer="message0"]
-[暗転]
-遠慮しておいた。
-[autosave]
-[p]
-@jump storage="sijyou/sijyou_2_2_bazar_5a.ks" target=scene1
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_rute_0
 [er]
