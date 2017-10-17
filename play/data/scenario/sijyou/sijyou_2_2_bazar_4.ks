@@ -516,9 +516,9 @@ $(".29_fore").empty();
 甘い[ruby text=フ]果[ruby text=ルー]物[ruby text=テ]のよ[ruby text=ィー]うな香りが漂う飲み物を手にし、喉を[ruby text=うるお]潤す。[p]
 身体の熱気は、落ち着かなかったが、一気に不思議な爽快感が増してきた。[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】めでたく候（お正月などめでたいシーンに
-[playbgm storage="oshougatsu_medetaku.ogg" loop=true]
-[eval exp="f.bgm_storage='oshougatsu_medetaku.ogg'"]
+;【BGM】みやび（磯野登場シーン：若干コミカルな場面など目立たせたいときに
+[playbgm storage="isono_miyabi.ogg" loop=true]
+[eval exp="f.bgm_storage='isono_miyabi.ogg'"]
 [endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -572,7 +572,6 @@ $(".29_fore").empty();
 [sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」
 [autosave]
 [p]
-[fadeoutbgm time=3000]
 #
 私は
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
