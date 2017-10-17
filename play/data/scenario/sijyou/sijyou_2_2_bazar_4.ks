@@ -594,6 +594,7 @@ $(".29_fore").empty();
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_2
 [er]
+[fadeoutbgm time=3000]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
@@ -606,7 +607,6 @@ $(".29_fore").empty();
 休憩室に行くことにした。
 [autosave]
 [p]
-[fadeoutbgm time=3000]
 @jump storage="sijyou/sijyou_2_2_bazar_5.ks" target="scene1"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_1
