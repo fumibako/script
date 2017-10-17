@@ -51,7 +51,6 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （華織様と御一緒に頂くまで我慢しておきましょう)[p]
-[fadeoutbgm time=3000]
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
