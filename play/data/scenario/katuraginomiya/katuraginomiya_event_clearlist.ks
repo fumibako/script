@@ -104,87 +104,87 @@ $(".layer_free").css("opacity",0);
 ;katuragi_event_1   !! 6/2 or 6/3 !!
 [image name="day,katuragi_event_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_event_1" storage="../image/day6_2.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+[image name="day,katuragi_event_1,k_ev1" storage="../image/day6_2.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;katuragi_7_2 夢イベント
 [image name="day,katuragi_7_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_7_2" storage="../image/day7_2.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[image name="day,katuragi_7_2,k_7_2" storage="../image/day7_2.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;katuragi_event_2
 [image name="day,katuragi_event_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_event_2" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+[image name="day,katuragi_event_2,k_ev2" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;katuragi_event_3 皇后様のお印入りのお茶事の招待状
 [image name="day,katuragi_event_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_event_3" storage="../image/day8_2.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[image name="day,katuragi_event_3,k_ev3" storage="../image/day8_2.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 ;katuragi_9_1
 [image name="day,katuragi_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[image name="day,katuragi_9_1,k_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 ;katuragi_9_3
 [image name="day,katuragi_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
+[image name="day,katuragi_9_3,k_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 ;katuragi_9_4
 [image name="day,katuragi_9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
+[image name="day,katuragi_9_4,k_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 ;katuragi_10_2
 [image name="day,katuragi_10_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_10_2" storage="../image/day10_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
+[image name="day,katuragi_10_1,k_10_1" storage="../image/day10_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 ;左位置2tf.x0_1 tf.x2
 ;katuragi_10_3
 [image name="day,katuragi_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
+[image name="day,katuragi_10_3,k_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;katuragi_11_1
 [image name="day,katuragi_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2_2 y=&tf.y2 visible=true wait=true]
+[image name="day,katuragi_11_1,k_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;katuragi_11_4
 [image name="day,katuragi_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x2_2 y=&tf.y3 visible=true wait=true]
+[image name="day,katuragi_11_4,k_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x2_2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;katuragi_12_1
 [image name="day,katuragi_12_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_12_1" storage="../image/day12_1.png"  layer=26 x=&tf.x2_2 y=&tf.y4 visible=true wait=true]
+[image name="day,katuragi_12_1,k_12_1" storage="../image/day12_1.png"  layer=26 x=&tf.x2_2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 ;katuragi_1_3
 [image name="day,katuragi_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
-[image name="day,katuragi_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
+[image name="day,katuragi_1_3,k_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
 ;katuragi_2_2
 [image name="day,katuragi_2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_2_2" storage="../image/day2_2.png"  layer=26 x="&tf.x2" y=&tf.y6 visible=true wait=true]
+[image name="day,katuragi_2_2,k_2_2" storage="../image/day2_2.png"  layer=26 x="&tf.x2" y=&tf.y6 visible=true wait=true]
 [wait time=10]
 ;katuragi_bazar
 [image name="day,katuragi_bazar" storage="../image/day_check.png" layer=26 x="&tf.x0_1" y=&tf.y7 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_bazar" storage="../image/day2_3.png"  layer=26 x="&tf.x2" y=&tf.y7 visible=true wait=true]
+[image name="day,katuragi_bazar,k_bz" storage="../image/day2_3.png"  layer=26 x="&tf.x2" y=&tf.y7 visible=true wait=true]
 [wait time=10]
 ;左位置3"tf.x0_2 tf.x3
 ;katuragi_sansaku1 2月2週～3月4週・散策1
 [image name="day,katuragi_sansaku1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_sansaku1" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[image name="day,katuragi_sansaku1,k_s1" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;katuragi_sansaku2 2月2週～3月4週・散策2
 [image name="day,katuragi_sansaku2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,katuragi_sansaku2" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[image name="day,katuragi_sansaku2,k_s2" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;========================================エンディング============================================================
 ;enndingボタン位置
@@ -239,6 +239,7 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 ;katuragi_event_1   !! 6/2 or 6/3 !!
 [if exp="sf.event_katuragi_event_1 == 1"]
 [iscript]
+$(".k_ev1").remove();
 $(".katuragi_event_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -250,6 +251,7 @@ $(".katuragi_event_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 [if exp="sf.event_katuragi_6_1 == 1"]
 ;katuragi_7_2 夢イベント
 [iscript]
+$(".k_7_2").remove();
 $(".katuragi_7_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -261,6 +263,7 @@ $(".katuragi_7_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 ;7_4
 [if exp="sf.event_katuragi_event_2 == 1"]
 [iscript]
+$(".k_ev2").remove();
 $(".katuragi_event_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -272,6 +275,7 @@ $(".katuragi_event_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 ;8_2
 [if exp="sf.event_katuragi_event_3 == 1"]
 [iscript]
+$(".k_ev3").remove();
 $(".katuragi_event_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -282,6 +286,7 @@ $(".katuragi_event_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brig
 [endif]
 [if exp="sf.event_katuragi_9_1 == 1"]
 [iscript]
+$(".k_9_1").remove();
 $(".katuragi_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -292,6 +297,7 @@ $(".katuragi_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [endif]
 [if exp="sf.event_katuragi_9_3 == 1"]
 [iscript]
+$(".k_9_3").remove();
 $(".katuragi_9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -302,6 +308,7 @@ $(".katuragi_9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [endif]
 [if exp="sf.event_katuragi_9_4 == 1"]
 [iscript]
+$(".k_9_4").remove();
 $(".katuragi_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -312,6 +319,7 @@ $(".katuragi_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 [endif]
 [if exp="sf.event_katuragi_10_2 == 1"]
 [iscript]
+$(".k_10_2").remove();
 $(".katuragi_10_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -322,6 +330,7 @@ $(".katuragi_10_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endif]
 [if exp="sf.event_katuragi_10_3 == 1"]
 [iscript]
+$(".k_10_3").remove();
 $(".katuragi_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -332,6 +341,7 @@ $(".katuragi_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endif]
 [if exp="sf.event_katuragi_11_1 == 1"]
 [iscript]
+$(".k_11_1").remove();
 $(".katuragi_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -342,6 +352,7 @@ $(".katuragi_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endif]
 [if exp="sf.event_katuragi_11_4 == 1"]
 [iscript]
+$(".k_11_4").remove();
 $(".katuragi_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -352,6 +363,7 @@ $(".katuragi_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endif]
 [if exp="sf.event_katuragi_12_1 == 1"]
 [iscript]
+$(".k_12_1").remove();
 $(".katuragi_12_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -362,6 +374,7 @@ $(".katuragi_12_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightn
 [endif]
 [if exp="sf.event_katuragi_1_3 == 1"]
 [iscript]
+$(".k_1_3").remove();
 $(".katuragi_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -373,6 +386,7 @@ $(".katuragi_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 
 [if exp="sf.event_katuragi_2_2 == 1"]
 [iscript]
+$(".k_2_2").remove();
 $(".katuragi_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -384,6 +398,7 @@ $(".katuragi_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightne
 ;2月3週
 [if exp="sf.event_katuragi_bazar == 1"]
 [iscript]
+$(".k_bz").remove();
 $(".katuragi_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -398,6 +413,7 @@ $(".katuragi_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'bright
 ;katuragi_sansaku1 2月2週～3月4週・散策1
 [if exp="sf.event_katuragi_sansaku1 == 1"]
 [iscript]
+$(".k_s1").remove();
 $(".katuragi_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
@@ -409,6 +425,7 @@ $(".katuragi_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'bri
 ;katuragi_sansaku2 2月2週～3月4週・散策2
 [if exp="sf.event_katuragi_sansaku2 == 1"]
 [iscript]
+$(".k_s2").remove();
 $(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
