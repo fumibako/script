@@ -829,14 +829,15 @@ localStorage.clear();
 *yes11
 [clearsysvar]
 [iscript]
-aleat("エラー防止のため再度WEBページを更新<f5>してください");
+alert("エラー防止のため再度WEBページを更新<f5>してください");
 [endscript]
 ;location.href="URL" web版でこのページをみつけた人がいると困るので書かない
 [s]
 *no11
 [clearvar]
 [iscript]
-aleat("エラー防止のため再度WEBページを更新<f5>してください");
+aleat("エラー防止のため再度WEBページを更新します");
+location.reload();
 [endscript]
 [s]
 
