@@ -89,8 +89,8 @@ $(".test").remove();
 [eval exp="tf.x3 = 510"]
 [eval exp="tf.x3_sumi = tf.x3 + 165"]
 ;左位置4
-[eval exp="tf.x0_3 = 710"]
-[eval exp="tf.x4 = 740"]
+[eval exp="tf.x0_3 = 700"]
+[eval exp="tf.x4 = 720"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
@@ -523,7 +523,7 @@ $(".sansaku_7").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku9" graphic="day4_1_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y8 exp="tf.jp_sinario='sijyou_sansaku9'"]
-[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y8 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y8 visible=true]
 [else]
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y8 visible=true wait=true]
 [wait time=10]
@@ -533,7 +533,7 @@ $(".sansaku_7").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 $(".sansaku_9").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
-[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y8 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x3_sumi" y=&tf.y8 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_10 == 1"]
