@@ -135,8 +135,6 @@ $(".layer_free").css("opacity",0);
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
-;=======================================================================================
-
 ;====================================================================================================
 ;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
 ;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
@@ -506,7 +504,7 @@ $(".sansaku_6").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 ;sansaku7
 [image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y7 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku7" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y7 exp="tf.jp_sinario='sijyou_sansaku7'"]
+[button name="btn,sijyou_sansaku7" graphic="day3_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y7 exp="tf.jp_sinario='sijyou_sansaku7'"]
 [image name="day,sansaku_7" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y7 visible=true]
 [else]
 [image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y7 visible=true wait=true]
@@ -524,7 +522,7 @@ $(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 ;sansaku9
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y8 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku9" graphic="day4_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y8 exp="tf.jp_sinario='sijyou_sansaku9'"]
+[button name="btn,sijyou_sansaku9" graphic="day4_1_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y8 exp="tf.jp_sinario='sijyou_sansaku9'"]
 [image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
 [else]
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y8 visible=true wait=true]
@@ -542,7 +540,7 @@ $(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(
 ;sansaku10
 [image name="day,sansaku_10" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku10" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku10'"]
+[button name="btn,sijyou_sansaku10" graphic="day4_1_2.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku10'"]
 [image name="day,sansaku_10" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
 [else]
 [image name="day,sansaku_10" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y1 visible=true wait=true]
@@ -557,40 +555,59 @@ $(".sansaku_10").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_11 == 1"]
-[button name="btn,sijyou_sansaku11" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku11'"]
+;sansaku11
+[image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[button name="btn,sijyou_sansaku11" graphic="day10_1_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku11'"]
 [image name="day,sansaku_11" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
 [else]
+[image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[image name="day,sansaku_11,sijyou_sansaku11" storage="../image/day10_1_1.png" layer=26 x=&tf.x4 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".sansaku_11").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
-
 [image name="day,sansaku_11" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_12 == 1"]
-[button name="btn,sijyou_sansaku12" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku12'"]
+;sansaku12
+[image name="day,sansaku_12" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true wait=true]
+[wait time=10]
+[button name="btn,sijyou_sansaku12" graphic="day10_1_2.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku12'"]
 [image name="day,sansaku_12" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
 [else]
+[image name="day,sansaku_12" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true wait=true]
+[wait time=10]
+[image name="day,sansaku_12,sijyou_sansaku12" storage="../image/day10_1_2.png" layer=26 x=&tf.x4 y=&tf.y3 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".sansaku_12").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
-
 [image name="day,sansaku_12" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_13 == 1"]
+;sansaku13
+[image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
+[wait time=10
 [button name="btn,sijyou_sansaku13" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku13'"]
 [image name="day,sansaku_13" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [else]
+[image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
+[wait time=10]
+[image name="day,sansaku_13" storage="../image/day10_1_3.png" layer=26 x=&tf.x4 y=&tf.y4 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
 [endscript]
 [wait time=10]
-
 [image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
+;===============================================================================================
 [iscript]
 $(".loding_pic").remove();
 $(".loding_pic2").remove();
