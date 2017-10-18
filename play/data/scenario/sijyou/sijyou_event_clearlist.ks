@@ -340,9 +340,9 @@ $(".day1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [button name="sijyou_1_4" graphic="day1_4.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='sijyou_1_4'"]
 [image name="day,day1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y3 visible=true]
 [else]
-[image name="day,day1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
+[image name="day,day1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,day1_4,sijyou_1_4" storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
+[image name="day,day1_4,sijyou_1_4" storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".day1_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
