@@ -90,7 +90,7 @@ $(".test").remove();
 ;左位置4
 [eval exp="tf.x0_3 = 730"]
 [eval exp="tf.x4 = 760"]
-[eval exp="tf.x4_sumi = tf4 + 50"]
+[eval exp="tf.x4_sumi = tf.x4 + 130"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
