@@ -502,23 +502,7 @@ $(".sansaku_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [image name="day,sansaku_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x3_sumi" y=&tf.y6 visible=true]
 [endif]
 
-[if exp="sf.event_sijyou_sansaku_7 == 1"]
-;sansaku7 3月
-[image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y7 visible=true wait=true]
-[wait time=10]
-[button name="btn,sijyou_sansaku7" graphic="day3_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y7 exp="tf.jp_sinario='sijyou_sansaku7'"]
-[image name="day,sansaku_7" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y7 visible=true]
-[else]
-[image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y7 visible=true wait=true]
-[wait time=10]
-[image name="day,sansaku_7,sijyou_sansaku7" storage="../image/day3_1.png" layer=26 x=&tf.x3 y=&tf.y7 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".sansaku_7").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,sansaku_7" storage="../image/day_check_mi.png" layer=26 x="&tf.x3_sumi" y=&tf.y7 visible=true]
-[endif]
+
 
 [if exp="sf.event_sijyou_sansaku_9 == 1"]
 ;sansaku9
@@ -596,7 +580,7 @@ $(".sansaku_12").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 ;sansaku13
 [image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
 [wait time=10
-[button name="btn,sijyou_sansaku13" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku13'"]
+[button name="btn,sijyou_sansaku13" graphic="day19_1_3.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku13'"]
 [image name="day,sansaku_13" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y4 visible=true]
 [else]
 [image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
@@ -608,6 +592,24 @@ $(".sansaku_13").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 [endscript]
 [wait time=10]
 [image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4_sumi" y=&tf.y4 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_sansaku_7 == 1"]
+;sansaku7 3月
+[image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y7 visible=true wait=true]
+[wait time=10]
+[button name="btn,sijyou_sansaku7" graphic="day3_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y7 exp="tf.jp_sinario='sijyou_sansaku7'"]
+[image name="day,sansaku_7" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y7 visible=true]
+[else]
+[image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y7 visible=true wait=true]
+[wait time=10]
+[image name="day,sansaku_7,sijyou_sansaku7" storage="../image/day3_1.png" layer=26 x=&tf.x4 y=&tf.y7 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".sansaku_7").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,sansaku_7" storage="../image/day_check_mi.png" layer=26 x="&tf.x4_sumi" y=&tf.y7 visible=true]
 [endif]
 ;=============================================エンディング=========================================================	
 ;enndingボタン位置		
