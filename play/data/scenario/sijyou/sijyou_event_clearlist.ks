@@ -380,6 +380,7 @@ $(".day2_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 ;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
 ;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
 ;sijyou_sansaku3.ks(9/4~10/1)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ2
+;sijyou_sansaku4.ks(11月3週→12～1月末)　事件解決後の華衣のイベント
 ;sijyou_sansaku5.ks(9月～９月末　銀座デート前 b）or(11事件解決後～12月 a)
 ;sijyou_sansaku6.ks(7~8月→8月(他攻略対象より好感度が高い)花火イベント)
 ;sijyou_sansaku7.ks(3月)香水
@@ -410,10 +411,10 @@ $(".sansaku_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_2 == 1"]
-;sansaku2
+;sansaku2 sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
 [image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku2" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku2'"]
+[button name="btn,sijyou_sansaku2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku2'"]
 [image name="day,sansaku_2" storage="../image/day_check_sumi.png" layer=26 x="tf.x3_sumi" y=&tf.y2 visible=true]
 [else]
 [image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
@@ -428,10 +429,10 @@ $(".sansaku_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_3 == 1"]
-;sansaku3
+;sansaku3 sijyou_sansaku3.ks(9/4~10/1)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ2
 [image name="day,sansaku_3" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku3" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku3'"]
+[button name="btn,sijyou_sansaku3" graphic="day9_4.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku3'"]
 [image name="day,sansaku_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y3 visible=true]
 [else]
 [image name="day,sansaku_3" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true wait=true]
@@ -445,17 +446,16 @@ $(".sansaku_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [image name="day,sansaku_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x3_sumi" y=&tf.y3 visible=true]
 [endif]
 
-;日付画像指定する
 [if exp="sf.event_sijyou_sansaku_4 == 1"]
-;sansaku4
+;sansaku4 sijyou_sansaku4.ks(11月3週→12～1月末)　事件解決後の華衣のイベント
 [image name="day,sansaku_4" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku4" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku4'"]
+[button name="btn,sijyou_sansaku4" graphic="day11_3.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku4'"]
 [image name="day,sansaku_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y4 visible=true]
 [else]
 [image name="day,sansaku_4" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_4,sijyou_sansaku4" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y4 visible=true wait=true]
+[image name="day,sansaku_4,sijyou_sansaku4" storage="../image/day11_3.png" layer=26 x=&tf.x3 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".sansaku_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -465,7 +465,7 @@ $(".sansaku_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_5 == 1"]
-;sansaku5
+;sansaku5 sijyou_sansaku5.ks(9月～９月末　銀座デート前 b）or(11事件解決後～12月 a)
 [image name="day,sansaku_5" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku5" graphic="day9_1_2.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y5 exp="tf.jp_sinario='sijyou_sansaku5'"]
