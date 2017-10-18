@@ -87,11 +87,11 @@ $(".test").remove();
 ;左位置3
 [eval exp="tf.x0_2 = 490"]
 [eval exp="tf.x3 = 510"]
-[eval exp="tf.x3_sumi = tf.x3 + 165"]
+[eval exp="tf.x3_sumi = tf.x3 + 175"]
 ;左位置4
-[eval exp="tf.x0_3 = 710"]
-[eval exp="tf.x4 = 730"]
-[eval exp="tf.x4_sumi = tf.x4 + 150"]
+[eval exp="tf.x0_3 = 725"]
+[eval exp="tf.x4 = 745"]
+[eval exp="tf.x4_sumi = tf.x4 + 160"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
 [eval exp="tf.y1 = 130"]
