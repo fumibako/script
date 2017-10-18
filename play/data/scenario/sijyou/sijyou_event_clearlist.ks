@@ -86,7 +86,7 @@ $(".test").remove();
 [eval exp="tf.x2 = 265"]
 ;左位置3
 [eval exp="tf.x0_2 = 490"]
-[eval exp="tf.x3 = 510"]
+[eval exp="tf.x3 = 505"]
 [eval exp="tf.x3_sumi = tf.x3 + 175"]
 ;左位置4
 [eval exp="tf.x0_3 = 725"]
@@ -137,19 +137,6 @@ $(".layer_free").css("opacity",0);
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
-;====================================================================================================
-;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
-;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
-;sijyou_sansaku3.ks(9/4~10/1)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ2
-;sijyou_sansaku5.ks(9月～９月末　銀座デート前 b）or(11事件解決後～12月 a)
-;sijyou_sansaku6.ks(7~8月→8月(他攻略対象より好感度が高い)花火イベント)
-;sijyou_sansaku7.ks(3月)香水
-;8ない。（旧華衣おまけ）
-;sijyou_sansaku9.ks(見合い前なら一回発生子供達　気力が微多めに回復)
-;sijyou_sansaku10.ks(いつでも→四条ルートのみ　四条の好感度が高い攻略のヒント)
-;sijyou_sansaku11.ks(四条ルートのみ、(10月~2月)九月×　三月×　
-;sijyou_sansaku12.ks(10月~2月)九月×　三月×　
-;sijyou_sansaku13.ks(10月~2月)九月×　三月×
 ;====================================================================================================
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname day
 ;====================================================================================================
@@ -389,6 +376,19 @@ $(".day2_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [wait time=10]
 [image name="day,day2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+155" y=&tf.y5 visible=true]
 [endif]
+;====================================================================================================
+;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
+;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
+;sijyou_sansaku3.ks(9/4~10/1)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ2
+;sijyou_sansaku5.ks(9月～９月末　銀座デート前 b）or(11事件解決後～12月 a)
+;sijyou_sansaku6.ks(7~8月→8月(他攻略対象より好感度が高い)花火イベント)
+;sijyou_sansaku7.ks(3月)香水
+;8ない。（旧華衣おまけ）
+;sijyou_sansaku9.ks(見合い前なら一回発生子供達　気力が微多めに回復)
+;sijyou_sansaku10.ks(いつでも→四条ルートのみ　四条の好感度が高い攻略のヒント)
+;sijyou_sansaku11.ks(四条ルートのみ、(10月~2月)九月×　三月×　
+;sijyou_sansaku12.ks(10月~2月)九月×　三月×　
+;sijyou_sansaku13.ks(10月~2月)九月×　三月×
 ;====================================================================================================
 ;判定処理をまとめます 散策
 [if exp="sf.event_sijyou_sansaku == 1"]
