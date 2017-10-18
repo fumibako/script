@@ -85,8 +85,8 @@ $(".test").remove();
 [eval exp="tf.x0_1 = 250"]
 [eval exp="tf.x2 = 265"]
 ;左位置3
-[eval exp="tf.x0_2 = 510"]
-[eval exp="tf.x3 = 540"]
+[eval exp="tf.x0_2 = 500"]
+[eval exp="tf.x3 = 530"]
 ;左位置4
 [eval exp="tf.x0_3 = 730"]
 [eval exp="tf.x4 = 760"]
