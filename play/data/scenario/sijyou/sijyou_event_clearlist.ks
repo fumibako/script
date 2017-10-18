@@ -132,72 +132,72 @@ $(".layer_free").css("opacity",0);
 ;名前表示
 [image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=35 visible=true]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=25 x=600 y=34 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
 ;=======================================================================================
 ;四条6_1
-[image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
+[image name="day,day6_1,sijyou_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;一度、全ての日付の画像を暗めに表示します。プリロード幕つける
 [image name="day,day6_1,sijyou_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;四条9_1
-[image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
+[image name="day,day9_1,sijyou_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [image name="day,day9_1,sijyou_9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;四条9_2
-[image name="day,day9_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
+[image name="day,day9_2,sijyou_9_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [image name="day,day9_2,sijyou_9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;四条9_3
-[image name="day,day9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
+[image name="day,day9_3,sijyou_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [image name="day,day9_3,sijyou_9_3" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 ;四条9_4
-[image name="day,day9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true wait=true]
+[image name="day,day9_4,sijyou_9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [image name="day,day9_4,sijyou_9_4" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 ;四条10_1
-[image name="day,day10_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true wait=true]
+[image name="day,day10_1,sijyou_10_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [image name="day,day10_1,sijyou_10_1" storage="../image/day10_1.png" layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 ;四条10_3"
-[image name="day,day10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true wait=true]
+[image name="day,day10_3,sijyou_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 [image name="day,day10_3,sijyou_10_3" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 ;四条11_1"
-[image name="day,day11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
+[image name="day,day11_1,sijyou_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 [image name="day,day11_1,sijyou_11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1_2 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 ;四条1_1"
-[image name="day,day1_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true wait=true]
+[image name="day,day1_1,sijyou_1_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [image name="day,day1_1,sijyou_1_1" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;四条1_3"
-[image name="day,day1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
+[image name="day,day1_3,sijyou_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [image name="day,day1_3,sijyou_1_3" storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;四条1_4"
-[image name="day,day1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
+[image name="day,day1_4,sijyou_1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [image name="day,day1_4,sijyou_1_4" storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;四条2_1"
-[image name="day,day2_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true wait=true]
+[image name="day,day2_1,sijyou_2_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [image name="day,day2_1,sijyou_2_1" storage="../image/day2_1.png" layer=26 x=&tf.x2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 ;四条2_2"
-[image name="day,day2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
+[image name="day,day2_2,sijyou_2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [image name="day,day2_2,sijyou_2_2" storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
 [wait time=10]
@@ -205,104 +205,63 @@ $(".layer_free").css("opacity",0);
 ;sansaku1
 [image name="day,sansaku_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_1,sijyou_sansaku1" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[image name="day,sansaku_1" storage="../image/day9_1_1.png" layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;sansaku2
 [image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_2,sijyou_sansaku2" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[image name="day,sansaku_2" storage="../image/day9_2.png" layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;sansaku3
 [image name="day,sansaku_3" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_3,sijyou_sansaku3" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y3 visible=true wait=true]
+[image name="day,sansaku_3" storage="../image/day9_4.png" layer=26 x=&tf.x3 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;sansaku4
 [image name="day,sansaku_4" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_4,sijyou_sansaku4" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y4 visible=true wait=true]
+[image name="day,sansaku_4" storage="../image/day12_1.png" layer=26 x=&tf.x3 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 ;sansaku5
 [image name="day,sansaku_5" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y5 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_5,sijyou_sansaku5" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y5 visible=true wait=true]
+[image name="day,sansaku_5" storage="../image/day9_1_2.png" layer=26 x=&tf.x3 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 ;sansaku6
 [image name="day,sansaku_6" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_6,sijyou_sansaku6" storage="../image/day9_1.png" layer=26 x=&tf.x3 y=&tf.y6 visible=true wait=true]
+[image name="day,sansaku_6" storage="../image/day8_1.png" layer=26 x=&tf.x3 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 ;sansaku7
-[image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y1 visible=true wait=true]
+[image name="day,sansaku_7" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y7 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_7,sijyou_sansaku7" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y1 visible=true wait=true]
+[image name="day,sansaku_7" storage="../image/day3_1.png" layer=26 x=&tf.x3 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 ;sansaku9
-[image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y2 visible=true wait=true]
+[image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y8 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_9,sijyou_sansaku9" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y2 visible=true wait=true]
+[image name="day,sansaku_9" storage="../image/day4_1_1.png" layer=26 x=&tf.x3 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 ;sansaku10
-[image name="day,sansaku_10" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true wait=true]
+[image name="day,sansaku_10" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_10,sijyou_sansaku10" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y3 visible=true wait=true]
+[image name="day,sansaku_10" storage="../image/day4_1_2.png" layer=26 x=&tf.x4 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;sansaku11
-[image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
+[image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_11,sijyou_sansaku11" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y4 visible=true wait=true]
+[image name="day,sansaku_11" storage="../image/day10_1_1.png" layer=26 x=&tf.x4 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 ;sansaku12
-[image name="day,sansaku_12" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y5 visible=true wait=true]
+[image name="day,sansaku_12" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_12" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y5 visible=true wait=true]
+[image name="day,sansaku_12" storage="../image/day10_1_2.png" layer=26 x=&tf.x4 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 ;sansaku13
-[image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y6 visible=true wait=true]
+[image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_13" storage="../image/day9_1.png" layer=26 x=&tf.x4 y=&tf.y6 visible=true wait=true]
+[image name="day,sansaku_13" storage="../image/day10_1_3.png" layer=26 x=&tf.x4 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-;========================================エンディング============================================================
-;enndingボタン位置
-;enndingボタン位置
-[eval exp="tf.x5 = 580"]
-[eval exp="tf.x6 = tf.x5 + 200"]
-[eval exp="tf.x7 = tf.x5 + 140"]
-[eval exp="tf.x8 = tf.x6 + 130"]
-[eval exp="tf.end1_y = tf.y7+30"]
-[eval exp="tf.end2_y = tf.y8+10"]
-
-[if exp="sf.ED_sijyou_bad == 1"]
-[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_10_3_badED'"]
-[image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
-[else]
-[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
-[wait time=10]
-[image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
-[wait time=10]
-[endif]
-
-[if exp="sf.ED_sijyou_normal == 1"]
-[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_3_4_goodED'"]
-[image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[else]
-[image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[image name="ending3" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[endif]
-
-[if exp="sf.ED_sijyou_good == 1"]
-[button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_3_4_epilogue_goodED'"]
-[image name="ending4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[else]
-[image name="day,ending4" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[endif]
 ;====================================================================================================
 ;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
 ;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
@@ -330,7 +289,6 @@ $(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [iscript]
 $(".day6_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_6_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
@@ -342,7 +300,6 @@ $(".sijyou_6_1").remove();
 [if exp="sf.event_sijyou_9_1 == 1"]
 [iscript]
 $(".day9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_9_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_9_1" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='sijyou_9_1'"]
@@ -354,7 +311,6 @@ $(".sijyou_9_1").remove();
 [if exp="sf.event_sijyou_9_2 == 1"]
 [iscript]
 $(".day9_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_9_2").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_9_2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='sijyou_9_2'"]
@@ -366,7 +322,6 @@ $(".sijyou_9_2").remove();
 [if exp="sf.event_sijyou_9_3 == 1"]
 [iscript]
 $(".day9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_9_3").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_9_3" graphic="day9_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='sijyou_9_3'"]
@@ -378,7 +333,6 @@ $(".sijyou_9_3").remove();
 [if exp="sf.event_sijyou_9_4 == 1"]
 [iscript]
 $(".day9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_9_4").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_9_4" graphic="day9_4.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='sijyou_9_4'"]
@@ -390,7 +344,6 @@ $(".sijyou_9_4").remove();
 [if exp="sf.event_sijyou_10_1 == 1"]
 [iscript]
 $(".day10_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_10_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_10_1" graphic="day10_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='sijyou_10_1'"]
@@ -402,7 +355,6 @@ $(".sijyou_10_1").remove();
 [if exp="sf.event_sijyou_10_3 == 1"]
 [iscript]
 $(".day10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_10_3").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_10_3" graphic="day10_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='sijyou_10_3'"]
@@ -414,7 +366,6 @@ $(".sijyou_10_3").remove();
 [if exp="sf.event_sijyou_11_1 == 1"]
 [iscript]
 $(".day11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_11_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_11_1" graphic="day11_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='sijyou_11_1'"]
@@ -426,7 +377,6 @@ $(".sijyou_11_1").remove();
 [if exp="sf.event_sijyou_1_1 == 1"]
 [iscript]
 $(".day1_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_1_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_1_1" graphic="day1_1.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='sijyou_1_1'"]
@@ -438,7 +388,6 @@ $(".sijyou_1_1").remove();
 [if exp="sf.event_sijyou_1_3 == 1"]
 [iscript]
 $(".day1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_1_3").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_1_3" graphic="day1_3.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='sijyou_1_3'"]
@@ -450,7 +399,6 @@ $(".sijyou_1_3").remove();
 [if exp="sf.event_sijyou_1_4 == 1"]
 [iscript]
 $(".day1_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_1_4").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_1_4" graphic="day1_4.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='sijyou_1_4'"]
@@ -462,7 +410,6 @@ $(".sijyou_1_4").remove();
 [if exp="sf.event_sijyou_2_1 == 1"]
 [iscript]
 $(".day2_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_2_1").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_2_1" graphic="day2_1.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y4 exp="tf.jp_sinario='sijyou_2_1'"]
@@ -474,7 +421,6 @@ $(".sijyou_2_1").remove();
 [if exp="sf.event_sijyou_2_2_bazar == 1"]
 [iscript]
 $(".day2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_2_2").remove();
 [endscript]
 [wait time=10]
 [button name="sijyou_2_2" graphic="day2_2.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='sijyou_2_2_bazar_1'"]
@@ -487,7 +433,6 @@ $(".sijyou_2_2").remove();
 [if exp="sf.event_sijyou_sansaku == 1"]
 [iscript]
 $(".sansaku_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku1").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku'"]
@@ -499,7 +444,6 @@ $(".sijyou_sansaku1").remove();
 [if exp="sf.event_sijyou_sansaku_2 == 1"]
 [iscript]
 $(".sansaku_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku2").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku2" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku2'"]
@@ -511,7 +455,6 @@ $(".sijyou_sansaku2").remove();
 [if exp="sf.event_sijyou_sansaku_3 == 1"]
 [iscript]
 $(".sansaku_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku3").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku3" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku3'"]
@@ -523,7 +466,6 @@ $(".sijyou_sansaku3").remove();
 [if exp="sf.event_sijyou_sansaku_4 == 1"]
 [iscript]
 $(".sansaku_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku4").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku4" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku4'"]
@@ -535,7 +477,6 @@ $(".sijyou_sansaku4").remove();
 [if exp="sf.event_sijyou_sansaku_5 == 1"]
 [iscript]
 $(".sansaku_5").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku5").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku5" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y5 exp="tf.jp_sinario='sijyou_sansaku5'"]
@@ -547,7 +488,6 @@ $(".sijyou_sansaku5").remove();
 [if exp="sf.event_sijyou_sansaku_6 == 1"]
 [iscript]
 $(".sansaku_6").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku6").remove();
 [endscript]
 [wait time=10]
 [button name="btn,sijyou_sansaku6" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku6'"]
@@ -559,85 +499,68 @@ $(".sijyou_sansaku6").remove();
 [if exp="sf.event_sijyou_sansaku_7 == 1"]
 [iscript]
 $(".sansaku_7").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku7").remove();
 [endscript]
 [wait time=10]
-[button name="btn,sijyou_sansaku7" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku7'"]
-[image name="day,sansaku_7" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
+[button name="btn,sijyou_sansaku7" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y7 exp="tf.jp_sinario='sijyou_sansaku7'"]
+[image name="day,sansaku_7" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y7 visible=true]
 [else]
-[image name="day,sansaku_7" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
+[image name="day,sansaku_7" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y7 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_9 == 1"]
 [iscript]
 $(".sansaku_9").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku9").remove();
 [endscript]
 [wait time=10]
-[button name="btn,sijyou_sansaku9" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku9'"]
-[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
+[button name="btn,sijyou_sansaku9" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y8 exp="tf.jp_sinario='sijyou_sansaku9'"]
+[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
 [else]
-[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+140" y=&tf.y8 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_10 == 1"]
 [iscript]
 $(".sansaku_10").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku10").remove();
 [endscript]
 [wait time=10]
-[button name="btn,sijyou_sansaku10" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku10'"]
-[image name="day,sansaku_10" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
+[button name="btn,sijyou_sansaku10" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y1 exp="tf.jp_sinario='sijyou_sansaku10'"]
+[image name="day,sansaku_10" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
 [else]
-[image name="day,sansaku_10" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
+[image name="day,sansaku_10" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y1 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_11 == 1"]
 [iscript]
 $(".sansaku_11").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku11").remove();
 [endscript]
 [wait time=10]
-[button name="btn,sijyou_sansaku11" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku11'"]
-[image name="day,sansaku_11" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[button name="btn,sijyou_sansaku11" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku11'"]
+[image name="day,sansaku_11" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
 [else]
-[image name="day,sansaku_11" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
+[image name="day,sansaku_11" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y2 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_12 == 1"]
 [iscript]
 $(".sansaku_12").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku12").remove();
 [endscript]
 [wait time=10]
-[button name="btn,sijyou_sansaku12" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y5 exp="tf.jp_sinario='sijyou_sansaku12'"]
-[image name="day,sansaku_12" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y5 visible=true]
+[button name="btn,sijyou_sansaku12" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku12'"]
+[image name="day,sansaku_12" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
 [else]
-[image name="day,sansaku_12" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y5 visible=true]
+[image name="day,sansaku_12" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y3 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_13 == 1"]
 [iscript]
 $(".sansaku_13").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-$(".sijyou_sansaku13").remove();
 [endscript]
 [wait time=10]
-[button name="btn,sijyou_sansaku13" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku13'"]
-[image name="day,sansaku_13" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y6 visible=true]
+[button name="btn,sijyou_sansaku13" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku13'"]
+[image name="day,sansaku_13" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [else]
-[image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y6 visible=true]
+[image name="day,sansaku_13" storage="../image/day_check_mi.png" layer=26 x="&tf.x4+130" y=&tf.y4 visible=true]
 [endif]
-;=============================================エンディングタイトル=========================================================
-[if exp="sf.ED_sijyou_normal == 1 || sf.ED_sijyou_good == 1 && sf.ED_sijyou_bad == 1"]
-[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
-[else]
-[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
-[iscript]
-$(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60%)','-moz-filter': 'brightness(60%)','-o-filter': 'brightness(60%)','-ms-filter': 'brightness(60%)'});
-[endscript]
-[wait time=10]
-[endif]
-;==========================================================================================
 [iscript]
 $(".loding_pic").remove();
 $(".loding_pic2").remove();
@@ -645,9 +568,6 @@ $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
 [s]
-
-*sijyou_sinario_ed
-;必要な処理がれば追記
 
 *sijyou_sinario
 [cm]
