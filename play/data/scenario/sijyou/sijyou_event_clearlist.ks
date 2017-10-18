@@ -413,7 +413,7 @@ $(".sansaku_6").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 
 [if exp="sf.event_sijyou_sansaku == 1"]
 ;sansaku1
-[image name="day,sansaku_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
+[image name="day,sansaku_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku" graphic="day9_1_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku'"]
 [image name="day,sansaku_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y2 visible=true]
@@ -546,7 +546,7 @@ $(".sansaku_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 ;sansaku13
 [image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true wait=true]
 [wait time=10
-[button name="btn,sijyou_sansaku13" graphic="day19_1_3.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku13'"]
+[button name="btn,sijyou_sansaku13" graphic="day10_1_3.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku13'"]
 [image name="day,sansaku_13" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y3 visible=true]
 [else]
 [image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true wait=true]
@@ -563,7 +563,7 @@ $(".sansaku_13").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 ;tf.x0_3 /tf.x4 /tf.x4_sumi
 [if exp="sf.event_sijyou_sansaku_9 == 1"]
 ;sansaku9　(見合い前なら一回発生子供達　気力が微多めに回復)
-[image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y5 visible=true wait=true]
+[image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku9" graphic="day4_1_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku9'"]
 [image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y4 visible=true]
