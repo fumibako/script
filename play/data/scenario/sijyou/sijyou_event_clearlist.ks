@@ -486,20 +486,20 @@ $(".sansaku_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 
 [if exp="sf.event_sijyou_sansaku_11 == 1"]
 ;sansaku11　　10/1_1
-[image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y2 visible=true wait=true]
+[image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku11" graphic="day10_1_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku11'"]
-[image name="day,sansaku_11" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y6 visible=true]
+[button name="btn,sijyou_sansaku11" graphic="day10_1_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku11'"]
+[image name="day,sansaku_11" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y6 visible=true]
 [else]
-[image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y6 visible=true wait=true]
+[image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_11,sijyou_sansaku11" storage="../image/day10_1_1.png" layer=26 x=&tf.x4 y=&tf.y6 visible=true wait=true]
+[image name="day,sansaku_11,sijyou_sansaku11" storage="../image/day10_1_1.png" layer=26 x=&tf.x3 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".sansaku_11").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
-[image name="day,sansaku_11" storage="../image/day_check_mi.png" layer=26 x="&tf.x4_sumi" y=&tf.y6 visible=true]
+[image name="day,sansaku_11" storage="../image/day_check_mi.png" layer=26 x="&tf.x3_sumi" y=&tf.y6 visible=true]
 [endif]
 
 ;折り返し地点;左位置4 tf.x0_3 /tf.x4 /tf.x4_sumi
