@@ -332,16 +332,20 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [endscript]
 [wait time=10]
 [endif]
+;========================================エンディング============================================================
 [if exp="sf.ED_zaizen_bad2 == 1"]
 [button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_11_1_bad'"]
 [image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [else]
 [image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
+[iscript]
+$(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
 [endif]
-;========================================エンディング============================================================
+
 [if exp="sf.ED_zaizen_bad1 == 1"]
 [button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x6" text="BAD1" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_11_bad2'"]
 [image name="ending2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end1_y" visible=true wait=true]
