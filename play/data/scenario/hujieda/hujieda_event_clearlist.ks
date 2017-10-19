@@ -380,21 +380,33 @@ $(".hujieda_2_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 ;====================================================================================================
 ;判定処理をまとめます 散策
 ;2_3
+;sf.event_hujieda_sansaku1 2/3
+[image name="day,hujieda_sansaku" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_hujieda_sansaku == 1"]
 [button name="hujieda_sansaku" graphic="day2_3.png" target="hujieda_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='hujieda_sansaku1'"]
 [image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true wait=true]
 [else]
+;左位置3 tf.x0_2 tf.x3 
+[image name="day,hujieda_sansaku,h_s1" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
 [image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true wait=true]
 [endif]
+
 ;3_2
+;sf.event_hujieda_bazaar
+[image name="day,hujieda_bazaar" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_hujieda_bazaar == 1"]
 [button name="hujieda_bazaar" graphic="day3_2.png" target="hujieda_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='hujieda_bazaar_1'"]
 [image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true wait=true]
 [else]
+[image name="day,hujieda_bazaar,h_bz" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".hujieda_bazaar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
