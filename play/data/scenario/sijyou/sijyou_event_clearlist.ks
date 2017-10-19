@@ -135,10 +135,10 @@ $(".layer_free").css("opacity",0);
 ;名前表示
 [image name="c_name1" storage="../image/name_sijyou.png" layer=26 x=250 y=35 visible=true]
 ;達成率
-[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=35 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=30 x=650 y=35 color=snow]
+[ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=34 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=25 x=650 y=35 color=snow]
 ;====================================================================================================
-;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname day
+;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
 *common
 ;判定処理をまとめます
