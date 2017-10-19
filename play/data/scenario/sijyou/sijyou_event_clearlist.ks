@@ -585,7 +585,7 @@ $(".sansaku_13").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 ;sansaku4 sijyou_sansaku4.ks(11月3週→12～1月末)　事件解決後の華衣のイベント
 [image name="day,sansaku_4" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku4" graphic="day11_3.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku4'"]
+[button name="btn,sijyou_sansaku4" graphic="day11_3.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku4'"]
 [image name="day,sansaku_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y3 visible=true]
 [else]
 [image name="day,sansaku_4" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y3 visible=true wait=true]
