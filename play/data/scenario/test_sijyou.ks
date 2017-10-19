@@ -746,6 +746,7 @@ sf.replay_katuraginomiya=1;
 *hji_2
 *hji_3
 *hji_4
+*hji_5
 [iscript]
 sf.replay_hujieda=1;
 [endscript]
