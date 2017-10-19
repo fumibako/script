@@ -435,7 +435,7 @@ $(".sansaku_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku9" graphic="day4_1_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku9'"]
-[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y4 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y3 visible=true]
 [else]
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
@@ -451,7 +451,7 @@ $(".sansaku_9").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 ;左位置3 tf.x0_2/tf.x3/tf.x3_sumi
 [if exp="sf.event_sijyou_sansaku_10 == 1"]
 ;sansaku10　sijyou_sansaku10.ks(四条ルートのみ　四条の好感度が高い攻略のヒント)
-[image name="day,sansaku_10" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y5 visible=true wait=true]
+[image name="day,sansaku_10" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku10" graphic="day4_1_2.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku10'"]
 [image name="day,sansaku_10" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y4 visible=true]
@@ -469,7 +469,7 @@ $(".sansaku_10").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 
 [if exp="sf.event_sijyou_sansaku_5 == 1"]
 ;sansaku5 sijyou_sansaku5.ks(9月～９月末　銀座デート前 b）or(11事件解決後～12月 a)
-[image name="day,sansaku_5" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true wait=true]
+[image name="day,sansaku_5" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku5" graphic="day9_1_2.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y5 exp="tf.jp_sinario='sijyou_sansaku5'"]
 [image name="day,sansaku_5" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y5 visible=true]
