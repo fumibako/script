@@ -324,7 +324,7 @@ $(".day1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 
 [if exp="sf.event_sijyou_1_4 == 1"]
 ;四条1_4"
-[image name="day,day1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
+[image name="day,day1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [button name="sijyou_1_4" graphic="day1_4.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='sijyou_1_4'"]
 [image name="day,day1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+155" y=&tf.y3 visible=true]
@@ -585,7 +585,7 @@ $(".sansaku_13").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 ;tf.x0_3 /tf.x4 /tf.x4_sumi
 [if exp="sf.event_sijyou_sansaku_4 == 1"]
 ;sansaku4 sijyou_sansaku4.ks(11月3週→12～1月末)　事件解決後の華衣のイベント
-[image name="day,sansaku_4" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
+[image name="day,sansaku_4" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku4" graphic="day11_3.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y5 exp="tf.jp_sinario='sijyou_sansaku4'"]
 [image name="day,sansaku_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y5 visible=true]
