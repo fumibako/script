@@ -412,7 +412,7 @@ $(".sansaku_6").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [endif]
 
 [if exp="sf.event_sijyou_sansaku == 1"]
-;sansaku1
+;sansaku1　(9月1週~9月4週)(銀座デート前まで)に1度だけ発生
 [image name="day,sansaku_1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku" graphic="day9_1_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku'"]
@@ -435,7 +435,7 @@ $(".sansaku_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku9" graphic="day4_1_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y3 exp="tf.jp_sinario='sijyou_sansaku9'"]
-[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y3 visible=true]
+[image name="day,sansaku_9" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y3 visible=true]
 [else]
 [image name="day,sansaku_9" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
@@ -489,18 +489,18 @@ $(".sansaku_5").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 ;sansaku2 sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
 [image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku2'"]
-[image name="day,sansaku_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y4 visible=true]
+[button name="btn,sijyou_sansaku2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku2'"]
+[image name="day,sansaku_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y6 visible=true]
 [else]
-[image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true wait=true]
+[image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y6 visible=true wait=true]
 [wait time=10]
-[image name="day,sansaku_2,sijyou_sansaku2" storage="../image/day9_2.png" layer=26 x=&tf.x3 y=&tf.y4 visible=true wait=true]
+[image name="day,sansaku_2,sijyou_sansaku2" storage="../image/day9_2.png" layer=26 x=&tf.x3 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".sansaku_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
-[image name="day,sansaku_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3_sumi" y=&tf.y4 visible=true]
+[image name="day,sansaku_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3_sumi" y=&tf.y6 visible=true]
 [endif]
 
 [if exp="sf.event_sijyou_sansaku_3 == 1"]
