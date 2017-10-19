@@ -489,7 +489,7 @@ $(".sansaku_5").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 
 [if exp="sf.event_sijyou_sansaku_2 == 1"]
 ;sansaku2 sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
-[image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y4 visible=true wait=true]
+[image name="day,sansaku_2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [button name="btn,sijyou_sansaku2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y6 exp="tf.jp_sinario='sijyou_sansaku2'"]
 [image name="day,sansaku_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3_sumi" y=&tf.y6 visible=true]
@@ -505,7 +505,9 @@ $(".sansaku_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 [image name="day,sansaku_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3_sumi" y=&tf.y6 visible=true]
 [endif]
 
-;折り返し地点;左位置4 tf.x0_3 /tf.x4 /tf.x4_sumi
+;折り返し地点
+
+;左位置4 tf.x0_3 /tf.x4 /tf.x4_sumi
 [if exp="sf.event_sijyou_sansaku_3 == 1"]
 ;sansaku3 sijyou_sansaku3.ks(9/4~10/1)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ2
 [image name="day,sansaku_3" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y1 visible=true wait=true]
@@ -528,7 +530,7 @@ $(".sansaku_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 ;sansaku11　　10/1_1
 [image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x="&tf.x0_3" y="&tf.y2" visible=true wait=true]
 [wait time=10]
-[button name="btn,sijyou_sansaku11" graphic="day10_1_1.png" target="sijyou_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku11'"]
+[button name="btn,sijyou_sansaku11" graphic="day10_1_1.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y2 exp="tf.jp_sinario='sijyou_sansaku11'"]
 [image name="day,sansaku_11" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y2 visible=true]
 [else]
 [image name="day,sansaku_11" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y2 visible=true wait=true]
