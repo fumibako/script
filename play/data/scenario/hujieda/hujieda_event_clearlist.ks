@@ -439,6 +439,9 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [wait time=10]
 [image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
+[iscript]
+$(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [endif]
 
 [if exp="sf.ED_hujieda_bad2 == 1"]
@@ -449,6 +452,9 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [wait time=10]
 [image name="ending2" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
+[iscript]
+$(".ending2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [endif]
 
 [if exp="sf.ED_hujieda_normal == 1"]
@@ -460,6 +466,9 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [wait time=10]
 [image name="ending3" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
+[iscript]
+$(".ending3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [endif]
 
 [if exp="sf.ED_hujieda_good == 1"]
@@ -471,6 +480,9 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [wait time=10]
 [image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
+[iscript]
+$(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [endif]
 ;====================================================================================================
 [iscript]
