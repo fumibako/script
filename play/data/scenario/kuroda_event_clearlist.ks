@@ -115,10 +115,15 @@ $(".layer_free").css("opacity",0);
 ;=====================================================================================================
 *common
 ;判定処理をまとめます
+;左位置 tf.x0 tf.x1
+;6月1週 sf.event_kuroda_event_6_1
+[image name="day,kuroda_6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_event_6_1 == 1"]
 [button name="kuroda_6_1" graphic="day6_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='kuroda_6_2'"]
 [image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [else]
+[image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [iscript]
 $(".kuroda_6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -126,11 +131,15 @@ $(".kuroda_6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 [image name="day,kuroda_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [endif]
 
+;9月1週 sf.event_kuroda_9_1
+[image name="day,kuroda_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_9_1 == 1"]
-
 [button name="kuroda_9_1" graphic="day9_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='kuroda_9_1'"]
 [image name="day,kuroda_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [else]
+[image name="day,kuroda_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -138,11 +147,15 @@ $(".kuroda_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 [image name="day,kuroda_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [endif]
 
+;9月3週 sf.event_kuroda_9_3
+[image name="day,kuroda_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_9_3 == 1"]
-
 [button name="kuroda_9_3" graphic="day9_3.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='kuroda_9_3'"]
 [image name="day,kuroda_9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
 [else]
+[image name="day,kuroda_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -150,11 +163,15 @@ $(".kuroda_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 [image name="day,kuroda_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
 [endif]
 
+;9月4週 sf.event_kuroda_9_4
+[image name="day,kuroda_9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_9_4 == 1"]
-
 [button name="kuroda_9_4" graphic="day9_4.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='kuroda_9_4'"]
 [image name="day,kuroda_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
 [else]
+[image name="day,kuroda_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -162,11 +179,15 @@ $(".kuroda_9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 [image name="day,kuroda_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
 [endif]
 
+;10月3週 sf.event_kuroda_10_3
+[image name="day,kuroda_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_10_3 == 1"]
-
 [button name="kuroda_10_3" graphic="day10_3.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='kuroda_10_3'"]
 [image name="day,kuroda_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
 [else]
+[image name="day,kuroda_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -174,11 +195,15 @@ $(".kuroda_10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [image name="day,kuroda_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
 [endif]
 
+;10月4週 sf.event_kuroda_10_4
+[image name="day,kuroda_10_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_10_4 == 1"]
-
 [button name="kuroda_10_4" graphic="day10_4.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='kuroda_10_4'"]
 [image name="day,kuroda_10_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
 [else]
+[image name="day,kuroda_10_4" storage="../image/day10_4.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_10_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -186,11 +211,15 @@ $(".kuroda_10_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [image name="day,kuroda_10_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
 [endif]
 
+;11月1週 sf.event_kuroda_11_1
+[image name="day,kuroda_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_11_1 == 1"]
-
 [button name="kuroda_11_1" graphic="day11_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='kuroda_11_1'"]
 [image name="day,kuroda_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y7 visible=true]
 [else]
+[image name="day,kuroda_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -198,10 +227,15 @@ $(".kuroda_11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [image name="day,kuroda_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y7 visible=true]
 [endif]
 
+;11月2週 sf.event_kuroda_11_2
+[image name="day,kuroda_11_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_11_2 == 1"]
 [button name="kuroda_11_2" graphic="day11_2.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='kuroda_11_2'"]
 [image name="day,kuroda_11_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y8 visible=true]
 [else]
+[image name="day,kuroda_11_2" storage="../image/day11_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_11_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -209,10 +243,15 @@ $(".kuroda_11_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [image name="day,kuroda_11_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y8 visible=true]
 [endif]
 
+;左位置2 tf.x0_1 tf.x2;二桁 tf.x2_2
+;11月3週 sf.event_kuroda_11_3 
+[image name="day,kuroda_11_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_11_3 == 1"]
 [button name="kuroda_11_3" graphic="day11_3.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='kuroda_11_3'"]
 [image name="day,kuroda_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true]
 [else]
+[image name="day,kuroda_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [iscript]
 $(".kuroda_11_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -220,10 +259,15 @@ $(".kuroda_11_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [image name="day,kuroda_11_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true]
 [endif]
 
+;11月4週 sf.event_kuroda_11_4
+[image name="day,kuroda_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 [if exp=" sf.event_kuroda_11_4 == 1"]
 [button name="kuroda_11_4" graphic="day11_4.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='kuroda_11_4'"]
 [image name="day,kuroda_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true]
 [else]
+[image name="day,kuroda_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_11_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -231,10 +275,15 @@ $(".kuroda_11_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [image name="day,kuroda_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true]
 [endif]
 
+;12月2週 sf.event_kuroda_12_2
+[image name="day,kuroda_12_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_12_2 == 1"]
 [button name="kuroda_12_2" graphic="day12_2.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='kuroda_12_2'"]
 [image name="day,kuroda_12_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true]
 [else]
+[image name="day,kuroda_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_12_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -242,10 +291,15 @@ $(".kuroda_12_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [image name="day,kuroda_12_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true]
 [endif]
 
+;12月3週 sf.event_kuroda_12_3
+[image name="day,kuroda_12_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_12_3 == 1"]
 [button name="kuroda_12_3" graphic="day12_3.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y4 exp="tf.jp_sinario='kuroda_12_3'"]
 [image name="day,kuroda_12_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y4 visible=true]
 [else]
+[image name="day,kuroda_12_3" storage="../image/day12_3.png"  layer=26 x=&tf.x2 y=&tf.y4 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_12_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -253,10 +307,15 @@ $(".kuroda_12_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [image name="day,kuroda_12_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y4 visible=true]
 [endif]
 
+;1月1週 sf.event_kuroda_1_1
+[image name="day,kuroda_1_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_1_1 == 1"]
 [button name="kuroda_1_1" graphic="day1_1.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='kuroda_1_1'"]
 [image name="day,kuroda_1_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y5 visible=true]
 [else]
+[image name="day,kuroda_1_1" storage="../image/day1_1.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_1_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -264,10 +323,15 @@ $(".kuroda_1_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 [image name="day,kuroda_1_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y5 visible=true]
 [endif]
 
+;1月4週 sf.event_kuroda_1_4
+[image name="day,kuroda_1_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_1_4 == 1"]
+[button name="kuroda_1_4" graphic="day1_4.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y6 exp="tf.jp_sinario='kuroda_1_4'"]
 [image name="day,kuroda_1_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true]
 [else]
-[button name="kuroda_1_4" graphic="day1_4.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y6 exp="tf.jp_sinario='kuroda_1_4'"]
+[image name="day,kuroda_1_4" storage="../image/day1_4.png"  layer=26 x=&tf.x2 y=&tf.y6 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_1_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
@@ -275,10 +339,15 @@ $(".kuroda_1_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 [image name="day,kuroda_1_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true]
 [endif]
 
+;2月2週 sf.event_kuroda_2_2
+[image name="day,kuroda_2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y7 visible=true wait=true]
+[wait time=10]
 [if exp="sf.event_kuroda_2_2 == 1"]
 [button name="kuroda_2_2" graphic="day2_2.png" target="kuroda_sinario" x=&tf.x2 y=&tf.y7 exp="tf.jp_sinario='kuroda_2_2'"]
 [image name="day,kuroda_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true]
 [else]
+[image name="day,kuroda_2_2" storage="../image/day2_2.png"  layer=26 x=&tf.x2 y=&tf.y7 visible=true wait=true]
+[wait time=10]
 [iscript]
 $(".kuroda_2_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
