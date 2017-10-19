@@ -100,92 +100,224 @@ $(".layer_free").css("opacity",0);
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=25 x=600 y=34 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
-;=======================================================================================
+;====================================================================================================
+*common
+;判定処理をまとめます
+[eval exp="tf.jp_sinario='none'"]
 ;katuragi_event_1   !! 6/2 or 6/3 !!
-[image name="day,katuragi_event_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
+[if exp="sf.event_katuragi_event_1 == 1"]
+[button name="katuragi_event_1" graphic="day6_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_event_1'"]
+[image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_event_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_event_1,k_ev1" storage="../image/day6_2.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
-[wait time=10]
+[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true wait=true]
+[endif]
+
 ;katuragi_7_2 夢イベント
-[image name="day,katuragi_7_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
+[if exp="sf.event_katuragi_6_1 == 1"]
+[button name="katuragi_7_2" graphic="day7_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_6_1'"]
+[image name="day,katuragi_7_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_7_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_7_2,k_7_2" storage="../image/day7_2.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[image name="day,katuragi_7_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true wait=true]
+[endif]
+
+;7_4
+[if exp="sf.event_katuragi_event_2 == 1"]
+[button name="katuragi_event_2" graphic="day7_4.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='katuraginomiya_event_2'"]
+[image name="day,katuragi_event_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_event_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-;katuragi_event_2
-[image name="day,katuragi_event_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
+[image name="day,katuragi_event_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true wait=true]
+[endif]
+
+;8_2
+[if exp="sf.event_katuragi_event_3 == 1"]
+[button name="katuragi_event_3" graphic="day8_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='katuraginomiya_event_3'"]
+[image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true wait=true]
+[else]
+[iscript]
+$(".katuragi_event_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_event_2,k_ev2" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+
+[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_9_1 == 1"]
+[button name="katuragi_9_1" graphic="day9_1.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='katuraginomiya_9_1'"]
+[image name="day,katuragi_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-;katuragi_event_3 皇后様のお印入りのお茶事の招待状
-[image name="day,katuragi_event_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
+[image name="day,katuragi_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_9_3 == 1"]
+[button name="katuragi_9_3" graphic="day9_3.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='katuraginomiya_9_3'"]
+[image name="day,katuragi_9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
+[else]
+[iscript]
+
+$(".katuragi_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_event_3,k_ev3" storage="../image/day8_2.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[image name="day,katuragi_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_9_4 == 1"]
+[button name="katuragi_9_4" graphic="day9_4.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='katuraginomiya_9_4'"]
+[image name="day,katuragi_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true wait=true]
+[else]
+
+[iscript]
+$(".k_9_4").remove();
+$(".katuragi_9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-;katuragi_9_1
-[image name="day,katuragi_9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y5 visible=true wait=true]
+[image name="day,katuragi_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_10_2 == 1"]
+
+[button name="katuragi_10_2" graphic="day10_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='katuraginomiya_10_2'"]
+[image name="day,katuragi_10_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true wait=true]
+[else]
+[iscript]
+$(".katuragi_10_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_9_1,k_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[image name="day,katuragi_10_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_10_3 == 1"]
+
+[button name="katuragi_10_3" graphic="day10_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_10_3'"]
+[image name="day,katuragi_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true wait=true]
+[else]
+[iscript]
+$(".katuragi_10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-;katuragi_9_3
-[image name="day,katuragi_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y6 visible=true wait=true]
+[image name="day,katuragi_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_11_1 == 1"]
+[button name="katuragi_11_1" graphic="day11_1.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_11_1'"]
+[image name="day,katuragi_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_9_3,k_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
+[image name="day,katuragi_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_11_4 == 1"]
+[button name="katuragi_11_4" graphic="day11_4.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y3 exp="tf.jp_sinario='katuraginomiya_11_4'"]
+[image name="day,katuragi_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_11_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-;katuragi_9_4
-[image name="day,katuragi_9_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y7 visible=true wait=true]
+[image name="day,katuragi_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_12_1 == 1"]
+
+[button name="katuragi_12_1" graphic="day12_1.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y4 exp="tf.jp_sinario='katuraginomiya_12_1'"]
+[image name="day,katuragi_12_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y4 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_12_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_9_4,k_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
+[image name="day,katuragi_12_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y4 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_1_3 == 1"]
+[button name="katuragi_1_3" graphic="day1_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='katuraginomiya_1_3'"]
+[image name="day,katuragi_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y5 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-;katuragi_10_2
-[image name="day,katuragi_10_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y8 visible=true wait=true]
+[image name="day,katuragi_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y5 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_2_2 == 1"]
+[button name="katuragi_2_2" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y6 exp="tf.jp_sinario='katuraginomiya_2_2'"]
+[image name="day,katuragi_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true wait=true
+[else]
+
+[iscript]
+$(".katuragi_2_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_10_2,k_10_2" storage="../image/day10_2.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
+[image name="day,katuragi_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true wait=true]
+[endif]
+
+;2月3週
+[if exp="sf.event_katuragi_bazar == 1"]
+[button name="katuragi_bazar" graphic="day2_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y7 exp="tf.jp_sinario='katuraginomiya_bazaar'"]
+[image name="day,katuragi_bazar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_bazar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-;左位置2tf.x0_1 tf.x2
-;katuragi_10_3
-[image name="day,katuragi_10_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-[image name="day,katuragi_10_3,k_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-;katuragi_11_1
-[image name="day,katuragi_11_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y2 visible=true wait=true]
-[wait time=10]
-[image name="day,katuragi_11_1,k_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x2_2 y=&tf.y2 visible=true wait=true]
-[wait time=10]
-;katuragi_11_4
-[image name="day,katuragi_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
-[wait time=10]
-[image name="day,katuragi_11_4,k_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x2_2 y=&tf.y3 visible=true wait=true]
-[wait time=10]
-;katuragi_12_1
-[image name="day,katuragi_12_1" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y4 visible=true wait=true]
-[wait time=10]
-[image name="day,katuragi_12_1,k_12_1" storage="../image/day12_1.png"  layer=26 x=&tf.x2_2 y=&tf.y4 visible=true wait=true]
-[wait time=10]
-;katuragi_1_3
-[image name="day,katuragi_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
-[image name="day,katuragi_1_3,k_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
-;katuragi_2_2
-[image name="day,katuragi_2_2" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y6 visible=true wait=true]
-[wait time=10]
-[image name="day,katuragi_2_2,k_2_2" storage="../image/day2_2.png"  layer=26 x="&tf.x2" y=&tf.y6 visible=true wait=true]
-[wait time=10]
-;katuragi_bazar
-[image name="day,katuragi_bazar" storage="../image/day_check.png" layer=26 x="&tf.x0_1" y=&tf.y7 visible=true wait=true]
-[wait time=10]
-[image name="day,katuragi_bazar,k_bz" storage="../image/day2_3.png"  layer=26 x="&tf.x2" y=&tf.y7 visible=true wait=true]
-[wait time=10]
-;左位置3"tf.x0_2 tf.x3
+[image name="day,katuragi_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true wait=true]
+[endif]
+;====================================================================================================
+;判定処理をまとめます 散策
+;左位置3"tf.x3
 ;katuragi_sansaku1 2月2週～3月4週・散策1
-[image name="day,katuragi_sansaku1" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
+[if exp="sf.event_katuragi_sansaku1 == 1"]
+[button name="katuragi_sansaku1" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_sansaku1'"]
+[image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_sansaku1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_sansaku1,k_s1" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
-[wait time=10]
+[image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true wait=true]
+[endif]
+
 ;katuragi_sansaku2 2月2週～3月4週・散策2
-[image name="day,katuragi_sansaku2" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
+[if exp="sf.event_katuragi_sansaku2 == 1"]
+[button name="katuragi_sansaku2" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_sansaku2'"]
+[image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true wait=true]
+[else]
+
+[iscript]
+$(".katuragi_sansaku2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
 [wait time=10]
-[image name="day,katuragi_sansaku2,k_s2" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
-[wait time=10]
+[image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true wait=true]
+[endif]
 ;========================================エンディング============================================================
 ;enndingボタン位置
 [eval exp="tf.x5 = 580"]
@@ -194,7 +326,17 @@ $(".layer_free").css("opacity",0);
 [eval exp="tf.x8 = tf.x6 + 130"]
 [eval exp="tf.end1_y = tf.y7 + 30"]
 [eval exp="tf.end2_y = tf.y8 + 10"]
-
+;=============================================エンディングタイトル=========================================================
+[if exp="sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
+[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
+[else]
+[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
+[iscript]
+$(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60%)','-moz-filter': 'brightness(60%)','-o-filter': 'brightness(60%)','-ms-filter': 'brightness(60%)'});
+[endscript]
+[wait time=10]
+[endif]
+;========================================エンディング============================================================
 [if exp="sf.ED_katuraginomiya_bad == 1"]
 [button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="katuragi_sinario_ed" exp="tf.jp_sinario='katuraginomiya_11_1badED'"]
 [image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
@@ -226,226 +368,7 @@ $(".layer_free").css("opacity",0);
 [image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [endif]
-;====================================================================================================
-*common
-;一度、全ての日付の画像を暗めに表示します。全部終わるまでプリロード幕つける
-[iscript]
-$(".day").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-;====================================================================================================
-;判定処理をまとめます
-[eval exp="tf.jp_sinario='none'"]
-;katuragi_event_1   !! 6/2 or 6/3 !!
-[if exp="sf.event_katuragi_event_1 == 1"]
-[iscript]
-$(".k_ev1").remove();
-$(".katuragi_event_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_event_1" graphic="day6_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_event_1'"]
-[image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true wait=true]
-[else]
-[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_6_1 == 1"]
-;katuragi_7_2 夢イベント
-[iscript]
-$(".k_7_2").remove();
-$(".katuragi_7_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_7_2" graphic="day7_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_6_1'"]
-[image name="day,katuragi_7_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true wait=true]
-[else]
-[image name="day,katuragi_7_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true wait=true]
-[endif]
-;7_4
-[if exp="sf.event_katuragi_event_2 == 1"]
-[iscript]
-$(".k_ev2").remove();
-$(".katuragi_event_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_event_2" graphic="day7_4.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='katuraginomiya_event_2'"]
-[image name="day,katuragi_event_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true wait=true]
-[else]
-[image name="day,katuragi_event_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true wait=true]
-[endif]
-;8_2
-[if exp="sf.event_katuragi_event_3 == 1"]
-[iscript]
-$(".k_ev3").remove();
-$(".katuragi_event_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_event_3" graphic="day8_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='katuraginomiya_event_3'"]
-[image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true wait=true]
-[else]
-[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_9_1 == 1"]
-[iscript]
-$(".k_9_1").remove();
-$(".katuragi_9_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_9_1" graphic="day9_1.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='katuraginomiya_9_1'"]
-[image name="day,katuragi_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true wait=true]
-[else]
-[image name="day,katuragi_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_9_3 == 1"]
-[iscript]
-$(".k_9_3").remove();
-$(".katuragi_9_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_9_3" graphic="day9_3.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='katuraginomiya_9_3'"]
-[image name="day,katuragi_9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
-[else]
-[image name="day,katuragi_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_9_4 == 1"]
-[iscript]
-$(".k_9_4").remove();
-$(".katuragi_9_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_9_4" graphic="day9_4.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='katuraginomiya_9_4'"]
-[image name="day,katuragi_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true wait=true]
-[else]
-[image name="day,katuragi_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_10_2 == 1"]
-[iscript]
-$(".k_10_2").remove();
-$(".katuragi_10_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_10_2" graphic="day10_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='katuraginomiya_10_2'"]
-[image name="day,katuragi_10_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true wait=true]
-[else]
-[image name="day,katuragi_10_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y8 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_10_3 == 1"]
-[iscript]
-$(".k_10_3").remove();
-$(".katuragi_10_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_10_3" graphic="day10_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_10_3'"]
-[image name="day,katuragi_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true wait=true]
-[else]
-[image name="day,katuragi_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y1 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_11_1 == 1"]
-[iscript]
-$(".k_11_1").remove();
-$(".katuragi_11_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_11_1" graphic="day11_1.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_11_1'"]
-[image name="day,katuragi_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true wait=true]
-[else]
-[image name="day,katuragi_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y2 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_11_4 == 1"]
-[iscript]
-$(".k_11_4").remove();
-$(".katuragi_11_4").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_11_4" graphic="day11_4.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y3 exp="tf.jp_sinario='katuraginomiya_11_4'"]
-[image name="day,katuragi_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true wait=true]
-[else]
-[image name="day,katuragi_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y3 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_12_1 == 1"]
-[iscript]
-$(".k_12_1").remove();
-$(".katuragi_12_1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_12_1" graphic="day12_1.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y4 exp="tf.jp_sinario='katuraginomiya_12_1'"]
-[image name="day,katuragi_12_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y4 visible=true wait=true]
-[else]
-[image name="day,katuragi_12_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y4 visible=true wait=true]
-[endif]
-[if exp="sf.event_katuragi_1_3 == 1"]
-[iscript]
-$(".k_1_3").remove();
-$(".katuragi_1_3").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_1_3" graphic="day1_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='katuraginomiya_1_3'"]
-[image name="day,katuragi_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y5 visible=true wait=true]
-[else]
-[image name="day,katuragi_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y5 visible=true wait=true]
-[endif]
-
-[if exp="sf.event_katuragi_2_2 == 1"]
-[iscript]
-$(".k_2_2").remove();
-$(".katuragi_2_2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_2_2" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y6 exp="tf.jp_sinario='katuraginomiya_2_2'"]
-[image name="day,katuragi_2_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true wait=true
-[else]
-[image name="day,katuragi_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y6 visible=true wait=true]
-[endif]
-;2月3週
-[if exp="sf.event_katuragi_bazar == 1"]
-[iscript]
-$(".k_bz").remove();
-$(".katuragi_bazar").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_bazar" graphic="day2_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y7 exp="tf.jp_sinario='katuraginomiya_bazaar'"]
-[image name="day,katuragi_bazar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true wait=true]
-[else]
-[image name="day,katuragi_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true wait=true]
-[endif]
-;====================================================================================================
-;判定処理をまとめます 散策
-;左位置3"tf.x3
-;katuragi_sansaku1 2月2週～3月4週・散策1
-[if exp="sf.event_katuragi_sansaku1 == 1"]
-[iscript]
-$(".k_s1").remove();
-$(".katuragi_sansaku1").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_sansaku1" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_sansaku1'"]
-[image name="day,katuragi_sansaku1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true wait=true]
-[else]
-[image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true wait=true]
-[endif]
-;katuragi_sansaku2 2月2週～3月4週・散策2
-[if exp="sf.event_katuragi_sansaku2 == 1"]
-[iscript]
-$(".k_s2").remove();
-$(".katuragi_sansaku2").css({'filter': 'brightness(100%)','-webkit-filter': 'brightness(100%)','-moz-filter': 'brightness(100%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(100%)'});
-[endscript]
-[wait time=10]
-[button name="katuragi_sansaku2" graphic="day2_2.png" target="katuragi_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_sansaku2'"]
-[image name="day,katuragi_sansaku2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true wait=true]
-[else]
-[image name="day,katuragi_sansaku2" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true wait=true]
-[endif]
-;=============================================エンディングタイトル=========================================================
-[if exp="sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
-[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
-[else]
-[image name="day,endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
-[iscript]
-$(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60%)','-moz-filter': 'brightness(60%)','-o-filter': 'brightness(60%)','-ms-filter': 'brightness(60%)'});
-[endscript]
-[wait time=10]
-[endif]
-
-
+;========================================================================================================================
 [iscript]
 $(".loding_pic").remove();
 $(".loding_pic1").remove();
