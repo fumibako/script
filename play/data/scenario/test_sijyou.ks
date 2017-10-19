@@ -545,7 +545,7 @@ alert(f.para_sijyou_koukando);
 [glink target=zaizen5 text="財前event解放" size=20 width="250" x=100 y=450 color=white]
 [glink target=kt_4 text="葛城宮event解放" size=20 width="250" x=100 y=500 color=white]
 [glink target=kt_5 text="葛城宮/散策解放" size=20 width="250" x=400 y=100 color=white]
-[glink target=huji_5 text="藤枝event解放" size=20 width="250" x=400 y=150 color=white]
+[glink target=hji_1 text="藤枝event解放" size=20 width="250" x=400 y=150 color=white]
 
 [glink target="*test_flag_bye" text="全てのフラグ閉鎖操作へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=black]
 [s]
@@ -742,7 +742,6 @@ sf.replay_katuraginomiya=1;
 [glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
 [s]
 
-*hji_1
 *hji_2
 *hji_3
 *hji_4
@@ -751,6 +750,7 @@ sf.replay_katuraginomiya=1;
 sf.replay_hujieda=1;
 [endscript]
 @jump target=yes1
+*hji_1
 [glink target="hji_5" text="藤枝4_4" exp="sf.event_hujieda_4_4=1" size=20 width="250" x=100 y=100 color=blue]
 [glink target="hji_5" text="藤枝5_4" exp="sf.event_hujieda_5_4=1" size=20 width="250" x=100 y=150 color=blue]
 [glink target="hji_5" text="藤枝6_1" exp="sf.event_hujieda_6_1=1" size=20 width="250" x=100 y=200 color=blue]
