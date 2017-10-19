@@ -119,19 +119,6 @@ $(".layer_free").css("opacity",0);
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=25 x=600 y=34 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
 ;=======================================================================================
-
-
-[if exp="sf.ED_hujieda_good == 1"]
-[button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" text="good" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_3_4_goodED'"]
-[image name="ending4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[else]
-[image name="day,ending4" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
-[wait time=10]
-[endif]
-;====================================================================================================
 *common
 ;判定処理をまとめます
 
@@ -426,7 +413,57 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [endscript]
 [wait time=10]
 [endif]
+;========================================エンディング============================================================
+;enndingボタン位置
+[eval exp="tf.x5 = 580"]
+[eval exp="tf.x6 = tf.x5 + 200"]
+[eval exp="tf.x7 = tf.x5 + 140"]
+[eval exp="tf.x8 = tf.x6 + 130"]
+[eval exp="tf.end1_y = tf.y7 + 30"]
+[eval exp="tf.end2_y = tf.y8 + 10"]
 
+[if exp="sf.ED_hujieda_bad == 1"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_8_4_bad'"]
+[image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
+[else]
+[image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
+[wait time=10]
+[image name="ending1" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
+[wait time=10]
+[endif]
+
+[if exp="sf.ED_hujieda_bad2 == 1"]
+[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x6" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_12_3_badED'"]
+[image name="ending2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end1_y" visible=true wait=true]
+[else]
+[image name="day,ending2" storage="../image/day_bad2.png" layer=26 x="&tf.x6" y="&tf.end1_y" visible=true wait=true]
+[wait time=10]
+[image name="ending2" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end1_y" visible=true wait=true]
+[wait time=10]
+[endif]
+
+[if exp="sf.ED_hujieda_normal == 1"]
+[button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_3_4_normalED'"]
+[image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[else]
+[image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[image name="ending3" storage="../image/day_check_mi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[endif]
+
+[if exp="sf.ED_hujieda_good == 1"]
+[button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" text="good" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_3_4_goodED'"]
+[image name="ending4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[else]
+[image name="day,ending4" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
+[wait time=10]
+[endif]
+;====================================================================================================
 [iscript]
 $(".loding_pic").remove();
 $(".loding_pic1").remove();
