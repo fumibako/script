@@ -751,7 +751,6 @@ sf.replay_katuraginomiya=1;
 sf.replay_hujieda=1;
 [endscript]
 @jump target=yes1
-*hji_5
 [glink target="hji_5" text="藤枝4_4" exp="sf.event_hujieda_4_4=1" size=20 width="250" x=100 y=100 color=blue]
 [glink target="hji_5" text="藤枝5_4" exp="sf.event_hujieda_5_4=1" size=20 width="250" x=100 y=150 color=blue]
 [glink target="hji_5" text="藤枝6_1" exp="sf.event_hujieda_6_1=1" size=20 width="250" x=100 y=200 color=blue]
