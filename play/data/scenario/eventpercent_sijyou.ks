@@ -111,6 +111,7 @@
 [eval exp="tf.sansaku_pasent =  0"]
 [eval exp="tf.sansaku_pasent = tf.eventSansaku_Number_of_times / 12 * 100"]
 [eval exp="tf.sansaku_pasent = Math.floor(tf.sansaku_pasent)"]
+[eval exp="tf.sansaku_pasent = Math.ceil(tf.sansaku_pasent)"]
 ;イベント数
 [eval exp="tf.event_Number_of_times = 0"]
 [eval exp="tf.event_Number_of_times = sf.event_sijyou_event_6_1 + sf.event_sijyou_9_1 + sf.event_sijyou_9_2 + sf.event_sijyou_9_3"]
