@@ -107,6 +107,10 @@
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_9 + sf.event_sijyou_sansaku_10"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_11 + sf.event_sijyou_sansaku_12"]
 [eval exp="tf.eventSansaku_Number_of_times = tf.eventSansaku_Number_of_times + sf.event_sijyou_sansaku_13"]
+;散策数パーセント
+[eval exp="tf.sansaku_pasent =  0"]
+[eval exp="tf.eventSansaku_Number_of_times / 13 * 100"]
+[eval exp="tf.sansaku_pasent = Math.floor(tf.sansaku_pasent)"]
 ;イベント数
 [eval exp="tf.event_Number_of_times = 0"]
 [eval exp="tf.event_Number_of_times = sf.event_sijyou_event_6_1 + sf.event_sijyou_9_1 + sf.event_sijyou_9_2 + sf.event_sijyou_9_3"]
