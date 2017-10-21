@@ -139,7 +139,7 @@ $(".layer_free").css("opacity",0);
 [ptext name="pasent1" text="%" layer=26 size=25 x=650 y=35 color=snow]
 ;散策パーセント　あとでコメント化する
 [ptext name="pasent" text="&tf.sansaku_pasent" layer=26 size=30 x=730 y=80 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=25 x=750 y=80 color=snow]
+[ptext name="pasent1" text="%" layer=26 size=25 x=750 y=81 color=snow]
 ;====================================================================================================
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
