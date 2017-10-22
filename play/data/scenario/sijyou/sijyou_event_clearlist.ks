@@ -663,7 +663,7 @@ $(".day9_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_9_3 != 1"]
-[button fix=true name="sijyou_9_3" graphic="day9_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y4 exp="tf.tips=tf.hint4"]
+[button fix=true name="sijyou_9_3" graphic="day9_3.png" target="tips_label" x=&tf.x1 y=&tf.y4 exp="tf.tips=tf.hint4"]
 ;[image name="day,day9_3,sijyou_9_3" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -674,7 +674,7 @@ $(".day9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_9_4 != 1"]
-[button fix=true name="sijyou_9_4" graphic="day9_4.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y5 exp="tf.tips=tf.hint5"]
+[button fix=true name="sijyou_9_4" graphic="day9_4.png" target="tips_label" x=&tf.x1 y=&tf.y5 exp="tf.tips=tf.hint5"]
 ;[image name="day,day9_4,sijyou_9_4" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -707,7 +707,7 @@ $(".fixlayer").css("opacity",1);
 alert(tf.jp_sinario);
 [endscript]
 [endif]
-
+@clearfix
 ;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
 ;一瞬、お稽古画面がみえるのを何とかしたい
 [if exp="f.okeiko_gamen == true"]
