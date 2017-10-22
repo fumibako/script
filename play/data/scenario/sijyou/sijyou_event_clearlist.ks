@@ -158,9 +158,6 @@ $(".layer_free").css("opacity",0);
 $("p.tips").text("書き換えた テスト中です");
 //f.get_tipsがオンのときのみ反応　現在はテスト中
 f.get_tips = 1;
-//ここに全部ヒントテキストの設定　できたらこの辺りはloadjsやcallに記入
-tf.hint1="ヒント１";
-tf.hint2="ヒント2";
 [endscript]
 
 ;判定処理をまとめます
@@ -709,12 +706,6 @@ $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
 *stop
-[iscript]
-$(".tips_6_1").click(function () {
- //$('p.tips').text(tf.hint1);
-  alert('反応!');
-});
-[endscript]
 [s]
 
 *sijyou_sinario
