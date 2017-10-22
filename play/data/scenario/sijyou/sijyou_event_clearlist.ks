@@ -24,7 +24,7 @@ $(".chara_name_area").empty();
 [image name="loding_pic2" layer=29 storage="../image/name_sijyou.png" x=250 y=35 visible=true]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=580 visible=true]
 [wait time=50]
-;====================================================================================================
+;===================================================================================================
 *test
 ;重要フラグを監視
 [iscript]
@@ -123,12 +123,21 @@ $(".layer_free").css("opacity",0);
 ;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ[eval exp="f.get_tips = 0"]
 [if exp="f.get_tips == 1"]
 ;オンのときはオフを表示
-[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
 [else]
 ;オフのときはオンを表示
-[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
+[endif]
+;================================ヒントの表示　現在は試運転中=======================================================
+[if exp="f.get_tips == 1"]
+[ptext name="tips" text="現在、ヒントの表示はオンです" layer=26 size=22 x=100 y=550 color=snow]
+[wait time=50]
+;※waitしないと書き換えられません！
+[else]
+[ptext name="tips" text="現在、ヒントの表示はオフです" layer=26 size=22 x=100 y=550 color=snow]
+[wait time=50]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
 ;y=550
@@ -145,10 +154,6 @@ $(".layer_free").css("opacity",0);
 [elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
 [button name="c_name1" graphic="name_hatena.png" y=590 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [endif]
-;ヒントの表示　現在は試運転中;[if exp="f.get_tips == 1"]
-[ptext name="tips" text="ヒントを表示したい場合は(説明)してください" layer=26 size=22 x=100 y=550 color=snow]
-[wait time=50]
-;※waitしないと書き換えられません！
 ;=======================================================================================
 *check_event
 ;名前表示
