@@ -174,7 +174,8 @@ $(".fixlayer").css("opacity",0);
 *common
 [iscript]
 //ヒントを設定　実際は別のシナリオへ
-tf.hint1="ヒント１";
+tf.hint1="ヒント1";
+tf.hint2="ヒント2";
 [endscript]
 ;====================================================================================================
 ;判定処理をまとめます
@@ -207,7 +208,9 @@ $(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [button name="sijyou_9_1" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='sijyou_9_1'"]
 [image name="day,day9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [else]
-[image name="day,day9_1,sijyou_9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+;tips_labelにとびます
+[button name="day,day9_1,sijyou_9_1,tips_9_1,tips_btn" graphic="day9_1.png" target="tips_label" x=&tf.x1 y=&tf.y2 exp="tf.tips=tf.hint2"]
+;[image name="day,day9_1,sijyou_9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".day9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(50%)'});
