@@ -123,12 +123,12 @@ $(".fixlayer").css("opacity",0);
 [wait time=10]
 ;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ[eval exp="f.get_tips = 0"]
 [if exp="f.get_tips == 1"]
-;オンのときはオフを表示
-[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+;オンの時はオン表示に統一します◆jsYiJcqRkk(元：オンのときはオフを表示)
+[button name="hint_off" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
 [else]
-;オフのときはオンを表示
-[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+;オフの時はオフ表示(元：オフのときはオンを表示)
+[button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
 ;================================ヒントの表示　現在は試運転中=======================================================
