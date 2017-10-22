@@ -12,4 +12,16 @@ tf.hint9="ヒント9";
 tf.hint10="ヒント10";
 tf.hint11="ヒント11";
 tf.hint12="ヒント12";
+tf.hint13="ヒント13";
+tf.hint14="ヒント14";
+tf.hint15="ヒント15";
+tf.hint16="ヒント16";
+tf.hint17="ヒント17";
+tf.hint18="ヒント18";
+tf.hint19="ヒント19";
+tf.hint20="ヒント20";
+tf.hint21="ヒント21";
+tf.hint22="ヒント22";
+tf.hint23="ヒント23";
+tf.hint24="ヒント24";
 [endscript]
