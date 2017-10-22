@@ -181,7 +181,7 @@ tf.hint1="ヒント１";
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [else]
 ;tips_labelにとびます
-[button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
+[button fix=true name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
 ;[image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [endif]
@@ -830,6 +830,7 @@ $("p.tips").text(tf.tips);
 }
 [endscript]
 @jump target="stop"
+;@jump target=hantei_efectにもどるとcssエフェクトがかからないようにしなくてはならない
 [s]
 
 *get_tips_label
