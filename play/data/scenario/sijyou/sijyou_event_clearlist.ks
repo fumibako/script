@@ -130,6 +130,10 @@ $(".layer_free").css("opacity",0);
 [elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
 [button name="c_name1" graphic="name_hatena.png" y=550 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [endif]
+;ヒントの表示　現在は試運転中
+;[if exp="f.get_tips == 1"]
+[ptext name="tips" text="ひんと" layer=26 size=22 x=100 y=540 color=snow]
+;[endif]
 ;=======================================================================================
 *check_event
 ;名前表示
@@ -140,10 +144,18 @@ $(".layer_free").css("opacity",0);
 ;散策パーセント　コメント化
 ;[ptext name="pasent" text="&tf.sansaku_pasent" layer=26 size=25 x=720 y=80 color="khaki"]
 ;[ptext name="pasent1" text="%" layer=26 size=20 x=760 y=83 color="khaki"]
+;散策数
+[ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=720 y=80 color="khaki"]
+[ptext name="pasent1" text="/１２" layer=26 size=20 x=760 y=83 color="khaki"]
 ;====================================================================================================
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
 *common
+;試用スクリプト
+[iscript]
+$('.tips').text("書き換えた");
+[endscript]
+
 ;判定処理をまとめます
 *hantei_efect
 [if exp="sf.event_sijyou_event_6_1 == 1"]
