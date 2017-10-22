@@ -166,8 +166,8 @@ $(".fixlayer").css("opacity",0);
 ;[ptext name="pasent" text="&tf.sansaku_pasent" layer=26 size=25 x=720 y=80 color="khaki"]
 ;[ptext name="pasent1" text="%" layer=26 size=20 x=760 y=83 color="khaki"]
 ;散策数
-[ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=755 y=80 color="khaki"]
-[ptext name="pasent1" text="/12" layer=26 size=20 x=785 y=85 color="khaki"]
+[ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=755 y=75 color="khaki"]
+[ptext name="pasent1" text="/12" layer=26 size=20 x=785 y=80 color="khaki"]
 ;====================================================================================================
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
@@ -855,7 +855,7 @@ $(".hint_on").remove();
 $("p.tips").text("現在、ヒントはオンです");
 [endscript]
 ;オンのときはオフを表示
-[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+[button name="hint_off" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
 ;@jump target="tips_btn"
 @jump target="stop"
@@ -866,7 +866,7 @@ $(".hint_off").remove();
 $("p.tips").text("現在、ヒントはオフです");
 [endscript]
 ;オフのときはオンを表示
-[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_on" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
 @jump target="stop"
