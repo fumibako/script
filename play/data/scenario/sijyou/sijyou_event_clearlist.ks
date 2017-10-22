@@ -180,9 +180,6 @@ tf.hint1="ヒント１";
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
-[elsif exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
-;ここにボタンを書く場合、オフ→オンにした時に再度書き換え待ちをする必要な気がします なら、そうならないようにすれば？ nameにtips_btnを与えて消す 書き換え専用処理をつくる
-[button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
 [else]
 [image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
@@ -852,8 +849,16 @@ $(".tips_btn").show();
 [s]
 
 *tips_btn
-;オフからオンにしたときの書き換え処理
+;オフからオンにしたときの書き換え処理　
+;待ち発生するので最小限に必要な分のみまとめる→どの道、大量の未、場合待ちが発生する
+[if exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
 [button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
+;後からだしたものについてはCSSがききませんので再度かける
+[iscript]
+$(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[endif]
+
 @jump target="stop"
 [s]
 
