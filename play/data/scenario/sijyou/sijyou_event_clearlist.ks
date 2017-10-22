@@ -829,7 +829,8 @@ if(f.get_tips == 1){
 $("p.tips").text(tf.tips);
 }
 [endscript]
-@jump target="stop"
+[return]
+;@jump target="stop"
 ;@jump target=hantei_efectにもどるとcssエフェクトがかからないようにしなくてはならない
 [s]
 
