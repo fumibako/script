@@ -158,36 +158,42 @@ $(".layer_free").css("opacity",0);
 $("p.tips").text("書き換えた テスト中です");
 //f.get_tipsがオンのときのみ反応　現在はテスト中
 f.get_tips = 1;
-[endscript]
 
+tf.hint1="ヒント１";
+[endscript]
+;====================================================================================================
 ;判定処理をまとめます
 *hantei_efect
-[if exp="sf.event_sijyou_event_6_1 == 1"]
-;四条6_1
+;四条6_1　◆はまとめる
 [image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
+[if exp="sf.event_sijyou_event_6_1 == 1"]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
+;[elsif exp="sf.event_sijyou_event_6_1 != 1 && "]
+;ここにボタンを書く場合、オフ→オンにした時に再度書き換え待ちをする必要な気がします
 [else]
-[image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
-[wait time=10]
+;cond　なるべく書き換えしたくないのでcondにしますがあまり意味がなさそうです
+[button name="sijyou_6_1,tips_6_1" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1" cond="f.get_tips==1"]
 [image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
+[endif]
+;未判定はまとめる
+[if exp="sf.event_sijyou_event_6_1 != 1"]
 [iscript]
 $(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
+;未に影はかけないので最後に
 [image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [endif]
 
-[if exp="sf.event_sijyou_9_1 == 1"]
-;四条9_1
+;四条9_1 ◆はまとめる
 [image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
 [wait time=10]
+[if exp="sf.event_sijyou_9_1 == 1"]
 [button name="sijyou_9_1" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='sijyou_9_1'"]
 [image name="day,day9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [else]
-[image name="day,day9_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
-[wait time=10]
 [image name="day,day9_1,sijyou_9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -197,15 +203,13 @@ $(".day9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [image name="day,day9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [endif]
 
-[if exp="sf.event_sijyou_9_2 == 1"]
-;四条9_2
+;四条9_2 ◆はまとめる
 [image name="day,day9_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
 [wait time=10]
+[if exp="sf.event_sijyou_9_2 == 1"]
 [button name="sijyou_9_2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='sijyou_9_2'"]
 [image name="day,day9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
 [else]
-[image name="day,day9_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
-[wait time=10]
 [image name="day,day9_2,sijyou_9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -706,6 +710,12 @@ $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
 *stop
+
+[s]
+*tips_label
+[iscript]
+$("p.tips").text(tf.tips);
+[endscript]
 [s]
 
 *sijyou_sinario
