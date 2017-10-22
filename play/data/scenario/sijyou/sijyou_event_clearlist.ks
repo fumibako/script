@@ -180,12 +180,10 @@ tf.hint1="ヒント１";
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
-[elsif exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
-;別のクリアリストから来た場合はボタン表示させる→みたくないときは押さなければいいのでは　
 [else]
-;opacityでtips_btnを隠す　はじめから表示させておく
+;tips_labelにとびます
 [button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
-[image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+;[image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [endif]
 ;未判定はまとめる
@@ -718,15 +716,9 @@ $(".loding_pic").remove();
 $(".loding_pic2").remove();
 $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
-$(".tips_btn").css("opacity",0);
 [endscript]
 *stop
 
-[s]
-*tips_label
-[iscript]
-$("p.tips").text(tf.tips);
-[endscript]
 [s]
 
 *sijyou_sinario
@@ -831,6 +823,15 @@ $(".1_fore").empty();
 @jump target="stop"
 [s]
 
+*tips_label
+;テキストの書き換えを行うか判定し、trueであればテキストを書き換えます
+[iscript]
+if(f.get_tips == 1){
+$("p.tips").text(tf.tips);
+}
+[endscript]
+[s]
+
 *get_tips_label
 ;onoffのフラグはボタンで行う
 ;最低限の書き替え
@@ -841,12 +842,12 @@ $(".hint_on").remove();
 ;オンのときはオフを表示
 [button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
-@jump target="tips_btn"
+;@jump target="tips_btn"
+@jump target="stop"
 [else]
 [iscript]
 $(".hint_off").remove();
 $("p.tips").text("ヒントを表示したい場合は（説明）してください");
-$("tips_btn").css("opacity",1);
 [endscript]
 ;オフのときはオンを表示
 [button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
@@ -856,10 +857,13 @@ $("tips_btn").css("opacity",1);
 [s]
 
 *tips_btn
-;オフからオンにしたときの書き換え処理　初めから表示させておく→opactyで回避できないか？
-[iscript]
-$("tips_btn").css("opacity",1);
-[endscript]
+;オフからオンにしたときの書き換え処理を書いていた場所
+;オフからオンにしたときの書き換え処理　初めから表示させておく→opactyで回避できないか？→できないので再度書き換えしかない
+;[s]に飛ぶのも不可かもしれない　調査中
+;初めから表示させておく→opactyで回避できないか？→できないので再度書き換えしかないようです・・・どの道opcityの変更待ちがみえる
+;未が大量の場合　待ち時間が発生し、上にloadingの背景をかけないとチカチカする　オンオフためだけに待ちたくない
+;判定待ち時間をなくすために　tips_btnに処理をくわえる　→上にloadingの背景をかけないとチカチカする
+;imageはやめて　はじめからボタンにする　何もないときに待ち時間が発生するので回避したかったがそれ以外思いつかない
 @jump target="stop"
 [s]
 
