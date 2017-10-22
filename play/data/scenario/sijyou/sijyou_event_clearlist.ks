@@ -167,7 +167,7 @@ $(".fixlayer").css("opacity",0);
 ;[ptext name="pasent1" text="%" layer=26 size=20 x=760 y=83 color="khaki"]
 ;散策数
 [ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=755 y=80 color="khaki"]
-[ptext name="pasent1" text="/12" layer=26 size=20 x=785 y=84 color="khaki"]
+[ptext name="pasent1" text="/12" layer=26 size=20 x=785 y=85 color="khaki"]
 ;====================================================================================================
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
