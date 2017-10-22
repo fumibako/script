@@ -174,7 +174,7 @@ tf.hint1="ヒント１";
 ;ここにボタンを書く場合、オフ→オンにした時に再度書き換え待ちをする必要な気がします
 [else]
 ;cond　なるべく書き換えしたくないのでcondにしますがあまり意味がなさそうです
-[button name="sijyou_6_1,tips_6_1" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1" cond="f.get_tips==1"]
+[button name="day6_1,sijyou_6_1,tips_6_1" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1" cond="f.get_tips==1"]
 [image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [endif]
