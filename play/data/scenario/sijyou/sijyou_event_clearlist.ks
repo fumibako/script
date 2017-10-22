@@ -160,12 +160,12 @@ $("p.tips").text("書き換えた テスト中です");
 f.get_tips = 1;
 //ここに全部ヒントテキストの設定　できたらこの辺りはloadjsやcallに記入
 tf.hint1="ヒント１";
-tf.hint1="ヒント１";
+tf.hint2="ヒント2";
 $(function(){
 //&& f.event_replay == 'sijyou'
-if(f.get_tip == 1){
+if(f.get_tips == 1){
 $(".tips_6_1").click(function () {
- $('p.tips').text("tf.hint1");
+ $('p.tips').text(tf.hint1);
  alert("反応");
 });
 }
