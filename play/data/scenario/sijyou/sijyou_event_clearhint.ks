@@ -1,0 +1,15 @@
+[iscript]
+//ヒントを設定
+tf.hint1="ヒント1";
+tf.hint2="ヒント2";
+tf.hint3="ヒント3";
+tf.hint4="ヒント4";
+tf.hint5="ヒント5";
+tf.hint6="ヒント8";
+tf.hint7="ヒント7";
+tf.hint8="ヒント8";
+tf.hint9="ヒント9";
+tf.hint10="ヒント10";
+tf.hint11="ヒント11";
+tf.hint12="ヒント12";
+[endscript]
