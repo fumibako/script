@@ -146,7 +146,7 @@ $(".layer_free").css("opacity",0);
 [button name="c_name1" graphic="name_hatena.png" y=590 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [endif]
 ;ヒントの表示　現在は試運転中;[if exp="f.get_tips == 1"]
-[ptext name="tips" text="ヒントを表示したい場合は(右ボタン名)を押してください" layer=26 size=22 x=100 y=550 color=snow]
+[ptext name="tips" text="ヒントを表示したい場合は(説明)してください" layer=26 size=22 x=100 y=550 color=snow]
 [wait time=50]
 ;※waitしないと書き換えられません！
 ;=======================================================================================
@@ -180,9 +180,10 @@ tf.hint1="ヒント１";
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
-;[elsif exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
-;別のクリアリストから来た場合はボタン表示させる→みたくないときは押さなければいいのでは
+[elsif exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
+;別のクリアリストから来た場合はボタン表示させる→みたくないときは押さなければいいのでは　
 [else]
+;opacityでtips_btnを隠す　はじめから表示させておく
 [button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
 [image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
@@ -717,7 +718,7 @@ $(".loding_pic").remove();
 $(".loding_pic2").remove();
 $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
-$("tips_btn").css("opacity",0);
+$(".tips_btn").css("opacity",0);
 [endscript]
 *stop
 
@@ -844,7 +845,7 @@ $(".hint_on").remove();
 [else]
 [iscript]
 $(".hint_off").remove();
-$("p.tips").text("デフォルト文字");
+$("p.tips").text("ヒントを表示したい場合は（説明）してください");
 $("tips_btn").css("opacity",1);
 [endscript]
 ;オフのときはオンを表示
