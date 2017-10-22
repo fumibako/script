@@ -695,12 +695,6 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [wait time=10]
 [image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]		 
 [endif]
-[iscript]
-$(".loding_pic").remove();
-$(".loding_pic2").remove();
-$(".loding_pic1").remove();
-$(".layer_free").css("opacity",1);
-[endscript]
 ;=========================================未の判定はまとめる===================================================
 ;tips_labelにとびます
 [if exp="sf.event_sijyou_event_6_1 != 1"]
@@ -725,6 +719,13 @@ $(".day9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [image name="day,day9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [endif]
 ;===============================================================================================
+[iscript]
+$(".loding_pic").remove();
+$(".loding_pic2").remove();
+$(".loding_pic1").remove();
+$(".layer_free").css("opacity",1);
+[endscript]
+[wait time=100]
 [iscript]
 $(".fixlayer").css("opacity",1);
 [endscript]
