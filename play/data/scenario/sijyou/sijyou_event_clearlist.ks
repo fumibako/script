@@ -115,6 +115,7 @@ $(".test").remove();
 ;================================ボタン隠し=======================================================
 [iscript]
 $(".layer_free").css("opacity",0);
+$(".fixlayer").css("opacity",0);
 [endscript]
 ;================================移動ボタン=======================================================
 [locate x=880 y=24]
@@ -720,6 +721,7 @@ $(".loding_pic").remove();
 $(".loding_pic2").remove();
 $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
+$(".fixlayer").css("opacity",1);
 [endscript]
 *stop
 
