@@ -122,10 +122,12 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 ;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ
 [if exp="f.get_tips == 1"]
+;オンのときはオフを表示
 [button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [else]
-[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+;オフのときはオンを表示
+[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
