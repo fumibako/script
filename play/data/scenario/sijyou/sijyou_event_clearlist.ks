@@ -196,6 +196,7 @@ tf.hint2="ヒント2";
 [if exp="sf.event_sijyou_event_6_1 != 1"]
 [iscript]
 $(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+$(".fixlayer").css("opacity",0);
 [endscript]
 ;未に影はかけないので最後に
 [image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
