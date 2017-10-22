@@ -141,11 +141,10 @@ $(".layer_free").css("opacity",0);
 [elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
 [button name="c_name1" graphic="name_hatena.png" y=590 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [endif]
-;ヒントの表示　現在は試運転中
-;[if exp="f.get_tips == 1"]
-[ptext name="tips" text="ひんと" layer=26 size=22 x=100 y=550 color=snow]
+;ヒントの表示　現在は試運転中;[if exp="f.get_tips == 1"]
+[ptext name="tips" text="ヒントを表示したい場合は(右ボタン名)を押してください" layer=26 size=22 x=100 y=550 color=snow]
 [wait time=50]
-;[endif]
+;※waitしないと書き換えられません！
 ;=======================================================================================
 *check_event
 ;名前表示
@@ -165,8 +164,6 @@ $(".layer_free").css("opacity",0);
 *common
 ;試用スクリプト クリックと条件を入れる　.textでは反応しない
 [iscript]
-$("p.tips").text("書き換えた テスト中です");
-//f.get_tipsがオンのときのみ反応　現在はテスト中
 //ヒントを設定　実際は別のシナリオへ
 tf.hint1="ヒント１";
 [endscript]
@@ -179,11 +176,10 @@ tf.hint1="ヒント１";
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
-;[elsif exp="sf.event_sijyou_event_6_1 != 1 && "]
-;ここにボタンを書く場合、オフ→オンにした時に再度書き換え待ちをする必要な気がします
+[elsif exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
+;ここにボタンを書く場合、オフ→オンにした時に再度書き換え待ちをする必要な気がします なら、そうならないようにすれば？ nameにtips_btnを与えて消す
+[button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
 [else]
-;cond　なるべく書き換えしたくないのでcondにしますがあまり意味がなさそうです
-[button name="day6_1,sijyou_6_1,tips_6_1" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1" cond="f.get_tips==1"]
 [image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [endif]
@@ -835,15 +831,19 @@ $(".1_fore").empty();
 [if exp="f.get_tips == 1"]
 [iscript]
 $(".hint_on").remove();
+$(".tips_btn").hide();
 [endscript]
 [button name="hint_off" graphic="button_kskip_off.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
+@jump target="stop"
 [else]
 [iscript]
 $(".hint_off").remove();
+$(".tips_btn").show();
 [endscript]
 [button name="hint_on" graphic="button_kskip_on.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
 @jump target="stop"
 [s]
+
