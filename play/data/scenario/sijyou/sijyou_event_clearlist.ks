@@ -133,7 +133,8 @@ $(".layer_free").css("opacity",0);
 [endif]
 ;ヒントの表示　現在は試運転中
 ;[if exp="f.get_tips == 1"]
-[ptext name="tips" text="ひんと" layer=26 size=22 x=100 y=540 color=snow]
+[ptext name="tips" text="ひんと" layer=26 size=22 x=100 y=550 color=snow]
+[wait time=50]
 ;[endif]
 ;=======================================================================================
 *check_event
@@ -147,14 +148,14 @@ $(".layer_free").css("opacity",0);
 ;[ptext name="pasent1" text="%" layer=26 size=20 x=760 y=83 color="khaki"]
 ;散策数
 [ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=720 y=80 color="khaki"]
-[ptext name="pasent1" text="/１２" layer=26 size=20 x=760 y=83 color="khaki"]
+[ptext name="pasent1" text="/12" layer=26 size=20 x=760 y=83 color="khaki"]
 ;====================================================================================================
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
 *common
 ;試用スクリプト クリックと条件を入れる　.textでは反応しない
 [iscript]
-$(".tips").html("書き換えた");
+$("p.tips").text("書き換えた");
 [endscript]
 
 ;判定処理をまとめます
