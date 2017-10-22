@@ -155,7 +155,21 @@ $(".layer_free").css("opacity",0);
 *common
 ;試用スクリプト クリックと条件を入れる　.textでは反応しない
 [iscript]
-$("p.tips").text("書き換えた");
+$("p.tips").text("書き換えた テスト中です");
+//f.get_tipsがオンのときのみ反応　現在はテスト中
+f.get_tips = 1;
+//ここに全部ヒントテキストの設定　できたらこの辺りはloadjsやcallに記入
+tf.hint1="ヒント１";
+tf.hint1="ヒント１";
+$(function(){
+//&& f.event_replay == 'sijyou'
+if(f.get_tip == 1){
+$(".tips_6_1").click(function () {
+ $('p.tips').text("tf.hint1");
+ alert("反応");
+});
+}
+});
 [endscript]
 
 ;判定処理をまとめます
@@ -169,7 +183,7 @@ $("p.tips").text("書き換えた");
 [else]
 [image name="day,day6_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
-[image name="day,day6_1,sijyou_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+[image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -703,6 +717,7 @@ $(".loding_pic2").remove();
 $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
+*stop
 [s]
 
 *sijyou_sinario
@@ -798,3 +813,12 @@ $(".1_fore").empty();
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
+
+*tips_onoff
+;f.event_replay = ;
+[eval exp="f.event_replay = ''sijyou''"]
+[eval exp="f.get_tips = 1 "]
+;また判定に飛ぶと待ち時間が発生するので適度な場所で　仮にstop
+@jump target="stop"
+[s]
+
