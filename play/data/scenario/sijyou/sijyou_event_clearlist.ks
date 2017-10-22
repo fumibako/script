@@ -119,10 +119,13 @@ $(".layer_free").css("opacity",0);
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start" exp="f.event_replay='none'"]
 [wait time=10]
 ;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ
-[button name="hint_on" graphic="button_kskip_on.png" height=50 width=50 y=590 x=930 target="get_tips_label" exp="f.get_tips=1" cond="f.get_tips!=1"]
+[if exp="f.get_tips == 1"]
+[button name="hint_off" graphic="button_kskip_off.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
-[button name="hint_off" graphic="button_kskip_off.png" height=50 width=50 y=590 x=930 target="get_tips_label" exp="f.get_tips=1" cond="f.get_tips==1"]
+[else]
+[button name="hint_on" graphic="button_kskip_on.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
+[endif]
 ;=============================キャラクター指定移動ボタン==========================================================
 ;y=550
 [button name="c_name1" graphic="name_kuroda.png" y=590 x=100 storage="kuroda_event_clearlist.ks"]
@@ -827,5 +830,20 @@ $(".1_fore").empty();
 [s]
 
 *get_tips_label
+;onoffのフラグはボタンで行う
+;最低限の書き替え
+[if exp="f.get_tips == 1"]
+[iscript]
+$(".hint_on").remove();
+[endscript]
+[button name="hint_off" graphic="button_kskip_off.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
+[wait time=10]
+[else]
+[iscript]
+$(".hint_off").remove();
+[endscript]
+[button name="hint_on" graphic="button_kskip_on.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
+[wait time=10]
+[endif]
 @jump target="stop"
 [s]
