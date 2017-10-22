@@ -3,6 +3,8 @@
 ;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
 ;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
 ;このシナリオの戻り値は　f.event_replay = 'sijyou';　です。
+;ヒントの表示フラグは適当な場所でオフに等にしてください。
+[eval exp="f.get_tips = 0"]
 ;====================================================================================================
 *start
 @clearstack
@@ -120,10 +122,10 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 ;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ
 [if exp="f.get_tips == 1"]
-[button name="hint_off" graphic="button_kskip_off.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=590 x=890 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [else]
-[button name="hint_on" graphic="button_kskip_on.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=590 x=890 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
@@ -833,7 +835,7 @@ $(".1_fore").empty();
 $(".hint_on").remove();
 $(".tips_btn").hide();
 [endscript]
-[button name="hint_off" graphic="button_kskip_off.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=590 x=890 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 @jump target="stop"
 [else]
@@ -841,7 +843,7 @@ $(".tips_btn").hide();
 $(".hint_off").remove();
 $(".tips_btn").show();
 [endscript]
-[button name="hint_on" graphic="button_kskip_on.png" height=50 width=50 y=590 x=900 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=590 x=890 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
 @jump target="stop"
