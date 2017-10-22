@@ -120,7 +120,7 @@ $(".layer_free").css("opacity",0);
 [locate x=880 y=24]
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start" exp="f.event_replay='none'"]
 [wait time=10]
-;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ
+;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ[eval exp="f.get_tips = 0"]
 [if exp="f.get_tips == 1"]
 ;オンのときはオフを表示
 [button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
@@ -180,7 +180,10 @@ tf.hint1="ヒント１";
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
+;[elsif exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
+;別のクリアリストから来た場合はボタン表示させる→みたくないときは押さなければいいのでは
 [else]
+[button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
 [image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [endif]
@@ -714,6 +717,7 @@ $(".loding_pic").remove();
 $(".loding_pic2").remove();
 $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
+$("tips_btn").css("opacity",0);
 [endscript]
 *stop
 
@@ -832,16 +836,18 @@ $(".1_fore").empty();
 [if exp="f.get_tips == 1"]
 [iscript]
 $(".hint_on").remove();
-$(".tips_btn").hide();
 [endscript]
-[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+;オンのときはオフを表示
+[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
 @jump target="tips_btn"
 [else]
 [iscript]
 $(".hint_off").remove();
-$(".tips_btn").show();
+$("p.tips").text("デフォルト文字");
+$("tips_btn").css("opacity",1);
 [endscript]
+;オフのときはオンを表示
 [button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
@@ -849,16 +855,10 @@ $(".tips_btn").show();
 [s]
 
 *tips_btn
-;オフからオンにしたときの書き換え処理　
-;待ち発生するので最小限に必要な分のみまとめる→どの道、大量の未、場合待ちが発生する
-[if exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
-[button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
-;後からだしたものについてはCSSがききませんので再度かける
+;オフからオンにしたときの書き換え処理　初めから表示させておく→opactyで回避できないか？
 [iscript]
-$(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+$("tips_btn").css("opacity",1);
 [endscript]
-[endif]
-
 @jump target="stop"
 [s]
 
