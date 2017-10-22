@@ -725,7 +725,7 @@ $(".loding_pic2").remove();
 $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
-[wait time=50]
+[wait time=100]
 [iscript]
 $(".fixlayer").css("opacity",1);
 [endscript]
