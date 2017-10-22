@@ -113,6 +113,7 @@ $(".test").remove();
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;================================ボタン隠し=======================================================
+@layopt layer="fix" visible=true
 [iscript]
 $(".layer_free").css("opacity",0);
 $(".fixlayer").css("opacity",0);
@@ -172,11 +173,7 @@ $(".fixlayer").css("opacity",0);
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
 *common
-[iscript]
-//ヒントを設定　実際は別のシナリオへ
-tf.hint1="ヒント1";
-tf.hint2="ヒント2";
-[endscript]
+[call storage="sijyou/sijyou_event_clearhint.ks"]
 ;====================================================================================================
 ;判定処理をまとめます
 *hantei_efect
@@ -203,7 +200,8 @@ tf.hint2="ヒント2";
 [button name="sijyou_9_2" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='sijyou_9_2'"]
 [image name="day,day9_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
 [else]
-[image name="day,day9_2,sijyou_9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+[button name=day,day9_2,sijyou_9_2,tips_9_2,tips_btn" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='sijyou_9_2'"]
+;[image name="day,day9_2,sijyou_9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".day9_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
