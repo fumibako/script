@@ -161,14 +161,6 @@ f.get_tips = 1;
 //ここに全部ヒントテキストの設定　できたらこの辺りはloadjsやcallに記入
 tf.hint1="ヒント１";
 tf.hint2="ヒント2";
-//&& f.event_replay == 'sijyou'
-if(f.get_tips == 1){
-$(".tips_6_1").click(function () {
- //$('p.tips').text(tf.hint1);
- alert("反応");
-});
-}
-
 [endscript]
 
 ;判定処理をまとめます
@@ -717,6 +709,15 @@ $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
 *stop
+[iscript]
+if(f.get_tips == 1){
+//&& f.event_replay == 'sijyou'
+$(".tips_6_1").click(function () {
+ //$('p.tips').text(tf.hint1);
+ alert("反応");
+});
+}
+[endscript]
 [s]
 
 *sijyou_sinario
