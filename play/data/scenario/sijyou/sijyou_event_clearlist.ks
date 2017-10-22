@@ -122,10 +122,10 @@ $(".layer_free").css("opacity",0);
 [wait time=10]
 ;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ
 [if exp="f.get_tips == 1"]
-[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=590 x=890 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [else]
-[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=590 x=890 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
@@ -179,7 +179,7 @@ tf.hint1="ヒント１";
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [elsif exp="sf.event_sijyou_event_6_1 != 1 && f.get_tips == 1"]
-;ここにボタンを書く場合、オフ→オンにした時に再度書き換え待ちをする必要な気がします なら、そうならないようにすれば？ nameにtips_btnを与えて消す
+;ここにボタンを書く場合、オフ→オンにした時に再度書き換え待ちをする必要な気がします なら、そうならないようにすれば？ nameにtips_btnを与えて消す 書き換え専用処理をつくる
 [button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
 [else]
 [image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
@@ -835,17 +835,23 @@ $(".1_fore").empty();
 $(".hint_on").remove();
 $(".tips_btn").hide();
 [endscript]
-[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=590 x=890 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
-@jump target="stop"
+@jump target="tips_btn"
 [else]
 [iscript]
 $(".hint_off").remove();
 $(".tips_btn").show();
 [endscript]
-[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=590 x=890 target="get_tips_label" exp="f.get_tips=1"]
+[button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
+@jump target="stop"
+[s]
+
+*tips_btn
+;オフからオンにしたときの書き換え処理
+[button name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
 @jump target="stop"
 [s]
 
