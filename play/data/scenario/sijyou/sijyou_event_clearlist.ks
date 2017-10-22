@@ -166,8 +166,8 @@ $(".fixlayer").css("opacity",0);
 ;[ptext name="pasent" text="&tf.sansaku_pasent" layer=26 size=25 x=720 y=80 color="khaki"]
 ;[ptext name="pasent1" text="%" layer=26 size=20 x=760 y=83 color="khaki"]
 ;散策数
-[ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=720 y=80 color="khaki"]
-[ptext name="pasent1" text="/12" layer=26 size=20 x=760 y=83 color="khaki"]
+[ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=735 y=80 color="khaki"]
+[ptext name="pasent1" text="/12" layer=26 size=20 x=775 y=83 color="khaki"]
 ;====================================================================================================
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
