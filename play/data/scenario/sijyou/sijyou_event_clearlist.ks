@@ -110,13 +110,20 @@ $(".test").remove();
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
-;================================移動ボタン=======================================================
+;================================ボタン隠し=======================================================
 [iscript]
 $(".layer_free").css("opacity",0);
 [endscript]
+;================================移動ボタン=======================================================
 [locate x=880 y=24]
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start" exp="f.event_replay='none'"]
 [wait time=10]
+;共通の処理なので実際の表示とtargetは別のシナリオを読み込み判定しその中で飛ぶ
+[button name="hint_on" graphic="button_kskip_on.png" height=50 width=50 y=590 x=930 target="get_tips_label" exp="f.get_tips=1" cond="f.get_tips!=1"]
+[wait time=10]
+[button name="hint_off" graphic="button_kskip_off.png" height=50 width=50 y=590 x=930 target="get_tips_label" exp="f.get_tips=1" cond="f.get_tips==1"]
+[wait time=10]
+;=============================キャラクター指定移動ボタン==========================================================
 ;y=550
 [button name="c_name1" graphic="name_kuroda.png" y=590 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=590 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
@@ -157,8 +164,7 @@ $(".layer_free").css("opacity",0);
 [iscript]
 $("p.tips").text("書き換えた テスト中です");
 //f.get_tipsがオンのときのみ反応　現在はテスト中
-f.get_tips = 1;
-
+//ヒントを設定　実際は別のシナリオへ
 tf.hint1="ヒント１";
 [endscript]
 ;====================================================================================================
@@ -820,3 +826,6 @@ $(".1_fore").empty();
 @jump target="stop"
 [s]
 
+*get_tips_label
+@jump target="stop"
+[s]
