@@ -829,14 +829,13 @@ $(".1_fore").empty();
 
 *tips_label
 ;テキストの書き換えを行うか判定し、trueであればテキストを書き換えます
+[if exp="f.get_tips == 1"]
 [iscript]
-if(f.get_tips == 1){
 $("p.tips").text(tf.tips);
-}
 [endscript]
+[endif]
+;fixなのでreturnする
 [return]
-;@jump target="stop"
-;@jump target=hantei_efectにもどるとcssエフェクトがかからないようにしなくてはならない
 [s]
 
 *get_tips_label
