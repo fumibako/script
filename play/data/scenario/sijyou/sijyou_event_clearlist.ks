@@ -207,14 +207,6 @@ $(".fixlayer").css("opacity",0);
 [if exp="sf.event_sijyou_9_3 == 1"]
 [button name="sijyou_9_3" graphic="day9_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='sijyou_9_3'"]
 [image name="day,day9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
-[else]
-[image name="day,day9_3,sijyou_9_3" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".day9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,day9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
 [endif]
 
 ;◆四条9_4
@@ -224,14 +216,6 @@ $(".day9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [wait time=10]
 [button name="sijyou_9_4" graphic="day9_4.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='sijyou_9_4'"]
 [image name="day,day9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
-[else]
-[image name="day,day9_4,sijyou_9_4" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".day9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,day9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
 [endif]
 
 ;◆四条10_1
@@ -667,7 +651,7 @@ $(".day9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_9_2 != 1"]
-[button fix=true name="day,day9_2,sijyou_9_2,tips_9_2,tips_btn" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y3 exp="tf.tips=tf.hint3"'"]
+[button fix=true name="day,day9_2,sijyou_9_2,tips_9_2,tips_btn" graphic="day9_2.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y3 exp="tf.tips=tf.hint3"]
 ;[image name="day,day9_2,sijyou_9_2" storage="../image/day9_2.png" layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -676,6 +660,28 @@ $(".day9_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [wait time=10]
 [image name="day,day9_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
 [wait time=10]
+[endif]
+
+[if exp="sf.event_sijyou_9_3 != 1"]
+[button fix=true name="sijyou_9_3" graphic="day9_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y4 exp="tf.tips=tf.hint4"]
+;[image name="day,day9_3,sijyou_9_3" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".day9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,day9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_9_4 != 1"]
+[button fix=true name="sijyou_9_4" graphic="day9_4.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y5 exp="tf.tips=tf.hint5"]
+;[image name="day,day9_4,sijyou_9_4" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".day9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,day9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
 [endif]
 ;===============================================================================================
 [iscript]
