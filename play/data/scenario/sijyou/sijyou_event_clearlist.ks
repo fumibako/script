@@ -166,7 +166,6 @@ $(".layer_free").css("opacity",0);
 ;nameについて説明 日付画像sijyou_6_1  他画像day6_1  全体にわりふられたname…day
 ;====================================================================================================
 *common
-;試用スクリプト クリックと条件を入れる　.textでは反応しない
 [iscript]
 //ヒントを設定　実際は別のシナリオへ
 tf.hint1="ヒント１";
@@ -838,7 +837,9 @@ $("p.tips").text(tf.tips);
 ;最低限の書き替え
 [if exp="f.get_tips == 1"]
 [iscript]
+f.get_tips=1;
 $(".hint_on").remove();
+$("p.tips").text("現在、ヒントはオンです");
 [endscript]
 ;オンのときはオフを表示
 [button name="hint_off" graphic="button_kskip_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
@@ -847,8 +848,9 @@ $(".hint_on").remove();
 @jump target="stop"
 [else]
 [iscript]
+f.get_tips=0;
 $(".hint_off").remove();
-$("p.tips").text("ヒントを表示したい場合は（説明）してください");
+$("p.tips").text("現在、ヒントはオフです");
 [endscript]
 ;オフのときはオンを表示
 [button name="hint_on" graphic="button_kskip_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
