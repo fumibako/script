@@ -854,8 +854,8 @@ f.get_tips=1;
 $(".hint_on").remove();
 $("p.tips").text("現在、ヒントはオンです");
 [endscript]
-;オンのときはオフを表示
-[button name="hint_off" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
+[button name="hint_off" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
 ;@jump target="tips_btn"
 @jump target="stop"
@@ -865,8 +865,8 @@ f.get_tips=0;
 $(".hint_off").remove();
 $("p.tips").text("現在、ヒントはオフです");
 [endscript]
-;オフのときはオンを表示
-[button name="hint_on" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+;オフの時はオフを表示(元：オフのときはオンを表示)
+[button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
 @jump target="stop"
