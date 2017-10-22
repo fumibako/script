@@ -830,6 +830,7 @@ if(f.get_tips == 1){
 $("p.tips").text(tf.tips);
 }
 [endscript]
+@jump target="stop"
 [s]
 
 *get_tips_label
