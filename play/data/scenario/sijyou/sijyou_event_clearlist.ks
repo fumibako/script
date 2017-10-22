@@ -186,19 +186,6 @@ tf.hint2="ヒント2";
 [if exp="sf.event_sijyou_event_6_1 == 1"]
 [button name="sijyou_6_1" graphic="day6_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='sijyou_6_1'"]
 [image name="day,day6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
-[else]
-;tips_labelにとびます
-[button fix=true name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
-;[image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-[endif]
-;未判定はまとめる
-[if exp="sf.event_sijyou_event_6_1 != 1"]
-[iscript]
-$(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-;未に影はかけないので最後に
-[image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [endif]
 
 ;四条9_1 ◆はまとめる
@@ -207,16 +194,6 @@ $(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [if exp="sf.event_sijyou_9_1 == 1"]
 [button name="sijyou_9_1" graphic="day9_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='sijyou_9_1'"]
 [image name="day,day9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
-[else]
-;tips_labelにとびます
-[button fix=true name="day,day9_1,sijyou_9_1,tips_9_1,tips_btn" graphic="day9_1.png" target="tips_label" x=&tf.x1 y=&tf.y2 exp="tf.tips=tf.hint2"]
-;[image name="day,day9_1,sijyou_9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".day9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,day9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [endif]
 
 ;四条9_2 ◆はまとめる
@@ -718,19 +695,40 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [wait time=10]
 [image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]		 
 [endif]
-;===============================================================================================
 [iscript]
 $(".loding_pic").remove();
 $(".loding_pic2").remove();
 $(".loding_pic1").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
-[wait time=100]
+;=========================================未の判定はまとめる===================================================
+;tips_labelにとびます
+[if exp="sf.event_sijyou_event_6_1 != 1"]
+[button fix=true name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
+;[image name="day,day6_1,sijyou_6_1,tips_6_1" storage="../image/day6_1.png" layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".day6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+;未に影はかけないので最後に
+[image name="day,day6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
+[endif]
+
+[if exp="sf.event_sijyou_event_9_1 != 1"]
+[button fix=true name="day,day9_1,sijyou_9_1,tips_9_1,tips_btn" graphic="day9_1.png" target="tips_label" x=&tf.x1 y=&tf.y2 exp="tf.tips=tf.hint2"]
+;[image name="day,day9_1,sijyou_9_1" storage="../image/day9_1.png" layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".day9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(100%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,day9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
+[endif]
+;===============================================================================================
 [iscript]
 $(".fixlayer").css("opacity",1);
 [endscript]
 *stop
-
 [s]
 
 *sijyou_sinario
