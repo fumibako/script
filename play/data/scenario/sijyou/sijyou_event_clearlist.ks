@@ -710,13 +710,10 @@ $(".layer_free").css("opacity",1);
 [endscript]
 *stop
 [iscript]
-if(f.get_tips == 1){
-//&& f.event_replay == 'sijyou'
 $(".tips_6_1").click(function () {
  //$('p.tips').text(tf.hint1);
- alert("反応");
+  alert('反応!');
 });
-}
 [endscript]
 [s]
 
