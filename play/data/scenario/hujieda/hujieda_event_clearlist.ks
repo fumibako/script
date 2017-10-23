@@ -584,6 +584,7 @@ $(".loding_pic1").remove();
 $(".loding_pic2").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
+*stop
 [s]
 
 *hujieda_sinario
