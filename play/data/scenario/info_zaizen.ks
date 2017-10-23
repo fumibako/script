@@ -26,9 +26,11 @@
 *start
 *info_zaizen
 ;クリアリストのfixボタンの削除
+[if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' ||f.event_replay == 'hujieda' || f.event_replay == 'none'"]
 [iscript]
 $(".tips_btn").remove();
 [endscript]
+[endif]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [eval exp="f.oaite_viewing_storage = 'info_zaizen.ks'"]
