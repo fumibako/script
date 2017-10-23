@@ -93,4 +93,28 @@
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (18 + 4) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.hujieda_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
+
+;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
+[iscript]
+tf.hint1="藤枝ヒント1";
+tf.hint2="藤枝ヒント2";
+tf.hint3="藤枝ヒント3";
+tf.hint4="藤枝ヒント4";
+tf.hint5="藤枝ヒント5";
+tf.hint6="藤枝ヒント6";
+tf.hint7="藤枝ヒント7";
+tf.hint8="藤枝ヒント8";
+tf.hint9="藤枝ヒント9";
+tf.hint10="藤枝ヒント10";
+tf.hint11="藤枝ヒント11";
+tf.hint12="藤枝ヒント12";
+tf.hint13="藤枝ヒント13";
+tf.hint14="藤枝ヒント14";
+tf.hint15="藤枝ヒント15";
+tf.hint16="藤枝ヒント16";
+//散策
+tf.hint17="藤枝ヒント17";
+tf.hint18="藤枝ヒント18";
+[endscript]
+
 [return]
