@@ -638,7 +638,7 @@ $(".day10_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 
 ;【７】
 [if exp="sf.event_sijyou_10_3 != 1"]
-[button fix=true name="day,day10_3,sijyou_10_3,tips_btn" graphic="day10_3.png" target="tips_label" x=&tf.x1 y=&tf.y7  exp="tf.tips=tf.hint7"]
+[button fix=true name="day,day10_3,sijyou_10_3,tips_btn" graphic="day10_3.png" target="tips_label" x=&tf.x1 y=&tf.y7 exp="tf.tips=tf.hint7"]
 ;[image name="day,day10_3,sijyou_10_3" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 [iscript]
