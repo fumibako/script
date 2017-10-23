@@ -352,7 +352,7 @@ $(".katuragi_event_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 
 ;katuragi_7_2 夢イベント
 [if exp="sf.event_katuragi_6_1 != 1"]
-[button name="day,katuragi_7_2,k_7_2,tips_btn" graphic="day7_2.png" target="tips_label" x=&tf.x1 y=&tf.y2 exp="tf.tips=tf.hint2"]
+[button fix=true name="day,katuragi_7_2,k_7_2,tips_btn" graphic="day7_2.png" target="tips_label" x=&tf.x1 y=&tf.y2 exp="tf.tips=tf.hint2"]
 ;[image name="day,katuragi_7_2,k_7_2" storage="../image/day7_2.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
