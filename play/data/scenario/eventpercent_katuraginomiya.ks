@@ -90,4 +90,27 @@
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (17 + 3) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.katuraginomiya_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
+
+
+;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
+[iscript]
+tf.hint1="葛城宮ヒント1";
+tf.hint2="葛城宮ヒント2";
+tf.hint3="葛城宮ヒント3";
+tf.hint4="葛城宮ヒント4";
+tf.hint5="葛城宮ヒント5";
+tf.hint6="葛城宮ヒント6";
+tf.hint7="葛城宮ヒント7";
+tf.hint8="葛城宮ヒント8";
+tf.hint9="葛城宮ヒント9";
+tf.hint10="葛城宮ヒント10";
+tf.hint11="葛城宮ヒント11";
+tf.hint12="葛城宮ヒント12";
+tf.hint13="葛城宮ヒント13";
+tf.hint14="葛城宮ヒント14";
+tf.hint15="葛城宮ヒント15";
+//散策
+tf.hint16="葛城宮ヒント16";
+tf.hint17="葛城宮ヒント17";
+[endscript]
 [return]
