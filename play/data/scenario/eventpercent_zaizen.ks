@@ -88,6 +88,10 @@ tf.hint11="財前ヒント11";
 tf.hint12="財前ヒント12";
 //散策
 tf.hint13="財前ヒント13";
+tf.hint_bad="ヒントbad";
+tf.hint_bad2="ヒントbad2";
+tf.hint_nomal="ヒントnomal";
+tf.hint_good="ヒントgood";
 [endscript]
 
 [return]
