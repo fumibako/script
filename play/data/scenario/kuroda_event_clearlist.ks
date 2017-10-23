@@ -288,7 +288,8 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [if exp="sf.ED_kuroda_bad == 1"]
 [button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" text="BAD1" size=15 target="kuroda_sinario" exp="tf.jp_sinario='kuroda_12_3_badED'"]
 [image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
-[else]
+[endif]
+[if exp="sf.ED_kuroda_bad != 1"]
 [image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -302,7 +303,8 @@ $(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" text="nomal" size=15 target="kuroda_sinario" exp="tf.jp_sinario='kuroda_3_4_normalED'"]
 [image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
-[else]
+[endif]
+[if exp="sf.ED_kuroda_normal != 1"]
 [image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -316,7 +318,8 @@ $(".ending3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" text="good" size=15 target="kuroda_sinario" exp="tf.jp_sinario='kuroda_3_4_goodED'"]
 [image name="ending4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
-[else]
+[endif]
+[if exp="sf.ED_kuroda_good != 1"]
 [image name="day,ending4" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -327,7 +330,6 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [endif]
 ;=============================================未判定==========================================================
 *mihantei
-
 [if exp="sf.event_kuroda_event_6_1 != 1"]
 [image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [iscript]
@@ -386,7 +388,6 @@ $(".kuroda_10_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [wait time=10]
 [image name="day,kuroda_10_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
 [endif]
-
 
 [if exp="sf.event_kuroda_11_1 != 1"]
 [image name="day,kuroda_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
@@ -476,7 +477,6 @@ $(".kuroda_2_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 [wait time=10]
 [image name="day,kuroda_2_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+140" y=&tf.y7 visible=true]
 [endif]
-
 ;==================================================================================================================-
 [iscript]
 $(".loding_pic").remove();
