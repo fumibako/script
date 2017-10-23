@@ -100,5 +100,10 @@ tf.hint14="黒田ヒント14";
 tf.hint15="黒田ヒント15";
 
 tf.hint16="黒田ヒント16";
+
+tf.hint_bad="ヒントbad";
+tf.hint_bad2="ヒントbad2";
+tf.hint_nomal="ヒントnomal";
+tf.hint_good="ヒントgood";
 [endscript]
 [return]
