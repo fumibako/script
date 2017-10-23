@@ -116,6 +116,7 @@ $(".test").remove();
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;================================ボタン隠し=======================================================
 @layopt layer="fix" visible=true
+[button fix=true name="tips_btn" graphic="toumei.gif" x=0 y=0]
 [iscript]
 $(".layer_free").css("opacity",0);
 $(".fixlayer").css("opacity",0);
