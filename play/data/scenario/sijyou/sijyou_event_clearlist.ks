@@ -117,7 +117,6 @@ $(".test").remove();
 ;================================ボタン隠し=======================================================
 @layopt layer="fix" visible=true
 [iscript]
-$(".fixlayer").css('z-index', 1);	
 $(".layer_free").css("opacity",0);
 $(".fixlayer").css("opacity",0);
 [endscript]
@@ -425,7 +424,9 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [if exp="sf.ED_sijyou_bad == 1"]		
 [button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_10_3_badED'"]		
 [image name="ending1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]		
-[else]		
+[endif]
+[if exp="sf.ED_sijyou_bad != 1"]
+;[button fix=true name="day,ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="tips_label" exp="tf.tips=tf.hint_bad"]
 [image name="day,ending1" storage="../image/day_bad1.png" layer=26 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]		
 [wait time=10]
 [iscript]
@@ -440,7 +441,9 @@ $(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [button name="ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_3_4_goodED'"]		
 [image name="ending3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x7" y="&tf.end2_y" visible=true wait=true]		
 [wait time=10]		
-[else]		
+[endif]
+[if exp="sf.ED_sijyou_normal != 1"]
+;[button fix=true name="day,ending3" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="tips_label" exp="tf.tips=tf.hint_nomal"]		
 [image name="day,ending3" storage="../image/day_nomal.png" layer=26 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]		
 [wait time=10]
 [iscript]
@@ -455,7 +458,9 @@ $(".ending3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [button name="ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" size=15 target="sijyou_sinario_ed" exp="tf.jp_sinario='sijyou_3_4_epilogue_goodED'"]		
 [image name="ending4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]		
 [wait time=10]		
-[else]		
+[endif]	
+[if exp="sf.ED_sijyou_good != 1"]
+;[button fix=true name="day,ending4" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" size=15 target="tips_label" exp="tf.tips=tf.hint_good"]		
 [image name="day,ending4" storage="../image/day_good.png" layer=26 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]		
 [wait time=10]
 [iscript]
