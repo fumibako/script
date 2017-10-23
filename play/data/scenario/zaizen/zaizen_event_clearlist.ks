@@ -403,6 +403,7 @@ $(".layer_free").css("opacity",1);
 ;==================================================================================-
 *zaizen_sinario
 [cm]
+@clearfix
 ;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
 ;一瞬、お稽古画面がみえるのを何とかしたい
 [if exp="f.okeiko_gamen == true"]
@@ -477,4 +478,49 @@ $(".1_fore").empty();
 [eval exp="f.event_replay = 'none'"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
+[s]
+*tips_onoff
+;f.event_replay = ;
+[eval exp="f.event_replay = ''sijyou''"]
+[eval exp="f.get_tips = 1 "]
+;また判定に飛ぶと待ち時間が発生するので適度な場所で　仮にstop
+@jump target="stop"
+[s]
+
+*tips_label
+;テキストの書き換えを行うか判定し、trueであればテキストを書き換えます
+[if exp="f.get_tips == 1"]
+[iscript]
+$("p.tips").text(tf.tips);
+[endscript]
+[endif]
+;fixなのでreturnする
+[return]
+[s]
+
+*get_tips_label
+;onoffのフラグはボタンで行う
+;最低限の書き替え
+[if exp="f.get_tips == 1"]
+[iscript]
+f.get_tips=1;
+$(".hint_on").remove();
+$("p.tips").text("現在、ヒントはオンです");
+[endscript]
+;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
+[button name="hint_off" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+[wait time=10]
+;@jump target="tips_btn"
+@jump target="stop"
+[else]
+[iscript]
+f.get_tips=0;
+$(".hint_off").remove();
+$("p.tips").text("現在、ヒントはオフです");
+[endscript]
+;オフの時はオフを表示(元：オフのときはオンを表示)
+[button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+[wait time=10]
+[endif]
+@jump target="stop"
 [s]
