@@ -556,7 +556,8 @@ $(".hujieda_2_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [endif]
 ;=========================================散策未判定===========================================================
 [if exp="sf.event_hujieda_sansaku != 1"]
-[image name="day,hujieda_sansaku,h_s1" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[button name="hujieda_sansaku" graphic="day2_3.png" target="tips_label" x=&tf.x3 y=&tf.y1 exp="tf.tips=tf.hint17"]
+;[image name="day,hujieda_sansaku,h_s1" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -566,7 +567,8 @@ $(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'bright
 [endif]
 
 [if exp="sf.event_hujieda_bazaar != 1"]
-[image name="day,hujieda_bazaar,h_bz" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[button name="hujieda_bazaar" graphic="day3_2.png" target="tips_label" x=&tf.x3 y=&tf.y2 exp="tf.tips=tf.hint18"]
+;[image name="day,hujieda_bazaar,h_bz" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".hujieda_bazaar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
