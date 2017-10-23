@@ -557,6 +557,7 @@ $(".layer_free").css("opacity",1);
 
 *hujieda_sinario
 [cm]
+@clearfix
 ;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
 ;一瞬、お稽古画面がみえるのを何とかしたい
 [if exp="f.okeiko_gamen == true"]
