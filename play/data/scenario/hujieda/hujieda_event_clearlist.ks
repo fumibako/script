@@ -3,17 +3,22 @@
 ;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
 ;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
 ;このシナリオの戻り値は　f.event_replay = 'hujieda';　です。
+;ヒントの表示フラグは適当な場所でオフに等にしてください。
+[eval exp="f.get_tips = 0"]
 ;====================================================================================================
 *start
 @clearfix
 @clearstack
 [cm]
+[eval exp="tf.jp_sinario='none'"]
 [iscript]
 $(".pasent").remove();
 $(".pasent1").remove();
 $(".chara_name_area").empty();
 [endscript]
+;========================================被せ背景===========================================================
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_clearlist.jpg" time=500 visible=true]
+;========================================被せ名前表示===========================================================
 [if exp="sf.event_hujieda_8_4 == 1"]
 [image name="loding_pic2" layer=29 storage="../image/name_hujieda.png" x=250 y=35 visible=true]
 [elsif exp="sf.event_hujieda_7_4 == 1 && sf.event_hujieda_8_4 != 1"]
@@ -23,11 +28,12 @@ $(".chara_name_area").empty();
 [endif]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu2.gif" left=740 top=580 visible=true]
 [wait time=50]
+;====================================================================================================
 ;リプレイから帰ってきてokeikoフラグを戻す処理
 ;[if exp="f.clearlist_out_storage == 'info_hujieda.ks'"]
 ;[eval exp="f.okeiko_gamen = true"]
 ;[endif]
-;====================================================================================================
+;======================================テスト表示======================================================
 *test
 [if exp="f.okeiko_gamen != true"]
 [iscript]
@@ -76,7 +82,7 @@ $(".test").empty();
 [eval exp="tf.y8 = tf.y7 + tf.y_plus_position"]
 [eval exp="tf.y9 = tf.y8 + tf.y_plus_position"]
 [eval exp="tf.y10 = tf.y9 + tf.y_plus_position"]
-;================================背景表示;================================
+;================================背景表示;=======================================================
 ;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
 [image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
 [wait time=10]
@@ -89,6 +95,16 @@ $(".layer_free").css("opacity",0);
 [locate x=880 y=24]
 [button name="back_clearlist" graphic="back.png" height=50 width=50 storage="&f.clearlist_out_storage" exp="f.event_replay='none'" target="*start"]
 [wait time=10]
+;================================ヒントの表示=======================================================
+[if exp="f.get_tips == 1"]
+[ptext name="tips" text="現在、ヒントの表示はオンです" layer=26 size=22 x=100 y=550 color=snow]
+[wait time=50]
+;※waitしないと書き換えられません！
+[else]
+[ptext name="tips" text="現在、ヒントの表示はオフです" layer=26 size=22 x=100 y=550 color=snow]
+[wait time=50]
+[endif]
+;=============================キャラクター指定移動ボタン=================================================
 [button name="c_name1" graphic="name_kuroda.png" y=590 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=590 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
 [button name="c_name1" graphic="name_zaizen.png" y=590 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
@@ -102,7 +118,7 @@ $(".layer_free").css("opacity",0);
 [elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
 [button name="c_name1" graphic="name_hatena.png" y=590 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [endif]
-;=======================================================================================
+;=========================================================================================================
 *check_event
 ;名前表示
 [if exp="sf.event_hujieda_8_4 == 1"]
@@ -127,7 +143,6 @@ $(".layer_free").css("opacity",0);
 ;=======================================================================================
 *common
 ;判定処理をまとめます
-
 ;◆sf.event_hujieda_4_4
 [image name="day,hujieda_4_4" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
@@ -269,16 +284,6 @@ $(".layer_free").css("opacity",0);
 [image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true wait=true]
 [endif]
 
-[if exp="sf.event_hujieda_sansaku != 1"]
-[image name="day,hujieda_sansaku,h_s1" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true wait=true]
-[endif]
-
 ;3_2
 ;sf.event_hujieda_bazaar
 [image name="day,hujieda_bazaar" storage="../image/day_check.png" layer=26 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
@@ -286,16 +291,6 @@ $(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'bright
 [if exp="sf.event_hujieda_bazaar == 1"]
 [button name="hujieda_bazaar" graphic="day3_2.png" target="hujieda_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='hujieda_bazaar_1'"]
 [image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true wait=true]
-[endif]
-
-[if exp="sf.event_hujieda_bazaar != 1"]
-[image name="day,hujieda_bazaar,h_bz" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".hujieda_bazaar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true wait=true]
 [endif]
 ;=============================================エンディングタイトル=========================================================
 ;enndingボタン位置
@@ -531,6 +526,26 @@ $(".hujieda_2_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 [wait time=10]
 [image name="day,hujieda_2_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y8 visible=true wait=true]
 [endif]
+;=========================================散策未判定===========================================================
+[if exp="sf.event_hujieda_sansaku != 1"]
+[image name="day,hujieda_sansaku,h_s1" storage="../image/day2_3.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y1 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_hujieda_bazaar != 1"]
+[image name="day,hujieda_bazaar,h_bz" storage="../image/day3_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".hujieda_bazaar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+130" y=&tf.y2 visible=true wait=true]
+[endif]
 ;====================================================================================================
 [iscript]
 $(".loding_pic").remove();
@@ -616,4 +631,50 @@ $(".1_fore").empty();
 [eval exp="f.event_replay = 'none'"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
+[s]
+
+*tips_onoff
+;f.event_replay = ;
+[eval exp="f.event_replay = ''sijyou''"]
+[eval exp="f.get_tips = 1 "]
+;また判定に飛ぶと待ち時間が発生するので適度な場所で　仮にstop
+@jump target="stop"
+[s]
+
+*tips_label
+;テキストの書き換えを行うか判定し、trueであればテキストを書き換えます
+[if exp="f.get_tips == 1"]
+[iscript]
+$("p.tips").text(tf.tips);
+[endscript]
+[endif]
+;fixなのでreturnする
+[return]
+[s]
+
+*get_tips_label
+;onoffのフラグはボタンで行う
+;最低限の書き替え
+[if exp="f.get_tips == 1"]
+[iscript]
+f.get_tips=1;
+$(".hint_on").remove();
+$("p.tips").text("現在、ヒントはオンです");
+[endscript]
+;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
+[button name="hint_off" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+[wait time=10]
+;@jump target="tips_btn"
+@jump target="stop"
+[else]
+[iscript]
+f.get_tips=0;
+$(".hint_off").remove();
+$("p.tips").text("現在、ヒントはオフです");
+[endscript]
+;オフの時はオフを表示(元：オフのときはオンを表示)
+[button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+[wait time=10]
+[endif]
+@jump target="stop"
 [s]
