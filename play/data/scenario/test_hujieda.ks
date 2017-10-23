@@ -1,4 +1,5 @@
-﻿﻿[setreplay name="test"]
+[setreplay name="test"]
+@clearfix
 *test
 *start
 [stopbgm]
