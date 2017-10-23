@@ -565,7 +565,7 @@ $(".day11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 
 ;【９】
 [if exp="sf.event_sijyou_1_1 != 1"]
-[button fix=true name="day,day1_1,sijyou_1_1" graphic="day1_1.png" target="tips_label" x=&tf.x2 y=&tf.y1 exp="tf.tips=tf.hint9"]
+[button fix=true name="day,day1_1,sijyou_1_1,tips_btn" graphic="day1_1.png" target="tips_label" x=&tf.x2 y=&tf.y1 exp="tf.tips=tf.hint9"]
 [image name="day,day1_1,sijyou_1_1" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
