@@ -11,9 +11,11 @@
 @clearfix
 [cm]
 [eval exp="tf.jp_sinario='none'"]
+;tipsで書き換えするため別途必要
 [iscript]
 $(".pasent").remove();
 $(".pasent1").remove();
+$(".tips").remove();
 $(".chara_name_area").empty();
 [endscript]
 ;リプレイから帰ってきてokeikoフラグを戻す処理（仮）自動で戻るなら無しでいいです
