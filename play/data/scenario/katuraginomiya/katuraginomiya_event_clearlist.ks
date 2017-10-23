@@ -509,7 +509,7 @@ $(".katuragi_bazar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightn
 [if exp="sf.event_katuragi_sansaku1 != 1"]
 [button fix=true name="day,katuragi_sansaku1,k_s1,tips_btn" graphic="day2_2.png" target="tips_label" x=&tf.x3 y=&tf.y1 exp="tf.tips=tf.hint16"]
 ;[image name="day,katuragi_sansaku1,k_s1" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
-[wait time=10
+[wait time=10]
 [iscript]
 $(".katuragi_sansaku1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
