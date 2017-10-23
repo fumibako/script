@@ -71,4 +71,24 @@
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (13 + 4) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.zaizen_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
+
+
+;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
+[iscript]
+tf.hint1="財前ヒント1";
+tf.hint2="財前ヒント2";
+tf.hint3="財前ヒント3";
+tf.hint4="財前ヒント4";
+tf.hint5="財前ヒント5";
+tf.hint6="財前ヒント6";
+tf.hint7="財前ヒント7";
+tf.hint8="財前ヒント8";
+tf.hint9="財前ヒント9";
+tf.hint10="財前ヒント10";
+tf.hint11="財前ヒント11";
+tf.hint12="財前ヒント12";
+//散策
+tf.hint13="財前ヒント13";
+[return]
+
 [return]
