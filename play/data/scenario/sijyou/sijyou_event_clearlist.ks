@@ -164,8 +164,8 @@ $(".fixlayer").css("opacity",0);
 [ptext name="pasent" text="&tf.event_pasent" layer=26 size=30 x=600 y=34 color=snow]
 [ptext name="pasent1" text="%" layer=26 size=25 x=650 y=35 color=snow]
 ;通常イベント
-[ptext name="pasent" text="&tf.event_Number_of_times" layer=26 size=25 x=300 y=75 color="khaki"]
-[ptext name="pasent1" text="/13" layer=26 size=20 x=330 y=80 color="khaki"]
+[ptext name="pasent" text="&tf.event_Number_of_times" layer=26 size=25 x=280 y=75 color="khaki"]
+[ptext name="pasent1" text="/13" layer=26 size=20 x=310 y=80 color="khaki"]
 ;散策数
 [ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=755 y=75 color="khaki"]
 [ptext name="pasent1" text="/12" layer=26 size=20 x=785 y=80 color="khaki"]
@@ -562,6 +562,7 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [endif]
 
 ;========================================未判定=======================================================
+*mihantei
 ;tips_labelにとびます
 [if exp="sf.event_sijyou_event_6_1 != 1"]
 [button fix=true name="day6_1,sijyou_6_1,tips_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
@@ -597,9 +598,9 @@ $(".day9_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [wait time=10]
 [endif]
 
-;name指定する
+;name指定する ,tips_btn
 [if exp="sf.event_sijyou_9_3 != 1"]
-[button fix=true name="sijyou_9_3" graphic="day9_3.png" target="tips_label" x=&tf.x1 y=&tf.y4 exp="tf.tips=tf.hint4"]
+[button fix=true name="day,day9_3,sijyou_9_3,tips_btn" graphic="day9_3.png" target="tips_label" x=&tf.x1 y=&tf.y4 exp="tf.tips=tf.hint4"]
 ;[image name="day,day9_3,sijyou_9_3" storage="../image/day9_3.png" layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -610,7 +611,7 @@ $(".day9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_9_4 != 1"]
-[button fix=true name="sijyou_9_4" graphic="day9_4.png" target="tips_label" x=&tf.x1 y=&tf.y5 exp="tf.tips=tf.hint5"]
+[button fix=true name="day,day9_4,sijyou_9_4,tips_btn" graphic="day9_4.png" target="tips_label" x=&tf.x1 y=&tf.y5 exp="tf.tips=tf.hint5"]
 ;[image name="day,day9_4,sijyou_9_4" storage="../image/day9_4.png" layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -621,7 +622,7 @@ $(".day9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_10_1 != 1"]
-[button name="sijyou_10_1" graphic="day10_1.png" target="tips_label" x=&tf.x1 y=&tf.y6 exp="tf.tips=tf.hint6"]
+[button name="day,day10_1,sijyou_10_1,tips_btn" graphic="day10_1.png" target="tips_label" x=&tf.x1 y=&tf.y6 exp="tf.tips=tf.hint6"]
 ;[image name="day,day10_1,sijyou_10_1" storage="../image/day10_1.png" layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -632,7 +633,7 @@ $(".day10_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [endif]
 
 [if exp="sf.event_sijyou_10_3 != 1"]
-;[button name="sijyou_10_3" graphic="day10_3.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='sijyou_10_3'"]
+;[button name="day,day10_3,sijyou_10_3,tips_btn" graphic="day10_3.png" target="tips_label" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='sijyou_10_3'"]
 [image name="day,day10_3,sijyou_10_3" storage="../image/day10_3.png" layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -643,7 +644,7 @@ $(".day10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [endif]
 
 [if exp="sf.event_sijyou_11_1 != 1"]
-;[button name="sijyou_11_1" graphic="day11_1.png" target="sijyou_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='sijyou_11_1'"]
+;[button name="day,day11_1,sijyou_11_1,tips_btn" graphic="day11_1.png" target="tips_label" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='sijyou_11_1'"]
 [image name="day,day11_1,sijyou_11_1" storage="../image/day11_1.png" layer=26 x=&tf.x1_2 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -654,7 +655,7 @@ $(".day11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [endif]
 
 [if exp="sf.event_sijyou_1_1 != 1"]
-;[button name="sijyou_1_1" graphic="day1_1.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='sijyou_1_1'"]
+;[button name="day,day1_1,sijyou_1_1" graphic="day1_1.png" target="tips_label" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='sijyou_1_1'"]
 [image name="day,day1_1,sijyou_1_1" storage="../image/day1_1.png" layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -665,7 +666,7 @@ $(".day1_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_1_3 != 1"]
-;[button name="sijyou_1_3" graphic="day1_3.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='sijyou_1_3'"]
+;[button name="day,day1_3,sijyou_1_3,tips_btn" graphic="day1_3.png" target="tips_label" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='sijyou_1_3'"]
 [image name="day,day1_3,sijyou_1_3" storage="../image/day1_3.png" layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -676,7 +677,7 @@ $(".day1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_1_4 != 1"]
-;[button name="sijyou_1_4" graphic="day1_4.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='sijyou_1_4'"]
+;[button name="day,day1_4,sijyou_1_4,tips_btn" graphic="day1_4.png" target="tips_label" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='sijyou_1_4'"]
 [image name="day,day1_4,sijyou_1_4" storage="../image/day1_4.png" layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -687,7 +688,7 @@ $(".day1_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_2_1 != 1"]
-;[button name="sijyou_2_1" graphic="day2_1.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y4 exp="tf.jp_sinario='sijyou_2_1'"]
+;[button name="day,day2_1,sijyou_2_1,tips_btn" graphic="day2_1.png" target="tips_label" x=&tf.x2 y=&tf.y4 exp="tf.jp_sinario='sijyou_2_1'"]
 [image name="day,day2_1,sijyou_2_1" storage="../image/day2_1.png" layer=26 x=&tf.x2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -698,7 +699,7 @@ $(".day2_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 [endif]
 
 [if exp="sf.event_sijyou_2_2_bazar != 1"]
-;[button name="sijyou_2_2" graphic="day2_2.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='sijyou_2_2_bazar_1'"]
+;[button name="day,day2_2,sijyou_2_2,tips_btn" graphic="day2_2.png" target="tips_label" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='sijyou_2_2_bazar_1'"]
 [image name="day,day2_2,sijyou_2_2" storage="../image/day2_2.png" layer=26 x=&tf.x2 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [iscript]
