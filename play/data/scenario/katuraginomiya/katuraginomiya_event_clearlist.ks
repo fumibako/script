@@ -535,7 +535,7 @@ $(".loding_pic1").remove();
 $(".loding_pic2").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
-;画像に変更します
+*stop
 [s]
 
 *katuragi_sinario_ed
