@@ -76,13 +76,36 @@ $(".test").remove();
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
-;================================移動ボタン=======================================================
+;================================ボタン隠し=======================================================
+@layopt layer="fix" visible=true
 [iscript]
 $(".layer_free").css("opacity",0);
+$(".fixlayer").css("opacity",0);
 [endscript]
+;================================移動ボタン=======================================================
 [locate x=880 y=24]
-[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage exp="f.event_replay='none'" target="*start"]
+[button name="back_clearlist" graphic="back.png" height=50 width=50 storage=&f.clearlist_out_storage target="*start" exp="f.event_replay='none'"]
 [wait time=10]
+;================================オンオフ=======================================================
+;[eval exp="f.get_tips = 0"]
+[if exp="f.get_tips == 1"]
+[button name="hint_off" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+[wait time=10]
+[else]
+;オフの時はオフ表示(元：オフのときはオンを表示)
+[button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+[wait time=10]
+[endif]
+;================================ヒントの表示=======================================================
+[if exp="f.get_tips == 1"]
+[ptext name="tips" text="現在、ヒントの表示はオンです" layer=26 size=22 x=100 y=550 color=snow]
+[wait time=50]
+;※waitしないと書き換えられません！
+[else]
+[ptext name="tips" text="現在、ヒントの表示はオフです" layer=26 size=22 x=100 y=550 color=snow]
+[wait time=50]
+[endif]
+;=============================キャラクター指定移動ボタン==========================================================
 [button name="c_name1" graphic="name_kuroda.png" y=590 x=100 storage="kuroda_event_clearlist.ks"]
 [button name="c_name1" graphic="name_sijyou.png" y=590 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
 [button name="c_name1" graphic="name_zaizen.png" y=590 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
