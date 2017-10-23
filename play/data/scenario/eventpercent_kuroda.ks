@@ -80,4 +80,25 @@
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (15 + 3) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.kuroda_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
+
+;ヒントを設定
+[iscript]
+tf.hint1="黒田ヒント1";
+tf.hint2="黒田ヒント2";
+tf.hint3="黒田ヒント3";
+tf.hint4="黒田ヒント4";
+tf.hint5="黒田ヒント5";
+tf.hint6="黒田ヒント6";
+tf.hint7="黒田ヒント7";
+tf.hint8="黒田ヒント8";
+tf.hint9="黒田ヒント9";
+tf.hint10="黒田ヒント10";
+tf.hint11="黒田ヒント11";
+tf.hint12="黒田ヒント12";
+tf.hint13="黒田ヒント13";
+tf.hint14="黒田ヒント14";
+tf.hint15="黒田ヒント15";
+
+tf.hint16="黒田ヒント16";
+[endscript]
 [return]
