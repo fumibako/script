@@ -348,8 +348,9 @@ $(".katuragi_event_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [wait time=10]
 [image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true wait=true]
 [endif]
+
 ;katuragi_7_2 夢イベント
-[if exp="sf.event_katuragi_6_1 == 1"]
+[if exp="sf.event_katuragi_6_1 != 1"]
 [image name="day,katuragi_7_2,k_7_2" storage="../image/day7_2.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -370,7 +371,7 @@ $(".katuragi_event_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [endif]
 
 ;◆8_2 katuragi_event_3 皇后様のお印入りのお茶事の招待状
-[if exp="sf.event_katuragi_event_3 == 1"]
+[if exp="sf.event_katuragi_event_3 != 1"]
 [image name="day,katuragi_event_3,k_ev3" storage="../image/day8_2.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -390,7 +391,7 @@ $(".katuragi_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 [image name="day,katuragi_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true wait=true]
 [endif]
 
-[if exp="sf.event_katuragi_9_1 == 1"]
+[if exp="sf.event_katuragi_9_1 != 1"]
 [image name="day,katuragi_9_3,k_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
