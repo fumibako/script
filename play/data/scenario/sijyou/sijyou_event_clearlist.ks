@@ -378,9 +378,9 @@ $(".fixlayer").css("opacity",0);
 
 ;tf.x0_3 /tf.x4 /tf.x4_sumi
 ;10◆sansaku13
-[if exp="sf.event_sijyou_sansaku_13 == 1"]
 [image name="day,sansaku_13" storage="../image/day_check.png" layer=26 x=&tf.x0_3 y=&tf.y4 visible=true wait=true]
 [wait time=10]
+[if exp="sf.event_sijyou_sansaku_13 == 1"]
 [button name="btn,sijyou_sansaku13" graphic="day10_1_3.png" target="sijyou_sinario" x=&tf.x4 y=&tf.y4 exp="tf.jp_sinario='sijyou_sansaku13'"]
 [image name="day,sansaku_13" storage="../image/day_check_sumi.png" layer=26 x="&tf.x4_sumi" y=&tf.y4 visible=true]
 [endif]
