@@ -133,71 +133,37 @@ $(".fixlayer").css("opacity",0);
 ;====================================================================================================
 *common
 ;判定処理をまとめます
-;katuragi_event_1   !! 6/2 or 6/3 !!
+;◆katuragi_event_1   !! 6/2 or 6/3 !!
 [image name="day,katuragi_event_1" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 ;katuragi_event_1   !! 6/2 or 6/3 !!
 [if exp="sf.event_katuragi_event_1 == 1"]
 [button name="katuragi_event_1" graphic="day6_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='katuraginomiya_event_1'"]
 [image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true wait=true]
-[else]
-[image name="day,katuragi_event_1,k_ev1" storage="../image/day6_2.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".katuragi_event_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true wait=true]
 [endif]
 
-;katuragi_7_2 夢イベント
+;◆katuragi_7_2 夢イベント
 [image name="day,katuragi_7_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_katuragi_6_1 == 1"]
 [button name="katuragi_7_2" graphic="day7_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='katuraginomiya_6_1'"]
 [image name="day,katuragi_7_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true wait=true]
-[else]
-[image name="day,katuragi_7_2,k_7_2" storage="../image/day7_2.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".katuragi_7_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,katuragi_7_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true wait=true]
 [endif]
 
-;7_4
-;katuragi_event_2
+;◆7_4 katuragi_event_2
 [image name="day,katuragi_event_2" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_katuragi_event_2 == 1"]
 [button name="katuragi_event_2" graphic="day7_4.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='katuraginomiya_event_2'"]
 [image name="day,katuragi_event_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true wait=true]
-[else]
-[image name="day,katuragi_event_2,k_ev2" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".katuragi_event_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,katuragi_event_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true wait=true]
 [endif]
 
-;8_2
-;katuragi_event_3 皇后様のお印入りのお茶事の招待状
+;◆8_2 katuragi_event_3 皇后様のお印入りのお茶事の招待状
 [image name="day,katuragi_event_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_katuragi_event_3 == 1"]
 [button name="katuragi_event_3" graphic="day8_2.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='katuraginomiya_event_3'"]
 [image name="day,katuragi_event_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true wait=true]
-[else]
-[image name="day,katuragi_event_3,k_ev3" storage="../image/day8_2.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".katuragi_event_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true wait=true]
 [endif]
 
 ;katuragi_9_1
@@ -206,14 +172,6 @@ $(".katuragi_event_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [if exp="sf.event_katuragi_9_1 == 1"]
 [button name="katuragi_9_1" graphic="day9_1.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='katuraginomiya_9_1'"]
 [image name="day,katuragi_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true wait=true]
-[else]
-[image name="day,katuragi_9_1,k_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".katuragi_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,katuragi_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true wait=true]
 [endif]
 
 ;katuragi_9_3
@@ -222,14 +180,6 @@ $(".katuragi_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 [if exp="sf.event_katuragi_9_3 == 1"]
 [button name="katuragi_9_3" graphic="day9_3.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='katuraginomiya_9_3'"]
 [image name="day,katuragi_9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
-[else]
-[image name="day,katuragi_9_3,k_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".katuragi_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,katuragi_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
 [endif]
 
 ;katuragi_9_4
@@ -238,14 +188,6 @@ $(".katuragi_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 [if exp="sf.event_katuragi_9_4 == 1"]
 [button name="katuragi_9_4" graphic="day9_4.png" target="katuragi_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='katuraginomiya_9_4'"]
 [image name="day,katuragi_9_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true wait=true]
-[else]
-[image name="day,katuragi_9_4,k_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".katuragi_9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,katuragi_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true wait=true]
 [endif]
 
 ;katuragi_10_2
@@ -472,6 +414,79 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [endif]
+;====================================================未判定====================================================================
+[if exp="sf.event_katuragi_event_1 != 1"]
+[image name="day,katuragi_event_1,k_ev1" storage="../image/day6_2.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".katuragi_event_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y1 visible=true wait=true]
+[endif]
+;katuragi_7_2 夢イベント
+[if exp="sf.event_katuragi_6_1 == 1"]
+[image name="day,katuragi_7_2,k_7_2" storage="../image/day7_2.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".katuragi_7_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,katuragi_7_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y2 visible=true wait=true]
+[endif]
+
+
+[if exp="sf.event_katuragi_event_2 != 1"]
+[image name="day,katuragi_event_2,k_ev2" storage="../image/day7_4.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".katuragi_event_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,katuragi_event_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y3 visible=true wait=true]
+[endif]
+
+;◆8_2 katuragi_event_3 皇后様のお印入りのお茶事の招待状
+[if exp="sf.event_katuragi_event_3 == 1"]
+[image name="day,katuragi_event_3,k_ev3" storage="../image/day8_2.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".katuragi_event_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,katuragi_event_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y4 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_9_1 != 1"]
+[image name="day,katuragi_9_1,k_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".katuragi_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,katuragi_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y5 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_9_1 == 1"]
+[image name="day,katuragi_9_3,k_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".katuragi_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,katuragi_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y6 visible=true wait=true]
+[endif]
+
+[if exp="sf.event_katuragi_9_4 != 1"]
+[image name="day,katuragi_9_4,k_9_4" storage="../image/day9_4.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".katuragi_9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,katuragi_9_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+130" y=&tf.y7 visible=true wait=true]
+[endif]
+
 ;========================================================================================================================
 [iscript]
 $(".loding_pic").remove();
