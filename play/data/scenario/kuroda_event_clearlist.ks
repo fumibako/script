@@ -114,10 +114,10 @@ $(".layer_free").css("opacity",0);
 [ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
 ;通常イベント数
 [ptext name="pasent" text="&tf.event_Number_of_times" layer=26 size=25 x=280 y=75 color="khaki"]
-[ptext name="pasent1" text="/13" layer=26 size=20 x=310 y=80 color="khaki"]
+[ptext name="pasent1" text="/15" layer=26 size=20 x=310 y=80 color="khaki"]
 ;散策イベント数
 [ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=755 y=75 color="khaki"]
-[ptext name="pasent1" text="/12" layer=26 size=20 x=785 y=80 color="khaki"]
+[ptext name="pasent1" text="/1" layer=26 size=20 x=785 y=80 color="khaki"]
 ;=====================================================================================================
 *common
 ;判定処理をまとめます
@@ -430,6 +430,7 @@ $(".layer_free").css("opacity",1);
 ;==================================================================================================================-
 *kuroda_sinario
 [cm]
+@clearfix
 ;お稽古モード表示 リセットあるものだけ反応でエラー回避　最後にlayer26をリセット
 [if exp="f.okeiko_gamen == true"]
 [chara_mod name="A_base" storage="toumei.gif" time=0]
@@ -503,4 +504,50 @@ $(".1_fore").empty();
 [eval exp="f.event_replay = 'none'"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
+[s]
+
+*tips_onoff
+;f.event_replay = ;
+[eval exp="f.event_replay = ''sijyou''"]
+[eval exp="f.get_tips = 1 "]
+;また判定に飛ぶと待ち時間が発生するので適度な場所で　仮にstop
+@jump target="stop"
+[s]
+
+*tips_label
+;テキストの書き換えを行うか判定し、trueであればテキストを書き換えます
+[if exp="f.get_tips == 1"]
+[iscript]
+$("p.tips").text(tf.tips);
+[endscript]
+[endif]
+;fixなのでreturnする
+[return]
+[s]
+
+*get_tips_label
+;onoffのフラグはボタンで行う
+;最低限の書き替え
+[if exp="f.get_tips == 1"]
+[iscript]
+f.get_tips=1;
+$(".hint_on").remove();
+$("p.tips").text("現在、ヒントはオンです");
+[endscript]
+;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
+[button name="hint_off" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+[wait time=10]
+;@jump target="tips_btn"
+@jump target="stop"
+[else]
+[iscript]
+f.get_tips=0;
+$(".hint_off").remove();
+$("p.tips").text("現在、ヒントはオフです");
+[endscript]
+;オフの時はオフを表示(元：オフのときはオンを表示)
+[button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
+[wait time=10]
+[endif]
+@jump target="stop"
 [s]
