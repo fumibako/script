@@ -149,29 +149,34 @@ tf.hint12="ヒント12";
 tf.hint13="ヒント13";
 //散策
 //;sijyou_sansaku9.ks(見合い前なら一回発生子供達　気力が微多めに回復)
-tf.hint14="ヒント14";
-//;sijyou_sansaku6.ks(7~8月→8月(他攻略対象より好感度が高い)花火イベント)
-tf.hint15="ヒント15";
+tf.hint14="お見合い前に一回発生";
+//;sijyou_sansaku6.ks(8月(他攻略対象より好感度が高い)花火イベント)
+tf.hint15="八月四週までに他攻略対象より四条の好感度が高い時に一回発生";
 //;sijyou_sansaku10.ks(四条ルートのみ　四条の好感度が高い攻略のヒント)
-tf.hint16="ヒント16";
+tf.hint16="四条ルートにて一回発生";
 //;sijyou_sansaku.ks (9月1週~9月4週)(銀座デート前まで)に1度だけ発生
-tf.hint17="ヒント17";
-//;sijyou_sansaku5.ks(9月～９月末　銀座デート前 b）or(11事件解決後～12月 a)
-tf.hint18="ヒント18";
+tf.hint17="四条ルート・九月一週~九月四週までに一回発生";
+//;sijyou_sansaku5.ks(9月～9月末　銀座デート前 b）or(11事件解決後～12月 a)
+tf.hint18="四条ルート・九月一週~九月四週までに発生。または十一月二週から十二月四週までに二回発生";
 //;sijyou_sansaku2.ks (9/2~4)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ1 四条綾花
-tf.hint19="ヒント19";
+tf.hint19="四条ルート・九月二週~九月四週までに一回発生";
 //;sijyou_sansaku3.ks(9/4~10/1)華道展ｲﾍﾞﾝﾄﾌﾗｸﾞ2
-tf.hint20="ヒント20";
+tf.hint20="四条ルート・九月四週~十月一週までに一回発生";
 //;sijyou_sansaku11.ks(四条ルートのみ、(10月~2月)九月×　三月×　
-tf.hint21="ヒント21";
+tf.hint21="四条ルート・十月~二月四週までに一回発生。但し、九月と三月は含まれない";
 //;sijyou_sansaku12.ks(10月~2月)九月×　三月×　
-tf.hint22="ヒント22";
+tf.hint22="四条ルート・十月~二月四週までに一回発生";
 //;sijyou_sansaku13.ks(10月~2月)九月×　三月×
-tf.hint23="ヒント23";
-//;sijyou_sansaku4.ks(11月3週→12～1月末)　事件解決後の華衣のイベント
-tf.hint24="ヒント24";
+tf.hint23="四条ルート・十月~二月四週までに一回発生";
+//;sijyou_sansaku4.ks(12～1月末)　事件解決後の華衣のイベント
+tf.hint24="四条ルート・十二月～一月四週までに一回発生";
 //;sijyou_sansaku7.ks(3月)香水
-tf.hint25="ヒント25";
+tf.hint25="四条ルート・三月に一回発生";
+
+tf.hint_bad="ヒントbad";
+tf.hint_bad2="ヒントbad2";
+tf.hint_nomal="ヒントnomal";
+tf.hint_good="ヒントgood";
 [endscript]
 
 [return]
