@@ -732,7 +732,7 @@ $(".sansaku_12").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 
 ;【１０】23
 [if exp="sf.event_sijyou_sansaku_13 != 1"]
-[button fix=true name="day,sansaku_13,sijyou_sansaku13,tips_btn" graphic="day10_1_2.png" target="tips_label" x=&tf.x4 y=&tf.y4 exp="tf.tips=tf.hint23"]
+[button fix=true name="day,sansaku_13,sijyou_sansaku13,tips_btn" graphic="day10_1_3.png" target="tips_label" x=&tf.x4 y=&tf.y4 exp="tf.tips=tf.hint23"]
 ;[image name="day,sansaku_13" storage="../image/day10_1_3.png" layer=26 x=&tf.x4 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -744,7 +744,7 @@ $(".sansaku_13").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(
 
 ;【１１】24
 [if exp="sf.event_sijyou_sansaku_4 != 1"]
-[button fix=true name="day,sansaku_4,sijyou_sansaku4,tips_btn" graphic="day10_1_2.png" target="tips_label" x=&tf.x4 y=&tf.y5 exp="tf.tips=tf.hint24"]
+[button fix=true name="day,sansaku_4,sijyou_sansaku4,tips_btn" graphic="day11_3.png" target="tips_label" x=&tf.x4 y=&tf.y5 exp="tf.tips=tf.hint24"]
 ;[image name="day,sansaku_4,sijyou_sansaku4" storage="../image/day11_3.png" layer=26 x=&tf.x4 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -756,7 +756,7 @@ $(".sansaku_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 
 ;【１２】25
 [if exp="sf.event_sijyou_sansaku_7 != 1"]
-[button fix=true name="day,sansaku_7,sijyou_sansaku7,tips_btn" graphic="day10_1_2.png" target="tips_label" x=&tf.x4 y=&tf.y6 exp="tf.tips=tf.hint25"]
+[button fix=true name="day,sansaku_7,sijyou_sansaku7,tips_btn" graphic="day3_1.png" target="tips_label" x=&tf.x4 y=&tf.y6 exp="tf.tips=tf.hint25"]
 ;[image name="day,sansaku_7,sijyou_sansaku7" storage="../image/day3_1.png" layer=26 x=&tf.x4 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
