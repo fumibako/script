@@ -125,7 +125,7 @@ $(".layer_2").css("opacity",0);
 	[ptext layer=2 name=list page=fore text="葛城宮 晴仁：" x=545 y=230 size=17 color=navy visible=true]
 	[glink target="*jump_clearlist" exp="f.event_replay = 'katuraginomiya'" text="&f.katuraginomiya_event_percent" fontcolor="gray2" size="16" width="170" x="640" y="227" color="white"]
 [wait time=10]
-[elsif exp="sf.event_katuragi_event_1 != 1 && (sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_good != 1 || sf.ED_katuraginomiya_bad != 1)"]
+[else]
 	[ptext layer=2 name=list page=fore text="？？？：" x=545 y=230 size=17 color=navy visible=true]
 [endif]
 [if exp="sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
