@@ -130,10 +130,10 @@ $(".fixlayer").css("opacity",0);
 [ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
 ;通常イベント数
 [ptext name="pasent" text="&tf.event_Number_of_times" layer=26 size=25 x=280 y=75 color="khaki"]
-[ptext name="pasent1" text="/13" layer=26 size=20 x=310 y=80 color="khaki"]
+[ptext name="pasent1" text="/11" layer=26 size=20 x=310 y=80 color="khaki"]
 ;散策イベント数
 [ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=755 y=75 color="khaki"]
-[ptext name="pasent1" text="/12" layer=26 size=20 x=785 y=80 color="khaki"]
+[ptext name="pasent1" text="/2" layer=26 size=20 x=785 y=80 color="khaki"]
 ;=======================================================================================
 ;判定処理をまとめます
 ;sf.event_zaizen_event_6_1
@@ -423,7 +423,7 @@ $(".zaizen_event_1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [wait time=10]
 [image name="day,zaizen_event_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
 [endif]
-
+;=============================================散策未判定======================================================
 [if exp="sf.event_zaizen_sansaku_2_1 != 1"]
 [image name="day,zaizen_sansaku_2_1,day_z_2_1" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
@@ -433,7 +433,7 @@ $(".zaizen_sansaku_2_1").css({'filter': 'brightness(50%)','-webkit-filter': 'bri
 [wait time=10]
 [image name="day,zaizen_sansaku_2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true]
 [endif]
-;=============================================散策未判定======================================================
+
 [if exp="sf.event_zaizen_sansaku_bazar != 1"]
 [image name="day,zaizen_sansaku_bazar,day_z_3_3" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
