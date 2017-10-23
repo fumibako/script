@@ -684,7 +684,7 @@ $(".sansaku_5").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(5
 
 ;【６】19
 [if exp="sf.event_sijyou_sansaku_2 != 1"]
-[button fix=true name="day,sansaku_5,sijyou_sansaku5,tips_btn" graphic="day9_2.png" target="tips_label" x=&tf.x3 y=&tf.y6 exp="tf.tips=tf.hint19"]
+[button fix=true name="day,sansaku_2,sijyou_sansaku2,tips_btn" graphic="day9_2.png" target="tips_label" x=&tf.x3 y=&tf.y6 exp="tf.tips=tf.hint19"]
 ;[image name="day,sansaku_2,sijyou_sansaku2" storage="../image/day9_2.png" layer=26 x=&tf.x3 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
