@@ -25,6 +25,10 @@
 [s]
 *start
 *info_kuroda
+;クリアリストのfixボタンの削除
+[iscript]
+$(".tips_btn").remove();
+[endscript]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [eval exp="f.viewing_target = '*info_kuroda'"]
