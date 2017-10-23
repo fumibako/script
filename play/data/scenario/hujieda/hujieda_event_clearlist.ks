@@ -136,10 +136,10 @@ $(".layer_free").css("opacity",0);
 [ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
 ;通常イベント数
 [ptext name="pasent" text="&tf.event_Number_of_times" layer=26 size=25 x=280 y=75 color="khaki"]
-[ptext name="pasent1" text="/13" layer=26 size=20 x=310 y=80 color="khaki"]
+[ptext name="pasent1" text="/16" layer=26 size=20 x=310 y=80 color="khaki"]
 ;散策イベント数
-[ptext name="pasent" text="&tf.eventSansaku_Number_of_times" layer=26 size=25 x=755 y=75 color="khaki"]
-[ptext name="pasent1" text="/12" layer=26 size=20 x=785 y=80 color="khaki"]
+[ptext name="pasent" text="&tf.event_sansaku_Number_of_times" layer=26 size=25 x=755 y=75 color="khaki"]
+[ptext name="pasent1" text="/2" layer=26 size=20 x=785 y=80 color="khaki"]
 ;=======================================================================================
 *common
 ;判定処理をまとめます
