@@ -115,6 +115,11 @@ tf.hint16="藤枝ヒント16";
 //散策
 tf.hint17="藤枝ヒント17";
 tf.hint18="藤枝ヒント18";
+
+tf.hint_bad="ヒントbad";
+tf.hint_bad2="ヒントbad2";
+tf.hint_nomal="ヒントnomal";
+tf.hint_good="ヒントgood";
 [endscript]
 
 [return]
