@@ -3,6 +3,7 @@
 ;下部、判定まとめにボタンが表示されます。　先にimage画像が表示されますが見た目上の判定を行っています。
 ;ボタンにはexpでシナリオ名を指定してあります。 【tf.jp_sinario  初期化'none'】 
 ;このシナリオの戻り値は　f.event_replay = 'zaizen';　です。
+;ヒントの表示フラグは適当な場所でオフに等にしてください。[eval exp="f.get_tips = 0"]
 ;====================================================================================================
 *start
 ;画面初期化
@@ -13,6 +14,7 @@
 [iscript]
 $(".pasent").remove();
 $(".pasent1").remove();
+$(".tips").remove();
 $(".chara_name_area").empty();
 [endscript]
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_clearlist.jpg" time=500 visible=true]
@@ -140,14 +142,6 @@ $(".fixlayer").css("opacity",0);
 [if exp="sf.event_zaizen_event_6_1 == 1"]
 [button name="zaizen_6_1" graphic="day6_1.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='zaizen_6_1'"]
 [image name="day,zaizen_event_6_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
-[else]
-[image name="day,zaizen_event_6_1,day_z_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [endif]
 
 ;sf.event_zaizen_9_1
@@ -156,30 +150,14 @@ $(".zaizen_event_6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [if exp="sf.event_zaizen_9_1 == 1"]
 [button name="zaizen_9_1" graphic="day9_1.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='zaizen_9_1'"]
 [image name="day,zaizen_event_9_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
-[else]
-[image name="day,zaizen_event_9_1,day_z_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [endif]
 
-; sf.event_zaizen_9_3
+;sf.event_zaizen_9_3
 [image name="day,zaizen_event_9_3" storage="../image/day_check.png" layer=26 x=&tf.x0 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_zaizen_9_3 == 1"]
 [button name="zaizen_9_3" graphic="day9_3.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='zaizen_9_3'"]
 [image name="day,zaizen_event_9_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
-[else]
-[image name="day,zaizen_event_9_3,day_z_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
 [endif]
 
 ;sf.event_zaizen_10_1
@@ -188,14 +166,6 @@ $(".zaizen_event_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [if exp="sf.event_zaizen_10_1 == 1"]
 [button name="zaizen_10_1" graphic="day10_1.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='zaizen_10_1'"]
 [image name="day,zaizen_event_10_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
-[else]
-[image name="day,zaizen_event_10_1,day_z_10_1" storage="../image/day10_1.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_10_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
 [endif]
 
 ;sf.event_zaizen_10_3
@@ -204,14 +174,6 @@ $(".zaizen_event_10_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [if exp="sf.event_zaizen_10_3 == 1"]
 [button name="zaizen_10_3" graphic="day10_3.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='zaizen_10_3'"]
 [image name="day,zaizen_event_10_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
-[else]
-[image name="day,zaizen_event_10_3,day_z_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
 [endif]
 
 ;sf.event_zaizen_11_1
@@ -220,14 +182,6 @@ $(".zaizen_event_10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [if exp="sf.event_zaizen_11_1 == 1"]
 [button name="zaizen_11_1" graphic="day11_1.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='zaizen_11_1'"]
 [image name="day,zaizen_event_11_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
-[else]
-[image name="day,zaizen_event_11_1,day_z_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
 [endif]
 
 ;sf.event_zaizen_11_3
@@ -236,14 +190,6 @@ $(".zaizen_event_11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [if exp="sf.event_zaizen_11_3 == 1"]
 [button name="zaizen_11_3" graphic="day11_3.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='zaizen_11_3'"]
 [image name="day,zaizen_event_11_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y7 visible=true]
-[else]
-[image name="day,zaizen_event_11_3,day_z_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_11_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_11_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y7 visible=true]
 [endif]
 
 ;sf.event_zaizen_11_4
@@ -252,14 +198,6 @@ $(".zaizen_event_11_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [if exp="sf.event_zaizen_11_4 == 1"]
 [button name="zaizen_11_4" graphic="day11_4.png" target="zaizen_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='zaizen_11_4_1'"]
 [image name="day,zaizen_event_11_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x1+140" y=&tf.y8 visible=true]
-[else]
-[image name="day,zaizen_event_11_4,day_z_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_11_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y8 visible=true]
 [endif]
 
 ;左位置2　tf.x0_1 tf.x2 
@@ -269,14 +207,6 @@ $(".zaizen_event_11_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [if exp="sf.event_zaizen_12_2 == 1"]
 [button name="zaizen_12_2" graphic="day12_2.png" target="zaizen_sinario" x=&tf.x2 y=&tf.y1 exp="tf.jp_sinario='zaizen_12_2'"]
 [image name="day,zaizen_event_12_2" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y1 visible=true]
-[else]
-[image name="day,zaizen_event_12_2,day_z_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_12_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_12_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y1 visible=true]
 [endif]
 
 ;sf.event_zaizen_12_4
@@ -285,14 +215,6 @@ $(".zaizen_event_12_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [if exp="sf.event_zaizen_12_4 == 1"]
 [button name="zaizen_12_4" graphic="day12_4.png" target="zaizen_sinario" x=&tf.x2 y=&tf.y2 exp="tf.jp_sinario='zaizen_12_4'"]
 [image name="day,zaizen_event_12_4" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y2 visible=true]
-[else]
-[image name="day,zaizen_event_12_4,day_z_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_12_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_12_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y2 visible=true]
 [endif]
 
 ;sf.event_zaizen_1_3
@@ -301,15 +223,8 @@ $(".zaizen_event_12_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [if exp="sf.event_zaizen_1_3 == 1"]
 [button name="zaizen_1_3" graphic="day1_3.png" target="zaizen_sinario" x=&tf.x2 y=&tf.y3 exp="tf.jp_sinario='zaizen_1_3_1'"]
 [image name="day,zaizen_event_1_3" storage="../image/day_check_sumi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
-[else]
-[image name="day,zaizen_event_1_3,day_z_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_event_1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_event_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
 [endif]
+
 ;==================================================================================
 ;左位置3 tf.x0_2 tf.x3
 ;sf.event_zaizen_sansaku_2_1
@@ -318,14 +233,6 @@ $(".zaizen_event_1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [if exp="sf.event_zaizen_sansaku_2_1 == 1"]
 [button name="zaizen_sansaku_2_1" graphic="day2_1.png" target="zaizen_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='zaizen_2_1'"]
 [image name="day,zaizen_sansaku_2_1" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true]
-[else]
-[image name="day,zaizen_sansaku_2_1,day_z_2_1" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_sansaku_2_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_sansaku_2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true]
 [endif]
 
 ;sf.event_zaizen_sansaku_bazar 2月1週~3月3週・散策・バザー
@@ -334,14 +241,6 @@ $(".zaizen_sansaku_2_1").css({'filter': 'brightness(50%)','-webkit-filter': 'bri
 [if exp="sf.event_zaizen_sansaku_bazar == 1"]
 [button name="zaizen_sansaku_bazar" graphic="day2_1.png" target="zaizen_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='zaizen_bazaar'"]
 [image name="day,zaizen_sansaku_bazar" storage="../image/day_check_sumi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true]
-[else]
-[image name="day,zaizen_sansaku_bazar,day_z_3_3" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
-[wait time=10]
-[iscript]
-$(".zaizen_sansaku_bazar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,zaizen_sansaku_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true]
 [endif]
 ;========================================エンディング============================================================
 ;enndingボタン位置
@@ -415,6 +314,135 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [image name="ending4" storage="../image/day_check_mi.png" layer=26 x="&tf.x8" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [endif]
+;=============================================未判定==========================================================
+[if exp="sf.event_zaizen_event_6_1=! 1"]
+[image name="day,zaizen_event_6_1,day_z_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
+[endif]
+[if exp="sf.event_zaizen_9_1 =! 1"]
+[image name="day,zaizen_event_9_1,day_z_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_9_3 =! 1"]
+[image name="day,zaizen_event_9_3,day_z_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_10_1 =! 1"]
+[image name="day,zaizen_event_10_1,day_z_10_1" storage="../image/day10_1.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_10_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_10_3 =! 1"]
+[image name="day,zaizen_event_10_3,day_z_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_11_1 =! 1"]
+[image name="day,zaizen_event_11_1,day_z_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_11_3 =! 1"]
+[image name="day,zaizen_event_11_3,day_z_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_11_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_11_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y7 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_11_4 =! 1"]
+[image name="day,zaizen_event_11_4,day_z_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_11_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y8 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_12_2 =! 1"]
+[image name="day,zaizen_event_12_2,day_z_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_12_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_12_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y1 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_12_4 =! 1"]
+[image name="day,zaizen_event_12_4,day_z_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_12_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_12_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y2 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_sansaku_2_1 =! 1"]
+[image name="day,zaizen_event_1_3,day_z_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_event_1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_event_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
+[endif]
+
+[if exp="sf.event_zaizen_sansaku_2_1 =! 1"]
+[image name="day,zaizen_sansaku_2_1,day_z_2_1" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_sansaku_2_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_sansaku_2_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true]
+[endif]
+;=============================================散策未判定======================================================
+[if exp="sf.event_zaizen_sansaku_bazar != 1"]
+[image name="day,zaizen_sansaku_bazar,day_z_3_3" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[wait time=10]
+[iscript]
+$(".zaizen_sansaku_bazar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+[endscript]
+[wait time=10]
+[image name="day,zaizen_sansaku_bazar" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y2 visible=true]
+[endif]
 ;==================================================================================-
 [iscript]
 $(".loding_pic").remove();
@@ -422,6 +450,7 @@ $(".loding_pic1").remove();
 $(".loding_pic2").remove();
 $(".layer_free").css("opacity",1);
 [endscript]
+*stop
 [s]
 ;==================================================================================-
 *zaizen_sinario
