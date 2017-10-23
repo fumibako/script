@@ -112,5 +112,10 @@ tf.hint15="葛城宮ヒント15";
 //散策
 tf.hint16="葛城宮ヒント16";
 tf.hint17="葛城宮ヒント17";
+
+tf.hint_bad="ヒントbad";
+tf.hint_bad2="ヒントbad2";
+tf.hint_nomal="ヒントnomal";
+tf.hint_good="ヒントgood";
 [endscript]
 [return]
