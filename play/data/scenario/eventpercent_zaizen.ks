@@ -72,7 +72,7 @@
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.zaizen_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
 
-
+[return]
 ;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
 [iscript]
 tf.hint1="財前ヒント1";
@@ -89,6 +89,6 @@ tf.hint11="財前ヒント11";
 tf.hint12="財前ヒント12";
 //散策
 tf.hint13="財前ヒント13";
-[return]
+[endscript]
 
 [return]
