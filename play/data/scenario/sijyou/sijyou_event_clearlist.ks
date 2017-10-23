@@ -117,6 +117,7 @@ $(".test").remove();
 ;================================ボタン隠し=======================================================
 @layopt layer="fix" visible=true
 [iscript]
+$(".fixlayer").css('z-index', 1);	
 $(".layer_free").css("opacity",0);
 $(".fixlayer").css("opacity",0);
 [endscript]
