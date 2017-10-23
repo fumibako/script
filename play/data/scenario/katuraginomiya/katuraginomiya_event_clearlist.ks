@@ -507,7 +507,8 @@ $(".katuragi_bazar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightn
 [endif]
 ;============================================散策未判定============================================================================
 [if exp="sf.event_katuragi_sansaku1 != 1"]
-[image name="day,katuragi_sansaku1,k_s1" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
+[button name="katuragi_2_2" graphic="day2_2.png" target="tips_label" x=&tf.x2 y=&tf.y6 exp="tf.tips=tf.hint16"]
+;[image name="day,katuragi_sansaku1,k_s1" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10
 [iscript]
 $(".katuragi_sansaku1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -516,7 +517,8 @@ $(".katuragi_sansaku1").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [image name="day,katuragi_sansaku1" storage="../image/day_check_mi.png" layer=26 x="&tf.x3+150" y=&tf.y1 visible=true wait=true]
 [endif]
 [if exp="sf.event_katuragi_sansaku2 != 1"]
-[image name="day,katuragi_sansaku2,k_s2" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
+[button name="katuragi_bazar" graphic="day2_3.png" target="tips_label" x=&tf.x2 y=&tf.y7 exp="tf.tips=tf.tips=tf.hint17"]
+;[image name="day,katuragi_sansaku2,k_s2" storage="../image/day2_2.png"  layer=26 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".katuragi_sansaku2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
