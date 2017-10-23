@@ -21,6 +21,7 @@ f.preload_images_sijyou = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 ;=============================================
 *ending_Number_of_times
 [iscript]
+$(".tips_btn").remove;
 $(".26_fore").empty();
 [endscript]
 ;=============================================
