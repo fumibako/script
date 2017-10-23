@@ -315,7 +315,7 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [wait time=10]
 [endif]
 ;=============================================未判定==========================================================
-[if exp="sf.event_zaizen_event_6_1=! 1"]
+[if exp="sf.event_zaizen_event_6_1 != 1"]
 [image name="day,zaizen_event_6_1,day_z_6_1" storage="../image/day6_1.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -324,7 +324,7 @@ $(".zaizen_event_6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [wait time=10]
 [image name="day,zaizen_event_6_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y1 visible=true]
 [endif]
-[if exp="sf.event_zaizen_9_1 =! 1"]
+[if exp="sf.event_zaizen_9_1 != 1"]
 [image name="day,zaizen_event_9_1,day_z_9_1" storage="../image/day9_1.png"  layer=26 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -334,7 +334,7 @@ $(".zaizen_event_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [image name="day,zaizen_event_9_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y2 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_9_3 =! 1"]
+[if exp="sf.event_zaizen_9_3 != 1"]
 [image name="day,zaizen_event_9_3,day_z_9_3" storage="../image/day9_3.png"  layer=26 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -344,7 +344,7 @@ $(".zaizen_event_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [image name="day,zaizen_event_9_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y3 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_10_1 =! 1"]
+[if exp="sf.event_zaizen_10_1 != 1"]
 [image name="day,zaizen_event_10_1,day_z_10_1" storage="../image/day10_1.png"  layer=26 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -354,7 +354,7 @@ $(".zaizen_event_10_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [image name="day,zaizen_event_10_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y4 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_10_3 =! 1"]
+[if exp="sf.event_zaizen_10_3 != 1"]
 [image name="day,zaizen_event_10_3,day_z_10_3" storage="../image/day10_3.png"  layer=26 x=&tf.x1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -364,7 +364,7 @@ $(".zaizen_event_10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [image name="day,zaizen_event_10_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y5 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_11_1 =! 1"]
+[if exp="sf.event_zaizen_11_1 != 1"]
 [image name="day,zaizen_event_11_1,day_z_11_1" storage="../image/day11_1.png"  layer=26 x=&tf.x1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -374,7 +374,7 @@ $(".zaizen_event_11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [image name="day,zaizen_event_11_1" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y6 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_11_3 =! 1"]
+[if exp="sf.event_zaizen_11_3 != 1"]
 [image name="day,zaizen_event_11_3,day_z_11_3" storage="../image/day11_3.png"  layer=26 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -384,7 +384,7 @@ $(".zaizen_event_11_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [image name="day,zaizen_event_11_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y7 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_11_4 =! 1"]
+[if exp="sf.event_zaizen_11_4 != 1"]
 [image name="day,zaizen_event_11_4,day_z_11_4" storage="../image/day11_4.png"  layer=26 x=&tf.x1 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -394,7 +394,7 @@ $(".zaizen_event_11_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [image name="day,zaizen_event_11_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x1+140" y=&tf.y8 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_12_2 =! 1"]
+[if exp="sf.event_zaizen_12_2 != 1"]
 [image name="day,zaizen_event_12_2,day_z_12_2" storage="../image/day12_2.png"  layer=26 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -404,7 +404,7 @@ $(".zaizen_event_12_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [image name="day,zaizen_event_12_2" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y1 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_12_4 =! 1"]
+[if exp="sf.event_zaizen_12_4 != 1"]
 [image name="day,zaizen_event_12_4,day_z_12_4" storage="../image/day12_4.png"  layer=26 x=&tf.x2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -414,7 +414,7 @@ $(".zaizen_event_12_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [image name="day,zaizen_event_12_4" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y2 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_sansaku_2_1 =! 1"]
+[if exp="sf.event_zaizen_sansaku_2_1 != 1"]
 [image name="day,zaizen_event_1_3,day_z_1_3" storage="../image/day1_3.png"  layer=26 x=&tf.x2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -424,7 +424,7 @@ $(".zaizen_event_1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 [image name="day,zaizen_event_1_3" storage="../image/day_check_mi.png" layer=26 x="&tf.x2+150" y=&tf.y3 visible=true]
 [endif]
 
-[if exp="sf.event_zaizen_sansaku_2_1 =! 1"]
+[if exp="sf.event_zaizen_sansaku_2_1 != 1"]
 [image name="day,zaizen_sansaku_2_1,day_z_2_1" storage="../image/day2_1.png"  layer=26 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
