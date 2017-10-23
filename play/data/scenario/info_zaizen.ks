@@ -25,6 +25,10 @@
 [s]
 *start
 *info_zaizen
+;クリアリストのfixボタンの削除
+[iscript]
+$(".tips_btn").remove();
+[endscript]
 [freeimage layer = 27]
 [freeimage layer = 28]
 [eval exp="f.oaite_viewing_storage = 'info_zaizen.ks'"]
