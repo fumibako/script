@@ -22,6 +22,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [iscript]
 $(".tips_btn").remove();
 $(".26_fore").empty();
+$(".27_fore").empty();
 [endscript]
 ;=============================================
 ;test
