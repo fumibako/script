@@ -2,7 +2,8 @@
 *start
 [cm]
 [iscript]
-$(".tips_btn").remove;
+$(".tips_btn").remove();
+$(".27_fore").empty();
 $(".26_fore").empty();
 [endscript]
 ;顔グラフィック等プリロード
