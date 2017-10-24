@@ -99,11 +99,11 @@ $(".fixlayer").css("opacity",0);
 [endif]
 ;================================ヒントの表示=======================================================
 [if exp="f.get_tips == 1"]
-[ptext name="tips" text="現在、ヒントの表示はオンです" layer=26 size=22 x=100 y=550 color=snow]
+[ptext name="tips" text="現在、ヒントの表示はオンです" layer=27 size=22 x=100 y=550 color=snow]
 [wait time=50]
 ;※waitしないと書き換えられません！
 [else]
-[ptext name="tips" text="現在、ヒントの表示はオフです" layer=26 size=22 x=100 y=550 color=snow]
+[ptext name="tips" text="現在、ヒントの表示はオフです" layer=27 size=22 x=100 y=550 color=snow]
 [wait time=50]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
@@ -121,7 +121,7 @@ $(".fixlayer").css("opacity",0);
 ;=======================================================================================
 *check_event
 ;名前表示
-[image name="c_name1" storage="../image/name_katuragi.png" layer=26 x=245 y=35 visible=true]
+[image name="c_name1" storage="../image/name_katuragi.png" layer=27 x=245 y=35 visible=true]
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=27 size=25 x=600 y=34 color=snow]
 [ptext name="pasent1" text="%" layer=27 size=25 x=650 y=34 color=snow]
@@ -129,7 +129,7 @@ $(".fixlayer").css("opacity",0);
 [ptext name="pasent" text="&tf.event_Number_of_times" layer=27 size=25 x=280 y=75 color="khaki"]
 [ptext name="pasent1" text="/15" layer=27 size=20 x=310 y=80 color="khaki"]
 ;散策イベント数
-[ptext name="pasent" text="&tf.event_sansaku_Number_of_times" layer=26 size=25 x=755 y=75 color="khaki"]
+[ptext name="pasent" text="&tf.event_sansaku_Number_of_times" layer=27 size=25 x=755 y=75 color="khaki"]
 [ptext name="pasent1" text="/2" layer=27 size=20 x=785 y=80 color="khaki"]
 ;====================================================================================================
 *common
@@ -219,7 +219,7 @@ $(".fixlayer").css("opacity",0);
 [endif]
 
 ;◆katuragi_11_4
-[image name="day,katuragi_11_4" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
+[image name="day,katuragi_11_4" storage="../image/day_check.png" layer=27 x=&tf.x0_1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_katuragi_11_4 == 1"]
 [button name="katuragi_11_4" graphic="day11_4.png" target="katuragi_sinario" x=&tf.x2_2 y=&tf.y3 exp="tf.jp_sinario='katuraginomiya_11_4'"]
@@ -235,7 +235,7 @@ $(".fixlayer").css("opacity",0);
 [endif]
 
 ;◆katuragi_1_3
-[image name="day,katuragi_1_3" storage="../image/day_check.png" layer=26 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
+[image name="day,katuragi_1_3" storage="../image/day_check.png" layer=27 x=&tf.x0_1 y=&tf.y5 visible=true wait=true]
 [if exp="sf.event_katuragi_1_3 == 1"]
 [button name="katuragi_1_3" graphic="day1_3.png" target="katuragi_sinario" x=&tf.x2 y=&tf.y5 exp="tf.jp_sinario='katuraginomiya_1_3'"]
 [image name="day,katuragi_1_3" storage="../image/day_check_sumi.png" layer=27 x="&tf.x2+140" y=&tf.y5 visible=true wait=true]
@@ -284,7 +284,7 @@ $(".fixlayer").css("opacity",0);
 [eval exp="tf.end2_y = tf.y8 + 10"]
 ;=============================================エンディングタイトル=========================================================
 [if exp="sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1"]
-[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
+[image name="endtitle" storage="../image/day_end.png" layer=27 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
 [else]
 [image name="day,endtitle" storage="../image/day_end.png" layer=27 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
 [iscript]
@@ -343,7 +343,7 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 ;【１】
 [if exp="sf.event_katuragi_event_1 != 1"]
 [button fix=true name="day,katuragi_event_1,k_ev1,tips_btn" graphic="day6_2.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
-;[image name="day,katuragi_event_1,k_ev1" storage="../image/day6_2.png"  layer=26 x=&tf.x1 y=&tf.y1 visible=true wait=true]
+;[image name="day,katuragi_event_1,k_ev1" storage="../image/day6_2.png"  layer=27 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".katuragi_event_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -513,7 +513,7 @@ $(".katuragi_2_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 ;【１５】
 [if exp="sf.event_katuragi_bazar != 1"]
 [button fix=true name="day,katuragi_bazar,k_bz,tips_btn" graphic="day2_3.png" target="tips_label" x=&tf.x2 y=&tf.y7 exp="tf.tips=tf.hint15"]
-;[image name="day,katuragi_bazar,k_bz" storage="../image/day2_3.png"  layer=26 x="&tf.x2" y=&tf.y7 visible=true wait=true]
+;[image name="day,katuragi_bazar,k_bz" storage="../image/day2_3.png"  layer=27 x="&tf.x2" y=&tf.y7 visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".katuragi_bazar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -615,13 +615,13 @@ $(".1_fore").empty();
 [eval exp="f.okeiko_gamen = true"]
 [eval exp="tf.jp_sinario='none'"]
 [eval exp="f.event_replay = 'none'"]
-[freeimage layer = 26]
+[freeimage layer = 27]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [s]
 
 *back_test
 [cm]
-[freeimage layer = 26]
+[freeimage layer = 27]
 [eval exp="tf.jp_sinario='none'"]
 [eval exp="f.event_replay = 'none'"]
 @jump storage="test.ks"
@@ -629,7 +629,7 @@ $(".1_fore").empty();
 
 *title
 [cm]
-[freeimage layer = 26]
+[freeimage layer = 27]
 ;------タイトルへ戻る
 [eval exp="tf.jp_sinario='none'"]
 [eval exp="f.event_replay = 'none'"]
