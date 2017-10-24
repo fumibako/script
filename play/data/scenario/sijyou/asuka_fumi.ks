@@ -109,7 +109,7 @@
 *2
 [手紙飛鳥 fumi_number=]
 [名前]さんへ。[r][r]
-[if exp="f.kuroda == au"]
+[if exp="f.kuroda_au == 1"]
 初冬の候、[r]
 [else]
 菊薫る今日このごろ、[r]
