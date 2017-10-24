@@ -22,6 +22,7 @@ f.preload_images_katuraginomiya = ["data/fgimage/girl/S/base.png","data/fgimage/
 [iscript]
 $(".tips_btn").remove();
 $(".26_fore").empty();
+$(".27_fore").empty();
 [endscript]
 ;=============================================
 ;test
