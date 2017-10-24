@@ -20,7 +20,7 @@ f.preload_images_zaizen = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/b
 [call target=*start storage="hensuu.ks"]
 [cm]
 [iscript]
-$(".tips_btn").remove;
+$(".tips_btn").remove();
 $(".26_fore").empty();
 [endscript]
 ;=============================================
