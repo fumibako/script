@@ -393,7 +393,7 @@ $(".nerine").css("opacity",0.5);
 ;bg_prologue.jpg　anten.jpg
 [image layer=29 x=0 y=0 zindex=3 storage="bg/anten.jpg" time=50 visible=true]
 [wait time=50]
-[image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=1 top=-85 time=1000 wait=false opacity=]
+[image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=1 top=-85 time=1000 wait=false]
 ;うっすら
 [iscript]
 $(".nerine").css("opacity",0.9);
