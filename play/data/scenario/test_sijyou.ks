@@ -540,7 +540,6 @@ alert(f.para_sijyou_koukando);
 [ptext name="test" text="CG・クリアリスト・リプレイフラグ操作" layer=26 size=17 x=100 y=50 color=darkslateblue overwrite=true]
 [glink target="yes1" text="EDフラグ解放" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=blue]
 [glink target="no1" text="EDフラグ閉鎖" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=black]
-[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=blue]
 [glink target=kuroda4 text="黒田event解放" size=20 width="250" x=100 y=250 color=white]
 [glink target=no_page3 text="黒田event閉鎖" size=20 width="250" x=100 y=300 color=black]
 [glink target=sijyou5 text="四条event解放" size=20 width="250" x=100 y=350 color=white]
@@ -549,8 +548,8 @@ alert(f.para_sijyou_koukando);
 [glink target=kt_4 text="葛城宮event解放" size=20 width="250" x=100 y=500 color=white]
 [glink target=kt_5 text="葛城宮/散策解放" size=20 width="250" x=400 y=100 color=white]
 [glink target=hji_1 text="藤枝event解放" size=20 width="250" x=400 y=150 color=white]
-
-[glink target="*test_flag_bye" text="全てのフラグ閉鎖操作へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=black]
+[glink target="test_page1" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
+[glink target="*test_flag_bye" text="全てのフラグ閉鎖操作へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=550 color=black]
 [s]
 
 *no2
@@ -673,19 +672,19 @@ alert(f.para_sijyou_koukando);
 *sijyou5
 [cm]
 [glink target="sijyou5" text="四条6_1" exp="sf.event_sijyou_event_6_1=1" size=20 width="250" x=100 y=100 color=blue]
-[glink target="sijyou5" text="四条9_1"exp="sf.event_sijyou_9_1=1" size=20 width="250" x=100 y=150 color=blue]
+[glink target="sijyou5" text="四条9_1" exp="sf.event_sijyou_9_1=1" size=20 width="250" x=100 y=150 color=blue]
 [glink target="sijyou5" text="四条9_2"exp="sf.event_sijyou_9_2=1" size=20 width="250" x=100 y=200 color=blue]
-[glink target="sijyou5" text="四条9_3"exp="sf.event_sijyou_9_3=1" size=20 width="250" x=100 y=250 color=blue]
-[glink target="sijyou5" text="四条9_4"exp="sf.event_sijyou_9_4=1" size=20 width="250" x=100 y=300 color=blue]
-[glink target="sijyou5" text="四条10_1"exp="sf.event_sijyou_10_1=1" size=20 width="250" x=100 y=350 color=blue]
-[glink target="sijyou5" text="四条10_3"exp="sf.event_sijyou_10_3=1" size=20 width="250" x=100 y=400 color=blue]
+[glink target="sijyou5" text="四条9_3" exp="sf.event_sijyou_9_3=1" size=20 width="250" x=100 y=250 color=blue]
+[glink target="sijyou5" text="四条9_4" exp="sf.event_sijyou_9_4=1" size=20 width="250" x=100 y=300 color=blue]
+[glink target="sijyou5" text="四条10_1" exp="sf.event_sijyou_10_1=1" size=20 width="250" x=100 y=350 color=blue]
+[glink target="sijyou5" text="四条10_3" exp="sf.event_sijyou_10_3=1" size=20 width="250" x=100 y=400 color=blue]
 [glink target="sijyou5" text="四条11_1"exp="sf.event_sijyou_11_1=1" size=20 width="250" x=100 y=450 color=blue]
 
-[glink target="sijyou5" text="四条1_1"exp="sf.event_sijyou_1_1=1" size=20 width="250" x=400 y=100 color=blue]
-[glink target="sijyou5" text="四条1_3"exp="sf.event_sijyou_1_3=1" size=20 width="250" x=400 y=150 color=blue]
-[glink target="sijyou5" text="四条1_4"exp="sf.event_sijyou_1_4=1" size=20 width="250" x=400 y=200 color=blue]
-[glink target="sijyou5" text="四条2_1"exp="sf.event_sijyou_2_1=1" size=20 width="250" x=400 y=250 color=blue]
-[glink target="sijyou5" text="四条2_2"exp="sf.event_sijyou_2_2_bazar=1" size=20 width="250" x=400 y=300 color=blue]
+[glink target="sijyou5" text="四条1_1" exp="sf.event_sijyou_1_1=1" size=20 width="250" x=400 y=100 color=blue]
+[glink target="sijyou5" text="四条1_3" exp="sf.event_sijyou_1_3=1" size=20 width="250" x=400 y=150 color=blue]
+[glink target="sijyou5" text="四条1_4" exp="sf.event_sijyou_1_4=1" size=20 width="250" x=400 y=200 color=blue]
+[glink target="sijyou5" text="四条2_1" exp="sf.event_sijyou_2_1=1" size=20 width="250" x=400 y=250 color=blue]
+[glink target="sijyou5" text="四条2_2" exp="sf.event_sijyou_2_2_bazar=1" size=20 width="250" x=400 y=300 color=blue]
 [glink target=test_replay2 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=blue]
 [s]
 
