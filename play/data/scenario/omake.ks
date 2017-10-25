@@ -168,7 +168,17 @@ $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 [if exp="(sf.ED_sijyou_normal == 1 && sf.ED_sijyou_good == 1 && sf.ED_sijyou_bad == 1) || (sf.ED_zaizen_normal == 1 && sf.ED_zaizen_good == 1 && sf.ED_zaizen_bad2 == 1 && sf.ED_zaizen_bad1 == 1) || (sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1 && sf.ED_kuroda_bad == 1) || (sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1) || (sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1)"]
 	@jump target=*clear_notice_skip
 [endif]
-[ptext layer=2 name=list page=fore text="どなたかのエンディング全て(good・normal・bad)を見ると…？" x=499 y=420 size=16 color=navy visible=true]
+[ptext layer=2 name="list,osirase" page=fore text="どなたかのエンディング全て(good・normal・bad)を見ると…？" x=499 y=420 size=16 color=navy visible=true overwrite=true]
+
+;全てのイベントをコンプリートしたか？　undefinedの場合はエラー回避
+[if exp="sf.sijyou_clearlist_complete == undefined || sf.kuroda_clearlist_complete == undefined || sf.zaizen_clearlist_complete == undefined || sf.katuraginomiya_clearlist_complete == undefined || sf.hujieda_clearlist_complete == undefined"]
+@jump target ="*clear_notice_skip"
+[endif]
+;全てのイベントをコンプリートしているときの表示
+[if exp="sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
+;[ptext layer=2 name="list,osirase" page=fore text="クリアおめでとうございます" x=499 y=420 size=16 color=navy visible=true overwrite=true]
+@jump target ="*clear_notice_skip"
+[endif]
 
 *clear_notice_skip
 @jump target ="*common"
