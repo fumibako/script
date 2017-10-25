@@ -24,8 +24,11 @@
 [link target=*select2]　　　　　　いいえ[endlink][r]
 [r]
 [resetfont]
-[endif]
 [s]
+[else]
+@jump target="noload"
+[endif]
+
 
 *select1
 [cm]
