@@ -73,7 +73,7 @@
 [eval exp="f.zaizen_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
 ;財前、全てのイベントが達成されたか
 [if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 17"]
-[eval exp="f.zaizen_clearlist_complete = 1"]
+[eval exp="sf.zaizen_clearlist_complete = 1"]
 [endif]
 ;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
 [iscript]
