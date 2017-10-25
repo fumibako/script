@@ -71,7 +71,10 @@
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (13 + 4) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.zaizen_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
-
+;財前、全てのイベントが達成されたか
+[if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 17"]
+[eval exp="f.zaizen_clearlist_complete = 1"]
+[endif]
 ;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
 [iscript]
 tf.hint1="財前ヒント1";
