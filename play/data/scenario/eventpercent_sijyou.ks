@@ -130,7 +130,10 @@
 [eval exp="f.sijyou_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
 ;↓クリアリスト表示用("イベント達成率"の文字抜きVer.)
 [eval exp="f.sijyou_event_percent_s = tf.event_pasent + '％'"]
-
+;四条、全てのイベントが達成されたか
+[if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 28"]
+[eval exp="sijyou_clearlist_complete = 1"]
+[endif]
 
 [iscript]
 //ヒントを設定
