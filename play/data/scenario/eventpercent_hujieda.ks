@@ -93,7 +93,10 @@
 [eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (18 + 4) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.hujieda_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
-
+;藤枝、全てのイベントが達成されたか
+[if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 22"]
+[eval exp="f.hujieda_clearlist_complete = 1"]
+[endif]
 ;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
 [iscript]
 tf.hint1="藤枝ヒント1";
