@@ -82,7 +82,7 @@
 [eval exp="f.kuroda_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
 ;黒田、全てのイベントが達成されたか
 [if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 18"]
-[eval exp="f.kuroda_clearlist_complete = 1"]
+[eval exp="sf.kuroda_clearlist_complete = 1"]
 [endif]
 ;ヒントを設定
 [iscript]
