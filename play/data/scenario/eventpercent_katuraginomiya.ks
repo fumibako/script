@@ -92,7 +92,7 @@
 [eval exp="f.katuraginomiya_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
 ;葛城宮、全てのイベントが達成されたか
 [if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 20"]
-[eval exp="f.katuraginomiya_clearlist_complete = 1"]
+[eval exp="sf.katuraginomiya_clearlist_complete = 1"]
 [endif]
 
 ;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
