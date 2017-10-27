@@ -37,7 +37,7 @@
 [position layer=message1 height=250 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font size=28]
+[font size=28 color=white]
 
 [link target=*jump_ensou]演奏会場面へ移動[endlink][r]
 [r][r]
