@@ -262,6 +262,8 @@ jumpします。[p]
 「……こんな目立つ場所で、母の話などもう充分です。[r]
 [sp]母の言葉に従うのは癪ですが、ダンスを教えましょうか？」[p]
 
+[fadeoutbgm time=3000]
+
 ;【立ち絵】主人公： 驚
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -273,6 +275,11 @@ jumpします。[p]
 「簡単なステップならすぐに覚えられるでしょう。[r]
 [sp]今後の為にもいいでしょうし」[p]
 
+[if exp="sf.BGM=='ON'"]
+;【BGM】春の声（ダンスシーン等）
+[playbgm storage="waltz_harunokoe.ogg" loop=true]
+[eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
 [主人公眉下げ下]
