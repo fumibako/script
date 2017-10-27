@@ -69,19 +69,19 @@
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_11_3 + sf.event_kuroda_11_4"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_12_2 + sf.event_kuroda_12_3 + sf.event_kuroda_1_1"]
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times + sf.event_kuroda_1_4 + sf.event_kuroda_2_2"]
-;エンディング数3 /15→/18
+;エンディング数3 /14→/17(6_1未実装につき15→14に変更します)
 [eval exp="tf.ending_Number_of_times = 0"]
 [eval exp="tf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad"]
 ;全てのイベント数 (ありがとうございます。エンディングを加算します)
 [eval exp="tf.allEvent_Number_of_time = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times + tf.ending_Number_of_times"]
-;達成率
+;達成率(6_1未実装につき15→14に変更します)
 [eval exp="tf.event_pasent=0"]
-[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (15 + 3) * 100"]
+[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (14 + 3) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.kuroda_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
-;黒田、全てのイベントが達成されたか
-[if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 18"]
+;黒田、全てのイベントが達成されたか(6_1未実装につき18→17に変更します)
+[if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 17"]
 [eval exp="sf.kuroda_clearlist_complete = 1"]
 [endif]
 ;ヒントを設定

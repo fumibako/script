@@ -62,6 +62,7 @@ $(".test").remove();
 [eval exp="tf.x4 = 760"]
 ;下に連なる行
 [eval exp="tf.y_plus_position =50"]
+;↓黒田6_1未実装につき初期y座標130→80に調整します
 [eval exp="tf.y1 = 130"]
 [eval exp="tf.y2 = tf.y1 + tf.y_plus_position"]
 [eval exp="tf.y3 = tf.y2 + tf.y_plus_position"]
@@ -100,11 +101,11 @@ $(".fixlayer").css("opacity",0);
 [endif]
 ;================================ヒントの表示=======================================================
 [if exp="f.get_tips == 1"]
-[ptext name="tips" text="現在、ヒントの表示はオンです" layer=26 size=22 x=100 y=550 color=snow]
+[ptext name="tips" text="現在、ヒントの表示はオンです" layer=27 size=22 x=100 y=550 color=snow]
 [wait time=50]
 ;※waitしないと書き換えられません！
 [else]
-[ptext name="tips" text="現在、ヒントの表示はオフです" layer=26 size=22 x=100 y=550 color=snow]
+[ptext name="tips" text="現在、ヒントの表示はオフです" layer=27 size=22 x=100 y=550 color=snow]
 [wait time=50]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
@@ -124,21 +125,22 @@ $(".fixlayer").css("opacity",0);
 ;=======================================================================================
 *check_event
 ;「情報(お稽古画面表示の上にlayer26で幕として背景を被せた状態)」から見る際の対策として、同様に背景(layer26以上)を幕として利用する形に変更させていただきます
-[image layer=26 x=0 y=0 storage="bg/bg_clearlist.jpg"]
+;↓顔グラフィックが被る情報をありがとうございます。layer27にします
+[image layer=27 x=0 y=0 storage="bg/bg_clearlist.jpg"]
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_fumibako.jpg"]
 ;[bg storage="../fgimage/bg/bg_fumibako.jpg" time=0]
 ;名前表示
-[image name="c_name1" storage="../image/name_kuroda.png" layer=26 x=250 y=35 visible=true]
+[image name="c_name1" storage="../image/name_kuroda.png" layer=27 x=250 y=35 visible=true]
 ;達成数 コメント化
 ;[ptext text="&tf.allEvent_Number_of_times" layer=27 size=21 x=650 y=40 color=snow]
-;[ptext text="/18　=" layer=26 size=21 x=680 y=40 color=snow]
+;[ptext text="/18　=" layer=27 size=21 x=680 y=40 color=snow]
 ;達成率
 [ptext name="pasent" text="&tf.event_pasent" layer=27 size=25 x=600 y=34 color=snow]
-[ptext name="pasent1" text="%" layer=26 size=25 x=650 y=34 color=snow]
+[ptext name="pasent1" text="%" layer=27 size=25 x=650 y=34 color=snow]
 ;通常イベント数
 [ptext name="pasent" text="&tf.event_Number_of_times" layer=27 size=25 x=280 y=75 color="khaki"]
-[ptext name="pasent1" text="/15" layer=26 size=20 x=310 y=80 color="khaki"]
+[ptext name="pasent1" text="/15" layer=27 size=20 x=310 y=80 color="khaki"]
 ;散策イベント数
 [ptext name="pasent" text="&tf.event_sansaku_Number_of_times" layer=27 size=25 x=755 y=75 color="khaki"]
 [ptext name="pasent1" text="/1" layer=27 size=20 x=785 y=80 color="khaki"]
@@ -146,68 +148,68 @@ $(".fixlayer").css("opacity",0);
 *common
 ;判定処理をまとめます
 ;左位置 tf.x0 tf.x1
-;6月1週 sf.event_kuroda_event_6_1
-[image name="day,kuroda_6_1" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y1 visible=true wait=true]
-[wait time=10]
-[if exp="sf.event_kuroda_event_6_1 == 1"]
-[button name="kuroda_6_1" graphic="day6_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='kuroda_6_2'"]
-[image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y1 visible=true]
-[endif]
+;6月1週 sf.event_kuroda_event_6_1(仮実装ありがとうございます。6_1未実装につきコメントアウトします)
+;[image name="day,kuroda_6_1" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y1 visible=true wait=true]
+;[wait time=10]
+;[if exp="sf.event_kuroda_event_6_1 == 1"]
+;[button name="kuroda_6_1" graphic="day6_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='kuroda_6_2'"]
+;[image name="day,kuroda_6_1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y1 visible=true]
+;[endif]
 
 ;9月1週 sf.event_kuroda_9_1
-[image name="day,kuroda_9_1" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y2 visible=true wait=true]
+[image name="day,kuroda_9_1" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_kuroda_9_1 == 1"]
-[button name="kuroda_9_1" graphic="day9_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='kuroda_9_1'"]
-[image name="day,kuroda_9_1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y2 visible=true]
+[button name="kuroda_9_1" graphic="day9_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y1 exp="tf.jp_sinario='kuroda_9_1'"]
+[image name="day,kuroda_9_1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y1 visible=true]
 [endif]
 
 ;9月3週 sf.event_kuroda_9_3
-[image name="day,kuroda_9_3" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y3 visible=true wait=true]
+[image name="day,kuroda_9_3" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_kuroda_9_3 == 1"]
-[button name="kuroda_9_3" graphic="day9_3.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='kuroda_9_3'"]
-[image name="day,kuroda_9_3" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y3 visible=true]
+[button name="kuroda_9_3" graphic="day9_3.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y2 exp="tf.jp_sinario='kuroda_9_3'"]
+[image name="day,kuroda_9_3" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y2 visible=true]
 [endif]
 
 ;9月4週 sf.event_kuroda_9_4
-[image name="day,kuroda_9_4" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y4 visible=true wait=true]
+[image name="day,kuroda_9_4" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_kuroda_9_4 == 1"]
-[button name="kuroda_9_4" graphic="day9_4.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='kuroda_9_4'"]
-[image name="day,kuroda_9_4" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y4 visible=true]
+[button name="kuroda_9_4" graphic="day9_4.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y3 exp="tf.jp_sinario='kuroda_9_4'"]
+[image name="day,kuroda_9_4" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y3 visible=true]
 [endif]
 
 ;10月3週 sf.event_kuroda_10_3
-[image name="day,kuroda_10_3" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y5 visible=true wait=true]
+[image name="day,kuroda_10_3" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_kuroda_10_3 == 1"]
-[button name="kuroda_10_3" graphic="day10_3.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='kuroda_10_3'"]
-[image name="day,kuroda_10_3" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y5 visible=true]
+[button name="kuroda_10_3" graphic="day10_3.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y4 exp="tf.jp_sinario='kuroda_10_3'"]
+[image name="day,kuroda_10_3" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y4 visible=true]
 [endif]
 
 ;10月4週 sf.event_kuroda_10_4
-[image name="day,kuroda_10_4" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y6 visible=true wait=true]
+[image name="day,kuroda_10_4" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_kuroda_10_4 == 1"]
-[button name="kuroda_10_4" graphic="day10_4.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='kuroda_10_4'"]
-[image name="day,kuroda_10_4" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y6 visible=true]
+[button name="kuroda_10_4" graphic="day10_4.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y5 exp="tf.jp_sinario='kuroda_10_4'"]
+[image name="day,kuroda_10_4" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y5 visible=true]
 [endif]
 
 ;11月1週 sf.event_kuroda_11_1
-[image name="day,kuroda_11_1" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y7 visible=true wait=true]
+[image name="day,kuroda_11_1" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_kuroda_11_1 == 1"]
-[button name="kuroda_11_1" graphic="day11_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='kuroda_11_1'"]
-[image name="day,kuroda_11_4" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y7 visible=true]
+[button name="kuroda_11_1" graphic="day11_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y6 exp="tf.jp_sinario='kuroda_11_1'"]
+[image name="day,kuroda_11_4" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y6 visible=true]
 [endif]
 
 ;11月2週 sf.event_kuroda_11_2
-[image name="day,kuroda_11_2" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y8 visible=true wait=true]
+[image name="day,kuroda_11_2" storage="../image/day_check.png" layer=27 x=&tf.x0 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_kuroda_11_2 == 1"]
-[button name="kuroda_11_2" graphic="day11_2.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y8 exp="tf.jp_sinario='kuroda_11_2'"]
-[image name="day,kuroda_11_2" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y8 visible=true]
+[button name="kuroda_11_2" graphic="day11_2.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='kuroda_11_2'"]
+[image name="day,kuroda_11_2" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y7 visible=true]
 [endif]
 
 ;左位置2 tf.x0_1 tf.x2;二桁 tf.x2_2
@@ -276,7 +278,7 @@ $(".fixlayer").css("opacity",0);
 [eval exp="tf.end2_y = tf.y8 + 10"]
 ;=============================================エンディングタイトル=========================================================
 [if exp="sf.ED_kuroda_normal == 1 || sf.ED_kuroda_good == 1 || sf.ED_kuroda_bad == 1"]
-[image name="endtitle" storage="../image/day_end.png" layer=26 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
+[image name="endtitle" storage="../image/day_end.png" layer=27 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
 [else]
 [image name="day,endtitle" storage="../image/day_end.png" layer=27 x="&tf.x5+140" y="&tf.y7" visible=true wait=true]
 [iscript]
@@ -330,15 +332,16 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [endif]
 ;=============================================未判定==========================================================
 *mihantei
-[if exp="sf.event_kuroda_event_6_1 != 1"]
-[button fix=true name="day,kuroda_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
+;(仮実装ありがとうございます。6_1未実装につきコメントアウトします)
+;[if exp="sf.event_kuroda_event_6_1 != 1"]
+;[button fix=true name="day,kuroda_6_1,tips_btn" graphic="day6_1.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
 ;[image name="day,kuroda_6_1" storage="../image/day6_1.png"  layer=27 x=&tf.x1 y=&tf.y1 visible=true wait=true]
-[iscript]
-$(".kuroda_6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
-[endscript]
-[wait time=10]
-[image name="day,kuroda_6_1" storage="../image/day_check_mi.png" layer=27 x="&tf.x1+140" y=&tf.y1 visible=true]
-[endif]
+;[iscript]
+;$(".kuroda_6_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
+;[endscript]
+;[wait time=10]
+;[image name="day,kuroda_6_1" storage="../image/day_check_mi.png" layer=27 x="&tf.x1+140" y=&tf.y1 visible=true]
+;[endif]
 
 [if exp="sf.event_kuroda_9_1 != 1"]
 [button fix=true name="day,kuroda_9_1,tips_btn" graphic="day9_1.png" target="tips_label" x=&tf.x1 y=&tf.y2 exp="tf.tips=tf.hint2"]
