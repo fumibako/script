@@ -463,6 +463,10 @@ $('.piano_base_me').remove();
 ;【変更】背景を暗転の中から表す（遠景）
 [bg wait=true method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50]
 [wait time=10]
+[iscript]
+$('.piano_mes').remove();
+[endscript]
+[wait time=10]
 ;会話ウィンドウを表示します。 
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
 [wait time=10]
