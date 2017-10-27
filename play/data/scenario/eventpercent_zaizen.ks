@@ -92,10 +92,10 @@ tf.hint12="二月一週~三月三週の間に自動で一度だけ発生";
 //散策
 tf.hint13="礼法が70以上、二月一週~三月四週に町へ行くと一度だけ発生";
 //エンデイング
-tf.hint_bad="ヒントbad";
-tf.hint_bad2="ヒントbad2";
-tf.hint_nomal="ヒントnomal";
-tf.hint_good="ヒントgood";
+tf.hint_bad="十一月一週に「帰る」を選択で発生";
+tf.hint_bad2="十一月一週に「帰らない」を選択、好感度30以下の場合自動で発生";
+tf.hint_nomal="三月四週に発生";
+tf.hint_good="三月四週に好感度90以上礼法淑女度80以上でnormalから連続で発生";
 [endscript]
 
 [return]
