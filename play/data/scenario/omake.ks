@@ -170,17 +170,20 @@ $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 [endif]
 [ptext layer=2 name="list,osirase" page=fore text="どなたかのエンディング全て(good・normal・bad)を見ると…？" x=499 y=420 size=16 color=navy visible=true]
 
+*clear_notice_skip
+
+;↓*clear_notice_skipの後に移動しました(手前だとルートクリア時にskipされてしまうため)
+*all_complete
 ;全てのイベントをコンプリートしたか？　undefinedの場合はエラー回避
 [if exp="sf.sijyou_clearlist_complete == undefined || sf.kuroda_clearlist_complete == undefined || sf.zaizen_clearlist_complete == undefined || sf.katuraginomiya_clearlist_complete == undefined || sf.hujieda_clearlist_complete == undefined"]
-@jump target ="*clear_notice_skip"
+@jump target ="*common"
 [endif]
 ;全てのイベントをコンプリートしているときの表示
 [if exp="sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
-;[ptext layer=2 name="list,osirase" page=fore text="クリアおめでとうございます" x=499 y=420 size=16 color=navy visible=true]
-@jump target ="*clear_notice_skip"
+[ptext layer=2 name="list,osirase" page=fore text="クリアおめでとうございます" x=499 y=420 size=16 color=navy visible=true]
+@jump target ="*common"
 [endif]
 
-*clear_notice_skip
 @jump target ="*common"
 ;=====================================================================================
 
