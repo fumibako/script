@@ -59,6 +59,7 @@ $("kan").css('margin','auto');
 [eval exp="tf.ED_bad = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
+[藤枝ルート終了 end="bad"]
 ;[藤枝ルート終了 end="bad0"]
 [endif]
 @jump storage="test_hujieda.ks"
