@@ -23,8 +23,8 @@
 私はお兄様と一緒に、『ミルクホール 月ノ光』を[ruby text=おとず]訪れた。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】ドビュッシー「月の光」
-;[playbgm storage="piano_Debussy-clairdelune.ogg" loop=true]
-[fadeinbgm storage="piano_Debussy-clairdelune.ogg" loop=true time=5000]
+;[playbgm storage="piano_Debussy-clairdelune80.ogg" loop=true]
+[fadeinbgm storage="piano_Debussy-clairdelune80.ogg" loop=true time=5000]
 [eval exp="f.bgm_storage='piano_Debussy-clairdelune.ogg'"]
 [endif]
 ;====================================================================================
