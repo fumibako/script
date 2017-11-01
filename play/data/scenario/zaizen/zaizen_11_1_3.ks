@@ -278,8 +278,8 @@ jumpします。[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】春の声（ダンスシーン等）
-[playbgm storage="waltz_harunokoe.ogg" loop=true]
-[eval exp="f.bgm_storage='waltz_harunokoe.ogg'"]
+[playbgm storage="waltz_harunokoe50.ogg" loop=true]
+[eval exp="f.bgm_storage='waltz_harunokoe50.ogg'"]
 [endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：通常
