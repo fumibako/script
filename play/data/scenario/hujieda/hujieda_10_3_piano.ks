@@ -22,10 +22,12 @@
 #
 私はお兄様と一緒に、『ミルクホール 月ノ光』を[ruby text=おとず]訪れた。[p]
 [if exp="sf.BGM=='ON'"]
+;【BGM】ベートーヴェン：「月光」
+[fadeinbgm storage="piano_Beethoven-Moonlight.ogg" loop=true time=5000]
+[eval exp="f.bgm_storage='piano_Beethoven-Moonlight.ogg'"]
 ;【BGM】ドビュッシー「月の光」
-;[playbgm storage="piano_Debussy-clairdelune80.ogg" loop=true]
-[fadeinbgm storage="piano_Debussy-clairdelune80.ogg" loop=true time=5000]
-[eval exp="f.bgm_storage='piano_Debussy-clairdelune.ogg'"]
+;[fadeinbgm storage="piano_Debussy-clairdelune80.ogg" loop=true time=5000]
+;[eval exp="f.bgm_storage='piano_Debussy-clairdelune.ogg'"]
 [endif]
 ;====================================================================================
 ;背景: [レトロな喫茶店]
