@@ -13,6 +13,10 @@
 [preload storage="data/fgimage/bg/bg_shinrinkouen_gate_yuu.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_kouyou_ussou.jpg" wait=true]
 [preload storage="data/fgimage/bg/bg_kouyou_kaidan.jpg" wait=true]
+[iscript]
+f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/fgimage/kuroda/base_haori.png","data/fgimage/kuroda/mayu_sage.png","data/fgimage/kuroda/me_niko.png","data/fgimage/kuroda/kuti_hohoemi.png","data/fgimage/kuroda/mayu_futuu.png","data/fgimage/kuroda/me_futuu.png","data/fgimage/kuroda/kuti_futuu.png","data/fgimage/kuroda/me_fusi1.png","data/fgimage/kuroda/me_fusi2.png","data/fgimage/kuroda/me_toji.png","data/fgimage/kuroda/kuti_ake.png"];
+[endscript]
+[preload storage=&f.preload_images_tati wait=true]
 ;==========================================================================================
 ;◆既読スキップ開始
 [if exp="sf.KSKIP=='ON' && this.kag.stat.is_skip==false"]
@@ -236,11 +240,10 @@
 [wait time=10]
 [chara_new name="kuroda_emo" storage="toumei.gif"]
 [chara_show left=250 top=60 layer=12 name="kuroda_emo" time=0]
-[wait time=10]
+[wait time=50]
 [黒田ほほえみ]
 [wait time=10]
-[chara_new name="kuroda_base" storage="kuroda/base_haori.png"]
-[chara_show left=250 top=60 layer=8 name="kuroda_base"]
+[chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
 [wait time=10]
 ;【立ち絵】黒田：ほほえみ
 [whosay name="黒田 将貴" color="#7a65b2"]
