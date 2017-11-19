@@ -79,61 +79,47 @@ abbr,acronym{
 --------------------------*/
 /* セーブデータリスト全体の設定 */
 .save_list {
-	display: table;
-	table-layout: fixed;
-	width: 70%;
-	height:76px;
-	font-size: 14px;
-	font-weight: normal;
-	border-top: 1px dotted #CCC;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: normal;
 }
-
 /* セーブデータの設定 */
 .save_list_item {
-	display: table-row;
-	cursor: pointer;
+  display: table-row;
+  cursor: pointer;
 }
-
 /* セーブデータのサムネイル部分の設定 */
 .save_list_item_thumb {
-	display: table-cell;
-	width: 96px;
-	height:72px;
-	padding-top:5px;
-	padding-left:10px;
-	border-bottom: 1px dotted #CCC;
-
+  display: table-cell;
+  width: 96px;
+  border-bottom: 1px solid #ccc;
 }
-
 .save_list_item_thumb img {
-	width: 96px;
-	height: 72px;
-	-webkit-border-radius: 5px; 
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+  width: 96px;
+  height: 72px;
 }
-
 /* セーブデータのテキスト部文の設定 */
 .save_list_item_area {
-	display: table-cell;
-	vertical-align: top;
-	padding: 0 10px;
-	border-bottom: 1px dotted #CCC;
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 2px;
+  border-bottom: 1px solid #ccc;
 }
 /* セーブデータの日付の設定 */
 .save_list_item_date {
-	display: block;
-	padding: 5px 0;
-	line-height: 1;
-	color:#48D1CC;
+  display: block;
+  padding: 2px 0;
+  line-height: 1;
 }
 /* セーブデータのテキストの設定 */
 .save_list_item_text {
-	display: block;
-	line-height: 1.3;
-	height: 48px;
-	overflow: hidden;
-	color:#666;
+  display: block;
+  line-height: 1.3;
+  height: 40px;
+  overflow: hidden;
 }
 
 
@@ -194,7 +180,7 @@ body{
 
 /* button 
 ---------------------------------------------- */
-.glink_button {
+.button {
 	display: inline-block;
 	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
 	*display: inline;
@@ -205,7 +191,7 @@ body{
 	text-align: center;
 	text-decoration: none;
 	font: 14px/100% Arial, Helvetica, sans-serif;
-	padding: .5em 2em .55em;
+	padding: .2em .2em .2em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
@@ -214,42 +200,13 @@ body{
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
-.glink_button:hover {
+.button:hover {
 	text-decoration: none;
 }
-.glink_button:active {
+.button:active {
 	position: relative;
 	top: 1px;
 }
-
-
-.button_graphic {
-	display: inline-block;
-	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
-	*display: inline;
-	vertical-align: baseline;
-	/*margin: 0 2px;*/
-	outline: none;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
-	
-	padding: 1em 2em 1em;
-	color:white;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	
-	
-}
-.button_graphic:hover {
-	text-decoration: none;
-}
-.button_graphic:active {
-	position: relative;
-	top: 1px;
-}
-
-
 
 .bigrounded {
 	-webkit-border-radius: 2em;
@@ -476,8 +433,4 @@ body{
 	filter: FlipH;
 }
 
-/*ダイアログボックス*/
-#alertify{
-    z-index:9999999;
-}
 

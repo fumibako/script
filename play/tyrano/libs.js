@@ -262,10 +262,8 @@
     };
 
     $.loadText = function(file_path, callback) {
-        
-        /*
         var httpObj = jQuery.get(file_path + "?" + Math.floor(Math.random() * 1000000), null, function(obj) {
-            
+
             var order_str = "";
 
             if (httpObj) {
@@ -285,23 +283,10 @@
             callback(order_str);
             // createOrder
         });
-        
-        */
-        
-        $.ajax({
-            url: file_path + "?" + Math.floor(Math.random() * 1000000),
-            cache: false,
-            success: function(text){
-                order_str = text;
-                callback(order_str);
-            },
-            error:function(){
-                alert("file not found:"+file_path);
-                callback("");
-            }
-        });
-        
-        
+
+        if (httpObj.statusText === "error") {
+            alert("ファイルが見つかりませんでした");
+        }
 
     };
 
@@ -376,12 +361,10 @@
     $.getBrowser = function() {
 
         var userAgent = window.navigator.userAgent.toLowerCase();
-        
+
         if (userAgent.indexOf('msie') >= 0 || userAgent.indexOf('trident') >= 0) {
             return "msie";
-        }else if (userAgent.indexOf("edge") > -1) {
-            return "edge"; 
-        }else if (userAgent.indexOf("firefox") > -1) {
+        } else if (userAgent.indexOf("firefox") > -1) {
             return "firefox";
         } else if (userAgent.indexOf("opera") > -1) {
             return "opera";
@@ -394,42 +377,6 @@
         }
 
     };
-    
-    $.isNWJS = function(){
-        // Node.js で動作しているか
-        var isNode = (typeof process !== "undefined" && typeof require !== "undefined");
-        // ブラウザ上(非Node.js)で動作しているか
-        var isBrowser = !isNode
-        // node-webkitで動作しているか
-        var isNodeWebkit;
-        try {
-            isNodeWebkit = isNode ? (typeof require('nw.gui') !== "undefined") : false;
-        } catch(e) {
-            isNodeWebkit = false;
-        }
-        
-        if (isNodeWebkit) {
-            // node-webkitで動作
-            return true;
-        } else if ( isNode) {
-            // Node.js上で動作している
-            return true;
-        } else {
-            //  通常のWebページとして動作している
-            return false;
-        }
-    },
-    
-    $.insertRule = function(css_str){
-        
-        var sheet = (function() {
-            var style = document.createElement("style");
-            document.getElementsByTagName("head")[0].appendChild(style);
-            return style.sheet;
-        })();
-        sheet.insertRule(css_str,0);
-        
-    },
 
     $.swfName = function(str) {
         if (navigator.appName.indexOf("Microsoft") != -1) {
@@ -439,8 +386,7 @@
         }
     };
 
-//古いトランス。
-    $.trans_old = function(method, j_obj, time, mode, callback) {
+    $.trans = function(method, j_obj, time, mode, callback) {
 
         if (method == "crossfade" || mode == "show") {
 
@@ -496,59 +442,6 @@
         }
 
     };
-    
-    //コンバート v450rc5以前
-    var _map_conv_method = {
-        "corssfade":"fadeIn",
-        "explode":"zoomIn",
-        "slide":"slideInLeft",
-        "blind":"bounceIn",
-        "bounce":"bounceIn",
-        "clip":"flipInX",
-        "drop":"slideInLeft",
-        "fold":"fadeIn",
-        "puff":"fadeIn",
-        "scale":"zoomIn",
-        "shake":"fadeIn",
-        "size":"zoomIn"
-    }
-
-    $.trans = function(method, j_obj, time, mode, callback) {
-        
-        if(method=="crossfade") {
-            method = "fadeIn";
-        }else if(_map_conv_method[method]){
-            method = _map_conv_method[method];
-        }
-        
-        j_obj.css("animation-duration",parseInt(time)+"ms");
-        
-        if (mode == "hide") {
-            j_obj.show();
-            method = $.replaceAll(method,"In","Out");
-            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            j_obj.addClass('animated ' + method).one(animationEnd, function() {
-                $(this).remove();
-                if (callback) {
-                    //callback();
-                }
-            });
-
-        } else if (mode == "show") {
-            j_obj.show();
-            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            j_obj.addClass('animated ' + method).one(animationEnd, function() {
-                
-                $(this).removeClass('animated ' + method);
-                if (callback) {
-                    callback();
-                }
-            });
-        }
-
-        
-
-    };
 
     //要素から空白のオブジェクトを削除して返却する
     $.minifyObject = function(obj) {
@@ -563,32 +456,7 @@
 
     };
     
-    $.preloadImgCallback = function(j_menu,cb,that){
     
-        var img_storage = [];
-        
-        j_menu.find("img").each(function() {
-            img_storage.push($(this).attr("src"));
-        });
-        
-        //ロードが全て完了したら、ふわっと出す
-        var sum = 0;
-        for (var i = 0; i < img_storage.length; i++) {
-            that.kag.preload(img_storage[i], function() {
-                sum++;
-                if (img_storage.length == sum) {
-                    
-                    cb();
-        
-                }
-            });
-        }
-        
-        if(img_storage.length==0){
-            cb();
-        }
-    
-    };
     
     $.setStorage = function(key, val ,type) {
         
@@ -597,7 +465,6 @@
             $.setStorageCompress(key,val);
             
         }else if(type=="file"){
-            
             $.setStorageFile(key,val);
             
         }else{
@@ -718,19 +585,7 @@
         val = JSON.stringify(val);
         var fs = require('fs');
         
-        var out_path = "";
-        
-        //mac os Sierra 対応
-        if(process.execPath.indexOf("var/folders")!=-1){
-            out_path = process.env.HOME+"/_TyranoGameData";
-            if(!fs.existsSync(out_path)){
-                fs.mkdirSync(out_path);
-            }
-        }else{
-            out_path = $.getProcessPath();
-        }
-        
-        
+        var out_path = $.getProcessPath();
         fs.writeFileSync(out_path + "/" + key + ".sav", escape(val));
 
     };
@@ -740,19 +595,9 @@
         try {
 
             var gv = "null";
+
             var fs = require('fs');
-            var out_path = "";
-        
-            //Mac os Sierra 対応
-            if(process.execPath.indexOf("var/folders")!=-1){
-                out_path = process.env.HOME+"/_TyranoGameData";
-                if(!fs.existsSync(out_path)){
-                    fs.mkdirSync(out_path);
-                }
-            }else{
-                out_path = $.getProcessPath();
-            }
-            
+            var out_path = $.getProcessPath();
             if (fs.existsSync(out_path+"/" + key + ".sav")) {
                 var str = fs.readFileSync(out_path+"/" + key + ".sav");
                 gv = unescape(str);
@@ -803,32 +648,6 @@
 
     };
     */
-
-    $.alert = function(str,cb) {
-        alertify.alert(str,function(){;
-            if(typeof cb == "function"){
-                cb();
-            }
-        });
-    };
-    
-    $.inform =function(str,type){
-        alertify.log(str,type);
-    };
-    
-    $.confirm = function (str,cb_ok,cb_cancel){
-        
-        alertify.confirm(str,function(e){
-            if (e) {
-            // user clicked "ok"
-                cb_ok();
-            } else {
-                // user clicked "cancel"
-                cb_cancel();
-            }
-        });
-                
-    };
 
     //オブジェクトの個数をもってきます。1
     $.countObj = function(obj) {
