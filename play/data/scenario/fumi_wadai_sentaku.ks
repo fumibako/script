@@ -26,7 +26,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
 [if exp="f.fumi_wadai_number>10"]
-			[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page2 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page2 text="　" size=20 width="20" x=870 y=480 graphic="button_tugi.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_wadai_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -46,7 +46,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 	f.fumi_wadai_y = ( 10 + 80 * f.fumi_wadai_number ) - 80 * f.list_count;
 [endscript]
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left
 [endif]
@@ -72,7 +72,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>5"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_right
@@ -96,9 +96,9 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
 
-			[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page1 text="←" size=20 width="20" x=350 y=480 color=white]
+			[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page1 text="　" size=20 width="20" x=350 y=480 graphic="button_modoru.png" font_color=black]
 [if exp="f.fumi_wadai_number>20"]
-			[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page3 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page3 text="　" size=20 width="20" x=870 y=480 graphic="button_tugi.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_wadai_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -120,7 +120,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 ;f.fumi_wadai_y＝[emb exp ="f.fumi_wadai_y"][r]
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left_page2
@@ -147,7 +147,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>15"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -172,9 +172,9 @@ f.wadai_max_page = Math.ceil(f.fumi_wadai_number / 10);
 f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page2 text="←" size=20 width="20" x=350 y=480 color=white]
+		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page2 text="　" size=20 width="20" x=350 y=480 graphic="button_modoru.png" font_color=black]
 [if exp="f.fumi_wadai_number>30"]
-		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page4 text="→" size=20 width="20" x=890 y=480 color=white]
+		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page4 text="　" size=20 width="20" x=870 y=480 graphic="button_tugi.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_wadai_number - 20"]
 [eval exp="f.loop_count = f.list_count"]
@@ -196,7 +196,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 ;f.fumi_wadai_y＝[emb exp ="f.fumi_wadai_y"][r]
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left_page3
@@ -223,7 +223,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>25"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -248,9 +248,9 @@ f.wadai_max_page = Math.ceil(f.fumi_wadai_number / 10);
 f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page3 text="←" size=20 width="20" x=350 y=480 color=white]
+		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page3 text=" " size=20 width="20" x=350 y=480 graphic="button_modoru.png" font_color=black]
 [if exp="f.fumi_wadai_number>40"]
-		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page5 text="→" size=20 width="20" x=890 y=480 color=white]
+		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page5 text=" " size=20 width="20" x=890 y=480 graphic="button_tugi.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_wadai_number - 30"]
 [eval exp="f.loop_count = f.list_count"]
@@ -272,7 +272,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 ;f.fumi_wadai_y＝[emb exp ="f.fumi_wadai_y"][r]
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left_page4
@@ -299,7 +299,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>35"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -324,7 +324,7 @@ f.wadai_max_page = Math.ceil(f.fumi_wadai_number / 10);
 f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [endscript]
 	[ptext name="list" text=&f.wadai_page_hyouji layer=28 size=20 x=600 y=490 color=rosybrown bold=bold]
-		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page4 text="←" size=20 width="20" x=350 y=480 color=white]
+		[glink name="list" storage="fumi_wadai_sentaku.ks" target=*fumi_wadai_page4 text="　" size=20 width="20" x=350 y=480 graphic="button_modoru.png" font_color=black]
 [eval exp="f.list_count = f.fumi_wadai_number - 40"]
 [eval exp="f.loop_count = f.list_count"]
 [if exp="f.loop_count > 5"]
@@ -346,7 +346,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=380 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_wadai_left_page5
@@ -373,7 +373,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 
 	[eval exp="f.wadai_selected = '*wadai_shori'+f.list_count"]
 [if exp="f.fumi_wadai_number>45"]
-	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y color=white]
+	[glink name="list" storage="fumi_wadai_shori.ks" target=&f.wadai_selected text=&f.wadai_list_hairetsu[f.list_count][0] size=15 width="200" x=680 y=&f.fumi_wadai_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 
 [if exp="f.loop_count>0"]

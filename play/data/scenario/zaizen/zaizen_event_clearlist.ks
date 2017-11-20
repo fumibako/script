@@ -130,10 +130,10 @@ $(".fixlayer").css("opacity",0);
 [ptext name="pasent1" text="%" layer=27 size=25 x=650 y=34 color=snow]
 ;通常イベント数
 [ptext name="pasent" text="&tf.event_Number_of_times" layer=27 size=25 x=280 y=75 color="khaki"]
-[ptext name="pasent1" text="/11" layer=27 size=20 x=310 y=80 color="khaki"]
+[ptext name="pasent1" text="/12" layer=27 size=20 x=310 y=80 color="khaki"]
 ;散策イベント数
 [ptext name="pasent" text="&tf.event_sansaku_Number_of_times" layer=27 size=25 x=755 y=75 color="khaki"]
-[ptext name="pasent1" text="/2" layer=27 size=20 x=785 y=80 color="khaki"]
+[ptext name="pasent1" text="/1" layer=27 size=20 x=785 y=80 color="khaki"]
 ;=======================================================================================
 ;判定処理をまとめます
 ;sf.event_zaizen_event_6_1
@@ -225,22 +225,23 @@ $(".fixlayer").css("opacity",0);
 [image name="day,zaizen_event_1_3" storage="../image/day_check_sumi.png" layer=27 x="&tf.x2+150" y=&tf.y3 visible=true]
 [endif]
 
-;==================================================================================
-;左位置3 tf.x0_2 tf.x3
-;sf.event_zaizen_sansaku_2_1
-[image name="day,zaizen_sansaku_2_1" storage="../image/day_check.png" layer=27 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
+;sf.event_zaizen_2_1
+[image name="day,zaizen_sansaku_2_1" storage="../image/day_check.png" layer=27 x=&tf.x0_1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_zaizen_sansaku_2_1 == 1"]
-[button name="zaizen_sansaku_2_1" graphic="day2_1.png" target="zaizen_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='zaizen_2_1'"]
-[image name="day,zaizen_sansaku_2_1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x3+150" y=&tf.y1 visible=true]
+[button name="zaizen_sansaku_2_1" graphic="day2_1.png" target="zaizen_sinario" x=&tf.x2 y=&tf.y4 exp="tf.jp_sinario='zaizen_2_1'"]
+[image name="day,zaizen_sansaku_2_1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x2+150" y=&tf.y4 visible=true]
 [endif]
 
+
+;==================================================================================
+;左位置3 tf.x0_2 tf.x3
 ;sf.event_zaizen_sansaku_bazar 2月1週~3月3週・散策・バザー
-[image name="day,zaizen_sansaku_bazar" storage="../image/day_check.png" layer=27 x=&tf.x0_2 y=&tf.y2 visible=true wait=true]
+[image name="day,zaizen_sansaku_bazar" storage="../image/day_check.png" layer=27 x=&tf.x0_2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_zaizen_sansaku_bazar == 1"]
-[button name="zaizen_sansaku_bazar" graphic="day2_1.png" target="zaizen_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='zaizen_bazaar'"]
-[image name="day,zaizen_sansaku_bazar" storage="../image/day_check_sumi.png" layer=27 x="&tf.x3+150" y=&tf.y2 visible=true]
+[button name="zaizen_sansaku_bazar" graphic="day2_1.png" target="zaizen_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='zaizen_bazaar'"]
+[image name="day,zaizen_sansaku_bazar" storage="../image/day_check_sumi.png" layer=27 x="&tf.x3+150" y=&tf.y1 visible=true]
 [endif]
 ;========================================エンディング============================================================
 ;enndingボタン位置
@@ -262,7 +263,7 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [endif]
 ;========================================エンディング============================================================
 [if exp="sf.ED_zaizen_bad2 == 1"]
-[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_11_1_bad'"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="zaizen_sinario" exp="tf.jp_sinario='zaizen_11_1_bad1'"]
 [image name="ending1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [endif]
 [if exp="sf.ED_zaizen_bad2 != 1"]

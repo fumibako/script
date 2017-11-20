@@ -1,6 +1,7 @@
 ﻿;=============================================
 ;◆黒田イベント【分岐：normal/goodED】黒田ルートかつ12月3週になった時点で好感度一定値以上かつ麦の穂所持で1度だけ
 ;=============================================
+*start
 *replay_kuroda_12_3
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false] 

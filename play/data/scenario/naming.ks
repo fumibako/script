@@ -81,7 +81,7 @@
 [eval exp="sf.girl_namae='文奈'"]
 ;名前が無い場合、先に入力する
 [endif]
-[r][r][r]
+[r][r]
 [font size=31]
 [link target=*name]名前入力から始める[endlink][r]
 [r][r][r]

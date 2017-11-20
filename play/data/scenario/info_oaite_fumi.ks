@@ -118,7 +118,7 @@
 
 ;[eval exp="f.fumi_all_number=5"]
 [if exp="f.fumi_all_number>10"]
-			[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page2 text="→" size=20 width="20" x=890 y=480 color=white]
+			[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page2 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_all_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -204,9 +204,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page1 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page1 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number>20"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page3 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page3 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left2
 [if exp="f.list_count == 0"]
@@ -286,9 +286,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page2 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page2 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 30"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page4 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page4 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left3
 [if exp="f.list_count == 0"]
@@ -368,9 +368,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page3 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page3 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 40"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page5 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page5 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left4
 [if exp="f.list_count == 0"]
@@ -450,9 +450,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page4 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page4 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 50"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page6 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page6 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left5
 [if exp="f.list_count == 0"]
@@ -532,9 +532,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page5 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page5 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 60"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page7 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page7 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left6
 [if exp="f.list_count == 0"]
@@ -614,9 +614,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page6 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page6 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 70"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page8 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page8 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left7
 [if exp="f.list_count == 0"]
@@ -696,9 +696,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page7 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page7 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 80"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page9 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page9 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left8
 [if exp="f.list_count == 0"]
@@ -778,9 +778,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page8 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page8 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 90"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page10 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page10 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left9
 [if exp="f.list_count == 0"]
@@ -860,9 +860,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page9 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page9 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 100"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page11 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page11 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left10
 [if exp="f.list_count == 0"]
@@ -942,9 +942,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page10 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page10 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 110"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page12 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page12 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left11
 [if exp="f.list_count == 0"]
@@ -1024,9 +1024,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page11 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page11 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 120"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page13 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page13 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left12
 [if exp="f.list_count == 0"]
@@ -1106,9 +1106,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page12 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page12 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 130"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page14 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page14 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left13
 [if exp="f.list_count == 0"]
@@ -1188,9 +1188,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page13 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page13 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 140"]
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page15 text="→" size=20 width="20" x=890 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page15 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left14
 [if exp="f.list_count == 0"]
@@ -1270,9 +1270,9 @@
 [eval exp="f.loop_count = 5"]
 [endif]
 
-[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page14 text="←" size=20 width="20" x=20 y=480 color=white]
+[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page14 text="←" size=20 width="20" x=20 y=480 graphic="select_waku_x135b.png" font_color=black]
 [if exp="f.fumi_all_number > 140"]
-;[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page16 text="→" size=20 width="20" x=890 y=480 color=white]
+;[glink name="list" storage="info_oaite_fumi.ks" target=*fumi_all_page16 text="→" size=20 width="20" x=870 y=480 graphic="select_waku_x135b.png" font_color=black]
 [endif]
 *loop_fumi_all_left15
 [if exp="f.list_count == 0"]

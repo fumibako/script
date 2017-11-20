@@ -33,6 +33,7 @@ $(".tips_btn").remove();
 [endif]
 [freeimage layer = 27]
 [freeimage layer = 28]
+[eval exp="f.viewing_storage = 'info_zaizen.ks'"]
 [eval exp="f.oaite_viewing_storage = 'info_zaizen.ks'"]
 [eval exp="f.viewing_target = '*info_zaizen'"]
 [eval exp="f.oaite_viewing_target = '*info_zaizen'"]
@@ -41,7 +42,7 @@ $(".tips_btn").remove();
 ;◆手紙一覧
 ;[eval exp="f.fumi_zaizen_number=13"]
 [if exp="f.fumi_zaizen_number > 5"]
-			[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+			[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page2 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_zaizen_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -81,9 +82,9 @@ $(".tips_btn").remove();
 [call target=*info_zaizen_hyouji]
 
 ;1f.fumi_zaizen_number=[emb exp ="f.fumi_zaizen_number"][r]
-[glink name="list" storage="info_zaizen.ks" target=*info_zaizen text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_zaizen.ks" target=*info_zaizen text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_zaizen_number > 10"]
-[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page3 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_zaizen_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -127,7 +128,7 @@ $(".tips_btn").remove();
 [call target=*info_zaizen_hyouji]
 
 ;1f.fumi_zaizen_number=[emb exp ="f.fumi_zaizen_number"][r]
-[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_zaizen.ks" target=*fumi_zaizen_page2 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 
 [eval exp="f.list_count = f.fumi_zaizen_number - 10"]
 [eval exp="f.loop_count = f.list_count"]
@@ -195,16 +196,16 @@ $(".tips_btn").remove();
 
 *info_face_zizen_owari
 ;======================================================================================
-	[glink name="list" storage="info_kuroda.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
-;	[glink name="list" storage="info_zaizen.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 color=white]
-	[glink name="list" storage="info_sijyou.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 color=white]
+	[glink name="list" storage="info_kuroda.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 graphic="select_waku_x300.png" font_color=black]
+;	[glink name="list" storage="info_zaizen.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=30 y=580 graphic="select_waku_x300.png" font_color=black]
+	[glink name="list" storage="info_sijyou.ks" target=info_sijyou text="四条 華織" size=16 width="120" x=230 y=580 graphic="select_waku_x300.png" font_color=black]
 ;葛城宮に手紙を出せるようになっていたらボタン表示
 [if exp="f.katuraginomiya_fumi_start == 1 || f.katuraginomiya_au == 1"]
-	[glink name="list" storage="info_katuraginomiya.ks" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
+	[glink name="list" storage="info_katuraginomiya.ks" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 graphic="select_waku_x300.png" font_color=black]
 [endif]
 ;藤枝に手紙を出せるようになっていたらボタン表示
 [if exp="f.hujieda_fumi_start==1"]
-	[glink name="list" storage="info_hujieda.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
+	[glink name="list" storage="info_hujieda.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 graphic="select_waku_x300.png" font_color=black]
 [endif]
 [if exp="f.para_zaizen_koukando < 0"]
 [eval exp="f.para_koukando_x = 270"]
@@ -229,8 +230,10 @@ $(".tips_btn").remove();
 	[ptext name="list" text="―" layer=28 size=25 x=270 y=448 color=black bold=bold]
 [endif]
 ;◆クリアリストリンク
+[call storage="eventpercent_zaizen.ks" target=*start]
+[wait time=10]
 [eval exp="f.clearlist_out_storage='info_zaizen.ks'"]
-[glink storage="info_zaizen.ks" target=*jump_clearlist exp="f.event_replay = 'zaizen'" text=&f.zaizen_event_percent fontcolor=gray size=16 width=170 x=130 y=480 color=white]
+[glink storage="info_zaizen.ks" target=*jump_clearlist exp="f.event_replay = 'zaizen'" text=&f.zaizen_event_percent fontcolor=gray size=16 width=170 x=130 y=480 graphic="select_waku_x300.png" font_color=black]
 [wait time=10]
 [return]
 [s]

@@ -1,6 +1,7 @@
 ﻿﻿;=============================================
 ;◆黒田イベント４章【実際に会う事を決める】9月1週、お相手選択で「黒田」を選ぶと発生
 ;=============================================
+*start
 *replay_kuroda_9_1
 [layopt layer=fix visible=false] 
 [image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500 visible=true] 

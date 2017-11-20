@@ -1,0 +1,124 @@
+
+;ティラノスクリプト　ブースターパック
+;メニューボタン非表示
+[hidemenubutton]
+[stopbgm]
+;ゲームに必要なライブラリ読み込み
+[call storage="tyrano.ks"]
+;[call storage="novel_booster.ks"]
+[call storage="macro_graphic.ks"]
+[call storage="macro_etc.ks"]
+;[call storage="boost_mode/boost_mode.ks"]
+
+;メッセージレイヤの定義(画面全体）
+[position layer=message0 width=960 height=500 top=80 left=320 page=fore opacity=0]
+;↓既読でも白文字に。(font colorでは効かないことが多いためこちらで色指定します)
+[config_record_label color=""]
+[resetfont]
+[font color = white]
+
+;タイトルの設定
+[title name="恋綴り"]
+[configdelay speed="0"]
+
+[if exp="sf.BGM=='OFF'"]
+;BGM設定がOFFの場合はロード時点で再生していたBGMを停止します。
+[stopbgm]
+[endif]
+
+@layopt layer=message0 page=fore visible=true
+[sp]　　　　　　・・・読込中・・・[r]
+[wait time=10]
+;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+[iscript]
+f.preload_images_title1 = ["data/fgimage/bg/title.jpg","data/fgimage/toumei.gif","data/image/button_title_start.png","data/image/button_title_load.png","data/image/button_title_cg.png","data/image/button_title_replay.png","data/image/button_title_credit.png","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/button/frame_lesson.png","data/fgimage/button/kira_button.png","data/fgimage/button/menu_button_close.png"];
+[endscript]
+[preload storage=&f.preload_images_title1 wait=true]
+[sp]　　　　　　　　  20%
+[wait time=10]
+*kidoku_check01
+[iscript]
+f.preload_images_title2 = ["data/image/toumei.gif","data/image/button_bgm_off.png","data/image/button_bgm_on.png","data/image/button_se_off.png","data/image/button_se_on.png","data/image/button_kskip_off.png","data/image/button_kskip_on.png","data/image/button_boost_off.png","data/fgimage/bg/bg_kinari_sakura.jpg","data/fgimage/bg/plane_mizuiro.jpg","data/fgimage/bg/plane_sakura.jpg","data/fgimage/bg/plane_wakakusa.jpg","tyrano/images/kag/menu_load_bg.jpg","tyrano/images/kag/menu_save_bg.jpg","tyrano/images/kag/menu_bg.jpg","data/image/button_fumi.png","data/image/button_sansaku.png","data/image/button_info.png","data/image/button_message_load.png","data/image/button_message_log.png","data/image/button_message_save.png","data/image/button_message_skip.png","data/image/x_50x50.png"];
+[endscript]
+[preload storage=&f.preload_images_title2 wait=true]
+[ct]
+[resetfont]
+[font color = white]
+[wait time=10]
+[sp]　　　　　　・・・読込中・・・[r]
+[wait time=10]
+[sp]　　　　　　　　  40%
+[wait time=10]
+
+*kidoku_check02
+[iscript]
+f.preload_images_title3 = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/base_katate.png","data/fgimage/girl/S/base_yubi.png","data/fgimage/girl/S/base_ryoute.png","data/fgimage/girl/S/mayu_futuu.png","data/fgimage/girl/S/mayu_yowa.png","data/fgimage/girl/S/mayu_komari.png","data/fgimage/girl/S/mayu_tuyoki.png","data/fgimage/girl/S/mayu_sage.png","data/fgimage/girl/S/emo_hohosome.png","data/fgimage/bg/bg_prologue.jpg","data/fgimage/bg/bg_prologue_dark.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/button/frame_lesson_message.png","data/fgimage/button/frame_lesson_fukidasi.png","data/fgimage/girl/S/girl_all_yubi_me_toji_mayu_yowa_ase.png","data/fgimage/girl/S/girl_all_yubi_me_fusi_mayu_yowa_ase.png","data/fgimage/girl/S/girl_all_me_futuu_mayu_futuu.png","data/fgimage/girl/S/girl_all_me_toji_mayu_komari.png","data/fgimage/girl/S/girl_all_me_toji_mayu_soft.png","data/fgimage/girl/S/girl_all_me_toji_mayu_futuu.png"];
+[endscript]
+[preload storage=&f.preload_images_title3 wait=true]
+[ct]
+[resetfont]
+[font color = white]
+[wait time=10]
+[sp]　　　　　　・・・読込中・・・[r]
+[wait time=10]
+[sp]　　　　　　　　  60%
+[wait time=10]
+
+;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+[iscript]
+f.preload_images1 = ["data/fgimage/girl/S/me_futuu.png","data/fgimage/girl/S/me_fusi1.png","data/fgimage/girl/S/me_fusi2.png","data/fgimage/girl/S/me_toji.png","data/fgimage/girl/S/me_niko.png","data/fgimage/girl/S/me_ake.png","data/fgimage/girl/S/me_yoko.png","data/fgimage/girl/S/me_yokofusi1.png","data/fgimage/girl/S/me_yokofusi2.png","data/fgimage/girl/S/kuti_futuu.png","data/fgimage/girl/S/kuti_ake.png","data/fgimage/girl/S/kuti_hohoemi.png","data/fgimage/girl/S/kuti_ooake.png","data/fgimage/girl/S/kuti_warau.png","data/fgimage/girl/S/kuti_warau_s.png","data/fgimage/girl/S/kuti_otyobo.png","data/fgimage/button/qk_anim01.png","data/fgimage/button/qk_anim02.png","data/fgimage/button/qk_anim03.png"];
+[endscript]
+[preload storage=&f.preload_images1 wait=true]
+[ct]
+[resetfont]
+[font color = white]
+[wait time=10]
+[sp]　　　　　　・・・読込中・・・[r]
+[wait time=10]
+[sp]　　　　　　　　  80%
+[wait time=10]
+
+;画像ファイルはフルパス（プロジェクトファイル以下）で指定してください
+[iscript]
+f.preload_images2 = ["data/fgimage/message_bg/frame_red.png","data/fgimage/message_bg/frame_brown.png","data/fgimage/girl/L/base.png","data/fgimage/girl/L/mayu_futuu.png","data/fgimage/girl/L/me_futuu.png","data/fgimage/girl/L/kuti_futuu.png","data/fgimage/bg/room_niwa.jpg","data/fgimage/bg/bg_okeiko_main.jpg","data/fgimage/bg/bg_machi.jpg","data/fgimage/girl/L/gitl_L_all_futuu.png","data/fgimage/girl/L/girl_L_all_futuu_me_toji.png","data/fgimage/button/okeiko_koto.png","data/fgimage/button/okeiko_sadou.png","data/fgimage/button/okeiko_kadou.png","data/fgimage/button/okeiko_reihou.png","data/fgimage/button/okeiko_gogaku.png"];
+//ver3.41ではエラーが出るのでコメントアウト。verup時に再度試すことf.preload_bgms = ["data/bgm/prologue_kotonisakuhana.m4a","data/bgm/isono_miyabi.m4a"];
+
+f.preload_images3=["data/image/button_message_auto.png","data/image/button_message_close.png","data/image/button_message_load.png","data/image/button_message_log.png","data/image/button_message_save.png","data/image/button_message_skip.png"];
+[endscript]
+[preload storage=&f.preload_images2 wait=true]
+[preload storage=&f.preload_images3 wait=true]
+[ct]
+[resetfont]
+[font color = white]
+[wait time=10]
+[sp]　　　　　　・・・読込中・・・[r]
+[wait time=10]
+[sp]　　　　　　　　 100%[r]
+[wait time=10]
+[r][r][font size=32]
+[sp]　　　・　click　・[r]
+[wait time=10]
+[r][r]
+[resetfont]
+[font color = white]
+
+[wait time=20]
+[sp]　　　設定によっては音が鳴ります[r]
+（タイトル画面右下で設定してください）[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪解け（タイトル画面等）click=trueは一部ブラウザでクリック待ち的な動作をすることがあるため除いて運用中
+[playbgm storage="title_yukidoke.ogg" loop=true]
+[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+[endif]
+
+[resetfont]
+[ct]
+
+
+
+;タイトル画面表示
+[jump storage="title.ks"]
+
+;--------------------------
+
+[s]

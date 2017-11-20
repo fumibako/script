@@ -64,58 +64,58 @@ $(function(){
 ;[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
 *page_1
-[glink target="test4_4" text="4月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test5_4" text="5月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test6_4" text="6月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test7_4" text="7月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test8_4" text="8月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test8_4bad" text="8月4週bad" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test9_2" text="9月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-[glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
-[glink target="check_event0" text="クリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=blue]
+[glink target="test4_4" text="4月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target="test5_4" text="5月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="test6_4" text="6月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target="test7_4" text="7月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target="test8_4" text="8月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="test8_4bad" text="8月4週bad" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 graphic="select_waku_x500.png" font_color=black]
+[glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 graphic="select_waku_x500.png" font_color=black]
+[glink target="test9_2" text="9月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 graphic="select_waku_x500.png" font_color=black]
+[glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 graphic="select_waku_x500.png" font_color=black]
+[glink target="check_event0" text="クリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 graphic="select_waku_x500.png" font_color=indigo]
 
-[glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-;[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=15 width="120" x=400 y=150 color=white]
-[glink target="test10_3_piano" text="10月3週ピアノ版" graphic="select_waku_x500.png" size=15 width="120" x=530 y=150 color=white]
-[glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="test11_3bad" text="11月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="test12_3" text="12月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="test12_3b" text="12月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="test10_1" text="10月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 graphic="select_waku_x500.png" font_color=black]
+;[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=15 width="120" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="test10_3_piano" text="10月3週ピアノ版" graphic="select_waku_x500.png" size=15 width="120" x=530 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="test11_1" text="11月1週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target="test11_3" text="11月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target="test11_3bad" text="11月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="test12_3" text="12月3週" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 graphic="select_waku_x500.png" font_color=black]
+[glink target="test12_3b" text="12月3週badED" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
 
-[glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
+[glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 graphic="select_waku_x500.png" font_color=black]
 ;ページをとめます
 @jump target=common_page
 [s]
 
 *page_2
 
-[glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-;[glink target="test2_3" text="2月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test2_3" text="2月3週" graphic="select_waku_x500.png" size=15 width="120" x=100 y=150 color=white]
-[glink target="test2_3_piano" text="2月3週ピアノ版" graphic="select_waku_x500.png" size=15 width="120" x=230 y=150 color=white]
-[glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="hujieda_bazaar_1" text="藤枝・バザーイベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="hujieda_bazaar_2" text="藤枝・バザーイベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 graphic="select_waku_x500.png" font_color=black]
+;[glink target="test2_3" text="2月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="test2_3" text="2月3週" graphic="select_waku_x500.png" size=15 width="120" x=100 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="test2_3_piano" text="2月3週ピアノ版" graphic="select_waku_x500.png" size=15 width="120" x=230 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target="hujieda_bazaar_1" text="藤枝・バザーイベント1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="hujieda_bazaar_2" text="藤枝・バザーイベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 graphic="select_waku_x500.png" font_color=black]
 
-[glink target="sansaku1" text="散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="test_fumi2" text="手紙追加分" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
+[glink target="sansaku1" text="散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="test_fumi2" text="手紙追加分" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
 
-[glink target="page_1" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
-;[glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
+[glink target="page_1" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
+;[glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 graphic="select_waku_x500.png" font_color=black]
 ;ページをとめます
 ;@jump target=common_page
 ;[s]
 
 *common_page
-[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
-[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 graphic="select_waku_x500.png" font_color=black]
+[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 graphic="select_waku_x500.png" font_color=black]
 
 [s]
 
@@ -366,7 +366,7 @@ $(".test_txt").remove();
 ;sf.event_hujieda_2_3
 ;sf.event_hujieda_bazaar
 ;sf.event_hujieda_sansaku1
-[glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
+[glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 graphic="select_waku_x500.png" font_color=black]
 [s]
 [cm]
 *end_check_event

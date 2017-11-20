@@ -236,7 +236,7 @@ TG.stat.play_se = true;
 
 ;タイトル各種ボタン表示
 [locate x=460 y=50]
-[button name="list" graphic="button_title_start.png" target="*start" time=0]
+[button name="list" graphic="button_title_start.png" storage="title.ks" target="*start" time=0]
 
 [locate x=370 y=130]
 [button name="list" exp="f.load_mae_storage='title.ks'; f.load_mae_target='*title'" graphic="button_title_load.png" storage="sys_load.ks" target="*load" time=0]

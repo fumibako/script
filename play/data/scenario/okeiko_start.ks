@@ -85,7 +85,7 @@ for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
 手紙の「話題」を全て入手済みにしますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=300 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]

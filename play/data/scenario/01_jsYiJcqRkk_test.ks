@@ -31,61 +31,61 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 ;[ptext text="" layer=26 size=17 x=100 y=65 color=darkslateblue]
 ;[ptext text="作業中＝　" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
-[glink target="test01" text="チラシ新聞マクロテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-;[glink target="test02" text="財前マクロテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-;[glink target="test03" text="立ち絵サイズテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-;[glink target="test04" text="お稽古パート" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test05" text="共通プロローグ後半(opening2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test06" text="磯野に相談" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test35" text=".hide等表示テスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test07" text="時子さん登場" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test08" text="新茶の話題" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="test01" text="チラシ新聞マクロテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100  font_color=black]
+;[glink target="test02" text="財前マクロテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
+;[glink target="test03" text="立ち絵サイズテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200  font_color=black]
+;[glink target="test04" text="お稽古パート" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250  font_color=black]
+[glink target="test05" text="共通プロローグ後半(opening2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
+[glink target="test06" text="磯野に相談" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250  font_color=black]
+[glink target="test35" text=".hide等表示テスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300  font_color=black]
+[glink target="test07" text="時子さん登場" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400  font_color=black]
+[glink target="test08" text="新茶の話題" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450  font_color=black]
 
-[glink target="test9" text="さつきの話題" graphic="select_waku_x500.png" size=20 width="250" x=450 y=100 color=white]
-[glink target="test10" text="sansaku_machi_kuroda_02" graphic="select_waku_x500.png" size=20 width="250" x=450 y=150 color=white]
-[glink target="test11" text="sansaku_machi_kuroda_03" graphic="select_waku_x500.png" size=20 width="250" x=450 y=200 color=white]
-[glink target="test12" text="sansaku_machi_kuroda_04" graphic="select_waku_x500.png" size=20 width="250" x=450 y=250 color=white]
-[glink target="test13" text="sansaku_machi_kuroda_05" graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
-[glink target="test14" text="sansaku_machi_kuroda_06" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
-[glink target="*page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
+[glink target="test9" text="さつきの話題" graphic="select_waku_x500.png" size=20 width="250" x=450 y=100  font_color=black]
+[glink target="test10" text="黒田6_4麦イベント" graphic="select_waku_x500.png" size=20 width="250" x=450 y=150  font_color=black]
+[glink target="test11" text="sansaku_machi_kuroda_03" graphic="select_waku_x500.png" size=20 width="250" x=450 y=200  font_color=black]
+[glink target="test12" text="sansaku_machi_kuroda_04" graphic="select_waku_x500.png" size=20 width="250" x=450 y=250  font_color=black]
+[glink target="test13" text="sansaku_machi_kuroda_05" graphic="select_waku_x500.png" size=20 width="250" x=450 y=300  font_color=black]
+[glink target="test14" text="sansaku_machi_kuroda_06" graphic="select_waku_x500.png" size=20 width="250" x=450 y=350  font_color=black]
+[glink target="*page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=450 y=400  font_color=black]
 @jump target=*cmmn
 
 *page2
-[glink target="test16" text="kuroda_5_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test17" text="kuroda_6_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test18" text="kuroda_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="test19" text="kuroda_9_3"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="test20" text="kuroda_9_4"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="test21" text="kuroda_10_3"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="test22" text="kuroda_10_4"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="test23" text="kuroda_11_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-[glink target="test24" text="kuroda_11_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="test16" text="kuroda_5_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=100  font_color=black]
+[glink target="test17" text="kuroda_6_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
+[glink target="test18" text="kuroda_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200  font_color=black]
+[glink target="test19" text="kuroda_9_3"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250  font_color=black]
+[glink target="test20" text="kuroda_9_4"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300  font_color=black]
+[glink target="test21" text="kuroda_10_3"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=350  font_color=black]
+[glink target="test22" text="kuroda_10_4"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=400  font_color=black]
+[glink target="test23" text="kuroda_11_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=450  font_color=black]
+[glink target="test24" text="kuroda_11_2"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=500  font_color=black]
 
-[glink target="test25" text="kuroda_11_3"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=100 color=white]
-[glink target="test26" text="kuroda_11_4"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=150 color=white]
-[glink target="test27" text="kuroda_12_2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=200 color=white]
-[glink target="test28" text="kuroda_12_3"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=250 color=white]
-[glink target="test29" text="kuroda_12_3_badED"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=300 color=white]
-[glink target="test30" text="kuroda_1_1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=350 color=white]
-[glink target="test31" text="kuroda_1_4"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
-[glink target="*page3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=450 y=450 color=white]
+[glink target="test25" text="kuroda_11_3"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=100  font_color=black]
+[glink target="test26" text="kuroda_11_4"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=150  font_color=black]
+[glink target="test27" text="kuroda_12_2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=200  font_color=black]
+[glink target="test28" text="kuroda_12_3"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=250  font_color=black]
+[glink target="test29" text="kuroda_12_3_badED"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=300  font_color=black]
+[glink target="test30" text="kuroda_1_1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=350  font_color=black]
+[glink target="test31" text="kuroda_1_4"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400  font_color=black]
+[glink target="*page3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=450 y=450  font_color=black]
 
 @jump target=*cmmn
 
 *page3
-[glink target="test32" text="kuroda_2_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="test33" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="test34" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="common_9_1" text="common_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*check_event0" text="クリアリスト"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="*check_event" text="クリアチェック"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target="test32" text="kuroda_2_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100  font_color=black]
+[glink target="test33" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
+[glink target="test34" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200  font_color=black]
+[glink target="common_9_1" text="common_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250  font_color=black]
+[glink target="*check_event0" text="クリアリスト"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300  font_color=black]
+[glink target="*check_event" text="クリアチェック"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=350  font_color=black]
 
-[glink target="*page2" text="page2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400 color=white]
-[glink target="*page1" text="page1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450 color=white]
+[glink target="*page2" text="page2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400  font_color=black]
+[glink target="*page1" text="page1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450  font_color=black]
 
 *cmmn
-[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
-[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500  font_color=black]
+[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550  font_color=black]
 
 *button_BGM
 [if exp="sf.BGM=='OFF'"]
@@ -409,7 +409,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_01"
+@jump storage="sansaku_kuroda.ks" target="*sansaku_machi_kuroda_01"
 [s]
 
 *test10
@@ -418,7 +418,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_02"
+@jump storage="sansaku_kuroda.ks" target="*sansaku_machi_kuroda_02"
 [s]
 
 *test11
@@ -427,7 +427,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_03"
+@jump storage="sansaku_kuroda.ks" target="*sansaku_machi_kuroda_03"
 [s]
 
 *test12
@@ -436,7 +436,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_04"
+@jump storage="sansaku_kuroda.ks" target="*sansaku_machi_kuroda_04"
 [s]
 
 *test13
@@ -445,7 +445,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_05"
+@jump storage="sansaku_kuroda.ks" target="*sansaku_machi_kuroda_05"
 [s]
 
 *test14
@@ -454,7 +454,7 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-@jump storage="sansaku.ks" target="*sansaku_machi_kuroda_06"
+@jump storage="sansaku_kuroda.ks" target="*sansaku_machi_kuroda_06"
 [s]
 
 *test15
@@ -656,7 +656,7 @@ $(".list").hide();
 まだ.showはしていませんが、表示されてしまいませんか？[r]
 (fixではないボタン表示中のためマウススクロールなどで進行してください)[p]
 
-[glink name="list" target="*test" text="テスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
+[glink name="list" target="*test" text="テスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300  font_color=black]
 同様に［glink］タグを使用しました。[r]
 まだ.showはしていませんが、表示されてしまいませんか？[p]
 [layopt layer=26 visible=true]
@@ -692,8 +692,8 @@ $(".list").remove(); //除きます
 [s]
 
 *common_9_1
-[glink target=y text="お見合い候補の好感度を全て１００にします" graphic="select_waku_x500.png" size=10 width="250" x=100 y=100 color=white]
-[glink target=page1 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
+[glink target=y text="お見合い候補の好感度を全て１００にします" graphic="select_waku_x500.png" size=10 width="250" x=100 y=100  font_color=black]
+[glink target=page1 text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
 [s]
 *y
 [iscript]
@@ -758,7 +758,7 @@ f.para_shujinkou_shukujodo=200;
 [ptext text="&sf.event_kuroda_1_4" layer=26 size=17 x=400 y=400 color=darkslateblue visible=true]
 [ptext text="2月2週" layer=26 size=17 x=100 y=420 color=darkslateblue visible=true]
 [ptext text="&sf.event_kuroda_2_2" layer=26 size=17 x=400 y=420 color=darkslateblue visible=true]
-[glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=460 color=white]
+[glink target="end_check_event" text="戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=460  font_color=black]
 [s]
 [cm]
 *end_check_event

@@ -164,7 +164,7 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=500]
 [wait time=10]
 #
-……[p]
+……。[p]
 
 [whosay name=お茶屋の娘 color="#5b7e23"]
 「できました！[r]
@@ -214,21 +214,26 @@ $('.junbi_girl').remove();
 [wait time=10]
 #
 生け花の技術が深まった。
-;【淑女度上昇】+2（↓可能なら文字色変更表示）淑女度の数値は仮のもので、今後調整予定です
-[eval exp="f.para_shujinkou_shukujodo = f.para_shujinkou_shukujodo + 2"]
-[layopt layer=26 visible=true]
-[image layer=26 x=250 y=40 storage="button/frame_lesson_message.png"]
-[wait time=10]
-[eval exp="f.sansaku_machi_seika_txt1='『淑女度』が2上昇しました'"]
-[eval exp="f.sansaku_machi_seika_txt2='『麦の穂』を手に入れました'"]
-[ptext text=&f.sansaku_machi_seika_txt1 layer=26 size=21 x=310 y=75 color=darkslateblue bold=bold]
-[ptext text=&f.sansaku_machi_seika_txt2 layer=26 size=21 x=310 y=105 color=darkslateblue bold=bold]
-[wait time=10]
-;【SE】キラキラ
-[playse storage=kira_s.ogg loop=false ]
+;テスト中+リプレイ時はパラメータ変化スキップ
+[if exp="f.okeiko_gamen == true && f.event_replay != 'kuroda'"]
+	;【淑女度上昇】+2（↓可能なら文字色変更表示）淑女度の数値は仮のもので、今後調整予定です
+	[eval exp="f.para_shujinkou_shukujodo = f.para_shujinkou_shukujodo + 2"]
+	[layopt layer=26 visible=true]
+	[image layer=26 x=250 y=40 storage="button/frame_lesson_message.png"]
+	[wait time=10]
+	[eval exp="f.sansaku_machi_seika_txt1='『淑女度』が2上昇しました'"]
+	[eval exp="f.sansaku_machi_seika_txt2='『麦の穂』を手に入れました'"]
+	[ptext text=&f.sansaku_machi_seika_txt1 layer=26 size=21 x=310 y=75 color=darkslateblue bold=bold]
+	[ptext text=&f.sansaku_machi_seika_txt2 layer=26 size=21 x=310 y=105 color=darkslateblue bold=bold]
+	[wait time=10]
+	;【SE】キラキラ
+	[playse storage=kira_s.ogg loop=false ]
 [p]
 [freeimage layer = 26]
+[endif]
+[eval exp="sf.event_kuroda_6_4 = 1"]
 [eval exp="f.event_machi_kuroda[2]=1"]
+[イベントシーン終了]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 ;=============================================
@@ -303,7 +308,9 @@ $('.junbi_girl').remove();
 「そろそろ家に戻りましょう」[p]
 
 ;「黒田家のうわさ１」読了のフラグON
+[eval exp="sf.event_kuroda_sansaku_1 = 1"]
 [eval exp="f.event_machi_kuroda[3]=1"]
+[イベントシーン終了]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 ;=============================================
@@ -383,7 +390,9 @@ $('.junbi_girl').remove();
 「そろそろ家に戻りましょう」[p]
 
 ;「黒田家のうわさ２」読了のフラグON
+[eval exp="sf.event_kuroda_sansaku_2 = 1"]
 [eval exp="f.event_machi_kuroda[4]=1"]
+[イベントシーン終了]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 ;=============================================
@@ -532,7 +541,9 @@ $('.junbi_girl').remove();
 #
 [名前欄]
 「そろそろ家に戻りましょう」[p]
+[eval exp="sf.event_kuroda_sansaku_3 = 1"]
 [eval exp="f.event_machi_kuroda[5]=1"]
+[イベントシーン終了]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 ;=============================================
@@ -639,7 +650,9 @@ $('.junbi_girl').remove();
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そろそろ家に戻りましょう」[p]
+[eval exp="sf.event_kuroda_sansaku_4 = 1"]
 [eval exp="f.event_machi_kuroda[6]=1"]
+[イベントシーン終了]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 *window_close

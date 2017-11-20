@@ -24,11 +24,17 @@
 [link target=*select2]　　　　　　いいえ[endlink][r]
 [r]
 [resetfont]
-[s]
+;↓バックログへシステムメッセージが入るのを防止
+[iscript]
+this.kag.variable.tf.system.backlog.pop();
+this.kag.variable.tf.system.backlog.pop();
+this.kag.variable.tf.system.backlog.pop();
+[endscript]
 [else]
-@jump target="noload"
+;autosaveデータが無い際にロードへ飛ぶ必要あり(ゲーム停止してしまう)
+@jump target=*noload
 [endif]
-
+[s]
 
 *select1
 [cm]

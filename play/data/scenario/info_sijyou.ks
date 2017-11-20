@@ -34,6 +34,7 @@ $(".tips_btn").remove();
 [endif]
 [freeimage layer = 27]
 [freeimage layer = 28]
+[eval exp="f.viewing_storage = 'info_sijyou.ks'"]
 [eval exp="f.oaite_viewing_storage = 'info_sijyou.ks'"]
 [eval exp="f.viewing_target = '*info_sijyou'"]
 [eval exp="f.oaite_viewing_target = '*info_sijyou'"]
@@ -44,7 +45,7 @@ $(".tips_btn").remove();
 ;↓f.fumi_sijyou_number=これまでに受け取った手紙数。コメントアウトを外して数値を入力すると、テスト的にたくさんの手紙の表示の具合を見ることができます(情報未入力の手紙は空欄になります)
 ;[eval exp="f.fumi_sijyou_number=116"]
 [if exp="f.fumi_sijyou_number > 5"]
-			[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page2 text="→" size=20 width="20" x=855 y=480 color=white]
+			[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page2 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_sijyou_number"]
 [eval exp="f.loop_count = f.list_count"]
@@ -86,9 +87,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page2'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*info_sijyou text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*info_sijyou text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>10"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page3 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page3 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 [eval exp="f.list_count = f.fumi_sijyou_number - 5"]
 [eval exp="f.loop_count = f.list_count"]
@@ -130,9 +131,9 @@ $(".tips_btn").remove();
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page2 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page2 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>15"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page4 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page4 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 10"]
@@ -178,9 +179,9 @@ $(".tips_btn").remove();
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page3 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page3 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>20"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page5 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page5 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 15"]
@@ -223,9 +224,9 @@ $(".tips_btn").remove();
 [call target=*info_sijyou_hyouji]
 
 ;1f.fumi_sijyou_number=[emb exp ="f.fumi_sijyou_number"][r]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page4 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page4 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>25"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page6 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page6 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 20"]
@@ -267,9 +268,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page6'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page5 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page5 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>30"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page7 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page7 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 25"]
@@ -310,9 +311,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page7'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page6 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page6 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>35"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page8 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page8 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 30"]
@@ -353,9 +354,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page8'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page7 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page7 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>40"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page9 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page9 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 35"]
@@ -396,9 +397,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page9'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page8 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page8 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>45"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page10 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page10 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 40"]
@@ -439,9 +440,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page10'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page9 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page9 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number > 50"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page11 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page11 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 45"]
@@ -482,9 +483,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page11'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page10 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page10 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number > 55"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page12 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page12 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 50"]
@@ -525,9 +526,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page12'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page11 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page11 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>60"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page13 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page13 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 55"]
@@ -569,9 +570,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page13'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page12 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page12 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>65"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page14 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page14 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 60"]
@@ -613,9 +614,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page14'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page13 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page13 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>70"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page15 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page15 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 65"]
@@ -657,9 +658,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page15'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page14 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page14 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>75"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page16 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page16 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 70"]
@@ -701,9 +702,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page16'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page15 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page15 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>80"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page17 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page17 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 75"]
@@ -745,9 +746,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page17'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page16 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page16 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>85"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page18 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page18 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 80"]
@@ -788,9 +789,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page18'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page17 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page17 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>90"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page19 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page19 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 85"]
@@ -831,9 +832,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page19'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page18 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page18 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>95"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page20 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page20 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 90"]
@@ -874,9 +875,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page20'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page19 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page19 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>100"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page21 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page21 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 95"]
@@ -917,9 +918,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page21'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page20 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page20 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>105"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page22 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page22 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 100"]
@@ -960,9 +961,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page22'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page21 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page21 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>110"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page23 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page23 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 105"]
@@ -1003,9 +1004,9 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page23'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page22 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page22 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_sijyou_number>115"]
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page24 text="→" size=20 width="20" x=855 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page24 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 110"]
@@ -1046,10 +1047,10 @@ $(".tips_btn").remove();
 [eval exp="f.oaite_viewing_target = '*fumi_sijyou_page24'"]
 [call target=*info_sijyou_hyouji]
 
-[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page23 text="←" size=20 width="20" x=510 y=480 color=white]
+[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page23 text="←" size=20 width="20" x=510 y=480 graphic="select_waku_x150.png" font_color=black]
 ;↓もし120通を超えるなら使用予定
 ;[if exp="f.fumi_sijyou_number>120"]
-;[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page25 text="→" size=20 width="20" x=855 y=480 color=white]
+;[glink name="list" storage="info_sijyou.ks" target=*fumi_sijyou_page25 text="→" size=20 width="20" x=855 y=480 graphic="select_waku_x150.png" font_color=black]
 ;[endif]
 
 [eval exp="f.list_count = f.fumi_sijyou_number - 115"]
@@ -1124,15 +1125,15 @@ $('.info_face').remove();
 *info_face_sijyou_owari
 ;==============================================================================
 
-	[glink name="list" storage="info_kuroda.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 color=white]
-	[glink name="list" storage="info_zaizen.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 color=white]
+	[glink name="list" storage="info_kuroda.ks" target=info_kuroda text="黒田 将貴" size=16 width="120" x=30 y=580 graphic="select_waku_x300.png" font_color=black]
+	[glink name="list" storage="info_zaizen.ks" target=info_zaizen text="財前 美彬" size=16 width="120" x=230 y=580 graphic="select_waku_x300.png" font_color=black]
 ;葛城宮に手紙を出せるようになっていたらボタン表示
 [if exp="f.katuraginomiya_fumi_start == 1"]
-	[glink name="list" storage="info_katuraginomiya.ks" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 color=white]
+	[glink name="list" storage="info_katuraginomiya.ks" target=info_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=430 y=580 graphic="select_waku_x300.png" font_color=black]
 [endif]
 ;藤枝に手紙を出せるようになっていたらボタン表示
 [if exp="f.hujieda_fumi_start == 1"]
-	[glink name="list" storage="info_hujieda.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 color=white]
+	[glink name="list" storage="info_hujieda.ks" target=info_hujieda text="藤枝　肇" size=16 width="120" x=630 y=580 graphic="select_waku_x300.png" font_color=black]
 [endif]
 [if exp="f.para_sijyou_koukando<0"]
 [eval exp="f.para_koukando_x = 270"]
@@ -1157,8 +1158,10 @@ $('.info_face').remove();
 	[ptext name="list" text="―" layer=28 size=25 x=270 y=448 color=black bold=bold]
 [endif]
 ;◆クリアリストリンク
+[call storage="eventpercent_sijyou.ks" target=*start]
+[wait time=10]
 [eval exp="f.clearlist_out_storage='info_sijyou.ks'"]
-[glink storage="info_sijyou.ks" target=*jump_clearlist exp="f.event_replay = 'sijyou'" text=&f.sijyou_event_percent fontcolor=gray size=16 width=170 x=130 y=480 color=white]
+[glink storage="info_sijyou.ks" target=*jump_clearlist exp="f.event_replay = 'sijyou'" text=&f.sijyou_event_percent fontcolor=gray size=16 width=170 x=130 y=480 graphic="select_waku_x300.png" font_color=black]
 [wait time=10]
 [return]
 [s]

@@ -1,6 +1,6 @@
 ﻿*fumi_binsen_hyouji_end
 [if exp="(f.para_shujinkou_tairyoku_now >= f.fumi_hituyou_tairyoku) && (f.para_shujinkou_kiryoku_now >= f.fumi_hituyou_kiryoku)"]
-	[glink name="list" storage="fumi_henji.ks" target="repair_binsen" text="磯野を呼ぶ" graphic="select_waku_x500.png" size=16 width="200" x=380 y=550 color=white]
+	[glink name="list" storage="fumi_henji.ks" target="repair_binsen" text="磯野を呼ぶ" graphic="select_waku_x500.png" size=16 width="250" x=380 y=550 font_color=black]
 [endif]
 
 ;【機能ボタン表示】

@@ -44,7 +44,7 @@ zaizen_11_bad1.ks[r]
 テストページから開始しています。イベント終わりまでjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=300 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]

@@ -192,8 +192,8 @@ TG.stat.stack["call"] = [];
 [お稽古ボタン表示]
 [wait time=10]
 
-[glink target=*common_4_1_yes text="はい" size=40 width="150" x=300 y=350 color=white]
-[glink target=*common_4_1_no text="いいえ" size=40 width="150" x=550 y=350 color=white]
+[glink target=*common_4_1_yes text="はい" size=30 width="130" x=270 y=300 graphic="select_waku_x200.png" font_color=black]
+[glink target=*common_4_1_no text="いいえ" size=30 width="130" x=480 y=300 graphic="select_waku_x200.png" font_color=black]
 [s]
 
 *common_4_1_yes

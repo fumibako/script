@@ -515,6 +515,7 @@ $('.junbi_girl').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
 「私もいつか、あの方と写真を撮るのかしら」[p]
+#
 ;「あの方」に統一させていただきます(◆jsYiJcqRkk
 ;散策イベント◆I9IhvvVdPoさんご担当その5です。[p]
 
@@ -523,8 +524,11 @@ $('.junbi_girl').remove();
 [話題入手 wadai_txt="『写真の話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('写真の話題',0,1,0,1,2,'a','','','','')"]
 [イベントシーン終了]
-[イベントシーン終了２]
+;↓デバッグ中、イベント終了後にテストメニューへ飛んでしまう事があったためテスト時のみテストメニューへ戻るように変更します◆jsYiJcqRkk
+[if exp="tf.test_gamen == true"]
 @jump storage="01_I9IhvvVdPo_test.ks"
+[endif]
+[イベントシーン終了２]
 [s]
 
 *sansaku_machi_common_I9IhvvVdPo_06

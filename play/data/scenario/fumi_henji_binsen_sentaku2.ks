@@ -44,7 +44,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [endscript]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=380 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left
@@ -74,7 +74,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 		[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>5"]
-		[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+		[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=680 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 	[if exp="f.loop_count>0"]
 		@jump target=*loop_fumi_binsen_right
@@ -126,7 +126,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 ;f.fumi_binsen_y＝[emb exp ="f.fumi_binsen_y"][r]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=380 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left_page2
@@ -153,7 +153,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>15"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=680 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -205,7 +205,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 ;f.fumi_binsen_y＝[emb exp ="f.fumi_binsen_y"][r]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=380 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left_page3
@@ -232,7 +232,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>25"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=680 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -284,7 +284,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 ;f.fumi_binsen_y＝[emb exp ="f.fumi_binsen_y"][r]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=380 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left_page4
@@ -310,7 +310,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>35"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=680 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 
 [if exp="f.loop_count>0"]
@@ -359,7 +359,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 ;f.fumi_binsen_y＝[emb exp ="f.fumi_binsen_y"][r]
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=380 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=380 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 
 [if exp="f.loop_count>0"]
 	@jump target=*loop_fumi_binsen_left_page5
@@ -386,7 +386,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 
 	[eval exp="f.binsen_selected = '*binsen_shori'+f.list_count"]
 [if exp="f.fumi_binsen_number>45"]
-	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="200" x=680 y=&f.fumi_binsen_y color=white]
+	[glink name="list" storage="fumi_henji_binsen_shori.ks" target=&f.binsen_selected text=&f.binsen_list_hairetsu[f.list_count][0] size=16 width="250" x=680 y=&f.fumi_binsen_y graphic="select_waku_x500.png" font_color=black]
 [endif]
 
 [if exp="f.loop_count>0"]

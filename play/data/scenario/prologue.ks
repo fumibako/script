@@ -111,9 +111,11 @@ TG.stat.play_se = true;
 　××○九年　十月　二十一日　[名字]家　邸内
 [autosave]
 [p]
+[emb exp="sf.tyrano_ver"][p]
+;↑◆テスト表示用
 ;キャラ定義
-[chara_new name="fumiya" storage="toumei.gif" jname="<span style='color:#538a8a;'>文矢</span>"]
-[chara_show name="fumiya"]
+;[chara_new name="fumiya" storage="toumei.gif" jname="<span style='color:#538a8a;'>文矢</span>"]
+;[chara_show name="fumiya"]
 [whosay name=文矢 color="#538a8a"]
 「……よし」
 [layopt layer=13 visible=true]

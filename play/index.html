@@ -6,45 +6,63 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="viewport" content=" user-scalable=no" />  
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@koitsuduri">
-<meta name="twitter:creator" content="恋綴り製作委員会">
-<meta name="twitter:title" content="恋綴り">
-<meta name="twitter:description" content="～ 大正淑女 文通で育む想い ～　フリーゲーム『恋綴り』公開中　顔も知らないお相手と文通で仲を深めるゲームです。お稽古に励みつつ、お手紙で深く心を通わせると……？">
-<meta name="twitter:image:src" content="http://koitsuduri.webcrow.jp/Twitter_card.jpg">
 
 <link href="./tyrano/tyrano.css" rel="stylesheet" type="text/css"/>
+<link href="./tyrano/animate.css" rel="stylesheet" type="text/css"/>
 <link href="./tyrano/libs/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
 <script type="text/javascript" src="./tyrano/libs/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="./tyrano/libs/jquery-ui.min.js"></script>
-<script type="text/javascript" src="./tyrano/libs/jquery.a3d.min.js"></script>
+<script type="text/javascript" src="./tyrano/libs/jquery.a3d.js"></script>
 <script type="text/javascript" src="./tyrano/libs/jsrender.min.js"></script>
+
+<link href="./tyrano/libs/alertify/alertify.core.css" rel="stylesheet" type="text/css"/>
+<link href="./tyrano/libs/alertify/alertify.default.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="./tyrano/libs/alertify/alertify.min.js"></script>
+
 
 <script type="text/javascript" src="./tyrano/libs/html2canvas.js"></script>
 
+<script type="text/javascript" src="./data/system/KeyConfig.js"></script>
+
 <script type="text/javascript" src="./tyrano/lang.js" ></script>
 <script type="text/javascript" src="./tyrano/libs.js" ></script>
+
 <script type="text/javascript" src="./tyrano/tyrano.js" ></script>
 <script type="text/javascript" src="./tyrano/tyrano.base.js" ></script>
+
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.event.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.key_mouse.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.layer.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.menu.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.parser.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.rider.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.tag_audio.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.tag_camera.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.tag_ext.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.tag_system.js" ></script>
+<script type="text/javascript" src="./tyrano/plugins/kag/kag.tag.js" ></script>
+
 
 <link href="./tyrano/libs/textillate/assets/animate.css" rel="stylesheet">
 <script type="text/javascript" src="./tyrano/libs/textillate/assets/jquery.lettering.js"></script>
 <script type="text/javascript" src="./tyrano/libs/textillate/jquery.textillate.js"></script>
+<script type="text/javascript" src="./tyrano/libs/jquery.touchSwipe.min.js"></script>
 
 <script type="text/javascript" src="./tyrano/libs/lz-string.min.js"></script>
 
 <script type="text/javascript">
 function doScroll() { if (window.pageYOffset === 0) { window.scrollTo(0,1); } }  
 window.onload = function() { setTimeout(doScroll, 100); }  
+
 </script>  
 
 </head>
 
 <body onselectstart="return false" onContextmenu="return false" ontouchmove="event.preventDefault()" >
 
-<div id="tyrano_base" class="tyrano_base" style="overflow:hidden" unselectable="on" ondragstart="return false" >
-</div>
+<div id="tyrano_base" class="tyrano_base" style="overflow:hidden" unselectable="on" ondragstart="return false" ></div>
 
 
 <!--  First シナリオファイルに外部ファイルを利用したい場合は、こちらにシナリオファイルのURLを指定できます-->
