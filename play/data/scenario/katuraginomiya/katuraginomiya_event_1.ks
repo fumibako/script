@@ -26,8 +26,8 @@
 [font color=white size=32]
 
 [link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
-[link target=*jump_no]い　い　え[endlink][r]
+[r][r]
+[link target=*jump_no]い　い　え[endlink]
 [resetfont]
 [s]
 
