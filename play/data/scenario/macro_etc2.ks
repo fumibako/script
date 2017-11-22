@@ -314,50 +314,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [eval exp="f.message_storage='message_bg/frame_brown.png'"]
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
-[if exp="f.flag_replay == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
-[iscript]
-if(f.event_replay == 'sijyou'){f.clearlist_storage = 'sijyou/sijyou_event_clearlist.ks'; }
-if(f.event_replay == 'zaizen'){f.clearlist_storage = 'zaizen/zaizen_event_clearlist.ks';}
-if(f.event_replay == 'kuroda'){f.clearlist_storage = 'kuroda_event_clearlist.ks';}
-if(f.event_replay == 'katuraginomiya'){f.clearlist_storage = 'katuraginomiya/katuraginomiya_event_clearlist.ks';}
-if(f.event_replay == 'hujieda'){f.clearlist_storage = 'hujieda/hujieda_event_clearlist.ks';}
-if(f.flag_replay == true){f.clearlist_storage = 'replay2.ks';}
-if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.clearlist_storage = 'kuroda_event_clearlist.ks';} //例外処理は黒田に仮設定しています
-[endscript]
-[locate x=600 y=357]
-[button name="message_auto" graphic="button_message_auto.png" role=auto]
+[メッセージウィンドウ上ボタン表示]
 [wait time=10]
-[locate x=700 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=800 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png"  storage="sys_windowclose.ks" target="*window_close"]
-[wait time=10]
-[locate x=850 y=0]
-[button name="back_clearlist" fix="true" graphic="back.png" storage=&f.clearlist_storage target="*test_end" ]
-[wait time=10]
-
-[else]
-;セーブ等ボタン配置
-[locate x=560 y=357]
-[button name="message_auto" graphic="button_message_auto.png" role=auto]
-[wait time=10]
-[locate x=630 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[locate x=710 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[locate x=790 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[locate x=860 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" storage="sys_windowclose.ks" target="*window_close"]
-[wait time=10]
-[endif]
-[eval exp="sf.FButton='ON'"]
 
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
