@@ -465,35 +465,3 @@ TG.stat.play_se = true;
 ;------オープニングの最初にジャンプする
 @jump storage="opening1.ks"
 [s]
-
-*window_close
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-
-[layopt layer=27 visible=true]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-
-[l]
-
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;機能ボタン表示
-;セーブ等ボタン配置
-[メッセージウィンドウ上ボタン表示]
-[eval exp="sf.FButton='ON'"]
-;メッセージレイヤを表示
-@layopt layer=message0 page=fore visible=true
-[freeimage layer = 27]
-[wait time=10]
-
-[return]
-
-
