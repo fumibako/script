@@ -90,7 +90,7 @@ $('.junbi_girl').remove();
 テストページから開始しています。選択肢までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=lightblue size=32]
@@ -110,7 +110,7 @@ $('.junbi_girl').remove();
 jumpします。[p]
 
 [cm]
-@jump target=*fumi_sentaku01
+@jump storage="opening3.ks" target=*fumi_sentaku01
 [s]
 
 *jump_no
