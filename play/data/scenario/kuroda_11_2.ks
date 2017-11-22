@@ -710,6 +710,10 @@
 [wait time=10]
 
 *kuroda_11_2_sentaku01
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
 [eval exp="f.select_scene='kuroda_11_2_sentaku01'"]
 
 [layopt layer=26 visible=true]
@@ -746,6 +750,11 @@
 
 ;【部分分岐】突然、置いてきぼりになったことを言う場合【開始】
 *kuroda_11_2_sentaku01_a
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
+
 [freeimage layer = 26]
 [eval exp="f.select_scene=''"]
 [cm]
@@ -818,6 +827,11 @@
 
 ;【部分分岐】虫を届けましょうかと聞かれたことを言う場合【開始】
 *kuroda_11_2_sentaku01_b
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
+
 [freeimage layer = 26]
 [eval exp="f.select_scene=''"]
 [cm]
@@ -903,6 +917,11 @@
 
 ;【部分分岐】特に何も気にならないと言う場合【開始】
 *kuroda_11_2_sentaku01_c
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
+
 [freeimage layer = 26]
 [eval exp="f.select_scene=''"]
 [cm]
@@ -1067,91 +1086,3 @@
 ;◆「休憩中」画像消去
 [freeimage layer = 26]
 @jump storage="event.ks" target=*event_owari
-
-
-
-*window_close
-[cm]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_te" storage="toumei.gif" time=0]
-[wait time=10]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-[layopt layer=27 visible=true]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-[freeimage layer = 26]
-
-[l]
-
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;機能ボタン表示
-;セーブ等ボタン配置
-[メッセージウィンドウ上ボタン表示]
-[eval exp="sf.FButton='ON'"]
-;メッセージレイヤを表示
-[if exp="f.kaogura!='off'"]
-[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
-[endif]
-@layopt layer=message0 page=fore visible=true
-[current layer="message0"]
-[freeimage layer = 27]
-[wait time=10]
-
-[if exp="f.select_scene=='kuroda_11_2_sentaku01'"]
-[layopt layer=26 visible=true]
-[image layer=26 x=260 y=60 storage="button/select_waku_x500.png"]
-[wait time=10]
-[image layer=26 x=260 y=165 storage="button/select_waku_x500.png"]
-[wait time=10]
-[image layer=26 x=260 y=270 storage="button/select_waku_x500.png"]
-[wait time=10]
-;選択肢用レイヤーを追加
-[position layer=message1 height=300 top=80 left=300 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=25]
-[link target=*kuroda_11_2_sentaku01_a]イグチを採りに走って行かれたことを言う[endlink][r]
-[r][r][r]
-[link target=*kuroda_11_2_sentaku01_b]虫を届けましょうかと聞かれたことを言う[endlink][r]
-[r][r][r]
-[link target=*kuroda_11_2_sentaku01_c]特に何も気にならないと言う[endlink][r]
-[resetfont]
-
-;メッセージレイヤサイズを会話窓用に設定変更
-[position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
-@layopt layer=message0 visible=true
-[current layer="message0"]
-
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-（何と答えましょう？）
-[s]
-
-[endif]
-
-
-[return]

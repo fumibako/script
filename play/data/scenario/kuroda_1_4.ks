@@ -133,9 +133,15 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;【選択肢】
-[glink target=*kuroda_1_4_sentaku01_a text="無地" exp="f.fumi_to_kuroda1_4='a'" fontcolor=gray size=23 width="500" x=250 y=100 color=white]
-[glink target=*kuroda_1_4_sentaku01_b text="梅柄に梅の香を焚き染めたもの" exp="f.fumi_to_kuroda1_4='b'" fontcolor=gray size=23 width="500" x=250 y=200 color=white]
-[glink target=*kuroda_1_4_sentaku01_c text="梅にうぐいす柄" exp="f.fumi_to_kuroda1_4='c'" fontcolor=gray size=23 width="500" x=250 y=300 color=white]
+
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+
+[glink target=*kuroda_1_4_sentaku01_a text="無地" exp="f.fumi_to_kuroda1_4='a'" size=23 width="500" x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*kuroda_1_4_sentaku01_b text="梅柄に梅の香を焚き染めたもの" exp="f.fumi_to_kuroda1_4='b'" size=23 width="500" x=250 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target=*kuroda_1_4_sentaku01_c text="梅にうぐいす柄" exp="f.fumi_to_kuroda1_4='c'" fontcolor=gray size=23 width="500" x=250 y=300 graphic="select_waku_x500.png" font_color=black]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お返事は、どの便せんに書きましょう」
 [autosave]
@@ -155,6 +161,11 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endif]
 ;==========================================================================================
 *scene3
+
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
@@ -184,6 +195,11 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [endif]
 ;==========================================================================================
 *scene4
+
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 「そうだ、梅といえばお香があった。[r]
@@ -241,6 +257,11 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 	[skipstop]
 [endif]
 *scene5
+
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「話題にしてくださった梅だけでなく[r]
@@ -325,57 +346,3 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;回想記録終了 
 [endreplay]
 @jump storage="event.ks" target=*event_owari
-
-
-
-*window_close
-[cm]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_te" storage="toumei.gif" time=0]
-[wait time=10]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-[layopt layer=27 visible=true]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-[l]
-
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;機能ボタン表示
-;セーブ等ボタン配置
-[メッセージウィンドウ上ボタン表示]
-[eval exp="sf.FButton='ON'"]
-;メッセージレイヤを表示
-[if exp="f.kaogura!='off'"]
-[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
-[endif]
-@layopt layer=message0 page=fore visible=true
-[current layer="message0"]
-[freeimage layer = 27]
-[wait time=10]
-
-[return]
