@@ -38,7 +38,8 @@ $('.junbi_girl').remove();
 ;メッセージレイヤサイズを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 ;[機能ボタン表示]
-[メッセージウィンドウ上ボタン表示]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
 [eval exp="sf.FButton='ON'"]
 
 ;背景変更:和紙風
@@ -251,7 +252,7 @@ f.sijyou_fumi1_midoku = 0;
 テストページから開始しています。次の選択肢までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=lightblue size=32]
@@ -280,6 +281,10 @@ jumpします。[p]
 [cm]
 [endif]
 
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ふぅ」
 [autosave]
@@ -325,6 +330,10 @@ jumpします。[p]
 *scene18
 *isono_situmon01
 [eval exp="f.select_scene='isono_situmon01'"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
 ;主人公復帰表情通常　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
@@ -623,7 +632,7 @@ $('.junbi_girl').remove();
 テストページから開始しています。イベント終わりまでjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=lightblue size=32]
@@ -651,6 +660,10 @@ jumpします。[p]
 そのまま続けます。[p]
 [cm]
 [endif]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「もういいわ、色々ありがとう磯野」

@@ -501,24 +501,14 @@
 
 [endmacro]
 
-;機能ボタン消
+;[機能ボタン消]
 [macro name="機能ボタン消"]
-[anim name="message_auto" opacity=0 time=1]
-[anim name="message_save" opacity=0 time=1]
-[anim name="message_load" opacity=0 time=1]
-[anim name="message_backlog" opacity=0 time=1]
-[anim name="message_skip" opacity=0 time=1]
-[anim name="message_close" opacity=0 time=1]
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
 [endmacro]
 
 ;機能ボタン表示
 [macro name="機能ボタン表示"]
-[anim name="message_auto" opacity=255 time=1]
-[anim name="message_save" opacity=255 time=1]
-[anim name="message_load" opacity=255 time=1]
-[anim name="message_backlog" opacity=255 time=1]
-[anim name="message_skip" opacity=255 time=1]
-[anim name="message_close" opacity=255 time=1]
 [endmacro]
 
 [return]

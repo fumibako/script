@@ -2,6 +2,58 @@
 ;==============================
 ; その他マクロ設定2[メッセージウィンドウ上ボタン表示],[～イベントシーン構築][イベントシーン終了][話題入手]
 ;==============================
+;◆[メッセージウィンドウ上ボタン表示選択肢用]
+[macro name=メッセージウィンドウ上ボタン表示選択肢用]
+;セーブ等ボタン配置
+[if exp="f.flag_replay == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+[iscript]
+if(f.event_replay == 'sijyou'){f.clearlist_storage = 'sijyou/sijyou_event_clearlist.ks'; }
+if(f.event_replay == 'zaizen'){f.clearlist_storage = 'zaizen/zaizen_event_clearlist.ks';}
+if(f.event_replay == 'kuroda'){f.clearlist_storage = 'kuroda_event_clearlist.ks';}
+if(f.event_replay == 'katuraginomiya'){f.clearlist_storage = 'katuraginomiya/katuraginomiya_event_clearlist.ks';}
+if(f.event_replay == 'hujieda'){f.clearlist_storage = 'hujieda/hujieda_event_clearlist.ks';}
+if(f.flag_replay == true){f.clearlist_storage = 'replay2.ks';}
+if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.clearlist_storage = 'kuroda_event_clearlist.ks';} //例外処理は黒田に仮設定しています
+[endscript]
+[locate x=600 y=357]
+[button name="message_auto" graphic="button_message_auto.png" role=auto]
+[wait time=10]
+[locate x=700 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[wait time=10]
+[locate x=800 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[locate x=850 y=0]
+[button name="back_clearlist" fix="true" graphic="back.png" storage=&f.clearlist_storage target="*test_end" ]
+[wait time=10]
+
+[else]
+[locate x=560 y=357]
+[button name="message_auto" graphic="button_message_auto.png" role=auto]
+[wait time=10]
+[locate x=630 y=357]
+[button name="message_save" graphic="button_message_save.png" role=save ]
+[locate x=710 y=357]
+[button name="message_load" graphic="button_message_load.png" role=load ]
+[locate x=790 y=357]
+[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
+[locate x=860 y=357]
+[button name="message_skip" graphic="button_message_skip.png" role=skip ]
+[wait time=10]
+[endif]
+[eval exp="sf.FButton='ON'"]
+;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
+;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari0まで削除)予定です◆◆
+[if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+[eval exp="f.macro_target='*test_hyouji_event_owari0'"]
+@jump storage="macro_replay_hyouji.ks" target=*start
+[else]
+@jump target=*test_hyouji_event_owari0
+[endif]
+*test_hyouji_event_owari0
+[endmacro]
+
 ;◆[メッセージウィンドウ上ボタン表示]
 [macro name=メッセージウィンドウ上ボタン表示]
 ;セーブ等ボタン配置
@@ -25,7 +77,7 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [button name="message_skip" graphic="button_message_skip.png" role=skip ]
 [wait time=10]
 [locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png"  storage="sys_windowclose.ks" target="*window_close"]
+[button name="message_close" fix="true" graphic="x_50x50.png" storage="sys_windowclose.ks" target="*window_close"]
 [wait time=10]
 [locate x=850 y=0]
 [button name="back_clearlist" fix="true" graphic="back.png" storage=&f.clearlist_storage target="*test_end" ]
@@ -54,9 +106,9 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [eval exp="f.macro_target='*test_hyouji_event_owari0'"]
 @jump storage="macro_replay_hyouji.ks" target=*start
 [else]
-@jump target=*test_hyouji_event_owari0
+@jump target=*test_hyouji_event_owari00
 [endif]
-*test_hyouji_event_owari0
+*test_hyouji_event_owari00
 [endmacro]
 
 ;◆[四条イベントシーン構築]
