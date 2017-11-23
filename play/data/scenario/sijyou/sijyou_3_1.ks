@@ -77,14 +77,12 @@
 私は手紙をもう一度、開いた。[p]
 ;～～～～～～選択肢～～～～～
 [背景選択肢_sakura]
-[position layer=message1 height=160 top=100 left=280 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
-[link target=*see_fumi]手紙をじっくり読み返した。[endlink][r]
-[r]
-[link target=*not_fumi]手紙を眺める。(スキップ)[endlink]
-[resetfont]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink target=*see_fumi text="手紙をじっくり読み返した。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*not_fumi text="手紙を眺める。(スキップ)" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [s]
 ;～～～～～～選択肢おわり～～～～～
 *see_fumi
@@ -138,11 +136,19 @@
 [bg wait=true method='crossfade' storage="toumei.gif" time=600]
 [wait time=50]
 ;横においてさらりと眺める
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 私は、机に置いてある、手紙を眺めた。[p]
 ;～～～～～～～共通1～～～～～～～
 *common1
 [背景_庭_夜]
 [主人公ポーズ通常]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [autosave]
 #
 ――華織様に頂いた手紙からは、霧が晴れたような明るい気持ちが[r]
@@ -409,7 +415,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]

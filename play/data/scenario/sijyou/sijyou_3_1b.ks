@@ -260,15 +260,12 @@
 [背景_選択肢_和紙風セピア色]
 ;[chara_mod name="bg" storage="bg/plane_sepia.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=230 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
-[link target=*deai]お兄様と華織様の出会いが気になった。[endlink][r]
-[r][r][r]
-[link target=*not_fumiya]私も華織様を見つめた。[endlink][r]
-[resetfont]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink target=*deai text="お兄様と華織様の出会いが気になった。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*not_fumiya text="私も華織様を見つめた。" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [s]
 ;～～～～～～～～～～～選択肢おわり～～～～～～～～～～～～～～～～
 
@@ -284,6 +281,10 @@
 #
 [主人公ポーズ通常]
 [主人公通常]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 お兄様と華織様の出会いが気になった。[p]
 ;==========================================
 ;背景　宴会会場　または料亭
@@ -350,6 +351,10 @@
 [current layer="message0"]
 [主人公ポーズ通常]
 [主人公ほほえみ]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 #
 私も華織様を見つめた。[p]
 [fadeoutbgm time=3000]
