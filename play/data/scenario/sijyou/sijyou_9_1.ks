@@ -304,6 +304,7 @@
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [else]
+[eval exp="sf.event_sijyou_9_1 = 1"]
 [イベントシーン終了４]
 [endif]
 @jump storage="test_sijyou.ks"

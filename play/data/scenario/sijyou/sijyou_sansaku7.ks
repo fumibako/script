@@ -33,7 +33,7 @@
 テストページから開始しています。香水店入店手前までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
@@ -388,7 +388,7 @@ $('.saku1').remove();
 [if exp="tf.test_gamen == true"]
 テストページから開始しています。（お父様が帰って～）までjumpしますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
@@ -552,14 +552,12 @@ jumpします。[p]
 （どうしようかしら）
 [背景選択肢_sakura]
 [eval exp="f.haikei_credit=''"]
-[position layer=message1 height=160 top=100 left=280 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
-;低度なダジャレ多発
-[link target=*kag]華織様の香りを確かめる。[endlink][r]
-[r][r][r]
-[link target=*not_kag]小瓶の香りを確かめる。[endlink]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink target=*kag text="華織様の香りを確かめる。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*not_kag text="小瓶の香りを確かめる。" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [s]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *kag
@@ -570,6 +568,10 @@ jumpします。[p]
 [cm]
 #
 [暗転１]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 ;[chara_mod name="bg" storage="toumei.gif"]
 ――華織様の香りを確かめる。[p]
 [背景_香水店中]
@@ -670,6 +672,10 @@ jumpします。[p]
 [cm]
 #
 [暗転１]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 ;[chara_mod name="bg" storage="toumei.gif"]
 私は、恥ずかしくなって、小瓶の香りを確かめることにした。[p]
 [背景_香水店中]
@@ -747,13 +753,12 @@ jumpします。[p]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしようかしら）
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
-[link target=*tukete]つけてもらうことにした。[endlink][r]
-[r][r][r]
-[link target=*not_tukete] 自分でつけることにした。[endlink]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink target=*tukete text="つけてもらうことにした。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*not_tukete text="自分でつけることにした。" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [s]
 ;～～～～～～～～選択肢～～～～～～～～～～～～～
 *tukete
@@ -767,6 +772,10 @@ jumpします。[p]
 ;====================================================
 [暗転１]
 ;[chara_mod name="bg" storage="toumei.gif"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 私は、華織様にお願いして、つけてもらうことにした。[p]
 [背景_香水店中]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousi.jpg" layer=13]
@@ -865,6 +874,10 @@ jumpします。[p]
 #
 ;====================================================
 [暗転１]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 ;[chara_mod name="bg" storage="toumei.gif"]
 私は、恥ずかしくなって、自分でつけることにした。[p]
 [背景_香水店中]
@@ -1215,7 +1228,7 @@ jumpします。[p]
 テストページから開始しています。終了手前までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]

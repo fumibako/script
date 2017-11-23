@@ -75,26 +75,21 @@
 ;背景変更:和紙風 桜色
 [bg storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [eval exp="f.haikei_credit=''"]
-
-;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;[link]タグでの選択肢例
-;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
 ;【分岐】
 [if exp="f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1"]
-[glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[glink target=*katuragi text="葛城宮　晴仁 殿下" size=20 width="200" x=200 y=20 graphic="select_waku_x500.png" font_color=black]
 [else]
-[glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
-[glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
-[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
+[glink target=*sijyou text="四条 華織 様" size=20 width="200" x=200 y=20 graphic="select_waku_x500.png" font_color=black]
+[glink target=*zaizen text="財前 美彬 様" size=20 width="200" x=200 y=80 graphic="select_waku_x500.png" font_color=black]
+[glink target=*kuroda text="黒田 将貴 様" size=20 width="200" x=200 y=140 graphic="select_waku_x500.png" font_color=black]
 [endif]
-[glink target=*okeiko text="お稽古が上達しますように" fontcolor=gray size=22 width="400" x=200 y=230 color=white]
-[glink target=*syukujyo text="淑女らしくなりたい" fontcolor=gray size=22 width="400" x=200 y=280 color=white]
-[glink target=*no text="見逃してしまった" fontcolor=gray size=22 width="400" x=200 y=330 color=white]
+[glink target=*okeiko text="お稽古が上達しますように" size=20 width="400" x=200 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target=*syukujyo text="淑女らしくなりたい" size=20 width="400" x=200 y=260 graphic="select_waku_x500.png" font_color=black]
+[glink target=*no text="見逃してしまった" size=20 width="400" x=200 y=330 graphic="select_waku_x500.png" font_color=black]
 [s]
 
 ;==============================================================================================================
@@ -109,6 +104,10 @@
 [current layer="message0"]
 [bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （華織お兄様と親しくできますように）[p]
@@ -131,6 +130,10 @@
 [current layer="message0"]
 [bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 （財前様と親しくできますように）[p]
@@ -151,6 +154,10 @@
 [current layer="message0"]
 [bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [主人公目閉じ]
 （黒田様と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
@@ -171,6 +178,10 @@
 [current layer="message0"]
 [bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 #
 お稽古のことをお願いした。[p]
 [主人公目閉じ]
@@ -214,6 +225,10 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [current layer="message0"]
 [bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 #
 淑女らしくなれるようにお願いした。[p]
 [if exp="f.katuraginomiya_only == 1 && f.okeiko_gamen == true"]
@@ -240,6 +255,10 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [current layer="message0"]
 [bg storage="../fgimage/bg/sijyou_engawa2.jpg" time=1000]
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 見逃してしまった。[p]
 [主人公通常]
 （自分の力で頑張りましょうか）[p]
