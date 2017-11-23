@@ -278,15 +278,13 @@ $(".29_fore").empty();
 ;背景変更:和紙風 桜色
 [bg name="bg1" storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [wait time=10]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
 [eval exp="f.haikei_credit=''"]
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
-[link target=siori_prezent]栞を選んだ。[endlink][r]
-[r][r][r]
-[link target=binsen_prezent]便箋を選んだ。[endlink][r]
+[glink target=*siori_prezent text="栞を選んだ。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*binsen_prezent text="便箋を選んだ。" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [s]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -297,6 +295,10 @@ $(".29_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [背景_チャリティ会場出店]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 栞を選んだ。[p]
 @jump target=cmon_prezent
 
@@ -307,6 +309,10 @@ $(".29_fore").empty();
 @layopt layer=message0 visible=true
 [current layer="message0"]
 [背景_チャリティ会場出店]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 便箋を選んだ。[p]
 @jump target=cmon_prezent
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -528,18 +534,20 @@ $(".29_fore").empty();
 #
 私は幸代様と会ったことを
 [eval exp="f.haikei_credit=''"]
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
-[link target=bitter_rute]話す。[endlink][r]
-[r][r][r]
-[link target=seet_rute]話さない。[endlink][r]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink target=*bitter_rute text="話す。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*seet_rute text="話さない。" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [s]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *bitter_rute
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [er]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
@@ -723,6 +731,10 @@ $(".29_fore").empty();
 ;[四条_顔up_口微笑み]
 [chara_mod name="sijyou_up_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [表示開始 time=300]
 ;====================
 ;↓目：閉じた状態 [主人公目閉]
@@ -768,7 +780,7 @@ $(".29_fore").empty();
 @jump storage="sijyou/sijyou_2_2_bazar_4.ks" target=scene1
 [else]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
@@ -797,56 +809,3 @@ $(".29_fore").empty();
 @jump storage="test_sijyou.ks"
 [endif]
 [s]
-
-;------------------------------------------------
-*window_close
-[cm]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_te" storage="toumei.gif" time=0]
-[wait time=10]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-[layopt layer=27 visible=true]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-[l]
-
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;機能ボタン表示
-;セーブ等ボタン配置
-[メッセージウィンドウ上ボタン表示]
-[eval exp="sf.FButton='ON'"]
-;メッセージレイヤを表示
-[if exp="f.kaogura!='off'"]
-[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
-[endif]
-@layopt layer=message0 page=fore visible=true
-[current layer="message0"]
-[freeimage layer = 27]
-[wait time=10]
-
-[return]
