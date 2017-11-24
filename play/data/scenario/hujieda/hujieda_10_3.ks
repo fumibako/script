@@ -22,9 +22,9 @@
 #
 私はお兄様と一緒に、『ミルクホール 月ノ光』を[ruby text=おとず]訪れた。[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;【BGM】ベートーヴェン：「月光」
+[fadeinbgm storage="piano_Beethoven-Moonlight.ogg" loop=true time=5000]
+[eval exp="f.bgm_storage='piano_Beethoven-Moonlight.ogg'"]
 [endif]
 ;====================================================================================
 ;背景: [レトロな喫茶店]
@@ -47,7 +47,7 @@
 
 [主人公照れ目普通]
 [whosay name="店員"]
-「予約の[名字]様ですね。　お席にご案内します」[p]
+「ご予約いただきました[名字]様ですね。　お席にご案内します」[p]
 
 #
 歩きながら、お兄様は私に尋ねる。[p]
@@ -177,6 +177,8 @@ $('.junbi_girl').remove();
 ;==============================================================================
 ピアノの響きが静謐な雰囲気を醸し出す。[p]
 ;==============================================================================
+;BGM変更に伴う追記↓
+[fadeoutbgm time=2000]
 [iscript]
 $('.oto').remove();
 [endscript]
@@ -218,7 +220,7 @@ $('.oto').remove();
 #
 藤枝様はコリウスと手紙を受け取って言った。[p]
 [藤枝ベース私服_楽譜無し]
-[fadeoutbgm time=3000]
+;BGM変更に伴いフェードアウトタイミングも変更します[fadeoutbgm time=3000]
 [藤枝笑顔大]
 [藤枝眉驚き]
 [whosay name="藤枝 肇" color=%mp.color] 
@@ -234,11 +236,11 @@ $('.oto').remove();
 [sp]貴方のピアノが聴きたくて、お兄様に連れてきていただいたのです」[p]
 
 （藤枝様はどう思われるのかしら）[p]
-[if exp="sf.BGM=='ON'"]
+;[if exp="sf.BGM=='ON'"]
 ;【BGM】きずな
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
-[endif]
+;[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+;[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+;[endif]
 ;【立ち絵】藤枝：驚き
 [藤枝驚き]
 [whosay name="藤枝 肇" color=%mp.color] 
@@ -286,9 +288,13 @@ $('.oto').remove();
 「いいえ、そんなことは……。[r]
 [sp]一生懸命弾きます」[p]
 
+;【SE】人々のざわめき（ザワザワ…屋内）
+[playse storage=zawa_room.ogg loop=false ]
+
 [whosay name="客"]
 「早く次の曲を聴かせてくれないか？[r]
 [sp]この店の日曜日は、時間制だからゆっくり聴けないんだ」[p]
+[fadeoutse time=1500]
 
 ;【立ち絵】藤枝：微笑み
 [藤枝横目]
@@ -335,6 +341,13 @@ $('.oto').remove();
 [主人公汗]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そ、そんな事より曲を聴きましょう」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】エリーゼのために
+[playbgm storage="piano_FurElise.ogg" loop=false]
+[eval exp="f.bgm_storage='piano_FurElise.ogg'"]
+[endif]
+;↓演奏アニメーション時の名前残り防止
+#
 [主人公頬染め]
 
 ;===============================ピアノを弾くシーン２===============================================
@@ -353,6 +366,46 @@ $('.oto').remove();
 ;↑文章を区切りました(◆jsYiJcqRkk
 ;原文：どのピアノの音色よりも、ずっと柔らかく滑らかで[r]
 ;美しく切ない響きだった。[p]
+
+[主人公憂い]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（……お会い出来てすごく嬉しいのに、切なく苦しい）[p]
+
+（恋だとしてもきっと叶わない）[p]
+
+[主人公涙]
+
+[whosay name="文矢" color="#538a8a"]
+「[名前]？」[p]
+
+#
+私の嗚咽が少しこぼれてお兄様は、[r]
+驚いたように私を見る。[p]
+
+[主人公眉下げ下]
+[主人公口笑顔小]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「何でもありませんわ。……とても美しい音色ですわね」[p]
+
+#
+何とか笑顔は作って涙を止めようとする。[p]
+
+[whosay name="文矢" color="#538a8a"]
+「[名前]……」[p]
+[主人公効果消]
+[主人公口通常]
+#
+お兄様は私の頭を優しくなでた。[p]
+そして私は少し気分が落ち着き、涙が止まった。[p]
+
+[主人公目閉じ]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（今は、藤枝様が奏でる音を忘れないように聴きましょう）[p]
+
+;BGM変更に伴う追記↓
+[fadeoutbgm time=3000]
+;↓暗転時名前残り防止
+#
 
 ;==============================================================================
 [iscript]
@@ -585,76 +638,3 @@ $('.oto').remove();
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
 [s]
-
-*window_close
-[cm]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_te" storage="toumei.gif" time=0]
-[wait time=10]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-[layopt layer=27 visible=true]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-[l]
-
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;機能ボタン表示
-;セーブ等ボタン配置
-
-[locate x=580 y=357]
-[button name="message_auto" graphic="button_message_auto.png" role=auto]
-[wait time=10]
-[locate x=650 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=810 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=880 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-;[メッセージウィンドウ上ボタン表示]
-
-;メッセージレイヤを表示
-[if exp="f.kaogura!='off'"]
-[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
-[endif]
-@layopt layer=message0 page=fore visible=true
-[current layer="message0"]
-[freeimage layer = 27]
-[wait time=10]
-
-[return]
-

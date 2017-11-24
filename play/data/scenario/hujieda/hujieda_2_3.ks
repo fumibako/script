@@ -32,18 +32,48 @@
 
 ;------------------------------------------------------
 [if exp="tf.test_gamen == true"]
-テストページからプレイしています。イベント終わりまで移動しますか？[r]
+テストページからプレイしています。移動しますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=250 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font size=32]
+[font size=28 color=white]
 
-[link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
+[link target=*jump_ensou]演奏会場面へ移動[endlink][r]
+[r][r]
+[link target=*jump_ok]イベント終わりへ移動[endlink][r]
+[r][r]
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
 [s]
+*jump_ensou
+[er]
+
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+#
+移動します。(jump後の画面構築のため、画面切り替え前に主人公画像が表示されますが正常動作です)[p]
+[stopbgm]
+[if exp="sf.BGM=='ON'"]
+;【BGM】古都に咲く花
+[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+
+[藤枝退場]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+;機能ボタン表示
+;[layopt layer=fix visible=true]
+;[eval exp="sf.FButton='ON'"]
+;[メッセージウィンドウ上ボタン表示]
+[cm]
+@jump target=*scene_ensoukai
+[s]
+
 *jump_ok
 [er]
 
@@ -251,6 +281,7 @@
 [whosay name="三宮　時子" color="#c25232"]
 「それは秘密ですわ」[p]
 #
+*scene_ensoukai
 ;============================================================================================
 [暗転２]
 [eval exp="f.haikei_credit='photo by ◆I9IhvvVdPo'"]
@@ -288,6 +319,8 @@
 [主人公ほほえみ]
 [主人公口笑顔小]
 「ありがとうございます。 時子さん」[p]
+;BGM変更に伴う追記↓
+[fadeoutbgm time=3000]
 [主人公口ほほえみ]
 ;============================================================================================
 [暗転２]
@@ -310,7 +343,7 @@
 「藤枝様の演奏は、最後だそうよ」[p]
 [主人公眉通常]
 [主人公目閉]
-[fadeoutbgm time=3000]
+;BGM変更につきフェードアウト位置移動[fadeoutbgm time=3000]
 
 ;============================================================================================
 [eval exp="f.haikei_credit='　　'"]
@@ -357,11 +390,11 @@
 [whosay name="藤枝 肇" color=%mp.color] 
 （……見守って下さるのですね）[p]
 
-[if exp="sf.BGM=='ON'"]
+;[if exp="sf.BGM=='ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
-[playbgm storage="sittori_umikaze.ogg" loop=true]
-[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
-[endif]
+;[playbgm storage="sittori_umikaze.ogg" loop=true]
+;[eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
+;[endif]
 
 #
 私たちは見つめ合い、お互いの感情を確かめ合った。[p]
@@ -369,11 +402,11 @@
 私が頷くと藤枝様は決意した様子で、ピアノの椅子に座り、[r]
 吸い込まれるようにして鍵盤に指を置いた。[p]
 
-
 ;【立ち絵】藤枝：目閉じ
 [藤枝目閉じ]
-[whosay name="藤枝 肇" color=%mp.color] 
-（貴方が来てくれた、それなら僕は何も恐れることはない）[p]
+;↓ピアノBGMに合わせて(藤枝アニメーション直後、藤枝表示中に)タイミング変更しました
+;[whosay name="藤枝 肇" color=%mp.color] 
+;（貴方が来てくれた、それなら僕は何も恐れることはない）[p]
 ;===================================ピアノを弾くシーンはじまり=================================================
 [暗転２ storage="bg/situnaiongaku.jpg" time=1100]
 [wait time=10]
@@ -408,6 +441,16 @@
 ;ピアノベース藤枝(目のみ閉じ2)合体表示 レイヤー１
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_toji.png" time=100]
 [wait time=100]
+;ピアノBGMに合わせてメッセージタイミング変更([p]が必要なため)
+;文字色「白」にしたところ、輝きすぎて違和感があったので黒にしています。調整可能です。
+[mtext name=piano_mes text="貴方が来てくれた、それなら僕は何も恐れることはない" layer=29 size=29 x=150 y=450 color=black in_effect="fadeIn" out_effect="fadeOut" wait=true fadeout=false edge=none shadow=none]
+[p]
+[if exp="sf.BGM=='ON'"]
+;↓[p]が必要なのでこのタイミングに移動します◆jsYiJcqRkk
+;【BGM】リスト：ラ・カンパネラ
+[playbgm storage="piano_La-Campanella_middle.ogg" loop=false]
+[eval exp="f.bgm_storage='piano_La-Campanella_middle.ogg'"]
+[endif]
 ;===========================再構築中==================================
 ;ピアノベース他を消去と再構築するために被せます。
 [暗転２]
@@ -419,6 +462,10 @@ $('.piano_base_me').remove();
 [wait time=10]
 ;【変更】背景を暗転の中から表す（遠景）
 [bg wait=true method='crossfade' storage="../fgimage/bg/situnaiongaku2.jpg" time=50]
+[wait time=10]
+[iscript]
+$('.piano_mes').remove();
+[endscript]
 [wait time=10]
 ;会話ウィンドウを表示します。 
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
@@ -448,7 +495,27 @@ $('.piano_base_me').remove();
 [wait time=2000]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（こんなにも心に響く音を聴くのは初めてだわ）[p]
+
+[主人公ほほえみ]
+(ここに来られて本当に良かった）[p]
+
+#
+藤枝様の演奏は三人の中で最も心を打つものであり、[r]
+まだ伸びる資質を感じさせる。[p]
+[主人公照れ目普通]
+#
+きっと藤枝様の留学が決まる。[p]
+
+[主人公目閉じ]
+藤枝様が誇らしく、私は嬉しかった。[p]
+
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（藤枝様と出会えたことに精一杯の感謝を……）[p]
+[主人公眉困り]
+[主人公目伏]
+#
+恋をして沢山切ない想いをした。[r]
+けれど藤枝様はとても幸福な気持ちを教えて下さった。[p]
 
 ;=======================================
 ;【イメージ】キラキラ透過素材を消去
@@ -456,8 +523,14 @@ $('.piano_base_me').remove();
 [wait time=800]
 ;=======================================
 [暗転１]
+[主人公眉下げ下]
+[主人公目閉]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（こんなにも心に響く音を聴くのは初めてだわ）[p]
 #
 藤枝様の音色にこれほどの力強さは、ミルクホールの演奏になかった。[p]
+;BGM変更に伴う追記↓
+[fadeoutbgm time=3000]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （留学への決意の強さなのかしら……曲が終わっても余韻がすごい）[p]
 ;SE拍手長め
@@ -503,7 +576,9 @@ $('.piano_base_me').remove();
 観客の歓声に[ruby text=こた]応えて藤枝様は、一礼する。[r]
 そして藤枝様は、思いもよらない事を口に出した。[p]
 
-[fadeoutbgm time=3000]
+;
+;BGM変更に伴うコメントアウト↓
+;[fadeoutbgm time=3000]
 ;【立ち絵】藤枝：通常
 [藤枝通常]
 [藤枝口開]
@@ -603,6 +678,8 @@ $('.piano_base_me').remove();
 「ありがとうございます。[r]
 [sp]僕の自由曲は、ショパンの別れの曲でしたが、[r]
 [sp]別の曲に変えていいですか？」[p]
+;BGM変更に伴う追記↓
+[fadeoutbgm time=3000]
 
 [主人公眉下げ下]
 [主人公目伏]
@@ -638,6 +715,11 @@ $('.piano_base_me').remove();
 ;============================================================================================
 #
 再び藤枝様はピアノに向かい音を紡いだ。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】リスト：愛の夢 第3番 変イ長調 「おお、愛しうる限り愛せ」
+[playbgm storage="piano_Liebestraum.ogg" loop=false]
+[eval exp="f.bgm_storage='piano_Liebestraum.ogg'"]
+[endif]
 
 ;==============================================================================
 ;【イメージ】キラキラ透過素材 layer=13 ゆっくり消したいので13を使用　キラキラも別バージョンがあるといいですね
@@ -646,18 +728,16 @@ $('.piano_base_me').remove();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：目閉じ
-[主人公驚]
+[主人公目閉じ]
 [主人公頬染め]
 （ピアノの優しくて甘い旋律が、この場の雰囲気を包んでいる……）[p]
 [wait time=2000]
 [p]
-
-[主人公目閉じ]
-[主人公口ほほえみ]
+[主人公照れ目普通]
 （本当になんて、綺麗な音なのかしら）[p]
-
+[主人公目伏柔]
 #
-ピアノの音は一点の曇りもない。[r]
+ピアノの音色からは迷いは感じられない。[r]
 甘く優しいだけでなく芯の通った強さがある。[p]
 
 [主人公ポーズ両手]
@@ -667,20 +747,25 @@ $('.piano_base_me').remove();
 
 [主人公眉下げ下]
 [主人公ポーズ通常]
+[主人公目閉]
 #
 曲を聴きながら思い出が胸をよぎる。[p]
 
 ……藤枝様とミルクホールで初めて会った日のこと、[r]
 お別れを告げた日の事、藤枝様の幸せを想って書いた手紙。[p]
 
-（こんなにも藤枝様が好きでどうしようもないわ）[p]
+（藤枝様が好き）[p]
 [主人公目伏]
 #
 私の胸にも決意が灯った。[p]
 
 
-[主人公目閉じ]
+[主人公目閉]
 （私も藤枝様を諦めないわ）[p]
+
+;BGM変更に伴う追記↓
+[fadeoutbgm time=3000]
+
 ;=======================================
 ;【イメージ】キラキラ透過素材を消去
 [freeimage layer=13 time=800]
@@ -707,6 +792,7 @@ $('.piano_base_me').remove();
 [表示開始 time=300]
 [wait time=10]
 ;==========
+[主人公目伏]
 [藤枝目閉じ]
 #
 曲が終わると藤枝様は、皆に礼をする。[r]
@@ -720,9 +806,9 @@ $('.piano_base_me').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：照れ目普通
 [主人公眉下げ下]
-[主人公目伏]
+[主人公目閉]
 （藤枝様は覚悟をみせてくれた。[r]
-[sp]今度は私がお父様を説得する番ね。　私も藤枝様を諦めないわ）[p]
+[sp]今度は私がお父様を説得する番ね）[p]
 [fadeoutbgm time=3000]
 #
 ;============================================================================================
@@ -942,75 +1028,3 @@ $('.piano_base_me').remove();
 [イベントシーン終了４]
 @jump storage="test_hujieda.ks"
 [s]
-
-*window_close
-[cm]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_te" storage="toumei.gif" time=0]
-[wait time=10]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-[layopt layer=27 visible=true]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-[l]
-
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;機能ボタン表示
-;セーブ等ボタン配置
-
-[locate x=580 y=357]
-[button name="message_auto" graphic="button_message_auto.png" role=auto]
-[wait time=10]
-[locate x=650 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=810 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=880 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-;[メッセージウィンドウ上ボタン表示]
-
-;メッセージレイヤを表示
-[if exp="f.kaogura!='off'"]
-[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
-[endif]
-@layopt layer=message0 page=fore visible=true
-[current layer="message0"]
-[freeimage layer = 27]
-[wait time=10]
-
-[return]
