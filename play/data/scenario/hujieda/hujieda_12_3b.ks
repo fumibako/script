@@ -3,6 +3,10 @@
 ;=============================================
 *yes
 [cm]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 ;時子さんに藤枝の事を話すことにした。
 ;メッセージレイヤサイズを会話窓用に戻す
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]

@@ -36,7 +36,7 @@
 [if exp="tf.test_gamen == true"]
 テストページからプレイしています。選択肢まで移動しますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font size=32]
@@ -209,19 +209,13 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
-;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;[link]タグでの選択肢例
-;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
+
+[機能ボタン消]
 [wait time=10]
-[current layer="message1"]
-[font size=32]
-[link storage="hujieda/hujieda_12_3b.ks" target=*yes]藤枝様のことを話す。[endlink][r]
-[r][r][r]
-[link storage="hujieda/hujieda_12_3_badED.ks" target=*no_seen]話さない。[endlink][r]
-[resetfont]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink storage="hujieda/hujieda_12_3b.ks" target=*yes text="藤枝様のことを話す。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink storage="hujieda/hujieda_12_3_badED.ks" target=*no_seen text="話さない。" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [s]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 [s](←選択肢セーブデータから再開時、[s]を無視して進むケースに何度か遭遇したため残しています◆jsYiJcqRkk)

@@ -39,6 +39,10 @@ $('.list').remove();
 ;=========================================================================
 ;メッセージレイヤサイズを会話窓用に戻す
 [cm]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 visible=true
 [current layer="message0"]
