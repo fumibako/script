@@ -442,8 +442,8 @@
 [chara_mod name="piano_base_me" storage="bg/B4nFWraU42/hujieda_piano_me_toji.png" time=100]
 [wait time=100]
 ;ピアノBGMに合わせてメッセージタイミング変更([p]が必要なため)
-;文字色「白」にしたところ、輝きすぎて違和感があったので黒にしています。調整可能です。
-[mtext name=piano_mes text="貴方が来てくれた、それなら僕は何も恐れることはない" layer=29 size=29 x=150 y=450 color=black in_effect="fadeIn" out_effect="fadeOut" wait=true fadeout=false edge=none shadow=none]
+;バージョンアップに伴いmtext設定がデフォルトになったため、文字色「白」に変更します。mtext設定について、必要があれば再設定予定です。その際はこちらも調整する可能性があります◆jsYiJcqRkk
+[mtext name=piano_mes text="貴方が来てくれた、それなら僕は何も恐れることはない" layer=29 size=29 x=150 y=450 color=white in_effect="fadeIn" out_effect="fadeOut" wait=true fadeout=false edge=none shadow=none]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;↓[p]が必要なのでこのタイミングに移動します◆jsYiJcqRkk
