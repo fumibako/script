@@ -22,6 +22,8 @@
 ;===========================
 ;続きですのラベルを
 *seen_1
+;if文中のjumpを何度か行ったためクリアします
+[clearstack]
 ;↓本編選択肢後にメッセージレイヤを戻す処理です
 [if exp="f.okeiko_gamen == true"]
 [cm]
@@ -31,7 +33,6 @@
 [endif]
 ;=========================
 [if exp="tf.test_gamen == true"]
-zaizen_11_1_2.ks[r]
 テストページから開始しています。分岐地点までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
@@ -66,6 +67,10 @@ jumpします。[p]
 [イベント中テスト数値表示]
 [endif]
 
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 ;【立ち絵】主人公：眉ひそめ
 [主人公目閉じ]
 [主人公眉困り]
@@ -679,9 +684,12 @@ jumpします。[p]
 ;================================テストメニュー リプレイで表示===============================
 #
 ;バッドをみていないリプレイでは次のシーンに
-[if exp="(f.okeiko_gamen != true && tf.test_zaizen != true) || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad2 != 1)"]
+;[if exp="(f.okeiko_gamen != true && tf.test_zaizen != true) || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad2 != 1)"]
+;↑(f.okeiko_gamen != true && tf.test_zaizen != true) を入れると「おまけ」からリプレイ時Bad2を見ていても飛ばされてしまうため、財前リプレイ時かつbad2を見ていない場合に条件を絞ります↓◆jsYiJcqRkk
+[if exp="f.event_replay == 'zaizen' && sf.ED_zaizen_bad2 != 1"]
 @jump storage="zaizen/zaizen_11_1_3.ks" target=*seen_1
 [endif]
+
 [if exp="(f.okeiko_gamen != true && tf.test_zaizen == true) || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad2 == 1)"]
 @layopt layer=fix visible=false
 [image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
@@ -691,11 +699,11 @@ jumpします。[p]
 [wait time=50]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-リプレイモードで表示されています。　続きを選択してください。[r][r][r]
-[font size=30]
-[link target="seen11_1_3"]つづきをみる[endlink][r][r][r]
-[link target="seen11_1_bad"]バッド２をみる[r][r][r]
-[link target="end_test"]リプレイを終了する[endlink]
+回想中です。続きを選択してください。[r][r][r]
+[wait time=10]
+[glink target=*seen11_1_3 text="続きをみる" size=20 width=500 x=200 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target=*seen11_1_bad text="badエンド2をみる" size=20 width=500 x=200 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target=*end_test text="回想を終了する" size=20 width=500 x=200 y=350 graphic="select_waku_x500.png" font_color=black]
 [s]
 ;----------------------------
 *seen11_1_3
@@ -735,73 +743,3 @@ $(".sentaku").remove();
 [イベントシーン終了]
 @jump storage="test_zaizen.ks"
 [s]
-
-*window_close
-[cm]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_te" storage="toumei.gif" time=0]
-[wait time=10]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-[layopt layer=27 visible=true]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-[l]
-
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;機能ボタン表示
-;セーブ等ボタン配置
-[locate x=580 y=357]
-[button name="message_auto" graphic="button_message_auto.png" role=auto]
-[wait time=10]
-[locate x=650 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=810 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=880 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-;[メッセージウィンドウ上ボタン表示]
-;メッセージレイヤを表示
-[if exp="f.kaogura!='off'"]
-[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
-[endif]
-@layopt layer=message0 page=fore visible=true
-[current layer="message0"]
-[freeimage layer = 27]
-[wait time=10]
-
-[return]

@@ -22,17 +22,60 @@
 ;=====================ここからお芝居の幕引きです===============================
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私はもっと財前様に認めてもらいたい）
 [autosave]
 [wait time=10]
 [p]
+;↓テスト一時
+テスト用にzaizen_11_1_2.ks分岐点へ飛びます。[p]
+@jump storage="zaizen/zaizen_11_1_2.ks" target=*seen_sentaku
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+[endif]
+[if exp="tf.test_gamen == true"]
+テストページから開始しています。bad分岐手前までjumpしますか？[r]
+
+;選択肢用レイヤーを追加
+[position layer=message1 height=200 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+
+*jump_ok
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+jumpします。[p]
+[cm]
+[暗転２]
+[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600]
+[wait time=10]
+[財前ベース燕尾服]
+[wait time=10]
+[財前不快]
+[wait time=10]
+[主人公憂い]
+[wait time=10]
+[暗転２終了 time=1000]
+@jump target=*bad_bunki_mae
+[s]
+
+*jump_no
+[current layer="message0"]
+「いいえ」[r]
+最初からはじめます。[p]
+[cm]
 [endif]
 
 #
@@ -521,7 +564,7 @@
 [主人公口通常]
 
 [fadeoutbgm time=3000]
-
+*bad_bunki_mae
 ;【立ち絵】財前：不快
 [whosay name="財前美彬" color="#7a65b2"]
 「よりにもよって、貴方がいる場に あの女に出くわすとは[r]
@@ -542,48 +585,65 @@
 ;バッドをみている場合は選択　みていない場合はシームレスに次にリプレイ
 [if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
 [p]
-@layopt layer=fix visible=false
-[image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
-[er]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+#
+どうしましょうか？
+[wait time=10]
+[glink target=*next11_bad text="帰　　る" size=20 width=500 x=250 y=50 graphic="select_waku_x300.png" font_color=black]
+[glink target=*next11_1_2 text="帰らない" size=20 width=500 x=250 y=170 graphic="select_waku_x300.png" font_color=black]
+[glink target=*end text="回想を終了する" size=20 width=500 x=250 y=290 graphic="select_waku_x300.png" font_color=black]
+;↑この場面の選択肢はBadを見ている場合、本編のテキストや選択肢画面に合わせる方が"選択する行為"含めて回想プレイできるのではないかと思いますので、本編に合わせる内容に変更します。↓こちらに変更前の選択肢テキストをコメントアウトで残します◆jsYiJcqRkk
+;@layopt layer=fix visible=false
+;[image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
+;[er]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=550 top=50 left=250 opacity=0]
-[wait time=50]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-リプレイモードで表示されています。　続きを選択してください。[r][r][r]
-[font size=30]
-[link target=next11_1_2]続きをみる[endlink][r]
-[r][r]
-[link target=*next11_bad]バッド1をみる[endlink][r]
-[r][r]
-[link target="end"]終了する[endlink]
+;[position layer=message1 height=550 top=50 left=250 opacity=0]
+;[wait time=50]
+;@layopt layer=message1 visible=true
+;[current layer="message1"]
+;回想中です。続きを選択してください。[r][r][r]
+;[glink target=*next11_1_2 text="続きをみる" size=20 width=500 x=250 y=150 graphic="select_waku_x300.png" font_color=black]
+;[glink target=*next11_bad text="Badエンド1をみる" size=20 width=500 x=250 y=250 graphic="select_waku_x300.png" font_color=black]
+;[glink target=*end text="回想を終了する" size=20 width=500 x=250 y=350 graphic="select_waku_x300.png" font_color=black]
 [s]
 [endif]
 ;endifを探してバグるので細かに対応　どのみち上でスキップしている
 *next11_1_2
-[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
-[er]
-[current layer="message0"]
-[resetfont]
-[iscript]
-$(".sentaku").remove();
-[endscript]
-[cm]
-@layopt layer=fix visible=true
+;↓テストメニューから動作確認時に「続きを見る」選択する際にも続きを見られるように(↓この条件文を入れるとテストメニューから見る際にはじかれて見られなくなるため)if文をコメントアウトさせていただきます。
+;リプレイ時は上の選択肢表示時に条件分岐されているため動作に支障は無いと思います。◆jsYiJcqRkk
+;[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
+;[er]
+;[current layer="message0"]
+;[resetfont]
+;[iscript]
+;$(".sentaku").remove();
+;[endscript]
+;[cm]
+;@layopt layer=fix visible=true
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 @jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
 [s]
-[endif]
-
+;[endif]
 *next11_bad
-[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
-[er]
-[current layer="message0"]
-[resetfont]
-[iscript]
-$(".sentaku").remove();
-[endscript]
-[cm]
-@layopt layer=fix visible=true
+;[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
+;[er]
+;[current layer="message0"]
+;[resetfont]
+;[iscript]
+;$(".sentaku").remove();
+;[endscript]
+;[cm]
+;@layopt layer=fix visible=true
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
 @jump storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"
 [s]
 [endif]
@@ -603,14 +663,14 @@ $(".sentaku").remove();
 [endif]
 
 *end
-[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
-[cm]
-[current layer="message0"]
-[resetfont]
-[iscript]
-$(".sentaku").remove();
-[endscript]
-@layopt layer=fix visible=true
+;[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
+;[cm]
+;[current layer="message0"]
+;[resetfont]
+;[iscript]
+;$(".sentaku").remove();
+;[endscript]
+;@layopt layer=fix visible=true
 @jump target=*seen_end_11_1
 [endif]
 
@@ -619,15 +679,14 @@ $(".sentaku").remove();
 [if exp="f.okeiko_gamen == true"]
 ;Evernoteシナリオに書いていただいている選択肢による分岐処理です
 *sentaku_to_bad_or_other2
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
 #
 どうしましょうか？
-;選択肢用レイヤーを追加
-;[position layer=message1 height=160 top=100 left=150 opacity=0]
-;@layopt layer=message1 visible=true
-;[current layer="message1"]
-;[font color="white" size=32]
-[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=45 width="300" x=90 y=50 color=white]
-[glink storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=45 width="300" x=90 y=200 color=white]
+[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=45 width="300" x=250 y=50 color=white]
+[glink storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=45 width="300" x=250 y=200 color=white]
 [wait time=10]
 [iscript]
 $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x300.png")' , 'background-size' : 'center', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
@@ -638,73 +697,3 @@ $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x300.
 [イベントシーン終了]
 @jump storage="test_zaizen.ks"
 [s]
-
-*window_close
-[cm]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_te" storage="toumei.gif" time=0]
-[wait time=10]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-;メッセージレイヤを非表示
-@layopt layer=message0 page=fore visible=false
-[layopt layer=27 visible=true]
-[wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
-[wait time=10]
-[l]
-
-;会話ウィンドウ表示
-[chara_mod name="message_bg" storage=&f.message_storage time=1]
-;機能ボタン表示
-;セーブ等ボタン配置
-[locate x=580 y=357]
-[button name="message_auto" graphic="button_message_auto.png" role=auto]
-[wait time=10]
-[locate x=650 y=357]
-[button name="message_save" graphic="button_message_save.png" role=save ]
-[wait time=10]
-[locate x=730 y=357]
-[button name="message_load" graphic="button_message_load.png" role=load ]
-[wait time=10]
-[locate x=810 y=357]
-[button name="message_backlog" graphic="button_message_log.png" role=backlog ]
-[wait time=10]
-[locate x=880 y=357]
-[button name="message_skip" graphic="button_message_skip.png" role=skip ]
-[wait time=10]
-[locate x=910 y=390]
-[button name="message_close" fix="true" graphic="x_50x50.png" storage="macro_etc.ks" target="*window_close" ]
-[wait time=10]
-[eval exp="sf.FButton='ON'"]
-;[メッセージウィンドウ上ボタン表示]
-;メッセージレイヤを表示
-[if exp="f.kaogura!='off'"]
-[chara_mod name="girl_base" storage="girl/S/base.png" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
-[wait time=10]
-[endif]
-@layopt layer=message0 page=fore visible=true
-[current layer="message0"]
-[freeimage layer = 27]
-[wait time=10]
-
-[return]
