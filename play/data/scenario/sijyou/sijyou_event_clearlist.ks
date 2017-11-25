@@ -788,6 +788,7 @@ $(".fixlayer").css("opacity",1);
 *stop
 [s]
 
+*sijyou_sinario_ed
 *sijyou_sinario
 [cm]
 ;tf.jp_sinarioのシナリオにジャンプ　アラートはテストのみ
