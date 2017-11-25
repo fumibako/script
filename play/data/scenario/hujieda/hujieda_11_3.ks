@@ -325,10 +325,11 @@ $('.list').remove();
 [wait time=50]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-リプレイモードで表示されています。　続きを選択してください。[r][r][r]
-[font size=30]
-[link target="seen11_1_bad"]バッド２をみる[r][r][r]
-[link target="end_test1"]リプレイを終了する[endlink]
+;テキスト表記を統一します(リプレイ→回想)など
+回想中です。続きを選択してください。[r][r][r]
+[wait time=10]
+[glink target=*seen11_1_bad text="badエンド2をみる" size=20 width=500 x=200 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target=*end_test1 text="回想を終了する" size=20 width=500 x=200 y=350 graphic="select_waku_x500.png" font_color=black]
 [s]
 ;----------------------------
 *seen11_1_bad
