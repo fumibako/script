@@ -42,14 +42,14 @@ $('.list').remove();
 ;文字色　font_color
 [eval exp="tf.fc='0x663300'"]
 ;=========================================================================
-[mtext name=cc text="これが新しい私たちの始まり。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
-[mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[mtext name=cc text="これが新しい私たちの始まり。" edge=white shadow=white layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[mtext name=cc text="私たちは会えない分沢山お手紙を書いた。" edge=white shadow=white layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [freeimage layer=29]
 [layopt layer=29 visible=true]
-[mtext name=cc text="尽きない思いがあふれ" layer=29 size=29 x=300 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[mtext name=cc text="尽きない思いがあふれ" edge=white shadow=white layer=29 size=29 x=300 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [freeimage layer=29]
 [layopt layer=29 visible=true]
-[mtext name=cc text="お手紙が途絶えることはなかった。" layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[mtext name=cc text="お手紙が途絶えることはなかった。" edge=white shadow=white layer=29 size=29 x=250 y=250 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [freeimage layer=29]
 [layopt layer=29 visible=true]
 
