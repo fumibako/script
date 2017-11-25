@@ -115,7 +115,7 @@
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　　　　完[p]
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay == true" || f.event_replay == 'sijyou']
 [freeimage layer=29]
 @layopt layer=29 visible=true
 [iscript]
@@ -157,6 +157,7 @@ $('.1_fore').remove();
 [if exp="tf.test_sijyou == true"]
 ;四条ルートをクリアした
 [eval exp="tf.ED_sijyou = 1"]
+[四条ルート終了 end=normal]
 ;tweet表示
 @jump storage="sijyou/01_tweet.ks"
 @jump storage="test_sijyou.ks"

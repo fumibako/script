@@ -141,7 +141,7 @@ $('.1_fore').empty();
 ;bad判定用 ツイート抑止　当たり前ですがsfでは×です
 [eval exp="tf.ED_bad = 1"]
 ;badED処理追記予定
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true || tf.test_sijyou == true"]
 [四条ルート終了 end=bad]
 [endif]
 [イベントシーン終了]
