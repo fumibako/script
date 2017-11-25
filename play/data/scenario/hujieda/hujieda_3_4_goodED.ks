@@ -534,8 +534,7 @@ $("kan").css('margin','auto');
 ;[eval exp="sf.FButton='ON'"]
 ;[cm]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
-
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay == true || f.event_replay == 'hujieda'"]
 [イベントシーン終了]
 ;@layopt layer=29 visible=true
 [iscript]
