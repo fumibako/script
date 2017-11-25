@@ -324,7 +324,7 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [endif]
 ;========================================エンディング============================================================
 [if exp="sf.ED_hujieda_bad == 1"]
-[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_8_4_bad'"]
+[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_12_3_badED'"]
 [image name="ending1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [endif]
 [if exp="sf.ED_hujieda_bad != 1"]
@@ -340,7 +340,7 @@ $(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [endif]
 
 [if exp="sf.ED_hujieda_bad2 == 1"]
-[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x6" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_12_3_badED'"]
+[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x6" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_11_3bad'"]
 [image name="ending2" storage="../image/day_check_sumi.png" layer=27 x="&tf.x8" y="&tf.end1_y" visible=true wait=true]
 [endif]
 [if exp="sf.ED_hujieda_bad2 != 1"]
