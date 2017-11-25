@@ -29,6 +29,10 @@
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 
+;回想時に勝手に演奏会場面までjumpしてしまう不具合(BGMのendifタグに反応しているのかも？)があったため、テスト画面以外や回想時はテスト用選択肢をカットします↓
+[if exp="tf.test_gamen != true || f.event_replay == 'hujieda'"]
+@jump target=*scene_1
+[endif]
 
 ;------------------------------------------------------
 [if exp="tf.test_gamen == true"]
@@ -97,7 +101,7 @@
 [endif]
 ;------------------------------------------------------
 
-
+*scene_1
 ;【立ち絵】藤枝：落ち込み
 [藤枝憂い]
 （課題曲は、リストの超絶技巧練習曲集第三番「ラ・カンパネッラ」[r]
