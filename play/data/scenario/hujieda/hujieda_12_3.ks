@@ -198,13 +198,58 @@
 涙も枯れ果てた頃、[p]
 [主人公効果消]
 [wait time=10]
+;ほぼ同じ処理のため◆B4nFWraU42さん作スクリプト(zaizen_11_1.ksのbadED分岐を含む選択肢処理)を使用させていただきます◆jsYiJcqRkk
+;script by ＠名無しさん１
+;=================テストとリプレイ時をスキップ========================
+[if exp="f.okeiko_gamen == true"]
+@jump target=*sentaku_to_bad_or_other
+[endif]
+;=================テストとリプレイ時の処理========================
+*replay_sentaku_to_bad_or_other
+;バッドをみていない場合はシームレスに次にリプレイ
+[if exp="f.okeiko_gamen != true && f.event_replay == 'hujieda' && sf.ED_hujieda_bad != 1"]
+@jump storage="'hujieda'/hujieda_12_3b.ks" target="*yes"
+[endif]
 
+;バッドをみている場合は選択　みていない場合はシームレスに次にリプレイ
+[if exp="tf.test_hujieda == true || (f.event_replay == 'hujieda' && sf.ED_hujieda_bad == 1)"]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+#
+どうしましょうか？
+[wait time=10]
+[glink target=*next_continue text="藤枝様のことを話す。" size=20 width=500 x=250 y=50 graphic="select_waku_x300.png" font_color=black]
+[glink target=*next_to_bad text="話さない。" size=20 width=500 x=250 y=170 graphic="select_waku_x300.png" font_color=black]
+[glink target=*end text="回想を終了する。" size=20 width=500 x=250 y=290 graphic="select_waku_x300.png" font_color=black]
+[s]
+[endif]
+*next_continue
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
+@jump storage="hujieda/hujieda_12_3b.ks" target=*yes
+[s]
 
+*next_to_bad
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示]
+[wait time=10]
+@jump storage="hujieda/hujieda_12_3_badED.ks" target=*no_seen
+[s]
+
+*end
+@jump storage="hujieda/hujieda_12_3b.ks" target=*scene_end
+[endif]
+
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+*sentaku_to_bad_or_other
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 #
 私は時子さんに相談しようかと考えた。
-
-;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;背景変更:和紙風 セピア色
 [bg wait=true method='crossfade' storage="../fgimage/bg/plane_sepia.jpg" time=100]
 [wait time=10]
