@@ -74,9 +74,10 @@ $('.1_fore').remove();
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="f.okeiko_gamen == true"]
+;↓クリアリストへのテストメニューからの反映確認用にコメントアウトします
+;[if exp="f.okeiko_gamen == true"]
 [藤枝ルート終了 end="bad2"]
-[endif]
+;[endif]
 
 @jump storage="test_hujieda.ks"
 [s]
