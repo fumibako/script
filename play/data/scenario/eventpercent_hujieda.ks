@@ -69,6 +69,9 @@
 [if exp="sf.ED_hujieda_bad2 == undefined"]
 [eval exp="sf.ED_hujieda_bad2 = 0"]
 [endif]
+[if exp="sf.ED_hujieda_bad3 == undefined"]
+[eval exp="sf.ED_hujieda_bad3 = 0"]
+[endif]
 ;================================
 ;藤枝散策イベントクリア回数
 [eval exp="tf.event_sansaku_Number_of_times = 0"]
@@ -84,17 +87,17 @@
 [eval exp="tf.event_Number_of_times = tf.event_Number_of_times+ sf.event_hujieda_2_3"]
 ;エンディング数
 [eval exp="tf.ending_Number_of_times = 0"]
-[eval exp="tf.ending_Number_of_times = sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2"]
+[eval exp="tf.ending_Number_of_times = sf.ED_hujieda_normal + sf.ED_hujieda_good + sf.ED_hujieda_bad + sf.ED_hujieda_bad2 + sf.ED_hujieda_bad3"]
 ;全てのイベント数　(ありがとうございます。エンディングを加算します)
 [eval exp="tf.allEvent_Number_of_times = 0"]
 [eval exp="tf.allEvent_Number_of_times = tf.event_sansaku_Number_of_times + tf.event_Number_of_times + tf.ending_Number_of_times"]
 ;達成率
 [eval exp="tf.event_pasent = 0"]
-[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (18 + 4) * 100"]
+[eval exp="tf.event_pasent = tf.allEvent_Number_of_times / (18 + 5) * 100"]
 [eval exp="tf.event_pasent =Math.floor(tf.event_pasent)"]
 [eval exp="f.hujieda_event_percent = 'イベント達成率' + tf.event_pasent + '％'"]
 ;藤枝、全てのイベントが達成されたか
-[if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 22"]
+[if exp="tf.event_pasent == 100 || tf.allEvent_Number_of_times == 23"]
 [eval exp="sf.hujieda_clearlist_complete = 1"]
 [endif]
 ;ヒントを設定 イベント名等をライターにいれさせたい等ありましたら別ファイルにお願いします。
