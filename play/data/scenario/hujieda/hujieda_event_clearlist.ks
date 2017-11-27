@@ -294,7 +294,7 @@ $(".fixlayer").css("opacity",0);
 [wait time=10]
 [if exp="sf.event_hujieda_sansaku == 1"]
 [button name="hujieda_sansaku" graphic="day2_3.png" target="hujieda_sinario" x=&tf.x3 y=&tf.y1 exp="tf.jp_sinario='hujieda_sansaku1'"]
-[image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=27 x="&tf.x3+130" y=&tf.y1 visible=true wait=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check_sumi.png" layer=27 x="&tf.x3+140" y=&tf.y1 visible=true wait=true]
 [endif]
 
 ;3_2
@@ -303,7 +303,7 @@ $(".fixlayer").css("opacity",0);
 [wait time=10]
 [if exp="sf.event_hujieda_bazaar == 1"]
 [button name="hujieda_bazaar" graphic="day3_2.png" target="hujieda_sinario" x=&tf.x3 y=&tf.y2 exp="tf.jp_sinario='hujieda_bazaar_1'"]
-[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=27 x="&tf.x3+130" y=&tf.y2 visible=true wait=true]
+[image name="day,hujieda_bazaar" storage="../image/day_check_sumi.png" layer=27 x="&tf.x3+140" y=&tf.y2 visible=true wait=true]
 [endif]
 ;=============================================エンディングタイトル=========================================================
 ;enndingボタン位置
@@ -594,7 +594,7 @@ $(".hujieda_2_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness
 $(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
-[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=27 x="&tf.x3+130" y=&tf.y1 visible=true wait=true]
+[image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=27 x="&tf.x3+140" y=&tf.y1 visible=true wait=true]
 [endif]
 
 [if exp="sf.event_hujieda_bazaar != 1"]
@@ -605,7 +605,7 @@ $(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'bright
 $(".hujieda_bazaar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
 [endscript]
 [wait time=10]
-[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=27 x="&tf.x3+130" y=&tf.y2 visible=true wait=true]
+[image name="day,hujieda_bazaar" storage="../image/day_check_mi.png" layer=27 x="&tf.x3+140" y=&tf.y2 visible=true wait=true]
 [endif]
 ;====================================================================================================
 [iscript]
