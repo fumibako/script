@@ -332,7 +332,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [wait time=10]
 ;機能ボタン登場
-[機能ボタン表示]
+[メッセージウィンドウ上ボタン表示]
 [wait time=50]
 [eval exp="sf.FButton='ON'"]
 ;=========================================================================================
