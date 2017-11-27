@@ -481,10 +481,7 @@
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 
 ;機能ボタン表示
-[anim name="message_save" opacity=255 time=1]
-[anim name="message_load" opacity=255 time=1]
-[anim name="message_backlog" opacity=255 time=1]
-[anim name="message_skip" opacity=255 time=1]
+[メッセージウィンドウ上ボタン表示]
 [endmacro]
 
 ;メッセージ窓（赤扇）画像表示
