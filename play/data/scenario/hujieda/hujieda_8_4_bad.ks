@@ -59,6 +59,7 @@ $("kan").css('margin','auto');
 ;===============================================================
 ;bad判定用 ツイート抑止 
 [eval exp="tf.ED_bad = 1"]
+[freeimage layer=29 time=1300]
 [if exp="f.okeiko_gamen == true || tf.test_hujieda == true"]
 [藤枝ルート終了 end="bad3"]
 ;十一月三週のバッドがバッド１にあたるためコメント化です
