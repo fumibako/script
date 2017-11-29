@@ -1,7 +1,17 @@
 ﻿*start
 ;==============================
-; その他マクロ設定3[各キャラルート終了][チラシ][新聞][テキスト全画面～][名字][名前][sp]
+; その他マクロ設定3[各キャラルート終了][チラシ][新聞][テキスト全画面～][名字][名前][sp][autosave改]
 ;==============================
+;◆リプレイ時はautosaveを無効に[autosave改]
+[macro name=autosave改]
+[if exp="f.flag_replay == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+@jump target=*no_save
+[endif]
+[autosave]
+[wait time=10]
+*no_save
+[endmacro]
+
 ;◆[四条ルート終了 end=good][四条ルート終了 end=normal][四条ルート終了 end=bad]
 ;↓マクロ作成途中で移動してしまったようなので、動作部分を変更・追記してみました。ローカルにてテスト画面からの動作でエラーが出ないことを部分的に確認済ですが、お稽古パート経由の動作は組み込みながらでないと確認ができないため、未確認です
 ;うまく動作しないようでしたらこちらで修正します。その際はお知らせください(スクリプト担
