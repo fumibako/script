@@ -51,7 +51,7 @@
 ;【立ち絵】主人公：通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「今日はどんな着物にしましょう」
-[autosave]
+[autosave改]
 [p]
 ;最初のシーンは短いためBGM無しにします
 
@@ -158,7 +158,7 @@
 #
 ……[p]
 磯野はいつも、他家について深くは語らない。
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -243,7 +243,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……黒田様のことを、聞いたわ」
-[autosave]
+[autosave改]
 [p]
 
 [whosay name="磯野" color="dimgray"]
@@ -348,7 +348,7 @@
 [endif]
 #
 一方、黒田家では――。
-[autosave]
+[autosave改]
 [p]
 
 #
@@ -434,7 +434,7 @@
 #
 暮らしのために土地を売るたびに、少しずつ寡黙になる母上の姿を見てきた。[r]
 母上は自然豊かな土地を、とても愛していた――。
-[autosave]
+[autosave改]
 [p]
 
 [chara_mod name="kuroda_me" storage="kuroda/me_toji.png" time=0]

@@ -51,7 +51,7 @@
 [stopbgm]
 ;【テキスト枠】会話パート用 下部横長
 「……黒田様は、どうされているかしら」
-[autosave]
+[autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】冬支度
@@ -141,7 +141,7 @@
 「貴女には言いづらいんですが、黒田は研究のここぞというときに[r]
 [sp]……実験に失敗しちゃったんですよ」[p]
 「よっぽど疲れていたみたいでねぇ」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：不安
@@ -214,7 +214,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （想いをかたちにする……[r]
 [sp]『手紙』は強い力を持っているのかもしれない）
-[autosave]
+[autosave改]
 [p]
 ;【背景】暗転終了、町並み背景フェードイン
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=1000]

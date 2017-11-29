@@ -48,7 +48,7 @@
 [if exp="tf.test_gamen==true"]
 テストページから開始しています。イベント終わりまでjumpしますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
@@ -92,7 +92,7 @@ jumpします。[p]
 [endif]
 失礼になるだろう。[r]
 私は覚悟を決め、スッと姿勢を正して息を整えた。
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -114,7 +114,7 @@ jumpします。[p]
 [else]
 、将貴君か」
 [endif]
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：通常
@@ -156,7 +156,7 @@ jumpします。[p]
 
 「お父様。私は黒田様と文通をはじめてから、お庭の植物や色々な物事が[r]
 [sp]これまでと違ったように見えるようになりました」
-[autosave]
+[autosave改]
 [p]
 ;【立ち絵】主人公：笑顔
 [主人公笑顔]
@@ -195,7 +195,7 @@ jumpします。[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「そうか。では、早速見合いの準備を進めよう……。[r]
 [sp][名前]。将貴君に決めて、本当に良いのだね？」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：目閉じ思案
@@ -223,7 +223,7 @@ jumpします。[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「わかった。[r]
 [sp]この事はすぐに先方に伝えよう。[名前]からも手紙を送っておくといい」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：通常

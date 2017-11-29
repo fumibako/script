@@ -72,7 +72,7 @@
 [whosay name="磯野" color="dimgray"]
 「では、お気をつけて[r]
 [sp]行ってらっしゃいませ」
-[autosave]
+[autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -141,7 +141,7 @@
 [wait time=10]
 ――森林公園に着いた。[r]
 入口の門に、紫の着物姿が見える。
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】黒田：伏目
@@ -214,7 +214,7 @@
 
 [whosay name="黒田 将貴" color="#7a65b2"]
 「葉を落とした樹の姿も、好きなのですよ」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：驚
@@ -285,7 +285,7 @@
 [wait time=10]
 
 「植物に教えられることも多いのですよ」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：ほほえみ
@@ -332,7 +332,7 @@
 「ビワですね。花芽が上がっていますよ。[r]
 ;【立ち絵】黒田：ほほえみ
 [sp]近くに寄ってみましょう」
-[autosave]
+[autosave改]
 [p]
 ;==========================================================================================
 ;【背景】（あれば）ビワの樹フェードイン。無ければ変更なし
@@ -393,7 +393,7 @@
 黒田様が花をつけた枝を引きよせてくださる。[p]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「ごらんください。暖かそうでしょう」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：笑顔
@@ -456,7 +456,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お知り合い……ですか？」
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -512,7 +512,7 @@
 [黒田通常]
 [wait time=10]
 「気を取り直して」
-[autosave]
+[autosave改]
 [p]
 ;【立ち絵】黒田：通常
 ;【立ち絵】主人公：通常
@@ -557,7 +557,7 @@
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「田中は山上湖や池で淡水魚の調査をしているのです」
-[autosave]
+[autosave改]
 [p]
 [主人公目パチ1回]
 [wait time=10]
@@ -602,7 +602,7 @@
 *scene10
 
 「田中には古くからの文通相手がいるのですよ」
-[autosave]
+[autosave改]
 [p]
 [主人公閉目パチ1回]
 [wait time=10]
@@ -655,7 +655,7 @@
 [whosay name="田中　岩男" color="#775545"]
 「いやぁ、すみません。では[名字]さん。[r]
 [sp]貴女と文通するようになって、黒田は明るくなりましてね」
-[autosave]
+[autosave改]
 [p]
 
 [黒田目パチ1回]
@@ -696,7 +696,7 @@
 
 [whosay name="田中　岩男" color="#775545"]
 「いやぁ、生き物が好きすぎるというか……気になるところはありません？」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】黒田：困（汗）
@@ -742,7 +742,7 @@
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （何と答えましょう？）
-[autosave]
+[autosave改]
 [s]
 
 @jump target=*kuroda_11_2_sentaku01
@@ -977,7 +977,7 @@
 
 [whosay name="田中　岩男" color="#775545"]
 「ま。仲良さそうで、安心したよ。俺はそろそろ行かなくちゃ」
-[autosave]
+[autosave改]
 [p]
 [主人公目パチ1回]
 [wait time=10]
@@ -1027,7 +1027,7 @@
 [whosay name="黒田 将貴" color="#7a65b2"]
 「[名前]さんともっとお話ししたかったのですが[r]
 [sp]すっかり時間を食われてしまいました」
-[autosave]
+[autosave改]
 [p]
 
 ;【背景】公園の門（冬・夕）

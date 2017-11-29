@@ -86,7 +86,7 @@
 [r]
 [r]
 『手紙』
-[autosave]
+[autosave改]
 [p]
 [r]
 （でも、どのように書けばよいものか……）[r]
@@ -173,7 +173,7 @@ jumpします。[p]
 #
 手紙を書き終えるころには、窓の外はすっかり暗くなってしまった。[r]
 シン……と冷え込みを感じて思わず身を震わせた。
-[autosave]
+[autosave改]
 [p]
 [主人公目パチ1回]
 [wait time=10]
@@ -365,7 +365,7 @@ $('.junbi_girl').remove();
 ;【SE】雨
 [playse storage=rain.ogg loop=false ]
 嫌な夢を見た。
-[autosave]
+[autosave改]
 [p]
 
 ;【SE】落雷
@@ -477,7 +477,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [whosay name="田中　岩男" color="#775545"]
 「いやぁ～、雨に降られちまって参ったよ」
-[autosave]
+[autosave改]
 [p]
 
 [whosay name="黒田 将貴" color="#7a65b2"]
@@ -567,7 +567,7 @@ $('.junbi_girl').remove();
 見覚えのある文字。[r]
 [r]
 白い封筒が暖かく輝くように感じられた――。
-[autosave]
+[autosave改]
 [p]
 [resetfont]
 
@@ -627,7 +627,7 @@ $('.junbi_girl').remove();
 何度も手紙を読み返すうちに雨は上がり[r]
 [r]
 窓からの光は夕焼け色に染まり始めている。
-[autosave]
+[autosave改]
 [p]
 
 【黒田 将貴】[r]

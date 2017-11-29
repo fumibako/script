@@ -38,7 +38,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「黒田様のことを聞いていいかしら」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -49,7 +49,7 @@
 「黒田様は、大学で植物の研究をしておられるそうです。[r]
 [sp]机上の学問だけではなく、野山に足を運ばれることも多いとお聞き[r]
 [sp]します」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公目パチ1回]
@@ -68,7 +68,7 @@
 [whosay name=磯野 color="dimgray"]
 「お忙しい方で、お返事をあまり返して下さらないことも多いかもしれ[r]
 [sp]ませんが、お嬢様からお手紙を出し続けてみてください」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -84,7 +84,7 @@
 [p]
 「植物がお好きですから"華道"のたしなみも、少しあると[r]
 [sp]良いでしょう」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -95,7 +95,7 @@
 
 「散策で"季節感のある話題"を手に入れられましたら、すぐにお手紙に[r]
 [sp]書かれると良いでしょう」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -106,7 +106,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう、磯野。[r]
 [sp]黒田様に、もっとお手紙を書きたくなりました」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -119,7 +119,7 @@
 
 （"季節感のある話題"はすぐにお手紙に書くようにも、気をつけて[r]
 [sp]みましょう）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

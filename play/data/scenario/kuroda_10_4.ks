@@ -38,7 +38,7 @@
 *scene1_1
 [whosay name="磯野" color="dimgray"]
 「お嬢様、黒田様からお手紙でございます」
-[autosave]
+[autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています

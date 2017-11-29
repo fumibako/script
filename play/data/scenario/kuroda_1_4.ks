@@ -48,7 +48,7 @@
 ;【立ち絵】主人公：通常
 [whosay name="磯野" color="dimgray"]
 「お嬢様、黒田様からお手紙でございます」
-[autosave]
+[autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -106,7 +106,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 如月の二週目頃が見頃と聞きましたが、いかがでしょう。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
-[autosave]
+[autosave改]
 [p]
 [iscript]
 [endscript]
@@ -144,7 +144,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [glink target=*kuroda_1_4_sentaku01_c text="梅にうぐいす柄" exp="f.fumi_to_kuroda1_4='c'" fontcolor=gray size=23 width="500" x=250 y=300 graphic="select_waku_x500.png" font_color=black]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お返事は、どの便せんに書きましょう」
-[autosave]
+[autosave改]
 [s]
 
 *kuroda_1_4_sentaku01_b
@@ -181,7 +181,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 （……素敵なお誘いをありがとうございます。[r]
 [sp]順調とお聞きして、心より安堵いたしました。[r]
 [sp]黒田様にお会いできることを何より楽しみに、ご一緒させていただきます……）
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：通常
@@ -216,7 +216,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 #
 炭をおこし香炉の灰にうずめ、お香をふわりと置く。[r]
 その上に竹籠をかぶせ、手紙をそっと乗せてしばらく待った……。
-[autosave]
+[autosave改]
 [p]
 [wait time=1000]
 

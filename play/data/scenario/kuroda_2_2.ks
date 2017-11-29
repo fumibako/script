@@ -76,7 +76,7 @@
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様、黒田様がお迎えにお越しでございます」
-[autosave]
+[autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
@@ -129,7 +129,7 @@
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「[名前]さん！」
-[autosave]
+[autosave改]
 [p]
 
 [主人公閉目パチ1回]
@@ -190,7 +190,7 @@
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「寒いですから、もう出発してしまいましょうか」
-[autosave]
+[autosave改]
 [p]
 ;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene4==undefined"]
@@ -294,7 +294,7 @@
 #
 隣に並んで腰かけると、距離の近さを感じて[r]
 思わず寒さを忘れてしまう。
-[autosave]
+[autosave改]
 [p]
 
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -351,7 +351,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「見事な紅梅ですね。香りが漂ってきそうな……」
-[autosave]
+[autosave改]
 [p]
 [主人公閉目パチ1回]
 [wait time=10]
@@ -467,7 +467,7 @@
 [whosay name="小料理屋店主" color="black"]
 「黒田さん、ありがとうございます。寒い中、ようこそ。[r]
 [sp]今年も良く咲いてくれまして」
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -499,7 +499,7 @@
 
 [whosay name="小料理屋店主" color="black"]
 「今日は活けのホウボウが入りましてね」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】黒田：ほほえみ
@@ -599,7 +599,7 @@
 [whosay name="小料理屋店主" color="black"]
 「そうでしょう。[r]
 [sp]このホウボウを、お刺身でどうでしょう？」
-[autosave]
+[autosave改]
 [p]
 
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake_y1100.png" time=0]
@@ -645,7 +645,7 @@
 [endif]
 #
 店主は奥へ姿を消した。他に客の姿は無い。
-[autosave]
+[autosave改]
 [p]
 ;【立ち絵】主人公：通常
 [主人公目パチ1回]
@@ -677,7 +677,7 @@
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake_y1100.png" time=0]
 [wait time=10]
 「[名前]さん。今日は改めてお礼とご報告をしたいのです」
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]
 [wait time=10]
@@ -716,7 +716,7 @@
 [whosay name="黒田 将貴" color="#7a65b2"]
 「いえ、先にお礼を言わせてください。[r]
 [sp]昨年末にいただいたお手紙には……本当に励まされました」
-[autosave]
+[autosave改]
 [p]
 
 [chara_mod name="kuroda_mayu" storage="kuroda/mayu_sage_y1100.png" time=0]
@@ -743,7 +743,7 @@
 「これを見て、失敗を重ねても挑戦を続けようという力をいただきました。[r]
 [sp]そして実験結果を別の角度から見直したところ[r]
 [sp]新たな成果が得られたのです」
-[autosave]
+[autosave改]
 [p]
 [主人公目パチ1回]
 [wait time=10]
@@ -783,7 +783,7 @@
 [wait time=10]
 「……でも、大切にしてくださって[r]
 [sp]嬉しゅうございます」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】黒田：笑顔
@@ -852,7 +852,7 @@
 [wait time=10]
 「この度、植物研究所からお誘いをいただきまして[r]
 [sp]就職することに決まったのです」
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]
 [wait time=10]
@@ -909,7 +909,7 @@
 [whosay name="黒田 将貴" color="#7a65b2"]
 「もうしばらく卒業までバタバタしてしまうのですが……。[r]
 [sp]卒業式の日に、またお会いできますか？」
-[autosave]
+[autosave改]
 [p]
 [fadeoutbgm time=3000]
 [wait time=10]

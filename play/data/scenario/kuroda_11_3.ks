@@ -46,7 +46,7 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……磯野」
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -96,7 +96,7 @@
 [wait time=10]
 [whosay name="磯野" color="dimgray"]
 「今日は届いておりませんね」
-[autosave]
+[autosave改]
 [p]
 
 [主人公ポーズ通常]
@@ -137,7 +137,7 @@
 [主人公通常]
 [wait time=10]
 （気分を変えに、町へ出てみましょう）
-[autosave]
+[autosave改]
 [p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_11_3_scene3==undefined"]
@@ -175,7 +175,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ごきげんよう、田中様。[r]
 [sp]町にもいらっしゃるのですね」
-[autosave]
+[autosave改]
 [p]
 
 [主人公閉目パチ1回]
@@ -209,7 +209,7 @@
 
 [whosay name="田中　岩男" color="#775545"]
 「ま。張り切ってる理由はもう一つあるみたいですがね」
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -253,7 +253,7 @@
 
 [whosay name="田中　岩男" color="#775545"]
 「あ、そろそろ行かなくちゃ」
-[autosave]
+[autosave改]
 [p]
 ;【立ち絵】主人公：通常
 [主人公通常]

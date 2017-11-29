@@ -63,7 +63,7 @@
 [r]
 年賀の晴れやかな空気とはうらはらに[r]
 私の心は浮かぬままだった――。
-[autosave]
+[autosave改]
 [p]
 [resetfont]
 
@@ -121,7 +121,7 @@
 [wait time=10]
 #
 黒田様からの音沙汰はないまま、正月が過ぎてゆく。
-[autosave]
+[autosave改]
 [p]
 
 [主人公ポーズ通常]
@@ -150,7 +150,7 @@
 [whosay name="磯野" color="dimgray"]
 「失礼します。[r]
 [sp]お嬢様、本日届いた書簡でございます」
-[autosave]
+[autosave改]
 [p]
 [主人公目パチ1回]
 [wait time=10]
@@ -187,7 +187,7 @@
 [wait time=10]
 一番上に乗せられたものを見た瞬間、私は息をのんだ。[r]
 地味な葉書。しかしそこには、見覚えのある鮮やかな筆跡があった。
-[autosave]
+[autosave改]
 [p]
 
 [主人公目パチ1回]
@@ -213,7 +213,7 @@
 
 [whosay name="磯野" color="dimgray"]
 「ご友人方の年賀状もございましたので」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：伏目
@@ -318,7 +318,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [r]
 本年が[名前]さんにとって[r]
 良き年となりますように
-[autosave]
+[autosave改]
 [p]
 [position vertical=false]
 [resetfont]
@@ -368,7 +368,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 #
 『研究に光明』[p]
 ――安心すると同時に涙がにじむ。
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：目閉じほほえみ

@@ -132,7 +132,7 @@ jumpします。[p]
 [whosay name="ばあや" color="#916565"]
 「お嬢様。全て、大丈夫でございますよ。[r]
 [sp]お気持を楽になさってください」
-[autosave]
+[autosave改]
 [p]
 ;【立ち絵】主人公：目閉じ頬染め、両手を頬に
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -183,7 +183,7 @@ jumpします。[p]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ほう、[名前]。なかなかの淑女に見えるぞ」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：目閉じ頬染め
@@ -276,7 +276,7 @@ jumpします。[p]
 [r]
 周囲の景色はまるで目に入らない。[r]
 私はひたすら父の背中を見つめて、足を進めた。
-[autosave]
+[autosave改]
 [p]
 [fadeoutse]
 ;テキスト褪せたベージュ色文字（レトロな暖か味）or 明るめ抹茶色文字（料亭イメージ）
@@ -364,7 +364,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「[名字]様、お久しぶりです」
-[autosave]
+[autosave改]
 [p]
 
 ;------------------------------------------------------------------
@@ -505,7 +505,7 @@ jumpします。[p]
 [wait time=10]
 #
 料理が運ばれてくるなか、私は緊張で震える手をそっと[ruby text="たもと"]袂に隠していた。
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：伏目目パチ
@@ -575,7 +575,7 @@ jumpします。[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「将貴君。今日は忙しいなか、ありがとう」
-[autosave]
+[autosave改]
 [p]
 
 [黒田目パチ1回]
@@ -678,7 +678,7 @@ jumpします。[p]
 #
 私の不安は庭からの羽音にかき消された。[r]
 白い羽根が目に映る――
-[autosave]
+[autosave改]
 [p]
 
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
@@ -763,7 +763,7 @@ jumpします。[p]
 [wait time=10]
 #
 楽しそうな黒田様につられて、思わず笑顔になる。
-[autosave]
+[autosave改]
 [p]
 
 [主人公ほほえみ]
@@ -808,7 +808,7 @@ jumpします。[p]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「この花が咲くと、吉事があると言いますよ」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：ほほえみ
@@ -869,7 +869,7 @@ jumpします。[p]
 
 #
 楽しい時間はあっという間に過ぎてしまった――。
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake.png" time=0]
 [wait time=10]

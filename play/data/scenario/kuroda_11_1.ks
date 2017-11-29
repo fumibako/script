@@ -42,7 +42,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「今日は秋晴れで良い天気ね。[r]
 [sp]お散歩に出てみましょう」
-[autosave]
+[autosave改]
 [p]
 
 [stopbgm]
@@ -133,7 +133,7 @@
 [whosay name="三宮　時子" color="firebrick"]
 「紅葉谷の……そういえば黒田家の先代は[r]
 [sp]お能がお好きだったと聞いたことがありますわ」
-[autosave]
+[autosave改]
 [p]
 
 「屋敷内に能舞台をお持ちで、黒田家のお山にも舞台を作らせたとか」[p]

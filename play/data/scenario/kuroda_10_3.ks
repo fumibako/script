@@ -115,7 +115,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様、ご準備はよろしいですか？」
-[autosave]
+[autosave改]
 [p]
 
 [主人公閉目パチ1回]
@@ -167,7 +167,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 #
 人力車に乗って、ふと見上げると[r]
 見事な秋晴れが目に映る。
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：目閉じほほえみ
@@ -322,7 +322,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「この公園は、調査に出るときによく通るのです」
-[autosave]
+[autosave改]
 [p]
 
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
@@ -345,7 +345,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （紅葉を見に来たのに、私たち下ばかり見ているわ）
-[autosave]
+[autosave改]
 [p]
 
 [主人公閉目パチ1回]
@@ -435,7 +435,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [黒田ほほえみ]
 [wait time=10]
 「このイグチは傘の内側が面白いのですよ」
-[autosave]
+[autosave改]
 [p]
 
 [主人公驚]
@@ -614,7 +614,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [wait time=10]
 （イグチのおかげで、自然に話せるようになったみたい[r]
 [sp]私も黒田様の影響を受けてしまったかしら――）
-[autosave]
+[autosave改]
 [p]
 
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -650,7 +650,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「もうすぐ帰りの時間ですね。時が経つのが早く感じます」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】黒田：苦笑
@@ -667,7 +667,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [wait time=10]
 #
 紅葉にほんのりと色づいた木漏れ日がキラキラと揺れている。
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】黒田：伏目
@@ -736,7 +736,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [黒田ほほえみ]
 [wait time=10]
 「そうして自然に触れるなかで、植物が好きになったのかもしれません」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：目閉じ
@@ -780,7 +780,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「うらやましいです。夜の外出は、お許しが出ませんから……」
-[autosave]
+[autosave改]
 [p]
 
 （今の繊細な表情と、イグチを見つけたときの楽しそうなお顔……。[r]
@@ -798,7 +798,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「では、[名前]さんは虫の音もあまり聞かれないのですか？」
-[autosave]
+[autosave改]
 [p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
 [wait time=10]
