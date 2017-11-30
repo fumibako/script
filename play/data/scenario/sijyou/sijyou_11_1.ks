@@ -73,10 +73,11 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-[autosave]
 [whosay name="華織" color="olivedrab"]
 [主人公目通常]
-「文矢、相談したいことってなんだい？　僕は、今、あまり……」[p]
+「文矢、相談したいことってなんだい？　僕は、今、あまり……」
+[autosave改]
+[p]
 ;兄が呼ぶのはokなの？（イラ）感があるので修正
 [whosay name=文矢 color="#538a8a"]
 「うん。けど、ちょっと……僕は席を外すよ」[p]
@@ -107,8 +108,9 @@
 [四条困り]
 ;二回も名前を呼ぶと、次のセリフがよくわからないのでナシに。
 [whosay name="華織" color="olivedrab"]
-「……[名前]」[p]
-[autosave]
+「……[名前]」
+[autosave改]
+[p]
 ;華織。謝りたいが言葉が出ず、気を遣って先に主人公が話す
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「華織様、私は怒ってはいません」[p]
@@ -126,8 +128,9 @@
 *seen1
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お気になさらずに私は華織様と共に歩もうと、[r]
-[sp]あの時に決めたのですから」[p]
-[autosave]
+[sp]あの時に決めたのですから」
+[autosave改]
+[p]
 ;このままだと主人公が強気になってしまうので、やや微笑んで自身の言葉に照れる感じ
 [四条真剣]
 [四条口驚き]
@@ -219,11 +222,12 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
 *seen2
-[autosave]
 ;////////////////////////////シーン追加分///////////////////////////
 [主人公口ほほえみ]
 [whosay name="華織" color="olivedrab"]
-「歌舞伎座の帰りに会った僕の弟、[華衣]を覚えてる……？」[p]
+「歌舞伎座の帰りに会った僕の弟、[華衣]を覚えてる……？」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口通常]
 「はい……」[p]
@@ -263,7 +267,6 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （でも、本当のところ[華衣]様とはどんな方でしょう……？）
 *seen3
-[autosave]
 ;///////////////////////選択肢//////////////////////////
 ;背景変更:和紙風 水色
 [背景選択肢_mizuiro]
@@ -273,6 +276,7 @@
 [wait time=10]
 [glink target=*華衣について text="華衣様について尋ねた。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
 [glink target=*skp_cmon text="華織様の話を静かに聞いた。(スキップ)" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
+[autosave改]
 [s]
 ;///////////////説明を選択した場合のシーンへ飛ばす準備/////////////
 ;共通はラベルcommonへ　どこに飛ぶかわかるように一部はここに書く
@@ -412,8 +416,9 @@
 [四条微笑み]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（ありがとうございます）[p]
-[autosave]
+（ありがとうございます）
+[autosave改]
+[p]
 [fadeoutbgm time=3000]
 ;================================================================================
 [暗転２ storage="bg/bg_prologue.jpg"]
@@ -501,8 +506,9 @@
 ;=================================================================================
 [四条口驚き]
 [whosay name="華織" color="olivedrab"]
-「ごめん下さい」[p]
-[autosave]
+「ごめん下さい」
+[autosave改]
+[p]
 [whosay name="華衣の婚約者の母"]
 「！ あら……アナタは四条家の！？」[p]
 [四条口通常]
@@ -602,8 +608,9 @@
 @layopt layer=message0 visible=true
 ;=================================================================================
 #
-案内された先には、小さな土蔵が、ひっそりと佇んでいた。[p]
-[autosave]
+案内された先には、小さな土蔵が、ひっそりと佇んでいた。
+[autosave改]
+[p]
 ;写真によって変更↑
 [whosay name="華衣の婚約者の母"]
 「娘の物はここにある書物と壺くらいです」[p]
@@ -700,8 +707,9 @@
 ;メッセージレイヤを表示
 @layopt layer=message0 visible=true
 [whosay name="華織" color="olivedrab"]
-「少ないですが受け取って下さい」[p]
-[autosave]
+「少ないですが受け取って下さい」
+[autosave改]
+[p]
 [主人公憂い]
 [wait time=10]
 ;通常でもよい
@@ -756,8 +764,9 @@
 ;ナレーター
 荒れ果てた地の槇の葉に、霧が立ちのぼっていく。[p]
 秋すぎさる夕日に物悲しさを感じ、[r]
-私達は、手を繋ぎながら来た道を帰っていった。[p]
-[autosave]
+私達は、手を繋ぎながら来た道を帰っていった。
+[autosave改]
+[p]
 ;一人称にした！！
 ;=================================================================================_
 *seen10
@@ -774,8 +783,9 @@
 [暗転２終了]
 ;華織が説明してるので地の文があまり思いつかない
 #
-『料亭』に戻ってきた私達。[p]
-[autosave]
+『料亭』に戻ってきた私達。
+[autosave改]
+[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -943,8 +953,9 @@
 *seen12
 #
 ;ナレーター
-『手記』を開いた途端、四角く折られた緋色の紙が落ちた。[p]
-[autosave]
+『手記』を開いた途端、四角く折られた緋色の紙が落ちた。
+[autosave改]
+[p]
 ;控えめに驚き
 [四条通常]
 [四条口驚き]
@@ -1041,7 +1052,6 @@
 「頭恋寝……刀を探して？」[p]
 ;=================================================================================_
 *seen14
-[autosave]
 ;主人公笑う？
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -1049,7 +1059,9 @@
 [四条口開]
 [四条目大]
 [whosay name="華織" color="olivedrab"]
-「 ! 『音頭恋寝刃』 」[p]
+「 ! 『音頭恋寝刃』 」
+[autosave改]
+[p]
 ;○事件解決に向かって走り出す[BGM一閃]？
 [四条口微笑み]
 [四条口開]

@@ -30,7 +30,9 @@ $(".1_fore").empty();
 [wait time=10]
 #
 ―― 華族会館  [ruby text=チャリ]慈[ruby text=ティー]善バザー会場の玄関ホール。[r]
-肌寒い初春の日だというのに会場の華やかな雰囲気に熱気を感じる。[p]
+肌寒い初春の日だというのに会場の華やかな雰囲気に熱気を感じる。
+[autosave改]
+[p]
 緑葉と花で飾られた玄関ホールでは、多くの華族が夜会服を纏い、[r]
 談笑に勤しんでいた。[p]
 [if exp="sf.BGM=='ON'"]
@@ -108,7 +110,9 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 「でも、一番は[r]
-[sp]一度、[名前]さんと来て見たかったのが理由ですけどね」[p]
+[sp]一度、[名前]さんと来て見たかったのが理由ですけどね」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公反応 表情
 [主人公照れ]
@@ -146,7 +150,9 @@ $(".1_fore").empty();
 *scene4
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
-(華織様の手紙で書かれていた通り、色々な手工芸品が並んでるわ)[p]
+(華織様の手紙で書かれていた通り、色々な手工芸品が並んでるわ)
+[autosave改]
+[p]
 #
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -190,7 +196,9 @@ $(".1_fore").empty();
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_warau_s.png" time=0]
 [wait time=10]
 「慈善活動とのことですし、僕も何か頂きましょうか。[r]
-[sp][名前]さんも、気に入ったものがあれば……」[p]
+[sp][名前]さんも、気に入ったものがあれば……」
+[autosave改]
+[p]
 ;誰に話しかけてるか分かりづらい↓
 [whosay name=夫人]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
@@ -298,7 +306,9 @@ $(".1_fore").empty();
 #
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
-楽しげに笑う華織様の横顔を私はチラリと[ruby text=うかが]伺った。[p]
+楽しげに笑う華織様の横顔を私はチラリと[ruby text=うかが]伺った。
+[autosave改]
+[p]
 [whosay name="華織" color="olivedrab"]
 「どうかしましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -367,7 +377,9 @@ $(".1_fore").empty();
 [whosay name="華織" color="olivedrab"]
 「[名前]さんの気に入ったものがありましたか？」[p]
 #
-辛いことを隠し、兄のような[ruby text=ほが]朗らかな愛情をみせる華織様。[p]
+辛いことを隠し、兄のような[ruby text=ほが]朗らかな愛情をみせる華織様。
+[autosave改]
+[p]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
@@ -423,7 +435,9 @@ $(".1_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 お互いに……[r]
-その言葉を聞いて、私の胸の中に一筋の光が去来した。[p]
+その言葉を聞いて、私の胸の中に一筋の光が去来した。
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 （そうだわ）[p]

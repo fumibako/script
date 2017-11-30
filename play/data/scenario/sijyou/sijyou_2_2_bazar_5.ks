@@ -40,7 +40,6 @@ $(".1_fore").empty();
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 (はしゃぎすぎては、いけないわ)[p]
-[autosave]
 [whosay name="華織" color="olivedrab"]
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -49,7 +48,9 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
 「申し訳ございません、[r]
-[sp]無理をさせてしまいましたね。 休みましょうか」[p]
+[sp]無理をさせてしまいましたね。 休みましょうか」
+[autosave改]
+[p]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
@@ -90,7 +91,6 @@ $(".1_fore").empty();
 [whosay name="華織" color="olivedrab"] 
 「謝らないで下さい。[sp]僕も少し浮かれてました。[r]
 [sp]今はゆっくり休んで下さい」[p]
-[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
@@ -98,7 +98,9 @@ $(".1_fore").empty();
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-（次に来た時は気をつけなくては……)[p]
+（次に来た時は気をつけなくては……)
+[autosave改]
+[p]
 
 #
 ;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
@@ -187,12 +189,13 @@ $(".1_fore").empty();
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 (いえ、華織様に似合うような淑女になりたかった……)[p]
-[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-「私は、華織様に似合う大人の女性になれたでしょうか？」[p]
+「私は、華織様に似合う大人の女性になれたでしょうか？」
+[autosave改]
+[p]
 ;初めてだから場酔いくらいある…と思えない心情を描き
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様に御心配をお掛けしてしまった……。[r]
@@ -235,7 +238,6 @@ $(".1_fore").empty();
 [sp]暗闇を照らしてくれる、可憐な花のように思えませんか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうでしょうか……」[p]
-[autosave]
 [whosay name="華織" color="olivedrab"]
 ;[四条_顔up_目伏2]
 [chara_mod name="sijyou_up_me" storage="sijyou/me_fusi2.png" time=0]
@@ -244,7 +246,9 @@ $(".1_fore").empty();
 [chara_mod name="sijyou_up_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=10]
 「大輪の花も素敵ですが、[r]
-[sp]側で輝いてくれる小さな花をまた愛でたいのです」[p]
+[sp]側で輝いてくれる小さな花をまた愛でたいのです」
+[autosave改]
+[p]
 #
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]

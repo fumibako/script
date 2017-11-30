@@ -34,8 +34,9 @@ $(".29_fore").empty();
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
-(華織様は何がお好みでしょうか？)[p]
-[autosave]
+(華織様は何がお好みでしょうか？)
+[autosave改]
+[p]
 ;店員と分かるまで遅い
 #
 陳列棚の前で華織様への贈り物を探している私に[r]
@@ -57,10 +58,11 @@ $(".29_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 (どなたかしら？)[p]
-[autosave]
 [whosay name=四条親戚]
 「突然、話し掛けて申し訳ございません。[r]
-[sp]私は四条家の親戚にあたる四条[ruby text=ゆき]幸[ruby text=よ]代という[ruby text=もの]者です」[p]
+[sp]私は四条家の親戚にあたる四条[ruby text=ゆき]幸[ruby text=よ]代という[ruby text=もの]者です」
+[autosave改]
+[p]
 ;------------------------------------------------
 ;華衣、エンカンの飴屋のイベントを見ていない場合sijyou_sansaku4.ks
 [if exp="f.event_machi_sijyou[4] == 1"]
@@ -123,10 +125,11 @@ $(".29_fore").empty();
 [endif]
 ;------------------------------------------------
 *seen_2
-[autosave]
 [whosay name=四条幸代]
 [主人公通常]
-「今日は華織様と御一緒に来られたのでしょうか？」[p]
+「今日は華織様と御一緒に来られたのでしょうか？」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。[sp]
 [主人公目パチ1回]
@@ -145,8 +148,9 @@ $(".29_fore").empty();
 [whosay name=四条幸代]
 「失礼いたしました。[r]
 [sp]昔から[華衣]様には、私の弟達の相手をして頂いているので、[r]
-[sp]きちんとお礼を伝えたいと考えていたのです」[p]
-[autosave]
+[sp]きちんとお礼を伝えたいと考えていたのです」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
@@ -179,8 +183,9 @@ $(".29_fore").empty();
 ;↓目：横の伏目 [主人公横伏目]
 [chara_mod name="girl_me" storage="girl/S/me_yokofusi1.png" time=0]
 [wait time=10]
-[sp]……考えすぎかしら？)[p]
-[autosave]
+[sp]……考えすぎかしら？)
+[autosave改]
+[p]
 *seen_3
 #
 ;↓眉：通常 [主人公眉通常]
@@ -215,9 +220,10 @@ $(".29_fore").empty();
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 深々とお辞儀をする幸代様。[p]
-[autosave]
 意志の強さを感じられる仕草に[r]
-私はこれ以上、彼女の心情を尋ねられそうになかった。[p]
+私はこれ以上、彼女の心情を尋ねられそうになかった。
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
@@ -267,8 +273,9 @@ $(".29_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ指]
 （華織様はお花を好まれますし、[r]
-[sp]もし使って頂けたら…と考えると嬉しいですね)[p]
-[autosave]
+[sp]もし使って頂けたら…と考えると嬉しいですね)
+[autosave改]
+[p]
 *seen_7
 #
 私は
@@ -454,8 +461,9 @@ $(".29_fore").empty();
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-「僕が選んだものはこちらです」[p]
-[autosave]
+「僕が選んだものはこちらです」
+[autosave改]
+[p]
 #
 華織様が選んだのは、[r]
 ;------------------------------------
@@ -521,9 +529,10 @@ $(".29_fore").empty();
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-[autosave]
 （でも、デェトを楽しみたいし、幸代様ご自身で話されると[r]
-[sp][ruby text="おっしゃ"]仰ってましたから[ruby text="う"]迂[ruby text="かつ"]闊に話さない方が良いのかしら？)[p]
+[sp][ruby text="おっしゃ"]仰ってましたから[ruby text="う"]迂[ruby text="かつ"]闊に話さない方が良いのかしら？)
+[autosave改]
+[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;選択肢 セーブできるように それほど重要ではない感を
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－

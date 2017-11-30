@@ -63,8 +63,10 @@
 [endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
-「わかったわ。すぐ参りますとお伝え下さい」[p]
-[autosave]
+「わかったわ。すぐ参りますとお伝え下さい」
+[autosave改]
+[p]
+
 [whosay name="磯野" color="dimgray"] 
 「はい、それでは」[p]
 [主人公真剣]
@@ -128,8 +130,9 @@
 [layopt layer=fix visible=true]
 ;==========表示準備完了==============
 [whosay name="華織" color="olivedrab"]
-「お[ruby text=と]父[ruby text=う]義様には、許可をもらって来られましたか？」[p]
-[autosave]
+「お[ruby text=と]父[ruby text=う]義様には、許可をもらって来られましたか？」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい。[r]
 [sp]『もう一緒になるのだから好きにしなさい』とおっしゃいました」[p]
@@ -242,8 +245,9 @@
 [image name="yuki" storage="bg/sijyou_machi_yuki.png" layer=1 zindex=2]
 [メッセージウィンドウ上ボタン表示]
 #
-僕達は、賑わう町を並んで歩いていく。[p]
-[autosave]
+僕達は、賑わう町を並んで歩いていく。
+[autosave改]
+[p]
 #
 人々は新しい季節と出会いにむけて、ショーウィンドウの前で楽しそうに話をしている。[p]
 ――きっと誰かに新年の贈り物をするのだろう。[p]
@@ -274,10 +278,11 @@
 次の季節に思いを馳せる。[p]
 ;=================================================================================_
 *seen4
-[autosave]
 #
 ――その後、結納の日取りも三月末と決まり[r]
-[sp]何気ない日常が目に鮮やかに映るようになった。[p]
+[sp]何気ない日常が目に鮮やかに映るようになった。
+[autosave改]
+[p]
 [暗転１]
 [暗転２]
 [背景明度アップ解除]

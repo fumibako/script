@@ -66,9 +66,10 @@
 [endif]
 ;------------------------------------------------------
 
-[autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（ついにお手紙が、来なくなってしまいました）[p]
+（ついにお手紙が、来なくなってしまいました）
+[autosave改]
+[p]
 [主人公伏目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「磯野、今日のお手紙に四条家からの手紙はありまして？」[p]
@@ -120,8 +121,9 @@
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;○四条の苦悩シーン
 [whosay name="四条母" color="#9B608B"]
-「[華衣]！ 勝手に手紙を捨てるのはやめて頂戴！」[p]
-[autosave]
+「[華衣]！ 勝手に手紙を捨てるのはやめて頂戴！」
+[autosave改]
+[p]
 [whosay name="四条 華衣" color=%mp.color]
 「うるさい！ 華織のせいであの人が死んだんだ！」[p]
 [whosay name="四条祖父" color="#888898"]
@@ -154,7 +156,6 @@
 @layopt layer=13 visible=true
 [whosay name="四条祖父" color="#888898"]
 「華織……なんで」[p]
-[autosave]
 ;【音楽フェード停止】
 [fadeoutbgm time=3000]
 [四条憂い]
@@ -162,7 +163,9 @@
 「[華衣]を、叱らないであげて下さい、[r]
 ;【SE】衣擦れ（スッ）体勢を立て直している？
 [playse storage=kinuzure.ogg loop=false ]
-[sp]僕が悪いのですから」[p]
+[sp]僕が悪いのですから」
+[autosave改]
+[p]
 ;【SE】足音(小走り
 [playse storage=girl_out_run.ogg loop=false ]
 [whosay name="四条母" color="#9B608B"]
@@ -192,8 +195,9 @@
 [wait time=10]
 
 [主人公目閉じ]
-（どうしましょう）[p]
-[autosave]
+（どうしましょう）
+[autosave改]
+[p]
 [whosay name="磯野" color="dimgray"]
 「お嬢様。 文矢様にお手紙を書かれてはいかがでしょうか？」[p]
 
@@ -225,8 +229,9 @@
 [主人公通常]
 *seen5
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「磯野、ありがとう。さっそくお手紙を書いてみます」[p]
-[autosave]
+「磯野、ありがとう。さっそくお手紙を書いてみます」
+[autosave改]
+[p]
 *seen_end
 #
 [eval exp="sf.event_sijyou_10_1=1"]

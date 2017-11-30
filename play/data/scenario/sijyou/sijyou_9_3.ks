@@ -64,8 +64,9 @@ $(".1_fore").empty();
 
 ;磯野は男という再度の説明
 #
-部屋の障子から、初老の家令の声がした。[p]
-[autosave]
+部屋の障子から、初老の家令の声がした。
+[autosave改]
+[p]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】古都に咲く花（プロローグ等）スマホでのフリーズ対策試験的に[p]or[l]の後に配置しclick=trueを抜いてみています
@@ -208,7 +209,6 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 ;=================================================================================_
 *seen1
-[autosave]
 ;○四条邸宅の庭
 ;【背景】[背景_四条家]
 [背景_四条家]
@@ -231,7 +231,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 誰もが予想し、望まれていた。[l][r]
 [r]
 それだけに、親戚ぐるみで園遊会が行われることと[r]
-なった。[p]
+なった。
+[autosave改]
+[p]
 [resetfont]
 [freeimage layer = 29 time=500]
 [wait time=500]
@@ -242,12 +244,13 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;¥¥¥¥¥¥¥¥イベント3¥¥¥¥¥¥¥¥
 ;=================================================================================_
 *seen2
-[autosave]
 ;☆デート1 ミッド・ポイント//////////////////
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [whosay name="四条父" color="darkolivegreen"]
-「この国の未来と、四条家と[名字]家との婚約を祝って乾杯」[p]
+「この国の未来と、四条家と[名字]家との婚約を祝って乾杯」
+[autosave改]
+[p]
 ;【SE】乾杯
 [playse storage=tya_katya.ogg loop=false ]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -371,8 +374,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [whosay name="四条 華織" color="olivedrab"]
 「昔は、兄も弟も海外に留学に出掛けていて、僕だけが家の留守を[r]
 [sp]任されていたんだ。[r]
-[sp]だから文矢と[名前]が遊びにきてくれた時は、とても嬉しかったよ」[p]
-[autosave]
+[sp]だから文矢と[名前]が遊びにきてくれた時は、とても嬉しかったよ」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]

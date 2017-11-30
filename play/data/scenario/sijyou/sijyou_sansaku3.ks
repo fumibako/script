@@ -36,7 +36,9 @@
 [wait time=10]
 [p]
 [whosay name="花屋の店主"]
-「"四条"様、今日はひとりで来られたのですか？」[p]
+「"四条"様、今日はひとりで来られたのですか？」
+[autosave改]
+[p]
 #
 聞き覚えのある苗字に私は、花屋の前で足を止めた。[p]
 
@@ -99,7 +101,9 @@
 (さすがに四条家の中に入ることは、淑女として許されないけれど、[r]
 [chara_mod name="girl_me" storage="girl/S/me_yoko.png" time=0]
 [wait time=10]
-_　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前までなら、いいですわよね？）[p]
+_　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前までなら、いいですわよね？）
+[autosave改]
+[p]
 #
 [主人公目閉]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]

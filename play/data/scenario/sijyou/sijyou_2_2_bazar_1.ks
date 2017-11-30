@@ -42,8 +42,9 @@ $(".1_fore").empty();
 [endif]
 #
 いつもより、硬い表情で磯野が手紙を差し出す。[r]
-不思議に思いつつも、私は手紙を手に取った。[p]
-[autosave]
+不思議に思いつつも、私は手紙を手に取った。
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 (どうしたのかしら？）[p]
@@ -88,11 +89,12 @@ $(".1_fore").empty();
 #
 お誘いを受けるつもりで、喜んでいると、[r]
 磯野が心配そうな表情で私に尋ねてきた。[p]
-[autosave]
 [whosay name=磯野]
 [主人公通常]
 「旦那様もお嬢様がお望みなら……と仰っておりましたが[r]
-[sp]如何いたしましょうか？」[p]
+[sp]如何いたしましょうか？」
+[autosave改]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
@@ -164,8 +166,9 @@ $(".1_fore").empty();
 [sp]お聞きしております」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
-「ということは、私は振袖で参加する方が良いのですね……」[p]
-[autosave]
+「ということは、私は振袖で参加する方が良いのですね……」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （和装でのダンスは、未だ形式として残っているけれど、[r]
 [sp]学んだことはないわ。[r]
@@ -177,8 +180,9 @@ $(".1_fore").empty();
 ;礼法が普通の場合？
 [whosay name=磯野]
 「私は、お嬢様でしたら大丈夫だと思いますが……[r]
-[sp]その日は、ご予定を入れましょうか……？」[p]
-[autosave]
+[sp]その日は、ご予定を入れましょうか……？」
+[autosave改]
+[p]
 ;やんわりと断るために　自身の過失にしようとする磯野
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どうしましょう）[p]
@@ -256,8 +260,9 @@ $(".1_fore").empty();
 [wait time=10]
 「旦那様も私も、そして、きっと四条様も[r]
 [sp]お嬢様の頑張りを応援していらっしゃいますよ。[r]
-[sp]それでは、失礼いたします」[p]
-[autosave]
+[sp]それでは、失礼いたします」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ふぅ閉]
 （ふぅ。　立派な淑女になるというのは、大変ですわ）[p]
@@ -332,8 +337,9 @@ $(".1_fore").empty();
 「お嬢様、四条様がお迎えにいらっしゃいました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
-「ありがとう。　すぐ向かいます」[p]
-[autosave]
+「ありがとう。　すぐ向かいます」
+[autosave改]
+[p]
 #
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
@@ -374,8 +380,9 @@ $(".1_fore").empty();
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 
-[sp]今日のお嬢様は、[ruby text=りん]凛となされて、一段とお綺麗でございます」[p]
-[autosave]
+[sp]今日のお嬢様は、[ruby text=りん]凛となされて、一段とお綺麗でございます」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 「ありがとう磯野。[sp]では、私、行って参ります」[p]
@@ -411,8 +418,9 @@ $(".1_fore").empty();
 @layopt layer=fix visible=true
 ;------------------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(大丈夫だわ。努力をした分、自信を持っていきましょう)[p]
-[autosave]
+(大丈夫だわ。努力をした分、自信を持っていきましょう)
+[autosave改]
+[p]
 #
 *scene2
 [暗転２]
@@ -488,8 +496,9 @@ $(".1_fore").empty();
 「今日の[名前]さんを僕は忘れないでしょう。[r]
 [sp]さあ、車に乗って下さい」[p]
 #
-華織様が私の手を取ってエスコートする。[p]
-[autosave]
+華織様が私の手を取ってエスコートする。
+[autosave改]
+[p]
 ;お見合いのように手を取っても背を向けてない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
@@ -501,13 +510,14 @@ $(".1_fore").empty();
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-[autosave]
 #
 ;[四条目伏]
 [chara_mod name="sijyou_me" storage="sijyou/me_fusi1.png" time=0]
 [wait time=10]
 華織様の熱の篭った眼差しには、 お見合いの時とは違って、[r]
-大人の愛情を感じられた。[p]
+大人の愛情を感じられた。
+[autosave改]
+[p]
 [四条退場準備 storage="bg/bg_genkan.jpg" time=100]
 [wait time=50]
 [fadeoutbgm time=3000]

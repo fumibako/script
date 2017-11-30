@@ -22,7 +22,9 @@ $('.loding_pic').remove();
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [イベントシーン構築ボタン無し版枠茶色]
 [メッセージウィンドウ上ボタン表示]
-早春、四条家にて――。[p]
+早春、四条家にて――。
+[autosave改]
+[p]
 ;季節はｲﾍﾞﾝﾄに合わせて調整
 *seen0
 ;【SE】物音（ガタン・バタン）
@@ -110,7 +112,9 @@ $('.loding_pic').remove();
 ;↓背景透明度を長めの時間かけて変更する際に、なぜかwait=trueを入れていても表示不具合が複数回発生したためtime=50とすこし長めにとっています。◆jsYiJcqRkk
 [wait time=50]
 #
-一方、二階では。[p]
+一方、二階では。
+[autosave改]
+[p]
 [bg wait=true method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_rouka.jpg" time=2000]
 [wait time=50]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
@@ -160,7 +164,9 @@ $('.loding_pic').remove();
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [stopse]
 [whosay name="華織" color="olivedrab"]
-（ふぅ……兄とは、かくも大変なものですね。文矢）[p]
+（ふぅ……兄とは、かくも大変なものですね。文矢）
+[autosave改]
+[p]
 [whosay name="華織" color="olivedrab"]
 （これも、本来の兄としての義務をサボっていたツケでしょうか……）[p]
 #

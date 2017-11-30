@@ -20,7 +20,6 @@ $(".1_fore").empty();
 [プリロード画面消去]
 ;=================================================================================_
 *seen5
-[autosave]
 #
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -35,7 +34,9 @@ $(".1_fore").empty();
 ;【背景】[背景_四条家温室]
 [背景_四条家温室]
 #
-"華織様"と私は思い出を語り合いながら、[ruby text=あたた]暖かな温室へと誘った。[p]
+"華織様"と私は思い出を語り合いながら、[ruby text=あたた]暖かな温室へと誘った。
+[autosave改]
+[p]
 ;=================================================================================_
 [if exp="tf.test_gamen == true"]
 テストページからプレイしています。次のシーンまで移動しますか？[r]
@@ -203,7 +204,6 @@ $('.junbi_girl').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「綺麗……」[p]
 #
-[autosave]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;綺麗な場所か見せてから登場
@@ -217,7 +217,9 @@ $('.junbi_girl').remove();
 ;四条登場
 ;華織、華衣と華衣婚約との約束に迷う心を隠す戯ける
 [whosay name="華織" color="olivedrab"]
-「[名前]の名前をつけた薔薇を育ててみようかな」[p]
+「[名前]の名前をつけた薔薇を育ててみようかな」
+[autosave改]
+[p]
 [四条口開]
 ;○狂気 主人公の対応は？
 [主人公ポーズ片手]
@@ -367,8 +369,9 @@ $('.junbi_girl').remove();
 (華織様、また気遣ってくれたのですね。[r]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-[sp]……もう少しだけ、華織様と御一緒に――)[p]
-[autosave]
+[sp]……もう少しだけ、華織様と御一緒に――)
+[autosave改]
+[p]
 #
 [主人公退場]
 ;【退場】四条
@@ -456,8 +459,9 @@ $('.junbi_girl').remove();
 「そうだね。でも、僕のものではないから」[p]
 [四条_隣_憂い]
 #
-どうしてか、華織様は、憂いを帯びた表情をみせた。[p]
-[autosave]
+どうしてか、華織様は、憂いを帯びた表情をみせた。
+[autosave改]
+[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]

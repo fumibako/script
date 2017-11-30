@@ -25,8 +25,9 @@
 [whosay name="磯野" color="dimgray"]
 「お嬢様、
 ;お嬢様、
-『四条華織』さまからお手紙が届いております」[p]
-[autosave]
+『四条華織』さまからお手紙が届いております」
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう」[p]
 [if exp="sf.BGM=='ON'"]
@@ -108,10 +109,11 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
-[autosave]
 #
 [wait time=10]
-澄んだ空気の空にまばゆい日が昇る。[p]
+澄んだ空気の空にまばゆい日が昇る。
+[autosave改]
+[p]
 [主人公ほほえみ]
 [wait time=10]
 私は筆を取ると、今までの事を噛みしめながら[r]

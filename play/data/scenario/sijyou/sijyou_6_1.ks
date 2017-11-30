@@ -17,7 +17,9 @@
 ;bg_kinari.jpg	
 ;bg_kinari_sakura.jpg
 #
-――夢を見た。[p]
+――夢を見た。
+[autosave改]
+[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】星降る夜に（思い出/夢見るシーンに
 [playbgm storage="yumemiru_hoshi.ogg" loop=true]
@@ -86,7 +88,9 @@
 #
 その優しい声の主は、華織お兄"さま"であった[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織お兄さま！」 [p]
+「華織お兄さま！」 
+[autosave改]
+[p]
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん、会いたかったよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -106,7 +110,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「綺麗！」[p]
 #
-鮮やかなバラの中に、淑女らしい花が一輪、キラキラと輝いていた。[p]
+鮮やかなバラの中に、淑女らしい花が一輪、キラキラと輝いていた。
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (この花の名前は……)[p]
 #
@@ -124,7 +130,9 @@
 [bg storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
 #
 華織お兄さまは、私の髪飾りに花を添えると、夢のような足取りで[r]
-ワルツを舞う。[p]
+ワルツを舞う。
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうしてかしら？ 私、踊れてしまってるわ」[p]
 [whosay name="華織お兄さま" color="olivedrab"]
@@ -145,7 +153,9 @@
 [sp]私の幸せは、やっぱり、一番近くにいた華織お兄さまなのだわ……）[p]
 ;一応　伏線はっておくか
 #
-恋夢に満ち足りていると、どこかで鐘が鳴りだした。[p]
+恋夢に満ち足りていると、どこかで鐘が鳴りだした。
+[autosave改]
+[p]
 ;広間時計 ボーンボーンボーン…
 ;【SE】時計の鐘（ボーン）３回ほど（繰り返し）
 [playse storage=tokei_tokei_kane.ogg loop=false]

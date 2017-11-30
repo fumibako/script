@@ -29,8 +29,9 @@ $(".1_fore").empty();
 [主人公通常]
 [wait time=10]
 「ここには、小さな種類の薔薇が植えてあるんだ。[r]
-[sp]この薔薇の花言葉は、『愛を持つ』『一時の感銘』で……」[p]
-[autosave]
+[sp]この薔薇の花言葉は、『愛を持つ』『一時の感銘』で……」
+[autosave改]
+[p]
 #
 四条様は私の隣にたって、薔薇について話しながら、[r]
 出会った頃のように私の髪を撫でる。[p]
@@ -153,8 +154,9 @@ $(".1_fore").empty();
 [四条目閉じ]
 「えぇ。[r]
 [sp]ただ、昔の[名前]ちゃんが、可愛らしいと記憶しているので、[r]
-[sp]少し時間がかかってしまうかもしれません」[p]
-[autosave]
+[sp]少し時間がかかってしまうかもしれません」
+[autosave改]
+[p]
 [whosay name="四条 華織" color="olivedrab"]
 「ですが、少しずつ[名前]との関係を深めていきましょうか」
 [四条笑顔]
@@ -288,13 +290,14 @@ _　私も淑女として成長しないといけないのだわ）[p]
 ;難しい
 
 *common_0
-[autosave]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「[名前]。[sp]
 [四条口開]
-久しぶりに来た、我が家を見て回ろうか」[p]
+久しぶりに来た、我が家を見て回ろうか」
+[autosave改]
+[p]
 ;[四条口微笑み]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]

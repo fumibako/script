@@ -29,7 +29,7 @@ $(".1_fore").empty();
 [メッセージウィンドウ上ボタン表示]
 [wait time=10]
 遠慮しておいた。
-[autosave]
+[autosave改]
 [p]
 *scene1
 [if exp="sf.BGM=='ON'"]
@@ -60,7 +60,9 @@ $(".1_fore").empty();
 [wait time=10]
 #
 華織様を待っていると、楽団にピアノの奏者が入り、[r]
-他のバイオリン奏者達も音を合わせはじめる。[p]
+他のバイオリン奏者達も音を合わせはじめる。
+[autosave改]
+[p]
 #
 ピアノの音によって徐々に纏まりを得たかと思うと、[r]
 シンと鳴り止み、[r]
@@ -105,7 +107,9 @@ $(".1_fore").empty();
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-突然、戻ってきた女性が、ふらりと私の隣の柱にもたれかかった。[p]
+突然、戻ってきた女性が、ふらりと私の隣の柱にもたれかかった。
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
@@ -167,7 +171,9 @@ $(".1_fore").empty();
 #
 ドレスに潰されてしまいそうな儚気な雰囲気を漂わす幸代様に[r]
 [ruby text=グラス]杯を手渡され、[r]
-圧倒された私は華織様を待たずに[ruby text=グラス]杯を受け取ってしまった。[p]
+圧倒された私は華織様を待たずに[ruby text=グラス]杯を受け取ってしまった。
+[autosave改]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
@@ -247,7 +253,9 @@ $(".1_fore").empty();
 ;↓目：伏目 [主人公目伏]
 [chara_mod name="girl_me" storage="girl/S/me_fusi1.png" time=0]
 [wait time=10]
-幸代様は、何か悟ったように微笑み、言葉を続けられた。[p]
+幸代様は、何か悟ったように微笑み、言葉を続けられた。
+[autosave改]
+[p]
 
 ;何故、華織、華衣の手紙の相手に含まれていなかったのか？
 [whosay name=四条幸代]
@@ -326,7 +334,9 @@ $(".1_fore").empty();
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-「幸代様……？」[p]
+「幸代様……？」
+[autosave改]
+[p]
 
 [whosay name=四条幸代]
 「ほんの少し前まで、私は自分が何をすべきか、[r]

@@ -75,7 +75,7 @@
 「……！　そうか、華織君か」
 [endif]
 
-[autosave]
+[autosave改]
 [p]
 [主人公目パチ1回]
 [wait time=10]
@@ -86,7 +86,7 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「では、早速見合いの準備を進めよう……[r]
 [sp][名前]。華織君に決めて、本当に良いのだね？」
-[autosave]
+[autosave改]
 [p]
 ;【立ち絵】主人公：目閉じ思案
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
@@ -120,7 +120,7 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「わかった。[r]
 [sp]この事はすぐに先方に伝えよう。[名前]からも手紙を送っておくといい」
-[autosave]
+[autosave改]
 [p]
 
 ;【立ち絵】主人公：通常

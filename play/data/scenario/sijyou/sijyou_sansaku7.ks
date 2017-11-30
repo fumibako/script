@@ -23,6 +23,7 @@
 #
 町に出た。[r]
 はろやかな光が、桜の花びらと共に降り注ぐ。
+[autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】筍の訪れ（町散策時に
@@ -240,7 +241,9 @@ $('.saku1').remove();
 [表示準備 storage="bg/B4nFWraU42/ginza3.jpg"]
 #
 私は、多くの公衆の面前だというのに自然と華織と手を繋いでいたことに[r]
-気づいてしまった。[p]
+気づいてしまった。
+[autosave改]
+[p]
 ;暫定ト書き
 小さな町中では、こっそりと手を繋ぐことができても、こういった男女が[r]
 多い場所で人目を憚らず繋ぐのは、はじめてのこと。[r]
@@ -263,7 +266,9 @@ $('.saku1').remove();
 [主人公ほほえみ]
 「はい」 [p]
 [whosay name="華織" color="olivedrab"]
-「そうだ、今日はいいところに行こうか」[p]
+「そうだ、今日はいいところに行こうか」
+[autosave改]
+[p]
 ;怪しいところ？とドキドキする
 [主人公目大]
 ;[主人公口開]
@@ -318,7 +323,9 @@ $('.saku1').remove();
 [wait time=500]
 [表示準備 storage="bg/B4nFWraU42/bg_sijyou_kousuiB.jpg" layer=13]
 ;===================================================
-華織様に付いていくと、ビルヂングの下に収まった店が目に留まった。[p]
+華織様に付いていくと、ビルヂングの下に収まった店が目に留まった。
+[autosave改]
+[p]
 ショーウィンドウには、花が活けられ、中の照明と共に商品を引き立てて[r]
 いた。[p]
 [主人公驚]
@@ -382,7 +389,9 @@ $('.saku1').remove();
 [wait time=10]
 [whosay name="調香店主" color=%mp.color]
 「いらっしゃいませ～！[r]
-[sp]あらまあ！ 四条綾花様のところに華織様じゃないですか」[p]
+[sp]あらまあ！ 四条綾花様のところに華織様じゃないですか」
+[autosave改]
+[p]
 ;↑"四条綾花様のところに"→"四条綾花様のところの"の方が自然でしょうか。変えると意味合いが変化してしまいますので、そのままにします(◆jsYiJcqRkk
 ;===================================================
 [if exp="tf.test_gamen == true"]
@@ -449,7 +458,9 @@ jumpします。[p]
 その小瓶の中には僅かにだけ、香水が入っており、手に取りやすい大きさの[ruby text=き]木[ruby text=べら]箆が漬けられていた。[p]
 ;ふたりで選ぶ
 [whosay name="華織" color="olivedrab"]
-「気になった香り名があったら、これを取り出して、仰いでみて」[p]
+「気になった香り名があったら、これを取り出して、仰いでみて」
+[autosave改]
+[p]
 [主人公ポーズ指]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なるほど、こうやって選ぶのですね……）[p]
@@ -524,7 +535,9 @@ jumpします。[p]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （いい香りがするわ……優しい花の香りから、爽やかな香りに変わって[r]
-[sp]いくのですね）[p]
+[sp]いくのですね）
+[autosave改]
+[p]
 ;[四条目通常]
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
 [wait time=10]
@@ -700,7 +713,9 @@ jumpします。[p]
 ;共通
 ;いたずらに笑ってみている店主
 [whosay name="調香店主" color=%mp.color]
-「奥様もお試しください。　次は、もう少し甘目の香りにしますね」[p]
+「奥様もお試しください。　次は、もう少し甘目の香りにしますね」
+[autosave改]
+[p]
 ;マドラー的なものでかき混ぜる
 [whosay name="調香店主" color=%mp.color]
 「はい、どうぞ」[p]
@@ -910,7 +925,9 @@ jumpします。[p]
 [wait time=10]
 ;～～～驚きつつ困惑照れ～～～
 [whosay name="調香店主" color=%mp.color]
-「いかかでしょうか？」[p]
+「いかかでしょうか？」
+[autosave改]
+[p]
 ;↓眉：下がり眉下位置 (伏目、目閉じ時の柔和な表情に向きます) [主人公眉下げ下]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_sage.png" time=0]
 [wait time=10]
@@ -983,7 +1000,9 @@ jumpします。[p]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [whosay name="調香店主" color=%mp.color]
-「綾花様が気にされていたとおり、本当に仲がよろしいのですね」 [p]
+「綾花様が気にされていたとおり、本当に仲がよろしいのですね」
+[autosave改]
+ [p]
 ;～～～驚きつつ困惑照れ～～～
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
@@ -1147,7 +1166,9 @@ jumpします。[p]
 「歳のこともあって恥ずかしいのか、ツンケンしてますけど……[r]
 [sp]本当は、とても仲の良い夫婦ですね……」[p]
 [whosay name="華織" color="olivedrab"]
-「ねぇ、[名前]さん」[p]
+「ねぇ、[名前]さん」
+[autosave改]
+[p]
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]

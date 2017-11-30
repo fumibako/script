@@ -131,8 +131,9 @@ $(".29_fore").empty();
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「さあ、お手をどうぞ――」[p]
-[autosave]
+「さあ、お手をどうぞ――」
+[autosave改]
+[p]
 華織様が私の目を見ながら手を差し伸べる。
 ;(る。→た後、)
 [r]
@@ -242,8 +243,9 @@ $(".29_fore").empty();
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
-「華織様……」[p]
-[autosave]
+「華織様……」
+[autosave改]
+[p]
 ;セリフ思いつかないので名前で
 ;感想
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -342,9 +344,10 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 華織様と話をしていると[r]
-華やかな雰囲気をもった妙齢の女性が話しかけてきた。[p]
+華やかな雰囲気をもった妙齢の女性が話しかけてきた。
+[autosave改]
+[p]
 ;華織様！と読んだ方がいいのか
-[autosave]
 [whosay name="？？？"]
 [chara_mod name="sijyou_me" storage="sijyou/me_ake.png" time=0]
 [wait time=10]
@@ -454,8 +457,9 @@ $(".29_fore").empty();
 ;↓口：おちょぼ口 [主人公口ふぅ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_otyobo.png" time=0]
 [wait time=10]
-（それにしても踊った後だからか、喉が[ruby text=かわ]渇いてきたわ)[p]
-[autosave]
+（それにしても踊った後だからか、喉が[ruby text=かわ]渇いてきたわ)
+[autosave改]
+[p]
 #
 私の様子に気付いたのか、[r]
 [主人公通常]
@@ -496,7 +500,7 @@ $(".29_fore").empty();
 [メッセージウィンドウ上ボタン表示]
 [wait time=10]
 頂くことにした。
-[autosave]
+[autosave改]
 [p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *sweet_rute
@@ -572,7 +576,7 @@ $(".29_fore").empty();
 [chara_mod name="sijyou_tonari_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
 [sp]？[sp]顔が少し赤いようですが……休憩室に行きましょうか？」
-[autosave]
+[autosave改]
 [p]
 #
 私は
@@ -609,7 +613,7 @@ $(".29_fore").empty();
 [wait time=10]
 [表示開始 time=300]
 休憩室に行くことにした。
-[autosave]
+[autosave改]
 [p]
 @jump storage="sijyou/sijyou_2_2_bazar_5.ks" target="scene1"
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
@@ -625,7 +629,7 @@ $(".29_fore").empty();
 [表示開始 time=300]
 
 もう一度、踊ることにした。
-[autosave]
+[autosave改]
 [p]
 ;------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -788,8 +792,9 @@ $(".29_fore").empty();
 *scene6
 [背景_チャリティ会場回廊]
 #
-回廊の柱にもたれると、私は顔を[ruby text=おお]覆い隠した。[p]
-[autosave]
+回廊の柱にもたれると、私は顔を[ruby text=おお]覆い隠した。
+[autosave改]
+[p]
 [主人公ポーズ両手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (はしゃぎすぎてしまったわ……どうしてこんな事を？)[p]
@@ -968,8 +973,9 @@ $(".29_fore").empty();
 [whosay name="華織" color="olivedrab"] 
 「迎えにいった時の[名前]さんの表情も、[r]
 [sp]頂いた贈り物も、花のように舞う貴女も[r]
-[sp]僕は今日という日を忘れられないでしょう」[p]
-[autosave]
+[sp]僕は今日という日を忘れられないでしょう」
+[autosave改]
+[p]
 [whosay name="華織" color="olivedrab"] 
 「もし宜しければ、休まれた後に[r]
 [sp]もう一度、ここで踊って頂けませんか？」[p]

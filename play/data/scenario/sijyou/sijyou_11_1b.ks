@@ -311,8 +311,9 @@ $(".nerine").css("opacity",0.5);
 以前、華織様に尋ねた温室へとたどり着く。[p]
 その温室の中には、巨大なガラスと生い茂る緑に[r]
 守られるかのようにして、色とりどりのネリネが[r]
-[autosave]
-生育されていた。[p]
+生育されていた。
+[autosave改]
+[p]
 [playse storage=shine.ogg loop=false ]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
@@ -572,8 +573,9 @@ $('.junbi_girl').remove();
 ;======四条登場======
 [whosay name="華織" color="olivedrab"]
 「[華衣]、今まで、うまく伝えれなくてごめん。[r]
-[sp]けど、ずっと、ここにあったんだ……」[p]
-[autosave]
+[sp]けど、ずっと、ここにあったんだ……」
+[autosave改]
+[p]
 [whosay name="華衣" color=%mp.color]
 「！　……兄さんの話を信じていれば！！」[p]
 [whosay name="華織" color="olivedrab"]
@@ -593,10 +595,11 @@ $('.junbi_girl').remove();
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
-[autosave]
 #
 華織様は私の手を強く握られた。[r]
-その手から言いようのない想いが伝わってくる。[p]
+その手から言いようのない想いが伝わってくる。
+[autosave改]
+[p]
 [主人公目閉じ]
 私も華織様の表情を見て、強く握り返した。[p]
 『また会う日を楽しみに』　『幸せな思い出』 [p]
