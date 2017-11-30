@@ -74,7 +74,9 @@
 [playse storage=isono_in.ogg loop=false ]
 
 [whosay name=磯野 color="dimgray"]
-「お嬢様、お茶をお持ちしました」[p]
+「お嬢様、お茶をお持ちしました」
+[autosave改]
+[p]
 
 ;【立ち絵】主人公：通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -131,7 +133,9 @@
 
 #
 私の言葉はむなしく、磯野は素早く鳩さんの足に括り付けてあった、[r]
-手紙をほどいて開ける。[p]
+手紙をほどいて開ける。
+[autosave改]
+[p]
 
 ;【SE】紙に触れる（早・軽）
 [playse storage=paper_open_fast.ogg loop=false ]

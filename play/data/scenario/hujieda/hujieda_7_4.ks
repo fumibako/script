@@ -23,7 +23,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 微笑み
 [主人公ほほえみ]
-「お手紙書けたわ！」[p]
+「お手紙書けたわ！」
+[autosave改]
+[p]
 [主人公目閉]
 （私からのお手紙も喜んでくださるかしら？） [p]
 
@@ -91,7 +93,9 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
 [wait time=10]
 [主人公目通常]
-まもなくして、ふわっとお[ruby text=こと]箏の上に鳩が止まった。[p]
+まもなくして、ふわっとお[ruby text=こと]箏の上に鳩が止まった。
+[autosave改]
+[p]
 
 
 [if exp="sf.BGM=='ON'"]

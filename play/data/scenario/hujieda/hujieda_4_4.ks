@@ -30,7 +30,9 @@
 
 ;地の文
 #
-思い悩んでいると、突如、窓から白鳩が飛び込んできた。[p]
+思い悩んでいると、突如、窓から白鳩が飛び込んできた。
+[autosave改]
+[p]
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
 

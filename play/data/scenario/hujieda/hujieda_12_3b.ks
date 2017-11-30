@@ -17,7 +17,9 @@
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 #
-時子さんに藤枝様の事を話すことにした。[p]
+時子さんに藤枝様の事を話すことにした。
+[autosave改]
+[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：悲しみ
 [主人公憂い]

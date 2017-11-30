@@ -21,7 +21,9 @@
 [主人公目パチ1回]
 （お稽古をすすめて、どれくらいがたったでしょうか）[p]
 #
-私は、六段の調べの四段まで弾けるようになっていた。[p]
+私は、六段の調べの四段まで弾けるようになっていた。
+[autosave改]
+[p]
 お[ruby text=こと]箏をかき鳴らすと、つい鳥文の君の事を考えてしまう。[p]
 
 [if exp="sf.BGM=='ON'"]
@@ -143,7 +145,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 ;【立ち絵】主人公　目伏せ　悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
-「そんな！　これが最後のお手紙なの？」[p]
+「そんな！　これが最後のお手紙なの？」
+[autosave改]
+[p]
 
 （でも、確かに磯野やお父様に話したら、[r]
 [sp]きっとお手紙を交わす事を反対されてしまうわ）[p]
@@ -235,7 +239,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [メッセージウィンドウ上ボタン表示]
 [主人公目パチ1回]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（こっそり拝見するだけならいいわよね）[p]
+（こっそり拝見するだけならいいわよね）
+[autosave改]
+[p]
 ;SE自転車ベル
 ;【SE】自転車のベル（チリンチリン）
 [playse storage=jitensha_tirin.ogg loop=false]

@@ -31,7 +31,9 @@
 [playse storage=tori_hato.ogg loop=false ]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（あの時の鳩さんだわ）[p]
+（あの時の鳩さんだわ）
+[autosave改]
+[p]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=1000]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]

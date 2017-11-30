@@ -49,7 +49,9 @@ $('.list').remove();
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「磯野から聞いているし没収した手紙も読んだ。[r]
 [sp]藤枝肇君の素性も調べてある。[r]
-[sp]その上で何か言いたいことはあるかね？」[p]
+[sp]その上で何か言いたいことはあるかね？」
+[autosave改]
+[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
@@ -112,7 +114,9 @@ $('.list').remove();
 ;【立ち絵】主人公：真剣
 [主人公目閉じ]
 「お父様……私は、もう一度だけでもいいです。[r]
-[sp]藤枝様にお会いしたいです」[p]
+[sp]藤枝様にお会いしたいです」
+[autosave改]
+[p]
 [主人公口通常]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -216,7 +220,9 @@ $('.list').remove();
 
 [whosay name=磯野 color="dimgray"]
 「旦那様も数分と言われました。[r]
-[sp]彼も仕事中ですし、手短にお話しください」[p]
+[sp]彼も仕事中ですし、手短にお話しください」
+[autosave改]
+[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
