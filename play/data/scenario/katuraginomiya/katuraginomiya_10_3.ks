@@ -19,7 +19,9 @@
 ;=====================ここからお芝居の幕引きです===============================
 *seen0
 [whosay name=磯野 color="dimgray"]
-「お嬢様、葛城宮殿下からのお手紙でございます」[p]
+「お嬢様、葛城宮殿下からのお手紙でございます」
+[autosave改]
+[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
@@ -105,7 +107,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [主人公困り]
 「辞職！」[p]
 [主人公目パチ1回]
-（やはり落ち込んでいられるのね。 こんな時こそ傍にいてお支えしたい)[p]
+（やはり落ち込んでいられるのね。 こんな時こそ傍にいてお支えしたい)
+[autosave改]
+[p]
 
 [主人公目閉じ]
 (殿下が自信を取り戻せるように……)[p]
@@ -149,7 +153,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 *seen2
 #
 汚職事件を理由に今原中将をはじめ、軍国主義の者は除名処分が[r]
-検討された。[p]
+検討された。
+[autosave改]
+[p]
 [autosave]
 [葛城宮目を閉じる]
 [whosay name="葛城宮　晴仁" color=%mp.color]

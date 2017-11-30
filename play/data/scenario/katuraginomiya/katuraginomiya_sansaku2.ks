@@ -30,7 +30,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公横目]
 「あら、あちらにいるのは時子さん？[r]
-[sp]隣の殿方はどなたかしら」[p]
+[sp]隣の殿方はどなたかしら」
+[autosave改]
+[p]
 
 [if exp="tf.test_gamen == true"]
 テストページから開始しています。シナリオ終点にjumpしますか？[r]
@@ -127,7 +129,9 @@ jumpします。[p]
 
 [whosay name="三宮時子" ]
 「東帝國大学法学助教授、[ruby text=い]伊[ruby text=のう]能[ruby text=ひろ]洋[ruby text=ただ]匡さん、[r]
-[sp]私の家で書生としていらっしゃった方です」[p]
+[sp]私の家で書生としていらっしゃった方です」
+[autosave改]
+[p]
 
 ;【立ち絵】主人公驚
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -306,7 +310,9 @@ jumpします。[p]
 [whosay name="三宮時子"]
 「伊能さんから家を出る時、手紙を頂きました。[r]
 [sp]"私に惹かれているから縁談を断ったけれど[r]
-[sp]私の幸せを想うからこそ、身勝手な事をするつもりはない" と」[p]
+[sp]私の幸せを想うからこそ、身勝手な事をするつもりはない" と」
+[autosave改]
+[p]
 
 [fadeoutbgm time=3000]
 

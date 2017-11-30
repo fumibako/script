@@ -64,7 +64,9 @@ jumpします。[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
 [whosay name="三宮　時子" color="#c25232"]
-「まあ、見違えましたわ！ 　[名前]さん、ごきげんよう」[p]
+「まあ、見違えましたわ！ 　[名前]さん、ごきげんよう」
+[autosave改]
+[p]
 
 [主人公目パチ1回]
 #
@@ -123,6 +125,7 @@ jumpします。[p]
 ふと視線を感じて振返ると、[ruby text=ふう]風[ruby text=が]雅で[ruby text=せい]精[ruby text=かん]悍な顔立ちをした青年と[r]
 視線が絡まった。
 [葛城宮目パチ1回]
+[autosave改]
 [p]
 
 ;気品があり、華やかで、男らしい青年と視線が絡まった。[p]
@@ -234,7 +237,9 @@ jumpします。[p]
 ;【立ち絵】葛城宮 微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮笑顔]
-「君にはまたお目にかかろう」[p]
+「君にはまたお目にかかろう」
+[autosave改]
+[p]
 
 #
 [葛城宮退場準備 time=500]
@@ -328,7 +333,9 @@ jumpします。[p]
 *seen_6
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 通常
-（今日はお稽古がよく進んだわ……明日の予習も……）[p]
+（今日はお稽古がよく進んだわ……明日の予習も……）
+[autosave改]
+[p]
 ;【SE】軽い足音（フェードイン）
 [playse storage=girl_in_run.ogg loop=false ]
 [wait time=500]
@@ -417,7 +424,9 @@ $('.junbi_girl').remove();
 [主人公目閉じ]
 #
 榊のお印入りの上質の白封筒を開け、はやる心を落ち着けて[r]
-御名を確かめる。[p]
+御名を確かめる。
+[autosave改]
+[p]
 [stopbgm]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]

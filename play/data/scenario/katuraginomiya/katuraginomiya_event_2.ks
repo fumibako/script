@@ -19,7 +19,9 @@
 [メッセージウィンドウ上ボタン表示]
 ;=====================ここからお芝居の幕引きです===============================
 #
-行き交う足音、子供たちの明るく元気な声が響く。[p]
+行き交う足音、子供たちの明るく元気な声が響く。
+[autosave改]
+[p]
 ;行き交う足音や、子供たちの明るく元気な声が響く。上にします。
 ;【SE】子供たち
 [playse storage=kodomotachi.ogg loop=false ]
@@ -158,7 +160,9 @@ jumpします。[p]
 ;【立ち絵】葛城宮 通常
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮微笑み]
-「子供たちが喧嘩をしていたので仲裁に入ったら、遊びに誘われてな……」[p]
+「子供たちが喧嘩をしていたので仲裁に入ったら、遊びに誘われてな……」
+[autosave改]
+[p]
 ;ここは思いつかないのでそのまま
 ;子供たちが喧嘩をしていたので、思わず仲裁に入ったところ、遊びに誘われてな……
 
@@ -204,7 +208,9 @@ jumpします。[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「私に手紙を出していることを周囲の方から反対されませんか？」[p]
+「私に手紙を出していることを周囲の方から反対されませんか？」
+[autosave改]
+[p]
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
@@ -263,7 +269,9 @@ jumpします。[p]
 [葛城宮微笑み]
 ;【立ち絵】葛城宮 真剣
 「……君自身は、私をどう思っている？」
-[主人公伏目パチ1回][p]
+[主人公伏目パチ1回]
+[autosave改]
+[p]
 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]

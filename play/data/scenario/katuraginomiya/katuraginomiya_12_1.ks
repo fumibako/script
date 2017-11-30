@@ -19,7 +19,9 @@
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
 「葛城宮殿下は、お手紙を送るといわれたのですよね？[r]
-[sp]もうあれからひと月ですが」[p]
+[sp]もうあれからひと月ですが」
+[autosave改]
+[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]

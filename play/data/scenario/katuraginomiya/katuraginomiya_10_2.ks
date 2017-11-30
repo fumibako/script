@@ -19,7 +19,9 @@
 *seen0
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「お嬢様……この記事をお読みください」[p]
+「お嬢様……この記事をお読みください」
+[autosave改]
+[p]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
@@ -89,7 +91,9 @@
 [主人公憂い]
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「葛城宮殿下も海軍大佐です。　少なからず影響があるやもしれません」[p]
+「葛城宮殿下も海軍大佐です。　少なからず影響があるやもしれません
+[autosave改]
+」[p]
 [fadeoutbgm time=3000]
 
 ;【立ち絵】主人公　困り 
@@ -142,7 +146,9 @@
 *seen4
 [whosay name="葛城宮　晴仁" color=%mp.color]
 ;【立ち絵】葛城宮　怒り　幕間に設定済
-「今原中将、戦争をするつもりですか？[sp]貴方は首相の意思に背いている」[p]
+「今原中将、戦争をするつもりですか？[sp]貴方は首相の意思に背いている」
+[autosave改]
+[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】一閃（緊迫シーンに

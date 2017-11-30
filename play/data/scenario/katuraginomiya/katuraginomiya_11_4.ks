@@ -30,7 +30,9 @@
 *seen0
 ――海軍省会議室[p]
 人のざわめきは時間が近づくにつれて静まり、[r]
-時計の針は会議の開始時間を指す。[p]
+時計の針は会議の開始時間を指す。
+[autosave改]
+[p]
 ;【SE】時計（広間カチコチ）
 [playse storage=tokei_hiroma.ogg loop=false ]
 
@@ -215,7 +217,9 @@
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮伏目パチ1回]
-「どうぞお入り下さい」[p]
+「どうぞお入り下さい」
+[autosave改]
+[p]
 
 [whosay name="？？？" color=%mp.color]
 「圧力をかけて内々に呼び出し、お揃いで私に何の御用でしょうか」[p]

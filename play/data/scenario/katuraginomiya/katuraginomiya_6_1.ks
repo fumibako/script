@@ -15,7 +15,9 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=2000]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
-――夢を見た。[p]
+――夢を見た。
+[autosave改]
+[p]
 # 
 [イベントシーン構築枠茶色]
 ;【背景】執務室（裏で画面構成）

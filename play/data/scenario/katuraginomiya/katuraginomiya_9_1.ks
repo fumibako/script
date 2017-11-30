@@ -23,7 +23,9 @@
 
 [主人公伏目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「お嬢様、文矢様からのお手紙が届いております」[p]
+「お嬢様、文矢様からのお手紙が届いております」
+[autosave改]
+[p]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）
@@ -183,7 +185,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]返答がどちらにせよ私は受け止めるつもりだ。[r]
 [r]
 *yy2
-[sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[autosave改]
+[p]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][28] = 0"]
@@ -417,7 +421,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「話があると聞いた。
 [主人公目パチ1回]
-[sp]話してごらんなさい」[p]
+[sp]話してごらんなさい」
+[autosave改]
+[p]
 
 ;【立ち絵】主人公 目閉じ
 ;指定されていないので指定します

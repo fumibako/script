@@ -21,7 +21,9 @@
 [主人公目パチ1回]
 #
 皇后陛下のお印入りの簡単な挨拶と日時の書いてあるお茶事の招待状に[r]
-目を通し、葛城宮殿下の手紙を丁寧に開いた。[p]
+目を通し、葛城宮殿下の手紙を丁寧に開いた。
+[autosave改]
+[p]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
@@ -129,7 +131,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [主人公目閉]
 （殿下は率直な方で……私に好意を寄せ下さっている。[r]
 [主人公伏目]
-[sp]それがとても嬉しい）[p]
+[sp]それがとても嬉しい）
+[autosave改]
+[p]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様どうされますか？」[p]
@@ -197,7 +201,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [主人公憂い]
 [主人公目パチ1回]
 [whosay name=磯野 color="dimgray"]
-「お迎えの車が到着しました。　支度は整っておられるようですね」[p]
+「お迎えの車が到着しました。　支度は整っておられるようですね」
+[autosave改]
+[p]
 
 [stopbgm]
 [if exp="sf.BGM=='ON'"]
@@ -324,7 +330,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 #
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮口笑顔]
-「よく来てくれた」[p]
+「よく来てくれた」
+[autosave改]
+[p]
 [葛城宮口通常]
 [葛城宮眉困り]
 ;【立ち絵】葛城宮 困り顔
@@ -406,7 +414,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]茶事の亭主に、皇后陛下、正客に晴仁殿下の[r]
 母である葛城宮妃殿下、次客に縁子殿下、[r]
 三客に私、[r]
-半東にに皇后陛下の侍従である桂伯爵夫人。[p]
+半東にに皇后陛下の侍従である桂伯爵夫人。
+[autosave改]
+[p]
 [r]
 [sp]今まで習って身につけた作法と流派の違いは[r]
 事前に調べてあり、落ち着いて対処出来た。[r]
@@ -470,7 +480,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;==============================================================================
 *seen4
 [whosay name=磯野 color="dimgray"]
-「お嬢様お疲れ様でした。　いかがだったでしょうか？」[p]
+「お嬢様お疲れ様でした。　いかがだったでしょうか？」
+[autosave改]
+[p]
 
 ;【立ち絵】主人公 微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
