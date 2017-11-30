@@ -410,7 +410,7 @@ $(".1_fore").empty();
 [if exp="tf.test_gamen == true"]
 テストページからプレイしています。選択肢に移動しますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
@@ -896,20 +896,21 @@ $(".1_fore").empty();
 [autosave]
 ;好感度も「1」程、上がるので「29or19」にしています　区切りが悪いと気になられるのでしたら上がり値含めて調整してください
 [if exp="f.para_katuraginomiya_koukando >= 19 && (f.katuraginomiya_only == 1 || f.katuraginomiya_fumi_start == 1 || tf.test_sijyou == true)"]
-[glink target=*katuragi text="葛城宮　晴仁" fontcolor=gray size=23 width="200" x=500 y=80 color=white]
+[glink target=*katuragi text="葛城宮　晴仁殿下" font_color=black size=23 width="200" x=500 y=50 graphic="select_waku_x500.png"]
 [endif]
 [if exp="(f.event_hujieda[4] == 1 && f.event_hujieda[17] != 1) || tf.test_sijyou == true"]
-[glink target=*hujieda text="鳥文の君" fontcolor=gray size=23 width="200" x=500 y=130 color=white]
+[glink target=*hujieda text="鳥文の君" font_color=black size=23 width="200" x=500 y=130 graphic="select_waku_x500.png"]
 [endif]
 ;好感度２９以上で表示
 [if exp="f.para_sijyou_koukando >= 29 || tf.test_sijyou == true"]
-[glink target=*sijyou text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=80 color=white]
+[glink target=*sijyou text="四条 華織様" font_color=black size=23 width="200" x=200 y=50 graphic="select_waku_x500.png"]
 [endif]
 [if exp="(f.para_zaizen_koukando >= 29 && f.para_shujinkou_shukujodo >= 18) || tf.test_sijyou == true"]
-[glink target=*zaizen text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=130 color=white]
+[glink target=*zaizen text="財前 美彬様" font_color=black size=23 width="200" x=200 y=130 graphic="select_waku_x500.png"]
 [endif]
 [if exp="f.para_kuroda_koukando >= 29 || tf.test_sijyou == true"]
-[glink target=*kuroda text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=180 color=white]
+[glink target=*kuroda text="黒田 将貴様" font_color=black size=23 width="200" x=200 y=210 graphic="select_waku_x500.png"]
+;他のイベントでも選択肢のお名前には敬称を付けているため、合わせます◆jsYiJcqRkk
 [endif]
 [s]
 ;========================================================================
