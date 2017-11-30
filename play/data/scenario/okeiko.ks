@@ -233,6 +233,9 @@ f.sijyou_fumi_toutyakumachi_sports = f.sijyou_fumi_toutyakumachi_sports - 1;
 if (f.sijyou_fumi_toutyakumachi_aburidasi > 0){
 f.sijyou_fumi_toutyakumachi_aburidasi = f.sijyou_fumi_toutyakumachi_aburidasi - 1;
 }
+if (f.sijyou_fumi_toutyakumachi_kaidan > 0){
+f.sijyou_fumi_toutyakumachi_kaidan = f.sijyou_fumi_toutyakumachi_kaidan - 1;
+}
 
 //◆財前宛 話題の手紙届くまでカウント減算処理
 if (f.zaizen_fumi_toutyakumachi_shumi > 0){
@@ -288,6 +291,9 @@ f.zaizen_fumi_toutyakumachi_dokusho = f.zaizen_fumi_toutyakumachi_dokusho - 1;
 }
 if (f.zaizen_fumi_toutyakumachi_sports > 0){
 f.zaizen_fumi_toutyakumachi_sports = f.zaizen_fumi_toutyakumachi_sports - 1;
+}
+if (f.zaizen_fumi_toutyakumachi_kaidan > 0){
+f.zaizen_fumi_toutyakumachi_kaidan = f.zaizen_fumi_toutyakumachi_kaidan - 1;
 }
 
 //◆葛城宮宛 話題の手紙届くまでカウント減算処理
@@ -351,6 +357,9 @@ f.katuraginomiya_fumi_toutyakumachi_sintya = f.katuraginomiya_fumi_toutyakumachi
 if (f.katuraginomiya_fumi_toutyakumachi_satuki > 0){
 f.katuraginomiya_fumi_toutyakumachi_satuki = f.katuraginomiya_fumi_toutyakumachi_satuki - 1;
 }
+if (f.katuraginomiya_fumi_toutyakumachi_kaidan > 0){
+f.katuraginomiya_fumi_toutyakumachi_kaidan = f.katuraginomiya_fumi_toutyakumachi_kaidan - 1;
+}
 
 //◆藤枝宛 話題の手紙届くまでカウント減算処理
 if (f.hujieda_fumi_toutyakumachi_shumi > 0){
@@ -412,6 +421,9 @@ f.hujieda_fumi_toutyakumachi_sintya = f.hujieda_fumi_toutyakumachi_sintya - 1;
 }
 if (f.hujieda_fumi_toutyakumachi_satuki > 0){
 f.hujieda_fumi_toutyakumachi_satuki = f.hujieda_fumi_toutyakumachi_satuki - 1;
+}
+if (f.hujieda_fumi_toutyakumachi_kaidan > 0){
+f.hujieda_fumi_toutyakumachi_kaidan = f.hujieda_fumi_toutyakumachi_kaidan - 1;
 }
 [endscript]
 ;↓◆イベント判定処理を見るための変数をセット

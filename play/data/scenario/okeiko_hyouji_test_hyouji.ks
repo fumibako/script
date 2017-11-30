@@ -37,12 +37,12 @@
 藤枝好感度=[emb exp="f.para_hujieda_koukando"],
 [endif]
 
-藤枝ルート(1○,0×)=[emb exp="f.hujieda_au"],箏回数=[emb exp="f.para_shujinkou_koto_kaisuu"][r]
+;藤枝ルート(1○,0×)=[emb exp="f.hujieda_au"],箏回数=[emb exp="f.para_shujinkou_koto_kaisuu"][r]
 
 [if exp="Number.isFinite(f.para_zaizen_koukando) == false"]
 [resetfont]
 [font color=red size=15]
-財前好感度=[emb exp="f.para_zaizen_koukando"]
+;財前好感度=[emb exp="f.para_zaizen_koukando"]
 好感度に数値以外が代入されています。
 [resetfont]
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="200" x=750 y=0 color=white]
@@ -51,9 +51,11 @@
 財前好感度=[emb exp="f.para_zaizen_koukando"],
 [endif]
 [font color=0x664f44]
-財前ルート(1○,0×)=[emb exp="f.zaizen_au"][r]
-イベント(1表示,0非表示)=[emb exp="tf.event_hyouji"]
-
+;財前ルート(1○,0×)=[emb exp="f.zaizen_au"][r]
+;イベント(1表示,0非表示)=[emb exp="tf.event_hyouji"]
+f.sijyou_fumi_toutyakumachi_kaidan=[emb exp="f.sijyou_fumi_toutyakumachi_kaidan"]
+f.sijyou_event6=[emb exp="f.sijyou_event6"]
+f.fumi_wadai_toutyakumachi=[emb exp="f.fumi_wadai_toutyakumachi"]
 ;↓他ルートテスト用に準備中です
 ;攻略対象名テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_oaite_name_fumi_hensin_speed"],好感度[emb exp="f.para_oaite_name_koukando"][r]
 

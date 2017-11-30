@@ -364,6 +364,7 @@ if(f.sijyou_fumi_toutyakumachi_kaidan > 0)f.sijyou_fumi_toutyakumachi_kaidan = 0
 if(f.sijyou_fumi_toutyakumachi_dokusho > 0)f.sijyou_fumi_toutyakumachi_dokusho = 0;
 if(f.sijyou_fumi_toutyakumachi_sports > 0)f.sijyou_fumi_toutyakumachi_sports = 0;
 if(f.sijyou_fumi_toutyakumachi_aburidasi > 0)f.sijyou_fumi_toutyakumachi_aburidasi = 0;
+if(f.sijyou_fumi_toutyakumachi_kaidan > 0)f.sijyou_fumi_toutyakumachi_kaidan = 0;
 sf.sijyou['fumi_hindo_week'] = 0;
 }
 [endscript]

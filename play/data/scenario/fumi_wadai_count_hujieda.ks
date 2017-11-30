@@ -342,6 +342,7 @@ if(f.hujieda_fumi_toutyakumachi_dokusho>0)f.hujieda_fumi_toutyakumachi_dokusho=0
 if(f.hujieda_fumi_toutyakumachi_sports>0)f.hujieda_fumi_toutyakumachi_sports=0;
 if(f.hujieda_fumi_toutyakumachi_sintya>0)f.hujieda_fumi_toutyakumachi_sintya=0;
 if(f.hujieda_fumi_toutyakumachi_satuki>0)f.hujieda_fumi_toutyakumachi_satuki=0;
+if(f.hujieda_fumi_toutyakumachi_kaidan>0)f.hujieda_fumi_toutyakumachi_kaidan=0;
 sf.hujieda['fumi_hindo_week']=0;
 }
 }
