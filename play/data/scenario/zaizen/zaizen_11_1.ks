@@ -24,13 +24,9 @@
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私はもっと財前様に認めてもらいたい）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
-;↓テスト一時
-テスト用にzaizen_11_1_2.ks分岐点へ飛びます。[p]
-@jump storage="zaizen/zaizen_11_1_2.ks" target=*seen_sentaku
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
@@ -88,7 +84,7 @@ jumpします。[p]
 
 [whosay name="ばあや" color="#916565"]
 「さ、お嬢様、出来ましたよ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -110,7 +106,7 @@ jumpします。[p]
 「お嬢様は、最近、雰囲気が変わられましたね。[r]
 [sp]楚々として初々しいのは変わりませんが、華やかな艶が加わったと[r]
 [sp]申しましょうか、殿方に恋をすると変わっていくのですね」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 #
@@ -146,7 +142,7 @@ jumpします。[p]
 
 #
 磯野は私の姿をみて、少し驚いたように目を見張った。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -192,7 +188,7 @@ jumpします。[p]
 「今日は一段と美しい装いをしていますね。[r]
 [sp]美しいというのは人から好まれますが、羽目を外さないように[r]
 [sp]してください」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -204,7 +200,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"]
 [財前通常]
 「男に言い寄られてもかわしてください……という意味です」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -256,7 +252,7 @@ jumpします。[p]
 [主人公目伏]
 #
 財前様は優雅な微笑みを浮かべ、社交性に富んだ様子だった。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 ;上に地の文が完成したので（セリフ）でも。（社交界～なのね）
@@ -266,7 +262,7 @@ jumpします。[p]
 [whosay name="パーティ客男性"]
 「縁談を進められていると聞きましたが、そちらの御令嬢が[r]
 [sp]婚約者ですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -286,7 +282,7 @@ jumpします。[p]
 ;全画面だと　――　会食が終わり余興の時間になる頃
 #
 そして、会食が終わり余興の時間になる頃――
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -305,7 +301,7 @@ jumpします。[p]
 「ええ、婚約者も同伴させてもよろしいですか？[r]
 [sp]彼女はこういった場は初めてなので、 一人にするのは[r]
 [sp]忍びないのですが……」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -323,7 +319,7 @@ jumpします。[p]
 [主人公目伏]
 [主人公口ほほえみ]
 「私なら大丈夫ですわ。 行ってきてくださいませ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -352,7 +348,7 @@ jumpします。[p]
 ;====================================================================================
 十分後――。[r]
 財前様が席を外されて、ぼんやりする。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 一人で知らない場所にいるというのは、寂しく不安な気持ちが広がる。[p]
@@ -368,7 +364,7 @@ jumpします。[p]
 
 [whosay name="パーティ客男性"]
 「ちょっとぐらい構わないでしょう？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 #
@@ -400,7 +396,7 @@ jumpします。[p]
 
 [whosay name="？？？"]
 「おやめなさい！ 彼女は嫌がっているでしょう！」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公効果消]
@@ -419,7 +415,7 @@ jumpします。[p]
 [whosay name="独逸大使夫人"]
 「お連れの方はいらっしゃらないの？[r]
 [sp]貴方のように可憐な方が、一人でいるのは危険ですよ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -450,7 +446,7 @@ jumpします。[p]
 私は一礼をして彼女を見る。[p]
 [主人公目パチ1回]
 彼女の顔立ちは、どことなく財前様と似ていた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -469,7 +465,7 @@ jumpします。[p]
 [whosay name="独逸大使夫人"]
 「そう、[名字]様とおっしゃるのね。[r]
 [sp]お連れの方が戻るまで、私がついていましょうか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -497,7 +493,7 @@ jumpします。[p]
 
 #
 彼女は目を見開いて財前様を見つめる。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公眉下げ下]
@@ -510,7 +506,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"]
 「その名で呼ばないで下さい、不快です。[r]
 [sp]独逸大使夫人、よくこの国に戻ってこられましたね」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -528,7 +524,7 @@ jumpします。[p]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様のお母様！？　似ていると思ったけれど）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -546,7 +542,7 @@ jumpします。[p]
 
 [whosay name="財前母"]
 「ごめんなさいね、失礼します」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

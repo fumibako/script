@@ -22,7 +22,7 @@
 #
 
 毎朝、一番最初に新聞を読むのが日課になった。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -38,7 +38,7 @@
 「磯野、私に新聞を読ませて頂戴」[p]
 #
 磯野は頷き、新聞を差し出した。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [whosay name="磯野" color="dimgray"]
@@ -50,7 +50,7 @@
 「なにかあったのですね！」[p]
 #
 私は急いで新聞に目を通した。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 ;【SE】紙に触れる（パラリ）
@@ -77,7 +77,7 @@
 企業と癒着し、業績が悪化した企業へも[r]
 貸し付けを続けた。[r]
 また、放漫に投資したことで、不良債権を抱えた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -118,7 +118,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様はどうしていらっしゃるかしら？[r]
 [sp]多分、すごく疲れていらっしゃるのではないかしら）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -139,7 +139,7 @@
 #
 新聞をめくり、他の記事にも目を通していく。[r]
 『世の中に一言』という投稿者欄が目に入った。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -160,7 +160,7 @@
 [主人公通常]
 「磯野、[r]
 [sp]出来るだけ沢山の新聞社の新聞を集めてもらえるかしら？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -181,7 +181,7 @@
 [主人公口通常]
 「新聞社へのお手紙は、旦那様と、よくご相談の上になさって[r]
 [sp]ください」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

@@ -37,7 +37,7 @@
 
 [whosay name="女中"]
 「美彬様、新聞をどうぞ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -83,7 +83,7 @@ jumpします。[p]
 #
 主要な各新聞社の記事をチェックする為、朝一番に新聞を読む習慣と[r]
 なっている。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -125,7 +125,7 @@ jumpします。[p]
 多くの不良債権をかかえた多くの銀行に[r]
 預金者は自分の預金まで奪われる不安に駆られ、[r]
 憤るのは当然の事です
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -165,7 +165,7 @@ jumpします。[p]
 [財前驚き]
 [whosay name="財前美彬" color="#7a65b2"]
 （文章の雰囲気が[名前]さんらしい）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -175,7 +175,7 @@ jumpします。[p]
 #
 そして複数の新聞が読者欄に彼女の投稿した記事を[r]
 載せていた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -191,7 +191,7 @@ jumpします。[p]
 [財前目閉じ]
 [whosay name="財前美彬" color="#7a65b2"]
 「……[名前]さん」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

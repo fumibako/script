@@ -22,7 +22,7 @@
 「号外！　号外！[r]
 [sp]海軍高官贈賄事件に続き、大蔵大臣の金融不安を露呈した発言！[r]
 [sp]さあ、新聞を買った買った！」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -45,7 +45,7 @@
 #
 すぐ近くの男性が、新聞を丸めて投げた新聞の号外が[r]
 私の足元に転がってきた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -79,7 +79,7 @@
 [sp]衆議院予算委員会での大蔵大臣の[r]
 「志井銀行がとうとう倒産した」[r]
 という発言が波紋を呼び今、金融不安が表面化している。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -112,7 +112,7 @@
 「取り付け騒ぎですって？ こんな事って……」[p]
 
 （財前様の銀行は、どうなっているのかしら？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -134,7 +134,7 @@
 
 [whosay name="新聞社社員"]
 「……営業妨害するつもりか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -185,7 +185,7 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「車で移動していたのですが、貴方の姿が見えましたので[r]
 [sp]立ち寄っただけです」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [財前目にこ]
@@ -215,7 +215,7 @@
 ;【立ち絵】主人公：目伏せ頬染　、両手を頬に
 [主人公困り]
 （見られていたのね……恥ずかしい。 穴があったら入りたいわ）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -232,7 +232,7 @@
 [whosay name="財前美彬" color="#7a65b2"]
 「そこの君、新聞を売るのを止めなさい！[r]
 [sp]これ以上、販売するなら新聞社を訴えます」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -254,7 +254,7 @@
 [fadeoutbgm time=3000]
 #
 すっと新聞社員が青ざめて立ち去った。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -304,7 +304,7 @@
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
 「さて、何から知りたいですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -322,7 +322,7 @@
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「財前様の銀行はどうですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -339,7 +339,7 @@
 
 [主人公目伏]
 （やはり大変なのだわ。　銀行全体の信用が落ちているのね）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

@@ -77,7 +77,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……帰りません。 お母様は私を助けて下さったのです。[r]
 [sp]私、心配ですので様子を見に行きます！」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -102,7 +102,7 @@ jumpします。[p]
 ;【立ち絵】主人公：憂い
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「失礼します。 [名字]です。 入っていいですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -126,7 +126,7 @@ jumpします。[p]
 
 #
 財前様のお母様は泣いておられたようで、目が赤かった。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -157,7 +157,7 @@ jumpします。[p]
 [主人公目伏]
 「いえ、仕方ないのですよ。[r]
 [sp]貴方はアルベルトの婚約者でしたのね」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -168,7 +168,7 @@ jumpします。[p]
 ;【立ち絵】主人公：通常
 [主人公通常]
 「ところでアルベルトというのは、財前様の名前ですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -182,7 +182,7 @@ jumpします。[p]
 「財前と一緒に考えました。[r]
 [sp]彬は内容と外観が調和しているさま、[r]
 [sp]アルベルト・美彬で、 輝ける・高貴で美しく調和する人」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -206,7 +206,7 @@ jumpします。[p]
 [主人公通常]
 「ねえ、[名字]さん、昔話に付き合ってくれませんか？[r]
 [sp]誰かに懺悔を聞いてほしいの」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -240,7 +240,7 @@ jumpします。[p]
 [sp]父は私を自分の部下と結婚させることを[r]
 決めていて私もその事に[r]
 何の疑問も抱いていませんでしたわ。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -298,7 +298,7 @@ jumpします。[p]
 
 [whosay name="財前母"]
 「そして私達は、駆け落ちすることにしたのです」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -363,7 +363,7 @@ jumpします。[p]
 [whosay name="財前母"]
 「アルベルトを身ごもったのは、 その数年後です。[r]
 [sp]私達は話し合った結果、財前の実家を頼る事にしました」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -399,7 +399,7 @@ jumpします。[p]
 [sp]箸の使い方から[ruby text=いち]一から指導され、何から[r]
 何まで私を叱りました。[r]
 アルベルトを産んでからもそれは変わらなかった。[r]
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [sp]そして、アルベルトが[ruby text=さん]三歳になったときでした。[r]
@@ -441,7 +441,7 @@ jumpします。[p]
 #
 涙を流しながら、そう彼女は締めくくった。[r]
 私は、彼女の手を取った。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -471,7 +471,7 @@ jumpします。[p]
 [whosay name="財前母"]
 「ええ、ずっと悔やんでました。[r]
 [sp]でも、あの子は私を許さないでしょう」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -513,7 +513,7 @@ jumpします。[p]
 #
 振り向くと財前様がドアを開けて立っていた。[r]
 そして、お母様に視線を向ける。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -541,7 +541,7 @@ jumpします。[p]
 「私は、祖母に貴方の悪口を言い聞かされて育ってきましたし[r]
 [sp]少々偏見があったことは認めましょう」
 [主人公眉下げ下]
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -569,7 +569,7 @@ jumpします。[p]
 [財前伏目パチ1回]
 「ええ、父は貴方の事を許しているようです。[r]
 [sp]だが、私の気持ちを考えた事はありますか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -591,7 +591,7 @@ jumpします。[p]
 [財前口通常]
 私は思わず財前様の手を取った。[r]
 そうしないと財前様が消えてしまいそうだと思ったから。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 ;そうしないと
@@ -607,7 +607,7 @@ jumpします。[p]
 [財前困り]
 「貴方は私を哀れむ気ですか？[r]
 [sp]いっそ惨めな気分です。[sp]やめてください」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 #
@@ -617,7 +617,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 （まだ、私の言葉は届くのかしら）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -640,7 +640,7 @@ jumpします。[p]
 [財前目閉じ]
 財前様は私の手をぎゅっと握った。[r]
 そして苦悩するように目を閉じた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -653,7 +653,7 @@ jumpします。[p]
 「ええ、私もいつまでも子供ではないです。[r]
 [sp]私も意固地に貴方を避けたり傷つけるのも、これまでにします。[r]
 [sp]……私も私でいる為に貴方を許します」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -669,7 +669,7 @@ jumpします。[p]
 [whosay name="財前母"]
 「ありがとう。 [名字]さんも、[r]
 [sp]いえ[名前]さんと呼んでもいいかしら？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

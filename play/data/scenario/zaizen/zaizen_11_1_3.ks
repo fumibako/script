@@ -67,7 +67,7 @@ jumpします。[p]
 [財前冷ややか]
 [whosay name="財前美彬" color="#7a65b2"]
 「[名前]さん、私の言いたいことは分ってますか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -82,7 +82,7 @@ jumpします。[p]
 [財前ため息]
 [whosay name="財前美彬" color="#7a65b2"]
 「分っているなら、 なぜ母を追いかけたのですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -99,7 +99,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"]
 [財前不快]
 「お人よしですね」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -118,7 +118,7 @@ jumpします。[p]
 #
 財前様は考え込むように暫く黙っていた。[r]
 私は黙って財前様を見つめ、次の言葉を待っていた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -138,7 +138,7 @@ jumpします。[p]
 「驚く事ですか？　貴方を手放すには惜しいと思います。[r]
 [sp][名前]さんは芯も強い。[r]
 [sp]祖母と付き合うには貴方ぐらいの方が丁度いい」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [財前通常]
@@ -168,7 +168,7 @@ jumpします。[p]
 [whosay name="財前母"]
 「良かった。　[名前]さん、本当にありがとう。[r]
 [sp]……貴方達も一曲踊ってはどうかしら？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -183,7 +183,7 @@ jumpします。[p]
 [財前通常]
 「こじれるかも知れない原因を作ってしまったんですもの。[r]
 [sp]貴方達に、もっと親睦を深めて欲しいの」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -197,7 +197,7 @@ jumpします。[p]
 「アルベルトのリードは上手よ。[r]
 [主人公口通常]
 [sp][名前]さんも簡単なステップぐらいなら、すぐ覚えられるでしょう」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -217,7 +217,7 @@ jumpします。[p]
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
 「私は貴方に対してわだかまりが、完全に消えた訳ではありません」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -232,7 +232,7 @@ jumpします。[p]
 [財前通常]
 #
 今度は財前様が私の手を取り、私達は手を繋ぐ。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -253,7 +253,7 @@ jumpします。[p]
 #
 階段を下り、パーティ会場に戻る。[r]
 まだ余興の時間は、続いていて皆は歓談したり、ダンスを踊っていた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -303,7 +303,7 @@ jumpします。[p]
 ;財前様のリードは完璧だった。[r]
 ;私はぎこちないながらも、足を動かし姿勢を整え、なんとか[r]
 ;ついていった。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -361,7 +361,7 @@ jumpします。[p]
 ;【立ち絵】財前：微笑み
 [whosay name="財前美彬" color="#7a65b2"]
 「そう緊張することはないですよ。 初めてにしては上出来でしたよ」[p]
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

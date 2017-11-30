@@ -27,7 +27,7 @@
 
 [whosay name="女中"]
 「若旦那様、今朝の新聞と、[名字]様からの手紙が届いております」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -55,7 +55,7 @@
 [r]
 [sp]財前様はお手紙にはよく私の考えを尋ねる事が[r]
 多くて私も色々な事について深く考えるようになりました。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 ;自動で改ページするので分けます
@@ -81,7 +81,7 @@
 （便宜上、妻という者も必要と思うようになって、何人かと手紙を[r]
 [sp]交わしたが、彼女は芯がある。[r]
 [sp]媚びるでもなく、真面目に返している）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -93,7 +93,7 @@
 
 [whosay name=財前父"]
 「どうだ？ その手紙の相手とは長く手紙を交わせそうか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -105,7 +105,7 @@
 [whosay name=財前父"]
 「ああ。 気の合う友人の御令嬢だよ。[r]
 [sp]今度こそ、お前が結婚すると期待している」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -117,7 +117,7 @@
 [whosay name="財前美彬" color="#7a65b2"]
 （このまま私の手紙を真剣に書いてくれる相手なら[r]
 [sp]会ってみてもいいかもしれない）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -131,7 +131,7 @@
 [whosay name="財前美彬" color="#7a65b2"]
 （華族であり、貞淑で見た目がよけれはそれでいい。[r]
 [sp]だが母や祖母のような者も十分だ）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

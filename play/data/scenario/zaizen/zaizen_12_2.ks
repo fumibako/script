@@ -21,7 +21,7 @@
 ;【立ち絵】主人公：真剣
 #
 私は、金融関係の本や新聞を沢山集めて読んだ。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -46,7 +46,7 @@
 [主人公目閉じ]
 「それでも財前様が立ち向かっているのです。[r]
 [sp]何か私にもできる事があるかもしれません……」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -61,7 +61,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 「それはどういう意味ですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [whosay name="磯野"]
@@ -87,7 +87,7 @@
 「正論ですが、[r]
 [sp]庶民の生活というのはお嬢様が思っているより悪いものでございます。[r]
 [sp]加えて、教養がある者も少ないのです」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -105,7 +105,7 @@
 [whosay name="磯野"]
 「分りました、[r]
 [sp]少し長い話になりますがよろしいでしょうか」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

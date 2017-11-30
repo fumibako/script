@@ -24,7 +24,7 @@
 [主人公口ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （なんだか最近財前様のお手紙の感じが変わったわ）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -71,7 +71,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [r]
 [sp]母を許そうと思う日が来るとは思っても[r]
 みませんでした。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [sp]貴方のお節介な部分が私に移ったのでしょうか。[r]

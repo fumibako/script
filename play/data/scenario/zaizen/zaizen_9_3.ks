@@ -19,7 +19,7 @@
 ;=====================ここからお芝居の幕引きです===============================
 
 ――ついに、顔合せ当日となった。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [if exp="sf.BGM=='ON'"]
@@ -93,7 +93,7 @@ jumpします。[p]
 [主人公照れ目普通]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、ご準備はよろしいですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -126,7 +126,7 @@ jumpします。[p]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ほう、[名前]。 なかなかの淑女に見えるぞ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -160,7 +160,7 @@ jumpします。[p]
 （いよいよ財前様にお会いするのだわ。
 [r]
 [sp]粗相をしてしまわないかしら……不安だわ）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -192,7 +192,7 @@ jumpします。[p]
 [r]
 周囲の景色はまるで目に入らない。[r]
 私はひたすら父の背中を見つめて、足を進めた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -245,7 +245,7 @@ jumpします。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様とそのお父様だわ）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -264,7 +264,7 @@ jumpします。[p]
 [主人公目伏]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （この方が、財前様……）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -276,7 +276,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"]
 「[名字]様、お久しぶりです。[r]
 [sp]この度はご息女との縁談の機会を与えて頂き、深くお礼を申し上げます」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -293,7 +293,7 @@ jumpします。[p]
 [sp]お姿を見てお声を聞けるだけでも、
 [主人公口ほほえみ]
 嬉しい……）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -315,7 +315,7 @@ jumpします。[p]
 
 #
 財前様が頭を下げ、そして私に目を向けた。[r]――視線が合う……けれど碧い瞳はどこか醒めていた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -327,7 +327,7 @@ jumpします。[p]
 財前様の冷ややかな視線に、浮かれた気持ちが沈んでいく。[p]
 
 私を見て期待してた程でもないけれど、想定以下でもないと……そんな様子だ。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -339,7 +339,7 @@ jumpします。[p]
 ;【立ち絵】財前：通常
 [財前通常]
 「ご息女を紹介頂いてもよろしいでしょうか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -351,7 +351,7 @@ jumpします。[p]
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「[名前]でございます」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 #
@@ -362,7 +362,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様とお見合いすると決めたのだから、少しでも親しくなれるように[r]
 [sp]努力しましょう）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -382,7 +382,7 @@ jumpします。[p]
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様は、気遣いや礼儀正しさを忘れない人なんだわ）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 ;【立ち絵】主人公：微笑み
@@ -400,7 +400,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"] 
 「いえ、[r]
 [sp][名前]さんが控えめな女性で、私は好ましいと思っています」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [財前目パチ1回]
@@ -413,7 +413,7 @@ jumpします。[p]
 （私を試しているのだわ……）[p]
 #
 財前様の冷静な様子からそう伺える。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公伏目パチ1回]
@@ -423,7 +423,7 @@ jumpします。[p]
 [主人公目通常]
 [主人公口開]
 「礼儀正しく真面目で、とても冷静な方だと思いました」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公口通常]
@@ -434,7 +434,7 @@ jumpします。[p]
 [財前口微笑み]
 #
 すると財前様は一応満足したように頷く。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -454,7 +454,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"]
 「[名字]様、[r]
 [sp]少し[名前]さんと、庭を歩いてもいいでしょうか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -478,7 +478,7 @@ jumpします。[p]
 
 [主人公口通常]
 私は財前様が歩調を合わせてくれている事に気づいた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 ;【立ち絵】主人公：驚き
@@ -511,7 +511,7 @@ jumpします。[p]
 
 #
 招かれた位置は庭が丁度よく見渡せる位置だった。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 #
@@ -521,7 +521,7 @@ jumpします。[p]
 [主人公照れ目普通]
 「私は、この料亭は初めてなので知りませんが、[r]
 [sp]財前様は、よくいらっしゃるのですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -542,7 +542,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"]
 「……言っておきたいことがあります。[r]
 [sp]私との縁談に恋愛などを期待はしないで頂きたい」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -561,7 +561,7 @@ jumpします。[p]
 「何故ですか？　[r]
 [sp]私は財前様と縁談を進めるつもりです。[r]
 [sp]お互いに理解し合い、結婚をしたいと思っています！」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -574,7 +574,7 @@ jumpします。[p]
 「ですが私は、妻となる方には華族である地位、[r]
 [sp]器量、貞淑さしか求めてません。[r]
 [sp]それ以外の好意もわずらわしい」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -594,7 +594,7 @@ jumpします。[p]
 [財前通常]
 [whosay name="財前美彬" color="#7a65b2"]
 「ええ、申し訳ありませんが、最初に話しておくべきと思ったので」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公目伏]
@@ -609,7 +609,7 @@ jumpします。[p]
 「傷ついた顔をされて……。[r]
 [sp]ですが、貴方は私が出会った婚約者候補の中でも[r]
 [sp]とても理想的な方だとは思っています」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -624,7 +624,7 @@ jumpします。[p]
 [whosay name="財前美彬" color="#7a65b2"]
 「割り切って結婚した方が、恋愛で結婚するより長続きします。[r]
 [sp]貴方も大人になられるとよいでしょう」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -639,7 +639,7 @@ jumpします。[p]
 私の気持ちも気遣うけれど、[r]
 あくまで、冷静に拒絶する言葉を伝える財前様に[r]
 私は悲しみを覚えた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -670,7 +670,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「少し慣れない場で疲れただけですわ[r]
 [sp]……お父様。そろそろ、お[ruby text=いとま]暇しませんか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公目閉]
@@ -684,7 +684,7 @@ jumpします。[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「とはいえ[名前]、美彬君は立場上、夜会やパーティに呼ばれることも多い、[r]
 [sp]今から慣れておく方がよかろう」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

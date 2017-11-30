@@ -21,7 +21,7 @@
 #
 町は明るい活気を取り戻し、行きかう人々の表情は落ち着いている。[p]
 私は見知った姿を見かけて声を掛けた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -79,7 +79,7 @@ jumpします。[p]
 「ええ。[r]
 [sp]そういえば、この度の金融恐慌の件では財前様が大活躍なさった[r]
 [sp]そうね！」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -100,7 +100,7 @@ jumpします。[p]
 [whosay name="三宮　時子" color="#c25232"]
 「ええ、今回の活躍もあって[r]
 [sp]町での財前様の銀行はうなぎのぼりの評判なのですって」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -138,7 +138,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、行ってきます。[r]
 [sp]時子さんにも久しぶりに会えて嬉しかったです」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -166,7 +166,7 @@ jumpします。[p]
 #
 年頃の女性が私の視線に気づき、目が合う。[r]
 私は思わず視線をそらした。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -233,7 +233,7 @@ jumpします。[p]
 [財前目パチ1回]
 「ええ、以前お手紙の相手の一人でした。[r]
 [sp]まあ、彼女やその家族は、縁談で体面を保つのを嫌いましたが」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -255,7 +255,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公憂い]
 「なんでもありません」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 （そうだわ。 折角お会いできたのに、こんな気持ちになるなんて……）[p]
@@ -291,7 +291,7 @@ jumpします。[p]
 [財前口笑み]
 「貴方は本当にまだ感情が表に出る人ですね。[r]
 [sp]ほほえましいと思いますよ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

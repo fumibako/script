@@ -21,7 +21,7 @@
 ;【立ち絵】主人公：真剣
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （今日は財前様と、 ゆっくりお話できるわ……）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公目閉じ]
@@ -64,7 +64,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [r]
 [sp]さて、この度、[名前]さんと薔薇園の散策をしたく手紙を[r]
 出しました。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -131,7 +131,7 @@ jumpします。[p]
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様。 財前様がお見えになりました」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 #
@@ -166,7 +166,7 @@ jumpします。[p]
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
 「今日は少し風が冷たい。 寒くありませんか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -175,7 +175,7 @@ jumpします。[p]
 [主人公目閉じ]
 [主人公眉下げ下]
 「いいえ、……それよりお話があります」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -191,7 +191,7 @@ jumpします。[p]
 [主人公口開]
 「私は、言葉の駆け引きは苦手なので、はっきり言いますわ。[r]
 [sp]どうして恋愛を[ruby text=わずら]煩わしいと思っていらっしゃるのですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -206,7 +206,7 @@ jumpします。[p]
 [主人公憂い]
 「私が知りたいのです。 家族になるんですもの。[r]
 [sp]貴方のお母様に関係あることなのですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公口通常]
@@ -220,7 +220,7 @@ jumpします。[p]
 ;【立ち絵】主人公：真剣
 「いえ、お父様からではありません。 少し噂を聞いた程度です。[r]
  [sp]ですが、貴方の口から聞きたいのです」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -238,7 +238,7 @@ jumpします。[p]
 [財前冷ややか]
 「貴方が恋愛を望むなら、私との縁談を今から断っても構わない。[r]
 [sp]今なら体面を傷つける事もなく無効にできます」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -252,7 +252,7 @@ jumpします。[p]
 [財前目閉じ]
 [財前口開]
 「さあ？ 私を冷たいと感じますか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [主人公憂い]
@@ -272,7 +272,7 @@ jumpします。[p]
 [財前冷ややか]
 「ああ、生い立ちについての同情は不要です。[r]
 [sp]母の事は恥ですが、今は何とも思っていないですから」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -290,7 +290,7 @@ jumpします。[p]
 [財前冷ややかな微笑み]
 「ですが素直で物怖じしない所は気に入っています。[r]
 [sp]将来、化けるかもしれませんのでね」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -303,7 +303,7 @@ jumpします。[p]
 [財前ため息]
 ;【立ち絵】財前：ため息
 「全く、人の弱みに付け込む気ですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [財前通常]
@@ -316,7 +316,7 @@ jumpします。[p]
 
 「はい。今後、この話題には触れませんわ。[r]
 [sp]お約束します」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -335,7 +335,7 @@ jumpします。[p]
 ;【立ち絵】財前：通常
 「ああ、ところで急ですが[r]
 [sp][ruby text=じゅう]十[ruby text=いち]一月の初めの日曜日ですが予定を開けてくれませんか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -350,7 +350,7 @@ jumpします。[p]
 「懇意にしている財閥の総帥の会社の祝賀パーティがあります。[r]
 [sp]貴方のお父上から、そういった機会に同伴する約束を[r]
 [sp]したので出席して頂きます」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -359,7 +359,7 @@ jumpします。[p]
 [主人公驚]
 「！」[p]
 （まさかこんな早くにパーティの機会があるなんて）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [whosay name="財前美彬" color="#7a65b2"]
@@ -376,7 +376,7 @@ jumpします。[p]
 [主人公眉下げ下]
 「いいえ、出席いたします。[r]
 [sp]私は、貴方のお役に立ちたいと思っておりますの」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -402,7 +402,7 @@ jumpします。[p]
 「貴方もいずれ現実を知るでしょう。[r]
 [sp]今は、私も今の貴方で満足する事にします。[r]
 [sp]今日は風が冷たいので、そろそろ帰りましょう」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [財前通常]
@@ -423,7 +423,7 @@ jumpします。[p]
 [主人公憂い]
 #
 お見合いでは、財前様の後ろを歩いたけれど、今は隣を歩いている。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

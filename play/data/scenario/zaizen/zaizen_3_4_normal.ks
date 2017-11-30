@@ -121,7 +121,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]手紙を出せずにいる間も貴方から手紙を頂き[r]
 貴方温かく感じられるようになりました。[r]
 [sp]自分でも不思議な気分です。
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -150,7 +150,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様、入ってもよろしいでしょうか？」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -166,7 +166,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 #
 磯野は感嘆したようにため息をつく。
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -184,7 +184,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 [whosay name="磯野" color="dimgray"]
 「はい。　今、お着きになられましたので、お知らせにまいりました」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -213,7 +213,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「財前様。 お待たせしました」
-[autosave]
+
 [wait time=10]
 [p]
 #
@@ -229,7 +229,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name="財前美彬" color="#7a65b2"]
 「いや、そんなに待っていない。[r]
 [sp]それにしても女性というのは、瞬く間に変わっていくものですね」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -255,7 +255,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name="財前美彬" color="#7a65b2"]
 [財前微笑み]
 「さあ、車にのって下さい」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -287,7 +287,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name="財前母"]
 「まあ！[r]
 [sp]アルベルト、[名前]さん、よく来てくれたわ」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -306,7 +306,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】主人公：微笑み
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい、私もお招き頂いて光栄です」
-[autosave]
+
 [wait time=10]
 [p]
 [主人公目閉じ]
@@ -317,7 +317,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】主人公：真剣
 [主人公憂い]
 「あの……少し相談したい事がありますが、よろしいでしょうか？」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -349,7 +349,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [財前ため息]
 「そうですか……まあ構いません。[r]
 [sp]母上は今お手すきのようだし、話してくるといい」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -373,7 +373,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;====================================================================================
 #
 私はパーティ会場から少し離れた、応接室に通された。
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -398,7 +398,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name="財前母"]
 「貴方はアルベルトに恋している[r]
 [sp]……恋は気づいたら落ちているものよ」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -416,7 +416,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「それはただ単に[r]
 [sp]心を許してくれただけではないのですか？」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -428,7 +428,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いいえ、[r]
 [sp]財前様は最初に"恋愛を期待しないでほしい"と[ruby text=おっしゃ]仰っていました」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -444,7 +444,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 「それなら伝えてみたらどうかしら？[r]
 [sp]アルベルトも貴方に心を許している。[r]
 [sp]それは、貴方も分っている」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -461,7 +461,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 「[名前]さん勇気をだしていってごらんなさい。[r]
 [sp]今のままでは貴方も苦しいでしょう？」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -478,7 +478,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 [whosay name="財前母"]
 「頑張ってね」
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -513,7 +513,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 「あれは！」[p]
 #
 目を向けた先には、財前様と美しい女性が優雅にダンスを踊っていた。
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -523,7 +523,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 #
 私が茫然としていると、周囲の人たちから噂話が聞こえてきた。
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -538,7 +538,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （財前様は私の婚約者なのに……）
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -562,7 +562,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 私は思わず逃げだしていた。[p]
 広い庭でこっそり、白い花の咲く雪柳の下に私はうずくまると[r]
 涙をこらえるように口を押えた。
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -585,7 +585,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】財前：ため息
 [whosay name="財前美彬" color="#7a65b2"]
 「やっと見つけましたよ。[sp]一体どうしたというのです」
-[autosave]
+
 [wait time=10]
 [p]
 ;====================================================================================　
@@ -607,7 +607,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 #
 自分でもわかるほど、みっともないほど声が震えて、[r]
 今にも泣きそうなほどだ。
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -622,7 +622,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [主人公ポーズ通常]
 #
 財前様のお母様の声が、胸をよぎる。
-[autosave]
+
 [wait time=10]
 [p]
 
@@ -660,7 +660,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 #
 私は、精一杯の勇気を振り絞って言った。[r]
 けれど、その声は霞むように震えてしまっていた。
-[autosave]
+
 [wait time=10]
 [p]
 [財前目伏]
@@ -693,7 +693,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 #
 私は驚いて目を見開いた。[r]
 一瞬だったかもしれないけれど、長く感じられた。
-[autosave]
+
 [wait time=10]
 [p]
 

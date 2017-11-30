@@ -27,7 +27,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お手紙を交わしている相手の中で、一番興味を惹かれるのは[r]
 [sp]財前様だわ）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -110,7 +110,7 @@
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 [sp]読むたびに、私も自分を高めようと思いました」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -130,7 +130,7 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「美彬君は真面目で冷静沈着と聞くなぁ。[r]
 [sp][名前]に良い影響を与えてくれるのだね」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -145,7 +145,7 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「ほう、自分を振り返るのはいいことだ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -157,7 +157,7 @@
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「それは何よりだなぁ。近ごろの[名前]は、活き活きとお稽古しているね」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -174,13 +174,13 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「そうか。では、早速見合いの準備を進めよう。[r]
 [sp][名前]。美彬君に決めて、本当に良いのだね？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
 「磯野から聞いていると思うが、美彬君の母君は[ruby text="ド"]独[ruby text="イツ"]逸の方だ。[r]
 [sp]大変な苦労をして、少し神経質になったとも聞いている」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -194,7 +194,7 @@
 （財前様は本当に苦労されてきたんだわ）[p]
 （私にお支えできるかしら？[r]
 [sp]けれど一番知りたいと思ったのは財前様……お力になりたい）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -211,7 +211,7 @@
 「わかった。[r]
 [sp]この事はすぐに先方に伝えよう。[r]
 [sp][名前]からも手紙を送っておくといい」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 

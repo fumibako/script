@@ -21,7 +21,7 @@
 ;=====================ここからお芝居の幕引きです===============================
 #
 町の賑やかさも、今の私の心を慰めてくれない。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [if exp="sf.BGM=='ON'"]
@@ -71,7 +71,7 @@ jumpします。[p]
 
 #
 気づけば、時子さんが私の目の前にいた。
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 ;気づけば、時子さんが目の前にいた。[p]
@@ -84,7 +84,7 @@ jumpします。[p]
 ;【立ち絵】主人公：目伏せ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、結婚について考えてました」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -100,7 +100,7 @@ jumpします。[p]
 [whosay name="三宮　時子" color="#c25232"]
 「ええ、……まあ端麗な容姿をされてますわね。[r]
 [sp]それに新華族に叙せられ、身分も申し分のない方です」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -117,7 +117,7 @@ jumpします。[p]
 「悪い人選ではないと思いますわよ。[r]
 [sp]あの方は自分の妻になる方を[ruby text=ないがし]蔑ろにするような方でも[r]
 [sp]ありませんし」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -129,7 +129,7 @@ jumpします。[p]
 [whosay name="三宮　時子" color="#c25232"]
 「ええ、有名な方ですし、社交の場によくいらっしゃるので、[r]
 [sp]噂ぐらいなら」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -140,7 +140,7 @@ jumpします。[p]
 「よければ、お聞かせください」[p]
 [主人公目通常]
 （お手紙を交わしても、私は財前様の事をほとんど知らないわ）
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -152,7 +152,7 @@ jumpします。[p]
 [主人公憂い]
 「……財前様にお会いして、どうしていいか分からなくなって[r]
 [sp]しまいました」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -169,7 +169,7 @@ jumpします。[p]
 「では、私からは申し上げる訳にはいきません。[r]
 [sp]……そうですね。　財前様は、恋愛に嫌悪感を持たれても[r]
 [sp]おかしくありませんわ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 #
@@ -188,7 +188,7 @@ jumpします。[p]
 [whosay name="三宮　時子" color="#c25232"]
 「詳しくは、財前様に聞くといいでしょう。[r]
 [sp]道筋を立てて尋ねれば答えて頂けるはずです」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -201,7 +201,7 @@ jumpします。[p]
 [主人公憂い]
 [主人公汗]
 「そんなことありません。 取り付く島もありませんでした」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -215,7 +215,7 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
 「財前様の縁談についても詳しくご存じなのですか？」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -238,7 +238,7 @@ jumpします。[p]
 [主人公目伏]
 ;[主人公口通常]
 「……確かに律儀な方ですわ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 
@@ -253,7 +253,7 @@ jumpします。[p]
 
 [whosay name="三宮　時子" color="#c25232"]
 「ええ、[名前]さん、応援していますわ」
-[autosave]
+[autosave改]
 [wait time=10]
 [p]
 [fadeoutbgm time=3000]
