@@ -30,7 +30,7 @@
 	[eval exp="sf.ED_sijyou_bad=1"]
 	[endreplay] 
 [endif]
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true || tf.test_sijyou == true"]
 	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
 	@jump storage="event.ks" target=*event_ED
 [endif]

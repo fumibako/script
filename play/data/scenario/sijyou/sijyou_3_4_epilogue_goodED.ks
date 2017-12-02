@@ -304,12 +304,13 @@ $('.1_fore').empty();
 
 [イベントシーン終了・ＢＧＭ有]
 ;テストでもみれるように↑
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true || tf.test_sijyou == true"]
 ;ending処理
 ;goodエンディング時
 [eval exp="sf.ED_sijyou_good=1"]
 ;四条ルートをクリアした
 [eval exp="tf.ED_sijyou = 1"]
+[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
 
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 
