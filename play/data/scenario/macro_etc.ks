@@ -300,10 +300,14 @@ $('.loding_pic1').remove();
 ;メッセージ窓画像の仮表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [freeimage layer = 14]
 [chara_new name="message_bg" storage="toumei.gif"]
+[wait time=10]
 [chara_show left=1 top=391 layer=14 name="message_bg"]
+[wait time=10]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [eval exp="f.message_storage='message_bg/frame_brown.png'"]
+[wait time=10]
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
+[wait time=10]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 page=fore visible=true
@@ -432,10 +436,14 @@ $('.loding_pic1').remove();
 ;メッセージ窓画像の仮表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [freeimage layer = 14]
 [chara_new name="message_bg" storage="toumei.gif"]
+[wait time=10]
 [chara_show left=1 top=391 layer=14 name="message_bg"]
+[wait time=10]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [eval exp="f.message_storage='message_bg/frame_red.png'"]
+[wait time=10]
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
+[wait time=10]
 ;メッセージレイヤを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 @layopt layer=message0 page=fore visible=true

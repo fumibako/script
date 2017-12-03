@@ -258,11 +258,15 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;メッセージ窓画像の仮表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [freeimage layer = 14]
 [chara_new name="message_bg" storage="toumei.gif"]
+[wait time=10]
 [chara_show left=1 top=391 layer=14 name="message_bg"]
+[wait time=10]
 
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [eval exp="f.message_storage='message_bg/frame_red.png'"]
+[wait time=10]
 [chara_mod name="message_bg" storage=&f.message_storage time=1]
+[wait time=10]
 
 ;セーブ等ボタン配置
 [if exp="f.flag_replay == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
