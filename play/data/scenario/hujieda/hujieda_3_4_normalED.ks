@@ -320,6 +320,7 @@ $("kan").css('margin','auto');
 [wait time=100]
 ;ノーマルここまで
 [イベントシーン終了]
+[wait time=10]
 
 [if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true
@@ -337,15 +338,17 @@ $('.1_fore').remove();
 @jump storage="replay2.ks"
 [endif]
 
+[wait time=10]
 ;◆normalED終了処理へ
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true || tf.test_hujieda == true"]
 ;藤枝ルートをクリアした
 ;tweet表示
 [eval exp="tf.ED_hujieda = 1"]
+[wait time=10]
 [call storage="sijyou/01_tweet.ks"]
+[wait time=10]
 [藤枝ルート終了 end="normal"]
 [endif]
 
-[藤枝ルート終了 end="normal"]
 @jump storage="test_hujieda.ks"
 [s]
