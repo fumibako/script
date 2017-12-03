@@ -213,8 +213,11 @@ $('.1_fore').remove();
 @jump storage="replay2.ks"
 [endif]
 
+[wait time=10]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="sf.ED_katuraginomiya_bad=1"]
+[wait time=10]
+[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
 @jump storage="event.ks" target=*event_ED
 [else]
 [葛城宮ルート終了 end="bad"]

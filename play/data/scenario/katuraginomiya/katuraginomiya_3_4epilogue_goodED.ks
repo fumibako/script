@@ -494,6 +494,7 @@ $('.1_fore').empty();
 [endreplay]
 
 [if exp="f.flag_replay == true || f.event_replay == 'katuraginomiya'"]
+[wait time=10]
 [イベントシーン終了]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
@@ -501,15 +502,20 @@ $('.1_fore').empty();
 
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました(スクリプト担
 [if exp="f.okeiko_gamen == true"]
+[wait time=10]
 [イベントシーン終了・ＢＧＭ有]
 ;クレジット呼び出し。呼び出し位置は移動してください。
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
+[wait time=10]
 ;フラグ確認
 [葛城宮ルート終了 end="good"]
+[wait time=10]
 [eval exp="tf.ED_katuraginomiya = 1"]
 
+[wait time=10]
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
+[wait time=10]
 
 @jump storage="event.ks" target=*event_ED
 [endif]

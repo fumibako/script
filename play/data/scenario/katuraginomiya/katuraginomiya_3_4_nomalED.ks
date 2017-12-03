@@ -326,11 +326,15 @@ $('.1_fore').remove();
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
+[wait time=10]
 
 ;↓終了設定をありがとうございました。動作をシンプルにしたかったため、少し変更しました。マクロの動作がうまくいかない場合にまた変更する可能性があります(スクリプト担
 [if exp="f.okeiko_gamen == true"]
 ;葛城宮ルートをクリアした
 [eval exp="tf.ED_katuraginomiya = 1"]
+[wait time=10]
+[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
+
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
 [wait time=10]
