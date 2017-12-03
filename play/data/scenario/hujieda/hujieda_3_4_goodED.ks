@@ -552,10 +552,11 @@ $('.1_fore').remove();
 @jump storage="replay2.ks"
 [endif]
 
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true || tf.test_hujieda == true"]
 [イベントシーン終了・ＢＧＭ有]
+[wait time=10]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
-
+[wait time=10]
 [藤枝ルート終了 end="good"]
 ;藤枝ルート判定
 [eval exp="tf.ED_hujieda = 1"]
@@ -567,6 +568,7 @@ $('.1_fore').remove();
 TG.kag.ftag.startTag("cancelskip");
 f.skip=false;
 [endscript]
+[wait time=10]
 
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
