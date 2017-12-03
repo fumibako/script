@@ -759,8 +759,10 @@ $("kan").css('margin','auto');
 [主人公退場]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
+[wait time=10]
 
 [イベントシーン終了]
+[wait time=10]
 
 [if exp="f.flag_replay == true"]
 @layopt layer=29 visible=true
@@ -782,10 +784,14 @@ $('.1_fore').empty();
 [if exp="f.okeiko_gamen == true"]
 ;財前ルートをクリアした
 [eval exp="tf.ED_zaizen = 1"]
+[wait time=10]
 ;tweet表示
 [call storage="sijyou/01_tweet.ks"]
+[wait time=10]
 
+[wait time=10]
 [財前ルート終了 end="normal"]
+[wait time=10]
 
 @jump storage="event.ks" target=*event_ED
 [endif]
