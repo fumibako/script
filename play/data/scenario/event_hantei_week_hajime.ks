@@ -235,8 +235,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 ;◆黒田イベント判定
 ;=============================================
 *kuroda_event_hantei
-;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上かつ華道熟練度5以上なら1度だけ発生
-[if exp="(f.okeiko_month == 6 && f.okeiko_week == 4) && f.event_machi_kuroda[2] == 0 && f.para_kuroda_koukando > 3 && f.para_shujinkou_j_kadou >= 5"]
+;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上かつ華道熟練度3以上なら1度だけ発生
+[if exp="(f.okeiko_month == 6 && f.okeiko_week == 4) && f.event_machi_kuroda[2] == 0 && f.para_kuroda_koukando > 3 && f.para_shujinkou_j_kadou >= 3"]
 	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_02
 [endif]
 
@@ -327,7 +327,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 [endif]
 
 ;◆黒田イベント判定【分岐：badED】黒田ルートかつ12月3週になった時点で淑女度一定値未満好感度一定値未満又は麦の穂無しでbadED
-[if exp="(f.okeiko_month == 12 && f.okeiko_week == 3) && f.event_kuroda[10] == 0 && f.kuroda_au == 1 &&(f.para_shujinkou_shukujodo <= 40 ||f.para_kuroda_koukando <= 50 || f.event_machi_kuroda[2] == 0)"]
+[if exp="(f.okeiko_month == 12 && f.okeiko_week == 3) && f.event_kuroda[10] == 0 && f.kuroda_au == 1 && (f.para_shujinkou_shukujodo < 40 ||f.para_kuroda_koukando < 50 || f.event_machi_kuroda[2] == 0)"]
 	[eval exp="f.event_storage='kuroda_12_3_badED.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_12_3_badED'"]
 	[eval exp="f.event_type='talk'"]
@@ -335,8 +335,8 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆黒田イベント判定【分岐：normal/goodED】黒田ルートかつ12月3週になった時点で好感度一定値以上かつ麦の穂所持で1度だけ発生
-[if exp="(f.okeiko_month == 12 && f.okeiko_week == 3) && f.event_kuroda[11] == 0 && f.kuroda_au == 1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2] == 1"]
+;◆黒田イベント判定【分岐：normal/goodED】黒田ルートかつ12月3週になった時点で淑女度一定以上値好感度一定値以上かつ麦の穂所持で1度だけ発生
+[if exp="(f.okeiko_month == 12 && f.okeiko_week == 3) && f.event_kuroda[11] == 0 && f.kuroda_au == 1 && (f.para_shujinkou_shukujodo >= 40 && f.para_kuroda_koukando >= 50 && f.event_machi_kuroda[2] == 1)"]
 	[eval exp="f.event_storage='kuroda_12_3.ks'"]
 	[eval exp="f.event_target='*replay_kuroda_12_3'"]
 	[eval exp="f.event_type='talk'"]
