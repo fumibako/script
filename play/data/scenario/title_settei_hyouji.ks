@@ -2,6 +2,7 @@
 [position layer=message0 width=960 height=500 top=640 left=960 page=fore opacity=0]
 ;↓タイトルメニューから「戻る」際にボタンが重複表示になることを防止
 [cm]
+[freeimage layer = 2]
 [freeimage layer = 3]
 [freeimage layer = 4]
 [freeimage layer = 5]
@@ -23,6 +24,7 @@
 [iscript]
 //クリア回数：未定義時変数セット(test_sijyou.ksのスクリプトを一部使用させていただきました。◆B4nFWraU42さん、ありがとうございます)
 if (typeof sf.ending_Number_of_times === "undefined") {
+	sf.ending_Number_of_times = 0;
 	sf.ending_Number_of_times = sf.ED_kuroda_normal + sf.ED_kuroda_good + sf.ED_kuroda_bad;
 	sf.ending_Number_of_times = sf.ending_Number_of_times + sf.ED_sijyou_normal + sf.ED_sijyou_good + sf.ED_sijyou_bad;
 	sf.ending_Number_of_times = sf.ending_Number_of_times + sf.ED_zaizen_normal + sf.ED_zaizen_good + sf.ED_zaizen_bad2 + sf.ED_zaizen_bad1;
@@ -36,6 +38,11 @@ if (typeof f.katuraginomiya_fumi_toutyakumachi_kaidan === "undefined") {f.katura
 if (typeof f.hujieda_fumi_toutyakumachi_kaidan === "undefined") {f.hujieda_fumi_toutyakumachi_kaidan = -1;}
 if (typeof f.kuroda_fumi_toutyakumachi_kaidan === "undefined") {f.kuroda_fumi_toutyakumachi_kaidan = -1;}
 [endscript]
+;↓デバッグ用表示(通常はコメントアウトします)
+;@layopt layer=2 visible = true
+;[ptext layer=2 name=list page=fore text="sf.ending_Number_of_times=" x=10 y=10 size=15 color=navy visible=true]
+;[ptext layer=2 name=list page=fore text=&sf.ending_Number_of_times x=180 y=10 size=15 color=navy visible=true]
+
 ;◆↓背景切り替え時の効果を指定します。bgのデフォルトであるfadeinはcrossfadeと異なっていたのでchara_modのデフォルトであるcrossfadeを指定しています
 [eval exp="f.bg_method='crossfade'"]
 
