@@ -290,7 +290,7 @@
 $('.yuki').remove();
 [endscript]
 *seen_end
-[eval exp="sf.event_sijyou_1_3 = 1"]
+[eval exp="sf.event_sijyou_1_2 = 1"]
 ;¥¥¥¥¥¥¥¥イベント7おわり¥¥¥¥¥¥¥¥
 [イベントシーン終了]
 
