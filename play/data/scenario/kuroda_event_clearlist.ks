@@ -102,11 +102,11 @@ $(".fixlayer").css("opacity",0);
 [endif]
 ;================================ヒントの表示=======================================================
 [if exp="f.get_tips == 1"]
-[ptext name="tips" text="現在、ヒントの表示はオンです" layer=27 size=22 x=100 y=550 color=snow width=750]
+[ptext name="tips" text="現在、ヒント「有」です" layer=27 size=20 x=100 y=550 color=snow width=750]
 [wait time=50]
 ;※waitしないと書き換えられません！
 [else]
-[ptext name="tips" text="現在、ヒントの表示はオフです" layer=27 size=22 x=100 y=550 color=snow width=750]
+[ptext name="tips" text="現在、ヒント「無」です" layer=27 size=20 x=100 y=550 color=snow width=750]
 [wait time=50]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
@@ -679,11 +679,6 @@ if(f.get_tips == 2){
 }
 $("p.tips").text(tf.tips);
 [endscript]
-;↓デバッグ用表示(通常はコメントアウトします)
-;@layopt layer=2 visible = true
-;[ptext layer=2 name=list page=fore text="tf.tips=" x=10 y=10 size=15 color=white visible=true]
-;[ptext layer=2 name=list page=fore text=&tf.tips x=180 y=10 size=15 color=white visible=true]
-
 [endif]
 ;fixなのでreturnする
 [return]
