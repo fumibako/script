@@ -572,8 +572,9 @@ alert(f.para_sijyou_koukando);
 [glink target=test_page1 text="葛城宮nomak閉鎖" exp="sf.ED_katuraginomiya_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=black]
 [glink target=test_page1 text="藤枝bad1閉鎖" exp="sf.ED_hujieda_bad=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=black]
 [glink target=test_page1 text="藤枝bad2閉鎖" exp="sf.ED_hujieda_bad2=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=black]
-[glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=black]
-[glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=black]
+[glink target=test_page1 text="藤枝bad3閉鎖" exp="sf.ED_hujieda_bad3=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=black]
+[glink target=test_page1 text="藤枝nomal閉鎖" exp="sf.ED_hujieda_normal=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=black]
+[glink target=test_page1 text="藤枝good閉鎖" exp="sf.ED_hujieda_good=0" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=black]
 [glink target=no_page3 text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 graphic="select_waku_x500.png" font_color=black]
 @jump target=no1_common 
 [s]
