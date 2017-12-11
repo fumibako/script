@@ -79,7 +79,7 @@ jumpします。[p]
 
 [whosay name="三宮　時子" color="#c25232"]
 「[名前]さん、本当に雰囲気が変わられたわ。 所作が洗練されて、[r]
-[sp][ruby text=み]見[ruby text=と]惚れるしまうほどよ」[p]
+[sp][ruby text=み]見[ruby text=と]惚れてしまうほどよ」[p]
 
 ;【立ち絵】主人公：苦笑（頬染め）
 [whosay name=&sf.girl_namae color="#cf5a7f"]
