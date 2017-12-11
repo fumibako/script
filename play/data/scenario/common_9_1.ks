@@ -263,7 +263,7 @@ jumpします。[p]
 「[名前]、覚えているか？」[p]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「文矢が見合いをしたのは[ruby text=く]九[ruby text=がつ]月の終わり頃だった……」[p]
+「文矢が見合いをしたのは秋の頃だった……」[p]
 #
 [主人公目パチ1回]
 [wait time=10]
