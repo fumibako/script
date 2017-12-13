@@ -158,13 +158,13 @@ tf.hint10="四条様のルートに入り、その週まで進めてみましょ
 //11=1_3:sijyou_omake_kai.ks
 tf.hint11="四条様のルートに入り、その週まで進めてみましょう";
 //12=1_4:(f.okeiko_month == 1 && f.okeiko_week == 4) &&( f.para_shujinkou_j_kadou > 80 || f.sijyou_sobo == true )&& f.event_sijyou[13] == 0 && f.sijyou_au == 1
-tf.hint12="四条様のルートに入り、散策イベント九月四週を見るか華道熟練度を高くしてその週まで進めてみましょう";
+tf.hint12="四条様のルートに入り、散策イベント九月二週又は九月四週を見るか華道熟練度を高くしてその週まで進めてみましょう";
 //13=2_1華道教室:(f.okeiko_month == 2 && f.okeiko_week == 1) && f.para_shujinkou_j_kadou > 70 && f.event_sijyou[14] == 0 && f.sijyou_au == 1
 tf.hint13="四条様のルートに入り、華道熟練度を高くしてその週まで進めてみましょう";
 //14=sijyou_2_2_bazar_1.ks:f.event_sijyou_4 == 1 || f.event_sijyou_kai_jijyou == 1) && f.sijyou_sobo != true && f.para_shujinkou_j_reihou >= 10"]
-tf.hint14="四条様ルートで散策イベント九月四週は「見ない」で過ごしましょう。散策イベント十二月一週を見て、その週までに礼法のお稽古をある程度してみましょう";
+tf.hint14="四条様ルートで散策イベント九月二週と九月四週は「見ない」で過ごしましょう。散策イベント十二月一週を見て、その週までに礼法のお稽古をある程度してみましょう";
 //15=3_1華道展:(f.okeiko_month == 3 && f.okeiko_week == 1) && f.sijyou_sobo == true && f.event_sijyou[15] == 0 && f.sijyou_au == 1
-tf.hint15="四条様のルートに入り、散策イベント九月四週を見てからその週まで進めてみましょう";
+tf.hint15="四条様のルートに入り、散策イベント九月二週又は九月四週を見てからその週まで進めてみましょう";
 //散策
 //;sijyou_sansaku9.ks(見合い前なら一回発生子供達　気力が微多めに回復)
 tf.hint16="四～八月の期間中に散策へ出てみましょう";
@@ -212,13 +212,13 @@ tf.spoiler10="四条様のルートに入り、その週まで進めてみまし
 //11=1_3:sijyou_omake_kai.ks
 tf.spoiler11="四条様のルートに入り、その週まで進めてみましょう";
 //12=1_4:(f.okeiko_month == 1 && f.okeiko_week == 4) &&( f.para_shujinkou_j_kadou > 80 || f.sijyou_sobo == true )&& f.event_sijyou[13] == 0 && f.sijyou_au == 1
-tf.spoiler12="四条様のルートに入り、散策イベント九月四週を見るか華道熟練度を81以上にしてその週まで進めてみましょう";
+tf.spoiler12="四条様のルートに入り、散策イベント九月二週又は九月四週を見るか華道熟練度を81以上にしてその週まで進めてみましょう";
 //13=2_1華道教室:(f.okeiko_month == 2 && f.okeiko_week == 1) && f.para_shujinkou_j_kadou > 70 && f.event_sijyou[14] == 0 && f.sijyou_au == 1
 tf.spoiler13="四条様のルートに入り、華道熟練度を71以上にしてその週まで進めてみましょう";
 //14=sijyou_2_2_bazar_1.ks:f.event_sijyou_4 == 1 || f.event_sijyou_kai_jijyou == 1) && f.sijyou_sobo != true && f.para_shujinkou_j_reihou >= 10"]
-tf.spoiler14="四条様ルートで散策イベント九月四週は「見ない」で過ごしましょう。十一月一週に「～尋ねた」を選択するか散策イベント十二月一週を見て、その週までに礼法熟練度を10以上にしてみましょう";
+tf.spoiler14="四条様ルートで散策イベント九月二週と九月四週は「見ない」で過ごしましょう。十一月一週に「～尋ねた」を選択するか散策イベント十二月一週を見て、その週までに礼法熟練度を10以上にしてみましょう";
 //15=3_1華道展:(f.okeiko_month == 3 && f.okeiko_week == 1) && f.sijyou_sobo == true && f.event_sijyou[15] == 0 && f.sijyou_au == 1
-tf.spoiler15="四条様のルートに入り、散策イベント九月四週を見てからその週まで進めてみましょう";
+tf.spoiler15="四条様のルートに入り、散策イベント九月二週又は九月四週を見てからその週まで進めてみましょう";
 //散策
 //;sijyou_sansaku9.ks(見合い前なら一回発生子供達　気力が微多めに回復)
 tf.spoiler16="四～八月の期間中に散策へ出てみましょう";
@@ -248,7 +248,7 @@ tf.spoiler27="四条様のルートに入ってから、華道熟練度71以上�
 tf.spoiler_bad="十月三週に好感度40未満の場合、badエンドになります";
 tf.spoiler_bad2="ヒントbad2";
 tf.spoiler_normal="三月四週にgoodエンドの条件を満たさない状態で休憩するとnormalエンドになります";
-tf.spoiler_good="三月四週までに好感度と淑女度80以上、華道熟練度50以上、散策イベント九月四週を「見ている」状態にして休憩するとgoodエンドになります";
+tf.spoiler_good="三月四週までに好感度と淑女度80以上、華道熟練度50以上、散策イベント九月二週又は九月四週を「見ている」状態にして休憩するとgoodエンドになります";
 [endscript]
 
 [return]
