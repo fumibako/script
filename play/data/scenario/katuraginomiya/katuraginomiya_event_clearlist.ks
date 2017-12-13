@@ -99,11 +99,11 @@ $(".fixlayer").css("opacity",0);
 [endif]
 ;================================ヒントの表示=======================================================
 [if exp="f.get_tips == 1"]
-[ptext name="tips" text="現在、ヒントの表示はオンです" layer=27 size=22 x=100 y=550 color=snow]
+[ptext name="tips" text="現在、ヒント「有」です" layer=27 size=20 x=100 y=550 color=snow width=750]
 [wait time=50]
 ;※waitしないと書き換えられません！
 [else]
-[ptext name="tips" text="現在、ヒントの表示はオフです" layer=27 size=22 x=100 y=550 color=snow]
+[ptext name="tips" text="現在、ヒント「無」です" layer=27 size=20 x=100 y=550 color=snow width=750]
 [wait time=50]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
@@ -298,8 +298,8 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [image name="ending1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x7" y="&tf.end1_y" visible=true wait=true]
 [endif]
 [if exp="sf.ED_katuraginomiya_bad != 1"]
-;[button fix=true name="day,ending1,tips_btn" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint_bad"]
-[image name="day,ending1" storage="../image/day_bad1.png" layer=27 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
+[button fix=true name="day,ending1,tips_btn" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5" size=15 target="tips_label" exp="tf.tipsNo='_bad'"]
+;[image name="day,ending1" storage="../image/day_bad1.png" layer=27 x="&tf.x5" y="&tf.end1_y" visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -314,8 +314,8 @@ $(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [wait time=10]
 [endif]
 [if exp="sf.ED_katuraginomiya_normal != 1"]
-;[button fix=true name="day,ending3,tips_btn" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint_normal"]
-[image name="day,ending3" storage="../image/day_nomal.png" layer=27 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
+[button fix=true name="day,ending3,tips_btn" graphic="day_nomal.png" y="&tf.end2_y" x="&tf.x5" size=15 target="tips_label" exp="tf.tipsNo='_normal'"]
+;[image name="day,ending3" storage="../image/day_nomal.png" layer=27 x="&tf.x5" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".ending3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -330,8 +330,8 @@ $(".ending3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [wait time=10]
 [endif]
 [if exp="sf.ED_katuraginomiya_good != 1"]
-;[button fix=true name="day,ending4,tips_btn" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" size=15 target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint_good"]
-[image name="day,ending4" storage="../image/day_good.png" layer=27 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
+[button fix=true name="day,ending4,tips_btn" graphic="day_good.png" y="&tf.end2_y" x="&tf.x6" size=15 target="tips_label" exp="tf.tipsNo='_good'"]
+;[image name="day,ending4" storage="../image/day_good.png" layer=27 x="&tf.x6" y="&tf.end2_y" visible=true wait=true]
 [wait time=10]
 [iscript]
 $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
@@ -342,7 +342,7 @@ $(".ending4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 ;====================================================未判定====================================================================
 ;【１】
 [if exp="sf.event_katuragi_event_1 != 1"]
-[button fix=true name="day,katuragi_event_1,k_ev1,tips_btn" graphic="day6_2.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tips=tf.hint1"]
+[button fix=true name="day,katuragi_event_1,k_ev1,tips_btn" graphic="day6_2.png" target="tips_label" x=&tf.x1 y=&tf.y1 exp="tf.tipsNo=1"]
 ;[image name="day,katuragi_event_1,k_ev1" storage="../image/day6_2.png"  layer=27 x=&tf.x1 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -355,7 +355,7 @@ $(".katuragi_event_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 ;【２】
 ;katuragi_7_2 夢イベント
 [if exp="sf.event_katuragi_6_1 != 1"]
-[button fix=true name="day,katuragi_7_2,k_7_2,tips_btn" graphic="day7_2.png" target="tips_label" x=&tf.x1 y=&tf.y2 exp="tf.tips=tf.hint2"]
+[button fix=true name="day,katuragi_7_2,k_7_2,tips_btn" graphic="day7_2.png" target="tips_label" x=&tf.x1 y=&tf.y2 exp="tf.tipsNo=2"]
 ;[image name="day,katuragi_7_2,k_7_2" storage="../image/day7_2.png"  layer=27 x=&tf.x1 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -367,7 +367,7 @@ $(".katuragi_7_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 
 ;【３】
 [if exp="sf.event_katuragi_event_2 != 1"]
-[button fix=true name="day,katuragi_event_2,k_ev2,tips_btn" graphic="day7_4.png" target="tips_label" x=&tf.x1 y=&tf.y3 exp="tf.tips=tf.hint3"]
+[button fix=true name="day,katuragi_event_2,k_ev2,tips_btn" graphic="day7_4.png" target="tips_label" x=&tf.x1 y=&tf.y3 exp="tf.tipsNo=3"]
 ;[image name="day,katuragi_event_2,k_ev2" storage="../image/day7_4.png"  layer=27 x=&tf.x1 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -380,7 +380,7 @@ $(".katuragi_event_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 ;【４】
 ;◆8_2 katuragi_event_3 皇后様のお印入りのお茶事の招待状
 [if exp="sf.event_katuragi_event_3 != 1"]
-[button fix=true name="day,katuragi_event_3,k_ev3,tips_btn" graphic="day8_2.png" target="tips_label" x=&tf.x1 y=&tf.y4 exp="tf.tips=tf.hint4"]
+[button fix=true name="day,katuragi_event_3,k_ev3,tips_btn" graphic="day8_2.png" target="tips_label" x=&tf.x1 y=&tf.y4 exp="tf.tipsNo=4"]
 ;[image name="day,katuragi_event_3,k_ev3" storage="../image/day8_2.png"  layer=27 x=&tf.x1 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -392,7 +392,7 @@ $(".katuragi_event_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brigh
 
 ;【５】
 [if exp="sf.event_katuragi_9_1 != 1"]
-[button fix=true name="day,katuragi_9_1,k_9_1,tips_btn" graphic="day9_1.png" target="tips_label" x=&tf.x1 y=&tf.y5 exp="tf.tips=tf.hint5"]
+[button fix=true name="day,katuragi_9_1,k_9_1,tips_btn" graphic="day9_1.png" target="tips_label" x=&tf.x1 y=&tf.y5 exp="tf.tipsNo=5"]
 ;[image name="day,katuragi_9_1,k_9_1" storage="../image/day9_1.png"  layer=27 x=&tf.x1 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -404,7 +404,7 @@ $(".katuragi_9_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 
 ;【６】
 [if exp="sf.event_katuragi_9_3 != 1"]
-[button fix=true name="ay,katuragi_9_3,k_9_3,tips_btn" graphic="day9_3.png" target="tips_label" x=&tf.x1 y=&tf.y6 exp="tf.tips=tf.hint6"]
+[button fix=true name="ay,katuragi_9_3,k_9_3,tips_btn" graphic="day9_3.png" target="tips_label" x=&tf.x1 y=&tf.y6 exp="tf.tipsNo=6"]
 [image name="day,katuragi_9_3,k_9_3" storage="../image/day9_3.png"  layer=27 x=&tf.x1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -416,7 +416,7 @@ $(".katuragi_9_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 
 ;【７】
 [if exp="sf.event_katuragi_9_4 != 1"]
-[button fix=true name="day,katuragi_9_4,k_9_4,tips_btn" graphic="day9_4.png" target="tips_label" x=&tf.x1 y=&tf.y7 exp="tf.tips=tf.hint7"]
+[button fix=true name="day,katuragi_9_4,k_9_4,tips_btn" graphic="day9_4.png" target="tips_label" x=&tf.x1 y=&tf.y7 exp="tf.tipsNo=7"]
 ;[image name="day,katuragi_9_4,k_9_4" storage="../image/day9_4.png"  layer=27 x=&tf.x1 y=&tf.y7 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -428,7 +428,7 @@ $(".katuragi_9_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 
 ;【８】
 [if exp="sf.event_katuragi_10_2 != 1"]
-[button fix=true name="day,katuragi_10_2,k_10_2,tips_btn" graphic="day10_2.png" target="tips_label" x=&tf.x1 y=&tf.y8 exp="tf.tips=tf.hint8"]
+[button fix=true name="day,katuragi_10_2,k_10_2,tips_btn" graphic="day10_2.png" target="tips_label" x=&tf.x1 y=&tf.y8 exp="tf.tipsNo=8"]
 ;[image name="day,katuragi_10_2,k_10_2" storage="../image/day10_2.png"  layer=27 x=&tf.x1 y=&tf.y8 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -440,7 +440,7 @@ $(".katuragi_10_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightne
 
 ;【９】
 [if exp="sf.event_katuragi_10_3 != 1"]
-[button fix=true name="day,katuragi_10_3,k_10_3,tips_btn" graphic="day10_3.png" target="tips_label" x=&tf.x2 y=&tf.y1 exp="tf.tips=tf.hint9"]
+[button fix=true name="day,katuragi_10_3,k_10_3,tips_btn" graphic="day10_3.png" target="tips_label" x=&tf.x2 y=&tf.y1 exp="tf.tipsNo=9"]
 ;[image name="day,katuragi_10_3,k_10_3" storage="../image/day10_3.png"  layer=27 x=&tf.x2 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -452,7 +452,7 @@ $(".katuragi_10_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightne
 
 ;【１０】
 [if exp="sf.event_katuragi_11_1 != 1"]
-[button fix=true name="day,katuragi_11_1,k_11_1,tips_btn" graphic="day11_1.png" target="tips_label" x=&tf.x2_2 y=&tf.y2 exp="tf.tips=tf.hint10"]
+[button fix=true name="day,katuragi_11_1,k_11_1,tips_btn" graphic="day11_1.png" target="tips_label" x=&tf.x2_2 y=&tf.y2 exp="tf.tipsNo=10"]
 ;[image name="day,katuragi_11_1,k_11_1" storage="../image/day11_1.png"  layer=27 x=&tf.x2_2 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -464,7 +464,7 @@ $(".katuragi_11_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightne
 
 ;【１１】
 [if exp="sf.event_katuragi_11_4 != 1"]
-[button fix=true name="day,katuragi_11_4,k_11_4,tips_btn" graphic="day11_4.png" target="tips_label" x=&tf.x2_2 y=&tf.y3 exp="tf.tips=tf.hint11"]
+[button fix=true name="day,katuragi_11_4,k_11_4,tips_btn" graphic="day11_4.png" target="tips_label" x=&tf.x2_2 y=&tf.y3 exp="tf.tipsNo=11"]
 ;[image name="day,katuragi_11_4,k_11_4" storage="../image/day11_4.png"  layer=27 x=&tf.x2_2 y=&tf.y3 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -476,7 +476,7 @@ $(".katuragi_11_4").css({'filter': 'brightness(50%)','-webkit-filter': 'brightne
 
 ;【１２】
 [if exp="sf.event_katuragi_12_1 != 1"]
-[button fix=true name="day,katuragi_12_1,k_12_1,tips_btn" graphic="day12_1.png" target="tips_label" x=&tf.x2_2 y=&tf.y4 exp="tf.tips=tf.hint12"]
+[button fix=true name="day,katuragi_12_1,k_12_1,tips_btn" graphic="day12_1.png" target="tips_label" x=&tf.x2_2 y=&tf.y4 exp="tf.tipsNo=12"]
 ;[image name="day,katuragi_12_1,k_12_1" storage="../image/day12_1.png"  layer=27 x=&tf.x2_2 y=&tf.y4 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -488,7 +488,7 @@ $(".katuragi_12_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightne
 
 ;【１３】
 [if exp="sf.event_katuragi_1_3 != 1"]
-[button fix=true name="day,katuragi_1_3,k_1_3,tips_btn" graphic="day1_3.png" target="tips_label" x=&tf.x2 y=&tf.y5 exp="tf.tips=tf.hint13"]
+[button fix=true name="day,katuragi_1_3,k_1_3,tips_btn" graphic="day1_3.png" target="tips_label" x=&tf.x2 y=&tf.y5 exp="tf.tipsNo=13"]
 ;[image name="day,katuragi_1_3,k_1_3" storage="../image/day1_3.png"  layer=27 x=&tf.x2 y=&tf.y5 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -500,7 +500,7 @@ $(".katuragi_1_3").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 
 ;【１４】
 [if exp="sf.event_katuragi_2_2 != 1"]
-[button fix=true name="day,katuragi_2_2,k_2_2,tips_btn" graphic="day2_2.png" target="tips_label" x=&tf.x2 y=&tf.y6 exp="tf.tips=tf.hint14"]
+[button fix=true name="day,katuragi_2_2,k_2_2,tips_btn" graphic="day2_2.png" target="tips_label" x=&tf.x2 y=&tf.y6 exp="tf.tipsNo=14"]
 ;[image name="day,katuragi_2_2,k_2_2" storage="../image/day2_2.png"  layer=27 x="&tf.x2" y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -512,7 +512,7 @@ $(".katuragi_2_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightnes
 
 ;【１５】
 [if exp="sf.event_katuragi_bazar != 1"]
-[button fix=true name="day,katuragi_bazar,k_bz,tips_btn" graphic="day2_3.png" target="tips_label" x=&tf.x2 y=&tf.y7 exp="tf.tips=tf.hint15"]
+[button fix=true name="day,katuragi_bazar,k_bz,tips_btn" graphic="day2_3.png" target="tips_label" x=&tf.x2 y=&tf.y7 exp="tf.tipsNo=15"]
 ;[image name="day,katuragi_bazar,k_bz" storage="../image/day2_3.png"  layer=27 x="&tf.x2" y=&tf.y7 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -523,7 +523,7 @@ $(".katuragi_bazar").css({'filter': 'brightness(50%)','-webkit-filter': 'brightn
 [endif]
 ;============================================散策未判定============================================================================
 [if exp="sf.event_katuragi_sansaku1 != 1"]
-[button fix=true name="day,katuragi_sansaku1,k_s1,tips_btn" graphic="day2_2.png" target="tips_label" x=&tf.x3 y=&tf.y1 exp="tf.tips=tf.hint16"]
+[button fix=true name="day,katuragi_sansaku1,k_s1,tips_btn" graphic="day2_2.png" target="tips_label" x=&tf.x3 y=&tf.y1 exp="tf.tipsNo=16"]
 ;[image name="day,katuragi_sansaku1,k_s1" storage="../image/day2_2.png"  layer=27 x=&tf.x3 y=&tf.y1 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -534,7 +534,7 @@ $(".katuragi_sansaku1").css({'filter': 'brightness(50%)','-webkit-filter': 'brig
 [endif]
 
 [if exp="sf.event_katuragi_sansaku2 != 1"]
-[button fix=true name="day,katuragi_sansaku2,k_s2,tips_btn" graphic="day2_3.png" target="tips_label" x=&tf.x3 y=&tf.y2 exp="tf.tips=tf.hint17"]
+[button fix=true name="day,katuragi_sansaku2,k_s2,tips_btn" graphic="day2_3.png" target="tips_label" x=&tf.x3 y=&tf.y2 exp="tf.tipsNo=17"]
 ;[image name="day,katuragi_sansaku2,k_s2" storage="../image/day2_3.png"  layer=27 x=&tf.x3 y=&tf.y2 visible=true wait=true]
 [wait time=10]
 [iscript]
@@ -646,8 +646,16 @@ $(".1_fore").empty();
 
 *tips_label
 ;テキストの書き換えを行うか判定し、trueであればテキストを書き換えます
-[if exp="f.get_tips == 1"]
+[if exp="f.get_tips == 1 || f.get_tips == 2"]
 [iscript]
+if(f.get_tips == 1){
+	tf.tips = eval("tf.hint"+tf.tipsNo);
+//http://blog.livedoor.jp/kmiwa_project/archives/1014822741.html
+//切り替えスクリプト作成に『 プログラマー社長の「日々発見」』↑様情報を参考にしました
+}
+if(f.get_tips == 2){
+	tf.tips = eval("tf.spoiler"+tf.tipsNo);
+}
 $("p.tips").text(tf.tips);
 [endscript]
 [endif]
@@ -662,18 +670,31 @@ $("p.tips").text(tf.tips);
 [iscript]
 f.get_tips=1;
 $(".hint_on").remove();
-$("p.tips").text("現在、ヒントはオンです");
+$("p.tips").text("現在、ヒント「有」です");
 [endscript]
 ;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
-[button name="hint_off" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+[button name="spoiler_on" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=2"]
 [wait time=10]
 ;@jump target="tips_btn"
 @jump target="stop"
+
+[elsif exp="f.get_tips == 2"]
+[iscript]
+f.get_tips=2;
+$(".spoiler_on").remove();
+$("p.tips").text("現在、攻略情報「有」です。ネタバレしても大丈夫な方だけご覧ください");
+[endscript]
+;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
+[button name="hint_off" graphic="button_spoiler_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
+[wait time=10]
+;@jump target="tips_btn"
+@jump target="stop"
+
 [else]
 [iscript]
 f.get_tips=0;
 $(".hint_off").remove();
-$("p.tips").text("現在、ヒントはオフです");
+$("p.tips").text("現在、ヒント「無」です");
 [endscript]
 ;オフの時はオフを表示(元：オフのときはオンを表示)
 [button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
