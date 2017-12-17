@@ -60,7 +60,10 @@ TG.stat.play_se = true;
 ;	[skipstop]
 [endif]
 *prologue1
-[r][r][r][r][endnowait]
+[r][r][r][r]
+[if exp="sf.BOOST=='OFF'"]
+ [endnowait]
+[endif]
 [delay speed=80]
 ;[emb exp="sf.KSKIP"]
 淑女たるもの温良貞淑たり[r]
