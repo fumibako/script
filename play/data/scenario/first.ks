@@ -7,7 +7,8 @@
 [call storage="tyrano.ks"]
 ;[call storage="novel_booster.ks"]
 [wait time=10]
-[call storage="boost_mode/boost_mode.ks"]
+;↓スキップ安定の目的でプラグインを外します
+;[call storage="boost_mode/boost_mode.ks"]
 
 ;メッセージレイヤの定義(画面全体）
 [position layer=message0 width=960 height=500 top=80 left=320 page=fore opacity=0]
@@ -19,7 +20,7 @@
 ;BGM設定がOFFの場合はロード時点で再生していたBGMを停止します。
 [stopbgm]
 [endif]
-
+[nowait]
 @layopt layer=message0 page=fore visible=true
 [font color=white]
 _　　　　　　・・・読込中・・・[r]

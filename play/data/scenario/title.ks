@@ -140,8 +140,8 @@ TG.stat.play_se = false;
 [s]
 ;----------文字　瞬速が選択された時
 *textboost_on
-[boost_mode_on]
-
+;[boost_mode_on]
+[nowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BOOST='ON'"]
 ;f.skip=true;　キー・スキップフラグ　設定なしでもとまるが念のため
@@ -152,7 +152,8 @@ TG.stat.play_se = false;
 
 ;----------文字　並が選択された時
 *textboost_off
-[boost_mode_off]
+;[boost_mode_off]
+[endnowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BOOST='OFF'"]
 [anim name="button_boost_to_off" opacity=0 time=1]
@@ -210,14 +211,16 @@ TG.stat.play_se = true;
 ;[endif]
 
 [if exp="sf.BOOST=='ON'"]
-[boost_mode_on]
+;[boost_mode_on]
+[nowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="f.okeiko_month = 0"]
 [eval exp="sf.BOOST='ON'"]
 [locate x=535 y=480]
 [button name="list,button_boost_to_off" graphic="button_boost_on.png" target="*textboost_off"]
 [else]
-[boost_mode_off]
+;[boost_mode_off]
+[endnowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BOOST='OFF'"]
 [locate x=535 y=480]
