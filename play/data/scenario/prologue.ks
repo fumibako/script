@@ -61,9 +61,7 @@ TG.stat.play_se = true;
 [endif]
 *prologue1
 [r][r][r][r]
-[if exp="sf.BOOST=='OFF'"]
  [endnowait]
-[endif]
 [delay speed=80]
 ;[emb exp="sf.KSKIP"]
 淑女たるもの温良貞淑たり[r]
@@ -82,6 +80,9 @@ TG.stat.play_se = true;
 年齢を迎えると、手紙の交流[r]
 によって心を通わせるもので[r]
 ある。
+[if exp="sf.BOOST=='ON'"]
+ [nowait]
+[endif]
 [autosave]
 [p][cm]
 [resetfont][delay speed=10]
