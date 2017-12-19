@@ -97,7 +97,7 @@ $(".fixlayer").css("opacity",0);
 [eval exp="f.get_tips = 0"]
 [endif]
 [if exp="f.get_tips == 1"]
-[ptext name="tips" text="現在、ヒント「有」です" layer=27 size=20 x=20 y=550 color=snow width=830]
+[ptext name="tips" text="現在、ヒント「有」です" layer=27 size=20 x=19 y=540 color=snow width=830]
 [wait time=50]
 ;※waitしないと書き換えられません！
 ;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
@@ -105,14 +105,14 @@ $(".fixlayer").css("opacity",0);
 [wait time=10]
 [endif]
 [if exp="f.get_tips == 0"]
-[ptext name="tips" text="現在、ヒント「無」です" layer=27 size=20 x=20 y=550 color=snow width=830]
+[ptext name="tips" text="現在、ヒント「無」です" layer=27 size=19 x=20 y=540 color=snow width=830]
 [wait time=50]
 ;オフの時はオフを表示(元：オフのときはオンを表示)
 [button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
 [if exp="f.get_tips == 2"]
-[ptext name="tips" text="現在、攻略情報「有」です。ネタバレしても大丈夫な方だけご覧ください" layer=27 size=20 x=20 y=550 color=snow width=830]
+[ptext name="tips" text="現在、攻略情報「有」です。ネタバレしても大丈夫な方だけご覧ください" layer=27 size=19 x=20 y=540 color=snow width=830]
 [wait time=50]
 [button name="hint_off" graphic="button_spoiler_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
