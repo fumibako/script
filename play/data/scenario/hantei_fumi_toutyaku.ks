@@ -69,6 +69,27 @@ f.okeiko_month_kansuuji="三月 ";
 [if exp="(f.okeiko_month == 11 && f.okeiko_week ==4) || f.okeiko_month == 12"]
 @jump target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
+;↓「新茶」「さつき」など翌週届く設定の手紙は前回手紙がいつ届いたかに関わらず処理するため、週数チェック前に処理します
+			
+;◆12：4月3週～5月2週に『新茶について』の手紙を送った場合、翌週に返事がある
+[if exp="((f.okeiko_month == 4 && f.okeiko_week == 4)|| f.okeiko_month == 5 && (f.okeiko_week == 1 || f.okeiko_week == 2 || f.okeiko_week == 3)) && f.kuroda_fumi_toutyakumachi_sintya == 0 && f.fumi_toutyaku_kuroda[12] == 0"]
+	[eval exp="f.test='手紙到着「新茶について」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_12
+[endif]
+			
+;◆13：5月3週～6月2週に『さつきについて』の手紙を送った場合、翌週に返事がある
+[if exp="((f.okeiko_month == 5 && f.okeiko_week == 4)|| f.okeiko_month == 6 && (f.okeiko_week == 1 || f.okeiko_week == 2 || f.okeiko_week == 3)) &&f.kuroda_fumi_toutyakumachi_satuki == 0 && f.fumi_toutyaku_kuroda[13] == 0"]
+	[eval exp="f.test='手紙到着「さつきについて」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_13
+[endif]
+
+;↓返事到着の可能性があるかどうか(前回の手紙到着からの)週数確認処理
 [if exp="(f.kuroda_fumi_henjimachi <= parseInt([sf.kuroda['fumi_henjimachi_ok_number']]))"]
 	[eval exp="f.kuroda_fumi_toutyakumachi_week=f.kuroda_fumi_toutyakumachi_week+1"]
 [endif]
@@ -170,24 +191,6 @@ f.okeiko_month_kansuuji="三月 ";
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_8
 [endif]
 			
-			
-;◆12：4月3週～5月2週に『新茶について』の手紙を送った場合、翌週に返事がある
-[if exp="((f.okeiko_month == 4 && f.okeiko_week == 4)|| f.okeiko_month == 5 && (f.okeiko_week == 1 || f.okeiko_week == 2 || f.okeiko_week == 3)) && f.kuroda_fumi_toutyakumachi_sintya == 0 && f.fumi_toutyaku_kuroda[12] == 0"]
-	[eval exp="f.test='手紙到着「新茶について」'"]
-	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_12
-[endif]
-			
-;◆13：5月3週～6月2週に『さつきについて』の手紙を送った場合、翌週に返事がある
-[if exp="((f.okeiko_month == 5 && f.okeiko_week == 4)|| f.okeiko_month == 6 && (f.okeiko_week == 1 || f.okeiko_week == 2 || f.okeiko_week == 3)) &&f.kuroda_fumi_toutyakumachi_satuki == 0 && f.fumi_toutyaku_kuroda[13] == 0"]
-	[eval exp="f.test='手紙到着「さつきについて」'"]
-	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_13
-[endif]
 
 ;手紙到着：条件有りが該当しなければ、条件無し分が到着：黒田ルートには無し
 ;		[eval exp="f.target_fumi_toutyaku='*fumi_toutyaku_kuroda_'+f.kuroda_nextfumi_common"]
