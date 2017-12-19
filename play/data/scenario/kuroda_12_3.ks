@@ -129,7 +129,7 @@ $('.junbi_girl').remove();
 テストページから開始しています。町の場面までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
+[position layer=message1 height=200 top=100 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
 [font color=white size=32]
@@ -226,7 +226,7 @@ jumpします。[p]
 [wait time=10]
 ;==========================================================================================
 ;暗転
-[bg wait=true method='crossfade' storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=50]
 ;画面切り替え、【背景】黒背景又は和紙背景にぼんやりとした光が浮かび、キラキラ輝いている感じのもの（こちらで作成予定。作成に時間がかかりそうなら切り替え無し）
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
@@ -241,7 +241,7 @@ jumpします。[p]
 
 *scene3_end
 ;ゆっくり暗転
-[bg wait=true method='crossfade' storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=50]
 ;==========================================================================================
 ;【BGM】冬支度（悲しげ・筝曲）
@@ -322,7 +322,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 ;==========================================================================================
 ;暗転
-[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=50]
 [freeimage layer = 27]
 [freeimage layer = 28]
@@ -377,7 +377,7 @@ $('.junbi_girl').remove();
 ;【効果】白フラッシュ3回
 [bg wait=true method='crossfade' storage="../fgimage/bg/white.jpg" time=10]
 [wait time=70]
-[bg wait=true method='crossfade' storage="toumei.gif" time=10]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=10]
 [wait time=150]
 [bg wait=true method='crossfade' storage="../fgimage/bg/white.jpg" time=10]
 [wait time=70]
@@ -415,7 +415,7 @@ $('.junbi_girl').remove();
 ;画面:通常会話パート
 
 ;【背景】あればレトロな実験室　 フェードイン（見つからなければ、黒背景）
-[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=50]
 [eval exp="f.haikei_credit=''"]
 ;【テキスト枠】会話パート用 下部横長【茶色（男性視点用）】
@@ -569,6 +569,7 @@ $('.junbi_girl').remove();
 白い封筒が暖かく輝くように感じられた――。
 [autosave改]
 [p]
+[wait time=10]
 [resetfont]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_12_3_scene8==undefined"]
@@ -578,6 +579,7 @@ $('.junbi_girl').remove();
 [if exp="sf.BGM=='ON'"]
 ;【BGM】絆（想いを込める感じ）
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true click=true]
+[wait time=10]
 [endif]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
@@ -644,7 +646,7 @@ $('.junbi_girl').remove();
 そのとき、ハラリと封筒から何かが机に落ちた。[p]
 
 ;暗転
-[bg wait=true method='crossfade' storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=50]
 ;【背景】黒背景の中心が温かく輝いている。封筒から麦の穂が机に落ちた様子が光の中に浮かび上がっている（こちらで素材を準備する予定です）
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
@@ -662,7 +664,7 @@ $('.junbi_girl').remove();
 [resetfont]
 
 ;【背景】あればレトロな実験室　 フェードイン（見つからなければ、黒背景）
-[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=50]
 ;メッセージエリアの表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_brown.png"]
