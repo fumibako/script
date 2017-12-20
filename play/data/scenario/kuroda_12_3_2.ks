@@ -256,7 +256,19 @@
 
 ;【背景他】手紙用画面に切り替え
 ;主人公より手紙
-[手紙青]
+;背景変更:手紙青
+[bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=100]
+[wait time=100]
+
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
+
+;メッセージレイヤサイズを手紙用に設定変更
+[position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 [wait time=100]
 [font color=navy size=21]
 
