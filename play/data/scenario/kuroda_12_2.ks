@@ -136,7 +136,7 @@
 [whosay name="田中　岩男" color="#775545"]
 「いけね。つい口が滑っちゃった」[p]
 ;【背景】ゆっくり暗転
-[bg wait=true method='crossfade' storage="toumei.gif" time=2000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=2000]
 [wait time=10]
 「貴女には言いづらいんですが、黒田は研究のここぞというときに[r]
 [sp]……実験に失敗しちゃったんですよ」[p]

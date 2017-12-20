@@ -86,7 +86,7 @@ jumpします。[p]
 [財前退場]
 ;パーティ会場廊下　暗転
 ;【背景】暗転黒背景、会話ウィンドウは残る
-[bg wait=true storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [主人公憂い]
 [暗転２終了]
 ;==============================================================================

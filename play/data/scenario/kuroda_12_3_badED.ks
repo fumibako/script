@@ -17,7 +17,7 @@ $(".list").remove();
 $(".rp_bt").remove();
 [endscript]
 [if exp="f.flag_replay==true"]
-[back storage="toumei.gif" time=1]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1]
 [endif]
 ;==========================================================================================
 *replay_kuroda_12_3_badED_1
@@ -97,7 +97,7 @@ $(".rp_bt").remove();
 [endif]
 *scene2
 ;ゆっくり暗転
-[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=10]
 [eval exp="f.kaogura='off'"]
 [主人公退場]
@@ -153,7 +153,7 @@ $('.junbi_girl').remove();
 田中様へ託したものの、心は晴れない。[p]
 
 ;ゆっくり暗転
-[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=10]
 [eval exp="f.kaogura='off'"]
 [主人公退場]
@@ -294,7 +294,7 @@ $('.junbi_girl').remove();
 [r]
 [sp]　　　　　　　　完[p]
 [stopbgm]
-[bg wait=true method='crossfade' storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=10]
 [clearfix]
 [cm]

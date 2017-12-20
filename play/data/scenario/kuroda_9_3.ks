@@ -213,7 +213,7 @@ jumpします。[p]
 *scene3
 
 ;【背景】暗転黒背景、会話ウィンドウは残る
-[bg wait=true method='crossfade' storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=10]
 ;【立ち絵】主人公：下がり眉伏目（不安）
 [主人公困り]
@@ -848,7 +848,7 @@ jumpします。[p]
 [sp]ますます楽しみになりそうだわ）[p]
 
 ;【背景】フェードアウト→黒っぽい背景に
-[chara_mod name="bg" storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 ;【背景】フェードイン：料亭風の屋内（夕）
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_ryouotei_yuu.jpg" time=500]
 [wait time=10]
