@@ -146,6 +146,8 @@ $('.junbi_girl').remove();
 [resetfont]
 「はい」[r]
 jumpします。[p]
+[主人公退場]
+[wait time=10]
 [cm]
 [イベント中テスト数値表示]
 @jump storage="kuroda_12_3_2.ks" target=*scene7
