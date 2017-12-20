@@ -126,7 +126,7 @@
 $('.junbi_girl').remove();
 [endscript]
 [if exp="tf.test_gamen==true"]
-テストページから開始しています。町の場面までjumpしますか？[r]
+テストページから開始しています。手紙の場面までjumpしますか？[r]
 
 ;選択肢用レイヤーを追加
 [position layer=message1 height=200 top=100 left=380 opacity=0]
@@ -148,7 +148,7 @@ $('.junbi_girl').remove();
 jumpします。[p]
 [cm]
 [イベント中テスト数値表示]
-@jump target=*scene3_end
+@jump storage="kuroda_12_3_2.ks" target=*scene7
 [s]
 
 *jump_no
