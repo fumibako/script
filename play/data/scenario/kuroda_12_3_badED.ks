@@ -233,10 +233,10 @@ $('.junbi_girl').remove();
 
 
 ;【BGM】雪解水（哀しげな曲
-;[playbgm storage="kanasige_yukigemizu.ogg" loop=true click=true]
+;[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true click=true]
+[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
 [endif]
 
