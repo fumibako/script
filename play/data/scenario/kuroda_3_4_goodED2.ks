@@ -93,7 +93,7 @@
 [layopt layer=29 visible=true]
 [wait time=10]
 ;背景変更:手紙
-[bg wait=true method='crossfade' storage="../fgimage/toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=10]
 [image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg" time=500]
 [wait time=500]
@@ -273,7 +273,7 @@ $('.junbi_girl').remove();
 [r]
 [r]
 [sp]　　　　　　　　　　完[p]
-[bg wait=true method='crossfade' storage="../fgimage/toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=10]
 [clearfix]
 [wait time=10]

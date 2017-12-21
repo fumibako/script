@@ -460,7 +460,7 @@ TG.stat.play_se = true;
 
 ;背景非表示
 ;[chara_mod name="bg" storage="toumei.gif" time=100]
-[bg wait=true storage="../fgimage/toumei.gif" time=10]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=10]
 [wait time=10]
 
 

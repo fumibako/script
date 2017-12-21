@@ -94,7 +94,7 @@
 [p]
 ;==========================================================================================
 ;【背景】フェードアウト→屋敷玄関背景
-[bg wait=true storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
@@ -727,7 +727,7 @@
 [黒田退場]
 [wait time=10]
 ;暗転
-[bg wait=true storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]

@@ -29,7 +29,7 @@ $(".list").remove();
 $(".rp_bt").remove();
 [endscript]
 [if exp="f.flag_replay == true"]
-[back storage="toumei.gif" time=1]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1]
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [chara_new name="girl_base" storage="toumei.gif"]
 [chara_show left=1 top=381 layer=15 name="girl_base" time=0]
@@ -126,7 +126,7 @@ $(".rp_bt").remove();
 [chara_mod name="message_bg" storage="toumei.gif"]
 [wait time=10]
 ;【背景】ゆっくり暗転後、桜（全画面テキスト用）
-[bg wait=true method='crossfade' storage="toumei.gif" time=300]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=300]
 [wait time=50]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_EDsakura.jpg" time=500]
 [wait time=100]

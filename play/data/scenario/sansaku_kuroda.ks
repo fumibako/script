@@ -158,7 +158,7 @@
 ;【立ち絵】消去
 [主人公退場]
 ;【背景】暗転後、町並みに戻る
-[bg storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=500]
 [eval exp="f.haikei_credit='photo　by　宣教師ゴンドルフ+るくれしお(C) ガラスの家　http://www.geocities.jp/redglass_palace/'"]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=500]
@@ -471,7 +471,7 @@ $('.junbi_girl').remove();
 [playbgm storage="midareru_kokoro_rannomai.ogg" loop=true]
 #
 ;一瞬暗転後、同じ背景に戻る
-[bg storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=500]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=500]
 [wait time=10]
@@ -631,7 +631,7 @@ $('.junbi_girl').remove();
 [sp]寒いですから、中にお入りくださいまし」[p]
 
 ;背景暗転後町へ戻る
-[bg storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=500]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_machi.jpg" time=500]
 [wait time=10]
