@@ -11,7 +11,7 @@ $('.list').remove();
 [endscript]
 [if exp="f.flag_replay == true"]
 [clearstack]
-[bg wait=true method='crossfade' storage="toumei.gif" time=1]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1]
 [endif]
 *start
 [stopbgm]

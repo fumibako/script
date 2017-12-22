@@ -108,7 +108,7 @@ $('.loding_pic').remove();
 ;=================================================================================_
 *seen1_a
 #
-[bg wait=true method="crossfade" storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 ;↓背景透明度を長めの時間かけて変更する際に、なぜかwait=trueを入れていても表示不具合が複数回発生したためtime=50とすこし長めにとっています。◆jsYiJcqRkk
 [wait time=50]
 #
@@ -170,7 +170,7 @@ $('.loding_pic').remove();
 [whosay name="華織" color="olivedrab"]
 （これも、本来の兄としての義務をサボっていたツケでしょうか……）[p]
 #
-[bg wait=true method="crossfade" storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=50]
 [bg wait=true method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_kai_room.jpg" time=2000]
 [wait time=50]
@@ -246,7 +246,7 @@ $('.loding_pic').remove();
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="華織" color="olivedrab"]
 （さて、そろそろ手伝おうかな）[p]
-[bg wait=true method="crossfade" storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=50]
 [whosay name="華織" color="olivedrab"]
 「[華衣]、大変だったら……」[p]
@@ -263,7 +263,7 @@ $('.loding_pic').remove();
 「僕が生けた花をそのまま壺に突っ込んじゃって……[r]
 [sp]せめて花の向きは揃えて……」[p]
 ;暗転
-[bg wait=true method="crossfade" storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=50]
 [whosay name="華織" color="olivedrab"]
 （いいや、そのままにしておくべきだ……そっとしておこう）[p]

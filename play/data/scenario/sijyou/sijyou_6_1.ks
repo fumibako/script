@@ -198,7 +198,7 @@ $('.saku1').remove();
 「華織お兄さま！　待ってください！」 [p]
 [fadeoutbgm time=4000]
 #
-[bg storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 
 ;【SE】すずめ（チュンチュン）
 [playse storage=tori_suzume.ogg loop=false ]

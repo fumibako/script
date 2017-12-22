@@ -903,7 +903,7 @@
 ;～～～～～～～～～～～シーン料亭・庭～～～～～～～～～～～～～～～～～～～
 #
 ;[暗転]
-[bg storage="toumei.gif"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg"]
 華織様に誘われた私は、庭へと赴いた。[p]
 [layopt layer=fix visible=false]
 ;【背景】庭園

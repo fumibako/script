@@ -101,7 +101,7 @@ $('.list').remove();
 [eval exp="sf.FButton='OFF'"]
 [主人公退場]
 
-[bg storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=10]
 ;[chara_mod name="bg" storage="toumei.gif" time=500]
 [wait time=10]
@@ -117,7 +117,7 @@ $('.list').remove();
 [p]
 [freeimage layer = 28]
 [stopbgm]
-[bg storage="toumei.gif" time=500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=10]
 ;[chara_mod name="bg" storage="toumei.gif" time=500]
 

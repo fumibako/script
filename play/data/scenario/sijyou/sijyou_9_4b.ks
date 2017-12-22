@@ -15,7 +15,7 @@
 [freeimage layer = 14]
 ;機能ボタン消去
 [clearfix]
-[bg storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 ;==========================================================================
 [イベントシーン構築枠茶色]
 #
@@ -177,7 +177,7 @@
 ;会話ウィンドウ消去
 [freeimage layer = 14]
 ;機能ボタン消去
-[bg storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 ;==========================================================================
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [image layer=29 name="jyunbi" storage="bg/room_niwa_yoru.jpg" time=10]

@@ -103,7 +103,7 @@
 [freeimage layer = 14]
 ;機能ボタン消去
 [clearfix]
-[bg storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 
 [テキスト全画面白文字]
 一方、そのころ四条邸では――。[p]

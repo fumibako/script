@@ -12,7 +12,7 @@
 ;機能ボタン消去
 [clearfix]
 [call target=*start storage="macro_tati_sijyou.ks"]
-[bg storage="toumei.gif" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [er]
 [背景_四条玄関]
 [プリロード画面消去]

@@ -3,7 +3,7 @@
 ;[暗転]
 [freeimage layer = 1]
 [wait time=10]
-[bg storage="toumei.gif"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg"]
 [stopbgm]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [call target=*first storage="sijyou/preload_sijyou.ks"]
@@ -53,7 +53,7 @@
 [sp]こんなところで待たされたら、誰だって探検をしたくなっても仕方ない）
 [autosave改]
 [p]
-[bg storage="toumei.gif"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg"]
 ・・・・・[p]
 [whosay name=文矢 color="#538a8a"]
 （弱ったな。広すぎて迷ってしまったようだ。[r]
@@ -261,7 +261,7 @@
 [whosay name="華織" color="olivedrab"]
 （ちょっと、気晴らしに廊下を散歩してみよう）[p]
 ;[暗転]
-[bg storage="toumei.gif"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg"]
 #
 ・・・・・・[p]
 ;=================================================================================_
@@ -403,7 +403,7 @@
 #
 [fadeoutbgm time=3000]
 ;[暗転]
-[bg storage="toumei.gif"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg"]
 [イベントシーン構築]
 [主人公ポーズ通常]
 [主人公通常]

@@ -134,7 +134,7 @@
 [current layer="message0"]
 [cm]
 ;[暗転]
-[bg wait=true method='crossfade' storage="toumei.gif" time=600]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=600]
 [wait time=50]
 ;横においてさらりと眺める
 [機能ボタン消]
@@ -712,7 +712,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 *common5
 [主人公目閉]
 ;[暗転]
-[bg storage="toumei.gif"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg"]
 [wait time=10]
 [bg storage="../fgimage/bg/B4nFWraU42/bg_sijyou_tenrankai.jpg" method="crossfade"]
 [wait time=10]
