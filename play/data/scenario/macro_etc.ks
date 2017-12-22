@@ -123,7 +123,7 @@ $('.loding_pic1').remove();
 [macro name="暗転"]
 ;名前欄消去
 [whosay name=""]
-	[bg storage="../fgimage/bg/toumei.gif" time=%time|600 wait=true]
+	[bg storage="../fgimage/bg/anten.jpg" method='crossfade' time=%time|600 wait=true]
 [endmacro]
 
 ;◆[華衣]
