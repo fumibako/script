@@ -287,7 +287,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 （……宮中の方は私の事をどう思われているのかしら）[p]
 [主人公目伏]
 #
-[bg wait=true storage="toumei.gif" time=1500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 [whosay name="侍従"]

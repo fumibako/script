@@ -140,7 +140,7 @@ jumpします。[p]
 [表示準備 storage="bg/anten.jpg" layer=29 time=1500]
 [wait time=10]
 ;裏で背景変更
-[bg wait=true storage="toumei.gif" time=50]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=50]
 [wait time=10]
 [主人公憂い]
 [主人公ポーズ通常]

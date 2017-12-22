@@ -431,7 +431,7 @@ $('.junbi_girl').remove();
 
 ;【SE】倒れて腕に受け止められる（フラ…サッ）
 [playse storage=taoreru_udenonakahe.ogg loop=false ]
-[bg wait=true storage="toumei.gif" time=1500]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1500]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （怖かった。けれど殿下が来てくださったわ[r]
