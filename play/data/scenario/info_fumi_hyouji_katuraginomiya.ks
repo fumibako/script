@@ -14,6 +14,8 @@
 [if exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 1"]
 	[ptext name="list" text="返信済" layer=28 size=15 x=865 y=&f.fumi_katuraginomiya_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.katuraginomiya_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
+[elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == -1"]
+;返信配列が-1の際も何も表示しない
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
 [else]
 	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
