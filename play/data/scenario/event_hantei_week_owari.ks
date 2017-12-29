@@ -92,7 +92,7 @@
 	@jump storage="event.ks" target=*start
 [endif]
 
-;◆badED判定 8月4週終わった時点で鳩の手紙4通目まで見ている(f.event_hujieda[5]==1)、かつ他キャラルート進行条件を満たさないとbadED
+;◆badED判定 8月4週終わった時点で藤枝のイベント8月まで見ている(f.event_hujieda[5]==1)、かつ他キャラルート進行条件を満たさないとbadED
 [if exp="((f.okeiko_month == 8 && f.okeiko_week == 4) && f.event_hujieda[5] == 1 && f.event_common[9] == 0 && f.para_kuroda_koukando < 30 && (f.para_zaizen_koukando < 30 || f.para_shujinkou_shukujodo < 20) && f.para_sijyou_koukando < 30 && (f.para_katuraginomiya_koukando < 20 || f.para_shujinkou_shukujodo < 30 || f.event_katuraginomiya[3] != 1 ) && f.katuraginomiya_only != 1)"]
 	[eval exp="f.event_storage='hujieda/hujieda_8_4_bad.ks'"]
 	[eval exp="f.event_target='*seen_hujieda_8_4_bad'"]
