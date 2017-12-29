@@ -8,8 +8,8 @@
 [endif]
 [if exp="tf.fumi_hyouji_ichi == 'right'"]
 [eval exp="tf.fumi_hyouji_midoku_x = 490"]
-[eval exp="tf.fumi_hyouji_hensin_x = 855"]
-[eval exp="tf.fumi_hyouji_hensin_x2 = 865"]
+[eval exp="tf.fumi_hyouji_hensin_x = 865"]
+[eval exp="tf.fumi_hyouji_hensin_x2 = 875"]
 [eval exp="tf.fumi_hyouji_title_x = 525"]
 [endif]
 ;◆攻略対象以外の手紙は未読や返信ボタンを表示しない
