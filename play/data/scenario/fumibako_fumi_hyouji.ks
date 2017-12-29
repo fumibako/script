@@ -2,13 +2,13 @@
 [freeimage layer = 27]
 [if exp="tf.fumi_hyouji_ichi == 'left'"]
 [eval exp="tf.fumi_hyouji_midoku_x = 15"]
-[eval exp="tf.fumi_hyouji_hensin_x = 395"]
+[eval exp="tf.fumi_hyouji_hensin_x = 390"]
 [eval exp="tf.fumi_hyouji_hensin_x2 = 405"]
 [eval exp="tf.fumi_hyouji_title_x = 50"]
 [endif]
 [if exp="tf.fumi_hyouji_ichi == 'right'"]
 [eval exp="tf.fumi_hyouji_midoku_x = 490"]
-[eval exp="tf.fumi_hyouji_hensin_x = 865"]
+[eval exp="tf.fumi_hyouji_hensin_x = 860"]
 [eval exp="tf.fumi_hyouji_hensin_x2 = 875"]
 [eval exp="tf.fumi_hyouji_title_x = 525"]
 [endif]
@@ -64,6 +64,6 @@
 
 [if exp="f.fumi_all_number==0"]
 [else]
-	[glink name="list" storage=&f.fumi_list_all_storage[f.list_count] target=&f.fumi_list_all_target[f.list_count] text=&f.fumi_list_all_title[f.list_count] size=12 width="295" height=17 x=&tf.fumi_hyouji_title_x y=&f.fumi_all_y graphic="select_waku_x550_fuutou.png" font_color=black]
+	[glink name="list" storage=&f.fumi_list_all_storage[f.list_count] target=&f.fumi_list_all_target[f.list_count] text=&f.fumi_list_all_title[f.list_count] size=12 width="295" height=19 x=&tf.fumi_hyouji_title_x y=&f.fumi_all_y graphic="select_waku_x550_fuutou.png" font_color=black]
 [endif]
 @jump storage="info_oaite_fumi.ks" target=&tf.fumi_hyouji_owari_target
