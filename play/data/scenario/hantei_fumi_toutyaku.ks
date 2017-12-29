@@ -654,7 +654,7 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『季節は巡る』9月 好感度(暫定)25以上(2/4調整。初期値を下げた事による)
-[if exp="f.okeiko_month == 8 && f.para_katuraginomiya_koukando >= 25 && f.fumi_toutyaku_katuraginomiya[25] == 0 && f.katuraginomiya_au == 1"]
+[if exp="f.okeiko_month == 9 && f.para_katuraginomiya_koukando >= 25 && f.fumi_toutyaku_katuraginomiya[25] == 0 && f.katuraginomiya_au == 1"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_25
 [endif]
