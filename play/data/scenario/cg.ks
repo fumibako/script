@@ -53,7 +53,7 @@
 [wait time=50]
 ;背景画像の後にしたい場合はマクロの位置を変更してください
 [CGプリロード]
-[back storage="../fgimage/bg/plane_sepia.jpg" time=1]
+[bg storage="../fgimage/bg/plane_sepia.jpg" time=1]
 [layopt layer=1 visible=true]
 ;[chara_mod name="bg" storage="toumei.gif" time=1]
 
