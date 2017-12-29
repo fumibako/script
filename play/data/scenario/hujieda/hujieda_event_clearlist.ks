@@ -616,7 +616,7 @@ $(".hujieda_sansaku").css({'filter': 'brightness(50%)','-webkit-filter': 'bright
 [image name="day,hujieda_sansaku" storage="../image/day_check_mi.png" layer=27 x="&tf.x3+150" y=&tf.y1 visible=true wait=true]
 [endif]
 
-=============================================================================================
+;=============================================================================================
 [iscript]
 $(".loding_pic").remove();
 $(".loding_pic1").remove();
