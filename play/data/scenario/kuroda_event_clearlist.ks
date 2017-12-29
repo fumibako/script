@@ -97,7 +97,7 @@ $(".fixlayer").css("opacity",0);
 [eval exp="f.get_tips = 0"]
 [endif]
 [if exp="f.get_tips == 1"]
-[ptext name="tips" text="現在、ヒント「有」です" layer=27 size=20 x=19 y=540 color=snow width=830]
+[ptext name="tips" text="現在、ヒント「有」です" layer=27 size=19 x=19 y=540 color=snow width=830]
 [wait time=50]
 ;※waitしないと書き換えられません！
 ;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
@@ -118,18 +118,18 @@ $(".fixlayer").css("opacity",0);
 [wait time=10]
 [endif]
 ;=============================キャラクター指定移動ボタン==========================================================
-[button name="c_name1" graphic="name_kuroda.png" y=590 x=100 storage="kuroda_event_clearlist.ks"]
-[button name="c_name1" graphic="name_sijyou.png" y=590 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
-[button name="c_name1" graphic="name_zaizen.png" y=590 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
+[button name="c_name1" graphic="name_kuroda.png" y=595 x=100 storage="kuroda_event_clearlist.ks"]
+[button name="c_name1" graphic="name_sijyou.png" y=595 x=250 storage="sijyou/sijyou_event_clearlist.ks"]
+[button name="c_name1" graphic="name_zaizen.png" y=595 x=400 storage="zaizen/zaizen_event_clearlist.ks"]
 [if exp="sf.event_katuragi_event_1 == 1"]
-[button name="c_name1" graphic="name_katuragi.png" y=590 x=550 storage="katuraginomiya/katuraginomiya_event_clearlist.ks"]
+[button name="c_name1" graphic="name_katuragi.png" y=595 x=550 storage="katuraginomiya/katuraginomiya_event_clearlist.ks"]
 [endif]
 [if exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_8_4 == 1"]
-[button name="c_name1" graphic="name_hujieda.png" y=590 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
+[button name="c_name1" graphic="name_hujieda.png" y=595 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [elsif exp="sf.event_hujieda_7_4 == 1 && sf.event_hujieda_8_4 != 1"]
-[button name="c_name1" graphic="name_hujieda0.png" y=590 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
+[button name="c_name1" graphic="name_hujieda0.png" y=595 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [elsif exp="sf.event_hujieda_4_4 == 1 && sf.event_hujieda_7_4 != 1"]
-[button name="c_name1" graphic="name_hatena.png" y=590 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
+[button name="c_name1" graphic="name_hatena.png" y=595 x=700 storage="hujieda/hujieda_event_clearlist.ks"]
 [endif]
 ;=======================================================================================
 *check_event
