@@ -24,17 +24,20 @@
 [if exp="sf.common_asuka == 1"]
 *event_select
 五月『飛鳥紗代子・はじめての手紙』：既読イベントです。[r]
-イベントを見ますか？、又はイベントを終了しますか？[r]
+イベントを見ますか？　又はイベントを終了しますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=300 top=70 left=300 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=30]
+;[position layer=message1 height=300 top=70 left=300 opacity=0]
+;@layopt layer=message1 visible=true
+;[current layer="message1"]
+;[font size=30]
+;[link target=*jump_to_end1]イベントを終了する[endlink][r]
+;[r][r]
+;[link target=*jump_ok1]最初からイベントを見る[endlink][r]
+;[resetfont]
+;↓表示を他の選択肢に合わせます◆jsYiJcqRkk
+[glink target=*jump_to_end1 text="イベントを終了する" font_color=black size=23 width="300" x=300 y=100 graphic="select_waku_x300.png"]
+[glink target=*jump_ok1 text="最初からイベントを見る" font_color=black size=23 width="300" x=300 y=250 graphic="select_waku_x300.png"]
 
-[link target=*jump_to_end1]イベントを終了する[endlink][r]
-[r][r]
-[link target=*jump_ok1]最初からイベントを見る[endlink][r]
-[resetfont]
 [s]
 *jump_to_end1
 [er]

@@ -69,17 +69,20 @@
 五月『磯野に相談』：既読イベントです。[r]
 選択肢まで移動、又はイベントを終了しますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=300 top=70 left=300 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=30]
-
-[link target=*jump_ok1]選択肢まで移動する[endlink][r]
-[r][r]
-[link target=*jump_to_end1]イベントを終了する[endlink][r]
-[r][r]
-[link target=*jump_no1]最初からイベントを見る[endlink][r]
-[resetfont]
+;[position layer=message1 height=300 top=70 left=300 opacity=0]
+;@layopt layer=message1 visible=true
+;[current layer="message1"]
+;[font size=30]
+;[link target=*jump_ok1]選択肢まで移動する[endlink][r]
+;[r][r]
+;[link target=*jump_to_end1]イベントを終了する[endlink][r]
+;[r][r]
+;[link target=*jump_no1]最初からイベントを見る[endlink][r]
+;[resetfont]
+;↓表示を他の選択肢に合わせます◆jsYiJcqRkk
+[glink target=*jump_ok1 text="選択肢まで移動する" font_color=black size=23 width="300" x=300 y=50 graphic="select_waku_x300.png"]
+[glink target=*jump_to_end1 text="イベントを終了する" font_color=black size=23 width="300" x=300 y=150 graphic="select_waku_x300.png"]
+[glink target=*jump_no1 text="最初からイベントを見る" font_color=black size=23 width="300" x=300 y=250 graphic="select_waku_x300.png"]
 [s]
 *jump_ok1
 [er]
@@ -273,13 +276,13 @@
 #
 どなたについて相談しようかしら？
 ;【分岐】op2と同じ順番
-[glink storage="kuroda_5_1.ks" target=*seen1 text="黒田 将貴" fontcolor=gray size=23 width="200" x=200 y=50 color=white]
-[glink storage="zaizen/zaizen_5_1.ks" target=*seen1 text="財前 美彬" fontcolor=gray size=23 width="200" x=200 y=150 color=white]
-[glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織" fontcolor=gray size=23 width="200" x=200 y=250 color=white]
+[glink storage="kuroda_5_1.ks" target=*seen1 text="黒田 将貴 様" font_color=black size=23 width="200" x=200 y=50 graphic="select_waku_x300.png"]
+[glink storage="zaizen/zaizen_5_1.ks" target=*seen1 text="財前 美彬 様" font_color=black size=23 width="200" x=200 y=150 graphic="select_waku_x300.png"]
+[glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織 様" font_color=black size=23 width="200" x=200 y=250 graphic="select_waku_x300.png"]
 
-[glink target=*buncyou text="文調や便せんについて" fontcolor=gray size=23 width="250" x=500 y=50 color=white]
-[glink target=*okeiko text="それよりお稽古のことが<br/>気になった" fontcolor=gray size=20 width="250" x=500 y=150 color=white]
-[glink target=*no text="大丈夫" fontcolor=gray size=23 width="200" x=500 y=250 color=white]
+[glink target=*buncyou text="文調や便せんについて" font_color=black size=23 width="250" x=500 y=50 graphic="select_waku_x300.png"]
+[glink target=*okeiko text="それよりお稽古のことが<br/>気になった" font_color=black size=20 width="250" x=500 y=150 graphic="select_waku_x300.png"]
+[glink target=*no text="大丈夫" font_color=black size=23 width="200" x=500 y=250 graphic="select_waku_x300.png"]
 [s]
 
 *okeiko
