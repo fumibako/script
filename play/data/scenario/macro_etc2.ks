@@ -412,6 +412,12 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [freeimage layer = 26]
 ;演出用レイヤ消去
 [freeimage layer = 29]
+[wait time=10]
+;背景初期化(ロード画面背景)
+[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=100]
+[wait time=10]
+[eval exp="f.haikei_credit=''"]
+;==========================================================================================
 
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
