@@ -169,13 +169,13 @@
 [endif]
 ;===============================================================
 
-[mtext text="クレジット" layer=27 size=&tf.fs x="&tf.left_x+150" y=&tf.top_y3 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[mtext edge=white text="クレジット" layer=27 size=&tf.fs x="&tf.left_x+150" y=&tf.top_y3 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext text="スクリプトエンジン" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[mtext edge=white text="スクリプトエンジン" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="ティラノスクリプト様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y0 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 
 ;フェードアウトして消します
 ;透明化
@@ -203,8 +203,8 @@ $('.omoide1').remove();
 
 [mtext text="スクリプト関係" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
 
-[mtext name=cc text="keito-works 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="アオイサクラ 様： 簡易コンフィグ画面プラグイン" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="keito-works 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="アオイサクラ 様： 簡易コンフィグ画面プラグイン" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
 [mtext name="cc,cc1" text="ティラノスクリプト 製作テクニックwiki 様" layer=27 size=&tf.fs size=18 x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [wait time=1]
 
@@ -212,12 +212,12 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="(c)www.wafusozai.com 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="ゆうあかり 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
-[mtext name=cc text="赤いガラスの宮殿 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  wait=false]
-[mtext name=cc text="フリー素材屋Hoshino 写真提供者 usagi_s 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc  wait=false]
-[mtext name=cc text="flickr : Eddy BERTHIER 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="(c)www.wafusozai.com 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="ゆうあかり 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="赤いガラスの宮殿 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  wait=false]
+[mtext name=cc edge=white text="フリー素材屋Hoshino 写真提供者 usagi_s 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc  wait=false]
+[mtext name=cc edge=white text="flickr : Eddy BERTHIER 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
@@ -249,12 +249,12 @@ $('.omoide1').remove();
 [kanim keyframe="opcy" name="omoide1" time=2000]
 
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr : _ Liquid 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="flickr : Dun.can 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
-[mtext name=cc text="flickr : minoir 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  wait=false]
-[mtext name=cc text="sunnywinds* 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc  wait=false]
-[mtext name=cc text="Omar + Kazumi Ovalle 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc  wait=true]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false edge=white]
+[mtext name=cc edge=white text="flickr : _ Liquid 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="flickr : Dun.can 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="flickr : minoir 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc  wait=false]
+[mtext name=cc edge=white text="sunnywinds* 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc  wait=false]
+[mtext name=cc edge=white text="Omar + Kazumi Ovalle 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc  wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
@@ -268,26 +268,26 @@ $('.omoide1').remove();
 $('.omoide1').remove();
 [endscript]
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr : djNIV 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc time=500 wait=false] 
-[mtext name=cc text="flickr : Farrukh 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc time=500 wait=false]
-[mtext name=cc text="flickr :Mike Linksvayer 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc time=500 wait=false]
-[mtext name=cc text="flickr :田中十洋 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc time=500 wait=false]
-[mtext name=cc text="flickr :barnimages.com 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc time=500 wait=true]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr : djNIV 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc time=500 wait=false] 
+[mtext name=cc edge=white text="flickr : Farrukh 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc time=500 wait=false]
+[mtext name=cc edge=white text="flickr :Mike Linksvayer 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc time=500 wait=false]
+[mtext name=cc edge=white text="flickr :田中十洋 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc time=500 wait=false]
+[mtext name=cc edge=white text="flickr :barnimages.com 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color=&tf.fc time=500 wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Mike Petrucci 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
-[mtext name=cc text="ビバ！江戸 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
-[mtext name=cc text="フリー素材*ヒバナ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
-[mtext name=cc text="deviantart-gimei 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
-[mtext name=cc text="素材工房まさん房 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Mike Petrucci 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc edge=white text="ビバ！江戸 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="フリー素材*ヒバナ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="deviantart-gimei 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="素材工房まさん房 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
 ;サイズ
-[mtext name=cc text="pixiv : mit81 様, アスカ 様, ポテ子 様" layer=27 size=&tf.fs2 x="&tf.left_x" y=&tf.top_y7 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="pixiv : mit81 様, アスカ 様, ポテ子 様" layer=27 size=&tf.fs2 x="&tf.left_x" y=&tf.top_y7 color=&tf.fc wait=true]
 ;最後wait=true
 [wait time=400]
 
@@ -318,17 +318,17 @@ $('.omoide1').remove();
 
 ;四条で使った背景素材メモ
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="明治村画像庫2 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="明治村画像庫2 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
 ;meiji_photo 明治村画像庫　病院ほか
-[mtext name=cc text="otomegtx 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" time=500 wait=false]
-[mtext name=cc text="PHOTO STOCKER 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="otomegtx 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" time=500 wait=false]
+[mtext name=cc edge=white text="PHOTO STOCKER 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
 ;PHOTO STOCKER 花火大
-[mtext name=cc text="flickr :Jeremy Hall 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Jeremy Hall 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
 ;銀座反物お店
-[mtext name=cc text="flickr :Ryosuke Yagi 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Ryosuke Yagi 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
 ;Ryosuke Yagi　波ケ浦
-[mtext name=cc text="flickr :syasara 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color="&tf.fc" wait=true]
+[mtext name=cc edge=white text="flickr :syasara 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color="&tf.fc" wait=true]
 ;syasara　波ケ浦(激)
 ;最後wait=true
 
@@ -336,16 +336,16 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :ironpoison 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :ironpoison 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
 ;ironpoison 様 … 思い出(花"bg/bg_omoide.jpg"
-[mtext name=cc text="flickr :tanakawho 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :tanakawho 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 ;tanakawho 様 … 萩 bg_flower_hagi.jpg
-[mtext name=cc text="flickr :Tatsumine Sugiura 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Tatsumine Sugiura 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
 ;Tatsumine Sugiura 様 … 庭園 bg_teien_ishidatami.jpg
-[mtext name=cc text="flickr :Akuppa John Wigham 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Akuppa John Wigham 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
 ;Akuppa John Wigham 様 … 園遊会：椅子のある庭園　bg/bg_garden_isu.jpg
-;[mtext name=cc text="flickr : 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
+;[mtext name=cc edge=white text="flickr : 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
 ;
 ;最後wait=true
 
@@ -354,28 +354,28 @@ $('.omoide1').remove();
 [layopt layer=27 visible=true]
 
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 ;葛城宮 "Hidetsugu Tonomura 様" "Karen Roe 様" "Takashi .M 様"
-[mtext name=cc text="flickr :Hidetsugu Tonomura 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
-[mtext name=cc text="flickr :Karen Roe 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Takashi .M 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Patrick Vierthaler 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Hidetsugu Tonomura 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc edge=white text="flickr :Karen Roe 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Takashi .M 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Patrick Vierthaler 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
 ;Patrick Vierthaler 様 … 離宮(屋内 bg/bg_katuraginomiya_gosyo_in.jpg
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 ;藤枝 "flickr :[◉”] Enrique Céspedes 様" "jeaneeem 様" "Taber Andrew Bain 様" "Ching 様" "kiukey 様" "Thomas Kohler 様" "田中十洋 様　coloredby 様（あるので省略）" 
-[mtext name=cc text="flickr :［◉”］Enrique Céspedes 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
-[mtext name=cc text="flickr :jeaneeem 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Ching 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :kiukey 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Thomas Kohler 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Ricardo 清介 屋宜 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :［◉”］Enrique Céspedes 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc edge=white text="flickr :jeaneeem 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Ching 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :kiukey 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Thomas Kohler 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Ricardo 清介 屋宜 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y7 color="&tf.fc" wait=false]
 ;Ricardo 清介 屋宜 様 … 藤枝bg/hujieda_sky1.jpg
-[mtext name=cc text="flickr :Kevin Doncaster 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y8 color="&tf.fc" wait=true]
+[mtext name=cc edge=white text="flickr :Kevin Doncaster 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y8 color="&tf.fc" wait=true]
 ;Kevin Doncaster 様 … 藤枝bg/bg_hujieda_orugan.jpg
 
 ;スキップ時に残るのを防止
@@ -383,25 +383,25 @@ $('.omoide1').remove();
 [layopt layer=27 visible=true]
 
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 ;財前"coloredby 様(藤枝・葛城宮でも使用)" "David Sanz 様" "gertrud 様" "Michael Gras, M.Ed. 様" "yoppy 様" 
-[mtext name=cc text="flickr :coloredby 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
-[mtext name=cc text="flickr :David Sanz 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :gertrud 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Michael Gras, M.Ed. 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :yoppy 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
+[mtext name=cc edge=white text="flickr :coloredby 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" time=500 wait=false]
+[mtext name=cc edge=white text="flickr :David Sanz 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :gertrud 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Michael Gras, M.Ed. 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :yoppy 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 ;"__U___ 様" "Herry Lawford 様" "けんたま 様" "Cj Hughson 様" "James Cridland 様" "田中十洋 様" 
-[mtext name=cc text="flickr :__U___ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Herry Lawford 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :けんたま 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :Cj Hughson 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
-[mtext name=cc text="flickr :James Cridland 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
+[mtext name=cc edge=white text="flickr :__U___ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Herry Lawford 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :けんたま 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Cj Hughson 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :James Cridland 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y6 color="&tf.fc" wait=true]
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
@@ -415,15 +415,15 @@ $('.omoide1').remove();
 [endscript]
 
 [wait time=10]
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
 ;Furbychan　夕焼け
-[mtext name=cc text="flickr :Furbychan 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Furbychan 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
 ;heniha　線香花火
-[mtext name=cc text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :heniha 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
 ;財前銀行背景
-[mtext name=cc text="flickr :Noriko YAMAMOTO 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="flickr :Noriko YAMAMOTO 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=false]
 ;飛鳥雨
-[mtext name=cc text="flickr :Peterson Fialho de Carvalho 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=true]
+[mtext name=cc edge=white text="flickr :Peterson Fialho de Carvalho 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color="&tf.fc" wait=true]
 
 
 ;最後wait=true
@@ -433,10 +433,10 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
-[mtext name=cc text="◆I9IhvvVdPo　作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
-[mtext name=cc text="◆jsYiJcqRkk 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
-[mtext name=cc text="＠名無しさん１ 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=true]
+[mtext name=cc edge=white text="背景" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="◆I9IhvvVdPo　作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="◆jsYiJcqRkk 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="＠名無しさん１ 編集・作成" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color="&tf.fc" wait=true]
 
 ;最後wait=true
 ;[wait time=400]
@@ -445,40 +445,40 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="フォント" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="衡山毛筆フォント-青二書道教室 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="M+ FONTS 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
-[mtext name=cc text="花園明朝 kamichi様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="フォント" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="衡山毛筆フォント-青二書道教室 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="M+ FONTS 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="花園明朝 kamichi様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=false]
 ;https://ja.osdn.net/projects/hanazono-font/
-[mtext name=cc text="マキナス　もじワク研究 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="マキナス　もじワク研究 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="BGM" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="おとわび 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="クラシック名曲サウンドライブラリー 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="BGM" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="おとわび 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="クラシック名曲サウンドライブラリー 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="効果音ラボ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc  wait=false]
-[mtext name=cc text="フリー効果音　On-Jin ～音人～ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=false]
-[mtext name=cc text="効果ON 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=false]
-[mtext name=cc text="無料効果音で遊ぼう！ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="効果音" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="効果音ラボ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc  wait=false]
+[mtext name=cc edge=white text="フリー効果音　On-Jin ～音人～ 様" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="効果ON 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y4 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="無料効果音で遊ぼう！ 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y5 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="cssスクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="coliss 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="cssスクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="coliss 様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
@@ -518,10 +518,10 @@ $('.omoide1').remove();
 ;横X位置変更
 [eval exp="tf.left_x=250"]
 
-[mtext name=cc text="原案・企画" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y1" color="&tf.fc" in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
-[mtext name=cc text="キャラクターグラフィック/黒田・四条: かいこ" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y3" color="&tf.fc" in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="キャラクターグラフィック/財前・葛城宮・藤枝:◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y4" color=&tf.fc wait=true ]
+[mtext name=cc edge=white text="原案・企画" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y1" color="&tf.fc" in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color="&tf.fc" wait=false]
+[mtext name=cc edge=white text="キャラクターグラフィック/黒田・四条: かいこ" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y3" color="&tf.fc" in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="キャラクターグラフィック/財前・葛城宮・藤枝:◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y4" color=&tf.fc wait=true ]
 [wait time=200]
 ;最後wait=true
 
@@ -531,10 +531,10 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="シナリオ" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y1" color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="黒田 :◆8EASfQr/2Q ◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="財前・葛城宮・藤枝:◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
-[mtext name=cc text="四条・他編集(財前・葛城宮・藤枝＿編集)：＠名無しさん１" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y4" color=&tf.fc wait=true]
+[mtext name=cc edge=white text="シナリオ" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y1" color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="黒田 :◆8EASfQr/2Q ◆ftAc29dlL.、◆jsYiJcqRkk" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="財前・葛城宮・藤枝:◆I9IhvvVdPo" layer=27 size=&tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="四条・他編集(財前・葛城宮・藤枝＿編集)：＠名無しさん１" layer=27 size=&tf.fs x="&tf.left_x" y="&tf.top_y4" color=&tf.fc wait=true]
 [wait time=50]
 ;最後wait=true
 
@@ -542,27 +542,27 @@ $('.omoide1').remove();
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="◆8EASfQr/2Q(吉里吉里Ver.システム原案)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="◆8EASfQr/2Q(吉里吉里Ver.システム原案)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="＠名無しさん１・演出・補佐" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="スクリプト" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="◆jsYiJcqRkk(ティラノスクリプトVer.)" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="＠名無しさん１・演出・補佐" layer=27 size=tf.fs x="&tf.left_x" y=&tf.top_y3 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時に残るのを防止
 [freeimage layer=27]
 [layopt layer=27 visible=true]
 
-[mtext name=cc text="＊　Special Thanks　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
-[mtext name=cc text="エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc wait=false]
-[mtext name=cc text="テストプレイヤーの皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=flase]
-[mtext name=cc text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y4 color=&tf.fc wait=true]
+[mtext name=cc edge=white text="＊　Special Thanks　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=false]
+[mtext name=cc edge=white text="エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y2 color=&tf.fc wait=false]
+[mtext name=cc edge=white text="テストプレイヤーの皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y3 color=&tf.fc wait=flase]
+[mtext name=cc edge=white text="淑女の皆様" layer=27 size=tf.fs x=&tf.left_x y=&tf.top_y4 color=&tf.fc wait=true]
 ;最後wait=true
 
 ;スキップ時にwikiだけ残るのを防止
@@ -581,7 +581,7 @@ $('.omoide1').remove();
 [eval exp="tf.left_x=tf.left_x+200"]
 
 ;終了言葉は適当です　変更してください
-[mtext name=cc text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
+[mtext name=cc edge=white text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [wait time=2000]
 [fadeoutbgm time=3000]
 
