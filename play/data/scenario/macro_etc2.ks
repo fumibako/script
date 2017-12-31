@@ -413,8 +413,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;演出用レイヤ消去
 [freeimage layer = 29]
 [wait time=10]
-;背景初期化(ロード画面背景)
-[bg wait=true method='crossfade' storage="../fgimage/bg/bg_kinari_sakura.jpg" time=100]
+;背景初期化(黒背景)
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit=''"]
 ;==========================================================================================
