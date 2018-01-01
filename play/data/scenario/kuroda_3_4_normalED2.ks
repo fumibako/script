@@ -154,7 +154,7 @@ $('.1_fore').remove();
 [endreplay] 
 [wait time=10]
 
-[if exp="f.flag_replay == true"]
+[if exp="f.flag_replay == true || f.event_replay == 'kuroda'"]
 ;web版はendreplayの下にするexe版はendreplayで戻る
 [イベントシーン終了]
 [wait time=10]
