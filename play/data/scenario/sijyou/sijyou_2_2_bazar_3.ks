@@ -785,7 +785,7 @@ $(".29_fore").empty();
 #
 [fadeoutbgm time=4000]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true || f.event_replay == 'sijyou'"]
 @jump storage="sijyou/sijyou_2_2_bazar_4.ks" target=scene1
 [else]
 ;選択肢用レイヤーを追加

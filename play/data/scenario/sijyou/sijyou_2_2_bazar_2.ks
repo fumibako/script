@@ -558,7 +558,7 @@ $(".1_fore").empty();
 [current layer="message0"]
 @layopt layer=message0 visible=true
 ;------------------------------------------------
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true || f.event_replay == 'sijyou'"]
 @jump storage="sijyou/sijyou_2_2_bazar_3.ks" target=seen_prezent
 [else]
 #

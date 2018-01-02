@@ -522,7 +522,7 @@ $(".1_fore").empty();
 [wait time=50]
 [fadeoutbgm time=3000]
 [暗転]
-[if exp="f.okeiko_gamen == true"]
+[if exp="f.okeiko_gamen == true || f.event_replay == 'sijyou'"]
 @jump storage="sijyou/sijyou_2_2_bazar_2.ks" target=*scene3
 [else]
 #
