@@ -232,8 +232,8 @@ $('.junbi_girl').remove();
 [freeimage layer = 26]
 [endif]
 [eval exp="sf.event_kuroda_6_4 = 1"]
-[eval exp="f.event_machi_kuroda[2]=1"]
 [イベントシーン終了]
+[eval exp="f.event_machi_kuroda[2]=1"]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 ;=============================================
@@ -309,8 +309,8 @@ $('.junbi_girl').remove();
 
 ;「黒田家のうわさ１」読了のフラグON
 [eval exp="sf.event_kuroda_sansaku_1 = 1"]
-[eval exp="f.event_machi_kuroda[3]=1"]
 [イベントシーン終了]
+[eval exp="f.event_machi_kuroda[3]=1"]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 ;=============================================
@@ -391,8 +391,8 @@ $('.junbi_girl').remove();
 
 ;「黒田家のうわさ２」読了のフラグON
 [eval exp="sf.event_kuroda_sansaku_2 = 1"]
-[eval exp="f.event_machi_kuroda[4]=1"]
 [イベントシーン終了]
+[eval exp="f.event_machi_kuroda[4]=1"]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 ;=============================================
@@ -542,8 +542,8 @@ $('.junbi_girl').remove();
 [名前欄]
 「そろそろ家に戻りましょう」[p]
 [eval exp="sf.event_kuroda_sansaku_3 = 1"]
-[eval exp="f.event_machi_kuroda[5]=1"]
 [イベントシーン終了]
+[eval exp="f.event_machi_kuroda[5]=1"]
 @jump storage="sansaku.ks" target=*sansaku_owari
 
 ;=============================================
@@ -651,6 +651,6 @@ $('.junbi_girl').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そろそろ家に戻りましょう」[p]
 [eval exp="sf.event_kuroda_sansaku_4 = 1"]
-[eval exp="f.event_machi_kuroda[6]=1"]
 [イベントシーン終了]
+[eval exp="f.event_machi_kuroda[6]=1"]
 @jump storage="sansaku.ks" target=*sansaku_owari
