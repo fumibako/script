@@ -43,9 +43,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [wait time=10]
 [endif]
 [eval exp="sf.FButton='ON'"]
-;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
-;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari0まで削除)予定です◆◆
-[if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari0'"]
 @jump storage="macro_replay_hyouji.ks" target=*start
 [else]
@@ -100,9 +99,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [wait time=10]
 [endif]
 [eval exp="sf.FButton='ON'"]
-;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
-;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari0まで削除)予定です◆◆
-[if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari0'"]
 @jump storage="macro_replay_hyouji.ks" target=*start
 [else]
@@ -155,9 +153,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
-;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
-;◆◆◆リプレイ実装時は表示を除外(以下の行をtf.test_gamen == trueのみに絞る予定です◆◆
-[if exp="tf.test_gamen == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari1'"]
 @jump storage="macro_replay_hyouji.ks" target=*start
 [else]
@@ -212,9 +209,9 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [wait time=10]
 [endif]
 [eval exp="sf.FButton='ON'"]
-;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
+;◆テストモード時のみボタンと変数数値表示
 ;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari2まで削除)予定です◆◆
-[if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+[if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari2'"]
 @jump storage="macro_replay_hyouji.ks" target=*start
 [else]
@@ -319,9 +316,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
-;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
-;◆◆◆リプレイ実装時は表示を除外(以下の行をtf.test_gamen == trueのみに絞る予定です◆◆
-[if exp="tf.test_gamen == true || f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari1'"]
 @jump storage="macro_replay_hyouji.ks" target=*start
 [else]
@@ -380,9 +376,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [chara_config ptext="chara_name_area"]
 [resetfont]
 
-;◆テストモード時(とリプレイ時)のみボタンと変数数値表示
-;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari0まで削除)予定です◆◆
-[if exp="f.event_replay == 'sijyou' || f.event_replay == 'zaizen' || f.event_replay == 'kuroda' || f.event_replay == 'katuraginomiya' || f.event_replay == 'hujieda'"]
+;◆テストモード時のみボタンと変数数値表示
+[if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari0'"]
 @jump storage="macro_replay_hyouji.ks" target=*start
 [else]
@@ -435,7 +430,7 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [stopse]
 
 ;◆クリアリストからシナリオリプレイ時はクリアリストへ戻す処理
-;お稽古パートへ戻る判定が先に置いてあるシナリオもあるため、実装時(「情報」からジャンプ時)は個々のシナリオの終了処理の配置を確認予定([イベントシーン終了２]等にもクリアリストへ戻す処理を書けば良いかも？実装時に試行予定)
+;お稽古パートへ戻る判定が先に置いてあるシナリオもあるため、実装時(「情報」からジャンプ時)は個々のシナリオの終了処理の配置を確認しました
 [if exp="f.event_replay == 'sijyou'"]
 	@jump storage="sijyou/sijyou_event_clearlist.ks" target=*start
 [endif]
