@@ -1,4 +1,4 @@
-##概要
+## 概要
 共同制作中ゲームのスクリプト等です  
 下記にてゲームをプレビューすることができます  
 https://fumibako.github.io/script/play/  
@@ -8,7 +8,7 @@ https://fumibako.github.io/script/play/
 公式サイトプレビューはこちらになります  
 https://fumibako.github.io/script/  
 
-##スタッフ作業用リンク(完成後このリンクは消す予定です)    
+## スタッフ作業用リンク(完成後このリンクは消す予定です)    
 ・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  
 ・葛城宮シナリオ：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/katuraginomiya  
 ・藤枝シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/hujieda    
@@ -19,28 +19,28 @@ https://fumibako.github.io/script/
 ・背景全般：https://github.com/fumibako/script/tree/gh-pages/play/data/fgimage/bg    
 ・全般　：https://github.com/fumibako/script/tree/gh-pages/play/    
   
-##利用規約
+## 利用規約
 音声、画像、テキスト素材を抜き出して再配布、再使用、改変することを禁止します  
 スクリプトは「MITライセンス」です  
 ライセンスの詳細についてはルートフォルダのlicense.txtをご参照ください  
 
-##スクリプト・素材サイト様 クレジット
+## スクリプト・素材サイト様 クレジット
 制作にあたり、大変お世話になっています。ありがとうございます  
 
-###スクリプトエンジン
+### スクリプトエンジン
 ・ティラノスクリプト 様 (c)ShikemokuMK 2012 http://tyrano.jp/  
 　MITライセンス(https://opensource.org/licenses/mit-license.php )に基づき使用しています
  
-###スクリプト関係
+### スクリプト関係
 ・keito-works 様 http://keito-works.com/  
 ・アオイサクラ 様 簡易コンフィグ画面プラグイン http://awoinekura.web.fc2.com/  
 ・ティラノスクリプト 製作テクニックwiki 様 http://tyrano.wiki.fc2.com/  
 
-###BGM  
+### BGM  
 ・おとわび 様 http://otowabi.com/  　
 ・クラシック名曲サウンドライブラリー様　http://classical-sound.seesaa.net/  
 
-###画像素材  
+### 画像素材  
 ・flickr 様 https://www.flickr.com/ (クレジット表記が必要なものは各画像に表記させていただきました)  
 ・和風素材.com 様 http://www.wafusozai.com/  
 ・ゆうあかり 様 http://light77.sakura.ne.jp/  
@@ -58,31 +58,32 @@ https://fumibako.github.io/script/
 ・＠名無しさん１  
 ・◆I9IhvvVdPo   
 
-###フォント  
+### フォント  
 ・衡山毛筆フォント-青二書道教室 様 http://www7a.biglobe.ne.jp/~kouzan/  
 ・M+ FONTS 様 http://mplus-fonts.osdn.jp/index.html  
 ・花園明朝 kamichi 様 https://ja.osdn.net/projects/hanazono-font/  
 ・マキナス もじワク研究 様 http://moji-waku.com/makinas-flat/index.html  
 
-##制作にご協力くださった方々  
+## 制作にご協力くださった方々  
 　＊　Special Thanks　＊  
 　　エリ花様、黒田ルート添削・校正者様、登場人物名付け親様、テストプレイヤーの皆様、淑女の皆様  
 
-##制作スタッフ  
-・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様  　
-・キャラクターグラフィック：	かいこ 、 ◆jsYiJcqRkk 
-・脚本：	◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk  
+## 制作スタッフ  
+・原案・企画：	◆/99/KAMIYU、◆8EASfQr/2Q、淑女の皆様  
+・キャラクターグラフィック：	かいこ 、 ◆jsYiJcqRkk  
+・脚本：	◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk  
 ・スクリプト：	吉里吉里Ver.システム原案…◆8EASfQr/2Q 、 ティラノスクリプトVer.…◆jsYiJcqRkk、＠名無しさん１  
-・その他(現まとめ役等)：	◆jsYiJcqRkk 
+・PV制作：	＠名無しさん１  
+・その他(現まとめ役等)：	◆jsYiJcqRkk  
 
   
   
-##　
-○ スクリプト担当より  
+## その他　
+○ スクリプト担当◆jsYiJcqRkkより  
 規約に「スクリプトはMITライセンスです」と書いたものの、全くスクリプトの知識ゼロからはじめた担当が  
 「こんな動作はどうスクリプトを書けばいいんだろう？」と試行錯誤  
 →「やっと動いた！」→(スクリプトの整理なんて思いつかないまま)→「さぁ次の作業！」的に作成したものです。  
 
 見づらくだいぶひどいスクリプトであることは自覚しています。それでもよかったら、見てみてください。  
-もし何かが参考になれば嬉しいです。改善案は大歓迎です。  
-2017年2月完成目標であるため、もし改善案をいただいた場合はその期限内に可能な範囲で対応させていただきます。
+もし何かが参考になれば嬉しいです。改善案は大歓迎です。  
+2017年3月完成済。2018年3月追加実装終了予定であるため、もし改善案をいただいた場合はその期限内に可能な範囲で対応させていただきます。
