@@ -247,6 +247,7 @@ background:#beb7e8;
 		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left">脚本</th><td>：</td><td>◆8EASfQr/2Q 、 ＠名無しさん１ 、 ◆I9IhvvVdPo 、 ◆ftAc29dlL. 、 ◆jsYiJcqRkk</td></tr>
 		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left">スクリプト<br></th><td>：</td><td> 吉里吉里Ver.システム原案…◆8EASfQr/2Q<br>
 		　　ティラノスクリプトVer.…◆jsYiJcqRkk、＠名無しさん１</td></tr>
+		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left">PV制作<br></th><td>：</td><td>＠名無しさん１<br>
 		<tr style="margin-left:5%; border-bottom:1px solid #ddddef;"><th align="left">Special Thanks<br></th><td>：</td><td> エリ花様 、 黒田ルート添削・校正者様 、 登場人物名付け親様 、 テストプレイヤーの皆様 、 淑女の皆様</td></tr>
 		<tr><th align="left">その他</th><td>：</td><td> ◆jsYiJcqRkk　</td></tr>
 	</table>
