@@ -210,7 +210,7 @@ $(".fixlayer").css("opacity",0);
 [wait time=10]
 [if exp="sf.event_kuroda_11_1 == 1"]
 [button name="kuroda_11_1" graphic="day11_1.png" target="kuroda_sinario" x=&tf.x1 y=&tf.y7 exp="tf.jp_sinario='kuroda_11_1'"]
-[image name="day,kuroda_11_4" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y7 visible=true]
+[image name="day,kuroda_11_1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x1+140" y=&tf.y7 visible=true]
 [endif]
 
 ;11月2週 sf.event_kuroda_11_2
