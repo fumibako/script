@@ -8,8 +8,8 @@ https://fumibako.github.io/script/play/
 公式サイトプレビューはこちらになります  
 https://fumibako.github.io/script/  
 
-## スタッフ作業用リンク(完成後このリンクは消す予定です)    
-・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  
+## スタッフ作業用リンク(完成後も不具合修正等目的である程度の期間残します。修正等が不要になれば消す予定です)    
+・四条シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/sijyou  
 ・葛城宮シナリオ：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/katuraginomiya  
 ・藤枝シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/hujieda    
 ・財前シナリオ　：https://github.com/fumibako/script/tree/gh-pages/play/data/scenario/zaizen    
@@ -47,9 +47,9 @@ https://fumibako.github.io/script/
 ・赤いガラスの宮殿 様 http://www.geocities.jp/redglass_palace/  
 ・フリー素材屋Hoshino 写真提供者 usagi_s 様 http://www.s-hoshino.com/  
 ・明治村画像庫2 様 http://d.hatena.ne.jp/meiji_photo/  
-・otomegtx 様<br>
+・otomegtx 様  
 ・[PHOTO STOCKER]　様 http://photo.v-colors.com/  
-・YUKI 様 http://photo.v-colors.com/329.html
+・YUKI 様 http://photo.v-colors.com/329.html  
 ・フリー素材*ヒバナ 様 http://hibana.rgr.jp/  
 ・deviantart-gimei 様 http://gimei.deviantart.com/art/Japanese-style-image-set-102424728  
 ・pixiv : mit81 様 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=31433317  
