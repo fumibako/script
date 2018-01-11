@@ -636,7 +636,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『 虫干し 』6月　好感度条件は除くかわりに「葛城宮イベント1を見ている」を条件に追加
 ;(葛城宮は最初の手紙がイベント中に届き返信済となるため、好感度条件があると「自分から送る」ことに気付かないプレイヤーさんが詰まってしまう可能性が高めであるため)
-[if exp="f.okeiko_month == 6 && f.event_katuraginomiya[1] == 1 && f.fumi_toutyaku_katuraginomiya[22] == 0"]
+[if exp="(f.okeiko_month == 6 || ( f.okeiko_month == 7 && f.okeiko_week != 4 )) && f.event_katuraginomiya[1] == 1 && f.fumi_toutyaku_katuraginomiya[22] == 0"]
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_22
 [endif]
