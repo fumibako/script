@@ -8,6 +8,14 @@
 [preload storage="data/fgimage/girl/S/mayu_yowa.png"]
 [preload storage="data/fgimage/girl/S/me_fusi1.png"]
 [preload storage="data/fgimage/girl/S/kuti_futuu.png"]
+[preload storage="data/fgimage/girl/S/base_zED.png"]
+[preload storage="data/fgimage/girl/S/base_ryoute_zED.png"]
+[preload storage="data/fgimage/girl/S/katate_zED.png"]
+[preload storage="data/fgimage/girl/S/ryoute_zED.png"]
+[wait time=10]
+;↓テスト数値表示をカット
+[eval exp="tf.test_gamen = false"]
+[wait time=10]
 
 ;=============================================
 ;表情テスト
@@ -17,51 +25,75 @@
 ;背景変更:主人公邸_庭
 [chara_mod name="bg" storage="bg/plane_sakura.jpg"]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
-[イベントシーン構築]
+[イベントシーン構築ボタン無し版]
+[wait time=10]
 
 [主人公ポーズ通常]
 [eval exp="f.gra_girl_pose='[主人公ポーズ通常]'"]
 [主人公通常]
 [eval exp="f.gra_girl_face='[主人公通常]'"]
 [eval exp="f.gra_girl_part='mayu'"]
+[eval exp="f.gra_girl_base='normal'"]
+
+[wait time=10]
 
 [cm]
+[wait time=10]
 [layopt layer=24 visible=true]
 [ptext text="マクロ：ポーズ" layer=24 size=18 x=30 y=10 color=black bold=bold]
-[ptext text="表　情" layer=24 size=18 x=30 y=180 color=black bold=bold]
-[ptext text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-[ptext text="アニメーション" layer=24 size=18 x=430 y=10 color=black bold=bold]
+[ptext text="表　情" layer=24 size=18 x=30 y=290 color=black bold=bold]
+[ptext text="表　情" layer=24 size=18 x=300 y=10 color=black bold=bold]
+[ptext text="アニメーション" layer=24 size=18 x=470 y=10 color=black bold=bold]
 [ptext text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
+[wait time=10]
 
 *text
-[glink target="pose_01" text="[主人公ポーズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 font_color=black]
-[glink target="pose_02" text="[主人公ポーズ片手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 font_color=black]
-[glink target="pose_03" text="[主人公ポーズ両手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=black]
-[glink target="pose_04" text="[主人公ポーズ指]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=black]
+[glink target=text text="通常" graphic="select_waku_x500.png" size=10 width="35" x=0 y=30 font_color=steelblue exp="f.gra_girl_base='normal'"]
+[glink target=pose_zED_01 text="財前ED" graphic="select_waku_x500.png" size=10 width="35" x=70 y=30 font_color=steelblue exp="f.gra_girl_base='zED'"]
+[glink target=text text="財前ドレス" graphic="select_waku_x500.png" size=10 width="35" x=140 y=30 font_color=steelblue exp="f.gra_girl_base='zDress'"]
+[glink target=text text="四条ED" graphic="select_waku_x500.png" size=10 width="35" x=0 y=60 font_color=steelblue exp="f.gra_girl_base='sED'"]
+[glink target=text text="四条お出かけ" graphic="select_waku_x500.png" size=10 width="35" x=70 y=60 font_color=steelblue exp="f.gra_girl_base='sKimono'"]
+[glink target=text text="葛城宮ED" graphic="select_waku_x500.png" size=10 width="35" x=140 y=60 font_color=steelblue exp="f.gra_girl_base='kED'"]
+[glink target=text text="葛城お出かけ" graphic="select_waku_x500.png" size=10 width="35" x=210 y=60 font_color=steelblue exp="f.gra_girl_base='kKimono'"]
+[glink target=text text="藤枝お出かけ1" graphic="select_waku_x500.png" size=10 width="35" x=0 y=90 font_color=steelblue exp="f.gra_girl_base='hKimono1'"]
+[glink target=text text="藤枝お出かけ2" graphic="select_waku_x500.png" size=10 width="35" x=70 y=90 font_color=steelblue exp="f.gra_girl_base='hKimono2'"]
 
-[glink target="face_13" text="[主人公柔和ほほえみ１]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 font_color=black]
-[glink target="face_14" text="[主人公困り照れ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 font_color=black]
+[if exp="f.gra_girl_base=='normal'"]
+[glink target="pose_01" text="[主人公ポーズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
+[glink target="pose_02" text="[主人公ポーズ片手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 font_color=black]
+[glink target="pose_03" text="[主人公ポーズ両手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 font_color=black]
+[glink target="pose_04" text="[主人公ポーズ指]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 font_color=black]
+[endif]
 
-[glink target="face_01" text="[主人公通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 font_color=black]
-[glink target="face_02" text="[主人公伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 font_color=black]
-[glink target="face_03" text="[主人公驚]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 font_color=black]
-[glink target="face_04" text="[主人公困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 font_color=black]
-[glink target="face_05" text="[主人公困りほほえみ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 font_color=black]
-[glink target="face_06" text="[主人公照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 font_color=black]
-[glink target="face_07" text="[主人公照れ目普通]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 font_color=black]
-[glink target="face_08" text="[主人公ほほえみ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 font_color=black]
-[glink target="face_09" text="[主人公笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 font_color=black]
-[glink target="face_10" text="[主人公ふぅ閉]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 font_color=black]
-[glink target="face_11" text="[主人公憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 font_color=black]
-[glink target="face_12" text="[主人公真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 font_color=black]
+[if exp="f.gra_girl_base=='zED'"]
+[glink target="pose_zED_01" text="[主人公ポーズ財前ED通常]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=150 font_color=black]
+[glink target="pose_zED_02" text="[主人公ポーズ財前ED片手]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=180 font_color=black]
+[glink target="pose_zED_03" text="[主人公ポーズ財前ED両手]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=210 font_color=black]
+[endif]
 
-[glink target="face_21" text="[主人公目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=380 y=30 font_color=black]
+[glink target="face_13" text="[主人公柔和ほほえみ１]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
+[glink target="face_14" text="[主人公困り照れ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 font_color=black]
 
-[glink target="face_22" text="[主人公伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=380 y=60 font_color=black]
+[glink target="face_01" text="[主人公通常]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=30 font_color=black]
+[glink target="face_02" text="[主人公伏目]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=60 font_color=black]
+[glink target="face_03" text="[主人公驚]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=90 font_color=black]
+[glink target="face_04" text="[主人公困り]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=120 font_color=black]
+[glink target="face_05" text="[主人公困りほほえみ]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=150 font_color=black]
+[glink target="face_06" text="[主人公照れ]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=180 font_color=black]
+[glink target="face_07" text="[主人公照れ目普通]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=210 font_color=black]
+[glink target="face_08" text="[主人公ほほえみ]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=240 font_color=black]
+[glink target="face_09" text="[主人公笑顔]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=270 font_color=black]
+[glink target="face_10" text="[主人公ふぅ閉]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=300 font_color=black]
+[glink target="face_11" text="[主人公憂い]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=330 font_color=black]
+[glink target="face_12" text="[主人公真剣]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=360 font_color=black]
 
-[glink target="face_23" text="[主人公目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=380 y=90 font_color=black]
+[glink target="face_21" text="[主人公目パチ1回]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=30 font_color=black]
 
-[glink target="face_24" text="[主人公目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=380 y=120 font_color=black]
+[glink target="face_22" text="[主人公伏目パチ1回]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=60 font_color=black]
+
+[glink target="face_23" text="[主人公目閉じ]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=90 font_color=black]
+
+[glink target="face_24" text="[主人公目を開く]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=120 font_color=black]
 
 
 [glink target="mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=30 font_color=steelblue]
@@ -127,7 +159,6 @@ this.kag.variable.tf.system.backlog.pop();
 [endscript]
 [s]
 
-
 *mayu
 [eval exp="f.gra_girl_part='mayu'"]
 @jump target=text
@@ -144,6 +175,20 @@ this.kag.variable.tf.system.backlog.pop();
 [eval exp="f.gra_girl_part='emo'"]
 @jump target=text
 
+*pose_zED_01
+[主人公ポーズ財前ED通常]
+[eval exp="f.gra_girl_pose='[主人公ポーズ財前ED通常]'"]
+@jump target=text
+
+*pose_zED_02
+[主人公ポーズ財前ED片手]
+[eval exp="f.gra_girl_pose='[主人公ポーズ財前ED片手]'"]
+@jump target=text
+
+*pose_zED_03
+[主人公ポーズ財前ED両手]
+[eval exp="f.gra_girl_pose='[主人公ポーズ財前ED両手]'"]
+@jump target=text
 
 *pose_01
 [主人公ポーズ通常]
@@ -406,6 +451,7 @@ this.kag.variable.tf.system.backlog.pop();
 @jump target=text
 
 *back_test
+[eval exp="tf.test_gamen = true"]
 [freeimage layer = 24]
 [イベントシーン終了]
 [cm]
