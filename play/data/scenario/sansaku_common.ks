@@ -387,9 +387,8 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,0,0,1,2,
 #
 町へ出た。[r]
 陽気な歌声が聞こえてくる。[r]
-「～夏も近づく八十八夜」
-[autosave]
-[p]
+「～夏も近づく八十八夜」[p]
+
 ;【BGM】筍の訪れ(町
 [playbgm storage="machi_takenoko.ogg" loop=true]
 ;↑この歌詞は使用に問題無い旨（『茶摘み』作詞者不詳、文部省唱歌、パブリックドメイン）をJASRAC検索等にて確認済
@@ -416,22 +415,12 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("友人の話題",2,0,0,1,2,
 
 [wait time=10]
 
+;より安定すると思われるglinkに変更します
+[glink target=*sansaku_machi_common_02_sentaku01_ok text="お茶をいただく" size=25 width="300" x=280 y=80 graphic="select_waku_x500.png" font_color=black]
+[glink target=*sansaku_machi_common_02_sentaku01_no text="　断　　　　　る" size=25 width="300" x=280 y=200 graphic="select_waku_x500.png" font_color=black]
+
 [whosay name=お茶屋の娘 color="#5b7e23"]
 「よかったら、お茶を一杯いかがですか？」
-
-[image layer=26 x=260 y=80 storage="button/select_waku_x500.png"]
-[wait time=10]
-[image layer=26 x=260 y=190 storage="button/select_waku_x500.png"]
-[wait time=10]
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=32]
-[link target=*sansaku_machi_common_02_sentaku01_ok]お茶をいただく[endlink][r]
-[r][r][r]
-[link target=*sansaku_machi_common_02_sentaku01_no]　断　　　　　る[endlink][r]
-[resetfont]
 
 ;メッセージレイヤサイズを会話窓用に設定変更
 [position layer=message0 left=240 width=700 height=170 top=415 page=fore margint="50"]

@@ -12,7 +12,7 @@
 
 ;◆共通イベント2判定【新茶】4月3週～5月2週、期間中に町へ行くと1度だけ発生
 [if exp="((f.okeiko_month==4 && (f.okeiko_week==3 || f.okeiko_week==4)) || (f.okeiko_month==5 && (f.okeiko_week==1 || f.okeiko_week==2))) && f.event_machi_common[2]==0"]
-	@jump storage="sansaku_common.ks" target=*sansaku_machi_common_02
+	@jump storage="sansaku_common_tea.ks" target=*sansaku_machi_common_02
 [endif]
 
 ;◆共通イベント1判定【さつき】5月3週～6月2週、期間中に町へ行くと1度だけ発生(以前は黒田イベントだったため、変数やjump先ラベルにその名残があります)
