@@ -12,6 +12,8 @@
 [preload storage="data/fgimage/girl/S/base_ryoute_zED.png"]
 [preload storage="data/fgimage/girl/S/katate_zED.png"]
 [preload storage="data/fgimage/girl/S/ryoute_zED.png"]
+[preload storage="data/fgimage/girl/S/base_zDress.png"]
+[preload storage="data/fgimage/girl/S/katate_zDress.png"]
 [wait time=10]
 ;↓テスト数値表示をカット
 [eval exp="tf.test_gamen = false"]
@@ -50,7 +52,7 @@
 *text
 [glink target=text text="通常" graphic="select_waku_x500.png" size=10 width="35" x=0 y=30 font_color=steelblue exp="f.gra_girl_base='normal'"]
 [glink target=pose_zED_01 text="財前ED" graphic="select_waku_x500.png" size=10 width="35" x=70 y=30 font_color=steelblue exp="f.gra_girl_base='zED'"]
-[glink target=text text="財前ドレス" graphic="select_waku_x500.png" size=10 width="35" x=140 y=30 font_color=steelblue exp="f.gra_girl_base='zDress'"]
+[glink target=pose_zDress_01 text="財前ドレス" graphic="select_waku_x500.png" size=10 width="35" x=140 y=30 font_color=steelblue exp="f.gra_girl_base='zDress'"]
 [glink target=text text="四条ED" graphic="select_waku_x500.png" size=10 width="35" x=0 y=60 font_color=steelblue exp="f.gra_girl_base='sED'"]
 [glink target=text text="四条お出かけ" graphic="select_waku_x500.png" size=10 width="35" x=70 y=60 font_color=steelblue exp="f.gra_girl_base='sKimono'"]
 [glink target=text text="葛城宮ED" graphic="select_waku_x500.png" size=10 width="35" x=140 y=60 font_color=steelblue exp="f.gra_girl_base='kED'"]
@@ -69,6 +71,11 @@
 [glink target="pose_zED_01" text="[主人公ポーズ財前ED通常]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=150 font_color=black]
 [glink target="pose_zED_02" text="[主人公ポーズ財前ED片手]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=180 font_color=black]
 [glink target="pose_zED_03" text="[主人公ポーズ財前ED両手]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=210 font_color=black]
+[endif]
+
+[if exp="f.gra_girl_base=='zDress'"]
+[glink target="pose_zDress_01" text="[主人公ポーズ財前ドレス通常]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=150 font_color=black]
+[glink target="pose_zDress_02" text="[主人公ポーズ財前ドレス片手]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=180 font_color=black]
 [endif]
 
 [glink target="face_13" text="[主人公柔和ほほえみ１]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
@@ -173,6 +180,17 @@ this.kag.variable.tf.system.backlog.pop();
 
 *emo
 [eval exp="f.gra_girl_part='emo'"]
+@jump target=text
+
+
+*pose_zDress_01
+[主人公ポーズ財前ドレス通常]
+[eval exp="f.gra_girl_pose='[主人公ポーズ財前ドレス通常]'"]
+@jump target=text
+
+*pose_zDress_02
+[主人公ポーズ財前ドレス片手]
+[eval exp="f.gra_girl_pose='[主人公ポーズ財前ドレス片手]'"]
 @jump target=text
 
 *pose_zED_01
