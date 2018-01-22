@@ -31,7 +31,7 @@ $('.list').remove();
 [イベントシーン構築ボタン無し版]
 
 #
-[主人公ポーズ通常]
+[主人公ポーズ財前ED通常]
 [主人公通常]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
@@ -280,7 +280,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [wait time=100]
 ;====================================================================================
 
-;[主人公ポーズ通常]
+;[主人公ポーズ財前ED通常]
 [主人公目伏柔]
 [主人公眉下げ下]
 [主人公口ほほえみ]
@@ -569,7 +569,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】主人公：片手を口にやり目伏せ悲しみ
 [主人公憂い]
 [主人公涙]
-[主人公ポーズ片手]
+[主人公ポーズ財前ED片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （ああ、なんて胸が苦しいの。[r]
 [sp]ただ、財前様が女性と踊っていただけなのに）[p]
@@ -619,7 +619,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [財前口通常]
 [fadeoutbgm time=3000]
 [主人公効果消]
-[主人公ポーズ通常]
+[主人公ポーズ財前ED通常]
 #
 財前様のお母様の声が、胸をよぎる。
 
@@ -726,7 +726,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;[chara_mod name="bg" storage="bg/zaizen_paty_niwa.jpg" time=1000]
 [財前ベース燕尾服]
 [財前通常]
-[主人公ポーズ通常]
+[主人公ポーズ財前ED通常]
 [主人公通常]
 [主人公伏目]
 [主人公眉下げ下]
