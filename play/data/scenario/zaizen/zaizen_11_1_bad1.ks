@@ -28,7 +28,7 @@ $('.list').remove();
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 [イベントシーン構築ボタン無し版]
 #
-[主人公ポーズ通常]
+[主人公ポーズ財前ドレス通常]
 [主人公通常]
 [財前ベース燕尾服]
 [財前通常]
