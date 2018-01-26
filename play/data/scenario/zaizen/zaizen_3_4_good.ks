@@ -151,8 +151,8 @@ $('.list').remove();
 [eval exp="sf.FButton='OFF'"]
 ;背景変更:黒茶・和紙風 ゆっくりと1300 間がないので1500
 [image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=1500 visible=true]
-[wait time=10]
-[主人公ポーズ財前ED通常]
+[wait time=1300]
+[主人公ポーズ通常]
 [主人公通常]
 ;メッセージウィンドウ消去から復帰時の顔グラをonに戻します
 [eval exp="f.kaogura = 'on'"]
