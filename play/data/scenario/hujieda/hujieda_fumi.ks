@@ -17,12 +17,16 @@ $(".1_fore").empty();
 ;『鳩の届けた手紙 一』←仮タイトルです。
 ;=============================================
 *hujieda_fumi01
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 一』[p]
 [endif]
 [手紙藤枝 fumi_number=]
 
+*hujieda_fumi01_1
+[cm]
 箏の奏者様へ[l][r]
 [r]
 [sp]桜の花が咲きまた散る季節[r]
@@ -32,14 +36,24 @@ $(".1_fore").empty();
 その音色に拙いながら才能の鱗片を感じました。[r]
 [r]
 [sp][ruby text=こと]箏の音が心に響き[r]
-僕はこうして手紙を書き綴りたくなり、筆を取りました。[p]
+僕はこうして手紙を書き綴りたくなり、筆を取りました。
+[glink target=*hujieda_fumi01_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi01_2
+[cm]
 [sp]貴方様の筝が上達し益々成長することを[r]
 願っています。[r]
 [r]
 [sp]ちなみに毎日、[ruby text=に]二～[ruby text=さん]三時間ほど練習すると効果的です。[r]
 [r]
 [sp]僕は名乗るほどの者ではありませんので[r]
-この手紙の事、僕の事はお構いなく。[p]
+この手紙の事、僕の事はお構いなく。
+[glink target=*hujieda_fumi01_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi01_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi01_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
@@ -53,12 +67,15 @@ $(".1_fore").empty();
 ;『鳩の届けた手紙 二』←仮タイトルです。
 ;=============================================
 *hujieda_fumi02
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 二』[p]
 [endif]
 [手紙藤枝 fumi_number=]
-
+*hujieda_fumi02_1
+[cm]
 [ruby text=こと]箏の奏者様へ[l][r]
 [r]
 [sp]緑照り映える時節。
@@ -70,8 +87,12 @@ $(".1_fore").empty();
 [r]
 [sp]母が[ruby text=こと]箏がとても上手で僕は母の[ruby text=こと]箏の音色が好きでした。[r]
 [sp]貴方様の音は母と違った魅力があります。[r]
-[sp]母は華やかで優美な調べでした。[p]
+[sp]母は華やかで優美な調べでした。
+[glink target=*hujieda_fumi02_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 ;アイコンにかかっているので分割します
+*hujieda_fumi02_2
+[cm]
 [r][sp]
 [sp]貴方の音は初々しく楚々とした調べです。[r]
 [sp]つま弾く音は、どの音も、とても丁寧な響きを持っていて[r]
@@ -80,8 +101,13 @@ $(".1_fore").empty();
 [sp]極めることは貴方様の為にもなると思います。[r]
 [sp]続けることは嫌な事もありますが、喜びも多くあります。[r]
 [r]
-[sp]また貴方様の[ruby text=こと]箏の音を聴けることを願っています。[p]
-
+[sp]また貴方様の[ruby text=こと]箏の音を聴けることを願っています。
+[glink target=*hujieda_fumi02_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi02_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi02_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
@@ -95,11 +121,15 @@ $(".1_fore").empty();
 ;『鳩の届けた手紙 三』←仮タイトルです。
 ;=============================================
 *hujieda_fumi03
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 三』[p]
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi03_1
+[cm]
 [ruby text=こと]箏の奏者様へ[l][r]
 [r]
 [sp]雨に萌ゆる緑が風情を漂わせる季節。[r]
@@ -112,7 +142,10 @@ $(".1_fore").empty();
 [r]
 [sp]まさか指の感覚が麻痺するほどに練習していらっしゃるのですか？[r]
 [sp]早く上達したい時もあります。[r]
-[sp]僕も睡眠を削り楽器を弾くこともありました。[p]
+[sp]僕も睡眠を削り楽器を弾くこともありました。
+[glink target=*hujieda_fumi03_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi03_2
 ;アイコン
 [sp]ですがあまり熱心に練習しても調子を崩す時もあります。[r]
 [sp]自分を追い詰めていくことは必ずしも[r]
@@ -123,8 +156,14 @@ $(".1_fore").empty();
 [sp]焦らずとも貴方様は丁寧にお箏を慈しみ優しく弾けていました。[r]
 [sp]必ず上達できる方だと思います。[r]
 [r]
-[sp]初心を忘れずゆっくり上達していきましょう。[p]
+[sp]初心を忘れずゆっくり上達していきましょう。
+[glink target=*hujieda_fumi03_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi03_close" size=5 x=880 y=24 width=50 height=50]
+[s]
 
+*hujieda_fumi03_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
@@ -139,12 +178,15 @@ $(".1_fore").empty();
 ;『鳩の届けた手紙 四』←仮タイトルです。
 ;=============================================
 *hujieda_fumi04
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 四』[p]
 [endif]
 [手紙藤枝 fumi_number=]
-
+*hujieda_fumi04_1
+[cm]
 [sp][ruby text=こと]箏の奏者様へ[l][r]
 [r]
 [sp]盛夏のみぎり、[r]
@@ -156,7 +198,10 @@ $(".1_fore").empty();
 澄んだ音をかき鳴らされています。[r]
 [r]
 貴方様は心映えの素晴らしい方 なのかもしれませんね。[r]
-[sp]偶然でいいので一目会いたいなどと思っていました。[p]
+[sp]偶然でいいので一目会いたいなどと思っていました。
+[glink target=*hujieda_fumi04_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi04_2
 [sp][r][r]
 [sp]……申し訳ありません。　こんなことを書いて。[r]
 ですが紙は貴重なので、このまま綴ります。[r]
@@ -164,7 +209,12 @@ $(".1_fore").empty();
 [sp]これほど短期間に上達されると思っていませんでした。[r]
 [r]
 [sp]きっと貴方様はこれからも成長するでしょう。[r]
-僕も貴方様の成長が楽しみです。[p]
+僕も貴方様の成長が楽しみです。
+[glink target=*hujieda_fumi04_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi04_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi04_3
 [sp][r][r]
 追伸
 [sp]僕の伝書鳩が、最近頻繁に貴方様のところへ[r]
@@ -172,8 +222,14 @@ $(".1_fore").empty();
 [r]
 [sp]この伝書鳩は[ruby text=こと]箏の音色が気に入っているのか[r]
 よく母のお[ruby text=こと]箏の練習を聴いていました。[r]
-[sp]貴方様の邪魔になっていないといいのですが。[p]
+[sp]貴方様の邪魔になっていないといいのですが。
+[glink target=*hujieda_fumi04_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi04_close" size=5 x=880 y=24 width=50 height=50]
+[s]
 
+*hujieda_fumi04_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
@@ -188,12 +244,16 @@ $(".1_fore").empty();
 ;『鳩の届けた手紙 五』←仮タイトルです。
 ;=============================================
 *hujieda_fumi05
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙  五』[p]
 [endif]
 [手紙藤枝 fumi_number=]
 
+*hujieda_fumi05_1
+[cm]
 [名字]　[名前]様へ [l][r]
 [r]
 [sp]降るような蝉しぐれ。[r]
@@ -206,7 +266,11 @@ $(".1_fore").empty();
 [r]
 [sp]正直に伝えましょう。[r]
 [sp]僕はただの郵便配達員です。[r]
-[sp]貴方様が気にされるような身分のものでもありません。[p]
+[sp]貴方様が気にされるような身分のものでもありません。
+[glink target=*hujieda_fumi05_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi05_2
 [sp]僕がただの郵便配達員と知って貴方様が[r]
 どんな反応されるのか怖いです。[r]
 [sp][r]
@@ -216,8 +280,26 @@ $(".1_fore").empty();
 [sp]これで僕が書くのは最後の手紙とします。[r]
 お箏を聞かせていただいてありがとうございました。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇
+[glink target=*hujieda_fumi05_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi05_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 
+*hujieda_fumi05_3
+
+[sp]追伸[sp]貴方が大切な文通の最中だという事に気づいてました。[r]
+[r]
+[sp]貴方の文通相手に名乗り出るような行為だったのかもしれません。[r]
+[sp]誤解させて申し訳ありませんでした。[r]
+[sp]今、文通されている方と親しくなってください。[r]
+[sp]僕は貴方の幸せを願っているのです。
+
+[glink target=*hujieda_fumi05_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi05_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi05_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
@@ -232,11 +314,15 @@ $(".1_fore").empty();
 ;『鳩の届けた手紙 六』←仮タイトルです。
 ;=============================================
 *hujieda_fumi06
+[clearfix]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『鳩の届けた手紙 六』[p]
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi06_1
+[clearstack]
+[cm]
 [名字][名前] 様へ[l][r]
 [r]
 [sp]秋色次第に濃く、貴方様におかれましてはお変わりない[r]
@@ -250,7 +336,10 @@ $(".1_fore").empty();
 [r]
 [sp]貴方様は僕の身分に失望を覚えなかったのですね、[r]
 [sp]心から喜んでいる僕がいます。[r]
-[sp]まだお会いしたこともないのになぜでしょうか？　[p]
+[sp]まだお会いしたこともないのになぜでしょうか？　
+[glink target=*hujieda_fumi06_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi06_2
 ;アイコン回避
 [sp][r][r]
 [sp]少しの間だけでいいです、僕とお手紙を交わして頂けませんか？[r]
@@ -260,7 +349,12 @@ $(".1_fore").empty();
 ミルクホールでのピアノの演奏をしています。[r]
 [r]
 [sp]目まぐるしく忙しい毎日ですが、[r]
-貴方のお[ruby text=こと]箏の音が、僕に貴方の事を考えさせるのでしょうか？　[p]
+貴方のお[ruby text=こと]箏の音が、僕に貴方の事を考えさせるのでしょうか？
+[glink target=*hujieda_fumi06_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi06_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi06_3
 [sp][r]
 [sp]高貴な身分のものは手紙を交わし結婚相手を選びます。[r]
 [sp]つい最近、家が没落するまでは僕も華族の一人でした、[r]
@@ -270,8 +364,14 @@ $(".1_fore").empty();
 [sp]少しの間だけでいいです……我ながら女々しいと思うのですが[r]
 貴方様からのお返事を待っています。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 
+[glink target=*hujieda_fumi06_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi06_close" size=5 x=880 y=24 width=50 height=50]
+[s]
 
+*hujieda_fumi06_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆イベント中に読むため未読→既読処理はコメントアウトします
@@ -288,6 +388,8 @@ $(".1_fore").empty();
 ;『趣味について』
 ;=============================================
 *hujieda_fumi07
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『趣味について』[p]
@@ -296,6 +398,8 @@ $(".1_fore").empty();
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi07_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました　貴方様におかれましてますますの[r]
@@ -307,7 +411,10 @@ $(".1_fore").empty();
 [r]
 [sp]楽器を弾くと嫌な事が忘れられます。[r]
 好きな曲を弾くときは夢中になって曲から色々な情景が[r]
-思い浮かび時間を忘れるほどです。[p]
+思い浮かび時間を忘れるほどです。
+[glink target=*hujieda_fumi07_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi07_2
 [sp]それから作曲することでしょうか。[r]
 自然の情景から旋律を思い浮かべたりすることもありますが[r]
 特に僕は詩を作り、メロディを考え、一句一句に合う[r]
@@ -318,7 +425,13 @@ $(".1_fore").empty();
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
+[sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇
+[glink target=*hujieda_fumi07_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi07_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi07_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -335,12 +448,16 @@ $(".1_fore").empty();
 ;『仕事について』
 ;=============================================
 *hujieda_fumi08
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『仕事について』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi08_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました　貴方様におかれましてますますの[r]
@@ -352,7 +469,10 @@ $(".1_fore").empty();
 [r]
 [sp]仕事の時は軍手で指を保護してますが[r]
 やはり墨汁や紙の汚れで指先が少し汚れたりするので[r]
-最初は嫌でした。[p]
+最初は嫌でした。
+[glink target=*hujieda_fumi08_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi08_2
 [sp]今は一軒一軒手紙を届けることは[r]
 人の想いを伝える大切なことだと思っています。[r]
 [r]
@@ -363,7 +483,13 @@ $(".1_fore").empty();
 通っていました。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
+[sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇
+[glink target=*hujieda_fumi08_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi08_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi08_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -380,12 +506,16 @@ $(".1_fore").empty();
 ;『友人について 』
 ;=============================================
 *hujieda_fumi09
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『友人について』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi09_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました　貴方様におかれましてますますの[r]
@@ -398,14 +528,23 @@ $(".1_fore").empty();
 [sp]幼馴染や音楽学校で友人がいます。[r]
 [r]
 [sp]家が没落して親戚とは、縁が切れたようなものですが、[r]
-友人は今でも僕によくしてくれます。[p]
+友人は今でも僕によくしてくれます。
+[glink target=*hujieda_fumi09_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi09_2
 [sp]彼らは本当に僕には勿体ないぐらいの友人達で[r]
 いつもありがたく思っています。[r]
 [r]
 [sp][名字]様 のご友人についても知りたいと思っています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
+[sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇
+[glink target=*hujieda_fumi09_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi09_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi09_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -421,12 +560,16 @@ $(".1_fore").empty();
 ;『 家族について 』
 ;=============================================
 *hujieda_fumi10
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『 家族について 』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi10_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました　貴方様におかれましてますますの[r]
@@ -438,7 +581,10 @@ $(".1_fore").empty();
 [r]
 [sp]正直に話していいものか、[r]
 家が没落た頃母は風邪を引き肺炎になり、そのまま他界[r]
-しました。[p]
+しました。
+[glink target=*hujieda_fumi10_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi10_2
 [r]
 [sp]父も郵便関係の職につき、姉は慣れないながら家事を[r]
 切り盛りしてくれています。[r]
@@ -449,7 +595,14 @@ $(".1_fore").empty();
 [sp][名字]様のご家族についても知りたいと思っています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
+[sp]　　　　　　　　　　　　　　　　　　　　藤枝　肇
+[glink target=*hujieda_fumi10_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi10_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi10_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -465,12 +618,16 @@ $(".1_fore").empty();
 ;『 将来について 』
 ;=============================================
 *hujieda_fumi11
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『 将来について 』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi11_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました　貴方様におかれましてますますの[r]
@@ -483,7 +640,11 @@ $(".1_fore").empty();
 精一杯ですがなんとか見通しは立ちつつあります。[r]
 [r]
 [sp]独逸に留学するために、独学ですが独逸語を[r]
-大体覚えました。[p]
+大体覚えました。
+[glink target=*hujieda_fumi11_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi11_2
 [sp]国から海外へ留学する人数は限られていますが、[r]
 友人や先生は今でもよくしてくれて、僕も期待に応えようと[r]
 思っています。[r]
@@ -495,7 +656,13 @@ $(".1_fore").empty();
 [sp][名字]様はどんな未来を考えているのでしょうか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇
+[glink target=*hujieda_fumi11_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi11_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi11_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -511,12 +678,16 @@ $(".1_fore").empty();
 ;『 読書について 』
 ;=============================================
 *hujieda_fumi12
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『 読書について 』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi12_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。[r]
@@ -547,12 +718,16 @@ $(".1_fore").empty();
 ;『 スポーツについて 』
 ;=============================================
 *hujieda_fumi13
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『 スポーツについて 』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi13_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。[r]
@@ -563,7 +738,11 @@ $(".1_fore").empty();
 [sp]貴方様はどんな競技が好きなのでしょうか？[r]
 [r]
 [sp]運動をすると体の調子が良くなりますし、[r]
-体力がつけば病気になりにくいといわれてます。[p]
+体力がつけば病気になりにくいといわれてます。
+[glink target=*hujieda_fumi13_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi13_2
 [sp]僕は学校にいたときはピアノを専攻してましたが、[r]  
 楽器によっては肺活量が必須な楽器もあり、[r]
 同期の学生とよく体力づくりにも励みました。[r]
@@ -572,7 +751,14 @@ $(".1_fore").empty();
 [r]
 [sp]貴方様はスポーツする機会はあるのでしょうか？[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi13_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi13_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi13_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -588,12 +774,16 @@ $(".1_fore").empty();
 ;『 食事について 』
 ;=============================================
 *hujieda_fumi14
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『 食事について 』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi14_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました　[r]
@@ -606,14 +796,25 @@ $(".1_fore").empty();
 [r]
 [sp]姉の心のこもった料理は少々出来が焦げていたり、[r]
 味が薄くても美味しいものです。[r]
-[sp] いつもすべて平らげてしまいます。[p]
+[sp] いつもすべて平らげてしまいます。
+[glink target=*hujieda_fumi14_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi14_2
 [r]
 [sp]大衆食堂なら安く、美味しいものがたべれそうですね。[r]  
 [r]
 [sp][名字] 様はどんなお料理が好きでしょうか？[r]
 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi14_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi14_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi14_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -629,12 +830,16 @@ $(".1_fore").empty();
 ;『 観劇について 』
 ;=============================================
 *hujieda_fumi15
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『 観劇について 』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi15_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -645,7 +850,10 @@ $(".1_fore").empty();
 [sp]我が国でもきっと観劇も盛んになるでしょう。 [r]
 [r]
 [sp]僕も一度だけ歌劇を見にいたことがあります。[r]
-[sp] 演劇と歌がとても素晴らしく鳥肌が立ちました。[p]
+[sp] 演劇と歌がとても素晴らしく鳥肌が立ちました。
+[glink target=*hujieda_fumi15_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi15_2
 [r]
 [sp]かのモーツァルトもオペラの作曲もしたとか。[r]
 [sp]僕も機会があればもう一度歌劇を[r]
@@ -654,7 +862,13 @@ $(".1_fore").empty();
 [sp][名字]様も一度見に行かれてはどうでしょうか？[r]
 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi15_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi15_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi15_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -670,12 +884,16 @@ $(".1_fore").empty();
 ;『 猫について 』
 ;=============================================
 *hujieda_fumi16
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『 猫について 』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi16_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -684,7 +902,10 @@ $(".1_fore").empty();
 [sp]家では鳩を買っているので[r]
 猫は寄せ付けないようにしているのですが、 [r]
 せっかく買ったお魚を猫に食べられたと、[r]
-姉が嘆いていました。[p]
+姉が嘆いていました。
+[glink target=*hujieda_fumi16_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi16_2
 [r]
 [sp]猫も生きるのに必死なのですが、[r]
 その時は少し僕も猫を恨みました。[r]
@@ -692,7 +913,13 @@ $(".1_fore").empty();
 [sp]猫はたくましいようです。[r]
 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi16_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi16_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi16_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -708,12 +935,16 @@ $(".1_fore").empty();
 ;『聞き上手と話し上手について』
 ;=============================================
 *hujieda_fumi17
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『聞き上手と話し上手について』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi17_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -722,7 +953,10 @@ $(".1_fore").empty();
 [r]
 [sp]僕も社会に出て痛感しましたが、[r]
 相づちを打ったり、しっかり返事をすることは [r]
-大事だと思っています。[p]
+大事だと思っています。
+[glink target=*hujieda_fumi17_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi17_2
 [r]
 [sp]それに要領よく相手に伝える事も[r]
 配達をするうえで必要です。[r]
@@ -731,7 +965,14 @@ $(".1_fore").empty();
 [sp]心掛けるだけでも随分と人の関係が変わりました。[r]
 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi17_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi17_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi17_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -747,12 +988,16 @@ $(".1_fore").empty();
 ;『緑の石について』
 ;=============================================
 *hujieda_fumi18
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『緑の石について』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi18_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -760,7 +1005,11 @@ $(".1_fore").empty();
 今日は何の曲を聴かれているのか楽しみです。[r]
 [r]
 [sp]手紙と一緒に袋が括り付けてあり、[r]
-緑の石が入ってたことについては驚きました。[p]
+緑の石が入ってたことについては驚きました。
+[glink target=*hujieda_fumi18_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi18_2
 [sp]この緑の石が何か、[r]
 友人の宝石商に調らべてもらったのですが、[r]
 緑色のガラスだということでした。[r]
@@ -769,7 +1018,14 @@ $(".1_fore").empty();
 きれいなので大事にとっておきます。[r]
 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi18_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi18_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi18_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -785,6 +1041,8 @@ $(".1_fore").empty();
 ;『写真について』
 ;=============================================
 *hujieda_fumi19
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『写真について』[p]
@@ -805,6 +1063,9 @@ $(".1_fore").empty();
 [sp] 貴方は写真を見るとどんな想いになりますか？[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+*hujieda_fumi19_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -820,12 +1081,16 @@ $(".1_fore").empty();
 ;『一日のはじまりについて』
 ;=============================================
 *hujieda_fumi20
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『一日のはじまりについて』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi20_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -835,7 +1100,11 @@ $(".1_fore").empty();
 [r]
 [sp]そういえば、この前、一日の始まりに、[r]
 家の小さな庭に植えた苗の花が、[r]
-咲いているのを見つけました。[p]
+咲いているのを見つけました。
+[glink target=*hujieda_fumi20_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi20_2
 [r]
 [sp]初めての家庭菜園ですが、[r]
 順調に苗は育っているようで小さな喜びを感じています。[r]
@@ -843,7 +1112,14 @@ $(".1_fore").empty();
 ;↑指さない喜び→ささやかな喜び、で大丈夫でしょうか？ 変更させていただきました(◆jsYiJcqRkk
 ;原案：[sp] 貴方様の指さない喜びについても知りたいです。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi20_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi20_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi20_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -859,12 +1135,16 @@ $(".1_fore").empty();
 ;『お気に入りの曲について』
 ;=============================================
 *hujieda_fumi21
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『お気に入りの曲について』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi21_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -874,14 +1154,24 @@ $(".1_fore").empty();
 [sp]お気に入りの曲というのは書ききれないぐらいあります。[r]
 [r]
 [sp] 初めに音楽を創り出した方はどんな方なのでしょう。[r]
-僕の頭の中でいろんな歌とメロディが浮かびます。[p]
+僕の頭の中でいろんな歌とメロディが浮かびます。
+[glink target=*hujieda_fumi21_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi21_2
 [r]
 [sp] いつか貴方様へ贈る曲を作れたら[名字]様は[r]
 喜んでくれるのでしょうか？[r]
 [r]
 [sp]貴方様はどんな曲が好きですか？[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi21_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi21_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi21_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -897,12 +1187,16 @@ $(".1_fore").empty();
 ;『道』
 ;=============================================
 *hujieda_fumi22
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『道』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi22_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -912,7 +1206,9 @@ $(".1_fore").empty();
 [r]
 [sp]郵便配達員になってから道を沢山覚えました。[r]
 [sp]いろいろな道がありますね。[r]
-[p]
+[glink target=*hujieda_fumi22_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi22_2
 [sp]たまに物騒な道も通らなければいけないこともあります。[r]
 [sp]ご存じかも知れませんが郵便配達員は拳銃を持つことも[r]
 あります。[r]
@@ -921,7 +1217,13 @@ $(".1_fore").empty();
 [r]
 [sp]でも色々な道に出会う事は経験になると思っています。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi22_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi22_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi22_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -937,12 +1239,16 @@ $(".1_fore").empty();
 ;『 変化と永遠 』
 ;=============================================
 *hujieda_fumi23
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『 変化と永遠 』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi23_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -954,7 +1260,10 @@ $(".1_fore").empty();
 [sp]変化というのはいつも起きています。[r]
 [r]
 [sp]変わらないように見えても歳をとったり、[r]
-同じ時間は決して戻りません。[p]
+同じ時間は決して戻りません。
+[glink target=*hujieda_fumi23_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi23_2
 [sp] 時間は哲学、芸術、心理学、宗教、自然科学なので[r]
 議論され、定義されていますが、[r]
 どれも正しいのかもしれませんし、[r]
@@ -962,7 +1271,13 @@ $(".1_fore").empty();
 [r]
 [sp] もし永遠を創り出せる人が居たらそれは神様かもしれませんね。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*hujieda_fumi23_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi23_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi23_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -979,6 +1294,8 @@ $(".1_fore").empty();
 ;『 巡る季節』 9月ごろの手紙　好感度が一定以上
 ;=============================================
 *hujieda_fumi24
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『巡る季節』[p]
@@ -998,6 +1315,9 @@ $(".1_fore").empty();
 貴方様もお体には気をつけてください。[r]
 [r]　　　　　　　　　　　　　　　　　　　　　　　
 [sp]　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+*hujieda_fumi24_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -1014,6 +1334,8 @@ $(".1_fore").empty();
 ;『 実りの秋』10月頃の手紙　好感度が一定以上
 ;=============================================
 *hujieda_fumi25
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『実りの秋』[p]
@@ -1050,12 +1372,16 @@ $(".1_fore").empty();
 ;◆時子さんの手紙◆
 ;=============================================
 *fumi_tokiko_hujieda
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『星も凍るような夜』[p]
 [endif]
 [手紙時子]
+*fumi_tokiko_hujieda_1
+[cm]
 [名字]　[名前]様へ [l][r]
 [r]
 [sp]　星も凍るような寒い夜[r]
@@ -1066,14 +1392,22 @@ $(".1_fore").empty();
 独逸への留学についてお知らせします。[r]
 独逸留学は藤枝様ともう[ruby text=ふた]二[ruby text=り]人が決定していたのですが[r]
 三枠が諸事情で一枠となり独逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった。[r]
-そうです。[p]
+そうです。
+[glink target=*fumi_tokiko_hujieda_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumi_tokiko_hujieda_2
 ;はみだし修正
 [sp][r][r][r]
 [sp][ruby text=ひと]一[ruby text=り]人は女性なので、将来この国の音楽の指導者となるのは[r]
 難しいだろうという事で藤枝様ともう[ruby text=ひと]一[ruby text=り]人の候補の原様という方の[r]
 どちらかになるという結論になり、[r]
 二月に[ruby text=ふた]二[ruby text=り]人の演奏を関係者の方が聴いて留学する[ruby text=ひと]一[ruby text=り]人を決定する[r]
-だとか。[p]
+だとか。
+[glink target=*fumi_tokiko_hujieda_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_tokiko_hujieda_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_tokiko_hujieda_3
 [sp]藤枝様と原様の実力は拮抗していて[r]
 どちらが留学してもおかしくないと言われてますが[r]
 ただやはり毎日はピアノの練習できない藤枝様の方が[r]
@@ -1085,7 +1419,13 @@ $(".1_fore").empty();
 [sp][名前]さんが今年も幸福に満ちた、一年となりますよう、[r]
 心から祈っています。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　三宮　時子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　三宮　時子
+[glink target=*fumi_tokiko_hujieda_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_tokiko_hujieda_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*fumi_tokiko_hujieda_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
    [freeimage layer = 29]
@@ -1101,6 +1441,8 @@ $(".1_fore").empty();
 ;『さつきについて』
 ;=============================================
 *fumi_satuki
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『さつきについて』[p]
@@ -1135,12 +1477,16 @@ $(".1_fore").empty();
 ;『新茶について』
 ;=============================================
 *fumi_sintya
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『新茶について』[p]
 ;#
 [endif]
 [手紙藤枝 fumi_number=]
+*fumi_sintya_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]お手紙拝見しました。　[r]
@@ -1149,15 +1495,26 @@ $(".1_fore").empty();
 僕の心を慰めてくれます。[r]
 [r]
 [sp]お茶は食事を食べるのに最適だと思っています。[r]
-[sp]適度な苦みと甘みと香りが良いですよね。[p]
+[sp]適度な苦みと甘みと香りが良いですよね。
+[glink target=*fumi_sintya_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_sintya_2
 [sp]お茶も昔は高価なものだったと聞きました。[r]
 お茶一般化したのは人々が愛好し広まったからでしょう。[r]
 良いものはやはり広まっていくものだと思っています。[r]
 [r]
 [sp]貴方様もお茶を好まれるのでしょうか？[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 藤枝　肇
+[glink target=*fumi_sintya_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_sintya_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
 [endif]
+*fumi_sintya_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -1171,11 +1528,15 @@ $(".1_fore").empty();
 ;『最後の手紙』
 ;=============================================
 *hujieda_fumi_last
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『最後の手紙』[p]
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi_last_1
+[cm]
 箏の奏者様へ[l][r]
 [r]
 [sp]貴方様の箏の音色に惹かれて手紙を書いた者です。[r]
@@ -1185,14 +1546,25 @@ $(".1_fore").empty();
 [r]
 [sp]今後は貴方様へお手紙を書くことが難しくなって[r]
 しまいましたので、そのことをお知らせいたしたく、[r]
-筆を取りました。[p]
+筆を取りました。
+[glink target=*hujieda_fumi_last_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi_last_2
 [sp][r][r]
 [sp]これからも陰ながら応援しています。[r]
 [r]時々、箏の練習をして下さると嬉しいです。[r]
 [sp]それではお元気にお過ごしください。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　　　Ｈ[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　Ｈ
+[glink target=*hujieda_fumi_last_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_last_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
 [endif]
+*hujieda_fumi_last_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -1207,6 +1579,8 @@ $(".1_fore").empty();
 ;飛鳥さん鳩の届けた手紙その一が来た翌週？→5月4週
 ;=============================================
 *fumi_asuka_hujieda_1
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [iscript]
 $(".1_fore").empty();
@@ -1216,6 +1590,8 @@ $(".1_fore").empty();
 『お箏は誰かの心を動かす扉』[p]
 [endif]
 [手紙飛鳥]
+*fumi_asuka_hujieda_1_1
+[cm]
 [名前]さんへ[l][r]
 [r]
 青葉若葉が目に美しいころこの頃。[r]
@@ -1228,7 +1604,9 @@ $(".1_fore").empty();
 提案と申しますか、助言なのですが、[r]
 月に数回お箏をなさってはいかがかしら？ [r]
 定期的な練習を続けると上達しやすいの。[r]
-[p]
+[glink target=*fumi_asuka_hujieda_1_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumi_asuka_hujieda_1_2
 芸術、特に音楽は人の心を慰めたり、励ましたり出来ます。[r]
 [名前]さんも知らず知らずのうちに、[r]
 誰かの心を動かすかもしれなくってよ？[r]
@@ -1238,7 +1616,14 @@ $(".1_fore").empty();
 ご縁というのはどこからあるか分かりませんが、[r]
 どれも大切になさってくださいね。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子
+[glink target=*fumi_asuka_hujieda_1_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_asuka_hujieda_1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fumi_asuka_hujieda_1_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
    [freeimage layer = 29]
@@ -1252,12 +1637,16 @@ $(".1_fore").empty();
 ;この手紙を読んで箏の練習をすると好感度が２ぐらい上がる設定メッセージを表示する）
 ;=============================================
 *fumi_fumiya_hujieda_11_4
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『答えを出してごらん』[p]
 [endif]
 [手紙文矢]
+*fumi_fumiya_hujieda_11_4_1
+[cm]
 [名前]へ[l][r]
 [r]
 [sp]そちらは初雪降る頃でしょうか？[r]
@@ -1268,7 +1657,9 @@ $(".1_fore").empty();
 [r]
 [sp]それはきっと[名前]があの頃より僕より、[r]
 大切な人が出来たからなのかもしれません。[r]
-[p]
+[glink target=*fumi_fumiya_hujieda_11_4_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumi_fumiya_hujieda_11_4_2
 [sp]磯野からミルクホールで出会った[r]
 藤枝君と[名前]の様子を手紙で尋ねられました。[r]
 [sp]僕は[名前]は彼に憧れていると感じましたが、[r]
@@ -1283,7 +1674,10 @@ $(".1_fore").empty();
 [sp]ただ藤枝君の身分を知っても失望しなかった、[r]
 そしてお手紙の縁も断って彼に会いたいと願った。[r]
 [sp][名前]の気持ちは育っていると僕は思いました。[r]
-[p]
+[glink target=*fumi_fumiya_hujieda_11_4_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_fumiya_hujieda_11_4_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumi_fumiya_hujieda_11_4_3
 [sp]彼も[名前]のお箏の音色に惹かれたとか。[r]
 [sp]それならばお箏の練習をし続ければ[r]
 答えが見つかるかもしれない。[r]
@@ -1293,7 +1687,14 @@ $(".1_fore").empty();
 [r]
 [sp]いまは辛い時ですが[名前]も健やかに過ごして下さい。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　　　[名字]　文矢[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　[名字]　文矢
+[glink target=*fumi_fumiya_hujieda_11_4_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_fumiya_hujieda_11_4_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fumi_fumiya_hujieda_11_4_close
+[cm]
+[clearfix]
 ;↓手紙を読んだ後のイベント(主人公セリフ)用変数
 [eval exp="f.fumi_fumiya_11_4 = 1"]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
@@ -1308,12 +1709,16 @@ $(".1_fore").empty();
 ; １２月の１週時子さんからの手紙
 ;=============================================
 *fumi_tokiko_hujieda_12_1
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『恋は、泡沫の夢、されど』[p]
 [endif]
 [手紙時子]
+*fumi_tokiko_hujieda_12_1_1
+[cm]
 [名字]　[名前]様へ [l][r]
 
 [sp]今年も年の瀬となり、月日が早いと感じる頃。[r]
@@ -1327,7 +1732,9 @@ $(".1_fore").empty();
 来られることがあっても 、物々しいご様子で[r]
 見張るように女中が控え、[r]
 [名前]さんは元気がないとお聞きしました。[r]
-[p]
+[glink target=*fumi_tokiko_hujieda_12_1_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumi_tokiko_hujieda_12_1_2
 彼は独逸に留学する話が決定され、その事を知り、[r]
 [sp][名前]さんは落ち込まれていらっしゃるの？[r]
 [sp]憧れの方が遠くに行ってしまうということは[r]
@@ -1342,7 +1749,14 @@ $(".1_fore").empty();
 [sp]近く、[名字]家を訪ねます。[r]
 [sp]察してはいますが[名前]さんのお気持ちを確かめたいのですわ。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　　　三宮　時子[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　三宮　時子
+[glink target=*fumi_tokiko_hujieda_12_1_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_tokiko_hujieda_12_1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fumi_tokiko_hujieda_12_1_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
    [freeimage layer = 29]
@@ -1355,12 +1769,16 @@ $(".1_fore").empty();
 ; 二月四週以降藤枝からの手紙
 ;=============================================
 *hujieda_fumi_koto
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 ;↓仮タイトルです
 『心の音色』[p]
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi_koto_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]日差しが暖かく感じられるようになりましたね。[r]
@@ -1372,7 +1790,9 @@ $(".1_fore").empty();
 [sp]何度もお箏の練習をして下さってありがとうございます。[r]
 貴方のお箏の音は、僕の気持ちに答えを出してくれました。[r]
 はっきりと、これは恋だと。この胸の甘い痛みは恋なのだと。[r]
-[p]
+[glink target=*hujieda_fumi_koto_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi_koto_2
 [sp]貴方のお手紙で励まされ、迷いはなくなりました。[r]
 [r]
 [sp]貴方のお父様は手紙だけとはいえ許してくださいました。[r]
@@ -1380,7 +1800,13 @@ $(".1_fore").empty();
 [r]
 [sp]貴方を愛しています。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇
+[glink target=*hujieda_fumi_koto_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_koto_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi_koto_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
@@ -1399,11 +1825,15 @@ $(".1_fore").empty();
 ;『 怪談 』
 ;=============================================
 *hujieda_fumi_kaidan
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『　怪談　』[p]
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi_kaidan_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]お手紙を拝見しました。[r]
 [sp]今日も僕は貴方の[ruby text=こと]箏を聴きました。[r]
@@ -1415,7 +1845,9 @@ $(".1_fore").empty();
 [r]
 僕の家にも古く伝わる話がいくつかありました。[r]
 きっと昔の人は迷信深かったのではないかと思います。[r]
-[p]
+[glink target=*hujieda_fumi_kaidan_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi_kaidan_2
 [sp]何が真実だったかは僕には知るすべはありません。[r]
 ただ悲しみや苦しみ恐怖は身近にあります。[r]
 [sp][r]
@@ -1425,11 +1857,23 @@ $(".1_fore").empty();
 ;[r]はしていませんがスマホで見た時の改行位置です↓
 [sp]……こうして文字を綴るのにも霊力は宿るのかも
 しれませんね。[r]
-ならばこう綴りましょう。[p]
+ならばこう綴りましょう。
+[glink target=*hujieda_fumi_kaidan_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi_kaidan_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi_kaidan_3
 [sp]貴方様が怖い夜を過ごすことなく、[r]
 貴方様に、良い眠りと夢が訪れますように。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇
+[glink target=*hujieda_fumi_kaidan_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_kaidan_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi_kaidan_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]

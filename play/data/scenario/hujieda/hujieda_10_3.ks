@@ -510,6 +510,9 @@ $('.oto').remove();
 ;【SE】紙の音（カサッ）
 
 [手紙主人公]
+*hujieda_fumi_girl_b_1
+[clearstack]
+[cm]
 藤枝 肇 様へ[l][r]
 [r]
 [sp]木々の梢も色づいて藤枝様にはお変わりありませんか？[r]
@@ -520,7 +523,11 @@ $('.oto').remove();
 [r]
 [sp]私は今日、貴方の勤めているミルクホールへ行きます。[r]
 お手紙にも知らせず申し訳ありません。[r]
-貴方に知らせたら遠慮されると思ったので内緒にしました。[p]
+貴方に知らせたら遠慮されると思ったので内緒にしました。
+[glink target=*hujieda_fumi_girl_b_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi_girl_b_2
+
 [sp]藤枝様がこのお手紙を読んでいる頃は、[r]
 私たちは出会った後になるのですね。[r]
 私は初めて藤枝様にお会いできる事が楽しみで仕方ありません。[r]
@@ -534,7 +541,16 @@ $('.oto').remove();
 [sp]お返事をお待ちしています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　[r] 
-[sp]　　　　　　　　　　　　　　　　　　　　[名字]　[名前] [p]
+[sp]　　　　　　　　　　　　　　　　　　　　[名字]　[名前] 
+[glink target=*hujieda_fumi_girl_b_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_girl_b_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi_girl_b_close
+[cm]
+[clearfix]
+[clearstack]
+
 [fadeoutbgm time=3000]
 [手紙読了]
 [resetfont]

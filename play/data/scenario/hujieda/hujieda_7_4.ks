@@ -34,13 +34,14 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-[if exp="sf.BGM=='ON'"]
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 
 [手紙主人公]
-
+*hujieda_fumi_girl_a_1
+[clearstack]
+[cm]
 鳥文の君へ[l][r]
 [r]
 [sp]初めてお手紙を差し上げます。[r]
@@ -52,7 +53,10 @@
 [sp]
 [sp]先日のお手紙を読み、私も練習のし過ぎはよくないと思い、[r]
 初めてお[ruby text=こと]箏の曲を聴いた気持ちを思い出し、[r]
-落ち着いて音を出すようになりました。[p]
+落ち着いて音を出すようになりました。
+[glink target=*hujieda_fumi_girl_a_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi_girl_a_2
 [sp][r]
 [sp]最近私の弾く音色も変わってきたと感じています。[r]
 先生にも私の事を熱心な生徒だと言っていただき、[r]
@@ -61,7 +65,12 @@
 増えるので楽しみです。[r]
 [sp][r]
 [sp]これ程、お[ruby text=こと]箏に夢中になったのも鳥文の君のおかげです。[r]
-貴方様は私にたくさんの事を教えてくれています。[p]
+貴方様は私にたくさんの事を教えてくれています。
+[glink target=*hujieda_fumi_girl_a_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi_girl_a_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi_girl_a_3
 [sp][r]
 [sp]最近よく貴方様のことを考えています。[r]
 ――どんな方かしらと。[r]
@@ -69,7 +78,15 @@
 [r]
 [sp]お手紙を心よりお待ちしています。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　かしこ　[r]　　　　　　　　　　　　　　　　　　　　　　　　
-[sp]　　　　　　　　　　　　　　　　　　　　　　[名字]　[名前] [p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　[名字]　[名前] 
+[glink target=*hujieda_fumi_girl_a_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_girl_a_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi_girl_a_close
+[cm]
+[clearfix]
+[clearstack]
 [fadeoutbgm time=3000]
 [手紙読了]
 [resetfont]
@@ -172,6 +189,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 *deback1
 
 [手紙藤枝 fumi_number=]
+*hujieda_fumi04_1
+[cm]
+[clearstack]
 [sp][ruby text=こと]箏の奏者様へ[l][r]
 [r]
 [sp]盛夏のみぎり、[r]
@@ -183,7 +203,11 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 澄んだ音をかき鳴らされています。[r]
 [r]
 貴方様は心映えの素晴らしい方 なのかもしれませんね。[r]
-[sp]偶然でいいので一目会いたいなどと思っていました。[p]
+[sp]偶然でいいので一目会いたいなどと思っていました。
+[glink target=*hujieda_fumi04_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi04_2
+
 [sp][r][r]
 [sp]……申し訳ありません。　こんなことを書いて。[r]
 ですが紙は貴重なので、このまま綴ります。[r]
@@ -191,7 +215,13 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]これほど短期間に上達されると思っていませんでした。[r]
 [r]
 [sp]きっと貴方様はこれからも成長するでしょう。[r]
-僕も貴方様の成長が楽しみです。[p]
+僕も貴方様の成長が楽しみです。
+[glink target=*hujieda_fumi04_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi04_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi04_3
+
 [sp][r][r]
 追伸
 [sp]僕の伝書鳩が、最近、頻繁に貴方様のところへ[r]
@@ -199,7 +229,15 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [r]
 [sp]この伝書鳩は[ruby text=こと]箏の音色が気に入っているのか[r]
 よく母のお[ruby text=こと]箏の練習を聴いていました。[r]
-[sp]貴方様の邪魔になっていないといいのですが。[p]
+[sp]貴方様の邪魔になっていないといいのですが。
+[glink target=*hujieda_fumi04_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi04_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi04_close
+[cm]
+[clearfix]
+[clearstack]
 
 [if exp="f.okeiko_gamen != true"]
 [手紙藤枝読了 fumi_number=]

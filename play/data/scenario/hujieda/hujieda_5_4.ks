@@ -96,7 +96,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [endif]
 
 [手紙藤枝 fumi_number=]
-
+*hujieda_fumi02_1
+[clearstack]
+[cm]
 [ruby text=こと]箏の奏者様へ[l][r]
 [r]
 [sp]緑照り映える時節。
@@ -109,7 +111,11 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]母は[ruby text=こと]箏が、とても上手で、その音色が好きでした。[r]
 ;[ruby text=こと]箏の音色が好きでした。[r]
 [sp]貴方様の音は母と違った魅力があります。[r]
-[sp]母は華やかで優美な調べでした。[p]
+[sp]母は華やかで優美な調べでした。
+[glink target=*hujieda_fumi02_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi02_2
+[cm]
 ;アイコンにかかっているので分割します
 [r][sp]
 [sp]貴方の音は初々しく楚々とした調べです。[r]
@@ -119,7 +125,14 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]極めることは、貴方様の為にもなると思います。[r]
 [sp]続けることは、嫌な事もありますが、喜びも多くあります。[r]
 [r]
-[sp]また貴方様の[ruby text=こと]箏の音を聴けることを願っています。[p]
+[sp]また貴方様の[ruby text=こと]箏の音を聴けることを願っています。
+[glink target=*hujieda_fumi02_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi02_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi02_close
+[cm]
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][2] = 0"]

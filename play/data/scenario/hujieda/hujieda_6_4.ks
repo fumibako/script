@@ -166,6 +166,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [endif]
 
 [手紙藤枝 fumi_number=]
+*hujieda_fumi03_1
+[clearstack]
+[cm]
 [ruby text=こと]箏の奏者様へ[l][r]
 [r]
 [sp]雨に萌ゆる緑が風情を漂わせる季節。[r]
@@ -178,7 +181,10 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [r]
 [sp]まさか指の感覚が麻痺するほどに練習していらっしゃるのですか？[r]
 [sp]早く上達したい時もあります。[r]
-[sp]僕も睡眠を削り楽器を弾くこともありました。[p]
+[sp]僕も睡眠を削り楽器を弾くこともありました。
+[glink target=*hujieda_fumi03_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi03_2
 ;アイコン
 [sp]ですがあまり熱心に練習しても調子を崩す時もあります。[r]
 [sp]自分を追い詰めていくことは必ずしも[r]
@@ -189,8 +195,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]焦らずとも貴方様は丁寧にお箏を慈しみ優しく弾けていました。[r]
 [sp]必ず上達できる方だと思います。[r]
 [r]
-[sp]初心を忘れずゆっくり上達していきましょう。[p]
-
+[sp]初心を忘れずゆっくり上達していきましょう。
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
@@ -200,6 +205,14 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][3] = 0"]
 [endif]
+[glink target=*hujieda_fumi03_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi03_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi03_close
+[cm]
+[clearfix]
+[clearstack]
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）

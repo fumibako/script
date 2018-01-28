@@ -97,6 +97,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [endscript]
 [endif]
 [手紙藤枝 fumi_number=]
+*hujieda_fumi05_1
+[cm]
+[clearstack]
 [名字]　[名前]様へ [l][r]
 [r]
 [sp]降るような蝉しぐれ。[r]
@@ -109,7 +112,12 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [r]
 [sp]正直に伝えましょう。[r]
 [sp]僕はただの郵便配達員です。[r]
-[sp]貴方様が気にされるような身分のものでもありません。[p]
+[sp]貴方様が気にされるような身分のものでもありません。
+[glink target=*hujieda_fumi05_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi05_2
+
 [sp]僕がただの郵便配達員と知って貴方様が[r]
 どんな反応されるのか怖いです。[r]
 [sp][r]
@@ -119,19 +127,33 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]これで僕が書くのは最後の手紙とします。[r]
 お[ruby text=こと]箏を聞かせていただいてありがとうございました。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 
+[glink target=*hujieda_fumi05_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi05_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi05_3
+
 [sp]追伸[sp]貴方が大切な文通の最中だという事に気づいてました。[r]
 [r]
 [sp]貴方の文通相手に名乗り出るような行為だったのかもしれません。[r]
 [sp]誤解させて申し訳ありませんでした。[r]
 [sp]今、文通されている方と親しくなってください。[r]
-[sp]僕は貴方の幸せを願っているのです。[p]
-
+[sp]僕は貴方の幸せを願っているのです。
 [if exp="sf.BGM=='ON'"]
 ;【BGM】雪消水（哀しげな曲（主人公側…に限らず使っていただいて大丈夫です
 [playbgm storage="kanasige_yukigemizu.ogg" loop=true]
 [eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
 [endif]
+
+[glink target=*hujieda_fumi05_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi05_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi05_close
+[cm]
+[clearfix]
+[clearstack]
+
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][5] = 0"]

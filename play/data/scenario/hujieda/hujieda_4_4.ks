@@ -113,6 +113,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [endif]
 
 [手紙藤枝 fumi_number=]
+*hujieda_fumi01_1
+[clearstack]
+[cm]
 
 箏の奏者様へ[l][r]
 [r]
@@ -123,14 +126,25 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 その音色に拙いながら才能の鱗片を感じました。[r]
 [r]
 [sp][ruby text=こと]箏の音が心に響き[r]
-僕はこうして手紙を書き綴りたくなり、筆を取りました。[p]
+僕はこうして手紙を書き綴りたくなり、筆を取りました。
+[glink target=*hujieda_fumi01_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi01_2
+[cm]
+
 [sp]貴方様の筝が上達し益々成長することを[r]
 願っています。[r]
 [r]
 [sp]ちなみに毎日、[ruby text=に]二～[ruby text=さん]三時間ほど練習すると効果的です。[r]
 [r]
 [sp]僕は名乗るほどの者ではありませんので[r]
-この手紙の事、僕の事はお構いなく。[p]
+この手紙の事、僕の事はお構いなく。
+[glink target=*hujieda_fumi01_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi01_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi01_close
+[cm]
+[clearfix]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][1] = 0"]

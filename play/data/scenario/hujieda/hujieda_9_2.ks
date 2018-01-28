@@ -96,6 +96,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [endif]
 
 [手紙藤枝 fumi_number=]
+*hujieda_fumi06_1
+[clearstack]
+[cm]
 [名字][名前] 様へ[l][r]
 [r]
 [sp]秋色次第に濃く、貴方様におかれましてはお変わりない[r]
@@ -109,7 +112,11 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [r]
 [sp]貴方様は僕の身分に失望を覚えなかったのですね、[r]
 [sp]心から喜んでいる僕がいます。[r]
-[sp]まだお会いしたこともないのになぜでしょうか？　[p]
+[sp]まだお会いしたこともないのになぜでしょうか？　
+[glink target=*hujieda_fumi06_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi06_2
+
 ;アイコン回避
 [sp][r][r]
 [sp]少しの間だけでいいです、僕と手紙を交わして頂けませんか？[r]
@@ -119,7 +126,12 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 ミルクホールでのピアノの演奏をしています。[r]
 [r]
 [sp]目まぐるしく忙しい毎日ですが、[r]
-貴方のお[ruby text=こと]箏の音が、僕に貴方の事を考えさせるのでしょうか？　[p]
+貴方のお[ruby text=こと]箏の音が、僕に貴方の事を考えさせるのでしょうか？
+[glink target=*hujieda_fumi06_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi06_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*hujieda_fumi06_3
 [sp][r]
 [sp]高貴な身分のものは手紙を交わし結婚相手を選びます。[r]
 [sp]つい最近、家が没落するまでは僕も華族の一人でした、[r]
@@ -129,12 +141,21 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]少しの間だけいいです……我ながら女々しいと思うのですが[r]
 貴方様からのお返事を待っています。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 [p]
-[if exp="sf.BGM=='ON'"]
+[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
+
+[glink target=*hujieda_fumi06_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi06_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*hujieda_fumi06_close
+[cm]
+[clearfix]
+[clearstack]
+[if exp="sf.BGM=='ON'"]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][6] = 0"]
