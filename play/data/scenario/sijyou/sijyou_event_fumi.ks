@@ -6,31 +6,31 @@
 [cm]
 *test_page1
 ;if
-[glink target="*9_3 " text="9月『久しぶりに会って』" graphic="select_waku_x500.png" size=20 width="250" x=100 y="&tf.btn_y" color=white]
+[glink target="*9_3 " text="9月『久しぶりに会って』" graphic="select_waku_x500.png" size=20 width="250" x=100 y="&tf.btn_y" font_color=black]
 [eval exp="tf.btn_y=tf.btn_y+50"]
 ;endif
 [if exp="f.sijyou_bad != true"]
 ;どちらかしか表示しない場合
-[glink target="*10_3 " text="10月『文矢からの手助け』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[glink target="*10_3 " text="10月『文矢からの手助け』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y font_color=black]
 [eval exp="tf.btn_y=tf.btn_y+50"]
 [else]
-[glink target="*10_3_bad " text="10月『ダメだったよ』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[glink target="*10_3_bad " text="10月『ダメだったよ』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y font_color=black]
 [eval exp="tf.btn_y=tf.btn_y+50"]
 [endif]
 ;if
-[glink target="*11_b " text="11月『華衣婚約者の手紙』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[glink target="*11_b " text="11月『華衣婚約者の手紙』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y font_color=black]
 [eval exp="tf.btn_y=tf.btn_y+50"]
 ;endif
 ;if
-[glink target="*1_1 " text="1月『お正月』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[glink target="*1_1 " text="1月『お正月』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y font_color=black]
 [eval exp="tf.btn_y=tf.btn_y+50"]
 ;endif
 
-[glink target="*3_1_kadouten " text="3月『四条華道展のお誘い』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y color=white]
+[glink target="*3_1_kadouten " text="3月『四条華道展のお誘い』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y font_color=black]
 [eval exp="tf.btn_y=tf.btn_y+50"]
 
 *common
-[glink target="*end_p " text="閉じる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&500 color=white]
+[glink target="*end_p " text="閉じる" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&500 font_color=black]
 [s]
 
 *9_3
@@ -68,6 +68,8 @@
 『華織について』[p]
 [endif]
 [手紙文矢 fumi_number=]
+*10_3_1
+[cm]
 [名前]へ[r]
 [r]
 華織は、いつも笑顔で、自身のことは語りたがりません。[r]
@@ -79,15 +81,24 @@
 迷子の子供がいたら親元に届けてたり、書生の勉強の手伝いを[r]
 したりと面倒見もいいです。[r]
 それに僕の奥さんの恋愛相談にのってくれました。[r]
-[p]
+[glink target=*10_3_2 text="→" size=10 x=770 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*10_3_2
 華織は傷つけられることはあっても、[r]
 誰かを傷つけることはしないと思うんだ。[r]
 [r]
 [名前]は華織のことをどう思う？[r]
 [sp] どうしたい？[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　　文矢
 [sp]
+[glink target=*10_3_1 text="←" size=10 x=110 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*10_3_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*10_3_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]

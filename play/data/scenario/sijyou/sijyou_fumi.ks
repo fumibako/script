@@ -35,68 +35,68 @@
 *test
 [if exp=tf.test_sijyou == true]
 *test_page1
-[glink target="*sijyou_syumi_1" text="趣味について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="*sijyou_syumi_2" text="趣味について(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*sijyou_kazoku_1" text="家族について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="sijyou_kazoku_2" text="家族(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="sijyou_kazoku_2_1" text="家族・祖父母両親(お見合い後・事件解決後)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=300 color=white]
-[glink target="sijyou_kazoku_2_2" text="家族兄次男(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=350 color=white]
-[glink target="sijyou_kazoku_2_3" text="家族(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=400 color=white]
-[glink target="sijyou_kazoku_3" text="家族・主人公と(イベント6後)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=450 color=white]
-[glink target="sijyou_yujin_1" text="友人(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=w
+[glink target="*sijyou_syumi_1" text="趣味について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 font_color=black]
+[glink target="*sijyou_syumi_2" text="趣味について(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 font_color=black]
+[glink target="*sijyou_kazoku_1" text="家族について(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
+[glink target="sijyou_kazoku_2" text="家族(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
+[glink target="sijyou_kazoku_2_1" text="家族・祖父母両親(お見合い後・事件解決後)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=300 font_color=black]
+[glink target="sijyou_kazoku_2_2" text="家族兄次男(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=350 font_color=black]
+[glink target="sijyou_kazoku_2_3" text="家族(お見合い後・事件解決後2)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=400 font_color=black]
+[glink target="sijyou_kazoku_3" text="家族・主人公と(イベント6後)" graphic="select_waku_x500.png" size=10 width="250" x=100 y=450 font_color=black]
+[glink target="sijyou_yujin_1" text="友人(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 font_color=black]
 
-[glink target="sijyou_yujin_2" text="友人(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="1" text="春(1)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="2" text="春(2)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="3" text="春3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="4" text="春4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="5" text="夏5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="6" text="夏6" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
+[glink target="sijyou_yujin_2" text="友人(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
+[glink target="1" text="春(1)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
+[glink target="2" text="春(2)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 font_color=black]
+[glink target="3" text="春3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 font_color=black]
+[glink target="4" text="春4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 font_color=black]
+[glink target="5" text="夏5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 font_color=black]
+[glink target="6" text="夏6" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 font_color=black]
+[glink target="test_page2" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 font_color=lightcoral]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 [s]
 *test_page2
-[glink target="7" text="夏7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="8" text="夏8_0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="8_1" text="夏8_1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="8_2" text="夏8_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="8_3" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="9" text="秋9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="10" text="秋10" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="11" text="秋11" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-[glink target="12" text="冬12" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="7" text="夏7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 font_color=black]
+[glink target="8" text="夏8_0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 font_color=black]
+[glink target="8_1" text="夏8_1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
+[glink target="8_2" text="夏8_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
+[glink target="8_3" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
+[glink target="9" text="秋9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
+[glink target="10" text="秋10" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 font_color=black]
+[glink target="11" text="秋11" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 font_color=black]
+[glink target="12" text="冬12" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 font_color=black]
 
-[glink target="13" text="冬1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="14" text="冬2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="15" text="冬(3)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="*16_end" text="結納前" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target=";*17_ex" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="*18_ex" text="華織の道" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="*19_ex" text="兄から" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
-[glink target="test_page3" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=pink]
+[glink target="13" text="冬1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
+[glink target="14" text="冬2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
+[glink target="15" text="冬(3)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 font_color=black]
+[glink target="*16_end" text="結納前" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 font_color=black]
+[glink target="*17_ex" text="未来へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 font_color=black]
+[glink target="*18_ex" text="華織の道" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 font_color=black]
+[glink target="*19_ex" text="兄から" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 font_color=black]
+[glink target="test_page3" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 font_color=lightcoral]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 [s]
 *test_page3
 ;新規追加分　位置変更する気がまだ起きてこない
-[glink target=*aburidasi text="あぶりだし" graphic="select_waku_x500.png" size=20 width="300" x=100 y=100 color=white]
-[glink target=*aburidasi2 text="あぶりだし2" graphic="select_waku_x500.png" size=20 width="300" x=100 y=150 color=white]
-[glink target="1_2" text="春(1_2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="1_3" text="春(1_3)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="5_1" text="夏(5_1)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="5_2" text="夏(5_2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
+[glink target=*aburidasi text="あぶりだし" graphic="select_waku_x500.png" size=20 width="300" x=100 y=100 font_color=black]
+[glink target=*aburidasi2 text="あぶりだし2" graphic="select_waku_x500.png" size=20 width="300" x=100 y=150 font_color=black]
+[glink target="1_2" text="春(1_2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
+[glink target="1_3" text="春(1_3)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
+[glink target="5_1" text="夏(5_1)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
+[glink target="5_2" text="夏(5_2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
 
-[glink target="sijyou_sigoto" text="仕事について" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="sijyou_sigoto2" text="仕事について2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="sijyou_sigoto3" text="仕事について3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="sijyou_sigoto4" text="仕事について4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
+[glink target="sijyou_sigoto" text="仕事について" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
+[glink target="sijyou_sigoto2" text="仕事について2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
+[glink target="sijyou_sigoto3" text="仕事について3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 font_color=black]
+[glink target="sijyou_sigoto4" text="仕事について4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 font_color=black]
 
 
 *common
-[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
-[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
-[glink target="test_page1" text="始めのページ" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=pink]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 font_color=black]
+[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 font_color=black]
+[glink target="test_page1" text="始めのページ" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 font_color=lightcoral]
 [s]
 [endif]
 
@@ -287,6 +287,8 @@
 [p]
 [endif]
 [手紙四条 fumi_number=]
+*sijyou_kazoku_2_1_1
+[cm]
 [r][r][r]
 [名前]さんへ[r]
 いつも手紙をありがとうございます。[r]
@@ -296,7 +298,11 @@
 祖母の名前は『四条綾花』[r]
 二人は従妹で、もともとの華道業は祖母の家業なんだ。[r]
 祖父は、厳格な人柄だけど、何故か祖母には頭が[r]
-[sp]  上がらないんだ。[p]
+[sp]  上がらないんだ。
+[glink target=*sijyou_kazoku_2_1_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_kazoku_2_1_2
+
 父の名前は『四条悠次郎』。[r]
 母の名前は『四条夏子』[r]
 [r]
@@ -304,19 +310,45 @@
 父は、新聞と珈琲が好きなおっとりした人かな。 [r]
 実は祖父が英語が苦手みたいで、さりげなくサポートを[r]
 しているようなんだ。[r]
-君のお父さんとも仲がいいね。[p]
+君のお父さんとも仲がいいね。
+[glink target=*sijyou_kazoku_2_1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_1_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_kazoku_2_1_3
+
 母の趣味は三味線。[r]
 嫁いでくる前は、華道家元の後藤家の四姉妹の長女で、[r]
 長女故に末っ子には厳しくも甘いかも。[r]
 けど、仕事以外の家の事も的確にしてくれて[r]
-面倒見がいい人ではあると思う。[p]
+面倒見がいい人ではあると思う。
+[glink target=*sijyou_kazoku_2_1_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_1_4 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_kazoku_2_1_4
+
 [r]
 こんな個性的な祖父母と両親だけど、[r]
-良縁を結んでくれた事には感謝しているよ。[p]
+良縁を結んでくれた事には感謝しているよ。
+[glink target=*sijyou_kazoku_2_1_3 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_1_5 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_kazoku_2_1_5
+
 [sp][r][r][r]
 次の手紙では、兄弟のことも書こうか[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*sijyou_kazoku_2_1_4 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_kazoku_2_1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_kazoku_2_1_close
+[cm]
+[clearfix]
+
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -336,6 +368,8 @@
 [endif]
 
 [手紙四条 fumi_number=]
+*sijyou_kazoku_2_2_1
+[cm]
 [r][r][r]
 [名前]さんへ。[r]
 [r]
@@ -345,35 +379,64 @@
 今は、外交官を務めている忙しい人だね。[r]
 [r]
 四条家の長男として仕事に打ち込みすぎて、[r]
-一度目の婚約に失敗してしまったみたいなんだ。[p]
+一度目の婚約に失敗してしまったみたいなんだ。
+[glink target=*sijyou_kazoku_2_2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_kazoku_2_2_2
 [r]
 女性不信になってるかな……とは思うけど、[r]
 僕の弟としてからの率直な意見だと……[r]
 女性に対しても社交界的な態度をとっているからだと思うな。[r]
 [r]
 とはいえ、僕は兄の立ち振る舞いや才能には尊敬しているし、[r]
-頭が上がらないかな。[p]
+頭が上がらないかな。
+[glink target=*sijyou_kazoku_2_2_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_2_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_kazoku_2_2_3
+
 最近、兄から写真が送られてきたけど、随分と静観な顔つきに[r]
 なっていたよ。[r]
 [r]
-君が、惚れていまわないか心配と余計な事を考えてしまったよ。[p]
+君が、惚れていまわないか心配と余計な事を考えてしまったよ。
+[glink target=*sijyou_kazoku_2_2_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_2_4 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 
+*sijyou_kazoku_2_2_4
 次男は僕。 『四条華織』。君の手紙の相手って、そんなことは[r]
 知ってるってね？ [r]
 [r]
 実は、君がまだまだ知らないところもあるんだよ。[r]
 ……なんてね。君が知っている以上に想っていることくらいだよ。[r]
-とはいえ、これからもお互いを深く知っていけたらいいですね。[p]
+とはいえ、これからもお互いを深く知っていけたらいいですね。
+[glink target=*sijyou_kazoku_2_2_3 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_2_5 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_kazoku_2_2_5
 [r]
 最近は、君のお父さんとも交流させてもらっています。[r]
 文矢もそうだけど、君のお父さんと話していると楽しくなるね。[r]
 [r]
-君が素敵な女性になるのも納得だと思う。[p]
+君が素敵な女性になるのも納得だと思う。
+[glink target=*sijyou_kazoku_2_2_4 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_2_6 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_kazoku_2_2_6
 [sp][r][r]
 長くなってしまったね。[r]
 次の手紙では、弟と妹のことも書くよ。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*sijyou_kazoku_2_2_5 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_kazoku_2_2_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_kazoku_2_2_close
+[cm]
+[clearfix]
+
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -393,6 +456,8 @@
 [endif]
 
 [手紙四条 fumi_number=]
+*sijyou_kazoku_2_3_1
+[cm]
 [名前]さんへ。[r]
 [r]
 いつも手紙をありがとう。約束の弟と妹について紹介しないとね。[r]
@@ -402,14 +467,22 @@
 華衣は……色々あったけれど、今は元気にしてるし、[r]
 君には、感謝と尊敬の意を持っているみたいだ。[r]
 [r]
-つかず離れず、本来の兄として見守っていきたい。[p]
+つかず離れず、本来の兄として見守っていきたい。
+[glink target=*sijyou_kazoku_2_3_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_kazoku_2_3_2
 妹の美華は、ひとつ上の兄の華衣に怯える気弱な[r]
 子なんだ。 [r]
 昔から、華衣と折り合いが悪くって、寄宿舎に入れられている。[r]
 [r]
 華衣と一緒に留学までしたけれど、やっぱり苦手みたいだ。[r]
 今後は、仲良くなってくれると嬉しいのだけど……時間が[r]
-かかりそうだ。[p]
+かかりそうだ。
+[glink target=*sijyou_kazoku_2_3_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_3_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_kazoku_2_3_3
 妹の歳は十四歳になったばかりで、まだまだ幼いね。[r]
 この前、[名前]さんとの結納の件で、手紙のやり取りをしたら[r]
 『女の子ばかりの寄宿舎にいると、お兄様みたいな素敵な出会[r]
@@ -418,14 +491,31 @@
 億劫』って書いてあったよ[r]
 [r]
 それから、『出来たら[名前]さんとの出会いについてと話を聞き[r]
-たい』とも。[p]
+たい』とも。
+[glink target=*sijyou_kazoku_2_3_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_3_4 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_kazoku_2_3_4
 けど、色々あったし、照れてしまうから、しばらくは、秘密といって、[r]
-かわしておく……。[p]
+かわしておく……。
+[glink target=*sijyou_kazoku_2_3_3 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kazoku_2_3_5 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_kazoku_2_3_5
 家族の紹介はこれで全部かな。[r]
 [r]
 今後とも宜しくお願い致します。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*sijyou_kazoku_2_3_4 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_kazoku_2_3_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_kazoku_2_3_close
+[cm]
+[clearfix]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -1275,6 +1365,8 @@
 『ネリネ』[p]
 [endif]
 [手紙四条 fumi_number=8_3]
+*sijyou_fumi33_1
+[cm]
 [名前]へ。[r]
 [r]
 暑さも薄まりすっかり秋の涼やかな季節に変わるね。[r]
@@ -1283,11 +1375,21 @@
 そういえば、ネリネの花言葉について話をしてなかったね。[r]
 「華やか」「また会う日を楽しみに」「幸せな思い出」[r]
 「輝き」「忍耐」「箱入り娘」[r]
-この花を見ていると穏やかな気持ちになるんだ。[p]
+この花を見ていると穏やかな気持ちになるんだ。
+[glink target=*sijyou_fumi33_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi33_2
 美しい見た目に反して香りはないけれど、[r]
 花びらに光が当たると、キラキラと輝くから、[r]
 本当に不思議な花だよね。[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*sijyou_fumi33_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi33_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_fumi33_close
+[cm]
+[clearfix]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -1536,7 +1638,7 @@
 @jump target="*test"
 [endif]
 ;==============================================================================================================
-;*16_end
+*16_end
 *sijyou_fumi41
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
@@ -1545,6 +1647,8 @@
 [endif]
 
 [手紙四条 fumi_number=]
+*sijyou_fumi41_1
+[cm]
 [r][r]
 [名前]さんへ。[r]
 [r]
@@ -1553,11 +1657,21 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [r]
 感謝の言葉と、これから迷惑をかけるお詫びとで[r]
 入り混じります。[r]
-たくさんの[名前]との思い出を綴っていきたいです。[p]
+たくさんの[名前]との思い出を綴っていきたいです。
+[glink target=*sijyou_fumi41_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi41_2
 他にも伝えたいことはありますが、それは結納の時の為に[r]
 とっておきます。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*sijyou_fumi41_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi41_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_fumi41_close
+[cm]
+[clearfix]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -1611,7 +1725,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 ;◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇他手紙;◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇
 ;==============================================================================================================
 ;///////未来へ///////
-;*17_ex
+*17_ex
 *sijyou_fumi43
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
@@ -1619,6 +1733,8 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 『未来へ』[p]
 [endif]
 [手紙四条 fumi_number=]
+*sijyou_fumi43_1
+[cm]
 [名前]さんへ。[r]
 [r]
 花が咲き乱れ、心弾ませる季節となりましたね。[r]
@@ -1628,13 +1744,20 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [r]
 庭の牡丹の剪定をしていたところ、ふと過去を思い出しました。[r]
 庭で文矢と僕が将棋に興じていたところ、その花を見つめていた、[r]
-[名前]さんに渡したことを……。[p]
+[名前]さんに渡したことを……。
+[glink target=*sijyou_fumi43_2 text="→" size=10 x=770 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi43_2
 ;ｱｲｺﾝにかかる
 ;今もそうですが、幼い頃の[名前]さんは、[r]
 ;絵画に描かれる妖精ように可愛らしかったです。[r]
 文矢が多忙になり、[名前]さんが淑女として家に入ってからは、[r]
 話さなくなってしまいましたが、これからは、[名前]さんと[r]
-色々なことを話していきたいです。[p]
+色々なことを話していきたいです。
+[glink target=*sijyou_fumi43_1 text="←" size=10 x=110 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_fumi43_3 text="→" size=10 x=770 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi43_3
 追伸。気づいてるかもしれないけど、実をいうと文章を書くのは[r]
 苦手で、いつも綺麗な返信を送ってくれる[名前]には、頭が[r]
 あがらないよ。[r]
@@ -1644,7 +1767,14 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 僕の中にひとつ極めるものを見つけると。[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*sijyou_fumi43_2 text="←" size=10 x=110 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi43_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_fumi43_close
+[cm]
+[clearfix]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -1795,6 +1925,8 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 『妹へ』[p]
 [endif]
 [手紙文矢 fumi_number=]
+*sijyou_fumi103_1
+[cm]
 [r]
 [名前]へ[r]
 拝啓[r]
@@ -1805,7 +1937,10 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [r]
 さて、父から話をききました。[r]
 [名前]が、華織を選ぶとは、僕としても[r]
-嬉しい驚きを感じています。[p]
+嬉しい驚きを感じています。
+[glink target=*sijyou_fumi103_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi103_2
 家を出てから、華織とは、たまに手紙で[r]
 やりとりするくらいになってしまいましたが、[r]
 華織も変わりないでしょうか？[r]
@@ -1816,13 +1951,25 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 心から応援しています。[r]
 [r]
 冷たい風が強くなってきましたが、風邪をひか[r]
-ないように気をつけてください。[p]
+ないように気をつけてください。
+[glink target=*sijyou_fumi103_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_fumi103_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_fumi103_3
 追伸[r]
 次に日本に戻った時は、家族揃って会食に[r]
 行きたいですね。[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　文矢[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　文矢
+[glink target=*sijyou_fumi103_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi103_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_fumi103_close
+[cm]
+[clearfix]
 [手紙読了]
 [if exp=tf.test_sijyou == true]
 [clearstack]

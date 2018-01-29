@@ -35,81 +35,82 @@ $(".1_fore").empty();
 [endscript]
 *test_page1
 *page1
-[glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="midori2" text="緑の石２回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="midori3" text="緑の石３回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="ichi_nichi" text="一日のはじまり" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="ichi_nichi2" text="一日のはじまり２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="ichi_nichi3" text="一日のはじまり３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="neko" text="猫" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-[glink target="neko2" text="猫2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
+[glink target="midori" text="緑の石" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 font_color=black]
+[glink target="midori2" text="緑の石２回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 font_color=black]
+[glink target="midori3" text="緑の石３回目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
+[glink target="ichi_nichi" text="一日のはじまり" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
+[glink target="ichi_nichi2" text="一日のはじまり２" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
+[glink target="ichi_nichi3" text="一日のはじまり３" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
+[glink target="neko" text="猫" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 font_color=black]
+[glink target="neko2" text="猫2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 font_color=black]
 
-[glink target="neko3" text="猫3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="neko4" text="猫4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="neko5" text="猫5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="kiki_jyouzu1" text="聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="kiki_jyouzu_2" text="聞き上手２凡庸" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="kiki_jyouzu_3" text="聞き上手３事件解決後" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="neko3" text="猫3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
+[glink target="neko4" text="猫4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
+[glink target="neko5" text="猫5" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 font_color=black]
+[glink target="kiki_jyouzu1" text="聞き上手" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 font_color=black]
+[glink target="kiki_jyouzu_2" text="聞き上手２凡庸" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 font_color=black]
+[glink target="kiki_jyouzu_3" text="聞き上手３事件解決後" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 font_color=black]
 
-[glink target="page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
+[glink target="page2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 font_color=black]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 
 *page2
-[glink target="*sijyou_yujin_1" text="友人1(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="*sijyou_yujin_2" text="友人1(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*sijyou_yujin_b" text="友人2(前・凡庸)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="*sijyou_yujin_b2" text="友人2(後・凡庸)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="syokuji_3" text="食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="*sijyou_yujin_1" text="友人1(お見合い前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 font_color=black]
+[glink target="*sijyou_yujin_2" text="友人1(お見合い後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 font_color=black]
+[glink target="*sijyou_yujin_b" text="友人2(前・凡庸)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
+[glink target="*sijyou_yujin_b2" text="友人2(後・凡庸)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
+[glink target="syokuji" text="食事" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
+[glink target="syokuji_2" text="食事2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
+[glink target="syokuji_3" text="食事3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 font_color=black]
 
-[glink target="michi" text="道" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="michi2" text="道2(事件解決後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="*henka1" text="変化と永遠" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="*henka2" text="変化と永遠2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="*henka3" text="変化と永遠3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="*satuki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="*satuki2" text="さつき2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="michi" text="道" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
+[glink target="michi2" text="道2(事件解決後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
+[glink target="*henka1" text="変化と永遠" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 font_color=black]
+[glink target="*henka2" text="変化と永遠2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 font_color=black]
+[glink target="*henka3" text="変化と永遠3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 font_color=black]
+[glink target="*satuki" text="さつき" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 font_color=black]
+[glink target="*satuki2" text="さつき2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 font_color=black]
 
-[glink target="page3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
+[glink target="page3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 font_color=black]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 
 *page3
-[glink target="*sincya" text="新茶" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-[glink target="*sincya2" text="新茶２凡庸" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-[glink target="*sincya3" text="新茶３凡庸" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-[glink target="*sincya3_1" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-[glink target="*sincya3_2" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-[glink target="*sincya3_3" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-[glink target="*sincya3_4" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
+[glink target="*sincya" text="新茶(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 font_color=black]
+[glink target="*sincya_1" text="新茶(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 font_color=black]
+[glink target="*sincya2" text="新茶２凡庸" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
+[glink target="*sincya3" text="新茶３凡庸" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
+[glink target="*sincya3_1" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
+[glink target="*sincya3_2" text="新茶凡庸A" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
+[glink target="*sincya3_3" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 font_color=black]
+[glink target="*sincya3_4" text="新茶凡庸B" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 font_color=black]
 
-[glink target="*kyoku1" text="お気に入りの曲1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="*kyoku2" text="お気に入りの曲2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="*sps" text="スポーツの話題(見前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="*sps2" text="スポーツの話題(事後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="*sps2_1" text="スポーツの話題(凡庸・前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="*sps2_2" text="スポーツの話題(凡庸・後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
+[glink target="*kyoku1" text="お気に入りの曲1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
+[glink target="*kyoku2" text="お気に入りの曲2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
+[glink target="*sps" text="スポーツの話題(見前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 font_color=black]
+[glink target="*sps2" text="スポーツの話題(事後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 font_color=black]
+[glink target="*sps2_1" text="スポーツの話題(凡庸・前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 font_color=black]
+[glink target="*sps2_2" text="スポーツの話題(凡庸・後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 font_color=black]
 
-[glink target="page4" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 color=white]
+[glink target="page4" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 font_color=black]
 ;ページ停止に地点にジャンプ
 @jump target="*common"
 
 *page4
-[glink target="*sisyu" text="詩集" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 color=white]
-[glink target="*kangeki" text="観劇(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 color=white]
-[glink target="*kangeki2" text="観劇(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 color=white]
-[glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 color=white]
-[glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 color=white]
-[glink target="*sijyou_kaidan_1" text="怪談(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 color=white]
-[glink target="*sijyou_kaidan_2" text="怪談(事件後)１" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 color=white]
-[glink target="*sijyou_kaidan_3" text="怪談(事件後)２" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 color=white]
-[glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 color=white]
+[glink target="*sisyu" text="詩集" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
+[glink target="*kangeki" text="観劇(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
+[glink target="*kangeki2" text="観劇(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 font_color=black]
+[glink target="*syasin" text="写真(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 font_color=black]
+[glink target="*syasin2" text="写真(事件後)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 font_color=black]
+[glink target="*sijyou_kaidan_1" text="怪談(事件前)" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 font_color=black]
+[glink target="*sijyou_kaidan_2" text="怪談(事件後)１" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 font_color=black]
+[glink target="*sijyou_kaidan_3" text="怪談(事件後)２" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 font_color=black]
+[glink target="page1" text="前へ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=550 font_color=black]
 *common
 
-[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
-[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 color=white]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 font_color=black]
+[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=600 font_color=black]
 [s]
 [endif]
 
@@ -162,6 +163,8 @@ $(".1_fore").empty();
 新茶の話題（事件後）[p]
 [endif]
 [手紙四条 fumi_number=]
+*sincya_1_1
+[cm]
 [名前]さん、御手紙をありがとうございます。[r]
 [r]
 もう、新茶の季節なのですね。[r]
@@ -169,7 +172,10 @@ $(".1_fore").empty();
 感じ取る感性には目を見張るものがありますね。[r]
 [r]
 なんだか、[名前]の手紙を読んでいたら、お茶の[r]
-いい香りがしてきました。[p]
+いい香りがしてきました。
+[glink target=*sincya_1_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sincya_1_2
 ;してきたように感じられました・・・うまくいえない
 [r]
 [r]
@@ -180,7 +186,14 @@ $(".1_fore").empty();
 [名前]さんは、どんな時にお茶をいただきますか？[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*sincya_1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sincya_1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sincya_1_close
+[cm]
+[clearfix]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -1244,13 +1257,18 @@ $(".1_fore").empty();
 『猫３　事件解決後』[p]
 [endif]
 [手紙四条 fumi_number=]
+*neko3_1
+[cm]
 [名前]さん。いつも手紙をありがとう。[r]
 [r]
 実は、この前。[r]
 泣いていた子供に出会ったんだ。[r]
 それで理由を聞いたところ、家で猫を飼えないから[r]
 捨てないといけないらしくって……[r]
-ウチで飼うことになったんだ。[p]
+ウチで飼うことになったんだ。
+[glink target=*neko3_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*neko3_2
 [r]
 といっても、ウチには猫アレルギーの祖父が[r]
 いるから貰い手が見つかるまで[r]
@@ -1260,7 +1278,14 @@ $(".1_fore").empty();
 [r]
 また機会があったら、[名前]さんに近況を報告するよ[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*neko3_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*neko3_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*neko3_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][78] = 0;"]
@@ -1842,6 +1867,8 @@ $(".1_fore").empty();
 [p]
 [endif]
 [手紙四条 fumi_number=]
+*syasin2_1
+[cm]
 [名前]さんへ　手紙をありがとう。[r]
 [r]
 声をかけられるということは、[名前]さんが、[r]
@@ -1852,7 +1879,10 @@ $(".1_fore").empty();
 いかなように。[r]
 たとえ、その写真が素晴らしい写真であっても、世に[r]
 出回ってしまうと悪い人に悪用されてしまうことがある[r]
-のです。[p]
+のです。
+[glink target=*syasin2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*syasin2_2
 ;昔はエロ写真に美人をコラしていた
 [r]
 ああ、お説教くさくなって申し訳ありません。[r]
@@ -1864,7 +1894,14 @@ $(".1_fore").empty();
 その時の[名前]さんは、とても美しいのでしょうね。[r]
 ;説教くささ半減↑
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*syasin2_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*syasin2_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*syasin2_close
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[2][96] = 0;"]
@@ -2120,27 +2157,44 @@ $(".1_fore").empty();
 [p]
 [endif]
 [手紙四条 fumi_number=]
+*sijyou_kaidan_3_1
+[cm]
 ;見合い後 f.sijyou_event6==1 前の手紙を見ている
 [名前]さんへ。[r][r]
 いつも手紙をありがとうございます。[r]
 [名前]さんは、もう怖い話は苦手ではないのでしょうか？[r]
 それでしたら、怖いお話を耳にしたので[r]
-書いてみましょうか。[p]
+書いてみましょうか。
+[glink target=*sijyou_kaidan_3_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_kaidan_3_2
 
 麻草にある高層建築"明雲閣"での怖い噂話です。[r]
 夜の明雲閣は怪しげに光り、[r]
 時折、明雲閣の前を通った男性を呼び寄せるそうです。[r]
 呼び寄せられた男性は、無我夢中で長い螺旋階段を[r]
 ぐるぐると上がってしまい、
-[r]昼間では十二階だったその先に十三階への扉が現れるそうです。[p]
+[r]昼間では十二階だったその先に十三階への扉が現れるそうです。
 
+[glink target=*sijyou_kaidan_3_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_kaidan_3_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_kaidan_3_3
 そこには明雲閣の下の娼館で働いていた、[r]
 元娼婦の幽霊がいて、その人を連れ去ってしまうそうです。[r]
 あそこのエレベエタアが故障したままなのは、[r]
 そのせいかもしれない？[sp]……といった噂話でした。[r]
 あまり、怖くなかったかな。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織
+[glink target=*sijyou_kaidan_3_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_kaidan_3_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_kaidan_3_close
+[cm]
+[clearfix]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
