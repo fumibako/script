@@ -1845,7 +1845,7 @@ $(".1_fore").empty();
 [r]
 僕の家にも古く伝わる話がいくつかありました。[r]
 きっと昔の人は迷信深かったのではないかと思います。[r]
-[glink target=*hujieda_fumi_kaidan_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi_kaidan_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *hujieda_fumi_kaidan_2
 [sp]何が真実だったかは僕には知るすべはありません。[r]
@@ -1858,8 +1858,8 @@ $(".1_fore").empty();
 [sp]……こうして文字を綴るのにも霊力は宿るのかも
 しれませんね。[r]
 ならばこう綴りましょう。
-[glink target=*hujieda_fumi_kaidan_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
-[glink target=*hujieda_fumi_kaidan_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi_kaidan_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi_kaidan_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 
 *hujieda_fumi_kaidan_3
@@ -1867,7 +1867,7 @@ $(".1_fore").empty();
 貴方様に、良い眠りと夢が訪れますように。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　藤枝　肇
-[glink target=*hujieda_fumi_kaidan_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi_kaidan_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_kaidan_close" size=5 x=880 y=24 width=50 height=50]
 [s]
 
