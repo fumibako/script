@@ -194,6 +194,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [endif]
 
 [手紙文矢 fumi_number=]
+*10_3_1
+[cm]
+[clearstack]
 [名前]へ[r]
 [r]
 華織は、いつも笑顔で、自身のことは語りたがりません。[r]
@@ -205,7 +208,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 迷子の子供がいたら親元に届けてたり、書生の勉強の手伝いを[r]
 したりと面倒見もいいです。[r]
 それに僕の奥さんの恋愛相談にのってくれました。[r]
-[p]
+[glink target=*10_3_2 text="→" size=10 x=770 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*10_3_2
 華織は傷つけられることはあっても、[r]
 誰かを傷つけることはしないと思うんだ。[r]
 [r]
@@ -213,7 +218,15 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp] どうしたい？[r]
 [r]
 [sp]
-[主人公退場]　　　　　　　　　　　　　　　　　　　　　　　　文矢[p]
+[主人公退場]　　　　　　　　　　　　　　　　　　　　　　　　文矢
+[glink target=*10_3_1 text="←" size=10 x=110 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*10_3_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*10_3_close
+[cm]
+[clearfix]
+[clearstack]
 ;場面転換
 [背景セピア化]
 [wait time=100]
