@@ -16,16 +16,31 @@
 *zaizen_fumi1
 ;背景変更:手紙
 [手紙財前]
+*zaizen_fumi1_1
+[cm]
 [名字] [名前]様[r]
 [r]
 謹啓　春暖の候、皆様ますますご清栄のこととお喜び申し上げます。[r]
-このたび、古式日本の伝統に則り婚約の申し出を行うべく、手紙と釣書を送らせて頂きました。[p]
+このたび、古式日本の伝統に則り婚約の申し出を行うべく、手紙と釣書を送らせて頂きました。
+[glink target=*zaizen_fumi1_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi1_2
+
 [r]
 [sp]これからしばらくの間、私の事を知って頂けるよう努力いたしますのでよろしくお願いします。[r]
 では、お体にお気をつけてお過ごしください。返事をお待ちしています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi1_close
+[cm]
+[clearfix]
+[clearstack]
+
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -79,6 +94,7 @@
 *zaizen_fumi01_close
 [cm]
 [clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -101,6 +117,8 @@
 *zaizen_fumi02
 ;#
 [手紙財前 fumi_number=]
+*zaizen_fumi02_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp] 謹復　貴方様にはますますごご清祥のことと拝察して[r]
 [sp]おります。[r]
@@ -114,7 +132,10 @@
 [sp]思っています。[r]
 [r]
 [sp] 新しい事をどう取り入れつついかに事業を展開するか、[r]
-[sp]その判断は難しいですが成功した時の喜びも、ひとしおです。[p]
+[sp]その判断は難しいですが成功した時の喜びも、ひとしおです。
+[glink target=*zaizen_fumi02_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi02_2
 
 [sp][名前]さんも高貴なご立場の常として、こうして手紙を[r]
 [sp]交わしていらっしゃいますが、ご自身の役割について[r]
@@ -124,7 +145,15 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi02_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi02_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi02_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -146,6 +175,8 @@
 *zaizen_fumi03
 ;#
 [手紙財前 fumi_number=]
+*zaizen_fumi03_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹復　貴方様におかれましては、お変わりなく[r]
 [sp]お過ごしのことと拝察しております。[r]
@@ -158,7 +189,10 @@
 [sp] 学生だった時は、家柄、財産に惹かれて私に近寄る同級生も[r]
 [sp]多くいました。[r]
 [sp] 財産や家柄につられていようと、礼節を守ることは大事だと[r]
-[sp]思っていますのでそれなりの対応をしています。[p]
+[sp]思っていますのでそれなりの対応をしています。
+[glink target=*zaizen_fumi03_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi03_2
 [sp]心の許せる友人というと、ごく数人に限られますね。[r]
 [r]
 [sp][名前]さんは友人についてどんなお考えをお持ち[r]
@@ -167,7 +201,15 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi03_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi03_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi03_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -189,6 +231,8 @@
 *zaizen_fumi04
 ;#
 [手紙財前 fumi_number=]
+*zaizen_fumi04_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹復　貴方様に一段とご清栄の由と拝察しております。[r]
 [r]
@@ -199,13 +243,24 @@
 [r]
 [sp] 私の妻となる方は器量がよく、貞淑な方が理想です。[r]
 [sp]私の立場上配偶者同席の夜会など呼ばれる事が多く、[r]
-[sp]話術にも優れていると尚いいでしょう。[p]
+[sp]話術にも優れていると尚いいでしょう。
+[glink target=*zaizen_fumi04_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi04_2
 [sp]  [名前]さんはどのような夫が理想でしょうか？[r]
 [sp] ご返事をお待ち申しております。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi04_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi04_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi04_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -227,6 +282,8 @@
 *zaizen_fumi05
 ;#
 [手紙財前 fumi_number=]
+*zaizen_fumi05_1
+[cm]
 [名字] [名前]様へ[l][r]
 [sp]謹復　貴方様には穏やかにお過ごしのことと拝察して[r]
 [sp]おります。[r]
@@ -237,13 +294,24 @@
 [sp]家の為というのもありますが[r]
 [sp]私は銀行の社員一人一人の生活や行動にも責任があり、[r]
 [sp]真面目に取り組む社員に対して[r]
-[sp]色々なものを還元したいと思っています。[p]
+[sp]色々なものを還元したいと思っています。
+[glink target=*zaizen_fumi05_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi05_2
 [sp][名前]さんはどのような将来を考えているでしょうか？[r]
 [sp] ご返答をお待ち申しております。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi05_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi05_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi05_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -299,6 +367,8 @@
 *5_3_6_2
 ;#
 [手紙財前 fumi_number=]
+*5_3_6_2_1
+[cm]
 [名字] [名前]様へ[l][r]
 [sp]謹復 貴方様には益々お元気にお過ごしの事とお慶び[r]
 [sp]申し上げます。[r]
@@ -310,12 +380,23 @@
 [r]
 [sp]花が咲くとやはり華やかで美しいと率直に感じますね。[r]
 [sp]散って枯れていくのも惜しいとは思いますが、[r]
-[sp]散っていくからこそ花も美しいものだとも思います。[p]
+[sp]散っていくからこそ花も美しいものだとも思います。
+[glink target=*5_3_6_2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*5_3_6_2_2
 [sp][名前]さんはさつきに限らず花をどう思いますか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬 [p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬 
+[glink target=*5_3_6_2_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*5_3_6_2_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*5_3_6_2_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -337,6 +418,8 @@
 『読書について』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi08_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹復 貴方様にはお変わりなくお過ごしの事と存じます。[r]
 [r]
@@ -345,7 +428,9 @@
 新しい制度、また廃れていく情勢など、[r]  
 詳しく分析し、お客様に提案し、[r]  
 銀行の方針を変えていくのは私の責任です。[r]
-[p]
+[glink target=*zaizen_fumi08_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi08_2
 [sp]例えば資産を守り、増やしていく方法についての方法は、[r]
 沢山ありますが失敗する人も成功する人もいます。[r]
 [sp]よりお客様一人一人に合う方法を見つけ、提供する為に、[r]
@@ -356,7 +441,15 @@
 [r]
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
+[sp]　　　　　　　　　　　　　　　　　　財前　美彬 
+[glink target=*zaizen_fumi08_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi08_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi08_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -621,13 +714,17 @@
 『写真について』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi16_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹復 貴方様におかれましては、[r]
 お元気のにお過ごしのことと拝察しております。[r]
 [r]
 [sp]そういえば、父が独逸製の最新式の写真機を[r]
 購入し、仕事の休日にはよく写真を撮るようになりました。[r]
-[p]
+[glink target=*zaizen_fumi16_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi16_2
 [sp]息子の私が言うのもなんですが、父はセンスが良いと[r]
 感じています。[r]
 [sp]写真の取り方もよくコツをつかんでぶれたりさせる事が[r]
@@ -642,7 +739,15 @@
 [r]
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
+[sp]　　　　　　　　　　　　　　　　　　財前　美彬 
+[glink target=*zaizen_fumi16_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi16_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi16_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -663,13 +768,17 @@
 『一日のはじまりについて』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi17_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹復 貴方様はその後ごご活躍のことと存じます。[r]
 [r]
 [sp]一日のはじまりは珈琲を飲んでいます。[r]
 [sp]珈琲は体に悪いといわれていますが、[r]
 眠気がなくなるので私はよく飲んでますね。[r]
-[p]
+[glink target=*zaizen_fumi17_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi17_2
 [sp]私は、仕事で徹夜することもあり、[r]
 不定期な生活になりがちですが、[r]
 一日の始まりは気持ちを引き締めています。[r]
@@ -679,7 +788,15 @@
 [sp][名前]さんはどのような朝の習慣をしていますか？[r]
 [r]
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
-[sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
+[sp]　　　　　　　　　　　　　　　　　　財前　美彬 
+[glink target=*zaizen_fumi17_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi17_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi17_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -734,13 +851,17 @@
 『お気に入りの曲について 2』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi19_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹復 貴方様には一段とご清栄の由と存じます。[r]
 [r]
 [sp]私の好きな曲の一つに『わが祖国』があります。[r]
 [sp]幼い頃、母から別れる時に、この曲の[r]
 オルゴールを渡されました。[r]
-[p]
+[glink target=*zaizen_fumi19_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi19_2
 [sp]何度も捨てようと思ったのですが、[r]
 メロディが好きなので捨てられなかったのです。[r]
 [r]
@@ -750,7 +871,15 @@
 [r]
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
+[sp]　　　　　　　　　　　　　　　　　　財前　美彬 
+[glink target=*zaizen_fumi19_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi19_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi19_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -840,6 +969,8 @@
 『 変化と永遠 』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi22_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹復 貴方様はなお一層ご活躍の事と拝察しております。[r]
 [r]
@@ -849,7 +980,9 @@
 のですよ。[r]
 [r]
 [sp]ことわりの中で、私たちは生きています。[r]
-[p]
+[glink target=*zaizen_fumi22_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi22_2
 [sp]ですが感傷というのも大事ですね。[r]
 [sp]永遠はなくとも人がどう生きたかという事は[r]
 後世に影響を及ぼします。[r]
@@ -861,7 +994,15 @@
 [r]
 [sp]　 　　　　　　　　　　　　　　　　　　　　敬答[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　財前　美彬 [p]
+[sp]　　　　　　　　　　　　　　　　　　財前　美彬 
+[glink target=*zaizen_fumi22_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi22_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi22_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -923,6 +1064,8 @@
 *6
 ;#
 [手紙財前 fumi_number=]
+*6_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp] [sp]謹呈　長雨の候　貴方様にはいよいよご清祥の由と[r]
 [sp]存じます。[r]
@@ -931,13 +1074,24 @@
 [r]
 [sp] 雨が降るのは時に落ち着き、私は雨が特に好ましいと[r]
 [sp] 思いますが、こう毎日降るとじめじめしていては、[r]
-[sp] カラッとした天気が待ち遠しいものです。[p]
+[sp] カラッとした天気が待ち遠しいものです。
+[glink target=*6_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*6_2
 [sp] 銀行のお客様も傘を忘れる方がたまにいらっしゃって[r]
 [sp]困る事があります。貴方も傘はお忘れなく。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　謹言[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=6_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*6_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*6_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -958,6 +1112,8 @@
 *7
 ;#
 [手紙財前 fumi_number=]
+*7_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹呈　仲夏の候　貴方様にはいよいよご清祥の由と[r]
 [sp]存じます。[r]
@@ -968,13 +1124,24 @@
 [sp]出まして実施しています。[r]
 [r]
 [sp]笹の葉と短冊を一緒に焼いたら願いが叶うといわれているので[r]
-[sp]七夕が終わった後は神社に炊き上げるそうです。[p]
+[sp]七夕が終わった後は神社に炊き上げるそうです。
+[glink target=*7_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*7_2
 [sp]私は夢は自分でつかむものと思いますが、お客様にも[r]
 [sp]好評な様で粋な計らいもたまには良いものです。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　謹言[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*7_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*7_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*7_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -996,6 +1163,8 @@
 
 ;#
 [手紙財前 fumi_number=]
+*8_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹呈　晩夏の候　貴方様にはなお一層ご活躍のことと[r]
 [sp]お慶び申し上げます。[r]
@@ -1005,14 +1174,25 @@
 [r]
 [sp]私はお墓参りに行きました。[r]
 今の私達がいるのは先祖あってこそだと、祖母の受け売りでは[r]
-ないですが先祖を敬うことは、当然の事だと思います。[p]
+ないですが先祖を敬うことは、当然の事だと思います。
+[glink target=*8_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*8_2
 [sp]この国は迎え火、送り火、また神社の境内で盆踊り[r]
 [sp]したりいろいろな伝統があるようですが、[r]
 [名前] さんの家ではどんなしきたりがあるのでしょうか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　謹言[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*8_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*8_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*8_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -1034,6 +1214,8 @@
 
 ;#
 [手紙財前 fumi_number=]
+*9_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]謹呈　爽秋の候　貴方様にはますますご清祥の趣と[r]
 [sp]存じます。[r]
@@ -1046,12 +1228,24 @@
 [sp]花が炎の形に見えるという事で、家に持ち帰ると火事が[r]
 [sp]起きるという迷信もありますが、私は迷信はあまり好みません。[r]
 [r]
-[sp]毒にも薬にもなる花ですが私は好きです[p]
+[sp]毒にも薬にもなる花ですが私は好きです
+[glink target=*9_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*9_2
+
 [sp]貴方は彼岸花をどう思っていますか？
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　 謹言[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*9_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*9_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*9_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -1073,6 +1267,8 @@
 
 ;#
 [手紙財前 fumi_number=]
+*10_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp] 謹呈　秋月の候。貴方様には一段と ご清栄の段と[r]
 [sp]拝察しております。[r]
@@ -1081,13 +1277,25 @@
 [r]
 [sp]とても見事なものでした。[r]
 [sp]一つ一つの菊の花は丹精こめて作られたことがよくわかります。[r]
-[sp]花を育てるのも大変な作業ではないかと思います。[p]
+[sp]花を育てるのも大変な作業ではないかと思います。
+[glink target=*10_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*10_2
+
 [sp] [名前] さんにもお稽古事には心を込めて[r]
 [sp]取り組んでいらっしゃるのでしょうか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　謹言[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*10_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*10_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*10_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[1(財前を示すNumber)][(配列中の位置ナンバー)]
@@ -1109,12 +1317,18 @@
 『薔薇園 散策のお誘い』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi29_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]秋麗の候、貴方様には一段とご清栄の由と存じます。[r]
 [r]
 [sp]さて、この度、[名前]さんと薔薇園の散策をしたく手紙を[r]
-出しました。[p]
+出しました。
+[glink target=*zaizen_fumi29_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi29_2
+
 
 [sp]やはり私も形式にのっとって貴方と何度かお会いした後に[r]
 成婚という形が望ましいと思います。[r]
@@ -1128,7 +1342,15 @@
 [r]
 [sp]それでは用件のみですが失礼いたします。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi29_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi29_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi29_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -1148,6 +1370,8 @@
 『先日のパーティについて』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi30_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]　初霜の候、貴方にはいよいよご清栄の由と存じます。[r]
 [r]
@@ -1158,7 +1382,11 @@
 たまに吐き出すとすっきりするものですね。[r]
 [r]
 [sp]母を許そうと思う日が来るとは思っても[r]
-みませんでした。[p]
+みませんでした。
+[glink target=*zaizen_fumi30_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi30_2
+
 [sp]貴方のお節介な部分が私に移ったのでしょうか。[r]
 だとしても、自分でも悪くない変化だと思います[r]
 なにか胸の内のもやもやした黒いものが霧散し[r]
@@ -1169,9 +1397,23 @@
 [sp]それでは取り急ぎ失礼します[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　 財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　 財前　美彬
+[glink target=*zaizen_fumi30_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*zaizen_fumi30_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*zaizen_fumi30_3
+
 [sp][r][r]追伸　これから仕事が忙しくなりそうなので[r]
-お手紙のお返事は暫く返せなくなるかもしれません[p]
+お手紙のお返事は暫く返せなくなるかもしれません
+[glink target=*zaizen_fumi30_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi30_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi30_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -1193,6 +1435,8 @@
 『母の誕生日パーティご招待』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi31_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]拝啓　春草萌えいづる季節を迎え[r]
 貴方にはいかがお過ごしですか？[r]
@@ -1202,7 +1446,11 @@
 [sp] 手紙を出せずにいる間も貴方から手紙を頂き[r]
 貴方のことを、温かく感じられるようになりました。[r]
 ;↑貴方温かく→貴方のことを、温かく　と変更させていただきました(◆jsYiJcqRkk
-[sp]自分でも不思議な気分です。[p]
+[sp]自分でも不思議な気分です。
+[glink target=*zaizen_fumi31_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi31_2
+
 ;自動改ページされるので区切ります
 [sp][r]
 [sp]ところで三月二十五日ですが母から誕生日パーティの[r]
@@ -1215,7 +1463,15 @@
 [sp] 浅春の折、穏やかにお過ごし下さい[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi31_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi31_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi31_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -1235,6 +1491,8 @@
 『怪談』[p]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi_kaidan_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]拝啓、貴方には穏やかにお過ごしの事とと存じます。[r]
@@ -1244,7 +1502,9 @@
 [sp]私も、そういったたぐいの話は好みません。[r]
 [sp]ただ怪談は事実を元に作られる事が多いようですし、[r]
 軽んじては足元すくわれると考えています。[r]
-[p]
+[glink target=*zaizen_fumi_kaidan_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi_kaidan_2
 [sp]立場上、起工式に立ち会うこともありましたが、[r]
 土地には歴史があり、その土地に息づいているものを、[r]
 直感で感じることがありました。[r]
@@ -1253,13 +1513,25 @@
 専門家を紹介しましょうか？[r]
 [sp]ですか、大切なのは自身の受け止め方と、[r]
 気持ちの持ちようでしょう。[r]
-[p]
+[glink target=*zaizen_fumi_kaidan_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*zaizen_fumi_kaidan_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*zaizen_fumi_kaidan_3
 [sp]明るく、物を大切にし、[r]
 清潔にしている方には悪霊は寄りにくいと聞きました。[r]
 [sp] 貴方もそのように心がけると良いでしょう。[r]
 
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi_kaidan_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi_kaidan_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi_kaidan_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
