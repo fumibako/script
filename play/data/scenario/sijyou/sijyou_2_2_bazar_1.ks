@@ -48,8 +48,35 @@ $(".1_fore").empty();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 (どうしたのかしら？）[p]
-
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
+*fumi_toutyaku_sijyou_107
+[if exp="f.okeiko_gamen == true"]
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「慈善バザーのお誘い」　四条 華織"; //←仮タイトルです。ご自由に変更してください
+f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「慈善バザーのお誘い」"; //←仮タイトルです。ご自由に変更してください
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_sijyou_storage.push("sijyou/sijyou_event_fumi.ks");
+f.fumi_list_all_target.push("*sijyou_bazaar_fumi");
+f.fumi_list_all_location_taishou.push(2);
+f.fumi_list_all_location_fumi.push(106);
+f.fumi_list_sijyou_location_fumi.push(106);
+f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
+f.fumi_list_sijyou_target.push("*sijyou_bazaar_fumi");
+f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.fumi_toutyaku_sijyou[107]=1;
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_sijyou_number=f.fumi_sijyou_number + 1;
+f.hensin_list_hairetsu[2][106]=1;//イベント中に届く手紙は基本的に「返信済」とします(返信している前提で物語が進行するため)
+f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fumi;
+[endscript]
+[endif]
 [手紙四条 fumi_number=]
+
+*sijyou_bazaar_fumi_1
+﻿﻿﻿@clearstack
+[cm]
 [名前]さんへ。[r]
 向春の候、お元気でいらしたでしょうか？[r]
 [r]
@@ -58,8 +85,10 @@ $(".1_fore").empty();
 設営作業といっても、僕の主な仕事は、貴賓を持て成すための[r]
 国花の飾り付けです。[r]
 菊の花で英字を模って自由に花を生けるなど、[r]
-普段の華道の仕事とは違って面白さがありました。[p]
-
+普段の華道の仕事とは違って面白さがありました。
+[glink target=*sijyou_bazaar_fumi_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_bazaar_fumi_2
 また、僕が作業していた隣では[r]
 ご婦人方が揃って、楽し気に鞠や[ruby text=かんざし]簪、風車などの工芸品を[r]
 数多く出品される準備をしていました。[r]
@@ -68,7 +97,12 @@ $(".1_fore").empty();
 開催日には、多くの人で盛り上がるのではないかと[r]
 感じられました。[r]
 [r]
-ちなみに今年に限り、ダンスパーティも共に行うそうです。[p]
+ちなみに今年に限り、ダンスパーティも共に行うそうです。
+[glink target=*sijyou_bazaar_fumi_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_bazaar_fumi_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_bazaar_fumi_3
 さて、本題ですが……[r]
 [r]
 もし、[名前]さんがよろしければ、[r]
@@ -76,9 +110,20 @@ $(".1_fore").empty();
 僕の個人のお誘いですので、ご無理にとは言いません。[r]
 [r]
 お返事お待ちしております。[r]
-[sp] 　　　　　　　　　　　　　　　　　　　　　　　四条　華織[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　　四条　華織
+[glink target=*sijyou_bazaar_fumi_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_bazaar_fumi_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+;//////////////////////////////////////////////////////////////////
+*sijyou_bazaar_fumi_close
+[cm]
+[clearfix]
+﻿﻿﻿@clearstack
+;◆↓お稽古パート経由時の処理(手紙組み込み用)
 [if exp="f.okeiko_gamen == true"]
-;[eval exp="f.midoku_list_hairetsu[2][1] = 0;"]
+;未読→既読処理
+[eval exp="f.midoku_list_hairetsu[2][106] = 0"]
 [endif]
 [手紙四条読了 fumi_number=]
 

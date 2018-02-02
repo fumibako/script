@@ -1980,6 +1980,8 @@ f.fumi_toutyaku_sijyou[99]=1;
 ;=============================================
 ;『四条華道展のお誘い』*fumi_toutyaku_sijyou_102→sijyou_3_1.ks 353行目～へ移動しました
 ;=============================================
+;『慈善バザーのお誘い』*fumi_toutyaku_sijyou_107→sijyou_2_2_bazar_1.ks 52行目～移動しました
+;=============================================
 
 *fumi_toutyaku_sijyou_103
 ;お見合い後、文矢(5)から
@@ -2052,24 +2054,6 @@ f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi106");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
 f.fumi_toutyaku_sijyou[106]=1;
-[endscript]
-@jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
-
-*fumi_toutyaku_sijyou_107
-[iscript]	
-f.fumi_all_title_new=f.okeiko_month_kansuuji+"「107」　四条 華織";
-f.fumi_sijyou_title_new=f.okeiko_month_kansuuji+"「107」";
-f.fumi_list_all_title.push(f.fumi_all_title_new);
-f.fumi_list_all_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_sijyou_storage.push("sijyou/sijyou_fumi.ks");
-f.fumi_list_all_target.push("*sijyou_fumi107");
-f.fumi_list_all_location_taishou.push(2);
-f.fumi_list_all_location_fumi.push(106);
-f.fumi_list_sijyou_location_fumi.push(106);
-f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
-f.fumi_list_sijyou_target.push("*sijyou_fumi107");
-f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
-f.fumi_toutyaku_sijyou[107]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
 

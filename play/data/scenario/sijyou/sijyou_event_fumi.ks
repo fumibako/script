@@ -26,6 +26,9 @@
 [eval exp="tf.btn_y=tf.btn_y+50"]
 ;endif
 
+[glink target="*sijyou_bazaar_fumi" text="2月『慈善バザーのお誘い』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y font_color=black]
+[eval exp="tf.btn_y=tf.btn_y+50"]
+
 [glink target="*3_1_kadouten " text="3月『四条華道展のお誘い』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=&tf.btn_y font_color=black]
 [eval exp="tf.btn_y=tf.btn_y+50"]
 
@@ -242,6 +245,67 @@
 [手紙四条読了 fumi_number=]
 ;～～～～～～～～～～手紙2おわり～～～～～～～～～～～～～～
 @jump target=*start
+
+*sijyou_bazaar_fumi
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+『慈善バザーのお誘い』[p]
+;↑仮タイトルです。ご自由に変更してください
+[endif]
+[手紙四条 fumi_number=]
+*sijyou_bazaar_fumi_1
+[cm]
+[名前]さんへ。[r]
+向春の候、お元気でいらしたでしょうか？[r]
+[r]
+ここ最近は、数日後に開催される、[ruby text=チャリ]慈[ruby text=ティー]善バザーの設営作業に[r]
+追われていました。[r]
+設営作業といっても、僕の主な仕事は、貴賓を持て成すための[r]
+国花の飾り付けです。[r]
+菊の花で英字を模って自由に花を生けるなど、[r]
+普段の華道の仕事とは違って面白さがありました。
+[glink target=*sijyou_bazaar_fumi_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_bazaar_fumi_2
+また、僕が作業していた隣では[r]
+ご婦人方が揃って、楽し気に鞠や[ruby text=かんざし]簪、風車などの工芸品を[r]
+数多く出品される準備をしていました。[r]
+[r]
+品揃えもそうですが、ご婦人方の[ruby text=チャリ]慈[ruby text=ティー]善バザーへの意気込みから、[r]
+開催日には、多くの人で盛り上がるのではないかと[r]
+感じられました。[r]
+[r]
+ちなみに今年に限り、ダンスパーティも共に行うそうです。
+[glink target=*sijyou_bazaar_fumi_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_bazaar_fumi_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*sijyou_bazaar_fumi_3
+さて、本題ですが……[r]
+[r]
+もし、[名前]さんがよろしければ、[r]
+[ruby text=チャリ]慈[ruby text=ティー]善バザーに御一緒できないでしょうか？[r]
+僕の個人のお誘いですので、ご無理にとは言いません。[r]
+[r]
+お返事お待ちしております。[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　　四条　華織
+[glink target=*sijyou_bazaar_fumi_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_bazaar_fumi_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_bazaar_fumi_close
+[cm]
+[clearfix]
+
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[s]
+[endif]
+[手紙四条読了 fumi_number=]
+
+
 
 
 ;[イベントシーン終了]
