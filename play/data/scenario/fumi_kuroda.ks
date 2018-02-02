@@ -364,7 +364,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
-[eval exp="f.midoku_list_hairetsu[0][17] = 0;"]
+[eval exp="f.midoku_list_hairetsu[0][17] = 0"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
@@ -375,7 +375,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
-[eval exp="f.midoku_list_hairetsu[0][18] = 0;"]
+[eval exp="f.midoku_list_hairetsu[0][18] = 0"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
