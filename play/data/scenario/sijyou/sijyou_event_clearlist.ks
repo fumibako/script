@@ -296,7 +296,8 @@ $(".fixlayer").css("opacity",0);
 [image name="day,day2_2" storage="../image/day_check.png" layer=27 x=&tf.x0_1 y=&tf.y6 visible=true wait=true]
 [wait time=10]
 [if exp="sf.event_sijyou_2_2_bazar == 1"]
-[button name="sijyou_2_2" graphic="day2_2.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y6 exp="tf.jp_sinario='sijyou_2_2_bazar_1'"]
+[button name="sijyou_2_2" graphic="day2_3.png" target="sijyou_sinario" x=&tf.x2 y=&tf.y6 exp="tf.jp_sinario='sijyou_2_2_bazar_1'"]
+;↑四条バザーはファイル名は2_2ですが2_3発生として実装されていますので、日付表示を2_3に合わせます◆jsYiJcqRkk
 [image name="day,day2_2" storage="../image/day_check_sumi.png" layer=27 x="&tf.x2+155" y=&tf.y6 visible=true]
 [endif]
 
@@ -656,8 +657,9 @@ $(".day2_1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)
 
 ;【14】
 [if exp="sf.event_sijyou_2_2_bazar != 1"]
-[button fix=true name="day,day2_2,sijyou_2_2,tips_btn" graphic="day2_2.png" target="tips_label" x=&tf.x2 y=&tf.y6 exp="tf.tipsNo=14"]
-;[image name="day,day2_2,sijyou_2_2" storage="../image/day2_2.png" layer=27 x=&tf.x2 y=&tf.y6 visible=true wait=true]
+[button fix=true name="day,day2_2,sijyou_2_2,tips_btn" graphic="day2_3.png" target="tips_label" x=&tf.x2 y=&tf.y6 exp="tf.tipsNo=14"]
+;[image name="day,day2_2,sijyou_2_2" storage="../image/day2_3.png" layer=27 x=&tf.x2 y=&tf.y6 visible=true wait=true]
+;四条バザーはファイル名は2_2ですが2_3発生として実装されていますので、日付表示を2_3に合わせます◆jsYiJcqRkk
 [wait time=10]
 [iscript]
 $(".day2_2").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%)','-moz-filter': 'brightness(50%)','-o-filter': 'brightness(50%)','-ms-filter': 'brightness(50%)'});
