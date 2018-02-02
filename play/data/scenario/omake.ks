@@ -105,10 +105,6 @@ $(".layer_2").css("opacity",0);
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=500 y=70 width=160 height=104]
 [wait time=10]
 [endif]
-;↓デバッグ用表示(通常はコメントアウトします)
-;[ptext layer=2 name=list page=fore text="sf.ED_zaizen_bad2=" x=545 y=20 size=15 color=navy visible=true]
-;[ptext layer=2 name=list page=fore text=&sf.ED_zaizen_bad2 x=685 y=20 size=15 color=navy visible=true]
-
 
 ;黒田
 [image layer=2 name=list storage="../image/h2.png" x=40 y=225]
