@@ -112,6 +112,8 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [endif]
 *fumi_zaizen
 [手紙財前 fumi_number=]
+*zaizen_fumi31_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [sp]拝啓　春草萌えいづる季節を迎え[r]
 貴方におかれましては、いかがお過ごしですか？[r]
@@ -119,11 +121,14 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]さて、暫く手紙を書けなかったことをまずは[r]
 お詫びしましょうか。[r]
 [sp]手紙を出せずにいる間も貴方から手紙を頂き[r]
-貴方温かく感じられるようになりました。[r]
+貴方のことを、温かく感じられるようになりました。[r]
+;↑zaizen_fumi.ksの表現にあわせて調整させていただきました(◆jsYiJcqRkk
 [sp]自分でも不思議な気分です。
 
 [wait time=10]
-[p]
+[glink target=*zaizen_fumi31_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi31_2
 
 ;自動改ページされるので区切ります
 [sp][r]
@@ -134,10 +139,18 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 いかがしましょうか？[r]
 [r]
 [sp]それでは返信をお待ちしております。[r]
-[sp]浅春の折、穏やかにお過ごし下さい。[r]
+[sp] 浅春の折、穏やかにお過ごし下さい[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi31_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi31_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi31_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理

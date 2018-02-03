@@ -60,8 +60,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [endscript]
 [endif]
 [手紙財前 fumi_number=]
+*zaizen_fumi30_1
+[cm]
 [名字]　[名前]様へ[l][r]
-[sp]初霜の候、貴方にはいよいよご清栄の由と存じます。[r]
+[sp]　初霜の候、貴方にはいよいよご清栄の由と存じます。[r]
 [r]
 [sp]先日のパーティは思いがけず、醜態をさらし[r]
 己の未熟さを覚えました。[r]
@@ -71,9 +73,10 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [r]
 [sp]母を許そうと思う日が来るとは思っても[r]
 みませんでした。
-[autosave改]
-[wait time=10]
-[p]
+[glink target=*zaizen_fumi30_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi30_2
+
 [sp]貴方のお節介な部分が私に移ったのでしょうか。[r]
 だとしても、自分でも悪くない変化だと思います[r]
 なにか胸の内のもやもやした黒いものが霧散し[r]
@@ -84,9 +87,23 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [sp]それでは取り急ぎ失礼します[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　 財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　 財前　美彬
+[glink target=*zaizen_fumi30_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*zaizen_fumi30_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*zaizen_fumi30_3
+
 [sp][r][r]追伸　これから仕事が忙しくなりそうなので[r]
-手紙のお返事は暫く返せなくなるかもしれません[p]
+お手紙のお返事は暫く返せなくなるかもしれません
+[glink target=*zaizen_fumi30_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi30_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi30_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理

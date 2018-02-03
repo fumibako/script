@@ -58,30 +58,44 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [endif]
 
 [手紙財前 fumi_number=]
+*zaizen_fumi29_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]秋麗の候、貴方様には一段とご清栄の由と存じます。[r]
 [r]
 [sp]さて、この度、[名前]さんと薔薇園の散策をしたく手紙を[r]
 出しました。
-[autosave改]
-[wait time=10]
-[p]
+[glink target=*zaizen_fumi29_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 
+*zaizen_fumi29_2
 [sp]やはり私も形式にのっとって貴方と何度かお会いした後に[r]
 成婚という形が望ましいと思います。[r]
 [r]
 [sp]申し訳ないですが私は忙しく貴方に都合を合わせて頂きたいと[r]
 思っています。[r]
-[ruby text=じゅう]十月[ruby text=さん]三週の日曜日が、私の予定が空いておりますので[r]
+[ruby text=じゅう]十月[ruby text=さん]三週の日曜日が、私の予定が空いておりますのですが[r]
 どうでしょうか？
-[p]
+[glink target=*zaizen_fumi29_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*zaizen_fumi29_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*zaizen_fumi29_3
 [sp][r][r]
 [sp]返信お待ちしております。[r]
 [r]
 [sp]それでは用件のみですが失礼いたします。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi29_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi29_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi29_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理

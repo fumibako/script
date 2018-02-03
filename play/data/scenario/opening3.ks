@@ -98,6 +98,8 @@ $('.junbi_girl').remove();
 [wait time=10]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
+*kuroda_fumi1_1
+[cm]
 [名字] [名前]様[r]
 [r]
 初めてお手紙を差し上げます。黒田 将貴と申します。[r]
@@ -106,7 +108,9 @@ $('.junbi_girl').remove();
 [sp]御尊父様には私の幼少時より学業の励ましをいただき、お話をするたびに御見識の広さや深さに感銘を受けておりました。[r]
 [名前]様のお話もお聞きしておりましたので、お手紙をお送りする機会をいただき、嬉しく感じております。
 [autosave]
-[p]
+[glink target=*kuroda_fumi1_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi1_2
 [r]
 [sp][名前]様はお花や生き物はお好きでしょうか。[r]
 もしお好きでしたら嬉しいです。[r]
@@ -115,7 +119,15 @@ $('.junbi_girl').remove();
 お返事をいただけると嬉しいです。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[glink target=*kuroda_fumi1_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi1_close
+[cm]
+[clearfix]
+﻿@clearstack
 [iscript]
 f.kuroda_fumi1_midoku = 0;
 [endscript]
@@ -153,18 +165,30 @@ f.kuroda_fumi1_midoku = 0;
 [wait time=10]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
+*zaizen_fumi1_1
+[cm]
 [名字] [名前]様[r]
 [r]
 謹啓　春暖の候、皆様ますますご清栄のこととお喜び申し上げます。[r]
 このたび、古式日本の伝統に則り婚約の申し出を行うべく、手紙と釣書を送らせて頂きました。
 [autosave]
-[p]
+[glink target=*zaizen_fumi1_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*zaizen_fumi1_2
 [r]
 [sp]これからしばらくの間、私の事を知って頂けるよう努力いたしますのでよろしくお願いします。[r]
 では、お体にお気をつけてお過ごしください。返事をお待ちしています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬
+[glink target=*zaizen_fumi1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*zaizen_fumi1_close
+[cm]
+[clearfix]
+﻿@clearstack
 [iscript]
 f.zaizen_fumi1_midoku = 0;
 [endscript]
@@ -201,6 +225,8 @@ f.zaizen_fumi1_midoku = 0;
 [wait time=10]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
+*kaori_fumi1_1
+[cm]
 [名字] [名前]様[r]
 [r]
 拝啓　最近では桜も咲き始め、暖かくなってきました。ご家族一同元気にお過ごしですか？[r]
@@ -209,7 +235,9 @@ f.zaizen_fumi1_midoku = 0;
 [r]
 [sp]今更文通なんて、なんだか不思議な気持ちだね。昔からお父様が、僕のお嫁さんには[名前]ちゃんを、なんて言っていたけど、本当に実行するなんて驚いたでしょう？　まぁもちろん、僕も君なら大歓迎だけど……なんてね。
 [autosave]
-[p]
+[glink target=*kaori_fumi1_2 text="→" size=10 x=770 y=380 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kaori_fumi1_2
 [r]
 [sp]ああ、けれど君になら、他にもたくさんの人からお手紙がきてる[r]
 だろうね。[r]
@@ -220,7 +248,15 @@ f.zaizen_fumi1_midoku = 0;
 [sp]それじゃあ体に気をつけて、また会える日を楽しみにしています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　四条　華織[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　四条　華織
+[glink target=*kaori_fumi1_1 text="←" size=10 x=110 y=370 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kaori_fumi1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kaori_fumi1_close
+[cm]
+[clearfix]
+﻿@clearstack
 [iscript]
 f.sijyou_fumi1_midoku = 0;
 [endscript]

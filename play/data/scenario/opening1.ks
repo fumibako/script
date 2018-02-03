@@ -27,7 +27,8 @@
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
 [font color=navy size=21]
-
+*girl_fumi_1
+[cm]
 文矢お兄様[l][r]
 ;【SE】うぐいす（ケキョケキョ）
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
@@ -37,7 +38,9 @@
 [sp]こちらでは鶯が鳴き始め、日に日に春の訪れを[r]
 実感する毎日です。
 [autosave]
-[p]
+[glink target=*girl_fumi_2 text="→" size=10 x=800 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*girl_fumi_2
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 [r]
@@ -51,7 +54,11 @@
 [r]
 [sp]淑女としてまだまだ未熟な私が結婚なんてできるのかと[r]
 不安でいっぱいですが、お兄様のような素敵なご縁になるよう[r]
-遠くから見守っていてくださいね。[p]
+遠くから見守っていてくださいね。
+[glink target=*girl_fumi_1 text="←" size=10 x=80 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*girl_fumi_3 text="→" size=10 x=800 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*girl_fumi_3
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 [r]
@@ -65,9 +72,16 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　 　　　　　　 敬具[r]
 ××一三年　三月　二十六日[r]
-[sp]　　　　　　　　　　　　　　　　　　　 　　　[名字]　[名前][p]
-[resetfont]
+[sp]　　　　　　　　　　　　　　　　　　　 　　　[名字]　[名前]
+[glink target=*girl_fumi_2 text="←" size=10 x=80 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*girl_fumi_close" size=5 x=880 y=24 width=50 height=50]
+[s]
 
+*girl_fumi_close
+[cm]
+[clearfix]
+﻿@clearstack
+[resetfont]
 [endreplay] 
 ;------オープニング2にジャンプする
 @jump storage="opening2.ks"

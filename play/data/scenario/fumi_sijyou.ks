@@ -15,13 +15,19 @@
 ;メッセージレイヤを表示
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
+*kaori_fumi1_1
+[cm]
 [名字] [名前]様[r]
 [r]
 拝啓　最近では桜も咲き始め、暖かくなってきました。ご家族一同元気にお過ごしですか？[r]
 久しぶり、僕の事覚えてるかな？[r]
 小さい頃、よく一緒に遊んだ華織です。[r]
 [r]
-[sp]今更文通なんて、なんだか不思議な気持ちだね。昔からお父様が、僕のお嫁さんには[名前]ちゃんを、なんて言っていたけど、本当に実行するなんて驚いたでしょう？　まぁもちろん、僕も君なら大歓迎だけど……なんてね。[p]
+[sp]今更文通なんて、なんだか不思議な気持ちだね。昔からお父様が、僕のお嫁さんには[名前]ちゃんを、なんて言っていたけど、本当に実行するなんて驚いたでしょう？　まぁもちろん、僕も君なら大歓迎だけど……なんてね。
+[autosave]
+[glink target=*kaori_fumi1_2 text="→" size=10 x=770 y=380 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kaori_fumi1_2
 [r]
 [sp]ああ、けれど君になら、他にもたくさんの人からお手紙がきてる[r]
 だろうね。[r]
@@ -32,8 +38,16 @@
 [sp]それじゃあ体に気をつけて、また会える日を楽しみにしています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　四条　華織[p]
-[eval exp="f.midoku_list_hairetsu[2][0] = 0;"]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　四条　華織
+[glink target=*kaori_fumi1_1 text="←" size=10 x=110 y=370 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kaori_fumi1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kaori_fumi1_close
+[cm]
+[clearfix]
+﻿@clearstack
+[eval exp="f.midoku_list_hairetsu[2][0] = 0"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [s]

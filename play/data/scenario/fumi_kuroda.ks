@@ -6,13 +6,19 @@
 
 *kuroda_fumi1
 [手紙黒田]
+*kuroda_fumi1_1
+[cm]
 [名字] [名前]様[r]
 [r]
 初めてお手紙を差し上げます。黒田 将貴と申します。[r]
 私は植物の研究をしている大学生です。[r]
 [r]
 [sp]御尊父様には私の幼少時より学業の励ましをいただき、お話をするたびに御見識の広さや深さに感銘を受けておりました。[r]
-[名前]様のお話もお聞きしておりましたので、お手紙をお送りする機会をいただき、嬉しく感じております。[p]
+[名前]様のお話もお聞きしておりましたので、お手紙をお送りする機会をいただき、嬉しく感じております。
+[autosave]
+[glink target=*kuroda_fumi1_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi1_2
 [r]
 [sp][名前]様はお花や生き物はお好きでしょうか。[r]
 もしお好きでしたら嬉しいです。[r]
@@ -21,7 +27,15 @@
 お返事をいただけると嬉しいです。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[glink target=*kuroda_fumi1_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi1_close
+[cm]
+[clearfix]
+﻿@clearstack
 [eval exp="f.midoku_list_hairetsu[0][0] = 0"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
