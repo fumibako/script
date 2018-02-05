@@ -3,7 +3,11 @@
 ;=============================================
 [stopbgm]
 [eval exp="sf.FButton='OFF'"]
+[chara_mod name="bg" storage="toumei.gif"]
+[wait time=10]
+
 [テキスト全画面白文字]
+[wait time=10]
 [if exp="tf.test_katuraginomiya == true"]
 これは葛城宮シナリオテストのみで表示されています。[r]
 新規に追加された手紙をみますか？[r][r]
@@ -11,11 +15,15 @@
 [link target=n]いいえ[endlink][s]
 *y
 [er]
+[font color=white]
 とびます[p]
+[resetfont]
 @jump target=*katuraginomiya_fumi_last
 *n
 [er]
+[font color=white]
 はじめから[p]
+[resetfont]
 [endif]
 ;=============================================
 ;=============================================
@@ -29,6 +37,7 @@
 『最初の手紙』[p]
 [endif]
 [手紙葛城宮 fumi_number=1]
+*katuraginomiya_fumi00_1
 [font color=navy size=21]
 
 [名字]　[名前]殿へ[l][r]
@@ -51,13 +60,25 @@
 [sp]身分の所為か性格の所為か、私の周囲にいる女性は、[r]
 [sp]　　　私に媚か恐れをもっている者が多いが、[r]
 [sp]　　　君は佇まいが、淑やかなだけでなく、初々しく[r]
-[sp]　　　楚々として、目が澄んでいた。[p]
+[sp]　　　楚々として、目が澄んでいた。
+[resetfont]
+[glink target=*katuraginomiya_fumi00_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*katuraginomiya_fumi00_2
+[font color=navy size=21]
 
 [sp]君の噂を耳にし、君が手紙を交わし始めたと知った。[r]
 そして、私は手紙を綴るに至っている。[r]
 [r]
 [sp]私はこういった[ruby text=たぐい]類の手紙を書いたことがないので、[r]
-少々、戸惑っている。[p]
+少々、戸惑っている。
+[resetfont]
+[glink target=*katuraginomiya_fumi00_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*katuraginomiya_fumi00_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi00_3
+[font color=navy size=21]
 [r]
 [sp][r]
 私は遠回しな言い方は苦手だ。[r]
@@ -70,7 +91,16 @@
 [r]
 [sp]心より返信を待つ。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi00_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi00_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi00_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -94,6 +124,7 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお変わりなくお過ごしであろうか？[r]
@@ -109,6 +140,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -130,6 +162,7 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は穏やかにお過ごしであろうか？ [r]
@@ -144,6 +177,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -167,6 +201,9 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi03_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお変わりなくお過ごしであろうか？ [r]
@@ -180,11 +217,25 @@
 [sp]口論になる時もあったが私もはっきり意思を示す方か性に合う。[r]
 [r]
 [sp]　　……今では学友と連絡が途絶えている[r]
-[sp]　　だがいつまでも友人は大切なものだな。[p]
+[sp]　　だがいつまでも友人は大切なものだな。
+[resetfont]
+[glink target=*katuraginomiya_fumi03_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*katuraginomiya_fumi03_2
+[font color=navy size=21]
 [sp]今度は君の友人関係についてもききたい。 [r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi03_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi03_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi03_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -207,6 +258,9 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi04_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は元気にお過ごしであろうか？ [r]
@@ -216,7 +270,12 @@
 [r]
 [sp]妹宮と弟宮がいたのだが幼いうちに夭折した。[r]
 [sp]今では信じられないと思うが私も幼いころは体が弱かった。[r]
-[p]
+[resetfont]
+[glink target=*katuraginomiya_fumi04_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi04_2
+[font color=navy size=21]
 [sp]母宮も皇族出身で血が濃い、[r]
 血が濃くなるというのはやはり悪い結果が現れる。[r]
 [sp]我が国も開かれた皇室になるといいのだがな[r]
@@ -224,7 +283,16 @@
 [sp]君の家族のご健勝を祈る。 
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi04_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi04_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi04_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -246,6 +314,9 @@
 『 将来について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi05_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお変わりなくお過ごしであろうか？ [r]
@@ -253,13 +324,28 @@
 [r]
 [sp]今は国の制度を少しずつ変えていきたいと思っている。[r]
 いずれは皇族や華族のみの貴族院も解体するかもしれないし[r]
-やはり私の立場で権力を強く持つのは好ましくないと思っている。[p]
+やはり私の立場で権力を強く持つのは好ましくないと思っている。
+[resetfont]
+[glink target=*katuraginomiya_fumi05_2 text="→" size=10 x=770 y=270 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi05_2
+[font color=navy size=21]
 [sp]制度を民主化した後はそうだなもう少し自由に生きたいな。[r]
 [r]
 [sp]君は将来についてはどんな風に思っているだろうか？ [r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi05_1 text="←" size=10 x=110 y=270 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi05_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi05_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -279,6 +365,7 @@
 『 読書について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は穏やかにお過ごしであろうか？ [r]
@@ -292,6 +379,7 @@
 [sp]君も本が好きなのだろうか？[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -310,6 +398,9 @@
 『 スポーツについて 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi07_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は元気にお過ごしであろうか？ [r]
@@ -318,13 +409,28 @@
 [sp]幼い頃は剣道を習い、 [r]
 留学先ではサッカーの試合に参加したな。[r] 
 [r]
-[sp]純粋にスポーツは楽しい。と思っている。[p]
+[sp]純粋にスポーツは楽しい。と思っている。
+[resetfont]
+[glink target=*katuraginomiya_fumi07_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi07_2
+[font color=navy size=21]
 [sp] 一定のルールに従って勝ち負けを争い、熱中できる。[r]
 [sp] スポーツは私は見るのも参加するのも好きだな。[r]
 [r]
 [sp]君はスポーツをしたことがあるだろうか？[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi07_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi07_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi07_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -344,13 +450,21 @@
 『 食事について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi08_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は変わりなくお過ごしであろうか？ [r]
 [sp] 先日は便りを感謝する。[r]
 [r]
-[sp]私は食に強いて言う好き嫌いはないな。 [r]
-[p]
+[sp]私は食に強いて言う好き嫌いはないな。 
+[resetfont]
+[glink target=*katuraginomiya_fumi08_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi08_2
+[font color=navy size=21]
 [sp]今、流行りの三大洋食ライスカレー、コロッケ、トンカツ[r]
 というのも町で食べたことがあるが、[r]
 我が国の人用が好むように取り入れられ、作られている。[r]
@@ -359,7 +473,16 @@
 どんな食事にも塩加減や鮮度などは大切でそれらが、[r]
 合わないものは不味いと感じてしまうな。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi08_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi08_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi08_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -378,6 +501,9 @@
 『 観劇について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi09_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお健やかにお過ごしであろうか？ [r]
@@ -387,14 +513,30 @@
 [sp] 今では行く機会もそうはないが。[r]
 [r] 
 [sp]悲劇や喜劇というのは人の心を動かし、[r]
-実際行ってみた演劇も壮大で演出も素晴らしかった。[p]
+実際行ってみた演劇も壮大で演出も素晴らしかった。
+[resetfont]
+[glink target=*katuraginomiya_fumi09_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi09_2
+[font color=navy size=21]
 [sp]ただ物語には少々疑問をもつものがあったり、[r]
 最終的な結末が受け入れがたいと感じる時もある。[r]
 [r]
-[sp]君は観劇に言ったらどのような感想を持つのだろうか。 [r]
+[sp]君は観劇に行ったらどのような感想を持つのだろうか。 [r]
+;言ったら→行ったら：訂正させていただきました◆jsYiJcqRkk
 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi09_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi09_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi09_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -413,6 +555,7 @@
 『 猫について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はいかがお過ごしであろうか？ [r]
@@ -428,6 +571,7 @@
 [sp] 　　　君の家では動物を飼ったりしたことはあるだろうか？ [r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -446,6 +590,9 @@
 『 聞き上手と話し上手について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi11_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は変わりなくお過ごしであろうか？ [r]
@@ -454,7 +601,13 @@
 [sp]いち政治家として聞き上手にも話し上手にもなろうと[r]
 意識し、努力はしている。[r]
 [sp]だが、私の周りにいる者たちとは[r]
-意見が合わないと思う事の方が多いな。[p]
+意見が合わないと思う事の方が多いな。
+[resetfont]
+[glink target=*katuraginomiya_fumi11_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi11_2
+[font color=navy size=21]
 [r]
 [sp]合わないと思う者と話してても、[r]
 正直に言うと少々苦痛を感じることもあるな。[r]
@@ -462,7 +615,16 @@
 [sp]そういう時はうまく逃げ道を作っているが[r]
 人付き合いとは難しいものだな。[r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi11_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi11_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi11_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -481,6 +643,9 @@
 『 聞き上手と話し上手について2 』　　　
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi12_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿　は変わりなくお過ごしであろうか？ [r]
@@ -489,12 +654,27 @@
 [sp]君は聞き上手ではないかと私は思っている。[r]
 [r]
 [sp] いつも私の話をきらきらとした目で、[r]
-聞いてくれるので話すのがとても楽しくなる。[p]　　　　　　
+聞いてくれるので話すのがとても楽しくなる。
+[resetfont]
+[glink target=*katuraginomiya_fumi12_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi12_2
+[font color=navy size=21]
 [sp]君とずっと話していたいと会うたびに思っている。[r]
 [r]
 [sp]また君と話したい。 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi12_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi12_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi12_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -513,13 +693,22 @@
 『 緑の石について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi13_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は変わりなくお過ごしであろうか？ [r]
 [sp] 先日は便りと緑の石を感謝する。[r]
 [r]
 [sp]この緑の石が何か調べるのも [r]
-勿体ないような気がして大切にとっておくことにした。[p]
+勿体ないような気がして大切にとっておくことにした。
+[resetfont]
+[glink target=*katuraginomiya_fumi13_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi13_2
+[font color=navy size=21]
 [r]
 [sp] 宝石の原石だとしても[r]
 ただの綺麗な緑色の石だったとしても。[r]
@@ -528,7 +717,16 @@
 [r]
 [sp]私は思い出の石になる事を願っている。 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi13_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi13_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi13_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -547,6 +745,7 @@
 『 写真について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は変わりなくお過ごしであろうか？ [r]
@@ -558,10 +757,12 @@
 [sp] 私も写真を見るのは絵葉書を見るぐらい楽しい。[r]
 だが、実物のものと雰囲気が違うなと感じるものもある。[r]
 [r]
-[sp]写真も一種の芸術かもしれないな。 [r]
+[sp]　　写真も一種の芸術かもしれないな。 [r]
+;↑榊にかかるので位置調整しました◆jsYiJcqRkk
 [r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -580,6 +781,7 @@
 『 一日のはじまりについて 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は変わりなくお過ごしであろうか？ [r]
@@ -594,6 +796,7 @@
 [r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -612,13 +815,22 @@
 『 お気に入りの曲について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi16_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は変わりなくお過ごしであろうか？ [r]
 [sp] 先日は便りを感謝する。[r]
 [r]
 [sp]欧羅巴では色々な曲と出会ったが[r]
-やはり我が国の音楽もいいものだと思う。[p]
+やはり我が国の音楽もいいものだと思う。
+[resetfont]
+[glink target=*katuraginomiya_fumi16_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi16_2
+[font color=navy size=21]
 [r]
 [sp]女性的だが、"さくらさくら"が好きだな。[r]
 [sp]"さくらさくら" は、箏の手ほどき曲として[r]
@@ -627,7 +839,16 @@
 [sp]いつか君のお箏を聴いてみたいな。[r]
 [r]
 [r]
-[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi16_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi16_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi16_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -646,6 +867,7 @@
 『 道について１ 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお元気にお過ごしであろうか？ [r]
@@ -660,6 +882,7 @@
 [r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -678,6 +901,7 @@
 『 道２ 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp]　[名前]殿 は穏やかにお過ごしであろうか？ [r]
@@ -693,6 +917,7 @@
 [r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -711,6 +936,7 @@
 『 変化と永遠について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお変わりなくお過ごしであろうか？ [r]
@@ -725,6 +951,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -747,6 +974,7 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお変わりなくお過ごしであろうか？ [r]
@@ -760,6 +988,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -782,6 +1011,7 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は穏やかにお過ごしであろうか？ [r]
@@ -795,6 +1025,7 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -817,6 +1048,7 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はいかがお過ごしであろうか？ [r]
@@ -827,11 +1059,13 @@
 やはり夏に見上げる夜空はいい、月は美しく、星も美しい、[r]
 また祭りの花火も美しいな……。[r]
 [r]
-[sp]君は花火を見たことがあるだろうか？　[r]
-いつか君と二人で見れるといいだろうな。[r]
+[sp]　　君は花火を見たことがあるだろうか？　[r]
+[sp]　いつか君と二人で見れるといいだろうな。[r]
+;↑榊にかかるので位置調整しました◆jsYiJcqRkk
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -853,6 +1087,7 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお健やかお過ごしであろうか？ [r]
@@ -867,6 +1102,7 @@
 [sp]君も体調には気を付けて[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -891,6 +1127,9 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi24_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお健やかにお過ごしであろうか？ [r]
@@ -901,7 +1140,13 @@
 可能か考えようと思った。[r]
 [r]
 [sp] そして報告書を読んで私も彼に興味を持ち、会う機会を設け[r]
-随分と伊能殿と話しが弾んだ。[p]
+随分と伊能殿と話しが弾んだ。
+[resetfont]
+[glink target=*katuraginomiya_fumi24_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi24_2
+[font color=navy size=21]
 [r]
 [sp] 彼は温和ながら頭の切れる者で、[r]
  率直に私の協力者になって欲しいと思った。[r]
@@ -913,9 +1158,19 @@
 [r]
 [sp] 彼に会う機会を与えてくれて感謝する。[r]
 [r]
-[sp]また君にゆっくり会える日を楽しみにしている[r]
+[sp]　　　また君にゆっくり会える日を楽しみにしている[r]
+;↑榊にかかるので位置調整しました◆jsYiJcqRkk
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi24_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi24_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi24_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -937,6 +1192,9 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi25_1
+[cm]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はその後いかがお過ごしであろうか？ [r]
@@ -949,7 +1207,13 @@
 [r]
 [sp]　　　だが、外聞が悪いという事で、[r]
 [sp]　　　叔父宮が従妹宮の自宅謹慎を表向きには体調不良、[r]
-[sp]　　　事件を知っている者達を口止め、この不祥事をもみ消した。[p]
+[sp]　　　事件を知っている者達を口止め、この不祥事をもみ消した。
+[resetfont]
+[glink target=*katuraginomiya_fumi25_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi25_2
+[font color=navy size=21]
 [sp]叔父宮から君にも私からこの不祥事を黙認するようにと[r]
 伝えるように頼まれた。[r]
 [sp] あきれたものだろう。[r]
@@ -960,14 +1224,30 @@
 [sp]そして君も処分が重くなることを望んでないように察している。[r]
 [r]
 [sp]君は宮中の者たちや一族の者たちと折り合えるようにしたいと[r]
-願っているように思えるのだ。[p]
+願っているように思えるのだ。
+[resetfont]
+[glink target=*katuraginomiya_fumi25_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*katuraginomiya_fumi25_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi25_3
+[font color=navy size=21]
 [r]
 [sp]私は君の傍で色々と変えていこう。[r]
 [sp]君が私の傍で幸せになるようにしたいのだ。[r]
 [r]
 [sp]では君の健康と活躍を心から祈っている。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi25_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi25_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi25_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -986,6 +1266,8 @@
 『 お茶事について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi26_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -998,8 +1280,14 @@
 ふさわしいか確かめると言われ、直接会われるという[r]
  運びとなった。[r]
 [r]
-[sp]　　　少々大事になってしまったと反省している。[p]
+[sp]　　　少々大事になってしまったと反省している。
+[resetfont]
+[glink target=*katuraginomiya_fumi26_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi26_2
 ;アイコンに被ってしまう
+[font color=navy size=21]
 [sp]だが皇后陛下は誰にでも分け隔てなく接する方で[r]
 純粋に君に興味を持たれたようだ。[r]
 [r]
@@ -1009,7 +1297,16 @@
 [r]
 [sp]いや、心から君が受けてくれるのを望んでいる。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi26_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi26_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi26_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
@@ -1026,6 +1323,8 @@
 『 婚約について 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi27_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l]
 [r]
@@ -1039,8 +1338,14 @@
 [sp]私は君に婚約を申し込む。[r]
 [r]
 [sp]　　近く、当家の主務事務官と宮内省の宗秩寮総裁が、[r]
-[sp]　　 [名字]家当主に婚約の申し込みをしに訪れる。[p]
+[sp]　　 [名字]家当主に婚約の申し込みをしに訪れる。
+[resetfont]
+[glink target=*katuraginomiya_fumi27_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi27_2
 ;アイコンに被るので[sp]してます。
+[font color=navy size=21]
 [sp][r]
 [r][r]
 [sp]勿論、私は君に無理強いはしたくない。[r]
@@ -1048,7 +1353,17 @@
 くれるとよい。[r]
 [sp]返答がどちらにせよ私は受け止めるつもりだ。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+*yy2
+[sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi27_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi27_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi27_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
@@ -1066,6 +1381,8 @@
 『 話がしたい 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi28_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -1076,7 +1393,13 @@
 [r]
 [sp]君ももう海軍の汚職事件を知っているだろう？[r]
 [sp]軍人が権力を持ち政治に関わるのは良くないことだ。[r]
-軍国主義に走る危険性がある。[p]
+軍国主義に走る危険性がある。
+[resetfont]
+[glink target=*katuraginomiya_fumi28_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi28_2
+[font color=navy size=21]
 [sp]しかし私自身もこの時代皇族に生まれた多くが、[r]
 軍人になるのもあって私も軍人でもある。[r]
 [r]
@@ -1087,7 +1410,16 @@
 [r]
 [sp]近いうちにまた会おう。[r]
 [sp][r]
-[sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi28_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi28_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi28_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
@@ -1105,6 +1437,8 @@
 『 感謝 』[p]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi29_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ [l][r]
 [r]
@@ -1115,7 +1449,13 @@
 私も変わろうと思った。[r]
 [r]
 また自分のすべき事が分った。[r]
-君にはいくら感謝しても足りないだろう。[p]
+君にはいくら感謝しても足りないだろう。
+[resetfont]
+[glink target=*katuraginomiya_fumi29_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi29_2
+[font color=navy size=21]
 国民の声もあって私は議員を続けることになり、[r]
 今も目まぐるしく忙しくしているが、今は未来への[r]
 希望であふれている。[r]
@@ -1123,7 +1463,16 @@
 君も体には気をつけて[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi29_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi29_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi29_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
@@ -1144,6 +1493,8 @@
 『 未来へ向けて 』[p]
 [endif]
 [手紙時子]
+*tokiko_fumi_katuraginomiya_1
+[cm]
 [名字]　[名前]様へ[l][r]
 [r]
 [sp]拝啓　[名前]さんは元気にお過ごしでしょうか？ [r]
@@ -1152,12 +1503,20 @@
 私と伊能さんも手紙を交わす事になりました。[r]
 [r]
 [sp] お父様は葛城宮殿下の後押しもあり、[r]
-しぶしぶお手紙だけは許して下さったようなものです。[p]
+しぶしぶお手紙だけは許して下さったようなものです。
+[glink target=*tokiko_fumi_katuraginomiya_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*tokiko_fumi_katuraginomiya_2
 [sp]けれど条件をだされましたわ。[r]
 伊能さんが国への貢献が認められ、新華族に叙せられるまでは[r]
 婚約を認めないとおっしゃって、[r]
 それも五年以内と期限をきられましたの。[r]
-[p]
+[glink target=*tokiko_fumi_katuraginomiya_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*tokiko_fumi_katuraginomiya_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*tokiko_fumi_katuraginomiya_3
 [sp]けれど 結婚前は侍女となる事も許していただいたし[r]
 お父様もきっと伊能さんのこともいずれは認めてくださると思います。[r]
 [r]
@@ -1167,7 +1526,15 @@
 [r]
 [sp]それでは[名前]さん、またお会いしましょう。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　三宮　時子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　三宮　時子
+[glink target=*tokiko_fumi_katuraginomiya_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*tokiko_fumi_katuraginomiya_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*tokiko_fumi_katuraginomiya_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
@@ -1185,6 +1552,8 @@
 『先日のお茶事について』[p]
 [endif]
 [手紙侍従]
+*jijyuu_fumi1_1
+[cm]
 [font color=navy size=20]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -1194,14 +1563,29 @@
 [r]
 [sp]先日のお茶事により、皇后陛下又、同席した葛城宮妃殿下と[r]
 縁子内親王殿下は、貴方を晴仁殿下の婚約者候補として、[r]
-容認する意向をお示しになりました。[p]
+容認する意向をお示しになりました。
+[resetfont]
+[glink target=*jijyuu_fumi1_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*jijyuu_fumi1_2
+[font color=navy size=20]
 [sp][r][r][r]
 [sp]ですが、他にも何人か晴仁親王殿下の婚約者は挙がっており、
 [r]その何人かの方は、皇族又は皇族に連なる方です。[r]
 [sp]貴方や晴仁親王殿下もそれを[ruby text=わきま]弁えた上で[r]
 今後も節度をもってお手紙を交わすようにされますように。[r]
 [r]
-[sp]　　　　　　　　　　　　皇后陛下侍従　桂伯爵夫人　範子[p]
+[sp]　　　　　　　　　　　　皇后陛下侍従　桂伯爵夫人　範子
+[resetfont]
+[glink target=*jijyuu_fumi1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*jijyuu_fumi1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*jijyuu_fumi1_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
@@ -1219,6 +1603,8 @@
 『親王様との婚約について』[p]
 [endif]
 [手紙文矢 fumi_number=]
+*fumi_fumiya_1
+[cm]
 [名前]へ[l][r]
 [r]
 [sp]そちらは風がススキに揺れる涼しい頃でしょうか？[r]
@@ -1231,7 +1617,12 @@
 [sp]あのお転婆だった[名前] もすっかり一人前の淑女になったとも[r]
 書かれてあり、驚きを隠せません。[r]
 [r]
-[sp] また[名前] が嫁ぐ前に会いたいと思っています。[p]
+[sp] また[名前] が嫁ぐ前に会いたいと思っています。
+[glink target=*fumi_fumiya_2 text="→" size=10 x=770 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_fumiya_2
+
 [sp][r]
 [sp] まだ候補だと聞きましたが[名前]が親王妃となる[r]
 のでしょうか？[r]
@@ -1243,7 +1634,16 @@
 [sp]それでは皆が健やかに過ごせることを祈っています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢 [p]
+*yy
+[sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢
+[glink target=*fumi_fumiya_1 text="←" size=10 x=110 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_fumiya_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fumi_fumiya_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
@@ -1262,6 +1662,8 @@
 『ご挨拶』[p]
 [endif]
 [手紙葛城宮妃殿下]
+*fumi_hahamiya_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -1274,7 +1676,13 @@
 [r]
 [sp]息子は意思が強くときに激しくすら感じる時があります。[r]
 [sp]その息子が気に入った方だから不安に思っていたのですが[r]
-貴方はまるで淑女の鑑のような方で安心しました。[p]
+貴方はまるで淑女の鑑のような方で安心しました。
+[resetfont]
+[glink target=*fumi_hahamiya_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_hahamiya_2
+[font color=navy size=21]
 [r]
 [sp]貴方は、もうすでに息子との婚約は内定している[r]
 のです。[r]
@@ -1285,10 +1693,26 @@
 [sp]ささやかながら貴方に振袖を仕立てました。[r]
 [sp]この縁談が両家にとって良きものであること願って。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　葛城宮妃　咲子[p]
+[sp]　　　　　　　　　　　　　　　　　　葛城宮妃　咲子
+[resetfont]
+[glink target=*fumi_hahamiya_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_hahamiya_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_hahamiya_3
+[font color=navy size=21]
 [sp][r][r][r]
 追伸　息子は型にはまる事を嫌い、周囲と衝突しています。[r]
-私は息子が貴方との婚約で変わるように望んでいますわ。[p]
+私は息子が貴方との婚約で変わるように望んでいますわ。
+[resetfont]
+[glink target=*fumi_hahamiya_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_hahamiya_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fumi_hahamiya_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]
@@ -1307,6 +1731,8 @@
 『　忠告　』[p]
 [endif]
 [手紙従妹宮]
+*fumi_itokomiya_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -1318,7 +1744,13 @@
 [r]
 [sp]殿下と貴方は、身分も何もかも違います。[r]
 [sp]貴方程度の卑しい身分の方が、殿下の婚約者になったことを[r]
-平民たちが喜んでいることも浅ましいと思いますわ。[p]
+平民たちが喜んでいることも浅ましいと思いますわ。
+[resetfont]
+[glink target=*fumi_itokomiya_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_itokomiya_2
+[font color=navy size=21]
 [r]
 [sp]貴方は、これがどれほど異例な事であるか分っているのですか。[r]
 [sp]皇族は、皇族同士と結婚するのが常であり、私の父宮や[r]
@@ -1330,10 +1762,26 @@
 [sp]貴方のような方が殿下の婚約者など我慢なりません。[r]
 [sp]貴方はご自分の身の程をわきまえるべきです。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　久佐賀宮　志津子[p]
+[sp]　　　　　　　　　　　　　　　　久佐賀宮　志津子
+[resetfont]
+[glink target=*fumi_itokomiya_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_itokomiya_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_itokomiya_3
 ;自動改ページされてしまいますのでｐで止めます(スクリプト担当_2
+[font color=navy size=21]
 [sp][r]
-追伸　これは忠告ですわ。　有り難く思いなさい。[p]
+追伸　これは忠告ですわ。　有り難く思いなさい。
+[resetfont]
+[glink target=*fumi_itokomiya_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_itokomiya_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fumi_itokomiya_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	[freeimage layer = 29]	
@@ -1354,6 +1802,7 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 はお変わりなくお過ごしであろうか？[r]
@@ -1369,6 +1818,7 @@
 [sp]　　君も花が好きなのだろうか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -1390,6 +1840,7 @@
 [endif]
 ;#
 [手紙葛城宮 fumi_number=]
+[font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
 [sp][名前]殿 は穏やかにお過ごしであろうか？ [r]
@@ -1405,6 +1856,7 @@
 [sp]　　君はどんな茶が好きだろうか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -1442,6 +1894,7 @@
 [sp]これから、もう会う事もないが、君の活躍を祈っている。[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -1477,6 +1930,7 @@
 [sp]　　　　　　　　君も変に恐れない方がいいだろう。[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -1511,6 +1965,7 @@
 [sp]今後の君の幸せを心から願っている。[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
@@ -1542,6 +1997,7 @@
 [sp]君の結婚が幸せなものであることを心から祈っている。[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　 葛城宮　晴仁[p]
+[resetfont]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 	;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
