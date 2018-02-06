@@ -62,13 +62,16 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [endif]
 *katuragi_hairetu_skip
 [手紙文矢 fumi_number=]
-[if exp="tf.test_gamen == true || tf.test_katuraginomiya == true"]
-テストモードで表示しています。[r]
-[link target=*yy]手紙スキップ[endlink][r][r]
-[link target=*nn]手紙を読む[endlink][s]
-*nn
-[er]
-[endif]
+;[if exp="tf.test_gamen == true || tf.test_katuraginomiya == true"]
+;テストモードで表示しています。[r]
+;[link target=*yy]手紙スキップ[endlink][r][r]
+;[link target=*nn]手紙を読む[endlink][s]
+;↑複数回フリーズしたためコメントアウトします◆jsYiJcqRkk
+;*nn
+;[er]
+;[endif]
+*fumi_fumiya_1
+[cm]
 [名前]へ[l][r]
 [r]
 [sp]そちらは風がススキに揺れる涼しい頃でしょうか？[r]
@@ -81,7 +84,12 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp]あのお転婆だった[名前] もすっかり一人前の淑女になったとも[r]
 書かれてあり、驚きを隠せません。[r]
 [r]
-[sp] また[名前] が嫁ぐ前に会いたいと思っています。[p]
+[sp] また[名前] が嫁ぐ前に会いたいと思っています。
+[glink target=*fumi_fumiya_2 text="→" size=10 x=770 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_fumiya_2
+
 [sp][r]
 [sp] まだ候補だと聞きましたが[名前]が親王妃となる[r]
 のでしょうか？[r]
@@ -94,7 +102,15 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　[r]
 *yy
-[sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢 [p]
+[sp]　　　　　　　　　　　　　　　　　　　　[名字]　文矢
+[glink target=*fumi_fumiya_1 text="←" size=10 x=110 y=250 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_fumiya_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fumi_fumiya_close
+[cm]
+[clearfix]
+[clearstack]
 [手紙読了]
 
 [whosay name=磯野 color="dimgray"]
@@ -155,18 +171,21 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [endif]
 *katuragi_hairetu_skip2
 [手紙葛城宮 fumi_number=]
+;[if exp="tf.test_gamen == true"]
+;テストモードで表示しています[r]
+;[link target=*yy2]手紙スキップ[endlink][r][r]
+;[link target=*nn2]手紙を読む[endlink][s]
+;↑複数回フリーズしたためコメントアウトします◆jsYiJcqRkk
+;*nn2
+;[er]
+;[endif]
+*katuraginomiya_fumi27_1
+[cm]
 [font color=navy size=21]
-[if exp="tf.test_gamen == true"]
-テストモードで表示しています[r]
-[link target=*yy2]手紙スキップ[endlink][r][r]
-[link target=*nn2]手紙を読む[endlink][s]
-*nn2
-[er]
-[endif]
 [名字]　[名前]殿へ[l]
 [r]
 [r]
-[sp][名前]殿にはお変わりなく、元気でいるだろうか？[r]
+[sp][名前]殿は変わりなく、元気でいるだろうか？[r]
 [r]
 [sp]先日のお茶事からそうたってないが、君が正式に皇室で[r]
 認められたことで周囲の者たちが色めき立ち、[r]
@@ -175,8 +194,14 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]私は君に婚約を申し込む。[r]
 [r]
 [sp]　　近く、当家の主務事務官と宮内省の宗秩寮総裁が、[r]
-[sp]　　 [名字]家当主に婚約の申し込みをしに訪れる。[p]
+[sp]　　 [名字]家当主に婚約の申し込みをしに訪れる。
+[resetfont]
+[glink target=*katuraginomiya_fumi27_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi27_2
 ;アイコンに被るので[sp]してます。
+[font color=navy size=21]
 [sp][r]
 [r][r]
 [sp]勿論、私は君に無理強いはしたくない。[r]
@@ -186,8 +211,16 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 *yy2
 [sp]　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi27_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi27_close" size=5 x=880 y=24 width=50 height=50]
 [autosave改]
-[p]
+[s]
+
+*katuraginomiya_fumi27_close
+[cm]
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][28] = 0"]

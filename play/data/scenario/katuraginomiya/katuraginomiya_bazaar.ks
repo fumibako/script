@@ -53,6 +53,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [endscript]
 [endif]
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi30_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -63,24 +65,45 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 開催されることを存じているだろうか。[r]
 [r]
 [sp]母宮が お茶を点てて和菓子を出し、[r]
-野点のような場を設けようと張り切っていた。[p]
+野点のような場を設けようと張り切っていた。
 ;アイコンにかかるためp
+[resetfont]
+[glink target=*katuraginomiya_fumi30_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi30_2
+[font color=navy size=21]
 [sp] 私もその頃には時間に余裕ができそうなので[r]
 少し立ち寄り、バザーの様子を見に行きたい。[r]
 [r]
 [sp]君も一緒にチャリティーバザーに参加しないだろうか 。[r]
 [sp] それでは返事を待っている。[r]
 [sp] 　　　　　　　　　　　　　　　　　　　　　　　　　[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi30_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*katuraginomiya_fumi30_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi30_3
+[font color=navy size=21]
 追伸[r]
 色々ある中で沢山の手紙を感謝する。君にとても[r]
-励まされた。[p]
+励まされた。
+[resetfont]
+[glink target=*katuraginomiya_fumi30_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi30_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi30_close
+[cm]
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][31] = 0"]
 [endif]
 [手紙葛城宮読了 fumi_number=]
-[resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 

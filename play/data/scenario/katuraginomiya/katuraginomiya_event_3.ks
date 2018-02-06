@@ -58,10 +58,12 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [endif]
 
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi26_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
-　時に皇后陛下からのお茶事の招待状は、もう届いたで[r]
+[sp]時に皇后陛下からのお茶事の招待状は、もう届いたで[r]
 あろうか？[r]
 [r]
 [sp]残暑厳しき折、今上、皇后両陛下に[r]
@@ -70,8 +72,14 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ふさわしいか確かめると言われ、直接会われるという[r]
  運びとなった。[r]
 [r]
-[sp]　　　少々大事になってしまったと反省している。[p]
+[sp]　　　少々大事になってしまったと反省している。
+[resetfont]
+[glink target=*katuraginomiya_fumi26_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi26_2
 ;アイコンに被ってしまう
+[font color=navy size=21]
 [sp]だが皇后陛下は誰にでも分け隔てなく接する方で[r]
 純粋に君に興味を持たれたようだ。[r]
 [r]
@@ -81,7 +89,16 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 [sp]いや、心から君が受けてくれるのを望んでいる。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi26_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi26_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi26_close
+[cm]
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][27] = 0"]
@@ -547,6 +564,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [endif]
 
 [手紙侍従]
+*jijyuu_fumi1_1
+[cm]
 [font color=navy size=20]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -556,16 +575,30 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [r]
 [sp]先日のお茶事により、皇后陛下又、同席した葛城宮妃殿下と[r]
 縁子内親王殿下は、貴方を晴仁殿下の婚約者候補として、[r]
-容認する意向をお示しになりました。[p]
+容認する意向をお示しになりました。
+[resetfont]
+[glink target=*jijyuu_fumi1_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*jijyuu_fumi1_2
+[font color=navy size=20]
 [sp][r][r][r]
-[sp]ですが、他にも何人か晴仁親王殿下の婚約者候補は挙がっており、
+[sp]ですが、他にも何人か晴仁親王殿下の婚約者は挙がっており、
 [r]その何人かの方は、皇族又は皇族に連なる方です。[r]
 [sp]貴方や晴仁親王殿下もそれを[ruby text=わきま]弁えた上で[r]
 今後も節度をもってお手紙を交わすようにされますように。[r]
 [r]
-[sp]　　　　　　　　　　　　皇后陛下侍従　桂伯爵夫人　範子[p]
-[手紙読了]
+[sp]　　　　　　　　　　　　皇后陛下侍従　桂伯爵夫人　範子
 [resetfont]
+[glink target=*jijyuu_fumi1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*jijyuu_fumi1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*jijyuu_fumi1_close
+[cm]
+[clearfix]
+[clearstack]
+[手紙読了]
 [stopbgm]
 
 ;キャラ性がないと言われたときのための保護

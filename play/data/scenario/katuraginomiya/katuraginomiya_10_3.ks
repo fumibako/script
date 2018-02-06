@@ -71,6 +71,8 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [endif]
 
 [手紙葛城宮 fumi_number=]
+*katuraginomiya_fumi28_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -81,9 +83,15 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 [sp]君ももう海軍の汚職事件を知っているだろう？[r]
 [sp]軍人が権力を持ち政治に関わるのは良くないことだ。[r]
-軍国主義に走る危険性がある。[p]
-[sp]しかしこの時代皇族に生まれた多くが[r]
-軍人になるのもあって、私も軍人でもある。[r]
+軍国主義に走る危険性がある。
+[resetfont]
+[glink target=*katuraginomiya_fumi28_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi28_2
+[font color=navy size=21]
+[sp]しかし私自身もこの時代皇族に生まれた多くが、[r]
+軍人になるのもあって私も軍人でもある。[r]
 [r]
 [sp]私も政治に関わるべきではなく、辞職するつもりで[r]
 いる。[r]
@@ -92,7 +100,16 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [r]
 [sp]近いうちにまた会おう。[r]
 [sp][r]
-[sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi28_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi28_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi28_close
+[cm]
+[clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[3][29] = 0"]

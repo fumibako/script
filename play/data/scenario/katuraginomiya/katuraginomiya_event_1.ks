@@ -463,6 +463,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 [手紙葛城宮 fumi_number=1]
 
+*katuraginomiya_fumi00_1
 [font color=navy size=21]
 
 [名字]　[名前]殿へ[l][r]
@@ -476,6 +477,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [else]
 梅雨が明けた明るい日差しの中、
 [endif]
+;↑つづきが入るので[ｒ]です↓
 町で君と出会い率直に[r]
 君をとても好ましく思った。[r]
 [sp]女性を心から美しいと思ったのは君が初めてだ。[r]
@@ -484,13 +486,25 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]身分の所為か性格の所為か、私の周囲にいる女性は、[r]
 [sp]　　　私に媚か恐れをもっている者が多いが、[r]
 [sp]　　　君は佇まいが、淑やかなだけでなく、初々しく[r]
-[sp]　　　楚々として、目が澄んでいた。[p]
+[sp]　　　楚々として、目が澄んでいた。
+[resetfont]
+[glink target=*katuraginomiya_fumi00_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*katuraginomiya_fumi00_2
+[font color=navy size=21]
 
 [sp]君の噂を耳にし、君が手紙を交わし始めたと知った。[r]
 そして、私は手紙を綴るに至っている。[r]
 [r]
 [sp]私はこういった[ruby text=たぐい]類の手紙を書いたことがないので、[r]
-少々、戸惑っている。[p]
+少々、戸惑っている。
+[resetfont]
+[glink target=*katuraginomiya_fumi00_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*katuraginomiya_fumi00_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*katuraginomiya_fumi00_3
+[font color=navy size=21]
 [r]
 [sp][r]
 私は遠回しな言い方は苦手だ。[r]
@@ -501,9 +515,18 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [sp]君の事を知りたいと思ったのだ。[r]
 [r]
 [r]
-心より返信を待つ。[r]
+[sp]心より返信を待つ。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁[p]
+[sp]　　　　　　　　　　　　　　　　　　　葛城宮　晴仁
+[resetfont]
+[glink target=*katuraginomiya_fumi00_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*katuraginomiya_fumi00_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*katuraginomiya_fumi00_close
+[cm]
+[clearfix]
+[clearstack]
 [resetfont]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.midoku_list_hairetsu[3][1] = 0"]
