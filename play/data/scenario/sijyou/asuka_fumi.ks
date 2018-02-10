@@ -13,14 +13,18 @@
 
 *0
 [手紙飛鳥 fumi_number=]
+*0_1
+[cm]
 [名前]さんへ。[r][r]
 若葉の緑が目にも鮮やかなこの頃。[r]
 [r]
 お久しぶりです。　飛鳥紗代子です。[r]
 [名前]さんも、ついにお手紙のやりとりを[r]
 なされるんですってね！[r]
-[名字]様から、お聞きしましたわ！[p]
-
+[名字]様から、お聞きしましたわ！
+[glink target=*0_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*0_2
 [sp][r]
 どうしたら良いのか迷ったりしていないかしら？[r]
 [r]
@@ -30,13 +34,25 @@
 しっかりとお稽古はしておくべきよ～。[r]
 [r]
 私も、お稽古のおかげで旦那様に振り向いて貰えたから[r]
-やっておいて損はないと思うわ。[p]
+やっておいて損はないと思うわ。
+[glink target=*0_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*0_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 
+*0_3
 [sp][r][r]これからも、たまにお手紙を送らせて[r]
 頂きますわね。[r]
 [名前]さんの幸せを応援しています。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子
+[glink target=*0_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*0_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*0_close
+[cm]
+[clearfix]
+[clearstack]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
@@ -73,6 +89,8 @@
 
 *1_sijyo
 [手紙飛鳥 fumi_number=]
+*1_sijyo_1
+[cm]
 [名前]さんへ。[r][r]
 冬は、もうすぐそこまで来ているようですわね[r]
 [名前]さんはお元気でしたかしら？[r]
@@ -83,7 +101,10 @@
 人懐っこい笑顔がとっても素敵な探偵さまが主人公でね。[r]
 [r]
 少しでもヒントになる暗号をみつけたらパパッと解いて[r]
-しまいますの。[p]
+しまいますの。
+[glink target=*1_sijyo_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*1_sijyo_2
 [sp][r]
 [r]
 [r]
@@ -94,7 +115,15 @@
 [r]
 [sp]真実は、いつもひとり！[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子
+[glink target=*1_sijyo_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*1_sijyo_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*1_sijyo_close
+[cm]
+[clearfix]
+[clearstack]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[r]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -108,6 +137,8 @@
 
 *2
 [手紙飛鳥 fumi_number=]
+*2_1
+[cm]
 [名前]さんへ。[r][r]
 [if exp="f.kuroda_au == 1"]
 初冬の候、[r]
@@ -120,7 +151,10 @@
 改めて、その方の悩みや癖を発見してしまいわよね。[r]
 例えば、お相手のご家族のことだったり、[r]
 将来の夢だったり、悩みは人それぞれ持っていらっしゃると[r]
-思いますわ。[p]
+思いますわ。
+[glink target=*2_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*2_2
 [sp][r]
 [sp]今は辛いこともあるかもしれないけれど、[r]
 [r]
@@ -129,7 +163,15 @@
 [r]
 それから、たまには、私の話も聞いてくださってよくってよ。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子
+[glink target=*2_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*2_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*2_close
+[cm]
+[clearfix]
+[clearstack]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
@@ -167,13 +209,18 @@
 ;藤枝さんのときだけ２月にこちらにお願いします
 *fuji
 [手紙飛鳥 fumi_number=]
+*fuji_1
+[cm]
 [名前]さんへ[r][r]
 桃の蕾もふくらむ頃、[名前]さんはいかが[r]
 おすごしかしら？[r]
 この暖かい陽気をみていると[名前]さんの想いが[r]
 叶うような、そんな気がしてしまいますわ。[r]
 [r]
-[sp]そう、人生は"春のち、いつか春"なのよ。[p]
+[sp]そう、人生は"春のち、いつか春"なのよ。
+[glink target=*fuji_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fuji_2
 [sp][r]
 [r][r]
 [r]
@@ -183,7 +230,15 @@
 [名前]さんの未来が暖かなものでありますように。[r]
 って桜を見ながら応援していますわ[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子
+[glink target=*fuji_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fuji_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fuji_close
+[cm]
+[clearfix]
+[clearstack]
 ;[sp]　　　　　　　　　　　　　　　　　　　　　　　　敬具[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]

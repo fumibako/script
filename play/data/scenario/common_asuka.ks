@@ -83,14 +83,18 @@
 「どうぞ」[p]
 
 [手紙飛鳥 fumi_number=]
+*0_1
+[cm]
 [名前]さんへ。[r][r]
 若葉の緑が目にも鮮やかなこの頃。[r]
 [r]
 お久しぶりです。　飛鳥紗代子です。[r]
 [名前]さんも、ついにお手紙のやりとりを[r]
 なされるんですってね！[r]
-[名字]様から、お聞きしましたわ！[p]
-
+[名字]様から、お聞きしましたわ！
+[glink target=*0_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*0_2
 [sp][r]
 どうしたら良いのか迷ったりしていないかしら？[r]
 [r]
@@ -100,13 +104,25 @@
 しっかりとお稽古はしておくべきよ～。[r]
 [r]
 私も、お稽古のおかげで旦那様に振り向いて貰えたから[r]
-やっておいて損はないと思うわ。[p]
+やっておいて損はないと思うわ。
+[glink target=*0_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*0_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 
+*0_3
 [sp][r][r]これからも、たまにお手紙を送らせて[r]
 頂きますわね。[r]
 [名前]さんの幸せを応援しています。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子
+[glink target=*0_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*0_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*0_close
+[cm]
+[clearfix]
+[clearstack]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
