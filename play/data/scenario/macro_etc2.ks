@@ -43,10 +43,10 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [wait time=10]
 [endif]
 [eval exp="sf.FButton='ON'"]
-;◆テストモード時のみボタンと変数数値表示
+;◆テストモード時のみボタンと変数数値表示→背景確認しやすいようコメントアウトします
 [if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari0'"]
-@jump storage="macro_replay_hyouji.ks" target=*start
+;@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari0
 [endif]
@@ -99,12 +99,12 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [wait time=10]
 [endif]
 [eval exp="sf.FButton='ON'"]
-;◆テストモード時のみボタンと変数数値表示
+;◆テストモード時のみボタンと変数数値表示→背景確認しやすいようコメントアウトします
 [if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari0'"]
-@jump storage="macro_replay_hyouji.ks" target=*start
+;@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
-@jump target=*test_hyouji_event_owari00
+;@jump target=*test_hyouji_event_owari00
 [endif]
 *test_hyouji_event_owari00
 [endmacro]
@@ -153,10 +153,10 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
-;◆テストモード時のみボタンと変数数値表示
+;◆テストモード時のみボタンと変数数値表示→背景確認しやすいようコメントアウトします
 [if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari1'"]
-@jump storage="macro_replay_hyouji.ks" target=*start
+;@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari1
 [endif]
@@ -209,11 +209,11 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [wait time=10]
 [endif]
 [eval exp="sf.FButton='ON'"]
-;◆テストモード時のみボタンと変数数値表示
+;◆テストモード時のみボタンと変数数値表示→背景確認しやすいようコメントアウトします
 ;◆◆◆リプレイ実装時は表示を除外(以下の行から*test_hyouji_event_owari2まで削除)予定です◆◆
 [if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari2'"]
-@jump storage="macro_replay_hyouji.ks" target=*start
+;@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari2
 [endif]
@@ -319,7 +319,7 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;◆テストモード時のみボタンと変数数値表示
 [if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari1'"]
-@jump storage="macro_replay_hyouji.ks" target=*start
+;@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari1
 [endif]
@@ -376,10 +376,10 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [chara_config ptext="chara_name_area"]
 [resetfont]
 
-;◆テストモード時のみボタンと変数数値表示
+;◆テストモード時のみボタンと変数数値表示→背景確認しやすいようコメントアウトします
 [if exp="tf.test_gamen == true"]
 [eval exp="f.macro_target='*test_hyouji_event_owari0'"]
-@jump storage="macro_replay_hyouji.ks" target=*start
+;@jump storage="macro_replay_hyouji.ks" target=*start
 [else]
 @jump target=*test_hyouji_event_owari0
 [endif]

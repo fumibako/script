@@ -314,9 +314,10 @@ $('.loding_pic1').remove();
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
-;◆テストモード時のみボタンと変数数値表示
+;◆テストモード時のみボタンと変数数値表示→背景確認しやすいようコメントアウトします
 [if exp="tf.test_gamen == true"]
-@jump target=*test_hyouji_event2
+;@jump target=*test_hyouji_event2
+@jump target=*test_hyouji_event_owari2
 [else]
 @jump target=*test_hyouji_event_owari2
 [endif]
@@ -450,7 +451,7 @@ $('.loding_pic1').remove();
 [ptext name="chara_name_area" layer="message0" face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=240 y=407]
 [chara_config ptext="chara_name_area"]
 [resetfont]
-;◆テストモード時のみボタンと変数数値表示
+;◆テストモード時のみボタンと変数数値表示→背景確認しやすいようコメントアウトします
 [if exp="tf.test_gamen == true"]
 ;@jump target=*test_hyouji_event
 @jump target=*test_hyouji_event_owari
