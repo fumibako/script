@@ -60,7 +60,37 @@
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
-[新聞]
+;名前欄消去
+[whosay name=""]
+[cm]
+;主人公顔グラ消去
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
+;攻略対象立ち絵消去
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 13]
+;会話ウィンドウ消去
+[freeimage layer = 14]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+;背景変更:新聞
+[bg method='crossfade' storage="../fgimage/bg/test_bg_sinbun_yakyuu.jpg" time=600]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=150 width=720 height=600 top=30 page=fore margint="0"]
+
+;テキスト全画面
+[font color=white size=26]
+;#
 『全国野球大会　慶徳中学校優勝！！』[r]
 [r]
 [sp]今年二度目を迎える全国野球は勝ち抜き戦で行われ、[r]
