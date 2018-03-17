@@ -43,37 +43,47 @@
 [endif]
 ;堂に入ったようですね？
 ;(照れる主人公)謙遜すると失礼になるかな
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-;[主人公眉下げ]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
-[wait time=10]
-;[主人公口ほほえみ]
-[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
-[wait time=10]
-「ありがとうございます」[p]
-;これも先生のおかげです。と言いたいが先生の呼び方が…有名な華道漫画でも読んでサラッと調べてみる
-[主人公目閉]
 ;---------------------------
 ;------------------------------------------------------
 [if exp="tf.test_gamen == true"]
-テストページからプレイしています。イベント終わりまで移動しますか？[r]
+テストページからプレイしています。移動しますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=200 top=100 left=380 opacity=0]
+[position layer=message1 height=330 top=50 left=380 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font size=32]
+[font size=25]
 
-[link target=*jump_ok1]は　　　い[endlink][r]
+[link target=*jump_ok_kyousitu]教室全体シーン直前に移動[endlink][r]
+[r][r][r]
+[link target=*jump_ok1]イベント終わりに移動[endlink][r]
 [r][r][r]
 [link target=*jump_no1]い　い　え[endlink][r]
 [resetfont]
 [s]
 
+*jump_ok_kyousitu
+[current layer="message0"]
+[resetfont]
+「教室全体シーン直前に移動」します。[p]
+[cm]
+;背景　床の間のみ表示
+[eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
+[背景_四条華道教室_1]
+[wait time=10]
+[四条ベース羽織]
+[wait time=10]
+[四条微笑み]
+[wait time=10]
+[主人公通常]
+[wait time=10]
+
+@jump target=*kyousituzentai_mae
+[s]
+
 *jump_ok1
 [current layer="message0"]
 [resetfont]
-「はい」[r]
-移動します。[p]
+「イベント終わりに移動」します。[p]
 [cm]
 @jump target=*seen_end
 [s]
@@ -84,6 +94,16 @@
 そのまま続きの場面に移動します。[p]
 [cm]
 [endif]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;[主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;[主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+「ありがとうございます」[p]
+;これも先生のおかげです。と言いたいが先生の呼び方が…有名な華道漫画でも読んでサラッと調べてみる
+[主人公目閉]
 [whosay name=華道の先生 color=%mp.color]
 「華道とは、心を磨くもの。[r]
 [sp][名前]さんが、上達したのも、きっと、どなたかに捧げたい思いが[r]
@@ -604,6 +624,7 @@ $('.bg1').remove();
 [主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様、本当に先生みたいだわ)[p]
+*kyousituzentai_mae
 [whosay name="華織" color="olivedrab"]
 「その花に感じた、どの様な感動を生けたいのでしょうか？[r]
 [四条口微笑み]
@@ -611,6 +632,7 @@ $('.bg1').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 （心の中で描く花……）[p]
+
 [whosay name="華織" color="olivedrab"]
 [四条微笑み]
 「その為にも、ご自身の想いを表現できるよう、今日はしっかりと基礎を[r]

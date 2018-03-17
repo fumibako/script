@@ -289,13 +289,17 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 ;【退場】四条
 [四条退場]
 その陰には、彼を支える[名前]の姿があったという。[p]
-[bg wait=true method='crossfade' storage="../fgimage/bg/sijyou_ed_tegami0.jpg" time=1000"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/sijyou_ed_tegami1.jpg" time=1000"]
 [wait time=10]
-;[chara_mod name="bg" storage="bg/sijyou_ed_tegami0.jpg" time=1000]
 [freeimage layer = 29 time=1000]
 [wait time=1000]
+;背景を暗く(文字の可読性向上のため)
+[iscript]
+$('.base_fore').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)','-moz-filter':'brightness(0.5)','-ms-filter':'brightness(0.5)'});
+[endscript]
 ;背景仮でおいてみる　いつもの手紙の背景に和花でも？？
-[font color="000000"]
+;[font color="000000"]
+[font color=0xeeeedd]
 [position left=200 width=700 height=500 top=110 page=fore margint="50"]
 [wait time=50]
 想いを繋げて綴っていく手紙は、[r]
@@ -308,6 +312,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [wait time=50]
 その手紙は――[p]
 
+[wait time=10]
+;背景を少し明るく
+[iscript]
+$('.base_fore').css({'filter':'brightness(0.6)','-webkit-filter':'brightness(0.6)','-moz-filter':'brightness(0.6)','-ms-filter':'brightness(0.6)'});
+[endscript]
 
 [position left=300 width=400 height=300 top=200 page=fore margint="50"]
 [wait time=50]
@@ -330,9 +339,18 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [position left=300 width=300 height=300 top=200 page=fore margint="50"]
 [font size=35]
 ;===============================================================
+;背景を少し明るく(輝く未来の予感、的な？)
+[wait time=50]
+[iscript]
+$('.base_fore').css({'filter':'brightness(0.8)','-webkit-filter':'brightness(0.8)','-moz-filter':'brightness(0.8)','-ms-filter':'brightness(0.8)'});
+[endscript]
+[wait time=10]
 ;画面中央に「完」の文字
+[font color=0xfffffe]
 [sp]　　　　完[p]
-
+[wait time=50]
+[背景明度アップ解除]
+[wait time=10]
 [if exp="f.flag_replay == true || f.event_replay == 'sijyou'"]
 @layopt layer=29 visible=true
 [イベントシーン終了]
