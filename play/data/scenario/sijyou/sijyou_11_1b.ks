@@ -176,7 +176,7 @@ jumpします。[p]
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「でも[華衣]さんには、その人からのが手紙が残ってます」[p]
+「でも[華衣]さんには、その人からの手紙が残ってます」[p]
 ;四条目通常
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
 [wait time=10]
@@ -459,6 +459,7 @@ $(function(){
 『薔薇も好きなようだけど、ネリネも好きなようだよ』[p]
 [whosay name="華織" color="olivedrab"]
 『……君、体調の悪そうだけど大丈夫ですか？』[p]
+;↑体調の→体調が　に変更しても大丈夫でしょうか？ 華織の動揺を表現する意図で、あえて書かれている可能性を考えてこちらでの修正はしておりません◆jsYiJcqRkk
 [whosay name="華織" color="olivedrab"]
 『待って下さい！ そんな顔色で……せめて明日』[p]
 ;==========================================
@@ -558,7 +559,7 @@ $('.junbi_girl').remove();
 天から、晩秋の透明感を増した日差しが降り注ぎ、[r]
 ネリネの花が宝石のようにキラキラと輝き始める。[p]
 [主人公憂い]
-輝きを放つネリネの達の[ruby text=げん]眩[ruby text=よう]耀に、ふと我に返った。――[p]
+輝きを放つネリネ達の[ruby text=げん]眩[ruby text=よう]耀に、ふと我に返った――[p]
 ;うーん
 [whosay name="華衣" color=%mp.color]
 「こんな、手紙、どうして早く来てくれなかった？[r]

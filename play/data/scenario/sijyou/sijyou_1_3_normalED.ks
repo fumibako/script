@@ -92,7 +92,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「……」[p]
 [whosay name="磯野" color="dimgray"] 
-「お嬢様、行ってらしゃいませ」[p]
+「お嬢様、行ってらっしゃいませ」[p]
 ;しっかりした大人になっていく感じ主人公の表情
 [主人公通常]
 [主人公口笑顔]
@@ -130,7 +130,7 @@
 [layopt layer=fix visible=true]
 ;==========表示準備完了==============
 [whosay name="華織" color="olivedrab"]
-「お[ruby text=と]父[ruby text=う]義様には、許可をもらって来られましたか？」
+「お[ruby text=と]義[ruby text=う]父様には、許可をもらって来られましたか？」
 [autosave改]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -166,7 +166,7 @@
 [chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「もちろん、今では、[ruby text=あ]貴[ruby text=なた]女のことを芯の強さ持った素敵な女性だと[r]
+「もちろん、今では、[ruby text=あ]貴[ruby text=なた]女のことを芯の強さを持った素敵な女性だと[r]
 [sp]思っている」[p]
 ;②二人称の人代名詞。手紙文などで用い、女性に対する敬意を表す。 
 [四条目閉じ]
