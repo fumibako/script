@@ -71,7 +71,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [resetfont]
 ;メッセージレイヤを年賀状用に設定変更
 [position vertical=true]
-[position left=270 width=350 height=510 top=40 page=fore margint=0]
+[position left=220 width=400 height=510 top=40 page=fore margint=0]
 @layopt layer=message0 page=fore visible=true
 [wait time=10]
 ;↓「年賀状画面が自動的に進んでしまい、バックログでしか見られない」というご意見をいただきましたので、ボタンによる進行処理に変更しました◆jsYiJcqRkk
