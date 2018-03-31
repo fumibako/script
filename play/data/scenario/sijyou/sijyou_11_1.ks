@@ -650,7 +650,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ですけど、分かっていただいて良かったです」[p]
 [whosay name="華織" color="olivedrab"]
-「これも、[名前]が、一緒にいてくれたおかげです[r]
+「これも、[名前]が、一緒にいてくれたおかげです。[r]
 [sp]きっと、僕ひとりが[ruby text=たず]訪ねたところで、あの状況では、嫌味にしか[r]
 [sp]思われなかったでしょう……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
