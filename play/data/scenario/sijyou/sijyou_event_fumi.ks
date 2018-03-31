@@ -168,6 +168,10 @@
 [position vertical=true]
 [position left=270 width=350 height=510 top=40 page=fore margint=0]
 @layopt layer=message0 page=fore visible=true
+;↓「年賀状画面が自動的に進んでしまい、バックログでしか見られない」というご意見をいただきましたので、ボタンによる進行処理に変更しました◆jsYiJcqRkk
+*sijyou_fumi1_1_1
+[cm]
+[clearfix]
 [font color=black size=19]
 ;○四条手紙 正月はがき？
 お健やかに新年をお迎えのこととお慶び申し上げます。[r]
@@ -183,9 +187,15 @@
 考えております。[r]
 [r]
 ;↓絵柄と被るため空白を入れています(スクリプト担
-[sp]　　　　　　返事待ってます。[p]
-[r]
-[r]
+[sp]　　　　　　返事待ってます。
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi1_1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_fumi1_1_close
+[cm]
+[clearfix]
+;[r]
+;[r]
 ;↓差出人名はハガキに記載しましたので、コメントアウトします
 ;[sp]　　　　　　　　　　　　　　　　　四条華織[p]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)

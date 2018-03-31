@@ -74,27 +74,32 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [position left=270 width=350 height=510 top=40 page=fore margint=0]
 @layopt layer=message0 page=fore visible=true
 [wait time=10]
+;↓「年賀状画面が自動的に進んでしまい、バックログでしか見られない」というご意見をいただきましたので、ボタンによる進行処理に変更しました◆jsYiJcqRkk
+*sijyou_fumi1_1_1
+[cm]
+[clearfix]
 [font color=black size=19]
-
 ;○四条手紙 正月はがき？
 お健やかに新年をお迎えのこととお慶び申し上げます。[r]
 昨年は大変お世話になり、ありがとうございました。[r]
 本年も宜しくお願いいたします。 [r]
 [r]
+追伸[r]
 ;↓縦書きハガキ対応のため、いくつか変更させていただきました。原案はこちらになります(スクリプト担
 ;本年もよろしくお願いいたします[p]
 ;ー追伸ー[r]
-追伸[r]
 先日、[名前]のお父様とお会いしました。[r]
 つきましては、[名前]さんと直接会ってお話しをしたいと[r]
 考えております。[r]
 [r]
 ;↓絵柄と被るため空白を入れています(スクリプト担
-[sp]　　　　　　返事待ってます。[p]
-[r]
-[r]
-;↓差出人名はハガキに記載しましたので、コメントアウトします
-;[sp]　　　　　　　　　　　　　　　　　四条華織[p]
+[sp]　　　　　　返事待ってます。
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi1_1_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*sijyou_fumi1_1_close
+[cm]
+[clearfix]
 [position vertical=false]
 [resetfont]
 [if exp="f.okeiko_gamen == true"]
