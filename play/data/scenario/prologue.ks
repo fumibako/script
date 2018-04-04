@@ -95,6 +95,7 @@ TG.stat.play_se = true;
 ;メッセージエリアの表示
 [eval exp="f.message_storage='message_bg/frame_brown.png'"]
 [chara_mod name="message_bg" storage=&f.message_storage]
+[eval exp="f.kaogura='off'"]
 
 [メッセージウィンドウ上ボタン表示]
 
