@@ -686,7 +686,7 @@
 [eval exp="f.haikei_credit=''"]
 ;============================
 ・・・・・・
-[wait time=1000]
+[l]
 ;メッセージレイヤを消去
 @layopt layer=message0 visible=false
 [暗転２]
