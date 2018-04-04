@@ -140,10 +140,11 @@ jumpします。[p]
 [whosay name="華織" color="olivedrab"]
 （幸せや大事なものは気づかないくらいに近いところにあるんだ）[p]
 [四条真剣]
-[whosay name="華織" color="olivedrab"]
+;途中を変えた気がしましたが忘れました
+[whosay name="華衣" color="olivedrab"]
 「これ以上、なにを見せられる？」[p]
-;↑華衣のセリフでは？とご意見をいただきました。華織のセリフで自然な流れだと考えていましたが、華衣という考え方もあるかもしれない、とご意見をいただいて再考しました。
-;念のためこのままで問題無いか、確認させていただきます◆jsYiJcqRkk
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「[華衣]さん……」[p]
 [whosay name="華衣" color=%mp.color]
 「[名前]って言ったっけ」[p]
 [四条目パチ1回]
