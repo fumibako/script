@@ -264,7 +264,7 @@
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「そんなに大層なものではありませんが……[r]
+「そんなに大層なものではありませんが……。[r]
 [sp]つい自分だったらどうか、など考えてしまいます」[p]
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
 [wait time=10]
@@ -695,7 +695,8 @@
 *scene12
 
 [whosay name="田中　岩男" color="#775545"]
-「いやぁ、生き物が好きすぎるというか……気になるところはありません？」
+「いやぁ、生き物が好きすぎるというか……。[r]
+[sp]気になるところはありません？」
 [autosave改]
 [p]
 

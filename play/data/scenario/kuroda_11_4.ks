@@ -176,7 +176,7 @@
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 ;【背景】暗転
-[bg wait=true method='crossfade' storage="toumei.gif" time=2000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=2000]
 [wait time=10]
 ;【SE】軽い足音（フェードアウト）
 [playse storage=girl_out_walk.ogg loop=false ]
@@ -188,7 +188,7 @@
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-「なんでも、ご母堂様の病が悪くて倒れられたとかで……[r]
+「なんでも、ご母堂様の病が悪くて倒れられたとかで……。[r]
 [sp]朝からお医者様を呼ばれたりで、大変だったそうでございますよ」[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]

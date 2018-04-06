@@ -63,7 +63,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ばあや、心配しないでいいのよ[r]
+「ばあや、心配しないでいいのよ。[r]
 [sp]前もってすごく悩んで決めていたの」[p]
 
 [主人公通常]
@@ -612,7 +612,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 ;【立ち絵】主人公：頬染め通常
 [主人公通常]
 [wait time=10]
-（イグチのおかげで、自然に話せるようになったみたい[r]
+（イグチのおかげで、自然に話せるようになったみたい。[r]
 [sp]私も黒田様の影響を受けてしまったかしら――）
 [autosave改]
 [p]
