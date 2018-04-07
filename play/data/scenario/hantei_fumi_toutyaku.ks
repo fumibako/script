@@ -88,6 +88,24 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_13
 [endif]
+;判定タイミングの少ない手紙については週数判定前に出さないと仕様通りに届かないと気づきましたので移動します◆jsYiJcqRkk
+;◆7【いよいよですね】9月2週、黒田と会うことが決まった場合かつ好感度が一定以上で届く
+[if exp="(f.okeiko_month == 9 && f.okeiko_week == 2)  && f.para_kuroda_koukando > 40 && f.fumi_toutyaku_kuroda[7] == 0 && f.kuroda_au == 1"]
+	[eval exp="f.test='手紙到着「蛍の季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_7
+[endif]
+			
+;◆8【竜胆】10月1～2週に好感度が一定以上で届く
+[if exp="(f.okeiko_month == 10 && (f.okeiko_week == 1 || f.okeiko_week == 2)) && f.para_kuroda_koukando > 50 && f.fumi_toutyaku_kuroda[8] == 0 && f.kuroda_au == 1"]
+	[eval exp="f.test='手紙到着「竜胆」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_8
+[endif]
 
 ;↓返事到着の可能性があるかどうか(前回の手紙到着からの)週数確認処理
 [if exp="(f.kuroda_fumi_henjimachi <= parseInt([sf.kuroda['fumi_henjimachi_ok_number']]))"]
@@ -173,23 +191,6 @@ f.okeiko_month_kansuuji="三月 ";
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_6
 [endif]
 
-;◆7【いよいよですね】9月2週、黒田と会うことが決まった場合かつ好感度が一定以上で届く
-[if exp="(f.okeiko_month == 9 && f.okeiko_week == 2)  && f.para_kuroda_koukando > 40 && f.fumi_toutyaku_kuroda[7] == 0 && f.kuroda_au == 1"]
-	[eval exp="f.test='手紙到着「蛍の季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_7
-[endif]
-			
-;◆8【竜胆】10月1～2週に好感度が一定以上で届く
-[if exp="(f.okeiko_month == 10 && (f.okeiko_week == 1 || f.okeiko_week == 2)) && f.para_kuroda_koukando > 50 && f.fumi_toutyaku_kuroda[8] == 0 && f.kuroda_au == 1"]
-	[eval exp="f.test='手紙到着「竜胆」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
-	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
-	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
-	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
-	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_8
-[endif]
 			
 
 ;手紙到着：条件有りが該当しなければ、条件無し分が到着：黒田ルートには無し
