@@ -301,10 +301,10 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [image layer=29 x=0 y=0 storage="bg/nengajou_kuroda.jpg" time=500]
 [wait time=500]
 ;メッセージレイヤを年賀状用に設定変更
-[position left=270 width=400 height=310 top=260 page=fore margint=0]
+[position left=220 width=450 height=310 top=250 page=fore margint=0]
 @layopt layer=message0 page=fore visible=true
 [position vertical=true]
-[font color=black size=19]
+[font color=black size=18]
 ;=========================================================================================
 [sp]昨年末には多大な励ましを[r]
 いただき、ありがとうございました[r]
