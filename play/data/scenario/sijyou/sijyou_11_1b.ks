@@ -540,6 +540,9 @@ $(function(){
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/bg_sijyou_nerine_niwa4.jpg" time=100]
 [wait time=10]
 ;病院背景に表示されないようにwait
+;回想シーン終了と同時にメッセージ枠も主人公用(赤枠)に戻します ◆jsYiJcqRkk
+;メッセージエリアの表示(赤枠)
+[chara_mod name="message_bg" storage="message_bg/frame_red.png" time=1]
 ;主人公の目閉じの合体png
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_komari.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
