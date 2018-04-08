@@ -89,7 +89,7 @@ console.info("f.katuraginomiya_fumi_inou=", this.kag.stat.f.katuraginomiya_fumi_
 [whosay name=""]
 [layopt layer=fix visible=false]
 [eval exp="sf.FButton='OFF'"]
-[image layer=29 x=0 y=0 storage=%storage|bg/anten.jpg time=%time|1300 visible=true]
+[image layer=29 x=0 y=0 width=961 height=641 storage=%storage|bg/anten.jpg time=%time|1300 visible=true]
 [wait time=%time|1300]
 [if exp=mp.clegit==true]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
