@@ -11,6 +11,8 @@
 	[ptext name="list" text="返信済" layer=28 size=15 x=865 y=&f.fumi_zaizen_midoku_y color=mediumslateblue bold=bold]
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.zaizen_au != 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1)||f.okeiko_month == 10 || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || f.okeiko_month == 2 || f.okeiko_month == 3)"]
 ;9月2週以降ルート外の場合、返信していない手紙の「返信」ボタン部分には何も表示しない
+;↓◆葛城宮onlyの時は、葛城宮以外の返信ボタンは表示しない
+[elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.katuraginomiya_only == 1"]
 [else]
 	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
