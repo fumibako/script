@@ -121,6 +121,12 @@ TG.stat.stack["call"] = [];
 ;[eval exp="f.event_jiki=''"]
 @jump storage="okeiko.ks" target=*okeiko_qk_shori
 [endif]
+;◆5月4週、週終わり"葛城宮only"進行時は休憩処理続き(休憩中画像非表示)へjump
+[if exp="f.okeiko_month == 5 && f.okeiko_week == 4 && f.katuraginomiya_only == 1"]
+[eval exp="f.event_weekend == 0"]
+;[eval exp="f.event_jiki=''"]
+@jump storage="okeiko.ks" target=*okeiko_qk_shori
+[endif]
 
 
 ;◆6月4週はイベント被りの可能性があるため(黒田、藤枝)再度イベント発生チェックへjump
