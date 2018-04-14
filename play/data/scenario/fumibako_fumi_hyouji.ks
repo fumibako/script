@@ -42,7 +42,8 @@
 ;◆葛城宮onlyかau=1の時は、葛城宮以外の返信ボタンは表示しない
 [elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 != 3 && (f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1)"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
-[elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 4 && f.hujieda_au == 1 && ((f.okeiko_month==9 && f.okeiko_week!=1) || (f.okeiko_month == 9 && f.okeiko_week == 1 && f.event_oaite_mitei != 1 ) ||f.okeiko_month==10||f.okeiko_month==11||f.okeiko_month==12||f.okeiko_month==1||f.okeiko_month==2||f.okeiko_month==3)"]
+;◆藤枝文通可能期間(返信ボタン表示)は個別ルートに入った後、9月2週～10月4週と2月3週以降。11月1週(発覚)～2月2週は表示しない
+[elsif exp="f.hensin_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] == 0 && f.fumi_hairetsu1 == 4 && f.hujieda_au == 1 && ((f.okeiko_month == 9 && f.okeiko_week != 1) || f.okeiko_month == 10 || (f.okeiko_month == 2 && (f.okeiko_week == 3 || f.okeiko_week == 4)) || f.okeiko_month == 3)"]
 	[eval exp="f.fumi_henji_storage='fumi_henji_furiwake_'+[f.fumi_hairetsu1]+'.ks'"]
 	[eval exp="f.fumi_henji_target='*fumi_henji'+'_'+[f.fumi_hairetsu1]+'_'+[f.fumi_hairetsu2]"]
 	[glink name="list" storage=&f.fumi_henji_storage target=&f.fumi_henji_target text="返信" exp="f.fumi_henjityu=1" size=15 width="30" x=&tf.fumi_hyouji_hensin_x y=&f.fumi_all_y graphic="select_waku_x135.png" font_color=black]
