@@ -159,6 +159,9 @@ $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
+[bg wait=true storage="../fgimage/bg/anten.jpg" time=0]
+;↑「完」の後にお稽古部屋背景に数秒切り替わる現象を確認しましたので、暗転に切り替えます
+[wait time=10]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面　0x663300
@@ -166,8 +169,6 @@ $(".bg").attr({ src: "./data/fgimage/bg/I9IhvvVdPo/youkannaisou.jpg"});
 [iscript]
 $("kan").css('margin','auto');
 [endscript]
-[bg wait=true storage="toumei.gif" time=0]
-[wait time=10]
 ;===============================================================
 ;画面中央に「完」の文字
 [sp]　  完[p]
@@ -175,10 +176,13 @@ $("kan").css('margin','auto');
 [fadeoutbgm time=3000]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif" time=1]
-[iscript]
-$(".bg").attr({ src: "./data/bgimage/toumei.gif"});
-[endscript]
-[freeimage layer=29 time=2000]
+;[iscript]
+;$(".bg").attr({ src: "./data/fgimate/toumei.gif"});
+;[endscript]
+;[freeimage layer=29 time=2000]
+;↑「完」の後に背景がチラ見えする現象防止のためにコメントアウトさせていただきます
+[image layer=29 x=0 y=0 width=961 height=641 storage="../fgimage/bg/anten.jpg" time=2000 visible=true]
+
 [fadeoutbgm time=3000]
 [wait time=500]
 ;スマホで音楽がぶちときれるのはどうしようもない 

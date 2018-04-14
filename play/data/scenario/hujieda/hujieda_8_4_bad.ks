@@ -41,6 +41,8 @@
 藤枝様を想えばよかったのかもしれない。[p]
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
+[bg wait=true storage="../fgimage/bg/anten.jpg" time=0]
+;↑他のEDで「完」の後にお稽古部屋背景に数秒切り替わる現象を確認しましたので、念のためこのEDについても暗転に切り替えます
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
 ;テキスト全画面　0x663300
