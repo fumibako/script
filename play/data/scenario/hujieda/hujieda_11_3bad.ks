@@ -34,7 +34,8 @@
 沢山、手紙を送ればよかった。[p] 
 ;===============================================================
 [暗転２ storage="bg/bg_prologue_dark.jpg"]
-[bg wait=true storage="toumei.gif" time=0]
+[bg wait=true storage="../fgimage/bg/anten.jpg" time=0]
+;↑「完」の後にお稽古部屋背景に数秒切り替わる現象を確認しましたので、暗転に切り替えます
 [wait time=10]
 ;メッセージレイヤを全画面用に設定変更 真ん中に設定する
 [position name="kan" left=350 width=300 height=300 top=200 page=fore margint="50"]
