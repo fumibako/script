@@ -116,6 +116,8 @@
 [playse storage=paper_su.ogg loop=false ]
 
 [手紙主人公]
+*fumi_girl_2_3_1
+[cm]
 藤枝 肇 様へ[l][r]
 [r]
 [sp]　春の浅けきみぎり藤枝様においては[r]
@@ -128,7 +130,10 @@
 [r]
 [sp][sp]毎日練習時間が取れない中、藤枝様は[r]
 [sp][sp]プレッシャーや色々なものとたたかい練習を[r]
-[sp][sp]　           頑張っていられるのでしょう。[p]
+[sp][sp]　           頑張っていられるのでしょう。
+[glink target=*fumi_girl_2_3_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumi_girl_2_3_2
 ;アイコンにかかります
 [sp]私は以前お手紙でいつか私も藤枝様に[r]
 何かを返せるといいと書きました今がそのときかも知れません。[r]
@@ -141,7 +146,12 @@
 慈しみ優しく弾けていました。[r]
 [sp]必ず上達できる方だと思います。[r]
 [sp]初心を忘れずゆっくり上達していきましょう』と[r]
-[sp][sp]書いてくださいました。[p]
+[sp][sp]書いてくださいました。
+[glink target=*fumi_girl_2_3_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_girl_2_3_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_girl_2_3_3
 ;アイコンにかかります
 [sp]私もその言葉をお返ししましょう。[r]
 藤枝様は音楽とピアノを慈しんでおられます。[r]
@@ -150,7 +160,12 @@
 [r]
 [sp]私がもう藤枝様に会うことも[r]
 藤枝様のピアノを聴くこともなくても[r]
-ずっと私は藤枝様の事を応援し続けます。[p]
+ずっと私は藤枝様の事を応援し続けます。
+[glink target=*fumi_girl_2_3_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_girl_2_3_4 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_girl_2_3_4
 [sp]私は、今は藤枝様の夢が叶うことを願っているのです。[r]
 [r]
 [sp]心から貴方をお慕いし、綺麗な感情だけが残って[r]
@@ -161,7 +176,13 @@
 [sp]心から貴方の今後が、幸多い事をお祈りしています。[r]
 [sp]藤枝様、どうかお元気で。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　[名字][名前][p]
+[sp]　　　　　　　　　　　　　　　　　　　　[名字][名前]
+[glink target=*fumi_girl_2_3_3 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_girl_2_3_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*fumi_girl_2_3_close
+[cm]
+[clearfix]
 [手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）

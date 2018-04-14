@@ -1391,7 +1391,7 @@ $(".1_fore").empty();
 [sp]さて先日お調べするといった藤枝様ですが、[r]
 独逸への留学についてお知らせします。[r]
 独逸留学は藤枝様ともう[ruby text=ふた]二[ruby text=り]人が決定していたのですが[r]
-三枠が諸事情で一枠となり独逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった。[r]
+[ruby text=さん]三枠が諸事情で[ruby text=いち]一枠となり独逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった[r]
 そうです。
 [glink target=*fumi_tokiko_hujieda_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
@@ -1402,7 +1402,7 @@ $(".1_fore").empty();
 難しいだろうという事で藤枝様ともう[ruby text=ひと]一[ruby text=り]人の候補の原様という方の[r]
 どちらかになるという結論になり、[r]
 二月に[ruby text=ふた]二[ruby text=り]人の演奏を関係者の方が聴いて留学する[ruby text=ひと]一[ruby text=り]人を決定する[r]
-だとか。
+のだとか。
 [glink target=*fumi_tokiko_hujieda_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [glink target=*fumi_tokiko_hujieda_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
@@ -1410,7 +1410,7 @@ $(".1_fore").empty();
 *fumi_tokiko_hujieda_3
 [sp]藤枝様と原様の実力は拮抗していて[r]
 どちらが留学してもおかしくないと言われてますが[r]
-ただやはり毎日はピアノの練習できない藤枝様の方が[r]
+ただ、やはり毎日はピアノの練習できない藤枝様の方が[r]
 当日不利ではないかとの噂ですわ。[r]
 [r]
 [sp]私は[名前]さんの事を応援しています。[r]

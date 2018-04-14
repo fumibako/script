@@ -129,6 +129,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [endif]
 
 [手紙時子]
+*fumi_tokiko_hujieda_1
+[cm]
 [名字]　[名前]様へ [l][r]
 [r]
 [sp]　星も凍るような寒い夜[r]
@@ -138,15 +140,23 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp]さて先日お調べするといった藤枝様ですが、[r]
 独逸への留学についてお知らせします。[r]
 独逸留学は藤枝様ともう[ruby text=ふた]二[ruby text=り]人が決定していたのですが[r]
-[ruby text=さん]三枠が諸事情で[ruby text=いち]一枠となり独逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった。[r]
-そうです。[p]
+[ruby text=さん]三枠が諸事情で[ruby text=いち]一枠となり独逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった[r]
+そうです。
+[glink target=*fumi_tokiko_hujieda_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumi_tokiko_hujieda_2
 ;はみだし修正
 [sp][r][r][r]
 [sp][ruby text=ひと]一[ruby text=り]人は女性なので、将来この国の音楽の指導者となるのは[r]
 難しいだろうという事で藤枝様ともう[ruby text=ひと]一[ruby text=り]人の候補の原様という方の[r]
 どちらかになるという結論になり、[r]
 二月に[ruby text=ふた]二[ruby text=り]人の演奏を関係者の方が聴いて留学する[ruby text=ひと]一[ruby text=り]人を決定する[r]
-だとか。[p]
+のだとか。
+[glink target=*fumi_tokiko_hujieda_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_tokiko_hujieda_3 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_tokiko_hujieda_3
 [sp]藤枝様と原様の実力は拮抗していて[r]
 どちらが留学してもおかしくないと言われてますが[r]
 ただ、やはり毎日はピアノの練習できない藤枝様の方が[r]
@@ -158,7 +168,13 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp][名前]さんが今年も幸福に満ちた、一年となりますよう、[r]
 心から祈っています。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　三宮　時子[p]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　三宮　時子
+[glink target=*fumi_tokiko_hujieda_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_tokiko_hujieda_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*fumi_tokiko_hujieda_close
+[cm]
+[clearfix]
 [手紙読了]
 [resetfont]
 
