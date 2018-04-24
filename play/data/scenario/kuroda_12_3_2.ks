@@ -44,11 +44,11 @@
 [r]
 研究室も何もかも崩れ落ちる夢。[p]
 
-;【効果】白フラッシュ3回
+;【効果】白フラッシュ2回
 [bg wait=true method='crossfade' storage="../fgimage/bg/white.jpg" time=10]
 [wait time=70]
 [bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=10]
-[wait time=150]
+[wait time=350]
 [bg wait=true method='crossfade' storage="../fgimage/bg/white.jpg" time=10]
 [wait time=70]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1]
