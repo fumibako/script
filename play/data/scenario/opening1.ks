@@ -38,11 +38,29 @@
 [sp]こちらでは鶯が鳴き始め、日に日に春の訪れを[r]
 実感する毎日です。
 [autosave]
+;◆システムメッセージ表示
+[layopt layer=26 visible=true]
+[layopt layer=27 visible=true]
+[wait time=10]
+;↓初見時のみ手紙の進め方ヒント表示
+[if exp="sf.hint_fumi != 1"]
+[image layer=26 x=550 y=335 storage="button/frame_fukidasi_migiue.png" height="170"]
+[wait time=10]
+	[ptext text="お手紙を読み進めるには" layer=27 size=18 x=595 y=385 color=slategray bold=bold]
+	[ptext text="こちらのボタンを押してください" layer=27 size=18 x=580 y=423 color=slategray bold=bold]
+[wait time=10]
+[eval exp="sf.hint_fumi = 1"]
+[endif]
+
 [glink target=*girl_fumi_2 text="→" size=10 x=800 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[wait time=10]
 [s]
 *girl_fumi_2
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
+[freeimage layer = 26]
+[freeimage layer = 27]
+[wait time=10]
 [r]
 [r]
 [r]

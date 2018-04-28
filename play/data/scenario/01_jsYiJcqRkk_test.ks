@@ -35,7 +35,8 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 ;[glink target="test02" text="財前マクロテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
 ;[glink target="test03" text="立ち絵サイズテスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200  font_color=black]
 ;[glink target="test04" text="お稽古パート" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250  font_color=black]
-[glink target="test05" text="共通プロローグ後半(opening2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
+[glink target="test36" text="プロローグ手紙(opening1)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
+[glink target="test05" text="プロローグ後半(opening2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200  font_color=black]
 [glink target="test06" text="磯野に相談" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250  font_color=black]
 [glink target="test35" text=".hide等表示テスト" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300  font_color=black]
 [glink target="test07" text="時子さん登場" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400  font_color=black]
@@ -690,6 +691,17 @@ $(".list").remove(); //除きます
 @jump target="test"
 
 [s]
+
+*test36
+[chara_mod name="bg" storage="toumei.gif" time=100]
+[cm]
+[freeimage layer = 26]
+[call target=*start storage="macro_graphic.ks"]
+[call target=*start storage="macro_etc.ks"]
+[call target=*start storage="macro_tati_girl.ks"]
+@jump storage="opening1.ks"
+[s]
+
 
 *common_9_1
 [glink target=y text="お見合い候補の好感度を全て１００にします" graphic="select_waku_x500.png" size=10 width="250" x=100 y=100  font_color=black]
