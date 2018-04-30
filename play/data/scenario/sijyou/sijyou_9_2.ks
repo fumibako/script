@@ -35,7 +35,7 @@
 [current layer="message0"]
 ;テキスト全画面
 [font color=white size=27]
-――白萩そよぐ、料亭にて。[l][r]
+――[ruby text=しら]白[ruby text="はぎ"]萩そよぐ、料亭にて。[l][r]
 [r]
 四条家と[名字]家の見合いが執り行われた。[p]
 ;【SE】ししおどし（控え目な流水…カコン）
@@ -453,7 +453,7 @@ _　ございます」[p]
 [wait time=10]
 ;○友人ではあるので軽い形で。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「はい、兄もとても喜んでいました」[p]
+「はい。[sp]兄も、文通がうまくいって、とても喜んでいました」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [四条微笑み]
@@ -522,7 +522,7 @@ _　か……？）[p]
 ;○足元を気遣って手を差し出す四条
 #
 ;ナレーター
-四条は袂をよせると花を掬うようにして私に手を差し伸べる。
+四条様は、袂をよせると花を掬うようにして私に手を差し伸べる。
 [autosave改]
 [p]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
