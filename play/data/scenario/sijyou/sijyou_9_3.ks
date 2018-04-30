@@ -412,7 +412,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;○伏線 無くてもどちらでも
 #
 ;ナレーターモノローグ
-ふと、気づくと、四条の後ろの木陰の下に人影が見え、その人物は、[r]
+ふと、気づくと、四条様の後ろの木陰の下に人影が見え、その人物は、[r]
 こちらを見つめている。[p]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
