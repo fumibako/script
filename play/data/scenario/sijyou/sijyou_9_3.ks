@@ -255,6 +255,10 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [playse storage=tya_katya.ogg loop=false ]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「乾杯」[p]
+[whosay name="四条 華織" color="olivedrab"]
+「本日はお越しいただきありがとうございます」[p]
+;#
+;四条様が親戚一同に挨拶を回る
 ;○親戚に挨拶をする主人公と四条。
 [whosay name="四条祖母" color="#916565"]
 「この回遊庭園は、大名屋敷の折に造られたものを活かしており、[r]
@@ -269,9 +273,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [wait time=10]
 [whosay name="四条親戚" color="#807070"]
 「これは良いご縁。ウチもあやかりたいな」[p]
-[whosay name="四条 華織" color="olivedrab"]
-「本日はお越しいただきありがとうございます」[p]
-;【SE】人々のざわめき（ザワザワ…屋外）
+【SE】人々のざわめき（ザワザワ…屋外）
 ;[playse storage=zawa_out.ogg loop=false ]
 [主人公目パチ1回]
 [whosay name="四条祖父" color="#888898"]
