@@ -63,7 +63,7 @@
 [wait time=10]
 ;ポーズは適当。
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（あの方は、たしか華織様のお[ruby text=ば]祖[ruby text=あ]母だわ）[p]
+（あの方は、たしか華織様のお[ruby text=ば]祖[ruby text=あ]母様だわ）[p]
 [whosay name="花屋の店主"]
 「四条様、さすがにこれ以上持って帰るのは難しいと思いますよ！」[p]
 [whosay name="四条祖母" color="#888898"]
