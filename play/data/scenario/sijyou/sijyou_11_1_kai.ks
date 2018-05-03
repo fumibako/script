@@ -42,7 +42,7 @@
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
 「[華衣]は、四人きょうだいの末っ子でね。[r]
-[sp]乳母日傘で育てられてじゃじゃ馬に育ってしまったんだ」[p]
+[sp][ruby text="おん"]乳[ruby text="ば"]母[ruby text="ひ"]日[ruby text="がさ"]傘で育てられて、じゃじゃ馬に育ってしまったんだ」[p]
 ;[四条口微笑み]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
