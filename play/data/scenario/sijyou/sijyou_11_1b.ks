@@ -497,14 +497,23 @@ $(function(){
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_byouin.jpg" time=100]
 [whosay name="華衣" color=%mp.color]
 『もう少ししたら傷も治るよね。そうしたら、ずっと』[p]
-…………[wait time=1500]
-[p]
+[whosay name="医者"]
+『今は安静にさせてあげてください』[p]
+[whosay name="華衣" color=%mp.color]
+『また、次の日に来るね……』[p]
+[whosay name="医者"]
+『……申し訳ございません、我々には……もう、どうすることも……』[p]
+[whosay name="華衣の婚約者"]
+『いいんです、[華衣]には私のことを言わないで。[r]
+[sp]私から伝えますから』
+#
+…………[p]
+日が立つにつれて、[華衣]の婚約者の容態が悪化していった。[p]
 [whosay name="華衣の婚約者"]
 『華織さん……最後にお願いがあります。[sp]この想いを……[華衣]に伝えてください』[p]
 [whosay name="華織" color="olivedrab"]
 『わかった、だから[華衣]がくるまでもう少し持ちこたえてくれ！　』[p]
-…………[wait time=1500]
-[l]
+…………[l]
 [er]
 [whosay name="華衣の婚約者の母"]
 『……のものは持って行きますね。今までお世話になりました。[r]
@@ -512,8 +521,7 @@ $(function(){
 [sp]そっとして頂けますかぇ……これからの事も考えなければ[r]
 [sp]いけませんので……』[p]
 #
-…………[wait time=1500]
-[l]
+…………[l]
 [er]
 ;○もともとお情けの婚約者候補(家の付き合いで候補にいれただけ)だったので最期の話もできず、祖父との回想シーンなどで反対される
 [whosay name="四条家祖父"]
@@ -531,7 +539,7 @@ $(function(){
 [freeimage layer=13 time=500]
 [wait time=500]
 [layopt layer=13 visible=true]
-;;======四条登場======
+;======四条登場======
 [whosay name="華衣" color=%mp.color]
 「アンタが(俺の好きな)花のことを言わなければ、こんなことには！！　」[p]
 ;[whosay name="華織" color="olivedrab"]
