@@ -623,6 +623,7 @@ $('.junbi_girl').remove();
 ;意味がわかってないので追加
 #
 想いを花として残していた人。[p]
+[whosay name="華織" color="olivedrab"]
 （こんな想いを残すなんて、他の誰ができるのだろうか）[p]
 [主人公通常]
 [wait time=10]
