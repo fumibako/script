@@ -110,7 +110,7 @@
 場所が場所だけに七光りと思われがちですが、[r]
 祖父にも、来ていただいた方にも心にくる華だと褒めていた[r]
 だきました。[r]
-[glink target=*fumi_in2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_in2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *fumi_in2
 [er]
@@ -119,10 +119,10 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
-[glink target=*fumi_in1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
-[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_in3_3" size=5 x=880 y=24 width=50 height=50]
+[glink target=*fumi_in1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_in3" size=5 x=880 y=24 width=50 height=50]
 [s]
-*fumi_in3_3
+*fumi_in3
 [cm]
 [clearfix]
 [手紙四条読了 fumi_number=]
@@ -396,7 +396,8 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 そのおかげで、他の先生方からの勧めもあり、来週に[r]
 『四条華道展』を行う運びとなりました。[r]
 もちろん、華道競合展で、大賞を得た作品も出す予定です。[r]
-[link target=fumi_in2_2][sp]　　　　　　　　　　　　　　　　　　　　　　　　【壱/弐】[endlink][s]
+[glink target=*fumi_in2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 *fumi_in2_2
 [er]
 [r]
@@ -406,12 +407,13 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 考えております。[r]
 [r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
-[link target=fumi_in1_1][sp]　　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
-[r]
-[link target=fumi_in3_3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
+[sp]　四条 華織[r][r]
+[glink target=*fumi_in1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_in3_3" size=5 x=880 y=24 width=50 height=50]
+[s]
 *fumi_in3_3
-[er]
+[cm]
+[clearfix]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[2][101] = 0"]
