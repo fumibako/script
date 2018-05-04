@@ -244,7 +244,6 @@
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
 [glink target=*fumi_in1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
-[glink target=*fumi_in2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_in3_3" size=5 x=880 y=24 width=50 height=50]
 [s]
 *fumi_in3_3
