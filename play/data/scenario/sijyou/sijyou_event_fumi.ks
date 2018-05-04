@@ -248,7 +248,8 @@
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_in3_3" size=5 x=880 y=24 width=50 height=50]
 [s]
 *fumi_in3_3
-[er]
+[cm]
+[clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 [freeimage layer = 29]
