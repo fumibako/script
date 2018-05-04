@@ -231,7 +231,8 @@
 そのおかげで、他の先生方からの勧めもあり、来週に[r]
 『四条華道展』を行う運びとなりました。[r]
 もちろん、華道競合展で、大賞を得た作品も出す予定です。[r]
-[link target=fumi_in2_2][sp]　　　　　　　　　　　　　　　　　　　　　　　　【壱/弐】[endlink][s]
+[glink target=*fumi_in2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 *fumi_in2_2
 [er]
 [r]
@@ -242,9 +243,10 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
-[link target=fumi_in1_1][sp]　　　　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
-[r]
-[link target=fumi_in3_3][sp]　　　　　　　　　　　　　　　　　　　　　　　　　　【閉】[endlink][s]
+[glink target=*fumi_in1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_in2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_in3_3" size=5 x=880 y=24 width=50 height=50]
+[s]
 *fumi_in3_3
 [er]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
