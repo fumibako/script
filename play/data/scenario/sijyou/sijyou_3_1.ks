@@ -110,7 +110,8 @@
 場所が場所だけに七光りと思われがちですが、[r]
 祖父にも、来ていただいた方にも心にくる華だと褒めていた[r]
 だきました。[r]
-[link target=fumi_in2][sp]　　　　　　　　　　　　　　　　　　　　　　　　【壱/弐】[endlink][s]
+[glink target=*fumi_in2_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
 *fumi_in2
 [er]
 もう、何も迷うこともない。[r]
@@ -118,11 +119,12 @@
 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
-[link target=fumi_in1][sp]　　　　　　　　　　　　　　　　　　　　　　【弐/弐】[endlink][r]
-[r]
-[link target=fumi_in3][sp]　　　　　　　　　　　　　　　　　　　　　　 　【閉】[endlink][s]
-*fumi_in3
-[er]
+[glink target=*fumi_in1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_in3_3" size=5 x=880 y=24 width=50 height=50]
+[s]
+*fumi_in3_3
+[cm]
+[clearfix]
 [手紙四条読了 fumi_number=]
 ;共通1へ
 @jump target=common1
