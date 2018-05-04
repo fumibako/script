@@ -467,7 +467,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 #
 私は、お付き合いを重ねてみえてくる、また違った華織様の温かい人柄に心が和んだ。[p]
 [主人公目閉]
-心に咲き誇る恋夢にうたた寝をすると、庭木の上でメジロが愛らしく鳴いた。[p]
+心に咲き誇る[ruby text=れん]恋[ruby text=む]夢にうたた寝をすると、庭木の上でメジロが愛らしく鳴いた。[p]
 ;暖かい陽気で、まだ少し眠いよ！ということでもあり。
 ;【SE】メジロ（ピィピュイ）
 [playse storage=tori_mejiro.ogg loop=false ]
@@ -487,7 +487,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '15';
 [image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
 [font color=white size=27]
 [sp]――後日。[r]
-[sp]庭の沈丁花が香る、暖かな昼どき。[r]
+[sp]庭の[ruby text=じん]沈[ruby text=ちょう]丁[ruby text=げ]花が香る、暖かな昼どき。[r]
 [sp]父と私は、華織様にお誘いを頂いた『四条華道展』に[r]
 [sp]向かう為の準備をしていた。[p]
 ;ジンチョウゲ。花言葉は栄光、不滅、永遠。香水として使われる
