@@ -125,6 +125,7 @@
 *fumi_in3
 [cm]
 [clearfix]
+[clearstack]
 [手紙四条読了 fumi_number=]
 ;共通1へ
 @jump target=common1
@@ -414,6 +415,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 *fumi_in3_3
 [cm]
 [clearfix]
+[clearstack]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[2][101] = 0"]
