@@ -118,7 +118,7 @@ $('.saku3').remove();
 [whosay name="華衣" color=%mp.color]
 「！　」[p]
 [whosay name="華衣" color=%mp.color]
-「あなたは」[p]
+「あなたは、エンとカンの……」[p]
 [whosay name="四条親戚" color="#807070"]
 「いつも子供達と遊んで頂き、ありがとうございます。[r]
 [sp]私、[華衣]さんのこと、ずっと応援していました」[p]
