@@ -21,6 +21,7 @@
 [eval exp="tf.advice_event_hyouji=1"]
 [eval exp="f.flag_replay=false"]
 [eval exp="tf.flag_replay=false"]
+[eval exp="tf.jp_sinario=''"]
 [iscript]
 //クリア回数：未定義時変数セット(test_sijyou.ksのスクリプトを一部使用させていただきました。◆B4nFWraU42さん、ありがとうございます)
 if (typeof sf.ending_Number_of_times === "undefined") {

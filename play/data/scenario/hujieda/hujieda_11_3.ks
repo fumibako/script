@@ -208,7 +208,6 @@ $('.list').remove();
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
 [layopt layer=fix visible=true]
 [eval exp="sf.FButton='ON'"]
-[call target=*start storage="macro_tati_hujieda.ks"]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 *seen_3_1
 
@@ -236,8 +235,17 @@ $('.list').remove();
 ;==========
 ;【立ち絵】藤枝：驚き
 [藤枝ベース郵便屋]
+[wait time=10]
 [藤枝驚き]
+[wait time=10]
+[if exp="tf.jp_sinario=='hujieda_11_3bad'"]
+;リプレイ時にfreeimageでフリーズしてしまうため、jumpします
+@jump target=*replay_bad1_jump1
+[endif]
+[wait time=10]
 [freeimage layer=13 time=500]
+
+*replay_bad1_jump1
 [wait time=500]
 ;==========
 [whosay name="藤枝 肇" color=%mp.color] 
@@ -268,7 +276,7 @@ $('.list').remove();
 ;【立ち絵】藤枝：目伏せ
 [藤枝憂い]
 「迷ってましたが、皆、僕の背中を押してくれています。[r]
-[sp]それに在学中の時に留学の話をと聞いてから[r]
+[sp]それに在学中の時に留学の話を聞いてから[r]
 [sp]ずっと行きたいと思っていました」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -301,6 +309,7 @@ $('.list').remove();
 ;【立ち絵】主人公：悲しみ
 [主人公目閉じ]
 [主人公涙_目閉用]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとうございました、藤枝様……お元気で！」[p]
 
 ;【立ち絵】藤枝：悲しみ
@@ -317,10 +326,16 @@ $('.list').remove();
 去っていった。[p]
 
 *seen_end
+[whosay name=""] 
 [if exp="f.okeiko_gamen == true"]
 @jump target=*seen_hujieda_11_3_hantei
 [endif]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
+[if exp="tf.jp_sinario=='hujieda_11_3bad'"]
+;bad1リプレイ時にはシームレスにjumpします
+@jump storage=hujieda/hujieda_11_3bad.ks target=*seen_hujieda_11_3_bad
+[endif]
+
 ;テスト時 または　リプレイ時かつ　藤枝バッド２をみている場合はシーン選択
 [if exp="(tf.test_hujieda == true && f.okeiko_gamen != true) || (f.okeiko_gamen != true && f.event_replay == 'hujieda' && sf.ED_hujieda_bad2 == 1)"]
 @layopt layer=fix visible=false
@@ -334,7 +349,7 @@ $('.list').remove();
 ;テキスト表記を統一します(リプレイ→回想)など
 回想中です。続きを選択してください。[r][r][r]
 [wait time=10]
-[glink target=*seen11_1_bad text="badエンド2をみる" size=20 width=500 x=200 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target=*seen11_1_bad text="badエンドをみる" size=20 width=500 x=200 y=200 graphic="select_waku_x500.png" font_color=black]
 [glink target=*end_test1 text="回想を終了する" size=20 width=500 x=200 y=350 graphic="select_waku_x500.png" font_color=black]
 [s]
 ;----------------------------

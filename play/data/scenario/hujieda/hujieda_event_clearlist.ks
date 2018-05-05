@@ -338,7 +338,7 @@ $(".endtitle").css({'filter': 'brightness(60%)','-webkit-filter': 'brightness(60
 [endif]
 ;========================================エンディング============================================================
 [if exp="sf.ED_hujieda_bad == 1"]
-[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5b" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_12_3_badED'" width=&tf.end_day_width]
+[button name="ending1" graphic="day_bad1.png" y="&tf.end1_y" x="&tf.x5b" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_11_3bad'" width=&tf.end_day_width]
 [image name="ending1" storage="../image/day_check_sumi.png" layer=27 x="&tf.x7b" y="&tf.end1_y" visible=true wait=true width=&tf.sumi_width]
 [endif]
 [if exp="sf.ED_hujieda_bad != 1"]
@@ -354,7 +354,7 @@ $(".ending1").css({'filter': 'brightness(50%)','-webkit-filter': 'brightness(50%
 [endif]
 
 [if exp="sf.ED_hujieda_bad2 == 1"]
-[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x5" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_11_3bad'" width=&tf.end_day_width]
+[button name="ending2" graphic="day_bad2.png" y="&tf.end1_y" x="&tf.x5" size=15 target="hujieda_sinario" exp="tf.jp_sinario='hujieda_12_3_badED'" width=&tf.end_day_width]
 [image name="ending2" storage="../image/day_check_sumi.png" layer=27 x="&tf.x7" y="&tf.end1_y" visible=true wait=true width=&tf.sumi_width]
 [endif]
 [if exp="sf.ED_hujieda_bad2 != 1"]
@@ -663,6 +663,10 @@ $(".1_fore").empty();
 [endscript]
 [endif]
 
+[if exp="tf.jp_sinario=='hujieda_11_3bad'"]
+@jump target=*replay_11_3bad
+[endif]
+
 ;tf.jp_sinarioのシナリオにジャンプ
 [iscript]
 tf.jp_sinario = 'hujieda/' + tf.jp_sinario + '.ks';
@@ -670,6 +674,35 @@ f.event_replay = 'hujieda';
 [endscript]
 @clearstack
 @jump storage="&tf.jp_sinario"
+
+*replay_11_3bad
+@clearstack
+[call target=*11_3 storage="hujieda/preload_hujieda.ks"]
+;【背景】主人公邸 玄関 （裏で画面構成）
+[bg wait=true storage="../fgimage/bg/bg_genkan.jpg" time=1000]
+[wait time=10]
+[イベントシーン構築ボタン無し版]
+[eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
+[主人公ポーズ通常]
+[wait time=10]
+[主人公憂い]
+[wait time=10]
+[call target=*start storage="macro_tati_hujieda.ks"]
+[wait time=10]
+[wait time=1000]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[layopt layer=fix visible=true]
+[プリロード画面消去]
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+#
+@jump storage="hujieda/hujieda_11_3.ks" target=*seen_3_1
+
+
 [s]
 
 *test_end
