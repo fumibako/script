@@ -68,7 +68,7 @@
 [playse storage=pen_write.ogg loop=false ]
 私は、彼の人を想い、筆をとる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（華織さま……手紙、読ませていただきました。[r]
+（華織さま……お手紙、読ませていただきました。[r]
 [sp]華道競合会にて大賞を受賞されて、私も嬉しくおもいます。[r]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 [sp]今は、どのようにご活躍して、いらっしゃるのでしょうか？）
