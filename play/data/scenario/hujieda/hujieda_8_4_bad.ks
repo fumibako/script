@@ -28,8 +28,12 @@
 ;背景変更:黒茶・和紙風
 [image layer=29 x=0 y=0 storage="bg/bg_prologue_dark.jpg" time=1000 visible=true]
 [wait time=1000]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=10]
 ;テキスト全画面
 [font color=white size=27]
 ;==========================スクリプトここまで=========================================================
