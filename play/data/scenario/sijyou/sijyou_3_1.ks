@@ -802,7 +802,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「四条様。今日はお誘い頂きありがとうございます」
 [autosave改]
 [p]
+[if exp="f.sijyou_sobo == true"]
+[whosay name=四条綾花 color=%mp.color]
+[else]
 [whosay name=四条祖母 color=%mp.color]
+[endif]
 「こちらこそ、ご足労頂きありがとうございます。[r]
 [sp]どうか、四条家の華の世界をお楽しみ下さい」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -820,7 +824,11 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公照れ目普通]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい」[p]
+[if exp="f.sijyou_sobo == true"]
+[whosay name=四条綾花 color=%mp.color]
+[else]
 [whosay name=四条祖母 color=%mp.color]
+[endif]
 「ありがとうございます。また後でお会いしましょう」[p]
 #
 [主人公目閉じ]
@@ -832,7 +840,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;[chara_mod name="bg" storage="toumei.gif"]
 [主人公通常]
 #
-しばらく、展示作品に愉しんでいると、華織様が他の華道名士達と[r]
+しばらく、展示作品を愉しんでいると、華織様が他の華道名士達と[r]
 共に壇上に現れた。[p]
 ;室内ざわざわSE
 ;【SE】人々のざわめき（ザワザワ…屋内）
