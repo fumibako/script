@@ -247,8 +247,8 @@ $('.saku3').remove();
 「連理の枝のように、これからも[名前]さんと共にあることを[r]
 [sp]誓います」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（ええ、これからも共に未来を創り、[r]
-[sp]私達の想いをのせて、花を慈しみましょう）[p]
+「ええ、これからも共に未来を創り、[r]
+[sp]私達の想いをのせて、花を慈しみましょう」[p]
 
 #
 [if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.event_sijyou[15] == 1 && f.para_shujinkou_j_kadou >= 50"]
