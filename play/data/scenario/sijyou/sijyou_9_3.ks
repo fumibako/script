@@ -257,9 +257,17 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 「乾杯」[p]
 [whosay name="四条 華織" color="olivedrab"]
 「本日はお越しいただきありがとうございます」[p]
-;#
-;四条様が親戚一同に挨拶を回る
-;○親戚に挨拶をする主人公と四条。
+#
+親戚一同が祝杯を挙げる終えると、[r]
+[ruby text=か]代わるがわる、晴れて婚約者同士となった私達に言葉をかける。[p]
+[whosay name="四条親戚" color="#807070"]
+「これは良いご[ruby text=えん]縁。ウチもあやかりたいな」[p]
+[whosay name="四条 華織" color="olivedrab"]
+「ありがとうございます……」[p]
+#
+四条様も[ruby text=ご]御挨拶[ruby text=まわ]回りに忙しく、なかなか二人で話せそうにない。[p]
+そんな中、私も華織様のお祖母様に捕まり、[r]
+四条家にまつわる歴史話を拝聴していた。[p]
 [whosay name="四条祖母" color="#916565"]
 「この回遊庭園は、大名屋敷の折に造られたものを活かしており、[r]
 [sp]外交の為にも一定の場所から洋風にしているんですの……」[p]
@@ -271,17 +279,17 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 「そうなのですか」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
-[whosay name="四条親戚" color="#807070"]
-「これは良いご縁。ウチもあやかりたいな」[p]
-【SE】人々のざわめき（ザワザワ…屋外）
-;[playse storage=zawa_out.ogg loop=false ]
 [主人公目パチ1回]
+#
+大勢の親族が一同に会話し、声の波は、より一層さざめきだつ。[p]
+;【SE】人々のざわめき（ザワザワ…屋外）
+[playse storage=zawa_out.ogg loop=false ]
 [whosay name="四条祖父" color="#888898"]
 「あの子の"新しい文通相手"は、[名字]家のような武家がいいのぉ」[p]
 [whosay name="四条祖父" color="#888898"]
 「手筈は整っておるだろうな？ 」[p]
 [whosay name="四条母" color="#9B608B"]
-「は、はい。その様に私も計らっております。[r]
+「は、はい。その様に私も[ruby text=はか]計らっております。[r]
 [sp]何分、"あの事"があってから部屋からあまり出てこないもので」[p]
 [whosay name="四条祖父" color="#888898"]
 「それにしても、こういう時くらい、他の兄弟達も帰ってこればいい[r]
@@ -445,14 +453,16 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;でしょうか　より短絡的に気軽に　かしら？
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
+#
+私が木の陰を凝視していると、子供たちが駆け込んできた。[p]
 ;【SE】子供たち(楽しげな笑い声)
 [playse storage=kodomotachi_warai.ogg loop=false ]
 [whosay name="親戚の子 その壱" color="#807070"]
-「どこに隠れたのー！？」[p]
+「エンちゃん～！[sp]どこに隠れたのー！？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="親戚の子 その弐" color="#807070"]
-「こっちだよー！ 」[p]
+「カンちゃん、こっちだよー！ 」[p]
 ;【SE】ザッ(衣擦れ)
 [playse storage=za_kinuzure.ogg loop=false ]
 [四条驚き]
