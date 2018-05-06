@@ -78,12 +78,7 @@ $('.test2').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 [glink target="test1_1b" text="1月1週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 graphic="select_waku_x500.png" font_color=black]
 [glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 graphic="select_waku_x500.png" font_color=black]
 [glink target="test1_4" text="1月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
-;[glink target="test2_1" text="2月1週:1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
-;◆↓背景比較テスト用
-[glink target="test2_1" text="2月1週:1:元" size=17 width="100" x=100 y=300 graphic="select_waku_x300.png" font_color=black]
-[glink target="test2_1_new" text="2月1週:1:新" size=17 width="100" x=250 y=300 graphic="select_waku_x300.png" font_color=black]
-
-;◆↑背景比較テスト用
+[glink target="test2_1" text="2月1週:1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
 [glink target="test2_1b" text="2月1週:2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 graphic="select_waku_x500.png" font_color=black]
 [glink target="test3_1" text="3月1週:1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 graphic="select_waku_x500.png" font_color=black]
 [glink target="test3_1b" text="3月1週:2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 graphic="select_waku_x500.png" font_color=black]
@@ -91,11 +86,7 @@ $('.test2').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 
 
 [glink target="test3_4" text="3月4週normalEND" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
-;[glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
-;◆↓背景比較テスト用
-[glink target="test_goodED" text="goodENDエピローグ:元" size=17 width="100" x=400 y=200 graphic="select_waku_x300.png" font_color=black]
-[glink target="test_goodED_new" text="goodENDエピローグ:新" size=17 width="100" x=550 y=200 graphic="select_waku_x300.png" font_color=black]
-;◆↑背景比較テスト用
+[glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_credit" text="仮credit" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=indigo]
 
 
