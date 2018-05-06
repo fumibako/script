@@ -645,7 +645,8 @@ $('.bg1').remove();
 #
 [er]
 ;〜〜シーン キャラの造作1 軽度〜〜〜
-[暗転１]
+;[暗転１]
+[bg storage="../fgimage/bg/B4nFWraU42/sijyou_kyousitu_zentai2.jpg" time=600]
 ;このシーンの背景は生徒が描かれていないと違和感あるので暗転で。
 ;教室全体元ファイルアップロダ
 ;地の文　仮
