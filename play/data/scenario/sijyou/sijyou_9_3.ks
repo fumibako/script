@@ -255,13 +255,14 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [playse storage=tya_katya.ogg loop=false ]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「乾杯」[p]
+[主人公目閉じ]
 [whosay name="四条 華織" color="olivedrab"]
 「本日はお越しいただきありがとうございます」[p]
 #
 親戚一同が祝杯を挙げる終えると、[r]
 [ruby text=か]代わるがわる、晴れて婚約者同士となった私達に言葉をかける。[p]
 [whosay name="四条親戚" color="#807070"]
-「これは良いご[ruby text=えん]縁。ウチもあやかりたいな」[p]
+「これは良いご[ruby text=えん]縁。[sp]ウチもあやかりたいな」[p]
 [whosay name="四条 華織" color="olivedrab"]
 「ありがとうございます……」[p]
 #
@@ -289,11 +290,11 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [whosay name="四条祖父" color="#888898"]
 「手筈は整っておるだろうな？ 」[p]
 [whosay name="四条母" color="#9B608B"]
-「は、はい。その様に私も[ruby text=はか]計らっております。[r]
+「は、はい。[sp]その様に私も[ruby text=はか]計らっております。[r]
 [sp]何分、"あの事"があってから部屋からあまり出てこないもので」[p]
 [whosay name="四条祖父" color="#888898"]
-「それにしても、こういう時くらい、他の兄弟達も帰ってこればいい[r]
-[sp]ものを」[p]
+「それにしても、こういう時くらい、他の兄弟達も帰ってこれば[r]
+[sp]いいものを」[p]
 [whosay name="四条母" color="#9B608B"]
 「申し訳ございません……」[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -307,9 +308,6 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 （これからは、ここの[ruby text=し]仕[ruby text=きた]来りを勉強しなくては！ ）[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
-;○はりきってる四条祖母 姑？
-[whosay name="四条祖母" color="#916565"]
-「それからですね……」[p]
 ;=================================================================================_
 *seen3
 #
