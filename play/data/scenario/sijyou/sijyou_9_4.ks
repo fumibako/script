@@ -26,7 +26,7 @@
 ;「に」が続くので調整しました(◆jsYiJcqRkk
 ――華織様からお芝居見物に誘われ[r]
 [r]
-歌舞伎『大正座』を訪れることになった。[p]
+歌舞伎『[ruby text=たい]大[ruby text=しょう]正[ruby text=ざ]座』を訪れることになった。[p]
 ;背景変更
 [背景_四条_歌舞伎座中]
 ;[chara_mod name="bg" storage="bg/bg_kabuki_in.jpg"]
@@ -43,7 +43,7 @@
 ;==========================================================================
 [メッセージウィンドウ上ボタン表示]
 [whosay name="華織" color="olivedrab"]
-「本日の演目は『音頭恋寝刃』……」
+「本日の演目は『[ruby text=おん]音[ruby text=ど]頭[ruby text=こいの]恋[ruby text=ねた]寝[ruby text=ば]刃』……」
 [autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
@@ -96,12 +96,12 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「親戚の婚約者の邸宅で行われた『天覧芝居』を観にいったときから、[r]
+「親戚の婚約者の邸宅で行われた『[ruby text=てん]天[ruby text=らん]覧芝居』を観にいったときから、[r]
 [sp]芝居は好きなんだ」[p]
 
 [主人公目パチ1回]
 [whosay name="華織" color="olivedrab"]
-「名役者 菊次郎 がでているみたいだ」[p]
+「名役者、菊次郎がでているみたいだ」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
@@ -124,9 +124,9 @@
 「これが名高い『波ヶ浦』でございまするぅ～」[p]
 #
 舞台のあらすじは、主家より名刀といわれる刀を求めて献上するようにとの[r]
-命を受けていた男が、若いゆえの過ちを犯し、
-せっかく見つけた刀を、うっかり無くしてしまう。[p]
-それでも、珍道中に巻き込まれながらも、縁あって刀を取り戻す……といった一御家騒動、人情のお話であった。[p]
+命を受けていた男が、若いゆえの過ちを犯し、せっかく見つけた刀を
+[r]うっかり無くしてしまう。[p]
+それでも、珍道中に巻き込まれながらも、縁あって刀を取り戻す……[r]といった一御家騒動、人情のお話であった。[p]
 ;スクリプト担：↑「命を受けていたが」→「命を受けていた男が」に変更してみました。「家老の倅が」と悩みましたが、刀を無くした人物と取り戻した人物が別ですし、ぼかした方が読みやすいでしょうか
 ;[SE拍手]
 [playse storage=hakushu.ogg loop=false ]
@@ -164,7 +164,8 @@
 
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「堪能いたしました」
+「堪能いたしました。[r]
+[sp]お家の重宝を取り戻すことができてよかったです」[p]
 [autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
