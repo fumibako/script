@@ -165,7 +165,7 @@
 [主人公ほほえみ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「堪能いたしました。[r]
-[sp]お家の重宝を取り戻すことができてよかったです」[p]
+[sp]お家の重宝を取り戻すことができてよかったです」
 [autosave改]
 [p]
 [if exp="sf.BGM=='ON'"]
