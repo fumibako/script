@@ -426,7 +426,7 @@
 [sp]読書というと経済紙をよく読みます。[r]
 [sp]銀行を健全に運営する為に、新しい情報を知り、[r]
 新しい制度、また廃れていく情勢など、[r]  
-詳しく分析し、お客様に提案し、[r]  
+詳しく分析しつつ、お客様に提案し、[r]  
 銀行の方針を変えていくのは私の責任です。[r]
 [glink target=*zaizen_fumi08_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
