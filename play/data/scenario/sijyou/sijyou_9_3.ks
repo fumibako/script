@@ -456,11 +456,11 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;【SE】子供たち(楽しげな笑い声)
 [playse storage=kodomotachi_warai.ogg loop=false ]
 [whosay name="親戚の子 その壱" color="#807070"]
-「エンちゃん～！[sp]どこに隠れたのー！？」[p]
+「えんちゃん～！[sp]どこに隠れたのー！？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="親戚の子 その弐" color="#807070"]
-「カンちゃん、こっちだよー！ 」[p]
+「かんちゃん、こっちだよー！ 」[p]
 ;【SE】ザッ(衣擦れ)
 [playse storage=za_kinuzure.ogg loop=false ]
 [四条驚き]
