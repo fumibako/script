@@ -1824,6 +1824,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[r][r]
 [link target=18_ex_fumi_in1 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*18_ex_fumi_in3" size=5 x=880 y=24 width=50 height=50]
 [s]
 *18_ex_fumi_in3
 [er]
