@@ -49,7 +49,6 @@
 	[ptext text="お手紙を読み進めるには" layer=27 size=18 x=595 y=385 color=slategray bold=bold]
 	[ptext text="こちらのボタンを押してください" layer=27 size=18 x=580 y=423 color=slategray bold=bold]
 [wait time=10]
-[eval exp="sf.hint_fumi = 1"]
 [endif]
 
 [glink target=*girl_fumi_2 text="→" size=10 x=800 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
@@ -93,9 +92,27 @@
 [sp]　　　　　　　　　　　　　　　　　　　 　　　[名字]　[名前]
 [glink target=*girl_fumi_2 text="←" size=10 x=80 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*girl_fumi_close" size=5 x=880 y=24 width=50 height=50]
+
+;◆システムメッセージ表示
+[layopt layer=26 visible=true]
+[layopt layer=27 visible=true]
+[wait time=10]
+;↓初見時のみ手紙の進め方ヒント表示
+[if exp="sf.hint_fumi != 1"]
+[image layer=26 x=665 y=80 storage="button/frame_fukidasi_migiue.png" height="150"]
+[wait time=10]
+	[ptext text="お手紙を閉じるには" layer=27 size=16 x=730 y=120 color=slategray bold=bold]
+	[ptext text="こちらのボタンを押してください" layer=27 size=16 x=683 y=153 color=slategray bold=bold]
+[wait time=10]
+[eval exp="sf.hint_fumi = 1"]
+[endif]
+
 [s]
 
 *girl_fumi_close
+[freeimage layer = 26]
+[freeimage layer = 27]
+[wait time=10]
 [cm]
 [clearfix]
 ﻿@clearstack
