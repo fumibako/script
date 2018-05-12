@@ -698,24 +698,34 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 ;[四条目にこ]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]
-「そうかな。[sp]そのままで充分に可愛いと思うよ」[p]
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
+;よ　だとあまりに華衣のことを忘れている感
+「そうかな。[sp]そのままで充分に可愛いと思うけど……？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
+;↓効果：頬染め [主人公頬染め]
+[chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
+[wait time=10]
 「そ、それではダメなのです」[p]
 [whosay name="四条 華織" color="olivedrab"]
-;[四条口微笑み]
-[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
 [wait time=10]
 「？」[p]
-;園遊会のイベントの繋ぎだと違和感あるでしょうか→「？　そうなんだね。 では、これからは自分なりに呼び方に気をつけてみるよ」「はい」
+;園遊会のイベントの繋ぎだと違和感あるでしょうか→「？　そうなんだね。 では、これからは自分なりに呼び方に気をつけてみるよ」
+;もうひとつ会話を入れたい　会話を花言葉にするとくどい
 #
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
-（私も、大人のお付き合いをするために ただ華織様と呼んでみたい）[p]
-（次にお会いした時に聞いてみたらいいのかしら？)[p]
+（今は、まだ勇気がでないけれど[r]
+[sp]私も、大人のお付き合いをするために ただ"華織様"と呼んでみたい）[p]
+;いま呼んだらいいじゃん、となった
+（少しづつ、淑女として、四条様の為に変わっていきたい）[p]
 ;もうひとつ会話を入れたい
 ;【退場】四条
 [四条退場]
