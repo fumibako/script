@@ -675,7 +675,7 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
-「ああ、ごめん。 [名前]ちゃんって呼んだ方がよかったかな」[p]
+「ああ、ごめん。 [名前]ちゃんって呼んだ方が良かったかな」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：強気 [主人公眉強気]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
