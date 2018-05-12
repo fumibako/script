@@ -601,7 +601,7 @@ $(".1_fore").empty();
 ;裏庭の杜若は？
 [whosay name="飛鳥紗代子"]
 「[ruby text=みな]皆の噂によると、
-[ruby text=かき]杜[ruby text=つばた]若が、[ruby text=み]見[ruby text=ごと]事らしいですわ」[p]
+[ruby text=かき]杜[ruby text=つばた]若が[ruby text=み]見[ruby text=ごと]事らしいですわ」[p]
 「でも私、さしてお花に興味がないのに[r]
 [sp]何故、行きたくなるのかしらね？　おほほ」[p]
 ;のほほん。
@@ -808,7 +808,7 @@ $(".1_fore").empty();
 [autosave]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公目閉じ
-（でも、私は、あの時……彼の人のことを考えたのかもしれない）[p]
+（でも、私は、あの時……[ruby text=あ]彼の人のことを考えたのかもしれない）[p]
 #
 *seen_next2
 ;==========================================================
