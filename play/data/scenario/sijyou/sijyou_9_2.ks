@@ -705,6 +705,9 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 [wait time=10]
 「そ、それではダメなのです」[p]
 [whosay name="四条 華織" color="olivedrab"]
+;[四条口微笑み]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
+[wait time=10]
 「？」[p]
 ;園遊会のイベントの繋ぎだと違和感あるでしょうか→「？　そうなんだね。 では、これからは自分なりに呼び方に気をつけてみるよ」「はい」
 #
