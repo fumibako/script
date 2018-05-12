@@ -73,16 +73,58 @@
 [wait time=10]
 [主人公ポーズ片手]
 「まあ、紗代子さんから？」[p]
-#
-紗代子さんは、母方の兄の奥様……つまり伯父様の奥様に[r]
-あらせられる方だ。[p]
-;紗代子さんは、お母様のお兄様の奥様……つまり伯父嫁にあらせられる方だ。[r]
-;紗代子さんは、お母様のお兄様の奥様にあたる方だ。[r]
-飛鳥伯父様と三年ほど前にご結婚され、 [r]
-その時から私を可愛いがってくださる。[p]
+;============================================
 [whosay name="磯野" color="dimgray"]
+「お嬢様の伯父君であらせられる飛鳥[ruby text=こう]公と[r]
+[sp]ご結婚なされて、三年は経つのでしょうか」[p]
+#
+[主人公目閉じ]
+紗代子さんは、お母様のお兄様の奥様……つまり義理の伯母にあたる方。[p]
+;だ。だと三人称ぽいので修正　あらせが続くので方。
+三年ほど前に飛鳥[ruby text=お]伯[ruby text=じ]父様と[r]
+ご結婚され、その時から私を可愛いがってくださる。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公目パチ1回]
+「ええ。[sp]月日とは早いものですね」[p]
+;キャラ紹介へ
+;暫定　夫婦への褒め言葉
+[whosay name="磯野" color="dimgray"]
+「[ruby text=お]御二人とも、仲の良い御夫妻でしたね」[p]
+;エンディングの予感　夫婦
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
+[主人公ポーズ片手]
+「そうですね……」[p]
+;キャラ紹介はじまり
+#
+私は、飛鳥伯父様と紗代子さんの面影を想い浮かべた。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(伯父様は思慮[ruby text=ぶか]深く、どこか影のある方でした)[p]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
+(対して、紗代子さんは明るく[ruby text=ほが]朗らかな方……)[p]
+;でした　過去形だとかなり会っていないになってしまう
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+(紗代子さんは、伯父様の再婚相手で、[r]
+[sp]色々と難しい立場とだけ、お聞きしていますけれど……)[p]
+;キャラ紹介おわり
+(紗代子さん、どうしていらっしゃるのかしら？)[p]
+[whosay name="磯野" color="dimgray"]
+;↓眉：通常 [主人公眉通常]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
+[wait time=10]
+[主人公目パチ1回]
+「何分、飛鳥家は格式高いお家柄……。[sp]ご準備に手間取られていたようで、[r]
+[sp]紗代子様からは、お手紙とともに[ruby text=ご]御連絡が遅れて申し訳ないとも[r]
+[sp][ruby text=おっしゃ]仰ってました」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「そうでしたのね。[r]
+[sp]お手紙には、どの様に書かれているのかしら……？」[p]
+[whosay name="磯野" color="dimgray"]
 「どうぞ」[p]
 
 [手紙飛鳥 fumi_number=]
@@ -160,7 +202,7 @@ f.fumi_toutyaku_asuka[0] = 1;
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「お見合いに対する[ruby text=こころ]心[ruby text=くば]配りのお手紙だわ」[p]
-
+(いつも通り……お元気な[ruby text=ご]御様子で安心しました）[p]
 [whosay name="磯野" color="dimgray"]
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
