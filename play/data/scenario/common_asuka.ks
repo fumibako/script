@@ -215,7 +215,7 @@ f.fumi_toutyaku_asuka[0] = 1;
 ;↓眉：下がり眉
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
-「そうですね。お父様達が不在の際、[r]
+「そうですね。　お父様達が不在の際、[r]
 [sp]時折、[ruby text=ウ]当[ruby text=チ]家に立ち寄って下さっては、暖かな言葉を[r]
 [sp]掛けて頂きましたわ」[p]
 ;文矢もいないときです。当家もおかしいですのでルビで中間をとります
