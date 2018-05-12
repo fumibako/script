@@ -74,7 +74,7 @@ _　まして感謝申し上げます」[p]
 
 [link target=*jump_ok]は　　　い[endlink][r]
 [r][r]
-[link target=*jump_no]い　い　え[endlink][r]
+[link target=*jump_no]い　い　え[endlink][r][r]
 [link target=*jump_ok_new]追加分へ[endlink][r]
 [resetfont]
 [s]
@@ -649,13 +649,13 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 [主人公目パチ1回]
 [chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
+*new
 [whosay name="四条 華織" color="olivedrab"]
 [四条微笑み]
 「ふふ。 ありがとう、"[名前]"。
 [四条笑顔]
 そうならないよう気をつけるよ」[p]
 ;○四条、一時的に迷いから解消される　ここで呼び捨て呼び捨てに？
-*new
 ;呼称についての説明
 #
 ;[主人公目大]
@@ -665,6 +665,9 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 ふいに四条様が、私の名前を気さくに呼ばれ、[r]
 穏やかに微笑まれた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 ;↓目：柔和な伏目 [主人公目伏柔]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
 [wait time=10]
@@ -706,6 +709,9 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 「？」[p]
 ;園遊会のイベントの繋ぎだと違和感あるでしょうか→「？　そうなんだね。 では、これからは自分なりに呼び方に気をつけてみるよ」「はい」
 #
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 （私も、大人のお付き合いをするために ただ華織様と呼んでみたい）[p]
 （次にお会いした時に聞いてみたらいいのかしら？)[p]
 ;もうひとつ会話を入れたい
@@ -719,7 +725,7 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 [eval exp="f.haikei_credit=''"]
 [主人公目閉]
 #
-美しい白萩を見ながら、私と四条様は、微笑みあった。
+私と四条様は、美しい白萩を見ながら、微笑みあった。
 [autosave改]
 [p]
 私は、ようやく四条様の隣に近づけたような、そんな気がしたのだった。[p]
