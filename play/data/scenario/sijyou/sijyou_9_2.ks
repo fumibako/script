@@ -486,7 +486,7 @@ _　ございます」[p]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（兄がそんな失礼を……）
+（お兄様が、そんな失礼を……）
 [主人公目パチ1回]
 [p]
 [主人公ポーズ通常]
@@ -503,7 +503,7 @@ _　か……？）[p]
 [主人公照れ目普通]
 [whosay name="四条 華織" color="olivedrab"]
 「僕のことは文矢のように思ってもらえばいいよ。[r]
-[sp]次はあちらを見て回ろうか」[p]
+[sp]次は、あちらを見て回ろうか」[p]
 #
 ;【退場】四条
 [四条退場]
@@ -715,11 +715,20 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 ;[四条目通常]
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
 [wait time=10]
-「？[sp]そうなんだね。[r] では、これからは自分なりに呼び方に気をつけてみるよ」[p]
+「？[sp]そうなんだね。[r] 
+;[四条目にこ]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+[sp]では、これからは自分なりに呼び方に気をつけてみるよ」[p]
 ;心情メモ
 ;四条 ヒロインと会って自分の気持ちがよくわかった。
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 #
-;もうひとつ会話を入れたい
 ;【退場】四条
 [四条退場]
 ;=================================================================================_
@@ -727,15 +736,12 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 [暗転１]
 [背景_白萩]
 [eval exp="f.haikei_credit=''"]
-;↓目：にっこり [主人公目にこ]
-[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
-[wait time=10]
 #
 私と四条様は、美しい白萩を見ながら、微笑みあった。
 [autosave改]
 [p]
-;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
-[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （白萩の花言葉は、"前向きな恋"でしたね)[p]
 （今は、まだ勇気がでないけれど[r]
