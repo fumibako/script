@@ -73,8 +73,9 @@ _　まして感謝申し上げます」[p]
 [font color=white size=32]
 
 [link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
+[r][r]
 [link target=*jump_no]い　い　え[endlink][r]
+[link target=*jump_ok_new]追加分へ[endlink][r]
 [resetfont]
 [s]
 *jump_ok
@@ -85,7 +86,15 @@ _　まして感謝申し上げます」[p]
 [cm]
 @jump target=*end_rute
 [s]
-
+*jump_ok_new
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[背景_庭園(昼)]
+[cm]
+@jump target=*new
+[s]
 *jump_no
 [current layer="message0"]
 「いいえ」[r]
@@ -642,14 +651,64 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 [wait time=10]
 [whosay name="四条 華織" color="olivedrab"]
 [四条微笑み]
-「ふふ。 ありがとう、[名前]。
+「ふふ。 ありがとう、"[名前]"。
 [四条笑顔]
 そうならないよう気をつけるよ」[p]
-;そうしない
 ;○四条、一時的に迷いから解消される　ここで呼び捨て呼び捨てに？
-;そうしないよう気をつけるよ 」[p]
+*new
+;呼称についての説明
 #
-[主人公ほほえみ]
+;[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+;暫定　おまかせします
+ふいに四条様が、私の名前を気さくに呼ばれ、[r]
+穏やかに微笑まれた。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：柔和な伏目 [主人公目伏柔]
+[chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
+[wait time=10]
+（あ……四条様、私のことを……) [p]
+[whosay name="四条 華織" color="olivedrab"]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+「ああ、ごめん。 [名前]ちゃんって呼んだ方がよかったかな」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：強気 [主人公眉強気]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
+[wait time=10]
+;[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+「いえ、その方が良いです。[r]
+;[四条眉驚き]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_odoroki.png" time=0]
+[wait time=10]
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+[sp]これから御付き合いするのに子供扱いでは困りますもの」[p]
+[whosay name="四条 華織" color="olivedrab"]
+;[四条眉通常]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_futuu.png" time=0]
+[wait time=10]
+;[四条目にこ]
+[chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
+[wait time=10]
+「そうかな。[sp]そのままで充分に可愛いと思うよ」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+「そ、それではダメなのです」[p]
+[whosay name="四条 華織" color="olivedrab"]
+「？」[p]
+;園遊会のイベントの繋ぎだと違和感あるでしょうか→「？　そうなんだね。 では、これからは自分なりに呼び方に気をつけてみるよ」「はい」
+#
+（私も、大人のお付き合いをするために ただ華織様と呼んでみたい）[p]
+（次にお会いした時に聞いてみたらいいのかしら？)[p]
+;もうひとつ会話を入れたい
 ;【退場】四条
 [四条退場]
 ;=================================================================================_
