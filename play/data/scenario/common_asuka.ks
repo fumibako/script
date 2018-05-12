@@ -82,8 +82,8 @@
 [主人公目閉じ]
 紗代子さんは、お母様のお兄様の奥様……つまり義理の伯母にあたる方。[p]
 ;だ。だと三人称ぽいので修正　あらせが続くので方。
-三年ほど前に飛鳥[ruby text=お]伯[ruby text=じ]父様と[r]
-ご結婚され、その時から私を可愛いがってくださる。[p]
+三年ほど前に飛鳥[ruby text=お]伯[ruby text=じ]父様と[ruby text=ご]御結婚され、[r]
+その時から私を可愛いがってくださる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ通常]
 [主人公目パチ1回]
@@ -91,7 +91,7 @@
 ;キャラ紹介へ
 ;暫定　夫婦への褒め言葉
 [whosay name="磯野" color="dimgray"]
-「[ruby text=お]御二人とも、仲の良い御夫妻でしたね」[p]
+「[ruby text=お]御二人とも、仲の良い[ruby text=ご]御夫妻でしたね」[p]
 ;エンディングの予感　夫婦
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
@@ -99,9 +99,9 @@
 「そうですね……」[p]
 ;キャラ紹介はじまり
 #
-私は、飛鳥伯父様と紗代子さんの面影を想い浮かべた。[p]
+私は、伯父様と紗代子さんの面影を想い浮かべた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(伯父様は思慮[ruby text=ぶか]深く、どこか影のある方でした)[p]
+(伯父様は[ruby text=し]思[ruby text=りょ]慮[ruby text=ぶか]深く、どこか影のある方でした)[p]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -110,16 +110,16 @@
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-(紗代子さんは、伯父様の再婚相手で、[r]
+（紗代子さんは、伯父様の再婚相手で、[r]
 [sp]色々と難しい立場とだけ、お聞きしていますけれど……)[p]
 ;キャラ紹介おわり
 (紗代子さん、どうしていらっしゃるのかしら？)[p]
+[主人公ポーズ通常]
 [whosay name="磯野" color="dimgray"]
 ;↓眉：通常 [主人公眉通常]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
-[主人公ポーズ通常]
 「何分、飛鳥家は格式高いお家柄。[sp]ご準備に手間取られていたようで……」[p]
 「紗代子様からは、お手紙とともに[ruby text=ご]御連絡が遅れて[r]
 [sp]申し訳ないとも[ruby text=おっしゃ]仰ってました」[p]
