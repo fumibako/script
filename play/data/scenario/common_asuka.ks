@@ -119,6 +119,7 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 [主人公目パチ1回]
+[主人公ポーズ通常]
 「何分、飛鳥家は格式高いお家柄。[sp]ご準備に手間取られていたようで……」[p]
 「紗代子様からは、お手紙とともに[ruby text=ご]御連絡が遅れて[r]
 [sp]申し訳ないとも[ruby text=おっしゃ]仰ってました」[p]
@@ -196,18 +197,18 @@ f.fumi_toutyaku_asuka[0] = 1;
 [endscript]
 [endif]
 [手紙読了]
-
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓口：ほほえみ [主人公口ほほえみ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
+[主人公ポーズ指]
 「お見合いに対する[ruby text=こころ]心[ruby text=くば]配りのお手紙だわ」[p]
 (いつも通り……お元気な[ruby text=ご]御様子で安心しました）[p]
 [whosay name="磯野" color="dimgray"]
 ;↓目：通常 [主人公目通常]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
+[主人公ポーズ通常]
 「紗代子様は、お嬢様を気に掛けていらっしゃいましたから」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉
@@ -223,9 +224,13 @@ f.fumi_toutyaku_asuka[0] = 1;
 [wait time=10]
 （飛鳥家の奥様として来て下さったとしても、[r]
 [sp]私にとって、それは嬉しい事だったわ)[p]
-
-;（飛鳥家の奥様のお立場上、来て下さったとしても、[r]
-;[sp]私にとって、それは嬉しい事だったわ)[p]
+;紹介が強くなったので何が言いたいか強調　かしら
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+（これからも、お手紙を下さるのですね……。[r]
+[sp]紗代子さんのお言葉を参考にしてみようかしら）[p]
 *seen_end
 ;スキップ地点
 [if exp="f.okeiko_gamen == true && sf.common_asuka == 1 && tf.event_skip == 1"]
