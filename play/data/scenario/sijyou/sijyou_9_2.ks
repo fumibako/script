@@ -723,9 +723,10 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 *seen7
 [暗転１]
 [背景_白萩]
-;[chara_mod name="bg" storage="bg/bg_flower_hagi.jpg" time=500]
 [eval exp="f.haikei_credit=''"]
-[主人公目閉]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
 #
 私と四条様は、美しい白萩を見ながら、微笑みあった。
 [autosave改]
