@@ -661,7 +661,7 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 [wait time=10]
 ;暫定　おまかせします
 ふいに四条様が、私の名前を気さくに呼ばれ、[r]
-穏やかに微笑まれた。[p]
+穏やかに微笑まれる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -746,6 +746,18 @@ _　これからの私は、"華織お兄さま"ではなく、四条様の傍�
 （今は、まだ勇気がでないけれど[r]
 [sp]私も、大人のお付き合いをするために ただ"華織様"と呼んでみたい）[p]
 （少しづつ、淑女として、四条様の為に変わっていきたい）[p]
+;○四条、一時的に迷いから解消される についてわかりやすく
+[whosay name="四条 華織" color="olivedrab"]
+「名前。[sp]君と会って僕は自分の気持ちに改めて気づいたよ。[r]
+[sp]僕は、どんなことがあっても……君と一緒にいたい」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓目：にっこり [主人公目にこ]
+[chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
+[wait time=10]
+「はい、私も」[p]
+;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
 （これからなら、きっとできるはずだわ）[p]
 [fadeoutbgm time=3000]
 #
