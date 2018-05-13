@@ -124,6 +124,8 @@ $(".1_fore").empty();
 ;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 「私、四条様と大人のお付き合いとして……[r]
 [sp]"華織お兄様"としてではなく、[r]
 [sp]対等なお付き合いをしたいのです！」[p]
@@ -131,6 +133,8 @@ $(".1_fore").empty();
 
 #
 しどろもどろに言葉を紡ぐ私。[r]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
+[wait time=10]
 [四条笑顔]
 ;暫定　おまかせします　テンポ的に地の文をいれたかっただけ
 そんな私を見た四条様は、何故かお顔が明るく華やいだ。[p]
@@ -155,8 +159,11 @@ $(".1_fore").empty();
 [sp]それに僕がいう呼び方に[ruby text=こだわ]拘っていたから気になっていたよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;主人公　感情　恥ずかしい
-;↓目：閉じた状態 [主人公目閉]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
 「……」[p]
 [whosay name="四条 華織" color="olivedrab"]
