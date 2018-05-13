@@ -121,7 +121,6 @@ $(".1_fore").empty();
 ;9-2シナリオ調整したので　そんなことで悩んでいた　のそんなことを具体的に
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [四条驚き]
-;↓眉：困り [主人公眉困り]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
@@ -130,19 +129,17 @@ $(".1_fore").empty();
 [sp]"華織お兄様"としてではなく、[r]
 [sp]対等なお付き合いをしたいのです！」[p]
 [主人公目パチ1回]
-
 #
 しどろもどろに言葉を紡ぐ私。[r]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
 [wait time=10]
 [四条笑顔]
 ;暫定　おまかせします　テンポ的に地の文をいれたかっただけ
-そんな私を見た四条様は、何故かお顔が明るく華やいだ。[p]
+そんな私を見た四条様は、何故かお顔を明るく輝かせた。[p]
 [whosay name="四条 華織" color="olivedrab"]
 「！[sp]再会したときから気になっていたけど、[r]
 [sp]そんなことで悩んでいたのかい？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-;↓眉：強気 [主人公眉強気]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_tuyoki.png" time=0]
 [wait time=10]
 「お付き合いをするのに……[r]
