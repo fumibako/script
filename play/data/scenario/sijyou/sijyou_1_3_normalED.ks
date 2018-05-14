@@ -280,6 +280,7 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 (寝る前に、華織様に手紙を書いておきましょう）[p]
+(いままでのこと、両親のこと、これからのこと……）[p]
 *tegami
 [autosave改]
 ;主人公手紙で補完
@@ -338,9 +339,7 @@
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 [font color=white size=27]
-
 後日。
-
 ;【背景】ヒロインの部屋
 [wait time=10]
 [背景_庭]
@@ -349,10 +348,13 @@
 [イベントシーン構築ボタン無し版]
 [freeimage layer = 29 time=500]
 [wait time=500]
+[主人公ポーズ通常]
+[主人公通常]
 ;機能ボタン表示
 [メッセージウィンドウ上ボタン表示]
 [eval exp="sf.FButton='ON'"]
 ;=================================================================================_
+
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織様がお迎えに来られました」
 [主人公目パチ1回]
@@ -367,7 +369,6 @@
 「わかったわ。すぐ参りますとお伝え下さい」
 [autosave改]
 [p]
-
 [whosay name="磯野" color="dimgray"] 
 「はい、それでは」[p]
 [主人公真剣]
