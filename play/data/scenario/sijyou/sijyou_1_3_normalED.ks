@@ -1,4 +1,5 @@
 *replay_sijyou_1_3
+@jump storage="sijyou/sijyou_1_3_b.ks" cond="tf.test_sijyou != true"
 *start
 [stopbgm]
 ;暗転プリロードサブルーチン
@@ -348,4 +349,7 @@
 [イベントシーン構築ボタン無し版]
 [freeimage layer = 29 time=500]
 [wait time=500]
+@jump storage="sijyou/sijyou_1_3_b.ks"
 
+@jump storage="test_sijyou.ks"
+[s]
