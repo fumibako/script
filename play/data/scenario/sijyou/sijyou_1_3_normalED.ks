@@ -20,6 +20,9 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=================================================================================_
+[]
+
+
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織さまがお迎えに来られました」
 [主人公目パチ1回]
@@ -154,10 +157,6 @@
 「今、思っても[名前]には失礼なことをしていたと反省している」[p]
 [主人公目パチ1回]
 [wait time=10]
-;△主人公の反応は、いる？
-;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;(いえ、その後のお手紙は沢山頂きましたので楽しかったです)[p]
-
 [fadeoutbgm time=2000]
 ;[四条目通常]
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
@@ -172,7 +171,6 @@
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「時折、みせてくれる素の可愛らしい部分も含めて」[p]
-
 [stopbgm]
 [四条真剣]
 ;焦っている感じの口を開くがないのでこのまま・・・
@@ -200,11 +198,12 @@
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「[名前]さんに先を越されてしまいましたが、改めて言わせて下さい」[p]
+「[名前]に先を越されてしまいましたが、改めて言わせて下さい」[p]
 ;○親の言われるままに婚約したので告白の言葉は送っていなかった
 [四条目閉じ]
+;ここから　さん　確定
 [whosay name="華織" color="olivedrab"]
-「愛しています。　[名前]さんと共に歩みたい」[p]
+「愛しています。　"名前]さん"と共に歩みたい」[p]
 [主人公笑顔]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -222,6 +221,22 @@
 ;[四条頬染め]
 [chara_mod name="sijyou_emo" storage="sijyou/emo_hohosome.png" time=0]
 [wait time=10]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公微笑み]
+[四条通常]
+「[名前]さん、と呼んでくださるのですね」[p]
+;距離がおかれた感覚はないので説明に困る・・・
+[whosay name="華織" color="olivedrab"]
+[四条微笑み]
+「気が付かれましたか。[sp][名前]さんは、鋭いですね」[p]
+[whosay name="華織" color="olivedrab"]
+「[華衣]ことで、[名前]さんには本当にお世話になりました」[p]
+[whosay name="華織" color="olivedrab"]
+「料亭で再会した貴女の瞳は、とても美しくて」[p]
+[whosay name="華織" color="olivedrab"]
+「僕にとって[名前]さんは、ただの恋人ではなく[r]
+[sp]"敬愛する人"になったのですよ」[p]
+
 [四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「そうだ。[r]
