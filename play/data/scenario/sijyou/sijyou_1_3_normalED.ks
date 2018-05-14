@@ -20,8 +20,27 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=================================================================================_
-[]
+;地の文がなくてシーンはじまりが唐突すぎる
+;主人公手紙で補完
+;頂いた手紙を読み返し次にだす手紙を書く
+[主人公手紙]
+[clearstack]
+[cm]
+華衣さんは、その後、いかがお過ごしでしょうか[r]
+私、気付いたのですが華衣さんの婚約者の手紙を見てから、[r]
+弟のように"華衣さん"と呼ぶようになっていました。[r]
 
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi_girl_a_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*sijyou_fumi_girl_a_close
+[cm]
+[clearfix]
+[clearstack]
+[fadeoutbgm time=3000]
+[手紙読了]
+[resetfont]
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織さまがお迎えに来られました」
