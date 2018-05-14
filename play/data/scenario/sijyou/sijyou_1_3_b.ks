@@ -173,12 +173,11 @@
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_hohoemi.png" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「[名前]に先を越されてしまいましたが、改めて言わせて下さい」[p]
+「[名前]さんに先を越されてしまいましたが、改めて言わせて下さい」[p]
 ;○親の言われるままに婚約したので告白の言葉は送っていなかった
 [四条目閉じ]
-;ここから　さん　確定
 [whosay name="華織" color="olivedrab"]
-「愛しています。　"[名前]さん"と共に歩みたい」[p]
+「愛しています。　[名前]さんと共に歩みたい」[p]
 [主人公笑顔]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
