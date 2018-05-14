@@ -173,7 +173,7 @@ jumpします。[p]
 [wait time=10]
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
-「[名前]さん……」[p]
+「[名前]……」[p]
 ;○華織 主人公を愛しく思うも懺悔
 ;○落ち着いたところで手紙をみせる
 [主人公通常]
@@ -283,8 +283,8 @@ $(".nerine").css("opacity",0.5);
 [chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「[名前]さん、」[p]
-;[名前]さん、か[名前]、焦ってるから呼び捨て？
+「[名前]、」[p]
+;呼び捨てです　この話では統一
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -636,7 +636,7 @@ $('.junbi_girl').remove();
 （辛い……けどもっと苦しいのは、僕じゃないんだ）[p]
 [whosay name="華織" color="olivedrab"]
 （前に進まないと。[r]
-[sp]僕は、[名前]さんの為にも、何ができるのだろうか……）[p]
+[sp]僕は、[名前]の為にも、何ができるのだろうか……）[p]
 ;[四条目閉じ]
 [chara_mod name="sijyou_me" storage="sijyou/me_toji.png" time=0]
 [wait time=10]
