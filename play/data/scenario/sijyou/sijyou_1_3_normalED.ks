@@ -23,7 +23,7 @@
 ;地の文がなくてシーンはじまりが唐突すぎる
 ;主人公手紙で補完
 ;頂いた手紙を読み返し次にだす手紙を書く
-[主人公手紙]
+[手紙主人公]
 [clearstack]
 [cm]
 華衣さんは、その後、いかがお過ごしでしょうか[r]
@@ -222,7 +222,7 @@
 [四条目閉じ]
 ;ここから　さん　確定
 [whosay name="華織" color="olivedrab"]
-「愛しています。　"名前]さん"と共に歩みたい」[p]
+「愛しています。　"[名前]さん"と共に歩みたい」[p]
 [主人公笑顔]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -255,7 +255,10 @@
 [whosay name="華織" color="olivedrab"]
 「僕にとって[名前]さんは、ただの恋人ではなく[r]
 [sp]"敬愛する人"になったのですよ」[p]
-
+[whosay name="華織" color="olivedrab"]
+「ぜんぜん思いつかないですか」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「いいえ、私の両親も敬愛しお互いにそう呼び合います」[p]
 [四条笑顔大]
 [whosay name="華織" color="olivedrab"]
 「そうだ。[r]
