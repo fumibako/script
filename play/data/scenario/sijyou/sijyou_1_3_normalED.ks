@@ -302,18 +302,27 @@
 [glink target=*sijyou_fumi_in_girl_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *sijyou_fumi_in_girl_2
-両親は、敬愛と親しみを持って、互いに”さん”をつけて[r]
-呼び合います。[r]
-ですけれど、私はまだ華織様のことを"華織さん"と[r]
+今日は、両親と少しだけこれからの事をお話をしました。[r]
+両親はとても仲が良く、互いに親しみと敬意をこめて、[r]
+互いに さん付けで呼び合います。[r]
+いつか私も両親のように敬愛はもちろんのこと、[r]
+親しみを持った関係になれると嬉しいです。[r]
+ですけど、まだ私は華織様のこと"華織さん"と[r]
 気軽に呼ぶのは、気が引けてしまいます。[r]
+[glink target=*sijyou_fumi_in_girl_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi_in_girl_3
+それは決して好ましくないという意味ではなく、[r]
+私にとっての貴方は、昔からの憧れの人。[r]
+だからか、どちらかと言えば尊敬の気持ちが強いのです。[r]
+それだけに再会した時の私は、[r]
+貴方と対等な関係になれたらと必死でした。[r]
+今は、華織様に少し近づけたような気がします。
 [r]
-貴方の強さに対して、尊敬の気持ちが強いのです。[r]
-それでも、いつか私もお父様とお母様のように敬愛と[r]
-親しみを持った対等な関係になれるのでしょうか。[r]
-これからの未来に希望を感じています。[r]
-私も花を添えてお手紙を送ります。[r]
+私も、これからの未来に希望を感じて[r]
+花を添えてお手紙を送ります。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　かしこ　[r]　　　　　　　　　　　　　　　　　　　　　　　　
-[sp]　　　　　　　　　　　　　　　　　　　　　　[名字]　[名前] 
+[sp]　　　　　　　　　　　　　　　　　　　　　　[名字]　[名前]
 [glink target=*sijyou_fumi_in_girl_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi_girl_a_close" size=5 x=880 y=24 width=50 height=50]
 [s]
@@ -349,7 +358,7 @@
 [イベントシーン構築ボタン無し版]
 [freeimage layer = 29 time=500]
 [wait time=500]
-@jump storage="sijyou/sijyou_1_3_b.ks"
+@jump storage="sijyou/sijyou_1_3_b.ks" target=*first
 
 @jump storage="test_sijyou.ks"
 [s]
