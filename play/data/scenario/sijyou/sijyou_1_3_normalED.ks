@@ -118,7 +118,9 @@
 「ただし、[r]
 [sp]節度あるお付き合いをすること、お見舞いの際は手順を踏む事……[r]
 [sp]それから……」[p]
-;=============話のはじまり　お正月の手紙について====
+;=============話のはじまり２　さん呼びについて====
+;どうして”さん”呼びについて理解があまりないのか分からない
+;→原因を考えた結果、両親のことについて話を書くことに
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええと……？」[p]
 [whosay name=お母様]
@@ -157,7 +159,7 @@
 [whosay name=お母様]
 「[名前]、幸せになってね。[r]
 [sp]気が向いたらでいいの。私達にも、お手紙を書いてね」[p]
-[whosay name=&sf.father_name color="DarkSlateBlue"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい！」[p]
 [whosay name=お母様]
 「[emb exp="sf.father_name"]さん、[r]
@@ -228,6 +230,7 @@
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 （書けましたわ。　……さあ、明日のために寝ましょう）[p]
 ;=================================================================================_
+#
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
@@ -246,6 +249,7 @@
 [背景_庭]
 [p]
 [resetfont]
+[イベントシーン構築ボタン無し版]
 [freeimage layer = 29 time=500]
 [wait time=500]
 ;機能ボタン表示
@@ -318,8 +322,6 @@
 「な、何ですか？」[p]
 [whosay name="磯野" color="dimgray"]
 「もう、そのようなことを気になさる[ruby text=あいだ]間[ruby text=がら]柄ではございませんでしょう？」[p]
-;原文：「もう、そのようなことを気になさる[ruby text=あいだ]関[ruby text=がら]柄ではないのでしょう？」[p]
-;日本語がおかしいような、あと読みにくい保留 rubyで補強
 [主人公照れ]
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「……」[p]
