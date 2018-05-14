@@ -53,7 +53,7 @@
 「年末に華織君と会ってね。　色々話をした。[r]
 [sp][名前]のことを大事にしてくれる青年だとよくわかった」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「お互いに支え合える仲だとも、[名前]をみて感じ取れる」
+「お互いに支え合える仲だとも、[名前]をみて感じ取れる」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「華織君なら[名前]を任せられるかもしれないと思ってな」[p]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
@@ -74,7 +74,7 @@
 「もう一緒になるのだから好きにしなさい。[r]
 [sp]ただし、節度あるお付き合いをすること、お見舞いの際は手順を踏む事……それから」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「ええと……？」
+「ええと……？」[p]
 [whosay name=お母様]
 「[emb exp="sf.father_name"]さん？」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -83,12 +83,12 @@
 [whosay name=お母様]
 「[名前]を困らせていないですか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「お母様……」
+「お母様……」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「違いますよ。　僕は[名前]のことを心配しているだけです」[p]
 [whosay name=お母様]
 「[emb exp="sf.father_name"]さんのことは尊敬していますが、[r]
-[sp]可愛い[名前]のことなると熱くなってしまわないか心配です」
+[sp]可愛い[名前]のことなると熱くなってしまわないか心配です」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「大丈夫です。　僕はきちんと弁えていますよ。[r]
 [sp]少し寂しくなりますが……」[p]
