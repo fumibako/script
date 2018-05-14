@@ -123,7 +123,7 @@
 [wait time=10]
 「ああ。 手紙にも書いたそうだが、[r]
 [sp]華織君が[名前]と会いたいとのことだ」[p]
-「[名前]。　明日、華織君と会ってきなさい」[p]
+「[名前]。　明後日、華織君と会ってきなさい」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （たしかに、華織様からのお正月の手紙には、[r]
 [sp]"会ってお話がしたい"、と書かれていましたね）[p]
@@ -153,7 +153,7 @@
 「父として最後の助言だ。[r]
 [sp]結納後は、色々と忙しくなる」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
-「今のうちに、お互いのこと今までのこと、これからの事を[r]
+「今のうちに、お互いの今までのこと、これからの事を[r]
 [sp]ゆっくりと話をしてみたらどうだろうか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとうございます。[r]
@@ -172,6 +172,8 @@
 ;→原因を考えた結果、両親のことについて話を書くことに
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええと……？」[p]
+;【SE】襖を開ける（ゆっくり）
+[playse storage=fusuma-open.ogg loop=false ]
 [whosay name=お母様]
 「[emb exp="sf.father_name"]さん？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -219,9 +221,20 @@
 [wait time=10]
 「……」[p]
 [whosay name=お母様]
+「うまくいかなくて辛いとき、すれ違ってしまいそうになったとき……[r]
+[sp]お互いにお手紙で励まし合ったの」[p]
+[whosay name=お母様]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
-「だから、どんな時も乗り越えられるの」[p]
+「だから、どんな時も乗り越えられるわ」[p]
+[whosay name=&sf.girl_namae color="mediumvioletred"]
+[chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
+[wait time=10]
+「お母様……」[p]
+[whosay name=お母様]
+[主人公目パチ1回]
+「私の話ばかりして、ごめんなさい。[r]
+[sp]いろいろ思い出してしまったの」[p]
 [whosay name=お母様]
 「[名前]、幸せになってね。[r]
 [sp]気が向いたらでいいの。[sp]私達にも、お手紙を書いてね」[p]
@@ -416,8 +429,13 @@
 [layopt layer=fix visible=true]
 ;==========表示準備完了=============
 ;シーン追加
-
-;=================================================================================_
+[whosay name="華織" color="olivedrab"]
+「今日は来てくれて、ありがとうございます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「こちらこそ、お誘いありがとうございます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（お話って何かしら？)[p]
+=================================================================================_
 [whosay name="華織" color="olivedrab"]
 「お[ruby text=と]義[ruby text=う]父様には、許可をもらって来られましたか？」
 [autosave改]
@@ -431,8 +449,10 @@
 ;=================================================================================_
 
 
+
 ;シーン追加
 ;=================================================================================_
+
 ;○華織、しみじみと振り返るか笑顔で
 [whosay name="華織" color="olivedrab"]
 「そうだね……[名前]と出逢えてよかったと思う」[p]
