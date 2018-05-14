@@ -18,14 +18,63 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=================================================================================_
-;地の文がなくてシーンはじまりが唐突すぎる　前日にする　両親をだす
+[if exp="tf.test_gamen == true"]
+テストページからプレイしています。手紙まで移動しますか？[r]
+;---------------------------
+;選択肢用レイヤーを追加
+[position layer=message1 height=200 top=100 left=380 opacity=0]
+@layopt layer=message1 visible=true
+[current layer="message1"]
+[font color=white size=32]
+
+[link target=*jump_ok1]は　　　い[endlink][r]
+[r][r][r]
+[link target=*jump_no1]い　い　え[endlink][r]
+[resetfont]
+[s]
+
+*jump_ok1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen4
+[s]
+
+*jump_no1
+[current layer="message0"]
+「いいえ」[r]
+そのまま続きの場面に移動します。[p]
+[cm]
+[endif]
+;=================================================================================_
+;地の文がなくてシーンはじまりが唐突すぎる
 ;状況整理・主人公は父と四条が何を話したか知らない。お出かけすることを許している
 *zenjitu
 #
-冬のなかば。　[p]
+冬の寒さが厳しくなる頃。[r]　
+私は、今まで華織様から頂いた手紙を眺めていた。[p]
+;火鉢にあたる主人公
+;============事件解決後に手紙の雰囲気が変化するので突っ込みをいれる=====================
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織様のお手紙の雰囲気が変わったみたい）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
+（この頃は[名前]さん、と呼んでくださるのですね……）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公困り照れ]
+（秋のお見合いで再会した時は、[r]
+[sp]子供の時のように[名前]ちゃん、と呼ばれていましたが……）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
+（今の華織様は、私の事を大人の女性として[r]
+[sp]認めてくださっていることなのでしょうか）[p]
+#
+私と華織様の間に、少しの緊張感と敬意を感じた。[p]
 ;===================プロローグ回帰====
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（今日のお手紙の話題は何にいたしましょうか？[r]
+（さて、今日のお手紙の話題は何にいたしましょうか？[r]
 [sp]将来について……
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -266,38 +315,6 @@
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
-[if exp="tf.test_gamen == true"]
-テストページからプレイしています。手紙まで移動しますか？[r]
-;---------------------------
-;選択肢用レイヤーを追加
-[position layer=message1 height=200 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font color=white size=32]
-
-[link target=*jump_ok1]は　　　い[endlink][r]
-[r][r][r]
-[link target=*jump_no1]い　い　え[endlink][r]
-[resetfont]
-[s]
-
-*jump_ok1
-[current layer="message0"]
-[resetfont]
-「はい」[r]
-移動します。[p]
-[cm]
-@jump target=*seen4
-[s]
-
-*jump_no1
-[current layer="message0"]
-「いいえ」[r]
-そのまま続きの場面に移動します。[p]
-[cm]
-[endif]
-
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
 「わかったわ。すぐ参りますとお伝え下さい」
 [autosave改]
@@ -462,21 +479,6 @@
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [四条通常]
-「[名前]さん、と呼んでくださるのですね」[p]
-;距離がおかれた感覚はないので説明に困る・・・
-[whosay name="華織" color="olivedrab"]
-[四条微笑み]
-「気が付かれましたか。[sp][名前]さんは、鋭いですね」[p]
-[whosay name="華織" color="olivedrab"]
-「料亭で再会した貴女の瞳は、とても美しくて」[p]
-[whosay name="華織" color="olivedrab"]
-「僕にとって[名前]さんは、ただの恋人ではなく[r]
-[sp]"敬愛する人"になったのですよ」[p]
-[whosay name="華織" color="olivedrab"]
-「駄目でしたか……」[p]
-[whosay name=&sf.girl_namae color="#cf5a7f"]
-「いいえ、[r]
-[sp]私の両親も、親しみと敬愛を持ってお互いにそう呼び合います」[p]
 =================================================================================_
 
 
