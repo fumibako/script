@@ -8,10 +8,8 @@
 ;=================================================================================_
 *first
 *seen1
-;【背景】ヒロインの部屋
 [freeimage layer = 1]
-[wait time=10]
-[背景_庭]
+[背景_庭_夜]
 [イベントシーン構築ボタン無し版]
 [主人公ポーズ通常]
 [wait time=10]
@@ -20,13 +18,49 @@
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
 ;=================================================================================_
-;地の文がなくてシーンはじまりが唐突すぎる
+;地の文がなくてシーンはじまりが唐突すぎる　前日にする　両親をだす
+;状況整理・主人公は父と四条が何を話したか知らない。お出かけすることを許している
+*zenjitu
 #
-冬のなかば。[p]
+冬のなかば。　（父と母がきて話し合う）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
-(今日は、華織様と約束した日だわ)[p]
+（今日の話題は何にいたしましょうか？[r]
+[sp]仕事について……いえ、もっと大事なお話を書きたいわ）[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「[名前]？」[p]
+[whosay name=&sf.girl_namae color="mediumvioletred"]
+「……は、はい！！」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「少し話したいことがあるのだが、入ってもいいかな？」[p]
+[whosay name=&sf.girl_namae color="mediumvioletred"]
+「お父様……！　はい、大丈夫です」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「[名前]のその表情、まるでお見合いの話を持ってきた時のようだな」[p]
+[whosay name=&sf.girl_namae color="mediumvioletred"]
+「お父様……」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「話とは、[r]
+[sp]先ほど、四条家から使いの者がきてな、」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
-(華織様に手紙を書いて渡しましょう）[p]
+「そうなのですか？」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「明日、華織君と会ってきなさい」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+「お出かけもしたいのですが、良いでしょうか」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「もう一緒になるのだから好きにしなさい。[r]
+[sp]ただし、節度あるお付き合いをすること」[p]
+[whosay name=お母様 color="&mp.color"]
+;[whosay name=&sf.mather_name color="&mp.color"]
+「[emb exr="sf.girl_namae"]さん？」[p]
+[whosay name=&sf.father_name color="DarkSlateBlue"]
+「それでは華織君によろしくと伝えてくれ」[p]
+[whosay name=&sf.girl_namae color="mediumvioletred"]
+「……はい！」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"] 
+(私も、華織様に手紙を書いて渡しましょう）[p]
+*tegami
+[autosave改]
 ;主人公手紙で補完
 [手紙主人公]
 [clearstack]
@@ -68,7 +102,10 @@
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-
+;=================================================================================_
+;【背景】ヒロインの部屋
+[wait time=10]
+[背景_庭]
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織さまがお迎えに来られました」
 [主人公目パチ1回]
@@ -274,7 +311,7 @@
 [whosay name="華織" color="olivedrab"]
 [四条微笑み]
 「気が付かれましたか。[sp][名前]さんは、鋭いですね」[p]
-whosay name="華織" color="olivedrab"]
+[whosay name="華織" color="olivedrab"]
 「料亭で再会した貴女の瞳は、とても美しくて」[p]
 [whosay name="華織" color="olivedrab"]
 「僕にとって[名前]さんは、ただの恋人ではなく[r]
