@@ -173,9 +173,30 @@
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 （書けましたわ。　……さあ、明日のために寝ましょう）[p]
 ;=================================================================================_
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[layopt layer=29 visible=true]
+;背景変更:黒茶・和紙風
+[image layer=29 x=0 y=0 storage="bg/bg_prologue.jpg" time=500]
+[wait time=10]
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[font color=white size=27]
+
+後日。
+
 ;【背景】ヒロインの部屋
 [wait time=10]
 [背景_庭]
+[p]
+[resetfont]
+[freeimage layer = 29 time=500]
+[wait time=500]
+;機能ボタン表示
+[メッセージウィンドウ上ボタン表示]
+[eval exp="sf.FButton='ON'"]
+;=================================================================================_
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織様がお迎えに来られました」
 [主人公目パチ1回]
