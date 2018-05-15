@@ -182,7 +182,7 @@ $('.junbi_girl').remove();
 [主人公通常]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「少し、休まれませんか？ [華衣]さんからのお手紙も来たので」[p]
+「少し、休まれませんか？ [華衣]様からのお手紙も来たので」[p]
 [主人公目パチ1回]
 [wait time=10]
 ;【SE】湯のみを置く（コトリ）
@@ -205,7 +205,7 @@ $('.junbi_girl').remove();
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「手紙によりますと……[r]
-[sp][華衣]さんは結納式の後に出会った方と四条家の鉱山[r]
+[sp][華衣]様は結納式の後に出会った方と四条家の鉱山[r]
 [sp]事業を生かした、発電事業をはじめ……」[p]
 [if exp="f.skip == false"]
 [主人公目パチ1回]

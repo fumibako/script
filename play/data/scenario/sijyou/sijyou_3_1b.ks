@@ -545,14 +545,14 @@
 [whosay name="華織" color="olivedrab"]
 「ほら、[華衣]も挨拶して」[p]
 #
-華織様の横で、挨拶を始めたのは、[華衣]さんだった。[p]
+華織様の横で、挨拶を始めたのは、[華衣]様だった。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
-（[華衣]さん……）[p]
+（[華衣]様……）[p]
 #
-[華衣]さんは、慣れない場と、ばつの悪さで顔を下げているといった[r]
+[華衣]様は、慣れない場と、ばつの悪さで顔を下げているといった[r]
 様子であった。[p]
 [whosay name="四条 華衣" color=%mp.color]
 「こんにちは、また会ったな……」[p]
@@ -571,7 +571,7 @@
 ;=================================================================================_
 *seen4
 #
-華衣さんは、頷くように顔を下げると、兄に向き直し、驚くほど丁寧に[r]
+[華衣]様は、頷くように顔を下げると、兄に向き直し、驚くほど丁寧に[r]
 挨拶を交わす。
 [autosave改]
 [p]
@@ -608,7 +608,7 @@
 [主人公ポーズ通常]
 [主人公目通常]
 #
-[華衣]さんと、距離をとっていた少女が華織様の隣に現れた。[p]
+[華衣]様と、距離をとっていた少女が華織様の隣に現れた。[p]
 ;まつまい・ばつまい　日常会話だと　すえのいもうと　らしい
 [whosay name="四条 美華" color=%mp.color]
 「こ、こんにちは……[ruby text=すえの]末[ruby text=いもうと]妹の[ruby text=み]美[ruby text=はな]華と申します」[p]
@@ -683,7 +683,7 @@
 「は、はい。[名前]様、私、今年で[ruby text=じゅう]十[ruby text=よん]四となります！[r]
 [sp]それで、[名前]様に常々、お聞きしたいことがありました」[p]
 #
-[ruby text=み]美[ruby text=はな]華さんは、私と向き直すと、しっかりした口調で尋ねた。[p]
+[ruby text=み]美[ruby text=はな]華様は、私と向き直すと、しっかりした口調で尋ねた。[p]
 ;楽しいシーンから戸惑いへ　BGM難しい　美華の重責感的に五色かな
 [fadeoutbgm time=3000]
 [whosay name="四条 美華" color=%mp.color]
@@ -738,7 +738,7 @@
 [主人公横目]
 [主人公ポーズ指]
 #
-私は、[ruby text=み]美[ruby text=はな]華さんの急な質問に戸惑いを隠せなかった。[p]
+私は、[ruby text=み]美[ruby text=はな]華様の急な質問に戸惑いを隠せなかった。[p]
 [主人公通常]
 [主人公ポーズ通常]
 ;↓効果：無し(通常) [主人公効果消]
@@ -827,7 +827,7 @@
 ;止めるべきだと思うが悩ましいところ
 [主人公目通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（[ruby text=み]美[ruby text=はな]華さんも、昔の私に似ているかもしれない。[r]
+（[ruby text=み]美[ruby text=はな]華様も、昔の私に似ているかもしれない。[r]
 [sp]お兄様しか知らなかった頃の私に）[p]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -856,11 +856,11 @@
 [主人公通常]
 [四条眉通常]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「これからの[ruby text=み]美[ruby text=はな]華さんの姉として送ります」[p]
+「これからの[ruby text=み]美[ruby text=はな]華様の姉として送ります」[p]
 [主人公口ほほえみ]
 ;言祝ぎを送るじゃおかしいからこんなんでいいか
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「[ruby text=み]美[ruby text=はな]華さんにも、それに[華衣]さんにもくるかもしれません。 [r]
+「[ruby text=み]美[ruby text=はな]華様にも、それに[華衣]様にもくるかもしれません。 [r]
 [sp]それぞれのお二人の事を一番大切にしてくれて」[p]
 [四条口微笑み]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -973,7 +973,7 @@
 [wait time=10]
 [主人公口ムッ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（もしかして、[華衣]さんのことで、ご兄弟方は離れていたのでしょうか？）[p]
+（もしかして、[華衣]様のことで、ご兄弟方は離れていたのでしょうか？）[p]
 ;[四条目にこ]
 [chara_mod name="sijyou_me" storage="sijyou/me_niko.png" time=0]
 [wait time=10]

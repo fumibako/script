@@ -61,6 +61,8 @@ $(".29_fore").empty();
 [whosay name=四条親戚]
 「突然、話し掛けて申し訳ございません。[r]
 [sp]私は四条家の親戚にあたる四条[ruby text=ゆき]幸[ruby text=よ]代という[ruby text=もの]者です」
+;名前フラグ エンデイングノーマルで使用
+[eval exp="f.event_yukiyo = 1"]
 [autosave改]
 [p]
 ;------------------------------------------------
@@ -174,7 +176,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [主人公ポーズ指]
-(もしかして、幸代様は[華衣]さんのことが気になっているのかしら？[r]
+(もしかして、幸代様は[華衣]様のことが気になっているのかしら？[r]
 ;少し間をおいて
 [wait time=1000]
 ;↓眉：困り [主人公眉困り]
@@ -234,7 +236,7 @@ $(".29_fore").empty();
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 （でも、[r]
-[sp]もし、幸代様が[華衣]さんを気に掛けて下さって[r]
+[sp]もし、幸代様が[華衣]様を気に掛けて下さって[r]
 [sp]いらっしゃるのでしたら……)[p]
 #
 ;↓目：伏目 [主人公目伏]
@@ -603,7 +605,7 @@ $(".29_fore").empty();
 「幸代様は、華織様の叔母様の御息女なのですね」[p]
 [whosay name="華織" color="olivedrab"]
 「そうですね。[sp]行事があると[ruby text=ウチ]家に来ては、[r]
-[sp]小さな弟さん達と一緒に華衣と話をしてくれますし良い方だと思います」[p]
+[sp]小さな弟さん達と一緒に[華衣]と話をしてくれますし良い方だと思います」[p]
 [whosay name="華織" color="olivedrab"]
 「[華衣]について、何か言っていましたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -753,7 +755,7 @@ $(".29_fore").empty();
 話さないことにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （やめておきましょう。[r]
-[sp]もし何か違った形で[華衣]さんに伝わってしまったら[r]
+[sp]もし何か違った形で[華衣]様に伝わってしまったら[r]
 [sp]幸代様にも悪いわ。[sp]今はデェトを楽しみましょう)[p]
 ;共通
 [whosay name="華織" color="olivedrab"]
