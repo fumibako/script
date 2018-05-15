@@ -134,7 +134,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公口通常]
 [主人公目閉じ]
-（うまく弾けないから、きっと呆れていらしゃるわ）[p]
+（うまく弾けないから、きっと呆れていらっしゃるわ）[p]
 
 [fadeoutbgm time=3000]
 
