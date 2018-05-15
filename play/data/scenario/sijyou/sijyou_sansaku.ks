@@ -53,6 +53,9 @@
 (行ってしまわれました)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (なんだったのでしょうか……)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(でも、後ろ姿が昔の華織お兄様に似てたような……[r]
+[sp]いえ、きっと気のせいですね)[p]
 [eval exp="sf.event_sijyou_sansaku = 1"]
 [イベントシーン終了]
 
