@@ -88,7 +88,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 ;↓縦書きハガキ対応のため、いくつか変更させていただきました。原案はこちらになります(スクリプト担
 ;本年もよろしくお願いいたします[p]
 ;ー追伸ー[r]
-先日、[名前]のお父様とお会いしました。[r]
+先日、[名前]さんのお父様とお会いしました。[r]
 つきましては、[名前]さんと直接会ってお話しをしたいと[r]
 考えております。[r]
 [r]
@@ -114,6 +114,21 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
+;============事件解決後に手紙の雰囲気が変化するので突っ込みをいれる=====================
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（華織様のお手紙の雰囲気が変わったみたい）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
+（この頃は[名前]さん、と呼んでくださるのですね……）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公困り照れ]
+（秋のお見合いで再会した時は、[r]
+[sp]子供の時のように[名前]ちゃん、と呼ばれていましたが……）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ほほえみ]
+（今の華織様は、私の事を大人の女性として[r]
+[sp]認めてくださっていることなのでしょうか）[p]
+
 #
 [wait time=10]
 澄んだ空気の空にまばゆい日が昇る。
@@ -121,6 +136,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [p]
 [主人公ほほえみ]
 [wait time=10]
+#
 私は筆を取ると、今までの事を噛みしめながら[r]
 新しい門出について文をしたためた。[p]
 [wait time=100]
