@@ -177,7 +177,12 @@ $('.loding_pic1').remove();
 [eval exp="f.okeiko_month = 7"]
 [eval exp="f.okeiko_week = 1"]
 [freeimage layer = 26]
+[glink text="葛城宮オンリーの場合"  target="go_star" exp="f.katuraginomiya_only=1,f.katuraginomiya_fumi_start=1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 graphic="select_waku_x500.png" font_color=bl
+[glink text="葛城宮手紙許可の場合" target="go_star" exp="f.katuraginomiya_fumi_start=1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=bl
+[glink text="その他(藤枝も含まず)の場合" target="go_star" exp="f.katuraginomiya_only=0,f.katuraginomiya_fumi_start=0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 graphic="select_waku_x500.png" font_color=bl
+[s]
 ;問題なし
+*go_star
 @jump storage="sijyou/sijyou_7_1.ks"
 [s]
 
