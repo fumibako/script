@@ -215,7 +215,7 @@
 [eval exp="f.para_shujinkou_j_koto=f.para_shujinkou_j_koto + 1"]
 ;[eval exp="f.sansaku_machi_seika_txt='箏が１上がりました'"]
 ;[eval exp="f.event_cmn_seika_txt='『鳥君』への気持ちが１高まりました'"]
-[eval exp="f.event_cmn_seika_txt='箏が１上がりました''"]
+[eval exp="f.event_cmn_seika_txt='箏が１上がりました'"]
 ;スキップフラグ
 [eval exp="tf.not_wish = 0"]
 [wait time=10]
