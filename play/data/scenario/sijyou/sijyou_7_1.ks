@@ -118,6 +118,8 @@
 [endif]
 #
 私は星に願った。[p]
+;[eval exp="f.sansaku_machi_seika_txt='『華織お兄様』への気持ちが１高まりました'"]
+[eval exp="f.event_cmn_seika_txt='『華織お兄様』への気持ちが１高まりました'"]
 @jump target=*end_Q
 
 ;==============================================================================================================
@@ -144,6 +146,8 @@
 [endif]
 #
 私は星に願った。[p]
+;[eval exp="f.sansaku_machi_seika_txt='『財前様』への気持ちが１高まりました'"]
+[eval exp="f.event_cmn_seika_txt='『財前様』への気持ちが１高まりました'"]
 @jump target=*end_Q
 ;==============================================================================================================
 *kuroda
@@ -167,7 +171,8 @@
 [endif]
 #
 私は星に願った。[p]
-
+;[eval exp="f.sansaku_machi_seika_txt='『黒田様』への気持ちが１高まりました'"]
+[eval exp="f.event_cmn_seika_txt='『黒田様』への気持ちが１高まりました'"]
 @jump target=*end_Q
 ;==============================================================================================================
 *okeiko
@@ -194,6 +199,9 @@
 [playse storage=kira.ogg loop=false ]
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 5"]
 [eval exp="f.para_shujinkou_j_koto=f.para_shujinkou_j_koto + 1"]
+;[eval exp="f.sansaku_machi_seika_txt='箏が１上がりました'"]
+;[eval exp="f.event_cmn_seika_txt='『鳥君』への気持ちが１高まりました'"]
+[eval exp="f.event_cmn_seika_txt='箏が１上がりました''"]
 [else]
 （今、気になっているお稽古が上達しますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
@@ -202,18 +210,20 @@
 tf.rand = Math.floor( Math.random() * 4) + 1
 if(tf.rand == 0){
 f.para_shujinkou_j_sadou = f.para_shujinkou_j_sadou + 1;
+f.event_cmn_seika_txt = "茶道が１上がりました";
 }else if (tf.rand == 1) {
 f.para_shujinkou_j_kadou =  f.para_shujinkou_j_kadou + 1;
+f.event_cmn_seika_txt = "華道が１上がりました";
 }else if (tf.rand == 2) {
 f.para_shujinkou_j_reihou = f.para_shujinkou_j_reihou + 1;
+f.event_cmn_seika_txt = "礼法が１上がりました";
 }else{
 f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
+f.event_cmn_seika_txt = "語学が１上がりました";
 }
 [endscript]
 
 [endif]
-
-#
 私は星に願った。[p]
 @jump target=*end_Q
 ;==============================================================================================================
@@ -244,6 +254,8 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [playse storage=kira.ogg loop=false ]
 #
 私は星に願った。[p]
+;[eval exp="f.sansaku_machi_seika_txt='淑女度が１上がりました'"]
+[eval exp="f.event_cmn_seika_txt='淑女度が１上がりました'"]
 @jump target=*end_Q
 
 ;==============================================================================================================
@@ -282,7 +294,8 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
 #
 私は星に願った。[p]
-
+;[eval exp="f.sansaku_machi_seika_txt='『殿下』への気持ちが１高まりました'"]
+[eval exp="f.event_cmn_seika_txt='『殿下』への気持ちが１高まりました'"]
 @jump target=*end_Q
 ;==============================================================================================================
 *end_Q
@@ -290,6 +303,15 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 [anim name="star" left=-300 top=600 opacity=0]
 [er]
 #
+[layopt layer=26 visible=true]
+[wait time=10]
+[image layer=26 x=250 y=40 storage="button/frame_lesson_message.png"]
+[wait time=10]
+;[ptext text=&f.sansaku_machi_seika_txt layer=26 size=21 x=310 y=85 color=darkslateblue bold=bold]
+[ptext text=&f.event_cmn_seika_txt layer=26 size=21 x=310 y=85 color=darkslateblue bold=bold]
+[p]
+[freeimage layer = 26]
+[wait time=10]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
