@@ -120,6 +120,9 @@
 私は星に願った。[p]
 ;[eval exp="f.sansaku_machi_seika_txt='『華織お兄様』への気持ちが１高まりました'"]
 [eval exp="f.event_cmn_seika_txt='『華織お兄様』への気持ちが１高まりました'"]
+;スキップフラグ
+[eval exp="tf.not_wish = 0"]
+[wait time=10]
 @jump target=*end_Q
 
 ;==============================================================================================================
@@ -148,6 +151,9 @@
 私は星に願った。[p]
 ;[eval exp="f.sansaku_machi_seika_txt='『財前様』への気持ちが１高まりました'"]
 [eval exp="f.event_cmn_seika_txt='『財前様』への気持ちが１高まりました'"]
+;スキップフラグ
+[eval exp="tf.not_wish = 0"]
+[wait time=10]
 @jump target=*end_Q
 ;==============================================================================================================
 *kuroda
@@ -173,6 +179,9 @@
 私は星に願った。[p]
 ;[eval exp="f.sansaku_machi_seika_txt='『黒田様』への気持ちが１高まりました'"]
 [eval exp="f.event_cmn_seika_txt='『黒田様』への気持ちが１高まりました'"]
+;スキップフラグ
+[eval exp="tf.not_wish = 0"]
+[wait time=10]
 @jump target=*end_Q
 ;==============================================================================================================
 *okeiko
@@ -202,6 +211,9 @@
 ;[eval exp="f.sansaku_machi_seika_txt='箏が１上がりました'"]
 ;[eval exp="f.event_cmn_seika_txt='『鳥君』への気持ちが１高まりました'"]
 [eval exp="f.event_cmn_seika_txt='箏が１上がりました''"]
+;スキップフラグ
+[eval exp="tf.not_wish = 0"]
+[wait time=10]
 [else]
 （今、気になっているお稽古が上達しますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
@@ -222,8 +234,10 @@ f.para_shujinkou_j_gogaku = f.para_shujinkou_j_gogaku + 1;
 f.event_cmn_seika_txt = "語学が１上がりました";
 }
 [endscript]
-
 [endif]
+;スキップフラグ
+[eval exp="tf.not_wish = 0"]
+[wait time=10]
 私は星に願った。[p]
 @jump target=*end_Q
 ;==============================================================================================================
@@ -256,6 +270,9 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 私は星に願った。[p]
 ;[eval exp="f.sansaku_machi_seika_txt='淑女度が１上がりました'"]
 [eval exp="f.event_cmn_seika_txt='淑女度が１上がりました'"]
+;スキップフラグ
+[eval exp="tf.not_wish = 0"]
+[wait time=10]
 @jump target=*end_Q
 
 ;==============================================================================================================
@@ -298,6 +315,9 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
 [playse storage=kira.ogg loop=false ]
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
+;スキップフラグ
+[eval exp="tf.not_wish = 0"]
+[wait time=10]
 #
 私は星に願った。[p]
 ;[eval exp="f.sansaku_machi_seika_txt='『殿下』への気持ちが１高まりました'"]
