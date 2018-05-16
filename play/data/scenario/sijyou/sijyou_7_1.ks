@@ -309,7 +309,10 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 [anim name="star" left=-300 top=600 opacity=0]
 [er]
 #
-@jump target=*not_wish cond="tf.not_wish == 1"
+[if exp="tf.not_wish == 1"]
+@jump target=*not_wish 
+[endif]
+
 [layopt layer=26 visible=true]
 [wait time=10]
 [image layer=26 x=250 y=40 storage="button/frame_lesson_message.png"]
