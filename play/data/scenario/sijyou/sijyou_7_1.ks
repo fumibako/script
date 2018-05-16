@@ -274,6 +274,12 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 見逃してしまった。[p]
 [主人公通常]
 （自分の力で頑張りましょうか）[p]
+;skip 念のためのエラー回避
+;[eval exp="f.sansaku_machi_seika_txt=''"]
+[eval exp="f.event_cmn_seika_txt=''"]
+;スキップフラグ
+[eval exp="tf.not_wish = 1"]
+[wait time=10]
 #
 私は星を眺めた。[p]
 @jump target=*end_Q
@@ -303,6 +309,7 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 [anim name="star" left=-300 top=600 opacity=0]
 [er]
 #
+@jump target=*not_wish cond="tf.not_wish == 1"
 [layopt layer=26 visible=true]
 [wait time=10]
 [image layer=26 x=250 y=40 storage="button/frame_lesson_message.png"]
@@ -312,6 +319,7 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 [p]
 [freeimage layer = 26]
 [wait time=10]
+*not_wish
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
