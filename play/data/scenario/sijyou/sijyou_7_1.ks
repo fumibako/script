@@ -81,7 +81,7 @@
 [wait time=10]
 ;【分岐】
 [if exp="f.katuraginomiya_only == 1 "]
-[glink target=*katuragi text="葛城宮　晴仁 殿下" size=20 width="200" x=200 y=20 graphic="select_waku_x500.png" font_color=black]
+[glink target=*katuragi text="葛城宮　晴仁 殿下" size=20 width="200" x=450 y=20 graphic="select_waku_x500.png" font_color=black]
 [elsif exp=" f.katuraginomiya_fumi_start == 1 && f.katuraginomiya_only != 1"]
 [glink target=*katuragi text="葛城宮　晴仁 殿下" size=20 width="200" x=200 y=20 graphic="select_waku_x500.png" font_color=black]
 [glink target=*sijyou text="四条 華織 様" size=20 width="200" x=200 y=20 graphic="select_waku_x500.png" font_color=black]
