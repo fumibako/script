@@ -187,7 +187,9 @@ $('.junbi_girl').remove();
 $('.oto').remove();
 [endscript]
 ;【背景】暗転　想像の中、多くのスタンディングオベーション的なもの
-[bg wait=true storage="toumei.gif" time=1300]
+[bg storage="../fgimage/bg/anten.jpg" time=1300 wait=true]
+[eval exp="f.haikei_credit=''"]
+;[bg wait=true storage="toumei.gif" time=1300]
 [wait time=10]
 ;==============================================================================
 ;[SE拍手]長めがいいかもしれない
