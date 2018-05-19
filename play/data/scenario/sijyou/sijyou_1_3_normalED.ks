@@ -50,6 +50,7 @@
 [cm]
 [endif]
 ;=================================================================================_
+*seen_new1
 #
 冬の寒さが厳しくなる頃。[r]　
 私は、今まで華織様から頂いた手紙を眺めていた。[p]
@@ -61,7 +62,9 @@
 [wait time=10]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-いえ、もっと大事なお話を書きたいわ）[p]
+いえ、もっと大事なお話を書きたいわ）
+[autosave改]
+[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]？」[p]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
@@ -122,8 +125,11 @@
 「もう一緒になるのだから好きにしなさい」[p]
 「ただし、[r]
 [sp]節度あるお付き合いをすること、ご訪問の際は手順を踏む事……[r]
-[sp]それから……」[p]
+[sp]それから……」
+[autosave改]
+[p]
 ;=============話のはじまり２　さん呼びについて===
+*seen_haha
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええと……？」[p]
 ;【SE】襖を開ける（ゆっくり）
@@ -231,10 +237,13 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 「おやすみ、[名前]」[p]
+*seen_naight
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_warau_s.png" time=0]
 [wait time=10]
-「お母様、お父様、お休みなさいませ」[p]
+「お母様、お父様、お休みなさいませ」
+[autosave改]
+[p]
 [背景_庭_夜]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [chara_mod name="girl_me" storage="girl/S/me_fusi.png" time=0]
@@ -317,7 +326,7 @@
 [イベントシーン構築ボタン無し版]
 [freeimage layer = 29 time=500]
 [wait time=500]
-@jump storage="sijyou/sijyou_1_3_b.ks" target=*first
+@jump storage="sijyou/sijyou_1_3_b.ks" target=*seen1_1
 
 @jump storage="test_sijyou.ks"
 [s]
