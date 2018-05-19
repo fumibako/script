@@ -17,6 +17,7 @@
 [プリロード画面消去]
 [eval exp="sf.FButton='ON'"]
 ;=================================================================================_
+*seen1_1
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織様がお迎えに来られました」
 [主人公目パチ1回]
@@ -122,7 +123,7 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい、私も華織様とお話したかったです」[p]
 [whosay name="華織" color="olivedrab"]
-「[名前]さん、ありがとう」[p]
+「ありがとう、[名前]さん」[p]
 [whosay name="華織" color="olivedrab"]
 「僕はね、実をいうと[r]
 [sp][名前]さんと再会する前は、妹のような箱入り娘だと[r]
@@ -144,7 +145,6 @@
 「今、思っても[名前]さんには失礼なことをしていたと反省しています」[p]
 [主人公目パチ1回]
 [wait time=10]
-[fadeoutbgm time=2000]
 ;[四条目通常]
 [chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
 [wait time=10]
@@ -174,25 +174,34 @@
 [背景_料亭風の屋内（昼)]
 [メッセージウィンドウ上ボタン表示]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「いいえ、 実をいいますと私、華織様が手紙をくださらなかった時、貴方のことを少し疑ってしまいました」[p]
+(華織様が私とのこれからの為に[r]
+[sp]正直にお話し下さっているのだから、私も話すべきだわ)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-(華織様が私とのこれからの為に正直にお話し下さっているのだから、私も話すべきだわ)[p]
+「いいえ、 実をいいますと私、[r]
+[sp]華織様が手紙をくださらなかった時、貴方のことを[r]
+[sp]少し疑ってしまいました」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様は、私にとってお兄様のように大きな存在で、優しくて何にでもできる方……」
+「華織様は、私にとってお兄様のように大きな存在で、[r]
+[sp]優しくて何にでもできる方……」[p]
 ;華織様なら大丈夫よね にかかる
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様のお悩みにしている姿に気付いていたのに"華織様なら大丈夫"、と深く尋ねることをしませんでした」
+「華織様のお悩みにしている姿に気付いていたのに[r]
+[sp]"華織様なら大丈夫"、と深く尋ねることをしませんでした」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様の憧れに甘えていたのかもしれません」
+「華織様の憧れに甘えていたのかもしれません」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「でも、今は、あの時より憧れとは違う別の気持ちを抱いています」
+「でも、今は、あの時より憧れとは違う別の気持ちを抱いています」[p]
 ;"華織お兄様"でない貴方を知りました
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「御家族のことに悩み、それでも自身で解決なさろうとする強い心をお持ちになられた貴方に惹かれているのです」[p]
+「御家族のことに悩み、それでも自身で解決なさろうとする[r]
+[sp]強い心をお持ちになられた貴方に惹かれているのです」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「だから、私も大人である華織様が辛い時も支えることができる、本当の意味で対等なお付き合いをしたいのです」[p]
+「だから、私も[r]
+[sp]大人である華織様が辛い時も支えることができる、[r]
+[sp]本当の意味で対等なお付き合いをしたいのです」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様、いまは……いえ、これからは私のことをどの様にお考えでしょうか」[p]
+「華織様、いまは……[r]
+[sp]いえ、これからは私のことをどの様にお考えでしょうか」[p]
 @jump target=*comon_emotion
 ;=============スキップした場合==============_
 *skip_emotion
@@ -202,10 +211,16 @@
 「いえ、そんな……」[p]
 ;===========================_
 *comon_emotion
+[fadeoutbgm time=1300]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。[sp]僕は貴女と再会した時、貴女のひたむきさに驚かされました」[p]
 [whosay name="華織" color="olivedrab"]
 「貴女は、あの時から変わろうとしていたのですね」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 [whosay name="華織" color="olivedrab"]
 「僕も[名前]さんと会って、抱えている悩みを変えようと決意したのです」[p]
 [whosay name="華織" color="olivedrab"]
@@ -233,12 +248,6 @@
 ;[四条効果消]
 [chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
 [wait time=10]
-
-[if exp="sf.BGM=='ON'"]
-;【BGM】星降る夜に（思い出/夢見るシーンに
-[playbgm storage="yumemiru_hoshi.ogg" loop=true]
-[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
-[endif]
 [主人公照れ目普通]
 [wait time=10]
 [四条目パチ1回]
