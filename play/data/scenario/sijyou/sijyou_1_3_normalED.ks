@@ -50,67 +50,6 @@
 [cm]
 [endif]
 ;=================================================================================_
-;地の文がなくてシーンはじまりが唐突すぎる
-;状況整理・主人公は父と四条が何を話したか知らない。お出かけすることを許している
-*zenjitu
-#
-冬の寒さが厳しくなる頃。[r]　
-私は、今まで華織様から頂いた手紙を眺めていた。[p]
-;火鉢にあたる主人公
-
-*replay_sijyou_1_3
-@jump storage="sijyou/sijyou_1_3_b.ks" cond="tf.test_sijyou != true"
-*start
-[stopbgm]
-;暗転プリロードサブルーチン
-[call target=*1_3 storage="sijyou/preload_sijyou.ks"]
-[call target=*start storage="macro_tati_sijyou.ks"]
-[stopbgm]
-;=================================================================================_
-*first
-*seen1
-[freeimage layer = 1]
-[背景_庭_夜]
-[イベントシーン構築ボタン無し版]
-[主人公ポーズ通常]
-[wait time=10]
-[主人公通常]
-[wait time=10]
-[プリロード画面消去]
-[メッセージウィンドウ上ボタン表示]
-;=================================================================================_
-[if exp="tf.test_gamen == true"]
-テストページからプレイしています。手紙まで移動しますか？[r]
-;---------------------------
-;選択肢用レイヤーを追加
-[position layer=message1 height=200 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font color=white size=32]
-
-[link target=*jump_ok1]は　　　い[endlink][r]
-[r][r][r]
-[link target=*jump_no1]い　い　え[endlink][r]
-[resetfont]
-[s]
-
-*jump_ok1
-[current layer="message0"]
-[resetfont]
-「はい」[r]
-移動します。[p]
-[cm]
-@jump target=*seen4
-[s]
-
-*jump_no1
-[current layer="message0"]
-「いいえ」[r]
-そのまま続きの場面に移動します。[p]
-[cm]
-[endif]
-;=================================================================================_
-*zenjitu
 #
 冬の寒さが厳しくなる頃。[r]　
 私は、今まで華織様から頂いた手紙を眺めていた。[p]
