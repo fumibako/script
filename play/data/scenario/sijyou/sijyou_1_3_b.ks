@@ -129,16 +129,17 @@
 [sp]思っていました」[p]
 [四条困り]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
-;（やっぱり、そうでしたのね……）[p]相槌
+;（そうでしたのね……）[p]相槌
 [whosay name="華織" color="olivedrab"]
-「もちろん、今では、[ruby text=あ]貴[ruby text=なた]女のことを芯の強さを持った素敵な女性だと[r]
-[sp]思っています」[p]
-[whosay name="華織" color="olivedrab"]
-「けど手紙を始めた頃は[華衣]に悪いと悩み、[r]
-[sp]君からの手紙に対する返事も素っ気なかった時もありました」[p]
-[四条目閉じ]
+「君からの手紙に対する返事も、僕は素っ気なかった時もありましたよね」[p]
 [whosay name="華織" color="olivedrab"]
 「元々、自分のことを語る手紙は苦手……、というのもありましたが」[p]
+[whosay name="華織" color="olivedrab"]
+「手紙を始めた頃は[華衣]に悪いと悩み……」[p]
+[whosay name="華織" color="olivedrab"]
+「いっそ[名前]さんが他の誰かと[r]
+[sp]幸せになってくれれば、とさえ思っていたのです」[p]
+[四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「今、思っても[名前]さんには失礼なことをしていたと反省しています」[p]
 [主人公目パチ1回]
@@ -151,9 +152,70 @@
 [chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織様、お話してくださってありがとうございます。[r]
-[so]いまは……いえ、これからは私のことをどの様にお考えでしょうか」[p]
-;②二人称の人代名詞。手紙文などで用い、女性に対する敬意を表す。 
+「華織様、お話してくださってありがとうございます……。[r]
+[sp]私の幸せをお考え頂いてたのですね」[p]
+[whosay name="華織" color="olivedrab"]
+「いえ、[r]
+[sp]自分の身勝手な思いに[名前]さんを[r]
+[sp]巻き込んでしまって、申し訳なく思っています」[p]
+[whosay name="華織" color="olivedrab"]
+「[名前]さんは、いつだって誠実になさっていましたのに」[p]
+;=============主人公の心情について あまり主人公の心情を話すとプレイヤーが不快になりそうですので選択肢に================_
+背景選択肢_mizuiro]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink target=*heroine_emotion  text="私の気持ちを話す。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*skp_cmon text="華織様の話を静かに聞いた。(スキップ)" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
+[autosave改]
+[s]
+*heroine_emotion
+[背景_料亭風の屋内（昼)]
+[メッセージウィンドウ上ボタン表示]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「いいえ、 実をいいますと私、華織様が手紙をくださらなかった時、貴方のことを少し疑ってしまいました」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+(華織様が私とのこれからの為に正直にお話し下さっているのだから、私も話すべきだわ)[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様は、私にとってお兄様のように大きな存在で、優しくて何にでもできる方……」
+;華織様なら大丈夫よね にかかる
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様のお悩みにしている姿に気付いていたのに"華織様なら大丈夫"、と深く尋ねることをしませんでした」
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様の憧れに甘えていたのかもしれません」
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「でも、今は、あの時より憧れとは違う別の気持ちを抱いています」
+;"華織お兄様"でない貴方を知りました
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「御家族のことに悩み、それでも自身で解決なさろうとする強い心をお持ちになられた貴方に惹かれているのです」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「だから、私も大人である華織様が辛い時も支えることができる、本当の意味で対等なお付き合いをしたいのです」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様、いまは……いえ、これからは私のことをどの様にお考えでしょうか」[p]
+@jump target=*comon_emotion
+;=============スキップした場合==============_
+*skip_emotion
+[背景_料亭風の屋内（昼)]
+[メッセージウィンドウ上ボタン表示]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「いえ、そんな……」[p]
+;===========================_
+*comon_emotion
+[whosay name="華織" color="olivedrab"]
+「[名前]さん。[sp]僕は貴女と再会した時、貴女のひたむきさに驚かされました」[p]
+[whosay name="華織" color="olivedrab"]
+「貴女は、あの時から変わろうとしていたのですね」[p]
+[whosay name="華織" color="olivedrab"]
+「僕も[名前]さんと会って、抱えている悩みを変えようと決意したのです」[p]
+[whosay name="華織" color="olivedrab"]
+「あの時は、年下の君に頼れないと焦っていましたが」[p]
+[whosay name="華織" color="olivedrab"]
+「けど、これからは、本当の意味で[名前]さんの為に強く変わりたい」[p]
+;②二人称の人代名詞。手紙文などで用い、女性に対する敬意を表す
+[whosay name="華織" color="olivedrab"]
+「[名前]さん。[sp]僕は[ruby text=あ]貴[ruby text=なた]女のことを芯の強さを持った素敵な女性だと[r]
+[sp]思っています」[p]
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「時折、みせてくれる素の可愛らしい部分も含めて」[p]
@@ -188,7 +250,7 @@
 ;○親の言われるままに婚約したので告白の言葉は送っていなかった
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
-「愛しています。　[名前]さんと共に歩みたい」[p]
+「愛しています。　[名前]さんと共に歩みたい。[r][sp]一緒にいてくれますか？」[p]
 [主人公笑顔]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
