@@ -127,7 +127,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
 （今の華織様は、私の事を大人の女性として[r]
-[sp]認めてくださっていることなのでしょうか）[p]
+[sp]認めてくださっているということなのでしょうか）[p]
 
 #
 [wait time=10]
