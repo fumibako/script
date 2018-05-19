@@ -122,12 +122,18 @@
 「聞いてくれますか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「はい、私も華織様とお話したかったです」[p]
+[fadeoutbgm time=3000]
 [whosay name="華織" color="olivedrab"]
 「ありがとう、[名前]さん」[p]
 [whosay name="華織" color="olivedrab"]
 「僕はね、実をいうと[r]
 [sp][名前]さんと再会する前は、妹のような箱入り娘だと[r]
 [sp]思っていました」[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】雪解け（タイトル画面等）
+[playbgm storage="title_yukidoke.ogg" loop=true click=true]
+[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+[endif]
 [四条困り]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;（そうでしたのね……）[p]相槌
@@ -211,16 +217,10 @@
 「いえ、そんな……」[p]
 ;===========================_
 *comon_emotion
-[fadeoutbgm time=1300]
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。[sp]僕は貴女と再会した時、貴女のひたむきさに驚かされました」[p]
 [whosay name="華織" color="olivedrab"]
 「貴女は、あの時から変わろうとしていたのですね」[p]
-[if exp="sf.BGM=='ON'"]
-;【BGM】星降る夜に（思い出/夢見るシーンに
-[playbgm storage="yumemiru_hoshi.ogg" loop=true]
-[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
-[endif]
 [whosay name="華織" color="olivedrab"]
 「僕も[名前]さんと会って、抱えている悩みを変えようと決意したのです」[p]
 [whosay name="華織" color="olivedrab"]
@@ -231,6 +231,7 @@
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。[sp]僕は[ruby text=あ]貴[ruby text=なた]女のことを芯の強さを持った素敵な女性だと[r]
 [sp]思っています」[p]
+[fadeoutbgm time=1300]
 [四条目閉じ]
 [whosay name="華織" color="olivedrab"]
 「時折、みせてくれる素の可愛らしい部分も含めて」[p]
@@ -244,7 +245,12 @@
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_odoroki.png" time=0]
 [wait time=10]
 が好きなんだ　」[p]
-;↑「」横の余白はあえて入れておられると解釈していますが、その解釈で大丈夫でしょうか(◆jsYiJcqRkk案
+;↑「」横の余白はあえて入れてありますが気になれば消去ください
+[if exp="sf.BGM=='ON'"]
+;【BGM】星降る夜に（思い出/夢見るシーンに
+[playbgm storage="yumemiru_hoshi.ogg" loop=true]
+[eval exp="f.bgm_storage='yumemiru_hoshi.ogg'"]
+[endif]
 ;[四条効果消]
 [chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
 [wait time=10]
