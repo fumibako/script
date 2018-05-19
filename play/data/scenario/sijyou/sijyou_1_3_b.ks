@@ -29,7 +29,7 @@
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"] 
-「わかったわ。すぐ参りますとお伝え下さい」
+「わかったわ。　すぐ参りますとお伝え下さい」
 [autosave改]
 [p]
 [whosay name="磯野" color="dimgray"] 
@@ -129,10 +129,11 @@
 「僕はね、実をいうと[r]
 [sp][名前]さんと再会する前は、妹のような箱入り娘だと[r]
 [sp]思っていました」[p]
+;さびしくもあるけれどこれから変わっていくＢＧＭ
 [if exp="sf.BGM=='ON'"]
-;【BGM】雪解け（タイトル画面等）
-[playbgm storage="title_yukidoke.ogg" loop=true click=true]
-[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
+;【BGM】きずな（想いを込めるシーンに
+[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 [四条困り]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
