@@ -125,16 +125,16 @@
 [fadeoutbgm time=3000]
 [whosay name="華織" color="olivedrab"]
 「ありがとう、[名前]さん」[p]
-[whosay name="華織" color="olivedrab"]
-「僕はね、実をいうと[r]
-[sp][名前]さんと再会する前は、妹のような箱入り娘だと[r]
-[sp]思っていました」[p]
 ;さびしくもあるけれどこれから変わっていくＢＧＭ
 [if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
+[whosay name="華織" color="olivedrab"]
+「僕はね、実をいうと[r]
+[sp][名前]さんと再会する前は、妹のような箱入り娘だと[r]
+[sp]思っていました」[p]
 [四条困り]
 ;[whosay name=&sf.girl_namae color="#cf5a7f"]
 ;（そうでしたのね……）[p]相槌
@@ -167,8 +167,8 @@
 [sp]巻き込んでしまって、申し訳なく思っています」[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]さんは、いつだって誠実になさっていましたのに」[p]
-;=============主人公の心情について あまり主人公の心情を話すとプレイヤーが不快になりそうですので選択肢に================_
-
+[四条退場準備 storage="bg/bg_ryoutei.jpg"]
+;=============主人公の心情について あまり主人公の心情を話すとプレイヤーが不快になりそうですので選択肢に================
 [背景選択肢_mizuiro]
 [機能ボタン消]
 [wait time=10]
@@ -178,9 +178,30 @@
 [glink target=*skp_cmon text="華織様の話を静かに聞いた。(スキップ)" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [autosave改]
 [s]
+;==================
 *heroine_emotion
+[image layer=13 x=0 y=0 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [背景_料亭風の屋内（昼)]
+;四条登場
+[四条ベース着物]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+;[四条口ムッ]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
+[wait time=10]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
+[freeimage layer=13 time=1000]
+[wait time=1000]
+[layopt layer=13 visible=true]
 [メッセージウィンドウ上ボタン表示]
+;==================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様が私とのこれからの為に[r]
 [sp]正直にお話し下さっているのだから、私も話すべきだわ)[p]
@@ -213,8 +234,28 @@
 @jump target=*comon_emotion
 ;=============スキップした場合==============_
 *skip_emotion
+[image layer=13 x=0 y=0 zindex=0 storage="bg/bg_ryoutei.jpg" time=50]
+[eval exp="f.haikei_credit='photo　by　usagi_s　http://www.s-hoshino.com/'"]
 [背景_料亭風の屋内（昼)]
+;四条登場
+[四条ベース着物]
+;[四条眉困り]
+[chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
+[wait time=10]
+;[四条目通常]
+[chara_mod name="sijyou_me" storage="sijyou/me_futuu.png" time=0]
+[wait time=10]
+;[四条口ムッ]
+[chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
+[wait time=10]
+;[四条汗]
+[chara_mod name="sijyou_emo" storage="sijyou/emo_ase.png" time=0]
+[wait time=10]
+[freeimage layer=13 time=1000]
+[wait time=1000]
+[layopt layer=13 visible=true]
 [メッセージウィンドウ上ボタン表示]
+;==================
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、そんな……」[p]
 ;===========================_
@@ -224,11 +265,14 @@
 [whosay name="華織" color="olivedrab"]
 「貴女は、あの時から変わろうとしていたのですね」[p]
 [whosay name="華織" color="olivedrab"]
-「僕も[名前]さんと会って、抱えている悩みを変えようと決意したのです」[p]
+「僕も[名前]さんと会って、[r]
+[sp]抱えている悩みを変えようと決意したのです」[p]
 [whosay name="華織" color="olivedrab"]
-「あの時は、年下の君に頼れないと焦っていましたが」[p]
+「あの時は、[r]
+[sp]年下の[名前]さんに頼れないと焦っていましたが」[p]
 [whosay name="華織" color="olivedrab"]
-「けど、これからは、本当の意味で[名前]さんの為に強く変わりたい」[p]
+「けど、これからは、[r]
+[sp]本当の意味で[名前]さんの為に強く変わりたい」[p]
 ;②二人称の人代名詞。手紙文などで用い、女性に対する敬意を表す
 [whosay name="華織" color="olivedrab"]
 「[名前]さん。[sp]僕は[ruby text=あ]貴[ruby text=なた]女のことを芯の強さを持った素敵な女性だと[r]
