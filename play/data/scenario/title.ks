@@ -60,6 +60,8 @@
 
 ;----------BGM onが選択された時
 *bgm_on
+;BMG音量は今後調整する可能性があります。100設定でこれまでの音量(設定前)と変わらないことを確認済(といっても、耳での体感なので若干怪しいですが)
+[bgmopt volume=100]
 ;【BGM】雪解け（タイトル画面等）click=trueは一部ブラウザでクリック待ち的な動作をすることがあるため除いて運用中
 [playbgm storage="title_yukidoke.ogg" loop=true]
 [eval exp="f.bgm_storage='title_yukidoke.ogg'"]
@@ -74,6 +76,8 @@
 *bgm_off
 [stopbgm]
 [fadeoutbgm time=1000]
+;BGMOFF
+[bgmopt volume=0]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BGM='OFF'"]
 [anim name="button_bgm_to_off" opacity=0 time=1]
@@ -87,6 +91,8 @@
 /*効果音を再生する*/
 TG.stat.play_se = true;
 [endscript]
+;↓SEON(音量は今後調整する可能性があります。以前SE音量を抑えて欲しい、というメッセージをいただいたため、これまでより控えめに設定。BGMは元々50%に抑えているのでSEも合わせてみた感じです)
+[seopt volume=50]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.SE='ON'"]
 [anim name="button_se_to_on" opacity=0 time=1]
@@ -100,6 +106,8 @@ TG.stat.play_se = true;
 /*効果音を再生しない*/
 TG.stat.play_se = false;
 [endscript]
+;↓SEOFF
+[seopt volume=0]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.SE='OFF'"]
 [anim name="button_se_to_off" opacity=0 time=1]
