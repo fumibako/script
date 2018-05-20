@@ -1,6 +1,4 @@
 *replay_sijyou_1_3
-@jump storage="sijyou/sijyou_1_3_b.ks" cond="tf.test_sijyou != true"
-*start
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*1_3 storage="sijyou/preload_sijyou.ks"]
@@ -120,10 +118,19 @@
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「お出かけもするといいだろう」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓口：小さく開けた状態。発言時などに… [主人公口開]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 「よろしいのでしょうか？」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
+;↓口：ほほえみ [主人公口ほほえみ]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
+[wait time=10]
 「もう一緒になるのだから好きにしなさい」[p]
 「ただし、[r]
+;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
 [sp]節度あるお付き合いをすること、ご訪問の際は手順を踏む事……[r]
 [sp]それから……」
 [autosave改]
@@ -131,10 +138,17 @@
 ;=============話のはじまり２　さん呼びについて===
 *seen_haha
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+;↓眉：困り [主人公眉困り]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
+[wait time=10]
+[主人公目パチ1回]
 「ええと……？」[p]
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
 [whosay name=お母様]
+;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
+[chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
+[wait time=10]
 「[emb exp="sf.father_name"]さん？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お母様……」[p]
