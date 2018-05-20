@@ -17,6 +17,7 @@
 [wait time=10]
 [プリロード画面消去]
 [eval exp="sf.FButton='ON'"]
+[メッセージウィンドウ上ボタン表示]
 ;=================================================================================_
 [whosay name="磯野" color="dimgray"] 
 「お嬢様、四条華織様がお迎えに来られました」
@@ -167,6 +168,7 @@
 [sp]巻き込んでしまって、申し訳なく思っています」[p]
 [whosay name="華織" color="olivedrab"]
 「[名前]さんは、いつだって誠実になさっていましたのに」[p]
+#
 [四条退場準備 storage="bg/bg_ryoutei.jpg"]
 ;=============主人公の心情について あまり主人公の心情を話すとプレイヤーが不快になりそうですので選択肢に================
 [背景選択肢_mizuiro]
@@ -174,8 +176,8 @@
 [wait time=10]
 [メッセージウィンドウ上ボタン表示選択肢用]
 [wait time=10]
-[glink target=*heroine_emotion  text="私の気持ちを話す。" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
-[glink target=*skp_cmon text="華織様の話を静かに聞いた。(スキップ)" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target=*heroine_emotion  text="私の気持ちを話す" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*skp_cmon text="謙遜した（スキップ)" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [autosave改]
 [s]
 ;==================
@@ -202,6 +204,8 @@
 [layopt layer=13 visible=true]
 [メッセージウィンドウ上ボタン表示]
 ;==================
+#
+私は、自身の気持ちを話すことにした。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (華織様が私とのこれからの為に[r]
 [sp]正直にお話し下さっているのだから、私も話すべきだわ)[p]
@@ -256,6 +260,8 @@
 [layopt layer=13 visible=true]
 [メッセージウィンドウ上ボタン表示]
 ;==================
+;#
+;華織様のお言葉に謙遜した。　;思いつかない
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いえ、そんな……」[p]
 ;===========================_
