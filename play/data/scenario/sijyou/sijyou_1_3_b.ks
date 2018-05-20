@@ -179,7 +179,7 @@
 [メッセージウィンドウ上ボタン表示選択肢用]
 [wait time=10]
 [glink target=*heroine_emotion  text="私の気持ちを話す" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
-[glink target=*skp_cmon text="謙遜した（スキップ)" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target=*skip_emotion text="謙遜した（スキップ)" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
 [autosave改]
 [s]
 ;==================
@@ -379,8 +379,32 @@
 （なんて今、考えてしまうのも、[名前]さんのおかげなんでしょうね）[p]
 #
 ――となりに並んでくれる彼女をみつめる。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様。[sp]実は私、華織様に手紙を書いたのです」[p]
 [whosay name="華織" color="olivedrab"]
-「これからは記念日ごとに思い出の品を買おうか」[p]
+「手紙？　嬉しいですね」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「でも、今日のお話で伝わってしまったかもしれません……」[p]
+#
+頬を蒸気させ、はにかむ彼女。[p]
+[whosay name="華織" color="olivedrab"]
+「手紙は手紙で頂きますよ。[r]
+[sp]文字として、ずっと気持ちが残っているものですからね」[p]
+#
+こんなにも愛しい人が手紙をくれる。[r]
+それが、どれだけ幸せなことだろうか。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「では、そのまま受け取っていただけますか？[r]
+[sp]改めてお返事されてしまうと、少し……恥ずかしいので……」[p]
+[whosay name="華織" color="olivedrab"]
+「わかりました。　その代わり大事にとっておきます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「華織様ったら……」[p]
+#
+僕は、また君に恋をして、手紙を綴るだろう。[r]
+いつまでも。　そして、これからも、ずっと……。[p]
+[whosay name="華織" color="olivedrab"]
+「これからは記念日ごとに、手紙とともに思い出の品を贈ろうか」[p]
 ;○華織は、弟のことを思い出し。これから、戦争や病気などで別れあるかもしれないと思って。
 [whosay name="華織" color="olivedrab"]
 （年上の癖に、今はまだこんなことしか、思いつかないけど）[p]
