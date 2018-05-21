@@ -262,7 +262,9 @@
 (……)
 [主人公眉下げ下]
 [p]
+[if exp="f.event_replay != 'sijyou']
 [eval exp="f.sijyou_sobo = true"]
+[endif]
 [eval exp="sf.event_sijyou_sansaku_2 = 1"]
 #
 [イベントシーン終了]
