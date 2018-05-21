@@ -276,14 +276,14 @@
 #
 どなたについて相談しようかしら？
 ;【分岐】op2と同じ順番
-[glink storage="kuroda_5_1.ks" target=*seen1 text="黒田 将貴 様" font_color=black size=23 width="200" x=200 y=40 graphic="select_waku_x300.png"]
-[glink storage="zaizen/zaizen_5_1.ks" target=*seen1 text="財前 美彬 様" font_color=black size=23 width="200" x=200 y=140 graphic="select_waku_x300.png"]
-[glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織 様" font_color=black size=23 width="200" x=200 y=240 graphic="select_waku_x300.png"]
+[glink storage="kuroda_5_1.ks" target=*seen1 text="黒田 将貴 様" font_color=black size=23 width="200" x=200 y=20 graphic="select_waku_x300.png"]
+[glink storage="zaizen/zaizen_5_1.ks" target=*seen1 text="財前 美彬 様" font_color=black size=23 width="200" x=200 y=120 graphic="select_waku_x300.png"]
+[glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織 様" font_color=black size=23 width="200" x=200 y=220 graphic="select_waku_x300.png"]
 
-[glink target=*buncyou text="文調や便せんについて" font_color=black size=23 width="250" x=500 y=40 graphic="select_waku_x300.png"]
-[glink target=*okeiko text="それよりお稽古のことが<br/>気になった" font_color=black size=20 width="250" x=500 y=140 graphic="select_waku_x300.png"]
-[glink target=*hint_info text="手懸り（ヒント）を知りたい" font_color=black size=20 width="250" x=500 y=240 graphic="select_waku_x300.png"]
-[glink target=*no text="大丈夫" font_color=black size=23 width="200" x=500 y=300 graphic="select_waku_x300.png"]
+[glink target=*buncyou text="文調や便せんについて" font_color=black size=23 width="250" x=500 y=20 graphic="select_waku_x300.png"]
+[glink target=*okeiko text="それよりお稽古のことが<br/>気になった" font_color=black size=20 width="250" x=500 y=120 graphic="select_waku_x300.png"]
+[glink target=*hint_info text="手懸り（ヒント）を知りたい" font_color=black size=20 width="250" x=500 y=220 graphic="select_waku_x300.png"]
+[glink target=*no text="大丈夫" font_color=black size=23 width="200" x=500 y=280 graphic="select_waku_x300.png"]
 [s]
 
 *okeiko
