@@ -282,7 +282,8 @@
 
 [glink target=*buncyou text="文調や便せんについて" font_color=black size=23 width="250" x=500 y=50 graphic="select_waku_x300.png"]
 [glink target=*okeiko text="それよりお稽古のことが<br/>気になった" font_color=black size=20 width="250" x=500 y=150 graphic="select_waku_x300.png"]
-[glink target=*no text="大丈夫" font_color=black size=23 width="200" x=500 y=250 graphic="select_waku_x300.png"]
+[glink target=*hint_info text="手<rt>ヒ</rt>懸<rt>ン</rt>り<rt>ト</rt>を知りたい" font_color=black size=20 width="250" x=500 y=200 graphic="select_waku_x300.png"]
+[glink target=*no text="大丈夫" font_color=black size=23 width="200" x=500 y=300 graphic="select_waku_x300.png"]
 [s]
 
 *okeiko
@@ -378,7 +379,70 @@
 @jump target=*select
 ;お相手について相談するかの選択肢に戻ります
 ;----------------------------------------------
-
+*hint_info
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公困り]
+「色々と手紙を送っている間に、ふと気づくと、[r]
+[sp]今まで何をしてきたか分からなくなってしまうことがあって、[r]
+[sp]少々気掛かりです」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公ふぅ閉]
+（[ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]りが分かれば、[r]
+[sp]これからすべきことも見えてきそうなのですが……)
+[p]
+[whosay name="磯野" color="dimgray"]
+[主人公通常]
+[主人公目大]
+[chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
+[wait time=10]
+「もし、気になるようなことがございましたら、[r]
+[sp]今一度、お稽古部屋より、"情報"をご参照くださりませ」
+[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公通常]
+（"情報"ですか）[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「"情報"には、何が書かれているのかしら？」[p]
+[whosay name="磯野" color="dimgray"]
+「はい。  "情報"には、[r]
+[sp]お相手のこと、お相手ごとに出した手紙の一覧がございます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「そうですのね。 　文箱は全てのお手紙が一覧で見れるようですけど、[r]
+[sp]"情報"からですとお相手ごとにお手紙が見れるのですね」[p]
+[whosay name="磯野" color="dimgray"]
+「はい。　お相手ごとに今まで送った話題を確認することができますので
+[r][sp]新しい話題を送られたい場合においても、
+[r][sp][ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]になるかと思います」[p]
+;できれば情報画面のサンプル画像を表示　なくても
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「そうですのね」[p]
+;～なくても～どういうときに便利か具体的な例
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公困り]
+（そういえば、[r][sp]
+お手紙の送るたびにお手紙の内容が変わる方もいらっしゃるようですが、[r][sp]
+送った話題が何度目か分からない時がありましたし……)[p]
+（新しい話題を振るときにも[r][sp]
+改めて送った話題を確認したい時もありましたね……)[p]
+[主人公通常]
+（そういった時は"情報"をみると便利ですのね！)[p]
+;～なくても～どういうときに便利か具体的な例
+[whosay name="磯野" color="dimgray"]
+「また"情報"には、"今までの思い出"、[r][sp]
+"お相手との仲を深める[ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]"を確認することが可能でございます」
+;[whosay name="磯野" color="dimgray"]
+;「お会いするとお写真も追加されるようですので、確認なされると
+;お手紙を書く励みになられるのではないでしょうか？」[p]なくても？
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「色々と確認できるのですね。 わかりました、後で見てみます」[p]
+[主人公通常]
+(重要だわ)
+[whosay name=磯野 color="dimgray"] 
+「お手紙のお相手については、よろしゅうございますか？」[p] 
+;よろしゅうございましたか？ 
+@jump target=*select
+;お相手について相談するかの選択肢に戻ります
+;----------------------------------------------
 *no
 ;【背景】主人公邸 庭の見える部屋：昼
 [bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
