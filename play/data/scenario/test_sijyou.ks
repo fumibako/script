@@ -164,6 +164,15 @@ $('.loding_pic1').remove();
 [eval exp="f.okeiko_week = 1"]
 @jump storage="sijyou/sijyou_5_1.ks"
 [s]
+
+*test_5_1k
+;common_5_1.ks
+[cm]
+[eval exp="f.okeiko_month = 5"]
+[eval exp="f.okeiko_week = 1"]
+@jump storage="common_5_1.ks"
+[s]
+
 *test6_1
 [cm]
 [freeimage layer = 26]
@@ -171,13 +180,7 @@ $('.loding_pic1').remove();
 [eval exp="f.okeiko_week = 1"]
 @jump storage="sijyou/sijyou_6_1.ks"
 [s]
-*test5_1_ｋ
-;common_5_1.ks
-[cm]
-[eval exp="f.okeiko_month = 5"]
-[eval exp="f.okeiko_week = 1"]
-@jump storage="common_5_1.ks"
-[s]
+
 
 *test7_1
 [cm]
