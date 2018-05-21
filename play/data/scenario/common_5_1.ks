@@ -378,8 +378,11 @@
 ;よろしゅうございましたか？ 
 @jump target=*select
 ;お相手について相談するかの選択肢に戻ります
-;----------------------------------------------
+;-----------情報　手掛かり-----------------------------------
 *hint_info
+;【背景】主人公邸 庭の見える部屋：昼
+[bg wait=true storage="../fgimage/bg/room_niwa.jpg" time=50]
+[eval exp="f.haikei_credit='photo by ゆうあかり http://light77.sakura.ne.jp/'"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
 「色々と手紙を送っている間に、ふと気づくと、[r]
