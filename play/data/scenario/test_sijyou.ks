@@ -88,7 +88,7 @@ $('.test2').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 [glink target="test3_4" text="3月4週normalEND" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_credit" text="仮credit" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=indigo]
-
+[glink target="test_5_1k" text="磯野に相談（旧）" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=indigo]
 
 [glink target="test_page1" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=palevioletred]
 [glink target="test_page3" text="次のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 graphic="select_waku_x500.png" font_color=palevioletred]
@@ -170,6 +170,13 @@ $('.loding_pic1').remove();
 [eval exp="f.okeiko_month = 6"]
 [eval exp="f.okeiko_week = 1"]
 @jump storage="sijyou/sijyou_6_1.ks"
+[s]
+*test5_1_ｋ
+;common_5_1.ks
+[cm]
+[eval exp="f.okeiko_month = 5"]
+[eval exp="f.okeiko_week = 1"]
+@jump storage="common_5_1.ks"
 [s]
 
 *test7_1
