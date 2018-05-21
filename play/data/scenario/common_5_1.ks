@@ -282,8 +282,8 @@
 
 [glink target=*buncyou text="文調や便せんについて" font_color=black size=23 width="250" x=500 y=50 graphic="select_waku_x300.png"]
 [glink target=*okeiko text="それよりお稽古のことが<br/>気になった" font_color=black size=20 width="250" x=500 y=150 graphic="select_waku_x300.png"]
-[glink target=*hint_info text="手<rt>ヒ</rt>懸<rt>ン</rt>り<rt>ト</rt>を知りたい" font_color=black size=20 width="250" x=500 y=200 graphic="select_waku_x300.png"]
-[glink target=*no text="大丈夫" font_color=black size=23 width="200" x=500 y=300 graphic="select_waku_x300.png"]
+[glink target=*hint_info text="手懸り（ヒント）を知りたい" font_color=black size=20 width="250" x=500 y=250 graphic="select_waku_x300.png"]
+[glink target=*no text="大丈夫" font_color=black size=23 width="200" x=500 y=350 graphic="select_waku_x300.png"]
 [s]
 
 *okeiko
