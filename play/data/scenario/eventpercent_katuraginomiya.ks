@@ -145,7 +145,7 @@ tf.spoiler17="殿下のルートに入り、散策イベント二月二週を見
 
 tf.spoiler_bad="十一月一週のイベントで好感度を40未満又は「泣く。」を選んだ場合にbadエンドになります";
 tf.spoiler_bad2="ヒントbad2";
-tf.spoiler_normal="三月四週にgoodエンドの条件を満たさない状態で休憩するとnormalエンドになります";
+tf.spoiler_normal="三月四週にgoodエンドの条件(淑女度100以上、好感度と茶道熟練度を80以上)を満たさない状態で休憩するとnormalエンドになります";
 tf.spoiler_good="三月四週までに淑女度100以上、好感度と茶道熟練度を80以上にして休憩するとgoodエンドになります";
 [endscript]
 [return]
