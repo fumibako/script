@@ -418,7 +418,7 @@
 [sp]お相手ごとに今まで送った話題を確認できますので……」[p]
 ;長いので読みにくい一度きる
 「新しい話題を送られたい場合においても、
-[r][sp][ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]になるかと思います」[p]
+[r][sp][ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]りになるかと思います」[p]
 ;できれば情報画面のサンプル画像を表示　なくても
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですのね」[p]
