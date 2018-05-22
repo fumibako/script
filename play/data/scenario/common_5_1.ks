@@ -276,14 +276,14 @@
 #
 どなたについて相談しようかしら？
 ;【分岐】op2と同じ順番
-[glink storage="kuroda_5_1.ks" target=*seen1 text="黒田 将貴 様" font_color=black size=23 width="200" x=200 y=20 graphic="select_waku_x300.png"]
-[glink storage="zaizen/zaizen_5_1.ks" target=*seen1 text="財前 美彬 様" font_color=black size=23 width="200" x=200 y=120 graphic="select_waku_x300.png"]
-[glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織 様" font_color=black size=23 width="200" x=200 y=220 graphic="select_waku_x300.png"]
+[glink storage="kuroda_5_1.ks" target=*seen1 text="黒田 将貴 様" font_color=black size=23 width="200" x=160 y=20 graphic="select_waku_x300.png"]
+[glink storage="zaizen/zaizen_5_1.ks" target=*seen1 text="財前 美彬 様" font_color=black size=23 width="200" x=160 y=150 graphic="select_waku_x300.png"]
+[glink storage="sijyou/sijyou_5_1.ks" target=*seen1 text="四条 華織 様" font_color=black size=23 width="200" x=160 y=280 graphic="select_waku_x300.png"]
 
 [glink target=*buncyou text="文調や便せんについて" font_color=black size=23 width="250" x=500 y=20 graphic="select_waku_x300.png"]
-[glink target=*okeiko text="それよりお稽古のことが<br/>気になった" font_color=black size=20 width="250" x=500 y=120 graphic="select_waku_x300.png"]
-;[glink target=*hint_info text="手懸り（ヒント）を知りたい" font_color=black size=20 width="250" x=500 y=220 graphic="select_waku_x300.png"]
-[glink target=*hint_info text="<ruby>手<rt>ヒ</rt>懸<rt>ン</rt>り<rt>ト</rt></ruby>を知りたい" font_color=black size=20 width="250" x=500 y=220 graphic="select_waku_x300.png"]
+[glink target=*okeiko text="それよりお稽古のことが<br/>気になった" font_color=black size=20 width="250" x=500 y=100 graphic="select_waku_x300.png"]
+;[glink target=*hint_info text="手懸り（ヒント）を知りたい" font_color=black size=20 width="250" x=500 y=200 graphic="select_waku_x300.png"]
+[glink target=*hint_info text="<ruby>手<rt>ヒ</rt>懸<rt>ン</rt>り<rt>ト</rt></ruby>を知りたい" font_color=black size=20 width="250" x=500 y=200 graphic="select_waku_x300.png"]
 [glink target=*no text="大丈夫" font_color=black size=23 width="200" x=500 y=280 graphic="select_waku_x300.png"]
 [s]
 
@@ -402,6 +402,8 @@
 「もし、気になるようなことがございましたら、[r]
 [sp]今一度、お稽古部屋より、"情報"をご参照くださりませ」
 [p]
+[主人公目パチ1回]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
 （"情報"ですか）[p]
@@ -410,9 +412,14 @@
 [whosay name="磯野" color="dimgray"]
 「はい。  "情報"には、[r]
 [sp]お相手のこと、お相手ごとに出した手紙の一覧がございます」[p]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですのね。 　文箱は全てのお手紙が一覧で見れるようですけど、[r]
 [sp]"情報"からですとお相手ごとにお手紙が見れるのですね」[p]
+;↓口：通常 [主人公口通常]
+[chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
+[wait time=10]
 [whosay name="磯野" color="dimgray"]
 「はい。[r]
 [sp]お相手ごとに今まで送った話題を確認できますので……」[p]
@@ -420,6 +427,9 @@
 「新しい話題を送られたい場合においても、
 [r][sp][ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]りになるかと思います」[p]
 ;できれば情報画面のサンプル画像を表示　なくても
+;↑わかりやすくなりそうですね。余裕があれば、追加したいです。案をありがとうございます。◆jsYiJcqRkk
+[主人公目パチ1回]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうですのね」[p]
 ;～なくても～どういうときに便利か具体的な例
@@ -434,17 +444,19 @@
 （そういった時は"情報"をみると便利ですのね！)[p]
 ;～なくても～どういうときに便利か具体的な例
 [whosay name="磯野" color="dimgray"]
-「また"情報"には、"今までの思い出"、[r][sp]
+「また"情報"では、"今までの思い出"、[r][sp]
 "お相手との仲を深める[ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]り"を確認することが可能でございます」[p]
 ;大事なことなので二回
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ指]
-（"お相手との仲を深める[ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]りですか。[r]
+（"お相手との仲を深める[ruby text=ヒ]手[ruby text=ン]懸[ruby text=ト]り"ですか。[r]
 [sp]もしもの時は、見てみようかしら？）[p]
 [主人公ポーズ通常]
 ;[whosay name="磯野" color="dimgray"]
 ;「お会いするとお写真も追加されるようですので、確認なされると
 ;お手紙を書く励みになられるのではないでしょうか？」[p]なくても？
+[主人公ほほえみ]
+[wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「色々と確認できるのですね。[r]
 [sp] わかりました、後で見てみます」[p]
