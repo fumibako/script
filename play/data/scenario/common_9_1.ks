@@ -373,7 +373,8 @@ jumpします。[p]
 *scene5
 [stopbgm]
 ;【背景】主人公邸 庭の見える部屋：夜
-[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
+[bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_yoru.jpg" time=1000]
+;[chara_mod name="bg" storage="bg/room_niwa_yoru.jpg" time=1000]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 ;メッセージエリアの表示;【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_mod name="message_bg" storage="message_bg/frame_red.png"]
@@ -460,22 +461,22 @@ $('.junbi_girl').remove();
 ;【分岐】
 [eval exp="f.common_9_1_y_left = 100"]
 [eval exp="f.common_9_1_y_right = 100"]
-[glink storage=&f.common_9_1_storage[0] target=&f.common_9_1_target[0] text=&f.common_9_1_oaite[0] fontcolor=gray size=23 width="200" x=200 y=&f.common_9_1_y_left color=white exp=&f.common_9_1_oaite_exp[0]]
+[glink storage=&f.common_9_1_storage[0] target=&f.common_9_1_target[0] text=&f.common_9_1_oaite[0] fontcolor=black size=23 width="200" x=200 y=&f.common_9_1_y_left exp=&f.common_9_1_oaite_exp[0] graphic="select_waku_x500.png"]
 [if exp="f.common_9_1_ninzuu >= 2"]
-[glink storage=&f.common_9_1_storage[1] target=&f.common_9_1_target[1] text=&f.common_9_1_oaite[1] fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white exp=&f.common_9_1_oaite_exp[1]]
+[glink storage=&f.common_9_1_storage[1] target=&f.common_9_1_target[1] text=&f.common_9_1_oaite[1] fontcolor=black size=23 width="200" x=550 y=&f.common_9_1_y_right exp=&f.common_9_1_oaite_exp[1] graphic="select_waku_x500.png"]
 [endif]
 [if exp="f.common_9_1_ninzuu >= 3"]
 [eval exp="f.common_9_1_y_left = f.common_9_1_y_left + 100"]
-[glink storage=&f.common_9_1_storage[2] target=&f.common_9_1_target[2] text=&f.common_9_1_oaite[2] fontcolor=gray size=23 width="200" x=200 y=&f.common_9_1_y_left color=white exp=&f.common_9_1_oaite_exp[2]]
+[glink storage=&f.common_9_1_storage[2] target=&f.common_9_1_target[2] text=&f.common_9_1_oaite[2] fontcolor=black size=23 width="200" x=200 y=&f.common_9_1_y_left exp=&f.common_9_1_oaite_exp[2] graphic="select_waku_x500.png"]
 [endif]
 ;藤枝イベント発生中の場合のみ「誰も選ばない」ボタン表示
 [if exp="f.common_9_1_ninzuu >= 2"]
 	[eval exp="f.common_9_1_y_right = f.common_9_1_y_right + 100"]
 [endif]
 [if exp="f.event_hujieda[5] == 1 && f.common_9_1_ninzuu == 1"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="会わない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="会わない" fontcolor=black size=23 width="200" x=550 y=&f.common_9_1_y_right graphic="select_waku_x500.png"]
 [elsif exp="f.event_hujieda[5] == 1 && f.common_9_1_ninzuu >= 2"]
-[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=gray size=23 width="200" x=550 y=&f.common_9_1_y_right color=white]
+[glink storage="hujieda/hujieda_9_1.ks" target=*replay_hujieda_9_1 text="誰も選ばない" fontcolor=black size=23 width="200" x=550 y=&f.common_9_1_y_right graphic="select_waku_x500.png"]
 [endif]
 [s]
 
