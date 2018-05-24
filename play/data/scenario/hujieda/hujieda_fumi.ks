@@ -794,7 +794,7 @@ $(".1_fore").empty();
 [sp]食材は大体いつも同じですが、[r]
 姉なりに焼いたり、煮漬けたり色々工夫をしてくれています。[r]
 [r]
-[sp]姉の心のこもった料理は少々出来が焦げていたり、[r]
+[sp]姉の心のこもった料理は少々焦げていたり、[r]
 味が薄くても美味しいものです。[r]
 [sp] いつもすべて平らげてしまいます。
 [glink target=*hujieda_fumi14_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
