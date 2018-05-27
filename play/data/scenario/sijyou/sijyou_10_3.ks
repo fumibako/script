@@ -243,7 +243,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [font color=white size=32]
 
 [link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
+[r]
+[link target=*jump_ok2]主人公手紙へい[endlink][r]
+[r][r]
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
 [s]
@@ -398,6 +400,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 「……」[p]
 [主人公通常]
 [wait time=100]
+*jump_ok2
 ;=============主人公の心情について あまり主人公の心情を話すとプレイヤーが不快になりそうですので選択肢に================
 [背景選択肢_mizuiro]
 [機能ボタン消]
@@ -414,7 +417,6 @@ f.fumi_all_number=f.fumi_all_number + 1;
 @jump traget=skip_emotion2
 ;==================
 *heroine_emotion
-;[freeimage layer=13 time=100]
 [手紙主人公]
 [clearstack]
 *sijyou_fumi_in_girl_1
@@ -447,13 +449,13 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [glink target=*sijyou_fumi_in_girl_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *sijyou_fumi_in_girl_3
-;華織お兄様をお兄様ではなく、[r]
+華織お兄様をお兄様ではなく、[r]
 一人の殿方として、ようやく意識し理解しはじめたばかりです。[r]
 大人である華織様を私が支えるには力不足かもしれません。[r]
 それでも、[r]
 私は、これからも華織様と一緒に[r]
-同じ景色を見て歩みたいのです。
-お兄様。どうか私にお力添えください。[r][r]
+同じ景色を見て歩みたいのです。[r][r]
+お兄様。 どうか私にお力添えください。[r][r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　かしこ　[r]　　　　　　　　　　　　　　　　　　　　　　　　
 [sp]　　　　　　　　　　　　　　　　　　　　　　[名字]　[名前]
 [glink target=*sijyou_fumi_in_girl_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
@@ -464,6 +466,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [clearfix]
 [clearstack]
 [手紙読了]
+[freeimage layer=13 time=100]
+
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
