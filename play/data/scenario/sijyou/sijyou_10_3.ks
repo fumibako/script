@@ -245,7 +245,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [link target=*jump_ok]は　　　い[endlink][r]
 [r]
 [link target=*jump_ok2]主人公手紙へい[endlink][r]
-[r][r]
+[r][
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
 [s]
