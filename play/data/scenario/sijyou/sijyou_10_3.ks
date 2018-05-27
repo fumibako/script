@@ -398,6 +398,81 @@ f.fumi_all_number=f.fumi_all_number + 1;
 「……」[p]
 [主人公通常]
 [wait time=100]
+;=============主人公の心情について あまり主人公の心情を話すとプレイヤーが不快になりそうですので選択肢に================
+[背景選択肢_mizuiro]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink target=*heroine_emotion  text="手紙を書き始めた" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*skip_emotion text="手紙を書いた（スキップ）" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
+[autosave改]
+[s]
+;==================
+*skip_emotion
+[freeimage layer=13 time=100]
+@jump traget=skip_emotion2
+;==================
+*heroine_emotion
+[freeimage layer=13 time=100]
+[手紙主人公]
+[clearstack]
+*sijyou_fumi_in_girl_1
+お兄様へ
+私は、あの雪の日、[r]
+どうして華織お兄様が私から離れていったのか分からず、[r]
+そのまま見送ってしまいました。[r]
+もちろん、手紙のやり取りをする頃には"仕来り"と分かりました。[r]
+ですが、それだけでした。
+[r]
+幼い頃の記憶のまま、[r]
+私は思い出だけを憧れに変えて、[r]
+今のいままで、自身の気持ちにすら[r]
+理解できていなかったのです。[r]
+[glink target=*sijyou_fumi_in_girl_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi_in_girl_2
+;夢を見ている場合
+けれど今なら分かります。[r]
+心のどこかで、[r]
+淑女として何か足りなかった……と後悔していたのです。[r]
+;夢を見ている場合おわり
+[r]
+もう辛い顔をなさる華織様を見送ってしまいたくはありません。[r]
+今は何をすべきかどうしたいのかハッキリと分かります。[r]
+相手の気持ちを汲み取り、支え、[r]
+時に辛い時も忍んで思う心の強さが、[r]
+私が思う"淑女として"必要なのです。
+[glink target=*sijyou_fumi_in_girl_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*sijyou_fumi_in_girl_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi_in_girl_3
+;華織お兄様をお兄様ではなく、[r]
+一人の殿方として、ようやく意識し理解しはじめたばかりです。[r]
+大人である華織様を私が支えるには力不足かもしれません。[r]
+それでも、[r]
+私は、これからも華織様と一緒に[r]
+同じ景色を見て歩みたいのです。
+お兄様。どうか私にお力添えください。[r][r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　かしこ　[r]　　　　　　　　　　　　　　　　　　　　　　　　
+[sp]　　　　　　　　　　　　　　　　　　　　　　[名字]　[名前]
+[glink target=*sijyou_fumi_in_girl_2 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi_girl_a_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*sijyou_fumi_girl_a_close
+[cm]
+[clearfix]
+[clearstack]
+[手紙読了]
+[resetfont]
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
+[whosay name=&sf.girl_namae color="mediumvioletred"]
+*skip_emotion2
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（お兄様……お願いします）[p]
+3
+私は、手紙に願いを込めると、磯野に手渡した。[p]
 [暗転２]
 [暗転１]
 [wait time=10]
