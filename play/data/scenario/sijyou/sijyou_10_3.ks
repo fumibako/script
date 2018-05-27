@@ -259,7 +259,15 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [背景セピア化_解除]
 @jump target=*seen7
 [s]
-
+*jump_ok1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+[背景セピア化_解除]
+@jump target=*jump_ok2
+[s]
 *jump_no
 [current layer="message0"]
 「いいえ」[r]
@@ -413,10 +421,15 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [s]
 ;==================
 *skip_emotion
-[freeimage layer=13 time=100]
+[freeimage layer=13 time=500]
+[wait time=1000]
+[layopt layer=13 visible=true]
 @jump traget=skip_emotion2
 ;==================
 *heroine_emotion
+[freeimage layer=13 time=500]
+[wait time=1000]
+[layopt layer=13 visible=true]
 [手紙主人公]
 [clearstack]
 *sijyou_fumi_in_girl_1
@@ -466,8 +479,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [clearfix]
 [clearstack]
 [手紙読了]
-[freeimage layer=13 time=100]
-[layopt layer=13 visible=true]
+
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
