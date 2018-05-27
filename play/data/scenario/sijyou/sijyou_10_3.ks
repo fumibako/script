@@ -244,7 +244,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 
 [link target=*jump_ok]は　　　い[endlink][r]
 [r]
-[link target=*jump_ok2_1]主人公手紙へい[endlink][r]
+[link target=*jump_ok2_1]主人公手紙へ[endlink][r]
 [r][
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
@@ -267,6 +267,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [cm]
 [背景セピア化_解除]
 [主人公ポーズ通常]
+[主人公通常]
 @jump target=*jump_ok2
 [s]
 *jump_no
@@ -423,6 +424,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;==================
 *skip_emotion
 [背景_庭_夜]
+[wait time=100]
 @jump traget=skip_emotion2
 ;==================
 *heroine_emotion
@@ -477,11 +479,10 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [clearstack]
 [手紙読了]
 [resetfont]
-*skip_emotion
+*skip_emotion2
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
-*skip_emotion2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お兄様……お願いします）[p]
 私は、手紙に願いを込めると、磯野に手渡した。[p]
