@@ -439,8 +439,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 もちろん、手紙のやり取りをする頃には"仕来り"と分かりました。[r]
 ですが、それだけでした。
 [r]
-幼い頃の記憶のまま、[r]
-私は思い出だけを憧れに変えて、[r]
+幼い頃の記憶のまま、私は思い出だけを憧れに変えて、[r]
 今のいままで、自身の気持ちにすら[r]
 理解できていなかったのです。[r]
 [glink target=*sijyou_fumi_in_girl_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
@@ -455,14 +454,12 @@ f.fumi_all_number=f.fumi_all_number + 1;
 もう辛い顔をなさる華織様を見送ってしまいたくはありません。[r]
 今は何をすべきかどうしたいのかハッキリと分かります。[r]
 相手の気持ちを汲み取り、支え、[r]
-時に辛い時も忍んで思う心の強さが、[r]
+時に辛い時も忍んで思う、心の強さが、[r]
 私が思う"淑女として"必要なのです。
 [glink target=*sijyou_fumi_in_girl_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [glink target=*sijyou_fumi_in_girl_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *sijyou_fumi_in_girl_3
-華織お兄様をお兄様ではなく、[r]
-一人の殿方として、ようやく意識し理解しはじめたばかりです。[r]
 大人である華織様を私が支えるには力不足かもしれません。[r]
 それでも、[r]
 私は、これからも華織様と一緒に[r]
@@ -485,6 +482,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お兄様……お願いします）[p]
+（憧れの華織お兄様ではなく、[r]
+[sp]一人の殿方として支えたいのです）[p]
+#
 私は、手紙に願いを込めると、磯野に手渡した。[p]
 [暗転２]
 [暗転１]
