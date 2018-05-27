@@ -414,7 +414,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 @jump traget=skip_emotion2
 ;==================
 *heroine_emotion
-[freeimage layer=13 time=100]
+;[freeimage layer=13 time=100]
 [手紙主人公]
 [clearstack]
 *sijyou_fumi_in_girl_1
