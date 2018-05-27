@@ -476,15 +476,14 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [clearfix]
 [clearstack]
 [手紙読了]
-
 [resetfont]
+*skip_emotion
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 *skip_emotion2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （お兄様……お願いします）[p]
-3
 私は、手紙に願いを込めると、磯野に手渡した。[p]
 [暗転２]
 [暗転１]
