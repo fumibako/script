@@ -422,16 +422,12 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [s]
 ;==================
 *skip_emotion
-[freeimage layer=13 time=500]
-[wait time=1000]
-[layopt layer=13 visible=true]
+[背景_庭_夜]
 @jump traget=skip_emotion2
 ;==================
 *heroine_emotion
-[freeimage layer=13 time=500]
-[wait time=1000]
-[layopt layer=13 visible=true]
 [手紙主人公]
+[背景_庭_夜]
 [clearstack]
 *sijyou_fumi_in_girl_1
 お兄様へ
