@@ -244,7 +244,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 
 [link target=*jump_ok]は　　　い[endlink][r]
 [r]
-[link target=*jump_ok2]主人公手紙へい[endlink][r]
+[link target=*jump_ok2_1]主人公手紙へい[endlink][r]
 [r][
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
@@ -259,13 +259,14 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [背景セピア化_解除]
 @jump target=*seen7
 [s]
-*jump_ok1
+*jump_ok2_1
 [current layer="message0"]
 [resetfont]
 「はい」[r]
 移動します。[p]
 [cm]
 [背景セピア化_解除]
+[主人公ポーズ通常]
 @jump target=*jump_ok2
 [s]
 *jump_no
