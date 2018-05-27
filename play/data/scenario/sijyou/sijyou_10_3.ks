@@ -467,7 +467,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [clearstack]
 [手紙読了]
 [freeimage layer=13 time=100]
-
+[layopt layer=13 visible=true]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
