@@ -453,9 +453,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [r]
 もう辛い顔をなさる華織様を見送ってしまいたくはありません。[r]
 今は何をすべきかどうしたいのかハッキリと分かります。[r]
-相手の気持ちを汲み取り、支え、[r]
-時に辛い時も忍んで思う、心の強さが、[r]
-私が思う"淑女として"必要なのです。
+相手の気持ちを汲み取り、支え、時に辛い時も忍ぶ、[r]
+心の強さが、私が思う"淑女として"必要なのです。
 [glink target=*sijyou_fumi_in_girl_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [glink target=*sijyou_fumi_in_girl_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
