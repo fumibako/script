@@ -425,7 +425,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 *skip_emotion
 [背景_庭_夜]
 [wait time=100]
-@jump traget=skip_emotion2
+@jump target=skip_emotion2
 ;==================
 *heroine_emotion
 [手紙主人公]
