@@ -480,9 +480,11 @@ f.fumi_all_number=f.fumi_all_number + 1;
 *skip_emotion2
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
-[whosay name=&sf.girl_namae color="mediumvioletred"]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
+[主人公目閉じ]
+[wait time=10]
 （お兄様……お願いします）[p]
+[主人公目通常]
 （憧れの華織お兄様ではなく、[r]
 [sp]一人の殿方として支えたいのです）[p]
 #
