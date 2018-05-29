@@ -38,14 +38,13 @@
 [current layer="message1"]
 [font size=32]
 
-[link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
+[link target=*jump_ok]は　　　い[endlink][r][r]
+[link target=*jump_ok2_1]主人公手紙へ[endlink][r][r]
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
 [s]
 *jump_ok
 [er]
-
 [current layer="message0"]
 [resetfont]
 [er]
@@ -54,7 +53,14 @@
 [cm]
 @jump target=*seen_end
 [s]
-
+*jump_ok2_1
+[current layer="message0"]
+[resetfont]
+「はい」[r]
+移動します。[p]
+[cm]
+@jump target=*seen5
+[s]
 *jump_no
 [er]
 [current layer="message0"]
@@ -190,24 +196,19 @@
 [四条ボタン表示]
 ;===============================================================
 *seen4
-
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [wait time=10]
-
 [主人公目閉じ]
 （どうしましょう）
 [autosave改]
 [p]
 [whosay name="磯野" color="dimgray"]
 「お嬢様。 文矢様にお手紙を書かれてはいかがでしょうか？」[p]
-
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
-
-
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ」[p]
@@ -232,8 +233,69 @@
 「磯野、ありがとう。さっそくお手紙を書いてみます」
 [autosave改]
 [p]
-;アラート表示でもいいです
 [暗転]
+;=============主人公の心情について あまり主人公の心情を話すとプレイヤーが不快になりそうですので選択肢に================
+[背景選択肢_mizuiro]
+[機能ボタン消]
+[wait time=10]
+[メッセージウィンドウ上ボタン表示選択肢用]
+[wait time=10]
+[glink target=*heroine_emotion  text="手紙を書き始めた" size=23 width=500 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target=*skip_emotion text="手紙を書いた（スキップ）" size=23 width=500 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
+[autosave改]
+[s]
+;==================
+*skip_emotion
+[暗転]
+[wait time=100]
+@jump target=skip_emotion2
+;==================
+*heroine_emotion
+[手紙主人公]
+[暗転]
+[clearstack]
+*sijyou_fumi_in_girl_1
+お兄様へ。[r]
+菊薫る時節となりました。　お変わりなく、お過ごしでしょうか。[r]
+[r]
+最近、私は悩んでいます。[r]
+恋をするのは、大変なことなのでしょうか。[r]
+不躾にも、こんな事をお兄様に相談するのは悪いと思っています。[r]
+けれど、我慢ができなくて、お兄様に聞いて欲しかったのです。[r]
+[r]
+[r]
+実を言いますと[r]
+ここ数日、華織様と御連絡が取れなくなってしまいました。[r]
+華織様は、悩み事がある様子なのですが、[r]
+言葉にはなされないので気持ちが分かりません。[r]
+[glink target=*sijyou_fumi_in_girl_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*sijyou_fumi_in_girl_2
+[sp]もしかして、私のことは妹のようなもので、[r]
+遊びなのでしょうか？[r]
+恋は、もっと優しくて甘いものだと思っていましたのに[r]
+自信がなくなってきました。[r]
+[r]
+憧れの華織お兄様とお付き合いを始めたというのに[r]
+前に進んでいるのか分からないのです。[r]
+そんなことを不安に思い、うちひしがれております。[r]
+[r]
+お兄様は、どの様にお考えでしょうか。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　かしこ　[r]　　　　　　　　　　　　　　　　　　　　　　　　
+[sp]　　　　　　　　　　　　　　　　　　　　　　[名字]　[名前]
+[glink target=*sijyou_fumi_in_girl_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*sijyou_fumi_girl_a_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*sijyou_fumi_girl_a_close
+[cm]
+[clearfix]
+[clearstack]
+[手紙読了]
+[resetfont]
+*skip_emotion2
+;【SE】紙に触れる（パラリ）
+[playse storage=paper_open.ogg loop=false ]
 #
 私は、お兄様に華織お兄様との事について手紙をだした。[p]
 *seen_end
