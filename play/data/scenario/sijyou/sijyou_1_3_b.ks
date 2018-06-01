@@ -426,6 +426,32 @@
 #
 僕は、また君に恋をして、手紙を綴るだろう。[r]
 いつまでも。　そして、これからも、ずっと……。[p]
+;表示分岐
+*sobo
+[if exp="f.sijyou_sobo == true || tf.test_sijyou == true"]
+[whosay name="華織" color="olivedrab"]
+「[名前]さん、近いうちに華道競合大会があるんです」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「そうなのですか？」[p]
+[whosay name="華織" color="olivedrab"]
+「大会は、関係者以外は入れないのですが、[r]
+[sp]必ず優勝してみせます」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「はい。[r]
+[sp]応援しに行けないのは残念ですが……、[r]
+[sp]私、よい[ruby text=たよ]便りを待っていますね」[p]
+[whosay name="華織" color="olivedrab"]
+「はい。[sp]そのときは、是非、僕の作品を見て下さい」[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+「もちろんです！[sp]約束です」[p]
+[whosay name="華織" color="olivedrab"]
+（もう、迷うことはないのだから）[p]
+[whosay name="華織" color="olivedrab"]
+（悔いがないように。　あの人に負けないほどの恋を）[p]
+[whosay name="華織" color="olivedrab"]
+（[名前]さんと綴っていきたい）[p]
+[else]
+*no_sobo
 [whosay name="華織" color="olivedrab"]
 「これからは記念日ごとに、手紙とともに思い出の品を贈ろうか」[p]
 ;○華織は、弟のことを思い出し。これから、戦争や病気などで別れあるかもしれないと思って。
@@ -435,6 +461,9 @@
 （悔いがないように。　あの人に負けないほどの恋を）[p]
 [whosay name="華織" color="olivedrab"]
 （[名前]さんと綴っていけたらいいな）[p]
+[endif]
+
+
 #
 冬のしんとした寒さの中、[ruby text=ふた]二つの暖かな吐息がほんわりと並び、[r]
 次の季節に思いを馳せる。[p]
