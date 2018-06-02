@@ -85,7 +85,7 @@ $(".sentaku").remove();
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……はい。 そういたします」[p]
-
+[wait time=10]
 [財前退場準備 storage="bg/test_zaizen_paty1.jpg" time=500]
 
 [主人公目閉]
