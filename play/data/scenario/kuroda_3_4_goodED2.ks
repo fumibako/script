@@ -17,7 +17,7 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/kuroda_goodED.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='illustration　by　かいこ'"]
-[cg storage="kuroda_normalED.jpg"]
+[cg storage="kuroda_goodED.jpg"]
 [wait time=10]
 [p]
 [resetfont]
