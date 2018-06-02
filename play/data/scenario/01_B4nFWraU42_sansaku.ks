@@ -61,9 +61,7 @@
 [主人公目パチ1回]
 「そうですね……」[p]
 [fadeoutbgm time=3000]
-[if exp="tf.test_gamen1 == true"]
-@jump storage="01_B4nFWraU42_test.ks"
-[endif]
+
 #
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -129,10 +127,7 @@
 「[名前]さんって聞き上手ね！」[p]
 [fadeoutbgm time=3000]
 
-[if exp="tf.test_gamen1 == true"]
-[イベントシーン終了]
-@jump storage="01_B4nFWraU42_test.ks"
-[endif]
+
 #
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -196,10 +191,6 @@
 #
 ;長い道のりに行き交う人々を目にしながら、ふと思ってしまった。[p]
 
-[if exp="tf.test_gamen1 == true"]
-[イベントシーン終了]
-@jump storage="01_B4nFWraU42_test.ks"
-[endif]
 
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -287,10 +278,6 @@
 「お手紙に添えて、あの方にお送りしてみようかしら」[p]
 [fadeoutbgm time=3000]
 
-[if exp="tf.test_gamen1 == true"]
-[イベントシーン終了]
-@jump storage="01_B4nFWraU42_test.ks"
-[endif]
 
 [layopt layer=29 visible=true]
 ;【話題入手】
@@ -361,11 +348,6 @@
 [endif]
 
 [fadeoutbgm time=3000]
-
-[if exp="tf.test_gamen1 == true"]
-[イベントシーン終了]
-@jump storage="01_B4nFWraU42_test.ks"
-[endif]
 
 #
 [layopt layer=29 visible=true]
@@ -439,6 +421,7 @@
 「えっ」[p]
 [主人公目パチ1回]
 (……行ってしまいましたわ……)[p]
+;(猫は好きだけど、遊んでいると磯野に…………)[p]
 [whosay name="タマという猫"]
 [主人公憂い]
 「ニャォーン……」[p]
@@ -455,10 +438,6 @@
 (あの方は、ネコはお好きかしら……？)[p]
 [fadeoutbgm time=3000]
 
-[if exp="tf.test_gamen1 == true"]
-[イベントシーン終了]
-@jump storage="01_B4nFWraU42_test.ks"
-[endif]
 
 #
 [layopt layer=29 visible=true]
@@ -531,10 +510,7 @@
 「そうですね……」[p]
 [fadeoutbgm time=3000]
 
-[if exp="tf.test_gamen1 == true"]
-[イベントシーン終了]
-@jump storage="01_B4nFWraU42_test.ks"
-[endif]
+
 
 #
 [layopt layer=29 visible=true]
@@ -612,10 +588,7 @@
 [主人公目伏]
 (……今日は帰りましょうか)[p]
 
-[if exp="tf.test_gamen1 == true"]
-[イベントシーン終了]
-@jump storage="01_B4nFWraU42_test.ks"
-[endif]
+
 
 [layopt layer=29 visible=true]
 [イベントシーン終了]
