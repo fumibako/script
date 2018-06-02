@@ -15,12 +15,6 @@ $('.list').remove();
 [stopbgm]
 [call target=*11_1bad2 storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
-
-[if exp="f.flag_replay == true"]
-;@layopt layer=1 visible=true
-;[chara_show name="bg"]
-[endif]
-
 ;【背景】パーティ会場の庭[背景_庭]　
 [bg wait=true storage="../fgimage/bg/test_zaizen_paty1.jpg" time=100]
 [wait time=10]
@@ -82,6 +76,9 @@ jumpします。[p]
 [endif]
 [機能ボタン消]
 [wait time=10]
+[iscript]
+$(".sentaku").remove();
+[endscript]
 [メッセージウィンドウ上ボタン表示]
 [wait time=10]
 ;【立ち絵】主人公：目伏せ悲しみ
