@@ -564,7 +564,7 @@ jumpします。[p]
 ;【立ち絵】財前：不快
 [whosay name="財前美彬" color="#7a65b2"]
 「よりにもよって、貴方がいる場に あの女に出くわすとは[r]
-[sp]思いもよりませんでした。 ……帰りましょう」
+[sp]思いもよりませんでした。 ……帰りましょう」[p]
 #
 ;=================テストとリプレイ時をスキップ========================
 [if exp="f.okeiko_gamen == true"]
@@ -574,14 +574,14 @@ jumpします。[p]
 *replay_sentaku_to_bad_or_other
 ;バッドをみていない場合はシームレスに次にリプレイ
 [if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 != 1"]
-[p]
 @jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
 [endif]
 
 ;バッドをみている場合は選択　みていない場合はシームレスに次にリプレイ
 [if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
-[p]
 [機能ボタン消]
+[wait time=10]
+[image name=sentaku layer=13 x=0 y=0 zindex=0 storage="../fgimage/bg/plane_sakura.jpg" time=100]
 [wait time=10]
 [メッセージウィンドウ上ボタン表示選択肢用]
 [wait time=10]
@@ -591,34 +591,9 @@ jumpします。[p]
 [glink target=*next11_bad text="帰　　る" size=20 width=500 x=250 y=50 graphic="select_waku_x300.png" font_color=black]
 [glink target=*next11_1_2 text="帰らない" size=20 width=500 x=250 y=170 graphic="select_waku_x300.png" font_color=black]
 [glink target=*end text="回想を終了する" size=20 width=500 x=250 y=290 graphic="select_waku_x300.png" font_color=black]
-;↑この場面の選択肢はBadを見ている場合、本編のテキストや選択肢画面に合わせる方が"選択する行為"含めて回想プレイできるのではないかと思いますので、本編に合わせる内容に変更します。↓こちらに変更前の選択肢テキストをコメントアウトで残します◆jsYiJcqRkk
-;@layopt layer=fix visible=false
-;[image name="sentaku" layer=29 x=0 y=0 zindex=0 storage="bg/plane_sakura.jpg" time=100]
-;[er]
-;選択肢用レイヤーを追加
-;[position layer=message1 height=550 top=50 left=250 opacity=0]
-;[wait time=50]
-;@layopt layer=message1 visible=true
-;[current layer="message1"]
-;回想中です。続きを選択してください。[r][r][r]
-;[glink target=*next11_1_2 text="続きをみる" size=20 width=500 x=250 y=150 graphic="select_waku_x300.png" font_color=black]
-;[glink target=*next11_bad text="Badエンド1をみる" size=20 width=500 x=250 y=250 graphic="select_waku_x300.png" font_color=black]
-;[glink target=*end text="回想を終了する" size=20 width=500 x=250 y=350 graphic="select_waku_x300.png" font_color=black]
 [s]
 [endif]
-;endifを探してバグるので細かに対応　どのみち上でスキップしている
 *next11_1_2
-;↓テストメニューから動作確認時に「続きを見る」選択する際にも続きを見られるように(↓この条件文を入れるとテストメニューから見る際にはじかれて見られなくなるため)if文をコメントアウトさせていただきます。
-;リプレイ時は上の選択肢表示時に条件分岐されているため動作に支障は無いと思います。◆jsYiJcqRkk
-;[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
-;[er]
-;[current layer="message0"]
-;[resetfont]
-;[iscript]
-;$(".sentaku").remove();
-;[endscript]
-;[cm]
-;@layopt layer=fix visible=true
 [機能ボタン消]
 [wait time=10]
 [メッセージウィンドウ上ボタン表示]
@@ -627,15 +602,6 @@ jumpします。[p]
 [s]
 ;[endif]
 *next11_bad
-;[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
-;[er]
-;[current layer="message0"]
-;[resetfont]
-;[iscript]
-;$(".sentaku").remove();
-;[endscript]
-;[cm]
-;@layopt layer=fix visible=true
 [機能ボタン消]
 [wait time=10]
 [メッセージウィンドウ上ボタン表示]
@@ -659,16 +625,8 @@ $(".sentaku").remove();
 [endif]
 
 *end
-;[if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
-;[cm]
-;[current layer="message0"]
-;[resetfont]
-;[iscript]
-;$(".sentaku").remove();
-;[endscript]
-;@layopt layer=fix visible=true
 @jump target=*seen_end_11_1
-[endif]
+[s]
 
 ;============================================================================================================
 *sentaku_to_bad_or_other
@@ -677,16 +635,15 @@ $(".sentaku").remove();
 *sentaku_to_bad_or_other2
 [機能ボタン消]
 [wait time=10]
+[image name=sentaku layer=13 x=0 y=0 zindex=0 storage="../fgimage/bg/plane_sakura.jpg" time=100]
+[wait time=10]
 [メッセージウィンドウ上ボタン表示選択肢用]
 [wait time=10]
 #
 どうしましょうか？
-[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=45 width="300" x=250 y=50 color=white]
-[glink storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=45 width="300" x=250 y=200 color=white]
+[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=20 width=500 x=250 y=100 graphic="select_waku_x300.png" font_color=black]
+[glink storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=20 width=500 x=250 y=200 graphic="select_waku_x300.png" font_color=black]
 [wait time=10]
-[iscript]
-$('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x300.png")' , 'background-size' : 'center', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
-[endscript]
 [s]
 [endif]
 *seen_end_11_1
