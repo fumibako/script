@@ -69,6 +69,10 @@ jumpします。[p]
 
 [機能ボタン消]
 [wait time=10]
+;選択肢用の背景消去
+[iscript]
+$(".sentaku").remove();
+[endscript]
 [メッセージウィンドウ上ボタン表示]
 [wait time=10]
 ;【立ち絵】主人公：眉ひそめ
