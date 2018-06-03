@@ -555,11 +555,8 @@ $('.junbi_girl').remove();
 [話題入手 wadai_txt="『写真の話題』を手に入れました"]
 [eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('写真の話題',0,1,0,1,2,'a','','','','')"]
 [イベントシーン終了]
-;↓デバッグ中、イベント終了後にテストメニューへ飛んでしまう事があったためテスト時のみテストメニューへ戻るように変更します◆jsYiJcqRkk
-[if exp="tf.test_gamen == true"]
-@jump storage="01_I9IhvvVdPo_test.ks"
-[endif]
 [イベントシーン終了２]
+;↑イベント終了後にテストメニューに飛んでしまう件、写真の話題で経験した旨を思い出しました。sansaku.ksのファイル分割で安定化対応しました。仮に入れていた処理については不要になった＆テストしづらいため消去します。◆jsYiJcqRkk
 [s]
 
 *sansaku_machi_common_I9IhvvVdPo_06

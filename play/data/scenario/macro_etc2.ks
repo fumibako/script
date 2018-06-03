@@ -405,6 +405,8 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+;会話ウィンドウ消去
+[freeimage layer = 14]
 ;休憩中画像消去
 [freeimage layer = 26]
 ;演出用レイヤ消去
@@ -414,8 +416,6 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 [wait time=10]
-;会話ウィンドウ消去
-[freeimage layer = 14]
 [wait time=10]
 ;背景初期化(黒背景)
 [bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=500]
@@ -493,7 +493,7 @@ if(typeof f.event_replay === "undefined" && f.flag_replay === "undefined"){f.cle
 ;散策
 ;テストモード[if exp="tf.test_sijyou==true"]@jump storage="test_sijyou.ks"[edif]
 [if exp="f.okeiko_gamen == true"]
-@jump storage="sansaku.ks" target=*sansaku_machi_seika
+@jump storage="sansaku_machi_seika.ks" target=*sansaku_machi_seika
 [endif]
 [endmacro]
 
