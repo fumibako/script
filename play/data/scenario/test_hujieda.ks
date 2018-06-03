@@ -112,7 +112,7 @@ $(function(){
 *page_3
 [glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
 [glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
-[glink target="page_" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
+[glink target="page_2" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
 ;ページをとめます
 ;@jump target=common_page
 ;[s]
