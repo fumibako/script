@@ -1939,8 +1939,6 @@ $(".1_fore").empty();
 [glink target=*hujieda_fumi_koinegau_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *hujieda_fumi_koinegau_3
-
-*hujieda_fumi_koinegau_4
 追伸[r]
 [r]
 [sp] ２月３週目の日曜日に、[r]
@@ -1951,9 +1949,8 @@ $(".1_fore").empty();
 [sp] ご一緒にお出掛けましょう。　　　これは約束ですわ。[r]
 [r]
 [r]
-[sp]
-                                                                           三宮　時子[p]
-[glink target=*hujieda_fumi_kaidan_4 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　三宮　時子
+[glink target=*hujieda_fumi_kaidan_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_koinegau__close" size=5 x=880 y=24 width=50 height=50]
 [s]
 *hujieda_fumi_koinegau__close
