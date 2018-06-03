@@ -99,16 +99,22 @@ $(function(){
 
 [glink target="sansaku1" text="散策イベント1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_fumi" text="手紙" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
-[glink target="test_fumi2" text="手紙追加分" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
-[glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
-[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="test_fumi2" text="手紙『怪談』" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target="test_fumi3" text="手紙『<ruby>希<rt>こいねが</rt></ruby>う』" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target="test_fumi4" text="手紙『飛鳥紗代子12_1』" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
 
 [glink target="page_1" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
-;[glink target="page_2" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 graphic="select_waku_x500.png" font_color=black]
+[glink target="page_3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 graphic="select_waku_x500.png" font_color=black]
+;ページをとめます
+@jump target=common_page
+[s]
+
+*page_3
+[glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
 ;ページをとめます
 ;@jump target=common_page
 ;[s]
-
 *common_page
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 graphic="select_waku_x500.png" font_color=black]
 [glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 graphic="select_waku_x500.png" font_color=black]
@@ -271,6 +277,19 @@ $(function(){
 [cm]
 [freeimage layer = 26]
 @jump storage="hujieda/hujieda_fumi.ks" target="hujieda_fumi_kaidan"
+[s]
+
+*test_fumi3
+[cm]
+[freeimage layer = 26]
+@jump storage="hujieda/hujieda_fumi.ks" target="hujieda_fumi_koinegau"
+[s]
+
+
+*test_fumi4
+[cm]
+[freeimage layer = 26]
+@jump storage="hujieda/hujieda_fumi.ks" target="hujieda_fumi_asuka_12_1"
 [s]
 
 *hujieda_bazaar_1
