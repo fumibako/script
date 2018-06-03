@@ -1951,21 +1951,80 @@ $(".1_fore").empty();
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　　　三宮　時子
 [glink target=*hujieda_fumi_koinegau_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
-[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_koinegau__close" size=5 x=880 y=24 width=50 height=50]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_koinegau_close" size=5 x=880 y=24 width=50 height=50]
 [s]
-*hujieda_fumi_koinegau__close
+*hujieda_fumi_koinegau_close
 [cm]
 [clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
 [if exp="f.okeiko_gamen == true"]
 ;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
-  ;[eval exp="f.midoku_list_hairetsu[4][30] = 0"]
+  ;[eval exp="f.midoku_list_hairetsu[4][31] = 0"]
    [freeimage layer = 29]
    @jump storage=&f.viewing_storage target=&f.viewing_target
    [s]
 [endif]
-[手紙藤枝読了 fumi_number=]
+[手紙読了]
 ;=============================================
+
+
+
+;=============================================
+;藤枝ルート１２月１週  飛鳥さんからの手紙
+;=============================================
+*hujieda_fumi_asuka_12_1
+[clearfix]
+[clearstack]
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+『12月1日飛鳥紗代子』(仮)[p]
+[endif]
+[手紙飛鳥]
+;=============================================
+*asuka_fumi121_1
+[名前]さんへ[l][r]
+[r]
+寒さが和らいだ小春日和。[r]
+[名前]さんは穏やかに過ごされているかしら？[r]
+[r]
+私、先日[名前]さんに歌劇にお誘いしたのですが、[r]
+磯野から、[名前]さんを謹慎させているとお返事がありましたの。[r]
+[r]
+旦那様は[名字]家の決定事項に飛鳥家が、[r]
+覆すことがあってはならないとおっしゃいまして[r]
+私が口添えすることを禁止されましたわ。
+[glink target=*asuka_fumi121_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*asuka_fumi121_2
+私は伯母として[名前]さんを諫めるべき立場なのかもしれません。[r]
+けれど当事者でもない私が、何も言うわけにも参りません。 [r]
+そして[名前]さんはお辛い思いをされています。[r]
+[r]
+何をどう書けばよろしいのかと悩みましたが、 [r]
+皆、立場もありますが、[名前]さんの幸せを心から願っています。[r]
+私も、事態が好転することを祈ってますわ。[r]
+[r]
+[名前]さんお健やかにお過ごしください。[r]
+私も[名前]さんの御心が少しでも軽くなりますように願っていますのよ[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子
+[glink target=*hujieda_fumi_koinegau_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*asuka_fumi121_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*asuka_fumi121_close
+[cm]
+[clearfix]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
+  ;[eval exp="f.midoku_list_hairetsu[4][32] = 0"]
+   [freeimage layer = 29]
+   @jump storage=&f.viewing_storage target=&f.viewing_target
+   [s]
+[endif]
+[手紙読了]
+;=============================================
+
 
 
 
@@ -2004,5 +2063,9 @@ $(".1_fore").empty();
 ;◆季節の便り◆
 ;『巡る季節』 9月ごろの手紙　好感度が一定以上
 ;季節の便り『 実りの秋』10月頃の手紙　好感度が一定以上
+
+;◆時子リスト◆
+;『恋は、泡沫の夢、されど』
+;『(こいねが)希　う』
 
 ;=============================================
