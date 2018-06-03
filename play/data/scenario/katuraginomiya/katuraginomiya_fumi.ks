@@ -2088,6 +2088,7 @@
 ;=============================================
 ;葛城宮ルート１１月３週　時子さんからの手紙
 ;=============================================
+[手紙時子]
 *tokiko_fumi_siren_1
 [名字] [名前]さんへ[l][r]
 [r]
@@ -2119,7 +2120,7 @@
 [sp] 　　　　　　　　　　　　　　　　　　　　　　三宮　時子
 ;=============================================
 [glink target=*tokiko_fumi_siren_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
-[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*tokiko_fumi_siren_close_close" size=5 x=880 y=24 width=50 height=50]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*tokiko_fumi_siren_close" size=5 x=880 y=24 width=50 height=50]
 [s]
 *tokiko_fumi_siren_close
 [cm]
