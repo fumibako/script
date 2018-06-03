@@ -1941,7 +1941,7 @@ $(".1_fore").empty();
 *hujieda_fumi_koinegau_3
 追伸[r]
 [r]
-[sp] ２月３週目の日曜日に、[r]
+[sp][ruby text=に]二月[ruby text=さん]三週目の日曜日に、[r]
 お兄様がとある舞台に[名前]さん連れて行ってはどうかとおっしゃるの。[r]
 私もずっと謹慎されてお辛い想いをされているので、[r]
 そろそろ家令も外出されることを許可されるのではないかしら。[r]
@@ -2008,7 +2008,7 @@ $(".1_fore").empty();
 私も[名前]さんの御心が少しでも軽くなりますように願っていますのよ[r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　　　飛鳥紗代子
-[glink target=*hujieda_fumi_koinegau_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*asuka_fumi121_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*asuka_fumi121_close" size=5 x=880 y=24 width=50 height=50]
 [s]
 *asuka_fumi121_close
