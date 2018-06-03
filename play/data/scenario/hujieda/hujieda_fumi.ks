@@ -1888,12 +1888,94 @@ $(".1_fore").empty();
    [s]
 [endif]
 [手紙藤枝読了 fumi_number=]
+;=============================================
 
 
+
+;=============================================
+;２月１週　時子さんから
+;=============================================
+*hujieda_fumi_koinegau
+[clearfix]
+[clearstack]
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+『[ruby text=こいねが]希　う』[p]
+[endif]
+[手紙藤枝 fumi_number=]
+;=============================================
+*hujieda_fumi_koinegau_1
+[名字]　[名前]様へ [l][r]
+[sp]雪解けがまだ遠く、暖かい春の陽を待ちこがれる日々。[r]
+[sp][名前]さんはお元気に過ごされていますか？[r]
+[sp]家人の中には風邪をこじらせるものも少なくありませんので、[r]
+お体には気を付けてくださいませ。[r]
+[r]
+[sp]さて、藤枝様へのお手紙の信頼できる女中に頼もうかとも思いましたが、[r]
+[名前]さん の大事なときですし、私もお力になりたいと思いまして、[r]
+お兄様に頼み、お兄様とミルクホールを訪ねてみましたわ。[r]
+[r]
+[sp]幸いにもお兄様の機転で藤枝様にお手紙を渡せましたし、[r]
+少し話すことが出来ました。[r]
+[glink target=*hujieda_fumi_koinegau_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi_koinegau_2
+[sp]お辛いとは思いますが正直に申し上げます。[r]
+藤枝様はやはり音には出ないように集中されていましたが、[r]
+疲れているご様子でしたわ。[r]
+[sp]私もこのまま倒れてしまうのではなかと心配になったほどです。[r]
+[r]
+[sp]ねえ、けれど、貴方の名前とお手紙を差し出すと、[r]
+満面の笑みを浮かべてこうおっしゃられました。[r]
+[r]
+”僕はまだ大丈夫です。今は未来の為に必要な努力なのだから。[r]
+彼女に伝えて下さい貴方に悲しい想いをさせたけれど、[r]
+たとえ貴方が誰かと結婚されてもどんなに歳を重ねてもずっと[r]
+貴方の幸せを誰よりも願い、祈っていますと”[r]
+[sp]私、感動して目頭が熱くなってしまいましたわ。[r]
+[sp]心から[名前]さんと藤枝様の恋が叶うように祈っています。[r]
+[r]
+[glink target=*hujieda_fumi_koinegau_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi_koinegau_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*hujieda_fumi_koinegau_3
+
+*hujieda_fumi_koinegau_4
+追伸[r]
+[r]
+[sp] ２月３週目の日曜日に、[r]
+お兄様がとある舞台に[名前]さん連れて行ってはどうかとおっしゃるの。[r]
+私もずっと謹慎されてお辛い想いをされているので、[r]
+そろそろ家令も外出されることを許可されるのではないかしら。[r]
+[r]
+[sp] ご一緒にお出掛けましょう。　　　これは約束ですわ。[r]
+[r]
+[r]
+[sp]
+                                                                           三宮　時子[p]
+[glink target=*hujieda_fumi_kaidan_4 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_koinegau__close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*hujieda_fumi_koinegau__close
+[cm]
+[clearfix]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+;◆↓未読or既読リスト配列を既読にf.midoku_list_hairetsu[4(藤枝を示すNumber)][(配列中の位置ナンバー)]
+  ;[eval exp="f.midoku_list_hairetsu[4][30] = 0"]
+   [freeimage layer = 29]
+   @jump storage=&f.viewing_storage target=&f.viewing_target
+   [s]
+[endif]
+[手紙藤枝読了 fumi_number=]
+;=============================================
+
+
+
+;=============================================
 [イベントシーン終了]
 @jump storage="test_hujieda.ks"
 [s]
-
 ;=============================================
 ;◆イベント中の手紙
 ;『鳩の届けた手紙 一』←仮タイトルです。
