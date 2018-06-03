@@ -2080,6 +2080,61 @@
 	[s]
 [endif]
 [手紙葛城宮読了 fumi_number=]
+;=============================================
+
+
+
+
+;=============================================
+;葛城宮ルート１１月３週　時子さんからの手紙
+;=============================================
+*tokiko_fumi_siren_1
+[名字] [名前]さんへ[l][r]
+[r]
+[sp]枯れ葉もすっかり、地面に散り晩秋の名残を感じる頃、[r]
+[名前]さんはどうお過ごしでしょうか？[r]
+[r]
+[sp]葛城宮殿下の事をさぞ[r]
+[名前]さんは心配されていると察しておりますわ。[r]
+[r]
+[sp]今は政変の時ですわね。[r]
+[sp]先帝陛下の御代もそれは大変な時代でしたけれど、[r]
+今も生々しい事件は数多く起こっており、過激な考え方を[r]
+正しいと信じている者も少なくはありません。
+[glink target=*tokiko_fumi_siren_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*tokiko_fumi_siren_2
+[sp]蟷螂団という組織の事もご存じでしょうか？[r]
+[sp]悪い噂をお聞きしてしまいましたわ。[r]
+[p]
+[sp]今、[名前]さんや葛城宮殿下は、[r]
+天から試されているのかも知れませんわ。[r]
+次代を切り開ける器かどうかを。[r]
+[r]
+[sp]今は耐え忍ぶ時でも、きっと明るい未来を[r]
+お二人なら切り開けると信じています。[r]
+[r]
+[sp]お健やかにお過ごしください。[r]
+[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　三宮　時子
+;=============================================
+[glink target=*tokiko_fumi_siren_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*tokiko_fumi_siren_close_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*tokiko_fumi_siren_close
+[cm]
+[clearfix]
+[clearstack]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+	;◆イベント中に読むため未読→既読処理はコメントアウトします。f.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	;[eval exp="f.midoku_list_hairetsu[3][31] = 0"]
+	[freeimage layer = 29]	
+	@jump storage=&f.viewing_storage target=&f.viewing_target
+	[s]
+[endif]
+[手紙読了]
+
 
 [イベントシーン終了]
 @jump storage="test_katuragi.ks"
