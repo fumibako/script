@@ -1902,7 +1902,7 @@ $(".1_fore").empty();
 [テキスト全画面白文字]
 『[ruby text=こいねが]希　う』[p]
 [endif]
-[手紙藤枝 fumi_number=]
+[手紙時子]
 ;=============================================
 *hujieda_fumi_koinegau_1
 [名字]　[名前]様へ [l][r]
@@ -1950,7 +1950,7 @@ $(".1_fore").empty();
 [r]
 [r]
 [sp] 　　　　　　　　　　　　　　　　　　　　　　三宮　時子
-[glink target=*hujieda_fumi_kaidan_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*hujieda_fumi_koinegau_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_koinegau__close" size=5 x=880 y=24 width=50 height=50]
 [s]
 *hujieda_fumi_koinegau__close
