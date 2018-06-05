@@ -2105,8 +2105,10 @@
 [glink target=*tokiko_fumi_siren_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *tokiko_fumi_siren_2
-[sp]蟷螂団という組織の事もご存じでしょうか？[r]
-[sp]悪い噂をお聞きしてしまいましたわ。[r]
+[sp]恐ろしい組織の噂もお聞きしてしまいましたわ。[r]
+[sp]ご存じでしょうか？
+;◆B4nFWraU42さん、手紙の追加と改頁調整をありがとうございます。↑最新版の文章に更新します。
+;◆I9IhvvVdPoさん、イメージに合うよう、調整をお願いいたします。 ◆jsYiJcqRkk
 [r]
 ;[p]でしたが上に入りきれないため移動[r]　修正してください
 [sp]今、[名前]さんや葛城宮殿下は、[r]
