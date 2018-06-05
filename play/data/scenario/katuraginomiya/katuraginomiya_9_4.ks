@@ -276,7 +276,7 @@ $('.junbi_girl').remove();
 控えている女中が緊張した面持ちで私に耳打ちした。[p]
 
 [whosay name="女中" ]
-「怪しい者がいる気がしますが私の気のせいでしょうか？」
+「怪しい者がいる気がしますが私の気のせいでしょうか？」[p]
 
 ;【SE】足音（靴
 [playse storage=walk_kutsu.ogg loop=false ]
@@ -304,7 +304,7 @@ $('.junbi_girl').remove();
 
 [whosay name="女中" ]
 「店員さん、こちらに座らせて頂きますわ。[r]
-お茶をお持ちして頂戴」[p]
+[sp]お茶をお持ちして頂戴」[p]
 
 [whosay name="茶屋店員" ]
 「へい」[p]
@@ -312,7 +312,7 @@ $('.junbi_girl').remove();
 [主人公憂い]
 [whosay name="女中" ]
 「お嬢様、こちらなら安心でしょう、[r]
-しばらく控えておりましょう」[p]
+[sp]しばらく控えておりましょう」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ええ、ここなら安心できそうです」
@@ -340,12 +340,12 @@ $('.junbi_girl').remove();
 
 
 [whosay name="女中" ]
-「お嬢様、お一人などと怪しいです。
+「お嬢様、お一人などと怪しいです。[r]
 騙されてはいけません！」[p]
 
 [主人公通常]
 [主人公眉困り]
-whosay name=&sf.girl_namae color="#cf5a7f"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「……申し訳ありませんが、お断りしますわ」[p]
 [主人公目閉]
 （……不安で胸がつぶれそう）[p]
@@ -391,7 +391,7 @@ whosay name=&sf.girl_namae color="#cf5a7f"]
 [whosay name="下品な男" ]
 「ふん、格下の女中が何を偉そうに！」[p]
 
-whosay name=&sf.girl_namae color="#cf5a7f"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「きゃあ！」[p]
 
 #
