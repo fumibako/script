@@ -102,6 +102,7 @@ $(function(){
 [glink target="test_fumi2" text="手紙『怪談』" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_fumi3" text="三宮家・手紙『<ruby>希<rt>こいねが</rt></ruby>　う』" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_fumi4" text="飛鳥家・手紙『幸運を』" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="test_fumi5" text="文矢・手紙『未来を信じて』" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 graphic="select_waku_x500.png" font_color=black]
 
 [glink target="page_1" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
 [glink target="page_3" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=450 graphic="select_waku_x500.png" font_color=black]
@@ -291,6 +292,12 @@ $(function(){
 [cm]
 [freeimage layer = 26]
 @jump storage="hujieda/hujieda_fumi.ks" target="hujieda_fumi_asuka_12_1"
+[s]
+
+*test_fumi5
+[cm]
+[freeimage layer = 26]
+@jump storage="hujieda/hujieda_fumi.ks" target="*fumiya_fumi_future"
 [s]
 
 *hujieda_bazaar_1
