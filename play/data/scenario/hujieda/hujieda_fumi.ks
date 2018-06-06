@@ -1891,6 +1891,63 @@ $(".1_fore").empty();
 ;=============================================
 
 
+;===============================================
+;文矢から 
+;==============================================
+*fumiya_fumi_future
+[clearfix]
+[clearstack]
+[if exp="f.okeiko_gamen != true"]
+[テキスト全画面白文字]
+『未来を信じて』[p]
+[endif]
+[手紙文矢]
+;=============================================
+*fumi_fumiya_future_1
+[名前]へ[l][r]
+[r]
+[sp]新しく年が始まり、慌ただしい日々も落ち着きつつあるこの頃。[r]
+[sp][名前]は穏やかに過ごしているでしょうか？[r]
+[sp]磯野から友人に励まされ、健やかに過ごしているとの[r]
+便りが来て僕も少し安心しました。
+;[p] でしたのでここでページ変更
+[glink target=*fumi_fumiya_future_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumi_fumiya_future_2
+;[sp]がないと[r]が効かないため追加。改行しない場合は[sp][r]を消してください。
+[sp][r]
+[sp][名前]は藤枝君の事を今どう思っていますか？[r]
+[sp]僕は[名前] が自分の答えを出し歩み始めたと信じています。[r]
+[r]
+[sp]苦しみや悲しみを乗り越えて、[r]
+相手や周囲の幸せを心から願い努力したときは人の心を打ち、[r]
+また周囲に幸せを運ぶと僕は信じています。[r]
+[r]
+[sp]周囲の人を信頼して努力を続けて下さい。[r]
+[sp]きっと [名前]は未来を切り開けるでしょう。[r]
+[sp] 　　　　　　　　　　　　　　　　　　　　　　[名字]　文矢
+[glink target=*fumi_fumiya_future_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_fumiya_future_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*fumi_fumiya_future__close
+[cm]
+[clearfix]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+   [freeimage layer = 29]
+   @jump storage=&f.viewing_storage target=&f.viewing_target
+   [s]
+[endif]
+[手紙読了]
+;=============================================
+;テストがおわったら削除↓
+[if exp="f.okeiko_gamen != true"]
+[イベントシーン終了]
+@jump storage="test_hujieda.ks"
+[endif]
+
+
+
 
 ;=============================================
 ;２月１週　時子さんから
@@ -2029,11 +2086,8 @@ $(".1_fore").empty();
 [endif]
 [手紙読了]
 ;=============================================
-;テストがおわったら削除↓
-[if exp="f.okeiko_gamen != true"]
-[イベントシーン終了]
-@jump storage="test_hujieda.ks"
-[endif]
+
+
 
 
 
