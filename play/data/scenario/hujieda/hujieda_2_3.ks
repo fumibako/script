@@ -349,7 +349,7 @@
 
 #
 時子さんの優しさと気遣いが、[ruby text=ばん]万[ruby text=かん]感
-胸に迫り、一言を紡ぐ[p]
+胸に迫り、一言を紡ぐ。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
