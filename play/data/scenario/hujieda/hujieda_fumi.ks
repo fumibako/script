@@ -1929,7 +1929,7 @@ $(".1_fore").empty();
 [glink target=*fumi_fumiya_future_1 text="←" size=10 x=110 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_fumiya_future_close" size=5 x=880 y=24 width=50 height=50]
 [s]
-*fumi_fumiya_future__close
+*fumi_fumiya_future_close
 [cm]
 [clearfix]
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
