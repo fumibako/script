@@ -2055,7 +2055,7 @@ $(".1_fore").empty();
 [r]
 旦那様からは、私が口添えすることを禁じられましたわ。[r]
 [名字]家の決定事項に飛鳥家が口を出すことは[r]
-あってはならないとおっしゃいましたの。[p]
+あってはならないとおっしゃいましたの。
 ;↑◆B4nFWraU42さん、手紙のテスト追加作業をありがとうございます。最新版の文章に更新します。◆jsYiJcqRkk
 [glink target=*asuka_fumi121_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
