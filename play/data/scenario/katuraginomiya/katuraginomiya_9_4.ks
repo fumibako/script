@@ -567,7 +567,7 @@ $('.junbi_girl').remove();
 
 [主人公憂い]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「貴方の[ruby text=せ]所[ruby text=い]為ではないです……[r]
+「殿下の[ruby text=せ]所[ruby text=い]為ではないです……[r]
 [sp]私が[ruby text=いた]至らなかったのですわ」[p]
 
 #
