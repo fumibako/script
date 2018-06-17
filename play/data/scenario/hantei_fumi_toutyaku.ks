@@ -954,6 +954,14 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_fumiya_1
 [endif]
+
+;◆1月2週　藤枝ルート(f.fumi_toutyaku_tokiko[6]はエラー防止のため時子さんの配列を借りています)
+[if exp="f.okeiko_month == 1 && f.okeiko_week == 2 && f.fumi_toutyaku_tokiko[6] == 0 && f.hujieda_au == 1"]
+	[eval exp="f.fumi_toutyaku_oaite.push('文矢様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_fumiya_2
+[endif]
+
 *fumi_toutyaku_hantei_fumiya_owari
 *fumi_toutyaku_hantei_etc_owari
 
