@@ -1954,6 +1954,19 @@ f.fumi_toutyaku_tokiko[5] = 1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_fumiya_owari
 
+*fumi_toutyaku_fumiya_2
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「未来を信じて」 文矢";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*fumiya_fumi_future");
+f.fumi_list_all_location_taishou.push(5);
+f.fumi_list_all_location_fumi.push(0);
+f.fumi_all_number=f.fumi_all_number + 1;
+;↓到着判定にはhensuu.ksで定義済の配列が必要かつ文矢の配列は無いため時子さんの配列を借りています(今からhensuu.ksに追加するとロードエラーになってしまうので避けます)
+f.fumi_toutyaku_tokiko[6] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_fumiya_owari
 
 ;=============================================
 ;5文矢、6時子、7飛鳥紗代子、8侍従、9葛城宮妃殿下、10皇后さま、11従妹宮f.fumi_list_all_location_taishou.push();
