@@ -851,6 +851,14 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_tokiko_hujieda
 [endif]
+
+; 5 6 文矢
+;◆藤枝ルート　２月１週　時子さんから『 [ruby text=こいねが]希　う 』
+[if exp="(f.okeiko_month == 2 && f.okeiko_week == 1) && f.fumi_toutyaku_tokiko[7] == 0 && f.hujieda_au == 1"]
+	[eval exp="f.fumi_toutyaku_oaite.push('三宮様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_tokiko_hujieda_2
+[endif]
 *fumi_toutyaku_hantei_owari
 
 *fumi_toutyaku_hantei_asuka
