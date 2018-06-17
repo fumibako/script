@@ -1937,6 +1937,18 @@ f.fumi_toutyaku_asuka[6] = 1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
 
+*fumi_toutyaku_asuka_7
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「幸運を」飛鳥 紗代子"; //←仮タイトルです。ご自由に変更してください(スクリプト担
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi_asuka_12_1");
+f.fumi_list_all_location_taishou.push(7);
+f.fumi_list_all_location_fumi.push(7);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_asuka[7] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka_owari
 ;=============================================
 ;◆兄（文矢）からの手紙：
 ;=============================================
