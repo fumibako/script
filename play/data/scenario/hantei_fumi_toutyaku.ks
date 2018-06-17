@@ -905,7 +905,7 @@ f.okeiko_month_kansuuji="三月 ";
 [if exp="f.okeiko_month == 12 && f.okeiko_week == 1 && f.hujieda_au == 1 && f.fumi_toutyaku_asuka[6] == 0"]
 	[eval exp="f.fumi_toutyaku_oaite.push('飛鳥様')"]
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
-   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_6
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_asuka_7
 [endif]
 
 *fumi_toutyaku_hantei_asuka_owari
