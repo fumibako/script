@@ -1842,7 +1842,22 @@ f.fumi_all_number=f.fumi_all_number + 1;
 f.fumi_toutyaku_tokiko[1] = 1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka
-
+;=============================================
+;◆時子さんからの手紙：藤枝ルート ２月１週
+;=============================================
+*fumi_toutyaku_tokiko_hujieda_2
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「<ruby>希<rt>こいねが</rt></ruby>　う」　三宮 時子";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
+f.fumi_list_all_target.push("*hujieda_fumi_koinegau");
+f.fumi_list_all_location_taishou.push(6);
+f.fumi_list_all_location_fumi.push(3);
+f.fumi_all_number=f.fumi_all_number + 1;
+;f.fumi_toutyaku_tokiko[7] = 1;
+[endscript]
+;5 6　文矢
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka
 ;=============================================
 ;◆飛鳥紗代子さんからの手紙：
 ;=============================================
