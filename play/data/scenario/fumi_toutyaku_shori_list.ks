@@ -1854,7 +1854,7 @@ f.fumi_list_all_target.push("*hujieda_fumi_koinegau");
 f.fumi_list_all_location_taishou.push(6);
 f.fumi_list_all_location_fumi.push(3);
 f.fumi_all_number=f.fumi_all_number + 1;
-;f.fumi_toutyaku_tokiko[7] = 1;
+f.fumi_toutyaku_tokiko[7] = 1;
 [endscript]
 ;5 6　文矢
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka
