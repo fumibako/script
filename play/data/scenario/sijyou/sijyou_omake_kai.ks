@@ -139,7 +139,7 @@ $('.loding_pic').remove();
 [sp]アイツらならヘマもしないだろ！？」[p]
 [whosay name="華織" color="olivedrab"]
 「大切な人の荷物も運べずして、何ができる？[r]
-[sp]華衣は、いまいち行動に重みがないね」[p]
+[sp][華衣]は、いまいち行動に重みがないね」[p]
 ;高度なダジャレ？
 [whosay name="四条 華衣" color=%mp.color]
 「！　…… わかったよ！ 運ぶに決まってるだろ？！」[p]
@@ -177,7 +177,7 @@ $('.loding_pic').remove();
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [whosay name="四条 華衣" color=%mp.color]
 「……なんだよ、昔は[r]
-[sp]『華衣、忘れ物はないかい？きちんと歯は磨いたかい？』[r]
+[sp]『[華衣]、忘れ物はないかい？きちんと歯は磨いたかい？』[r]
 [sp]って[ruby text=うるさ]煩かったのに」[p]
 ;ガサゴソSE
 [whosay name="四条 華衣" color=%mp.color]
