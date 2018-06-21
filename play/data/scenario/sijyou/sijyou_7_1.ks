@@ -211,11 +211,11 @@
 （お箏が上手になりますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
 [playse storage=kira.ogg loop=false ]
-[eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 5"]
+[eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 1"]
 [eval exp="f.para_shujinkou_j_koto=f.para_shujinkou_j_koto + 1"]
-;[eval exp="f.sansaku_machi_seika_txt='箏が１上がりました'"]
+;[eval exp="f.sansaku_machi_seika_txt='お箏が１上がりました'"]
 ;[eval exp="f.event_cmn_seika_txt='『鳥君』への気持ちが１高まりました'"]
-[eval exp="f.event_cmn_seika_txt='箏が１上がりました'"]
+[eval exp="f.event_cmn_seika_txt2='お箏が１上がりました'"]
 ;スキップフラグ
 [eval exp="tf.not_wish = 0"]
 [wait time=10]
@@ -264,7 +264,7 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 [eval exp="f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo + 1"] 
 [else]
 [eval exp="f.para_shujinkou_shukujodo=f.para_shujinkou_shukujodo + 1"] 
-[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 10"]
+[eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
 [endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
