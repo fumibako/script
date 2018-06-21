@@ -854,7 +854,10 @@ f.okeiko_month_kansuuji="三月 ";
 
 ; 5 6 文矢
 ;◆藤枝ルート　２月１週　時子さんから『 [ruby text=こいねが]希　う 』
-[if exp="(f.okeiko_month == 2 && f.okeiko_week == 1) && f.fumi_toutyaku_tokiko[7] == 0 && f.hujieda_au == 1"]
+;↓hensuu.ksにてf.fumi_toutyaku_tokiko配列は[6]まで初期値0と定義していますが、[7]以降は未定義ですね。
+;今から定義すると、プレイ中の方はエラーになってしまいそうなので、githubにて備考に書いてくださったように、
+;f.fumi_toutyaku_tokiko[7] != 1で対処します。◆B4nFWraU42さん、考察とご意見をありがとうございます。
+[if exp="(f.okeiko_month == 2 && f.okeiko_week == 1) && f.fumi_toutyaku_tokiko[7] != 1 && f.hujieda_au == 1"]
 	[eval exp="f.fumi_toutyaku_oaite.push('三宮様')"]
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_tokiko_hujieda_2
