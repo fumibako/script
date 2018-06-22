@@ -163,12 +163,15 @@ $(".layer_2").css("opacity",0);
 $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")','background-size' : '100% 100%', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
 [endscript]
 
+
 *clear_notice
 ;一つ以上のルートをクリアしていればお知らせスキップ
 [if exp="(sf.ED_sijyou_normal == 1 && sf.ED_sijyou_good == 1 && sf.ED_sijyou_bad == 1) || (sf.ED_zaizen_normal == 1 && sf.ED_zaizen_good == 1 && sf.ED_zaizen_bad2 == 1 && sf.ED_zaizen_bad1 == 1) || (sf.ED_kuroda_normal == 1 && sf.ED_kuroda_good == 1 && sf.ED_kuroda_bad == 1) || (sf.ED_katuraginomiya_normal == 1 && sf.ED_katuraginomiya_good == 1 && sf.ED_katuraginomiya_bad == 1) || (sf.ED_hujieda_normal == 1 && sf.ED_hujieda_good == 1 && sf.ED_hujieda_bad == 1 && sf.ED_hujieda_bad2 == 1)"]
 	@jump target=*clear_notice_skip
 [endif]
-[ptext layer=2 name="list,osirase" page=fore text="どなたかのエンディング全て(good・normal・bad)を見ると…？" x=499 y=420 size=16 color=navy visible=true]
+[ptext layer=2 name="list,osirase" page=fore text="「イベント達成率」を押すとヒント・攻略情報を見ることができます" x=499 y=420 size=16 color=navy visible=true]
+[ptext layer=2 name="list,osirase" page=fore text="攻略のヒント・情報はゲーム内「情報」からもご覧いただけます" x=499 y=460 size=16 color=navy visible=true]
+[ptext layer=2 name="list,osirase" page=fore text="どなたかのエンディング全て(good・normal・bad)を見ると…？" x=499 y=500 size=16 color=navy visible=true]
 
 *clear_notice_skip
 
