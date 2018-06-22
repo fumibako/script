@@ -82,7 +82,7 @@
 ;名前が無い場合、先に入力する
 [endif]
 [r][r]
-[font size=31]
+[font size=29]
 [link target=*name]名前入力から始める[endlink][r]
 [r][r][r]
 [link target=*plo]プロローグから始める[endlink][r]
