@@ -192,7 +192,9 @@ if (mp.name!="") {
 [ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=26 x=260 y=&sf.message_name_y bold="bold"]
 ;[ptext name="chara_name_area" layer=message0 text=%name color=%color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
 [endmacro]
-
+;[主人公ポーズ四条ピンク通常][主人公ポーズ四条ピンク指][主人公ポーズ四条緑通常][主人公ポーズ四条緑指]
+;[主人公ポーズ四条紫通常][主人公ポーズ四条紫指][主人公ポーズ四条紫片手]
+;[主人公ポーズ財前ドレス通常][主人公ポーズ財前ドレス片手]
 ;[主人公ポーズ財前ED通常][主人公ポーズ財前ED片手][主人公ポーズ財前ED両手]
 ;[主人公ポーズ通常][主人公ポーズ指][主人公ポーズ片手][主人公ポーズ両手][主人公退場]
 ;[主人公通常][主人公伏目][主人公驚][主人公困り][主人公困りほほえみ][主人公照れ][主人公照れ目普通][主人公ほほえみ]
@@ -296,6 +298,74 @@ if (mp.name!="") {
 [eval exp="f.kaogura='on'"]
 [endmacro]
 
+;◆◆◆ 四条Goodエピローグピンク ◆◆◆
+
+;立ち絵表示[主人公ポーズ四条ピンク通常]
+[macro name="主人公ポーズ四条ピンク通常"]
+[chara_mod name="girl_base" storage="girl/S/base_sED_pink.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
+;立ち絵表示[主人公ポーズ四条ピンク指]
+[macro name="主人公ポーズ四条ピンク指"]
+[chara_mod name="girl_base" storage="girl/S/base_sED_pink.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="girl/S/yubi_sED_pink.png" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
+;◆◆◆ 四条Goodエピローグ緑 ◆◆◆
+;立ち絵表示[主人公ポーズ四条緑通常]
+[macro name="主人公ポーズ四条緑通常"]
+[chara_mod name="girl_base" storage="girl/S/base_sED_green.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
+;立ち絵表示[主人公ポーズ四条緑指]
+[macro name="主人公ポーズ四条緑指"]
+[chara_mod name="girl_base" storage="girl/S/base_sED_green.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="girl/S/yubi_sED_green.png" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
+;◆◆◆ 四条展覧会紫 ◆◆◆
+;立ち絵表示[主人公ポーズ四条紫通常]
+[macro name="主人公ポーズ四条紫通常"]
+[chara_mod name="girl_base" storage="girl/S/base_sTenran.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
+;立ち絵表示[主人公ポーズ四条紫指]
+[macro name="主人公ポーズ四条紫指"]
+[chara_mod name="girl_base" storage="girl/S/base_sTenran.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="girl/S/yubi_sTenran.png" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
+;立ち絵表示[主人公ポーズ四条紫片手]
+[macro name="主人公ポーズ四条紫片手"]
+[chara_mod name="girl_base" storage="girl/S/base_sTenran.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="girl/S/katate_sTenran.png" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
+;◆◆◆ 財前ドレス ◆◆◆
 ;立ち絵表示[主人公ポーズ財前ドレス通常]
 [macro name="主人公ポーズ財前ドレス通常"]
 [chara_mod name="girl_base" storage="girl/S/base_zDress.png" time=0]
@@ -314,6 +384,7 @@ if (mp.name!="") {
 [eval exp="f.kaogura='on'"]
 [endmacro]
 
+;◆◆◆ 財前エンディング ◆◆◆
 ;立ち絵表示[主人公ポーズ財前ED通常]
 [macro name="主人公ポーズ財前ED通常"]
 [chara_mod name="girl_base" storage="girl/S/base_zED.png" time=0]

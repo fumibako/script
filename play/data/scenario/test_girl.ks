@@ -53,18 +53,35 @@
 [glink target=text text="通常" graphic="select_waku_x500.png" size=10 width="35" x=0 y=30 font_color=steelblue exp="f.gra_girl_base='normal'"]
 [glink target=pose_zED_01 text="財前ED" graphic="select_waku_x500.png" size=10 width="35" x=70 y=30 font_color=steelblue exp="f.gra_girl_base='zED'"]
 [glink target=pose_zDress_01 text="財前ドレス" graphic="select_waku_x500.png" size=10 width="35" x=140 y=30 font_color=steelblue exp="f.gra_girl_base='zDress'"]
-[glink target=text text="四条ED" graphic="select_waku_x500.png" size=10 width="35" x=0 y=60 font_color=steelblue exp="f.gra_girl_base='sED'"]
-[glink target=text text="四条お出かけ" graphic="select_waku_x500.png" size=10 width="35" x=70 y=60 font_color=steelblue exp="f.gra_girl_base='sKimono'"]
-[glink target=text text="葛城宮ED" graphic="select_waku_x500.png" size=10 width="35" x=140 y=60 font_color=steelblue exp="f.gra_girl_base='kED'"]
-[glink target=text text="葛城お出かけ" graphic="select_waku_x500.png" size=10 width="35" x=210 y=60 font_color=steelblue exp="f.gra_girl_base='kKimono'"]
-[glink target=text text="藤枝お出かけ1" graphic="select_waku_x500.png" size=10 width="35" x=0 y=90 font_color=steelblue exp="f.gra_girl_base='hKimono1'"]
-[glink target=text text="藤枝お出かけ2" graphic="select_waku_x500.png" size=10 width="35" x=70 y=90 font_color=steelblue exp="f.gra_girl_base='hKimono2'"]
+[glink target=pose_sPink_01 text="四条ピンク" graphic="select_waku_x500.png" size=10 width="35" x=0 y=60 font_color=steelblue exp="f.gra_girl_base='sED_pink'"]
+[glink target=pose_sGreen_01 text="四条緑" graphic="select_waku_x500.png" size=10 width="35" x=70 y=60 font_color=steelblue exp="f.gra_girl_base='sED_green'"]
+[glink target=pose_sPurple_01 text="四条展覧会" graphic="select_waku_x500.png" size=10 width="35" x=140 y=60 font_color=steelblue exp="f.gra_girl_base='sTenran'"]
+;[glink target=text text="葛城宮ED" graphic="select_waku_x500.png" size=10 width="35" x=140 y=60 font_color=steelblue exp="f.gra_girl_base='kED'"]
+;[glink target=text text="葛城お出かけ" graphic="select_waku_x500.png" size=10 width="35" x=210 y=60 font_color=steelblue exp="f.gra_girl_base='kKimono'"]
+;[glink target=text text="藤枝お出かけ1" graphic="select_waku_x500.png" size=10 width="35" x=0 y=90 font_color=steelblue exp="f.gra_girl_base='hKimono1'"]
+;[glink target=text text="藤枝お出かけ2" graphic="select_waku_x500.png" size=10 width="35" x=70 y=90 font_color=steelblue exp="f.gra_girl_base='hKimono2'"]
 
 [if exp="f.gra_girl_base=='normal'"]
 [glink target="pose_01" text="[主人公ポーズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
 [glink target="pose_02" text="[主人公ポーズ片手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 font_color=black]
 [glink target="pose_03" text="[主人公ポーズ両手]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 font_color=black]
 [glink target="pose_04" text="[主人公ポーズ指]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 font_color=black]
+[endif]
+
+[if exp="f.gra_girl_base=='sED_pink'"]
+[glink target="pose_sPink_01" text="[主人公ポーズ四条ピンク通常]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=150 font_color=black]
+[glink target="pose_sPink_02" text="[主人公ポーズ四条ピンク指]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=180 font_color=black]
+[endif]
+
+[if exp="f.gra_girl_base=='sED_green'"]
+[glink target="pose_sGreen_01" text="[主人公ポーズ四条緑通常]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=150 font_color=black]
+[glink target="pose_sGreen_02" text="[主人公ポーズ四条緑指]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=180 font_color=black]
+[endif]
+
+[if exp="f.gra_girl_base=='sTenran'"]
+[glink target="pose_sPurple_01" text="[主人公ポーズ四条紫通常]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=150 font_color=black]
+[glink target="pose_sPurple_02" text="[主人公ポーズ四条紫指]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=180 font_color=black]
+[glink target="pose_sPurple_03" text="[主人公ポーズ四条紫片手]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=210 font_color=black]
 [endif]
 
 [if exp="f.gra_girl_base=='zED'"]
@@ -182,6 +199,40 @@ this.kag.variable.tf.system.backlog.pop();
 [eval exp="f.gra_girl_part='emo'"]
 @jump target=text
 
+*pose_sPink_01
+[主人公ポーズ四条ピンク通常]
+[eval exp="f.gra_girl_pose='[主人公ポーズ四条ピンク通常]'"]
+@jump target=text
+
+*pose_sPink_02
+[主人公ポーズ四条ピンク指]
+[eval exp="f.gra_girl_pose='[主人公ポーズ四条ピンク指]'"]
+@jump target=text
+
+*pose_sGreen_01
+[主人公ポーズ四条緑通常]
+[eval exp="f.gra_girl_pose='[主人公ポーズ四条緑通常]'"]
+@jump target=text
+
+*pose_sGreen_02
+[主人公ポーズ四条緑指]
+[eval exp="f.gra_girl_pose='[主人公ポーズ四条緑指]'"]
+@jump target=text
+
+*pose_sPurple_01
+[主人公ポーズ四条紫通常]
+[eval exp="f.gra_girl_pose='[主人公ポーズ四条紫通常]'"]
+@jump target=text
+
+*pose_sPurple_02
+[主人公ポーズ四条紫指]
+[eval exp="f.gra_girl_pose='[主人公ポーズ四条紫指]'"]
+@jump target=text
+
+*pose_sPurple_03
+[主人公ポーズ四条紫片手]
+[eval exp="f.gra_girl_pose='[主人公ポーズ四条紫片手]'"]
+@jump target=text
 
 *pose_zDress_01
 [主人公ポーズ財前ドレス通常]
