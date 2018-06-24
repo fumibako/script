@@ -522,7 +522,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 「今はまだ政変の時代であり何が起こってもおかしくない。[r]
 [sp]……そう、特に軍部には注意しなくてはならない」[p]
 
-「そして[名前]、お前の言動さえも殿下の弱点にる事もある。[r]
+「そして[名前]、お前の言動さえも殿下の弱点になる事もある。[r]
 [sp]心しておきなさい」[p]
 
 ;【立ち絵】主人公 微笑み
