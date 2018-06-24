@@ -7,8 +7,9 @@
 [stopbgm]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [call target=*first storage="sijyou/preload_sijyou.ks"]
+;◆展覧会：[主人公ポーズ四条紫通常][主人公ポーズ四条紫指][主人公ポーズ四条紫片手]
 [イベントシーン構築]
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 [主人公通常]
 ;テスト用イベントシーン構築ここまで
 テストページからはじめます[p]
@@ -405,7 +406,7 @@
 ;[暗転]
 [bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg"]
 [イベントシーン構築]
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 [主人公通常]
 @jump storage="sijyou/sijyou_3_1b.ks" target=*modoru
 ;四条 華織と文矢
