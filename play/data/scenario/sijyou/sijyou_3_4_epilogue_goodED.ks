@@ -152,10 +152,10 @@ $('.list').remove();
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_mu.png" time=0]
 [wait time=10]
 なかなか決まりませんね」[p]
-
+；◆Goodエピローグ：[主人公ポーズ四条ピンク通常][主人公ポーズ四条ピンク指][主人公ポーズ四条緑通常][主人公ポーズ四条緑指]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
-[主人公ポーズ通常]
+[主人公ポーズ四条ピンク通常]
 [主人公通常]
 [wait time=10]
 [iscript]
@@ -196,7 +196,7 @@ $('.junbi_girl').remove();
 [主人公目パチ1回]
 [wait time=10]
 [endif]
-[主人公ポーズ指]
+[主人公ポーズ四条ピンク指]
 [wait time=10]
 ;なにかしらと読み
 
@@ -212,7 +212,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [endif]
 「事故の少ない交通機関の発展にも貢献しているそうですよ」[p]
-[主人公ポーズ通常]
+[主人公ポーズ四条ピンク通常]
 
 ;[四条効果消]
 [chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
