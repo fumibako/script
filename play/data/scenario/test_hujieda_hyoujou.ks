@@ -50,7 +50,7 @@ $('.list').remove();
 [ptext name=list text="ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
 [ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
 [ptext name=irast text="Illustration　by :◆jsYiJcqRkk" layer=24 size=10 x=420 y=1 color=black bold=bold]
-[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=260 color=black bold=bold]
+[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=270 color=black bold=bold]
 [ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
 
 *text
@@ -61,7 +61,8 @@ $('.list').remove();
 [glink name=list target="pose_01" text="[藤枝ベース郵便屋]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
 [glink name=list target="pose_03" text="[藤枝ベース郵便屋_手紙無し]" graphic="select_waku_x500.png" size=12 width="160" x=0 y=180 font_color=black]
 [glink name=list target="pose_02" text="[藤枝ベース私服]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 font_color=black]
-[glink name=list target="pose_04" text="[藤枝ベース私服_楽譜無し]" graphic="select_waku_x500.png" size=12 width="160" x=0 y=240 font_color=black]
+[glink name=list target="pose_04" text="[～楽譜無し]" graphic="select_waku_x500.png" size=11 width="65" x=0 y=240 font_color=black]
+[glink name=list target="pose_05" text="[～コリウス]" graphic="select_waku_x500.png" size=12 width="60" x=90 y=240 font_color=black]
 
 [glink name=list target="face_01" text="[藤枝通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 font_color=black]
 [glink name=list target="face_09" text="[藤枝笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 font_color=black]
@@ -248,6 +249,11 @@ $(".layer_free").css("opacity",1);
 *pose_04
 [藤枝ベース私服_楽譜無し]
 [eval exp="f.gra_hujieda_pose='[藤枝ベース私服_楽譜無し]'"]
+@jump target=text
+
+*pose_05
+[藤枝ベース私服_コリウス]
+[eval exp="f.gra_hujieda_pose='[藤枝ベース私服_コリウス]'"]
 @jump target=text
 
 *face_01

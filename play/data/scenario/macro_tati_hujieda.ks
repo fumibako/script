@@ -170,6 +170,13 @@
 [eval exp="tf.fujieda_base='藤枝ベース私服_楽譜無し'"]
 [endmacro]
 
+;立ち絵表示[藤枝ベース私服_コリウス]
+[macro name="藤枝ベース私服_コリウス"]
+[chara_mod name="hujieda_base" storage="hujieda/base_sifuku_coleus.png" time=0]
+[wait time=10]
+[eval exp="tf.fujieda_base='藤枝ベース私服_コリウス'"]
+[endmacro]
+
 
 ;立ち絵表示[藤枝通常]
 [macro name="藤枝通常"]
