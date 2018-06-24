@@ -153,7 +153,7 @@ $('.list').remove();
 [wait time=10]
 なかなか決まりませんね」[p]
 ;◆Goodエピローグ：[主人公ポーズ四条ピンク通常][主人公ポーズ四条ピンク指][主人公ポーズ四条緑通常][主人公ポーズ四条緑指]
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+;[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
 [主人公ポーズ四条ピンク通常]
 [主人公通常]
