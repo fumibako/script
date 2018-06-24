@@ -4,6 +4,7 @@
 ;暗転プリロードサブルーチン
 [call target=*3_1 storage="sijyou/preload_sijyou.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
+;◆展覧会：[主人公ポーズ四条紫通常][主人公ポーズ四条紫指][主人公ポーズ四条紫片手][主人公ポーズ片手]
 ;=================================================================================_
 *first
 [er]
@@ -504,7 +505,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 ;～～～～～～～～～～～～～～～シーン主人公準備はじめ～～～～～～～～～～～～～～～～
 ;主人公部屋
 [背景_庭]
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 [主人公目閉]
 [wait time=10]
 [freeimage layer=29 time=0]
@@ -531,14 +532,14 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [sp][名前]も、好きな人のこととなると、せっかちになるのだな」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公照れ目普通]
-[主人公ポーズ片手]
+[主人公ポーズ四条紫片手]
 「まあ、お父様。 私を誰と、お比べなのですか？」[p]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「こちらに来くれば、わかるだろう」[p]
 #
 [暗転]
 ;[chara_mod name="bg" storage="toumei.gif"]
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 [主人公目閉]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （どなたかお待ちなのかしら？ [r]
@@ -548,7 +549,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 はやる気持ちのまま、父の後ろをついて歩いた。[p]
 ;～～～～～～～～淑女度高い～～～～～～～～～～
 [else]
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 [主人公目閉]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -570,7 +571,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「では、向かおうか。先に待っている者がいるからな」[p]
 #
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 [主人公目閉]
 [暗転]
 ;[chara_mod name="bg" storage="toumei.gif"]
@@ -692,22 +693,22 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 「そ、そうかしら？[sp]これくらい、淑女として当然です」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公通常]
-[主人公ポーズ片手]
+[主人公ポーズ四条紫片手]
 （それにしても、こちらの作品は、自然の風景をそのまま切り取ったような[r]
 [sp]情緒あふれる生け方をされているわ）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ポーズ指]
+[主人公ポーズ四条紫指]
 [主人公ふぅ閉]
 （こういった表現は、基本ではあるけれど、とても技術や表現力が必要なのよね）[p]
 ;華道オタクさを半減↓
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 [主人公真剣]
 （私も、華織様を支えられるように精進しなくては……！）[p]
 ;～～華道パラ普通の場合～～[p]
 [else]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 [主人公ほほえみ]
 （本当に、素敵な作品だわ）[p]
 #
@@ -812,12 +813,12 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「うむ。楽しませてもらおう」[p]
 [主人公横目]
-[主人公ポーズ片手]
+[主人公ポーズ四条紫片手]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様は、どこにいらっしゃるのかしら？）[p]
 [whosay name=四条祖母 color=%mp.color]
 「[名前]さん。
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 華織は、先生方に頼まれて、演説の準備をして[r]
 [sp]いますので、もう少しお待ち頂けないでしょうか？」[p]
 ;主人公気付かれて恥ずかしい、戸惑い
@@ -1039,7 +1040,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [wait time=10]
 ;お正月の手紙のことを思い出す主人公
 #
-[主人公ポーズ指]
+[主人公ポーズ四条紫指]
 [主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、お正月のお手紙には、[r]
@@ -1049,7 +1050,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そうですわよね。[r]
 [sp]自由にお出掛けを許してもらう事だけでは、ないですわよね……）[p]
-[主人公ポーズ通常]
+[主人公ポーズ四条紫通常]
 ;主人公柔
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
