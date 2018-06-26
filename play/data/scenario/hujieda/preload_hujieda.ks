@@ -510,6 +510,8 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_fusi2.png" wait=true]
 ;【効果】ピアノベース藤枝(目のみ閉じ2)合体表示
 [preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_toji.png" wait=true]
+;【立ち絵】ベースコリウス差分
+[preload storage="data/fgimage/hujieda/base_sifuku_coleus.png" wait=true]
 
 ;======================================================================================
 @jump target=end_sub
