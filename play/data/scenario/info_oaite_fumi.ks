@@ -86,6 +86,12 @@
 
 *start
 *fumibako
+[iscript]
+if (typeof f.fumi_report_info === "undefined") {
+	f.fumi_report_info=[]; //主人公手紙履歴用配列:未定義の場合のみ定義
+}
+[endscript]
+
 ;↓文箱機能内表示を自然に切り替えるため文箱背景レイヤはfreeimageから除きます
 ;[freeimage layer = 26]
 [freeimage layer = 27]
