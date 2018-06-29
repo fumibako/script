@@ -2138,6 +2138,78 @@
 	[s]
 [endif]
 [手紙読了]
+;=============================================
+
+
+*fumiya_fumi_siren
+;=============================================
+;葛城宮ルート１１月３週　時子さんの手紙と同時に文矢から届く手紙『試練と変革』
+;=============================================
+[手紙文矢]
+*fumiya_fumi_siren_1
+[名前]へ[l][r]
+[r]
+[sp]今、そちらは北風が吹く頃 でしょうか？[r]
+[名前]は健やかに過ごしていますか？[r]
+[r]
+[sp]父や磯野から[名前]の事を知らされ[r]
+[名前]も大人になったのだと、[r]
+成長を喜ばしく思っています。[r]
+[r]
+[sp]葛城宮殿下はきっと、[名前]を巻き込まない[r]
+ようにお気遣い下さっていると思います。[r]
+政変について、何もおっしゃらないのではありませんか？[r]
+けれど、僕は[名前]も物事を理解した方がいいと思います。
+[glink target=*fumiya_fumi_siren_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumiya_fumi_siren_2
+[sp]今、政府では二つの派閥が対立しています。[r]
+一、植民地を作り豊かにしようと考える海軍派[r]
+二、産業を豊かにしようと考える新政府与党派[r]
+葛城宮殿下は政府与党であり海軍にも所属しています。[r]
+[r]
+[sp]殿下は与党の考えに賛同しているようです。[r]
+ですが、海軍は簡単には引き下がらないでしょう。[r]
+[sp]今、海軍で発言力を持つのは海軍大臣ですが、[r]
+その陰に大きな人物がいます。[r]
+[r]
+[sp]国を守る為にも貢献した人物ですが、[r]
+さらに軍を拡張し、戦争により得た利益で[r]
+国を豊かにするという考えを持っているようです。
+[glink target=*fumiya_fumi_siren_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumiya_fumi_siren_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*fumiya_fumi_siren_3
+[sp] [ruby text=かま]蟷[ruby text=きり]螂団という組織が再び[r]
+活発になっていると聞きました。[r]
+過激な反政府活動をする組織です。
+今頃活発になるというのは誰かが支援しているのかもしれません。[r]
+[r]
+[sp]ある情報を耳にしました。[r]
+大きな人物が[ruby text=かま]蟷[ruby text=きり]螂団という組織[r]
+と接触し、利用しようとしているのではないかという噂です。[r]
+[r]
+[sp]どうか[名前]、そして家の者たちも気を付けて過ごしてください。[r]
+[r]
+                                                                            [名字][sp] 文矢
+;=============================================
+[glink target=*fumiya_fumi_siren_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumiya_fumi_siren_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+*fumiya_fumi_siren_close
+[cm]
+[clearfix]
+[clearstack]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+	;◆イベント中に読むため未読→既読処理はコメントアウトします。f.midoku_list_hairetsu[3(葛城宮を示すNumber)][(配列中の位置ナンバー)]
+	;[eval exp="f.midoku_list_hairetsu[3][32] = 0"]
+	[freeimage layer = 29]	
+	@jump storage=&f.viewing_storage target=&f.viewing_target
+	[s]
+[endif]
+[手紙読了]
+;=============================================
 
 
 [イベントシーン終了]
