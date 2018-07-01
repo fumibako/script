@@ -1859,6 +1859,21 @@ f.fumi_toutyaku_tokiko[7] = 1;
 ;5 6　文矢
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka
 ;=============================================
+;◆葛城宮ルート１１月３週　時子さんから『天が与えた試練』
+;=============================================
+*fumi_toutyaku_tokiko_katuraginomiya_2
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「天が与えた試練」　三宮 時子";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*tokiko_fumi_siren");
+f.fumi_list_all_location_taishou.push(6);
+f.fumi_list_all_location_fumi.push(4);
+f.fumi_all_number=f.fumi_all_number + 1;
+f.fumi_toutyaku_tokiko[8] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_asuka
+;=============================================
 ;◆飛鳥紗代子さんからの手紙：
 ;=============================================
 *fumi_toutyaku_asuka_0
@@ -1988,10 +2003,24 @@ f.fumi_list_all_title.push(f.fumi_all_title_new);
 f.fumi_list_all_storage.push("hujieda/hujieda_fumi.ks");
 f.fumi_list_all_target.push("*fumiya_fumi_future");
 f.fumi_list_all_location_taishou.push(5);
-f.fumi_list_all_location_fumi.push(0);
+f.fumi_list_all_location_fumi.push(1);
 f.fumi_all_number=f.fumi_all_number + 1;
 ;↓到着判定にはhensuu.ksで定義済の配列が必要かつ文矢の配列は無いため時子さんの配列を借りています(今からhensuu.ksに追加するとロードエラーになってしまうので避けます)
 f.fumi_toutyaku_tokiko[6] = 1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_fumiya_owari
+
+*fumi_toutyaku_fumiya_3
+[iscript]
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「試練と変革」 文矢";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("katuraginomiya/katuraginomiya_fumi.ks");
+f.fumi_list_all_target.push("*fumiya_fumi_siren");
+f.fumi_list_all_location_taishou.push(5);
+f.fumi_list_all_location_fumi.push(2);
+f.fumi_all_number=f.fumi_all_number + 1;
+;↓到着判定にはhensuu.ksで定義済の配列が必要かつ文矢の配列は無いため時子さんの配列を借りています(今からhensuu.ksに追加するとロードエラーになってしまうので避けます)
+f.fumi_toutyaku_tokiko[9] = 1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_fumiya_owari
 

@@ -862,6 +862,18 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_tokiko_hujieda_2
 [endif]
+
+;=======================================================================================
+;◆葛城宮ルート１１月３週　時子さんから『天が与えた試練』
+;=======================================================================================
+[if exp="(f.okeiko_month == 11 && f.okeiko_week == 3) && f.fumi_toutyaku_tokiko[8] != 0 && f.katuraginomiya_au == 1"]
+	[eval exp="f.fumi_toutyaku_oaite.push('三宮様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_tokiko_katuraginomiya_2
+[endif]
+
+;f.fumi_toutyaku_tokiko[9]を文矢手紙で使用済
+
 *fumi_toutyaku_hantei_owari
 
 *fumi_toutyaku_hantei_asuka
@@ -978,6 +990,13 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.fumi_toutyaku_oaite.push('文矢様')"]
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_fumiya_2
+[endif]
+
+;◆11月3週　葛城宮ルート『試練と変革』(f.fumi_toutyaku_tokiko[8]はエラー防止のため時子さんの配列を借りています)
+[if exp="f.okeiko_month == 11 && f.okeiko_week == 3 && f.fumi_toutyaku_tokiko[9] != 1 && f.katuraginomiya_au == 1"]
+	[eval exp="f.fumi_toutyaku_oaite.push('文矢様')"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku + 1"]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_fumiya_3
 [endif]
 
 *fumi_toutyaku_hantei_fumiya_owari
