@@ -2180,8 +2180,7 @@
 [glink target=*fumiya_fumi_siren_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *fumiya_fumi_siren_3
-[sp] [ruby text=かま]蟷[ruby text=きり]螂団という組織が再び[r]
-活発になっていると聞きました。[r]
+[sp] [ruby text=かま]蟷[ruby text=きり]螂団という組織が再び活発になっていると聞きました。[r]
 過激な反政府活動をする組織です。[r]
 [r]
 [sp]ある情報を耳にしました。[r]
