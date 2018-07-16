@@ -412,6 +412,25 @@ if (mp.name!="") {
 [eval exp="f.kaogura='on'"]
 [endmacro]
 
+;◆◆◆ 葛城宮 ◆◆◆
+;立ち絵表示[主人公ポーズ葛城宮白桜色通常]
+[macro name="主人公ポーズ葛城宮白桜色通常"]
+[chara_mod name="girl_base" storage="girl/S/base_kSakura.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
+;立ち絵表示[主人公ポーズ葛城宮ED通常]
+[macro name="主人公ポーズ葛城宮ED通常"]
+[chara_mod name="girl_base" storage="girl/S/base_kED.png" time=0]
+[wait time=10]
+[chara_mod name="girl_te" storage="toumei.gif" time=0]
+[wait time=10]
+[eval exp="f.kaogura='on'"]
+[endmacro]
+
 ;立ち絵表示[主人公通常]
 [macro name="主人公通常"]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
