@@ -90,7 +90,7 @@ $('.list').remove();
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
 #
-[主人公ポーズ通常]
+[主人公ポーズ葛城宮白桜色通常]
 [主人公憂い]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
@@ -215,9 +215,9 @@ $('.list').remove();
 [表示準備 storage="bg/I9IhvvVdPo/ekken.jpg"]
 [wait time=10]
 ;主人公復帰表情目閉じ　ポーズ通常
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+;[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=300]
-[主人公ポーズ通常]
+[主人公ポーズ葛城宮白桜色通常]
 [主人公通常]
 ;主人公復帰表情消去"
 [iscript]
@@ -320,7 +320,7 @@ $('.junbi_girl').remove();
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
 ;【立ち絵】主人公目閉じ
-[主人公ポーズ通常]
+[主人公ポーズ葛城宮白桜色通常]
 [主人公目閉]
 [wait time=10]
 [暗転２終了]
@@ -368,10 +368,10 @@ $('.junbi_girl').remove();
 [イベントシーン構築ボタン無し版]
 ;ボタンのみ分岐
 [メッセージウィンドウ上ボタン表示]
-[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+;[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=300]
 ;【立ち絵】主人公目閉じ
-[主人公ポーズ通常]
+[主人公ポーズ葛城宮ED通常]
 [主人公通常]
 [主人公目閉じ]
 ;主人公復帰表情消去"

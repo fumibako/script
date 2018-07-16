@@ -10,7 +10,7 @@
 [bg method='crossfade' storage="../fgimage/bg/room_niwa.jpg" time=50 wait=true]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [イベントシーン構築ボタン無し版]
-[主人公ポーズ通常]
+[主人公ポーズ葛城宮白桜色通常]
 [主人公通常]
 #
 [プリロード画面消去]
@@ -46,6 +46,8 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [endif]
 
 [手紙葛城宮妃殿下]
+*fumi_hahamiya_1
+[cm]
 [font color=navy size=21]
 [名字]　[名前]殿へ[l][r]
 [r]
@@ -58,7 +60,12 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [r]
 [sp]息子は意思が強くときに激しくすら感じる時があります。[r]
 [sp]その息子が気に入った方だから不安に思っていたのですが[r]
-貴方はまるで淑女の鑑のような方で安心しました。[p]
+貴方はまるで淑女の鑑のような方で安心しました。[resetfont]
+[glink target=*fumi_hahamiya_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_hahamiya_2
+[font color=navy size=21]
 [r]
 [sp]貴方は、もうすでに息子との婚約は内定している[r]
 のです。[r]
@@ -69,10 +76,30 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp]ささやかながら貴方に振袖を仕立てました。[r]
 [sp]この縁談が両家にとって良きものであること願って。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　葛城宮妃　咲子[p]
+[sp]　　　　　　　　　　　　　　　　　　葛城宮妃　咲子[resetfont]
+[glink target=*fumi_hahamiya_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*fumi_hahamiya_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*fumi_hahamiya_3
+[font color=navy size=21]
 [sp][r][r][r]
 追伸　息子は型にはまる事を嫌い、周囲と衝突しています。[r]
-私は息子が貴方との婚約で変わるように望んでいます。[p]
+私は息子が貴方との婚約で変わるように望んでいます。[resetfont]
+[glink target=*fumi_hahamiya_2 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_hahamiya_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*fumi_hahamiya_close
+[cm]
+[clearfix]
+[clearstack]
+;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
+[if exp="f.okeiko_gamen == true"]
+	[freeimage layer = 29]
+	@jump storage=&f.viewing_storage target=&f.viewing_target
+	[s]
+[endif]
 [手紙読了]
 [resetfont]
 
@@ -225,7 +252,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公口ほほえみ]
 [主人公眉下げ下]
 [主人公伏目パチ1回]
-「はい。妃殿下のご期待に応えられる様に努力したしと思っております」[p]
+「はい。妃殿下のご期待に応えられる様に努力したいと思っております」[p]
 [主人公目閉じ]
 「それでは御前を失礼いたします」[p]
 
@@ -309,7 +336,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg" wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
 ;[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
-[主人公ポーズ通常]
+[主人公ポーズ葛城宮白桜色通常]
 ;【立ち絵】主人公　主人公照れ目普通
 [主人公照れ目普通]
 ;=========================================================================================
@@ -414,7 +441,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [イベントシーン構築ボタン無し版]
 ;背景仲人庭園(話しながらの移動や時間経過を表現するために、庭園の門を夕方っぽく加工してみました：スクリプト担)
 [call target=*start storage="macro_tati_katuraginomiya.ks"]
-[主人公ポーズ通常]
+[主人公ポーズ葛城宮白桜色通常]
 [wait time=10]
 [主人公伏目]
 ;【立ち絵】葛城宮 微笑み
@@ -438,18 +465,28 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;主人公の返事をきいて葛城宮さんも微変更
 [sp]今日は、沢山話して頂いてありがとうございました。[r]
 [sp]私も、とても楽しかったです」[p]
+#
 [fadeoutbgm time=3000]
+;会話ウィンドウ消去
+[freeimage layer = 14]
+[wait time=10]
+;機能ボタン消去
+[clearfix]
+[eval exp="sf.FButton='OFF'"]
+[wait time=1000]
+;↓の演出に近くなるよういくつかスクリプトを追記しました。
 ;メッセージ＆ボタンを消してから余韻をもって二人同時に消えてください
 [イベントシーン終了]
-[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
+[image layer=29 x=0 y=0 storage="bg/anten.jpg" time=1000 visible=true]
+;イベントシーン終了で暗転するため、幕画像もより自然な暗転画像に変更します。
+;[image layer=29 x=0 y=0 storage="bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" time=1000 visible=true]
 [wait time=1000]
 [葛城宮退場]
 [wait time=20]
 [stopbgm]
-#
+[eval exp="sf.event_katuragi_9_3 = 1"]
 [freeimage layer=29 time=10]
 [wait time=10]
-[eval exp="sf.event_katuragi_9_3 = 1"]
 
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
