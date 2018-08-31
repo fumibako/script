@@ -72,7 +72,7 @@
 
 [iscript]
 //便箋
-f.fumi_report_binsen =f.binsen_list_hairetsu[f.list_count][0]
+f.fumi_report_binsen =f.binsen_list_hairetsu[f.binsen_number][0]
 [endscript]
 
 [iscript]
@@ -87,7 +87,7 @@ f.fumi_report_wadai = f.wadai_list_hairetsu[f.wadai_number][0];
 
 [iscript]
 tf.fumi_report ='';
-tf.fumi_report = f.fumi_report_month + f.fumi_report_week + ':' + f.fumi_report_atesaki +'・' + f.fumi_report_binsen +'・' + f.fumi_report_gotyou +'・' + f.fumi_report_wadai;
+tf.fumi_report = f.fumi_report_month + f.fumi_report_week + ' : ' + f.fumi_report_atesaki +'・' + f.fumi_report_binsen +'・' + f.fumi_report_gotyou +'・' + f.fumi_report_wadai;
 //表示例 四月二週:四条様宛・〜の便箋・気軽に・〜の話題
 [endscript]
 
