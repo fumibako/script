@@ -1,4 +1,9 @@
 ﻿;「手紙を書く」「返事」終了処理（画面を自動で閉じる）
+@jump storage="fumi_henji_report.ks"
+;↑主人公手紙履歴保存。Script by ＠名無しさん１(ありがとうございます)
+;↓ここに戻ります
+*fumi_wadai_owari2
+
 [cm]
 [freeimage layer = 28]
 ;↓手紙を出した後は自動で画面が閉じられるため、ボタン類を撤去

@@ -1,8 +1,4 @@
 ﻿*fumi_henji_owari
-@jump storage="fumi_henji_report.ks"
-;↑主人公手紙履歴保存。Script by ＠名無しさん１(ありがとうございます)
-;↓ここに戻ります
-*fumi_henji_owari2
 [eval exp="f.fumi_henjityu=0"]
 [eval exp="f.fumi_kakunin=0"]
 [eval exp="f.fumi_atesaki=''"]
