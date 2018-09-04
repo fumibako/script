@@ -69,7 +69,10 @@ $(function(){
 ;[glink target="test8_2" text="8月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
 ;イベント3↑
 [glink target="test9_1" text="9月1週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
-[glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
+;[glink target="test9_3" text="9月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="test9_3" text="9_3:元" graphic="select_waku_x500.png" size=15 width="70" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="test9_3_m" text="9_3:m" graphic="select_waku_x500.png" size=15 width="70" x=180 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="test9_3_s" text="9_3:s" graphic="select_waku_x500.png" size=15 width="70" x=260 y=300 graphic="select_waku_x500.png" font_color=black]
 [glink target="test9_4" text="9月4週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 graphic="select_waku_x500.png" font_color=black]
 [glink target="test10_2" text="10月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 graphic="select_waku_x500.png" font_color=black]
 [glink target="test10_3" text="10月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 graphic="select_waku_x500.png" font_color=black]
@@ -91,7 +94,9 @@ $(function(){
 [glink target="test1_3" text="1月3週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 graphic="select_waku_x500.png" font_color=black]
 [glink target="test2_2" text="2月2週" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 graphic="select_waku_x500.png" font_color=black]
 [glink target="test2_2b" text="2月2週b" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 graphic="select_waku_x500.png" font_color=black]
-[glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
+;[glink target="test3_4" text="3月4週normalED" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target="test3_4" text="normalED:元" graphic="select_waku_x500.png" size=15 width="110" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
+[glink target="test3_4b" text="normalED:新" graphic="select_waku_x500.png" size=15 width="110" x=230 y=250 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_goodED" text="goodEDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
 
 
@@ -167,6 +172,18 @@ $(function(){
 [cm]
 [freeimage layer = 26]
 @jump storage="katuraginomiya/katuraginomiya_9_3.ks"
+[s]
+
+*test9_3_m
+[cm]
+[freeimage layer = 26]
+@jump storage="katuraginomiya/katuraginomiya_9_3_m.ks"
+[s]
+
+*test9_3_s
+[cm]
+[freeimage layer = 26]
+@jump storage="katuraginomiya/katuraginomiya_9_3_s.ks"
 [s]
 
 *test9_4
@@ -249,6 +266,11 @@ $(function(){
 @jump storage="katuraginomiya/katuraginomiya_3_4_nomalED.ks"
 [s]
 
+*test3_4b
+[cm]
+[freeimage layer = 26]
+@jump storage="katuraginomiya/katuraginomiya_3_4_nomalEDb.ks"
+[s]
 
 *test_goodED
 [cm]
