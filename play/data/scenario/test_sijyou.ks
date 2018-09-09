@@ -86,9 +86,7 @@ $('.test2').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 
 
 [glink target="test3_4" text="3月4週normalEND" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
-;元：[glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
-[glink target="test_goodED" text="エピローグピンク" graphic="select_waku_x500.png" size=13 width="120" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
-[glink target="test_goodED_green" text="エピローグ緑" graphic="select_waku_x500.png" size=13 width="120" x=540 y=200 graphic="select_waku_x500.png" font_color=black]
+[glink target="test_goodED" text="goodENDエピローグ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_credit" text="仮credit" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=indigo]
 [glink target="test_5_1k" text="磯野に相談（旧）" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=indigo]
 
