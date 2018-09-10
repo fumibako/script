@@ -96,6 +96,6 @@ tf.fumi_report = f.fumi_report_month + f.fumi_report_week + ' : ' + f.fumi_repor
 [iscript]
 f.fumi_report_info.unshift(tf.fumi_report);
 //f.fumi_report_info.push(tf.fumi_report);
-alert(f.fumi_report_info);
+//alert(f.fumi_report_info);
 [endscript]
 @jump storage="fumi_wadai_owari.ks" target="*fumi_wadai_owari2"
