@@ -30,18 +30,18 @@
 [freeimage layer = 27]
 
 [if exp="f.fumi_report_info.length > 20"]
-			[glink name="list" storage="info_hiroin_fumi.ks" target=*page1 text="→" size=20 width="20" x=870 y=350 graphic="select_waku_x150.png" font_color=black]
+			[glink name="list" storage="info_hiroin_fumi.ks" target=*page1 text="→" size=16 width="20" x=870 y=10 graphic="select_waku_x150.png" font_color=black]
 [endif]
 
 [iscript]
 for(i = 0; i < f.fumi_report_info.length; i++){
 	if(i <= 9){ //いくつか調整しました◆jsYiJcqRkk
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i], page:"fore", layer:27, size:15, x:30, y:(50 + 50*i), color:"saddlebrown"});
-		//tyrano.plugin.kag.ftag.startTag("ptext",{text:i, page:"fore", layer:27});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i], page:"fore", layer:27, size:15, x:45, y:70+50*i, color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20, y:70+50*i, color:"saddlebrown"});
 	//19以下から10以上の場合
 	}else if(i <= 19 && i >= 10){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30+450,y:50+50*i-500, color:"saddlebrown"});
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:i, page:"fore", layer:27, size:15, x:20+450, y:50+50*i-500, color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45+450,y:70+50*i-500, color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20+450, y:70+50*i-500, color:"saddlebrown"});
 	}
 	
 	//glinkの出現:文箱の表現に揃えました。せっかく作っていただいたのに、活用できずすみません。案をありがとうございます◆jsYiJcqRkk
@@ -60,16 +60,18 @@ for(i = 0; i < f.fumi_report_info.length; i++){
 [endif]
 [cm]
 [freeimage layer = 27]
-[glink name="list" storage="info_hiroin_fumi.ks" target=*page0 text="←" size=20 width="20" x=20 y=350 graphic="select_waku_x150.png" font_color=black]
+[glink name="list" storage="info_hiroin_fumi.ks" target=*page0 text="←" size=16 width="20" x=20 y=10 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_report_info.length > 40"]
-			[glink name="list" storage="info_hiroin_fumi.ks" target=*page2 text="→" size=20 width="20" x=870 y=350 graphic="select_waku_x150.png" font_color=black]
+			[glink name="list" storage="info_hiroin_fumi.ks" target=*page2 text="→" size=16 width="20" x=870 y=10 graphic="select_waku_x150.png" font_color=black]
 [endif]
 [iscript]
 for(i=20; i<f.fumi_report_info.length; i++){
 	if(i <= 29 && i >= 20){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30,y:50+50*i-1000,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45,y:70+50*i-1000,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20, y:70+50*i-1000, color:"saddlebrown"});
 	}else if( i <=39 && i >= 30){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30+450,y:50+50*i-1500,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45+450,y:70+50*i-1500,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20+450, y:70+50*i-1500, color:"saddlebrown"});
 	}
 }
 [endscript]
@@ -81,16 +83,18 @@ for(i=20; i<f.fumi_report_info.length; i++){
 [endif]
 [cm]
 [freeimage layer = 27]
-[glink name="list" storage="info_hiroin_fumi.ks" target=*page1 text="←" size=20 width="20" x=20 y=350 graphic="select_waku_x150.png" font_color=black]
+[glink name="list" storage="info_hiroin_fumi.ks" target=*page1 text="←" size=16 width="20" x=20 y=10 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_report_info.length > 60"]
-			[glink name="list" storage="info_hiroin_fumi.ks" target=*page3 text="→" size=20 width="20" x=870 y=350 graphic="select_waku_x150.png" font_color=black]
+			[glink name="list" storage="info_hiroin_fumi.ks" target=*page3 text="→" size=16 width="20" x=870 y=10 graphic="select_waku_x150.png" font_color=black]
 [endif]
 [iscript]
 for(i=40; i<f.fumi_report_info.length; i++){
 	if( i <=49 && i >= 40){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30,y:50+50*i-2000,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45,y:70+50*i-2000,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20, y:70+50*i-2000, color:"saddlebrown"});
 	}else if( i <=59 && i >= 50){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30+450,y:50+50*i-2500,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45+450,y:70+50*i-2500,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20+450, y:70+50*i-2500, color:"saddlebrown"});
 	}
 }
 [endscript]
@@ -102,16 +106,18 @@ for(i=40; i<f.fumi_report_info.length; i++){
 [endif]
 [cm]
 [freeimage layer = 27]
-[glink name="list" storage="info_hiroin_fumi.ks" target=*page2 text="←" size=20 width="20" x=20 y=350 graphic="select_waku_x150.png" font_color=black]
+[glink name="list" storage="info_hiroin_fumi.ks" target=*page2 text="←" size=16 width="20" x=20 y=10 graphic="select_waku_x150.png" font_color=black]
 [if exp="f.fumi_report_info.length > 80"]
-			[glink name="list" storage="info_hiroin_fumi.ks" target=*page4 text="→" size=20 width="20" x=870 y=350 graphic="select_waku_x150.png" font_color=black]
+			[glink name="list" storage="info_hiroin_fumi.ks" target=*page4 text="→" size=16 width="20" x=870 y=10 graphic="select_waku_x150.png" font_color=black]
 [endif]
 [iscript]
 for(i=60; i<f.fumi_report_info.length; i++){
 	if( i <=69 && i >= 60){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30,y:50+50*i-3000,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45,y:70+50*i-3000,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20, y:70+50*i-3000, color:"saddlebrown"});
 	}else if( i <=79 && i >= 70){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30+450,y:50+50*i-3500,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45+450,y:70+50*i-3500,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20+450, y:70+50*i-3500, color:"saddlebrown"});
 	}
 }
 [endscript]
@@ -123,16 +129,18 @@ for(i=60; i<f.fumi_report_info.length; i++){
 [endif]
 [cm]
 [freeimage layer = 27]
-[glink name="list" storage="info_hiroin_fumi.ks" target=*page3 text="←" size=20 width="20" x=20 y=350 graphic="select_waku_x150.png" font_color=black]
+[glink name="list" storage="info_hiroin_fumi.ks" target=*page3 text="←" size=16 width="20" x=20 y=10 graphic="select_waku_x150.png" font_color=black]
 ;[if exp="f.fumi_report_info.length > 100"]
-;			[glink name="list" storage="info_hiroin_fumi.ks" target=*page5 text="→" size=20 width="20" x=870 y=350 graphic="select_waku_x150.png" font_color=black]
+;			[glink name="list" storage="info_hiroin_fumi.ks" target=*page5 text="→" size=16 width="20" x=870 y=10 graphic="select_waku_x150.png" font_color=black]
 ;[endif]
 [iscript]
 for(i=80; i<f.fumi_report_info.length; i++){
 	if( i <=89 && i >= 80){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30,y:50+50*i-4000,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45,y:70+50*i-4000,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20, y:70+50*i-4000, color:"saddlebrown"});
 	}else if( i <=99 && i >= 90){
-		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:30+450,y:50+50*i-4500,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:f.fumi_report_info[i],page:"fore",layer:27,size:15,x:45+450,y:70+50*i-4500,color:"saddlebrown"});
+		tyrano.plugin.kag.ftag.startTag("ptext",{text:i+1, page:"fore", layer:27, size:15, x:20+450, y:70+50*i-4500, color:"saddlebrown"});
 	}
 }
 [endscript]
@@ -142,7 +150,7 @@ for(i=80; i<f.fumi_report_info.length; i++){
 ;タイトル
 [ptext layer=27 name="list,osirase" page=fore text="手　紙　履　歴" x=400 y=20 size=20 color=saddlebrown visible=true]
 ;戻るボタン
-[button name="list" target="back" text"戻る" x=866 y=500 graphic="back.png"]
+[button name="list" target="back" text"戻る" x=866 y=550 graphic="back.png"]
 [s]
 
 *back
