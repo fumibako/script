@@ -95,6 +95,9 @@ tf.fumi_report = f.fumi_report_month + f.fumi_report_week + ' : ' + f.fumi_repor
 
 [iscript]
 f.fumi_report_info.unshift(tf.fumi_report);
+if (f.fumi_report_info.length > 100){
+	f.fumi_report_info.pop(); //100件を超えた場合、新規履歴データが1件追加されるたびに古い配列データを1件ずつ消去
+}
 //f.fumi_report_info.push(tf.fumi_report);
 //alert(f.fumi_report_info);
 [endscript]
