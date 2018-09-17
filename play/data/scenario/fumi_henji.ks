@@ -13,36 +13,30 @@
 ;手紙を書く
 ;=============================================
 *fumibako_kuroda
-;履歴ボタン消去
-[clearfix]
 [eval exp = "f.fumi_atesaki = 'kuroda'"]
 [call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
 @jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
 [s]
 
 *fumibako_zaizen
-[clearfix]
 [eval exp = "f.fumi_atesaki = 'zaizen'"]
 [call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
 @jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
 [s]
 
 *fumibako_sijyou
-[clearfix]
 [eval exp = "f.fumi_atesaki = 'sijyou'"]
 [call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
 @jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
 [s]
 
 *fumibako_katuraginomiya
-[clearfix]
 [eval exp = "f.fumi_atesaki = 'katuraginomiya'"]
 [call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
 @jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
 [s]
 
 *fumibako_hujieda
-[clearfix]
 [eval exp = "f.fumi_atesaki = 'hujieda'"]
 [call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
 @jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku

@@ -1,7 +1,8 @@
 ﻿*fumi_write_hyouji
 ;↓loadキャンセル時戻り先を記憶(試行中
 [eval exp="f.load_mae_storage='fumi_henji_hyouji.ks'; f.load_mae_target='*fumi_write_hyouji'"]
-;[clearfix]
+;履歴ボタン消去
+[clearfix]
 [cm]
 [freeimage layer = 21]
 [freeimage layer = 22]
