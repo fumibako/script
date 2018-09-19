@@ -1,5 +1,7 @@
 ﻿*fumibako_owari
 *info_owari
+[clearfix]
+
 ;背景変更:主人公邸_お稽古部屋
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko_main.jpg" time=0]
 [wait time=10]
@@ -15,5 +17,10 @@
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
 
+[iscript]
+if (typeof f.tutorial_now !== 'undefined'){
+	tyrano.plugin.kag.ftag.startTag("jump",{storage:"okeiko_hyouji.ks"});
+}
+[endscript]
 	@jump storage="okeiko_draw_button_system.ks"
 [s]

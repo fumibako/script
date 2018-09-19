@@ -211,7 +211,10 @@ TG.stat.stack["call"] = [];
 
 [ptext text="では、まず『お稽古』について。お部屋下の『お稽古』窓" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="からお好みのお稽古ボタンを押してください。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[eval exp="f.tutorial_now = 'okeiko'"]
 [p]
+
+*common_4_1_after_okeiko
 [freeimage layer = 27]
 [image layer=27 x=625 y=-5 storage="button/kira_button.png"]
 [wait time=10]
@@ -221,7 +224,10 @@ TG.stat.stack["call"] = [];
 [playse storage=kira_s.ogg loop=false ]
 [ptext text="お部屋上の『文箱』を押すと、お相手からのお手紙" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="を読んだりお手紙を送ることができます。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[eval exp="f.tutorial_now = 'fumibako'"]
 [p]
+
+*common_4_1_after_fumibako
 [freeimage layer = 27]
 [image layer=27 x=525 y=-5 storage="button/kira_button.png"]
 [wait time=10]
@@ -229,7 +235,10 @@ TG.stat.stack["call"] = [];
 [playse storage=kira.ogg loop=false ]
 [ptext text="『散策』を押すと、町へお出かけができます。" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="お手紙の話題作りにもなるかもしれません。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[eval exp="f.tutorial_now = 'sansaku'"]
 [p]
+
+*common_4_1_after_sansaku
 [freeimage layer = 27]
 [image layer=27 x=425 y=-5 storage="button/kira_button.png"]
 [wait time=10]
@@ -237,7 +246,9 @@ TG.stat.stack["call"] = [];
 [playse storage=kira_s.ogg loop=false ]
 [ptext text="『情報』を押すと、お相手の情報やお手紙を" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="見たりすることができます。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[eval exp="f.tutorial_now = 'info'"]
 [p]
+*common_4_1_after_info
 [主人公目パチ1回L]
 [wait time=10]
 [chara_mod name="A_mayu" storage="girl/L/mayu_yowa.png" time=0]
@@ -245,7 +256,9 @@ TG.stat.stack["call"] = [];
 [freeimage layer = 27]
 [ptext text="仲を深めるには返信だけでなく、こちらから" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="手紙を書くことも大切でございます。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[eval exp="f.tutorial_now = 'write'"]
 [p]
+*common_4_1_write
 [freeimage layer = 27]
 [image layer=27 x=625 y=-5 storage="button/kira_button.png"]
 [wait time=10]
@@ -256,9 +269,14 @@ TG.stat.stack["call"] = [];
 [chara_mod name="A_kuti" storage="girl/L/kuti_hohoemi.png" time=0]
 [wait time=10]
 [p]
+*common_4_1_tutorial_last
 [freeimage layer = 27]
 [ptext text="説明は以上になります。" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
-;[ptext text="何かお困りのことがありましたら、お呼びください。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[ptext text="何かお困りのことがありましたら、お呼びください。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+;使い終わったチュートリアル位置変数を削除
+[iscript] 
+	delete f.tutorial_now; 
+[endscript]
 [p]
 [freeimage layer = 26]
 [freeimage layer = 27]

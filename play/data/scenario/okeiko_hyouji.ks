@@ -172,6 +172,14 @@ $(".para").css("opacity",0); //パラメータ表示を透明に
 [ptext name="para" text="語学：" layer=24 size=20 x=770 y=371 color=black bold=bold]
 [ptext name="para" text="お箏：" layer=24 size=20 x=770 y=408 color=black bold=bold]
 
+;チュートリアル中はチュートリアルへ戻る
+[iscript]
+if (typeof f.tutorial_now !== 'undefined'){
+	tyrano.plugin.kag.ftag.startTag("jump",{storage:"event_tutorial_corridor.ks"});
+}
+[endscript]
+
+
 ;◆月始めのみの処理
 [if exp="f.tukihajime == 1"]
 @jump target=*tukihajime

@@ -8,6 +8,34 @@
 [freeimage layer=1]
 [wait time=10]
 
+;↓チュートリアル中にボタンを押した場合、チュートリアルに戻る
+[iscript]
+if (typeof f.tutorial_now === 'undefined'){
+	tyrano.plugin.kag.ftag.startTag("jump",{target:"*tutorial_pass"});
+}
+[endscript]
+[主人公目パチ1回L]
+[wait time=10]
+[cm]
+[chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
+[wait time=10]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[wait time=10]
+;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
+[position left=350 width=500 height=170 top=250 page=fore margint="50"]
+[wait time=10]
+[font size=25]
+もうすこし[r]
+お話の続きがあるみたいだわ[p]
+[cm]
+[wait time=10]
+[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
+[wait time=10]
+	@jump storage=okeiko_hyouji.ks
+[endif]
+
+*tutorial_pass
 [if exp="f.para_shujinkou_tairyoku_now < 1"]
 [chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
 [wait time=10]
