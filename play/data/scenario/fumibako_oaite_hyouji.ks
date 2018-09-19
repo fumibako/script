@@ -39,6 +39,11 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [if exp="f.katuraginomiya_fumi_start == 1 && f.kuroda_au + f.zaizen_au + f.sijyou_au + f.katuraginomiya_au + f.hujieda_au == 0"]
 	[glink name="list" storage="fumi_henji.ks" target=fumibako_katuraginomiya text="葛城宮 晴仁" size=16 width="120" x=610 y=580 graphic="select_waku_x300b.png" font_color=black]
 [endif]
+;主人公履歴表示ボタン設置：info_hiroin_fumi.ks
+[wait time=10]
+[locate x=815 y=570]
+[button name="button_info,button_rireki" fix=true folder="fgimage/button" width=60 height=60 graphic="button_info_rireki.png" storage=info_hiroin_fumi.ks target=*start ]
+[wait time=10]
 
 *fumibako_oaite_hyouji_owari
 [return]
