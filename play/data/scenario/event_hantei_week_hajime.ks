@@ -487,6 +487,38 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_advice=0"]
 	@jump storage="event.ks" target=*start
 [endif]
+
+;◆お手紙の忠告イベント判定 6月になった時点で好感度15以上を満たすお相手がいないと1度だけ発生
+;配列に好感度を入れます。Max好感度のスクリプト… Script by ＠名無しさん１
+	[eval exp ="tf.hikaku_koukando=[f.para_sijyou_koukando , f.para_kuroda_koukando, f.para_zaizen_koukando, f.para_katuraginomiya_koukando , f.para_hujieda_koukando ]"]
+	[iscript]
+	tf.b = Math.max.apply(null, tf.hikaku_koukando);
+	[endscript]
+
+[if exp="f.okeiko_month==6 && tf.b < 15 && f.event_common[22]==0"]
+	[eval exp="f.event_storage='common_6.ks'"]
+	[eval exp="f.event_target='*common_6'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[22]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
+;◆お手紙の忠告イベント判定 8月になった時点で好感度30以上を満たすお相手がいないと1度だけ発生
+;配列に好感度を入れます。Max好感度のスクリプト… Script by ＠名無しさん１
+	[eval exp ="tf.hikaku_koukando=[f.para_sijyou_koukando , f.para_kuroda_koukando, f.para_zaizen_koukando, f.para_katuraginomiya_koukando , f.para_hujieda_koukando ]"]
+	[iscript]
+	tf.c = Math.max.apply(null, tf.hikaku_koukando);
+	[endscript]
+
+[if exp="f.okeiko_month==8 && tf.c < 30 && f.event_common[23]==0"]
+	[eval exp="f.event_storage='common_8_1.ks'"]
+	[eval exp="f.event_target='*common_8_1'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[23]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
 *isono_advice_common_end
 
 ;◆「磯野に相談」イベント判定 5月中、他のアドバイスイベントが発生しなければ1度だけ発生
