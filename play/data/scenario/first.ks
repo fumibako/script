@@ -5,6 +5,8 @@
 [stopbgm]
 ;ゲームに必要なライブラリ読み込み
 [call storage="tyrano.ks"]
+;↓ゲームクリアバッジ取得用プラグイン読み込み
+[call storage="novecole.ks"] 
 ;[call storage="novel_booster.ks"]
 [wait time=10]
 ;↓スキップ安定の目的でプラグインを外します

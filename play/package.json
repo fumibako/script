@@ -11,6 +11,10 @@
     		"position": "mouse",
     		"min_width": 640,
     		"min_height": 480
-	}
+	},
+	
+    "webkit": {
+        "plugin": true
+    }
 
 }
