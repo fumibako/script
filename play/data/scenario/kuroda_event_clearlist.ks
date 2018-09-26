@@ -582,6 +582,24 @@ $(".layer_free").css("opacity",1);
 $(".fixlayer").css("opacity",1);
 [endscript]
 *stop
+;◆初見時のヒント記述
+[if exp="sf.done_info === undefined"]
+	[image name="hint_on" layer=27 storage="button/frame_fukidasi_r.png" height=100 width=320 x=525 y=535]
+	[wait time=10]
+	[ptext name="hint_on" text="このボタンを押すとヒント有／無、攻略情報有" layer=27 size=14 x=540 y=565 color=slategray bold=bold]
+	[ptext name="hint_on" text="を切り替えることができます" layer=27 size=14 x=560 y=595 color=slategray bold=bold]
+	[eval exp="sf.done_info = 1"]
+	[wait time=10]
+[endif]
+[if exp="sf.done_info == 1 && (f.get_tips == 1 || f.get_tips == 2)"]
+	[image name="hint_advice" layer=27 storage="button/frame_fukidasi_up_l.png" height=110 width=270 x=500 y=310]
+	[wait time=10]
+	[ptext name="hint_advice" text="暗い「〇月〇週」の文字を押すと" layer=27 size=14 x=540 y=345 color=slategray bold=bold]
+	[ptext name="hint_advice" text="ヒントが画面下に表示されます" layer=27 size=14 x=540 y=375 color=slategray bold=bold]
+	[eval exp="sf.done_info = 2"]
+	[wait time=10]
+[endif]
+
 [s]
 ;==================================================================================================================-
 *kuroda_sinario
@@ -686,6 +704,7 @@ if(f.get_tips == 2){
 	tf.tips = eval("tf.spoiler"+tf.tipsNo);
 }
 $("p.tips").text(tf.tips);
+$(".hint_advice").remove(); //〇月〇週…の助言窓を除去
 [endscript]
 [endif]
 ;fixなのでreturnする
@@ -729,5 +748,6 @@ $("p.tips").text("現在、ヒント「無」です");
 [button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
+
 @jump target="stop"
 [s]

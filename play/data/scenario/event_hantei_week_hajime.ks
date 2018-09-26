@@ -519,6 +519,17 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 	[eval exp="f.event_advice=0"]
 	@jump storage="event.ks" target=*start
 [endif]
+
+;◆「情報」の助言イベント 4、5月でイベント達成率のヒントを見ていない場合、かつ他のイベントが無い週に1度だけ発生
+[if exp="(f.okeiko_month == 4 || f.okeiko_month == 5) && sf.done_info == undefined && f.event_common[24] == 0"]
+	[eval exp="f.event_storage='common_4.ks'"]
+	[eval exp="f.event_target='*common_4'"]
+	[eval exp="f.event_type='talk'"]
+	[eval exp="f.event_common[24]=1"]
+	[eval exp="f.event_advice=0"]
+	@jump storage="event.ks" target=*start
+[endif]
+
 *isono_advice_common_end
 
 ;◆「磯野に相談」イベント判定 5月中、他のアドバイスイベントが発生しなければ1度だけ発生

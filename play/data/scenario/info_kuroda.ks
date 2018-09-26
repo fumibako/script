@@ -230,5 +230,16 @@ $(".tips_btn").remove();
 [eval exp="f.clearlist_out_storage='info_kuroda.ks'"]
 [glink storage="info_kuroda.ks" target=*jump_clearlist exp="f.event_replay = 'kuroda'" text=&f.kuroda_event_percent fontcolor=gray size=16 width=170 x=130 y=480 graphic="select_waku_x300.png" font_color=black]
 [wait time=10]
+
+;◆初見の際のヒント
+[if exp="sf.done_info != 2"]
+[image layer=28 storage="button/frame_lesson_fukidasi.png" height="160" x=315 y=350]
+[wait time=10]
+	[ptext text="「イベント達成率」の文字を押すと" layer=28 size=16 x=335 y=390 color=slategray bold=bold]
+	[ptext text="イベント一覧や進め方のヒントを" layer=28 size=16 x=335 y=420 color=slategray bold=bold]
+	[ptext text="見ることができます" layer=28 size=16 x=370 y=450 color=slategray bold=bold]
+[wait time=10]
+[endif]
+
 [return]
 [s]
