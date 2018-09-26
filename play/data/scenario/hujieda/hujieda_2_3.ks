@@ -38,11 +38,12 @@
 [if exp="tf.test_gamen == true"]
 テストページからプレイしています。移動しますか？[r]
 ;選択肢用レイヤーを追加
-[position layer=message1 height=250 top=100 left=380 opacity=0]
+[position layer=message1 height=400 top=50 left=300 opacity=0]
 @layopt layer=message1 visible=true
 [current layer="message1"]
-[font size=28 color=white]
-
+[font size=23 color=white]
+[link target=*jump_white_txt]藤枝演奏シーン直前(白文字)へ移動[endlink][r]
+[r][r]
 [link target=*jump_ensou]演奏会場面へ移動[endlink][r]
 [r][r]
 [link target=*jump_ok]イベント終わりへ移動[endlink][r]
@@ -50,6 +51,31 @@
 [link target=*jump_no]い　い　え[endlink][r]
 [resetfont]
 [s]
+*jump_white_txt
+[er]
+[current layer="message0"]
+[resetfont]
+[er]
+「はい」[r]
+#
+移動します。(jump後の画面構築のため、画面切り替え前に主人公画像が表示されますが正常動作です)[p]
+[stopbgm]
+[藤枝退場]
+;【背景】観客席
+[eval exp="f.haikei_credit='　　'"]
+[bg wait=true method='crossfade' storage="../fgimage/bg/situnaiongaku.jpg" time=100]
+[wait time=10]
+[イベントシーン構築]
+[主人公ポーズ通常]
+[主人公通常]
+;機能ボタン表示
+;[layopt layer=fix visible=true]
+;[eval exp="sf.FButton='ON'"]
+;[メッセージウィンドウ上ボタン表示]
+[cm]
+@jump target=*white_txt
+[s]
+
 *jump_ensou
 [er]
 
@@ -443,6 +469,7 @@
 私が頷くと藤枝様は決意した様子で、ピアノの椅子に座り、[r]
 吸い込まれるようにして鍵盤に指を置いた。[p]
 
+*white_txt
 ;【立ち絵】藤枝：目閉じ
 [藤枝目閉じ]
 ;↓ピアノBGMに合わせて(藤枝アニメーション直後、藤枝表示中に)タイミング変更しました
@@ -484,7 +511,7 @@
 [wait time=100]
 ;ピアノBGMに合わせてメッセージタイミング変更([p]が必要なため)
 ;バージョンアップに伴いmtext設定がデフォルトになったため、文字色「白」に変更します。mtext設定について、必要があれば再設定予定です。その際はこちらも調整する可能性があります◆jsYiJcqRkk
-[mtext name=piano_mes text="貴方が来てくれた、それなら僕は何も恐れることはない" layer=29 size=29 x=150 y=450 color=white in_effect="fadeIn" out_effect="fadeOut" wait=true fadeout=false edge=none shadow=none]
+[mtext name=piano_mes text="貴方が来てくれた、それなら僕は何も恐れることはない" layer=29 size=29 x=150 y=450 color=white shadow=0x111100 in_effect="fadeIn" out_effect="fadeOut" fadeout=false wait=true]
 [p]
 [if exp="sf.BGM=='ON'"]
 ;↓[p]が必要なのでこのタイミングに移動します◆jsYiJcqRkk
