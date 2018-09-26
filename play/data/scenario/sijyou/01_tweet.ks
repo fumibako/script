@@ -115,6 +115,9 @@ else if (f.para_shujinkou_shukujodo == undefined || f.para_shujinkou_shukujodo <
 [current layer="message0"]
 おめでとうございます。　この喜びを伝えますか？[r]
 淑女度は[emb exp="tf.message"]、称号は『[emb exp="tf.message3"]』でした。[r]
+[r]
+;◆↓Tweetに不安がある方への添え書き
+（自動的にTweetされる心配はありません）
 [wait time=10]
 
 ;選択肢用レイヤーを追加
