@@ -49,11 +49,10 @@ $('.junbi_girl').remove();
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
 
-[button target=*kuroda_fumi1 graphic="moji_kuroda.png" x=200 y=50 time=0]
-[button target=*zaizen_fumi1 graphic="moji_zaizen.png" x=600 y=50 time=0]
-[button target=*kaori_fumi1 graphic="moji_sijyou.png" x=200 y=150 time=0]
-;[button target=*katuraginomiya_fumi1 graphic="moji_katuraginomiya.png" x=600 y=150]
-;[button target=*hujieda_fumi1 graphic="moji_hujieda.png" x=200 y=250]
+[glink target=*kuroda_fumi1 text="<ruby>黒<rt>くろ</rt></ruby><ruby>田<rt>だ</rt></ruby>　<ruby>将<rt>まさ</rt></ruby><ruby>貴<rt>たか</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=50 graphic="select_waku_x300.png"]
+[glink target=*zaizen_fumi1 text="<ruby>財<rt>ざい</rt></ruby><ruby>前<rt>ぜん</rt></ruby>　<ruby>美<rt>よし</rt></ruby><ruby>彬<rt>あきら</rt></ruby> 様" font_color=black size=23 width="200" x=600 y=50 graphic="select_waku_x300.png"]
+[glink target=*kaori_fumi1 text="<ruby>四<rt>し</rt></ruby><ruby>条<rt>じょう</rt></ruby>　<ruby>華<rt>か</rt></ruby><ruby>織<rt>おり</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=150 graphic="select_waku_x300.png"]
+
 [button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=150 time=0]
 #
 どなたのお手紙を読みましょう？
@@ -102,7 +101,7 @@ $('.junbi_girl').remove();
 [cm]
 [名字] [名前]様[r]
 [r]
-初めてお手紙を差し上げます。黒田 将貴と申します。[r]
+初めてお手紙を差し上げます。[ruby text='くろ']黒[ruby text='だ']田 [ruby text='まさ']将[ruby text='たか']貴と申します。[r]
 私は植物の研究をしている大学生です。[r]
 [r]
 [sp]御尊父様には私の幼少時より学業の励ましをいただき、お話をするたびに御見識の広さや深さに感銘を受けておりました。[r]
@@ -391,11 +390,10 @@ $('.junbi_girl').remove();
 #
 どなたか詳しく知りたい方はいらっしゃいますか？
 
-[button target=*kuroda_isono1 graphic="moji_kuroda.png" x=200 y=50 time=0]
-[button target=*zaizen_isono1 graphic="moji_zaizen.png" x=600 y=50 time=0]
-[button target=*kaori_isono1 graphic="moji_sijyou.png" x=200 y=150 time=0]
-;[button target=*katuraginomiya_isono1 graphic="moji_katuraginomiya.png" x=600 y=150 time=0]
-;[button target=*hujieda_isono1 graphic="moji_hujieda.png" x=200 y=250 time=0]
+[glink target=*kuroda_isono1 text="<ruby>黒<rt>くろ</rt></ruby><ruby>田<rt>だ</rt></ruby>　<ruby>将<rt>まさ</rt></ruby><ruby>貴<rt>たか</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=50 graphic="select_waku_x300.png"]
+[glink target=*zaizen_isono1 text="<ruby>財<rt>ざい</rt></ruby><ruby>前<rt>ぜん</rt></ruby>　<ruby>美<rt>よし</rt></ruby><ruby>彬<rt>あきら</rt></ruby> 様" font_color=black size=23 width="200" x=600 y=50 graphic="select_waku_x300.png"]
+[glink target=*kaori_isono1 text="<ruby>四<rt>し</rt></ruby><ruby>条<rt>じょう</rt></ruby>　<ruby>華<rt>か</rt></ruby><ruby>織<rt>おり</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=150 graphic="select_waku_x300.png"]
+
 [button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=150 time=0]
 [autosave]
 [s]
@@ -468,7 +466,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　ゆうあかり　http://light77.sakura.ne.jp/'"]
 [whosay name=磯野 color="dimgray"]
-「財前様のお父様は一代にして数多の事業を成功され、[r]
+「[ruby text='ざい']財[ruby text='ぜん']前様のお父様は一代にして数多の事業を成功され、[r]
 [sp]新華族に叙せられた実業家でございます」[p]
 [主人公目パチ1回]
 [wait time=10]
