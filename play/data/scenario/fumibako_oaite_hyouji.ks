@@ -45,5 +45,16 @@ f.fumibako_page_hyouji = f.fumibako_now_page + " ／ " + f.fumibako_max_page + "
 [button name="button_info,button_rireki" fix=true folder="fgimage/button" width=60 height=60 graphic="button_info_rireki.png" storage=info_hiroin_fumi.ks target=*start ]
 [wait time=10]
 
+;◆初見の際のヒント：fumi_henji_binsen_hyouji_end.ksを通過する（手紙を書く）とヒントが消える仕様です。お返事でも通過して消えますが…それまでには伝わるかなと。
+[if exp="sf.done_write != 1"]
+[image layer=28 storage="button/frame_lesson_fukidasi.png" height="160" width=350 height=140 x=595 y=420]
+[wait time=10]
+[ptext text="名前ボタンを押すと、手紙を書く" layer=28 size=16 x=640 y=445 color=darkslategray bold=bold]
+[ptext text="ことができます。体力2・気力8が必要です。" layer=28 size=16 x=625 y=475 color=darkslategray bold=bold]
+[ptext text="体力と気力は休憩で回復できます。" layer=28 size=16 x=640 y=505 color=darkslategray bold=bold]
+;[ptext text="" layer=28 size=16 x=660 y=535 color=darkslategray bold=bold]
+[wait time=10]
+[endif]
+
 *fumibako_oaite_hyouji_owari
 [return]

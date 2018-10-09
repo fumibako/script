@@ -1,4 +1,6 @@
 ﻿*fumi_binsen_hyouji_end
+;↓「手紙を書く」画面を見たフラグON（文箱のヒント消去）
+[eval exp="sf.done_write = 1"]
 [if exp="(f.para_shujinkou_tairyoku_now >= f.fumi_hituyou_tairyoku) && (f.para_shujinkou_kiryoku_now >= f.fumi_hituyou_kiryoku)"]
 	[glink name="list" storage="fumi_henji.ks" target="repair_binsen" text="磯野を呼ぶ" graphic="select_waku_x500.png" size=16 width="250" x=380 y=550 font_color=black]
 [endif]
