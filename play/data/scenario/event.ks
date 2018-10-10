@@ -105,6 +105,20 @@ TG.stat.stack["call"] = [];
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 
+;◆イベントコンプリートチェック
+[cm]
+[call storage="eventpercent_sijyou.ks" target=*start]
+[call storage="eventpercent_zaizen.ks" target=*start]
+[call storage="eventpercent_kuroda.ks" target=*start]
+[call storage="eventpercent_katuraginomiya.ks" target=*start]
+[call storage="eventpercent_hujieda.ks" target=*start]
+
+[if exp="sf.badge_comp != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
+	[eval exp="f.comp_from = 'event'"]
+	@jump storage="common_badge.ks" target=*get_badge
+[endif]
+
+*after_complete_check
 [cm]
 ;◆四条11月1週は週をまたぐイベントであるため、週数を調整
 [if exp = "f.okeiko_month == 11 && f.okeiko_week == 1 && f.sijyou_au == 1"]
@@ -160,6 +174,18 @@ TG.stat.stack["call"] = [];
 
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
+;◆イベントコンプリートチェック
+[cm]
+[call storage="eventpercent_sijyou.ks" target=*start]
+[call storage="eventpercent_zaizen.ks" target=*start]
+[call storage="eventpercent_kuroda.ks" target=*start]
+[call storage="eventpercent_katuraginomiya.ks" target=*start]
+[call storage="eventpercent_hujieda.ks" target=*start]
+
+[if exp="sf.badge_comp != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
+	@jump storage="common_badge.ks" target=*get_badge
+[endif]
+
 [cm]
 
 @jump storage="title.ks"
