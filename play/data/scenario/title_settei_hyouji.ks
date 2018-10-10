@@ -14,6 +14,8 @@
 [freeimage layer = 18]
 [freeimage layer = 19]
 [freeimage layer = 20]
+;↓ノベコレ版のみ1、それ以外での配布版は0に設定。
+[eval exp="sf.novecole = 1"]
 [eval exp="tf.test_gamen_sijyou=false"]
 [eval exp="tf.test_gamen=false"]
 [eval exp="tf.okeiko_gamen=false"]
@@ -60,6 +62,7 @@ if (typeof f.kuroda_fumi_toutyakumachi_kaidan === "undefined") {f.kuroda_fumi_to
 ;背景（効果）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_new name="bg_effect" storage="toumei.gif"]
 [chara_show left=0 top=0 layer=2 name="bg_effect"]
+
 
 ;主人公画像仮表示【初登場時のみ仮に透明画像で表示。chara_new使用。後はマクロで切り替え】
 [chara_new name="girl_base" storage="toumei.gif"]
