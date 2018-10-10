@@ -8,6 +8,7 @@
 ;[wait time=10]
 
 [eval exp="f.clearlist_out_storage='omake.ks'"]
+[eval exp="tf.omake_mark == 0"]
 ;◆◆一度色々リセットする
 *reset
 [cm]
@@ -92,6 +93,11 @@ $(".layer_2").css("opacity",0);
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=50 y=70 width=160 height=104]
 [wait time=10]
 [endif]
+;◆バッジ：四条
+[if exp="sf.badge_sijyou == 1"]
+[image name=list layer=2 storage="../image/badge_sijyou.png" x=220 y=70 height=104]
+[wait time=10]
+[endif]
 
 ;財前
 [image layer=2 name=list storage="../image/h2.png" x=500 y=35]
@@ -105,6 +111,11 @@ $(".layer_2").css("opacity",0);
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=500 y=70 width=160 height=104]
 [wait time=10]
 [endif]
+;◆バッジ：財前
+[if exp="sf.badge_zaizen == 1"]
+[image name=list layer=2 storage="../image/badge_zaizen.png" x=670 y=70 height=104]
+[wait time=10]
+[endif]
 
 ;黒田
 [image layer=2 name=list storage="../image/h2.png" x=40 y=225]
@@ -116,6 +127,11 @@ $(".layer_2").css("opacity",0);
 [ptext layer=2 name=list page=fore text="表情鑑賞　:　黒田" x=50 y=370 size=17 color=navy visible=true]
 [else]
 [image name=list layer=2 x=50 y=260 width=160 height=104 storage="../fgimage/bg/cg_bg.jpg"]
+[wait time=10]
+[endif]
+;◆バッジ：黒田
+[if exp="sf.badge_kuroda == 1"]
+[image name=list layer=2 storage="../image/badge_kuroda.png" x=220 y=260 height=104]
 [wait time=10]
 [endif]
 
@@ -134,6 +150,11 @@ $(".layer_2").css("opacity",0);
 [else]
 ;[ptext layer=2 name=list page=fore text="表情鑑賞　:　？？？" x=500 y=370 size=17 color=navy visible=true]
 [image name=list layer=2 storage="../fgimage/bg/cg_bg.jpg" x=500 y=260 width=160 height=104]
+[wait time=10]
+[endif]
+;◆バッジ：葛城宮
+[if exp="sf.badge_katuraginomiya == 1"]
+[image name=list layer=2 storage="../image/badge_katuraginomiya.png" x=670 y=260 height=104]
 [wait time=10]
 [endif]
 
@@ -162,6 +183,11 @@ $(".layer_2").css("opacity",0);
 [iscript]
 $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")','background-size' : '100% 100%', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
 [endscript]
+;◆バッジ：藤枝
+[if exp="sf.badge_hujieda == 1"]
+[image name=list layer=2 storage="../image/badge_hujieda.png" x=220 y=450 height=104]
+[wait time=10]
+[endif]
 
 
 *clear_notice
@@ -183,7 +209,10 @@ $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 [endif]
 ;全てのイベントをコンプリートしているときの表示
 [if exp="sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
-[ptext layer=2 name="list,osirase" page=fore text="クリアおめでとうございます" x=499 y=420 size=16 color=navy visible=true]
+[image layer=2 name=list storage="../image/h2.png" x=500 y=415]
+[ptext layer=2 name="list,osirase" page=fore text="クリアおめでとうございます" x=545 y=420 size=16 color=navy visible=true]
+[image name=list layer=2 storage="../image/badge_comp.png" x=500 y=450 height=104]
+[wait time=10]
 @jump target ="*common"
 [endif]
 
@@ -232,6 +261,7 @@ $('.loding_pic1').remove();
 [iscript]
 $(".layer_free").css("opacity",1);
 $(".layer_2").css("opacity",1);
+$('.omake_mark').remove();
 [endscript]
 @layopt layer=2 visible=true
 @layopt layer=1 visible=true
