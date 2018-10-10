@@ -15,6 +15,7 @@
 [wait time=10]
 [clearfix]
 [cm]
+[freeimage layer = 28]
 ;------シナリオの最初にジャンプする
 @jump storage="naming.ks"
 [s]
@@ -29,6 +30,7 @@
 [clearfix]
 [cm]
 [wait time=10]
+[freeimage layer = 28]
 [jump storage="cg.ks"]
 [s]
 
@@ -37,6 +39,7 @@
 [clearfix]
 [cm]
 [wait time=10]
+[freeimage layer = 28]
 [jump storage="replay2.ks"]
 [s]
 
@@ -46,6 +49,7 @@
 [clearfix]
 [cm]
 [wait time=10]
+[freeimage layer = 28]
 [jump storage="credit.ks"]
 [s]
 
@@ -55,6 +59,7 @@
 [clearfix]
 [cm]
 [wait time=10]
+[freeimage layer = 28]
 [jump storage="omake.ks"]
 [s]
 
@@ -173,6 +178,7 @@ TG.stat.play_se = false;
 *test
 [clearfix]
 [cm]
+[freeimage layer = 28]
 @jump storage="test.ks"
 [s]
 
@@ -245,20 +251,32 @@ TG.stat.play_se = true;
 [endif]
 ;-----設定タグここまで-----
 
+;◆全イベント達成時飾り
+[if exp="sf.badge_comp == 1"]
+	@layopt layer=28 visible = true
+	[freeimage layer = 28]
+	[image name="complete" layer=28 folder="image" storage="complete.png" left=0 top=0] 
+[endif]
+;↓おまけ上のnext_pageアニメアイコン。githubでは結び文、正式版では鶴。
+[if exp="tf.omake_mark == 1"]
+	[image name="omake_mark" layer=28 storage="../../tyrano/images/kag/nextpage.gif" left=46 top=320] 
+[endif]
+
 ;タイトル各種ボタン表示
-[locate x=460 y=50]
+[eval exp="tf.title_y_plus = 30"]
+[locate x=460 y=50 + tf.title_y_plus]
 [button name="list" graphic="button_title_start.png" storage="title.ks" target="*start" time=0]
 
-[locate x=370 y=130]
+[locate x=370 y=120 + tf.title_y_plus]
 [button name="list" exp="f.load_mae_storage='title.ks'; f.load_mae_target='*title'" graphic="button_title_load.png" storage="sys_load.ks" target="*load" time=0]
 
-[locate x=280 y=50]
+[locate x=280 y=50 + tf.title_y_plus]
 [button name="list" graphic="button_title_cg.png" target="*cg" time=0]
 
-[locate x=190 y=130]
+[locate x=190 y=120 + tf.title_y_plus]
 [button name="list" graphic="button_title_replay.png" target="*replay" time=0]
 
-[locate x=100 y=50]
+[locate x=100 y=50 + tf.title_y_plus]
 [button name="list" graphic="button_title_credit.png" target="*credit" time=0]
 
 ;「おまけ」を常に表示し、その中で非表示メニュー(説明有り)を作ることにしました
