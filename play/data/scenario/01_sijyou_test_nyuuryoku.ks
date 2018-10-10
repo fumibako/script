@@ -134,7 +134,8 @@ tf.advice_event_hyouji = parseInt($("input[name='tf.advice_event_hyouji']").val(
 ;1が入力されたときはf.sijyou_sobo==true　それ以外はfalse
 [if exp="tf.edit_sobo==1"]
 [eval exp="f.sijyou_sobo=true"]
-[eval exp="f.event_sijyou[15] = 1"]
+;↓華道展([15]==0が必要）動作確認のためコメントアウトします◆jsYiJcqRkk
+;[eval exp="f.event_sijyou[15] = 1"]
 [else]
 [eval exp="f.sijyou_sobo=false"]
 [eval exp="f.event_sijyou[15] = 0"]
