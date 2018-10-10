@@ -793,14 +793,79 @@ $('.1_fore').empty();
 @jump storage="replay2.ks"
 [endif]
 
+;◆財前ルートクリアバッジ獲得処理
+;バッジ獲得済み（周回プレイ時）はバッジ処理を飛ばして*root_clearへ。
+[if exp="sf.badge_zaizen == 1"]
+	@jump target=*root_clear
+[endif]
+;◆共通処理
+;【背景】タイトル背景
+[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=1000]
+[wait time=500]
+;◆スキップ状態の時はスキップを解除
+[eval exp="f.skip=this.kag.stat.is_skip"]
+[if exp="f.skip == true"]
+	[cancelskip]
+	[eval exp="f.skip = false"]
+[endif]
+	@layopt layer=29 visible=true
+	[wait time=10]
+	@layopt layer=message0 visible=true
+	[position width=700 height=620 top=0 left=150 page=fore margint="40" opacity=0]
+	[wait time=10]
+	[whosay name=""]
+	[font size=20]
+	[wait time=10]
+
+;◆ノベコレ版とそれ以外振り分け
+[if exp="sf.novecole != 1"]
+	@jump target=*badge_omake_only
+[endif]
+[give_emblem id="5197" pid="2172408790f1e9c1386a8b6ff2cc6e12" ]
+[image name=list layer=29 storage="../image/badge_zaizen.png" x=360 y=50]
+[wait time=10]
+[r][r][r][r][r]
+『フウセンカズラの証』を獲得しました。[r]
+財前 美彬との物語でgood又はnormalエンドをご覧いただいた方に贈られる[r]
+証です。[r]
+[r]
+ゲーム中「攻略情報とおまけ」コーナー（タイトル画面一番左）と[r]
+「ノベルゲームコレクション」※プロフィールの"バッジ"欄に飾られます。[r]
+[r]
+[font size=17 color="peru"]
+[sp]　　※　環境によっては反映されない場合があります。その際はゲーム中の[r]
+[sp]　　　　「攻略情報とおまけ」コーナーをお楽しみください。[p]
+[freeimage layer = 29]
+[wait time=10]
+[eval exp="sf.badge_zaizen = 1"]
+[eval exp="tf.tweet_badge = 1"]
+@jump target=*root_clear
+
+*badge_omake_only
+[image name=list layer=29 storage="../image/badge_zaizen.png" x=360 y=50]
+[wait time=10]
+[eval exp="sf.badge_zaizen = 1"]
+[r][r][r][r][r]
+『フウセンカズラの証』を獲得しました。[r]
+財前 美彬との物語でgood又はnormalエンドをご覧いただいた方に贈られる[r]
+証です。[r]
+[r]
+ゲーム中「攻略情報とおまけ」コーナー（タイトル画面一番左）[r]
+に飾られます。[p]
+[freeimage layer = 29]
+[wait time=10]
+
+*root_clear
 ;◆normalED終了処理へ
 [if exp="f.okeiko_gamen == true"]
 ;財前ルートをクリアした
 [eval exp="tf.ED_zaizen = 1"]
 [wait time=10]
 ;tweet表示
+[if exp="tf.tweet_end != true && tf.tweet_badge != 1"]
 [call storage="sijyou/01_tweet.ks"]
 [wait time=10]
+[endif]
 
 [wait time=10]
 [財前ルート終了 end="normal"]

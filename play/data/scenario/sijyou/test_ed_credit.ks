@@ -584,20 +584,7 @@ $('.omoide1').remove();
 [mtext name=cc edge=white text="＊　敬具　＊" layer=27 size=&tf.fs x=&tf.left_x y=&tf.top_y1 color=&tf.fc in_effect="fadeIn" out_effect="fadeOut" wait=true]
 [wait time=2000]
 [fadeoutbgm time=3000]
-
-[if exp="tf.test_sijyou == true"]
-;初期化
-;藤枝 
-@eval exp="f.hujieda_au=0" 
-;葛城宮 
-@eval exp="f.katuraginomiya_au=0"
-;財前 
-@eval exp="f.zaizen_au=0"
-@eval exp="f.kuroda_au=0" 
-;四条
-@eval exp="f.sijyou_au=0" 
-[endif]
-
+;初期化処理はバッジ取得処理の流れの関係で*end以降に移動しました。◆jsYiJcqRkk
 [freeimage layer=27]
 ;背景mod変更　レイヤー２９ではありません。
 [bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_preload_girl.jpg" time=1300]
@@ -611,10 +598,34 @@ $('.omoide1').remove();
 TG.kag.ftag.startTag("cancelskip");
 f.skip=false;
 [endscript]
-
-;tweet表示　tweetが起動してなければ起動する　tweetでも判定が走ります
-[if exp="tf.tweet_end != true"]
+;===============================================================
+;各ルートゲームクリアバッジ獲得処理。スクリプトは../common_badge.ksとして切り出しています。
+;===============================================================
+;バッジ獲得時のみ処理通過
+[if exp="(sf.badge_sijyou != 1 && f.sijyou_au == 1)||(sf.badge_zaizen != 1 && f.zaizen_au == 1)||(sf.badge_kuroda != 1 && f.kuroda_au == 1)||(sf.badge_katuraginomiya != 1 && f.katuraginomiya_au == 1)||(sf.badge_hujieda != 1 && f.hujieda_au == 1)"]
+	@jump storage="common_badge.ks" target=*get_badge
+[else]
+	@jump target=*end
+[endif]
+;===============================================================
+*after_badge
+;tweet表示　tweetが起動しておらず、バッジ獲得処理でのTweet画面も見ていなければ起動する　tweetでも判定が走ります
+[if exp="tf.tweet_end != true && tf.tweet_badge != 1"]
 [call storage="sijyou/01_tweet.ks"]
+[endif]
+
+*end
+[if exp="tf.test_sijyou == true"]
+;初期化
+;藤枝 
+@eval exp="f.hujieda_au=0" 
+;葛城宮 
+@eval exp="f.katuraginomiya_au=0"
+;財前 
+@eval exp="f.zaizen_au=0"
+@eval exp="f.kuroda_au=0" 
+;四条
+@eval exp="f.sijyou_au=0" 
 [endif]
 
 [if exp="f.okeiko_gamen == true"]

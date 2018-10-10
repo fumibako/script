@@ -377,8 +377,9 @@ $('.1_fore').empty();
 
 [イベントシーン終了・ＢＧＭ有]
 ;テストでもみれるように↑
-[if exp="f.okeiko_gamen == true || tf.test_sijyou == true"]
+[if exp="(f.okeiko_gamen == true || tf.test_sijyou == true) && sf.ED_sijyou_good != 1"]
 ;ending処理
+;goodエンディング時
 ;goodエンディング時
 [eval exp="sf.ED_sijyou_good=1"]
 ;四条ルートをクリアした

@@ -167,18 +167,83 @@ $('.1_fore').remove();
 [endif]
 [イベントシーン終了]
 [wait time=10]
-;【背景】タイトル背景
-[bg wait=true method='crossfade' storage="../fgimage/bg/title.jpg" time=1000]
-[wait time=500]
 
+;◆黒田ルートクリアバッジ獲得処理
+;バッジ獲得済み（周回プレイ時）はバッジ処理とツイート処理を飛ばしてendへ。
+[if exp="sf.badge_kuroda == 1"]
+	@jump target=*end
+[endif]
+;◆共通処理
+;【背景】タイトル背景
+[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=1000]
+[wait time=500]
+;◆スキップ状態の時はスキップを解除
+[eval exp="f.skip=this.kag.stat.is_skip"]
+[if exp="f.skip == true"]
+	[cancelskip]
+	[eval exp="f.skip = false"]
+[endif]
+@layopt layer=29 visible=true
+[wait time=10]
+@layopt layer=message0 visible=true
+[position width=700 height=620 top=0 left=150 page=fore margint="40" opacity=0]
+[wait time=10]
+[whosay name=""]
+[font size=20]
+[wait time=10]
+
+;◆ノベコレ版とそれ以外振り分け
+[if exp="sf.novecole != 1"]
+	@jump target=*badge_omake_only
+[endif]
+
+[give_emblem id="5198" pid="fa141c9a1069957c1117ac4451c1d199" ]
+[image name=list layer=29 storage="../image/badge_kuroda.png" x=360 y=50]
+[wait time=10]
+[r][r][r][r][r]
+『スミレの証』を獲得しました。[r]
+黒田 将貴との物語でgood又はnormalエンドをご覧いただいた方に贈られる[r]
+証です。[r]
+[r]
+ゲーム中「攻略情報とおまけ」コーナー（タイトル画面一番左）と[r]
+「ノベルゲームコレクション」※プロフィールの"バッジ"欄に飾られます。[r]
+[r]
+[font size=17 color="peru"]
+[sp]　　※　環境によっては反映されない場合があります。その際はゲーム中の[r]
+[sp]　　　　「攻略情報とおまけ」コーナーをお楽しみください。[p]
+[freeimage layer = 29]
+[wait time=10]
+[eval exp="sf.badge_kuroda = 1"]
+[eval exp="tf.tweet_badge = 1"]
+@jump target=*root_clear
+
+*badge_omake_only
+[image name=list layer=29 storage="../image/badge_kuroda.png" x=360 y=50]
+[wait time=10]
+[eval exp="sf.badge_kuroda = 1"]
+[r][r][r][r][r]
+『スミレの証』を獲得しました。[r]
+黒田 将貴との物語でgood又はnormalエンドをご覧いただいた方に贈られる[r]
+証です。[r]
+[r]
+ゲーム中「攻略情報とおまけ」コーナー（タイトル画面一番左）[r]
+に飾られます。[p]
+[freeimage layer = 29]
+[wait time=10]
+
+*root_clear
 ;黒田ルートをクリアした
 [eval exp="tf.ED_kuroda == 1"]
 [if exp="f.okeiko_gamen == true"]
 	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
 [endif]
-;tweet表示
-[call storage="sijyou/01_tweet.ks"]
+;tweet表示(バッジ獲得でTweet画面を見ている方には表示しない)
+[if exp="tf.tweet_badge != 1"]
+	[call storage="sijyou/01_tweet.ks"]
+	[eval exp="tf.tweet_badge = 0"]
+[endif]
 
+*end
 [if exp="f.okeiko_gamen == true"]
 	@jump storage="event.ks" target=*event_ED
 [endif]
