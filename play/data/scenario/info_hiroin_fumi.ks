@@ -13,7 +13,7 @@
 [layopt layer=28 visible=true]
 [freeimage layer = 26]
 [image layer=26 x=0 y=0 storage="bg/plane_wakakusa.jpg"]
-[if exp="f.fumi_report_info.length == 0"]
+[if exp="f.fumi_report_info.length == 0 || f.fumi_report_info === 'undefined'"]
 	[ptext layer=27 name="list,osirase" page=fore text="お手紙を出すと、こちらに「履歴」が表示されます。" x=100 y=100 size=16 color=saddlebrown visible=true]
 	@jump target=*common
 [endif]
