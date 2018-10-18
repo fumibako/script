@@ -212,6 +212,12 @@ TG.stat.stack["call"] = [];
 [wait time=10]
 [chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
 [wait time=10]
+;◆スキップ状態の時はスキップを解除
+[eval exp="f.skip=this.kag.stat.is_skip"]
+[if exp="f.skip == true"]
+	[cancelskip]
+	[eval exp="f.skip = false"]
+[endif]
 ;◆磯野メッセージ表示
 [layopt layer=26 visible=true]
 [layopt layer=27 visible=true]
