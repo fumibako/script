@@ -13,7 +13,7 @@
 ;[call storage="boost_mode/boost_mode.ks"]
 
 ;メッセージレイヤの定義(画面全体）
-[position layer=message0 width=960 height=500 top=80 left=150 page=fore opacity=0]
+[position layer=message0 width=960 height=550 top=80 left=150 page=fore opacity=0]
 
 ;タイトルの設定
 [title name="恋綴り"]
