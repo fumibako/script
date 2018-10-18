@@ -52,8 +52,9 @@ $('.junbi_girl').remove();
 [glink target=*kuroda_fumi1 text="<ruby>黒<rt>くろ</rt></ruby><ruby>田<rt>だ</rt></ruby>　<ruby>将<rt>まさ</rt></ruby><ruby>貴<rt>たか</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=50 graphic="select_waku_x300.png"]
 [glink target=*zaizen_fumi1 text="<ruby>財<rt>ざい</rt></ruby><ruby>前<rt>ぜん</rt></ruby>　<ruby>美<rt>よし</rt></ruby><ruby>彬<rt>あきら</rt></ruby> 様" font_color=black size=23 width="200" x=600 y=50 graphic="select_waku_x300.png"]
 [glink target=*kaori_fumi1 text="<ruby>四<rt>し</rt></ruby><ruby>条<rt>じょう</rt></ruby>　<ruby>華<rt>か</rt></ruby><ruby>織<rt>おり</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=150 graphic="select_waku_x300.png"]
+[glink target=*fumi_dokuryou01 text="終　了" font_color=black size=23 width="200" x=600 y=150 graphic="select_waku_x300.png"]
 
-[button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=150 time=0]
+;[button target=*fumi_dokuryou01 graphic="moji_shuuryou.png" x=600 y=150 time=0]
 #
 どなたのお手紙を読みましょう？
 [autosave]
@@ -393,8 +394,9 @@ $('.junbi_girl').remove();
 [glink target=*kuroda_isono1 text="<ruby>黒<rt>くろ</rt></ruby><ruby>田<rt>だ</rt></ruby>　<ruby>将<rt>まさ</rt></ruby><ruby>貴<rt>たか</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=50 graphic="select_waku_x300.png"]
 [glink target=*zaizen_isono1 text="<ruby>財<rt>ざい</rt></ruby><ruby>前<rt>ぜん</rt></ruby>　<ruby>美<rt>よし</rt></ruby><ruby>彬<rt>あきら</rt></ruby> 様" font_color=black size=23 width="200" x=600 y=50 graphic="select_waku_x300.png"]
 [glink target=*kaori_isono1 text="<ruby>四<rt>し</rt></ruby><ruby>条<rt>じょう</rt></ruby>　<ruby>華<rt>か</rt></ruby><ruby>織<rt>おり</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=150 graphic="select_waku_x300.png"]
+[glink target=*isono_situmon_owari01 text="終　了" font_color=black size=23 width="200" x=600 y=150 graphic="select_waku_x300.png"]
 
-[button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=150 time=0]
+;[button target=*isono_situmon_owari01 graphic="moji_shuuryou.png" x=600 y=150 time=0]
 [autosave]
 [s]
 
