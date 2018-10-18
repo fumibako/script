@@ -13,18 +13,23 @@
 [layopt layer=28 visible=true]
 [freeimage layer = 26]
 [image layer=26 x=0 y=0 storage="bg/plane_wakakusa.jpg"]
-[if exp="f.fumi_report_info.length == 0 || f.fumi_report_info === 'undefined'"]
+[wait time=50]
+[iscript]
+if (typeof f.fumi_report_info === "undefined") {
+	f.fumi_report_info=[];
+}
+[endscript]
+[if exp="f.fumi_report_info.length == 0"]
 	[ptext layer=27 name="list,osirase" page=fore text="お手紙を出すと、こちらに「履歴」が表示されます。" x=100 y=100 size=16 color=saddlebrown visible=true]
 	@jump target=*common
 [endif]
-[emb exp="f.fumi_report_info.length"]
+;[emb exp="f.fumi_report_info.length"]
+
 ;"手紙履歴" script by ＠名無しさん１
 ;最大10行以降で次の行へ
 ;最大20,40,60…行でglinkの出現
 ;(最大x以上で古い履歴は消去する。このスクリプトを行う前に消去)
 ;j='*page' + i ;で使えるように0から開始
-[iscript]
-[endscript]
 *page0
 [cm]
 [freeimage layer = 27]
@@ -237,6 +242,7 @@ for(i=90; i<f.fumi_report_info.length; i++){
 [ptext layer=27 name="list,osirase" page=fore text="手　紙　履　歴" x=390 y=20 size=25 color=saddlebrown visible=true]
 ;戻るボタン
 [button name="list" target="back" text"戻る" x=866 y=550 graphic="back.png"]
+[wait time=10]
 [s]
 
 *back
