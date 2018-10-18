@@ -215,7 +215,7 @@ $('.list').remove();
 [表示準備 storage="bg/I9IhvvVdPo/ekken.jpg"]
 [wait time=10]
 ;主人公復帰表情目閉じ　ポーズ通常
-;[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_kSakura_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=300]
 [主人公ポーズ葛城宮白桜色通常]
 [主人公通常]

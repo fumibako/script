@@ -340,6 +340,11 @@
 ;[preload storage="data/fgimage/bg/bg_ryouotei_yuu.jpg"]
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_enkai.jpg"]
 ;///////////////////////////////
+;=============================================================================
+;【衣装差分】
+[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_sTenran.png','data/fgimage/girl/S/katate_sTenran.png','data/fgimage/girl/S/yubi_sTenran.png']"]
+[preload storage=&tf.preload_ishou wait=true]
+;=============================================================================
 @jump target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
@@ -454,6 +459,11 @@
 ;エンディングスチルをプリロード
 [if exp="f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.para_shujinkou_j_kadou >= 50"]
 [preload storage="data/fgimage/bg/sijyou_CGgood.png" wait=true]
+;=============================================================================
+;【衣装差分と復帰準備画像】
+[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_sED_pink.png','data/fgimage/girl/S/yubi_sED_pink.png','data/fgimage/girl/S/girl_all_sED_futuu.png']"]
+[preload storage=&tf.preload_ishou wait=true]
+;=============================================================================
 [else]
 [endif]
 @jump target=end_sub

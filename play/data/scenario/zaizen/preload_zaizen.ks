@@ -200,6 +200,10 @@
 ;【背景】空
 [preload storage="data/fgimage/bg/bg_bluesky.jpg" wait=true]
 ;==========================================================================
+;【衣装差分】
+[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_zDress.png','data/fgimage/girl/S/katate_zDress.png'"]
+[preload storage=&tf.preload_ishou wait=true]
+;==========================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
@@ -473,6 +477,10 @@
 [preload storage="data/fgimage/bg/zaizen_paty_niwa.jpg" wait=true]
 ;【背景】独逸大使館パーティ会場
 [preload storage="data/fgimage/bg/zaizen_doitutaisikan.jpg" wait=true]
+;=============================================================================
+;【衣装差分】
+[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_zED.png','data/fgimage/girl/S/base_ryoute_zED.png','data/fgimage/girl/S/ryoute_zED.png','data/fgimage/girl/S/katate_zED.png']"]
+[preload storage=&tf.preload_ishou wait=true]
 ;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　

@@ -335,7 +335,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ;【背景】仲人庭園(道2)話の変化に合わせて背景も変化させてみます(スクリプト担
 [bg method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_michi2.jpg" wait=true]
 [eval exp="f.haikei_credit='photo　by　◆I9IhvvVdPo'"]
-;[image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
+[image name="junbi_girl" layer=29 storage="girl/S/girl_all_kSakura_toji.png" left=1 top=381 time=300 visible=true]
 [主人公ポーズ葛城宮白桜色通常]
 ;【立ち絵】主人公　主人公照れ目普通
 [主人公照れ目普通]

@@ -229,6 +229,10 @@
 ;【背景】仲人庭園 庭園の門 夕方
 [preload storage="data/fgimage/bg/I9IhvvVdPo/nakoudoteiniwa_mon_yuu.jpg" wait=true]
 ;======================================================================================
+;【衣装差分】
+[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_kSakura.png','data/fgimage/girl/S/girl_all_kSakura_toji.png']"]
+[preload storage=&tf.preload_ishou wait=true]
+;=============================================================================
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
@@ -483,12 +487,21 @@
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED.jpg" wait=true]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED_2.jpg" wait=true]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_goodED_3.jpg" wait=true]
+;======================================================================================
+;【衣装差分と復帰準備画像】
+[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_kED.png','data/fgimage/girl/S/base_kSakura.png','data/fgimage/girl/S/girl_all_kSakura_futuu.png']"]
+[preload storage=&tf.preload_ishou wait=true]
+;=============================================================================
 [else]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED.jpg" wait=true]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED_2.jpg" wait=true]
 [preload storage="data/fgimage/bg/katuraginomiya_3_4_nomalED_3.jpg" wait=true]
-[endif]
+;======================================================================================
+;【衣装差分】
+[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_kED.png']"]
+[preload storage=&tf.preload_ishou wait=true]
 ;=============================================================================
+[endif]
 @jump target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
