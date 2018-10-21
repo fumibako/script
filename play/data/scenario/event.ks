@@ -99,6 +99,7 @@ TG.stat.stack["call"] = [];
 ;[skipstop]
 #
 [主人公退場]
+[wait time=10]
 ;会話ウィンドウ消去
 [chara_mod name="message_bg" storage="toumei.gif"]
 ;機能ボタン消去
