@@ -201,7 +201,7 @@
 [preload storage="data/fgimage/bg/bg_bluesky.jpg" wait=true]
 ;==========================================================================
 ;【衣装差分】
-[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_zDress.png','data/fgimage/girl/S/katate_zDress.png'"]
+[eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_zDress.png','data/fgimage/girl/S/katate_zDress.png']"]
 [preload storage=&tf.preload_ishou wait=true]
 ;==========================================================================
 @jump target=end_sub
