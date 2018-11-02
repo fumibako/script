@@ -20,47 +20,6 @@
 [wait time=10]
 [プリロード画面消去]
 [メッセージウィンドウ上ボタン表示]
-;=================================================================================_
-[if exp="sf.common_asuka == 1"]
-*event_select
-五月『飛鳥紗代子・はじめての手紙』：既読イベントです。[r]
-イベントを見ますか？　又はイベントを終了しますか？[r]
-;選択肢用レイヤーを追加
-;[position layer=message1 height=300 top=70 left=300 opacity=0]
-;@layopt layer=message1 visible=true
-;[current layer="message1"]
-;[font size=30]
-;[link target=*jump_to_end1]イベントを終了する[endlink][r]
-;[r][r]
-;[link target=*jump_ok1]最初からイベントを見る[endlink][r]
-;[resetfont]
-;↓表示を他の選択肢に合わせます◆jsYiJcqRkk
-[glink target=*jump_to_end1 text="イベントを終了する" font_color=black size=23 width="300" x=300 y=100 graphic="select_waku_x300.png"]
-[glink target=*jump_ok1 text="最初からイベントを見る" font_color=black size=23 width="300" x=300 y=250 graphic="select_waku_x300.png"]
-
-[s]
-*jump_to_end1
-[er]
-[current layer="message0"]
-[resetfont]
-[er]
-[eval exp="tf.event_skip = 1"]
-「イベントを終了する」[r]
-終了します。[p]
-[cm]
-@jump target=*seen_end
-[s]
-*jump_ok1
-[er]
-[current layer="message0"]
-[resetfont]
-[er]
-「最初からイベントを見る」[r]
-最初の場面に移動します。[p]
-[cm]
-[背景_お稽古部屋]
-[endif]
-;=================================================================================_
 [whosay name="磯野" color="dimgray"]
 「飛鳥紗代子様から、お手紙を頂戴しました」[p]
 [if exp="sf.BGM=='ON'"]
@@ -72,11 +31,59 @@
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
 [主人公ポーズ片手]
+
+;=================================================================================_
+[if exp="sf.common_asuka == 1"]
+*event_select
+「まあ、紗代子さんから？」[r]
+;選択肢用レイヤーを追加
+;[position layer=message1 height=300 top=70 left=300 opacity=0]
+;@layopt layer=message1 visible=true
+;[current layer="message1"]
+;[font size=30]
+;[link target=*jump_to_end1]イベントを終了する[endlink][r]
+;[r][r]
+;[link target=*jump_ok1]最初からイベントを見る[endlink][r]
+;[resetfont]
+;↓表示を他の選択肢に合わせます◆jsYiJcqRkk
+[glink target=*jump_to_end1 text="「いつもお気遣い頂いて有難いことだわ」（イベントスキップ）" font_color=black size=20 width="550" x=150 y=100 graphic="select_waku_x500.png"]
+[glink target=*jump_ok1 text="「わざわざお手紙なんて…。　どうされたのかしら」（続きを見る）" font_color=black size=20 width="550" x=150 y=250 graphic="select_waku_x500.png"]
+
+[s]
+*jump_to_end1
+[er]
+[current layer="message0"]
+[resetfont]
+[er]
+[eval exp="tf.event_skip = 1"]
+[主人公ポーズ通常]
+[wait time=10]
+[主人公ほほえみ]
+[wait time=10]
+
+「いつもお気遣い頂いて有難いことだわ」[r]
+イベントをスキップして終了します。[p]
+[cm]
+@jump target=*seen_end
+[s]
+*jump_ok1
+[er]
+[current layer="message0"]
+[resetfont]
+[er]
+「わざわざお手紙なんて…。　どうされたのかしら」[r]
+続きの場面に移動します。[p]
+[cm]
+[背景_お稽古部屋]
+[else]
 「まあ、紗代子さんから？」[p]
-;============================================
+[endif]
+;=================================================================================_
 [whosay name="磯野" color="dimgray"]
-「お嬢様の伯父君であらせられる飛鳥[ruby text=こう]公と[r]
-[sp]ご結婚なされて、三年は経つのでしょうか」[p]
+;「お嬢様の伯父君であらせられる飛鳥[ruby text=こう]公と[r]
+;↓ご意見(飛鳥公だとお祖父様を想像してしまう)をいただいて変更いたしました。◆jsYiJcqRkk
+「お嬢様の伯父君様とご結婚なされて、[r]
+[sp]三年は経つのでしょうか」[p]
 #
 [主人公ポーズ指]
 [主人公目閉じ]
