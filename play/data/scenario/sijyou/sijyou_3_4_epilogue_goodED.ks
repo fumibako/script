@@ -389,7 +389,7 @@ $('.1_fore').empty();
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 
 ;tweet表示
-[call storage="sijyou/01_tweet.ks"]
+;tweet表示はevent.ksの*event_ED以下、バッジ処理後に移動しました◆jsYiJcqRkk
 
 @jump storage="event.ks" target=*event_ED
 [else]

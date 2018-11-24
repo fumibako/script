@@ -53,6 +53,7 @@
 	[eval exp="f.event_target='*replay_hujieda_6_1'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_sijyou[1]=1"]
+	[eval exp="f.event_char='hujieda'"]
 	@jump storage="event.ks" target=*start
 	;四条	
 	[elsif exp="tf.a == f.para_sijyou_koukando && f.sijyou_au == 0 && (f.para_shujinkou_shukujodo < 15 || f.para_sijyou_koukando > 20) && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
@@ -61,6 +62,7 @@
 	[eval exp="f.event_target='*replay_sijyou_6_1'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_sijyou[1]=1"]
+	[eval exp="f.event_char='sijyou'"]
 	@jump storage="event.ks" target=*start
 	[elsif exp="tf.a == f.para_zaizen_koukando && f.zaizen_au == 0 && (f.para_shujinkou_shukujodo < 15 || f.para_zaizen_koukando > 20) && f.event_sijyou[1] == 0 && f.katuraginomiya_only != 1"]
 	;財前の好感度と一番高い数値が同じであるとき淑女度が15以下	または　財前の好感度と一番高い数値が同じであり、その好感度が15以上
@@ -68,6 +70,7 @@
 	[eval exp="f.event_target='*replay_zaizen_6_1'"]
 	[eval exp="f.event_type='talk'"]	
 	[eval exp="f.event_sijyou[1]=1"]
+	[eval exp="f.event_char='zaizen'"]
 	@jump storage="event.ks" target=*start
 	[endif]
 [endif]
@@ -237,6 +240,7 @@ f.common_9_1_ninzuu = f.common_9_1_oaite.length;
 *kuroda_event_hantei
 ;◆黒田イベント判定【麦】6月4週になった時点で、黒田好感度一定値以上かつ華道熟練度3以上なら1度だけ発生
 [if exp="(f.okeiko_month == 6 && f.okeiko_week == 4) && f.event_machi_kuroda[2] == 0 && f.para_kuroda_koukando > 3 && f.para_shujinkou_j_kadou >= 3"]
+	[eval exp="f.event_char='kuroda'"]
 	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_02
 [endif]
 

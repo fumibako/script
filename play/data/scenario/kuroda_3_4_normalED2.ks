@@ -147,6 +147,7 @@ $('.1_fore').remove();
 [r]
 [wait time=10]
 [sp]　　　　　　　　　　完[p]
+*seen_nomal
 [stopbgm]
 [wait time=10]
 [eval exp="sf.ED_kuroda_normal=1"]
@@ -168,82 +169,98 @@ $('.1_fore').remove();
 [イベントシーン終了]
 [wait time=10]
 
-;◆黒田ルートクリアバッジ獲得処理
-;バッジ獲得済み（周回プレイ時）はバッジ処理とツイート処理を飛ばしてendへ。
-[if exp="sf.badge_kuroda == 1"]
-	@jump target=*end
-[endif]
-;◆共通処理
-;【背景】タイトル背景
-[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=1000]
-[wait time=500]
-;◆スキップ状態の時はスキップを解除
-[eval exp="f.skip=this.kag.stat.is_skip"]
-[if exp="f.skip == true"]
-	[cancelskip]
-	[eval exp="f.skip = false"]
-[endif]
-@layopt layer=29 visible=true
-[wait time=10]
-@layopt layer=message0 visible=true
-[position width=700 height=620 top=0 left=150 page=fore margint="40" opacity=0]
-[wait time=10]
-[whosay name=""]
-[font size=20]
-[wait time=10]
-
-;◆ノベコレ版とそれ以外振り分け
-[if exp="sf.novecole != 1"]
-	@jump target=*badge_omake_only
-[endif]
-
-[give_emblem id="5198" pid="fa141c9a1069957c1117ac4451c1d199" ]
-[image name=list layer=29 storage="../image/badge_kuroda.png" x=360 y=50]
-[wait time=10]
-[r][r][r][r][r]
-『スミレの証』を獲得しました。[r]
-黒田 将貴との物語でgood又はnormalエンドをご覧いただいた方に贈られる[r]
-証です。[r]
-[r]
-ゲーム中「攻略情報とおまけ」コーナー（タイトル画面一番左）と[r]
-「ノベルゲームコレクション」※プロフィールの"バッジ"欄に飾られます。[r]
-[r]
-[font size=17 color="peru"]
-[sp]　　※　環境によっては反映されない場合があります。その際はゲーム中の[r]
-[sp]　　　　「攻略情報とおまけ」コーナーをお楽しみください。[p]
-[freeimage layer = 29]
-[wait time=10]
-[eval exp="sf.badge_kuroda = 1"]
-[eval exp="tf.tweet_badge = 1"]
-@jump target=*root_clear
-
-*badge_omake_only
-[image name=list layer=29 storage="../image/badge_kuroda.png" x=360 y=50]
-[wait time=10]
-[eval exp="sf.badge_kuroda = 1"]
-[r][r][r][r][r]
-『スミレの証』を獲得しました。[r]
-黒田 将貴との物語でgood又はnormalエンドをご覧いただいた方に贈られる[r]
-証です。[r]
-[r]
-ゲーム中「攻略情報とおまけ」コーナー（タイトル画面一番左）[r]
-に飾られます。[p]
-[freeimage layer = 29]
-[wait time=10]
-
 *root_clear
 ;黒田ルートをクリアした
 [eval exp="tf.ED_kuroda == 1"]
 [if exp="f.okeiko_gamen == true"]
 	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
 [endif]
-;tweet表示(バッジ獲得でTweet画面を見ている方には表示しない)
-[if exp="tf.tweet_badge != 1"]
-	[call storage="sijyou/01_tweet.ks"]
-	[eval exp="tf.tweet_badge = 0"]
-[endif]
+
 
 *end
 [if exp="f.okeiko_gamen == true"]
 	@jump storage="event.ks" target=*event_ED
 [endif]
+
+*complete
+[if exp="sf.badge_kuroda != 2"]
+	[image name=list layer=29 storage="../image/badge_kuroda100.png" x=100 y=50]
+	[wait time=10]
+	[image name=list layer=29 storage="../image/badge_comp.png" x=400 y=50]
+	[wait time=10]
+	[eval exp="sf.badge_comp = 1"]
+	[eval exp="tf.omake_mark = 1"]
+	[eval exp="sf.badge_kuroda = 2"]
+	[r][r][r][r][r]
+	おめでとうございます！[r]
+	黒田様との物語を全てご覧になり、ゲーム中全てのイベントを達成しました。[r]
+	[r]
+	ゲーム中「攻略情報とおまけ」（タイトル画面一番左）に[r]
+	『全イベント達成の証』と『黒田将貴：全イベント達成の証』が飾られます。[r]
+	[r]
+	『主人公のキャラクターデザイン原案』と『黒田将貴：キャラクターデザイン原案』[r]
+	が解放されました。[r]
+	「攻略情報とおまけ」からお楽しみください。[p]
+
+[else]
+	[image name=list layer=29 storage="../image/badge_comp.png" x=360 y=50]
+	[wait time=10]
+	[eval exp="sf.badge_comp = 1"]
+	[eval exp="tf.omake_mark = 1"]
+	[r][r][r][r][r]
+	おめでとうございます！[r]
+	全てのイベントを達成しました。[r]
+	[r]
+	ゲーム中「攻略情報とおまけ」（タイトル画面一番左）[r]
+	に『全イベント達成の証』が飾られます。[r]
+	[r]
+	『主人公のキャラクターデザイン原案』が解放されました。[r]
+	「攻略情報とおまけ」からお楽しみください。[p]
+[endif]
+
+*comp_end
+[freeimage layer = 29]
+[wait time=10]
+[position width=700 height=620 top=0 left=200 page=fore margint="40" opacity=0]
+[wait time=10]
+[r][r][r][r][r]
+[font size=29]
+[link target=*to_omake]「おまけ」を見る[r]
+[font size=15]
+（ゲーム終了）[endlink][r]
+[font size=29]
+[r][r][r]
+[link target=*to_title]タイトル画面へ[r]
+[font size=15]
+（ゲーム終了）[endlink][r]
+[resetfont]
+[s]
+
+*to_title
+[freeimage layer = 29]
+[wait time=10]
+[eval exp="f.badge_from == ''"]
+[eval exp="tf.test_gamen_sijyou=false"]
+[eval exp="tf.test_gamen=false"]
+[eval exp="tf.okeiko_gamen=false"]
+[eval exp="f.okeiko_gamen=false"]
+[eval exp="tf.advice_event_hyouji=1"]
+[eval exp="f.flag_replay=false"]
+[eval exp="tf.flag_replay=false"]
+[eval exp="tf.jp_sinario=''"]
+@jump storage="title.ks"
+	
+*to_omake
+[eval exp="f.badge_from == ''"]
+[eval exp="tf.test_gamen_sijyou=false"]
+[eval exp="tf.test_gamen=false"]
+[eval exp="tf.okeiko_gamen=false"]
+[eval exp="f.okeiko_gamen=false"]
+[eval exp="tf.advice_event_hyouji=1"]
+[eval exp="f.flag_replay=false"]
+[eval exp="tf.flag_replay=false"]
+[eval exp="tf.jp_sinario=''"]
+[freeimage layer = 29]
+[wait time=10]
+@jump storage="omake.ks"
+

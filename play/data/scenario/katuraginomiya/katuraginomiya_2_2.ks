@@ -162,6 +162,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 
 *seen_end
 [イベントシーン終了]
+[eval exp="sf.event_katuragi_2_2 = 1"]
 [if exp="f.okeiko_gamen == true"]
 @jump storage="event.ks" target=*event_owari
 [endif]

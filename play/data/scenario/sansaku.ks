@@ -237,21 +237,25 @@ TG.stat.play_se = true;
 *kuroda_event_hantei
 ;◆黒田イベント3判定【黒田家のうわさ１】7月1週～4週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
 [if exp="f.okeiko_month==7 && f.event_machi_kuroda[3]==0 && f.para_kuroda_koukando > 10"]
+	[eval exp="f.event_char='kuroda'"]
 	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_03
 [endif]
 
 ;◆黒田イベント4判定【黒田家のうわさ２】7月2週～4週、期間中に町へ行くと黒田好感度一定値以上かつ「黒田家のうわさ１」フラグONの場合に1度だけ発生
 [if exp="(f.okeiko_month==7 && (f.okeiko_week==2 || f.okeiko_week==3 || f.okeiko_week==4)) && f.event_machi_kuroda[3]==1 && f.event_machi_kuroda[4]==0 && f.para_kuroda_koukando > 15"]
+	[eval exp="f.event_char='kuroda'"]
 	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_04
 [endif]
 
 ;◆黒田イベント5判定【友人に忠告される】8月1週～4週、期間中に町へ行くと黒田好感度一定値以上かつ「黒田家のうわさ１」フラグONの場合に1度だけ発生
 [if exp="f.okeiko_month==8 && f.event_machi_kuroda[3]==1 && f.event_machi_kuroda[5]==0 && f.para_kuroda_koukando > 20"]
+	[eval exp="f.event_char='kuroda'"]
 	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_05
 [endif]
 
 ;◆黒田イベント6判定【友人と会う（落ち込み時）】12月1週～2週、期間中に町へ行くと1度だけ発生
 [if exp="(f.okeiko_month==12 && (f.okeiko_week==1 || f.okeiko_week==2)) && f.event_machi_kuroda[6]==0 && f.kuroda_au==1"]
+	[eval exp="f.event_char='kuroda'"]
 	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_06
 [endif]
 

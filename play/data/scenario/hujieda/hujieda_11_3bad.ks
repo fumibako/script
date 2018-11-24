@@ -58,6 +58,8 @@ $("kan").css('margin','auto');
 ;スマホで音楽がぶちときれるのはどうしようもない 
 ;===============================================================
 [イベントシーン終了]
+;bad判定用 ツイート抑止 
+[eval exp="tf.ED_bad = 1"]
 
 [if exp="f.flag_replay == true"]
 ;@layopt layer=29 visible=true

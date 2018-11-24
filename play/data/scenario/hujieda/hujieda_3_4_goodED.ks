@@ -551,6 +551,9 @@ $('.1_fore').remove();
 [イベントシーン終了]
 @jump storage="replay2.ks"
 [endif]
+;バッジ獲得画面から「おまけ」等へ移行してゲーム終了する可能性があるため、先にフラグ処理実施
+[eval exp="sf.ED_hujieda_good = 1"]
+[wait time=10]
 
 [if exp="f.okeiko_gamen == true || tf.test_hujieda == true"]
 [イベントシーン終了・ＢＧＭ有]
@@ -570,8 +573,7 @@ f.skip=false;
 [endscript]
 [wait time=10]
 
-;tweet表示
-[call storage="sijyou/01_tweet.ks"]
+;tweet表示はevent.ksの*event_ED以下、バッジ処理後に移動しました◆jsYiJcqRkk
 [endif]
 
 

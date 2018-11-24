@@ -103,6 +103,50 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 
+;◆イベントコンプリートチェック
+[cm]
+[call storage="eventpercent_sijyou.ks" target=*start]
+[wait time=50]
+[call storage="eventpercent_zaizen.ks" target=*start]
+[wait time=50]
+[call storage="eventpercent_kuroda.ks" target=*start]
+[wait time=50]
+[call storage="eventpercent_katuraginomiya.ks" target=*start]
+[wait time=50]
+[call storage="eventpercent_hujieda.ks" target=*start]
+[wait time=50]
+;test
+;【背景】
+[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=1000]
+[wait time=500]
+;◆スキップ状態の時はスキップを解除
+[eval exp="f.skip=this.kag.stat.is_skip"]
+[if exp="f.skip == true"]
+	[cancelskip]
+	[eval exp="f.skip = false"]
+[endif]
+	@layopt layer=29 visible=true
+	[wait time=10]
+	@layopt layer=message0 visible=true
+	[position width=700 height=620 top=0 left=150 page=fore margint="40" opacity=0]
+	[wait time=10]
+	[whosay name=""]
+	[font size=20]
+	[wait time=10]
+;◆各キャラ100%時
+[if exp="(sf.badge_sijyou != 2 && sf.sijyou_clearlist_complete == 1) || (sf.badge_kuroda != 2 && sf.kuroda_clearlist_complete == 1) || (sf.badge_zaizen != 2 && sf.zaizen_clearlist_complete == 1) || (sf.badge_katuraginomiya != 2 && sf.katuraginomiya_clearlist_complete == 1) || (sf.badge_hujieda != 2 && sf.hujieda_clearlist_complete == 1)"]
+	[eval exp="f.badge_from = 'sansaku'"]
+	@jump storage="common_badge.ks" target=*get_badge
+[endif]
+
+;◆コンプリート達成時
+[if exp="sf.badge_comp != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
+	[eval exp="f.badge_from = 'sansaku'"]
+	@jump storage="common_badge.ks" target=*get_badge
+[endif]
+
+*after_complete_check
+
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
 [clearfix]

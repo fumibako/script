@@ -273,6 +273,7 @@ $('.junbi_girl').remove();
 [r]
 [r]
 [sp]　　　　　　　　　　完[p]
+*seen_end
 [bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 [wait time=10]
 [clearfix]

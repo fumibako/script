@@ -419,16 +419,16 @@ $('.1_fore').empty();
 ;web版はendreplayの下にするexe版はendreplayで戻る
 @jump storage="replay2.ks"
 [endif]
-
 [if exp="f.okeiko_gamen == true"]
 [イベントシーン終了・ＢＧＭ有]
+;↓コンプチェック前にフラグ獲得処理
+[eval exp="sf.ED_zaizen_good = 1"]
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [財前ルート終了 end="good"]
 
 ;財前ルートをクリアした
 [eval exp="tf.ED_zaizen = 1"]
-;tweet表示
-[call storage="sijyou/01_tweet.ks"]
+;tweet表示はevent.ksの*event_ED以下、バッジ処理後に移動しました◆jsYiJcqRkk
 
 @jump storage="event.ks" target=*event_ED
 [endif]

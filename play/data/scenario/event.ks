@@ -109,15 +109,45 @@ TG.stat.stack["call"] = [];
 ;◆イベントコンプリートチェック
 [cm]
 [call storage="eventpercent_sijyou.ks" target=*start]
+[wait time=10]
 [call storage="eventpercent_zaizen.ks" target=*start]
+[wait time=10]
 [call storage="eventpercent_kuroda.ks" target=*start]
+[wait time=10]
 [call storage="eventpercent_katuraginomiya.ks" target=*start]
+[wait time=10]
 [call storage="eventpercent_hujieda.ks" target=*start]
-
-[if exp="sf.badge_comp != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
-	[eval exp="f.comp_from = 'event'"]
+[wait time=10]
+;test
+;【背景】
+;[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=1000]
+;[wait time=500]
+;◆スキップ状態の時はスキップを解除
+[eval exp="f.skip=this.kag.stat.is_skip"]
+[if exp="f.skip == true"]
+	[cancelskip]
+	[eval exp="f.skip = false"]
+[endif]
+	@layopt layer=29 visible=true
+	[wait time=10]
+	@layopt layer=message0 visible=true
+	[position width=700 height=620 top=0 left=150 page=fore margint="40" opacity=0]
+	[wait time=10]
+	[whosay name=""]
+	[font size=20]
+	[wait time=10]
+;event又は散策後というフラグ
+[eval exp="f.badge_from = 'event'"]
+;◆各キャラ100%時
+[if exp="(sf.badge_sijyou != 2 && sf.sijyou_clearlist_complete == 1) || (sf.badge_kuroda != 2 && sf.kuroda_clearlist_complete == 1) || (sf.badge_zaizen != 2 && sf.zaizen_clearlist_complete == 1) || (sf.badge_katuraginomiya != 2 && sf.katuraginomiya_clearlist_complete == 1) || (sf.badge_hujieda != 2 && sf.hujieda_clearlist_complete == 1)"]
 	@jump storage="common_badge.ks" target=*get_badge
 [endif]
+
+;◆コンプリート達成時
+[if exp="sf.badge_comp != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
+	@jump storage="common_badge.ks" target=*get_badge
+[endif]
+
 
 *after_complete_check
 [cm]
@@ -175,16 +205,62 @@ TG.stat.stack["call"] = [];
 
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
-;◆イベントコンプリートチェック
-[cm]
+;◆共通処理
+;◆コンプチェック
 [call storage="eventpercent_sijyou.ks" target=*start]
+[wait time=10]
 [call storage="eventpercent_zaizen.ks" target=*start]
+[wait time=10]
 [call storage="eventpercent_kuroda.ks" target=*start]
+[wait time=10]
 [call storage="eventpercent_katuraginomiya.ks" target=*start]
+[wait time=10]
 [call storage="eventpercent_hujieda.ks" target=*start]
+[wait time=10]
 
-[if exp="sf.badge_comp != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
+;◆各キャラ100%時
+[if exp="(sf.badge_sijyou != 2 && sf.sijyou_clearlist_complete == 1) || (sf.badge_kuroda != 2 && sf.kuroda_clearlist_complete == 1) || (sf.badge_zaizen != 2 && sf.zaizen_clearlist_complete == 1) || (sf.badge_katuraginomiya != 2 && sf.katuraginomiya_clearlist_complete == 1) || (sf.badge_hujieda != 2 && sf.hujieda_clearlist_complete == 1)"]
+	[eval exp="f.badge_from = 'ED'"]
 	@jump storage="common_badge.ks" target=*get_badge
+[endif]
+
+;◆コンプリート達成時
+[if exp="sf.badge_comp != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
+	[eval exp="f.badge_from = 'ED'"]
+	@jump storage="common_badge.ks" target=*get_badge
+[endif]
+
+;バッジ獲得時のみ処理通過
+[if exp="tf.ED_bad != 1 &&((sf.badge_sijyou != 1 && f.sijyou_au == 1)||(sf.badge_zaizen != 1 && f.zaizen_au == 1)||(sf.badge_kuroda != 1 && f.kuroda_au == 1)||(sf.badge_katuraginomiya != 1 && f.katuraginomiya_au == 1)||(sf.badge_hujieda != 1 && f.hujieda_au == 1))"]
+	[eval exp="f.badge_from = 'ED'"]
+	@jump storage="common_badge.ks" target=*get_badge
+[endif]
+
+*event_ED_after_badge
+;tweet表示(tweet起動中、バッジ獲得でTweet画面を見ている方やbad時には表示しない)
+[if exp="tf.tweet_end != true && tf.tweet_badge != 1 && tf.ED_bad != 1"]
+	[call storage="sijyou/01_tweet.ks"]
+	[eval exp="tf.tweet_badge = 0"]
+[endif]
+
+[if exp="tf.test_sijyou == true"]
+;初期化
+[eval exp="f.event_char=''"]
+;藤枝 
+@eval exp="f.hujieda_au=0" 
+;葛城宮 
+@eval exp="f.katuraginomiya_au=0"
+;財前 
+@eval exp="f.zaizen_au=0"
+@eval exp="f.kuroda_au=0" 
+;四条
+@eval exp="f.sijyou_au=0" 
+@eval exp="tf.ED_bad = 0"
+@eval exp="sf.sijyou_clearlist_complete = 0"
+@eval exp="sf.zaizen_clearlist_complete = 0"
+@eval exp="sf.katuraginomiya_clearlist_complete = 0"
+@eval exp="sf.hujieda_clearlist_complete = 0"
+@eval exp="sf.kuroda_clearlist_complete = 0"
 [endif]
 
 [cm]

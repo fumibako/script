@@ -504,6 +504,8 @@ $('.1_fore').empty();
 [if exp="f.okeiko_gamen == true"]
 [wait time=10]
 [イベントシーン終了・ＢＧＭ有]
+;↓コンプチェック前にフラグ獲得処理
+[eval exp="sf.ED_katuraginomiya_good=1"]
 ;クレジット呼び出し。呼び出し位置は移動してください。
 [call storage="sijyou/test_ed_credit.ks" target=*test_haikei]
 [wait time=10]
@@ -513,8 +515,7 @@ $('.1_fore').empty();
 [eval exp="tf.ED_katuraginomiya = 1"]
 
 [wait time=10]
-;tweet表示
-[call storage="sijyou/01_tweet.ks"]
+;tweet表示はevent.ksの*event_ED以下、バッジ処理後に移動しました◆jsYiJcqRkk
 [wait time=10]
 
 @jump storage="event.ks" target=*event_ED

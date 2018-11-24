@@ -15,7 +15,7 @@
 [freeimage layer = 19]
 [freeimage layer = 20]
 ;↓ノベコレ版のみ1、それ以外での配布版は0に設定。
-[eval exp="sf.novecole = 1"]
+[eval exp="sf.novecole = 0"]
 [eval exp="tf.test_gamen_sijyou=false"]
 [eval exp="tf.test_gamen=false"]
 [eval exp="tf.okeiko_gamen=false"]

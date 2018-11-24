@@ -54,6 +54,7 @@
 ;◆四条イベント判定 sijyou_sansaku6.ks(7~8月→8月(他攻略対象より好感度が高い)花火イベント)
 [if exp="f.okeiko_month == 8 && f.para_sijyou_koukando > f.para_zaizen_koukando && f.para_sijyou_koukando > f.para_kuroda_koukando && f.para_sijyou_koukando > f.para_katuraginomiya_koukando &&  f.para_sijyou_koukando > f.para_hujieda_koukando && f.event_machi_sijyou[6] == 0 && f.sijyou_au == 0 && f.event_hujieda[4] == 0"]
 	[eval exp="f.event_machi_sijyou[6]=1"]
+	[eval exp="f.event_char='sijyou'"]
 	@jump storage="sijyou/sijyou_sansaku6.ks" 
 	;target=*sansaku
 [endif]
@@ -75,6 +76,7 @@
 ;◆四条イベント判定 sijyou_sansaku9.ks(見合い前なら一回発生子供達　気力が微多めに回復)
 [if exp="f.okeiko_month < 9 && f.sijyou_au == 0 && f.event_machi_sijyou[9] == 0"]
 	[eval exp="f.event_machi_sijyou[9]=1"]
+	[eval exp="f.event_char='sijyou'"]
 	@jump storage="sijyou/sijyou_sansaku9.ks" 
 	;target=*sansaku
 [endif]

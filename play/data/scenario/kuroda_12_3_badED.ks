@@ -300,6 +300,10 @@ $('.junbi_girl').remove();
 [cm]
 [resetfont]
 [eval exp="sf.ED_kuroda_bad = 1"]
+;bad判定用 ツイート抑止 
+[eval exp="tf.ED_bad = 1"]
+[wait time=10]
+
 [if exp="f.okeiko_gamen == true"]
 	[eval exp="sf.ending_Number_of_times = sf.ending_Number_of_times + 1"]
 [endif]

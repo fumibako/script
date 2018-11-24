@@ -1,5 +1,5 @@
 ﻿;=========================================
-; extraモード　画面作成 黒田ルート立ち絵テストがないです。
+; extraモード
 ;=========================================
 *start
 ;◆クリアリストからの戻り値(storage)はf.clearlist_out_storageに格納しています↓(クリアリストks用)「戻」ボタン設置スクリプト例参考
@@ -94,10 +94,18 @@ $(".layer_2").css("opacity",0);
 [wait time=10]
 [endif]
 ;◆バッジ：四条
-[if exp="sf.badge_sijyou == 1"]
-[image name=list layer=2 storage="../image/badge_sijyou.png" x=220 y=70 height=104]
-[wait time=10]
+[if exp="f.sijyou_event_percent == 'イベント達成率100％'"]
+	[button name=rp_bt storage="omake_tokuten.ks" target=*start exp="tf.tokuten = 'sijyou'" graphic="../image/badge_sijyou100.png" x=220 y=70 height=104]
+	[wait time=10]
+	[ptext layer=2 name=list page=fore text="キャラクターデザイン原案" x=220 y=180 size=17 color=navy visible=true]
+	@jump target=*sijyou_end
 [endif]
+
+[if exp="sf.badge_sijyou == 1"]
+	[image name=list layer=2 storage="../image/badge_sijyou.png" x=220 y=70 height=104]
+	[wait time=10]
+[endif]
+*sijyou_end
 
 ;財前
 [image layer=2 name=list storage="../image/h2.png" x=500 y=35]
@@ -112,10 +120,17 @@ $(".layer_2").css("opacity",0);
 [wait time=10]
 [endif]
 ;◆バッジ：財前
+[if exp="f.zaizen_event_percent == 'イベント達成率100％'"]
+	[button name=rp_bt storage="omake_tokuten.ks" target=*start exp="tf.tokuten = 'zaizen'" graphic="../image/badge_zaizen100.png" x=670 y=70 height=104]
+	[wait time=10]
+	[ptext layer=2 name=list page=fore text="キャラクターデザイン原案" x=670 y=180 size=17 color=navy visible=true]
+	@jump target=*zaizen_end
+[endif]
 [if exp="sf.badge_zaizen == 1"]
 [image name=list layer=2 storage="../image/badge_zaizen.png" x=670 y=70 height=104]
 [wait time=10]
 [endif]
+*zaizen_end
 
 ;黒田
 [image layer=2 name=list storage="../image/h2.png" x=40 y=225]
@@ -129,11 +144,19 @@ $(".layer_2").css("opacity",0);
 [image name=list layer=2 x=50 y=260 width=160 height=104 storage="../fgimage/bg/cg_bg.jpg"]
 [wait time=10]
 [endif]
+
 ;◆バッジ：黒田
-[if exp="sf.badge_kuroda == 1"]
-[image name=list layer=2 storage="../image/badge_kuroda.png" x=220 y=260 height=104]
-[wait time=10]
+[if exp="f.kuroda_event_percent == 'イベント達成率100％'"]
+	[button name=rp_bt storage="omake_tokuten.ks" target=*start exp="tf.tokuten = 'kuroda'" graphic="../image/badge_kuroda100.png" x=220 y=260 height=104]
+	[wait time=10]
+	[ptext layer=2 name=list page=fore text="キャラクターデザイン原案" x=220 y=370 size=17 color=navy visible=true]
+	@jump target=*kuroda_end
 [endif]
+[if exp="sf.badge_kuroda == 1"]
+	[image name=list layer=2 storage="../image/badge_kuroda.png" x=220 y=260 height=104]
+	[wait time=10]
+[endif]
+*kuroda_end
 
 ;葛城宮
 [image layer=2 name=list storage="../image/h2.png" x=500 y=225]
@@ -153,10 +176,17 @@ $(".layer_2").css("opacity",0);
 [wait time=10]
 [endif]
 ;◆バッジ：葛城宮
+[if exp="f.katuraginomiya_event_percent == 'イベント達成率100％'"]
+	[button name=rp_bt storage="omake_tokuten.ks" target=*start exp="tf.tokuten = 'katuraginomiya'" graphic="../image/badge_katuraginomiya100.png" x=670 y=260 height=104]
+	[wait time=10]
+	[ptext layer=2 name=list page=fore text="キャラクターデザイン原案" x=670 y=370 size=17 color=navy visible=true]
+	@jump target=*katuraginomiya_end
+[endif]
 [if exp="sf.badge_katuraginomiya == 1"]
 [image name=list layer=2 storage="../image/badge_katuraginomiya.png" x=670 y=260 height=104]
 [wait time=10]
 [endif]
+*katuraginomiya_end
 
 ;藤枝
 [image layer=2 name=list storage="../image/h2.png" x=40 y=415]
@@ -181,14 +211,20 @@ $(".layer_2").css("opacity",0);
 [wait time=10]
 [endif]
 [iscript]
-$('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.png")','background-size' : '100% 100%', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
+$('.white').css({ 'backgroundImage' : 'url("../new/data/image/select_waku_x500.png")','background-size' : '100% 100%', 'background-position':'contain', 'background-repeat': 'no-repeat' , 'border-style' : 'none','box-shadow':'0px','border-radius':'0px' });
 [endscript]
 ;◆バッジ：藤枝
+[if exp="f.hujieda_event_percent == 'イベント達成率100％'"]
+	[button name=rp_bt storage="omake_tokuten.ks" target=*start exp="tf.tokuten = 'hujieda'" graphic="../image/badge_hujieda100.png" x=220 y=450 height=104]
+	[wait time=10]
+	[ptext layer=2 name=list page=fore text="キャラクターデザイン原案" x=220 y=560 size=17 color=navy visible=true]
+	@jump target=*hujieda_end
+[endif]
 [if exp="sf.badge_hujieda == 1"]
 [image name=list layer=2 storage="../image/badge_hujieda.png" x=220 y=450 height=104]
 [wait time=10]
 [endif]
-
+*hujieda_end
 
 *clear_notice
 ;一つ以上のルートをクリアしていればお知らせスキップ
@@ -209,11 +245,12 @@ $('.white').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 [endif]
 ;全てのイベントをコンプリートしているときの表示
 [if exp="sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
-[image layer=2 name=list storage="../image/h2.png" x=500 y=415]
-[ptext layer=2 name="list,osirase" page=fore text="クリアおめでとうございます" x=545 y=420 size=16 color=navy visible=true]
-[image name=list layer=2 storage="../image/badge_comp.png" x=500 y=450 height=104]
-[wait time=10]
-@jump target ="*common"
+	[image layer=2 name=list storage="../image/h2.png" x=500 y=415]
+	[ptext layer=2 name="list,osirase" page=fore text="クリアおめでとうございます" x=545 y=420 size=16 color=navy visible=true]
+	[button name=rp_bt storage="omake_tokuten.ks" target=*start exp="tf.tokuten = 'all'" graphic="../image/badge_comp.png" x=500 y=450 height=104]
+	[wait time=10]
+	[ptext layer=2 name=list page=fore text="キャラクターデザイン原案：主人公" x=500 y=560 size=17 color=navy visible=true]
+	@jump target ="*common"
 [endif]
 
 @jump target ="*common"
