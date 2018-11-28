@@ -111,9 +111,10 @@ $(function(){
 [glink target="tokiko_fumi_siren" text="手紙時子『天が与えた試練』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 graphic="select_waku_x500.png" font_color=black]
 [glink target="fumiya_fumi_siren" text="手紙文矢『試練と変革』" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 graphic="select_waku_x500.png" font_color=black]
 
-[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target="*tokuten" text="クリア特典" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
 ;[glink target="page_4" text="次へ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 graphic="select_waku_x500.png" font_color=black]
-[glink target="page_2" text="前に戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
+[glink target="page_2" text="前に戻る" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
 @jump target=common_page
 [s]
 
@@ -420,6 +421,12 @@ $(".test_txt").remove();
 [cm]
 [freeimage layer = 26]
 @jump target=test
+
+*tokuten
+[cm]
+[freeimage layer = 26]
+[eval exp="tf.tokuten = 'katuraginomiya'"]
+@jump storage="omake_tokuten.ks" target=*start
 
 *auto
 [autostart]

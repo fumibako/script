@@ -18,18 +18,18 @@
 [ptext text="また、複数ルートに関わらない共通イベントは各ライターさんのテストファイルにご記載ください" layer=26 size=17 x=100 y=65 color=darkslateblue]
 ;[ptext text="作業中＝　" layer=26 size=17 x=100 y=65 color=darkslateblue]
 
-[glink target="test01" text="5月1週「磯野に相談」" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 color=white]
-;[glink target="test02" text="共通イベント2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 color=white]
-;[glink target="test03" text="共通イベント3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 color=white]
-;[glink target="test04" text="共通イベント4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 color=white]
-;[glink target="test05" text="共通イベント5" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 color=white]
-;[glink target="test06" text="共通イベント6" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 color=white]
-;[glink target="test07" text="共通イベント7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 color=white]
-;[glink target="test08" text="共通イベント8" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 color=white]
-;[glink target="test09" text="共通イベント9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 color=white]
+[glink target="test01" text="5月1週「磯野に相談」" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 font_color=black]
+[glink target="test02" text="クリア特典(全イベント達成：主人公デザイン)" graphic="select_waku_x500.png" size=15 width="250" x=100 y=150 font_color=black]
+;[glink target="test03" text="共通イベント3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
+;[glink target="test04" text="共通イベント4" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
+;[glink target="test05" text="共通イベント5" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
+;[glink target="test06" text="共通イベント6" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
+;[glink target="test07" text="共通イベント7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 font_color=black]
+;[glink target="test08" text="共通イベント8" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 font_color=black]
+;[glink target="test09" text="共通イベント9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 font_color=black]
 
-[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 color=white]
-[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 color=white]
+[glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 font_color=black]
+[glink target="title" text="タイトルへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=550 font_color=black]
 
 *button_BGM
 [if exp="sf.BGM=='OFF'"]
@@ -56,7 +56,8 @@
 *test02
 [cm]
 [freeimage layer = 26]
-@jump storage="" target=""
+[eval exp="tf.tokuten = 'all'"]
+@jump storage="omake_tokuten.ks" target=*start
 [s]
 
 *test03

@@ -129,6 +129,7 @@ $('.test2').css({ 'backgroundImage' : 'url("../play/data/image/select_waku_x500.
 [glink target="test_sayoko" text="飛鳥紗代子イベント" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_save" text="セーブデータクリア" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 graphic="select_waku_x500.png" font_color=indigo]
 [glink target="check_event" text="evクリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target="tokuten" text="クリア特典" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 graphic="select_waku_x500.png" font_color=black]
 [glink target="test_page3" text="前のページへ" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=palevioletred]
 *common
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500 graphic="select_waku_x500.png" font_color=black]
@@ -875,6 +876,12 @@ sf.replay_hujieda=1;
 [ptext name="num_time13" text=&sf.event_sijyou_2_2_bazar layer=26 size=17 x=615 y=100 color=darkslateblue overwrite=true]
 [glink target="ending_Number_of_times" text="もどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=500 graphic="select_waku_x500.png" font_color=indigo]
 [s]
+
+*tokuten
+[cm]
+[freeimage layer = 26]
+[eval exp="tf.tokuten = 'sijyou'"]
+@jump storage="omake_tokuten.ks" target=*start
 
 *test_save
 [cm]

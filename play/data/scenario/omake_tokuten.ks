@@ -41,6 +41,13 @@
 ;戻るボタン設置
 [button fix=true graphic="back.png" target="*back" x=880 y=570 width=50 height=50 ]
 
+[if exp="tf.test_gamen == true"]
+	[glink target="*back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=11 width="100" x=820 y=540 graphic="select_waku_x500.png" font_color=indigo]
+[endif]
+
+;◆おまけから来たフラグ(表情鑑賞で使用：omake.ksと同じものを流用させていただきました)
+[eval exp="tf.flag_omake = true"]
+
 *page_0
 ;並んでいるところをみせない
 [iscript]
@@ -91,24 +98,10 @@ background:#beb7e8;
 [if exp="tf.tokuten == 'hujieda'"]
  [eval exp="tf.tokuten_name='藤枝様との'"]
 [endif]
-[if exp="tf.tokuten != 'all'"]
-[endif]
 [if exp="tf.tokuten == 'all'"]
  [eval exp="tf.tokuten_name=''"]
 [wait time=10]
 [endif]
-
-;◆HTML要素からJUMP
-[macro name=tes]
-[iscript]
-$("#"+mp.id).click(function () {
-TG.kag.ftag.startTag("jump",{storage:mp.str, target:mp.tgt});
-});
-[endscript]
-[endmacro]
-
-[tes id="button_sijyou" str="omake_tokuten.ks" tgt="*jump_hyoujou_sijyou"]
-;[s]
 
 [eval exp="tf.tokuten_target = '*tokuten_' + tf.tokuten"]
 @jump target=&tf.tokuten_target
@@ -500,14 +493,22 @@ $(".list").css("opacity",1);
 $('.loding_pic').remove();
 $('.loding_pic1').remove();
 [endscript]
+[wait time=10]
+[freeimage layer=29]
+[wait time=10]
 @layopt layer=2 visible=true
+[wait time=10]
 [s]
 
 *back
+[clearfix]
 [cm]
+[freeimage layer=29]
 [freeimage layer=3]
 [freeimage layer=2]
 [freeimage layer=1]
+[eval exp="tf.flag_omake = false"]
+[eval exp="tf.test_gamen = false"]
 @jump storage=omake.ks
 [s]
 
@@ -528,4 +529,16 @@ $('.loding_pic1').remove();
 
 *jump_hyoujou_girl
 @jump storage="test_girl.ks" 
+
+*back_test
+[clearfix]
+[cm]
+[freeimage layer=29]
+[freeimage layer=3]
+[freeimage layer=2]
+[freeimage layer=1]
+[eval exp="tf.flag_omake = false"]
+
+@jump storage=test.ks
+[s]
 

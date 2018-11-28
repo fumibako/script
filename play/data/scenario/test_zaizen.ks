@@ -89,8 +89,9 @@ $(function(){
 [glink target="test_fumi_tuika" text="手紙追加分" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
 [glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
 [glink target="check_event0" text="クリアリスト" graphic="select_waku_x500.png" size=20 width="250" x=400 y=350 graphic="select_waku_x500.png" font_color=black]
+[glink target="*tokuten" text="クリア特典" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
 
-[glink target="page_0" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 graphic="select_waku_x500.png" font_color=palevioletred]
+[glink target="page_0" text="1ページ目" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 graphic="select_waku_x500.png" font_color=palevioletred]
 @jump target=*common
 ;２ページ目の表示を共通部分をみせて終わらせます
 
@@ -379,6 +380,12 @@ $(function(){
 [freeimage layer = 26]
 @jump target=test
 [s]
+
+*tokuten
+[cm]
+[freeimage layer = 26]
+[eval exp="tf.tokuten = 'zaizen'"]
+@jump storage="omake_tokuten.ks" target=*start
 
 *auto
 [autostart]

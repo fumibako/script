@@ -111,8 +111,9 @@ $(function(){
 [s]
 
 *page_3
-[glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 graphic="select_waku_x500.png" font_color=black]
-[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=400 y=300 graphic="select_waku_x500.png" font_color=black]
+[glink target="hujieda_6_1" text="夢イベント" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 graphic="select_waku_x500.png" font_color=black]
+[glink target="check_event" text="クリアチェック" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 graphic="select_waku_x500.png" font_color=black]
+[glink target="*tokuten" text="クリア特典" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 graphic="select_waku_x500.png" font_color=black]
 [glink target="page_2" text="前にもどる" graphic="select_waku_x500.png" size=20 width="250" x=400 y=400 graphic="select_waku_x500.png" font_color=black]
 ;ページをとめます
 ;@jump target=common_page
@@ -397,7 +398,11 @@ $(".test_txt").remove();
 @jump target=test
 [s]
 
-
+*tokuten
+[cm]
+[freeimage layer = 26]
+[eval exp="tf.tokuten = 'hujieda'"]
+@jump storage="omake_tokuten.ks" target=*start
 
 *auto
 [autostart]
