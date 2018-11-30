@@ -24,6 +24,10 @@
 [if exp="sf.event_katuragi_9_3 == undefined"]
 [eval exp="sf.event_katuragi_9_3 = 0"]
 [endif]
+;↓葛城宮9_3不具合でフラグが立たなかったプレイヤー様救済
+[if exp="sf.event_katuragi_9_4 == 1"]
+	[eval exp="sf.event_katuragi_9_3 = 1"]
+[endif]
 [if exp="sf.event_katuragi_9_4 == undefined"]
 [eval exp="sf.event_katuragi_9_4 = 0"]
 [endif]
