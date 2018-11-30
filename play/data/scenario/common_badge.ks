@@ -4,9 +4,6 @@
 *get_badge
 [cm]
 ;共通処理
-;【背景】
-[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=1000]
-[wait time=500]
 ;◆スキップ状態の時はスキップを解除
 [eval exp="f.skip=this.kag.stat.is_skip"]
 	[wait time=10]
@@ -46,6 +43,9 @@
 ;[wait time=50]
 ;f.event_char=[emb exp="f.event_char"],f.badge_from=[emb exp="f.badge_from"][r]
 ;[p]
+;【背景】
+[bg wait=true method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=500]
+[wait time=500]
 
 ;◆◆jump振り分け処理◆◆
 ;◆ノベコレ版振り分け
