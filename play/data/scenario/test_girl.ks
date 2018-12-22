@@ -39,26 +39,16 @@
 [wait time=10]
 
 [cm]
-[wait time=10]
-[layopt layer=24 visible=true]
-[ptext name=list text="マクロ：衣装とポーズ" layer=24 size=16 x=30 y=10 color=black bold=bold]
-[ptext name=list text="表　情" layer=24 size=18 x=30 y=290 color=black bold=bold]
-[ptext name=list text="表　情" layer=24 size=18 x=300 y=10 color=black bold=bold]
-[ptext name=list text="アニメーション" layer=24 size=18 x=470 y=10 color=black bold=bold]
-[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
-[wait time=10]
-
+*hyouji_start
 *text
-[glink name=list target=text text="通常" graphic="select_waku_x500.png" size=10 width="35" x=0 y=30 font_color=steelblue exp="f.gra_girl_base='normal'"]
-[glink name=list target=pose_zED_01 text="財前エンディング" graphic="select_waku_x500.png" size=10 width="35" x=70 y=30 font_color=steelblue exp="f.gra_girl_base='zED'"]
-[glink name=list target=pose_zDress_01 text="財前ドレス" graphic="select_waku_x500.png" size=10 width="35" x=140 y=30 font_color=steelblue exp="f.gra_girl_base='zDress'"]
-[glink name=list target=pose_sPink_01 text="四条エピローグ" graphic="select_waku_x500.png" size=10 width="50" x=0 y=60 font_color=steelblue exp="f.gra_girl_base='sED_pink'"]
-;[glink target=pose_sGreen_01 text="四条緑" graphic="select_waku_x500.png" size=10 width="35" x=70 y=60 font_color=steelblue exp="f.gra_girl_base='sED_green'"]
-[glink name=list target=pose_sPurple_01 text="四条展覧会" graphic="select_waku_x500.png" size=10 width="50" x=100 y=60 font_color=steelblue exp="f.gra_girl_base='sTenran'"]
-[glink name=list target=pose_kKimono_01 text="葛城顔合わせ" graphic="select_waku_x500.png" size=10 width="50" x=0 y=90 font_color=steelblue exp="f.gra_girl_base='kKimono'"]
-[glink name=list target=pose_kED_01 text="葛城宮エンディング" graphic="select_waku_x500.png" size=10 width="50" x=100 y=90 font_color=steelblue exp="f.gra_girl_base='kED'"]
-;[glink target=text text="藤枝お出かけ1" graphic="select_waku_x500.png" size=10 width="35" x=0 y=90 font_color=steelblue exp="f.gra_girl_base='hKimono1'"]
-;[glink target=text text="藤枝お出かけ2" graphic="select_waku_x500.png" size=10 width="35" x=70 y=90 font_color=steelblue exp="f.gra_girl_base='hKimono2'"]
+[glink name=list target=text text="通常" graphic="select_waku_x500.png" size=10 width="35" x=0 y=60 font_color=steelblue exp="f.gra_girl_base='normal'"]
+[glink name=list target=pose_zED_01 text="財前エンディング" graphic="select_waku_x500.png" size=10 width="35" x=70 y=60 font_color=steelblue exp="f.gra_girl_base='zED'"]
+[glink name=list target=pose_zDress_01 text="財前ドレス" graphic="select_waku_x500.png" size=10 width="35" x=140 y=60 font_color=steelblue exp="f.gra_girl_base='zDress'"]
+[glink name=list target=pose_sPink_01 text="四条エピローグ" graphic="select_waku_x500.png" size=10 width="50" x=0 y=90 font_color=steelblue exp="f.gra_girl_base='sED_pink'"]
+;[glink target=pose_sGreen_01 text="四条緑" graphic="select_waku_x500.png" size=10 width="35" x=70 y=90 font_color=steelblue exp="f.gra_girl_base='sED_green'"]
+[glink name=list target=pose_sPurple_01 text="四条展覧会" graphic="select_waku_x500.png" size=10 width="50" x=100 y=90 font_color=steelblue exp="f.gra_girl_base='sTenran'"]
+[glink name=list target=pose_kKimono_01 text="葛城顔合わせ" graphic="select_waku_x500.png" size=10 width="50" x=0 y=120 font_color=steelblue exp="f.gra_girl_base='kKimono'"]
+[glink name=list target=pose_kED_01 text="葛城宮エンディング" graphic="select_waku_x500.png" size=10 width="50" x=100 y=120 font_color=steelblue exp="f.gra_girl_base='kED'"]
 
 [if exp="f.gra_girl_base=='normal'"]
 [glink name=list target="pose_01" text="[主人公ポーズ通常]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
@@ -94,85 +84,97 @@
 [glink name=list target="pose_zDress_02" text="[主人公ポーズ財前ドレス片手]" graphic="select_waku_x500.png" size=13 width="160" x=0 y=180 font_color=black]
 [endif]
 
-[glink name=list target="face_13" text="[主人公柔和ほほえみ１]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
-[glink name=list target="face_14" text="[主人公困り照れ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 font_color=black]
+[glink name=list target="face_13" text="[主人公柔和ほほえみ]" graphic="select_waku_x500.png" size=15 width="160" x=420 y=300 font_color=black]
+[glink name=list target="face_14" text="[主人公困り照れ]" graphic="select_waku_x500.png" size=15 width="160" x=420 y=330 font_color=black]
+[glink name=list target="face_12" text="[主人公真剣]" graphic="select_waku_x500.png" size=15 width="120" x=420 y=360 font_color=black]
 
-[glink name=list target="face_01" text="[主人公通常]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=30 font_color=black]
-[glink name=list target="face_02" text="[主人公伏目]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=60 font_color=black]
-[glink name=list target="face_03" text="[主人公驚]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=90 font_color=black]
-[glink name=list target="face_04" text="[主人公困り]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=120 font_color=black]
-[glink name=list target="face_05" text="[主人公困りほほえみ]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=150 font_color=black]
-[glink name=list target="face_06" text="[主人公照れ]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=180 font_color=black]
-[glink name=list target="face_07" text="[主人公照れ目普通]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=210 font_color=black]
-[glink name=list target="face_08" text="[主人公ほほえみ]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=240 font_color=black]
-[glink name=list target="face_09" text="[主人公笑顔]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=270 font_color=black]
-[glink name=list target="face_10" text="[主人公ふぅ閉]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=300 font_color=black]
-[glink name=list target="face_11" text="[主人公憂い]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=330 font_color=black]
-[glink name=list target="face_12" text="[主人公真剣]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=360 font_color=black]
+[glink name=list target="face_01" text="[主人公通常]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=60 font_color=black]
+[glink name=list target="face_02" text="[主人公伏目]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=90 font_color=black]
+[glink name=list target="face_03" text="[主人公驚]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=120 font_color=black]
+[glink name=list target="face_04" text="[主人公困り]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=150 font_color=black]
+[glink name=list target="face_05" text="[主人公困りほほえみ]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=180 font_color=black]
+[glink name=list target="face_06" text="[主人公照れ]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=210 font_color=black]
+[glink name=list target="face_07" text="[主人公照れ目普通]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=240 font_color=black]
+[glink name=list target="face_08" text="[主人公ほほえみ]" graphic="select_waku_x500.png" size=13 width="120" x=260 y=270 font_color=black]
+[glink name=list target="face_09" text="[主人公笑顔]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=300 font_color=black]
+[glink name=list target="face_10" text="[主人公ふぅ閉]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=330 font_color=black]
+[glink name=list target="face_11" text="[主人公憂い]" graphic="select_waku_x500.png" size=15 width="120" x=260 y=360 font_color=black]
 
-[glink name=list target="face_21" text="[主人公目パチ1回]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=30 font_color=black]
+[glink name=list target="face_21" text="[主人公目パチ1回]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=60 font_color=black]
 
-[glink name=list target="face_22" text="[主人公伏目パチ1回]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=60 font_color=black]
+[glink name=list target="face_22" text="[主人公伏目パチ1回]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=90 font_color=black]
 
-[glink name=list target="face_23" text="[主人公目閉じ]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=90 font_color=black]
+[glink name=list target="face_23" text="[主人公目閉じ]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=120 font_color=black]
 
-[glink name=list target="face_24" text="[主人公目を開く]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=120 font_color=black]
+[glink name=list target="face_24" text="[主人公目を開く]" graphic="select_waku_x500.png" size=13 width="120" x=420 y=150 font_color=black]
 
 
-[glink name=list target="mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=30 font_color=steelblue]
-[glink name=list target="me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=30 font_color=steelblue]
-[glink name=list target="kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=30 font_color=steelblue]
-[glink name=list target="emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=30 font_color=steelblue]
+[glink name=list target="mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=60 font_color=steelblue]
+[glink name=list target="me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=60 font_color=steelblue]
+[glink name=list target="kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=60 font_color=steelblue]
+[glink name=list target="emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=60 font_color=steelblue]
 
 [if exp="f.gra_girl_part=='mayu'"]
-[glink name=list target="mayu_01" text="[主人公眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="mayu_02" text="[主人公眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="mayu_05" text="[主人公眉下げ下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="mayu_03" text="[主人公眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="mayu_04" text="[主人公眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="mayu_01" text="[主人公眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="mayu_02" text="[主人公眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="mayu_05" text="[主人公眉下げ下]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="mayu_03" text="[主人公眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="mayu_04" text="[主人公眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
 [endif]
 
 [if exp="f.gra_girl_part=='me'"]
-[glink name=list target="me_01" text="[主人公目通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="me_02" text="[主人公目大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="me_03" text="[主人公目にこ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="me_04" text="[主人公目伏]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="me_08" text="[主人公目伏柔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="me_05" text="[主人公目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-[glink name=list target="me_06" text="[主人公横目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
-[glink name=list target="me_07" text="[主人公横伏目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
+[glink name=list target="me_01" text="[主人公目通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="me_02" text="[主人公目大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="me_03" text="[主人公目にこ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="me_04" text="[主人公目伏]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="me_08" text="[主人公目伏柔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="me_05" text="[主人公目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="me_06" text="[主人公横目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
+[glink name=list target="me_07" text="[主人公横伏目]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 font_color=black]
 [endif]
 
 [if exp="f.gra_girl_part=='kuti'"]
-[glink name=list target="kuti_01" text="[主人公口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="kuti_02" text="[主人公口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="kuti_03" text="[主人公口ほほえみ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="kuti_08" text="[主人公口笑顔小]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="kuti_04" text="[主人公口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="kuti_05" text="[主人公口ふぅ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-[glink name=list target="kuti_06" text="[主人公口大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
-[glink name=list target="kuti_07" text="[主人公口えー]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
-[glink name=list target="kuti_09" text="[主人公口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 font_color=black]
+[glink name=list target="kuti_01" text="[主人公口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="kuti_02" text="[主人公口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="kuti_03" text="[主人公口ほほえみ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="kuti_08" text="[主人公口笑顔小]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="kuti_04" text="[主人公口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="kuti_05" text="[主人公口ふぅ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="kuti_06" text="[主人公口大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
+[glink name=list target="kuti_07" text="[主人公口えー]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 font_color=black]
+[glink name=list target="kuti_09" text="[主人公口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=330 font_color=black]
 
 
 [endif]
 
 [if exp="f.gra_girl_part=='emo'"]
-[glink name=list target="emo_01" text="[主人公効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="emo_02" text="[主人公頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="emo_03" text="[主人公汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="emo_04" text="[主人公涙]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="emo_05" text="[主人公涙_目閉用]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="emo_06" text="[主人公涙流]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-[glink name=list target="emo_07" text="[主人公涙流_目閉用]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="emo_01" text="[主人公効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="emo_02" text="[主人公頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="emo_03" text="[主人公汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="emo_04" text="[主人公涙]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="emo_05" text="[主人公涙_目閉用]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="emo_06" text="[主人公涙流]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="emo_07" text="[主人公涙流_目閉用]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
 [endif]
 
+[freeimage layer = 24]
 [if exp="tf.flag_omake == false"]
 [glink name=opasity target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 font_color=black]
 [elsif exp="tf.flag_omake == true"]
 [glink name=opasity target="back_test_2" text="おまけへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 font_color=black]
 [endif]
 [glink target="title" text="タイトルへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=320 font_color=black]
+;◆背景変更ボタン
+[glink storage="test_haikei_list.ks" target="list_haikei" text="背景選択" graphic="select_waku_x300.png" size=15 width="100" x=800 y=190 font_color=black exp="tf.tokuten='all'"]
+[wait time=10]
+[layopt layer=24 visible=true]
+[ptext name=irast text="Character　Illustration　by　かいこ" layer=24 size=15 x=10 y=10 color=black bold=bold]
+[ptext name=list text="衣装とポーズ" layer=24 size=16 x=30 y=50 color=black bold=bold]
+[ptext name=list text="表　情" layer=24 size=18 x=470 y=290 color=black bold=bold]
+[ptext name=list text="表　情" layer=24 size=18 x=300 y=50 color=black bold=bold]
+[ptext name=list text="アニメーション" layer=24 size=18 x=450 y=50 color=black bold=bold]
+[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=50 color=black bold=bold]
+[wait time=10]
 [if exp="tf.btn_opasity != 'off'"]
 [glink name=opasity target="opasity_0" text="ボタンを一時消す" graphic="select_waku_x500.png" size=15 width="130" x=800 y=350 font_color=black]
 [else]
@@ -199,7 +201,9 @@ this.kag.variable.tf.system.backlog.pop();
 $(".list").css("opacity",0);
 //$(".layer_free").css("opacity",0);
 [endscript]
-ボタンを表示[p]
+;ボタンを表示[p]
+;↑背景変更機能使用時などは、テキスト無しの方がよりプレイヤーさんが自由に想像を広げやすいかと考えるため、テキスト無し版に変更します◆jsYiJcqRkk
+[p]
 *opasity_100
 [eval exp="tf.btn_opasity='on'"]
 [iscript]
@@ -557,6 +561,7 @@ $(".layer_free").css("opacity",1);
 
 *back_test
 [eval exp="tf.test_gamen = true"]
+[freeimage layer = 27]
 [freeimage layer = 24]
 [イベントシーン終了]
 [cm]
@@ -565,18 +570,25 @@ $(".layer_free").css("opacity",1);
 [s]
 
 *title
+[freeimage layer = 27]
 [freeimage layer = 24]
+[freeimage layer = 8]
+[freeimage layer = 9]
+[freeimage layer = 10]
+[freeimage layer = 11]
+[freeimage layer = 12]
+[freeimage layer = 1]
+[iscript]
+$(".list").css("opacity",1);
+[endscript]
 [イベントシーン終了]
 [cm]
 [freeimage layer = 26]
+[eval exp="tf.bg_target=''"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]
 
-
-[イベントシーン終了]
-@jump storage="test.ks"
-[s]
 
 *window_close
 [cm]
@@ -602,7 +614,7 @@ $(".layer_free").css("opacity",1);
 @layopt layer=message0 page=fore visible=false
 [layopt layer=27 visible=true]
 [wait time=10]
-[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
+[mtext text=&f.haikei_credit layer=27 size=18 x=20 y=30 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]
 [l]
 
@@ -643,7 +655,9 @@ $(".layer_free").css("opacity",1);
 [wait time=10]
 
 *back_test_2
+[freeimage layer = 27]
 [freeimage layer = 24]
+[freeimage layer = 27]
 [freeimage layer = 8]
 [freeimage layer = 9]
 [freeimage layer = 10]
@@ -658,7 +672,7 @@ $(".layer_free").css("opacity",1);
 $(".list").css("opacity",1);
 [endscript]
 [eval exp="f.kaogura = 'on'"]
+[eval exp="tf.bg_target=''"]
 @jump storage="omake.ks"
 [s]
-
 [return]

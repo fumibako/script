@@ -528,7 +528,7 @@ jumpします。[p]
 [playse storage=hakushu_concert.ogg loop=false ]
 ;[playse storage=hakushu.ogg loop=false ]
 #
-司会者は財前様の知り合という事で、場慣れしているようだった。[p]
+司会者は財前様の知り合いという事で、場慣れしているようだった。[p]
 ;================
 [藤枝ベース私服]
 [藤枝微笑み]

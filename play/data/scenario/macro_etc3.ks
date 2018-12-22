@@ -179,25 +179,39 @@
 [cm]
 ;主人公顔グラ消去
 [freeimage layer = 15]
+[wait time=10]
 [freeimage layer = 16]
+[wait time=10]
 [freeimage layer = 17]
+[wait time=10]
 [freeimage layer = 18]
+[wait time=10]
 [freeimage layer = 19]
+[wait time=10]
 [freeimage layer = 20]
+[wait time=10]
 ;攻略対象立ち絵消去
 [freeimage layer = 8]
+[wait time=10]
 [freeimage layer = 9]
+[wait time=10]
 [freeimage layer = 10]
+[wait time=10]
 [freeimage layer = 11]
+[wait time=10]
 [freeimage layer = 12]
+[wait time=10]
 [freeimage layer = 13]
 ;会話ウィンドウ消去
 [freeimage layer = 14]
+[wait time=10]
 ;機能ボタン消去
 [clearfix]
+[wait time=10]
 [eval exp="sf.FButton='OFF'"]
 ;メッセージレイヤを全画面用に設定変更
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=10]
 
 ;テキスト全画面
 [font color=white size=27]

@@ -57,95 +57,91 @@ $('.list').remove();
 [eval exp="f.gra_sijyou_part='sijyou_mayu'"]
 [表示開始]
 [cm]
-[layopt layer=24 visible=true]
-[ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
-[ptext name=list text="ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
-[ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-[ptext name=irast text="Illustration　by :かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold]
-[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
-[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
+[iscript]
+$('.list').remove();
+[endscript]
 *sijyou_text
 *sijyou_text1
-[glink name=list target="page_01" exp="tf.size='defo'" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 font_color=steelblue]
-[glink name=list target="page_02" exp="tf.size='tonari'" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 font_color=steelblue]
-[glink name=list target="page_03" exp="tf.size='up'" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=steelblue]
+[glink name=list target="page_01" exp="tf.size='defo'" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 font_color=steelblue]
+[glink name=list target="page_02" exp="tf.size='tonari'" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=steelblue]
+[glink name=list target="page_03" exp="tf.size='up'" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=steelblue]
 
-[glink name=list target="sijyou_pose_01" text="[四条ベース着物]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
-[glink name=list target="sijyou_pose_02" text="[四条ベース羽織]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 font_color=black]
+[glink name=list target="sijyou_pose_01" text="[四条ベース着物]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 font_color=black]
+[glink name=list target="sijyou_pose_02" text="[四条ベース羽織]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 font_color=black]
 ;[glink target="sijyou_pose_03" text="[四条]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=black]
 ;[glink target="sijyou_pose_04" text="[四条]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=black]
 
-[glink name=list target="sijyou_face_01" text="[四条通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 font_color=black]
-[glink name=list target="sijyou_face_09" text="[四条笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 font_color=black]
-[glink name=list target="sijyou_face_10" text="[四条笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 font_color=black]
-[glink name=list target="sijyou_face_08" text="[四条微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 font_color=black]
-[glink name=list target="sijyou_face_05" text="[四条困り微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 font_color=black]
-[glink name=list target="sijyou_face_03" text="[四条驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 font_color=black]
-[glink name=list target="sijyou_face_11" text="[四条憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 font_color=black]
-[glink name=list target="sijyou_face_04" text="[四条困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 font_color=black]
-[glink name=list target="sijyou_face_02" text="[四条伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 font_color=black]
-[glink name=list target="sijyou_face_12" text="[四条真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 font_color=black]
-;[glink name=list target="sijyou_face_06" text="[四条照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 font_color=black]
-;[glink name=list target="sijyou_face_07" text="[四条照れ目普通]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 font_color=black]
+[glink name=list target="sijyou_face_01" text="[四条通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 font_color=black]
+[glink name=list target="sijyou_face_09" text="[四条笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 font_color=black]
+[glink name=list target="sijyou_face_10" text="[四条笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 font_color=black]
+[glink name=list target="sijyou_face_08" text="[四条微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 font_color=black]
+[glink name=list target="sijyou_face_05" text="[四条困り微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 font_color=black]
+[glink name=list target="sijyou_face_03" text="[四条驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 font_color=black]
+[glink name=list target="sijyou_face_11" text="[四条憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 font_color=black]
+[glink name=list target="sijyou_face_04" text="[四条困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 font_color=black]
+[glink name=list target="sijyou_face_02" text="[四条伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 font_color=black]
+[glink name=list target="sijyou_face_12" text="[四条真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 font_color=black]
+;[glink name=list target="sijyou_face_06" text="[四条照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 font_color=black]
+;[glink name=list target="sijyou_face_07" text="[四条照れ目普通]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=390 font_color=black]
 
-[glink name=list target="sijyou_face_21" text="[四条目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 font_color=black]
+[glink name=list target="sijyou_face_21" text="[四条目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 font_color=black]
 
-[glink name=list target="sijyou_face_22" text="[四条伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 font_color=black]
+[glink name=list target="sijyou_face_22" text="[四条伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
 
-[glink name=list target="sijyou_face_23" text="[四条目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
+[glink name=list target="sijyou_face_23" text="[四条目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 font_color=black]
 
-[glink name=list target="sijyou_face_24" text="[四条目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 font_color=black]
+[glink name=list target="sijyou_face_24" text="[四条目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=360 font_color=black]
 
 
-[glink name=list target="sijyou_mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=30 font_color=steelblue]
-[glink name=list target="sijyou_me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=30 font_color=steelblue]
-[glink name=list target="sijyou_kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=30 font_color=steelblue]
-[glink name=list target="sijyou_emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=30 font_color=steelblue]
+[glink name=list target="sijyou_mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=60 font_color=steelblue]
+[glink name=list target="sijyou_me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=60 font_color=steelblue]
+[glink name=list target="sijyou_kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=60 font_color=steelblue]
+[glink name=list target="sijyou_emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=60 font_color=steelblue]
 
 [if exp="f.gra_sijyou_part=='sijyou_mayu'"]
-[glink name=list target="sijyou_mayu_01" text="[四条眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_mayu_02" text="[四条眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_mayu_03" text="[四条眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_mayu_04" text="[四条眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="sijyou_mayu_06" text="[四条眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="sijyou_mayu_05" text="[四条眉眉間に皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_mayu_01" text="[四条眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_mayu_02" text="[四条眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_mayu_03" text="[四条眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_mayu_04" text="[四条眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="sijyou_mayu_06" text="[四条眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_mayu_05" text="[四条眉眉間に皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_me'"]
-[glink name=list target="sijyou_me_01" text="[四条目通常]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_me_02" text="[四条目大]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=85 font_color=black]
-[glink name=list target="sijyou_me_03" text="[四条目にこ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=110 font_color=black]
-[glink name=list target="sijyou_me_04" text="[四条目伏]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=135 font_color=black]
-[glink name=list target="sijyou_me_08" text="[四条目伏2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=160 font_color=black]
-[glink name=list target="sijyou_me_05" text="[四条目閉じ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=185 font_color=black]
-[glink name=list target="sijyou_me_06" text="[四条横目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=210 font_color=black]
-[glink name=list target="sijyou_me_07" text="[四条横伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=235 font_color=black]
-[glink name=list target="sijyou_me_09" text="[四条横伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=260 font_color=black]
-[glink name=list target="sijyou_me_10" text="[四条右流し目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=285 font_color=black]
-[glink name=list target="sijyou_me_11" text="[四条右伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=310 font_color=black]
-[glink name=list target="sijyou_me_12" text="[四条右伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=335 font_color=black]
+[glink name=list target="sijyou_me_01" text="[四条目通常]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_me_02" text="[四条目大]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=115 font_color=black]
+[glink name=list target="sijyou_me_03" text="[四条目にこ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=140 font_color=black]
+[glink name=list target="sijyou_me_04" text="[四条目伏]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=165 font_color=black]
+[glink name=list target="sijyou_me_08" text="[四条目伏2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=190 font_color=black]
+[glink name=list target="sijyou_me_05" text="[四条目閉じ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=215 font_color=black]
+[glink name=list target="sijyou_me_06" text="[四条横目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_me_07" text="[四条横伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=265 font_color=black]
+[glink name=list target="sijyou_me_09" text="[四条横伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=290 font_color=black]
+[glink name=list target="sijyou_me_10" text="[四条右流し目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=315 font_color=black]
+[glink name=list target="sijyou_me_11" text="[四条右伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=340 font_color=black]
+[glink name=list target="sijyou_me_12" text="[四条右伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=375 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_kuti'"]
-[glink name=list target="sijyou_kuti_01" text="[四条口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_kuti_02" text="[四条口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_kuti_03" text="[四条口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_kuti_04" text="[四条口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="sijyou_kuti_05" text="[四条口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="sijyou_kuti_06" text="[四条口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-[glink name=list target="sijyou_kuti_09" text="[四条口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
-[glink name=list target="sijyou_kuti_07" text="[四条口叫び]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
-;[glink name=list target="sijyou_kuti_06" text="[四条口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 font_color=black]
+[glink name=list target="sijyou_kuti_01" text="[四条口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_kuti_02" text="[四条口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_kuti_03" text="[四条口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_kuti_04" text="[四条口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="sijyou_kuti_05" text="[四条口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_kuti_06" text="[四条口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_kuti_09" text="[四条口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
+[glink name=list target="sijyou_kuti_07" text="[四条口叫び]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 font_color=black]
+;[glink name=list target="sijyou_kuti_06" text="[四条口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=330 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_emo'"]
-[glink name=list target="sijyou_emo_01" text="[四条効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_emo_02" text="[四条頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_emo_03" text="[四条汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_emo_04" text="[四条ビンタ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-;[glink name=list target="sijyou_emo_05" text="[四条]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-;[glink name=list target="sijyou_emo_06" text="[四条]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-;[glink name=list target="sijyou_emo_07" text="[四条]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_emo_01" text="[四条効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_emo_02" text="[四条頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_emo_03" text="[四条汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_emo_04" text="[四条ビンタ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+;[glink name=list target="sijyou_emo_05" text="[四条]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+;[glink name=list target="sijyou_emo_06" text="[四条]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+;[glink name=list target="sijyou_emo_07" text="[四条]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
 [endif]
 @jump target=page_end
 
@@ -162,94 +158,90 @@ $('.list').remove();
 [表示開始]
 *sijyou_tonari_text
 [cm]
-[layopt layer=24 visible=true]
-[ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold]
-[ptext name=list text="ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold]
-[ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold]
-[ptext name=irast text="Illustration　by:かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold]
-[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold]
-[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold]
+[iscript]
+$('.list').remove();
+[endscript]
 
-[glink name=list target="page_01" exp="tf.size='defo'" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 font_color=steelblue]
-[glink name=list target="page_02" exp="tf.size='tonari'" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 font_color=steelblue]
-[glink name=list target="page_03" exp="tf.size='up'" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=steelblue]
+[glink name=list target="page_01" exp="tf.size='defo'" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 font_color=steelblue]
+[glink name=list target="page_02" exp="tf.size='tonari'" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=steelblue]
+[glink name=list target="page_03" exp="tf.size='up'" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=steelblue]
 
-[glink name=list target="sijyou_tonari_pose_01" text="[四条_隣_ベース着物]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
-[glink name=list target="sijyou_tonari_pose_02" text="[四条_隣_ベース羽織]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 font_color=black]
-;[glink name=list target="sijyou_tonari_pose_03" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=black]
-;[glink name=list target="sijyou_tonari_pose_04" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=black]
+[glink name=list target="sijyou_tonari_pose_01" text="[四条_隣_ベース着物]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 font_color=black]
+[glink name=list target="sijyou_tonari_pose_02" text="[四条_隣_ベース羽織]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 font_color=black]
+;[glink name=list target="sijyou_tonari_pose_03" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=black]
+;[glink name=list target="sijyou_tonari_pose_04" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
 
-[glink name=list target="sijyou_tonari_face_01" text="[四条_隣_通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 font_color=black]
-[glink name=list target="sijyou_tonari_face_09" text="[四条_隣_笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 font_color=black]
-[glink name=list target="sijyou_tonari_face_10" text="[四条_隣_笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 font_color=black]
-[glink name=list target="sijyou_tonari_face_08" text="[四条_隣_微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 font_color=black]
-[glink name=list target="sijyou_tonari_face_05" text="[四条_隣_困り微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 font_color=black]
-[glink name=list target="sijyou_tonari_face_03" text="[四条_隣_驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 font_color=black]
-[glink name=list target="sijyou_tonari_face_11" text="[四条_隣_憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 font_color=black]
-[glink name=list target="sijyou_tonari_face_04" text="[四条_隣_困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 font_color=black]
-[glink name=list target="sijyou_tonari_face_02" text="[四条_隣_伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 font_color=black]
-[glink name=list target="sijyou_tonari_face_12" text="[四条_隣_真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 font_color=black]
-;[glink name=list target="sijyou_tonari_face_06" text="[四条_隣_照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 font_color=black]
-;[glink name=list target="sijyou_tonari_face_07" text="[四条_隣_照れ目普通]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 font_color=black]
+[glink name=list target="sijyou_tonari_face_01" text="[四条_隣_通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 font_color=black]
+[glink name=list target="sijyou_tonari_face_09" text="[四条_隣_笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 font_color=black]
+[glink name=list target="sijyou_tonari_face_10" text="[四条_隣_笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 font_color=black]
+[glink name=list target="sijyou_tonari_face_08" text="[四条_隣_微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 font_color=black]
+[glink name=list target="sijyou_tonari_face_05" text="[四条_隣_困り微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 font_color=black]
+[glink name=list target="sijyou_tonari_face_03" text="[四条_隣_驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 font_color=black]
+[glink name=list target="sijyou_tonari_face_11" text="[四条_隣_憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 font_color=black]
+[glink name=list target="sijyou_tonari_face_04" text="[四条_隣_困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 font_color=black]
+[glink name=list target="sijyou_tonari_face_02" text="[四条_隣_伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 font_color=black]
+[glink name=list target="sijyou_tonari_face_12" text="[四条_隣_真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 font_color=black]
+;[glink name=list target="sijyou_tonari_face_06" text="[四条_隣_照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 font_color=black]
+;[glink name=list target="sijyou_tonari_face_07" text="[四条_隣_照れ目普通]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=390 font_color=black]
 
-[glink name=list target="sijyou_tonari_face_21" text="[四条_隣_目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 font_color=black]
+[glink name=list target="sijyou_tonari_face_21" text="[四条_隣_目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 font_color=black]
 
-[glink name=list target="sijyou_tonari_face_22" text="[四条_隣_伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 font_color=black]
+[glink name=list target="sijyou_tonari_face_22" text="[四条_隣_伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
 
-[glink name=list target="sijyou_tonari_face_23" text="[四条_隣_目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
+[glink name=list target="sijyou_tonari_face_23" text="[四条_隣_目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 font_color=black]
 
-[glink name=list target="sijyou_tonari_face_24" text="[四条_隣_目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 font_color=black]
+[glink name=list target="sijyou_tonari_face_24" text="[四条_隣_目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=360 font_color=black]
 
 
-[glink name=list target="sijyou_tonari_mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=30 font_color=steelblue]
-[glink name=list target="sijyou_tonari_me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=30 font_color=steelblue]
-[glink name=list target="sijyou_tonari_kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=30 font_color=steelblue]
-[glink name=list target="sijyou_tonari_emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=30 font_color=steelblue]
+[glink name=list target="sijyou_tonari_mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=60 font_color=steelblue]
+[glink name=list target="sijyou_tonari_me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=60 font_color=steelblue]
+[glink name=list target="sijyou_tonari_kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=60 font_color=steelblue]
+[glink name=list target="sijyou_tonari_emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=60 font_color=steelblue]
 
 [if exp="f.gra_sijyou_part=='sijyou_tonari_mayu'"]
-[glink name=list target="sijyou_tonari_mayu_01" text="[四条_隣_眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_tonari_mayu_02" text="[四条_隣_眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_tonari_mayu_03" text="[四条_隣_眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_tonari_mayu_04" text="[四条_隣_眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="sijyou_tonari_mayu_06" text="[四条_隣_眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="sijyou_tonari_mayu_05" text="[四条_隣_眉眉間に皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_tonari_mayu_01" text="[四条_隣_眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_tonari_mayu_02" text="[四条_隣_眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_tonari_mayu_03" text="[四条_隣_眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_tonari_mayu_04" text="[四条_隣_眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="sijyou_tonari_mayu_06" text="[四条_隣_眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_tonari_mayu_05" text="[四条_隣_眉眉間に皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_tonari_me'"]
-[glink name=list target="sijyou_tonari_me_01" text="[四条_隣_目通常]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_tonari_me_02" text="[四条_隣_目大]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=85 font_color=black]
-[glink name=list target="sijyou_tonari_me_03" text="[四条_隣_目にこ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=110 font_color=black]
-[glink name=list target="sijyou_tonari_me_04" text="[四条_隣_目伏]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=135 font_color=black]
-[glink name=list target="sijyou_tonari_me_08" text="[四条_隣_目伏2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=160 font_color=black]
-[glink name=list target="sijyou_tonari_me_05" text="[四条_隣_目閉じ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=185 font_color=black]
-[glink name=list target="sijyou_tonari_me_06" text="[四条_隣_横目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=210 font_color=black]
-[glink name=list target="sijyou_tonari_me_07" text="[四条_隣_横伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=235 font_color=black]
-[glink name=list target="sijyou_tonari_me_09" text="[四条_隣_横伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=260 font_color=black]
-[glink name=list target="sijyou_tonari_me_10" text="[四条_隣_右流し目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=285 font_color=black]
-[glink name=list target="sijyou_tonari_me_11" text="[四条_隣_右伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=310 font_color=black]
-[glink name=list target="sijyou_tonari_me_12" text="[四条_隣_右伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=335 font_color=black]
+[glink name=list target="sijyou_tonari_me_01" text="[四条_隣_目通常]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_tonari_me_02" text="[四条_隣_目大]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=115 font_color=black]
+[glink name=list target="sijyou_tonari_me_03" text="[四条_隣_目にこ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=140 font_color=black]
+[glink name=list target="sijyou_tonari_me_04" text="[四条_隣_目伏]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=165 font_color=black]
+[glink name=list target="sijyou_tonari_me_08" text="[四条_隣_目伏2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=190 font_color=black]
+[glink name=list target="sijyou_tonari_me_05" text="[四条_隣_目閉じ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=215 font_color=black]
+[glink name=list target="sijyou_tonari_me_06" text="[四条_隣_横目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_tonari_me_07" text="[四条_隣_横伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=265 font_color=black]
+[glink name=list target="sijyou_tonari_me_09" text="[四条_隣_横伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=290 font_color=black]
+[glink name=list target="sijyou_tonari_me_10" text="[四条_隣_右流し目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=315 font_color=black]
+[glink name=list target="sijyou_tonari_me_11" text="[四条_隣_右伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=340 font_color=black]
+[glink name=list target="sijyou_tonari_me_12" text="[四条_隣_右伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=365 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_tonari_kuti'"]
-[glink name=list target="sijyou_tonari_kuti_01" text="[四条_隣_口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_tonari_kuti_02" text="[四条_隣_口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_tonari_kuti_03" text="[四条_隣_口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_tonari_kuti_04" text="[四条_隣_口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="sijyou_tonari_kuti_05" text="[四条_隣_口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="sijyou_tonari_kuti_06" text="[四条_隣_口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-[glink name=list target="sijyou_tonari_kuti_09" text="[四条_隣_口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
-[glink name=list target="sijyou_tonari_kuti_07" text="[四条_隣_口叫び]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
-;[glink name=list target="sijyou_tonari_kuti_06" text="[四条_隣_口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 font_color=black]
+[glink name=list target="sijyou_tonari_kuti_01" text="[四条_隣_口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_tonari_kuti_02" text="[四条_隣_口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_tonari_kuti_03" text="[四条_隣_口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_tonari_kuti_04" text="[四条_隣_口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="sijyou_tonari_kuti_05" text="[四条_隣_口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_tonari_kuti_06" text="[四条_隣_口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_tonari_kuti_09" text="[四条_隣_口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
+[glink name=list target="sijyou_tonari_kuti_07" text="[四条_隣_口叫び]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=600 font_color=black]
+;[glink name=list target="sijyou_tonari_kuti_06" text="[四条_隣_口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=330 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_tonari_emo'"]
-[glink name=list target="sijyou_tonari_emo_01" text="[四条_隣_効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_tonari_emo_02" text="[四条_隣_頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_tonari_emo_03" text="[四条_隣_汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_tonari_emo_04" text="[四条_隣_ビンタ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-;[glink name=list target="sijyou_tonari_emo_05" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-;[glink name=list target="sijyou_tonari_emo_06" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-;[glink name=list target="sijyou_tonari_emo_07" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_tonari_emo_01" text="[四条_隣_効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_tonari_emo_02" text="[四条_隣_頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_tonari_emo_03" text="[四条_隣_汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_tonari_emo_04" text="[四条_隣_ビンタ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+;[glink name=list target="sijyou_tonari_emo_05" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+;[glink name=list target="sijyou_tonari_emo_06" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+;[glink name=list target="sijyou_tonari_emo_07" text="[四条_隣_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
 [endif]
 @jump target=page_end
 
@@ -263,115 +255,130 @@ $('.list').remove();
 [四条_顔up_通常]
 [eval exp="f.gra_sijyou_face='[四条_顔up_通常]'"]
 [eval exp="f.gra_sijyou_part='sijyou_up_mayu'"]
+
 [表示開始]
 *sijyou_up_text
 [cm]
+[iscript]
+$('.list').remove();
+[endscript]
 [layopt layer=24 visible=true]
-[ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=10 color=black bold=bold overwrite=true]
-[ptext name=list text="ポーズ" layer=24 size=18 x=30 y=130 color=black bold=bold overwrite=true]
-[ptext name=list text="表　情" layer=24 size=18 x=260 y=10 color=black bold=bold overwrite=true]
-[ptext name=irast text="Illustration　by:かいこ" layer=24 size=16 x=400 y=10 color=black bold=bold overwrite=true]
-[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=220 color=black bold=bold overwrite=true]
-[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=10 color=black bold=bold overwrite=true]
 
-[glink name=list target="page_01" exp="tf.size='defo'" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=30 font_color=steelblue]
-[glink name=list target="page_02" exp="tf.size='tonari'" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 font_color=steelblue]
-[glink name=list target="page_03" exp="tf.size='up'" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=steelblue]
+[glink name=list target="page_01" exp="tf.size='defo'" text="通常サイズ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=60 font_color=steelblue]
+[glink name=list target="page_02" exp="tf.size='tonari'" text="サイズ：隣に並ぶ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=steelblue]
+[glink name=list target="page_03" exp="tf.size='up'" text="サイズ：顔アップ" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=steelblue]
 
-[glink name=list target="sijyou_up_pose_01" text="[四条_顔up_ベース着物]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
-[glink name=list target="sijyou_up_pose_02" text="[四条_顔up_ベース羽織]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 font_color=black]
-;[glink name=list target="sijyou_up_pose_03" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=90 font_color=black]
-;[glink name=list target="sijyou_up_pose_04" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=black]
+[glink name=list target="sijyou_up_pose_01" text="[四条_顔up_ベース着物]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=180 font_color=black]
+[glink name=list target="sijyou_up_pose_02" text="[四条_顔up_ベース羽織]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=210 font_color=black]
+;[glink name=list target="sijyou_up_pose_03" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=120 font_color=black]
+;[glink name=list target="sijyou_up_pose_04" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=150 font_color=black]
 
-[glink name=list target="sijyou_up_face_01" text="[四条_顔up_通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=30 font_color=black]
-[glink name=list target="sijyou_up_face_09" text="[四条_顔up_笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 font_color=black]
-[glink name=list target="sijyou_up_face_10" text="[四条_顔up_笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 font_color=black]
-[glink name=list target="sijyou_up_face_08" text="[四条_顔up_微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 font_color=black]
-[glink name=list target="sijyou_up_face_05" text="[四条_顔up_困り微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 font_color=black]
-[glink name=list target="sijyou_up_face_03" text="[四条_顔up_驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 font_color=black]
-[glink name=list target="sijyou_up_face_11" text="[四条_顔up_憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 font_color=black]
-[glink name=list target="sijyou_up_face_04" text="[四条_顔up_困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 font_color=black]
-[glink name=list target="sijyou_up_face_02" text="[四条_顔up_伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 font_color=black]
-[glink name=list target="sijyou_up_face_12" text="[四条_顔up_真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 font_color=black]
-;[glink name=list target="sijyou_up_face_06" text="[四条_顔up_照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 font_color=black]
-;[glink name=list target="sijyou_up_face_07" text="[四条_顔up_照れ目普通]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 font_color=black]
+[glink name=list target="sijyou_up_face_01" text="[四条_顔up_通常]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=60 font_color=black]
+[glink name=list target="sijyou_up_face_09" text="[四条_顔up_笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=90 font_color=black]
+[glink name=list target="sijyou_up_face_10" text="[四条_顔up_笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=120 font_color=black]
+[glink name=list target="sijyou_up_face_08" text="[四条_顔up_微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=150 font_color=black]
+[glink name=list target="sijyou_up_face_05" text="[四条_顔up_困り微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=180 font_color=black]
+[glink name=list target="sijyou_up_face_03" text="[四条_顔up_驚き]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=210 font_color=black]
+[glink name=list target="sijyou_up_face_11" text="[四条_顔up_憂い]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=240 font_color=black]
+[glink name=list target="sijyou_up_face_04" text="[四条_顔up_困り]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=270 font_color=black]
+[glink name=list target="sijyou_up_face_02" text="[四条_顔up_伏目]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=300 font_color=black]
+[glink name=list target="sijyou_up_face_12" text="[四条_顔up_真剣]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=330 font_color=black]
+;[glink name=list target="sijyou_up_face_06" text="[四条_顔up_照れ]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=360 font_color=black]
+;[glink name=list target="sijyou_up_face_07" text="[四条_顔up_照れ目普通]" graphic="select_waku_x500.png" size=15 width="160" x=190 y=390 font_color=black]
 
-[glink name=list target="sijyou_up_face_21" text="[四条_顔up_目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=240 font_color=black]
+[glink name=list target="sijyou_up_face_21" text="[四条_顔up_目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 font_color=black]
 
-[glink name=list target="sijyou_up_face_22" text="[四条_顔up_伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=270 font_color=black]
+[glink name=list target="sijyou_up_face_22" text="[四条_顔up_伏目パチ1回]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
 
-[glink name=list target="sijyou_up_face_23" text="[四条_顔up_目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=300 font_color=black]
+[glink name=list target="sijyou_up_face_23" text="[四条_顔up_目閉じ]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 font_color=black]
 
-[glink name=list target="sijyou_up_face_24" text="[四条_顔up_目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=330 font_color=black]
+[glink name=list target="sijyou_up_face_24" text="[四条_顔up_目を開く]" graphic="select_waku_x500.png" size=15 width="160" x=0 y=360 font_color=black]
 
 
-[glink name=list target="sijyou_up_mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=30 font_color=steelblue]
-[glink name=list target="sijyou_up_me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=30 font_color=steelblue]
-[glink name=list target="sijyou_up_kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=30 font_color=steelblue]
-[glink name=list target="sijyou_up_emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=30 font_color=steelblue]
+[glink name=list target="sijyou_up_mayu" text="眉：詳細" graphic="select_waku_x500.png" size=15 width="80" x=570 y=60 font_color=steelblue]
+[glink name=list target="sijyou_up_me" text="目：詳細" graphic="select_waku_x500.png" size=15 width="80" x=660 y=60 font_color=steelblue]
+[glink name=list target="sijyou_up_kuti" text="口：詳細" graphic="select_waku_x500.png" size=15 width="80" x=750 y=60 font_color=steelblue]
+[glink name=list target="sijyou_up_emo" text="効果：詳細" graphic="select_waku_x500.png" size=15 width="80" x=840 y=60 font_color=steelblue]
 
 [if exp="f.gra_sijyou_part=='sijyou_up_mayu'"]
-[glink name=list target="sijyou_up_mayu_01" text="[四条_顔up_眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_up_mayu_02" text="[四条_顔up_眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_up_mayu_03" text="[四条_顔up_眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_up_mayu_04" text="[四条_顔up_眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="sijyou_up_mayu_06" text="[四条_顔up_眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="sijyou_up_mayu_05" text="[四条_顔up_眉眉間に皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_up_mayu_01" text="[四条_顔up_眉通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_up_mayu_02" text="[四条_顔up_眉下げ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_up_mayu_03" text="[四条_顔up_眉困り]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_up_mayu_04" text="[四条_顔up_眉強気]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="sijyou_up_mayu_06" text="[四条_顔up_眉驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_up_mayu_05" text="[四条_顔up_眉眉間に皺]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_up_me'"]
-[glink name=list target="sijyou_up_me_01" text="[四条_顔up_目通常]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_up_me_02" text="[四条_顔up_目大]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=85 font_color=black]
-[glink name=list target="sijyou_up_me_03" text="[四条_顔up_目にこ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=110 font_color=black]
-[glink name=list target="sijyou_up_me_04" text="[四条_顔up_目伏]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=135 font_color=black]
-[glink name=list target="sijyou_up_me_08" text="[四条_顔up_目伏2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=160 font_color=black]
-[glink name=list target="sijyou_up_me_05" text="[四条_顔up_目閉じ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=185 font_color=black]
-[glink name=list target="sijyou_up_me_06" text="[四条_顔up_横目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=210 font_color=black]
-[glink name=list target="sijyou_up_me_07" text="[四条_顔up_横伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=235 font_color=black]
-[glink name=list target="sijyou_up_me_09" text="[四条_顔up_横伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=260 font_color=black]
-[glink name=list target="sijyou_up_me_10" text="[四条_顔up_右流し目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=285 font_color=black]
-[glink name=list target="sijyou_up_me_11" text="[四条_顔up_右伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=310 font_color=black]
-[glink name=list target="sijyou_up_me_12" text="[四条_顔up_右伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=335 font_color=black]
+[glink name=list target="sijyou_up_me_01" text="[四条_顔up_目通常]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_up_me_02" text="[四条_顔up_目大]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=115 font_color=black]
+[glink name=list target="sijyou_up_me_03" text="[四条_顔up_目にこ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=140 font_color=black]
+[glink name=list target="sijyou_up_me_04" text="[四条_顔up_目伏]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=165 font_color=black]
+[glink name=list target="sijyou_up_me_08" text="[四条_顔up_目伏2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=190 font_color=black]
+[glink name=list target="sijyou_up_me_05" text="[四条_顔up_目閉じ]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=215 font_color=black]
+[glink name=list target="sijyou_up_me_06" text="[四条_顔up_横目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_up_me_07" text="[四条_顔up_横伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=265 font_color=black]
+[glink name=list target="sijyou_up_me_09" text="[四条_顔up_横伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=290 font_color=black]
+[glink name=list target="sijyou_up_me_10" text="[四条_顔up_右流し目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=315 font_color=black]
+[glink name=list target="sijyou_up_me_11" text="[四条_顔up_右伏目]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=340 font_color=black]
+[glink name=list target="sijyou_up_me_12" text="[四条_顔up_右伏目2]" graphic="select_waku_x500.png" size=14 width="160" x=600 y=365 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_up_kuti'"]
-[glink name=list target="sijyou_up_kuti_01" text="[四条_顔up_口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_up_kuti_02" text="[四条_顔up_口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_up_kuti_03" text="[四条_顔up_口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_up_kuti_04" text="[四条_顔up_口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-[glink name=list target="sijyou_up_kuti_05" text="[四条_顔up_口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-[glink name=list target="sijyou_up_kuti_06" text="[四条_顔up_口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-[glink name=list target="sijyou_up_kuti_09" text="[四条_顔up_口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
-[glink name=list target="sijyou_up_kuti_07" text="[四条_顔up_口叫び]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
-;[glink name=list target="sijyou_up_kuti_06" text="[四条_顔up_口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=300 font_color=black]
+[glink name=list target="sijyou_up_kuti_01" text="[四条_顔up_口通常]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_up_kuti_02" text="[四条_顔up_口開]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_up_kuti_03" text="[四条_顔up_口微笑み]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_up_kuti_04" text="[四条_顔up_口笑顔]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+[glink name=list target="sijyou_up_kuti_05" text="[四条_顔up_口笑顔大]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+[glink name=list target="sijyou_up_kuti_06" text="[四条_顔up_口驚き]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_up_kuti_09" text="[四条_顔up_口ムッ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
+[glink name=list target="sijyou_up_kuti_07" text="[四条_顔up_口叫び]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=600 font_color=black]
+;[glink name=list target="sijyou_up_kuti_06" text="[四条_顔up_口]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=330 font_color=black]
 [endif]
 
 [if exp="f.gra_sijyou_part=='sijyou_up_emo'"]
-[glink name=list target="sijyou_up_emo_01" text="[四条_顔up_効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=60 font_color=black]
-[glink name=list target="sijyou_up_emo_02" text="[四条_顔up_頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
-[glink name=list target="sijyou_up_emo_03" text="[四条_顔up_汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
-[glink name=list target="sijyou_up_emo_04" text="[四条_顔up_ビンタ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
-;[glink name=list target="sijyou_up_emo_05" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
-;[glink name=list target="sijyou_up_emo_06" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
-;[glink name=list target="sijyou_up_emo_07" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+[glink name=list target="sijyou_up_emo_01" text="[四条_顔up_効果消]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=90 font_color=black]
+[glink name=list target="sijyou_up_emo_02" text="[四条_顔up_頬染め]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=120 font_color=black]
+[glink name=list target="sijyou_up_emo_03" text="[四条_顔up_汗]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=150 font_color=black]
+[glink name=list target="sijyou_up_emo_04" text="[四条_顔up_ビンタ]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=180 font_color=black]
+;[glink name=list target="sijyou_up_emo_05" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=210 font_color=black]
+;[glink name=list target="sijyou_up_emo_06" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=240 font_color=black]
+;[glink name=list target="sijyou_up_emo_07" text="[四条_顔up_]" graphic="select_waku_x500.png" size=15 width="160" x=600 y=270 font_color=black]
 [endif]
 @jump target=page_end
 
 *page_end
 ;============================================================================
-[if exp="tf.flag_omake == false"]
-[iscript]
-tf.page = tf.page;
-tf.raberu = "*page"+tf.page;
-[endscript]
-[if exp="tf.page < 123"]
-[glink target="next_page_haikei" text="&tf.page" graphic="select_waku_x300.png" size=15 width="100" x=800 y=190 font_color=black]
-[endif]
-[if exp="tf.page > 0"]
-[glink target="back_page_haikei" text="前へ" size=15 graphic="select_waku_x300.png" width="100" x=800 y=240 font_color=black]
+;↓背景変更ボタンスクリプト案をありがとうございます。
+;　せっかく案を出してくださったのに申し訳ないのですが、魅力的な背景が沢山ございますので、プレイヤー様に背景を選択可能とするスクリプト案に変更したいと思います。
+;　作って下さった案の一部を活用させていただきます。ありがとうございます。◆jsYiJcqRkk
+;[if exp="tf.flag_omake == false"]
+;[iscript]
+;tf.page = tf.page;
+;tf.raberu = "*page"+tf.page;
+;[endscript]
+;[endif]
+;[if exp="tf.flag_omake == false && tf.page < 123"]
+;[glink storage="test_haikei.ks" target="next_page_haikei" text="&tf.page" graphic="select_waku_x300.png" size=15 width="100" x=800 y=190 font_color=black]
+;[endif]
+;[if exp="tf.flag_omake == false && tf.page > 0"]
+;[glink storage="test_haikei.ks" target="back_page_haikei" text="前へ" size=15 graphic="select_waku_x300.png" width="100" x=800 y=240 font_color=black]
 ;1307行～
-[endif]
-[endif]
+;[endif]
+;============================================================================
+;◆背景変更ボタン
+[glink storage="test_haikei_list.ks" target="list_haikei" text="背景選択" graphic="select_waku_x300.png" size=15 width="100" x=800 y=190 font_color=black exp="tf.tokuten='sijyou'"]
+;↓色々切り替え時にこれらのテキストが表示されるようにスクリプトを移動してまとめました。
+[freeimage layer = 24]
+[layopt layer=24 visible=true]
+[ptext name=list text="サイズ選択" layer=24 size=18 x=30 y=50 color=black bold=bold]
+[ptext name=list text="ポーズ" layer=24 size=18 x=30 y=170 color=black bold=bold]
+[ptext name=list text="表　情" layer=24 size=18 x=260 y=50 color=black bold=bold]
+[ptext name=irast text="Character　Illustration　by　かいこ" layer=24 size=15 x=10 y=10 color=black bold=bold]
+[ptext name=list text="アニメーション" layer=24 size=18 x=30 y=260 color=black bold=bold]
+[wait time=10]
+[ptext name=list text="個別 顔パーツ" layer=24 size=18 x=700 y=50 color=black bold=bold]
+[wait time=10]
 ;============================================================================
 [if exp="tf.flag_omake == false"]
 [glink name=opasity target="back_test" text="テストメニューへ" graphic="select_waku_x500.png" size=15 width="130" x=800 y=290 font_color=black]
@@ -1303,424 +1310,10 @@ $(".layer_free").css("opacity",1);
 @jump target=sijyou_up_text
 
 ;=============================================================
-;背景マクロ使用・四条は戻り場所がちがうのでpage_textにて判定　他はtextでok
+;背景→背景変更スクリプト試作をありがとうございます。test_haikei.ksとして切り出しました。◆jsYiJcqRkk
 ;===========================================================
 *page_text
-[iscript]
-tf.raberu = "*page"+tf.page;
-[endscript]
-[if exp="tf.size == 'defo'"] 
-@jump target=sijyou_text
-[elsif exp="tf.size == 'tonari'"]
-@jump target=*sijyou_tonari_text
-[elsif exp="tf.siz e== 'up'"]
-@jump target=sijyou_up_text
-[else]
-;エラー。　お手数ですがゲームの再起動をお願いします。[p]初期値
-@jump target=sijyou_text
-[endif]
-;===========================================================0
-*back_page_haikei
-;glinkそのままからでは動作が悪い
-[iscript]
-tf.page = tf.page-1;
-tf.raberu = "*page"+tf.page;
-//alert(tf.raberu);
-[endscript]
-[wait time=10]
-@jump target=&tf.raberu
-[s]
-*next_page_haikei
-[iscript]
-tf.page = tf.page+1;
-tf.raberu = "*page"+tf.page;
-//alert(tf.raberu);
-[endscript]
-[wait time=10]
-@jump target=&tf.raberu
-[s]
-;===========================================================0
-*page0
-
-*page1
-["バラ"]
-@jump target=page_text
-*page2
-["チャリティー会場１"]
-@jump target=page_text
-*page3
-["チャリティー会場２"]
-@jump target=page_text
-*page4
-["チャリティー会場３"]
-@jump target=page_text
-*page5
-["チャリティー会場４"]
-@jump target=page_text
-*page6
-["チャリティー会場５"]
-@jump target=page_text
-*page7
-["チャリティー会場６"]
-@jump target=page_text
-*page8
-["チャリティー会場７"]
-@jump target=page_text
-*page9
-["チャリティー会場８"]
-@jump target=page_text
-*page10
-["藤枝演奏１"]
-@jump target=page_text
-*page11
-["藤枝演奏２"]
-@jump target=page_text
-*page12
-["藤枝演奏３"]
-@jump target=page_text
-*page13
-["img効果キラキラ"]
-@jump target=page_text
-*page14
-["img効果削除"]
-["葛城森林公園"]
-@jump target=page_text
-*page15
-["藤枝ムーンレイク"]
-@jump target=page_text
-*page16
-["四条宴会"]
-@jump target=page_text
-*page17
-["四条エピローグ和室"]
-@jump target=page_text
-*page18
-["四条玄関"]
-@jump target=page_text
-*page19
-["四条玄関ホール"]
-@jump target=page_text
-*page20
-["四条華衣部屋"]
-@jump target=page_text
-*page21
-["四条金屏風"]
-@jump target=page_text
-*page22
-["四条金屏風２"]
-@jump target=page_text
-*page23
-["四条香水"]
-@jump target=page_text
-*page24
-["四条＿香水２"]
-@jump target=page_text
-*page25
-["四条ネリネ庭"]
-@jump target=page_text
-*page26
-[四条廊下"]
-@jump target=page_text
-*page27
-[四条展覧会"]
-@jump target=page_text
-*page28
-["四条家"]
-@jump target=page_text
-*page29
-["四条＿波ヶ浦"]
-@jump target=page_text
-*page30
-["四条＿波ヶ裏２"]
-@jump target=page_text
-*page31
-["四条＿病院"]
-@jump target=page_text
-*page32
-["四条＿銀座"]
-@jump target=page_text
-*page33
-["葛城宮＿御所"]
-@jump target=page_text
-*page34
-["葛城宮＿御所＿中"]
-@jump target=page_text
-*page35
-["葛城宮＿野天"]
-@jump target=page_text
-*page36
-["四条縁側＿夏"]
-@jump target=page_text
-*page37
-["藤枝＿ミルクホール＿１"]
-@jump target=page_text
-*page38
-[藤枝＿ミルクホール店内"]
-@jump target=page_text
-*page39
-["藤枝＿ミルクホール"]
-@jump target=page_text
-;背景のサイズ？場所変更わからない？
-*page40
-["藤枝＿ミルクホール３"]
-@jump target=page_text
-*page41
-["藤枝＿ミルクホール４"]
-@jump target=page_text
-*page42
-["藤枝＿ミルクホール玄関２"]
-@jump target=page_text
-*page43
-["藤枝＿ミルクホール玄関１"]
-@jump target=page_text
-*page44
-["財前＿会議室"]
-@jump target=page_text
-*page45
-["四条＿ネリネイメージ"]
-@jump target=page_text
-*page46
-["四条＿池"]
-@jump target=page_text
-*page47
-["四条＿池＿ロング"]
-@jump target=page_text
-*page48
-["四条＿バラ噴水"]
-@jump target=page_text
-*page49
-["四条＿温室"]
-@jump target=page_text
-[s]
-*page50
-["四条＿バラ茂み"]
-@jump target=page_text
-[s]
-*page51
-["四条＿土蔵"]
-@jump target=page_text
-[s]
-*page52
-["四条＿土蔵２"]
-@jump target=page_text
-*page53
-["四条＿教室１"]
-@jump target=page_text
-[s]
-*page54
-["四条＿教室夕"]
-@jump target=page_text
-[s]
-*page55
-["四条＿教室夕２"]
-@jump target=page_text
-[s]
-*page56
-["四条_教室全体"]
-@jump target=page_text
-[s]
-*page57
-["四条＿教室廊下"]
-@jump target=page_text
-*page58
-["財前＿バラ"]
-@jump target=page_text
-*page59
-["四条＿婚約者実家２"]
-@jump target=page_text
-*page60
-["四条＿花園"]
-@jump target=page_text
-*page61
-["財前＿居間"]
-@jump target=page_text
-*page62
-["財前＿パーティ会場"]
-@jump target=page_text
-*page63
-["財前＿パーティ会場２"]
-@jump target=page_text
-*page64
-["財前＿パーティ会場控室"]
-@jump target=page_text
-*page65
-["財前＿パーティ会場庭"]
-@jump target=page_text
-*page66
-["財前＿パーティ会場＿応接室"]
-@jump target=page_text
-*page67
-["財前＿洋館"]
-@jump target=page_text
-*page68
-["財前＿雪柳"]
-@jump target=page_text
-*page69
-["バラ園"]
-@jump target=page_text
-*page70
-["葛城宮＿謁見室"]
-@jump target=page_text
-*page71
-["藤枝＿演奏会場"]
-@jump target=page_text
-*page72
-["葛城宮＿演説"]
-@jump target=page_text
-*page73
-["葛城宮＿放送局"]
-@jump target=page_text
-*page74
-["公園"]
-@jump target=page_text
-*page75
-["葛城宮＿仲人庭"]
-@jump target=page_text
-*page76
-["葛城宮＿仲人道"]
-@jump target=page_text
-*page77
-["葛城宮＿仲人道２"]
-@jump target=page_text
-*page78
-["葛城宮＿仲人庭＿夕"]
-@jump target=page_text
-*page79
-["葛城宮＿執務室"]
-@jump target=page_text
-*page80
-["藤枝＿音楽練習室"]
-@jump target=page_text
-*page81
-["ビワ＿木"]
-@jump target=page_text
-*page82
-["青空"]
-@jump target=page_text
-*page83
-["萩の花"]
-@jump target=page_text
-*page84
-["四条＿庭園＿椅子"]
-@jump target=page_text
-*page85
-["四条＿庭園＿椅子dark"]
-@jump target=page_text
-*page86
-["玄関"]
-@jump target=page_text
-*page87
-["四条＿歌舞伎"]
-@jump target=page_text
-*page88
-["四条＿歌舞伎＿外"]
-@jump target=page_text
-*page89
-["紅葉"]
-@jump target=page_text
-*page90
-["紅葉＿階段"]
-@jump target=page_text
-*page91
-["紅葉＿鬱葱"]
-@jump target=page_text
-*page92
-["黒田家"]
-@jump target=page_text
-*page93
-["町"]
-@jump target=page_text
-*page94
-["img効果＿町雪"]
-@jump target=page_text
-*page95
-["img効果削除"]
-["門"]
-@jump target=page_text
-*page96
-["お稽古部屋"]
-@jump target=page_text
-*page97
-["町＿橋"]
-@jump target=page_text
-*page98
-["室内音楽１"]
-@jump target=page_text
-*page99
-["室内音楽２"]
-@jump target=page_text
-*page100
-["料亭"]
-@jump target=page_text
-*page101
-["桜"]
-@jump target=page_text
-*page102
-["森林公園＿門"]
-@jump target=page_text
-*page103
-["森林公園＿冬"]
-@jump target=page_text
-*page104
-["森林公園＿冬＿夕"]
-@jump target=page_text
-*page105
-["森林公園＿夕"]
-@jump target=page_text
-*page106
-["四条＿和雑貨"]
-@jump target=page_text
-*page107
-["石畳み"]
-@jump target=page_text
-*page108
-["石畳み＿夕"]
-@jump target=page_text
-*page109
-["石畳み＿夜"]
-@jump target=page_text
-*page110
-["森林＿冬"]
-@jump target=page_text
-*page111
-["森林＿冬＿夕"]
-@jump target=page_text
-*page112
-["夕焼け"]
-@jump target=page_text
-*page113
-["藤枝_kyakuseki"]
-@jump target=page_text
-*page114
-["藤枝_tanpopo"]
-@jump target=page_text
-*page115
-["藤枝_tanpopo_kouen"]
-@jump target=page_text
-*page116
-["主人公庭＿０"]
-@jump target=page_text
-*page117
-["主人公庭＿明"]
-@jump target=page_text
-*page118
-["主人公庭＿春"]
-@jump target=page_text
-*page119
-["主人公庭＿雪"]
-@jump target=page_text
-*page120
-["主人公庭＿夜"]
-@jump target=page_text
-*page121
-[chara_mod name="bg" storage="toumei.gif"]
-[eval exp="tf.page=1"]
-@jump target=page_text
-*page122
-[chara_mod name="bg" storage="toumei.gif"]
-[eval exp="tf.page=1"]
-@jump target=page_text
-[s]
+@jump storage="test_haikei.ks" target="*page_text"
 ;===========================================================
 
 *back_test
@@ -1728,9 +1321,11 @@ tf.raberu = "*page"+tf.page;
 ;マクロ削除
 ;[eval exp="tf.erase = true"]
 ;[call target=*start storage="sijyou/macro_bg_test.ks"]
+[eval exp="tf.bg_target=''"]
 [if exp="tf.flag_omake == true"]
 @jump target=*omake
 [endif]
+[freeimage layer = 27]
 [freeimage layer = 24]
 [freeimage layer = 8]
 [freeimage layer = 9]
@@ -1751,6 +1346,7 @@ tf.raberu = "*page"+tf.page;
 ;マクロ削除
 ;[eval exp="tf.erase = true"]
 ;[call target=*start storage="sijyou/macro_bg_test.ks"]
+[eval exp="tf.bg_target=''"]
 [freeimage layer = 27]
 [freeimage layer = 24]
 [freeimage layer = 8]
@@ -1766,6 +1362,7 @@ tf.raberu = "*page"+tf.page;
 [iscript]
 $(".list").css("opacity",1);
 [endscript]
+[eval exp="tf.bg_target=''"]
 [eval exp="f.kaogura = 'on'"]
 @jump storage="omake.ks"
 [s]
@@ -1790,6 +1387,7 @@ $(".list").css("opacity",1);
 [イベントシーン終了]
 [cm]
 [freeimage layer = 26]
+[eval exp="tf.bg_target=''"]
 ;------タイトルへ戻る
 @jump storage="title.ks"
 [s]

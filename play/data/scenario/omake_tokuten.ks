@@ -498,6 +498,12 @@ $('.loding_pic1').remove();
 [wait time=10]
 @layopt layer=2 visible=true
 [wait time=10]
+;↓特典を経由する場合の背景切り替え動作不具合防止。なぜかleft=0だと右にずれて表示されるので"-1"にしています。
+[chara_delete name="bg"]
+[chara_new name="bg" storage="toumei.gif"]
+[wait time=10]
+[chara_show left="-1" top=0 width=961 height=640 layer=1 name="bg" time=0]
+[wait time=10]
 [s]
 
 *back
