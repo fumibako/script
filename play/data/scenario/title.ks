@@ -63,6 +63,7 @@
 [jump storage="omake.ks"]
 [s]
 
+
 ;----------BGM onが選択された時
 *bgm_on
 ;BMG音量は今後調整する可能性があります。100設定でこれまでの音量(設定前)と変わらないことを確認済(といっても、耳での体感なので若干怪しいですが)
@@ -73,7 +74,7 @@
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BGM='ON'"]
 [anim name="button_bgm_to_on" opacity=0 time=1]
-[locate x=665 y=480]
+[locate x=585 y=480]
 [button name="button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off" ]
 [s]
 
@@ -86,7 +87,7 @@
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BGM='OFF'"]
 [anim name="button_bgm_to_off" opacity=0 time=1]
-[locate x=665 y=480]
+[locate x=585 y=480]
 [button name="button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on" ]
 [s]
 
@@ -101,7 +102,7 @@ TG.stat.play_se = true;
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.SE='ON'"]
 [anim name="button_se_to_on" opacity=0 time=1]
-[locate x=795 y=480]
+[locate x=715 y=480]
 [button name="button_se_to_off" graphic="button_se_on.png" target="*se_off" ]
 [s]
 
@@ -116,7 +117,7 @@ TG.stat.play_se = false;
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.SE='OFF'"]
 [anim name="button_se_to_off" opacity=0 time=1]
-[locate x=795 y=480]
+[locate x=715 y=480]
 [button name="button_se_to_on" graphic="button_se_off.png" target="*se_on" ]
 [s]
 
@@ -130,9 +131,11 @@ TG.stat.play_se = false;
 	$(".text_skip").html("ON");
 	//$('.button_kskip_to_on').remove();
 [endscript]
-[config_record_label skip=true]
+[eval exp="TG.config.unReadTextSkip = true"]
+[config_record_label skip=false]
+;[config_record_label skip=false]…未読時に止まる(既読のみスキップ可)
 [anim name="button_kskip_to_on" opacity=0 time=1]
-[locate x=405 y=480]
+[locate x=305 y=480]
 [button name="button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off" ]
 [return]
 [s]
@@ -146,9 +149,11 @@ TG.stat.play_se = false;
 	tf.text_skip = "OFF";
 	$(".text_skip").html("OFF");
 [endscript]
-[config_record_label skip=false]
+[eval exp="TG.config.unReadTextSkip = false"]
+;[config_record_label skip=true]
+;[config_record_label skip=true]…未読/既読に関わらずスキップ可
 [anim name="button_kskip_to_off" opacity=0 time=1]
-[locate x=405 y=480]
+[locate x=305 y=480]
 [button name="button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on" ]
 [s]
 ;----------文字　瞬速が選択された時
@@ -159,7 +164,7 @@ TG.stat.play_se = false;
 [eval exp="sf.BOOST='ON'"]
 ;f.skip=true;　キー・スキップフラグ　設定なしでもとまるが念のため
 [anim name="button_boost_to_on" opacity=0 time=1]
-[locate x=535 y=480]
+[locate x=455 y=480]
 [button name="button_boost_to_off" graphic="button_boost_on.png" target="*textboost_off" ]
 [s]
 
@@ -170,7 +175,7 @@ TG.stat.play_se = false;
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BOOST='OFF'"]
 [anim name="button_boost_to_off" opacity=0 time=1]
-[locate x=535 y=480]
+[locate x=455 y=480]
 [button name="button_boost_to_on" graphic="button_boost_off.png" target="*textboost_on" ]
 [s]
 
@@ -180,6 +185,14 @@ TG.stat.play_se = false;
 [cm]
 [freeimage layer = 28]
 @jump storage="test.ks"
+[s]
+
+;----------"？"helpボタンが選択された時
+*help
+[clearfix]
+[cm]
+[freeimage layer = 28]
+@jump storage="help.ks"
 [s]
 
 *title
@@ -196,59 +209,56 @@ TG.stat.play_se = false;
 /*効果音を再生しない*/
 TG.stat.play_se = false;
 [endscript]
-[locate x=795 y=480]
+[locate x=715 y=480]
 [button name="list,button_se_to_on" graphic="button_se_off.png" target="*se_on"]
 [else]
 [iscript]
 /*効果音を再生する*/
 TG.stat.play_se = true;
 [endscript]
-[locate x=795 y=480]
+[locate x=715 y=480]
 [button name="list,button_se_to_off" graphic="button_se_on.png" target="*se_off"]
 [endif]
-
-;未読スキップオフ
-[config_record_label skip=false]
-
-;既読文字カラー
-;color部分を任意の色に変更します。今回は限りなく白い灰色
-[config_record_label color="0xccccbb" ]
-
-[eval exp="sf.KSKIP=='OFF'"]
-;[if exp="sf.KSKIP=='OFF'"]
-;[locate x=405 y=480]
-;[button name="list,button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on"]
-;[else]
-;[eval exp="sf.KSKIP='ON'"]
-;[locate x=405 y=480]
-;[button name="list,button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off"]
+;既読設定をtitle_settei_hyouji.ksへ移動しました
+;◆既読スキップボタン設置
+;[if exp="sf.KSKIP === 'undefined'"]
+;	[eval exp="sf.KSKIP=='OFF'"]
 ;[endif]
-
+;[if exp="sf.KSKIP=='OFF'"]
+;	[locate x=305 y=480]
+;	[button name="list,button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on"]
+;[else]
+;	[eval exp="sf.KSKIP='ON'"]
+;	[locate x=305 y=480]
+;	[button name="list,button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off"]
+;[endif]
 [if exp="sf.BOOST=='ON'"]
 ;[boost_mode_on]
 [nowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="f.okeiko_month = 0"]
 [eval exp="sf.BOOST='ON'"]
-[locate x=535 y=480]
+[locate x=455 y=480]
 [button name="list,button_boost_to_off" graphic="button_boost_on.png" target="*textboost_off"]
 [else]
 ;[boost_mode_off]
 [endnowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BOOST='OFF'"]
-[locate x=535 y=480]
+[locate x=455 y=480]
 [button name="list,button_boost_to_on" graphic="button_boost_off.png" target="*textboost_on"]
 [endif]
-
 [if exp="sf.BGM=='OFF'"]
-[locate x=665 y=480]
+[locate x=585 y=480]
 [button name="list,button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on"]
 [else]
 [eval exp="sf.BGM='ON'"]
-[locate x=665 y=480]
+[locate x=585 y=480]
 [button name="list,button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off"]
 [endif]
+;"？"…helpボタンを設置し、Ｑ＆Ａコーナー表示機能やセーブデータ一括消去機能を追加することにしました
+[locate x=870 y=540]
+[button name="list" graphic="button_help.png" target="*help" time=0 height=30 width=30]
 ;-----設定タグここまで-----
 
 ;◆全イベント達成時飾り
@@ -283,9 +293,10 @@ TG.stat.play_se = true;
 [locate x=10 y=130]
 [button name="list" graphic="button_title_omake.png" target="*omake" time=0]
 
-
 [locate x=0 y=540]
 [button name="test_mode" graphic="toumei.gif" target="*test"  time=0 width=100 height=100]
+
+
 
 *complete_contents
 ;隠し解除

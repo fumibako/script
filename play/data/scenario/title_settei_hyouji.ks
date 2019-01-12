@@ -126,4 +126,21 @@ if(e.keyCode === 39 || e.keyCode === 32 && f.skip == true) {
 	[eval exp="f.skip = false"]
 [endif]
 [wait time=10]
+
+;◆既読色設定
+[if exp="sf.KSKIP=='ON'"]
+	;既読文字カラー
+	;color部分を任意の色に変更します。今回は限りなく白い灰色0xccccbb↓
+	;テストプレイをしてみて、特に手紙などは既読の場合も読みやすい色の方が目に優しいと感じまして"薄めのセピア色"に調整させていただきました◆jsYiJcqRkk
+	[eval exp="f.kidoku_color = '0xaa9a8a'"]
+	[eval exp="f.def_txtcolor = '0x664f44'"]
+	[config_record_label color=&f.kidoku_color]
+[endif]
+[if exp="sf.KSKIP=='OFF'"]
+	;↓Config.tjsのunReadTextSkipをOFF、
+	[eval exp="TG.config.unReadTextSkip = false"]
+;	[eval exp="TG.config.alreadyReadTextColor = default"] ;←既読色をシナリオ設定色に。しかしこの行を有効にするとフリーズしてしまう。シナリオ中から呼び出しての設定はできないのだろうか
+
+[endif]
+
 @jump storage="title.ks" target="*button_hyouji"

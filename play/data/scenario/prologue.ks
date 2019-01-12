@@ -64,6 +64,8 @@ TG.stat.play_se = true;
  [endnowait]
 [delay speed=80]
 ;[emb exp="sf.KSKIP"]
+[config_record_label color="0xccccbb"]
+[wait time=10]
 淑女たるもの温良貞淑たり[r]
 詠雪之才を持て
 [l][r]
@@ -80,6 +82,8 @@ TG.stat.play_se = true;
 年齢を迎えると、手紙の交流[r]
 によって心を通わせるもので[r]
 ある。
+[config_record_label color=&f.kidoku_color]
+[wait time=10]
 [if exp="sf.BOOST=='ON'"]
  [nowait]
 [endif]

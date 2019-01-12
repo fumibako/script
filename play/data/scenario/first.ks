@@ -23,9 +23,18 @@
 [stopbgm]
 [endif]
 [nowait]
+
+;;unReadTextSkip = true;に設定する場合には、テキスト表示には既読設定が必要なようです(既読スキップ機能実装見送りにつき、一旦コメントアウト)
+;[config_record_label skip=false]
+;ここでは白色に
+;[config_record_label color="0xffffff"]
+
 @layopt layer=message0 page=fore visible=true
 [font color=white]
-_　　　　　　　　　　　　　・・・読込中・・・[r]
+_　　　　　　　　　　　　　・・・読込中・・・
+[wait time=50]
+[r]
+[wait time=50]
 [call target=*start storage="macro_etc.ks"]
 [wait time=10]
 [call target=*start storage="macro_etc2.ks"]

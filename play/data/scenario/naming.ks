@@ -67,6 +67,8 @@
 [if exp="sf.girl_myouji == undefined || sf.girl_namae == undefined "]
 [sp]        　　　[sp] 
 [endif]
+;[config_record_label color=&f.def_txtcolor]
+[wait time=10]
 お好みの開始位置をご選択ください。[r]
 ;=====================================================
 ;飛び先で利用
@@ -91,7 +93,9 @@
 [r][r][r]
 [link target=*okiko]お稽古から始める[endlink][r]
 [resetfont]
-[s]
+[config_record_label color=&f.kidoku_color]
+[wait time=10]
+	[s]
 
 *name
 ;=============================================
