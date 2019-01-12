@@ -117,8 +117,8 @@ $('.loding_pic1').remove();
 [clearvar]
 [wait time=50]
 [iscript]
-	localStorage.removeItem(TG.config.projectID + "_tyrano_data");
-	localStorage.removeItem(TG.config.projectID + "_tyrano_auto_save");
+	localStorage.removeItem(TG.config.projectID + "_tyrano_data"); //scripts and codes by ＠名無しさん１
+	localStorage.removeItem(TG.config.projectID + "_tyrano_auto_save"); //←オートセーブデータも消す場合は、こちらも必要です ◆jsYiJcqRkk
 	alert("セーブデータを消去しました。\nエラー防止のため、ゲームを再起動します");
 	location.reload();
 [endscript]
