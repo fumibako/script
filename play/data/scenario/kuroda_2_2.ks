@@ -120,12 +120,19 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_genkan.jpg" time=1000]
 [wait time=10]
 ;==========================================================================================
+@layopt layer=13 visible = true
+[image name="junbi" layer=13 storage="kuroda/all_hohoemi.png" left=250 top=60 time=200 visible=true]
+[wait time=150]
 ;【立ち絵】黒田：ほほえみ
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
 [wait time=10]
 [黒田ほほえみ]
-[wait time=10]
+[wait time=100]
 [主人公ほほえみ]
+[wait time=10]
+[iscript]
+$('.junbi').remove();
+[endscript]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「[名前]さん！」
@@ -206,6 +213,8 @@
 
 [黒田退場]
 [wait time=10]
+[image name="junbi" layer=13 storage="kuroda/all_tonari_metoji_hohoemi.png" left=210 top=30 time=200 visible=true]
+[wait time=100]
 [anim name="kuroda_base" left=210 top=30 time=0]
 [anim name="kuroda_mayu" left=210 top=30 time=0]
 [anim name="kuroda_me" left=210 top=30 time=0]
@@ -219,6 +228,10 @@
 [chara_mod name="kuroda_me" storage="kuroda/me_toji_y1100.png" time=0]
 [wait time=10]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_hohoemi_y1100.png" time=0]
+[wait time=50]
+[iscript]
+$('.junbi').remove();
+[endscript]
 [wait time=10]
 
 黒田様の手がぎこちなくこちらへ差しのべられたように見えたとき――。[p]
@@ -447,6 +460,8 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue_dark.jpg" time=1000]
 [wait time=10]
 ;【立ち絵】黒田：通常
+[image name="junbi" layer=13 storage="kuroda/all_mefutuu_hohoemi.png" left=250 top=60 time=200 visible=true]
+[wait time=100]
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
 [wait time=10]
 [chara_mod name="kuroda_mayu" storage="kuroda/mayu_futuu.png" time=0]
@@ -454,7 +469,10 @@
 [chara_mod name="kuroda_me" storage="kuroda/me_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_hohoemi.png" time=0]
-[wait time=10]
+[wait time=50]
+[iscript]
+$('.junbi').remove();
+[endscript]
 [主人公目パチ1回]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
@@ -503,6 +521,8 @@
 [p]
 
 ;【立ち絵】黒田：ほほえみ
+[image name="junbi" layer=13 storage="kuroda/all_tonari_hohoemi.png" left=210 top=30 time=200 visible=true]
+[wait time=100]
 [chara_mod name="kuroda_base" storage="kuroda/base_haori_y1100.png" time=0]
 [wait time=10]
 [chara_mod name="kuroda_mayu" storage="kuroda/mayu_sage_y1100.png" time=0]
@@ -510,7 +530,10 @@
 [chara_mod name="kuroda_me" storage="kuroda/me_niko_y1100.png" time=0]
 [wait time=10]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_hohoemi_y1100.png" time=0]
-[wait time=10]
+[wait time=50]
+[iscript]
+$('.junbi').remove();
+[endscript]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「ホウボウですか。良いですね」[p]
 [主人公目パチ1回]
@@ -749,6 +772,8 @@
 [wait time=10]
 
 ;【立ち絵】黒田：通常
+[image name="junbi" layer=13 storage="kuroda/all_tonari_futuu.png" left=210 top=30 time=200 visible=true]
+[wait time=100]
 [chara_mod name="kuroda_base" storage="kuroda/base_haori_y1100.png" time=0]
 [wait time=10]
 [chara_mod name="kuroda_mayu" storage="kuroda/mayu_futuu_y1100.png" time=0]
@@ -756,7 +781,10 @@
 [chara_mod name="kuroda_me" storage="kuroda/me_futuu_y1100.png" time=0]
 [wait time=10]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]
-[wait time=10]
+[wait time=50]
+[iscript]
+$('.junbi').remove();
+[endscript]
 「時間はかかってしまいましたが、まとめることもできました」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]

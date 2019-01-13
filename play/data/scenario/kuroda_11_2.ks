@@ -133,11 +133,9 @@
 ;==========================================================================================
 *scene2
 ;【立ち絵】黒田：遠_疲れ
-[chara_delete name="kuroda_base"]
+[chara_new name="kuroda_long" storage="kuroda/base_haori_y580_tukare.png"]
 [wait time=10]
-[chara_new name="kuroda_base" storage="kuroda/base_haori_y580_tukare.png"]
-[wait time=10]
-[chara_show left=310 top=100 layer=8 name="kuroda_base"]
+[chara_show left=310 top=100 layer=8 name="kuroda_long"]
 [wait time=10]
 ――森林公園に着いた。[r]
 入口の門に、紫の着物姿が見える。
@@ -147,17 +145,21 @@
 ;【立ち絵】黒田：伏目
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （黒田様。少しお疲れに見えるような……？）[p]
+[chara_mod name="kuroda_long" storage="toumei.gif" time=100]
+[wait time=100]
+[chara_delete name="kuroda_long"]
 
-[chara_mod name="kuroda_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_delete name="kuroda_base"]
-[wait time=10]
-[freeimage layer = 8]
-[layopt layer=8 visible=true]
+@layopt layer=13 visible = true
+[image name="junbi" layer=13 storage="kuroda/all_hohoemi.png" left=250 top=60 time=150 visible=true]
+[wait time=100]
+
 [黒田ほほえみ]
 [wait time=10]
-[chara_new name="kuroda_base" storage="kuroda/base_haori.png" time=100]
-[chara_show left=250 top=60 layer=8 name="kuroda_base"]
+[chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=10]
+[wait time=50]
+[iscript]
+$('.junbi').remove();
+[endscript]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
 「[名前]さん、こんにちは」[p]
@@ -415,10 +417,18 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_biwa_tree.jpg" time=500]
 [wait time=10]
 [eval exp="f.haikei_credit='photo　by　Mike Petrucci　https://www.flickr.com/photos/scrappapervlog/17598158185/'"]
+[image name="junbi" layer=13 storage="kuroda/all_odoroki.png" left=250 top=60 time=100 visible=true]
+[wait time=10]
 ;【立ち絵】黒田：驚
 [chara_mod name="kuroda_base" storage="kuroda/base_haori.png" time=0]
 [wait time=10]
 [黒田驚]
+[wait time=100]
+
+[iscript]
+$('.junbi').remove();
+[endscript]
+
 [wait time=10]
 ;【立ち絵】主人公：驚
 [主人公驚]
