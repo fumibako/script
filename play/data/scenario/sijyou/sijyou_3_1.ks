@@ -1044,7 +1044,7 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [主人公横目]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （そういえば、お正月のお手紙には、[r]
-[sp]『[名前]のお父様と会いました』と書いてありましたが）[p]
+[sp]『[名前]さんのお父様と会いました』と書いてありましたが）[p]
 [主人公憂い]
 [四条真剣]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
