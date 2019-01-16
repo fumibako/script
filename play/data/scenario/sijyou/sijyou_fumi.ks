@@ -58,14 +58,14 @@
 [s]
 *test_page2
 [glink target="7" text="夏7" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100 font_color=black]
-[glink target="8" text="夏8_0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 font_color=black]
-[glink target="8_1" text="夏8_1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
-[glink target="8_2" text="夏8_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
-[glink target="8_3" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
-[glink target="9" text="秋9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
-[glink target="10" text="秋10" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 font_color=black]
-[glink target="11" text="秋11" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 font_color=black]
-[glink target="12" text="冬12" graphic="select_waku_x500.png" size=20 width="250" x=100 y=500 font_color=black]
+;[glink target="8" text="夏8_0" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 font_color=black]
+[glink target="8_1" text="夏8_1" graphic="select_waku_x500.png" size=20 width="250" x=100 y=150 font_color=black]
+[glink target="8_2" text="夏8_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
+[glink target="8_3" text="夏8_3" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
+[glink target="9" text="秋9" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
+[glink target="10" text="秋10" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
+[glink target="11" text="秋11" graphic="select_waku_x500.png" size=20 width="250" x=100 y=400 font_color=black]
+[glink target="12" text="冬12" graphic="select_waku_x500.png" size=20 width="250" x=100 y=450 font_color=black]
 
 [glink target="13" text="冬1" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
 [glink target="14" text="冬2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
@@ -80,14 +80,14 @@
 [s]
 *test_page3
 ;新規追加分　位置変更する気がまだ起きてこない
-[glink target=*aburidasi text="あぶりだし" graphic="select_waku_x500.png" size=20 width="300" x=100 y=100 font_color=black]
-[glink target=*aburidasi2 text="あぶりだし2" graphic="select_waku_x500.png" size=20 width="300" x=100 y=150 font_color=black]
+[glink target=*avuridasi text="あぶりだし" graphic="select_waku_x500.png" size=20 width="300" x=100 y=100 font_color=black]
+[glink target=*avuridasi_2 text="あぶりだし2" graphic="select_waku_x500.png" size=20 width="300" x=100 y=150 font_color=black]
 [glink target="1_2" text="春(1_2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=200 font_color=black]
 [glink target="1_3" text="春(1_3)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=250 font_color=black]
 [glink target="5_1" text="夏(5_1)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=300 font_color=black]
 [glink target="5_2" text="夏(5_2)" graphic="select_waku_x500.png" size=20 width="250" x=100 y=350 font_color=black]
 
-[glink target="sijyou_sigoto" text="仕事について" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
+[glink target="sijyou_sigoto1" text="仕事について" graphic="select_waku_x500.png" size=20 width="250" x=400 y=100 font_color=black]
 [glink target="sijyou_sigoto2" text="仕事について2" graphic="select_waku_x500.png" size=20 width="250" x=400 y=150 font_color=black]
 [glink target="sijyou_sigoto3" text="仕事について3" graphic="select_waku_x500.png" size=20 width="250" x=400 y=200 font_color=black]
 [glink target="sijyou_sigoto4" text="仕事について4" graphic="select_waku_x500.png" size=20 width="250" x=400 y=250 font_color=black]
@@ -114,7 +114,7 @@
 [endif]
 [手紙四条 fumi_number=]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 手紙ありがとう。　趣味についてだね。　それなら[r]
 庭で花を愛でることだよ。　家も華道をやっているからね。[r]
@@ -215,11 +215,11 @@
 [endif]
 [手紙四条 fumi_number=]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 手紙ありがとう。　家族についてだね。　それなら[r]
 両親と他兄妹が多いよ。[r]
-僕のことは気にしなくていいよ。[名前]のことを知りたいね。[r]
+僕のことは気にしなくていいよ。[名前]ちゃんのことを知りたいね。[r]
 ;文矢は元気にしてるかな？
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
@@ -369,6 +369,7 @@
 
 [手紙四条 fumi_number=]
 *sijyou_kazoku_2_2_1
+@clearstack
 [cm]
 [r][r][r]
 [名前]さんへ。[r]
@@ -395,7 +396,7 @@
 [s]
 *sijyou_kazoku_2_2_3
 
-最近、兄から写真が送られてきたけど、随分と静観な顔つきに[r]
+最近、兄から写真が送られてきたけど、随分と精悍な顔つきに[r]
 なっていたよ。[r]
 [r]
 君が、惚れていまわないか心配と余計な事を考えてしまったよ。
@@ -457,6 +458,7 @@
 
 [手紙四条 fumi_number=]
 *sijyou_kazoku_2_3_1
+@clearstack
 [cm]
 [名前]さんへ。[r]
 [r]
@@ -572,7 +574,7 @@
 [endif]
 [手紙四条 fumi_number=]
 [r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 ;手紙ありがとう。将来についてだね。それなら[r]
 家は華道の家系。別途、鉱山稼業をしているので、[r]
@@ -602,12 +604,12 @@
 [endif]
 [手紙四条 fumi_number=]
 [r]
-[名前]へ。。[r]
+[名前]ちゃんへ。。[r]
 [r]
 ;手紙ありがとう。将来についてだね。[r]
 この前、話を書いたから、なんて書こうか[r]
 迷ってしまうよ。[r]
-[名前]は、将来の夢は何だったかな？[r]
+[名前]ちゃんは、将来の夢は何だったかな？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
@@ -669,7 +671,7 @@
 @jump target="*test"
 [endif]
 ;==============================================================================================================
-*sijyou_syourai2_1|(お見合い後　事件解決前)
+*sijyou_syourai2_1|(お見合い後　事件解決前)→判定条件を確認したところ、事件解決後に届く仕様です。ので「さん」のままにします。◆jsYiJcqRkk
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『将来について』(お見合い後,その後)
@@ -711,7 +713,7 @@
 [endif]
 [手紙四条 fumi_number=]
 [r]
-[名前]へ[r]
+[名前]ちゃんへ[r]
 [r]
 四条家では、資本は基礎で[r]
 名誉は国の為に第一に古式由来の思想を持っているんだ。[r]
@@ -772,7 +774,7 @@
 @jump target="*test"
 [endif]
 ;==============================================================================================================
-*sijyou_sigoto2_1|(お見合い後2)
+*sijyou_sigoto2_1|(お見合い後2)事件解決後
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『仕事について』(お見合い後2)
@@ -843,7 +845,7 @@
 @jump target="*test"
 [endif]
 ;==============================================================================================================
-*sijyou_sigoto4|(お見合い後4)
+*sijyou_sigoto4|(お見合い後4)事件解決後
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『仕事について』(お見合い後4)
@@ -889,7 +891,7 @@
 [endif]
 [手紙四条 fumi_number=]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 手紙ありがとう。友人についてだね。それなら[r]
 君も知ってるだろうけど文矢が友人だよ。[r]
@@ -910,7 +912,7 @@
 @jump target="*test"
 [endif]
 ;==============================================================================================================
-*sijyou_yujin_2|(お見合い後)
+*sijyou_yujin_2|(お見合い後)事件前後共通
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 『友人について』(お見合い後)
@@ -918,7 +920,11 @@
 [endif]
 [手紙四条 fumi_number=]
 [r][r][r]
-[名前]へ。[r]
+[名前]
+[if exp="f.sijyou_event6==1"]
+さん
+[endif]
+へ。[r]
 [r]
 手紙ありがとう。友人についてだね。それなら[r]
 文矢が一番の親友だよ。[r]
@@ -955,6 +961,7 @@
 ;==============================================================================================================
 ;ゲームプレイしてみると初回４月　平均３回のやりとり
 *1
+;四月限定の手紙到着判定…お見合い前
 *sijyou_fumi21
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
@@ -964,10 +971,10 @@
 [endif]
 [手紙四条 fumi_number=1]
 [r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
-[名前]、元気にしてるかい？[r]
-木の上で甲高く鳴く鳥をみてヒヨドリと教えてもらました。[r]
+[名前]ちゃん、元気にしてるかい？[r]
+木の上で甲高く鳴く鳥をみてヒヨドリと教えてもらいました。[r]
 聞いたところ、外敵に襲われないように冬の海の上を[r]
 スレスレに飛んで渡ってくるそうです。[r]
 [r]
@@ -995,9 +1002,9 @@
 [endif]
 [手紙四条 fumi_number=1]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
-[名前]、元気にしてるかい？[r]
+[名前]ちゃん、元気にしてるかい？[r]
 桜に似た木をみつけました。[r]
 美しいので、近づいてみたところ[ruby text=あん]杏[ruby text=ず]子の[r]
 木でした。低く腕を伸ばしたように伸びた枝は風格があったよ。[r]
@@ -1027,7 +1034,7 @@
 [endif]
 [手紙四条 fumi_number=1]
 [r][r][r]
-[名前]へ、手紙をありがとう。[r]
+[名前]ちゃんへ、手紙をありがとう。[r]
 先日、華道家の祖母が、珍しい花を持ってきたよ。[r]
 『トキワナズナ』という、砂糖菓子のようなかわいい花[r]
 なんだ。よくみると白い小さな花が集まって一つの大[r]
@@ -1062,14 +1069,14 @@
 [endif]
 [手紙四条 fumi_number=3]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 今日は面白いことを知ったので手紙に書くよ。[r]
 チューリップは欧州貴族がこぞって品種改良し、病気で出来た[r]
 チューリップを巡ってチューリップバブルが起きたこともあるそう[r]
 です。[r]
 珍しくもなくてもいいから健やかな花がいいですよね。[r]
-いつかは、[名前]と花を育ててみたいです。[r]
+いつかは、[名前]ちゃんと花を育ててみたいです。[r]
 ;今みたら暗示的なものに見える
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
@@ -1098,13 +1105,13 @@
 [endif]
 [手紙四条 fumi_number=4]
 [r][r][r]
-[名前]へ[r]
+[名前]ちゃんへ[r]
 [r]
 いつも手紙をありがとう。[r]
 庭先に筍が生えてきました。[r]
 大きくなる前にとらないといけないです。[r]
 ですから、一昨日から食事は筍三昧でそろそろ飽きてきました。[r]
-[名前]と食事ができれば、毎日筍ご飯でも楽しいのですがね[r]
+[名前]ちゃんと食事ができれば、毎日筍ご飯でも楽しいのですがね。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
@@ -1135,11 +1142,11 @@
 [endif]
 [手紙四条 fumi_number=5]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 すだれを出したら使い物にならないほどに痛んでいました。[r]
 この梅雨のせいかな。[r]
-[名前]の家では夏の準備は終わりましたか？[r]
+[名前]ちゃんの家では夏の準備は終わりましたか？[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
@@ -1167,9 +1174,9 @@
 [endif]
 [手紙四条 fumi_number=5_1]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
-新しいすだれに取り換えてもいました。[r]
+新しいすだれに取り換えてみました。[r]
 やっぱり夏には、風鈴とすだれの先の青い空だよね。[r]
 今日、見える入道雲の形が、大仏に見えるのは、[r]
 僕だけかな[r]
@@ -1200,7 +1207,7 @@
 [endif]
 [手紙四条 fumi_number=5_2]
 [r][r][r]
-[名前]へ[r]
+[名前]ちゃんへ[r]
 [r]
 親戚の家から手紙を書いてます。[r]
 ここは、何もないところではあるけれど、海辺に[r]
@@ -1239,7 +1246,7 @@
 [endif]
 [手紙四条 fumi_number=6]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 かき氷って、抹茶、牛乳以外、味はあまり変わらないのに[r]
 色が違うだけで楽しくなりますよね[r]
@@ -1270,13 +1277,13 @@
 [endif]
 [手紙四条 fumi_number=7]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 清流の前で涼んでいると小さな蛙がでてきました。[r]
 蛙は涼しそうな顔をして、茹だる僕のことを笑っているように[r]
 見えました。[r]
-そういえば、昔、文矢と[名前]で川に涼みにいきましたね。[r]
-あの時も小岩の影に蛙がいて[名前]は驚いてましたね。[r]
+そういえば、昔、文矢と[名前]ちゃんで川に涼みにいきましたね。[r]
+あの時も小岩の影に蛙がいて[名前]ちゃんは驚いてましたね。[r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
 ;◆↓お稽古パート経由で手紙を読みに来た場合の処理(手紙組み込みテスト用)
@@ -1303,7 +1310,7 @@
 [endif]
 [手紙四条 fumi_number=8_1]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 古今和歌集に詠まれていたが本当に夏の夜明けは早く[r]
 よい夢が覚めてしまいます。[r]
@@ -1335,7 +1342,7 @@
 [endif]
 [手紙四条 fumi_number=8_2]
 [r][r][r]
-[名前]へ。[r]
+[名前]ちゃんへ。[r]
 [r]
 昨晩の星をみられましたか 身勝手の許されない身がくやしいです。[r]
 織姫と彦星も文通してるのでしょうか[r]
@@ -1423,7 +1430,7 @@
 槇の葉にはもう霧が立ちのぼっていく秋の夕暮れは、[r]
 ものがなしいものを感じます。[r]
 鮮やかな季節とは違って、静かに季節を感じる時期ですね。[r]
-[名前]さんが好きな季節は、いつでしょうか？
+[名前]が好きな季節は、いつでしょうか？
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
@@ -1443,6 +1450,7 @@
 ;==============================================================================================================
 *10
 *sijyou_fumi35
+;11月到着の仕様のため、事件解決後になります。◆jsYiJcqRkk
 [if exp="f.okeiko_gamen != true"]
 [テキスト全画面白文字]
 秋[r]
@@ -1488,7 +1496,7 @@
 [r]
 紅葉が広げた本にも挟まるほど縁側を彩っています。[r]
 紅葉の葉が読んだところを教えてくれました。[r]
-縁側で[名前]と読書をしてみたいですね。[r]
+縁側で[名前]さんと読書をしてみたいですね。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
@@ -1521,7 +1529,7 @@
 [名前]さんへ。[r]
 [r]
 冬は夜もふけるのも早く、あけるまでが長いですね。[r]
-早く[名前]に会いたいです。[r]
+早く[名前]さんに会いたいです。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　四条 華織[p]
 ;//////////////////////////////////////////////////////////////////
@@ -1652,12 +1660,12 @@
 [r][r]
 [名前]さんへ。[r]
 [r]
-_　三月には、いよいよ[名前]との結納ですね。 [r]
+_　三月には、いよいよ[名前]さんとの結納ですね。 [r]
 [名前]さんは、どんな気持ちでいますか？ [r]
 [r]
 感謝の言葉と、これから迷惑をかけるお詫びとで[r]
 入り混じります。[r]
-たくさんの[名前]との思い出を綴っていきたいです。
+たくさんの[名前]さんとの思い出を綴っていきたいです。
 [glink target=*sijyou_fumi41_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
 *sijyou_fumi41_2
@@ -1856,7 +1864,7 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [endif]
 ;///////あぶり出しの便せん///////
 [手紙四条 fumi_number=]
-[名前]。 手紙をありがとう。[r]
+[名前]ちゃん。 手紙をありがとう。[r]
 [r]
 えぇと……はじめ見たとき、何が書いてるのか、[r]
 わからなかったよ[r]
@@ -1889,7 +1897,11 @@ _　三月には、いよいよ[名前]との結納ですね。 [r]
 [endif]
 ;///////あぶり出しの便せん///////
 [手紙四条 fumi_number=]
-[名前]さん。 手紙をありがとう。[r]
+[名前]
+[if exp="f.sijyou_event6==1"]
+さん
+[endif]
+。 手紙をありがとう。[r]
 [r]
 ごめん……はじめ見たとき、何が書いてるのか、[r]
 わからなかったんだ。[r]
