@@ -296,8 +296,6 @@ TG.stat.play_se = true;
 [locate x=0 y=540]
 [button name="test_mode" graphic="toumei.gif" target="*test"  time=0 width=100 height=100]
 
-
-
 *complete_contents
 ;隠し解除
 ;[一斉表示]

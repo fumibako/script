@@ -25,7 +25,7 @@
 [wait time=10]
 [chara_show left=1 top=0 layer=1 name="bg" time=0]
 [wait time=10]
-[bg storage="toumei.gif" time=0]
+[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=0]
 [wait time=10]
 
 [glink target="test_okeiko_sijyou" text="お稽古パート(四条)" graphic="select_waku_x500.png" size=20 width="300" x=100 y=30 font_color=black]

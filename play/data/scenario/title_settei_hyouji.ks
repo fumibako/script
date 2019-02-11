@@ -55,10 +55,11 @@ if (typeof f.kuroda_fumi_toutyakumachi_kaidan === "undefined") {f.kuroda_fumi_to
 ;[一斉表示準備]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580] 
+[wait time=10]
 
 ;背景（タイトル画像）表示：安定性のためtitle周りの背景表示を[bg]タグに統一します
 [bg storage="../fgimage/bg/title.jpg" time=0]
-[wait time=10]
+[wait time=50]
 
 ;背景（効果）表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
 [chara_new name="bg_effect" storage="toumei.gif"]

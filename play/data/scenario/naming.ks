@@ -69,7 +69,7 @@
 [endif]
 ;[config_record_label color=&f.def_txtcolor]
 [wait time=10]
-お好みの開始位置をご選択ください。[r]
+お好みの開始位置をご選択ください。
 ;=====================================================
 ;飛び先で利用
 [clearstack stack=if]
@@ -83,19 +83,13 @@
 [eval exp="sf.girl_namae='文奈'"]
 ;名前が無い場合、先に入力する
 [endif]
-[r][r]
-[font size=29]
-[link target=*name]名前入力から始める[endlink][r]
-[r][r][r]
-[link target=*plo]プロローグから始める[endlink][r]
-[r][r][r]
-[link target=*op]オープニングから始める[endlink][r]
-[r][r][r]
-[link target=*okiko]お稽古から始める[endlink][r]
-[resetfont]
-[config_record_label color=&f.kidoku_color]
+;↓選択肢について環境による不具合(自動改頁されて選択できない)防止のため[link]タイプから[glink]タイプに変更します。
+[glink target=*name text="名前入力から始める" font_color=black size=22 width="300" x=50 y=180 graphic="select_waku_x500.png"]
+[glink target=*plo text="プロローグから始める" font_color=black size=22 width="300" x=500 y=180 graphic="select_waku_x500.png"]
+[glink target=*op text="オープニングから始める" font_color=black size=22 width="300" x=50 y=350 graphic="select_waku_x500.png"]
+[glink target=*okiko text="お稽古から始める" font_color=black size=22 width="300" x=500 y=350 graphic="select_waku_x500.png"]
 [wait time=10]
-	[s]
+[s]
 
 *name
 ;=============================================
@@ -216,13 +210,10 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [cm]
 [主人公目パチ1回L]
 「[emb exp=sf.girl_myouji] [emb exp=sf.girl_namae]」[r]
-この名前でよろしいですか？[r]
-[r][r][r]
-[font size=41]
-[link target=*ck_OK]　　はい[endlink][r]
-[r][r][r][r]
-[link target=*ck_NG]　　いいえ[endlink]
-[resetfont]
+この名前でよろしいですか？
+[glink target=*ck_OK text="はい" font_color=black size=30 width="200" x=350 y=200 graphic="select_waku_x300.png"]
+[glink target=*ck_NG text="いいえ" font_color=black size=30 width="200" x=350 y=400 graphic="select_waku_x300.png"]
+
 [s]
 
 *ck_OK

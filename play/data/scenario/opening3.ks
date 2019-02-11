@@ -180,7 +180,7 @@ f.kuroda_fumi1_midoku = 0;
 では、お体にお気をつけてお過ごしください。返事をお待ちしています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　　　　敬白[r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　財前　美彬
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　[ruby text="ざい"]財[ruby text="ぜん"]前　[ruby text="よし"]美[ruby text="あきら"]彬
 [glink target=*zaizen_fumi1_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*zaizen_fumi1_close" size=5 x=880 y=24 width=50 height=50]
 [s]

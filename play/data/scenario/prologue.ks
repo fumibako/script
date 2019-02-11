@@ -67,7 +67,7 @@ TG.stat.play_se = true;
 [config_record_label color="0xccccbb"]
 [wait time=10]
 淑女たるもの温良貞淑たり[r]
-詠雪之才を持て
+[ruby text="えい"]詠[ruby text="せつ"]雪[ruby text="の"]之[ruby text="さい"]才を持て
 [l][r]
 [stopbgm]
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
@@ -156,7 +156,7 @@ TG.stat.play_se = true;
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [resetfont]
-「――文矢お兄様！」[p]
+「――[ruby text="ふみ"]文[ruby text="や"]矢お兄様！」[p]
 [whosay name=文矢 color="#538a8a"]
 「[名前]……？　どうしたの？　廊下を走ってはいけないよ」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -191,12 +191,12 @@ TG.stat.play_se = true;
 [endif]
 *prologue5
 #
-二人の両親であるこの館の主人夫妻は、仕事のため[r]
-海外にいる事が多く、帰ってくるのは極稀な事であった。
+二人の両親であるこの[ruby text="やかた"]館の主人夫妻は、仕事のため[r]
+海外にいる事が多く、帰ってくるのは[ruby text="ごく"]極[ruby text="まれ"]稀な事であった。
 [autosave]
 [p]
 
-文矢はホッと安堵の表情を浮かべると、落ち着きなく部屋を[r]
+文矢はホッと[ruby text="あん"]安[ruby text="ど"]堵の表情を浮かべると、落ち着きなく部屋を[r]
 歩き回っていた妹を呼び「良かったね」と優しく頭を撫でる。[p]
 
 そしてしばらくの間、[r]
@@ -283,11 +283,11 @@ TG.stat.play_se = true;
 
 ;【SE】襖を開ける（ゆっくり）
 [playse storage=fusuma-open.ogg loop=false ]
-[sp]四条華織様がいらっしゃいました」
+[sp][ruby text="し"]四[ruby text="じょう"]条[ruby text="か"]華[ruby text="おり"]織様がいらっしゃいました」
 [autosave]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「華織お兄様が！？」[p]
+「[ruby text="か"]華[ruby text="おり"]織お兄様が！？」[p]
 #
 磯野の言葉に、妹は先ほどまでの暗さを忘れぱぁっと笑顔を浮かべる。[p]
 
