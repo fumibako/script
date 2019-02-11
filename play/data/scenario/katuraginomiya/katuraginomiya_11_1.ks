@@ -138,18 +138,11 @@
 [bg method='crossfade' storage="../fgimage/bg/plane_mizuiro.jpg" time=100 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;[link]タグでの選択肢
+;選択肢
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;選択肢用レイヤーを追加
-[position layer=message1 height=190 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=30]
-[link target=*yes]問う。[endlink][r]
-[r][r]
-[link target=*no] 泣く。[endlink][r]
+[glink target=*yes text="問う。" font_color=black size=20 width="200" x=350 y=80 graphic="select_waku_x300.png"]
+[glink target=*no text="泣く。" font_color=black size=20 width="200" x=350 y=230 graphic="select_waku_x300.png"]
 ;バットエンド
-[resetfont]
 [s]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *no
@@ -358,7 +351,7 @@
 [sp]家族から反対されても、きっと私は殿下を信じている）[p]
 
 #
-薔薇の花は美しく、凛と咲き誇る。[r]
+[ruby text="バ"]薔[ruby text="ラ"]薇の花は美しく、凛と咲き誇る。[r]
 ――まるで殿下のようだわ。[p]
 *seen3
 *end_rute

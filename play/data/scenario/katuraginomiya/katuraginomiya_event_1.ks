@@ -180,7 +180,7 @@ jumpします。[p]
 
 *seen_3
 [whosay name="三宮　時子" color="#c25232"]
-「葛城宮殿下！」[p]
+「[ruby text="かつら"]葛[ruby text="ぎの"]城[ruby text="みや"]宮殿下！」[p]
 ;【SE】衣擦れ（ザッ）
 [playse storage=za_kinuzure.ogg loop=false ]
 
@@ -202,7 +202,7 @@ jumpします。[p]
 ;【立ち絵】葛城宮 微笑み
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮微笑み]
-「私は、葛城宮晴仁 という。 君の名は？」[p]
+「私は、[ruby text="かつら"]葛[ruby text="ぎの"]城[ruby text="みや"]宮[ruby text="はる"]晴[ruby text="ひと"]仁 という。 君の名は？」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （殿下……ということは皇族の方！？　失礼のないようにしないと！）[p]
@@ -253,7 +253,7 @@ jumpします。[p]
 [wait time=10]
 
 [whosay name="三宮　時子" color="#c25232"]
-「ええ、今上帝の甥御様に当たる親王様よ。[r]
+「ええ、[ruby text="きん"]今[ruby text="じょう"]上[ruby text="てい"]帝の甥御様に当たる親王様よ。[r]
 [sp]でも女嫌いでお手紙をだされなくて、お話が出ても、ことごとく[r]
 [sp]破談にしていらっしゃると噂なの」[p]
 
@@ -423,7 +423,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [主人公目閉じ]
 #
-榊のお印入りの上質の白封筒を開け、はやる心を落ち着けて[r]
+榊のお[ruby text="しるし"]印入りの上質の白封筒を開け、はやる心を落ち着けて[r]
 御名を確かめる。
 [autosave改]
 [p]

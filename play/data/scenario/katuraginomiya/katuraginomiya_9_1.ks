@@ -193,7 +193,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 私が婚約したいのは君だけだ。[r]
 [sp]私は君に婚約を申し込む。[r]
 [r]
-[sp]　　近く、当家の主務事務官と宮内省の宗秩寮総裁が、[r]
+[sp]　　近く、当家の主務事務官と宮内省の[ruby text="そう"]宗[ruby text="ちつ"]秩[ruby text="りょう"]寮[ruby text="そう"]総[ruby text="さい"]裁が、[r]
 [sp]　　 [名字]家当主に婚約の申し込みをしに訪れる。
 [resetfont]
 [glink target=*katuraginomiya_fumi27_2 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
@@ -257,19 +257,12 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [bg method='crossfade' storage="../fgimage/bg/plane_sakura.jpg" time=100 wait=true]
 [eval exp="f.haikei_credit=''"]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
-;[link]タグでの選択肢
+;選択肢
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 ;文字が先に表示されるの防止
 [wait time=50]
-;選択肢用レイヤーを追加
-[position layer=message1 height=160 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=30]
-[link target=*yes]婚約をお受けする。[endlink][r]
-[r][r]
-[link target=*no]婚約をお断りする。[endlink][r]
-[resetfont]
+[glink target=*yes text="婚約をお受けする。" font_color=black size=20 width="300" x=300 y=80 graphic="select_waku_x300.png"]
+[glink target=*no text="婚約をお断りする。" font_color=black size=20 width="300" x=300 y=230 graphic="select_waku_x300.png"]
 [s]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝－
 *yes
@@ -296,7 +289,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [暗転]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;システム地の文。変更してください
-婚約を辞退する。[p]
+婚約をお断りする。[p]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;フラグB
 [eval exp="f.katuraginomiya_konyaku=false"]

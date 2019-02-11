@@ -428,10 +428,10 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;テキスト全画面
 [font color=white size=27]
 ;==============================================================================
-[sp]茶事の亭主に、皇后陛下、正客に晴仁殿下の[r]
+[sp]茶事の亭主に、皇后陛下、[ruby text="しょう"]正[ruby text="きゃく"]客に晴仁殿下の[r]
 母である葛城宮妃殿下、次客に縁子殿下、[r]
-三客に私、[r]
-半東にに皇后陛下の侍従である桂伯爵夫人。
+[ruby text="さん"]三[ruby text="きゃく"]客に私、[r]
+[ruby text="はん"]半[ruby text="とう"]東に皇后陛下の侍従である桂伯爵夫人。
 [autosave改]
 [p]
 [r]
@@ -444,7 +444,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 ;魔法の言葉　言葉　で連続ですが難しいのでそのままにします。
 [r]
 [sp]茶道での会話は、基本的に亭主と正客がして[r]
-その趣をくみ取り、[r]
+その[ruby text="おもむき"]趣をくみ取り、[r]
 言葉を選びながら場にあった受け答えをする。[r]
 [r]
 [sp]皇后陛下と葛城宮妃様の会話は品があり、[r]
