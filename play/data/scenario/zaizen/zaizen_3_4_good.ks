@@ -93,7 +93,7 @@ $('.list').remove();
 [whosay name="財前美彬" color="#7a65b2"]
 「……貴方に[r]
 [sp]愛していると告げたくなった。[r]
-[sp]私は厭っていた恋に落ちてしまった」[p]
+[sp]私は[ruby text="いと"]厭っていた恋に落ちてしまった」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：驚き頬染

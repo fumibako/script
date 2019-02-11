@@ -307,7 +307,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 ;【立ち絵】財前：通常
 [財前通常]
 [whosay name="財前美彬" color="#7a65b2"]
-「招待を感謝します独逸大使夫人。[r]
+「招待を感謝します[ruby text="ドイ"]独[ruby text="ツ"]逸大使夫人。[r]
 [sp]いえ、意地になるのは止めます……母上」
 [財前微笑み]
 [p]
@@ -399,7 +399,7 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [主人公眉困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……恋とはどんなものですか？[r]
-[sp]私、財前様に鬱陶しがられるのは嫌なのですが[r]
+[sp]私、財前様に[ruby text="うっ"]鬱[ruby text="とう"]陶しがられるのは嫌なのですが[r]
 [sp]嫉妬したり苦しくなったり、自分が分らないんです！」[p]
 
 [if exp="sf.BGM=='ON'"]
