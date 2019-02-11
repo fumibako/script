@@ -728,24 +728,13 @@
 [wait time=10]
 [position width=700 height=620 top=0 left=200 page=fore margint="40" opacity=0]
 [wait time=10]
-[r][r]
-[font size=29]
+[glink target=*to_omake text="「おまけ」を見る（ゲーム終了）" font_color=black size=20 width="400" x=250 y=100 graphic="select_waku_x500.png"]
+[glink target=*to_title text="タイトル画面へ（ゲーム終了）" font_color=black size=20 width="400" x=250 y=250 graphic="select_waku_x500.png"]
+
 [if exp="f.badge_from == 'event' || f.badge_from == 'sansaku'"]
-	[link target=*to_game]ゲームに戻る[endlink][r]
+[glink target=*to_game text="ゲームに戻る" font_color=black size=20 width="400" x=250 y=400 graphic="select_waku_x500.png"]
 [wait time=50]
 [endif]
-[r][r][r]
-[link target=*to_omake]「おまけ」を見る[r]
-[wait time=50]
-[font size=15]
-（ゲーム終了）[endlink][r]
-[font size=29]
-[r][r][r]
-[link target=*to_title]タイトル画面へ[r]
-[wait time=50]
-[font size=15]
-（ゲーム終了）[endlink][r]
-[resetfont]
 [s]
 
 *to_game
@@ -769,6 +758,8 @@
 *to_title
 [freeimage layer = 29]
 [wait time=10]
+[bg storage="../fgimage/bg/title.jpg" time=100]
+[wait time=50]
 [eval exp="tf.ED_bad = ''"]
 [eval exp="f.badge_from = ''"]
 [eval exp="tf.test_gamen_sijyou=false"]
@@ -798,6 +789,10 @@
 @eval exp="sf.hujieda_clearlist_complete = 0"
 @eval exp="sf.kuroda_clearlist_complete = 0"
 [endif]
+[wait time=10]
+[bg wait=true storage="../fgimage/bg/title.jpg" time=0]
+[wait time=10]
+
 @jump storage="title.ks"
 	
 *to_omake

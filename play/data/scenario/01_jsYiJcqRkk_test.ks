@@ -16,6 +16,9 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 ;test
 
 ;=============================================
+[chara_mod name="bg" storage="toumei.gif" time=0]
+[wait time=10]
+
 [イベントシーン終了]
 [bg storage="../fgimage/bg/title.jpg" time=0]
 [wait time=10]
@@ -80,6 +83,10 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 [glink target="common_9_1" text="common_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250  font_color=black]
 [glink target="*check_event0" text="クリアリスト"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300  font_color=black]
 [glink target="*check_event" text="クリアチェック"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=350  font_color=black]
+[glink target="*comp_end" text="バッジコンプ(END)"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=400  font_color=black]
+[glink target="*comp_event" text="バッジコンプ(イベント)"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=450  font_color=black]
+[glink target="*8week_asuka_kidoku" text="葉月（既読）"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=500  font_color=black]
+
 
 [glink target="*page2" text="page2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400  font_color=black]
 [glink target="*page1" text="page1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450  font_color=black]
@@ -782,7 +789,209 @@ f.para_shujinkou_shukujodo=200;
 ;sf.event_kuroda_11_3 sf.event_kuroda_11_4 sf.event_kuroda_12_2 sf.event_kuroda_12_3 
 ;sf.event_kuroda_1_1 sf.event_kuroda_1_4 kuroda_2_2
 
+*comp_end
+[cm]
+[freeimage layer = 26]
+@jump storage=common_badge.ks target="*comp_end"
 
+*comp_event
+[cm]
+[freeimage layer = 26]
+[eval exp="f.badge_from = 'event'"]
+;↓「ゲームに戻る」選択肢用です。仮に4月1週目(の休憩中)にセットしていますが、細かい設定はできていないのでエラーが起きやすい状態です。
+[call target=*start storage="hensuu.ks"]
+;ゲーム変数値数値を代入（月, 週, 月始め切り替え背景など。テスト画面経由時以外に実行
+[eval exp="f.okeiko_month = 4"]
+[eval exp="f.okeiko_week = 1"]
+;週始めを示す変数に1を代入(0=週始め以外を示す)
+[eval exp="f.okeikopart_shuuhajime=1"]
+;手紙処理に使用する変数を初期化
+[eval exp="f.list_count=0"]
+[eval exp="f.binsen_number=0"]
+[iscript]
+$.get("./data/scenario/fumi_wadai.csv", function(data){
+//読み込まれたファイル
+
+	f.wadai_list_moto = data;
+	f.wadai_list_shurui = [];
+	f.wadai_list_shurui = data.split("\n");
+	//ラベルの位置までジャンプ
+	TG.kag.stat.is_stop = false;
+	TG.kag.ftag.startTag("jump",{target:"*complete_load_wadai_list_shurui"}); 
+});
+[endscript]
+[s]
+*complete_load_wadai_list_shurui
+[iscript]
+	f.wadai_list_hairetsu = [];
+for( var i = 0 , l = f.wadai_list_shurui.length ; i < l ; i++ ){
+	f.wadai_list_hairetsu[i] = f.wadai_list_shurui[i].split(",");
+	for( var j = 0 , m = f.wadai_list_hairetsu[i].length ; j < m ; j++ ){//trimも同時に行っておく
+		f.wadai_list_hairetsu[i][j] = f.wadai_list_hairetsu[i][j].replace( /(^\s+)|(\s+$)/g , ""  );
+	}
+}
+[endscript]
+*complete_load_wadai_list_hairetsu
+;手紙の未読/既読リストを読込んで配列f.midoku_list_hairetsu[i][j]に格納。
+;[i]部分が攻略キャラ(0=黒田、1=財前、2=華織、3=葛城宮 晴仁、4=藤枝　肇)
+;[j]部分が各キャラの手紙が1=未読か0=既読かを示す。(1=返信済、0=未返信）初期csvは全部midokuは1、hensinは0に設定しているので、opening2シナリオで既読の際は0に設定し直す
+[iscript]
+$.get("./data/scenario/fumi_midoku.csv", function(data){
+//読み込まれたファイル
+
+	f.midoku_list_moto = data;
+	f.midoku_list_kouryakutaishou = [];
+	f.midoku_list_kouryakutaishou = data.split("\n");
+	//ラベルの位置までジャンプ
+	TG.kag.stat.is_stop = false;
+	TG.kag.ftag.startTag("jump",{target:"*complete_load_midoku_list_kouryakutaishou"}); 
+});
+[endscript]
+[s]
+*complete_load_midoku_list_kouryakutaishou
+
+[iscript]
+	f.midoku_list_hairetsu = [];
+for( var i = 0 , l = f.midoku_list_kouryakutaishou.length ; i < l ; i++ ){
+	f.midoku_list_hairetsu[i] = f.midoku_list_kouryakutaishou[i].split(",");
+	for( var j = 0 , m = f.midoku_list_hairetsu[i].length ; j < m ; j++ ){//trimも同時に行っておく
+		f.midoku_list_hairetsu[i][j] = f.midoku_list_hairetsu[i][j].replace( /(^\s+)|(\s+$)/g , ""  );
+	}
+}
+	//ラベルの位置までジャンプ
+	TG.kag.stat.is_stop = false;
+	TG.kag.ftag.startTag("jump",{target:"*complete_load_midoku_list_hairetsu"}); 
+
+[endscript]
+[s]
+*complete_load_midoku_list_hairetsu
+
+;手紙の未返信/返信済リストを読込んで配列f.hensin_list_hairetsu[i][j]に格納。
+[iscript]
+$.get("./data/scenario/fumi_hensin.csv", function(data){
+//読み込まれたファイル
+
+	f.hensin_list_moto = data;
+	f.hensin_list_kouryakutaishou = [];
+	f.hensin_list_kouryakutaishou = data.split("\n");
+	//ラベルの位置までジャンプ
+	TG.kag.stat.is_stop = false;
+	TG.kag.ftag.startTag("jump",{target:"*complete_load_hensin_list_kouryakutaishou"}); 
+});
+[endscript]
+[s]
+*complete_load_hensin_list_kouryakutaishou
+
+[iscript]
+	f.hensin_list_hairetsu = [];
+for( var i = 0 , l = f.hensin_list_kouryakutaishou.length ; i < l ; i++ ){
+	f.hensin_list_hairetsu[i] = f.hensin_list_kouryakutaishou[i].split(",");
+	for( var j = 0 , m = f.hensin_list_hairetsu[i].length ; j < m ; j++ ){//trimも同時に行っておく
+		f.hensin_list_hairetsu[i][j] = f.hensin_list_hairetsu[i][j].replace( /(^\s+)|(\s+$)/g , ""  );
+	}
+}
+	//ラベルの位置までジャンプ
+	TG.kag.stat.is_stop = false;
+	TG.kag.ftag.startTag("jump",{target:"*complete_load_hensin_list_hairetsu"}); 
+
+[endscript]
+[s]
+*complete_load_hensin_list_hairetsu
+;手紙到着フラグON
+[iscript]	
+f.fumi_list_all_title = [];
+f.fumi_list_all_title[0] = "三月　「最初の手紙」　黒田 将貴";
+f.fumi_list_all_storage = [];
+f.fumi_list_all_storage[0] = "fumi_kuroda.ks";
+f.fumi_list_all_target = [];
+f.fumi_list_all_target[0] = "*kuroda_fumi1";
+f.fumi_list_all_location_taishou = [];
+f.fumi_list_all_location_taishou[0] = 0;
+f.fumi_list_all_location_fumi = [];
+f.fumi_list_all_location_fumi[0] = 0;
+f.fumi_list_kuroda_location_fumi = [];
+f.fumi_list_kuroda_location_fumi[0] = 0;
+f.fumi_list_kuroda_title = [];
+f.fumi_list_kuroda_title[0] = "三月　「最初の手紙」";
+f.fumi_list_kuroda_target = [];
+f.fumi_list_kuroda_target[0] = "*kuroda_fumi1";
+f.fumi_kuroda_number = f.fumi_list_kuroda_title.length;
+if (f.kuroda_fumi1_midoku == 0){
+f.midoku_list_hairetsu[0][0] = 0;
+}
+
+f.fumi_list_all_title.push("三月　「最初の手紙」　財前 美彬");
+f.fumi_list_all_storage.push("fumi_zaizen.ks");
+f.fumi_list_all_target.push("*zaizen_fumi1");
+f.fumi_list_all_location_taishou.push(1);
+f.fumi_list_all_location_fumi.push(0);
+f.fumi_list_zaizen_location_fumi = [];
+f.fumi_list_zaizen_location_fumi[0] = 0;
+f.fumi_list_zaizen_title = [];
+f.fumi_list_zaizen_title[0] = "三月　「最初の手紙」";
+f.fumi_list_zaizen_target = [];
+f.fumi_list_zaizen_target[0] = "*zaizen_fumi1";
+f.fumi_zaizen_number = f.fumi_list_zaizen_title.length;
+if (f.zaizen_fumi1_midoku == 0){
+f.midoku_list_hairetsu[1][0] = 0;
+}
+
+f.fumi_list_all_title.push("三月　「最初の手紙」　四条 華織");
+f.fumi_list_all_storage.push("fumi_sijyou.ks");
+f.fumi_list_sijyou_storage=[];
+f.fumi_list_sijyou_storage.push("fumi_sijyou.ks");
+f.fumi_list_all_target.push("*sijyou_fumi1");
+f.fumi_list_all_location_taishou.push(2);
+f.fumi_list_all_location_fumi.push(0);
+f.fumi_list_sijyou_location_fumi = [];
+f.fumi_list_sijyou_location_fumi[0] = 0;
+f.fumi_list_sijyou_title = [];
+f.fumi_list_sijyou_title[0] = "三月　「最初の手紙」";
+f.fumi_list_sijyou_target = [];
+f.fumi_list_sijyou_target[0] = "*sijyou_fumi1";
+f.fumi_sijyou_number = f.fumi_list_sijyou_title.length;
+if (f.sijyou_fumi1_midoku == 0){
+f.midoku_list_hairetsu[2][0] = 0;
+}
+
+//◆手紙（全員）総数計算
+f.fumi_all_number = f.fumi_list_all_title.length;
+[endscript]
+;◆月始め「○月」の全画面画像表示
+[eval exp="f.okeiko_bg_tukihajime = '../fgimage/bg/bg_' + f.okeiko_month + 'gatsu.jpg'"]
+[eval exp="f.sysgra_okeiko_month = 'button/kanji_' + f.okeiko_month + '.png'"]
+[eval exp="f.sysgra_okeiko_week = 'button/kanji_' + f.okeiko_week + '.png'"]
+[eval exp="f.fumi_kakunin=0"]
+;主人公L画像表示【登場時にchara_new使用。後はマクロで切り替え】
+[chara_new name="A_base" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=3 name="A_base" time=0]
+[wait time=10]
+[chara_new name="A_mayu" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=4 name="A_mayu" time=0]
+[wait time=10]
+[chara_new name="A_me" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=5 name="A_me" time=0]
+[wait time=10]
+[chara_new name="A_kuti" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=6 name="A_kuti" time=0]
+[wait time=10]
+[chara_new name="A_emo" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=7 name="A_emo" time=0]
+[wait time=10]
+
+;◆背景切り替え中に色々読込
+;【システム表示】フキダシ枠【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
+[chara_new name="sys_fukidasi" storage="toumei.gif"]
+[wait time=10]
+[chara_show left=300 top=220 layer=23 name="sys_fukidasi" time=0]
+[wait time=10]
+@jump storage=common_badge.ks target="*comp_end"
+
+*8week_asuka_kidoku
+[eval exp="sf.event_8_week_asuka=1"]
+[eval exp="tf.test_sijyou = true"]
+@jump storage="sijyou/event_8_week_asuka.ks"
+[s]
 
 *back_test
 [cm]

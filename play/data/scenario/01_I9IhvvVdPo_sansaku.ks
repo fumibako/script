@@ -445,7 +445,7 @@ $('.junbi_girl').remove();
 
 [主人公通常]
 #
-差し出された和綴じの本は花菖蒲の表紙で、私はパラパラとめくる。[p]
+差し出された和綴じの本は[ruby text="はな"]花[ruby text="しょう"]菖[ruby text="ぶ"]蒲の表紙で、私はパラパラとめくる。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
@@ -508,7 +508,7 @@ $('.junbi_girl').remove();
 [endif]
 
 [whosay name=？？？" ]
-「お嬢さん。 僕は浪漫写真倶楽部、川島潤といいます」[p]
+「お嬢さん。 僕は[ruby text=ロ]浪[ruby text=マン]漫写真倶楽部、川島潤といいます」[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公驚]
