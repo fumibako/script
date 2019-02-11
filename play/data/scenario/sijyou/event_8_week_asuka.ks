@@ -20,25 +20,44 @@ $(".1_fore").empty();
 [endif]
 [プリロード画面消去]
 ;=====================ここからお芝居の幕引きです==============================
+;メッセージレイヤを全画面用に設定変更
+[position left=200 width=700 height=530 top=110 page=fore margint="50"]
+[wait time=50]
+[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
+@layopt layer=message0 visible=true
+;【背景】広間
+[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" time=0]
+[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
+[wait time=10]
+[current layer="message0"]
+[font color=white size=27]
+*seen1
+――夏の半ば。[r]
+[名字]家では、親戚一同が集まり、[r]
+祖先の霊を[ruby text="まつ"]祀る行事が行われた。[p]
+[if exp="sf.BGM=='ON'"]
+;【BGM】五色（重いムードに
+[playbgm storage="heavymood_goshiki.ogg" loop=true]
+[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
+[endif]
+[イベントシーン構築ボタン無し版]
+[主人公ポーズ通常]
+[主人公通常]
+[freeimage layer=29 time=0]
+[メッセージウィンドウ上ボタン表示]
+;==========================================================
 [if exp="sf.event_8_week_asuka != 1 || tf.test_sijyou != true"]
 @jump target=*seen_str
 [endif]
 ;ifの入れ子、endifが探せていないので下記をスキップする
-;==========================================================
 *event_select
-八月『怪談・葉月の庭』：既読イベントです。[r]
-選択肢まで移動、又はイベントを終了しますか？[r]
-;選択肢用レイヤーを追加
-[position layer=message1 height=300 top=70 left=300 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font size=30]
-[link target=*jump_ok1]選択肢まで移動する[endlink][r]
-[r][r]
-[link target=*jump_to_end1]イベントを終了する[endlink][r]
-[r][r]
-[link target=*jump_no1]最初からイベントを見る[endlink][r]
-[resetfont]
+;↓自然な選択肢となるよう調整しました。◆jsYiJcqRkk
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+（前にもこんなことがあった気がするわ。[r]
+[sp]どうしましょうか？）[r]
+[glink target=*jump_to_end1 text="すっかり思い出した（既読イベントスキップ）" font_color=black size=20 width="450" x=225 y=50 graphic="select_waku_x500.png"]
+[glink target=*jump_ok1 text="軽く楽しみたい（選択肢まで移動する）" font_color=black size=20 width="450" x=225 y=175 graphic="select_waku_x500.png"]
+[glink target=*jump_no1 text="じっくり楽しみたい（イベントを全て見る）" font_color=black size=20 width="450" x=225 y=300 graphic="select_waku_x500.png"]
 [s]
 *jump_ok1
 [er]
@@ -46,7 +65,7 @@ $(".1_fore").empty();
 [resetfont]
 [er]
 [メッセージウィンドウ上ボタン表示]
-「選択肢まで移動する」[r]
+『軽く楽しみたい（選択肢まで移動する）』[r]
 移動します。[p]
 [if exp="sf.BGM == 'ON'"]
 ;【BGM】海風と沈む太陽（しっとりと想うシーン、回想シーンなどに
@@ -64,7 +83,7 @@ $(".1_fore").empty();
 [resetfont]
 [er]
 [メッセージウィンドウ上ボタン表示]
-「イベントを終了する」[r]
+『すっかり思い出した（既読イベントスキップ）』[r]
 終了します。[p]
 [cm]
 [背景_庭_夜]
@@ -74,44 +93,17 @@ $(".1_fore").empty();
 [er]
 [current layer="message0"]
 [resetfont]
-「最初からイベントを見る」[r]
-最初の場面に移動します。[p]
+『じっくり楽しみたい（イベントを全て見る）』[r]
+続きの場面に移動します。[p]
 ;==========================================================
 *seen_str
-;メッセージレイヤを全画面用に設定変更
-[position left=200 width=700 height=530 top=110 page=fore margint="50"]
-[wait time=50]
-[image layer=29 x=0 y=0 zindex=0 storage="bg/bg_prologue.jpg" time=50]
-@layopt layer=message0 visible=true
-;【背景】広間
-[bg wait=true storage="../fgimage/bg/B4nFWraU42/bg_asuka_haduki_hiroma.jpg" time=0]
-[eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
-[wait time=10]
-[current layer="message0"]
-[font color=white size=27]
-*seen1
-――夏の半ば。[r]
-[名字]家では、親戚一同が集まり、[r]
-祖先の霊を祀る行事が行われた。[p]
-;==========================================================
-[if exp="sf.BGM=='ON'"]
-;【BGM】五色（重いムードに
-[playbgm storage="heavymood_goshiki.ogg" loop=true]
-[eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
-[endif]
-[イベントシーン構築ボタン無し版]
-[主人公ポーズ通常]
-[主人公通常]
-[freeimage layer=29 time=0]
-[メッセージウィンドウ上ボタン表示]
-;==========================================================
 *seen2
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「お疲れ様です」[p]
 [whosay name="飛鳥紗代子"]
 「[名前]さんもお疲れ様です」[p]
 #
-祀事が終わり、親戚の飛鳥紗代子さんと挨拶をする。[p]
+[ruby text="まつり"]祀[ruby text="ごと"]事が終わり、親戚の飛鳥紗代子さんと挨拶をする。[p]
 [autosave]
 [whosay name="飛鳥紗代子"]
 「無事終わってホッとしましたわ。[r]
@@ -121,7 +113,7 @@ $(".1_fore").empty();
 ;↓目：にっこり [主人公目にこ]
 [chara_mod name="girl_me" storage="girl/S/me_niko.png" time=0]
 [wait time=10]
-[sp]祀り事の最中は、棒立ちか正座しかしないのですから、[r]
+[sp][ruby text="まつ"]祀り事の最中は、棒立ちか正座しかしないのですから、[r]
 [sp]足が[ruby text=い]慰[ruby text=れい]霊[ruby text=ひ]碑になるかと思いました」[p]
 [whosay name="飛鳥伯父様"]
 [主人公通常]
@@ -136,7 +128,7 @@ $(".1_fore").empty();
 [whosay name="飛鳥伯父様"]
 「まったく……。　[名前]さん、すまない」[p]
 #
-飛鳥伯父様は、愁眉を見せた後、軽く頭を下げた。[r]
+飛鳥伯父様は、[ruby text="しゅう"]愁[ruby text="び"]眉を見せた後、軽く頭を下げた。[r]
 陰の深い輪郭は、紗代子さんとは、いくつか歳の差がある印象を受ける。[p]
 ;受けた？
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -389,7 +381,7 @@ $(".1_fore").empty();
 ;==========================================================
 ――夜、私達が眠りにつく頃。[r]
 荒れるような[ruby text=なつ]夏[ruby text=さめ]雨は過ぎ去り、[r]
-部屋には湿り気をおびた生暖かい空気が[r]じっとりと篭っていた。[p]
+部屋には湿り気をおびた生暖かい空気が[r]じっとりと[ruby text="こも"]篭っていた。[p]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】夕涼み（お稽古パートなど
 [playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
@@ -476,7 +468,7 @@ $(".1_fore").empty();
 ;怪談をすることを示唆的な
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ふふ、そうなのですね。[r]
-[sp]それでしたら、私で宜しければ、御一緒しましょうか」[p]
+[sp]それでしたら、私で[ruby text="よろ"]宜しければ、御一緒しましょうか」[p]
 [whosay name="飛鳥紗代子"]
 「ありがとうございます。[sp]恩に着ますわ。[r]
 [sp]ふう。　今日は一段と寝苦しい日ですわね」[p]
@@ -897,7 +889,7 @@ $(".1_fore").empty();
 [font color=white size=20]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
-――暮夏のみぎり[r]
+――[ruby text="ぼ"]暮[ruby text="か"]夏のみぎり[r]
 私は、久しく、友人であり伯母である方から、[r]
 ゆっくりとお話を伺いました。[r]
 [r]
@@ -975,7 +967,7 @@ $(".1_fore").empty();
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
-――暮夏のみぎり[r]
+――[ruby text="ぼ"]暮[ruby text="か"]夏のみぎり[r]
 私は、友人であり伯母である方から、[r]
 ゆっくりとお話を伺いました。[r]
 夏らしく、怪談のような話で怖くなって[r]
@@ -1049,7 +1041,7 @@ $(".1_fore").empty();
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
 ;～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
-――暮夏のみぎり[r]
+――[ruby text="ぼ"]暮[ruby text="か"]夏のみぎり[r]
 私は、友人であり伯母である方から、[r]
 ゆっくりとお話を伺いました。[r]
 夏らしく、怪談のような話で怖くなって[r]
@@ -1147,7 +1139,7 @@ $(".1_fore").empty();
 [eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo　・　Editing by ＠名無しさん１'"]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
-――暮夏のみぎり[r]
+――[ruby text="ぼ"]暮[ruby text="か"]夏のみぎり[r]
 私は、友人であり伯母である方から、[r]
 ゆっくりとお話を伺いました。[r]
 夏らしく、怪談のような話で怖くなって[r]
@@ -1216,7 +1208,7 @@ _　お手紙から財前様は、とても現実的で[r]
 [eval exp="f.haikei_credit='illustration　by　◆I9IhvvVdPo　・　Editing by ＠名無しさん１'"]
 [position width=630 height=520 top=80 left=220 page=fore margint="40" opacity=0]
 [font color=white size=20]
-――暮夏のみぎり[r]
+――[ruby text="ぼ"]暮[ruby text="か"]夏のみぎり[r]
 [sp]私は、友人であり伯母である方から、[r]
 ゆっくりとお話を伺いました。[r]
 夏らしく、怪談のような話で怖くなって[r]
@@ -1299,6 +1291,8 @@ _　お手紙から財前様は、とても現実的で[r]
 ;話題追加作業をありがとうございます。↓一旦暗転してから空白のメッセージウィンドウが表示されるのはすこしシュールに感じましたので、ウィンドウを消去します◆jsYiJcqRkk
 ;会話ウィンドウ消去
 [freeimage layer = 14]
+[wait time=10]
+[主人公退場]
 [wait time=10]
 ;機能ボタン消去
 [clearfix]
