@@ -1064,7 +1064,7 @@
 [四条口開]
 [四条目大]
 [whosay name="華織" color="olivedrab"]
-「 ! 『音頭恋寝刃』 」
+「 ! 『[ruby text=おん]音[ruby text=ど]頭[ruby text=こいの]恋[ruby text=ねた]寝[ruby text=ば]刃』 」
 [autosave改]
 [p]
 ;○事件解決に向かって走り出す[BGM一閃]？

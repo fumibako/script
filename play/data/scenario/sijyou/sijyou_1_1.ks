@@ -80,7 +80,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [clearfix]
 [font color=black size=19]
 ;○四条手紙 正月はがき？
-お健やかに新年をお迎えのこととお慶び申し上げます。[r]
+お健やかに新年をお迎えのこととお[ruby text="よろこ"]慶び申し上げます。[r]
 昨年は大変お世話になり、ありがとうございました。[r]
 本年も宜しくお願いいたします。 [r]
 [r]

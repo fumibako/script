@@ -273,7 +273,7 @@ $(".29_fore").empty();
 「こちらは、如何でしょうか？ 」[p]
 *seen_6
 #
-勧められた陳列棚には、押し花が飾られた栞や便箋が[r]
+勧められた陳列棚には、押し花が飾られた[ruby text="しおり"]栞や便箋が[r]
 数種類、並んでいた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ指]
@@ -502,7 +502,7 @@ $(".29_fore").empty();
 ;↓目：通常より大きめに開いた状態(驚き、好奇心、意思を見せる場面などに) [主人公目大]
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
 [wait time=10]
-小さな天然石を[ruby text="つづ"]綴ってミルトリアの形に模した、華やかな[ruby text="かんざし"]簪だった。[r]
+小さな天然石を[ruby text="つづ"]綴ってミルトニアの形に模した、華やかな[ruby text="かんざし"]簪だった。[r]
 手に取って見ると花の細工がキラキラと揺れる。[p]
 ;宝石だと工芸品とは言わないので天然石くらい
 [whosay name=&sf.girl_namae color="#cf5a7f"]

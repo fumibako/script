@@ -118,7 +118,7 @@ $(".1_fore").empty();
 [wait time=10]
 [暗転２終了]
 驚いて見上げれば、大輪の花火が、陰った空を[r]
-煌びやかに照らしていた。[p]
+[ruby text="きら"]煌びやかに照らしていた。[p]
 
 [whosay name="華織" color="olivedrab"]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -259,7 +259,7 @@ $(".1_fore").empty();
 ;↓効果：頬染め [主人公頬染め]
 [chara_mod name="girl_emo" storage="girl/S/emo_hohosome.png" time=0]
 [wait time=10]
-華織様は、そっと頭を撫で、耳元で囁いた。[p]
+華織様は、そっと頭を撫で、耳元で[ruby text="ささや"]囁いた。[p]
 [whosay name="華織" color="olivedrab"]
 ;[四条_顔up_目閉じ]
 [chara_mod name="sijyou_up_me" storage="sijyou/me_toji.png" time=0]

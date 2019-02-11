@@ -68,7 +68,7 @@ $(".yuugata").css(fil);
 $('.syande').css({'filter':'brightness(0.5)','-webkit-filter':'brightness(0.5)','-moz-filter':'brightness(0.5)','-ms-filter':'brightness(0.5)'});
 [endscript]
 [wait time=100]
-シャンデリアの煌めきを放つホール。[r]
+シャンデリアの[ruby text="きら"]煌めきを放つホール。[r]
 洋城のような大テラス窓が、憧れの世界にいる事を[r]
 感じさせる。[p]
 流行りのローブデコルテ、[r]
@@ -922,7 +922,7 @@ $(".29_fore").empty();
 [current layer="message0"]
 [font color=white size=27]
 驚いて見上げれば、大輪の花火が陰った空を[r]
-煌びやかに照らしていた。[p]
+[ruby text="きら"]煌びやかに照らしていた。[p]
 ;【SE】花火(打ち上げ：小)
 [playse storage=hanabi_utiage_s.ogg loop=false ]
 

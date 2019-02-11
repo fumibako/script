@@ -177,7 +177,7 @@ $('.junbi_girl').remove();
 [chara_mod name="sijyou_emo" storage="toumei.gif" time=0]
 [wait time=10]
 [whosay name="華織" color="olivedrab"]
-「華道祭で玄関先に飾る御所花車の構図が決まらなくて……」[p]
+「華道祭で玄関先に飾る[ruby text="ご"]御[ruby text="しょ"]所[ruby text="はな"]花[ruby text="ぐるま"]車の構図が決まらなくて……」[p]
 
 [主人公通常]
 [wait time=10]

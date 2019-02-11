@@ -147,7 +147,7 @@ $(".1_fore").empty();
 [wait time=10]
 [主人公眉下げ下]  
 [主人公目伏]
-「そうなのですね。[sp]まだ蕾ですが、[r]
+「そうなのですね。[sp]まだ[ruby text="つぼみ"]蕾ですが、[r]
 [sp]銀糸がまばらに縫いこまれたようにキラキラと輝いていますわ！[r]
 [sp]不思議……」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -174,7 +174,7 @@ $(".1_fore").empty();
 [四条微笑み]
 「[名前]、
 [四条口開]
-薔薇園を見に行こうか」[p]
+[ruby text="バ"]薔[ruby text="ラ"]薇園を見に行こうか」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目大]
 「は、はい」[p]
@@ -218,7 +218,7 @@ $('.junbi_girl').remove();
 ;四条登場
 ;華織、華衣と華衣婚約との約束に迷う心を隠す戯ける
 [whosay name="華織" color="olivedrab"]
-「[名前]の名前をつけた薔薇を育ててみようかな」
+「[名前]の名前をつけた[ruby text="バ"]薔[ruby text="ラ"]薇を育ててみようかな」
 [autosave改]
 [p]
 [四条口開]

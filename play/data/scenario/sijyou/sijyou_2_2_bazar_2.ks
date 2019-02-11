@@ -157,12 +157,12 @@ $(".1_fore").empty();
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
 陳列棚には、[r]
-靴下袋、手袋、押絵、巾着、人形、扇子、鞠、風車、襟巻き、[r]
+靴下袋、手袋、押絵、巾着、人形、扇子、[ruby text="まり"]鞠、風車、襟巻き、[r]
 などの多種多様な手工芸品が陳列されていた。[p]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ほほえみ]
-「こちらの伝統的な蒔絵が描かれた扇子も綺麗ですね」[p]
+「こちらの伝統的な[ruby text="まき"]蒔[ruby text="え"]絵が描かれた扇子も綺麗ですね」[p]
 ;慈善バザーの夫人方が率先して出店している感は出したいところ
 #
 [chara_mod name="girl_me" storage="girl/S/me_ake.png" time=0]
@@ -412,7 +412,7 @@ $(".1_fore").empty();
 ;↓目：閉じた状態 [主人公目閉]
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
-時折みせる、華織様の庇護的な愛情が[r]
+時折みせる、華織様の[ruby text="ひ"]庇[ruby text="ご"]護的な愛情が[r]
 歳の差という距離を感じずにはいられなかった。[p]
 ;-------------------------------------------------
 [whosay name=&sf.girl_namae color="#cf5a7f"]

@@ -76,7 +76,7 @@
 [主人公退場]
 [背景_庭_縁側(夕)]
 #
-中庭へと向かってみると、既に先客が団扇を仰ぎながら縁側で寛いでいた。 [r]
+中庭へと向かってみると、既に先客が[ruby text="うち"]団[ruby text="わ"]扇を仰ぎながら縁側で[ruby text="くつろ"]寛いでいた。 [r]
 その相手は
 [autosave改]
 [p]
@@ -120,7 +120,7 @@ $('.junbi_girl').remove();
 [eval exp="f.haikei_credit='illustration　by　＠名無しさん１'"]
 [image name="hababi" storage="bg/sijyou_engawa2_1.png" layer=1 zindex=2 left=0 time=2000]
 #
-黄昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
+[ruby text="たそ"]黄[ruby text="がれ"]昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
 ;【SE】花火(打ち上げ：中)
 [playse storage=hanabi_utiage_m.ogg loop=false ]
 ;アニメーション実行
@@ -176,12 +176,12 @@ $('.junbi_girl').remove();
 [主人公目パチ1回]
 [wait time=10]
 
-すると、小さく切り分けられたスイカと、瑞々しい水羊羹をのせた小皿を[r]私達の傍に置いて後ろへと下がる。[p]
+すると、小さく切り分けられたスイカと、瑞々しい[ruby text="みず"]水[ruby text="よう"]羊[ruby text="かん"]羹をのせた小皿を[r]私達の[ruby text="そば"]傍に置いて後ろへと下がる。[p]
 ;長いからきってみた
 
 #
 磯野の細やかな動きには、いつも目を見張るものがある。[r]
-ただ、淑女の躾としては、それを大っぴらに褒めることは許されない。[p]
+ただ、淑女の[ruby text="しつけ"]躾としては、それを大っぴらに褒めることは許されない。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「ありがとう、磯野」[p]
 [主人公ほほえみ]

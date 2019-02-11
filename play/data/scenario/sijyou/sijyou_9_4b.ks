@@ -83,7 +83,7 @@
 [whosay name="華織" color="olivedrab"]
 「僕が不幸になったら、君は幸せになれるかい？」[p]
 #
-僕は、焦燥感に釣られ、心の片隅に残っていた解決策を口にしてしまった。[p]
+僕は、[ruby text="しょう"]焦[ruby text="そう"]燥[ruby text="かん"]感に釣られ、心の片隅に残っていた解決策を口にしてしまった。[p]
 [whosay name="四条 華衣" color=%mp.color]
 「！ ……」[p]
 #

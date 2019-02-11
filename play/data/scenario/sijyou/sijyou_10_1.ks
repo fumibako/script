@@ -133,7 +133,7 @@
 [whosay name="四条 華衣" color=%mp.color]
 「うるさい！ 華織のせいであの人が死んだんだ！」[p]
 [whosay name="四条祖父" color="#888898"]
-「お前さんには、もっと良い相手を見繕ってくる！」[p]
+「お前さんには、もっと良い相手を[ruby text="み"]見[ruby text="つくろ"]繕ってくる！」[p]
 [whosay name="四条祖父" color="#888898"]
 「だから[名字]家の手紙を返すんだ！」[p]
 [whosay name="四条 華衣" color=%mp.color]

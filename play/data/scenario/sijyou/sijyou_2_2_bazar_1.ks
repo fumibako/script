@@ -82,7 +82,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [r]
 ここ最近は、数日後に開催される、[ruby text=チャリ]慈[ruby text=ティー]善バザーの設営作業に[r]
 追われていました。[r]
-設営作業といっても、僕の主な仕事は、貴賓を持て成すための[r]
+設営作業といっても、僕の主な仕事は、[ruby text="き"]貴[ruby text="ひん"]賓を持て成すための[r]
 国花の飾り付けです。[r]
 菊の花で英字を模って自由に花を生けるなど、[r]
 普段の華道の仕事とは違って面白さがありました。
@@ -444,7 +444,7 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 付き人と共に華織様の元へと急ぐ、[r]
 廊下から玄関へのほんの少しの距離。[p]
 
-近いような遠いような不思議な感覚に眩暈を覚える。[p]
+近いような遠いような不思議な感覚に[ruby text="め"]眩[ruby text="まい"]暈を覚える。[p]
 
 騒ぐ胸を押さえ、一歩ずつ前に歩みでた。[p]
 
