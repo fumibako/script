@@ -40,7 +40,7 @@
 
 ;【SE】落雷
 [playse storage=thunder.ogg loop=false ]
-雷が校舎に落ち、[ruby text="ごう"]轟音とともに[r]
+雷が校舎に落ち、[ruby text="ごう"]轟[ruby text="おん"]音とともに[r]
 [r]
 研究室も何もかも崩れ落ちる夢。[p]
 

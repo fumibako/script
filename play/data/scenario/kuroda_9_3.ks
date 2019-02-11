@@ -581,7 +581,7 @@ jumpします。[p]
 [黒田目パチ1回]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「いえいえ。[名字]様こそ、お忙しいなか[r]
+「いえいえ。 [名字]様こそ、お忙しいなか[r]
 [sp]このような席を設けていただきまして、誠にありがとうございます」[p]
 
 [主人公目パチ1回]
@@ -677,7 +677,7 @@ jumpします。[p]
 [playse storage=tori_habataki_kosagi.ogg loop=false ]
 #
 私の不安は庭からの羽音にかき消された。[r]
-白い羽根が目に映る――
+白い羽根が目に映る――。
 [autosave改]
 [p]
 
@@ -785,8 +785,8 @@ jumpします。[p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「おや、吉祥草。[r]
-[sp]少し陰になったところで、楚々と咲いていますね」[p]
+「おや、[ruby text="きち"]吉[ruby text="じょう"]祥[ruby text="そう"]草。[r]
+[sp]少し陰になったところで、[ruby text="そ"]楚[ruby text="そ"]々と咲いていますね」[p]
 
 ;【立ち絵】主人公：興味
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -808,7 +808,7 @@ jumpします。[p]
 [黒田ほほえみ]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「この花が咲くと、吉事があると言いますよ」
+「この花が咲くと、[ruby text="きち"]吉[ruby text="じ"]事があると言いますよ」
 [autosave改]
 [p]
 

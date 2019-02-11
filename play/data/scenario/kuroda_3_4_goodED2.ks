@@ -44,7 +44,7 @@
 [wait time=10]
 [chara_config ptext="chara_name_area"]
 #
-そういえば、千日紅の花言葉は[r]
+そういえば、[ruby text="せん"]千[ruby text="にち"]日[ruby text="こう"]紅の花言葉は[r]
 『変わらぬ愛』[r]
 とも聞く。[p]
 そう思い浮かべたところで、黒田様の声が響いた。[p]
@@ -193,7 +193,7 @@ $('.junbi_girl').remove();
 [endscript]
 
 [whosay name="黒田 将貴" color="#7a65b2"]
-「[名前]さん、これをお庭に蒔いてみてもらえませんか？」[p]
+「[名前]さん、これをお庭に[ruby text="ま"]蒔いてみてもらえませんか？」[p]
 
 #
 黒田様は茶封筒を、大切そうに両手で差し出されている。[p]

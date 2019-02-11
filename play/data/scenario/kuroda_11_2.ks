@@ -113,7 +113,7 @@
 [wait time=10]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（今日は滞りなく準備ができたわ。[r]
+（今日は[ruby text="とどこお"]滞りなく準備ができたわ。[r]
 [sp]ばあやのお小言も無かったけれど、それもなんだか寂しいものね）[p]
 
 ;【立ち絵】主人公：通常
@@ -144,7 +144,7 @@
 
 ;【立ち絵】黒田：伏目
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-（黒田様。少しお疲れに見えるような……？）[p]
+（黒田様。 少しお疲れに見えるような……？）[p]
 [chara_mod name="kuroda_long" storage="toumei.gif" time=100]
 [wait time=100]
 [chara_delete name="kuroda_long"]
@@ -223,7 +223,7 @@ $('.junbi').remove();
 [主人公驚]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「まあ。私は寂しく感じていたところです」[p]
+「まあ。 私は寂しく感じていたところです」[p]
 [主人公目パチ1回]
 [wait time=10]
 ;【立ち絵】主人公：通常
@@ -304,7 +304,7 @@ $('.junbi').remove();
 [chara_mod name="kuroda_me" storage="kuroda/me_yokofusi_kangae.png" time=0]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「いやぁ。好きといいますか、自然の中で育ったもので……」[p]
+「いやぁ。 好きといいますか、自然の中で育ったもので……」[p]
 
 [主人公目パチ1回]
 [wait time=10]
@@ -313,7 +313,7 @@ $('.junbi').remove();
 [wait time=10]
 [黒田通常]
 [wait time=10]
-「日々眺めているうちに色々と考えるようになったのかもしれません」[p]
+「日々眺めているうちに、色々と考えるようになったのかもしれません」[p]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_11_2_scene5==undefined"]
 	[skipstop]
@@ -443,7 +443,7 @@ $('.junbi').remove();
 [playse storage=shigemi_gasagasa.ogg loop=false ]
 #
 籠を背負った男が、あわてたようにきのこを拾い上げている。[r]
-ひげを生やした山男の風貌だ。[p]
+ひげを生やした山男の[ruby text="ふう"]風[ruby text="ぼう"]貌だ。[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 
@@ -472,7 +472,7 @@ $('.junbi').remove();
 [wait time=10]
 
 [whosay name="田中　岩男" color="#775545"]
-「いやぁ、すまんね。大事な晩ごはんがころがり落ちちまったもんで」[p]
+「いやぁ、すまんね。 大事な晩ごはんがころがり落ちちまったもんで」[p]
 ;【立ち絵】黒田：苦笑（頬染め）
 [黒田困りほほえみ]
 ;【立ち絵】主人公：とまどい
@@ -579,7 +579,7 @@ $('.junbi').remove();
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
 [wait time=10]
 #
-田中の籠には、きのこがあふれんばかりに盛られている。[p]
+田中の[ruby text="かご"]籠には、きのこがあふれんばかりに盛られている。[p]
 [黒田通常]
 [wait time=10]
 [黒田目パチ1回]

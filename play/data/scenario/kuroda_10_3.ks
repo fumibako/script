@@ -405,7 +405,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [wait time=10]
 
 [whosay name="黒田 将貴" color="#7a65b2"]
-「きのこの一種です。お汁に入れるといい出汁がでますよ」[p]
+「きのこの一種です。 お汁に入れるといい出汁がでますよ」[p]
 
 #
 ときのこを手に、笑顔で戻っていらっしゃる。[p]
@@ -526,7 +526,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [chara_mod name="kuroda_emo" storage="kuroda/emo_ase.png" time=0]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「あっ、そうでした。すみません」[p]
+「あっ、そうでした。 すみません」[p]
 ;【立ち絵】黒田：苦笑
 [chara_mod name="kuroda_mayu" storage="kuroda/mayu_komari.png" time=0]
 [wait time=10]
@@ -649,7 +649,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「もうすぐ帰りの時間ですね。時が経つのが早く感じます」
+「もうすぐ帰りの時間ですね。 時が経つのが早く感じます」
 [autosave改]
 [p]
 
@@ -701,7 +701,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake.png" time=0]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「はい。山の中で紅葉谷と呼ばれるところでのお能だったのですが」[p]
+「はい。 山の中で紅葉谷と呼ばれるところでのお能だったのですが」[p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu.png" time=0]
 [wait time=10]
 ;【立ち絵】黒田：ほほえみ
@@ -779,7 +779,7 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「うらやましいです。夜の外出は、お許しが出ませんから……」
+「うらやましいです。 夜の外出は、お許しが出ませんから……」
 [autosave改]
 [p]
 

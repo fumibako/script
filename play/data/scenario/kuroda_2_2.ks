@@ -535,7 +535,7 @@ $('.junbi').remove();
 $('.junbi').remove();
 [endscript]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「ホウボウですか。良いですね」[p]
+「ホウボウですか。 良いですね」[p]
 [主人公目パチ1回]
 [wait time=10]
 
@@ -628,7 +628,7 @@ $('.junbi').remove();
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake_y1100.png" time=0]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「良いですね。[名前]さんは良いですか？」[p]
+「良いですね。 [名前]さんは良いですか？」[p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]
 [wait time=10]
 
@@ -699,7 +699,7 @@ $('.junbi').remove();
 [wait time=10]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_ake_y1100.png" time=0]
 [wait time=10]
-「[名前]さん。今日は改めてお礼とご報告をしたいのです」
+「[名前]さん。 今日は改めてお礼とご報告をしたいのです」
 [autosave改]
 [p]
 [chara_mod name="kuroda_kuti" storage="kuroda/kuti_futuu_y1100.png" time=0]

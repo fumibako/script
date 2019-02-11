@@ -95,9 +95,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [名字] [名前]様[r]
 [r]
 [sp]寒さ厳しいこのごろですが、いかがお過ごしでしょうか。[r]
-長い間ご無沙汰してしまい、大変失礼いたしました。[r]
+長い間ご[ruby text="ぶ"]無[ruby text="さ"]沙[ruby text="た"]汰してしまい、大変失礼いたしました。[r]
 昨年末はお手紙をいただきまして、本当にありがとうございました。[r]
-お手紙に励まされて研究も順調に進み、如月の半ばには落ち着き[r]
+お手紙に励まされて研究も順調に進み、[ruby text="きさ"]如[ruby text="らぎ"]月の半ばには落ち着き[r]
 そうです。[r]
 [r]
 [sp]今はつぼみの梅も、花ほころんでいる頃かと思います。[r]
@@ -281,7 +281,7 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 ;【SE】ペンで書く
 [playse storage=pen_write.ogg loop=false ]
 （……素敵なお誘いをありがとうございます。[r]
-[sp]順調とお聞きして、心より安堵いたしました。[r]
+[sp]順調とお聞きして、心より[ruby text="あん"]安[ruby text="ど"]堵いたしました。[r]
 [sp]黒田様にお会いできることを何より楽しみに、ご一緒させていただきます……）[p]
 [stopbgm]
 

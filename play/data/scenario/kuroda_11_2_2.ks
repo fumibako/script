@@ -195,7 +195,7 @@
 [主人公ほほえみ]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
-「大丈夫ですよ。特に何も気になりません」[p]
+「大丈夫ですよ。 特に何も気になりません」[p]
 [主人公閉目パチ1回]
 [wait time=10]
 [chara_mod name="kuroda_emo" storage="toumei.gif" time=0]
@@ -214,7 +214,7 @@
 [黒田困りほほえみ]
 [wait time=10]
 [whosay name="黒田 将貴" color="#7a65b2"]
-「自覚はしているよ。気をつけます」[p]
+「自覚はしているよ。 気をつけます」[p]
 ;【部分分岐】特に何も気にならないと言う場合【終了】
 
 [主人公通常]

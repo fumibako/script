@@ -196,16 +196,16 @@ $(".rp_bt").remove();
 
 【黒田】[r]
 「はは、そのくらいしぶとい方がいいですよ。[r]
-[sp]では『千日紅の君』とお呼びしましょうか」[l][r]
+[sp]では『[ruby text="せん"]千[ruby text="にち"]日[ruby text="こう"]紅の君』とお呼びしましょうか」[l][r]
 [r]
 【[名前]】
-（枯れても紅色の残る、千日紅……）[l][r]
+（枯れても紅色の残る、[ruby text="せん"]千[ruby text="にち"]日[ruby text="こう"]紅……）[l][r]
 [r]
 「千日紅は愛らしいけれど[r]
-[sp]もうすこし、潤いのあるお花でお願いしたいです」[p]
+[sp]もうすこし、[ruby text="うるお"]潤いのあるお花でお願いしたいです」[p]
 
 と軽口をたたきつつ[r]
-千日紅の名を聞いて私はハッとした。[r]
+[ruby text="せん"]千[ruby text="にち"]日[ruby text="こう"]紅の名を聞いて私はハッとした。[r]
 [r]
 花言葉は、たしか[p]
 [r]
@@ -248,14 +248,14 @@ $(".rp_bt").remove();
 ;【SE】メジロ（ピピ？問いかけるようなさえずり）
 [playse storage=tori_mejiro.ogg loop=false ]
 [wait time=10]
-その時、目白が枝に止まり、花弁がひらひらと舞った。[l][r]
+その時、[ruby text="メ"]目[ruby text="ジロ"]白が枝に止まり、花弁がひらひらと舞った。[l][r]
 [r]
 [if exp="sf.BGM=='ON'"]
 ;【BGM】はなごよみ〜さくら〜（normal/goodED用
 [playbgm storage="ending_hanagoyomi_sakura.ogg" loop=true]
 [eval exp="f.bgm_storage='ending_hanagoyomi_sakura.ogg'"]
 [endif]
-枝に揺れる目白を見上げ、黒田様は力を得たようにこちらへと向き直られた。[r]
+枝に揺れる[ruby text="メ"]目[ruby text="ジロ"]白を見上げ、黒田様は力を得たようにこちらへと向き直られた。[r]
 [r]
 その瞳は決意をたたえている。[p]
 

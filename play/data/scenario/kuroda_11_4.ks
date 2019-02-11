@@ -188,7 +188,7 @@
 [wait time=10]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
-「なんでも、ご母堂様の病が悪くて倒れられたとかで……。[r]
+「なんでも、ご[ruby text="ぼ"]母[ruby text="どう"]堂様の病が悪くて倒れられたとかで……。[r]
 [sp]朝からお医者様を呼ばれたりで、大変だったそうでございますよ」[p]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
