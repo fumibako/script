@@ -190,7 +190,7 @@ $('.kaede').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
 [主人公ほほえみ]
-「はい、勿論です。[r]
+「はい、[ruby text="もち"]勿[ruby text="ろん"]論です。[r]
 [sp]私もあなたを 肇様 と、お呼びしても構いませんか？」[p]
 
 ;【立ち絵】藤枝：微笑み照れ

@@ -59,7 +59,7 @@
 [主人公ほほえみ]
 「随分人に慣れた鳩さんなのね」 [p]
 [主人公目パチ1回]
-「足に紙が括り付けてあるわ。　取った方がいいのかしら？」[p]
+「足に紙が[ruby text="くく"]括り付けてあるわ。　取った方がいいのかしら？」[p]
 
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
@@ -117,7 +117,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [clearstack]
 [cm]
 
-箏の奏者様へ[l][r]
+[ruby text="こと"]箏の奏者様へ[l][r]
 [r]
 [sp]桜の花が咲きまた散る季節[r]
 [r]
@@ -132,7 +132,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 *hujieda_fumi01_2
 [cm]
 
-[sp]貴方様の筝が上達し益々成長することを[r]
+[sp]貴方様の[ruby text="こと"]筝が上達し益々成長することを[r]
 願っています。[r]
 [r]
 [sp]ちなみに毎日、[ruby text=に]二～[ruby text=さん]三時間ほど練習すると効果的です。[r]

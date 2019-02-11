@@ -192,7 +192,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [r]
 [sp]自然に触れたりして一度視点を変えて余裕を持ってください。[r]
 [r]
-[sp]焦らずとも貴方様は丁寧にお箏を慈しみ優しく弾けていました。[r]
+[sp]焦らずとも貴方様は丁寧にお[ruby text="こと"]箏を慈しみ優しく弾けていました。[r]
 [sp]必ず上達できる方だと思います。[r]
 [r]
 [sp]初心を忘れずゆっくり上達していきましょう。

@@ -127,7 +127,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]これで僕が書くのは最後の手紙とします。[r]
 お[ruby text=こと]箏を聞かせていただいてありがとうございました。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 
+[sp]　　　　　　　　　　　　　　　　　　　　　　[ruby text="ふじ"]藤[ruby text="えだ"]枝　[ruby text="はじめ"]肇 
 [glink target=*hujieda_fumi05_1 text="←" size=10 x=110 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [glink target=*hujieda_fumi05_3 text="→" size=10 x=770 y=300 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]

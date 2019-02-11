@@ -138,9 +138,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 私は変わりなく過ごしております。[r]
 [r]
 [sp]さて先日お調べするといった藤枝様ですが、[r]
-独逸への留学についてお知らせします。[r]
-独逸留学は藤枝様ともう[ruby text=ふた]二[ruby text=り]人が決定していたのですが[r]
-[ruby text=さん]三枠が諸事情で[ruby text=いち]一枠となり独逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった[r]
+[ruby text="ド"]独[ruby text="イツ"]逸への留学についてお知らせします。[r]
+[ruby text="ド"]独[ruby text="イツ"]逸留学は藤枝様ともう[ruby text=ふた]二[ruby text=り]人が決定していたのですが[r]
+[ruby text=さん]三枠が諸事情で[ruby text=いち]一枠となり[ruby text="ド"]独[ruby text="イツ"]逸へ行けるのは[ruby text=ひと]一[ruby text=り]人となった[r]
 そうです。
 [glink target=*fumi_tokiko_hujieda_2 text="→" size=10 x=770 y=350 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
 [s]
@@ -157,7 +157,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [s]
 
 *fumi_tokiko_hujieda_3
-[sp]藤枝様と原様の実力は拮抗していて[r]
+[sp]藤枝様と原様の実力は[ruby text="きっ"]拮[ruby text="こう"]抗していて[r]
 どちらが留学してもおかしくないと言われてますが[r]
 ただ、やはり毎日はピアノの練習できない藤枝様の方が[r]
 当日不利ではないかとの噂ですわ。[r]
@@ -191,7 +191,7 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [主人公口通常]
 [主人公眉困り]
 [主人公目閉じ]
-（一瞬でも喜んでしまった自分が醜い。[r]
+（一瞬でも喜んでしまった自分が[ruby text="みにく"]醜い。[r]
 [sp]藤枝様の夢が叶うかもしれないのに）[p]
 [主人公眉下げ下]
 （藤枝様は、沢山お稽古を励ましてくれたわ。 [r]
