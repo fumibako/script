@@ -4,6 +4,17 @@
 ;==============================
 ;音設定の一部に【簡易コンフィグ画面プラグイン】by アオイサクラ様  [http://awoinekura.blog.fc2.com/]を使用させていただきました
 ;◆読み込み不良防止のため、タイトル画面での変数設定、表示(背景表示・主人公表示準備など)はtitle_settei_hyouji.ksとして切り出しました。
+;◆読み込み不良防止のため、config(音量調節機能)はtitle_config.ksとして切り出しました。
+@layopt layer=28 visible = true
+
+;音量設定準備(ティラノスクリプト付属configのスクリプトを使用させていただきました。◆jsYiJcqRkk
+[iscript]
+	tf.current_bgm_vol = parseInt(TG.config.defaultBgmVolume);
+	tf.current_se_vol = parseInt(TG.config.defaultSeVolume);
+	
+	tf.current_ch_speed = parseInt(TG.config.chSpeed);
+	tf.current_auto_speed = parseInt(TG.config.autoSpeed);
+[endscript]
 
 @jump target=*title
 ;◆↓読み込み不良防止のため、先にボタンのjump先ラベルを読み込ませます。実行ラベルは*titleからのためjumpします↑
@@ -62,65 +73,6 @@
 [freeimage layer = 28]
 [jump storage="omake.ks"]
 [s]
-
-
-;----------BGM onが選択された時
-*bgm_on
-;BMG音量は今後調整する可能性があります。100設定でこれまでの音量(設定前)と変わらないことを確認済(といっても、耳での体感なので若干怪しいですが)
-[bgmopt volume=100]
-;【BGM】雪解け（タイトル画面等）click=trueは一部ブラウザでクリック待ち的な動作をすることがあるため除いて運用中
-[playbgm storage="title_yukidoke.ogg" loop=true]
-[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
-;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
-[eval exp="sf.BGM='ON'"]
-[anim name="button_bgm_to_on" opacity=0 time=1]
-[locate x=585 y=480]
-[button name="button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off" ]
-[s]
-
-;----------BGM offが選択された時
-*bgm_off
-[stopbgm]
-[fadeoutbgm time=1000]
-;BGMOFF
-[bgmopt volume=0]
-;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
-[eval exp="sf.BGM='OFF'"]
-[anim name="button_bgm_to_off" opacity=0 time=1]
-[locate x=585 y=480]
-[button name="button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on" ]
-[s]
-
-;----------SE onが選択された時
-*se_on
-[iscript]
-/*効果音を再生する*/
-TG.stat.play_se = true;
-[endscript]
-;↓SEON(音量は今後調整する可能性があります。以前SE音量を抑えて欲しい、というメッセージをいただいたため、これまでより控えめに設定。BGMは元々50%に抑えているのでSEも合わせてみた感じです)
-[seopt volume=50]
-;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
-[eval exp="sf.SE='ON'"]
-[anim name="button_se_to_on" opacity=0 time=1]
-[locate x=715 y=480]
-[button name="button_se_to_off" graphic="button_se_on.png" target="*se_off" ]
-[s]
-
-;----------SE offが選択された時
-*se_off
-[iscript]
-/*効果音を再生しない*/
-TG.stat.play_se = false;
-[endscript]
-;↓SEOFF
-[seopt volume=0]
-;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
-[eval exp="sf.SE='OFF'"]
-[anim name="button_se_to_off" opacity=0 time=1]
-[locate x=715 y=480]
-[button name="button_se_to_on" graphic="button_se_off.png" target="*se_on" ]
-[s]
-
 
 ;----------既読スキップ有が選択された時
 *kskip_on
@@ -204,36 +156,6 @@ TG.stat.play_se = false;
 *button_hyouji
 *settei
 ;-----音・文表示設定タグここから-----
-[if exp="sf.SE=='OFF'"]
-[iscript]
-/*効果音を再生しない*/
-TG.stat.play_se = false;
-[endscript]
-[locate x=715 y=480]
-[button name="list,button_se_to_on" graphic="button_se_off.png" target="*se_on"]
-[else]
-[iscript]
-/*効果音を再生する*/
-TG.stat.play_se = true;
-[endscript]
-[locate x=715 y=480]
-[button name="list,button_se_to_off" graphic="button_se_on.png" target="*se_off"]
-[endif]
-;既読設定をtitle_settei_hyouji.ksへ移動しました
-;◆既読スキップボタン設置
-;[if exp="sf.KSKIP === 'undefined'"]
-;	[eval exp="sf.KSKIP=='OFF'"]
-;[endif]
-;[if exp="sf.KSKIP=='OFF'"]
-;	[locate x=305 y=480]
-;	[button name="list,button_kskip_to_on" graphic="button_kskip_off.png" target="*kskip_on"]
-;[else]
-;	[eval exp="sf.KSKIP='ON'"]
-;	[locate x=305 y=480]
-;	[button name="list,button_kskip_to_off" graphic="button_kskip_on.png" target="*kskip_off"]
-;[endif]
-[if exp="sf.BOOST=='ON'"]
-;[boost_mode_on]
 [nowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="f.okeiko_month = 0"]
@@ -241,37 +163,68 @@ TG.stat.play_se = true;
 [locate x=455 y=480]
 [button name="list,button_boost_to_off" graphic="button_boost_on.png" target="*textboost_off"]
 [else]
-;[boost_mode_off]
 [endnowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
 [eval exp="sf.BOOST='OFF'"]
 [locate x=455 y=480]
 [button name="list,button_boost_to_on" graphic="button_boost_off.png" target="*textboost_on"]
 [endif]
-[if exp="sf.BGM=='OFF'"]
-[locate x=585 y=480]
-[button name="list,button_bgm_to_on" graphic="button_bgm_off.png" target="*bgm_on"]
-[else]
-[eval exp="sf.BGM='ON'"]
-[locate x=585 y=480]
-[button name="list,button_bgm_to_off" graphic="button_bgm_on.png" target="*bgm_off"]
+
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
+[position width=960 height=250 top=450 left=0 page=fore opacity=0]
+[font color=black]
+;◆BGM音量 ティラノスクリプト本体付属configのスクリプトを一部利用させていただきました。◆jsYiJcqRkk
+[button fix="true" storage="title_config.ks" target="*vol_bgm_up" graphic=config/button_up.png width=25 height=20 x=622 y=480]
+[button fix="true" storage="title_config.ks" target="*vol_bgm_down" graphic=config/button_down.png width=25 height=20 x=622 y=600]
+[iscript]
+$('.button_bgm').remove();
+[endscript]
+[wait time=50]
+[if exp="sf.BGM===undefined"]
+	;【BGM】雪解け（タイトル画面等）click=trueは一部ブラウザでクリック待ち的な動作をすることがあるため除いて運用中
+	[playbgm storage="title_yukidoke.ogg" loop=true]
+	[eval exp="f.bgm_storage='title_yukidoke.ogg'"]
 [endif]
+
+[if exp="tf.current_bgm_vol == 0"]
+ 	[image name="button_bgm" layer=28 left=585 top=480 folder="image" storage="button_bgm_off.png"]
+[endif]
+[if exp="tf.current_bgm_vol != 0"]
+ 	[image name="button_bgm" layer=28 left=585 top=480 folder="image" storage="button_bgm_bg.png"]
+[endif]
+[eval exp="tf.config='vol'"]
+@jump storage="title_config.ks" target="*kansuuji_show"
+*bgm_end
+
+*se_config
+[button fix="true" storage="title_config.ks" target="*vol_se_up" graphic=config/button_up.png width=25 height=20 x=750 y=480]
+[button fix="true" storage="title_config.ks" target="*vol_se_down" graphic=config/button_down.png width=25 height=20 x=750 y=600]
+[iscript]
+$('.button_se').remove();
+[endscript]
+[if exp="tf.current_se_vol == 0"]
+ 	[image name="button_se" layer=28 left=715 top=480 folder="image" storage="button_se_off.png"]
+[endif]
+[if exp="tf.current_se_vol != 0"]
+ 	[image name="button_se" layer=28 left=715 top=480 folder="image" storage="button_se_bg.png"]
+[endif]
+[eval exp="tf.config='se'"]
+@jump storage="title_config.ks" target="*kansuuji_show"
+*se_end
+
 ;"？"…helpボタンを設置し、Ｑ＆Ａコーナー表示機能やセーブデータ一括消去機能を追加することにしました
 [locate x=870 y=540]
 [button name="list" graphic="button_help.png" target="*help" time=0 height=30 width=30]
 ;-----設定タグここまで-----
-
 ;◆全イベント達成時飾り
 [if exp="sf.badge_comp == 1"]
-	@layopt layer=28 visible = true
-	[freeimage layer = 28]
 	[image name="complete" layer=28 folder="image" storage="complete.png" left=0 top=0] 
 [endif]
 ;↓おまけ上のnext_pageアニメアイコン。githubでは結び文、正式版では鶴。
 [if exp="tf.omake_mark == 1"]
 	[image name="omake_mark" layer=28 storage="../../tyrano/images/kag/nextpage.gif" left=46 top=320] 
 [endif]
-
 ;タイトル各種ボタン表示
 [eval exp="tf.title_y_plus = 30"]
 [locate x=460 y=50 + tf.title_y_plus]
@@ -295,11 +248,13 @@ TG.stat.play_se = true;
 
 [locate x=0 y=540]
 [button name="test_mode" graphic="toumei.gif" target="*test"  time=0 width=100 height=100]
-
 *complete_contents
 ;隠し解除
 ;[一斉表示]
 [iscript]
 $('.loding_pic1').remove();
 [endscript]
+
+*title_end
+[clearstack]
 [s]
