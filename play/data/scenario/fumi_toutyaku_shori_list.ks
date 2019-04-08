@@ -221,6 +221,142 @@ f.fumi_toutyaku_kuroda[13]=1;
 [endscript]
 @jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
 
+*fumi_toutyaku_kuroda_18
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「詩について」　黒田 将貴";
+f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「詩について」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("fumi_kuroda.ks");
+f.fumi_list_all_target.push("*kuroda_fumi18");
+f.fumi_list_all_location_taishou.push(0);
+f.fumi_list_all_location_fumi.push(17);
+f.fumi_list_kuroda_location_fumi.push(17);
+f.fumi_list_kuroda_title.push(f.fumi_kuroda_title_new);
+f.fumi_list_kuroda_target.push("*kuroda_fumi18");
+f.kuroda_fumi_henjimachi=f.kuroda_fumi_henjimachi+1;
+f.fumi_toutyaku_kuroda[18]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
+
+*fumi_toutyaku_kuroda_19
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「一日のはじまり」　黒田 将貴";
+f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「一日のはじまり」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("fumi_kuroda.ks");
+f.fumi_list_all_target.push("*kuroda_fumi19");
+f.fumi_list_all_location_taishou.push(0);
+f.fumi_list_all_location_fumi.push(18);
+f.fumi_list_kuroda_location_fumi.push(18);
+f.fumi_list_kuroda_title.push(f.fumi_kuroda_title_new);
+f.fumi_list_kuroda_target.push("*kuroda_fumi19");
+f.kuroda_fumi_henjimachi=f.kuroda_fumi_henjimachi+1;
+f.fumi_toutyaku_kuroda[19]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
+
+*fumi_toutyaku_kuroda_20
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「猫について」　黒田 将貴";
+f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「猫について」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("fumi_kuroda.ks");
+f.fumi_list_all_target.push("*kuroda_fumi20");
+f.fumi_list_all_location_taishou.push(0);
+f.fumi_list_all_location_fumi.push(19);
+f.fumi_list_kuroda_location_fumi.push(19);
+f.fumi_list_kuroda_title.push(f.fumi_kuroda_title_new);
+f.fumi_list_kuroda_target.push("*kuroda_fumi20");
+f.kuroda_fumi_henjimachi=f.kuroda_fumi_henjimachi+1;
+f.fumi_toutyaku_kuroda[20]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
+
+*fumi_toutyaku_kuroda_21
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「緑の石」　黒田 将貴";
+f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「緑の石」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("fumi_kuroda.ks");
+f.fumi_list_all_target.push("*kuroda_fumi21");
+f.fumi_list_all_location_taishou.push(0);
+f.fumi_list_all_location_fumi.push(20);
+f.fumi_list_kuroda_location_fumi.push(20);
+f.fumi_list_kuroda_title.push(f.fumi_kuroda_title_new);
+f.fumi_list_kuroda_target.push("*kuroda_fumi21");
+f.kuroda_fumi_henjimachi=f.kuroda_fumi_henjimachi+1;
+f.fumi_toutyaku_kuroda[21]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
+
+*fumi_toutyaku_kuroda_22
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「蓮花の音」　黒田 将貴";
+f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「蓮花の音」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("fumi_kuroda.ks");
+f.fumi_list_all_target.push("*kuroda_fumi22");
+f.fumi_list_all_location_taishou.push(0);
+f.fumi_list_all_location_fumi.push(21);
+f.fumi_list_kuroda_location_fumi.push(21);
+f.fumi_list_kuroda_title.push(f.fumi_kuroda_title_new);
+f.fumi_list_kuroda_target.push("*kuroda_fumi22");
+f.kuroda_fumi_henjimachi=f.kuroda_fumi_henjimachi+1;
+f.fumi_toutyaku_kuroda[22]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
+
+*fumi_toutyaku_kuroda_23
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「針穴写真機」　黒田 将貴";
+f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「針穴写真機」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("fumi_kuroda.ks");
+f.fumi_list_all_target.push("*kuroda_fumi23");
+f.fumi_list_all_location_taishou.push(0);
+f.fumi_list_all_location_fumi.push(22);
+f.fumi_list_kuroda_location_fumi.push(22);
+f.fumi_list_kuroda_title.push(f.fumi_kuroda_title_new);
+f.fumi_list_kuroda_target.push("*kuroda_fumi23");
+f.kuroda_fumi_henjimachi=f.kuroda_fumi_henjimachi+1;
+f.fumi_toutyaku_kuroda[23]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
+
+*fumi_toutyaku_kuroda_24
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「万葉の昔から」　黒田 将貴";
+f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「万葉の昔から」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("fumi_kuroda.ks");
+f.fumi_list_all_target.push("*kuroda_fumi24");
+f.fumi_list_all_location_taishou.push(0);
+f.fumi_list_all_location_fumi.push(23);
+f.fumi_list_kuroda_location_fumi.push(23);
+f.fumi_list_kuroda_title.push(f.fumi_kuroda_title_new);
+f.fumi_list_kuroda_target.push("*kuroda_fumi24");
+f.kuroda_fumi_henjimachi=f.kuroda_fumi_henjimachi+1;
+f.fumi_toutyaku_kuroda[24]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
+
+*fumi_toutyaku_kuroda_25
+[iscript]	
+f.fumi_all_title_new=f.okeiko_month_kansuuji+"「瀬戸内の香り」　黒田 将貴";
+f.fumi_kuroda_title_new=f.okeiko_month_kansuuji+"「瀬戸内の香り」";
+f.fumi_list_all_title.push(f.fumi_all_title_new);
+f.fumi_list_all_storage.push("fumi_kuroda.ks");
+f.fumi_list_all_target.push("*kuroda_fumi25");
+f.fumi_list_all_location_taishou.push(0);
+f.fumi_list_all_location_fumi.push(24);
+f.fumi_list_kuroda_location_fumi.push(24);
+f.fumi_list_kuroda_title.push(f.fumi_kuroda_title_new);
+f.fumi_list_kuroda_target.push("*kuroda_fumi25");
+f.kuroda_fumi_henjimachi=f.kuroda_fumi_henjimachi+1;
+f.fumi_toutyaku_kuroda[25]=1;
+[endscript]
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
+
 ;=============================================
 ;◆◆財前手紙到着◆◆
 ;=============================================

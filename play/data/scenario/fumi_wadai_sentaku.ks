@@ -2,15 +2,37 @@
 ;手紙の話題選択
 ;=============================================
 *wadai_sentaku
-;f.wadai_list_hairetsu=[emb exp="f.wadai_list_hairetsu[0][0]"]
+;f.wadai_list_hairetsu=[emb exp="f.wadai_list_hairetsu[0][0]"][p]
 [一斉表示準備]
 [if exp="f.wadai_viewing_target == null"]
 	[eval exp="f.wadai_viewing_target = '*fumi_wadai_page1'"]
+[endif]
+
+[if exp="f.wadai_list_hairetsu === 'undefined'"]
+　;手紙の話題リスト（初期話題）を読込んで配列f.wadai_list_hairetsu[i][j]に格納。
+　;[i]部分が話題の種類
+　;[j]部分が話題の属性(好感度増減値)を示す(0=話題の種類名、1=黒田、2=財前、3=華織、4=葛城宮 晴仁、5=藤枝　肇、6=好適距離a最初からok,b好感度20以上でok、c好感度50以上でok、7、8=その話題が苦手なキャラ、9、10=その話題を好むキャラ)
+　[iscript]
+　$.get("./data/scenario/fumi_wadai.csv", function(data){
+　//読み込まれたファイル
+
+	f.wadai_list_moto = data;
+	f.wadai_list_shurui = [];
+	f.wadai_list_shurui = data.split("\n");
+	//ラベルの位置までジャンプ
+	TG.kag.stat.is_stop = false;
+	TG.kag.ftag.startTag("jump",{target:"*complete_load_wadai_list_shurui"}); 
+　});
+　[endscript]
+　[s]
+*complete_load_wadai_list_shurui
+
 [endif]
 ;f.wadai_viewing_target=[emb exp ="f.wadai_viewing_target"][r]
 [jump target=&f.wadai_viewing_target]
 
 *fumi_wadai_page1
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
@@ -82,6 +104,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [s]
 
 *fumi_wadai_page2
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
@@ -159,6 +182,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [s]
 
 *fumi_wadai_page3
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
@@ -235,6 +259,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [s]
 
 *fumi_wadai_page4
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
@@ -311,6 +336,7 @@ f.wadai_page_hyouji = f.wadai_now_page + " ／ " + f.wadai_max_page + " 頁";
 [s]
 
 *fumi_wadai_page5
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 

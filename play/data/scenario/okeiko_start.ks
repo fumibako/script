@@ -17,6 +17,7 @@
 
 [call target=*start storage="01_sijyou_hensuu.ks"]
 [call target=*start storage="hensuu.ks"]
+[eval exp="f.kuroda_fumi_toutyakumachi_aburidasi = -1"]
 ;背景チラ見え防止
 ;[bg wait=true storage="../fgimage/bg/toumei.gif" time=0]
 

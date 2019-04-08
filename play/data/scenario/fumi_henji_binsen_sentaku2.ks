@@ -5,6 +5,7 @@
 [jump target=&f.binsen_viewing_target]
 
 *fumi_binsen_page1
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
@@ -84,6 +85,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [s]
 [s]
 *fumi_binsen_page2
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
@@ -166,6 +168,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [s]
 
 *fumi_binsen_page3
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
@@ -245,6 +248,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [s]
 
 *fumi_binsen_page4
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 
@@ -323,6 +327,7 @@ f.binsen_page_hyouji = f.binsen_now_page + " ／ " + f.binsen_max_page + " 頁";
 [s]
 
 *fumi_binsen_page5
+[clearfix]
 [cm]
 @layopt layer=29 visible = true
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=480] 

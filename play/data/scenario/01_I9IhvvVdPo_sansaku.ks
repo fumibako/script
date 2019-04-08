@@ -376,7 +376,7 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『観劇の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('観劇の話題',0,-1,0,-2,1,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('観劇の話題',1,-1,0,-2,1,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 @jump storage="01_I9IhvvVdPo_test.ks"
@@ -462,7 +462,7 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『読書の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('読書の話題',0,0,0,1,2,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('読書の話題',2,0,0,1,2,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 @jump storage="01_I9IhvvVdPo_test.ks"
@@ -553,7 +553,7 @@ $('.junbi_girl').remove();
 [layopt layer=29 visible=true]
 ;【話題入手】
 [話題入手 wadai_txt="『写真の話題』を手に入れました"]
-[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('写真の話題',0,1,0,1,2,'a','','','','')"]
+[eval exp="f.wadai_list_hairetsu[f.wadai_hairetsu_number].push('写真の話題',2,1,0,1,2,'a','','','','')"]
 [イベントシーン終了]
 [イベントシーン終了２]
 ;↑イベント終了後にテストメニューに飛んでしまう件、写真の話題で経験した旨を思い出しました。sansaku.ksのファイル分割で安定化対応しました。仮に入れていた処理については不要になった＆テストしづらいため消去します。◆jsYiJcqRkk

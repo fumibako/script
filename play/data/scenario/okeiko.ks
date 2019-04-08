@@ -174,6 +174,30 @@ f.kuroda_fumi_toutyakumachi_kazoku = f.kuroda_fumi_toutyakumachi_kazoku - 1;
 if (f.kuroda_fumi_toutyakumachi_yuujin > 0){
 f.kuroda_fumi_toutyakumachi_yuujin = f.kuroda_fumi_toutyakumachi_yuujin - 1;
 }
+if (f.kuroda_fumi_toutyakumachi_neko > 0){
+f.kuroda_fumi_toutyakumachi_neko = f.kuroda_fumi_toutyakumachi_neko - 1;
+}
+if (f.kuroda_fumi_toutyakumachi_midori > 0){
+f.kuroda_fumi_toutyakumachi_midori = f.kuroda_fumi_toutyakumachi_midori - 1;
+}
+if (f.kuroda_fumi_toutyakumachi_photo > 0){
+f.kuroda_fumi_toutyakumachi_photo = f.kuroda_fumi_toutyakumachi_photo - 1;
+}
+if (f.kuroda_fumi_toutyakumachi_hajimari > 0){
+f.kuroda_fumi_toutyakumachi_hajimari = f.kuroda_fumi_toutyakumachi_hajimari - 1;
+}
+if (f.kuroda_fumi_toutyakumachi_music > 0){
+f.kuroda_fumi_toutyakumachi_music = f.kuroda_fumi_toutyakumachi_music - 1;
+}
+if (f.kuroda_fumi_toutyakumachi_henka > 0){
+f.kuroda_fumi_toutyakumachi_henka = f.kuroda_fumi_toutyakumachi_henka - 1;
+}
+if (f.kuroda_fumi_toutyakumachi_dokusho > 0){
+f.kuroda_fumi_toutyakumachi_dokusho = f.kuroda_fumi_toutyakumachi_dokusho - 1;
+}
+if (f.kuroda_fumi_toutyakumachi_aburidasi > 0){
+f.kuroda_fumi_toutyakumachi_aburidasi = f.kuroda_fumi_toutyakumachi_aburidasi - 1;
+}
 
 //◆四条宛 話題の手紙届くまでカウント減算処理
 if (f.sijyou_fumi_toutyakumachi_shumi > 0){

@@ -64,6 +64,130 @@ if (f.fumi_atesaki == 'kuroda'){
 			f.kuroda_fumi_toutyakumachi_satuki=0;//季節ものの話題なので翌週届く
 			f.fumi_wadai_toutyakumachi = 0;
 	}
+//◆手紙追加分◆
+if(f.wadai_list_hairetsu[f.wadai_number][0] == '読書の話題' && f.kuroda_fumi_toutyakumachi_dokusho < 0){ //「読書の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_dokusho=f.kuroda_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi;
+	}
+	if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_dokusho=f.kuroda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 1;
+	}
+	if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+		f.kuroda_fumi_toutyakumachi_dokusho=f.kuroda_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 2;
+	}
+}
+
+if(f.wadai_list_hairetsu[f.wadai_number][0] == '猫の話題' && f.kuroda_fumi_toutyakumachi_neko < 0){ //「猫の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_neko=f.kuroda_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi;
+	}
+	if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_neko=f.kuroda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 1;
+	}
+	if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+		f.kuroda_fumi_toutyakumachi_neko=f.kuroda_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 2;
+	}
+}
+
+if(f.wadai_list_hairetsu[f.wadai_number][0] == '緑の石の話題' && f.kuroda_fumi_toutyakumachi_midori < 0){ //「緑の石の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_midori=f.kuroda_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi;
+	}
+	if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_midori=f.kuroda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 1;
+	}
+	if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+		f.kuroda_fumi_toutyakumachi_midori=f.kuroda_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 2;
+	}
+}
+
+if(f.wadai_list_hairetsu[f.wadai_number][0] == '写真の話題' && f.kuroda_fumi_toutyakumachi_photo < 0){ //「写真の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_photo=f.kuroda_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi;
+	}
+	if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_photo=f.kuroda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 1;
+	}
+	if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+		f.kuroda_fumi_toutyakumachi_photo=f.kuroda_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 2;
+	}
+}
+
+if((f.wadai_list_hairetsu[f.wadai_number][0] == '一日のはじまりの話題') && (f.kuroda_fumi_toutyakumachi_hajimari < 0)){ //「一日のはじまりの話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+
+	if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_hajimari=f.kuroda_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi;
+	}
+	if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_hajimari=f.kuroda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 1;
+	}
+	if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+		f.kuroda_fumi_toutyakumachi_hajimari=f.kuroda_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 2;
+	}
+}
+
+
+if(f.wadai_list_hairetsu[f.wadai_number][0] == 'お気に入りの曲の話題' && f.kuroda_fumi_toutyakumachi_music < 0){ //「お気に入りの曲の話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_music=f.kuroda_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi;
+	}
+	if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_music=f.kuroda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 1;
+	}
+	if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+		f.kuroda_fumi_toutyakumachi_music=f.kuroda_fumi_toutyakumachi - 2;
+		f.para_kuroda_koukando = f.para_kuroda_koukando + 1; //苦手(-1)だった話題でも大丈夫に(+1)
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 2;
+	}
+}
+
+
+if(f.wadai_list_hairetsu[f.wadai_number][0] == '変化と永遠についての話題' && f.kuroda_fumi_toutyakumachi_henka < 0){ //「変化と永遠についての話題」を選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_henka=f.kuroda_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi;
+	}
+	if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_henka=f.kuroda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 1;
+	}
+	if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+		f.kuroda_fumi_toutyakumachi_henka=f.kuroda_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 2;
+	}
+}
+
+if((f.binsen_list_hairetsu[f.binsen_number][0] == 'あぶりだし' && typeof f.kuroda_fumi_toutyakumachi_aburidasi === "undefined")||(f.binsen_list_hairetsu[f.binsen_number][0] == 'あぶりだし' && f.kuroda_fumi_toutyakumachi_aburidasi < 0)){ //「あぶりだし」の便せんを選択した場合、好感度に応じてその話題の返事待ちカウント(週数)スタート
+	if(f.para_kuroda_koukando < parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_aburidasi=f.kuroda_fumi_toutyakumachi;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi;
+	}
+	if(f.para_kuroda_koukando >= parseInt(sf.kuroda['koukando_a'])){
+		f.kuroda_fumi_toutyakumachi_aburidasi=f.kuroda_fumi_toutyakumachi - 1;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 1;
+	}
+	if(f.para_kuroda_koukando > parseInt(sf.kuroda['koukando_b'])){
+		f.kuroda_fumi_toutyakumachi_aburidasi=f.kuroda_fumi_toutyakumachi - 2;
+		f.fumi_wadai_toutyakumachi = f.kuroda_fumi_toutyakumachi - 2;
+	}
+}
 }
 [endscript]
 @jump storage="fumi_wadai_owari.ks"

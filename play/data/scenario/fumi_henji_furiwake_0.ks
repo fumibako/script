@@ -96,3 +96,63 @@
 [call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
 @jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
 [s]
+
+*fumi_henji_0_16
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=16;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_17
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=17;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_18
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=18;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_19
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=19;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_20
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=20;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_21
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=21;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_22
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=22;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_23
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=23;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_24
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=24;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]
+
+*fumi_henji_0_25
+[eval exp="f.fumi_atesaki='kuroda'; f.fumi_hairetsu1=0; f.fumi_hairetsu2=25;"]
+[call storage="fumi_henji_hyouji.ks" target=*fumi_write_hyouji]
+@jump storage="fumi_henji_binsen_sentaku1.ks" target=*binsen_sentaku
+[s]

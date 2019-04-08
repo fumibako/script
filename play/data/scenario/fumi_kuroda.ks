@@ -372,24 +372,399 @@
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
 
+;◆詩について◆
 *kuroda_fumi18
 [手紙黒田]
+*kuroda_fumi18_1
 [名字] [名前]様[r]
 [r]
+[sp]お手紙をありがとうございます。[r]
+素敵な詩集に出会われたのですね。[r]
 [r]
-[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
+[sp]詩は私も好きで、研究の合間に詩を読むこともあります。[r]
+[r]
+[sp]詩のなかでは、漢詩を眺めることが多いです。[r]
+短い言葉のなかに、世界の広がりや時の流れを感じられる[r]
+ような詩に出会うと、つい色々なことを思い浮かべます。
+[glink target=*kuroda_fumi18_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+
+*kuroda_fumi18_2
+[sp]牀前看月光　　（[ruby text="ショウ"]牀[ruby text="ゼン"]前月光ヲ看ル）[r]
+[sp]疑是地上霜　　（疑ウラクハ[ruby text="コ"]是レ地上ノ霜カト）[r]
+[sp]挙頭望山月　　（[ruby text="コウベ"]頭ヲ挙ゲテ山月ヲ望ミ）[r]
+[sp]低頭思故郷　　（[ruby text="コウベ"]頭ヲ[ruby text="タ"]低レテ故郷ヲ思フ）[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　『[ruby text="セイ"]静[ruby text="ヤ"]夜[ruby text="シ"]思』　[ruby text="リ"]李[ruby text="ハク"]白[r]
+[r]
+[sp]この詩など、なんと静かで美しく、広がりのある世界だろう……[r]
+と、情景を思い浮かべてしばし時を忘れます。[r]
+[r]
+[sp][名前]さんは、どんな詩がお好きでしょうか。[r]
+教えていただけると嬉しいです。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[glink target=*kuroda_fumi18_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi18_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi18_close
+[cm]
+[clearfix]
+﻿@clearstack
+[if exp="tf.test_kuroda == true"]
+	[freeimage layer = 29]
+	@jump storage=01_jsYiJcqRkk_test.ks
+[endif]
 [eval exp="f.midoku_list_hairetsu[0][17] = 0"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 
 
+;◆一日のはじまりについて◆
 *kuroda_fumi19
+[手紙黒田]
+*kuroda_fumi19_1
+[名字] [名前]様[r]
+[r]
+[sp]おはようございます。[r]
+一日のはじまりに良いことがあると…たしかに、その日一日[r]
+気分が良いですね！[r]
+[r]
+[sp]私は毎朝、まだ暗いうちに起きて、庭の植物や生き物たちの[r]
+世話をしてから、縁側でお茶をいただきます。[r]
+[r]
+[sp]庭を眺めつついただくお茶は、味わい深くて[r]
+よい心地です。
+[glink target=*kuroda_fumi19_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi19_2
+[r]
+[r]
+[sp]お茶と共に、毎朝、植物や生き物たちから元気をもらっている[r]
+とも言えるかもしれません。[r]
+[r]
+[sp]これからも、彼らに感謝をしつつ、朝を過ごしたいと思います。[r]
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[glink target=*kuroda_fumi19_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi19_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi19_close
+[cm]
+[clearfix]
+﻿@clearstack
+[if exp="tf.test_kuroda == true"]
+	[freeimage layer = 29]
+	@jump storage=01_jsYiJcqRkk_test.ks
+[endif]
+[eval exp="f.midoku_list_hairetsu[0][18] = 0"]
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[return] 
+
+;◆猫について◆
+*kuroda_fumi20
 [手紙黒田]
 [名字] [名前]様[r]
 [r]
+[sp]お手紙をありがとうございます。[r]
+お茶屋のタマちゃんですね。　存じております。[r]
+私は猫も好きでして、お茶屋近くに行くと[r]
+つい、タマちゃんの姿を探してしまいます。[r]
+[r]
+[sp]お茶屋の縁側で、[ruby text="ひ"]日[ruby text="なた"]向ぼっこをしながら[r]
+[ruby text="ひざ"]膝の上で丸くなったタマちゃんを[ruby text="な"]撫でていると[r]
+時の経つのを忘れます。[r]
+;猫については散策7月以降。7～12月は距離のある言い回し、1月以降は距離近めに。
+[if exp="f.okeiko_month <= 3"]
+[sp]いつか[名前]さんと、お茶屋にご一緒できると嬉しいです。[r]
+[endif]
+[if exp="f.okeiko_month >= 7"]
+[sp][名前]さんもタマちゃんに会われたとお聞きして、嬉しくなりました。[r]
+[endif]
+
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴[p]
-[eval exp="f.midoku_list_hairetsu[0][18] = 0"]
+[if exp="tf.test_kuroda == true"]
+	[freeimage layer = 29]
+	@jump storage=01_jsYiJcqRkk_test.ks
+[endif]
+[eval exp="f.midoku_list_hairetsu[0][19] = 0"]
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[return] 
+
+;◆緑の石について◆
+*kuroda_fumi21
+[手紙黒田]
+*kuroda_fumi21_1
+[名字] [名前]様[r]
+[r]
+[sp]美しい石をありがとうございます。[r]
+[r]
+[sp]顕微鏡でのぞいてみたところ、透明感のある緑色のなかに[r]
+キラキラとした白い結晶がいくつも見えます。[r]
+この特徴は、[ruby text="ひ"]翡[ruby text="すい"]翠に近いかもしれません。[r]
+[r]
+[sp][ruby text="ひ"]翡[ruby text="すい"]翠が採れる海岸とは、夢があって素敵ですね。
+[glink target=*kuroda_fumi21_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi21_2
+[sp]調査で行く山でも、美しい石を見つけることがあります。[r]
+岩がキラキラと光っているな、と近づくと[r]
+透明な水晶柱が重なって輝いていたりして[r]
+とても美しい眺めです。[r]
+[r]
+[sp]その土地の宝物かもしれないと思うと、採るのもはばかられるので、[r]
+眺めるだけにしています。[r]
+[r]
+[sp]低くて登りやすい山で見つけたら、[名前]さんにもお教えします。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[glink target=*kuroda_fumi21_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi21_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi21_close
+[cm]
+[clearfix]
+﻿@clearstack
+
+[if exp="tf.test_kuroda == true"]
+	[freeimage layer = 29]
+	@jump storage=01_jsYiJcqRkk_test.ks
+[endif]
+[eval exp="f.midoku_list_hairetsu[0][20] = 0"]
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[return] 
+
+;◆お気に入りの曲について◆：蓮花の音
+*kuroda_fumi22
+[手紙黒田]
+*kuroda_fumi22_1
+[名字] [名前]様[r]
+[r]
+[sp]お手紙をありがとうございます。[r]
+[r]
+[sp]音楽というと、子どもの頃を思い出します。[r]
+父がお能を好んでいたので、家の者は皆、色々と[r]
+たしなんでおりました。[r]
+[r]
+[sp]私も習ってみましたが、お[ruby text="うた"]謡いやお[ruby text="し"]仕[ruby text="まい"]舞は、緊張しがちな[r]
+私には散々でした。声や動きが、かたくなってしまうのです。[r]
+笛も音がサッパリ出ずで、唯一、人並近くできたのは[r]
+[sp]　　　[ruby text="こ"]小[ruby text="つづみ"]鼓でした。
+[glink target=*kuroda_fumi22_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi22_2
+[sp]先生が打つと、奥行きのある美しい音が鳴るのです。[r]
+子どものころの私は、まるで[ruby text="はす"]蓮の花が開くかのような音だ[r]
+と思いました。[r]
+お気に入りの音、というと今もその音を思い出します。[r]
+[r]
+[sp]その後本当の[ruby text="はす"]蓮の花の音を聴いてみよう、と思って[r]
+庭の蓮池で一晩中張り込んだことがあります。[r]
+蓮の花は一番外側の花びらから順に、ゆっくりゆっくりと[r]
+静かに開いて、音はしませんでした。
+[glink target=*kuroda_fumi22_3 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[glink target=*kuroda_fumi22_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi22_3
+[sp]我が家の蓮の品種が音のしないものなのか、世の中全ての蓮[r]
+が静かなのかはまだわかりませんが……[r]
+いつか解明される時が、来るかもしれません。[r]
+[r]
+[sp]そういう研究も、興味深いと思います。[r]
+;大賀博士と牧野博士の蓮開花音検証は昭和10年のこと
+[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[glink target=*kuroda_fumi22_2 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi22_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi22_close
+[cm]
+[clearfix]
+﻿@clearstack
+[if exp="tf.test_kuroda == true"]
+	[freeimage layer = 29]
+	@jump storage=01_jsYiJcqRkk_test.ks
+[endif]
+[eval exp="f.midoku_list_hairetsu[0][21] = 0"]
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[return] 
+
+;◆写真について◆
+*kuroda_fumi23
+[手紙黒田]
+*kuroda_fumi23_1
+[名字] [名前]様[r]
+[r]
+[sp]近ごろは写真が流行っていますね。[r]
+針穴写真機というカメラを作ってみて、色々と写すのが[r]
+学生仲間で流行ったことがありまして、私もいくつか作りました。[r]
+[sp]作るのは簡単なのですが、撮る方は数分から二十分ほどかかります。[r]
+その間、じっとしていないとぼやけて写ります。[r]
+[r]
+[sp]田中を写してみたら、目元と口元がぼやけてしまいました。[r]
+;写真は二月の散策以降なので、主人公と田中は既知
+黙っているように言ったのですが、周りの学生がカメラの後ろから[r]
+可笑しなことをするものだから、じっとするのに[r]
+ずいぶん苦労をしていました。
+[glink target=*kuroda_fumi23_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi23_2
+[sp]研究棟にも暗室があって、私も時々写真を[ruby text="げん"]現[ruby text="ぞう"]像します。[r]
+[r]
+[sp]現像液に[ruby text="いん"]印[ruby text="が"]画[ruby text="し"]紙を浸した時の、じわりと画が浮かび上がる様子を[r]
+初めて見た時は感動しました。[r]
+[r]
+いつか[名前]さんにも、お見せしたいです。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[glink target=*kuroda_fumi23_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi23_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi23_close
+[cm]
+[clearfix]
+﻿@clearstack
+[if exp="tf.test_kuroda == true"]
+	[freeimage layer = 29]
+	@jump storage=01_jsYiJcqRkk_test.ks
+[endif]
+[eval exp="f.midoku_list_hairetsu[0][22] = 0"]
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[return] 
+
+;◆変化と永遠について◆
+*kuroda_fumi24
+[手紙黒田]
+*kuroda_fumi24_1
+[名字] [名前]様[r]
+[r]
+[sp]お手紙をありがとうございます。[r]
+お店が入れ替わったりと、町の様子も変わっていますね。[r]
+[r]
+[sp]伐採で山の地肌があらわれた「[ruby text="はげ"]禿[ruby text="やま"]山」と呼ばれる山が[r]
+増えています。[r]
+山の樹々は町の発展に役立っていますが、樹を植えて豊かな緑を[r]
+;明治～大正期は都会の発展のために樹々の伐採が進み、禿山が多かったそうです。◆jsYiJcqRkk注
+戻そう、という動きもあります。[r]
+[r]
+[sp]植物と人との関わりは時代と共に移り変わっていますが、[r]
+自然を愛でる人々のこころは、万葉の昔から[r]
+続いているとも感じます。
+[glink target=*kuroda_fumi24_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi24_2
+山吹の　咲きたる野辺の　つほすみれ　この春の雨に　盛りなりけり[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　『[ruby text="まん"]万[ruby text="よう"]葉[ruby text="しゅう"]集』　巻八　[ruby text="たか"]高[ruby text="だの"]田[ruby text="おお"]女[ruby text="きみ"]王[r]
+[r]
+[sp]千年以上も昔に詠まれた歌ですが、山吹とすみれが咲く[r]
+野辺が今にも目に浮かぶようです。[r]
+[r]
+[sp]この歌のような景色が、歩いて行けるところにあります。[r]
+色々と落ち着いたら、一緒に参りましょう！[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[glink target=*kuroda_fumi24_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi24_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi24_close
+[cm]
+[clearfix]
+﻿@clearstack
+[if exp="tf.test_kuroda == true"]
+	[freeimage layer = 29]
+	@jump storage=01_jsYiJcqRkk_test.ks
+[endif]
+[eval exp="f.midoku_list_hairetsu[0][23] = 0"]
+[freeimage layer = 29]
+@jump storage=&f.viewing_storage target=&f.viewing_target
+[return] 
+
+;◆あぶりだし◆
+*kuroda_fumi25
+[手紙黒田]
+[if exp="f.midoku_list_hairetsu[0][24] == 0"]
+	@jump target=*kuroda_fumi25_1
+[endif]
+[p]
+;メッセージ枠表示
+[image name="txt_window" layer=29 x=0 y=391 storage='message_bg/frame_red.png']
+;メッセージレイヤを会話窓用に設定変更
+[position left=240 width=700 height=170 top=415 page=fore margint="50"]
+[wait time=10]
+;メッセージレイヤを表示
+@layopt layer=message0 page=fore visible = true
+[current layer="message0"]
+紙面が真っ白だ。[r]
+ほんのりと[ruby text="かん"]柑[ruby text="きつ"]橘の爽やかな香りが紙から漂ってくる。[p]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
+
+「これは……もしかして」[p]
+（植物好きの黒田様に、以前お送りしたあの手紙……。[r]
+[sp]一見、何も書いていないかのようだけれど）[p]
+「磯野、火鉢を用意してちょうだい」[p]
+[whosay name=""]
+[ruby text="かな"]鉄[ruby text="ぼん"]盆に手紙を乗せて、火鉢であぶってみると[r]
+爽やかな香りは、焼き菓子のような香ばしさに変化した。[p]
+紙面に茶色く文字が浮かび上がる……。[p]
+[cm]
+[iscript]
+$('.txt_window').remove();
+[endscript]
+
+[手紙黒田]
+*kuroda_fumi25_1
+[font color="darkgoldenrod"]
+[名字] [名前]様[r]
+[r]
+[sp]面白いお手紙を、ありがとうございます！[r]
+あぶりだした時に、果物の焼けるような香ばしさも楽しみました。[r]
+[r]
+[sp]この間、調査で瀬戸内へ行った際に[ruby text="れ"]檸[ruby text="もん"]檬をいただいたのです。[r]
+その[ruby text="れ"]檸[ruby text="もん"]檬汁を筆につけて、書いてみました。[r]
+香りはいかがですか？
+[resetfont]
+[glink target=*kuroda_fumi25_2 text="→" size=10 x=770 y=360 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[s]
+*kuroda_fumi25_2
+[font color="darkgoldenrod"]
+[sp][ruby text="れ"]檸[ruby text="もん"]檬はティーカップを超えるような[r]
+大きすぎるものは、あまり売れないのだそうで[r]
+大きなものや形の面白いものを、いくつか分けてくださいました。[r]
+[r]
+[sp][ruby text="かご"]籠に入れて研究室に置いていますが、[ruby text="れ"]檸[ruby text="もん"]檬[ruby text="すい"]水は[r]
+徹夜のお供に人気です。[r]
+[r]
+[sp][ruby text="れ"]檸[ruby text="もん"]檬が大きいものだから、[ruby text="どんぶり"]丼で[ruby text="れ"]檸[ruby text="もん"]檬[ruby text="すい"]水を作ったりしていますよ。[r]
+黄色い輝きを見ると、元気が湧いてくるように思います。[r]
+[r]
+[sp]　　　　　　　　　　　　　　　　　　　　　　　　　黒田　将貴
+[resetfont]
+[glink target=*kuroda_fumi25_1 text="←" size=10 x=110 y=330 graphic="select_waku_x150.png" width=40 height=15 font_color=black]
+[button fix=true graphic="../fgimage/button/button_close80x80.png" target="*kuroda_fumi25_close" size=5 x=880 y=24 width=50 height=50]
+[s]
+
+*kuroda_fumi25_close
+[cm]
+[clearfix]
+﻿@clearstack
+[if exp="tf.test_kuroda == true"]
+	[freeimage layer = 29]
+	@jump storage=01_jsYiJcqRkk_test.ks
+[endif]
+[eval exp="f.midoku_list_hairetsu[0][24] = 0"]
 [freeimage layer = 29]
 @jump storage=&f.viewing_storage target=&f.viewing_target
 [return] 

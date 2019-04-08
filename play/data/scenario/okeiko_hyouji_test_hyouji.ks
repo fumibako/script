@@ -8,6 +8,11 @@
 [position layer=message1 left=0 width=600 height=140 top=120 page=fore color=white opacity=150]
 @layopt layer=message1 page=fore visible = true
 [font color=glay size=15]
+f.kuroda_fumi_toutyakumachi_dokusho=[emb exp="f.kuroda_fumi_toutyakumachi_dokusho"]
+,f.kuroda_fumi_toutyakumachi_hajimari=[emb exp="f.kuroda_fumi_toutyakumachi_hajimari"][r]
+,f.kuroda_fumi_toutyakumachi_week=[emb exp="f.kuroda_fumi_toutyakumachi_week"]
+,parseInt(sf.kuroda(fumi_hindo_week))=[emb exp="parseInt([sf.kuroda['fumi_hindo_week']])"]
+
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
 [if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
 [resetfont]
@@ -21,7 +26,7 @@
 葛城宮好感度=[emb exp="f.para_katuraginomiya_koukando"],
 [endif]
 
-葛城宮ルート(1○,0×)=[emb exp="f.katuraginomiya_au"],葛城宮のみ文通(1○,0×)=[emb exp="f.katuraginomiya_only"][r]
+;葛城宮ルート(1○,0×)=[emb exp="f.katuraginomiya_au"],葛城宮のみ文通(1○,0×)=[emb exp="f.katuraginomiya_only"][r]
 ;手紙[emb exp="f.katuraginomiya_fumi_start"]EV[emb exp="f.event_katuraginomiya[1]"]・[emb exp="f.event_katuraginomiya[2]"]・[emb exp="f.event_katuraginomiya[3]"]
 
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
@@ -53,9 +58,9 @@
 [font color=0x664f44]
 ;財前ルート(1○,0×)=[emb exp="f.zaizen_au"][r]
 ;イベント(1表示,0非表示)=[emb exp="tf.event_hyouji"]
-f.sijyou_fumi_toutyakumachi_kaidan=[emb exp="f.sijyou_fumi_toutyakumachi_kaidan"]
-f.sijyou_event6=[emb exp="f.sijyou_event6"]
-f.fumi_wadai_toutyakumachi=[emb exp="f.fumi_wadai_toutyakumachi"]
+;f.sijyou_fumi_toutyakumachi_kaidan=[emb exp="f.sijyou_fumi_toutyakumachi_kaidan"]
+;f.sijyou_event6=[emb exp="f.sijyou_event6"]
+f.fumi_wadai_toutyakumachi=[emb exp="f.fumi_wadai_toutyakumachi"],f.fumi_toutyaku_kuroda18=[emb exp="f.fumi_toutyaku_kuroda[18]"]
 ;↓他ルートテスト用に準備中です
 ;攻略対象名テスト用：返信速度設定(0翌週、他設定通り)=[emb exp="tf.test_oaite_name_fumi_hensin_speed"],好感度[emb exp="f.para_oaite_name_koukando"][r]
 

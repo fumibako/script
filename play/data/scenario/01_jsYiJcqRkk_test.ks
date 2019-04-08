@@ -77,19 +77,27 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 @jump target=*cmmn
 
 *page3
-[glink target="test32" text="kuroda_2_2" graphic="select_waku_x500.png" size=20 width="250" x=100 y=100  font_color=black]
-[glink target="test33" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=150  font_color=black]
-[glink target="test34" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=200  font_color=black]
-[glink target="common_9_1" text="common_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=250  font_color=black]
-[glink target="*check_event0" text="クリアリスト"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=300  font_color=black]
-[glink target="*check_event" text="クリアチェック"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=350  font_color=black]
-[glink target="*comp_end" text="バッジコンプ(END)"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=400  font_color=black]
-[glink target="*comp_event" text="バッジコンプ(イベント)"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=450  font_color=black]
-[glink target="*8week_asuka_kidoku" text="葉月（既読）"  graphic="select_waku_x500.png" size=20 width="250" x=100 y=500  font_color=black]
+[glink target="test32" text="kuroda_2_2" graphic="select_waku_x500.png" size=20 width="250" x=10 y=100  font_color=black]
+[glink target="test33" text="kuroda_3_4_normalED"  graphic="select_waku_x500.png" size=20 width="250" x=10 y=150  font_color=black]
+[glink target="test34" text="kuroda_3_4_goodED"  graphic="select_waku_x500.png" size=20 width="250" x=10 y=200  font_color=black]
+[glink target="common_9_1" text="common_9_1"  graphic="select_waku_x500.png" size=20 width="250" x=10 y=250  font_color=black]
+[glink target="*check_event0" text="クリアリスト"  graphic="select_waku_x500.png" size=20 width="250" x=10 y=300  font_color=black]
+[glink target="*check_event" text="クリアチェック"  graphic="select_waku_x500.png" size=20 width="250" x=10 y=350  font_color=black]
+[glink target="*comp_end" text="バッジコンプ(END)"  graphic="select_waku_x500.png" size=20 width="250" x=10 y=400  font_color=black]
+[glink target="*comp_event" text="バッジコンプ(イベント)"  graphic="select_waku_x500.png" size=20 width="250" x=10 y=450  font_color=black]
+[glink target="*8week_asuka_kidoku" text="葉月（既読）"  graphic="select_waku_x500.png" size=20 width="250" x=10 y=500  font_color=black]
 
+[glink target="*kuroda_fumi18" text="黒田手紙：詩について"  graphic="select_waku_x500.png" size=18 width="250" x=350 y=100  font_color=black]
+[glink target="*kuroda_fumi19" text="黒田手紙：一日のはじまり"  graphic="select_waku_x500.png" size=18 width="250" x=350 y=150  font_color=black]
+[glink target="*kuroda_fumi20" text="黒田手紙：猫"  graphic="select_waku_x500.png" size=18 width="250" x=350 y=200  font_color=black]
+[glink target="*kuroda_fumi21" text="黒田手紙：緑の石"  graphic="select_waku_x500.png" size=18 width="250" x=350 y=250  font_color=black]
+[glink target="*kuroda_fumi22" text="黒田手紙：お気に入りの曲"  graphic="select_waku_x500.png" size=18 width="250" x=350 y=300  font_color=black]
+[glink target="*kuroda_fumi23" text="黒田手紙：写真"  graphic="select_waku_x500.png" size=18 width="250" x=350 y=350  font_color=black]
+[glink target="*kuroda_fumi24" text="黒田手紙：変化と永遠"  graphic="select_waku_x500.png" size=18 width="250" x=350 y=400  font_color=black]
+[glink target="*kuroda_fumi25" text="黒田手紙：あぶりだし"  graphic="select_waku_x500.png" size=18 width="250" x=350 y=450  font_color=black]
 
-[glink target="*page2" text="page2"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=400  font_color=black]
-[glink target="*page1" text="page1"  graphic="select_waku_x500.png" size=20 width="250" x=450 y=450  font_color=black]
+[glink target="*page2" text="page2"  graphic="select_waku_x500.png" size=20 width="250" x=620 y=400  font_color=black]
+[glink target="*page1" text="page1"  graphic="select_waku_x500.png" size=20 width="250" x=620 y=450  font_color=black]
 
 *cmmn
 [glink target="back_test" text="テストメニューへ戻る" graphic="select_waku_x500.png" size=20 width="250" x=500 y=500  font_color=black]
@@ -371,6 +379,54 @@ f.preload_images_test = ["data/fgimage/girl/S/base.png","data/fgimage/girl/S/bas
 
 [イベントシーン終了]
 @jump target="test"
+[s]
+
+*kuroda_fumi18
+[cm]
+[freeimage layer = 26]
+@jump storage="fumi_kuroda.ks" target="*kuroda_fumi18"
+[s]
+
+*kuroda_fumi19
+[cm]
+[freeimage layer = 26]
+@jump storage="fumi_kuroda.ks" target="*kuroda_fumi19"
+[s]
+
+*kuroda_fumi20
+[cm]
+[freeimage layer = 26]
+@jump storage="fumi_kuroda.ks" target="*kuroda_fumi20"
+[s]
+
+*kuroda_fumi21
+[cm]
+[freeimage layer = 26]
+@jump storage="fumi_kuroda.ks" target="*kuroda_fumi21"
+[s]
+
+*kuroda_fumi22
+[cm]
+[freeimage layer = 26]
+@jump storage="fumi_kuroda.ks" target="*kuroda_fumi22"
+[s]
+
+*kuroda_fumi23
+[cm]
+[freeimage layer = 26]
+@jump storage="fumi_kuroda.ks" target="*kuroda_fumi23"
+[s]
+
+*kuroda_fumi24
+[cm]
+[freeimage layer = 26]
+@jump storage="fumi_kuroda.ks" target="*kuroda_fumi24"
+[s]
+
+*kuroda_fumi25
+[cm]
+[freeimage layer = 26]
+@jump storage="fumi_kuroda.ks" target="*kuroda_fumi25"
 [s]
 
 *test04

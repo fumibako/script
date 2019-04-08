@@ -88,6 +88,7 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_13
 [endif]
+
 ;判定タイミングの少ない手紙については週数判定前に出さないと仕様通りに届かないと気づきましたので移動します◆jsYiJcqRkk
 ;◆7【いよいよですね】9月2週、黒田と会うことが決まった場合かつ好感度が一定以上で届く
 [if exp="(f.okeiko_month == 9 && f.okeiko_week == 2)  && f.para_kuroda_koukando > 40 && f.fumi_toutyaku_kuroda[7] == 0 && f.kuroda_au == 1"]
@@ -106,18 +107,6 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_8
 [endif]
-
-;↓返事到着の可能性があるかどうか(前回の手紙到着からの)週数確認処理
-[if exp="(f.kuroda_fumi_henjimachi <= parseInt([sf.kuroda['fumi_henjimachi_ok_number']]))"]
-	[eval exp="f.kuroda_fumi_toutyakumachi_week=f.kuroda_fumi_toutyakumachi_week+1"]
-[endif]
-[if exp="f.kuroda_fumi_toutyakumachi_week >= parseInt([sf.kuroda['fumi_hindo_week']])"]
-@jump target=*hantei_list_kuroda
-[endif]
-@jump target=*fumi_toutyaku_hantei_kuroda_owari
-
-*hantei_list_kuroda
-;◆◆手紙到着：季節、好感度など条件有り分
 ;話題へのお返事を季節の手紙より優先とします(判定チェック手前に移動)
 ;◆『趣味について』（最初から選べる話題）の手紙を送った場合、好感度に応じた期間後に返事がある
 [if exp="f.kuroda_fumi_toutyakumachi_shumi == 0 && f.fumi_toutyaku_kuroda[9] == 0"]
@@ -146,6 +135,89 @@ f.okeiko_month_kansuuji="三月 ";
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_11
 [endif]
 
+;◆『読書について』（話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_dokusho == 0 && f.fumi_toutyaku_kuroda[18] == 0"]
+	[eval exp="f.test='手紙到着「詩について」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_18
+[endif]
+
+;◆『一日のはじまりについて』（話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_hajimari == 0 && f.fumi_toutyaku_kuroda[19] == 0"]
+	[eval exp="f.test='手紙到着「一日のはじまり」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_19
+[endif]
+
+;◆『猫について』（話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_neko == 0 && f.fumi_toutyaku_kuroda[20] == 0"]
+	[eval exp="f.test='手紙到着「猫について」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_20
+[endif]
+
+;◆『緑の石』（話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_midori == 0 && f.fumi_toutyaku_kuroda[21] == 0"]
+	[eval exp="f.test='手紙到着「緑の石」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_21
+[endif]
+
+;◆『音楽』（話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_music == 0 && f.fumi_toutyaku_kuroda[22] == 0"]
+	[eval exp="f.test='手紙到着「蓮花の音」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_22
+[endif]
+
+;◆『写真』（話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_photo == 0 && f.fumi_toutyaku_kuroda[23] == 0"]
+	[eval exp="f.test='手紙到着「針穴写真機」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_23
+[endif]
+
+;◆『変化と永遠』（話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_henka == 0 && f.fumi_toutyaku_kuroda[24] == 0"]
+	[eval exp="f.test='手紙到着「万葉の昔から」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_24
+[endif]
+
+;◆『あぶりだし』（話題）の手紙を送った場合、好感度に応じた期間後に返事がある
+[if exp="f.kuroda_fumi_toutyakumachi_aburidasi == 0 && f.fumi_toutyaku_kuroda[25] == 0"]
+	[eval exp="f.test='手紙到着「瀬戸内の香り」'"]
+	[eval exp="f.fumi_toutyaku_oaite[0]='黒田様'"]
+	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=0"]
+	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_25
+[endif]
+
+;↓返事到着の可能性があるかどうか(前回の手紙到着からの)週数確認処理
+[if exp="(f.kuroda_fumi_henjimachi <= parseInt([sf.kuroda['fumi_henjimachi_ok_number']]))"]
+	[eval exp="f.kuroda_fumi_toutyakumachi_week=f.kuroda_fumi_toutyakumachi_week+1"]
+[endif]
+[if exp="f.kuroda_fumi_toutyakumachi_week >= parseInt([sf.kuroda['fumi_hindo_week']])"]
+@jump target=*hantei_list_kuroda
+[endif]
+@jump target=*fumi_toutyaku_hantei_kuroda_owari
+
+*hantei_list_kuroda
+;◆◆手紙到着：季節、好感度など条件有り分
 ;◆2【つばめの季節】5月1週～6月4週に好感度が一定以上で届く
 [if exp="(f.okeiko_month == 5 || f.okeiko_month == 6) && f.para_kuroda_koukando > 5 && f.fumi_toutyaku_kuroda[2] == 0"]
 	[eval exp="f.test='手紙到着「つばめの季節」'+f.kuroda_fumi_toutyakumachi_week+parseInt([sf.kuroda['fumi_hindo_week']])"]
@@ -208,6 +280,9 @@ f.okeiko_month_kansuuji="三月 ";
 ;◇◇財前手紙到着判定◇◇
 ;=============================================
 *fumi_toutyaku_hantei_zaizen
+[if exp="f.kuroda_au == 1"]
+	@jump target=*fumi_toutyaku_hantei_kobetu_owari
+[endif]
 [if exp="f.sijyou_au == 1"]
 @jump target=*fumi_toutyaku_hantei_sijyou
 [endif]
@@ -221,19 +296,8 @@ f.okeiko_month_kansuuji="三月 ";
 [if exp="(f.okeiko_month == 11  && f.okeiko_week ==4) || f.okeiko_month == 12 || (f.okeiko_month == 1 && f.okeiko_week != 4)"]
 @jump target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
-
-[if exp="f.zaizen_fumi_henjimachi <= parseInt([sf.zaizen['fumi_henjimachi_ok_number']])"]
-	[eval exp = "f.zaizen_fumi_toutyakumachi_week = f.zaizen_fumi_toutyakumachi_week + 1"]
-[endif]
-[if exp="f.zaizen_fumi_toutyakumachi_week >= parseInt([sf.zaizen['fumi_hindo_week']])"]
-@jump target=*hantei_list_zaizen
-[endif]
-@jump target=*fumi_toutyaku_hantei_zaizen_owari
-
-;手紙到着：条件有り分
-*hantei_list_zaizen
 ;=======================================================================================
-;◆話題のお返事◆
+;◆話題のお返事◆　話題カウント0になったら届くように、手紙の頻度判定前に移動します
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『趣味について』
 [if exp="f.zaizen_fumi_toutyakumachi_shumi == 0 && f.fumi_toutyaku_zaizen[2] == 0"]
@@ -366,6 +430,17 @@ f.okeiko_month_kansuuji="三月 ";
   [call target=*zaizen_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_zaizen_23
 [endif]
+
+[if exp="f.zaizen_fumi_henjimachi <= parseInt([sf.zaizen['fumi_henjimachi_ok_number']])"]
+	[eval exp = "f.zaizen_fumi_toutyakumachi_week = f.zaizen_fumi_toutyakumachi_week + 1"]
+[endif]
+[if exp="f.zaizen_fumi_toutyakumachi_week >= parseInt([sf.zaizen['fumi_hindo_week']])"]
+@jump target=*hantei_list_zaizen
+[endif]
+@jump target=*fumi_toutyaku_hantei_zaizen_owari
+
+;手紙到着：条件有り分
+*hantei_list_zaizen
 ;=======================================================================================
 ;◆季節の便り◆
 ;=======================================================================================
@@ -463,43 +538,8 @@ f.okeiko_month_kansuuji="三月 ";
 @jump target=*hantei_list_katuraginomiya_event
 [endif]
 *katuraginomiya_event_fumi_check_owari
-
-;↓葛城宮との手紙開始していれば判定スタート
-[if exp="f.katuraginomiya_fumi_start == 1 && f.katuraginomiya_fumi_henjimachi <= parseInt([sf.katuraginomiya['fumi_henjimachi_ok_number']])"]
-	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week=f.katuraginomiya_fumi_toutyakumachi_week+1"]
-[endif]
-[if exp="f.katuraginomiya_fumi_toutyakumachi_week >= parseInt([sf.katuraginomiya['fumi_hindo_week']])"]
-@jump target=*hantei_list_katuraginomiya
-[else]
-;手紙到着のタイミイングでなければ判定終わり
-@jump target=*fumi_toutyaku_hantei_katuraginomiya_owari
-[endif]
-
-;手紙到着：条件有り分(返信週数などの影響がある分
-*hantei_list_katuraginomiya_event
 ;=======================================================================================
-;◆イベントに関係して届く手紙◆ イベント中に届くのではないため、こちらに置きます
-;=======================================================================================
-;◆葛城宮ルート時子さんの散策イベントを見ている場合に自動的に2週間後に手紙『 伊能殿について 』
-;=======================================================================================
-[if exp="f.event_machi_katuraginomiya[2] == 1 && f.katuraginomiya_fumi_inou == 1 && f.fumi_toutyaku_katuraginomiya[26] == 0"]
-  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
-   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_26
-[endif]
-;=======================================================================================
-;◆葛城宮ルート10月1週に届く『 従妹宮の件について 』
-;=======================================================================================
-[if exp="f.okeiko_month == 10 && f.okeiko_week == 1 && f.fumi_toutyaku_katuraginomiya[27] == 0"]
-  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
-   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_27
-[endif]
-;イベント関連手紙のチェックが終われば判定続きに戻る
-@jump target=*katuraginomiya_event_fumi_check_owari
-
-;=======================================================================================
-*hantei_list_katuraginomiya
-;=======================================================================================
-;◆話題のお返事◆
+;◆話題のお返事◆仕様通り(話題カウントゼロで)届くように手紙頻度判定前に移動します
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『趣味について』
 [if exp="f.katuraginomiya_fumi_toutyakumachi_shumi == 0 && f.fumi_toutyaku_katuraginomiya[3] == 0"]
@@ -632,6 +672,41 @@ f.okeiko_month_kansuuji="三月 ";
   [call target=*katuraginomiya_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_30
 [endif]
+
+;↓葛城宮との手紙開始していれば判定スタート
+[if exp="f.katuraginomiya_fumi_start == 1 && f.katuraginomiya_fumi_henjimachi <= parseInt([sf.katuraginomiya['fumi_henjimachi_ok_number']])"]
+	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week=f.katuraginomiya_fumi_toutyakumachi_week+1"]
+[endif]
+[if exp="f.katuraginomiya_fumi_toutyakumachi_week >= parseInt([sf.katuraginomiya['fumi_hindo_week']])"]
+@jump target=*hantei_list_katuraginomiya
+[else]
+;手紙到着のタイミイングでなければ判定終わり
+@jump target=*fumi_toutyaku_hantei_katuraginomiya_owari
+[endif]
+
+;手紙到着：条件有り分(返信週数などの影響がある分
+*hantei_list_katuraginomiya_event
+;=======================================================================================
+;◆イベントに関係して届く手紙◆ イベント中に届くのではないため、こちらに置きます
+;=======================================================================================
+;◆葛城宮ルート時子さんの散策イベントを見ている場合に自動的に2週間後に手紙『 伊能殿について 』
+;=======================================================================================
+[if exp="f.event_machi_katuraginomiya[2] == 1 && f.katuraginomiya_fumi_inou == 1 && f.fumi_toutyaku_katuraginomiya[26] == 0"]
+  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_26
+[endif]
+;=======================================================================================
+;◆葛城宮ルート10月1週に届く『 従妹宮の件について 』
+;=======================================================================================
+[if exp="f.okeiko_month == 10 && f.okeiko_week == 1 && f.fumi_toutyaku_katuraginomiya[27] == 0"]
+  [call target=*katuraginomiya_toutyaku_hantei_shori_common]
+   @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_27
+[endif]
+;イベント関連手紙のチェックが終われば判定続きに戻る
+@jump target=*katuraginomiya_event_fumi_check_owari
+
+;=======================================================================================
+*hantei_list_katuraginomiya
 ;=======================================================================================
 ;◆季節の便り◆
 ;=======================================================================================
@@ -689,18 +764,6 @@ f.okeiko_month_kansuuji="三月 ";
 [if exp="f.hujieda_fumi_start == 0"]
 @jump target=*fumi_toutyaku_hantei_tokiko
 [endif]
-
-[eval exp="f.test='手紙到着可能性なし'"]
-;↓藤枝との手紙開始していれば判定スタート
-[if exp="f.hujieda_fumi_start == 1 && f.hujieda_fumi_henjimachi <= parseInt([sf.hujieda['fumi_henjimachi_ok_number']])"]
-	[eval exp="f.hujieda_fumi_toutyakumachi_week = f.hujieda_fumi_toutyakumachi_week + 1"]
-[endif]
-[if exp="f.hujieda_fumi_toutyakumachi_week >= parseInt([sf.hujieda['fumi_hindo_week']])"]
-@jump target=*hantei_list_hujieda
-[endif]
-@jump target=*fumi_toutyaku_hantei_hujieda_owari
-;手紙到着：条件有り分
-*hantei_list_hujieda
 ;=======================================================================================
 ;◆重要なお手紙：話題のお返事よりも前に判定
 ;=======================================================================================
@@ -711,7 +774,7 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 
 ;=======================================================================================
-;◆話題のお返事◆
+;◆話題のお返事◆仕様通り(話題カウントゼロで)届くように手紙頻度判定前に移動します
 ;=======================================================================================
 ;◆↓手紙一通分の到着判定処理(開始)：『趣味について』
 [if exp="f.hujieda_fumi_toutyakumachi_shumi == 0 && f.fumi_toutyaku_hujieda[8] == 0"]
@@ -813,6 +876,18 @@ f.okeiko_month_kansuuji="三月 ";
   [call target=*hujieda_toutyaku_hantei_shori_common]
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_hujieda_31
 [endif]
+
+;[eval exp="f.test='手紙到着可能性なし'"]
+;↓藤枝との手紙開始していれば判定スタート
+[if exp="f.hujieda_fumi_start == 1 && f.hujieda_fumi_henjimachi <= parseInt([sf.hujieda['fumi_henjimachi_ok_number']])"]
+	[eval exp="f.hujieda_fumi_toutyakumachi_week = f.hujieda_fumi_toutyakumachi_week + 1"]
+[endif]
+[if exp="f.hujieda_fumi_toutyakumachi_week >= parseInt([sf.hujieda['fumi_hindo_week']])"]
+@jump target=*hantei_list_hujieda
+[endif]
+@jump target=*fumi_toutyaku_hantei_hujieda_owari
+;手紙到着：条件有り分
+*hantei_list_hujieda
 ;=============================================
 ;◆季節の便り◆
 ;=============================================
