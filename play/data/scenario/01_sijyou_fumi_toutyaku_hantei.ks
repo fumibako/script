@@ -693,7 +693,7 @@
 ;◆到着判定時の共通処理
 *sijyou_toutyaku_hantei_shori_common
 ;↓(変更の必要はありません)手紙が届いている場合のメッセージ「○○様からお手紙が届いております」の○○様の部分
-	[eval exp="f.fumi_toutyaku_oaite[0]='四条様'"]
+	[eval exp="f.fumi_toutyaku_oaite.push('四条様　')"]
 ;↓(変更の必要はありません)手紙が届いているかどうか、届いた手紙は何通かを見るための変数
 	[eval exp="f.fumi_toutyaku=f.fumi_toutyaku+1"]
 ;↓(変更の必要はありません)四条からの手紙到着待ち週数を好感度に応じてリセット

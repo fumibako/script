@@ -8,10 +8,10 @@
 [position layer=message1 left=0 width=600 height=140 top=120 page=fore color=white opacity=150]
 @layopt layer=message1 page=fore visible = true
 [font color=glay size=15]
-f.kuroda_fumi_toutyakumachi_dokusho=[emb exp="f.kuroda_fumi_toutyakumachi_dokusho"]
-,f.kuroda_fumi_toutyakumachi_hajimari=[emb exp="f.kuroda_fumi_toutyakumachi_hajimari"][r]
-,f.kuroda_fumi_toutyakumachi_week=[emb exp="f.kuroda_fumi_toutyakumachi_week"]
-,parseInt(sf.kuroda(fumi_hindo_week))=[emb exp="parseInt([sf.kuroda['fumi_hindo_week']])"]
+f.zaizen_fumi_toutyakumachi_sigoto=[emb exp="f.zaizen_fumi_toutyakumachi_sigoto"]
+[r]
+,f.zaizen_fumi_toutyakumachi_week=[emb exp="f.zaizen_fumi_toutyakumachi_week"]
+,parseInt(sf.zaizen(fumi_hindo_week))=[emb exp="parseInt([sf.zaizen['fumi_hindo_week']])"]
 
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
 [if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]
