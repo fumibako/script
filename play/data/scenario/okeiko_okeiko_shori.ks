@@ -283,15 +283,14 @@ if(f.okeiko_para_pre_random_1_3==0){
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
+;チュートリアル判定はokeiko_hyouji.ksの*tutorial_back_hanteiに移動しました
 
-;↓チュートリアル中にお稽古ボタンを押した場合、画面再表示後にチュートリアルに戻る
 [iscript]
-if (typeof f.tutorial_now !== 'undefined'){
-	tyrano.plugin.kag.ftag.startTag("jump",{storage:"okeiko_hyouji.ks"});
+if (typeof f.tutorial_now === undefined){
+	tyrano.plugin.kag.ftag.startTag("chara_mod",{name:"sys_fukidasi",storage:"button/frame_lesson_fukidasi.png",time:0});
 }
 [endscript]
-
-[chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
+;[chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
 [wait time=10]
 
 [return]

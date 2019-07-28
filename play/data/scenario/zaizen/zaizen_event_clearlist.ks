@@ -574,7 +574,7 @@ $(".1_fore").empty();
 [eval exp="f.event_replay = ''sijyou''"]
 [eval exp="f.get_tips = 1 "]
 ;また判定に飛ぶと待ち時間が発生するので適度な場所で　仮にstop
-@jump target="stop"
+@jump storage="zaizen/zaizen_event_clearlist.ks" target="stop"
 [s]
 
 *tips_label
@@ -608,8 +608,8 @@ $("p.tips").text("現在、ヒント「有」です");
 ;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
 [button name="spoiler_on" graphic="button_hinto_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=2"]
 [wait time=10]
-;@jump target="tips_btn"
-@jump target="stop"
+;@jump storage="zaizen/zaizen_event_clearlist.ks" target="tips_btn"
+@jump storage="zaizen/zaizen_event_clearlist.ks" target="stop"
 
 [elsif exp="f.get_tips == 2"]
 [iscript]
@@ -620,8 +620,8 @@ $("p.tips").text("現在、攻略情報「有」です。ネタバレしても�
 ;タイトル画面にて、ONの時はONの表示にしているため、合わせる方がプレイヤーさんに分かりやすいかと思いますので、変更させていただきます◆jsYiJcqRkk(元：オンのときはオフを表示)
 [button name="hint_off" graphic="button_spoiler_on.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=0"]
 [wait time=10]
-;@jump target="tips_btn"
-@jump target="stop"
+;@jump storage="zaizen/zaizen_event_clearlist.ks" target="tips_btn"
+@jump storage="zaizen/zaizen_event_clearlist.ks" target="stop"
 
 [else]
 [iscript]
@@ -633,5 +633,5 @@ $("p.tips").text("現在、ヒント「無」です");
 [button name="hint_on" graphic="button_hinto_off.png" height=100 width=100 y=540 x=850 target="get_tips_label" exp="f.get_tips=1"]
 [wait time=10]
 [endif]
-@jump target="stop"
+@jump storage="zaizen/zaizen_event_clearlist.ks" target="stop"
 [s]

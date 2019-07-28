@@ -81,7 +81,9 @@ jumpします。[p]
 
 ;================================================================================
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 ;==========================スクリプト・全画面表示の間に設定　新聞===============================
 #
 ;【テキスト全画面】;[新聞] 裏で画面構成 test_bg_sinbun.jpg
@@ -122,7 +124,9 @@ jumpします。[p]
 特に各銀行の方々には迷惑をおかけしました。[p]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 ;メッセージをもどします
@@ -157,9 +161,9 @@ jumpします。[p]
 
 ;コメントアウトのままでいいのでしょうか（スクリプト担当_2
 ;【SE】ペンで書く
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
-;【SE】ペンで書く
-;[playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公　通常

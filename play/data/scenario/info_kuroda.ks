@@ -70,7 +70,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_kuroda_page1
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_kuroda
+	@jump storage="info_kuroda.ks" target=*loop_fumi_kuroda
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -116,7 +116,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_kuroda_page2
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_kuroda2
+	@jump storage="info_kuroda.ks" target=*loop_fumi_kuroda2
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -160,7 +160,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_kuroda_page3
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_kuroda3
+	@jump storage="info_kuroda.ks" target=*loop_fumi_kuroda3
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -177,13 +177,13 @@ $(".tips_btn").remove();
 [if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1 && f.para_kuroda_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.para_shujinkou_j_gogaku >= 80 && f.event_machi_kuroda[2] == 1"]
 	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_smile.png" zindex=2]
 	[wait time=10]
-	@jump target=*info_face_kuroda_owari
+	@jump storage="info_kuroda.ks" target=*info_face_kuroda_owari
 [endif]
 ;◆ 黒田ルート：normalED条件パラメータ・フラグを満たした場合：カラー肖像
 [if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1 && f.para_kuroda_koukando > 50 && f.event_machi_kuroda[2] == 1"]
 	[image layer=26 x=&f.x_info y=&f.y_info folder="image" storage="face_kuroda_color.png" zindex=2]
 	[wait time=10]
-	@jump target=*info_face_kuroda_owari
+	@jump storage="info_kuroda.ks" target=*info_face_kuroda_owari
 [endif]
 ;◆ 黒田ルート：normalED条件未満の場合：セピア肖像
 [if exp="f.kuroda_au == 1 && f.event_kuroda[1] == 1"]

@@ -186,7 +186,11 @@ jumpします。[p]
 
 （次の機会に聞けるかしら）[p]
 *seen_end1
+[wait time=50]
+[eval exp="f.event_machi_katuraginomiya[1]=1"]
+[wait time=50]
 [eval exp="sf.event_katuragi_sansaku1 = 1"]
+[wait time=50]
 
 ;↓散策イベント終了時については、気力回復と共に主人公のコメントを入れたい場合は[イベントシーン終了]の前に[イベントシーン終了２]を置き、コメント無しの方が合いそうな場合は逆の順に置くと良さそうです(スクリプト担
 [イベントシーン終了]

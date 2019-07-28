@@ -192,8 +192,10 @@ $('.oto').remove();
 ;[bg wait=true storage="toumei.gif" time=1300]
 [wait time=10]
 ;==============================================================================
+[if exp="sf.SE=='ON'"]
 ;[SE拍手]長めがいいかもしれない
 [playse storage=hakushu.ogg loop=false]
+[endif]
 #
 曲が終わると拍手が沸き上がる。[p]
 ;==============================================================================
@@ -299,7 +301,9 @@ $('.oto').remove();
 [sp]一生懸命弾きます」[p]
 
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 
 [whosay name="客"]
 「早く次の曲を聴かせてくれないか？[r]

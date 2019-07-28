@@ -48,7 +48,9 @@
 （私もすっかりお[ruby text=こと]箏の音が好きになってしまった）[p]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 #
 鳩の鳴き声がして私は思わず空を見上げる。[p]
@@ -68,10 +70,14 @@
 
 [fadeoutbgm time=3000]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_hujieda_7
 [if exp="f.okeiko_gamen == true"]
@@ -142,6 +148,7 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 貴方様からのお返事を待っています。[r]
 [r]
 [sp]　　　　　　　　　　　　　　　　　　　　　　藤枝　肇 
+[if exp="sf.BGM=='ON'"]
 ;【BGM】きずな（想いを込めるシーンに
 [playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
@@ -155,7 +162,6 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [cm]
 [clearfix]
 [clearstack]
-[if exp="sf.BGM=='ON'"]
 [if exp="f.okeiko_gamen == true"]
 ;未読→既読処理
 [eval exp="f.midoku_list_hairetsu[4][6] = 0"]
@@ -164,7 +170,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 
 ;【立ち絵】主人公：微笑み

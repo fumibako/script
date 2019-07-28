@@ -525,7 +525,9 @@ jumpします。[p]
 ;ここはピアノでいいかと
 
 ;【SE】拍手（コンサートホール）
+[if exp="sf.SE=='ON'"]
 [playse storage=hakushu_concert.ogg loop=false ]
+[endif]
 ;[playse storage=hakushu.ogg loop=false ]
 #
 司会者は財前様の知り合いという事で、場慣れしているようだった。[p]
@@ -605,8 +607,10 @@ jumpします。[p]
 [主人公驚]
 最後の音を弾き終えてハッとする。[p] 
 ;【SE】拍手（コンサートホール）
+[if exp="sf.SE=='ON'"]
 [playse storage=hakushu_concert.ogg loop=false ]
 [playse storage=hakushu.ogg loop=false ]
+[endif]
 
 目を向けると、観客席から皆が立ち上がり、拍手の嵐が巻き起こっていた。[p]
 
@@ -678,7 +682,9 @@ jumpします。[p]
 [sp]藤枝様となら、きっと何でも乗り越えられるわ）[p]
 
 ;【SE】人々のざわめき（ザワザワ…コンサート等ホール会場）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_hall.ogg loop=false ]
+[endif]
 
 [whosay name="観客１" color=%mp.color]
 ;主人公が動いてないので表情変化

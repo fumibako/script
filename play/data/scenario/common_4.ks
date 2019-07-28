@@ -47,7 +47,9 @@
 [image layer=27 x=450 y=17 storage="../image/button_info.png"]
 [wait time=10]
 ;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 [playse storage=kira_s.ogg loop=false ]
+[endif]
 
 [whosay name="磯野" color="dimgray"]
 「はい。お稽古画面左上の『情報』ボタンを押していただきますと[r]

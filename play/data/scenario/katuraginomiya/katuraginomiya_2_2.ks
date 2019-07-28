@@ -40,7 +40,9 @@
 「ええ、やっと落ち着いたのだわ」[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_katuraginomiya_31
 [if exp="f.okeiko_gamen == true"]
@@ -109,7 +111,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [手紙葛城宮読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;@jump storage="event.ks" target=*event_owari
 
 ;【立ち絵】主人公 目閉じ

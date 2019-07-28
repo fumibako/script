@@ -3,6 +3,9 @@
 ;=======================お芝居の準備中です==================================
 [stopbgm]
 [call target=*6_1 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [イベントシーン構築ボタン無し版]
 [freeimage layer = 1]
@@ -31,7 +34,9 @@
 寂しいような不思議な不安にかられる。[p]
 #
 その途端、見たこともない大きな温室が目の前に現れた。[p]
+[if exp="sf.SE=='ON'"]
 [playse storage=shine.ogg loop=false ]
+[endif]
 ;キラキラSEとか
 [bg storage="../fgimage/bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -143,7 +148,9 @@
 [whosay name="華織お兄さま" color="olivedrab"]
 「さぁ、目を閉じて」[p]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 #
 華織お兄さまは、静かに呟くと[r]
 私の頬に御自身の頬を慈しむようにあてられた。[p]
@@ -158,9 +165,11 @@
 [p]
 ;広間時計 ボーンボーンボーン…
 ;【SE】時計の鐘（ボーン）３回ほど（繰り返し）
+[if exp="sf.SE=='ON'"]
 [playse storage=tokei_tokei_kane.ogg loop=false]
 [playse storage=tokei_tokei_kane.ogg loop=false]
 [playse storage=tokei_tokei_kane.ogg loop=false]
+[endif]
 [bg storage="../fgimage/bg/test_sijyou_hanazono.jpg" time=1500]
 [whosay name="華織お兄さま" color="olivedrab"]
 「[名前]ちゃん。 僕は、もうそろそろ行かないと」[p]
@@ -176,7 +185,9 @@
 ;一応、ストーリーの前振りをしておいて受け入れ準備をしてもらう
 #
 ;【SE】春風
+[if exp="sf.SE=='ON'"]
 [playse storage=harukaze.ogg loop=false ]
+[endif]
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=1 zindex=2 left=-200]
 ;------------keyframe の定義
 [keyframe name="animation1"]
@@ -201,7 +212,9 @@ $('.saku1').remove();
 [bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1000]
 
 ;【SE】すずめ（チュンチュン）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_suzume.ogg loop=false ]
+[endif]
 ;【背景】主人公邸 庭の見える部屋：昼
 [layopt layer=29 visible=true] 
 [layopt layer=fix visible=false]

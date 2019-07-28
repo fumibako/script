@@ -104,16 +104,22 @@
 「それでは……」[p]
 
 ;【SE】襖を閉める（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 
 ;【SE】落ち着いた足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_out.ogg loop=false ]
+[endif]
 
 #
 磯野の足音が遠ざかるのを確認し、そっと手紙の封を切った。[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_tokiko_hujieda
 [if exp="f.okeiko_gamen == true"]
@@ -179,7 +185,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公：驚き
 [主人公驚]
@@ -198,15 +206,19 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [sp]だから悲しくとも応援したい）[p]
 
 ;【SE】ペンで書く
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_write.ogg loop=false ]
 ;【SE】ペンで書く
 [playse storage=pen_write.ogg loop=false ]
+[endif]
 
 #
 私はすぐに手紙をしたためた。[p]
 
 ;【SE】ペンのキャップを閉める
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_katya.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公　通常

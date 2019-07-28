@@ -28,7 +28,9 @@
 [wait time=10]
 [eval exp="f.haikei_credit='illustration by ◆I9IhvvVdPo editing by ＠名無しさん１'"]
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （あの時の鳩さんだわ）
@@ -40,7 +42,9 @@
 #
 私が近づこうとした途端、鳩は飛立つ。[p]
 ;【SE】鳩の羽ばたき（バサバサッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_habataki_hato.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公困り]
@@ -53,7 +57,9 @@
 お[ruby text=こと]箏の爪びく音がした。[p]
 ;箏SE
 ;【SE】お箏（短くド・レ…）
+[if exp="sf.SE=='ON'"]
 [playse storage=koto_dore.ogg loop=false ]
+[endif]
 [主人公眉通常]
 [主人公目閉じ]
 [主人公口ほほえみ]
@@ -77,7 +83,9 @@
 「貴方がお[ruby text=こと]箏のお稽古をし続けるなら[r]
 [sp]僕は、手紙をださずにはいられないでしょう」[p]
 ;【SE】お箏ぽい音（3秒ほどのトレモロとキラキラ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kotopoi_kira.ogg loop=false ]
+[endif]
 
 [whosay name=？？？]
 「ただ貴方の文通を邪魔する気はないのです。[r]

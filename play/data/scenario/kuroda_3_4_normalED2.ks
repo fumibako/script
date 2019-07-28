@@ -71,13 +71,17 @@ $('.1_fore').remove();
 ;１１章、【後日談：normalED分岐】
 ;=============================================
 ;【SE】うぐいす（ケキョケキョ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
+[endif]
 [wait time=10]
 ;【背景他】手紙用画面
 ;【BGM】normal/goodED用BGM
 ;【背景他】手紙用画面
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [wait time=10]
 ;機能ボタン消去
 [clearfix]
@@ -120,7 +124,9 @@ $('.1_fore').remove();
 
 
 ;【SE】パラリ(手紙)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [freeimage layer = 29]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1000]
 [wait time=500]

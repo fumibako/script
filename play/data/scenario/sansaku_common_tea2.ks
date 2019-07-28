@@ -90,7 +90,11 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,0,0,1,1,
 [ptext text=&f.sansaku_machi_seika_txt2 layer=26 size=21 x=310 y=105 color=darkslateblue bold=bold]
 [wait time=10]
 ;【SE】キラキラ
-[playse storage=kira.ogg loop=false ]
+[stopse]
+[wait time=50]
+[if exp="sf.SE=='ON'"]
+[playse storage=kira.ogg loop=false]
+[endif]
 [p]
 [freeimage layer = 26]
 [eval exp="f.event_machi_common[2]=1"]
@@ -125,7 +129,9 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number].push("新茶の話題",2,1,1,-1,1
 [ptext text=&f.sansaku_machi_seika_txt2 layer=26 size=21 x=310 y=105 color=darkslateblue bold=bold]
 [wait time=10]
 ;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 [playse storage=kira_s.ogg loop=false ]
+[endif]
 [p]
 ;【部分分岐】淑女度一定値未満の場合【終了】
 ;【部分分岐】お茶をいただく【終了】

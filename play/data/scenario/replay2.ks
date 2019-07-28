@@ -87,7 +87,6 @@ $(".rp_bt").remove();
 [hidemenubutton]
 ;テスト画面に戻るためフラグ作成
 [eval exp="f.flag_replay=true"]
-[endif]
 [cm]
 
 

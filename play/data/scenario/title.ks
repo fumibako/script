@@ -16,7 +16,7 @@
 	tf.current_auto_speed = parseInt(TG.config.autoSpeed);
 [endscript]
 
-@jump target=*title
+@jump storage="title.ks" target=*title
 ;◆↓読み込み不良防止のため、先にボタンのjump先ラベルを読み込ませます。実行ラベルは*titleからのためjumpします↑
 ;-------ボタンが押されたときの処理
 *start
@@ -158,6 +158,7 @@
 ;-----音・文表示設定タグここから-----
 [nowait]
 ;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
+[if exp="sf.BOOST=='ON'"]
 [eval exp="f.okeiko_month = 0"]
 [eval exp="sf.BOOST='ON'"]
 [locate x=455 y=480]

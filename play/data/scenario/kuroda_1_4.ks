@@ -177,7 +177,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 ;【SE】ペンで書く
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_write.ogg loop=false ]
+[endif]
 （……素敵なお誘いをありがとうございます。[r]
 [sp]順調とお聞きして、心より安堵いたしました。[r]
 [sp]黒田様にお会いできることを何より楽しみに、ご一緒させていただきます……）
@@ -279,7 +281,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 ;【SE】ペンで書く
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_write.ogg loop=false ]
+[endif]
 （……素敵なお誘いをありがとうございます。[r]
 [sp]順調とお聞きして、心より[ruby text="あん"]安[ruby text="ど"]堵いたしました。[r]
 [sp]黒田様にお会いできることを何より楽しみに、ご一緒させていただきます……）[p]
@@ -323,7 +327,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [chara_mod name="girl_me" storage="girl/S/me_toji.png" time=0]
 [wait time=10]
 ;【SE】ペンで書く
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_write.ogg loop=false ]
+[endif]
 （……素敵なお誘いをありがとうございます。[r]
 [sp]順調とお聞きして、心より安堵いたしました。[r]
 [sp]黒田様にお会いできることを何より楽しみに、ご一緒させていただきます……）[p]

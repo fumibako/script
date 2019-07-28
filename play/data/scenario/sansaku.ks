@@ -6,16 +6,17 @@
 [freeimage layer = 26]
 [freeimage layer = 27]
 [freeimage layer=1]
-[wait time=10]
+[wait time=50]
 
 ;↓チュートリアル中にボタンを押した場合、チュートリアルに戻る
 [iscript]
 if (typeof f.tutorial_now === 'undefined'){
-	tyrano.plugin.kag.ftag.startTag("jump",{target:"*tutorial_pass"});
+	tyrano.plugin.kag.ftag.startTag("jump",{storage:"sansaku_tutorial_pass.ks",target:"*tutorial_pass"});
 }
 [endscript]
+[wait time=50]
 [主人公目パチ1回L]
-[wait time=10]
+[wait time=50]
 [cm]
 [chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
 [wait time=10]
@@ -33,37 +34,40 @@ if (typeof f.tutorial_now === 'undefined'){
 [chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
 [wait time=10]
 	@jump storage=okeiko_hyouji.ks
-[endif]
 
 *tutorial_pass
+@jump storage="sansaku_tutorial_pass.ks"
+
+*after_tutorial_pass
+
 [if exp="f.para_shujinkou_tairyoku_now < 1"]
-[chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
-[wait time=10]
-[chara_mod name="A_me" storage="girl/L/me_toji.png" time=0]
-[wait time=10]
-[cm]
-[font size=25]
-今は疲れすぎて[r]
-できないわ……[r]
-[font size=20 color=rosybrown]
-(必要体力1以上)[p]
-[wait time=10]
-@jump storage=sansaku.ks target=*sansaku_owari
-[s]
+	[chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
+	[wait time=10]
+	[chara_mod name="A_me" storage="girl/L/me_toji.png" time=0]
+	[wait time=10]
+	[cm]
+	[font size=25]
+	今は疲れすぎて[r]
+	できないわ……[r]
+	[font size=20 color=rosybrown]
+	(必要体力1以上)[p]
+	[wait time=10]
+	@jump storage=sansaku.ks target=*sansaku_owari
+	[s]
 [endif]
 
 [if exp="f.hujieda_au == 1 && (f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || (f.okeiko_month == 2 && (f.okeiko_week == 1 || f.okeiko_week == 2)))"]
-[chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
-[wait time=10]
-[chara_mod name="A_me" storage="girl/L/me_toji.png" time=0]
-[wait time=10]
-[cm]
-[font size=25]
-一人での外出は[r]
-禁止されてしまったわ……[p]
-[wait time=10]
-@jump storage=sansaku.ks target=*sansaku_owari
-[s]
+	[chara_mod name="A_mayu" storage="girl/L/mayu_komari.png" time=0]
+	[wait time=10]
+	[chara_mod name="A_me" storage="girl/L/me_toji.png" time=0]
+	[wait time=10]
+	[cm]
+	[font size=25]
+	一人での外出は[r]
+	禁止されてしまったわ……[p]
+	[wait time=10]
+	@jump storage=sansaku.ks target=*sansaku_owari
+	[s]
 [endif]
 
 [clearfix]
@@ -84,47 +88,56 @@ TG.stat.stack["call"] = [];
 [eval exp="f.event_advice = 1"]
 ;-----設定タグここから-----
 [if exp="sf.BGM=='OFF'"]
-[iscript]
-/*BGMを再生しない*/
-TG.stat.play_bgm = false;
-[endscript]
-;ロード時点で再生していたBGMを停止します。
-[stopbgm ]
-[else]
-[iscript]
-/*BGMを再生する*/
-TG.stat.play_bgm = true;
-[endscript]
+	[iscript]
+	/*BGMを再生しない*/
+	TG.stat.play_bgm = false;
+	[endscript]
+	;ロード時点で再生していたBGMを停止します。
+	[stopbgm ]
+	[else]
+	[iscript]
+	/*BGMを再生する*/
+	TG.stat.play_bgm = true;
+	[endscript]
 [endif]
 
 [if exp="sf.SE=='OFF'"]
-[iscript]
-/*効果音を再生しない*/
-TG.stat.play_se = false;
-[endscript]
-;ロード時点で再生していたSEを停止します。
-[stopse ]
-[else]
-[iscript]
-/*効果音を再生する*/
-TG.stat.play_se = true;
-[endscript]
+	[iscript]
+	/*効果音を再生しない*/
+	TG.stat.play_se = false;
+	[endscript]
+	;ロード時点で再生していたSEを停止します。
+	[stopse ]
+	[else]
+	[iscript]
+	/*効果音を再生する*/
+	TG.stat.play_se = true;
+	[endscript]
 [endif]
 ;-----設定タグここまで-----
 
 [freeimage layer = 24]
+[wait time=50]
 
 ;◆散策中はフキダシを透明化
 [chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
-[wait time=10]
+[wait time=50]
 ;◆散策中は主人公立ち絵（L）を透明化
-[chara_mod name="A_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="A_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="A_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="A_kuti" storage="toumei.gif" time=0]
+;[chara_mod name="A_base" storage="toumei.gif" time=0]
+;[wait time=50]
+;[chara_mod name="A_mayu" storage="toumei.gif" time=0]
+;[wait time=50]
+;[chara_mod name="A_me" storage="toumei.gif" time=0]
+;[wait time=50]
+;[chara_mod name="A_kuti" storage="toumei.gif" time=0]
+;[wait time=50]
+
+[iscript]
+$('.A_base').remove();
+$('.A_mayu').remove();
+$('.A_me').remove();
+$('.A_kuti').remove();
+[endscript]
 [wait time=10]
 
 [freeimage layer = 15]
@@ -135,134 +148,13 @@ TG.stat.play_se = true;
 [freeimage layer = 20]
 
 *sansaku_machi
-
+[wait time=50]
 ;=============================================
-;◆◆散策機能_イベント発生判定開始
+;◆◆散策機能_個別イベント発生判定開始:"sansaku_hantei_kobetsu.ks"として切り出しました。
 ;=============================================
 *sansaku_machi_event_hantei
 ;=============================================
-;「他の散策イベント非表示時」は共通散策イベントの該当部分※のみチェック
-;※(話題関係散策イベント新規分、「手紙」の散策イベント)
-[if exp="tf.event_sansaku_hyouji == 0"]
-@jump target=*sansaku_hantei_common
-[endif]
-;=============================================
-;◆各個別ルート(又はonly時)には対象キャラクターイベント判定と共通ルート判定のみ行う
-;=============================================
-[if exp="f.zaizen_au == 1"]
-@jump target=*zaizen_event_hantei
-[endif]
-[if exp="f.sijyou_au == 1"]
-@jump target=*sijyou_event_hantei
-[endif]
-[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
-@jump target=*katuraginomiya_event_hantei
-[endif]
-[if exp="f.hujieda_au == 1"]
-@jump target=*hujieda_event_hantei
-[endif]
-
-;=============================================
-;重要イベント判定(共通イベントよりも優先して発生させたいイベントはこちらに記載します
-;=============================================
-;◆黒田イベント2判定【麦】(判定部分はevent_hantei_week_hajime.ksに移動しました)
-
-;◆共通イベント1判定【友人に会う】4月1週～6月4週、期間中に町へ行くと1度だけ発生
-[if exp="(f.okeiko_month == 4 || f.okeiko_month == 5 || f.okeiko_month == 6) && f.event_machi_common[1] == 0"]
-	@jump storage="sansaku_common.ks" target=*sansaku_machi_common_01
-[endif]
-
-;=============================================
-;◆四条イベント判定
-;=============================================
-*sijyou_event_hantei
-@jump storage="01_sijyou_event_hantei_sansaku.ks" target=*start
-*sijyou_event_hantei_owari
-[if exp="f.sijyou_au == 1"]
-@jump target=*event_hantei_owari
-[endif]
-
-;=============================================
-;◆財前イベント判定
-;=============================================
-*zaizen_event_hantei
-;◆財前イベント判定【バザー】財前ルートかつ2月1週から3月4週、礼法が70(暫定)以上で期間中に町へ行くと1度だけ発生
-[if exp="(f.okeiko_month==2 || f.okeiko_month==3) && f.event_machi_zaizen[1]==0 && f.para_shujinkou_j_reihou >= 70 && f.zaizen_au==1"]
-	[eval exp="f.event_machi_zaizen[1]=1"]
-	@jump storage="zaizen/zaizen_bazaar.ks"
-[endif]
-*zaizen_event_hantei_owari
-[if exp="f.zaizen_au == 1"]
-@jump target=*event_hantei_owari
-[endif]
-
-;=============================================
-;◆葛城宮イベント判定
-;=============================================
-*katuraginomiya_event_hantei
-;◆葛城宮イベント判定【散策1】葛城宮ルート2月2週から3月3週期間中に散策で1度だけ発生(散策2へ続く物語となるため元案の3月4週までではなく3月3週までに変更しました)
-[if exp="((f.okeiko_month==2 && f.okeiko_week!=1) || (f.okeiko_month==3 && f.okeiko_week!=4)) && f.event_machi_katuraginomiya[1]==0 && f.katuraginomiya_au==1"]
-	[eval exp="f.event_machi_katuraginomiya[1]=1"]
-	@jump storage="katuraginomiya/katuraginomiya_sansaku1.ks"
-[endif]
-
-;◆葛城宮イベント判定【散策2】葛城宮ルートで散策1を見ている状態で2月2週から3月4週期間中に散策をすると、1度だけ発生。判定順から散策1が先に発生すると思いますが、念のためf.event_machi_katuraginomiya[1]==1 を条件に加えます
-[if exp="((f.okeiko_month==2 && f.okeiko_week!=1) || f.okeiko_month==3) && f.event_machi_katuraginomiya[1]==1 && f.event_machi_katuraginomiya[2]==0 && f.katuraginomiya_au==1"]
-	[eval exp="f.event_machi_katuraginomiya[2]=1"]
-	[eval exp="f.katuraginomiya_fumi_inou = 3"]
-	@jump storage="katuraginomiya/katuraginomiya_sansaku2.ks"
-[endif]
-*katuraginomiya_event_hantei_owari
-[if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
-@jump target=*event_hantei_owari
-[endif]
-
-;=============================================
-;◆藤枝イベント判定
-;=============================================
-*hujieda_event_hantei
-;◆藤枝イベント判定【藤枝晶子さん(藤枝お姉さん)と話す】藤枝ルートかつ2月3週から3月4週期間中に町へ行くと1度だけ発生
-[if exp="((f.okeiko_month==2 && (f.okeiko_week==3 || f.okeiko_week==4)) || f.okeiko_month==3) && f.event_machi_hujieda[1]==0 && f.hujieda_au==1"]
-	[eval exp="f.event_machi_hujieda[1]=1"]
-	@jump storage="hujieda/hujieda_sansaku1.ks"
-[endif]
-*hujieda_event_hantei_owari
-[if exp="f.hujieda_au == 1"]
-@jump target=*event_hantei_owari
-[endif]
-
-;=============================================
-;◆黒田イベント判定
-;=============================================
-*kuroda_event_hantei
-;◆黒田イベント3判定【黒田家のうわさ１】7月1週～4週、期間中に町へ行くと黒田好感度一定値以上で1度だけ発生
-[if exp="f.okeiko_month==7 && f.event_machi_kuroda[3]==0 && f.para_kuroda_koukando > 10"]
-	[eval exp="f.event_char='kuroda'"]
-	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_03
-[endif]
-
-;◆黒田イベント4判定【黒田家のうわさ２】7月2週～4週、期間中に町へ行くと黒田好感度一定値以上かつ「黒田家のうわさ１」フラグONの場合に1度だけ発生
-[if exp="(f.okeiko_month==7 && (f.okeiko_week==2 || f.okeiko_week==3 || f.okeiko_week==4)) && f.event_machi_kuroda[3]==1 && f.event_machi_kuroda[4]==0 && f.para_kuroda_koukando > 15"]
-	[eval exp="f.event_char='kuroda'"]
-	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_04
-[endif]
-
-;◆黒田イベント5判定【友人に忠告される】8月1週～4週、期間中に町へ行くと黒田好感度一定値以上かつ「黒田家のうわさ１」フラグONの場合に1度だけ発生
-[if exp="f.okeiko_month==8 && f.event_machi_kuroda[3]==1 && f.event_machi_kuroda[5]==0 && f.para_kuroda_koukando > 20"]
-	[eval exp="f.event_char='kuroda'"]
-	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_05
-[endif]
-
-;◆黒田イベント6判定【友人と会う（落ち込み時）】12月1週～2週、期間中に町へ行くと1度だけ発生
-[if exp="(f.okeiko_month==12 && (f.okeiko_week==1 || f.okeiko_week==2)) && f.event_machi_kuroda[6]==0 && f.kuroda_au==1"]
-	[eval exp="f.event_char='kuroda'"]
-	@jump storage="sansaku_kuroda.ks" target=*sansaku_machi_kuroda_06
-[endif]
-
-*kuroda_event_hantei_owari
-[if exp="f.kuroda_au == 1"]
-@jump target=*event_hantei_owari
-[endif]
+@jump storage="sansaku_hantei_kobetsu.ks" target="*sansaku_machi_event_hantei"
 
 ;=============================================
 ;◆攻略対象固有イベント判定終わり
@@ -280,23 +172,23 @@ TG.stat.play_se = true;
 ;=============================================
 ;◇財前ルート11月4週～1月3週は共通散策イベント発生回避
 [if exp="f.zaizen_au == 1 && ((f.okeiko_month == 11 && f.okeiko_week == 4)|| f.okeiko_month == 12 || (f.okeiko_month == 1 && f.okeiko_week != 4))"]
-@jump target=*sansaku_hantei_common_owari
+	@jump storage="sansaku.ks" target=*sansaku_hantei_common_owari
 [endif]
 ;◇四条ルート10月1週～11月2週は共通散策イベント発生回避(11月1週イベント後自動で3週になるはずですが、念のため11月2週も回避します)
 [if exp="f.sijyou_au == 1 && (f.okeiko_month == 10 && (f.okeiko_month == 11 && (f.okeiko_week == 1 && f.okeiko_week == 2)))"]
-@jump target=*sansaku_hantei_common_owari
+	@jump storage="sansaku.ks" target=*sansaku_hantei_common_owari
 [endif]
 ;◇葛城宮ルート10月2週～2月1週は共通散策イベント発生回避
 [if exp="f.katuraginomiya_au == 1 && ((f.okeiko_month == 10 && f.okeiko_week != 1)|| f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 ||(f.okeiko_month == 2 && f.okeiko_week == 1))"]
-@jump target=*sansaku_hantei_common_owari
+	@jump storage="sansaku.ks" target=*sansaku_hantei_common_owari
 [endif]
 ;◇藤枝ルート11月1週～2月2週は共通散策イベント発生回避(2月3週から手紙を許される)
 [if exp="f.hujieda_au == 1 && (f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 ||(f.okeiko_month == 2 && (f.okeiko_week == 1 && f.okeiko_week == 2)))"]
-@jump target=*sansaku_hantei_common_owari
+	@jump storage="sansaku.ks" target=*sansaku_hantei_common_owari
 [endif]
 ;◇黒田ルート11月4週～12月4週は共通散策イベント発生回避
 [if exp="f.kuroda_au == 1 && ((f.okeiko_month == 11 && f.okeiko_week == 4)|| f.okeiko_month == 12)"]
-@jump target=*sansaku_hantei_common_owari
+	@jump storage="sansaku.ks" target=*sansaku_hantei_common_owari
 [endif]
 
 @jump storage="sansaku_hantei_common.ks" target=*start
@@ -329,6 +221,9 @@ TG.stat.play_se = true;
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
+[wait time=50]
+;↓テストプレイ中に通常散策でプリロード画面が表示されたままになる場合があることを確認しましたので追記します
+[プリロード画面消去]
 
 町へ出た。[r]
 行きかう人々や商人たちの声がにぎやかに響く。[p]

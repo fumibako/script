@@ -3,6 +3,9 @@
 [イベントシーン構築]
 テストページからはじめます。[p]
 [call target=*1_1 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 
 ;=======================================================================
 *start
@@ -38,7 +41,9 @@
 [whosay name="女中"]
 「お帰りなさいませ。 華織様」[p]
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 
 [if exp="tf.test_gamen == true"]
 テストページからプレイしています。イベント終わりまで移動しますか？[r]
@@ -197,7 +202,9 @@
 [wait time=10]
 
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 
 #
 女中達が去っていく中、僕は複雑な思いで、そっと文箱の蓋を開けた。[p]
@@ -215,7 +222,9 @@
 [whosay name="華織" color="olivedrab"]
 (これは……！)[p]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;[四条口通常]
 [chara_mod name="sijyou_kuti" storage="sijyou/kuti_futuu.png" time=0]
@@ -248,7 +257,9 @@
 きっと、[名前]さんの言葉が、[華衣]の心に届いたのだろう。[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 #
 届かず、読めなかった[名前]さんからの手紙を大事に手に取る。[p]

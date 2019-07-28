@@ -98,7 +98,9 @@ $(".sentaku").remove();
 財前様をおいて彼女のいる部屋へと向かった。[p]
 
 ;【SE】ドアノック音(トントン)
+[if exp="sf.SE=='ON'"]
 [playse storage=door-knock.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公：憂い
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -112,7 +114,9 @@ $(".sentaku").remove();
 
 [主人公目閉]
 ;【SE】ドアが開く【SE】カチャ
+[if exp="sf.SE=='ON'"]
 [playse storage=door_open.ogg loop=false ]
+[endif]
 
 ;==============================================================================
 [暗転２]

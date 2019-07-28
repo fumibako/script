@@ -1,10 +1,12 @@
-﻿﻿﻿﻿*fumi_toutyaku_hantei_sijyou
+﻿﻿﻿*fumi_toutyaku_hantei_sijyou
 ;◇四条手紙到着判定
+
 [eval exp="f.test='手紙到着可能性なし'"]
 [if exp="f.sijyou_fumi_henjimachi <= parseInt([sf.sijyou['fumi_henjimachi_ok_number']])"]
 	[eval exp="f.sijyou_fumi_toutyakumachi_week = f.sijyou_fumi_toutyakumachi_week + 1"]
 	[eval exp="f.test='手紙到着可能性あり'+f.sijyou_fumi_toutyakumachi_week+parseInt([sf.sijyou['fumi_hindo_week']])"]
 [endif]
+
 ;↓f.sijyou_fumi_toutyakumachi_week(四条手紙が前回届いてからの経過週数)が四条の手紙を書く頻度sf.sijyou['fumi_hindo_week'を超えると手紙到着処理解放。判定リストへ飛ぶ。f.sijyou_event6 == 1→f.sijyou_omiai == 1に変更(お見合い後事件までの間に自発的に送る設定反映のため)しました(◆jsYiJcqRkk
 [if exp="f.sijyou_omiai == 1 && f.sijyou_fumi_toutyakumachi_week >= parseInt([sf.sijyou['fumi_hindo_week']])"]
 	@jump target=*hantei_list_sijyou

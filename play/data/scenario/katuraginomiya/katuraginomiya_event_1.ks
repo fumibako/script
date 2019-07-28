@@ -162,7 +162,9 @@ jumpします。[p]
 [p]
 ;表示まで時間かかるので近づく足音
 ;【SE】足音（靴
+[if exp="sf.SE=='ON'"]
 [playse storage=walk_kutsu.ogg loop=false ]
+[endif]
 
 [暗転２ storage="bg/bg_machi.jpg"]
 [葛城宮サイズ隣に並ぶ]
@@ -176,13 +178,17 @@ jumpします。[p]
 [葛城宮微笑み]
 「これは、[ruby text=ぶ]不[ruby text=しつけ]躾に失礼した」[p]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 
 *seen_3
 [whosay name="三宮　時子" color="#c25232"]
 「[ruby text="かつら"]葛[ruby text="ぎの"]城[ruby text="みや"]宮殿下！」[p]
 ;【SE】衣擦れ（ザッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=za_kinuzure.ogg loop=false ]
+[endif]
 
 [主人公目パチ1回]
 ;【立ち絵】葛城宮 通常
@@ -337,10 +343,12 @@ jumpします。[p]
 [autosave改]
 [p]
 ;【SE】軽い足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_in_run.ogg loop=false ]
 [wait time=500]
 ;【SE】襖を開ける（勢いよく）
 [playse storage=fusuma-open_fast.ogg loop=false ]
+[endif]
 
 [主人公目パチ1回]
 [stopbgm]
@@ -429,7 +437,9 @@ $('.junbi_girl').remove();
 [p]
 [stopbgm]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】「きずな」
@@ -533,7 +543,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [endif]
 [手紙葛城宮読了 fumi_number=1]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;【背景】お稽古部屋
 [bg method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000 wait=true]
@@ -565,7 +577,7 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [eval exp="sf.event_katuragi_event_1 = 1"]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="sf.replay_katuraginomiya=1"]
-[eval exp="f.katuraginomiya_fumi_start=1"]
+[eval exp="f.katuraginomiya_fumi_start = 1"]
 [endif]
 ;次イベントでの名前残り消去
 #

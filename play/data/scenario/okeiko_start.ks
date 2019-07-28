@@ -294,7 +294,9 @@ f.okeiko_month_kansuuji="三月 ";
 [bg wait=true storage=&f.okeiko_bg_tukihajime time=50]
 [wait time=500]
 ;【SE】スズメのさえずり
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_suzume.ogg loop=false]
+[endif]
 
 [stopbgm]
 ;機能ボタン類を消去（fixレイヤー全消去）

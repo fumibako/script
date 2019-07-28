@@ -8,7 +8,7 @@
 ;=====================================================================================
 *first
 ;make.ksで使用する際、ここに共通の読み込みを書きます。今はないのでここは書いてません。
-@jump target=end_sub0
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub0
 ;無駄な読み込みしない
 ;=======================================================================================
 ;◇プリロードサブルーチン　targetで呼び出し方法　シナリオで呼び出し設定してます。
@@ -31,7 +31,7 @@
 ;【背景】お稽古部屋
 ;[preload storage="data/fgimage/bg/bg_okeiko.jp" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -49,7 +49,7 @@
 ;【背景】主人公邸 玄関
 ;[preload storage="data/fgimage/bg/bg_genkan.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -65,7 +65,7 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -85,7 +85,7 @@
 ;【背景】藤枝badラジオ
 [preload storage="data/fgimage/bg/B4nFWraU42/hujieda_rajio.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -100,7 +100,7 @@
 ;///////////////使用背景メモ　必要時に解放///////////////////
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -141,7 +141,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/hujieda_piano_me_toji.png" wait=true]
 
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -166,7 +166,7 @@
 ;【背景】ﾌﾟﾛﾛｰｸﾞ
 [preload storage="data/fgimage/bg/bg_prologue.jpg"]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -193,7 +193,7 @@
 ;【背景CG】hujieda_normalED.jpg
 [preload storage="data/fgimage/bg/hujieda_normalED.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -216,7 +216,7 @@
 [preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 [preload storage="data/fgimage/bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -238,7 +238,7 @@
 ;【背景】主人公邸 お稽古部屋
 ;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -260,7 +260,7 @@
 ;【背景】主人公邸 お稽古部屋
 ;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -284,7 +284,7 @@
 ;【背景】主人公手紙
 [preload storage="data/fgimage/bg/I9IhvvVdPo/bg_tegami_blue.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -307,7 +307,7 @@
 ;[preload storage="data/fgimage/bg/bg_okeiko.jpg"]
 ;========================================================================================
 ;◆__◆__◆8_4に藤枝が表示されるためキャラロードします◆__◆__◆
-;@jump target=end_sub
+;@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;========================================================================================
 ;藤枝立ち絵を個別に入った時点で読み込みキャッシュ化しておきます。
@@ -378,7 +378,7 @@
 [preload storage="data/image/face_hujieda_smile_yuubin.png" wait=true]
 [preload storage="data/image/face_hujieda_smile_sifuku.png" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -399,7 +399,7 @@
 ;///////////////使用背景メモ　必要時に解放///////////////////
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -424,7 +424,7 @@
 ;[preload storage="data/fgimage/bg/bg_okeiko.jpg" wait=true]
 ;すでに読み込まれている背景なのでコメント
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -451,7 +451,7 @@
 ;【効果】キラキラ
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_hujieda_kirakira.png" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -475,7 +475,7 @@
 ;【背景】 全画面背景＿芙蓉
 [preload storage="data/fgimage/bg/bg_hujieda_fuyou.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -514,7 +514,7 @@
 [preload storage="data/fgimage/hujieda/base_sifuku_coleus.png" wait=true]
 
 ;======================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;◆__◆__◆10_3に藤枝が表示されるためキャラロード終了◆__◆__◆
 ;以降は、無駄な読み込みはしない
@@ -561,7 +561,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg" wait=true]
 
 ;====================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -577,7 +577,7 @@
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
 
 ;====================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;===================================================================================
@@ -596,7 +596,7 @@
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_moon_lake.jpg" wait=true]
 ;ここに追加
 ;====================================================================================
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;===================================================================================
@@ -614,7 +614,7 @@
 ;[image name="loding_pic" layer=29 x=0 y=0 storage="bg/bg_kinari_sakura.jpg" time=500]
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
-@jump target=end_sub
+@jump storage="hujieda/preload_hujieda.ks" target=end_sub
 ;[return]へGO
 ;以降は、無駄な読み込みはしない
 ;======================================================================================

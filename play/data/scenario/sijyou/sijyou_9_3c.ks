@@ -4,6 +4,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*9_3 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [layopt layer=13 visible=true]
 ;テストから飛んでくるときのレイヤー１消去
@@ -385,7 +388,9 @@ $('.junbi_girl').remove();
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 ;///////////////////////準備///////////////////
 [layopt layer=fix visible=false]
+[if exp="sf.SE=='ON'"]
 [playse storage=mizu_ike.ogg loop=false]
+[endif]
 [layopt layer=29 visible=true]
 [image layer=29 name="kakusi" x=0 y=0 storage="bg/B4nFWraU42/niwa_large_ike.jpg" time=1000]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
@@ -400,7 +405,9 @@ $('.junbi_girl').remove();
 [wait time=10]
 [主人公通常]
 [wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=mizu_ike.ogg loop=false]
+[endif]
 [四条_隣_ベース羽織]
 [wait time=10]
 [四条_隣_通常]

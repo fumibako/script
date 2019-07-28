@@ -74,7 +74,9 @@
 [手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [whosay name="財前美彬" color="#7a65b2"]
 ;[財前通常] 見合い前なので表示なしでお願いします

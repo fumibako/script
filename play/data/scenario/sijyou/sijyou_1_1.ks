@@ -4,6 +4,9 @@
 *replay_sijyou_1_1
 *start
 [call target=*1_1 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [stopbgm]
 ;=================================================================================_
 ;[chara_mod name="bg" storage="bg/room_niwa_akarui.jpg" time=1000]
@@ -58,7 +61,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [endscript]
 [endif]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]

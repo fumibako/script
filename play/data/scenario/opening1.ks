@@ -31,7 +31,9 @@
 [cm]
 文矢お兄様[l][r]
 ;【SE】うぐいす（ケキョケキョ）
-[playse storage=tori_uguisu_pikyo.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=tori_uguisu_pikyo.ogg loop=false ]
+[endif]
 [r]
 拝啓　お兄様が海外に旅立たれてもう一年になりますね。お姉さまとは仲良くしておいででしょうか。[r]
 [r]
@@ -56,7 +58,9 @@
 [s]
 *girl_fumi_2
 ;【SE】紙に触れる（パラリ）
-[playse storage=paper_open.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_open.ogg loop=false ]
+[endif]
 [freeimage layer = 26]
 [freeimage layer = 27]
 [wait time=10]
@@ -77,7 +81,9 @@
 [s]
 *girl_fumi_3
 ;【SE】紙に触れる（パラリ）
-[playse storage=paper_open.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_open.ogg loop=false ]
+[endif]
 [r]
 [r]
 [r]

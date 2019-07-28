@@ -34,7 +34,12 @@
 [autosave改]
 [p]
 ;【SE】時計（広間カチコチ）
-[playse storage=tokei_hiroma.ogg loop=false ]
+[stopse]
+[wait time=50]
+[if exp="sf.SE=='ON'"]
+[playse storage="tokei_hiroma.ogg" loop=false]
+[endif]
+[wait time=50]
 
 
 汚職事件を起こした今原中将やその関係者への[r]
@@ -155,7 +160,9 @@
 [葛城宮口通常]
 
 ;【SE】椅子を引く（ガタッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=isu_gata.ogg loop=false ]
+[endif]
 #
 出席した全員が起立し、これで政治不干渉の方針が決定した。[p]
 ……これから形骸化した軍律をまた制定しよう。[p]
@@ -213,7 +220,9 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 *seen4
 ;【SE】ドアノック音(トントン)
+[if exp="sf.SE=='ON'"]
 [playse storage=door-knock.ogg loop=false ]
+[endif]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮伏目パチ1回]
@@ -317,7 +326,9 @@
 [sp]そして証言もあります。入りなさい！」[p]
 
 ;【SE】ドアが開く
+[if exp="sf.SE=='ON'"]
 [playse storage=door_open.ogg loop=false ]
+[endif]
 
 #
 隣室から現れたのは一人の初老の男性。[p]
@@ -325,7 +336,9 @@
 その人物は、柏木元大将の家令にあたる者だった。[p]
 
 ;【SE】椅子を引く（ガタッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=isu_gata.ogg loop=false ]
+[endif]
 [whosay name="柏木元大将" color=%mp.color]
 「どうしてここにお前が！」[p]
 
@@ -340,7 +353,9 @@
 #
 その場に居た者は表情を凍りつかせ柏木元大将を凝視した。[p]
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 
 しばしの間をおいて、場にざわめきが広がっていく……。 [p]
 ;==========================================================================
@@ -376,7 +391,9 @@
 「まさか、そんなことを現実にしようとは……」[p]
 
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 
 [whosay name="葛城宮　晴仁" color=%mp.color]
 [葛城宮目閉じ]

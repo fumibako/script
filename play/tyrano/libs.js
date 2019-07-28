@@ -19,6 +19,13 @@
         return str.substring(0, i + 1);
 
     };
+    
+    $.getDirPath = function(str){
+        
+        var i = str.lastIndexOf('/');
+        return str.substring(0, i + 1);
+        
+    };
 
     $.isHTTP = function(str) {
         if (str.substring(0, 4) === "http") {
@@ -32,6 +39,20 @@
 
         audio_obj.play();
 
+    };
+
+    $.localFilePath = function(){
+        
+        var path = "";
+        //Mac os Sierra 対応
+        if(process.execPath.indexOf("var/folders")!=-1){
+            path = process.env.HOME+"/_TyranoGameData";
+        }else{
+            path = $.getProcessPath();
+        }
+        
+        return path;
+        
     };
 
     $.getViewPort = function() {
@@ -351,7 +372,15 @@
         }
 
     };
-
+    
+    $.isTyranoPlayer = function(){
+        if(typeof _tyrano_player != "undefined"){
+            return true;
+        }else{
+            return false;
+        }
+    };
+    
     $.lang = function(key) {
 
         if (tyrano_lang["word"][key]) {
@@ -389,7 +418,9 @@
             return "chrome";
         } else if (userAgent.indexOf("safari") > -1) {
             return "safari";
-        } else {
+        }else if (userAgent.indexOf("applewebkit") > -1) {
+            return "safari";
+        }else {
             return "unknown";
         }
 
@@ -419,6 +450,26 @@
             return false;
         }
     },
+    
+    //オブジェクトを引き継ぐ。
+    $.extendParam = function(pm,target){
+        
+        var tmp = target;
+        
+        for(key in target){
+            
+            if(pm[key]){
+                if(pm[key]!=""){
+                    target[key] = pm[key];
+                }
+            }
+            
+        }
+        
+        return target;
+        
+    };
+
     
     $.insertRule = function(css_str){
         
@@ -528,6 +579,8 @@
             method = $.replaceAll(method,"In","Out");
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
             j_obj.addClass('animated ' + method).one(animationEnd, function() {
+                j_obj.off(animationEnd);
+                j_obj.css("animation-duration","");
                 $(this).remove();
                 if (callback) {
                     //callback();
@@ -538,7 +591,8 @@
             j_obj.show();
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
             j_obj.addClass('animated ' + method).one(animationEnd, function() {
-                
+                j_obj.off(animationEnd);
+                j_obj.css("animation-duration","");
                 $(this).removeClass('animated ' + method);
                 if (callback) {
                     callback();
@@ -628,6 +682,25 @@
         
     };
     
+    $.getOS = function(){
+        
+        if($.isNWJS()){
+        
+            var path = process.execPath;
+            var tmp_index = path.indexOf(".app");
+            var os = "mac";
+            if(tmp_index == -1){
+                tmp_index = path.indexOf(".exe");
+                os="win";
+            }
+            
+            return os;
+            
+        }else{
+            return "";
+        }
+    };
+    
     $.getStorage = function(key,type) {
         
         var gv = "null";
@@ -674,6 +747,49 @@
         return gv;
 
     };
+    
+    $.playerHtmlPath = function(html){
+     
+        if ("appJsInterface" in window) {
+            //Android
+        } else {
+            
+            if(typeof TyranoPlayer == "function"){
+            
+                //playerの場合HTMLを修正する必要がある
+                var result_html ="";
+                while(1){
+                    var index = html.indexOf("file:///");
+                    if(index==-1){
+                        result_html += html;
+                        break;
+                    }else{
+                        
+                        result_html += html.substring(0,index);
+                        html = html.substring(index,html.length);
+                        
+                        var replace_index = html.indexOf("/game/data");
+                        tmp_html = html.substring(replace_index + "/game/data".length,html.length);
+                        html = "./data"+tmp_html;
+                        
+                        
+                    }
+                    
+                }
+                
+                if(result_html !=""){
+                    html = result_html;
+                }
+                
+            }
+            
+            
+        }
+        
+        return html;
+        
+    };
+    
     
     $.confirmSaveClear = function(){
         if(confirm('セーブデータが壊れている可能性があります。セーブデータを初期化しますか？')){
@@ -757,7 +873,8 @@
                 var str = fs.readFileSync(out_path+"/" + key + ".sav");
                 gv = unescape(str);
             } else {
-                gv = unescape(localStorage.getItem(key));
+                //Fileが存在しない場合にローカルストレージから読み取る使用は破棄。
+                //gv = unescape(localStorage.getItem(key));
             }
 
             if (gv == "null")
@@ -805,11 +922,41 @@
     */
 
     $.alert = function(str,cb) {
-        alertify.alert(str,function(){;
+        
+        $(".remodal_title").html(str);
+        
+        $(".remodal").find(".remodal-cancel").hide();
+        $(".remodal").find(".remodal-confirm").show();
+        
+        var inst = $('[data-remodal-id=modal]').remodal();
+        inst.open();
+        
+        $(document).off('closed', '.remodal');        
+        $(document).on('closed', '.remodal', function (e) {
+            
             if(typeof cb == "function"){
                 cb();
             }
+            
         });
+        
+        
+        /*
+        if ($.userenv() != "pc") {
+            alert(str);
+            if(typeof cb == "function"){
+                cb();
+            }
+            
+        }else{
+            alertify.alert(str,function(){;
+                if(typeof cb == "function"){
+                    cb();
+                }
+            });
+        }
+        */
+        
     };
     
     $.inform =function(str,type){
@@ -818,15 +965,64 @@
     
     $.confirm = function (str,cb_ok,cb_cancel){
         
-        alertify.confirm(str,function(e){
-            if (e) {
-            // user clicked "ok"
+        $(".remodal_title").html(str);
+        
+        $(".remodal").find(".remodal-cancel").show();
+        $(".remodal").find(".remodal-confirm").show();
+        
+        var inst = $('[data-remodal-id=modal]').remodal();
+        inst.open();
+        
+        /////////OK /////////////
+        
+        $(document).off('closed', '.remodal');        
+        
+        $(document).off('confirmation', '.remodal');        
+        $(document).on('confirmation', '.remodal', function (e) {
+            
+            $(document).off('confirmation', '.remodal');        
+            $(document).off('cancellation', '.remodal');        
+            
+            if(typeof cb_ok == "function"){
                 cb_ok();
-            } else {
-                // user clicked "cancel"
+            }
+            
+        });
+        
+        ///////キャンセル//////////////
+        $(document).off('cancellation', '.remodal');        
+        $(document).on('cancellation', '.remodal', function (e) {
+            
+            $(document).off('confirmation', '.remodal');        
+            $(document).off('cancellation', '.remodal');        
+            
+            if(typeof cb_cancel == "function"){
                 cb_cancel();
             }
+            
         });
+        
+        /*
+        if ($.userenv() != "pc") {
+            
+            if(window.confirm(str)){
+                cb_ok();
+        	}else{
+        		cb_cancel();
+        	}
+            
+        }else{
+            alertify.confirm(str,function(e){
+                if (e) {
+                // user clicked "ok"
+                    cb_ok();
+                } else {
+                    // user clicked "cancel"
+                    cb_cancel();
+                }
+            });
+        }       
+        */     
                 
     };
 

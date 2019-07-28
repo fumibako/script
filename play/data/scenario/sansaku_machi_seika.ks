@@ -28,7 +28,7 @@ if(f.okeiko_para_pre_random_1_3==3){
 f.para_shujinkou_sansaku_comment_tairyoku = "たくさん歩き回って疲れたけれど、";
 }
 if(f.okeiko_para_pre_random_1_3==2){
-f.para_shujinkou_sansaku_comment_tairyoku = "色々見て楽しかった、";
+f.para_shujinkou_sansaku_comment_tairyoku = "色々見て楽しかったし、";
 }
 if(f.okeiko_para_pre_random_1_3==1){
 f.para_shujinkou_sansaku_comment_tairyoku = "お散歩は少しだったけれど、";
@@ -72,9 +72,15 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [wait time=10]
 [eval exp="f.sansaku_machi_seika_txt='体力が'+f.okeiko_para_pre_random_1_3+'下がり、気力が'+f.okeiko_para_pre_random_1_3_kiryoku+'上がりました'"]
 [ptext text=&f.sansaku_machi_seika_txt layer=26 size=21 x=310 y=85 color=darkslateblue bold=bold]
-[wait time=10]
+[wait time=50]
 ;【SE】キラキラ
-[playse storage=kira.ogg loop=false ]
+[stopse]
+[wait time=50]
+[if exp="sf.SE=='OFF'"]
+	@jump target="*after_se"
+[endif]
+[playse storage=kira.ogg loop=false]
+*after_se
 ;[ptext text=&f.sansaku_machi_seika_txt layer=27 size=21 x=250 y=490 color=darkslateblue bold=bold]
 
 [p]
@@ -145,6 +151,23 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [wait time=10]
 
 ;◆主人公立ち絵とフキダシを戻す
+;主人公L画像表示【登場時にchara_new使用。後はマクロで切り替え】
+[chara_new name="A_base" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=3 name="A_base" time=0]
+[wait time=10]
+[chara_new name="A_mayu" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=4 name="A_mayu" time=0]
+[wait time=10]
+[chara_new name="A_me" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=5 name="A_me" time=0]
+[wait time=10]
+[chara_new name="A_kuti" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=6 name="A_kuti" time=0]
+[wait time=10]
+[chara_new name="A_emo" storage="toumei.gif"]
+[chara_show left=50 top=220 layer=7 name="A_emo" time=0]
+[wait time=50]
+
 [chara_mod name="A_base" storage="girl/L/base.png" time=0]
 [wait time=10]
 [chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]

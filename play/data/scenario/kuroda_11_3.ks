@@ -118,11 +118,15 @@
 [whosay name="磯野" color="dimgray"]
 「では、失礼いたします」[p]
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 [wait time=500]
 [stopse]
 ;【SE】落ち着いた足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_out.ogg loop=false ]
+[endif]
 
 [fadeoutbgm time=3000]
 ;【立ち絵】主人公：目閉じ

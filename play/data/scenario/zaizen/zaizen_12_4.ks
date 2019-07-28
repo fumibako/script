@@ -184,7 +184,9 @@ jumpします。[p]
 [wait time=10]
 [p]
 ;【SE】ドアを閉じる音（バタン）
+[if exp="sf.SE=='ON'"]
 [playse storage=door_close_batan.ogg loop=false ]
+[endif]
 
 
 [fadeoutbgm time=3000]
@@ -210,7 +212,9 @@ jumpします。[p]
 [endif]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 ;最大６-７行
 [手紙主人公 fumi_number=]
 財前美彬様へ[l][r]
@@ -247,7 +251,9 @@ jumpします。[p]
 [resetfont]
 [手紙読了]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [whosay name="財前美彬" color="#7a65b2"]
 ;【立ち絵】財前：微笑み

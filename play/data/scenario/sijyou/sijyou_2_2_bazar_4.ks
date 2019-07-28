@@ -7,6 +7,9 @@ $(".1_fore").empty();
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*2_2 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [暗転]
 [イベントシーン構築ボタン無し版]
@@ -693,7 +696,9 @@ $(".29_fore").empty();
 [whosay name="華織" color="olivedrab"]
 「！」[p]
 ;【SE】ザッ(衣擦れ)
+[if exp="sf.SE=='ON'"]
 [playse storage=za_kinuzure.ogg loop=false ]
+[endif]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 [quake count=3 time=250 hmax=10 vmax=10]
@@ -901,7 +906,9 @@ $(".29_fore").empty();
 [wait time=10]
 [p]
 ;【SE】花火(打ち上げ：中)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_m.ogg loop=false ]
+[endif]
 #
 ;↓口：ムッと不満や哀しみ、耐える感じの表情に [主人公口ムッ]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_mu.png" time=0]
@@ -924,7 +931,9 @@ $(".29_fore").empty();
 驚いて見上げれば、大輪の花火が陰った空を[r]
 [ruby text="きら"]煌びやかに照らしていた。[p]
 ;【SE】花火(打ち上げ：小)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_s.ogg loop=false ]
+[endif]
 
 [四条_隣_退場]
 【華織】[r]

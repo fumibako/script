@@ -28,50 +28,50 @@
 [wait time=10]
 [p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+	;【BGM】古都に咲く花（プロローグ等）フリーズ対策試験的に[p]の後に配置しclick=trueを抜いてみています
+	[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+	[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 [if exp="tf.test_gamen == true"]
-テストページから開始しています。bad分岐手前までjumpしますか？[r]
+	テストページから開始しています。bad分岐手前までjumpしますか？[r]
 
-;選択肢用レイヤーを追加
-[position layer=message1 height=200 top=100 left=380 opacity=0]
-@layopt layer=message1 visible=true
-[current layer="message1"]
-[font color=white size=32]
+	;選択肢用レイヤーを追加
+	[position layer=message1 height=200 top=100 left=380 opacity=0]
+	@layopt layer=message1 visible=true
+	[current layer="message1"]
+	[font color=white size=32]
 
-[link target=*jump_ok]は　　　い[endlink][r]
-[r][r][r]
-[link target=*jump_no]い　い　え[endlink][r]
-[resetfont]
-[s]
+	[link target=*jump_ok]は　　　い[endlink][r]
+	[r][r][r]
+	[link target=*jump_no]い　い　え[endlink][r]
+	[resetfont]
+	[s]
 
 
-*jump_ok
-[current layer="message0"]
-[resetfont]
-「はい」[r]
-jumpします。[p]
-[cm]
-[暗転２]
-[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600]
-[wait time=10]
-[財前ベース燕尾服]
-[wait time=10]
-[財前不快]
-[wait time=10]
-[主人公憂い]
-[wait time=10]
-[暗転２終了 time=1000]
-@jump target=*bad_bunki_mae
-[s]
+	*jump_ok
+	[current layer="message0"]
+	[resetfont]
+	「はい」[r]
+	jumpします。[p]
+	[cm]
+	[暗転２]
+	[bg wait=true method='crossfade' storage="../fgimage/bg/test_zaizen_paty1.jpg" time=600]
+	[wait time=10]
+	[財前ベース燕尾服]
+	[wait time=10]
+	[財前不快]
+	[wait time=10]
+	[主人公憂い]
+	[wait time=10]
+	[暗転２終了 time=1000]
+	@jump target=*bad_bunki_mae
+	[s]
 
-*jump_no
-[current layer="message0"]
-「いいえ」[r]
-最初からはじめます。[p]
-[cm]
+	*jump_no
+	[current layer="message0"]
+	「いいえ」[r]
+	最初からはじめます。[p]
+	[cm]
 [endif]
 
 #
@@ -138,7 +138,9 @@ jumpします。[p]
 
 （[ruby text=し]支[ruby text=たく]度に時間が[ruby text=か]掛かって、もうこんな時間だわ）[p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 #
 磯野は私の姿をみて、少し驚いたように目を見張った。
@@ -245,7 +247,9 @@ jumpします。[p]
 その後、盛大な乾杯で会食が始まり、財前様の周囲には多くの貴人が[ruby text=つど]集った。[p]
 
 ;【SE】人々のざわめき（ザワザワ…コンサート等ホール会場）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_hall.ogg loop=false ]
+[endif]
 ;【SE】人々のざわめき（ザワザワ…屋内）
 ;[playse storage=zawa_room.ogg loop=false ]
 [主人公眉下げ下]
@@ -291,9 +295,9 @@ jumpします。[p]
 [主人公通常]
 [sp]総帥が財前様をお呼びです。 来ていただけますか？」[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】夕涼み（お稽古パートなど
-[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
-[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
+	;【BGM】夕涼み（お稽古パートなど
+	[playbgm storage="okeiko_yuusuzumi.ogg" loop=true]
+	[eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]
@@ -409,7 +413,9 @@ jumpします。[p]
 [whosay name="パーティ客男性"]
 「こ……これは[ruby text="ド"]独[ruby text="イツ"]逸大使婦人、失礼します」[p]
 ;【SE】落ち着いた足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_out.ogg loop=false ]
+[endif]
 
 
 [whosay name="独逸大使夫人"]
@@ -420,9 +426,9 @@ jumpします。[p]
 [p]
 
 [if exp="sf.BGM=='ON'"]
-;【BGM】きずな（想いを込めるシーンに
-[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
-[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
+	;【BGM】きずな（想いを込めるシーンに
+	[playbgm storage="omoiwokomete_kizuna.ogg" loop=true]
+	[eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 
 #
@@ -486,9 +492,9 @@ jumpします。[p]
 [whosay name="独逸大使夫人"]
 「アルベルト！」[p]
 [if exp="sf.BGM=='ON'"]
-;【BGM】雪消水
-[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
-[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
+	;【BGM】雪消水
+	[playbgm storage="kanasige_yukigemizu.ogg" loop=true]
+	[eval exp="f.bgm_storage='kanasige_yukigemizu.ogg'"]
 [endif]
 
 #
@@ -568,30 +574,30 @@ jumpします。[p]
 #
 ;=================テストとリプレイ時をスキップ========================
 [if exp="f.okeiko_gamen == true"]
-@jump target=*sentaku_to_bad_or_other
+	@jump target=*sentaku_to_bad_or_other
 [endif]
 ;=================テストとリプレイ時の処理========================
 *replay_sentaku_to_bad_or_other
 ;バッドをみていない場合はシームレスに次にリプレイ
 [if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 != 1"]
-@jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
+	@jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
 [endif]
 
 ;バッドをみている場合は選択　みていない場合はシームレスに次にリプレイ
 [if exp="tf.test_zaizen == true || (f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1)"]
-[機能ボタン消]
-[wait time=10]
-[image name=sentaku layer=13 x=0 y=0 zindex=0 storage="../fgimage/bg/plane_sakura.jpg" time=100]
-[wait time=10]
-[メッセージウィンドウ上ボタン表示選択肢用]
-[wait time=10]
-#
-どうしましょうか？
-[wait time=10]
-[glink target=*next11_bad text="帰　　る" size=20 width=500 x=250 y=50 graphic="select_waku_x300.png" font_color=black]
-[glink target=*next11_1_2 text="帰らない" size=20 width=500 x=250 y=170 graphic="select_waku_x300.png" font_color=black]
-[glink target=*end text="回想を終了する" size=20 width=500 x=250 y=290 graphic="select_waku_x300.png" font_color=black]
-[s]
+	[機能ボタン消]
+	[wait time=10]
+	[image name=sentaku layer=13 x=0 y=0 zindex=0 storage="../fgimage/bg/plane_sakura.jpg" time=100]
+	[wait time=10]
+	[メッセージウィンドウ上ボタン表示選択肢用]
+	[wait time=10]
+	#
+	どうしましょうか？
+	[wait time=10]
+	[glink target=*next11_bad text="帰　　る" size=20 width=400 x=250 y=50 graphic="select_waku_x500.png" font_color=black]
+	[glink target=*next11_1_2 text="帰らない" size=20 width=400 x=250 y=170 graphic="select_waku_x500.png" font_color=black]
+	[glink target=*end text="回想を終了する" size=20 width=400 x=250 y=290 graphic="select_waku_x500.png" font_color=black]
+	[s]
 [endif]
 *next11_1_2
 [機能ボタン消]
@@ -600,7 +606,6 @@ jumpします。[p]
 [wait time=10]
 @jump storage="zaizen/zaizen_11_1_2.ks" target="*seen_1"
 [s]
-;[endif]
 *next11_bad
 [機能ボタン消]
 [wait time=10]
@@ -608,20 +613,19 @@ jumpします。[p]
 [wait time=10]
 @jump storage="zaizen/zaizen_11_bad2.ks" target="*seen_1"
 [s]
-[endif]
 
 
 *end0
 [if exp="f.okeiko_gamen != true && f.event_replay == 'zaizen' && sf.ED_zaizen_bad1 == 1"]
-[cm]
-[current layer="message0"]
-[resetfont]
-[iscript]
-$(".sentaku").remove();
-[endscript]
-@layopt layer=fix visible=true
-@jump target=sentaku_to_bad_or_other2
-[s]
+	[cm]
+	[current layer="message0"]
+	[resetfont]
+	[iscript]
+	$(".sentaku").remove();
+	[endscript]
+	@layopt layer=fix visible=true
+	@jump target=sentaku_to_bad_or_other2
+	[s]
 [endif]
 
 *end
@@ -631,20 +635,20 @@ $(".sentaku").remove();
 ;============================================================================================================
 *sentaku_to_bad_or_other
 [if exp="f.okeiko_gamen == true"]
-;Evernoteシナリオに書いていただいている選択肢による分岐処理です
-*sentaku_to_bad_or_other2
-[機能ボタン消]
-[wait time=10]
-[image name=sentaku layer=13 x=0 y=0 zindex=0 storage="../fgimage/bg/plane_sakura.jpg" time=100]
-[wait time=10]
-[メッセージウィンドウ上ボタン表示選択肢用]
-[wait time=10]
-#
-どうしましょうか？
-[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=20 width=500 x=250 y=100 graphic="select_waku_x300.png" font_color=black]
-[glink storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=20 width=500 x=250 y=200 graphic="select_waku_x300.png" font_color=black]
-[wait time=10]
-[s]
+	;Evernoteシナリオに書いていただいている選択肢による分岐処理です
+	*sentaku_to_bad_or_other2
+	[機能ボタン消]
+	[wait time=10]
+	[image name=sentaku layer=13 x=0 y=0 zindex=0 storage="../fgimage/bg/plane_sakura.jpg" time=100]
+	[wait time=10]
+	[メッセージウィンドウ上ボタン表示選択肢用]
+	[wait time=10]
+	#
+	どうしましょうか？
+	[glink storage="zaizen/zaizen_11_bad2.ks" text="帰　　る" target="*seen_1" size=20 width=400 x=250 y=100 graphic="select_waku_x500.png" font_color=black]
+	[glink storage="zaizen/zaizen_11_1_2.ks" text="帰らない" target="*seen_1" size=20 width=400 x=250 y=200 graphic="select_waku_x500.png" font_color=black]
+	[wait time=10]
+	[s]
 [endif]
 *seen_end_11_1
 [イベントシーン終了]

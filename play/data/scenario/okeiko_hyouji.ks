@@ -172,19 +172,21 @@ $(".para").css("opacity",0); //パラメータ表示を透明に
 [ptext name="para" text="語学：" layer=24 size=20 x=770 y=371 color=black bold=bold]
 [ptext name="para" text="お箏：" layer=24 size=20 x=770 y=408 color=black bold=bold]
 
+*tutorial_back_hantei
 ;チュートリアル中はチュートリアルへ戻る
 [iscript]
-if (typeof f.tutorial_now !== 'undefined'){
-	tyrano.plugin.kag.ftag.startTag("jump",{storage:"event_tutorial_corridor.ks"});
+if (typeof f.tutorial_now === undefined){
+	tyrano.plugin.kag.ftag.startTag("jump",{target:"*after_tutorial_back_hantei"});
 }
 [endscript]
+@jump storage="event_tutorial_corridor.ks"
 
-
+*after_tutorial_back_hantei
 ;◆月始めのみの処理
 [if exp="f.tukihajime == 1"]
 @jump target=*tukihajime
 [else]
-@jump target=*fumi_hyouji
+@jump storage="okeiko_fumi_hyouji.ks" target=*fumi_hyouji
 [endif]
 *tukihajime_owari
 
@@ -207,7 +209,7 @@ $('.junbi_girl').remove();
 [endscript]
 
 [if exp="f.fumi_toutyaku != 0"]
-@jump target=*fumi_hyouji
+@jump storage="okeiko_fumi_hyouji.ks" target=*fumi_hyouji
 [endif]
 [ct]
 
@@ -326,7 +328,27 @@ $('.junbi_girl').remove();
 	[wait time=10]
 	[chara_mod name="A_me" storage="girl/L/me_futuu.png" time=0]
 	[wait time=10]
-	[font size=0][emb exp="f.okeiko_month"]月[emb exp="f.okeiko_week"]週：[font size=25 color="0x664f44"]今週は何をしましょうか？
+	[if exp="f.kuroda_au == 1"]
+	  [eval exp="f.savedata_midashi = f.okeiko_month + '月' + f.okeiko_week + '週　' + '黒田ルート ： '"]
+	[endif]
+	[if exp="f.zaizen_au == 1"]
+	  [eval exp="f.savedata_midashi = f.okeiko_month + '月' + f.okeiko_week + '週　' + '財前ルート ： '"]
+	[endif]
+	[if exp="f.sijyou_au == 1"]
+	  [eval exp="f.savedata_midashi = f.okeiko_month + '月' + f.okeiko_week + '週　' + '四条ルート ： '"]
+	[endif]
+	[if exp="f.katuraginomiya_au == 1"]
+	  [eval exp="f.savedata_midashi = f.okeiko_month + '月' + f.okeiko_week + '週　' + '榊ルート ： '"]
+	[endif]
+	[if exp="f.hujieda_au == 1"]
+	  [eval exp="f.savedata_midashi = f.okeiko_month + '月' + f.okeiko_week + '週　' + 'コリウスルート ： '"]
+	[endif]
+	[if exp="(f.okeiko_month > 3 && f.okeiko_month < 9)"]
+	  [eval exp="f.savedata_midashi = f.okeiko_month + '月' + f.okeiko_week + '週　' + '共通ルート ： '"]
+	[endif]
+	
+	;[font size=0][emb exp="f.savedata_midashi"]
+	[font size=25 color="0x664f44"]今週は何をしましょうか？
 	[resetfont]
 	[eval exp="f.okeikopart_shuuhajime=0"]
 [else]
@@ -363,6 +385,9 @@ $('.junbi_girl').remove();
 
 *tukihajime
 ;◆月始めのみ：便箋追加
+;メッセージレイヤ非表示(微妙な位置にクリックアイコンが出るのを防止)
+@layopt layer=message0 page=fore visible = false
+[wait time=10]
 ;【便箋追加】（↓可能なら文字色変更表示）
 [wait time=10]
 [iscript]
@@ -470,87 +495,24 @@ $('.junbi_girl').remove();
 		[ptext text=&f.binsen_toutyaku_info1 layer=27 size=21 x=290 y=150 color=darkslateblue bold=bold]
 		[ptext text=&f.binsen_toutyaku_info2 layer=27 size=21 x=290 y=185 color=darkslateblue bold=bold]
 ;【SE】キラキラ
-[playse storage=kira.ogg loop=false ]
+	[stopse]
+	[wait time=50]
+	[if exp="sf.SE=='OFF'"]
+		@jump target="*after_se_binsen"
+	[endif]
+[if exp="sf.SE=='ON'"]
+	[playse storage=kira.ogg loop=false]
+[endif]
+*after_se_binsen
 	[p]
 	[freeimage layer = 26]
 	[freeimage layer = 27]
-@jump target=*fumi_hyouji
+@jump storage="okeiko_fumi_hyouji.ks" target=*fumi_hyouji
 
 ;青葉の模様,1,0,0,-2,0,,
 
 *fumi_hyouji
-;◆「休憩中」画像消去
-[freeimage layer = 26]
-;◆手紙到着していたら表示
-[if exp="f.fumi_toutyaku == 0"]
-	[eval exp="f.tukihajime = 0"]
-	@jump target=*draw_fukidasi
-[endif]
-;[autostop]を入れるとフリーズ率高いためコメントアウト。調査予定。
-;[skipstop]
-[if exp="f.tukihajime!=1"]
-	[cm]
-	[chara_mod name="sys_fukidasi" storage="toumei.gif" time=0]
-	[wait time=10]
-	[layopt layer=29 visible=true]
-	;主人公L登場時被せ
-	[image name="junbi_girl" layer=29 storage="girl/L/gitl_L_all_futuu.png" left=50 top=220 time=300 visible=true]
-	[wait time=10]
-	[chara_mod name="A_base" storage="girl/L/base.png" time=0]
-	[wait time=10]
-	[chara_mod name="A_mayu" storage="girl/L/mayu_futuu.png" time=0]
-	[wait time=10]
-	[chara_mod name="A_me" storage="girl/L/me_futuu.png" time=0]
-	[wait time=10]
-	[chara_mod name="A_kuti" storage="girl/L/kuti_futuu.png" time=0]
-	[wait time=10]
-	[wait time=200]
-	[iscript]
-	$('.junbi_girl').remove();
-	[endscript]
-[endif]
-[layopt layer=26 visible=true]
-[layopt layer=27 visible=true]
-[image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
-[wait time=10]
-
-;藤枝からの9月2～10月4週は鳩が届けたという内容に変更
-[if exp="f.hato == 1"]
-	[ptext text=&f.fumi_toutyaku_info_hato layer=27 size=21 x=290 y=165 color=darkslateblue bold=bold]
-	[wait time=10]
-	;【SE】キラキラ
-	;[playse storage=kira.ogg loop=false ]
-	;【SE】鳩	
-	[playse storage=tori_hato.ogg loop=false ]
-	[eval exp="f.hato == 0"]
-[p]
-[freeimage layer = 26]
-[wait time=10]
-[freeimage layer = 27]
-[wait time=10]
-	@jump target = *fumi_toutyaku_message_owari
-[endif]
-
-[if exp="f.fumi_toutyaku_oaite.length > 1"]
-	[eval exp="f.fumi_toutyaku_info1=f.fumi_toutyaku_oaite"]
-	[eval exp="f.fumi_toutyaku_info2='からお手紙が届いております'"]
-	[ptext text=&f.fumi_toutyaku_info1 layer=27 size=21 x=290 y=150 color=darkslateblue bold=bold]
-	[wait time=10]
-	[ptext text=&f.fumi_toutyaku_info2 layer=27 size=21 x=290 y=185 color=darkslateblue bold=bold]
-	[wait time=10]
-	;【SE】キラキラ
-	[playse storage=kira.ogg loop=false ]
-[else]
-	[ptext text=&f.fumi_toutyaku_info layer=27 size=21 x=290 y=165 color=darkslateblue bold=bold]
-	[wait time=10]
-	;【SE】キラキラ
-	[playse storage=kira.ogg loop=false ]
-[endif]
-[p]
-[freeimage layer = 26]
-[wait time=10]
-[freeimage layer = 27]
-[wait time=10]
+@jump storage="okeiko_fumi_hyouji.ks" target=*fumi_hyouji
 
 *fumi_toutyaku_message_owari
 

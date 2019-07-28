@@ -1,6 +1,23 @@
 ﻿;◆B4nFWraU42さん、各キャラクタークリアリストの作成をありがとうございました。
 ;「おまけ」「情報」から参照使用させていただきたく、◆B4nFWraU42さん作成のイベント達成率計算部分の切り出しをしました。
 *start
+;イベントを見ても(読込不良のため)sf変数に反映されない場合があったため、条件式を追加しました
+[if exp="f.clearlist_out_storage != 'info_sijyou.ks'"]
+ @jump storage="eventpercent_sijyou.ks" target="*after_sf_douki"
+[endif]
+[if exp="f.event_machi_sijyou[3] == 1"]
+  [eval exp="sf.event_sijyou_sansaku_3 = 1"]
+[endif]
+[if exp="f.event_machi_sijyou[7] == 1"]
+  [eval exp="sf.event_sijyou_sansaku_7 = 1"]
+[endif]
+[if exp="f.event_machi_sijyou[12] == 1"]
+  [eval exp="sf.event_sijyou_sansaku_12 = 1"]
+[endif]
+[if exp="f.event_machi_sijyou[13] == 1"]
+  [eval exp="sf.event_sijyou_sansaku_13 = 1"]
+[endif]
+*after_sf_douki
 ;変数初期設定
 [eval exp="tf.event_Number_of_times = 0"]
 [if exp="sf.event_sijyou_event_6_1 == undefined"]

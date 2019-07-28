@@ -57,7 +57,9 @@ _  　葛城宮家執務室。[p]
 [p]
 
 ;【SE】ドアノック音(トントン)
+[if exp="sf.SE=='ON'"]
 [playse storage=door-knock.ogg loop=false ]
+[endif]
 
 [whosay name="葛城宮 晴仁" color=%mp.color]
 [葛城宮横目]

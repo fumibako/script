@@ -37,7 +37,9 @@
 [endif]
 
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様、お茶をお持ちしました」[p]
@@ -47,7 +49,9 @@
 「ありがとう、入っていいわよ」[p]
 
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 [whosay name=磯野 color="dimgray"]
 「失礼します」 [p]
@@ -56,7 +60,9 @@
 磯野は、お茶を差し出すと心配そうに尋ねた。[p]
 
 ;【SE】湯のみを置く（コトリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_yunomi_oku.ogg loop=false ]
+[endif]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様、[r]
@@ -92,7 +98,9 @@
 「では失礼します」[p]
 
 ;【SE】襖を閉める（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 
 #
 [主人公目閉]
@@ -103,7 +111,9 @@
 開いた障子から、あの愛らしい鳴き声が聞こえてきた。[p]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 驚
@@ -122,7 +132,9 @@
 [sp]でも最近は、思うような演奏が出来ていないわ」[p]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公 困り
@@ -139,9 +151,11 @@
 [fadeoutbgm time=3000]
 
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_hujieda_4
 [if exp="f.okeiko_gamen == true"]
@@ -216,7 +230,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -230,7 +246,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [sp]音色から察してくれるなんて、きっと優しい方なのね）[p]
 
 ;【SE】紙を折る（丁寧）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_oru.ogg loop=false ]
+[endif]
 
 #
 励まされて、嬉しさがこみ上げ心が温かくなった。[p]

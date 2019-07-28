@@ -63,17 +63,24 @@
 [wait time=50]
 @layopt layer=message0 visible=true
 [current layer="message0"]
+[wait time=50]
 ;テキスト全画面
 [font color=white size=27]
 ;名前欄消去
 [whosay name=""]
+[wait time=50]
 
 ;主人公編
 ;【背景】黒背景又は黒っぽい和紙風
 ;【テキスト枠】全画面、白フォント
 ;【BGM】主人公邸通常会話パート用
 ;【SE】時計（広間カチコチ）
+[stopse]
+[wait time=50]
+[if exp="sf.SE=='ON'"]
 [playse storage=tokei_hiroma.ogg loop=false ]
+[endif]
+[wait time=50]
 [r]
 （黒田様のお力になりたい）[r]
 [r]
@@ -81,6 +88,7 @@
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
 [playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+[wait time=50]
 [eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 [endif]
 [r]
@@ -98,7 +106,10 @@
 [r]
 背筋を伸ばして文机に向かう。[p]
 ;【SE】ペンで書く
+[stopse]
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_write.ogg loop=false ]
+[endif]
 
 [resetfont]
 ;==========================================================================================
@@ -232,11 +243,17 @@ jumpします。[p]
 [wait time=50]
 ;画面切り替え、【背景】黒背景又は和紙背景にぼんやりとした光が浮かび、キラキラ輝いている感じのもの（こちらで作成予定。作成に時間がかかりそうなら切り替え無し）
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
-[wait time=10]
+[wait time=50]
 ;【SE】キラキラ
+[stopse]
+[wait time=50]
+[if exp="sf.SE=='ON'"]
 [playse storage=shine.ogg loop=false ]
+[endif]
+[wait time=50]
 ;【テキスト枠】下部、白フォント
 [font color=white size=27]
+[wait time=50]
 
 これなら、黒田様のお心に届くかしら……。[p]
 [resetfont]
@@ -282,6 +299,7 @@ jumpします。[p]
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
+[wait time=50]
 #
 翌日、町にて――。[p]
 

@@ -2,6 +2,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*1_3 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [stopbgm]
 ;=================================================================================_
@@ -82,7 +85,9 @@
 [wait time=10]
 「お父様……！[sp]はい、大丈夫です」[p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「[名前]のその表情、[r]
 [sp]まるでお見合いの話を持ってきた時のようで懐かしいな」[p]
@@ -144,7 +149,9 @@
 [主人公目パチ1回]
 「ええと……？」[p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [whosay name=お母様]
 ;↓眉：下がり眉 (柔和な表情、驚きなどに向きます) [主人公眉下げ]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -314,7 +321,9 @@
 [手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 [主人公ほほえみ]
 （書けましたわ。　……さあ、明日のために寝ましょう）[p]

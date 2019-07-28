@@ -6,6 +6,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*9_3 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [layopt layer=13 visible=true]
 ;テストから飛んでくるときのレイヤー１消去
@@ -252,7 +255,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [autosave改]
 [p]
 ;【SE】乾杯
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_katya.ogg loop=false ]
+[endif]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「乾杯」[p]
 [主人公目閉じ]
@@ -284,7 +289,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 #
 大勢の親族が一同に会話し、声の波は、より一層さざめきだつ。[p]
 ;【SE】人々のざわめき（ザワザワ…屋外）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_out.ogg loop=false ]
+[endif]
 [whosay name="四条祖父" color="#888898"]
 「あの子の"新しい文通相手"は、[名字]家のような武家がいいのぉ」[p]
 [whosay name="四条祖父" color="#888898"]
@@ -411,7 +418,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [eval exp="f.bgm_storage='heavymood_goshiki.ogg'"]
 [endif]
 ;がさがさ【SE】茂み (遠くでガサガサッ)
+[if exp="sf.SE=='ON'"]
 [playse storage=shigemi_gasagasa_s.ogg loop=false ]
+[endif]
 ;=================================================================================_
 ;【背景】[洋館庭]
 [背景_四条家庭椅子2]
@@ -454,7 +463,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 #
 私が木の陰を凝視していると、子供たちが駆け込んできた。[p]
 ;【SE】子供たち(楽しげな笑い声)
+[if exp="sf.SE=='ON'"]
 [playse storage=kodomotachi_warai.ogg loop=false ]
+[endif]
 [whosay name="親戚の子 その壱" color="#807070"]
 「えんちゃん～！[sp]どこに隠れたのー！？」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
@@ -462,7 +473,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [whosay name="親戚の子 その弐" color="#807070"]
 「かんちゃん、こっちだよー！ 」[p]
 ;【SE】ザッ(衣擦れ)
+[if exp="sf.SE=='ON'"]
 [playse storage=za_kinuzure.ogg loop=false ]
+[endif]
 [四条驚き]
 [quake count=3 time=250 hmax=10 vmax=10]
 [主人公ポーズ両手]
@@ -475,7 +488,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 [whosay name="四条 華織" color="olivedrab"]
 「おっと」[p]
 ;【SE】ザッ(衣擦れ)
+[if exp="sf.SE=='ON'"]
 [playse storage=za_kinuzure.ogg loop=false ]
+[endif]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 #

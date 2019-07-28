@@ -57,7 +57,9 @@
 「ええ」[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_itokomiya
 [if exp="f.okeiko_gamen == true"]
@@ -102,7 +104,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 追伸　これは忠告ですわ。　有り難く思いなさい。[p]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [手紙読了]
 
@@ -279,7 +283,9 @@ $('.junbi_girl').remove();
 「怪しい者がいる気がしますが、私の気のせいでしょうか？」[p]
 
 ;【SE】足音（靴
+[if exp="sf.SE=='ON'"]
 [playse storage=walk_kutsu.ogg loop=false ]
+[endif]
 
 [主人公驚]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -483,7 +489,9 @@ $('.junbi_girl').remove();
 男が逃げるように店を出て行った。[p]
 
 ;【SE】走り去る(屋外)
+[if exp="sf.SE=='ON'"]
 [playse storage=run_soto.ogg loop=false ]
+[endif]
 
 [葛城宮真剣]
 [whosay name="葛城宮　晴仁" color=%mp.color]
@@ -504,7 +512,9 @@ $('.junbi_girl').remove();
 ;カタカナに合わせてみましたが表現としては平仮名らしいのでそのまま　ホッとして気が遠くなっていく。
 
 ;【SE】倒れて腕に受け止められる（フラ…サッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=taoreru_udenonakahe.ogg loop=false ]
+[endif]
 [bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=1500]
 [wait time=10]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -694,7 +704,9 @@ $('.junbi_girl').remove();
 [葛城宮退場準備 storage="bg/room_niwa.jpg" time=300]
 
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 
 [主人公目閉じ]
 [主人公眉下げ下]

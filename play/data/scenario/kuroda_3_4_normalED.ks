@@ -226,13 +226,17 @@ $(".rp_bt").remove();
 [sp]き、気にしないでください」[p]
 
 ;【SE】小鳥のはばたき
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_habataki_kotori.ogg loop=false ]
+[endif]
 [wait time=30]
 黒田様は桜へ歩を進め[r]
 枝先に下がる花に顔を埋めんばかりだ。[r]
 [r]
 ;【SE】メジロ（ピピ？問いかけるようなさえずり）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_mejiro.ogg loop=false ]
+[endif]
 [wait time=30]
 その時、[ruby text="メ"]目[ruby text="ジロ"]白が枝に止まり、花弁がひらひらと舞った。[l][r]
 [r]

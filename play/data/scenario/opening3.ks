@@ -13,6 +13,9 @@
 [eval exp="f.haikei_credit=''"]
 [wait time=10]
 [eval exp="f.select_scene='fumi_sentaku01'"]
+[wait time=50]
+[イベントシーン構築ボタン無し版]
+[wait time=50]
 ;主人公復帰表情通常　ポーズ通常
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_futuu_mayu_futuu.png" left=1 top=381 time=300 visible=true]
 [wait time=10]
@@ -24,16 +27,6 @@
 [iscript]
 $('.junbi_girl').remove();
 [endscript]
-
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=0]
-[wait time=10]
-;機能ボタン消去
-[clearfix]
-[eval exp="sf.FButton='OFF'"]
-
-[chara_mod name="message_bg" storage=&f.message_storage time=0]
-[eval exp="f.haikei_credit=''"]
 [wait time=10]
 ;メッセージレイヤサイズを会話窓用に設定変更
 [position left=240 width=700 height=170 top=415 page=fore margint="50"]
@@ -41,12 +34,6 @@ $('.junbi_girl').remove();
 [メッセージウィンドウ上ボタン表示選択肢用]
 [wait time=10]
 [eval exp="sf.FButton='ON'"]
-
-;背景変更:和紙風
-[bg wait=true storage="../fgimage/bg/plane_sakura.jpg" time=0]
-[wait time=10]
-[wait time=10]
-[eval exp="f.haikei_credit=''"]
 [wait time=10]
 
 [glink target=*kuroda_fumi1 text="<ruby>黒<rt>くろ</rt></ruby><ruby>田<rt>だ</rt></ruby>　<ruby>将<rt>まさ</rt></ruby><ruby>貴<rt>たか</rt></ruby> 様" font_color=black size=23 width="200" x=200 y=50 graphic="select_waku_x300.png"]
@@ -83,20 +70,17 @@ $('.junbi_girl').remove();
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/bg_tegami_kuroda.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
+;会話ウィンドウ・主人公顔グラ消去
+[freeimage layer = 14]
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 *kuroda_fumi1_1
 [cm]
@@ -150,20 +134,17 @@ f.kuroda_fumi1_midoku = 0;
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_zaizen.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
+;会話ウィンドウ・主人公顔グラ消去
+[freeimage layer = 14]
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
 [wait time=10]
 *zaizen_fumi1_1
 [cm]
@@ -210,21 +191,18 @@ f.zaizen_fumi1_midoku = 0;
 [wait time=10]
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_tegami_sijyou.jpg" time=100]
 [position width=640 height=520 top=50 left=160 page=fore margint="40" opacity=0]
-;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=1]
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
-[chara_mod name="girl_base" storage="toumei.gif" time=0]
 [wait time=10]
-[chara_mod name="girl_mayu" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_me" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_kuti" storage="toumei.gif" time=0]
-[wait time=10]
-[chara_mod name="girl_emo" storage="toumei.gif" time=0]
-[wait time=10]
+;会話ウィンドウ・主人公顔グラ消去
+[freeimage layer = 14]
+[freeimage layer = 15]
+[freeimage layer = 16]
+[freeimage layer = 17]
+[freeimage layer = 18]
+[freeimage layer = 19]
+[freeimage layer = 20]
 *kaori_fumi1_1
 [cm]
 [名字] [名前]様[r]
@@ -776,10 +754,14 @@ jumpします。[p]
 [主人公口通常]
 [wait time=10]
 ;【SE】襖を閉じる（ゆっくり）
-[playse storage=fusuma-close.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=fusuma-close.ogg loop=false ]
+[endif]
 [wait time=30]
 ;【SE】落ち着いた足音（フェードアウト）
-[playse storage=isono_out.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=isono_out.ogg loop=false ]
+[endif]
 [主人公ポーズ指]
 [wait time=10]
 [主人公伏目パチ1回]
@@ -901,8 +883,14 @@ jumpします。[p]
 [freeimage layer = 20]
 ;オープニング　終
 
+[wait time=10]
 ;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif" time=0]
+;[chara_mod name="message_bg" storage="toumei.gif" time=0]
+[wait time=10]
+[iscript]
+$('.message_bg').remove();
+[endscript]
+[wait time=50]
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]

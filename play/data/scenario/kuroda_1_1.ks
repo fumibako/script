@@ -143,7 +143,9 @@
 *scene3
 
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 ;【立ち絵】主人公：通常
 [主人公通常]
 [wait time=10]
@@ -162,7 +164,9 @@
 [wait time=10]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公：伏目
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
@@ -245,9 +249,13 @@
 「では、失礼いたします」[p]
 #
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 ;【SE】落ち着いた足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_out.ogg loop=false ]
+[endif]
 [wait time=500]
 ;=========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_1_1_scene5==undefined"]

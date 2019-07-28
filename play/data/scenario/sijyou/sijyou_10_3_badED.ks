@@ -15,6 +15,9 @@ $('.list').remove();
 ;○数日後手紙がかえってくる
 [stopbgm]
 [call target=*10_3 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
 ;[chara_show name="bg"]

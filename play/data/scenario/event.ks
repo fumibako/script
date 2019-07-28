@@ -312,38 +312,43 @@ TG.stat.stack["call"] = [];
 [s]
 
 *common_4_1_yes
+@layopt layer=26 visible = true
+@layopt layer=27 visible = true
 [freeimage layer = 27]
 [image layer=27 x=250 y=490 storage="button/kira_frame_lesson.png"]
-[wait time=10]
+[wait time=50]
 ;【SE】キラキラ
-[playse storage=kira.ogg loop=false ]
-
-[ptext text="では、まず『お稽古』について。お部屋下の『お稽古』窓" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
-[ptext text="からお好みのお稽古ボタンを押してください。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
+[playse storage=kira.ogg loop=false]
+[endif]
+[wait time=10]
+[ptext text="では、まず『お稽古』について。お部屋下の『お稽古』" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
+[ptext text="ボタンを押すと、お稽古をすることができます。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
 [eval exp="f.tutorial_now = 'okeiko'"]
 [p]
 
 *common_4_1_after_okeiko
+[cm]
 [freeimage layer = 27]
 [image layer=27 x=625 y=-5 storage="button/kira_button.png"]
 [wait time=10]
 [主人公目パチ1回L]
 [wait time=10]
-;【SE】キラキラ
-[playse storage=kira_s.ogg loop=false ]
 [ptext text="お部屋上の『文箱』を押すと、お相手からのお手紙" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="を読んだりお手紙を送ることができます。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
 [eval exp="f.tutorial_now = 'fumibako'"]
+[wait time=10]
 [p]
 
 *common_4_1_after_fumibako
 [freeimage layer = 27]
 [image layer=27 x=525 y=-5 storage="button/kira_button.png"]
 [wait time=10]
-;【SE】キラキラ
-[playse storage=kira.ogg loop=false ]
 [ptext text="『散策』を押すと、町へお出かけができます。" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="お手紙の話題作りにもなるかもしれません。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[wait time=10]
 [eval exp="f.tutorial_now = 'sansaku'"]
 [p]
 
@@ -351,10 +356,9 @@ TG.stat.stack["call"] = [];
 [freeimage layer = 27]
 [image layer=27 x=425 y=-5 storage="button/kira_button.png"]
 [wait time=10]
-;【SE】キラキラ
-[playse storage=kira_s.ogg loop=false ]
 [ptext text="『情報』を押すと、お相手の情報やお手紙を" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="見たりすることができます。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[wait time=10]
 [eval exp="f.tutorial_now = 'info'"]
 [p]
 *common_4_1_after_info
@@ -363,8 +367,10 @@ TG.stat.stack["call"] = [];
 [chara_mod name="A_mayu" storage="girl/L/mayu_yowa.png" time=0]
 [wait time=10]
 [freeimage layer = 27]
+[wait time=10]
 [ptext text="仲を深めるには返信だけでなく、こちらから" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="手紙を書くことも大切でございます。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
+[wait time=10]
 [eval exp="f.tutorial_now = 'write'"]
 [p]
 *common_4_1_write
@@ -372,7 +378,12 @@ TG.stat.stack["call"] = [];
 [image layer=27 x=625 y=-5 storage="button/kira_button.png"]
 [wait time=10]
 ;【SE】キラキラ
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=kira_s.ogg loop=false ]
+[endif]
+[wait time=10]
 [ptext text="こちらから手紙を書くことは『文箱』の" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="画面下の方からできます。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
 [chara_mod name="A_kuti" storage="girl/L/kuti_hohoemi.png" time=0]
@@ -383,13 +394,14 @@ TG.stat.stack["call"] = [];
 [ptext text="説明は以上になります。" layer=27 size=18 x=280 y=150 color=darkslateblue bold=bold]
 [ptext text="何かお困りのことがありましたら、お呼びください。" layer=27 size=18 x=280 y=188 color=darkslateblue bold=bold]
 ;使い終わったチュートリアル位置変数を削除
+[wait time=10]
 [iscript] 
 	delete f.tutorial_now; 
 [endscript]
 [p]
 [freeimage layer = 26]
 [freeimage layer = 27]
-@jump target=*common_4_1_2
+@jump storage="event.ks" target=*common_4_1_2
 
 *common_4_1_no
 [freeimage layer = 26]
@@ -421,10 +433,12 @@ TG.stat.stack["call"] = [];
 @layopt layer=message0 page=fore visible = true
 [current layer="message0"]
 ;メッセージレイヤサイズをお稽古フキダシ窓用に設定変更
+[wait time=50]
 [position left=360 width=500 height=170 top=250 page=fore margint="50"]
 ;フキダシ枠表示【動作軽量化の為、最初のみchara_new使用。後はchara_modで切り替え】
+[wait time=50]
 [chara_mod name="sys_fukidasi" storage="button/frame_lesson_fukidasi.png" time=0]
-[wait time=10]
+[wait time=50]
 [chara_mod name="A_kuti" storage="girl/L/kuti_hohoemi.png" time=0]
 [wait time=10]
 [font size=25]
@@ -468,7 +482,11 @@ TG.stat.stack["call"] = [];
 [image layer=27 x=250 y=490 storage="button/kira_frame_lesson.png"]
 [wait time=10]
 ;【SE】キラキラ
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [ptext text="お稽古をなさってみてはいかがですかな？" layer=27 size=18 x=290 y=150 color=darkslateblue bold=bold]
 [ptext text="お部屋下の『お稽古』窓から選べますぞ。" layer=27 size=18 x=290 y=188 color=darkslateblue bold=bold]
 [p]
@@ -524,7 +542,11 @@ TG.stat.stack["call"] = [];
 [image layer=27 x=525 y=-5 storage="button/kira_button.png"]
 [wait time=10]
 ;【SE】キラキラ
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [wait time=10]
 [if exp="f.sijyou_au == 1 && f.okeiko_month == 9 || f.okeiko_month == 10"]
@@ -587,7 +609,11 @@ TG.stat.stack["call"] = [];
 [image layer=27 x=625 y=-5 storage="button/kira_button.png"]
 [wait time=10]
 ;【SE】キラキラ
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=kira_s.ogg loop=false ]
+[endif]
 [image layer=26 x=250 y=120 storage="button/frame_lesson_message.png"]
 [wait time=10]
 [ptext text="【磯野】　お嬢様。右上の『文箱』は" layer=27 size=18 x=270 y=150 color=darkslateblue bold=bold]
@@ -668,7 +694,11 @@ TG.stat.stack["call"] = [];
 [image layer=27 x=625 y=-5 storage="button/kira_button.png"]
 [wait time=10]
 ;【SE】キラキラ
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=kira_s.ogg loop=false ]
+[endif]
 「お返事は右上の『文箱』からできます。[r]
 [sp]お忘れにならないよう、お気をつけくださいませ」[p]
 
@@ -678,7 +708,7 @@ TG.stat.stack["call"] = [];
 「ありがとう、磯野」[p]
 #
 [eval exp="f.event_advice=1"]
-@jump target=*event_owari
+@jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 
 [endreplay] 
@@ -711,7 +741,11 @@ TG.stat.stack["call"] = [];
 [image layer=27 x=250 y=490 storage="button/kira_frame_lesson.png"]
 [wait time=10]
 ;【SE】キラキラ
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [ptext text="そろそろお稽古をなさってはいかがですかな？" layer=27 size=18 x=290 y=150 color=darkslateblue bold=bold]
 [ptext text="お部屋下の『お稽古』窓から選べますぞ。" layer=27 size=18 x=290 y=188 color=darkslateblue bold=bold]
 [p]
@@ -766,7 +800,11 @@ TG.stat.stack["call"] = [];
 [image layer=27 x=525 y=-5 storage="button/kira_button.png"]
 [wait time=10]
 ;【SE】キラキラ
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [ptext text="【磯野】　お嬢様。今日は良いお天気ですね。" layer=27 size=18 x=270 y=150 color=darkslateblue bold=bold]
 [ptext text="『散策』に出られてはいかがでしょう？" layer=27 size=18 x=345 y=188 color=darkslateblue bold=bold]
 ;メッセージレイヤを表示
@@ -836,7 +874,11 @@ TG.stat.stack["call"] = [];
 [image layer=27 x=625 y=-5 storage="button/kira_button.png"]
 [wait time=10]
 ;【SE】キラキラ
+[stopse]
+[wait time=10]
+[if exp="sf.SE=='ON'"]
 [playse storage=kira_s.ogg loop=false ]
+[endif]
 「どなたにもお返事をされませんと、ご破談になってしまいます。[r]
 [sp]お返事は右上の『文箱』からできますぞ」[p]
 
@@ -849,7 +891,7 @@ TG.stat.stack["call"] = [];
 「ありがとう、磯野」[p]
 #
 [eval exp="f.event_advice=1"]
-@jump target=*event_owari
+@jump storage="event.ks" target=*event_owari
 
 ;回想記録終了 
 [endreplay] 
@@ -889,7 +931,7 @@ TG.stat.stack["call"] = [];
 [whosay name="磯野" color="dimgray"]
 「お嬢様。お手紙のお返事はこれ以上お待ちできません……。[r]
 [if exp="f.para_shujinkou_shukujodo >= 18"]
-@jump target=*common_5_4_katuraginomiya
+@jump storage="event.ks" target=*common_5_4_katuraginomiya
 [endif]
 [主人公目パチ1回]
 [wait time=10]
@@ -965,7 +1007,7 @@ TG.stat.stack["call"] = [];
 [wait time=1000]
 [eval exp="sf.ED_kuroda_gameover5_4=1"]
 
-@jump target=*event_ED
+@jump storage="event.ks" target=*event_ED
 
 ;回想記録終了 
 [endreplay] 
@@ -1026,7 +1068,7 @@ TG.stat.stack["call"] = [];
 （お返事を書けなかったお詫びと別れについて、心を込めて書きましょう。[r]
 [sp]もし、どこかでお会いすることがあっても、笑顔でお話できるように）[p]
 [eval exp="f.katuraginomiya_only = 1"]
-@jump target=*event_owari
+@jump storage="event.ks" target=*event_owari
 
 ;◆イベント共通ルート葛城宮のみ進行時「badED」
 *replay_common_katuraginomiya_only_badED
@@ -1129,7 +1171,7 @@ TG.stat.stack["call"] = [];
 [sp]　　　　　　　　終[p]
 [wait time=1000]
 [eval exp="sf.ED_katuraginomiya_only_gameover=1"]
-@jump target=*event_ED
+@jump storage="event.ks" target=*event_ED
 
 
 
@@ -1246,7 +1288,7 @@ TG.stat.stack["call"] = [];
 [sp]　　　　　　　　終[p]
 [wait time=1000]
 [eval exp="sf.ED_kuroda_gameover8_4=1"]
-@jump target=*event_ED
+@jump storage="event.ks" target=*event_ED
 
 ;回想記録終了 
 [endreplay] 
@@ -1293,5 +1335,5 @@ TG.stat.stack["call"] = [];
 [freeimage layer = 29]
 [chara_new name="bg" storage="bg/title.jpg"]
 [chara_show left=1 top=1 layer=1 name="bg" time=0]
-@jump storage="test.ks"
+@jump storage="event.ks" storage="test.ks"
 [s]

@@ -73,7 +73,7 @@
 ;[chara_mod name="bg" storage="bg/I9IhvvVdPo/bg_tegami_blue.jpg"]
 [endif]
 ;===============================================================
-@jump target=test
+@jump storage="sijyou/test_ed_credit.ks" target=test
 
 *start
 [stopbgm]
@@ -602,12 +602,10 @@ f.skip=false;
 
 *end
 ;初期化処理はバッジ取得処理の流れの関係でevent.ksの*event_ED以降に移動しました。◆jsYiJcqRkk
-
-[if exp="f.okeiko_gamen == true"]
-@jump storage="event.ks" target=*event_ED
+;エンディング後に四条テストメニューに移動してしまう場合があることを複数回確認しましたので、条件処理を変更します
+[if exp="tf.test_sijyou == true"]
+	@jump storage="test_sijyou.ks"
 [endif]
 
-
-
-@jump storage="test_sijyou.ks"
+@jump storage="event.ks" target=*event_ED
 [s]

@@ -3,6 +3,8 @@
 ;テスト用[eval exp="sf.event_8_week_asuka = 0"]
 [call target=*asuka storage="sijyou/preload_sijyou.ks"]
 [wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [iscript]
 $(".1_fore").empty();
 [endscript]
@@ -261,7 +263,9 @@ $(".1_fore").empty();
 [whosay name="飛鳥伯父様"]
 「そのことは許してくれよ」[p]
 ;【SE】雷（ゴロゴロ
+[if exp="sf.SE=='ON'"]
 [playse storage=thunder_gorogoro.ogg loop=false ]
+[endif]
 [fadeoutbgm time=3000]
 #
 ;↓目：通常 [主人公目通常]
@@ -269,7 +273,9 @@ $(".1_fore").empty();
 [wait time=10]
 皆が楽しく会話をしていると[p]
 ;【SE】落雷
+[if exp="sf.SE=='ON'"]
 [playse storage=thunder.ogg loop=false ]
+[endif]
 ;驚き
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -287,7 +293,9 @@ $(".1_fore").empty();
 @layopt layer=13 visible=true
 突如、雲を引き裂くような雷がなった後、雨がざんざんと降りはじめた――。[p]
 ;【SE】雨
+[if exp="sf.SE=='ON'"]
 [playse storage=rain.ogg loop=false ]
+[endif]
 ;==========================================================
 [wait time=50]
 @layopt layer=fix visible=false
@@ -535,7 +543,9 @@ $(".1_fore").empty();
 業を煮やした殿様は[r]
 [ruby text=かき]杜[ruby text=つばた]若を荒縄で縛り上げ家来どもに命じて……[p]
 ;【SE】水音
+[if exp="sf.SE=='ON'"]
 [playse storage=mizu_ike.ogg loop=false ]
+[endif]
 [sp][r][r]
 池に放り込んでしまったの。[p]
 [sp][r]
@@ -656,7 +666,9 @@ $(".1_fore").empty();
 「？　おやすみなさいませ」[p]
 ;ＳＥ確認できないのでわからない
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 #？？？
 「ザワザワ……」[p]
 [whosay name="飛鳥紗代子"]
@@ -1284,7 +1296,9 @@ _　お手紙から財前様は、とても現実的で[r]
 [whosay name="飛鳥紗代子"]
 （ふぅ。猫様にしては、ずいぶんと大きな音でしたわね）[p]
 ;【SE】軽い足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_out_walk.ogg loop=false ]
+[endif]
 [暗転２ time=400]
 [wait time=100]
 [暗転]

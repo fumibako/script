@@ -4,6 +4,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*10_3 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 ;===========================================================
 ;【背景】ヒロインの部屋
 [freeimage layer = 1]
@@ -165,7 +168,9 @@
 「！」[p]
 「どうぞ、入って頂戴」[p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [whosay name="磯野" color="dimgray"]
 「文矢様からお手紙が届きました」[p]
 ;○数日後手紙がかえってくる
@@ -177,7 +182,9 @@
 #
 磯野から、手紙を受けとると静かに読み始めた。[p]
 ;【SE】鈴虫の音
+[if exp="sf.SE=='ON'"]
 [playse storage=mushi_suzumushi.ogg loop=false ]
+[endif]
 *seen3
 ;/////手紙///
 *fumi_toutyaku_fumiya
@@ -479,7 +486,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [resetfont]
 *skip_emotion2
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目閉じ]
 [wait time=10]

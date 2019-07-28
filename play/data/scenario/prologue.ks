@@ -5,7 +5,7 @@
 TG.stat.play_bgm = false;
 [endscript]
 ;ロード時点で再生していたBGMを停止します。
-[stopbgm ]
+[stopbgm]
 [else]
 [iscript]
 /*BGMを再生する*/
@@ -44,6 +44,8 @@ TG.stat.play_se = true;
 
 [cm]
 [stopbgm]
+;↓セーブデータ見出し用変数をセット
+[eval exp="f.savedata_midashi = '共通ルート：'"]
 
 ;背景変更:プロローグイントロ全画面。[chara_mod]のタイミングでフリーズを何度か経験したため[bg]タグの方が安定するのではないかと試行してみます。
 [freeimage layer=1]
@@ -116,31 +118,38 @@ TG.stat.play_se = true;
 
 [cm]
 ;【SE】ペンで書く
-[playse storage=pen_write.ogg loop=false]
+[if exp="sf.SE=='ON'"]
+	[playse storage=pen_write.ogg loop=false]
+[endif]
 　××○九年　十月　二十一日　[名字]家　邸内
 [autosave]
 [p]
-;[emb exp="sf.tyrano_ver"][p]
-;↑◆テスト表示用
-;キャラ定義
-;[chara_new name="fumiya" storage="toumei.gif" jname="<span style='color:#538a8a;'>文矢</span>"]
-;[chara_show name="fumiya"]
 [whosay name=文矢 color="#538a8a"]
 「……よし」
 [layopt layer=13 visible=true]
 ;【SE】ペンのキャップを閉める
-[playse storage=pen_katya.ogg loop=false]
+[if exp="sf.SE=='ON'"]
+	[playse storage=pen_katya.ogg loop=false]
+[endif]
+[wait time=50]
 [p]
 #
 ペンが紙を走る音が聞こえるほど静まり返った広い邸内の一室に、[r]
 この部屋の持ち主である文矢の緊張した声が響いた。
 [p]
 ;【SE】紙に触れる（パラリ）
-[playse storage=paper_open.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_open.ogg loop=false ]
+[endif]
+[wait time=50]
 文矢は今し方書き終えた手紙を手に取り真剣な表
-情で文面の確認を始める。[p]
+情で文面の確認を始める。
+[p]
 ;【SE】軽い足音（フェードイン）
-[playse storage=girl_in_run.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=girl_in_run.ogg loop=false ]
+[endif]
+[wait time=50]
 
 しばらくすると[r]
 障子の向こうが騒がしくなり始め、大きな足音が近づいてきた。
@@ -152,7 +161,9 @@ TG.stat.play_se = true;
 [endif]
 *prologue3
 ;【SE】襖を開ける（勢いよく）
-[playse storage=fusuma-open_fast.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=fusuma-open_fast.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [resetfont]
@@ -163,12 +174,16 @@ TG.stat.play_se = true;
 「あっ！　ごめんなさいお兄様……でも、でもね！[r]
 [sp]これ見てください！！」
 ;【SE】紙に触れる（早・軽）
-[playse storage=paper_open_fast.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_open_fast.ogg loop=false]
+[endif]
 [p]
 #
 妹の[名前]は興奮さめやらぬといった様子で、手に
 ;【SE】紙に触れる（スッ）
-[playse storage=paper_su.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_su.ogg loop=false ]
+[endif]
 していた一枚の紙を掲げて満面の笑みを浮かべた。
 [autosave]
 [p]
@@ -216,7 +231,9 @@ TG.stat.play_se = true;
 [whosay name=文矢 color="#538a8a"]
 「ふふ、これは未来の大切な人への手紙だよ」
 ;【SE】紙を折る（丁寧）
-[playse storage=paper_oru.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_oru.ogg loop=false ]
+[endif]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「未来の？？」[p]
@@ -242,7 +259,9 @@ TG.stat.play_se = true;
 そう呟いた妹は、一瞬考え込むように顔を伏せ視
 線をさ迷わせる。[r]
 ;【SE】紙に触れる（スッ）
-[playse storage=paper_su.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_su.ogg loop=false ]
+[endif]
 
 その視線が母親の手紙の前で止まった。[p]
 
@@ -264,7 +283,9 @@ TG.stat.play_se = true;
 [endif]
 *prologue9
 ;【SE】落ち着いた足音（フェードイン）
-[playse storage=isono_in.ogg loop=false]
+[if exp="sf.SE=='ON'"]
+	[playse storage=isono_in.ogg loop=false]
+[endif]
 [fadeoutbgm time=2000]
 瞬間、妹ははっと顔を上げ何か言葉を発しようと口を開いたが
 [p]
@@ -282,7 +303,9 @@ TG.stat.play_se = true;
 [r]
 
 ;【SE】襖を開ける（ゆっくり）
-[playse storage=fusuma-open.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [sp][ruby text="し"]四[ruby text="じょう"]条[ruby text="か"]華[ruby text="おり"]織様がいらっしゃいました」
 [autosave]
 [p]
@@ -328,7 +351,9 @@ TG.stat.play_se = true;
 既にそわそわと腰を浮かせていた妹は[r]
 すぐに立ち上がると勢いよく駆け出した。
 ;【SE】軽い足音（すぐ止まる）
-[playse storage=girl_out_run_stop.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=girl_out_run_stop.ogg loop=false ]
+[endif]
 [autosave]
 [p]
 
@@ -342,7 +367,9 @@ TG.stat.play_se = true;
 [endif]
 *prologue12
 ;【SE】軽い足音（小走りフェードアウト）
-[playse storage=girl_out_kobasiri.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=girl_out_kobasiri.ogg loop=false ]
+[endif]
 #
 元気のいい返事と共に小走りになった足音が遠ざかっていく。[r]
 [名前]の姿が見えなくなったのを確認してから文矢は大きなため息を吐いた。
@@ -388,7 +415,9 @@ TG.stat.play_se = true;
 #
 先ほど封をしたばかりの手紙を手渡す。[r]
 ;【SE】紙に触れる（スッ）
-[playse storage=paper_su.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_su.ogg loop=false ]
+[endif]
 磯野はすぐに宛先を確認すると、納得した様子で頷いた。
 [autosave]
 [p]
@@ -449,13 +478,16 @@ TG.stat.play_se = true;
 [wait time=10]
 ;[枠消]
 
+[wait time=50]
 ;会話ウィンドウ消去
-[chara_mod name="message_bg" storage="toumei.gif"]
+;[chara_mod name="message_bg" storage="toumei.gif"]
+[freeimage layer = 14]
 [wait time=10]
 ;機能ボタン消去
 [clearfix]
 [eval exp="sf.FButton='OFF'"]
 
+[wait time=50]
 ;メッセージレイヤを非表示
 @layopt layer=message0 page=fore visible=false
 [wait time=10]

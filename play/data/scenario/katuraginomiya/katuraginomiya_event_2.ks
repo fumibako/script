@@ -24,7 +24,9 @@
 [p]
 ;行き交う足音や、子供たちの明るく元気な声が響く。上にします。
 ;【SE】子供たち
+[if exp="sf.SE=='ON'"]
 [playse storage=kodomotachi.ogg loop=false ]
+[endif]
 
 [if exp="tf.test_gamen == true"]
 テストページから開始しています。シナリオ終点にjumpしますか？[r]
@@ -99,7 +101,9 @@ jumpします。[p]
 ふと私の視線に気づいたように殿下の瞳が私を[ruby text=とら]捉える。[p]
 ;表示まで時間かかるので近づく足音
 ;【SE】足音（靴
+[if exp="sf.SE=='ON'"]
 [playse storage=walk_kutsu.ogg loop=false ]
+[endif]
 [葛城宮微笑み]
 [wait time=10]
 [暗転２ storage="bg/bg_machi.jpg"]
@@ -123,7 +127,9 @@ jumpします。[p]
 [p]
 
 ;【SE】子供たち
+[if exp="sf.SE=='ON'"]
 [playse storage=kodomotachi.ogg loop=false ]
+[endif]
 
 [chara_mod name="girl_kuti" storage="girl/S/kuti_hohoemi.png" time=0]
 [wait time=10]
@@ -311,7 +317,9 @@ jumpします。[p]
 「自分も国も変えたい。 そう思い、貴族院に入った。[r]
 [sp]この国は、四民平等を[ruby text=うた]謳いながら不平等だ」[p]
 ;【SE】子供たち
+[if exp="sf.SE=='ON'"]
 [playse storage=kodomotachi_warai.ogg loop=false ]
+[endif]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
@@ -448,10 +456,14 @@ jumpします。[p]
 #
 ;情景文
 ;【SE】鳥たち（複数の鳥の声）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_yatyou.ogg loop=false ]
+[endif]
 窓辺では小鳥がさえずり、久しぶりの安穏とした時間に身を任せる。[p]
 ;【SE】ドアノック音(トントン)
+[if exp="sf.SE=='ON'"]
 [playse storage=door-knock.ogg loop=false ]
+[endif]
 
 [chara_mod name="katuraginomiya_me" storage="katuraginomiya/me_futuu.png" time=0]
 [wait time=10]
@@ -460,7 +472,9 @@ jumpします。[p]
 [autosave]
 
 ;【SE】ドアが開く
+[if exp="sf.SE=='ON'"]
 [playse storage=door_open.ogg loop=false ]
+[endif]
 
 [whosay name="秘書" color=%mp.color]
 [chara_mod name="katuraginomiya_mayu" storage="katuraginomiya/mayu_nayami.png" time=0]

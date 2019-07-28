@@ -1,6 +1,8 @@
 *replay_common_ausuka
 *start
-[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*bonyou storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [stopbgm]
 ;=================================================================================_
 [freeimage layer = 1]

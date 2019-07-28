@@ -3,7 +3,7 @@
 ;======================================================================================
 *fumi_hyouji_hujieda
 [if exp="f.event_hujieda[1] != 1"]
-@jump target=&tf.fumi_hyouji_owari_target
+@jump storage="info_fumi_hyouji_hujieda.ks" target=&tf.fumi_hyouji_owari_target
 [endif]
 ;◆未読の表示
 [if exp="f.midoku_list_hairetsu[f.fumi_hairetsu1][f.fumi_hairetsu2] > 0"]

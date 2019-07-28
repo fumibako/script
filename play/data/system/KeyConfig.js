@@ -92,7 +92,7 @@ var __tyrano_key_config = {
             "action" : "auto"
         },
         "swipe_right_1" : {
-            //"action" : "menu" ;スマホでスワイプ時にメニューが出るのを防止。◆B4nFWraU42さん、ご助言をありがとうございます。
+            "action" : "menu"
         },
         "swipe_down_1" : {
             "action" : "load"

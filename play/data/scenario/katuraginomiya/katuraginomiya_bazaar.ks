@@ -28,7 +28,9 @@
 （憧れのデエトのようなものになるのかしら）[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_katuraginomiya_32
 [if exp="f.okeiko_gamen == true"]
@@ -105,7 +107,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [endif]
 [手紙葛城宮読了 fumi_number=]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 
 [主人公眉下げ下]
@@ -683,7 +687,9 @@ jumpします。[p]
 [sp]きっとこれが愛おしい気持ち）[p]
 
 ;【SE】時計の鐘（ボーン）
+[if exp="sf.SE=='ON'"]
 [playse storage=tokei_tokei_kane.ogg loop=false ]
+[endif]
 #
 正午の鐘の音が鳴った。[p]
 ;原文：けれど、正午の鐘の音が鳴った。[p]

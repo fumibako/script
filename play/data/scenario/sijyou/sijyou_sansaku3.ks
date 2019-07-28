@@ -3,7 +3,9 @@
 ;=======================お芝居の準備中です================================================================
 *sansaku
 [stopbgm]
-[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
+;↓preloadからreturn時に読込不良が複数回起きたため、waitを入れます(wait50ではまだ読込不良が起きたので100に)
+[wait time=100]
+[call target=*bonyou storage="sijyou/preload_sijyou2.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]
@@ -194,8 +196,10 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 ;爽やかな感じになると良い
 ;現状、去り際かっこいい感じな表情
 ;てにをは～が足りてない
+[wait time=50]
 [if exp="f.event_replay != 'sijyou'"]
 [eval exp="f.sijyou_sobo=true]
+[eval exp="f.event_machi_sijyou[3] = 1"]
 [eval exp="sf.event_sijyou_sansaku_3 = 1"]
 [endif]
 [イベントシーン終了]
@@ -239,5 +243,5 @@ _　お[ruby text=ば]祖[ruby text=ぁ]母様と御一緒にお家の前まで�
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
-[イベントシーン構築]
+[call target=*start storage="macro_tati_girl2.ks"]
 ;[主人公ポーズ通常]

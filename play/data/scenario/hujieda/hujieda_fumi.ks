@@ -396,7 +396,6 @@ $(".1_fore").empty();
 [endif]
 ;最大12行くらい？
 ;#
-[endif]
 [手紙藤枝 fumi_number=]
 *hujieda_fumi07_1
 [cm]
@@ -1511,7 +1510,6 @@ $(".1_fore").empty();
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*fumi_sintya_close" size=5 x=880 y=24 width=50 height=50]
 [s]
 
-[endif]
 *fumi_sintya_close
 [cm]
 [clearfix]
@@ -1561,7 +1559,6 @@ $(".1_fore").empty();
 [button fix=true graphic="../fgimage/button/button_close80x80.png" target="*hujieda_fumi_last_close" size=5 x=880 y=24 width=50 height=50]
 [s]
 
-[endif]
 *hujieda_fumi_last_close
 [cm]
 [clearfix]

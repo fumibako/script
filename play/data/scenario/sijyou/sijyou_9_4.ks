@@ -5,6 +5,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*9_3 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;=================================================================================_
 *seen0
@@ -115,7 +118,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織様、お元気そう）[p]
 ;[太鼓SE]ドンドンドン…
+[if exp="sf.SE=='ON'"]
 [playse storage=taiko.ogg loop=false ]
+[endif]
 [chara_mod name="girl_me" storage="girl/S/me_futuu.png" time=0]
 [wait time=10]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -129,7 +134,9 @@
 それでも、珍道中に巻き込まれながらも、縁あって刀を取り戻す……[r]といった一御家騒動、人情のお話であった。[p]
 ;スクリプト担：↑「命を受けていたが」→「命を受けていた男が」に変更してみました。「家老の倅が」と悩みましたが、刀を無くした人物と取り戻した人物が別ですし、ぼかした方が読みやすいでしょうか
 ;[SE拍手]
+[if exp="sf.SE=='ON'"]
 [playse storage=hakushu.ogg loop=false ]
+[endif]
 [if exp="sf.BGM=='ON'"]
 [fadeoutbgm time=3000]
 [endif]
@@ -440,11 +447,14 @@
 [autosave改]
 [p]
 ;【SE】ガサガサッ
+[if exp="sf.SE=='ON'"]
 [playse storage=shigemi_gasagasa_short.ogg loop=false ]
+[endif]
 [whosay name="華織" color="olivedrab"]
 「こちらこそ。また会いたいですね」[p]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
+[endif]
 #
 [主人公目パチ1回]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
@@ -502,7 +512,9 @@
 [whosay name="？？？" color=%mp.color]
 「アンタだけ幸せになろうなんて、ズルい」[p]
 ;【SE】走り去る(屋外)
+[if exp="sf.SE=='ON'"]
 [playse storage=run_soto.ogg loop=false ]
+[endif]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
 ;【BGM】哀しげな曲（攻略対象側…に限らず使っていただいて大丈夫です

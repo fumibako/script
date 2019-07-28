@@ -24,7 +24,9 @@
 [p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 #
 磯野は、ゆっくりと[ruby text=ちん]沈[ruby text=うつ]鬱に新聞を差し出した。[p]
@@ -39,7 +41,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「これは！」[p]
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
@@ -85,7 +89,9 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 ;メッセージをもどします
 ;復帰を別にすればいのよ!ひらめき
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [resetfont]
 [freeimage layer = 29 time=1000]
 [wait time=1000]
@@ -187,7 +193,9 @@
 [whosay name="今原中将" color=%mp.color]
 「苦労知らずの青二才が！」[p]
 ;【SE】机（ドン）
+[if exp="sf.SE=='ON'"]
 [playse storage=tukue_don.ogg loop=false ]
+[endif]
 「私は貴殿と違い、苦労してこの地位を手に入れた！[r]
 [sp]国を守るためにも金や裏の繋がりが必要なんだ！[r]
 [sp]そんなことも分らないのか！」[p]

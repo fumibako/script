@@ -58,7 +58,9 @@ $('.loding_pic1').remove();
 
 
 ;【SE】時計（広間カチコチ）
-[playse storage=tokei_hiroma.ogg loop=false]
+[if exp="sf.SE=='ON'"]
+	[playse storage=tokei_hiroma.ogg loop=false]
+[endif]
 
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_yubi_me_fusi_mayu_yowa_ase.png" left=1 top=381 time=300 visible=true]
 ;主人公画像表示【マクロで切り替え】
@@ -132,7 +134,9 @@ jumpします。[p]
 
 [stopse]
 ;【SE】時計（広間カチコチ）
-[playse storage=tokei_hiroma.ogg loop=false]
+[if exp="sf.SE=='ON'"]
+	[playse storage=tokei_hiroma.ogg loop=false]
+[endif]
 
 [chara_mod name="girl_te" storage="girl/S/yubi.png" time=0]
 [wait time=10]
@@ -164,7 +168,10 @@ jumpします。[p]
 [wait time=10]
 
 ;【SE】落ち着いた足音（フェードイン）
-[playse storage=isono_in.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=isono_in.ogg loop=false ]
+[endif]
+
 #
 もう一度大きなため息を吐くと同時に、廊下の軋む音が耳に入った。[r]
 
@@ -195,7 +202,9 @@ jumpします。[p]
 「ありがとう、入っていいわよ」[p]
 
 ;【SE】襖を開ける（ゆっくり）
-[playse storage=fusuma-open.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 [stopbgm]
 
@@ -215,7 +224,10 @@ jumpします。[p]
 にこやかな笑みを浮かべて入ってくる。[p]
 
 ;【SE】湯のみを置く（コトリ）
-[playse storage=tya_yunomi_oku.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=tya_yunomi_oku.ogg loop=false ]
+[endif]
+
 コトリ、と私の前に温かな湯気のたつお茶が置かれた。[r]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
@@ -237,7 +249,9 @@ jumpします。[p]
 [autosave]
 [p]
 ;【SE】茶器に触れる（カチャ）
-[playse storage=tya_katya.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=tya_katya.ogg loop=false ]
+[endif]
 
 
 [chara_mod name="girl_te" storage="girl/S/katate.png" time=0]
@@ -292,7 +306,9 @@ jumpします。[p]
 [endif]
 *scene5
 ;【SE】紙に触れる（スッ）
-[playse storage=paper_su.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_su.ogg loop=false ]
+[endif]
 #
 磯野の視線に押し負けるように実際に手に取ってみると、[r]
 ずっしりとした重みが両手にかかる。
@@ -513,7 +529,9 @@ jumpします。[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ooake.png" time=0]
 [wait time=10]
 ;【SE】茶器（カチャ）
-[playse storage=tya_katya.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=tya_katya.ogg loop=false ]
+[endif]
 [wait time=70]
 [主人公驚]
 [wait time=10]
@@ -595,7 +613,9 @@ jumpします。[p]
 [wait time=10]
 ドキリと、先ほどまでの憂鬱な気持ちが嘘のように胸が高鳴った。[r]
 ;【SE】紙に触れる（パラリ）
-[playse storage=paper_open.ogg loop=false ]
+[if exp="sf.SE=='ON'"]
+	[playse storage=paper_open.ogg loop=false ]
+[endif]
 私は期待に胸を膨らませて冊子の表紙を開いた。
 [autosave]
 [p]

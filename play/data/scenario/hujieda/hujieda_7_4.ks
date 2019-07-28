@@ -36,7 +36,9 @@
 [endif]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [手紙主人公]
 *hujieda_fumi_girl_a_1
@@ -91,7 +93,9 @@
 [手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [主人公目通常]
 [主人公目パチ1回]
 [主人公口ほほえみ]
@@ -121,7 +125,9 @@
 [eval exp="f.bgm_storage='okeiko_yuusuzumi.ogg'"]
 [endif]
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 [主人公通常]
 [主人公目パチ1回]
@@ -133,10 +139,12 @@
 [sp]待って下さいね」[p]
 
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
 
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 #
 私は鳩の足に[ruby text=くく]括り付けてある手紙をほどき、自分の手紙を同じように[r]
@@ -148,7 +156,9 @@
 「鳥文の君に よろしくね」[p]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 #
 [主人公口ほほえみ]
@@ -156,7 +166,9 @@
 [主人公眉下げ下]
 鳩が飛び立つのを見送って、私は手紙を開いた。[p]
 ;【SE】鳩の羽ばたき（バサバサッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_habataki_hato.ogg loop=false ]
+[endif]
 
 [if exp="f.okeiko_gamen != true"]
 @jump target=deback1
@@ -164,7 +176,9 @@
 
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_hujieda_5
 [iscript]
@@ -251,7 +265,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 
 *deback2
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公　目伏せ頬染
 [主人公柔和ほほえみ１]

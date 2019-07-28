@@ -8,7 +8,7 @@
 ;======================================================================================
 *first
 ;make.ksで使用する際、ここに共通の読み込みを書きます。今はないのでここは書いてません。
-@jump target=end_sub0
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub0
 ;無駄な読み込みしない
 ;=======================================================================================
 ;◇プリロードサブルーチン　targetで呼び出し方法　シナリオで呼び出し設定してます。
@@ -107,7 +107,7 @@
 ;葛城宮face　グッドエンド　好感度他パラメータ
 [preload storage="data/image/face_katuraginomiya_smile.png" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください 
 ;◇以降はマクロを読み込むだけですので再利用してください。
 ;以降は、無駄な読み込みはしない
@@ -128,7 +128,7 @@
 ;【背景】皇室手紙
 [preload storage="data/fgimage/bg/bg_tegami_kousitsu_akabudou.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -150,7 +150,7 @@
 ;【背景】茶室
 [preload storage="data/fgimage/bg/I9IhvvVdPo/tyasitu.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -169,7 +169,7 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -186,7 +186,7 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -205,7 +205,7 @@
 ;【背景】主人公邸 庭の見える部屋：夜
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -233,7 +233,7 @@
 [eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_kSakura.png','data/fgimage/girl/S/girl_all_kSakura_toji.png']"]
 [preload storage=&tf.preload_ishou wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -253,7 +253,7 @@
 ;【背景】町
 ;[preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
 ;==========================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -272,7 +272,7 @@
 ;【背景】新聞
 [preload storage="data/fgimage/bg/test_bg_sinbun.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -290,7 +290,7 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true] 
 ;=======================================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=====================================================================================
@@ -309,7 +309,7 @@
 ;【イメージ】バラ
 [preload storage="data/fgimage/bg/B4nFWraU42/bara_image.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=====================================================================================
@@ -329,7 +329,7 @@
 ;【背景】バラ園
 ;[preload storage="data/fgimage/bg/I9IhvvVdPo/baraen.jpg"]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -350,7 +350,7 @@
 ;【背景】蟷螂団
 [preload storage="data/fgimage/bg/B4nFWraU42/katuragi_kamakiri.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -369,7 +369,7 @@
 ;【背景】会議室
 [preload storage="data/fgimage/bg/B4nFWraU42/kaigisitu.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -386,7 +386,7 @@
 ;【背景】会議室
 [preload storage="data/fgimage/bg/B4nFWraU42/kaigisitu.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -406,7 +406,7 @@
 ;【背景】演説
 [preload storage="data/fgimage/bg/I9IhvvVdPo/enzetu.jpg" wait=true] 
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -423,7 +423,7 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 ;[preload storage="data/fgimage/bg/room_niwa.jpg" wait=true] 
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -442,7 +442,7 @@
 ;【背景】執務室 
 [preload storage="data/fgimage/bg/I9IhvvVdPo/situmu.jpg" wait=true] 
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -461,7 +461,7 @@
 ;【背景】執務室 
 [preload storage="data/fgimage/bg/I9IhvvVdPo/situmu.jpg" wait=true] 
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -502,7 +502,7 @@
 [preload storage=&tf.preload_ishou wait=true]
 ;=============================================================================
 [endif]
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -528,7 +528,7 @@
 ;【背景】桜
 [preload storage="data/fgimage/bg/bg_sakura.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -544,7 +544,7 @@
 ;【背景】町
 [preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -559,7 +559,7 @@
 ;//////////////////////////使用背景メモ///////////////////////////////////////////
 ;凡庸です。
 ;=============================================================================
-@jump target=end_sub
+@jump storage="katuraginomiya/preload_katuraginomiya.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================

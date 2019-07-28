@@ -409,7 +409,9 @@ $('.junbi').remove();
 「暖かそうで、可愛らしいですね。それに、甘い香り……」[p]
 
 ;【SE】茂み（ガサガサ）
+[if exp="sf.SE=='ON'"]
 [playse storage=shigemi_gasagasa.ogg loop=false ]
+[endif]
 #
 香りに気をとられていると、近くで物音がした。[p]
 
@@ -440,7 +442,9 @@ $('.junbi').remove();
 *scene7
 
 ;【SE】茂み（ガサガサ）
+[if exp="sf.SE=='ON'"]
 [playse storage=shigemi_gasagasa.ogg loop=false ]
+[endif]
 #
 籠を背負った男が、あわてたようにきのこを拾い上げている。[r]
 ひげを生やした山男の[ruby text="ふう"]風[ruby text="ぼう"]貌だ。[p]

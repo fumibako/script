@@ -54,7 +54,9 @@
 [wait time=10]
 [p]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
@@ -92,7 +94,9 @@
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;メッセージをもどします
 [resetfont]
 [freeimage layer = 29 time=1000]

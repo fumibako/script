@@ -4,7 +4,7 @@
 ;=======================お芝居の準備中です===========================================
 *sansaku
 [stopbgm]
-[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
+[call target=*bonyou storage="sijyou/preload_sijyou2.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]
@@ -29,7 +29,9 @@
 [主人公ほほえみ]
 （私も、絵画に励んでみようかしら）[p]
 ;【SE】ザッ(衣擦れ)
+[if exp="sf.SE=='ON'"]
 [playse storage=za_kinuzure.ogg loop=false ]
+[endif]
 [主人公驚]
 [quake count=1 time=100 hmax=1 vmax=1]
 [whosay name="？？？" color=%mp.color]
@@ -48,7 +50,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「えっ？」[p]
 ;【SE】走り去る(屋外)
+[if exp="sf.SE=='ON'"]
 [playse storage=run_soto.ogg loop=false ]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (行ってしまわれました)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -56,6 +60,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (でも、後ろ姿が昔の華織お兄様に似てたような……[r]
 [sp]いえ、きっと気のせいですね)[p]
+[wait time=50]
+[eval exp="f.event_machi_sijyou[1] = 1"]
 [eval exp="sf.event_sijyou_sansaku = 1"]
 [イベントシーン終了]
 

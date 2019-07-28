@@ -101,7 +101,9 @@ f.preload_images_tati = ["data/fgimage/kuroda/base_haori_y580_kangae.png","data/
 「大丈夫でございますよ、お嬢様」[p]
 
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 [wait time=10]

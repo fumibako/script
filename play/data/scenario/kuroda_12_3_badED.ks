@@ -60,7 +60,9 @@ $(".rp_bt").remove();
 [主人公ふぅ閉]
 [wait time=10]
 ;【SE】時計（広間カチコチ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tokei_hiroma.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「……ふぅ」[p]
@@ -270,7 +272,9 @@ $('.junbi_girl').remove();
 外には雪がしんしんと、積もりはじめている。[p]
 
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 [wait time=500]
 聞きなれた足音が部屋の外から響いてくる。[r]
 磯野が心配して、様子を見に来たのだろう。[l][r]

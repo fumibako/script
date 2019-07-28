@@ -179,9 +179,6 @@ $("input[name='sf.girl_namae']").val("文奈");
 [endscript]
 ;editとlinkは干渉してクリックできなくなるので、buttonがオススメです
 [button graphic="kettei.png" target=*ck_name x=650 y=250]
-
-
-
 [s]
 
 *ck_name
@@ -428,7 +425,9 @@ TG.stat.play_se = true;
 
 [cm]
 ;【SE】ペンで書く
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_write.ogg loop=false]
+[endif]
 　××０９年　１０月　２１日　[名字]家　邸内
 [autosave]
 [p]
@@ -439,18 +438,24 @@ TG.stat.play_se = true;
 「……よし」
 [layopt layer=13 visible=true]
 ;【SE】ペンのキャップを閉める
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_katya.ogg loop=false]
+[endif]
 [p]
 #
 ペンが紙を走る音が聞こえるほど静まり返った広い邸内の一室に、[r]
 この部屋の持ち主である文矢の緊張した声が響いた。
 [p]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 文矢は今し方書き終えた手紙を手に取り真剣な表
 情で文面の確認を始める。[p]
 ;【SE】軽い足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_in_run.ogg loop=false ]
+[endif]
 
 しばらくすると[r]
 障子の向こうが騒がしくなり始め、大きな足音が近づいてきた。
@@ -462,7 +467,9 @@ TG.stat.play_se = true;
 [endif]
 *prologue3
 ;【SE】襖を開ける（勢いよく）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open_fast.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [resetfont]
@@ -473,12 +480,16 @@ TG.stat.play_se = true;
 「あっ！　ごめんなさいお兄様……でも、でもね！[r]
 [sp]これ見てください！！」
 ;【SE】紙に触れる（早・軽）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open_fast.ogg loop=false ]
+[endif]
 [p]
 #
 妹の[名前]は興奮さめやらぬといった様子で、手に
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 していた一枚の紙を掲げて満面の笑みを浮かべた。
 [autosave]
 [p]
@@ -526,7 +537,9 @@ TG.stat.play_se = true;
 [whosay name=文矢 color="#538a8a"]
 「ふふ、これは未来の大切な人への手紙だよ」
 ;【SE】紙を折る（丁寧）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_oru.ogg loop=false ]
+[endif]
 [p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「未来の？？」[p]
@@ -552,7 +565,9 @@ TG.stat.play_se = true;
 そう呟いた妹は、一瞬考え込むように顔を伏せ視
 線をさ迷わせる。[r]
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 その視線が母親の手紙の前で止まった。[p]
 
@@ -574,7 +589,9 @@ TG.stat.play_se = true;
 [endif]
 *prologue9
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false]
+[endif]
 [fadeoutbgm time=2000]
 瞬間、妹ははっと顔を上げ何か言葉を発しようと口を開いたが
 [p]
@@ -592,7 +609,9 @@ TG.stat.play_se = true;
 [r]
 
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [sp]四条華織様がいらっしゃいました」
 [autosave]
 [p]
@@ -638,7 +657,9 @@ TG.stat.play_se = true;
 既にそわそわと腰を浮かせていた妹は[r]
 すぐに立ち上がると勢いよく駆け出した。
 ;【SE】軽い足音（すぐ止まる）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_out_run_stop.ogg loop=false ]
+[endif]
 [autosave]
 [p]
 
@@ -652,7 +673,9 @@ TG.stat.play_se = true;
 [endif]
 *prologue12
 ;【SE】軽い足音（小走りフェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_out_kobasiri.ogg loop=false ]
+[endif]
 #
 元気のいい返事と共に小走りになった足音が遠ざかっていく。[r]
 [名前]の姿が見えなくなったのを確認してから文矢は大きなため息を吐いた。
@@ -698,7 +721,9 @@ TG.stat.play_se = true;
 #
 先ほど封をしたばかりの手紙を手渡す。[r]
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 磯野はすぐに宛先を確認すると、納得した様子で頷いた。
 [autosave]
 [p]

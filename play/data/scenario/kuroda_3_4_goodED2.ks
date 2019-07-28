@@ -73,11 +73,15 @@
 ;１１章、【後日談：goodED分岐】
 ;=============================================
 ;【SE】うぐいす（ケキョケキョ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
+[endif]
 [wait time=10]
 ;【背景他】手紙用画面
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [wait time=10]
 [主人公退場]
 [wait time=10]
@@ -118,7 +122,9 @@
 ……[p]
 
 ;【SE】パラリ(手紙)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [wait time=10]
 [freeimage layer = 29]
 [wait time=10]

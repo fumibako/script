@@ -456,9 +456,11 @@ jumpします。[p]
 #
 そう感じて心が温かくなった。[p]
 *seen_end1
-
+[wait time=50]
+[eval exp="f.event_machi_katuraginomiya[2]=1"]
+[eval exp="f.katuraginomiya_fumi_inou = 3"]
 [eval exp="sf.event_katuragi_sansaku2 = 1"]
-
+[wait time=50]
 ;@jump storage="event.ks" target=*event_owari
 [イベントシーン終了]
 [イベントシーン終了２]

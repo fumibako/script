@@ -33,7 +33,9 @@
 [wait time=10]
 [p]
 ;【SE】時計（控え目カチコチ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tokei_hikaeme.ogg loop=false ]
+[endif]
 [主人公目通常]
 [主人公口ほほえみ]
 #
@@ -117,7 +119,9 @@
 [主人公目閉じ]
 （華織お兄様と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_sijyou_koukando=f.para_sijyou_koukando + 1"]
 [endif]
@@ -148,7 +152,9 @@
 [主人公目閉じ]
 （財前様と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_sijyou_zaizen=f.para_zaizen_koukando + 1"]
 [endif]
@@ -176,7 +182,9 @@
 [主人公目閉じ]
 （黒田様と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [if exp="f.okeiko_gamen == true"]
 [eval exp="f.para_kuroda_koukando = f.para_kuroda_koukando + 1"]
 [endif]
@@ -210,7 +218,9 @@
 ;藤枝イベントをみてる場合
 （お箏が上手になりますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [eval exp="f.para_hujieda_koukando=f.para_hujieda_koukando + 1"]
 [eval exp="f.para_shujinkou_j_koto=f.para_shujinkou_j_koto + 1"]
 ;[eval exp="f.sansaku_machi_seika_txt='お箏が１上がりました'"]
@@ -222,7 +232,9 @@
 [else]
 （今、気になっているお稽古が上達しますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [iscript]
 tf.rand = Math.floor( Math.random() * 4) + 1
 if(tf.rand == 0){
@@ -270,7 +282,9 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 [主人公目閉じ]
 （淑女らしくなれますように……）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 #
 私は星に願った。[p]
 ;[eval exp="f.sansaku_machi_seika_txt='淑女度が１上がりました'"]
@@ -318,7 +332,9 @@ f.event_cmn_seika_txt = "語学が１上がりました";
 [主人公目閉じ]
 （殿下と親しくできますように）[p]
 ;【SE】キラッ(短め：例：磯野説明シーン、パラup時に使用
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [eval exp="f.para_katuraginomiya_koukando=f.para_katuraginomiya_koukando + 1"]
 ;スキップフラグ
 [eval exp="tf.not_wish = 0"]

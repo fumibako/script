@@ -7,7 +7,9 @@
 ;///////////////////////////////////////////////////////////
 [stopbgm]
 ;↓テスト画面からも背景マクロを参照できるように追記します。参照ラベルが違っていたらご調整ください◆jsYiJcqRkk
-[call target=*end_sub storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;==============================================================================================
 [freeimage layer = 1]
@@ -262,7 +264,9 @@
 ;びりびり～♪
 [sp]全部ぜんぶ捨ててやる！」[p]
 ;【SE】紙を破く（ビリビリたくさん破き捨てる）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_biribiri.ogg loop=false]
+[endif]
 [wait time=200]
 [四条目大]
 [whosay name="華織" color="olivedrab"]
@@ -270,7 +274,9 @@
 [stopse]
 ;SEの位置は適当
 ;【SE】走り去る(屋外)
+[if exp="sf.SE=='ON'"]
 [playse storage=run_soto.ogg loop=false ]
+[endif]
 #
 破られた手紙を拾いながら、僕は考える。[p]
 [whosay name="華織" color="olivedrab"]

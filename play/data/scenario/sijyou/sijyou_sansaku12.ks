@@ -2,7 +2,9 @@
 ;=======================お芝居の準備中です=================================
 *sansaku
 [stopbgm]
-[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*bonyou storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]
@@ -60,6 +62,8 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公目パチ1回]
 （……私も、帰りましょうか）[p]
+[wait time=50]
+[eval exp="f.event_machi_sijyou[12] = 1"]
 [eval exp="sf.event_sijyou_sansaku_12 = 1"]
 [イベントシーン終了]
 

@@ -3,7 +3,7 @@
 ;======================================================================================
 *fumi_hyouji_katuraginomiya
 [if exp="f.event_katuraginomiya[1] != 1"]
-@jump target=&tf.fumi_hyouji_owari_target
+@jump storage="info_fumi_hyouji_katuraginomiya.ks" target=&tf.fumi_hyouji_owari_target
 [endif]
 
 ;◆未読の表示

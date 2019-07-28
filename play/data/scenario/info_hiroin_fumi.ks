@@ -1,5 +1,7 @@
 *start
 [cm]
+[skipstop]
+[wait time=50]
 [eval exp="f.viewing_storage = 'info_hiroin_fumi.ks'"]
 @layopt layer=message1 page=fore visible = false
 [freeimage layer = 26]
@@ -21,7 +23,7 @@ if (typeof f.fumi_report_info === "undefined") {
 [endscript]
 [if exp="f.fumi_report_info.length == 0"]
 	[ptext layer=27 name="list,osirase" page=fore text="お手紙を出すと、こちらに「履歴」が表示されます。" x=100 y=100 size=16 color=saddlebrown visible=true]
-	@jump target=*common
+	@jump storage="info_hiroin_fumi.ks" target=*common
 [endif]
 ;[emb exp="f.fumi_report_info.length"]
 
@@ -37,6 +39,9 @@ if (typeof f.fumi_report_info === "undefined") {
 [if exp="f.fumi_report_info.length > 10"]
 			[glink name="list" storage="info_hiroin_fumi.ks" target=*page1 text="→" size=16 width="20" x=870 y=10 graphic="select_waku_x150.png" font_color=black]
 [endif]
+;f.fumi_report_info.length=[emb exp="f.fumi_report_info.length"][r]
+;f.fumi_report_info［0］=[emb exp="f.fumi_report_info[0]"][r]
+;f.fumi_report_info［10］=[emb exp="f.fumi_report_info[10]"][p]
 
 [iscript]
 for(i = 0; i < f.fumi_report_info.length; i++){
@@ -51,17 +56,24 @@ for(i = 0; i < f.fumi_report_info.length; i++){
 	//}
 }
 //共通の処理へ:[iscript]外に出しました。なぜか内側に入れると19行目で次ページに表示が変わってしまったためです(こちらの環境由来の不具合かもしれません)◆jsYiJcqRkk
-//tyrano.plugin.kag.ftag.startTag("jump",{target:"common"});
+//tyrano.plugin.kag.ftag.startTag("jump",{storage:"info_hiroin_fumi.ks", target:"common"});
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
 
 *page1
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 10"]
-	@jump target=*page0
+	@jump storage="info_hiroin_fumi.ks" target=*page0
 [endif]
 [cm]
 [freeimage layer = 27]
+[wait time=50]
 [glink name="list" storage="info_hiroin_fumi.ks" target=*page0 text="←" size=16 width="20" x=20 y=10 graphic="select_waku_x150.png" font_color=black]
+[wait time=50]
 [if exp="f.fumi_report_info.length > 20"]
 			[glink name="list" storage="info_hiroin_fumi.ks" target=*page2 text="→" size=16 width="20" x=870 y=10 graphic="select_waku_x150.png" font_color=black]
 [endif]
@@ -74,11 +86,19 @@ for(i=10; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
+;↑この@jumpが実行されない不具合を複数回経験しましたので、保険の意味合いで再度同じ@jumpを置きます↓
+@jump storage="info_hiroin_fumi.ks" target="*common"
 
 *page2
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 20"]
-	@jump target=*page1
+	@jump storage="info_hiroin_fumi.ks" target=*page1
 [endif]
 [cm]
 [freeimage layer = 27]
@@ -94,11 +114,19 @@ for(i=20; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
 
 *page3
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 30"]
-	@jump target=*page2
+	@jump storage="info_hiroin_fumi.ks" target=*page2
 [endif]
 [cm]
 [freeimage layer = 27]
@@ -114,11 +142,19 @@ for(i=30; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
 
 *page4
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 40"]
-	@jump target=*common
+	@jump storage="info_hiroin_fumi.ks" target=*common
 [endif]
 [cm]
 [freeimage layer = 27]
@@ -134,11 +170,19 @@ for(i=40; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
 
 *page5
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 50"]
-	@jump target=*common
+	@jump storage="info_hiroin_fumi.ks" target=*common
 [endif]
 [cm]
 [freeimage layer = 27]
@@ -154,11 +198,19 @@ for(i=50; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
 
 *page6
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 60"]
-	@jump target=*common
+	@jump storage="info_hiroin_fumi.ks" target=*common
 [endif]
 [cm]
 [freeimage layer = 27]
@@ -174,11 +226,19 @@ for(i=60; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
 
 *page7
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 70"]
-	@jump target=*common
+	@jump storage="info_hiroin_fumi.ks" target=*common
 [endif]
 [cm]
 [freeimage layer = 27]
@@ -194,11 +254,19 @@ for(i=70; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
 
 *page8
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 80"]
-	@jump target=*common
+	@jump storage="info_hiroin_fumi.ks" target=*common
 [endif]
 [cm]
 [freeimage layer = 27]
@@ -214,11 +282,19 @@ for(i=80; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
 
 *page9
+[clearstack]
+[wait time=50]
+[skipstop]
+[wait time=50]
 [if exp="f.fumi_report_info.length < 90"]
-	@jump target=*common
+	@jump storage="info_hiroin_fumi.ks" target=*common
 [endif]
 [cm]
 [freeimage layer = 27]
@@ -234,15 +310,24 @@ for(i=90; i<f.fumi_report_info.length; i++){
 	}
 }
 [endscript]
-@jump target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target=*common
+[wait time=50]
+@jump storage="info_hiroin_fumi.ks" target="*common"
+[wait time=50]
 
 
 *common
 ;タイトル
+[wait time=10]
+[layopt layer=27 visible=true]
+[wait time=50]
 [ptext layer=27 name="list,osirase" page=fore text="手　紙　履　歴" x=390 y=20 size=25 color=saddlebrown visible=true]
 ;戻るボタン
-[button name="list" target="back" text"戻る" x=866 y=550 graphic="back.png"]
+[wait time=50]
+[button name="list" storage="info_hiroin_fumi.ks" target="back" text"戻る" x=866 y=550 graphic="back.png"]
 [wait time=10]
+[s]
 [s]
 
 *back

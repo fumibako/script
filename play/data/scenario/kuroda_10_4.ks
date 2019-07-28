@@ -120,7 +120,9 @@ f.para_kuroda_koukando = f.para_kuroda_koukando + 4;
 [wait time=10]
 「早速、お返事を書きましょう」[p]
 ;【SE】サラサラと書く音
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_write.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公：目閉じ
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]

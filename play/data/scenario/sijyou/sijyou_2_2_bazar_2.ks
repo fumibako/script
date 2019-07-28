@@ -6,6 +6,9 @@ $(".1_fore").empty();
 [endscript]
 [stopbgm]
 [call target=*2_2 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;====================================================
 [cm]

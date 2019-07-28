@@ -59,7 +59,9 @@
 「一体、何の騒ぎかしら」[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;==========================スクリプト・全画面表示の間に設定　新聞===============================
 #
 ;【テキスト全画面】;[新聞] 裏で画面構成 test_bg_sinbun.jpg
@@ -89,7 +91,9 @@
 [r]
 [sp]また首都を中心に取り付け騒ぎに及ぶ所もあり……[p]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 ;メッセージをもどします
@@ -299,7 +303,9 @@
 私と財前様が車に乗ると、運転手さんが車を走らせた。[p]
 
 ;【SE】車が走っている音（車内）
+[if exp="sf.SE=='ON'"]
 [playse storage=car_inside.ogg loop=false ]
+[endif]
 
 ;【立ち絵】財前：通常
 [whosay name="財前美彬" color="#7a65b2"]

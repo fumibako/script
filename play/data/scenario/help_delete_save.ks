@@ -41,7 +41,7 @@
 
 
 
-@jump target=*common
+@jump storage="help_delete_save.ks" target=*common
 
 *howto
 [cm]
@@ -92,7 +92,7 @@
 
 
 
-@jump target=*common
+@jump storage="help_delete_save.ks" target=*common
 
 
 *common

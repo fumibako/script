@@ -3,6 +3,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*1_3 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [stopbgm]
 ;=================================================================================_
@@ -72,7 +75,9 @@
 *seen2
 [layopt layer=fix visible=false]
 ;【SE】鳥たち（複数の鳥の声）　適当なSEで合間を誤魔化す
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_yatyou.ogg loop=false ]
+[endif]
 [image layer=29 x=0 y=0 storage="bg/bg_ryoutei.jpg" time=1000]
 [mtext text=&f.haikei_credit layer=29 size=18 x=20 y=10 color=#5b4513 fadeout=false in_delay=0]
 [wait time=10]

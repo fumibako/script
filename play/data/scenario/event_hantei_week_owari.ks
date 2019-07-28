@@ -149,6 +149,7 @@
 	[eval exp="f.event_target='*replay_katuraginomiya_11_4'"]
 	[eval exp="f.event_type='talk'"]
 	[eval exp="f.event_katuraginomiya[11]=1"]
+	[eval exp="f.event_jiki = 'weekend'"]
 	@jump storage="event.ks" target=*start
 [endif]
 

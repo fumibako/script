@@ -10,7 +10,8 @@
 ;=======================お芝居の準備中です==================================
 *sansaku
 [stopbgm]
-[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
+[wait time=100]
+[call target=*bonyou storage="sijyou/preload_sijyou2.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]
@@ -78,6 +79,12 @@ _　思うの！」
 (何だったのでしょうか？)
 [endif]
 [p]
+[if exp="f.okeiko_month == 9"]
+	[eval exp="f.event_machi_sijyou[5] = 1"]
+[elsif exp="f.okeiko_month == 12"]
+;[17]なのは時期によってパターンが違うため	
+	[eval exp="f.event_machi_sijyou[17] = 1"]
+[endif]
 
 [eval exp="sf.event_sijyou_sansaku_5 = 1"]
 [イベントシーン終了]

@@ -41,7 +41,9 @@
 磯野から手紙を受け取り、お兄様からの手紙を読む。[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 ;シナリオのみはスキップ　一時変数が等しいは滅多に反応しない
 [if exp="tf.test_katuraginomiya == true"]
@@ -139,7 +141,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 ……私の心は決まりつつある。[p]
 [主人公伏目パチ1回]
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_katuraginomiya_29
 
@@ -228,7 +232,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 [手紙葛城宮読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公 通常　
 [主人公通常]

@@ -3,6 +3,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*3_1 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;◆展覧会：[主人公ポーズ四条紫通常][主人公ポーズ四条紫指][主人公ポーズ四条紫片手][主人公ポーズ片手]
 ;=================================================================================_
@@ -66,7 +69,9 @@
 [endif]
 [主人公目閉じ]
 ;【SE】ペンで書く
+[if exp="sf.SE=='ON'"]
 [playse storage=pen_write.ogg loop=false ]
+[endif]
 私は、彼の人を想い、筆をとる。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （華織さま……お手紙、読ませていただきました。[r]
@@ -190,7 +195,9 @@
 ;[chara_mod name="bg" storage="toumei.gif"]
 ;ちゅんちゅんSE　ここでは、目白かな
 ;【SE】メジロ（ピィピュイ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_mejiro.ogg loop=false ]
+[endif]
 [if exp="f.para_shujinkou_shukujodo >= 200"]
 ;～～～～～～～淑女度高い～～～～～
 ;磯野が四条の手紙をもってきて、返事がなく、心配して呼びかけるが、すぐに起きて返事をする主人公
@@ -207,7 +214,9 @@
 私、こんな場所で寝てしまったのね）[p]
 ;SE布音
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 [whosay name="磯野" color="dimgray"]
 「お嬢様、今はお休みでしたか？」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -217,7 +226,9 @@
 私は、素早く身だしなみを整えると、いつも通りに整然と筆をとった姿勢で磯野を迎えいれた。[p]
 ;SE襖
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [whosay name="磯野" color="dimgray"]
 「失礼します」[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -230,7 +241,9 @@
 [whosay name="？？？" color="dimgray"]
 「お……様……？」[p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [whosay name="磯野" color="dimgray"]
 「お嬢様！ 大丈夫ですか？！」[p]
 [背景_庭]
@@ -238,7 +251,9 @@
 [主人公伏目]
 「？　う……ん……
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 [主人公ポーズ片手]
 [主人公通常]
 あら、磯野……？」[p]
@@ -350,7 +365,9 @@
 [主人公ポーズ通常]
 [主人公ほほえみ]
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 [wait time=2]
 #
 部屋から下がる磯野は、何となく微笑んでいるような気がしたけれど、[r]
@@ -360,7 +377,9 @@
 ;サウンドノベルくさい
 ;～～～～～～～～～～手紙2～～～～～～～～～～～～～～
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 *fumi_toutyaku_sijyou_102
 [if exp="f.okeiko_gamen == true"]
 [iscript]	
@@ -477,7 +496,9 @@ f.para_sijyou_koukando = f.para_sijyou_koukando + f.sijyou_koukando_up_event_fum
 心に咲き誇る[ruby text=れん]恋[ruby text=む]夢にうたた寝をすると、庭木の上でメジロが愛らしく鳴いた。[p]
 ;暖かい陽気で、まだ少し眠いよ！ということでもあり。
 ;【SE】メジロ（ピィピュイ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_mejiro.ogg loop=false ]
+[endif]
 [wait time=1000]
 [暗転]
 ;[chara_mod name="bg" storage="toumei.gif" time=10]
@@ -648,7 +669,9 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 [eval exp="f.bgm_storage='sittori_umikaze.ogg'"]
 [endif]
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 ;賑わう会場の表現
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （結構な人達がいるわ。華織様の作品を見るためにこれだけの方達が[r]
@@ -735,7 +758,9 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 （こちらは、複数の生け花で、夏の[ruby text=かわず]蛙の跳ねる姿を表現されているの[r]
 [sp]ですね……）[p]
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 ;～引き立て悪役の登場～
 [whosay name="華道家の弟子達"]
 「ふーん…まあまあだな」[p]
@@ -845,7 +870,9 @@ tyrano.plugin.kag.config.defaultLineSpacing = '6';
 共に壇上に現れた。[p]
 ;室内ざわざわSE
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 [背景_四条金屏風1]
 ;[chara_mod name="bg" storage="bg/B4nFWraU42/bg_sijyou_kinbyoubu.jpg"]
 [layopt layer=13 visible=true]

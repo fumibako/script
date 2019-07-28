@@ -6,6 +6,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*2_1 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;マクロ作成ありがとうございます(スクリプト担
 ;macro_etc.ksに[暗転]マクロを移動
@@ -384,7 +387,9 @@ $('.bg1').remove();
 [whosay name=華道の先生 color=%mp.color]
 「さて、今日は華道を始めるにあたって……」[p]
 ;【SE】軽い足音（小走りフェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_in_run.ogg loop=false ]
+[endif]
 [主人公通常]
 ;〜〜〜〜〜〜〜〜シーン 先生と主人公とキャラの立ち位置説明〜〜〜〜〜〜～～～～～～ここまで
 #
@@ -413,7 +418,9 @@ $('.bg1').remove();
 ;【SE】人々のざわめき（ザワザワ…暗くせわしない感じの効果音含む）
 ;[playse storage=zawa_dark.ogg loop=false ]
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 #
 ;[四条眉困り]
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
@@ -756,7 +763,9 @@ $('.bg1').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （もっと、他に華道の楽しみを伝えれるようなお言葉があれば……）[p]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 ;==================================四条ｱｯﾌﾟ=======================================
 #
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/B4nFWraU42/sijyou_kyousitu1.jpg" time=100]
@@ -1041,7 +1050,9 @@ $('.bg1').remove();
 [wait time=10]
 [sp]お付き合いして華織様と呼ぶようになりましたが……）[p]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 ;全体や続きを読み解かないと何が言いたいの？ってなる
 [chara_mod name="sijyou_mayu" storage="sijyou/mayu_komari.png" time=0]
 [wait time=10]
@@ -1219,7 +1230,9 @@ $('.bg1').remove();
 [sp]では、こちらの花と、僕が見本で持ってきた[ruby text=ぼ]牡[ruby text=たん]丹[ruby text=かご]籠で、いけて[r]
 [sp]みましょうか」[p]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 ;==============================四条ｱｯﾌﾟ=============================
 #
 [wait time=2]

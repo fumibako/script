@@ -4,7 +4,8 @@
 ;[chara_mod name="bg" storage="toumei.gif"]
 [stopbgm]
 ;↓テスト画面からも背景マクロを参照できるように追記します。参照ラベルが違っていたらご調整ください◆jsYiJcqRkk
-[call target=*end_sub storage="sijyou/preload_sijyou.ks"]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;背景　床の間のみ表示　夕方バージョン
 [freeimage layer = 1]
@@ -84,7 +85,9 @@
 [主人公目閉]
 私は、華織様を前にして、花を手に取り、器にいけていく。[p]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公眉困り]
 （何でしょうか……今日は[ruby text=まと]纏まりが良くないわ）[p]
@@ -109,7 +112,9 @@
 #
 私が困惑していると、華織様が優美な微笑みで私の手を取った。[p]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公頬染め]
 [主人公目大]
@@ -118,7 +123,9 @@
 [whosay name="華織" color="olivedrab"]
 「葉を少なくしてみては如何でしょうか？」[p]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 #
 華織様の冷たい指先に鼓動が高まる。[p]
 ;水触ってるからとか前のイベントの印象を持ってくる
@@ -222,7 +229,9 @@ _　……一人で抱え込まないで下さい……）[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （…………）[p]
 ;【SE】時計（控え目カチコチ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tokei_hikaeme.ogg loop=true]
+[endif]
 #
 華織様の驚かれた顔が、遠く感じる。[p]
 [四条_隣_眉困り]
@@ -250,7 +259,9 @@ _　……一人で抱え込まないで下さい……）[p]
 [autosave改]
 [p]
 ;【SE】軽い足音（小走りフェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_out_run.ogg loop=false ]
+[endif]
 #
 [whosay name=華道の先生 color=%mp.color]
 [主人公目伏]
@@ -268,7 +279,9 @@ _　……一人で抱え込まないで下さい……）[p]
 私は、声がした先を振り返った。[p]
 ;SEは想像なので・・・変更しても大丈夫です
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 #
 そこには、流行りの洋服を嫌味なく[ruby text=まと]纏う、都会的な淑女が佇んでいた。[p]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
@@ -557,7 +570,9 @@ _　だから私は……）
 ;華織(この方は、なんでしょうか？)
 [主人公目伏]
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
 [四条_隣_目閉じ]
 「それでは、ごきげんよう。その時は、夫人としてお会いしましょう」[p]
@@ -569,7 +584,9 @@ _　だから私は……）
 ;読みにくい
 [whosay name=湖池屋男爵令嬢 color=%mp.color]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 「ごきげんよう」[p]
 ;お相手が素敵な方で羨ましいですわね
 ;~~~~~~~~~~~~~~退場へのシーン~~~~~~~~~~~~~~~~~~~~~

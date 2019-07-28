@@ -57,7 +57,9 @@
 
 「黒田様はいつも紫色をお召しだから、この色が合うかしら」[p]
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 ;【立ち絵】主人公：ほほえみ
 [主人公ほほえみ]
 [wait time=10]
@@ -74,7 +76,9 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「どうぞ、入っていいわよ」[p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [whosay name="磯野" color="dimgray"]
 「失礼いたします」[p]
 [stopbgm]
@@ -150,11 +154,15 @@
 [whosay name="磯野" color="dimgray"]
 「失礼いたします」[p]
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 [wait time=500]
 [stopse]
 ;【SE】落ち着いた足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_out.ogg loop=false ]
+[endif]
 #
 ……[p]
 磯野はいつも、他家について深くは語らない。
@@ -174,12 +182,16 @@
 （他の者が、何か聞いているかもしれないわ。そっと尋ねてみましょう）[p]
 #
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 ;【背景】暗転
 [bg wait=true method='crossfade' storage="../fgimage/bg/anten.jpg" time=2000]
 [wait time=10]
 ;【SE】軽い足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_out_walk.ogg loop=false ]
+[endif]
 ……[p]
 ;==========================================================================================
 [whosay name="女中"]
@@ -202,7 +214,9 @@
 [主人公通常]
 [wait time=10]
 ;【SE】軽い足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_in_walk.ogg loop=false ]
+[endif]
 [wait time=500]
 
 ;【背景】暗転終了、庭背景フェードイン
@@ -219,7 +233,9 @@
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 [whosay name="磯野" color="dimgray"]
 「はい。お嬢様」[p]
 [主人公目パチ1回]
@@ -230,7 +246,9 @@
 
 [stopse]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [whosay name="磯野" color="dimgray"]
 「失礼いたします」[p]
 

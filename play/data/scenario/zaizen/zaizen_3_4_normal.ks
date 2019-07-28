@@ -159,7 +159,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [手紙財前読了 fumi_number=]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [whosay name="磯野" color="dimgray"]
 「お嬢様、入ってもよろしいでしょうか？」

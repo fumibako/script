@@ -4,6 +4,9 @@
 [stopbgm]
 ;個別ルート前の個別イベントなので四条プリロード画面表示
 [call target=*sansaku6 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 ;==========================================================================
 ;【背景】主人公邸 庭の見える部屋：夏
 [freeimage layer = 1]
@@ -66,7 +69,9 @@
 無論。 悪い気は、しなかった為、[r]
 私は、裾を直して立ち上がると中庭へと向かうことにした。[p]
 ;【SE】ヒグラシ（カナカナカナ）
+[if exp="sf.SE=='ON'"]
 [playse storage=semi_higurasi.ogg loop=false ]
+[endif]
 ;せっかくなのでセミSEにしてみました。ヒグラシは夏の終わりですが夕方感が出るかと選択。他のセミに変えてくださっても大丈夫です(スクリプト担
 ;◎縁側でたまたま居合わせた父と花火を見ながら夕涼みする。
 [主人公目閉じ]
@@ -122,7 +127,9 @@ $('.junbi_girl').remove();
 #
 [ruby text="たそ"]黄[ruby text="がれ"]昏に近づいてくる頃、花火が、ひゅるりと舞い上がり、散っていく。[p]
 ;【SE】花火(打ち上げ：中)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_m.ogg loop=false ]
+[endif]
 ;アニメーション実行
 [kanim name="hababi" keyframe="opcy" time="6000" count=infinite]
 [image name="junbi_girl" layer=29 storage="girl/S/girl_all_me_toji_mayu_futuu.png" left=1 top=381 time=300 visible=true]
@@ -148,7 +155,9 @@ $('.junbi_girl').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そうなのですか？」[p]
 ;【SE】花火(打ち上げ：小)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_s.ogg loop=false ]
+[endif]
 [主人公目パチ1回]
 [wait time=10]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
@@ -167,7 +176,9 @@ $('.junbi_girl').remove();
 #
 後ろから聞き覚えのある声がして振り向くと、お盆を手にした磯野が佇んでいた。[p]
 ;【SE】花火(打ち上げ：小)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_s.ogg loop=false ]
+[endif]
 
 [主人公口ほほえみ]
 [wait time=10]
@@ -194,7 +205,9 @@ $('.junbi_girl').remove();
 「ところで、[名前]よ。[r]
 [sp]華織くんとは、上手くいってるのかね？」[p]
 ;【SE】花火(打ち上げ：小)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_s.ogg loop=false ]
+[endif]
 [主人公驚]
 [wait time=10]
 ;◎主人公、華織との思い出にひたる。
@@ -237,7 +250,9 @@ $('.hababi').remove();
 [autosave改]
 [p]
 ;【SE】花火(線香花火)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_senkou.ogg loop=false ]
+[endif]
 
 [テキスト全画面白文字無背景]
 ;背景 線香花火
@@ -338,7 +353,9 @@ $('.junbi_girl').remove();
 そんなことを口早に言って、[r]
 お父様は、少しばかり寂しい気な表情を浮かべた。[p]
 ;【SE】花火(打ち上げ：小)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_s.ogg loop=false ]
+[endif]
 [kanim name="hababi" keyframe="opcy" time="6000" ]
 
 ;◎主人公は大丈夫だからと窘めた。
@@ -375,7 +392,9 @@ $('.hababi').remove();
 #
 私は、身近にある幸せを大切にしようと思う。[p]
 ;【SE】花火(打ち上げ：大)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_big.ogg loop=false ]
+[endif]
 ;このモノローグはフラグ回収
 [主人公目伏柔]
 [wait time=10]
@@ -397,6 +416,8 @@ $('.hababi').remove();
 [iscript]
 $('.hababi_2').remove();
 [endscript]
+[wait time=50]
+[eval exp="f.event_machi_sijyou[6] = 1"]
 [eval exp="sf.event_sijyou_sansaku_6 = 1"]
 [イベントシーン終了]
 

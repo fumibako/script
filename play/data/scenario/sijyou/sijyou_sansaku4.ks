@@ -2,7 +2,7 @@
 ;=======================お芝居の準備中です==================================
 *sansaku
 [stopbgm]
-[call target=*bonyou2 storage="sijyou/preload_sijyou.ks"]
+[call target=*bonyou2 storage="sijyou/preload_sijyou2.ks"]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]
@@ -658,8 +658,10 @@ _　さてどうしましょうか？」[p]
 （今は、まだ意地の悪い兄でいよう。 いつか、またそのときが[r]
 [sp]来るまで） [p]
 #
+[wait time=50]
 [if exp="f.event_replay != 'sijyou'"]
 [eval exp="f.event_sijyou_4 = 1"]
+[eval exp="f.event_machi_sijyou[4] = 1"]
 [eval exp="sf.event_sijyou_sansaku_4 = 1"]
 [endif]
 ;【退場】四条

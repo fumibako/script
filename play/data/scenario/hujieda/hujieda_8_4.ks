@@ -49,7 +49,9 @@
 私は、なんとか曲を弾き終え、一息つく。[p]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公　驚
 [主人公驚]
@@ -59,7 +61,9 @@
 私は、今回も手紙は来るだろうかと、期待して見上げた。[p]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]
@@ -71,9 +75,11 @@
 [fadeoutbgm time=2000]
 
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
 ;【SE】紙に触れる（スッ）
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_hujieda_6
 [if exp="f.okeiko_gamen == true"]
@@ -162,7 +168,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公　目伏せ　悲しみ
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -185,9 +193,11 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [暗転２終了]
 [主人公目パチ1回]
 ;【SE】軽い足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_in_run.ogg loop=false ]
 ;【SE】襖を開ける（勢いよく）
 [playse storage=fusuma-open_fast.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公 通常
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -266,7 +276,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [p]
 ;SE自転車ベル
 ;【SE】自転車のベル（チリンチリン）
+[if exp="sf.SE=='ON'"]
 [playse storage=jitensha_tirin.ogg loop=false]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 [主人公ポーズ片手]

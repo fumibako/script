@@ -139,7 +139,9 @@
 ;見張りをつけられ、私は気が休まらなかった。[p]暫定
 
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 
 [whosay name="三宮　時子" color="#c25232"]
 「[名前]さん、入っていいかしら？」[p]
@@ -228,7 +230,6 @@
 [glink target=*next_to_bad text="話さない。" size=20 width=500 x=250 y=170 graphic="select_waku_x300.png" font_color=black]
 [glink target=*end text="回想を終了する。" size=20 width=500 x=250 y=290 graphic="select_waku_x300.png" font_color=black]
 [s]
-[endif]
 *next_continue
 [機能ボタン消]
 [wait time=10]

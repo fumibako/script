@@ -43,21 +43,20 @@ if (f.okeiko_month==3){
 f.okeiko_month_kansuuji="三月 ";
 }
 [endscript]
-
 [if exp="f.zaizen_au == 1"]
-@jump target=*fumi_toutyaku_hantei_zaizen
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen
 [endif]
 [if exp="f.sijyou_au == 1"]
-@jump target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
 [endif]
 [if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
-@jump target=*fumi_toutyaku_hantei_katuraginomiya
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_katuraginomiya
 [endif]
 [if exp="f.hujieda_au == 1 && f.hujieda_fumi_start != 1"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 [if exp="f.hujieda_fumi_start == 1"]
-@jump target=*fumi_toutyaku_hantei_hujieda
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
 [endif]
 
 
@@ -67,7 +66,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 ;◇黒田ルート11月4週～12月4週は手紙到着判定を回避します
 [if exp="(f.okeiko_month == 11 && f.okeiko_week ==4) || f.okeiko_month == 12"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 ;↓「新茶」「さつき」など翌週届く設定の手紙は前回手紙がいつ届いたかに関わらず処理するため、週数チェック前に処理します
 			
@@ -78,7 +77,7 @@ f.okeiko_month_kansuuji="三月 ";
 [endif]
 			
 ;◆13：5月3週～6月2週に『さつきについて』の手紙を送った場合、翌週に返事がある
-[if exp="((f.okeiko_month == 5 && f.okeiko_week == 4)|| f.okeiko_month == 6 && (f.okeiko_week == 1 || f.okeiko_week == 2 || f.okeiko_week == 3)) &&f.kuroda_fumi_toutyakumachi_satuki == 0 && f.fumi_toutyaku_kuroda[13] == 0"]
+[if exp="((f.okeiko_month == 5 && f.okeiko_week == 4)|| f.okeiko_month == 6 && (f.okeiko_week == 1 || f.okeiko_week == 2 || f.okeiko_week == 3)) && f.kuroda_fumi_toutyakumachi_satuki == 0 && f.fumi_toutyaku_kuroda[13] == 0"]
   [call target=*kuroda_toutyaku_hantei_shori_common]
 	@jump storage="fumi_toutyaku_shori_list.ks" target=*fumi_toutyaku_kuroda_13
 [endif]
@@ -167,9 +166,9 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.kuroda_fumi_toutyakumachi_week=f.kuroda_fumi_toutyakumachi_week+1"]
 [endif]
 [if exp="f.kuroda_fumi_toutyakumachi_week >= parseInt([sf.kuroda['fumi_hindo_week']])"]
-@jump target=*hantei_list_kuroda
+@jump storage="hantei_fumi_toutyaku.ks" target=*hantei_list_kuroda
 [endif]
-@jump target=*fumi_toutyaku_hantei_kuroda_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kuroda_owari
 
 *hantei_list_kuroda
 ;◆◆手紙到着：季節、好感度など条件有り分
@@ -212,7 +211,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;		@jump storage="fumi_toutyaku_shori_list.ks" target=&f.target_fumi_toutyaku
 ;個別ルート時は各キャラ到着判定終了
 [if exp="f.kuroda_au == 1"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 *fumi_toutyaku_hantei_kuroda_owari
 
@@ -221,20 +220,20 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 *fumi_toutyaku_hantei_zaizen
 [if exp="f.kuroda_au == 1"]
-	@jump target=*fumi_toutyaku_hantei_kobetu_owari
+	@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 [if exp="f.sijyou_au == 1"]
-@jump target=*fumi_toutyaku_hantei_sijyou
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_sijyou
 [endif]
 [if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
-@jump target=*fumi_toutyaku_hantei_katuraginomiya
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_katuraginomiya
 [endif]
 [if exp="f.hujieda_au == 1 && f.hujieda_fumi_start == 1"]
-@jump target=*fumi_toutyaku_hantei_hujieda
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
 [endif]
 ;◇財前ルート11月4週～1月3週は手紙到着判定を回避します
 [if exp="(f.okeiko_month == 11  && f.okeiko_week ==4) || f.okeiko_month == 12 || (f.okeiko_month == 1 && f.okeiko_week != 4)"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 ;=======================================================================================
 ;◆話題のお返事◆　話題カウント0になったら届くように、手紙の頻度判定前に移動します
@@ -375,9 +374,9 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp = "f.zaizen_fumi_toutyakumachi_week = f.zaizen_fumi_toutyakumachi_week + 1"]
 [endif]
 [if exp="f.zaizen_fumi_toutyakumachi_week >= parseInt([sf.zaizen['fumi_hindo_week']])"]
-@jump target=*hantei_list_zaizen
+@jump storage="hantei_fumi_toutyaku.ks" target=*hantei_list_zaizen
 [endif]
-@jump target=*fumi_toutyaku_hantei_zaizen_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_zaizen_owari
 
 ;手紙到着：条件有り分
 *hantei_list_zaizen
@@ -439,7 +438,7 @@ f.okeiko_month_kansuuji="三月 ";
 *fumi_toutyaku_hantei_zaizen_owari
 ;個別ルート時は各キャラ到着判定終了
 [if exp="f.zaizen_au == 1"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 
 *fumi_toutyaku_hantei_sijyou
@@ -448,7 +447,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 ;◆10月1週～11月2週は事件中のため手紙到着判定を回避します
 [if exp="f.okeiko_month == 10 || (f.okeiko_month == 11 && ( f.okeiko_week == 1 || f.okeiko_week == 2 ))"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 ;01_sijyou_fumi_toutyaku_hantei.ks上で判定した後、*fumi_toutyaku_hantei_katuraginomiyaに戻ります
 @jump storage=01_sijyou_fumi_toutyaku_hantei.ks target=*fumi_toutyaku_hantei_sijyou
@@ -459,23 +458,27 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 ;個別ルート時は各キャラ到着判定終了
 [if exp="f.sijyou_au == 1"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 [if exp="f.hujieda_au == 1 && f.hujieda_fumi_start == 1"]
-@jump target=*fumi_toutyaku_hantei_hujieda
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
+[endif]
+;葛城宮との手紙開始フラグが読込不良のためONにならない場合があるため追記↓
+[if exp="f.katuraginomiya_au == 1"]
+	[eval exp="f.katuraginomiya_fumi_start = 1"]
 [endif]
 ;↓葛城宮との手紙開始していなければ藤枝手紙判定へ飛ぶ
 [if exp="f.katuraginomiya_fumi_start == 0"]
-@jump target=*fumi_toutyaku_hantei_hujieda
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda
 [endif]
 ;◇葛城宮ルート10月2週～2月1週は葛城宮が通常の手紙を書けない期間のため手紙到着判定を回避します
 [if exp="(f.okeiko_month == 10  && f.okeiko_week != 1) || f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 || (f.okeiko_month == 2 && f.okeiko_week == 1)"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 
 ;↓手紙到着タイミングに関わらず葛城宮ルートであれば葛城宮イベント関連手紙判定に飛ぶ
 [if exp="f.katuraginomiya_au == 1"]
-@jump target=*hantei_list_katuraginomiya_event
+@jump storage="hantei_fumi_toutyaku.ks" target=*hantei_list_katuraginomiya_event
 [endif]
 *katuraginomiya_event_fumi_check_owari
 ;=======================================================================================
@@ -618,10 +621,10 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.katuraginomiya_fumi_toutyakumachi_week=f.katuraginomiya_fumi_toutyakumachi_week+1"]
 [endif]
 [if exp="f.katuraginomiya_fumi_toutyakumachi_week >= parseInt([sf.katuraginomiya['fumi_hindo_week']])"]
-@jump target=*hantei_list_katuraginomiya
+@jump storage="hantei_fumi_toutyaku.ks" target=*hantei_list_katuraginomiya
 [else]
 ;手紙到着のタイミイングでなければ判定終わり
-@jump target=*fumi_toutyaku_hantei_katuraginomiya_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_katuraginomiya_owari
 [endif]
 
 ;手紙到着：条件有り分(返信週数などの影響がある分
@@ -643,7 +646,7 @@ f.okeiko_month_kansuuji="三月 ";
    @jump storage=fumi_toutyaku_shori_list.ks target=*fumi_toutyaku_katuraginomiya_27
 [endif]
 ;イベント関連手紙のチェックが終われば判定続きに戻る
-@jump target=*katuraginomiya_event_fumi_check_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*katuraginomiya_event_fumi_check_owari
 
 ;=======================================================================================
 *hantei_list_katuraginomiya
@@ -688,7 +691,7 @@ f.okeiko_month_kansuuji="三月 ";
 *fumi_toutyaku_hantei_katuraginomiya_owari
 ;個別ルート時は各キャラ到着判定終了
 [if exp="f.katuraginomiya_au == 1 || f.katuraginomiya_only == 1"]
-@jump target=*fumi_toutyaku_hantei_kobetu_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_kobetu_owari
 [endif]
 
 ;=============================================
@@ -697,12 +700,12 @@ f.okeiko_month_kansuuji="三月 ";
 *fumi_toutyaku_hantei_hujieda
 ;◇藤枝ルート11月1週～2月2週は手紙禁止期間(2月3週から手紙を許される)のため手紙到着判定を回避します
 [if exp="f.okeiko_month == 11 || f.okeiko_month == 12 || f.okeiko_month == 1 ||  (f.okeiko_month == 2 && ( f.okeiko_week == 1 || f.okeiko_week == 2 ))"]
-@jump target=*fumi_toutyaku_hantei_tokiko
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
 [endif]
 
 ;↓藤枝との手紙開始していなければ手紙判定終了
 [if exp="f.hujieda_fumi_start == 0"]
-@jump target=*fumi_toutyaku_hantei_tokiko
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_tokiko
 [endif]
 ;=======================================================================================
 ;◆重要なお手紙：話題のお返事よりも前に判定
@@ -823,9 +826,9 @@ f.okeiko_month_kansuuji="三月 ";
 	[eval exp="f.hujieda_fumi_toutyakumachi_week = f.hujieda_fumi_toutyakumachi_week + 1"]
 [endif]
 [if exp="f.hujieda_fumi_toutyakumachi_week >= parseInt([sf.hujieda['fumi_hindo_week']])"]
-@jump target=*hantei_list_hujieda
+@jump storage="hantei_fumi_toutyaku.ks" target=*hantei_list_hujieda
 [endif]
-@jump target=*fumi_toutyaku_hantei_hujieda_owari
+@jump storage="hantei_fumi_toutyaku.ks" target=*fumi_toutyaku_hantei_hujieda_owari
 ;手紙到着：条件有り分
 *hantei_list_hujieda
 ;=============================================
@@ -952,7 +955,7 @@ f.okeiko_month_kansuuji="三月 ";
 ;=============================================
 ;◆最後の手紙１（２）を見たときは判定スキップ
 [if exp="f.event_katuraginomiya[21] == 1 && f.event_katuraginomiya[22] == 1"]
-@jump target=katuragi_kyoutu_skip
+@jump storage="hantei_fumi_toutyaku.ks" target=katuragi_kyoutu_skip
 [endif]
 ;=============================================
 ;◆葛城宮進行不可でイベント４の条件を満たしているが他の攻略キャラと見合いをきめた場合　最後の手紙2_1　【上でスキップされる】f.sijyou_au != 1 && 

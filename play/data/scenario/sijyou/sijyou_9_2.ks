@@ -5,6 +5,9 @@
 [stopbgm]
 ;暗転
 [call target=*9_2 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;=================================================================================_
 *seen0
@@ -39,7 +42,9 @@
 [r]
 四条家と[名字]家の見合いが執り行われた。[p]
 ;【SE】ししおどし（控え目な流水…カコン）
+[if exp="sf.SE=='ON'"]
 [playse storage=sisiodosi.ogg loop=false ]
+[endif]
 
 [resetfont]
 ;////////////先に登場させておく////////////

@@ -120,7 +120,9 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;【SE】時計（控え目カチコチ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tokei_hikaeme.ogg loop=false ]
+[endif]
 [主人公目閉じ]
 #
 白い便せんに目を落とす。[p]
@@ -183,7 +185,9 @@
 [主人公伏目パチ1回]
 [主人公通常]
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 [whosay name=磯野 color="dimgray"]
 「お嬢様、お茶をお持ちしました」[p]
 [chara_mod name="girl_kuti" storage="girl/S/kuti_ake.png" time=0]
@@ -199,7 +203,9 @@
 #
 フワリ。と新緑の[ruby text="ほう"]芳[ruby text="じゅん"]醇な香りが漂い、心を和ませる。[p]
 ;【SE】湯のみを置く（コトリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_yunomi_oku.ogg loop=false ]
+[endif]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_komari.png" time=0]
 [wait time=10]
 [主人公目閉じ]

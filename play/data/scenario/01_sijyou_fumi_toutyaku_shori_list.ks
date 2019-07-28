@@ -956,6 +956,7 @@ f.fumi_list_sijyou_location_fumi.push(47);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi48");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_sintya=-1;
 f.fumi_toutyaku_sijyou[48]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
@@ -1652,6 +1653,7 @@ f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi83");
 f.sijyou_fumi_toutyakumachi_michi=-1;
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+[wait time=50]
 f.sijyou_fumi_toutyakumachi_michi=-1;
 f.fumi_toutyaku_sijyou[83]=1;
 [endscript]
@@ -1671,6 +1673,7 @@ f.fumi_list_sijyou_location_fumi.push(83);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi84");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+[wait time=50]
 f.sijyou_fumi_toutyakumachi_michi=-1;
 f.fumi_toutyaku_sijyou[84]=1;
 [endscript]
@@ -1690,6 +1693,7 @@ f.fumi_list_sijyou_location_fumi.push(84);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi85");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+[wait time=50]
 f.sijyou_fumi_toutyakumachi_music=-1;
 f.fumi_toutyaku_sijyou[85]=1;
 [endscript]
@@ -1709,6 +1713,7 @@ f.fumi_list_sijyou_location_fumi.push(85);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi86");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+[wait time=50]
 f.sijyou_fumi_toutyakumachi_music=-1;
 f.fumi_toutyaku_sijyou[86]=1;
 [endscript]
@@ -1967,6 +1972,7 @@ f.fumi_list_sijyou_location_fumi.push(98);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi99");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_yuujin=-1;
 f.fumi_toutyaku_sijyou[99]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
@@ -2017,6 +2023,7 @@ f.fumi_list_sijyou_location_fumi.push(103);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi104");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_kaidan=-1;
 f.fumi_toutyaku_sijyou[104]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
@@ -2035,6 +2042,7 @@ f.fumi_list_sijyou_location_fumi.push(104);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi105");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_kaidan=-1;
 f.fumi_toutyaku_sijyou[105]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya
@@ -2053,6 +2061,7 @@ f.fumi_list_sijyou_location_fumi.push(105);
 f.fumi_list_sijyou_title.push(f.fumi_sijyou_title_new);
 f.fumi_list_sijyou_target.push("*sijyou_fumi106");
 f.sijyou_fumi_henjimachi=f.sijyou_fumi_henjimachi+1;
+f.sijyou_fumi_toutyakumachi_kaidan=-1;
 f.fumi_toutyaku_sijyou[106]=1;
 [endscript]
 @jump storage=hantei_fumi_toutyaku.ks target=*fumi_toutyaku_hantei_katuraginomiya

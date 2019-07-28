@@ -7,6 +7,9 @@ $(".1_fore").empty();
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*2_2 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [背景_チャリティ会場ダンスホール]
 [イベントシーン構築ボタン無し版]
@@ -111,7 +114,9 @@ $(".1_fore").empty();
 恥ずかしさに身を縮めていると、[r]
 窓の外から光とともに大きな音が鳴り響いた。[p]
 ;【SE】花火(打ち上げ：大)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_utiage_big.ogg loop=false ]
+[endif]
 [暗転２ storage="bg/sijyou_hanabi2_1.jpg"]
 ;[四条_顔up_眉下げ]
 [chara_mod name="sijyou_up_mayu" storage="sijyou/mayu_sage.png" time=0]
@@ -160,7 +165,9 @@ $(".1_fore").empty();
 [背景_線香花火]
 花火に照らされた華織様の横顔。[p]
 ;【SE】花火(線香花火)
+[if exp="sf.SE=='ON'"]
 [playse storage=hanabi_senkou.ogg loop=false ]
+[endif]
 ふとした瞬間が、とても綺麗な華織様への[r]
 届かないはずだった淡い思い。[p]
 [背景_チャリティ会場休憩所夜]

@@ -146,7 +146,9 @@ jumpします。[p]
 [chara_mod name="girl_te" storage="girl/S/ryoute.png" time=0]
 [wait time=10]
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「いやだわ、私ったら……」[p]
 [wait time=1000]
@@ -171,7 +173,9 @@ jumpします。[p]
 
 [stopse]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 ;【背景】庭を明るめ加工（ふすまが開いて廊下の光が入る演出的な）
 [bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=500]
 [wait time=10]
@@ -268,7 +272,9 @@ jumpします。[p]
 [position left=200 width=700 height=530 top=110 page=fore margint="50"]
 
 ;【SE】足音3人石畳（フェードインアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=asioto_isidatami_3nin.ogg loop=false ]
+[endif]
 [font color=lightcyan size=27]
 
 料亭の門をくぐり、石畳を歩むうちに[r]
@@ -286,7 +292,9 @@ jumpします。[p]
 [sp]黒田様はこちらのお座敷で、お待ちでございますよ」[p]
 
 ;【SE】足音複数廊下
+[if exp="sf.SE=='ON'"]
 [playse storage=asioto_rouka_3nin.ogg loop=false ]
+[endif]
 ;テキスト、褪せた灰青色
 [font color=lightcyan size=27]
 歩むうちに襖が目に映る。[r]
@@ -303,7 +311,9 @@ jumpします。[p]
 [resetfont]
 [fadeoutse]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [layopt layer=29 visible=true]
 [image name="jumbi" layer=29 storage="bg/bg_ryoutei.jpg" left=1 time=500]
 ;【背景】料亭風の屋内（昼）
@@ -518,7 +528,9 @@ jumpします。[p]
 「さて、乾杯と参ろうか」[p]
 
 ;【SE】杯が机に当たる音（カチャ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_katya.ogg loop=false ]
+[endif]
 #
 黒田様の手が震えていらっしゃる。[r]
 ――杯が机に当たってしまった。[p]
@@ -571,7 +583,9 @@ jumpします。[p]
 [sp]……では、二人の前途を祝って、乾杯！」[p]
 
 ;【SE】乾杯の音(日本酒の杯なので袂を持ち上げ着物の擦れる的な音)衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「将貴君。今日は忙しいなか、ありがとう」
@@ -674,7 +688,9 @@ jumpします。[p]
 （黒田様……お手紙では言葉豊かに語っておられたのに……）[p]
 
 ;【SE】コサギ羽ばたき
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_habataki_kosagi.ogg loop=false ]
+[endif]
 #
 私の不安は庭からの羽音にかき消された。[r]
 白い羽根が目に映る――。
@@ -728,7 +744,9 @@ jumpします。[p]
 [wait time=10]
 
 ;【SE】コサギ（グアーグアー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_kosagi.ogg loop=false ]
+[endif]
 #
 「グァアー……グァアー……」[p]
 [chara_mod name="kuroda_mayu" storage="kuroda/mayu_odoroki.png" time=0]

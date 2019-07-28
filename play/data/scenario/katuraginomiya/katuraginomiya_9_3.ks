@@ -30,7 +30,9 @@
 [endif]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_hahamiya
 [if exp="f.okeiko_gamen == true"]
@@ -98,7 +100,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 *seen0
 ;【立ち絵】主人公困り　困り眉までの表示がおそいので修正
 ;↓眉：困り [主人公眉困り]
@@ -421,7 +425,9 @@ f.fumi_all_number=f.fumi_all_number + 1;
 [cm]
 ;切り替えまで時間がかかるのでSE
 ;【SE】秋の虫複数
+[if exp="sf.SE=='ON'"]
 [playse storage=musi_aki.ogg loop=false ]
+[endif]
 ;=========================================================================================
 ;背景切り替わりでセーブ等はさせない
 [layopt layer=fix visible=false]

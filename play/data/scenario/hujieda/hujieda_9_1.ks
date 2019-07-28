@@ -157,14 +157,18 @@ jumpします。[p]
 「はい。 精一杯努力いたします」[p] 
 
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 #
 [主人公眉下げ下]
 [主人公目伏]
 お父様は、静かに[ruby text="うなず"]頷くと部屋を出て行かれた。[p]
 
 ;【SE】落ち着いた足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_out.ogg loop=false ]
+[endif]
 [wait time=1000]
 
 # 

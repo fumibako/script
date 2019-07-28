@@ -1,6 +1,6 @@
 *sansaku
 [stopbgm]
-[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
+[call target=*bonyou storage="sijyou/preload_sijyou2.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]
@@ -112,7 +112,9 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「そろそろ家に戻りましょう。[l][r]
 ;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [sp][emb exp="f.para_shujinkou_sansaku_comment_tairyoku"][emb exp="f.para_shujinkou_sansaku_comment_kiryoku"]」
 [wait time=10]
 [layopt layer=26 visible=true]
@@ -128,6 +130,8 @@ f.para_shujinkou_sansaku_comment_kiryoku = "気力は充実しているわ。";
 [freeimage layer = 26]
 [wait time=10]
 *seen_end_sansaku9
+[wait time=50]
+[eval exp="f.event_machi_sijyou[9] = 1"]
 [eval exp="sf.event_sijyou_sansaku_9 = 1"]
 [イベントシーン終了]
 ;=====================システムメッセージ===========================================

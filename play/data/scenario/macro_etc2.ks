@@ -522,7 +522,9 @@ f.wadai_list_hairetsu[f.wadai_hairetsu_number]=[];
 [ptext text=&f.sansaku_machi_seika_txt1 layer=26 size=21 x=275 y=75 color=darkslateblue bold=bold]
 [wait time=10]
 ;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 [playse storage=kira.ogg loop=false ]
+[endif]
 [p]
 [freeimage layer = 26]
 [endmacro]

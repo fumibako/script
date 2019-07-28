@@ -29,7 +29,9 @@
 [イベントシーン構築ボタン無し版]
 [wait time=10]
 ;【SE】鳥のさえずり
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_yatyou.ogg loop=false ]
+[endif]
 [主人公ポーズ通常]
 [wait time=10]
 [主人公通常]
@@ -227,7 +229,9 @@ $('.junbi_girl').remove();
 	[ptext text=&f.sansaku_machi_seika_txt2 layer=26 size=21 x=310 y=105 color=darkslateblue bold=bold]
 	[wait time=10]
 	;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 	[playse storage=kira_s.ogg loop=false ]
+[endif]
 [p]
 [freeimage layer = 26]
 [endif]

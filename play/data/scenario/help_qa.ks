@@ -213,7 +213,7 @@ background:#beb7e8;
 
 
 
-@jump target=*common
+@jump storage="help_qa.ks" target=*common
 
 *howto
 [cm]

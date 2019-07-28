@@ -111,7 +111,9 @@ jumpします。[p]
 [主人公口通常]
 [stopse]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 ;=================================================================================================
 ;【背景】庭を明るめ加工（ふすまが開いて廊下の光が入る演出的な）
 [bg wait=true method='crossfade' storage="../fgimage/bg/room_niwa_akarui.jpg" time=500]
@@ -165,7 +167,9 @@ jumpします。[p]
 [p]
 
 ;【SE】足音3人石畳（フェードインアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=asioto_isidatami_3nin.ogg loop=false ]
+[endif]
 
 ;==========================スクリプト・全画面表示の間に設定===============================
 #
@@ -205,7 +209,9 @@ jumpします。[p]
 [p]
 
 ;【SE】足音複数廊下
+[if exp="sf.SE=='ON'"]
 [playse storage=asioto_rouka_3nin.ogg loop=false ]
+[endif]
 ;テキスト、褪せた灰青色
 [font color=lightcyan size=27]
 歩むうちに襖が目に映る。[r]
@@ -231,7 +237,9 @@ jumpします。[p]
 [er]
 [p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [暗転２終了]
 
 ;==========================スクリプト・全画面表示からの復帰準備========================================

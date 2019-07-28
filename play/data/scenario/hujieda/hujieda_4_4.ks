@@ -34,7 +34,9 @@
 [autosave改]
 [p]
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 ;【立ち絵】鳩_箏の柏葉　夢と結びつけるために画像配置　一回のみにします。他で付けたい部分があれば以下をコピー。
 [bg wait=true method='crossfade' storage="../fgimage/bg/I9IhvvVdPo/bg_hujieda_hato2.jpg" time=1000]
@@ -62,20 +64,26 @@
 「足に紙が[ruby text="くく"]括り付けてあるわ。　取った方がいいのかしら？」[p]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公 伏目
 [主人公口ほほえみ]
 「待ってね」[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公 驚き
 [主人公驚]
 「これは、お手紙？」[p]
 ;【SE】鳩の羽ばたき（バサバサッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_habataki_hato.ogg loop=false ]
+[endif]
 
 ;【背景】主人公邸 お稽古部屋
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_okeiko.jpg" time=1000]
@@ -87,7 +95,9 @@
 
 [stopbgm]
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 *fumi_toutyaku_hujieda_2
 [if exp="f.okeiko_gamen == true"]
 [iscript]
@@ -153,7 +163,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [主人公驚]
 [主人公目パチ1回]

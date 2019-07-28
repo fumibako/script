@@ -67,7 +67,9 @@
 [image layer=27 x=650 y=17 storage="../image/button_fumi.png"]
 [wait time=10]
 ;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 [playse storage=kira_s.ogg loop=false ]
+[endif]
 「『文箱』画面の下の方から"手紙を書く"ことができます。[r]
 [sp]お手紙を書かれては、いかがでしょうか？」[p]
 

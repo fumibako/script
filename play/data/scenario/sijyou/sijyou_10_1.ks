@@ -4,6 +4,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*10_1 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;使用背景:[背景_庭]　[四条玄関][chara_mod name="bg" storage="bg/ B4nFWraU42/bg_sijyou_genkan_hole.jpg"]
 ;/////////////////////////////////////////////////////
@@ -141,7 +144,9 @@
 [whosay name="四条祖父" color="#888898"]
 「この分からず屋が！！」[p]
 ;【SE】ビンタ（バチン）
+[if exp="sf.SE=='ON'"]
 [playse storage=binta.ogg loop=false ]
+[endif]
 [wait time=100]
 ;わずかに揺れるくらいでいい
 [quake count=1 time=100 hmax=5 vmax=5]
@@ -168,12 +173,16 @@
 [whosay name="華織" color="olivedrab"]
 「[華衣]を、叱らないであげて下さい、[r]
 ;【SE】衣擦れ（スッ）体勢を立て直している？
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 [sp]僕が悪いのですから」
 [autosave改]
 [p]
 ;【SE】足音(小走り
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_out_run.ogg loop=false ]
+[endif]
 [whosay name="四条母" color="#9B608B"]
 「[華衣]！ どこ行くの？！」[p]
 #
@@ -295,7 +304,9 @@
 [resetfont]
 *skip_emotion2
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 #
 私は、お兄様に華織お兄様との事について手紙をだした。[p]
 *seen_end

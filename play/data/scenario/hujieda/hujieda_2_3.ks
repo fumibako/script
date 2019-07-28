@@ -139,7 +139,9 @@
 
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 [手紙主人公]
 *fumi_girl_2_3_1
@@ -212,7 +214,9 @@
 [手紙読了]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 #
 この手紙を読み返し励まされながら[r]
@@ -605,7 +609,9 @@ $('.piano_mes').remove();
 （留学への決意の強さなのかしら……曲が終わっても余韻がすごい）[p]
 ;SE拍手長め
 ;【SE】拍手（コンサートホール）
+[if exp="sf.SE=='ON'"]
 [playse storage=hakushu_concert.ogg loop=false ]
+[endif]
 ;============================================================================================
 [暗転２]
 ;【背景】観客席　暗転のほうがいいかも
@@ -668,7 +674,9 @@ $('.piano_mes').remove();
 （え！）[p]
 
 ;【SE】人々のざわめき（ザワザワ…コンサート等ホール会場）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_hall.ogg loop=false ]
+[endif]
 #
 ざわざわと周囲が話し始める。[p]
 
@@ -976,7 +984,9 @@ $('.piano_mes').remove();
 [主人公口ほほえみ]
 （正直に私の気持ちをお話ししよう）[p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 ;============================================================================================
 ;【背景】主人公邸 庭の見える部屋：夜

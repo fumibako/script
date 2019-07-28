@@ -109,7 +109,9 @@
 [chara_mod name="girl_kuti" storage="girl/S/kuti_futuu.png" time=0]
 [wait time=10]
 ;【SE】軽い足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_out_walk.ogg loop=false ]
+[endif]
 ;==========================================================================================
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_2_2_scene2==undefined"]
 	[skipstop]
@@ -758,7 +760,9 @@ $('.junbi').remove();
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
 [wait time=10]
 ;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 [playse storage=shine.ogg loop=false ]
+[endif]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi.jpg" time=3000]
 [wait time=10]
 

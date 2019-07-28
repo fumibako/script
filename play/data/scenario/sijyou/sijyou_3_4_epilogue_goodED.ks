@@ -18,6 +18,9 @@ $('.list').remove();
 [endif]
 [stopbgm]
 [call target=*3_4_ep storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 
 [if exp="f.flag_replay == true"]
 ;@layopt layer=1 visible=true
@@ -186,7 +189,9 @@ $('.junbi_girl').remove();
 [主人公目パチ1回]
 [wait time=10]
 ;【SE】湯のみを置く（コトリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_yunomi_oku.ogg loop=false ]
+[endif]
 [四条驚き]
 [whosay name="華織" color="olivedrab"]
 「[華衣]から手紙ですか！ なかなか手紙さえ返してくれなかったのに。[r]
@@ -201,7 +206,9 @@ $('.junbi_girl').remove();
 ;なにかしらと読み
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「手紙によりますと……[r]

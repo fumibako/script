@@ -16,6 +16,9 @@ $('.list').remove();
 *start
 [stopbgm]
 [call target=*ed storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [freeimage layer = 14]
@@ -88,7 +91,9 @@ $('.list').remove();
 「おめでとうございます」[p]
 
 ;[SE拍手]
+[if exp="sf.SE=='ON'"]
 [playse storage=hakushu.ogg loop=false ]
+[endif]
 
 [whosay name=文矢 color="#538a8a"]
 「[名前]、華織おめでとう」[p]

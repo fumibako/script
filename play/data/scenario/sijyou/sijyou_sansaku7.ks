@@ -4,6 +4,9 @@
 [stopbgm]
 ;特別イベントなので四条プリロード画面表示
 [call target=*sansaku7 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]
@@ -64,14 +67,18 @@ jumpします。[p]
 [endif]
 ;がやがやSE
 ;【SE】人々のざわめき（ザワザワ…屋外）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_out.ogg loop=false ]
+[endif]
 春の陽気につられてた人々は、それぞれ気に入った商店に向かって
 [ruby text="にぎ"]賑わっていた。[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 (今日は、人通りが多いみたいだわ）[p]
 ;がやがやSE
 ;【SE】人々のざわめき（ザワザワ…屋外）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_out.ogg loop=false ]
+[endif]
 [主人公ふぅ閉]
 ;帰ろうとするが・・・　セリフは適当
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -88,7 +95,9 @@ jumpします。[p]
 　大量の花弁を持ち上げて春の嵐が吹き抜けていく。[p]
 ;春風がふくSE　天候・風04（草原02）短め
 ;【SE】春風
+[if exp="sf.SE=='ON'"]
 [playse storage=harukaze.ogg loop=false ]
+[endif]
 [主人公驚]
 [主人公ポーズ指]
 [image name="saku1" storage="bg/B4nFWraU42/img_sakura_sijyou.png" layer=13 zindex=2 left=-200]
@@ -213,7 +222,9 @@ $('.saku1').remove();
 ;//////////////////~~シーン銀座~~////////////////////////////
 [暗転１]
 ;【SE】人々のざわめき（ザワザワ…屋外）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_out.ogg loop=false]
+[endif]
 [layopt layer=fix visible=false]
 ;【背景】銀座
 [背景_四条_銀座]
@@ -292,7 +303,9 @@ $('.saku1').remove();
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「え？　」[p]
 ;【SE】うぐいす（ケキョケキョ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
+[endif]
 [四条口微笑み]
 [四条眉困り]
 [四条目閉じ]
@@ -364,7 +377,9 @@ $('.saku1').remove();
 ;SEドアベル音　音人鈴付きドア・閉める
 ;ちょうど入店時に鳴る感じにSE位置を移動してみました(スクリプト担
 ;【SE】ドアベル音
+[if exp="sf.SE=='ON'"]
 [playse storage=door_suzu.ogg loop=false ]
+[endif]
 [wait time=10]
 [主人公ポーズ通常]
 [主人公通常]
@@ -1377,9 +1392,12 @@ jumpします。[p]
 （このまま帰ったら、勘のいい磯野は、なんていうかしら……？）[p]
 [主人公退場]
 ;【SE】うぐいす（ケキョケキョ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_uguisu_pikyo.ogg loop=false ]
+[endif]
 [fadeoutse tome=1000]
 ;[wait time=50]
+[eval exp="f.event_machi_sijyou[7] = 1"]
 [eval exp="sf.event_sijyou_sansaku_7 = 1"]
 [イベントシーン終了]
 [if exp="f.okeiko_gamen == true"]

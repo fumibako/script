@@ -14,6 +14,7 @@
 	[eval exp="f.skip = false"]
 	[wait time=10]
 [endif]
+	[wait time=50]
 	@layopt layer=29 visible=true
 	[wait time=10]
 	@layopt layer=message0 visible=true
@@ -50,36 +51,36 @@
 ;◆◆jump振り分け処理◆◆
 ;◆ノベコレ版振り分け
 [if exp="f.badge_from == 'ED' && sf.novecole == 1 && f.sijyou_au == 1 && sf.badge_sijyou != 1"]
-	@jump target=*badge_novecole_sijyou
+	@jump storage="common_badge.ks" target=*badge_novecole_sijyou
 [endif]
 [if exp="f.badge_from == 'ED' && sf.novecole == 1 && f.zaizen_au == 1 && sf.badge_zaizen != 1"]
-	@jump target=*badge_novecole_zaizen
+	@jump storage="common_badge.ks" target=*badge_novecole_zaizen
 [endif]
 [if exp="f.badge_from == 'ED' && sf.novecole == 1 && f.katuraginomiya_au == 1 && sf.badge_katuraginomiya != 1"]
-	@jump target=*badge_novecole_katuraginomiya
+	@jump storage="common_badge.ks" target=*badge_novecole_katuraginomiya
 [endif]
 [if exp="f.badge_from == 'ED' && sf.novecole == 1 && f.hujieda_au == 1 && sf.badge_hujieda != 1"]
-	@jump target=*badge_novecole_hujieda
+	@jump storage="common_badge.ks" target=*badge_novecole_hujieda
 [endif]
 [if exp="f.badge_from == 'ED' && sf.novecole == 1 && f.kuroda_au == 1 && sf.badge_kuroda != 1"]
-	@jump target=*badge_novecole_kuroda
+	@jump storage="common_badge.ks" target=*badge_novecole_kuroda
 [endif]
 
 ;◆ノベコレ版以外振り分け：100%以外
 [if exp="f.badge_from == 'ED' && sf.novecole != 1 && f.sijyou_au == 1 && sf.badge_sijyou != 1 && sf.sijyou_clearlist_complete != 1"]
-	@jump target=*badge_omake_sijyou
+	@jump storage="common_badge.ks" target=*badge_omake_sijyou
 [endif]
 [if exp="f.badge_from == 'ED' && sf.novecole != 1 && f.zaizen_au == 1 && sf.badge_zaizen != 1 && sf.zaizen_clearlist_complete != 1"]
-	@jump target=*badge_omake_zaizen
+	@jump storage="common_badge.ks" target=*badge_omake_zaizen
 [endif]
 [if exp="f.badge_from == 'ED' && sf.novecole != 1 && f.katuraginomiya_au == 1 && sf.badge_katuraginomiya != 1 && sf.katuraginomiya_clearlist_complete != 1"]
-	@jump target=*badge_omake_katuraginomiya
+	@jump storage="common_badge.ks" target=*badge_omake_katuraginomiya
 [endif]
 [if exp="f.badge_from == 'ED' && sf.novecole != 1 && f.hujieda_au == 1 && sf.badge_hujieda != 1 && sf.hujieda_clearlist_complete != 1"]
-	@jump target=*badge_omake_hujieda
+	@jump storage="common_badge.ks" target=*badge_omake_hujieda
 [endif]
 [if exp="f.badge_from == 'ED' && sf.novecole != 1 && f.kuroda_au == 1 && sf.badge_kuroda != 1 && sf.kuroda_clearlist_complete != 1"]
-	@jump target=*badge_omake_kuroda
+	@jump storage="common_badge.ks" target=*badge_omake_kuroda
 [endif]
 
 ;◆各キャラ100%時
@@ -105,11 +106,11 @@
 
 ;◆コンプリート時（通常or散策イベント）
 [if exp="sf.badge_comp != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1 && (f.badge_from == 'event' || f.badge_from == 'sansaku')"]
-	@jump target=*complete
+	@jump storage="common_badge.ks" target=*complete
 [endif]
 
 ;◆例外処理（ラストにひとっ飛び）
-@jump target=*get_badge_end
+@jump storage="common_badge.ks" target=*get_badge_end
 
 ;◆◆◆バッジ獲得個別処理：ノベコレ版
 *badge_novecole_sijyou
@@ -130,7 +131,7 @@
 	『四条 華織：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
 	[eval exp="sf.badge_sijyou = 2"]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [else]
 	[give_emblem id="5196" pid="12168da93fd4cb04155505fd8defdfc4" ]
@@ -172,7 +173,7 @@
 	『財前 美彬：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
 	[eval exp="sf.badge_zaizen = 2"]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [else]
 	[give_emblem id="5197" pid="2172408790f1e9c1386a8b6ff2cc6e12" ]
@@ -216,7 +217,7 @@
 	『葛城宮 晴仁：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
 	[eval exp="sf.badge_katuraginomiya = 2"]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [else]
 	[give_emblem id="5205" pid="ecd739ff8ae294f33e430d47120a9b98" ]
 	[image name=list layer=29 storage="../image/badge_katuraginomiya.png" x=360 y=50]
@@ -258,7 +259,7 @@
 	『藤枝 肇：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
 	[eval exp="sf.badge_hujieda = 2"]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [else]
 	[give_emblem id="5206" pid="0db31db1115f330bfa6fc2c94e8451fb" ]
@@ -301,7 +302,7 @@
 	『黒田将貴：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
 	[eval exp="sf.badge_kuroda = 2"]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [else]
 	[give_emblem id="5198" pid="fa141c9a1069957c1117ac4451c1d199" ]
@@ -339,7 +340,7 @@
 	[r]
 	ゲーム中「おまけ」（タイトル画面一番左）[r]
 	に飾られます。[p]
-	@jump target=*get_badge_end
+	@jump storage="common_badge.ks" target=*get_badge_end
 
 *badge_omake_zaizen
 [image name=list layer=29 storage="../image/badge_zaizen.png" x=360 y=50]
@@ -354,7 +355,7 @@
 	に飾られます。[p]
 	[freeimage layer = 29]
 	[wait time=10]
-	@jump target=*get_badge_end
+	@jump storage="common_badge.ks" target=*get_badge_end
 
 *badge_omake_katuraginomiya
 [image name=list layer=29 storage="../image/badge_katuraginomiya.png" x=360 y=50]
@@ -367,7 +368,7 @@
 	[r]
 	ゲーム中「おまけ」（タイトル画面一番左）[r]
 	に飾られます。[p]
-	@jump target=*get_badge_end
+	@jump storage="common_badge.ks" target=*get_badge_end
 
 *badge_omake_hujieda
 [image name=list layer=29 storage="../image/badge_hujieda.png" x=360 y=50]
@@ -380,7 +381,7 @@
 	[r]
 	ゲーム中「おまけ」（タイトル画面一番左）[r]
 	に飾られます。[p]
-	@jump target=*get_badge_end
+	@jump storage="common_badge.ks" target=*get_badge_end
 
 *badge_omake_kuroda
 [image name=list layer=29 storage="../image/badge_kuroda.png" x=360 y=50]
@@ -393,7 +394,7 @@
 	[r]
 	ゲーム中「おまけ」（タイトル画面一番左）[r]
 	に飾られます。[p]
-	@jump target=*get_badge_end
+	@jump storage="common_badge.ks" target=*get_badge_end
 
 ;◆◆◆イベント100%時お知らせ個別処理
 *sijyou100
@@ -415,7 +416,7 @@
 	『主人公のキャラクターデザイン原案』と『四条華織：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
 	[eval exp="sf.badge_comp = 1"]
 	[eval exp="tf.omake_mark = 1"]
@@ -429,7 +430,7 @@
 	『主人公のキャラクターデザイン原案』と『四条華織：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1"]
 	[eval exp="sf.badge_sijyou = 2"]
 
@@ -440,7 +441,7 @@
 	[r]
 	『四条華織：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [else]
 	[image name=list layer=29 storage="../image/badge_sijyou100.png" x=360 y=50]
 	[wait time=10]
@@ -454,7 +455,7 @@
 	[r]
 	『四条華織：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [endif]
 
@@ -473,7 +474,7 @@
 	『主人公のキャラクターデザイン原案』と『財前美彬：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
 	[image name=list layer=29 storage="../image/badge_zaizen100.png" x=200 y=50]
 	[wait time=10]
@@ -492,7 +493,7 @@
 	『主人公のキャラクターデザイン原案』と『財前美彬：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1"]
 	[eval exp="sf.badge_zaizen = 2"]
 
@@ -503,7 +504,7 @@
 	[r]
 	『財前美彬：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [else]
 	[image name=list layer=29 storage="../image/badge_zaizen100.png" x=360 y=50]
@@ -518,13 +519,13 @@
 	[r]
 	『財前美彬：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [endif]
 	
 *katuraginomiya100
 [if exp="tf.ED_bad != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
 	[image name=list layer=29 storage="../image/badge_katuraginomiya100.png" x=200 y=50]
-	[wait time=10]
+	[wait time=50]
 	[image name=list layer=29 storage="../image/badge_comp.png" x=520 y=50]
 	[wait time=10]
 	[eval exp="sf.badge_comp = 1"]
@@ -540,7 +541,7 @@
 	『主人公のキャラクターデザイン原案』と『葛城宮晴仁：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
 	[eval exp="sf.badge_comp = 1"]
 	[eval exp="tf.omake_mark = 1"]
@@ -554,7 +555,7 @@
 	『主人公のキャラクターデザイン原案』と『葛城宮晴仁：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1"]
 	[eval exp="sf.badge_katuraginomiya = 2"]
 
@@ -565,9 +566,10 @@
 	[r]
 	『葛城宮晴仁：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [else]
+	[wait time=50]
 	[image name=list layer=29 storage="../image/badge_katuraginomiya100.png" x=360 y=50]
 	[wait time=10]
 	[eval exp="sf.badge_katuraginomiya = 2"]
@@ -580,13 +582,14 @@
 	[r]
 	『葛城宮晴仁：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [endif]
 
 *hujieda100
 [if exp="tf.ED_bad != 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
+	[wait time=50]
 	[image name=list layer=29 storage="../image/badge_hujieda100.png" x=200 y=50]
-	[wait time=10]
+	[wait time=50]
 	[image name=list layer=29 storage="../image/badge_comp.png" x=520 y=50]
 	[wait time=10]
 	[eval exp="sf.badge_comp = 1"]
@@ -602,7 +605,7 @@
 	『主人公のキャラクターデザイン原案』と『藤枝 肇：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
 	[eval exp="sf.badge_comp = 1"]
 	[eval exp="tf.omake_mark = 1"]
@@ -616,7 +619,7 @@
 	『主人公のキャラクターデザイン原案』と『藤枝 肇：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1"]
 	[wait time=10]
 	[eval exp="sf.badge_hujieda = 2"]
@@ -628,7 +631,7 @@
 	[r]
 	『藤枝 肇：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [else]
 	[image name=list layer=29 storage="../image/badge_hujieda100.png" x=360 y=50]
@@ -643,7 +646,7 @@
 	[r]
 	『藤枝 肇：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [endif]
 
 *kuroda100
@@ -665,7 +668,7 @@
 	『主人公のキャラクターデザイン原案』と『黒田将貴：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1 && sf.sijyou_clearlist_complete == 1 && sf.kuroda_clearlist_complete == 1 && sf.zaizen_clearlist_complete == 1 && sf.katuraginomiya_clearlist_complete == 1 && sf.hujieda_clearlist_complete == 1"]
 	[eval exp="sf.badge_comp = 1"]
 	[eval exp="tf.omake_mark = 1"]
@@ -679,7 +682,7 @@
 	『主人公のキャラクターデザイン原案』と『黒田将貴：キャラクターデザイン原案』[r]
 	が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [elsif exp="tf.ED_bad == 1"]
 	[eval exp="sf.badge_kuroda = 2"]
 
@@ -690,7 +693,7 @@
 	[r]
 	『黒田将貴：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 
 [else]
 	[image name=list layer=29 storage="../image/badge_kuroda100.png" x=360 y=50]
@@ -705,7 +708,7 @@
 	[r]
 	『黒田将貴：キャラクターデザイン原案』が解放されました。[r]
 	「おまけ」からお楽しみください。[p]
-	@jump target=*comp_end
+	@jump storage="common_badge.ks" target=*comp_end
 [endif]
 
 *complete

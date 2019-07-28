@@ -21,7 +21,9 @@
 #
 鈴虫が鳴き、夏の終わりと秋の始まりを告げている。[p]
 ;【SE】鈴虫の音
+[if exp="sf.SE=='ON'"]
 [playse storage=mushi_suzumushi.ogg loop=false ]
+[endif]
 ;【立ち絵】主人公：目閉じ
 [主人公目閉じ]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -231,7 +233,9 @@
 「おやすみなさい」[p]
 
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 ;SEが重なるので一か所のみ設定
 ;【SE】落ち着いた足音（フェードアウト）[playse storage=isono_out.ogg loop=false ]
 

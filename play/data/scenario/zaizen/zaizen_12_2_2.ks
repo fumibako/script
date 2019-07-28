@@ -154,7 +154,9 @@ jumpします。[p]
 [p]
 [sp][r]
 ……だけど、既に状況は深刻な事態になっていた。[p]
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_dark.ogg loop=false ]
+[endif]
 
 
 見た事のないほどの殺気だった人の行列に圧倒されてしまう。[p]

@@ -37,7 +37,9 @@
 [endif]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公 驚
 [主人公驚]
@@ -45,10 +47,12 @@
 「もしかして！」[p]
 
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
 
 ;【SE】鳩（クルルポー）
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公　微笑み
 [主人公笑顔]
@@ -59,7 +63,9 @@
 （……またお[ruby text=こと]箏の上にとまって、そこがお気に入りなの？）[p]
 
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公 通常
 [主人公ほほえみ]
@@ -68,10 +74,12 @@
 [p]
 
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
 
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 *fumi_toutyaku_hujieda_3
 [if exp="f.okeiko_gamen == true"]
@@ -140,7 +148,9 @@ f.para_hujieda_koukando = f.para_hujieda_koukando + f.hujieda_koukando_up_event_
 [手紙藤枝読了 fumi_number=]
 [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [主人公目パチ1回]
 ;【立ち絵】主人公　微笑み
 [主人公ほほえみ]

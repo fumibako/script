@@ -51,8 +51,7 @@ tyrano.plugin.kag.menu = {
         e.stopPropagation()
       });
       layer_menu.find(".menu_back_title").click(function () {
-        if (!confirm($.lang("go_title"))) return false;
-        location.reload()
+        that.kag.backTitle()
       });
       $.preloadImgCallback(j_menu, function () {
         layer_menu.fadeIn(300);
@@ -60,7 +59,7 @@ tyrano.plugin.kag.menu = {
       }, that)
     })
   },
-  displaySave: function () {
+  displaySave: function (cb) {
     var that = this;
     this.kag.stat.is_skip = false;
     var array_save = that.getSaveData();
@@ -77,11 +76,13 @@ tyrano.plugin.kag.menu = {
         $(this).click(function (e) {
           var num = $(this).attr("data-num");
           that.snap = null;
-          that.doSave(num);
           var layer_menu = that.kag.layer.getMenuLayer();
           layer_menu.hide();
           layer_menu.empty();
-          if (that.kag.stat.visible_menu_button == true) $(".button_menu").show()
+          if (that.kag.stat.visible_menu_button == true) $(".button_menu").show();
+          that.doSave(num, function () {
+            if (typeof cb == "function") cb()
+          })
         })
       });
       j_save.find(".button_smart").hide();
@@ -107,26 +108,21 @@ tyrano.plugin.kag.menu = {
         })
       }
       var layer_menu = that.kag.layer.getMenuLayer();
-      that.setMenu(j_save)
+      that.setMenu(j_save, cb)
     })
   },
-  doSave: function (num) {
+  doSave: function (num, cb) {
     var array_save = this.getSaveData();
     var data = {};
     var that = this;
-    if (this.snap == null){
-	  if (this.kag.stat.f.okeiko_month != 0){
-        this.kag.stat.current_message_str = this.kag.stat.f.okeiko_month + "月" +this.kag.stat.f.okeiko_week + "週 :　" +  this.kag.stat.current_message_str;
-	  }else{this.kag.stat.current_message_str = "プロローグ :　" + this.kag.stat.current_message_str;}
-	  this.snapSave(this.kag.stat.current_message_str, 
-	    function() {
-          data = that.snap;
-          data.save_date = $.getNowDate() + "　" + $.getNowTime();
-          array_save.data[num] = data;
-          $.setStorage(that.kag.config.projectID + "_tyrano_data", array_save, that.kag.config.configSave)
-        }
-      );
-    }
+    if (this.snap == null) this.snapSave(this.kag.stat.current_save_str, function () {
+      data = that.snap;
+      data.save_date = $.getNowDate() + "　" + $.getNowTime();
+      array_save.data[num] = data;
+      $.setStorage(that.kag.config.projectID + "_tyrano_data", array_save, that.kag.config.configSave);
+      if (typeof cb == "function") cb()
+    });
+    else if (typeof cb == "function") cb()
   },
   setQuickSave: function () {
     var that = this;
@@ -166,6 +162,7 @@ tyrano.plugin.kag.menu = {
       var data = {};
       data.title = title;
       data.stat = _stat;
+      data.midashi = this.kag.stat.f.savedata_midashi;
       data.current_order_index = _current_order_index;
       data.save_date = $.getNowDate() + "　" + $.getNowTime();
       data.img_data = img_code;
@@ -239,7 +236,7 @@ tyrano.plugin.kag.menu = {
     else this.kag.tmp.sleep_game_next = false;
     this.kag.tmp.sleep_game = this.snap
   },
-  displayLoad: function () {
+  displayLoad: function (cb) {
     var that = this;
     this.kag.stat.is_skip = false;
     var array_save = that.getSaveData();
@@ -255,6 +252,7 @@ tyrano.plugin.kag.menu = {
       j_save.find(".save_display_area").each(function () {
         $(this).click(function (e) {
           var num = $(this).attr("data-num");
+          if (array[num]["save_date"] == "") return;
           that.snap = null;
           that.loadGame(num);
           var layer_menu = that.kag.layer.getMenuLayer();
@@ -286,23 +284,25 @@ tyrano.plugin.kag.menu = {
         })
       }
       var layer_menu = that.kag.layer.getMenuLayer();
-      that.setMenu(j_save)
+      that.setMenu(j_save, cb)
     })
   },
   loadGame: function (num) {
     var array_save = this.getSaveData();
     var array = array_save.data;
     if (array[num].save_date == "") return;
-    this.loadGameData($.extend(true, {}, array[num]))
+    var auto_next = "no";
+    if (array[num].stat.load_auto_next == true) auto_next = "yes";
+    this.loadGameData($.extend(true, {}, array[num]), {
+      "auto_next": auto_next
+    })
   },
   loadGameData: function (data, options) {
     var auto_next = "no";
     if (typeof options == "undefined") options = {
       bgm_over: "false"
     };
-    else if (typeof options.bgm_over == "undefined") options = {
-      bgm_over: "false"
-    };
+    else if (typeof options.bgm_over == "undefined") options["bgm_over"] = "false";
     if (options.auto_next) auto_next = options.auto_next;
     if (typeof Live2Dcanvas != "undefined")
       for (model_id in Live2Dcanvas)
@@ -315,6 +315,7 @@ tyrano.plugin.kag.menu = {
     this.kag.stat = data.stat;
     if (this.kag.stat.is_strong_stop == true) auto_next = "stop";
     else this.kag.stat.is_strong_stop = false;
+    this.kag.setTitle(this.kag.stat.title);
     if (options.bgm_over == "false") {
       var map_se = this.kag.tmp.map_se;
       for (var key in map_se)
@@ -334,7 +335,13 @@ tyrano.plugin.kag.menu = {
           storage: mstorage,
           stop: "true"
         };
+        if (this.kag.stat.current_bgm_vol != "") pm["volume"] = this.kag.stat.current_bgm_vol;
         this.kag.ftag.startTag("playbgm", pm)
+      }
+      for (key in this.kag.stat.current_se) {
+        var pm_obj = this.kag.stat.current_se[key];
+        pm_obj["stop"] = "true";
+        this.kag.ftag.startTag("playse", pm_obj)
       }
     }
     if (this.kag.stat.cssload)
@@ -376,10 +383,14 @@ tyrano.plugin.kag.menu = {
         };
         if (key == "layer_camera") {
           $(".layer_camera").css("-webkit-transform-origin", "center center");
-          $(".layer_camera").a3d(a3d_define)
+          setTimeout(function () {
+            $(".layer_camera").a3d(a3d_define)
+          }, 1)
         } else {
           $("." + key + "_fore").css("-webkit-transform-origin", "center center");
-          $("." + key + "_fore").a3d(a3d_define)
+          setTimeout(function () {
+            $("." + key + "_fore").a3d(a3d_define)
+          }, 1)
         }
       }
     }
@@ -417,12 +428,13 @@ tyrano.plugin.kag.menu = {
     this.kag.clearTmpVariable();
     this.kag.ftag.nextOrderWithIndex(data.current_order_index, data.stat.current_scenario, true, insert, "yes")
   },
-  setMenu: function (j_obj) {
+  setMenu: function (j_obj, cb) {
     var that = this;
     var layer_menu = this.kag.layer.getMenuLayer();
     j_obj.find(".menu_close").click(function (e) {
       layer_menu.fadeOut(300, function () {
-        layer_menu.empty()
+        layer_menu.empty();
+        if (typeof cb == "function") cb()
       });
       if (that.kag.stat.visible_menu_button == true) $(".button_menu").show()
     });

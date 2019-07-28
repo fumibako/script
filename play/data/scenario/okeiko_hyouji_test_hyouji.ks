@@ -8,10 +8,13 @@
 [position layer=message1 left=0 width=600 height=140 top=120 page=fore color=white opacity=150]
 @layopt layer=message1 page=fore visible = true
 [font color=glay size=15]
-f.zaizen_fumi_toutyakumachi_sigoto=[emb exp="f.zaizen_fumi_toutyakumachi_sigoto"]
+sf.girl_myouji=[emb exp="sf.girl_myouji"],
+sf.girl_namae=[emb exp="sf.girl_namae"],
+f.girl_myouji=[emb exp="f.girl_myouji"],
+f.girl_namae=[emb exp="f.girl_namae"],
+sf.father_name=[emb exp="sf.father_name"],
+sf.kuroda(koukando_a)=[emb exp="sf.kuroda['koukando_a']"],
 [r]
-,f.zaizen_fumi_toutyakumachi_week=[emb exp="f.zaizen_fumi_toutyakumachi_week"]
-,parseInt(sf.zaizen(fumi_hindo_week))=[emb exp="parseInt([sf.zaizen['fumi_hindo_week']])"]
 
 ;◆好感度に数値以外が代入された場合、赤字表記して進行ストップ
 [if exp="Number.isFinite(f.para_katuraginomiya_koukando) == false"]

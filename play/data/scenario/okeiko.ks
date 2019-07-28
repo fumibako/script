@@ -11,7 +11,7 @@
 *event_hantei_week_hajime
 ;◆イベント全般(1表示、0非表示)tf.event_hyouji == 0の場合はイベント判定をカット
 [if exp="tf.event_hyouji == 0"]
-@jump target=*event_hantei_week_hajime_owari
+@jump storage="okeiko.ks" target=*event_hantei_week_hajime_owari
 [endif]
 ;◆イベント判定(週始め)へ飛んで戻ってくる
 ;↓◆イベント判定処理を見るための変数をセット
@@ -37,7 +37,7 @@
 ;[endif]
 [if exp="f.skip_sentaku == 1"]
 [eval exp="f.skip_sentaku = 0"]
-@jump target=*bgm_owari
+@jump storage="okeiko.ks" target=*bgm_owari
 [endif]
 [if exp="sf.BGM=='ON'"]
 [stopbgm]
@@ -82,7 +82,7 @@
 
 ;◆イベント全般(1表示、0非表示)tf.event_hyouji == 0の場合はイベント判定をカット
 [if exp="tf.event_hyouji == 0"]
-@jump target=*event_hantei_week_owari_owari
+@jump storage="okeiko.ks" target=*event_hantei_week_owari_owari
 [endif]
 
 *event_hantei_week_owari
@@ -155,7 +155,7 @@ f.katuraginomiya_fumi_inou = f.katuraginomiya_fumi_inou - 1;
 
 ;↓話題到着待ち状態でなければ、速度対策のため話題等カウントをカット。話題以外のカウント処理はこの手前に書く必要があります。
 [if exp="(f.fumi_wadai_toutyakumachi <= 0) || (f.fumi_wadai_toutyakumachi == null)]
-@jump target=*qk_end
+@jump storage="okeiko.ks" target=*qk_end
 [endif]
 
 [if exp="f.fumi_wadai_toutyakumachi > 0"]
@@ -462,11 +462,11 @@ f.hujieda_fumi_toutyakumachi_kaidan = f.hujieda_fumi_toutyakumachi_kaidan - 1;
 ;◆「休憩中」画像切り替え
 ;9月1～2週休憩中は表示せず飛ばす
 [if exp="(f.okeiko_month == 9 && (f.okeiko_week == 1 || f.okeiko_week == 2)) && f.event_weekend == 1"]
-	@jump target=*qk_gazou_owari3
+	@jump storage="okeiko.ks" target=*qk_gazou_owari3
 [endif]
 ;週終わりのイベント後は表示せず飛ばす
 [if exp="f.event_jiki=='weekend'"]
-	@jump target=*qk_gazou_owari3
+	@jump storage="okeiko.ks" target=*qk_gazou_owari3
 [endif]
 [freeimage layer = 26]
 [layopt layer=26 visible=true]
@@ -485,12 +485,14 @@ f.hujieda_fumi_toutyakumachi_kaidan = f.hujieda_fumi_toutyakumachi_kaidan - 1;
 [bg wait=true storage=&f.okeiko_bg_tukihajime time=50]
 [wait time=10]
 ;【SE】スズメのさえずり
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_suzume.ogg loop=false ]
+[endif]
 [wait time=500]
 [endif]
 
 ;◆イベント判定(週始め)へ
-@jump target=*event_hantei_week_hajime
+@jump storage="okeiko.ks" target=*event_hantei_week_hajime
 
 ;◆テストメニューへ戻る
 *back_test

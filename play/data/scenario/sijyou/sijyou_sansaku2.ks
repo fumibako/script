@@ -4,7 +4,7 @@
 ;=======================お芝居の準備中です==================================
 *sansaku
 [stopbgm]
-[call target=*bonyou storage="sijyou/preload_sijyou.ks"]
+[call target=*bonyou storage="sijyou/preload_sijyou2.ks"]
 ;[call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
 [wait time=10]
@@ -265,6 +265,8 @@
 [if exp="f.event_replay != 'sijyou']
 [eval exp="f.sijyou_sobo = true"]
 [endif]
+[wait time=50]
+[eval exp="f.event_machi_sijyou[2] = 1"]
 [eval exp="sf.event_sijyou_sansaku_2 = 1"]
 #
 [イベントシーン終了]
@@ -308,6 +310,7 @@
 [call target=*start storage="macro_graphic.ks"]
 [call target=*start storage="macro_etc.ks"]
 [call target=*start storage="macro_tati_girl.ks"]
+[call target=*start storage="macro_tati_girl2.ks"]
 [イベントシーン構築]
 ;[主人公ポーズ通常]
 

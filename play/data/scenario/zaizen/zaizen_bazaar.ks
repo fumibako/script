@@ -2,6 +2,8 @@
 ;◆チャリティーバザー◆２月１週から３月４週まで礼法が高い　財前ルート：散策イベント
 ;=======================お芝居の準備中です==========================================
 [stopbgm]
+[clearstack]
+[wait time=50]
 [call target=*bazar storage="zaizen/preload_zaizen.ks"]
 [call target=*start storage="macro_tati_zaizen.ks"]
 [freeimage layer = 1]
@@ -169,7 +171,9 @@ jumpします。[p]
 #
 チャリティーバザー会場は多くの人で賑わっていた。[p]
 ;【SE】人々のざわめき（ザワザワ…屋内）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_room.ogg loop=false ]
+[endif]
 
 [whosay name=財前母]
 「今年は経済的にも色々あって開催を危ぶまれたけれど[r]
@@ -802,6 +806,8 @@ jumpします。[p]
 ;暗く全体消えていく演出
 [freeimage layer=29]
 [layopt layer=fix visible=true]
+[wait time=50]
+[eval exp="f.event_machi_zaizen[1]=1"]
 [eval exp="sf.event_zaizen_sansaku_bazar = 1"]
 ;↓散策イベントとして実装する際に、気力回復無しの終了方法とします(シリアスな物語内容のため、回復することや主人公セリフが合わないため)
 [if exp="f.okeiko_gamen == true"]

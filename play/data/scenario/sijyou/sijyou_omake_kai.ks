@@ -28,7 +28,9 @@ $('.loding_pic').remove();
 ;季節はｲﾍﾞﾝﾄに合わせて調整
 *seen0
 ;【SE】物音（ガタン・バタン）
+[if exp="sf.SE=='ON'"]
 [playse storage=gatanbatan.ogg loop=false ]
+[endif]
 [whosay name="四条父" color="%mp.color"]
 「今日は、やけに二階が騒がしいな」[p]
 [whosay name="四条母" color="#9B608B"]
@@ -126,7 +128,9 @@ $('.loding_pic').remove();
 [eval exp="f.bgm_storage='michikusa.ogg'"]
 [endif]
 ;【SE】箱を閉めたり置く(パタン)
+[if exp="sf.SE=='ON'"]
 [playse storage=box_close_oku.ogg loop=false ]
+[endif]
 [whosay name="華織" color="olivedrab"]
 「もし、僕が運んで、君の大事なものを[r]
 [sp]ウッカリ壊しても文句は言わないのかい？」[p]
@@ -159,7 +163,9 @@ $('.loding_pic').remove();
 *seen1
 ;足音去っていく
 ;【SE】落ち着いた足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_out.ogg loop=false ]
+[endif]
 [bg wait=true method="crossfade" storage="../fgimage/bg/B4nFWraU42/bg_sijyou_genkan_hole.jpg" time=600]
 [eval exp="f.haikei_credit='photo　by　＠名無しさん１'"]
 [stopse]
@@ -183,7 +189,9 @@ $('.loding_pic').remove();
 [whosay name="四条 華衣" color=%mp.color]
 「あ……これ……俺がアイツにあげた壺だ」[p]
 ;【SE】壺を置く（コトリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_yunomi_oku.ogg loop=false ]
+[endif]
 [whosay name="四条 華衣" color=%mp.color]
 「アイツ、いつも金に困ってたから、金を渡そうとしたら怒ってきて……[r]
 [sp]それで代わりに出店で見つけた壺を買ってきたんだっけ……」[p]
@@ -202,7 +210,9 @@ $('.loding_pic').remove();
 「こっちは日誌か。　男子すなるものってやつを[r]
 [sp]よくも、こうも書いたものだな」[p]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [whosay name="四条 華衣" color=%mp.color]
 「………音頭寝刀の合言葉だ、ジジイに内緒で会いに行ったな………」[p]
 [stopse]
@@ -216,7 +226,9 @@ $('.loding_pic').remove();
 「なぁ、俺に何ができるかな？ 華道もダメ、勉強もダメ。[r]
 [sp]そんな俺に出来ることって何がある？」[p]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 #
 [華衣]は、尋ねるように日誌を眺める。[p]
 [whosay name="日誌" color="%mp.color"]
@@ -225,7 +237,9 @@ $('.loding_pic').remove();
 「国は無理だけど、お前の役に立つことは探さないとな[r]
 [sp]……何も出来ないけどさ」[p]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [whosay name="日誌" color="%mp.color"]
 『無は有を産むべきもの。[r]
 [sp]自身の定めしもの見つけるべし。[r]

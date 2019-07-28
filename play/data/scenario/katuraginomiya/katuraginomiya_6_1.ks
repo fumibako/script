@@ -38,7 +38,9 @@
 「どうぞ」[p]
 
 ;【SE】ドアが開く
+[if exp="sf.SE=='ON'"]
 [playse storage=door_open.ogg loop=false ]
+[endif]
 
 # 
 予想通り、母宮が姿を見せる。[p]

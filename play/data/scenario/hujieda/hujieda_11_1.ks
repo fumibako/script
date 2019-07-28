@@ -71,7 +71,9 @@
 （鳩が入ってこれるように、少し障子を開けているけれども）[p]
 
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 
 [whosay name=磯野 color="dimgray"]
 「お嬢様、お茶をお持ちしました」
@@ -84,7 +86,9 @@
 「ありがとう、入っていいわよ」[p]
 
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 [whosay name=磯野 color="dimgray"]
 「失礼します。[r]
@@ -100,7 +104,9 @@
 #
 私はお稽古の手を止めて、お茶に手を伸ばしたときだった。[p]
 ;【SE】鳩（クルルポー）
+[if exp="sf.SE=='ON'"]
 [playse storage=tori_hato.ogg loop=false ]
+[endif]
 
 [主人公困り]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -138,7 +144,9 @@
 [p]
 
 ;【SE】紙に触れる（早・軽）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open_fast.ogg loop=false ]
+[endif]
 #
 私は[ruby text="ぼう"]茫[ruby text="ぜん"]然と立ち尽くした。[r]
 [主人公効果消]

@@ -395,7 +395,9 @@ $('.junbi_girl').remove();
 「ああ、いただこうか」[p]
 
 ;【SE】湯のみを置く（コトリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_yunomi_oku.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公
 [whosay name=&sf.girl_namae color="#cf5a7f"]

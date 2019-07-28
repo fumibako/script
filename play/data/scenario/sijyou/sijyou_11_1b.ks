@@ -2,7 +2,8 @@
 ;△ ○壺の柄と暗号を照らし合わせ、弟の場所を発見する
 *start
 ;暗転プリロードサブルーチン　ここは続編なのでイベント構築のみ
-[call target=*end_sub storage="sijyou/preload_sijyou.ks"]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [stopbgm]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [freeimage layer = 1]
@@ -25,7 +26,9 @@
 ;=============================
 ;【波ヶ浦】荒波
 ;【SE】荒波（海）
+[if exp="sf.SE=='ON'"]
 [playse storage=mizu_umi_aranami.ogg loop=true]
+[endif]
 ;こちらはループSEになります。SEフェードアウトやSE停止タグとセットでお使いください
 [背景_四条_波ヶ裏]
 [四条イベントシーン構築]
@@ -211,7 +214,9 @@ jumpします。[p]
 ;【SE】紙に触れる（スッ）　どちらでもおｋ
 ;[playse storage=paper_su.ogg loop=false ]
 ;【SE】衣擦れ（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 ;裏テーマ華綴り
 ;○攻略相手を応援…ではない方法の手紙の掲示
 ;◎「また会う日を楽しみに」「幸せな思い出」「忍耐」※ネリネ
@@ -232,7 +237,9 @@ jumpします。[p]
 [eval exp="f.bgm_storage='omoiwokomete_kizuna.ogg'"]
 [endif]
 ;【SE】紙に触れる（パラリ）古い紙だからパラリ？
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 [手紙華衣婚約者 fumi_number=]
 [華衣]様へ[r]
 [image layer=29 name=nerine storage="bg/B4nFWraU42/sijyou_nerine.png" left=220 top=-20 time=1500 wait=false]
@@ -252,14 +259,18 @@ $(".nerine").css("opacity",0.5);
 [r]
 [sp]どうか悲しまないでほしい。[r]　
 [sp]私は[華衣]様に　幸せな思い出が訪れる日を楽しみにしています。」[p]
+[wait time=50]
 [手紙読了] 
+[wait time=50]
 
 ;======四条表示======
 [layopt layer=13 visible=true]
 [image layer=13 name="jyunbi" left=1 top=1 storage="bg/sijyou_namigaura.jpg" time=100]
+[wait time=50]
 ;【登場】四条
 [四条ベース羽織]
 [四条憂い]
+[wait time=50]
 [freeimage layer=13 time=500]
 [wait time=500]
 [layopt layer=13 visible=true]
@@ -317,7 +328,9 @@ $(".nerine").css("opacity",0.5);
 生育されていた。
 [autosave改]
 [p]
+[if exp="sf.SE=='ON'"]
 [playse storage=shine.ogg loop=false ]
+[endif]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 [resetfont]
 ;ｸﾘｯｸがみえる場合は追加↓
@@ -479,7 +492,9 @@ $(function(){
 [whosay name="馬車の御者"]
 「止まれッ。　止まれえーッ！！」[p]
 ;[SE馬の鳴き声]
+[if exp="sf.SE=='ON'"]
 [playse storage=uma_jiko.ogg loop=false ]
+[endif]
 [wait time=1000]
 [whosay name="華衣の婚約者"]
 『！！』[p]

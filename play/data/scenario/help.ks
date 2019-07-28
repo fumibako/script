@@ -26,7 +26,7 @@
 ;[glink target=*report text="連絡・報告" font_color=black size=23 width="300" x=300 y=350 graphic="select_waku_x500.png"]
 [glink target=*delete_save text="セーブデータ初期化" font_color=black size=23 width="300" x=300 y=350 graphic="select_waku_x500.png"]
 [ptext name=list layer=2 page=fore text="※ ↑ブラウザ版のみ対応。ボタンを押すと詳しい説明が表示されます。" x=300 y=430 size=16 color=0xA8401C visible=true]
-@jump target=*common
+@jump storage="help.ks" target=*common
 
 *howto
 [cm]

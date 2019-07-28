@@ -28,18 +28,33 @@
 ――その夕刻、研究室。[l][r]
 [r]
 ;【SE】雷（ゴロゴロ
+[stopse]
+[wait time=50]
+[if exp="sf.SE=='ON'"]
 [playse storage=thunder_gorogoro.ogg loop=false ]
+[endif]
+[wait time=50]
 
 遠くに響く音は雷だろうか。[r]
 [r]
 ;【SE】雨
+[stopse]
+[wait time=50]
+[if exp="sf.SE=='ON'"]
 [playse storage=rain.ogg loop=false ]
+[endif]
+[wait time=50]
 嫌な夢を見た。
 [autosave改]
 [p]
 
 ;【SE】落雷
+[stopse]
+[wait time=50]
+[if exp="sf.SE=='ON'"]
 [playse storage=thunder.ogg loop=false ]
+[endif]
+[wait time=50]
 雷が校舎に落ち、[ruby text="ごう"]轟[ruby text="おん"]音とともに[r]
 [r]
 研究室も何もかも崩れ落ちる夢。[p]
@@ -54,6 +69,7 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_prologue.jpg" time=1]
 [wait time=50]
 [freeimage layer = 2]
+[wait time=50]
 
 ;[chara_mod name="bg_effect" storage="toumei.gif" time=50]
 ;[wait time=50]
@@ -64,6 +80,7 @@
 ;【効果】可能なら、全画面にガラスが割れ落ちるような、又は白い破片的なものが崩れ落ちるようなアニメーション挿入。実装困難なら省略
 ;このあとがフリーズしやすいのでclearstack
 [clearstack]
+[wait time=50]
 
 【黒田 将貴】[r]
 [r]
@@ -106,7 +123,9 @@
 [wait time=10]
 
 ;【SE】雨
+[if exp="sf.SE=='ON'"]
 [playse storage=rain.ogg loop=false ]
+[endif]
 
 実験台のガラス器具には、つい先刻の[r]
 ――新たな『失敗』[r]
@@ -134,9 +153,13 @@
 *scene6
 
 ;【SE】足音（靴
+[if exp="sf.SE=='ON'"]
 [playse storage=walk_kutsu.ogg loop=false ]
+[endif]
 ;【SE】ドアが開く
+[if exp="sf.SE=='ON'"]
 [playse storage=door_open.ogg loop=false ]
+[endif]
 ;【BGM】通常会話パート用
 
 [chara_mod name="kuroda_base" storage="kuroda/base_kimono.png" time=0]
@@ -175,7 +198,9 @@
 「ん？」[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 [whosay name="田中　岩男" color="#775545"]
 「これだけは、厳重に包んで雨から守ったんだ」[p]
 #
@@ -190,7 +215,9 @@
 [wait time=10]
 
 ;【SE】足音（靴
+[if exp="sf.SE=='ON'"]
 [playse storage=walk_kutsu.ogg loop=false ]
+[endif]
 #
 田中は声だけ残して足早に去って行く。[p]
 
@@ -228,10 +255,14 @@
 
 
 ;【SE】雨
+[if exp="sf.SE=='ON'"]
 [playse storage=rain.ogg loop=false ]
+[endif]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 油紙を開くと、現れたのは封筒だった。[r]
 [r]
 見覚えのある文字。[r]
@@ -252,7 +283,9 @@
 [endif]
 *scene8
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;【背景他】手紙用画面に切り替え
 ;主人公より手紙
@@ -334,7 +367,9 @@
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi_moya.jpg" time=1000]
 [wait time=10]
 ;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 [playse storage=shine.ogg loop=false ]
+[endif]
 [bg wait=true method='crossfade' storage="../fgimage/bg/bg_komugi.jpg" time=3000]
 [wait time=10]
 ;【テキスト枠】会話パート用 下部横長

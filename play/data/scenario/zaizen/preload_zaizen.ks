@@ -8,7 +8,7 @@
 ;==================================================
 *first
 ;make.ksで使用する際、ここに共通の読み込みを書きます。今はないのでここは書いてません。
-@jump target=end_sub0
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub0
 ;無駄な読み込みしない
 ;=======================================================================================
 ;◇プリロードサブルーチン　targetで呼び出し方法　シナリオで呼び出し設定してます。
@@ -32,7 +32,7 @@
 [preload storage="data/fgimage/bg/test_room_zaizen_ima.jpg" wait=true]
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -48,7 +48,7 @@
 ;///////////////使用背景メモ　必要時に解放///////////////////
 [preload storage="data/fgimage/bg/room_niwa_yoru.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -125,7 +125,7 @@
 [preload storage="data/image/face_zaizen_sepia.png" wait=true]
 [preload storage="data/image/face_zaizen_smile.png" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -141,7 +141,7 @@
 ;[preload storage="data/fgimage/bg/bg_ryoutei.jpg" wait=true]
 
 ;======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -163,7 +163,7 @@
 ;桜の表示が遅いと見えない,処理不能の為プリロード
 [preload storage="data/fgimage/bg/B4nFWraU42/img_sakura_sijyou.png"]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -204,7 +204,7 @@
 [eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_zDress.png','data/fgimage/girl/S/katate_zDress.png']"]
 [preload storage=&tf.preload_ishou wait=true]
 ;==========================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;=========================================================================
@@ -224,7 +224,7 @@
 [preload storage="data/fgimage/bg/test_room_zaizen_ima.jpg" wait=true]
 
 ;==========================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;==========================================================================
@@ -246,7 +246,7 @@
 ;【背景】港町的な背景
 [preload storage="data/fgimage/bg/zaizen_minato.jpg" wait=true]
 ;======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -265,7 +265,7 @@
 [preload storage="data/fgimage/bg/bg_bluesky.jpg" wait=true]
 
 ;======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください
 ;以降は、無駄な読み込みはしない
 ;======================================================================================
@@ -284,7 +284,7 @@
 ;【背景】シャンデリア
 ;【背景】ホール]
 ;=======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=====================================================================================
@@ -300,7 +300,7 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;=======================================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=====================================================================================
@@ -319,7 +319,7 @@
 ;【背景】車の中
 [preload storage="data/fgimage/bg/zaizen_kuruma.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=====================================================================================
@@ -337,7 +337,7 @@
 ;【背景？】新聞
 [preload storage="data/fgimage/bg/test_bg_sinbun.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -354,7 +354,7 @@
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=====================================================================================
@@ -371,7 +371,7 @@
 ;【背景】背景会議室
 [preload storage="data/fgimage/bg/B4nFWraU42/test_zaizen_kaigi.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -387,7 +387,7 @@
 ;【背景】主人公邸 庭の見える部屋：昼
 [preload storage="data/fgimage/bg/room_niwa.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -405,7 +405,7 @@
 [preload storage="data/fgimage/bg/test_room_zaizen_ima.jpg" wait=true]
 
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -421,7 +421,7 @@
 ;【背景】町並み
 ;[preload storage="data/fgimage/bg/bg_machi.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -448,7 +448,7 @@
 ;【背景】 フウセンカズラの花
 [preload storage="data/fgimage/bg/zaizen_fusenkazura2.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -482,7 +482,7 @@
 [eval exp="tf.preload_ishou = ['data/fgimage/girl/S/base_zED.png','data/fgimage/girl/S/base_ryoute_zED.png','data/fgimage/girl/S/ryoute_zED.png','data/fgimage/girl/S/katate_zED.png']"]
 [preload storage=&tf.preload_ishou wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================
@@ -508,7 +508,7 @@
 ;【背景】背景バザー出店（入り口）
 [preload storage="data/fgimage/bg/B4nFWraU42/bg_cyarity3.jpg" wait=true]
 ;=============================================================================
-@jump target=end_sub
+@jump storage="zaizen/preload_zaizen.ks" target=end_sub
 ;[return]へGO　ここは、消さないでください　
 ;以降は、無駄な読み込みはしない
 ;=============================================================================

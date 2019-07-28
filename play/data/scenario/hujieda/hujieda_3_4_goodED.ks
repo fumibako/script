@@ -112,7 +112,9 @@ $('.list').remove();
 「お嬢様、お茶をどうぞ。　少しは落ち着かれませんと」[p]
 
 ;【SE】湯のみを置く（コトリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_yunomi_oku.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 ;【立ち絵】主人公：微笑み
@@ -135,7 +137,9 @@ $('.list').remove();
 
 [主人公目伏]
 ;主人公動いてないので変更
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 #
 [ruby text="ふすま"]襖から老齢に差し掛かった女中が現れる。[p]
@@ -160,7 +164,9 @@ $('.list').remove();
 （でも藤枝様という方は、肇様以外に知らないわ）[p]
 
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 
 #
 ;===========================
@@ -199,7 +205,9 @@ $('.list').remove();
 「……どうぞ、お入りください」[p]
 
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 #
 部屋に入られた肇様は、私の表情を見て驚かれる。[p]
@@ -313,7 +321,9 @@ $('.list').remove();
 
 
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 
 #
 磯野を見送った後、私達はもう一度向き合った。[p]
@@ -380,7 +390,9 @@ $('.list').remove();
 優しく告げられ、私の鼓動は高鳴る。[p]
 
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 [主人公照れ目普通]
@@ -393,7 +405,9 @@ $('.list').remove();
 [主人公ほほえみ]
 
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「邪魔をしただろうか？」[p]

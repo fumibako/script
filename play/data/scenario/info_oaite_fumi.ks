@@ -87,6 +87,12 @@
 *start
 *fumibako
 [iscript]
+$('.sys_fukidasi').remove();
+[endscript]
+[wait time=10]
+
+
+[iscript]
 if (typeof f.fumi_report_info === "undefined") {
 	f.fumi_report_info=[]; //主人公手紙履歴用配列:未定義の場合のみ定義
 }
@@ -153,12 +159,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_1_left
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left
 [endif]
 
 *fumi_all_page1_right
 [if exp="f.fumi_all_number < 6"]
-	@jump target=*fumi_all_page1_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page1_end
 [else]
 	[eval exp="f.list_count = f.fumi_all_number - 5"]
 	[eval exp="f.loop_count = f.list_count"]
@@ -188,7 +194,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_1_right
 
 	[if exp="f.loop_count > 0"]
-		@jump target=*loop_fumi_all_right
+		@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right
 	[endif]
 [endif]
 *fumi_all_page1_end
@@ -236,12 +242,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_2_left
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left2
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left2
 [endif]
 
 *fumi_all_page2_right
 [if exp="f.fumi_all_number<16"]
-	@jump target=*fumi_all_page2_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page2_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 15"]
 [eval exp="f.loop_count = f.list_count"]
@@ -270,7 +276,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_2_right
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right2
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right2
 [endif]
 [endif]
 *fumi_all_page2_end
@@ -318,12 +324,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left3
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left3
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left3
 [endif]
 
 *fumi_all_page3_right
 [if exp="f.fumi_all_number<26"]
-	@jump target=*fumi_all_page3_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page3_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 25"]
 [eval exp="f.loop_count = f.list_count"]
@@ -352,7 +358,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right3
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right3
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right3
 [endif]
 [endif]
 *fumi_all_page3_end
@@ -400,12 +406,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left4
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left4
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left4
 [endif]
 
 *fumi_all_page4_right
 [if exp="f.fumi_all_number<36"]
-	@jump target=*fumi_all_page4_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page4_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 35"]
 [eval exp="f.loop_count = f.list_count"]
@@ -434,7 +440,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right4
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right4
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right4
 [endif]
 [endif]
 *fumi_all_page4_end
@@ -482,12 +488,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left5
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left5
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left5
 [endif]
 
 *fumi_all_page5_right
 [if exp="f.fumi_all_number<46"]
-	@jump target=*fumi_all_page5_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page5_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 45"]
 [eval exp="f.loop_count = f.list_count"]
@@ -516,7 +522,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right5
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right5
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right5
 [endif]
 [endif]
 *fumi_all_page5_end
@@ -564,12 +570,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left6
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left6
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left6
 [endif]
 
 *fumi_all_page6_right
 [if exp="f.fumi_all_number<56"]
-	@jump target=*fumi_all_page6_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page6_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 55"]
 [eval exp="f.loop_count = f.list_count"]
@@ -598,7 +604,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right6
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right6
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right6
 [endif]
 [endif]
 *fumi_all_page6_end
@@ -646,12 +652,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left7
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left7
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left7
 [endif]
 
 *fumi_all_page7_right
 [if exp="f.fumi_all_number<66"]
-	@jump target=*fumi_all_page7_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page7_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 65"]
 [eval exp="f.loop_count = f.list_count"]
@@ -680,7 +686,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right7
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right7
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right7
 [endif]
 [endif]
 *fumi_all_page7_end
@@ -728,12 +734,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left8
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left8
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left8
 [endif]
 
 *fumi_all_page8_right
 [if exp="f.fumi_all_number<76"]
-	@jump target=*fumi_all_page8_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page8_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 75"]
 [eval exp="f.loop_count = f.list_count"]
@@ -762,7 +768,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right8
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right8
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right8
 [endif]
 [endif]
 *fumi_all_page8_end
@@ -810,12 +816,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left9
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left9
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left9
 [endif]
 
 *fumi_all_page9_right
 [if exp="f.fumi_all_number<86"]
-	@jump target=*fumi_all_page9_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page9_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 85"]
 [eval exp="f.loop_count = f.list_count"]
@@ -844,7 +850,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right9
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right9
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right9
 [endif]
 [endif]
 *fumi_all_page9_end
@@ -892,12 +898,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left10
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left10
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left10
 [endif]
 
 *fumi_all_page10_right
 [if exp="f.fumi_all_number<96"]
-	@jump target=*fumi_all_page10_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page10_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 95"]
 [eval exp="f.loop_count = f.list_count"]
@@ -926,7 +932,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right10
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right10
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right10
 [endif]
 [endif]
 *fumi_all_page10_end
@@ -974,12 +980,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left11
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left11
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left11
 [endif]
 
 *fumi_all_page11_right
 [if exp="f.fumi_all_number<106"]
-	@jump target=*fumi_all_page11_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page11_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 105"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1008,7 +1014,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right11
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right11
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right11
 [endif]
 [endif]
 *fumi_all_page11_end
@@ -1056,12 +1062,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left12
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left12
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left12
 [endif]
 
 *fumi_all_page12_right
 [if exp="f.fumi_all_number<116"]
-	@jump target=*fumi_all_page12_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page12_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 115"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1090,7 +1096,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right12
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right12
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right12
 [endif]
 [endif]
 *fumi_all_page12_end
@@ -1138,12 +1144,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left13
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left13
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left13
 [endif]
 
 *fumi_all_page13_right
 [if exp="f.fumi_all_number<126"]
-	@jump target=*fumi_all_page13_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page13_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 125"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1172,7 +1178,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right13
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right13
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right13
 [endif]
 [endif]
 *fumi_all_page13_end
@@ -1220,12 +1226,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left14
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left14
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left14
 [endif]
 
 *fumi_all_page14_right
 [if exp="f.fumi_all_number<136"]
-	@jump target=*fumi_all_page14_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page14_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 135"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1254,7 +1260,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right14
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right14
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right14
 [endif]
 [endif]
 *fumi_all_page14_end
@@ -1302,12 +1308,12 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_left15
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_left15
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_left15
 [endif]
 
 *fumi_all_page15_right
 [if exp="f.fumi_all_number<146"]
-	@jump target=*fumi_all_page15_end
+	@jump storage="info_oaite_fumi.ks" target=*fumi_all_page15_end
 [else]
 [eval exp="f.list_count = f.fumi_all_number - 145"]
 [eval exp="f.loop_count = f.list_count"]
@@ -1336,7 +1342,7 @@ if (typeof f.fumi_report_info === "undefined") {
 *fumi_hyouji_owari_right15
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_all_right15
+	@jump storage="info_oaite_fumi.ks" target=*loop_fumi_all_right15
 [endif]
 [endif]
 *fumi_all_page15_end

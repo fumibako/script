@@ -45,7 +45,9 @@
 ;[手紙主人公]
 [macro name="手紙主人公"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -66,7 +68,9 @@
 ;[手紙文矢]
 [macro name="手紙文矢"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -87,7 +91,9 @@
 ;[手紙飛鳥]
 [macro name="手紙飛鳥"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -108,7 +114,9 @@
 ;[手紙時子]
 [macro name="手紙時子"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -129,7 +137,9 @@
 ;[手紙華衣婚約者]
 [macro name="手紙華衣婚約者"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -150,7 +160,9 @@
 ;[手紙皇后さま]
 [macro name="手紙皇后さま"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -171,7 +183,9 @@
 ;[手紙葛城宮妃殿下]
 [macro name="手紙葛城宮妃殿下"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -192,7 +206,9 @@
 ;[手紙従妹宮]
 [macro name="手紙従妹宮"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -213,7 +229,9 @@
 ;[手紙侍従]
 [macro name="手紙侍従"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -250,7 +268,9 @@
 ;[手紙財前]
 [macro name="手紙財前"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -290,7 +310,9 @@
 ;[手紙四条]
 [macro name="手紙四条"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -332,7 +354,9 @@
 ;[手紙葛城宮]
 [macro name="手紙葛城宮"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -374,7 +398,9 @@
 ;[手紙藤枝]
 [macro name="手紙藤枝"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]
@@ -413,7 +439,9 @@
 ;[手紙黒田]
 [macro name="手紙黒田"]
 ;【SE】パラリ(手紙を開く)
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;名前表示消去
 [whosay name=""]
 [cm]

@@ -10,6 +10,9 @@
 [image name="loding_pic1" layer=29 folder="image" storage="junbi_cyu.gif" left=740 top=580]
 [wait time=50]
 [call target=*9_1 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 ;【背景】主人公邸 庭の見える部屋：夜
 [freeimage layer = 1]
 [wait time=10]
@@ -171,9 +174,13 @@
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 「おやすみなさい」[p]
 ;【SE】襖を閉じる（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-close.ogg loop=false ]
+[endif]
 ;【SE】落ち着いた足音（フェードアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_out.ogg loop=false ]
+[endif]
 
 [if exp="sf.KSKIP=='ON' && sf.trail_kuroda_9_1_scene4==undefined"]
 	[skipstop]
@@ -217,7 +224,9 @@
 [whosay name="幼い頃の私" color="#cf5a7f"]
 『はい、わかりましたお兄さま！』[p]
 ;【SE】軽い足音（すぐ止まる）
+[if exp="sf.SE=='ON'"]
 [playse storage=girl_out_run_stop.ogg loop=false ]
+[endif]
 [whosay name=文矢 color="#538a8a"]
 『こら！ 廊下は走らない！』[p]
 ;情景がわかりにくい為↓追加

@@ -112,7 +112,9 @@
 （ずっと私を信じて手紙をくれた……）[p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 [手紙主人公]
 [font color=navy size=21]
 葛城宮　晴仁殿下へ[l][r]
@@ -146,7 +148,9 @@
 [resetfont]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 [whosay name="侍従" color=%mp.color]
 「何を読まれているんですか？　演説用のメモには見えませんが」[p]

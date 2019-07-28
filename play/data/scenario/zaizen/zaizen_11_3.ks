@@ -35,7 +35,9 @@
 [endif]
 
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;【SE】紙に触れる（スッ）
 ;[playse storage=paper_su.ogg loop=false ]
 *fumi_toutyaku_zaizen_31
@@ -112,7 +114,9 @@ f.para_zaizen_koukando = f.para_zaizen_koukando + f.zaizen_koukando_up_event_fum
 [手紙財前読了 fumi_number=]
 ;名前と追伸が近くアイコンにかかるため改ページ
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 
 ;【立ち絵】主人公：眉ひそめ
 [主人公憂い]

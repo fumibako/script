@@ -72,7 +72,9 @@
 [image layer=27 x=650 y=17 storage="../image/button_fumi.png"]
 [wait time=10]
 ;【SE】キラキラ
+[if exp="sf.SE=='ON'"]
 [playse storage=kira_s.ogg loop=false ]
+[endif]
 「もっと『文箱』からお手紙を書かれては、いかがでしょうか？」[p]
 
 [主人公ほほえみ]

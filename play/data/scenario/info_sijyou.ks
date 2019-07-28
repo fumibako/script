@@ -73,7 +73,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page1
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -118,7 +118,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page2
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou2
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou2
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -166,7 +166,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page3
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou3
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou3
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -211,7 +211,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page4
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou4
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou4
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -256,7 +256,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page5
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou5
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou5
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -299,7 +299,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page6
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou6
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou6
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -342,7 +342,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page7
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou7
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou7
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -385,7 +385,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page8
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou8
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou8
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -428,7 +428,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page9
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou9
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou9
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -471,7 +471,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page10
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou10
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou10
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -514,7 +514,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page11
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou11
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou11
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -557,7 +557,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page12
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou12
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou12
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -601,7 +601,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page13
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou13
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou13
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -645,7 +645,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page14
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou14
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou14
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -689,7 +689,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page15
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou15
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou15
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -733,7 +733,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page16
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou16
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou16
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -777,7 +777,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page17
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou17
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou17
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -820,7 +820,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page18
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou18
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou18
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -863,7 +863,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page19
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou19
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou19
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -906,7 +906,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page20
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou20
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou20
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -949,7 +949,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page21
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou21
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou21
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -992,7 +992,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page22
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou22
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou22
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -1035,7 +1035,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page23
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou23
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou23
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -1079,7 +1079,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_sijyou_page24
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_sijyou24
+	@jump storage="info_sijyou.ks" target=*loop_fumi_sijyou24
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -1102,25 +1102,25 @@ $('.info_face').remove();
 ;[if exp="f.sijyou_au == 0"]
 	;他のキャラに切り替えた、または切り替えてきたときに困るので共通画像を設定 or remove(現在テストでremoveを実行)同じlayer26なのでいらないかと
 	;[image name=info_face layer=26 x=&tf.x_info y=&tf.y_info folder="image" storage="face_kyoutu_no.png" zindex=2]
-	;@jump target=*info_face_sijyou_owari
+	;@jump storage="info_sijyou.ks" target=*info_face_sijyou_owari
 ;[endif]
 [if exp="f.sijyou_au == 1 && f.sijyou_omiai == 1 && f.para_sijyou_koukando >= 80 && f.para_shujinkou_shukujodo >= 80 && f.sijyou_sobo == true && f.event_sijyou[15] == 1 && f.para_shujinkou_j_kadou >= 50"]
 	;カラー画像(表情ほほえみ：goodED条件を満たした時の指標)：お見合い済＜シナリオにあったフラグを使用　好感度80以上かつ淑女度80以上 祖母イベントをみている（≒華道展のイベントをみている）かつ 華道50以上
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_smail.png" zindex=2]
 [wait time=10]
-	@jump target=*info_face_sijyou_owari
+	@jump storage="info_sijyou.ks" target=*info_face_sijyou_owari
 [endif]
 [if exp="f.sijyou_au == 1 && f.para_sijyou_koukando >= 40 && f.sijyou_omiai == 1"]
 	;カラー画像(表情通常：normal以上のEDの可能性を示す指標)：好感度40以上　お見合い済＜シナリオにあったフラグを使用
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_color.png" zindex=2]
 [wait time=10]
-	@jump target=*info_face_sijyou_owari
+	@jump storage="info_sijyou.ks" target=*info_face_sijyou_owari
 [endif]
 [if exp="f.sijyou_au == 1 && f.para_sijyou_koukando < 40 && f.sijyou_omiai == 1"]
 	;セピア画像(badEDの可能性を示す指標)：好感度40未満 お見合い済＜シナリオにあったフラグを使用
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_sijyou_sepia.png" zindex=2]
 [wait time=10]
-	@jump target=*info_face_sijyou_owari
+	@jump storage="info_sijyou.ks" target=*info_face_sijyou_owari
 [endif]
 *info_face_sijyou_owari
 ;==============================================================================

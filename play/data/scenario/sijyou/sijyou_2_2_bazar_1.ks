@@ -7,6 +7,9 @@ $(".1_fore").empty();
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*2_2 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;====================================================
 [cm]
@@ -49,7 +52,9 @@ $(".1_fore").empty();
 [主人公目パチ1回]
 (どうしたのかしら？）[p]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 *fumi_toutyaku_sijyou_107
 [if exp="f.okeiko_gamen == true"]
 [iscript]	

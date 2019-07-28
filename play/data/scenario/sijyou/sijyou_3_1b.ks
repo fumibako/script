@@ -3,6 +3,9 @@
 [stopbgm]
 ;暗転プリロードサブルーチン
 [call target=*3_1 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 ;◆展覧会：[主人公ポーズ四条紫通常][主人公ポーズ四条紫指][主人公ポーズ四条紫片手]
 [プリロード画面消去]
@@ -116,7 +119,9 @@
 
 [主人公通常]
 ;【SE】人々のざわめき（ザワザワ…宴会）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_enkai.ogg loop=false ]
+[endif]
 #
 宴が半ばに入る頃、
 お父様方は、酔い冷めならぬ表情で、これから訪れるであろう幸せな悩みについて、花咲かす。[p]
@@ -303,7 +308,9 @@
 [背景_四条宴会]
 ;==========================================
 ;【SE】人々のざわめき（ザワザワ…宴会）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_enkai.ogg loop=false ]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （私は、お兄様が華織様を連れてこられて出会った気がしますが……）[p]
 ;兄、主人公の視線に気づく
@@ -439,7 +446,9 @@
 そうして、華織様のおかげで席は埋まり、本来の四条家と[名字]家の家族が[r]
 集まった。[p]
 ;【SE】人々のざわめき（ザワザワ…宴会）
+[if exp="sf.SE=='ON'"]
 [playse storage=zawa_enkai.ogg loop=false ]
+[endif]
 ;家族についての手紙を読んでいる
 [主人公通常]
 [主人公ポーズ四条紫指]

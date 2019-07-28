@@ -1,8 +1,7 @@
 /*ウェブフォントを使用する場合はここに定義を追加して下さい*/
 
 @font-face {
-/*	font-family:"mfrules";*/
-    font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+	font-family:"mfrules";
 	src:url("../data/others/Mf_Break_The_Rules.eot?") format("eot"),
 	url("../data/others/Mf_Break_The_Rules.woff") format("woff"),
 	url("../data/others/Mf_Break_The_Rules.ttf") format("truetype"),

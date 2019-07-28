@@ -5,6 +5,9 @@
 *start
 [stopbgm]
 [call target=*9_3 storage="sijyou/preload_sijyou.ks"]
+[wait time=50]
+[call target=*end_sub1 storage="sijyou/preload_sijyou2.ks"]
+[wait time=50]
 [call target=*start storage="macro_tati_sijyou.ks"]
 [layopt layer=13 visible=true]
 ;=========================================================================================
@@ -82,7 +85,9 @@
 [whosay name=文矢 color="#538a8a"]
 「うん。けど、ちょっと……僕は席を外すよ」[p]
 ;【SE】衣擦れ（スッ）文矢が障子の影にかくれるイメージ
+[if exp="sf.SE=='ON'"]
 [playse storage=kinuzure.ogg loop=false ]
+[endif]
 [whosay name="華織" color="olivedrab"]
 「まったく君って奴は急にやって来たと思ったら引っ張り出して……。[r]
 [sp]いくら君の頼みでも、今は……」[p]
@@ -457,7 +462,9 @@
 「その刀は世襲財産ですね。[r]
 [sp]差し押さえできないので他のものを回収します」[p]
 ;【SE】箱を閉めたり置く(パタン)
+[if exp="sf.SE=='ON'"]
 [playse storage=box_close_oku.ogg loop=false ]
+[endif]
 ;==================
 ;四条登場
 ;【登場】四条
@@ -830,7 +837,9 @@
 ;荘厳派手すぎてむいてない　赤に金の唐風の壷？
 [主人公ポーズ通常]
 ;【SE】湯のみを置く（コトリ）　壷おいておく音
+[if exp="sf.SE=='ON'"]
 [playse storage=tya_yunomi_oku.ogg loop=false ]
+[endif]
 [四条口通常]
 [whosay name="華織" color="olivedrab"]
 「関係性は無さそうだね。[r]
@@ -886,7 +895,9 @@
 [主人公目パチ1回]
 [wait time=10]
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
 （？ この書物だけ可愛らしい織柄)[p]
 [whosay name=&sf.girl_namae color="#cf5a7f"]
@@ -941,7 +952,9 @@
 ;横棒に空読みするためruby
 [fadeoutbgm time=3000]
 ;【SE】紙に触れる（パラリ）　紙がおちる
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;○その書物には手紙が挟まっていて発見する
 [主人公ポーズ片手]
 [wait time=10]

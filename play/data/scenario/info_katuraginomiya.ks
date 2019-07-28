@@ -72,7 +72,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_katuraginomiya_page1
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_katuraginomiya
+	@jump storage="info_katuraginomiya.ks" target=*loop_fumi_katuraginomiya
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -118,7 +118,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_katuraginomiya_page2
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_katuraginomiya2
+	@jump storage="info_katuraginomiya.ks" target=*loop_fumi_katuraginomiya2
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 
@@ -162,7 +162,7 @@ $(".tips_btn").remove();
 *fumi_hyouji_owari_katuraginomiya_page3
 
 [if exp="f.loop_count > 0"]
-	@jump target=*loop_fumi_katuraginomiya3
+	@jump storage="info_katuraginomiya.ks" target=*loop_fumi_katuraginomiya3
 [endif]
 @jump storage="info_fumibako_hyouji_end.ks"
 ;======================================================================================
@@ -182,19 +182,19 @@ $(".tips_btn").remove();
 	;face_katuraginomiya_smile.png：(goodED条件のパラメータやフラグを満たす場合)  f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 80 && f.para_shujinkou_j_sadou >= 80 && f.para_shujinkou_shukujodo >= 100
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_smile.png" zindex=2]
 	[wait time=10]
-	@jump target=*info_face_katuraginomiya_owari
+	@jump storage="info_katuraginomiya.ks" target=*info_face_katuraginomiya_owari
 [endif]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40"]
 	;face_katuraginomiya_color.png：(normalED条件のパラメータやフラグを満たす場合) f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando >= 40
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_color.png" zindex=2]
 	[wait time=10]
-	@jump target=*info_face_katuraginomiya_owari
+	@jump storage="info_katuraginomiya.ks" target=*info_face_katuraginomiya_owari
 [endif]
 [if exp="f.katuraginomiya_au == 1 && f.para_katuraginomiya_koukando < 40"]
 	;face_katuraginomiya_sepia.png：(normalED条件未満) f.katuraginomiya_au == 1
 	[image name=info_face layer=26 x="&tf.x_info" y="&tf.y_info" folder="image" storage="face_katuraginomiya_sepia.png" zindex=2]
 	[wait time=10]
-	@jump target=*info_face_katuraginomiya_owari
+	@jump storage="info_katuraginomiya.ks" target=*info_face_katuraginomiya_owari
 [endif]
 *info_face_katuraginomiya_owari
 ;======================================================================================

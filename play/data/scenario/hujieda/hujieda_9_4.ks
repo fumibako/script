@@ -325,7 +325,9 @@ $('.oto').remove();
 [主人公口通常]
 一曲が終わると演奏者に送られる盛大な拍手が聞こえてくる。[p]
 ;[SE拍手]
+[if exp="sf.SE=='ON'"]
 [playse storage=hakushu.ogg loop=false ]
+[endif]
 
 ;========ふわっと表示============
 ;【立ち絵】藤枝 微笑み

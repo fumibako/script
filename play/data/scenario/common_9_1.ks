@@ -73,7 +73,9 @@ jumpします。[p]
 [endif]
 
 ;【SE】鈴虫の音
+[if exp="sf.SE=='ON'"]
 [playse storage=mushi_suzumushi.ogg loop=false]
+[endif]
 
 [chara_mod name="girl_mayu" storage="girl/S/mayu_yowa.png" time=0]
 [wait time=10]
@@ -98,7 +100,9 @@ jumpします。[p]
 [chara_mod name="girl_mayu" storage="girl/S/mayu_futuu.png" time=0]
 [wait time=10]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 #
 読んでいた文から目を離し、一息つく。[p]
 
@@ -118,7 +122,9 @@ jumpします。[p]
 
 [stopse]
 ;【SE】鈴虫の音
+[if exp="sf.SE=='ON'"]
 [playse storage=mushi_suzumushi.ogg loop=false ]
+[endif]
 
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 「……」[p]
@@ -155,7 +161,9 @@ jumpします。[p]
 [主人公目パチ1回]
 [wait time=10]
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 #
 無意識に一枚の手紙を手に取る。
 [autosave]
@@ -168,7 +176,9 @@ jumpします。[p]
 [whosay name=&sf.girl_namae color="mediumvioletred"]
 「……もし、貴方と
 ;【SE】落ち着いた足音（フェードイン）
+[if exp="sf.SE=='ON'"]
 [playse storage=isono_in.ogg loop=false ]
+[endif]
 会えたなら」[p]
 
 [主人公閉目パチ1回]
@@ -202,7 +212,9 @@ jumpします。[p]
 「お父様……！　はい、大丈夫です」[p]
 
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 
 [主人公通常]
 [wait time=10]
@@ -300,7 +312,9 @@ jumpします。[p]
 「……お父様」[p]
 
 ;【SE】鈴虫の音
+[if exp="sf.SE=='ON'"]
 [playse storage=mushi_suzumushi.ogg loop=false ]
+[endif]
 *sentaku
 #
 [if exp="f.common_9_1_ninzuu == 1"]
@@ -429,7 +443,9 @@ $('.junbi_girl').remove();
 [endif]
 
 ;【SE】鈴虫の音
+[if exp="sf.SE=='ON'"]
 [playse storage=mushi_suzumushi.ogg loop=false ]
+[endif]
 [whosay name=&sf.father_name color="DarkSlateBlue"]
 「さて、[名前]」
 [autosave]

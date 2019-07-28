@@ -26,7 +26,9 @@
 [p]
 
 ;【SE】紙に触れる（スッ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_su.ogg loop=false ]
+[endif]
 
 [if exp="sf.BGM=='ON'"]
 ;【BGM】古都に咲く花
@@ -106,7 +108,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
  [手紙葛城宮読了 fumi_number=]
  [resetfont]
 ;【SE】紙に触れる（パラリ）
+[if exp="sf.SE=='ON'"]
 [playse storage=paper_open.ogg loop=false ]
+[endif]
 ;==============================================================================
 [if exp="tf.test_gamen == true"]
 テストページからプレイしています。侍従の手紙まで移動しますか？[r]
@@ -279,7 +283,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 私は、緊張で足が少し[ruby text=すく]竦みそうだった。[p]
 
 ;【SE】足音3人石畳（フェードインアウト）
+[if exp="sf.SE=='ON'"]
 [playse storage=asioto_isidatami_3nin.ogg loop=false ]
+[endif]
 ;==========================スクリプト・全画面表示からの復帰準備========================================
 ;メッセージをもどします
 [resetfont]
@@ -311,7 +317,9 @@ f.para_katuraginomiya_koukando = f.para_katuraginomiya_koukando + f.katuraginomi
 「[名字]様に事前にお会いしたいとのことで、こちらに親王殿下が[r]
 [sp]いらっしゃいます」[p]
 ;【SE】襖を開ける（ゆっくり）
+[if exp="sf.SE=='ON'"]
 [playse storage=fusuma-open.ogg loop=false ]
+[endif]
 [主人公目閉]
 [autosave]
 #
