@@ -20,6 +20,7 @@ if(tf.current_bgm_vol != 0){
 
 [if exp="tf.current_bgm_vol == 0"]
  	[image name="button_bgm" layer=28 left=585 top=480 folder="image" storage="button_bgm_off.png"]
+ 	[stopbgm]
 	;変数設定。ゲーム開始時、ゲーム中やロード時に設定引き継ぎ用
 	[eval exp="sf.BGM='OFF'"]
 [endif]
@@ -69,6 +70,7 @@ if(tf.current_se_vol != 0){
 [if exp="tf.current_se_vol == 0"]
  	[image name="button_se" layer=28 left=715 top=480 folder="image" storage="button_se_off.png"]
 	;変数設定。ゲーム開始時やロード時に設定引き継ぎ用
+ 	[stopse]
 	[eval exp="sf.SE='OFF'"]
 [endif]
 
@@ -103,7 +105,7 @@ if(tf.current_se_vol != 100){
   [eval exp="tf.kansuuji_se_x='725'"]
   [eval exp="tf.kansuuji_se_y='520'"]
 [endif]
-[if exp="(tf.config=='se_only')"]
+[if exp="tf.config=='se_only' && sf.SE=='ON'"]
 ;【SE】紙に触れる（パラリ）
 [playse storage=paper_open.ogg loop=false ]
 [endif]
