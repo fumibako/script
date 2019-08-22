@@ -71,10 +71,10 @@ TG.stat.play_se = true;
 淑女たるもの温良貞淑たり[r]
 [ruby text="えい"]詠[ruby text="せつ"]雪[ruby text="の"]之[ruby text="さい"]才を持て
 [l][r]
-[stopbgm]
+;[stopbgm]
 ;【BGM】古都に咲く花（プロローグ等）スマホではシナリオ読み込み最初のBGMはclick=trueを入れないと鳴らないそうです
-[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
-[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
+;[playbgm storage="prologue_kotonisakuhana.ogg" loop=true]
+;[eval exp="f.bgm_storage='prologue_kotonisakuhana.ogg'"]
 
 [resetfont]
 [font color=white size=31]

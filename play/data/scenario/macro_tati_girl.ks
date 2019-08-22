@@ -41,156 +41,162 @@
 ;layer29→message0 zindex=1005:システム表示：手紙（イベント）
 
 ;名前表示用のマクロ(ティラノ公式サンプルゲーム『MikuPod』を参考にしています)
+;ティラノバージョンアップによりhtmlタグが名前欄に表示される不具合防止のため、rubyと名前を2行に分けて表示するよう変更しました。それに伴いy位置を条件分岐で設定するように変更しました。◆jsYiJcqRkk
 [macro name="whosay"]
 [eval exp="sf.father_name='浩文'"]
-[eval exp="sf.message_name_y=407"]
+[eval exp="sf.message_name_y=412"]
 ;入力された名前によって色を変更
 [iscript]
 if(mp.name=="文矢"){
+    mp.ruby = "";
     mp.color = "#538a8a";
 }else if(mp.name==sf.girl_namae){
+    mp.ruby = "";
     mp.color = "#cf5a7f";
 }else if(mp.name=="幼い頃の私"){
+    mp.ruby = "";
     mp.color = "#cf5a7f";
 }else if(mp.name=="磯野"){
+    mp.ruby = "";
     mp.color = "dimgray";
 }else if(mp.name=="ばあや"){
+    mp.ruby = "";
     mp.color = "#916565";
 }else if(mp.name==sf.father_name){
+    mp.ruby = "";
     mp.color = "DarkSlateBlue";
 }else if(mp.name=="黒田　将貴"){
-    mp.name = "黒田　<ruby><rb>将貴</rb><rt>まさたか</rt></ruby>";
+    mp.ruby = "　くろだ　　まさたか";
     mp.color = "#7a65b2";
-    sf.message_name_y=400;
 }else if(mp.name=="黒田 将貴"){
-    mp.name = "黒田 <ruby><rb>将貴</rb><rt>まさたか</rt></ruby>";
+    mp.ruby = "　くろだ　　まさたか";
     mp.color = "#7a65b2";
-    sf.message_name_y=400;
 }else if(mp.name=="黒田将貴"){
-    mp.name = "黒田<ruby><rb>将貴</rb><rt>まさたか</rt></ruby>";
+    mp.ruby = "　くろだ　　まさたか";
     mp.color = "#7a65b2";
-    sf.message_name_y=400;
 }else if(mp.name=="田中　岩男"){
+    mp.ruby = "";
     mp.color = "#775545";
 }else if(mp.name=="財前 美彬"){
-    mp.name = "<ruby><rb>財前</rb><rt>ざいぜん</rt></ruby> <ruby><rb>美彬</rb><rt>よしあきら</rt></ruby>";
+    mp.ruby = "ざいぜん　　よしあきら";
     mp.color = "#929055";
-    sf.message_name_y=400;
 }else if(mp.name=="財前　美彬"){
-    mp.name = "<ruby><rb>財前</rb><rt>ざいぜん</rt></ruby>　<ruby><rb>美彬</rb><rt>よしあきら</rt></ruby>";
+    mp.ruby = "ざいぜん　　よしあきら";
     mp.color = "#929055";
-    sf.message_name_y=400;
 }else if(mp.name=="財前美彬"){
-    mp.name = "<ruby><rb>財前</rb><rt>ざいぜん</rt></ruby><ruby><rb>美彬</rb><rt>よしあきら</rt></ruby>";
+    mp.ruby = "ざいぜん　よしあきら";
     mp.color = "#929055";
-    sf.message_name_y=400;
 }else if(mp.name=="財前・アルベルト・美彬"){
-    mp.name = "<ruby><rb>財前</rb><rt>ざいぜん</rt></ruby>・アルベルト・<ruby><rb>美彬</rb><rt>よしあきら</rt></ruby>";
+    mp.ruby = "ざいぜん　　　　　よしあきら";
     mp.color = "#929055";
-    sf.message_name_y=400;
 }else if(mp.name=="独逸大使夫人"){
-    mp.name = "<ruby><rb>独逸</rb><rt>ドイツ</rt></ruby>大使夫人";
+    mp.ruby = "　ドイツ";
     mp.color = "#b2a077";
-    sf.message_name_y=400;
 }else if(mp.name=="財前母"){
-    mp.name = "<ruby><rb>財前</rb><rt>ざいぜん</rt></ruby>母";
+    mp.ruby = "ざいぜん";
     mp.color = "#b2a077";
-    sf.message_name_y=400;
 }else if(mp.name=="四条"){
+    mp.ruby = "";
     mp.color = "olivedrab";
 }else if(mp.name=="四条 華織"){
+    mp.ruby = "";
     mp.color = "olivedrab";
 }else if(mp.name=="四条華織"){
+    mp.ruby = "";
     mp.color = "olivedrab";
 }else if(mp.name=="華織"){
+    mp.ruby = "";
     mp.color = "olivedrab";
 }else if(mp.name=="華織お兄さま"){
+    mp.ruby = "";
     mp.color = "olivedrab";
 }else if(mp.name=="四条父"){
+    mp.ruby = "";
     mp.color = "darkolivegreen";
 }else if(mp.name=="四条母"){
+    mp.ruby = "";
     mp.color = "#9B608B";
 }else if(mp.name=="四条祖父"){
+    mp.ruby = "";
     mp.color = "#888898";
 }else if(mp.name=="四条祖母"){
+    mp.ruby = "";
     mp.color = "#916565";
 }else if(mp.name=="四条 華衣"){
-    mp.name = "四条 <ruby><rb>華衣</rb><rt>かい</rt></ruby>";
+    mp.ruby = "しじょう　　か　い";
     mp.color = "#22ae91";
-    sf.message_name_y=400;
 }else if(mp.name=="四条　華衣"){
-    mp.name = "四条　<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
+    mp.ruby = "しじょう　　か　い";
     mp.color = "#22ae91";
-    sf.message_name_y=400;
 }else if(mp.name=="四条華衣"){
-    mp.name = "四条<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
+    mp.ruby = "しじょう　　か　い";
     mp.color = "#22ae91";
-    sf.message_name_y=400;
 }else if(mp.name=="華衣"){
-    mp.name = "<ruby><rb>華衣</rb><rt>かい</rt></ruby>";
+    mp.ruby = "　か　い";
     mp.color = "#22ae91";
-    sf.message_name_y=400;
 }else if(mp.name=="葛城宮 晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
+    mp.ruby = "かつらぎのみや　　はるひと";
     mp.color = "#414180";
-    sf.message_name_y=400;
 }else if(mp.name=="四条悠次郎"||mp.name=="四条　悠次郎"||mp.name=="四条 悠次郎"){
+    mp.ruby = "";
     mp.color = "darkolivegreen";
 }else if(mp.name=="葛城宮　晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
+    mp.ruby = "かつらぎのみや　　はるひと";
     mp.color = "#414180";
-    sf.message_name_y=400;
 }else if(mp.name=="葛城宮晴仁"){
-    mp.name = "<ruby><rb>葛城宮</rb><rt>かつらぎのみや</rt></ruby> <ruby><rb>晴仁</rb><rt>はるひと</rt></ruby>";
+    mp.ruby = "かつらぎのみや　はるひと";
     mp.color = "#414180";
-    sf.message_name_y=400;
 }else if(mp.name=="藤枝　肇"){
-    mp.name = "藤枝　<ruby><rb>肇</rb><rt>はじめ</rt></ruby>";
+    mp.ruby = "ふじえだ　　はじめ";
     mp.color = "#8280ff";
-    sf.message_name_y=400;
 }else if(mp.name=="藤枝 肇"){
-    mp.name = "藤枝 <ruby><rb>肇</rb><rt>はじめ</rt></ruby>";
+    mp.ruby = "ふじえだ　　はじめ";
     mp.color = "#8280ff";
-    sf.message_name_y=400;
 }else if(mp.name=="藤枝肇"){
-    mp.name = "藤枝<ruby><rb>肇</rb><rt>はじめ</rt></ruby>";
+    mp.ruby = "ふじえだ　はじめ";
     mp.color = "#8280ff";
-    sf.message_name_y=400;
 }else if(mp.name=="郵便屋"){
+    mp.ruby = "";
     mp.color = "#8280ff";
 }else if(mp.name=="藤枝　晶子"){
+    mp.ruby = "";
     mp.color = "#bb7bda";
 }else if(mp.name=="藤枝 晶子"){
+    mp.ruby = "";
     mp.color = "#bb7bda";
 }else if(mp.name=="藤枝晶子"){
+    mp.ruby = "";
     mp.color = "#bb7bda";
 }else if(mp.name=="三宮　時子"){
-    mp.name = "<ruby><rb>三宮</rb><rt>さんのみや</rt></ruby>　<ruby><rb>時子</rb><rt>ときこ</rt></ruby>";
-    sf.message_name_y=400;
+    mp.ruby = "さんのみや　　ときこ";
     mp.color = "#c25232";
 }else if(mp.name=="三宮 時子"){
-    mp.name = "<ruby><rb>三宮</rb><rt>さんのみや</rt></ruby> <ruby><rb>時子</rb><rt>ときこ</rt></ruby>";
-    sf.message_name_y=400;
+    mp.ruby = "さんのみや　　ときこ";
     mp.color = "#c25232";
 }else if(mp.name=="三宮時子"){
-    mp.name = "<ruby><rb>三宮</rb><rt>さんのみや</rt></ruby><ruby><rb>時子</rb><rt>ときこ</rt></ruby>";
-    sf.message_name_y=400;
+    mp.ruby = "さんのみや　ときこ";
     mp.color = "#c25232";
 }else if(mp.name=="お茶屋の娘"){
+    mp.ruby = "";
     mp.color = "#5b7e23";
 }else{
+    mp.ruby = "";
     mp.color = "#807070";
 }//名前領域の一旦削除
 $(".chara_name_area").remove();
 
-//名前をバックログに追加
-tf.name_for_log = "<font color = '" + mp.color + "'>【 " + mp.name + " 】</font>";
-if (mp.name!="") {
-	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
-}
+//名前をバックログに追加←ティラノバージョンアップにより自動で名前が挿入されるようになった為、コメントアウトします
+;tf.name_for_log = "<font color = '" + mp.color + "'>【 " + mp.name + " 】</font>";
+;if (mp.name!="") {
+;	this.kag.variable.tf.system.backlog.push(tf.name_for_log);
+;}
 [endscript]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=26 x=260 y=&sf.message_name_y bold="bold"]
-;[ptext name="chara_name_area" layer=message0 text=%name color=%color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=26 x=270 y=407 bold="bold"]
+[if exp="mp.ruby != ''"]
+[ptext name="chara_name_area" layer=message0 text=&mp.ruby color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=10 x=260 y=402 bold="bold"]
+[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=26 x=260 y=414 bold="bold"]
+[else]
+[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=26 x=260 y=408 bold="bold"]
+[endif]
 [endmacro]
 ;[主人公ポーズ四条ピンク通常][主人公ポーズ四条ピンク指][主人公ポーズ四条緑通常][主人公ポーズ四条緑指]
 ;[主人公ポーズ四条紫通常][主人公ポーズ四条紫指][主人公ポーズ四条紫片手]

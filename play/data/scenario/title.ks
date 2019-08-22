@@ -16,6 +16,7 @@
 	tf.current_auto_speed = parseInt(TG.config.autoSpeed);
 [endscript]
 
+
 @jump storage="title.ks" target=*title
 ;◆↓読み込み不良防止のため、先にボタンのjump先ラベルを読み込ませます。実行ラベルは*titleからのためjumpします↑
 ;-------ボタンが押されたときの処理

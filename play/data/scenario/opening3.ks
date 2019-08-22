@@ -532,7 +532,7 @@ $('.junbi_girl').remove();
 [wait time=10]
 [主人公目パチ1回]
 [wait time=10]
-[whosay name=磯野 color="dimgray"]
+[whosay name=&sf.girl_namae color="#cf5a7f"]
 「やっぱり華織お兄様……何故私に？」[p]
 [主人公口通常]
 [wait time=10]

@@ -184,7 +184,7 @@
 ;unReadTextSkip = false 　
 
 //既読のテキストの色(0x000000形式)を変更できます。default を指定すると既読テキストでも色は変わりません。
-;alreadyReadTextColor = default;
+;alreadyReadTextColor = 0x87cefa 
 
 // ◆ 初期状態の前景レイヤの数
 // 必要なければ 0 を指定してかまいません。

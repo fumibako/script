@@ -9,23 +9,23 @@
 [eval exp="tf.tweet_end=false"]
 ;黒田チェック
 [if exp="sf.ED_kuroda_bad == 1 || sf.ED_kuroda_normal == 1 || sf.ED_kuroda_good == 1"]
-@jump target=skip_sentaku
+@jump storage="naming.ks" target=skip_sentaku
 [endif]
 ;四条チェック
 [if exp="sf.ED_sijyou_bad == 1 || sf.ED_sijyou_normal == 1 || sf.ED_sijyou_good == 1"]
-@jump target=skip_sentaku
+@jump storage="naming.ks" target=skip_sentaku
 [endif]
 ;財前チェック
 [if exp="sf.ED_zaizen_bad1 == 1 || sf.ED_zaizen_bad2 == 1 || sf.ED_zaizen_normal == 1 || sf.ED_zaizen_good == 1"]
-@jump target=skip_sentaku
+@jump storage="naming.ks" target=skip_sentaku
 [endif]
 ;葛城宮チェック
 [if exp="sf.ED_katuraginomiya_good == 1 || sf.ED_katuraginomiya_normal == 1 || sf.ED_katuraginomiya_bad == 1"]
-@jump target=skip_sentaku
+@jump storage="naming.ks" target=skip_sentaku
 [endif]
 ;藤枝チェック
 [if exp="sf.ED_hujieda_good == 1 || sf.ED_hujieda_normal == 1 || sf.ED_hujieda_bad == 1"]
-@jump target=skip_sentaku
+@jump storage="naming.ks" target=skip_sentaku
 [endif]
 ;======================================条件に合わなければ問答無用でプロローグへ====================================
 ;◆条件に合わなければ問答無用でプロローグへ naming.ksでskip_plg0に飛んでも大丈夫な構造
@@ -33,7 +33,7 @@
 [bg storage="toumei.gif" time=1]
 [wait time=10]
 
-@jump target=*name
+@jump storage="naming.ks" target=*name
 ;============================================================================================================
 
 [s]
@@ -108,11 +108,9 @@
 
 ;最初の選択肢メッセージレイヤを非表示
 @layopt layer=message1 visible=false
-;メッセージレイヤを表示
-@layopt layer=message0 page=fore visible = true
-[current layer="message0"]
+[wait time=50]
 [position width=960 height=550 top=60 left=300 page=fore opacity=0]
-;[font color=black size=24]
+
 
 ;主人公画像表示【初登場時のみchara_new使用。後はマクロで切り替え】
 [chara_new name="A_base" storage="toumei.gif"]
@@ -162,6 +160,10 @@ $('.junbi_girl').remove();
 
 ;名前入力部分
 *show_input_yourname
+;メッセージレイヤを表示
+@layopt layer=message0 visible=true
+[wait time=50]
+[current layer="message0"]
 ;[主人公目パチ1回L]
 [wait time=10]
 主人公の名前を教えてください[r][r]
@@ -171,6 +173,7 @@ $('.junbi_girl').remove();
 名前：[r][r]
 　　　　　　　　　　　　　　　[resetfont]
 [edit left=360 top=350 width=200 length=200 maxchars=4 name="sf.girl_namae"]
+
 [locate x=200 y=200]
 [iscript]
 //デフォルトの名前
@@ -199,7 +202,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [主人公困りほほえみL]
 [l][cm]
 
-@jump target=*show_input_yourname
+@jump storage="naming.ks" target=*show_input_yourname
 [endif]
 
 ;名前の最終確認
@@ -218,6 +221,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [autosave]
 「[emb exp=sf.girl_myouji] [emb exp=sf.girl_namae]」[r][r]
 [主人公笑顔L]
+[font color=0x773333 size=24]
 ありがとうございます
 [r][l][cm]
 
@@ -230,7 +234,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [endreplay] 
 
 ;------プロローグskipの最初にジャンプする
-;@jump target=skip_plg0
+;@jump storage="naming.ks" target=skip_plg0
 ;◆スキップ時の条件分岐・opで発動しないように念のため入力
 [eval exp="f.skip_sentaku=0"]
 @jump storage="prologue.ks"
@@ -242,7 +246,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 [主人公ほほえみL]
 [l][cm]
 
-@jump target=*show_input_yourname
+@jump storage="naming.ks" target=*show_input_yourname
 [s]
 
 *plo
@@ -250,7 +254,7 @@ sf.girl_namae = $("input[name='sf.girl_namae']").val()
 ;全画面
 [position left=200 width=960 height=530 top=110 page=fore margint="50"]
 ;[position width=960 height=550 top=60 left=250 page=fore opacity=0]
-@jump target="prologue0"
+@jump storage="naming.ks" target="prologue0"
 [s]
 
 *op
@@ -392,7 +396,7 @@ TG.stat.play_se = true;
 [chara_config ptext="chara_name_area"]
 [eval exp="f.skip_sentaku=0"]
 ;opには使用していない。お稽古に響かないようにプロローグでのフラグ使用後は０に
-@jump target=*prologue_A
+@jump storage="naming.ks" target=*prologue_A
 [endif]
 ;============================================================================================================
 
