@@ -192,8 +192,8 @@ $(".chara_name_area").remove();
 ;}
 [endscript]
 [if exp="mp.ruby != ''"]
-[ptext name="chara_name_area" layer=message0 text=&mp.ruby color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=9 x=260 y=399 bold="bold"]
-[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=23 x=260 y=413 bold="bold"]
+[ptext name="chara_name_area" layer=message0 text=&mp.ruby color=&mp.color face="ＭＳ Ｐ明朝,MS PMincho,ヒラギノ明朝 Pro,Hiragino Mincho Pro,明朝" size=8 x=260 y=399 bold="bold"]
+[ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=23 x=260 y=410 bold="bold"]
 [else]
 [ptext name="chara_name_area" layer=message0 text=&mp.name color=&mp.color size=23 x=260 y=407 bold="bold"]
 [endif]
