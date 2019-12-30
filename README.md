@@ -9,9 +9,9 @@ https://fumibako.github.io/script/play/
 https://fumibako.github.io/script/  
 
 ## スタッフ作業用リンク
-追加実装終了につき、今後のバグ対応用にメインリンク一つに絞って作業用リンクを整理しました
+追加実装終了につき、今後のバグ対応用にメインリンク一つに絞って作業用リンクを整理しました  
 ・全般　：https://github.com/fumibako/script/tree/gh-pages/play/    
-  
+ 
 ## 利用規約
 音声、画像、テキスト素材を抜き出して再配布、再使用、改変することを禁止します  
 スクリプトは「MITライセンス」です  
